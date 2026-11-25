@@ -26,7 +26,13 @@ Hãy hình dung một bảng ghi nhiệt độ ở từng thời điểm. Để 
 
 **Các cách cho một hàm số.** Trong thực tế, quy luật ghép đầu vào với đầu ra có thể được trình bày bằng **bảng** (mỗi cột ghi một cặp giá trị), **biểu đồ** (đọc giá trị từ các cột hay điểm biểu diễn), **công thức** (ví dụ \(f(x)=2x+1\)) hoặc **mô tả bằng lời** (mỗi sản phẩm có giá 5 nghìn đồng thì số tiền mua \(x\) sản phẩm là \(5x\) nghìn đồng). Dù cho bằng cách nào, phải chỉ ra các đầu vào được phép và **mỗi đầu vào chỉ nhận một đầu ra**. Nếu bảng chỉ ghi vài thời điểm thì ta không được tự khẳng định công thức hay giá trị ở thời điểm chưa quan sát, trừ khi bài toán bổ sung quy luật hoặc giả thiết.
 
-Xét bảng các cặp \((0;2),(1;4),(1;4)\). Dù \(x=1\) được ghi hai lần, cả hai lần đều cho 4, nên bảng vẫn phù hợp với một hàm số. Nếu thay một cặp thành \((1;7)\) thì cùng đầu vào 1 sẽ có hai đầu ra khác nhau: bảng không còn định nghĩa một hàm. Trên đồ thị, ta có thể hình dung điều kiện ấy bằng việc mỗi đường thẳng đứng cắt đồ thị tại **không quá một điểm**.
+Xét các cặp \((0;2),(1;4),(1;4)\) trên tập đầu vào \(\{0;1\}\). Viết thành bảng để dễ kiểm:
+
+| Đầu vào \(x\) | 0 | 1 | 1 |
+|---|---:|---:|---:|
+| Đầu ra \(f(x)\) | 2 | 4 | 4 |
+
+Cả hai đầu vào đều có ảnh. Dù \(x=1\) được ghi hai lần, cả hai lần đều cho 4, nên bảng vẫn phù hợp với một hàm số. Nếu thay một cặp thành \((1;7)\) thì cùng đầu vào 1 sẽ có hai đầu ra khác nhau: bảng không còn định nghĩa một hàm. Trên đồ thị, ta có thể hình dung điều kiện ấy bằng việc mỗi đường thẳng đứng cắt đồ thị tại **không quá một điểm**.
 
 **Ví dụ**
 
