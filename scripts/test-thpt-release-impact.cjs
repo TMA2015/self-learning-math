@@ -684,6 +684,24 @@ function proveRW3Tabs(){
  assert.equal(changes,69,"Unexpected alias count");
  console.log("PASS R-W3 69 labels only, all renderer logic, content and protected assessment unchanged");
 }
+const TOPIC_BACK_TOP_FILES=new Set(["docs/assets/javascripts/sticky-nav-v1.js","docs/assets/stylesheets/site-design-system.css","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml"]);
+function isExactTopicBackTop(files){
+ const crypto=require("node:crypto"),blob=p=>{const b=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
+ return files.length===TOPIC_BACK_TOP_FILES.size&&new Set(files).size===files.length&&files.every(f=>TOPIC_BACK_TOP_FILES.has(f))&&
+  blob("docs/assets/javascripts/sticky-nav-v1.js")==="4b34796660347e8c71e94b2099b0536cf06cebdc"&&
+  blob("docs/assets/stylesheets/site-design-system.css")==="d71a5188b1bca520a005e9adb9a80aad733b7413"&&
+  fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8").includes("TOPIC_BACK_TOP_R3");
+}
+function proveTopicBackTop(){
+ const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"}),base=process.env.BASE_SHA;
+ assert.equal(base,"4b37a3e40979a355e33bba9ebfda42fcc5626871","R3 base must match published snapshot");
+ assert(isExactTopicBackTop(git("diff","--no-renames","--name-only",base,"HEAD").trim().split("\n")),"R3 exact scope HOLD");
+ for(const p of ["docs/assets/javascripts/sticky-nav-v1.js","docs/assets/stylesheets/site-design-system.css"]){
+  const old=git("show",base+":"+p),now=fs.readFileSync(p,"utf8");
+  assert(now.startsWith(old),"Existing shared code changed "+p);
+ }
+ console.log("PASS R3 exact delta: native button only, content/assessment/math/SGK/THCS unchanged");
+}
 const MENU_6_PLUS_1_FILES=new Set(["docs/assets/javascripts/thpt-r4-preview.js","docs/assets/stylesheets/thpt-r4-preview.css","scripts/test-thpt-r4-preview-browser.js","scripts/test-self-learning-math-rename-browser.cjs","scripts/test-math-lab-25-release-intake.cjs","scripts/test-math-lab-25-browser.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/math-lab-25-release-intake-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml"]);
 function isExactMenu6Plus1(files){
  const crypto=require("node:crypto");
@@ -737,6 +755,7 @@ function classify(paths,{manual=false,base=""}={}){
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(files.length===MATH_NOTATION_GOVERNANCE.size&&new Set(files).size===files.length&&files.every(p=>MATH_NOTATION_GOVERNANCE.has(p)))
   return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"EXACT_MATH_NOTATION_GOVERNANCE_ONLY"};
+ if(isExactTopicBackTop(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_BACK_TOP_R3"};
  if(isExactMenu6Plus1(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_THPT_MENU_6_PLUS_1"};
  if(isExactTopicDisclosures(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_SGK_DISCLOSURES"};
  if(isExactRW3Tabs(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_RW3_TAB_LABELS"};
@@ -924,6 +943,10 @@ function selfTest(){
  assert.equal(classify([...shared,"docs/thpt-preview/chuyen-de/cd09/kien-thuc.md"]).impact,"FULL");
  assert.equal(classify([...shared,"docs/assets/javascripts/firebase-gemini-v1.js"]).impact,"FULL");
  assert.equal(classify(shared,{manual:true}).impact,"FULL");
+ const backTop=[...TOPIC_BACK_TOP_FILES];
+ if(fs.readFileSync("docs/assets/javascripts/sticky-nav-v1.js","utf8").includes("slm-topic-back-top"))assert.equal(classify(backTop).reason,"OWNER_TOPIC_BACK_TOP_R3");
+ assert.equal(classify([...backTop,"mkdocs.yml"]).impact,"FULL");
+ assert.equal(classify(backTop,{manual:true}).impact,"FULL");
  const menu6=[...MENU_6_PLUS_1_FILES];
  const currentMenu=fs.readFileSync("docs/assets/javascripts/thpt-r4-preview.js","utf8").includes('title.textContent="Toán THPT 6+1"');
  if(currentMenu)assert.equal(classify(menu6).reason,"OWNER_THPT_MENU_6_PLUS_1");
@@ -1299,7 +1322,8 @@ function selfTest(){
  console.log("PASS scoped CI impact classifier: canonical SGK page/receipt-only fast lanes, global/unknown/assessment full, manual full");
 }
 if(require.main===module){
- if(process.argv.includes("--prove-menu-6-plus-1"))proveMenu6Plus1();
+ if(process.argv.includes("--prove-topic-back-top"))proveTopicBackTop();
+ else if(process.argv.includes("--prove-menu-6-plus-1"))proveMenu6Plus1();
  else if(process.argv.includes("--prove-topic-disclosures"))proveTopicDisclosures();
  else if(process.argv.includes("--prove-rw3-tabs"))proveRW3Tabs();
  else if(process.argv.includes("--prove-shared-recovery"))proveSharedDeployRecovery();

@@ -55,6 +55,7 @@ jobs:
           assert(shared.includes("gh api")&&shared.includes("90cfffe5f3adb09eaf347ac9436c6f9e6d4b8ecd")&&shared.includes("45625817148"),"Prior exact-head browser CI must be verified");
           assert(shared.includes("if: needs.release-scope.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT'"),"Only exact recovery may reuse browser PASS");
           assert(shared.includes('--prove-menu-6-plus-1')&&shared.includes('scripts/test-math-lab-25-browser.py --menu-only'),"Menu-only deploy requires exact proof and browser gate");
+          assert(shared.includes('--prove-topic-back-top')&&shared.includes('--back-top-only'),"Exact R3 proof and focused browser gate required");
           assert(shared.includes('--prove-topic-disclosures')&&shared.includes('--disclosures-only'),"Exact disclosure proof and focused browser gate required");
           assert(shared.includes('--prove-rw3-tabs')&&shared.includes('--tabs-only'),"Exact R-W3 scoped browser and protected delta proof required");
           for(const req of ['--shared-candidate-scope','scripts/test-thpt-release-queue.cjs','scripts/test-thpt-handoff-gate-v2.cjs',
@@ -175,6 +176,8 @@ jobs:
             node scripts/test-thpt-release-impact.cjs --prove-rw3-tabs
           elif grep -Fxq 'reason=OWNER_THPT_MENU_6_PLUS_1' "$RUNNER_TEMP/safety-pr-impact.txt"; then
             node scripts/test-thpt-release-impact.cjs --prove-menu-6-plus-1
+          elif grep -Fxq 'reason=OWNER_TOPIC_BACK_TOP_R3' "$RUNNER_TEMP/safety-pr-impact.txt"; then
+            node scripts/test-thpt-release-impact.cjs --prove-topic-back-top
           elif grep -Fxq 'reason=OWNER_TOPIC_SGK_DISCLOSURES' "$RUNNER_TEMP/safety-pr-impact.txt"; then
             node scripts/test-thpt-release-impact.cjs --prove-topic-disclosures
           fi

@@ -175,6 +175,53 @@ def tab_check(button,width):
     assert abs(info["height"]-44)<=1 and info["font"]==("14px" if width<=640 else "15px"),info
     assert info["scroll"]<=info["client"]+2,("clipped tab",info)
 
+if "--back-top-only" in sys.argv:
+    # TOPIC_BACK_TOP_R3: verify the native Material button, no synthetic scroll handler.
+    with sync_playwright() as pw:
+        for engine in ("chromium","webkit"):
+            browser=getattr(pw,engine).launch(headless=True)
+            for width,topic in ((390,"12"),(820,"01"),(1440,"22")):
+                page=browser.new_page(viewport={"width":width,"height":700})
+                page.goto(BASE+"cd"+topic+"/kien-thuc/",wait_until="domcontentloaded")
+                top=page.locator("button.md-top.slm-topic-back-top")
+                expect(top).to_have_count(1,timeout=20000)
+                expect(top).to_have_attribute("aria-label","Về đầu trang")
+                expect(top).to_have_attribute("title","Về đầu trang")
+                assert top.inner_text().strip()==""
+                expect(top).to_be_hidden()
+                tabs=page.locator('.thpt-r4-knowledge-tab[role="tab"]:visible')
+                expect(tabs.first).to_be_visible(timeout=20000)
+                selected=lambda:page.locator('.thpt-r4-knowledge-tab[aria-selected="true"]').evaluate_all("(els)=>els.map(e=>e.getAttribute('aria-controls'))")
+                active=selected()
+                # Scroll down then up, matching Material's native show-on-upscroll.
+                page.evaluate("window.scrollTo(0,document.documentElement.scrollHeight)")
+                page.wait_for_timeout(400)
+                page.evaluate("window.scrollBy(0,-160)")
+                expect(top).to_be_visible(timeout=10000)
+                for theme in ("default","slate"):
+                    page.locator("body").evaluate("(e,t)=>e.setAttribute('data-md-color-scheme',t)",theme)
+                    geo=top.evaluate("""e=>{
+                      const r=e.getBoundingClientRect(),s=getComputedStyle(e),ai=document.querySelector('.floating-ai-launcher'),a=ai?.getBoundingClientRect();
+                      return {w:r.width,h:r.height,right:innerWidth-r.right,bottom:innerHeight-r.bottom,position:s.position,radius:s.borderTopLeftRadius,color:s.color,bg:s.backgroundColor,svg:e.querySelectorAll('svg').length,hit:e.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)),aiGap:a&&a.width?a.top-r.bottom:null};
+                    }""")
+                    assert abs(geo["w"]-44)<=1 and abs(geo["h"]-44)<=1,geo
+                    assert geo["position"]=="fixed" and geo["radius"]=="10px" and 10<=geo["right"]<=40 and 75<=geo["bottom"]<=160,geo
+                    assert geo["color"]=="rgb(255, 255, 255)" and geo["bg"]=="rgb(40, 77, 181)" and geo["svg"]==1 and geo["hit"],geo
+                    assert geo["aiGap"] is None or geo["aiGap"]>=8,geo
+                top.click()
+                page.wait_for_function("window.scrollY<=2",timeout=10000)
+                expect(top).to_be_hidden()
+                assert selected()==active,"Active Knowledge tabs changed"
+                # Outside Topic Knowledge, the native control remains unmodified.
+                page.goto(BASE.replace("chuyen-de/","sgk/chuong-v/bai-14/"),wait_until="domcontentloaded")
+                expect(page.locator("button.md-top")).to_have_count(1)
+                expect(page.locator(".slm-topic-back-top")).to_have_count(0)
+                print(f"PASS R3 Back to top CĐ{topic} {engine} {width}: geometry, safe spacing, light/slate, native scroll, tab retained, SGK untouched",flush=True)
+                page.close()
+            browser.close()
+    server.shutdown()
+    sys.exit(0)
+
 if "--disclosures-only" in sys.argv:
     # TOPIC_SGK_DISCLOSURE_ONLY: compare actual component computed style
     # against approved SGK B14, and inspect six representative Topic routes.
