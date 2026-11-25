@@ -16904,6 +16904,70 @@
         "No fresh SGK/SBT PDF evidence, full historical stem/key/solution parity or all shared G12 ChIV hint/D6 upgrades; no Academic/PED PASS. No placement, source, interaction, status, version, assessment or Written reference changes; counts remain invariant within delta, not a fresh whole bank scan."
       ],
       "next": "Finish targeted G12 ChIV D6/remaining Written findings and proceed CĐ12/CĐ13 in batches of 2–3; preserve CP58."
+    },
+    "formative_scoped_audit_cp59": {
+      "checkpoint": 59,
+      "baseline": "4235da547533040c152dd4534521a50f8f43f8ad",
+      "scope": "CĐ12–CĐ13 formative and Written source audit; complete CĐ11 shared G12 ChIV D6",
+      "source_evidence": {
+        "cd12_knowledge": "e092cc892dbce26a863e56c6234b6aa4d202e552",
+        "cd12_practice": "1a6cd72172ad1fd7d9aaf22ff480d23edf31be10",
+        "cd12_replay": "cf858be43d2f6f1370b9e38da3795397e28c7b5e",
+        "cd13_knowledge": "1921034b56d7de4edd5ce279e79f90760acca16d",
+        "cd13_practice": "da0aaf71ed77b5d927f0c286318e76628d3674e8",
+        "cd13_replay": "328573f2833729fb5d493e0be2593fb0669a5168",
+        "cd12_written": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+        "cd13_written": "c74505ba59d047c19943c2309f5fd7c033ac9563"
+      },
+      "files": [
+        {
+          "path": "items/cd12.json",
+          "before": "395630ec84263b20255951bb1d4aae2feea0c78f",
+          "after": "d6ad3a71cf7653aac21542c5162db36dee2a7fa7",
+          "changed": 12
+        },
+        {
+          "path": "items/cd13.json",
+          "before": "1854c8f689b1588926a9cd949b55ab135893f209",
+          "after": "44aff680ef913914b21a7aa78305a576944f159e",
+          "changed": 16
+        },
+        {
+          "path": "items/g12-chii.json",
+          "before": "e5de29bcecc10561c737172ddda860c95fd826bc",
+          "after": "2cbdc178783a0a6e9161f9d54d9694ebb1c24d02",
+          "changed": 12
+        },
+        {
+          "path": "items/g12-chiv.json",
+          "before": "19f461563030f4691e28d105ab5000b952c6911e",
+          "after": "263e828f3dd8ea9f0641bc6a7ec3d75a1cd4f899",
+          "changed": 66
+        },
+        {
+          "path": "placements/cd13.json",
+          "before": "ada57d9dde61cf01911ed4dac2d389c1c392fb33",
+          "after": "fd881339d3e36e5a3b880009870265cc2d6aa926",
+          "changed": 7
+        }
+      ],
+      "reviewed": {
+        "topic_formative": 28,
+        "shared_g10_formative_read": 36,
+        "shared_g12_chii_formative_read_and_changed": 12,
+        "previous_cd11_shared_d6_completed": 66,
+        "cd12_written_read": 6,
+        "cd13_written_read": 4,
+        "placements_resolve": 114,
+        "remediation_targets_resolve": 106
+      },
+      "findings": [
+        "CĐ12 P04 uses special angles directly at G10 instead of requiring G11 angle-addition formula; P05 scalene triangle method selection (largest angle acute, S=10√3); P09 Heron distinct from shared 7–8–9; P10 calculator DEG and final rounding, 45.9m, 65.5m. 12 specific hints/D6. Shared G10 B05/B06 CP prior retained.",
+        "CĐ13 P01 tests same length vs equal vectors; P11 uses distinct dimensions 2,3,6 and proves two Pythagorean steps. 16 targeted hints/D6; 12 shared G12 ChII hints/D6. 20 shared G10 B07–11 already upgraded retained. Correct seven candidate practice outcome placements: B09-P05 O06→O05; B10-P03 O08→O06; B11-C01 O09→O10; B11-P05 O10→O09; G12 B06-P05 O13→O12; G12 B08-C03 and P05 O16→O15. Historical public projection unchanged; candidate mapping differs deliberately. CĐ13 O13 and O16 now each rely on topic-specific P13/P16 (plus O16 Written), flag thin families not solved by counts. Remaining G12 ChII 36 formative not reviewed in this scope.",
+        "CĐ11 66 shared ChIV formative now have targeted hints/D6; CP58 stem/key/solution unchanged, 6 first tries preserved. Previous Written/duplicate findings unresolved. CĐ12 six and CĐ13 four Written source blocks recomputed; eight topic Written have no library projection pointer. TOP12-W02 uses sin75° exact expression without deriving it, beyond prerequisite if G10 alone; TOP13-W04 must specify straight segments to justify path length. No Written source edits.",
+        "106 remediation links and 114 CĐ12+13 placement records resolve; no record ID, source, version, rubric, status, interaction, replay or assessment change. No fresh SGK/SBT PDF or full parity/Academic/PED PASS; remaining source and canonical cutover decision pending."
+      ],
+      "next": "CĐ14–15 and relevant shared SGK, preserve previous deltas; resolve remaining Written findings during Written workstream."
     }
   }
 }
