@@ -25,24 +25,43 @@ jobs:
     timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Prove exact disclosure-only change before delegating to shared component QA
+        id: scope
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [[ -n "$BASE_SHA" ]]; then
+            git diff --no-renames --name-only "$BASE_SHA" HEAD > "$RUNNER_TEMP/disclosure-paths.txt"
+            node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/disclosure-paths.txt"
+            if grep -Fxq 'reason=OWNER_TOPIC_SGK_DISCLOSURES' "$GITHUB_OUTPUT"; then
+              node scripts/test-thpt-release-impact.cjs --prove-topic-disclosures
+            fi
+          fi
       - name: Static source SHA and canonical three-page fidelity
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES'
         run: |
           node --check docs/assets/javascripts/thpt-topic01-release-tabs-v1.js
           node --check scripts/test-thpt-topic01-release-intake.cjs
           node scripts/test-thpt-topic01-release-intake.cjs
       - uses: actions/setup-python@v5
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES'
         with:
           python-version: '3.12'
       - name: Build both site configs and prepare browser QA
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES'
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
           python -m playwright install --with-deps chromium webkit
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: Verify built MathJax/SVG pages and source-route coverage
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES'
         run: node scripts/test-thpt-topic01-release-intake.cjs --built
       - name: Browser AP/R smoke for CĐ01, no deploy
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES'
         run: python scripts/test-thpt-topic01-release-browser.py
