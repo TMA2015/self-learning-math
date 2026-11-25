@@ -1,18 +1,14 @@
-<!-- TOP08_MASTER974_CURRENT_ONE_R05_V2_AUTHORING_20261121 -->
-## CURRENT AUTHORING V2 CĐ08 — one canonical learner, source scope Q18 v3.2.0
+<!-- #1109 A02 CP04 active V2, history retained by previous Git blob acd074d8104eab7639037c94aa64782092c80816. -->
+## CURRENT AUTHORING V2 — CĐ08 · A02 CP04
 
-One learner source `prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md` Git blob `0853a6de4be055d63a767b58dab20fa113e11098`, existing Q18 author-only `9e80780f05096269b7cd1942c7006138d72d7ec9` and author custody `b997e079eac17c2cd807b57124cdfc142259f260`. Original SGK G11 ChV public36 index `43cbb73bd06e0da6bf8838d925186bc4db4194a7`, original one Topic22 bank `2e93db80384de53e208248eaa0396a7f487302ac`, 10 Written rubrics, 3 original SVG all unchanged.
-
-**Affected math/PED fixes verified current #977-025–029:** all 18 Knowledge voluntary Đối chiếu disclosures now give concept-specific Kiểm lỗi → authentic Kiến thức+Bài; 18 original public Selfchecks have one voluntary end-page existing Practice lookup by exact item IDs; O08 debug values near 3 fixed to 2.99/3.01; O10 x6 debug fixed from x3; O12 prior exact-copy FirstTry replaced with x→−∞ `√(x²+6x)+x`→**−3**, correct negative-branch conjugation. All learner Practice item content (58), ten Written rubrics, 18 public selfcheck question stems and SVG unchanged, 77/77 disclosures balanced, only one SGK source credit. Current Q18 **AUTHOR_SELF_VERIFIED on Delta C affected math/PED**, no independent NotebookLM fresh reviewer PASS; previous source receipts in older paragraphs remain immutable evidence by SHA. Public selfcheck `CLIENT_SELF_CHECK_NO_MASTERY`, no RD1, official readiness, Final Submit, website release, Firebase or merge/deploy.
-
----
+One canonical R05 learner 64dc1d59c48e1f666c0f6b3f33155175724b078b, Q18 371a76f49383e5bca016627c01b8f1887f56cd0c, custody 014351a1620c9f9d02ab24fb8c3f4e6f6f802420, source-only CONTENT_READY under effective v3.2.0. Work #1055 fixes, direct target SGK CP03, X-G.5 on three pages, 58 original IDs and rubric allocations and 18 replay mapping protected by affected semantic diff. 3 original SVG, frozen bank/index. No independent NotebookLM PASS or RELEASE claims. Bài9 pre-existing misleading wording deferred #1090 under owner scope; correct key/domain, P2 not P0/P1. Previous historic source facts below are not current SHA or current test claims.
 
 # AUTHORING CĐ08/22 — Giới hạn và Tính liên tục · V2 handoff R05
 
 PACKET_ID: THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R01
 CONTENT_REVISION: R05
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_AUTHORING_ONLY_CUSTODY_METADATA_20261115.md
-AUTHOR_METADATA_BLOB: b997e079eac17c2cd807b57124cdfc142259f260
+AUTHOR_METADATA_BLOB: 014351a1620c9f9d02ab24fb8c3f4e6f6f802420
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -20,9 +16,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-ACADEMIC_SOURCE_BLOB: 0853a6de4be055d63a767b58dab20fa113e11098
+ACADEMIC_SOURCE_BLOB: 64dc1d59c48e1f666c0f6b3f33155175724b078b
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: 9e80780f05096269b7cd1942c7006138d72d7ec9
+REVIEW_RECEIPT_BLOB: 371a76f49383e5bca016627c01b8f1887f56cd0c
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_NEW22_PUBLIC_CANONICAL_R05_20261115.md
 PUBLIC_CANONICAL_BANK_BLOB: 2e93db80384de53e208248eaa0396a7f487302ac
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_PLACEMENT_INDEX_R05_20261115.md
@@ -250,33 +246,33 @@ Exactly 18 reuse-only placements for P01–P18. Already-public Practice content 
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-ONE `SLM-THPT-QUALITY-ONE v3.1.0` normative source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Authoring R05 source a33d1e6a20dba1dc7861097e231906aff2938c02 and receipt 3285d8d9db6882e798995d92a0d8f83ce592d8e9.
+ONE `SLM-THPT-QUALITY-ONE v3.2.0` normative source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Current source 64dc1d59c48e1f666c0f6b3f33155175724b078b; Q18 371a76f49383e5bca016627c01b8f1887f56cd0c.
 
-| Qxx | Exact mathematical and PED source evidence | Scope verdict | Source evidence | Release boundary |
+| Qxx | Exact source evidence | Scope verdict | Source evidence | Release boundary |
 |---|---|---|---|---|
-| Q01 | Original G11 KNTT ChV B15–B17 SGK/SBT owner receipt, original36 immutable source, no new PDF scan. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q02 | Eighteen outcomes TOP08-O01..O18 with complete concept-first learner paths and original36/new22 bank mapping. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q03 | Strict convergence and domain conditions, one-sided limits, continuity criteria, IVT hypotheses and interval bounds. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q04 | Worked epsilon proof, one-sided counterexamples, conjugation and interval bisection with reasoned signs. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q05 | 58 unique PUBLIC IDs, 36 original SGK +22 new formative/Written, 18 public reuse-only selfchecks. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q06 | Ten original Written rubric visible (six SGK and four Topic), with version2 W01/W02 and one canonical source per ID. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q07 | Three exact SVG: eight points 2+1/n; piecewise jump left2/right1; x²−2 bisection midpoint1.5. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q08 | 18 FirstTry with task-specific D6; generic boilerplate removed rather than repeating checklist cards. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q09 | Approach versus equality and value at point motivates limits, continuity and existence of roots. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q10 | Prerequisites of fractions, real domain, sided approaches, sign and continuity introduced in context. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q11 | Conceptual epsilon/distance before algebraic limit rules; behavior near point before continuity formula. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q12 | SVG graph reading with eight discrete points, hollow/solid jump and bisection step matches exact text. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q13 | Why one-sided comparison controls two-sided limit, why IVT gives existence not uniqueness, why midpoint preserves root. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q14 | Eighteen voluntary reveal activities and precise correction per outcome, not learner-visible PED segmentation. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q15 | One canonical stem/key/solution/rubric source per 58 IDs; 18 reusable selfcheck placements only. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q16 | 0 private RD1; CLIENT_SELF_CHECK_NO_MASTERY, Final Submit disclosure and actual Mastery protection for RELEASE. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q17 | Three independent Topic pages, 58 complete learner-visible Practice and 18 question-only selfchecks, no Topic Core. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q18 | Exact R05 source a33d1e6a and signed author self-QA receipt 3285d8d9, original snapshots preserved. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_a33d1e6a | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q01 | SGK G11 B15–17 target pp105–106,108–109,114–117,120–122 read in CP03; historical SBT receipt retained for unchanged scope. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q02 | 18 outcomes across four arcs, original36/new22 mapping exact. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q03 | Explicit one-sided accumulation, epsilon, infinite limits, sqrt and squeeze, correct domain and endpoints. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q04 | Direct recalculation of all 18 examples and FirstTry; strict remainder, conjugation, sign-change and bisection rechecked. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q05 | 58 existing unique canonical item markers, original36 plus NEW22; no change to bank. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q06 | 10 Written rubrics; 52 rubric point tokens and meaning retained by notation-only diff. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q07 | Three original SVG blobs unchanged, titles/desc and actual guides agree. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q08 | 18 voluntary FirstTry with targeted Kiểm lỗi and correct Practice destinations. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q09 | Sequence approach versus equality motivates difference between limit and point value. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q10 | Domain, signs, powers, denominator, intervals recalled before each method. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q11 | Distance and thresholds linked to sequential definitions; squeeze and sqrt rationale before computation. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q12 | Eight sequence points, hollow/solid jump, x²−2 midpoint sign match guides; source math not browser. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q13 | IVT sufficiency (not necessity), no uniqueness without proof; bisection only while no exact midpoint root. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q14 | 18 adjacent FirstTry/Đối chiếu, misconception recovery maintained; CP04 defined local functions before use. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q15 | Frozen original36/NEW22; exact IDs and rubric, 58 semantic-preserving displays, 18 exact same Practice stems; Bài9 legacy P2 deferred #1090. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q16 | CLIENT_SELF_CHECK_NO_MASTERY; 0 RD1, no official readiness or author release authorization. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q17 | Three public pages; X-G.5 1295 paired inline, 2 display, 77 balanced disclosures; no raw inline slash. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q18 | Exact source 64dc1d59c48e1f666c0f6b3f33155175724b078b and existing Q18 371a76f49383e5bca016627c01b8f1887f56cd0c; scoped self-verification, not independent PASS. | AUTHOR_SELF_VERIFIED_A02_CP04 | SOURCE_LOCKED_64dc1d59 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 
 ## S1_SGK_SBT_SOURCE
 
 - Original SGK Toán11 KNTT Tập1 ChV: B15 Giới hạn dãy số printed104–110, B16 Giới hạn hàm số 111–118, B17 liên tục 119–122, End ChV 123. Exact originally-reviewed 36 public canonical headings at R03 source blob 7934757ed06de4ae4b63dbc351ef524fc054e0d0.
-- SBT KNTT T1 ChV: B15 printed75–78/PDF1 76–79, B16 79–83/PDF1 80–84, B17 84–86/PDF1 85–87, End ChV 87–90/PDF1 88–91. Existing original publisher SBT scan PDF SHA256 fb5292103e5b682531ce37b5f30598393bba81b2943da9c1a374fdeb56557229, historic Git receipt blob 4d409171aa69ef9b30aae4756959ec1e325a13d3. **Current Topic authoring did not rescan PDF; cites earlier locked source**.
+- SBT KNTT T1 ChV: B15 printed75–78/PDF1 76–79, B16 79–83/PDF1 80–84, B17 84–86/PDF1 85–87, End ChV 87–90/PDF1 88–91. Existing original publisher SBT scan PDF SHA256 fb5292103e5b682531ce37b5f30598393bba81b2943da9c1a374fdeb56557229, historic Git receipt blob 4d409171aa69ef9b30aae4756959ec1e325a13d3. **CP03 directly read targeted original SGK pages; SBT scan is historical locked evidence, not a new SBT reading.**
 - Historial SGK ChV original independent R02 Academic/PED PASS on 17 SGK outcomes, 36 original public IDs; author Delta_B only citation metadata R03. New 18 Topic outcomes/22 new items have their **own** Q18 AUTHOR_SELF_VERIFIED v3.1.0, not inherited reviewer PASS.
 
 ## 18/11/2026 — scoped Knowledge source correction; single V2 packet preserved
@@ -305,9 +301,11 @@ ONE `SLM-THPT-QUALITY-ONE v3.1.0` normative source `prototypes/thpt/THPT_UNIFIED
 
 ## AUTHORING_A1_A7
 
-A1: source SHA a33d1e6a20dba1dc7861097e231906aff2938c02, Q18 receipt 3285d8d9db6882e798995d92a0d8f83ce592d8e9, one canonical V2. A2: owner historical G11 ChV SGK/SBT printed/PDF mapping, no fabricated fresh scan. A3: R05 substantive author self-QA P0/P1=0, not independent Topic NotebookLM PASS. A4: 18 outcomes, 58 unique IDs, 18 reuse-only selfcheck placements; 4 new Written. A5: four natural concept arcs, 18 first tries/D6, 3 accurate SVG. A6: 22 new keys/conditions and exact IVT/jump calculations directly tested. A7: 0 private RD1 and no official Topic Readiness/Mastery, Final Submit for RELEASE.
+A1: source 64dc1d59c48e1f666c0f6b3f33155175724b078b, Q18 371a76f49383e5bca016627c01b8f1887f56cd0c, custody 014351a1620c9f9d02ab24fb8c3f4e6f6f802420. A2: CP03 direct target SGK scan with historical SBT custody. A3: author scoped Q18 v3.2.0 P0/P1=0; no independent reviewer PASS. A4: 18 outcomes, 58 IDs, 18 replays, 10 Written. A5: concept arcs, 18 FirstTry/D6, 3 SVG. A6: DELTA_C Knowledge, equivalent notation three pages, verified changed expression meaning, Bài9 P2 deferred owner scope. A7: zero private RD1, no Mastery/official readiness/authorization.
 
 ## DELTA_LEDGER
+
+A02 CP01–04: Work #1055 actual Knowledge corrections and SGK bridges, X-G.5 notation-only Practice/Replay; unchanged bank/index; current source 64dc1d59c48e1f666c0f6b3f33155175724b078b (prior signed 0853a6de4be055d63a767b58dab20fa113e11098), Q18 371a76f49383e5bca016627c01b8f1887f56cd0c. Bài9 legacy P2 remains deferred by #1109; no new P0/P1. Old entries below historical.
 
 R01 original SGK source/reviewer and R03/R04 learner historical snapshots remain immutable; R05 is the new source-locked signed candidate. R05 `DELTA_C_ACADEMIC_MATERIAL`: continuous limits→sided graph behavior→continuity→IVT storyline; corrected SVG jump example to exact f=x+2 left and 2x+1 right at 0 with hollow (0,2), solid (0,1); explains eight discrete 2+1/n points and midpoint of x²−2 diagram. Removed generic remedial lead, and replaced technical Practice/Self Check tables with learner prose; same 58 canonical IDs in versioned bank/index, W01/W02 content_version2 and accessible SVG1 corrected; 58 real learner-visible question stems and solutions, pointer IDs in hidden comment. Exact source-locked Q18 self-verification; no merge/deploy.
 
