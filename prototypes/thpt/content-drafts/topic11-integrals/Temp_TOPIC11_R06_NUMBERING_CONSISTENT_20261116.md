@@ -555,22 +555,22 @@ Nếu em cho phép hai phần hình nằm trên/dưới Ox triệt tiêu thành 
 
 <!-- LESSON_ID: TOP11-M17; OUTCOME_ID: TOP11-O17 -->
 
-> **CÔNG THỨC — Diện tích giữa hai đường.** Giữa hai đường, phải xét đường trên trước. Lấy 'trên−dưới' vì sao cho diện tích dải đứng không âm? Ta đã biết đồ thị liên tục f,g trên [a,b] và dấu f−g. Nếu f(x)≥g(x) trên cả đoạn, dải đứng có chiều cao f−g≥0; diện tích S=\(\int_{a}^{b} (f-g)\,\mathrm dx\). Kiểm bằng một điểm thử trong mỗi khoảng có thể đổi thứ tự; nếu f−g không giữ dấu, chuyển sang bài chia miền. Đơn vị².
+> **CÔNG THỨC — Diện tích giữa hai đường.** Nếu \(f,g\) liên tục trên \([a;b]\) và \(f(x)\ge g(x)\) trên cả đoạn, dải đứng giữa hai đồ thị có chiều cao \(f(x)-g(x)\ge0\). Diện tích là \(S=\int_a^b(f(x)-g(x))\,\mathrm dx\). Cần xác định đường trên và đường dưới trước khi lấy hiệu. Nếu hai đường đổi thứ tự, chia miền tại các giao điểm đổi dấu.
 
-Chẳng hạn, Trên [0,1], f=2, g=x², rõ 2>x², S=\(\int_{0}^{1} (2-x^{2})\,\mathrm dx\)=2−1/3=5/3. Chọn đường trên y=2 rồi trừ y=x²; kết quả dương.
+Chẳng hạn, trên \([0;1]\), \(2>x^2\), nên diện tích giữa \(y=2\) và \(y=x^2\) là \(S=\int_0^1(2-x^2)\,\mathrm dx=2-\frac13=\frac53\).
 
 **Ví dụ**
 
-**Đề bài:** Tính diện tích giữa y=2x+1 và y=x+1 trên [0,2].
+**Đề bài:** Tính diện tích giữa \(y=2x+1\) và \(y=x+1\) trên \([0;2]\).
 
-**Lời giải:** Hiệu (2x+1)−(x+1)=x≥0 trên [0,2], nên đường thứ nhất nằm trên. S=\(\int_{0}^{2} x\,\mathrm dx\)=[x²/2]₀²=2 đơn vị diện tích. Chọn trên−dưới thay vì cộng hai tích phân.
+**Lời giải:** Hiệu \((2x+1)-(x+1)=x\ge0\) trên \([0;2]\), nên đường thứ nhất nằm trên. Do đó \(S=\int_0^2 x\,\mathrm dx=\left[\frac{x^2}2\right]_0^2=2\) đơn vị diện tích. Lấy đường trên trừ đường dưới, không cộng hai hàm.
 
-**Vận dụng** S giữa y=3 và y=x trên [0,2]?
+**Vận dụng** Tính diện tích giữa \(y=3\) và \(y=x\) trên \([0;2]\).
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-\(\int_{0}^{2} (3-x)\,\mathrm dx\)=4.
+\(S=\int_0^2(3-x)\,\mathrm dx=4\).
 
 Nếu hiệu âm, hãy kiểm đã trừ đúng 'trên−dưới'.
 
@@ -585,19 +585,19 @@ Nếu em lấy đường dưới trừ đường trên hoặc bỏ kiểm vị t
 
 <!-- LESSON_ID: TOP11-M18; OUTCOME_ID: TOP11-O18 -->
 
-> **PHƯƠNG PHÁP — Hai đường đổi thứ tự.** Khi hai đường giao, thứ tự có thể đổi trong đoạn. Một giao điểm nằm trong [a,b] có thể đổi thứ tự hai đường ra sao? Ta sử dụng phương trình f=g, dấu f−g, tích phân trị tuyệt đối. Tính diện tích giữa hai đường trên [a,b] bằng \(\int_{a}^{b} |f-g|\,\mathrm dx\); giải điểm giao, chia tại nghiệm trong khoảng, kiểm đường nào trên mỗi mảnh. Các diện tích không âm phải **cộng**, không cộng tích phân có dấu chưa đổi. Không cần chia tại điểm chạm không đổi dấu, nhưng phải kiểm.
+> **PHƯƠNG PHÁP — Hai đường đổi thứ tự.** Với \(f,g\) liên tục trên \([a;b]\), diện tích giữa hai đồ thị là \(S=\int_a^b|f(x)-g(x)|\,\mathrm dx\). Giải phương trình \(f(x)=g(x)\) để tìm giao điểm, rồi xét dấu của hiệu trên các khoảng. Nếu hai đường đổi thứ tự tại một số hữu hạn điểm, chia đoạn tại những điểm đó và lấy đường trên trừ đường dưới ở mỗi phần. Các diện tích không âm phải được cộng lại. Nếu hai đường chỉ tiếp xúc mà không đổi thứ tự, không bắt buộc chia tại điểm đó.
 
-Xét ví dụ: f=x,g=x² trên [0,2], giao x=0,1. Trên (0,1) x>x², trên (1,2) x²>x: S=1/6+5/6=1. Trong khi ∫₀²(x−x²)=−2/3, minh họa sai nếu không chia.
+Xét \(f(x)=x,\ g(x)=x^2\) trên \([0;2]\), giao nhau tại \(x=0,\ x=1\). Trên \((0;1)\), \(x>x^2\); trên \((1;2)\), \(x^2>x\). Diện tích là \(S=\int_0^1(x-x^2)\,\mathrm dx+\int_1^2(x^2-x)\,\mathrm dx=\frac16+\frac56=1\). Trong khi đó \(\int_0^2(x-x^2)\,\mathrm dx=-\frac23\), không phải diện tích.
 
 ![Hai đường y=x và y=x bình phương cắt nhau](../../visuals/THPT_TOPIC11_TWO_CURVES_SPLIT_R01.svg)
 
-*Quan sát hình:* Trên [0,1] lấy x−x², trên [1,2] lấy x²−x. Hai diện tích là 1/6 và 5/6, nên tổng1 không phải trị tuyệt đối của tích phân có dấu.
+*Quan sát hình:* Trên \([0;1]\) lấy \(x-x^2\), trên \([1;2]\) lấy \(x^2-x\). Hai diện tích là \(\frac16\) và \(\frac56\), nên tổng bằng 1, không phải trị tuyệt đối của tích phân có dấu.
 
 **Ví dụ**
 
-**Đề bài:** Tính diện tích giữa y=3x và y=x² trên [0,4]; cần chia ở đâu?
+**Đề bài:** Tính diện tích giữa \(y=3x\) và \(y=x^2\) trên \([0;4]\); cần chia ở đâu?
 
-**Lời giải:** Hai đường giao khi x²=3x, tức x=0 và x=3. Trên (0,3) 3x>x², trên (3,4) x²>3x. S=\(\int_{0}^{3} (3x-x^{2})\,\mathrm dx\)+\(\int_{3}^{4} (x^{2}-3x)\,\mathrm dx\)=9/2+11/6=19/3. Không lấy trị tuyệt đối của một tích phân duy nhất.
+**Lời giải:** Hai đường giao khi \(x^2=3x\), tức \(x=0\) hoặc \(x=3\). Trên \((0;3)\), \(3x>x^2\); trên \((3;4)\), \(x^2>3x\). Do đó \(S=\int_0^3(3x-x^2)\,\mathrm dx+\int_3^4(x^2-3x)\,\mathrm dx=\frac92+\frac{11}6=\frac{19}3\). Không lấy trị tuyệt đối của một tích phân duy nhất.
 
 **Vận dụng** Tính diện tích giữa \(y=2x\) và \(y=x^2\) trên đoạn \([0,3]\). Vì sao phải chia miền tại một giao điểm ở trong đoạn?
 
@@ -617,15 +617,15 @@ Nếu em dùng một hiệu có dấu xuyên qua giao điểm đổi thứ tự 
 
 <!-- LESSON_ID: TOP11-M19; OUTCOME_ID: TOP11-O19 -->
 
-> **PHƯƠNG PHÁP — Mô hình diện tích từ giao điểm.** Mô hình diện tích cần đúng giao điểm, cận và đơn vị. Vì sao phải tìm đường biên và giao điểm trước khi bấm nguyên hàm? Ta bắt đầu từ hình phẳng bị chặn, giải f=g và kiểm miền các nhánh. Lập mô hình: xác định ranh giới và trục, chọn biến theo chiều lát cắt, giải giao điểm thực nằm trong miền, kiểm thứ tự trên/dưới, tính tích phân diện tích, ghi đơn vị². Có khi hai đường không tạo miền kín nếu thiếu cận hoặc không có điểm giao thứ hai; không tự tạo cận 0,1 từ hình tưởng tượng.
+> **PHƯƠNG PHÁP — Mô hình diện tích từ giao điểm.** Trước khi tính nguyên hàm, hãy xác định miền hình phẳng: các đường biên, giao điểm thực thuộc miền đang xét và biến tích phân. Với các lát cắt đứng, giải phương trình \(f(x)=g(x)\) để tìm giao điểm; kiểm tra thứ tự trên/dưới trên từng khoảng rồi lập tích phân. Hai đường không nhất thiết tạo thành một miền kín; không tự đặt cận nếu đề bài hoặc giao điểm chưa xác định chúng.
 
-Chẳng hạn, cho y=2x và y=x²: giao x=0 và2, trên (0,2) 2x≥x² nên S=\(\int_{0}^{2} (2x-x^{2})\,\mathrm dx\)=4/3 đơn vị². Chọn cận 0..2 từ phương trình chứ không từ dáng đồ thị.
+Chẳng hạn, \(y=2x\) và \(y=x^2\) giao tại \(x=0\) và \(x=2\). Trên \((0;2)\), \(2x>x^2\), nên \(S=\int_0^2(2x-x^2)\,\mathrm dx=\frac43\) đơn vị diện tích. Hai cận được xác định từ phương trình giao điểm.
 
 **Ví dụ**
 
-**Đề bài:** Tìm diện tích hình phẳng giới hạn bởi y=2−x² và y=x giữa hai giao điểm.
+**Đề bài:** Tìm diện tích hình phẳng giới hạn bởi \(y=2-x^2\) và \(y=x\) giữa hai giao điểm.
 
-**Lời giải:** Giải 2−x²=x ⇒ x²+x−2=0 ⇒ x=−2 và x=1. Trên (−2,1) hiệu 2−x²−x>0 (thử x=0). S=\(\int_{-2}^{1} (2-x^{2}-x)\,\mathrm dx\)=[2x−x³/3−x²/2]₋₂¹=9/2 đơn vị diện tích. Các cận do giao điểm quyết định.
+**Lời giải:** Giải \(2-x^2=x\), tương đương \(x^2+x-2=0\), được \(x=-2\) hoặc \(x=1\). Trên \((-2;1)\), hiệu \(2-x^2-x=(1-x)(x+2)>0\). Vậy \(S=\int_{-2}^1(2-x^2-x)\,\mathrm dx=\left[2x-\frac{x^3}3-\frac{x^2}2\right]_{-2}^1=\frac92\) đơn vị diện tích.
 
 **Vận dụng** Hai đồ thị \(y=4-x^2\) và \(y=0\) tạo thành một hình phẳng bị chặn. Tự tìm hai giao điểm, xác định đường nằm trên giữa chúng rồi tính diện tích.
 
@@ -651,15 +651,15 @@ Mỗi lát cắt mỏng của một khối có diện tích riêng; cộng chún
 
 <!-- LESSON_ID: TOP11-M20; OUTCOME_ID: TOP11-O20 -->
 
-Nếu mỗi lát mỏng đã biết diện tích, tổng lát cho thể tích như thế nào? Cần nhớ tiết diện A(x)≥0 có đơn vị diện tích, độ dày dx. Với khối được xác định trên [a,b], diện tích thiết diện vuông góc Ox tại x là A(x), V=\(\int_{a}^{b} A(x)\,\mathrm dx\) (khi hàm diện tích thiết diện A liên tục trên [a,b]). Chọn công thức A theo **hình dạng tiết diện thật**: vuông thì s², tròn thì πr², hình khác có công thức khác. Không thêm π nếu không phải mặt cắt tròn.
+Nếu mặt cắt vuông góc với \(Ox\) tại \(x\) có diện tích \(A(x)\ge0\) và \(A\) liên tục trên \([a;b]\), thể tích khối là \(V=\int_a^b A(x)\,\mathrm dx\). Một lát mỏng có thể tích gần bằng diện tích mặt cắt nhân độ dày. Vì vậy cần chọn đúng diện tích mặt cắt: hình vuông cạnh \(s\) có diện tích \(s^2\), hình tròn bán kính \(r\) có diện tích \(\pi r^2\). Không thêm \(\pi\) nếu mặt cắt không phải hình tròn.
 
-Chẳng hạn, Tiết diện vuông cạnh 2x trên [0,1] (đơn vị cm): A=4x² cm², V=\(\int_{0}^{1} 4x^{2}\,\mathrm dx\)=4/3 cm³. Chọn vuông nên không có π.
+Chẳng hạn, thiết diện vuông cạnh \(2x\) trên \([0;1]\) (độ dài tính bằng cm) có diện tích \(A(x)=4x^2\) cm² và thể tích \(V=\int_0^1 4x^2\,\mathrm dx=\frac43\) cm³. Không nhân thêm \(\pi\) vì mặt cắt là hình vuông.
 
 > **CÔNG THỨC — Thể tích từ thiết diện vuông.** Hình minh họa **hai lát cắt có cùng độ dài tham chiếu bằng 1**, không phải các thiết diện cạnh \(2x\) của ví dụ tính \(4/3\) vừa giải. Nếu cạnh hình vuông \(s=1\), diện tích là \(s^2=1\); nếu bán kính hình tròn \(r=1\), diện tích là \(\pi r^2=\pi\). Bởi vậy phải xác định hình dạng mặt cắt **trước** khi lập \(V=\int A(x)\,dx\): khác hình, khác diện tích dù dùng cùng một số đo chiều dài.
 
 ![Phân biệt thiết diện vuông và tròn](../../visuals/THPT_TOPIC11_CROSS_SECTION_SQUARE_CIRCLE_R01.svg)
 
-*Đọc hình:* Lát vuông có cạnh1 nên diện tích1; lát tròn có bán kính1 nên diện tích \(\pi\). Đây là so sánh **đơn vị diện tích lát**, không phải hai khối có thể tích bằng nhau.
+*Đọc hình:* Lát vuông có cạnh 1 nên diện tích 1; lát tròn có bán kính 1 nên diện tích \(\pi\). Đây là so sánh diện tích của hai mặt cắt, không phải thể tích của hai khối.
 
 Từ công thức thiết diện, ta còn có thể **tự suy ra thể tích khối chóp cụt**, không phải học thuộc một công thức không có nguồn gốc. Xét khối chóp cụt có hai đáy đồng dạng diện tích \(S_0\) và \(S_1\), chiều cao \(h>0\). Đặt \(x\) là khoảng cách từ đáy thứ nhất (\(0\le x\le h\)). Vì các thiết diện song song với đáy đồng dạng, kích thước dài thay đổi tuyến tính, nên căn bậc hai diện tích thiết diện biến thiên tuyến tính:
 \[
@@ -673,16 +673,16 @@ Bình phương rồi lấy tích phân từ \(0\) đến \(h\) cho thể tích.
 
 **Ví dụ**
 
-**Đề bài:** Một khối có tiết diện vuông cạnh s(x)=2x+1 cm, x∈[0,1] cm. Tính thể tích.
+**Đề bài:** Một khối có tiết diện vuông cạnh \(s(x)=2x+1\) cm, với \(x\in[0;1]\) (cm). Tính thể tích.
 
-**Lời giải:** Diện tích mặt cắt A(x)=(2x+1)²=4x²+4x+1 cm². V=\(\int_{0}^{1} A(x)\,\mathrm dx\)=4/3+2+1=13/3 cm³. Không nhân π vì tiết diện là hình vuông.
+**Lời giải:** Diện tích mặt cắt là \(A(x)=(2x+1)^2=4x^2+4x+1\) cm². Do đó \(V=\int_0^1(4x^2+4x+1)\,\mathrm dx=\frac43+2+1=\frac{13}3\) cm³. Không nhân \(\pi\) vì tiết diện là hình vuông.
 
-**Vận dụng** Tiết diện vuông cạnh 3 không đổi, đoạn dài2: thể tích?
+**Vận dụng** Một khối có thiết diện vuông cạnh 3 không đổi trên đoạn dài 2 (cùng đơn vị độ dài). Tính thể tích.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-9·2=18 đơn vị³.
+\(V=3^2\cdot2=18\) đơn vị thể tích.
 
 Nếu dùng 3 thay cho9, bạn lấy cạnh làm diện tích.
 
@@ -697,22 +697,22 @@ Nếu em lấy chiều dài cạnh hình vuông làm diện tích, hoặc nhân 
 
 <!-- LESSON_ID: TOP11-M21; OUTCOME_ID: TOP11-O21 -->
 
-> **CÔNG THỨC — Thể tích từ tiết diện tròn.** Thiết diện tròn dùng diện tích đĩa πr². Nếu lát cắt tròn, công thức phải sửa như thế nào so với tiết diện vuông? Để xác định điều đó, cần xét diện tích đĩa tròn πr², r≥0 theo x. Đối với khối có mặt cắt vuông góc Ox hình tròn bán kính r(x)≥0 trên [a,b], A(x)=πr(x)², V=π\(\int r^{2}\,\mathrm dx\). Đây là phương pháp mặt cắt; **không nhất thiết** là miền quay nếu bài toán chỉ nói thiết diện. Chuyển đơn vị: r cm ⇒ A cm², dx cm ⇒ V cm³.
+> **CÔNG THỨC — Thể tích từ tiết diện tròn.** Nếu khối có mặt cắt vuông góc với \(Ox\) là hình tròn bán kính \(r(x)\ge0\) trên \([a;b]\), diện tích mặt cắt là \(A(x)=\pi r(x)^2\). Khi \(A\) liên tục, thể tích là \(V=\pi\int_a^b r(x)^2\,\mathrm dx\). Đây là phương pháp mặt cắt, không bắt buộc khối được tạo bởi phép quay. Nếu bán kính và độ dày tính bằng cm, diện tích tính bằng cm² và thể tích tính bằng cm³.
 
-Chẳng hạn, r(x)=2x trên [0,1], V=π\(\int_{0}^{1} 4x^{2}\,\mathrm dx\)=4π/3 đơn vị³. Chọn π vì lát tròn và bình phương r, không nhầm bán kính với diện tích.
+Chẳng hạn, với \(r(x)=2x\) trên \([0;1]\), thể tích là \(V=\pi\int_0^1 4x^2\,\mathrm dx=\frac{4\pi}3\) đơn vị thể tích. Phải bình phương bán kính trước khi lấy tích phân.
 
 **Ví dụ**
 
-**Đề bài:** Khối có thiết diện tròn bán kính r(x)=√(x+1) cm với x∈[0,3] cm. Tính V.
+**Đề bài:** Khối có thiết diện tròn bán kính \(r(x)=\sqrt{x+1}\) cm với \(x\in[0;3]\) (cm). Tính thể tích \(V\).
 
-**Lời giải:** Vì r≥0, A(x)=πr²=π(x+1) cm². V=π\(\int_{0}^{3} (x+1)\,\mathrm dx\)=π(9/2+3)=15π/2 cm³. Đơn vị cm³; không lấy diện tích hình vuông.
+**Lời giải:** Bán kính không âm trên đoạn; diện tích mặt cắt là \(A(x)=\pi r(x)^2=\pi(x+1)\) cm². Vậy \(V=\pi\int_0^3(x+1)\,\mathrm dx=\pi\left(\frac92+3\right)=\frac{15\pi}2\) cm³.
 
-**Vận dụng** r(x)=1+x trên [0,1], V?
+**Vận dụng** Một khối có thiết diện tròn bán kính \(r(x)=1+x\) trên \([0;1]\). Tính thể tích.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-π\(\int_{0}^{1} (1+x)^{2}\,\mathrm dx\)=7π/3.
+\(V=\pi\int_0^1(1+x)^2\,\mathrm dx=\frac{7\pi}3\).
 
 Nếu ra \(\frac{3\pi}2\), em đã tính \(\pi\int_0^1(1+x)\,dx\), tức tích phân bán kính thay vì diện tích tiết diện. Phải bình phương bán kính trước: \(\pi(1+x)^2\).
 
@@ -727,9 +727,9 @@ Nếu em quên bình phương bán kính hoặc nhầm đường kính với bá
 
 <!-- LESSON_ID: TOP11-M22; OUTCOME_ID: TOP11-O22 -->
 
-> **CÔNG THỨC — Đĩa và vành khăn khối xoay.** Khối xoay cho tiết diện đĩa hoặc vành khăn tùy vùng. Vì sao thể tích quay một vùng giữa hai đồ thị có thể phải trừ hai đĩa? Ta đã biết bán kính là khoảng cách từ đồ thị đến Ox, miền f≥g≥0. Nếu \(f\) **liên tục, không âm** trên \([a,b]\) và quay vùng 0≤y≤f(x) quanh Ox, lát cắt đĩa bán kính f, thể tích V=π\(\int f^{2}\,\mathrm dx\). Điều kiện liên tục và không âm giúp áp dụng đúng công thức đĩa; với vùng khác cần phân tích lại thiết diện. Nếu quay miền g≤y≤f với 0≤g≤f quanh Ox, lát cắt là vành khăn với bán kính ngoài R=f, bán kính trong r=g, V=π\(\int (R^{2}-r^{2})\,\mathrm dx\). Nếu đường cắt Ox/hai vùng chồng khi quay, công thức đơn giản có thể không áp; cần phân tích hình cắt cẩn thận.
+> **CÔNG THỨC — Đĩa và vành khăn khối xoay.** Nếu \(f\) liên tục, không âm trên \([a;b]\), khi quay miền \(0\le y\le f(x)\) quanh \(Ox\), mặt cắt là đĩa bán kính \(f(x)\). Thể tích là \(V=\pi\int_a^b f(x)^2\,\mathrm dx\). Nếu quay miền \(g(x)\le y\le f(x)\) với \(f,g\) liên tục và \(0\le g(x)\le f(x)\), mặt cắt là vành khăn bán kính ngoài \(R(x)=f(x)\), bán kính trong \(r(x)=g(x)\). Khi đó \(V=\pi\int_a^b\left(R(x)^2-r(x)^2\right)\mathrm dx\). Nếu miền cắt hoặc nằm khác phía trục quay, cần xác định lại bán kính và hình dạng mặt cắt, không áp dụng máy móc công thức này.
 
-Chẳng hạn, Quay vùng 0≤y≤x, x∈[0,1] quanh Ox, V=π\(\int_{0}^{1} x^{2}\,\mathrm dx\)=π/3. Nếu quay vùng x≤y≤2, x∈[0,2], ngoài R=2 trong r=x: V=π\(\int_{0}^{2} (4-x^{2})\,\mathrm dx\)=16π/3. Chọn hiệu bình phương bán kính chứ không bình phương chiều dày.
+Chẳng hạn, quay miền \(0\le y\le x\), \(x\in[0;1]\) quanh \(Ox\), ta được \(V=\pi\int_0^1 x^2\,\mathrm dx=\frac{\pi}3\). Nếu quay miền \(x\le y\le2\), \(x\in[0;2]\), bán kính ngoài là 2, bán kính trong là \(x\); khi đó \(V=\pi\int_0^2(4-x^2)\,\mathrm dx=\frac{16\pi}3\). Phải lấy hiệu hai bình phương, không bình phương hiệu hai bán kính.
 
 Ngay trên hình, lấy miền \(0\le x\le2\), \(x\le y\le2\) quay quanh \(Ox\). Tại lát \(x=1\), vành khăn có bán kính ngoài 2, trong 1 nên diện tích \(\pi(2^2-1^2)=3\pi\). Khi cộng các lát, \(V=\pi\int_0^2(4-x^2)\,dx=16\pi/3\). Việc **trừ hai bình phương** xuất phát từ diện tích đĩa lớn trừ đĩa nhỏ, không từ bình phương bề dày.
 
@@ -739,9 +739,9 @@ Ngay trên hình, lấy miền \(0\le x\le2\), \(x\le y\le2\) quay quanh \(Ox\).
 
 **Ví dụ**
 
-**Đề bài:** Miền 0≤x≤1, x≤y≤x+2 quay quanh Ox. Tính thể tích khối xoay.
+**Đề bài:** Miền \(0\le x\le1\), \(x\le y\le x+2\) quay quanh \(Ox\). Tính thể tích khối xoay.
 
-**Lời giải:** Bán kính ngoài R=x+2, trong r=x≥0; lát cắt là vành khăn. A=π(R²−r²)=π[(x+2)²−x²]=π(4x+4). V=π\(\int_{0}^{1} (4x+4)\,\mathrm dx\)=π(2+4)=6π đơn vị³. Không tính π(R−r)² và không nhầm với đĩa đặc.
+**Lời giải:** Bán kính ngoài \(R=x+2\), bán kính trong \(r=x\ge0\). Lát cắt là vành khăn có diện tích \(A(x)=\pi(R^2-r^2)=\pi\left((x+2)^2-x^2\right)=\pi(4x+4)\). Do đó \(V=\pi\int_0^1(4x+4)\,\mathrm dx=6\pi\) đơn vị thể tích. Không tính \(\pi(R-r)^2\) và không nhầm với đĩa đặc.
 
 **Vận dụng** Quay miền \(0\le x\le2,\ 1\le y\le3\) quanh trục \(Ox\). Tính thể tích và giải thích vì sao không dùng đĩa đặc.
 
