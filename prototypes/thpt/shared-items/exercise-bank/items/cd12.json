@@ -276,9 +276,9 @@
   {
     "item_id": "THPT-TOP12-P10",
     "content_version": 2,
-    "stem": "Hai điểm A,B cách nhau 80 m. Trong tam giác ABC, góc trong A=35°, B=55°. Tìm BC và AC, làm tròn đến 0,1 m (máy tính DEG).",
-    "answer_key": "BC≈45,9 m; AC≈65,5 m.",
-    "worked_solution": "C=180°−35°−55°=90°. Theo định lí sin, BC=80 sin35°/sin90°≈45,9 m; AC=80 sin55°/sin90°≈65,5 m. Dùng chế độ DEG và chỉ làm tròn ở cuối. Vì B>A nên AC>BC. Cả hai cạnh ngắn hơn AB đối diện góc vuông.",
+    "stem": "Hai điểm A,B cách nhau 80 m, cùng nhìn điểm C sao cho các góc trong tam giác ABC là A=35°, B=65°. Tính BC và AC, làm tròn đến 0,1 m (máy tính DEG).",
+    "answer_key": "BC≈46,6 m; AC≈73,6 m.",
+    "worked_solution": "C=180°−35°−65°=80°. Vì tam giác không vuông và đã biết hai góc, một cạnh, dùng định lí sin: BC=80 sin35°/sin80°≈46,6 m; AC=80 sin65°/sin80°≈73,6 m. Chọn chế độ DEG và chỉ làm tròn ở cuối. Kiểm B>A nên AC>BC; C lớn nhất nên AB dài nhất.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-APPLICATION",
