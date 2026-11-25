@@ -7,273 +7,273 @@
 const config=document.querySelector(".topic-w1-release-nav[data-topic-w1][data-topic-w1-part]");
 if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
-const rw1Active=part==="kien-thuc"&&["06","07","08"].includes(topic);
-const rw1Math=()=>rw1Active?window.SLMTopicRW1Math:null;
+const rw1Active=part==="kien-thuc";
+const rw1Math=()=>rw1Active?window.SLMTHPTKnowledgeMath:null;
 let rw1Prepared=false;
 const sizes={"10":{"outcomes":36,"items":120,"replay":36,"groups":6,"practiceGroups":6},"11":{"outcomes":22,"items":116,"replay":22,"groups":4,"practiceGroups":4},"06":{"outcomes":16,"items":66,"replay":16,"groups":4,"practiceGroups":4},"07":{"outcomes":18,"items":69,"replay":18,"groups":4,"practiceGroups":4},"08":{"outcomes":18,"items":58,"replay":18,"groups":4,"practiceGroups":4},"09":{"outcomes":32,"items":108,"replay":32,"groups":5,"practiceGroups":4}};
 const expected=sizes[topic];
 /* Presentation-only aliases. Full, reviewed heading text stays in its panel and
  * remains accessible through the tab's aria-label/title. */
 const topicTabNames={
- "10": {
-  "modules": [
-   "1. Biến thiên",
-   "2. Cực trị toàn miền",
-   "3. Tiệm cận",
-   "4. Khảo sát đồ thị",
-   "5. Tối ưu thực tế",
-   "6. Kiểm nghiệm"
-  ],
-  "subs": [
-   [
-    "1.1. Đồng biến và nghịch biến",
-    "1.2. Dấu đạo hàm",
-    "1.3. Điểm cấm và biến thiên",
-    "1.4. Cực trị qua đổi dấu",
-    "1.5. Điểm dừng không cực trị",
-    "1.6. Chiều chuyển động"
-   ],
-   [
-    "2.1. Cực trị địa phương/toàn cục",
-    "2.2. GTLN, GTNN trên đoạn",
-    "2.3. Ứng viên và biên",
-    "2.4. Miền mở và khả đạt",
-    "2.5. Miền ràng buộc",
-    "2.6. Lập mô hình ba cạnh"
-   ],
-   [
-    "3.1. Tiệm cận ngang",
-    "3.2. Tiệm cận đứng",
-    "3.3. Tiệm cận xiên",
-    "3.4. Lỗ khử được",
-    "3.5. Giới hạn hợp lệ theo miền",
-    "3.6. Tiệm cận qua hình"
-   ],
-   [
-    "4.1. Các bước khảo sát",
-    "4.2. Đồ thị hàm bậc ba",
-    "4.3. Khảo sát phân thức",
-    "4.4. Giao trục",
-    "4.5. Tâm đối xứng",
-    "4.6. Bảng biến thiên",
-    "4.7. Miền rời và biến thiên"
-   ],
-   [
-    "5.1. Chi phí cận biên",
-    "5.2. Vận tốc và gia tốc",
-    "5.3. Sai khác chi phí thực",
-    "5.4. Miền khả thi của hộp",
-    "5.5. Tối ưu trên đoạn",
-    "5.6. Điểm không khả vi",
-    "5.7. Nghiệm tối ưu nguyên"
-   ],
-   [
-    "6.1. Cực trị địa phương",
-    "6.2. Tiệm cận và bảng dấu",
-    "6.3. Lợi nhuận đúng mục tiêu",
-    "6.4. Kiểm lỗi bằng điều kiện"
-   ]
-  ]
- },
- "11": {
-  "modules": [
-   "1. Nguyên hàm",
-   "2. Tích phân xác định",
-   "3. Diện tích hình học",
-   "4. Thể tích"
-  ],
-  "subs": [
-   [
-    "1.1. Nhận ra nguyên hàm",
-    "1.2. Họ nguyên hàm, điều kiện",
-    "1.3. Nguyên hàm lũy thừa",
-    "1.4. Nguyên hàm 1/x trên khoảng",
-    "1.5. Hàm mũ và hệ số bù",
-    "1.6. Nguyên hàm lượng giác",
-    "1.7. Từ vận tốc tìm vị trí"
-   ],
-   [
-    "2.1. Tích phân xác định",
-    "2.2. Tính tuyến tính tích phân",
-    "2.3. Đảo cận và ghép cận",
-    "2.4. Tích phân và diện tích",
-    "2.5. Độ dời và quãng đường",
-    "2.6. Tích phân lượng giác",
-    "2.7. Tích lũy theo thời gian"
-   ],
-   [
-    "3.1. Diện tích dưới hàm căn",
-    "3.2. Diện tích đổi dấu qua trục",
-    "3.3. Diện tích giữa hai đường",
-    "3.4. Hai đường đổi thứ tự",
-    "3.5. Diện tích ứng dụng"
-   ],
-   [
-    "4.1. Tích phân theo thiết diện",
-    "4.2. Thể tích từ tiết diện tròn",
-    "4.3. Đĩa và vành khăn khối xoay"
-   ]
-  ]
- },
- "06": {
-  "modules": [
-   "1. Góc quay",
-   "2. Công thức lượng giác",
-   "3. Hàm lượng giác",
-   "4. Phương trình lượng giác"
-  ],
-  "subs": [
-   [
-    "1.1. Độ, radian góc quay",
-    "1.2. Sin/cos trên đường tròn",
-    "1.3. Độ dài cung và độ dời"
-   ],
-   [
-    "2.1. Hệ thức lượng giác",
-    "2.2. Góc liên quan và đối xứng",
-    "2.3. Công thức cộng/trừ góc",
-    "2.4. Góc nhân đôi và đổi dạng"
-   ],
-   [
-    "3.1. Miền xác định",
-    "3.2. Chu kỳ, đối xứng",
-    "3.3. Biên độ, pha và trục giữa",
-    "3.4. Tan/cot và tiệm cận"
-   ],
-   [
-    "4.1. Nghiệm của sin/cos",
-    "4.2. Nghiệm của tan/cot",
-    "4.3. Biến đổi giữ nghiệm",
-    "4.4. Lọc nghiệm theo khoảng",
-    "4.5. Giới hạn mô hình chu kỳ"
-   ]
-  ]
- },
- "07": {
-  "modules": [
-   "1. Dãy số",
-   "2. Cấp số cộng",
-   "3. Cấp số nhân",
-   "4. Mô hình tăng trưởng"
-  ],
-  "subs": [
-   [
-    "1.1. Dãy số và tập chỉ số",
-    "1.2. Công thức và quy luật",
-    "1.3. Hệ thức truy hồi",
-    "1.4. Chứng minh tăng, giảm",
-    "1.5. Tính bị chặn"
-   ],
-   [
-    "2.1. Nhận diện cấp số cộng",
-    "2.2. Số hạng tổng quát CSC",
-    "2.3. Tìm công sai",
-    "2.4. Tổng các số hạng đầu",
-    "2.5. Bài toán tích lũy"
-   ],
-   [
-    "3.1. Công bội đặc biệt",
-    "3.2. Số hạng tổng quát",
-    "3.3. Tìm công bội",
-    "3.4. Tổng hữu hạn",
-    "3.5. Tổng vô hạn và phần dư"
-   ],
-   [
-    "4.1. Tăng đều và tăng tỉ lệ",
-    "4.2. Mô hình lãi kép",
-    "4.3. Gửi góp, trả nợ"
-   ]
-  ]
- },
- "08": {
-  "modules": [
-   "1. Giới hạn dãy số",
-   "2. Giới hạn hàm số",
-   "3. Tính liên tục",
-   "4. Giá trị trung gian"
-  ],
-  "subs": [
-   [
-    "1.1. Giới hạn qua sai số",
-    "1.2. Dãy phân kỳ, dao động",
-    "1.3. Giới hạn dãy lũy thừa",
-    "1.4. Giới hạn dãy phân thức",
-    "1.5. Tổng cấp số nhân vô hạn"
-   ],
-   [
-    "2.1. Giới hạn tại điểm",
-    "2.2. Giới hạn trái và phải",
-    "2.3. Vô cực gần điểm",
-    "2.4. Giới hạn tại vô cực",
-    "2.5. Dạng 0/0: nhân tử",
-    "2.6. Dạng 0/0: liên hợp",
-    "2.7. Vô cực trừ vô cực"
-   ],
-   [
-    "3.1. Liên tục tại một điểm",
-    "3.2. Ba kiểu gián đoạn",
-    "3.3. Liên tục trên miền",
-    "3.4. Phép toán liên tục"
-   ],
-   [
-    "4.1. Định lí giá trị trung gian",
-    "4.2. Phương pháp chia đôi"
-   ]
-  ]
- },
- "09": {
-  "modules": [
-   "1. Đạo hàm tại điểm",
-   "2. Ý nghĩa đạo hàm",
-   "3. Quy tắc đạo hàm",
-   "4. Hàm hợp và đạo hàm",
-   "5. Gia tốc và vi phân"
-  ],
-  "subs": [
-   [
-    "1.1. Vận tốc trung bình",
-    "1.2. Cát tuyến và độ dốc",
-    "1.3. Đạo hàm bằng định nghĩa",
-    "1.4. Miền khả vi",
-    "1.5. Khả vi kéo theo liên tục",
-    "1.6. Đạo hàm một phía"
-   ],
-   [
-    "2.1. Hệ số góc tiếp tuyến",
-    "2.2. Phương trình tiếp tuyến",
-    "2.3. Vận tốc có hướng",
-    "2.4. Đơn vị của đạo hàm"
-   ],
-   [
-    "3.1. Lũy thừa và hằng số",
-    "3.2. Căn thức và điểm biên",
-    "3.3. Quy tắc tổng",
-    "3.4. Quy tắc tích",
-    "3.5. Quy tắc thương",
-    "3.6. Quy tắc dây chuyền"
-   ],
-   [
-    "4.1. Sin và cos",
-    "4.2. Tan và cot",
-    "4.3. Hàm lượng giác hợp",
-    "4.4. Hàm mũ",
-    "4.5. Logarit và miền",
-    "4.6. Mũ–logarit hợp",
-    "4.7. Đạo hàm và miền gốc",
-    "4.8. Chọn đúng quy tắc"
-   ],
-   [
-    "5.1. Vận tốc từ tọa độ",
-    "5.2. Đạo hàm bậc hai",
-    "5.3. Đạo hàm đa thức bậc hai",
-    "5.4. Đạo hàm hàm hợp bậc hai",
-    "5.5. Gia tốc",
-    "5.6. Dấu vận tốc và gia tốc",
-    "5.7. Phối hợp ba đại lượng",
-    "5.8. Vi phân xấp xỉ"
-   ]
-  ]
- }
+  "10": {
+    "modules": [
+      "1. Biến thiên",
+      "2. Cực trị và GTLN/GTNN",
+      "3. Tiệm cận",
+      "4. Khảo sát đồ thị",
+      "5. Tối ưu thực tế",
+      "6. Kiểm nghiệm"
+    ],
+    "subs": [
+      [
+        "1.1. Đồng biến và nghịch biến",
+        "1.2. Dấu đạo hàm",
+        "1.3. Điểm cấm và biến thiên",
+        "1.4. Cực trị qua đổi dấu",
+        "1.5. Điểm dừng không cực trị",
+        "1.6. Chiều chuyển động"
+      ],
+      [
+        "2.1. Cực trị địa phương/toàn cục",
+        "2.2. GTLN, GTNN trên đoạn",
+        "2.3. Ứng viên và biên",
+        "2.4. Miền mở và khả đạt",
+        "2.5. Miền ràng buộc",
+        "2.6. Lập mô hình ba cạnh"
+      ],
+      [
+        "3.1. Tiệm cận ngang",
+        "3.2. Tiệm cận đứng",
+        "3.3. Tiệm cận xiên",
+        "3.4. Lỗ khử được",
+        "3.5. Giới hạn theo miền",
+        "3.6. Tiệm cận qua hình"
+      ],
+      [
+        "4.1. Các bước khảo sát",
+        "4.2. Đồ thị hàm bậc ba",
+        "4.3. Khảo sát phân thức",
+        "4.4. Giao trục",
+        "4.5. Tâm đối xứng",
+        "4.6. Bảng biến thiên",
+        "4.7. Miền rời và biến thiên"
+      ],
+      [
+        "5.1. Chi phí cận biên",
+        "5.2. Vận tốc và gia tốc",
+        "5.3. Sai khác chi phí thực",
+        "5.4. Miền khả thi của hộp",
+        "5.5. Tối ưu trên đoạn",
+        "5.6. Điểm không khả vi",
+        "5.7. Nghiệm tối ưu nguyên"
+      ],
+      [
+        "6.1. Cực trị địa phương",
+        "6.2. Tiệm cận và bảng dấu",
+        "6.3. Lợi nhuận đúng mục tiêu",
+        "6.4. Kiểm lỗi bằng điều kiện"
+      ]
+    ]
+  },
+  "11": {
+    "modules": [
+      "1. Nguyên hàm",
+      "2. Tích phân xác định",
+      "3. Diện tích hình phẳng",
+      "4. Thể tích"
+    ],
+    "subs": [
+      [
+        "1.1. Nhận ra nguyên hàm",
+        "1.2. Họ nguyên hàm, điều kiện",
+        "1.3. Nguyên hàm lũy thừa",
+        "1.4. Nguyên hàm 1/x",
+        "1.5. Hàm mũ và hệ số bù",
+        "1.6. Nguyên hàm lượng giác",
+        "1.7. Khôi phục vị trí"
+      ],
+      [
+        "2.1. Newton–Leibniz",
+        "2.2. Tính tuyến tính",
+        "2.3. Đảo cận và ghép cận",
+        "2.4. Tích lũy và diện tích",
+        "2.5. Độ dời và quãng đường",
+        "2.6. Tích phân lượng giác",
+        "2.7. Tích lũy từ tốc độ"
+      ],
+      [
+        "3.1. Diện tích dưới hàm căn",
+        "3.2. Diện tích đổi dấu",
+        "3.3. Diện tích giữa hai đường",
+        "3.4. Hai đường đổi thứ tự",
+        "3.5. Diện tích từ giao điểm"
+      ],
+      [
+        "4.1. Thiết diện vuông",
+        "4.2. Tiết diện tròn",
+        "4.3. Đĩa và vành khăn"
+      ]
+    ]
+  },
+  "06": {
+    "modules": [
+      "1. Góc quay",
+      "2. Công thức lượng giác",
+      "3. Hàm lượng giác",
+      "4. Phương trình lượng giác"
+    ],
+    "subs": [
+      [
+        "1.1. Độ, radian góc quay",
+        "1.2. Sin/cos trên đường tròn",
+        "1.3. Độ dài cung và độ dời"
+      ],
+      [
+        "2.1. Hệ thức lượng giác",
+        "2.2. Góc liên quan và đối xứng",
+        "2.3. Công thức cộng/trừ góc",
+        "2.4. Góc nhân đôi và đổi dạng"
+      ],
+      [
+        "3.1. Miền xác định",
+        "3.2. Chu kỳ, đối xứng",
+        "3.3. Biên độ, pha và trục giữa",
+        "3.4. Tan/cot và tiệm cận"
+      ],
+      [
+        "4.1. Nghiệm của sin/cos",
+        "4.2. Nghiệm của tan/cot",
+        "4.3. Biến đổi giữ nghiệm",
+        "4.4. Lọc nghiệm theo khoảng",
+        "4.5. Giới hạn mô hình chu kỳ"
+      ]
+    ]
+  },
+  "07": {
+    "modules": [
+      "1. Dãy số",
+      "2. Cấp số cộng",
+      "3. Cấp số nhân",
+      "4. Mô hình tăng trưởng"
+    ],
+    "subs": [
+      [
+        "1.1. Dãy số và tập chỉ số",
+        "1.2. Công thức và quy luật",
+        "1.3. Hệ thức truy hồi",
+        "1.4. Chứng minh tăng, giảm",
+        "1.5. Tính bị chặn"
+      ],
+      [
+        "2.1. Nhận diện cấp số cộng",
+        "2.2. Số hạng tổng quát CSC",
+        "2.3. Tìm công sai",
+        "2.4. Tổng các số hạng đầu",
+        "2.5. Bài toán tích lũy"
+      ],
+      [
+        "3.1. Công bội đặc biệt",
+        "3.2. Số hạng tổng quát",
+        "3.3. Tìm công bội",
+        "3.4. Tổng hữu hạn",
+        "3.5. Tổng vô hạn và phần dư"
+      ],
+      [
+        "4.1. Tăng đều và tăng tỉ lệ",
+        "4.2. Mô hình lãi kép",
+        "4.3. Gửi góp, trả nợ"
+      ]
+    ]
+  },
+  "08": {
+    "modules": [
+      "1. Giới hạn dãy số",
+      "2. Giới hạn hàm số",
+      "3. Tính liên tục",
+      "4. Giá trị trung gian"
+    ],
+    "subs": [
+      [
+        "1.1. Giới hạn qua sai số",
+        "1.2. Dãy phân kỳ, dao động",
+        "1.3. Giới hạn dãy lũy thừa",
+        "1.4. Giới hạn dãy phân thức",
+        "1.5. Tổng cấp số nhân vô hạn"
+      ],
+      [
+        "2.1. Giới hạn tại điểm",
+        "2.2. Giới hạn trái và phải",
+        "2.3. Vô cực gần điểm",
+        "2.4. Giới hạn tại vô cực",
+        "2.5. Dạng 0/0: nhân tử",
+        "2.6. Dạng 0/0: liên hợp",
+        "2.7. Vô cực trừ vô cực"
+      ],
+      [
+        "3.1. Liên tục tại một điểm",
+        "3.2. Ba kiểu gián đoạn",
+        "3.3. Liên tục trên miền",
+        "3.4. Phép toán liên tục"
+      ],
+      [
+        "4.1. Định lí giá trị trung gian",
+        "4.2. Phương pháp chia đôi"
+      ]
+    ]
+  },
+  "09": {
+    "modules": [
+      "1. Định nghĩa đạo hàm",
+      "2. Ý nghĩa đạo hàm",
+      "3. Quy tắc đạo hàm",
+      "4. Đạo hàm hàm cơ bản",
+      "5. Đạo hàm cấp hai và ứng dụng"
+    ],
+    "subs": [
+      [
+        "1.1. Vận tốc trung bình",
+        "1.2. Cát tuyến và độ dốc",
+        "1.3. Định nghĩa đạo hàm",
+        "1.4. Miền khả vi",
+        "1.5. Khả vi và liên tục",
+        "1.6. Đạo hàm một phía"
+      ],
+      [
+        "2.1. Hệ số góc tiếp tuyến",
+        "2.2. Phương trình tiếp tuyến",
+        "2.3. Vận tốc có hướng",
+        "2.4. Đơn vị đạo hàm"
+      ],
+      [
+        "3.1. Lũy thừa và hằng số",
+        "3.2. Căn thức và điểm biên",
+        "3.3. Quy tắc tổng",
+        "3.4. Quy tắc tích",
+        "3.5. Quy tắc thương",
+        "3.6. Quy tắc dây chuyền"
+      ],
+      [
+        "4.1. Sin và cos",
+        "4.2. Tan và cot",
+        "4.3. Hàm lượng giác hợp",
+        "4.4. Hàm mũ",
+        "4.5. Logarit và miền",
+        "4.6. Mũ–logarit hợp",
+        "4.7. Đạo hàm và miền gốc",
+        "4.8. Chọn đúng quy tắc"
+      ],
+      [
+        "5.1. Vận tốc từ tọa độ",
+        "5.2. Đạo hàm bậc hai",
+        "5.3. Đạo hàm đa thức bậc hai",
+        "5.4. Đạo hàm cấp hai hàm hợp",
+        "5.5. Gia tốc",
+        "5.6. Dấu vận tốc và gia tốc",
+        "5.7. Phối hợp ba đại lượng",
+        "5.8. Vi phân xấp xỉ"
+      ]
+    ]
+  }
 };
 const displayShortTopicW1=(button,label,full)=>{
  if(!label||!full||label.length>full.length)throw Error("TOPIC_W1_SHORT_TAB_SOURCE_HOLD");
