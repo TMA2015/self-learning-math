@@ -72,7 +72,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Hai đầu A,A trùng nhau; phân biệt độ dài và việc đo góc."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -87,7 +89,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Vectơ-không có độ dài 0, không chỉ một hướng hình học riêng; không xác định góc với vectơ-không. Ôn CĐ18 mục 1.1; luyện THPT-TOP18-P01."
   },
   {
     "item_id": "THPT-G12-B06-C02",
@@ -100,7 +103,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "So hai cạnh đối có cùng chiều đi và độ dài."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -115,7 +120,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn CD, đã đảo đầu cuối; DC mới cùng hướng AB. Ôn CĐ18 mục 1.2; luyện THPT-TOP18-P02."
   },
   {
     "item_id": "THPT-G12-B06-P03",
@@ -128,7 +134,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Đảo chiều AB, giữ nguyên độ dài."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -143,7 +151,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn DC, cùng hướng AB; BA hoặc CD mới đối nhau. Ôn CĐ18 mục 1.2; luyện THPT-TOP18-P02."
   },
   {
     "item_id": "THPT-G12-B06-P04",
@@ -156,7 +165,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Hai vectơ bằng nhau phải cùng hướng và cùng độ dài."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -171,7 +182,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ cùng phương, chưa đủ bằng nhau; kiểm cả độ dài. Ôn CĐ18 mục 1.2; luyện THPT-TOP18-P02."
   },
   {
     "item_id": "THPT-G12-B06-C03",
@@ -246,7 +258,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Ghép AB, BC=AD, CC′=AA′."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -261,7 +275,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dừng tại C, còn thiếu độ dời CC′. Ôn CĐ18 mục 1.3; luyện THPT-TOP18-P03."
   },
   {
     "item_id": "THPT-G12-B06-C04",
@@ -274,7 +289,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Dùng |k| nhân độ dài, không dùng dấu của k làm độ dài."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -289,7 +306,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra −6, độ dài không âm; dấu âm chỉ đảo hướng. Ôn CĐ18 mục 1.4; luyện THPT-TOP18-P04."
   },
   {
     "item_id": "THPT-G12-B06-P07",
@@ -302,7 +320,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "M nằm giữa A,B và AM bằng nửa AB."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -317,7 +337,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy hệ số −1/2, AM cùng hướng AB vì M nằm trên đoạn AB. Ôn CĐ18 mục 1.4; luyện THPT-TOP18-P04."
   },
   {
     "item_id": "THPT-G12-B06-P08",
@@ -330,7 +351,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "N thuộc tia đối của AB nên hệ số âm."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -345,7 +368,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy +3, đã sai hướng dù độ dài đúng. Ôn CĐ18 mục 1.4; luyện THPT-TOP18-P04."
   },
   {
     "item_id": "THPT-G12-B06-C05",
@@ -358,7 +382,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Dùng cos60°=1/2."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -373,7 +399,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 6, quên nhân cos. Ôn CĐ18 mục 1.5; luyện THPT-TOP18-P05."
   },
   {
     "item_id": "THPT-G12-B06-P09",
@@ -386,7 +413,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Cos90° bằng 0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -401,7 +430,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu tích vô hướng 0, không suy một vectơ bằng 0; ở đây cả hai khác 0. Ôn CĐ18 mục 1.5; luyện THPT-TOP18-P05."
   },
   {
     "item_id": "THPT-G12-B06-P10",
@@ -414,7 +444,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Cos120°=−1/2."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -429,7 +461,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra +12, góc tù có cos âm. Ôn CĐ18 mục 1.5; luyện THPT-TOP18-P05."
   },
   {
     "item_id": "THPT-G12-B06-C06",
@@ -442,7 +475,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Lực cùng hướng độ dời nên cos0°=1."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -457,7 +492,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 0, nhầm góc 0° với 90°. Ôn CĐ18 mục 1.6; luyện THPT-TOP18-P06."
   },
   {
     "item_id": "THPT-G12-B06-P11",
@@ -470,7 +506,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Thành phần lực theo độ dời bằng 0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -485,7 +523,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 60 J, đã nhân độ lớn mà không xét hướng. Ôn CĐ18 mục 1.6; luyện THPT-TOP18-P06."
   },
   {
     "item_id": "THPT-G12-B06-P12",
@@ -498,7 +537,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Công bằng 8·3·cos120°."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -513,7 +554,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu kết quả dương, lực có thành phần chống độ dời nên công âm. Ôn CĐ18 mục 1.6; luyện THPT-TOP18-P06."
   },
   {
     "item_id": "THPT-G12-B07-C01",
@@ -588,7 +630,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tọa độ y bằng 0 nên điểm nằm trong mặt chứa Ox,Oz."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -603,7 +647,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn Oyz, hãy xét tọa độ bị thiếu. Ôn CĐ18 mục 2.1; luyện THPT-TOP18-P07."
   },
   {
     "item_id": "THPT-G12-B07-C02",
@@ -616,7 +661,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Đọc hệ số của i,j,k lần lượt."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -631,7 +678,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ dấu âm của j, tọa độ y phải là −2. Ôn CĐ18 mục 2.2; luyện THPT-TOP18-P08."
   },
   {
     "item_id": "THPT-G12-B07-P03",
@@ -644,7 +692,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Vectơ vị trí OM có tọa độ đúng bằng điểm M."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -659,7 +709,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đổi dấu, đã tính MO thay OM. Ôn CĐ18 mục 2.2; luyện THPT-TOP18-P08."
   },
   {
     "item_id": "THPT-G12-B07-P04",
@@ -672,7 +723,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Chỉ thành phần theo k khác 0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -687,7 +740,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu viết 5k, quên dấu âm theo chiều Oz. Ôn CĐ18 mục 2.2; luyện THPT-TOP18-P08."
   },
   {
     "item_id": "THPT-G12-B07-C03",
@@ -762,7 +816,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Oz hướng xuống từ gốc trần, nên sàn ở chiều dương."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -777,7 +833,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra −3, kiểm chiều dương của hệ trục mới. Ôn CĐ18 mục 2.3; luyện THPT-TOP18-P09."
   },
   {
     "item_id": "THPT-G12-B07-C04",
@@ -790,7 +847,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Lấy B−A theo từng tọa độ."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -805,7 +864,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra (−4;0;2), đã tính BA. Ôn CĐ18 mục 2.4; luyện THPT-TOP18-P10."
   },
   {
     "item_id": "THPT-G12-B07-P07",
@@ -818,7 +878,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Điểm đầu B, điểm cuối A; lấy A−B."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -833,7 +895,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra (3;−4;−2), đã đảo chiều BA. Ôn CĐ18 mục 2.4; luyện THPT-TOP18-P10."
   },
   {
     "item_id": "THPT-G12-B07-P08",
@@ -846,7 +909,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "A là gốc nên hiệu B−A bằng tọa độ B."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -861,7 +926,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra dấu ngược, kiểm điểm đầu và điểm cuối. Ôn CĐ18 mục 2.4; luyện THPT-TOP18-P10."
   },
   {
     "item_id": "THPT-G12-B08-C01",
@@ -936,7 +1002,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Nhân cả ba thành phần với −3."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -951,7 +1019,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ đổi dấu hoặc chỉ nhân x, phải nhân từng thành phần. Ôn CĐ18 mục 3.1; luyện THPT-TOP18-P11."
   },
   {
     "item_id": "THPT-G12-B08-C02",
@@ -964,7 +1033,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tìm một k khớp cả ba tọa độ."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -979,7 +1050,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ kiểm x, cần kiểm y,z nữa. Ôn CĐ18 mục 3.2; luyện THPT-TOP18-P12."
   },
   {
     "item_id": "THPT-G12-B08-P03",
@@ -992,7 +1064,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Dùng u=kv, không chia 0/0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1007,7 +1081,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho không cùng phương vì y=0, đẳng thức 0=k·0 vẫn đúng. Ôn CĐ18 mục 3.2; luyện THPT-TOP18-P12."
   },
   {
     "item_id": "THPT-G12-B08-P04",
@@ -1020,7 +1095,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Từ x,y tìm k rồi thử z."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1035,7 +1112,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu kết luận cùng phương sau hai tọa độ, z=7 không bằng 6. Ôn CĐ18 mục 3.2; luyện THPT-TOP18-P12."
   },
   {
     "item_id": "THPT-G12-B08-C03",
@@ -1110,7 +1188,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Trung bình từng cặp tọa độ."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1125,7 +1205,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia 3, trung điểm chỉ có hai điểm. Ôn CĐ18 mục 3.3; luyện THPT-TOP18-P13."
   },
   {
     "item_id": "THPT-G12-B08-C04",
@@ -1138,7 +1219,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Cộng ba tích tương ứng, giữ dấu âm."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1153,7 +1236,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 5, kiểm tích 3·(−1)=-3. Ôn CĐ18 mục 3.4; luyện THPT-TOP18-P14."
   },
   {
     "item_id": "THPT-G12-B08-P07",
@@ -1166,7 +1250,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tính u·v và kiểm cả hai khác 0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1181,7 +1267,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ thấy một cặp thành phần đối nhau, chưa đủ; tổng tích phải bằng 0. Ôn CĐ18 mục 3.4; luyện THPT-TOP18-P14."
   },
   {
     "item_id": "THPT-G12-B08-P08",
@@ -1194,7 +1281,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tính tích vô hướng, độ dài 1 và √2."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1209,7 +1298,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 90°, tích vô hướng bằng 1, không bằng 0. Ôn CĐ18 mục 3.4; luyện THPT-TOP18-P14."
   },
   {
     "item_id": "THPT-G12-B08-C05",
@@ -1222,7 +1312,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Căn tổng bình phương 3,4,0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1237,7 +1329,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 7, đã cộng thành phần thay vì độ dài Euclid. Ôn CĐ18 mục 3.5; luyện THPT-TOP18-P15."
   },
   {
     "item_id": "THPT-G12-B08-P09",
@@ -1250,7 +1343,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Hiệu B−A chỉ khác 0 ở z."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1265,7 +1360,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 7, khoảng cách là chênh lệch 7−3. Ôn CĐ18 mục 3.5; luyện THPT-TOP18-P15."
   },
   {
     "item_id": "THPT-G12-B08-P10",
@@ -1278,7 +1374,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Bình phương cả ba thành phần rồi lấy căn."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1293,7 +1391,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ tọa độ âm hoặc tính bình phương âm, (−2)²=4. Ôn CĐ18 mục 3.5; luyện THPT-TOP18-P15."
   },
   {
     "item_id": "THPT-G12-B08-C06",
@@ -1306,7 +1405,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Độ dời thẳng AB có thành phần 3,4,0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1321,7 +1422,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 7 m, đó là hành trình đi theo hai trục, không phải đi thẳng. Ôn CĐ18 mục 3.6; luyện THPT-TOP18-P16."
   },
   {
     "item_id": "THPT-G12-B08-P11",
@@ -1334,7 +1436,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tốc độ bằng quãng đường chia thời gian."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1349,7 +1453,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 20, cần chia 10 m cho 2 s. Ôn CĐ18 mục 3.6; luyện THPT-TOP18-P16."
   },
   {
     "item_id": "THPT-G12-B08-P12",
@@ -1362,7 +1467,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tính B−A rồi độ dài vectơ."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1377,7 +1484,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên z, hiệu z là 12, phải bình phương cả ba thành phần. Ôn CĐ18 mục 3.6; luyện THPT-TOP18-P16."
   },
   {
     "item_id": "THPT-G12-B06-T01",
