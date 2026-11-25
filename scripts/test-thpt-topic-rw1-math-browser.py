@@ -94,7 +94,7 @@ SOURCE=r"""async () => {
  const article=doc.querySelector("article.md-typeset");
  const result={};
  const heads=[...article.querySelectorAll("h3")].filter(h=>/^\d+\.\d+\./.test(h.textContent));
- const rx=/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\[\s*\n([\s\S]*?)\n\s*\]|\[A\\setminus B=\{x\\in A:x\\notin B\}\.\]|\[\|A\\cup B\|=\|A\|\+\|B\|-\|A\\cap B\|\.\]/g;
+ const rx=/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\[\s*\n([\s\S]*?)\n\s*\]|\[A\\setminus B=\{x\\in A:x\\notin B\}\.\]|\[\|A\\cup B\|=\|A\|\+\|B\|-\|A\\cap B\|\.\]|\[((?:(?!\\[\(\[])[^\[\]\r\n])+)\]/g;
  const canon=s=>s.replace(/\s+/g,"");
  for(const h of heads){
   const key=h.textContent.match(/^\d+\.\d+/)[0], values=[];
@@ -104,8 +104,9 @@ SOURCE=r"""async () => {
    while(w.nextNode()){
     if(w.currentNode.parentElement?.closest("script,style,code,pre,svg"))continue;
     for(const m of w.currentNode.nodeValue.matchAll(rx)){
-     if(m[3]!==undefined&&!/\\[A-Za-z]+/.test(m[3]))continue;
-     let tex=m[1]??m[2]??m[3]??m[0].slice(1,-1);
+     if(m[3]!==undefined&&!(/\\[A-Za-z]+/.test(m[3])||(/=/.test(m[3])&&/[\^_]/.test(m[3]))))continue;
+     if(m[4]!==undefined&&!(/\\[A-Za-z]+/.test(m[4])&&/=/.test(m[4])))continue;
+     let tex=m[1]??m[2]??m[3]??m[4]??m[0].slice(1,-1);
      if(m[0].startsWith("[A\\setminus"))tex="A\\setminus B=\\{x\\in A:x\\notin B\\}.";
      values.push(canon(tex));
     }
