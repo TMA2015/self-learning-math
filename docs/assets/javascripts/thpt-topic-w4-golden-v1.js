@@ -7,7 +7,7 @@
 const config=document.querySelector(".topic-w1-release-nav[data-topic-w1][data-topic-w1-part]");
 if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
-const sharedKnowledgeActive=part==="kien-thuc"&&topic==="16";
+const sharedKnowledgeActive=part==="kien-thuc";
 const sharedKnowledgeMath=()=>sharedKnowledgeActive?window.SLMTHPTKnowledgeMath:null;
 let sharedKnowledgePrepared=false;
 const sizes={"16":{"outcomes":21,"items":65,"replay":8,"groups":4,"practiceGroups":4},"17":{"outcomes":12,"items":37,"replay":8,"groups":2,"practiceGroups":3},"18":{"outcomes":40,"items":207,"replay":12,"groups":8,"practiceGroups":8}};
