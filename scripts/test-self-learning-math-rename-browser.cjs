@@ -49,8 +49,8 @@ const open=async(page,url)=>{
     await page.locator("[data-thpt-r4-launcher]").waitFor({state:"visible"});
     await page.locator("[data-thpt-r4-launcher]").click();
     const topicDlg=page.locator("[data-thpt-r4-shortcut-dialog]");
-    assert.equal(await topicDlg.locator('nav[aria-label="Năm lối tắt chính Toán THPT"] a').count(),5);
-    assert((await topicDlg.locator('nav[aria-label="Năm lối tắt chính Toán THPT"]').innerText()).includes("Trang chủ THPT"));
+    assert.equal(await topicDlg.locator('nav[aria-label="Sáu lối tắt chính Toán THPT"] a').count(),6);
+    assert((await topicDlg.locator('nav[aria-label="Sáu lối tắt chính Toán THPT"]').innerText()).includes("Trang chủ THPT"));
     const coverAgain=topicDlg.locator("[data-math-program-cover-link]");
     assert.equal(new URL(await coverAgain.getAttribute("href"),page.url()).pathname,prefix);
     await coverAgain.click();

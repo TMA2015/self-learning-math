@@ -29,7 +29,7 @@ async function ready(page,path){
  await page.locator(".md-header").waitFor({state:"visible"});
  const label=page.locator("[data-thpt-r4-launcher]");
  await label.waitFor({state:"visible"});
- assert((await label.textContent()).includes("5 + 1"),"THPT 5+1 mẫu absent");
+ assert((await label.textContent()).includes("6 + 1"),"THPT 6+1 absent");
  assert(await page.locator("[data-roadmap-topic-launcher]").isHidden(),"THCS 7+25 visible on THPT");
 }
 (async()=>{
@@ -442,11 +442,11 @@ async function ready(page,path){
   await page.locator("[data-thpt-r4-launcher]").click();
   const dialog=page.locator("[data-thpt-r4-shortcut-dialog]");
   assert(await dialog.isVisible(),"THPT quick navigation dialog did not open");
-  const mainLinks=dialog.locator('nav[aria-label="Năm lối tắt chính Toán THPT"] a');
-  assert((await mainLinks.count())===5,"THPT launcher must have precisely five fixed destinations");
-  const expected=["Trang chủ THPT","Học theo SGK","Chuyên đề","Thư viện bài tập","Tiến độ học tập"];
+  const mainLinks=dialog.locator('nav[aria-label="Sáu lối tắt chính Toán THPT"] a');
+  assert((await mainLinks.count())===6,"THPT launcher must have precisely six fixed destinations");
+  const expected=["Trang chủ THPT","Tiến độ học tập","Học theo SGK","Chuyên đề","Thư viện bài tập","Math Lab · 25 mô hình tương tác"];
   assert.deepEqual((await mainLinks.allTextContents()).map(x=>x.trim()),expected,"THPT launcher group order differs from R4 contract");
-  assert((await dialog.locator('nav[aria-label="Các chuyên đề mẫu THPT"] a').count())===1,"THPT pilot must have one sample topic");
+  assert.equal(await dialog.locator(".roadmap-topic-dialog__list").count(),0,"THPT menu must not duplicate Topic catalog");
   for(const a of await mainLinks.all()){
    const href=await a.getAttribute("href");
    assert(href?.startsWith("/thpt-preview/"),"THPT launcher left its own section: "+href);

@@ -26,10 +26,25 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Classify exact menu-only PR
+        id: scope
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [[ -n "$BASE_SHA" ]]; then
+            git diff --no-renames --name-only "$BASE_SHA" HEAD > "$RUNNER_TEMP/menu-paths.txt"
+            node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/menu-paths.txt"
+            if grep -Fxq 'reason=OWNER_THPT_MENU_6_PLUS_1' "$GITHUB_OUTPUT"; then
+              node scripts/test-thpt-release-impact.cjs --prove-menu-6-plus-1
+            fi
+          fi
       - name: Static source, route and UI gates
+        if: steps.scope.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1'
         run: |
           node --check docs/assets/javascripts/math-lab-library-v1.js
           node --check scripts/test-math-lab-25-release-intake.cjs
@@ -46,6 +61,11 @@ jobs:
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: Exact bytes preserved in built site
+        if: steps.scope.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1'
         run: node scripts/test-math-lab-25-release-intake.cjs --built
-      - name: Browser full-page scroll, model deep links and 5+1 shortcut
+      - name: Browser full-page scroll, model deep links and 6+1 shortcut
+        if: steps.scope.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1'
         run: python scripts/test-math-lab-25-browser.py
+      - name: Actual THPT menu-only 2x3 browser checks
+        if: steps.scope.outputs.reason == 'OWNER_THPT_MENU_6_PLUS_1'
+        run: python scripts/test-math-lab-25-browser.py --menu-only

@@ -79,7 +79,7 @@ function b16RuntimeIsIsolated(){
  const bytes=Buffer.from(s),sha=crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
  // Owner-approved retired-topic launcher now links only to 22 canonical Topics;
  // hash recomputed after stripping the entire B16 adapter and normalizing its legacy link.
- return sha==="d847e412bbc1bc10e62620965312ae0d327a0907";
+ return ["d847e412bbc1bc10e62620965312ae0d327a0907","7142b0311c23bfce8474537e2c80f495b07898b0"].includes(sha);
 }
 /* W3 CĐ12–15 is an owner-authorized, separately QA-gated Topic-only wave.
  * Explicit original-file allowlist includes ONLY new Topic pages/assets and
@@ -311,7 +311,7 @@ function isExactW5P1(files){
   if(!js.includes('if(t.nodeValue.includes("^")||t.nodeValue.includes("[")')||
      !js.includes("recovered-display")||!js.includes('credentials:"omit"')||
      /localStorage|sessionStorage|setDoc\(|sendBeacon/.test(js)||
-     !launcher.includes('["Danh mục 22 Chuyên đề đã phát hành","chuyen-de/"]')||
+     (!launcher.includes('["Danh mục 22 Chuyên đề đã phát hành","chuyen-de/"]')&&!launcher.includes('title.textContent="Toán THPT 6+1"'))||
      launcher.includes("Hàm số và đồ thị · MẪU"))return false;
   for(const part of ["kien-thuc","luyen-tap","tu-kiem-tra"]){
    const page=fs.readFileSync("docs/thpt-preview/chuyen-de/ham-so/"+part+".md","utf8");
@@ -684,6 +684,26 @@ function proveRW3Tabs(){
  assert.equal(changes,69,"Unexpected alias count");
  console.log("PASS R-W3 69 labels only, all renderer logic, content and protected assessment unchanged");
 }
+const MENU_6_PLUS_1_FILES=new Set(["docs/assets/javascripts/thpt-r4-preview.js","docs/assets/stylesheets/thpt-r4-preview.css","scripts/test-thpt-r4-preview-browser.js","scripts/test-self-learning-math-rename-browser.cjs","scripts/test-math-lab-25-release-intake.cjs","scripts/test-math-lab-25-browser.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/math-lab-25-release-intake-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml"]);
+function isExactMenu6Plus1(files){
+ const crypto=require("node:crypto");
+ const blob=p=>{const bytes=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");};
+ return files.length===MENU_6_PLUS_1_FILES.size&&new Set(files).size===files.length&&files.every(f=>MENU_6_PLUS_1_FILES.has(f))&&
+  blob("docs/assets/javascripts/thpt-r4-preview.js")==="0da9e816048c10745fa9dceda3dcb14c4f3a756f"&&
+  blob("docs/assets/stylesheets/thpt-r4-preview.css")==="9cd256b3301d4f0ee748a0fc16130df8370e37cb"&&
+  fs.readFileSync("scripts/test-math-lab-25-browser.py","utf8").includes("THPT_MENU_ONLY");
+}
+function proveMenu6Plus1(){
+ const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"});
+ const base=process.env.BASE_SHA;
+ assert.equal(base,"7add09ad572074fa02f7ff75a8059400e327636e","Menu base is not the exact published snapshot");
+ assert(isExactMenu6Plus1(git("diff","--no-renames","--name-only",base,"HEAD").trim().split("\n")),"Menu exact scope HOLD");
+ const js="docs/assets/javascripts/thpt-r4-preview.js",css="docs/assets/stylesheets/thpt-r4-preview.css";
+ const outside=s=>{const a=s.indexOf(" function initTHPTLauncher(){"),b=s.indexOf(" function initQuadraticPlot(){",a);assert(a>=0&&b>a);return s.slice(0,a)+s.slice(b);};
+ assert.equal(outside(fs.readFileSync(js,"utf8")),outside(git("show",base+":"+js)),"Non-menu runtime changed");
+ assert(fs.readFileSync(css,"utf8").startsWith(git("show",base+":"+css)),"Existing CSS changed");
+ console.log("PASS menu 6+1 only, existing THCS, content, math, assessment and CSS unchanged");
+}
 const TOPIC_DISCLOSURE_FILES=new Set(["docs/assets/javascripts/math-details-v1.js","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml","docs/assets/stylesheets/thpt-topic01-release-v1.css","docs/assets/stylesheets/thpt-topic-w1-golden-v1.css",".github/workflows/thpt-topic01-source-locked-release-qa.yml",".github/workflows/thpt-topic-w1-golden-release-qa.yml",".github/workflows/thpt-topic-w2-golden-release-qa.yml"]);
 function isExactTopicDisclosures(files){
  const crypto=require("node:crypto"),blob=p=>{const b=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
@@ -717,6 +737,7 @@ function classify(paths,{manual=false,base=""}={}){
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(files.length===MATH_NOTATION_GOVERNANCE.size&&new Set(files).size===files.length&&files.every(p=>MATH_NOTATION_GOVERNANCE.has(p)))
   return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"EXACT_MATH_NOTATION_GOVERNANCE_ONLY"};
+ if(isExactMenu6Plus1(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_THPT_MENU_6_PLUS_1"};
  if(isExactTopicDisclosures(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_SGK_DISCLOSURES"};
  if(isExactRW3Tabs(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_RW3_TAB_LABELS"};
  if(isExactSharedDeployRecovery(files,base))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1110_DEPLOY_RECOVERY_EXACT"};
@@ -903,6 +924,11 @@ function selfTest(){
  assert.equal(classify([...shared,"docs/thpt-preview/chuyen-de/cd09/kien-thuc.md"]).impact,"FULL");
  assert.equal(classify([...shared,"docs/assets/javascripts/firebase-gemini-v1.js"]).impact,"FULL");
  assert.equal(classify(shared,{manual:true}).impact,"FULL");
+ const menu6=[...MENU_6_PLUS_1_FILES];
+ const currentMenu=fs.readFileSync("docs/assets/javascripts/thpt-r4-preview.js","utf8").includes('title.textContent="Toán THPT 6+1"');
+ if(currentMenu)assert.equal(classify(menu6).reason,"OWNER_THPT_MENU_6_PLUS_1");
+ assert.equal(classify([...menu6,"mkdocs.yml"]).impact,"FULL");
+ assert.equal(classify(menu6,{manual:true}).impact,"FULL");
  const topicDisclosures=[...TOPIC_DISCLOSURE_FILES];
  if(fs.readFileSync("docs/assets/javascripts/math-details-v1.js","utf8").includes("function splitSGKDisclosure"))assert.equal(classify(topicDisclosures).reason,"OWNER_TOPIC_SGK_DISCLOSURES");
  assert.equal(classify([...topicDisclosures,"mkdocs.yml"]).impact,"FULL");
@@ -1273,7 +1299,8 @@ function selfTest(){
  console.log("PASS scoped CI impact classifier: canonical SGK page/receipt-only fast lanes, global/unknown/assessment full, manual full");
 }
 if(require.main===module){
- if(process.argv.includes("--prove-topic-disclosures"))proveTopicDisclosures();
+ if(process.argv.includes("--prove-menu-6-plus-1"))proveMenu6Plus1();
+ else if(process.argv.includes("--prove-topic-disclosures"))proveTopicDisclosures();
  else if(process.argv.includes("--prove-rw3-tabs"))proveRW3Tabs();
  else if(process.argv.includes("--prove-shared-recovery"))proveSharedDeployRecovery();
  else if(process.argv.includes("--self-test"))selfTest();

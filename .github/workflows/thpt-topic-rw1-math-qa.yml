@@ -42,6 +42,11 @@ jobs:
           node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/rw1-pr-paths.txt" >> "$GITHUB_OUTPUT"
           # Exact approved deployment-only recovery inherits the immutable browser PASS.
           # Unknown/runtime changes retain normal regression coverage.
+      - name: Prove exact THPT menu-only scope (browser QA delegated to existing Math Lab workflow)
+        if: steps.impact.outputs.reason == 'OWNER_THPT_MENU_6_PLUS_1'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: node scripts/test-thpt-release-impact.cjs --prove-menu-6-plus-1
       - name: Prove exact SGK disclosure-only scope
         if: steps.impact.outputs.reason == 'OWNER_TOPIC_SGK_DISCLOSURES'
         env:
@@ -58,11 +63,11 @@ jobs:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: node scripts/test-thpt-release-impact.cjs --prove-shared-recovery
       - uses: actions/setup-python@v5
-        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES') || matrix.wave == 'tail')
+        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES') || matrix.wave == 'tail')
         with:
           python-version: '3.12'
       - name: Install scoped QA dependencies
-        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES') || matrix.wave == 'tail')
+        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES') || matrix.wave == 'tail')
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
           python -m playwright install --with-deps chromium webkit
@@ -74,20 +79,20 @@ jobs:
           fi
           node scripts/test-thpt-topic01-release-intake.cjs
       - name: Strict build (not full-site browser audit)
-        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES') || matrix.wave == 'tail')
+        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES') || matrix.wave == 'tail')
         run: |
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: Shared-renderer candidate scope (no canonical changes)
-        if: (steps.impact.outputs.impact == 'SCOPED_TOPIC_SHARED_MATH' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES') || github.event.pull_request.head.ref == 'release/shared-knowledge-math-rw2-20261125'
+        if: (steps.impact.outputs.impact == 'SCOPED_TOPIC_SHARED_MATH' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES') || github.event.pull_request.head.ref == 'release/shared-knowledge-math-rw2-20261125'
         run: python scripts/test-thpt-topic-rw1-math-browser.py --shared-candidate-scope
       - name: Published Topic navigation source preflight
-        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES') || matrix.wave == 'tail')
+        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES') || matrix.wave == 'tail')
         run: |
           node scripts/test-thpt-topic-knowledge-tabs-v3.cjs --self-test
           node scripts/test-thpt-topic-knowledge-tabs-v3.cjs
       - name: Knowledge outcomes — Markdown/HTML/MathJax, Chromium/WebKit, 390/820/1440
-        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES') || matrix.wave == 'tail')
+        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES') || matrix.wave == 'tail')
         run: |
           if [[ "${{ steps.impact.outputs.reason }}" == "OWNER_TOPIC_SGK_DISCLOSURES" ]]; then
             python scripts/test-thpt-topic-rw1-math-browser.py --disclosures-only

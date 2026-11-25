@@ -611,3 +611,12 @@ body.thpt-g11-sgk-readable .md-content__inner > :is(h2,h3) {
     margin-block: .8em 1.2em;
   }
 }
+
+/* OWNER THPT 6+1: compact the desktop dialog by exactly one former
+ * group track plus one gap. Keep button dimensions and mobile layout.
+ * Former track = (26rem - dialog/section padding - borders - 2 gaps)/3. */
+@media (width > 38rem){
+ [data-thpt-r4-shortcut-dialog]{width:calc(26rem - (26rem - 3.6rem - 4px)/3 - .35rem)}
+ [data-thpt-r4-shortcut-dialog] details.roadmap-main-quick > nav.roadmap-main-quick__links{grid-template-columns:repeat(2,minmax(0,1fr))}
+ [data-thpt-r4-shortcut-dialog] > nav.roadmap-main-quick__links{grid-template-columns:minmax(0,calc((26rem - 2.5rem - 2px)/3))}
+}
