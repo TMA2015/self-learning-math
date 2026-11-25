@@ -143,9 +143,9 @@ Khi nào các tỉ số tan/cot không được phép sử dụng?
 
 Có thể tìm một giá trị lượng giác từ các giá trị còn lại không? Ta bắt đầu từ định lí Pythagore trên đường tròn đơn vị: \(\cos^2 x+\sin^2 x=1\).
 
-> **TÍNH CHẤT — Hệ thức cơ bản và điều kiện.** Với mọi \(x\in\mathbb R\), \(\sin^2x+\cos^2x=1\). Chia hai vế cho \(\cos^2x\) khi \(\cos x\ne0\), ta được \(1+\tan^2x=\frac1{\cos^2x}\). Chia hai vế cho \(\sin^2x\) khi \(\sin x\ne0\), ta được \(1+\cot^2x=\frac1{\sin^2x}\). Không dùng các hệ thức có mẫu bằng 0.
+> **TÍNH CHẤT — Hệ thức cơ bản và điều kiện.** Với mọi \(x\in\mathbb R\), \(\sin^2x+\cos^2x=1\). Chia hai vế cho \(\cos^2x\) khi \(\cos x\ne0\), ta được \(1+\tan^2x=\frac1{\cos^2x}\). Chia hai vế cho \(\sin^2x\) khi \(\sin x\ne0\), ta được \(1+\cot^2x=\frac1{\sin^2x}\). Khi cả \(\sin x\ne0\) và \(\cos x\ne0\), nhân hai tỉ số \(\tan x=\frac{\sin x}{\cos x}\) và \(\cot x=\frac{\cos x}{\sin x}\) cho \(\tan x\cdot\cot x=1\). Điều kiện này tương đương \(x\ne\frac{k\pi}{2}\) với \(k\in\mathbb Z\). Không dùng các hệ thức có mẫu bằng 0.
 
- Không được chia cho sin hoặc cos tại nghiệm bằng 0.
+Chẳng hạn tại \(x=0\), tang bằng 0 nhưng côtang không xác định; không thể kết luận tích bằng 1 tại đó.
 
 Chẳng hạn, nếu \(\sin x=\frac35\) và \(x\) ở góc phần tư I: \(\cos x=\frac45\); \(\tan x=\frac34\). Nếu \(\sin x=0\) thì \(\cot x\) không xác định, dù các hệ thức không có dấu chia sau biến đổi.
 
@@ -175,7 +175,18 @@ Phản xạ qua trục Oy đổi giá trị nào?
 
 > **TÍNH CHẤT — Góc liên quan và đối xứng.** Những góc đối xứng trên đường tròn tạo ra các quy luật về giá trị lượng giác. Vì sao hai góc khác nhau có thể có sin bằng nhau nhưng cos trái dấu? Cần nhớ phép đối xứng qua trục \(Oy\) trên đường tròn. Đối xứng của điểm \((\cos\alpha;\sin\alpha)\) qua \(Oy\) biến góc \(\alpha\) thành \(\pi-\alpha\); do đó \(\sin(\pi-\alpha)=\sin\alpha\), \(\cos(\pi-\alpha)=-\cos\alpha\). Với \(-\alpha\): cos chẵn, sin lẻ. Lý do hình học đi trước việc học thuộc dấu.
 
-Ngoài đối xứng bù và đối đã thấy, góc **phụ nhau** đổi vai trò hoành độ–tung độ: \(\sin(\tfrac{\pi}{2}-\alpha)=\cos\alpha\), \(\cos(\tfrac{\pi}{2}-\alpha)=\sin\alpha\). Góc hơn kém \(\pi\) đưa điểm tới điểm đối diện trên đường tròn nên \(\sin(\pi+\alpha)=-\sin\alpha\), \(\cos(\pi+\alpha)=-\cos\alpha\); vì cả tử và mẫu đổi dấu nên \(\tan(\pi+\alpha)=\tan\alpha\) khi \(\cos\alpha\ne0\). Có thể tự kiểm với \(\alpha=\pi/6\). Những quan hệ góc liên kết này áp dụng cho mọi góc có nghĩa; riêng với tan/cot, vẫn phải kiểm mẫu số bằng \(0\) hay không.
+Ngoài đối xứng bù và đối đã thấy, góc **phụ nhau** đổi vai trò hoành độ–tung độ: \(\sin(\tfrac{\pi}{2}-\alpha)=\cos\alpha\), \(\cos(\tfrac{\pi}{2}-\alpha)=\sin\alpha\). Góc hơn kém \(\pi\) đưa điểm tới điểm đối diện trên đường tròn nên \(\sin(\pi+\alpha)=-\sin\alpha\), \(\cos(\pi+\alpha)=-\cos\alpha\); vì cả tử và mẫu đổi dấu nên \(\tan(\pi+\alpha)=\tan\alpha\) khi \(\cos\alpha\ne0\). Có thể tự kiểm với \(\alpha=\frac{\pi}{6}\).
+
+Từ các hệ thức của sin và cos, chia hai tọa độ theo định nghĩa tang, côtang để suy ra bảng sau. Chẳng hạn, đối với góc bù, tung độ giữ nguyên còn hoành độ đổi dấu, nên cả tang và côtang đổi dấu khi xác định.
+
+| Góc liên quan | Tang | Côtang |
+|---|---|---|
+| \(-\alpha\) | \(-\tan\alpha\) | \(-\cot\alpha\) |
+| \(\pi-\alpha\) | \(-\tan\alpha\) | \(-\cot\alpha\) |
+| \(\frac{\pi}{2}-\alpha\) | \(\cot\alpha\) | \(\tan\alpha\) |
+| \(\pi+\alpha\) | \(\tan\alpha\) | \(\cot\alpha\) |
+
+Mỗi ô là giá trị của hàm ở góc trong cột đầu, với điều kiện cả hai biểu thức tương ứng đều xác định. Ở hàng góc phụ, chẳng hạn, \(\tan(\frac{\pi}{2}-\alpha)=\frac{\cos\alpha}{\sin\alpha}=\cot\alpha\) khi \(\sin\alpha\ne0\). Đổi vai trò hai tọa độ không có nghĩa bỏ qua mẫu số.
 
 Chẳng hạn, \(\alpha=\frac{\pi}{6}\); góc \(\frac{5\pi}{6}\) đối xứng qua \(Oy\) nên \(\sin\left(\frac{5\pi}{6}\right)=\frac12\), \(\cos\left(\frac{5\pi}{6}\right)=-\frac{\sqrt3}{2}\). Dùng điểm trên đường tròn thay vì nhớ hai bảng dấu.
 
