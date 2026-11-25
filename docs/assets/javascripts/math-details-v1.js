@@ -263,17 +263,25 @@
   }
   for(const t of plain){
    const v=t.nodeValue,frag=document.createDocumentFragment();
-   const rx=/([A-Za-z0-9)\]⁰¹²³⁴⁵⁶⁷⁸⁹])([\^_])(?:\{([^{}\n]+)\}|\(([^()\n]+)\)|([−-]?(?:\d+|[A-Za-z])))/g;
+   // Match complete, explicit script sequences (x_i^2, C_n^k).
+   // A numeric index consumes digits only: u_1q retains q in ordinary prose.
+   // Repeated same-level scripts or an ungrouped fractional exponent remain
+   // untouched for QA/authoring rather than guessing their mathematical meaning.
+   const rx=/([A-Za-z0-9)\]⁰¹²³⁴⁵⁶⁷⁸⁹])((?:[\^_](?:\{[^{}\n]+\}|\([^()\n]+\)|[−-]?(?:\d+|[A-Za-z])))+)/g;
+   const script=/([\^_])(?:\{([^{}\n]+)\}|\(([^()\n]+)\)|([−-]?(?:\d+|[A-Za-z])))/g;
    let last=0;
    for(const m of v.matchAll(rx)){
-    const value=m[3]??m[4]??m[5];const end=m.index+m[0].length;
-    // A numeric index consumes digits only (u_1q must remain u₁·q), and
-    // a single letter index before a function argument is still an index.
-    if(m[2]==="^"&&m[5]&&/^[−-]?\d+$/.test(value)&&v[end]==="/")continue;
-    if(m[2]==="_"&&/[A-Z0-9]{4,}$/.test(v.slice(0,m.index+1)))continue;
+    const end=m.index+m[0].length, scripts=[...m[2].matchAll(script)];
+    if(new Set(scripts.map(x=>x[1])).size!==scripts.length)continue;
+    const trailing=scripts[scripts.length-1];
+    if(trailing[1]==="^"&&trailing[4]&&/^[−-]?\d+$/.test(trailing[4])&&v[end]==="/")continue;
+    if(scripts.some(x=>x[1]==="_")&&/[A-Z0-9]{4,}$/.test(v.slice(0,m.index+1)))continue;
     frag.append(v.slice(last,m.index),m[1]);
-    const tag=make(m[2]==="^"?"sup":"sub",value);tag.dataset.topicRw1Original=m[0].slice(1);
-    frag.append(tag);last=end;
+    for(const entry of scripts){
+     const tag=make(entry[1]==="^"?"sup":"sub",entry[2]??entry[3]??entry[4]);
+     tag.dataset.topicRw1Original=entry[0];frag.append(tag);
+    }
+    last=end;
    }
    if(last){frag.append(v.slice(last));t.replaceWith(frag)}
   }
