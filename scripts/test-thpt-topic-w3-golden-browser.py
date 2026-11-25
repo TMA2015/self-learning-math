@@ -94,10 +94,10 @@ with sync_playwright() as pw:
                     assert full and len(short)<=len(full) and len(short)<=32,(engine,topic,width,short,full)
                     assert tab.get_attribute("aria-label")==full
                 assert tabs.first.inner_text() == {
-    "12": "1. Từ một góc đến hai con số",
-    "13": "1. Từ mũi tên đến phép toán",
+    "12": "1. Lượng giác của góc",
+    "13": "1. Phép toán vectơ",
     "14": "1. Phương trình đường thẳng",
-    "15": "1. Từ điểm, đường đến thiết"
+    "15": "1. Điểm, đường, thiết diện"
 }[topic]
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e.parentElement).display") == "flex"
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e).backgroundColor") != "rgba(0, 0, 0, 0)"
