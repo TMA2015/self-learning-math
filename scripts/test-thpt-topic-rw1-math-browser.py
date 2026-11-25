@@ -233,8 +233,32 @@ if "--disclosures-only" in sys.argv:
                             expect(button).to_have_attribute("aria-selected","true")
                         tip=answer.locator('xpath=following-sibling::*[1]')
                         expect(tip).to_have_attribute("data-topic-sgk-disclosure","mistake")
-                        expect(answer.locator("summary")).to_be_visible()
-                        expect(tip.locator("summary")).to_be_visible()
+                        # Log the actual ancestor geometry/cascade if navigation succeeded
+                        # but the native control remains hidden; do not waive visibility.
+                        for component in (answer,tip):
+                            try:
+                                expect(component.locator("summary")).to_be_visible()
+                            except AssertionError:
+                                diagnostic=component.locator("summary").evaluate("""e=>{
+                                  const rules=[];
+                                  function scan(list,node){
+                                    for(const r of list){
+                                      if(r.conditionText && r instanceof CSSMediaRule && !matchMedia(r.conditionText).matches)continue;
+                                      if(r.cssRules){scan(r.cssRules,node);continue}
+                                      if(!r.selectorText||!r.style)continue;
+                                      try{if(node.matches(r.selectorText)&&['display','visibility','content-visibility','height','max-height','position'].some(k=>r.style.getPropertyValue(k)))rules.push({node:node.tagName+'.'+node.className,selector:r.selectorText,css:r.style.cssText})}catch{}
+                                    }
+                                  }
+                                  const chain=[];
+                                  for(let n=e;n;n=n.parentElement){
+                                    const c=getComputedStyle(n),b=n.getBoundingClientRect();
+                                    chain.push({tag:n.tagName,id:n.id,cls:n.className,hidden:n.hidden,open:n.open,inline:n.getAttribute('style'),display:c.display,visibility:c.visibility,contentVisibility:c.contentVisibility,position:c.position,rect:[b.x,b.y,b.width,b.height]});
+                                    if(c.display==='none'||c.visibility!=='visible'||!b.height||n.classList.contains('topic-sgk-disclosure-pair'))for(const sheet of document.styleSheets){try{scan(sheet.cssRules,n)}catch{}}
+                                  }
+                                  return {chain,rules:rules.slice(-80),root:document.documentElement.className};
+                                }""")
+                                print("DISCLOSURE_VISIBILITY_HOLD",topic,engine,width,theme,panel_ids,json.dumps(diagnostic,ensure_ascii=False),flush=True)
+                                raise
                         for kind,el in (("answer",answer),("mistake",tip)):
                             closed=el.evaluate(style_js)
                             el.locator("summary").click()
