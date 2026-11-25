@@ -1,3 +1,5 @@
+<!-- #1109 A02 CP02: candidate d7da008ecc56072c4c49fd0bb801960f377ede3f at 8fd9cc2415645e46b78b5de7e3c9c6c03594380f NOT CONTENT_READY. Existing signed pointers are historical; no RELEASE intake. -->
+
 <!-- TOP09_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
 **CURRENT CĐ09 AUTHORING CONTENT_READY (source/Q18 only, NOT RELEASE):** one R05 learner canonical `prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md` blob `5681dd894755165e799b4a20d9741f43115778d9` (learner commit `4fd65f54be372ca24e2d292cb799c4e8afe9e62d`), unchanged 71 SGK original +37 Topic item canonical source banks, 14 Written rubrics/four SVG. Current existing Q18 `AUTHOR_SELF_VERIFIED` v3.2.0 `b0e17ea8fbd00075c5de7dcaeb178985743645f8`, author custody `f740d4d08a5003d013e3ca70278367b6a8a6552e`, one V2 `7bbd719fedd21d3c4d836e3be4daf989671c6c5e`. Three real verified #977-030–032 repaired: 32 individually actionable D6 `Kiểm lỗi`→numbered Practice in existing opt-in reveals; 32 PUBLIC selfchecks mapped by exact original `item_id` to one voluntary Practice-answer lookup; O32 firsttry now independent nonpolynomial f=1/x,a=2,dx=0.2; correct domain [2,2.2], dy=-1/20, Δy=-1/22, error1/220. Inverse full-source diff confirms original 108 unique Practice stems/keys/solutions/14 Written rubrics, 32 question-only original selfchecks and four SVG unchanged byte-exact; 141/141 details balanced, one SGK source footer, hidden metadata explicitly NOT_FOR_STUDENT_VIEW. One prior R06 candidate historical/nonactive; affected-only independent NotebookLM reviewer request remains `PENDING`, **not reviewer PASS**. Current Q18 is direct math/PED self-proof under effective v3.2 quality-first owner instruction, not independent academic pass or official Topic Readiness/Mastery; no RD1/Final Submit, website/Golden/AP/R/Release, merge/deploy.
 
@@ -12,7 +14,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: 4fd65f54be372ca24e2d292cb799c4e8afe9e62d
 AUTHOR_PR: 831
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/831 — DRAFT AUTHORING, not merged or deployed
@@ -41,7 +43,7 @@ SVG4_PATH: prototypes/thpt/visuals/THPT_TOPIC09_LINEAR_DIFFERENTIAL_R01.svg
 SVG4_BLOB: 1665cbd9346452af8dfa667cfde201dfd10836c6
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: #1109 A02 Work repair + X-G.5 + current Q18/V2/REGISTER relock pending
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
