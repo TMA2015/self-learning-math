@@ -453,13 +453,13 @@ Trung điểm và trọng tâm của tam giác là trung bình *tọa độ*, kh
 
 **Vận dụng**
 
-Trung điểm A=(0,0,2), B=(2,4,0)?
+Cho tam giác ABC với A(0;0;2), B(2;4;0), C(4;2;4). Tìm trung điểm M của AB và trọng tâm G của tam giác ABC.
 
 <!-- ITEM_ID: THPT-TOP18-T13; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O13 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-M=(1,2,1).
+M(1;2;1) là trung bình tọa độ của A và B. Trọng tâm G có tọa độ trung bình của cả ba đỉnh: G(2;2;2), vì (0+2+4)/3=2, (0+4+2)/3=2 và (2+0+4)/3=2.
 
 **Kiểm lỗi**
 
@@ -515,7 +515,7 @@ u=(1,1,0),v=(1,−1,0). Góc giữa chúng?
 
 **Đề bài:** Cho hai điểm A(1;2;3) và B(4;6;3) trong hệ Oxyz. Tính tọa độ vectơ AB và độ dài đoạn thẳng AB.
 
-**Lời giải:** A=(1,2,3),B=(4,6,3) có AB=(3,4,0) nên AB=√(9+16)=5. Dùng cuối trừ đầu, AB=(4−1;6−2;3−3)=(3;4;0). Độ dài là căn tổng bình phương ba tọa độ, được √(9+16)=5; tọa độ z không đổi không làm mất dữ kiện.
+**Lời giải:** Dùng cuối trừ đầu: \(\overrightarrow{AB}=(4-1;6-2;3-3)=(3;4;0)\). Độ dài đoạn thẳng là \(AB=|\overrightarrow{AB}|=\sqrt{3^2+4^2+0^2}=5\). Phân biệt vectơ (ba tọa độ) với độ dài (một số không âm).
 
 **Vận dụng**
 
@@ -1088,7 +1088,7 @@ Góc giữa hai **đường** là góc không tù; dùng trị tuyệt đối t�
 
 <!-- LESSON_ID: TOP18-M32; OUTCOME_ID: TOP18-O32; S1_ORIGINAL_OUTCOME: G12-CHV-B16-O02; SCOPE: G12_CHV -->
 
-Góc θ giữa đường d và mặt P là góc giữa đường và hình chiếu vuông góc của nó, thuộc 0°–90°. Với vectơ chỉ phương u≠0, pháp tuyến n≠0, sinθ=|u·n|/(|u||n|). Đây là góc phụ của góc nhọn giữa u và n, không dùng cos trực tiếp để gọi góc đường–mặt.
+Nếu đường d không vuông góc mặt P, góc θ giữa chúng là góc không tù giữa đường d và hình chiếu vuông góc của nó trên P. Nếu d vuông góc P, hình chiếu chỉ là một điểm và quy ước θ=90°. Do đó θ luôn thuộc 0°–90°. Với vectơ chỉ phương u≠0, pháp tuyến n≠0, sinθ=|u·n|/(|u||n|). Đây là góc phụ của góc không tù giữa phương của u và phương pháp tuyến n, không dùng cos trực tiếp để gọi góc đường–mặt.
 
 > **Kiến thức cần ghi nhớ**
 >
@@ -1097,9 +1097,9 @@ Góc θ giữa đường d và mặt P là góc giữa đường và hình chi�
 
 **Ví dụ**
 
-**Đề bài:** Cho đường u=(1;0;1) và mặt có pháp tuyến n=(0;0;1). Tính góc đường–mặt.
+**Đề bài:** Cho đường u=(3;0;4) và mặt có pháp tuyến n=(0;0;1). Tính góc đường–mặt.
 
-**Lời giải:** u=(1,0,1),n=(0,0,1), sinθ=1/√2 ⇒ θ=45°. Nếu u·n=0, θ=0 (đường song song hoặc nằm trong mặt). Góc đường–mặt dùng sin với pháp tuyến, không dùng nhầm cos.
+**Lời giải:** u·n=4, |u|=5, |n|=1 nên sinθ=4/5, suy ra θ≈53,13°. Nếu dùng cosθ=4/5 thì được 36,87°, là góc với pháp tuyến, không phải góc đường–mặt. Nếu u·n=0 thì θ=0° (đường song song hoặc nằm trong mặt).
 
 **Vận dụng**
 
@@ -1404,18 +1404,18 @@ Bán kính thiết diện không luôn bằng R; trước hết lấy d từ tâ
 
 <!-- LESSON_ID: TOP18-M23; OUTCOME_ID: TOP18-O23; S1_ORIGINAL_OUTCOME: G12-CHV-B14-O07; SCOPE: OPTIONAL_AFTER_B17 -->
 
-**Mở rộng tích hợp sau B17, không dùng để kiểm tra Core B14 trước khi học mặt cầu.** Khi cắt mặt cầu bằng mặt phẳng, chỉ cần so khoảng cách d từ tâm C đến mặt phẳng với bán kính R: d>R không cắt, d=R tiếp xúc, d<R cho đường tròn bán kính √(R²−d²). Đây là ứng dụng nối hình học mặt phẳng và hình học mặt cầu, không phải định lí mới thay SGK B14.
+**Mở rộng sau khi đã học mặt cầu.** Khi cắt mặt cầu bằng mặt phẳng, chỉ cần so khoảng cách d từ tâm C đến mặt phẳng với bán kính R: d>R không cắt, d=R tiếp xúc, d<R cho đường tròn bán kính √(R²−d²). Đây là ứng dụng kết hợp khoảng cách điểm–mặt với tính chất mặt cầu.
 
 > **Kiến thức cần ghi nhớ**
 >
-> Chỉ dùng sau B17: với mặt cầu tâm C bán kính R>0 và mặt phẳng cách tâm d≥0, nếu d<R thiết diện là đường tròn bán kính \(\sqrt{R^2-d^2}\); d=R tiếp xúc một điểm; d>R không cắt.
+> Với mặt cầu tâm C bán kính R>0 và mặt phẳng cách tâm d≥0, nếu d<R thiết diện là đường tròn bán kính \(\sqrt{R^2-d^2}\); d=R tiếp xúc một điểm; d>R không cắt.
 
 
 **Ví dụ**
 
-**Đề bài:** Sau khi học B17, cho mặt cầu tâm C(1;−2;3), bán kính 13 và mặt phẳng z=8. Xác định tâm, bán kính thiết diện và giải thích vì sao điều kiện d<R quan trọng.
+**Đề bài:** Cho mặt cầu tâm C(1;−2;3), bán kính 13 và mặt phẳng z=8. Xác định tâm, bán kính thiết diện và giải thích vì sao điều kiện d<R quan trọng.
 
-**Lời giải:** Chân đường vuông góc từ tâm C xuống mặt z=8 là H(1;−2;8), nên d(C,(P))=5<13. Mặt cắt là đường tròn tâm H với bán kính r=√(13²−5²)=√144=12. Độ dài r không phải bán kính cầu 13, vì mặt phẳng không qua tâm. Bài kết hợp phương pháp khoảng cách điểm–mặt và kiến thức mặt cầu sau B17, không lấy làm Core bắt buộc ở B14.
+**Lời giải:** Chân đường vuông góc từ tâm C xuống mặt z=8 là H(1;−2;8), nên d(C,(P))=5<13. Mặt cắt là đường tròn tâm H với bán kính r=√(13²−5²)=√144=12. Độ dài r không phải bán kính cầu 13, vì mặt phẳng không qua tâm. Bài kết hợp phương pháp khoảng cách điểm–mặt và kiến thức mặt cầu.
 
 **Vận dụng**
 
@@ -1429,7 +1429,7 @@ Tiếp xúc một điểm (0,0,4), vì d=R.
 
 **Kiểm lỗi**
 
-Đây là phần **tự chọn sau B17**, không làm Core B14. Chỉ dùng so d với R khi có mặt cầu với R>0 và khoảng cách d≥0; d=R là tiếp xúc một điểm. Quay về **Kiến thức 8.1**, sau đó tự giải **Bài luyện 203** và **Bài luyện 207** trong Luyện tập.
+Đây là phần tự chọn sau khi học mặt cầu. Chỉ dùng so d với R khi có mặt cầu với R>0 và khoảng cách d≥0; d=R là tiếp xúc một điểm. Quay về **Kiến thức 8.1**, sau đó tự giải **Bài luyện 203** và **Bài luyện 207** trong Luyện tập.
 
 </details>
 
