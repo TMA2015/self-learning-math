@@ -27,9 +27,9 @@ Ví dụ, với \(f(x)=4x^3+2\), ta nhận thấy \((x^4)'=4x^3\) và \((2x)'=2\
 
 **Ví dụ**
 
-**Đề bài:** Tìm mọi nguyên hàm của f(x)=9x²−4x+1 trên ℝ.
+**Đề bài:** Tìm mọi nguyên hàm của \(f(x)=9x^2-4x+1\) trên \(\mathbb R\).
 
-**Lời giải:** Lấy từng hạng tử: F(x)=3x³−2x²+x+C. Kiểm F′(x)=9x²−4x+1 trên ℝ. Hằng C cần có vì đạo hàm của mọi hằng số bằng 0.
+**Lời giải:** Lấy nguyên hàm từng hạng tử: \(F(x)=3x^3-2x^2+x+C\). Kiểm tra \(F'(x)=9x^2-4x+1\) trên \(\mathbb R\). Hằng số \(C\) cần có vì đạo hàm của mọi hằng số bằng 0.
 
 **Vận dụng** Tìm họ nguyên hàm của \(f(x)=8x^3-2\). Em kiểm lại được bằng đạo hàm không?
 
@@ -51,22 +51,22 @@ Nếu em chỉ thấy một nguyên hàm mà bỏ \(+C\), hoặc kết luận b�
 
 > **TÍNH CHẤT — Một họ nguyên hàm và điều kiện đầu.** Các nguyên hàm khác nhau bởi hằng số; điều kiện đầu chọn một hàm. Nếu hai hàm có cùng đạo hàm, số liệu ban đầu có chọn ra đúng một hàm không? Ta đã biết viết F₀(x)+C, biết a thuộc khoảng và F(a)=b. Nếu f liên tục trên một khoảng, mọi nguyên hàm khác nhau một hằng số trên khoảng ấy. Giá trị đầu F(a)=b cho phương trình F₀(a)+C=b, giải C; không áp dữ kiện ở một thành phần miền để khóa hằng trên thành phần tách rời. Hãy kiểm cả điều kiện và đạo hàm.
 
-Chẳng hạn, F'=3x²−4, F(1)=5. Họ F=x³−4x+C, thay x=1 cho 1−4+C=5 ⇒ C=8, F=x³−4x+8. Kiểm F'=3x²−4 và F(1)=5.
+Chẳng hạn, \(F'(x)=3x^2-4\), \(F(1)=5\). Họ nguyên hàm là \(F(x)=x^3-4x+C\). Thay \(x=1\), ta được \(1-4+C=5\), suy ra \(C=8\). Vậy \(F(x)=x^3-4x+8\). Kiểm lại \(F'(x)=3x^2-4\) và \(F(1)=5\).
 
 **Ví dụ**
 
-**Đề bài:** Biết F′(x)=4x−3 trên ℝ và F(2)=5. Tìm F(x).
+**Đề bài:** Biết \(F'(x)=4x-3\) trên \(\mathbb R\) và \(F(2)=5\). Tìm \(F(x)\).
 
-**Lời giải:** Từ F′ suy ra F=2x²−3x+C. Điều kiện F(2)=8−6+C=5 cho C=3, vậy F(x)=2x²−3x+3. Thế lại x=2 và lấy đạo hàm để kiểm cả hai điều kiện.
+**Lời giải:** Từ \(F'\) suy ra \(F(x)=2x^2-3x+C\). Điều kiện \(F(2)=8-6+C=5\) cho \(C=3\), vậy \(F(x)=2x^2-3x+3\). Thế lại \(x=2\) và lấy đạo hàm để kiểm cả hai điều kiện.
 
-**Vận dụng** F'=2x+1 và F(0)=7: tìm F.
+**Vận dụng** \(F'(x)=2x+1\) và \(F(0)=7\): tìm \(F\).
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-F=x²+x+7.
+\(F(x)=x^2+x+7\).
 
-Nếu thay F'(0)=7, bạn đã dùng sai loại dữ kiện; F(0) mới là vị trí ban đầu.
+Nếu dùng \(F'(0)=7\), em đã dùng sai loại dữ kiện; \(F(0)\) mới là giá trị ban đầu.
 
 
 **Kiểm lỗi**
@@ -85,20 +85,20 @@ Từ định nghĩa, ta suy ra nguyên hàm lũy thừa và tổng. Vì sao n=�
 
  Với αf+βg, nguyên hàm là αF+βG+C. Không để +C riêng từng hạng rồi tính thành nhiều hằng độc lập trong cùng một tổng.
 
-Xét ví dụ: \(\int (6x^{2}-4x+3)\,\mathrm dx\)=2x³−2x²+3x+C. Vì đạo hàm 2x³ là6x², −2x² là−4x và 3x là3. Kiểm từng hạng giúp tránh lỗi hệ số.
+Xét ví dụ: \(\int (6x^2-4x+3)\,\mathrm dx=2x^3-2x^2+3x+C\). Đạo hàm của \(2x^3\) là \(6x^2\), của \(-2x^2\) là \(-4x\) và của \(3x\) là \(3\). Kiểm từng hạng giúp tránh lỗi hệ số.
 
 **Ví dụ**
 
 **Đề bài:** Tính \(\int (2x^{5}-4x^{3}+6)\,\mathrm dx\).
 
-**Lời giải:** Trên ℝ, dùng tính tuyến tính và quy tắc lũy thừa: \(\int 2x^{5}\,\mathrm dx\)=x⁶/3, \(\int (-4x^{3})\,\mathrm dx\)=−x⁴, \(\int 6\,\mathrm dx\)=6x. Kết quả F=x⁶/3−x⁴+6x+C, đạo hàm F′=2x⁵−4x³+6.
+**Lời giải:** Trên \(\mathbb R\), dùng tính tuyến tính và quy tắc lũy thừa. Một nguyên hàm của \(2x^5\) là \(\frac{x^6}{3}\), của \(-4x^3\) là \(-x^4\), của \(6\) là \(6x\). Kết quả \(F(x)=\frac{x^6}{3}-x^4+6x+C\). Lấy đạo hàm được \(F'(x)=2x^5-4x^3+6\).
 
 **Vận dụng** \(\int (5x^{4}+2x)\,\mathrm dx\)=?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-x⁵+x²+C.
+\(x^5+x^2+C\).
 
 Nếu không chia hệ số mũ mới, kiểm đạo hàm ngược sẽ phát hiện hệ số dư.
 
@@ -119,18 +119,18 @@ Chẳng hạn, Trên x<0, ∫(3/x)dx=3ln(−x)+C. Lấy đạo hàm 3·(−1)/(�
 
 **Ví dụ**
 
-**Đề bài:** Tìm F′(x)=3/x trên x<0, biết F(−2)=7.
+**Đề bài:** Tìm \(F(x)\) biết \(F'(x)=\frac{3}{x}\) trên \(x<0\) và \(F(-2)=7\).
 
-**Lời giải:** Trên khoảng (−∞,0), F(x)=3ln|x|+C=3ln(−x)+C. Thay x=−2: 3ln2+C=7, nên C=7−3ln2. Không dùng ln x trên khoảng x<0 hoặc nối qua x=0.
+**Lời giải:** Trên khoảng \((-\infty;0)\), \(F(x)=3\ln|x|+C=3\ln(-x)+C\). Thay \(x=-2\): \(3\ln 2+C=7\), nên \(C=7-3\ln 2\). Vậy \(F(x)=3\ln(-x)+7-3\ln 2\). Không dùng \(\ln x\) trên khoảng \(x<0\) hoặc nối qua \(x=0\).
 
-**Vận dụng** F'=1/x trên x<0, F(−1)=2. F là gì?
+**Vận dụng** \(F'(x)=\frac1x\) trên \(x<0\), \(F(-1)=2\). Tìm \(F(x)\).
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-F(x)=ln(−x)+2 trên x<0.
+\(F(x)=\ln(-x)+2\) trên \(x<0\).
 
-Không viết ln x ở x âm; sau đó kiểm đạo hàm trước khi kết luận.
+Không viết \(\ln x\) khi \(x<0\); sau đó kiểm đạo hàm trước khi kết luận.
 
 
 **Kiểm lỗi**
