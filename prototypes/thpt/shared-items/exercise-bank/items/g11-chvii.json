@@ -28,7 +28,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nghĩ hai đường không gặp thì không có góc, chuyển phương qua một điểm; góc giữa hai đường song song bằng 0°. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01."
   },
   {
     "item_id": "THPT-G11-CHVII-B22-C02",
@@ -59,7 +60,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho hai đường phải gặp mới vuông góc, kiểm góc giữa hai phương, không phải giao điểm. Ôn CĐ16 mục 1.2; luyện THPT-TOP16-P02."
   },
   {
     "item_id": "THPT-G11-CHVII-B22-C03",
@@ -90,7 +92,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu suy hai đường cùng vuông góc đường thứ ba phải song song, xét AB và AD cùng vuông góc AA′ nhưng cắt nhau. Ôn CĐ16 mục 1.3; luyện THPT-TOP16-P03."
   },
   {
     "item_id": "THPT-G11-CHVII-B22-C04",
@@ -121,7 +124,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ nhìn nét vẽ, hãy dùng tính chất hình chữ nhật của mặt bên và quan hệ song song. Ôn CĐ16 mục 1.4; luyện THPT-TOP16-P04."
   },
   {
     "item_id": "THPT-G11-CHVII-B22-P01",
@@ -152,7 +156,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nghĩ hai đường không gặp thì không có góc, chuyển phương qua một điểm; góc giữa hai đường song song bằng 0°. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01."
   },
   {
     "item_id": "THPT-G11-CHVII-B22-P02",
@@ -161,7 +166,7 @@
     "answer_key": "0°",
     "worked_solution": "AB//D′C′, hai đường song song trong không gian.",
     "skill_ids": [
-      "G11-B22-PERP_SKEW"
+      "G11-B22-ANGLE_LINES"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -183,7 +188,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nghĩ hai đường không gặp thì không có góc, chuyển phương qua một điểm; góc giữa hai đường song song bằng 0°. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01."
   },
   {
     "item_id": "THPT-G11-CHVII-B22-P03",
@@ -192,7 +198,7 @@
     "answer_key": "Trong hộp chữ nhật AB⊥CC′ dù không cắt nhau.",
     "worked_solution": "Vì CC′//AA′ và AA′⊥AB.",
     "skill_ids": [
-      "G11-B22-PARALLEL_DIRECTION"
+      "G11-B22-PERP_SKEW"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -214,7 +220,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho hai đường phải gặp mới vuông góc, kiểm góc giữa hai phương, không phải giao điểm. Ôn CĐ16 mục 1.2; luyện THPT-TOP16-P02."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C01",
@@ -245,7 +252,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ kiểm một phương, xét hai cạnh khác hướng của hình chữ nhật; một phương chưa đủ. Ôn CĐ16 mục 2.1; luyện THPT-TOP16-P05."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C02",
@@ -276,7 +284,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu hai đường kiểm tra song song hoặc trùng nhau, chưa đủ hai phương độc lập. Ôn CĐ16 mục 2.2; luyện THPT-TOP16-P06."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C03",
@@ -307,7 +316,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ nhìn hai mặt có vẻ song song, phải dùng giả thiết (P)∥(Q) mới chuyển được các phương. Ôn CĐ16 mục 2.3; luyện THPT-TOP16-P07."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C04",
@@ -338,7 +348,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu d,e đi qua cùng một điểm, chúng trùng; giả thiết d≠e mới cho song song. Ôn CĐ16 mục 2.4; luyện THPT-TOP16-P08."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C05",
@@ -369,7 +380,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ đo theo hai đường song song, dựng thêm một hướng không cùng phương; hai phép đo cũ chưa đủ. Ôn CĐ16 mục 2.5; luyện THPT-TOP16-P09."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-P01",
@@ -378,7 +390,7 @@
     "answer_key": "Có.",
     "worked_solution": "Mặt song song có các phương trong mặt giống nhau; pháp tuyến chung.",
     "skill_ids": [
-      "G11-B23-PERP_PLANE_DEF"
+      "G11-B23-PARALLEL_TRANSFER"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -400,7 +412,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ nhìn hai mặt có vẻ song song, phải dùng giả thiết (P)∥(Q) mới chuyển được các phương. Ôn CĐ16 mục 2.3; luyện THPT-TOP16-P07."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-P02",
@@ -431,7 +444,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu hai đường kiểm tra song song hoặc trùng nhau, chưa đủ hai phương độc lập. Ôn CĐ16 mục 2.2; luyện THPT-TOP16-P06."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-P03",
@@ -440,7 +454,7 @@
     "answer_key": "Không.",
     "worked_solution": "Hai đường cùng vuông góc một mặt chỉ có thể song song hoặc trùng nhau.",
     "skill_ids": [
-      "G11-B23-PARALLEL_TRANSFER"
+      "G11-B23-PLANE_PROPERTY"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -462,14 +476,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu d,e đi qua cùng một điểm, chúng trùng; giả thiết d≠e mới cho song song. Ôn CĐ16 mục 2.4; luyện THPT-TOP16-P08."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "M nằm cách (P) 7cm qua đường MH⊥(P). H là gì?",
+    "stem": "M nằm ngoài (P), H∈(P), MH⊥(P), MH=7 cm. H là điểm gì?",
     "answer_key": "H là hình chiếu vuông góc của M lên (P)",
-    "worked_solution": "Vị trí chân đường vuông góc xác định hình chiếu.",
+    "worked_solution": "H∈(P) và MH⊥(P) nên H là hình chiếu vuông góc của M lên (P). MH=7 cm là khoảng cách từ M đến mặt phẳng.",
     "skill_ids": [
       "G11-B24-POINT_PROJECTION"
     ],
@@ -493,7 +508,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy đoạn xiên làm khoảng cách, tìm cạnh vuông góc mặt đáy trước. Ôn CĐ16 mục 3.1; luyện THPT-TOP16-P10."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C02",
@@ -524,7 +540,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu hai đầu mút cùng ảnh, đoạn chiếu co thành một điểm; không nối thành đoạn có độ dài dương. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C03",
@@ -555,14 +572,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu B=H, ảnh chỉ là điểm và định lí ba đường vuông góc dạng này không áp dụng. Ôn CĐ16 mục 3.3; luyện THPT-TOP16-P12."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C04",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Đường AB xiên xuống (P), AC là hình chiếu của AB. Góc AB và (P) được xác định ở đâu?",
-    "answer_key": "Góc giữa AB và AC (góc nhỏ)",
-    "worked_solution": "Hình chiếu đưa bài toán 3D về góc trong tam giác phẳng chứa đường xiên.",
+    "stem": "Cho A∈(P), B∉(P), C là hình chiếu vuông góc của B trên (P), C≠A. Góc giữa đường xiên AB và (P) là góc nào?",
+    "answer_key": "Góc BAC (góc nhọn giữa AB và hình chiếu AC).",
+    "worked_solution": "A đã thuộc (P), B chiếu xuống C nên hình chiếu AB là AC; C≠A bảo đảm ảnh là đường. Tam giác ABC vuông tại C, góc BAC là góc đường AB với (P).",
     "skill_ids": [
       "G11-B24-LINE_PLANE_ANGLE"
     ],
@@ -586,7 +604,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy góc giữa AB và AH, đó là góc phụ với góc đường–mặt. Ôn CĐ16 mục 3.4; luyện THPT-TOP16-P13."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C05",
@@ -617,7 +636,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy độ cao chia độ dài dốc, đó là sin chứ không phải tan. Ôn CĐ16 mục 3.5; luyện THPT-TOP16-P14."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-P01",
@@ -626,7 +646,7 @@
     "answer_key": "55°.",
     "worked_solution": "Hai góc phụ nhau do phương thẳng đứng vuông góc mặt nền.",
     "skill_ids": [
-      "G11-B24-POINT_PROJECTION"
+      "G11-B24-LINE_PLANE_ANGLE"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -648,7 +668,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy góc giữa AB và AH, đó là góc phụ với góc đường–mặt. Ôn CĐ16 mục 3.4; luyện THPT-TOP16-P13."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-P02",
@@ -679,7 +700,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu hai đầu mút cùng ảnh, đoạn chiếu co thành một điểm; không nối thành đoạn có độ dài dương. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-P03",
@@ -688,7 +710,7 @@
     "answer_key": "Không.",
     "worked_solution": "Hình chiếu là thành phần nằm trong mặt; AH là thành phần vuông góc.",
     "skill_ids": [
-      "G11-B24-THREE_PERP"
+      "G11-B24-LINE_PROJECTION"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -710,7 +732,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu hai đầu mút cùng ảnh, đoạn chiếu co thành một điểm; không nối thành đoạn có độ dài dương. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C01",
@@ -741,7 +764,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng hai đường bất kỳ trong hai mặt, góc của chúng không nhất thiết là góc giữa hai mặt. Ôn CĐ16 mục 4.1; luyện THPT-TOP16-P15."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C02",
@@ -772,7 +796,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ghi 135° cho góc hai mặt, nhớ góc giữa hai mặt không vượt 90°; nhị diện vẫn 135°. Ôn CĐ16 mục 4.2; luyện THPT-TOP16-P16."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C03",
@@ -803,7 +828,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ thấy hai đường vuông góc, cần chứng minh một đường vuông góc cả mặt bằng hai phương cắt nhau. Ôn CĐ16 mục 4.3; luyện THPT-TOP16-P17."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C04",
@@ -834,7 +860,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ điều kiện vuông góc giao tuyến, đường xiên trên tường không vuông góc sàn. Ôn CĐ16 mục 4.4; luyện THPT-TOP16-P18."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C05",
@@ -865,7 +892,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu gọi mọi lăng trụ đứng là đều, kiểm thêm hình dạng đáy. Ôn CĐ16 mục 4.5; luyện THPT-TOP16-P19."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C06",
@@ -896,7 +924,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng AO thay OM, sẽ tính cạnh bên thay đường cao mặt bên; kiểm điểm cuối của đoạn. Ôn CĐ16 mục 4.6; luyện THPT-TOP16-P20."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C07",
@@ -927,7 +956,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng 8:4 cho diện tích, đó chỉ là tỉ số độ dài; diện tích đổi theo hai chiều. Ôn CĐ16 mục 4.7; luyện THPT-TOP16-P21."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-P01",
@@ -958,7 +988,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng hai đường bất kỳ trong hai mặt, góc của chúng không nhất thiết là góc giữa hai mặt. Ôn CĐ16 mục 4.1; luyện THPT-TOP16-P15."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-P02",
@@ -967,7 +998,7 @@
     "answer_key": "Không.",
     "worked_solution": "Đường cao qua đỉnh S tới tâm O đáy mới vuông góc đáy; cạnh SA thường xiên.",
     "skill_ids": [
-      "G11-B25-DIHEDRAL"
+      "G11-B25-REGULAR_PYRAMID"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -989,7 +1020,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng AO thay OM, sẽ tính cạnh bên thay đường cao mặt bên; kiểm điểm cuối của đoạn. Ôn CĐ16 mục 4.6; luyện THPT-TOP16-P20."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-P03",
@@ -998,7 +1030,7 @@
     "answer_key": "Không.",
     "worked_solution": "Lăng trụ đều còn đòi đáy là đa giác đều.",
     "skill_ids": [
-      "G11-B25-PERP_PLANES"
+      "G11-B25-RIGHT_PRISM"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -1020,14 +1052,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu gọi mọi lăng trụ đứng là đều, kiểm thêm hình dạng đáy. Ôn CĐ16 mục 4.5; luyện THPT-TOP16-P19."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Nếu H là hình chiếu M trên a, với K∈a khác H thì MH và MK so sánh thế nào?",
+    "stem": "Cho điểm M ngoài đường thẳng a, H là hình chiếu vuông góc của M trên a. Với K∈a, K≠H, so sánh MH và MK.",
     "answer_key": "MH<MK",
-    "worked_solution": "Tam giác MHK vuông tại H cho MK²=MH²+HK².",
+    "worked_solution": "MH⊥a, HK⊂a và K≠H nên tam giác MHK vuông tại H. MK²=MH²+HK²>MH², suy MK>MH.",
     "skill_ids": [
       "G11-B26-POINT_LINE"
     ],
@@ -1051,7 +1084,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn AX làm khoảng cách, so AX²=AH²+HX² và kiểm chân H. Ôn CĐ17 mục 1.1; luyện THPT-TOP17-P01."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C02",
@@ -1082,7 +1116,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy AM làm khoảng cách, AM là đoạn xiên; cạnh vuông góc ngắn hơn. Ôn CĐ17 mục 1.2; luyện THPT-TOP17-P02."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C03",
@@ -1113,7 +1148,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu d không song song mặt, không thể lấy tùy ý một điểm đại diện cho khoảng cách. Ôn CĐ17 mục 1.3; luyện THPT-TOP17-P03."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C04",
@@ -1144,7 +1180,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng đường xiên nối hai mặt, chiếu vuông góc để xác định độ dài ngắn nhất. Ôn CĐ17 mục 1.4; luyện THPT-TOP17-P04."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C05",
@@ -1175,7 +1212,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ vuông góc một đường, chưa phải đoạn vuông góc chung; kiểm phương thứ hai. Ôn CĐ17 mục 1.5; luyện THPT-TOP17-P05."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C06",
@@ -1206,7 +1244,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng đường cao mặt bên làm chiều cao, phải tìm cạnh SO vuông góc đáy. Ôn CĐ17 mục 1.6; luyện THPT-TOP17-P06."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-P01",
@@ -1215,7 +1254,7 @@
     "answer_key": "8cm.",
     "worked_solution": "h=√(17²−15²)=8cm.",
     "skill_ids": [
-      "G11-B26-POINT_LINE"
+      "G11-B26-HEIGHT_APPLICATION"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -1237,7 +1276,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng đường cao mặt bên làm chiều cao, phải tìm cạnh SO vuông góc đáy. Ôn CĐ17 mục 1.6; luyện THPT-TOP17-P06."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-P02",
@@ -1268,7 +1308,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy AM làm khoảng cách, AM là đoạn xiên; cạnh vuông góc ngắn hơn. Ôn CĐ17 mục 1.2; luyện THPT-TOP17-P02."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-P03",
@@ -1277,7 +1318,7 @@
     "answer_key": "Không.",
     "worked_solution": "Hai đường chéo nhau cố định có đoạn vuông góc chung độ dài dương; giao nhau mới cho khoảng cách 0.",
     "skill_ids": [
-      "G11-B26-PARALLEL_LINE_PLANE"
+      "G11-B26-SKEW_COMMON_PERP"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -1299,7 +1340,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ vuông góc một đường, chưa phải đoạn vuông góc chung; kiểm phương thứ hai. Ôn CĐ17 mục 1.5; luyện THPT-TOP17-P05."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C01",
@@ -1330,7 +1372,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng cạnh xiên làm h, h là khoảng cách vuông góc giữa hai đáy. Ôn CĐ17 mục 2.1; luyện THPT-TOP17-P07."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C02",
@@ -1361,7 +1404,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng V=Sh, đó là công thức lăng trụ; chóp có hệ số 1/3. Ôn CĐ17 mục 2.2; luyện THPT-TOP17-P08."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C03",
@@ -1392,7 +1436,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy diện tích toàn phần làm thể tích hoặc trộn cm và dm, đổi đơn vị rồi nhân ba chiều. Ôn CĐ17 mục 2.3; luyện THPT-TOP17-P09."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C04",
@@ -1423,7 +1468,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng trung bình cộng hai đáy hoặc cạnh xiên, viết đủ ba số hạng S,S′,√(SS′). Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C05",
@@ -1454,7 +1500,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm 1 m³=100 L, nhớ 1 m³=1000 dm³=1000 L; kiểm phần dung tích được dùng. Ôn CĐ17 mục 2.5; luyện THPT-TOP17-P11."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-P01",
@@ -1463,7 +1510,7 @@
     "answer_key": "36dm³.",
     "worked_solution": "12×9/3=36dm³.",
     "skill_ids": [
-      "G11-B27-PRISM_VOLUME"
+      "G11-B27-PYRAMID_VOLUME"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -1485,16 +1532,17 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng V=Sh, đó là công thức lăng trụ; chóp có hệ số 1/3. Ôn CĐ17 mục 2.2; luyện THPT-TOP17-P08."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-P02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Chóp cụt đều S=16,S′=9,h=6 (cm). Tính V.",
+    "stem": "Chóp cụt đều có diện tích hai đáy S=16 cm², S′=9 cm² và chiều cao vuông góc h=6 cm. Tính thể tích.",
     "answer_key": "74cm³.",
-    "worked_solution": "6(16+9+√144)/3=2(25+12)=74cm³.",
+    "worked_solution": "V=h(S+S′+√(SS′))/3=6(16+9+√144)/3=2(25+12)=74 cm³.",
     "skill_ids": [
-      "G11-B27-PYRAMID_VOLUME"
+      "G11-B27-FRUSTUM_VOLUME"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -1516,16 +1564,17 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng trung bình cộng hai đáy hoặc cạnh xiên, viết đủ ba số hạng S,S′,√(SS′). Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-P03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Một bạn dùng h là cạnh xiên bên để tính thể tích chóp cụt đều. Nhận xét.",
-    "answer_key": "Sai trừ trường hợp cạnh đó vuông góc hai đáy.",
-    "worked_solution": "Chiều cao phải là khoảng cách vuông góc giữa hai đáy song song.",
+    "stem": "Một bạn dùng cạnh bên xiên của chóp cụt đều không suy biến làm chiều cao trong công thức thể tích. Nhận xét và nêu cách xác định đúng chiều cao.",
+    "answer_key": "Sai; chiều cao là khoảng cách vuông góc giữa hai mặt đáy song song, không phải cạnh bên xiên.",
+    "worked_solution": "Chiều cao h phải là độ dài đoạn vuông góc nối hai mặt đáy song song. Nếu cạnh bên là đoạn xiên nối hai đáy thì độ dài lớn hơn h. Có thể dựng chân chiếu của một điểm trên đáy trên xuống mặt đáy dưới và lấy khoảng cách vuông góc đó.",
     "skill_ids": [
-      "G11-B27-BOX_VOLUME"
+      "G11-B27-FRUSTUM_VOLUME"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
@@ -1547,7 +1596,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng trung bình cộng hai đáy hoặc cạnh xiên, viết đủ ba số hạng S,S′,√(SS′). Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10."
   },
   {
     "item_id": "THPT-G11-CHVII-CHVII-C01",
@@ -1578,7 +1628,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy cạnh bên làm h, dựng tam giác vuông với bán kính đường tròn ngoại tiếp đáy. Ôn CĐ17 mục 2.6; luyện THPT-TOP17-P12."
   },
   {
     "item_id": "THPT-G11-B22-KFT01",
