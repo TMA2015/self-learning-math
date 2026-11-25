@@ -618,12 +618,16 @@ function isExactTopicRW1(files){
   return js.includes("SLMTopicRW1Math")&&js.includes("cd0[1-8]")&&adapter.includes('part==="kien-thuc"&&["06","07","08"].includes(topic)')&&qa.includes("RW1_SCOPE_HOLD")&&qa.includes("formula parity")&&qa.includes("126*6");
  }catch{return false}
 }
+// Exact governance-only files: actual learner/runtime changes remain FULL.
+const MATH_NOTATION_GOVERNANCE=new Set(["AGENTS.md","prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md","prototypes/thpt/SGK_11_12_AUTHORING_CHECKLIST_OWNER_RESET_20261122.md","scripts/test-thpt-push-deploy-scope.cjs","scripts/test-thpt-release-impact.cjs"]);
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(files.length===MATH_NOTATION_GOVERNANCE.size&&new Set(files).size===files.length&&files.every(p=>MATH_NOTATION_GOVERNANCE.has(p)))
+  return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"EXACT_MATH_NOTATION_GOVERNANCE_ONLY"};
  if(isExactTopicRW1(files))return {impact:"SCOPED_TOPIC_RW1",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_RW1_EXACT_KNOWLEDGE_MATH_TAB_QA"};
  if(isG12MathHotfix(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_MATH_HOTFIX_LESSONS.join(","),reason:"OWNER_1039_G12_MATH_HOTFIX"};
  if(isG12W13(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W13_LESSONS.join(","),reason:"OWNER_1039_W13_EXACT_SOURCE_AND_BROWSER"};
@@ -777,6 +781,12 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const notation=[...MATH_NOTATION_GOVERNANCE];
+ assert.equal(classify(notation).impact,"METADATA");
+ assert.equal(classify([...notation,"docs/assets/javascripts/math-details-v1.js"]).full_suite,"true");
+ assert.equal(classify([...notation,"docs/thpt-preview/chuyen-de/cd01/kien-thuc.md"]).full_suite,"true");
+ assert.equal(classify([...notation,"mkdocs.yml"]).full_suite,"true");
+ assert.equal(classify(notation,{manual:true}).full_suite,"true");
  const rw1=[...TOPIC_RW1_FILES];
  assert.equal(classify(rw1).impact,"SCOPED_TOPIC_RW1");
  assert.equal(classify(rw1.slice(1)).impact,"FULL");
