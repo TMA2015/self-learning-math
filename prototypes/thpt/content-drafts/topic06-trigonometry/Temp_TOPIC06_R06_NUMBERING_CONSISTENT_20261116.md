@@ -269,6 +269,14 @@ Có thể chọn dạng tích hay tổng để thuận lợi giải phương tr�
 \end{aligned}
 \]
 
+Từ hai dạng của công thức côsin góc đôi, chuyển vế và chia cho 2, ta được các **công thức hạ bậc**:
+
+\[
+\cos^2 a=\frac{1+\cos(2a)}2,\qquad \sin^2 a=\frac{1-\cos(2a)}2.
+\]
+
+Chẳng hạn, \(\cos^2(\frac{\pi}{8})=\frac{1+\cos(\frac{\pi}{4})}{2}=\frac{2+\sqrt2}{4}\). Vì \(\frac{\pi}{8}\) ở góc phần tư I, lấy căn dương được \(\cos(\frac{\pi}{8})=\frac{\sqrt{2+\sqrt2}}2\). Khi cần lấy căn để tìm sin hoặc cos, vẫn phải chọn dấu theo góc phần tư.
+
 **Tích thành tổng** (dùng khi gặp tích của hai giá trị lượng giác, chẳng hạn để tính giá trị hoặc đưa về tổng):
 
 \[
