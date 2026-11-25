@@ -1,3 +1,6 @@
+<!-- A05 WORK #1109 CURRENT CANDIDATE -->
+**BLOCKED_BY_AUTHORING** — Work #1055 CD13 O04/O13 edited in canonical at candidate blob `02fa0f4448e98ea3a454ca9278a7e41452298c60`, commit `cadbea0f7c3d0af866a78da4c32b45441d78b7c5`. Previous signed pointers below are historical only until affected Q18/V2/ready re-lock and X-G.5 verification; no RELEASE authorization.
+
 <!-- OWNER_20261121_SHARED_CANONICAL_EDITORIAL_SOURCE_EQUIVALENT_TOPIC13_READY -->
 **CURRENT OWNER-APPROVED SOURCE_EQUIVALENT:** CĐ13 learner `7bd211326e4f644a94e1dfad7868c03e1c415adb`, original G10 SGK canonical B07-P04 `18c29d7f60448a0a52d5b9f5aa5002e0f331defd` (prior `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` immutable historical), Q18 `24f5cd26b47852259cdc932fce7577fcf2f44866`, Q15/A1 `6389565e2a528ab22d06f39591e7ab048c10c3de`, V2 `0712c13a3f4e44d87288fa9d15ec2e36da4c5c7c`. Exact original B07-P04 vector-zero stem asks SAME conventional fact, MCQ choices and **Đáp án D** unchanged, mathematical solution still states zero vector is length 0 and by the learned convention has same direction; only citation prose “SGK/SBT KNTT” removed from stem/solution in BOTH source owner and Topic projection. Remaining 51 Practice math and 4 written rubrics, 16 public selfchecks and SVG unaffected. DELTA_B_SOURCE_EQUIVALENT; no new independent NotebookLM whole Topic PASS/RELEASE/merge/deploy.
 ---
@@ -23,7 +26,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 CONTENT_REVISION: R07_FULL_S1_KNOWLEDGE_20261120
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_AFFECTED_VECTOR_AND_W03
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
@@ -52,7 +55,7 @@ SVG3_BLOB: 979ca912e99fdadfc4e91ae0edad5db34fc13928
 SVG4_BLOB: 13445da079245a556a08e7a57069d9987097a0be
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
