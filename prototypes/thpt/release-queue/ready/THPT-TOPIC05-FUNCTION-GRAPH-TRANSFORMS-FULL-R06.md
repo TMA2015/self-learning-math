@@ -1,3 +1,4 @@
+<!-- 25/11 #1109: candidate HOLD; prior signed snapshot remains historical. Do not intake until exact source receipt and handoff. -->
 <!-- TOP05_MASTER974_READY_ON_ONE_AUTHORING_SOURCE_20261121 -->
 **CURRENT AUTHORING source-only Q18 v3.2.0 (not RELEASE):** same one R06 canonical learner `909f873c57e543b8f6d3c383d0b88df6900e334a` (source commit `6a1d1d158f9c0a4aa5d93b09650e62ffda1078b1`), original bank `ab878f1a18dea87872449a79c27b75a612d81b39` unchanged; existing composite author Q18 receipt `9c8c62a406e24af99efbdbe0bc081f1998c1f2ba`, existing A1–A7 source custody `701d1c2ea6cf4090106cdfdef3e275e7d6a79e3a`, one V2 handoff `be57f89611335a5e7547e77ebb0ad15e3eef1312`. Source deep 38-item/17-outcome original author math/PED audit inherited for unchanged content. New targeted Q08/PED6 Delta C self-verified: O01 explains error→retries at Kiến thức 1.1 Bài1/2, and 17 public question-only Selfchecks now have one voluntary answer-navigation disclosure mapped by the same original item_id. 38 original Practice math/rubric byte-identical, 3 SVG untouched, 56/56 balanced disclosures, exactly one SGK footer. No new independent NotebookLM reviewer verdict, official TOPIC_READINESS, RD1 or Mastery. No merge/deploy.
 
@@ -16,7 +17,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: 6a1d1d158f9c0a4aa5d93b09650e62ffda1078b1
 CURRENT_PR: #889 Draft AUTHORING R06 — no RELEASE authority
 AUTHOR_PR: 889
@@ -38,7 +39,7 @@ AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC05-FUNCTION-GRAPH-TRA
 AUTHOR_HANDOFF_BLOB: be57f89611335a5e7547e77ebb0ad15e3eef1312
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: #1109 A01 CURRENT_SOURCE_UPGRADE_PENDING (Work + X-G.5 + Q18/V2/REGISTER)
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_COUNT: 0
 PRIVATE_RD1_SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
