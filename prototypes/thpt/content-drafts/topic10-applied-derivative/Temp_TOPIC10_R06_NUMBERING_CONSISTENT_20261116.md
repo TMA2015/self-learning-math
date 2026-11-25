@@ -26,7 +26,7 @@ Xét \(f(x)=-2x+5\) trên \(\mathbb R\). Với bất kỳ \(x_1<x_2\), ta có \(
 
 **Đề bài:** Chứng minh f(x)=−x³ nghịch biến trên ℝ bằng định nghĩa.
 
-**Lời giải:** Với x₁<x₂, x₂³−x₁³=(x₂−x₁)(x₂²+x₁x₂+x₁²)>0. Suy ra f(x₂)−f(x₁)<0 với mọi cặp, nên f nghịch biến. Thử hai số riêng lẻ chưa đủ.
+**Lời giải:** Với \(x_1<x_2\), ta có \(x_2^3-x_1^3=(x_2-x_1)(x_2^2+x_1x_2+x_1^2)\). Thừa số thứ nhất dương. Thừa số thứ hai bằng \((x_2+\frac{x_1}{2})^2+\frac{3x_1^2}{4}\), không âm và chỉ bằng 0 khi \(x_1=x_2=0\), trái với \(x_1<x_2\). Do đó hiệu hai lập phương dương. Suy ra f(x₂)−f(x₁)<0 với mọi cặp, nên f nghịch biến. Thử hai số riêng lẻ chưa đủ.
 
 **Vận dụng** \(f(x)=3x-1\) đồng biến hay nghịch biến trên \(\mathbb R\)? Hãy giải thích bằng hai giá trị \(x_1<x_2\).
 
@@ -200,7 +200,7 @@ Một điểm cao hơn các điểm **rất gần nó** có thể vẫn thấp h
 
 <!-- LESSON_ID: TOP10-M07; OUTCOME_ID: TOP10-O07 -->
 
-> **ĐỊNH NGHĨA — Cực trị địa phương và toàn cục.** Một đỉnh cục bộ có chắc cao nhất trên toàn miền không? Ta đã biết cực trị qua đổi dấu, miền so sánh. Cực đại địa phương chỉ so các điểm gần c; GTLN/GTNN trên D phải so với MỌI x∈D. Một hàm có thể có nhiều cực trị địa phương, không có max/min toàn cục nếu unbounded hoặc cận không đạt.
+> **ĐỊNH NGHĨA — Cực trị địa phương và toàn cục.** Một đỉnh cục bộ có chắc cao nhất trên toàn miền không? Ta đã biết cực trị qua đổi dấu, miền so sánh. Cực đại địa phương chỉ so các điểm gần c; GTLN/GTNN trên D phải so với MỌI x∈D. Một hàm có thể có nhiều cực trị địa phương, có thể không có GTLN nếu không bị chặn trên hoặc cận trên đúng không đạt; tương tự cho GTNN khi xét cận dưới.
 
 Chẳng hạn, f=x³−3x trên ℝ có cực đại địa phương 2 tại−1 và cực tiểu−2 tại1, nhưng f→+∞/−∞ khi x→±∞ nên không có GTLN/GTNN trên ℝ.
 
@@ -300,9 +300,9 @@ Nếu em chỉ kiểm nghiệm \(f'=0\) mà bỏ hai đầu đoạn hoặc đi�
 
 <!-- LESSON_ID: TOP10-M10; OUTCOME_ID: TOP10-O10 -->
 
-> **KIẾN THỨC CẦN GHI NHỚ — Miền mở và khả đạt.** Trên miền mở, một cận có thể không được đạt. f(x) tiến đến 1 nhưng không bao giờ bằng 1, có gọi GTLN=1 không? Cần nhớ tập giá trị, cận trên và điều kiện 'đạt'. Cận trên đúng không nhất thiết là maximum. Trên (0,1), f(x)=x có supremum1 nhưng không có GTLN vì x=1 bị loại. Có thể có giá trị lớn nhất trên miền mở nếu hàm có điểm nội miền đạt, phải xét trường hợp cụ thể. Không được suy từ giới hạn ở biên thành giá trị đạt.
+> **KIẾN THỨC CẦN GHI NHỚ — Miền mở và khả đạt.** Trên miền mở, một cận có thể không được đạt. f(x) tiến đến 1 nhưng không bao giờ bằng 1, có gọi GTLN=1 không? Cần nhớ tập giá trị, cận trên và điều kiện 'đạt'. Cận trên đúng (cận trên nhỏ nhất, supremum) chưa chắc là GTLN vì nó có thể không được đạt. Trên (0,1), f(x)=x có cận trên đúng bằng 1 nhưng không có GTLN vì x=1 bị loại. Có thể có giá trị lớn nhất trên miền mở nếu hàm có điểm nội miền đạt, phải xét trường hợp cụ thể. Không được suy từ giới hạn ở biên thành giá trị đạt.
 
-Chẳng hạn, f=1−(x−2)² trên (0,3) có GTLN1 tại x=2 (nội miền) dù miền mở. Trái lại g=x trên (0,1) không có GTLN, chỉ supremum1.
+Chẳng hạn, f=1−(x−2)² trên (0,3) có GTLN1 tại x=2 (nội miền) dù miền mở. Trái lại g=x trên (0,1) không có GTLN, chỉ có cận trên đúng bằng 1.
 
 **Ví dụ**
 
@@ -370,14 +370,12 @@ Chẳng hạn, Chu vi hình chữ nhật 20 m, cạnh x∈(0,10), cạnh kia10�
 
 **Lời giải:** Gọi hai cạnh vuông góc dài x>0, cạnh thứ ba 24−2x>0; 0<x<12. A=x(24−2x)=−2(x−6)²+72≤72 m², đạt khi x=6 m, cạnh còn lại12 m. Phải mô hình đúng ba cạnh.
 
-**Vận dụng** Hình chữ nhật chu vi 12 m, diện tích lớn nhất khi nào?
+**Vận dụng** Có 32 m hàng rào để rào ba cạnh của một mảnh vườn hình chữ nhật dựa vào tường thẳng (cạnh sát tường không cần rào). Hãy đặt biến là chiều dài cạnh song song tường, lập miền khả thi và tìm diện tích lớn nhất.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-x=3, cạnh còn lại3, diện tích9 m².
-
-Nếu mục tiêu chưa đưa về một biến, quay lại ràng buộc trước khi đạo hàm.
+Gọi \(y\) (m) là chiều dài cạnh song song tường, \(x\) (m) là mỗi cạnh vuông góc. Vì chỉ rào ba cạnh, \(y+2x=32\), nên \(x=\frac{32-y}{2}\). Điều kiện \(x,y>0\) cho \(0<y<32\). Diện tích \(A(y)=\frac{y(32-y)}2=128-\frac12(y-16)^2\le128\). Dấu bằng xảy ra tại \(y=16\), \(x=8\), đều khả thi. Diện tích lớn nhất là \(128\ \text{m}^2\). Nếu viết \(2x+2y=32\), em đã tính thêm cạnh sát tường không cần rào.
 
 
 **Kiểm lỗi**
@@ -562,14 +560,16 @@ Xét ví dụ: f=x+1/x, x≠0: TCD x=0 vì 1/x vô cực, TC xiên y=x vì f−x
 
 **Lời giải:** D=ℝ\{−1}, f=x+1−1/(x+1). Vì 1/(x+1) vô cực gần −1, TCD x=−1; vì f−(x+1)→0 ở vô cực, tiệm cận xiên y=x+1.
 
-**Vận dụng** f=(x+1)/x có TCD và TCN?
+**Vận dụng** Quan sát hai hình sau (không cần biết trước biểu thức của hàm). Đọc phương trình đường tiệm cận đứng và đường tiệm cận ngang hoặc xiên của mỗi hình. Mô tả nhánh trái và nhánh phải khi tiến gần tiệm cận đứng.
+
+![Hai đồ thị để đọc tiệm cận từ đường nét đứt và trục tọa độ](../../visuals/THPT_TOPIC10_ASYMPTOTE_READING_R01.svg)
+
+*Đọc hình:* Nét liền xanh lam là đồ thị; nét đứt biểu thị đường tiệm cận. Dùng vạch chia trên trục để đọc phương trình đường đứt. Hãy phân biệt nhánh đi lên hay xuống khi tiến sát đường đứng; không nối hai nhánh qua đường đó.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-TCD x=0, TCN y=1.
-
-Nếu đọc đường y=1 như trục hoành, hãy ghi phương trình theo trục.
+Cả hai hình có tiệm cận đứng \(x=0\). Khi \(x\to0^-\), nhánh trái đi xuống phía \(-\infty\); khi \(x\to0^+\), nhánh phải đi lên phía \(+\infty\). Ở hình A, đường đứt xanh lá nằm ngang, cắt trục tung ở 1, nên tiệm cận ngang \(y=1\). Hình B có đường đứt đi qua gốc và qua \((2;2)\), nên tiệm cận xiên \(y=x\). Kiểm bằng hai hàm dùng để vẽ: hình A là \(1+\frac1x\), hình B là \(x+\frac1x\), sai khác với đường ngang/xiên tương ứng đều bằng \(\frac1x\to0\) ở hai phía vô cực.
 
 
 **Kiểm lỗi**
@@ -768,7 +768,14 @@ Chẳng hạn, nếu f' âm trên (−∞,1), dương trên (1,∞) và f(1)=−
 
 **Đề bài:** Giả sử f liên tục trên ℝ, f′<0 khi x<0, f′>0 khi x>0, f(0)=−2. Đọc bảng biến thiên.
 
-**Lời giải:** Hàm giảm tới0 rồi tăng sau0 nên f(0)=−2 là cực tiểu và GTNN trên ℝ. Chưa đủ dữ kiện để kết luận có GTLN toàn cục.
+**Lời giải:** Đặt mốc 0 giữa hai khoảng. Bảng biến thiên biểu diễn các dữ kiện đã biết:
+
+| \(x\) | \(-\infty\) | \((-\infty;0)\) | \(0\) | \((0;+\infty)\) | \(+\infty\) |
+|---|---|---|---|---|---|
+| \(f'(x)\) | | \(-\) | Chưa biết | \(+\) | |
+| \(f(x)\) | Giới hạn chưa cho | ↘ | \(-2\) | ↗ | Giới hạn chưa cho |
+
+Đọc từ trái sang phải: hàm giảm tới giá trị \(-2\) rồi tăng. Nhờ liên tục tại 0, \(f(0)=-2\) là cực tiểu và GTNN trên \(\mathbb R\). Không tự ghi dấu đạo hàm tại 0 hoặc giới hạn ở vô cực khi đề chưa cho; chưa đủ dữ kiện xác định cận trên. Nếu một mốc \(c\) bị loại khỏi miền, bảng phải có vạch đôi tại \(c\), không ghi \(f(c)\) hay nối hai mũi tên qua đó.
 
 **Vận dụng** Cho \(f\) liên tục tại \(x=2\), khả vi ở hai phía gần 2, \(f'(x)>0\) khi \(x<2\) và \(f'(x)<0\) khi \(x>2\), \(f(2)=5\). Điểm \((2,5)\) là cực trị nào?
 
@@ -928,7 +935,7 @@ Chẳng hạn, Hình chữ nhật có tổng hai cạnh bằng10 m, x>0 và 10�
 
 **Lời giải:** Chiều cao x, cạnh đáy20−2x (cm), nên V=x(20−2x)² cm³. Kích thước dương đòi hỏi 0<x<10; x=0 hay 10 không tạo hộp hợp lệ.
 
-**Vận dụng** Với hộp xăng theo mô hình V=x(8−2x)², kích thước đáy sau cắt phải dương, x nằm đâu?
+**Vận dụng** Với hộp không nắp gấp từ tấm bìa vuông cạnh 8 cm, mô hình \(V=x(8-2x)^2\), chiều cao và cạnh đáy phải dương. \(x\) nằm trong khoảng nào?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -984,7 +991,7 @@ Nếu em chỉ giữ nghiệm \(f'=0\) mà không so biên hoặc khả đạt, 
 
 <!-- LESSON_ID: TOP10-M31; OUTCOME_ID: TOP10-O31 -->
 
-> **PHƯƠNG PHÁP — Điểm không khả vi.** Cả đầu mút và điểm không khả vi cũng cần kiểm. Hai biên có thể làm thay đổi kết luận tối ưu như thế nào? Để xác định điều đó, cần xét đoạn đóng/mở và điểm dừng. Điểm biên thuộc miền có thể là nơi đạt max/min, kể cả đạo hàm trong lòng chưa bằng0. Nếu điểm biên bị loại, chỉ có thể là giới hạn/cận không đạt. Với biến nguyên, ứng viên phải làm tròn so hai giá trị khả thi lân cận; không dùng nghiệm thực phân số như số sản phẩm.
+> **PHƯƠNG PHÁP — Điểm không khả vi.** Cả đầu mút và điểm không khả vi cũng cần kiểm. Hai biên có thể làm thay đổi kết luận tối ưu như thế nào? Để xác định điều đó, cần xét đoạn đóng/mở và điểm dừng. Điểm biên thuộc miền có thể là nơi đạt max/min, kể cả đạo hàm trong lòng chưa bằng0. Nếu điểm biên bị loại, chỉ có thể là giới hạn/cận không đạt. Với biến nguyên, không dùng nghiệm thực phân số làm số sản phẩm. Chỉ thu hẹp còn hai số nguyên kề điểm tối ưu thực khi đã chứng minh hàm đơn điệu đúng chiều ở hai phía và hai số đó khả thi; xem mục 5.7. Nếu không, phải xét tất cả ứng viên nguyên có thể tối ưu.
 
 Chẳng hạn, P(x)=−(x−5)²+20 trên x∈[0,4]: P tăng đến x=4 nên GTLN16 tại biên4; không lấy P(5)=20 ngoài miền. Chọn kiểm điểm biên vì f'(x)>0 trên toàn khoảng.
 
@@ -994,14 +1001,12 @@ Chẳng hạn, P(x)=−(x−5)²+20 trên x∈[0,4]: P tăng đến x=4 nên GTL
 
 **Lời giải:** f liên tục nhưng không khả vi tại0, nên so cả điểm gãy và hai đầu: f(−2)=2, f(0)=0, f(1)=1. GTNN0 tại0, GTLN2 tại−2.
 
-**Vận dụng** g=x trên [0,1], GTLN/GTNN?
+**Vận dụng** Tìm GTLN và GTNN của \(g(x)=3-|x-1|\) trên \([-1;4]\). Chỉ rõ điểm cần kiểm dù đạo hàm không tồn tại ở đó.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-GTLN1 tại1, GTNN0 tại0.
-
-Nếu miền (0,1) kết quả KHÔNG đạt, đọc kí hiệu ngoặc.
+Hàm liên tục trên đoạn. Với \(x<1\), \(g(x)=2+x\) tăng; với \(x>1\), \(g(x)=4-x\) giảm. Tại \(1\) có điểm gãy với độ dốc trái 1 và phải \(-1\), nên phải đưa vào danh sách ứng viên. So \(g(-1)=1\), \(g(1)=3\), \(g(4)=0\). GTLN bằng 3 tại \(1\), GTNN bằng 0 tại \(4\). Nếu chỉ xét hai đầu đoạn, em sẽ bỏ mất GTLN ở điểm không khả vi.
 
 
 **Kiểm lỗi**
@@ -1014,22 +1019,22 @@ Nếu em bỏ điểm không khả vi hoặc bỏ đầu đoạn trong bài GTLN
 
 <!-- LESSON_ID: TOP10-M32; OUTCOME_ID: TOP10-O32 -->
 
-> **ĐỊNH NGHĨA — Nghiệm tối ưu nguyên.** Kết luận phải ghi đơn vị và giả thiết. Kết quả tối ưu chính xác về đại số đã đủ là kết luận thực tế chưa? Ta đã biết đơn vị, số nguyên, miền khả thi và định nghĩa mục tiêu. Mọi kết luận mô hình cần ghi giả thiết và đơn vị. Dùng cực trị liên tục có thể phải chuyển thành quyết định số nguyên, so các nguyên lân cận (đặc biệt sản lượng). Nếu hàm chi phí hay doanh thu do mô hình giả định, đừng khẳng định thực tế đã đo như vậy. Dữ kiện đến từ giả định phải được dán nhãn mô hình.
+> **ĐỊNH NGHĨA — Nghiệm tối ưu nguyên.** Kết luận phải ghi đơn vị và giả thiết. Kết quả tối ưu chính xác về đại số đã đủ là kết luận thực tế chưa? Ta đã biết đơn vị, số nguyên, miền khả thi và định nghĩa mục tiêu. Mọi kết luận mô hình cần ghi giả thiết và đơn vị. Nếu hàm mục tiêu đạt cực đại tại \(q_*\) trên một đoạn khả thi liên tục và đã chứng minh hàm tăng đến \(q_*\), rồi giảm sau \(q_*\), ta chỉ cần so các số nguyên khả thi gần nhất ở mỗi phía của \(q_*\) (nếu \(q_*\) nguyên và khả thi thì lấy chính nó). Mọi số nguyên xa hơn cùng phía đều không tốt hơn, nhờ tính đơn điệu. Với bài tìm GTNN, cần chiều giảm rồi tăng. Nếu có nhiều đỉnh hoặc miền nguyên bị ràng buộc thêm, phải xét các ứng viên khác; không máy móc làm tròn nghiệm thực. Nếu hàm chi phí hay doanh thu do mô hình giả định, đừng khẳng định thực tế đã đo như vậy. Dữ kiện đến từ giả định phải được dán nhãn mô hình.
 
 Chẳng hạn, Giả sử lợi nhuận P(q)=−(q−2,4)²+10 (triệu đồng) với q là số máy nguyên ≥0. Cực đại liên tục ở2,4 không khả thi; so q=2 (9,84) với q=3 (9,64), quyết định q=2 trong mô hình. Cần nói giả thiết doanh thu/chi phí là mô hình, không phải thống kê thực.
 
 **Ví dụ**
 
-**Đề bài:** P(q)=30−(q−5,4)², q nguyên 0..10: chọn sản lượng tối ưu.
+**Đề bài:** Lợi nhuận mô hình \(P(q)=30-(q-5{,}4)^2\) (nghìn đồng), với \(q\in\{0;1;\ldots;10\}\) là số sản phẩm. Chọn sản lượng tối ưu.
 
-**Lời giải:** Nghiệm thực q=5,4 không hợp lệ. So P(5)=29,84 và P(6)=29,64 nghìn đồng; bình phương khoảng cách nhỏ nhất tại q=5, nên đây là sản lượng nguyên tối ưu.
+**Lời giải:** Trên đoạn thực \([0;10]\), \(P'(q)=-2(q-5{,}4)\) dương trước \(5{,}4\) và âm sau \(5{,}4\). Điểm tối ưu thực không phải số nguyên. Theo tính đơn điệu, chỉ cần so \(P(5)=29{,}84\) và \(P(6)=29{,}64\) (nghìn đồng). Vậy chọn 5 sản phẩm, lợi nhuận tối đa theo mô hình là 29,84 nghìn đồng.
 
-**Vận dụng** Nếu P(q)=−(q−3,6)²+20, q nguyên, nên so những q nào?
+**Vận dụng** Nếu \(P(q)=-(q-3{,}6)^2+20\), \(q\) là số nguyên từ 0 đến 8, hãy giải thích vì sao chỉ cần so hai số nguyên nào và chọn số sản phẩm tối ưu.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-q=3 và4; P(3)=19,64, P(4)=19,84 nên q=4.
+Vì \(P'(q)=-2(q-3{,}6)\), hàm tăng trước \(3{,}6\) và giảm sau đó. Hai ứng viên gần nhất ở hai phía là 3 và 4. So \(P(3)=19{,}64\), \(P(4)=19{,}84\), nên chọn \(q=4\).
 
 Đừng dùng q=3,6 sản phẩm trong câu trả lời số nguyên.
 
@@ -1086,7 +1091,16 @@ Chẳng hạn, f=(x²+1)/(x−1)=x+1+2/(x−1) ⇒ TCD x=1, TC xiên y=x+1. f'= 
 
 **Đề bài:** Khảo sát tiệm cận và đạo hàm f=(x²+2)/(x−1).
 
-**Lời giải:** D=ℝ\{1}, f=x+1+3/(x−1), TCD x=1 và xiên y=x+1. f′=(x²−2x−2)/(x−1)², có mốc 1±√3; xét dấu mỗi nhánh, không nối qua điểm1.
+**Lời giải:** \(D=\mathbb R\setminus\{1\}\). Chia đa thức: \(f(x)=x+1+\frac3{x-1}\). Khi \(x\to1^-\), \(f(x)\to-\infty\); khi \(x\to1^+\), \(f(x)\to+\infty\), nên tiệm cận đứng là \(x=1\). Vì \(f(x)-(x+1)=\frac3{x-1}\to0\) ở hai phía vô cực, tiệm cận xiên là \(y=x+1\).
+
+Đạo hàm \(f'(x)=\frac{x^2-2x-2}{(x-1)^2}=\frac{(x-1)^2-3}{(x-1)^2}\). Đặt \(a=1-\sqrt3\), \(b=1+\sqrt3\), ta có \(a<1<b\). Mẫu luôn dương trên miền; xét dấu tử ở bốn khoảng:
+
+| \(x\) | \((-\infty;a)\) | \(a\) | \((a;1)\) | \(1\) | \((1;b)\) | \(b\) | \((b;+\infty)\) |
+|---|---|---|---|---|---|---|---|
+| \(f'(x)\) | \(+\) | \(0\) | \(-\) | Không xác định | \(-\) | \(0\) | \(+\) |
+| Biến thiên | ↗ | Cực đại | ↘ | \(\Vert\) | ↘ | Cực tiểu | ↗ |
+
+Tại \(a\), giá trị cực đại địa phương là \(2-2\sqrt3\); tại \(b\), giá trị cực tiểu địa phương là \(2+2\sqrt3\) (thế \(x-1=\mp\sqrt3\) vào biểu thức sau chia). Không nối hai khoảng giảm qua điểm cấm \(1\).
 
 **Vận dụng** f=(x+2)/(x−1), TCD và TCN?
 
@@ -1100,7 +1114,7 @@ Nếu nói y=x, kiểm bậc tử/mẫu trước.
 
 **Kiểm lỗi**
 
-Nếu em chỉ nhìn tử và mẫu cùng bậc mà bỏ phần thương bậc nhất, đọc **Kiến thức 6.2**, làm **Bài 108** và **Bài 111**. Phân biệt TCD, TCN và tiệm cận xiên sau chia đa thức.
+Nếu tử và mẫu cùng bậc, thương đa thức là hằng số (tỉ số hệ số đầu), cho tiệm cận ngang; nếu bậc tử lớn hơn bậc mẫu đúng 1, thương là đa thức bậc nhất, cho tiệm cận xiên. Ví dụ trên thuộc trường hợp thứ hai. Để xác định tiệm cận đứng, còn phải kiểm phần dư và giới hạn gần điểm cấm. Đọc **Kiến thức 6.2**, làm **Bài 108** và **Bài 111**; lập dấu đạo hàm riêng qua từng khoảng của miền.
 
 </details>
 
