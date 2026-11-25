@@ -32,7 +32,7 @@ Xét bảng các cặp \((0,2),(1,4),(1,4)\). Dù \(x=1\) được ghi hai lần
 
 **Đề bài.** Xét \((0,1),(1,2),(1,2),(2,3)\) trên tập \(\{0,1,2\}\). Có phải hàm số? Nếu thay cặp cuối bằng \((1,3)\) thì sao?
 
-**Lời giải.** Ban đầu \(f(0)=1,f(1)=2,f(2)=3\), mỗi đầu vào cho đúng một đầu ra nên là hàm số dù cặp \((1,2)\) lặp. Sau khi thay, \(x=1\) cho cả \(2\) và \(3\); điều kiện đơn trị bị phá, không còn là hàm số.
+**Lời giải.** Ban đầu \(f(0)=1,f(1)=2,f(2)=3\), mỗi đầu vào cho đúng một đầu ra nên là hàm số dù cặp \((1,2)\) lặp. Sau khi thay, \(x=1\) cho cả 2 và 3; đồng thời \(x=2\) vẫn thuộc tập đầu vào nhưng không còn đầu ra nào. Vì vậy vi phạm cả yêu cầu **mỗi đầu vào** và **đúng một đầu ra**.
 
 **Vận dụng**
 
@@ -160,13 +160,13 @@ Chẳng hạn, f(x)=−3x+2: f(x₂)−f(x₁)=−3(x₂−x₁)<0 khi x₁<x₂
 
 **Vận dụng**
 
-x² tăng/giảm trên [−5,−2] ra sao?
+Hàm \(f(x)=x^2\) đồng biến hay nghịch biến trên \([-5;-2]\)?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Giảm; GTLN25 ở−5, GTNN4 ở−2.
+Hàm nghịch biến trên \([-5;-2]\). Thật vậy, nếu \(-5\le x_1<x_2\le-2\), thì \(f(x_2)-f(x_1)=(x_2-x_1)(x_2+x_1)<0\). Giá trị lớn nhất là 25 tại \(x=-5\); giá trị nhỏ nhất là 4 tại \(x=-2\).
 
-Nếu chỉ thử x=0,1, hãy giải thích cho x₁,x₂ tùy ý; làm lại Bài 10 và Bài 11 trong phần Luyện tập.
+Nếu em kết luận đồng biến vì số mũ chẵn, hãy so \(f(-5)=25\) với \(f(-2)=4\), rồi kiểm dấu của \(x_2+x_1\) với hai điểm bất kỳ trong khoảng đã cho. Làm lại Bài 10 và Bài 11 trong phần Luyện tập.
 
 </details>
 
@@ -496,7 +496,7 @@ Nếu đọc x+2 là dịch phải, tìm x làm x+2=0; làm lại Bài 30, Bài 
 
 Chấm đặc hay chấm rỗng quyết định giá trị tại mốc?
 
-> **ĐỊNH NGHĨA — Hàm từng đoạn và điểm đầu mút.** Với hàm từng đoạn, điểm nối và dấu bằng có thể làm thay đổi đồ thị. Hai công thức giá theo thời gian có thể gặp nhau hoặc tạo bước nhảy tại mốc đổi giá. Để xác định điều đó, cần xét phân biệt x<c, x≤c, x≥c; chấm rỗng/đặc. Tại x=c, **nhánh có dấu bằng** xác định f(c). Nhìn độ cao của hai nhánh sát c: khác nhau tạo bước nhảy, bằng nhau có thể nối khi điểm được nhận. Đây là cách đọc hình trực quan, không thay nội dung định nghĩa/định lý giới hạn và liên tục chính thức ở CĐ08.
+> **ĐỊNH NGHĨA — Hàm từng đoạn và điểm đầu mút.** Với hàm từng đoạn, điểm nối và dấu bằng có thể làm thay đổi đồ thị. Hai công thức giá theo thời gian có thể gặp nhau hoặc tạo bước nhảy tại mốc đổi giá. Để xác định điều đó, cần xét điều kiện từng nhánh: chẳng hạn \(x<c\), \(x\le c\) hoặc \(x\ge c\). Tại \(x=c\), **nhánh chứa mốc c** xác định \(f(c)\), nếu c thuộc miền xác định. Nhìn độ cao của hai nhánh sát c: khác nhau tạo bước nhảy, bằng nhau có thể nối khi điểm được nhận. Đây là cách đọc hình trực quan, không thay nội dung định nghĩa/định lý giới hạn và liên tục chính thức ở CĐ08.
 
 Chẳng hạn, hàm từng đoạn \(f(x)=2\) khi \(x\le1\), còn \(f(x)=x+3\) khi \(x>1\) có \(f(1)=2\) nhờ nhánh chứa dấu bằng. Trên hình, nhánh phải chỉ tiến gần điểm \((1,4)\) khi \(x\to1^+\) nhưng không nhận điểm ấy. Vì 2 khác 4, hai nhánh tạo **bước nhảy** tại \(x=1\), chứ không nối nhau; cần phân biệt giá trị tại mốc và giá trị gần mốc.
 
@@ -508,17 +508,17 @@ Chẳng hạn, hàm từng đoạn \(f(x)=2\) khi \(x\le1\), còn \(f(x)=x+3\) k
 
 **Đề bài.** Đặt \(p(x)=3\) nếu \(x\le2\), và \(p(x)=x+4\) nếu \(x>2\). Tìm \(p(2)\), hai chấm tại mốc và tính bước nhảy.
 
-**Lời giải.** Nhánh chứa dấu bằng cho \(p(2)=3\): chấm đặc \((2,3)\). Nhánh phải tiến tới 6 nhưng không nhận tại 2: chấm rỗng \((2,6)\). Có bước nhảy vì 3 khác 6. Hình bài học dùng mốc 1, áp dụng cùng nguyên tắc.
+**Lời giải.** Nhánh chứa dấu bằng cho \(p(2)=3\): chấm đặc \((2,3)\). Nhánh phải tiến tới 6 nhưng không nhận tại 2: chấm rỗng \((2,6)\). Khi đi từ trái sang phải, độ cao chuyển từ 3 lên 6, nên bước nhảy hướng lên có độ lớn \(6-3=3\) đơn vị. Hình bài học dùng mốc 1, áp dụng cùng nguyên tắc.
 
 **Vận dụng**
 
-f=0 nếu x≤0, f=x+2 nếu x>0 có bước nhảy ở 0 không?
+Cho \(f(x)=0\) nếu \(x\le0\) và \(f(x)=x+2\) nếu \(x>0\). Có bước nhảy tại 0 không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Có: chấm đặc(0,0) và chấm rỗng(0,2) thuộc nhánh bên phải.
+Có. Chấm đặc \((0;0)\) thuộc đồ thị vì nhánh trái nhận \(x=0\), nên \(f(0)=0\). Chấm rỗng \((0;2)\) chỉ đánh dấu vị trí nhánh phải tiến tới khi x tiến đến 0 từ bên phải; nó **không thuộc đồ thị**, vì nhánh phải chỉ nhận \(x>0\). Hai độ cao khác nhau; bước nhảy hướng lên có độ lớn \(2-0=2\) đơn vị.
 
-Nếu tính f(0)=2, bạn đã dùng nhầm nhánh x>0; làm lại Bài 32, Bài 33 và Bài 37 trong phần Luyện tập.
+Nếu tính \(f(0)=2\), em đã dùng nhầm nhánh \(x>0\). Hãy kiểm xem 0 thỏa điều kiện của nhánh nào, rồi đặt chấm đặc tại đúng giá trị \(f(0)\). Làm lại Bài 32, Bài 33 và Bài 37 trong phần Luyện tập.
 
 </details>
 
