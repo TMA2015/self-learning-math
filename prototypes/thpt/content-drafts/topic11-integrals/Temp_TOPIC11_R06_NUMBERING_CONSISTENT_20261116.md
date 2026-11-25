@@ -351,22 +351,22 @@ Nếu em quên dấu khi đảo cận hoặc ghép sai khoảng, đọc **Kiến
 
 <!-- LESSON_ID: TOP11-M11; OUTCOME_ID: TOP11-O11 -->
 
-> **CÔNG THỨC — Từ tích lũy tới diện tích không âm.** Diện tích dưới đồ thị bằng tích phân khi hàm không âm. Tại sao tổng các hình chữ nhật rất mỏng mô phỏng đúng diện tích cong? Để xác định điều đó, cần xét đồ thị liên tục và không âm, dải đứng rộng dx. Nếu f(x)≥0 liên tục trên [a,b], diện tích vùng giữa đồ thị, Ox, hai đường x=a,b bằng \(\int_{a}^{b} f(x)\,\mathrm dx\). Ý nghĩa là giới hạn tổng diện tích dải hẹp f(x)dx. Nếu f đổi dấu, tích phân cho phần diện tích đại số chứ không phải tổng vùng.
+> **CÔNG THỨC — Từ tích lũy tới diện tích không âm.** Giả sử \(f\) liên tục và \(f(x)\ge0\) trên \([a;b]\), với \(a<b\). Chia đoạn thành nhiều khoảng nhỏ: một dải đứng có chiều cao gần bằng \(f(x)\), chiều rộng rất nhỏ \(\Delta x\), nên diện tích gần bằng \(f(x)\Delta x\). Khi các dải ngày càng hẹp, tổng diện tích tiến đến \(S=\int_a^b f(x)\,\mathrm dx\). Đây là diện tích vùng giới hạn bởi đồ thị, trục \(Ox\) và hai đường \(x=a,\ x=b\). Nếu hàm đổi dấu, tích phân có dấu không còn bằng tổng diện tích hình học.
 
-Chẳng hạn, y=2x trên [0,2] không âm: S=\(\int_{0}^{2} 2x\,\mathrm dx\)=[x²]₀²=4, đúng diện tích tam giác đáy2 cao4 là4. Hai phương pháp kiểm chéo bản chất.
+Chẳng hạn, \(y=2x\) không âm trên \([0;2]\). Ta có \(S=\int_0^2 2x\,\mathrm dx=\left[x^2\right]_0^2=4\). Kiểm bằng hình học: tam giác có đáy 2 và chiều cao 4, diện tích \(\frac12\cdot2\cdot4=4\).
 
 **Ví dụ**
 
-**Đề bài:** Tính diện tích hình phẳng dưới y=2x+1 trên [0,2].
+**Đề bài:** Tính diện tích hình phẳng dưới đồ thị \(y=2x+1\), giới hạn bởi trục \(Ox\) và hai đường \(x=0,\ x=2\).
 
-**Lời giải:** Vì f=2x+1≥1>0 và liên tục trên đoạn, S=\(\int_{0}^{2} (2x+1)\,\mathrm dx\)=[x²+x]₀²=4+2=6 đơn vị diện tích. Dùng diện tích bằng tích phân vì đồ thị nằm trên Ox.
+**Lời giải:** Hàm \(f(x)=2x+1\) liên tục và \(f(x)\ge1>0\) trên \([0;2]\). Đồ thị nằm trên \(Ox\), do đó \(S=\int_0^2(2x+1)\,\mathrm dx=\left[x^2+x\right]_0^2=4+2=6\) đơn vị diện tích.
 
-**Vận dụng** Diện tích dưới y=x² trên [0,1]?
+**Vận dụng** Tính diện tích dưới đồ thị \(y=x^2\), phía trên trục \(Ox\), từ \(x=0\) đến \(x=1\).
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-\(\int_{0}^{1} x^{2}\,\mathrm dx\)=1/3 đơn vị².
+\(\int_0^1 x^2\,\mathrm dx=\frac13\) đơn vị diện tích.
 
 Nếu trả diện tích âm, kiểm f có âm trên đoạn hay không.
 
@@ -381,21 +381,21 @@ Nếu em coi tích phân âm là diện tích âm, hoặc bỏ kiểm dấu \(f\
 
 <!-- LESSON_ID: TOP11-M12; OUTCOME_ID: TOP11-O12 -->
 
-Độ dời khác quãng đường vì tích phân có dấu có thể triệt tiêu. Một vận tốc đổi dấu có thể cho độ dời bằng0 nhưng quãng đường khác0? Ta đã biết dấu f, nghiệm f=0, ∫f và ∫|f|. Tích phân ∫f là phần có dấu; ∫|f| là tổng độ lớn không âm. Diện tích hình học giữa Ox và đồ thị dùng ∫|f|; quãng đường khi v là vận tốc có hướng dùng ∫|v|, còn độ dời dùng ∫v. Tìm nghiệm đổi dấu và chia đoạn trước khi lấy trị tuyệt đối từng phần. Không lấy |∫f| thay ∫|f|.
+Độ dời khác quãng đường vì các phần có dấu trái nhau trong tích phân có thể triệt tiêu. Với vận tốc có hướng \(v\) liên tục trên \([a;b]\), độ dời là \(\int_a^b v(t)\,\mathrm dt\), còn quãng đường là \(\int_a^b |v(t)|\,\mathrm dt\). Tương tự, diện tích giữa đồ thị của \(f\) và trục \(Ox\) là \(\int_a^b |f(x)|\,\mathrm dx\). Khi hàm đổi dấu tại một số hữu hạn điểm, chia đoạn tại các điểm đó để tính từng phần không âm. Không thay tích phân của trị tuyệt đối bằng trị tuyệt đối của tích phân khi chưa kiểm dấu.
 
-Chẳng hạn, v(t)=t−1 trên [0,2]: ∫v=0, nhưng ∫|v|=∫₀¹(1−t)+∫₁²(t−1)=1. Tại t=1 vật đổi chiều; diện tích hai tam giác 1/2+1/2=1.
+Chẳng hạn, \(v(t)=t-1\) (m/s) trong \(0\le t\le2\) giây. Độ dời là \(\int_0^2(t-1)\,\mathrm dt=0\) m. Vật đổi chiều tại \(t=1\); quãng đường là \(\int_0^1(1-t)\,\mathrm dt+\int_1^2(t-1)\,\mathrm dt=\frac12+\frac12=1\) m.
 
-> **PHƯƠNG PHÁP — Phân biệt độ dời và quãng đường.** Một ví dụ **khác đúng với hình** là \(f(x)=x\) trên đoạn \([-1,2]\). Trên \([-1,0]\), đồ thị nằm dưới trục nên tích phân đóng góp \(-1/2\); trên \([0,2]\), vùng tam giác phía trên có diện tích 2 và đóng góp \(+2\). Vì thế \(\int_{-1}^{2}x\,dx=3/2\), nhưng **diện tích hình học** của hai vùng là \(1/2+2=5/2\). Trong bài vận tốc \(v(t)=t-1\) trên \([0,2]\) vừa xét, hai số tương ứng là 0 và 1; không được đọc kết quả của hình này thành kết quả bài đó.
+> **PHƯƠNG PHÁP — Phân biệt độ dời và quãng đường.** Hình dưới minh họa một ví dụ khác: \(f(x)=x\) trên \([-1;2]\). Trên \([-1;0]\), đồ thị nằm dưới trục nên phần tích phân bằng \(-\frac12\); trên \([0;2]\), vùng tam giác phía trên có diện tích 2 và đóng góp \(+2\). Vì thế \(\int_{-1}^2 x\,\mathrm dx=\frac32\), nhưng **diện tích hình học** của hai vùng là \(\frac12+2=\frac52\). Trong bài vận tốc \(v(t)=t-1\) trên \([0;2]\) vừa xét, hai số tương ứng là 0 và 1; không dùng kết quả của hình này cho bài vận tốc đó.
 
 ![Tích phân có dấu và diện tích hình học là hai đại lượng khác nhau](../../visuals/THPT_TOPIC11_SIGNED_INTEGRAL_R01.svg)
 
-*Đọc hình:* Đây là \(y=x\) trên \([-1,2]\), đổi dấu tại \(x=0\). Hai vùng tam giác có diện tích lần lượt \(1/2\) và 2, nên phần dưới góp số **âm** vào tích phân nhưng vẫn là diện tích **dương** khi cộng diện tích hình học.
+*Đọc hình:* Đây là \(y=x\) trên \([-1;2]\), đổi dấu tại \(x=0\). Hai vùng tam giác có diện tích lần lượt \(\frac12\) và 2, nên phần dưới góp số **âm** vào tích phân nhưng vẫn là diện tích **dương** khi cộng diện tích hình học.
 
 **Ví dụ**
 
-**Đề bài:** Với f(x)=x−1 trên [0,4], tính tích phân có dấu và diện tích hình học.
+**Đề bài:** Với \(f(x)=x-1\) trên \([0;4]\), tính tích phân có dấu và diện tích hình học giữa đồ thị với \(Ox\).
 
-**Lời giải:** f đổi dấu ở x=1. Tích phân có dấu \(\int_{0}^{4} (x-1)\,\mathrm dx\)=[x²/2−x]₀⁴=4. Diện tích phải tách: \(\int_{0}^{1} (1-x)\,\mathrm dx\)=1/2 và \(\int_{1}^{4} (x-1)\,\mathrm dx\)=9/2, tổng S=5. Không lấy |4| thay ∫|f|.
+**Lời giải:** Hàm đổi dấu tại \(x=1\). Tích phân có dấu là \(\int_0^4(x-1)\,\mathrm dx=\left[\frac{x^2}2-x\right]_0^4=4\). Để tính diện tích, tách tại \(x=1\): \(\int_0^1(1-x)\,\mathrm dx=\frac12\) và \(\int_1^4(x-1)\,\mathrm dx=\frac92\). Tổng diện tích là \(S=\frac12+\frac92=5\), khác với \(|4|=4\).
 
 **Vận dụng** Một vật chuyển động thẳng với vận tốc có hướng \(v(t)=2-t\) (m/s), \(0\le t\le5\) giây. Tìm thời điểm đổi chiều, độ dời và tổng quãng đường của vật.
 
@@ -421,22 +421,22 @@ Nếu em lấy trị tuyệt đối của **một** tích phân có dấu làm q
 
 <!-- LESSON_ID: TOP11-M13; OUTCOME_ID: TOP11-O13 -->
 
-> **CÔNG THỨC — Tích phân lượng giác.** Sin, cos và mũ dùng cùng nguyên tắc thế cận sau nguyên hàm. Một biểu thức lượng giác hoặc hàm mũ vẫn tính bằng F(b)−F(a) được không? Ta sử dụng hàm e^x, sin/cos liên tục trên đoạn, góc radian. Nếu f liên tục, quy tắc Newton–Leibniz không phụ thuộc biểu thức có là đa thức hay không. Nguyên hàm cos x là sin x+C, nguyên hàm sin x là −cos x+C (góc radian), và nguyên hàm e^x là e^x+C. Lấy giá trị hai cận đúng, kiểm sinh ra số và dấu. Với e^{kx}, chia k khi tìm nguyên hàm.
+> **CÔNG THỨC — Tích phân lượng giác.** Nếu hàm liên tục trên đoạn lấy tích phân, công thức Newton–Leibniz vẫn là \(F(b)-F(a)\), dù hàm dưới dấu tích phân là đa thức, hàm mũ hay lượng giác. Với góc radian, ta chọn nguyên hàm của \(\cos x\) là \(\sin x\), của \(\sin x\) là \(-\cos x\). Với \(e^x\), nguyên hàm là \(e^x\); với \(e^{kx}\), nguyên hàm là \(\frac{e^{kx}}k\) khi \(k\ne0\). Sau khi chọn nguyên hàm, thay cả hai cận và lấy hiệu; không thêm \(+C\) vào kết quả tích phân.
 
-Xét ví dụ: \(\int_{0}^{\ln 3} e^x\,\mathrm dx\)=e^{ln3}−1=2. Chọn F=e^x vì d(e^x)=e^x, cận ln3 cho giá trị hữu hạn. Không viết ln3 thành3 ở cận x.
+Xét ví dụ: \(\int_0^{\ln 3} e^x\,\mathrm dx=\left[e^x\right]_0^{\ln 3}=e^{\ln 3}-1=2\). Chọn \(F(x)=e^x\) vì \(F'(x)=e^x\). Lưu ý cận trên là \(\ln 3\), không phải 3.
 
 **Ví dụ**
 
 **Đề bài:** Tính \(\int_{0}^{\pi} \sin  x\,\mathrm dx\) khi góc đo radian.
 
-**Lời giải:** Hàm sin liên tục, F=−cos x. \(\int_{0}^{\pi} \sin  x\,\mathrm dx\)=[−cos x]₀^π=1−(−1)=2. Dùng radian; kết quả khác việc coi góc theo độ.
+**Lời giải:** Hàm sin liên tục trên đoạn; chọn \(F(x)=-\cos x\). Ta có \(\int_0^\pi\sin x\,\mathrm dx=\left[-\cos x\right]_0^\pi=1-(-1)=2\). Góc được tính bằng radian.
 
 **Vận dụng** \(\int_{0}^{\frac{\pi}{2}} \sin  x\,\mathrm dx\)?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-[−cos x]₀^{π/2}=−0−(−1)=1.
+\(\left[-\cos x\right]_0^{\frac{\pi}{2}}=0-(-1)=1\).
 
 Nếu thay cận góc độ mà không quy đổi, xem lại giả thiết radian.
 
@@ -451,22 +451,22 @@ Nếu em quên đạo hàm \(-\cos x\) bằng \(\sin x\) hoặc thế cận góc
 
 <!-- LESSON_ID: TOP11-M14; OUTCOME_ID: TOP11-O14 -->
 
-> **PHƯƠNG PHÁP — Tích lũy từ tốc độ biến thiên.** Tích phân từ tốc độ cho lại lượng tích lũy. Biết tốc độ cuối khoảng có suy được lượng tích lũy bằng 'tốc độ cuối×thời gian'? Ta bắt đầu từ tốc độ biến thiên r(t) và tích phân của r. Nếu Q'(t)=r(t), lượng biến đổi ròng Q(b)−Q(a)=\(\int_{a}^{b} r(t)\,\mathrm dt\). Khi r không hằng, dùng r(b)(b−a) thường sai; diện tích dưới đồ thị tốc độ phản ánh toàn thời gian. Đơn vị r là lượng/giây, sau tích phân là lượng. Với r đổi dấu, diễn giải ròng.
+> **PHƯƠNG PHÁP — Tích lũy từ tốc độ biến thiên.** Giả sử \(Q'(t)=r(t)\) và \(r\) liên tục trên \([a;b]\). Lượng biến đổi ròng là \(Q(b)-Q(a)=\int_a^b r(t)\,\mathrm dt\). Nếu tốc độ \(r\) không hằng, không thể chỉ lấy tốc độ cuối \(r(b)\) nhân với thời gian \(b-a\). Ta phải cộng dồn sự thay đổi trong toàn khoảng. Nếu tốc độ tính bằng lượng mỗi giây và thời gian tính bằng giây, tích phân có đơn vị lượng. Khi tốc độ đổi dấu, kết quả vẫn là biến đổi ròng.
 
-Chẳng hạn, Lưu lượng r(t)=2t lít/phút trên [0,2]: Q(2)−Q(0)=\(\int_{0}^{2} 2t\,\mathrm dt\)=4 lít, không phải r(2)·2=8 lít. Chọn dải tốc độ thay đổi thay vì một mức cuối.
+Chẳng hạn, lưu lượng \(r(t)=2t\) lít/phút trong \(0\le t\le2\) phút. Lượng nước tăng thêm là \(Q(2)-Q(0)=\int_0^2 2t\,\mathrm dt=4\) lít, không phải \(r(2)\cdot2=8\) lít.
 
 **Ví dụ**
 
-**Đề bài:** Một vật chuyển động thẳng với vận tốc có hướng v(t)=5−2t (m/s) trong 0≤t≤2 giây. Tính độ dời của vật.
+**Đề bài:** Một vật chuyển động thẳng với vận tốc có hướng \(v(t)=5-2t\) (m/s) trong \(0\le t\le2\) giây. Tính độ dời của vật.
 
-**Lời giải:** Độ dời s(2)−s(0)=\(\int_{0}^{2} v(t)\,\mathrm dt\)=\(\int_{0}^{2} (5-2t)\,\mathrm dt\)=[5t−t²]₀²=10−4=6 m. Không tính bằng v(2)·2=2 m vì vận tốc không hằng; trên [0,2] có v(t)≥1 m/s nên quãng đường cũng bằng 6 m.
+**Lời giải:** Độ dời là \(s(2)-s(0)=\int_0^2(5-2t)\,\mathrm dt=\left[5t-t^2\right]_0^2=10-4=6\) m. Không tính bằng \(v(2)\cdot2=2\) m vì vận tốc không hằng; trên \([0;2]\) có \(v(t)\ge1\) (m/s), nên quãng đường cũng bằng 6 m.
 
-**Vận dụng** Một vật có vận tốc có hướng v(t)=3t² (m/s) trong 0≤t≤1 giây. Độ dời là bao nhiêu?
+**Vận dụng** Một vật có vận tốc có hướng \(v(t)=3t^2\) (m/s) trong \(0\le t\le1\) giây. Độ dời là bao nhiêu?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Độ dời bằng \(\int_{0}^{1} 3t^{2}\,\mathrm dt\)=1 m.
+Độ dời bằng \(\int_0^1 3t^2\,\mathrm dt=1\) m.
 
 Nếu kết quả còn đơn vị m/s, em chưa tích phân theo thời gian (giây).
 
@@ -487,9 +487,9 @@ Diện tích hình học không thể âm. Vì vậy, khi đồ thị đổi ph�
 
 <!-- LESSON_ID: TOP11-M15; OUTCOME_ID: TOP11-O15 -->
 
-> **PHƯƠNG PHÁP — Diện tích dưới hàm căn.** Diện tích dưới √x tính khác hình chữ nhật vì chiều cao thay đổi thế nào? Cần nhớ hàm căn trên x≥0, f≥0 và nguyên hàm x^{1/2}. Nếu y=√x trên [a,b] với 0≤a<b, f liên tục, không âm, S=∫_a^b√x dx= (2/3)[x^{3/2}]_a^b. Không lấy cận âm để làm phép nguyên hàm trên số thực. Hình phẳng được mô tả bằng hai đường dọc x=a,b, Ox và đồ thị.
+> **PHƯƠNG PHÁP — Diện tích dưới hàm căn.** Hàm \(y=\sqrt{x}\) liên tục, không âm trên đoạn \([a;b]\) với \(0\le a<b\). Vùng giới hạn bởi đồ thị, trục \(Ox\) và hai đường \(x=a,\ x=b\) có diện tích \(S=\int_a^b\sqrt{x}\,\mathrm dx=\frac23\left[x^{\frac32}\right]_a^b\). Để tìm nguyên hàm, viết \(\sqrt{x}=x^{\frac12}\) rồi dùng quy tắc lũy thừa. Không lấy cận âm khi hàm căn không xác định trên số thực.
 
-Chẳng hạn, S dưới y=√x trên [0,1]: ∫₀¹x^{1/2}dx=2/3 đơn vị². Kiểm với hình 1×1 có đường √x nằm trong hình nên diện tích <1.
+Chẳng hạn, diện tích dưới \(y=\sqrt{x}\) trên \([0;1]\) là \(\int_0^1 x^{\frac12}\,\mathrm dx=\frac23\) đơn vị diện tích. Kiểm lại: đường cong nằm trong hình vuông cạnh 1, nên diện tích nhỏ hơn 1.
 
 Không phải mọi hình phẳng có hàm căn đều cần tìm nguyên hàm bằng công thức. Chẳng hạn, đồ thị \(y=\sqrt{4-x^2}\), \(-2\le x\le2\), chính là **nửa đường tròn phía trên** của đường tròn \(x^2+y^2=4\): bình phương hai vế được phương trình đường tròn, còn dấu \(y\ge0\) chọn nửa trên. Do đó, diện tích dưới đồ thị từ \(-2\) tới \(2\) là nửa diện tích hình tròn bán kính \(2\).
 
@@ -499,18 +499,18 @@ Không phải mọi hình phẳng có hàm căn đều cần tìm nguyên hàm b
 
 **Ví dụ**
 
-**Đề bài:** Tính diện tích dưới y=√x trên [1,4].
+**Đề bài:** Tính diện tích dưới \(y=\sqrt{x}\) và trên \(Ox\), từ \(x=1\) đến \(x=4\).
 
-**Lời giải:** Hàm √x liên tục, không âm khi x≥0. S=∫₁⁴x^{1/2}dx=(2/3)[x^{3/2}]₁⁴=(2/3)(8−1)=14/3 đơn vị diện tích. Phải kiểm cận không âm.
+**Lời giải:** Hàm \(\sqrt{x}\) liên tục và không âm trên \([1;4]\). Ta có \(S=\int_1^4 x^{\frac12}\,\mathrm dx=\frac23\left[x^{\frac32}\right]_1^4=\frac23(8-1)=\frac{14}{3}\) đơn vị diện tích. Hai cận đều thuộc miền xác định.
 
-**Vận dụng** S dưới y=√x trên [0,9]?
+**Vận dụng** Tính diện tích dưới \(y=\sqrt{x}\) và trên \(Ox\), từ \(x=0\) đến \(x=9\).
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-(2/3)9^{3/2}=(2/3)27=18 đơn vị².
+\(\frac23\cdot9^{\frac32}=\frac23\cdot27=18\) đơn vị diện tích.
 
-Nếu coi √x như x², phải đổi thành x^{1/2} trước tính.
+Nếu em nhầm \(\sqrt{x}\) với \(x^2\), hãy viết lại \(\sqrt{x}=x^{\frac12}\) trước khi tìm nguyên hàm.
 
 
 **Kiểm lỗi**
@@ -523,19 +523,19 @@ Nếu em áp dụng công thức nguyên hàm \(x^2\) cho \(\sqrt{x}\) hoặc b�
 
 <!-- LESSON_ID: TOP11-M16; OUTCOME_ID: TOP11-O16 -->
 
-Khi đồ thị cắt trục, cần chia miền và cộng diện tích. Khi đường cong chạy qua trục Ox, những mảnh phía dưới có phải trừ khỏi diện tích? Để xác định điều đó, cần xét nghiệm của f(x)=0, dấu f trên mỗi khoảng và ∫|f|. 
+Khi đồ thị cắt trục \(Ox\), những mảnh nằm dưới trục vẫn có diện tích dương. Tìm các điểm mà \(f(x)=0\), xét dấu của \(f\) trên từng khoảng và cộng độ lớn của các tích phân tương ứng.
 
 > **CÔNG THỨC — Diện tích hình phẳng so với trục Ox.** Nếu \(f\) liên tục trên \([a,b]\) thì diện tích hình phẳng giới hạn bởi đồ thị, trục \(Ox\) và các đường \(x=a,x=b\) là \(\displaystyle S=\int_a^b|f(x)|\,dx\). Nếu \(f\) đổi dấu, chia đoạn ở các nghiệm trước khi tính; không lấy \(\left|\int_a^b f(x)\,dx\right|\) thay thế nói chung.
 
- Nếu f đổi dấu, chia tại tất cả nghiệm trong đoạn và đổi dấu tích phân tương ứng; nếu f không âm xuyên đoạn, không cần chia. Diện tích luôn ≥0 và có đơn vị²; không dùng |∫f| trừ khi f giữ dấu.
+ Nếu hàm đổi dấu tại hữu hạn điểm, ta chia đoạn tại các điểm đổi dấu và lấy dấu thích hợp cho từng tích phân. Nếu hàm giữ dấu trên toàn đoạn thì không cần chia. Diện tích luôn không âm; không thay \(\int_a^b |f(x)|\,\mathrm dx\) bằng \(\left|\int_a^b f(x)\,\mathrm dx\right|\) khi chưa kiểm dấu.
 
-Chẳng hạn, f(x)=x trên [−2,2]: tích phân có dấu0, nhưng S=\(\int_{-2}^{0} (-x)\,\mathrm dx\)+\(\int_{0}^{2} x\,\mathrm dx\)=2+2=4. Chọn mốc x=0 vì đường cắt Ox ở đó.
+Chẳng hạn, \(f(x)=x\) trên \([-2;2]\): tích phân có dấu bằng 0, nhưng \(S=\int_{-2}^0(-x)\,\mathrm dx+\int_0^2 x\,\mathrm dx=2+2=4\). Ta chọn mốc \(x=0\) vì đồ thị cắt \(Ox\) tại đó.
 
 **Ví dụ**
 
-**Đề bài:** Với y=x²−1 trên [−2,2], tính tích phân có dấu và diện tích giữa đồ thị với Ox.
+**Đề bài:** Với \(y=x^2-1\) trên \([-2;2]\), tính tích phân có dấu và diện tích giữa đồ thị với \(Ox\).
 
-**Lời giải:** Hàm đổi dấu ở x=−1 và x=1. Tích phân có dấu \(\int_{-2}^{2} (x^{2}-1)\,\mathrm dx\)=[x³/3−x]₋₂²=4/3. Diện tích: hai mảnh ngoài mỗi mảnh \(\int_{1}^{2} (x^{2}-1)\,\mathrm dx\)=4/3 và mảnh giữa \(\int_{-1}^{1} (1-x^{2})\,\mathrm dx\)=4/3, nên S=4. Không lấy |∫f| làm diện tích.
+**Lời giải:** Hàm đổi dấu tại \(x=-1\) và \(x=1\). Tích phân có dấu là \(\int_{-2}^2(x^2-1)\,\mathrm dx=\left[\frac{x^3}3-x\right]_{-2}^2=\frac43\). Do tính đối xứng, hai mảnh ngoài mỗi mảnh có diện tích \(\int_1^2(x^2-1)\,\mathrm dx=\frac43\); mảnh giữa có diện tích \(\int_{-1}^1(1-x^2)\,\mathrm dx=\frac43\). Vậy \(S=3\cdot\frac43=4\).
 
 **Vận dụng** Tính diện tích hình phẳng giữa \(y=2x-2\) và trục hoành trên \([0;3]\). Tự tìm mốc chia đoạn.
 
