@@ -50,23 +50,23 @@ body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-
 }
 
 /* Golden SGK Knowledge disclosure is blue-neutral, NEVER default neon green. */
-body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question{
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure]){
  background:#f8faff;border:1px solid #d9e4f4;border-radius:.62rem;box-shadow:none;color:#243753;overflow:hidden
 }
-body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary{
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure])>summary{
  list-style:none;position:relative;color:#263e73;background:transparent;border:0;border-radius:.62rem;
  font-weight:700;font-size:.88rem;line-height:1.45;padding:.7rem .85rem .7rem 2.15rem
 }
-body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary::before{
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure])>summary::before{
  -webkit-mask:none;mask:none;background:none;content:"▶";display:block;color:#263e73;
  width:.85rem;height:auto;font-size:.72rem;top:.76rem;left:.88rem;transform:none
 }
-body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary::after{display:none}
-body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question{
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure])>summary::after{display:none}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure]){
  background:#202e48;border-color:#465978;color:#dce6fc
 }
-body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary,
-body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary::before{color:#e2ebff}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure])>summary,
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure])>summary::before{color:#e2ebff}
 
 /* SGK/CĐ01 accepted horizontal 44px tab rail; keep identical on all W1 topics. */
 body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs{
@@ -128,10 +128,10 @@ body :is([data-topic-w1-module-tab],[data-topic-w1-subtab]){
 
 /* Exclusive W1 Knowledge disclosure override; public Practice and SGK
  * remain untouched, including their independent action contracts. */
-body [data-topic-w1-knowledge] details.question{background-color:#f8faff!important;border-color:#d9e4f4!important;color:#243753!important}
-body [data-topic-w1-knowledge] details.question>summary{background-color:transparent!important;color:#263e73!important}
-body[data-md-color-scheme="slate"] [data-topic-w1-knowledge] details.question{background-color:#202e48!important;border-color:#465978!important;color:#dce6fc!important}
-body[data-md-color-scheme="slate"] [data-topic-w1-knowledge] details.question>summary{color:#e2ebff!important}
+body [data-topic-w1-knowledge] details.question:not([data-topic-sgk-disclosure]){background-color:#f8faff!important;border-color:#d9e4f4!important;color:#243753!important}
+body [data-topic-w1-knowledge] details.question:not([data-topic-sgk-disclosure])>summary{background-color:transparent!important;color:#263e73!important}
+body[data-md-color-scheme="slate"] [data-topic-w1-knowledge] details.question:not([data-topic-sgk-disclosure]){background-color:#202e48!important;border-color:#465978!important;color:#dce6fc!important}
+body[data-md-color-scheme="slate"] [data-topic-w1-knowledge] details.question:not([data-topic-sgk-disclosure])>summary{color:#e2ebff!important}
 
 /* Owner P2: horizontal Golden tabs and distinct 3+1 boxes. */
 body .md-typeset.topic-w1-knowledge .topic01-knowledge-layout nav.thpt-r4-knowledge-tabs{
@@ -152,15 +152,15 @@ body[data-md-color-scheme="slate"] .md-typeset.topic-w1-knowledge .topic01-knowl
  background:#3457bd!important;border-color:#5976d9!important;color:white!important
 }
 /* Golden CĐ01 does not put a container around Vận dụng; keep its existing
-   p + prompt + details.question in the normal white Knowledge panel. */
+   p + prompt + details.question:not([data-topic-sgk-disclosure]) in the normal white Knowledge panel. */
 body .topic-w1-knowledge [data-topic-w1-callout]{margin:14px 0}
-body .topic-w1-knowledge details.question>summary::before{
+body .topic-w1-knowledge details.question:not([data-topic-sgk-disclosure])>summary::before{
  content:"▶"!important;-webkit-mask:none!important;mask:none!important;
  background:none!important;color:#263e73!important;border:none!important;
  width:.85rem!important;height:auto!important;font-size:.72rem!important
 }
-body .topic-w1-knowledge details.question>summary::after{display:none!important}
-body[data-md-color-scheme="slate"] .topic-w1-knowledge details.question>summary::before{color:#e2ebff!important}
+body .topic-w1-knowledge details.question:not([data-topic-sgk-disclosure])>summary::after{display:none!important}
+body[data-md-color-scheme="slate"] .topic-w1-knowledge details.question:not([data-topic-sgk-disclosure])>summary::before{color:#e2ebff!important}
 .topic-w1-practice-dialog .topic-w1-stem-label,.topic-w1-selfcheck .topic-w1-stem-label{margin:12px 0 6px;font-size:.9rem;color:#263e73}
 body[data-md-color-scheme="slate"] :is(.topic-w1-practice-dialog,.topic-w1-selfcheck) .topic-w1-stem-label{color:#e2ebff}
 
@@ -170,10 +170,10 @@ body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge{font-size:.8rem;line
 body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel :is(p,li){
  font-size:inherit;line-height:1.79;overflow-wrap:break-word
 }
-body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question{
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure]){
  margin:.7rem 0 1rem
 }
-body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary{
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure])>summary{
  font-size:.88rem;font-weight:700;line-height:1.45;padding:.7rem .85rem .7rem 2.15rem
 }
 
@@ -186,10 +186,10 @@ body [data-topic-w1-knowledge] :is([data-topic-w1-module-tab],[data-topic-w1-sub
 body [data-topic-w1-knowledge] .thpt-r4-knowledge-content-panel :is(p,li){
  line-height:1.79!important
 }
-body [data-topic-w1-knowledge] .thpt-r4-knowledge-content-panel details.question{
+body [data-topic-w1-knowledge] .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure]){
  margin:.7rem 0 1rem!important;border-radius:.62rem!important
 }
-body [data-topic-w1-knowledge] .thpt-r4-knowledge-content-panel details.question>summary{
+body [data-topic-w1-knowledge] .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure])>summary{
  font-size:.88rem!important;line-height:1.45!important;
  padding:.7rem .85rem .7rem 2.15rem!important
 }

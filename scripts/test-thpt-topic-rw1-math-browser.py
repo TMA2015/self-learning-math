@@ -175,6 +175,116 @@ def tab_check(button,width):
     assert abs(info["height"]-44)<=1 and info["font"]==("14px" if width<=640 else "15px"),info
     assert info["scroll"]<=info["client"]+2,("clipped tab",info)
 
+if "--disclosures-only" in sys.argv:
+    # TOPIC_SGK_DISCLOSURE_ONLY: compare actual component computed style
+    # against approved SGK B14, and inspect six representative Topic routes.
+    cases={"01":11,"03":12,"06":16,"13":16,"17":13,"22":13}
+    style_js="""el => {
+      const props=['fontSize','fontWeight','lineHeight','color','backgroundColor','borderTopColor','borderTopWidth','borderRadius','boxShadow','paddingTop','paddingRight','paddingBottom','paddingLeft','marginTop','marginBottom','minHeight'];
+      const read=(e,pseudo,keys=props)=>Object.fromEntries(keys.map(k=>[k,getComputedStyle(e,pseudo)[k]]));
+      const summary=el.querySelector(':scope > summary');
+      const prose=el.querySelector('p,li');
+      return {box:read(el),summary:read(summary),marker:read(summary,'::before',['content','color','fontSize','width','top','left','transform']),prose:prose?read(prose,null,['fontSize','lineHeight']):null};
+    }"""
+    with sync_playwright() as pw:
+        for engine in ("chromium","webkit"):
+            browser=getattr(pw,engine).launch(headless=True)
+            for width in (390,1440):
+                page=browser.new_page(viewport={"width":width,"height":850})
+                sgk=BASE.replace("chuyen-de/","sgk/chuong-v/bai-14/")
+                page.goto(sgk,wait_until="domcontentloaded")
+                expect(page.locator(".md-typeset.thpt-g10-chv-golden")).to_have_count(1,timeout=20000)
+                sgk_answer=page.locator('.tabbed-block details.question').filter(has=page.locator('summary',has_text=re.compile(r"^Đối chiếu$"))).first
+                sgk_tip=page.locator('.tabbed-block details.tip').filter(has=page.locator('summary',has_text=re.compile(r"^Kiểm lỗi$"))).first
+                assert sgk_answer.count() and sgk_tip.count(),"SGK reference missing"
+                for theme in ("default","slate"):
+                    page.locator("body").evaluate("(e,t)=>e.setAttribute('data-md-color-scheme',t)",theme)
+                    reference={}
+                    for kind,el in (("answer",sgk_answer),("mistake",sgk_tip)):
+                        el.evaluate("e=>e.open=false")
+                        closed=el.evaluate(style_js)
+                        el.evaluate("e=>e.open=true")
+                        opened=el.evaluate(style_js)
+                        reference[kind]=(closed,opened)
+                    for topic,number in cases.items():
+                        tab=browser.new_page(viewport={"width":width,"height":850})
+                        tab.goto(BASE+"cd"+topic+"/kien-thuc/",wait_until="domcontentloaded")
+                        expect(tab.locator(".topic01-knowledge-layout")).to_be_visible(timeout=20000)
+                        tab.locator("body").evaluate("(e,t)=>e.setAttribute('data-md-color-scheme',t)",theme)
+                        answers=tab.locator('details[data-topic-sgk-disclosure="answer"]')
+                        tips=tab.locator('details[data-topic-sgk-disclosure="mistake"]')
+                        expect(answers).to_have_count(number)
+                        expect(tips).to_have_count(number)
+                        assert answers.evaluate_all("els=>els.every(e=>!e.open&&e.classList.contains('question')&&e.nextElementSibling?.matches('details.tip[data-topic-sgk-disclosure=mistake]'))")
+                        assert tips.evaluate_all("els=>els.every(e=>!e.open&&e.querySelector(':scope > summary').textContent==='Kiểm lỗi'&&e.children.length>1)")
+                        # A disclosure can belong to a non-default Knowledge subtab.
+                        # Activate its real learner-facing tabs in outer-to-inner order;
+                        # never force-click a hidden control or manipulate panel.hidden.
+                        answer=answers.first
+                        panel_ids=answer.evaluate("""e=>[
+                          e.closest('.thpt-r4-knowledge-module-panel')?.id,
+                          e.closest('.thpt-r4-knowledge-content-panel')?.id
+                        ].filter(Boolean)""")
+                        assert panel_ids,(topic,"disclosure outside Knowledge panels")
+                        for panel_id in panel_ids:
+                            button=tab.locator('[role="tab"][aria-controls="'+panel_id+'"]')
+                            expect(button).to_have_count(1)
+                            button.click()
+                            expect(button).to_have_attribute("aria-selected","true")
+                        tip=answer.locator('xpath=following-sibling::*[1]')
+                        expect(tip).to_have_attribute("data-topic-sgk-disclosure","mistake")
+                        # Log the actual ancestor geometry/cascade if navigation succeeded
+                        # but the native control remains hidden; do not waive visibility.
+                        for component in (answer,tip):
+                            try:
+                                expect(component.locator("summary")).to_be_visible()
+                            except AssertionError:
+                                diagnostic=component.locator("summary").evaluate("""e=>{
+                                  const rules=[];
+                                  function scan(list,node){
+                                    for(const r of list){
+                                      if(r.conditionText && r instanceof CSSMediaRule && !matchMedia(r.conditionText).matches)continue;
+                                      if(r.cssRules){scan(r.cssRules,node);continue}
+                                      if(!r.selectorText||!r.style)continue;
+                                      try{if(node.matches(r.selectorText)&&['display','visibility','content-visibility','height','max-height','position'].some(k=>r.style.getPropertyValue(k)))rules.push({node:node.tagName+'.'+node.className,selector:r.selectorText,css:r.style.cssText})}catch{}
+                                    }
+                                  }
+                                  const chain=[];
+                                  for(let n=e;n;n=n.parentElement){
+                                    const c=getComputedStyle(n),b=n.getBoundingClientRect();
+                                    chain.push({tag:n.tagName,id:n.id,cls:n.className,hidden:n.hidden,open:n.open,inline:n.getAttribute('style'),display:c.display,visibility:c.visibility,contentVisibility:c.contentVisibility,position:c.position,rect:[b.x,b.y,b.width,b.height]});
+                                    if(c.display==='none'||c.visibility!=='visible'||!b.height||n.classList.contains('topic-sgk-disclosure-pair'))for(const sheet of document.styleSheets){try{scan(sheet.cssRules,n)}catch{}}
+                                  }
+                                  return {chain,rules:rules.slice(-80),root:document.documentElement.className};
+                                }""")
+                                print("DISCLOSURE_VISIBILITY_HOLD",topic,engine,width,theme,panel_ids,json.dumps(diagnostic,ensure_ascii=False),flush=True)
+                                raise
+                        for kind,el in (("answer",answer),("mistake",tip)):
+                            closed=el.evaluate(style_js)
+                            el.locator("summary").click()
+                            expect(el).to_have_attribute("open","")
+                            opened=el.evaluate(style_js)
+                            for state,a,b in (("closed",closed,reference[kind][0]),("opened",opened,reference[kind][1])):
+                                for k in ("box","summary","marker"):
+                                    # Material open summary negative margins derive from the same border/padding.
+                                    assert a[k]==b[k],(topic,engine,width,theme,kind,state,k,a[k],b[k])
+                            assert opened["prose"] and opened["prose"]["fontSize"]==el.evaluate("e=>getComputedStyle(e.closest('.thpt-r4-knowledge-content-panel')).fontSize"),(topic,kind,opened)
+                            el.locator("summary").click()
+                            assert not el.evaluate("e=>e.open")
+                        # Independent toggles: neither reveal must open the other.
+                        answer.locator("summary").click()
+                        assert not tip.evaluate("e=>e.open")
+                        tip.locator("summary").click()
+                        assert answer.evaluate("e=>e.open") and tip.evaluate("e=>e.open")
+                        answer.locator("summary").click()
+                        assert tip.evaluate("e=>e.open")
+                        tab.close()
+                        print(f"PASS Topic/SGK disclosures CĐ{topic} {engine} {width} {theme}: {number} pairs",flush=True)
+                page.close()
+            browser.close()
+    server.shutdown()
+    sys.exit(0)
+
 if "--tabs-only" in sys.argv:
     # RW3_TAB_SCOPE_HOLD: check labels and sampled navigation only.
     expected_labels={}

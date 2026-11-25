@@ -696,13 +696,36 @@ function isExactMenu6Plus1(files){
 function proveMenu6Plus1(){
  const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"});
  const base=process.env.BASE_SHA;
- assert.equal(base,"693409fb079e740c63480b1cb16ac80e9a5f0625","Menu base is not the exact published snapshot");
+ assert.equal(base,"7add09ad572074fa02f7ff75a8059400e327636e","Menu base is not the exact published snapshot");
  assert(isExactMenu6Plus1(git("diff","--no-renames","--name-only",base,"HEAD").trim().split("\n")),"Menu exact scope HOLD");
  const js="docs/assets/javascripts/thpt-r4-preview.js",css="docs/assets/stylesheets/thpt-r4-preview.css";
  const outside=s=>{const a=s.indexOf(" function initTHPTLauncher(){"),b=s.indexOf(" function initQuadraticPlot(){",a);assert(a>=0&&b>a);return s.slice(0,a)+s.slice(b);};
  assert.equal(outside(fs.readFileSync(js,"utf8")),outside(git("show",base+":"+js)),"Non-menu runtime changed");
  assert(fs.readFileSync(css,"utf8").startsWith(git("show",base+":"+css)),"Existing CSS changed");
  console.log("PASS menu 6+1 only, existing THCS, content, math, assessment and CSS unchanged");
+}
+const TOPIC_DISCLOSURE_FILES=new Set(["docs/assets/javascripts/math-details-v1.js","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml","docs/assets/stylesheets/thpt-topic01-release-v1.css","docs/assets/stylesheets/thpt-topic-w1-golden-v1.css",".github/workflows/thpt-topic01-source-locked-release-qa.yml",".github/workflows/thpt-topic-w1-golden-release-qa.yml",".github/workflows/thpt-topic-w2-golden-release-qa.yml"]);
+function isExactTopicDisclosures(files){
+ const crypto=require("node:crypto"),blob=p=>{const b=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
+ return files.length===TOPIC_DISCLOSURE_FILES.size&&new Set(files).size===files.length&&files.every(f=>TOPIC_DISCLOSURE_FILES.has(f))&&
+  [["docs/assets/javascripts/math-details-v1.js","5db3b192527694119596bbe3e3eb46a8fce35d89"],["docs/assets/stylesheets/thpt-topic01-release-v1.css","32b66dcfd16dc778490f0560b90ae54a62f0fb7b"],["docs/assets/stylesheets/thpt-topic-w1-golden-v1.css","81cf00277e9db1e481f78ddfe00fbdb4eebaaefa"]].every(([p,sha])=>blob(p)===sha)&&fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8").includes("TOPIC_SGK_DISCLOSURE_ONLY");
+}
+function proveTopicDisclosures(){
+ const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"});
+ const base=process.env.BASE_SHA;
+ assert(/^[0-9a-f]{40}$/.test(base||""),"Actual base required");
+ assert(isExactTopicDisclosures(git("diff","--no-renames","--name-only",base,"HEAD").trim().split("\n")),"Disclosure scope HOLD");
+ const helper="docs/assets/javascripts/math-details-v1.js";
+ const old=git("show",base+":"+helper),now=fs.readFileSync(helper,"utf8");
+ const restore=now.replace(/ \/\/ OWNER: use the same two native disclosures[\s\S]*?(?= function prepare\(root\)\{)/,"").replace("  root.querySelectorAll(\"details\").forEach(splitSGKDisclosure);\n","");
+ assert.equal(restore,old,"Math/SGK logic changed outside the new disclosure split");
+ const css="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css";
+ assert.equal(fs.readFileSync(css,"utf8"),git("show",base+":"+css),"SGK stylesheet must be byte-identical");
+ for(const p of ["docs/assets/stylesheets/thpt-topic01-release-v1.css","docs/assets/stylesheets/thpt-topic-w1-golden-v1.css"]){
+  const prior=fs.readFileSync(p,"utf8").replaceAll(":not([data-topic-sgk-disclosure])","").replace(/\n\/\* Native SGK disclosures only\.[\s\S]*$/,"");
+  assert.equal(prior,git("show",base+":"+p),"Unrelated Topic CSS changed");
+ }
+ console.log("PASS exact disclosure-only scope: SGK declarations and all math code unchanged; no source/assessment edits");
 }
 // Exact governance-only files: other learner/runtime changes remain FULL.
 const MATH_NOTATION_GOVERNANCE=new Set(["AGENTS.md","prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md","prototypes/thpt/SGK_11_12_AUTHORING_CHECKLIST_OWNER_RESET_20261122.md","scripts/test-thpt-push-deploy-scope.cjs","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml"]);
@@ -715,6 +738,7 @@ function classify(paths,{manual=false,base=""}={}){
  if(files.length===MATH_NOTATION_GOVERNANCE.size&&new Set(files).size===files.length&&files.every(p=>MATH_NOTATION_GOVERNANCE.has(p)))
   return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"EXACT_MATH_NOTATION_GOVERNANCE_ONLY"};
  if(isExactMenu6Plus1(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_THPT_MENU_6_PLUS_1"};
+ if(isExactTopicDisclosures(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_SGK_DISCLOSURES"};
  if(isExactRW3Tabs(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_RW3_TAB_LABELS"};
  if(isExactSharedDeployRecovery(files,base))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1110_DEPLOY_RECOVERY_EXACT"};
  if(isExactSharedKnowledgeMath(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_EXACT_SHARED_KNOWLEDGE_MATH_RW2"};
@@ -905,6 +929,10 @@ function selfTest(){
  if(currentMenu)assert.equal(classify(menu6).reason,"OWNER_THPT_MENU_6_PLUS_1");
  assert.equal(classify([...menu6,"mkdocs.yml"]).impact,"FULL");
  assert.equal(classify(menu6,{manual:true}).impact,"FULL");
+ const topicDisclosures=[...TOPIC_DISCLOSURE_FILES];
+ if(fs.readFileSync("docs/assets/javascripts/math-details-v1.js","utf8").includes("function splitSGKDisclosure"))assert.equal(classify(topicDisclosures).reason,"OWNER_TOPIC_SGK_DISCLOSURES");
+ assert.equal(classify([...topicDisclosures,"mkdocs.yml"]).impact,"FULL");
+ assert.equal(classify(topicDisclosures,{manual:true}).impact,"FULL");
  const rw3Tabs=[...RW3_TAB_FILES];
  assert.equal(classify(rw3Tabs).reason,"OWNER_1055_RW3_TAB_LABELS");
  assert.equal(classify([...rw3Tabs,"mkdocs.yml"]).impact,"FULL");
@@ -1272,6 +1300,7 @@ function selfTest(){
 }
 if(require.main===module){
  if(process.argv.includes("--prove-menu-6-plus-1"))proveMenu6Plus1();
+ else if(process.argv.includes("--prove-topic-disclosures"))proveTopicDisclosures();
  else if(process.argv.includes("--prove-rw3-tabs"))proveRW3Tabs();
  else if(process.argv.includes("--prove-shared-recovery"))proveSharedDeployRecovery();
  else if(process.argv.includes("--self-test"))selfTest();
