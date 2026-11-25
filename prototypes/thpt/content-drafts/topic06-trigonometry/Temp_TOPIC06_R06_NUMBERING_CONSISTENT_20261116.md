@@ -30,15 +30,15 @@ Khi ghép hai lần quay liên tiếp từ \(Ou\) đến \(Ov\), rồi từ \(Ov
 
 Chẳng hạn, từ trục \(Ox\) quay đến \(Ou\) được \(60^\circ\), còn từ \(Ox\) quay đến \(Ov\) được \(150^\circ\), thì góc từ \(Ou\) đến \(Ov\) có các số đo \(150^\circ-60^\circ+360^\circ k=90^\circ+360^\circ k\). Hệ thức cho các góc cùng tia cuối; nếu bài hỏi số vòng quay thực tế, phải giữ số đo của chuyển động cụ thể.
 
-> **CÔNG THỨC — Đổi độ và radian.** Một vòng tròn ứng với \(360^\circ=2\pi\) radian. Vì vậy \(\alpha_{\mathrm{rad}}=\alpha_{\mathrm{độ}}\,\pi/180\); khi đổi ngược, nhân số radian với \(180/\pi\). Với góc có hướng, giữ nguyên dấu của phép quay. Hai góc chênh nhau \(2k\pi\) có cùng tia cuối nhưng không nhất thiết cùng số vòng quay. Khi sử dụng ký hiệu \(\operatorname{sđ}(Ou,Ov)\), cần biết đang tính theo độ hay radian để không trộn \(360^\circ\) với \(2\pi\).
+> **CÔNG THỨC — Đổi độ và radian.** Một vòng tròn ứng với \(360^\circ=2\pi\) radian. Vì vậy \(\alpha_{\mathrm{rad}}=\alpha_{\mathrm{độ}}\cdot\frac{\pi}{180}\); khi đổi ngược, nhân số radian với \(\frac{180}{\pi}\). Với góc có hướng, giữ nguyên dấu của phép quay. Hai góc chênh nhau \(2k\pi\) có cùng tia cuối nhưng không nhất thiết cùng số vòng quay. Khi sử dụng ký hiệu \(\operatorname{sđ}(Ou,Ov)\), cần biết đang tính theo độ hay radian để không trộn \(360^\circ\) với \(2\pi\).
 
-Chẳng hạn, quay \(-450^\circ\) nghĩa là quay một vòng và thêm \(90^\circ\) theo chiều âm. Đổi sang radian: \(-450\cdot\pi/180=-5\pi/2\). Điểm cuối của góc này trùng điểm cuối \(-\pi/2\), nhưng phép quay đầu tiên thực hiện thêm một vòng. Vì vậy khi gặp yêu cầu tính độ dài cung hoặc số vòng, không thể tùy ý thay mọi góc bằng góc cùng tia cuối nếu mất thông tin về chuyển động.
+Chẳng hạn, quay \(-450^\circ\) nghĩa là quay một vòng và thêm \(90^\circ\) theo chiều âm. Đổi sang radian: \(-450\cdot\frac{\pi}{180}=-\frac{5\pi}{2}\). Điểm cuối của góc này trùng điểm cuối \(-\frac{\pi}{2}\), nhưng phép quay đầu tiên thực hiện thêm một vòng. Vì vậy khi gặp yêu cầu tính độ dài cung hoặc số vòng, không thể tùy ý thay mọi góc bằng góc cùng tia cuối nếu mất thông tin về chuyển động.
 
 **Ví dụ**
 
 **Đề bài.** Quay \(585^\circ\) ngược chiều kim đồng hồ. Đổi sang radian và tìm góc cùng tia cuối trong \([0;2\pi)\).
 
-**Lời giải.** \(585^\circ=585\pi/180=13\pi/4\). Trừ \(2\pi\) được \(5\pi/4\). Tia cuối trùng nhau, nhưng góc \(13\pi/4\) ghi cả một vòng nhiều hơn góc đại diện; không bỏ số vòng nếu bài hỏi chuyển động.
+**Lời giải.** \(585\cdot\frac{\pi}{180}=\frac{13\pi}{4}\) radian. Trừ \(2\pi\) được \(\frac{5\pi}{4}\). Tia cuối trùng nhau, nhưng góc \(\frac{13\pi}{4}\) ghi cả một vòng nhiều hơn góc đại diện; không bỏ số vòng nếu bài hỏi chuyển động.
 
 **Vận dụng**
 
@@ -46,7 +46,7 @@ Chẳng hạn, quay \(-450^\circ\) nghĩa là quay một vòng và thêm \(90^\c
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(-150^\circ=-150\pi/180=-5\pi/6\) radian. Dấu âm cho biết chiều quay thuận kim đồng hồ. Nếu em làm mất dấu, hãy so vị trí cuối của \(+90^\circ\) và \(-90^\circ\) trên đường tròn.
+\(-150\cdot\frac{\pi}{180}=-\frac{5\pi}{6}\) radian. Dấu âm cho biết chiều quay thuận kim đồng hồ. Nếu em làm mất dấu, hãy so vị trí cuối của \(+90^\circ\) và \(-90^\circ\) trên đường tròn.
 
 **Kiểm lỗi**
 
@@ -60,34 +60,34 @@ Nếu em đổi độ sang radian nhưng bỏ dấu quay hoặc thay góc ban đ
 
 Dấu sin và cos khác nhau ở hai phía của trục Oy vì sao?
 
-Trên đường tròn đơn vị, dấu của sin và cos được đọc từ tọa độ. Làm sao biết dấu sin, cos trước khi tính giá trị chính xác? Ta đã biết đường tròn đơn vị, tọa độ (x,y). 
+Trên đường tròn đơn vị, dấu của sin và cos được đọc từ tọa độ. Làm sao biết dấu sin, cos trước khi tính giá trị chính xác? Ta đã biết đường tròn đơn vị, tọa độ \((x;y)\).
 
-> **ĐỊNH NGHĨA — Sin, côsin trên đường tròn đơn vị.** Với điểm cuối \(M=(x,y)\) ứng với góc lượng giác \(\alpha\) trên đường tròn đơn vị, \(\cos\alpha=x\), \(\sin\alpha=y\). Vì vậy các dấu phụ thuộc góc phần tư; \(\tan\alpha=\sin\alpha/\cos\alpha\) chỉ khi \(\cos\alpha\ne0\), còn \(\cot\alpha=\cos\alpha/\sin\alpha\) chỉ khi \(\sin\alpha\ne0\).
+> **ĐỊNH NGHĨA — Sin, côsin trên đường tròn đơn vị.** Với điểm cuối \(M=(x;y)\) ứng với góc lượng giác \(\alpha\) trên đường tròn đơn vị, \(\cos\alpha=x\), \(\sin\alpha=y\). Vì vậy các dấu phụ thuộc góc phần tư; \(\tan\alpha=\frac{\sin\alpha}{\cos\alpha}\) chỉ khi \(\cos\alpha\ne0\), còn \(\cot\alpha=\frac{\cos\alpha}{\sin\alpha}\) chỉ khi \(\sin\alpha\ne0\).
 
 
 
-Chẳng hạn, tại góc \(135^\circ\) (góc phần tư II) trên hình, \(\cos135^\circ=-\sqrt2/2\) là **hoành độ âm**, còn \(\sin135^\circ=\sqrt2/2\) là **tung độ dương**. Một ví dụ không cần góc đặc biệt: nếu \(\sin\alpha=4/5\) và \(\alpha\) ở phần tư II, thì \(\cos\alpha=-\sqrt{1-16/25}=-3/5\), \(\tan\alpha=-4/3\). Cả hai trường hợp đều phải chọn dấu từ góc phần tư trước khi lấy căn.
+Chẳng hạn, tại góc \(135^\circ\) (góc phần tư II) trên hình, \(\cos135^\circ=-\frac{\sqrt2}{2}\) là **hoành độ âm**, còn \(\sin135^\circ=\frac{\sqrt2}{2}\) là **tung độ dương**. Một ví dụ không cần góc đặc biệt: nếu \(\sin\alpha=\frac45\) và \(\alpha\) ở phần tư II, từ \(\cos^2\alpha+\sin^2\alpha=1\) suy ra \(\cos\alpha=-\sqrt{1-\frac{16}{25}}=-\frac35\), \(\tan\alpha=-\frac43\). Hệ thức bình phương xuất phát từ phương trình đường tròn đơn vị \(x^2+y^2=1\). Cả hai trường hợp đều phải chọn dấu từ góc phần tư trước khi lấy căn.
 
 ![Đường tròn đơn vị và dấu sin cos theo góc](../../visuals/THPT_TOPIC06_UNIT_CIRCLE_QUADRANTS_R01.svg)
 
-*Đọc hình:* Điểm \(M\) ở \(135^\circ\) có tọa độ \((-\sqrt2/2,\sqrt2/2)\). Hãy đọc dấu âm ở trục ngang và dấu dương ở trục đứng; chỉ sau đó mới gắn các giá trị \(\cos\), \(\sin\). Hình minh họa góc cụ thể, còn quy tắc đúng ở mọi góc phần tư.
+*Đọc hình:* Điểm \(M\) ở \(135^\circ\) có tọa độ \((-\frac{\sqrt2}{2};\frac{\sqrt2}{2})\). Hãy đọc dấu âm ở trục ngang và dấu dương ở trục đứng; chỉ sau đó mới gắn các giá trị \(\cos\), \(\sin\). Hình minh họa góc cụ thể, còn quy tắc đúng ở mọi góc phần tư.
 
 **Bảng giá trị lượng giác của các góc thường gặp** là kết quả từ tọa độ trên đường tròn và tam giác vuông đặc biệt. Khi cần tính góc khác, hãy giảm về góc cùng tia cuối và dùng đối xứng để chọn đúng dấu.
 
-| Góc | \(0\) | \(\pi/6\) | \(\pi/4\) | \(\pi/3\) | \(\pi/2\) |
+| Góc | \(0\) | \(\frac{\pi}{6}\) | \(\frac{\pi}{4}\) | \(\frac{\pi}{3}\) | \(\frac{\pi}{2}\) |
 |---|---:|---:|---:|---:|---:|
-| \(\sin\) | \(0\) | \(1/2\) | \(\sqrt2/2\) | \(\sqrt3/2\) | \(1\) |
-| \(\cos\) | \(1\) | \(\sqrt3/2\) | \(\sqrt2/2\) | \(1/2\) | \(0\) |
-| \(\tan\) | \(0\) | \(\sqrt3/3\) | \(1\) | \(\sqrt3\) | Không xác định |
-| \(\cot\) | Không xác định | \(\sqrt3\) | \(1\) | \(\sqrt3/3\) | \(0\) |
+| \(\sin\) | \(0\) | \(\frac12\) | \(\frac{\sqrt2}{2}\) | \(\frac{\sqrt3}{2}\) | \(1\) |
+| \(\cos\) | \(1\) | \(\frac{\sqrt3}{2}\) | \(\frac{\sqrt2}{2}\) | \(\frac12\) | \(0\) |
+| \(\tan\) | \(0\) | \(\frac{\sqrt3}{3}\) | \(1\) | \(\sqrt3\) | Không xác định |
+| \(\cot\) | Không xác định | \(\sqrt3\) | \(1\) | \(\frac{\sqrt3}{3}\) | \(0\) |
 
-Để dùng **máy tính cầm tay**, trước tiên chọn chế độ góc **DEG** khi số đo bằng độ hoặc **RAD** khi bằng radian. Sau đó dùng phím \(\sin,\cos,\tan\) (hoặc các phím nghịch đảo khi cần tìm góc). Ví dụ \(\sin30^\circ=1/2\) trong chế độ DEG, còn \(\sin(\pi/6)=1/2\) trong RAD; nếu chọn sai chế độ sẽ cho kết quả khác. Giá trị tìm bằng máy có thể là gần đúng; khi đề cần giá trị chính xác, ưu tiên bảng góc đặc biệt, công thức và biến đổi.
+Để dùng **máy tính cầm tay**, trước tiên chọn chế độ góc **DEG** khi số đo bằng độ hoặc **RAD** khi bằng radian. Sau đó dùng phím \(\sin,\cos,\tan\) (hoặc các phím nghịch đảo khi cần tìm góc). Ví dụ \(\sin30^\circ=\frac12\) trong chế độ DEG, còn \(\sin(\frac{\pi}{6})=\frac12\) trong RAD; nếu chọn sai chế độ sẽ cho kết quả khác. Giá trị tìm bằng máy có thể là gần đúng; khi đề cần giá trị chính xác, ưu tiên bảng góc đặc biệt, công thức và biến đổi.
 
 **Ví dụ**
 
-**Đề bài.** Biết \(\cos\alpha=-12/13\), góc \(\alpha\) thuộc phần tư II. Tính \(\sin\alpha,\tan\alpha\).
+**Đề bài.** Biết \(\cos\alpha=-\frac{12}{13}\), góc \(\alpha\) thuộc phần tư II. Tính \(\sin\alpha,\tan\alpha\).
 
-**Lời giải.** \(\sin^2\alpha=1-144/169=25/169\). Phần tư II sin dương nên \(\sin\alpha=5/13\); cos khác 0 nên \(\tan\alpha=-5/12\). Chọn dấu theo góc phần tư trước khi lấy căn.
+**Lời giải.** \(\sin^2\alpha=1-\frac{144}{169}=\frac{25}{169}\). Phần tư II sin dương nên \(\sin\alpha=\frac5{13}\); cos khác 0 nên \(\tan\alpha=-\frac5{12}\). Chọn dấu theo góc phần tư trước khi lấy căn.
 
 **Vận dụng**
 
@@ -115,7 +115,7 @@ Xét ví dụ: Bánh xe bán kính 7 cm quay \(-120^\circ\), tức \(-\frac{2\pi
 
 **Đề bài.** Một bánh xe bán kính \(9\) cm quay \(-240^\circ\). Tìm độ dời cung có hướng và quãng đường trên vành.
 
-**Lời giải.** \(-240^\circ=-4\pi/3\) rad. Độ dời \(d=r\theta=-12\pi\) cm, quãng đường \(s=r|\theta|=12\pi\) cm. Độ dài quãng đường phải không âm.
+**Lời giải.** \(-240^\circ\) tương ứng \(-\frac{4\pi}{3}\) radian. Độ dời \(d=r\theta=-12\pi\) cm, quãng đường \(s=r\lvert\theta\rvert=12\pi\) cm. Độ dài quãng đường phải không âm.
 
 **Vận dụng**
 
@@ -143,7 +143,7 @@ Khi nào các tỉ số tan/cot không được phép sử dụng?
 
 Có thể tìm một giá trị lượng giác từ các giá trị còn lại không? Ta bắt đầu từ định lí Pythagore trên đường tròn đơn vị: \(\cos^2 x+\sin^2 x=1\).
 
-> **TÍNH CHẤT — Hệ thức cơ bản và điều kiện.** Với mọi \(x\in\mathbb R\), \(\sin^2x+\cos^2x=1\). Khi \(\cos x\ne0\), \(1+\tan^2x=1/\cos^2x\); khi \(\sin x\ne0\), \(1+\cot^2x=1/\sin^2x\). Không dùng các hệ thức có mẫu bằng 0.
+> **TÍNH CHẤT — Hệ thức cơ bản và điều kiện.** Với mọi \(x\in\mathbb R\), \(\sin^2x+\cos^2x=1\). Chia hai vế cho \(\cos^2x\) khi \(\cos x\ne0\), ta được \(1+\tan^2x=\frac1{\cos^2x}\). Chia hai vế cho \(\sin^2x\) khi \(\sin x\ne0\), ta được \(1+\cot^2x=\frac1{\sin^2x}\). Không dùng các hệ thức có mẫu bằng 0.
 
  Không được chia cho sin hoặc cos tại nghiệm bằng 0.
 
@@ -151,9 +151,9 @@ Chẳng hạn, nếu \(\sin x=\frac35\) và \(x\) ở góc phần tư I: \(\cos 
 
 **Ví dụ**
 
-**Đề bài.** Biết \(\sin\alpha=-8/17\), \(\alpha\) ở phần tư IV. Tìm cos và tan.
+**Đề bài.** Biết \(\sin\alpha=-\frac8{17}\), \(\alpha\) ở phần tư IV. Tìm cos và tan.
 
-**Lời giải.** \(\cos^2\alpha=1-64/289=225/289\); cos dương ở phần tư IV nên \(\cos\alpha=15/17\). Vì cos khác 0, \(\tan\alpha=-8/15\). Không được chia cho cos tại góc mà cos bằng 0.
+**Lời giải.** \(\cos^2\alpha=1-\frac{64}{289}=\frac{225}{289}\); cos dương ở phần tư IV nên \(\cos\alpha=\frac{15}{17}\). Vì cos khác 0, \(\tan\alpha=-\frac8{15}\). Không được chia cho cos tại góc mà cos bằng 0.
 
 **Vận dụng**
 
@@ -181,9 +181,9 @@ Chẳng hạn, \(\alpha=\frac{\pi}{6}\); góc \(\frac{5\pi}{6}\) đối xứng q
 
 **Ví dụ**
 
-**Đề bài.** Từ góc \(\pi/4\), tính \(\sin(3\pi/4)\) và \(\cos(3\pi/4)\) bằng đối xứng.
+**Đề bài.** Từ góc \(\frac{\pi}{4}\), tính \(\sin(\frac{3\pi}{4})\) và \(\cos(\frac{3\pi}{4})\) bằng đối xứng.
 
-**Lời giải.** Vì \(3\pi/4=\pi-\pi/4\), đối xứng qua Oy giữ tung độ, đổi dấu hoành độ. Suy ra \(\sin(3\pi/4)=\sqrt2/2\), \(\cos(3\pi/4)=-\sqrt2/2\).
+**Lời giải.** Vì \(\frac{3\pi}{4}=\pi-\frac{\pi}{4}\), đối xứng qua Oy giữ tung độ, đổi dấu hoành độ. Suy ra \(\sin(\frac{3\pi}{4})=\frac{\sqrt2}{2}\), \(\cos(\frac{3\pi}{4})=-\frac{\sqrt2}{2}\).
 
 **Vận dụng**
 
@@ -218,7 +218,7 @@ Vì sao \(\sin(u+v)\) không thể luôn bằng \(\sin u+\sin v\)?
 \tan(u-v)=\frac{\tan u-\tan v}{1+\tan u\,\tan v}.
 \]
 
-Các dạng phân thức này chỉ dùng khi \(\cos u\ne0,\cos v\ne0\), đồng thời mẫu tương ứng khác \(0\) (tức \(\cos(u\pm v)\ne0\)); không triệt mẫu hay lấy tang của góc chưa xác định. Chẳng hạn \(\tan(\pi/3-\pi/4)=(\sqrt3-1)/(1+\sqrt3)=2-\sqrt3\), còn \(\tan(\pi/4+\pi/4)\) không xác định dù \(\tan(\pi/4)\) tồn tại.
+Các dạng phân thức này chỉ dùng khi \(\cos u\ne0,\cos v\ne0\), đồng thời mẫu tương ứng khác \(0\) (tức \(\cos(u\pm v)\ne0\)); không triệt mẫu hay lấy tang của góc chưa xác định. Chẳng hạn \(\tan(\frac{\pi}{3}-\frac{\pi}{4})=\frac{\sqrt3-1}{1+\sqrt3}=2-\sqrt3\), còn \(\tan(\frac{\pi}{4}+\frac{\pi}{4})\) không xác định dù \(\tan(\frac{\pi}{4})\) tồn tại.
 
 Chẳng hạn, \(\cos15^\circ=\cos(45^\circ-30^\circ)=\frac{\sqrt6+\sqrt2}{4}\). Chọn phép trừ vì 15° không có trong bảng cơ bản nhưng 45°, 30° thì có.
 
@@ -226,7 +226,7 @@ Chẳng hạn, \(\cos15^\circ=\cos(45^\circ-30^\circ)=\frac{\sqrt6+\sqrt2}{4}\).
 
 **Đề bài.** Tính chính xác \(\cos105^\circ\) bằng công thức cộng.
 
-**Lời giải.** Viết \(105^\circ=60^\circ+45^\circ\). \(\cos105^\circ=\cos60^\circ\cos45^\circ-\sin60^\circ\sin45^\circ=(\sqrt2-\sqrt6)/4\). Dấu âm hợp lý vì góc ở phần tư II.
+**Lời giải.** Viết \(105^\circ=60^\circ+45^\circ\). \(\cos105^\circ=\cos60^\circ\cos45^\circ-\sin60^\circ\sin45^\circ=\frac{\sqrt2-\sqrt6}{4}\). Dấu âm hợp lý vì góc ở phần tư II.
 
 **Vận dụng**
 
@@ -285,9 +285,9 @@ Chẳng hạn, \(\sin 3x+\sin x=2\sin 2x\cos x\): đặt \(A=3x,\ B=x\) rồi d�
 
 **Ví dụ**
 
-**Đề bài.** Cho \(\cos x=3/5\), \(\sin x=4/5\). Tính \(\sin2x,\cos2x\).
+**Đề bài.** Cho \(\cos x=\frac35\), \(\sin x=\frac45\). Tính \(\sin(2x),\cos(2x)\).
 
-**Lời giải.** \(\sin2x=2(3/5)(4/5)=24/25\). \(\cos2x=(3/5)^2-(4/5)^2=-7/25\). Kiểm \((24/25)^2+(-7/25)^2=1\).
+**Lời giải.** \(\sin(2x)=2\cdot\frac35\cdot\frac45=\frac{24}{25}\). \(\cos(2x)=(\frac35)^2-(\frac45)^2=-\frac7{25}\). Kiểm \((\frac{24}{25})^2+(-\frac7{25})^2=1\).
 
 **Vận dụng**
 
@@ -311,7 +311,7 @@ Khi góc thay đổi liên tục, sin, cos, tan và cot trở thành hàm số c
 
 ### 3.1. Miền xác định của biểu thức lượng giác
 
-Khi biểu thức có căn và tan, phải giao những miền nào?
+Khi biểu thức có căn và mẫu chứa hàm lượng giác, phải giao những miền nào?
 
 > **KIẾN THỨC CẦN GHI NHỚ — Miền xác định của biểu thức lượng giác.** Vì sao không phải mọi hàm lượng giác đều có miền xác định \(\mathbb R\)? Ta sử dụng khái niệm hàm số và mẫu số khác 0. Sin, cos xác định trên \(\mathbb R\), nhận giá trị trong \([-1;1]\). \(\tan x\) không xác định tại \(x=\frac{\pi}{2}+k\pi\); \(\cot x\) không xác định tại \(x=k\pi\), với \(k\in\mathbb Z\). Với biểu thức ghép như \(\sqrt{2\sin x-1}\), phải thêm điều kiện \(2\sin x-1\ge0\). Nếu có đồng thời căn, phân thức, tang hoặc côtang thì lấy **giao tất cả điều kiện**, không chỉ kiểm một biểu thức.
 
@@ -321,7 +321,7 @@ Xét ví dụ: Tìm \(D\) của \(f(x)=\sqrt{2\sin x-1}\): cần \(\sin x\ge\fra
 
 **Đề bài.** Tìm miền xác định của \(f(x)=\sqrt{1-2\cos x}\).
 
-**Lời giải.** Cần \(1-2\cos x\ge0\), tức \(\cos x\le1/2\). Trong mỗi vòng điều này đúng trên \([\pi/3,5\pi/3]\); vậy \(D=\bigcup_{k\in\mathbb Z}[\pi/3+2k\pi,5\pi/3+2k\pi]\). Hai biên được nhận vì căn 0 có nghĩa.
+**Lời giải.** Cần \(1-2\cos x\ge0\), tức \(\cos x\le\frac12\). Trong mỗi vòng điều này đúng trên \([\frac{\pi}{3};\frac{5\pi}{3}]\); vậy \(D=\bigcup_{k\in\mathbb Z}[\frac{\pi}{3}+2k\pi;\frac{5\pi}{3}+2k\pi]\). Hai biên được nhận vì căn 0 có nghĩa.
 
 **Vận dụng**
 
@@ -348,12 +348,12 @@ Nếu chỉ kiểm điều kiện dưới căn, thử \(x=\frac{\pi}{2}\): căn 
 Hai điểm cùng độ cao đã đủ chứng minh chu kỳ chưa?
 
 > **TÍNH CHẤT — Chu kỳ cơ bản và đối xứng.** Chu kỳ và đối xứng giúp đọc hàm lượng giác trên cả miền, không chỉ vài điểm. Làm thế nào dự đoán khi nào một dạng sóng lặp lại? Ta bắt đầu từ hàm số trên miền xác định; giá trị sin, cos trên vòng tròn. Hàm \(f\) có chu kỳ \(T>0\) khi \(x\pm T\) đều thuộc miền nếu \(x\) thuộc miền và \(f(x+T)=f(x)\) với mọi \(x\) thuộc miền. Sin và cos có chu kỳ cơ bản \(2\pi\); tan và cot có chu kỳ cơ bản \(\pi\). Sin, tan, cot là **hàm lẻ** trên miền đối xứng tương ứng, còn cos là **hàm chẵn**; đổi biến và nhân hệ số có thể làm chu kỳ khác. Để đọc chiều biến thiên, ta xét **từng khoảng**, không suy từ một vài điểm có cùng tung độ:
-- \(\sin x\) tăng trên \([-\pi/2+2k\pi,\ \pi/2+2k\pi]\) và giảm trên \([\pi/2+2k\pi,\ 3\pi/2+2k\pi]\).
-- \(\cos x\) giảm trên \([2k\pi,\ \pi+2k\pi]\) và tăng trên \([\pi+2k\pi,\ 2\pi+2k\pi]\).
-- \(\tan x\) tăng trên mỗi khoảng \((-\pi/2+k\pi,\ \pi/2+k\pi)\).
-- \(\cot x\) giảm trên mỗi khoảng \((k\pi,\ (k+1)\pi)\), với \(k\in\mathbb Z\).
+- \(\sin x\) tăng trên \([-\frac{\pi}{2}+2k\pi;\frac{\pi}{2}+2k\pi]\) và giảm trên \([\frac{\pi}{2}+2k\pi;\frac{3\pi}{2}+2k\pi]\).
+- \(\cos x\) giảm trên \([2k\pi;\pi+2k\pi]\) và tăng trên \([\pi+2k\pi;2\pi+2k\pi]\).
+- \(\tan x\) tăng trên mỗi khoảng \((-\frac{\pi}{2}+k\pi;\frac{\pi}{2}+k\pi)\).
+- \(\cot x\) giảm trên mỗi khoảng \((k\pi;(k+1)\pi)\), với \(k\in\mathbb Z\).
 
-Đây là các khoảng đủ dài để thấy một nhánh tăng/giảm trọn vẹn; tại các điểm **tiệm cận của tan/cot**, hàm không xác định nên không được gộp hai nhánh thành một khoảng. Tập giá trị sin/cos là \([-1,1]\), còn tan/cot là \(\mathbb R\), bởi mỗi nhánh tan/cot đi từ âm vô hạn đến dương vô hạn hoặc ngược lại.
+Đây là các khoảng đủ dài để thấy một nhánh tăng/giảm trọn vẹn; tại các điểm **tiệm cận của tan/cot**, hàm không xác định nên không được gộp hai nhánh thành một khoảng. Tập giá trị sin/cos là \([-1;1]\), còn tan/cot là \(\mathbb R\), bởi mỗi nhánh tan/cot đi từ âm vô hạn đến dương vô hạn hoặc ngược lại.
 
 Chẳng hạn, \(y=\sin(3x)\) có chu kỳ cơ bản \(\frac{2\pi}{3}\) vì tăng \(x\) lên \(\frac{2\pi}{3}\) làm góc tăng \(2\pi\). Hàm \(y=\cos 2x+\sin 3x\) có chu kỳ \(2\pi\); hai thành phần có tần số khác nhau và chu kỳ chung phù hợp.
 
@@ -361,7 +361,7 @@ Chẳng hạn, \(y=\sin(3x)\) có chu kỳ cơ bản \(\frac{2\pi}{3}\) vì tăn
 
 **Đề bài.** Tìm chu kỳ cơ bản của \(f(x)=\sin(5x)\).
 
-**Lời giải.** Tăng \(x\) thêm \(2\pi/5\) làm đối số tăng \(2\pi\), nên lặp với mọi \(x\). Chu kỳ dương nhỏ nhất của sin theo đối số là \(2\pi\), vì thế \(5T=2\pi\) nhỏ nhất, tức \(T=2\pi/5\). Hai điểm có cùng tung độ chưa đủ chứng minh chu kỳ.
+**Lời giải.** Tăng \(x\) thêm \(\frac{2\pi}{5}\) làm đối số tăng \(2\pi\), nên lặp với mọi \(x\). Chu kỳ dương nhỏ nhất của sin theo đối số là \(2\pi\), vì thế \(5T=2\pi\) nhỏ nhất, tức \(T=\frac{2\pi}{5}\). Hai điểm có cùng tung độ chưa đủ chứng minh chu kỳ.
 
 **Vận dụng**
 
@@ -383,17 +383,17 @@ Biên độ khác dịch pha và trục giữa ra sao?
 
 Với sin và cos, dịch pha làm đổi vị trí đỉnh nhưng giữ tính tuần hoàn. Đồ thị giúp đọc điều gì ngoài một bảng giá trị? Cần nhớ mỗi điểm đồ thị là \((x;f(x))\); chuyển dịch ngang/đứng. Hàm \(y=A\sin(\omega x+\varphi)+d\) với \(A\ne0,\ \omega\ne0\) có biên độ \(\lvert A\rvert\), chu kỳ \(\frac{2\pi}{\lvert\omega\rvert}\), trục giữa \(y=d\) và tập giá trị \([d-\lvert A\rvert;d+\lvert A\rvert]\). Pha dịch ngang \(-\frac{\varphi}{\omega}\); không nhầm chiều dấu. Nếu \(\omega=0\), hàm hằng và không có chu kỳ cơ bản.
 
-> **PHƯƠNG PHÁP — Biên độ, pha và trục giữa.** Trước hết, hình bên dưới vẽ \(y=\sin x\) trên một chu kỳ \([0,2\pi]\): đi qua \((0,0)\), cực đại 1 ở \(x=\pi/2\), về 0 ở \(\pi\), cực tiểu −1 ở \(3\pi/2\), rồi về 0 ở \(2\pi\). Khi kết hợp các phép biến đổi, ví dụ \(y=-2\sin(3x-\pi/2)+1\) có biên độ 2, chu kỳ \(2\pi/3\), đường giữa \(y=1\), tập giá trị \([-1,3]\), dịch pha phải \(\pi/6\) trước khi lật và co giãn đứng. Hình gốc giải thích chu kỳ, **không phải hình của hàm đã biến đổi**.
+> **PHƯƠNG PHÁP — Biên độ, pha và trục giữa.** Trước hết, hình bên dưới vẽ \(y=\sin x\) trên một chu kỳ \([0;2\pi]\): đi qua \((0;0)\), cực đại 1 ở \(x=\frac{\pi}{2}\), về 0 ở \(\pi\), cực tiểu −1 ở \(\frac{3\pi}{2}\), rồi về 0 ở \(2\pi\). Khi kết hợp các phép biến đổi, ví dụ \(y=-2\sin(3x-\frac{\pi}{2})+1\) có biên độ 2, chu kỳ \(\frac{2\pi}{3}\), đường giữa \(y=1\), tập giá trị \([-1;3]\), dịch pha phải \(\frac{\pi}{6}\) trước khi lật và co giãn đứng. Hình gốc giải thích chu kỳ, **không phải hình của hàm đã biến đổi**.
 
 ![Đồ thị sin lặp sau một chu kỳ](../../visuals/THPT_TOPIC06_SINE_PERIOD_R01.svg)
 
-*Đọc hình:* Đồ thị đang vẽ \(y=\sin x\) trên \([0,2\pi]\), đánh dấu các mốc 0, \(\pi/2\), \(\pi\), \(3\pi/2\), \(2\pi\) với tung độ lần lượt 0,1,0,−1,0. Đó là chu kỳ gốc; khi học hàm \(\sin(3x-\pi/2)\), phải **tính lại** chu kỳ và pha chứ không đo thẳng trên hình này.
+*Đọc hình:* Đồ thị đang vẽ \(y=\sin x\) trên \([0;2\pi]\), đánh dấu các mốc 0, \(\frac{\pi}{2}\), \(\pi\), \(\frac{3\pi}{2}\), \(2\pi\) với tung độ lần lượt 0, 1, 0, −1, 0. Đó là chu kỳ gốc; khi học hàm \(\sin(3x-\frac{\pi}{2})\), phải **tính lại** chu kỳ và pha chứ không đo thẳng trên hình này.
 
 **Ví dụ**
 
-**Đề bài.** Với \(y=1+3\cos(2x+\pi/3)\), tìm biên độ, chu kỳ, trục giữa, tập giá trị và dịch pha.
+**Đề bài.** Với \(y=1+3\cos(2x+\frac{\pi}{3})\), tìm biên độ, chu kỳ, trục giữa, tập giá trị và dịch pha.
 
-**Lời giải.** Biên độ 3, chu kỳ \(\pi\), trục giữa \(y=1\), tập giá trị \([-2,4]\). Do \(2x+\pi/3=2(x+\pi/6)\), dịch pha trái \(\pi/6\) so với \(\cos2x\). Hình sin phía trên là đồ thị gốc. Hình dưới đây so sánh \(\cos(2x)\) với đúng hàm của ví dụ trên cùng hệ trục.
+**Lời giải.** Biên độ 3, chu kỳ \(\pi\), trục giữa \(y=1\), tập giá trị \([-2;4]\). Do \(2x+\frac{\pi}{3}=2(x+\frac{\pi}{6})\), dịch pha trái \(\frac{\pi}{6}\) so với \(\cos(2x)\). Hình sin phía trên là đồ thị gốc. Hình dưới đây so sánh \(\cos(2x)\) với đúng hàm của ví dụ trên cùng hệ trục.
 
 ![So sánh cos(2x) và 1+3cos(2x+π/3) trên cùng hệ trục](../../visuals/THPT_TOPIC06_COS_PHASE_COMPARISON_R01.svg)
 
@@ -419,7 +419,7 @@ Có thể nối hai nhánh tan qua tiệm cận không?
 
 Đồ thị tan và cot có điểm cấm, nên phải tách thành từng nhánh. Tại sao đồ thị tan không nối liền qua \(x=\frac{\pi}{2}\)? Để xác định điều đó, cần xét \(\tan x=\frac{\sin x}{\cos x}\), \(\cot x=\frac{\cos x}{\sin x}\). Tan có miền \(\mathbb R\setminus\left\{\frac{\pi}{2}+k\pi:k\in\mathbb Z\right\}\), chu kỳ \(\pi\) và tiệm cận đứng ở điểm loại. Cot có miền \(\mathbb R\setminus\{k\pi:k\in\mathbb Z\}\), chu kỳ \(\pi\) và tiệm cận đứng tại các điểm đó. **Mỗi nhánh tan đồng biến, mỗi nhánh cot nghịch biến** trên khoảng nằm giữa hai tiệm cận liên tiếp. Đồ thị chia nhánh, không nối qua tiệm cận.
 
-> **TÍNH CHẤT — Nhánh tan/cot và tiệm cận đứng.** Trên hình, \(y=\tan x\) không xác định tại \(x=\pm\pi/2\) (và nói chung \(\pi/2+k\pi\)), vì \(\cos x=0\). Những đường này là **tiệm cận đứng**, không phải điểm để nối các nhánh. Nếu thay đối số thành \(2x\), hàm \(y=\tan(2x)\) sẽ có điểm loại tại \(x=\pi/4+k\pi/2\) và chu kỳ cơ bản \(\pi/2\). Hình đang minh họa \(\tan x\), không vẽ phiên bản \(\tan(2x)\).
+> **TÍNH CHẤT — Nhánh tan/cot và tiệm cận đứng.** Trên hình, \(y=\tan x\) không xác định tại \(x=\pm\frac{\pi}{2}\) (và nói chung \(\frac{\pi}{2}+k\pi\)), vì \(\cos x=0\). Những đường này là **tiệm cận đứng**, không phải điểm để nối các nhánh. Nếu thay đối số thành \(2x\), hàm \(y=\tan(2x)\) sẽ có điểm loại tại \(x=\frac{\pi}{4}+\frac{k\pi}{2}\) và chu kỳ cơ bản \(\frac{\pi}{2}\). Hình đang minh họa \(\tan x\), không vẽ phiên bản \(\tan(2x)\).
 
 ![Đồ thị tan với tiệm cận đứng](../../visuals/THPT_TOPIC06_TAN_ASYMPTOTES_R01.svg)
 
@@ -427,9 +427,9 @@ Có thể nối hai nhánh tan qua tiệm cận không?
 
 **Ví dụ**
 
-**Đề bài.** Cho \(g(x)=\tan(x-\pi/4)\). Tìm miền xác định và chu kỳ.
+**Đề bài.** Cho \(g(x)=\tan(x-\frac{\pi}{4})\). Tìm miền xác định và chu kỳ.
 
-**Lời giải.** Cần \(\cos(x-\pi/4)\ne0\), tức \(x\ne3\pi/4+k\pi\), \(k\in\mathbb Z\). Chu kỳ cơ bản \(\pi\). Tiệm cận của \(\tan x\) trong hình chuyển sang phải \(\pi/4\), không nối nhánh qua tiệm cận.
+**Lời giải.** Cần \(\cos(x-\frac{\pi}{4})\ne0\), tức \(x\ne\frac{3\pi}{4}+k\pi\), \(k\in\mathbb Z\). Chu kỳ cơ bản \(\pi\). Tiệm cận của \(\tan x\) trong hình chuyển sang phải \(\frac{\pi}{4}\), không nối nhánh qua tiệm cận.
 
 **Vận dụng**
 
@@ -463,9 +463,9 @@ Chẳng hạn, \(\sin(2x)=\frac{\sqrt3}{2}\): \(2x=\frac{\pi}{3}+2k\pi\) hoặc 
 
 **Ví dụ**
 
-**Đề bài.** Giải \(\cos(2x)=\sqrt2/2\) trên \(\mathbb R\).
+**Đề bài.** Giải \(\cos(2x)=\frac{\sqrt2}{2}\) trên \(\mathbb R\).
 
-**Lời giải.** \(\cos\theta=\sqrt2/2\) khi \(\theta=\pm\pi/4+2k\pi\). Đặt \(\theta=2x\) và chia hai vế cho 2, được \(x=\pm\pi/8+k\pi\), \(k\in\mathbb Z\). Hai dấu cho hai họ; kiểm lại bằng \(\cos(\pm\pi/4+2k\pi)=\sqrt2/2\).
+**Lời giải.** \(\cos\theta=\frac{\sqrt2}{2}\) khi \(\theta=\pm\frac{\pi}{4}+2k\pi\). Đặt \(\theta=2x\) và chia hai vế cho 2, được \(x=\pm\frac{\pi}{8}+k\pi\), \(k\in\mathbb Z\). Hai dấu cho hai họ; kiểm lại bằng \(\cos(\pm\frac{\pi}{4}+2k\pi)=\frac{\sqrt2}{2}\).
 
 **Vận dụng**
 
@@ -493,7 +493,7 @@ Xét ví dụ: \(\tan\left(x+\frac{\pi}{4}\right)=-1\), suy ra \(x+\frac{\pi}{4}
 
 **Đề bài.** Giải \(\tan(3x)=\sqrt3\) trên \(\mathbb R\).
 
-**Lời giải.** Điều kiện \(\cos(3x)\ne0\). Từ \(\tan\theta=\sqrt3\) suy ra \(\theta=\pi/3+k\pi\), nên \(x=\pi/9+k\pi/3\), \(k\in\mathbb Z\). Tại mọi nghiệm \(\cos(3x)=\pm1/2\ne0\), các nghiệm đều hợp lệ.
+**Lời giải.** Điều kiện \(\cos(3x)\ne0\). Từ \(\tan\theta=\sqrt3\) suy ra \(\theta=\frac{\pi}{3}+k\pi\), nên \(x=\frac{\pi}{9}+\frac{k\pi}{3}\), \(k\in\mathbb Z\). Tại mọi nghiệm \(\cos(3x)=\pm\frac12\ne0\), các nghiệm đều hợp lệ.
 
 **Vận dụng**
 
@@ -521,7 +521,7 @@ Chẳng hạn, \(\sin x(2\cos x-1)=0\) suy ra \(\sin x=0\) hoặc \(\cos x=\frac
 
 **Đề bài.** Giải \(2\sin x\cos x=\cos x\) mà không chia cho cos.
 
-**Lời giải.** \(\cos x(2\sin x-1)=0\). Do đó \(x=\pi/2+k\pi\) hoặc \(x=\pi/6+2k\pi\) hoặc \(x=5\pi/6+2k\pi\), \(k\in\mathbb Z\). Chia cho cos sẽ làm mất cả họ đầu.
+**Lời giải.** \(\cos x(2\sin x-1)=0\). Do đó \(x=\frac{\pi}{2}+k\pi\) hoặc \(x=\frac{\pi}{6}+2k\pi\) hoặc \(x=\frac{5\pi}{6}+2k\pi\), \(k\in\mathbb Z\). Chia cho cos sẽ làm mất cả họ đầu.
 
 **Vận dụng**
 
@@ -547,9 +547,9 @@ Chẳng hạn, \(2\sin^2 x-3\sin x+1=0\Rightarrow (2\sin x-1)(\sin x-1)=0\). V�
 
 **Ví dụ**
 
-**Đề bài.** Giải \(\cos2x=1/2\) trên \([0,2\pi)\).
+**Đề bài.** Giải \(\cos(2x)=\frac12\) trên \([0;2\pi)\).
 
-**Lời giải.** Trên toàn trục \(x=\pm\pi/6+k\pi\). Chọn \(0\le x<2\pi\) cho bốn nghiệm \(\pi/6,5\pi/6,7\pi/6,11\pi/6\). Không tự thêm điểm mút bị loại.
+**Lời giải.** Trên toàn trục \(x=\pm\frac{\pi}{6}+k\pi\). Với họ dấu cộng, điều kiện \(0\le\frac{\pi}{6}+k\pi<2\pi\) cho \(k=0,1\); với họ dấu trừ, \(0\le-\frac{\pi}{6}+k\pi<2\pi\) cho \(k=1,2\). Vậy bốn nghiệm là \(\frac{\pi}{6},\frac{5\pi}{6},\frac{7\pi}{6},\frac{11\pi}{6}\). Không tự thêm điểm mút bị loại.
 
 **Vận dụng**
 
@@ -575,17 +575,17 @@ Chẳng hạn, mực nước giả định \(h(t)=3+1{,}2\cos\left(\frac{\pi t}{
 
 **Ví dụ**
 
-**Đề bài.** Mô hình \(h(t)=2+0{,}5\cos(\pi t/4)\) m, \(0\le t\le12\) giờ. Tính chu kỳ, cực đại/cực tiểu trong miền.
+**Đề bài.** Mô hình \(h(t)=2+0{,}5\cos(\frac{\pi t}{4})\) m, \(0\le t\le12\) giờ. Tính chu kỳ, cực đại/cực tiểu trong miền.
 
-**Lời giải.** Chu kỳ \(T=2\pi/(\pi/4)=8\) giờ. Cực đại \(2{,}5\) m tại \(t=0,8\); cực tiểu \(1{,}5\) m tại \(t=4,12\). Những thời điểm ngoài miền không được nhận; đây là mô hình giả định.
+**Lời giải.** Chu kỳ \(T=\frac{2\pi}{\frac{\pi}{4}}=8\) giờ. Cực đại \(2{,}5\) m tại \(t=0,8\); cực tiểu \(1{,}5\) m tại \(t=4,12\). Những thời điểm ngoài miền không được nhận; đây là mô hình giả định.
 
 **Vận dụng**
 
-Một mô hình giả định mô tả độ cao \(h(t)=4+0{,}8\sin(\pi t/8)\) mét trong khoảng \(0\le t\le16\) giờ. Tìm chu kỳ của hàm theo công thức, tính \(h(4)\), và cho biết có được dùng mô hình này để khẳng định độ cao tại \(t=20\) giờ không.
+Một mô hình giả định mô tả độ cao \(h(t)=4+0{,}8\sin(\frac{\pi t}{8})\) mét trong khoảng \(0\le t\le16\) giờ. Tìm chu kỳ của hàm theo công thức, tính \(h(4)\), và cho biết có được dùng mô hình này để khẳng định độ cao tại \(t=20\) giờ không.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Với \(\omega=\pi/8\ne0\), chu kỳ của hàm sin là \(T=2\pi/(\pi/8)=16\) giờ. Tại \(t=4\), góc bằng \(\pi/2\), do đó \(h(4)=4+0{,}8\sin(\pi/2)=4{,}8\) m. Vì mô hình chỉ được giả thiết trên \([0,16]\), thời điểm \(t=20\) **ngoài miền đã cho**: không thể khẳng định độ cao thực tế lúc ấy từ công thức này, dù phép tính đại số vẫn thực hiện được.
+Với \(\omega=\frac{\pi}{8}\ne0\), chu kỳ của hàm sin là \(T=\frac{2\pi}{\frac{\pi}{8}}=16\) giờ. Tại \(t=4\), góc bằng \(\frac{\pi}{2}\), do đó \(h(4)=4+0{,}8\sin(\frac{\pi}{2})=4{,}8\) m. Vì mô hình chỉ được giả thiết trên \([0;16]\), thời điểm \(t=20\) **ngoài miền đã cho**: không thể khẳng định độ cao thực tế lúc ấy từ công thức này, dù phép tính đại số vẫn thực hiện được.
 
 **Kiểm lỗi**
 
