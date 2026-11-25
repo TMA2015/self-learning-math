@@ -17019,7 +17019,9 @@
         "cd15_replay": "2258d3c5a35f87cc50c48b58c19d978d2e1e89f5",
         "cd15_topic_source": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
         "g10_written": "ebc70018a168998c7dd43b34c3e195a2b1e15ed7",
-        "g11_source": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b"
+        "g11_source": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+        "cd14_replay": "01be9aceda3a04a5870b061171c7858ce4220757",
+        "cd15_knowledge": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0"
       },
       "reviewed": {
         "topic_formative": 45,
@@ -17079,14 +17081,30 @@
             "TOP15-O20": 2,
             "TOP15-O21": 2
           }
+        ],
+        "projection_order": [
+          {
+            "topic": 14,
+            "practice": 87,
+            "replay": 23,
+            "practice_order_match": true,
+            "replay_order_match": true
+          },
+          {
+            "topic": 15,
+            "practice": 67,
+            "replay": 8,
+            "practice_order_match": true,
+            "replay_order_match": true
+          }
         ]
       },
       "findings": [
         "CĐ14 P08 parameter for coincident/parallel distinction; P10 new unique system; P14 R²>0 vs point or empty; P16 nonright triangle equidistance; P17 all three line-circle cases; P22 classify number of conic intersections by parameter. 23 specific hints/D6; 23 shared TRY hints/D6; 32 existing shared formative with prior hints retained; two extra transfer TRY records and four G11 KFT retained.",
-        "CĐ15 replaces 10 coordinate-dependent or near-duplicate exercises with synthetic geometry appropriate to G11; P10 quadrilateral section MNQP, P14 check line outside plane, P16 explicit construction and parallel-plane test, P18 geometric counterexample, P22 inverse ratio and valid projection direction. P05 explicitly cross-grade extension after CĐ13. B14-P04 corrected misleading original-nondegenerate assumption, demonstrates collapse to segment; 30 shared D6 additions. No official source edits.",
+        "CĐ15 replaces 12 coordinate-dependent or near-duplicate exercises with synthetic geometry appropriate to G11; P10 quadrilateral section MNQP, P14 check line outside plane, P16 explicit construction and parallel-plane test, P18 geometric counterexample, P22 inverse ratio and valid projection direction. P05 explicitly cross-grade extension after CĐ13. B14-P04 corrected misleading original-nondegenerate assumption, demonstrates collapse to segment; 30 shared D6 additions. No official source edits.",
         "99 formerly unmapped shared practice/Written candidate placements receive representative primary topic outcomes from actual stem/skill, 59 CĐ14,40 CĐ15. Historical projection untouched. CĐ15 O22 remains Written-only in practice; O09 and O13 thin, requires real formative tasks later, not artificial mapping.",
         "24 Written source read (9 CĐ14,15 CĐ15); 10 topic Written lack library pointer. TOP14-W03 overlaps SGK W21 Anchor exact core problem, TOP14-W04 same conics as SGK C01/C02, W02 same system as P06; G11 B12-W01/Anchor and TOP15 old P14 share core; TOP15-W01 now near P19, TOP15-W02/W05 depend on Oxyz, W05 rubric units not specified in stem. Written remains reference-only, no ID merges. CĐ15 source knowledge itself uses coordinate examples, not remediated here; fresh SGK/SBT visual parity not verified.",
-        "98 changed records, all 98 D6 target links resolve, all 178 placements resolve, 99 mappings added. No new IDs/version change, no auto-grade, no replay edits. Academic/PED PASS not claimed."
+        "98 changed records, all 98 D6 target links resolve, all 185 placements resolve, 99 mappings added. No new IDs/version change, no auto-grade, no replay edits. Academic/PED PASS not claimed."
       ],
       "next": "CĐ16–17; review remaining CĐ13 shared G12 ChII and CĐ15 O22/O09/O13 depth within relevant scope; Written canonical reconciliation later."
     }
