@@ -90,19 +90,18 @@
   if(document.querySelector("[data-thpt-r4-launcher]"))return;
   const header=document.querySelector(".md-header__inner");
   if(!header)return;
-  const topics=[["Danh mục 22 Chuyên đề đã phát hành","chuyen-de/"]];
   const groups=[
-   ["Trang chủ THPT","home/"],["Học theo SGK","sgk/"],
-   ["Chuyên đề","chuyen-de/"],["Thư viện bài tập","thu-vien/"],
-   ["Tiến độ học tập","tien-do/"]
+   ["Trang chủ THPT","home/"],["Tiến độ học tập","tien-do/"],
+   ["Học theo SGK","sgk/"],["Chuyên đề","chuyen-de/"],
+   ["Thư viện bài tập","thu-vien/"],["Math Lab · 25 mô hình tương tác","math-lab/"]
   ];
   const btn=document.createElement("button");
   btn.type="button";btn.className="roadmap-topic-launcher thpt-r4-launcher";
   btn.dataset.thptR4Launcher="1";
   btn.setAttribute("aria-haspopup","dialog");
-  btn.setAttribute("aria-label","Mở 5 nhóm THPT và danh mục 22 Chuyên đề chính thức");
+  btn.setAttribute("aria-label","Mở 6 nhóm THPT và cổng chọn chương trình");
   const mark=document.createElement("span");mark.className="roadmap-topic-launcher__mark";mark.textContent="▤";
-  const count=document.createElement("span");count.className="roadmap-topic-launcher__count";count.textContent="5 + "+topics.length;
+  const count=document.createElement("span");count.className="roadmap-topic-launcher__count";count.textContent="6 + 1";
   const name=document.createElement("span");name.className="roadmap-topic-launcher__name";name.textContent="danh mục";
   btn.append(mark,count,name);
   btn.addEventListener("click",()=>{
@@ -112,21 +111,23 @@
     dlg.className="roadmap-topic-dialog";dlg.dataset.thptR4ShortcutDialog="1";
     dlg.setAttribute("aria-label","Điều hướng nhanh Toán THPT");
     const heading=document.createElement("div");heading.className="roadmap-topic-dialog__heading";
-    const title=document.createElement("h2");title.textContent="Toán THPT · 5 nhóm + danh mục 22 Chuyên đề";
+    const title=document.createElement("h2");title.textContent="Toán THPT 6+1";
     const close=document.createElement("button");close.type="button";close.className="roadmap-topic-dialog__close";close.textContent="Đóng ✕";
     close.addEventListener("click",()=>dlg.close());heading.append(title,close);
     const hint=document.createElement("p");hint.className="roadmap-topic-dialog__hint";
-    hint.textContent="Chọn danh mục 22 Chuyên đề chính thức hoặc một trong năm nhóm học THPT.";
+    hint.textContent="Chọn một trong sáu nhóm THPT hoặc trở về cổng chọn chương trình.";
     const section=document.createElement("details");section.className="roadmap-main-quick";section.open=true;
-    const summary=document.createElement("summary");summary.textContent="5 nhóm THPT · mở/thu gọn";
+    const summary=document.createElement("summary");summary.textContent="6 nhóm THPT · mở/thu gọn";
     const nav=document.createElement("nav");nav.className="roadmap-main-quick__links";
-    nav.setAttribute("aria-label","Năm lối tắt chính Toán THPT");
+    nav.setAttribute("aria-label","Sáu lối tắt chính Toán THPT");
     for(const [label,url]of groups){
-     const a=document.createElement("a");a.href=base+url;a.textContent=label;nav.append(a);
+     const a=document.createElement("a");a.href=base+url;a.textContent=label;
+     if(url==="math-lab/")a.dataset.thptMathLabShortcut="1";
+     nav.append(a);
     }
     section.append(summary,nav);
     // The programme cover is above all THPT learning groups.
-    // It is not a sixth group and does not change Golden 5+1.
+    // The +1 is the existing level-1 programme selector.
     const coverNav=document.createElement("nav");
     coverNav.className="roadmap-main-quick__links";
     coverNav.setAttribute("aria-label","Cổng chọn chương trình Toán");
@@ -135,12 +136,7 @@
     coverLink.textContent="⌂ Chọn chương trình";
     coverLink.dataset.mathProgramCoverLink="1";
     coverNav.appendChild(coverLink);
-    const topicNav=document.createElement("nav");topicNav.className="roadmap-topic-dialog__list";
-    topicNav.setAttribute("aria-label","Danh mục 22 Chuyên đề Toán THPT");
-    for(const [label,url]of topics){
-     const a=document.createElement("a");a.href=base+url;a.textContent=label;topicNav.append(a);
-    }
-    dlg.append(heading,coverNav,section,hint,topicNav);
+    dlg.append(heading,coverNav,section,hint);
     dlg.addEventListener("click",event=>{if(event.target===dlg)dlg.close()});
     document.body.append(dlg);
    }
