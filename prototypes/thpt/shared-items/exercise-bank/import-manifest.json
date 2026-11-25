@@ -17107,6 +17107,126 @@
         "98 changed records, all 98 D6 target links resolve, all 185 placements resolve, 99 mappings added. No new IDs/version change, no auto-grade, no replay edits. Academic/PED PASS not claimed."
       ],
       "next": "CĐ16–17; review remaining CĐ13 shared G12 ChII and CĐ15 O22/O09/O13 depth within relevant scope; Written canonical reconciliation later."
+    },
+    "formative_scoped_audit_cp61": {
+      "checkpoint": 61,
+      "baseline": "366c97a15354dc2ab1efac4c72b5b7429b4b92ec",
+      "scope": "CĐ16–17 formative, shared G11 ChVII and Written read-only",
+      "files": [
+        {
+          "path": "items/cd16.json",
+          "before": "13908a349a4358d0d3fb0ade8722e97e3bac0e55",
+          "after": "28b2dffdd2453b3832e3b270f4981e9ad64c40a5",
+          "changed": 21
+        },
+        {
+          "path": "items/cd17.json",
+          "before": "0b4695539c5bfeaaa7e093ee6b0362526e047c86",
+          "after": "a5dbe030eccf158b2f292429dcb0cefdb92cfc4a",
+          "changed": 12
+        },
+        {
+          "path": "items/g11-chvii.json",
+          "before": "74514400bb3d7396eb16db188d8ff93d10d42105",
+          "after": "b6cf1b635b4f6c176f51d4ecaf0650c04d9acb9f",
+          "changed": 51
+        },
+        {
+          "path": "placements/cd16.json",
+          "before": "a37826516172028e9b0508f7f9f76ca30057ee25",
+          "after": "ae47d490936283210a6be104e43d35432d3469cb",
+          "changed": 41
+        },
+        {
+          "path": "placements/cd17.json",
+          "before": "c1c45ceac4e4a8846245338ae2b293779def8d8c",
+          "after": "807a03542ef6d2f3e207975a14696c75f200b015",
+          "changed": 22
+        }
+      ],
+      "source_evidence": {
+        "cd16_knowledge": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
+        "cd16_practice": "42099bd6939e7c6c22b0c6f9050846f047665212",
+        "cd16_replay": "7acb410487da64f42cc64888f9a13843a8d2ad2e",
+        "cd17_knowledge": "0af4b566e0b1b9a7249d1ab3ef6b4bcb7c48a04b",
+        "cd17_practice": "23c879ae5194bab75c19cf287eb25dfe3d152f52",
+        "cd17_replay": "ac5298d286fabc12d39145d55e196205b6f33948",
+        "cd16_written": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+        "cd17_written": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+        "g11_written": "afc8ec039213b87b4930f2d34d48c28d1fc6277f"
+      },
+      "reviewed": {
+        "topic_formative": 33,
+        "shared_formative": 51,
+        "written_source": 18,
+        "changed_records": 84,
+        "skill_tags_corrected": 13,
+        "placement_outcomes_filled": 63,
+        "placements_resolve": 118,
+        "d6_targets_resolve": 84,
+        "practice_coverage": [
+          {
+            "TOP16-O01": 4,
+            "TOP16-O02": 3,
+            "TOP16-O03": 2,
+            "TOP16-O04": 2,
+            "TOP16-O05": 2,
+            "TOP16-O06": 3,
+            "TOP16-O07": 3,
+            "TOP16-O08": 3,
+            "TOP16-O09": 2,
+            "TOP16-O10": 2,
+            "TOP16-O11": 4,
+            "TOP16-O12": 2,
+            "TOP16-O13": 3,
+            "TOP16-O14": 2,
+            "TOP16-O15": 3,
+            "TOP16-O16": 2,
+            "TOP16-O17": 2,
+            "TOP16-O18": 2,
+            "TOP16-O19": 3,
+            "TOP16-O20": 3,
+            "TOP16-O21": 2
+          },
+          {
+            "TOP17-O01": 2,
+            "TOP17-O02": 3,
+            "TOP17-O03": 2,
+            "TOP17-O04": 2,
+            "TOP17-O05": 3,
+            "TOP17-O06": 3,
+            "TOP17-O07": 2,
+            "TOP17-O08": 3,
+            "TOP17-O09": 2,
+            "TOP17-O10": 4,
+            "TOP17-O11": 2,
+            "TOP17-O12": 2
+          }
+        ],
+        "projection_order": [
+          {
+            "topic": 16,
+            "practice": 65,
+            "replay": 8,
+            "practice_order_match": true,
+            "replay_order_match": true
+          },
+          {
+            "topic": 17,
+            "practice": 37,
+            "replay": 8,
+            "practice_order_match": true,
+            "replay_order_match": true
+          }
+        ]
+      },
+      "findings": [
+        "CĐ16 P01 actual angle 45° via parallel diagonal; P05 definition and counterexample; P06 use two intersecting directions; P09 two parallel floor checks insufficient; P10–11 distinguish projection and degenerate image; P12 exact nondegenerate hypothesis; P15 construct dihedral section; P17 two perpendicular planes; P20 distinguish SO, SM, SA. 21 specific hints/D6. CĐ17 P02 derives 8cm and proves unique minimum; P03–05 distance from line/plane, oblique prism, common perpendicular; P09 unit cube conversion; P10 verifies frustum volume 312cm³ by difference of similar pyramids; P11 180L capacity; P12 height from lateral edge, volume 48√2cm³. 12 specific hints/D6.",
+        "51 shared G11 ChVII records targeted hints/D6 replace generic prompts; 13 skill tags corrected against actual problem; original_outcome_ids retained. B24-C01/C04 projection foot and nondegenerate angle clarified; B26-C01 strict point-outside-line assumption; B27-P02 dimension units; B27-P03 reject slanted edge as perpendicular height. Two KFT untouched. 63 shared placements filled primary topic outcomes, historical projection untouched.",
+        "18 Written source blocks read (11 CĐ16,7 CĐ17); 6 topic Written missing pointer. TOP16-W02 needs H≠A, otherwise plane (SAH)/line AH undefined and proof rubric invalid; TOP16-W03 short direct theorem proof, overlaps G11 B25-C04; TOP17-W01/W02/W03 originally overlap formative P06/P11/P10, now formative differentiated; B23-W02 rubric requests contrast with one floor direction but worked solution omits it; B26-W02 uses Oxyz (cross-grade); B27-W01 heuristic explanation does not prove 1/3. Written unchanged per contract.",
+        "84 D6 links resolve, all placements resolve, frozen practice/replay order unchanged, no new IDs, source, version, original outcomes, rubric, status, interaction or replay changes. No fresh SGK/SBT PDF verification or new Academic/PED PASS."
+      ],
+      "next": "CĐ18 next (large scope; do not substitute count for depth), then CĐ19–20; previous remaining CĐ13 G12 ChII and CĐ15 thin outcomes/Written workstream still open."
     }
   }
 }
