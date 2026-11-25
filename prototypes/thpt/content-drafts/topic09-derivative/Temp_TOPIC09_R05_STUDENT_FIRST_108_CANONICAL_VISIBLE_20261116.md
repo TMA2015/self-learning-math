@@ -556,17 +556,17 @@ Nếu đạo hàm (u(x))^n nhưng quên u', đọc **Kiến thức 3.6**, làm *
 
 <!-- LESSON_ID: TOP09-M17; OUTCOME_ID: TOP09-O17 -->
 
-> **CÔNG THỨC — Sin và cos.** Vì sao trong công thức đạo hàm lượng giác lại phải biết đơn vị góc? Ta đã biết hàm sin/cos liên tục và giới hạn \(\lim_{h\to0}\frac{\sin h}{h}=1\) khi \(h\) đo bằng radian. Với x đo **radian**, (sin x)'=cos x, (cos x)'=−sin x. Nếu tham số nhập độ thì đạo hàm có thêm π/180, không thể dùng công thức radian trực tiếp. Điều kiện về radian là một phần nội dung toán, không phải chi tiết trình bày.
+> **CÔNG THỨC — Sin và cos.** Vì sao trong công thức đạo hàm lượng giác lại phải biết đơn vị góc? Ta đã biết hàm sin/cos liên tục và giới hạn \(\lim_{h\to0}\frac{\sin h}{h}=1\) khi \(h\) đo bằng radian. Với x đo **radian**, \((\sin x)'=\cos x\), \((\cos x)'=-\sin x\). Nếu tham số nhập độ thì đạo hàm có thêm \(\frac{\pi}{180}\), không thể dùng công thức radian trực tiếp. Điều kiện về radian là một phần nội dung toán, không phải chi tiết trình bày.
 
-Chẳng hạn, f=3sin x+cos x (radian): f'=3cos x−sin x. Dấu âm xuất phát từ công thức cộng cos. Dùng \(\cos h-1=-2\sin^2(\frac h2)\) suy ra \(\frac{\cos h-1}{h}\to0\). Vì thế thương sai phân của cos bằng \(\cos x\frac{\cos h-1}{h}-\sin x\frac{\sin h}{h}\to-\sin x\). Tương tự, công thức cộng sin cho giới hạn bằng \(\cos x\).
+Chẳng hạn, \(f=3\sin x+\cos x\) (radian): \(f'=3\cos x-\sin x\). Dấu âm xuất phát từ công thức cộng cos. Dùng \(\cos h-1=-2\sin^2(\frac h2)\) suy ra \(\frac{\cos h-1}{h}\to0\). Vì thế thương sai phân của cos bằng \(\cos x\frac{\cos h-1}{h}-\sin x\frac{\sin h}{h}\to-\sin x\). Tương tự, công thức cộng sin cho giới hạn bằng \(\cos x\).
 
 **Ví dụ**
 
-**Đề bài:** Tính đạo hàm y=4sin x−2cos x (x radian).
+**Đề bài:** Tính đạo hàm \(y=4\sin x-2\cos x\) (x radian).
 
-**Lời giải:** (sin x)′=cos x, (cos x)′=−sin x, nên y′=4cos x+2sin x; công thức chuẩn giả định radian.
+**Lời giải:** \((\sin x)'=\cos x\), \((\cos x)'=-\sin x\), nên \(y'=4\cos x+2\sin x\); công thức chuẩn giả định radian.
 
-**Vận dụng** (4cos x−sin x)' là gì?
+**Vận dụng** \((4\cos x-\sin x)'\) là gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -586,7 +586,7 @@ Nếu nhầm dấu đạo hàm cos hoặc áp công thức lượng giác khi g�
 
 <!-- LESSON_ID: TOP09-M18; OUTCOME_ID: TOP09-O18 -->
 
-> **CÔNG THỨC — Tan và cot.** Tan và cot có điểm cấm phải loại trước. Vì sao tan/cot có chỗ không thể lấy đạo hàm dù sin/cos trơn? Ta sử dụng tan x=sin x/cos x, cot x=cos x/sin x. Với x radian, (tan x)'=1/cos²x khi cos x≠0, (cot x)'=−1/sin²x khi sin x≠0. Dấu và điều kiện theo quy tắc thương; khi mẫu bằng0 hàm gốc không xác định, đạo hàm không thể được báo ở đó.
+> **CÔNG THỨC — Tan và cot.** Tan và cot có điểm cấm phải loại trước. Vì sao tan/cot có chỗ không thể lấy đạo hàm dù sin/cos trơn? Ta sử dụng \(\tan x=\frac{\sin x}{\cos x}\), \(\cot x=\frac{\cos x}{\sin x}\). Với x radian, \((\tan x)'=\frac1{\cos^2 x}\) khi \(\cos x\ne0\), \((\cot x)'=-\frac1{\sin^2 x}\) khi \(\sin x\ne0\). Dấu và điều kiện theo quy tắc thương; khi mẫu bằng0 hàm gốc không xác định, đạo hàm không thể được báo ở đó.
 
 Ví dụ, dùng quy tắc thương và \(\sin^2 x+\cos^2 x=1\) ta được
 \[
@@ -594,27 +594,27 @@ Ví dụ, dùng quy tắc thương và \(\sin^2 x+\cos^2 x=1\) ta được
 \]
 Tương tự, thương \(\frac{\cos x}{\sin x}\) cho tử \(-\sin^2 x-\cos^2 x=-1\), nên đạo hàm cot mang dấu âm.
 
-Xét ví dụ: tan x ở x=π/2 không xác định vì cos π/2=0. Ở x=0: (tan x)'=1 và (cot x)' không có do sin0=0. Chọn phân biệt miền cho từng hàm.
+Xét ví dụ: tan x ở \(x=\frac\pi2\) không xác định vì \(\cos\frac\pi2=0\). Ở \(x=0\): \((\tan x)'=1\) và \((\cot x)'\) không có do \(\sin0=0\). Chọn phân biệt miền cho từng hàm.
 
 **Ví dụ**
 
-**Đề bài:** Cho f(x)=tan x−cot x. Tìm miền và f′.
+**Đề bài:** Cho \(f(x)=\tan x-\cot x\). Tìm miền và \(f'\).
 
-**Lời giải:** D={x:sin x≠0, cos x≠0}. Trên D, f′=1/cos²x+1/sin²x, do (−cot x)′ dương.
+**Lời giải:** \(D=\{x:\sin x\ne0,\ \cos x\ne0\}\). Trên D, \(f'=\frac1{\cos^2 x}+\frac1{\sin^2 x}\), do \((-\cot x)'\) dương.
 
-**Vận dụng** (cot x)' và miền là gì?
+**Vận dụng** \((\cot x)'\) và miền là gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-−1/sin²x, x≠kπ với k nguyên.
+\(-\frac1{\sin^2 x}\), \(x\ne k\pi\) với k nguyên.
 
-Nếu thiếu dấu trừ, dùng quy tắc thương cos/sin để tự tái lập.
+Nếu thiếu dấu trừ, dùng quy tắc thương \(\frac{\cos x}{\sin x}\) để tự tái lập.
 
 
 **Kiểm lỗi**
 
-Nếu thiếu miền cos x≠0 đối với tan hay sin x≠0 đối với cot, đọc **Kiến thức 4.2**, làm **Bài 60** và **Bài 62**; đạo hàm chỉ xét nơi hàm gốc xác định.
+Nếu thiếu miền \(\cos x\ne0\) đối với tan hay \(\sin x\ne0\) đối với cot, đọc **Kiến thức 4.2**, làm **Bài 60** và **Bài 62**; đạo hàm chỉ xét nơi hàm gốc xác định.
 
 </details>
 
@@ -622,17 +622,17 @@ Nếu thiếu miền cos x≠0 đối với tan hay sin x≠0 đối với cot, 
 
 <!-- LESSON_ID: TOP09-M19; OUTCOME_ID: TOP09-O19 -->
 
-> **CÔNG THỨC — Hàm lượng giác hợp.** Hàm lượng giác hợp dùng tiếp quy tắc dây chuyền. Nếu góc \(u(x)=3x^2\), tốc độ biến thiên của góc là \(u'(x)=6x\), phụ thuộc vào vị trí: tại \(x=0\) bằng 0, tại \(x=1\) bằng 6. Đạo hàm của \(\sin u\) thay đổi ra sao khi góc trong có tốc độ như vậy? Ta bắt đầu từ dây chuyền và biến góc radian. Nếu u(x) khả vi, [sin u]'=u' cos u, [cos u]'=−u' sin u; cụ thể \((\tan u)'=\dfrac{u'}{\cos^2u}\) khi \(\cos u\ne0\) và \((\cot u)'=-\dfrac{u'}{\sin^2u}\) khi \(\sin u\ne0\). Quy tắc dây chuyền cho cả hàm ngoài và góc trong; không quên miền trig.
+> **CÔNG THỨC — Hàm lượng giác hợp.** Hàm lượng giác hợp dùng tiếp quy tắc dây chuyền. Nếu góc \(u(x)=3x^2\), tốc độ biến thiên của góc là \(u'(x)=6x\), phụ thuộc vào vị trí: tại \(x=0\) bằng 0, tại \(x=1\) bằng 6. Đạo hàm của \(\sin u\) thay đổi ra sao khi góc trong có tốc độ như vậy? Ta bắt đầu từ dây chuyền và biến góc radian. Nếu u(x) khả vi, \((\sin u)'=u'\cos u\), \((\cos u)'=-u'\sin u\); cụ thể \((\tan u)'=\dfrac{u'}{\cos^2u}\) khi \(\cos u\ne0\) và \((\cot u)'=-\dfrac{u'}{\sin^2u}\) khi \(\sin u\ne0\). Quy tắc dây chuyền cho cả hàm ngoài và góc trong; không quên miền trig.
 
-Chẳng hạn, y=cos(3x²) ⇒ u=3x², u'=6x, y'=−6x sin(3x²). Chọn xác định hàm ngoài cos và trong đa thức trước.
+Chẳng hạn, \(y=\cos(3x^2)\) ⇒ \(u=3x^2\), \(u'=6x\), \(y'=-6x\sin(3x^2)\). Chọn xác định hàm ngoài cos và trong đa thức trước.
 
 **Ví dụ**
 
-**Đề bài:** Lấy đạo hàm sin(5x²+1) (đối số radian).
+**Đề bài:** Lấy đạo hàm \(\sin(5x^2+1)\) (đối số radian).
 
-**Lời giải:** u=5x²+1, u′=10x; y′=10x cos(5x²+1) nhờ dây chuyền, không bỏ u′.
+**Lời giải:** \(u=5x^2+1\), \(u'=10x\); \(y'=10x\cos(5x^2+1)\) nhờ dây chuyền, không bỏ \(u'\).
 
-**Vận dụng** [sin(5x)]' là gì?
+**Vận dụng** \((\sin(5x))'\) là gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -644,7 +644,7 @@ Nếu ra cos(5x), đạo hàm trong 5x chưa được nhân.
 
 **Kiểm lỗi**
 
-Nếu lấy đạo hàm sin(2x²) mà quên đạo hàm 2x² hoặc bỏ điều kiện của tan hợp, đọc **Kiến thức 4.3**, làm **Bài 63** và **Bài 65**; áp quy tắc dây chuyền sau khi kiểm miền.
+Nếu lấy đạo hàm \(\sin(2x^2)\) mà quên đạo hàm \(2x^2\) hoặc bỏ điều kiện của tan hợp, đọc **Kiến thức 4.3**, làm **Bài 63** và **Bài 65**; áp quy tắc dây chuyền sau khi kiểm miền.
 
 </details>
 
@@ -654,29 +654,29 @@ Nếu lấy đạo hàm sin(2x²) mà quên đạo hàm 2x² hoặc bỏ điều
 
 Vì sao \(e^x\) có đạo hàm là chính nó? Từ cách hình thành số \(e\), ta có các giới hạn nền \(\displaystyle\lim_{h\to0}(1+h)^{\frac1h}=e\) (khi \(1+h>0\)) và \(\displaystyle\lim_{h\to0}\frac{e^h-1}{h}=1\). Bởi vậy, thương sai phân của \(e^x\) viết được thành \(\displaystyle e^x\frac{e^h-1}{h}\), có giới hạn \(e^x\). Với \(a>0\), đặt \(a^x=e^{x\ln a}\) rồi dùng quy tắc hàm hợp; hệ số \(\ln a\) xuất hiện do đạo hàm của \(x\ln a\), chứ không phải là một hệ số phải học thuộc vô cớ.
 
-> **CÔNG THỨC — Hàm mũ.** Đạo hàm của hàm mũ liên hệ với giá trị chính nó. Tại sao e^x tự là đạo hàm của nó mà 2^x cần thêm ln2? Cần nhớ lũy thừa x^n khác hàm mũ a^x, log tự nhiên. Với cơ số a>0 và a≠1, (a^x)'=a^x ln a; riêng e^x vì ln e=1 nên đạo hàm bằng chính e^x. Đây không phải (x^n)'=n x^{n−1}, vì biến đứng ở số mũ. Với cơ số a=1, hàm hằng bằng1 và đạo hàm0, xử lý riêng.
+> **CÔNG THỨC — Hàm mũ.** Đạo hàm của hàm mũ liên hệ với giá trị chính nó. Tại sao \(e^x\) tự là đạo hàm của nó mà \(2^x\) cần thêm \(\ln2\)? Cần nhớ lũy thừa \(x^n\) khác hàm mũ \(a^x\), log tự nhiên. Với cơ số \(a>0\) và \(a\ne1\), \((a^x)'=a^x\ln a\); riêng \(e^x\) vì \(\ln e=1\) nên đạo hàm bằng chính \(e^x\). Đây không phải \((x^n)'=nx^{n-1}\), vì biến đứng ở số mũ. Với cơ số \(a=1\), hàm hằng bằng1 và đạo hàm0, xử lý riêng.
 
-Chẳng hạn, f=5^x tại x=0: f'(x)=5^x ln5, f'(0)=ln5. Chọn công thức mũ vì x là số mũ, không phải cơ số.
+Chẳng hạn, \(f=5^x\) tại \(x=0\): \(f'(x)=5^x\ln5\), \(f'(0)=\ln5\). Chọn công thức mũ vì x là số mũ, không phải cơ số.
 
 **Ví dụ**
 
-**Đề bài:** Tính f′(x), f′(0) cho f(x)=7ˣ.
+**Đề bài:** Tính \(f'(x)\), \(f'(0)\) cho \(f(x)=7^x\).
 
-**Lời giải:** Với a=7>0 khác 1, f′(x)=7ˣln7, f′(0)=ln7. Khác x⁷ vì biến đứng trên số mũ.
+**Lời giải:** Với \(a=7>0\) khác 1, \(f'(x)=7^x\ln7\), \(f'(0)=\ln7\). Khác \(x^7\) vì biến đứng trên số mũ.
 
-**Vận dụng** (e^{3x})' bằng gì?
+**Vận dụng** \((e^{3x})'\) bằng gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-3e^{3x}.
+\(3e^{3x}\).
 
 Nếu thiếu hệ số3, kết hợp quy tắc mũ với dây chuyền.
 
 
 **Kiểm lỗi**
 
-Nếu đạo hàm a^x thiếu ln a hoặc đạo hàm e^{u} quên u', đọc **Kiến thức 4.4**, làm **Bài 66** và **Bài 68**; cơ số a>0, a≠1 với hàm mũ cơ số a.
+Nếu đạo hàm \(a^x\) thiếu \(\ln a\) hoặc đạo hàm \(e^u\) quên u', đọc **Kiến thức 4.4**, làm **Bài 66** và **Bài 68**; cơ số \(a>0\), \(a\ne1\) với hàm mũ cơ số a.
 
 </details>
 
@@ -690,9 +690,9 @@ Nếu đạo hàm a^x thiếu ln a hoặc đạo hàm e^{u} quên u', đọc **K
 \]
 Từ \(\log_a x=\dfrac{\ln x}{\ln a}\) với \(a>0,\ a\ne1\), ta suy ra hệ số \(\frac1{\ln a}\). Các phép biến đổi này chỉ có nghĩa khi đối số lôgarit **dương**.
 
-> **CÔNG THỨC — Logarit và miền.** Hàm logarit còn đòi hỏi xét miền của đối số. Khi lấy đạo hàm ln x, tại sao phải giữ x>0 ngay cả khi 1/x có nghĩa với x<0? Để xác định điều đó, cần xét miền của logarit và đạo hàm 1/x. (ln x)'=1/x với x>0; [log_a x]'=1/(x ln a) với a>0,a≠1 và x>0. Công thức đạo hàm không mở rộng miền logarit gốc sang x<0. Với ln|x| có miền x≠0 và derivative1/x nhưng đó là hàm khác (không tự đồng nhất với ln x).
+> **CÔNG THỨC — Logarit và miền.** Hàm logarit còn đòi hỏi xét miền của đối số. Khi lấy đạo hàm \(\ln x\), tại sao phải giữ \(x>0\) ngay cả khi \(\frac1x\) có nghĩa với \(x<0\)? Để xác định điều đó, cần xét miền của logarit và công thức đạo hàm của logarit tự nhiên. \((\ln x)'=\frac1x\) với \(x>0\); \((\log_a x)'=\frac1{x\ln a}\) với \(a>0\),\(a\ne1\) và \(x>0\). Công thức đạo hàm không mở rộng miền logarit gốc sang \(x<0\). Với \(\ln|x|\) có miền \(x\ne0\) và đạo hàm \(\frac1x\) nhưng đó là hàm khác (không tự đồng nhất với ln x).
 
-Chẳng hạn, f=log₂ x, x>0: f'=1/(x ln2). \(\ln 2\) là một hằng số dương, không phải biến hay đơn vị đo.
+Chẳng hạn, \(f=\log_2 x\), \(x>0\): \(f'=\frac1{x\ln2}\). \(\ln 2\) là một hằng số dương, không phải biến hay đơn vị đo.
 
 **Ví dụ**
 
@@ -700,19 +700,19 @@ Chẳng hạn, f=log₂ x, x>0: f'=1/(x ln2). \(\ln 2\) là một hằng số d�
 
 **Lời giải:** Vì cơ số \(5>0\), \(5\ne1\) và đối số phải dương, miền là \((0;+\infty)\). Trên miền đó, \((\log_5 x)'=\frac1{x\ln 5}\). Dù biểu thức \(\frac1{x\ln 5}\) tính được tại \(x=-2\), hàm gốc \(\log_5(-2)\) không có nghĩa trong tập số thực, nên không thể lấy đạo hàm của nó tại đó.
 
-**Vận dụng** [ln(4x)]' trên x>0 là gì?
+**Vận dụng** \((\ln(4x))'\) trên \(x>0\) là gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-(4)/(4x)=1/x; miền x>0.
+\(\frac4{4x}=\frac1x\); miền \(x>0\).
 
-Nếu tính với x<0, ln(4x) không có nghĩa trong số thực.
+Nếu tính với \(x<0\), \(\ln(4x)\) không có nghĩa trong số thực.
 
 
 **Kiểm lỗi**
 
-Nếu dùng công thức ln x cho log_a x mà bỏ ln a hoặc nhận x≤0, đọc **Kiến thức 4.5**, làm **Bài 69** và **Bài 71**; kiểm đối số dương trước.
+Nếu dùng công thức \(\ln x\) cho \(\log_a x\) mà bỏ \(\ln a\) hoặc nhận \(x\le0\), đọc **Kiến thức 4.5**, làm **Bài 69** và **Bài 71**; kiểm đối số dương trước.
 
 </details>
 
@@ -720,31 +720,31 @@ Nếu dùng công thức ln x cho log_a x mà bỏ ln a hoặc nhận x≤0, đ�
 
 <!-- LESSON_ID: TOP09-M22; OUTCOME_ID: TOP09-O22 -->
 
-> **CÔNG THỨC — Mũ–logarit hợp.** Khi mũ/log chứa biểu thức, quy tắc dây chuyền xuất hiện. Vì sao ln(g(x)) chỉ lấy đạo hàm tại nơi g(x)>0? Ta đã biết dây chuyền và miền ln, cơ số a>0. [ln g]'=g'/g trên g>0; [a^{g}]'=a^{g} ln a ·g' với a>0,a≠1; [log_a g]'=g'/(g ln a) trên g>0. Cần kiểm g khả vi và miền của hàm ngoài. Không dùng công thức ở g≤0 dù biểu thức g'/g có vẻ tồn tại.
+> **CÔNG THỨC — Mũ–logarit hợp.** Khi mũ/log chứa biểu thức, quy tắc dây chuyền xuất hiện. Vì sao \(\ln(g(x))\) chỉ lấy đạo hàm tại nơi \(g(x)>0\)? Ta đã biết dây chuyền và miền ln, cơ số \(a>0\). \((\ln g)'=\frac{g'}g\) trên \(g>0\); \((a^g)'=a^g\ln a\cdot g'\) với \(a>0\),\(a\ne1\); \((\log_a g)'=\frac{g'}{g\ln a}\) trên \(g>0\). Cần kiểm g khả vi và miền của hàm ngoài. Không dùng công thức ở \(g\le0\) dù biểu thức \(\frac{g'}g\) có vẻ tồn tại.
 
 Cần phân biệt \(\ln(g(x))\), chỉ có nghĩa khi \(g(x)>0\), với \(\ln|g(x)|\), có nghĩa khi \(g(x)\ne0\). Trên khoảng \(g(x)\ne0\) và \(g\) khả vi, \([\ln|g(x)|]'=\dfrac{g'(x)}{g(x)}\); ví dụ \(g=x-2\), công thức đúng cả khi \(x<2\), dù \(\ln(x-2)\) không xác định tại đó. Không dùng \(\ln|g|\) ở điểm \(g=0\).
 
-Chẳng hạn, f=ln(x²+1) xác định mọi x, f'=2x/(x²+1). Chọn **quy tắc dây chuyền** vì đối số là x²+1; đối số dương mọi x nên không phải loại điểm.
+Chẳng hạn, \(f=\ln(x^2+1)\) xác định mọi x, \(f'=\frac{2x}{x^2+1}\). Chọn **quy tắc dây chuyền** vì đối số là \(x^2+1\); đối số dương mọi x nên không phải loại điểm.
 
 **Ví dụ**
 
-**Đề bài:** Tính đạo hàm ln(x²+4)+2ˣ, nêu miền.
+**Đề bài:** Tính đạo hàm \(\ln(x^2+4)+2^x\), nêu miền.
 
-**Lời giải:** x²+4>0 mọi x, nên D=ℝ. y′=2x/(x²+4)+2ˣln2, kết hợp dây chuyền cho logarit.
+**Lời giải:** \(x^2+4>0\) mọi x, nên \(D=\mathbb R\). \(y'=\frac{2x}{x^2+4}+2^x\ln2\), kết hợp dây chuyền cho logarit.
 
-**Vận dụng** [ln(3x−2)]' là gì và miền?
+**Vận dụng** \((\ln(3x-2))'\) là gì và miền?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-3/(3x−2), x>2/3.
+\(\frac3{3x-2}\), \(x>\frac23\).
 
-Nếu chỉ ghi mẫu≠0 mà cho x<2/3, điều kiện log phải dương bị vi phạm.
+Nếu chỉ ghi mẫu≠0 mà cho \(x<\frac23\), điều kiện log phải dương bị vi phạm.
 
 
 **Kiểm lỗi**
 
-Nếu cho ln(3x−2) trên x≤2/3 hoặc quên nhân đạo hàm hàm trong, đọc **Kiến thức 4.6**, giải **Bài 72** và **Bài 74**; kết hợp điều kiện miền với dây chuyền.
+Nếu cho \(\ln(3x-2)\) trên \(x\le\frac23\) hoặc quên nhân đạo hàm hàm trong, đọc **Kiến thức 4.6**, giải **Bài 72** và **Bài 74**; kết hợp điều kiện miền với dây chuyền.
 
 </details>
 
@@ -754,22 +754,22 @@ Nếu cho ln(3x−2) trên x≤2/3 hoặc quên nhân đạo hàm hàm trong, đ
 
 > **KIẾN THỨC CẦN GHI NHỚ — Đạo hàm và miền gốc.** Miền cần kiểm cả trước và sau lấy đạo hàm. Công thức đạo hàm có thể làm mình 'quên' một điểm hàm gốc không xác định không? Ta sử dụng điều kiện căn, mẫu, log và mẫu trig. Bước 1 giải miền xác định của biểu thức gốc. Bước 2 chọn công thức đạo hàm trên các khoảng nội điểm miền có thể lấy đạo hàm. Bước 3 so miền đạo hàm và miền gốc, đặc biệt đầu mút căn và điểm loại mẫu. Một biểu thức đại số sau rút không được tự dùng ở điểm gốc cấm.
 
-Xét ví dụ: f=√(x−3)/(x−4) có miền x≥3, x≠4. Công thức derivative theo tích/thương chỉ áp ở x>3, x≠4. Tại x=3 hàm có giá trị0 nhưng không có đạo hàm hữu hạn hai phía.
+Xét ví dụ: \(f=\frac{\sqrt{x-3}}{x-4}\) có miền \(x\ge3\), \(x\ne4\). Công thức derivative theo tích/thương chỉ áp ở \(x>3\), \(x\ne4\). Tại \(x=3\) hàm có giá trị0 nhưng không có đạo hàm hữu hạn hai phía.
 
 **Ví dụ**
 
-**Đề bài:** Tìm miền và nơi có thể lấy đạo hàm của √(5−x)/(x²−1).
+**Đề bài:** Tìm miền và nơi có thể lấy đạo hàm của \(\frac{\sqrt{5-x}}{x^2-1}\).
 
-**Lời giải:** Điều kiện x≤5, x≠±1, nên D=(−∞,−1)∪(−1,1)∪(1,5]. Có công thức thương trên nội điểm x<5, x≠±1; ở x=5 không có đạo hàm hữu hạn hai phía.
+**Lời giải:** Điều kiện \(x\le5\), \(x\ne\pm1\), nên \(D=(-\infty;-1)\cup(-1;1)\cup(1;5]\). Có công thức thương trên nội điểm \(x<5\), \(x\ne\pm1\); ở \(x=5\) không có đạo hàm hữu hạn hai phía.
 
-**Vận dụng** [ln x/(x−2)] xác định ở những x nào?
+**Vận dụng** \(\frac{\ln x}{x-2}\) xác định ở những x nào?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-x>0 và x≠2.
+\(x>0\) và \(x\ne2\).
 
-Nếu chỉ đặt x≠2, quên điều kiện ln x và đạo hàm được ở x≤0 sai.
+Nếu chỉ đặt \(x\ne2\), quên điều kiện \(\ln x\) và đạo hàm được ở \(x\le0\) sai.
 
 
 **Kiểm lỗi**
@@ -784,22 +784,22 @@ Nếu kiểm mẫu khác 0 mà quên điều kiện căn/log trong tử, đọc 
 
 > **PHƯƠNG PHÁP — Chọn đúng quy tắc.** Cấu trúc biểu thức quyết định thứ tự quy tắc. Một biểu thức có tích và hàm hợp nên khai triển hay lấy đạo hàm trực tiếp? Ta bắt đầu từ tích, hợp, tổng, thương. Nhìn cấu trúc ngoài cùng của biểu thức trước: tổng thì tách; tích thì 2 hạng; thương thì dấu trừ/mẫu bình phương; hàm hợp thì đạo hàm ngoài nhân đạo hàm trong; thường phải kết hợp nhiều quy tắc theo thứ tự. Không có 'đạo hàm của tích = tích đạo hàm'.
 
-Chẳng hạn, f=x e^{2x}: ngoài cùng tích, f'=e^{2x}+x·2e^{2x}=e^{2x}(1+2x). Chọn tích trước, sau đó áp dụng quy tắc dây chuyền cho thừa số mũ.
+Chẳng hạn, \(f=xe^{2x}\): ngoài cùng tích, \(f'=e^{2x}+x\cdot2e^{2x}=e^{2x}(1+2x)\). Chọn tích trước, sau đó áp dụng quy tắc dây chuyền cho thừa số mũ.
 
 **Ví dụ**
 
-**Đề bài:** Lấy đạo hàm x·e^(x²), nêu thứ tự quy tắc.
+**Đề bài:** Lấy đạo hàm \(x\cdot e^{x^2}\), nêu thứ tự quy tắc.
 
-**Lời giải:** Phép ngoài là tích; y′=e^(x²)+x·e^(x²)·2x=e^(x²)(1+2x²). Đạo hàm thừa số mũ cần dây chuyền.
+**Lời giải:** Phép ngoài là tích; \(y'=e^{x^2}+x\cdot e^{x^2}\cdot2x=e^{x^2}(1+2x^2)\). Đạo hàm thừa số mũ cần dây chuyền.
 
-**Vận dụng** [(x²+1)sin x]' là gì?
+**Vận dụng** \(((x^2+1)\sin x)'\) là gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-2x sin x+(x²+1)cos x.
+\(2x\sin x+(x^2+1)\cos x\).
 
-Nếu thử nhân hai đạo hàm, so lại với ví dụ f=x·x=x² cho thấy lỗi.
+Nếu thử nhân hai đạo hàm, so lại với ví dụ \(f=x\cdot x=x^2\) cho thấy lỗi.
 
 
 **Kiểm lỗi**
@@ -816,29 +816,29 @@ Khi đạo hàm của vị trí cho vận tốc, đạo hàm **thêm một lần
 
 <!-- LESSON_ID: TOP09-M25; OUTCOME_ID: TOP09-O25 -->
 
-> **CÔNG THỨC — Vận tốc từ tọa độ.** Từ s(t) làm sao biết chiều chuyển động tại thời điểm t? Cần nhớ miền thời gian t≥0, quy tắc đạo hàm và dấu. Vận tốc có hướng \(v(t)=s'(t)\), còn **tốc độ** là \(|v(t)|\). Dùng đạo hàm trong miền mô hình, không kéo mô hình toán ra thời gian âm nếu không được định nghĩa. v=0 là đứng yên tức thời nhưng chưa tự nói dừng mãi, v đổi dấu thì có đổi chiều.
+> **CÔNG THỨC — Vận tốc từ tọa độ.** Từ \(s(t)\) làm sao biết chiều chuyển động tại thời điểm t? Cần nhớ miền thời gian \(t\ge0\), quy tắc đạo hàm và dấu. Vận tốc có hướng \(v(t)=s'(t)\), còn **tốc độ** là \(|v(t)|\). Dùng đạo hàm trong miền mô hình, không kéo mô hình toán ra thời gian âm nếu không được định nghĩa. \(v=0\) là đứng yên tức thời nhưng chưa tự nói dừng mãi, v đổi dấu thì có đổi chiều.
 
-Chẳng hạn, s(t)=t²−4t, t≥0: v=2t−4; t=1 vận tốc−2 m/s, t=3 +2 m/s, chỉ hướng chuyển động ngược nhau. Chọn dấu của v thay vì dấu của tọa độ s.
+Chẳng hạn, \(s(t)=t^2-4t\), \(t\ge0\): \(v=2t-4\); \(t=1\) vận tốc−2 m/s, \(t=3\) +2 m/s, chỉ hướng chuyển động ngược nhau. Chọn dấu của v thay vì dấu của tọa độ s.
 
 **Ví dụ**
 
-**Đề bài:** s(t)=t²−6t (m), t≥0 (s). So sánh hướng và tốc độ tại t=2 và t=4.
+**Đề bài:** \(s(t)=t^2-6t\) (m), \(t\ge0\) (s). So sánh hướng và tốc độ tại \(t=2\) và \(t=4\).
 
-**Lời giải:** v=2t−6; tại t=2 có v=−2 m/s, tại t=4 v=+2 m/s. Tốc độ cả hai thời điểm đều 2 m/s nhưng chiều khác nhau.
+**Lời giải:** \(v=2t-6\); tại \(t=2\) có \(v=-2\) m/s, tại \(t=4\) \(v=+2\) m/s. Tốc độ cả hai thời điểm đều 2 m/s nhưng chiều khác nhau.
 
-**Vận dụng** Nếu s(t)=t³−3t, v(1) bằng?
+**Vận dụng** Nếu \(s(t)=t^3-3t\), v(1) bằng?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-v=3t²−3, v(1)=0 m/s.
+\(v=3t^2-3\), \(v(1)=0\) m/s.
 
-Nếu dùng s(1)=−2 thay v(1), phân biệt vị trí với đạo hàm.
+Nếu dùng \(s(1)=-2\) thay v(1), phân biệt vị trí với đạo hàm.
 
 
 **Kiểm lỗi**
 
-Nếu đánh đồng s(t) với vận tốc v(t), đọc **Kiến thức 5.1**, làm **Bài 83** và **Bài 85**; lấy s'(t), xét dấu vận tốc và cuối cùng mới lấy |v|.
+Nếu đánh đồng \(s(t)\) với vận tốc \(v(t)\), đọc **Kiến thức 5.1**, làm **Bài 83** và **Bài 85**; lấy \(s'(t)\), xét dấu vận tốc và cuối cùng mới lấy \(|v|\).
 
 </details>
 
@@ -846,29 +846,29 @@ Nếu đánh đồng s(t) với vận tốc v(t), đọc **Kiến thức 5.1**, 
 
 <!-- LESSON_ID: TOP09-M26; OUTCOME_ID: TOP09-O26 -->
 
-> **ĐỊNH NGHĨA — Đạo hàm bậc hai.** Đạo hàm của đạo hàm là đạo hàm cấp hai. Một tốc độ biến đổi có thể chính nó biến thiên không? Để xác định điều đó, cần xét f' tồn tại trên khoảng và có thể tiếp tục lấy đạo hàm. Nếu f' khả vi, f''=(f')'. Đây là phép lấy đạo hàm **hai lần**, không phải bình phương (f')². Nếu f' chỉ tồn tại tại một điểm nhưng không tồn tại trong lân cận, cần xem định nghĩa f'' cẩn thận. f'' có thể là 0 với hàm bậc nhất.
+> **ĐỊNH NGHĨA — Đạo hàm bậc hai.** Đạo hàm của đạo hàm là đạo hàm cấp hai. Một tốc độ biến đổi có thể chính nó biến thiên không? Để xác định điều đó, cần xét \(f'\) tồn tại trên khoảng và có thể tiếp tục lấy đạo hàm. Nếu \(f'\) khả vi, \(f''=(f')'\). Đây là phép lấy đạo hàm **hai lần**, không phải bình phương \((f')^2\). Nếu \(f'\) chỉ tồn tại tại một điểm nhưng không tồn tại trong lân cận, cần xem định nghĩa \(f''\) cẩn thận. \(f''\) có thể là 0 với hàm bậc nhất.
 
-Chẳng hạn, f=x³: f'=3x², f''=6x. Chọn lấy đạo hàm lại vì ta muốn tốc độ biến thiên của độ dốc.
+Chẳng hạn, \(f=x^3\): \(f'=3x^2\), \(f''=6x\). Chọn lấy đạo hàm lại vì ta muốn tốc độ biến thiên của độ dốc.
 
 **Ví dụ**
 
-**Đề bài:** Cho f(x)=x⁴−3x. Tính f′, f″ và f″(1).
+**Đề bài:** Cho \(f(x)=x^4-3x\). Tính \(f'\), \(f''\) và \(f''(1)\).
 
-**Lời giải:** f′=4x³−3; lấy đạo hàm thêm lần nữa f″=12x² và f″(1)=12. Không bình phương đạo hàm cấp nhất.
+**Lời giải:** \(f'=4x^3-3\); lấy đạo hàm thêm lần nữa \(f''=12x^2\) và \(f''(1)=12\). Không bình phương đạo hàm cấp nhất.
 
-**Vận dụng** f=x²+3x thì f'' bằng?
+**Vận dụng** \(f=x^2+3x\) thì \(f''\) bằng?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-f'=2x+3, f''=2.
+\(f'=2x+3\), \(f''=2\).
 
-Nếu ra (2x+3)², bạn đã bình phương f'.
+Nếu ra \((2x+3)^2\), bạn đã bình phương \(f'\).
 
 
 **Kiểm lỗi**
 
-Nếu viết f''=(f')², đọc **Kiến thức 5.2**, làm **Bài 86** và **Bài 88**; đạo hàm lần hai là đạo hàm của f'.
+Nếu viết \(f''=(f')^2\), đọc **Kiến thức 5.2**, làm **Bài 86** và **Bài 88**; đạo hàm lần hai là đạo hàm của \(f'\).
 
 </details>
 
@@ -876,29 +876,29 @@ Nếu viết f''=(f')², đọc **Kiến thức 5.2**, làm **Bài 86** và **B�
 
 <!-- LESSON_ID: TOP09-M27; OUTCOME_ID: TOP09-O27 -->
 
-> **CÔNG THỨC — Đạo hàm cấp hai của đa thức.** Với đa thức, tính đạo hàm cấp hai qua hai bước. Vì sao bậc của đa thức giảm sau mỗi lượt đạo hàm? Ta đã biết (x^n)'=n x^{n−1} và đạo hàm tổng. Lấy đạo hàm bậc nhất từng hạng rồi áp lần thứ hai; với đa thức n≥2, (x^n)''=n(n−1)x^{n−2}. Hằng và hạng tuyến tính có đạo hàm cấp hai bằng0. Kiểm cả kết quả f' lẫn f'' thay vì nhảy thẳng dễ thiếu hệ số.
+> **CÔNG THỨC — Đạo hàm cấp hai của đa thức.** Với đa thức, tính đạo hàm cấp hai qua hai bước. Vì sao bậc của đa thức giảm sau mỗi lượt đạo hàm? Ta đã biết \((x^n)'=nx^{n-1}\) và đạo hàm tổng. Lấy đạo hàm bậc nhất từng hạng rồi áp lần thứ hai; với đa thức \(n\ge2\), \((x^n)''=n(n-1)x^{n-2}\). Hằng và hạng tuyến tính có đạo hàm cấp hai bằng0. Kiểm cả kết quả \(f'\) lẫn \(f''\) thay vì nhảy thẳng dễ thiếu hệ số.
 
-Chẳng hạn, f=3x⁴−2x²+1: f'=12x³−4x, f''=36x²−4. Chọn hai bước để không bỏ hệ số.
+Chẳng hạn, \(f=3x^4-2x^2+1\): \(f'=12x^3-4x\), \(f''=36x^2-4\). Chọn hai bước để không bỏ hệ số.
 
 **Ví dụ**
 
-**Đề bài:** Tính đạo hàm hai cấp của f(x)=5x³−2x²+7.
+**Đề bài:** Tính đạo hàm hai cấp của \(f(x)=5x^3-2x^2+7\).
 
-**Lời giải:** f′=15x²−4x; f″=30x−4. Hệ số phải tính ở cả hai lần.
+**Lời giải:** \(f'=15x^2-4x\); \(f''=30x-4\). Hệ số phải tính ở cả hai lần.
 
-**Vận dụng** f=x⁵: f''=?
+**Vận dụng** \(f=x^5\): f''=?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-20x³.
+\(20x^3\).
 
-Nếu ra 5x³, thiếu nhân n−1.
+Nếu ra \(5x^3\), thiếu nhân \(n-1\).
 
 
 **Kiểm lỗi**
 
-Nếu bỏ nhân thêm một hệ số số mũ ở lần đạo hàm thứ hai, đọc **Kiến thức 5.3**, làm **Bài 89** và **Bài 91**; kiểm riêng f' và f''.
+Nếu bỏ nhân thêm một hệ số số mũ ở lần đạo hàm thứ hai, đọc **Kiến thức 5.3**, làm **Bài 89** và **Bài 91**; kiểm riêng \(f'\) và \(f''\).
 
 </details>
 
@@ -906,24 +906,24 @@ Nếu bỏ nhân thêm một hệ số số mũ ở lần đạo hàm thứ hai,
 
 <!-- LESSON_ID: TOP09-M28; OUTCOME_ID: TOP09-O28 -->
 
-> **CÔNG THỨC — Đạo hàm cấp hai của hàm hợp.** Hàm mũ và lượng giác cũng có đạo hàm cấp hai. Tại sao đạo hàm lần hai của sin(2x) lại xuất hiện bình phương hệ số 2? Ta sử dụng quy tắc dây chuyền và đạo hàm sin/cos khi góc đo bằng radian, hàm mũ. Nếu f=sin(kx) thì f'=k cos(kx), f''=−k² sin(kx); nếu f=e^{kx}, f'=k e^{kx}, f''=k² e^{kx}. Hệ số k nhân mỗi lần do dây chuyền, không phải do bình phương f'. Giữ đúng dấu đạo hàm cos. Mẫu hệ số \(k^2\) ở đây do lớp trong \(kx\) có đạo hàm hằng. Nếu lớp trong \(u(x)\) không tuyến tính, phải dùng cả quy tắc tích: \((F(u))''=F''(u)(u')^2+F'(u)u''\) khi các đạo hàm cần thiết tồn tại. Chẳng hạn, \((e^{x^2})'=2xe^{x^2}\), nên \((e^{x^2})''=(2+4x^2)e^{x^2}\), không chỉ là \(4x^2e^{x^2}\).
+> **CÔNG THỨC — Đạo hàm cấp hai của hàm hợp.** Hàm mũ và lượng giác cũng có đạo hàm cấp hai. Tại sao đạo hàm lần hai của sin(2x) lại xuất hiện bình phương hệ số 2? Ta sử dụng quy tắc dây chuyền và đạo hàm sin/cos khi góc đo bằng radian, hàm mũ. Nếu \(f=\sin(kx)\) thì \(f'=k\cos(kx)\), \(f''=-k^2\sin(kx)\); nếu \(f=e^{kx}\), \(f'=ke^{kx}\), \(f''=k^2e^{kx}\). Hệ số k nhân mỗi lần do dây chuyền, không phải do bình phương \(f'\). Giữ đúng dấu đạo hàm cos. Mẫu hệ số \(k^2\) ở đây do lớp trong \(kx\) có đạo hàm hằng. Nếu lớp trong \(u(x)\) không tuyến tính, phải dùng cả quy tắc tích: \((F(u))''=F''(u)(u')^2+F'(u)u''\) khi các đạo hàm cần thiết tồn tại. Chẳng hạn, \((e^{x^2})'=2xe^{x^2}\), nên \((e^{x^2})''=(2+4x^2)e^{x^2}\), không chỉ là \(4x^2e^{x^2}\).
 
-Xét ví dụ: f=cos(3x): f'=−3sin(3x), f''=−9cos(3x). Chọn lấy đạo hàm hai lần, mỗi lần đều dùng quy tắc dây chuyền.
+Xét ví dụ: \(f=\cos(3x)\): \(f'=-3\sin(3x)\), \(f''=-9\cos(3x)\). Chọn lấy đạo hàm hai lần, mỗi lần đều dùng quy tắc dây chuyền.
 
 **Ví dụ**
 
-**Đề bài:** Tính f″(x) nếu f(x)=sin(4x)+e^(3x), góc radian.
+**Đề bài:** Tính \(f''(x)\) nếu \(f(x)=\sin(4x)+e^{3x}\), góc radian.
 
-**Lời giải:** f′=4cos(4x)+3e^(3x), f″=−16sin(4x)+9e^(3x); nhân hệ số trong cả hai lượt.
+**Lời giải:** \(f'=4\cos(4x)+3e^{3x}\), \(f''=-16\sin(4x)+9e^{3x}\); nhân hệ số trong cả hai lượt.
 
-**Vận dụng** f=e^{2x}, f'' là gì?
+**Vận dụng** \(f=e^{2x}\), \(f''\) là gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-4e^{2x}.
+\(4e^{2x}\).
 
-Nếu ra 2e^{2x}, bạn chỉ lấy đạo hàm một lần.
+Nếu ra \(2e^{2x}\), bạn chỉ lấy đạo hàm một lần.
 
 
 **Kiểm lỗi**
@@ -936,11 +936,11 @@ Nếu quên đạo hàm dây chuyền ở lần thứ hai với sin/cos hoặc m
 
 <!-- LESSON_ID: TOP09-M29; OUTCOME_ID: TOP09-O29 -->
 
-Trong chuyển động, đạo hàm vận tốc là gia tốc. Vật có thể đang chuyển động nhưng gia tốc bằng 0 đúng lúc đó không? Ta bắt đầu từ vận tốc v=s' và đơn vị m/s, thời gian s. Từ tọa độ s(t), v(t)=s'(t), a(t)=v'(t)=s''(t). Đơn vị a là m/s²; dấu của a cho biết **vận tốc có hướng** đang tăng hay giảm, không phải trực tiếp tốc độ |v|. Muốn nói nhanh/chậm cần kết hợp dấu v và a.
+Trong chuyển động, đạo hàm vận tốc là gia tốc. Vật có thể đang chuyển động nhưng gia tốc bằng 0 đúng lúc đó không? Ta bắt đầu từ vận tốc \(v=s'\) và đơn vị m/s, thời gian s. Từ tọa độ \(s(t)\), \(v(t)=s'(t)\), \(a(t)=v'(t)=s''(t)\). Đơn vị a là m/s²; dấu của a cho biết **vận tốc có hướng** đang tăng hay giảm, không phải trực tiếp tốc độ \(|v|\). Muốn nói nhanh/chậm cần kết hợp dấu v và a.
 
 Giống như đi từ vận tốc trung bình đến vận tốc tức thời, gia tốc trung bình trong khoảng thời gian \(\Delta t\ne0\) là \(\frac{\Delta v}{\Delta t}\); cho \(\Delta t\to0\) và lấy giới hạn hữu hạn thì được \(a(t)=v'(t)=s''(t)\). Cách hiểu này giải thích vì sao đạo hàm cấp hai biểu diễn sự biến thiên **của vận tốc**, chứ không phải chỉ là thao tác lấy đạo hàm hai lần.
 
-Chẳng hạn, s(t)=t³−3t²+2t: v=3t²−6t+2, a=6t−6; tại t=1, a=0 nhưng v=−1 m/s. Chọn lấy đạo hàm lần hai thay vì kết luận từ s(t).
+Chẳng hạn, \(s(t)=t^3-3t^2+2t\): \(v=3t^2-6t+2\), \(a=6t-6\); tại \(t=1\), \(a=0\) nhưng \(v=-1\) m/s. Chọn lấy đạo hàm lần hai thay vì kết luận từ \(s(t)\).
 
 > **CÔNG THỨC — Gia tốc.** Đọc riêng đồ thị của \(s(t)=t^3-6t^2+9t\) trên \([0;4]\): \(v(t)=3(t-1)(t-3)\), \(a(t)=6(t-2)\). Vận tốc dương trước 1 và sau 3, âm giữa 1 và 3; gia tốc âm trước 2, dương sau 2. Vì vậy tốc độ \(|v|\) **giảm** trên (0,1) và (2,3), **tăng** trên (1,2) và (3,4). Tại \(t=1{,}2{,}3\) phải kiểm ranh giới. Đây là đồ thị của một chuyển động khác với ví dụ \(s=t^3-3t^2+2t\) vừa tính.
 
@@ -950,23 +950,23 @@ Chẳng hạn, s(t)=t³−3t²+2t: v=3t²−6t+2, a=6t−6; tại t=1, a=0 nhưn
 
 **Ví dụ**
 
-**Đề bài:** s(t)=t³−4t²+t (m), t≥0 (s). Tính v(1), a(1).
+**Đề bài:** \(s(t)=t^3-4t^2+t\) (m), \(t\ge0\) (s). Tính v(1), a(1).
 
-**Lời giải:** v(t)=3t²−8t+1 nên v(1)=−4 m/s; a(t)=6t−8 nên a(1)=−2 m/s². Tốc độ đang tăng vì v,a cùng dấu tại t=1.
+**Lời giải:** \(v(t)=3t^2-8t+1\) nên \(v(1)=-4\) m/s; \(a(t)=6t-8\) nên \(a(1)=-2\) m/s². Tốc độ đang tăng vì v,a cùng dấu tại \(t=1\).
 
-**Vận dụng** s(t)=5t² (m), a(t) bằng?
+**Vận dụng** \(s(t)=5t^2\) (m), a(t) bằng?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-v=10t m/s, a=10 m/s².
+\(v=10t\) m/s, \(a=10\) m/s².
 
 Nếu nhầm đơn vị m/s, đó là vận tốc chứ không phải gia tốc.
 
 
 **Kiểm lỗi**
 
-Nếu nhầm gia tốc với vận tốc hoặc đơn vị m/s² thành m/s, đọc **Kiến thức 5.5**, làm **Bài 97** và **Bài 99**, tính a(t)=s''(t) sau v(t)=s'(t).
+Nếu nhầm gia tốc với vận tốc hoặc đơn vị m/s² thành m/s, đọc **Kiến thức 5.5**, làm **Bài 97** và **Bài 99**, tính \(a(t)=s''(t)\) sau \(v(t)=s'(t)\).
 
 </details>
 
@@ -974,29 +974,29 @@ Nếu nhầm gia tốc với vận tốc hoặc đơn vị m/s² thành m/s, đ�
 
 <!-- LESSON_ID: TOP09-M30; OUTCOME_ID: TOP09-O30 -->
 
-> **TÍNH CHẤT — Dấu vận tốc và gia tốc.** Dấu gia tốc phải đọc cùng dấu vận tốc. Gia tốc âm có nhất thiết khiến vật chậm đi? Cần nhớ tốc độ |v| và dấu của hai hàm v,a. Khi \(v>0\), tốc độ \(|v|=v\) có đạo hàm bằng \(a\); khi \(v<0\), tốc độ \(|v|=-v\) có đạo hàm bằng \(-a\). Vì thế, với \(v\ne0\), vận tốc và gia tốc cùng dấu thì tốc độ có tốc độ biến thiên dương, trái dấu thì âm. Nếu \(v=0\) hoặc \(a=0\), không tự kết luận từ quy tắc hai dấu khác 0; xét hành vi cụ thể. Gia tốc âm chỉ nói vận tốc có hướng đang giảm tức thời.
+> **TÍNH CHẤT — Dấu vận tốc và gia tốc.** Dấu gia tốc phải đọc cùng dấu vận tốc. Gia tốc âm có nhất thiết khiến vật chậm đi? Cần nhớ tốc độ \(|v|\) và dấu của hai hàm v,a. Khi \(v>0\), tốc độ \(|v|=v\) có đạo hàm bằng \(a\); khi \(v<0\), tốc độ \(|v|=-v\) có đạo hàm bằng \(-a\). Vì thế, với \(v\ne0\), vận tốc và gia tốc cùng dấu thì tốc độ có tốc độ biến thiên dương, trái dấu thì âm. Nếu \(v=0\) hoặc \(a=0\), không tự kết luận từ quy tắc hai dấu khác 0; xét hành vi cụ thể. Gia tốc âm chỉ nói vận tốc có hướng đang giảm tức thời.
 
-Chẳng hạn, s(t)=−t², t>0: v=−2t<0, a=−2<0. Vì cùng dấu, |v|=2t đang tăng dù gia tốc âm. Chọn xét tích v·a để không suy từ dấu gia tốc riêng.
+Chẳng hạn, \(s(t)=-t^2\), \(t>0\): \(v=-2t<0\), \(a=-2<0\). Vì cùng dấu, \(|v|=2t\) đang tăng dù gia tốc âm. Chọn xét tích \(v\cdot a\) để không suy từ dấu gia tốc riêng.
 
 **Ví dụ**
 
-**Đề bài:** s(t)=t³−9t²+12t, t≥0. Ở t=1, a âm khiến tốc độ giảm không?
+**Đề bài:** \(s(t)=t^3-9t^2+12t\), \(t\ge0\). Ở \(t=1\), a âm khiến tốc độ giảm không?
 
-**Lời giải:** v=3t²−18t+12, a=6t−18. Tại t=1, v=−3, a=−12, tích va>0; tốc độ tăng, không giảm.
+**Lời giải:** \(v=3t^2-18t+12\), \(a=6t-18\). Tại \(t=1\), \(v=-3\), \(a=-12\), tích \(va>0\); tốc độ tăng, không giảm.
 
-**Vận dụng** Nếu v=−3 m/s và a=−2 m/s², tốc độ đang tăng hay giảm?
+**Vận dụng** Nếu \(v=-3\) m/s và \(a=-2\) m/s², tốc độ đang tăng hay giảm?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
 Đang tăng tại thời điểm xét (v,a cùng dấu).
 
-Nếu viết gia tốc âm = giảm tốc độ, hãy thử v âm xem điều gì xảy ra với |v|.
+Nếu viết gia tốc âm = giảm tốc độ, hãy thử v âm xem điều gì xảy ra với \(|v|\).
 
 
 **Kiểm lỗi**
 
-Nếu cho rằng gia tốc âm luôn làm tốc độ giảm, đọc **Kiến thức 5.6**, làm **Bài 101** và **Bài 103**; khi v≠0 hãy xét dấu v·a, lưu ý điểm dừng phải xử lý riêng.
+Nếu cho rằng gia tốc âm luôn làm tốc độ giảm, đọc **Kiến thức 5.6**, làm **Bài 101** và **Bài 103**; khi \(v\ne0\) hãy xét dấu \(v\cdot a\), lưu ý điểm dừng phải xử lý riêng.
 
 </details>
 
@@ -1004,29 +1004,29 @@ Nếu cho rằng gia tốc âm luôn làm tốc độ giảm, đọc **Kiến th
 
 <!-- LESSON_ID: TOP09-M31; OUTCOME_ID: TOP09-O31 -->
 
-> **PHƯƠNG PHÁP — Phối hợp ba đại lượng.** Tổng hợp quy tắc cần kiểm cả miền và đơn vị. Một đề có f, f', f'' yêu cầu những thông tin khác nhau như thế nào? Để xác định điều đó, cần xét tích, chain, giá trị tại điểm, phương trình tiếp tuyến. Đối chiếu yêu cầu: f(a) là tung độ, f'(a) là độ dốc/tốc độ thay đổi, f''(a) là tốc độ thay đổi của độ dốc. Tính đạo hàm đúng với miền rồi dùng f'(a) chứ không dùng f''(a) để lập tiếp tuyến. Đây là bước tổng hợp, không chuyển sang khảo sát cực trị CĐ10.
+> **PHƯƠNG PHÁP — Phối hợp ba đại lượng.** Tổng hợp quy tắc cần kiểm cả miền và đơn vị. Một đề có f, \(f'\), \(f''\) yêu cầu những thông tin khác nhau như thế nào? Để xác định điều đó, cần xét tích, chain, giá trị tại điểm, phương trình tiếp tuyến. Đối chiếu yêu cầu: \(f(a)\) là tung độ, \(f'(a)\) là độ dốc/tốc độ thay đổi, \(f''(a)\) là tốc độ thay đổi của độ dốc. Tính đạo hàm đúng với miền rồi dùng \(f'(a)\) chứ không dùng \(f''(a)\) để lập tiếp tuyến. Đây là bước tổng hợp, không chuyển sang khảo sát cực trị CĐ10.
 
-Chẳng hạn, f=x e^x: f'=e^x(1+x), f''=e^x(2+x); tại x=0 f=0, f'=1, f''=2, tiếp tuyến y=x. Chọn khai triển từng bước và kiểm qua (0,0).
+Chẳng hạn, \(f=xe^x\): \(f'=e^x(1+x)\), \(f''=e^x(2+x)\); tại \(x=0\) f=0, f'=1, \(f''=2\), tiếp tuyến \(y=x\). Chọn khai triển từng bước và kiểm qua \((0;0)\).
 
 **Ví dụ**
 
-**Đề bài:** Với f(x)=(x+2)eˣ, tính f(0), f′(0), f″(0) và tiếp tuyến.
+**Đề bài:** Với \(f(x)=(x+2)e^x\), tính f(0), \(f'(0)\), \(f''(0)\) và tiếp tuyến.
 
-**Lời giải:** f′=eˣ(x+3), f″=eˣ(x+4); tại 0 lần lượt f=2, f′=3, f″=4. Tiếp tuyến y=3x+2, không lấy f″ làm hệ số góc.
+**Lời giải:** \(f'=e^x(x+3)\), \(f''=e^x(x+4)\); tại 0 lần lượt f=2, f′=3, f″=4. Tiếp tuyến \(y=3x+2\), không lấy \(f''\) làm hệ số góc.
 
-**Vận dụng** f=x²+1 tại x=0, tiếp tuyến y=?
+**Vận dụng** \(f=x^2+1\) tại \(x=0\), tiếp tuyến y=?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-f(0)=1, f'(0)=0 ⇒ y=1; f''=2 không phải độ dốc.
+\(f(0)=1\), \(f'(0)=0\) ⇒ \(y=1\); \(f''=2\) không phải độ dốc.
 
-Nếu đặt f'' vào phương trình tiếp tuyến, quay lại Kiến thức 2.1–2.2 về hệ số góc và phương trình tiếp tuyến.
+Nếu đặt \(f''\) vào phương trình tiếp tuyến, quay lại Kiến thức 2.1–2.2 về hệ số góc và phương trình tiếp tuyến.
 
 
 **Kiểm lỗi**
 
-Nếu đặt f''(a) vào hệ số góc tiếp tuyến thay f'(a), đọc **Kiến thức 5.7**, giải **Bài 105** và **Bài 107**; kiểm điểm tiếp xúc và đạo hàm cấp một.
+Nếu đặt \(f''(a)\) vào hệ số góc tiếp tuyến thay \(f'(a)\), đọc **Kiến thức 5.7**, giải **Bài 105** và **Bài 107**; kiểm điểm tiếp xúc và đạo hàm cấp một.
 
 </details>
 
@@ -1034,14 +1034,14 @@ Nếu đặt f''(a) vào hệ số góc tiếp tuyến thay f'(a), đọc **Ki�
 
 <!-- LESSON_ID: TOP09-M32; OUTCOME_ID: TOP09-O32 -->
 
-Tốc độ tức thời còn dùng để xấp xỉ sự thay đổi rất nhỏ. Khi đầu vào đổi rất nhỏ, có cần tính lại toàn bộ giá trị hàm mới để dự đoán đầu ra không? Ta đã biết giới hạn đạo hàm f'(a), ký hiệu Δx, đại số bình phương. Nếu \(f\) khả vi tại \(a\), đặt phần sai lệch \(r(\Delta x)=f(a+\Delta x)-f(a)-f'(a)\Delta x\). Từ định nghĩa đạo hàm, với \(\Delta x\ne0\),
+Tốc độ tức thời còn dùng để xấp xỉ sự thay đổi rất nhỏ. Khi đầu vào đổi rất nhỏ, có cần tính lại toàn bộ giá trị hàm mới để dự đoán đầu ra không? Ta đã biết giới hạn đạo hàm \(f'(a)\), ký hiệu Δx, đại số bình phương. Nếu \(f\) khả vi tại \(a\), đặt phần sai lệch \(r(\Delta x)=f(a+\Delta x)-f(a)-f'(a)\Delta x\). Từ định nghĩa đạo hàm, với \(\Delta x\ne0\),
 \[
 \frac{r(\Delta x)}{\Delta x}
 =\frac{f(a+\Delta x)-f(a)}{\Delta x}-f'(a)\longrightarrow0.
 \]
-Nghĩa là sai lệch nhỏ hơn bậc của bước thay đổi khi bước tiến về 0. Ví dụ với \(f(x)=x^2\), khai triển cho \(r(\Delta x)=(\Delta x)^2\), nên \(\frac{r(\Delta x)}{\Delta x}=\Delta x\to0\). Ta ký hiệu phần sai lệch có tính chất này là \(o(\Delta x)\) và viết \(f(a+\Delta x)-f(a)=f'(a)\Delta x+o(\Delta x)\). Phần tuyến tính dy=f'(a)dx với dx=Δx gọi là **vi phân**; với bước đủ nhỏ, Δy≈dy, KHÔNG luôn bằng nhau. Vi phân là công cụ xấp xỉ cục bộ, không nên gọi là toàn bộ 'độ tăng'. Đây là một **kiến thức mở rộng của Chuyên đề**, không thay thế các kiến thức cơ bản về đạo hàm vừa học.
+Nghĩa là sai lệch nhỏ hơn bậc của bước thay đổi khi bước tiến về 0. Ví dụ với \(f(x)=x^2\), khai triển cho \(r(\Delta x)=(\Delta x)^2\), nên \(\frac{r(\Delta x)}{\Delta x}=\Delta x\to0\). Ta ký hiệu phần sai lệch có tính chất này là \(o(\Delta x)\) và viết \(f(a+\Delta x)-f(a)=f'(a)\Delta x+o(\Delta x)\). Phần tuyến tính \(dy=f'(a)\,dx\) với \(dx=\Delta x\) gọi là **vi phân**; với bước đủ nhỏ, \(\Delta y\approx dy\), KHÔNG luôn bằng nhau. Vi phân là công cụ xấp xỉ cục bộ, không nên gọi là toàn bộ 'độ tăng'. Đây là một **kiến thức mở rộng của Chuyên đề**, không thay thế các kiến thức cơ bản về đạo hàm vừa học.
 
-Chẳng hạn, f=x²,a=3,dx=0,02: f'(3)=6 nên dy=0,12; Δy=(3,02)²−9=0,1204, sai lệch0,0004=(dx)². Chọn vi phân để ước lượng nhanh và định lượng phần dư, không hứa chính xác cho bước lớn.
+Chẳng hạn, \(f=x^2\),\(a=3\),\(dx=0{,}02\): \(f'(3)=6\) nên \(dy=0{,}12\); \(\Delta y=(3{,}02)^2-9=0{,}1204\), sai lệch0,0004=(dx)². Chọn vi phân để ước lượng nhanh và định lượng phần dư, không hứa chính xác cho bước lớn.
 
 > **CÔNG THỨC — Vi phân xấp xỉ.** Ngay trên hình, chọn \(f(x)=x^2\), \(a=2\), \(dx=0{,}1\). Vì \(f'(2)=4\), vi phân dự đoán \(dy=4\cdot0{,}1=0{,}4\). Độ tăng thật là \(\Delta y=(2{,}1)^2-2^2=0{,}41\), lớn hơn 0,01. Bước lớn hơn có thể tạo sai số đáng kể hơn; ví dụ \(a=3,dx=0{,}02\) phía trên là **trường hợp khác**, không phải các cột đang vẽ.
 
@@ -1051,9 +1051,9 @@ Chẳng hạn, f=x²,a=3,dx=0,02: f'(3)=6 nên dy=0,12; Δy=(3,02)²−9=0,1204,
 
 **Ví dụ**
 
-**Đề bài:** Dùng vi phân ước lượng (4,05)²−4² và tính sai số.
+**Đề bài:** Dùng vi phân ước lượng \((4{,}05)^2-4^2\) và tính sai số.
 
-**Lời giải:** f=x², a=4, dx=0,05. dy=2·4·0,05=0,4; Δy=0,4025. Sai lệch Δy−dy=0,0025=(dx)². Hình minh họa dùng a=2.
+**Lời giải:** \(f=x^2\), \(a=4\), \(dx=0{,}05\). \(dy=2\cdot4\cdot0{,}05=0{,}4\); \(\Delta y=0{,}4025\). Sai lệch \(\Delta y-dy=0{,}0025=(dx)^2\). Hình minh họa dùng \(a=2\).
 
 **Vận dụng** Với \(f(x)=\frac1x\), \(a=2\), \(dx=0{,}2\): (a) kiểm miền từ \(a\) tới \(a+dx\); (b) tính vi phân \(dy\) và độ tăng thật \(\Delta y\); (c) tìm \(|\Delta y-dy|\) và giải thích vì sao vi phân chỉ là xấp xỉ.
 
