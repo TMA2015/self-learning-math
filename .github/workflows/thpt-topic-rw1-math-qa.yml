@@ -1,4 +1,4 @@
-name: THPT Topic R-W1 Knowledge math and tab QA (no deploy)
+name: THPT Topic Knowledge shared math and tab QA (no deploy)
 on:
   pull_request:
     branches: [main]
@@ -7,6 +7,8 @@ on:
       - 'docs/assets/javascripts/thpt-topic01-release-tabs-v1.js'
       - 'docs/assets/javascripts/thpt-topic-w1-golden-v1.js'
       - 'docs/assets/javascripts/thpt-topic-w2-golden-v1.js'
+      - 'docs/assets/javascripts/thpt-topic-w3-golden-v1.js'
+      - 'docs/assets/javascripts/thpt-topic-w4-golden-v1.js'
       - 'scripts/test-thpt-topic-rw1-math-browser.py'
       - 'scripts/test-thpt-release-impact.cjs'
       - '.github/workflows/thpt-topic-rw1-math-qa.yml'
@@ -17,7 +19,11 @@ permissions:
 jobs:
   topic-rw1:
     runs-on: ubuntu-24.04
-    timeout-minutes: 65
+    timeout-minutes: 80
+    strategy:
+      fail-fast: false
+      matrix:
+        wave: [rw1, rw2]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -57,6 +63,14 @@ jobs:
         run: |
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
-      - name: All 126 Knowledge outcomes — Chromium and WebKit, 390/820/1440
+      - name: Shared-renderer candidate scope (no canonical changes)
+        if: github.event.pull_request.head.ref == 'release/shared-knowledge-math-rw2-20261125'
+        run: python scripts/test-thpt-topic-rw1-math-browser.py --shared-candidate-scope
+      - name: Knowledge outcomes — Markdown/HTML/MathJax, Chromium/WebKit, 390/820/1440
         if: steps.impact.outputs.impact != 'METADATA'
-        run: python scripts/test-thpt-topic-rw1-math-browser.py
+        run: |
+          if [[ "${{ matrix.wave }}" == "rw2" ]]; then
+            python scripts/test-thpt-topic-rw1-math-browser.py --rw2
+          else
+            python scripts/test-thpt-topic-rw1-math-browser.py
+          fi
