@@ -16968,6 +16968,127 @@
         "106 remediation links and 114 CĐ12+13 placement records resolve; no record ID, source, version, rubric, status, interaction, replay or assessment change. No fresh SGK/SBT PDF or full parity/Academic/PED PASS; remaining source and canonical cutover decision pending."
       ],
       "next": "CĐ14–15 and relevant shared SGK, preserve previous deltas; resolve remaining Written findings during Written workstream."
+    },
+    "formative_scoped_audit_cp60": {
+      "checkpoint": 60,
+      "baseline": "7728f0b6dfccea7fec3bbe7b8ebd14ce8750fedf",
+      "scope": "CĐ14–15 formative, shared practice and Written read-only, candidate placement mapping",
+      "files": [
+        {
+          "path": "items/cd14.json",
+          "before": "dceaef9e27bc95c06a7a955773e7602ecde84716",
+          "after": "e9175f0798a5fb31f7c62c48e491c3736193f54e",
+          "changed": 23
+        },
+        {
+          "path": "items/cd15.json",
+          "before": "18d0e53c8f530c8e6548a3e6a3d2f76b804f3a48",
+          "after": "14e0fe9bd68537251104fb28b5996287b7afc4f8",
+          "changed": 22
+        },
+        {
+          "path": "items/g10-chvii.json",
+          "before": "c3215c61683360311fd318c888fcc198cfd79e8a",
+          "after": "24f1abf72455abe7cf2c8e69e97fed683f3eb623",
+          "changed": 23
+        },
+        {
+          "path": "items/g11-chiv.json",
+          "before": "c3230d7b98cb1e56e2084d5395f87724cdfd86e1",
+          "after": "e41a9bfdf1f5880eca833d13b9bc2119e481dfd3",
+          "changed": 30
+        },
+        {
+          "path": "placements/cd14.json",
+          "before": "caea674d34fb23aa0540106a73449eff4ea9a191",
+          "after": "05f79f4be661eff787ff703ebbcc0d8d435e9805",
+          "changed": 59
+        },
+        {
+          "path": "placements/cd15.json",
+          "before": "6df9fef21bb91b6b440e56f150a1aed2d47c1eb4",
+          "after": "53e66705d922e5dd596a49673644f32ab2a010e1",
+          "changed": 40
+        }
+      ],
+      "source_evidence": {
+        "cd14_knowledge": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
+        "cd14_practice": "bb6cfd2534b12967c510ea4ef0a826e1306a49e0",
+        "cd14_topic_source": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+        "cd15_practice": "12c0e98af48cae11e1f94196f55b98f7490e1f72",
+        "cd15_replay": "2258d3c5a35f87cc50c48b58c19d978d2e1e89f5",
+        "cd15_topic_source": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+        "g10_written": "ebc70018a168998c7dd43b34c3e195a2b1e15ed7",
+        "g11_source": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b"
+      },
+      "reviewed": {
+        "topic_formative": 45,
+        "shared_g10_formative": 55,
+        "shared_g11_formative": 30,
+        "written_source": 24,
+        "changed_records": 98,
+        "placement_outcomes_filled": 99,
+        "placements_resolve": 185,
+        "d6_targets_resolve": 98,
+        "practice_coverage": [
+          {
+            "TOP14-O01": 3,
+            "TOP14-O02": 4,
+            "TOP14-O03": 3,
+            "TOP14-O04": 3,
+            "TOP14-O05": 3,
+            "TOP14-O06": 3,
+            "TOP14-O07": 3,
+            "TOP14-O08": 4,
+            "TOP14-O09": 4,
+            "TOP14-O10": 3,
+            "TOP14-O11": 3,
+            "TOP14-O12": 4,
+            "TOP14-O13": 4,
+            "TOP14-O14": 3,
+            "TOP14-O15": 3,
+            "TOP14-O16": 4,
+            "TOP14-O17": 4,
+            "TOP14-O18": 4,
+            "TOP14-O19": 4,
+            "TOP14-O20": 2,
+            "TOP14-O21": 4,
+            "TOP14-O22": 3,
+            "TOP14-O23": 3
+          },
+          {
+            "TOP15-O01": 2,
+            "TOP15-O02": 3,
+            "TOP15-O03": 2,
+            "TOP15-O04": 2,
+            "TOP15-O05": 2,
+            "TOP15-O06": 2,
+            "TOP15-O07": 4,
+            "TOP15-O08": 3,
+            "TOP15-O09": 1,
+            "TOP15-O10": 3,
+            "TOP15-O11": 4,
+            "TOP15-O12": 2,
+            "TOP15-O13": 1,
+            "TOP15-O14": 2,
+            "TOP15-O15": 3,
+            "TOP15-O16": 2,
+            "TOP15-O17": 4,
+            "TOP15-O18": 3,
+            "TOP15-O19": 3,
+            "TOP15-O20": 2,
+            "TOP15-O21": 2
+          }
+        ]
+      },
+      "findings": [
+        "CĐ14 P08 parameter for coincident/parallel distinction; P10 new unique system; P14 R²>0 vs point or empty; P16 nonright triangle equidistance; P17 all three line-circle cases; P22 classify number of conic intersections by parameter. 23 specific hints/D6; 23 shared TRY hints/D6; 32 existing shared formative with prior hints retained; two extra transfer TRY records and four G11 KFT retained.",
+        "CĐ15 replaces 10 coordinate-dependent or near-duplicate exercises with synthetic geometry appropriate to G11; P10 quadrilateral section MNQP, P14 check line outside plane, P16 explicit construction and parallel-plane test, P18 geometric counterexample, P22 inverse ratio and valid projection direction. P05 explicitly cross-grade extension after CĐ13. B14-P04 corrected misleading original-nondegenerate assumption, demonstrates collapse to segment; 30 shared D6 additions. No official source edits.",
+        "99 formerly unmapped shared practice/Written candidate placements receive representative primary topic outcomes from actual stem/skill, 59 CĐ14,40 CĐ15. Historical projection untouched. CĐ15 O22 remains Written-only in practice; O09 and O13 thin, requires real formative tasks later, not artificial mapping.",
+        "24 Written source read (9 CĐ14,15 CĐ15); 10 topic Written lack library pointer. TOP14-W03 overlaps SGK W21 Anchor exact core problem, TOP14-W04 same conics as SGK C01/C02, W02 same system as P06; G11 B12-W01/Anchor and TOP15 old P14 share core; TOP15-W01 now near P19, TOP15-W02/W05 depend on Oxyz, W05 rubric units not specified in stem. Written remains reference-only, no ID merges. CĐ15 source knowledge itself uses coordinate examples, not remediated here; fresh SGK/SBT visual parity not verified.",
+        "98 changed records, all 98 D6 target links resolve, all 178 placements resolve, 99 mappings added. No new IDs/version change, no auto-grade, no replay edits. Academic/PED PASS not claimed."
+      ],
+      "next": "CĐ16–17; review remaining CĐ13 shared G12 ChII and CĐ15 O22/O09/O13 depth within relevant scope; Written canonical reconciliation later."
     }
   }
 }
