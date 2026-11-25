@@ -134,7 +134,9 @@ Hai lực xuất phát tại cùng một điểm thường được vẽ thành 
 
 **Đề bài:** Cho A=(2,1), B=(5,3), C=(7,−2). Rút gọn \(\overrightarrow{AB}-\overrightarrow{AC}\) và nhận dạng vectơ thu được.
 
-**Lời giải:** \(\overrightarrow{AB}=B-A=(3,2)\), \(\overrightarrow{AC}=C-A=(5,-3)\) theo tọa độ, nên \(\overrightarrow{AB}-\overrightarrow{AC}=(-2,5)\). Đồng thời \(\overrightarrow{CB}=B-C=(-2,5)\), do đó \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{CB}\). Chỉ phép trừ hai vectơ chung gốc mới triệt A theo cách này.
+**Lời giải:** Trước hết, đảo hướng \(\overrightarrow{AC}\) thành \(\overrightarrow{CA}\). Theo quy tắc nối tiếp mũi tên, đi từ \(C\) tới \(A\), rồi từ \(A\) tới \(B\) chính là đi từ \(C\) tới \(B\). Vì vậy \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{AB}+\overrightarrow{CA}=\overrightarrow{CA}+\overrightarrow{AB}=\overrightarrow{CB}\).
+
+Để kiểm bằng số, độ thay đổi từ \(C=(7,-2)\) tới \(B=(5,3)\) là \(5-7=-2\) theo chiều ngang và \(3-(-2)=5\) theo chiều dọc. Vậy vectơ thu được có tọa độ \((-2;5)\). Quy tắc tọa độ cuối trừ đầu sẽ được giải thích ở Kiến thức 2.1.
 
 **Vận dụng:** Rút gọn \(\overrightarrow{PQ}-\overrightarrow{PR}\) thành vectơ nối R và Q.
 
@@ -426,7 +428,11 @@ Trên hình phối cảnh, hai mũi tên ở các vị trí khác nhau có thể
 
 ![Phân rã độ dịch chuyển A→B theo ba trục](../svg/FIG-G12-CHII-B08-R00.svg)
 
-**Cách đọc hình:** Ba thành phần tọa độ trên các trục hợp thành vectơ tím từ A tới B. Hình chỉ minh họa cách phân tích **một vectơ**, không biểu diễn góc giữa hai vectơ khác nhau; muốn xác định góc của hai vectơ trong ví dụ tiếp theo, dùng tích vô hướng của các cặp thành phần tương ứng, không đo góc trên phối cảnh.
+**Cách đọc hình:** Ba thành phần tọa độ trên các trục hợp thành vectơ tím từ A tới B. Hình chỉ minh họa cách phân tích **một vectơ**. Để hiểu góc giữa hai vectơ, hãy tịnh tiến cả hai mũi tên về một gốc chung, giữ nguyên hướng và độ dài; góc nằm giữa hai tia xuất phát từ gốc ấy. Không đo góc thật trên hình phối cảnh.
+
+![Hai vectơ vuông góc sau khi tịnh tiến về chung gốc](../../visuals/THPT_TOPIC13_COMMON_ORIGIN_ANGLE.svg)
+
+*Đọc hình:* Hai vectơ khác không nằm trong một mặt phẳng, kể cả khi ban đầu được đặt ở các vị trí khác nhau trong không gian. Hình minh họa riêng trường hợp góc \(90^\circ\); dùng tích vô hướng để kiểm góc của cặp vectơ đã cho, không suy từ hình phác thảo.
 
 Tích vô hướng còn cho phép tính **độ dài của tổng và hiệu** từ độ dài hai vectơ và góc giữa chúng. Vì \(\vec u\cdot\vec u=|\vec u|^2\), tích vô hướng giao hoán và phân phối theo phép cộng, nên:
 \[
@@ -452,7 +458,7 @@ Các tính chất này đúng trong mặt phẳng và không gian; muốn suy ra
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Có: dot=1−1+0=0, cả hai khác không.
+Có: tích vô hướng \(\vec u\cdot\vec v=1\cdot1+1\cdot(-1)+0\cdot5=0\). Cả hai vectơ khác không, nên góc giữa chúng bằng \(90^\circ\).
 
 **Khi làm sai:** Nếu hình xiên đánh lừa thị giác, dùng phép tích vô hướng.
 
