@@ -611,3 +611,9 @@ body.thpt-g11-sgk-readable .md-content__inner > :is(h2,h3) {
     margin-block: .8em 1.2em;
   }
 }
+
+/* OWNER THPT 6+1: only the six-group nav. Keep the previous three-column
+ * desktop track width and existing mobile two-column dimensions. */
+@media (width > 38rem){
+ [data-thpt-r4-shortcut-dialog] details.roadmap-main-quick > nav.roadmap-main-quick__links{grid-template-columns:repeat(2,minmax(0,calc((100% - .7rem)/3)));justify-content:center}
+}
