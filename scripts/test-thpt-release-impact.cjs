@@ -688,7 +688,7 @@ const TOPIC_DISCLOSURE_FILES=new Set(["docs/assets/javascripts/math-details-v1.j
 function isExactTopicDisclosures(files){
  const crypto=require("node:crypto"),blob=p=>{const b=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
  return files.length===TOPIC_DISCLOSURE_FILES.size&&new Set(files).size===files.length&&files.every(f=>TOPIC_DISCLOSURE_FILES.has(f))&&
-  [["docs/assets/javascripts/math-details-v1.js","5db3b192527694119596bbe3e3eb46a8fce35d89"],["docs/assets/stylesheets/thpt-topic01-release-v1.css","e32a83302b0bbd303cc8fe2d261dfe4fd6320319"],["docs/assets/stylesheets/thpt-topic-w1-golden-v1.css","81cf00277e9db1e481f78ddfe00fbdb4eebaaefa"]].every(([p,sha])=>blob(p)===sha)&&fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8").includes("TOPIC_SGK_DISCLOSURE_ONLY");
+  [["docs/assets/javascripts/math-details-v1.js","5db3b192527694119596bbe3e3eb46a8fce35d89"],["docs/assets/stylesheets/thpt-topic01-release-v1.css","32b66dcfd16dc778490f0560b90ae54a62f0fb7b"],["docs/assets/stylesheets/thpt-topic-w1-golden-v1.css","81cf00277e9db1e481f78ddfe00fbdb4eebaaefa"]].every(([p,sha])=>blob(p)===sha)&&fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8").includes("TOPIC_SGK_DISCLOSURE_ONLY");
 }
 function proveTopicDisclosures(){
  const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"});
