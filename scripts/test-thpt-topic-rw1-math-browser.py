@@ -15,6 +15,7 @@ from playwright.sync_api import sync_playwright, expect
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 BASE_SHA="bb1c4eead91282f67478dd615a41739a6091c2ff"
 FILES={
+    "scripts/test-thpt-topic01-release-intake.cjs",
     "docs/assets/javascripts/math-details-v1.js",
     "docs/assets/javascripts/thpt-topic01-release-tabs-v1.js",
     "docs/assets/javascripts/thpt-topic-w1-golden-v1.js",
@@ -40,7 +41,7 @@ def scope():
     for f in FILES:
         if f.endswith(".js"):
             subprocess.run(["node","--check",f],cwd=ROOT,check=True)
-    print("PASS RW1 exact nine paths; all canonical content/Q18/SVG/assessment and unrelated runtime source unchanged",flush=True)
+    print("PASS RW1 exact ten paths; all canonical content/Q18/SVG/assessment and unrelated runtime source unchanged",flush=True)
 if "--scope" in sys.argv:
     scope()
     sys.exit(0)
