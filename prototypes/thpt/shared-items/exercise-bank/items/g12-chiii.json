@@ -10,7 +10,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "1",
-    "hints": [],
+    "hints": [
+      "Cộng các tần số kể cả tần số 0."
+    ],
     "rubric": null,
     "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.",
     "interaction": {
@@ -26,7 +28,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Cỡ mẫu là số quan sát, lớp rỗng không đóng góp. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P01."
   },
   {
     "item_id": "THPT-G12-B09-P01",
@@ -39,7 +42,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "2",
-    "hints": [],
+    "hints": [
+      "Đọc tần số lớp giữa."
+    ],
     "rubric": null,
     "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.",
     "interaction": {
@@ -55,7 +60,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Tần số 0 nghĩa là không có quan sát thuộc lớp. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-C01."
   },
   {
     "item_id": "THPT-G12-B09-P02",
@@ -68,7 +74,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "3",
-    "hints": [],
+    "hints": [
+      "Cùng tần số chỉ cho biết cùng số lượng ở mỗi lớp nếu lớp giống nhau."
+    ],
     "rubric": null,
     "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.",
     "interaction": {
@@ -84,7 +92,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không suy dữ liệu thô bằng nhau. Ôn CĐ22 mục 3.1; luyện THPT-G11-TOPSTAT-ADD06."
   },
   {
     "item_id": "THPT-G12-B09-C02",
@@ -97,7 +106,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "1",
-    "hints": [],
+    "hints": [
+      "Bỏ lớp rỗng ở hai biên rồi tìm cận hai lớp dương ngoài cùng."
+    ],
     "rubric": null,
     "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.",
     "interaction": {
@@ -113,7 +124,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy 20−0 khi hai lớp biên không có dữ liệu. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P03."
   },
   {
     "item_id": "THPT-G12-B09-P03",
@@ -126,7 +138,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "2",
-    "hints": [],
+    "hints": [
+      "Lấy cận trên lớp cuối dương trừ cận dưới lớp đầu dương."
+    ],
     "rubric": null,
     "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.",
     "interaction": {
@@ -142,7 +156,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Lớp rỗng ở giữa không thay hai biên. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-C02."
   },
   {
     "item_id": "THPT-G12-B09-P04",
@@ -155,7 +170,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "3",
-    "hints": [],
+    "hints": [
+      "Tính R gốc từ max,min; R ghép từ cận lớp có dữ liệu."
+    ],
     "rubric": null,
     "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.",
     "interaction": {
@@ -171,7 +188,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không đồng nhất hai khoảng biến thiên; nhóm nửa kín có cận phải không phải quan sát thật. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P03."
   },
   {
     "item_id": "THPT-G12-B09-C03",
@@ -184,7 +202,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "1",
-    "hints": [],
+    "hints": [
+      "Xem cận cuối thay đổi thế nào."
+    ],
     "rubric": null,
     "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.",
     "interaction": {
@@ -200,7 +220,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "R nhạy với quan sát cực trị, không đại diện toàn bộ phân bố. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P05."
   },
   {
     "item_id": "THPT-G12-B09-P05",
@@ -213,7 +234,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "2",
-    "hints": [],
+    "hints": [
+      "Tính hai khoảng từ cận đầu 10 và cận cuối cũ/mới."
+    ],
     "rubric": null,
     "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.",
     "interaction": {
@@ -229,7 +252,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy độ rộng riêng của lớp mới làm mức tăng R. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P04."
   },
   {
     "item_id": "THPT-G12-B09-P06",
@@ -242,7 +266,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "3",
-    "hints": [],
+    "hints": [
+      "So R và IQR: chúng đo phạm vi khác nhau."
+    ],
     "rubric": null,
     "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.",
     "interaction": {
@@ -258,7 +284,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "R lớn không đảm bảo IQR lớn; IQR dựa vào nửa giữa. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P12."
   },
   {
     "item_id": "THPT-G12-B09-C04",
@@ -271,7 +298,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "1",
-    "hints": [],
+    "hints": [
+      "Tính n/4 rồi xem cộng dồn."
+    ],
     "rubric": null,
     "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.",
     "interaction": {
@@ -287,7 +316,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không chọn lớp theo tần số lớn nhất. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P08."
   },
   {
     "item_id": "THPT-G12-B09-P07",
@@ -300,7 +330,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "2",
-    "hints": [],
+    "hints": [
+      "Tính 3n/4 rồi tìm lớp từ tích lũy."
+    ],
     "rubric": null,
     "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.",
     "interaction": {
@@ -316,20 +348,23 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không dùng n/4 để tìm Q3. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P08."
   },
   {
     "item_id": "THPT-G12-B09-P08",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Tần số (2,6,10,6) có n=24. Nêu vị trí n/4 và 3n/4 và hai lớp tương ứng.",
-    "answer_key": "6 và 18; lớp 2 và lớp 3",
-    "worked_solution": "Cộng dồn 2,8,18,24; vị trí 6 nằm lớp 2; vị trí 18 ở biên trên lớp 3.",
+    "stem": "Tần số (2,6,10,6), n=24, các nhóm liền nhau. Nêu vị trí n/4, 3n/4 và lớp dùng để nội suy từng tứ phân vị; giải thích trường hợp đúng biên.",
+    "answer_key": "6 và 18; lớp 2 và lớp 3 để nội suy; Q3 bằng biên chung lớp 3 và lớp 4.",
+    "worked_solution": "Tích lũy 2,8,18,24. n/4=6 nằm trong phần tích lũy của lớp 2. 3n/4=18 đúng tích lũy đến lớp 3; nội suy tại lớp 3 cho cận trên, bằng cận dưới lớp 4 vì các lớp liền nhau. Không khẳng định giá trị ở cận phải thuộc khoảng nửa kín lớp 3.",
     "skill_ids": [
       "G12-CHIII-B09-O04"
     ],
     "problem_type_id": null,
     "difficulty": "3",
-    "hints": [],
+    "hints": [
+      "Cộng dồn 2,8,18,24; tìm vị trí 6 và 18."
+    ],
     "rubric": null,
     "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.",
     "interaction": {
@@ -345,7 +380,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Tại mốc 18 nội suy lớp thứ ba cho biên trên; không nói giá trị thuộc khoảng nửa kín khi bằng biên phải. Ôn CĐ22 mục 3.2; luyện THPT-G11-B09-P08."
   },
   {
     "item_id": "THPT-G12-B09-C05",
@@ -358,7 +394,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "1",
-    "hints": [],
+    "hints": [
+      "Dùng L=15,h=5,F trước=6,f=14 và n/4."
+    ],
     "rubric": null,
     "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.",
     "interaction": {
@@ -374,7 +412,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy trung điểm lớp làm Q1 mặc định. Ôn CĐ22 mục 3.2; luyện THPT-G11-B09-P03."
   },
   {
     "item_id": "THPT-G12-B09-P09",
@@ -387,7 +426,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "2",
-    "hints": [],
+    "hints": [
+      "Dùng vị trí 3n/4 và tần số tích lũy trước lớp."
+    ],
     "rubric": null,
     "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.",
     "interaction": {
@@ -403,7 +444,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không thay 30 bằng n/4=10. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P10."
   },
   {
     "item_id": "THPT-G12-B09-P10",
@@ -416,7 +458,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "3",
-    "hints": [],
+    "hints": [
+      "Tính Q1,Q3 bằng nội suy rồi trừ, làm tròn cuối."
+    ],
     "rubric": null,
     "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.",
     "interaction": {
@@ -432,7 +476,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không làm tròn từng Q quá sớm; IQR không âm. Ôn CĐ22 mục 3.2; luyện THPT-G11-B09-P03."
   },
   {
     "item_id": "THPT-G12-B09-C06",
@@ -445,7 +490,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "1",
-    "hints": [],
+    "hints": [
+      "IQR đo nửa giữa; R đo hai biên ngoài."
+    ],
     "rubric": null,
     "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.",
     "interaction": {
@@ -461,7 +508,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu có giá trị cực trị, R dễ thay đổi hơn IQR. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P12."
   },
   {
     "item_id": "THPT-G12-B09-P11",
@@ -474,7 +522,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "2",
-    "hints": [],
+    "hints": [
+      "So từng chỉ số với cùng đơn vị."
+    ],
     "rubric": null,
     "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.",
     "interaction": {
@@ -490,7 +540,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không kết luận mọi quan sát A xa nhau hơn B. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P12."
   },
   {
     "item_id": "THPT-G12-B09-P12",
@@ -503,7 +554,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "3",
-    "hints": [],
+    "hints": [
+      "Xét tình huống biên xa nhưng nửa giữa tập trung."
+    ],
     "rubric": null,
     "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.",
     "interaction": {
@@ -519,7 +572,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không có thứ tự tuyệt đối về phân tán từ hai chỉ số trái chiều. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P06."
   },
   {
     "item_id": "THPT-G12-B10-C01",
@@ -532,7 +586,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "1",
-    "hints": [],
+    "hints": [
+      "Tính trung điểm hai cận."
+    ],
     "rubric": null,
     "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật.",
     "interaction": {
@@ -548,7 +604,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy cận dưới làm đại diện. Ôn CĐ22 mục 3.3; luyện THPT-G11-B09-C01."
   },
   {
     "item_id": "THPT-G12-B10-P01",
@@ -561,7 +618,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "2",
-    "hints": [],
+    "hints": [
+      "Nhân bốn trung điểm với tần số rồi chia n."
+    ],
     "rubric": null,
     "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật.",
     "interaction": {
@@ -577,7 +636,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Dùng mẫu số 16, không chia 4. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P02."
   },
   {
     "item_id": "THPT-G12-B10-P02",
@@ -590,7 +650,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "3",
-    "hints": [],
+    "hints": [
+      "Nhóm thứ hai có 9 quan sát, phải dùng trọng số."
+    ],
     "rubric": null,
     "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật.",
     "interaction": {
@@ -606,20 +668,23 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy trung bình đơn giản (10+30)/2. Ôn CĐ22 mục 3.3; luyện THPT-G11-TOPSTAT-ADD06."
   },
   {
     "item_id": "THPT-G12-B10-C02",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Các trung điểm (1,3,5,7) có f=(1,3,3,1). Phương sai s² theo mẫu số n là bao nhiêu?",
-    "answer_key": "3",
-    "worked_solution": "x̄=4, tổng f(c−4)²=24; n=8; s²=24/8=3.",
+    "stem": "Các giá trị đại diện (2,4,6,8) có tần số (2,1,1,2). Tính phương sai ghép nhóm với mẫu số n.",
+    "answer_key": "19/3.",
+    "worked_solution": "n=6, trung bình (2·2+4+6+2·8)/6=5. Tổng bình phương độ lệch có trọng số 2·9+1+1+2·9=38. Phương sai 38/6=19/3, dùng mẫu số n.",
     "skill_ids": [
       "G12-CHIII-B10-O02"
     ],
     "problem_type_id": null,
     "difficulty": "1",
-    "hints": [],
+    "hints": [
+      "Tính n và trung bình có trọng số, rồi tổng f(c−x̄)²."
+    ],
     "rubric": null,
     "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.",
     "interaction": {
@@ -635,20 +700,23 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Chia n=8, không chia n−1. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P09."
   },
   {
     "item_id": "THPT-G12-B10-P03",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Nếu 10 quan sát đại diện đều bằng 6, s² bằng bao nhiêu?",
-    "answer_key": "0",
-    "worked_solution": "Mỗi độ lệch c−x̄ bằng 0 nên tổng bình phương bằng 0.",
+    "stem": "Trong phép tính phương sai ghép nhóm, cả 10 quan sát đều được đại diện bằng giá trị 6. Phương sai ghép nhóm bằng bao nhiêu? Có chắc phương sai dữ liệu gốc cũng bằng 0 không?",
+    "answer_key": "Phương sai ghép nhóm 0; không chắc phương sai dữ liệu gốc bằng 0.",
+    "worked_solution": "Trung bình đại diện bằng 6, mỗi độ lệch đại diện bằng 0 nên phương sai ghép nhóm bằng 0. Các quan sát thô trong nhóm có thể khác nhau; việc thay bằng cùng trung điểm làm mất thông tin, không đủ căn cứ nói phương sai gốc bằng 0.",
     "skill_ids": [
       "G12-CHIII-B10-O02"
     ],
     "problem_type_id": null,
     "difficulty": "2",
-    "hints": [],
+    "hints": [
+      "Nếu mọi giá trị đại diện bằng 6, mỗi độ lệch bằng 0."
+    ],
     "rubric": null,
     "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.",
     "interaction": {
@@ -664,7 +732,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Phương sai ghép nhóm bằng 0 không chứng minh mọi dữ liệu thô bằng nhau. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C02."
   },
   {
     "item_id": "THPT-G12-B10-P04",
@@ -677,7 +746,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "3",
-    "hints": [],
+    "hints": [
+      "Phương sai bình phương độ lệch có đơn vị giờ."
+    ],
     "rubric": null,
     "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.",
     "interaction": {
@@ -693,7 +764,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Độ lệch chuẩn mới có đơn vị giờ. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P08."
   },
   {
     "item_id": "THPT-G12-B10-C03",
@@ -706,7 +778,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "1",
-    "hints": [],
+    "hints": [
+      "Dùng trung bình bình phương trừ bình phương trung bình."
+    ],
     "rubric": null,
     "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
     "interaction": {
@@ -722,7 +796,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không nhầm E(c²) với [E(c)]². Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P05."
   },
   {
     "item_id": "THPT-G12-B10-P05",
@@ -735,7 +810,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "2",
-    "hints": [],
+    "hints": [
+      "Tính tổng f·c² rồi chia n."
+    ],
     "rubric": null,
     "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
     "interaction": {
@@ -751,7 +828,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Bình phương từng đại diện trước khi nhân tần số. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C03."
   },
   {
     "item_id": "THPT-G12-B10-P06",
@@ -764,7 +842,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "3",
-    "hints": [],
+    "hints": [
+      "Kiểm phép tính bằng công thức tổng bình phương."
+    ],
     "rubric": null,
     "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
     "interaction": {
@@ -780,7 +860,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Phương sai thật không âm; không tự lấy căn số âm hay luôn ép âm thành 0. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C02."
   },
   {
     "item_id": "THPT-G12-B10-C04",
@@ -793,7 +874,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "1",
-    "hints": [],
+    "hints": [
+      "Lấy căn bậc hai không âm của s²."
+    ],
     "rubric": null,
     "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.",
     "interaction": {
@@ -809,7 +892,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Đơn vị từ cm² trở lại cm. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P08."
   },
   {
     "item_id": "THPT-G12-B10-P07",
@@ -822,7 +906,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "2",
-    "hints": [],
+    "hints": [
+      "Tính căn √75, làm tròn sau cùng."
+    ],
     "rubric": null,
     "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.",
     "interaction": {
@@ -838,7 +924,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không viết 75 phút cho độ lệch chuẩn. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C04."
   },
   {
     "item_id": "THPT-G12-B10-P08",
@@ -851,7 +938,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "3",
-    "hints": [],
+    "hints": [
+      "Lấy √16 và ghi lại đơn vị gốc."
+    ],
     "rubric": null,
     "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.",
     "interaction": {
@@ -867,7 +956,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Phương sai và độ lệch chuẩn khác giá trị và đơn vị. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C04."
   },
   {
     "item_id": "THPT-G12-B10-C05",
@@ -880,7 +970,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "1",
-    "hints": [],
+    "hints": [
+      "Hai mẫu cùng trung bình và đơn vị; so s."
+    ],
     "rubric": null,
     "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp.",
     "interaction": {
@@ -896,20 +988,23 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Chỉ kết luận phân tán quanh trung bình theo s. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-P09."
   },
   {
     "item_id": "THPT-G12-B10-P09",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Tần số A=(2,6,2), B=(4,2,4) trên c=(10,20,30). So s²_A và s²_B.",
-    "answer_key": "40 và 80",
-    "worked_solution": "Cả hai x̄=20; A: (2·100+2·100)/10=40; B: (4·100+4·100)/10=80.",
+    "stem": "Trên các đại diện (10,20,30), mẫu A có tần số (1,8,1), mẫu B có (3,4,3). Tính trung bình, phương sai và so sánh.",
+    "answer_key": "Trung bình đều 20; phương sai A=20, B=60; A ít phân tán hơn.",
+    "worked_solution": "Hai mẫu đều n=10, cân đối quanh 20 nên trung bình 20. A có tổng bình phương độ lệch 1·100+8·0+1·100=200, s²_A=20. B có 3·100+4·0+3·100=600, s²_B=60. A ít phân tán hơn quanh trung bình theo phương sai.",
     "skill_ids": [
       "G12-CHIII-B10-O05"
     ],
     "problem_type_id": null,
     "difficulty": "2",
-    "hints": [],
+    "hints": [
+      "Tính trung bình 20 rồi bình phương độ lệch có trọng số."
+    ],
     "rubric": null,
     "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp.",
     "interaction": {
@@ -925,7 +1020,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không dùng tổng tần số như giá trị dữ liệu; chia n=10. Ôn CĐ22 mục 3.4; luyện THPT-G10-TOPSTAT-ADD05."
   },
   {
     "item_id": "THPT-G12-B10-P10",
@@ -938,7 +1034,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "3",
-    "hints": [],
+    "hints": [
+      "So mức trung bình với mục tiêu và độ phân tán riêng."
+    ],
     "rubric": null,
     "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp.",
     "interaction": {
@@ -954,7 +1052,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Ổn định không đồng nghĩa đạt yêu cầu chất lượng. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-C05."
   },
   {
     "item_id": "THPT-G12-B10-C06",
@@ -967,7 +1066,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "1",
-    "hints": [],
+    "hints": [
+      "So trung bình khác nhau nhiều; độ lệch chuẩn tuyệt đối không đủ."
+    ],
     "rubric": null,
     "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc.",
     "interaction": {
@@ -983,7 +1084,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không suy rủi ro tương đối trực tiếp; CV chỉ tham khảo có điều kiện. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-P11."
   },
   {
     "item_id": "THPT-G12-B10-P11",
@@ -996,7 +1098,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "2",
-    "hints": [],
+    "hints": [
+      "Dùng CV=s/x̄ với trung bình dương trong bối cảnh phù hợp."
+    ],
     "rubric": null,
     "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc.",
     "interaction": {
@@ -1012,7 +1116,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "CV là tỉ số không đơn vị, chỉ tham khảo, không Core. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-P12."
   },
   {
     "item_id": "THPT-G12-B10-P12",
@@ -1025,7 +1130,9 @@
     ],
     "problem_type_id": null,
     "difficulty": "3",
-    "hints": [],
+    "hints": [
+      "Kiểm mẫu số trước khi chia."
+    ],
     "rubric": null,
     "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc.",
     "interaction": {
@@ -1041,7 +1148,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu trung bình 0, CV không xác định; không dùng máy móc cho trung bình âm. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-C06."
   },
   {
     "item_id": "THPT-G12-B09-T01",
