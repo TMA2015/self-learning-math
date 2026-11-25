@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""#1055 X-G.5: R-W1 regression and R-W2 Knowledge candidate. Canonical sources stay locked."""
+"""#1055 X-G.5: all 22 Knowledge pages, ordered source/HTML/browser parity. Canonical sources stay locked."""
 from __future__ import annotations
 import functools
 import http.server
@@ -163,7 +163,9 @@ AUDIT=r"""panel => {
  const wrappers=[...panel.querySelectorAll(".arithmatex")].filter(visible);
  const errors=[...panel.querySelectorAll("mjx-merror,mjx-container mjx-container")].filter(visible).length;
  const missing=wrappers.filter(el=>el.querySelectorAll("mjx-container").length!==1).length;
- const math=[...MathJax.startup.document.math].filter(item=>item.typesetRoot&&panel.contains(item.typesetRoot)).map(item=>item.math.replace(/\s+/g,""));
+ const math=[...MathJax.startup.document.math].filter(item=>item.typesetRoot&&panel.contains(item.typesetRoot))
+  .sort((a,b)=>a.typesetRoot===b.typesetRoot?0:(a.typesetRoot.compareDocumentPosition(b.typesetRoot)&Node.DOCUMENT_POSITION_FOLLOWING)?-1:1)
+  .map(item=>item.math.replace(/\s+/g,""));
  const loose=[...panel.querySelectorAll("details[data-topic-rw1-managed] > mjx-container,details[data-topic-rw1-managed] > span.arithmatex:not([data-topic-rw1-display])")].length;
  return {issues,errors,missing,math,loose,wrappers:wrappers.length};
 }"""
@@ -195,6 +197,7 @@ with sync_playwright() as pw:
                 for key,values in signed.items():
                     source_math=Counter(values); html_math=Counter(inventory[key])
                     assert source_math==html_math,(topic,key,"Markdown -> compiled HTML formula mismatch",list((source_math-html_math).items())[:10],list((html_math-source_math).items())[:10])
+                    assert values==inventory[key],(topic,key,"Markdown -> HTML formula order mismatch")
                 assert len(inventory)==outcomes,(topic,"source outcome inventory",len(inventory),outcomes)
                 expect(page.locator(SUB)).to_have_count(outcomes)
                 assert page.locator("[data-thpt-readiness],[data-mastery-credit]").count()==0
@@ -224,6 +227,7 @@ with sync_playwright() as pw:
                         first=panel.evaluate(AUDIT)
                         expected=Counter(signed[key]);actual=Counter(first["math"])
                         assert expected==actual,(engine,topic,width,key,"formula parity",list((expected-actual).items())[:8],list((actual-expected).items())[:8])
+                        assert first["math"]==signed[key],(engine,topic,width,key,"actual DOM formula order mismatch")
                         assert not first["issues"] and first["errors"]==first["missing"]==first["loose"]==0,(engine,topic,width,key,first)
                         for d in disclosures.all():
                             for _ in range(2):
@@ -234,7 +238,7 @@ with sync_playwright() as pw:
                         # Let toggle callbacks and the queued MathJax work settle.
                         page.wait_for_timeout(120)
                         second=panel.evaluate(AUDIT)
-                        assert Counter(second["math"])==actual and second["errors"]==second["missing"]==second["loose"]==0 and not second["issues"],(engine,topic,width,key,"reopen drift",second)
+                        assert second["math"]==first["math"] and Counter(second["math"])==actual and second["errors"]==second["missing"]==second["loose"]==0 and not second["issues"],(engine,topic,width,key,"reopen drift",second)
                         for d in disclosures.all():
                             d.locator("summary").click()
                             assert d.get_attribute("open") is None
