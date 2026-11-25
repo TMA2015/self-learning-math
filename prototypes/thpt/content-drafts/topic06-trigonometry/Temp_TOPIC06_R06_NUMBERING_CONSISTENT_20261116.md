@@ -604,6 +604,8 @@ Nếu em quên hệ số \(\omega\) khi tính chu kỳ, viết \(\omega T=2\pi\)
 
 Hãy làm trước khi mở **Lời giải**. Nhớ phân biệt tia cuối và số vòng, kiểm điều kiện tan/cot, viết đủ họ nghiệm và lọc mút khoảng. Với tự luận, tự chấm theo rubric sau khi hoàn thành.
 
+Trong các họ nghiệm và họ điểm loại, tham số \(k\) luôn là số nguyên (\(k\in\mathbb Z\)), trừ khi có giới hạn cụ thể hơn.
+
 ## 1. Góc có hướng và đường tròn đơn vị
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B01-C01; ORIGINAL_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3; OUTCOME: TOP06-O01; NOT_NEW_BANK -->
