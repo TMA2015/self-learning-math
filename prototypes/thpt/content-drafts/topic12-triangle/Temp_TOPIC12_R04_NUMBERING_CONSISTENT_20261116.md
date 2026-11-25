@@ -279,7 +279,7 @@ Muốn giải SSA an toàn, tính \(t=b \sin A/a\) trước: nếu \(t>1\), khô
 
 **Vận dụng** \(A=30^{\circ}, a=4, b=10\). Tồn tại tam giác nào thỏa dữ kiện này không?
 
-<details><summary>Đối chiếu</summary>\(\sin B=(10\cdot \sin 30^{\circ})/4=5/4>1\) là vô lý, nên **không tồn tại tam giác**. Không dùng máy tính \(\arcsin (1,25)\); hãy kiểm điều kiện đầu vào. Luyện lại mục 6 rồi làm bài luyện về dữ kiện vô nghiệm.
+<details><summary>Đối chiếu</summary>\(\sin B=(10\cdot \sin 30^{\circ})/4=5/4>1\) là vô lý, nên **không tồn tại tam giác**. Không dùng máy tính \(\arcsin (1,25)\); hãy kiểm điều kiện đầu vào. Đọc lại Kiến thức 2.4 rồi làm Bài luyện 25 về dữ kiện vô nghiệm.
 
 **Kiểm lỗi**
 
@@ -310,7 +310,7 @@ Phải dùng **góc xen giữa chính hai cạnh đang nhân**. Với \(b=8,c=5,
 
 **Lời giải:** sin120°=√3/2>0; S=1/2·5·7·sin120°=35√3/4. Góc tù vẫn cho diện tích dương.
 
-**Vận dụng** Cho \(b=6,c=8,A=60^{\circ}\). Tính diện tích, rồi đối chiếu với vùng tô trên hình ở mục 5.
+**Vận dụng** Cho \(b=6,c=8,A=60^{\circ}\). Tính diện tích; quan sát lại hình góc xen giữa ở Kiến thức 2.1 (Định lí côsin) để xác định đúng hai cạnh kề góc A.
 
 <details><summary>Đối chiếu</summary>\(S=(1/2)\cdot 6\cdot 8\cdot \sin 60^{\circ}=12\sqrt{3}\) đơn vị diện tích. Nếu ra 24√3, em đã quên hệ số 1/2. Luyện bài luyện cùng dạng.
 
@@ -376,7 +376,7 @@ Tại sao không dùng góc 30° thay cho góc C khi chia AB? Vì **AB đối di
 
 **Đề bài:** Hai trạm A,B cách nhau 60 m, góc A=45°, B=60° khi ngắm C. Tìm BC.
 
-**Lời giải:** C=75°. Định lí sin cho BC=60·sin45°/sin75°=60(√3−1) m. AB đối diện C, phải ghép đúng cặp.
+**Lời giải:** \(C=180^\circ-45^\circ-60^\circ=75^\circ\). Vì \(AB\) đối diện \(C\), còn \(BC\) đối diện \(A\), định lí sin cho \(BC=\frac{60\sin45^\circ}{\sin75^\circ}\). Tính \(\sin75^\circ=\sin(45^\circ+30^\circ)=\frac{\sqrt6+\sqrt2}{4}\). Thay vào, \(BC=\frac{120}{\sqrt3+1}=60(\sqrt3-1)\approx43{,}92\) m. Nếu dùng máy tính, chọn chế độ DEG để tính góc theo độ.
 
 **Vận dụng** Nếu \(AB=80\,\mathrm{m}\), góc A=B=45°, độ dài BC và AC có bằng nhau không? Bằng bao nhiêu?
 
