@@ -1,3 +1,4 @@
+<!-- 25/11 #1109: current candidate HOLD; prior signed snapshot below remains historical. Do not intake until exact new source receipt and handoff. -->
 <!-- TOP03_MASTER974_AUTHORING_CURRENT_CONTENT_READY_20261121 -->
 **CURRENT AUTHORING CĐ03 Q18 v3.2.0:** source `38f41f013e75b42605d7a88f9205c20af6315a41`, source commit `dad853ca95cdfb1c5bed125951a6358a9bf4237c`, one signed Q18 `ef40b5871762558959108cf1879155c7e14158fe`, metadata `3ce4f7ec703a437bea18b5389f2968d099cc7c58`, one V2 `b70e42a176f46295e3a8ad7985e9551d9821635f`. Inherited 31 canonical original Practice and 4 Written rubric full academic author direct audit unchanged; two learner PED improvements #977-011/-012: O01 now routes to actual Bài 1/2, and selfcheck public 12 stems now has one voluntary Đối chiếu mapping exact 12 original Practice keys by ID, without copying any answer. 44/44 details balanced; one SGK source footer, 3 original SVG, no private RD1, Final Submit or Mastery. `AUTHOR_SELF_VERIFIED` targeted DELTA_C_PED, not new NotebookLM reviewer PASS or actual website/RELEASE. All archived source/history fields below remain historical. No merge/deploy.
 
@@ -12,7 +13,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: dad853ca95cdfb1c5bed125951a6358a9bf4237c
 AUTHOR_PR: 820
 CURRENT_PR: #888 Draft chỉnh trực tiếp bản thảo của #820, no merge/deploy
@@ -40,7 +41,7 @@ SVG2_PATH: prototypes/thpt/visuals/THPT_TOPIC03_RADICAL_DOMAIN_NUMBERLINE_R01.sv
 SVG2_BLOB: 7ee7acd819d9f6d8eb66bcc4ac8abebfd7d4521b
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: #1109 A01 CURRENT_SOURCE_UPGRADE_PENDING (Work defects + full X-G.5 audit + Q18/V2/REGISTER); historical snapshot only
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
