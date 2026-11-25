@@ -66,7 +66,7 @@ Trên đường tròn đơn vị, dấu của sin và cos được đọc từ t
 
 
 
-Chẳng hạn, tại góc \(135^\circ\) (góc phần tư II) trên hình, \(\cos135^\circ=-\frac{\sqrt2}{2}\) là **hoành độ âm**, còn \(\sin135^\circ=\frac{\sqrt2}{2}\) là **tung độ dương**. Một ví dụ không cần góc đặc biệt: nếu \(\sin\alpha=\frac45\) và \(\alpha\) ở phần tư II, từ \(\cos^2\alpha+\sin^2\alpha=1\) suy ra \(\cos\alpha=-\sqrt{1-\frac{16}{25}}=-\frac35\), \(\tan\alpha=-\frac43\). Hệ thức bình phương xuất phát từ phương trình đường tròn đơn vị \(x^2+y^2=1\). Cả hai trường hợp đều phải chọn dấu từ góc phần tư trước khi lấy căn.
+Chẳng hạn, tại góc \(135^\circ\) (góc phần tư II) trên hình, \(\cos135^\circ=-\frac{\sqrt2}{2}\) là **hoành độ âm**, còn \(\sin135^\circ=\frac{\sqrt2}{2}\) là **tung độ dương**. Vì điểm M nằm trên đường tròn đơn vị, tọa độ của nó thỏa \(x^2+y^2=1\). Thay \(x=\cos\alpha\) và \(y=\sin\alpha\), ta có \(\cos^2\alpha+\sin^2\alpha=1\). Nhờ đó, không cần biết góc đặc biệt: nếu \(\sin\alpha=\frac45\) và \(\alpha\) ở phần tư II, thì \(\cos^2\alpha=1-\frac{16}{25}=\frac9{25}\). Hoành độ âm nên \(\cos\alpha=-\frac35\), rồi \(\tan\alpha=-\frac43\). Cả hai trường hợp đều phải chọn dấu từ góc phần tư trước khi lấy căn.
 
 ![Đường tròn đơn vị và dấu sin cos theo góc](../../visuals/THPT_TOPIC06_UNIT_CIRCLE_QUADRANTS_R01.svg)
 
@@ -209,7 +209,7 @@ Vì sao \(\sin(u+v)\) không thể luôn bằng \(\sin u+\sin v\)?
 > \cos(u-v)=\cos u\cos v+\sin u\sin v.
 > \]
 >
-> Thay v bằng \(-v\), dùng tính chẵn của côsin và tính lẻ của sin, ta được \(\cos(u+v)=\cos u\cos v-\sin u\sin v\). Dùng hệ thức \(\sin t=\cos(\frac{\pi}{2}-t)\) vào công thức côsin hiệu/tổng, ta thu được \(\sin(u\pm v)=\sin u\cos v\pm\cos u\sin v\). Chẳng hạn, với \(u=v=\frac{\pi}{2}\), vế \(\sin(u+v)\) bằng 0 còn \(\sin u+\sin v\) bằng 2, nên không thể tách sin của tổng thành tổng các sin.
+> Thay v bằng \(-v\), dùng tính chẵn của côsin và tính lẻ của sin, ta được \(\cos(u+v)=\cos u\cos v-\sin u\sin v\). Để suy ra công thức sin, viết \(\sin(u+v)=\cos((\frac{\pi}{2}-u)-v)\). Áp dụng công thức côsin hiệu và các hệ thức của góc phụ nhau ở mục 2.2, ta được \(\sin(u+v)=\sin u\cos v+\cos u\sin v\). Thay \(v\) bằng \(-v\) cho công thức sin hiệu. Chẳng hạn, với \(u=v=\frac{\pi}{2}\), vế \(\sin(u+v)\) bằng 0 còn \(\sin u+\sin v\) bằng 2, nên không thể tách sin của tổng thành tổng các sin.
 
 Đối với **tang của tổng/hiệu**, chia công thức cộng của sin cho công thức cộng của cos:
 
@@ -353,9 +353,9 @@ Hai điểm cùng độ cao đã đủ chứng minh chu kỳ chưa?
 - \(\tan x\) tăng trên mỗi khoảng \((-\frac{\pi}{2}+k\pi;\frac{\pi}{2}+k\pi)\).
 - \(\cot x\) giảm trên mỗi khoảng \((k\pi;(k+1)\pi)\), với \(k\in\mathbb Z\).
 
-Đây là các khoảng đủ dài để thấy một nhánh tăng/giảm trọn vẹn; tại các điểm **tiệm cận của tan/cot**, hàm không xác định nên không được gộp hai nhánh thành một khoảng. Tập giá trị sin/cos là \([-1;1]\), còn tan/cot là \(\mathbb R\), bởi mỗi nhánh tan/cot đi từ âm vô hạn đến dương vô hạn hoặc ngược lại.
+Có thể đối chiếu ngay với đồ thị sin ở mục 3.3: từ \(0\) đến \(\frac{\pi}{2}\), đường cong đi lên; từ \(\frac{\pi}{2}\) đến \(\frac{3\pi}{2}\), nó đi xuống; từ \(\frac{3\pi}{2}\) đến \(2\pi\), nó lại đi lên. Nối hai phần tăng qua mốc \(0\) bằng tính tuần hoàn cho khoảng \([-\frac{\pi}{2};\frac{\pi}{2}]\). Các khoảng trên cho thấy một nhánh tăng/giảm trọn vẹn; tại các điểm **tiệm cận của tan/cot**, hàm không xác định nên không được gộp hai nhánh thành một khoảng. Tập giá trị sin/cos là \([-1;1]\), còn tan/cot là \(\mathbb R\), bởi mỗi nhánh tan/cot đi từ âm vô hạn đến dương vô hạn hoặc ngược lại.
 
-Chẳng hạn, \(y=\sin(3x)\) có chu kỳ cơ bản \(\frac{2\pi}{3}\) vì tăng \(x\) lên \(\frac{2\pi}{3}\) làm góc tăng \(2\pi\). Hàm \(y=\cos 2x+\sin 3x\) có chu kỳ \(2\pi\); hai thành phần có tần số khác nhau và chu kỳ chung phù hợp.
+Chẳng hạn, \(y=\sin(3x)\) có chu kỳ cơ bản \(\frac{2\pi}{3}\) vì tăng \(x\) lên \(\frac{2\pi}{3}\) làm góc tăng \(2\pi\). Hàm \(y=\cos(2x)+\sin(3x)\) có một chu kỳ là \(2\pi\), vì khi tăng \(x\) thêm \(2\pi\), hai đối số tăng lần lượt \(4\pi\) và \(6\pi\). Như vậy cả hai giá trị lượng giác đều lặp lại. Để khẳng định đây là chu kỳ dương nhỏ nhất, cần thêm chứng minh; chỉ tìm một chu kỳ chung chưa đủ.
 
 **Ví dụ**
 
@@ -381,7 +381,7 @@ Nếu đo chu kỳ bằng cách nhìn một đỉnh, kiểm đỉnh tiếp theo 
 
 Biên độ khác dịch pha và trục giữa ra sao?
 
-Với sin và cos, dịch pha làm đổi vị trí đỉnh nhưng giữ tính tuần hoàn. Đồ thị giúp đọc điều gì ngoài một bảng giá trị? Cần nhớ mỗi điểm đồ thị là \((x;f(x))\); chuyển dịch ngang/đứng. Hàm \(y=A\sin(\omega x+\varphi)+d\) với \(A\ne0,\ \omega\ne0\) có biên độ \(\lvert A\rvert\), chu kỳ \(\frac{2\pi}{\lvert\omega\rvert}\), trục giữa \(y=d\) và tập giá trị \([d-\lvert A\rvert;d+\lvert A\rvert]\). Pha dịch ngang \(-\frac{\varphi}{\omega}\); không nhầm chiều dấu. Nếu \(\omega=0\), hàm hằng và không có chu kỳ cơ bản.
+Với sin và cos, dịch pha làm đổi vị trí đỉnh nhưng giữ tính tuần hoàn. Đồ thị giúp đọc điều gì ngoài một bảng giá trị? Cần nhớ mỗi điểm đồ thị là \((x;f(x))\); chuyển dịch ngang/đứng. Hàm \(y=A\sin(\omega x+\varphi)+d\) với \(A\ne0,\ \omega\ne0\) có biên độ \(\lvert A\rvert\), chu kỳ \(\frac{2\pi}{\lvert\omega\rvert}\), trục giữa \(y=d\) và tập giá trị \([d-\lvert A\rvert;d+\lvert A\rvert]\). Pha dịch ngang \(-\frac{\varphi}{\omega}\); không nhầm chiều dấu. Nếu \(A=0\) hoặc \(\omega=0\), hàm hằng: mọi số dương đều là chu kỳ nên không có chu kỳ dương nhỏ nhất.
 
 > **PHƯƠNG PHÁP — Biên độ, pha và trục giữa.** Trước hết, hình bên dưới vẽ \(y=\sin x\) trên một chu kỳ \([0;2\pi]\): đi qua \((0;0)\), cực đại 1 ở \(x=\frac{\pi}{2}\), về 0 ở \(\pi\), cực tiểu −1 ở \(\frac{3\pi}{2}\), rồi về 0 ở \(2\pi\). Khi kết hợp các phép biến đổi, ví dụ \(y=-2\sin(3x-\frac{\pi}{2})+1\) có biên độ 2, chu kỳ \(\frac{2\pi}{3}\), đường giữa \(y=1\), tập giá trị \([-1;3]\), dịch pha phải \(\frac{\pi}{6}\) trước khi lật và co giãn đứng. Hình gốc giải thích chu kỳ, **không phải hình của hàm đã biến đổi**.
 
@@ -473,7 +473,7 @@ Giải \(\cos x=0\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(x=\frac{\pi}{2}+k\pi\), \(k\in\mathbb Z\).
+Từ \(\cos x=0\), ta có \(x=\frac{\pi}{2}+2m\pi\) hoặc \(x=-\frac{\pi}{2}+2m\pi\), với \(m\in\mathbb Z\). Họ thứ nhất ứng với \(k=2m\), họ thứ hai ứng với \(k=2m-1\) trong công thức \(x=\frac{\pi}{2}+k\pi\). Mọi số nguyên \(k\) đều chẵn hoặc lẻ, nên hai họ gộp thành đúng một họ \(x=\frac{\pi}{2}+k\pi\), \(k\in\mathbb Z\).
 
 Nếu chỉ viết một nghiệm, quay thêm chu kỳ; nếu \(\lvert a\rvert>1\) thì vô nghiệm. Hãy làm lại Bài 44, Bài 45 và Bài 60 trong phần Luyện tập.
 
@@ -494,6 +494,12 @@ Xét ví dụ: \(\tan\left(x+\frac{\pi}{4}\right)=-1\), suy ra \(x+\frac{\pi}{4}
 **Đề bài.** Giải \(\tan(3x)=\sqrt3\) trên \(\mathbb R\).
 
 **Lời giải.** Điều kiện \(\cos(3x)\ne0\). Từ \(\tan\theta=\sqrt3\) suy ra \(\theta=\frac{\pi}{3}+k\pi\), nên \(x=\frac{\pi}{9}+\frac{k\pi}{3}\), \(k\in\mathbb Z\). Tại mọi nghiệm \(\cos(3x)=\pm\frac12\ne0\), các nghiệm đều hợp lệ.
+
+**Ví dụ**
+
+**Đề bài.** Giải \(\cot(2x)=1\) trên \(\mathbb R\).
+
+**Lời giải.** Điều kiện \(\sin(2x)\ne0\). Vì \(\cot(\frac{\pi}{4})=1\) và côtang có chu kỳ \(\pi\), lại nghịch biến trên mỗi nhánh, nên \(2x=\frac{\pi}{4}+k\pi\), tức \(x=\frac{\pi}{8}+\frac{k\pi}{2}\), \(k\in\mathbb Z\). Tại các nghiệm, \(\sin(2x)=\pm\frac{\sqrt2}{2}\ne0\), nên tất cả đều hợp lệ. Khác với tang, điều kiện cần kiểm ở đây là sin của đối số khác 0.
 
 **Vận dụng**
 
