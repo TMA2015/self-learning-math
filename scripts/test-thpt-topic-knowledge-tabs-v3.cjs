@@ -103,6 +103,16 @@ function run(){
      const fp=path.join(base,p);
      pages[p]=fs.existsSync(fp)?fs.readFileSync(fp,"utf8"):null;
    }
+   // #1051 owner-approved retired pilot: verify three exact same-site
+   // redirects instead of counting it as a canonical learning journey.
+   if(path.relative(DIR,base).replace(/\\/g,"/")==="ham-so"){
+     for(const p of PAGES){
+       const src=pages[p];
+       assert(src&&src.includes("RETIRED_PILOT_REDIRECT_ONLY")&&src.includes('window.location.replace("../../");'),"Retired pilot must preserve "+p+" redirect");
+       assert(!src.includes("data-topic-w1-source-start")&&!src.includes("data-topic01-knowledge-start")&&!/^===\s*"/m.test(src),"Retired pilot must not become learner content");
+     }
+     continue;
+   }
    const count=verifyTopicKnowledge(pages["kien-thuc.md"],pages,path.relative(ROOT,f));
    counts.push({topic:path.relative(DIR,base),tabs:count,preview:/PILOT_PARTIAL|TECHNICAL_DEMO_ONLY/.test(pages["kien-thuc.md"]||"")});
  }
