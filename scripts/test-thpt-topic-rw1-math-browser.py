@@ -217,8 +217,24 @@ if "--disclosures-only" in sys.argv:
                         expect(tips).to_have_count(number)
                         assert answers.evaluate_all("els=>els.every(e=>!e.open&&e.classList.contains('question')&&e.nextElementSibling?.matches('details.tip[data-topic-sgk-disclosure=mistake]'))")
                         assert tips.evaluate_all("els=>els.every(e=>!e.open&&e.querySelector(':scope > summary').textContent==='Kiểm lỗi'&&e.children.length>1)")
+                        # A disclosure can belong to a non-default Knowledge subtab.
+                        # Activate its real learner-facing tabs in outer-to-inner order;
+                        # never force-click a hidden control or manipulate panel.hidden.
                         answer=answers.first
-                        tip=tips.first
+                        panel_ids=answer.evaluate("""e=>[
+                          e.closest('.thpt-r4-knowledge-module-panel')?.id,
+                          e.closest('.thpt-r4-knowledge-content-panel')?.id
+                        ].filter(Boolean)""")
+                        assert panel_ids,(topic,"disclosure outside Knowledge panels")
+                        for panel_id in panel_ids:
+                            button=tab.locator('[role="tab"][aria-controls="'+panel_id+'"]')
+                            expect(button).to_have_count(1)
+                            button.click()
+                            expect(button).to_have_attribute("aria-selected","true")
+                        tip=answer.locator('xpath=following-sibling::*[1]')
+                        expect(tip).to_have_attribute("data-topic-sgk-disclosure","mistake")
+                        expect(answer.locator("summary")).to_be_visible()
+                        expect(tip.locator("summary")).to_be_visible()
                         for kind,el in (("answer",answer),("mistake",tip)):
                             closed=el.evaluate(style_js)
                             el.locator("summary").click()
