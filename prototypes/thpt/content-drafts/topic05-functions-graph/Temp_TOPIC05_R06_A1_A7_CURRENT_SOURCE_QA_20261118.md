@@ -1,90 +1,24 @@
-<!-- TOP05_MASTER974_ONE_CANONICAL_CURRENT_PED6_CUSTODY_20261121 -->
-**CURRENT AUTHORING:** one learner `909f873c57e543b8f6d3c383d0b88df6900e334a` (same R06 path), current existing Q18 receipt `9c8c62a406e24af99efbdbe0bc081f1998c1f2ba`, unchanged one bank `ab878f1a18dea87872449a79c27b75a612d81b39`. Targeted pedagogy after original direct 38-item/17-outcome source audit: 17/17 Knowledge FirstTry have actual D6 Practice routes, 17 public selfchecks mapped voluntarily to real Practice keys; all 38 bank questions/rubrics and 3 SVG unchanged. No additional independent NotebookLM verdict or website RELEASE. Historical snapshots preserved below.
-
-<!-- TOP05_S1_B16_G10_A1_DELTA_C_20261120 -->
-## Q01/O06 G10 B16 mandatory concepts coverage
-
-- Source SGK KNTT Toán 10 tập 2 B16 trang in 11–14: định nghĩa hàm số bậc hai \(a\ne0\), bảng giá trị, đồ thị parabol, đỉnh/trục/chiều mở/biến thiên, miền thực và miền ứng dụng.
-- Current single learner `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd`; previous `e5b1888794a06e0de2e84a696fa11f95c9121472` in Git immutable history. Exact source now includes these S1 concepts at TOP05-O06/§2.2 before the pre-existing worked example.
-- Targeted Q18 author-self receipt `a9a4e5261dc9444018d316a393a5d4ac6c868d00`; 9/9 source/math/IDs QA; all student questions/keys/rubrics and 17 canonical outcomes unaffected except text of affected knowledge unit.
-- CONTENT_READY continues per owner source improvement; full 22-topic S1 academic audit still in progress, no new NotebookLM independent verdict, no RELEASE merge/deploy.
-
----
-# CĐ05 R06 — A1–A7 · current source-only authoring acceptance (18/11/2026)
+# CĐ05 — current A1–A7 source custody · A01 CP06
 
 PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R06
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 909f873c57e543b8f6d3c383d0b88df6900e334a
-PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
+SOURCE_BLOB: 277e8738c6cb7cce7f7f11c666382446f69be8e9
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
+REVIEW_RECEIPT_BLOB: c2fba301449c6ca519d1d7f75f28db3dffb4b1db
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-CURRENT_Q18_RECEIPT_BLOB: 9c8c62a406e24af99efbdbe0bc081f1998c1f2ba
-BLOCKERS_AUTHORING_P0_P1: NONE_IN_CHECKED_SOURCE
-AUTHORING_STATUS: CURRENT_SOURCE_Q01_Q18_AUTHOR_SELF_QA_PASS
-RELEASE_AUTHORIZATION: NO
-
-## A1 — Source identity
-One ORIGINAL current learner R06 file (no second candidate); exact source SHA above. Three Topic pages, 17 Knowledge lessons/standalone Ví dụ and actual Vận dụng/Đối chiếu, 38 Bài luyện including four Written/rubric, 17 public question-only selfcheck. Historical signed R05 blob `3052d5f7090f74af2eca7739047c59ed76ccda63` remains unchanged; current R06 receipt is new and source-locked.
-
-## A2 — S1 source and scope
-KNTT SGK G10 Tập Hai Bài 15–16 and SGK G11 Tập Một Bài 3, with source/book page provenance preserved in historical R05 original owner audit; no new page index invented or fresh PDF scan claimed. Topic transforms and graph models are explanatory extensions, not falsely cited as verbatim textbook content.
-
-## A3 — Academic depth, condition and PED
-Current source verified against full historical R05 author math receipt `9b3c25de45fc8601f2b5c8c11c6f7dc89b015fbc`; independently inspected present R06 formal definitions (function uniqueness; sqrt rational A≥0 and B≠0; even/odd requiring symmetric domain) and representative bank computations (P03/P04/P05/W01) and 16 revised D6 linked real Practice stems. Full details and caveats in current composite Q18 `a9a4e5261dc9444018d316a393a5d4ac6c868d00`. **AUTHOR_SELF_VERIFIED**, NOT NotebookLM independent PASS. Q01–Q18 owner standard only.
-
-## A4 — Q15 owner, unique items, replay
-One public original bank `ab878f1a18dea87872449a79c27b75a612d81b39`, exact 38 canonical (34 Practice, four Written). Source projection markers =38, unique IDs =38 and all match canonical outcome/bank owner; exact original stem + key + reasoned solution parity **38/38 each**. Public Selfcheck reuses 17 original P IDs question-only; not new canonical bank; historical #782 unrelated bank not imported.
-
-## A5 — D1–D6/PED1–PED6
-17 learner-flow units start with useful mathematical question, derive condition before formula and give 17 standalone worked examples; 17 Vận dụng before optional Đối chiếu, 16 material updated D6 routes match visible Bài numbered 1–38 and outcome; untouched O01 route remains. Four real math arcs, three original accurately referenced SVG, 38 Luyện tập including four rubric /7 and 17 selfcheck prompts. See exact student 1167 lines, three outer pages, no separate Core.
-
-## A6 — Scoped delta and freeze policy
-R05 original author Q18 remains signed for R05 only, R06 numbered heading technical source revision and latest DELTA_C pedagogical/three formal knowledge boxes require new SHA-lock. Current `SOURCE_BLOB` and Q18 were re-audited; current student file and canonical bank unchanged in this handoff closure. Metadata-only V2/ready/REGISTER may be synchronized without re-review of unrelated math. No new independent reviewer attribution.
-
-## A7 — Q16 privacy and RELEASE boundary
-No private RD1 content on Git (`PRIVATE_RD1_COUNT=0` for this packet). 55 collapsed disclosures require user action; public 17 repeated stems are only CLIENT_SELF_CHECK_NO_MASTERY and do not provide official Topic Readiness or learner Mastery. Real Final Submit, score writes, AP1–AP5, R1–R5, P1/P2 and owner merge/deploy are RELEASE-owned.
-
-## OUTCOME_AUDIT
-The 17 actual outcomes TOP05-O01–O17 are covered by 17 concept/explanation+Ví dụ/FirstTry placements; 38 canonical Practice/Written match original BANK outcome IDs and give real learner work. No ID-only Practice or placement-only Selfcheck.
-
-## MATH_VERIFICATION
-Current R06 domain, symmetry, graph translation/reflection/dilation and integer feasible-extrema reasoning checked; original bank exact 38 student-visible stem/key/solution compared as text; representative numeric/sample domain cases recomputed. The original full R05 math receipt is historical context, not new independent reapproval.
-
-## PED_VERIFICATION
-16 material changed remedial paths source-checked against Bài stems; 17 Knowledge/FirstTry/opt-in correction flows; natural headings and student language, one SGK footer, three SVG. Browser rendering not asserted.
-
-## CANONICAL_Q15
-38 unique BANK IDs with display-only reuse and 17 public selfcheck question-only placements, Q15 owner blob SHA listed; no new canonical.
-
-## ASSESSMENT_Q16
-Public formative opt-in disclosures and replay are non-independent/no mastery; private exam and official score not live from AUTHORING packet.
-
-## AUTHOR_SIGNOFF
-AUTHOR_SIGNOFF: TOP05_R06_A1_A7_SOURCE_BANK_38_Q18_a9a4e5261dc9444018d316a393a5d4ac6c868d00_20261118
+CURRENT_Q18_RECEIPT_BLOB: c2fba301449c6ca519d1d7f75f28db3dffb4b1db
+PREVIOUS_AUTHOR_METADATA_BLOB: 701d1c2ea6cf4090106cdfdef3e275e7d6a79e3a
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
-CONTENT_READY_CONDITION: ONE_CURRENT_V2_AND_READY_REGISTER_SHA_MATCH
+AUTHOR_SIGNOFF: A01_CP06_CD05_277e8738c6cb7cce7f7f11c666382446f69be8e9
 RELEASE_AUTHORIZATION: NO
 
+A1 source db7425bcdd21b6abebf6638d19bf7c4dec92fe77 / 277e8738c6cb7cce7f7f11c666382446f69be8e9 and exact Q18 c2fba301449c6ca519d1d7f75f28db3dffb4b1db; A2 SGK KNTT G10 T2 B15 pp4–10, B16 pp11–18; original scan SHA256 ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6, direct targeted reading CP05, PDF index printed+1; historical G11 B3 and SBT evidence retained, not a new full scan of SBT.; A3 author-self Q18, no new independent verdict; A4 38 Practice +17 Replay, semantic equivalence to latest signed 909f873c57e543b8f6d3c383d0b88df6900e334a via CP03/CP04; all item IDs/order/key/conditions/rubrics and mode retained. Display notation intentionally differs from frozen bank text; no literal parity claim. Owner #1109 schedules bank reconciliation after eight batches, not a second canonical owner. Frozen banks/index checked unchanged: Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md ab878f1a18dea87872449a79c27b75a612d81b39.; A5 Concept before formula; table supports unique output and full domain; arbitrary pair proof not selected points; O16 point excluded versus limit distinguished by open/closed markers; jump size explicitly computed. All 17 Vận dụng/Đối chiếu and recovery retained, 56 balanced disclosures, one public lookup map. Actual browser rendering not tested.; A6 O01 explicit function input set {0;1}, table shows repeated (1;4) is consistent; replacement in worked example yields two outputs at 1 and missing output at 2, violates both clauses. O05 for arbitrary -5≤x1<x2≤-2 the product (x2−x1)(x2+x1)<0 proves decreasing; extrema 25 and 4 explicit. O16 open endpoint is not a graph point; example jump +3 and transfer +2. O06 monotonicity intervals use semicolon, no math change; parabolic vertex, table, axis, zeros and domain checked CP05. Three original diagrams retained. No other mathematical or item change.; A7 public replay no Mastery, 0 private items; no RELEASE. Previous full historical metadata retained at Git blob 701d1c2ea6cf4090106cdfdef3e275e7d6a79e3a; source ownership and placement matrix unchanged.
 
-**19/11 owner ΔA:** source `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd` and Q18 `a9a4e5261dc9444018d316a393a5d4ac6c868d00` relocked; label-only, 17 lessons/3 SVG and all canonical item structures unchanged, CONTENT_READY preserved.
-
-
-## 20/11/2026 source-lock after owner ΔA
-- ACADEMIC_SOURCE_BLOB: 853e8a9f3d8a53179eea124ddb7386a7daa3f84d
-- REVIEW_RECEIPT_BLOB: e4523969e46c2a45155f8ba26d6441c37df3d4fe
-- Six correctly typed formal statements, no math/question changes.
-
-
-## 20/11/2026 — Current A1 source for G10 B16 plot construction
-- ACADEMIC_SOURCE_BLOB: 7b5d360250b5268d8c566be945f9c9be4a2c4dd4
-- REVIEW_RECEIPT_BLOB: f3180f5a7f250e65cf7fc996dde0116eaa5020d6
-- Existing parabola §2.2 newly explicit Ox/Oy intercept method, zero / tangency / none via Δ; all original practice/selfcheck unchanged. Affected math author self-QA only.
-
-
-## 20/11/2026 — Current CĐ05 Knowledge S1 full B15–16 source
-- ACADEMIC_SOURCE_BLOB: 583ba974917ce04b16dd4ff6d92b7cdb9b77a2b1
-- REVIEW_RECEIPT_BLOB: f20c9cfae613b6dfb65fe1a7b754e05f54cf84ce
-- Student §1.1 function by table/chart/formula, §1.2 default domain and §4.3 function modeling restored. 17 original modules, original Practice and Tự kiểm tra unchanged.
+## Current figure custody
+prototypes/thpt/visuals/THPT_TOPIC05_GRAPH_TRANSLATION_R01.svg: e73c9c7a076de103edebf65cae0ed3529449ad06
+prototypes/thpt/visuals/THPT_TOPIC05_REFLECTION_VERTICAL_SCALE_R01.svg: 0f20dc39c3432be8a8fe0af6e86df7207ffdcaa7
+prototypes/thpt/visuals/THPT_TOPIC05_PIECEWISE_ENDPOINTS_R01.svg: 77f9345af366a64a3fba4a35c3d8d6b84a5d845e
