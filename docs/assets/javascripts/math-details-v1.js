@@ -169,9 +169,10 @@
  // A closing display delimiter must be alone on its line; inner [n] and
  // interval notation never qualify. Other explicit delimiters remain exact.
  // MkDocs also strips single-line display delimiters inside blockquotes.
- // Only complete TeX equations, or isolated multiline script equations,
- // qualify; ordinary intervals, citations and bracketed prose never do.
- const recovered=(tex,multiline)=>typeof tex==="string"&&(multiline?(/\\[A-Za-z]+/.test(tex)||(/=/.test(tex)&&/[\^_]/.test(tex)&&/^[A-Za-z0-9()+\-−.,\s^_{}=]+$/.test(tex))):((/\\[A-Za-z]+/.test(tex)&&(/=/.test(tex)||/\\(?:approx|leq?|geq?|neq?|equiv)\b/.test(tex)))||(/=/.test(tex)&&/[\^_]/.test(tex)&&/^[A-Za-z0-9()+\-−.,\s^_{}=]+$/.test(tex))));
+ // Only explicit TeX relations or script equations qualify; ordinary
+ // intervals, citations and bracketed prose never do. Recover the complete
+ // signed expression before the separate native sup/sub normalization.
+ const recovered=(tex,multiline)=>typeof tex==="string"&&(multiline?(/\\[A-Za-z]+/.test(tex)||(/=/.test(tex)&&/[\^_]/.test(tex))):((/\\[A-Za-z]+/.test(tex)&&(/=/.test(tex)||/\\(?:approx|leq?|geq?|neq?|equiv)\b/.test(tex)))||(/=/.test(tex)&&/[\^_]/.test(tex)&&/^[A-Za-z0-9()+\-−.,\s^_{}=]+$/.test(tex))));
  const tokens=/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\[\s*\n([\s\S]*?)\n\s*\]|\[A\\setminus B=\{x\\in A:x\\notin B\}\.\]|\[\|A\\cup B\|=\|A\|\+\|B\|-\|A\\cap B\|\.\]|\[((?:(?!\\[\(\[])[^\[\]\r\n])+)\]|\*\*|\*/g;
  const skips=".arithmatex,mjx-container,math,script,style,pre,code,svg,textarea,input,button";
  function inline(parent,parts){
