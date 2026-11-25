@@ -24,6 +24,8 @@ Khi kiểm tra một phương án có hợp lệ hay không, ta thường phải
 
 
 
+Vì sao nhân với số âm lại đổi chiều? Nếu \(u<v\), thì \(v-u>0\). Với \(c<0\), ta có \(c(v-u)<0\), tức \(cv-cu<0\), hay \(cv<cu\). Do đó \(cu>cv\): thứ tự đã đảo. Chia cho số âm cũng vậy, vì tương đương nhân với nghịch đảo âm.
+
 Chẳng hạn, từ \(-4x+1>9\) suy ra \(-4x>8\). Chia cho \(-4\) khiến dấu đổi thành \(x<-2\). Ta có thể tự kiểm bằng cách chọn \(x=-3\): vế trái \(13>9\) đúng; còn \(x=-1\) cho \(5>9\) sai. Phép thử không thay thế chứng minh, nhưng giúp phát hiện sai dấu ngay khi tính.
 
 **Ví dụ**
@@ -58,7 +60,7 @@ Muốn xét dấu một biểu thức bậc hai, trước tiên ta phải biết
 
 > **ĐỊNH NGHĨA — Tam thức bậc hai.** \(f(x)=ax^2+bx+c\) với \(a,b,c\in\mathbb R,\ a\ne0\). Biệt thức của phương trình \(f(x)=0\) cho biết đồ thị \(y=f(x)\) cắt, chạm hay không cắt trục hoành. Các điểm cắt hoặc chạm ấy sẽ trở thành mốc xét dấu.
 
-> **CÔNG THỨC — Biệt thức của tam thức bậc hai.** Với \(f(x)=ax^2+bx+c\), \(a\ne0\), đặt \(\Delta=b^2-4ac\). Phương trình \(f(x)=0\) không có nghiệm thực khi \(\Delta<0\), có một nghiệm kép khi \(\Delta=0\), và có hai nghiệm thực phân biệt khi \(\Delta>0\). Nếu \(a=0\), phải xét phương trình bậc nhất hoặc trường hợp suy biến, không dùng công thức bậc hai.
+> **CÔNG THỨC — Biệt thức của tam thức bậc hai.** Với \(f(x)=ax^2+bx+c\), \(a\ne0\), đặt \(\Delta=b^2-4ac\). Phương trình \(f(x)=0\) không có nghiệm thực khi \(\Delta<0\), có một nghiệm kép \(x=-\frac{b}{2a}\) khi \(\Delta=0\), và có hai nghiệm thực phân biệt \(x_1=\frac{-b-\sqrt{\Delta}}{2a}\), \(x_2=\frac{-b+\sqrt{\Delta}}{2a}\) khi \(\Delta>0\) (hai ký hiệu này không quy định thứ tự lớn nhỏ). Nếu \(a=0\), phải xét phương trình bậc nhất hoặc trường hợp suy biến, không dùng công thức bậc hai.
 
 
 
@@ -74,7 +76,7 @@ Chẳng hạn, x²−5x+6 có Δ=1 và hai nghiệm 2,3; f=(x−2)(x−3), nhân
 
 **Đề bài.** Tìm nghiệm của \(2x^2-7x+3=0\).
 
-**Lời giải.** \(a=2,b=-7,c=3\) cho \(\Delta=49-24=25\). Nghiệm \((7\pm5)/4\) là \(1/2,3\); do đó \(2x^2-7x+3=(2x-1)(x-3)\).
+**Lời giải.** \(a=2,b=-7,c=3\) cho \(\Delta=49-24=25\). Thay vào công thức nghiệm, \(x=\frac{-(-7)\pm\sqrt{25}}{2\cdot2}=\frac{7\pm5}{4}\), được \(x=\frac12\) hoặc \(x=3\); do đó \(2x^2-7x+3=(2x-1)(x-3)\).
 
 **Vận dụng**
 
@@ -228,7 +230,7 @@ Nếu em lấy \(x=1\) hoặc \(x=3\) cho dấu \(>0\), hãy thế vào đề g�
 
 ### 2.6. Bất phương trình đúng với mọi x
 
-> **TÍNH CHẤT — Bất phương trình đúng với mọi x.** Nếu hệ số chứa tham số, kết luận 'đúng với mọi x' phải kiểm tra mọi trường hợp hợp lệ. Một vài phép thử x không chứng minh ‘đúng với mọi x’. Điểm xuất phát là biệt thức và nghiệm kép. Với a>0 **cố định**, f>0 mọi ℝ iff Δ<0; f≥0 mọi ℝ iff Δ≤0. Với a<0 cố định dùng điều kiện âm tương ứng. Không âm thầm áp dụng cho a(m) có thể bằng 0.
+> **TÍNH CHẤT — Bất phương trình đúng với mọi x.** Nếu hệ số chứa tham số, kết luận 'đúng với mọi x' phải kiểm tra mọi trường hợp hợp lệ. Một vài phép thử x không chứng minh ‘đúng với mọi x’. Điểm xuất phát là biệt thức và nghiệm kép. Với \(a>0\) **cố định**, \(f(x)>0\) với mọi \(x\in\mathbb R\) khi và chỉ khi \(\Delta<0\); \(f(x)\ge0\) với mọi \(x\in\mathbb R\) khi và chỉ khi \(\Delta\le0\). Với a<0 cố định dùng điều kiện âm tương ứng. Không âm thầm áp dụng cho a(m) có thể bằng 0.
 
 Chẳng hạn, x²+2(m−1)x+(m+1)>0 mọi x: Δ=4m(m−3)<0 ⇒ 0<m<3; hai biên làm tam thức chạm 0 nên bị loại.
 
@@ -246,11 +248,11 @@ Tìm m để x²−2mx+1≥0 mọi x.
 
 Δ=4(m²−1)≤0 ⇒ m∈[−1,1].
 
-Nếu đang xét dấu nghiêm \(>0\) mà vẫn nhận biên \(\Delta=0\), hãy thử ngay tại nghiệm kép: giá trị tam thức bằng 0 nên phải loại. Ôn lại bằng Bài 17, phần (b)–(c), trong Luyện tập — bài này yêu cầu giải thích rõ vì sao \(m=2\) không được nhận.
+Ở bài Vận dụng, hai biên \(m=-1\) và \(m=1\) đều được nhận vì tam thức lần lượt là \((x+1)^2\) và \((x-1)^2\), luôn không âm. Nếu đề yêu cầu dương nghiêm ngặt thì hai biên này phải loại, vì tại nghiệm kép tam thức bằng 0.
 
 **Kiểm lỗi**
 
-Nếu em nhận cả \(m=\pm3\) khi yêu cầu tam thức **dương nghiêm ngặt với mọi x**, em đã nhầm \(\Delta<0\) với \(\Delta\le0\). Xem lại **Kiến thức 2.6**, giải **Bài 13** và **Bài 14**, rồi tự luận **Bài 17** để kiểm trực tiếp giá trị tại nghiệm kép.
+Trong Ví dụ, nếu em nhận \(m=0\) hoặc \(m=3\), hãy thử tại nghiệm kép: lần lượt là \(x=1\) và \(x=-2\), nơi tam thức bằng 0. Hai giá trị tham số này không thỏa yêu cầu dương nghiêm ngặt. Trái lại, bài Vận dụng yêu cầu không âm nên nhận hai biên \(m=\pm1\). Xem lại **Kiến thức 2.6**, giải **Bài 13** và **Bài 14**, rồi tự luận **Bài 17** để kiểm trực tiếp giá trị tại nghiệm kép.
 
 </details>
 
@@ -270,11 +272,11 @@ Xét ví dụ: 20m rào ba cạnh sát tường: 0<x<10, S=x(20−2x)≥32 ⇔ (
 
 **Vận dụng**
 
-h(t)=−t²+6t với t≥0; khi nào h≥8?
+Độ cao của một vật so với mặt đất được mô hình hóa bởi \(h(t)=-t^2+6t\) (m), trong đó \(t\) tính bằng giây và \(0\le t\le6\). Trong khoảng thời gian nào vật cao ít nhất 8 m?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(t−2)(t−4)≤0 ⇒ t∈[2,4].
+\(h(t)\ge8\) tương đương \((t-2)(t-4)\le0\), nên \(t\in[2;4]\). Khoảng này nằm trong miền thời gian \([0;6]\). Vậy vật cao ít nhất 8 m từ giây thứ 2 đến giây thứ 4, kể cả hai đầu mút.
 
 Nếu có nghiệm âm, kiểm lại điều kiện khi đặt biến thay vì nhận tất cả.
 
@@ -404,11 +406,11 @@ Chẳng hạn, mỗi thùng A giá 4 nghìn đồng, mỗi thùng B giá 7 nghì
 
 **Vận dụng**
 
-Doanh thu mỗi loại 2 và 3 điểm, cần ít nhất 12. (3,2) đạt?
+Mỗi sản phẩm loại A được 2 điểm thưởng, loại B được 3 điểm. Gọi \(x,y\) lần lượt là số sản phẩm hai loại (số nguyên không âm). Cần ít nhất 12 điểm. Phương án \((x,y)=(3,2)\) có đạt yêu cầu không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-2x+3y≥12; 2·3+3·2=12 đúng.
+Điều kiện là \(2x+3y\ge12\), với \(x,y\) là số nguyên không âm. Phương án đã cho đạt đúng \(2\cdot3+3\cdot2=12\) điểm, nên được nhận.
 
 Nhầm ít nhất với ≤ thì thử phương án bằng và thấp hơn ngưỡng để sửa.
 
@@ -456,7 +458,7 @@ Nếu em nhầm **giao** thành **hợp**, một điểm chỉ thỏa một bấ
 
 ### 3.6. Miền rỗng và không bị chặn
 
-> **TÍNH CHẤT — Miền rỗng và không bị chặn.** Miền chung ấy có thể rỗng, bị chặn hoặc kéo dài vô hạn; phải đọc tình trạng khả thi trước. Bài tối ưu không có nghĩa khi miền nghiệm rỗng. Trước hết, hãy nhớ miền giao và hàm tuyến tính F. Miền rỗng không có phương án. Trên đa giác đóng, không rỗng, bị chặn thì hàm tuyến tính đạt max/min tại ít nhất một đỉnh. Miền không bị chặn cần xét riêng; có thể có max nhưng không có min.
+> **TÍNH CHẤT — Miền rỗng và không bị chặn.** Miền chung ấy có thể rỗng, bị chặn hoặc kéo dài vô hạn; phải đọc tình trạng khả thi trước. Bài tối ưu không có nghĩa khi miền nghiệm rỗng. Miền rỗng không có phương án. Khi cần tìm phương án tốt nhất, ta dùng **hàm mục tiêu**, chẳng hạn \(F=px+qy\), để biểu thị lợi nhuận hoặc chi phí. Miền đóng chứa cả các điểm giới hạn của nó (ví dụ miền tam giác nhận cả ba cạnh); miền bị chặn nằm trong một hình tròn hữu hạn. Trên miền đa giác đóng, không rỗng, bị chặn, hàm mục tiêu tuyến tính đạt giá trị lớn nhất và nhỏ nhất tại ít nhất một đỉnh. Miền không bị chặn cần xét riêng; có thể có max nhưng không có min.
 
 Hãy kiểm tra trường hợp sau: Trên x≥0,y≥0 không bị chặn, F=−x−y có max 0 tại O và không có min hữu hạn vì x→∞ thì F→−∞. Hệ x+y≤2,x+y≥5 thì rỗng.
 
@@ -482,7 +484,7 @@ Nếu thấy miền không bị chặn rồi kết luận không có cả giá t
 
 ## 4. Từ phương án hợp lệ đến phương án tốt nhất
 
-Một phương án có thể thỏa mọi ràng buộc mà vẫn chưa đem lại lợi nhuận cao nhất hoặc chi phí thấp nhất. Sau khi dựng miền khả thi, ta cần một **hàm mục tiêu** đo điều muốn tối ưu. Với hàm tuyến tính trên miền đa giác đóng, bị chặn, không rỗng, có thể đẩy đường mức song song của hàm mục tiêu đến khi chạm đỉnh cuối cùng; vì thế việc tính tại các đỉnh có cơ sở hình học. Nhưng nếu số sản phẩm buộc phải là số nguyên, điểm tối ưu liên tục chưa chắc là phương án thực hiện được.
+Một phương án có thể thỏa mọi ràng buộc mà vẫn chưa đem lại lợi nhuận cao nhất hoặc chi phí thấp nhất. Sau khi dựng miền khả thi, ta cần một **hàm mục tiêu** đo điều muốn tối ưu. Với hàm tuyến tính trên miền đa giác đóng, bị chặn, không rỗng, đường mức \(px+qy=k\) gồm những điểm có cùng giá trị mục tiêu \(k\). Khi \((p,q)\ne(0,0)\), các đường mức là những đường thẳng song song; có thể dịch chuyển chúng theo chiều tăng hoặc giảm \(k\) đến vị trí cuối cùng còn gặp miền khả thi; vì thế việc tính tại các đỉnh có cơ sở hình học. Nhưng nếu số sản phẩm buộc phải là số nguyên, điểm tối ưu liên tục chưa chắc là phương án thực hiện được.
 
 <!-- LESSON_ID: TOP02-M15; OUTCOME_ID: TOP02-O15; R04_BASE_BLOB: 907af796ff6f61dee518f7d25e5ff99cb23467f1 -->
 
@@ -500,7 +502,13 @@ Chẳng hạn, với \(x,y\ge0\), \(x+y\le6\), \(2x+y\le8\), miền khả thi tr
 
 **Đề bài.** Trên \(x,y\ge0,\ x+y\le5,\ 2x+y\le6\), tối đa \(F=3x+2y\).
 
-**Lời giải.** Đỉnh O=(0,0), A=(3,0), B=(1,4), C=(0,5). F tương ứng 0,9,11,10, nên max 11 tại B. Hình kèm theo minh họa đa giác khác với max 14 tại (2,4).
+**Lời giải.** Tìm giao các đường biên rồi giữ những điểm thỏa mọi ràng buộc. Trên trục hoành (\(y=0\)), cần \(x\le5\) và \(2x\le6\), nên đầu mút là \(A=(3,0)\); loại \((5,0)\) vì \(10>6\). Trên trục tung (\(x=0\)), \(y\le5\) và \(y\le6\), nên đầu mút là \(C=(0,5)\). Giao hai đường \(x+y=5\) và \(2x+y=6\): trừ phương trình thứ nhất khỏi thứ hai được \(x=1\), thay lại được \(y=4\), nên \(B=(1,4)\). Cả \(B\) và \(O=(0,0)\) đều thỏa mọi ràng buộc.
+
+| Đỉnh | \(O=(0,0)\) | \(A=(3,0)\) | \(B=(1,4)\) | \(C=(0,5)\) |
+|---|---:|---:|---:|---:|
+| \(F=3x+2y\) | 0 | 9 | 11 | 10 |
+
+Vậy giá trị lớn nhất là 11 tại \(B\). Hình phía trên minh họa một đa giác khác với giá trị lớn nhất 14 tại \((2,4)\).
 
 **Vận dụng**
 
@@ -530,7 +538,14 @@ Chẳng hạn, x+2y≤8,2x+y≤8, x,y nguyên≥0, P=3x+2y. Liên tục max 40/3
 
 **Đề bài.** Với \(x+2y\le8,\ 2x+y\le8,\ x,y\in\mathbb Z_{\ge0}\), tối đa \(P=3x+2y\).
 
-**Lời giải.** Miền liên tục có giao (8/3,8/3), max \(P=40/3\). Với y nguyên từ 0 đến 4, max P lần lượt 12,11,13,12,8. Vậy max nguyên 13 tại (3,2); không được làm tròn nghiệm liên tục.
+**Lời giải.** Miền liên tục có giao \((\frac83,\frac83)\), đạt giá trị lớn nhất \(\frac{40}{3}\). Khi \(x,y\) phải nguyên không âm, từ \(x+2y\le8\) suy ra \(0\le y\le4\). Với mỗi \(y\) cố định, \(P=3x+2y\) tăng theo \(x\), nên chọn số nguyên \(x\) lớn nhất thỏa đồng thời \(x\le8-2y\) và \(x\le\frac{8-y}{2}\).
+
+| \(y\) | 0 | 1 | 2 | 3 | 4 |
+|---|---:|---:|---:|---:|---:|
+| \(x\) lớn nhất hợp lệ | 4 | 3 | 3 | 2 | 0 |
+| \(P=3x+2y\) | 12 | 11 | 13 | 12 | 8 |
+
+Vậy giá trị lớn nhất trong các phương án nguyên là 13 tại \((3,2)\). Kiểm lại \(3+2\cdot2=7\le8\) và \(2\cdot3+2=8\). Không được làm tròn nghiệm liên tục thay cho bước kiểm các phương án nguyên.
 
 **Vận dụng**
 
