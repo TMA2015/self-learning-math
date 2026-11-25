@@ -27,6 +27,7 @@ const CI_ROUTING_ONLY=new Set([
  ".github/workflows/thpt-scoped-release-qa.yml",
  ".github/workflows/thpt-r4-preview-quality.yml",
  ".github/workflows/thpt-deploy-scope-safety-qa.yml",
+ ".github/workflows/thpt-topic-rw1-math-qa.yml",
  ".github/workflows/qa-pr.yml",
  "scripts/test-thpt-release-impact.cjs",
  "scripts/test-thpt-scoped-deploy-proof.cjs",
