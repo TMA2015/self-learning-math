@@ -16,6 +16,7 @@ jobs:
       deploy: ${{ steps.scope.outputs.deploy }}
       impact: ${{ steps.scope.outputs.impact }}
       changed_lessons: ${{ steps.scope.outputs.changed_lessons }}
+      reason: ${{ steps.scope.outputs.reason }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -37,7 +38,16 @@ jobs:
           node scripts/test-thpt-push-deploy-scope.cjs --self-test
           node scripts/test-thpt-push-deploy-scope.cjs | tee /tmp/thpt-deploy-scope.txt
           classification="$(tail -n 1 /tmp/thpt-deploy-scope.txt)"
-          if [[ "$classification" == "DEPLOY_REQUIRED" ]]; then
+          # Classify the full push before deciding whether this is the one-time
+          # exact metadata-only recovery of the already approved #1110 release.
+          git diff --no-renames --name-only "$BEFORE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/main-push-scoped-paths.txt"
+          node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/main-push-scoped-paths.txt"
+          if [[ "$classification" == "NO_DEPLOY_METADATA_ONLY" && "$BEFORE_SHA" == "f9a4b0caef4f860a17d956c0c4d7600dc511c3d2" ]] &&
+             grep -Fxq 'reason=OWNER_1110_DEPLOY_RECOVERY_EXACT' "$GITHUB_OUTPUT" &&
+             grep -Fxq 'impact=SCOPED_TOPIC_SHARED_MATH' "$GITHUB_OUTPUT"; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+            echo "Exact #1110 deploy-only recovery; verify prior browser PASS and unchanged inputs, then source/build gates" >> "$GITHUB_STEP_SUMMARY"
+          elif [[ "$classification" == "DEPLOY_REQUIRED" ]]; then
             echo "deploy=true" >> "$GITHUB_OUTPUT"
             echo "Site/runtime or unknown files changed: retain ALL existing deploy gates" >> "$GITHUB_STEP_SUMMARY"
           elif [[ "$classification" == "NO_DEPLOY_METADATA_ONLY" ]]; then
@@ -49,8 +59,6 @@ jobs:
           fi
           # Narrow exact one-lesson source edits to a separate production lane.
           # Unknown/mixed/shared diffs always stay on the original complete gate.
-          git diff --no-renames --name-only "$BEFORE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/main-push-scoped-paths.txt"
-          node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/main-push-scoped-paths.txt"
           echo "QA impact (source only): $(cat "$RUNNER_TEMP/main-push-scoped-paths.txt" | tr '\n' ' ')" >> "$GITHUB_STEP_SUMMARY"
 
   deploy:
@@ -722,6 +730,9 @@ jobs:
     if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_SHARED_MATH' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 180
+    permissions:
+      contents: write
+      actions: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -735,8 +746,25 @@ jobs:
       - name: Install scoped QA dependencies
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
-          python -m playwright install --with-deps chromium webkit
+          if [[ "${{ needs.release-scope.outputs.reason }}" != "OWNER_1110_DEPLOY_RECOVERY_EXACT" ]]; then
+            python -m playwright install --with-deps chromium webkit
+          fi
+      - name: Reuse approved browser evidence only for exact unchanged recovery
+        if: needs.release-scope.outputs.reason == 'OWNER_1110_DEPLOY_RECOVERY_EXACT'
+        env:
+          BASE_SHA: ${{ github.event.before }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          node scripts/test-thpt-release-impact.cjs --prove-shared-recovery
+          for run in 45625817148 45625817548 45625817353 45625817667 45625817623; do
+            gh api "repos/$GITHUB_REPOSITORY/actions/runs/$run" > "$RUNNER_TEMP/approved-topic-run.json"
+            node -e 'const a=require(process.argv[1]);require("node:assert/strict").equal(a.head_sha,"90cfffe5f3adb09eaf347ac9436c6f9e6d4b8ecd");require("node:assert/strict").equal(a.conclusion,"success");console.log("Verified approved browser PASS run "+a.id)' "$RUNNER_TEMP/approved-topic-run.json"
+          done
       - name: Exact source and protected scope gate
+        env:
+          BASE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
         run: |
           node scripts/test-thpt-release-impact.cjs --self-test
           python scripts/test-thpt-topic-rw1-math-browser.py --shared-candidate-scope
@@ -762,6 +790,7 @@ jobs:
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: All 22 Knowledge pages and affected Golden adapter regressions
+        if: needs.release-scope.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT'
         run: |
           python scripts/test-thpt-topic-rw1-math-browser.py
           python scripts/test-thpt-topic-rw1-math-browser.py --rw2

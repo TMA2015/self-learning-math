@@ -27,6 +27,7 @@ const CI_ROUTING_ONLY=new Set([
  ".github/workflows/thpt-scoped-release-qa.yml",
  ".github/workflows/thpt-r4-preview-quality.yml",
  ".github/workflows/thpt-deploy-scope-safety-qa.yml",
+ ".github/workflows/thpt-topic-rw1-math-qa.yml",
  ".github/workflows/qa-pr.yml",
  "scripts/test-thpt-release-impact.cjs",
  "scripts/test-thpt-scoped-deploy-proof.cjs",
@@ -633,9 +634,30 @@ function isExactSharedKnowledgeMath(files){
     deploy.includes("deploy-scoped-topic-shared-math:")&&deploy.includes("--shared-candidate-scope")&&deploy.includes("test-thpt-topic-rw1-math-browser.py --rw2")&&deploy.includes("test-thpt-topic-rw1-math-browser.py --tail")&&deploy.includes("scripts/test-thpt-topic-w5-golden-browser.py");
  }catch{return false}
 }
+// One-time recovery of failed #1110 deploy; no runtime or learner changes.
+// Only the exact failed main SHA and these four QA/workflow files qualify.
+const SHARED_DEPLOY_RECOVERY_BASE="f9a4b0caef4f860a17d956c0c4d7600dc511c3d2";
+const SHARED_DEPLOY_RECOVERY_FILES=new Set(["scripts/test-thpt-release-impact.cjs",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml"]);
+const SHARED_APPROVED_HEAD="90cfffe5f3adb09eaf347ac9436c6f9e6d4b8ecd";
+function proveSharedDeployRecovery(){
+ const cp=require("node:child_process");
+ const git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"}).trim();
+ assert.equal(process.env.BASE_SHA,SHARED_DEPLOY_RECOVERY_BASE,"Recovery base must be exact approved merged SHA");
+ assert.equal(git("rev-parse",SHARED_APPROVED_HEAD+"^{tree}"),git("rev-parse",SHARED_DEPLOY_RECOVERY_BASE+"^{tree}"),"Approved PR and merged tree differ");
+ const files=git("diff","--no-renames","--name-only",SHARED_APPROVED_HEAD,"HEAD").split("\n").filter(Boolean);
+ assert(isExactSharedDeployRecovery(files,process.env.BASE_SHA),"Recovery contains non-QA changes or unexpected files");
+ console.log("PASS #1110 exact snapshot preserved: only four QA/workflow paths changed; renderer, content, build inputs and prior browser test code byte-identical");
+}
+function isExactSharedDeployRecovery(files,base){
+ return base===SHARED_DEPLOY_RECOVERY_BASE&&
+  files.length===SHARED_DEPLOY_RECOVERY_FILES.size&&new Set(files).size===files.length&&
+  files.every(f=>SHARED_DEPLOY_RECOVERY_FILES.has(f))&&
+  isExactSharedKnowledgeMath([...SHARED_KNOWLEDGE_MATH_FILES])&&
+  fs.readFileSync(".github/workflows/deploy.yml","utf8").includes("OWNER_1110_DEPLOY_RECOVERY_EXACT");
+}
 // Exact governance-only files: other learner/runtime changes remain FULL.
 const MATH_NOTATION_GOVERNANCE=new Set(["AGENTS.md","prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md","prototypes/thpt/SGK_11_12_AUTHORING_CHECKLIST_OWNER_RESET_20261122.md","scripts/test-thpt-push-deploy-scope.cjs","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml"]);
-function classify(paths,{manual=false}={}){
+function classify(paths,{manual=false,base=""}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
@@ -643,6 +665,7 @@ function classify(paths,{manual=false}={}){
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(files.length===MATH_NOTATION_GOVERNANCE.size&&new Set(files).size===files.length&&files.every(p=>MATH_NOTATION_GOVERNANCE.has(p)))
   return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"EXACT_MATH_NOTATION_GOVERNANCE_ONLY"};
+ if(isExactSharedDeployRecovery(files,base))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1110_DEPLOY_RECOVERY_EXACT"};
  if(isExactSharedKnowledgeMath(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_EXACT_SHARED_KNOWLEDGE_MATH_RW2"};
  if(isExactTopicRW1(files))return {impact:"SCOPED_TOPIC_RW1",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_RW1_EXACT_KNOWLEDGE_MATH_TAB_QA"};
  if(isG12MathHotfix(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_MATH_HOTFIX_LESSONS.join(","),reason:"OWNER_1039_G12_MATH_HOTFIX"};
@@ -826,6 +849,13 @@ function selfTest(){
  assert.equal(classify([...shared,"docs/thpt-preview/chuyen-de/cd09/kien-thuc.md"]).impact,"FULL");
  assert.equal(classify([...shared,"docs/assets/javascripts/firebase-gemini-v1.js"]).impact,"FULL");
  assert.equal(classify(shared,{manual:true}).impact,"FULL");
+ const sharedRecovery=[...SHARED_DEPLOY_RECOVERY_FILES];
+ assert.equal(classify(sharedRecovery,{base:SHARED_DEPLOY_RECOVERY_BASE}).reason,"OWNER_1110_DEPLOY_RECOVERY_EXACT");
+ assert.notEqual(classify(sharedRecovery,{base:"0".repeat(40)}).impact,"SCOPED_TOPIC_SHARED_MATH");
+ assert.notEqual(classify(sharedRecovery.slice(1),{base:SHARED_DEPLOY_RECOVERY_BASE}).impact,"SCOPED_TOPIC_SHARED_MATH");
+ assert.equal(classify([...sharedRecovery,"docs/assets/javascripts/firebase-gemini-v1.js"],{base:SHARED_DEPLOY_RECOVERY_BASE}).impact,"FULL");
+ assert.equal(classify([...sharedRecovery,"docs/thpt-preview/chuyen-de/cd17/kien-thuc.md"],{base:SHARED_DEPLOY_RECOVERY_BASE}).impact,"FULL");
+ assert.equal(classify(sharedRecovery,{base:SHARED_DEPLOY_RECOVERY_BASE,manual:true}).impact,"FULL");
  assert.equal(classify([...sharedCandidate,"docs/thpt-preview/chuyen-de/cd09/kien-thuc.md"]).impact,"FULL");
  assert.equal(classify(rw1.slice(1)).impact,"FULL");
  assert.equal(classify([...rw1,"docs/thpt-preview/chuyen-de/cd01/kien-thuc.md"]).impact,"FULL");
@@ -1180,11 +1210,12 @@ function selfTest(){
  console.log("PASS scoped CI impact classifier: canonical SGK page/receipt-only fast lanes, global/unknown/assessment full, manual full");
 }
 if(require.main===module){
- if(process.argv.includes("--self-test"))selfTest();
+ if(process.argv.includes("--prove-shared-recovery"))proveSharedDeployRecovery();
+ else if(process.argv.includes("--self-test"))selfTest();
  else{
   assert.equal(process.argv.length,3,"Supply git diff --name-only path file");
   const files=fs.readFileSync(process.argv[2],"utf8").split(/\r?\n/);
-  const out=classify(files,{manual:process.env.RELEASE_QA_FORCE_FULL==="true"});
+  const out=classify(files,{manual:process.env.RELEASE_QA_FORCE_FULL==="true",base:process.env.BEFORE_SHA||process.env.BASE_SHA||""});
   // CI migration itself must exercise the new renderer against the most recent
   // owner-P2 accepted Golden baseline (B14), even though its paths are global.
   const qaSmoke=!["SCOPED_TOPIC_RW1","SCOPED_TOPIC_SHARED_MATH"].includes(out.impact)&&files.some(x=>[
