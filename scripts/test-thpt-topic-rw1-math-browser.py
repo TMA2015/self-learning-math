@@ -45,6 +45,8 @@ CURRENT_FILES={
     "scripts/test-thpt-topic-w3-golden-browser.py",
     "scripts/test-thpt-topic-w4-golden-browser.py",
     "scripts/test-thpt-topic-knowledge-tabs-v3.cjs",
+    ".github/workflows/deploy.yml",
+    ".github/workflows/thpt-deploy-scope-safety-qa.yml",
 }
 def current_scope():
     changed=set(subprocess.check_output(["git","diff","--no-renames","--name-only",CURRENT_BASE,"HEAD"],cwd=ROOT,text=True).splitlines())
@@ -53,10 +55,15 @@ def current_scope():
     old=subprocess.check_output(["git","show",CURRENT_BASE+":"+path],cwd=ROOT,text=True)
     new=(ROOT/path).read_text(encoding="utf-8")
     assert old.split("/* OWNER #1055 R-W1",1)[0]==new.split("/* OWNER #1055, X-G.5",1)[0], "SGK/THCS shared code changed"
+    for wave in (2,3,4):
+        adapter=f"docs/assets/javascripts/thpt-topic-w{wave}-golden-v1.js"
+        original=subprocess.check_output(["git","show",CURRENT_BASE+":"+adapter],cwd=ROOT,text=True)
+        candidate=(ROOT/adapter).read_text(encoding="utf-8")
+        assert original.split("function practiceBank(){",1)[1]==candidate.split("function practiceBank(){",1)[1],(adapter,"Practice/SelfCheck functions changed")
     for f in CURRENT_FILES:
-        if f.endswith(".js"):
+        if f.endswith((".js",".cjs")):
             subprocess.run(["node","--check",f],cwd=ROOT,check=True)
-    print("PASS exact eleven paths, no source/assessment/receipt/SVG changes, legacy SGK/THCS helper unchanged",flush=True)
+    print("PASS exact thirteen paths, canonical/source/assessment/receipt/SVG unchanged, SGK/THCS prefix and Practice/SelfCheck implementation identical",flush=True)
 if "--shared-candidate-scope" in sys.argv:
     current_scope()
     sys.exit(0)
