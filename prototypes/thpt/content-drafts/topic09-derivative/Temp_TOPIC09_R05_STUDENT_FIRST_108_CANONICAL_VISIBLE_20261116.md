@@ -319,7 +319,7 @@ Chẳng hạn, \(s(t)=t^2-6t\) (m), \(t\ge0\): \(v(t)=2t-6\); tại \(t=2\), \(v
 
 \(v=-3\) m/s, tốc độ3 m/s.
 
-Nếu gọi tốc độ âm, kiểm định nghĩa |v|.
+Nếu gọi tốc độ âm, kiểm định nghĩa \(|v|\).
 
 
 **Kiểm lỗi**
@@ -610,7 +610,7 @@ Ví dụ, dùng quy tắc thương và \(\sin^2 x+\cos^2 x=1\) ta được
 
 Tương tự, thương \(\frac{\cos x}{\sin x}\) cho tử \(-\sin^2 x-\cos^2 x=-1\), nên đạo hàm cot mang dấu âm.
 
-Xét ví dụ: tan x ở \(x=\frac\pi2\) không xác định vì \(\cos\frac\pi2=0\). Ở \(x=0\): \((\tan x)'=1\) và \((\cot x)'\) không có do \(\sin0=0\). Chọn phân biệt miền cho từng hàm.
+Xét ví dụ: \(\tan x\) ở \(x=\frac\pi2\) không xác định vì \(\cos\frac\pi2=0\). Ở \(x=0\): \((\tan x)'=1\) và \((\cot x)'\) không có do \(\sin0=0\). Chọn phân biệt miền cho từng hàm.
 
 **Ví dụ**
 
@@ -655,7 +655,7 @@ Chẳng hạn, \(y=\cos(3x^2)\) ⇒ \(u=3x^2\), \(u'=6x\), \(y'=-6x\sin(3x^2)\).
 
 \(5\cos(5x)\) khi góc đo bằng radian.
 
-Nếu ra cos(5x), đạo hàm trong 5x chưa được nhân.
+Nếu ra \(\cos(5x)\), đạo hàm trong 5x chưa được nhân.
 
 
 **Kiểm lỗi**
@@ -932,7 +932,7 @@ Nếu bỏ nhân thêm một hệ số số mũ ở lần đạo hàm thứ hai,
 
 <!-- LESSON_ID: TOP09-M28; OUTCOME_ID: TOP09-O28 -->
 
-> **CÔNG THỨC — Đạo hàm cấp hai của hàm hợp.** Hàm mũ và lượng giác cũng có đạo hàm cấp hai. Tại sao đạo hàm lần hai của sin(2x) lại xuất hiện bình phương hệ số 2? Ta sử dụng quy tắc dây chuyền và đạo hàm sin/cos khi góc đo bằng radian, hàm mũ. Nếu \(f=\sin(kx)\) thì \(f'=k\cos(kx)\), \(f''=-k^2\sin(kx)\); nếu \(f=e^{kx}\), \(f'=ke^{kx}\), \(f''=k^2e^{kx}\). Hệ số k nhân mỗi lần do dây chuyền, không phải do bình phương \(f'\). Giữ đúng dấu đạo hàm cos. Mẫu hệ số \(k^2\) ở đây do lớp trong \(kx\) có đạo hàm hằng. Nếu lớp trong \(u(x)\) không tuyến tính, phải dùng cả quy tắc tích: \((F(u))''=F''(u)(u')^2+F'(u)u''\) khi các đạo hàm cần thiết tồn tại. Chẳng hạn, \((e^{x^2})'=2xe^{x^2}\), nên \((e^{x^2})''=(2+4x^2)e^{x^2}\), không chỉ là \(4x^2e^{x^2}\).
+> **CÔNG THỨC — Đạo hàm cấp hai của hàm hợp.** Hàm mũ và lượng giác cũng có đạo hàm cấp hai. Tại sao đạo hàm lần hai của \(\sin(2x)\) lại xuất hiện bình phương hệ số 2? Ta sử dụng quy tắc dây chuyền và đạo hàm sin/cos khi góc đo bằng radian, hàm mũ. Nếu \(f=\sin(kx)\) thì \(f'=k\cos(kx)\), \(f''=-k^2\sin(kx)\); nếu \(f=e^{kx}\), \(f'=ke^{kx}\), \(f''=k^2e^{kx}\). Hệ số k nhân mỗi lần do dây chuyền, không phải do bình phương \(f'\). Giữ đúng dấu đạo hàm cos. Mẫu hệ số \(k^2\) ở đây do lớp trong \(kx\) có đạo hàm hằng. Nếu lớp trong \(u(x)\) không tuyến tính, phải dùng cả quy tắc tích: \((F(u))''=F''(u)(u')^2+F'(u)u''\) khi các đạo hàm cần thiết tồn tại. Chẳng hạn, \((e^{x^2})'=2xe^{x^2}\), nên \((e^{x^2})''=(2+4x^2)e^{x^2}\), không chỉ là \(4x^2e^{x^2}\).
 
 Xét ví dụ: \(f=\cos(3x)\): \(f'=-3\sin(3x)\), \(f''=-9\cos(3x)\). Chọn lấy đạo hàm hai lần, mỗi lần đều dùng quy tắc dây chuyền.
 
@@ -1131,7 +1131,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-C01; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O01; NOT_NEW_ID -->
 
-**Bài 2.** Với \(f(x)=x^2\), tính độ biến thiên trung bình từ \(x=1\) đến x=3.
+**Bài 2.** Với \(f(x)=x^2\), tính độ biến thiên trung bình từ \(x=1\) đến \(x=3\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1155,13 +1155,13 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Lời giải có suy luận:** \(s(1)=1,\ s(3)=9\); \(\frac{\Delta s}{\Delta t}=\frac{9-1}{3-1}=4\) m/s. Đây là giá trị trung bình của cả hai giây, chưa phải \(v(1)\).
 
 
-**Nếu làm sai:** Nếu trả 8 m/s, nhớ chia Δs cho Δ\(t=2\) s.
+**Nếu làm sai:** Nếu trả 8 m/s, nhớ chia Δs cho \(\Delta t=2\) s.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-P02; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O02; NOT_NEW_ID -->
 
-**Bài 4.** Với \(f(x)=2x^2\), hãy rút gọn thương sai phân tại a=1 (chưa lấy giới hạn).
+**Bài 4.** Với \(f(x)=2x^2\), hãy rút gọn thương sai phân tại \(a=1\) (chưa lấy giới hạn).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1309,7 +1309,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Lời giải có suy luận:** \(f(0)=0\), lim trái của x và phải của \(x^2\) đều 0 nên liên tục. Thương \(\frac{f(h)-f(0)}h\) bằng 1 nếu \(h<0\), bằng h nếu \(h>0\); các đạo hàm một phía lần lượt 1 và 0, khác nhau ⇒ \(f'(0)\) không tồn tại.
 
 
-**Nếu làm sai:** Liên tục chỉ kiểm f(h)→f(0), còn khả vi phải kiểm thương sai phân.
+**Nếu làm sai:** Liên tục chỉ kiểm \(f(h)\to f(0)\), còn khả vi phải kiểm thương sai phân.
 
 </details>
 
@@ -1321,7 +1321,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** Không.
 
-**Giải thích bản chất và cách chọn phương pháp:** Thương trái là -1 và thương phải là +1 tại a=1.
+**Giải thích bản chất và cách chọn phương pháp:** Thương trái là -1 và thương phải là +1 tại \(a=1\).
 
 
 **Nếu làm sai:** Kiểm liên tục bằng giới hạn của f; kiểm khả vi bằng hai thương sai phân, không suy ngược.
@@ -1351,7 +1351,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Đáp án:** Liên tục nhưng không khả vi tại 0.
 
-**Lời giải có suy luận:** |x|→0=|0| khi x→0, nên liên tục. Thương [|h|−0]/h =−1 khi \(h<0\) và +1 khi \(h>0\), không có giới hạn hai phía. Đây là phản ví dụ cho 'liên tục ⇒ có đạo hàm'.
+**Lời giải có suy luận:** \(|x|\to0=|0|\) khi \(x\to0\), nên liên tục. Thương \(\frac{|h|-0}h=-1\) khi \(h<0\) và +1 khi \(h>0\), không có giới hạn hai phía. Đây là phản ví dụ cho 'liên tục ⇒ có đạo hàm'.
 
 
 **Nếu làm sai:** Đừng lấy đồ thị không đứt làm bằng chứng tiếp tuyến có một độ dốc duy nhất.
@@ -1364,7 +1364,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** \(g(-1)=0\) và hai giới hạn g(x)→0; thương tại -1 bằng \(\frac{|h|}h\), giới hạn trái -1, phải +1; không khả vi.
+**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** \(g(-1)=0\) và hai giới hạn \(g(x)\to0\); thương tại -1 bằng \(\frac{|h|}h\), giới hạn trái -1, phải +1; không khả vi.
 
 **Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
 1. Khẳng định và chứng minh liên tục — **1 điểm**.
@@ -1379,7 +1379,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-P06; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O06; NOT_NEW_ID -->
 
-**Bài 18.** Xét \(f(x)=|x+3|\). Tại x=-3, độ dốc hai phía là bao nhiêu?
+**Bài 18.** Xét \(f(x)=|x+3|\). Tại \(x=-3\), độ dốc hai phía là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1428,7 +1428,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** Liên tục mọi c; f'_-(0)=c, f'_+(0)=0; khả vi iff \(c=0\), \(f'(0)=0\), tiếp tuyến \(y=0\).
+**Đáp án:** Liên tục mọi c; \(f'_-(0)=c,\ f'_+(0)=0\); khả vi iff \(c=0\), \(f'(0)=0\), tiếp tuyến \(y=0\).
 
 **Lời giải đầy đủ:** \(f(0)=0\). Khi \(x\to0^+\), \(f=x^2\to0\); khi \(x\to0^-\), \(f=x^2+cx\to0\) nên liên tục. Với \(h>0\), \(\frac{f(h)-f(0)}h=h\to0\). Với \(h<0\), thương \(\frac{h^2+ch}h=h+c\to c\). Hai đạo hàm một phía bằng nhau khi \(c=0\); khi đó \(f'(0)=0\) và \(P(0;0)\), tiếp tuyến \(y=0\).
 
@@ -1448,13 +1448,13 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-P07; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O07; NOT_NEW_ID -->
 
-**Bài 22.** Với \(f(x)=x^3\), hệ số góc tiếp tuyến tại x=-1?
+**Bài 22.** Với \(f(x)=x^3\), hệ số góc tiếp tuyến tại \(x=-1\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** \(3\).
 
-**Giải thích bản chất và cách chọn phương pháp:** \(f'(x)=3x^2\), nên f'(-1)=3, dù f(-1)=-1.
+**Giải thích bản chất và cách chọn phương pháp:** \(f'(x)=3x^2\), nên \(f'(-1)=3\), dù \(f(-1)=-1\).
 
 
 **Nếu làm sai:** Viết \(P(a;f(a))\) và \(f'(a)\) trên hai dòng; không coi \(f(a)\) là độ dốc.
@@ -1493,7 +1493,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-P08; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O08; NOT_NEW_ID -->
 
-**Bài 25.** Viết tiếp tuyến của \(f(x)=x^2+1\) tại x=-2.
+**Bài 25.** Viết tiếp tuyến của \(f(x)=x^2+1\) tại \(x=-2\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1557,7 +1557,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-P09; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O09; NOT_NEW_ID -->
 
-**Bài 29.** \(s(t)=12t-2t^2\) m, tốc độ tại t=4 là?
+**Bài 29.** \(s(t)=12t-2t^2\) m, tốc độ tại \(t=4\) là?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1614,13 +1614,13 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 1. Tính \(s(2)=2\) (1đ)
 2. Tính \(s(3)=0\) (1đ)
 3. Tính vận tốc trung bình −2 (1đ)
-4. Lập v=s' đúng (1đ)
+4. Lập \(v=s'\) đúng (1đ)
 5. Tính \(v(2)=-3\) và tốc độ3 (1đ)
 6. Lập đúng tiếp tuyến qua \((2;2)\) (1đ)
 7. Giải thích ý nghĩa và đơn vị vận tốc (1đ)
 
 
-**Nếu làm sai:** Nếu trộn y=s(t) với t hoặc lẫn quãng đường với tọa độ, đặt trục t và ký hiệu độ dốc (m/s).
+**Nếu làm sai:** Nếu trộn \(y=s(t)\) với t hoặc lẫn quãng đường với tọa độ, đặt trục t và ký hiệu độ dốc (m/s).
 
 </details>
 
@@ -1660,7 +1660,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** T'(2)=1 °C/phút, nhiệt độ đang tăng tức thời.
+**Đáp án:** \(T'(2)=1\) °C/phút, nhiệt độ đang tăng tức thời.
 
 **Lời giải có suy luận:** \(T'(t)=3-t\); tại \(t=2\) tốc độ thay đổi +1 °C trên mỗi phút. Đó không phải nhiệt độ \(T(2)=24\) °C. Đơn vị đạo hàm là đơn vị giá trị chia đơn vị biến.
 
@@ -1724,7 +1724,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** \(\frac5{2\sqrt4}=\frac54\).
 
-**Giải thích bản chất và cách chọn phương pháp:** Miền công thức \(x>0\); kiểm x=4 hợp lệ.
+**Giải thích bản chất và cách chọn phương pháp:** Miền công thức \(x>0\); kiểm \(x=4\) hợp lệ.
 
 
 **Nếu làm sai:** Viết điều kiện biểu thức dưới căn không âm, sau đó chỉ dùng công thức tại nội điểm phù hợp.
@@ -1754,7 +1754,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Đáp án:** \(D=[-1;+\infty)\), \(f'(x)=\frac1{2\sqrt{x+1}}\) khi \(x>-1\); không có đạo hàm hai phía tại −1.
 
-**Lời giải có suy luận:** Điều kiện căn \(x+1\ge0\). Trên \(x>-1\), chain rule cho \(\frac1{2\sqrt{x+1}}\). Tại đầu mút x=−1, thương phải \(\frac{\sqrt h}h=\frac1{\sqrt h}\to+\infty\); bên trái không thuộc miền, không có đạo hàm hữu hạn hai phía.
+**Lời giải có suy luận:** Điều kiện căn \(x+1\ge0\). Trên \(x>-1\), chain rule cho \(\frac1{2\sqrt{x+1}}\). Tại đầu mút \(x=-1\), thương phải \(\frac{\sqrt h}h=\frac1{\sqrt h}\to+\infty\); bên trái không thuộc miền, không có đạo hàm hữu hạn hai phía.
 
 
 **Nếu làm sai:** Không lầm 'hàm xác định tại −1' với 'có đạo hàm tại −1'.
@@ -1793,11 +1793,11 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P13; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O13; NOT_NEW_ID -->
 
-**Bài 44.** Tính y' nếu \(y=5-4x+7x^2\), chỉ ra từng hạng đóng góp.
+**Bài 44.** Tính \(y'\) nếu \(y=5-4x+7x^2\), chỉ ra từng hạng đóng góp.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** y'=−4+14x.
+**Đáp án:** \(y'=-4+14x\).
 
 **Lời giải có suy luận:** \((5)'=0\), \((-4x)'=-4\), \((7x^2)'=14x\). Tính tuyến tính cho tổng và hiệu giúp chia bài thành ba hạng.
 
@@ -1817,7 +1817,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
 1. Chọn quy tắc tích ngoài — **1 điểm**.
 2. Lấy đạo hàm \((\sin(2x))'=2\cos(2x)\) — **1 điểm**.
-3. Tính F' gồm đủ hai hạng — **1 điểm**.
+3. Tính \(F'\) gồm đủ hai hạng — **1 điểm**.
 4. Giải thích vì sao tích hai đạo hàm là sai — **1 điểm**.
 
 
@@ -1866,23 +1866,23 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Lời giải có suy luận:** \(u=x^2\), \(v=\sin x\); \(u'=2x\), \(v'=\cos x\) (radian). \((uv)'=u'v+uv'=2x\sin x+x^2\cos x\). Tích hai đạo hàm \(2x\cos x\) bỏ sót hai biến thiên tương ứng.
 
 
-**Nếu làm sai:** Viết đủ hai hạng u'v và uv' trước khi rút gọn.
+**Nếu làm sai:** Viết đủ hai hạng \(u'v\) và \(uv'\) trước khi rút gọn.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-W03; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O15; NOT_NEW_ID -->
 
-**Bài 49.** Hàm \(y=\frac{3x+1}{x^2+1}\): (a) miền; (b) đạo hàm; (c) tính y'(0); (d) giải thích tử của thương.
+**Bài 49.** Hàm \(y=\frac{3x+1}{x^2+1}\): (a) miền; (b) đạo hàm; (c) tính \(y'(0)\); (d) giải thích tử của thương.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Miền ℝ; \(y'=\frac{3(x^2+1)-(3x+1)2x}{(x^2+1)^2}=\frac{-3x^2-2x+3}{(x^2+1)^2}\); y'(0)=3.
+**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Miền ℝ; \(y'=\frac{3(x^2+1)-(3x+1)2x}{(x^2+1)^2}=\frac{-3x^2-2x+3}{(x^2+1)^2}\); \(y'(0)=3\).
 
 **Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
 1. Miền ℝ do \(x^2+1>0\) — **1 điểm**.
 2. Quy tắc thương đúng tử và mẫu — **1 điểm**.
 3. Rút gọn tử \(-3x^2-2x+3\) — **1 điểm**.
-4. Tính y'(0)=3 và diễn giải quy tắc — **1 điểm**.
+4. Tính \(y'(0)=3\) và diễn giải quy tắc — **1 điểm**.
 
 
 **Nếu làm sai:** Loại điểm mẫu bằng 0 ngay từ đầu và giữ dấu trừ của \(uv'\) trong tử.
@@ -1895,9 +1895,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** \(\frac1{(x+1)^2}\) với x≠-1.
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** \(\frac1{(x+1)^2}\) với \(x\ne-1\).
 
-**Giải thích bản chất và cách chọn phương pháp:** Tử (x+1)-x=1, mẫu không bằng 0.
+**Giải thích bản chất và cách chọn phương pháp:** Tử \((x+1)-x=1\), mẫu không bằng 0.
 
 
 **Nếu làm sai:** Loại điểm mẫu bằng 0 ngay từ đầu và giữ dấu trừ của \(uv'\) trong tử.
@@ -1930,7 +1930,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Lời giải có suy luận:** \(u=x^2+1\),\(u'=2x\); \(v=x-1\),\(v'=1\). \((\frac uv)'=\frac{2x(x-1)-(x^2+1)}{(x-1)^2}=\frac{x^2-2x-1}{(x-1)^2}\), \(x\ne1\). Thế \(x=0\) được −1.
 
 
-**Nếu làm sai:** Mẫu \(v^2\) và dấu trừ uv' đều bắt buộc; không tính tại \(x=1\).
+**Nếu làm sai:** Mẫu \(v^2\) và dấu trừ \(uv'\) đều bắt buộc; không tính tại \(x=1\).
 
 </details>
 
@@ -2013,7 +2013,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** \(2\cos x+3\sin x\).
 
-**Giải thích bản chất và cách chọn phương pháp:** Trừ 3 cos x, lấy đạo hàm sẽ cộng 3 sin x.
+**Giải thích bản chất và cách chọn phương pháp:** Trừ \(3\cos x\), lấy đạo hàm sẽ cộng \(3\sin x\).
 
 
 **Nếu làm sai:** Kiểm đơn vị góc radian và dấu trừ trong đạo hàm của cos.
@@ -2037,13 +2037,13 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P17; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O17; NOT_NEW_ID -->
 
-**Bài 59.** Tính đạo hàm y=2sin x−3cos x, x tính radian.
+**Bài 59.** Tính đạo hàm \(y=2\sin x-3\cos x\), x tính radian.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** y'=2cos x+3sin x.
+**Đáp án:** \(y'=2\cos x+3\sin x\).
 
-**Lời giải có suy luận:** Dùng (sin x)'=cos x, (cos x)'=−sin x. Đạo hàm của −3cos x là +3sin x. Quy tắc với góc radian; nếu x là độ cần đổi về radian.
+**Lời giải có suy luận:** Dùng \((\sin x)'=\cos x,\ (\cos x)'=-\sin x\). Đạo hàm của \(-3\cos x\) là \(+3\sin x\). Quy tắc với góc radian; nếu x là độ cần đổi về radian.
 
 
 **Nếu làm sai:** Nếu giữ −3sin x, kiểm đạo hàm cos có dấu âm.
@@ -2088,7 +2088,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Đáp án:** \(f'=\frac1{\cos^2 x}-\frac1{\sin^2 x}\); \(D=\{x:\sin x\ne0,\ \cos x\ne0\}\).
 
-**Lời giải có suy luận:** Với tan x cần \(\cos x\ne0\), với cot x cần \(\sin x\ne0\). Đạo hàm của \(\tan x\) là \(\sec^2 x\), của \(\cot x\) là \(-\csc^2 x\) trong radian. Không kết luận biểu thức có nghĩa tại các bội \(\frac\pi2\).
+**Lời giải có suy luận:** Với \(\tan x\) cần \(\cos x\ne0\), với \(\cot x\) cần \(\sin x\ne0\). Đạo hàm của \(\tan x\) là \(\sec^2 x\), của \(\cot x\) là \(-\csc^2 x\) trong radian. Không kết luận biểu thức có nghĩa tại các bội \(\frac\pi2\).
 
 
 **Nếu làm sai:** Cẩn thận dấu trừ của cot và điều kiện cả hai mẫu.
@@ -2127,7 +2127,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P19; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O19; NOT_NEW_ID -->
 
-**Bài 65.** Tính y' nếu \(y=\sin(2x^2)\), x đo radian.
+**Bài 65.** Tính \(y'\) nếu \(y=\sin(2x^2)\), x đo radian.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2148,7 +2148,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** \(5^x\ln 5\).
 
-**Giải thích bản chất và cách chọn phương pháp:** Cơ số 5>0, khác 1, nên nhân ln5.
+**Giải thích bản chất và cách chọn phương pháp:** Cơ số 5>0, khác 1, nên nhân \(\ln5\).
 
 
 **Nếu làm sai:** Xem biến có ở cơ số hay số mũ; \(a^x\) cho aˣln a với \(a>0\).
@@ -2217,11 +2217,11 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P21; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O21; NOT_NEW_ID -->
 
-**Bài 71.** Tính y' nếu \(y=\ln x+\log_3 x\), nêu miền xác định.
+**Bài 71.** Tính \(y'\) nếu \(y=\ln x+\log_3 x\), nêu miền xác định.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** D=(0,∞), y'=1/x+1/(x ln3).
+**Đáp án:** \(D=(0;+\infty)\), \(y'=\frac1x+\frac1{x\ln3}\).
 
 **Lời giải có suy luận:** Cả ln và \(\log_3\) chỉ xác định khi \(x>0\). Đạo hàm \((\ln x)'=\frac1x\); đạo hàm \((\log_a x)'=\frac1{x\ln a}\) với \(a>0\),\(a\ne1\). Với a=3, kết quả như trên.
 
@@ -2262,7 +2262,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P22; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O22; NOT_NEW_ID -->
 
-**Bài 74.** Tính y' và miền xác định của \(y=\ln(2x+1)+3^{x^2}\).
+**Bài 74.** Tính \(y'\) và miền xác định của \(y=\ln(2x+1)+3^{x^2}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2301,17 +2301,17 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-W02; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O23; NOT_NEW_ID -->
 
-**Bài 76.** Với \(F(x)=\ln(9-x^2)\): (a) tìm miền; (b) tính đạo hàm; (c) tính F'(0); (d) giải thích tại sao không thể dùng công thức tại x=4.
+**Bài 76.** Với \(F(x)=\ln(9-x^2)\): (a) tìm miền; (b) tính đạo hàm; (c) tính \(F'(0)\); (d) giải thích tại sao không thể dùng công thức tại \(x=4\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Miền (-3,3); \(F'=-\frac{2x}{9-x^2}\); F'(0)=0; tại x=4 log đối số âm nên hàm gốc vô nghĩa.
+**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Miền \((-3;3)\); \(F'=-\frac{2x}{9-x^2}\); \(F'(0)=0\); tại \(x=4\) log đối số âm nên hàm gốc vô nghĩa.
 
 **Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
 1. Giải \(9-x^2>0\) đúng — **1 điểm**.
 2. Dùng chain cho \(-\frac{2x}{9-x^2}\) — **1 điểm**.
 3. Tính đạo hàm tại 0 — **1 điểm**.
-4. Chỉ rõ tại x=4 hàm không xác định — **1 điểm**.
+4. Chỉ rõ tại \(x=4\) hàm không xác định — **1 điểm**.
 
 
 **Nếu làm sai:** Giải giao điều kiện căn/mẫu/log; đạo hàm có thể không tồn tại tại đầu mút miền.
@@ -2324,7 +2324,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** \(-\frac{x}{\sqrt{9-x^2}}\) với -3<x<3.
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** \(-\frac{x}{\sqrt{9-x^2}}\) với \(-3<x<3\).
 
 **Giải thích bản chất và cách chọn phương pháp:** Căn có nghĩa trên [-3,3] nhưng đạo hàm công thức chỉ trong khoảng mở.
 
@@ -2335,13 +2335,13 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-C13; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O23; NOT_NEW_ID -->
 
-**Bài 78.** Vì sao \(\ln(x-2)\) không xác định khi x≤2?
+**Bài 78.** Vì sao \(\ln(x-2)\) không xác định khi \(x\le2\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** Vì đối số x-2 phải >0.
 
-**Giải thích bản chất và cách chọn phương pháp:** Có công thức \(f'=\frac1{x-2}\) trên \(x>2\), không tại x≤2.
+**Giải thích bản chất và cách chọn phương pháp:** Có công thức \(f'=\frac1{x-2}\) trên \(x>2\), không tại \(x\le2\).
 
 
 **Nếu làm sai:** Giải giao điều kiện căn/mẫu/log; đạo hàm có thể không tồn tại tại đầu mút miền.
@@ -2354,9 +2354,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** D=[2,∞), có công thức đạo hàm theo quy tắc trên (2,∞); không có đạo hàm hữu hạn hai phía tại \(x=2\).
+**Đáp án:** \(D=[2;+\infty)\), có công thức đạo hàm theo quy tắc trên \((2;+\infty)\); không có đạo hàm hữu hạn hai phía tại \(x=2\).
 
-**Lời giải có suy luận:** \(\sqrt{x-2}\) đòi \(x\ge2\); ln x xác định và khác 0 trên \(x\ge2\) (vì ln2>0). Với \(x>2\), \(y'=\frac{\frac{\ln x}{2\sqrt{x-2}}-\frac{\sqrt{x-2}}x}{(\ln x)^2}\). Tại \(x=2\) hàm định nghĩa bằng0, nhưng thương phải \(\frac{y(2+h)}h\approx\frac1{\sqrt h\ln2}\to+\infty\), không có đạo hàm hữu hạn.
+**Lời giải có suy luận:** \(\sqrt{x-2}\) đòi \(x\ge2\); \(\ln x\) xác định và khác 0 trên \(x\ge2\) (vì ln2>0). Với \(x>2\), \(y'=\frac{\frac{\ln x}{2\sqrt{x-2}}-\frac{\sqrt{x-2}}x}{(\ln x)^2}\). Tại \(x=2\) hàm định nghĩa bằng0, nhưng thương phải \(\frac{y(2+h)}h\approx\frac1{\sqrt h\ln2}\to+\infty\), không có đạo hàm hữu hạn.
 
 
 **Nếu làm sai:** Kiểm miền gốc trước khi dùng bảng đạo hàm; căn xác định ở đầu mút chưa chắc khả vi.
@@ -2421,7 +2421,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Giải thích bản chất và cách chọn phương pháp:** Chain: hệ số 3 của góc trong và 2 ở ngoài.
 
 
-**Nếu làm sai:** Tính \(v=s'\) và dấu v; chỉ sau đó dùng |v| cho tốc độ.
+**Nếu làm sai:** Tính \(v=s'\) và dấu v; chỉ sau đó dùng \(|v|\) cho tốc độ.
 
 </details>
 
@@ -2436,7 +2436,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Giải thích bản chất và cách chọn phương pháp:** Vận tốc mang đơn vị m/s; không phải độ cao 15 m.
 
 
-**Nếu làm sai:** Tính \(v=s'\) và dấu v; chỉ sau đó dùng |v| cho tốc độ.
+**Nếu làm sai:** Tính \(v=s'\) và dấu v; chỉ sau đó dùng \(|v|\) cho tốc độ.
 
 </details>
 
@@ -2491,9 +2491,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** \(f'=3x^2\), \(f''=6x\), f''(2)=12; không phải \((3x^2)^2\).
+**Đáp án:** \(f'=3x^2\), \(f''=6x\), \(f''(2)=12\); không phải \((3x^2)^2\).
 
-**Lời giải có suy luận:** Lấy đạo hàm f một lần được \(3x^2\), lấy đạo hàm của hàm mới thêm lần nữa được 6x. Ký hiệu f''=(f')' yêu cầu \(f'\) khả vi; không bình phương \(f'\).
+**Lời giải có suy luận:** Lấy đạo hàm f một lần được \(3x^2\), lấy đạo hàm của hàm mới thêm lần nữa được 6x. Ký hiệu \(f''=(f')'\) yêu cầu \(f'\) khả vi; không bình phương \(f'\).
 
 
 **Nếu làm sai:** Nếu tính \(f''=9x^4\), bạn đã bình phương \(f'\) thay vì đạo hàm lần hai.
@@ -2517,7 +2517,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B33-C02; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O27; NOT_NEW_ID -->
 
-**Bài 90.** \(f(x)=4x^3-6x\), tính f''(1).
+**Bài 90.** \(f(x)=4x^3-6x\), tính \(f''(1)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2551,12 +2551,12 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** \(f'=6\cos(3x)+e^x\), \(f''=-18\sin(3x)+e^x\), f''(0)=1. Hàm trong 3x góp hệ số 3 mỗi lần.
+**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** \(f'=6\cos(3x)+e^x\), \(f''=-18\sin(3x)+e^x\), \(f''(0)=1\). Hàm trong 3x góp hệ số 3 mỗi lần.
 
 **Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
 1. Đạo hàm lần 1 gồm 6cos 3x — **1 điểm**.
 2. Đạo hàm lần 2 gồm -18sin 3x — **1 điểm**.
-3. Tính f''(0)=1 — **1 điểm**.
+3. Tính \(f''(0)=1\) — **1 điểm**.
 4. Giải thích các hệ số chain và dấu âm — **1 điểm**.
 
 
@@ -2587,7 +2587,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** \(-4\cos(2x)\).
 
-**Giải thích bản chất và cách chọn phương pháp:** cos→-sin→-cos, hệ số 2 xuất hiện mỗi lần.
+**Giải thích bản chất và cách chọn phương pháp:** \(\cos x\mapsto-\sin x\mapsto-\cos x\), hệ số 2 xuất hiện mỗi lần.
 
 
 **Nếu làm sai:** Ở cả hai lượt đạo hàm hàm hợp đều nhân đạo hàm của biểu thức bên trong.
@@ -2663,13 +2663,13 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P29; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O29; NOT_NEW_ID -->
 
-**Bài 99.** \(s(t)=t^3-6t^2+9t\) (m), \(t\ge0\) s. Tính gia tốc \(a(1)\) từ s''.
+**Bài 99.** \(s(t)=t^3-6t^2+9t\) (m), \(t\ge0\) s. Tính gia tốc \(a(1)\) từ \(s''\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** \(a(1)=-6\) m/s².
 
-**Lời giải có suy luận:** \(v(t)=3t^2-12t+9\) (m/s), \(a(t)=v'(t)=6t-12\) (m/s²). Tại \(t=1\), a=6−12=−6. Gia tốc là đạo hàm vận tốc, không phải s(t) hoặc \((s')^2\).
+**Lời giải có suy luận:** \(v(t)=3t^2-12t+9\) (m/s), \(a(t)=v'(t)=6t-12\) (m/s²). Tại \(t=1\), \(a=6-12=-6\). Gia tốc là đạo hàm vận tốc, không phải s(t) hoặc \((s')^2\).
 
 
 **Nếu làm sai:** Đơn vị gia tốc là m/s², khác đơn vị vận tốc m/s.
@@ -2682,22 +2682,22 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** \(v=12-6t\) m/s, \(a=-6\) m/s², \(v=0\) tại \(t=2\); khi 0<t<2 \(v>0\) và \(a<0\) nên chậm; khi 2<t<4 \(v<0\) và \(a<0\) nên nhanh theo chiều âm.
+**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** \(v=12-6t\) m/s, \(a=-6\) m/s², \(v=0\) tại \(t=2\); khi \(0<t<2\) \(v>0\) và \(a<0\) nên chậm; khi \(2<t<4\) \(v<0\) và \(a<0\) nên nhanh theo chiều âm.
 
 **Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
-1. Tính v=12-6t — **1 điểm**.
+1. Tính \(v=12-6t\) — **1 điểm**.
 2. Tính gia tốc -6 đúng đơn vị — **1 điểm**.
 3. Giải \(v=0\) được \(t=2\) — **1 điểm**.
 4. Phân tích vận tốc/gia tốc cùng-trái dấu hai phía \(t=2\) — **1 điểm**.
 
 
-**Nếu làm sai:** So sánh dấu v và a tại thời điểm; cùng dấu làm |v| tăng khi \(v\ne0\).
+**Nếu làm sai:** So sánh dấu v và a tại thời điểm; cùng dấu làm \(|v|\) tăng khi \(v\ne0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B33-P05; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O30; NOT_NEW_ID -->
 
-**Bài 101.** Vật v=+4 m/s, a=-2 m/s²; nhận xét tốc độ tức thời?
+**Bài 101.** Vật \(v=+4\) m/s, \(a=-2\) m/s²; nhận xét tốc độ tức thời?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2706,13 +2706,13 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Giải thích bản chất và cách chọn phương pháp:** Vận tốc dương và gia tốc âm trái dấu.
 
 
-**Nếu làm sai:** So sánh dấu v và a tại thời điểm; cùng dấu làm |v| tăng khi \(v\ne0\).
+**Nếu làm sai:** So sánh dấu v và a tại thời điểm; cùng dấu làm \(|v|\) tăng khi \(v\ne0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B33-C05; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O30; NOT_NEW_ID -->
 
-**Bài 102.** Nếu v(t0)<0 và a(t0)<0, tốc độ |v| tại t0 tăng hay giảm?
+**Bài 102.** Nếu \(v(t_0)<0\) và \(a(t_0)<0\), tốc độ \(|v|\) tại t0 tăng hay giảm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2721,19 +2721,19 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Giải thích bản chất và cách chọn phương pháp:** Hai dấu cùng nhau làm độ lớn vận tốc tăng theo chiều âm.
 
 
-**Nếu làm sai:** So sánh dấu v và a tại thời điểm; cùng dấu làm |v| tăng khi \(v\ne0\).
+**Nếu làm sai:** So sánh dấu v và a tại thời điểm; cùng dấu làm \(|v|\) tăng khi \(v\ne0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P30; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O30; NOT_NEW_ID -->
 
-**Bài 103.** Chuyển động \(s(t)=t^2-4t\) (m), \(t\ge0\). Ở \(t=1\) và \(t=3\), vật tăng tốc hay giảm tốc theo nghĩa tốc độ |v|?
+**Bài 103.** Chuyển động \(s(t)=t^2-4t\) (m), \(t\ge0\). Ở \(t=1\) và \(t=3\), vật tăng tốc hay giảm tốc theo nghĩa tốc độ \(|v|\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** \(t=1\) tốc độ giảm, \(t=3\) tốc độ tăng (ở lân cận các thời điểm này).
 
-**Lời giải có suy luận:** v=2t−4,a=2. Khi \(t=1\), v=−2,a=+2 ngược dấu, vận tốc tiến tới0 nên tốc độ giảm. Khi \(t=3\), v=+2,a=+2 cùng dấu, tốc độ tăng. Tại \(t=2\), \(v=0\) vật đổi chiều, không suy 'gia tốc dương luôn nhanh dần' cho mọi t.
+**Lời giải có suy luận:** \(v=2t-4,\ a=2\). Khi \(t=1\), \(v=-2,\ a=+2\) ngược dấu, vận tốc tiến tới0 nên tốc độ giảm. Khi \(t=3\), \(v=+2,\ a=+2\) cùng dấu, tốc độ tăng. Tại \(t=2\), \(v=0\) vật đổi chiều, không suy 'gia tốc dương luôn nhanh dần' cho mọi t.
 
 
 **Nếu làm sai:** Xét dấu tích \(v\cdot a\) tại nơi \(v\ne0\): cùng dấu nhanh dần, trái dấu chậm dần.
@@ -2746,14 +2746,14 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** v=3(t−1)(t−3), a=6(t−2); v đổi dấu ở \(t=1\),3; tốc độ giảm \((0;1)\),\((2;3)\), tăng \((1;2)\),\((3;4)\).
+**Đáp án:** \(v=3(t-1)(t-3)\), \(a=6(t-2)\); v đổi dấu ở \(t=1\) và \(t=3\); tốc độ giảm \((0;1)\),\((2;3)\), tăng \((1;2)\),\((3;4)\).
 
-**Lời giải đầy đủ:** \(v=s'=3t^2-12t+9=3(t-1)(t-3)\), \(a=v'=6t-12=6(t-2)\). \(v>0\) \((0;1)\), \(v<0\) \((1;3)\), \(v>0\) \((3;4)\): đổi chiều tại \(t=1\),3. \(a<0\) \((0;2)\), \(a>0\) \((2;4)\). Khi v·a<0 tốc độ |v| giảm: \((0;1)\) và \((2;3)\); khi v·a>0 tốc độ tăng: \((1;2)\) và \((3;4)\). Điểm \(t=2\) có \(a=0\) và \(t=1\),3 có \(v=0\) được xét riêng; không gọi mọi \(a<0\) là chậm dần.
+**Lời giải đầy đủ:** \(v=s'=3t^2-12t+9=3(t-1)(t-3)\), \(a=v'=6t-12=6(t-2)\). \(v>0\) \((0;1)\), \(v<0\) \((1;3)\), \(v>0\) \((3;4)\): đổi chiều tại \(t=1\) và \(t=3\). \(a<0\) \((0;2)\), \(a>0\) \((2;4)\). Khi \(v\cdot a<0\) tốc độ \(|v|\) giảm: \((0;1)\) và \((2;3)\); khi \(v\cdot a>0\) tốc độ tăng: \((1;2)\) và \((3;4)\). Điểm \(t=2\) có \(a=0\) và \(t=1,\ t=3\) có \(v=0\) được xét riêng; không gọi mọi \(a<0\) là chậm dần.
 
 **Rubric /7:**
-1. Tính v=s' (1đ)
-2. Phân tích v=3(t−1)(t−3) (1đ)
-3. Tính a=6(t−2) (1đ)
+1. Tính \(v=s'\) (1đ)
+2. Phân tích \(v=3(t-1)(t-3)\) (1đ)
+3. Tính \(a=6(t-2)\) (1đ)
 4. Bảng dấu v đúng và đổi chiều (1đ)
 5. Bảng dấu a đúng (1đ)
 6. Khoảng tăng tốc độ đúng (1đ)
@@ -2805,7 +2805,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Đáp án:** \(f(0)=1\); \(f'(0)=1\); \(f''(0)=3\); tiếp tuyến \(y=x+1\).
 
-**Lời giải có suy luận:** Quy tắc tích: \(f'=e^x(2x+x^2+1)\). Lần hai \(f''=e^x(2x+x^2+1)+e^x(2+2x)=e^x(x^2+4x+3)\). Tại0: f=1,f'=1,f''=3. Tiếp tuyến \(y-1=1(x-0)\). Không lấy \(f''\) làm độ dốc tiếp tuyến.
+**Lời giải có suy luận:** Quy tắc tích: \(f'=e^x(2x+x^2+1)\). Lần hai \(f''=e^x(2x+x^2+1)+e^x(2+2x)=e^x(x^2+4x+3)\). Tại0: \(f(0)=1,\ f'(0)=1,\ f''(0)=3\). Tiếp tuyến \(y-1=1(x-0)\). Không lấy \(f''\) làm độ dốc tiếp tuyến.
 
 
 **Nếu làm sai:** Lập bảng ba cột \(f(0)\),\(f'(0)\),\(f''(0)\), dùng đúng \(f'\) cho độ dốc.
@@ -2814,16 +2814,16 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P32; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O32; NOT_NEW_ID -->
 
-**Bài 108.** \(f(x)=x^2\), x ban đầu a=2 và tăng \(\Delta x=0{,}1\). Tính vi phân tuyến tính \(dy=f'(a)\Delta x\), độ tăng thật \(\Delta y=f(2{,}1)-f(2)\), sai lệch \(|\Delta y-dy|\); phát biểu điều kiện khi dùng xấp xỉ.
+**Bài 108.** \(f(x)=x^2\), x ban đầu \(a=2\) và tăng \(\Delta x=0{,}1\). Tính vi phân tuyến tính \(dy=f'(a)\Delta x\), độ tăng thật \(\Delta y=f(2{,}1)-f(2)\), sai lệch \(|\Delta y-dy|\); phát biểu điều kiện khi dùng xấp xỉ.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** dy=0,4; Δ\(y=0\),41; sai lệch=0,01.
+**Đáp án:** \(dy=0{,}4\); \(\Delta y=0{,}41\); sai lệch \(0{,}01\).
 
-**Lời giải có suy luận:** \(f'(x)=2x\) nên \(f'(2)=4\). Vi phân tại a=2 ứng với \(dx=0{,}1\) là \(dy=4\cdot0{,}1=0{,}4\). Độ tăng thực là \((2{,}1)^2-2^2=4{,}41-4=0{,}41\). Với \(f=x^2\), \(\Delta y=2a\Delta x+(\Delta x)^2\) nên \(\Delta y-dy=(\Delta x)^2=0{,}01\); vì hàm khả vi tại a và Δx nhỏ, dy là xấp xỉ bậc nhất, không phải đẳng thức \(\Delta y=dy\). Nếu bước thay đổi lớn, phần dư có thể đáng kể.
+**Lời giải có suy luận:** \(f'(x)=2x\) nên \(f'(2)=4\). Vi phân tại \(a=2\) ứng với \(dx=0{,}1\) là \(dy=4\cdot0{,}1=0{,}4\). Độ tăng thực là \((2{,}1)^2-2^2=4{,}41-4=0{,}41\). Với \(f=x^2\), \(\Delta y=2a\Delta x+(\Delta x)^2\) nên \(\Delta y-dy=(\Delta x)^2=0{,}01\); vì hàm khả vi tại a và Δx nhỏ, dy là xấp xỉ bậc nhất, không phải đẳng thức \(\Delta y=dy\). Nếu bước thay đổi lớn, phần dư có thể đáng kể.
 
 
-**Nếu làm sai:** Không coi dy=Δy luôn đúng; khai triển f(a+Δx)−f(a) để thấy phần dư bậc hai.
+**Nếu làm sai:** Không coi \(dy=\Delta y\) luôn đúng; khai triển \(f(a+\Delta x)-f(a)\) để thấy phần dư bậc hai.
 
 </details>
 
@@ -2881,7 +2881,7 @@ Hãy tự giải 32 câu sau trước khi đối chiếu lại phần Luyện t�
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P13; NO_RD1; NO_MASTERY -->
 
-**Câu 13.** Tính y' nếu \(y=5-4x+7x^2\), chỉ ra từng hạng đóng góp.
+**Câu 13.** Tính \(y'\) nếu \(y=5-4x+7x^2\), chỉ ra từng hạng đóng góp.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P14; NO_RD1; NO_MASTERY -->
 
@@ -2897,7 +2897,7 @@ Hãy tự giải 32 câu sau trước khi đối chiếu lại phần Luyện t�
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P17; NO_RD1; NO_MASTERY -->
 
-**Câu 17.** Tính đạo hàm y=2sin x−3cos x, x tính radian.
+**Câu 17.** Tính đạo hàm \(y=2\sin x-3\cos x\), x tính radian.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P18; NO_RD1; NO_MASTERY -->
 
@@ -2905,7 +2905,7 @@ Hãy tự giải 32 câu sau trước khi đối chiếu lại phần Luyện t�
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P19; NO_RD1; NO_MASTERY -->
 
-**Câu 19.** Tính y' nếu \(y=\sin(2x^2)\), x đo radian.
+**Câu 19.** Tính \(y'\) nếu \(y=\sin(2x^2)\), x đo radian.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P20; NO_RD1; NO_MASTERY -->
 
@@ -2913,11 +2913,11 @@ Hãy tự giải 32 câu sau trước khi đối chiếu lại phần Luyện t�
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P21; NO_RD1; NO_MASTERY -->
 
-**Câu 21.** Tính y' nếu \(y=\ln x+\log_3 x\), nêu miền xác định.
+**Câu 21.** Tính \(y'\) nếu \(y=\ln x+\log_3 x\), nêu miền xác định.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P22; NO_RD1; NO_MASTERY -->
 
-**Câu 22.** Tính y' và miền xác định của \(y=\ln(2x+1)+3^{x^2}\).
+**Câu 22.** Tính \(y'\) và miền xác định của \(y=\ln(2x+1)+3^{x^2}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P23; NO_RD1; NO_MASTERY -->
 
@@ -2945,11 +2945,11 @@ Hãy tự giải 32 câu sau trước khi đối chiếu lại phần Luyện t�
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P29; NO_RD1; NO_MASTERY -->
 
-**Câu 29.** \(s(t)=t^3-6t^2+9t\) (m), \(t\ge0\) s. Tính gia tốc \(a(1)\) từ s''.
+**Câu 29.** \(s(t)=t^3-6t^2+9t\) (m), \(t\ge0\) s. Tính gia tốc \(a(1)\) từ \(s''\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P30; NO_RD1; NO_MASTERY -->
 
-**Câu 30.** Chuyển động \(s(t)=t^2-4t\) (m), \(t\ge0\). Ở \(t=1\) và \(t=3\), vật tăng tốc hay giảm tốc theo nghĩa tốc độ |v|?
+**Câu 30.** Chuyển động \(s(t)=t^2-4t\) (m), \(t\ge0\). Ở \(t=1\) và \(t=3\), vật tăng tốc hay giảm tốc theo nghĩa tốc độ \(|v|\)?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P31; NO_RD1; NO_MASTERY -->
 
@@ -2957,7 +2957,7 @@ Hãy tự giải 32 câu sau trước khi đối chiếu lại phần Luyện t�
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P32; NO_RD1; NO_MASTERY -->
 
-**Câu 32.** \(f(x)=x^2\), x ban đầu a=2 và tăng \(\Delta x=0{,}1\). Tính vi phân tuyến tính \(dy=f'(a)\Delta x\), độ tăng thật \(\Delta y=f(2{,}1)-f(2)\), sai lệch \(|\Delta y-dy|\); phát biểu điều kiện khi dùng xấp xỉ.
+**Câu 32.** \(f(x)=x^2\), x ban đầu \(a=2\) và tăng \(\Delta x=0{,}1\). Tính vi phân tuyến tính \(dy=f'(a)\Delta x\), độ tăng thật \(\Delta y=f(2{,}1)-f(2)\), sai lệch \(|\Delta y-dy|\); phát biểu điều kiện khi dùng xấp xỉ.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
