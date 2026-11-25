@@ -16923,7 +16923,7 @@
         {
           "path": "items/cd12.json",
           "before": "395630ec84263b20255951bb1d4aae2feea0c78f",
-          "after": "d6ad3a71cf7653aac21542c5162db36dee2a7fa7",
+          "after": "caad18897aa521e5a046d932b7f234082456d4dc",
           "changed": 12
         },
         {
@@ -16962,7 +16962,7 @@
         "remediation_targets_resolve": 106
       },
       "findings": [
-        "CĐ12 P04 uses special angles directly at G10 instead of requiring G11 angle-addition formula; P05 scalene triangle method selection (largest angle acute, S=10√3); P09 Heron distinct from shared 7–8–9; P10 calculator DEG and final rounding, 45.9m, 65.5m. 12 specific hints/D6. Shared G10 B05/B06 CP prior retained.",
+        "CĐ12 P04 uses special angles directly at G10 instead of requiring G11 angle-addition formula; P05 scalene triangle method selection (largest angle acute, S=10√3); P09 Heron distinct from shared 7–8–9; P10 calculator DEG and final rounding, 46,6m, 73,6m (oblique triangle C=80°). 12 specific hints/D6. Shared G10 B05/B06 CP prior retained.",
         "CĐ13 P01 tests same length vs equal vectors; P11 uses distinct dimensions 2,3,6 and proves two Pythagorean steps. 16 targeted hints/D6; 12 shared G12 ChII hints/D6. 20 shared G10 B07–11 already upgraded retained. Correct seven candidate practice outcome placements: B09-P05 O06→O05; B10-P03 O08→O06; B11-C01 O09→O10; B11-P05 O10→O09; G12 B06-P05 O13→O12; G12 B08-C03 and P05 O16→O15. Historical public projection unchanged; candidate mapping differs deliberately. CĐ13 O13 and O16 now each rely on topic-specific P13/P16 (plus O16 Written), flag thin families not solved by counts. Remaining G12 ChII 36 formative not reviewed in this scope.",
         "CĐ11 66 shared ChIV formative now have targeted hints/D6; CP58 stem/key/solution unchanged, 6 first tries preserved. Previous Written/duplicate findings unresolved. CĐ12 six and CĐ13 four Written source blocks recomputed; eight topic Written have no library projection pointer. TOP12-W02 uses sin75° exact expression without deriving it, beyond prerequisite if G10 alone; TOP13-W04 must specify straight segments to justify path length. No Written source edits.",
         "106 remediation links and 114 CĐ12+13 placement records resolve; no record ID, source, version, rubric, status, interaction, replay or assessment change. No fresh SGK/SBT PDF or full parity/Academic/PED PASS; remaining source and canonical cutover decision pending."
