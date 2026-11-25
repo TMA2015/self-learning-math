@@ -90,7 +90,9 @@ Xét ví dụ: u_1=3, u_{n+1}=2u_n+1. Đặt v_n=u_n+1, v_{n+1}=2v_n và v_1=4, 
 
 **Đề bài.** Cho \(u_1=5\), \(u_{n+1}=2u_n-3\) với \(n\ge1\). Tìm \(u_2,u_3\) và công thức tường minh.
 
-**Lời giải.** \(u_2=7\), \(u_3=11\). Đặt \(v_n=u_n-3\) thì \(v_1=2\), \(v_{n+1}=2v_n\), nên \(v_n=2\cdot2^{n-1}\). Do đó \(u_n=3+2^n\). Kiểm \(n=1,2,3\) lần lượt được \(5,7,11\).
+**Lời giải.** \(u_2=2\cdot5-3=7\), \(u_3=2\cdot7-3=11\). Ta chọn số 3 vì \(3=2\cdot3-3\): nếu số hạng bằng 3 thì bước sau vẫn bằng 3. Xét độ lệch \(v_n=u_n-3\), ta có \(v_1=5-3=2\) và \(v_{n+1}=u_{n+1}-3=2u_n-6=2(u_n-3)=2v_n\). Từ \(v_1\) tới \(v_n\) có \(n-1\) lần nhân 2, nên \(v_n=2\cdot2^{n-1}=2^n\), hay \(u_n=3+2^n\).
+
+Kiểm cho mọi \(n\ge1\): công thức cho \(u_1=5\), và \(2(3+2^n)-3=3+2^{n+1}=u_{n+1}\). Vì truy hồi xác định duy nhất mỗi số hạng sau từ số hạng trước, công thức đúng cho toàn bộ dãy.
 
 **Vận dụng** Cho u_1=2,u_{n+1}=u_n+4. Tính u_3.
 
@@ -393,7 +395,7 @@ Chẳng hạn, u_1=−2, q=3, u_4=−2·3³=−54. Chọn số mũ 3 vì từ s�
 
 5(−2)³=−40.
 
-Đặt dấu âm trong ngoặc của lũy thừa; không tính −2³ như (−2)³ mà không xét ngữ cảnh.
+Dấu ngoặc đặc biệt quan trọng khi số mũ chẵn: \(u_3=5(-2)^2=20\), trong khi \(5\cdot(-2^2)=-20\). Hai biểu thức với số mũ lẻ có thể trùng giá trị, nên hãy dùng \(u_3\) để phát hiện lỗi bỏ ngoặc.
 
 
 **Kiểm lỗi**
@@ -466,9 +468,9 @@ Nếu dùng công thức có mẫu 1−q khi q=1, hoặc nhầm tổng hữu h�
 
 <!-- LESSON_ID: TOP07-M15; OUTCOME_ID: TOP07-O15 -->
 
-> **CÔNG THỨC — Tổng vô hạn và phần dư.** Nếu trị tuyệt đối công bội nhỏ hơn 1, phần dư của tổng giảm dần. Vì sao có thể cộng vô hạn số hạng mà được một số hữu hạn? Cần nhớ tổng n số hạng cấp số nhân và xem số hạng \(q^n\) thay đổi như thế nào khi \(n\) tăng mãi. Với \(|q|<1\), \(q^n\to0\); lấy giới hạn của \(S_n=\dfrac{u_1(1-q^n)}{1-q}\) được **\(S_\infty=\dfrac{u_1}{1-q}\)**. Điều kiện |q|<1 là bắt buộc cho cấp số nhân có u_1≠0; q=−1 làm tổng riêng dao động, |q|>1 thường không hội tụ. Phần dư S_∞−S_n=u_1q^n/(1−q); trị tuyệt đối đo sai số.
+> **CÔNG THỨC — Tổng vô hạn và phần dư.** Nếu trị tuyệt đối công bội nhỏ hơn 1, **độ lớn của phần dư** tiến về 0; bản thân phần dư có thể đổi dấu. Vì sao có thể cộng vô hạn số hạng mà được một số hữu hạn? Cần nhớ tổng n số hạng cấp số nhân và xem số hạng \(q^n\) thay đổi như thế nào khi \(n\) tăng mãi. Với \(|q|<1\), \(q^n\to0\); lấy giới hạn của \(S_n=\dfrac{u_1(1-q^n)}{1-q}\) được **\(S_\infty=\dfrac{u_1}{1-q}\)**. Điều kiện |q|<1 là bắt buộc cho cấp số nhân có u_1≠0; q=−1 làm tổng riêng dao động, |q|>1 thường không hội tụ. Phần dư S_∞−S_n=u_1q^n/(1−q); trị tuyệt đối đo sai số.
 
-Chẳng hạn, Với u_1=6,q=1/2, S_n=12[1−(1/2)^n], S_∞=12; sau n=4 phần dư=12/16=3/4. Chọn công thức phần dư khi muốn biết phải cộng bao nhiêu số hạng để đủ chính xác.
+Chẳng hạn, với \(u_1=6,\ q=\frac12\), các tổng riêng \(S_n=12(1-(\frac12)^n)\) lần lượt bằng 6, 9, 10,5, 11,25 khi \(n=1,2,3,4\). Chúng ngày càng gần 12: đó là ý nghĩa của \(S_n\to12\) và tổng vô hạn \(S_\infty=12\). Sau bốn số hạng, phần dư là \(12-11{,}25=\frac34\). Nếu \(q<0\), phần dư có thể xen kẽ dấu; chẳng hạn \(u_1=1,\ q=-\frac12\) cho \(R_1=-\frac13,\ R_2=\frac16,\ R_3=-\frac1{12}\). Chỉ độ lớn \(|R_n|\) giảm về 0 trong ví dụ này.
 
 **Ví dụ**
 
@@ -580,12 +582,27 @@ Xét ví dụ đúng với sơ đồ: gửi **100 đơn vị vào cuối mỗi k
 
 **Lời giải.** Bốn khoản gửi được hưởng \(3,2,1,0\) kỳ lãi, nên \(FV=25[(1{,}04)^3+(1{,}04)^2+1{,}04+1]=25(1{,}124864+1{,}0816+1{,}04+1)=106{,}1616\). Không tính lãi cho khoản gửi cuối kỳ thứ tư; hình minh họa bên trên có ba khoản \(100\), là dữ liệu khác.
 
-**Vận dụng** Gửi 20 vào cuối hai kỳ với r=10%/kỳ, số dư cuối kỳ 2 là bao nhiêu?
+**Ví dụ — Trả nợ cuối kỳ**
+
+**Đề bài.** Vay 210 đơn vị tiền ở kỳ 0, lãi 10% mỗi kỳ. Cuối mỗi kỳ trả 121 đơn vị. Sau hai kỳ có hết nợ không?
+
+**Lời giải.** Mỗi kỳ, tính lãi trên dư nợ đầu kỳ rồi trừ khoản trả. Kết quả:
+
+| Kỳ | Dư nợ đầu kỳ | Lãi | Khoản trả | Dư nợ cuối kỳ |
+|---|---:|---:|---:|---:|
+| 1 | 210 | 21 | 121 | 110 |
+| 2 | 110 | 11 | 121 | 0 |
+
+Vậy \(B_2=0\), khoản vay được tất toán sau hai kỳ.
+
+**Vận dụng** (a) Gửi 20 đơn vị vào cuối hai kỳ, lãi 10%/kỳ. Tính số dư ngay sau khoản gửi cuối. (b) Vay 315 đơn vị ở kỳ 0 với lãi 10%/kỳ, trả 181,5 đơn vị vào cuối mỗi kỳ. Tính dư nợ cuối kỳ 1 và 2; kiểm đã tất toán chưa.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-20·1,1+20=42; khoản gửi cuối kỳ 2 chưa sinh lãi.
+(a) \(20\cdot1{,}1+20=42\); khoản gửi cuối kỳ 2 chưa sinh lãi.
+
+(b) \(B_1=315\cdot1{,}1-181{,}5=165\); \(B_2=165\cdot1{,}1-181{,}5=0\). Đã tất toán sau hai kỳ. Khoản trả làm giảm dư nợ, nên dùng phép trừ, không dùng phép cộng như gửi góp.
 
 Nếu nhân cả hai khoản với 1,1², vẽ trục kỳ 0–1–2 và đánh dấu ngay sau khi nộp.
 
