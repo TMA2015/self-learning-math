@@ -34,7 +34,11 @@ jobs:
           assert(/BEFORE_SHA:\s*\$\{\{\s*github\.event\.before\s*\}\}/.test(w),'Full main push base required');
           assert(/HEAD_SHA:\s*\$\{\{\s*github\.sha\s*\}\}/.test(w),'Full main push head required');
           const expr="$"+"{{";
-          const fullIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5_P1_HOTFIX' && needs.release-scope.outputs.impact != 'SCOPED_MATH_LAB_FULLPAGE' }}";
+          const fullIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5_P1_HOTFIX' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_RW1' && needs.release-scope.outputs.impact != 'SCOPED_MATH_LAB_FULLPAGE' }}";
+          const rw1If="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_RW1' }}";
+          assert(w.includes(rw1If),"R-W1 exact scope lane missing");
+          const rw1=w.split('\n  deploy-scoped-topic-rw1:\n')[1]?.split('\n  deploy-scoped-math-lab-fullpage:\n')[0];
+          assert(rw1&&rw1.includes('python scripts/test-thpt-topic-rw1-math-browser.py --scope')&&rw1.includes('python scripts/test-thpt-topic-rw1-math-browser.py')&&rw1.includes('ghp-import -n -p -f site'),"R-W1 exact source/browser/deploy gate missing");
           const labIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_MATH_LAB_FULLPAGE' }}";
           assert(w.includes(labIf),"Math Lab 25 must have an exact-diff production lane");
           const lab=w.split('\n  deploy-scoped-math-lab-fullpage:\n')[1];

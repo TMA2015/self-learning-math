@@ -608,12 +608,23 @@ const G11_W6_LESSONS=["docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/
 const G11_W6_FILES=new Set(["docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-23.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md","docs/assets/images/thpt/G11_B22_KHEOPS_ANGLE_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B22_SKEW_PERP_RECTANGULAR_BOX_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B23_PARALLEL_PLANES_NORMAL_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B23_PERPENDICULAR_BISECTOR_PLANE_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B24_SABC_PROJECTION_EXAMPLE_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B24_THREE_PERPENDICULAR_LINES_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B25_CUBE_EQUILATERAL_DIAGONALS_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B25_DIHEDRAL_CHAIR_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B25_PERPENDICULAR_PLANES_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B25_REGULAR_PYRAMID_FRUSTUM_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B25_RHOMBUS_PYRAMID_DIHEDRAL_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B25_SPECIAL_PRISMS_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_PARALLEL_DISTANCES_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_PYRAMID_HEIGHT_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_RHOMBUS_PRISM_DISTANCES_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_RIGHT_TRIANGULAR_PRISM_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_SABC_COMMON_PERPENDICULAR_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_SKEW_COMMON_PERPENDICULAR_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_SLOPE_CLEARANCE_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_SQUARE_PYRAMID_SKEW_DISTANCE_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B27_FRUSTUM_BASKET_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B27_FRUSTUM_SIMILARITY_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B27_PARALLELEPIPED_OBLIQUE_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B27_PRISM_INCLINED_HEIGHT_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B27_TETRAHEDRON_ORTHOGONAL_AUTHORING_20261123.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
 function isG11W6(files){return files.length===G11_W6_FILES.size&&new Set(files).size===files.length&&files.every(p=>G11_W6_FILES.has(p));}
 
+const TOPIC_RW1_FILES=new Set(["scripts/test-thpt-topic01-release-intake.cjs","docs/assets/javascripts/math-details-v1.js","docs/assets/javascripts/thpt-topic01-release-tabs-v1.js","docs/assets/javascripts/thpt-topic-w1-golden-v1.js","docs/assets/javascripts/thpt-topic-w2-golden-v1.js","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml"]);
+function isExactTopicRW1(files){
+ if(files.length!==TOPIC_RW1_FILES.size||new Set(files).size!==files.length||!files.every(f=>TOPIC_RW1_FILES.has(f)))return false;
+ try{
+  const js=fs.readFileSync("docs/assets/javascripts/math-details-v1.js","utf8");
+  const qa=fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8");
+  const adapter=fs.readFileSync("docs/assets/javascripts/thpt-topic-w2-golden-v1.js","utf8");
+  return js.includes("SLMTopicRW1Math")&&js.includes("cd0[1-8]")&&adapter.includes('part==="kien-thuc"&&["06","07","08"].includes(topic)')&&qa.includes("RW1_SCOPE_HOLD")&&qa.includes("formula parity")&&qa.includes("126*6");
+ }catch{return false}
+}
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(isExactTopicRW1(files))return {impact:"SCOPED_TOPIC_RW1",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_RW1_EXACT_KNOWLEDGE_MATH_TAB_QA"};
  if(isG12MathHotfix(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_MATH_HOTFIX_LESSONS.join(","),reason:"OWNER_1039_G12_MATH_HOTFIX"};
  if(isG12W13(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W13_LESSONS.join(","),reason:"OWNER_1039_W13_EXACT_SOURCE_AND_BROWSER"};
  if(isG12W12(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W12_LESSONS.join(","),reason:"OWNER_1039_W12_EXACT_SOURCE_AND_BROWSER"};
@@ -766,6 +777,11 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const rw1=[...TOPIC_RW1_FILES];
+ assert.equal(classify(rw1).impact,"SCOPED_TOPIC_RW1");
+ assert.equal(classify(rw1.slice(1)).impact,"FULL");
+ assert.equal(classify([...rw1,"docs/thpt-preview/chuyen-de/cd01/kien-thuc.md"]).impact,"FULL");
+ assert.equal(classify(rw1,{manual:true}).impact,"FULL");
  const hot=[...G12_MATH_HOTFIX_FILES];
  assert.equal(classify(hot).reason,"OWNER_1039_G12_MATH_HOTFIX");
  assert.equal(classify(hot).changed_lessons,G12_MATH_HOTFIX_LESSONS.join(","));
@@ -1123,7 +1139,7 @@ if(require.main===module){
   const out=classify(files,{manual:process.env.RELEASE_QA_FORCE_FULL==="true"});
   // CI migration itself must exercise the new renderer against the most recent
   // owner-P2 accepted Golden baseline (B14), even though its paths are global.
-  const qaSmoke=files.some(x=>[
+  const qaSmoke=out.impact!=="SCOPED_TOPIC_RW1"&&files.some(x=>[
    ".github/workflows/thpt-scoped-release-qa.yml",
    "scripts/test-thpt-scoped-lesson-browser.cjs",
    "scripts/test-thpt-release-impact.cjs"

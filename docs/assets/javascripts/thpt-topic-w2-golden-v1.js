@@ -7,6 +7,9 @@
 const config=document.querySelector(".topic-w1-release-nav[data-topic-w1][data-topic-w1-part]");
 if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
+const rw1Active=part==="kien-thuc"&&["06","07","08"].includes(topic);
+const rw1Math=()=>rw1Active?window.SLMTopicRW1Math:null;
+let rw1Prepared=false;
 const sizes={"10":{"outcomes":36,"items":120,"replay":36,"groups":6,"practiceGroups":6},"11":{"outcomes":22,"items":116,"replay":22,"groups":4,"practiceGroups":4},"06":{"outcomes":16,"items":66,"replay":16,"groups":4,"practiceGroups":4},"07":{"outcomes":18,"items":69,"replay":18,"groups":4,"practiceGroups":4},"08":{"outcomes":18,"items":58,"replay":18,"groups":4,"practiceGroups":4},"09":{"outcomes":32,"items":108,"replay":32,"groups":5,"practiceGroups":4}};
 const expected=sizes[topic];
 /* Presentation-only aliases. Full, reviewed heading text stays in its panel and
@@ -121,7 +124,7 @@ const topicTabNames={
   ],
   "subs": [
    [
-    "1.1. Độ và radian góc có hướng",
+    "1.1. Độ, radian góc quay",
     "1.2. Sin/cos trên đường tròn",
     "1.3. Độ dài cung và độ dời"
    ],
@@ -132,8 +135,8 @@ const topicTabNames={
     "2.4. Góc nhân đôi và đổi dạng"
    ],
    [
-    "3.1. Miền xác định lượng giác",
-    "3.2. Chu kỳ cơ bản và đối xứng",
+    "3.1. Miền xác định",
+    "3.2. Chu kỳ, đối xứng",
     "3.3. Biên độ, pha và trục giữa",
     "3.4. Tan/cot và tiệm cận"
    ],
@@ -142,7 +145,7 @@ const topicTabNames={
     "4.2. Nghiệm của tan/cot",
     "4.3. Biến đổi giữ nghiệm",
     "4.4. Lọc nghiệm theo khoảng",
-    "4.5. Chu kỳ mô hình có giới hạn"
+    "4.5. Giới hạn mô hình chu kỳ"
    ]
   ]
  },
@@ -178,7 +181,7 @@ const topicTabNames={
    [
     "4.1. Tăng đều và tăng tỉ lệ",
     "4.2. Mô hình lãi kép",
-    "4.3. Gửi góp và trả nợ theo kỳ"
+    "4.3. Gửi góp, trả nợ"
    ]
   ]
  },
@@ -191,19 +194,19 @@ const topicTabNames={
   ],
   "subs": [
    [
-    "1.1. Giới hạn dãy số qua sai số",
+    "1.1. Giới hạn qua sai số",
     "1.2. Dãy phân kỳ, dao động",
     "1.3. Giới hạn dãy lũy thừa",
     "1.4. Giới hạn dãy phân thức",
     "1.5. Tổng cấp số nhân vô hạn"
    ],
    [
-    "2.1. Giới hạn hàm tại một điểm",
+    "2.1. Giới hạn tại điểm",
     "2.2. Giới hạn trái và phải",
-    "2.3. Giới hạn vô cực gần điểm",
-    "2.4. Giới hạn khi x tiến vô cực",
-    "2.5. Khử dạng 0/0 bằng nhân tử",
-    "2.6. Khử dạng 0/0 bằng liên hợp",
+    "2.3. Vô cực gần điểm",
+    "2.4. Giới hạn tại vô cực",
+    "2.5. Dạng 0/0: nhân tử",
+    "2.6. Dạng 0/0: liên hợp",
     "2.7. Vô cực trừ vô cực"
    ],
    [
@@ -320,7 +323,7 @@ const normalizeRenderedMath=node=>{
   if(hit){if(lastIndex<v.length)parts.append(document.createTextNode(v.slice(lastIndex)));t.replaceWith(parts)}
  }
 };
-const renderMath=node=>{normalizeRenderedMath(node);const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
+const renderMath=node=>{if(rw1Active){if(!rw1Math())throw Error("TOPIC_RW1_MATH_HELPER_MISSING");if(rw1Prepared)return rw1Math().typeset(node);return}normalizeRenderedMath(node);const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
 /* Source SVGs remain byte-identical; only the rendered footprint is constrained.
  * W2-only data attribute avoids changing accepted CĐ01/W1 and SGK images. */
 const capKnowledgeFigures=root=>{
@@ -402,6 +405,7 @@ function styleKnowledge(root){
  }
  for(const details of root.querySelectorAll("details")){
   const summary=details.querySelector("summary");if(!summary)continue;
+  if(rw1Active){rw1Math().disclosure(details);continue}
   details.classList.add("question");
   const content=solutionContent(details);
   details.replaceChildren(summary,...content.childNodes);
@@ -467,7 +471,10 @@ function initKnowledge(){
   }
   bind(subButtons,subPanels);
  }
- normalizeInlineStems(layout,/^Vận dụng$/);styleKnowledge(layout);capKnowledgeFigures(layout);bind(allButtons,allPanels);
+ normalizeInlineStems(layout,/^Vận dụng$/);styleKnowledge(layout);capKnowledgeFigures(layout);
+ if(rw1Active){rw1Math().prepare(layout);rw1Math().normalize(intro);rw1Prepared=true}
+ bind(allButtons,allPanels);
+ if(rw1Active)rw1Math().typeset(layout);
  if(layout.querySelectorAll("[data-topic-w1-callout]").length<expected.outcomes)throw Error("Missing formal semantic callouts");
  ready();
 }

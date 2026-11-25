@@ -14,7 +14,8 @@ const displayShortTopic01=(button,label,full)=>{
  button.textContent=label;button.title=full;button.setAttribute("aria-label",full);
 };
 const topic01Ready=part=>{document.documentElement.classList.remove("topic01-boot-pending-"+part);document.documentElement.classList.remove("topic01-boot-fallback-"+part);};
-const typeset=n=>{const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([n]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([n])).catch(()=>{})};
+const rw1Math=()=>window.SLMTopicRW1Math;
+const typeset=n=>{if(rw1Math())return rw1Math().typeset(n);const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([n]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([n])).catch(()=>{})};
 function solutionContent(details){
  const out=el("div","thpt-r4-formative-reveal"),clone=details.cloneNode(true);clone.querySelector("summary")?.remove();
  for(const n of [...clone.childNodes]){
@@ -31,17 +32,9 @@ function knowledgeStyle(root){
   const roles={"ĐỊNH NGHĨA":["concept","thpt-r4-knowledge-conclusion thpt-r4-concept-card"],"TÍNH CHẤT":["rule","thpt-r4-knowledge-conclusion thpt-r4-rule-card"],"CÔNG THỨC":["formula","thpt-r4-key-formula"],"KIẾN THỨC CẦN GHI NHỚ":["recap","thpt-r4-knowledge-conclusion"]};
   if(!roles[label])continue;const [role,cls]=roles[label],box=el("div",cls);box.dataset.topic01Callout=role;box.setAttribute("role","note");box.append(...q.childNodes);q.replaceWith(box)
  }
- // MkDocs escaped a display-math delimiter in ONE approved CĐ01 blockquote.
- // Rehydrate the exact same approved equation for MathJax; leave canonical Markdown untouched.
- const raw=String.raw`[A\setminus B={x\in A:x\notin B}.]`;
- const correct=String.raw`\(A\setminus B=\{x\in A:x\notin B\}\)`;
- const callouts=[...root.querySelectorAll('[data-topic01-callout="concept"] p')]
-   .filter(p=>p.firstChild?.nodeType===Node.TEXT_NODE&&p.firstChild.textContent.startsWith(raw));
- if(callouts.length!==1)throw Error("TOPIC01_APPROVED_FORMULA_PRESENTATION_GATE");
- const p=callouts[0],original=p.firstChild,display=el("span","arithmatex",correct);
- original.textContent=original.textContent.slice(raw.length);
- p.insertBefore(display,original);p.insertBefore(document.createTextNode(". "),original);
- for(const d of root.querySelectorAll("details")){const summary=d.querySelector("summary");if(!summary)continue;const c=solutionContent(d);d.classList.add("question");d.replaceChildren(summary,...c.childNodes);d.addEventListener("toggle",()=>{if(d.open)typeset(d)})}
+ // R-W1: retain complete inline paragraphs and recover source TeX for Knowledge only.
+ if(!rw1Math())throw Error("TOPIC_RW1_MATH_HELPER_MISSING");
+ rw1Math().prepare(root);
  for(const p of root.querySelectorAll("p")){if(p.querySelector(":scope > strong")?.textContent.trim()!=="Lời giải.")continue;const box=el("div","thpt-g10-example-solution");p.before(box);box.append(p);let n=box.nextElementSibling;while(n&&!n.matches("h2,h3,h4,details,.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula")&&!/^(Vận dụng|Kiểm lại|Ví dụ|Kiểm lỗi|Khám phá kiến thức)/.test(n.textContent.trim())){const following=n.nextElementSibling;box.append(n);n=following}}
 }
 
@@ -59,10 +52,10 @@ const init=()=>{
  const tabs=document.createElement("nav");tabs.className="thpt-r4-knowledge-tabs thpt-r4-knowledge-modules";
  tabs.setAttribute("role","tablist");tabs.setAttribute("aria-label","Ba mảng kiến thức Chuyên đề 01");
  article.insertBefore(root,groups[0]);root.appendChild(tabs);
- const outerButtons=[],outerPanels=[];
+ const outerButtons=[],outerPanels=[];let rw1Prepared=false;
  function activate(buttons,panels,n){
   buttons.forEach((b,i)=>{const selected=i===n;b.classList.toggle("is-active",selected);b.setAttribute("aria-selected",String(selected));b.tabIndex=selected?0:-1;panels[i].hidden=!selected;});
-  const active=panels[n];if(active&&window.MathJax&&typeof window.MathJax.typesetPromise==="function")window.MathJax.typesetPromise([active]).catch(()=>{});
+  const active=panels[n];if(active&&rw1Prepared&&rw1Math())rw1Math().typeset(active);
  }
  function bind(buttons,panels){
   buttons.forEach((b,i)=>{
@@ -110,8 +103,9 @@ const init=()=>{
  note.appendChild(link);note.append(". Em có thể quay lại học tiếp mà không cần đăng nhập hoặc chấm điểm.");
  const firstSub=outerPanels[0].querySelector(".thpt-r4-knowledge-subgroup");
  if(firstSub)outerPanels[0].insertBefore(note,firstSub);
- knowledgeStyle(root);
+ knowledgeStyle(root);rw1Prepared=true;
  bind(outerButtons,outerPanels);
+ rw1Math().typeset(root);
  topic01Ready("knowledge");
 };
 

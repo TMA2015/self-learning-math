@@ -39,8 +39,15 @@ const images=[
 for(const [file,sha] of images){assert.equal(blob(read("docs/assets/visuals/"+file)),sha,"Altered canonical diagram "+file);assert(sections[0].includes("../../../assets/visuals/"+file),"Missing expected diagram "+file)}
 const overview=read("docs/thpt-preview/chuyen-de/index.md");
 assert(overview.includes('href="cd01/kien-thuc/"'),"Missing CĐ01 catalog entry");
-assert(overview.includes("mẫu kỹ thuật cũ"),"Existing legacy demo must be retained");
-for(const config of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){const text=read(config);for(const file of paths)assert(text.includes(file.replace(/^docs\//,"")),"Missing official three-page nav in "+config);
+// Owner-authorized retired pilot redirect, PR #1051. Preserve safe deep links,
+// not the removed noncanonical catalog entry or demo questions.
+assert(!overview.includes('href="ham-so/kien-thuc/"'),"Retired pilot must not return to canonical catalog");
+for(const part of ["kien-thuc","luyen-tap","tu-kiem-tra"]){
+ const legacy=read("docs/thpt-preview/chuyen-de/ham-so/"+part+".md");
+ assert(legacy.includes("RETIRED_PILOT_REDIRECT_ONLY")&&legacy.includes('window.location.replace("../../")'),"Retired pilot safe redirect missing "+part);
+ assert(!legacy.includes("data-thpt-practice")&&!legacy.includes("data-thpt-readiness")&&!legacy.includes("data-mastery-credit"),"Retired demo assessment must not return "+part);
+}
+for(const config of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){const text=read(config);assert(!text.includes("thpt-preview/chuyen-de/ham-so/"),"Retired pilot must not return to nav "+config);for(const file of paths)assert(text.includes(file.replace(/^docs\//,"")),"Missing official three-page nav in "+config);
  assert(text.includes("thpt-topic01-release-tabs-v1.js")&&text.includes("thpt-topic01-release-v1.css"),"Missing two-level tab assets in "+config);
 }
 const approvedIDs=[...sections[1].matchAll(/<!-- DISPLAY_ONLY_CANONICAL:\s*([A-Z0-9-]+);/g)].map(m=>m[1]);
