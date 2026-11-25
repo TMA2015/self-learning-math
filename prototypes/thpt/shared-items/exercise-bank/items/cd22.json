@@ -2,16 +2,18 @@
   {
     "item_id": "THPT-G10-TOPSTAT-ADD01",
     "content_version": 1,
-    "stem": "Một lớp có chính xác 25 học sinh. Một bạn đo chiều dài bàn là 120,3 cm bằng thước có độ phân giải hữu hạn. Số nào là số đúng theo ý nghĩa bài toán và số nào là gần đúng?",
-    "answer_key": "Số đếm 25 học sinh là số đúng trong tình huống đếm đầy đủ; 120,3 cm là số đo gần đúng vì dụng cụ/quan sát có sai số.",
-    "worked_solution": "Số đếm 25 học sinh là số đúng trong tình huống đếm đầy đủ; 120,3 cm là số đo gần đúng vì dụng cụ/quan sát có sai số.",
+    "stem": "Một lớp có chính xác 25 học sinh. Chiều dài bàn được ghi 120,3 cm với độ chính xác 0,1 cm. Xác định số đúng, số gần đúng, khoảng chứa chiều dài thật và giải thích có biết sai số thực không.",
+    "answer_key": "25 là số đúng; 120,3 cm là số gần đúng; chiều dài thật thuộc [120,2;120,4] cm; chưa biết sai số thực.",
+    "worked_solution": "Đếm đầy đủ 25 học sinh cho số đúng trong tình huống này. Chiều dài ghi bằng phép đo có sai số, nên 120,3 cm là số gần đúng. Độ chính xác d=0,1 cm bảo đảm |L−120,3|≤0,1, tức 120,2≤L≤120,4 cm. Không có giá trị L thật nên không biết sai số thực; chỉ biết sai số không vượt 0,1 cm.",
     "skill_ids": [
       "G10-B12-APPROX_CONCEPT"
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "Không biến kết quả phép đo có nhiều chữ số thập phân thành số đúng; cần nêu nguồn gốc dữ liệu.",
+    "hints": [
+      "Phân biệt số đếm chính xác với số đo; dùng độ chính xác để tạo khoảng."
+    ],
+    "remediation": "Độ chính xác là cận sai số, không phải sai số thực; số đo không nhất thiết đúng bằng giá trị thực. Ôn CĐ22 mục 1.1; luyện THPT-G10-B12-P04.",
     "rubric": "1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.",
     "interaction": {
       "type": "SELF_COMPARE",
@@ -26,16 +28,18 @@
   {
     "item_id": "THPT-G10-TOPSTAT-ADD02",
     "content_version": 1,
-    "stem": "Mẫu số sách đọc trong tháng: 1,1,2,2,3,4. Tìm mốt và giải thích vì sao không thể viết một mốt duy nhất.",
-    "answer_key": "Giá trị 1 và 2 cùng xuất hiện 2 lần, lớn hơn các giá trị khác, nên mẫu có hai mốt: 1 và 2.",
-    "worked_solution": "Giá trị 1 và 2 cùng xuất hiện 2 lần, lớn hơn các giá trị khác, nên mẫu có hai mốt: 1 và 2.",
+    "stem": "Mẫu số sách đọc là 1,1,2,2,3,4. Tìm mốt. Nếu thêm một số 3 và một số 4 vào mẫu, mẫu mới có mốt không theo quy ước SGK KNTT?",
+    "answer_key": "Ban đầu có hai mốt 1 và 2; mẫu mới không có mốt theo quy ước SGK.",
+    "worked_solution": "Ban đầu tần số các giá trị 1,2,3,4 là 2,2,1,1. Hai giá trị 1 và 2 cùng có tần số lớn nhất, nên có hai mốt. Thêm 3,4 thì tần số đều bằng 2. Theo quy ước SGK được nêu trong kiến thức CĐ22, khi có nhiều giá trị phân biệt và mọi tần số bằng nhau, mẫu không có mốt.",
     "skill_ids": [
       "G10-B13-MODE"
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "Mốt dựa tần số lớn nhất, không dựa vị trí giữa hay trung bình; nhiều mốt là hợp lệ.",
+    "hints": [
+      "Lập bảng tần số từng giá trị, kiểm cực đại và trường hợp tất cả bằng nhau."
+    ],
+    "remediation": "Nhiều mốt chỉ khi các giá trị cùng tần số lớn nhất và có giá trị khác ít gặp hơn theo quy ước nguồn. Ôn CĐ22 mục 1.2; luyện THPT-G10-B13-P03.",
     "rubric": "1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.",
     "interaction": {
       "type": "SELF_COMPARE",
@@ -50,16 +54,18 @@
   {
     "item_id": "THPT-G10-TOPSTAT-ADD03",
     "content_version": 1,
-    "stem": "Dữ liệu thời gian (phút) là 9,2,4,7,1,5. Tính trung vị và cho biết vì sao phải sắp trước khi lấy hai số giữa.",
-    "answer_key": "Sắp tăng dần: 1,2,4,5,7,9. Có 6 số nên trung vị (4+5)/2=4,5 phút.",
-    "worked_solution": "Sắp tăng dần: 1,2,4,5,7,9. Có 6 số nên trung vị (4+5)/2=4,5 phút.",
+    "stem": "Dữ liệu thời gian (phút) là 9,2,4,7,1,5. Tính trung vị. Nếu thay 9 bằng 90, trung vị và số trung bình thay đổi thế nào?",
+    "answer_key": "Trung vị 4,5 phút ở cả hai mẫu; trung bình tăng từ 14/3 lên 109/6 phút.",
+    "worked_solution": "Sắp mẫu đầu: 1,2,4,5,7,9. Có 6 quan sát nên trung vị=(4+5)/2=4,5 phút. Thay 9 bằng 90 vẫn giữ hai vị trí giữa là 4,5 nên trung vị không đổi. Tổng đầu 28, trung bình 28/6=14/3; tổng mới 28−9+90=109, trung bình 109/6 phút. Trung bình nhạy với giá trị lớn bất thường, trung vị trong ví dụ này không đổi.",
     "skill_ids": [
       "G10-B13-MEDIAN"
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "Không chọn 4 và 7 ở vị trí giữa của thứ tự chưa sắp; tính trên dãy tăng.",
+    "hints": [
+      "Sắp tăng dần trước, xác định vị trí giữa."
+    ],
+    "remediation": "Nếu n chẵn, lấy trung bình hai giá trị ở vị trí n/2 và n/2+1; không lấy hai giá trị giữa dãy chưa sắp. Ôn CĐ22 mục 1.3; luyện THPT-G10-B13-P02.",
     "rubric": "1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.",
     "interaction": {
       "type": "SELF_COMPARE",
@@ -74,16 +80,18 @@
   {
     "item_id": "THPT-G10-TOPSTAT-ADD04",
     "content_version": 1,
-    "stem": "Mẫu đã sắp 2,3,3,4,5,6,20. Tính Q1,Q3,IQR và kiểm số 20 theo hàng rào 1,5 IQR.",
-    "answer_key": "Me=4; nửa dưới 2,3,3 cho Q1=3; nửa trên 5,6,20 cho Q3=6. IQR=3, hàng rào trên 6+1,5·3=10,5, nên 20 là ngoại lệ theo quy tắc này.",
-    "worked_solution": "Me=4; nửa dưới 2,3,3 cho Q1=3; nửa trên 5,6,20 cho Q3=6. IQR=3, hàng rào trên 6+1,5·3=10,5, nên 20 là ngoại lệ theo quy tắc này.",
+    "stem": "Mẫu đã sắp 2,3,3,4,5,6,20. Tính Q1,Q3,IQR và cả hai hàng rào 1,5 IQR. Xác định giá trị ngoại lệ và nhận xét có nên tự động xóa nó không.",
+    "answer_key": "Q1=3, Q3=6, IQR=3; hàng rào −1,5 và 10,5; 20 là ngoại lệ, chưa đủ căn cứ xóa.",
+    "worked_solution": "Mẫu có 7 quan sát, trung vị là 4; bỏ vị trí giữa khi chia nửa. Nửa dưới 2,3,3 cho Q1=3; nửa trên 5,6,20 cho Q3=6. IQR=6−3=3. Hàng rào dưới 3−1,5·3=−1,5, trên 6+1,5·3=10,5. Chỉ 20 nằm ngoài. Cần kiểm tra nguyên nhân (sai nhập liệu hay quan sát thật) trước khi quyết định loại.",
     "skill_ids": [
       "G10-B14-OUTLIERS"
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "Giá trị ngoại lệ không tự động là dữ liệu sai; chỉ đánh dấu để kiểm tra.",
+    "hints": [
+      "Bỏ vị trí giữa khi chia nửa mẫu lẻ; tính cả hai hàng rào."
+    ],
+    "remediation": "Chỉ đánh dấu ngoài hàng rào theo bất đẳng thức nghiêm; không tự xóa ngoại lệ. Ôn CĐ22 mục 1.4; luyện THPT-G10-B14-P03.",
     "rubric": "1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.",
     "interaction": {
       "type": "SELF_COMPARE",
@@ -98,16 +106,18 @@
   {
     "item_id": "THPT-G10-TOPSTAT-ADD05",
     "content_version": 1,
-    "stem": "Hai nhóm A=2,4,6 và B=3,4,5 có cùng đơn vị đo. Tính trung bình và phương sai mô tả chia n rồi chọn nhóm ổn định hơn.",
-    "answer_key": "Cả hai có trung bình 4. Phương sai A=(4+0+4)/3=8/3; B=(1+0+1)/3=2/3. Nhóm B ổn định hơn.",
-    "worked_solution": "Cả hai có trung bình 4. Phương sai A=(4+0+4)/3=8/3; B=(1+0+1)/3=2/3. Nhóm B ổn định hơn.",
+    "stem": "Hai mẫu thời gian (phút) A=2,4,6 và B=3,4,5. Tính trung bình, phương sai chia n, độ lệch chuẩn và so sánh độ phân tán.",
+    "answer_key": "Trung bình đều 4 phút; s²_A=8/3 phút², s²_B=2/3 phút²; s_A=√(8/3) phút, s_B=√(2/3) phút; B ít phân tán hơn.",
+    "worked_solution": "Cả hai tổng 12, n=3 nên trung bình 4. A có tổng bình phương độ lệch (2−4)²+0+(6−4)²=8; B có (3−4)²+0+(5−4)²=2. Chia 3 được phương sai 8/3 và 2/3 phút²; căn bậc hai cho độ lệch chuẩn √(8/3), √(2/3) phút. B ít phân tán quanh trung bình theo hai thước đo này, không suy B luôn tốt hơn theo mọi tiêu chí.",
     "skill_ids": [
       "G10-B14-COMPARISON"
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "Không chỉ so trung bình bằng nhau; kiểm phương sai/độ lệch chuẩn và điều kiện cùng đơn vị.",
+    "hints": [
+      "Tính hai trung bình rồi các độ lệch bình phương; chia n."
+    ],
+    "remediation": "Cùng trung bình không có nghĩa cùng độ phân tán; phương sai có đơn vị bình phương. Ôn CĐ22 mục 1.5; luyện THPT-G10-B14-P04.",
     "rubric": "1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.",
     "interaction": {
       "type": "SELF_COMPARE",
@@ -122,16 +132,18 @@
   {
     "item_id": "THPT-G11-TOPSTAT-ADD06",
     "content_version": 1,
-    "stem": "Một bảng ghép nhóm có [10,20):4 người và [20,30):6 người. Chọn giá trị đại diện, ước lượng trung bình và giải thích có thể kết luận 4 người đầu đều bằng 15 không.",
-    "answer_key": "Trung điểm là 15 và 25; trung bình ước lượng (4×15+6×25)/10=21. Không thể kết luận bốn người nhóm đầu đều có giá trị đúng 15; bảng nhóm mất thông tin thô.",
-    "worked_solution": "Trung điểm là 15 và 25; trung bình ước lượng (4×15+6×25)/10=21. Không thể kết luận bốn người nhóm đầu đều có giá trị đúng 15; bảng nhóm mất thông tin thô.",
+    "stem": "Bảng ghép nhóm [10;20):4 người, [20;30):6 người. Tính trung bình ghép nhóm. Hai mẫu thô gồm bốn giá trị 11 và sáu giá trị 21; hoặc bốn giá trị 19 và sáu giá trị 29. Tính trung bình thật của từng mẫu, giải thích sự khác biệt.",
+    "answer_key": "Trung bình ghép nhóm 21; hai trung bình thô 17 và 25.",
+    "worked_solution": "Trung điểm nhóm là 15,25. Trung bình ghép nhóm=(4·15+6·25)/10=21. Mẫu thứ nhất có trung bình (4·11+6·21)/10=17; mẫu thứ hai (4·19+6·29)/10=25. Cả hai cùng tần số nhóm 4,6 nhưng trung bình thô khác nhau; trung điểm là giá trị đại diện, không phải giá trị thật của từng người.",
     "skill_ids": [
       "G11-B09-REPRESENTATIVE"
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "Giá trị đại diện không đồng nghĩa quan sát đúng của mọi cá thể.",
+    "hints": [
+      "Tính trung điểm từng nhóm, nhân tần số; xét một bảng nhóm có thể ứng với nhiều mẫu thô."
+    ],
+    "remediation": "Không lấy trung bình không trọng số của các trung điểm; đại diện chỉ phục vụ ước lượng. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P01.",
     "rubric": "1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.",
     "interaction": {
       "type": "SELF_COMPARE",
@@ -146,16 +158,18 @@
   {
     "item_id": "THPT-G11-TOPSTAT-ADD07",
     "content_version": 1,
-    "stem": "Mẫu ghép [0,10):3 và [10,20):7 có n=10. Ước lượng trung vị và đánh giá phát biểu “trung vị dữ liệu gốc chắc chắn bằng số ước lượng”.",
-    "answer_key": "Tích lũy là 3,10; nhóm trung vị thứ hai có L=10,h=10,f=7,F trước=3. Me≈10+(5−3)×10/7=90/7≈12,86. Không thể khẳng định trung vị dữ liệu thô đúng bằng 90/7.",
-    "worked_solution": "Tích lũy là 3,10; nhóm trung vị thứ hai có L=10,h=10,f=7,F trước=3. Me≈10+(5−3)×10/7=90/7≈12,86. Không thể khẳng định trung vị dữ liệu thô đúng bằng 90/7.",
+    "stem": "Mẫu ghép [0;10):3 và [10;20):7. Ước lượng trung vị. Nếu tất cả ba giá trị nhóm đầu là 1, bảy giá trị nhóm sau là 11, trung vị dữ liệu gốc là bao nhiêu? So sánh.",
+    "answer_key": "Trung vị ghép nhóm 90/7≈12,86; trung vị mẫu gốc ví dụ là 11.",
+    "worked_solution": "n=10, tích lũy 3,10. Nhóm trung vị thứ hai có L=10,h=10,f=7,F trước=3; nội suy Me=10+(5−3)·10/7=90/7≈12,86. Với mẫu thô đã cho, vị trí 5 và 6 đều bằng 11, nên Me gốc=11. Cùng bảng ghép nhóm nhưng trung vị nội suy chỉ là ước lượng, không khẳng định đúng giá trị gốc.",
     "skill_ids": [
       "G11-B09-INTERPRETATION"
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "Ước lượng nội suy giả định phân bố trong nhóm; không có dữ liệu thô để xác nhận chính xác.",
+    "hints": [
+      "Cộng dồn tần số, xác định lớp chứa n/2 rồi nội suy."
+    ],
+    "remediation": "Không lấy trung điểm lớp chứa trung vị một cách máy móc; giá trị nội suy không khẳng định trung vị gốc. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P02.",
     "rubric": "1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.",
     "interaction": {
       "type": "SELF_COMPARE",
