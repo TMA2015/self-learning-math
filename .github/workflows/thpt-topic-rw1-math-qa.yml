@@ -9,6 +9,7 @@ on:
       - 'docs/assets/javascripts/thpt-topic-w2-golden-v1.js'
       - 'docs/assets/javascripts/thpt-topic-w3-golden-v1.js'
       - 'docs/assets/javascripts/thpt-topic-w4-golden-v1.js'
+      - 'docs/assets/javascripts/thpt-topic-w5-golden-v1.js'
       - 'scripts/test-thpt-topic-rw1-math-browser.py'
       - 'scripts/test-thpt-release-impact.cjs'
       - '.github/workflows/thpt-topic-rw1-math-qa.yml'
@@ -23,7 +24,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        wave: [rw1, rw2]
+        wave: [rw1, rw2, tail]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -76,6 +77,8 @@ jobs:
         run: |
           if [[ "${{ matrix.wave }}" == "rw2" ]]; then
             python scripts/test-thpt-topic-rw1-math-browser.py --rw2
+          elif [[ "${{ matrix.wave }}" == "tail" ]]; then
+            python scripts/test-thpt-topic-rw1-math-browser.py --tail
           else
             python scripts/test-thpt-topic-rw1-math-browser.py
           fi
