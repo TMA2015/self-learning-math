@@ -10,7 +10,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Độ dài vectơ bằng khoảng cách hai đầu mút."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -25,7 +27,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng đường chéo, đề chỉ nói một cạnh; xác định hai đầu mút trước. Ôn CĐ13 mục 3.1; luyện THPT-TOP13-P11."
   },
   {
     "item_id": "THPT-G12-B06-P01",
@@ -38,7 +41,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tính đường chéo đáy rồi đường chéo không gian."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -53,7 +58,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng 3+4+12, áp dụng Pitago hai lần cho ba phương vuông góc. Ôn CĐ13 mục 3.1; luyện THPT-TOP13-P11."
   },
   {
     "item_id": "THPT-G12-B06-P02",
@@ -178,7 +184,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Ghép đầu–đuôi A→B→C."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -193,7 +201,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra CA, kiểm điểm xuất phát A và điểm cuối C. Ôn CĐ13 mục 3.2; luyện THPT-TOP13-P12."
   },
   {
     "item_id": "THPT-G12-B06-P05",
@@ -206,7 +215,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Hai vectơ chung gốc A: dùng đường chéo từ A."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -221,7 +232,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn BD, kiểm đường chéo biểu diễn tổng phải xuất phát từ A. Ôn CĐ13 mục 3.2; luyện THPT-TOP13-P12."
   },
   {
     "item_id": "THPT-G12-B06-P06",
@@ -514,7 +526,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Mặt phẳng Oxy có z=0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -529,7 +543,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn Oxz, kiểm tọa độ bị triệt là z, không phải y. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14."
   },
   {
     "item_id": "THPT-G12-B07-P01",
@@ -542,7 +557,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Trên Oz, chỉ thành phần z có thể khác 0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -557,7 +574,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho z=0, phân biệt điểm trên Oz với điểm trên Oxy. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14."
   },
   {
     "item_id": "THPT-G12-B07-P02",
@@ -682,7 +700,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Đọc các chiều dương của ba trục theo đúng thứ tự x,y,z."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -697,7 +717,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu tráo cao và rộng, ghi nhãn trục trước khi ghép tọa độ. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14."
   },
   {
     "item_id": "THPT-G12-B07-P05",
@@ -710,7 +731,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Độ cao tính từ mặt sàn theo Oz hướng lên."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -725,7 +748,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy −3, kiểm hướng dương và mốc z=0; đề chọn sàn làm mốc. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14."
   },
   {
     "item_id": "THPT-G12-B07-P06",
@@ -850,7 +874,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Cộng từng thành phần tương ứng."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -865,7 +891,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra một số thay vì vectơ, giữ ba tọa độ riêng. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P12."
   },
   {
     "item_id": "THPT-G12-B08-P01",
@@ -878,7 +905,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Trừ từng tọa độ, giữ dấu của số bị trừ."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -893,7 +922,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu sai −3−4, dùng ngoặc và kiểm lại tổng hiệu+b=a. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P12."
   },
   {
     "item_id": "THPT-G12-B08-P02",
@@ -1018,7 +1048,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Trung điểm lấy trung bình từng tọa độ."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1033,7 +1065,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thiếu chia 2, kiểm M−A=B−M. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P15."
   },
   {
     "item_id": "THPT-G12-B08-P05",
@@ -1046,7 +1079,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Trọng tâm lấy trung bình ba đỉnh."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1061,7 +1096,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia 2 như trung điểm, đếm đủ ba đỉnh; z=0 vì cả ba nằm trong Oxy. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P15."
   },
   {
     "item_id": "THPT-G12-B08-P06",
