@@ -1,3 +1,5 @@
+<!-- #1109 A02 CP02: candidate bc6cc6ff77b1e4ccbf679b1bb5fba261ca3ac259 at d490d6958a295b52239f930ec4fb802194df9434 NOT CONTENT_READY. Existing signed pointers are historical; no RELEASE intake. -->
+
 <!-- TOP10_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
 **CĐ10 CURRENT AUTHORING CONTENT_READY v3.2.0 on one R06 learner, NOT RELEASE:** current student source `prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md` Git blob `7954f917b89c64527b166d02aac1844da08ed806`, source commit `b726d0497ed6b36a057bde556c2e5f3ee5430f34`; original 78 G12 source-backed SGK +42 Topic bank IDs unchanged; existing Q18 author SELF_VERIFIED current receipt `4cf2638f752b93fd87aa5446a1d89b66665afede`, author custody `a4cc9fd38e2c50405df1ca33a89465620cb33926`, **one** V2 handoff `d8e921c658d1d9594aa597017cea0203ee890ce9`. Three verified #977-033–035 student issues FIXED: 36 individualized Knowledge Kiểm lỗi→real numbered Practice tasks, 36 public Selfcheck question-only IDs→one voluntary original Practice answer map, one-only SGK attribution at end of topic. 120 original Practice entire byte-identical (incl 18 Written rubrics), 36 original public replay prompts and 4 SVG refs unchanged, **157/157 voluntary disclosure tags balanced**, no duplicate canonical item. Source management comments explicitly AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW. DELTA_C_PED_TARGETED author math/PED Q18; unchanged prior S1 G12 original academic proofs inherited scoped to their own SHA. No independent current Topic NotebookLM reviewer PASS, official Topic Readiness/Mastery/Final Submit, private RD1, website/AP/R/owner deployment, merge/deploy.
 
@@ -12,7 +14,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 CONTENT_REVISION: R06_FULL_S1_KNOWLEDGE_20261120
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 AUTHOR_METADATA_BLOB: a4cc9fd38e2c50405df1ca33a89465620cb33926
@@ -43,7 +45,7 @@ SVG4_PATH: prototypes/thpt/visuals/THPT_TOPIC10_BOX_VOLUME_OPT_R01.svg
 SVG4_BLOB: ed12c88d5f79ba1f6c2e8db7b5e4e0f4077ce33c
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: #1109 A02 Work repair + X-G.5 + current Q18/V2/REGISTER relock pending
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
