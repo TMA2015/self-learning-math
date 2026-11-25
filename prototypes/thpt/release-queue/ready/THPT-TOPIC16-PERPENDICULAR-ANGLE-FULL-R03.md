@@ -1,3 +1,6 @@
+<!-- A06 WORK #1109 CURRENT CANDIDATE -->
+**BLOCKED_BY_AUTHORING** — Work #1055 O14/O21 edited in canonical at candidate blob `1610c73783f16c83f4f2870474965fb70bd56de4`, commit `cea05f2d1e531fb8da5ab699fb74d3e05ea00f57`. Previous signed pointers below are historical only until affected Q18/V2/ready re-lock and X-G.5 verification; no RELEASE authorization.
+
 <!-- OWNER_APPROVED_SHARED_SGK_G11_B22_B27_DELTA_B_READY_20261121 -->
 **CURRENT EXACT AUTHORING:** one CĐ16 learner `1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84`, current source-owner SGK B22–B27 bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` (**both Topic branches use same source blob**), current Q18 `19a2ed6ebfd7898da5f186350ea6042e2134fa7e`, A1/Q15 `3bdf5ef98ab262407983d5053fcad07632571bfe`, V2 `7ea472429022a313e5457cdafb665d4c9f10f68c`. Original 33/41 G11 shared canonical Practice student-answer labels formerly `Đáp án sau Submit luyện tập`, misleading in direct voluntary Lời giải; now exact `Đáp án` in one **canonical source** (all 51 public SGK items same) and CĐ16 projection (33) + CĐ17 projection (18). **No stem, numeric key, mathematical reasoning, option, rubric, disclosure, final submit/mastery evaluator code changed**; one original G11 Q15 same-ID source bank, old `afc8ec039213b87b4930f2d34d48c28d1fc6277f` preserved in Git history. `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL`, affected source author self QA; no blanket independent NotebookLM PASS, no website/release/merge/deploy.
 ---
@@ -14,7 +17,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 CONTENT_REVISION: R03_MASTER974_21D6_PUBLIC_LOOKUP_20261121
 DELTA_CLASS: DELTA_C_PED_TARGETED_21_D6_PUBLIC_SELF_CHECK; DELTA_A_EDITORIAL_65_TITLES; OLD_O01_O06_O12_O13_O16_O20_AND_MODEL_CSS_HISTORICAL
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
@@ -42,7 +45,7 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-BLOCKERS: NONE
+BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
