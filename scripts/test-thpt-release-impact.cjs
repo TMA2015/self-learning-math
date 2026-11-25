@@ -690,7 +690,7 @@ function isExactMenu6Plus1(files){
  const blob=p=>{const bytes=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");};
  return files.length===MENU_6_PLUS_1_FILES.size&&new Set(files).size===files.length&&files.every(f=>MENU_6_PLUS_1_FILES.has(f))&&
   blob("docs/assets/javascripts/thpt-r4-preview.js")==="0da9e816048c10745fa9dceda3dcb14c4f3a756f"&&
-  blob("docs/assets/stylesheets/thpt-r4-preview.css")==="c975381227212c56b7e40e3db886eaf2fb419425"&&
+  blob("docs/assets/stylesheets/thpt-r4-preview.css")==="9cd256b3301d4f0ee748a0fc16130df8370e37cb"&&
   fs.readFileSync("scripts/test-math-lab-25-browser.py","utf8").includes("THPT_MENU_ONLY");
 }
 function proveMenu6Plus1(){

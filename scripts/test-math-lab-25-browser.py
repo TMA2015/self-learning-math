@@ -57,16 +57,39 @@ def check_menu(page, browser_name, width):
     assert [a.get_attribute("href") for a in links.all()]==["/thpt-preview/"+route for route in routes]
     assert dialog.locator("[data-thpt-math-lab-shortcut]").count()==1
     box=nav.evaluate("""nav=>{
-      const s=getComputedStyle(nav), rect=nav.getBoundingClientRect();
-      const gap=parseFloat(s.columnGap), cols=matchMedia('(max-width:38rem)').matches?2:3;
-      return {oldWidth:(rect.width-gap*(cols-1))/cols,tracks:s.gridTemplateColumns.split(' '),buttons:[...nav.children].map(a=>{const r=a.getBoundingClientRect(),s=getComputedStyle(a);return {x:r.x,y:r.y,w:r.width,h:r.height,min:s.minHeight,font:s.fontSize,padding:s.padding,background:s.backgroundColor,border:s.borderRadius}})};
+      const dlg=nav.closest('dialog'),coverNav=dlg.querySelector(':scope > nav');
+      const desktop=matchMedia('(width > 38rem)').matches;
+      const snap=()=>{
+        const s=getComputedStyle(nav),r=nav.getBoundingClientRect(),d=dlg.getBoundingClientRect();
+        const buttons=[...nav.children,coverNav.querySelector('a')].map(a=>{
+          const r=a.getBoundingClientRect(),s=getComputedStyle(a);
+          return {x:r.x,y:r.y,w:r.width,h:r.height,min:s.minHeight,font:s.fontSize,padding:s.padding,background:s.backgroundColor,border:s.borderRadius};
+        });
+        return {width:d.width,tracks:s.gridTemplateColumns.split(' '),gap:parseFloat(s.columnGap),left:buttons[0].x-r.x,right:r.right-(buttons[1].x+buttons[1].w),buttons};
+      };
+      const compact=snap(),saved=[dlg.style.cssText,nav.style.cssText,coverNav.style.cssText];
+      // Recreate the previous approved menu width/tracks, measure actual buttons.
+      dlg.style.width='min(26rem,calc(100vw - 1.25rem))';
+      nav.style.gridTemplateColumns=desktop?'repeat(2,minmax(0,calc((100% - .7rem)/3)))':'repeat(2,minmax(0,1fr))';
+      nav.style.justifyContent=desktop?'center':'normal';
+      coverNav.style.gridTemplateColumns=desktop?'repeat(3,minmax(0,1fr))':'repeat(2,minmax(0,1fr))';
+      const previous=snap();
+      [dlg.style.cssText,nav.style.cssText,coverNav.style.cssText]=saved;
+      return {desktop,compact,previous};
     }""")
-    assert len(box["tracks"])==2,(width,box)
-    buttons=box["buttons"]
-    for a in buttons:
-        assert abs(a["w"]-box["oldWidth"])<=1.1,(width,"old track width changed",a,box)
+    compact,previous=box["compact"],box["previous"]
+    assert len(compact["tracks"])==2,(width,box)
+    assert abs(compact["left"])<=1.1 and abs(compact["right"])<=1.1,(width,"extra lateral whitespace",box)
+    buttons=compact["buttons"][:6]
+    for a,old in zip(compact["buttons"],previous["buttons"]):
+        assert abs(a["w"]-old["w"])<=1.1 and abs(a["h"]-old["h"])<=1.1,(width,"button dimensions changed",a,old)
         for k in ("min","font","padding","background","border"):
-            assert a[k]==buttons[0][k],(width,k,a)
+            assert a[k]==old[k],(width,k,a,old)
+    if box["desktop"]:
+        assert abs(previous["width"]-compact["width"]-buttons[0]["w"]-compact["gap"])<=1.1,(width,"outer dialog not compact",box)
+    else:
+        assert abs(previous["width"]-compact["width"])<=1.1,(width,"mobile dialog changed",box)
+    print(f"Menu geometry {browser_name} {width}: dialog {previous['width']:.1f} -> {compact['width']:.1f}px, button {buttons[0]['w']:.1f} x {buttons[0]['h']:.1f}px",flush=True)
     for i in range(0,6,2):
         assert abs(buttons[i]["y"]-buttons[i+1]["y"])<1 and buttons[i]["x"]<buttons[i+1]["x"],(width,buttons)
         assert abs(buttons[i]["x"]-buttons[0]["x"])<1
