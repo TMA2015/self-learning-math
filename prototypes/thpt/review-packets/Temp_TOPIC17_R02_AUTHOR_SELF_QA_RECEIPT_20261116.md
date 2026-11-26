@@ -1,3 +1,10 @@
+## CURRENT Q18 — CP19 · CĐ17 · A07 Work #1055 / #1109
+Learner `03b6b27adbeaf854d3db1d8fc9e830a0294a08aa`, source commit `d1e02081bdd9bcb17ed34d980bc68b93a8975575`, A1 `7f5c5ae757d1db6506a242de795d7621702dd46d`. Work O05 FirstTry cube AB/CC' common perpendicular BC, both endpoints and both orthogonal relations verified, distance 5. O09 mixed units 2 cm, 5 cm, 0.3 dm => 30 cm³. O12 regular pyramid base side 6, slant height 5 => perpendicular height 4, volume 48. Strengthened shortest-segment boundary cases and plane-translation explanation; clarified frustum derivation and limiting cases. 33/33 scoped numerical spot-check assertions passed; 443 balanced inline pairs, one separated display block, zero raw-compound scan; 49 IDs, 37 Practice, 8/8 exact replay stems, 7 Written score sequences, all marker lines unchanged; 51 balanced disclosures. All 22 original IDs verified in shared bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0`, two SVGs and model cfb2bd522531167003eeae8e7342c6d1349ca425 unchanged. Old label defect #054 resolved previously. Prior SGK/SBT #710 B26–B27 and chapter-end evidence inherited, no fresh PDF scan or independent NotebookLM verdict. Optional cube-specific diagram suggested by Work, not mandatory defect; existing figures unchanged. Tab truncation and actual browser/model QA remain RELEASE. AUTHOR_SELF_VERIFIED affected source only.
+
+---
+
+Earlier narrative evidence below is historical; current CP19 evidence and structured fields supersede earlier pointers.
+
 <!-- OWNER_APPROVED_SHARED_G11_B22_B27_LABEL_EQUIVALENCE_CĐ17_Q18_20261121 -->
 **CURRENT SOURCE_OWNER_PARITY:** Existing one CĐ17 learner `0ef0ad696e97d2549f29c5a22ba675970572a089`, original shared G11 SGK ChVII B22–27 one bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` matched EXACT identical blob in CĐ16 branch. Corrected all **18** original B26–B27 student `Đáp án sau Submit luyện tập` headings to `Đáp án`, matching 51/51 source-owner bank and 33 CĐ16 projection. All original 37 Practice mathematical stems, numeric/text answer values, worked solutions, 7 Written rubrics, 8 public same-ID selfchecks, 2 diagrams, Q16/Final Submit/Mastery unchanged; no duplicate SGK bank or new item version. Current Q18 `self`, A1 `current`, V2 `current`; `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL` author-self check only, not independent whole Topic review or website RELEASE. Prior bank `afc8ec039213b87b4930f2d34d48c28d1fc6277f` immutable history.
 ---
@@ -34,10 +41,10 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 0ef0ad696e97d2549f29c5a22ba675970572a089
-SOURCE_BLOB: f4ccf992d19ffe2f8680f99995e9b8a75cebfd66
+ACADEMIC_SOURCE_BLOB: 03b6b27adbeaf854d3db1d8fc9e830a0294a08aa
+SOURCE_BLOB: 03b6b27adbeaf854d3db1d8fc9e830a0294a08aa
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: c858c664abcf46168e38e8f470dcde1267bfbd7a
+AUTHOR_METADATA_BLOB: 7f5c5ae757d1db6506a242de795d7621702dd46d
 ORIGINAL_R00_SOURCE_BLOB: baa6c6c575a4cf79187b2aebd2047b1cf872b983
 ORIGINAL_R01_EDITORIAL_CANDIDATE_BLOB: af08791b4d7104679a3ea3481068266a07c72dce
 ORIGINAL_SGK_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0
@@ -46,12 +53,12 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-P2: 1
-AUTHOR_SIGNOFF: TOP17_MASTER974_12_D6_37_PRACTICE_20261121_f4ccf992d19ffe2f8680f99995e9b8a75cebfd66
+P2: 0 (affected mandatory Work scope; historical shared label resolved by owner)
+AUTHOR_SIGNOFF: TOP17_WORK1055_A07_XG5_20261126_03b6b27adbeaf854d3db1d8fc9e830a0294a08aa
 CONTENT_REVISION: R03
 BASELINE_R02_SIGNED_SOURCE_BLOB: 7cfc1c44d8f8aa722118d945900290fd560b621b
 BASELINE_R02_RECEIPT_GIT_BLOB: 5d55b6a38bf5bb4e81d099e05635001876c2a90a
-GLOBAL_V2_READY_REGISTER_SYNC: PENDING_EXACT_HEAD_CI
+GLOBAL_V2_READY_REGISTER_SYNC: CURRENT_CP19_SOURCE_SYNC; RELEASE_CI_NOT_VERIFIED
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -60,9 +67,9 @@ RELEASE_AUTHORIZATION: NO
 
 S1_RECEIPT: SGK Toán 11 KNTT Tập Hai, ChVII B26 trang in 54–60/SBT 35–37, B27 SGK 61–63/SBT 38–40, cuối chương SGK 64–65/SBT 41–43. Các mốc này kế thừa chứng cứ sách từ SGK original frozen PR #710 và Git blob afc8ec039213b87b4930f2d34d48c28d1fc6277f; không tự khẳng định đã mở lại PDF SGK/SBT hoặc đối chiếu trang in/số trang PDF ở R02. Học liệu SGK PASS trước không tự chuyển thành Topic PASS; CĐ16 B22–B25 tách biệt.
 OUTCOME_AUDIT: 12/12 TOP17-O01…O12, tương ứng B26(6)+B27(5)+ChVII-integrated(1). Mỗi outcome có tình huống hiểu bản chất trước công thức/định nghĩa, 1 Ví dụ độc lập Đề bài–Lời giải có suy luận, 1 Vận dụng trước khi mở Đối chiếu và D6; 12 Topic Practice và 3 Topic Written /4 chấm tự đối chiếu. 2 mạch kiến thức 1.1…2.6; đủ ba trang học liệu độc lập.
-MATH_VERIFICATION: Current source direct author recheck is affected-scope: O10 square-frustum V=48(1+k+k²) cm³ for 0≤k≤1, results k=0:48, k=1/2:84, k=1:144; O11 base right triangle 6x8/2=24 cm², 24x7=168 cm³=0.168 L; no changed original canonical item answer/rubric. Prior R02 signed 69/69 math/edge and 43/43 structure/parity checks belong to that historical source Git snapshot, NOT claimed newly run in full on current R03. Current 22 SGK+15 Topic Practice/Written item bodies preserved; 2 actual learner SVG. Selfcheck/assessment remains unaffected, no generalized theorem proof for unseen cases.
-PED_VERIFICATION: 12/12 lời giảng có bản chất/điều kiện trước formal, Ví dụ độc lập nhiều bước, Vận dụng có câu thật và tự mở Đối chiếu/D6 đúng lỗi; hai hình minh hoạ B26/B27 có mô tả đọc hình (B26 KHÔNG bị nhận nhầm là hình dựng hai đường chéo nhau). 37 đề Luyện tập hiển thị đủ; tự kiểm tra tám đề thật chỉ câu hỏi. Lấy nhịp giải thích tốt của R01, tham khảo NotebookLM author draft cũ với ChVIII sai đã loại; không nhận reviewer PASS.
-CANONICAL_Q15: 49 unique PUBLIC item_ids =22 original SGK (18 formative+4 Written/Anchor), 12 Topic First Try T01–T12, 12 Topic Practice P01–P12, 3 Topic Written W01–W03. Original SGK item canonical không bị clone; 22 source-exact display projections; 15 Topic P/W đáp án/rubric gốc không đổi. Tám public replay placements dùng các P01/P02/P04/P05/P06/P08/P10/P12; không nhân item_id. Five Topic-only SGK mapping fixes preserved from historical locked matrix.
+MATH_VERIFICATION: 33/33 scoped numeric spot checks PASS; prior broader math checks historical
+PED_VERIFICATION: Work O05/O09/O12 verified; 12 outcomes preserved; three pages X-G.5; two SVG and model unchanged
+CANONICAL_Q15: 49 unique IDs: 22 original SGK +12 Topic FirstTry +12 Topic Practice +3 Topic Written; 37 Practice, 8 exact same-ID replay placements, 7 Written score sequences preserved
 ASSESSMENT_Q16: Tám câu Tự kiểm tra công khai hiển thị phần hỏi, không nhúng key/rubric/hint/feedback/AI trước Final Submit; nguồn static không chứng minh website có Final Submit. `CLIENT_SELF_CHECK_NO_MASTERY` không tạo Topic Readiness độc lập, không ghi Skill Mastery/Firebase từ Practice, tự luận hoặc tự so đáp án; không đưa RD1 kín lên GitHub.
 
 ## Q01–Q18: outcome-level verification baseline R00 (historical, rechecked affected source spans)
