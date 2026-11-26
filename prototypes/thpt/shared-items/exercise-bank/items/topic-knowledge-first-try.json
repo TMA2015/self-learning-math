@@ -9888,5 +9888,899 @@
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT01",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT01",
+    "stem": "Hàm \\(f(x)=x^2\\) có tốc độ biến thiên trung bình bao nhiêu trên đoạn \\([0;2]\\)?",
+    "answer_key": "2 đơn vị đầu ra trên một đơn vị đầu vào.",
+    "worked_solution": "\\(\\frac{f(2)-f(0)}{2-0}=\\frac{4-0}2=2\\) đơn vị đầu ra trên một đơn vị đầu vào. Nếu em dùng \\(\\frac{f(2)}2\\) ở trường hợp này thì may mắn ra cùng kết quả vì \\(f(0)=0\\); hãy thử khoảng \\([1;3]\\) để thấy công thức đúng phải dùng **hai hiệu**.\n\n\n**Kiểm lỗi**\n\nNếu chỉ lấy giá trị cuối chia cho độ dài khoảng thay vì hiệu hai giá trị, đọc **Kiến thức 1.1** rồi giải **Bài 1** và **Bài 3**. Trong bài chuyển động, tách hiệu tọa độ khỏi quãng đường và giữ đúng đơn vị; với hàm số tổng quát, dùng đơn vị đầu ra trên đơn vị đầu vào.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B31-AVERAGE_RATE"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M01",
+      "locator": "1.1. Vận tốc trung bình / Vận dụng",
+      "line": 27,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT02",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT02",
+    "stem": "Trên đồ thị \\(f(x)=x^2\\), xét cát tuyến qua điểm có hoành độ 3 và điểm có hoành độ \\(3+h\\), \\(h\\ne0\\). Hệ số góc cát tuyến theo h là gì? Khi \\(h\\to0\\) được giá trị nào?",
+    "answer_key": "\\(6+h\\) với \\(h\\ne0\\); giới hạn bằng 6.",
+    "worked_solution": "\\(\\frac{(3+h)^2-9}h=6+h\\), \\(h\\ne0\\); giới hạn 6.\n\nNếu gọi \\(\\frac00\\) là độ dốc, cần biểu diễn h khác 0 và khử nhân tử.\n\n\n**Kiểm lỗi**\n\nNếu thay \\(h=0\\) trực tiếp vào thương sai phân rồi viết \\(\\frac00\\), đọc **Kiến thức 1.2**, làm **Bài 4** và **Bài 6**; rút gọn khi \\(h\\ne0\\) trước khi cho \\(h\\to0\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B31-LIMIT_QUOTIENT"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M02",
+      "locator": "1.2. Cát tuyến và giới hạn độ dốc / Vận dụng",
+      "line": 55,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT03",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT03",
+    "stem": "Tính \\(f'(0)\\) theo định nghĩa nếu \\(f(x)=x^2\\).",
+    "answer_key": "\\(f'(0)=0\\).",
+    "worked_solution": "Với \\(h\\ne0\\), \\(\\frac{f(0+h)-f(0)}h=\\frac{h^2}h=h\\). Khi \\(h\\to0\\) từ cả hai phía, thương tiến tới 0, nên \\(f'(0)=0\\).\n\nNếu quên 'hai phía', so giới hạn thương khi \\(h>0\\) và \\(h<0\\).\n\n\n**Kiểm lỗi**\n\nNếu dùng quy tắc lũy thừa mà đề yêu cầu định nghĩa, đọc **Kiến thức 1.3**, làm **Bài 8** rồi **Bài 10**; dựng thương sai phân tại đúng a và kiểm giới hạn hai phía.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B31-DERIVATIVE_AT_POINT"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M03",
+      "locator": "1.3. Đạo hàm bằng định nghĩa / Vận dụng",
+      "line": 101,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT05",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT05",
+    "stem": "Xét \\(f(x)=|x|+x\\) tại \\(0\\). Hàm có liên tục không? Tính thương sai phân từ trái và phải để quyết định có đạo hàm hay không.",
+    "answer_key": "Liên tục tại 0; đạo hàm trái bằng 0, phải bằng 2, nên không khả vi tại 0.",
+    "worked_solution": "Hàm liên tục tại \\(0\\) vì \\(|h|+h\\to0=f(0)\\). Với \\(h<0\\), \\(|h|+h=0\\) nên thương bằng 0; với \\(h>0\\), thương bằng 2. Hai giới hạn khác nhau, nên hàm không khả vi tại 0.\n\nNếu dùng tính liên tục để suy đạo hàm, đối chiếu phản ví dụ góc nhọn.\n\n\n**Kiểm lỗi**\n\nNếu suy ngược 'liên tục ⇒ khả vi', đọc **Kiến thức 1.5**, làm **Bài 14** và **Bài 16**; \\(|x|\\) liên tục tại góc nhọn nhưng đạo hàm trái/phải khác nhau.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B31-CONTINUITY_NECESSARY"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M05",
+      "locator": "1.5. Khả vi kéo theo liên tục / Vận dụng",
+      "line": 182,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT06",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT06",
+    "stem": "Tại \\(x=0\\), đạo hàm một phía của \\(|2x|\\) là gì?",
+    "answer_key": "Trái: \\(-2\\); phải: 2; không có đạo hàm hai phía.",
+    "worked_solution": "Vì \\(f(0)=0\\), thương sai phân là \\(\\frac{|2h|}{h}\\). Với \\(h<0\\) thương bằng −2, với \\(h>0\\) thương bằng 2. Hai giới hạn khác nhau, nên không có đạo hàm hai phía.\n\nNếu một bài chỉ cho đồ thị, kiểm bên trái và bên phải tại điểm gãy.\n\n\n**Kiểm lỗi**\n\nNếu lấy một độ dốc cho cả trái và phải ở điểm gãy, đọc **Kiến thức 1.6**, làm **Bài 18** và **Bài 20**; vẽ hai nhánh rồi xét hai giới hạn thương riêng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B31-CORNER_CUSP"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M06",
+      "locator": "1.6. Đạo hàm một phía / Vận dụng",
+      "line": 219,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT07",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT07",
+    "stem": "\\(f(x)=x^2+2\\) tại \\(x=0\\), độ dốc và tung độ lần lượt bao nhiêu?",
+    "answer_key": "Hệ số góc 0; tung độ 2.",
+    "worked_solution": "Độ dốc \\(f'(0)=0\\); tung độ \\(f(0)=2\\).\n\nNếu nhầm giá trị và độ dốc, ghi riêng \\(P(a;f(a))\\) và \\(m=f'(a)\\).\n\n\n**Kiểm lỗi**\n\nNếu lấy \\(f(a)\\) làm hệ số góc, đọc **Kiến thức 2.1**, giải **Bài 23** rồi **Bài 24**; tọa độ điểm tiếp xúc và \\(f'(a)\\) là hai đại lượng khác nhau.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B31-TANGENT_SLOPE"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M07",
+      "locator": "2.1. Hệ số góc tiếp tuyến / Vận dụng",
+      "line": 255,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT08",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT08",
+    "stem": "Phương trình tiếp tuyến của đồ thị \\(y=x^3\\) tại \\(x=0\\) là gì?",
+    "answer_key": "\\(y=0\\).",
+    "worked_solution": "Ta có \\(f'(x)=3x^2\\), nên \\(f'(0)=0\\), \\(f(0)=0\\). Tiếp tuyến: \\(y=f(0)+f'(0)(x-0)=0\\).\n\nNếu kết quả không qua \\((a;f(a))\\), thế lại \\(x=a\\) để phát hiện.\n\n\n**Kiểm lỗi**\n\nNếu viết đường thẳng không đi qua \\((a;f(a))\\) hoặc nhầm tung độ với đạo hàm, đọc **Kiến thức 2.2**, giải **Bài 25** và **Bài 27**, thử thế \\(x=a\\) vào phương trình tiếp tuyến.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B31-TANGENT_EQUATION"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M08",
+      "locator": "2.2. Viết phương trình tiếp tuyến / Vận dụng",
+      "line": 285,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT09",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT09",
+    "stem": "Vật chuyển động trên một trục có tọa độ \\(s(t)=-3t\\) (m), t tính bằng giây. Tốc độ của vật là bao nhiêu?",
+    "answer_key": "3 m/s (vận tốc \\(-3\\) m/s).",
+    "worked_solution": "Vận tốc \\(v(t)=s'(t)=-3\\) m/s. Tốc độ là \\(|v(t)|=3\\) m/s.\n\nNếu gọi tốc độ âm, kiểm định nghĩa \\(|v|\\).\n\n\n**Kiểm lỗi**\n\nNếu gọi vận tốc âm là tốc độ âm, đọc **Kiến thức 2.3**, làm **Bài 29** và **Bài 31**; vận tốc \\(s'(t)\\) có hướng còn tốc độ là \\(|s'(t)|\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B31-INSTANT_VELOCITY"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O09"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M09",
+      "locator": "2.3. Vận tốc có hướng / Vận dụng",
+      "line": 315,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT10",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT10",
+    "stem": "Nếu giá \\(P(x)=50+3x\\) đồng, x là số sản phẩm được mô hình hóa bằng biến thực không âm, \\(P'(x)\\) có đơn vị gì?",
+    "answer_key": "Đồng/sản phẩm; giá trị đạo hàm là 3.",
+    "worked_solution": "\\(P'(x)=3\\), tức 3 đồng/sản phẩm tại các điểm trong miền \\(x>0\\) của mô hình liên tục. Đơn vị là đơn vị đầu ra (đồng) chia cho đơn vị đầu vào (sản phẩm).\n\nNếu viết đơn vị đồng, bạn đang trả giá trị P thay vì đạo hàm.\n\n\n**Kiểm lỗi**\n\nNếu bỏ đơn vị mẫu của đạo hàm, đọc **Kiến thức 2.4**, làm **Bài 33** và **Bài 35**; đơn vị của tốc độ biến thiên phải là đơn vị đầu ra trên một đơn vị đầu vào.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B31-RATE_UNITS"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O10"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M10",
+      "locator": "2.4. Đơn vị của đạo hàm / Vận dụng",
+      "line": 347,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT11",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT11",
+    "stem": "\\((7x^3-4)'\\) bằng bao nhiêu?",
+    "answer_key": "\\(21x^2\\).",
+    "worked_solution": "\\((7x^3-4)'=7\\cdot3x^2-0=21x^2\\).\n\nNếu ra \\(7x^2\\), bạn bỏ hệ số mũ 3.\n\n\n**Kiểm lỗi**\n\nNếu quên nhân số mũ hoặc đạo hàm hằng số khác 0, đọc **Kiến thức 3.1**, làm **Bài 36** và **Bài 38**; kiểm từng hạng của đa thức.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-POWER_INTEGER"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O11"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M11",
+      "locator": "3.1. Lũy thừa và hằng số / Vận dụng",
+      "line": 381,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT12",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT12",
+    "stem": "\\(f(x)=\\sqrt{x-1}\\), có đạo hàm hữu hạn tại \\(x=1\\) không?",
+    "answer_key": "Không; thương sai phân phải tiến tới \\(+\\infty\\).",
+    "worked_solution": "Không. Với \\(h>0\\), thương sai phân \\(\\frac{f(1+h)-f(1)}h=\\frac{\\sqrt h}h=\\frac1{\\sqrt h}\\to+\\infty\\) khi \\(h\\to0^+\\); vì thế không có đạo hàm hữu hạn ngay cả từ bên phải.\n\nNếu chỉ xét \\(x-1\\ge0\\), còn phải kiểm mẫu đạo hàm khác 0.\n\n\n**Kiểm lỗi**\n\nNếu dùng công thức căn ngay ở điểm biên mà mẫu trở thành 0, đọc **Kiến thức 3.2**, làm **Bài 39** và **Bài 41**; kiểm điều kiện công thức đạo hàm, khác với điều kiện chỉ cần xác định hàm.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-SQRT_DOMAIN"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O12"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M12",
+      "locator": "3.2. Căn thức và điểm biên / Vận dụng",
+      "line": 419,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT13",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT13",
+    "stem": "\\((2x^2+5x-8)'\\) bằng bao nhiêu?",
+    "answer_key": "\\(4x+5\\).",
+    "worked_solution": "\\((2x^2+5x-8)'=4x+5-0=4x+5\\).\n\nNếu viết −8 ở đạo hàm, xem lại định nghĩa đạo hàm hằng.\n\n\n**Kiểm lỗi**\n\nNếu giữ nguyên hằng số khi đạo hàm tổng, đọc **Kiến thức 3.3**, làm **Bài 43** và **Bài 44**; lấy đạo hàm từng hạng rồi cộng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-CONSTANT_SUM"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O13"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M13",
+      "locator": "3.3. Quy tắc tổng / Vận dụng",
+      "line": 449,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT14",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT14",
+    "stem": "Tính đạo hàm của \\(y=(2x-1)(x^2+1)\\) bằng quy tắc tích, rồi kiểm bằng khai triển.",
+    "answer_key": "\\(6x^2-2x+2\\).",
+    "worked_solution": "\\(y'=2(x^2+1)+(2x-1)\\cdot2x=6x^2-2x+2\\). Khai triển \\(y=2x^3-x^2+2x-1\\) rồi lấy đạo hàm cũng được kết quả ấy. Nếu chỉ lấy \\(2\\cdot2x\\), em đã nhân hai đạo hàm thay vì cộng hai đóng góp.\n\n\n**Kiểm lỗi**\n\nNếu cho \\((uv)'=u'v'\\) hoặc quên đạo hàm một thừa số, đọc **Kiến thức 3.4**, làm **Bài 46** và **Bài 48**; viết \\(u'v+uv'\\) trước khi thu gọn.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-PRODUCT"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O14"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M14",
+      "locator": "3.4. Quy tắc tích / Vận dụng",
+      "line": 487,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT16",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT16",
+    "stem": "Tính đạo hàm của \\(y=\\sqrt{3x+1}\\) tại những điểm \\(3x+1>0\\), chỉ rõ lớp trong và lớp ngoài.",
+    "answer_key": "\\(y'=\\frac3{2\\sqrt{3x+1}}\\), \\(x>-\\frac13\\).",
+    "worked_solution": "Lớp trong \\(u=3x+1\\), \\(u'=3\\); lớp ngoài \\(F(u)=\\sqrt u\\), \\(F'(u)=\\frac1{2\\sqrt u}\\) khi \\(u>0\\) (mục 3.2). Vậy \\(y'=\\frac{3}{2\\sqrt{3x+1}}\\) với \\(x>-\\frac13\\). Nếu thiếu 3 ở tử, em đã quên đạo hàm lớp trong.\n\n\n**Kiểm lỗi**\n\nNếu đạo hàm \\((u(x))^n\\) nhưng quên \\(u'\\), đọc **Kiến thức 3.6**, làm **Bài 55** và **Bài 56**; phân biệt hàm ngoài với hàm trong.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-COMPOSITION_CHAIN"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O16"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M16",
+      "locator": "3.6. Quy tắc dây chuyền / Vận dụng",
+      "line": 551,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT17",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT17",
+    "stem": "\\((4\\cos x-\\sin x)'\\) là gì? (Góc đo bằng radian.)",
+    "answer_key": "\\(-4\\sin x-\\cos x\\).",
+    "worked_solution": "\\(-4\\sin x-\\cos x\\).\n\nNếu ra \\(+4\\sin x\\), kiểm đạo hàm cos âm.\n\n\n**Kiểm lỗi**\n\nNếu nhầm dấu đạo hàm cos hoặc áp công thức lượng giác khi góc đo độ, đọc **Kiến thức 4.1**, làm **Bài 57** và **Bài 59**; các công thức đang dùng góc radian.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-TRIG_SIN_COS"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O17"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M17",
+      "locator": "4.1. Sin và cos / Vận dụng",
+      "line": 583,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT18",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT18",
+    "stem": "\\((\\cot x)'\\) và miền là gì? (Góc đo bằng radian.)",
+    "answer_key": "\\(-\\frac1{\\sin^2 x}\\), \\(x\\ne k\\pi,\\ k\\in\\mathbb Z\\).",
+    "worked_solution": "Với \\(\\sin x\\ne0\\), \\(\\cot x=\\frac{\\cos x}{\\sin x}\\). Quy tắc thương cho \\((\\cot x)'=\\frac{-\\sin^2x-\\cos^2x}{\\sin^2x}=-\\frac1{\\sin^2x}\\). Miền \\(x\\ne k\\pi,\\ k\\in\\mathbb Z\\).\n\nNếu thiếu dấu trừ, dùng quy tắc thương \\(\\frac{\\cos x}{\\sin x}\\) để tự tái lập.\n\n\n**Kiểm lỗi**\n\nNếu thiếu miền \\(\\cos x\\ne0\\) đối với tan hay \\(\\sin x\\ne0\\) đối với cot, đọc **Kiến thức 4.2**, làm **Bài 60** và **Bài 62**; đạo hàm chỉ xét nơi hàm gốc xác định.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-TRIG_TAN_COT"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O18"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M18",
+      "locator": "4.2. Tan và cot / Vận dụng",
+      "line": 621,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT19",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT19",
+    "stem": "\\((\\sin(5x))'\\) là gì? (Góc đo bằng radian.)",
+    "answer_key": "\\(5\\cos(5x)\\).",
+    "worked_solution": "\\(5\\cos(5x)\\) khi góc đo bằng radian.\n\nNếu ra \\(\\cos(5x)\\), đạo hàm trong 5x chưa được nhân.\n\n\n**Kiểm lỗi**\n\nNếu lấy đạo hàm \\(\\sin(2x^2)\\) mà quên đạo hàm \\(2x^2\\) hoặc bỏ điều kiện của tan hợp, đọc **Kiến thức 4.3**, làm **Bài 63** và **Bài 65**; áp quy tắc dây chuyền sau khi kiểm miền.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-TRIG_CHAIN"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O19"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M19",
+      "locator": "4.3. Hàm lượng giác hợp / Vận dụng",
+      "line": 651,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT20",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT20",
+    "stem": "\\((e^{3x})'\\) bằng gì?",
+    "answer_key": "\\(3e^{3x}\\).",
+    "worked_solution": "Theo quy tắc dây chuyền, \\((e^{3x})'=e^{3x}\\cdot(3x)'=3e^{3x}\\).\n\nNếu thiếu hệ số 3, kết hợp quy tắc mũ với dây chuyền.\n\n\n**Kiểm lỗi**\n\nNếu đạo hàm \\(a^x\\) thiếu \\(\\ln a\\) hoặc đạo hàm \\(e^u\\) quên \\(u'\\), đọc **Kiến thức 4.4**, làm **Bài 66** và **Bài 68**; cơ số \\(a>0\\), \\(a\\ne1\\) với hàm mũ cơ số a.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-EXP_DERIV"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O20"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M20",
+      "locator": "4.4. Hàm mũ / Vận dụng",
+      "line": 691,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT21",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT21",
+    "stem": "\\((\\ln(4x))'\\) trên \\(x>0\\) là gì?",
+    "answer_key": "\\(\\frac1x\\), \\(x>0\\).",
+    "worked_solution": "\\(\\frac4{4x}=\\frac1x\\); miền \\(x>0\\).\n\nNếu tính với \\(x<0\\), \\(\\ln(4x)\\) không có nghĩa trong số thực.\n\n\n**Kiểm lỗi**\n\nNếu dùng công thức \\(\\ln x\\) cho \\(\\log_a x\\) mà bỏ \\(\\ln a\\) hoặc nhận \\(x\\le0\\), đọc **Kiến thức 4.5**, làm **Bài 69** và **Bài 71**; kiểm đối số dương trước.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-LOG_DERIV"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O21"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M21",
+      "locator": "4.5. Logarit và miền / Vận dụng",
+      "line": 729,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT22",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT22",
+    "stem": "\\((\\ln(3x-2))'\\) là gì và miền?",
+    "answer_key": "\\(\\frac3{3x-2}\\), \\(x>\\frac23\\).",
+    "worked_solution": "Điều kiện \\(3x-2>0\\), tức \\(x>\\frac23\\). Theo quy tắc dây chuyền, \\((\\ln(3x-2))'=\\frac{(3x-2)'}{3x-2}=\\frac3{3x-2}\\).\n\nNếu chỉ ghi mẫu khác 0 mà cho \\(x<\\frac23\\), điều kiện log phải dương bị vi phạm.\n\n\n**Kiểm lỗi**\n\nNếu cho \\(\\ln(3x-2)\\) trên \\(x\\le\\frac23\\) hoặc quên nhân đạo hàm hàm trong, đọc **Kiến thức 4.6**, giải **Bài 72** và **Bài 74**; kết hợp điều kiện miền với dây chuyền.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-EXP_LOG_CHAIN"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O22"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M22",
+      "locator": "4.6. Mũ–logarit hợp / Vận dụng",
+      "line": 761,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT23",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT23",
+    "stem": "\\(\\frac{\\ln x}{x-2}\\) xác định ở những x nào?",
+    "answer_key": "\\(x>0,\\ x\\ne2\\).",
+    "worked_solution": "Đối số logarit cần \\(x>0\\), mẫu cần \\(x-2\\ne0\\). Giao hai điều kiện là \\(x>0,\\ x\\ne2\\).\n\nNếu chỉ đặt \\(x\\ne2\\), quên điều kiện \\(\\ln x\\) và đạo hàm được ở \\(x\\le0\\) sai.\n\n\n**Kiểm lỗi**\n\nNếu kiểm mẫu khác 0 mà quên điều kiện căn/log trong tử, đọc **Kiến thức 4.7**, làm **Bài 77** và **Bài 79**; giao miền xác định trước khi đạo hàm.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-DOMAIN_VALIDATION"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O23"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M23",
+      "locator": "4.7. Đạo hàm và miền gốc / Vận dụng",
+      "line": 791,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT24",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT24",
+    "stem": "\\(((x^2+1)\\sin x)'\\) là gì? (Góc đo bằng radian.)",
+    "answer_key": "\\(2x\\sin x+(x^2+1)\\cos x\\).",
+    "worked_solution": "Dùng quy tắc tích với \\(u=x^2+1,\\ v=\\sin x\\): \\(u'v+uv'=2x\\sin x+(x^2+1)\\cos x\\).\n\nNếu thử nhân hai đạo hàm, so lại với ví dụ \\(f=x\\cdot x=x^2\\) cho thấy lỗi.\n\n\n**Kiểm lỗi**\n\nNếu dùng tích hai đạo hàm hoặc làm dây chuyền trước khi nhận cấu trúc tích, đọc **Kiến thức 4.8**, làm **Bài 80** và **Bài 82**; ghi quy tắc ngoài rồi xử lý từng hàm trong.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-RULE_SELECTION"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O24"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M24",
+      "locator": "4.8. Chọn đúng quy tắc / Vận dụng",
+      "line": 821,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT25",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT25",
+    "stem": "Vật có tọa độ \\(s(t)=t^3-3t\\) (m), t tính bằng giây. Tính vận tốc \\(v(1)\\).",
+    "answer_key": "\\(v(1)=0\\) m/s.",
+    "worked_solution": "\\(v(t)=s'(t)=3t^2-3\\) m/s. Thay \\(t=1\\), được \\(v(1)=0\\) m/s.\n\nNếu dùng \\(s(1)=-2\\) thay v(1), phân biệt vị trí với đạo hàm.\n\n\n**Kiểm lỗi**\n\nNếu đánh đồng \\(s(t)\\) với vận tốc \\(v(t)\\), đọc **Kiến thức 5.1**, làm **Bài 83** và **Bài 85**; lấy \\(s'(t)\\), xét dấu vận tốc và cuối cùng mới lấy \\(|v|\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-APPLIED_VELOCITY"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O25"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M25",
+      "locator": "5.1. Vận tốc từ tọa độ / Vận dụng",
+      "line": 855,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT26",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT26",
+    "stem": "\\(f=x^2+3x\\) thì \\(f''\\) bằng?",
+    "answer_key": "\\(f''(x)=2\\).",
+    "worked_solution": "\\(f'=2x+3\\), \\(f''=2\\).\n\nNếu ra \\((2x+3)^2\\), bạn đã bình phương \\(f'\\).\n\n\n**Kiểm lỗi**\n\nNếu viết \\(f''=(f')^2\\), đọc **Kiến thức 5.2**, làm **Bài 86** và **Bài 88**; đạo hàm lần hai là đạo hàm của \\(f'\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B33-SECOND_DEF"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O26"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M26",
+      "locator": "5.2. Đạo hàm bậc hai / Vận dụng",
+      "line": 885,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT27",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT27",
+    "stem": "\\(f=x^5\\): \\(f''\\) bằng bao nhiêu?",
+    "answer_key": "\\(f''(x)=20x^3\\).",
+    "worked_solution": "\\(f'(x)=5x^4\\), rồi \\(f''(x)=20x^3\\).\n\nNếu ra \\(5x^3\\), thiếu nhân \\(n-1\\).\n\n\n**Kiểm lỗi**\n\nNếu bỏ nhân thêm một hệ số số mũ ở lần đạo hàm thứ hai, đọc **Kiến thức 5.3**, làm **Bài 89** và **Bài 91**; kiểm riêng \\(f'\\) và \\(f''\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B33-POLYNOMIAL"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O27"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M27",
+      "locator": "5.3. Đạo hàm cấp hai của đa thức / Vận dụng",
+      "line": 915,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT28",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT28",
+    "stem": "\\(f=e^{2x}\\), \\(f''\\) là gì?",
+    "answer_key": "\\(f''(x)=4e^{2x}\\).",
+    "worked_solution": "\\(f'(x)=2e^{2x}\\); lấy đạo hàm lần hai, \\(f''(x)=2\\cdot2e^{2x}=4e^{2x}\\).\n\nNếu ra \\(2e^{2x}\\), bạn chỉ lấy đạo hàm một lần.\n\n\n**Kiểm lỗi**\n\nNếu quên đạo hàm dây chuyền ở lần thứ hai với sin/cos hoặc mũ, đọc **Kiến thức 5.4**, làm **Bài 93** và **Bài 95**; lấy đạo hàm lần một chính xác rồi mới đạo hàm lần hai.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B33-TRIG_EXP"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O28"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M28",
+      "locator": "5.4. Đạo hàm cấp hai của hàm hợp / Vận dụng",
+      "line": 945,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT31",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT31",
+    "stem": "\\(f=x^2+1\\) tại \\(x=0\\), phương trình tiếp tuyến là gì?",
+    "answer_key": "\\(y=1\\).",
+    "worked_solution": "\\(f'(x)=2x\\), nên \\(f(0)=1\\) và \\(f'(0)=0\\). Tiếp tuyến \\(y=1+0(x-0)=1\\). Đạo hàm cấp hai \\(f''(x)=2\\) không phải độ dốc tiếp tuyến.\n\nNếu đặt \\(f''\\) vào phương trình tiếp tuyến, quay lại Kiến thức 2.1–2.2 về hệ số góc và phương trình tiếp tuyến.\n\n\n**Kiểm lỗi**\n\nNếu đặt \\(f''(a)\\) vào hệ số góc tiếp tuyến thay \\(f'(a)\\), đọc **Kiến thức 5.7**, giải **Bài 105** và **Bài 107**; kiểm điểm tiếp xúc và đạo hàm cấp một.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-CHIX-INTEGRATED"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O31"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M31",
+      "locator": "5.7. Phối hợp ba đại lượng / Vận dụng",
+      "line": 1043,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP09-KFT32",
+    "content_version": "TOP09-BANK-CP75-20261126-KFT32",
+    "stem": "Với \\(f(x)=\\frac1x\\), \\(a=2\\), \\(dx=0{,}2\\): (a) kiểm miền từ \\(a\\) tới \\(a+dx\\); (b) tính vi phân \\(dy\\) và độ tăng thật \\(\\Delta y\\); (c) tìm \\(|\\Delta y-dy|\\) và giải thích vì sao vi phân chỉ là xấp xỉ.",
+    "answer_key": "Đoạn \\([2;2{,}2]\\) thuộc miền; \\(dy=-\\frac1{20}\\), \\(\\Delta y=-\\frac1{22}\\), sai số tuyệt đối \\(\\frac1{220}\\approx0{,}00455\\).",
+    "worked_solution": "Vì \\(f(x)=\\frac1x\\) có miền \\(x\\ne0\\), cả đoạn \\([2;2{,}2]\\) đều thuộc miền. Ta có \\(f'(x)=-\\frac1{x^2}\\), nên \\(dy=f'(2)\\,dx=(-\\frac14)(\\frac15)=-\\frac1{20}=-0{,}05\\). Độ tăng thật \\(\\Delta y=f(2{,}2)-f(2)=\\frac5{11}-\\frac12=-\\frac1{22}\\approx-0{,}04545\\). Sai số tuyệt đối \\(|\\Delta y-dy|=|-\\frac1{22}+\\frac1{20}|=\\frac1{220}\\approx0{,}00455\\). Cả hai độ tăng đều âm, nhưng ở bài này không bằng nhau khi bước \\(dx\\) hữu hạn.\n\nNếu em tính \\(dy\\) dương, kiểm dấu \\(f'(2)<0\\); nếu đặt \\(dy=\\Delta y\\), so hai phân số \\(-\\frac1{20}\\) và \\(-\\frac1{22}\\). Với mô hình xấp xỉ phải kiểm tính khả vi tại a và bước đủ nhỏ trong miền.\n\n\n**Kiểm lỗi**\n\nNếu cho rằng vi phân dy luôn bằng chính xác độ tăng Δy hoặc bỏ miền xác định, đọc **Kiến thức 5.8**, làm **Bài 50** (hàm phân thức, điều kiện mẫu) và **Bài 108** (tự tính sai số vi phân). Phân biệt xấp xỉ bậc nhất với độ tăng thật.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP09-O32"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+      "heading_id": "TOP09-M32",
+      "locator": "5.8. Vi phân xấp xỉ / Vận dụng",
+      "line": 1086,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_REVIEWED_SKILL_MAPPING_PENDING"
   }
 ]
