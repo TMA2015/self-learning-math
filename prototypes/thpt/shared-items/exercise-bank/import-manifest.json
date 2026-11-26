@@ -19979,6 +19979,64 @@
       ],
       "remaining": "G10 ChIII next; complete remaining SGK shared formative chapters, separately FirstTry/public selfcheck/Written and remaining source-owner, depth and semantic checks before conversion.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp93": {
+      "scope": "SGK shared formative G10 ChIII B05/B06, 16 canonical C/P records (7 MCQ, 9 short written responses); FirstTry 11/public selfcheck/Written references excluded",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "00e3cfab191fa939916d78076ea36e0c1e7f6bdf",
+      "source_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "import_blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "current_main_blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "ids_and_order": 16,
+        "pre_edit_candidate_stem_or_option_variants": [
+          "THPT-G10-B05-C01",
+          "THPT-G10-B05-P03",
+          "THPT-G10-B05-P05",
+          "THPT-G10-B06-P01",
+          "THPT-G10-B06-P02",
+          "THPT-G10-B06-P03",
+          "THPT-G10-B06-P05"
+        ],
+        "decision": "Preserve CP50 strengthened variants; old projection is historical."
+      },
+      "item_shard": {
+        "path": "items/g10-chiii.json",
+        "before": "de16297d0a333ab1c6716bd5561ab618ae7dfeea",
+        "after": "ef1930097bca13b7ef8045fd09513c87c672d65d",
+        "commit": "2b8189d8766fe5a723b5c9e5f429bb12b87d4910"
+      },
+      "checks": {
+        "formative_reviewed": 16,
+        "formative_changed": 16,
+        "fields_changed": {
+          "stem": 8,
+          "answer_key": 8,
+          "worked_solution": 16,
+          "options": 4,
+          "hints": 9,
+          "remediation": 12
+        },
+        "first_try_unchanged": 11,
+        "sgk_placement_blob": "240d485678b3182add1fb3acd7035e6fc9994e08",
+        "topic_placement_blob": "009bce34d5871a445b57bd63df2e7f3306c07aa2",
+        "sgk_placements_for_reviewed_ids": 16,
+        "topic_placements_for_reviewed_ids": 22,
+        "metadata_and_interaction_unchanged": true,
+        "mcq_keys_unchanged": true,
+        "short_response_key_changes": "notation only; mathematical values unchanged",
+        "inline_delimiters_balanced": true,
+        "arithmetic_spot_checks_passed": 16,
+        "targeted_raw_math_scan_residual": 0,
+        "raw_scan_findings": [],
+        "mcq_options_reviewed": 28
+      },
+      "findings": [
+        "B05: unit semicircle coordinates, signs and ratio domains, supplementary/reflection reasoning, principal inverse sine and second angle, end-of-calculation rounding, cotangent nonzero condition. B06: choice of sine/cosine/area theorem, positive length, both SSA solutions verified by cosine rule, triangle inequalities and Heron, distinction r/R, correct survey side-angle pairs, right triangle. Recomputed all 16 tasks with manual reasoning and 16 supporting numerical checks (not full proof/renderer QA); no key meaning change. No fresh primary SGK/SBT PDF, whole-chapter Academic/PED verdict or browser QA."
+      ],
+      "remaining": "G10 ChIV next; separately FirstTry/public selfcheck/Written and other source-owner/depth/semantic checks before conversion.",
+      "release_authorization": false
     }
   }
 }
