@@ -1,17 +1,27 @@
+<!-- CP25_CURRENT_CP20D_SGK_CHII -->
+## Current V2 targeted handoff
+
+CP20d owner-approved correction, re-lock CP25, 26/11/2026. Current source 43d93a7d0d070a288251c34ff411c7de3206dc85, source commit 7ef72e43d1a0393591b0428eb8db59bb729b98bf. Zero vector is conventionally collinear and same direction as every vector (KNTT Toán 12 Tập Một Bài 6 p48), without a unique displacement direction or defined geometric angle; dot product with zero vector is 0. B06/O01/O02/O04 and B08/O02 Knowledge, P02 stem/key/explanation and matching public END reference updated. 64/64 canonical IDs and original rubric lines preserved; CĐ18 B3 same-ID projection synchronized. Original R00 independent receipt remains frozen provenance on 856a37bd16d2746ffc2e12906de18d1f4338a3b6, not independent review of changed content. Targeted author self-verification CP20d; no new visual PDF scan (screenshot unavailable), CI/RELEASE PASS or private RD1/Mastery changes; protect student records and do not reuse cached previous key. #716 remains Draft; release intake only under owner gate.
+
+Current Q18 `2d0228a22054c08fdd5982e99f5b5fbc9d3e64a0`.
+
+---
+Historical independent review and original snapshot narrative below remain historical, not a new reviewer verdict.
+
 # G12 SGK ChII B06–B08 — AUTHORING V2 source-locked handoff R00
 PACKET_ID: G12-SGK-CHII-B06-B08-R00
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 1.0.0
+STANDARD_VERSION: 3.2.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md
-ACADEMIC_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
+ACADEMIC_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_CHII_R00_INDEPENDENT_ACADEMIC_PED_COMPOSITE_SOURCE_RECEIPT_20261103.md
-REVIEW_RECEIPT_BLOB: 92c07bc943a3e5f1789b8c9e5e7a3acc1bea7532
-ACADEMIC_VERDICT: PASS
-PEDAGOGICAL_VERDICT: PASS
+REVIEW_RECEIPT_BLOB: 2d0228a22054c08fdd5982e99f5b5fbc9d3e64a0
+ACADEMIC_VERDICT: SELF_VERIFIED_TARGETED_DELTA
+PEDAGOGICAL_VERDICT: SELF_VERIFIED_TARGETED_DELTA
 NOTEBOOKLM_PERMANENT_VERSION: 2.1
 P0: 0
 P1: 0
