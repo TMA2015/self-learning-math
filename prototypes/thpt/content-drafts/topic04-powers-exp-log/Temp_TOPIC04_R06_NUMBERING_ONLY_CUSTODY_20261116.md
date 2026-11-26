@@ -1,18 +1,22 @@
+## CURRENT custody 26/11/2026 — Work A04
+
+Learner `71853ed34cb5cb21e312a0a9f9c713b76e5219b4`, current Q18 `0e605108aefcf18b81348311445225d559f96e8e`. Same original banks and five SVGs; 75 IDs, 12 Written rubric weights, 18 exact replay stems. No new bank/version, RD1, runtime or RELEASE. Older notes below are historical.
+
 <!-- TOP04_MASTER974_CURRENT_Q18_BANK_CUSTODY_20261121 -->
 **Current AUTHORING #974:** one learner R06 blob `4e8238e188204eefc060f18c88ef7a0a3c51a60e` and one Topic new26 canonical bank `377de2e2e9fb6771f02270e8d85e950559669895` (P21 deterministic model now correctly explained), existing Q18 AUTHOR_SELF_VERIFIED receipt `eba1e820c2544b54e3ff09b0c37ed780e18c3dd5`. All 26 current Topic item mappings point to current one bank SHA; other original 49 SGK IDs unchanged. 18 FirstTry outcomes now have concrete D6 routes, O17 independent 640→360 self-try, 18 public replays single voluntary answer location table, 12 Written untouched, 5 SVG unchanged. Old source/item hash in historic notes below are historical, not a competing active canonical. No independent NotebookLM claim, no RD1/Release/merge/deploy.
 
 # CĐ4 R06 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 4e8238e188204eefc060f18c88ef7a0a3c51a60e
+CURRENT_SOURCE_BLOB: 71853ed34cb5cb21e312a0a9f9c713b76e5219b4
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: eba1e820c2544b54e3ff09b0c37ed780e18c3dd5
+CURRENT_Q18_RECEIPT_BLOB: 0e605108aefcf18b81348311445225d559f96e8e
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
 PREVIOUS_AUTHOR_METADATA_BLOB: dbefc80e878456544078dc0c55ce6660278d1533
-AUTHORING_STATUS: AUTHOR_SELF_VERIFIED_O17_P21_D6_18_SELFCHK_ON_CURRENT_SOURCE
+AUTHORING_STATUS: AUTHOR_SELF_VERIFIED_WORK_A04_XG5_20261126
 RELEASE_AUTHORIZATION: NO
 
 Original A1–A7/SGK/outcome/item source matrix below is inherited **unaltered**; only current learner snapshot formatting and Q18 source custody above changed. User-facing headings are now page H1, numbered group H2 and child H3, with Practice Bài labels not H4. Old author metadata Git blob `dbefc80e878456544078dc0c55ce6660278d1533` and old academic source/Q18 remain immutable. No independent reviewer claim or RELEASE approval.
