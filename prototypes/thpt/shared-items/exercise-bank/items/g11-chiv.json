@@ -313,16 +313,18 @@
   {
     "item_id": "THPT-G11-CHIV-B11-P03",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong hình chóp S.ABCD có đáy ABCD là hình bình hành, SA và CD song song hay chéo nhau?",
-    "answer_key": "Chéo nhau.",
-    "worked_solution": "Nếu SA và CD đồng phẳng, mặt phẳng chứa chúng sẽ chứa A, C, D không thẳng hàng, nên chính là mặt đáy \\((ABCD)\\). Khi đó S thuộc mặt đáy, mâu thuẫn giả thiết hình chóp. Do đó SA và CD chéo nhau.",
+    "stem": "Trong tứ diện \\(S.ABC\\), M,N lần lượt là trung điểm SA,SB. (a) Xét vị trí tương đối của MN và BC. (b) Xác định giao tuyến của hai mặt phẳng \\((CMN)\\) và \\((ABC)\\) bằng một điểm và một phương. Giải thích vì sao giao tuyến không phải AB.",
+    "answer_key": "(a) MN và BC chéo nhau. (b) Giao tuyến là đường thẳng qua C song song AB (và MN), không phải AB.",
+    "worked_solution": "(a) Giả sử MN và BC đồng phẳng. Mặt phẳng chứa hai đường này chứa B,C,N. Vì B,N phân biệt thuộc SB nên nó chứa S; do đó là \\((SBC)\\). Nhưng M thuộc phần trong SA và không thuộc \\((SBC)\\), mâu thuẫn. Vậy MN và BC chéo nhau. (b) Trong tam giác SAB, MN là đường trung bình nên \\(MN\\parallel AB\\). Hai mặt phẳng \\((CMN)\\) và \\((ABC)\\) phân biệt vì M không thuộc đáy, cùng chứa C. Trong \\((CMN)\\), qua C kẻ đường d song song MN; trong \\((ABC)\\), qua C cũng có đường song song AB. Do MN và AB cùng phương, hai đường qua C vừa dựng trùng nhau theo tính duy nhất của đường song song qua một điểm. Vì vậy d nằm trong cả hai mặt phẳng và là giao tuyến. C không thuộc AB nên d khác AB.",
     "skill_ids": [
-      "G11-B11-RELATIVE"
+      "G11-B11-RELATIVE",
+      "G11-B11-INTERSECT_PLANES"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Giả sử mặt phẳng chứa SA và CD, xét ba điểm A, C, D."
+      "Muốn bác bỏ đồng phẳng, thử xác định mặt phẳng qua B,C,N.",
+      "Tìm quan hệ MN với AB, rồi dựng đường qua điểm chung C theo phương ấy."
     ],
     "rubric": null,
     "interaction": {
@@ -339,7 +341,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Ba điểm A, C, D xác định mặt đáy; S không nằm trong mặt đó. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P11."
+    "remediation": "Không suy giao tuyến từ nét vẽ. Tìm điểm chung rồi chứng minh đường cùng phương nằm trong cả hai mặt phẳng. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P13."
   },
   {
     "item_id": "THPT-G11-CHIV-B11-P04",
@@ -903,16 +905,18 @@
   {
     "item_id": "THPT-G11-CHIV-B14-P04",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Một hình bình hành ABCD không suy biến được chiếu song song lên \\((P)\\). Ảnh có luôn là hình bình hành không suy biến không? Nêu điều kiện và một trường hợp ảnh suy biến.",
-    "answer_key": "Không. Ảnh không suy biến khi phương chiếu không song song mặt phẳng chứa ABCD. Nếu phương chiếu cùng phương AB thì ảnh của cả hình là một đoạn thẳng.",
-    "worked_solution": "Khi phương chiếu không song song mặt phẳng chứa ABCD, mỗi đường chiếu gặp mặt phẳng chứa hình tại nhiều nhất một điểm. Vì vậy hai điểm phân biệt của hình không thể có cùng ảnh; ảnh giữ tính thẳng hàng và các cặp cạnh đối song song, nên là hình bình hành không suy biến. Nếu phương chiếu cùng phương AB, ta có \\(A'=B'\\) và \\(D'=C'\\). Hai ảnh A′ và D′ phân biệt vì AD không cùng phương AB. Ảnh của cả hình là đoạn A′D′. Điều kiện hình ban đầu không suy biến chưa đủ.",
+    "stem": "Cho hình hộp chữ nhật \\(ABCD.A'B'C'D'\\). Chiếu song song toàn bộ hình chữ nhật \\(ABB'A'\\) (gồm cả phần trong) xuống mặt đáy \\((ABCD)\\). (a) Theo phương \\(AA'\\), ảnh là hình gì? (b) Theo phương \\(AC'\\), gọi E,F lần lượt là ảnh của A',B'. Hãy xác định vị trí E,F trên mặt đáy và chứng minh ảnh là hình bình hành không có góc vuông. (c) Nêu điều kiện để ảnh của một hình bình hành không suy biến vẫn là hình bình hành không suy biến.",
+    "answer_key": "(a) Đoạn AB. (b) E đối xứng với C qua A; qua B kẻ đường song song AE, lấy F sao cho \\(BF\\) cùng hướng và bằng \\(AE\\). Ảnh là hình bình hành ABFE, không phải hình chữ nhật. (c) Phương chiếu không song song mặt phẳng chứa hình bình hành.",
+    "worked_solution": "(a) A,B nằm trên mặt chiếu nên bất biến. Các đường chiếu qua A',B' lần lượt là AA',BB', nên A' có ảnh A, B' có ảnh B. Mọi điểm của mặt bên nằm trên một đoạn song song AA' đi từ AB lên A'B', vì vậy ảnh của cả hình là đoạn AB. (b) Phương AC' không song song mặt đáy. Lấy E đối xứng C qua A. Tứ giác EAC'A' là hình bình hành: EA song song và bằng A'C', đồng thời EA và A'C' cùng hướng. Vì vậy A'E song song AC', nên E là ảnh của A'. Từ B dựng F sao cho đoạn có hướng BF bằng đoạn có hướng AE. Khi đó ABFE là hình bình hành không suy biến vì AE cùng đường AC, không song song AB. Tứ giác A'B'FE là hình bình hành vì A'B' và EF cùng hướng, bằng nhau; do đó B'F song song A'E, tức song song phương chiếu. F là ảnh của B'. Phương AC' không song song mặt bên (ABB'A') vì C' không thuộc mặt bên và A thuộc mặt bên. Bởi vậy hình chiếu không suy biến, các cạnh đối vẫn song song và ảnh của cả hình là hình bình hành ABFE. Đường chéo AC của hình chữ nhật đáy không vuông góc AB, nên AE cũng không vuông góc AB. Vì vậy ảnh không phải hình chữ nhật. (c) Nếu phương chiếu không song song mặt phẳng chứa hình bình hành ban đầu, mỗi đường chiếu gặp mặt ấy nhiều nhất một điểm, nên không có hai điểm phân biệt cùng ảnh và hình bình hành không suy biến. Nếu phương chiếu song song mặt ấy, toàn bộ hình có ảnh trên một đường thẳng, nên suy biến thành đoạn.",
     "skill_ids": [
       "G11-B14-PARALLEL_AND_SHAPES"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Kiểm phương chiếu có nằm trong phương của mặt phẳng chứa hình không."
+      "Điểm nằm trên mặt chiếu có ảnh là chính nó.",
+      "Với phương AC', kéo dài đường qua A' song song AC' đến mặt đáy; dùng hình bình hành để xác định E.",
+      "So sánh hai phương chiếu với mặt phẳng chứa mặt bên."
     ],
     "rubric": null,
     "interaction": {
@@ -929,7 +933,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu phương chiếu cùng phương một cạnh, cạnh đó co thành điểm, ảnh toàn hình là đoạn. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P05."
+    "remediation": "Phân biệt mặt phẳng chiếu với mặt phẳng chứa hình cần chiếu; không mặc định phép chiếu giữ góc vuông. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P20."
   },
   {
     "item_id": "THPT-G11-B10-KFT01",
