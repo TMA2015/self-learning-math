@@ -11,7 +11,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Tính khoảng cách từ uₙ đến 7."
+      "Tính khoảng cách \\(|u_n-7|\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -28,7 +28,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu coi giới hạn phải đạt được, giải 3/n=0 với n hữu hạn. Ôn TOP08-M01; luyện THPT-TOP08-P01."
+    "remediation": "Giới hạn không cần đạt tại chỉ số hữu hạn; \\(\\frac3n\\) luôn dương nhưng tiến về 0. Ôn TOP08-M01; luyện THPT-TOP08-P01."
   },
   {
     "item_id": "THPT-G11-CHV-B15-C02",
@@ -42,7 +42,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Với M>0, tìm n để −2n<−M."
+      "Với \\(M>0\\), tìm n để \\(-2n<-M\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -59,7 +59,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm −∞ với số rất âm cố định, chỉ ra n đủ lớn cho mọi M. Ôn TOP08-M02; luyện THPT-TOP08-P02."
+    "remediation": "Âm vô cực không phải một số âm cố định; chỉ ra n đủ lớn cho mỗi M. Ôn TOP08-M02; luyện THPT-TOP08-P02."
   },
   {
     "item_id": "THPT-G11-CHV-B15-C03",
@@ -73,7 +73,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Tìm q bằng tỉ số hai số hạng liên tiếp; kiểm |q|<1."
+      "Tìm công bội và kiểm \\(|q|<1\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -90,7 +90,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng tổng vô hạn cho mọi q, kiểm q^n→0 khi |q|<1; ôn TOP07-M15; luyện THPT-TOP07-P15."
+    "remediation": "Không dùng tổng vô hạn cho mọi q; kiểm điều kiện \\(|q|<1\\). Ôn TOP07-M15; luyện THPT-TOP07-P15."
   },
   {
     "item_id": "THPT-G11-CHV-B15-P01",
@@ -104,7 +104,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Chia cả tử và mẫu cho n²."
+      "Chia cả tử và mẫu cho \\(n^2\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -121,7 +121,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy tỉ số hệ số khi chưa xét mẫu, kiểm giới hạn mẫu 2 khác 0. Ôn TOP08-M04; luyện THPT-TOP08-P04."
+    "remediation": "Kiểm giới hạn mẫu sau khi chia khác 0. Ôn TOP08-M04; luyện THPT-TOP08-P04."
   },
   {
     "item_id": "THPT-G11-CHV-B15-P02",
@@ -135,7 +135,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Tách phần 9/n và xét khi n tăng."
+      "Xét phần \\(\\frac9n\\) khi n tăng."
     ],
     "rubric": null,
     "interaction": {
@@ -152,7 +152,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thay n=1 để tìm giới hạn, tính khoảng cách tới −4 khi n=100. Ôn TOP08-M01; luyện THPT-TOP08-P01."
+    "remediation": "Không thay n bằng 1; xét khoảng cách tới −4 khi n rất lớn. Ôn TOP08-M01; luyện THPT-TOP08-P01."
   },
   {
     "item_id": "THPT-G11-CHV-B15-P03",
@@ -183,7 +183,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhân các biểu thức chưa lấy giới hạn, kiểm từng phần 1/n tiến về 0. Ôn TOP08-M04; luyện THPT-TOP08-P04."
+    "remediation": "Áp dụng quy tắc tích khi cả hai giới hạn hữu hạn. Ôn TOP08-M04; luyện THPT-TOP08-P04."
   },
   {
     "item_id": "THPT-G11-CHV-B15-P04",
@@ -197,7 +197,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Với n>0, đưa n vào trong căn dưới dạng n²."
+      "Dùng \\(\\sqrt{n^2}=|n|\\) và n nguyên dương."
     ],
     "rubric": null,
     "interaction": {
@@ -214,7 +214,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm √(n²) với n trong mọi trường hợp, ghi |n|=n vì n>0. Ôn TOP08-M04; luyện THPT-TOP08-P04."
+    "remediation": "Không đồng nhất \\(\\sqrt{n^2}\\) với n nếu chưa biết dấu. Ôn TOP08-M04; luyện THPT-TOP08-P04."
   },
   {
     "item_id": "THPT-G11-CHV-B15-P05",
@@ -245,7 +245,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ dãy bị chặn thì phải hội tụ, so v_{2n}=1 và v_{2n−1}=−1; ôn TOP07-M15; luyện THPT-TOP07-P15."
+    "remediation": "Bị chặn không bảo đảm hội tụ; hai dãy con có giới hạn 1 và −1. Ôn TOP07-M15; luyện THPT-TOP07-P15."
   },
   {
     "item_id": "THPT-G11-CHV-B15-P06",
@@ -259,7 +259,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Xác định q=−1/2 rồi dùng công thức tổng riêng trước khi lấy giới hạn."
+      "Tìm công bội âm rồi lập tổng riêng."
     ],
     "rubric": null,
     "interaction": {
@@ -276,7 +276,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ dấu âm trong 1−q, tính S₁,S₂,S₃ để kiểm; ôn TOP07-M15; luyện THPT-TOP07-P15."
+    "remediation": "Giữ dấu của \\(q=-\\frac12\\) trong công thức và kiểm \\(|q|<1\\). Ôn TOP07-M15; luyện THPT-TOP07-P15."
   },
   {
     "item_id": "THPT-G11-CHV-B15-P07",
@@ -290,7 +290,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Tách lần rơi đầu tiên và mỗi lần bật lên rồi rơi xuống."
+      "Tách lần rơi đầu và mỗi lần bật lên rồi rơi xuống."
     ],
     "rubric": null,
     "interaction": {
@@ -307,7 +307,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ cộng độ cao bật lên một lần, vẽ đường đi lên và xuống; ôn TOP07-M15; luyện THPT-G11-CHV-B15-P06."
+    "remediation": "Tính hai lần mỗi độ cao bật lên, không tính một lần. Ôn TOP07-M15; luyện THPT-G11-CHV-B15-P06."
   },
   {
     "item_id": "THPT-G11-CHV-B16-C01",
@@ -321,7 +321,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Khử nhân tử x−3 ở x≠3."
+      "Khử nhân tử \\(x-3\\) với \\(x\\ne3\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -338,7 +338,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho không xác định tại điểm thì không có giới hạn, xét biểu thức ở các x lân cận. Ôn TOP08-M06; luyện THPT-TOP08-P06."
+    "remediation": "Không xác định tại điểm vẫn có thể có giới hạn ở lân cận. Ôn TOP08-M06; luyện THPT-TOP08-P06."
   },
   {
     "item_id": "THPT-G11-CHV-B16-C02",
@@ -352,7 +352,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Tính giới hạn riêng từ trái và phải."
+      "Tính riêng giới hạn trái và phải."
     ],
     "rubric": null,
     "interaction": {
@@ -369,7 +369,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy f(0) làm giới hạn, kiểm hai nhánh trước. Ôn TOP08-M07; luyện THPT-TOP08-P07."
+    "remediation": "Giá trị tại 0 không thay thế được hai giới hạn một phía. Ôn TOP08-M07; luyện THPT-TOP08-P07."
   },
   {
     "item_id": "THPT-G11-CHV-B16-C03",
@@ -383,7 +383,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xét dấu x−4 theo từng phía."
+      "Xét dấu \\(x-4\\) theo từng phía."
     ],
     "rubric": null,
     "interaction": {
@@ -400,7 +400,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho cả hai phía +∞, thử x=3,99 và 4,01. Ôn TOP08-M08; luyện THPT-TOP08-P08."
+    "remediation": "Nếu cho hai phía cùng dương vô cực, thử x bằng 3,99 và 4,01. Ôn TOP08-M08; luyện THPT-TOP08-P08."
   },
   {
     "item_id": "THPT-G11-CHV-B16-P01",
@@ -414,7 +414,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Nhân tử và mẫu với √(x+4)+2."
+      "Nhân với liên hợp \\(\\sqrt{x+4}+2\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -431,7 +431,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ điều kiện x≠0 khi khử, ghi rõ lân cận loại điểm. Ôn TOP08-M11; luyện THPT-TOP08-P11."
+    "remediation": "Khử x chỉ khi x khác 0; rồi lấy giới hạn. Ôn TOP08-M11; luyện THPT-TOP08-P11."
   },
   {
     "item_id": "THPT-G11-CHV-B16-P02",
@@ -445,7 +445,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Phân tích cả tử và mẫu thành nhân tử."
+      "Phân tích tử và mẫu thành nhân tử."
     ],
     "rubric": null,
     "interaction": {
@@ -462,7 +462,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu coi 0/0 là kết quả, tìm nhân tử chung rồi lấy giới hạn. Ôn TOP08-M10; luyện THPT-TOP08-P10."
+    "remediation": "Không coi dạng không xác định là kết quả; khử nhân tử chung trên lân cận loại điểm. Ôn TOP08-M10; luyện THPT-TOP08-P10."
   },
   {
     "item_id": "THPT-G11-CHV-B16-P03",
@@ -476,7 +476,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Tính hai giới hạn độc lập với f(2), sau đó mới so với giá trị tại điểm."
+      "Tính hai giới hạn một phía trước khi xét \\(f(2)\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -493,7 +493,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ tính nhánh chứa dấu ≤, xét cả nhánh x>2. Ôn TOP08-M07; luyện THPT-TOP08-P07."
+    "remediation": "Giới hạn tại 2 độc lập với giá trị gán riêng tại 2. Ôn TOP08-M07; luyện THPT-TOP08-P07."
   },
   {
     "item_id": "THPT-G11-CHV-B16-P04",
@@ -507,7 +507,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Tách √(x²)=|x|; x âm khi tiến −∞."
+      "Tách \\(\\sqrt{x^2}=|x|\\); x âm khi tiến về âm vô cực."
     ],
     "rubric": null,
     "interaction": {
@@ -524,7 +524,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy √(x²)=x, kiểm x=−100 cho thương âm. Ôn TOP08-M12; luyện THPT-TOP08-P12."
+    "remediation": "Nếu lấy căn bằng x, thử x bằng −100 để kiểm dấu thương. Ôn TOP08-M12; luyện THPT-TOP08-P12."
   },
   {
     "item_id": "THPT-G11-CHV-B16-P05",
@@ -538,7 +538,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Chia tử mẫu cho x²."
+      "Chia cả tử và mẫu cho \\(x^2\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -555,7 +555,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng hệ số của x thay x², nhận diện bậc lớn nhất. Ôn TOP08-M09; luyện THPT-TOP08-P09."
+    "remediation": "Nhận diện bậc cao nhất, không dùng hệ số của hạng tử bậc thấp. Ôn TOP08-M09; luyện THPT-TOP08-P09."
   },
   {
     "item_id": "THPT-G11-CHV-B16-P06",
@@ -569,7 +569,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xét dấu 2−x khi x tiến từ trái."
+      "Xét dấu \\(2-x\\) khi x tiến từ trái."
     ],
     "rubric": null,
     "interaction": {
@@ -586,7 +586,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu suy mẫu âm vì x<2, thử x=1,99. Ôn TOP08-M08; luyện THPT-TOP08-P08."
+    "remediation": "Khi x nhỏ hơn 2, mẫu dương; thử x bằng 1,99. Ôn TOP08-M08; luyện THPT-TOP08-P08."
   },
   {
     "item_id": "THPT-G11-CHV-B16-P07",
@@ -600,7 +600,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Viết H(t)=100−500/(t+5); giải bất phương trình H(t)≥90 với mẫu dương."
+      "Viết H dưới dạng \\(100-\\frac{500}{t+5}\\) rồi xét ngưỡng 90%."
     ],
     "rubric": null,
     "interaction": {
@@ -617,7 +617,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu coi 100 đạt được ở t hữu hạn, giải 100t/(t+5)=100. Ôn TOP08-M09; luyện THPT-TOP08-P09."
+    "remediation": "Nếu cho đạt 100% hữu hạn, kiểm phần bị trừ luôn dương. Ôn TOP08-M09; luyện THPT-TOP08-P09."
   },
   {
     "item_id": "THPT-G11-CHV-B17-C01",
@@ -631,7 +631,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Tính giới hạn rồi so với f(1)."
+      "Tính giới hạn rồi so với \\(f(1)\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -648,7 +648,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ thấy f(1) tồn tại mà kết luận liên tục, kiểm đủ ba điều kiện. Ôn TOP08-M13; luyện THPT-TOP08-P13."
+    "remediation": "Có giá trị tại điểm chưa đủ; kiểm giới hạn bằng giá trị đó. Ôn TOP08-M13; luyện THPT-TOP08-P13."
   },
   {
     "item_id": "THPT-G11-CHV-B17-C02",
@@ -679,7 +679,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm với bước nhảy, kiểm hai giới hạn một phía bằng nhau. Ôn TOP08-M14; luyện THPT-TOP08-P14."
+    "remediation": "Hai giới hạn một phía bằng nhau; lỗi nằm ở giá trị gán riêng. Ôn TOP08-M14; luyện THPT-TOP08-P14."
   },
   {
     "item_id": "THPT-G11-CHV-B17-C03",
@@ -693,7 +693,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Tại đầu trái, chỉ xét giới hạn phải."
+      "Ở đầu trái chỉ xét giới hạn từ phía trong miền."
     ],
     "rubric": null,
     "interaction": {
@@ -710,7 +710,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu yêu cầu giá trị x<−2, kiểm miền xác định của căn. Ôn TOP08-M15; luyện THPT-TOP08-P15."
+    "remediation": "Không yêu cầu hàm xác định ở bên trái −2. Ôn TOP08-M15; luyện THPT-TOP08-P15."
   },
   {
     "item_id": "THPT-G11-CHV-B17-P01",
@@ -724,7 +724,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Loại điểm làm mẫu bằng 0 rồi dùng tính liên tục của thương."
+      "Loại điểm làm mẫu bằng 0."
     ],
     "rubric": null,
     "interaction": {
@@ -741,7 +741,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ghi liên tục trên ℝ, kiểm x=1. Ôn TOP08-M16; luyện THPT-TOP08-P16."
+    "remediation": "Không kết luận liên tục trên toàn tập số thực khi mẫu bằng 0 tại 1. Ôn TOP08-M16; luyện THPT-TOP08-P16."
   },
   {
     "item_id": "THPT-G11-CHV-B17-P02",
@@ -755,7 +755,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Tính giới hạn trái 2a+1 và giới hạn phải."
+      "Tính giới hạn trái, phải và giá trị tại 2."
     ],
     "rubric": null,
     "interaction": {
@@ -772,7 +772,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn a từ nhánh không chứa a, lập điều kiện hai giới hạn bằng f(2). Ôn TOP08-M13; luyện THPT-TOP08-P13."
+    "remediation": "Lập điều kiện \\(2a+1=3\\) rồi kiểm lại. Ôn TOP08-M13; luyện THPT-TOP08-P13."
   },
   {
     "item_id": "THPT-G11-CHV-B17-P03",
@@ -786,7 +786,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Kiểm đa thức liên tục và giá trị trái dấu ở 1,2."
+      "Kiểm liên tục trên đoạn và dấu ở hai đầu."
     ],
     "rubric": null,
     "interaction": {
@@ -803,7 +803,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ nêu trái dấu, bổ sung điều kiện liên tục trên cả đoạn. Ôn TOP08-M17; luyện THPT-TOP08-P17."
+    "remediation": "Trái dấu chưa đủ nếu thiếu điều kiện liên tục trên cả đoạn. Ôn TOP08-M17; luyện THPT-TOP08-P17."
   },
   {
     "item_id": "THPT-G11-CHV-B17-P04",
@@ -817,7 +817,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Rút gọn biểu thức ở x≠4 rồi tìm giá trị cần gán."
+      "Rút gọn với \\(x\\ne4\\), rồi tìm giá trị cần gán."
     ],
     "rubric": null,
     "interaction": {
@@ -834,7 +834,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thế trực tiếp 4 cho 0/0, khử x−4 trước. Ôn TOP08-M14; luyện THPT-TOP08-P14."
+    "remediation": "Không thế trực tiếp vào thương tại 4; tính giới hạn qua biểu thức rút gọn. Ôn TOP08-M14; luyện THPT-TOP08-P14."
   },
   {
     "item_id": "THPT-G11-CHV-B17-P05",
@@ -848,7 +848,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Kiểm miền căn và giới hạn từ phía trong đoạn."
+      "Kiểm miền căn và giới hạn một phía tại hai đầu."
     ],
     "rubric": null,
     "interaction": {
@@ -865,7 +865,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu loại hai đầu vì căn bằng 0, kiểm giá trị bằng 0 hợp lệ. Ôn TOP08-M15; luyện THPT-TOP08-P15."
+    "remediation": "Căn bằng 0 được phép; xét phía trong đoạn. Ôn TOP08-M15; luyện THPT-TOP08-P15."
   },
   {
     "item_id": "THPT-G11-CHV-B17-P06",
@@ -879,7 +879,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "So giới hạn trái, phải và f(0)."
+      "So giới hạn trái, phải và \\(f(0)\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -896,7 +896,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ so hai giới hạn, kiểm cả giá trị tại điểm. Ôn TOP08-M13; luyện THPT-TOP08-P13."
+    "remediation": "Hai giới hạn bằng nhau chưa đủ nếu chưa so giá trị hàm tại điểm. Ôn TOP08-M13; luyện THPT-TOP08-P13."
   },
   {
     "item_id": "THPT-G11-CHV-B17-P07",
@@ -910,7 +910,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Tính hai giá trị đầu mút, rồi giải tích bằng 0 để đếm nghiệm."
+      "Tính hai đầu mút rồi tìm các nghiệm của tích."
     ],
     "rubric": null,
     "interaction": {
@@ -927,7 +927,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu kết luận duy nhất ngay, kiểm một đa thức có nhiều nghiệm trong đoạn nhưng hai đầu trái dấu. Ôn TOP08-M17; luyện THPT-TOP08-P17."
+    "remediation": "Định lí đổi dấu chỉ cho ít nhất một nghiệm; kiểm tất cả nghiệm để thấy không duy nhất. Ôn TOP08-M17; luyện THPT-TOP08-P17."
   },
   {
     "item_id": "THPT-G11-B15-KFT01",
