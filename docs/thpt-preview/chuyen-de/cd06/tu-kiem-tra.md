@@ -28,7 +28,7 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC06_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB edfecb3edd165e87bcb615ec4cbb66833ad52675; Q18_RECEIPT_BLOB ef1e607675b82fcbf7c7aa6005c0c1005a836d1f; AUTHORING_PR #891; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB 621afad176e6944f832746b231cbd9265e96bce2; Q18_RECEIPT_BLOB 07e70b50c23db3caaa87254e1bd0236bd76dd1c0; AUTHORING_PR #891; PUBLIC_PROJECTION_ONLY -->
 
 # Tự kiểm tra
 
@@ -36,67 +36,67 @@ Hãy tự giải đủ 16 câu sau, trước khi trở lại phần Luyện tậ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P01; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O01; NO_MASTERY; NOT_RD1 -->
 
-**Câu 1.** Một góc quay −450°. Đổi sang radian, xác định tọa độ tia cuối.
+**Câu 1.** Một góc quay \(-450^\circ\). Đổi sang radian, xác định tọa độ tia cuối.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P02; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O02; NO_MASTERY; NOT_RD1 -->
 
-**Câu 2.** Sinα=4/5, α thuộc góc phần tư II. Tìm cosα, tanα.
+**Câu 2.** \(\sin\alpha=\frac45\), \(\alpha\) thuộc góc phần tư II. Tìm \(\cos\alpha\), \(\tan\alpha\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P03; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O03; NO_MASTERY; NOT_RD1 -->
 
-**Câu 3.** Bánh xe bán kính 7 cm quay −120°. Độ dời cung có hướng và quãng đường trên vành bánh?
+**Câu 3.** Bánh xe bán kính 7 cm quay \(-120^\circ\). Độ dời cung có hướng và quãng đường trên vành bánh?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P04; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O04; NO_MASTERY; NOT_RD1 -->
 
-**Câu 4.** F(x)=sinx/(1+cosx). Tìm miền ban đầu và biểu thức rút gọn.
+**Câu 4.** \(F(x)=\frac{\sin x}{1+\cos x}\). Tìm miền ban đầu và biểu thức rút gọn.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P05; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O05; NO_MASTERY; NOT_RD1 -->
 
-**Câu 5.** α=π/3. Tìm sin(π−α), cos(π−α) và giải thích dấu.
+**Câu 5.** \(\alpha=\frac{\pi}{3}\). Tìm \(\sin(\pi-\alpha)\), \(\cos(\pi-\alpha)\) và giải thích dấu.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P06; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O06; NO_MASTERY; NOT_RD1 -->
 
-**Câu 6.** Chứng minh sin(u+v)−sin(u−v)=2cosu sinv.
+**Câu 6.** Chứng minh \(\sin(u+v)-\sin(u-v)=2\cos u\sin v\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P07; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O07; NO_MASTERY; NOT_RD1 -->
 
-**Câu 7.** Đưa cos(5x)−cos(x) về tích.
+**Câu 7.** Đưa \(\cos(5x)-\cos x\) về tích.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P08; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O08; NO_MASTERY; NOT_RD1 -->
 
-**Câu 8.** Tìm miền của y=1/(1−2sinx).
+**Câu 8.** Tìm miền của \(y=\frac1{1-2\sin x}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P09; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O09; NO_MASTERY; NOT_RD1 -->
 
-**Câu 9.** Tìm chu kỳ dương cơ bản của f(x)=sin2x+sin4x.
+**Câu 9.** Tìm chu kỳ dương cơ bản của \(f(x)=\sin(2x)+\sin(4x)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P10; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O10; NO_MASTERY; NOT_RD1 -->
 
-**Câu 10.** h(t)=3−2cos(πt/4). Tìm chu kỳ, tập giá trị, h(0),h(4).
+**Câu 10.** \(h(t)=3-2\cos(\frac{\pi t}{4})\). Tìm chu kỳ, tập giá trị, \(h(0)\), \(h(4)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P11; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O11; NO_MASTERY; NOT_RD1 -->
 
-**Câu 11.** y=tan(3x): miền xác định và chu kỳ cơ bản?
+**Câu 11.** \(y=\tan(3x)\): miền xác định và chu kỳ cơ bản?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P12; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O12; NO_MASTERY; NOT_RD1 -->
 
-**Câu 12.** Giải cos(3x)=−1/2 trên ℝ.
+**Câu 12.** Giải \(\cos(3x)=-\frac12\) trên \(\mathbb R\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P13; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O13; NO_MASTERY; NOT_RD1 -->
 
-**Câu 13.** Giải cot(2x)=1 và kiểm điều kiện.
+**Câu 13.** Giải \(\cot(2x)=1\) và kiểm điều kiện.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P14; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O14; NO_MASTERY; NOT_RD1 -->
 
-**Câu 14.** Giải sinx/(1−cosx)=0 trên ℝ.
+**Câu 14.** Giải \(\frac{\sin x}{1-\cos x}=0\) trên \(\mathbb R\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P15; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O15; NO_MASTERY; NOT_RD1 -->
 
-**Câu 15.** Giải cosx=−1/2 trên [−π,π).
+**Câu 15.** Giải \(\cos x=-\frac12\) trên \([-\pi;\pi)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P16; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O16; NO_MASTERY; NOT_RD1 -->
 
-**Câu 16.** Mô hình h(t)=20+6sin(πt/12) với 0≤t≤24. Tìm chu kỳ, max/min và khoảng h>20.
+**Câu 16.** Mô hình \(h(t)=20+6\sin(\frac{\pi t}{12})\) với \(0\le t\le24\). Tìm chu kỳ, giá trị lớn nhất/nhỏ nhất và khoảng \(h(t)>20\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
