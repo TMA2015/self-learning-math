@@ -16,7 +16,7 @@ Trong hình, hãy chỉ rõ M ở ngoài \((P)\), H là chân của \(MH\perp(P)
 
 ### 1.1. Khoảng cách từ điểm đến đường thẳng
 
-**Ý nghĩa trước công thức.** Hãy tưởng tượng tìm con đường ngắn nhất từ một điểm A đến một thanh thẳng d. Nếu chọn một điểm X bất kì trên d thì AX là một đường xiên. Chỉ khi hạ AH vuông góc d mới có tam giác AHX vuông ở H, từ đó \(AX^2=AH^2+HX^2\). Vì \(HX^2\ge0\), đoạn thẳng ngắn nhất là **AH** và chỉ bằng AX khi X=H. Đây là lí do định nghĩa khoảng cách gắn với phép chiếu vuông góc, không phải một quy ước tùy ý.
+**Ý nghĩa trước công thức.** Hãy tưởng tượng tìm con đường ngắn nhất từ một điểm A đến một thanh thẳng d. Với A nằm ngoài d, hạ AH vuông góc d tại H. Nếu \(X\in d\) và \(X\ne H\), tam giác AHX vuông ở H nên \(AX^2=AH^2+HX^2>AH^2\). Do đó đoạn ngắn nhất là AH; đẳng thức \(AX=AH\) chỉ xảy ra khi \(X=H\). Nếu A thuộc d, khoảng cách bằng 0.
 
 <!-- LESSON_ID: TOP17-M01; OUTCOME_ID: TOP17-O01; S1_ORIGINAL_OUTCOME: G11-B26-POINT_LINE -->
 
@@ -130,7 +130,7 @@ Nếu dùng bất kì điểm trên d mà chưa chứng minh \(d\parallel(P)\), 
 
 **Đề bài:** Cho hai mặt \((P):z=0\) và \((Q):z=5\). Tính khoảng cách giữa hai mặt và chứng minh ngắn nhất.
 
-**Lời giải:** Hai mặt phân biệt có cùng phương pháp tuyến \((0;0;1)\), do đó song song. Với \(A(1;2;5)\in Q\), \(H(1;2;0)\in P\), \(AH=5\). Với mọi \(B(x;y;0)\in P\), \(AB^2=(x-1)^2+(y-2)^2+25\ge25\), nên đoạn AH vuông góc chung cho khoảng cách 5. Mọi điểm của mặt \((Q)\) đều có độ cao 5 so với \((P)\).
+**Lời giải:** Hai mặt phân biệt có cùng phương pháp tuyến \((0;0;1)\), do đó song song. Với \(A(1;2;5)\in(Q)\), \(H(1;2;0)\in(P)\), \(AH=5\). Với mọi \(B(x;y;0)\in(P)\), \(AB^2=(x-1)^2+(y-2)^2+25\ge25\), nên đoạn AH vuông góc chung cho khoảng cách 5. Mọi điểm của mặt \((Q)\) đều có độ cao 5 so với \((P)\).
 
 **Vận dụng**
 
@@ -252,7 +252,7 @@ Hãy tìm cùng một **diện tích đáy S** và **chiều cao vuông góc h**
 
 **Ví dụ**
 
-**Đề bài:** Lăng trụ xiên có diện tích đáy 18 cm², chiều cao vuông góc 7 cm và cạnh bên 10 cm. Tính thể tích.
+**Đề bài:** Lăng trụ xiên có diện tích đáy \(18\,\mathrm{cm}^2\), chiều cao vuông góc 7 cm và cạnh bên 10 cm. Tính thể tích.
 
 **Lời giải:** Lăng trụ xiên vẫn có tiết diện song song đáy bằng nhau, nên \(V=Sh\) với h là chiều cao vuông góc hai đáy. Ta được \(V=18\cdot7=126\,\mathrm{cm}^3\); cạnh bên 10 cm nghiêng và không được thay vào h.
 
@@ -274,7 +274,7 @@ Nếu lấy cạnh bên của lăng trụ xiên làm h, đọc **Kiến thức 2
 
 ### 2.2. Thể tích khối chóp
 
-**Vì sao khối chóp có hệ số 1/3?** Khác lăng trụ, các lát cắt song song đáy của chóp càng lên gần đỉnh càng nhỏ. Có thể tưởng tượng chia một lăng trụ thành ba khối chóp bằng thể tích (trong trường hợp ghép thích hợp), hoặc suy bằng nguyên lí thể tích từ những thiết diện tương ứng. Kết luận cho khối chóp là \(V=\frac13Sh\). Nếu thay bằng Sh, ta đã tính như lăng trụ và kết quả gấp ba thể tích thực. Không cần học tích phân mới hiểu được sự khác biệt về các lát cắt.
+**Vì sao khối chóp có hệ số \(\frac13\)?** Khác lăng trụ, các lát cắt song song đáy của chóp càng lên gần đỉnh càng nhỏ. Có thể tưởng tượng chia một lăng trụ tam giác thành ba khối tứ diện bằng thể tích, hoặc suy bằng nguyên lí thể tích từ những thiết diện tương ứng. Kết luận cho khối chóp là \(V=\frac13Sh\). Nếu thay bằng \(Sh\), ta đã tính như lăng trụ và kết quả gấp ba thể tích thực. Không cần học tích phân mới hiểu được sự khác biệt về các lát cắt.
 
 <!-- LESSON_ID: TOP17-M08; OUTCOME_ID: TOP17-O08; S1_ORIGINAL_OUTCOME: G11-B27-PYRAMID_VOLUME -->
 
@@ -284,7 +284,7 @@ Nếu lấy cạnh bên của lăng trụ xiên làm h, đọc **Kiến thức 2
 
 **Ví dụ**
 
-**Đề bài:** Khối chóp có diện tích đáy 18 cm² và chiều cao vuông góc 7 cm. Tính thể tích, so với lăng trụ cùng đáy/cao.
+**Đề bài:** Khối chóp có diện tích đáy \(18\,\mathrm{cm}^2\) và chiều cao vuông góc 7 cm. Tính thể tích, so với lăng trụ cùng đáy và chiều cao.
 
 **Lời giải:** Lăng trụ có \(V=18\cdot7=126\,\mathrm{cm}^3\). Khối chóp có lát cắt thu nhỏ tới đỉnh, áp dụng công thức \(V=\frac13\cdot18\cdot7=42\,\mathrm{cm}^3\), bằng đúng một phần ba lăng trụ. Không dùng Sh cho chóp.
 
@@ -296,11 +296,11 @@ Chóp có \(S_{\text{đáy}}=12\,\mathrm{cm}^2\), \(h=5\,\mathrm{cm}\); thể t�
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-20 cm³; phải có hệ số 1/3.
+\(20\,\mathrm{cm}^3\); phải có hệ số \(\frac13\).
 
 **Kiểm lỗi**
 
-Nếu tính thể tích chóp bằng công thức lăng trụ, đọc **Kiến thức 2.2**: chóp có cùng đáy và chiều cao chỉ bằng **một phần ba** thể tích lăng trụ. Thử **Bài luyện 20** và **Bài luyện 30**, ghi rõ 1/3.
+Nếu tính thể tích chóp bằng công thức lăng trụ, đọc **Kiến thức 2.2**: chóp có cùng đáy và chiều cao chỉ bằng **một phần ba** thể tích lăng trụ. Thử **Bài luyện 20** và **Bài luyện 30**, ghi rõ hệ số \(\frac13\).
 
 </details>
 
@@ -332,7 +332,7 @@ Hộp chữ nhật có ba kích thước 2 cm, 5 cm và 0,3 dm. Đổi về cùn
 
 **Kiểm lỗi**
 
-Nếu lẫn diện tích bề mặt với thể tích hình hộp, đọc **Kiến thức 2.3**: thể tích bằng tích ba kích thước vuông góc. Thử **Bài luyện 21** và **Bài luyện 31**, ghi cm³ hoặc m³.
+Nếu lẫn diện tích bề mặt với thể tích hình hộp, đọc **Kiến thức 2.3**: thể tích bằng tích ba kích thước vuông góc. Thử **Bài luyện 21** và **Bài luyện 31**, ghi đơn vị \(\mathrm{cm}^3\) hoặc \(\mathrm m^3\).
 
 </details>
 
@@ -349,6 +349,7 @@ Nếu lẫn diện tích bề mặt với thể tích hình hộp, đọc **Ki�
 **Tự suy công thức bằng hai hình chóp đồng dạng.** Xét chóp cụt có đáy lớn diện tích \(S>0\), đáy nhỏ diện tích \(S'>0\), chiều cao vuông góc \(h>0\), và giả thiết mặt cắt song song đáy nên hai đáy đồng dạng. Gọi H là chiều cao chóp lớn trước khi cắt, H' là chiều cao chóp nhỏ bị cắt. Nếu tỉ số chiều dài hai đáy là \(k=\sqrt{\frac{S'}S}\) với \(0<k<1\), thì \(H'=kH\) và \(h=H-H'=(1-k)H\).
 
 Thể tích phần còn lại bằng **thể tích chóp lớn trừ chóp nhỏ**, chứ không phải lấy trung bình cộng diện tích hai đáy rồi nhân chiều cao:
+
 \[
 V=\frac{SH}{3}-\frac{S'H'}{3}
  =\frac{SH}{3}(1-k^3)
@@ -356,6 +357,7 @@ V=\frac{SH}{3}-\frac{S'H'}{3}
  =\frac{Sh}{3}(1+k+k^2)
  =\frac h3\bigl(S+\sqrt{SS'}+S'\bigr).
 \]
+
 Ở bước cuối, dùng \(Sk=\sqrt{SS'}\), \(Sk^2=S'\). **Giới hạn áp dụng:** đây là khối chóp cụt tạo bằng **một mặt phẳng song song đáy**, không phải mọi khối có hai mặt đáy song song. Nếu hai diện tích bằng nhau thì công thức cho \(Sh\) của lăng trụ như trường hợp giới hạn; nếu một đáy co về 0 thì cho \(\frac13Sh\) của khối chóp.
 
 **Ví dụ minh họa.** Chóp cụt đều có hai đáy vuông cạnh 8 cm và 4 cm, chiều cao 6 cm. Tỉ số chiều dài \(k=\frac12\), diện tích \(S=64\,\mathrm{cm}^2,\ S'=16\,\mathrm{cm}^2\), \(\sqrt{SS'}=32\,\mathrm{cm}^2\). Suy \(V=\frac63(64+32+16)=224\,\mathrm{cm}^3\). Kiểm ngược bằng phép trừ chóp: chóp lớn cao \(H=\frac6{1-\frac12}=12\,\mathrm{cm}\), chóp nhỏ cao 6 cm; hiệu \(\frac13(64\cdot12-16\cdot6)=224\,\mathrm{cm}^3\). Hai cách phải bằng nhau nếu đặt đúng k.
@@ -383,14 +385,14 @@ Nếu thiếu \(\sqrt{SS'}\), nhầm diện tích đáy với tỉ số cạnh h
 </details>
 
 
-Để tự quan sát thể tích chóp cụt thay đổi thế nào, em giữ cạnh đáy lớn \(a=6\) cm và chiều cao vuông góc \(h=4\) cm. Cạnh đáy nhỏ bằng \(6k\) với \(0\le k\le1\), do đó \(S=36\), \(S'=36k^2\) và \(\sqrt{SS'}=36k\) (cm²). Công thức thể tích cho \(V=\frac43(36+36k+36k^2)=48(1+k+k^2)\) cm³.
+Để tự quan sát thể tích chóp cụt thay đổi thế nào, em giữ cạnh đáy lớn \(a=6\,\mathrm{cm}\) và chiều cao vuông góc \(h=4\,\mathrm{cm}\). Cạnh đáy nhỏ bằng \(6k\,\mathrm{cm}\) với \(0\le k\le1\), do đó \(S=36,\ S'=36k^2,\ \sqrt{SS'}=36k\) (đơn vị: xăng-ti-mét vuông). Công thức thể tích cho \(V=\frac43(36+36k+36k^2)=48(1+k+k^2)\) (đơn vị: xăng-ti-mét khối).
 
 **Vận dụng** Em hãy tự tính \(V\) khi \(k=0\), \(k=\frac12\) và \(k=1\). Kết quả thay đổi theo chiều nào khi \(k\) tăng? Thử làm trước rồi tự mở Đối chiếu.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Khi \(k=0\), \(V=48\) cm³ (giới hạn hình chóp); khi \(k=\frac12\), \(V=84\) cm³ (chóp cụt); khi \(k=1\), \(V=144\) cm³ (giới hạn lăng trụ). Kết quả tăng khi cạnh đáy nhỏ tăng trong điều kiện đáy lớn và chiều cao cố định.
+Khi \(k=0\), \(V=48\,\mathrm{cm}^3\) (giới hạn hình chóp); khi \(k=\frac12\), \(V=84\,\mathrm{cm}^3\) (chóp cụt); khi \(k=1\), \(V=144\,\mathrm{cm}^3\) (giới hạn lăng trụ). Kết quả tăng khi cạnh đáy nhỏ tăng trong điều kiện đáy lớn và chiều cao cố định.
 
 **Nếu làm sai:** Kiểm lại diện tích đáy nhỏ \(36k^2\) và căn tích hai diện tích \(36k\); đừng lấy \(S'=36k\).
 
@@ -400,7 +402,7 @@ Khi \(k=0\), \(V=48\) cm³ (giới hạn hình chóp); khi \(k=\frac12\), \(V=84
 
 ### 2.5. Thể tích trong tình huống thực tế
 
-**Bài toán thực tế bắt đầu từ phân loại khối.** Một thùng hàng hình hộp, một mái chóp hay một phễu chóp cụt không cùng công thức. Hãy làm theo thứ tự: nhận dạng hình, xác định đáy, vẽ chiều cao vuông góc, đổi đơn vị, rồi thay số. Một đáp án “60 m²” cho thể tích là dấu hiệu sai ngay cả khi phép nhân đúng; và lấy cạnh xiên làm h có thể khiến đáp án quá lớn.
+**Bài toán thực tế bắt đầu từ phân loại khối.** Một thùng hàng hình hộp, một mái chóp hay một phễu chóp cụt không cùng công thức. Hãy làm theo thứ tự: nhận dạng hình, xác định đáy, vẽ chiều cao vuông góc, đổi đơn vị, rồi thay số. Một đáp án “\(60\,\mathrm m^2\)” cho thể tích là dấu hiệu sai ngay cả khi phép nhân đúng; và lấy cạnh xiên làm h có thể khiến đáp án quá lớn.
 
 <!-- LESSON_ID: TOP17-M11; OUTCOME_ID: TOP17-O11; S1_ORIGINAL_OUTCOME: G11-B27-VOLUME_APPLICATION -->
 
@@ -416,17 +418,17 @@ Khi \(k=0\), \(V=48\) cm³ (giới hạn hình chóp); khi \(k=\frac12\), \(V=84
 
 **Vận dụng**
 
-Khối lăng trụ có diện tích đáy 6 m², cao 10 m. Thể tích?
+Khối lăng trụ có diện tích đáy \(6\,\mathrm m^2\), cao 10 m. Thể tích?
 
 <!-- ITEM_ID: THPT-TOP17-T11; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O11 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-60 m³, không phải 60 m².
+\(60\,\mathrm m^3\), không phải \(60\,\mathrm m^2\).
 
 **Kiểm lỗi**
 
-Nếu quên hệ số 1/2 cho đáy tam giác vuông hoặc đổi cm³ sang lít sai, đọc **Kiến thức 2.5**: tính diện tích đáy trước, nhân chiều cao vuông góc rồi mới đổi đơn vị. Thử **Bài luyện 23** và **Bài luyện 33**.
+Nếu quên hệ số \(\frac12\) cho đáy tam giác vuông hoặc đổi xăng-ti-mét khối sang lít sai, đọc **Kiến thức 2.5**: tính diện tích đáy trước, nhân chiều cao vuông góc rồi mới đổi đơn vị. Thử **Bài luyện 23** và **Bài luyện 33**.
 
 </details>
 
