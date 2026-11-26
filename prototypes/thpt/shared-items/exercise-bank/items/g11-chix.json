@@ -288,16 +288,16 @@
   {
     "item_id": "THPT-G11-CHIX-B31-P05",
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
-    "stem": "Hàm \\(f(x)=|x-1|\\) liên tục tại 1. Có đạo hàm tại 1 không?",
-    "answer_key": "Không.",
-    "worked_solution": "Vì \\(f(1)=0\\), thương sai phân tại 1 là \\(\\frac{|h|}h\\). Khi h âm, thương bằng −1; khi h dương, thương bằng 1. Hai giới hạn một phía khác nhau nên đạo hàm tại 1 không tồn tại.",
+    "stem": "Xét hàm số \\(f(x)=\\begin{cases}x^2,&x\\le1,\\\\2x-1,&x>1.\\end{cases}\\) Hàm có liên tục tại 1 không? Dùng định nghĩa đạo hàm để xét khả năng có đạo hàm tại 1. Giải thích vì sao việc đổi công thức tại 1 không tự nó quyết định hàm có đạo hàm hay không.",
+    "answer_key": "Hàm liên tục tại 1 và có \\(f'(1)=2\\).",
+    "worked_solution": "Ta có \\(f(1)=1\\). Giới hạn từ trái của \\(x^2\\) và từ phải của \\(2x-1\\) tại 1 đều bằng 1, nên f liên tục tại 1. Với \\(h<0\\), thương sai phân là \\(\\frac{(1+h)^2-1}{h}=2+h\\), tiến tới 2. Với \\(h>0\\), thương sai phân là \\(\\frac{2(1+h)-1-1}{h}=2\\). Hai giới hạn một phía bằng nhau và hữu hạn, nên \\(f'(1)=2\\). Đổi công thức không nhất thiết tạo góc nhọn; cần kiểm chính các thương sai phân.",
     "skill_ids": [
       "G11-B31-CONTINUITY_NECESSARY"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xét thương |h|/h từ hai phía."
+      "Kiểm giá trị và giới hạn hàm ở 1; tách thương sai phân theo dấu h."
     ],
     "rubric": null,
     "interaction": {
@@ -314,7 +314,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy cùng dấu cho hai phía, tách |h| theo dấu. Ôn TOP09-M05; luyện THPT-TOP09-P05."
+    "remediation": "Nếu kết luận không có đạo hàm chỉ vì hai nhánh có biểu thức khác nhau, tính riêng giới hạn thương sai phân ở hai phía. Ôn TOP09-M05; luyện THPT-TOP09-P05."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C06",
