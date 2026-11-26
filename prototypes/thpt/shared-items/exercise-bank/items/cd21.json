@@ -14,7 +14,7 @@
       "TOP21-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Gạch dưới điều kiện đã biết; chỉ đếm trong nhóm tam giác."
     ],
@@ -44,7 +44,7 @@
       "TOP21-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Viết A, B và giao; kiểm xác suất của biến cố điều kiện trước khi chia."
     ],
@@ -75,7 +75,7 @@
       "TOP21-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Ghi số thẻ mỗi màu còn lại sau từng lượt."
     ],
@@ -105,7 +105,7 @@
       "TOP21-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tính \\(P(A)\\), rồi lọc các kết quả chẵn trong B và trong C."
     ],
@@ -135,7 +135,7 @@
       "TOP21-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Tính từng đường nguồn–hỏng rồi cộng; hai nguồn có phủ hết kho không?"
     ],
@@ -165,7 +165,7 @@
       "TOP21-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tính tổng các đường tạo ra nhãn xanh, rồi chia đường H–xanh cho tổng đó."
     ],
@@ -195,7 +195,7 @@
       "TOP21-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Vẽ hai nhánh R,S và tách mỗi nhánh thành thành công/thất bại."
     ],
@@ -225,7 +225,7 @@
       "TOP21-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Lập bảng cho mô hình đầu; với mô hình mới dùng xác suất đường đi thay số đếm."
     ],
