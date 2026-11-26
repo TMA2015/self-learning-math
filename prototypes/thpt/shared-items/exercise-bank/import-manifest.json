@@ -21033,6 +21033,132 @@
       },
       "remaining": "Separate whole-bank source-owner/linkage and diversity/coverage, FirstTry, standalone public selfcheck, Written references and rubric review; interaction conversion and cutover not authorized in this batch",
       "release_authorization": false
+    },
+    "coverage_linkage_cp105": {
+      "scope": "First quality-depth and linkage batch after CP104: G12 320 SGK formative + 8 CD21 practice normalized-stem scan; manual confirmed duplicates, CD20/21 targeted reuse and difficulty review",
+      "baseline_commit": "1ed38945aed44459964008b756f220f21d13059d",
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "author_decision": "Preserve all historical IDs, roles and existing assessment placements. Add only optional formative reuse, not all same-skill items; use existing numeric difficulty scale 1–3 from G12 probability as author classification, not new standard. No problem_type_id invented where taxonomy absent.",
+      "scan": {
+        "g12_sgk_records": 320,
+        "cd21_records": 8,
+        "normalized_stem_exact_duplicate_pairs": 1,
+        "manual_semantic_duplicate_pairs_confirmed": 2,
+        "distinct_g12_skill_tags": 120,
+        "g12_single_item_skill_tags": 9,
+        "g12_missing_difficulty": 104,
+        "interpretation": "Tag counts are triage, not full outcome coverage verdict; exact-text scan cannot prove structural diversity."
+      },
+      "item_changes": [
+        {
+          "id": "THPT-G12-B13-C02",
+          "path": "items/g12-chiv.json",
+          "before": "0bb0a25b6e3f81d9bdc0247ef92b90db3833144e",
+          "after": "cb22f2ab6c3879cc5c8f0aa10419f1cbd5de86d6",
+          "reason": "B12-C05 kept as signed-area introductory linear case; B13-C02 now nonlinear x²−4 on [0;3], split at x=2, areas 16/3 and 7/3, total 23/3. B13-O02 retained, CD11 placement retained."
+        },
+        {
+          "id": "THPT-G12-B16-P04",
+          "path": "items/g12-chv.json",
+          "before": "902b2b0d994f23629c185caf633bbf6dc9132254",
+          "after": "bbed415b83ad8dd25e7152086129630d27a9f02d",
+          "reason": "B16-C02 kept direction-only concept; B16-P04 now uses point and direction, distinguishes parallel distinct versus contained, angle 0°, z=3. B16-O04 retained, CD18 placement retained."
+        },
+        {
+          "id": "THPT-G11-CHVIII-B29-P04",
+          "path": "items/g11-chviii.json",
+          "before": "b075c4d98ca1c01de6a515d60b19589857a59ce6",
+          "after": "cf67c2a984f8063ec8652e91670e85040f963f37",
+          "reason": "Correct remediation destination to CD20 2.3 and 1.3, P14; math unchanged."
+        }
+      ],
+      "difficulty": {
+        "cd20": {
+          "items": 17,
+          "levels": [
+            1,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1,
+            2,
+            3
+          ],
+          "before": "a18c5d407a8c85597fd10b95a85b4cad40b44901",
+          "after": "9765c4bab1c63b65f8430235a3b443fa7101bb79"
+        },
+        "cd21": {
+          "items": 8,
+          "levels": [
+            1,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            3
+          ],
+          "before": "a2f860cdc7705fa25cbd06325420e3b4bc608a59",
+          "after": "82e776b745c2ad6655fb2b84fda8410d07c34182"
+        }
+      },
+      "optional_reuse": {
+        "cd20": {
+          "before": "4ffb1fc2e952719034b0ae70c75ffc4ca1ce2635",
+          "after": "172504b24ac3fef13ece24eff7119bc0f4d809a7",
+          "placements_added": 5,
+          "ids": [
+            "THPT-G10-B26-P05",
+            "THPT-G10-B27-P05",
+            "THPT-G11-CHVIII-B29-P02",
+            "THPT-G11-CHVIII-B29-P04",
+            "THPT-G11-CHVIII-B30-P07"
+          ],
+          "reason": "insufficient model assumptions, unordered outcome weights, inconsistent disjoint data, complement of union, three jointly independent trials"
+        },
+        "cd21": {
+          "before": "39c44212f3ecb8f3c17c5bcce8ed53ac8d17cd00",
+          "after": "42bb6d775f6ed286fc1284ef7211131c1b183759",
+          "placements_added": 6,
+          "ids": [
+            "THPT-G12-B18-P05",
+            "THPT-G12-B18-C06",
+            "THPT-G12-B18-P04",
+            "THPT-G12-B19-A01",
+            "THPT-G12-B19-P06",
+            "THPT-G12-B19-A07"
+          ],
+          "reason": "table conditional denominator, general multiplication, disjoint vs independent, inverse total probability, three-source partition, combined total and Bayes"
+        }
+      },
+      "verification": {
+        "unique_items_added": 0,
+        "placements_delta": 11,
+        "existing_placements_preserved": true,
+        "collection_order_unique": true,
+        "all_new_references_resolve": true,
+        "changed_item_records": 28,
+        "mathematical_task_changes": 2,
+        "remediation_only": 1,
+        "difficulty_only": 25,
+        "exact_diff_pre_manifest": 7,
+        "unchanged_assessment_and_written": true,
+        "source_basis": "B13/B16 current knowledge; CD20/CD21 current knowledge and practice, 25 original worked solutions and 11 selected SGK items read; independent arithmetic for changed tasks.",
+        "verdict": "AUTHOR_SELF_VERIFIED scoped changes; not whole-bank diversity/coverage or Q18 certification"
+      },
+      "remaining": "Continue G12 coverage and classify 104 missing difficulty tags based on actual tasks; check nine single-tag skills against knowledge/FirstTry/Written rather than quotas. Extend structural-family review to G10/G11 and remaining Topics; separate FirstTry, Written, independent public selfcheck; interaction conversion after coverage and owner-approved assessment policy. Preserve CP104 phase totals and historical global reconciliation baseline counts; current placement delta +11.",
+      "release_authorization": false
     }
   }
 }
