@@ -9382,7 +9382,7 @@
     "content_version": "TOP08-BANK-CP74-20261126-KFT03",
     "stem": "\\(\\lim_{n\\to\\infty}(\\frac32)^n\\) là gì?",
     "answer_key": "\\(+\\infty\\).",
-    "worked_solution": "\\(+\\infty\\) vì \\(\\frac32>1\\). Chẳng hạn, theo bất đẳng thức Bernoulli với n nguyên dương, \\((1+\\frac12)^n\\ge1+\\frac n2\\to+\\infty\\).\n\nNếu nhầm \\(q\\) âm với không hội tụ, so \\((-\\frac14)^n\\) và \\((-1)^n\\) qua \\(|q|\\).\n\n\n**Kiểm lỗi**\n\nNếu nhầm lũy thừa cơ số âm có độ lớn nhỏ hơn 1 với dãy dao động không hội tụ, đọc **Kiến thức 1.3** rồi giải **Bài 7** và so sánh **Bài 4**. Hãy xét \\(|q|^n\\) trước, sau đó mới xét dấu.",
+    "worked_solution": "\\(+\\infty\\) vì \\(\\frac32>1\\). Theo tính chất giới hạn của dãy lũy thừa, với \\(q>1\\), \\(q^n\\to+\\infty\\). Ở đây \\(q=\\frac32\\), nên dãy vượt mọi ngưỡng dương khi n đủ lớn.\n\nNếu nhầm \\(q\\) âm với không hội tụ, so \\((-\\frac14)^n\\) và \\((-1)^n\\) qua \\(|q|\\).\n\n\n**Kiểm lỗi**\n\nNếu nhầm lũy thừa cơ số âm có độ lớn nhỏ hơn 1 với dãy dao động không hội tụ, đọc **Kiến thức 1.3** rồi giải **Bài 7** và so sánh **Bài 4**. Hãy xét \\(|q|^n\\) trước, sau đó mới xét dấu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B15-FINITE_SEQUENCE"
