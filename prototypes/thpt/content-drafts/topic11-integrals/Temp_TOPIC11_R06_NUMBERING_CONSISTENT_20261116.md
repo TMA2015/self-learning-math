@@ -1855,85 +1855,85 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-W01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O15; SINGLE_ITEM_ID -->
 
-**Bài 74.** Tính diện tích hình giới hạn bởi y=9−x², Ox, x=0 và x=3; kiểm dấu.
+**Bài 74.** Tính diện tích hình giới hạn bởi \(y=9-x^2\), Ox, \(x=0\) và \(x=3\); kiểm dấu.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 **Đáp án:** 18 đơn vị².
 
-**Lời giải:** 9−x²≥0 trên [0,3]; S=[9x−x³/3]_0³=27−9=18.
+**Lời giải:** \(9-x^2\ge0\) trên \([0;3]\); \(S=\left[9x-\frac{x^3}3\right]_0^3=27-9=18\).
 
 **Rubric tự luận /5:** 1đ chứng minh dấu; 1đ mô tả hình/cận; 2đ tích phân; 1đ đơn vị/kết luận.
 
-**Nếu làm sai:** Hàm √x có miền x≥0, ∫√x dx=(2/3)x^(3/2)+C.
+**Nếu làm sai:** Hàm \(\sqrt x\) có miền \(x\ge0\), \(\int\sqrt x\,\mathrm dx=\frac23x^{3/2}+C\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-A01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O15; SINGLE_ITEM_ID -->
 
-**Bài 75.** Một mép đất có chiều cao y=2+x (m) trên x từ 0 tới 3 (m). Diện tích dưới mép?
+**Bài 75.** Một mép đất có chiều cao \(y=2+x\) (m) trên x từ 0 tới 3 (m). Diện tích dưới mép?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 21/2 m².
+**Đáp án:** \(\frac{21}2\) m².
 
-**Lời giải:** \(\int_{0}^{3} (2+x)\,\mathrm dx\)=6+9/2=21/2. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.
+**Lời giải:** \(\int_0^3(2+x)\,\mathrm dx=6+\frac92=\frac{21}2\). Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.
 
-**Nếu làm sai:** Hàm √x có miền x≥0, ∫√x dx=(2/3)x^(3/2)+C.
+**Nếu làm sai:** Hàm \(\sqrt x\) có miền \(x\ge0\), \(\int\sqrt x\,\mathrm dx=\frac23x^{3/2}+C\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-P01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O15; SINGLE_ITEM_ID -->
 
-**Bài 76.** Diện tích dưới y=3x trên [0,2]?
+**Bài 76.** Diện tích dưới \(y=3x\) trên \([0;2]\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 6 đơn vị².
 
-**Lời giải:** S=[3x²/2]_0²=6. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.
+**Lời giải:** \(S=\left[\frac{3x^2}2\right]_0^2=6\). Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.
 
-**Nếu làm sai:** Hàm √x có miền x≥0, ∫√x dx=(2/3)x^(3/2)+C.
+**Nếu làm sai:** Hàm \(\sqrt x\) có miền \(x\ge0\), \(\int\sqrt x\,\mathrm dx=\frac23x^{3/2}+C\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-C01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O15; SINGLE_ITEM_ID -->
 
-**Bài 77.** Diện tích dưới y=x² trên [0,2]?
+**Bài 77.** Diện tích dưới \(y=x^2\) trên \([0;2]\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 8/3 đơn vị².
+**Đáp án:** \(\frac83\) đơn vị².
 
-**Lời giải:** S=\(\int_{0}^{2} x^{2}\,\mathrm dx\)=8/3. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.
+**Lời giải:** \(S=\int_0^2 x^2\,\mathrm dx=\frac83\). Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.
 
-**Nếu làm sai:** Hàm √x có miền x≥0, ∫√x dx=(2/3)x^(3/2)+C.
+**Nếu làm sai:** Hàm \(\sqrt x\) có miền \(x\ge0\), \(\int\sqrt x\,\mathrm dx=\frac23x^{3/2}+C\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P15; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O15; SINGLE_ITEM_ID -->
 
-**Bài 78.** Tính diện tích dưới y=√x trên [0,4].
+**Bài 78.** Tính diện tích dưới \(y=\sqrt x\) trên \([0;4]\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 16/3 đơn vị².
+**Đáp án:** \(\frac{16}3\) đơn vị².
 
-**Lời giải:** √x=x^{1/2} liên tục, không âm trên [0,4]; S=∫₀⁴x^{1/2}dx=[(2/3)x^{3/2}]₀⁴=(2/3)·8=16/3 đơn vị².
+**Lời giải:** \(\sqrt x=x^{1/2}\) liên tục, không âm trên \([0;4]\); \(S=\int_0^4 x^{1/2}\,\mathrm dx=\left[\frac23x^{3/2}\right]_0^4=\frac23\cdot8=\frac{16}3\) đơn vị².
 
-**Nếu làm sai:** Nếu tính nhầm ∫√x, hãy tăng số mũ từ1/2 thành3/2 rồi chia3/2.
+**Nếu làm sai:** Nếu tính nhầm \(\int\sqrt x\,\mathrm dx\), hãy tăng số mũ từ \(\frac12\) thành \(\frac32\) rồi chia \(\frac32\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-W02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O16; SINGLE_ITEM_ID -->
 
-**Bài 79.** Diện tích giữa y=x²−4 và Ox trên [−3,3] là bao nhiêu?
+**Bài 79.** Diện tích giữa \(y=x^2-4\) và Ox trên \([-3;3]\) là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** 46/3 đơn vị².
+**Đáp án:** \(\frac{46}3\) đơn vị².
 
-**Lời giải:** Nghiệm ±2; ngoài [−3,−2],[2,3] mỗi phần7/3; giữa [−2,2] là32/3; tổng46/3.
+**Lời giải:** Nghiệm \(\pm2\); ngoài \([-3;-2]\),\([2;3]\) mỗi phần \(\frac73\); giữa \([-2;2]\) là \(\frac{32}3\); tổng \(\frac{46}3\).
 
 **Rubric tự luận /5:** 1đ nghiệm/đổi dấu; 1đ chia ba đoạn; 2đ tích phân mỗi vùng; 1đ cộng kết quả đúng.
 
@@ -1943,13 +1943,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-A02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O16; SINGLE_ITEM_ID -->
 
-**Bài 80.** Diện tích giữa y=2x−2 và Ox trên [0,2]?
+**Bài 80.** Diện tích giữa \(y=2x-2\) và Ox trên \([0;2]\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 2 đơn vị².
 
-**Lời giải:** Chia tại x=1: hai tam giác mỗi1.
+**Lời giải:** Chia tại \(x=1\): hai tam giác mỗi1.
 
 **Nếu làm sai:** Vùng dưới Ox vẫn góp diện tích dương, chia tại nghiệm đổi dấu.
 
@@ -1957,13 +1957,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-P02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O16; SINGLE_ITEM_ID -->
 
-**Bài 81.** Tính diện tích giữa y=x−2 và Ox trên [0,4].
+**Bài 81.** Tính diện tích giữa \(y=x-2\) và Ox trên \([0;4]\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 4 đơn vị².
 
-**Lời giải:** Chia tại x=2, mỗi tam giác có diện tích2.
+**Lời giải:** Chia tại \(x=2\), mỗi tam giác có diện tích2.
 
 **Nếu làm sai:** Vùng dưới Ox vẫn góp diện tích dương, chia tại nghiệm đổi dấu.
 
@@ -1971,7 +1971,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-C02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O16; SINGLE_ITEM_ID -->
 
-**Bài 82.** Tính diện tích giữa y=x và Ox trên [−2,2].
+**Bài 82.** Tính diện tích giữa \(y=x\) và Ox trên \([-2;2]\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1985,157 +1985,157 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P16; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O16; SINGLE_ITEM_ID -->
 
-**Bài 83.** Tính S giữa y=|x| và Ox trên [−1,2].
+**Bài 83.** Tính S giữa \(y=|x|\) và Ox trên \([-1;2]\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S=1/2+2=5/2.
+**Đáp án:** \(S=\frac12+2=\frac52\).
 
-**Lời giải:** y=|x| không âm. Trên [−1,0], |x|=−x cho S₁=\(\int_{-1}^{0} (-x)\,\mathrm dx\)=1/2; trên [0,2], |x|=x cho S₂=\(\int_{0}^{2} x\,\mathrm dx\)=2. Tổng S=5/2 đơn vị².
+**Lời giải:** \(y=|x|\) không âm. Trên \([-1;0]\), \(|x|=-x\) cho \(S_1=\int_{-1}^0(-x)\,\mathrm dx=\frac12\); trên \([0;2]\), \(|x|=x\) cho \(S_2=\int_0^2 x\,\mathrm dx=2\). Tổng \(S=\frac52\) đơn vị².
 
-**Nếu làm sai:** Trị tuyệt đối đổi công thức tại x=0; chia đoạn để tích phân thành biểu thức đại số đơn giản.
+**Nếu làm sai:** Trị tuyệt đối đổi công thức tại \(x=0\); chia đoạn để tích phân thành biểu thức đại số đơn giản.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-W03; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O17; SINGLE_ITEM_ID -->
 
-**Bài 84.** Diện tích giữa y=x+3 và y=x²+1 trên [0,2]?
+**Bài 84.** Diện tích giữa \(y=x+3\) và \(y=x^2+1\) trên \([0;2]\)?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** 10/3 đơn vị².
+**Đáp án:** \(\frac{10}3\) đơn vị².
 
-**Lời giải:** Hiệu trên−dưới=−x²+x+2≥0 trong [0,2]; tích phân [−x³/3+x²/2+2x]_0²=10/3.
+**Lời giải:** Hiệu trên trừ dưới là \(-x^2+x+2\ge0\) trong \([0;2]\); tích phân \(\left[-\frac{x^3}3+\frac{x^2}2+2x\right]_0^2=\frac{10}3\).
 
-**Rubric tự luận /5:** 1đ nhận diện đường trên; 1đ kiểm hiệu≥0; 2đ tích phân; 1đ đơn vị/kết luận.
+**Rubric tự luận /5:** 1đ nhận diện đường trên; 1đ kiểm hiệu không âm; 2đ tích phân; 1đ đơn vị/kết luận.
 
-**Nếu làm sai:** Giải f−g, kiểm đường nào trên rồi mới lấy tích phân (trên−dưới).
+**Nếu làm sai:** Giải \(f-g=0\), kiểm đường nào trên rồi mới lấy tích phân (trên trừ dưới).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-A03; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O17; SINGLE_ITEM_ID -->
 
-**Bài 85.** Hai biên y=3x+1 và y=x+1, x từ0 đến3. Tính diện tích giữa chúng.
+**Bài 85.** Hai biên \(y=3x+1\) và \(y=x+1\), x từ0 đến3. Tính diện tích giữa chúng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 9 đơn vị².
 
-**Lời giải:** Hiệu 2x≥0; \(\int_{0}^{3} 2x\,\mathrm dx\)=9. Giải thích chọn cách: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0.
+**Lời giải:** Hiệu \(2x\ge0\); \(\int_0^3 2x\,\mathrm dx=9\). Giải thích chọn cách: Lấy hiệu độ cao (trên trừ dưới), tích phân theo \(x\), kiểm \(S\ge0\).
 
-**Nếu làm sai:** Giải f−g, kiểm đường nào trên rồi mới lấy tích phân (trên−dưới).
+**Nếu làm sai:** Giải \(f-g=0\), kiểm đường nào trên rồi mới lấy tích phân (trên trừ dưới).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-P03; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O17; SINGLE_ITEM_ID -->
 
-**Bài 86.** Diện tích giữa y=4 và y=x² trên [−2,2]?
+**Bài 86.** Diện tích giữa \(y=4\) và \(y=x^2\) trên \([-2;2]\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 32/3 đơn vị².
+**Đáp án:** \(\frac{32}3\) đơn vị².
 
-**Lời giải:** 4≥x², S=\(\int_{-2}^{2} (4-x^{2})\,\mathrm dx\)=16−16/3=32/3.
+**Lời giải:** \(4\ge x^2\), \(S=\int_{-2}^2(4-x^2)\,\mathrm dx=16-\frac{16}3=\frac{32}3\).
 
-**Nếu làm sai:** Giải f−g, kiểm đường nào trên rồi mới lấy tích phân (trên−dưới).
+**Nếu làm sai:** Giải \(f-g=0\), kiểm đường nào trên rồi mới lấy tích phân (trên trừ dưới).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-C03; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O17; SINGLE_ITEM_ID -->
 
-**Bài 87.** Diện tích giữa y=2x và y=x trên [0,2]?
+**Bài 87.** Diện tích giữa \(y=2x\) và \(y=x\) trên \([0;2]\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 2 đơn vị².
 
-**Lời giải:** Lấy trên−dưới=x; \(\int_{0}^{2} x\,\mathrm dx\)=2. Giải thích chọn cách: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0.
+**Lời giải:** Lấy trên trừ dưới được \(x\); \(\int_0^2 x\,\mathrm dx=2\). Giải thích chọn cách: Lấy hiệu độ cao (trên trừ dưới), tích phân theo \(x\), kiểm \(S\ge0\).
 
-**Nếu làm sai:** Giải f−g, kiểm đường nào trên rồi mới lấy tích phân (trên−dưới).
+**Nếu làm sai:** Giải \(f-g=0\), kiểm đường nào trên rồi mới lấy tích phân (trên trừ dưới).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P17; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O17; SINGLE_ITEM_ID -->
 
-**Bài 88.** Tính diện tích giữa y=x+2 và y=x² trên [0,2].
+**Bài 88.** Tính diện tích giữa \(y=x+2\) và \(y=x^2\) trên \([0;2]\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Vì x+2−x²=(2−x)(x+1)≥0, S=\(\int_{0}^{2} (x+2-x^{2})\,\mathrm dx\)=10/3.
+**Đáp án:** Vì \(x+2-x^2=(2-x)(x+1)\ge0\), \(S=\int_0^2(x+2-x^2)\,\mathrm dx=\frac{10}3\).
 
-**Lời giải:** Trên [0,2], f−g=(x+2)−x²=(2−x)(x+1)≥0 nên đường y=x+2 ở trên y=x². Diện tích S=\(\int_{0}^{2} (x+2-x^{2})\,\mathrm dx\)=[x²/2+2x−x³/3]₀²=2+4−8/3=10/3 đơn vị².
+**Lời giải:** Trên \([0;2]\), \(f-g=(x+2)-x^2=(2-x)(x+1)\ge0\) nên đường \(y=x+2\) ở trên \(y=x^2\). Diện tích \(S=\int_0^2(x+2-x^2)\,\mathrm dx=\left[\frac{x^2}2+2x-\frac{x^3}3\right]_0^2=2+4-\frac83=\frac{10}3\) đơn vị².
 
-**Nếu làm sai:** Trước khi lấy hiệu, kiểm dấu f−g để xác định đường nào ở trên trên toàn khoảng.
+**Nếu làm sai:** Trước khi lấy hiệu, kiểm dấu \(f-g\) để xác định đường nào ở trên trên toàn khoảng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-W04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O18; SINGLE_ITEM_ID -->
 
-**Bài 89.** Tính diện tích giữa y=x và y=x³ từ x=−1 đến1; chỉ rõ đoạn đổi thứ tự.
+**Bài 89.** Tính diện tích giữa \(y=x\) và \(y=x^3\) từ \(x=-1\) đến1; chỉ rõ đoạn đổi thứ tự.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** 1/2 đơn vị².
+**Đáp án:** \(\frac12\) đơn vị².
 
-**Lời giải:** Giao tại −1,0,1; trên [-1,0] x³≥x, trên [0,1] x≥x³; mỗi vùng1/4, tổng1/2.
+**Lời giải:** Giao tại −1,0,1; trên \([-1;0]\) \(x^3\ge x\), trên \([0;1]\) \(x\ge x^3\); mỗi vùng \(\frac14\), tổng \(\frac12\).
 
 **Rubric tự luận /5:** 1đ giao điểm; 1đ thứ tự theo đoạn; 2đ hai tích phân; 1đ tổng S.
 
-**Nếu làm sai:** Giao điểm ở trong đoạn có thể đảo thứ tự; cần chia đoạn theo dấu f−g.
+**Nếu làm sai:** Giao điểm ở trong đoạn có thể đảo thứ tự; cần chia đoạn theo dấu \(f-g\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-A04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O18; SINGLE_ITEM_ID -->
 
-**Bài 90.** Tính diện tích giữa y=x² và y=2−x² trên [−1,1].
+**Bài 90.** Tính diện tích giữa \(y=x^2\) và \(y=2-x^2\) trên \([-1;1]\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 8/3 đơn vị².
+**Đáp án:** \(\frac83\) đơn vị².
 
-**Lời giải:** Hai đồ thị giao ở ±1, trên là 2−x²; S=\(\int_{-1}^{1} (2-2x^{2})\,\mathrm dx\)=8/3.
+**Lời giải:** Hai đồ thị giao ở \(\pm1\), trên là \(2-x^2\); \(S=\int_{-1}^1(2-2x^2)\,\mathrm dx=\frac83\).
 
-**Nếu làm sai:** Giao điểm ở trong đoạn có thể đảo thứ tự; cần chia đoạn theo dấu f−g.
+**Nếu làm sai:** Giao điểm ở trong đoạn có thể đảo thứ tự; cần chia đoạn theo dấu \(f-g\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-P04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O18; SINGLE_ITEM_ID -->
 
-**Bài 91.** Diện tích giữa y=2x và y=x² trên [0,2]?
+**Bài 91.** Diện tích giữa \(y=2x\) và \(y=x^2\) trên \([0;2]\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 4/3 đơn vị².
+**Đáp án:** \(\frac43\) đơn vị².
 
-**Lời giải:** 2x≥x²; \(\int_{0}^{2} (2x-x^{2})\,\mathrm dx\)=4−8/3=4/3.
+**Lời giải:** \(2x\ge x^2\); \(\int_0^2(2x-x^2)\,\mathrm dx=4-\frac83=\frac43\).
 
-**Nếu làm sai:** Giao điểm ở trong đoạn có thể đảo thứ tự; cần chia đoạn theo dấu f−g.
+**Nếu làm sai:** Giao điểm ở trong đoạn có thể đảo thứ tự; cần chia đoạn theo dấu \(f-g\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-C04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O18; SINGLE_ITEM_ID -->
 
-**Bài 92.** Diện tích giữa y=x và y=x² trên [0,1]?
+**Bài 92.** Diện tích giữa \(y=x\) và \(y=x^2\) trên \([0;1]\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 1/6 đơn vị².
+**Đáp án:** \(\frac16\) đơn vị².
 
-**Lời giải:** S=\(\int_{0}^{1} (x-x^{2})\,\mathrm dx\)=1/6. Giải thích chọn cách: Giải giao điểm, sắp xếp cận, thử dấu từng khoảng rồi tích phân phần dương.
+**Lời giải:** \(S=\int_0^1(x-x^2)\,\mathrm dx=\frac16\). Giải thích chọn cách: Giải giao điểm, sắp xếp cận, thử dấu từng khoảng rồi tích phân phần dương.
 
-**Nếu làm sai:** Giao điểm ở trong đoạn có thể đảo thứ tự; cần chia đoạn theo dấu f−g.
+**Nếu làm sai:** Giao điểm ở trong đoạn có thể đảo thứ tự; cần chia đoạn theo dấu \(f-g\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P18; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O18; SINGLE_ITEM_ID -->
 
-**Bài 93.** Tính S giữa y=x và y=x² trên [0,2].
+**Bài 93.** Tính S giữa \(y=x\) và \(y=x^2\) trên \([0;2]\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 1 đơn vị² (giao 0,1 và chia tại1).
 
-**Lời giải:** Hai đường giao khi x=x² ⇔ x=0 hoặc1. Trên (0,1), x−x²>0; trên (1,2), x−x²<0. Diện tích S=\(\int_{0}^{1} (x-x^{2})\,\mathrm dx\)+\(\int_{1}^{2} (x^{2}-x)\,\mathrm dx\)=1/6+5/6=1 đơn vị².
+**Lời giải:** Hai đường giao khi \(x=x^2\Leftrightarrow x=0\) hoặc \(1\). Trên \((0;1)\), \(x-x^2>0\); trên \((1;2)\), \(x-x^2<0\). Diện tích \(S=\int_0^1(x-x^2)\,\mathrm dx+\int_1^2(x^2-x)\,\mathrm dx=\frac16+\frac56=1\) đơn vị².
 
 **Nếu làm sai:** Nếu hai đường đổi thứ tự, phải chia tại giao điểm và cộng phần dương, không để diện tích triệt dấu.
 
@@ -2143,22 +2143,22 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W04; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O18; SINGLE_ITEM_ID -->
 
-**Bài 94.** Tính diện tích giới hạn bởi hai đường y=x và y=x² trên đoạn [0,2]. (a) Giải giao điểm. (b) Xác định đường trên từng khoảng. (c) Thiết lập hai tích phân. (d) Tính diện tích và so với tích phân đại số \(\int_{0}^{2} (x-x^{2})\,\mathrm dx\).
+**Bài 94.** Tính diện tích giới hạn bởi hai đường \(y=x\) và \(y=x^2\) trên đoạn \([0;2]\). (a) Giải giao điểm. (b) Xác định đường trên từng khoảng. (c) Thiết lập hai tích phân. (d) Tính diện tích và so với tích phân đại số \(\int_{0}^{2} (x-x^{2})\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** Giao x=0,1. S=∫₀¹(x−x²)+∫₁²(x²−x)=1. Tích phân đại số ∫₀²(x−x²)=−2/3, không phải diện tích.
+**Đáp án:** Giao \(x=0,1\). \(S=\int_0^1(x-x^2)\,\mathrm dx+\int_1^2(x^2-x)\,\mathrm dx=1\). Tích phân đại số \(\int_0^2(x-x^2)\,\mathrm dx=-\frac23\), không phải diện tích.
 
-**Lời giải:** x=x² ⇒ x=0 hoặc1. Trên (0,1), x>x²; trên (1,2), x²>x. S=[x²/2−x³/3]₀¹+[x³/3−x²/2]₁²=(1/2−1/3)+(8/3−2−(1/3−1/2))=1/6+5/6=1. Trong khi \(\int_{0}^{2} (x-x^{2})\,\mathrm dx\)=[x²/2−x³/3]₀²=2−8/3=−2/3. Âm cho thấy không phải diện tích hình học.
+**Lời giải:** \(x=x^2\Rightarrow x=0\) hoặc \(1\). Trên \((0;1)\), \(x>x^2\); trên \((1;2)\), \(x^2>x\). \(S=\left[\frac{x^2}2-\frac{x^3}3\right]_0^1+\left[\frac{x^3}3-\frac{x^2}2\right]_1^2=(\frac12-\frac13)+(\frac83-2-(\frac13-\frac12))=\frac16+\frac56=1\). Trong khi \(\int_0^2(x-x^2)\,\mathrm dx=\left[\frac{x^2}2-\frac{x^3}3\right]_0^2=2-\frac83=-\frac23\). Âm cho thấy không phải diện tích hình học.
 
 **Rubric /7:**
-1. Giải x=0,1 (1đ)
-2. Nêu dấu trên (0,1) (1đ)
-3. Nêu dấu trên (1,2) (1đ)
+1. Giải \(x=0,1\) (1đ)
+2. Nêu dấu trên \((0;1)\) (1đ)
+3. Nêu dấu trên \((1;2)\) (1đ)
 4. Viết đủ hai tích phân không âm (1đ)
-5. Tính phần đầu1/6 (1đ)
-6. Tính phần sau5/6 và S=1 (1đ)
-7. So với tích phân đại số −2/3 đúng (1đ)
+5. Tính phần đầu \(\frac16\) (1đ)
+6. Tính phần sau \(\frac56\) và \(S=1\) (1đ)
+7. So với tích phân đại số \(-\frac23\) đúng (1đ)
 
 **Nếu làm sai:** Một dấu trừ duy nhất qua điểm giao làm mất diện tích; dùng tích phân trị tuyệt đối chia đoạn.
 
@@ -2166,15 +2166,15 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-W05; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O19; SINGLE_ITEM_ID -->
 
-**Bài 95.** Một đoạn đất có biên y=√x (m) từ x=0 đến4 (m). Tính diện tích, nêu công thức và đơn vị.
+**Bài 95.** Một đoạn đất có biên \(y=\sqrt x\) (m) từ \(x=0\) đến4 (m). Tính diện tích, nêu công thức và đơn vị.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** 16/3 m².
+**Đáp án:** \(\frac{16}3\) m².
 
-**Lời giải:** h≥0; S=∫_0⁴√x dx=[(2/3)x^(3/2)]_0⁴=(2/3)·8=16/3 m².
+**Lời giải:** \(h\ge0\); \(S=\int_0^4\sqrt x\,\mathrm dx=\left[\frac23x^{3/2}\right]_0^4=\frac23\cdot8=\frac{16}3\) m².
 
-**Rubric tự luận /5:** 1đ nêu biến/cận đơn vị; 1đ h≥0; 2đ nguyên hàm; 1đ kết luận m².
+**Rubric tự luận /5:** 1đ nêu biến/cận đơn vị; 1đ \(h\ge0\); 2đ nguyên hàm; 1đ kết luận m².
 
 **Nếu làm sai:** Cận vùng kín phải lấy từ giao điểm hợp lệ, so sánh hai đồ thị trên từng mảnh.
 
@@ -2182,13 +2182,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-A05; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O19; SINGLE_ITEM_ID -->
 
-**Bài 96.** Độ cao bờ đất h(x)=100−10x m, 0≤x≤5 m. Diện tích mặt cắt?
+**Bài 96.** Độ cao bờ đất \(h(x)=100-10x\) m, \(0\le x\le5\) m. Diện tích mặt cắt?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 375 m².
 
-**Lời giải:** S=\(\int_{0}^{5} (100-10x)\,\mathrm dx\)=[100x−5x²]_0⁵=500−125=375m².
+**Lời giải:** \(S=\int_0^5(100-10x)\,\mathrm dx=[100x-5x^2]_0^5=500-125=375\) m².
 
 **Nếu làm sai:** Cận vùng kín phải lấy từ giao điểm hợp lệ, so sánh hai đồ thị trên từng mảnh.
 
@@ -2196,13 +2196,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-P05; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O19; SINGLE_ITEM_ID -->
 
-**Bài 97.** Một miền có chiều cao y=2x−1 m và x từ0 tới1 m. Tính diện tích hình học (không phải tích phân có dấu).
+**Bài 97.** Một miền có chiều cao \(y=2x-1\) m và x từ0 tới1 m. Tính diện tích hình học (không phải tích phân có dấu).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 1/2 m².
+**Đáp án:** \(\frac12\) m².
 
-**Lời giải:** Cắt trục ở x=1/2; hai tam giác mỗi có diện tích1/4, tổng1/2.
+**Lời giải:** Cắt trục ở \(x=\frac12\); hai tam giác mỗi có diện tích \(\frac14\), tổng \(\frac12\).
 
 **Nếu làm sai:** Cận vùng kín phải lấy từ giao điểm hợp lệ, so sánh hai đồ thị trên từng mảnh.
 
@@ -2210,13 +2210,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-C05; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O19; SINGLE_ITEM_ID -->
 
-**Bài 98.** Độ cao y=x+1 cm, 0≤x≤2 cm. Diện tích dưới đồ thị?
+**Bài 98.** Độ cao \(y=x+1\) cm, \(0\le x\le2\) cm. Diện tích dưới đồ thị?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 4 cm².
 
-**Lời giải:** S=\(\int_{0}^{2} (x+1)\,\mathrm dx\)=4; đơn vị cm². Giải thích chọn cách: Nêu biến x và đơn vị, mô tả hai cận, xét h≥0, rồi tính số và thứ nguyên.
+**Lời giải:** \(S=\int_0^2(x+1)\,\mathrm dx=4\); đơn vị cm². Giải thích chọn cách: Nêu biến \(x\) và đơn vị, mô tả hai cận, xét \(h\ge0\), rồi tính số và thứ nguyên.
 
 **Nếu làm sai:** Cận vùng kín phải lấy từ giao điểm hợp lệ, so sánh hai đồ thị trên từng mảnh.
 
@@ -2224,13 +2224,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P19; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O19; SINGLE_ITEM_ID -->
 
-**Bài 99.** Tính S giữa y=2x và y=x² từ hai điểm giao.
+**Bài 99.** Tính S giữa \(y=2x\) và \(y=x^2\) từ hai điểm giao.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 4/3 đơn vị².
+**Đáp án:** \(\frac43\) đơn vị².
 
-**Lời giải:** Giao điểm y=2x và y=x² cho 2x=x²⇔x(x−2)=0, x=0 hoặc2. Trên [0,2], 2x−x²=x(2−x)≥0. Vậy diện tích giới hạn S=\(\int_{0}^{2} (2x-x^{2})\,\mathrm dx\)=[x²−x³/3]₀²=4−8/3=4/3 đơn vị².
+**Lời giải:** Giao điểm \(y=2x\) và \(y=x^2\) cho \(2x=x^2\Leftrightarrow x(x-2)=0\), \(x=0\) hoặc \(2\). Trên \([0;2]\), \(2x-x^2=x(2-x)\ge0\). Vậy diện tích giới hạn \(S=\int_0^2(2x-x^2)\,\mathrm dx=\left[x^2-\frac{x^3}3\right]_0^2=4-\frac83=\frac43\) đơn vị².
 
 **Nếu làm sai:** Cận của hình kín xuất phát từ giao điểm, không đoán trên nét vẽ.
 
@@ -2240,71 +2240,71 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-W06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O20; SINGLE_ITEM_ID -->
 
-**Bài 100.** Các lát cắt vuông góc Ox là hình vuông cạnh (x+1) cm với x∈[0,2] cm. Tính V.
+**Bài 100.** Các lát cắt vuông góc Ox là hình vuông cạnh \(x+1\) cm với \(x\in[0;2]\) cm. Tính V.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** 26/3 cm³.
+**Đáp án:** \(\frac{26}3\) cm³.
 
-**Lời giải:** S(x)=(x+1)² cm²; V=\(\int_{0}^{2} (x+1)^{2}\,\mathrm dx\)=[(x+1)³/3]_0²=(27−1)/3=26/3.
+**Lời giải:** \(S(x)=(x+1)^2\) cm²; \(V=\int_0^2(x+1)^2\,\mathrm dx=\left[\frac{(x+1)^3}3\right]_0^2=\frac{27-1}3=\frac{26}3\).
 
 **Rubric tự luận /5:** 1đ mô tả lát cắt; 1đ biểu thức S đúng; 2đ tích phân; 1đ đơn vị/kết luận.
 
-**Nếu làm sai:** Tiết diện vuông diện tích s², không π; tích phân A(x) theo độ dày dx.
+**Nếu làm sai:** Tiết diện vuông diện tích \(s^2\), không \(\pi\); tích phân \(A(x)\) theo độ dày \(\mathrm dx\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-A06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O20; SINGLE_ITEM_ID -->
 
-**Bài 101.** Vật có mặt cắt S(x)=4−x² cm², 0≤x≤2cm. Tính V.
+**Bài 101.** Vật có mặt cắt \(S(x)=4-x^2\) cm², \(0\le x\le2\) cm. Tính V.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 16/3 cm³.
+**Đáp án:** \(\frac{16}3\) cm³.
 
-**Lời giải:** S≥0; V=\(\int_{0}^{2} (4-x^{2})\,\mathrm dx\)=8−8/3=16/3.
+**Lời giải:** \(S\ge0\); \(V=\int_0^2(4-x^2)\,\mathrm dx=8-\frac83=\frac{16}3\).
 
-**Nếu làm sai:** Tiết diện vuông diện tích s², không π; tích phân A(x) theo độ dày dx.
+**Nếu làm sai:** Tiết diện vuông diện tích \(s^2\), không \(\pi\); tích phân \(A(x)\) theo độ dày \(\mathrm dx\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-P06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O20; SINGLE_ITEM_ID -->
 
-**Bài 102.** Khối có mặt cắt S(x)=2+x m² từ0 tới2m. Thể tích?
+**Bài 102.** Khối có mặt cắt \(S(x)=2+x\) m² từ0 tới2m. Thể tích?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 6 m³.
 
-**Lời giải:** V=\(\int_{0}^{2} (2+x)\,\mathrm dx\)=4+2=6. Giải thích chọn cách: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài.
+**Lời giải:** \(V=\int_0^2(2+x)\,\mathrm dx=4+2=6\). Giải thích chọn cách: Xác định hình cắt, tính \(S(x)\) đúng hình học, tích phân theo chiều dài.
 
-**Nếu làm sai:** Tiết diện vuông diện tích s², không π; tích phân A(x) theo độ dày dx.
+**Nếu làm sai:** Tiết diện vuông diện tích \(s^2\), không \(\pi\); tích phân \(A(x)\) theo độ dày \(\mathrm dx\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-C06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O20; SINGLE_ITEM_ID -->
 
-**Bài 103.** Khối có S(x)=x² cm², x∈[0,3] cm. Tính V.
+**Bài 103.** Khối có \(S(x)=x^2\) cm², \(x\in[0;3]\) cm. Tính V.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 9 cm³.
 
-**Lời giải:** V=\(\int_{0}^{3} x^{2}\,\mathrm dx\)=[x³/3]_0³=9. Giải thích chọn cách: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài.
+**Lời giải:** \(V=\int_0^3 x^2\,\mathrm dx=\left[\frac{x^3}3\right]_0^3=9\). Giải thích chọn cách: Xác định hình cắt, tính \(S(x)\) đúng hình học, tích phân theo chiều dài.
 
-**Nếu làm sai:** Tiết diện vuông diện tích s², không π; tích phân A(x) theo độ dày dx.
+**Nếu làm sai:** Tiết diện vuông diện tích \(s^2\), không \(\pi\); tích phân \(A(x)\) theo độ dày \(\mathrm dx\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P20; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O20; SINGLE_ITEM_ID -->
 
-**Bài 104.** Cho thiết diện hình vuông cạnh x+1 trên [0,1], tính V.
+**Bài 104.** Cho thiết diện hình vuông cạnh \(x+1\) trên \([0;1]\), tính V.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** V=7/3 đơn vị³.
+**Đáp án:** \(V=\frac73\) đơn vị³.
 
-**Lời giải:** Tiết diện vuông cạnh x+1 có diện tích A(x)=(x+1)²=x²+2x+1. Thể tích V=\(\int_{0}^{1} A(x)\,\mathrm dx\)=[x³/3+x²+x]₀¹=1/3+1+1=7/3 đơn vị³. Không nhân π vì không có hình tròn.
+**Lời giải:** Tiết diện vuông cạnh \(x+1\) có diện tích \(A(x)=(x+1)^2=x^2+2x+1\). Thể tích \(V=\int_0^1 A(x)\,\mathrm dx=\left[\frac{x^3}3+x^2+x\right]_0^1=\frac13+1+1=\frac73\) đơn vị³. Không nhân \(\pi\) vì không có hình tròn.
 
 **Nếu làm sai:** Phân biệt cạnh dài (đơn vị) và diện tích lát cắt (đơn vị²) trước khi tích phân thành thể tích.
 
@@ -2312,22 +2312,22 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W05; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O20; SINGLE_ITEM_ID -->
 
-**Bài 105.** Một khối có thiết diện vuông góc Ox là hình vuông cạnh s(x)=x+1 cm với 0≤x≤2 cm. (a) Nêu diện tích mặt cắt. (b) Thiết lập thể tích. (c) Tính V. (d) Giải thích vì sao không nhân π.
+**Bài 105.** Một khối có thiết diện vuông góc Ox là hình vuông cạnh \(s(x)=x+1\) cm với \(0\le x\le2\) cm. (a) Nêu diện tích mặt cắt. (b) Thiết lập thể tích. (c) Tính V. (d) Giải thích vì sao không nhân \(\pi\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** A=(x+1)² cm², V=\(\int_{0}^{2} (x+1)^{2}\,\mathrm dx\)=26/3 cm³; không nhân π.
+**Đáp án:** \(A=(x+1)^2\) cm², \(V=\int_0^2(x+1)^2\,\mathrm dx=\frac{26}3\) cm³; không nhân \(\pi\).
 
-**Lời giải:** Tiết diện vuông cạnh x+1 nên A=(x+1)²=x²+2x+1 cm². V=\(\int_{0}^{2} A\,\mathrm dx\)=[x³/3+x²+x]₀²=8/3+4+2=26/3 cm³. Hình vuông có diện tích s², còn πr² là thiết diện tròn nên nhân π sai.
+**Lời giải:** Tiết diện vuông cạnh \(x+1\) nên \(A=(x+1)^2=x^2+2x+1\) cm². \(V=\int_0^2 A\,\mathrm dx=\left[\frac{x^3}3+x^2+x\right]_0^2=\frac83+4+2=\frac{26}3\) cm³. Hình vuông có diện tích \(s^2\), còn \(\pi r^2\) là diện tích thiết diện tròn nên nhân \(\pi\) sai.
 
 **Rubric /7:**
-1. Miền [0,2] và đơn vị cm (1đ)
-2. A=(x+1)² cm² (1đ)
+1. Miền \([0;2]\) và đơn vị cm (1đ)
+2. \(A=(x+1)^2\) cm² (1đ)
 3. Khai triển chính xác (1đ)
-4. Lập V=\(\int A\,\mathrm dx\) đúng cận (1đ)
+4. Lập \(V=\int A\,\mathrm dx\) đúng cận (1đ)
 5. Tính nguyên hàm (1đ)
-6. Giá trị26/3 cm³ (1đ)
-7. Nêu không có π vì mặt cắt vuông (1đ)
+6. Giá trị \(\frac{26}3\) cm³ (1đ)
+7. Nêu không có \(\pi\) vì mặt cắt vuông (1đ)
 
 **Nếu làm sai:** Phải xác định loại thiết diện trước khi chọn công thức diện tích.
 
@@ -2335,168 +2335,168 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-W07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O21; SINGLE_ITEM_ID -->
 
-**Bài 106.** Lát cắt có đường kính d(x)=2x+2 (cm), x∈[0,1] cm. Tính V, nêu kiểm tra đổi đường kính.
+**Bài 106.** Lát cắt có đường kính \(d(x)=2x+2\) (cm), \(x\in[0;1]\) cm. Tính V, nêu kiểm tra đổi đường kính.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** 7π/3 cm³.
+**Đáp án:** \(\frac{7\pi}3\) cm³.
 
-**Lời giải:** r=d/2=x+1; V=π\(\int_{0}^{1} (x+1)^{2}\,\mathrm dx\)=7π/3.
+**Lời giải:** \(r=\frac d2=x+1\); \(V=\pi\int_0^1(x+1)^2\,\mathrm dx=\frac{7\pi}3\).
 
-**Rubric tự luận /5:** 1đ đổi d thành r; 1đ S=πr²; 2đ tích phân; 1đ đơn vị/kết luận.
+**Rubric tự luận /5:** 1đ đổi d thành r; 1đ \(S=\pi r^2\); 2đ tích phân; 1đ đơn vị/kết luận.
 
-**Nếu làm sai:** Tiết diện tròn A=πr²; nhớ bình phương bán kính không phải πr.
+**Nếu làm sai:** Tiết diện tròn \(A=\pi r^2\); nhớ bình phương bán kính, không phải \(\pi r\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-A07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O21; SINGLE_ITEM_ID -->
 
-**Bài 107.** Khối có r(x)=√x cm, x∈[0,4]cm. Tính thể tích.
+**Bài 107.** Khối có \(r(x)=\sqrt x\) cm, \(x\in[0;4]\) cm. Tính thể tích.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 8π cm³.
+**Đáp án:** \(8\pi\) cm³.
 
-**Lời giải:** r²=x; V=π\(\int_{0}^{4} x\,\mathrm dx\)=8π. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.
+**Lời giải:** \(r^2=x\); \(V=\pi\int_0^4 x\,\mathrm dx=8\pi\). Giải thích chọn cách: Đổi đường kính thành bán kính nếu cần, bình phương \(r\) trước khi tích phân; giữ \(\pi\) chính xác.
 
-**Nếu làm sai:** Tiết diện tròn A=πr²; nhớ bình phương bán kính không phải πr.
+**Nếu làm sai:** Tiết diện tròn \(A=\pi r^2\); nhớ bình phương bán kính, không phải \(\pi r\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-P07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O21; SINGLE_ITEM_ID -->
 
-**Bài 108.** Lát cắt tròn có r=2x cm trên[0,2]cm. Tính V.
+**Bài 108.** Lát cắt tròn có \(r=2x\) cm trên \([0;2]\)cm. Tính V.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 32π/3 cm³.
+**Đáp án:** \(\frac{32\pi}3\) cm³.
 
-**Lời giải:** V=π\(\int_{0}^{2} 4x^{2}\,\mathrm dx\)=4π·8/3=32π/3. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.
+**Lời giải:** \(V=\pi\int_0^2 4x^2\,\mathrm dx=4\pi\cdot\frac83=\frac{32\pi}3\). Giải thích chọn cách: Đổi đường kính thành bán kính nếu cần, bình phương \(r\) trước khi tích phân; giữ \(\pi\) chính xác.
 
-**Nếu làm sai:** Tiết diện tròn A=πr²; nhớ bình phương bán kính không phải πr.
+**Nếu làm sai:** Tiết diện tròn \(A=\pi r^2\); nhớ bình phương bán kính, không phải \(\pi r\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-C07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O21; SINGLE_ITEM_ID -->
 
-**Bài 109.** Lát cắt tròn có r(x)=x (cm) với0≤x≤1. Tính V.
+**Bài 109.** Lát cắt tròn có \(r(x)=x\) (cm) với \(0\le x\le1\). Tính V.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** π/3 cm³.
+**Đáp án:** \(\frac{\pi}3\) cm³.
 
-**Lời giải:** S=πx²; V=π[x³/3]_0¹=π/3. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.
+**Lời giải:** \(S=\pi x^2\); \(V=\pi\left[\frac{x^3}3\right]_0^1=\frac\pi3\). Giải thích chọn cách: Đổi đường kính thành bán kính nếu cần, bình phương \(r\) trước khi tích phân; giữ \(\pi\) chính xác.
 
-**Nếu làm sai:** Tiết diện tròn A=πr²; nhớ bình phương bán kính không phải πr.
+**Nếu làm sai:** Tiết diện tròn \(A=\pi r^2\); nhớ bình phương bán kính, không phải \(\pi r\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P21; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O21; SINGLE_ITEM_ID -->
 
-**Bài 110.** Cho r(x)=x trên [0,2], tính V hình tròn cắt vuông góc Ox.
+**Bài 110.** Cho \(r(x)=x\) trên \([0;2]\), tính V hình tròn cắt vuông góc Ox.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** V=8π/3 đơn vị³.
+**Đáp án:** \(V=\frac{8\pi}3\) đơn vị³.
 
-**Lời giải:** Tiết diện hình tròn bán kính r(x)=x, diện tích A(x)=πx². V=\(\int_{0}^{2} \pi x^{2}\,\mathrm dx\)=π[x³/3]₀²=8π/3 đơn vị³. Điều kiện x≥0 trên [0,2] đảm bảo bán kính hợp lệ.
+**Lời giải:** Tiết diện hình tròn bán kính \(r(x)=x\), diện tích \(A(x)=\pi x^2\). \(V=\int_0^2\pi x^2\,\mathrm dx=\pi\left[\frac{x^3}3\right]_0^2=\frac{8\pi}3\) đơn vị³. Điều kiện \(x\ge0\) trên \([0;2]\) đảm bảo bán kính hợp lệ.
 
-**Nếu làm sai:** Dùng diện tích đĩa πr², không dùng chu vi 2πr hoặc chỉ bán kính r.
+**Nếu làm sai:** Dùng diện tích đĩa \(\pi r^2\), không dùng chu vi \(2\pi r\) hoặc chỉ bán kính r.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-W08; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O22; SINGLE_ITEM_ID -->
 
-**Bài 111.** Quay miền dưới y=√(4−x²) từ x=0 tới2 quanh Ox. Tính V và nêu ý nghĩa hình học.
+**Bài 111.** Quay miền dưới \(y=\sqrt{4-x^2}\) từ \(x=0\) tới2 quanh Ox. Tính V và nêu ý nghĩa hình học.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** 16π/3 đơn vị³.
+**Đáp án:** \(\frac{16\pi}3\) đơn vị³.
 
-**Lời giải:** V=π\(\int_{0}^{2} (4-x^{2})\,\mathrm dx\)=π(8−8/3)=16π/3; là nửa thể tích khối cầu bán kính2.
+**Lời giải:** \(V=\pi\int_0^2(4-x^2)\,\mathrm dx=\pi(8-\frac83)=\frac{16\pi}3\); là nửa thể tích khối cầu bán kính 2.
 
-**Rubric tự luận /5:** 1đ xác định r(x); 1đ công thức π∫r²; 2đ tích phân; 1đ nhận xét hình học và đơn vị.
+**Rubric tự luận /5:** 1đ xác định r(x); 1đ công thức \(\pi\int r^2\,\mathrm dx\); 2đ tích phân; 1đ nhận xét hình học và đơn vị.
 
-**Nếu làm sai:** Vành khăn A=π(R²−r²), không π(R−r)²; kiểm 0≤r≤R.
+**Nếu làm sai:** Vành khăn \(A=\pi(R^2-r^2)\), không \(\pi(R-r)^2\); kiểm \(0\le r\le R\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-A08; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O22; SINGLE_ITEM_ID -->
 
-**Bài 112.** Miền dưới y=2x trên[0,1] quay quanh Ox. Tính thể tích.
+**Bài 112.** Miền dưới \(y=2x\) trên \([0;1]\) quay quanh Ox. Tính thể tích.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 4π/3 đơn vị³.
+**Đáp án:** \(\frac{4\pi}3\) đơn vị³.
 
-**Lời giải:** V=π\(\int_{0}^{1} 4x^{2}\,\mathrm dx\)=4π/3. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.
+**Lời giải:** \(V=\pi\int_0^1 4x^2\,\mathrm dx=\frac{4\pi}3\). Giải thích chọn cách: Xác định trục quay, bán kính tại \(x\) là \(|f(x)|\), tính \(\pi\int_a^b f(x)^2\,\mathrm dx\), kiểm thể tích không âm.
 
-**Nếu làm sai:** Vành khăn A=π(R²−r²), không π(R−r)²; kiểm 0≤r≤R.
+**Nếu làm sai:** Vành khăn \(A=\pi(R^2-r^2)\), không \(\pi(R-r)^2\); kiểm \(0\le r\le R\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-P08; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O22; SINGLE_ITEM_ID -->
 
-**Bài 113.** Quay miền dưới y=√x, x∈[0,4] quanh Ox. Tính V.
+**Bài 113.** Quay miền dưới \(y=\sqrt x\), \(x\in[0;4]\) quanh Ox. Tính V.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 8π đơn vị³.
+**Đáp án:** \(8\pi\) đơn vị³.
 
-**Lời giải:** V=π\(\int_{0}^{4} x\,\mathrm dx\)=8π. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.
+**Lời giải:** \(V=\pi\int_0^4 x\,\mathrm dx=8\pi\). Giải thích chọn cách: Xác định trục quay, bán kính tại \(x\) là \(|f(x)|\), tính \(\pi\int_a^b f(x)^2\,\mathrm dx\), kiểm thể tích không âm.
 
-**Nếu làm sai:** Vành khăn A=π(R²−r²), không π(R−r)²; kiểm 0≤r≤R.
+**Nếu làm sai:** Vành khăn \(A=\pi(R^2-r^2)\), không \(\pi(R-r)^2\); kiểm \(0\le r\le R\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-C08; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O22; SINGLE_ITEM_ID -->
 
-**Bài 114.** Quay miền dưới y=x, x∈[0,2] quanh Ox. Tính V.
+**Bài 114.** Quay miền dưới \(y=x\), \(x\in[0;2]\) quanh Ox. Tính V.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 8π/3 đơn vị³.
+**Đáp án:** \(\frac{8\pi}3\) đơn vị³.
 
-**Lời giải:** V=π\(\int_{0}^{2} x^{2}\,\mathrm dx\)=8π/3. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.
+**Lời giải:** \(V=\pi\int_0^2 x^2\,\mathrm dx=\frac{8\pi}3\). Giải thích chọn cách: Xác định trục quay, bán kính tại \(x\) là \(|f(x)|\), tính \(\pi\int_a^b f(x)^2\,\mathrm dx\), kiểm thể tích không âm.
 
-**Nếu làm sai:** Vành khăn A=π(R²−r²), không π(R−r)²; kiểm 0≤r≤R.
+**Nếu làm sai:** Vành khăn \(A=\pi(R^2-r^2)\), không \(\pi(R-r)^2\); kiểm \(0\le r\le R\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P22; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O22; SINGLE_ITEM_ID -->
 
-**Bài 115.** Cho miền 0≤x≤2, 0≤y≤√x quay quanh Ox, V?
+**Bài 115.** Cho miền \(0\le x\le2\), \(0\le y\le\sqrt x\) quay quanh Ox, V?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2π đơn vị³.
+**Đáp án:** \(2\pi\) đơn vị³.
 
-**Lời giải:** Quay vùng 0≤y≤√x, 0≤x≤2 quanh Ox: tiết diện là đĩa bán kính √x. Diện tích A(x)=π(√x)²=πx; V=π\(\int_{0}^{2} x\,\mathrm dx\)=π[x²/2]₀²=2π đơn vị³.
+**Lời giải:** Quay vùng \(0\le y\le\sqrt x,\ 0\le x\le2\) quanh \(Ox\): tiết diện là đĩa bán kính \(\sqrt x\). Diện tích \(A(x)=\pi(\sqrt x)^2=\pi x\); \(V=\pi\int_0^2 x\,\mathrm dx=\pi\left[\frac{x^2}2\right]_0^2=2\pi\) đơn vị³.
 
-**Nếu làm sai:** Nếu được 8π, em hãy kiểm lại cả diện tích lát cắt và bước thế cận: A(x)=π(√x)²=πx, nên V=π[x²/2]₀²=2π. Không dùng cận hay kết quả của ví dụ khác.
+**Nếu làm sai:** Nếu được \(8\pi\), em hãy kiểm lại cả diện tích lát cắt và bước thế cận: \(A(x)=\pi(\sqrt x)^2=\pi x\), nên \(V=\pi\left[\frac{x^2}2\right]_0^2=2\pi\). Không dùng cận hay kết quả của ví dụ khác.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W06; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O22; SINGLE_ITEM_ID -->
 
-**Bài 116.** Miền 0≤x≤2, x≤y≤2 quay quanh trục Ox. (a) Mô tả bán kính ngoài, trong của tiết diện. (b) Thiết lập công thức vành khăn. (c) Tính thể tích. (d) Nêu vì sao không dùng π\(\int (2-x)^{2}\,\mathrm dx\).
+**Bài 116.** Miền \(0\le x\le2\), \(x\le y\le2\) quay quanh trục Ox. (a) Mô tả bán kính ngoài, trong của tiết diện. (b) Thiết lập công thức vành khăn. (c) Tính thể tích. (d) Nêu vì sao không dùng \(\pi\int_0^2 (2-x)^2\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** R=2, r=x; V=π\(\int_{0}^{2} (4-x^{2})\,\mathrm dx\)=16π/3 đơn vị³.
+**Đáp án:** \(R=2,\ r=x\); \(V=\pi\int_0^2(4-x^2)\,\mathrm dx=\frac{16\pi}3\) đơn vị³.
 
-**Lời giải:** Với x∈[0,2], y từ x tới2 nên quay quanh Ox cho vành khăn bán kính ngoài R=2, trong r=x. Diện tích A=π(R²−r²)=π(4−x²). V=π[x·4−x³/3]₀²=π(8−8/3)=16π/3. (R−r)²=4−4x+x² khác R²−r², không biểu diễn diện tích vành khăn; chỉ dùng π∫f² khi vùng chạm trục.
+**Lời giải:** Với \(x\in[0;2]\), \(y\) từ \(x\) tới 2 nên quay quanh \(Ox\) cho vành khăn bán kính ngoài \(R=2\), trong \(r=x\). Diện tích \(A=\pi(R^2-r^2)=\pi(4-x^2)\). \(V=\pi\left[4x-\frac{x^3}3\right]_0^2=\pi(8-\frac83)=\frac{16\pi}3\). \((R-r)^2=4-4x+x^2\) khác \(R^2-r^2\), không biểu diễn diện tích vành khăn; chỉ dùng \(\pi\int_a^b f(x)^2\,\mathrm dx\) khi vùng chạm trục.
 
 **Rubric /7:**
 1. Xác định miền và trục Ox (1đ)
-2. Bán kính ngoài R=2 (1đ)
-3. Bán kính trong r=x (1đ)
-4. Thiết lập π∫(4−x²) (1đ)
+2. Bán kính ngoài \(R=2\) (1đ)
+3. Bán kính trong \(r=x\) (1đ)
+4. Thiết lập \(\pi\int_0^2(4-x^2)\,\mathrm dx\) (1đ)
 5. Nguyên hàm đúng (1đ)
-6. V=16π/3 và đơn vị³ (1đ)
+6. \(V=\frac{16\pi}3\) và đơn vị³ (1đ)
 7. Giải thích sai khác giữa bình phương hiệu và hiệu bình phương (1đ)
 
-**Nếu làm sai:** Nếu vùng không chạm trục, trừ diện tích hai đĩa: π(R²−r²), không bình phương (R−r).
+**Nếu làm sai:** Nếu vùng không chạm trục, trừ diện tích hai đĩa: \(\pi(R^2-r^2)\), không bình phương \(R-r\).
 
 </details>
 
