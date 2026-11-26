@@ -18452,6 +18452,90 @@
       "remaining": "CD09–13 remaining 118 blocks; 18 missing skill tags CP71–72, full Practice/Replay field reconciliation, shared placements/depth/Written/SGK, global scan",
       "release_authorization": false,
       "item_refinement_commit": "6e1046ccfe9cbb0414d960d881135fc59c4878a5"
+    },
+    "source_delta_reconciliation_cp75": {
+      "scope": "CD09 current learner unkeyed Vận dụng; compare CD09 Practice, G11 ChIX public formative and 14 related Written stems",
+      "baseline_commit": "243cda3157088b533f35cceee31903c820b9ad48",
+      "item_commit": "df0e49f8373b4c0d947a9b7f0d0db92188d43750",
+      "sgk_reuse_refinement_commit": "79902b815a2df9a0351f49f49d59bffe26cdb2ff",
+      "placement_commit": "a7c4ad4a517eed415eb153529cd83fcb5ecaf5dd",
+      "sources": [
+        {
+          "topic": "CD09",
+          "learner_blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+          "blocks": 32,
+          "added": 28,
+          "reused": 4
+        }
+      ],
+      "reused_existing_ids": [
+        {
+          "order": 4,
+          "id": "THPT-G11-CHIX-B31-C04",
+          "d6_orders": [
+            11,
+            13
+          ]
+        },
+        {
+          "order": 15,
+          "id": "THPT-G11-CHIX-B32-P05",
+          "d6_orders": [
+            52
+          ]
+        },
+        {
+          "order": 29,
+          "id": "THPT-G11-CHIX-B33-C04",
+          "d6_orders": [
+            97,
+            99
+          ]
+        },
+        {
+          "order": 30,
+          "id": "THPT-G11-CHIX-B33-C05",
+          "d6_orders": [
+            101,
+            103
+          ]
+        }
+      ],
+      "reuse_note": "KFT04/15/29 same tasks as SGK C04/P05/C04; KFT30 negative-sign numeric instance of SGK C05, retain example in canonical solution. Four canonical SGK records strengthened without changing ID, original source, interaction or mathematical answer; historical projection unchanged. KFT15 D6 excludes self order 50, retains 52. Others differ in data/demand; no Written clone or modification.",
+      "academic_changes": [
+        "KFT01–03 average rate and h nonzero; KFT06 one-sided quotient; KFT08 tangent equation; KFT09/25 time and units; KFT12 finite derivative at boundary; KFT17–19/24 radians; KFT18/22/23 explicit domain, KFT27–28 two differentiation steps; KFT32 exact vi phân/actual increment/error confirmed."
+      ],
+      "checks": {
+        "item_shard_after": "f6e79e9240b32d410f62498c7e5bac5108923b05",
+        "placement_shard_after": "3de208353e2f415633bfa99e64f357aace64f83f",
+        "sgk_shard_after": "24816c74d696a08dd21f817644bd1aa5dd5e1406",
+        "existing_first_try_records_unchanged": 287,
+        "existing_first_try_placements_unchanged": 296,
+        "existing_sgk_records_unchanged": 61,
+        "existing_sgk_records_refined": 4,
+        "new_items": 28,
+        "new_placements": 32,
+        "unique_item_shard_records": 315,
+        "exact_one_new_item_placement": 28,
+        "d6_order_and_written_reference_resolved": 32,
+        "d6_self_reference_absent": 32,
+        "inline_and_display_math_delimiters_balanced_new_items": 28,
+        "auto_grade_false": 32,
+        "skill_tags_missing_new_items": 1,
+        "skill_note": "KFT32 vi phân source practice P32 has no confirmed canonical skill ID; preserve O32 and leave empty. Prior 18 CP71–72 also pending."
+      },
+      "progress": {
+        "topic_first_try_placements": 328,
+        "distinct_topic_first_try_shard_records": 315,
+        "total_inventoried_topic_first_try_blocks": 414,
+        "pending": 86,
+        "projected_bank_total_ids": 2457,
+        "projected_total_placements": 4079,
+        "counts_note": "CP74 projected 2429/4047 +28/+32; not fresh global scan"
+      },
+      "review_scope": "Scoped source, math, formative/Written stem comparison, D6 resolution; no fresh primary SGK/SBT PDF or Written rubric audit; no bank-wide Academic/PED PASS.",
+      "remaining": "CD10–13 remaining 86 blocks; 19 missing skill tags, full Practice/Replay field reconciliation, global scan, shared placements/depth/Written/SGK",
+      "release_authorization": false
     }
   }
 }
