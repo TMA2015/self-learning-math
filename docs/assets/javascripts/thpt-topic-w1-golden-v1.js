@@ -8,7 +8,7 @@ const config=document.querySelector(".topic-w1-release-nav[data-topic-w1][data-t
 if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
 const rw1Active=part==="kien-thuc";
-const rw1Math=()=>rw1Active?window.SLMTopicRW1Math:null;
+const rw1Math=()=>window.SLMTopicRW1Math;
 let rw1Prepared=false;
 const sizes={"02":{outcomes:16,items:38,replay:16,groups:4},"03":{outcomes:12,items:31,replay:12,groups:4},"04":{outcomes:18,items:75,replay:18,groups:5},"05":{outcomes:17,items:38,replay:17,groups:4}};
 const expected=sizes[topic];
@@ -40,7 +40,7 @@ const start=article?.querySelector("[data-topic-w1-source-start]"),end=article?.
 if(!article||!start||!end||start.dataset.ready==="1")return;
 const first=start.closest("p")||start,last=end.closest("p")||end;
 const create=(tag,cls,value)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(value!==undefined)x.textContent=String(value);return x};
-const renderMath=node=>{if(rw1Active){if(!rw1Math())throw Error("TOPIC_RW1_MATH_HELPER_MISSING");if(rw1Prepared)return rw1Math().typeset(node);return}const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
+const renderMath=node=>{if(!rw1Math())throw Error("TOPIC_RW1_MATH_HELPER_MISSING");if(!rw1Active||rw1Prepared)return rw1Math().typeset(node)};
 const sourceNodes=()=>{const nodes=[];for(let n=first.nextSibling;n&&n!==last;n=n.nextSibling)nodes.push(n);return nodes};
 const ready=()=>{start.dataset.ready="1";document.documentElement.classList.remove("topic-w1-pending","topic-w1-fallback");document.documentElement.classList.add("topic-w1-ready")};
 const safeFallback=error=>{console.error("TOPIC_W1_GOLDEN_HOLD",topic,part,error);document.documentElement.classList.remove("topic-w1-pending");document.documentElement.classList.add("topic-w1-fallback");let status=document.querySelector(".topic-w1-boot-status");if(status)status.textContent="Giao diện tương tác chưa tải được. Nội dung học liệu gốc vẫn có thể đọc bên dưới."};
@@ -52,24 +52,31 @@ const sourceRole=label=>{
  if(upper.startsWith("KIẾN THỨC CẦN GHI NHỚ")||upper.startsWith("GHI NHỚ")||upper.startsWith("LƯU Ý"))return["recap","thpt-r4-knowledge-conclusion"];
  return null;
 };
-const solutionContent=details=>{
- const out=create("div","thpt-r4-formative-reveal"),clone=details.cloneNode(true);clone.querySelector("summary")?.remove();
- for(const node of [...clone.childNodes]){
-  if(node.nodeType===1){out.append(document.importNode(node,true));continue}
-  if(node.nodeType!==3)continue;
-  for(const part of node.textContent.trim().split(/\n\s*\n/)){
-   if(!part.trim())continue;
-   const p=create("p");
-   for(const piece of part.split(/(\*\*[^*]+\*\*|\*[^*\n]+\*)/g)){
-    if(piece.startsWith("**")&&piece.endsWith("**")&&piece.length>4)p.append(create("strong","",piece.slice(2,-2)));
-    else if(piece.startsWith("*")&&piece.endsWith("*")&&piece.length>2)p.append(create("em","",piece.slice(1,-1)));
-    else p.append(piece.replace(/\n/g," ").replace(/&lt;/g,"<").replace(/&gt;/g,">"));
-   }
-   out.append(p);
-  }
+// Reuse the CĐ01 public source lifecycle and the existing serialized MathJax helper.
+function cloneSource(node){
+ if(node.nodeType!==1)return node.cloneNode(false);
+ if(node.matches("mjx-container")){
+  const item=[...(window.MathJax?.startup?.document?.math||[])].find(i=>i.typesetRoot===node);
+  if(!item||typeof item.math!=="string"||item.inputJax?.name!=="TeX")throw Error("TOPIC_W1_SOURCE_TEX_UNAVAILABLE");
+  return document.createTextNode((item.display?"\\[":"\\(")+item.math+(item.display?"\\]":"\\)"));
  }
+ const copy=node.cloneNode(false);
+ for(const child of node.childNodes)copy.append(cloneSource(child));
+ return copy;
+}
+function parkSource(shelf,nodes){
+ const template=create("template");shelf.append(template);
+ window.MathJax?.typesetClear?.(nodes.filter(n=>n.nodeType===1));
+ template.content.append(...nodes);
+}
+function clearMath(root){window.MathJax?.typesetClear?.([root])}
+function solutionContent(details){
+ const out=create("div","thpt-r4-formative-reveal"),clone=cloneSource(details);
+ rw1Math().disclosure(clone);
+ clone.querySelector(":scope > summary")?.remove();
+ out.append(...clone.childNodes);
  return out;
-};
+}
 function styleKnowledge(root){
  // A single MkDocs blockquote may contain several formal labels; split at every label.
  for(const quote of root.querySelectorAll("blockquote")){
@@ -183,14 +190,14 @@ function practiceBank(){
 function initPractice(){
  const golden=window.THPT_GOLDEN_RUNTIME;
  if(!golden?.bindDialog||!golden?.bindPager||!golden?.renderNav||!golden?.publicOnly)throw Error("Missing SGK Golden runtime");
- const bank=practiceBank();golden.publicOnly();
+ const bank=practiceBank();if(!rw1Math())throw Error('TOPIC_RW1_MATH_HELPER_MISSING');bank.items.forEach(q=>{q.nodes=q.nodes.map(cloneSource)});golden.publicOnly();
  const hub=create("section","topic01-golden-hub topic-w1-practice-hub"),grid=create("div","thpt-r4-practice-sections topic01-golden-grid");
  hub.dataset.topicW1Practice="1";hub.append(grid);
  const shelf=create("div","topic-w1-source-shelf");shelf.hidden=true;shelf.setAttribute("aria-hidden","true");
  bank.headings[0].before(hub,shelf);
  // Original canonical source is only moved, never changed or re-serialized.
  const fromFirst=bank.nodes.slice(bank.nodes.indexOf(bank.headings[0]));
- fromFirst.forEach(n=>shelf.append(n));
+ parkSource(shelf,fromFirst);
  const buttons=bank.groups.map((g,i)=>{
   const wrap=create("section","thpt-r4-practice-lesson");wrap.dataset.thptGrade="10";
   const header=create("div","thpt-r4-practice-lesson-header"),meta=create("div");
@@ -212,13 +219,13 @@ function initPractice(){
  const prev=create("button","","← Bài trước"),next=create("button","","Bài tiếp →");prev.type=next.type="button";
  const render=()=>{
   const g=bank.groups[group],q=g.items[cursor],source=q.nodes.find(n=>n.nodeType===1&&n.tagName==="DETAILS");if(!source)throw Error("Missing source solution");
-  badge.textContent=String(group+1);title.textContent=g.title.replace(/^\d+\.\s*/,"");body.replaceChildren(create("p","thpt-r4-modal-progress","Câu "+(cursor+1)+" / "+g.items.length));
+  badge.textContent=String(group+1);title.textContent=g.title.replace(/^\d+\.\s*/,"");clearMath(body);body.replaceChildren(create("p","thpt-r4-modal-progress","Câu "+(cursor+1)+" / "+g.items.length));
   const nav=create("div","thpt-r4-modal-question-nav");golden.renderNav({container:nav,count:g.items.length,index:cursor,label:i=>String(i+1),onSelect:i=>{cursor=i;render()}});body.append(nav);
   const card=create("article","md-typeset thpt-r4-reviewed-formative-card topic-w1-question-body");card.dataset.topicW1CurrentItem=String(q.number);card.dataset.thptCanonicalItem=q.id;card.append(create("h3","","Bài "+q.number+"."));
    const stemLabel=create("p","topic-w1-stem-label");stemLabel.append(create("strong","","Đề bài"));card.append(stemLabel);
   for(const n of q.nodes.slice(1))if(n.nodeType===3||n.nodeType===1&&n.tagName!=="DETAILS")card.append(n.cloneNode(true));
   const actions=create("div","thpt-r4-formative-actions"),details=create("details"),solution=solutionContent(source);
-  details.append(create("summary","","📖 Đáp án / Lời giải"),solution);
+  details.dataset.topicRw1Managed="1";details.append(create("summary","","📖 Đáp án / Lời giải"),solution);
   const remed=create("a","thpt-r4-remediation-link","↶ Ôn lại kiến thức");remed.href="../kien-thuc/";
   actions.append(details,remed);card.append(actions);body.append(card);
   details.addEventListener("toggle",()=>{if(details.open)renderMath(solution)});
@@ -238,19 +245,27 @@ function readReplay(){
   if(p?.tagName!=="P")throw Error("Public replay no paragraph "+id);
   const m=p.querySelector(":scope > strong")?.textContent?.match(/^Câu (\d+)\./),number=Number(m?.[1]);
   if(!number)throw Error("Public replay missing number "+id);
-  const stem=p.cloneNode(true);stem.querySelector(":scope > strong")?.remove();items.push({id,number,stem});
+  const stem=cloneSource(p);stem.querySelector(":scope > strong")?.remove();
+  const stemNodes=[stem];
+  // Preserve every signed item block including separate option paragraphs.
+  for(let q=p.nextSibling;q&&q!==last;q=q.nextSibling){
+   if(q.nodeType===8&&/PUBLIC_REPLAY_ONLY:|APPROVED_SOURCE_END/.test(q.textContent))break;
+   if(q.nodeType===1&&q.matches("details"))break;
+   if(q.nodeType===1||q.nodeType===3&&q.textContent.trim())stemNodes.push(cloneSource(q));
+  }
+  items.push({id,number,stemNodes});
  }
  if(items.length!==expected.replay||items.some((x,i)=>x.number!==i+1)||new Set(items.map(x=>x.id)).size!==expected.replay)throw Error("Public replay Q15/Q16 count/ID mismatch");
  return{items,nodes};
 }
 function initSelfcheck(){
- const info=readReplay(),items=info.items;
+ if(!rw1Math())throw Error('TOPIC_RW1_MATH_HELPER_MISSING');const info=readReplay(),items=info.items;
  const root=create("section","topic-w1-selfcheck");root.dataset.topicW1Selfcheck="1";root.dataset.g10ChapterSelfcheck="TOP"+topic;root.dataset.g10scBound="topic-public-replay";
  root.append(create("h2","g10sc-heading","Tự kiểm tra chuyên đề "+topic),create("p","g10sc-notice","Em tự làm từng câu trên giấy trước khi mở Đối chiếu. Đây là bài công khai để tự ôn, không phải đánh giá độc lập hay ghi Mastery."));
  const progress=create("p","g10sc-progress"),nav=create("div","g10sc-jump"),body=create("section","g10sc-body"),actions=create("div","g10sc-controls"),prev=create("button","g10sc-button","Câu trước"),next=create("button","g10sc-button","Câu tiếp");
  prev.type=next.type="button";actions.append(prev,next);root.append(progress,nav,body,actions);
  const shelf=create("div","topic-w1-selfcheck-source-shelf");shelf.hidden=true;shelf.setAttribute("aria-hidden","true");
- first.after(root,shelf);info.nodes.forEach(n=>shelf.append(n));
+ first.after(root,shelf);parkSource(shelf,info.nodes);
  let cursor=0,practiceCache=null;
  async function publicAnswer(id){
   if(!items.some(q=>q.id===id))throw Error("Unapproved replay "+id);
@@ -275,15 +290,15 @@ function initSelfcheck(){
  const render=()=>{
   const q=items[cursor];progress.textContent="Câu "+(cursor+1)+" / "+items.length;nav.replaceChildren();
   items.forEach((_,i)=>{const b=create("button","g10sc-jump-button"+(i===cursor?" is-current":""),i+1);b.type="button";b.setAttribute("aria-label","Đến câu "+(i+1));if(i===cursor)b.setAttribute("aria-current","true");b.onclick=()=>{cursor=i;render()};nav.append(b)});
-  body.replaceChildren(create("h3","","Câu "+q.number));
+  clearMath(body);body.replaceChildren(create("h3","","Câu "+q.number));
    const stemLabel=create("p","topic-w1-stem-label");stemLabel.append(create("strong","","Đề bài"));body.append(stemLabel);
   body.dataset.thptCanonicalItem=q.id;
-  const rich=create("div","g10sc-rich");rich.append(q.stem.cloneNode(true));body.append(rich);
+  const rich=create("div","g10sc-rich");rich.append(...q.stemNodes.map(n=>n.cloneNode(true)));body.append(rich);
   const button=create("button","g10sc-button g10sc-final","Đối chiếu"),solution=create("section","g10sc-review");button.type="button";solution.hidden=true;solution.id="topic-w1-solution-"+topic;solution.dataset.topicW1Solution="";
   button.setAttribute("aria-controls",solution.id);button.setAttribute("aria-expanded","false");body.append(button,solution);
   button.onclick=async()=>{if(!solution.hidden){solution.hidden=true;button.textContent="Đối chiếu";button.setAttribute("aria-expanded","false");return}
    button.disabled=true;
-   try{const answer=await publicAnswer(q.id);if(!solution.isConnected)return;solution.replaceChildren(...answer.childNodes);solution.dataset.thptCanonicalSolution=q.id;solution.hidden=false;button.textContent="Ẩn đối chiếu";button.setAttribute("aria-expanded","true");renderMath(solution)}
+   try{if(solution.dataset.thptCanonicalSolution!==q.id){const answer=await publicAnswer(q.id);if(!solution.isConnected)return;clearMath(solution);solution.replaceChildren(...answer.childNodes);solution.dataset.thptCanonicalSolution=q.id;}solution.hidden=false;button.textContent="Ẩn đối chiếu";button.setAttribute("aria-expanded","true");renderMath(solution)}
    catch(error){console.error("TOPIC_W1_PUBLIC_REPLAY_HOLD",error);if(solution.isConnected){solution.replaceChildren(create("p","g10sc-error","Chưa tải được lời giải công khai. Em có thể thử lại hoặc mở Luyện tập."));solution.hidden=false;button.textContent="Ẩn đối chiếu";button.setAttribute("aria-expanded","true")}}
    finally{button.disabled=false}};
   prev.disabled=cursor===0;next.disabled=cursor===items.length-1;renderMath(body);

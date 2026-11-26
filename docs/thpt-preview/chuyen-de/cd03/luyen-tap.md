@@ -36,7 +36,7 @@ hide:
 <span data-topic-w1-source-start="luyen-tap" hidden></span>
 
 <!-- TOPIC03_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 38f41f013e75b42605d7a88f9205c20af6315a41; Q18_RECEIPT_BLOB ef40b5871762558959108cf1879155c7e14158fe; AUTHORING_PR #888; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB bd3b88b635b203872a9afa5893cc1e3af3e7d7c6; Q18_RECEIPT_BLOB 28c43a014a015b1c81986e0b9c7b7127c3dfe55b; AUTHORING_PR #888; PUBLIC_PROJECTION_ONLY -->
 
 # Luyện tập
 
@@ -48,13 +48,13 @@ Em hãy làm từng bài trước khi mở **Lời giải**. Khi bình phương 
 
 **Bài 1.**
 
-Giải 2x+6=14 và chỉ rõ phép biến đổi tương đương.
+Giải \(2x+6=14\) và chỉ rõ phép biến đổi tương đương.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={4}.
+**Đáp án:** \(S=\{4\}\).
 
-Trừ 6 ở cả hai vế: 2x=8; chia 2>0 (với phương trình, chỉ cần chia số khác 0) được x=4. Thay 2·4+6=14. Cả hai bước đều đảo ngược được nên tập nghiệm giữ nguyên.
+Trừ 6 ở cả hai vế: \(2x=8\); chia \(2>0\) (với phương trình, chỉ cần chia số khác 0) được \(x=4\). Thay \(2\cdot4+6=14\). Cả hai bước đều đảo ngược được nên tập nghiệm giữ nguyên.
 
 </details>
 
@@ -62,13 +62,13 @@ Trừ 6 ở cả hai vế: 2x=8; chia 2>0 (với phương trình, chỉ cần ch
 
 **Bài 2.**
 
-So sánh tập nghiệm của x=3 và x²=9. Có được thay kí hiệu kéo theo bằng tương đương khi bình phương không?
+So sánh tập nghiệm của \(x=3\) và \(x^2=9\). Có được thay kí hiệu kéo theo bằng tương đương khi bình phương không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=3 có S₁={3}; x²=9 có S₂={−3,3}; không tương đương.
+**Đáp án:** \(x=3\) có \(S_1=\{3\}\); \(x^2=9\) có \(S_2=\{-3;3\}\); không tương đương.
 
-Từ x=3 suy ra x²=9, nhưng từ x²=9 chỉ suy ra x=±3. Phép bình phương mất thông tin dấu; muốn biến đổi hai chiều phải thêm điều kiện x≥0 trong ví dụ này.
+Từ \(x=3\) suy ra \(x^2=9\), nhưng từ \(x^2=9\) chỉ suy ra \(x=\pm3\). Phép bình phương mất thông tin dấu; muốn biến đổi hai chiều phải thêm điều kiện \(x\ge0\) trong ví dụ này.
 
 </details>
 
@@ -76,13 +76,13 @@ Từ x=3 suy ra x²=9, nhưng từ x²=9 chỉ suy ra x=±3. Phép bình phươn
 
 **Bài 3.**
 
-Giải 3(x−2)=2x+5 và thử lại nghiệm.
+Giải \(3(x-2)=2x+5\) và thử lại nghiệm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={11}.
+**Đáp án:** \(S=\{11\}\).
 
-Khai triển 3x−6=2x+5 ⇔ x=11. Thay: 3·9=27 và 2·11+5=27. Phép chuyển vế, thu gọn là tương đương trên ℝ.
+Khai triển \(3x-6=2x+5\Leftrightarrow x=11\). Thay: \(3\cdot9=27\) và \(2\cdot11+5=27\). Phép chuyển vế, thu gọn là tương đương trên \(\mathbb R\).
 
 </details>
 
@@ -90,13 +90,13 @@ Khai triển 3x−6=2x+5 ⇔ x=11. Thay: 3·9=27 và 2·11+5=27. Phép chuyển 
 
 **Bài 4.**
 
-Biện luận phương trình mx=2m theo tham số thực m.
+Biện luận phương trình \(mx=2m\) theo tham số thực m.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Nếu m≠0 thì S={2}; nếu m=0 thì S=ℝ.
+**Đáp án:** Nếu \(m\ne0\) thì \(S=\{2\}\); nếu \(m=0\) thì \(S=\mathbb R\).
 
-Với m≠0, chia cả hai vế cho m được x=2. Với m=0, phương trình là 0=0, mọi số thực đều thỏa. Không được chia cho biểu thức có thể bằng 0.
+Với \(m\ne0\), chia cả hai vế cho m được \(x=2\). Với \(m=0\), phương trình là \(0=0\), mọi số thực đều thỏa. Không được chia cho biểu thức có thể bằng 0.
 
 </details>
 
@@ -104,13 +104,13 @@ Với m≠0, chia cả hai vế cho m được x=2. Với m=0, phương trình l
 
 **Bài 5.**
 
-Giải (x−2)(2x+3)=0.
+Giải \((x-2)(2x+3)=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={2,−3/2}.
+**Đáp án:** \(S=\{2;-\frac32\}\).
 
-Tích bằng 0 khi ít nhất một thừa số bằng 0. x−2=0 ⇒ x=2; 2x+3=0 ⇒ x=−3/2. Cả hai làm tích bằng 0.
+Tích bằng 0 khi ít nhất một thừa số bằng 0. \(x-2=0\Rightarrow x=2\); \(2x+3=0\Rightarrow x=-\frac32\). Cả hai làm tích bằng 0.
 
 </details>
 
@@ -118,13 +118,13 @@ Tích bằng 0 khi ít nhất một thừa số bằng 0. x−2=0 ⇒ x=2; 2x+3=
 
 **Bài 6.**
 
-Giải (x−1)²(x+4)=0; nghiệm kép có đếm là hai nghiệm phân biệt không?
+Giải \((x-1)^2(x+4)=0\); nghiệm kép có đếm là hai nghiệm phân biệt không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={1,−4}; chỉ 2 giá trị phân biệt.
+**Đáp án:** \(S=\{1;-4\}\); chỉ 2 giá trị phân biệt.
 
-(x−1)²=0 ⇔ x=1; x+4=0 ⇔ x=−4. Bội của nghiệm 1 là 2 nhưng tập nghiệm chỉ ghi mỗi giá trị một lần.
+\((x-1)^2=0\Leftrightarrow x=1\); \(x+4=0\Leftrightarrow x=-4\). Bội của nghiệm 1 là 2 nhưng tập nghiệm chỉ ghi mỗi giá trị một lần.
 
 </details>
 
@@ -132,13 +132,13 @@ Giải (x−1)²(x+4)=0; nghiệm kép có đếm là hai nghiệm phân biệt 
 
 **Bài 7.**
 
-Giải 2x²−5x−3=0 bằng biệt thức hoặc phân tích nhân tử.
+Giải \(2x^2-5x-3=0\) bằng biệt thức hoặc phân tích nhân tử.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={−1/2,3}.
+**Đáp án:** \(S=\{-\frac12;3\}\).
 
-Δ=(−5)²−4·2·(−3)=49. x=(5±7)/4 cho 3 và −1/2. Đồng thời (2x+1)(x−3)=0; hai cách đối chiếu nhau.
+\(\Delta=(-5)^2-4\cdot2\cdot(-3)=49\). \(x=\frac{5\pm7}{4}\) cho 3 và \(-\frac12\). Đồng thời \((2x+1)(x-3)=0\); hai cách đối chiếu nhau.
 
 </details>
 
@@ -146,13 +146,13 @@ Giải 2x²−5x−3=0 bằng biệt thức hoặc phân tích nhân tử.
 
 **Bài 8.**
 
-Tìm tập nghiệm thực của x²+2x+5=0; giải thích vì sao vô nghiệm.
+Tìm tập nghiệm thực của \(x^2+2x+5=0\); giải thích vì sao vô nghiệm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S=∅ trên ℝ.
+**Đáp án:** \(S=\varnothing\) trên \(\mathbb R\).
 
-Δ=2²−4·1·5=−16&lt;0, nên không có nghiệm thực; hoặc (x+1)²+4=0 là bất khả thi vì vế trái ≥4.
+\(\Delta=2^2-4\cdot1\cdot5=-16&lt;0\), nên không có nghiệm thực; hoặc \((x+1)^2+4=0\) là bất khả thi vì vế trái ≥4.
 
 </details>
 
@@ -162,13 +162,13 @@ Tìm tập nghiệm thực của x²+2x+5=0; giải thích vì sao vô nghiệm.
 
 **Bài 9.**
 
-Giải (x²−4)/(x−2)=0. Giải thích vì sao x=2 bị loại.
+Giải \(\frac{x^2-4}{x-2}=0\). Giải thích vì sao \(x=2\) bị loại.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={−2}.
+**Đáp án:** \(S=\{-2\}\).
 
-Điều kiện x≠2. Tử (x−2)(x+2)=0 cho x=2 hoặc −2; chỉ −2 hợp miền. Rút gọn thành x+2=0 chỉ được dùng trên miền x≠2, không tự lấp lỗ x=2.
+Điều kiện \(x\ne2\). Tử \((x-2)(x+2)=0\) cho \(x=2\) hoặc \(x=-2\); chỉ −2 hợp miền. Rút gọn thành \(x+2=0\) chỉ được dùng trên miền \(x\ne2\), không tự lấp lỗ \(x=2\).
 
 </details>
 
@@ -176,13 +176,13 @@ Giải (x²−4)/(x−2)=0. Giải thích vì sao x=2 bị loại.
 
 **Bài 10.**
 
-Giải 1/(x−1)+1/(x+1)=1 trong ℝ.
+Giải \(\frac1{x-1}+\frac1{x+1}=1\) trong \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={1−√2,1+√2}.
+**Đáp án:** \(S=\{1-\sqrt2;1+\sqrt2\}\).
 
-Điều kiện x≠±1. Quy đồng thành 2x/(x²−1)=1; nhân với mẫu khác 0 cho 2x=x²−1 ⇒ x²−2x−1=0 ⇒ x=1±√2. Hai nghiệm đều khác ±1 nên được nhận.
+Điều kiện \(x\ne\pm1\). Quy đồng thành \(\frac{2x}{x^2-1}=1\); nhân với mẫu khác 0 cho \(2x=x^2-1\Rightarrow x^2-2x-1=0\Rightarrow x=1\pm\sqrt2\). Hai nghiệm đều khác ±1 nên được nhận.
 
 </details>
 
@@ -190,13 +190,13 @@ Giải 1/(x−1)+1/(x+1)=1 trong ℝ.
 
 **Bài 11.**
 
-Giải |2x−3|=5.
+Giải \(\lvert2x-3\rvert=5\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={−1,4}.
+**Đáp án:** \(S=\{-1;4\}\).
 
-Vì 5≥0, |2x−3|=5 ⇔ 2x−3=5 hoặc 2x−3=−5. Hai nhánh cho x=4 và x=−1; thử lại cả hai có giá trị tuyệt đối 5.
+Vì \(5\ge0\), \(\lvert2x-3\rvert=5\) khi và chỉ khi \(2x-3=5\) hoặc \(2x-3=-5\). Hai nhánh cho \(x=4\) và \(x=-1\); thử lại cả hai có giá trị tuyệt đối 5.
 
 </details>
 
@@ -204,13 +204,13 @@ Vì 5≥0, |2x−3|=5 ⇔ 2x−3=5 hoặc 2x−3=−5. Hai nhánh cho x=4 và x=
 
 **Bài 12.**
 
-Giải |x−2|=x.
+Giải \(\lvert x-2\rvert=x\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={1}.
+**Đáp án:** \(S=\{1\}\).
 
-Vế trái ≥0 nên x≥0. Nếu x≥2 thì |x−2|=x−2, không thể bằng x; nếu 0≤x&lt;2 thì |x−2|=2−x=x ⇒ x=1 hợp miền. Thử |−1|=1.
+Vế trái ≥0 nên \(x\ge0\). Nếu \(x\ge2\) thì \(\lvert x-2\rvert=x-2\), không thể bằng x; nếu \(0\le x&lt;2\) thì \(\lvert x-2\rvert=2-x=x\Rightarrow x=1\) hợp miền. Thử \(\lvert-1\rvert=1\).
 
 </details>
 
@@ -220,11 +220,11 @@ Vế trái ≥0 nên x≥0. Nếu x≥2 thì |x−2|=x−2, không thể bằng 
 
 **Bài 13.**
 
-Giải √(x+5)=x−1 trong ℝ.
+Giải \(\sqrt{x+5}=x-1\) trong \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-S={4}. Điều kiện x≥1; bình phương x+5=(x−1)² ⇔ (x−4)(x+1)=0. Loại −1; thử x=4 được 3=3.
+\(S=\{4\}\). Điều kiện \(x\ge1\); bình phương \(x+5=(x-1)^2\Leftrightarrow (x-4)(x+1)=0\). Loại −1; thử \(x=4\) được \(3=3\).
 
 </details>
 
@@ -232,11 +232,11 @@ S={4}. Điều kiện x≥1; bình phương x+5=(x−1)² ⇔ (x−4)(x+1)=0. Lo
 
 **Bài 14.**
 
-Giải √((x+4)²)=√(x+4) trong ℝ.
+Giải \(\sqrt{(x+4)^2}=\sqrt{x+4}\) trong \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-S={−4;−3}. Điều kiện x+4≥0. Đặt u=x+4≥0: u²=u ⇒ u=0 hoặc 1; hai giá trị đều thỏa.
+\(S=\{-4;-3\}\). Điều kiện \(x+4\ge0\). Đặt \(u=x+4\ge0\): \(u^2=u\) cho \(u=0\) hoặc \(u=1\); hai giá trị đều thỏa.
 
 </details>
 
@@ -244,11 +244,11 @@ S={−4;−3}. Điều kiện x+4≥0. Đặt u=x+4≥0: u²=u ⇒ u=0 hoặc 1;
 
 **Bài 15.**
 
-Giải √(3x+4)=x.
+Giải \(\sqrt{3x+4}=x\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-S={4}. Điều kiện x≥0, bình phương được (x−4)(x+1)=0; loại −1, thử x=4: √16=4.
+\(S=\{4\}\). Điều kiện \(x\ge0\), bình phương được \((x-4)(x+1)=0\); loại −1, thử \(x=4\): \(\sqrt{16}=4\).
 
 </details>
 
@@ -256,11 +256,11 @@ S={4}. Điều kiện x≥0, bình phương được (x−4)(x+1)=0; loại −1
 
 **Bài 16.**
 
-Giải √(2x²+9)=x+3.
+Giải \(\sqrt{2x^2+9}=x+3\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-S={0;6}. Điều kiện x≥−3; bình phương được x(x−6)=0; thử x=0 và x=6 đều đúng.
+\(S=\{0;6\}\). Điều kiện \(x\ge-3\); bình phương được \(x(x-6)=0\); thử \(x=0\) và \(x=6\) đều đúng.
 
 </details>
 
@@ -268,11 +268,11 @@ S={0;6}. Điều kiện x≥−3; bình phương được x(x−6)=0; thử x=0 
 
 **Bài 17.**
 
-Giải trên ℝ: √(x²+7x+11)=√(x+3).
+Giải trên \(\mathbb R\): \(\sqrt{x^2+7x+11}=\sqrt{x+3}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-S={−2}. Bình phương được (x+2)(x+4)=0; ứng viên −4 làm căn x+3 có radicand −1, loại; x=−2 thỏa cả hai vế bằng 1.
+\(S=\{-2\}\). Bình phương được \((x+2)(x+4)=0\); ứng viên −4 làm căn \(\sqrt{x+3}\) có biểu thức dưới căn bằng −1, loại; \(x=-2\) thỏa cả hai vế bằng 1.
 
 </details>
 
@@ -280,11 +280,11 @@ S={−2}. Bình phương được (x+2)(x+4)=0; ứng viên −4 làm căn x+3 c
 
 **Bài 18.**
 
-Giải trong ℝ phương trình √(x²+4x+4)=√(2x+4). Nêu điều kiện và kiểm tra nghiệm.
+Giải trong \(\mathbb R\) phương trình \(\sqrt{x^2+4x+4}=\sqrt{2x+4}\). Nêu điều kiện và kiểm tra nghiệm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-&lt;p>Điều kiện x≥−2. Bình phương (x+2)²=2x+4 ⇔ x²+2x=0 ⇔ x(x+2)=0; ứng viên x=0 và x=−2 đều đạt điều kiện và thay lại lần lượt được 2=2 và 0=0. S={−2;0}.&lt;/p>
+Điều kiện \(x\ge-2\). Bình phương \((x+2)^2=2x+4\Leftrightarrow x^2+2x=0\Leftrightarrow x(x+2)=0\); ứng viên \(x=0\) và \(x=-2\) đều đạt điều kiện và thay lại lần lượt được \(2=2\) và \(0=0\). \(S=\{-2;0\}\).
 &lt;table>&lt;thead>&lt;tr>&lt;th>Tiêu chí&lt;/th>&lt;th>Điểm&lt;/th>&lt;/tr>&lt;/thead>&lt;tbody>&lt;tr>&lt;td>Điều kiện xác định&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Bình phương đúng&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Tìm nghiệm ứng viên&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Thử lại hai nghiệm&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Tập nghiệm và kết luận&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
 </details>
@@ -293,13 +293,13 @@ Giải trong ℝ phương trình √(x²+4x+4)=√(2x+4). Nêu điều kiện v�
 
 **Bài 19.**
 
-Giải √(x+2)=x; chỉ rõ nghiệm ngoại lai sau bình phương.
+Giải \(\sqrt{x+2}=x\); chỉ rõ nghiệm ngoại lai sau bình phương.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={2}. Nghiệm ứng viên −1 bị loại.
+**Đáp án:** \(S=\{2\}\). Nghiệm ứng viên −1 bị loại.
 
-Vế phải là x nên bắt buộc x≥0. Bình phương x+2=x² ⇔ (x−2)(x+1)=0 ⇒ x=2 hoặc −1; chỉ x=2 hợp dấu vế phải, thử √4=2. −1 cho √1=1≠−1.
+Vế phải là x nên bắt buộc \(x\ge0\). Bình phương \(x+2=x^2\Leftrightarrow (x-2)(x+1)=0\), suy ra \(x=2\) hoặc \(x=-1\); chỉ \(x=2\) hợp dấu vế phải, thử \(\sqrt4=2\). Với −1, \(\sqrt1=1\ne-1\).
 
 </details>
 
@@ -307,13 +307,13 @@ Vế phải là x nên bắt buộc x≥0. Bình phương x+2=x² ⇔ (x−2)(x+
 
 **Bài 20.**
 
-Giải √(x²)=x trong ℝ.
+Giải \(\sqrt{x^2}=x\) trong \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S=[0,+∞).
+**Đáp án:** \(S=[0;+\infty)\).
 
-√(x²)=|x|, không tự bằng x khi x âm. Điều kiện |x|=x ⇔ x≥0. Với x=−2, vế trái 2 còn vế phải −2, không bằng.
+\(\sqrt{x^2}=\lvert x\rvert\), không tự bằng x khi x âm. Điều kiện \(\lvert x\rvert=x\Leftrightarrow x\ge0\). Với \(x=-2\), vế trái 2 còn vế phải −2, không bằng.
 
 </details>
 
@@ -321,13 +321,13 @@ Giải √(x²)=x trong ℝ.
 
 **Bài 21.**
 
-Giải √(3x+1)=√(x+7) trong ℝ.
+Giải \(\sqrt{3x+1}=\sqrt{x+7}\) trong \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={3}.
+**Đáp án:** \(S=\{3\}\).
 
-Điều kiện 3x+1≥0 và x+7≥0 ⇒ x≥−1/3. Hai căn không âm bằng nhau iff 3x+1=x+7 ⇒ x=3. Thử hai vế √10 bằng nhau.
+Điều kiện \(3x+1\ge0\) và \(x+7\ge0\), suy ra \(x\ge-\frac13\). Hai căn không âm bằng nhau khi và chỉ khi \(3x+1=x+7\Rightarrow x=3\). Thử hai vế \(\sqrt{10}\) bằng nhau.
 
 </details>
 
@@ -335,13 +335,13 @@ Giải √(3x+1)=√(x+7) trong ℝ.
 
 **Bài 22.**
 
-Giải √(5x+4)=x+2. Phương trình có thể có hai nghiệm hay không?
+Giải \(\sqrt{5x+4}=x+2\). Phương trình có thể có hai nghiệm hay không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={0,1}.
+**Đáp án:** \(S=\{0;1\}\).
 
-Điều kiện x+2≥0 và 5x+4≥0. Bình phương 5x+4=(x+2)² ⇒ x²−x=0 ⇒ x=0 hoặc 1. Cả hai thỏa: √4=2=0+2, √9=3=1+2. Không được mặc định một căn có đúng một nghiệm.
+Điều kiện \(x+2\ge0\) và \(5x+4\ge0\). Bình phương \(5x+4=(x+2)^2\Rightarrow x^2-x=0\), suy ra \(x=0\) hoặc \(x=1\). Cả hai thỏa: \(\sqrt4=2=0+2\), \(\sqrt9=3=1+2\). Không được mặc định một căn có đúng một nghiệm.
 
 </details>
 
@@ -349,13 +349,13 @@ Giải √(5x+4)=x+2. Phương trình có thể có hai nghiệm hay không?
 
 **Bài 23.**
 
-Giải √(x+4)=√(x²+5x+2) trong ℝ và xác định nghiệm ứng viên không hợp lệ.
+Giải \(\sqrt{x+4}=\sqrt{x^2+5x+2}\) trong \(\mathbb R\) và xác định nghiệm ứng viên không hợp lệ.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={−2+√6}; −2−√6 bị loại.
+**Đáp án:** \(S=\{-2+\sqrt6\}\); \(-2-\sqrt6\) bị loại.
 
-Điều kiện x+4≥0 và x²+5x+2≥0. Bình phương x+4=x²+5x+2 ⇔ x²+4x−2=0 ⇒ x=−2±√6. Với −2−√6&lt;−4, x+4&lt;0, không có căn thực. Với −2+√6>−4, hai radicand cùng bằng x+4=2+√6>0 nên nhận.
+Điều kiện \(x+4\ge0\) và \(x^2+5x+2\ge0\). Bình phương \(x+4=x^2+5x+2\Leftrightarrow x^2+4x-2=0\Rightarrow x=-2\pm\sqrt6\). Với \(-2-\sqrt6&lt;-4\), \(x+4&lt;0\), không có căn thực. Với \(-2+\sqrt6>-4\), hai biểu thức dưới căn cùng bằng \(x+4=2+\sqrt6>0\) nên nhận.
 
 </details>
 
@@ -363,13 +363,13 @@ Giải √(x+4)=√(x²+5x+2) trong ℝ và xác định nghiệm ứng viên kh
 
 **Bài 24.**
 
-Giải √(x²+9)=x−1; vì sao phương trình đại số sau bình phương có nghiệm mà phương trình gốc vô nghiệm?
+Giải \(\sqrt{x^2+9}=x-1\); vì sao phương trình đại số sau bình phương có nghiệm mà phương trình gốc vô nghiệm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S=∅.
+**Đáp án:** \(S=\varnothing\).
 
-Bên phải x−1 phải ≥0 ⇒ x≥1. Bình phương x²+9=(x−1)² ⇒ 9=−2x+1 ⇒ x=−4, trái x≥1. Trực tiếp tại −4: căn √25=5 còn −4−1=−5. Không có nghiệm.
+Bên phải \(x-1\) phải không âm, nên \(x\ge1\). Bình phương \(x^2+9=(x-1)^2\Rightarrow 9=-2x+1\Rightarrow x=-4\), trái \(x\ge1\). Trực tiếp tại −4: căn \(\sqrt{25}=5\) còn \(-4-1=-5\). Không có nghiệm.
 
 </details>
 
@@ -377,15 +377,15 @@ Bên phải x−1 phải ≥0 ⇒ x≥1. Bình phương x²+9=(x−1)² ⇒ 9=�
 
 **Bài 25.**
 
-So sánh tập nghiệm thực của (A) √(x+7)=x−1 và (B) √(x+7)=|x−1|. (a) Viết miền xác định và điều kiện dấu cho mỗi phương trình. (b) Bình phương và giải phương trình chung. (c) Lọc nghiệm của từng phương trình bằng phép thế và giải thích tại sao hai tập nghiệm khác nhau.
+So sánh tập nghiệm thực của (A) \(\sqrt{x+7}=x-1\) và (B) \(\sqrt{x+7}=\lvert x-1\rvert\). (a) Viết miền xác định và điều kiện dấu cho mỗi phương trình. (b) Bình phương và giải phương trình chung. (c) Lọc nghiệm của từng phương trình bằng phép thế và giải thích tại sao hai tập nghiệm khác nhau.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** Đặt r₋=(3−√33)/2, r₊=(3+√33)/2. S_A={r₊}; S_B={r₋,r₊}.
+**Đáp án:** Đặt \(r_-=\frac{3-\sqrt{33}}2\), \(r_+=\frac{3+\sqrt{33}}2\). \(S_A=\{r_+\}\); \(S_B=\{r_-;r_+\}\).
 
-Hai phương trình đều cần x+7≥0. (A) còn cần x−1≥0 ⇒ x≥1; (B) có vế phải |x−1|≥0 tự động. Bình phương cho x+7=(x−1)² ⇔ x²−3x−6=0 ⇒ r₋,r₊. Vì √33>5 nên r₋=(3−√33)/2&lt;−1&lt;1, nhưng r₋>−7 (do √33&lt;17) nên chỉ (B) nhận r₋; r₊>1 nhận cả hai. Tại mỗi nghiệm, x+7=(x−1)²≥0 nên √(x+7)=|x−1|. Với (A) r₋ sai vì x−1 âm; r₊ đúng.
+Hai phương trình đều cần \(x+7\ge0\). (A) còn cần \(x-1\ge0\Rightarrow x\ge1\); (B) có vế phải \(\lvert x-1\rvert\ge0\) tự động. Bình phương cho \(x+7=(x-1)^2\Leftrightarrow x^2-3x-6=0\), thu được \(r_-\), \(r_+\). Vì \(\sqrt{33}>5\) nên \(r_-=\frac{3-\sqrt{33}}2&lt;-1&lt;1\), nhưng \(r_->-7\) (do \(\sqrt{33}&lt;17\)) nên chỉ (B) nhận \(r_-\); \(r_+>1\) nhận cả hai. Tại mỗi nghiệm, \(x+7=(x-1)^2\ge0\) nên \(\sqrt{x+7}=\lvert x-1\rvert\). Với (A), \(r_-\) sai vì \(x-1\) âm; \(r_+\) đúng.
 
-**Rubric tự đối chiếu:** 7 điểm: miền x≥−7 và điều kiện x≥1 riêng (A) (2đ); bình phương và nghiệm r₋,r₊ đúng (2đ); S_A có đúng một nghiệm với lập luận dấu (1đ); S_B có hai nghiệm, kiểm (B) (1đ); giải thích phép bình phương không tương đương nếu bỏ điều kiện dấu (1đ).
+**Rubric tự đối chiếu:** 7 điểm: miền \(x\ge-7\) và điều kiện \(x\ge1\) riêng (A) (2đ); bình phương và nghiệm \(r_-\), \(r_+\) đúng (2đ); \(S_A\) có đúng một nghiệm với lập luận dấu (1đ); \(S_B\) có hai nghiệm, kiểm (B) (1đ); giải thích phép bình phương không tương đương nếu bỏ điều kiện dấu (1đ).
 
 </details>
 
@@ -395,11 +395,11 @@ Hai phương trình đều cần x+7≥0. (A) còn cần x−1≥0 ⇒ x≥1; (B
 
 **Bài 26.**
 
-Tam giác vuông có hai cạnh góc vuông dài x>0 mét và 3 mét; cạnh huyền dài x+1 mét. Tìm x.
+Tam giác vuông có hai cạnh góc vuông dài \(x>0\) mét và 3 mét; cạnh huyền dài \(x+1\) mét. Tìm x.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-x=4 m. Từ Pythagore: √(x²+9)=x+1, bình phương được x²+9=x²+2x+1 ⇒ x=4; kiểm √25=5.
+\(x=4\,\mathrm m\). Từ Pythagore: \(\sqrt{x^2+9}=x+1\), bình phương được \(x^2+9=x^2+2x+1\Rightarrow x=4\); kiểm \(\sqrt{25}=5\).
 
 </details>
 
@@ -407,11 +407,11 @@ x=4 m. Từ Pythagore: √(x²+9)=x+1, bình phương được x²+9=x²+2x+1 �
 
 **Bài 27.**
 
-Tam giác vuông có hai cạnh góc vuông x&gt;0 m và 5 m, cạnh huyền x+1 m. (a) Lập phương trình chứa căn; (b) giải và kiểm nghiệm; (c) nêu độ dài ba cạnh.
+Tam giác vuông có hai cạnh góc vuông \(x>0\) m và 5 m, cạnh huyền \(x+1\) m. (a) Lập phương trình chứa căn; (b) giải và kiểm nghiệm; (c) nêu độ dài ba cạnh.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-&lt;p>√(x²+25)=x+1. Bình phương được x²+25=x²+2x+1 ⇒ x=12. Thử lại √169=13=12+1. Ba cạnh là 12 m, 5 m, 13 m.&lt;/p>
+\(\sqrt{x^2+25}=x+1\). Bình phương được \(x^2+25=x^2+2x+1\Rightarrow x=12\). Thử lại \(\sqrt{169}=13=12+1\). Ba cạnh là 12 m, 5 m, 13 m.
 &lt;table>&lt;thead>&lt;tr>&lt;th>Tiêu chí&lt;/th>&lt;th>Điểm&lt;/th>&lt;/tr>&lt;/thead>&lt;tbody>&lt;tr>&lt;td>Dựng điều kiện và đại lượng&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Lập phương trình&lt;/td>&lt;td>2&lt;/td>&lt;/tr>&lt;tr>&lt;td>Giải x&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Thử nghiệm&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Kết luận 3 cạnh, đơn vị&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
 </details>
@@ -420,13 +420,13 @@ Tam giác vuông có hai cạnh góc vuông x&gt;0 m và 5 m, cạnh huyền x+1
 
 **Bài 28.**
 
-Giải phương trình x⁴−5x²+4=0 trong ℝ bằng ẩn phụ.
+Giải phương trình \(x^4-5x^2+4=0\) trong \(\mathbb R\) bằng ẩn phụ.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={−2,−1,1,2}.
+**Đáp án:** \(S=\{-2;-1;1;2\}\).
 
-Đặt t=x²≥0; khi đó t²−5t+4=(t−1)(t−4)=0 ⇒ t∈{1,4} đều ≥0. Quay lại x²=1 ⇒ x=±1; x²=4 ⇒ x=±2. Thử bằng cách thay t vào phương trình.
+Đặt \(t=x^2\ge0\); khi đó \(t^2-5t+4=(t-1)(t-4)=0\Rightarrow t\in\{1;4\}\), đều không âm. Quay lại \(x^2=1\Rightarrow x=\pm1\); \(x^2=4\Rightarrow x=\pm2\). Thử bằng cách thay t vào phương trình.
 
 </details>
 
@@ -434,13 +434,13 @@ Giải phương trình x⁴−5x²+4=0 trong ℝ bằng ẩn phụ.
 
 **Bài 29.**
 
-Giải x⁴+3x²−4=0 bằng t=x²; giải thích vì sao một giá trị t bị loại.
+Giải \(x^4+3x^2-4=0\) bằng \(t=x^2\); giải thích vì sao một giá trị t bị loại.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={−1,1}.
+**Đáp án:** \(S=\{-1;1\}\).
 
-Đặt t=x²≥0, giải t²+3t−4=(t+4)(t−1)=0 cho t=1 hoặc t=−4. Vì t≥0, loại −4; từ x²=1 được x=±1.
+Đặt \(t=x^2\ge0\), giải \(t^2+3t-4=(t+4)(t-1)=0\) cho \(t=1\) hoặc \(t=-4\). Vì \(t\ge0\), loại −4; từ \(x^2=1\) được \(x=\pm1\).
 
 </details>
 
@@ -448,13 +448,13 @@ Giải x⁴+3x²−4=0 bằng t=x²; giải thích vì sao một giá trị t b�
 
 **Bài 30.**
 
-Một thang dài 10 m tựa tường, chân thang cách tường x>0 m, độ cao đầu thang là x+2 m. Tìm x và độ cao.
+Một thang dài 10 m tựa tường, chân thang cách tường \(x>0\) m, độ cao đầu thang là \(x+2\) m. Tìm x và độ cao.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=6 m; độ cao 8 m.
+**Đáp án:** \(x=6\,\mathrm m\); độ cao 8 m.
 
-Pythagore: √[x²+(x+2)²]=10, x>0. Bình phương x²+(x+2)²=100 ⇒ 2x²+4x−96=0 ⇒ (x+8)(x−6)=0. Chỉ x=6 hợp chiều dài dương; thử √(36+64)=10. Độ cao 8 m.
+Pythagore: \(\sqrt{x^2+(x+2)^2}=10\), \(x>0\). Bình phương \(x^2+(x+2)^2=100\Rightarrow 2x^2+4x-96=0\Rightarrow (x+8)(x-6)=0\). Chỉ \(x=6\) hợp chiều dài dương; thử \(\sqrt{36+64}=10\). Độ cao 8 m.
 
 </details>
 
@@ -462,15 +462,15 @@ Pythagore: √[x²+(x+2)²]=10, x>0. Bình phương x²+(x+2)²=100 ⇒ 2x²+4x�
 
 **Bài 31.**
 
-Một xe dự định chạy 120 km với vận tốc không đổi v>0 km/h. Nếu tăng vận tốc thêm 20 km/h, xe đến sớm hơn 1 giờ. (a) Lập phương trình theo v và ghi điều kiện. (b) Giải phương trình, loại nghiệm không hợp thực tế. (c) Tính hai thời gian và thử điều kiện sớm hơn 1 giờ.
+Một xe dự định chạy 120 km với vận tốc không đổi \(v>0\) km/h. Nếu tăng vận tốc thêm 20 km/h, xe đến sớm hơn 1 giờ. (a) Lập phương trình theo v và ghi điều kiện. (b) Giải phương trình, loại nghiệm không hợp thực tế. (c) Tính hai thời gian và thử điều kiện sớm hơn 1 giờ.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** v=40 km/h, sau tăng là 60 km/h; thời gian lần lượt 3 giờ và 2 giờ.
+**Đáp án:** \(v=40\,\mathrm{km/h}\), sau tăng là 60 km/h; thời gian lần lượt 3 giờ và 2 giờ.
 
-Điều kiện v>0, v+20>0; thời gian t₁=120/v, t₂=120/(v+20). t₁−t₂=1 ⇒ 2400/[v(v+20)]=1 ⇒ v²+20v−2400=0 ⇒ (v−40)(v+60)=0. Ứng viên 40,−60; chỉ 40 phù hợp v>0. Thử 120/40=3, 120/60=2, chênh đúng 1 giờ. −60 có nghĩa vận tốc âm nên loại.
+Điều kiện \(v>0\), \(v+20>0\); thời gian \(t_1=\frac{120}{v}\), \(t_2=\frac{120}{v+20}\). \(t_1-t_2=1\Rightarrow \frac{2400}{v(v+20)}=1\Rightarrow v^2+20v-2400=0\Rightarrow (v-40)(v+60)=0\). Ứng viên 40, −60; chỉ 40 phù hợp \(v>0\). Thử \(\frac{120}{40}=3\), \(\frac{120}{60}=2\), chênh đúng 1 giờ. −60 có nghĩa vận tốc âm nên loại.
 
-**Rubric tự đối chiếu:** 7 điểm: ghi v>0 và đơn vị (1đ); lập t₁,t₂ đúng (1đ); lập phương trình thời gian đúng (2đ); giải nghiệm ứng viên 40,−60 (1đ); lọc −60 và lý do (1đ); kiểm 3−2=1, kết luận (1đ).
+**Rubric tự đối chiếu:** 7 điểm: ghi \(v>0\) và đơn vị (1đ); lập \(t_1,t_2\) đúng (1đ); lập phương trình thời gian đúng (2đ); giải nghiệm ứng viên 40, −60 (1đ); lọc −60 và lý do (1đ); kiểm \(3-2=1\), kết luận (1đ).
 
 </details>
 

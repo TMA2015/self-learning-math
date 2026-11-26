@@ -36,7 +36,7 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC03_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 38f41f013e75b42605d7a88f9205c20af6315a41; Q18_RECEIPT_BLOB ef40b5871762558959108cf1879155c7e14158fe; AUTHORING_PR #888; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB bd3b88b635b203872a9afa5893cc1e3af3e7d7c6; Q18_RECEIPT_BLOB 28c43a014a015b1c81986e0b9c7b7127c3dfe55b; AUTHORING_PR #888; PUBLIC_PROJECTION_ONLY -->
 
 # Tự kiểm tra
 
@@ -44,51 +44,51 @@ Hãy tự làm trọn 12 câu trước khi xem lại lời giải. Các câu dư
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP03-ADD01; ORIGINAL_BLOB: fd85d7056f3b934f4599727f8c6da173cf05cd65; NO_MASTERY; NOT_RD1 -->
 
-**Câu 1.** Giải 2x+6=14 và chỉ rõ phép biến đổi tương đương.
+**Câu 1.** Giải \(2x+6=14\) và chỉ rõ phép biến đổi tương đương.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP03-ADD03; ORIGINAL_BLOB: fd85d7056f3b934f4599727f8c6da173cf05cd65; NO_MASTERY; NOT_RD1 -->
 
-**Câu 2.** Giải 3(x−2)=2x+5 và thử lại nghiệm.
+**Câu 2.** Giải \(3(x-2)=2x+5\) và thử lại nghiệm.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP03-ADD05; ORIGINAL_BLOB: fd85d7056f3b934f4599727f8c6da173cf05cd65; NO_MASTERY; NOT_RD1 -->
 
-**Câu 3.** Giải (x−2)(2x+3)=0.
+**Câu 3.** Giải \((x-2)(2x+3)=0\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP03-ADD07; ORIGINAL_BLOB: fd85d7056f3b934f4599727f8c6da173cf05cd65; NO_MASTERY; NOT_RD1 -->
 
-**Câu 4.** Giải 2x²−5x−3=0 bằng biệt thức hoặc phân tích nhân tử.
+**Câu 4.** Giải \(2x^2-5x-3=0\) bằng biệt thức hoặc phân tích nhân tử.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP03-ADD09; ORIGINAL_BLOB: fd85d7056f3b934f4599727f8c6da173cf05cd65; NO_MASTERY; NOT_RD1 -->
 
-**Câu 5.** Giải (x²−4)/(x−2)=0. Giải thích vì sao x=2 bị loại.
+**Câu 5.** Giải \(\frac{x^2-4}{x-2}=0\). Giải thích vì sao \(x=2\) bị loại.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP03-ADD11; ORIGINAL_BLOB: fd85d7056f3b934f4599727f8c6da173cf05cd65; NO_MASTERY; NOT_RD1 -->
 
-**Câu 6.** Giải |2x−3|=5.
+**Câu 6.** Giải \(\lvert2x-3\rvert=5\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP03-ADD13; ORIGINAL_BLOB: fd85d7056f3b934f4599727f8c6da173cf05cd65; NO_MASTERY; NOT_RD1 -->
 
-**Câu 7.** Giải √(x+2)=x; chỉ rõ nghiệm ngoại lai sau bình phương.
+**Câu 7.** Giải \(\sqrt{x+2}=x\); chỉ rõ nghiệm ngoại lai sau bình phương.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B18-C02; ORIGINAL_BLOB: 1223d4c2b574433479c5d222dbeff363718ee4bb; NO_MASTERY; NOT_RD1 -->
 
-**Câu 8.** Giải √((x+4)²)=√(x+4) trong ℝ.
+**Câu 8.** Giải \(\sqrt{(x+4)^2}=\sqrt{x+4}\) trong \(\mathbb R\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B18-C01; ORIGINAL_BLOB: 1223d4c2b574433479c5d222dbeff363718ee4bb; NO_MASTERY; NOT_RD1 -->
 
-**Câu 9.** Giải √(x+5)=x−1 trong ℝ.
+**Câu 9.** Giải \(\sqrt{x+5}=x-1\) trong \(\mathbb R\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B18-P03; ORIGINAL_BLOB: 1223d4c2b574433479c5d222dbeff363718ee4bb; NO_MASTERY; NOT_RD1 -->
 
-**Câu 10.** Giải trên ℝ: √(x²+7x+11)=√(x+3).
+**Câu 10.** Giải trên \(\mathbb R\): \(\sqrt{x^2+7x+11}=\sqrt{x+3}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP03-ADD19; ORIGINAL_BLOB: fd85d7056f3b934f4599727f8c6da173cf05cd65; NO_MASTERY; NOT_RD1 -->
 
-**Câu 11.** Giải phương trình x⁴−5x²+4=0 trong ℝ bằng ẩn phụ.
+**Câu 11.** Giải phương trình \(x^4-5x^2+4=0\) trong \(\mathbb R\) bằng ẩn phụ.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B18-P04; ORIGINAL_BLOB: 1223d4c2b574433479c5d222dbeff363718ee4bb; NO_MASTERY; NOT_RD1 -->
 
-**Câu 12.** Tam giác vuông có hai cạnh góc vuông dài x>0 mét và 3 mét; cạnh huyền dài x+1 mét. Tìm x.
+**Câu 12.** Tam giác vuông có hai cạnh góc vuông dài \(x>0\) mét và 3 mét; cạnh huyền dài \(x+1\) mét. Tìm x.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
