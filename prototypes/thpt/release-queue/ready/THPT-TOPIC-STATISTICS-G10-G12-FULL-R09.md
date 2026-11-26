@@ -1,5 +1,10 @@
-<!-- WORK #1109 CURRENT CANDIDATE -->
-**BLOCKED_BY_AUTHORING** — Work #1055 candidate learner blob `8d0a01ca7bb7d3dafc2aaf57e9f79984a8fbcd8b`, source commit `188ef3067430ddece60ae29be0770d629506e612`. Earlier signed source/receipt pointers below remain historical for the previous snapshot only. Affected Q18/V2, S1 and X-G.5 verification/re-lock pending; not authorized for release.
+<!-- WORK1109_CP22_CURRENT -->
+**CONTENT_READY — AUTHORING source only, CP22.** 26/11/2026 Work #1055/#1109 CP22 — AUTHOR_SELF_VERIFIED affected delta: correct and deepen 1.1–3.4; T02,T03,T05,T07,T10,T11,T12,T13 versions updated, all IDs retained; 114/114 original bank ID memberships checked across four immutable blobs, nine replay stems exactly match Practice, 127 unique IDs/136 placements, 39 outcomes, 128 balanced disclosures, rubric score tokens unchanged, 1011 balanced inline formula pairs and 1 display; 12 direct numerical assertions plus both IQR recomputations (12.5, 32/3) pass. Added source-locked histogram (same height 1, widths 10 and 20), existing two figures unchanged. X-G.5 notation normalized across the public path; no canonical SGK bank change. Original S1 scope inherited; no fresh PDF scan or independent review claimed; historical page-index P2 nonblocking. No website/device/CI/RELEASE/merge/deploy or protected data/assessment authority.
+
+Source `f1a059fc6366d2e4bb044edd696154a0b6799d4d`, Q18 `0969b1ff6acbf10f4b922e82fc722620d022d506`, Q15/A1 `ef6464db5ea629db92fe9cd19320c87ce16ffde2`, V2 `daf4b8091a43cbdc9f72d43f86fb3579abcf463e`; histogram `a1d78f19563e02942d7c348026efe234146dbb79`.
+
+---
+Historical dated evidence below is retained for its original immutable snapshots; the CP22 section and current structured SHA fields supersede older prose/count-equivalence claims.
 
 <!-- TOP22_MASTER974_FINAL_READY_SOURCE_LOCK_20261121 -->
 **CĐ22 final R09 AUTHORING ready SHA lock:** learner `7ac79e5ed705a5ce482c3d9c42a4451e659e1109`, signed Q18 `2e35a06020768e5a6db2e9f2fe65a46f577960c2`, one 127-item/9-same-ID Q15 A1 `496b936cfcdee2347aaf8460188bb6381205ce2c`, one V2 `5f57cec1d8d2a47d674aedd88fa18350af78645f` (source commit `75c1be1493feb239147b493fecd933965181ad5a`). Final learner wording corrected one voluntary SelfCheck explanation to remove technical status label; no math/key/rubric/39-outcome/13-FirstTry/114-SGK-Practice/9-public-replay/128-detail/SVG effect. Original P2 S1 PDF-index reference unresolved nonblocking; source AUTHORING `CONTENT_READY` not independent NotebookLM whole-Topic PASS nor website RELEASE, and `BLOCKERS: NONE` refers to no blocker in newly changed authoring delta, not dismissal of original P2.
@@ -8,11 +13,11 @@
 <!-- TOP22_MASTER974_CURRENT_READY_20261121 -->
 ## CĐ22 · one active R09 ready manifest — AUTHORING CONTENT_READY source-only
 
-CURRENT_SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
-CURRENT_SOURCE_COMMIT: 75c1be1493feb239147b493fecd933965181ad5a
-CURRENT_Q18_AUTHOR_SIGNED_BLOB: 2e35a06020768e5a6db2e9f2fe65a46f577960c2
-CURRENT_A1_A7_Q15_127_ITEM_MATRIX_BLOB: 496b936cfcdee2347aaf8460188bb6381205ce2c
-CURRENT_V2_HANDOFF_BLOB: 5f57cec1d8d2a47d674aedd88fa18350af78645f
+CURRENT_SOURCE_BLOB: f1a059fc6366d2e4bb044edd696154a0b6799d4d
+CURRENT_SOURCE_COMMIT: 0342848509f9ca58d9d6185ab2e9f75f969e5e53
+CURRENT_Q18_AUTHOR_SIGNED_BLOB: 0969b1ff6acbf10f4b922e82fc722620d022d506
+CURRENT_A1_A7_Q15_127_ITEM_MATRIX_BLOB: ef6464db5ea629db92fe9cd19320c87ce16ffde2
+CURRENT_V2_HANDOFF_BLOB: daf4b8091a43cbdc9f72d43f86fb3579abcf463e
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
@@ -51,16 +56,16 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: BLOCKED_BY_AUTHORING
-SOURCE_COMMIT: 75c1be1493feb239147b493fecd933965181ad5a
+STATE: CONTENT_READY
+SOURCE_COMMIT: 0342848509f9ca58d9d6185ab2e9f75f969e5e53
 AUTHOR_PR: 812
 CURRENT_PR: #812 Draft AUTHORING, no release or merge authorization
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md — exact source R09 technical AUTHOR_SELF_VERIFIED, NOT independent NotebookLM
+ACADEMIC_SOURCE_BLOB: f1a059fc6366d2e4bb044edd696154a0b6799d4d
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC22_R09_15_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md — CP22 affected AUTHOR_SELF_VERIFIED
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC22_R09_15_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
-REVIEW_RECEIPT_BLOB: 2e35a06020768e5a6db2e9f2fe65a46f577960c2
+REVIEW_RECEIPT_BLOB: 0969b1ff6acbf10f4b922e82fc722620d022d506
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R09_HANDOFF_V2_20261116.md
 PUBLIC_SOURCE_INDEX: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_CANONICAL_SOURCE_INDEX_R00_20261111.md
 PUBLIC_SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
@@ -68,7 +73,7 @@ PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G1
 PUBLIC_EXTENSION_BLOB: c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -82,18 +87,18 @@ AUTHORING_ORDER: FOURTH_PACKET_ONLY_NOT_PLAN22_04
 SUPERSEDES_AUTHORING_SNAPSHOT: THPT-TOPIC-STATISTICS-G10-G12-FULL-R01 (immutable historical proof)
 TOPIC_EDITORIAL_CHECKLIST: Issue #864 — 13 requirements
 Q01_REVIEWER_R2_G11_MISTAKE: REFERENCE_METADATA_CORRECTED_NONBLOCKING_P2
-CANONICAL_VIEW: DISPLAY_ONLY_114_EXACT_STEM_SOLUTION_19_WRITTEN_RUBRIC
+CANONICAL_VIEW: DISPLAY_ONLY_114_BANK_IDS_NOTATION_EQUIVALENT_19_WRITTEN_RUBRIC
 SELF_CHECK_9_PUBLIC_DEMO: Temp_PLAN22_22_R05_PUBLIC_SELF_CHECK_LOCAL_DEMO_20261115.html, not website
 
 AUTHORING_Q18_DELTA: R06→R07 student prose ONLY; technical Final Submit/website QA text removed from public selfcheck intro. Knowledge, 114 canonical Practice stem+solution, 19 rubrics, 9 selfcheck questions byte-identical. R06 snapshot retained with separate manifest and REGISTER line.
 PREVIOUS_AUTHORING_SOURCE_BLOB: 12f3af42c2e6b0f316355dcedfc34ec8b6136694
 PREVIOUS_AUTHORING_RECEIPT_BLOB: b3a2836d6d0a339648347a82f4332f9a69439dfb
 
-AUTHOR_HANDOFF_BLOB: 5f57cec1d8d2a47d674aedd88fa18350af78645f
+AUTHOR_HANDOFF_BLOB: daf4b8091a43cbdc9f72d43f86fb3579abcf463e
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_A1_A7_BLOB: 496b936cfcdee2347aaf8460188bb6381205ce2c
+AUTHOR_A1_A7_BLOB: ef6464db5ea629db92fe9cd19320c87ce16ffde2
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_METADATA_BLOB: 496b936cfcdee2347aaf8460188bb6381205ce2c
+AUTHOR_METADATA_BLOB: ef6464db5ea629db92fe9cd19320c87ce16ffde2
 
 ## R09 CURRENT LEARNER SOURCE AND Q18 TECHNICAL EQUIVALENCE
 
