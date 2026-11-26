@@ -6452,5 +6452,894 @@
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT01",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT01",
+    "stem": "Giải \\(-3(x-2)\\ge6\\). Hãy giải thích bước nào buộc đổi chiều dấu bất đẳng thức.",
+    "answer_key": "\\(x\\le0\\); đổi chiều khi chia hai vế cho \\(-3<0\\).",
+    "worked_solution": "Khai triển \\(-3x+6\\ge6\\), suy ra \\(-3x\\ge0\\). Chia cho \\(-3<0\\), ta được \\(x\\le0\\), kể cả \\(x=0\\) vì dấu ban đầu có bằng. Nếu em viết \\(x\\ge0\\), hãy thử \\(x=1\\) trong đề gốc để thấy kết luận sai.\n\n**Kiểm lỗi**\n\nNếu em quên đổi chiều khi chia cho số âm, thử thế một giá trị vào bất phương trình ban đầu để phát hiện sai miền nghiệm. Đọc lại **Kiến thức 1.1** rồi làm **Bài 1** trong Luyện tập; phải nêu rõ hệ số âm ở bước chia.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M01",
+      "locator": "1.1. Biến đổi bất phương trình / Vận dụng",
+      "line": 37,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT02",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT02",
+    "stem": "Tam thức \\(x^2+2x+1\\) có biệt thức và nghiệm nào?",
+    "answer_key": "\\(\\Delta=0\\); nghiệm kép \\(x=-1\\).",
+    "worked_solution": "\\(\\Delta=0\\), nghiệm kép \\(x=-1\\) vì \\(x^2+2x+1=(x+1)^2\\).\n\nQuên 2a hoặc sai dấu b thì thử nhân tích để kiểm nghiệm.\n\n**Kiểm lỗi**\n\nNếu em nhầm hệ số \\(b\\) với \\(b'=\\frac b2\\), nghiệm tính được sẽ sai dù quy trình xét dấu trông đúng. Xem **Kiến thức 2.1**, làm **Bài 3** rồi **Bài 4** để so trường hợp hai nghiệm và nghiệm kép; thế nghiệm ngược vào tam thức để kiểm.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M02",
+      "locator": "2.1. Biệt thức và nghiệm của tam thức / Vận dụng",
+      "line": 81,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT03",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT03",
+    "stem": "Tam thức \\(-x^2+2x-3\\) có dấu gì?",
+    "answer_key": "Âm với mọi \\(x\\in\\mathbb R\\).",
+    "worked_solution": "\\(-x^2+2x-3=-[(x-1)^2+2]<0\\) với mọi x.\n\nNếu kết luận “không có nghiệm vì \\(\\Delta<0\\)”, thử \\(x=0\\) trước khi quyết định.\n\n**Kiểm lỗi**\n\nNếu thấy \\(\\Delta<0\\) rồi kết luận biểu thức không dương hay âm ở đâu cả, em đã nhầm **không có nghiệm bằng 0** với **không có dấu**. Đọc **Kiến thức 2.2**, thử **Bài 5** và **Bài 6** bằng cách hoàn phương.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "QUAD_SIGN"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M03",
+      "locator": "2.2. Tam thức luôn cùng dấu / Vận dụng",
+      "line": 115,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT04",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT04",
+    "stem": "Giải \\((x+4)^2\\le0\\).",
+    "answer_key": "\\(S=\\{-4\\}\\).",
+    "worked_solution": "Chỉ \\(x=-4\\) vì bình phương luôn không âm.\n\nNếu viết một khoảng, thử \\(x=-3\\) để bác bỏ.\n\n**Kiểm lỗi**\n\nNếu em vẽ bảng dấu đổi từ dương sang âm khi gặp nghiệm kép, hãy thử ở hai phía: \\(3(1-2)^2=3\\) và \\(3(3-2)^2=3\\). Đọc lại **Kiến thức 2.3**, rồi làm **Bài 7** và **Bài 8** để phân biệt nghiệm kép, dấu bằng và dấu của hệ số \\(a\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "QUAD_DOUBLE_ROOT_SIGN",
+      "QUAD_INEQUALITY"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M04",
+      "locator": "2.3. Nghiệm kép và dấu bằng / Vận dụng",
+      "line": 145,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT05",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT05",
+    "stem": "Giải \\(-(x+1)(x-4)>0\\).",
+    "answer_key": "\\(S=(-1;4)\\).",
+    "worked_solution": "Tập nghiệm là \\((-1;4)\\), tức \\(-1<x<4\\); không lấy hai đầu mút.\n\nNếu sai, thử một x nằm giữa nghiệm để đối chiếu dấu của hai thừa số.\n\n**Kiểm lỗi**\n\nNếu chọn khoảng sai dấu, hãy thử mỗi miền bằng một giá trị cụ thể rồi nhìn dấu của từng thừa số, không chỉ nhìn sơ đồ. Ôn **Kiến thức 2.4**, làm **Bài 9** và **Bài 10** trong Luyện tập, nhớ tách hẳn hai nghiệm với các khoảng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "QUAD_SIGN",
+      "QUAD_INEQUALITY"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M05",
+      "locator": "2.4. Ba khoảng của bảng dấu / Vận dụng",
+      "line": 179,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT06",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT06",
+    "stem": "Giải \\(-x^2+4x-3>0\\).",
+    "answer_key": "\\(S=(1;3)\\).",
+    "worked_solution": "\\(1<x<3\\) vì \\(-(x-1)(x-3)>0\\) đúng trên khoảng đó.\n\nNếu em lấy nhầm hai đầu mút \\(x=1\\) hoặc \\(x=3\\) cho bất phương trình \\(-x^2+4x-3>0\\), hãy thế lại: ở cả hai điểm, vế trái bằng \\(0\\), nên **không thỏa dấu \\(>0\\)**. Dấu \\(\\ge0\\) mới cho phép lấy hai đầu mút.\n\n**Kiểm lỗi**\n\nNếu em lấy \\(x=1\\) hoặc \\(x=3\\) cho dấu \\(>0\\), hãy thế vào đề gốc để thấy cả hai cho giá trị 0. Đọc **Kiến thức 2.5**, rồi so **Bài 11** (dấu nghiêm) với **Bài 12** (dấu có bằng).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "QUAD_INEQUALITY"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M06",
+      "locator": "2.5. Giải bất phương trình bậc hai / Vận dụng",
+      "line": 213,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT07",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT07",
+    "stem": "Tìm m để \\(x^2-2mx+1\\ge0\\) với mọi x.",
+    "answer_key": "\\(m\\in[-1;1]\\).",
+    "worked_solution": "Vì hệ số của \\(x^2\\) bằng 1, tam thức không âm với mọi x khi và chỉ khi \\(\\Delta=4(m^2-1)\\le0\\), hay \\(m\\in[-1;1]\\). Có thể kiểm bằng \\((x-m)^2+1-m^2\\): giá trị nhỏ nhất tại \\(x=m\\) là \\(1-m^2\\). Hai biên \\(m=\\pm1\\) được nhận vì tam thức là bình phương.\n\n**Kiểm lỗi**\n\nNếu loại \\(m=\\pm1\\), em đã nhầm không âm với dương nghiêm ngặt. Tại \\(x=m\\), tam thức bằng 0 khi \\(m=\\pm1\\), vẫn thỏa dấu \\(\\ge0\\). Đọc lại **Kiến thức 2.6**, giải **Bài 13**, **Bài 14** và tự luận **Bài 17** để kiểm giá trị tại nghiệm kép.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "QUAD_PARAMETER"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M07",
+      "locator": "2.6. Bất phương trình đúng với mọi x / Vận dụng",
+      "line": 243,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT08",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT08",
+    "stem": "Độ cao của một vật so với mặt đất được mô hình hóa bởi \\(h(t)=-t^2+6t\\) (m), trong đó \\(t\\) tính bằng giây và \\(0\\le t\\le6\\). Trong khoảng thời gian nào vật cao ít nhất 8 m?",
+    "answer_key": "\\(t\\in[2;4]\\) giây.",
+    "worked_solution": "\\(h(t)\\ge8\\) tương đương \\((t-2)(t-4)\\le0\\), nên \\(t\\in[2;4]\\). Khoảng này nằm trong miền thời gian \\([0;6]\\). Vậy vật cao ít nhất 8 m từ giây thứ 2 đến giây thứ 4, kể cả hai đầu mút.\n\nNếu có nghiệm âm, kiểm lại điều kiện khi đặt biến thay vì nhận tất cả.\n\n**Kiểm lỗi**\n\nNếu em cho nghiệm âm hoặc bỏ qua đơn vị thời gian/độ dài, kết quả đại số có thể không là phương án thực tế. Đọc **Kiến thức 2.7**, làm **Bài 15** và **Bài 16** trong Luyện tập; lấy giao với miền vật lý trước khi kết luận.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "QUAD_MODELING"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M08",
+      "locator": "2.7. Miền nghiệm có điều kiện vật lý / Vận dụng",
+      "line": 273,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT09",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT09",
+    "stem": "Bất phương trình \\(-x+0y<1\\) có đúng dạng bậc nhất hai ẩn không và \\((0;5)\\) có thỏa không?",
+    "answer_key": "Có; \\((0;5)\\) thỏa.",
+    "worked_solution": "Đúng dạng, vì \\((a;b)=(-1;0)\\ne(0;0)\\); thay \\((0;5)\\) được \\(0<1\\) đúng.\n\nNếu nghĩ bắt buộc có cả x và y, kiểm điều kiện hệ số không đồng thời bằng 0.\n\n**Kiểm lỗi**\n\nNếu em loại \\(0x-3y>1\\) chỉ vì không có \\(x\\) trong thực tế, hãy nhớ điều kiện là \\((a;b)\\ne(0;0)\\), không cần cả hai khác 0. Quay lại **Kiến thức 3.1** rồi làm **Bài 18** và **Bài 32**.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B03-LINEAR_INEQUALITY",
+      "G10-B03-POINT_TEST"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O09"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M09",
+      "locator": "3.1. Bất phương trình bậc nhất hai ẩn / Vận dụng",
+      "line": 313,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT10",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT10",
+    "stem": "Điểm \\((3;0)\\) có thỏa \\(x+2y\\ge3\\) không? Có thể dùng gốc tọa độ \\(O(0;0)\\) để thử phía của đường biên không?",
+    "answer_key": "Điểm \\((3;0)\\) thỏa; O dùng làm điểm thử được nhưng không thỏa.",
+    "worked_solution": "\\((3;0)\\) thỏa dấu bằng; O ngoài đường \\(x+2y=3\\) nên thử phía được, nhưng O không thỏa bất phương trình.\n\nNếu điểm thử ở biên, chọn \\((1;0)\\) hoặc \\((0;1)\\) khác và thế lại.\n\n**Kiểm lỗi**\n\nNếu em lấy một điểm **nằm trên đường biên** để quyết định phía tô, phép thử chỉ cho dấu bằng nên không xác định phía. Đọc **Kiến thức 3.2**, thực hiện **Bài 22** và **Bài 24** với điểm thử ngoài đường thẳng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B03-POINT_TEST",
+      "G10-B03-BOUNDARY"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O10"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M10",
+      "locator": "3.2. Chọn điểm thử khác đường biên / Vận dụng",
+      "line": 343,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT11",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT11",
+    "stem": "Với \\(x+2y\\ge4\\), biên thế nào, O thỏa không?",
+    "answer_key": "Biên \\(x+2y=4\\) nét liền; O không thỏa.",
+    "worked_solution": "Biên liền, O không thỏa \\(0\\ge4\\), tô phía \\(y\\ge2-\\frac{x}{2}\\).\n\nTô sai? Thử O hoặc một điểm ngoài biên để kiểm dấu và đổi chiều.\n\n**Kiểm lỗi**\n\nNếu em vẽ biên nét đứt cho dấu \\(\\ge\\), em đã bỏ các phương án đạt **bằng** ngưỡng. Đọc **Kiến thức 3.3**, làm **Bài 20** và **Bài 21**; kiểm dấu bằng với một điểm trên đường thẳng trước khi tô miền.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B03-BOUNDARY",
+      "G10-B03-HALFPLANE"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O11"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M11",
+      "locator": "3.3. Đường biên được lấy hoặc loại / Vận dụng",
+      "line": 377,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT12",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT12",
+    "stem": "Mỗi sản phẩm loại A được 2 điểm thưởng, loại B được 3 điểm. Gọi \\(x,y\\) lần lượt là số sản phẩm hai loại (số nguyên không âm). Cần ít nhất 12 điểm. Phương án \\((x;y)=(3;2)\\) có đạt yêu cầu không?",
+    "answer_key": "Có, đạt đúng 12 điểm.",
+    "worked_solution": "Điều kiện là \\(2x+3y\\ge12\\), với \\(x,y\\) là số nguyên không âm. Phương án đã cho đạt đúng \\(2\\cdot3+3\\cdot2=12\\) điểm, nên được nhận.\n\nNhầm ít nhất với ≤ thì thử phương án bằng và thấp hơn ngưỡng để sửa.\n\n**Kiểm lỗi**\n\nNếu em viết \\(\\le\\) khi đề nói “ít nhất” hoặc quên \\(x,y\\) là số sản phẩm/vé, mô hình có thể nhận cả phương án sai thực tế. Đọc **Kiến thức 3.4**, làm **Bài 23** và **Bài 25**, kiểm đơn vị và tính nguyên không âm.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B03-MODELING"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O12"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M12",
+      "locator": "3.4. Lập ràng buộc hai ẩn / Vận dụng",
+      "line": 407,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT13",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT13",
+    "stem": "Hai điều kiện \\(x+y\\le5\\) và \\(x+y\\ge7\\) có nghiệm chung không?",
+    "answer_key": "Không có nghiệm chung.",
+    "worked_solution": "Không, vì tổng \\(t=x+y\\) không thể vừa nhỏ hơn hoặc bằng 5 vừa lớn hơn hoặc bằng 7.\n\nNếu nhầm giao thành hợp, lấy một điểm chỉ thỏa một điều kiện để bác bỏ.\n\n**Kiểm lỗi**\n\nNếu em nhầm **giao** thành **hợp**, một điểm chỉ thỏa một bất phương trình sẽ bị nhận sai. Đọc **Kiến thức 3.5**, làm **Bài 26** và **Bài 29**: thay cùng một cặp \\((x;y)\\) vào **mọi** điều kiện của hệ.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B04-SYSTEM",
+      "G10-B04-FEASIBILITY"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O13"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M13",
+      "locator": "3.5. Miền giao của hệ bất phương trình / Vận dụng",
+      "line": 441,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT14",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT14",
+    "stem": "Trên miền \\(x\\ge0,y\\ge0\\) không bị chặn, hàm mục tiêu \\(F=-2x-y\\) có giá trị lớn nhất và nhỏ nhất hữu hạn không? Giải thích bằng một điểm cụ thể và một dãy phương án.",
+    "answer_key": "GTLN 0 tại O; không có GTNN hữu hạn.",
+    "worked_solution": "Miền \\(x,y\\ge0\\) không bị chặn, nhưng \\(F=-2x-y\\le0\\) nên có **giá trị lớn nhất bằng 0** tại \\(O=(0;0)\\). Không có giá trị nhỏ nhất hữu hạn: lấy \\(x=t\\ge0,y=0\\), ta được \\(F=-2t\\to-\\infty\\) khi \\(t\\to+\\infty\\). Đây là lý do không được suy từ “miền không bị chặn” ra “không có mọi cực trị”.\n\n**Kiểm lỗi**\n\nNếu thấy miền không bị chặn rồi kết luận không có cả giá trị lớn nhất lẫn nhỏ nhất, em đã bỏ qua chiều biến thiên của hàm mục tiêu. Đọc **Kiến thức 3.6**, rồi làm **Bài 29** (miền rỗng) và **Bài 30** (miền không bị chặn); chỉ kết luận sau khi kiểm trực tiếp hàm.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B04-FEASIBILITY",
+      "G10-B04-LINEAR_OBJECTIVE"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O14"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M14",
+      "locator": "3.6. Miền rỗng và không bị chặn / Vận dụng",
+      "line": 471,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT15",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT15",
+    "stem": "Với \\(x,y\\ge0,\\ x+y\\le4\\), hàm \\(F=x+y\\) đạt giá trị lớn nhất ở đâu?",
+    "answer_key": "GTLN 4 tại mọi điểm \\(x,y\\ge0,\\ x+y=4\\).",
+    "worked_solution": "Mọi điểm trên cạnh \\(x+y=4\\) của miền khả thi đều đạt 4, không chỉ một đỉnh.\n\nNếu bỏ một đỉnh, vẽ từng đường và kiểm giao có thỏa tất cả ràng buộc.\n\n**Kiểm lỗi**\n\nNếu em chỉ kiểm một đỉnh rồi nói đó là **nghiệm tối ưu duy nhất**, em có thể bỏ cả cạnh mà hàm mục tiêu không đổi. Đọc **Kiến thức 4.1**, so **Bài 33** (một đỉnh đạt cực đại) với **Bài 34** (mọi điểm trên cạnh đạt cực đại).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B04-LINEAR_OBJECTIVE"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O15"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M15",
+      "locator": "4.1. Tối ưu tuyến tính trên đa giác / Vận dụng",
+      "line": 513,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP02-KFT16",
+    "content_version": "TOP02-BANK-CP71-20261126-KFT16",
+    "stem": "Với \\(x+2y\\le4,\\ 2x+y\\le4,\\ x,y\\in\\mathbb Z_{\\ge0}\\), giá trị lớn nhất của \\(F=x+y\\) là bao nhiêu?",
+    "answer_key": "GTLN 2 tại \\((2;0),(1;1),(0;2)\\).",
+    "worked_solution": "Cộng hai ràng buộc được \\(3(x+y)\\le8\\), nên \\(F=x+y\\le\\frac83\\). Vì x,y nguyên, F nguyên nên \\(F\\le2\\). Ba điểm \\((2;0),(1;1),(0;2)\\) đều thỏa cả hai bất phương trình và đạt \\(F=2\\); đây là tất cả các cặp nguyên không âm có tổng 2. Với biến thực, điểm \\((\\frac43;\\frac43)\\) khả thi và đạt \\(\\frac83\\).\n\n**Kiểm lỗi**\n\nNếu em làm tròn nghiệm tối ưu liên tục mà không kiểm lại ràng buộc, kết quả có thể không khả thi hoặc chưa tối ưu. Đọc **Kiến thức 4.2**, thử **Bài 35** và **Bài 37** bằng liệt kê các cặp nguyên hợp lệ rồi so giá trị mục tiêu.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B04-INTEGER_MODELS",
+      "G10-B04-LINEAR_OBJECTIVE"
+    ],
+    "original_outcome_ids": [
+      "TOP02-O16"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+      "heading_id": "TOP02-M16",
+      "locator": "4.2. Tối ưu với biến nguyên / Vận dụng",
+      "line": 550,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP03-KFT01",
+    "content_version": "TOP03-BANK-CP71-20261126-KFT01",
+    "stem": "Giải \\(3x+2=11\\). Vì sao hai bước chuyển vế và chia cho 3 không làm đổi tập nghiệm?",
+    "answer_key": "\\(x=3\\); trừ 2 và chia cho 3 là hai phép biến đổi có phép ngược.",
+    "worked_solution": "Trừ 2 ở hai vế được \\(3x=9\\); chia cho \\(3\\ne0\\) được \\(x=3\\). Cả hai bước đều có phép ngược hợp lệ. Thử lại: \\(3\\cdot3+2=11\\). Nếu em dùng dấu tương đương cho phép bình phương mà không kiểm điều kiện, hãy so trường hợp \\(x=3\\) và \\(x=-3\\) khi bình phương hai vế của phương trình \\(x=3\\).\n\n**Kiểm lỗi**\n\nNếu em chỉ tìm một nghiệm sau khi biến đổi hoặc đặt dấu tương đương cho một phép bình phương không có chiều ngược, hãy đọc lại **Kiến thức 1.1**, rồi giải **Bài 1** và **Bài 2** trong Luyện tập. Kiểm từng nghiệm bằng cách thế vào phương trình ban đầu; phân biệt phép trừ/chia hằng số khác 0 với bước có thể sinh nghiệm ngoại lai.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+      "heading_id": "TOP03-M01",
+      "locator": "1.1. Phép biến đổi tương đương / Vận dụng",
+      "line": 33,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP03-KFT02",
+    "content_version": "TOP03-BANK-CP71-20261126-KFT02",
+    "stem": "Giải \\(a(x-1)=0\\) theo tham số a.",
+    "answer_key": "Nếu \\(a\\ne0\\), \\(S=\\{1\\}\\); nếu \\(a=0\\), \\(S=\\mathbb R\\).",
+    "worked_solution": "Nếu \\(a\\ne0\\) thì \\(x=1\\); nếu \\(a=0\\) thì mọi \\(x\\in\\mathbb R\\) đều là nghiệm.\n\nNếu quên trường hợp hệ số 0, đặt \\(a=0\\) và thử \\(x=6\\); làm lại Bài 3 và Bài 4 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+      "heading_id": "TOP03-M02",
+      "locator": "1.2. Phương trình bậc nhất có tham số / Vận dụng",
+      "line": 63,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP03-KFT03",
+    "content_version": "TOP03-BANK-CP71-20261126-KFT03",
+    "stem": "Giải \\((x-5)(x+1)=0\\).",
+    "answer_key": "\\(S=\\{-1;5\\}\\).",
+    "worked_solution": "\\(x=5\\) hoặc \\(x=-1\\); thử vào từng thừa số.\n\nNếu tìm được một nghiệm mà không xét nhân tử còn lại, quay lại \\(ab=0\\) và làm lại Bài 5 và Bài 6 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+      "heading_id": "TOP03-M03",
+      "locator": "1.3. Tích bằng 0, tránh làm mất nghiệm / Vận dụng",
+      "line": 95,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP03-KFT04",
+    "content_version": "TOP03-BANK-CP71-20261126-KFT04",
+    "stem": "Giải \\(x^2+4x+4=0\\).",
+    "answer_key": "\\(x=-2\\) (nghiệm kép).",
+    "worked_solution": "\\((x+2)^2=0\\Rightarrow x=-2\\) (nghiệm kép), không phải hai giá trị khác nhau.\n\nNếu \\(\\Delta<0\\) mà em vẫn tìm ra nghiệm thực, hãy thử hoàn thành bình phương. Ví dụ \\(-x^2-1=0\\Leftrightarrow x^2+1=0\\). Vì \\(x^2+1\\ge1>0\\) với mọi số thực x, phương trình vô nghiệm. Nếu hệ số bậc hai âm, đổi dấu cả hai vế trước khi xét tổng dương nghiêm ngặt; chỉ không âm thì chưa đủ để kết luận vô nghiệm. Làm lại Bài 7 và Bài 8 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+      "heading_id": "TOP03-M04",
+      "locator": "1.4. Phương trình bậc hai và biệt thức / Vận dụng",
+      "line": 133,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP03-KFT05",
+    "content_version": "TOP03-BANK-CP71-20261126-KFT05",
+    "stem": "Giải \\(\\frac{x^2-9}{x-3}=0\\).",
+    "answer_key": "\\(S=\\{-3\\}\\).",
+    "worked_solution": "Điều kiện \\(x\\ne3\\). Tử số \\((x-3)(x+3)=0\\) cho 3 hoặc −3; loại 3, nghiệm duy nhất −3.\n\nNếu rút gọn rồi kết luận nhận \\(x=3\\), thay \\(x=3\\) vào mẫu để thấy vô nghĩa; làm lại Bài 9 và Bài 10 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+      "heading_id": "TOP03-M05",
+      "locator": "2.1. Giải phương trình phân thức / Vận dụng",
+      "line": 165,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP03-KFT06",
+    "content_version": "TOP03-BANK-CP71-20261126-KFT06",
+    "stem": "Giải \\(\\lvert x+3\\rvert=x+3\\).",
+    "answer_key": "\\(S=[-3;+\\infty)\\).",
+    "worked_solution": "Vì \\(\\lvert u\\rvert=u\\) khi và chỉ khi \\(u\\ge0\\), ta có \\(x+3\\ge0\\Rightarrow x\\ge-3\\). Thử \\(x=-4\\) cho \\(\\lvert-1\\rvert=1\\ne-1\\).\n\nNếu quên điều kiện \\(B\\ge0\\), thử một x làm B âm; làm lại Bài 11 và Bài 12 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+      "heading_id": "TOP03-M06",
+      "locator": "2.2. Phương trình có giá trị tuyệt đối / Vận dụng",
+      "line": 193,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP03-KFT07",
+    "content_version": "TOP03-BANK-CP71-20261126-KFT07",
+    "stem": "Giải \\(\\sqrt{x+1}=x\\).",
+    "answer_key": "\\(S=\\{\\frac{1+\\sqrt5}{2}\\}\\).",
+    "worked_solution": "Vế trái không âm nên cần \\(x\\ge0\\); điều này cũng bảo đảm \\(x+1\\ge0\\). Trên miền ấy, hai vế không âm nên bình phương là phép tương đương: \\(x+1=x^2\\), suy ra \\(x=\\frac{1\\pm\\sqrt5}{2}\\). Chỉ nghiệm \\(\\frac{1+\\sqrt5}{2}\\ge0\\) thỏa điều kiện. Nghiệm còn lại âm nên không thể bằng căn bậc hai số học.\n\nNếu nhận cả hai nghiệm sau bình phương, kiểm dấu hai vế; làm lại Bài 19 và Bài 20 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "RADICAL_CONDITION",
+      "RADICAL_FILTER"
+    ],
+    "original_outcome_ids": [
+      "TOP03-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+      "heading_id": "TOP03-M07",
+      "locator": "3.1. Bình phương có thể sinh nghiệm ngoại lai / Vận dụng",
+      "line": 233,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP03-KFT08",
+    "content_version": "TOP03-BANK-CP71-20261126-KFT08",
+    "stem": "Giải \\(\\sqrt{x^2+5}=\\sqrt{4x+2}\\).",
+    "answer_key": "\\(S=\\{1;3\\}\\).",
+    "worked_solution": "Vì \\(x^2+5>0\\) với mọi x, điều kiện còn lại là \\(4x+2\\ge0\\), tức \\(x\\ge-\\frac12\\). Trên miền đó, bình phương tương đương với \\(x^2+5=4x+2\\), hay \\((x-1)(x-3)=0\\). Hai nghiệm 1 và 3 đều thỏa miền. Thế lại: hai vế lần lượt cùng bằng \\(\\sqrt6\\) khi \\(x=1\\) và \\(\\sqrt{14}\\) khi \\(x=3\\).\n\nNếu quên một miền căn, kiểm riêng từng biểu thức dưới căn trước khi bình phương; làm lại Bài 21, Bài 14 và Bài 18 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "RADICAL_TWO_SIDES",
+      "RADICAL_DOMAIN"
+    ],
+    "original_outcome_ids": [
+      "TOP03-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+      "heading_id": "TOP03-M08",
+      "locator": "3.2. Hai căn bậc hai và điều kiện đồng thời / Vận dụng",
+      "line": 265,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP03-KFT09",
+    "content_version": "TOP03-BANK-CP71-20261126-KFT09",
+    "stem": "Giải \\(\\sqrt{2x+7}=x+1\\).",
+    "answer_key": "\\(S=\\{\\sqrt6\\}\\).",
+    "worked_solution": "Điều kiện gồm \\(2x+7\\ge0\\) và \\(x+1\\ge0\\), tương đương \\(x\\ge-1\\). Bình phương hai vế không âm được \\(2x+7=(x+1)^2\\), tức \\(x^2=6\\). Chỉ \\(x=\\sqrt6\\ge-1\\) được nhận; nghiệm \\(-\\sqrt6\\) làm vế phải âm nên bị loại.\n\nNếu chỉ kiểm biểu thức dưới căn mà quên vế phải không âm, thử nghiệm âm vào đề gốc; làm lại Bài 22, Bài 13, Bài 15 và Bài 16 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "RADICAL_CONDITION",
+      "RADICAL_FILTER"
+    ],
+    "original_outcome_ids": [
+      "TOP03-O09"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+      "heading_id": "TOP03-M09",
+      "locator": "3.3. Một căn bằng một biểu thức / Vận dụng",
+      "line": 293,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP03-KFT10",
+    "content_version": "TOP03-BANK-CP71-20261126-KFT10",
+    "stem": "Giải \\(\\sqrt{x^2+5}=x-2\\) trong \\(\\mathbb R\\).",
+    "answer_key": "\\(S=\\varnothing\\).",
+    "worked_solution": "Điều kiện \\(x\\ge2\\). Bình phương được \\(x^2+5=x^2-4x+4\\Rightarrow x=-\\frac14\\), trái miền. Vậy \\(S=\\varnothing\\), không nhận ứng viên.\n\nNếu kết luận nghiệm chỉ bằng giải phương trình sau bình phương, hãy lập bảng ‘ứng viên→miền→dấu→gốc’; làm lại Bài 23, Bài 24 và Bài 25 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "RADICAL_FILTER"
+    ],
+    "original_outcome_ids": [
+      "TOP03-O10"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+      "heading_id": "TOP03-M10",
+      "locator": "3.4. Lọc ứng viên bằng điều kiện và thế ngược / Vận dụng",
+      "line": 332,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP03-KFT11",
+    "content_version": "TOP03-BANK-CP71-20261126-KFT11",
+    "stem": "Giải \\(x^4-2x^2-3=0\\).",
+    "answer_key": "\\(S=\\{-\\sqrt3;\\sqrt3\\}\\).",
+    "worked_solution": "\\(t=x^2\\ge0\\); \\(t^2-2t-3=(t-3)(t+1)=0\\). Chỉ \\(t=3\\) hợp lệ, nên \\(x=\\pm\\sqrt3\\).\n\nNếu suy \\(x^2=-1\\) có nghiệm thực, kiểm tính không âm của bình phương; làm lại Bài 28 và Bài 29 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O11"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+      "heading_id": "TOP03-M11",
+      "locator": "4.1. Đặt ẩn phụ là bình phương, nhớ điều kiện không âm / Vận dụng",
+      "line": 364,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP03-KFT12",
+    "content_version": "TOP03-BANK-CP71-20261126-KFT12",
+    "stem": "Một xe đi 90 km với tốc độ không đổi \\(v>0\\) (km/h). Nếu tăng tốc độ thêm 15 km/h trên cùng quãng đường thì thời gian đi giảm 1 giờ. Tìm v.",
+    "answer_key": "\\(v=30\\,\\mathrm{km/h}\\).",
+    "worked_solution": "Gọi v là vận tốc cũ (km/h). Thời gian cũ là \\(\\frac{90}{v}\\) giờ, thời gian mới là \\(\\frac{90}{v+15}\\) giờ. Hiệu thời gian cũ trừ thời gian mới bằng 1 giờ, nên \\(\\frac{90}{v}-\\frac{90}{v+15}=1\\Rightarrow v^2+15v-1350=0\\Rightarrow (v-30)(v+45)=0\\). Lọc \\(v>0\\), nhận \\(v=30\\,\\mathrm{km/h}\\); thời gian lần lượt là 3 giờ và 2 giờ.\n\nNếu quên miền vật lý hoặc điều kiện \\(v(v+15)\\ne0\\), đặt biến và đơn vị lại rồi thử số; làm lại Bài 30, Bài 26, Bài 27 và Bài 31 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "RADICAL_MODELING"
+    ],
+    "original_outcome_ids": [
+      "TOP03-O12"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+      "heading_id": "TOP03-M12",
+      "locator": "4.2. Mô hình hóa và giữ đơn vị / Vận dụng",
+      "line": 392,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
