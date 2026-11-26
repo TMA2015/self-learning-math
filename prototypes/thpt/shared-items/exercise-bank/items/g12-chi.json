@@ -10,7 +10,7 @@
       "G12-B01-MONOTONICITY_MEANING"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "So sánh bình phương của hai số âm, hoặc xét \\(f'=2x\\)."
     ],
@@ -42,7 +42,7 @@
       "G12-B01-DERIVATIVE_SIGN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Tách 2(x−2), lập dấu hai phía x=2."
     ],
@@ -74,7 +74,7 @@
       "G12-B01-EXTREMA_SIGN_CHANGE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Đọc dấu trước và sau từng mốc."
     ],
@@ -106,7 +106,7 @@
       "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Xét \\(f'\\) ở hai phía 0, không chỉ tại 0."
     ],
@@ -138,7 +138,7 @@
       "G12-B01-DOMAIN_INTERVALS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Ghi miền rồi xét dấu riêng hai khoảng."
     ],
@@ -170,7 +170,7 @@
       "G12-B01-DERIVATIVE_SIGN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Hai nghiệm của tích chia trục số thành ba khoảng."
     ],
@@ -202,7 +202,7 @@
       "G12-B01-EXTREMA_SIGN_CHANGE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tìm nghiệm \\(f'\\), xét đổi dấu, tính f tại nghiệm."
     ],
@@ -234,7 +234,7 @@
       "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "So |x| với |0|; đạo hàm không phải cách duy nhất."
     ],
@@ -266,7 +266,7 @@
       "G12-B01-MOTION_CONTEXT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Phân tích \\(v(t)=s'(t)\\) thành tích rồi giới hạn t≥0."
     ],
@@ -298,7 +298,7 @@
       "G12-B02-EXTREMA_GLOBAL_MEANING"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tìm một số lớn hơn x nhưng vẫn nhỏ hơn 1."
     ],
@@ -330,7 +330,7 @@
       "G12-B02-CLOSED_INTERVAL_EXISTENCE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Kiểm đủ liên tục, đoạn đóng và hữu hạn."
     ],
@@ -362,7 +362,7 @@
       "G12-B02-CRITICAL_END_POINTS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "So f tại hai đầu và nghiệm \\(f'\\) trong đoạn."
     ],
@@ -394,7 +394,7 @@
       "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Xét giới hạn khi x tiến tới 0⁺ và +∞."
     ],
@@ -426,7 +426,7 @@
       "G12-B02-CRITICAL_END_POINTS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tính g tại 0,5 và nghiệm \\(g'=0\\)."
     ],
@@ -458,7 +458,7 @@
       "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Kiểm x=0 thuộc miền, còn ±1 thì không."
     ],
@@ -490,7 +490,7 @@
       "G12-B02-CONSTRAINED_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Xét dấu đạo hàm và điều kiện x≥0."
     ],
@@ -522,7 +522,7 @@
       "G12-B02-EXTREMA_GLOBAL_MEANING"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Dùng tính tăng của \\(x^3\\) trên đoạn và kiểm x=0."
     ],
@@ -554,7 +554,7 @@
       "G12-B02-CLOSED_INTERVAL_EXISTENCE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Kiểm hàm tại x=0 trước khi dùng định lý."
     ],
@@ -586,7 +586,7 @@
       "G12-B02-OPTIMIZATION_MODEL"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Đặt hai cạnh dương, viết tổng bằng 12 rồi hoàn thành bình phương."
     ],
@@ -618,7 +618,7 @@
       "G12-B03-HORIZONTAL_LIMIT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Tách số hạng hằng và phần tiến về 0."
     ],
@@ -650,7 +650,7 @@
       "G12-B03-VERTICAL_ONE_SIDED"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Xét dấu mẫu ở hai phía −3."
     ],
@@ -682,7 +682,7 @@
       "G12-B03-OBLIQUE_REMAINDER"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Tính hiệu g(x)−(x−2)."
     ],
@@ -714,7 +714,7 @@
       "G12-B03-REMOVABLE_DISCONTINUITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Phân tích tử thành nhân tử và rút gọn với x≠3."
     ],
@@ -746,7 +746,7 @@
       "G12-B03-HORIZONTAL_LIMIT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Chia tử cho mẫu hoặc chia cả tử và mẫu cho x."
     ],
@@ -778,7 +778,7 @@
       "G12-B03-VERTICAL_ONE_SIDED"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tử tiến về 3 dương; kiểm dấu mẫu ở trái và phải 2."
     ],
@@ -810,7 +810,7 @@
       "G12-B03-OBLIQUE_REMAINDER"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Chia đa thức, xét phần dư ở vô cực và quanh −1."
     ],
@@ -842,7 +842,7 @@
       "G12-B03-DOMAIN_SIDED_LIMITS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Xác định phía nào thuộc miền trước khi lấy giới hạn."
     ],
@@ -874,7 +874,7 @@
       "G12-B03-REMOVABLE_DISCONTINUITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Rút gọn biểu thức nhưng giữ x≠2."
     ],
@@ -906,7 +906,7 @@
       "G12-B03-GRAPH_INTERPRETATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Xét dấu f−3 theo x−2."
     ],
@@ -938,7 +938,7 @@
       "G12-B03-HORIZONTAL_LIMIT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Tách \\(\\sqrt{x^2}\\) thành |x| ở cả hai phía."
     ],
@@ -970,7 +970,7 @@
       "G12-B03-DOMAIN_SIDED_LIMITS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Xét q lớn và q dương rất nhỏ; phân biệt mô hình liên tục với sản lượng nguyên."
     ],
@@ -1002,7 +1002,7 @@
       "G12-B04-SURVEY_WORKFLOW"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Tìm điều kiện mẫu khác 0 trước mọi thao tác."
     ],
@@ -1034,7 +1034,7 @@
       "G12-B04-CUBIC_VARIATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Phân tích đạo hàm thành 3x(x−2)."
     ],
@@ -1066,7 +1066,7 @@
       "G12-B04-RATIONAL_VARIATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tìm miền và đạo hàm của phân thức."
     ],
@@ -1098,7 +1098,7 @@
       "G12-B04-INTERCEPTS_LIMITS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Giao Ox đặt y=0; giao Oy đặt x=0, kiểm miền."
     ],
@@ -1130,7 +1130,7 @@
       "G12-B04-CENTER_SYMMETRY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Đặt X=x−4, Y=y−2."
     ],
@@ -1162,7 +1162,7 @@
       "G12-B04-READ_VARIATION_TABLE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Đọc dấu đạo hàm ở hai bên mỗi mốc."
     ],
@@ -1194,7 +1194,7 @@
       "G12-B04-DOMAIN_NONCONNECT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Kiểm miền và giới hạn khi x→−1 từ từng phía."
     ],
@@ -1226,7 +1226,7 @@
       "G12-B04-CUBIC_VARIATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Giải \\(h'=0\\), lập dấu trên ba khoảng."
     ],
@@ -1258,7 +1258,7 @@
       "G12-B04-INTERCEPTS_LIMITS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Phân tích \\(x^2(x-3)\\), kiểm dấu trước và sau mỗi nghiệm."
     ],
@@ -1290,7 +1290,7 @@
       "G12-B04-CENTER_SYMMETRY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Đặt x=1+u rồi kiểm f(1+u)+f(1−u)."
     ],
@@ -1322,7 +1322,7 @@
       "G12-B04-RATIONAL_VARIATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Đạo hàm trên q>10 và xét hai giới hạn."
     ],
@@ -1354,7 +1354,7 @@
       "G12-B04-SURVEY_WORKFLOW"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Kiểm hệ số bậc ba và dấu đạo hàm giữa 0 và 2."
     ],
@@ -1386,7 +1386,7 @@
       "G12-B05-RATE_INTERPRETATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Lấy đạo hàm rồi chia đơn vị đại lượng cho đơn vị biến."
     ],
@@ -1418,7 +1418,7 @@
       "G12-B05-MOTION_SPEED_ACCELERATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Tính \\(v=s'\\), tốc độ là |v|."
     ],
@@ -1450,7 +1450,7 @@
       "G12-B05-MARGINAL_COST"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Lấy \\(C'\\) tại q=5 và kiểm đơn vị."
     ],
@@ -1482,7 +1482,7 @@
       "G12-B05-MODEL_VARIABLE_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Cả chiều cao và hai cạnh đáy phải dương."
     ],
@@ -1514,7 +1514,7 @@
       "G12-B05-RATE_INTERPRETATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tính \\(f'(2)\\), dùng \\(\\Delta f\\approx f'(2)\\Delta x\\) với Δx nhỏ."
     ],
@@ -1546,7 +1546,7 @@
       "G12-B05-MOTION_SPEED_ACCELERATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "So dấu v và a, rồi xét riêng lúc v=0."
     ],
@@ -1578,7 +1578,7 @@
       "G12-B05-MARGINAL_COST"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Tính riêng \\(C'(100)\\) và C(101)−C(100)."
     ],
@@ -1610,7 +1610,7 @@
       "G12-B05-OPTIMIZATION_DERIVATIVE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "So giá trị tại nghiệm đạo hàm và hai đầu đoạn."
     ],
@@ -1642,7 +1642,7 @@
       "G12-B05-BOUNDARY_FEASIBILITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Xác định miền hộp không suy biến và xét giới hạn biên."
     ],
@@ -1674,7 +1674,7 @@
       "G12-B05-UNIT_ASSUMPTION_CHECK"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Đơn vị đạo hàm là đơn vị tử chia đơn vị biến."
     ],
@@ -1706,7 +1706,7 @@
       "G12-B05-OPTIMIZATION_DERIVATIVE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Ràng buộc ba cạnh 2x+y=40, rồi lập A(x)."
     ],
@@ -1738,7 +1738,7 @@
       "G12-B05-MODEL_VARIABLE_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Kết hợp q≥0 và p(q)≥0; xét q nguyên nếu là sản phẩm."
     ],
@@ -1770,7 +1770,7 @@
       "G12-B05-UNIT_ASSUMPTION_CHECK"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tìm nghiệm \\(P'\\) và kiểm miền, phân biệt q với P(q)."
     ],
