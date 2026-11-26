@@ -2,7 +2,7 @@
   {
     "item_id": "THPT-G10-B07-C01",
     "content_version": "THPT-G10-CHIV-B07-B08-R01",
-    "stem": "Theo định nghĩa, vectơ \\(\\overrightarrow{AB}\\) có điểm đầu và điểm cuối là gì?",
+    "stem": "Cho hai điểm A, B phân biệt. Theo định nghĩa, vectơ \\(\\overrightarrow{AB}\\) có điểm đầu và điểm cuối là gì?",
     "answer_key": "B",
     "worked_solution": "Vectơ \\(\\overrightarrow{AB}\\) có điểm đầu A và điểm cuối B. Nếu \\(A\\ne B\\), đổi thứ tự thành \\(\\overrightarrow{BA}=-\\overrightarrow{AB}\\) cho vectơ đối, ngược hướng. Nếu \\(A=B\\), cả hai là vectơ-không.",
     "options": [
@@ -280,7 +280,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng quãng đường thành độ dời, nối thẳng điểm đầu/cuối và dùng Pitago. Ôn Bài 7 mục 2.2.3; luyện THPT-G10-CHIV-TRY06."
+    "remediation": "Nếu cộng quãng đường thành độ dời, nối thẳng điểm đầu với điểm cuối và dùng định lí Pitago. Ôn Bài 7 mục 2.2.3; luyện THPT-G10-CHIV-TRY06."
   },
   {
     "item_id": "THPT-G10-B08-C01",
@@ -956,7 +956,7 @@
     "content_version": "THPT-G10-CHIV-B09-B11-R01",
     "stem": "Tìm trung điểm M của \\(A(-2;5)\\) và \\(B(4;-1)\\).",
     "answer_key": "\\(M(1;2)\\)",
-    "worked_solution": "Trung điểm có tọa độ là trung bình cộng tương ứng của hai đầu mút: \\(M\\left(\\frac{-2+4}{2};\\frac{5-1}{2}\\right)=M(1;2)\\).",
+    "worked_solution": "Trung điểm có tọa độ là trung bình cộng tương ứng của hai đầu mút: \\(x_M=\\frac{-2+4}{2}=1\\), \\(y_M=\\frac{5-1}{2}=2\\). Vậy \\(M(1;2)\\).",
     "skill_ids": [
       "G10-B10-MIDPOINT_CENTROID"
     ],
@@ -987,7 +987,7 @@
     "content_version": "THPT-G10-CHIV-B09-B11-R01",
     "stem": "Cho tam giác \\(A(0;0),B(6;0),C(0;3)\\). Tìm trọng tâm G.",
     "answer_key": "\\(G(2;1)\\)",
-    "worked_solution": "Tọa độ trọng tâm bằng trung bình cộng tọa độ của ba đỉnh: \\(G\\left(\\frac{0+6+0}{3};\\frac{0+0+3}{3}\\right)=G(2;1)\\).",
+    "worked_solution": "Tọa độ trọng tâm bằng trung bình cộng tọa độ của ba đỉnh: \\(x_G=\\frac{0+6+0}{3}=2\\), \\(y_G=\\frac{0+0+3}{3}=1\\). Vậy \\(G(2;1)\\).",
     "skill_ids": [
       "G10-B10-MIDPOINT_CENTROID"
     ],
@@ -1287,7 +1287,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Tích vô hướng có đơn vị N·m = J."
+      "Nhân các thành phần tương ứng rồi cộng; đơn vị công là \\(\\mathrm{N}\\cdot\\mathrm m=\\mathrm J\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -1351,8 +1351,8 @@
     "hints": [
       "Viết \\(\\overrightarrow{AM}\\) theo \\(\\vec a,\\vec b\\), rồi dùng \\(\\overrightarrow{MN}=\\overrightarrow{MA}+\\overrightarrow{AN}\\); để ý dấu của \\(\\overrightarrow{MA}\\)."
     ],
-    "remediation": "Nếu kết quả mất dấu âm, quay lại Bài 8 (vectơ đối/quy tắc ba điểm). Nếu chỉ có một trong hai vectơ cơ sở, dùng hệ thức trung điểm tại Bài 9 rồi tách thành \\(\\vec a,\\vec b\\). Nếu quên tính duy nhất, kiểm tra điều kiện \\(\\vec a,\\vec b\\) không cùng phương.",
-    "rubric": "2 điểm xác lập đúng \\(\\overrightarrow{AM}\\); 1 điểm xác lập đúng \\(\\overrightarrow{AN}\\) và hướng; 2 điểm suy ra đúng \\(\\overrightarrow{MN}\\); 1 điểm giải thích cặp hệ số duy nhất nhờ \\(\\overrightarrow{AB},\\overrightarrow{AC}\\) không cùng phương. Tổng 6 điểm. Rubric hỗ trợ Written reasoning **trong cùng một item**, không tạo Written/Anchor item thứ hai.",
+    "remediation": "Nếu kết quả mất dấu âm, quay lại Bài 8 về vectơ đối và quy tắc ba điểm. Nếu chỉ có một trong hai vectơ cơ sở, dùng hệ thức trung điểm tại Bài 9 rồi tách thành \\(\\vec a,\\vec b\\). Nếu quên tính duy nhất, kiểm tra điều kiện \\(\\vec a,\\vec b\\) không cùng phương.",
+    "rubric": "2 điểm xác lập đúng \\(\\overrightarrow{AM}\\); 1 điểm xác lập đúng \\(\\overrightarrow{AN}\\) và hướng; 2 điểm suy ra đúng \\(\\overrightarrow{MN}\\); 1 điểm giải thích cặp hệ số duy nhất nhờ \\(\\overrightarrow{AB},\\overrightarrow{AC}\\) không cùng phương. Tổng 6 điểm. Rubric hỗ trợ lập luận tự luận **trong cùng một item**, không tạo item Written hoặc Anchor thứ hai.",
     "interaction": {
       "type": "SELF_COMPARE",
       "auto_grade": false
