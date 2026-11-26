@@ -1,3 +1,6 @@
+<!-- TOP02_WORK1109_CURRENT_CUSTODY -->
+**CURRENT 26/11:** source `88446b124096057f98f2742c78d4b93ca73d8883`, Q18 `463eab588a4ee13b3e4532089088ebecf28ebc9c`; 38 IDs, 16 exact public Replay, 55 disclosures, four rubric scores unchanged. Work A01–A06 and X-G.5 source verified; S1 inherited original scan scope, no RELEASE authorization. Earlier evidence is historical.
+
 <!-- MASTER974_TOPIC02_FULL_AUTHOR_Q18_CURRENT_20261121 -->
 **Current AUTHORING full-scope Q18 author self-verification:** `SLM-THPT-QUALITY-ONE v3.2.0`, learner source `d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5`, Q18 receipt `c1766ba52a80be61b9f8fd2124d0116605f74b92`; current 16 outcome Knowledge, 38 original canonical Practice, 4 Written rubrics, 3 math-valid SVGs and 16 public selfchecks examined on the source. 5 verified quality defects #977 fixed. One canonical path, no new receipt or independent NotebookLM review. Prior scoped/history entries below are retained only as chronology; source-lock review is not a RELEASE approval.
 
@@ -10,15 +13,15 @@
 # CĐ2 R06 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5
+CURRENT_SOURCE_BLOB: 88446b124096057f98f2742c78d4b93ca73d8883
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: c1766ba52a80be61b9f8fd2124d0116605f74b92
+CURRENT_Q18_RECEIPT_BLOB: 463eab588a4ee13b3e4532089088ebecf28ebc9c
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
 PREVIOUS_AUTHOR_METADATA_BLOB: d6b967c73272d57664b070b4163fa652deddfdaf
-AUTHORING_STATUS: R06_FORMAL_KNOWLEDGE_TARGETED_Q18_AUTHOR_SELF_VERIFIED
+AUTHORING_STATUS: WORK1109_XG5_TARGETED_AUTHOR_SELF_VERIFIED
 RELEASE_AUTHORIZATION: NO
 
 Original A1–A7/SGK/outcome/item source matrix below is inherited from its frozen baseline, but current learner source now has **four genuine formal mathematical statements and one student recap** (TOP02-O01/O02/O03/O09 and applications) alongside the already accepted H1/H2/H3 numbering. Current Practice, canonical 38 IDs, rubric, Selfcheck 16 stems and SVGs are unchanged. Updated DELTA_C Q18 self-verification refers only to the changed Knowledge scope; old source/Q18 history is preserved. No independent reviewer or RELEASE claim.
