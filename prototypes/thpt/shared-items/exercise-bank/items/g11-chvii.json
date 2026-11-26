@@ -1405,7 +1405,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng \\(V=Sh\\), đã thiếu hệ số \\(rac13\\). Ôn CĐ17 mục 2.2; luyện THPT-TOP17-P08."
+    "remediation": "Nếu dùng \\(V=Sh\\), đã thiếu hệ số \\(\\frac13\\). Ôn CĐ17 mục 2.2; luyện THPT-TOP17-P08."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C03",
@@ -1451,7 +1451,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Dùng \\(V=\frac h3(S+S'+sqrt{SS'})\\)."
+      "Dùng \\(V=\\frac h3(S+S'+\\sqrt{SS'})\\)."
     ],
     "rubric": null,
     "interaction": {
