@@ -4,7 +4,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Các nhóm [0;10), [10;20), [20;30) có tần số 0,5,7. Cỡ mẫu là bao nhiêu?",
     "answer_key": "12",
-    "worked_solution": "Cộng tần số 0+5+7=12; lớp rỗng không làm tăng cỡ mẫu.",
+    "worked_solution": "Cỡ mẫu là tổng số quan sát, bằng tổng tần số các lớp: \\(n=0+5+7=12\\). Lớp rỗng không có quan sát nào, nhưng vẫn có thể ghi trong bảng.",
     "skill_ids": [
       "G12-CHIII-B09-O01"
     ],
@@ -36,7 +36,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Bảng gồm các nhóm [5;10), [10;15), [15;20) với f=(2,0,6). Nhóm giữa có giá trị gốc không?",
     "answer_key": "Không",
-    "worked_solution": "Tần số lớp giữa bằng 0 nên không có quan sát nằm ở lớp ấy.",
+    "worked_solution": "Lớp giữa \\([10;15)\\) có tần số 0, nghĩa là không có quan sát nào thuộc lớp đó. Không phải các quan sát ở lớp này đều bằng 0.",
     "skill_ids": [
       "G12-CHIII-B09-O01"
     ],
@@ -66,9 +66,9 @@
   {
     "item_id": "THPT-G12-B09-P02",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Có hai bảng ghép nhóm cùng tần số (3,4,3). Có thể khẳng định các số liệu gốc của chúng bằng nhau không?",
+    "stem": "Hai bảng có cùng các khoảng ghép nhóm và cùng tần số (3, 4, 3). Có thể khẳng định các số liệu gốc của chúng giống hệt nhau không?",
     "answer_key": "Không",
-    "worked_solution": "Tần số chỉ cho biết số quan sát thuộc nhóm, không giữ từng giá trị gốc.",
+    "worked_solution": "Không. Kể cả khi các lớp giống nhau, tần số chỉ giữ số quan sát trong từng khoảng, không giữ từng giá trị. Ví dụ trong lớp [0;10), thay một quan sát 2 bằng 3 không làm đổi tần số.",
     "skill_ids": [
       "G12-CHIII-B09-O01"
     ],
@@ -100,7 +100,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Các nhóm [0;5),[5;10),[10;15),[15;20) có f=(0,5,10,0). R là bao nhiêu?",
     "answer_key": "10",
-    "worked_solution": "Nhóm đầu có dữ liệu là [5;10), cuối [10;15), nên R=15−5=10.",
+    "worked_solution": "Bỏ hai lớp biên có tần số 0. Lớp đầu có dữ liệu là \\([5;10)\\), lớp cuối là \\([10;15)\\). Khoảng biến thiên ghép nhóm \\(R=15-5=10\\); đây là hiệu hai cận lớp, không phải khoảng biến thiên chính xác của dữ liệu gốc.",
     "skill_ids": [
       "G12-CHIII-B09-O02"
     ],
@@ -132,7 +132,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Các nhóm [10;20),[20;30),[30;40),[40;50) có f=(2,0,7,1). R ghép nhóm?",
     "answer_key": "40",
-    "worked_solution": "Nhóm đầu [10;20), cuối [40;50): R=50−10=40.",
+    "worked_solution": "Lớp đầu có dữ liệu là \\([10;20)\\), lớp cuối là \\([40;50)\\). Lấy cận trên lớp cuối trừ cận dưới lớp đầu: \\(R=50-10=40\\). Lớp rỗng nằm giữa không thay đổi hai cận này.",
     "skill_ids": [
       "G12-CHIII-B09-O02"
     ],
@@ -164,7 +164,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Một mẫu gốc có min=13, max=47; bảng ghép lớp [10;20) đến [40;50) ở hai biên. So R gốc với R ghép nhóm.",
     "answer_key": "R gốc=34; R ghép nhóm=40",
-    "worked_solution": "R gốc=47−13=34; nhóm biên có f>0 nên R ghép=50−10=40.",
+    "worked_solution": "Mẫu gốc có \\(R_{\\mathrm{gốc}}=47-13=34\\). Bảng ghép nhóm dùng cận dưới lớp đầu và cận trên lớp cuối có dữ liệu nên \\(R_{\\mathrm{ghép}}=50-10=40\\). Hai kết quả không nhất thiết bằng nhau.",
     "skill_ids": [
       "G12-CHIII-B09-O02"
     ],
@@ -194,9 +194,9 @@
   {
     "item_id": "THPT-G12-B09-C03",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "R thay đổi nhiều nếu thêm một quan sát vào lớp rất xa lớp cuối hiện tại. Đúng hay sai?",
+    "stem": "Nếu giữ nguyên các lớp cũ và thêm một quan sát thuộc một lớp mới rất xa về phía trên, khoảng biến thiên ghép nhóm có thể tăng mạnh dù chỉ thêm một quan sát. Đúng hay sai?",
     "answer_key": "Đúng",
-    "worked_solution": "R dựa vào hai cận nhóm có dữ liệu ở xa nhất; một quan sát có thể đổi biên.",
+    "worked_solution": "Đúng: chỉ cần một quan sát làm xuất hiện lớp có dữ liệu ở xa hơn, cận trên cuối cùng tăng, trong khi cận dưới đầu giữ nguyên. Chẳng hạn từ cận 10 và 40, nếu có thêm lớp \\([60;70)\\), R tăng từ 30 lên 60.",
     "skill_ids": [
       "G12-CHIII-B09-O03"
     ],
@@ -228,7 +228,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Phân bố ban đầu có nhóm dương đầu [10;20), cuối [30;40). Sau thêm 1 số liệu ở [60;70), R tăng bao nhiêu?",
     "answer_key": "30",
-    "worked_solution": "R cũ=40−10=30; R mới=70−10=60; tăng 30.",
+    "worked_solution": "Trước khi thêm, \\(R_{\\mathrm{cũ}}=40-10=30\\). Sau khi thêm, cận dưới vẫn là 10 nhưng cận trên cuối là 70, nên \\(R_{\\mathrm{mới}}=70-10=60\\). Mức tăng là \\(60-30=30\\).",
     "skill_ids": [
       "G12-CHIII-B09-O03"
     ],
@@ -260,7 +260,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Mẫu A có R=20, mẫu B có R=30 (cùng đơn vị). Có thể suy B có IQR lớn hơn không?",
     "answer_key": "Không",
-    "worked_solution": "Khoảng biến thiên không quyết định mức phân tán ở 50% giữa mẫu.",
+    "worked_solution": "Không. R chỉ phản ánh hai biên của mẫu ghép nhóm, trong khi khoảng tứ phân vị đo độ rộng giữa Q₁ và Q₃. Một mẫu có các nhóm biên rất xa nhưng phần giữa tập trung vẫn có thể có khoảng tứ phân vị nhỏ.",
     "skill_ids": [
       "G12-CHIII-B09-O03"
     ],
@@ -292,7 +292,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Với f=(6,14,12,8), n=40; lớp chứa Q₁ thuộc vị trí nào?",
     "answer_key": "Lớp 2",
-    "worked_solution": "n/4=10; cộng dồn 6<10≤20 nên nằm lớp 2.",
+    "worked_solution": "Mốc nội suy \\(n/4=40/4=10\\). Tần số tích lũy sau lớp 1 là 6 và sau lớp 2 là 20. Vì \\(6<10\\le20\\), dùng lớp 2 để nội suy \\(Q_1\\).",
     "skill_ids": [
       "G12-CHIII-B09-O04"
     ],
@@ -322,9 +322,9 @@
   {
     "item_id": "THPT-G12-B09-P07",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Với f=(6,14,12,8), lớp chứa Q₃ là lớp mấy?",
+    "stem": "Một bảng ghép nhóm có tần số bốn lớp lần lượt 6, 14, 12, 8. Dùng lớp nào để nội suy Q₃?",
     "answer_key": "Lớp 3",
-    "worked_solution": "3n/4=30; cộng dồn 6,20,32 nên lớp 3.",
+    "worked_solution": "Cỡ mẫu \\(n=6+14+12+8=40\\). Mốc \\(3n/4=30\\); tần số tích lũy là 6, 20, 32, 40. Vì \\(20<30\\le32\\), dùng lớp 3 để nội suy \\(Q_3\\).",
     "skill_ids": [
       "G12-CHIII-B09-O04"
     ],
@@ -356,7 +356,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Tần số (2,6,10,6), n=24, các nhóm liền nhau. Nêu vị trí n/4, 3n/4 và lớp dùng để nội suy từng tứ phân vị; giải thích trường hợp đúng biên.",
     "answer_key": "6 và 18; lớp 2 và lớp 3 để nội suy; Q3 bằng biên chung lớp 3 và lớp 4.",
-    "worked_solution": "Tích lũy 2,8,18,24. n/4=6 nằm trong phần tích lũy của lớp 2. 3n/4=18 đúng tích lũy đến lớp 3; nội suy tại lớp 3 cho cận trên, bằng cận dưới lớp 4 vì các lớp liền nhau. Không khẳng định giá trị ở cận phải thuộc khoảng nửa kín lớp 3.",
+    "worked_solution": "Tần số tích lũy là 2, 8, 18, 24. Mốc \\(n/4=6\\) nằm trong lớp 2. Mốc \\(3n/4=18\\) trùng tần số tích lũy cuối lớp 3: nội suy lớp 3 cho đúng cận trên, cũng là cận dưới lớp 4 vì các lớp liền nhau. Đó là giá trị nội suy ở biên chung, không phải khẳng định cận phải thuộc lớp nửa kín thứ ba.",
     "skill_ids": [
       "G12-CHIII-B09-O04"
     ],
@@ -386,9 +386,9 @@
   {
     "item_id": "THPT-G12-B09-C05",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Nhóm [15;20) chứa Q₁ của mẫu n=40, C=6, f=14. Tính Q₁ (2 chữ số).",
+    "stem": "Mẫu ghép nhóm có \\(n=40\\). Lớp dùng để nội suy \\(Q_1\\) là \\([15;20)\\), có tần số 14 và tần số tích lũy trước lớp bằng 6. Tính \\(Q_1\\), làm tròn đến hai chữ số thập phân.",
     "answer_key": "16,43",
-    "worked_solution": "Q₁≈15+((10−6)/14)·5=16,42857≈16,43.",
+    "worked_solution": "Cận dưới lớp là 15, độ rộng 5, tần số lớp 14 và tần số tích lũy trước lớp 6. Thay vào công thức: \\(Q_1=15+\\frac{40/4-6}{14}\\cdot5\\approx16{,}43\\). Kết quả nằm trong lớp đã cho.",
     "skill_ids": [
       "G12-CHIII-B09-O05"
     ],
@@ -418,9 +418,9 @@
   {
     "item_id": "THPT-G12-B09-P09",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Nhóm [20;25) chứa Q₃ của mẫu n=40, C=20, f=12. Tính Q₃ (2 chữ số).",
+    "stem": "Mẫu ghép nhóm có \\(n=40\\). Lớp dùng để nội suy \\(Q_3\\) là \\([20;25)\\), có tần số 12 và tần số tích lũy trước lớp bằng 20. Tính \\(Q_3\\), làm tròn đến hai chữ số thập phân.",
     "answer_key": "24,17",
-    "worked_solution": "Q₃≈20+((30−20)/12)·5=24,1667≈24,17.",
+    "worked_solution": "Cận dưới 20, độ rộng 5, tần số lớp 12 và tích lũy trước lớp 20. \\(Q_3=20+\\frac{3\\cdot40/4-20}{12}\\cdot5\\approx24{,}17\\). Kết quả nằm trong lớp [20;25).",
     "skill_ids": [
       "G12-CHIII-B09-O05"
     ],
@@ -450,16 +450,16 @@
   {
     "item_id": "THPT-G12-B09-P10",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Với Bảng f=(6,14,12,8) trên các lớp [10;15),[15;20),[20;25),[25;30), IQR bằng bao nhiêu (2 chữ số)?",
+    "stem": "Bốn lớp [10;15), [15;20), [20;25), [25;30) có tần số lần lượt 6, 14, 12, 8. Tính khoảng tứ phân vị của mẫu ghép nhóm, làm tròn đến hai chữ số thập phân.",
     "answer_key": "7,74",
-    "worked_solution": "Tính Q₁≈16,4286; Q₃≈24,1667; Δ_Q≈7,7381≈7,74.",
+    "worked_solution": "Tần số tích lũy là 6, 20, 32, 40; dùng lớp 2 và 3. \\(Q_1=15+\\frac{10-6}{14}\\cdot5=\\frac{115}{7}\\), \\(Q_3=20+\\frac{30-20}{12}\\cdot5=\\frac{145}{6}\\). Khoảng tứ phân vị \\(\\Delta_Q=Q_3-Q_1=\\frac{325}{42}\\approx7{,}74\\). Chỉ làm tròn ở kết quả cuối.",
     "skill_ids": [
       "G12-CHIII-B09-O05"
     ],
     "problem_type_id": null,
     "difficulty": "3",
     "hints": [
-      "Tính Q1,Q3 bằng nội suy rồi trừ, làm tròn cuối."
+      "Tính hai tứ phân vị bằng phân số chính xác, rồi lấy hiệu; chỉ làm tròn ở cuối."
     ],
     "rubric": null,
     "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.",
@@ -484,7 +484,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Muốn bớt nhạy với các nhóm cực trị khi so sánh nửa giữa của hai mẫu, nên ưu tiên R hay IQR?",
     "answer_key": "IQR",
-    "worked_solution": "IQR dựa trên Q₁ và Q₃, phản ánh 50% giữa; R dựa hai biên.",
+    "worked_solution": "Ưu tiên khoảng tứ phân vị \\(\\Delta_Q=Q_3-Q_1\\), vì nó đo độ rộng của phần giữa mẫu, ít chịu ảnh hưởng trực tiếp của các giá trị cực biên hơn R. Không có nghĩa là nó mô tả mọi đặc điểm phân bố.",
     "skill_ids": [
       "G12-CHIII-B09-O06"
     ],
@@ -516,7 +516,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Hai mẫu cùng đơn vị có R_A=50, IQR_A=14; R_B=30, IQR_B=9. Nhận xét chính xác?",
     "answer_key": "A trải rộng hơn theo cả hai thước đo này",
-    "worked_solution": "R_A>R_B và IQR_A>IQR_B; chỉ nhận xét trên 2 số đặc trưng, không suy mọi đặc điểm phân bố.",
+    "worked_solution": "Vì \\(50>30\\), A có khoảng biến thiên lớn hơn. Vì \\(14>9\\), A cũng có khoảng tứ phân vị lớn hơn. Nếu hai mẫu đo cùng đại lượng, ghép nhóm tương thích, A trải rộng hơn theo cả hai chỉ số này; không suy ra mọi đặc điểm phân bố đều lớn hơn.",
     "skill_ids": [
       "G12-CHIII-B09-O06"
     ],
@@ -548,7 +548,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Nếu IQR của A nhỏ hơn B nhưng R_A lớn hơn R_B thì kết luận “A luôn ít phân tán hơn B” có đúng không?",
     "answer_key": "Không",
-    "worked_solution": "Hai chỉ số đo các phần khác nhau; dữ liệu có thể có biên xa nhưng nửa giữa tập trung.",
+    "worked_solution": "Không. R lớn cho thấy hai biên của A xa nhau hơn; khoảng tứ phân vị nhỏ cho thấy phần giữa của A tập trung hơn. Hai số đo phản ánh hai khía cạnh khác nhau, không thể dùng chữ “luôn” để xếp hạng toàn bộ độ phân tán.",
     "skill_ids": [
       "G12-CHIII-B09-O06"
     ],
@@ -580,7 +580,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Giá trị đại diện của nhóm [10;20) là số nào?",
     "answer_key": "15",
-    "worked_solution": "Trung điểm (10+20)/2=15.",
+    "worked_solution": "Giá trị đại diện của nhóm là trung điểm hai cận, \\(\\frac{10+20}{2}=15\\). Đây là giá trị thay thế các quan sát trong nhóm khi tính các số đặc trưng.",
     "skill_ids": [
       "G12-CHIII-B10-O01"
     ],
@@ -612,7 +612,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Các nhóm [0;10),[10;20),[20;30),[30;40), f=(2,6,6,2). Tính x̄ ghép nhóm.",
     "answer_key": "20",
-    "worked_solution": "Giá trị đại diện 5,15,25,35; tổng trọng số=320, n=16 ⇒ x̄=20.",
+    "worked_solution": "Các trung điểm là 5, 15, 25, 35; cỡ mẫu \\(n=2+6+6+2=16\\). Trung bình ghép nhóm \\(\\overline{x}=\\frac{2\\cdot5+6\\cdot15+6\\cdot25+2\\cdot35}{16}=\\frac{320}{16}=20\\).",
     "skill_ids": [
       "G12-CHIII-B10-O01"
     ],
@@ -644,7 +644,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Lớp [0;20) có f=1, [20;40) có f=9. Trung bình ghép nhóm?",
     "answer_key": "28",
-    "worked_solution": "Giá trị đại diện 10 và 30; (1·10+9·30)/10=28, không phải (10+30)/2.",
+    "worked_solution": "Hai giá trị đại diện là 10 và 30. Vì nhóm thứ hai có 9 quan sát, phải dùng trung bình có trọng số: \\(\\overline{x}=\\frac{1\\cdot10+9\\cdot30}{1+9}=28\\). Không lấy trung bình đơn giản của hai trung điểm.",
     "skill_ids": [
       "G12-CHIII-B10-O01"
     ],
@@ -676,7 +676,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Các giá trị đại diện (2,4,6,8) có tần số (2,1,1,2). Tính phương sai ghép nhóm với mẫu số n.",
     "answer_key": "19/3.",
-    "worked_solution": "n=6, trung bình (2·2+4+6+2·8)/6=5. Tổng bình phương độ lệch có trọng số 2·9+1+1+2·9=38. Phương sai 38/6=19/3, dùng mẫu số n.",
+    "worked_solution": "Cỡ mẫu \\(n=2+1+1+2=6\\). Trung bình \\(\\overline{x}=\\frac{2\\cdot2+4+6+2\\cdot8}{6}=5\\). Phương sai \\(s^2=\\frac{2(2-5)^2+(4-5)^2+(6-5)^2+2(8-5)^2}{6}=\\frac{38}{6}=\\frac{19}{3}\\). Dùng mẫu số n theo định nghĩa đang học.",
     "skill_ids": [
       "G12-CHIII-B10-O02"
     ],
@@ -708,7 +708,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Trong phép tính phương sai ghép nhóm, cả 10 quan sát đều được đại diện bằng giá trị 6. Phương sai ghép nhóm bằng bao nhiêu? Có chắc phương sai dữ liệu gốc cũng bằng 0 không?",
     "answer_key": "Phương sai ghép nhóm 0; không chắc phương sai dữ liệu gốc bằng 0.",
-    "worked_solution": "Trung bình đại diện bằng 6, mỗi độ lệch đại diện bằng 0 nên phương sai ghép nhóm bằng 0. Các quan sát thô trong nhóm có thể khác nhau; việc thay bằng cùng trung điểm làm mất thông tin, không đủ căn cứ nói phương sai gốc bằng 0.",
+    "worked_solution": "Trung bình đại diện là 6. Mọi độ lệch đại diện đều bằng 0 nên \\(s^2=0\\). Tuy nhiên, các quan sát thật trong nhóm có thể khác nhau; thay chúng bằng cùng trung điểm đã làm mất thông tin, nên không kết luận phương sai mẫu gốc bằng 0.",
     "skill_ids": [
       "G12-CHIII-B10-O02"
     ],
@@ -740,7 +740,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Đơn vị dữ liệu là giờ. Đơn vị phương sai là gì?",
     "answer_key": "Giờ²",
-    "worked_solution": "Phương sai lấy bình phương sai lệch nên đơn vị bình phương.",
+    "worked_solution": "Phương sai là trung bình của bình phương độ lệch, nên đơn vị là giờ². Chỉ độ lệch chuẩn (căn bậc hai của phương sai) mới có đơn vị giờ.",
     "skill_ids": [
       "G12-CHIII-B10-O02"
     ],
@@ -770,16 +770,16 @@
   {
     "item_id": "THPT-G12-B10-C03",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Dữ liệu có E(c²)=19 và x̄=4. s² bằng bao nhiêu?",
+    "stem": "Trung bình có trọng số của bình phương các giá trị đại diện là \\(\\overline{c^2}=19\\), số trung bình mẫu là \\(\\overline{x}=4\\). Tính phương sai \\(s^2\\).",
     "answer_key": "3",
-    "worked_solution": "Áp dụng s²=E(c²)−x̄²=19−16=3.",
+    "worked_solution": "Dùng công thức rút gọn: \\(s^2=\\overline{c^2}-(\\overline{x})^2=19-4^2=3\\). Ở đây \\(\\overline{c^2}\\) là trung bình có trọng số của bình phương các giá trị đại diện.",
     "skill_ids": [
       "G12-CHIII-B10-O03"
     ],
     "problem_type_id": null,
     "difficulty": "1",
     "hints": [
-      "Dùng trung bình bình phương trừ bình phương trung bình."
+      "Lấy trung bình bình phương trừ bình phương trung bình: \\(s^2=\\overline{c^2}-\\overline{x}^{\\,2}\\)."
     ],
     "rubric": null,
     "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
@@ -802,9 +802,9 @@
   {
     "item_id": "THPT-G12-B10-P05",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Có f=(2,6,2), c=(10,20,30). Tính E(c²).",
+    "stem": "Ba giá trị đại diện \\(c=(10;20;30)\\) có tần số tương ứng \\(f=(2;6;2)\\). Tính trung bình có trọng số của bình phương các giá trị đại diện.",
     "answer_key": "440",
-    "worked_solution": "(2·100+6·400+2·900)/10=440.",
+    "worked_solution": "Cỡ mẫu là \\(2+6+2=10\\). Trung bình có trọng số của bình phương các giá trị đại diện là \\(\\frac{2\\cdot10^2+6\\cdot20^2+2\\cdot30^2}{10}=\\frac{4400}{10}=440\\). Không nhầm với bình phương trung bình.",
     "skill_ids": [
       "G12-CHIII-B10-O03"
     ],
@@ -836,7 +836,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Nếu tính được s²≈−0,000001 do làm tròn, có kết luận phương sai âm thật không?",
     "answer_key": "Không",
-    "worked_solution": "Phương sai theo định nghĩa luôn không âm; kiểm độ chính xác trung gian và công thức.",
+    "worked_solution": "Không. Theo định nghĩa, \\(s^2\\) là tổng có trọng số của các bình phương độ lệch chia cho n dương, nên không âm. Kết quả âm nhỏ có thể do làm tròn trung gian hoặc sai phép tính; tính lại với đủ chữ số hoặc dùng công thức độ lệch trước khi kết luận.",
     "skill_ids": [
       "G12-CHIII-B10-O03"
     ],
@@ -868,7 +868,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Nếu s²=9 cm², độ lệch chuẩn s là bao nhiêu?",
     "answer_key": "3 cm",
-    "worked_solution": "s=√9=3 và đơn vị trở lại cm.",
+    "worked_solution": "Độ lệch chuẩn là căn không âm của phương sai: \\(s=\\sqrt9=3\\) cm. Đơn vị trở lại cùng đơn vị dữ liệu.",
     "skill_ids": [
       "G12-CHIII-B10-O04"
     ],
@@ -900,7 +900,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Phương sai 75 phút² cho độ lệch chuẩn xấp xỉ bao nhiêu phút?",
     "answer_key": "8,66 phút",
-    "worked_solution": "s=√75≈8,66 phút.",
+    "worked_solution": "\\(s=\\sqrt{75}=5\\sqrt3\\approx8{,}66\\) phút. Phương sai có đơn vị phút², còn độ lệch chuẩn có đơn vị phút.",
     "skill_ids": [
       "G12-CHIII-B10-O04"
     ],
@@ -932,7 +932,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Câu “s=16 giờ²” khi s²=16 giờ² sai ở đâu?",
     "answer_key": "s=4 giờ; nhầm giá trị và đơn vị",
-    "worked_solution": "Phải lấy căn √16=4, đơn vị giờ.",
+    "worked_solution": "16 giờ² là phương sai \\(s^2\\), không phải độ lệch chuẩn s. Lấy căn không âm: \\(s=\\sqrt{16}=4\\) giờ; câu ban đầu sai cả giá trị lẫn đơn vị.",
     "skill_ids": [
       "G12-CHIII-B10-O04"
     ],
@@ -964,7 +964,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Hai mẫu cùng trung bình/cùng đơn vị có s_A=2, s_B=5. Mẫu nào ít phân tán quanh trung bình theo s?",
     "answer_key": "A",
-    "worked_solution": "2<5; với cùng bối cảnh, A ổn định hơn theo tiêu chí độ lệch chuẩn.",
+    "worked_solution": "Theo tiêu chí độ lệch chuẩn, A ít phân tán hơn quanh trung bình vì \\(s_A=2<5=s_B\\), với hai mẫu đo cùng đại lượng và cùng đơn vị. Không suy ra mọi quan sát A đều gần trung bình hơn mọi quan sát B.",
     "skill_ids": [
       "G12-CHIII-B10-O05"
     ],
@@ -996,7 +996,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Trên các đại diện (10,20,30), mẫu A có tần số (1,8,1), mẫu B có (3,4,3). Tính trung bình, phương sai và so sánh.",
     "answer_key": "Trung bình đều 20; phương sai A=20, B=60; A ít phân tán hơn.",
-    "worked_solution": "Hai mẫu đều n=10, cân đối quanh 20 nên trung bình 20. A có tổng bình phương độ lệch 1·100+8·0+1·100=200, s²_A=20. B có 3·100+4·0+3·100=600, s²_B=60. A ít phân tán hơn quanh trung bình theo phương sai.",
+    "worked_solution": "Hai mẫu đều có 10 quan sát và tần số đối xứng quanh 20 nên trung bình đều bằng 20. Với A, \\(s_A^2=\\frac{1\\cdot100+8\\cdot0+1\\cdot100}{10}=20\\). Với B, \\(s_B^2=\\frac{3\\cdot100+4\\cdot0+3\\cdot100}{10}=60\\). A ít phân tán hơn quanh trung bình theo phương sai (và độ lệch chuẩn).",
     "skill_ids": [
       "G12-CHIII-B10-O05"
     ],
@@ -1028,7 +1028,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Nếu A có s thấp nhưng điểm trung bình cũng thấp hơn mục tiêu tối thiểu, có thể kết luận A tốt hơn không?",
     "answer_key": "Không",
-    "worked_solution": "Độ phân tán và độ đạt mục tiêu là hai tiêu chí khác nhau.",
+    "worked_solution": "Không. Độ lệch chuẩn thấp chỉ cho biết kết quả ít phân tán quanh trung bình, không cho biết trung bình đạt mục tiêu. Một mẫu tập trung đều ở mức thấp vẫn có độ lệch chuẩn nhỏ nhưng không đạt yêu cầu.",
     "skill_ids": [
       "G12-CHIII-B10-O05"
     ],
@@ -1060,7 +1060,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "A có x̄=20, s=4; B có x̄=200, s=20. So s trực tiếp 20>4 để kết luận B có rủi ro tương đối lớn hơn có đủ không?",
     "answer_key": "Không",
-    "worked_solution": "Mức trung bình khác xa; s tuyệt đối không đủ đánh giá rủi ro tương đối.",
+    "worked_solution": "Không. B có độ lệch chuẩn tuyệt đối lớn hơn, nhưng quy mô trung bình cũng lớn hơn. Nếu đại lượng có gốc 0 thực sự và trung bình dương có ý nghĩa, phần đọc thêm cho phép so sánh hệ số biến thiên: \\(CV_A=4/20=20\\%\\), \\(CV_B=20/200=10\\%\\). A biến động tương đối lớn hơn theo thước đo này; không kết luận về mọi loại rủi ro.",
     "skill_ids": [
       "G12-CHIII-B10-O06"
     ],
@@ -1090,9 +1090,9 @@
   {
     "item_id": "THPT-G12-B10-P11",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Trong ô tham khảo “Em có biết”, CV=s/x̄. Nếu x̄=20,s=4, CV là bao nhiêu?",
+    "stem": "Trong phần đọc thêm “Em có biết?”, hệ số biến thiên là \\(CV=s/\\overline{x}\\). Với đại lượng có gốc 0 thực sự, \\(\\overline{x}=20,\\ s=4\\), tính CV.",
     "answer_key": "0,2 = 20%",
-    "worked_solution": "Khi x̄>0, CV=4/20=0,2=20%; đây là tham khảo, không phải Core.",
+    "worked_solution": "Giả sử đại lượng được đo trên thang có gốc 0 thực sự và trung bình dương có ý nghĩa. Khi đó \\(CV=\\frac{s}{\\overline{x}}=\\frac4{20}=0{,}2=20\\%\\). Hệ số không có đơn vị; đây là nội dung đọc thêm.",
     "skill_ids": [
       "G12-CHIII-B10-O06"
     ],
@@ -1124,7 +1124,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Nếu x̄=0, có được dùng CV=s/x̄ không?",
     "answer_key": "Không",
-    "worked_solution": "Mẫu số bằng 0; không xác định. Trước đó cần xem lại mô hình và phạm vi áp dụng.",
+    "worked_solution": "Không. Khi \\(\\overline{x}=0\\), biểu thức \\(CV=s/\\overline{x}\\) không xác định. Ngay cả khi trung bình gần 0 hoặc âm, cũng không nên sử dụng máy móc thước đo này.",
     "skill_ids": [
       "G12-CHIII-B10-O06"
     ],
