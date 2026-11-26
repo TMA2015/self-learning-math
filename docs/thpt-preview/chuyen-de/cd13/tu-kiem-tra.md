@@ -27,7 +27,7 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC13_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 7bd211326e4f644a94e1dfad7868c03e1c415adb; Q18_RECEIPT_BLOB 24f5cd26b47852259cdc932fce7577fcf2f44866; AUTHORING_PR #841; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB 7e54d34b9eee75ab4b8f8e4f53ab40298e701493; Q18_RECEIPT_BLOB 868a8e44359b8fb10e06649e011f4b2354d0ba5c; AUTHORING_PR #841; PUBLIC_PROJECTION_ONLY -->
 
 # Tự kiểm tra
 
@@ -39,7 +39,7 @@ Em hãy tự giải đủ **16 câu** trên giấy trước khi mở phần **Đ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P02; OUTCOME: TOP13-O01; NO_RD1; NO_MASTERY -->
 
-**Câu 2.** Khi A=B, độ dài \(\lvert\overrightarrow{AA}\rvert\) và quan hệ cùng phương của vectơ-không với vectơ khác không theo quy ước KNTT là gì?
+**Câu 2.** Khi \(A=B\), độ dài \(\lvert\overrightarrow{AA}\rvert\) và quan hệ cùng phương của vectơ-không với vectơ khác không theo quy ước KNTT là gì?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P03; OUTCOME: TOP13-O03; NO_RD1; NO_MASTERY -->
 
@@ -47,23 +47,23 @@ Em hãy tự giải đủ **16 câu** trên giấy trước khi mở phần **Đ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P04; OUTCOME: TOP13-O04; NO_RD1; NO_MASTERY -->
 
-**Câu 4.** Cho A=(−1,2), B=(4,3), C=(2,−2). Tính \(\overrightarrow{AB}-\overrightarrow{AC}\) và đối chiếu với một vectơ có điểm đầu C.
+**Câu 4.** Cho \(A(-1;2),\ B(4;3),\ C(2;-2)\). Tính \(\overrightarrow{AB}-\overrightarrow{AC}\) và đối chiếu với một vectơ có điểm đầu C.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P05; OUTCOME: TOP13-O05; NO_RD1; NO_MASTERY -->
 
-**Câu 5.** Cho u=(2,−1) và v=−4u. Tìm v, độ dài v và quan hệ hướng với u.
+**Câu 5.** Cho \(\vec u=(2;-1)\) và \(\vec v=-4\vec u\). Tìm \(\vec v\), độ dài và quan hệ hướng với \(\vec u\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P06; OUTCOME: TOP13-O06; NO_RD1; NO_MASTERY -->
 
-**Câu 6.** Tam giác A=(−3,0), B=(3,0), C=(0,6). Tìm trung điểm M của BC và trọng tâm G. Kiểm \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
+**Câu 6.** Tam giác \(A(-3;0),\ B(3;0),\ C(0;6)\). Tìm trung điểm M của BC và trọng tâm G. Kiểm \(\overrightarrow{AG}=\frac23\overrightarrow{AM}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P07; OUTCOME: TOP13-O07; NO_RD1; NO_MASTERY -->
 
-**Câu 7.** Cho A=(−3,4), B=(5,−2). Tính vectơ \(\overrightarrow{AB}\) và độ dài của nó.
+**Câu 7.** Cho \(A(-3;4),\ B(5;-2)\). Tính vectơ \(\overrightarrow{AB}\) và độ dài của nó.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P08; OUTCOME: TOP13-O08; NO_RD1; NO_MASTERY -->
 
-**Câu 8.** Cho u=(4,−6), v=(−2,3). Chúng cùng phương không và có cùng hướng không?
+**Câu 8.** Cho \(\vec u=(4;-6),\ \vec v=(-2;3)\). Chúng cùng phương không và có cùng hướng không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P09; OUTCOME: TOP13-O09; NO_RD1; NO_MASTERY -->
 
@@ -71,7 +71,7 @@ Em hãy tự giải đủ **16 câu** trên giấy trước khi mở phần **Đ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P10; OUTCOME: TOP13-O10; NO_RD1; NO_MASTERY -->
 
-**Câu 10.** u=(3,−2),v=(4,6). Kiểm hai vectơ có vuông góc không.
+**Câu 10.** \(\vec u=(3;-2),\ \vec v=(4;6)\). Kiểm hai vectơ có vuông góc không.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P11; OUTCOME: TOP13-O11; NO_RD1; NO_MASTERY -->
 
@@ -79,23 +79,23 @@ Em hãy tự giải đủ **16 câu** trên giấy trước khi mở phần **Đ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P12; OUTCOME: TOP13-O12; NO_RD1; NO_MASTERY -->
 
-**Câu 12.** A=(−1,2,0), B=(2,−1,4), C=(5,3,−2). Hãy tính \(\overrightarrow{AB}\), \(\overrightarrow{BC}\), \(\overrightarrow{AC}\), rồi xác minh quy tắc ba điểm.
+**Câu 12.** \(A(-1;2;0),\ B(2;-1;4),\ C(5;3;-2)\). Hãy tính \(\overrightarrow{AB}\), \(\overrightarrow{BC}\), \(\overrightarrow{AC}\), rồi xác minh quy tắc ba điểm.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P13; OUTCOME: TOP13-O13; NO_RD1; NO_MASTERY -->
 
-**Câu 13.** Hai vectơ không gian u=(2,−1,2), v=(1,4,1). Tính u·v và góc giữa chúng.
+**Câu 13.** Hai vectơ không gian \(\vec u=(2;-1;2),\ \vec v=(1;4;1)\). Tính \(\vec u\cdot\vec v\) và góc giữa chúng.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P14; OUTCOME: TOP13-O14; NO_RD1; NO_MASTERY -->
 
-**Câu 14.** A=(−2,3,1), B=(4,−1,5). Tính tọa độ \(\overrightarrow{AB}\) và khoảng cách từ A tới B.
+**Câu 14.** \(A(-2;3;1),\ B(4;-1;5)\). Tính tọa độ \(\overrightarrow{AB}\) và khoảng cách từ A tới B.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P15; OUTCOME: TOP13-O15; NO_RD1; NO_MASTERY -->
 
-**Câu 15.** Cho A=(−1,2,4), B=(5,−2,−4). Tìm trung điểm M và khoảng cách AB.
+**Câu 15.** Cho \(A(-1;2;4),\ B(5;-2;-4)\). Tìm trung điểm M và khoảng cách AB.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P16; OUTCOME: TOP13-O16; NO_RD1; NO_MASTERY -->
 
-**Câu 16.** Drone ở P=(1,−2,0) m, bay u=(4,0,3) m rồi v=(−1,4,0) m. Tìm Q, độ dài độ dời và quãng đường hai chặng.
+**Câu 16.** Drone ở \(P(1;-2;0)\) m, bay \(\vec u=(4;0;3)\) m rồi \(\vec v=(-1;4;0)\) m. Tìm Q, độ dài độ dời và quãng đường hai chặng.
 
 <!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: 16 public selfcheck placements reuse original canonical IDs; no official held-out assessment. -->
 
