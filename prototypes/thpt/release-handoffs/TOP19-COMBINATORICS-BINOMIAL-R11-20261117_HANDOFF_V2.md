@@ -1,11 +1,14 @@
+<!-- WORK #1109 CP21 CURRENT 26/11/2026 -->
+**Current source-only CONTENT_READY** — `ba549932e8a56bb46ec2951171e999cc70d6f34f`, Q15 `ba6f4fbe6f7ba86378879488fe5d5c077532e228`, Q18 `3d83c951f5e4df94162271b107b079451f6cc544`, A1 `b6399d41b73c4a16aadd97bfcd26fa755c41c5dc`, source commit `bc112d6f68eaa60657436c49a653b4a08733e871`. Work #1055 CĐ19 O03 leading/trailing zero, O09/O10 term vs coefficient/sign, O12 finite integer powers at x=1 incl negative exponents and domain; remove editorial scope direction. X-G.5 all three pages, 42 Practice, 7 exact same-ID replay, 56 IDs (25 original SGK bank IDs direct membership), 63 placements, 57 balanced disclosures, 571 balanced inline and 3 separated displays, all ID markers unchanged, three rubric score sequences unchanged. 41 executed arithmetic/combinatorics checks; original 4 SVG/model and bank untouched. Prior S1 direct receipt 850dd241e60de58ccf032e48e1e13530988436e3 inspected (G10 B23–25); inherited provenance only, no fresh PDF or independent NotebookLM. AUTHOR_SELF_VERIFIED affected scope, no new whole-topic independent verdict. UI tab truncation remains RELEASE. Prior narrative below historical; release scoped QA separate.
+
 <!-- TOP19_MASTER974_CURRENT_V2_20261121 -->
 ## CĐ19 R11 current one V2 handoff · author-verified source only
 
-SOURCE_BLOB: 2faa5d797eb16020d21673c572c443f1cb7acb41
-SOURCE_COMMIT: 20e7b3d9f03e143945aa63a9cbfcb4cd0d43f6f2
-Q15_MATRIX_BLOB: a7b15e559626c6d1f3b6b62c10b1662d0209ddbd
-SIGNED_Q18_AUTHOR_RECEIPT_BLOB: 019254781e99ba857019ee662ab49056d298d18e
-A1_A7_BLOB: 4c08fb4a13a709d1b636c7244b66f8b3dacbefb9
+SOURCE_BLOB: ba549932e8a56bb46ec2951171e999cc70d6f34f
+SOURCE_COMMIT: bc112d6f68eaa60657436c49a653b4a08733e871
+Q15_MATRIX_BLOB: ba6f4fbe6f7ba86378879488fe5d5c077532e228
+SIGNED_Q18_AUTHOR_RECEIPT_BLOB: 3d83c951f5e4df94162271b107b079451f6cc544
+A1_A7_BLOB: b6399d41b73c4a16aadd97bfcd26fa755c41c5dc
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 CURRENT_Q18_MODE: AUTHOR_SELF_VERIFIED
@@ -30,9 +33,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 2faa5d797eb16020d21673c572c443f1cb7acb41
+ACADEMIC_SOURCE_BLOB: ba549932e8a56bb46ec2951171e999cc70d6f34f
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 019254781e99ba857019ee662ab49056d298d18e
+REVIEW_RECEIPT_BLOB: 3d83c951f5e4df94162271b107b079451f6cc544
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 BLOCKERS: NONE
@@ -45,9 +48,9 @@ PRIVATE_RD1_SHA256: 6cc51485931317083b5ba673d490e5688a7538d4731dca29f002e804c0f9
 
 CONTENT_REVISION: R11_MASTER974_PED_20261121_3_FT_VERSIONED_DELTA_C
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 4c08fb4a13a709d1b636c7244b66f8b3dacbefb9
+AUTHOR_A1_A7_BLOB: b6399d41b73c4a16aadd97bfcd26fa755c41c5dc
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: 4c08fb4a13a709d1b636c7244b66f8b3dacbefb9
+AUTHOR_METADATA_BLOB: b6399d41b73c4a16aadd97bfcd26fa755c41c5dc
 
 ## R09 IMMUTABLE BASELINE LEARNER SOURCE AND Q18
 
