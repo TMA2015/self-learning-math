@@ -14,7 +14,7 @@
       "TOP20-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Liệt kê mọi số có thể rút, rồi lọc số chẵn."
     ],
@@ -44,7 +44,7 @@
       "TOP20-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Viết tập kết quả thỏa từng điều kiện và so với không gian mẫu \\(\\Omega\\)."
     ],
@@ -74,7 +74,7 @@
       "TOP20-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Đếm thẻ vật lý, không đếm nhãn khác nhau."
     ],
@@ -104,7 +104,7 @@
       "TOP20-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Xác định biến cố đối và kiểm tổng bằng 1."
     ],
@@ -134,7 +134,7 @@
       "TOP20-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "So xác suất dương rất nhỏ với xác suất 0 trong mô hình hữu hạn đồng khả năng."
     ],
@@ -164,7 +164,7 @@
       "TOP20-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Dùng các cặp có thứ tự và loại cặp trùng thẻ."
     ],
@@ -195,7 +195,7 @@
       "TOP20-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Cùng lúc nên dùng nhóm không thứ tự ở cả tử và mẫu."
     ],
@@ -225,7 +225,7 @@
       "TOP20-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Biến cố đối của ít nhất một đỏ là không có đỏ."
     ],
@@ -255,7 +255,7 @@
       "TOP20-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Giữ thứ tự ba lượt; chỉ hai vị trí được ràng buộc."
     ],
@@ -285,7 +285,7 @@
       "TOP20-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "So số lựa chọn ở lần hai khi hoàn lại và không hoàn lại."
     ],
@@ -316,7 +316,7 @@
       "TOP20-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Giao là đồng thời; hợp là ít nhất một điều kiện."
     ],
@@ -346,7 +346,7 @@
       "TOP20-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Tính xác suất riêng; dùng giả thiết độc lập để tính giao."
     ],
@@ -376,7 +376,7 @@
       "TOP20-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Kiểm giao rỗng và so \\(P(A\\cap B)\\) với \\(P(A)P(B)\\)."
     ],
@@ -406,7 +406,7 @@
       "TOP20-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Biến đổi công thức \\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\) để tìm giao."
     ],
@@ -436,7 +436,7 @@
       "TOP20-O15"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Kiểm giao rỗng trước khi cộng trực tiếp."
     ],
@@ -466,7 +466,7 @@
       "TOP20-O16"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Đổi bài ít nhất một thành biến cố đối, kiểm độc lập."
     ],
@@ -496,7 +496,7 @@
       "TOP20-O17"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Tính giao và hợp; đúng một là phần hợp bỏ giao."
     ],
