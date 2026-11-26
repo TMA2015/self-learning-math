@@ -1,3 +1,10 @@
+## CURRENT Q18 — CP16 · CĐ14 · A06 Work #1055 / #1109
+Learner `db502fc8ebc435b3d25b6cd5a813b6c0e156d421`, source commit `58b174c128949d7c2c2266c0993c40bbc323b289`, PR #843. O16 solved non-right triangle A(0;0), B(4;0), C(1;3) by two perpendicular bisectors x=2, x+3y=5, I(2;1), three squared distances 5. O20 genuine hyperbola plot and two asymptotes before Example, SVG `d83a92eda12499dd39226c3eff07a410e51da224`, 162 plotted vertices tested against x²/9−y²/4=1 with maximum absolute residual 0.000173 due to two-decimal SVG rounding; vertices and slope verified. O23 explicitly right-opening independent First Try, y²=12x for f=3 cm. Clarified distinct parallel line c'≠c and conic substitution when quadratic term cancels. X-G.5 three learner sections: 23 Knowledge outcomes, 87 Practice, 23 exact same-ID question-only replays, 110 unique canonical identities (59 original + 51 local), all marker lines and nine Written score sequences unchanged, 111 balanced details, 1183 inline pairs, three separated display blocks; residual raw-compound/slash scan zero. Original 59 SGK IDs verified directly in actual locked Git blobs 2b191d7abba7a4f5bd79d4c122673cd53a45495b (32), 5377380447ca2f131b634b8b65db885f86418cdd (23), ebc70018a168998c7dd43b34c3e195a2b1e15ed7 (4). Original wrapper c5c222af88b0e932f9b60df059d8ffd4da5f0f26 read by blob, absent at named path on this Draft; RELEASE must verify dependency on integrated tree, no new bank. All four SVG files verified at exact paths, three inherited blobs unchanged. 39/39 scoped numeric/symbolic spot checks passed; not exhaustive independent academic review. Original SGK B19–B22 p30–56 and SBT chapter scope p27–49 evidence inherited; SBT lesson-level offsets remain previously documented gap, no fresh PDF scan. Bài luyện 85 uses positive x=9 so right-opening model implied; wording remains original for Practice-only equivalent notation permission. RELEASE UI tab truncation remains separate. AUTHOR_SELF_VERIFIED only; no NotebookLM fresh verdict, no browser/AP/CI/merge/deploy authorization.
+
+---
+
+Earlier snapshot narratives below are historical; current structured fields and CP16 evidence control.
+
 <!-- OWNER_APPROVED_TOPIC14_20261121_EDITORIAL_EQUIVALENCE_Q18 -->
 **LATEST SOURCE_EQUIVALENT_CLEANUP:** Current one CĐ14 original R02 learner Git `d3c54d3867e6e831d6968a81d9c24d9d6b219363`, Q18 `current self`, A1/Q15 `current`, V2 `current`. The old learner `ff3d838680899b3c0a54ddd5774bebdf2f7d7d19` had two student-facing SGK/staff-like source-specific notes in reused `THPT-G10-B22-P03` and `THPT-G10-CHVII-W22-01`. Now only `SGK` citation reference removed in explanatory `Nếu làm sai` and `Depth note` renamed normal `Lưu ý phương pháp`; the math **y²=2px, p>0**, F(p/2;0), unique-intersection tangent proof, original problem, key and /6 written rubric unchanged. Original SGK ChVII canonical author source has no identical extra student notes; therefore changes are to **Topic-only extra annotation** and do not manufacture alternate SGK bank answers. Exactly 57/59 other shared SGK projection card bodies and 28 Topic practice untouched. `DELTA_A_UI_EDITORIAL` + source-equivalent D6; no independent full Topic review, merge/deploy or website behavior changes.
 ---
@@ -38,8 +45,8 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-SOURCE_BLOB: d3c54d3867e6e831d6968a81d9c24d9d6b219363
-ACADEMIC_SOURCE_BLOB: d3c54d3867e6e831d6968a81d9c24d9d6b219363
+SOURCE_BLOB: db502fc8ebc435b3d25b6cd5a813b6c0e156d421
+ACADEMIC_SOURCE_BLOB: db502fc8ebc435b3d25b6cd5a813b6c0e156d421
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
 AUTHOR_A1_A7_BLOB: e2dd3eb2985aba77e354dbd21c9025a273163be5
 ORIGINAL_R01_SOURCE_BLOB: 277ccb8b5d9f0a8c5f08680fa7e5b70925710308
@@ -57,7 +64,7 @@ P0: 0
 P1: 0
 P2: 0
 RELEASE_AUTHORIZATION: NO
-AUTHOR_SIGNOFF: TOP14_R02_O22_PARABOLA_REMEDIATION_DELTA_C_20261119
+AUTHOR_SIGNOFF: TOP14_WORK1055_A06_XG5_20261126_db502fc8ebc435b3d25b6cd5a813b6c0e156d421
 S1_RECEIPT: SGK KNTT Toán 10 Tập Hai ChVII B19 printed pp30–35, B20 pp36–42, B21 pp43–47, B22 pp48–56, cuối chương pp57–59, inherited original validated S1 printed-page Delta B; no fresh source-PDF reread claimed. SBT chapter pp27–49 only as reference, lesson-level offsets unverified (SBT_REFERENCE_GAP_DOCUMENTED).
 OUTCOME_AUDIT: 23/23 TOP14-O01…O23, exactly 7 outcomes for B19, 5 for B20, 5 for B21, 6 for B22; each has concept-first explanation, conditions, a standalone solved Example, Vận dụng/Đối chiếu, D6 and at least one visible Practice question.
 MATH_VERIFICATION: 51/51 direct recomputed numeric and symbolic cases PASS = 23 R02 standalone worked Examples + 23 unchanged canonical Topic Practice solution keys + five Written worked answers and /7 rubric arithmetic; 23 source and semantic structural checks PASS; protected original 32+23+4 SGK stems/solutions source-exact to original Git bank blobs.
