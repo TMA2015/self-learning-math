@@ -176,34 +176,61 @@ def tab_check(button,width):
     assert info["scroll"]<=info["client"]+2,("clipped tab",info)
 
 if "--back-top-only" in sys.argv:
-    # TOPIC_BACK_TOP_R3: one native component on every THPT MkDocs page.
-    # Inventory every compiled route, no full-site lesson browser re-audit.
+    # TOPIC_BACK_TOP_R3: test final production assembly, not preview HTML.
     from html.parser import HTMLParser
+    import hashlib
+    subprocess.run(["node","scripts/assemble-thpt-site.cjs"],cwd=ROOT,check=True)
+    public=ROOT/"site"
+    js_hash=hashlib.sha256((public/"assets/javascripts/sticky-nav-v1.js").read_bytes()).hexdigest()[:16]
+    css_hash=hashlib.sha256((public/"assets/stylesheets/site-design-system.css").read_bytes()).hexdigest()[:16]
     class TopInventory(HTMLParser):
         def __init__(self):
-            super().__init__(); self.top=0; self.js=0; self.css=0
+            super().__init__(); self.top=[]; self.js=[]; self.css=[]
         def handle_starttag(self,tag,attrs):
             a=dict(attrs)
-            if tag=='button' and a.get('data-md-component')=='top': self.top+=1
-            if tag=='script' and a.get('src','').endswith('/sticky-nav-v1.js'): self.js+=1
-            if tag=='link' and a.get('href','').endswith('/site-design-system.css'): self.css+=1
-    native=0; non_native=[]
-    for path in sorted((BUILD/'thpt-preview').rglob('*.html')):
-        parser=TopInventory(); parser.feed(path.read_text(encoding='utf-8'))
-        if parser.top:
-            assert (parser.top,parser.js,parser.css)==(1,1,1),(path,parser.top,parser.js,parser.css)
-            native+=1
-        else: non_native.append(str(path.relative_to(BUILD)))
-    assert native>=150,native
-    print(f'PASS R3 THPT route inventory: {native} native pages use same assets; {len(non_native)} non-native pages left unchanged',flush=True)
-    print('Non-native routes:',non_native,flush=True)
-    routes=((390,'sgk/chuong-v/bai-14/'),(820,'sgk/lop-11/chuong-i/bai-2/'),(1440,'sgk/lop-12/chuong-i/bai-1/'),(390,'chuyen-de/cd12/luyen-tap/'),(820,'chuyen-de/cd12/tu-kiem-tra/'),(1440,'math-lab/'),(820,'chuyen-de/cd01/kien-thuc/'),(390,'home/'),(1440,'thu-vien/'),(820,'tien-do/'))
+            if tag=='button' and a.get('data-md-component')=='top': self.top.append(a)
+            if tag=='script' and '/sticky-nav-v1.js' in a.get('src',''): self.js.append(a['src'])
+            if tag=='link' and '/site-design-system.css' in a.get('href',''): self.css.append(a['href'])
+    native=0; standalone=0
+    for source in sorted((BUILD/'thpt-preview').rglob('*.html')):
+        original=source.read_text(encoding='utf-8')
+        path=public/source.relative_to(BUILD)
+        output=path.read_text(encoding='utf-8')
+        prior=TopInventory(); prior.feed(original)
+        parser=TopInventory(); parser.feed(output)
+        if not prior.top:
+            assert output==original,path
+            standalone+=1
+            continue
+        assert len(parser.top)==len(parser.js)==len(parser.css)==1,path
+        top=parser.top[0]
+        assert 'slm-topic-back-top' in top['class'].split() and top['title']==top['aria-label']=='Về đầu trang' and 'hidden' in top,path
+        assert parser.js[0]==prior.js[0]+'?v='+js_hash and parser.css[0]==prior.css[0]+'?v='+css_hash,path
+        old_btn=re.search(r'<button\b(?=[^>]*\bdata-md-component="top")[^>]*>[\s\S]*?</button>',original).group(0)
+        new_btn=re.search(r'<button\b(?=[^>]*\bdata-md-component="top")[^>]*>[\s\S]*?</button>',output).group(0)
+        assert 'Trở lại mục lục' not in new_btn and re.search(r'<svg\b[\s\S]*?</svg>',old_btn).group(0)==re.search(r'<svg\b[\s\S]*?</svg>',new_btn).group(0),path
+        restored=output.replace(new_btn,old_btn,1).replace('src="'+parser.js[0]+'"','src="'+prior.js[0]+'"',1).replace('href="'+parser.css[0]+'"','href="'+prior.css[0]+'"',1)
+        assert restored==original,("Unrelated HTML changed",path)
+        native+=1
+    assert native>=150 and standalone==25,(native,standalone)
+    print(f"PASS R3 assembled HTML: {native} native controls, versioned assets, exact unrelated HTML parity; {standalone} models unchanged",flush=True)
+    class ProjectHandler(http.server.SimpleHTTPRequestHandler):
+        def translate_path(self,p):
+            prefix="/self-learning-math"
+            if p.startswith(prefix+"/"): p=p[len(prefix):]
+            return super().translate_path(p)
+    live_server=http.server.ThreadingHTTPServer(("127.0.0.1",0),functools.partial(ProjectHandler,directory=str(public)))
+    threading.Thread(target=live_server.serve_forever,daemon=True).start()
+    live=f"http://127.0.0.1:{live_server.server_address[1]}/self-learning-math/"
+    routes=((390,'sgk/chuong-v/bai-14/'),(1440,'chuyen-de/cd01/kien-thuc/'))
     with sync_playwright() as pw:
         for engine in ("chromium","webkit"):
             browser=getattr(pw,engine).launch(headless=True)
             for width,route in routes:
                 page=browser.new_page(viewport={"width":width,"height":700})
-                page.goto(BASE.removesuffix("chuyen-de/")+route,wait_until="domcontentloaded")
+                # Markup/styling must be correct without late JS DOM rewrite.
+                page.route("**/sticky-nav-v1.js*",lambda route: route.abort())
+                page.goto(live+"thpt-preview/"+route,wait_until="domcontentloaded")
                 top=page.locator("button.md-top.slm-topic-back-top")
                 expect(top).to_have_count(1,timeout=20000)
                 expect(top).to_have_attribute("aria-label","Về đầu trang")
@@ -279,6 +306,7 @@ if "--back-top-only" in sys.argv:
             print(f"PASS R3 THCS excluded {engine}",flush=True)
             thcs.close(); root_server.shutdown()
             browser.close()
+    live_server.shutdown()
     server.shutdown()
     sys.exit(0)
 
