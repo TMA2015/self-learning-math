@@ -197,7 +197,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "So \\(P(Acap B)\\) với \\(P(A)P(B)\\)."
+      "So \\(P(A\\cap B)\\) với \\(P(A)P(B)\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -617,7 +617,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Dùng \\(P(A)+P(B)-P(Acup B)\\), không trừ sai dấu. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
+    "remediation": "Dùng \\(P(A)+P(B)-P(A\\cup B)\\), không trừ sai dấu. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P02",
