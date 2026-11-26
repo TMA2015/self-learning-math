@@ -3,7 +3,6 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - 'docs/thpt-preview/chuyen-de/cd11/**'
       - 'docs/thpt-preview/chuyen-de/cd12/**'
       - 'docs/thpt-preview/chuyen-de/cd13/**'
       - 'docs/thpt-preview/chuyen-de/cd14/**'
@@ -32,22 +31,39 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Classify exact refresh before delegating to scoped shared QA
+        id: scope
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [[ -n "$BASE_SHA" ]]; then
+            git diff --no-renames --name-only "$BASE_SHA" HEAD > "$RUNNER_TEMP/w3a-paths.txt"
+            node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/w3a-paths.txt"
+            if grep -Fxq 'reason=OWNER_TOPIC_W3A_REFRESH' "$GITHUB_OUTPUT"; then
+              node scripts/test-thpt-release-impact.cjs --prove-w3a-refresh
+            fi
+          fi
       - name: Verify exact signed AUTHORING source/Q18 and public projection
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_W3A_REFRESH'
         shell: bash
         run: |
           node --check docs/assets/javascripts/thpt-topic-w3-golden-v1.js
-          git fetch --no-tags origin 8ff14130b995ae505978e590c4e65d9287f93342 0edada0daa8a36bcadd4317086bd0530e20ade7e b31c26c4fe630c0e362d48ed868b465bfe7f7177 5bb6e5fdb56a2d4d9d6cf749916913da2540b36f
+          git fetch --no-tags origin 954053f0a5b3f7f8f19bfc01f4f974e9af844adb 7624c5fdce1d9ca3f1baea493eb12e8f8185758e 95fe0facb80c71663298f8a3fe685759fe96bac1 5bb6e5fdb56a2d4d9d6cf749916913da2540b36f
           python3 scripts/test-thpt-topic-w3-source-locked.py
       - uses: actions/setup-python@v5
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_W3A_REFRESH'
         with:
           python-version: '3.12'
       - name: Install MkDocs and scoped browser engines
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_W3A_REFRESH'
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
           python -m playwright install --with-deps chromium webkit
       - name: Build both navigations strictly (no global test)
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_W3A_REFRESH'
         run: |
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: Verify Golden CĐ01 computed styles, 12 W3 pages, SVG/MathJax and public Q16
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_W3A_REFRESH'
         run: python scripts/test-thpt-topic-w3-golden-browser.py
