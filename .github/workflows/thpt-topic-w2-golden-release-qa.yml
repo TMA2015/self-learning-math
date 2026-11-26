@@ -55,31 +55,35 @@ jobs:
           if [[ -n "$BASE_SHA" ]]; then
             git diff --no-renames --name-only "$BASE_SHA" HEAD > "$RUNNER_TEMP/disclosure-paths.txt"
             node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/disclosure-paths.txt"
-            if grep -Fxq 'reason=OWNER_TOPIC_SGK_DISCLOSURES' "$GITHUB_OUTPUT"; then
+            if grep -Fxq 'reason=OWNER_TOPIC_W2A_REFRESH' "$GITHUB_OUTPUT"; then
+              node scripts/test-thpt-release-impact.cjs --prove-w2a-refresh
+            elif grep -Fxq 'reason=OWNER_TOPIC_W1_REFRESH' "$GITHUB_OUTPUT"; then
+              node scripts/test-thpt-release-impact.cjs --prove-topic-w1-refresh
+            elif grep -Fxq 'reason=OWNER_TOPIC_SGK_DISCLOSURES' "$GITHUB_OUTPUT"; then
               node scripts/test-thpt-release-impact.cjs --prove-topic-disclosures
             fi
           fi
       - name: Verify W2 runtime JS, signed AUTHORING source/Q18 chain and public Q15/Q16
-        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES'
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH' && steps.scope.outputs.reason != 'OWNER_TOPIC_W2A_REFRESH'
         shell: bash
         run: |
           node --check docs/assets/javascripts/thpt-topic-w2-golden-v1.js
-          git fetch --no-tags origin 7ccecad8e357319f6f432b0765630fd50625b56f a7d3d7756535cfee29f04bde86af6ab58b0a9d30 28bd2103731eef4b4a6960cd5fc33d49c0680017 a1d0c5ae4c37ca0def035939fcbeef0109be3e1b c78cbbeefc92d14060a5bd81a1e2036ea2f6afeb c644ae7a75dc1d02c4e2ac0d0e7ee0856df62f07
+          git fetch --no-tags origin 7ccecad8e357319f6f432b0765630fd50625b56f a7d3d7756535cfee29f04bde86af6ab58b0a9d30 d5c44c6f4dec50a2e04e867c74bbf08aab2ba582 b73c6bea5eb02508c26faa089e9b43700f5550b0 b3d22f4d9524f812d4e92584f379f3b0575f48ed c644ae7a75dc1d02c4e2ac0d0e7ee0856df62f07
           python3 scripts/test-thpt-topic-w2-source-locked.py
       - uses: actions/setup-python@v5
-        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES'
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH' && steps.scope.outputs.reason != 'OWNER_TOPIC_W2A_REFRESH'
         with:
           python-version: '3.12'
       - name: Prepare MkDocs and Chromium/WebKit scoped test runner
-        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES'
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH' && steps.scope.outputs.reason != 'OWNER_TOPIC_W2A_REFRESH'
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
           python -m playwright install --with-deps chromium webkit
       - name: Build current site (no full-site test) + THPT dedicated nav
-        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES'
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH' && steps.scope.outputs.reason != 'OWNER_TOPIC_W2A_REFRESH'
         run: |
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: Exercise W2 CĐ06–11 Golden parity and Q15/Q16
-        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES'
+        if: steps.scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH' && steps.scope.outputs.reason != 'OWNER_TOPIC_W2A_REFRESH'
         run: python scripts/test-thpt-topic-w2-golden-browser.py

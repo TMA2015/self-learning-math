@@ -28,7 +28,7 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC08_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 0853a6de4be055d63a767b58dab20fa113e11098; Q18_RECEIPT_BLOB 9e80780f05096269b7cd1942c7006138d72d7ec9; AUTHORING_PR #829; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB 64dc1d59c48e1f666c0f6b3f33155175724b078b; Q18_RECEIPT_BLOB 371a76f49383e5bca016627c01b8f1887f56cd0c; AUTHORING_PR #829; PUBLIC_PROJECTION_ONLY -->
 
 # Tự kiểm tra
 
@@ -36,75 +36,75 @@ Hãy tự làm đủ 18 câu sau đây trên giấy hoặc phần trả lời ri
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P01; NO_RD1; NO_MASTERY -->
 
-**Câu 1.** Dãy u_n=5+4/n với n nguyên dương. Tìm giới hạn khi n→∞; số 5 có nhất thiết là số hạng nào đó của dãy không?
+**Câu 1.** Dãy \(u_n=5+\frac4n\) với n nguyên dương. Tìm giới hạn khi \(n\to\infty\); số 5 có nhất thiết là số hạng nào đó của dãy không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P02; NO_RD1; NO_MASTERY -->
 
-**Câu 2.** Xét v_n=(−1)^n+1/n, n≥1. Dãy có giới hạn hữu hạn hay giới hạn ±∞ không? Giải thích bằng hai dãy chỉ số chẵn/lẻ.
+**Câu 2.** Xét \(v_n=(-1)^n+\frac1n\), \(n\ge1\). Dãy có giới hạn hữu hạn hay giới hạn ±∞ không? Giải thích bằng hai dãy chỉ số chẵn/lẻ.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P03; NO_RD1; NO_MASTERY -->
 
-**Câu 3.** Tính lim(n→∞)(−2/5)^n và cho biết việc luân phiên dấu có ngăn dãy hội tụ không.
+**Câu 3.** Tính \(\lim_{n\to\infty}\left(-\frac25\right)^n\) và cho biết việc luân phiên dấu có ngăn dãy hội tụ không.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P04; NO_RD1; NO_MASTERY -->
 
-**Câu 4.** Tính lim(n→∞)(7n²−3n+1)/(2n²+n) với n≥1.
+**Câu 4.** Tính \(\lim_{n\to\infty}\frac{7n^2-3n+1}{2n^2+n}\) với \(n\ge1\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P05; NO_RD1; NO_MASTERY -->
 
-**Câu 5.** Tính tổng vô hạn 12+3+3/4+3/16+⋯, và nêu điều kiện dùng công thức.
+**Câu 5.** Tính tổng vô hạn \(12+3+\frac34+\frac3{16}+\cdots\), và nêu điều kiện dùng công thức.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P06; NO_RD1; NO_MASTERY -->
 
-**Câu 6.** Với f(x)=(x²−6x+8)/(x−2), x≠2, tính lim(x→2)f(x). Hàm có cần định nghĩa tại x=2 để có giới hạn không?
+**Câu 6.** Với \(f(x)=\frac{x^2-6x+8}{x-2}\), \(x\ne2\), tính \(\lim_{x\to2}f(x)\). Hàm có cần định nghĩa tại \(x=2\) để có giới hạn không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P07; NO_RD1; NO_MASTERY -->
 
-**Câu 7.** Cho f(x)=x+1 nếu x&lt;1, và f(x)=x²+3 nếu x≥1. Tính hai giới hạn một phía tại 1 và quyết định có lim(x→1)f(x) không.
+**Câu 7.** Cho \(f(x)=x+1\) nếu \(x&lt;1\), và \(f(x)=x^2+3\) nếu \(x\ge1\). Tính hai giới hạn một phía tại 1 và quyết định có \(\lim_{x\to1}f(x)\) không.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P08; NO_RD1; NO_MASTERY -->
 
-**Câu 8.** Xét f(x)=(x+1)/(x−2). Khi x→2⁻ và x→2⁺, f(x) tiến tới đâu? Có giới hạn hữu hạn hai phía không?
+**Câu 8.** Xét \(f(x)=\frac{x+1}{x-2}\). Khi \(x\to2^-\) và \(x\to2^+\), \(f(x)\) tiến tới đâu? Có giới hạn hữu hạn hai phía không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P09; NO_RD1; NO_MASTERY -->
 
-**Câu 9.** Tính lim(x→−∞)(4x²−3)/(2x²+x).
+**Câu 9.** Tính \(\lim_{x\to-\infty}\frac{4x^2-3}{2x^2+x}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P10; NO_RD1; NO_MASTERY -->
 
-**Câu 10.** Tính lim(x→3)(x²−x−6)/(x−3). Vì sao phép thế ban đầu chưa có giá trị?
+**Câu 10.** Tính \(\lim_{x\to3}\frac{x^2-x-6}{x-3}\). Vì sao phép thế ban đầu chưa có giá trị?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P11; NO_RD1; NO_MASTERY -->
 
-**Câu 11.** Tính lim(x→4)(√(x+5)−3)/(x−4).
+**Câu 11.** Tính \(\lim_{x\to4}\frac{\sqrt{x+5}-3}{x-4}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P12; NO_RD1; NO_MASTERY -->
 
-**Câu 12.** Tính lim(x→+∞)(√(x²+2x)−x).
+**Câu 12.** Tính \(\lim_{x\to+\infty}\left(\sqrt{x^2+2x}-x\right)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P13; NO_RD1; NO_MASTERY -->
 
-**Câu 13.** f(x)=(x²−4)/(x−2) với x≠2, f(2)=k. Tìm k để f liên tục tại 2.
+**Câu 13.** \(f(x)=\frac{x^2-4}{x-2}\) với \(x\ne2\), \(f(2)=k\). Tìm k để f liên tục tại 2.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P14; NO_RD1; NO_MASTERY -->
 
-**Câu 14.** Với f(x)=(x²−4x+3)/(x−1) khi x≠1 và f(1)=9, hãy phân loại gián đoạn tại 1 và tìm giá trị thay thế để liên tục.
+**Câu 14.** Với \(f(x)=\frac{x^2-4x+3}{x-1}\) khi \(x\ne1\) và \(f(1)=9\), hãy phân loại gián đoạn tại 1 và tìm giá trị thay thế để liên tục.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P15; NO_RD1; NO_MASTERY -->
 
-**Câu 15.** Xét f(x)=√(x(4−x)) trên miền [0,4]. Hàm có liên tục trên đoạn [0,4] theo nghĩa tương đối không? Giá trị ở hai đầu là gì?
+**Câu 15.** Xét \(f(x)=\sqrt{x(4-x)}\) trên miền \([0;4]\). Hàm có liên tục trên đoạn \([0;4]\) theo nghĩa tương đối không? Giá trị ở hai đầu là gì?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P16; NO_RD1; NO_MASTERY -->
 
-**Câu 16.** Tìm miền xác định và các khoảng/đoạn liên tục theo miền cho f(x)=√(x−1)/(x−3).
+**Câu 16.** Tìm miền xác định và các khoảng/đoạn liên tục theo miền cho \(f(x)=\frac{\sqrt{x-1}}{x-3}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P17; NO_RD1; NO_MASTERY -->
 
-**Câu 17.** Chứng minh x³+x−1=0 có ít nhất một nghiệm trong (0,1). Định lí giá trị trung gian đã chứng minh tính duy nhất chưa?
+**Câu 17.** Chứng minh \(x^3+x-1=0\) có ít nhất một nghiệm trong \((0;1)\). Định lí giá trị trung gian đã chứng minh tính duy nhất chưa?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P18; NO_RD1; NO_MASTERY -->
 
-**Câu 18.** Mô hình giả định g(t)=t²+t−3, t∈[1,2]. Chứng minh có thời điểm g(t)=0; sau hai bước chia đôi nêu một khoảng dài 1/4 chứa nghiệm.
+**Câu 18.** Mô hình giả định \(g(t)=t^2+t-3\), \(t\in[1;2]\). Chứng minh có thời điểm \(g(t)=0\); sau hai bước chia đôi nêu một khoảng dài \(\frac{1}{4}\) chứa nghiệm.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
