@@ -19317,6 +19317,71 @@
       },
       "remaining": "CD19–22 local visible-field review, CD01–12 residual fields, FirstTry, shared SGK, canonical Written/Anchor and full semantic/notation/depth checks before conversion. CP61/62 Written and source findings remain pending.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp85": {
+      "scope": "CD19 all 14 local learner-visible records; reconcile current canonical source placement/replay, retain CP63 strengthened variants",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "60b4428151f97d65acf90c4231a5732c5a43ce17",
+      "item_commit": "850e360a45d33afcfc7865a634de60a01631bf85",
+      "learner_commit": "e60200c43dc1f38c83cbf4ec47e90dc96391eef8",
+      "learner_blob": "ba549932e8a56bb46ec2951171e999cc70d6f34f",
+      "placement_blob": "57221192c9ce62687e33e078b1efcd677466c426",
+      "item_before": "5622ecdddab2e8ad4c4fe855728c786af06392ec",
+      "item_after": "b85c5c3de1b3682b35a2524307cd7f8385257074",
+      "checks": {
+        "practice": 42,
+        "replay": 7,
+        "placement_order_match": 49,
+        "current_learner_replay_stem_match": 7,
+        "local_records_reviewed": 14,
+        "local_records_changed": 14,
+        "fields_changed": {
+          "stem": 8,
+          "answer_key": 3,
+          "worked_solution": 14,
+          "hints": 6,
+          "remediation": 6
+        },
+        "executed_math_check_by_id": {
+          "P01": true,
+          "P02": true,
+          "P03": true,
+          "P04": true,
+          "P05": true,
+          "P06": true,
+          "P07": true,
+          "P08": true,
+          "P09": true,
+          "P10": true,
+          "P11": true,
+          "P12": true,
+          "P13": true,
+          "P14": true
+        },
+        "metadata_unchanged": true,
+        "local_self_compare_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "targeted_raw_math_scan_residual": 0,
+        "shared_formative_placements_unchanged": 25,
+        "written_placements_unchanged": 3,
+        "options_or_rubric_present_in_local_records": 0
+      },
+      "findings": [
+        "Retain CP63 stronger tasks P01/P02/P03/P05/P08/P11/P12; current canonical learner has simpler variants and must not be mistaken for identical candidate bank stems/keys. Replay source pairs match current Practice, not all stronger candidate variants (P02/P11).",
+        "P02 remediation now handles restricted combinations rather than generic multiplication; P05 hint explicitly counts complement, P06 distinguishes medal positions, P14 aligns calculator notation with arrangement/combination, P12 explicitly includes degree zero, P11 preserves domain and optional part; P13 verifies model vs actual count.",
+        "CP63 O13/O14 thin coverage and three Written missing pointers / W03 optional prerequisite remain pending. No fresh S1 PDF, no full bank academic/PED/browser PASS."
+      ],
+      "progress": {
+        "topics_with_scoped_practice_replay_review": 19,
+        "total_topics": 22,
+        "practice_reviewed": 1334,
+        "total_practice": 1479,
+        "replay_reviewed": 310,
+        "total_replay": 338
+      },
+      "remaining": "CD20–22, earlier residual fields, FirstTry, shared SGK including source-owner corrections, Written/Anchor, depth and full notation audit before conversion and RELEASE.",
+      "release_authorization": false
     }
   }
 }
