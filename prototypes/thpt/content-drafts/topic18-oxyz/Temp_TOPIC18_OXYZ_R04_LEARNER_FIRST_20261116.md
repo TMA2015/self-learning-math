@@ -2657,8 +2657,8 @@ Thay d(t) vào P: \((2+t)-1+t=1+2t=3\Rightarrow t=1\), giao điểm \((3;-1;1)\)
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (t,0,2t)
-- **Lời giải có suy luận:** \(M=(0;0;0)\)+\(t(1;0;2)\).
+- **Đáp án:** \((t;0;2t)\)
+- **Lời giải có suy luận:** \(M(t)=(0;0;0)+t(1;0;2)\).
 
 </details>
 
@@ -2667,7 +2667,7 @@ Thay d(t) vào P: \((2+t)-1+t=1+2t=3\Rightarrow t=1\), giao điểm \((3;-1;1)\)
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (-1+3t,2t,4−t)
+- **Đáp án:** \((-1+3t;2t;4-t)\)
 - **Lời giải có suy luận:** Cùng một t nhân từng thành phần của u.
 
 </details>
@@ -2677,19 +2677,19 @@ Thay d(t) vào P: \((2+t)-1+t=1+2t=3\Rightarrow t=1\), giao điểm \((3;-1;1)\)
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (t,2−t,1+2t)
-- **Lời giải có suy luận:** Vị trí=điểm đầu+t·v, điều kiện vật lý t≥0; đường thẳng hình học có t∈R.
+- **Đáp án:** \((t;2-t;1+2t)\)
+- **Lời giải có suy luận:** Tọa độ vị trí bằng tọa độ điểm đầu cộng \(t\vec v\), điều kiện vật lý \(t\ge0\); đường thẳng hình học có \(t\in\mathbb R\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 117.** Qua P(2,1,-1), hướng (-1,3,2). Viết tham số và tìm tọa độ khi t=2.
+**Bài luyện 117.** Qua \(P(2;1;-1)\), hướng \((-1;3;2)\). Viết tham số và tìm tọa độ khi \(t=2\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** (2−t,1+3t,−1+2t); khi t=2 là (0,7,3)
-- **Lời giải có suy luận:** Thay t=0 thu P; cùng t=2 vào cả ba dòng: (0,7,3).
-- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định M0 và hướng u khác 0; 1đ viết một tham số chung t; 1đ tính tọa độ kiểm theo t; 1đ phân biệt đường thẳng t∈R với chuyển động t≥0.
+- **Đáp án:** \((2-t;1+3t;-1+2t)\); khi \(t=2\) là \((0;7;3)\)
+- **Lời giải có suy luận:** Thay \(t=0\) thu P; cùng \(t=2\) vào cả ba dòng: \((0;7;3)\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định \(M_0\) và hướng u khác 0; 1đ viết một tham số chung t; 1đ tính tọa độ kiểm theo t; 1đ phân biệt đường thẳng \(t\in\mathbb R\) với chuyển động \(t\ge0\).
 
 </details>
 
@@ -2698,7 +2698,7 @@ Thay d(t) vào P: \((2+t)-1+t=1+2t=3\Rightarrow t=1\), giao điểm \((3;-1;1)\)
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-x=−1,y=2+3t,z=−2t (t∈R). Tại t=0 trở về P; vectơ v khác 0.
+\(x=-1,\ y=2+3t,\ z=-2t\) (\(t\in\mathbb R\)). Tại \(t=0\) trở về P; vectơ v khác 0.
 
 **Đường khắc phục D6:** Nếu thành phần hướng bằng 0, tọa độ tương ứng là hằng, không tùy tiện bỏ phương trình đó.
 
@@ -2709,8 +2709,8 @@ x=−1,y=2+3t,z=−2t (t∈R). Tại t=0 trở về P; vectơ v khác 0.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (2t,0,t)
-- **Lời giải có suy luận:** AB=(2,0,1), t=0→A,t=1→B.
+- **Đáp án:** \((2t;0;t)\)
+- **Lời giải có suy luận:** \(\overrightarrow{AB}=(2;0;1)\), \(t=0\to A,\ t=1\to B\).
 
 </details>
 
@@ -2719,8 +2719,8 @@ x=−1,y=2+3t,z=−2t (t∈R). Tại t=0 trở về P; vectơ v khác 0.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (1,2+3t,3t)
-- **Lời giải có suy luận:** AB=(0,3,3) không phải vectơ 0.
+- **Đáp án:** \((1;2+3t;3t)\)
+- **Lời giải có suy luận:** \(\overrightarrow{AB}=(0;3;3)\) không phải vectơ 0.
 
 </details>
 
@@ -2729,8 +2729,8 @@ x=−1,y=2+3t,z=−2t (t∈R). Tại t=0 trở về P; vectơ v khác 0.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (4t,2t,4−4t)
-- **Lời giải có suy luận:** AB=(4,2,-4), đoạn vật lý 0≤t≤1; đường thẳng kéo dài t∈R.
+- **Đáp án:** \((4t;2t;4-4t)\)
+- **Lời giải có suy luận:** \(\overrightarrow{AB}=(4;2;-4)\), đoạn vật lý \(0\le t\le1\); đường thẳng kéo dài \(t\in\mathbb R\).
 
 </details>
 
@@ -2739,9 +2739,9 @@ x=−1,y=2+3t,z=−2t (t∈R). Tại t=0 trở về P; vectơ v khác 0.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** (2−2t,−1+4t,2t)
-- **Lời giải có suy luận:** PQ=(-2,4,2). t=1 cho Q; P khác Q nên đường thẳng xác định.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ lấy đúng hiệu B−A khác 0; 1đ viết đủ ba phương trình cùng t; 1đ kiểm t=0,1; 1đ giải thích đoạn thẳng 0≤t≤1.
+- **Đáp án:** \((2-2t;-1+4t;2t)\)
+- **Lời giải có suy luận:** \(\overrightarrow{PQ}=(-2;4;2)\). \(t=1\) cho Q; P khác Q nên đường thẳng xác định.
+- **Rubric Written /5 (chấm theo từng bước):** 2đ lấy đúng hiệu \(\overrightarrow{AB}\) khác 0; 1đ viết đủ ba phương trình cùng t; 1đ kiểm \(t=0,1\); 1đ giải thích đoạn thẳng \(0\le t\le1\).
 
 </details>
 
@@ -2750,9 +2750,9 @@ x=−1,y=2+3t,z=−2t (t∈R). Tại t=0 trở về P; vectơ v khác 0.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-CD=(0,2,4), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.
+\(\overrightarrow{CD}=(0;2;4)\), nên \(x=1,\ y=-1+2t,\ z=4t\); \(t=0\) cho C, \(t=1\) cho D.
 
-**Đường khắc phục D6:** Nhớ A≠B, lấy đúng B−A và thử lại tọa độ cả hai điểm.
+**Đường khắc phục D6:** Nhớ \(A\ne B\), lấy đúng \(\overrightarrow{AB}\) và thử lại tọa độ cả hai điểm.
 
 </details>
 
@@ -2761,8 +2761,8 @@ CD=(0,2,4), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** x/1=y/2=z/3
-- **Lời giải có suy luận:** Khử tham số từ (t,2t,3t).
+- **Đáp án:** \(\frac{x}{1}=\frac y2=\frac z3\)
+- **Lời giải có suy luận:** Khử tham số từ \((t;2t;3t)\).
 
 </details>
 
@@ -2771,8 +2771,8 @@ CD=(0,2,4), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** x=1; y−2=z/(−2)
-- **Lời giải có suy luận:** x là hằng, chỉ khử tham số từ y=2+t và z=−2t.
+- **Đáp án:** \(x=1;\ y-2=\frac z{-2}\)
+- **Lời giải có suy luận:** x là hằng, chỉ khử tham số từ \(y=2+t\) và \(z=-2t\).
 
 </details>
 
@@ -2781,102 +2781,102 @@ CD=(0,2,4), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** x=2, y=3, z=t
-- **Lời giải có suy luận:** Hướng \((0;0;1)\); không tạo x/0 hoặc y/0.
+- **Đáp án:** \(x=2,\ y=3,\ z=t\)
+- **Lời giải có suy luận:** Hướng \((0;0;1)\); không tạo \(\frac x0\) hoặc \(\frac y0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 127.** Qua (-1,1,2),u=(2,0,3). Viết cả tham số và dạng chính tắc đúng.
+**Bài luyện 127.** Qua \((-1;1;2)\),\(\vec u=(2;0;3)\). Viết cả tham số và dạng chính tắc đúng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** (-1+2t,1,2+3t); y=1, (x+1)/2=(z−2)/3
+- **Đáp án:** \((-1+2t;1;2+3t)\); \(y=1,\ \frac{x+1}{2}=\frac{z-2}{3}\)
 - **Lời giải có suy luận:** Do thành phần y của hướng bằng 0 nên y phải cố định bằng 1; kiểm ngược bằng t.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ xét chính xác thành phần hướng bằng 0; 1đ viết dạng chính tắc/chuyển đúng; 1đ kiểm dạng tham số; 1đ nói rõ vì sao không chia 0.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P26; PRIMARY_OUTCOME: TOP18-O26; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 128.** Cho đường x=2,y=−1+3t,z=5−t. Viết chính tắc.
+**Bài luyện 128.** Cho đường \(x=2,\ y=-1+3t,\ z=5-t\). Viết chính tắc.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-x=2 và (y+1)/3=(z−5)/(−1). Không ghi (x−2)/0.
+\(x=2\) và \(\frac{y+1}{3}=\frac{z-5}{-1}\). Không ghi \(\frac{x-2}{0}\).
 
 **Đường khắc phục D6:** D6: nhận từng thành phần hướng bằng 0 rồi giữ phương trình hằng; tỉ số có mẫu 0 là vô nghĩa.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 129.** d=(t,2t,3). Điểm M(2,4,3) thuộc d?
+**Bài luyện 129.** \(d:(x;y;z)=(t;2t;3)\). Điểm \(M(2;4;3)\) thuộc d?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Có
-- **Lời giải có suy luận:** t=2 thỏa x=2,y=4,z cố định 3.
+- **Lời giải có suy luận:** \(t=2\) thỏa \(x=2,\ y=4\),z cố định 3.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 130.** d=(1+2t,3−t,0). M(5,1,0) thuộc d?
+**Bài luyện 130.** \(d:(x;y;z)=(1+2t;3-t;0)\). \(M(5;1;0)\) thuộc d?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Có
-- **Lời giải có suy luận:** t=2 thỏa x=5,y=1,z=0.
+- **Lời giải có suy luận:** \(t=2\) thỏa \(x=5,\ y=1,\ z=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 131.** Vị trí p(t)=(1+t,2+t,3−t). Tại t=3 drone ở đâu?
+**Bài luyện 131.** Vị trí \(p(t)=(1+t;2+t;3-t)\). Tại \(t=3\) drone ở đâu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** \((4;5;0)\)
-- **Lời giải có suy luận:** Thay cùng t=3 cho ba tọa độ.
+- **Lời giải có suy luận:** Thay cùng \(t=3\) cho ba tọa độ.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 132.** d=(2−t,1+2t,3t). Kiểm M(0,5,6) và N(0,5,5).
+**Bài luyện 132.** \(d:(x;y;z)=(2-t;1+2t;3t)\). Kiểm \(M(0;5;6)\) và \(N(0;5;5)\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** M thuộc d, N không
-- **Lời giải có suy luận:** M yêu cầu t=2: x=0,y=5,z=6; N cùng x,y đòi t=2 nhưng z phải là 6 khác 5.
+- **Lời giải có suy luận:** M yêu cầu \(t=2\): \(x=0,\ y=5,\ z=6\); N cùng x,y đòi \(t=2\) nhưng z phải là 6 khác 5.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ giải tham số t từ tọa độ có hệ số khác 0; 1đ kiểm tọa độ thứ hai; 1đ kiểm tọa độ thứ ba và kết luận; 1đ nêu quy tắc cùng một t.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P27; PRIMARY_OUTCOME: TOP18-O27; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 133.** Điểm P=(2,0,2) có thuộc d: x=1+t,y=t,z=t không?
+**Bài luyện 133.** Điểm \(P=(2;0;2)\) có thuộc \(d:x=1+t,\ y=t,\ z=t\) không?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Không. Từ x=2 suy t=1; khi đó y=z=1, khác y=0,z=2 của P.
+Không. Từ \(x=2\) suy \(t=1\); khi đó \(y=z=1\), khác \(y=0,\ z=2\) của P.
 
 **Đường khắc phục D6:** Không dùng ba tham số khác nhau cho ba tọa độ; kiểm tất cả với một t chung.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 134.** u=(1,2,0),v=(2,4,0). Hai hướng?
+**Bài luyện 134.** \(\vec u=(1;2;0),\ \vec v=(2;4;0)\). Hai hướng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Cùng phương
-- **Lời giải có suy luận:** v=2u.
+- **Lời giải có suy luận:** \(\vec v=2\vec u\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 135.** u=(1,0,1),v=(1,0,-1). Hai hướng?
+**Bài luyện 135.** \(\vec u=(1;0;1),\ \vec v=(1;0;-1)\). Hai hướng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Vuông góc
-- **Lời giải có suy luận:** u·v=1−1=0.
+- **Lời giải có suy luận:** \(\vec u\cdot\vec v=1-1=0\).
 
 </details>
 
@@ -2886,44 +2886,44 @@ Không. Từ x=2 suy t=1; khi đó y=z=1, khác y=0,z=2 của P.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Có
-- **Lời giải có suy luận:** Tích vô hướng −2+2=0.
+- **Lời giải có suy luận:** Tích vô hướng \(-2+2=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 137.** Chứng minh u=(1,2,-1) vuông góc v=(2,-1,0) và song song w=(3,6,-3).
+**Bài luyện 137.** Chứng minh \(\vec u=(1;2;-1)\) vuông góc \(\vec v=(2;-1;0)\) và song song \(\vec w=(3;6;-3)\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** u·v=0 và w=3u
-- **Lời giải có suy luận:** u·v=2−2+0=0; w=3u. Cần thêm giao điểm để gọi hai đường thẳng vuông góc hình học.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ tính dot và kiểm cùng phương đúng; 1đ kết luận hướng vuông góc; 1đ kết luận hướng song song; 1đ phân biệt hướng với quan hệ giao nhau hình học.
+- **Đáp án:** \(\vec u\cdot\vec v=0\) và \(\vec w=3\vec u\)
+- **Lời giải có suy luận:** \(\vec u\cdot\vec v=2-2+0=0\); \(\vec w=3\vec u\). Cần thêm giao điểm để gọi hai đường thẳng vuông góc hình học.
+- **Rubric Written /5 (chấm theo từng bước):** 2đ tính tích vô hướng và kiểm cùng phương đúng; 1đ kết luận hướng vuông góc; 1đ kết luận hướng song song; 1đ phân biệt hướng với quan hệ giao nhau hình học.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P28; PRIMARY_OUTCOME: TOP18-O28; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 138.** d1 qua \((1;1;0)\) hướng \((2;0;0)\), d2 qua \((3;1;0)\) hướng \((1;0;0)\). Trùng hay song song phân biệt?
+**Bài luyện 138.** \(d_1\) qua \((1;1;0)\) hướng \((2;0;0)\), \(d_2\) qua \((3;1;0)\) hướng \((1;0;0)\). Trùng hay song song phân biệt?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Trùng: hướng cùng phương và điểm (3,1,0) nằm trên d1 khi t=1.
+Trùng: hướng cùng phương và điểm \((3;1;0)\) nằm trên \(d_1\) khi \(t=1\).
 
 **Đường khắc phục D6:** Khi đã có hướng tỉ lệ, đừng kết luận song song phân biệt trước khi kiểm một điểm.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 139.** d1=(t,0,0), d2=(0,s,0). Có giao?
+**Bài luyện 139.** \(d_1(t)=(t;0;0)\), \(d_2(s)=(0;s;0)\). Có giao?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Cắt tại O
-- **Lời giải có suy luận:** x,y buộc t=s=0, z đều 0; hai hướng không cùng phương.
+- **Lời giải có suy luận:** x,y buộc \(t=s=0\), z đều 0; hai hướng không cùng phương.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 140.** d1=(t,1,0), d2=(0,s,1). Quan hệ?
+**Bài luyện 140.** \(d_1(t)=(t;1;0)\), \(d_2(s)=(0;s;1)\). Quan hệ?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2933,22 +2933,22 @@ Trùng: hướng cùng phương và điểm (3,1,0) nằm trên d1 khi t=1.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 141.** Hai cáp d1=(t,0,2),d2=(0,s,2). Chúng giao đâu?
+**Bài luyện 141.** Hai cáp \(d_1(t)=(t;0;2)\),\(d_2(s)=(0;s;2)\). Chúng giao đâu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** \((0;0;2)\)
-- **Lời giải có suy luận:** Từ x=y=0 t=s=0; cùng cao độ z=2.
+- **Lời giải có suy luận:** Từ \(x=y=0,\ t=s=0\); cùng cao độ \(z=2\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 142.** Chứng minh d1=(1+t,t,0), d2=(0,s,1) chéo nhau.
+**Bài luyện 142.** Chứng minh \(d_1(t)=(1+t;t;0)\), \(d_2(s)=(0;s;1)\) chéo nhau.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** Không giao và khác hướng
-- **Lời giải có suy luận:** Mọi điểm d1 có z=0, d2 có z=1 nên không giao; hướng (1,1,0) và (0,1,0) không cùng phương.
+- **Lời giải có suy luận:** Mọi điểm \(d_1\) có \(z=0\), \(d_2\) có \(z=1\) nên không giao; hướng \((1;1;0)\) và \((0;1;0)\) không cùng phương.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ lập hệ giao với hai tham số t,s; 1đ xét hai tọa độ; 1đ kiểm tọa độ còn lại và khác hướng; 1đ kết luận chéo/giao có căn cứ.
 
 </details>
@@ -2958,74 +2958,74 @@ Trùng: hướng cùng phương và điểm (3,1,0) nằm trên d1 khi t=1.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Khác phương, z luôn 0 ở d1 nhưng luôn 2 ở d2, hệ vô nghiệm ⇒ chéo nhau.
+Khác phương, z luôn 0 ở \(d_1\) nhưng luôn 2 ở \(d_2\), hệ vô nghiệm nên chéo nhau.
 
 **Đường khắc phục D6:** D6: giải đủ ba tọa độ; hình chiếu lên giấy giao nhau không chứng minh hai đường trong không gian cắt nhau.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 144.** d=(1+t,0,1), P:x=3. Tìm giao.
+**Bài luyện 144.** \(d:(x;y;z)=(1+t;0;1)\), \((P):x=3\). Tìm giao.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** \((3;0;1)\)
-- **Lời giải có suy luận:** 1+t=3 ⇒ t=2.
+- **Lời giải có suy luận:** \(1+t=3\Rightarrow t=2\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 145.** d=(1+2t,t,3−t), P:x+y+z=8. Tìm giao.
+**Bài luyện 145.** \(d:(x;y;z)=(1+2t;t;3-t)\), \((P):x+y+z=8\). Tìm giao.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** \((5;2;1)\)
-- **Lời giải có suy luận:** Tổng 4+2t=8 ⇒ t=2; điểm (5,2,1).
+- **Lời giải có suy luận:** Tổng \(4+2t=8\Rightarrow t=2\); điểm \((5;2;1)\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 146.** Quỹ đạo drone (2t,0,5−t), t≥0, chạm mặt đất z=0 ở đâu?
+**Bài luyện 146.** Quỹ đạo drone \((2t;0;5-t)\), \(t\ge0\), chạm mặt đất \(z=0\) ở đâu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (10,0,0) khi t=5
-- **Lời giải có suy luận:** Giải 5−t=0 ⇒ t=5; tọa độ (10,0,0).
+- **Đáp án:** \((10;0;0)\) khi \(t=5\)
+- **Lời giải có suy luận:** Giải \(5-t=0\Rightarrow t=5\); tọa độ \((10;0;0)\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 147.** Tìm giao d=(1+t,2−t,3+2t) với P:x−2y+z=10, kiểm kết quả.
+**Bài luyện 147.** Tìm giao \(d:(x;y;z)=(1+t;2-t;3+2t)\) với \((P):x-2y+z=10\), kiểm kết quả.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** \((3;0;7)\)
-- **Lời giải có suy luận:** Thế vào vế trái: 1+t−2(2−t)+3+2t=5t ⇒ t=2, điểm (3,0,7), 3+0+7=10.
+- **Lời giải có suy luận:** Thế vào vế trái: \(1+t-2(2-t)+3+2t=5t\Rightarrow t=2\), điểm \((3;0;7)\), \(3+0+7=10\).
 - **Rubric Written /5 (chấm theo từng bước):** 2đ thế đúng ba tham số vào phương trình mặt phẳng; 1đ giải t; 1đ viết và kiểm giao điểm; 1đ nêu trường hợp 0/1/vô số nghiệm.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P30; PRIMARY_OUTCOME: TOP18-O30; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 148.** Tìm giao của d(t)=(2+t,−1,t) với mặt P:x+y+z=3.
+**Bài luyện 148.** Tìm giao của \(d(t)=(2+t;-1;t)\) với mặt \((P):x+y+z=3\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Thay: (2+t)−1+t=3 → 2t=2 → t=1, điểm (3,−1,1).
+Thay: \((2+t)-1+t=3\Rightarrow 2t=2\Rightarrow t=1\), điểm \((3;-1;1)\).
 
-**Đường khắc phục D6:** Khi n·u=0, không chia cho 0; so sánh hằng số để phân biệt nằm trong/sóng song.
+**Đường khắc phục D6:** Khi \(\vec n\cdot\vec u=0\), không chia cho 0; so sánh hằng số để phân biệt nằm trong/song song.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-W03; PRIMARY_OUTCOME: TOP18-O30; ROLE: TOPIC_WRITTEN; RUBRIC_ORIGINAL_UNCHANGED -->
-**Bài luyện 149.** Máy bay đi theo đường d(t)=(1+t,2−t,t), t đo bằng giờ. Nó đi qua mặt phẳng P:x+y+z=4 tại thời điểm nào và tọa độ nào? Tại sao phải dùng chung một t?
+**Bài luyện 149.** Máy bay đi theo đường \(d(t)=(1+t;2-t;t)\), t đo bằng giờ. Nó đi qua mặt phẳng \((P):x+y+z=4\) tại thời điểm nào và tọa độ nào? Tại sao phải dùng chung một t?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Thay tọa độ vào P: (1+t)+(2−t)+t=3+t=4 ⇒ t=1. Khi ấy M(1)=(2,1,1); kiểm 2+1+1=4. Nếu mỗi tọa độ một tham số, đó không còn là cùng một điểm trên quỹ đạo.
+Thay tọa độ vào P: \((1+t)+(2-t)+t=3+t=4\Rightarrow t=1\). Khi ấy \(M(1)=(2;1;1)\); kiểm \(2+1+1=4\). Nếu mỗi tọa độ một tham số, đó không còn là cùng một điểm trên quỹ đạo.
 
 **Rubric 4 điểm (mỗi tiêu chí 1 điểm):**
-- Viết đúng điều kiện 3+t=4 khi thế d vào mặt — **1 điểm**.
-- Giải đúng t=1 giờ — **1 điểm**.
+- Viết đúng điều kiện \(3+t=4\) khi thế d vào mặt — **1 điểm**.
+- Giải đúng \(t=1\) giờ — **1 điểm**.
 - Tính tọa độ \((2;1;1)\) và thế kiểm lại P — **1 điểm**.
 - Giải thích cùng một t trong ba tọa độ và đơn vị thời gian — **1 điểm**.
 
