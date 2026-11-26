@@ -19614,6 +19614,86 @@
       },
       "remaining": "CD04–12 semantic/notation residual review; shared SGK and source-owner deltas, FirstTry 414 prior reconciliation only, Written/Anchor, skill/depth gaps. No full Academic/PED/browser PASS, fresh primary PDF, interaction conversion, cutover or release.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp88": {
+      "scope": "CD04–06 residual local learner-visible fields after CP78; review five fields, targeted X-G.5 and reasoning corrections, preserve existing stems/keys and strengthened variants",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "e8c0b29a40772562c504b78b1e9faf2b757ecb27",
+      "topics": [
+        {
+          "topic": "CD04",
+          "item_before": "25e187229c83a78958cb7ee2446dec8d2d16834b",
+          "item_after": "e0a344314f1788724c9f708af967780bbb12e1d0",
+          "item_commit": "0bf8b69f11a5decd3e45b1f6ed30338b7ce99dfa",
+          "placement_blob": "a4b5d1d3c810fe92382bc48400a94de0775d22b0",
+          "local_records_reviewed": 22,
+          "local_records_changed": 19,
+          "fields_changed": {
+            "hints": 10,
+            "remediation": 16,
+            "worked_solution": 3
+          },
+          "other_fields_unchanged": true,
+          "placement_unchanged": true,
+          "targeted_raw_math_scan_residual": 0,
+          "inline_and_display_delimiters_balanced": true,
+          "options_or_rubrics_present": 0
+        },
+        {
+          "topic": "CD05",
+          "item_before": "e09bf270966b732ed0724406cda8bb61467c16b3",
+          "item_after": "b01ea96da2877e68f9a509c09bc2cd0c3a7acc14",
+          "item_commit": "345449af4e7ab3071b76aee7fcb7daf9395e8e41",
+          "placement_blob": "1ad1c3b00ae0781bd66cf4f99e50b2a951f355f3",
+          "local_records_reviewed": 34,
+          "local_records_changed": 20,
+          "fields_changed": {
+            "hints": 8,
+            "remediation": 18,
+            "worked_solution": 2
+          },
+          "other_fields_unchanged": true,
+          "placement_unchanged": true,
+          "targeted_raw_math_scan_residual": 0,
+          "inline_and_display_delimiters_balanced": true,
+          "options_or_rubrics_present": 0
+        },
+        {
+          "topic": "CD06",
+          "item_before": "194ed06361e1e9ac00321ce7218702cf876b6713",
+          "item_after": "841ab628a55991473cbc82d9005f0b30f0be2323",
+          "item_commit": "5b72e062c9f1f93cfdceee27dafe3f0fdbf78b4c",
+          "placement_blob": "f60bbe409e3dfc94a3c8d7185414bd604b1e3099",
+          "local_records_reviewed": 16,
+          "local_records_changed": 12,
+          "fields_changed": {
+            "hints": 9,
+            "remediation": 10,
+            "worked_solution": 2
+          },
+          "other_fields_unchanged": true,
+          "placement_unchanged": true,
+          "targeted_raw_math_scan_residual": 0,
+          "inline_and_display_delimiters_balanced": true,
+          "options_or_rubrics_present": 0
+        }
+      ],
+      "findings": [
+        "CD04 P02 distinguish principal even root and equation roots, P12 justify surjectivity onto positive real numbers using inverse logarithm, P21 distinguish discrete model domain from guaranteed observed counts. CD05 P25 demonstrate horizontal compression by point correspondence, P34 explicitly compute both inputs and explain threshold. CD06 P10 distinguish range bound from attaining all values, P16 compute both extrema and their times within model domain. Normalize hints and specific error feedback; preserve strengthened variants and numeric keys. No fresh primary source scan or independent review.",
+        "All 72 local records read across 5 fields; 51 changed. Previously flagged 42 records from CP87; targeted regex residual zero after review, not exhaustive rendering or bank-wide semantic proof. 22/22 Practice/Replay placement reconciliation unaffected."
+      ],
+      "progress": {
+        "topics_scoped_practice_replay_review": 22,
+        "practice": 1479,
+        "replay": 338,
+        "residual_local_fields_revisited_cd01_cd06": 117,
+        "total_cd01_cd12_local_records": 255,
+        "remaining_cd07_cd12_local_records": 138,
+        "remaining_cd07_cd12_prior_targeted_raw_flags": 81
+      },
+      "remaining": "CD07–12 semantic/notation residual review (138 records); shared SGK/source-owner reconciliation, FirstTry, Written/Anchor, skill/depth gaps. No full Academic/PED/browser PASS, conversion, merge/deploy.",
+      "release_authorization": false
     }
   }
 }
