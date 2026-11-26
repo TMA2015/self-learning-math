@@ -13,8 +13,11 @@ MANIFEST = ROOT / "prototypes/thpt/release-queue/W3_CD12_15_SOURCE_INTAKE_202611
 data = json.loads(MANIFEST.read_text(encoding="utf-8"))
 assert data["wave"] == "W3" and set(data["topics"]) == {"12", "13", "14", "15"}
 W3A = "--w3a" in sys.argv
-if W3A:
-    data["topics"] = {k: v for k, v in data["topics"].items() if k in ("12", "13", "14")}
+W3B = "--w3b" in sys.argv
+assert not (W3A and W3B)
+if W3A or W3B:
+    selected = ("15",) if W3B else ("12", "13", "14")
+    data["topics"] = {k: v for k, v in data["topics"].items() if k in selected}
 PARTS = ("kien-thuc", "luyen-tap", "tu-kiem-tra")
 HEADINGS = ("# Kiến thức", "# Luyện tập", "# Tự kiểm tra")
 
@@ -80,6 +83,13 @@ for topic, d in data["topics"].items():
             assert f'ACADEMIC_SOURCE_BLOB: {d["sourceBlob"]}' in txt and f'REVIEW_RECEIPT_BLOB: {d["q18ReceiptBlob"]}' in txt, (topic, kind, "source/Q18 binding")
             if kind == "ready":
                 assert f'AUTHOR_HANDOFF_BLOB: {d["handoffBlob"]}' in txt and "STATE: CONTENT_READY" in txt, (topic, "READY binding")
+    if "v2Blob" in d:
+        assert d["sourceBlob"].encode() in receipt, (topic,"Q18 source binding")
+        v2 = subprocess.check_output(["git","show",f'{d["authorHead"]}:{d["v2Path"]}'],cwd=ROOT)
+        ready = subprocess.check_output(["git","show",f'{d["authorHead"]}:{d["readyPath"]}'],cwd=ROOT)
+        assert blob_sha(v2)==d["v2Blob"] and blob_sha(ready)==d["readyBlob"], (topic,"custody SHA")
+        assert all(d[k].encode() in v2 and d[k].encode() in ready for k in ("sourceBlob","q18ReceiptBlob")), (topic,"source/Q18 binding")
+        assert d["v2Blob"].encode() in ready and b"STATE: CONTENT_READY" in ready, (topic,"READY binding")
     preface, parts = source_sections(source.decode("utf-8"))
     ids = re.findall(r"<!-- DISPLAY_ONLY_CANONICAL:\s*([A-Z0-9-]+)", parts[1])
     replay = re.findall(r"<!-- PUBLIC_REPLAY_ONLY:\s*([A-Z0-9-]+)", parts[2])

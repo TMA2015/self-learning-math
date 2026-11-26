@@ -37,9 +37,12 @@ REFRESHW1="--topic-w1-refresh" in sys.argv
 REFRESHW2A="--topic-w2a-refresh" in sys.argv
 REFRESHW2B="--topic-w2b-refresh" in sys.argv
 REFRESHW3A="--topic-w3a-refresh" in sys.argv
-REFRESH=REFRESH01 or REFRESHW1 or REFRESHW2A or REFRESHW2B or REFRESHW3A
-SIZES={"12":12,"13":16,"14":23} if REFRESHW3A else {"01":11} if REFRESH01 else {"02":16,"03":12,"04":18,"05":17} if REFRESHW1 else {"06":16,"07":18,"08":18} if REFRESHW2A else {"09":32,"10":36,"11":22} if REFRESHW2B else TAIL_SIZES if ALL22_TAIL else RW2_SIZES if RW2 else RW1_SIZES
-WAVE="W3A-REFRESH" if REFRESHW3A else "W2B-REFRESH" if REFRESHW2B else "W2A-REFRESH" if REFRESHW2A else "W1-REFRESH" if REFRESHW1 else "SHARED-17-22" if ALL22_TAIL else "R-W2" if RW2 else "R-W1"
+REFRESHW3B="--topic-w3b-refresh" in sys.argv
+REFRESHW4="--topic-w4-refresh" in sys.argv
+REFRESHW5="--topic-w5-refresh" in sys.argv
+REFRESH=REFRESH01 or REFRESHW1 or REFRESHW2A or REFRESHW2B or REFRESHW3A or REFRESHW3B or REFRESHW4 or REFRESHW5
+SIZES={"15":22} if REFRESHW3B else {"16":21,"17":12,"18":40} if REFRESHW4 else {"19":14,"20":9,"21":8,"22":13} if REFRESHW5 else {"12":12,"13":16,"14":23} if REFRESHW3A else {"01":11} if REFRESH01 else {"02":16,"03":12,"04":18,"05":17} if REFRESHW1 else {"06":16,"07":18,"08":18} if REFRESHW2A else {"09":32,"10":36,"11":22} if REFRESHW2B else TAIL_SIZES if ALL22_TAIL else RW2_SIZES if RW2 else RW1_SIZES
+WAVE="W3B-REFRESH" if REFRESHW3B else "W4-REFRESH" if REFRESHW4 else "W5-REFRESH" if REFRESHW5 else "W3A-REFRESH" if REFRESHW3A else "W2B-REFRESH" if REFRESHW2B else "W2A-REFRESH" if REFRESHW2A else "W1-REFRESH" if REFRESHW1 else "SHARED-17-22" if ALL22_TAIL else "R-W2" if RW2 else "R-W1"
 CURRENT_BASE="ad3545985c7a1e369799e66fa770678860827be4"
 CURRENT_FILES={
     "docs/assets/javascripts/math-details-v1.js",
