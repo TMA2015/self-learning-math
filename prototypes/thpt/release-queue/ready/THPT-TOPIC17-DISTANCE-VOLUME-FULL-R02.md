@@ -1,5 +1,9 @@
-<!-- WORK #1109 CURRENT CANDIDATE -->
-**BLOCKED_BY_AUTHORING** — Work #1055 candidate learner blob `c73a4c3ca77669c4e83889ddea497b23e698c9d2`, source commit `5d452e323bf657b8c5e74735b54968fbb8bdfa18`. Earlier signed source/receipt pointers below remain historical for the previous snapshot only. Affected Q18/V2, S1 and X-G.5 verification/re-lock pending; not authorized for release.
+## CURRENT CP19 — CĐ17 AUTHORING CONTENT_READY
+Learner `03b6b27adbeaf854d3db1d8fc9e830a0294a08aa`, Q18 `87f927cbcbd9ff4f26ba2a3b2c411a9a9770f82e`, A1 `7f5c5ae757d1db6506a242de795d7621702dd46d`, V2 `0925484aad44b7d19408816aafa84ad0a1bc36e8`; original bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0`. Three mandatory Work corrections and X-G.5 verified, 33 scoped math checks PASS. 49/37/8/7/51 preserved. Two SVG and model unchanged; tab labels and browser/model execution belong to RELEASE. Historical S1 inherited, no fresh independent NotebookLM verdict or merge/deploy.
+
+---
+
+Earlier narrative evidence below is historical; current CP19 evidence and structured fields supersede earlier pointers.
 
 <!-- OWNER_APPROVED_SHARED_G11_B22_B27_LABEL_EQUIVALENCE_CĐ17_READY_20261121 -->
 **CURRENT SOURCE_OWNER_PARITY:** Existing one CĐ17 learner `0ef0ad696e97d2549f29c5a22ba675970572a089`, original shared G11 SGK ChVII B22–27 one bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` matched EXACT identical blob in CĐ16 branch. Corrected all **18** original B26–B27 student `Đáp án sau Submit luyện tập` headings to `Đáp án`, matching 51/51 source-owner bank and 33 CĐ16 projection. All original 37 Practice mathematical stems, numeric/text answer values, worked solutions, 7 Written rubrics, 8 public same-ID selfchecks, 2 diagrams, Q16/Final Submit/Mastery unchanged; no duplicate SGK bank or new item version. Current Q18 `5f6fb06ac8751e59d08d22ba78ebeee829c28a55`, A1 `041ba48f0302b6b121fa2017f7ab6bc27d60443e`, V2 `ae9c4caec79325bd35038ac7f9a3411bdf3cbf2f`; `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL` author-self check only, not independent whole Topic review or website RELEASE. Prior bank `afc8ec039213b87b4930f2d34d48c28d1fc6277f` immutable history.
@@ -17,22 +21,22 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: BLOCKED_BY_AUTHORING
+STATE: CONTENT_READY
 CONTENT_REVISION: R03_MASTER974_12D6_SELF_CHECK_20261121
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
-SOURCE_COMMIT: 648c048d96fff2ae82489c4878fb43306e4011cf
+SOURCE_COMMIT: d1e02081bdd9bcb17ed34d980bc68b93a8975575
 CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 0ef0ad696e97d2549f29c5a22ba675970572a089
+ACADEMIC_SOURCE_BLOB: 03b6b27adbeaf854d3db1d8fc9e830a0294a08aa
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (AUTHOR_SELF_VERIFIED, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: bb941ea3563034e0aa779c69118f8ac02355a21e
+REVIEW_RECEIPT_BLOB: 87f927cbcbd9ff4f26ba2a3b2c411a9a9770f82e
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: f0b43ca2b15326b3e2997a5142cfb3bc32cc351b
+AUTHOR_A1_A7_BLOB: 7f5c5ae757d1db6506a242de795d7621702dd46d
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: f1be2c5d9f77683482a2d171733de41be5cc6793
+AUTHOR_HANDOFF_BLOB: 0925484aad44b7d19408816aafa84ad0a1bc36e8
 ORIGINAL_SGK_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: cfb2bd522531167003eeae8e7342c6d1349ca425
@@ -42,7 +46,7 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
