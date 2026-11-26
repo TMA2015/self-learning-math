@@ -151,12 +151,12 @@
  if (typeof document$ !== "undefined") document$.subscribe(create);
 })();
 
-// R3: retain Material's native Back to top controller on Topic Knowledge.
+// R3: one native Back to top component throughout Toán THPT.
 (() => {
  const init=()=>{
   const top=document.querySelector('button.md-top[data-md-component="top"]');
   if(!top)return;
-  const active=/\/(?:thpt-preview|thpt)\/chuyen-de\/cd(?:0[1-9]|1\d|2[0-2])\/kien-thuc\/(?:index\.html)?$/.test(location.pathname);
+  const active=/^\/(?:self-learning-math\/|roadmap-toan-thcs\/)?thpt-preview(?:\/|$)/.test(location.pathname);
   if(!active)return;
   top.classList.add("slm-topic-back-top");
   top.setAttribute("aria-label","Về đầu trang");
