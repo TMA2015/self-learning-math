@@ -19382,6 +19382,159 @@
       },
       "remaining": "CD20–22, earlier residual fields, FirstTry, shared SGK including source-owner corrections, Written/Anchor, depth and full notation audit before conversion and RELEASE.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp86": {
+      "scope": "CD20–22 local learner-visible X-G.5 and current learner Practice/Replay source placement reconciliation; closes 22-topic scoped pass, not bank-wide acceptance",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "49891681edc0d0c81f5a8b3cdc466ed4e4b7f56a",
+      "topics": [
+        {
+          "topic": "CD20",
+          "learner_commit": "6e6b89ff37f9493bef2fa951ea094110a1c7e28c",
+          "learner_blob": "d6c34cdf81594ec9d3ce3275ac3d736444aa710c",
+          "placement_blob": "4ffb1fc2e952719034b0ae70c75ffc4ca1ce2635",
+          "item_before": "06756ef17a84dab41491817a619edd6e195c8a52",
+          "item_after": "a18c5d407a8c85597fd10b95a85b4cad40b44901",
+          "item_commit": "a1a24be4e6ac08295047ca87fd5402ce0a358ba4",
+          "checks": {
+            "practice": 20,
+            "replay": 11,
+            "placement_order_match": 31,
+            "current_learner_replay_stem_match": 11,
+            "local_records_reviewed": 17,
+            "local_records_changed": 17,
+            "fields_changed": {
+              "stem": 14,
+              "answer_key": 16,
+              "worked_solution": 17,
+              "hints": 3,
+              "remediation": 5
+            },
+            "executed_math_check_by_id": {
+              "P01": true,
+              "P02": true,
+              "P03": true,
+              "P04": true,
+              "P05": true,
+              "P06": true,
+              "P07": true,
+              "P08": true,
+              "P09": true,
+              "P10": true,
+              "P11": true,
+              "P12": true,
+              "P13": true,
+              "P14": true,
+              "P15": true,
+              "P16": true,
+              "P17": true
+            },
+            "metadata_unchanged": true,
+            "local_self_compare_unchanged": true,
+            "inline_delimiters_balanced": true,
+            "targeted_raw_math_scan_residual": 0,
+            "shared_formative_placements_unchanged": 0,
+            "written_placements_unchanged": 3,
+            "options_or_rubric_present_in_local_records": 0
+          }
+        },
+        {
+          "topic": "CD21",
+          "learner_commit": "5fef4c1007d8e3d3737a5fa0483b276b2e67f457",
+          "learner_blob": "755472b2c90471f33ebcbe3ce3a55372348546f3",
+          "placement_blob": "39c44212f3ecb8f3c17c5bcce8ed53ac8d17cd00",
+          "item_before": "2991a3317c2dc5339143484a7f8fd1edbd099683",
+          "item_after": "a2f860cdc7705fa25cbd06325420e3b4bc608a59",
+          "item_commit": "d9cae540c9096876362eeb847870881109689132",
+          "checks": {
+            "practice": 11,
+            "replay": 8,
+            "placement_order_match": 19,
+            "current_learner_replay_stem_match": 8,
+            "local_records_reviewed": 8,
+            "local_records_changed": 8,
+            "fields_changed": {
+              "stem": 6,
+              "answer_key": 8,
+              "worked_solution": 8,
+              "hints": 2,
+              "remediation": 3
+            },
+            "executed_math_check_by_id": {
+              "P01": true,
+              "P02": true,
+              "P03": true,
+              "P04": true,
+              "P05": true,
+              "P06": true,
+              "P07": true,
+              "P08": true
+            },
+            "metadata_unchanged": true,
+            "local_self_compare_unchanged": true,
+            "inline_delimiters_balanced": true,
+            "targeted_raw_math_scan_residual": 0,
+            "shared_formative_placements_unchanged": 0,
+            "written_placements_unchanged": 3,
+            "options_or_rubric_present_in_local_records": 0
+          }
+        },
+        {
+          "topic": "CD22",
+          "learner_commit": "d53155ef922d5f5f43f9f6b4c37729a7040e013f",
+          "learner_blob": "f1a059fc6366d2e4bb044edd696154a0b6799d4d",
+          "placement_blob": "004b2840f79040e738f4f31f8c11014d6faa9ed2",
+          "item_before": "2b4a3f366a67407bc2ec3e8fec65f0fe3edf876c",
+          "item_after": "05cb824c2089fb61d50f116d6ddf5c3b087aee35",
+          "item_commit": "17673112f130951a9aaabb53cbf0745fb92d20e5",
+          "checks": {
+            "practice": 114,
+            "replay": 9,
+            "placement_order_match": 123,
+            "current_learner_replay_stem_match": 9,
+            "local_records_reviewed": 7,
+            "local_records_changed": 7,
+            "fields_changed": {
+              "stem": 6,
+              "answer_key": 5,
+              "worked_solution": 7,
+              "hints": 1,
+              "remediation": 1
+            },
+            "executed_math_check_by_id": {
+              "ADD01": true,
+              "ADD02": true,
+              "ADD03": true,
+              "ADD04": true,
+              "ADD05": true,
+              "ADD06": true,
+              "ADD07": true
+            },
+            "metadata_unchanged": true,
+            "local_self_compare_unchanged": true,
+            "inline_delimiters_balanced": true,
+            "targeted_raw_math_scan_residual": 0,
+            "shared_formative_placements_unchanged": 88,
+            "written_placements_unchanged": 19,
+            "options_or_rubric_present_in_local_records": 7
+          }
+        }
+      ],
+      "findings": [
+        "CD20 P14 correct intersection probability bound (was reversed in remediation); P17 distinguish exactly one from at least one; retain strengthened CP63 tasks and source replay distinctions. CD21 P02 condition P(C)=0 undefined; P05 weighted rates; P06 Bayes evidence vs posterior; P08 distinguish modeled probability from actual counts. CD22 ADD03 explicit sorted median; ADD04 both outlier fences and no automatic deletion; ADD05 variance vs standard deviation units; ADD06–07 grouped estimates not raw values. Preserve KNTT mode convention inherited from current learner; no new primary PDF verification.",
+        "CD20/21 current replay parity means exact current learner pairs, not equal to deliberately improved candidate variants. CD22 replay uses shared formative records, not the seven local records. No shared or Written edit. Prior depth, Written/pointer and source-owner correction reconciliation remains pending."
+      ],
+      "progress": {
+        "topics_with_scoped_practice_replay_review": 22,
+        "total_topics": 22,
+        "practice_reviewed": 1479,
+        "total_practice": 1479,
+        "replay_reviewed": 338,
+        "total_replay": 338
+      },
+      "remaining": "Revisit CD01–12 residual learner-visible fields; audit shared SGK including source-owner corrections, FirstTry 414 previously reconciled not full notation audit, Written/Anchor canonical source and depth/skill gaps; global semantic and X-G.5 closure before interaction conversion, handoff or cutover. No full Academic/PED/browser PASS.",
+      "release_authorization": false
     }
   }
 }
