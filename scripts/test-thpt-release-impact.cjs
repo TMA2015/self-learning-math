@@ -689,7 +689,7 @@ function isExactTopicBackTop(files){
  const crypto=require("node:crypto"),blob=p=>{const b=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
  return files.length===TOPIC_BACK_TOP_FILES.size&&new Set(files).size===files.length&&files.every(f=>TOPIC_BACK_TOP_FILES.has(f))&&
   blob("docs/assets/javascripts/sticky-nav-v1.js")==="4b34796660347e8c71e94b2099b0536cf06cebdc"&&
-  blob("docs/assets/stylesheets/site-design-system.css")==="d71a5188b1bca520a005e9adb9a80aad733b7413"&&
+  blob("docs/assets/stylesheets/site-design-system.css")==="5765dfe92168804a67b4d3b62ef4a1305313b349"&&
   fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8").includes("TOPIC_BACK_TOP_R3");
 }
 function proveTopicBackTop(){

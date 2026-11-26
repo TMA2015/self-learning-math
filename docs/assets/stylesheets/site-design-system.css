@@ -676,7 +676,7 @@ html.home-guide-modal-open,html.home-guide-modal-open body{overflow:hidden}
 
 /* R3: native Topic Knowledge back-to-top; reserve space above the AI Tutor. */
 .md-top.slm-topic-back-top {
-  position:fixed;top:auto;left:auto;right:max(1rem,env(safe-area-inset-right));
+  position:fixed;top:auto!important;left:auto;right:max(1rem,env(safe-area-inset-right));
   bottom:calc(max(1rem,env(safe-area-inset-bottom)) + 3.35rem + 12px);
   margin:0;padding:0;width:44px;height:44px;min-width:44px;min-height:44px;
   box-sizing:border-box;border-radius:10px;display:grid;place-items:center;
