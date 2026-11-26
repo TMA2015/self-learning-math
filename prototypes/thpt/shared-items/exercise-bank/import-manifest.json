@@ -17814,6 +17814,49 @@
         "CĐ20/21 shared SGK placements, depth gaps CĐ15/19/22, remaining SGK first-try and interaction conversion after source reconciliation."
       ],
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp66": {
+      "scope": "CD20/CD21 public Knowledge FirstTry only; no full practice/replay field reconciliation",
+      "baseline_commit": "c80a767885efc5c46ee51a7518cfc84773c09a57",
+      "item_commit": "e0493617737c482c1d6b721c45578aa1160dbfeb",
+      "item_shard": {
+        "path": "items/topic-knowledge-first-try.json",
+        "before": "e09011b3172013951202b8ffcd09a0e3af58b4a4",
+        "after": "6d30ead43dc72199075f406c5336f50beba9744a"
+      },
+      "sources": [
+        {
+          "topic": "CD20",
+          "old": "b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9",
+          "current": "d6c34cdf81594ec9d3ce3275ac3d736444aa710c",
+          "first_try": 17
+        },
+        {
+          "topic": "CD21",
+          "old": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
+          "current": "755472b2c90471f33ebcbe3ce3a55372348546f3",
+          "first_try": 8
+        }
+      ],
+      "checks": {
+        "source_old_solution_exact_match": 25,
+        "source_old_stem_exact_match": 19,
+        "bank_stronger_stems_preserved": 6,
+        "first_try_placement_count": 25,
+        "d6_practice_order_resolved": 25,
+        "readback_changed_records": 25,
+        "readback_unchanged_records": 145,
+        "first_try_placement_blob_unchanged": "eb32ea775a8ca9242e6b052163f6fc1fcf829426",
+        "inline_math_delimiters_balanced": 25,
+        "auto_grade_false": 25
+      },
+      "academic_changes": [
+        "TOP20-T14: four head-count groups contain 1,3,3,1 sequences, not four equiprobable outcomes; TOP20-T16: disjoint positive-probability events have intersection zero, not product 1/9; TOP21-T02: distinguish P(B)=1/2 and reversed P(B|A)=1/2 from P(A|B)=1/3.",
+        "Retain explicit six-face/independence, uniform selection and conditional sampling assumptions; clarify N/S and two distinct coins; normalize keys without changing mathematical answers."
+      ],
+      "review_scope": "Scoped author verification of 25 solutions and source reconciliation, no bank-wide Q18 or fresh primary PDF review; CD20/21 practice/replay field parity and shared SGK placement coverage remain pending",
+      "remaining": "Next FirstTry CD14–19,22 then local CD01–13; shared placements and depth gaps, Written and SGK outstanding; no interaction conversion or cutover authorization",
+      "release_authorization": false
     }
   }
 }
