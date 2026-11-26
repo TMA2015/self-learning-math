@@ -622,16 +622,17 @@
   {
     "item_id": "THPT-G11-CHVI-B19-P06",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Một đại lượng ban đầu bằng 50 đơn vị, tăng gấp đôi mỗi kỳ theo mô hình thời gian thực \\(N(t)=50\\cdot2^t\\), \\(t\\ge0\\). Sau bao nhiêu kỳ đạt 800 đơn vị?",
-    "answer_key": "4 kỳ.",
-    "worked_solution": "Điều kiện đạt 800 là \\(50\\cdot2^t=800\\), tương đương \\(2^t=16=2^4\\). Vì hàm mũ cơ số 2 đơn ánh, \\(t=4\\). Giá trị này thuộc miền thời gian và cho đúng 800.",
+    "stem": "Một đại lượng ban đầu bằng 50 đơn vị, tăng theo mô hình \\(N(t)=50\\cdot2^t\\), trong đó t là thời gian tính theo kỳ, \\(t\\ge0\\) và t có thể nhận giá trị thực. (a) Tìm thời điểm đạt đúng 600 đơn vị, biểu diễn kết quả bằng lôgarit. (b) Không dùng máy tính, xác định thời điểm đó nằm giữa hai kỳ nguyên liên tiếp nào. (c) Nếu chỉ kiểm tra đại lượng vào cuối mỗi kỳ nguyên, cuối kỳ nào lần đầu ghi nhận ít nhất 600 đơn vị?",
+    "answer_key": "(a) \\(t=\\log_2 12\\) kỳ. (b) \\(3<t<4\\). (c) Cuối kỳ thứ 4.",
+    "worked_solution": "(a) Đạt đúng 600 đơn vị nghĩa là \\(50\\cdot2^t=600\\), hay \\(2^t=12\\). Không thể tìm số mũ nguyên cho 12 vì 12 không phải lũy thừa nguyên của 2. Theo định nghĩa lôgarit, số mũ cần tìm là \\(t=\\log_2 12\\). Đối số 12 dương, cơ số 2 hợp lệ và nghiệm thuộc miền thời gian vì \\(12>1\\). (b) Ta có \\(2^3=8<12<16=2^4\\). Hàm mũ cơ số 2 đồng biến, nên \\(3<\\log_2 12<4\\). (c) Ở cuối kỳ thứ 3, \\(N(3)=400\\); cuối kỳ thứ 4, \\(N(4)=800\\). Vì N tăng, kỳ thứ 4 là kỳ nguyên đầu tiên ghi nhận ít nhất 600 đơn vị. Thời điểm đạt đúng ngưỡng trong mô hình liên tục và thời điểm ghi nhận theo kỳ nguyên là hai kết quả khác nhau.",
     "skill_ids": [
       "G11-B19-LOG_APPLICATION"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Lập \\(50\\cdot2^t=800\\)."
+      "Chia cả hai vế cho 50 để tìm số mũ chưa biết.",
+      "Kẹp 12 giữa hai lũy thừa nguyên liên tiếp của 2."
     ],
     "rubric": null,
     "interaction": {
@@ -648,7 +649,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Thương 800 chia 50 là giá trị lũy thừa, không phải số kỳ. Ôn TOP04-M17; luyện THPT-TOP04-P21."
+    "remediation": "Lôgarit cho số mũ cần tìm ngay cả khi số mũ không nguyên. Phân biệt thời gian thực với thời điểm quan sát theo kỳ nguyên. Ôn Toán 11 Bài 19; xem TOP04-M17."
   },
   {
     "item_id": "THPT-G11-CHVI-B20-C01",
@@ -839,16 +840,17 @@
   {
     "item_id": "THPT-G11-CHVI-B20-P03",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tính \\(\\log_{\\frac12}2\\) và giải thích dấu.",
-    "answer_key": "\\(-1\\).",
-    "worked_solution": "Cơ số \\(\\frac12\\) dương, khác 1. Vì \\((\\frac12)^{-1}=2\\), theo định nghĩa \\(\\log_{\\frac12}2=-1\\). Với cơ số nhỏ hơn 1, muốn lũy thừa lớn hơn 1 thì số mũ phải âm.",
+    "stem": "Cho \\(g(x)=\\log_{\\frac12}x\\). Không dùng máy tính. (a) Sắp xếp \\(g(\\frac13),g(1),g(3)\\) theo thứ tự tăng dần và xác định dấu của từng giá trị. (b) Tìm hai số nguyên liên tiếp kẹp \\(g(3)\\). (c) Một bạn cho rằng vì \\(3>1\\) nên \\(g(3)>0\\). Hãy giải thích lỗi của bạn bằng tính biến thiên.",
+    "answer_key": "\\(g(3)<g(1)=0<g(\\frac13)\\); \\(-2<g(3)<-1\\). Hàm nghịch biến nên đối số lớn hơn 1 cho giá trị âm.",
+    "worked_solution": "Cơ số \\(\\frac12\\) thuộc khoảng \\((0;1)\\), nên g nghịch biến trên \\((0;+\\infty)\\). Vì \\(\\frac13<1<3\\), thứ tự giá trị bị đảo: \\(g(\\frac13)>g(1)>g(3)\\). Lại có \\(g(1)=0\\), nên giá trị ở \\(\\frac13\\) dương, giá trị ở 3 âm. Để kẹp \\(g(3)\\), nhận thấy \\(2<3<4\\). Do g nghịch biến, \\(g(4)<g(3)<g(2)\\). Từ \\((\\frac12)^{-2}=4\\) và \\((\\frac12)^{-1}=2\\), suy ra \\(-2<g(3)<-1\\). Bạn đã dùng nhầm quy luật của lôgarit có cơ số lớn hơn 1: khi cơ số nhỏ hơn 1, đối số tăng thì giá trị lôgarit giảm.",
     "skill_ids": [
       "G11-B20-LOG_MONOTONIC"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Tìm t sao cho \\((\\frac12)^t=2\\)."
+      "So sánh các đối số với 1 và nhớ \\(g(1)=0\\).",
+      "Kẹp 3 giữa hai lũy thừa của 2 rồi chú ý chiều so sánh."
     ],
     "rubric": null,
     "interaction": {
@@ -865,7 +867,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Giá trị lôgarit âm là hợp lệ; kiểm t bằng −1. Ôn TOP04-M11; luyện THPT-TOP04-P15."
+    "remediation": "Không suy dấu lôgarit chỉ từ đối số lớn hơn hay nhỏ hơn 1; phải xét cơ số. Ôn TOP04-M11; luyện THPT-TOP04-P15."
   },
   {
     "item_id": "THPT-G11-CHVI-B20-P04",
@@ -1211,16 +1213,17 @@
   {
     "item_id": "THPT-G11-CHVI-B21-P07",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Phương trình \\(2^x=-1\\) có nghiệm thực không? Vì sao?",
-    "answer_key": "Không có nghiệm thực.",
-    "worked_solution": "Với mọi x thực, \\(2^x>0\\). Vế phải −1 âm, nằm ngoài tập giá trị của hàm mũ. Vì vậy không thể có nghiệm thực.",
+    "stem": "Xét phương trình \\(2^{x+1}=m-3\\), với m là số thực cho trước. (a) Tìm điều kiện của m để phương trình có nghiệm thực và giải thích vì sao nghiệm là duy nhất khi tồn tại. (b) Viết nghiệm theo m. (c) Với \\(m=7\\), \\(m=3\\) và \\(m=2\\), hãy kết luận riêng từng trường hợp.",
+    "answer_key": "Có đúng một nghiệm khi \\(m>3\\), khi đó \\(x=\\log_2(m-3)-1\\). Với \\(m=7\\), \\(x=1\\); với \\(m=3\\) hoặc \\(m=2\\), vô nghiệm.",
+    "worked_solution": "Vế trái \\(2^{x+1}\\) luôn dương với mọi x thực, nên nếu \\(m-3\\le0\\), phương trình không có nghiệm. Nếu \\(m-3>0\\), hàm mũ cơ số 2 nhận mọi giá trị dương và đồng biến nghiêm ngặt, vì vậy phương trình có đúng một nghiệm. Theo định nghĩa lôgarit, \\(x+1=\\log_2(m-3)\\), suy ra \\(x=\\log_2(m-3)-1\\). Công thức chỉ có nghĩa khi \\(m>3\\). Với \\(m=7\\), phương trình là \\(2^{x+1}=4=2^2\\), nên \\(x=1\\). Với \\(m=3\\), vế phải bằng 0; với \\(m=2\\), vế phải bằng −1. Cả hai đều nằm ngoài tập giá trị của vế trái, nên vô nghiệm.",
     "skill_ids": [
       "G11-B21-EXP_EQUATION"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xét tập giá trị của hàm mũ."
+      "Xét tập giá trị của hàm mũ trước khi lấy lôgarit.",
+      "Nếu vế phải dương, dùng định nghĩa lôgarit và tính đơn ánh của hàm mũ."
     ],
     "rubric": null,
     "interaction": {
@@ -1237,7 +1240,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy lôgarit của −1 trong tập số thực. Ôn TOP04-M13; luyện THPT-TOP04-P17."
+    "remediation": "Không lấy lôgarit trước khi kiểm đối số dương. Tách trường hợp vế phải bằng 0, âm hoặc dương. Ôn TOP04-M13; luyện THPT-TOP04-P17."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P08",
