@@ -20268,6 +20268,62 @@
       ],
       "remaining": "G10 ChVIII next; separate FirstTry/public selfcheck/Written, source-owner/depth and renderer review.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp98": {
+      "scope": "G10 ChVIII B23–B25: 25 canonical public formative C/P records; 12 separate FirstTry untouched",
+      "baseline_commit": "2e8f2177e56528fc17ccd26c6db45979b30e192f",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "source_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "current_main_and_import_blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "ids_and_order": 25,
+        "decision": "Preserve stronger CP55 candidate variants and historical P07; B25 mandatory scope n=4,5 and optional extensions unchanged."
+      },
+      "item_shard": {
+        "path": "items/g10-chviii.json",
+        "before": "273b54df289f80074af13fc394cd78bdb8cf91ae",
+        "after": "9e7c45756814fc766e7860a50810f3b068f65cbb",
+        "commits": [
+          "5cc10b929909e22610908145560cc533a148033e",
+          "c021d8127e63d20febfbda0ea738896ab3a9922b"
+        ]
+      },
+      "checks": {
+        "formative_reviewed": 25,
+        "formative_changed": 25,
+        "fields_changed": {
+          "stem": 8,
+          "answer_key": 5,
+          "worked_solution": 25,
+          "hints": 5,
+          "remediation": 14
+        },
+        "first_try_unchanged": 12,
+        "sgk_placements": 25,
+        "sgk_placement_blob": "240d485678b3182add1fb3acd7035e6fc9994e08",
+        "cd19_placements": 25,
+        "cd19_placement_blob": "57221192c9ce62687e33e078b1efcd677466c426",
+        "metadata_and_interaction_unchanged": true,
+        "answer_meanings_unchanged": true,
+        "inline_and_display_delimiters_balanced": true,
+        "targeted_raw_math_scan_residual": 0,
+        "arithmetic_and_enumeration_checks_passed": 25,
+        "math_check_commit": "5cc10b929909e22610908145560cc533a148033e",
+        "subsequent_change": "Only B24-C02 hint wording",
+        "optional_sgk_items": [
+          "THPT-G10-B25-P02",
+          "THPT-G10-B25-P05",
+          "THPT-G10-B25-P06"
+        ]
+      },
+      "findings": [
+        "B23 distinguish disjoint cases vs complete sequential choices, explicit unrestricted combinations, leading zero and repeated digits.",
+        "B24 distinguish permutation/arrangement/combination, count complement without premature probability language, adjacency block with internal order.",
+        "B25 derive coefficients from choosing factors, distinguish coefficient vs term, sign and parity, justify unique constant term and even/odd sums; use KNTT C_n^k notation. B25 lesson consulted for mandatory n=4,5; optional P02/P05/P06 placements unchanged in SGK and CD19. No fresh primary SGK/SBT PDF or full Academic/PED/rendering verdict."
+      ],
+      "remaining": "G10 ChIX next; separate FirstTry/public selfcheck/Written, source-owner/depth and renderer review.",
+      "release_authorization": false
     }
   }
 }
