@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 390" role="img" aria-labelledby="title desc">
+<title id="title">Histogram: hai nhóm có cùng mật độ tần số</title>
+<desc id="desc">Trục ngang từ 0 đến 30, trục đứng là mật độ tần số. Cột từ 0 đến 10 và cột từ 10 đến 30 cùng cao 1. Cột thứ hai rộng gấp đôi, diện tích tương ứng 20 thay vì 10 quan sát.</desc>
+<rect x="1" y="1" width="738" height="388" rx="14" fill="#fff" stroke="#64748b"/>
+<g font-family="Arial,sans-serif" fill="#172554">
+<text x="30" y="35" font-size="21" font-weight="bold">Cùng mật độ, khác độ rộng nhóm</text>
+<text x="30" y="64" font-size="17">Chiều cao là tần số trên một đơn vị độ dài.</text>
+<text x="30" y="102" font-size="16">Mật độ tần số</text>
+</g>
+<g stroke="#334155" stroke-width="2" fill="none">
+<path d="M90 308H682 M90 308V113"/>
+<path d="M84 158H90 M90 308V314 M270 308V314 M630 308V314"/>
+<path d="M90 158H630" stroke="#64748b" stroke-dasharray="6 5"/>
+</g>
+<rect x="90" y="158" width="180" height="150" fill="#dbeafe" stroke="#075985" stroke-width="2"/>
+<rect x="270" y="158" width="360" height="150" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+<g font-family="Arial,sans-serif" fill="#0f172a" text-anchor="middle">
+<text x="180" y="205" font-size="18" font-weight="bold">[0;10)</text>
+<text x="180" y="235" font-size="16">10 quan sát</text><text x="180" y="261" font-size="16">10 × 1 = 10</text>
+<text x="450" y="205" font-size="18" font-weight="bold">[10;30)</text>
+<text x="450" y="235" font-size="16">20 quan sát</text><text x="450" y="261" font-size="16">20 × 1 = 20</text>
+<text x="73" y="164" font-size="16">1</text>
+<text x="90" y="338" font-size="16">0</text><text x="270" y="338" font-size="16">10</text><text x="630" y="338" font-size="16">30</text>
+<text x="681" y="338" font-size="16">Giá trị</text>
+<text x="360" y="371" font-size="17">Hai cột cao bằng nhau; diện tích cột thứ hai gấp đôi.</text>
+</g>
+</svg>
