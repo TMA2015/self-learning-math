@@ -9,7 +9,7 @@ const config=document.querySelector(".topic-w1-release-nav[data-topic-w1][data-t
 if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
 const sharedKnowledgeActive=part==="kien-thuc";
-const w3aPublic=part!=="kien-thuc"&&["12","13","14"].includes(topic);
+const w3aPublic=part!=="kien-thuc"&&["12","13","14","15"].includes(topic);
 const sharedKnowledgeMath=()=>sharedKnowledgeActive||w3aPublic?window.SLMTHPTKnowledgeMath:null;
 let sharedKnowledgePrepared=false;
 const sizes={"12":{"outcomes":12,"items":34,"replay":12,"groups":3,"practiceGroups":3},"13":{"outcomes":16,"items":52,"replay":16,"groups":3,"practiceGroups":2},"14":{"outcomes":23,"items":87,"replay":23,"groups":4,"practiceGroups":4},"15":{"outcomes":22,"items":67,"replay":8,"groups":5,"practiceGroups":5}};

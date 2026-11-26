@@ -27,7 +27,8 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC15_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB c1be91f17044d89474d6399308385b4f1fbc7aeb; Q18_RECEIPT_BLOB e84c2f66c9b95d63fbef8d5f0e1493f004036164; AUTHORING_PR #846; PUBLIC_PROJECTION_ONLY -->
+
+<!-- Q18 SOURCE_LEARNER_BLOB 11d2106a7ed77b801c86420503dca929544dc076; Q18_RECEIPT_BLOB 3063f34811455faea336d5b9f7109466e184a820; AUTHORING_PR #846; PUBLIC_PROJECTION_ONLY -->
 
 # Tự kiểm tra
 
@@ -37,35 +38,35 @@ Hãy tự giải đủ **8 câu** ra giấy, vẽ hoặc mô tả các mặt và
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP15-P03; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P03; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 1.** d=(1+t,2,3+2t); (P): z=0. Xác định d∩(P). Đường e=(1+t,2,3) và f=(1+t,2,0) thuộc loại nào so với (P)?
+**Câu 1.** Đường và mặt. \(d=(1+t;2;3+2t); (P): z=0\). Xác định \(d\cap (P)\). Đường \(e=(1+t;2;3)\) và \(f=(1+t;2;0)\) thuộc loại nào so với (P)?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP15-P06; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P06; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 2.** Cho A,B phân biệt thuộc (P), M∈AB, C nằm ngoài (P). Hỏi M∈(P) không và AC⊂(P) có đúng không?
+**Câu 2.** Cho A,B phân biệt thuộc \((P), M\in AB, C\) nằm ngoài (P). Hỏi \(M\in (P)\) không và \(AC\subset (P)\) có đúng không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP15-P09; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P09; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 3.** Cho d:(x,y,z)=(2+t,1,4−2t), (P):z=0. Tìm d∩(P); đường e:(t,1,4) có cắt (P) không?
+**Câu 3.** Cho \(d:(x;y;z)=(2+t;1;4-2t), (P):z=0\). Tìm \(d\cap (P)\); đường \(e:(t;1;4)\) có cắt (P) không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP15-P12; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P12; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 4.** Trong tam giác SAB, M∈SA, N∈SB với SM:MA=2:3 và SN:NB=2:3. Chứng minh MN∥AB.
+**Câu 4.** Trong tam giác \(SAB, M\in SA, N\in SB\) với \(SM:MA=2:3\) và \(SN:NB=2:3\). Chứng minh \(MN\parallel AB\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP15-P14; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P14; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 5.** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC) và nêu vì sao không thể bỏ điều kiện MN nằm ngoài mặt đáy.
+**Câu 5.** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh \(MN\parallel (ABC)\) và nêu vì sao không thể bỏ điều kiện MN nằm ngoài mặt đáy.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP15-P17; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P17; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 6.** Phân loại: (P):z=0, (Q):z=−3, (R):x=0, (T):3z=0; xét (P) với từng mặt còn lại.
+**Câu 6.** Phân loại: \((P):z=0, (Q):z=-3, (R):x=0, (T):3z=0\); xét (P) với từng mặt còn lại.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP15-P20; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P20; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 7.** Chiếu song song theo (1,0,2) lên (P):z=0. Tìm ảnh M(3,1,4) và giải thích vì sao không dùng T(x,y,z)=(x−z,y,0).
+**Câu 7.** Chiếu song song theo \((1;0;2)\) lên \((P):z=0\). Tìm ảnh \(M(3;1;4)\) và giải thích vì sao không dùng \(T(x;y;z)=(x-z;y;0)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP15-P21; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P21; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 8.** Qua phép chiếu T(x,y,z)=(x−z,y,0), ảnh đường d:(x,y,z)=(2+t,5,−1+t) là đường hay điểm?
+**Câu 8.** Qua phép chiếu \(T(x;y;z)=(x-z;y;0)\), ảnh đường \(d:(x;y;z)=(2+t;5;-1+t)\) là đường hay điểm?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
