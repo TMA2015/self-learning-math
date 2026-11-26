@@ -3034,22 +3034,22 @@ Thay tọa độ vào P: \((1+t)+(2-t)+t=3+t=4\Rightarrow t=1\). Khi ấy \(M(1)
 ## 6. Góc và quan hệ vị trí
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 150.** u=(1,0,0),v=(0,1,0). Góc?
+**Bài luyện 150.** \(\vec u=(1;0;0),\ \vec v=(0;1;0)\). Góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 90°
-- **Lời giải có suy luận:** Dot=0 nên cosθ=0.
+- **Đáp án:** \(90^\circ\)
+- **Lời giải có suy luận:** \(\vec u\cdot\vec v=0\) nên \(\cos\theta=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 151.** u=(1,1,0),v=(1,-1,0). Góc?
+**Bài luyện 151.** \(\vec u=(1;1;0),\ \vec v=(1;-1;0)\). Góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 90°
-- **Lời giải có suy luận:** Dot=1−1=0.
+- **Đáp án:** \(90^\circ\)
+- **Lời giải có suy luận:** \(\vec u\cdot\vec v=1-1=0\).
 
 </details>
 
@@ -3058,199 +3058,199 @@ Thay tọa độ vào P: \((1+t)+(2-t)+t=3+t=4\Rightarrow t=1\). Khi ấy \(M(1)
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 45°
-- **Lời giải có suy luận:** Cosθ=1/√2, góc45°.
+- **Đáp án:** \(45^\circ\)
+- **Lời giải có suy luận:** \(\cos\theta=\frac1{\sqrt2}\), góc\(45^\circ\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 153.** Góc giữa u=(1,1,1) và v=(1,1,-1). Tính cos góc, giải thích trị tuyệt đối.
+**Bài luyện 153.** Góc giữa \(\vec u=(1;1;1)\) và \(\vec v=(1;1;-1)\). Tính cos góc, giải thích trị tuyệt đối.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** cosθ=1/3; θ=arccos(1/3)
-- **Lời giải có suy luận:** dot=1+1−1=1; hai chuẩn √3, cos=|1|/3. Đảo chiều v không đổi góc đường thẳng.
+- **Đáp án:** \(\cos\theta=\frac13;\ \theta=\arccos\frac13\)
+- **Lời giải có suy luận:** \(\vec u\cdot\vec v=1+1-1=1\); hai chuẩn \(\sqrt3\), \(\cos\theta=\frac{|1|}{3}\). Đảo chiều v không đổi góc đường thẳng.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ tìm đúng hai vectơ hướng và tích vô hướng; 1đ tính hai chuẩn; 1đ lấy trị tuyệt đối và kết luận cos/góc; 1đ giải thích góc đường thẳng không tù.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P31; PRIMARY_OUTCOME: TOP18-O31; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 154.** u=(1,1,0),v=(1,−1,0). Tính góc giữa hai đường.
+**Bài luyện 154.** \(\vec u=(1;1;0),\ \vec v=(1;-1;0)\). Tính góc giữa hai đường.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Tích vô hướng 0, nên góc 90°. Hai hướng đều khác không.
+Tích vô hướng 0, nên góc \(90^\circ\). Hai hướng đều khác không.
 
 **Đường khắc phục D6:** Nếu ra góc tù từ cos âm, nhớ góc giữa **đường** lấy giá trị không tù bằng trị tuyệt đối.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 155.** u=(1,0,0) và mặt z=0 tạo góc?
+**Bài luyện 155.** \(\vec u=(1;0;0)\) và mặt \(z=0\) tạo góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 0°
-- **Lời giải có suy luận:** u·n=0 nên sinθ=0.
+- **Đáp án:** \(0^\circ\)
+- **Lời giải có suy luận:** \(\vec u\cdot\vec n=0\) nên \(\sin\theta=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 156.** u=(0,0,1) và mặt z=0 tạo góc?
+**Bài luyện 156.** \(\vec u=(0;0;1)\) và mặt \(z=0\) tạo góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 90°
-- **Lời giải có suy luận:** |u·n|/(|u||n|)=1.
+- **Đáp án:** \(90^\circ\)
+- **Lời giải có suy luận:** \(\frac{|\vec u\cdot\vec n|}{\lVert\vec u\rVert\lVert\vec n\rVert}=1\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 157.** Đường dốc hướng (3,0,4) so với nền z=0 có góc?
+**Bài luyện 157.** Đường dốc hướng \((3;0;4)\) so với nền \(z=0\) có góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** arcsin(4/5) ≈53.13°
-- **Lời giải có suy luận:** Độ tăng theo pháp tuyến z là4 trên quãng dài5, sinθ=4/5.
+- **Đáp án:** \(\arcsin\frac45\approx53{,}13^\circ\)
+- **Lời giải có suy luận:** Độ tăng theo pháp tuyến z là4 trên quãng dài5, \(\sin\theta=\frac45\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 158.** u=(1,2,2), (P):z=0. Tìm sin và góc đường–mặt.
+**Bài luyện 158.** \(\vec u=(1;2;2)\), (P):\(z=0\). Tìm sin và góc đường–mặt.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** sinθ=2/3; θ=arcsin(2/3)
-- **Lời giải có suy luận:** n=(0,0,1), |u|=3, dot=2 nên sinθ=2/3.
+- **Đáp án:** \(\sin\theta=\frac23;\ \theta=\arcsin\frac23\)
+- **Lời giải có suy luận:** \(\vec n=(0;0;1)\), \(\lVert\vec u\rVert=3\), \(\vec u\cdot\vec n=2\) nên \(\sin\theta=\frac23\).
 - **Rubric Written /5 (chấm theo từng bước):** 2đ nhận hướng u và pháp tuyến n; 1đ tính tích vô hướng và chuẩn; 1đ dùng đúng sin để tìm góc; 1đ kiểm trường hợp song song/vuông góc.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P32; PRIMARY_OUTCOME: TOP18-O32; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 159.** Đường có hướng u=(3,4,0), mặt z=0. Góc giữa đường và mặt?
+**Bài luyện 159.** Đường có hướng \(\vec u=(3;4;0)\), mặt \(z=0\). Góc giữa đường và mặt?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-0°, do n=(0,0,1), u·n=0. Chưa biết đường nằm trong hay song song phân biệt nếu chưa kiểm điểm gốc.
+\(0^\circ\), do \(\vec n=(0;0;1)\), \(\vec u\cdot\vec n=0\). Chưa biết đường nằm trong hay song song phân biệt nếu chưa kiểm điểm gốc.
 
-**Đường khắc phục D6:** Không nhầm góc pháp tuyến–đường với góc đường–mặt; trường hợp suy biến hình chiếu khi θ=90° vẫn xác định góc 90°.
+**Đường khắc phục D6:** Không nhầm góc pháp tuyến–đường với góc đường–mặt; trường hợp suy biến hình chiếu khi \(\theta=90^\circ\) vẫn xác định góc \(90^\circ\).
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-W04; PRIMARY_OUTCOME: TOP18-O32; ROLE: TOPIC_WRITTEN; RUBRIC_ORIGINAL_UNCHANGED -->
-**Bài luyện 160.** Một đường d có vectơ chỉ phương u=(1,0,√3); mặt phẳng P:z=0. Tính góc giữa d và P. So sánh với góc giữa u và pháp tuyến n=(0,0,1), giải thích vì sao hai góc khác nhau.
+**Bài luyện 160.** Một đường d có vectơ chỉ phương \(\vec u=(1;0;\sqrt3)\); mặt phẳng P:\(z=0\). Tính góc giữa d và P. So sánh với góc giữa u và pháp tuyến \(\vec n=(0;0;1)\), giải thích vì sao hai góc khác nhau.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-u·n=√3, |u|=2, |n|=1 ⇒ sinθ=√3/2, nên góc đường–mặt θ=60°. Góc nhọn giữa u và pháp tuyến là arccos(√3/2)=30°, tức hai góc phụ nhau. Nếu dùng cos của u,n để gọi trực tiếp góc đường–mặt thì sai.
+\(\vec u\cdot\vec n=\sqrt3\), \(\lVert\vec u\rVert=2\), \(\lVert\vec n\rVert=1\) ⇒ \(\sin\theta=\frac{\sqrt3}{2}\), nên góc đường–mặt \(\theta=60^\circ\). Góc nhọn giữa u và pháp tuyến là \(\arccos\frac{\sqrt3}{2}=30^\circ\), tức hai góc phụ nhau. Nếu dùng cos của u,n để gọi trực tiếp góc đường–mặt thì sai.
 
 **Rubric 4 điểm (mỗi tiêu chí 1 điểm):**
-- Nhận diện pháp tuyến n=(0,0,1) và hướng u khác không — **1 điểm**.
-- Viết đúng sinθ=|u·n|/(|u||n|) — **1 điểm**.
-- Tính được θ=60° và góc với pháp tuyến 30° — **1 điểm**.
+- Nhận diện pháp tuyến \(\vec n=(0;0;1)\) và hướng u khác không — **1 điểm**.
+- Viết đúng \(\sin\theta=\frac{|\vec u\cdot\vec n|}{\lVert\vec u\rVert\lVert\vec n\rVert}\) — **1 điểm**.
+- Tính được \(\theta=60^\circ\) và góc với pháp tuyến \(30^\circ\) — **1 điểm**.
 - Giải thích vì sao dùng sin/hình chiếu và nêu giới hạn công thức — **1 điểm**.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 161.** Hai mặt z=0 và x=0 tạo góc?
+**Bài luyện 161.** Hai mặt \(z=0\) và \(x=0\) tạo góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 90°
+- **Đáp án:** \(90^\circ\)
 - **Lời giải có suy luận:** Pháp tuyến vuông góc.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 162.** Hai mặt x+y=0 và x−y=0 tạo góc?
+**Bài luyện 162.** Hai mặt \(x+y=0\) và \(x-y=0\) tạo góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 90°
-- **Lời giải có suy luận:** n1·n2=1−1=0.
+- **Đáp án:** \(90^\circ\)
+- **Lời giải có suy luận:** \(\vec n_1\cdot\vec n_2=1-1=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 163.** Mái z=x và nền z=0 tạo góc?
+**Bài luyện 163.** Mái \(z=x\) và nền \(z=0\) tạo góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 45°
-- **Lời giải có suy luận:** n_mái=(-1,0,1),n_nền=(0,0,1), cos=1/√2.
+- **Đáp án:** \(45^\circ\)
+- **Lời giải có suy luận:** \(\vec n_{\text{mái}}=(-1;0;1),\ \vec n_{\text{nền}}=(0;0;1)\), \(\cos\theta=\frac1{\sqrt2}\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 164.** Góc giữa P:x+2y+2z=0 và Q:z=0?
+**Bài luyện 164.** Góc giữa \((P):x+2y+2z=0\) và Q:\(z=0\)?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** cosθ=2/3, θ=arccos(2/3)
-- **Lời giải có suy luận:** nP=(1,2,2), |nP|=3, nQ=(0,0,1), cos=2/3.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ tìm đúng pháp tuyến của cả hai mặt; 1đ tính dot/chuẩn; 1đ dùng cos trị tuyệt đối; 1đ so sánh với công thức góc đường–mặt.
+- **Đáp án:** \(\cos\theta=\frac23,\ \theta=\arccos\frac23\)
+- **Lời giải có suy luận:** \(\vec n_P=(1;2;2)\), \(\lVert\vec n_P\rVert=3\), \(\vec n_Q=(0;0;1)\), \(\cos\theta=\frac23\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ tìm đúng pháp tuyến của cả hai mặt; 1đ tính tích vô hướng/chuẩn; 1đ dùng cos trị tuyệt đối; 1đ so sánh với công thức góc đường–mặt.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P33; PRIMARY_OUTCOME: TOP18-O33; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 165.** P:x+y=0,Q:x−y=1. Tính góc hai mặt.
+**Bài luyện 165.** \((P):x+y=0,\ (Q):x-y=1\). Tính góc hai mặt.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Pháp tuyến n1=(1,1,0),n2=(1,−1,0), dot=0 nên góc 90°.
+Pháp tuyến \(\vec n_1=(1;1;0),\ \vec n_2=(1;-1;0)\), \(\vec n_1\cdot\vec n_2=0\) nên góc \(90^\circ\).
 
-**Đường khắc phục D6:** Kiểm chọn n≠0; nhớ góc giữa hai mặt là góc nhỏ, không lệ thuộc hướng n.
+**Đường khắc phục D6:** Kiểm chọn \(\vec n\ne\vec0\); nhớ góc giữa hai mặt là góc nhỏ, không lệ thuộc hướng n.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 166.** u=(0,0,1), mặt z=0. Quan hệ hướng?
+**Bài luyện 166.** \(\vec u=(0;0;1)\), mặt \(z=0\). Quan hệ hướng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Đường vuông góc mặt
-- **Lời giải có suy luận:** u cùng phương n=(0,0,1), góc90°.
+- **Lời giải có suy luận:** u cùng phương \(\vec n=(0;0;1)\), góc\(90^\circ\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 167.** u=(1,0,0), mặt z=0. Góc?
+**Bài luyện 167.** \(\vec u=(1;0;0)\), mặt \(z=0\). Góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 0°
-- **Lời giải có suy luận:** u·n=0, hướng song song mặt.
+- **Đáp án:** \(0^\circ\)
+- **Lời giải có suy luận:** \(\vec u\cdot\vec n=0\), hướng song song mặt.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 168.** Thang máy đi theo hướng Oz; sàn nằm z=2. Góc đường với sàn?
+**Bài luyện 168.** Thang máy đi theo hướng Oz; sàn nằm \(z=2\). Góc đường với sàn?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 90°
+- **Đáp án:** \(90^\circ\)
 - **Lời giải có suy luận:** Oz cùng phương pháp tuyến mặt sàn.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 169.** u=(1,1,0) và P:x−y=0. Chứng minh góc0 và cho biết điều kiện để đường nằm trọn trong P.
+**Bài luyện 169.** \(\vec u=(1;1;0)\) và \((P):x-y=0\). Chứng minh góc \(0^\circ\) và cho biết điều kiện để đường nằm trọn trong P.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** u·n=0; phải có điểm xuất phát nằm trong P
-- **Lời giải có suy luận:** n=(1,-1,0); u·n=1−1=0. Nếu M0∈P thì mọi M0+t u∈P, ngược lại song song phân biệt.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ tính dot u·n; 1đ phân biệt u·n=0 và u∥n; 1đ kiểm điểm gốc để nói nằm trong hay song song; 1đ kết luận góc đúng.
+- **Đáp án:** \(\vec u\cdot\vec n=0\); phải có điểm xuất phát nằm trong P
+- **Lời giải có suy luận:** \(\vec n=(1;-1;0)\); \(\vec u\cdot\vec n=1-1=0\). Nếu \(M_0\in(P)\) thì mọi \(M_0+t\vec u\in(P)\), ngược lại song song phân biệt.
+- **Rubric Written /5 (chấm theo từng bước):** 2đ tính tích vô hướng \(\vec u\cdot\vec n\); 1đ phân biệt \(\vec u\cdot\vec n=0\) và \(\vec u\parallel\vec n\); 1đ kiểm điểm gốc để nói nằm trong hay song song; 1đ kết luận góc đúng.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P34; PRIMARY_OUTCOME: TOP18-O34; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 170.** Mặt x=0 và đường d(t)=(1,t,0). Quan hệ?
+**Bài luyện 170.** Mặt \(x=0\) và đường \(d(t)=(1;t;0)\). Quan hệ?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song song phân biệt.
+\(\vec n=(1;0;0),\ \vec u=(0;1;0)\), \(\vec n\cdot\vec u=0\) và điểm \((1;0;0)\) không thuộc \(x=0\), nên song song phân biệt.
 
 **Đường khắc phục D6:** Một đẳng thức hướng không quyết định vị trí; kiểm điểm/đường thuộc nhau.
 
@@ -3261,28 +3261,28 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 45°
-- **Lời giải có suy luận:** Độ cao1 trên độ dài√2.
+- **Đáp án:** \(45^\circ\)
+- **Lời giải có suy luận:** Độ cao1 trên độ dài\(\sqrt2\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 172.** Pháp tuyến mái n=(0,3,4); mặt đất n0=(0,0,1). Góc hai mặt?
+**Bài luyện 172.** Pháp tuyến mái \(\vec n=(0;3;4)\); mặt đất \(\vec n_0=(0;0;1)\). Góc hai mặt?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** arccos(4/5) ≈36.87°
-- **Lời giải có suy luận:** Cos góc giữa pháp tuyến =4/5.
+- **Đáp án:** \(\arccos\frac45\approx36{,}87^\circ\)
+- **Lời giải có suy luận:** Cos góc giữa pháp tuyến \(=\frac45\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 173.** Một mái có n=(0,3,4) và nền z=0; độ nghiêng?
+**Bài luyện 173.** Một mái có \(\vec n=(0;3;4)\) và nền \(z=0\); độ nghiêng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** ≈36.87°
-- **Lời giải có suy luận:** Lấy arccos(|n·n0|/(|n||n0|))=arccos(4/5).
+- **Đáp án:** \(\approx36{,}87^\circ\)
+- **Lời giải có suy luận:** Lấy \(\arccos\frac{|\vec n\cdot\vec n_0|}{\lVert\vec n\rVert\lVert\vec n_0\rVert}=\arccos\frac45\).
 
 </details>
 
@@ -3291,9 +3291,9 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** sinθ=4/5, độ cao8m
-- **Lời giải có suy luận:** Chuẩn u=10, thành phần z=8; sinθ=8/10=4/5, độ cao tăng8m.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định độ dài dốc và thành phần độ cao; 1đ thiết lập sinθ=Δh/L; 1đ kết quả góc/độ cao; 1đ kiểm đơn vị và ý nghĩa thực tiễn.
+- **Đáp án:** \(\sin\theta=\frac45\), độ cao8m
+- **Lời giải có suy luận:** Chuẩn \(\lVert\vec u\rVert=10\), thành phần \(z=8\); \(\sin\theta=\frac8{10}=\frac45\), độ cao tăng8m.
+- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định độ dài dốc và thành phần độ cao; 1đ thiết lập \(\sin\theta=\frac{\Delta h}{L}\); 1đ kết quả góc/độ cao; 1đ kiểm đơn vị và ý nghĩa thực tiễn.
 
 </details>
 
@@ -3302,7 +3302,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Độ dài cáp √(8²+6²)=10 m, sinθ=6/10=3/5.
+Độ dài cáp \(\sqrt{8^2+6^2}=10\) m, \(\sin\theta=\frac6{10}=\frac35\).
 
 **Đường khắc phục D6:** Phân biệt quãng ngang và chiều dài đường xiên; nếu có thể hãy kiểm bằng tam giác vuông.
 
