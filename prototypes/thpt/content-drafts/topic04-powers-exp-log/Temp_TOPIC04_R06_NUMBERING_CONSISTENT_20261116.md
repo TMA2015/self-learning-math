@@ -24,17 +24,17 @@ Ta biết \(2^3=2\cdot2\cdot2=8\): số mũ dương đếm số lần nhân cùn
 
 > **CÔNG THỨC — Số mũ không và số mũ nguyên âm.** Với \(a\ne0\) và \(n\) là số nguyên dương, \(a^0=1\), \(a^{-n}=\dfrac1{a^n}\). Riêng \(0^0\) và \(0^{-n}\) (với \(n>0\)) không xác định; số \(0^n=0\) vẫn có nghĩa khi \(n\) là số nguyên dương. Không được bỏ điều kiện \(a\ne0\) khi số mũ bằng 0 hoặc âm.
 
-Lấy \((2/3)^{-2}\). Số mũ âm yêu cầu lấy nghịch đảo rồi bình phương: \((3/2)^2=9/4\), vẫn là một số **dương**. Tương tự, số rất nhỏ \(0{,}0000075\) có thể viết thành \(7{,}5\cdot10^{-6}\); dấu trừ thuộc **số mũ**, không phải dấu của số. Trong ký hiệu khoa học chuẩn, phần hệ số phải có trị tuyệt đối từ 1 đến dưới 10.
+Lấy \(\left(\frac23\right)^{-2}\). Số mũ âm yêu cầu lấy nghịch đảo rồi bình phương: \(\left(\frac32\right)^2=\frac94\), vẫn là một số **dương**. Tương tự, số rất nhỏ \(0{,}0000075\) có thể viết thành \(7{,}5\cdot10^{-6}\); dấu trừ thuộc **số mũ**, không phải dấu của số. Trong ký hiệu khoa học chuẩn, phần hệ số phải có trị tuyệt đối từ 1 đến dưới 10.
 
 ![Đồ thị số mũ âm, bằng không và dương](../../content-drafts/svg/FIG-G11-CHVI-B18-01_R00.svg)
 
-*Quan sát hình:* Quan sát các giá trị 2^x ở x=−2,−1,0,1,2: số mũ âm cho số dương nhỏ hơn 1, không phải kết quả âm.
+*Quan sát hình:* Quan sát các giá trị \(2^x\) tại \(x=-2,-1,0,1,2\): số mũ âm cho số dương nhỏ hơn 1, không phải kết quả âm.
 
 **Ví dụ**
 
 **Đề bài.** Tính \(\left(\frac34\right)^{-2}\cdot\frac9{16}\). Giải thích vì sao \(0^{-1}\) không có nghĩa.
 
-**Lời giải.** Vì \(3/4\ne0\), ta lấy nghịch đảo: \((3/4)^{-2}=(4/3)^2=16/9\). Tích với \(9/16\) bằng \(1\). Còn \(0^{-1}=1/0\) là phép chia cho 0, không xác định.
+**Lời giải.** Vì \(\frac34\ne0\), ta lấy nghịch đảo: \(\left(\frac34\right)^{-2}=\left(\frac43\right)^2=\frac{16}{9}\). Tích với \(\frac9{16}\) bằng 1. Còn nếu áp dụng quy tắc số mũ âm cho \(0^{-1}\), ta sẽ gặp phép chia cho 0, không xác định.
 
 **Vận dụng**
 
@@ -42,7 +42,7 @@ Tính \(5^{-2}\cdot25\). Biểu thức \(0^{-1}\) có nghĩa không? Vì sao?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(5^{-2}\cdot25=\frac1{25}\cdot25=1\). \(0^{-1}\) không xác định vì dẫn tới phép chia cho 0. Nếu em nhầm dấu âm của số mũ thành dấu âm của giá trị, hãy so \(-2^2=-4\) với \(2^{-2}=1/4\).
+\(5^{-2}\cdot25=\frac1{25}\cdot25=1\). \(0^{-1}\) không xác định vì dẫn tới phép chia cho 0. Nếu em nhầm dấu âm của số mũ thành dấu âm của giá trị, hãy so \(-2^2=-4\) với \(2^{-2}=\frac14\).
 
 
 **Kiểm lỗi**
@@ -59,40 +59,40 @@ Ký hiệu căn bậc chẵn nói đến một giá trị hay tất cả nghiệ
 
 > **ĐỊNH NGHĨA — Căn bậc chẵn, căn bậc lẻ và mũ hữu tỉ.** Số thực \(b\) là **căn bậc \(n\)** của \(a\) nếu \(b^n=a\), trong đó \(n\) là số nguyên dương. Nếu \(n\) **lẻ**, mỗi \(a\in\mathbb R\) có đúng một căn bậc \(n\), kể cả \(a<0\). Nếu \(n\) **chẵn**, \(a>0\) có hai căn đối nhau, \(a=0\) có duy nhất căn \(0\), còn \(a<0\) không có căn thực; ký hiệu \(\sqrt[n]{a}\) luôn chỉ **căn số học không âm** khi \(n\) chẵn.
 
-Với cơ số \(a>0\), số hữu tỉ \(r=m/n\) (\(m\in\mathbb Z,\ n\in\mathbb N^*\)) cho \(a^r=\sqrt[n]{a^m}=(\sqrt[n]{a})^m\). Khi \(m<0\), lũy thừa vẫn có nghĩa vì \(a>0\), và \(a^{-m/n}=1/a^{m/n}\) với \(m>0\). Không áp dụng tùy tiện các quy tắc lũy thừa số mũ thực cho cơ số âm.
+Với cơ số \(a>0\), số hữu tỉ \(r=\frac mn\) (\(m\in\mathbb Z,\ n\in\mathbb N^*\)) cho \(a^r=\sqrt[n]{a^m}=(\sqrt[n]{a})^m\). Khi \(m<0\), lũy thừa vẫn có nghĩa vì \(a>0\), và \(a^{-\frac mn}=\frac1{a^{\frac mn}}\) với \(m>0\). Không áp dụng tùy tiện các quy tắc lũy thừa số mũ thực cho cơ số âm.
 
 Từ định nghĩa căn bậc \(n\), ta suy ra những tính chất hữu ích để rút gọn. Khi các căn đều có nghĩa, **căn của tích** là tích các căn và **căn của thương** là thương các căn (mẫu khác \(0\)); nhờ đó có thể gộp những căn cùng bậc rồi tính.
 
-> **TÍNH CHẤT — Phép tính với căn bậc \(n\).** Với \(n,k\) nguyên dương, \(m\in\mathbb Z\) và giả thiết **tất cả biểu thức có nghĩa**,
-> \[
-> \sqrt[n]{a}\sqrt[n]{b}=\sqrt[n]{ab},\qquad
-> \frac{\sqrt[n]{a}}{\sqrt[n]{b}}=\sqrt[n]{\frac ab}\quad(b\ne0),
-> \]
-> \[
-> (\sqrt[n]{a})^m=\sqrt[n]{a^m},\qquad
-> \sqrt[n]{\sqrt[k]{a}}=\sqrt[nk]{a}.
-> \]
+> **TÍNH CHẤT — Phép tính với căn bậc \(n\).** Với \(n,k\) nguyên dương, \(m\in\mathbb Z\) và giả thiết **tất cả biểu thức có nghĩa**, ta có:
+>
+> - \(\sqrt[n]{a}\sqrt[n]{b}=\sqrt[n]{ab}\).
+> - \(\frac{\sqrt[n]{a}}{\sqrt[n]{b}}=\sqrt[n]{\frac ab}\) với \(b\ne0\).
+> - \((\sqrt[n]{a})^m=\sqrt[n]{a^m}\).
+> - \(\sqrt[n]{\sqrt[k]{a}}=\sqrt[nk]{a}\).
+>
+>
+>
 > Đặc biệt, \(\sqrt[n]{a^n}=a\) nếu \(n\) **lẻ**, nhưng \(\sqrt[n]{a^n}=|a|\) nếu \(n\) **chẵn**. Với căn bậc chẵn phải bảo đảm các số dưới dấu căn không âm; với số mũ âm còn phải loại cơ số bằng \(0\).
 
 Vì sao ở bậc chẵn lại là giá trị tuyệt đối? Cả \(7^2\) và \((-7)^2\) đều bằng \(49\), nhưng \(\sqrt{49}=7\) là căn số học không âm. Do đó \(\sqrt{(-7)^2}=7=|-7|\), **không** phải \(-7\). Còn với căn bậc lẻ, \(\sqrt[3]{-125}\cdot\sqrt[3]{8}=(-5)\cdot2=-10=\sqrt[3]{-1000}\), đúng quy tắc tích ngay cả khi số dưới căn âm.
 
-Chẳng hạn, 81^(3/4)=(⁴√81)³=3³=27. Nhưng ⁴√16=2 còn x⁴=16 có x=±2; lý do là ký hiệu căn và tập nghiệm phương trình có vai trò khác nhau.
+Chẳng hạn, \(81^{\frac34}=(\sqrt[4]{81})^3=3^3=27\). Nhưng \(\sqrt[4]{16}=2\) còn \(x^4=16\) có \(x=\pm2\); lý do là ký hiệu căn và tập nghiệm phương trình có vai trò khác nhau.
 
 **Ví dụ**
 
-**Đề bài.** Tính \(16^{3/4}\); phân biệt \(\sqrt[4]{81}\) với mọi nghiệm của \(x^4=81\).
+**Đề bài.** Tính \(16^{\frac34}\); phân biệt \(\sqrt[4]{81}\) với mọi nghiệm của \(x^4=81\).
 
-**Lời giải.** Vì \(16>0\), \(16^{3/4}=(\sqrt[4]{16})^3=2^3=8\). Ký hiệu \(\sqrt[4]{81}=3\) là căn số học không âm; phương trình \(x^4=81\) có hai nghiệm thực \(x=\pm3\).
+**Lời giải.** Vì \(16>0\), \(16^{\frac34}=(\sqrt[4]{16})^3=2^3=8\). Ký hiệu \(\sqrt[4]{81}=3\) là căn số học không âm; phương trình \(x^4=81\) có hai nghiệm thực \(x=\pm3\).
 
 **Vận dụng**
 
-Tính 27^(2/3) và ³√(−27).
+Tính \(27^{\frac23}\) và \(\sqrt[3]{-27}\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-27^(2/3)=3²=9; ³√(−27)=−3 vì (−3)³=−27.
+\(27^{\frac23}=3^2=9\); \(\sqrt[3]{-27}=-3\) vì \((-3)^3=-27\).
 
-Nếu chỉ nhận nghiệm dương khi giải x⁴=16, thử số đối; nếu đổi dấu căn bậc chẵn, nhớ căn số học ≥0.
+Nếu chỉ nhận nghiệm dương khi giải \(x^4=16\), thử số đối; nếu đổi dấu căn bậc chẵn, nhớ căn số học không âm.
 
 
 **Kiểm lỗi**
@@ -113,21 +113,21 @@ Tại sao không thể hiểu \(a^{\sqrt2}\) là “nhân \(a\) đúng \(\sqrt2\
 
 Khi cần **tính gần đúng** một lũy thừa có số mũ vô tỉ, máy tính cầm tay có thể dùng phím lũy thừa: nhập cơ số dương, nhập số mũ (có thể chứa \(\sqrt{\phantom x}\)), rồi yêu cầu kết quả. Chẳng hạn, \(3^{\sqrt2}\approx4{,}7288\) nếu làm tròn đến bốn chữ số thập phân. Kết quả máy tính là **xấp xỉ**, không thay cho lời giải thích tính đơn điệu khi cần so sánh chính xác hai lũy thừa.
 
-Xét ví dụ: Vì √2<3/2 và 2>1, 2^(√2)<2^(3/2); còn vì 0<1/2<1, (1/2)^(√2)>(1/2)^(3/2). Cùng số mũ nhưng hai cơ số cho chiều ngược.
+Xét ví dụ: Vì \(\sqrt2<\frac32\) và \(2>1\), \(2^{\sqrt2}<2^{\frac32}\); còn vì \(0<\frac12<1\), \(\left(\frac12\right)^{\sqrt2}>\left(\frac12\right)^{\frac32}\). Cùng hai số mũ nhưng hai cơ số cho chiều so sánh ngược nhau.
 
 **Ví dụ**
 
-**Đề bài.** So sánh \(3^{\sqrt2}\) với \(3^{3/2}\), rồi so sánh \((1/3)^{\sqrt2}\) với \((1/3)^{3/2}\).
+**Đề bài.** So sánh \(3^{\sqrt2}\) với \(3^{\frac32}\), rồi so sánh \(\left(\frac13\right)^{\sqrt2}\) với \(\left(\frac13\right)^{\frac32}\).
 
-**Lời giải.** Vì \((\sqrt2)^2=2<9/4=(3/2)^2\) và cả hai số không âm, \(\sqrt2<3/2\). Cơ số \(3>1\) làm lũy thừa tăng nên \(3^{\sqrt2}<3^{3/2}\). Cơ số \(1/3\in(0,1)\) làm lũy thừa giảm nên chiều so sánh đảo: \((1/3)^{\sqrt2}>(1/3)^{3/2}\).
+**Lời giải.** Vì \((\sqrt2)^2=2<\frac94=\left(\frac32\right)^2\) và cả hai số không âm, \(\sqrt2<\frac32\). Cơ số \(3>1\) làm lũy thừa tăng nên \(3^{\sqrt2}<3^{\frac32}\). Cơ số \(\frac13\in(0;1)\) làm lũy thừa giảm nên chiều so sánh đảo: \(\left(\frac13\right)^{\sqrt2}>\left(\frac13\right)^{\frac32}\).
 
 **Vận dụng**
 
-So sánh (1/3)^(√3) với (1/3)^2.
+So sánh \(\left(\frac13\right)^{\sqrt3}\) với \(\left(\frac13\right)^2\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-√3<2; cơ số 1/3 làm hàm nghịch biến nên (1/3)^(√3)>(1/3)^2.
+\(\sqrt3<2\); hàm mũ cơ số \(\frac13\) nghịch biến nên \(\left(\frac13\right)^{\sqrt3}>\left(\frac13\right)^2\).
 
 Nếu đảo dấu sai, dùng x=0 và x=1 để quan sát 1 và cơ số a; xem lại mục Kiến thức 1.3 về chiều tăng/giảm của lũy thừa khi cơ số lớn hơn 1 hoặc nằm giữa 0 và 1.
 
@@ -144,25 +144,25 @@ Nếu so sánh mũ thực mà giữ chiều như cơ số lớn hơn 1, quay l�
 
 Một biểu thức rút gọn thành 1 có thể vẫn vô nghĩa tại một giá trị cơ số không?
 
-> **TÍNH CHẤT — Quy tắc lũy thừa và điều kiện sử dụng.** Các quy tắc tính lũy thừa chỉ đáng tin khi đi kèm điều kiện của cơ số. Nén nhiều phép nhân/chia bằng quy tắc số mũ rất nhanh, nhưng rút gọn xong không được quên giá trị ban đầu vô nghĩa. Ta bắt đầu từ cộng/trừ số mũ hữu tỉ, mẫu số khác 0. Với \(a>0\) và \(r,s\in\mathbb R\): \(a^ra^s=a^{r+s}\), \(\dfrac{a^r}{a^s}=a^{r-s}\), \((a^r)^s=a^{rs}\). Với \(a,b>0\), còn có \((ab)^r=a^rb^r\) và \(\left(\dfrac ab\right)^r=\dfrac{a^r}{b^r}\). Đặc biệt khi số mũ \(m\in\mathbb Z\), các quy tắc tích/thương vẫn áp dụng cho \(a,b\ne0\) dù cơ số âm; điều này **không** cho phép mở rộng tùy tiện sang mọi số mũ thực của cơ số âm. Với biểu thức gốc có chia/căn thì kiểm điều kiện trước; không có quy tắc a^r+a^s=a^(r+s).
+> **TÍNH CHẤT — Quy tắc lũy thừa và điều kiện sử dụng.** Các quy tắc tính lũy thừa chỉ đáng tin khi đi kèm điều kiện của cơ số. Nén nhiều phép nhân/chia bằng quy tắc số mũ rất nhanh, nhưng rút gọn xong không được quên giá trị ban đầu vô nghĩa. Ta bắt đầu từ cộng/trừ số mũ hữu tỉ, mẫu số khác 0. Với \(a>0\) và \(r,s\in\mathbb R\): \(a^ra^s=a^{r+s}\), \(\dfrac{a^r}{a^s}=a^{r-s}\), \((a^r)^s=a^{rs}\). Với \(a,b>0\), còn có \((ab)^r=a^rb^r\) và \(\left(\dfrac ab\right)^r=\dfrac{a^r}{b^r}\). Đặc biệt khi số mũ \(m\in\mathbb Z\), các quy tắc tích/thương vẫn áp dụng cho \(a,b\ne0\) dù cơ số âm; điều này **không** cho phép mở rộng tùy tiện sang mọi số mũ thực của cơ số âm. Với biểu thức gốc có chia/căn thì kiểm điều kiện trước; không có quy tắc \(a^r+a^s=a^{r+s}\).
 
-Chẳng hạn, E=a^(3/2)·a^(−1/2)/a=a^(3/2−1/2−1)=a^0=1 khi a>0. Không nhận a=0 dù kết quả rút gọn là 1, vì biểu thức gốc chia cho a.
+Chẳng hạn, \(E=\frac{a^{\frac32}\cdot a^{-\frac12}}{a}=a^{\frac32-\frac12-1}=a^0=1\) khi \(a>0\). Không nhận \(a=0\) dù kết quả rút gọn là 1, vì biểu thức gốc chia cho a.
 
 **Ví dụ**
 
-**Đề bài.** Với \(a>0\), rút gọn \(E=a^{5/3}\cdot a^{-2/3}/a\) và giải thích điều kiện.
+**Đề bài.** Với \(a>0\), rút gọn \(E=\frac{a^{\frac53}\cdot a^{-\frac23}}a\) và giải thích điều kiện.
 
-**Lời giải.** Cộng trừ số mũ vì cùng cơ số dương: \(E=a^{5/3-2/3-1}=a^0=1\). Giữ \(a>0\) vì biểu thức gốc có mũ thực và phép chia cho \(a\), không được nhận \(a=0\) chỉ vì kết quả rút gọn bằng 1.
+**Lời giải.** Cộng trừ số mũ vì cùng cơ số dương: \(E=a^{\frac53-\frac23-1}=a^0=1\). Giữ \(a>0\) vì biểu thức gốc có mũ thực và phép chia cho a, không được nhận \(a=0\) chỉ vì kết quả rút gọn bằng 1.
 
 **Vận dụng**
 
-Với a>0, rút gọn a^(3/4)·a^(−1/4)/√a.
+Với \(a>0\), rút gọn \(\frac{a^{\frac34}\cdot a^{-\frac14}}{\sqrt a}\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Bằng a^(3/4−1/4−1/2)=1; giữ a>0 để mẫu và mũ hữu tỉ được xác định.
+Bằng \(a^{\frac34-\frac14-\frac12}=1\); giữ \(a>0\) để mẫu và mũ hữu tỉ được xác định.
 
-Nếu cộng số mũ cho phép **cộng** hai lũy thừa, thử 2²+2³=12 khác 2⁵=32.
+Nếu cộng số mũ cho phép **cộng** hai lũy thừa, thử \(2^2+2^3=12\) khác \(2^5=32\).
 
 
 **Kiểm lỗi**
@@ -182,33 +182,33 @@ Từ \(2^3=8\) ta biết cơ số và số mũ để tìm kết quả. Nếu đ�
 
 Đã biết \(5^3=125\), nếu muốn tìm ‘mũ nào cho 125’ thì em hỏi thế nào?
 
-Biết số ban đầu và số cuối, ta muốn biết cần bao nhiêu lần nhân theo tỉ lệ a. Cần nhớ hàm mũ cơ số dương, tính đơn ánh của a^x khi a≠1. 
+Biết số ban đầu và số cuối, ta muốn biết cần bao nhiêu lần nhân theo tỉ lệ a. Cần nhớ hàm mũ cơ số dương, tính đơn ánh của \(a^x\) khi \(a\ne1\). 
 
 > **ĐỊNH NGHĨA — Lôgarit.** Với \(a>0\), \(a\ne1\) và \(b>0\), số \(\log_a b\) là số thực duy nhất \(y\) thỏa \(a^y=b\). Do đó \(\log_a1=0\), \(\log_a a=1\), \(a^{\log_a b}=b\) (với \(b>0\)) và \(\log_a(a^x)=x\) (với mọi \(x\in\mathbb R\)). Đây là hai cách quay lại số ban đầu sau phép thuận/ngược; kết quả lôgarit có thể âm, nhưng **đối số** \(b\) phải dương.
 
  Đừng học công thức log trước khi hiểu câu hỏi ‘số mũ nào?’.
 
-Chẳng hạn, log₂(1/8)=−3 vì 2^(−3)=1/8. Dấu âm nằm ở **số mũ được tìm**, không phải ở đối số 1/8>0.
+Chẳng hạn, \(\log_2\frac18=-3\) vì \(2^{-3}=\frac18\). Dấu âm nằm ở **số mũ được tìm**, không phải ở đối số \(\frac18>0\).
 
 ![Quan hệ ngược giữa lũy thừa và logarit](../../content-drafts/svg/FIG-G11-CHVI-B19-01_R00.svg)
 
-*Quan sát hình:* So 2³=8 với log₂8=3, đồng thời ghi điều kiện cơ số dương, khác 1 và đối số logarit dương.
+*Quan sát hình:* So \(2^3=8\) với \(\log_2 8=3\), đồng thời ghi điều kiện cơ số dương, khác 1 và đối số lôgarit dương.
 
 **Ví dụ**
 
-**Đề bài.** Tính \(\log_5(1/125)\) và diễn giải bằng lũy thừa.
+**Đề bài.** Tính \(\log_5\frac1{125}\) và diễn giải bằng lũy thừa.
 
-**Lời giải.** Cơ số \(5>0\), \(5\ne1\), đối số \(1/125>0\). Do \(5^{-3}=1/125\), số mũ cần tìm là \(-3\): \(\log_5(1/125)=-3\).
+**Lời giải.** Cơ số \(5>0\), \(5\ne1\), đối số \(\frac1{125}>0\). Do \(5^{-3}=\frac1{125}\), số mũ cần tìm là \(-3\): \(\log_5\frac1{125}=-3\).
 
 **Vận dụng**
 
-Tính log₄(1/8).
+Tính \(\log_4\frac18\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Vì 4^(−3/2)=1/8 nên log₄(1/8)=−3/2.
+Vì \(4^{-\frac32}=\frac18\) nên \(\log_4\frac18=-\frac32\).
 
-Nếu nhầm log_a(−b) với số âm, kiểm log có nghĩa chỉ khi đối số >0; làm lại Bài 29 (lôgarit âm), Bài 19 và Bài 20 (định nghĩa lôgarit) trong phần Luyện tập.
+Nếu nhầm \(\log_a(-b)\) với một giá trị lôgarit âm, nhớ rằng lôgarit chỉ có nghĩa khi đối số dương; làm lại Bài 29 (lôgarit âm), Bài 19 và Bài 20 (định nghĩa lôgarit) trong phần Luyện tập.
 
 </details>
 
@@ -222,9 +222,9 @@ Nhưng phép tính ngược ấy chỉ có nghĩa khi đối số và cơ số t
 
 > **KIẾN THỨC CẦN GHI NHỚ — Miền xác định và tách lôgarit.** Trên số thực, \(\log_a(F(x))\) có nghĩa khi \(a>0\), \(a\ne1\) và \(F(x)>0\). Công thức \(\log_a(uv)=\log_a u+\log_a v\) đòi **riêng từng** \(u>0\), \(v>0\); điều kiện \(uv>0\) chưa đủ để tách hai lôgarit.
 
- Vì vậy với log_a[(x−1)(x−4)], miền x<1 hoặc x>4, nhưng chỉ tách thành tổng log thực trên x>4.
+Vì vậy với \(\log_a[(x-1)(x-4)]\), miền xác định là \(x<1\) hoặc \(x>4\) (cơ số hợp lệ), nhưng chỉ tách thành tổng hai lôgarit thực trên miền \(x>4\).
 
-Chẳng hạn, với x=0: (x−1)(x−4)=4>0 nên log₂4 có nghĩa, còn log₂(−1) và log₂(−4) không. Hình dung hai điểm âm nhân lại dương không làm log từng số âm có nghĩa.
+Chẳng hạn, với \(x=0\): \((x-1)(x-4)=4>0\) nên \(\log_2 4\) có nghĩa, còn \(\log_2(-1)\) và \(\log_2(-4)\) không. Hai số âm nhân lại dương không làm lôgarit từng số âm có nghĩa.
 
 **Ví dụ**
 
@@ -234,11 +234,11 @@ Chẳng hạn, với x=0: (x−1)(x−4)=4>0 nên log₂4 có nghĩa, còn log�
 
 **Vận dụng**
 
-Tìm miền của log₂(x²−9); tách log₂(x−3)+log₂(x+3) trên mọi miền đó được không?
+Tìm miền xác định của \(\log_2(x^2-9)\); có thể tách thành \(\log_2(x-3)+\log_2(x+3)\) trên toàn miền đó không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Miền x<−3 hoặc x>3, nhưng hai log riêng cùng có nghĩa chỉ khi x>3.
+Miền xác định là \(x<-3\) hoặc \(x>3\), nhưng hai lôgarit riêng cùng có nghĩa chỉ khi \(x>3\).
 
 Nếu mắc lỗi ‘log của tích’ trên toàn miền, lấy x=−4 làm phản ví dụ; làm lại Bài 30, Bài 31 (điều kiện tách lôgarit) và Bài 28 (tự luận về miền xác định) trong phần Luyện tập.
 
@@ -250,25 +250,25 @@ Nếu mắc lỗi ‘log của tích’ trên toàn miền, lấy x=−4 làm ph
 
 Khi đổi phép nhân thành phép cộng lôgarit, tại sao từng đối số phải dương?
 
-> **TÍNH CHẤT — Các quy tắc tính lôgarit.** Ta suy các quy tắc logarit từ chính phép nhân và chia các lũy thừa. Làm việc với những số rất lớn sẽ dễ hơn khi tích biến thành tổng, nhưng phép biến đổi có điều kiện. Ta đã biết tính chất a^r·a^s=a^(r+s), a>0. Với a>0,a≠1,x>0,y>0: log_a(xy)=log_a x+log_a y, log_a(x/y)=log_a x−log_a y, log_a(x^r)=r log_a x (x>0). Chúng đúng vì lấy log hai vế của các tích lũy thừa dương, không phải công thức thuộc lòng không điều kiện.
+> **TÍNH CHẤT — Các quy tắc tính lôgarit.** Ta suy các quy tắc lôgarit từ chính phép nhân và chia các lũy thừa. Ta đã biết tính chất \(a^r\cdot a^s=a^{r+s}\), \(a>0\). Với \(a>0,\ a\ne1,\ x>0,\ y>0\): \(\log_a(xy)=\log_a x+\log_a y\), \(\log_a\frac xy=\log_a x-\log_a y\), \(\log_a(x^r)=r\log_a x\) với \(r\in\mathbb R\). Chúng đúng vì lấy lôgarit hai vế của các tích lũy thừa dương, không phải công thức thuộc lòng không điều kiện.
 
-Chẳng hạn, log₃81−log₃3=log₃(81/3)=log₃27=3. Trừ hai log là log **thương**, không phải log(81−3).
+Chẳng hạn, \(\log_3 81-\log_3 3=\log_3\frac{81}{3}=\log_3 27=3\). Trừ hai lôgarit là lôgarit của **thương**, không phải \(\log_3(81-3)\).
 
 **Ví dụ**
 
 **Đề bài.** Tính \(\log_2 32-\log_2 4\) bằng quy tắc thương và kiểm bằng lũy thừa.
 
-**Lời giải.** Hai đối số đều dương. Quy tắc thương cho \(\log_2(32/4)=\log_2 8=3\). Kiểm lại: \(\log_2 32=5\), \(\log_2 4=2\), nên \(5-2=3\).
+**Lời giải.** Hai đối số đều dương. Quy tắc thương cho \(\log_2\frac{32}{4}=\log_2 8=3\). Kiểm lại: \(\log_2 32=5\), \(\log_2 4=2\), nên \(5-2=3\).
 
 **Vận dụng**
 
-Tính log₂24−log₂3.
+Tính \(\log_2 24-\log_2 3\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-log₂(24/3)=log₂8=3 vì hai đối số dương và 2³=8.
+\(\log_2\frac{24}{3}=\log_2 8=3\) vì hai đối số dương và \(2^3=8\).
 
-Nếu viết log(x+y)=log x+log y, thử x=y=1: log2≠0; phân biệt tổng với tích.
+Nếu viết \(\log(x+y)=\log x+\log y\), thử \(x=y=1\): \(\log 2\ne0\); phân biệt tổng với tích.
 
 
 **Kiểm lỗi**
@@ -285,31 +285,31 @@ Nếu tự ý biến \(\log_a(x+y)\) thành hai lôgarit, đọc **Kiến thức
 
 Khi máy tính hiện phím `log` và `ln`, đó không phải hai phép toán mới: cả hai đều là lôgarit, chỉ khác **cơ số**. Vì thế, trước khi dùng \(\ln\) trong công thức đổi cơ số, em cần biết số \(e\) đến từ đâu và các ký hiệu có nghĩa gì. Khi chia một khoảng thời gian thành càng nhiều kỳ tính lãi, một giới hạn tự nhiên xuất hiện; nó dẫn đến một cơ số đặc biệt lớn hơn 1.
 
-> **ĐỊNH NGHĨA — Số \(e\).** Số \(e\) là số dương có giá trị gần đúng \(2{,}71828\), được xác định bởi giới hạn \(e=\lim_{t\to+\infty}(1+1/t)^t\). Đây là một số vô tỉ và là cơ số quan trọng của hàm số mũ. Với vốn \(P>0\), lãi suất năm không đổi \(r\) và thời gian \(t\ge0\), mô hình lãi kép liên tục (khi các kỳ tính lãi ngày càng ngắn) cho công thức \(A(t)=Pe^{rt}\); phải phân biệt mô hình liên tục với lãi kép theo kỳ hữu hạn.
+> **ĐỊNH NGHĨA — Số \(e\).** Số \(e\) là số dương có giá trị gần đúng \(2{,}71828\), được xác định bởi giới hạn \(e=\lim_{t\to+\infty}\left(1+\frac1t\right)^t\). Đây là một số vô tỉ và là cơ số quan trọng của hàm số mũ. Với vốn \(P>0\), lãi suất năm không đổi \(r\) và thời gian \(t\ge0\), mô hình lãi kép liên tục (khi các kỳ tính lãi ngày càng ngắn) cho công thức \(A(t)=Pe^{rt}\); phải phân biệt mô hình liên tục với lãi kép theo kỳ hữu hạn.
 
 > **ĐỊNH NGHĨA — Lôgarit thập phân và lôgarit tự nhiên.** Với mọi \(M>0\), lôgarit **thập phân** là \(\log M=\log_{10}M\) (cũng viết \(\lg M\)); lôgarit **tự nhiên** là \(\ln M=\log_e M\). Cả hai chỉ xác định với \(M>0\); \(\ln e=1\), \(\log 10=1\), và \(\ln1=\log1=0\). Ký hiệu \(\log\) không ghi cơ số trong giáo trình này được hiểu là cơ số 10, còn \(\ln\) luôn dùng cơ số \(e\).
 
 Chẳng hạn, \(\log100=2\) vì \(10^2=100\), còn \(\ln(e^2)=2\). Khi tính \(\log_4 8\) bằng máy chỉ có hai phím trên, em có thể dùng \(\ln8/\ln4\) hoặc \(\log8/\log4\); cả hai bằng \(3/2\), vì tỷ số đổi cơ số giống nhau. Chỉ dùng các phép tính đó khi **mọi đối số lôgarit dương** và các cơ số hợp lệ.
 
-> **CÔNG THỨC — Đổi cơ số và dấu của lôgarit.** Khi đổi cơ số, hướng biến thiên của logarit cũng cần được xem lại. Máy tính thường chỉ có log thập phân hoặc ln; cần biết phép đổi cơ số và điều kiện. Ta sử dụng định nghĩa log, cơ số a>0,a≠1, đối số b>0. Đặt t=log_a b thì a^t=b. Lấy ln hai vế: t ln a=ln b ⇒ log_a b=(ln b)/(ln a); ln a≠0 do a≠1. Khi 0<a<1, ln a âm; log_a b vẫn có nghĩa với b>0 và có thể dương hoặc âm.
+> **CÔNG THỨC — Đổi cơ số và dấu của lôgarit.** Với \(a>0,\ a\ne1,\ b>0\), đặt \(t=\log_a b\) thì \(a^t=b\). Lấy lôgarit tự nhiên hai vế: \(t\ln a=\ln b\). Vì \(\ln a\ne0\) do \(a\ne1\), ta có \(\log_a b=\frac{\ln b}{\ln a}\). Khi \(0<a<1\), \(\ln a<0\); \(\log_a b\) vẫn có nghĩa với \(b>0\) và có thể dương, âm hoặc bằng 0.
 
-Xét ví dụ: log₄8=ln8/ln4=3/2; log_(1/9)3=−1/2 vì (1/9)^(−1/2)=3. Điều kiện từng cơ số và đối số đều đúng.
+Xét ví dụ: \(\log_4 8=\frac{\ln 8}{\ln 4}=\frac32\); \(\log_{\frac19}3=-\frac12\) vì \(\left(\frac19\right)^{-\frac12}=3\). Điều kiện từng cơ số và đối số đều đúng.
 
 **Ví dụ**
 
-**Đề bài.** Tính \(\log_{1/4}2\) bằng phép đổi cơ số, rồi kiểm bằng định nghĩa.
+**Đề bài.** Tính \(\log_{\frac14}2\) bằng phép đổi cơ số, rồi kiểm bằng định nghĩa.
 
-**Lời giải.** Cơ số \(1/4\in(0,1)\), đối số \(2>0\) nên hợp lệ. \(\log_{1/4}2=\ln2/\ln(1/4)=\ln2/(-2\ln2)=-1/2\). Kiểm \((1/4)^{-1/2}=2\).
+**Lời giải.** Cơ số \(\frac14\in(0;1)\), đối số \(2>0\) nên hợp lệ. \(\log_{\frac14}2=\frac{\ln2}{\ln(\frac14)}=\frac{\ln2}{-2\ln2}=-\frac12\). Kiểm \(\left(\frac14\right)^{-\frac12}=2\).
 
 **Vận dụng**
 
-Tính log₈2 bằng đổi cơ số.
+Tính \(\log_8 2\) bằng đổi cơ số.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-ln2/ln8=1/3 (hoặc 8^(1/3)=2).
+\(\frac{\ln2}{\ln8}=\frac13\) (hoặc \(8^{\frac13}=2\)).
 
-Nếu tính log_(1/9)3=+1/2, kiểm cơ số nhỏ 1 và thử lũy thừa.
+Nếu tính \(\log_{\frac19}3=+\frac12\), kiểm cơ số nhỏ hơn 1 và thử lũy thừa.
 
 
 **Kiểm lỗi**
@@ -331,25 +331,25 @@ Hàm mũ diễn tả quá trình nhân theo bước, còn logarit giúp tìm s�
 
 Hàm mũ luôn dương thì đồ thị có cắt trục hoành không?
 
-> **ĐỊNH NGHĨA — Miền, giá trị và đồ thị hàm mũ.** Số lượng thay đổi theo tỉ lệ không đổi khác với tăng thêm số lượng tuyệt đối mỗi kỳ. Ta bắt đầu từ số mũ thực cơ số dương và vị trí các điểm trên mặt phẳng tọa độ. Với a>0,a≠1, f(x)=a^x có miền ℝ và giá trị (0,+∞), qua (0,1), (1,a), luôn dương. Khi a>1, f(x)→0 khi x→−∞; khi 0<a<1, f(x)→0 khi x→+∞. Trục Ox là tiệm cận ngang; hàm không cắt Ox.
+> **ĐỊNH NGHĨA — Miền, giá trị và đồ thị hàm mũ.** Với \(a>0,\ a\ne1\), hàm số \(f(x)=a^x\) có tập xác định \(\mathbb R\), tập giá trị \((0;+\infty)\), qua hai điểm \((0;1),(1;a)\), luôn dương. Khi \(a>1\), \(f(x)\to0\) khi \(x\to-\infty\); khi \(0<a<1\), \(f(x)\to0\) khi \(x\to+\infty\). Trục Ox là tiệm cận ngang; hàm không cắt Ox.
 
-Chẳng hạn, f(x)=(1/3)^x: f(−1)=3, f(0)=1, f(1)=1/3; các điểm giảm khi x tăng. Chọn bảng ba điểm vì nó nối được đồ thị và mô hình giảm theo tỉ lệ.
+Chẳng hạn, \(f(x)=\left(\frac13\right)^x\): \(f(-1)=3,\ f(0)=1,\ f(1)=\frac13\); các giá trị giảm khi x tăng. Chọn bảng ba điểm vì nó nối được đồ thị và mô hình giảm theo tỉ lệ.
 
 **Ví dụ**
 
 **Đề bài.** Với \(f(x)=4^x\), tính \(f(-1),f(0),f(1)\), nêu miền và tập giá trị.
 
-**Lời giải.** Ta được \(f(-1)=1/4\), \(f(0)=1\), \(f(1)=4\). Vì \(4>0\) và \(4\ne1\), tập xác định là \(\mathbb R\), tập giá trị là \((0,+\infty)\). Đồ thị qua ba điểm tương ứng và không cắt Ox vì \(4^x>0\) với mọi x.
+**Lời giải.** Ta được \(f(-1)=\frac14,\ f(0)=1,\ f(1)=4\). Vì \(4>0\) và \(4\ne1\), tập xác định là \(\mathbb R\), tập giá trị là \((0;+\infty)\). Đồ thị qua ba điểm tương ứng và không cắt Ox vì \(4^x>0\) với mọi x.
 
 **Vận dụng**
 
-Cho f(x)=2^x, có x thực nào để f(x)=0 không?
+Cho \(f(x)=2^x\), có x thực nào để \(f(x)=0\) không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Không: 2^x>0 mọi x∈ℝ, chỉ tiến dần về 0 khi x→−∞.
+Không: \(2^x>0\) với mọi \(x\in\mathbb R\), chỉ tiến dần về 0 khi \(x\to-\infty\).
 
-Nếu nhầm số rất nhỏ với 0, thử x=−10 và viết 2^(−10)=1/1024>0.
+Nếu nhầm số rất nhỏ với 0, thử \(x=-10\) và viết \(2^{-10}=\frac1{1024}>0\).
 
 
 **Kiểm lỗi**
@@ -364,7 +364,7 @@ Nếu cho rằng \(2^x=0\) có nghiệm, đọc **Kiến thức 3.1** rồi làm
 
 Hàm mũ cùng cơ số nhỏ hơn 1 thay đổi theo chiều nào khi số mũ tăng?
 
-> **TÍNH CHẤT — Tính đơn điệu của hàm mũ.** Cơ số lớn hơn 1 hay nằm giữa 0 và 1 làm thay đổi hướng đồ thị mũ. Đưa bất phương trình về so số mũ chỉ đúng nếu biết hàm tăng hay giảm. Cần nhớ các giá trị a^0=1,a^1=a và khái niệm hàm đơn điệu. Với a>1, a^x tăng nghiêm ngặt; với 0<a<1, a^x giảm nghiêm ngặt. Nếu a^u>a^v thì u>v khi a>1, nhưng u<v khi 0<a<1. Bản chất: tăng một đơn vị số mũ sẽ nhân giá trị với a; nhân số >1 làm lớn, nhân số nằm (0,1) làm nhỏ.
+> **TÍNH CHẤT — Tính đơn điệu của hàm mũ.** Đưa bất phương trình về so số mũ chỉ đúng nếu biết hàm tăng hay giảm. Cần nhớ \(a^0=1,\ a^1=a\). Với \(a>1\), hàm \(a^x\) đồng biến nghiêm ngặt; với \(0<a<1\), hàm \(a^x\) nghịch biến nghiêm ngặt. Nếu \(a^u>a^v\), thì \(u>v\) khi \(a>1\), nhưng \(u<v\) khi \(0<a<1\). Bản chất: tăng một đơn vị số mũ sẽ nhân giá trị với a; nhân số dương với \(a>1\) làm lớn, với \(0<a<1\) làm nhỏ.
 
 Chẳng hạn, với cơ số cố định \(\frac14\), ta có \(\left(\frac14\right)^0=1\) và \(\left(\frac14\right)^1=\frac14\). Hàm số nghịch biến: số mũ tăng thì giá trị lũy thừa giảm, còn cơ số không đổi. Vì \(-1<2\), \(\left(\frac14\right)^{-1}=4>\left(\frac14\right)^2=\frac1{16}\).
 
@@ -372,11 +372,11 @@ Chẳng hạn, với cơ số cố định \(\frac14\), ta có \(\left(\frac14\r
 
 **Đề bài.** Giải \(\left(\frac13\right)^{x-1}\ge\left(\frac13\right)^2\).
 
-**Lời giải.** Hàm \(t\mapsto(1/3)^t\) nghịch biến do cơ số trong \((0,1)\). Vì thế dấu \(\ge\) của giá trị dẫn tới \(x-1\le2\), hay \(x\le3\). Dấu đảo khi so số mũ, không phải do thao tác chia số âm.
+**Lời giải.** Hàm \(t\mapsto\left(\frac13\right)^t\) nghịch biến do cơ số trong \((0;1)\). Vì thế dấu \(\ge\) của giá trị dẫn tới \(x-1\le2\), hay \(x\le3\). Dấu đảo khi so số mũ, không phải do thao tác chia số âm.
 
 **Vận dụng**
 
-So (1/5)^(−1) và (1/5)^2.
+So \(\left(\frac15\right)^{-1}\) và \(\left(\frac15\right)^2\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -387,7 +387,7 @@ Nếu luôn giữ dấu so sánh khi bỏ mũ, vẽ hai điểm 0,1 trên đồ 
 
 **Kiểm lỗi**
 
-Nếu so sánh hai lũy thừa cơ số 0<a<1 mà không đảo chiều, đọc **Kiến thức 3.2**, thực hiện **Bài 37** và **Bài 41** với điểm thử 0,1.
+Nếu so sánh hai lũy thừa cơ số \(0<a<1\) mà không đảo chiều, đọc **Kiến thức 3.2**, thực hiện **Bài 37** và **Bài 41** với điểm thử 0, 1.
 
 </details>
 
@@ -397,25 +397,25 @@ Nếu so sánh hai lũy thừa cơ số 0<a<1 mà không đảo chiều, đọc 
 
 Điểm \((1,0)\) của đồ thị lôgarit có nghĩa gì về số mũ?
 
-> **ĐỊNH NGHĨA — Miền và đồ thị hàm lôgarit.** Nhìn ngược đồ thị ấy, ta hiểu vì sao hàm logarit có miền và tính chất đặc trưng. Nếu hàm mũ biến thời gian thành lượng, logarit giúp biến lượng thành thời gian cần thiết. Để xác định điều đó, cần xét định nghĩa log, cơ số a>0,a≠1 và đường thẳng x=0. Với a>0,a≠1, g(x)=log_a x có miền (0,+∞), giá trị ℝ, qua (1,0) và (a,1); x=0 là tiệm cận đứng. Hàm tăng nếu a>1, giảm nếu 0<a<1. Không có điểm đồ thị với x≤0.
+> **ĐỊNH NGHĨA — Miền và đồ thị hàm lôgarit.** Với \(a>0,\ a\ne1\), \(g(x)=\log_a x\) có tập xác định \((0;+\infty)\), tập giá trị \(\mathbb R\), qua \((1;0)\) và \((a;1)\); \(x=0\) là tiệm cận đứng. Hàm tăng nếu \(a>1\), giảm nếu \(0<a<1\). Không có điểm đồ thị với \(x\le0\).
 
-Chẳng hạn, g(x)=log_(1/2)x: g(1/4)=2, g(4)=−2; từ x=1/4 sang x=4 giá trị giảm, phản ánh cơ số nhỏ hơn 1.
+Chẳng hạn, \(g(x)=\log_{\frac12}x\): \(g(\frac14)=2,\ g(4)=-2\); từ \(x=\frac14\) sang \(x=4\) giá trị giảm, phản ánh cơ số cố định nhỏ hơn 1.
 
 **Ví dụ**
 
-**Đề bài.** Với \(g(x)=\log_3 x\), tính \(g(1/9)\) và \(g(9)\), nêu miền xác định.
+**Đề bài.** Với \(g(x)=\log_3 x\), tính \(g(\frac19)\) và \(g(9)\), nêu miền xác định.
 
-**Lời giải.** Vì \(3^{-2}=1/9\), \(g(1/9)=-2\); vì \(3^2=9\), \(g(9)=2\). Chỉ \(x>0\) là đối số log hợp lệ. Đồ thị đi qua \((1,0)\), tăng và có tiệm cận đứng \(x=0\).
+**Lời giải.** Vì \(3^{-2}=\frac19\), \(g(\frac19)=-2\); vì \(3^2=9\), \(g(9)=2\). Chỉ \(x>0\) là đối số lôgarit hợp lệ. Đồ thị đi qua \((1;0)\), tăng và có tiệm cận đứng \(x=0\).
 
 **Vận dụng**
 
-Với y=log₂x, giá trị tại x=1/8 và x=8 là gì?
+Với \(y=\log_2 x\), giá trị tại \(x=\frac18\) và \(x=8\) là gì?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-log₂(1/8)=−3, log₂8=3, hàm tăng vì cơ số 2>1.
+\(\log_2\frac18=-3,\ \log_2 8=3\), hàm tăng vì cơ số \(2>1\).
 
-Nếu đặt điểm x=0 lên đồ thị log, hỏi cơ số nào lũy thừa ra 0 (không có).
+Nếu đặt điểm \(x=0\) lên đồ thị lôgarit, hỏi số mũ nào cho lũy thừa của cơ số hợp lệ bằng 0 (không có).
 
 
 **Kiểm lỗi**
@@ -430,9 +430,9 @@ Nếu nhận \(x\le0\) vào tập xác định của \(\log_a x\), đọc **Ki�
 
 Vì sao điểm \((u,v)\) của hàm mũ trở thành \((v,u)\) trên hàm lôgarit?
 
-> **TÍNH CHẤT — Hàm mũ và lôgarit là hai hàm ngược.** Hai đồ thị tương ứng phản chiếu qua y=x khi thực sự là hai hàm ngược. Liên kết hai khái niệm thành một thao tác thuận và thao tác ngược để giải phương trình. Ta đã biết khái niệm hàm ngược, tọa độ điểm (x,y). Với a>0,a≠1, f(x)=a^x là một-một từ ℝ đến (0,+∞), g(x)=log_a x là hàm ngược từ (0,+∞) về ℝ. Nếu (u,v) trên f thì (v,u) trên g; đồ thị đối xứng qua y=x. g(f(x))=x với mọi x thực, còn f(g(x))=x chỉ với x>0.
+> **TÍNH CHẤT — Hàm mũ và lôgarit là hai hàm ngược.** Với \(a>0,\ a\ne1\), \(f(x)=a^x\) là ánh xạ một-một từ \(\mathbb R\) lên \((0;+\infty)\), \(g(x)=\log_a x\) là hàm ngược từ \((0;+\infty)\) về \(\mathbb R\). Nếu \((u;v)\) trên đồ thị f thì \((v;u)\) trên đồ thị g; hai đồ thị đối xứng qua \(y=x\). Ta có \(g(f(x))=x\) với mọi x thực, còn \(f(g(x))=x\) chỉ với \(x>0\).
 
-Chẳng hạn, 2^(−1)=1/2, nên f có (−1,1/2), g có (1/2,−1). Đây là hoán đổi chỗ input/output, không phải phép đổi dấu.
+Chẳng hạn, \(2^{-1}=\frac12\), nên đồ thị f có điểm \((-1;\frac12)\), đồ thị g có điểm \((\frac12;-1)\). Đây là hoán đổi đầu vào và đầu ra, không phải phép đổi dấu.
 
 ![Hai đồ thị hàm mũ và logarit đối xứng qua đường y=x](../../content-drafts/svg/FIG-G11-CHVI-B20-01_R00.svg)
 
@@ -440,19 +440,19 @@ Chẳng hạn, 2^(−1)=1/2, nên f có (−1,1/2), g có (1/2,−1). Đây là 
 
 **Ví dụ**
 
-**Đề bài.** Cho \(f(x)=5^x\), \(g(x)=\log_5x\). Từ điểm \((-1,1/5)\) trên \(f\), xác định điểm tương ứng trên \(g\).
+**Đề bài.** Cho \(f(x)=5^x\), \(g(x)=\log_5 x\). Từ điểm \((-1;\frac15)\) trên f, xác định điểm tương ứng trên g.
 
-**Lời giải.** Vì \(5^{-1}=1/5\), \(f(-1)=1/5\). Hai hàm ngược hoán đổi vai trò đầu vào/đầu ra nên \(g(1/5)=-1\): điểm tương ứng là \((1/5,-1)\). Đối số \(1/5\) dương nên có nghĩa.
+**Lời giải.** Vì \(5^{-1}=\frac15\), \(f(-1)=\frac15\). Hai hàm ngược hoán đổi vai trò đầu vào/đầu ra nên \(g(\frac15)=-1\): điểm tương ứng là \((\frac15;-1)\). Đối số \(\frac15\) dương nên có nghĩa.
 
 **Vận dụng**
 
-Cho f(x)=3^x. Điểm (1,3) trên f tương ứng điểm nào trên log₃x?
+Cho \(f(x)=3^x\). Điểm \((1;3)\) trên f tương ứng điểm nào trên đồ thị \(y=\log_3 x\)?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(3,1) vì log₃3=1.
+\((3;1)\) vì \(\log_3 3=1\).
 
-Nếu dùng log₃(−3) để đảo hàm, kiểm miền log phải dương; làm lại Bài 50 (hàm ngược) và Bài 44 (đối xứng đồ thị hàm mũ–lôgarit) trong phần Luyện tập.
+Nếu dùng \(\log_3(-3)\) để đảo hàm, kiểm miền lôgarit phải có đối số dương; làm lại Bài 50 (hàm ngược) và Bài 44 (đối xứng đồ thị hàm mũ–lôgarit) trong phần Luyện tập.
 
 </details>
 
@@ -469,13 +469,13 @@ Việc đưa hai vế về cùng cơ số chỉ là một bước kỹ thuật. 
 
 Đặt \(t=a^x\) khi giải phương trình mũ thì \(t\) được nhận những giá trị nào?
 
-> **PHƯƠNG PHÁP — Phương trình mũ và ẩn phụ dương.** Muốn tìm thời gian hoặc giá trị x khi lượng a^x đạt ngưỡng, cần giải phương trình mũ chứ không phỏng đoán. Ta sử dụng a>0,a≠1, hàm mũ đơn ánh, giải phương trình bậc hai. a^u=a^v ⇔ u=v với a>0,a≠1. Nếu phải đặt t=a^x, luôn ghi t>0; nghiệm t≤0 phải loại trước khi quay lại x. Ưu tiên đưa về cùng cơ số khi làm được; chỉ đặt ẩn phụ nếu phương trình có thể quy về đa thức của \(a^x\), và luôn nhớ \(a^x>0\).
+> **PHƯƠNG PHÁP — Phương trình mũ và ẩn phụ dương.** Với \(a>0,\ a\ne1\), hàm mũ đơn ánh nên \(a^u=a^v\iff u=v\). Nếu phải đặt \(t=a^x\), luôn ghi \(t>0\); nghiệm \(t\le0\) phải loại trước khi quay lại x. Ưu tiên đưa về cùng cơ số khi làm được; chỉ đặt ẩn phụ nếu phương trình có thể quy về đa thức của \(a^x\).
 
 Trước cả các phép biến đổi nhiều bước, hãy nhận biết **phương trình mũ cơ bản** \(a^x=b\), với \(a>0\), \(a\ne1\). Vì mọi \(a^x>0\), khi \(b\le0\) phương trình **vô nghiệm**; khi \(b>0\), tính đơn ánh của hàm mũ và định nghĩa lôgarit cho đúng **một nghiệm** \(x=\log_a b\). Ví dụ, \(2^x=7\) có nghiệm \(x=\log_2 7\), không cần ép \(7\) thành lũy thừa nguyên của \(2\); còn \(2^x=-1\) vô nghiệm. Sau đó ta mới đưa các phương trình phức tạp về cùng cơ số hoặc đặt ẩn phụ.
 
 > **CÔNG THỨC — Phương trình mũ cơ bản.** Với \(a>0,\ a\ne1\), phương trình \(a^x=b\) có nghiệm duy nhất \(x=\log_a b\) nếu \(b>0\); không có nghiệm thực nếu \(b\le0\).
 
-Xét ví dụ: 4^x=2^(x+3) ⇒ 2^(2x)=2^(x+3) ⇒ 2x=x+3 ⇒ x=3. Nếu có 9^x−4·3^x+3=0, t=3^x>0 cho t=1,3 ⇒ x=0,1.
+Xét ví dụ: \(4^x=2^{x+3}\iff2^{2x}=2^{x+3}\iff2x=x+3\iff x=3\). Nếu có \(9^x-4\cdot3^x+3=0\), đặt \(t=3^x>0\) thì \(t^2-4t+3=0\). Hai nghiệm \(t=1,3\) đều dương, suy ra \(x=0,1\).
 
 **Ví dụ**
 
@@ -501,13 +501,13 @@ Nếu em nhận cả \(t=-1\), hãy nhớ không tồn tại số thực \(x\) s
 
 Vì sao giải xong phương trình đa thức chưa đủ để kết luận nghiệm log?
 
-> **PHƯƠNG PHÁP — Phương trình lôgarit và lọc nghiệm.** Nếu ẩn nằm trong logarit, xác định miền phải đi trước mọi bước biến đổi. Một phương trình đa thức sau gộp log có thể sinh nghiệm âm, nhưng log không có đối số âm. Ta bắt đầu từ miền F(x)>0 và tính đơn ánh log_a. log_a U=log_a V ⇔ U=V **trong miền U>0,V>0**, a>0,a≠1. Khi cộng các log, chỉ gộp nếu từng đối số dương. Giải phương trình đại số thu được ứng viên, kiểm vào miền/đề gốc, đặc biệt khi bình phương hay đưa về tích.
+> **PHƯƠNG PHÁP — Phương trình lôgarit và lọc nghiệm.** Nếu ẩn nằm trong lôgarit, xác định miền phải đi trước mọi bước biến đổi. Một phương trình đa thức sau gộp lôgarit có thể sinh nghiệm không thỏa điều kiện đối số. Với \(a>0,\ a\ne1\), ta có \(\log_a U=\log_a V\iff U=V\) **trong miền** \(U>0,\ V>0\). Khi cộng các lôgarit, chỉ gộp nếu từng đối số dương. Giải phương trình đại số thu được ứng viên, kiểm vào miền và đề gốc, đặc biệt khi bình phương hay đưa về tích.
 
-Dạng đơn giản nhất là \(\log_a x=b\) với \(a>0,\ a\ne1\). Theo định nghĩa, nó luôn có nghiệm duy nhất \(x=a^b>0\) với mọi \(b\in\mathbb R\); ví dụ \(\log_2 x=-3\) cho \(x=2^{-3}=1/8\). Khi trong lôgarit là một biểu thức \(U(x)\), ta giải \(U(x)=a^b\) rồi kiểm miền \(U(x)>0\), đồng thời giữ mọi điều kiện phụ của biểu thức ban đầu.
+Dạng đơn giản nhất là \(\log_a x=b\) với \(a>0,\ a\ne1\). Theo định nghĩa, nó luôn có nghiệm duy nhất \(x=a^b>0\) với mọi \(b\in\mathbb R\); ví dụ \(\log_2 x=-3\) cho \(x=2^{-3}=\frac18\). Khi trong lôgarit là một biểu thức \(U(x)\), ta giải \(U(x)=a^b\) rồi kiểm miền \(U(x)>0\), đồng thời giữ mọi điều kiện phụ của biểu thức ban đầu.
 
 > **CÔNG THỨC — Phương trình lôgarit cơ bản.** Nếu \(a>0,\ a\ne1\), thì \(\log_a x=b\iff x=a^b\), với \(b\in\mathbb R\) và \(x>0\).
 
-Chẳng hạn, log₂(x−1)+log₂(x+1)=3: miền x>1. (x−1)(x+1)=8 ⇒ x=±3, chỉ x=3 thỏa. Kiểm log₂2+log₂4=1+2=3.
+Chẳng hạn, \(\log_2(x-1)+\log_2(x+1)=3\) có miền \(x>1\). Gộp lôgarit được \((x-1)(x+1)=8\), suy ra \(x=\pm3\), chỉ \(x=3\) thỏa. Kiểm \(\log_2 2+\log_2 4=1+2=3\).
 
 **Ví dụ**
 
@@ -517,7 +517,7 @@ Chẳng hạn, log₂(x−1)+log₂(x+1)=3: miền x>1. (x−1)(x+1)=8 ⇒ x=±3
 
 **Vận dụng**
 
-Giải log₂(x−2)+log₂(x+2)=3.
+Giải \(\log_2(x-2)+\log_2(x+2)=3\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -533,11 +533,11 @@ Nghiệm âm xuất hiện khi giải phương trình bậc hai thu được t�
 
 Với cơ số \(1/4\), tăng số mũ thì giá trị tăng hay giảm?
 
-> **TÍNH CHẤT — Bất phương trình mũ và chiều so sánh.** Từ phương trình sang bất phương trình, hướng biến thiên quyết định chiều nghiệm. Giải một bất phương trình mũ có thể nhanh bằng so số mũ, nhưng dấu so sánh sai làm đổi toàn bộ tập nghiệm. Cần nhớ tính đơn điệu a^x, chuyển vế bất phương trình bậc nhất. Với a>1, a^u≤a^v ⇔ u≤v; với 0<a<1, a^u≤a^v ⇔ u≥v. Không thể so trực tiếp hai số mũ nếu cơ số khác nhau mà chưa quy về cùng cơ số một cách hợp lệ.
+> **TÍNH CHẤT — Bất phương trình mũ và chiều so sánh.** Với \(a>1\), \(a^u\le a^v\iff u\le v\); với \(0<a<1\), \(a^u\le a^v\iff u\ge v\). Không thể so trực tiếp hai số mũ nếu cơ số khác nhau mà chưa quy về cùng cơ số một cách hợp lệ.
 
 Với dạng đơn giản \(a^x>b\) (\(a>0,\ a\ne1\)), cũng phải xét **dấu của \(b\)** trước. Nếu \(b\le0\), mọi \(x\in\mathbb R\) đều thỏa vì \(a^x>0\). Nếu \(b>0\), viết \(b=a^{\log_a b}\): với \(a>1\) ta có \(x>\log_a b\), còn với \(0<a<1\) ta có \(x<\log_a b\). Các dấu \(<,\le,\ge\) xử lý tương tự, nhưng giá trị \(a^x\) **không bao giờ bằng \(0\)** nên cần đặc biệt chú ý khi \(b\le0\).
 
-Chẳng hạn, (1/2)^(x−2)<(1/2)^1 ⇔ x−2>1 (đảo chiều vì cơ số nhỏ hơn 1) ⇔ x>3. Thử x=4: (1/2)^2=1/4<1/2 đúng.
+Chẳng hạn, \(\left(\frac12\right)^{x-2}<\left(\frac12\right)^1\iff x-2>1\iff x>3\) (đảo chiều vì cơ số nhỏ hơn 1). Thử \(x=4\): \(\left(\frac12\right)^2=\frac14<\frac12\) đúng.
 
 ![Tại sao cơ số lớn hơn 1 tăng còn cơ số nhỏ hơn 1 giảm?](../../content-drafts/svg/FIG-G11-CHVI-B21-01_R00.svg)
 
@@ -545,17 +545,17 @@ Chẳng hạn, (1/2)^(x−2)<(1/2)^1 ⇔ x−2>1 (đảo chiều vì cơ số nh
 
 **Ví dụ**
 
-**Đề bài.** Giải \((1/4)^{2x+1}\le(1/4)^5\).
+**Đề bài.** Giải \(\left(\frac14\right)^{2x+1}\le\left(\frac14\right)^5\).
 
-**Lời giải.** Vì \(0<1/4<1\), hàm mũ nghịch biến nên khi so số mũ phải đảo chiều: \(2x+1\ge5\). Suy ra \(x\ge2\). Kiểm \(x=2\) hai vế bằng nhau nên lấy 2.
+**Lời giải.** Vì \(0<\frac14<1\), hàm mũ nghịch biến nên khi so số mũ phải đảo chiều: \(2x+1\ge5\). Suy ra \(x\ge2\). Kiểm \(x=2\) hai vế bằng nhau nên lấy 2.
 
 **Vận dụng**
 
-Giải (1/3)^(2x−1)≥(1/3)^(x+2).
+Giải \(\left(\frac13\right)^{2x-1}\ge\left(\frac13\right)^{x+2}\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Nghịch biến nên 2x−1≤x+2 ⇒ x≤3, lấy dấu bằng tại x=3.
+Hàm nghịch biến nên \(2x-1\le x+2\Rightarrow x\le3\), lấy dấu bằng tại \(x=3\).
 
 Nếu giữ chiều khi cơ số nhỏ hơn 1, kiểm x=4; làm lại Bài 62 (bất phương trình mũ), Bài 53 và Bài 57 (cùng kiểm chiều bất đẳng thức) trong phần Luyện tập.
 
@@ -567,11 +567,11 @@ Nếu giữ chiều khi cơ số nhỏ hơn 1, kiểm x=4; làm lại Bài 62 (b
 
 Điểm mút khiến đối số log bằng 0 có được nhận dù dấu bất phương trình không nghiêm không?
 
-> **TÍNH CHẤT — Bất phương trình lôgarit giảm, giao miền.** Với bất phương trình logarit, kết luận cuối chỉ hợp lệ sau khi giao miền xác định. Dù đã đảo chiều bất phương trình đúng, vẫn có thể nhận điểm ngoài miền log nếu không giao tập nghiệm. Để xác định điều đó, cần xét điều kiện log U, log V dương; tính tăng/giảm log. Với a>1: log_a U≤log_a V ⇔ U≤V khi U,V>0. Với 0<a<1: log_a U≤log_a V ⇔ U≥V khi U,V>0. Kết luận là giao với điều kiện; các mốc khiến đối số bằng 0 luôn **loại**.
+> **TÍNH CHẤT — Bất phương trình lôgarit giảm, giao miền.** Điều kiện xác định là **hai đối số** \(U>0,\ V>0\), không phải giá trị hai lôgarit dương. Với \(a>1\): \(\log_a U\le\log_a V\iff U\le V\) khi \(U,V>0\). Với \(0<a<1\): \(\log_a U\le\log_a V\iff U\ge V\) khi \(U,V>0\). Kết luận là giao với điều kiện xác định; các mốc khiến đối số bằng 0 luôn **loại**. Chẳng hạn \(\log_2\frac12=-1\) vẫn có nghĩa.
 
 Với bất phương trình cơ bản \(\log_a x>b\), trước hết **bắt buộc \(x>0\)**. Viết \(b=\log_a(a^b)\): nếu \(a>1\), nghiệm là \(x>a^b\); nếu \(0<a<1\), nghiệm là \(0<x<a^b\). Tương tự cho các dấu còn lại, luôn lấy giao với miền của biểu thức trong lôgarit. Khác với \(a^x\), lôgarit nhận mọi giá trị thực nhưng chỉ khi **đối số dương**.
 
-Chẳng hạn, log_(1/2)(x−1)≤log_(1/2)(5−x): miền 1<x<5; nghịch biến ⇒ x−1≥5−x ⇒ x≥3; giao được [3,5), không nhận 5.
+Chẳng hạn, \(\log_{\frac12}(x-1)\le\log_{\frac12}(5-x)\) có miền \(1<x<5\); hàm nghịch biến nên \(x-1\ge5-x\Rightarrow x\ge3\). Giao miền được \([3;5)\), không nhận 5.
 
 ![Miền xác định và nghiệm của bất phương trình logarit giảm](../../visuals/THPT_TOPIC04_LOG_DOMAIN_AND_DECREASING_INEQUALITY_R01.svg)
 
@@ -579,17 +579,17 @@ Chẳng hạn, log_(1/2)(x−1)≤log_(1/2)(5−x): miền 1<x<5; nghịch biế
 
 **Ví dụ**
 
-**Đề bài.** Giải \(\log_{1/2}(x+2)>\log_{1/2}(6-x)\).
+**Đề bài.** Giải \(\log_{\frac12}(x+2)>\log_{\frac12}(6-x)\).
 
-**Lời giải.** Điều kiện \(x+2>0\) và \(6-x>0\) cho \(-2<x<6\). Vì lôgarit cơ số \(1/2\) nghịch biến, bất phương trình tương đương \(x+2<6-x\), hay \(x<2\). Giao miền được \((-2,2)\); loại \(-2\) vì đối số bằng 0.
+**Lời giải.** Điều kiện \(x+2>0\) và \(6-x>0\) cho \(-2<x<6\). Vì lôgarit cơ số \(\frac12\) nghịch biến, bất phương trình tương đương \(x+2<6-x\), hay \(x<2\). Giao miền được \((-2;2)\); loại \(-2\) vì đối số bằng 0.
 
 **Vận dụng**
 
-Giải log_(1/3)(x+1)>log_(1/3)4.
+Giải \(\log_{\frac13}(x+1)>\log_{\frac13}4\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Miền x>−1; log giảm nên x+1<4 ⇒ x<3; S=(−1,3).
+Miền \(x>-1\); hàm lôgarit nghịch biến nên \(x+1<4\Rightarrow x<3\). Tập nghiệm \(S=(-1;3)\).
 
 Nếu em nhận đầu mút \(x=-2\) hoặc \(x=6\) trong **Ví dụ**, một đối số bằng 0 nên lôgarit không xác định; xét lại điều kiện trước khi so sánh. Với câu Vận dụng, hai đầu mút phải loại là \(x=-1\) và \(x=3\) (đầu thứ hai là biên bất phương trình nghiêm, không phải biên miền).
 
@@ -613,23 +613,23 @@ Lũy thừa và logarit giúp mô hình hóa lãi theo kỳ hay thời gian tớ
 
 Khi đề hỏi ‘kỳ nguyên đầu tiên vượt ngưỡng’, tại sao cần thử hai kỳ liên tiếp?
 
-> **PHƯƠNG PHÁP — Mô hình tăng giảm theo kỳ nguyên.** Bài toán lãi kép, giá trị giảm dần hay số lượng quần thể đều liên quan nhân theo tỉ lệ, không cộng lượng cố định. Ta đã biết phần trăm, lũy thừa, logarit và n nguyên không âm cho số kỳ. Nếu mỗi kỳ nhân \(q>0\) và ban đầu \(A_0>0\) thì \(A(n)=A_0q^n\), \(n\) nguyên không âm. Riêng **lãi kép** theo kỳ với vốn \(P>0\), lãi suất \(r>-1\) trên mỗi kỳ và không gửi thêm/rút ra có \(A(n)=P(1+r)^n\), nêu rõ lãi suất tính **theo cùng một kỳ**; q>1 tăng, 0<q<1 giảm. Để tìm kỳ đầu tiên đạt ngưỡng dùng log với đúng dấu của ln q, sau đó kiểm các kỳ nguyên kề nhau. Mô hình giả định q không đổi và n nguyên, không tự chứng minh thực tế sẽ tuân chính xác.
+> **PHƯƠNG PHÁP — Mô hình tăng giảm theo kỳ nguyên.** Bài toán lãi kép, giá trị giảm dần hay số lượng quần thể đều liên quan nhân theo tỉ lệ, không cộng lượng cố định. Ta đã biết phần trăm, lũy thừa, logarit và n nguyên không âm cho số kỳ. Nếu mỗi kỳ nhân \(q>0\) và ban đầu \(A_0>0\) thì \(A(n)=A_0q^n\), \(n\) nguyên không âm. Riêng **lãi kép** theo kỳ với vốn \(P>0\), lãi suất \(r>-1\) trên mỗi kỳ và không gửi thêm/rút ra có \(A(n)=P(1+r)^n\), nêu rõ lãi suất tính **theo cùng một kỳ**; \(q>1\) tăng, \(0<q<1\) giảm. Để tìm kỳ đầu tiên đạt ngưỡng dùng log với đúng dấu của \(\ln q\), sau đó kiểm các kỳ nguyên kề nhau. Mô hình giả định q không đổi và n nguyên, không tự chứng minh thực tế sẽ tuân chính xác.
 
-Chẳng hạn, 200 triệu đồng lãi gộp 5%/năm, sau 2 năm có 200·1,05²=220,5 triệu. Nếu 100 triệu tăng 8%/năm và muốn vượt 125 triệu: n>ln1,25/ln1,08≈2,8994, nên năm nguyên nhỏ nhất n=3.
+Chẳng hạn, 200 triệu đồng lãi gộp 5% mỗi năm, sau 2 năm có \(200\cdot(1{,}05)^2=220{,}5\) triệu đồng. Nếu 100 triệu tăng 8% mỗi năm và muốn vượt 125 triệu thì \(n>\frac{\ln(1{,}25)}{\ln(1{,}08)}\approx2{,}8994\), nên năm nguyên nhỏ nhất là \(n=3\).
 
 **Ví dụ**
 
 **Đề bài.** Ban đầu có 400 sản phẩm, mỗi kỳ chỉ còn \(90\%\). Kỳ nguyên không âm đầu tiên mà lượng còn lại **nhỏ hơn** 300 là kỳ nào?
 
-**Lời giải.** Mô hình \(N(n)=400(0{,}9)^n\), \(n\in\mathbb Z_{\ge0}\). Cần \((0{,}9)^n<0{,}75\). Vì \(\ln0{,}9<0\), ta có \(n>\ln(0{,}75)/\ln(0{,}9)\approx2{,}73\). Do đó \(n=3\) là kỳ đầu: \(N(2)=324>300\), \(N(3)=291{,}6<300\).
+**Lời giải.** Mô hình \(N(n)=400(0{,}9)^n\), \(n\in\mathbb Z_{\ge0}\). Cần \((0{,}9)^n<0{,}75\). Vì \(\ln(0{,}9)<0\), ta có \(n>\frac{\ln(0{,}75)}{\ln(0{,}9)}\approx2{,}73\). Do đó \(n=3\) là kỳ đầu: \(N(2)=324>300\), \(N(3)=291{,}6<300\).
 
 **Vận dụng**
 
-Một quần thể giả định ban đầu có 640 cá thể và giảm 25% mỗi kỳ theo quy tắc nhân cố định. Tính số lượng theo mô hình sau 2 kỳ; vì sao không trừ 160 cá thể ở mỗi kỳ?
+Một quần thể giả định ban đầu có 640 cá thể và giảm 25% mỗi kỳ theo quy tắc nhân cố định. (a) Tính số lượng theo mô hình sau 2 kỳ; vì sao không trừ 160 cá thể ở mỗi kỳ? (b) Kỳ nguyên đầu tiên mà số lượng theo mô hình nhỏ hơn 300 là kỳ nào?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Sau 2 kỳ, mô hình cho \(N(2)=640\cdot(0{,}75)^2=360\) cá thể. Mỗi kỳ số còn lại nhân với \(0{,}75\): kỳ 1 còn 480, kỳ 2 còn 360. Nếu trừ cố định 160 cá thể mỗi kỳ thì chỉ còn 320, không phải quy tắc giảm 25% của số còn lại. Đây là kết quả của mô hình giả định, không phải dự đoán chắc chắn số lượng ngoài thực tế.
+(a) Sau 2 kỳ, mô hình cho \(N(2)=640\cdot(0{,}75)^2=360\) cá thể. Mỗi kỳ số còn lại nhân với \(0{,}75\): kỳ 1 còn 480, kỳ 2 còn 360. Nếu trừ cố định 160 cá thể mỗi kỳ thì chỉ còn 320, không phải quy tắc giảm 25% của số còn lại. (b) Cần \(640(0{,}75)^n<300\), hay \((0{,}75)^n<\frac{15}{32}\). Vì \(\ln(0{,}75)<0\), suy ra \(n>\frac{\ln(\frac{15}{32})}{\ln(0{,}75)}\approx2{,}63\). Kiểm \(N(2)=360>300\), \(N(3)=270<300\), vậy kỳ 3 là kỳ đầu. Đây là kết quả của mô hình giả định, không phải dự đoán chắc chắn số lượng ngoài thực tế.
 
 Nếu tăng/giảm tuyến tính theo số cộng, kiểm tỷ lệ thực mỗi năm; làm lại Bài 73, Bài 75 (mô hình tăng/giảm theo kỳ) và Bài 65 (lãi kép) trong phần Luyện tập.
 
@@ -641,9 +641,9 @@ Nếu tăng/giảm tuyến tính theo số cộng, kiểm tỷ lệ thực mỗi
 
 Bài toán có nhiều logarit: khi nào nên kiểm miền, khi nào thử nghiệm lại?
 
-> **PHƯƠNG PHÁP — Bài toán tổng hợp nhiều điều kiện.** Trong bài toán tổng hợp, lỗi thường đến từ một điều kiện bị quên. Đề tổng hợp không nói sẵn dùng luật nào; học sinh cần tự phát hiện miền, biến đổi và kiểm nghiệm. Ta sử dụng quy tắc lũy thừa, log domain, so số mũ và giải bậc hai. Đọc bài theo chuỗi: xác định a>0,a≠1; từng log đối số>0; chọn quy tắc/hàm đơn ánh; giải ứng viên; giao mọi miền; thử nghiệm. Không trộn điều kiện của mô hình lãi kép với điều kiện log, và phải thử lại kết quả trong các miền xác định trước khi kết luận.
+> **PHƯƠNG PHÁP — Bài toán tổng hợp nhiều điều kiện.** Đọc bài theo chuỗi: xác định cơ số \(a>0,\ a\ne1\); kiểm từng đối số lôgarit dương; chọn quy tắc hoặc tính đơn ánh; giải ứng viên; giao mọi miền; thử nghiệm. Không trộn điều kiện của mô hình lãi kép với điều kiện lôgarit, và phải thử lại kết quả trong các miền xác định trước khi kết luận.
 
-Xét ví dụ: log₂(x²−1)=log₂(3x+3): miền x²−1>0 và 3x+3>0 ⇒ x>1. Đồng nhất đối số cho x²−3x−4=0 ⇒ x=4 hoặc −1; x=−1 sai miền. Nghiệm x=4, thử hai đối số bằng 15.
+Xét ví dụ: \(\log_2(x^2-1)=\log_2(3x+3)\). Miền \(x^2-1>0\) và \(3x+3>0\) cho \(x>1\). Đồng nhất đối số được \(x^2-3x-4=0\), suy ra \(x=4\) hoặc \(x=-1\); nghiệm \(-1\) sai miền. Nghiệm \(x=4\), thử hai đối số bằng 15.
 
 **Ví dụ**
 
@@ -657,7 +657,7 @@ Giải \(\log_3(x-1)=1+\log_3(5-x)\). Hãy nêu miền trước khi dùng quy t�
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Điều kiện \(x-1>0\), \(5-x>0\), tức \(1<x<5\). Vì \(1=\log_3 3\), ta có \(\log_3(x-1)=\log_3[3(5-x)]\). Hai đối số dương và cơ số 3 hợp lệ nên \(x-1=15-3x\), suy ra \(x=4\). Thử: \(\log_3 3=1+\log_3 1=1\). Nếu em bỏ điều kiện và nhận nghiệm ngoài (1,5), quay lại bước xác định miền trước khi giải.
+Điều kiện \(x-1>0\), \(5-x>0\), tức \(1<x<5\). Vì \(1=\log_3 3\), ta có \(\log_3(x-1)=\log_3[3(5-x)]\). Hai đối số dương và cơ số 3 hợp lệ nên \(x-1=15-3x\), suy ra \(x=4\). Thử: \(\log_3 3=1+\log_3 1=1\). Nếu em bỏ điều kiện và nhận nghiệm ngoài \((1;5)\), quay lại bước xác định miền trước khi giải.
 
 
 **Kiểm lỗi**
@@ -668,7 +668,7 @@ Nếu giải phương trình logarit rồi quên lọc nghiệm theo đồng th�
 
 > **Kiến thức cần ghi nhớ**
 >
-> - **Lũy thừa:** với \(a\ne0\), \(a^0=1\), \(a^{-n}=1/a^n\). Các quy tắc mũ thực dùng an toàn cho cơ số \(a>0\), không tùy tiện thay bằng cơ số âm.
+> - **Lũy thừa:** với \(a\ne0\), \(a^0=1\), \(a^{-n}=\frac1{a^n}\) với n nguyên dương. Các quy tắc mũ thực dùng an toàn cho cơ số \(a>0\), không tùy tiện thay bằng cơ số âm.
 > - **Lôgarit:** \(\log_a b=y\iff a^y=b\), luôn cần \(a>0\), \(a\ne1\), \(b>0\). Trước khi tách hay gộp lôgarit, kiểm **từng đối số**.
 > - **Đồ thị và bất phương trình:** cơ số \(a>1\) cho hàm mũ/lôgarit tăng; \(0<a<1\) cho hàm giảm nên phép so sánh đảo chiều. Kết luận nghiệm luôn giao miền xác định.
 > - **Ẩn phụ và bài toán số kỳ:** đặt \(t=a^x\) thì \(t>0\); với mô hình theo kỳ nguyên, kiểm thời điểm và hai kỳ nguyên lân cận ngưỡng.
