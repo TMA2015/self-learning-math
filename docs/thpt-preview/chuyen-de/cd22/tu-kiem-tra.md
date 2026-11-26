@@ -27,7 +27,7 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC22_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 7ac79e5ed705a5ce482c3d9c42a4451e659e1109; Q18_RECEIPT_BLOB 2e35a06020768e5a6db2e9f2fe65a46f577960c2; AUTHORING_PR #812; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB f1a059fc6366d2e4bb044edd696154a0b6799d4d; Q18_RECEIPT_BLOB 0969b1ff6acbf10f4b922e82fc722620d022d506; AUTHORING_PR #812; PUBLIC_PROJECTION_ONLY -->
 <!-- W5_LINK_EQUIVALENT: NONE; canonical source immutable -->
 
 # Tự kiểm tra
@@ -48,19 +48,19 @@ Chín câu dưới đây giúp em ôn lại từ dữ liệu thô đến bảng 
 
 <!-- REUSE_PUBLIC: THPT-G11-B08-P03 NO_MASTERY NOT_RD1 -->
 
-**Câu 4.** Điểm [1,2,3,4,5,6,7,8,9,10] chia [1;4),[4;7),[7;11). Bảng tần số?
+**Câu 4.** Điểm [1,2,3,4,5,6,7,8,9,10] chia \([1;4)\),\([4;7)\),\([7;11)\). Bảng tần số?
 
 <!-- REUSE_PUBLIC: THPT-G11-B09-P02 NO_MASTERY NOT_RD1 -->
 
-**Câu 5.** Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Ước lượng trung vị bằng nội suy.
+**Câu 5.** Mẫu A: \([0;10)\to4\) | \([10;20)\to8\) | \([20;30)\to6\) | \([30;40)\to2\). Ước lượng trung vị bằng nội suy.
 
 <!-- REUSE_PUBLIC: THPT-G11-B09-P04 NO_MASTERY NOT_RD1 -->
 
-**Câu 6.** Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Tìm mốt ước lượng.
+**Câu 6.** Mẫu A: \([0;10)\to4\) | \([10;20)\to8\) | \([20;30)\to6\) | \([30;40)\to2\). Tìm mốt ước lượng.
 
 <!-- REUSE_PUBLIC: THPT-G12-B09-P04 NO_MASTERY NOT_RD1 -->
 
-**Câu 7.** Một mẫu gốc có min=13, max=47; bảng ghép lớp [10;20) đến [40;50) ở hai biên. So R gốc với R ghép nhóm.
+**Câu 7.** Một mẫu gốc có \(x_{\min}=13,\ x_{\max}=47\); bảng ghép lớp \([10;20)\) đến \([40;50)\) ở hai biên. So R gốc với R ghép nhóm.
 
 <!-- REUSE_PUBLIC: THPT-G12-B10-P04 NO_MASTERY NOT_RD1 -->
 
@@ -68,7 +68,7 @@ Chín câu dưới đây giúp em ôn lại từ dữ liệu thô đến bảng 
 
 <!-- REUSE_PUBLIC: THPT-G12-B10-P08 NO_MASTERY NOT_RD1 -->
 
-**Câu 9.** Câu “s=16 giờ²” khi s²=16 giờ² sai ở đâu?
+**Câu 9.** Câu “\(s=16\,\mathrm{giờ}^2\)” khi \(s^2=16\,\mathrm{giờ}^2\) sai ở đâu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
