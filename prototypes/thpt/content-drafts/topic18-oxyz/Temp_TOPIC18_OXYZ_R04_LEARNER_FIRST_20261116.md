@@ -2,7 +2,7 @@
 
 Ta bắt đầu từ những câu hỏi gần gũi: một vật chuyển động ra sao, mặt phẳng nghiêng thế nào, và một vùng không gian hình cầu có bao phủ một vị trí không? Tọa độ cho phép chuyển từng câu hỏi hình học thành suy luận có thể kiểm tra bằng phép tính. Mỗi khi dùng công thức, hãy nhận diện đối tượng và điều kiện trước.
 
-<!-- AUTHORING_R04_LEARNER_CANDIDATE; EDITORIAL_R03_BLOB: 66df020c242cbbeb5c4bd50670e245a4d8c7f31f; FROZEN_R02_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd; SGK_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; SGK_CHV_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; NOT_REVIEWED_INDEPENDENTLY; NO_PRIVATE_RD1 -->
+<!-- AUTHORING_R04_LEARNER_CANDIDATE; EDITORIAL_R03_BLOB: 66df020c242cbbeb5c4bd50670e245a4d8c7f31f; FROZEN_R02_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd; SGK_CHII_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; SGK_CHV_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; NOT_REVIEWED_INDEPENDENTLY; NO_PRIVATE_RD1 -->
 
 # Kiến thức
 
@@ -16,32 +16,32 @@ Ta bắt đầu từ những câu hỏi gần gũi: một vật chuyển động
 
 <!-- LESSON_ID: TOP18-M01; OUTCOME_ID: TOP18-O01; S1_ORIGINAL_OUTCOME: G12-CHII-B06-O01 -->
 
-Một vectơ biểu diễn độ dời có hướng từ điểm đầu đến điểm cuối. Ta có thể tịnh tiến mũi tên song song mà không đổi vectơ; vì thế vectơ không gắn với vị trí tuyệt đối. Vectơ-không có độ dài 0 và không xác định một hướng riêng, nên không dùng nó để đo góc.
+Một vectơ biểu diễn độ dời có hướng từ điểm đầu đến điểm cuối. Ta có thể tịnh tiến mũi tên song song mà không đổi vectơ; vì thế vectơ không gắn với vị trí tuyệt đối. Vectơ-không có hai đầu trùng nhau, độ dài 0. Theo quy ước SGK, nó cùng hướng và cùng phương với mọi vectơ. Về hình học, nó không chỉ một hướng dịch chuyển riêng, nên không xác định góc giữa vectơ-không với vectơ khác.
 
 > **Kiến thức cần ghi nhớ**
 >
-> Một vectơ biểu diễn độ dời có hướng từ điểm đầu đến điểm cuối.
+> Một vectơ biểu diễn độ dời từ điểm đầu đến điểm cuối. Vectơ-không có độ dài 0, cùng hướng và cùng phương với mọi vectơ theo quy ước; không dùng nó để xác định góc.
 
 
 **Ví dụ**
 
-**Đề bài:** Trong ba điểm A–B–C thẳng hàng theo thứ tự, ghép \(\overrightarrow{AB}\) với \(\overrightarrow{BC}\) thu được độ dời nào? Khi \(A=B\), \(\overrightarrow{AB}\) có hướng riêng không?
+**Đề bài:** Trong ba điểm A–B–C thẳng hàng theo thứ tự, ghép \(\overrightarrow{AB}\) với \(\overrightarrow{BC}\) thu được độ dời nào? Khi \(A=B\), \(\overrightarrow{AB}\) có cùng hướng với \(\overrightarrow{AC}\) theo quy ước không? Có xác định được góc giữa chúng không?
 
-**Lời giải:** Nếu A,B,C thẳng hàng và \(\overrightarrow{AB},\overrightarrow{BC}\) cùng hướng thì khi đi A→B rồi B→C, ta thu được độ dời A→C. Khi A trùng B, vectơ \(\overrightarrow{AB}\) là vectơ-không dù hai điểm mang cùng vị trí. Vectơ-không không được gán một góc riêng.
+**Lời giải:** Nếu A,B,C thẳng hàng và \(\overrightarrow{AB},\overrightarrow{BC}\) cùng hướng thì khi đi A→B rồi B→C, ta thu được độ dời A→C. Khi A trùng B, vectơ \(\overrightarrow{AB}\) là vectơ-không dù hai điểm mang cùng vị trí. Theo quy ước, \(\overrightarrow{AB}=\vec 0\) cùng hướng và cùng phương với \(\overrightarrow{AC}\); tuy nhiên góc giữa chúng không xác định.
 
 **Vận dụng**
 
-A trùng B. Vectơ \(\overrightarrow{AB}\) có độ dài và hướng thế nào?
+A trùng B. Vectơ \(\overrightarrow{AB}\) có độ dài bao nhiêu? Theo quy ước, nó có cùng hướng và cùng phương với mọi vectơ không?
 
 <!-- ITEM_ID: THPT-TOP18-T01; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O01 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Độ dài bằng 0; không có hướng xác định. Không gán góc riêng cho vectơ-không.
+Độ dài bằng 0; có, cùng hướng và cùng phương với mọi vectơ theo quy ước SGK. Vectơ-không không biểu diễn hướng dịch chuyển riêng, nên không xác định góc với vectơ khác.
 
 **Kiểm lỗi**
 
-Vectơ-không dài 0 và không có hướng riêng, dù vẽ mũi tên thế nào; kiểm xem hai đầu có trùng nhau, không dùng nó để đo góc. Quay về **Kiến thức 1.1**, sau đó tự giải **Bài luyện 3** và **Bài luyện 5** trong Luyện tập.
+Nếu hai đầu trùng nhau, độ dài bằng 0. Phân biệt quy ước cùng hướng, cùng phương với mọi vectơ và việc không có hướng dịch chuyển riêng; không suy ra góc bằng 0° từ quy ước ấy. Quay về **Kiến thức 1.1**, sau đó tự giải **Bài luyện 3** và **Bài luyện 5** trong Luyện tập.
 
 </details>
 
@@ -49,7 +49,7 @@ Vectơ-không dài 0 và không có hướng riêng, dù vẽ mũi tên thế n�
 
 <!-- LESSON_ID: TOP18-M02; OUTCOME_ID: TOP18-O02; S1_ORIGINAL_OUTCOME: G12-CHII-B06-O02 -->
 
-Hai vectơ bằng nhau phải cùng hướng và cùng độ dài; chỉ cùng độ dài chưa đủ. Hai vectơ đối nhau có cùng độ dài nhưng ngược hướng. 'Cùng phương' nói về giá song song hoặc trùng nhau, không tự khẳng định cùng hướng.
+Hai vectơ bằng nhau phải cùng hướng và cùng độ dài; chỉ cùng độ dài chưa đủ. Hai vectơ khác không đối nhau có cùng độ dài nhưng ngược hướng; vectơ đối của vectơ-không vẫn là vectơ-không. Với hai vectơ khác không, 'cùng phương' nói về giá song song hoặc trùng nhau, không tự khẳng định cùng hướng. Riêng vectơ-không cùng hướng và cùng phương với mọi vectơ theo quy ước.
 
 > **Kiến thức cần ghi nhớ**
 >
@@ -115,11 +115,11 @@ Vectơ \(\overrightarrow{PR}\) theo quy tắc ba điểm, miễn các điểm đ
 
 <!-- LESSON_ID: TOP18-M04; OUTCOME_ID: TOP18-O04; S1_ORIGINAL_OUTCOME: G12-CHII-B06-O04 -->
 
-Nhân vectơ với số k thay đổi độ dài theo \(\lvert k\rvert\), cùng hướng nếu \(k>0\), ngược hướng nếu \(k<0\) và tạo vectơ-không nếu \(k=0\). Điều này giải thích tại sao nhân 3 biểu thị ba lần độ dời cùng hướng, còn nhân −1 là đảo chiều.
+Với vectơ \(\vec u\ne\vec0\), nhân vectơ với số k làm độ dài gấp \(\lvert k\rvert\) lần; cùng hướng nếu \(k>0\), ngược hướng nếu \(k<0\). Nếu \(k=0\) hoặc \(\vec u=\vec0\), kết quả là vectơ-không, cùng hướng và cùng phương với mọi vectơ theo quy ước. Điều này giải thích tại sao nhân 3 biểu thị ba lần độ dời cùng hướng, còn nhân −1 là đảo chiều.
 
 > **Kiến thức cần ghi nhớ**
 >
-> Nhân vectơ với số k thay đổi độ dài theo \(\lvert k\rvert\), cùng hướng nếu \(k>0\), ngược hướng nếu \(k<0\) và tạo vectơ-không nếu \(k=0\).
+> Với vectơ \(\vec u\ne\vec0\), nhân vectơ với số k làm độ dài gấp \(\lvert k\rvert\) lần; cùng hướng nếu \(k>0\), ngược hướng nếu \(k<0\). Nếu \(k=0\) hoặc \(\vec u=\vec0\), kết quả là vectơ-không, cùng hướng và cùng phương với mọi vectơ theo quy ước.
 
 
 **Ví dụ**
@@ -130,17 +130,17 @@ Nhân vectơ với số k thay đổi độ dài theo \(\lvert k\rvert\), cùng 
 
 **Vận dụng**
 
-Vectơ u khác không, \(0\vec u\) có cùng hướng u không?
+Cho \(\vec u\ne\vec0\). Theo quy ước SGK, \(0\vec u\) có cùng hướng với \(\vec u\) không? Có xác định góc giữa chúng không?
 
 <!-- ITEM_ID: THPT-TOP18-T04; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O04 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Không. \(0\vec u\) là vectơ-không, không có hướng xác định.
+Có. Vì \(0\vec u=\vec0\), theo quy ước SGK nó cùng hướng và cùng phương với \(\vec u\). Tuy nhiên góc giữa chúng không xác định.
 
 **Kiểm lỗi**
 
-Nhân k làm độ dài nhân \(\lvert k\rvert\); k âm đảo chiều và \(k=0\) cho vectơ không, không có độ dài âm. Quay về **Kiến thức 1.4**, sau đó tự giải **Bài luyện 16** và **Bài luyện 20** trong Luyện tập.
+Với vectơ khác không, dấu của k quyết định chiều khi \(k\ne0\). Khi \(k=0\), kết quả là vectơ-không: cùng hướng và cùng phương theo quy ước, nhưng không có góc xác định. Độ dài không âm. Quay về **Kiến thức 1.4**, sau đó tự giải **Bài luyện 16** và **Bài luyện 20** trong Luyện tập.
 
 </details>
 
@@ -405,11 +405,11 @@ Cộng/trừ/nhân vectơ theo từng thành phần, không nhân chéo tọa đ
 
 <!-- LESSON_ID: TOP18-M12; OUTCOME_ID: TOP18-O12; S1_ORIGINAL_OUTCOME: G12-CHII-B08-O02 -->
 
-Hai vectơ khác không cùng phương nếu một vectơ là bội của vectơ kia. Đừng chia các tọa độ tùy tiện khi có thành phần bằng 0; cách chắc chắn là thử k sao cho \(\vec u=k\vec v\) ở *tất cả* ba vị trí. Vectơ-không cần xử lí theo định nghĩa quy ước chứ không chia để tìm tỉ số.
+Hai vectơ khác không cùng phương nếu một vectơ là bội của vectơ kia. Đừng chia các tọa độ tùy tiện khi có thành phần bằng 0; cách chắc chắn là thử k sao cho \(\vec u=k\vec v\) ở *tất cả* ba vị trí. Nếu một vectơ là vectơ-không, hai vectơ cùng phương và cùng hướng theo quy ước; không cần chia để tìm tỉ số.
 
 > **Kiến thức cần ghi nhớ**
 >
-> Hai vectơ khác không cùng phương nếu một vectơ là bội của vectơ kia.
+> Hai vectơ khác không cùng phương nếu một vectơ là bội của vectơ kia. Vectơ-không cùng phương và cùng hướng với mọi vectơ theo quy ước.
 
 
 **Ví dụ**
@@ -1439,7 +1439,7 @@ Hãy đọc đề, thử giải vào vở rồi tự mở lời giải. Khi ch�
 
 ## 1. Vectơ và phép toán hình học
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C01; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C01; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 1.** Trong hình lập phương cạnh 4 cm, độ dài vectơ đi dọc một cạnh bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1449,7 +1449,7 @@ Hãy đọc đề, thử giải vào vở rồi tự mở lời giải. Khi ch�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P01; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P01; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 2.** Hình hộp chữ nhật có các cạnh theo ba phương vuông góc dài 3, 4, 12 cm. Độ dài vectơ nối hai đỉnh đối diện?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1459,17 +1459,17 @@ Hãy đọc đề, thử giải vào vở rồi tự mở lời giải. Khi ch�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 3.** Với hai điểm phân biệt A, B, vectơ \(\overrightarrow{AA}\) có độ dài và hướng thế nào?
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+**Bài luyện 3.** Với hai điểm phân biệt A, B, vectơ \(\overrightarrow{AA}\) có độ dài bao nhiêu? Theo quy ước, nó có cùng hướng và cùng phương với \(\overrightarrow{AB}\) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** Độ dài 0, hướng không xác định
-- **Lời giải/suy luận:** Vectơ-không có hai đầu trùng nhau, không có hướng xác định.
+- **Đáp án:** Độ dài 0; có, cùng hướng và cùng phương theo quy ước.
+- **Lời giải/suy luận:** Hai đầu của \(\overrightarrow{AA}\) trùng nhau nên đây là vectơ-không. Theo quy ước SGK, vectơ-không cùng hướng và cùng phương với mọi vectơ, kể cả \(\overrightarrow{AB}\). Nó không biểu diễn một hướng dịch chuyển riêng; không xác định góc giữa vectơ-không và vectơ khác.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W01; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W01; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 4.** Hình hộp chữ nhật có ba kích thước 2, 3, 6 cm. Giải thích vì sao vectơ nối hai đỉnh đối diện có độ dài 7 cm, không phải 11 cm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -1492,7 +1492,7 @@ Vì Q nằm giữa P và R nên \(PR=PQ+QR=3+2=5\) cm. Ở trường hợp riên
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 6.** Trong hình bình hành ABCD, vectơ nào bằng \(\overrightarrow{AB}\)?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1502,7 +1502,7 @@ Vì Q nằm giữa P và R nên \(PR=PQ+QR=3+2=5\) cm. Ở trường hợp riên
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P03; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 7.** Trong hình bình hành ABCD, vectơ nào đối với \(\overrightarrow{AB}\)?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1512,7 +1512,7 @@ Vì Q nằm giữa P và R nên \(PR=PQ+QR=3+2=5\) cm. Ở trường hợp riên
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 8.** Hai vectơ không bằng 0 cùng phương, một vectơ dài 2 cm, vectơ kia dài 5 cm. Chúng có thể bằng nhau không?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1522,7 +1522,7 @@ Vì Q nằm giữa P và R nên \(PR=PQ+QR=3+2=5\) cm. Ở trường hợp riên
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 9.** Trong hình hộp \(ABCD.A\prime B\prime C\prime D\prime\), liệt kê hai vectơ khác vị trí bằng \(\overrightarrow{AB}\) và một vectơ đối với nó; giải thích dựa vào hướng và độ dài.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -1545,7 +1545,7 @@ Vì Q nằm giữa P và R nên \(PR=PQ+QR=3+2=5\) cm. Ở trường hợp riên
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C03; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 11.** Với A,B,C bất kì, \(\overrightarrow{AB}+\overrightarrow{BC}\) bằng gì?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1555,7 +1555,7 @@ Vì Q nằm giữa P và R nên \(PR=PQ+QR=3+2=5\) cm. Ở trường hợp riên
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P05; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P05; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 12.** Trong hình bình hành ABCD, \(\overrightarrow{AB}+\overrightarrow{AD}\) bằng gì?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1565,7 +1565,7 @@ Vì Q nằm giữa P và R nên \(PR=PQ+QR=3+2=5\) cm. Ở trường hợp riên
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P06; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P06; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 13.** Trong hình hộp \(ABCD.A\prime B\prime C\prime D\prime\), \(\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA\prime}\) bằng gì?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1575,7 +1575,7 @@ Vì Q nằm giữa P và R nên \(PR=PQ+QR=3+2=5\) cm. Ở trường hợp riên
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W03; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 14.** Cho tứ diện ABCD. Rút gọn \(\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CD}\) theo hai cách: nối đường đi và nhóm đại số.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -1598,7 +1598,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 16.** Nếu \(|\vec a|=3\) và \(k=-2\), độ dài \(k\vec a\) bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1608,7 +1608,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P07; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P07; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 17.** Điểm M là trung điểm đoạn AB. Biểu diễn \(\overrightarrow{AM}\) qua \(\overrightarrow{AB}\).
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1618,7 +1618,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P08; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P08; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 18.** Điểm N ở tia đối của AB, \(AN=3AB\). Viết \(\overrightarrow{AN}\) qua \(\overrightarrow{AB}\).
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1628,7 +1628,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 19.** Cho \(\vec a\ne\vec0\). Hai vectơ \(\vec b=-\frac32\vec a\) và \(\vec c=\frac12\vec a\) có cùng phương không? Hướng và tỉ số độ dài?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -1651,7 +1651,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C05; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C05; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 21.** Hai vectơ khác 0 dài 2 và 3, tạo góc 60°. Tính tích vô hướng.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1661,7 +1661,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P09; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P09; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 22.** Hai vectơ khác 0 dài 5 và 4 vuông góc. Tích vô hướng bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1671,7 +1671,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P10; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P10; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 23.** Hai vectơ khác 0 dài 3 và 8 tạo góc 120°. Tích vô hướng bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1681,7 +1681,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W05; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W05; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 24.** Giả sử \(|\vec u|=2\), \(|\vec v|=5\) và \(\vec u\cdot\vec v=-5\). Hãy tìm góc và giải thích dấu âm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -1704,7 +1704,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C06; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C06; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 26.** Lực 10 N cùng hướng với độ dời 4 m. Công của lực là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1714,7 +1714,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P11; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P11; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 27.** Lực 12 N vuông góc với độ dời 5 m. Công bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1724,7 +1724,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P12; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P12; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 28.** Lực 8 N tạo góc 120° với độ dời 3 m. Công bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1734,7 +1734,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W06; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W06; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 29.** Hai lực không đổi \(\vec F_1,\vec F_2\) lần lượt 10 N, 20 N, cùng tạo góc 60° với cùng độ dời 2 m. Tính tổng công và nêu vì sao có thể cộng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -1759,7 +1759,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 ## 2. Làm quen hệ tọa độ Oxyz
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-C01; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-C01; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 31.** Trong hệ Oxyz, điểm \(P(4;2;0)\) nằm trên mặt phẳng tọa độ nào?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1769,7 +1769,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P01; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P01; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 32.** Một điểm Q thuộc trục Oz. Hai tọa độ nào bắt buộc bằng 0?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1779,7 +1779,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 33.** Điểm \(M(-1;0;3)\) thuộc mặt phẳng tọa độ nào?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1789,7 +1789,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W01; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W01; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 34.** Phân loại \(A(0;2;-1)\), \(B(0;0;5)\), \(C(3;-2;0)\) theo mặt phẳng tọa độ hoặc trục tọa độ; giải thích.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -1812,7 +1812,7 @@ Có, vì x=0. Không bắt buộc y,z dương để thuộc mặt tọa độ.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-C02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-C02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 36.** Cho \(\vec a=3\vec i-2\vec j+\vec k\). Tọa độ \(\vec a\) là gì?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1822,7 +1822,7 @@ Có, vì x=0. Không bắt buộc y,z dương để thuộc mặt tọa độ.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P03; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 37.** Nếu \(M(-2;4;1)\), tọa độ vectơ \(\overrightarrow{OM}\) bằng gì?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1832,7 +1832,7 @@ Có, vì x=0. Không bắt buộc y,z dương để thuộc mặt tọa độ.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 38.** Vectơ \(\vec u=(0;0;-5)\) viết dưới dạng i,j,k thế nào?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1842,7 +1842,7 @@ Có, vì x=0. Không bắt buộc y,z dương để thuộc mặt tọa độ.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 39.** Cho \(P(1;-2;3)\). Viết vectơ vị trí OP và giải thích vì sao vectơ bằng OP đặt ở một điểm khác vẫn có tọa độ tương tự.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -1865,7 +1865,7 @@ u=(−2,3,1) và N(−2,3,1) khi gốc là O và ba trục chuẩn.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-C03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-C03; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 41.** Trong phòng lấy O góc sàn và ba trục dọc dài/rộng/cao. Vật cách O lần lượt 2,3,4 m theo ba chiều dương có tọa độ gì?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1875,7 +1875,7 @@ u=(−2,3,1) và N(−2,3,1) khi gốc là O và ba trục chuẩn.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P05; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P05; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 42.** Một cảm biến ở trần trong phòng cao 3 m, chọn Oz hướng lên từ sàn. Tọa độ z của cảm biến là gì?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1885,7 +1885,7 @@ u=(−2,3,1) và N(−2,3,1) khi gốc là O và ba trục chuẩn.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P06; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P06; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 43.** Khi lấy gốc ở góc trần và Oz hướng xuống, sàn cách gốc 3 m có tọa độ z gì?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1895,7 +1895,7 @@ u=(−2,3,1) và N(−2,3,1) khi gốc là O và ba trục chuẩn.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W03; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 44.** Phòng 5×4×3 m; lấy O ở góc sàn, Ox dài, Oy rộng, Oz cao. Điểm A(5;4;3) là vị trí nào? Nếu gốc thay thành điểm trần đối diện và trục Oz vẫn hướng lên, z của O cũ bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -1918,7 +1918,7 @@ Tăng 4 m về Bắc; chiều cao z không đổi.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-C04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-C04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 46.** \(A(1;2;3)\), \(B(5;2;1)\). Tọa độ \(\overrightarrow{AB}\)?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1928,7 +1928,7 @@ Tăng 4 m về Bắc; chiều cao z không đổi.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P07; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P07; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 47.** \(A(-2;3;4)\), \(B(1;-1;2)\). Tọa độ \(\overrightarrow{BA}\)?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1938,7 +1938,7 @@ Tăng 4 m về Bắc; chiều cao z không đổi.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P08; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P08; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 48.** \(A(0;0;0)\), \(B(-3;2;5)\). Tọa độ \(\overrightarrow{AB}\)?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1948,7 +1948,7 @@ Tăng 4 m về Bắc; chiều cao z không đổi.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 49.** Cho \(A(2;-3;1)\), \(B(-4;5;0)\). Tính AB và BA theo tọa độ, rồi giải thích quan hệ.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -1973,7 +1973,7 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 ## 3. Phép toán tọa độ và khoảng cách
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C01; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C01; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 51.** Với a=(1;2;3), b=(3;-1;2), tính a+b.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1983,7 +1983,7 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P01; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P01; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 52.** Với a=(2;-3;1), b=(-1;4;0), tính a-b.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -1993,7 +1993,7 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 53.** Với a=(1;-2;4), tính -3a.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2003,7 +2003,7 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W01; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W01; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 54.** Với a=(2;1;-1), b=(-1;3;2), hãy tính 2a-3b và mô tả vì sao mỗi thành phần được tính riêng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2026,7 +2026,7 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 56.** a=(2;4;6) và b=(1;2;3) có cùng phương không?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2036,7 +2036,7 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P03; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 57.** u=(3;0;-6) và v=(-1;0;2) có cùng phương không?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2046,7 +2046,7 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 58.** a=(1;2;3) và b=(2;4;7) có cùng phương không?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2056,7 +2056,7 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 59.** Cho u=(t;2;4), v=(3;1;2). Tìm t để u, v cùng phương; chỉ ra hướng của chúng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2079,7 +2079,7 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C03; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 61.** Trung điểm \(A(1;3;5)\), \(B(3;1;7)\) có tọa độ?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2089,7 +2089,7 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P05; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P05; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 62.** Trọng tâm tam giác \(A(0;0;0)\), \(B(3;0;0)\), \(C(0;6;0)\) là?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2099,7 +2099,7 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P06; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P06; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 63.** Trung điểm đoạn AB với \(A(-2;4;0)\) \(B(4;-2;6)\) là?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2109,7 +2109,7 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W03; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 64.** Cho \(A(1;2;3)\), \(B(3;4;5)\), \(C(5;0;1)\). Tìm trọng tâm G và kiểm tra tọa độ của trung điểm M của AB.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2132,7 +2132,7 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 66.** a=(1;2;3), b=(2;0;-1). Tính tích vô hướng a·b.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2142,7 +2142,7 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P07; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P07; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 67.** u=(1;1;0), v=(1;-1;0) có vuông góc không?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2152,7 +2152,7 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P08; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P08; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 68.** a=(1;0;0), b=(1;1;0). Góc giữa hai vectơ?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2162,7 +2162,7 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 69.** Cho a=(1;2;2), b=(2;-1;0). Chứng minh chúng vuông góc và nêu điều kiện để sử dụng tiêu chuẩn tích vô hướng bằng 0.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2185,7 +2185,7 @@ cos=1/(1·√2)=1/√2 nên góc 45°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C05; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C05; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 71.** Tính độ dài vectơ u=(3;4;0).
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2195,7 +2195,7 @@ cos=1/(1·√2)=1/√2 nên góc 45°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P09; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P09; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 72.** Khoảng cách \(A(1;2;3)\), \(B(1;2;7)\) bằng?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2205,7 +2205,7 @@ cos=1/(1·√2)=1/√2 nên góc 45°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P10; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P10; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 73.** Độ dài vectơ v=(-2;3;6) bằng?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2215,7 +2215,7 @@ cos=1/(1·√2)=1/√2 nên góc 45°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W05; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W05; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 74.** Cho \(A(-1;2;3)\), \(B(2;-2;15)\). Tính AB. Nêu vì sao không thể lấy tổng trị tuyệt đối ba độ chênh.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2253,7 +2253,7 @@ AB=B−A=(3,4,0). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung đi�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C06; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C06; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 77.** Robot đi thẳng từ \(A(0;0;0)\) tới \(B(3;4;0)\), tọa độ mét. Quãng đường đi thẳng là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2263,7 +2263,7 @@ AB=B−A=(3,4,0). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung đi�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P11; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P11; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 78.** Drone đi thẳng 10 m trong 2 s. Tốc độ không đổi?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2273,7 +2273,7 @@ AB=B−A=(3,4,0). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung đi�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P12; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P12; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 79.** Máy bay \(A(1;2;3)\) tới \(B(4;6;15)\) theo đường thẳng; độ dời dài bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2283,7 +2283,7 @@ AB=B−A=(3,4,0). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung đi�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W06; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W06; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
 **Bài luyện 80.** Một thiết bị chuyển động thẳng từ \(A(2;0;5)\) đến \(B(8;-8;11)\) trong 4 s (tọa độ mét). Tìm vectơ độ dời, độ dài và tốc độ. Khi nào độ dài độ dời khác quãng đường?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
