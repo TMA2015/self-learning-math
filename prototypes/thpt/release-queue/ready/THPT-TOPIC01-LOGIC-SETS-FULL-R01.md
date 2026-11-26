@@ -1,5 +1,5 @@
-<!-- A04 WORK #1109 CURRENT CANDIDATE -->
-**BLOCKED_BY_AUTHORING** — Work #1055 CD01-A01–A03 edited in canonical at candidate blob `a51e80aaa5e18ebf6298430bb6cde02064ed8c29`, commit `d33b255b9292785b0e3b6893a9e98456e5b61426`. Previous signed pointers below are historical only until affected Q18/V2/ready re-lock and X-G.5 verification; no RELEASE authorization.
+<!-- TOP01_WORK1109_CURRENT_READY -->
+**CURRENT CONTENT_READY (AUTHORING only) · 26/11/2026:** Work #1055 A01–A03 and X-G.5 v3.2.0 verified on learner `e93f1253ac0acb3e19547665a67d64344527e601`; exact source commit `63183db8f69daf28424cc95581cc447919ad706d`, Q18 `36e61918b988f287edb68d628df2a2451bc9f2e4`, A1–A7 `5cf68c1c2215a9fe990524e079c3165efe7d6f6d`, V2 `36943dfa13e919baa99d94f8613f4d4e8beb4041`. Original 24 canonical IDs/11 same-ID Replay, 36 opt-in disclosures, rubric scores/mode unchanged. Two original SVGs plus new O10 interval figure `f405493bc6eefedc2106bb93316d981eb36931ce`; S1 prior original scan scope inherited, no new independent review or fresh PDF read. RELEASE CI/browser/owner approval pending; no authorization to merge/deploy. Historical evidence sections below are not new verdicts.
 
 <!-- TOP01_MASTER974_BANK_SELFCHK_CURRENT_20261121 -->
 **CURRENT AUTHORING snapshot (#974):** same one canonical CĐ01 learner, blob `9271a9784e343ea87981a67dae7dabcf69e4c0ed`, targeted existing Q18 receipt `e5cccc6d98bf3ce5244114752075f74a3389c46b`, author metadata `dcfd83b571e8eea776b47a9b87e3cd8b990675b1`, one V2 handoff `fe0dff5b4c7cca90296fcb18175032a973519023`. Academic original banks verified 18 SGK + 6 Topic source stems/solutions; 3 exact original conclusions now stated plainly for learners and one 11-question selfcheck `Đối chiếu` links to real Practice (public replay only, NO_MASTERY). Previously fixed 11 targeted `Kiểm lỗi` Knowledge paths stay. `DELTA_B_SOURCE_EQUIVALENT + DELTA_C_PED_TARGETED`, author self-QA affected scope; inherited CONTENT_READY historical signoffs remain at their original source SHA, **do not interpret as fresh complete #974 Academic/PED pass or RELEASE permission**. Student-facing SGK source only once, at end. NO merge/deploy.
@@ -19,24 +19,24 @@
 
 PACKET_ID: THPT-TOPIC01-LOGIC-SETS-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: BLOCKED_BY_AUTHORING
-SOURCE_COMMIT: 3380280f2af504d3203858cd5ad8b6af3cde845e
+STATE: CONTENT_READY
+SOURCE_COMMIT: 63183db8f69daf28424cc95581cc447919ad706d
 AUTHOR_PR: 817
 CURRENT_PR: #817 Draft AUTHORING, no merge/deploy
 CATALOG_TOPIC_ID: CD01
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 9271a9784e343ea87981a67dae7dabcf69e4c0ed
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_QA, no fresh independent NotebookLM PASS)
+ACADEMIC_SOURCE_BLOB: e93f1253ac0acb3e19547665a67d64344527e601
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC01_R07_10_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md (AUTHOR_SELF_VERIFIED, targeted delta)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_10_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
-REVIEW_RECEIPT_BLOB: e5cccc6d98bf3ce5244114752075f74a3389c46b
+REVIEW_RECEIPT_BLOB: 36e61918b988f287edb68d628df2a2451bc9f2e4
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC01-LOGIC-SETS-FULL-R07_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: fe0dff5b4c7cca90296fcb18175032a973519023
+AUTHOR_HANDOFF_BLOB: 36943dfa13e919baa99d94f8613f4d4e8beb4041
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
@@ -44,10 +44,12 @@ ORIGINAL_SVG1_PATH: prototypes/thpt/visuals/THPT_G10_B01_IMPLICATION_DIVISIBILIT
 ORIGINAL_SVG1_BLOB: 40b53b26deb48a7cfdff91be5fe01d12a67bebeb
 ORIGINAL_SVG2_PATH: prototypes/thpt/visuals/THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg
 ORIGINAL_SVG2_BLOB: ea84ee68187e83aa4bc6b14e49a965b3d7da5a11
+ADDITIONAL_SVG3_PATH: prototypes/thpt/visuals/THPT_TOPIC01_INTERVAL_INTERSECTION_UNION.svg
+ADDITIONAL_SVG3_BLOB: f405493bc6eefedc2106bb93316d981eb36931ce
 PUBLIC_EXTENSION_BLOB: 89ae1cd2338f2c5c48b9af874a8b52b1306c8acd
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -56,7 +58,7 @@ MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
-CURRENT_TOPIC_CONTENT_REVISION: R06
+CURRENT_TOPIC_CONTENT_REVISION: R07
 TOPIC_EDITORIAL_CHECKLIST: 13 items, Issue #864 (single Q01-Q18 standard unchanged)
 TOPIC_REGRESSION_PRECHECK: issue #865, L01-L14 checked; identified CĐ01 L15-L19 defects described in current R06 receipt
 R04_HISTORICAL_SOURCE_BLOB: 07bfe5bd55b860c2cc78b17c7c78e2132b8693f8
