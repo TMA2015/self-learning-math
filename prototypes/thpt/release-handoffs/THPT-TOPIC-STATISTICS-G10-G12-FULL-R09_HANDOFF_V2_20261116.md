@@ -1,3 +1,13 @@
+<!-- WORK1109_CP22_CURRENT -->
+## Current AUTHORING V2 — CP22
+
+26/11/2026 Work #1055/#1109 CP22 — AUTHOR_SELF_VERIFIED affected delta: correct and deepen 1.1–3.4; T02,T03,T05,T07,T10,T11,T12,T13 versions updated, all IDs retained; 114/114 original bank ID memberships checked across four immutable blobs, nine replay stems exactly match Practice, 127 unique IDs/136 placements, 39 outcomes, 128 balanced disclosures, rubric score tokens unchanged, 1011 balanced inline formula pairs and 1 display; 12 direct numerical assertions plus both IQR recomputations (12.5, 32/3) pass. Added source-locked histogram (same height 1, widths 10 and 20), existing two figures unchanged. X-G.5 notation normalized across the public path; no canonical SGK bank change. Original S1 scope inherited; no fresh PDF scan or independent review claimed; historical page-index P2 nonblocking. No website/device/CI/RELEASE/merge/deploy or protected data/assessment authority.
+
+Source `f1a059fc6366d2e4bb044edd696154a0b6799d4d`, Q18 `0969b1ff6acbf10f4b922e82fc722620d022d506`, Q15/A1 `ef6464db5ea629db92fe9cd19320c87ce16ffde2`. Asset `prototypes/thpt/content-drafts/topic-statistics/assets/Temp_STATISTICS_HISTOGRAM_DENSITY_WORK_20261126.svg` / `a1d78f19563e02942d7c348026efe234146dbb79`.
+
+---
+Historical dated evidence below is retained for its original immutable snapshots; the CP22 section and current structured SHA fields supersede older prose/count-equivalence claims.
+
 <!-- TOP22_MASTER974_FINAL_STUDENT_COPY_20261121 -->
 **V2 final source lock:** `7ac79e5ed705a5ce482c3d9c42a4451e659e1109` → current author Q18 `2e35a06020768e5a6db2e9f2fe65a46f577960c2` → current one A1/Q15 127-item matrix `496b936cfcdee2347aaf8460188bb6381205ce2c`. Only one student-visible voluntary SelfCheck explanation sentence was converted from internal runtime status terminology to natural language; original 114 signed math Practice and 15 answer-restored lines, 13 FT existing math, 9 identical question-only SelfChecks, 39 outcomes/13 lessons, 128 disclosures, old SVG and no-Mastery policy unchanged. Does not create new Q15 item version, academic math Delta C, independent Topic review or RELEASE permission. `BLOCKERS: NONE` retains its V2 source-only meaning, original S1 PDF viewer page-index P2 remains recorded separately.
 ---
@@ -5,10 +15,10 @@
 <!-- TOP22_MASTER974_CURRENT_AUTHORING_V2_20261121 -->
 ## CĐ22 R09 current one V2 authoring — 127 public canonical identities / 114 source-owned shared Practice
 
-CURRENT_SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
-CURRENT_SOURCE_COMMIT: 75c1be1493feb239147b493fecd933965181ad5a
-CURRENT_Q18_AUTHOR_RECEIPT_BLOB: 2e35a06020768e5a6db2e9f2fe65a46f577960c2
-CURRENT_A1_A7_Q15_SOURCE_MATRIX_BLOB: 496b936cfcdee2347aaf8460188bb6381205ce2c
+CURRENT_SOURCE_BLOB: f1a059fc6366d2e4bb044edd696154a0b6799d4d
+CURRENT_SOURCE_COMMIT: 0342848509f9ca58d9d6185ab2e9f75f969e5e53
+CURRENT_Q18_AUTHOR_RECEIPT_BLOB: 0969b1ff6acbf10f4b922e82fc722620d022d506
+CURRENT_A1_A7_Q15_SOURCE_MATRIX_BLOB: ef6464db5ea629db92fe9cd19320c87ce16ffde2
 SHARED_ORIGINAL_PRACTICE_ITEM_COUNT: 114
 EXISTING_TOPIC_FIRSTTRY_NOW_CANONICALLY_IDENTIFIED: 13
 PUBLIC_UNIQUE_CANONICAL_ID_COUNT: 127
@@ -28,18 +38,18 @@ RELEASE_AUTHORIZATION: NO
 
 **Canonical existing FirstTry identity map (distinct from original 114 SGK bank IDs):**
 - `THPT-TOP22-T01` → Kiến thức 1.1 · `CONTENT_VERSION=TOP22-R09-20261121-FT01`
-- `THPT-TOP22-T02` → Kiến thức 1.2 · `CONTENT_VERSION=TOP22-R09-20261121-FT02`
-- `THPT-TOP22-T03` → Kiến thức 1.3 · `CONTENT_VERSION=TOP22-R09-20261121-FT03`
+- `THPT-TOP22-T02` → Kiến thức 1.2 · `CONTENT_VERSION=TOP22-R09-WORK-20261126-FT02`
+- `THPT-TOP22-T03` → Kiến thức 1.3 · `CONTENT_VERSION=TOP22-R09-WORK-20261126-FT03`
 - `THPT-TOP22-T04` → Kiến thức 1.4 · `CONTENT_VERSION=TOP22-R09-20261121-FT04`
-- `THPT-TOP22-T05` → Kiến thức 1.5 · `CONTENT_VERSION=TOP22-R09-20261121-FT05`
+- `THPT-TOP22-T05` → Kiến thức 1.5 · `CONTENT_VERSION=TOP22-R09-WORK-20261126-FT05`
 - `THPT-TOP22-T06` → Kiến thức 2.1 · `CONTENT_VERSION=TOP22-R09-20261121-FT06`
-- `THPT-TOP22-T07` → Kiến thức 2.2 · `CONTENT_VERSION=TOP22-R09-20261121-FT07`
+- `THPT-TOP22-T07` → Kiến thức 2.2 · `CONTENT_VERSION=TOP22-R09-WORK-20261126-FT07`
 - `THPT-TOP22-T08` → Kiến thức 2.3 · `CONTENT_VERSION=TOP22-R09-20261121-FT08`
 - `THPT-TOP22-T09` → Kiến thức 2.4 · `CONTENT_VERSION=TOP22-R09-20261121-FT09`
-- `THPT-TOP22-T10` → Kiến thức 3.1 · `CONTENT_VERSION=TOP22-R09-20261121-FT10`
-- `THPT-TOP22-T11` → Kiến thức 3.2 · `CONTENT_VERSION=TOP22-R09-20261121-FT11`
-- `THPT-TOP22-T12` → Kiến thức 3.3 · `CONTENT_VERSION=TOP22-R09-20261121-FT12`
-- `THPT-TOP22-T13` → Kiến thức 3.4 · `CONTENT_VERSION=TOP22-R09-20261121-FT13`
+- `THPT-TOP22-T10` → Kiến thức 3.1 · `CONTENT_VERSION=TOP22-R09-WORK-20261126-FT10`
+- `THPT-TOP22-T11` → Kiến thức 3.2 · `CONTENT_VERSION=TOP22-R09-WORK-20261126-FT11`
+- `THPT-TOP22-T12` → Kiến thức 3.3 · `CONTENT_VERSION=TOP22-R09-WORK-20261126-FT12`
+- `THPT-TOP22-T13` → Kiến thức 3.4 · `CONTENT_VERSION=TOP22-R09-WORK-20261126-FT13`
 ---
 
 <!-- TOP22_R09_CURRENT_15_KEY_RESTORE_SOURCE_EQUIVALENT_20261121 -->
@@ -72,9 +82,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
+ACADEMIC_SOURCE_BLOB: f1a059fc6366d2e4bb044edd696154a0b6799d4d
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC22_R09_15_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
-REVIEW_RECEIPT_BLOB: 2e35a06020768e5a6db2e9f2fe65a46f577960c2
+REVIEW_RECEIPT_BLOB: 0969b1ff6acbf10f4b922e82fc722620d022d506
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_CANONICAL_SOURCE_INDEX_R00_20261111.md
 PUBLIC_SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_PUBLIC_EXTENSION_07ITEM_R00_20261111.md
@@ -83,6 +93,8 @@ STATISTICS_FREQUENCY_SVG_PATH: prototypes/thpt/content-drafts/topic-statistics/a
 STATISTICS_FREQUENCY_SVG_BLOB: d7922d7caecb1030678d330d5b2bbb8b3596b7b3
 STATISTICS_BOXPLOT_SVG_PATH: prototypes/thpt/content-drafts/topic-statistics/assets/Temp_STATISTICS_BOX_OUTLIER_R00_20261111.svg
 STATISTICS_BOXPLOT_SVG_BLOB: 4798c4e6bd8fb1730dedcfe03581e14a6514f972
+STATISTICS_HISTOGRAM_DENSITY_SVG_PATH: prototypes/thpt/content-drafts/topic-statistics/assets/Temp_STATISTICS_HISTOGRAM_DENSITY_WORK_20261126.svg
+STATISTICS_HISTOGRAM_DENSITY_SVG_BLOB: a1d78f19563e02942d7c348026efe234146dbb79
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 CONTENT_STATE: CONTENT_READY
@@ -98,9 +110,9 @@ RELEASE_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 CONTENT_REVISION: R09_MASTER974_Q15_13_EXISTING_FIRSTTRY_CANONICAL_PED6_20261121
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_A1_A7_BLOB: 496b936cfcdee2347aaf8460188bb6381205ce2c
+AUTHOR_A1_A7_BLOB: ef6464db5ea629db92fe9cd19320c87ce16ffde2
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_METADATA_BLOB: 496b936cfcdee2347aaf8460188bb6381205ce2c
+AUTHOR_METADATA_BLOB: ef6464db5ea629db92fe9cd19320c87ce16ffde2
 ORIGINAL_R07_SOURCE_BLOB: e31771e0fb9347c8c242ec8ca9e8a91a1ab74ff6
 ORIGINAL_R07_AUTHOR_RECEIPT_BLOB: 40feca220c54fc0620ab113cc354e3d37a66088e
 
