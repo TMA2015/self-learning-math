@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-TOP09-P01",
     "content_version": 1,
-    "stem": "Vật có tọa độ s(t)=t²−4t (m), t≥0 (s). Tính vận tốc trung bình trên [1;3] và giải thích vì sao kết quả bằng 0 không có nghĩa vật đứng yên suốt khoảng đó.",
+    "stem": "Vật có tọa độ \\(s(t)=t^2-4t\\) (m), \\(t\\ge0\\) (s). Tính vận tốc trung bình trên \\([1;3]\\) và giải thích vì sao kết quả bằng 0 không có nghĩa vật đứng yên suốt khoảng đó.",
     "answer_key": "0 m/s; vật không đứng yên suốt khoảng.",
-    "worked_solution": "s(1)=−3 m, s(3)=−3 m nên vận tốc trung bình [s(3)−s(1)]/(3−1)=0 m/s. Nhưng s(2)=−4 m khác s(1), nên tọa độ có thay đổi trong khoảng. Vận tốc trung bình bằng 0 chỉ cho biết độ dời tổng cộng bằng 0.",
+    "worked_solution": "\\(s(1)=-3\\) m, \\(s(3)=-3\\) m nên vận tốc trung bình \\(\\frac{s(3)-s(1)}{3-1}=0\\) m/s. Nhưng \\(s(2)=-4\\) m khác \\(s(1)\\), nên tọa độ có thay đổi trong khoảng. Vận tốc trung bình bằng 0 chỉ cho biết độ dời tổng cộng bằng 0.",
     "skill_ids": [
       "G11-B31-AVERAGE_RATE"
     ],
@@ -31,9 +31,9 @@
   {
     "item_id": "THPT-TOP09-P02",
     "content_version": 1,
-    "stem": "Trên y=x², cát tuyến qua P(2,4) và Q(2+h,(2+h)²), h≠0, có hệ số góc gì? Khi h→0 được gì?",
-    "answer_key": "m_cát=4+h; m_tiếp=4.",
-    "worked_solution": "[(2+h)²−2²]/h=(4h+h²)/h=4+h (h≠0). Khi h→0 hai phía, m→4. Phải rút gọn trước khi lấy giới hạn, không cho h=0 vào cát tuyến ban đầu.",
+    "stem": "Trên \\(y=x^2\\), cát tuyến qua \\(P(2;4)\\) và \\(Q(2+h;(2+h)^2)\\), \\(h\\ne0\\), có hệ số góc gì? Khi \\(h\\to0\\) được gì?",
+    "answer_key": "\\(m_{\\text{cát}}=4+h\\); \\(m_{\\text{tiếp}}=4\\).",
+    "worked_solution": "\\(\\frac{(2+h)^2-2^2}h=\\frac{4h+h^2}h=4+h\\) (h≠0). Khi \\(h\\to0\\) hai phía, m→4. Phải rút gọn trước khi lấy giới hạn, không cho \\(h=0\\) vào cát tuyến ban đầu.",
     "skill_ids": [
       "G11-B31-LIMIT_QUOTIENT"
     ],
@@ -60,9 +60,9 @@
   {
     "item_id": "THPT-TOP09-P03",
     "content_version": 1,
-    "stem": "Dùng định nghĩa để tính f'(−1) cho f(x)=x³, không chỉ dẫn quy tắc x³.",
+    "stem": "Dùng định nghĩa để tính \\(f'(-1)\\) cho \\(f(x)=x^3\\), không chỉ dẫn quy tắc \\(x^3\\).",
     "answer_key": "3.",
-    "worked_solution": "f(−1)=−1; f(−1+h)=−1+3h−3h²+h³. Thương sai phân [f(−1+h)−f(−1)]/h=3−3h+h² với h≠0, giới hạn h→0 bằng 3. Đạo hàm tại −1 là 3.",
+    "worked_solution": "\\(f(-1)=-1\\); \\(f(-1+h)=-1+3h-3h^2+h^3\\). Thương sai phân \\(\\frac{f(-1+h)-f(-1)}h=3-3h+h^2\\) với \\(h\\ne0\\), giới hạn \\(h\\to0\\) bằng 3. Đạo hàm tại −1 là 3.",
     "skill_ids": [
       "G11-B31-DERIVATIVE_AT_POINT"
     ],
@@ -89,9 +89,9 @@
   {
     "item_id": "THPT-TOP09-P04",
     "content_version": 1,
-    "stem": "Cho f(x)=x nếu x<0, f(x)=x² nếu x≥0. Hàm có đạo hàm tại 0 không? Có liên tục không?",
+    "stem": "Cho \\(f(x)=x\\) nếu \\(x<0\\), \\(f(x)=x^2\\) nếu \\(x\\ge0\\). Hàm có đạo hàm tại 0 không? Có liên tục không?",
     "answer_key": "Liên tục tại 0 nhưng không có đạo hàm hai phía tại 0.",
-    "worked_solution": "f(0)=0, lim trái của x và phải của x² đều 0 nên liên tục. Thương [f(h)−f(0)]/h bằng 1 nếu h<0, bằng h nếu h>0; các đạo hàm một phía lần lượt 1 và 0, khác nhau ⇒ f'(0) không tồn tại.",
+    "worked_solution": "\\(f(0)=0\\), lim trái của x và phải của \\(x^2\\) đều 0 nên liên tục. Thương \\(\\frac{f(h)-f(0)}h\\) bằng 1 nếu \\(h<0\\), bằng h nếu \\(h>0\\); các đạo hàm một phía lần lượt 1 và 0, khác nhau ⇒ \\(f'(0)\\) không tồn tại.",
     "skill_ids": [
       "G11-B31-DIFFERENTIABILITY"
     ],
@@ -118,9 +118,9 @@
   {
     "item_id": "THPT-TOP09-P05",
     "content_version": 1,
-    "stem": "f(x)=|x| tại x=0: liên tục? Có đạo hàm? Dùng ví dụ bác bỏ chiều ngược của mệnh đề 'có đạo hàm ⇒ liên tục'.",
+    "stem": "\\(f(x)=|x|\\) tại \\(x=0\\): liên tục? Có đạo hàm? Dùng ví dụ bác bỏ chiều ngược của mệnh đề 'có đạo hàm ⇒ liên tục'.",
     "answer_key": "Liên tục nhưng không khả vi tại 0.",
-    "worked_solution": "|x|→0=|0| khi x→0, nên liên tục. Thương [|h|−0]/h =−1 khi h<0 và +1 khi h>0, không có giới hạn hai phía. Đây là phản ví dụ cho 'liên tục ⇒ có đạo hàm'.",
+    "worked_solution": "\\(|x|\\to0=|0|\\) khi \\(x\\to0\\), nên liên tục. Thương \\(\\frac{|h|-0}h=-1\\) khi \\(h<0\\) và +1 khi \\(h>0\\), không có giới hạn hai phía. Đây là phản ví dụ cho 'liên tục ⇒ có đạo hàm'.",
     "skill_ids": [
       "G11-B31-CONTINUITY_NECESSARY"
     ],
@@ -147,9 +147,9 @@
   {
     "item_id": "THPT-TOP09-P06",
     "content_version": 1,
-    "stem": "Cho f(x)=2(x−2) nếu x<2, f(x)=−3(x−2) nếu x≥2. Tính đạo hàm trái, phải tại 2; có đạo hàm hai phía không?",
+    "stem": "Cho \\(f(x)=2(x-2)\\) nếu \\(x<2\\), \\(f(x)=-3(x-2)\\) nếu \\(x\\ge2\\). Tính đạo hàm trái, phải tại 2; có đạo hàm hai phía không?",
     "answer_key": "Trái 2, phải −3; không có đạo hàm tại 2.",
-    "worked_solution": "f(2)=0. Với h<0, f(2+h)=2h nên thương bằng 2. Với h>0, f(2+h)=−3h nên thương bằng −3. Hai giới hạn khác nhau, vì vậy không có đạo hàm hai phía tại 2.",
+    "worked_solution": "\\(f(2)=0\\). Với \\(h<0\\), \\(f(2+h)=2h\\) nên thương sai phân bằng 2. Với \\(h>0\\), \\(f(2+h)=-3h\\) nên thương bằng −3. Hai giới hạn khác nhau, vì vậy không có đạo hàm hai phía tại 2.",
     "skill_ids": [
       "G11-B31-CORNER_CUSP"
     ],
@@ -176,9 +176,9 @@
   {
     "item_id": "THPT-TOP09-P07",
     "content_version": 1,
-    "stem": "Với f(x)=x²−2x, tại x=2 tung độ điểm tiếp xúc và độ dốc tiếp tuyến bằng bao nhiêu?",
-    "answer_key": "f(2)=0 và f'(2)=2.",
-    "worked_solution": "f(2)=4−4=0; f'(x)=2x−2 ⇒ f'(2)=2. Tung độ là 0, độ dốc là 2; không được hoán đổi hai đại lượng.",
+    "stem": "Với \\(f(x)=x^2-2x\\), tại \\(x=2\\) tung độ điểm tiếp xúc và độ dốc tiếp tuyến bằng bao nhiêu?",
+    "answer_key": "\\(f(2)=0\\) và \\(f'(2)=2\\).",
+    "worked_solution": "\\(f(2)=4-4=0\\); \\(f'(x)=2x-2\\) ⇒ \\(f'(2)=2\\). Tung độ là 0, độ dốc là 2; không được hoán đổi hai đại lượng.",
     "skill_ids": [
       "G11-B31-TANGENT_SLOPE"
     ],
@@ -205,9 +205,9 @@
   {
     "item_id": "THPT-TOP09-P08",
     "content_version": 1,
-    "stem": "Viết tiếp tuyến của y=x³ tại x=1.",
-    "answer_key": "y=3x−2.",
-    "worked_solution": "Điểm tiếp xúc P(1,1), đạo hàm f'=3x² ⇒ hệ số góc 3. Tiếp tuyến y−1=3(x−1) ⇒ y=3x−2. Thay x=1 cho y=1 để kiểm.",
+    "stem": "Viết tiếp tuyến của \\(y=x^3\\) tại \\(x=1\\).",
+    "answer_key": "\\(y=3x-2\\).",
+    "worked_solution": "Điểm tiếp xúc \\(P(1;1)\\), đạo hàm \\(f'=3x^2\\) ⇒ hệ số góc 3. Tiếp tuyến \\(y-1=3(x-1)\\) ⇒ \\(y=3x-2\\). Thay \\(x=1\\) cho y=1 để kiểm.",
     "skill_ids": [
       "G11-B31-TANGENT_EQUATION"
     ],
@@ -234,9 +234,9 @@
   {
     "item_id": "THPT-TOP09-P09",
     "content_version": 1,
-    "stem": "Tọa độ s(t)=t³−6t²+9t (m), t≥0 (s). Tại t=2, vận tốc có hướng và tốc độ bằng bao nhiêu?",
-    "answer_key": "v(2)=−3 m/s; tốc độ=3 m/s.",
-    "worked_solution": "v(t)=s'(t)=3t²−12t+9; v(2)=12−24+9=−3. Âm báo chuyển động ngược chiều tọa độ dương, còn tốc độ là |v|=3, không mang dấu.",
+    "stem": "Tọa độ \\(s(t)=t^3-6t^2+9t\\) (m), \\(t\\ge0\\) (s). Tại \\(t=2\\), vận tốc có hướng và tốc độ bằng bao nhiêu?",
+    "answer_key": "\\(v(2)=-3\\) m/s; tốc độ=3 m/s.",
+    "worked_solution": "\\(v(t)=s'(t)=3t^2-12t+9\\); \\(v(2)=12-24+9=-3\\). Âm báo chuyển động ngược chiều tọa độ dương, còn tốc độ là \\(|v|=3\\), không mang dấu.",
     "skill_ids": [
       "G11-B31-INSTANT_VELOCITY"
     ],
@@ -263,9 +263,9 @@
   {
     "item_id": "THPT-TOP09-P10",
     "content_version": 1,
-    "stem": "Nhiệt độ T(t)=20+3t−0,5t² (°C), t tính theo phút. T'(2) bằng bao nhiêu, ý nghĩa và đơn vị?",
-    "answer_key": "T'(2)=1 °C/phút, nhiệt độ đang tăng tức thời.",
-    "worked_solution": "T'(t)=3−t; tại t=2 tốc độ thay đổi +1 °C trên mỗi phút. Đó không phải nhiệt độ T(2)=24 °C. Đơn vị đạo hàm là đơn vị giá trị chia đơn vị biến.",
+    "stem": "Nhiệt độ \\(T(t)=20+3t-0{,}5t^2\\) (°C), t tính theo phút. \\(T'(2)\\) bằng bao nhiêu, ý nghĩa và đơn vị?",
+    "answer_key": "\\(T'(2)=1\\) °C/phút, nhiệt độ đang tăng tức thời.",
+    "worked_solution": "\\(T'(t)=3-t\\); tại \\(t=2\\) tốc độ thay đổi +1 °C trên mỗi phút. Đó không phải nhiệt độ \\(T(2)=24\\) °C. Đơn vị đạo hàm là đơn vị giá trị chia đơn vị biến.",
     "skill_ids": [
       "G11-B31-RATE_UNITS"
     ],
@@ -292,9 +292,9 @@
   {
     "item_id": "THPT-TOP09-P11",
     "content_version": 1,
-    "stem": "Tính đạo hàm y=2x⁵−3x²+7.",
-    "answer_key": "y'=10x⁴−6x.",
-    "worked_solution": "Dùng (x^n)'=n x^{n−1}, hệ số nhân giữ nguyên, hằng 7 có đạo hàm 0. 2·5x⁴−3·2x=10x⁴−6x.",
+    "stem": "Tính đạo hàm \\(y=2x^5-3x^2+7\\).",
+    "answer_key": "\\(y'=10x^4-6x\\).",
+    "worked_solution": "Dùng \\((x^n)'=nx^{n-1}\\), hệ số nhân giữ nguyên, hằng 7 có đạo hàm 0. \\(2\\cdot5x^4-3\\cdot2x=10x^4-6x\\).",
     "skill_ids": [
       "G11-B32-POWER_INTEGER"
     ],
@@ -321,9 +321,9 @@
   {
     "item_id": "THPT-TOP09-P12",
     "content_version": 1,
-    "stem": "f(x)=√(x+1). Tìm miền xác định và công thức f'(x) tại các điểm trong miền; có f'(−1) hữu hạn hai phía không?",
-    "answer_key": "D=[−1,+∞), f'(x)=1/[2√(x+1)] khi x>−1; không có đạo hàm hai phía tại −1.",
-    "worked_solution": "Điều kiện căn x+1≥0. Trên x>−1, quy tắc đạo hàm hàm hợp cho 1/(2√(x+1)). Tại đầu mút x=−1, thương phải √h/h=1/√h→+∞; bên trái không thuộc miền, không có đạo hàm hữu hạn hai phía.",
+    "stem": "\\(f(x)=\\sqrt{x+1}\\). Tìm miền xác định và công thức \\(f'(x)\\) tại các điểm trong miền; có \\(f'(-1)\\) hữu hạn hai phía không?",
+    "answer_key": "\\(D=[-1;+\\infty)\\), \\(f'(x)=\\frac1{2\\sqrt{x+1}}\\) khi \\(x>-1\\); không có đạo hàm hai phía tại −1.",
+    "worked_solution": "Điều kiện căn \\(x+1\\ge0\\). Trên \\(x>-1\\), quy tắc đạo hàm hàm hợp cho \\(\\frac1{2\\sqrt{x+1}}\\). Tại đầu mút \\(x=-1\\), thương phải \\(\\frac{\\sqrt h}h=\\frac1{\\sqrt h}\\to+\\infty\\) khi \\(h\\to0^+\\); bên trái không thuộc miền, không có đạo hàm hữu hạn hai phía.",
     "skill_ids": [
       "G11-B32-SQRT_DOMAIN"
     ],
@@ -350,9 +350,9 @@
   {
     "item_id": "THPT-TOP09-P13",
     "content_version": 1,
-    "stem": "Tính y' nếu y=5−4x+7x², chỉ ra từng hạng đóng góp.",
-    "answer_key": "y'=−4+14x.",
-    "worked_solution": "(5)'=0, (−4x)'=−4, (7x²)'=14x. Tính tuyến tính cho tổng và hiệu giúp chia bài thành ba hạng.",
+    "stem": "Tính \\(y'\\) nếu \\(y=5-4x+7x^2\\), chỉ ra từng hạng đóng góp.",
+    "answer_key": "\\(y'=-4+14x\\).",
+    "worked_solution": "\\((5)'=0\\), \\((-4x)'=-4\\), \\((7x^2)'=14x\\). Tính tuyến tính cho tổng và hiệu giúp chia bài thành ba hạng.",
     "skill_ids": [
       "G11-B32-CONSTANT_SUM"
     ],
@@ -379,9 +379,9 @@
   {
     "item_id": "THPT-TOP09-P14",
     "content_version": 1,
-    "stem": "Tính đạo hàm y=x² sin x (x đo radian). Giải thích vì sao không lấy 2x cos x.",
-    "answer_key": "y'=2x sin x+x² cos x.",
-    "worked_solution": "u=x², v=sin x; u'=2x, v'=cos x (radian). (uv)'=u'v+uv'=2x sin x+x² cos x. Tích hai đạo hàm 2x cos x bỏ sót hai biến thiên tương ứng.",
+    "stem": "Tính đạo hàm \\(y=x^2\\sin x\\) (x đo radian). Giải thích vì sao không lấy \\(2x\\cos x\\).",
+    "answer_key": "\\(y'=2x\\sin x+x^2\\cos x\\).",
+    "worked_solution": "\\(u=x^2\\), \\(v=\\sin x\\); \\(u'=2x\\), \\(v'=\\cos x\\) (radian). \\((uv)'=u'v+uv'=2x\\sin x+x^2\\cos x\\). Tích hai đạo hàm \\(2x\\cos x\\) bỏ sót hai biến thiên tương ứng.",
     "skill_ids": [
       "G11-B32-PRODUCT"
     ],
@@ -408,9 +408,9 @@
   {
     "item_id": "THPT-TOP09-P15",
     "content_version": 1,
-    "stem": "Cho f(x)=(x²+1)/(x−1). Viết miền xác định và f'(x); tính f'(0).",
-    "answer_key": "D=ℝ\\{1}, f'=(x²−2x−1)/(x−1)², f'(0)=−1.",
-    "worked_solution": "u=x²+1,u'=2x; v=x−1,v'=1. (u/v)'=[2x(x−1)−(x²+1)]/(x−1)²=(x²−2x−1)/(x−1)², x≠1. Thế x=0 được −1.",
+    "stem": "Cho \\(f(x)=\\frac{x^2+1}{x-1}\\). Viết miền xác định và \\(f'(x)\\); tính \\(f'(0)\\).",
+    "answer_key": "\\(D=\\mathbb R\\setminus\\{1\\}\\), \\(f'=\\frac{x^2-2x-1}{(x-1)^2}\\), \\(f'(0)=-1\\).",
+    "worked_solution": "\\(u=x^2+1\\),\\(u'=2x\\); \\(v=x-1\\),\\(v'=1\\). \\((\\frac uv)'=\\frac{2x(x-1)-(x^2+1)}{(x-1)^2}=\\frac{x^2-2x-1}{(x-1)^2}\\), \\(x\\ne1\\). Thế \\(x=0\\) được −1.",
     "skill_ids": [
       "G11-B32-QUOTIENT"
     ],
@@ -437,9 +437,9 @@
   {
     "item_id": "THPT-TOP09-P16",
     "content_version": 1,
-    "stem": "Tính đạo hàm y=(3x−1)^4.",
-    "answer_key": "y'=12(3x−1)^3.",
-    "worked_solution": "Đặt u=3x−1, đạo hàm ngoài 4u³, đạo hàm trong u'=3; dây chuyền cho y'=4u³·3=12(3x−1)^3.",
+    "stem": "Tính đạo hàm \\(y=(3x-1)^4\\).",
+    "answer_key": "\\(y'=12(3x-1)^3\\).",
+    "worked_solution": "Đặt \\(u=3x-1\\), đạo hàm ngoài \\(4u^3\\), đạo hàm trong \\(u'=3\\); dây chuyền cho \\(y'=4u^3\\cdot3=12(3x-1)^3\\).",
     "skill_ids": [
       "G11-B32-COMPOSITION_CHAIN"
     ],
@@ -466,9 +466,9 @@
   {
     "item_id": "THPT-TOP09-P17",
     "content_version": 1,
-    "stem": "Tính đạo hàm y=−4sin x+5cos x, với x đo bằng radian. Tính y′(0).",
-    "answer_key": "y′=−4cos x−5sin x; y′(0)=−4.",
-    "worked_solution": "Dùng (sin x)′=cos x, (cos x)′=−sin x. Đạo hàm từng hạng là −4cos x và −5sin x. Tại x=0, cos0=1, sin0=0 nên y′(0)=−4.",
+    "stem": "Tính đạo hàm \\(y=-4\\sin x+5\\cos x\\), với x đo bằng radian. Tính \\(y'(0)\\).",
+    "answer_key": "\\(y'=-4\\cos x-5\\sin x\\); \\(y'(0)=-4\\).",
+    "worked_solution": "Dùng \\((\\sin x)'=\\cos x\\), \\((\\cos x)'=-\\sin x\\). Đạo hàm từng hạng là \\(-4\\cos x\\) và \\(-5\\sin x\\). Tại \\(x=0\\), \\(\\cos0=1\\), \\(\\sin0=0\\) nên \\(y'(0)=-4\\).",
     "skill_ids": [
       "G11-B32-TRIG_SIN_COS"
     ],
@@ -495,9 +495,9 @@
   {
     "item_id": "THPT-TOP09-P18",
     "content_version": 1,
-    "stem": "Tính đạo hàm f(x)=tan x+cot x và nêu miền xác định.",
-    "answer_key": "f'=1/cos²x−1/sin²x; D={x: sin x≠0 và cos x≠0}.",
-    "worked_solution": "Tan x xác định khi cos x≠0, cot x khi sin x≠0; miền là ℝ loại x=kπ/2 (k∈ℤ). Với x thuộc miền, (tan x)′=1/cos²x và (cot x)′=−1/sin²x (góc radian). Vậy f′=1/cos²x−1/sin²x.",
+    "stem": "Tính đạo hàm \\(f(x)=\\tan x+\\cot x\\) và nêu miền xác định.",
+    "answer_key": "\\(f'=\\frac1{\\cos^2 x}-\\frac1{\\sin^2 x}\\); \\(D=\\{x:\\sin x\\ne0,\\ \\cos x\\ne0\\}\\).",
+    "worked_solution": "\\(\\tan x\\) xác định khi \\(\\cos x\\ne0\\), \\(\\cot x\\) khi \\(\\sin x\\ne0\\); miền là \\(\\mathbb R\\setminus\\{\\frac{k\\pi}{2}:k\\in\\mathbb Z\\}\\). Với x thuộc miền, \\((\\tan x)'=\\frac1{\\cos^2 x}\\) và \\((\\cot x)'=-\\frac1{\\sin^2 x}\\) (góc radian). Vậy \\(f'=\\frac1{\\cos^2 x}-\\frac1{\\sin^2 x}\\).",
     "skill_ids": [
       "G11-B32-TRIG_TAN_COT"
     ],
@@ -524,9 +524,9 @@
   {
     "item_id": "THPT-TOP09-P19",
     "content_version": 1,
-    "stem": "Tính y' nếu y=sin(2x²), x đo radian.",
-    "answer_key": "y'=4x cos(2x²).",
-    "worked_solution": "Hàm ngoài sin u có đạo hàm cos u; u=2x² có u'=4x. Theo dây chuyền y'=cos(2x²)·4x.",
+    "stem": "Tính \\(y'\\) nếu \\(y=\\sin(2x^2)\\), x đo radian.",
+    "answer_key": "\\(y'=4x\\cos(2x^2)\\).",
+    "worked_solution": "Hàm ngoài sin u có đạo hàm cos u; \\(u=2x^2\\) có \\(u'=4x\\). Theo dây chuyền \\(y'=\\cos(2x^2)\\cdot4x\\).",
     "skill_ids": [
       "G11-B32-TRIG_CHAIN"
     ],
@@ -553,9 +553,9 @@
   {
     "item_id": "THPT-TOP09-P20",
     "content_version": 1,
-    "stem": "Tính đạo hàm y=2^x+e^x và nêu điều kiện cho cơ số.",
-    "answer_key": "y'=2^x ln2+e^x.",
-    "worked_solution": "Với a^x, a>0,a≠1, (a^x)'=a^x ln a. Với e^x, ln e=1. Vì 2>0,2≠1, công thức áp dụng toàn ℝ.",
+    "stem": "Tính đạo hàm \\(y=2^x+e^x\\) và nêu điều kiện cho cơ số.",
+    "answer_key": "\\(y'=2^x\\ln2+e^x\\).",
+    "worked_solution": "Với \\(a^x\\), \\(a>0\\),\\(a\\ne1\\), \\((a^x)'=a^x\\ln a\\). Với \\(e^x\\), \\(\\ln e=1\\). Vì 2>0,2≠1, công thức áp dụng toàn ℝ.",
     "skill_ids": [
       "G11-B32-EXP_DERIV"
     ],
@@ -582,9 +582,9 @@
   {
     "item_id": "THPT-TOP09-P21",
     "content_version": 1,
-    "stem": "Tính y' nếu y=ln x+log₃ x, nêu miền xác định.",
-    "answer_key": "D=(0,∞), y'=1/x+1/(x ln3).",
-    "worked_solution": "Cả ln và log₃ chỉ xác định khi x>0. Đạo hàm ln x=1/x; đạo hàm log_a x=1/(x ln a) với a>0,a≠1. Với a=3, kết quả như trên.",
+    "stem": "Tính \\(y'\\) nếu \\(y=\\ln x+\\log_3 x\\), nêu miền xác định.",
+    "answer_key": "\\(D=(0;+\\infty)\\), \\(y'=\\frac1x+\\frac1{x\\ln3}\\).",
+    "worked_solution": "Cả ln và \\(\\log_3\\) chỉ xác định khi \\(x>0\\). Đạo hàm \\((\\ln x)'=\\frac1x\\); đạo hàm \\((\\log_a x)'=\\frac1{x\\ln a}\\) với \\(a>0\\),\\(a\\ne1\\). Với a=3, kết quả như trên.",
     "skill_ids": [
       "G11-B32-LOG_DERIV"
     ],
@@ -611,9 +611,9 @@
   {
     "item_id": "THPT-TOP09-P22",
     "content_version": 1,
-    "stem": "Tính y' và miền xác định của y=ln(2x+1)+3^{x²}.",
-    "answer_key": "D=(−1/2,∞), y'=2/(2x+1)+2x·3^{x²}ln3.",
-    "worked_solution": "Điều kiện log là 2x+1>0, tức x>−1/2; hàm mũ cơ số 3 xác định với mọi x. Quy tắc đạo hàm hàm hợp cho [ln(2x+1)]′=2/(2x+1) và [3^{x²}]′=2x·3^{x²}ln3. Cộng hai hạng trên miền đã tìm.",
+    "stem": "Tính \\(y'\\) và miền xác định của \\(y=\\ln(2x+1)+3^{x^2}\\).",
+    "answer_key": "\\(D=(-\\frac12;+\\infty)\\), \\(y'=\\frac2{2x+1}+2x\\cdot3^{x^2}\\ln3\\).",
+    "worked_solution": "Điều kiện log là \\(2x+1>0\\), tức \\(x>-\\frac12\\); hàm mũ cơ số 3 xác định với mọi x. Quy tắc đạo hàm hàm hợp cho \\([\\ln(2x+1)]'=\\frac2{2x+1}\\) và \\([3^{x^2}]'=2x\\cdot3^{x^2}\\ln3\\). Cộng hai hạng trên miền đã tìm.",
     "skill_ids": [
       "G11-B32-EXP_LOG_CHAIN"
     ],
@@ -640,9 +640,9 @@
   {
     "item_id": "THPT-TOP09-P23",
     "content_version": 2,
-    "stem": "Với y=√(x−2)/ln x, xác định tập xác định và khoảng có thể tính đạo hàm bằng quy tắc thương.",
-    "answer_key": "D=[2,∞), có công thức đạo hàm theo quy tắc trên (2,∞); không có đạo hàm hữu hạn hai phía tại x=2.",
-    "worked_solution": "Điều kiện căn x≥2, ln x xác định và khác 0 vì x≥2. Với x>2, y′=[ln x/(2√(x−2))−√(x−2)/x]/(ln x)². Tại x=2, y(2)=0; thương phải với h>0 là √h/[h ln(2+h)]=1/[√h ln(2+h)]→+∞. Bên trái ngoài miền, nên không có đạo hàm hữu hạn hai phía tại 2.",
+    "stem": "Với \\(y=\\frac{\\sqrt{x-2}}{\\ln x}\\), xác định tập xác định và khoảng có thể tính đạo hàm bằng quy tắc thương.",
+    "answer_key": "\\(D=[2;+\\infty)\\), có công thức đạo hàm theo quy tắc trên \\((2;+\\infty)\\); không có đạo hàm hữu hạn hai phía tại \\(x=2\\).",
+    "worked_solution": "Điều kiện căn \\(x\\ge2\\), \\(\\ln x\\) xác định và khác 0 vì \\(x\\ge2\\). Với \\(x>2\\), \\(y'=\\frac{\\frac{\\ln x}{2\\sqrt{x-2}}-\\frac{\\sqrt{x-2}}x}{(\\ln x)^2}\\). Tại \\(x=2\\), \\(y(2)=0\\); thương phải với \\(h>0\\) là \\(\\frac{\\sqrt h}{h\\ln(2+h)}=\\frac1{\\sqrt h\\ln(2+h)}\\to+\\infty\\) khi \\(h\\to0^+\\). Bên trái ngoài miền, nên không có đạo hàm hữu hạn hai phía tại 2.",
     "skill_ids": [
       "G11-B32-DOMAIN_VALIDATION"
     ],
@@ -669,9 +669,9 @@
   {
     "item_id": "THPT-TOP09-P24",
     "content_version": 1,
-    "stem": "Tính đạo hàm y=x²e^{3x}. Chỉ ra thứ tự quy tắc tối ưu.",
-    "answer_key": "y'=e^{3x}(2x+3x²).",
-    "worked_solution": "Nhận diện tích u=x² và v=e^{3x}. Đạo hàm u'=2x; v'=3e^{3x} theo dây chuyền. Tích: y'=2x e^{3x}+x²·3e^{3x}=e^{3x}(2x+3x²).",
+    "stem": "Tính đạo hàm \\(y=x^2e^{3x}\\). Chỉ ra thứ tự quy tắc tối ưu.",
+    "answer_key": "\\(y'=e^{3x}(2x+3x^2)\\).",
+    "worked_solution": "Nhận diện tích \\(u=x^2\\) và \\(v=e^{3x}\\). Đạo hàm \\(u'=2x\\); \\(v'=3e^{3x}\\) theo dây chuyền. Tích: \\(y'=2xe^{3x}+x^2\\cdot3e^{3x}=e^{3x}(2x+3x^2)\\).",
     "skill_ids": [
       "G11-B32-RULE_SELECTION"
     ],
@@ -698,9 +698,9 @@
   {
     "item_id": "THPT-TOP09-P25",
     "content_version": 1,
-    "stem": "Tọa độ s(t)=t³−3t²+2t (m), t≥0 s. Tính vận tốc và tốc độ tại t=0,5 và t=1; vật đi theo chiều nào tại mỗi thời điểm?",
-    "answer_key": "v(0,5)=−0,25 m/s, tốc độ 0,25 m/s; v(1)=−1 m/s, tốc độ 1 m/s; đều theo chiều âm.",
-    "worked_solution": "v(t)=3t²−6t+2. Tại 0,5: 3·0,25−3+2=−0,25; tại 1: 3−6+2=−1. Hai vận tốc đều âm nên vật đang đi theo chiều âm tại hai thời điểm. Tốc độ tương ứng là trị tuyệt đối 0,25 và 1 m/s.",
+    "stem": "Tọa độ \\(s(t)=t^3-3t^2+2t\\) (m), \\(t\\ge0\\) s. Tính vận tốc và tốc độ tại \\(t=0{,}5\\) và \\(t=1\\); vật đi theo chiều nào tại mỗi thời điểm?",
+    "answer_key": "\\(v(0{,}5)=-0{,}25\\) m/s, tốc độ \\(0{,}25\\) m/s; \\(v(1)=-1\\) m/s, tốc độ 1 m/s; đều theo chiều âm.",
+    "worked_solution": "\\(v(t)=3t^2-6t+2\\). Tại \\(t=0{,}5\\): \\(3\\cdot0{,}25-3+2=-0{,}25\\); tại \\(t=1\\): \\(3-6+2=-1\\). Hai vận tốc đều âm nên vật đang đi theo chiều âm tại hai thời điểm. Tốc độ tương ứng là trị tuyệt đối \\(0{,}25\\) và 1 m/s.",
     "skill_ids": [
       "G11-B32-APPLIED_VELOCITY"
     ],
@@ -727,9 +727,9 @@
   {
     "item_id": "THPT-TOP09-P26",
     "content_version": 1,
-    "stem": "f(x)=x³. Tính f', f'' và f''(2); f'' có phải (f')² không?",
-    "answer_key": "f'=3x², f''=6x, f''(2)=12; không phải (3x²)².",
-    "worked_solution": "Lấy đạo hàm f một lần được 3x², lấy đạo hàm của hàm mới thêm lần nữa được 6x. Ký hiệu f''=(f')' yêu cầu f' khả vi; không bình phương f'.",
+    "stem": "\\(f(x)=x^3\\). Tính \\(f'\\), \\(f''\\) và \\(f''(2)\\); \\(f''\\) có phải \\((f')^2\\) không?",
+    "answer_key": "\\(f'=3x^2\\), \\(f''=6x\\), \\(f''(2)=12\\); không phải \\((3x^2)^2\\).",
+    "worked_solution": "Lấy đạo hàm f một lần được \\(3x^2\\), lấy đạo hàm của hàm mới thêm lần nữa được 6x. Ký hiệu \\(f''=(f')'\\) yêu cầu \\(f'\\) khả vi; không bình phương \\(f'\\).",
     "skill_ids": [
       "G11-B33-SECOND_DEF"
     ],
@@ -756,9 +756,9 @@
   {
     "item_id": "THPT-TOP09-P27",
     "content_version": 1,
-    "stem": "Tính f'(x), f''(x) cho f(x)=2x⁴−x³+5.",
-    "answer_key": "f'=8x³−3x²; f''=24x²−6x.",
-    "worked_solution": "Từng hạng: f'=8x³−3x²; đạo hàm lại cho 24x²−6x. Hằng 5 mất ở lần đầu, không xuất hiện lại.",
+    "stem": "Tính \\(f'(x)\\), \\(f''(x)\\) cho \\(f(x)=2x^4-x^3+5\\).",
+    "answer_key": "\\(f'=8x^3-3x^2\\); \\(f''=24x^2-6x\\).",
+    "worked_solution": "Từng hạng: \\(f'=8x^3-3x^2\\); đạo hàm lại cho \\(24x^2-6x\\). Hằng 5 mất ở lần đầu, không xuất hiện lại.",
     "skill_ids": [
       "G11-B33-POLYNOMIAL"
     ],
@@ -785,9 +785,9 @@
   {
     "item_id": "THPT-TOP09-P28",
     "content_version": 1,
-    "stem": "Với f(x)=e^{2x}+sin(3x), tính f''(x).",
-    "answer_key": "f''=4e^{2x}−9sin(3x).",
-    "worked_solution": "Lần đầu f'=2e^{2x}+3cos(3x). Lần hai lấy đạo hàm của 2e^{2x} được 4e^{2x}, của 3cos(3x) được −9sin(3x); dùng dây chuyền ở cả hai lần.",
+    "stem": "Với \\(f(x)=e^{2x}+\\sin(3x)\\), tính \\(f''(x)\\).",
+    "answer_key": "\\(f''=4e^{2x}-9\\sin(3x)\\).",
+    "worked_solution": "Lần đầu \\(f'=2e^{2x}+3\\cos(3x)\\). Lần hai lấy đạo hàm của \\(2e^{2x}\\) được \\(4e^{2x}\\), của \\(3\\cos(3x)\\) được \\(-9\\sin(3x)\\); dùng dây chuyền ở cả hai lần.",
     "skill_ids": [
       "G11-B33-TRIG_EXP"
     ],
@@ -814,9 +814,9 @@
   {
     "item_id": "THPT-TOP09-P29",
     "content_version": 1,
-    "stem": "s(t)=t³−6t²+9t (m), t≥0 s. Tính gia tốc a(1) từ s''.",
-    "answer_key": "a(1)=−6 m/s².",
-    "worked_solution": "v(t)=3t²−12t+9 (m/s), a(t)=v'(t)=6t−12 (m/s²). Tại t=1, a=6−12=−6. Gia tốc là đạo hàm vận tốc, không phải s(t) hoặc (s')².",
+    "stem": "\\(s(t)=t^3-6t^2+9t\\) (m), \\(t\\ge0\\) s. Tính gia tốc \\(a(1)\\) từ \\(s''\\).",
+    "answer_key": "\\(a(1)=-6\\) m/s².",
+    "worked_solution": "\\(v(t)=3t^2-12t+9\\) (m/s), \\(a(t)=v'(t)=6t-12\\) (m/s²). Tại \\(t=1\\), \\(a=6-12=-6\\). Gia tốc là đạo hàm vận tốc, không phải s(t) hoặc \\((s')^2\\).",
     "skill_ids": [
       "G11-B33-ACCELERATION"
     ],
@@ -843,9 +843,9 @@
   {
     "item_id": "THPT-TOP09-P30",
     "content_version": 1,
-    "stem": "Chuyển động s(t)=t²−4t (m), t≥0. Ở t=1 và t=3, vật tăng tốc hay giảm tốc theo nghĩa tốc độ |v|?",
-    "answer_key": "t=1 tốc độ giảm, t=3 tốc độ tăng (ở lân cận các thời điểm này).",
-    "worked_solution": "v=2t−4,a=2. Khi t=1, v=−2,a=+2 ngược dấu, vận tốc tiến tới0 nên tốc độ giảm. Khi t=3, v=+2,a=+2 cùng dấu, tốc độ tăng. Tại t=2, v=0 vật đổi chiều, không suy 'gia tốc dương luôn nhanh dần' cho mọi t.",
+    "stem": "Chuyển động \\(s(t)=t^2-4t\\) (m), \\(t\\ge0\\). Ở \\(t=1\\) và \\(t=3\\), vật tăng tốc hay giảm tốc theo nghĩa tốc độ \\(|v|\\)?",
+    "answer_key": "\\(t=1\\) tốc độ giảm, \\(t=3\\) tốc độ tăng (ở lân cận các thời điểm này).",
+    "worked_solution": "\\(v=2t-4,\\ a=2\\). Khi \\(t=1\\), \\(v=-2,\\ a=+2\\) ngược dấu, vận tốc tiến tới0 nên tốc độ giảm. Khi \\(t=3\\), \\(v=+2,\\ a=+2\\) cùng dấu, tốc độ tăng. Tại \\(t=2\\), \\(v=0\\) vật đổi chiều, không suy 'gia tốc dương luôn nhanh dần' cho mọi t.",
     "skill_ids": [
       "G11-B33-SIGN_INTERPRET"
     ],
@@ -872,9 +872,9 @@
   {
     "item_id": "THPT-TOP09-P31",
     "content_version": 1,
-    "stem": "Cho f(x)=(x²+1)e^x. Tính f(0), f'(0), f''(0) và tiếp tuyến tại x=0.",
-    "answer_key": "f(0)=1; f'(0)=1; f''(0)=3; tiếp tuyến y=x+1.",
-    "worked_solution": "Quy tắc tích: f'=e^x(2x+x²+1). Lần hai f''=e^x(2x+x²+1)+e^x(2+2x)=e^x(x²+4x+3). Tại0: f=1,f'=1,f''=3. Tiếp tuyến y−1=1(x−0). Không lấy f'' làm độ dốc tiếp tuyến.",
+    "stem": "Cho \\(f(x)=(x^2+1)e^x\\). Tính \\(f(0)\\), \\(f'(0)\\), \\(f''(0)\\) và tiếp tuyến tại \\(x=0\\).",
+    "answer_key": "\\(f(0)=1\\); \\(f'(0)=1\\); \\(f''(0)=3\\); tiếp tuyến \\(y=x+1\\).",
+    "worked_solution": "Quy tắc tích: \\(f'=e^x(2x+x^2+1)\\). Lần hai \\(f''=e^x(2x+x^2+1)+e^x(2+2x)=e^x(x^2+4x+3)\\). Tại0: \\(f(0)=1,\\ f'(0)=1,\\ f''(0)=3\\). Tiếp tuyến \\(y-1=1(x-0)\\). Không lấy \\(f''\\) làm độ dốc tiếp tuyến.",
     "skill_ids": [
       "G11-CHIX-INTEGRATED"
     ],
@@ -901,9 +901,9 @@
   {
     "item_id": "THPT-TOP09-P32",
     "content_version": 1,
-    "stem": "f(x)=x², x ban đầu a=2 và tăng Δx=0,1. Tính vi phân tuyến tính dy=f'(a)Δx, độ tăng thật Δy=f(2,1)−f(2), sai lệch |Δy−dy|; phát biểu điều kiện khi dùng xấp xỉ.",
-    "answer_key": "dy=0,4; Δy=0,41; sai lệch=0,01.",
-    "worked_solution": "f'(x)=2x nên f'(2)=4. Vi phân tại a=2 ứng với dx=0,1 là dy=4·0,1=0,4. Độ tăng thực là 2,1²−2²=4,41−4=0,41. Với f=x², Δy=2aΔx+(Δx)² nên Δy−dy=(Δx)²=0,01; vì hàm khả vi tại a và Δx nhỏ, dy là xấp xỉ bậc nhất, không phải đẳng thức Δy=dy. Nếu bước thay đổi lớn, phần dư có thể đáng kể.",
+    "stem": "\\(f(x)=x^2\\), x ban đầu \\(a=2\\) và tăng \\(\\Delta x=0{,}1\\). Tính vi phân tuyến tính \\(dy=f'(a)\\Delta x\\), độ tăng thật \\(\\Delta y=f(2{,}1)-f(2)\\), sai lệch \\(|\\Delta y-dy|\\); phát biểu điều kiện khi dùng xấp xỉ.",
+    "answer_key": "\\(dy=0{,}4\\); \\(\\Delta y=0{,}41\\); sai lệch \\(0{,}01\\).",
+    "worked_solution": "\\(f'(x)=2x\\) nên \\(f'(2)=4\\). Vi phân tại \\(a=2\\) ứng với \\(dx=0{,}1\\) là \\(dy=4\\cdot0{,}1=0{,}4\\). Độ tăng thực là \\((2{,}1)^2-2^2=4{,}41-4=0{,}41\\). Với \\(f=x^2\\), \\(\\Delta y=2a\\Delta x+(\\Delta x)^2\\) nên \\(\\Delta y-dy=(\\Delta x)^2=0{,}01\\); vì hàm khả vi tại a và Δx nhỏ, dy là xấp xỉ bậc nhất, không phải đẳng thức \\(\\Delta y=dy\\). Nếu bước thay đổi lớn, phần dư có thể đáng kể.",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP09-O32"

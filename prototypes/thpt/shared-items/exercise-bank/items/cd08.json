@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-TOP08-P01",
     "content_version": 1,
-    "stem": "Dãy u_n=5+4/n, n nguyên dương. Tìm giới hạn, cho biết có số hạng nào bằng 5 không và tìm chỉ số nhỏ nhất để |u_n−5|<0,1.",
+    "stem": "Dãy \\(u_n=5+\\frac4n\\), n nguyên dương. Tìm giới hạn, cho biết có số hạng nào bằng 5 không và tìm chỉ số nhỏ nhất để \\(|u_n-5|<0{,}1\\).",
     "answer_key": "Giới hạn 5; không đạt 5; n nhỏ nhất là 41.",
-    "worked_solution": "Vì 4/n→0 nên u_n→5. Với mọi n≥1, u_n−5=4/n>0 nên không số hạng nào bằng 5. Điều kiện 4/n<0,1 tương đương n>40 vì n dương; chỉ số nguyên nhỏ nhất là 41. Tại n=40, khoảng cách đúng bằng 0,1 nên không thỏa dấu nghiêm.",
+    "worked_solution": "Vì \\(\\frac4n\\to0\\) nên \\(u_n\\to5\\). Với mọi \\(n\\ge1\\), \\(u_n-5=\\frac4n>0\\) nên không số hạng nào bằng 5. Điều kiện \\(\\frac4n<0{,}1\\) tương đương \\(n>40\\) vì n dương; chỉ số nguyên nhỏ nhất là 41. Tại \\(n=40\\), khoảng cách đúng bằng \\(0{,}1\\) nên không thỏa dấu nghiêm.",
     "skill_ids": [
       "G11-B15-FINITE_SEQUENCE"
     ],
@@ -31,9 +31,9 @@
   {
     "item_id": "THPT-TOP08-P02",
     "content_version": 1,
-    "stem": "Xét v_n=(−1)^n+1/n, n≥1. Dãy có giới hạn hữu hạn hay giới hạn ±∞ không? Giải thích bằng hai dãy chỉ số chẵn/lẻ.",
+    "stem": "Xét \\(v_n=(-1)^n+\\frac1n\\), \\(n\\ge1\\). Dãy có giới hạn hữu hạn hay giới hạn ±∞ không? Giải thích bằng hai dãy chỉ số chẵn/lẻ.",
     "answer_key": "Không có giới hạn hữu hạn hay ±∞.",
-    "worked_solution": "Với n=2k, v_{2k}=1+1/(2k)→1. Với n=2k+1, v_{2k+1}=−1+1/(2k+1)→−1. Hai dãy con tiến tới hai số khác nhau; không thể có giới hạn chung, và cũng không tiến tới vô cực cùng dấu.",
+    "worked_solution": "Với \\(n=2k\\), \\(v_{2k}=1+\\frac1{2k}\\to1\\). Với \\(n=2k+1\\), \\(v_{2k+1}=-1+\\frac1{2k+1}\\to-1\\). Hai dãy con tiến tới hai số khác nhau; không thể có giới hạn chung, và cũng không tiến tới vô cực cùng dấu.",
     "skill_ids": [
       "G11-B15-INFINITE_SEQUENCE"
     ],
@@ -60,9 +60,9 @@
   {
     "item_id": "THPT-TOP08-P03",
     "content_version": 1,
-    "stem": "Tính lim(n→∞)(−2/5)^n và cho biết việc luân phiên dấu có ngăn dãy hội tụ không.",
+    "stem": "Tính \\(\\lim_{n\\to\\infty}\\left(-\\frac25\\right)^n\\) và cho biết việc luân phiên dấu có ngăn dãy hội tụ không.",
     "answer_key": "Giới hạn bằng 0; luân phiên dấu không ngăn hội tụ.",
-    "worked_solution": "Do |−2/5|=2/5<1, trị tuyệt đối |(−2/5)^n|=(2/5)^n→0. Suy ra chính dãy tiến về 0 theo định lí kẹp; dấu có thể luân phiên nhưng độ lớn giảm về 0.",
+    "worked_solution": "Do \\(\\left|-\\frac25\\right|=\\frac25<1\\), trị tuyệt đối \\(\\left|(-\\frac25)^n\\right|=(\\frac25)^n\\to0\\). Suy ra chính dãy tiến về 0 theo định lí kẹp; dấu có thể luân phiên nhưng độ lớn giảm về 0.",
     "skill_ids": [
       "G11-B15-FINITE_SEQUENCE"
     ],
@@ -89,9 +89,9 @@
   {
     "item_id": "THPT-TOP08-P04",
     "content_version": 1,
-    "stem": "Tính lim(n→∞)(7n²−3n+1)/(2n²+n) với n≥1.",
-    "answer_key": "7/2.",
-    "worked_solution": "Chia cả tử/mẫu cho n²: (7−3/n+1/n²)/(2+1/n)→7/2. Mẫu giới hạn bằng 2 khác 0 nên luật thương hợp lệ.",
+    "stem": "Tính \\(\\lim_{n\\to\\infty}\\frac{7n^2-3n+1}{2n^2+n}\\) với \\(n\\ge1\\).",
+    "answer_key": "\\(\\frac{7}{2}\\).",
+    "worked_solution": "Chia cả tử/mẫu cho \\(n^2\\): \\(\\frac{7-\\frac3n+\\frac1{n^2}}{2+\\frac1n}\\to\\frac72\\). Mẫu giới hạn bằng 2 khác 0 nên luật thương hợp lệ.",
     "skill_ids": [
       "G11-B15-LIMIT_ARITHMETIC"
     ],
@@ -118,9 +118,9 @@
   {
     "item_id": "THPT-TOP08-P05",
     "content_version": 1,
-    "stem": "Tính tổng vô hạn 12+3+3/4+3/16+⋯, và nêu điều kiện dùng công thức.",
-    "answer_key": "16; công bội q=1/4 thỏa |q|<1.",
-    "worked_solution": "Đây là CSN a=12, q=3/12=1/4. S_n=12(1−(1/4)^n)/(1−1/4); khi n→∞ thì (1/4)^n→0 nên tổng vô hạn bằng 12/(3/4)=16.",
+    "stem": "Tính tổng vô hạn \\(12+3+\\frac34+\\frac3{16}+\\cdots\\), và nêu điều kiện dùng công thức.",
+    "answer_key": "16; công bội \\(q=\\frac14\\) thỏa \\(|q|<1\\).",
+    "worked_solution": "Đây là CSN \\(a=12\\), \\(q=\\frac3{12}=\\frac14\\). \\(S_n=\\frac{12(1-(\\frac14)^n)}{1-\\frac14}\\); khi \\(n\\to\\infty\\) thì \\((\\frac14)^n\\to0\\) nên tổng vô hạn bằng \\(\\frac{12}{\\frac34}=16\\).",
     "skill_ids": [
       "G11-B15-GEOMETRIC"
     ],
@@ -147,9 +147,9 @@
   {
     "item_id": "THPT-TOP08-P06",
     "content_version": 1,
-    "stem": "Với f(x)=(x²−6x+8)/(x−2), x≠2, tính lim(x→2)f(x). Hàm có cần định nghĩa tại x=2 để có giới hạn không?",
-    "answer_key": "Giới hạn −2; f(2) không cần được định nghĩa.",
-    "worked_solution": "Tử=(x−2)(x−4). Với x≠2, f(x)=x−4, nên khi x→2 thì f(x)→−2. Phép rút gọn chỉ đúng trong lân cận loại điểm; giới hạn không xác nhận f(2).",
+    "stem": "Với \\(f(x)=\\frac{x^2-6x+8}{x-2}\\), \\(x\\ne2\\), tính \\(\\lim_{x\\to2}f(x)\\). Hàm có cần định nghĩa tại \\(x=2\\) để có giới hạn không?",
+    "answer_key": "Giới hạn −2; \\(f(2)\\) không cần được định nghĩa.",
+    "worked_solution": "Tử \\((x-2)(x-4)\\). Với \\(x\\ne2\\), \\(f(x)=x-4\\), nên khi \\(x\\to2\\) thì \\(f(x)\\to-2\\). Phép rút gọn chỉ đúng trong lân cận loại điểm; giới hạn không xác nhận \\(f(2)\\).",
     "skill_ids": [
       "G11-B16-LIMIT_AT_POINT"
     ],
@@ -176,9 +176,9 @@
   {
     "item_id": "THPT-TOP08-P07",
     "content_version": 1,
-    "stem": "Cho f(x)=x+1 nếu x<1, và f(x)=x²+3 nếu x≥1. Tính hai giới hạn một phía tại 1 và quyết định có lim(x→1)f(x) không.",
+    "stem": "Cho \\(f(x)=x+1\\) nếu \\(x<1\\), và \\(f(x)=x^2+3\\) nếu \\(x\\ge1\\). Tính hai giới hạn một phía tại 1 và quyết định có \\(\\lim_{x\\to1}f(x)\\) không.",
     "answer_key": "Trái 2, phải 4; không tồn tại giới hạn hai phía hữu hạn.",
-    "worked_solution": "Khi x→1⁻ dùng nhánh x+1 nên được 2. Khi x→1⁺ dùng nhánh x²+3 nên được 4. Hai giới hạn một phía khác nhau thì giới hạn hai phía không tồn tại dù f(1)=4 xác định.",
+    "worked_solution": "Khi \\(x\\to1^-\\) dùng nhánh \\(x+1\\) nên được 2. Khi \\(x\\to1^+\\) dùng nhánh \\(x^2+3\\) nên được 4. Hai giới hạn một phía khác nhau thì giới hạn hai phía không tồn tại dù \\(f(1)=4\\) xác định.",
     "skill_ids": [
       "G11-B16-ONE_SIDED"
     ],
@@ -205,9 +205,9 @@
   {
     "item_id": "THPT-TOP08-P08",
     "content_version": 1,
-    "stem": "Xét f(x)=(x+1)/(x−2). Khi x→2⁻ và x→2⁺, f(x) tiến tới đâu? Có giới hạn hữu hạn hai phía không?",
+    "stem": "Xét \\(f(x)=\\frac{x+1}{x-2}\\). Khi \\(x\\to2^-\\) và \\(x\\to2^+\\), \\(f(x)\\) tiến tới đâu? Có giới hạn hữu hạn hai phía không?",
     "answer_key": "Giới hạn trái −∞, phải +∞; không có giới hạn hai phía hữu hạn.",
-    "worked_solution": "Gần x=2, tử x+1→3>0. Mẫu x−2 âm rất nhỏ từ trái ⇒ f→−∞; dương rất nhỏ từ phải ⇒ f→+∞. Không gộp hai vô cực khác dấu thành một giới hạn.",
+    "worked_solution": "Gần \\(x=2\\), tử \\(x+1\\to3>0\\). Mẫu \\(x-2\\) âm rất nhỏ từ trái ⇒ \\(f(x)\\to-\\infty\\); dương rất nhỏ từ phải ⇒ \\(f(x)\\to+\\infty\\). Không gộp hai vô cực khác dấu thành một giới hạn.",
     "skill_ids": [
       "G11-B16-INFINITE_LIMIT"
     ],
@@ -234,9 +234,9 @@
   {
     "item_id": "THPT-TOP08-P09",
     "content_version": 1,
-    "stem": "Tính lim(x→−∞)(4x³−3)/(2x²+x) và giải thích dấu vô cực.",
-    "answer_key": "−∞.",
-    "worked_solution": "Chia cả tử và mẫu cho x²: (4x−3/x²)/(2+1/x). Khi x→−∞, tử→−∞, mẫu→2>0. Vì mẫu dương và tiến tới số khác 0 nên thương→−∞. Không lấy tỉ số 4/2 vì bậc tử lớn hơn bậc mẫu.",
+    "stem": "Tính \\(\\lim_{x\\to-\\infty}\\frac{4x^3-3}{2x^2+x}\\) và giải thích dấu vô cực.",
+    "answer_key": "\\(-\\infty\\).",
+    "worked_solution": "Chia cả tử và mẫu cho \\(x^2\\): \\(\\frac{4x-\\frac3{x^2}}{2+\\frac1x}\\). Khi \\(x\\to-\\infty\\), tử tiến tới \\(-\\infty\\), mẫu tiến tới \\(2>0\\). Vì mẫu dương và tiến tới số khác 0 nên thương tiến tới \\(-\\infty\\). Không lấy tỉ số \\(\\frac42\\) vì bậc tử lớn hơn bậc mẫu.",
     "skill_ids": [
       "G11-B16-LIMIT_AT_INFINITY"
     ],
@@ -263,9 +263,9 @@
   {
     "item_id": "THPT-TOP08-P10",
     "content_version": 1,
-    "stem": "Tính lim(x→3)(x²−x−6)/(x−3). Vì sao phép thế ban đầu chưa có giá trị?",
+    "stem": "Tính \\(\\lim_{x\\to3}\\frac{x^2-x-6}{x-3}\\). Vì sao phép thế ban đầu chưa có giá trị?",
     "answer_key": "5.",
-    "worked_solution": "x²−x−6=(x−3)(x+2). Biểu thức không xác định tại x=3 và thế trực tiếp cho 0/0, nhưng với x≠3 ta khử nhân tử x−3, lấy lim(x+2)=5. Giới hạn khác việc định nghĩa f(3).",
+    "worked_solution": "\\(x^2-x-6=(x-3)(x+2)\\). Biểu thức không xác định tại \\(x=3\\) và thế trực tiếp cho \\(\\frac{0}{0}\\), nhưng với \\(x\\ne3\\) ta khử nhân tử \\(x-3\\), lấy \\(\\lim_{x\\to3}(x+2)=5\\). Giới hạn khác việc định nghĩa \\(f(3)\\).",
     "skill_ids": [
       "G11-B16-ALGEBRAIC_TECHNIQUES"
     ],
@@ -292,9 +292,9 @@
   {
     "item_id": "THPT-TOP08-P11",
     "content_version": 1,
-    "stem": "Tính lim(x→4)(√(x+5)−3)/(x−4).",
-    "answer_key": "1/6.",
-    "worked_solution": "Nhân liên hợp tử: [(√(x+5)−3)(√(x+5)+3)]/[(x−4)(√(x+5)+3)] = (x−4)/[(x−4)(√(x+5)+3)]=1/(√(x+5)+3), x≠4 trong miền. Khi x→4, mẫu→6, lim=1/6.",
+    "stem": "Tính \\(\\lim_{x\\to4}\\frac{\\sqrt{x+5}-3}{x-4}\\).",
+    "answer_key": "\\(\\frac{1}{6}\\).",
+    "worked_solution": "Nhân liên hợp tử: \\(\\frac{(\\sqrt{x+5}-3)(\\sqrt{x+5}+3)}{(x-4)(\\sqrt{x+5}+3)}=\\frac{x-4}{(x-4)(\\sqrt{x+5}+3)}=\\frac1{\\sqrt{x+5}+3}\\), \\(x\\ne4\\) trong miền. Khi \\(x\\to4\\), mẫu tiến tới 6, \\(\\lim_{x\\to4}\\frac{\\sqrt{x+5}-3}{x-4}=\\frac16\\).",
     "skill_ids": [
       "G11-B16-ALGEBRAIC_TECHNIQUES"
     ],
@@ -321,9 +321,9 @@
   {
     "item_id": "THPT-TOP08-P12",
     "content_version": 1,
-    "stem": "Tính hai giới hạn của √(x²+2x)−x khi x→+∞ và khi x→−∞. Giải thích vì sao kết quả khác nhau.",
-    "answer_key": "Khi x→+∞: 1; khi x→−∞: +∞.",
-    "worked_solution": "Khi x→+∞, x>0, nhân liên hợp rồi chia cho x: 2/[√(1+2/x)+1]→1. Khi x→−∞, x≤−2 thuộc miền căn, −x→+∞ và √(x²+2x)≥0; do đó √(x²+2x)−x≥−x→+∞. Không dùng √(x²)=x khi x<0.",
+    "stem": "Tính hai giới hạn của \\(\\sqrt{x^2+2x}-x\\) khi \\(x\\to+\\infty\\) và khi \\(x\\to-\\infty\\). Giải thích vì sao kết quả khác nhau.",
+    "answer_key": "Khi \\(x\\to+\\infty\\): 1; khi \\(x\\to-\\infty\\): \\(+\\infty\\).",
+    "worked_solution": "Khi \\(x\\to+\\infty\\), \\(x>0\\), nhân liên hợp rồi chia cho x: \\(\\frac2{\\sqrt{1+\\frac2x}+1}\\to1\\). Khi \\(x\\to-\\infty\\), \\(x\\le-2\\) thuộc miền căn, \\(-x\\to+\\infty\\) và \\(\\sqrt{x^2+2x}\\ge0\\); do đó \\(\\sqrt{x^2+2x}-x\\ge-x\\to+\\infty\\). Không dùng \\(\\sqrt{x^2}=x\\) khi \\(x<0\\); đúng là \\(\\sqrt{x^2}=|x|\\).",
     "skill_ids": [
       "G11-B16-LIMIT_AT_INFINITY"
     ],
@@ -350,9 +350,9 @@
   {
     "item_id": "THPT-TOP08-P13",
     "content_version": 1,
-    "stem": "f(x)=(x²−4)/(x−2) với x≠2, f(2)=k. Tìm k để f liên tục tại 2.",
-    "answer_key": "k=4.",
-    "worked_solution": "Trong lân cận x≠2, f=x+2 ⇒ lim(x→2)f=4. Liên tục tại 2 đòi f(2) được định nghĩa và bằng giới hạn, nên k=4; các k khác tạo gián đoạn có thể sửa được.",
+    "stem": "\\(f(x)=\\frac{x^2-4}{x-2}\\) với \\(x\\ne2\\), \\(f(2)=k\\). Tìm k để f liên tục tại 2.",
+    "answer_key": "\\(k=4\\).",
+    "worked_solution": "Trong lân cận \\(x\\ne2\\), \\(f=x+2\\) ⇒ \\(\\lim_{x\\to2}f(x)=4\\). Liên tục tại 2 đòi \\(f(2)\\) được định nghĩa và bằng giới hạn, nên \\(k=4\\); các k khác tạo gián đoạn có thể sửa được.",
     "skill_ids": [
       "G11-B17-CONTINUITY_POINT"
     ],
@@ -379,9 +379,9 @@
   {
     "item_id": "THPT-TOP08-P14",
     "content_version": 1,
-    "stem": "Xét hai hàm tại x=1: f(x)=(x²−4x+3)/(x−1) nếu x≠1, f(1)=9; g(x)=x−3 nếu x<1, g(x)=x+1 nếu x≥1. Phân loại gián đoạn và cho biết có thể sửa chỉ bằng đổi giá trị tại 1 không.",
-    "answer_key": "f gián đoạn có thể khử, sửa f(1)=−2; g gián đoạn nhảy, không thể sửa chỉ tại 1.",
-    "worked_solution": "Với x≠1, f(x)=x−3, hai giới hạn một phía đều bằng −2 nhưng f(1)=9; đổi f(1) thành −2 làm liên tục. Với g, giới hạn trái bằng −2, giới hạn phải bằng 2, khác nhau. Đổi g(1) không làm thay đổi hai giới hạn nên không thể khử bước nhảy bằng việc sửa một điểm.",
+    "stem": "Xét hai hàm tại \\(x=1\\): \\(f(x)=\\frac{x^2-4x+3}{x-1}\\) nếu \\(x\\ne1\\), \\(f(1)=9\\); \\(g(x)=x-3\\) nếu \\(x<1\\), \\(g(x)=x+1\\) nếu \\(x\\ge1\\). Phân loại gián đoạn và cho biết có thể sửa chỉ bằng đổi giá trị tại 1 không.",
+    "answer_key": "f gián đoạn có thể khử, sửa \\(f(1)=-2\\); g gián đoạn nhảy, không thể sửa chỉ tại 1.",
+    "worked_solution": "Với \\(x\\ne1\\), \\(f(x)=x-3\\), hai giới hạn một phía đều bằng −2 nhưng \\(f(1)=9\\); đổi \\(f(1)\\) thành −2 làm liên tục. Với g, giới hạn trái bằng −2, giới hạn phải bằng 2, khác nhau. Đổi \\(g(1)\\) không làm thay đổi hai giới hạn nên không thể khử bước nhảy bằng việc sửa một điểm.",
     "skill_ids": [
       "G11-B17-CONTINUITY_POINT"
     ],
@@ -408,9 +408,9 @@
   {
     "item_id": "THPT-TOP08-P15",
     "content_version": 1,
-    "stem": "Xét f(x)=√(x(4−x)) trên miền [0,4]. Hàm có liên tục trên đoạn [0,4] theo nghĩa tương đối không? Giá trị ở hai đầu là gì?",
-    "answer_key": "Có; f(0)=f(4)=0.",
-    "worked_solution": "Biểu thức x(4−x)≥0 đúng trên [0,4]; đa thức và căn bậc hai liên tục trên miền thích hợp, nên hàm liên tục bên trong. Tại 0 dùng giới hạn phải bằng f(0)=0; tại 4 dùng giới hạn trái bằng f(4)=0. Không cần giới hạn từ ngoài miền.",
+    "stem": "Xét \\(f(x)=\\sqrt{x(4-x)}\\) trên miền \\([0;4]\\). Hàm có liên tục trên đoạn \\([0;4]\\) theo nghĩa tương đối không? Giá trị ở hai đầu là gì?",
+    "answer_key": "Có; \\(f(0)=f(4)=0\\).",
+    "worked_solution": "Biểu thức \\(x(4-x)\\ge0\\) đúng trên \\([0;4]\\); đa thức và căn bậc hai liên tục trên miền thích hợp, nên hàm liên tục bên trong. Tại 0 dùng giới hạn phải bằng \\(f(0)=0\\); tại 4 dùng giới hạn trái bằng \\(f(4)=0\\). Không cần giới hạn từ ngoài miền.",
     "skill_ids": [
       "G11-B17-CONTINUITY_INTERVAL"
     ],
@@ -437,9 +437,9 @@
   {
     "item_id": "THPT-TOP08-P16",
     "content_version": 1,
-    "stem": "Tìm miền xác định và các khoảng/đoạn liên tục theo miền cho f(x)=√(x−1)/(x−3).",
-    "answer_key": "D=[1,3)∪(3,+∞); liên tục trên mỗi thành phần theo nghĩa tương đối, tại x=1 liên tục phải.",
-    "worked_solution": "Cần x−1≥0 ⇒ x≥1, đồng thời x−3≠0 ⇒ x≠3. Căn và phép chia liên tục nơi xác định; tại x=1, f(1)=0/(−2)=0 và giới hạn phải cùng bằng 0. Không nói f liên tục xuyên điểm loại 3.",
+    "stem": "Tìm miền xác định và các khoảng/đoạn liên tục theo miền cho \\(f(x)=\\frac{\\sqrt{x-1}}{x-3}\\).",
+    "answer_key": "\\(D=[1;3)\\cup(3;+\\infty)\\); liên tục trên mỗi thành phần theo nghĩa tương đối, tại \\(x=1\\) liên tục phải.",
+    "worked_solution": "Cần \\(x-1\\ge0\\) ⇒ \\(x\\ge1\\), đồng thời \\(x-3\\ne0\\) ⇒ \\(x\\ne3\\). Căn và phép chia liên tục nơi xác định; tại \\(x=1\\), \\(f(1)=\\frac0{-2}=0\\) và giới hạn phải cùng bằng 0. Không nói f liên tục xuyên điểm loại 3.",
     "skill_ids": [
       "G11-B17-CONTINUITY_OPERATIONS"
     ],
@@ -466,9 +466,9 @@
   {
     "item_id": "THPT-TOP08-P17",
     "content_version": 1,
-    "stem": "Chứng minh x³+x−1=0 có ít nhất một nghiệm trong (0;1). Sau đó xét tính duy nhất bằng một lập luận riêng, không dùng đạo hàm.",
-    "answer_key": "Có đúng một nghiệm trong (0;1).",
-    "worked_solution": "g(x)=x³+x−1 liên tục trên [0;1], g(0)=−1<0, g(1)=1>0. Theo định lí giá trị trung gian có nghiệm c∈(0;1). Nếu 0<x<y<1 thì x³<y³ và x<y, nên g(x)<g(y). Vì g tăng nghiêm ngặt, không thể có hai nghiệm trong (0;1). Định lí đổi dấu chỉ cho tồn tại; tính duy nhất cần lập luận đơn điệu.",
+    "stem": "Chứng minh \\(x^3+x-1=0\\) có ít nhất một nghiệm trong \\((0;1)\\). Sau đó xét tính duy nhất bằng một lập luận riêng, không dùng đạo hàm.",
+    "answer_key": "Có đúng một nghiệm trong \\((0;1)\\).",
+    "worked_solution": "\\(g(x)=x^3+x-1\\) liên tục trên \\([0;1]\\), \\(g(0)=-1<0\\), \\(g(1)=1>0\\). Theo định lí giá trị trung gian có nghiệm \\(c\\in(0;1)\\). Nếu \\(0<x<y<1\\) thì \\(x^3<y^3\\) và \\(x<y\\), nên \\(g(x)<g(y)\\). Vì g tăng nghiêm ngặt, không thể có hai nghiệm trong \\((0;1)\\). Định lí đổi dấu chỉ cho tồn tại; tính duy nhất cần lập luận đơn điệu.",
     "skill_ids": [
       "G11-B17-ZERO_EXISTENCE"
     ],
@@ -495,9 +495,9 @@
   {
     "item_id": "THPT-TOP08-P18",
     "content_version": 1,
-    "stem": "Mô hình giả định g(t)=t²+t−3, t∈[1,2]. Chứng minh có thời điểm g(t)=0; sau hai bước chia đôi nêu một khoảng dài 1/4 chứa nghiệm.",
-    "answer_key": "Có nghiệm; khoảng [5/4,3/2] sau 2 bước chia đôi.",
-    "worked_solution": "g là đa thức nên liên tục; g(1)=−1<0,g(2)=3>0. Giữa [1,2] tại 3/2: g(3/2)=3/4>0 nên giữ [1,3/2]; giữa khoảng đó tại 5/4: g(5/4)=25/16+5/4−3=−3/16<0 nên giữ [5/4,3/2] dài 1/4. Đây là một mô hình toán giả định, không tự suy diễn dữ liệu thực tế.",
+    "stem": "Mô hình giả định \\(g(t)=t^2+t-3\\), \\(t\\in[1;2]\\). Chứng minh có thời điểm \\(g(t)=0\\); sau hai bước chia đôi nêu một khoảng dài \\(\\frac{1}{4}\\) chứa nghiệm.",
+    "answer_key": "Có nghiệm; khoảng \\([\\frac54;\\frac32]\\) sau 2 bước chia đôi.",
+    "worked_solution": "g là đa thức nên liên tục; \\(g(1)=-1<0,\\ g(2)=3>0\\). Giữa \\([1;2]\\) tại \\(\\frac{3}{2}\\): \\(g(\\frac32)=\\frac34>0\\) nên giữ \\([1;\\frac32]\\); giữa khoảng đó tại \\(\\frac{5}{4}\\): \\(g(\\frac54)=\\frac{25}{16}+\\frac54-3=-\\frac3{16}<0\\) nên giữ \\([\\frac54;\\frac32]\\) dài \\(\\frac14\\). Đây là một mô hình toán giả định, không tự suy diễn dữ liệu thực tế.",
     "skill_ids": [
       "G11-B17-ZERO_EXISTENCE"
     ],
