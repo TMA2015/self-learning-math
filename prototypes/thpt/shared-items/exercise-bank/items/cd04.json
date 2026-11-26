@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-TOP04-P01",
     "content_version": "R01",
-    "stem": "Giải thích tại sao 3^(-2)·9=1 nhưng 0^(-2) không xác định.",
-    "answer_key": "3^(-2)·9=1; 0^(-2) không xác định.",
-    "worked_solution": "3^(-2)=1/9 vì 3≠0; nhân 9 cho 1. Nếu thay cơ số bằng 0 thì số mũ −2 đòi lấy 1/0², là phép chia cho 0.",
+    "stem": "Giải thích tại sao \\(3^{-2}\\cdot9=1\\) nhưng \\(0^{-2}\\) không xác định.",
+    "answer_key": "\\(3^{-2}\\cdot9=1\\); \\(0^{-2}\\) không xác định.",
+    "worked_solution": "\\(3^{-2}=\\frac19\\) vì \\(3\\ne0\\); nhân 9 cho 1. Nếu thay cơ số bằng 0 thì số mũ \\(-2\\) đòi chia cho \\(0^2=0\\), là phép chia cho 0.",
     "skill_ids": [
       "G11-B18-POWER_INTEGER"
     ],
@@ -32,9 +32,9 @@
   {
     "item_id": "THPT-TOP04-P02",
     "content_version": "R01",
-    "stem": "Phân biệt ⁴√16 với nghiệm của x⁴=16; tính thêm ³√(−8).",
-    "answer_key": "⁴√16=2; x⁴=16 có x=±2; ³√(−8)=−2.",
-    "worked_solution": "Căn số học bậc chẵn chỉ nhận giá trị không âm; phương trình bậc chẵn có thể có hai nghiệm đối nhau. Căn bậc lẻ của số âm có nghĩa vì (−2)³=−8.",
+    "stem": "Phân biệt \\(\\sqrt[4]{16}\\) với nghiệm của \\(x^4=16\\); tính thêm \\(\\sqrt[3]{-8}\\).",
+    "answer_key": "\\(\\sqrt[4]{16}=2\\); \\(x^4=16\\) có \\(x=\\pm2\\); \\(\\sqrt[3]{-8}=-2\\).",
+    "worked_solution": "Căn số học bậc chẵn chỉ nhận giá trị không âm; phương trình bậc chẵn có thể có hai nghiệm đối nhau. Căn bậc lẻ của số âm có nghĩa vì \\((-2)^3=-8\\).",
     "skill_ids": [
       "G11-B18-POWER_RATIONAL"
     ],
@@ -62,9 +62,9 @@
   {
     "item_id": "THPT-TOP04-P03",
     "content_version": "R01",
-    "stem": "So sánh 2^(√2) và 2^(3/2) mà không dùng máy tính; nêu điều kiện cơ số.",
-    "answer_key": "2^(√2) < 2^(3/2).",
-    "worked_solution": "√2<3/2 vì 2<9/4, và y=2^x tăng nghiêm ngặt. Cơ số 2>0 nên lũy thừa với số mũ vô tỉ xác định.",
+    "stem": "So sánh \\(2^{\\sqrt2}\\) và \\(2^{\\frac32}\\) mà không dùng máy tính; nêu điều kiện cơ số.",
+    "answer_key": "\\(2^{\\sqrt2}<2^{\\frac32}\\).",
+    "worked_solution": "\\(\\sqrt2<\\frac32\\) vì \\(2<\\frac94\\), và \\(y=2^x\\) tăng nghiêm ngặt. Cơ số \\(2>0\\) nên lũy thừa với số mũ vô tỉ xác định.",
     "skill_ids": [
       "G11-B18-POWER_REAL"
     ],
@@ -92,9 +92,9 @@
   {
     "item_id": "THPT-TOP04-P04",
     "content_version": "R01",
-    "stem": "So sánh (1/2)^(√3) với (1/2)^2, giải thích dấu so sánh.",
-    "answer_key": "(1/2)^(√3) > (1/2)^2.",
-    "worked_solution": "√3<2, nhưng cơ số 1/2 nằm giữa 0 và 1 nên hàm lũy thừa theo số mũ giảm: số mũ nhỏ cho giá trị lớn. Không được dùng quy tắc so sánh cơ số >1.",
+    "stem": "So sánh \\(\\left(\\frac12\\right)^{\\sqrt3}\\) với \\(\\left(\\frac12\\right)^2\\), giải thích dấu so sánh.",
+    "answer_key": "\\(\\left(\\frac12\\right)^{\\sqrt3}>\\left(\\frac12\\right)^2\\).",
+    "worked_solution": "\\(\\sqrt3<2\\), nhưng cơ số \\(\\frac12\\) nằm giữa 0 và 1 nên hàm lũy thừa theo số mũ giảm: số mũ nhỏ cho giá trị lớn. Không được dùng quy tắc so sánh của cơ số lớn hơn 1.",
     "skill_ids": [
       "G11-B18-POWER_REAL"
     ],
@@ -122,9 +122,9 @@
   {
     "item_id": "THPT-TOP04-P05",
     "content_version": "R01",
-    "stem": "Với a>0, rút gọn E=a^(3/4)·a^(−1/4)/√a. Điều kiện nào bảo đảm phép tính có nghĩa?",
-    "answer_key": "E=1 với a>0.",
-    "worked_solution": "√a=a^(1/2)>0 vì a>0. E=a^(3/4−1/4−1/2)=a^0=1. Với a=0 phép chia cho √a không xác định; với a âm không dùng nhất quán mũ thực theo định nghĩa SGK.",
+    "stem": "Với \\(a>0\\), rút gọn \\(E=\\frac{a^{\\frac34}\\cdot a^{-\\frac14}}{\\sqrt a}\\). Điều kiện nào bảo đảm phép tính có nghĩa?",
+    "answer_key": "\\(E=1\\) với \\(a>0\\).",
+    "worked_solution": "\\(\\sqrt a=a^{\\frac12}>0\\) vì \\(a>0\\). Ta có \\(E=a^{\\frac34-\\frac14-\\frac12}=a^0=1\\). Với \\(a=0\\), phép chia cho \\(\\sqrt a\\) không xác định; với a âm không dùng nhất quán mũ thực theo định nghĩa SGK.",
     "skill_ids": [
       "G11-B18-POWER_LAWS"
     ],
@@ -152,9 +152,9 @@
   {
     "item_id": "THPT-TOP04-P06",
     "content_version": "R01",
-    "stem": "Tính log₄(1/8) và giải thích số âm xuất hiện ở đâu.",
-    "answer_key": "log₄(1/8)=−3/2.",
-    "worked_solution": "4^(−3/2)=1/(√4)^3=1/8. Logarit là số mũ cần đặt lên cơ số 4 để nhận 1/8, không phải đối số âm.",
+    "stem": "Tính \\(\\log_4\\frac18\\) và giải thích số âm xuất hiện ở đâu.",
+    "answer_key": "\\(\\log_4\\frac18=-\\frac32\\).",
+    "worked_solution": "\\(4^{-\\frac32}=\\frac1{(\\sqrt4)^3}=\\frac18\\). Lôgarit là số mũ cần đặt lên cơ số 4 để nhận \\(\\frac18\\), không phải đối số âm.",
     "skill_ids": [
       "G11-B19-LOG_DEFINITION"
     ],
@@ -182,9 +182,9 @@
   {
     "item_id": "THPT-TOP04-P07",
     "content_version": "R01",
-    "stem": "Tìm miền xác định của log₃[(x−1)(x−4)]. Ở miền nào có thể tách thành log₃(x−1)+log₃(x−4)?",
-    "answer_key": "Miền x<1 hoặc x>4; chỉ tách thành tổng log thực khi x>4.",
-    "worked_solution": "Điều kiện (x−1)(x−4)>0 ⇒ x<1 hoặc x>4. Để tách, **từng** đối số x−1 và x−4 phải dương ⇒ x>4; x<1 cho tích dương nhưng hai thừa số âm.",
+    "stem": "Tìm miền xác định của \\(\\log_3[(x-1)(x-4)]\\). Ở miền nào có thể tách thành \\(\\log_3(x-1)+\\log_3(x-4)\\)?",
+    "answer_key": "Miền \\(x<1\\) hoặc \\(x>4\\); chỉ tách thành tổng lôgarit thực khi \\(x>4\\).",
+    "worked_solution": "Điều kiện \\((x-1)(x-4)>0\\) suy ra \\(x<1\\) hoặc \\(x>4\\). Để tách, **từng** đối số \\(x-1\\) và \\(x-4\\) phải dương, suy ra \\(x>4\\); \\(x<1\\) cho tích dương nhưng hai thừa số âm.",
     "skill_ids": [
       "G11-B19-LOG_DOMAIN"
     ],
@@ -212,9 +212,9 @@
   {
     "item_id": "THPT-TOP04-P08",
     "content_version": "R01",
-    "stem": "Tìm tập xác định của log₂((x−3)²). Đẳng thức log₂((x−3)²)=2log₂(x−3) có đúng trên toàn tập xác định không? Viết một biểu thức tương đương trên toàn miền.",
-    "answer_key": "D=ℝ\\{3}; đẳng thức đã cho chỉ đúng khi x>3. Trên D, log₂((x−3)²)=2log₂|x−3|.",
-    "worked_solution": "Điều kiện (x−3)²>0 tương đương x≠3. Nếu x<3, log₂(x−3) không có nghĩa dù bình phương dương. Với mọi x≠3, |x−3|>0 và (x−3)²=|x−3|², nên log₂((x−3)²)=2log₂|x−3|.",
+    "stem": "Tìm tập xác định của \\(\\log_2((x-3)^2)\\). Đẳng thức \\(\\log_2((x-3)^2)=2\\log_2(x-3)\\) có đúng trên toàn tập xác định không? Viết một biểu thức tương đương trên toàn miền.",
+    "answer_key": "\\(D=\\mathbb R\\setminus\\{3\\}\\); đẳng thức đã cho chỉ đúng khi \\(x>3\\). Trên D, \\(\\log_2((x-3)^2)=2\\log_2|x-3|\\).",
+    "worked_solution": "Điều kiện \\((x-3)^2>0\\) tương đương \\(x\\ne3\\). Nếu \\(x<3\\), \\(\\log_2(x-3)\\) không có nghĩa dù bình phương dương. Với mọi \\(x\\ne3\\), \\(|x-3|>0\\) và \\((x-3)^2=|x-3|^2\\), nên \\(\\log_2((x-3)^2)=2\\log_2|x-3|\\).",
     "skill_ids": [
       "G11-B19-LOG_DOMAIN"
     ],
@@ -242,9 +242,9 @@
   {
     "item_id": "THPT-TOP04-P09",
     "content_version": "R01",
-    "stem": "Tính log₂24−log₂3. Vì sao không cần tính riêng hai số thập phân?",
+    "stem": "Tính \\(\\log_2 24-\\log_2 3\\). Vì sao không cần tính riêng hai số thập phân?",
     "answer_key": "3.",
-    "worked_solution": "Hai đối số 24,3 đều dương. Quy tắc log thương cho log₂(24/3)=log₂8=3 vì 2³=8. Quy tắc chỉ hợp khi cả hai log được xác định.",
+    "worked_solution": "Hai đối số 24, 3 đều dương. Quy tắc thương cho \\(\\log_2\\frac{24}{3}=\\log_2 8=3\\) vì \\(2^3=8\\). Quy tắc chỉ hợp lệ khi cả hai lôgarit được xác định.",
     "skill_ids": [
       "G11-B19-LOG_LAWS"
     ],
@@ -272,9 +272,9 @@
   {
     "item_id": "THPT-TOP04-P10",
     "content_version": "R01",
-    "stem": "Tính log₄8 bằng hai cách: tìm số mũ và đổi cơ số log₂.",
-    "answer_key": "3/2.",
-    "worked_solution": "4^(3/2)=(√4)^3=8. Mặt khác log₄8=log₂8/log₂4=3/2, mẫu ≠0 do cơ số 4≠1.",
+    "stem": "Tính \\(\\log_4 8\\) bằng hai cách: tìm số mũ và đổi sang cơ số 2.",
+    "answer_key": "\\(\\frac32\\).",
+    "worked_solution": "\\(4^{\\frac32}=(\\sqrt4)^3=8\\). Mặt khác \\(\\log_4 8=\\frac{\\log_2 8}{\\log_2 4}=\\frac32\\), mẫu khác 0 do cơ số \\(4\\ne1\\).",
     "skill_ids": [
       "G11-B19-LOG_BASE_CHANGE"
     ],
@@ -302,9 +302,9 @@
   {
     "item_id": "THPT-TOP04-P11",
     "content_version": "R01",
-    "stem": "Tính log_(1/9)3. Giá trị này dương hay âm?",
-    "answer_key": "−1/2.",
-    "worked_solution": "(1/9)^(−1/2)=1/√(1/9)=3; do cơ số 1/9<1, số mũ âm có thể cho giá trị >1. Cơ số vẫn hợp lệ vì >0, ≠1.",
+    "stem": "Tính \\(\\log_{\\frac19}3\\). Giá trị này dương hay âm?",
+    "answer_key": "\\(-\\frac12\\).",
+    "worked_solution": "\\(\\left(\\frac19\\right)^{-\\frac12}=\\frac1{\\sqrt{\\frac19}}=3\\); do cơ số \\(\\frac19<1\\), số mũ âm có thể cho giá trị lớn hơn 1. Cơ số vẫn hợp lệ vì dương và khác 1.",
     "skill_ids": [
       "G11-B19-LOG_DEFINITION"
     ],
@@ -332,9 +332,9 @@
   {
     "item_id": "THPT-TOP04-P12",
     "content_version": "R01",
-    "stem": "Cho f(x)=(1/3)^x. Nêu tập xác định, tập giá trị và tính f(0), f(−1).",
-    "answer_key": "D=ℝ, T=(0,+∞), f(0)=1, f(−1)=3.",
-    "worked_solution": "Với cơ số 1/3>0 khác 1, hàm mũ xác định mọi x thực, luôn dương. (1/3)^0=1, (1/3)^(−1)=3; không có nghiệm f(x)=0.",
+    "stem": "Cho \\(f(x)=\\left(\\frac13\\right)^x\\). Nêu tập xác định, tập giá trị và tính \\(f(0)\\), \\(f(-1)\\).",
+    "answer_key": "\\(D=\\mathbb R,\\ T=(0;+\\infty),\\ f(0)=1,\\ f(-1)=3\\).",
+    "worked_solution": "Với cơ số \\(\\frac13>0\\) khác 1, hàm mũ xác định với mọi x thực, luôn dương. \\(\\left(\\frac13\\right)^0=1\\), \\(\\left(\\frac13\\right)^{-1}=3\\); không có nghiệm của \\(f(x)=0\\).",
     "skill_ids": [
       "G11-B20-EXP_FUNCTION"
     ],
@@ -362,9 +362,9 @@
   {
     "item_id": "THPT-TOP04-P13",
     "content_version": "R01",
-    "stem": "Hàm y=2^x có thể cắt trục hoành không? Khi x→−∞ thì y tiến về số nào?",
-    "answer_key": "Không cắt Ox; y>0 mọi x và tiến về 0 từ phía dương khi x→−∞.",
-    "worked_solution": "Mọi lũy thừa thực của cơ số 2>0 đều dương, nên không có nghiệm 2^x=0. Nếu x giảm không giới hạn, 2^x=1/2^(−x) tiến về 0 nhưng không bằng 0.",
+    "stem": "Hàm \\(y=2^x\\) có thể cắt trục hoành không? Khi \\(x\\to-\\infty\\) thì y tiến về số nào?",
+    "answer_key": "Không cắt Ox; \\(y>0\\) với mọi x và tiến về 0 từ phía dương khi \\(x\\to-\\infty\\).",
+    "worked_solution": "Mọi lũy thừa thực của cơ số \\(2>0\\) đều dương, nên không có nghiệm \\(2^x=0\\). Nếu x giảm không giới hạn, \\(2^x=\\frac1{2^{-x}}\\) tiến về 0 nhưng không bằng 0.",
     "skill_ids": [
       "G11-B20-EXP_FUNCTION"
     ],
@@ -392,9 +392,9 @@
   {
     "item_id": "THPT-TOP04-P14",
     "content_version": "R01",
-    "stem": "Sắp xếp theo thứ tự giảm dần các giá trị (1/5)^(−1), (1/5)^0 và (1/5)^2.",
-    "answer_key": "5 > 1 > 1/25, tương ứng các số mũ −1,0,2.",
-    "worked_solution": "Với 0<a=1/5<1, a^x nghịch biến. Tính trực tiếp: a^(−1)=5, a^0=1, a²=1/25.",
+    "stem": "Sắp xếp theo thứ tự giảm dần các giá trị \\(\\left(\\frac15\\right)^{-1}\\), \\(\\left(\\frac15\\right)^0\\) và \\(\\left(\\frac15\\right)^2\\).",
+    "answer_key": "\\(5>1>\\frac1{25}\\), tương ứng các số mũ \\(-1,0,2\\).",
+    "worked_solution": "Với \\(0<a=\\frac15<1\\), hàm \\(a^x\\) nghịch biến. Tính trực tiếp: \\(a^{-1}=5,\\ a^0=1,\\ a^2=\\frac1{25}\\).",
     "skill_ids": [
       "G11-B20-EXP_MONOTONIC"
     ],
@@ -422,9 +422,9 @@
   {
     "item_id": "THPT-TOP04-P15",
     "content_version": "R01",
-    "stem": "Cho g(x)=log_(1/2)x. Nêu miền, tính g(1/4), g(4) và nhận xét biến thiên.",
-    "answer_key": "D=(0,+∞), g(1/4)=2, g(4)=−2, hàm nghịch biến.",
-    "worked_solution": "(1/2)^2=1/4 và (1/2)^(−2)=4. Cơ số nằm giữa 0 và 1 nên logarit giảm; trục Oy (x=0) là tiệm cận đứng, không có log cho x≤0.",
+    "stem": "Cho \\(g(x)=\\log_{\\frac12}x\\). Nêu miền, tính \\(g(\\frac14)\\), \\(g(4)\\) và nhận xét biến thiên.",
+    "answer_key": "\\(D=(0;+\\infty),\\ g(\\frac14)=2,\\ g(4)=-2\\), hàm nghịch biến.",
+    "worked_solution": "\\(\\left(\\frac12\\right)^2=\\frac14\\) và \\(\\left(\\frac12\\right)^{-2}=4\\). Cơ số nằm giữa 0 và 1 nên hàm lôgarit giảm; trục Oy (\\(x=0\\)) là tiệm cận đứng, không có lôgarit cho \\(x\\le0\\).",
     "skill_ids": [
       "G11-B20-LOG_MONOTONIC"
     ],
@@ -452,9 +452,9 @@
   {
     "item_id": "THPT-TOP04-P16",
     "content_version": "R01",
-    "stem": "Với f(x)=2^x, g(x)=log₂x, tìm điểm tương ứng trên g nếu (−1;1/2) nằm trên f; nói rõ miền của g(f(x)) và f(g(x)).",
-    "answer_key": "Điểm (1/2;−1). g(f(x))=x với mọi x∈ℝ; f(g(x))=x chỉ khi x>0.",
-    "worked_solution": "Hai hàm ngược nhau nên tọa độ đổi chỗ qua y=x. f(x)>0 với mọi x nên g(f(x)) có nghĩa; g(x) chỉ tồn tại x>0, do đó f(g(x)) chỉ xét x>0.",
+    "stem": "Với \\(f(x)=2^x,\\ g(x)=\\log_2 x\\), tìm điểm tương ứng trên g nếu \\((-1;\\frac12)\\) nằm trên f; nói rõ miền của \\(g(f(x))\\) và \\(f(g(x))\\).",
+    "answer_key": "Điểm \\((\\frac12;-1)\\). \\(g(f(x))=x\\) với mọi \\(x\\in\\mathbb R\\); \\(f(g(x))=x\\) chỉ khi \\(x>0\\).",
+    "worked_solution": "Hai hàm ngược nhau nên tọa độ đổi chỗ qua \\(y=x\\). \\(f(x)>0\\) với mọi x nên \\(g(f(x))\\) có nghĩa; \\(g(x)\\) chỉ tồn tại khi \\(x>0\\), do đó \\(f(g(x))\\) chỉ xét \\(x>0\\).",
     "skill_ids": [
       "G11-B20-INVERSE_GRAPH"
     ],
@@ -482,9 +482,9 @@
   {
     "item_id": "THPT-TOP04-P17",
     "content_version": "R01",
-    "stem": "Giải 9^x+2·3^x−3=0 trên ℝ bằng đặt ẩn t=3^x>0. Nêu nghiệm ẩn phụ bị loại.",
-    "answer_key": "S={0}; loại t=−3.",
-    "worked_solution": "Vì 9^x=(3^x)², đặt t=3^x>0. Phương trình thành t²+2t−3=(t−1)(t+3)=0. t=−3 bị loại do 3^x>0; t=1 cho 3^x=1=3^0 nên x=0. Thử 1+2−3=0.",
+    "stem": "Giải \\(9^x+2\\cdot3^x-3=0\\) trên \\(\\mathbb R\\) bằng đặt ẩn \\(t=3^x>0\\). Nêu nghiệm ẩn phụ bị loại.",
+    "answer_key": "\\(S=\\{0\\}\\); loại \\(t=-3\\).",
+    "worked_solution": "Vì \\(9^x=(3^x)^2\\), đặt \\(t=3^x>0\\). Phương trình thành \\(t^2+2t-3=(t-1)(t+3)=0\\). \\(t=-3\\) bị loại do \\(3^x>0\\); \\(t=1\\) cho \\(3^x=1=3^0\\) nên \\(x=0\\). Thử \\(1+2-3=0\\).",
     "skill_ids": [
       "G11-B21-EXP_EQUATION"
     ],
@@ -512,9 +512,9 @@
   {
     "item_id": "THPT-TOP04-P18",
     "content_version": "R01",
-    "stem": "Giải log₂(x−1)+log₂(x−3)=3, ghi điều kiện và nghiệm bị loại.",
-    "answer_key": "S={5}.",
-    "worked_solution": "ĐK x−1>0 và x−3>0 ⇒ x>3. Gộp log: (x−1)(x−3)=2³=8 ⇒ x²−4x−5=(x−5)(x+1)=0. Ứng viên 5,−1; chỉ 5 hợp miền. Thử log₂4+log₂2=3.",
+    "stem": "Giải \\(\\log_2(x-1)+\\log_2(x-3)=3\\), ghi điều kiện và nghiệm bị loại.",
+    "answer_key": "\\(S=\\{5\\}\\).",
+    "worked_solution": "Điều kiện \\(x-1>0\\) và \\(x-3>0\\Rightarrow x>3\\). Gộp lôgarit: \\((x-1)(x-3)=2^3=8\\Rightarrow x^2-4x-5=(x-5)(x+1)=0\\). Ứng viên \\(5,-1\\); chỉ \\(5\\) hợp miền. Thử \\(\\log_2 4+\\log_2 2=3\\).",
     "skill_ids": [
       "G11-B21-LOG_EQUATION"
     ],
@@ -542,9 +542,9 @@
   {
     "item_id": "THPT-TOP04-P19",
     "content_version": "R01",
-    "stem": "Giải (1/3)^(2x−1) ≥ (1/3)^(x+2) trên ℝ.",
-    "answer_key": "S=(−∞,3].",
-    "worked_solution": "Vì 0<1/3<1, hàm mũ nghịch biến; bất phương trình tương đương 2x−1≤x+2 ⇒ x≤3. x=3 cho dấu bằng nên lấy mốc.",
+    "stem": "Giải \\(\\left(\\frac13\\right)^{2x-1}\\ge\\left(\\frac13\\right)^{x+2}\\) trên \\(\\mathbb R\\).",
+    "answer_key": "\\(S=(-\\infty;3]\\).",
+    "worked_solution": "Vì \\(0<\\frac13<1\\), hàm mũ nghịch biến; bất phương trình tương đương \\(2x-1\\le x+2\\Rightarrow x\\le3\\). \\(x=3\\) cho dấu bằng nên lấy mốc.",
     "skill_ids": [
       "G11-B21-EXP_INEQUALITY"
     ],
@@ -572,9 +572,9 @@
   {
     "item_id": "THPT-TOP04-P20",
     "content_version": "R01",
-    "stem": "Giải log_(1/2)(x−1) ≤ log_(1/2)(5−x) trong ℝ.",
-    "answer_key": "S=[3,5).",
-    "worked_solution": "Điều kiện x−1>0 và 5−x>0 ⇒ 1<x<5. Cơ số 1/2 làm log giảm, nên x−1≥5−x ⇒ x≥3. Lấy giao với miền: [3,5), 5 bị loại vì log 0 vô nghĩa.",
+    "stem": "Giải \\(\\log_{\\frac12}(x-1)\\le\\log_{\\frac12}(5-x)\\) trong \\(\\mathbb R\\).",
+    "answer_key": "\\(S=[3;5)\\).",
+    "worked_solution": "Điều kiện \\(x-1>0\\) và \\(5-x>0\\Rightarrow 1<x<5\\). Cơ số \\(\\frac12\\) làm hàm lôgarit nghịch biến, nên \\(x-1\\ge5-x\\Rightarrow x\\ge3\\). Lấy giao với miền: \\([3;5)\\), \\(5\\) bị loại vì lôgarit của \\(0\\) không xác định.",
     "skill_ids": [
       "G11-B21-LOG_INEQUALITY"
     ],
@@ -602,9 +602,9 @@
   {
     "item_id": "THPT-TOP04-P21",
     "content_version": "R01",
-    "stem": "Một quần thể giả định có 500 cá thể và giảm 20% sau mỗi chu kỳ, không có sinh nhập cư. Mô hình N(n)=500·0,8^n. Tính N(3) và diễn giải phạm vi mô hình.",
-    "answer_key": "N(3)=256 cá thể **theo mô hình giảm cố định 20% mỗi chu kỳ**; đây là kết quả của công thức đã cho, không phải một kỳ vọng xác suất. Số lượng ngoài thực tế có thể khác khi các giả thiết của mô hình không còn đúng.",
-    "worked_solution": "Mỗi chu kỳ nhân 1−0,2=0,8; ba chu kỳ 500·(4/5)³=500·64/125=256. Mô hình nhân cố định chỉ là giả thiết, không tính các biến cố ngẫu nhiên.",
+    "stem": "Một quần thể giả định có 500 cá thể và giảm 20% sau mỗi chu kỳ, không có sinh nhập cư. Mô hình \\(N(n)=500\\cdot0{,}8^n\\). Tính \\(N(3)\\) và diễn giải phạm vi mô hình.",
+    "answer_key": "\\(N(3)=256\\) cá thể **theo mô hình giảm cố định 20% mỗi chu kỳ**; đây là kết quả của công thức đã cho, không phải một kỳ vọng xác suất. Số lượng ngoài thực tế có thể khác khi các giả thiết của mô hình không còn đúng.",
+    "worked_solution": "Mỗi chu kỳ nhân \\(1-0{,}2=0{,}8\\); ba chu kỳ \\(500\\cdot\\left(\\frac45\\right)^3=500\\cdot\\frac{64}{125}=256\\). Mô hình nhân cố định chỉ là giả thiết, không tính các biến cố ngẫu nhiên.",
     "skill_ids": [
       "G11-B18-GROWTH_MODEL"
     ],
@@ -632,9 +632,9 @@
   {
     "item_id": "THPT-TOP04-P22",
     "content_version": "R01",
-    "stem": "Giải log₂(x²−1)=log₂(3x+3), bắt buộc ghi miền hai đối số trước khi biến đổi.",
-    "answer_key": "S={4}.",
-    "worked_solution": "ĐK x²−1>0 (x<−1 hoặc x>1) và 3x+3>0 (x>−1), giao là x>1. Vì log₂ đơn ánh, x²−1=3x+3 ⇒ x²−3x−4=(x−4)(x+1)=0. Chỉ x=4 hợp miền, kiểm log₂15=log₂15.",
+    "stem": "Giải \\(\\log_2(x^2-1)=\\log_2(3x+3)\\), bắt buộc ghi miền hai đối số trước khi biến đổi.",
+    "answer_key": "\\(S=\\{4\\}\\).",
+    "worked_solution": "Điều kiện \\(x^2-1>0\\) (\\(x<-1\\) hoặc \\(x>1\\)) và \\(3x+3>0\\) (\\(x>-1\\)), giao là \\(x>1\\). Vì \\(\\log_2\\) đơn ánh, \\(x^2-1=3x+3\\Rightarrow x^2-3x-4=(x-4)(x+1)=0\\). Chỉ \\(x=4\\) hợp miền, kiểm \\(\\log_2 15=\\log_2 15\\).",
     "skill_ids": [
       "G11-B21-LOG_EQUATION"
     ],
