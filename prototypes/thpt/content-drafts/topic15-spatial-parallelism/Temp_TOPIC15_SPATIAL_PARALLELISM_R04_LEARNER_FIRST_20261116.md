@@ -12,7 +12,7 @@ Một bản vẽ không gian chỉ là hình biểu diễn trên mặt phẳng. 
 
 <details><summary>Tùy chọn: cách đọc minh họa tọa độ khi em cần</summary>
 
-**Cách đọc ví dụ tọa độ (không cần học trước hình giải tích không gian lớp 12).** Ba số \((x;y;z)\) lần lượt là vị trí theo ba trục vuông góc; \(z=0\) biểu diễn một mặt phẳng nằm ngang, \(z=c\) một mặt phẳng nằm ngang khác. Một đường viết \((x;y;z)=(a;b;c)+t(u;v;w)\) nghĩa là chọn **cùng một số thực t** để có một điểm trên đường: \(x=a+tu,\ y=b+tv,\ z=c+tw\). Muốn tìm giao với \(z=0\), giải \(c+tw=0\) và thay lại vào cả ba tọa độ. Nếu \(w=0\) và \(c=0\) đường **nằm trong** mặt; nếu \(w=0\) nhưng \(c\ne 0\) đường **song song phân biệt**; nếu \(w\ne 0\) đường **cắt** mặt đúng một điểm. Phép biến đổi \(T(x;y;z)\) ở mạch cuối chỉ là chiếu một điểm theo một phương cố định, không phải một công thức học thuộc bắt buộc. Khi không quen tọa độ, có thể kiểm cùng một kết luận bằng quan hệ giao tuyến và định lý song song đã giải thích.
+**Cách đọc ví dụ tọa độ (không cần học trước hình giải tích không gian lớp 12).** Ba số \((x;y;z)\) lần lượt là vị trí theo ba trục vuông góc; \(z=0\) biểu diễn một mặt phẳng nằm ngang, \(z=c\) một mặt phẳng nằm ngang khác. Một đường viết \((x;y;z)=(a;b;c)+t(u;v;w)\) với vectơ chỉ phương \((u;v;w)\ne(0;0;0)\) nghĩa là chọn **cùng một số thực t** để có một điểm trên đường: \(x=a+tu,\ y=b+tv,\ z=c+tw\). Muốn tìm giao với \(z=0\), giải \(c+tw=0\) và thay lại vào cả ba tọa độ. Nếu \(w=0\) và \(c=0\), đường **nằm trong** mặt; nếu \(w=0\) nhưng \(c\ne0\), đường **song song phân biệt**; nếu \(w\ne0\), đường **cắt** mặt đúng một điểm. Phép biến đổi \(T(x;y;z)\) ở mạch cuối chỉ là chiếu một điểm theo một phương cố định, không phải một công thức học thuộc bắt buộc. Khi không quen tọa độ, có thể kiểm cùng một kết luận bằng quan hệ giao tuyến và định lí song song đã giải thích.
 
 </details>
 
@@ -292,7 +292,7 @@ Khi hai điểm di chuyển trên hai cạnh của cùng một tam giác với c
 
 > **ĐỊNH LÝ — Chứng minh song song qua tam giác**
 >
-> Đường trung bình và Thales đảo cung cấp chứng minh **trong một tam giác xác định**. Nếu \(M\in SA, N\in SB\) và \(\frac{SM}{SA}=\frac{SN}{SB}\) với M,N khác S, ta có \(MN\parallel AB\). Không cần hai đoạn bằng nhau về độ dài, mà cần **hai tỉ số** tương ứng bằng nhau.
+> Đường trung bình và định lí Thalès đảo cung cấp chứng minh **trong một tam giác xác định**. Nếu M, N lần lượt nằm trong hai cạnh SA, SB và \(\frac{SM}{SA}=\frac{SN}{SB}\), ta có \(MN\parallel AB\). Không cần hai đoạn bằng nhau về độ dài, mà cần **hai tỉ số** tương ứng bằng nhau. Nếu M=A và N=B, hai đường trùng nhau; nếu M=N=S, đường MN không xác định.
 
 **Ví dụ**
 
@@ -378,7 +378,7 @@ Nếu coi giao tuyến qua S trùng cạnh AB, đọc **Kiến thức 2.4**: gia
 
 **Đề bài:** Xét \((P):z=0\) và các đường \(d:(x;y;z)=(t;0;1+t), e=(t;0;1), f=(t;0;0), t\in \mathbb R\). Phân loại từng đường với (P).
 
-**Lời giải:** Với d, giải \(1+t=0\) được \(t=-1\), giao tại \((-1;0;0)\). Với e, z luôn bằng 1 nên không có điểm chung với \((P): e\parallel (P)\). Với \(f, z=0\) với mọi t nên \(f\subset (P)\). Ba trường hợp khác nhau về số điểm chung.
+**Lời giải:** Với d, giải \(1+t=0\) được \(t=-1\), giao tại \((-1;0;0)\). Với e, z luôn bằng 1 nên không có điểm chung với mặt \((P)\): \(e\parallel(P)\). Với f, \(z=0\) với mọi t nên \(f\subset(P)\). Ba trường hợp khác nhau về số điểm chung.
 
 <!-- ITEM_ID: THPT-TOP15-T10; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O10; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
@@ -412,7 +412,7 @@ Một đường dọc theo cạnh đáy luôn song song với một cạnh đáy
 
 **Đề bài:** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh \(MN\parallel (ABC)\).
 
-**Lời giải:** Trong tam giác \(SAB, MN\parallel AB\). Vì M nằm bên trong SA và \(S\notin (ABC), M\notin (ABC)\), nên MN không nằm trong đáy. Mặt khác \(AB\subset (ABC)\). Theo dấu hiệu đường song song mặt phẳng, \(MN\parallel (ABC)\). Điều kiện MN không thuộc mặt đáy là thiết yếu.
+**Lời giải:** Trong tam giác SAB, \(MN\parallel AB\). Vì M nằm bên trong SA và \(S\notin(ABC)\), ta có \(M\notin(ABC)\), nên MN không nằm trong đáy. Mặt khác \(AB\subset(ABC)\). Theo dấu hiệu đường song song mặt phẳng, \(MN\parallel(ABC)\). Điều kiện MN không thuộc mặt đáy là thiết yếu.
 
 <!-- ITEM_ID: THPT-TOP15-T11; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O11; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
@@ -456,7 +456,7 @@ Muốn tìm hướng giao tuyến của hai mặt, đôi khi chỉ cần một �
 <!-- ITEM_ID: THPT-TOP15-T12; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O12; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Trong \((Q), d\parallel (P)\) và \(g=(Q)\cap (P)\). d và g có thể cắt nhau không?
+Trong \((Q)\), \(d\parallel(P)\) và \(g=(Q)\cap(P)\). Hai đường d và g có thể cắt nhau không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -479,7 +479,7 @@ Một mặt cắt song song đáy cắt các cạnh bên của tứ diện tại
 
 > **PHƯƠNG PHÁP — Dựng mặt phẳng cắt song song đáy**
 >
-> Để dựng mặt cắt qua M nằm trên SA và song song đáy (ABC), tìm trên SB,SC các điểm N,K có \(\frac{SN}{SB}=\frac{SK}{SC}=\frac{SM}{SA}=t\). Khi \(0<t<1, MN\parallel AB\) và \(MK\parallel AC\), suy mặt \((MNK)\parallel (ABC)\). Không dựng tùy ý N,K theo mắt.
+> Để dựng mặt cắt qua điểm M nằm trong SA và song song đáy \((ABC)\), tìm trên SB, SC các điểm N, K sao cho \(\frac{SN}{SB}=\frac{SK}{SC}=\frac{SM}{SA}=t\). Khi \(0<t<1\), \(MN\parallel AB\) và \(MK\parallel AC\). Hai đường MN, MK cắt nhau tại M và không nằm trong đáy, nên \((MNK)\parallel(ABC)\). Không dựng tùy ý N, K theo mắt.
 
 **Ví dụ**
 
@@ -565,7 +565,7 @@ Muốn chứng minh cả mặt phẳng song song với mặt khác, một đư�
 
 **Đề bài:** Trong tứ diện S.ABC, M,N,K là trung điểm SA,SB,SC. Chứng minh mặt phẳng (MNK) song song (ABC).
 
-**Lời giải:** \(MN\parallel AB\) và \(MK\parallel AC\) bởi định lý đường trung bình trong các tam giác SAB,SAC. Hai đường MN,MK cắt nhau tại M trong (MNK); chúng lần lượt song song với các đường AB,AC nằm trong (ABC) và không thuộc đáy. Theo dấu hiệu hai mặt phẳng song song, \((MNK)\parallel (ABC)\).
+**Lời giải:** \(MN\parallel AB\) và \(MK\parallel AC\) bởi định lí đường trung bình trong các tam giác SAB, SAC. Hai đường MN, MK cắt nhau tại M trong \((MNK)\); chúng lần lượt song song với các đường AB, AC nằm trong \((ABC)\). Vì M nằm ngoài đáy, cả MN và MK đều không nằm trong đáy, nên mỗi đường song song với mặt \((ABC)\). Theo dấu hiệu hai mặt phẳng song song, \((MNK)\parallel(ABC)\).
 
 <!-- ITEM_ID: THPT-TOP15-T15; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O15; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
@@ -603,7 +603,7 @@ Ta còn có thể phát biểu mạnh hơn phần “giao tuyến song song”. 
 
 **Đề bài:** Cho \((P):z=0\), \((Q):z=4\), \((R):x+y=1\). Xác định giao tuyến của \((R)\) với từng mặt \((P),(Q)\), và chứng minh quan hệ giữa hai giao tuyến.
 
-**Lời giải:** Mặt \((R)\) cắt \((P)\) theo \(g:\{x+y=1,z=0\}\). Nó cũng cắt \((Q)\) theo \(h:\{x+y=1,z=4\}\). Cả hai giao tuyến có vectơ chỉ phương \((1;-1;0)\), ở hai độ cao khác nhau nên song song phân biệt. Ở đây có thể viện dẫn ngay định lí vừa học: vì \((P)\parallel(Q)\) và \((R)\) cắt \((P)\), \((R)\) cũng cắt \((Q)\); không cần chứng minh lại điều đó. Việc tìm hai giao tuyến bằng phương trình là cách kiểm trực tiếp, không suy từ hình vẽ.
+**Lời giải:** Mặt \((R)\) cắt \((P)\) theo đường g gồm các điểm \((t;1-t;0)\). Nó cũng cắt \((Q)\) theo đường h gồm các điểm \((t;1-t;4)\), với \(t\in\mathbb R\). Cả hai giao tuyến có vectơ chỉ phương \((1;-1;0)\), ở hai độ cao khác nhau nên song song phân biệt. Ở đây có thể viện dẫn ngay định lí vừa học: vì \((P)\parallel(Q)\) và \((R)\) cắt \((P)\), \((R)\) cũng cắt \((Q)\); không cần chứng minh lại điều đó. Việc tìm hai giao tuyến bằng phương trình là cách kiểm trực tiếp, không suy từ hình vẽ.
 
 **Ví dụ**
 
@@ -1313,7 +1313,7 @@ d qua S song song \(AB\parallel CD; e\) qua S song song \(AD\parallel BC\). Hai 
 
 **Đáp án:** Không.
 
-**Lời giải:** M,N thuộc các cạnh bên phía trên đáy; \(MN\parallel AB, AB\) nằm trong đáy và không nằm đáy.
+**Lời giải:** M,N thuộc các cạnh bên phía trên đáy; \(MN\parallel AB\) và \(AB\subset(ABCD)\), còn MN không nằm trong mặt đáy.
 
 </details>
 
@@ -1651,7 +1651,7 @@ Do \(A,A'\in (R)\) nên \(AA'\subset (R)\) (1đ). Trong hình hộp, \(CC'\paral
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án và lời giải:** D thuộc \(BC, \frac{BD}{DC}=1\) nên B′,D′,C′ thẳng hàng và \(\frac{B'D'}{D'C'}=1; D'\) trung điểm B′C′. A′D′ là trung tuyến. Góc, ví dụ ∠ABC, không nhất thiết bằng ∠A′B′C′.
+**Đáp án và lời giải:** D thuộc BC, \(\frac{BD}{DC}=1\) nên \(B',D',C'\) thẳng hàng và \(\frac{B'D'}{D'C'}=1\); \(D'\) là trung điểm \(B'C'\). \(A'D'\) là trung tuyến. Góc, ví dụ \(\angle ABC\), không nhất thiết bằng \(\angle A'B'C'\).
 
 **Rubric 4 điểm:**
 1. Chứng minh ba ảnh B′,D′,C′ thẳng hàng — 1 điểm.
@@ -1667,7 +1667,7 @@ Do \(A,A'\in (R)\) nên \(AA'\subset (R)\) (1đ). Trong hình hộp, \(CC'\paral
 **Bài luyện 62.** Ảnh suy biến. Cho \(T(x;y;z)=(x-z;y;0)\). Tìm ảnh của \(U(1;2;3)\) và \(V(3;2;5)\); xác định ảnh của cả đoạn UV; nêu điều kiện phương làm đoạn co thành điểm.
 <details markdown="1"><summary>Lời giải</summary>
 
-\(T(U)=T(V)=(-2;2;0)\); mọi điểm U+λ(V−U) có ảnh giống U. Đoạn co thành điểm vì \(UV\parallel (1;0;1)\), đúng phương chiếu.
+\(T(U)=T(V)=(-2;2;0)\); mọi điểm có tọa độ \(U+\lambda(V-U)\) trên đường UV có ảnh giống U. Đoạn co thành điểm vì UV song song với phương \((1;0;1)\), đúng phương chiếu.
 
 </details>
 
@@ -1691,7 +1691,7 @@ Chuyển điểm theo \(\lambda (1;0;2), \lambda =-\frac{z}{2}=-2: M'=(1;1;0)\).
 
 
 
-\(T(d(t))=(2+t-(-1+t),5{,}0)=(3;5;0)\), là một điểm vì vectơ chỉ phương \(d=(1;0;1)\) trùng hướng chiếu.
+\(T(d(t))=(2+t-(-1+t);5;0)=(3;5;0)\), là một điểm vì vectơ chỉ phương của d là \((1;0;1)\), trùng hướng chiếu.
 
 
 
