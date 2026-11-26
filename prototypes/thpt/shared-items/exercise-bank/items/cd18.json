@@ -376,7 +376,7 @@
     "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tam giác ABC có \\(A(1;0;2)\\), \\(B(5;2;0)\\), trọng tâm \\(G(3;2;2)\\). Tìm tọa độ C và trung điểm M của AB.",
     "answer_key": "\\(C(3;4;4)\\); \\(M(3;1;1)\\).",
-    "worked_solution": "Theo công thức trọng tâm, \\(3\\overrightarrow{OG}=\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC}\\). Do đó \\(\\overrightarrow{OC}=(9;6;6)-(1;0;2)-(5;2;0)=(3;4;4)\\). Trung điểm có tọa độ \\(M\\left(\\frac{1+5}{2};\\frac{0+2}{2};\\frac{2+0}{2}\\right)=M(3;1;1)\\). Kiểm trung bình từng tọa độ của ba đỉnh được \\(G(3;2;2)\\).",
+    "worked_solution": "Theo công thức trọng tâm, \\(3\\overrightarrow{OG}=\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC}\\). Do đó \\(\\overrightarrow{OC}=(9;6;6)-(1;0;2)-(5;2;0)=(3;4;4)\\). Tọa độ trung điểm M là \\(\\left(\\frac{1+5}{2};\\frac{0+2}{2};\\frac{2+0}{2}\\right)=(3;1;1)\\). Kiểm trung bình từng tọa độ của ba đỉnh được \\(G(3;2;2)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B08-O03"
@@ -1087,7 +1087,7 @@
   {
     "item_id": "THPT-TOP18-P37",
     "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Xét phương trình \\(x^2+y^2+z^2+2x-4y+k=0\\). Với \\(k=4,5,6\\), trường hợp nào biểu diễn mặt cầu? Nếu có, xác định tâm và bán kính.",
+    "stem": "Xét phương trình \\(x^2+y^2+z^2+2x-4y+k=0\\). Với \\(k\\in\\{4;5;6\\}\\), trường hợp nào biểu diễn mặt cầu? Nếu có, xác định tâm và bán kính.",
     "answer_key": "\\(k=4\\): mặt cầu tâm \\((-1;2;0)\\), \\(R=1\\); \\(k=5\\): một điểm; \\(k=6\\): không có nghiệm thực.",
     "worked_solution": "Hoàn thành bình phương: \\((x+1)^2+(y-2)^2+z^2=5-k\\). Nếu \\(k=4\\), vế phải \\(1>0\\) nên phương trình biểu diễn mặt cầu tâm \\((-1;2;0)\\), \\(R=1\\). Nếu \\(k=5\\), tổng bình phương bằng 0 chỉ tại tâm; không là mặt cầu bán kính dương. Nếu \\(k=6\\), tổng bình phương bằng −1 nên phương trình vô nghiệm thực.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1180,7 +1180,7 @@
   {
     "item_id": "THPT-TOP18-P40",
     "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Mặt cầu tâm \\(C(0;0;1)\\), \\(R=5\\). Với mặt phẳng \\(z=m\\), phân loại vị trí tương đối khi \\(m=4,6,7\\). Nếu giao là đường tròn, tìm tâm và bán kính; nếu tiếp xúc, tìm tiếp điểm.",
+    "stem": "Mặt cầu tâm \\(C(0;0;1)\\), \\(R=5\\). Với mặt phẳng \\(z=m\\), phân loại vị trí tương đối khi \\(m\\in\\{4;6;7\\}\\). Nếu giao là đường tròn, tìm tâm và bán kính; nếu tiếp xúc, tìm tiếp điểm.",
     "answer_key": "\\(m=4\\): đường tròn tâm \\((0;0;4)\\), \\(r=4\\); \\(m=6\\): tiếp điểm \\((0;0;6)\\); \\(m=7\\): không giao.",
     "worked_solution": "Khoảng cách từ tâm đến mặt phẳng \\(z=m\\) bằng \\(\\lvert1-m\\rvert\\). Với \\(m=4\\), \\(d=3<5\\), giao là đường tròn tâm \\(H(0;0;4)\\) là hình chiếu của C trên mặt phẳng, bán kính \\(r=\\sqrt{25-9}=4\\). Với \\(m=6\\), \\(d=5=R\\), giao chỉ là tiếp điểm \\(H(0;0;6)\\). Với \\(m=7\\), \\(d=6>R\\) nên không giao.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
