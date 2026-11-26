@@ -1,3 +1,10 @@
+## CURRENT CP17 CĐ15 V2
+Learner `11d2106a7ed77b801c86420503dca929544dc076`, Q18 `3063f34811455faea336d5b9f7109466e184a820`, A1 `d11dcd981ee3734f2deda5f2044c40f1b83fd5fe`. Work O04/O16/O20 and X-G.5 verified, 89 IDs/67 Practice/8 exact replays/15 rubric allocations/91 disclosures. Five SVGs and interactive HTML model unchanged. Prior S1 inherited; no fresh independent review or publication authorization.
+
+---
+
+Earlier snapshot narratives below are historical; current CP17 evidence and structured fields supersede earlier pointers.
+
 <!-- TOP15_MASTER974_CURRENT_ONE_V2_HANDOFF_20261121 -->
 ## CĐ15 AUTHORING one effective source R04, same one V2 and Q18 v3.2
 
@@ -20,13 +27,13 @@ CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: c1be91f17044d89474d6399308385b4f1fbc7aeb
+ACADEMIC_SOURCE_BLOB: 11d2106a7ed77b801c86420503dca929544dc076
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: e84c2f66c9b95d63fbef8d5f0e1493f004036164
+REVIEW_RECEIPT_BLOB: 3063f34811455faea336d5b9f7109466e184a820
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 48e4fbdaffd39aa8e7d641bed60b672a585dc01f
+AUTHOR_A1_A7_BLOB: d11dcd981ee3734f2deda5f2044c40f1b83fd5fe
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 48e4fbdaffd39aa8e7d641bed60b672a585dc01f
+AUTHOR_METADATA_BLOB: d11dcd981ee3734f2deda5f2044c40f1b83fd5fe
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIV_B10_B14_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html
