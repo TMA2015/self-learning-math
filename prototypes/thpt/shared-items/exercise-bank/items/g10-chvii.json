@@ -9,7 +9,7 @@
       "G10-B19-NORMAL_DIRECTION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Nhận diện vectơ pháp tuyến trước."
     ],
@@ -40,7 +40,7 @@
       "G10-B19-GENERAL_POINT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Dùng \\(a(x-x_0)+b(y-y_0)=0\\) với điểm \\((x_0;y_0)\\) và pháp tuyến \\((a;b)\\)."
     ],
@@ -71,7 +71,7 @@
       "G10-B19-PARAMETRIC"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Dùng điểm gốc cộng (t) lần vectơ chỉ phương."
     ],
@@ -102,7 +102,7 @@
       "G10-B19-GENERAL_POINT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tìm vectơ AB rồi một pháp tuyến vuông góc."
     ],
@@ -133,7 +133,7 @@
       "G10-B19-MEMBERSHIP"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Thế tọa độ mỗi điểm vào phương trình tổng quát."
     ],
@@ -164,7 +164,7 @@
       "G10-B19-LINEAR_MODEL"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Tìm hệ số góc theo hai điểm và nhớ miền thực tế."
     ],
@@ -195,7 +195,7 @@
       "G10-B20-RELATIVE_POSITION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "So sánh cả ba hệ số khi kiểm tra trùng nhau."
     ],
@@ -226,7 +226,7 @@
       "G10-B20-PERPENDICULAR"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Kiểm tra tích vô hướng của hai vectơ pháp tuyến."
     ],
@@ -257,7 +257,7 @@
       "G10-B20-INTERSECTION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Giải hệ hai phương trình đường thẳng."
     ],
@@ -288,7 +288,7 @@
       "G10-B20-DISTANCE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Tử là trị tuyệt đối; mẫu là độ dài vectơ pháp tuyến."
     ],
@@ -319,7 +319,7 @@
       "G10-B20-ANGLE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tính tích vô hướng có dấu, sau đó dùng trị tuyệt đối trong công thức góc giữa hai đường."
     ],
@@ -350,7 +350,7 @@
       "G10-B20-PERPENDICULAR"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Đường vuông góc với d có pháp tuyến song song vectơ chỉ phương d."
     ],
@@ -381,7 +381,7 @@
       "G10-B21-CIRCLE_STANDARD"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Dấu trong ngoặc ngược với tọa độ tâm."
     ],
@@ -412,7 +412,7 @@
       "G10-B21-CIRCLE_GENERAL"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Gom (x) và (y) thành các bình phương."
     ],
@@ -443,7 +443,7 @@
       "G10-B21-CIRCLE_STANDARD"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tâm là trung điểm đường kính, bán kính bằng một nửa độ dài AB."
     ],
@@ -474,7 +474,7 @@
       "G10-B21-CIRCLE_TANGENT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Bán kính tại tiếp điểm vuông góc tiếp tuyến."
     ],
@@ -505,7 +505,7 @@
       "G10-B21-CIRCLE_TANGENT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "So sánh khoảng cách từ tâm đến đường với bán kính."
     ],
@@ -536,7 +536,7 @@
       "G10-B21-CIRCLE_THROUGH_POINTS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Đặt tâm \\(I(h;k)\\); lập hai phương trình từ \\(IA^2=IB^2\\) và \\(IA^2=IC^2\\)."
     ],
@@ -567,7 +567,7 @@
       "G10-B22-ELLIPSE_PARAMETERS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Với elip, \\(c^2=a^2-b^2\\); trong phần mở rộng, \\(e=\\frac ca\\)."
     ],
@@ -598,7 +598,7 @@
       "G10-B22-HYPERBOLA_PARAMETERS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Hypebol có \\(c^2=a^2+b^2\\), khác elip."
     ],
@@ -629,7 +629,7 @@
       "G10-B22-ELLIPSE_PARAMETERS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Dùng độ dài trục lớn \\(2a\\) và khoảng cách hai tiêu điểm \\(2c\\)."
     ],
@@ -660,7 +660,7 @@
       "G10-B22-HYPERBOLA_PARAMETERS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Hypebol có dạng \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\) và \\(c^2=a^2+b^2\\)."
     ],
@@ -691,7 +691,7 @@
       "G10-B22-PARABOLA_FOCUS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Dùng quy ước SGK \\(y^2=2px,\\ p>0\\)."
     ],
@@ -722,7 +722,7 @@
       "G10-B22-PARABOLA_FOCUS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "So hệ số 12 với \\(2p\\); khoảng cách từ đỉnh đến tiêu điểm là \\(\\frac p2\\)."
     ],
