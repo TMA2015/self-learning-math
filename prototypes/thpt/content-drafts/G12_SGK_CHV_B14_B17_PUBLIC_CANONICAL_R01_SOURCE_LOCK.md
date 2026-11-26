@@ -933,7 +933,7 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 **D1 Công thức/định nghĩa:** \(\vec u\parallel\vec v \iff\vec u\times\vec v=0;\quad\vec u\perp\vec v\iff\vec u\cdot\vec v=0\).
 
-**Điều kiện, giới hạn:** Kiểm vị trí có giao điểm trước khi gọi hai đường thẳng vuông góc theo nghĩa hình học.
+**Điều kiện, giới hạn:** Hai đường thẳng có vectơ chỉ phương khác không và vuông góc thì vuông góc với nhau, kể cả khi chúng chéo nhau. Chỉ cần kiểm giao điểm khi muốn kết luận hai đường cắt nhau.
 
 **PED5 Tại sao chọn cách này:** Phân biệt xét hướng và xét vị trí; nêu rõ kết luận đang dùng.
 
@@ -945,7 +945,7 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 **Lời giải theo lý do:** u·v=1−1=0; chưa đủ để khẳng định hai đường thẳng cắt nhau.
 
-**Kết quả kiểm:** Hai hướng vuông góc. **Kiểm tra phạm vi:** Kiểm vị trí có giao điểm trước khi gọi hai đường thẳng vuông góc theo nghĩa hình học.
+**Kết quả kiểm:** Hai hướng vuông góc. **Kiểm tra phạm vi:** Hai đường thẳng có vectơ chỉ phương khác không và vuông góc thì vuông góc với nhau, kể cả khi chúng chéo nhau. Chỉ cần kiểm giao điểm khi muốn kết luận hai đường cắt nhau.
 
 #### THPT-G12-B15-C05 — SGK_CORE
 - `ITEM_ID`: `THPT-G12-B15-C05` · `OUTCOME_ID`: `G12-CHV-B15-O05` · `SOURCE_ROLE`: `SGK_CORE` · `DIFFICULTY`: 1
@@ -969,7 +969,7 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 - `ITEM_ID`: `THPT-G12-B15-W05` · `OUTCOME_ID`: `G12-CHV-B15-O05` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
 - **Đề duy nhất:** Chứng minh u=(1,2,-1) vuông góc v=(2,-1,0) và song song w=(3,6,-3).
 - **Đáp án canonical (chỉ mở khi được phép):** u·v=0 và w=3u
-- **Lời giải có suy luận:** u·v=2−2+0=0; w=3u. Cần thêm giao điểm để gọi hai đường thẳng vuông góc hình học.
+- **Lời giải có suy luận:** u·v=2−2+0=0; w=3u. Hai đường thẳng có các vectơ chỉ phương này vuông góc với nhau; chưa thể kết luận chúng cắt nhau nếu chưa kiểm tra vị trí.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ tính dot và kiểm cùng phương đúng; 1đ kết luận hướng vuông góc; 1đ kết luận hướng song song; 1đ phân biệt hướng với quan hệ giao nhau hình học.
 
 #### HELP-G12-B15-05 — D6 khắc phục theo đúng outcome
