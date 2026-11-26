@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-G11-CHIV-B10-C01",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Hai điểm phân biệt A,B thuộc (P). Có chắc AB nằm trong (P) không?",
-    "answer_key": "Có, AB⊂(P).",
-    "worked_solution": "Theo tiên đề: nếu hai điểm phân biệt của một đường thuộc mặt phẳng thì đường đó nằm trong mặt phẳng.",
+    "stem": "Hai điểm phân biệt A, B thuộc \\((P)\\). Đường thẳng AB có nằm trong \\((P)\\) không?",
+    "answer_key": "Có, \\(AB\\subset(P)\\).",
+    "worked_solution": "Theo tính chất cơ bản của hình học không gian, nếu hai điểm phân biệt của một đường thẳng thuộc một mặt phẳng thì mọi điểm của đường thẳng đó thuộc mặt phẳng. Vì A, B phân biệt và cùng thuộc \\((P)\\), suy ra \\(AB\\subset(P)\\).",
     "skill_ids": [
       "G11-B10-INCIDENCE"
     ],
@@ -33,9 +33,9 @@
   {
     "item_id": "THPT-G11-CHIV-B10-C02",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Ba điểm A,B,C thẳng hàng có xác định duy nhất một mặt phẳng không?",
+    "stem": "Ba điểm phân biệt A, B, C thẳng hàng có xác định duy nhất một mặt phẳng không?",
     "answer_key": "Không.",
-    "worked_solution": "Vô số mặt phẳng chứa đường AB; cần ba điểm không thẳng hàng.",
+    "worked_solution": "Ba điểm cùng thuộc đường thẳng AB. Có vô số mặt phẳng chứa AB, nên cũng chứa cả C. Để xác định duy nhất một mặt phẳng bằng ba điểm, ba điểm phải không thẳng hàng.",
     "skill_ids": [
       "G11-B10-PLANE"
     ],
@@ -64,9 +64,9 @@
   {
     "item_id": "THPT-G11-CHIV-B10-P01",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong tứ diện S.ABC, giao tuyến (SAB) và (SAC) là đường nào?",
-    "answer_key": "SA.",
-    "worked_solution": "Hai mặt phẳng phân biệt cùng có S,A; giao tuyến là SA.",
+    "stem": "Trong tứ diện S.ABC, tìm giao tuyến của \\((SAB)\\) và \\((SAC)\\).",
+    "answer_key": "Đường thẳng SA.",
+    "worked_solution": "Hai mặt phẳng cùng chứa hai điểm phân biệt S, A nên cùng chứa đường SA. Chúng phân biệt vì nếu trùng nhau thì cả bốn đỉnh tứ diện đồng phẳng. Vậy giao tuyến duy nhất là SA.",
     "skill_ids": [
       "G11-B10-PLANE_INTERSECTION"
     ],
@@ -95,9 +95,9 @@
   {
     "item_id": "THPT-G11-CHIV-B10-P02",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong tứ diện S.ABC, M nằm trong cạnh SB. Giao của CM với (SAB) là gì?",
-    "answer_key": "M.",
-    "worked_solution": "Vì M∈SB⊂(SAB) và C không nằm trong (SAB), đường CM gặp mặt tại M.",
+    "stem": "Trong tứ diện S.ABC, M nằm trong cạnh SB. Tìm giao điểm của đường CM với \\((SAB)\\).",
+    "answer_key": "Điểm M.",
+    "worked_solution": "Vì \\(M\\in SB\\) và \\(SB\\subset(SAB)\\), nên \\(M\\in(SAB)\\). Đỉnh C không thuộc \\((SAB)\\) do S.ABC là tứ diện. Vì vậy CM không nằm trong mặt phẳng này và có đúng một điểm chung M.",
     "skill_ids": [
       "G11-B10-LINE_PLANE"
     ],
@@ -126,9 +126,9 @@
   {
     "item_id": "THPT-G11-CHIV-B10-P03",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Cho đường a và A∉a. Có bao nhiêu mặt phẳng chứa a và A?",
+    "stem": "Cho đường thẳng a và điểm A không thuộc a. Có bao nhiêu mặt phẳng chứa cả a và A?",
     "answer_key": "Đúng một.",
-    "worked_solution": "Đường thẳng và một điểm ngoài nó xác định duy nhất một mặt phẳng.",
+    "worked_solution": "Chọn hai điểm phân biệt B, C trên a. A nằm ngoài a nên A, B, C không thẳng hàng, xác định duy nhất một mặt phẳng. Mặt phẳng đó chứa a và A; mọi mặt phẳng khác chứa a và A cũng phải chứa ba điểm này.",
     "skill_ids": [
       "G11-B10-PLANE"
     ],
@@ -157,9 +157,9 @@
   {
     "item_id": "THPT-G11-CHIV-B10-P04",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong tứ diện S.ABC, M,N,K là điểm bên trong SA,SB,SC. Thiết diện bởi (MNK) là đa giác nào?",
+    "stem": "Trong tứ diện S.ABC, M, N, K lần lượt nằm trong các cạnh SA, SB, SC. Thiết diện bởi \\((MNK)\\) là đa giác nào?",
     "answer_key": "Tam giác MNK.",
-    "worked_solution": "(MNK) cắt từng mặt bên theo MN,NK,KM; các điểm thuộc các cạnh tam giác đầu trên.",
+    "worked_solution": "M, N, K không thẳng hàng: đường MN nằm trong \\((SAB)\\) còn K không thuộc mặt phẳng đó. Mặt phẳng \\((MNK)\\) cắt các mặt tam giác SAB, SBC, SCA theo các đoạn MN, NK, KM. Vì S và ba đỉnh A, B, C nằm ở hai phía đối nhau của mặt cắt (mỗi cạnh bên cắt mặt tại điểm trong cạnh), mặt đáy không bị cắt. Thiết diện là tam giác MNK.",
     "skill_ids": [
       "G11-B10-SECTION"
     ],
@@ -188,9 +188,9 @@
   {
     "item_id": "THPT-G11-CHIV-B11-C01",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Hai đường thẳng khác nhau không cắt nhau trong không gian chắc chắn song song?",
+    "stem": "Hai đường thẳng phân biệt không cắt nhau trong không gian có chắc chắn song song không?",
     "answer_key": "Không.",
-    "worked_solution": "Chúng có thể chéo nhau nếu không cùng nằm trong một mặt phẳng.",
+    "worked_solution": "Hai đường thẳng song song phải đồng phẳng và không có điểm chung. Hai đường không cắt nhau nhưng không đồng phẳng là hai đường chéo nhau. Vì vậy cần kiểm tra điều kiện đồng phẳng.",
     "skill_ids": [
       "G11-B11-RELATIVE"
     ],
@@ -219,9 +219,9 @@
   {
     "item_id": "THPT-G11-CHIV-B11-C02",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong hình bình hành ABCD, AB và CD có quan hệ nào?",
-    "answer_key": "Song song.",
-    "worked_solution": "Hai cạnh đối phân biệt, đồng phẳng, không giao nhau.",
+    "stem": "Trong hình bình hành ABCD không suy biến, AB và CD có quan hệ nào?",
+    "answer_key": "\\(AB\\parallel CD\\).",
+    "worked_solution": "Hai cạnh đối AB và CD thuộc cùng mặt phẳng của hình bình hành, là hai đường phân biệt và không có điểm chung. Do đó chúng song song.",
     "skill_ids": [
       "G11-B11-COPLANAR"
     ],
@@ -252,7 +252,7 @@
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
     "stem": "Trong tứ diện S.ABC, SA và BC có quan hệ nào?",
     "answer_key": "Chéo nhau.",
-    "worked_solution": "Nếu cùng mặt phẳng thì bốn đỉnh đồng phẳng, trái tứ diện; chúng không cắt nhau.",
+    "worked_solution": "Giả sử SA và BC cùng nằm trong một mặt phẳng. Khi đó cả S, A, B, C đều thuộc mặt phẳng ấy, trái với giả thiết tứ diện. Vậy hai đường không đồng phẳng, nên chéo nhau.",
     "skill_ids": [
       "G11-B11-RELATIVE"
     ],
@@ -281,9 +281,9 @@
   {
     "item_id": "THPT-G11-CHIV-B11-P02",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong tam giác SAB, M,N lần lượt trung điểm SA,SB. Chứng minh MN và AB có quan hệ nào.",
-    "answer_key": "MN∥AB.",
-    "worked_solution": "Định lý đường trung bình trong tam giác SAB; M,N,AB thuộc cùng (SAB).",
+    "stem": "Trong tam giác SAB, M, N lần lượt là trung điểm SA, SB. Chứng minh MN song song AB.",
+    "answer_key": "\\(MN\\parallel AB\\).",
+    "worked_solution": "Trong mặt phẳng \\((SAB)\\), MN nối trung điểm hai cạnh SA và SB của tam giác. Theo định lí đường trung bình, \\(MN\\parallel AB\\) và hai đường phân biệt. Đây là kết luận trong một tam giác phẳng.",
     "skill_ids": [
       "G11-B11-PARALLEL_PROOF"
     ],
@@ -312,9 +312,9 @@
   {
     "item_id": "THPT-G11-CHIV-B11-P03",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong hình chóp S.ABCD đáy ABCD hình bình hành, SA và CD song song hay chéo nhau?",
+    "stem": "Trong hình chóp S.ABCD có đáy ABCD là hình bình hành, SA và CD song song hay chéo nhau?",
     "answer_key": "Chéo nhau.",
-    "worked_solution": "SA không thuộc mặt đáy, CD nằm đáy; chúng không cắt và không đồng phẳng vì mặt qua SA và CD sẽ chứa S,A,C,D khiến S nằm đáy.",
+    "worked_solution": "Nếu SA và CD đồng phẳng, mặt phẳng chứa chúng sẽ chứa A, C, D không thẳng hàng, nên chính là mặt đáy \\((ABCD)\\). Khi đó S thuộc mặt đáy, mâu thuẫn giả thiết hình chóp. Do đó SA và CD chéo nhau.",
     "skill_ids": [
       "G11-B11-RELATIVE"
     ],
@@ -343,9 +343,9 @@
   {
     "item_id": "THPT-G11-CHIV-B11-P04",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Nếu a∥b và b∥c, có thể kết luận a∥c ngay khi chưa biết a≠c không?",
-    "answer_key": "Chưa.",
-    "worked_solution": "a và c cùng phương; nếu trùng nhau thì không gọi hai đường phân biệt song song. Nêu thêm a≠c.",
+    "stem": "Nếu \\(a\\parallel b\\) và \\(b\\parallel c\\), có thể kết luận \\(a\\parallel c\\) ngay khi chưa biết \\(a\\ne c\\) không?",
+    "answer_key": "Chưa; cần thêm \\(a\\ne c\\).",
+    "worked_solution": "Hai đường a, c cùng phương vì cùng song song với b. Nhưng có thể a và c trùng nhau, chẳng hạn lấy c chính là a. Nếu a và c phân biệt thì hai đường cùng phương là song song. Vì vậy cần thêm điều kiện phân biệt.",
     "skill_ids": [
       "G11-B11-PARALLEL_PROOF"
     ],
@@ -374,9 +374,9 @@
   {
     "item_id": "THPT-G11-CHIV-B12-C01",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Một đường a nằm trong (P) có được gọi là a∥(P) theo định nghĩa không?",
+    "stem": "Đường thẳng a nằm trong \\((P)\\) có được gọi là \\(a\\parallel(P)\\) theo định nghĩa không?",
     "answer_key": "Không.",
-    "worked_solution": "a có vô số điểm chung với (P); a∥(P) yêu cầu không có điểm chung.",
+    "worked_solution": "Đường thẳng nằm trong mặt phẳng có vô số điểm chung với mặt phẳng. Đường thẳng song song mặt phẳng phải không có điểm chung. Hai vị trí tương đối này khác nhau.",
     "skill_ids": [
       "G11-B12-POSITIONS"
     ],
@@ -405,9 +405,9 @@
   {
     "item_id": "THPT-G11-CHIV-B12-C02",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Điều kiện còn thiếu: a∥b, b⊂(P) suy ra a∥(P) khi ...?",
-    "answer_key": "a không nằm trong (P).",
-    "worked_solution": "Nếu a⊂(P), kết luận sai; cần a⊄(P).",
+    "stem": "Điền điều kiện còn thiếu trong dấu hiệu: \\(a\\parallel b\\), \\(b\\subset(P)\\), và ... thì \\(a\\parallel(P)\\).",
+    "answer_key": "\\(a\\not\\subset(P)\\).",
+    "worked_solution": "Một đường thẳng song song với đường nằm trong mặt phẳng có thể nằm ngay trong mặt phẳng đó. Nếu thêm điều kiện a không nằm trong \\((P)\\), dấu hiệu đường thẳng song song mặt phẳng cho \\(a\\parallel(P)\\). Không được bỏ điều kiện này.",
     "skill_ids": [
       "G11-B12-PARALLEL_TEST"
     ],
@@ -436,9 +436,9 @@
   {
     "item_id": "THPT-G11-CHIV-B12-P01",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong hình chóp S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC).",
-    "answer_key": "MN∥(ABC).",
-    "worked_solution": "MN∥AB theo đường trung bình, AB⊂(ABC), MN không thuộc đáy.",
+    "stem": "Trong hình chóp S.ABC, M, N là trung điểm SA, SB. Chứng minh \\(MN\\parallel(ABC)\\).",
+    "answer_key": "\\(MN\\parallel(ABC)\\).",
+    "worked_solution": "Trong tam giác SAB, định lí đường trung bình cho \\(MN\\parallel AB\\). Đường AB nằm trong \\((ABC)\\). Vì SA chỉ cắt mặt đáy tại A và M nằm trong SA, M không thuộc mặt đáy; do đó MN không nằm trong mặt đáy. Áp dụng dấu hiệu đường thẳng song song mặt phẳng, được \\(MN\\parallel(ABC)\\).",
     "skill_ids": [
       "G11-B12-PARALLEL_TEST"
     ],
@@ -467,9 +467,9 @@
   {
     "item_id": "THPT-G11-CHIV-B12-P02",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong tứ diện S.ABC, đường SA và mặt (ABC) có vị trí tương đối nào?",
+    "stem": "Trong tứ diện S.ABC, đường thẳng SA và mặt phẳng \\((ABC)\\) có vị trí tương đối nào?",
     "answer_key": "Cắt nhau tại A.",
-    "worked_solution": "S không thuộc đáy, A thuộc đáy, nên giao duy nhất A.",
+    "worked_solution": "A thuộc mặt đáy nhưng S không thuộc mặt đáy. SA không nằm trong mặt đáy và chứa A, nên giao điểm duy nhất là A.",
     "skill_ids": [
       "G11-B12-POSITIONS"
     ],
@@ -498,9 +498,9 @@
   {
     "item_id": "THPT-G11-CHIV-B12-P03",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Cho d∥(P), d⊂(Q), (Q)∩(P)=e. Quan hệ d,e?",
-    "answer_key": "d∥e.",
-    "worked_solution": "Cùng thuộc (Q) và không giao: nếu d giao e thì d gặp (P), mâu thuẫn.",
+    "stem": "Cho \\(d\\parallel(P)\\), \\(d\\subset(Q)\\) và \\((Q)\\cap(P)=e\\). Tìm quan hệ giữa d và e.",
+    "answer_key": "\\(d\\parallel e\\).",
+    "worked_solution": "Hai đường d và e cùng nằm trong \\((Q)\\). Nếu có điểm chung thì d sẽ gặp \\((P)\\), trái với giả thiết. Vì vậy chúng đồng phẳng, phân biệt và không có điểm chung, tức song song.",
     "skill_ids": [
       "G11-B12-PLANE_INTERSECTION"
     ],
@@ -529,9 +529,9 @@
   {
     "item_id": "THPT-G11-CHIV-B12-P04",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Hình chóp S.ABCD đáy hình bình hành. M,N trung điểm SA,SB. MN∥(ABCD) nhưng MN có nằm trong (ABCD) không?",
+    "stem": "Hình chóp S.ABCD có đáy là hình bình hành. M, N là trung điểm SA, SB. Biết \\(MN\\parallel(ABCD)\\), MN có nằm trong \\((ABCD)\\) không?",
     "answer_key": "Không.",
-    "worked_solution": "M,N thuộc các cạnh bên phía trên đáy; MN∥AB⊂đáy và không nằm đáy.",
+    "worked_solution": "M nằm trong cạnh SA, còn SA chỉ gặp mặt đáy tại A, nên M không thuộc mặt đáy. Vì thế MN không nằm trong mặt đáy. Theo định nghĩa, đường song song mặt phẳng không có điểm chung với mặt phẳng đó.",
     "skill_ids": [
       "G11-B12-CONSTRUCTION"
     ],
@@ -562,7 +562,7 @@
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
     "stem": "Hai mặt phẳng phân biệt không có điểm chung gọi là gì?",
     "answer_key": "Hai mặt phẳng song song.",
-    "worked_solution": "Định nghĩa song song giữa hai mặt phẳng phân biệt.",
+    "worked_solution": "Theo định nghĩa, hai mặt phẳng không có điểm chung là hai mặt phẳng song song. Không nhầm với hai mặt phẳng trùng nhau, vốn có mọi điểm chung.",
     "skill_ids": [
       "G11-B13-PLANE_POSITIONS"
     ],
@@ -591,9 +591,9 @@
   {
     "item_id": "THPT-G11-CHIV-B13-C02",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong (P), a và b cắt nhau, cả a,b song song (Q). Có thể suy ra gì?",
-    "answer_key": "(P)∥(Q).",
-    "worked_solution": "Dấu hiệu hai mặt phẳng song song qua hai đường cắt nhau trong cùng (P).",
+    "stem": "Trong \\((P)\\), hai đường thẳng a, b cắt nhau và cả hai đều song song với \\((Q)\\). Có thể suy ra gì?",
+    "answer_key": "\\((P)\\parallel(Q)\\).",
+    "worked_solution": "Hai đường a, b cắt nhau trong \\((P)\\) và đều không gặp \\((Q)\\). Theo dấu hiệu hai mặt phẳng song song, \\((P)\\parallel(Q)\\). Điều kiện hai đường cắt nhau là thiết yếu.",
     "skill_ids": [
       "G11-B13-PLANE_TEST"
     ],
@@ -622,9 +622,9 @@
   {
     "item_id": "THPT-G11-CHIV-B13-P01",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "(P)∥(Q), (R) cắt cả hai theo d,e. Quan hệ d,e?",
-    "answer_key": "d∥e.",
-    "worked_solution": "Hai giao tuyến cùng nằm trong (R), phân biệt, không giao nhau do (P),(Q) không giao.",
+    "stem": "Cho \\((P)\\parallel(Q)\\). Mặt phẳng \\((R)\\) cắt chúng lần lượt theo d, e. Tìm quan hệ d, e.",
+    "answer_key": "\\(d\\parallel e\\).",
+    "worked_solution": "Cả d và e nằm trong \\((R)\\). Nếu chúng có điểm chung thì điểm đó thuộc cả \\((P)\\) và \\((Q)\\), trái với giả thiết hai mặt phẳng song song. Vì vậy d, e phân biệt, đồng phẳng và không cắt nhau.",
     "skill_ids": [
       "G11-B13-TRANSVERSAL"
     ],
@@ -653,9 +653,9 @@
   {
     "item_id": "THPT-G11-CHIV-B13-P02",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong (P) chỉ có một đường a∥(Q). Có đủ khẳng định (P)∥(Q) không?",
+    "stem": "Biết \\((P)\\) chứa một đường thẳng \\(a\\parallel(Q)\\). Chỉ từ dữ kiện đó có đủ để kết luận \\((P)\\parallel(Q)\\) không?",
     "answer_key": "Không.",
-    "worked_solution": "Hai mặt phẳng cắt nhau vẫn có thể chứa đường a song song giao tuyến và không gặp (Q). Cần hai đường cắt nhau.",
+    "worked_solution": "Hai mặt phẳng \\((P)\\) và \\((Q)\\) có thể cắt nhau theo e. Trong \\((P)\\), lấy đường a song song và phân biệt với e. Khi đó a không gặp \\((Q)\\), dù hai mặt phẳng cắt nhau. Dấu hiệu cần hai đường cắt nhau trong \\((P)\\) cùng song song với \\((Q)\\).",
     "skill_ids": [
       "G11-B13-PLANE_TEST"
     ],
@@ -684,9 +684,9 @@
   {
     "item_id": "THPT-G11-CHIV-B13-P03",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong chóp S.ABC, M,N,K cùng tỉ số SM/SA=SN/SB=SK/SC=1/3. Có (MNK)∥(ABC) không?",
-    "answer_key": "Có.",
-    "worked_solution": "Theo các đường trung bình tổng quát MN∥AB, MK∥AC; cả hai cắt nhau trong (MNK), suy hai mặt song song.",
+    "stem": "Trong hình chóp S.ABC, M, N, K lần lượt thuộc SA, SB, SC và \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac13\\). Chứng minh \\((MNK)\\parallel(ABC)\\).",
+    "answer_key": "\\((MNK)\\parallel(ABC)\\).",
+    "worked_solution": "Theo định lí Thalès đảo trong SAB và SAC, \\(MN\\parallel AB\\) và \\(MK\\parallel AC\\). Vì M không thuộc mặt đáy nên MN, MK không nằm trong mặt đáy. Do đó cả MN và MK song song \\((ABC)\\). Chúng cắt nhau tại M trong \\((MNK)\\); áp dụng dấu hiệu hai mặt phẳng song song.",
     "skill_ids": [
       "G11-B13-PRISM_RATIO"
     ],
@@ -715,9 +715,9 @@
   {
     "item_id": "THPT-G11-CHIV-B13-P04",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong cùng chóp, mặt cắt song song đáy có tỉ số cạnh 2/3. Tỉ số diện tích thiết diện/đáy?",
-    "answer_key": "4/9.",
-    "worked_solution": "Hai tam giác đồng dạng nên tỉ số diện tích bằng bình phương 2/3.",
+    "stem": "Trong hình chóp tam giác, mặt cắt song song với đáy có tỉ số độ dài cạnh tương ứng so với đáy bằng \\(\\frac23\\). Tính tỉ số diện tích thiết diện so với diện tích đáy.",
+    "answer_key": "\\(\\frac49\\).",
+    "worked_solution": "Thiết diện và đáy là hai tam giác đồng dạng với tỉ số đồng dạng \\(\\frac23\\). Các độ dài tương ứng cùng nhân với \\(\\frac23\\), nên diện tích nhân với bình phương tỉ số: \\(\\left(\\frac23\\right)^2=\\frac49\\).",
     "skill_ids": [
       "G11-B13-PRISM_RATIO"
     ],
@@ -746,9 +746,9 @@
   {
     "item_id": "THPT-G11-CHIV-B14-C01",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Phương chiếu Δ có thể song song mặt phẳng chiếu (P) không?",
+    "stem": "Phương chiếu có thể là phương song song với mặt phẳng chiếu \\((P)\\) không?",
     "answer_key": "Không.",
-    "worked_solution": "Nếu song song, đường qua M cùng hướng có thể không gặp (P), ảnh M không xác định với mọi M.",
+    "worked_solution": "Để ảnh của mỗi điểm được xác định duy nhất, đường qua điểm đó theo phương chiếu phải gặp \\((P)\\) tại đúng một điểm. Nếu phương chiếu song song mặt phẳng chiếu, đường qua điểm ngoài \\((P)\\) không gặp \\((P)\\). Do đó phương chiếu phải có hướng không song song với mặt phẳng chiếu.",
     "skill_ids": [
       "G11-B14-PROJECTION_DEF"
     ],
@@ -777,9 +777,9 @@
   {
     "item_id": "THPT-G11-CHIV-B14-C02",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Phép chiếu song song có giữ mọi số đo góc không?",
+    "stem": "Phép chiếu song song có bảo toàn mọi số đo góc không?",
     "answer_key": "Không.",
-    "worked_solution": "Phép chiếu affine tổng quát bảo toàn tỉ số trên đường và quan hệ song song đủ điều kiện, không bảo toàn góc.",
+    "worked_solution": "Phép chiếu song song bảo toàn tính thẳng hàng và tỉ số độ dài của hai đoạn thẳng cùng nằm trên một đường hoặc trên hai đường song song, nếu ảnh của chúng không suy biến. Số đo góc nói chung không được bảo toàn; chẳng hạn ảnh của hình vuông có thể là hình bình hành không có góc vuông.",
     "skill_ids": [
       "G11-B14-AFFINE_INVARIANTS"
     ],
@@ -808,9 +808,9 @@
   {
     "item_id": "THPT-G11-CHIV-B14-P01",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong lăng trụ ABC.A′B′C′, chiếu lên (ABC) theo phương AA′. Ảnh của B′ là điểm nào?",
+    "stem": "Trong lăng trụ ABC.A′B′C′, chiếu lên \\((ABC)\\) theo phương AA′. Ảnh của B′ là điểm nào?",
     "answer_key": "B.",
-    "worked_solution": "BB′∥AA′ và B∈(ABC), nên đường chiếu qua B′ gặp (ABC) đúng tại B.",
+    "worked_solution": "Cạnh bên BB′ cùng phương AA′. Đường chiếu qua B′ chính là BB′; đường này gặp \\((ABC)\\) duy nhất tại B. Vì vậy ảnh của B′ là B.",
     "skill_ids": [
       "G11-B14-PROJECTION_DEF"
     ],
@@ -839,9 +839,9 @@
   {
     "item_id": "THPT-G11-CHIV-B14-P02",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "M′ là trung điểm B′C′ của lăng trụ tam giác ABC.A′B′C′. Chiếu theo AA′ lên (ABC). Ảnh M′ là điểm nào?",
+    "stem": "M′ là trung điểm B′C′ của lăng trụ tam giác ABC.A′B′C′. Chiếu theo phương AA′ lên \\((ABC)\\). Ảnh M′ là điểm nào?",
     "answer_key": "Trung điểm M của BC.",
-    "worked_solution": "Ảnh B′C′ là BC không suy biến; phép chiếu giữ tỉ số 1 nên ảnh trung điểm là trung điểm.",
+    "worked_solution": "B′ và C′ lần lượt có ảnh là B và C, hai điểm phân biệt. Do ảnh của B′C′ không suy biến, phép chiếu bảo toàn tỉ số hai đoạn trên đường này. Vì M′ chia B′C′ thành hai đoạn bằng nhau, ảnh M là trung điểm BC.",
     "skill_ids": [
       "G11-B14-AFFINE_INVARIANTS"
     ],
@@ -870,9 +870,9 @@
   {
     "item_id": "THPT-G11-CHIV-B14-P03",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Một đường a song song phương chiếu Δ có ảnh là đường hay điểm?",
+    "stem": "Một đường thẳng a có cùng phương với phương chiếu \\(\\Delta\\) có ảnh là đường thẳng hay điểm?",
     "answer_key": "Một điểm.",
-    "worked_solution": "Mọi đường qua các điểm a theo Δ chính là a, nên cùng giao với (P) tại một điểm.",
+    "worked_solution": "Mọi đường chiếu qua các điểm thuộc a đều trùng với a. Vì phương chiếu không song song mặt phẳng chiếu, a gặp mặt phẳng chiếu tại đúng một điểm. Mọi điểm của a đều có cùng ảnh là điểm đó.",
     "skill_ids": [
       "G11-B14-DEGENERACY"
     ],
@@ -901,9 +901,9 @@
   {
     "item_id": "THPT-G11-CHIV-B14-P04",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Một hình bình hành ABCD không suy biến được chiếu song song lên mặt phẳng (P). Ảnh có luôn là hình bình hành không suy biến không? Nêu điều kiện và một trường hợp ảnh suy biến.",
-    "answer_key": "Không luôn; nếu phương chiếu không song song mặt phẳng chứa ABCD thì ảnh là hình bình hành không suy biến. Nếu phương chiếu song song một cạnh AB thì ảnh là đoạn thẳng.",
-    "worked_solution": "Nếu phương chiếu không song song mặt phẳng chứa hình, mỗi đường chiếu gặp mặt phẳng ấy nhiều nhất một điểm. Phép chiếu không đồng nhất hai điểm phân biệt của hình và bảo toàn các cặp cạnh đối song song, nên ảnh là hình bình hành không suy biến. Nếu phương chiếu song song AB, A′=B′ và D′=C′ (dấu phẩy chỉ ảnh), hai ảnh còn lại phân biệt vì AD không cùng phương AB; ảnh toàn hình là đoạn A′D′. Vì vậy không đủ chỉ giả thiết hình ban đầu không suy biến.",
+    "stem": "Một hình bình hành ABCD không suy biến được chiếu song song lên \\((P)\\). Ảnh có luôn là hình bình hành không suy biến không? Nêu điều kiện và một trường hợp ảnh suy biến.",
+    "answer_key": "Không. Ảnh không suy biến khi phương chiếu không song song mặt phẳng chứa ABCD. Nếu phương chiếu cùng phương AB thì ảnh của cả hình là một đoạn thẳng.",
+    "worked_solution": "Khi phương chiếu không song song mặt phẳng chứa ABCD, mỗi đường chiếu gặp mặt phẳng chứa hình tại nhiều nhất một điểm. Vì vậy hai điểm phân biệt của hình không thể có cùng ảnh; ảnh giữ tính thẳng hàng và các cặp cạnh đối song song, nên là hình bình hành không suy biến. Nếu phương chiếu cùng phương AB, ta có \\(A'=B'\\) và \\(D'=C'\\). Hai ảnh A′ và D′ phân biệt vì AD không cùng phương AB. Ảnh của cả hình là đoạn A′D′. Điều kiện hình ban đầu không suy biến chưa đủ.",
     "skill_ids": [
       "G11-B14-PARALLEL_AND_SHAPES"
     ],
