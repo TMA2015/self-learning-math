@@ -715,9 +715,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-P05",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Trong một lớp 10 bạn, có 8 bạn tham gia câu lạc bộ A và 5 bạn tham gia câu lạc bộ B. (a) Có thể chỉ có 2 bạn tham gia cả hai không? (b) Tìm số bạn ít nhất và nhiều nhất có thể tham gia cả hai; mô tả cách phân nhóm đạt mỗi giới hạn.",
-    "answer_key": "(a) Không thể. (b) Ít nhất 3 bạn; nhiều nhất 5 bạn. Cả hai giới hạn đều đạt được.",
-    "worked_solution": "Gọi \\(k\\) là số bạn tham gia cả hai. Số bạn tham gia ít nhất một câu lạc bộ là \\(8+5-k=13-k\\). (a) Nếu \\(k=2\\), số này bằng 11, vượt sĩ số 10. (b) Từ \\(13-k\\le 10\\) suy ra \\(k\\ge 3\\); nhóm tham gia cả hai nằm trong nhóm B nên \\(k\\le 5\\). Với \\(k=3\\), số bạn chỉ A, chỉ B, cả hai, không nhóm nào lần lượt là 5, 2, 3, 0; với \\(k=5\\), các số đó là 3, 0, 5, 2. Mỗi cách chia đều có tổng 10 và đúng số lượng của A, B. Vậy hai giới hạn đều đạt được.",
+    "stem": "Trong một lớp 10 bạn, có 8 bạn tham gia câu lạc bộ A và 5 bạn tham gia câu lạc bộ B. (a) Có thể chỉ có 2 bạn tham gia cả hai không? (b) Tìm số bạn ít nhất và nhiều nhất có thể tham gia cả hai; mô tả cách phân nhóm đạt mỗi giới hạn. (c) Nếu chọn đều một bạn trong lớp, xác suất bạn đó tham gia cả hai thuộc khoảng giới hạn nào?",
+    "answer_key": "(a) Không thể. (b) Ít nhất 3 bạn; nhiều nhất 5 bạn. Cả hai giới hạn đều đạt được. (c) Từ \\(\\frac{3}{10}\\) đến \\(\\frac12\\), kể cả hai đầu mút.",
+    "worked_solution": "Gọi \\(k\\) là số bạn tham gia cả hai. Số bạn tham gia ít nhất một câu lạc bộ là \\(8+5-k=13-k\\). (a) Nếu \\(k=2\\), số này bằng 11, vượt sĩ số 10. (b) Từ \\(13-k\\le 10\\) suy ra \\(k\\ge 3\\); nhóm tham gia cả hai nằm trong nhóm B nên \\(k\\le 5\\). Với \\(k=3\\), số bạn chỉ A, chỉ B, cả hai, không nhóm nào lần lượt là 5, 2, 3, 0; với \\(k=5\\), các số đó là 3, 0, 5, 2. Mỗi cách chia đều có tổng 10 và đúng số lượng của A, B. Vậy hai giới hạn đều đạt được. (c) Chọn đều một bạn nên \\(P(A\\cap B)=\\frac{k}{10}\\). Từ \\(3\\le k\\le5\\), suy ra \\(\\frac{3}{10}\\le P(A\\cap B)\\le\\frac12\\). Trong lớp 10 bạn, xác suất giao chỉ có thể là \\(\\frac{3}{10},\\frac{4}{10},\\frac{5}{10}\\).",
     "skill_ids": [
       "G11-B29-PROBABILITY_BOUNDS"
     ],
