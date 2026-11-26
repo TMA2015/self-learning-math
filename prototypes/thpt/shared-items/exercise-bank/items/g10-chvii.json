@@ -90,7 +90,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy tọa độ chỉ phương làm điểm đi qua, cho t=0 rồi kiểm điểm A. Ôn Bài 19 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY03."
+    "remediation": "Nếu lấy tọa độ vectơ chỉ phương làm điểm đi qua, cho \\(t=0\\) rồi kiểm tra có thu được điểm A không. Ôn Bài 19 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY03."
   },
   {
     "item_id": "THPT-G10-B19-P02",
@@ -934,7 +934,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Tìm các giao điểm của elip \\(E:\\frac{x^2}{16}+\\frac{y^2}{9}=1\\) với đường thẳng \\(y=\\frac32\\).",
     "answer_key": "\\((2\\sqrt3;\\frac32)\\) và \\((-2\\sqrt3;\\frac32)\\).",
-    "worked_solution": "Giao điểm phải thỏa cả hai phương trình. Thế \\(y=\\frac32\\) vào elip: \\(\\frac{x^2}{16}+\\frac{9/4}{9}=1\\iff\\frac{x^2}{16}=\\frac34\\iff x^2=12\\). Do đó \\(x=\\pm2\\sqrt3\\), cho hai giao điểm \\((2\\sqrt3;\\frac32)\\) và \\((-2\\sqrt3;\\frac32)\\). Cả hai đều thỏa phương trình đường thẳng và elip.",
+    "worked_solution": "Giao điểm phải thỏa cả hai phương trình. Thế \\(y=\\frac32\\) vào elip: \\(\\frac{x^2}{16}+\\frac{(\\frac32)^2}{9}=1\\iff\\frac{x^2}{16}=\\frac34\\iff x^2=12\\). Do đó \\(x=\\pm2\\sqrt3\\), cho hai giao điểm \\((2\\sqrt3;\\frac32)\\) và \\((-2\\sqrt3;\\frac32)\\). Cả hai đều thỏa phương trình đường thẳng và elip.",
     "skill_ids": [
       "G10-B22-CONIC_INTERSECTION"
     ],
