@@ -18786,6 +18786,84 @@
       },
       "remaining": "CĐ04–22 three-way reconciliation; shared SGK TeX, Written source pointer/quality, 19 prior missing skill tags plus legacy practice prerequisite tags, global uniqueness, CĐ20/21 shared placement, depth, interaction conversion. No fresh PDF or release authorization.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp78": {
+      "scope": "CD04–06 public Practice/Replay: prior CP51–53 evidence, original projection, current learner and local candidate. Local stem/key/solution notation and selected source improvements; shared/Written semantic integration pending.",
+      "baseline_commit": "300598520c4fe1add67196e8ec3d1bdb39d47560",
+      "item_commit": "3d139f3b5d78cfe37ac653a9e7b6dd72a1b61612",
+      "topics": [
+        {
+          "topic": "CD04",
+          "records": 22,
+          "changed": 22,
+          "practice": 75,
+          "replay": 18,
+          "before": "f84586f12cd9942c5464a438daf7a7303f7d6a51",
+          "after": "25e187229c83a78958cb7ee2446dec8d2d16834b",
+          "placement_blob": "a4b5d1d3c810fe92382bc48400a94de0775d22b0",
+          "latest_learner_blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+          "latest_learner_commit": "62eb09df620af13313d8a17ea74c0922ae9c61aa",
+          "prior_practice_projection_blob": "375c6afaebbb0ce14991c65f2abde53c295f325b"
+        },
+        {
+          "topic": "CD05",
+          "records": 34,
+          "changed": 34,
+          "practice": 38,
+          "replay": 17,
+          "before": "b52d42d648c591fbc5647d711aa6bc2bf3ea1be2",
+          "after": "e09bf270966b732ed0724406cda8bb61467c16b3",
+          "placement_blob": "1ad1c3b00ae0781bd66cf4f99e50b2a951f355f3",
+          "latest_learner_blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+          "latest_learner_commit": "731dba42d606a5bc506516fe04eea5199f6d6360",
+          "prior_practice_projection_blob": "cef1a6b5e51206446ee754e2c0e486cb21b71930"
+        },
+        {
+          "topic": "CD06",
+          "records": 16,
+          "changed": 16,
+          "practice": 66,
+          "replay": 16,
+          "before": "1afd80b091ef67554a45e4e18eaae59e2c562c18",
+          "after": "194ed06361e1e9ac00321ce7218702cf876b6713",
+          "placement_blob": "f60bbe409e3dfc94a3c8d7185414bd604b1e3099",
+          "latest_learner_blob": "621afad176e6944f832746b231cbd9265e96bce2",
+          "latest_learner_commit": "d5c44c6f4dec50a2e04e867c74bbf08aab2ba582",
+          "prior_practice_projection_blob": "26ea2049b76442cfd55575b053973519c3ac00b0"
+        }
+      ],
+      "local_records": 72,
+      "source_equivalent_direct": 52,
+      "prior_candidate_improvements_preserved": 20,
+      "shared_formative_placements_preserved": 83,
+      "written_placements_preserved": 24,
+      "checks": {
+        "practice": 179,
+        "replay": 51,
+        "current_learner_replay_stem_options_match": 51,
+        "placement_order_match": 230,
+        "local_metadata_unchanged": true,
+        "all_72_inline_math_delimiter_checks": true,
+        "commit_diff_only_three_local_item_shards": true,
+        "auto_grade_unchanged": true
+      },
+      "findings": [
+        "CD04 P08/17 retain complete absolute-value log identity and positive auxiliary-variable proof; P21 current learner model interpretation adopted (256 deterministic model count, not expectation).",
+        "CD05 P02/05/12/13/15/16/27/33 retain prior stronger tasks and rigorous proofs, including two integer maxima at 5 and 6.",
+        "CD06 P01/03 retain signed revolutions and arc distance; P09 retains rigorous minimal-period proof; P12 key explicitly includes integer parameter consistent with solution; P04/08/11/13/14 retain integer parameter, P16 model units retained.",
+        "Historical CD04 Written rubric issues CP51; CD05 missing four Written projection pointers CP52; CD06 potential duplicate TOP06-W03 vs G11-CHI-W04-ANCHOR and four missing pointers CP53 remain open for canonical Written review. Shared SGK field reconciliation not closed; current learner Replay equality is not equality with deliberately strengthened candidate variants."
+      ],
+      "progress": {
+        "topics_with_scoped_practice_replay_review": 6,
+        "total_topics": 22,
+        "practice_reviewed": 272,
+        "total_practice": 1479,
+        "replay_reviewed": 90,
+        "total_replay": 338,
+        "scope_note": "Scoped source/order/replay review and local field reconciliation, not full semantic parity, Academic/PED PASS or interaction readiness."
+      },
+      "remaining": "CD07–22, shared SGK and Written source deltas, 19 FirstTry missing skill mappings plus existing legacy gaps, global scan, depth audit and interaction conversion.",
+      "release_authorization": false
     }
   }
 }
