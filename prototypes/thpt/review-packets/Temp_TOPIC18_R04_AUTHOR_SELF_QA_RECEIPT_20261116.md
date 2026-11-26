@@ -1,3 +1,16 @@
+<!-- WORK1109_CP25_CURRENT -->
+## Current CĐ18 affected Q18 — AUTHOR_SELF_VERIFIED
+
+CP25 / #1109 scoped closure, 26/11/2026. Owner continuation after CP24 explicit correction proposal interpreted as authorization for B15-W05 and the same false rule in two B15-O05 Knowledge passages only. SGK source-owner #725 corrected three lines, 96/96 ID/stem/key/rubric exact (old ad4165de0a2c3442b50d7f3d0019a99b5bbdef39 → current b748a7c5af4074b39ef8a6a756a7be7839b9cd83; source commit 9db462adb566c7828efb64466d5773408ef161d3). CĐ18 exact same wrapper copied, 97 source pointers updated, B137 explanation aligned, O31 explicitly says perpendicular spatial lines may be skew. S1 corroboration Toán 11 KNTT B22 (https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-7-quan-he-vuong-goc-trong-khong-gian-1069/bai-22-hai-duong-thang-vuong-goc-3580.html and https://luyen.org/lop-11/toan/kntt/c7-b22), mathematical counterexample B143: directions (1;0;0),(0;1;0), dot 0 yet z=0 vs z=2. CP20a–f Work O13/O15/O23/O32, CP20d owner-approved zero-vector convention (current ChII 43d93a7d0d070a288251c34ff411c7de3206dc85), CP24 X-G.5 complete. Final exact-source checks: 50 executed arithmetic/vector/geometry recomputations PASS, 160/160 SGK bank ID memberships, 247/247 canonical matrix IDs (259 placements including 12 replays), 40 outcomes/40 FirstTry, 207 Practice, 12 exact matching replay stems, all rubric score sequences and identity markers retained modulo source-pointer relock, 1662/1662 inline, 248/248 details, raw compound scan zero, 10 SVG refs. Historical S1 p25 P2 remains; no fresh primary PDF visual scan or independent NotebookLM review. Remaining practice-bank wording candidates outside #1109: B191/B192 (B17-C04/P04) should explicitly say AB is diameter, context is source outcome B17-O04; B206 (B14-W07) 'cầu' ambiguous solid vs surface, distinguish disk vs circumference; retain frozen stem/key here, flag for #1090 scoped review; no claim of full bank acceptance. P0/P1 in #1109 Work/authorized correction scope zero. Source-only CONTENT_READY under #1109, not RELEASE, no CI/browser PASS, no protected assessment edits.
+
+ACADEMIC_SOURCE_BLOB: 0e31acbcecffecbcefcf734b290cfe8d4ff960cc
+CURRENT_CHII_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85
+CURRENT_CHV_SOURCE_BLOB: b748a7c5af4074b39ef8a6a756a7be7839b9cd83
+CURRENT_SOURCE_COMMIT: 546764c91104fcfb88fa675eb87e74cc62dc00bc
+
+---
+Historical narrative below applies to earlier immutable snapshots; current fields and CP25 supersede old byte-exact/readiness claims. Original S1 and independent reviewer blob pointers remain historical provenance.
+
 <!-- OWNER_APPROVED_SHARED_G12_CHV_WRITTEN_24_STAFF_NOTE_REMOVAL_Q18_20261121 -->
 **CURRENT EXACT SOURCE_EQUIVALENT AUTHORING:** Same one CĐ18 original R04 learner `d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960` and original G12 SGK ChV B14–B17 shared bank `ad4165de0a2c3442b50d7f3d0019a99b5bbdef39` (matching source-owner #725 and CĐ18 branch hash). All **24** original `- **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery...` staff-only visible prose removed from original shared SGK canonical and exactly 24 Topic projected Written answers. In SGK canonical there is now ONE hidden `Q16_AUTHORING_ONLY` metadata comment retaining the existing no self-graded Mastery policy; Topic source keeps `NO_MASTERY` Q16 controls. Original **24/24 original Written rubric mathematical criteria/point weights and solutions byte-for-byte unchanged** once removing the one staff sentence; remaining 183 Practice question/answer bodies untouched, all 247 original canonical public IDs, 40 FirstTry, 12 public question-only selfcheck, 10 SVG and W07 anti-spoiler preserved. Historical G12 SBT B14 page25 source provenance remains P2 not claimed solved. Q18 `author self`, A1 `current`, V2 `current`; `DELTA_B_SOURCE_EQUIVALENT` (student-only editorial). No full independent NotebookLM Topic PASS or website release/merge/deploy.
 ---
@@ -51,10 +64,10 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
-SOURCE_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
+ACADEMIC_SOURCE_BLOB: 0e31acbcecffecbcefcf734b290cfe8d4ff960cc
+SOURCE_BLOB: 0e31acbcecffecbcefcf734b290cfe8d4ff960cc
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R04_247_CANONICAL_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: b11c3441d2e7f3ce364f9f8389bff662f4bff6be
+HISTORICAL_AUTHOR_METADATA_BLOB: b11c3441d2e7f3ce364f9f8389bff662f4bff6be
 ORIGINAL_R02_SOURCE_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd
 EDITORIAL_R03_CANDIDATE_BLOB: 66df020c242cbbeb5c4bd50670e245a4d8c7f31f
 ORIGINAL_S1_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -73,7 +86,7 @@ ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_COUNT: 0
 MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
-AUTHOR_SIGNOFF: TOP18_MASTER974_W07_STANDALONE_HIDDEN_SVG_40_D6_207_PRACTICE_20261121_19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
+AUTHOR_SIGNOFF: TOP18_CP25_AUTHOR_SELF_VERIFIED_0e31acbcecffecbcefcf734b290cfe8d4ff960cc
 
 S1_RECEIPT: G12 SGK KNTT Tập Một ChII B06–B08 printed pp45–74; SBT pp38–58. SGK Tập Hai ChV B14 pp29–40, B15 pp41–49, B16 pp50–53, B17 pp54–60, chapter-end pp61–63; SBT B14 printed pp22–25 (p25 missing from available original scan; do NOT source-certify SBT 5.6–5.7), B15 pp26–29, B16 pp30–31, B17 pp32–34, chapter-end pp35–39. Provenance inherited from original Git source and prior owner/author source receipt, not a fresh SGK/SBT PDF scan or new source equivalence claim.
 OUTCOME_AUDIT: 40/40 mapped outcomes O01–O40, 16 from ChII and 24 from ChV. Eight logical numbered subject areas: 6+4+6+6+7+5+5+1 (last O23 optional after B17). 40 genuine learner-first explanation/definition/condition, 40 independent `Ví dụ/Đề bài/Lời giải`, 40 `Vận dụng` and opt-in `Đối chiếu` with local D6, 40 authored Topic Practice.
@@ -147,7 +160,7 @@ ASSESSMENT_Q16: `CLIENT_SELF_CHECK_NO_MASTERY`; 12 visible question-only replay 
 - **L-CĐ18-06 Q18:** 160 original SGK stems/keys/solutions/rubrics and 47 original Topic P/W answers/rubrics source-exact; source ID inventory 247/247 matches baseline V2, 92 executed math/edge assertions PASS. R02 snapshot not retroactively re-reviewed; R04 selfQA only affected Delta C scope.
 
 DELTA_C_ACADEMIC_MATERIAL: 40 new student-visible example prompts/expanded solutions, 14 focused formal mathematical statements, corrected O23 distinct optional example, actual Practice/Selfcheck learner content, and improved narrative placement; author selfQA and mathematical assertions apply specifically to R04.
-DELTA_B_SOURCE_EQUIVALENT: 160 original SGK cards and 47 authored Topic P/W answers and rubrics display changes only, verified source-exact.
+DELTA_B_SOURCE_EQUIVALENT: X-G.5 equivalent notation; exceptions CP20d P02 and CP25 W05 explicitly owner-scoped DELTA_C, not byte-exact.
 DELTA_D_SOURCE_GAP: SBT G12 B14 printed p25, items 5.6–5.7 not independently source-confirmed; no claims for them, scope retained as prior documented P2 reference gap, not invented in R04. A new approved primary scan would require targeted source verification only.
 
 **AUTHOR_SELF_VERIFIED_PASS** R04 exact source for accepted SGK/Core and complete Topic study scope. No independent NotebookLM review, no Final Submit/Golden/browser/real Safari, no owner merge/deploy, no second academic standard.
