@@ -155,7 +155,7 @@
  "use strict";
  // Extend the existing helper only to the two CĐ01 public replay/formative routes.
  if(!/\/thpt-preview\/chuyen-de\/cd(?:0[1-9]|1[0-9]|2[0-2])\/kien-thuc\/(?:index\.html)?$/.test(location.pathname)&&
-    !/\/thpt-preview\/chuyen-de\/cd0[1-5]\/(?:luyen-tap|tu-kiem-tra)\/(?:index\.html)?$/.test(location.pathname))return;
+    !/\/thpt-preview\/chuyen-de\/cd(?:0[1-9]|1[0-4])\/(?:luyen-tap|tu-kiem-tra)\/(?:index\.html)?$/.test(location.pathname))return;
  const make=(tag,value)=>{const el=document.createElement(tag);if(value!==undefined)el.textContent=value;return el};
  const math=(tex,display=false,source=tex)=>{
   const el=make("span",display?"\\["+tex+"\\]":"\\("+tex+"\\)");
