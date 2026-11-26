@@ -135,7 +135,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Lấy các phần tử Ω chưa thuộc A."
+      "Lấy các phần tử trong không gian mẫu chưa thuộc A."
     ],
     "rubric": null,
     "interaction": {
@@ -152,7 +152,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Phần bù luôn xét trong Ω đã cho. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
+    "remediation": "Phần bù luôn xét trong không gian mẫu đã cho. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-C06",
@@ -197,7 +197,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "So P(A∩B) với P(A)P(B)."
+      "So \\(P(Acap B)\\) với \\(P(A)P(B)\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -383,7 +383,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Bỏ b,e khỏi Ω rồi đếm phần còn lại."
+      "Bỏ b và e khỏi không gian mẫu rồi đếm phần còn lại."
     ],
     "rubric": null,
     "interaction": {
@@ -400,7 +400,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy phần bù ngoài Ω. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
+    "remediation": "Không lấy phần bù ngoài không gian mẫu. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-C01",
@@ -493,7 +493,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy 9/25 làm xác suất phần bù. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
+    "remediation": "Lấy 1 trừ xác suất đã cho, không giữ nguyên xác suất của K. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-C04",
@@ -586,7 +586,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chia 50/60, đã đếm phần giao hai lần. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
+    "remediation": "Nếu đếm 50 phiếu thuận lợi, đã đếm phần giao hai lần. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P01",
@@ -617,7 +617,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Dùng P(A)+P(B)−P(A∪B), không trừ sai dấu. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
+    "remediation": "Dùng \\(P(A)+P(B)-P(Acup B)\\), không trừ sai dấu. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P02",
@@ -710,7 +710,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không thích cả hai nghĩa là ở ngoài hợp, không chỉ ngoài giao. Ôn CĐ20 mục 1.4; luyện THPT-TOP20-P08."
+    "remediation": "Không thích loại nào nghĩa là ở ngoài hợp, không phải chỉ ở ngoài giao. Ôn CĐ20 mục 1.4; luyện THPT-TOP20-P08."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P05",
@@ -817,7 +817,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Tính 3/4·1/3 rồi so với 1/4."
+      "Tính tích hai xác suất riêng rồi so với xác suất giao."
     ],
     "rubric": null,
     "interaction": {
@@ -896,7 +896,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tính (1/5)^2 rồi trừ khỏi 1. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
+    "remediation": "Bình phương xác suất thất bại của một cảm biến rồi trừ khỏi 1. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-C05",
@@ -972,7 +972,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Nhân 7/10 với 3/7."
+      "Nhân hai xác suất đã cho vì hai biến cố độc lập."
     ],
     "rubric": null,
     "interaction": {
@@ -1096,7 +1096,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Độc lập cho P(giao)=1/4."
+      "Tính xác suất giao theo quy tắc nhân."
     ],
     "rubric": null,
     "interaction": {
@@ -1206,7 +1206,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không nhầm giao với hợp; kiểm hợp ≥ từng xác suất riêng. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P17."
+    "remediation": "Không nhầm giao với hợp; xác suất hợp không nhỏ hơn từng xác suất riêng. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P17."
   },
   {
     "item_id": "THPT-G11-B28-KFT01",
