@@ -20324,6 +20324,58 @@
       ],
       "remaining": "G10 ChIX next; separate FirstTry/public selfcheck/Written, source-owner/depth and renderer review.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp99": {
+      "scope": "G10 ChIX B26–B27: 14 canonical public formative C/P records; 10 separate FirstTry untouched; completes G10 chapter C/P reconciliation phase",
+      "baseline_commit": "ecd4543cf0ecf1297a16083cfc75250d4874a318",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "source_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "current_main_and_import_blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "ids_and_order": 14,
+        "decision": "Preserve CP56 explicit independence, textual tree and sampling assumptions; clarify notation and reasoning, no rollback."
+      },
+      "item_shard": {
+        "path": "items/g10-chix.json",
+        "before": "e4e96c5211657be1d5b115c7f845339dbe4b9d5a",
+        "after": "951b4797733e09739a74697364909558d3897d15",
+        "commit": "a4a6e157190e1b35b5d12cda85ceaa96b8438f83"
+      },
+      "checks": {
+        "formative_reviewed": 14,
+        "formative_changed": 14,
+        "fields_changed": {
+          "stem": 10,
+          "answer_key": 13,
+          "worked_solution": 14,
+          "hints": 2,
+          "remediation": 4
+        },
+        "first_try_unchanged": 10,
+        "sgk_placements": 14,
+        "sgk_placement_blob": "240d485678b3182add1fb3acd7035e6fc9994e08",
+        "topic_placement_shards_scanned_at_baseline": 22,
+        "topic_placements_for_reviewed_ids": 0,
+        "metadata_and_interaction_unchanged": true,
+        "answer_meanings_unchanged": true,
+        "inline_and_display_delimiters_balanced": true,
+        "targeted_raw_math_scan_residual": 0,
+        "enumeration_arithmetic_and_counterexample_checks_passed": 14
+      },
+      "findings": [
+        "B26 explicitly define finite nonempty equiprobable sample space, ordered trials, complement, inclusive or and overlap, rare versus impossible, insufficient assumptions on unequal spinner regions.",
+        "B27 textual two-tier tree with equiprobable leaves, consistent ordered/unordered counting, complement, with/without replacement and unequal probabilities of merged dice-pair types. Both current lesson sources checked for conventions. No fresh primary SGK/SBT PDF or full Academic/PED/browser verdict."
+      ],
+      "phase_totals": {
+        "chapters": 9,
+        "total_thpt_chapters": 24,
+        "reviewed": 215,
+        "changed": 214,
+        "unchanged_reviewed": 1
+      },
+      "remaining": "G11 ChI next, one chapter per turn; G10 FirstTry/public selfcheck/Written, source-owner/depth and rendering remain separate.",
+      "release_authorization": false
     }
   }
 }
