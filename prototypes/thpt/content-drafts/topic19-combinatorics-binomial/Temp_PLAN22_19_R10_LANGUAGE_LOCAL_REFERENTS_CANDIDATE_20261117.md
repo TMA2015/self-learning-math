@@ -197,7 +197,7 @@ Từ đếm từng số hợp lệ, ta chuyển sang đếm các cách sắp ng�
 
 Bốn bạn cùng tham gia hội chợ nhưng đứng thành hàng theo thứ tự khác nhau sẽ tạo ra ảnh xếp hàng khác nhau, dù tập bốn bạn không đổi.
 
-Để xếp hết n đối tượng **phân biệt**, vị trí thứ nhất có n lựa chọn, vị trí sau còn \(n-1\),… đến vị trí cuối còn 1. Do đó số hoán vị bằng \(n!=n(n-1)\cdots2\cdot1\); quy ước \(0!=1\) giúp công thức nhất quán với tập rỗng, không có nghĩa là 0 vật có nhiều cách.
+Để xếp hết n đối tượng **phân biệt**, vị trí thứ nhất có n lựa chọn, vị trí sau còn \(n-1\),… đến vị trí cuối còn 1. Do đó số hoán vị bằng \(n!=n(n-1)\cdots2\cdot1\); quy ước \(0!=1\) giúp công thức nhất quán với tập rỗng, nghĩa là có đúng một cách sắp xếp không có phần tử nào.
 
 **Điều kiện áp dụng:** Đếm thứ tự của **tất cả** n đối tượng riêng biệt, mỗi đối tượng dùng đúng một lần. Nếu vật trùng nhau thì \(n!\) có thể đếm lặp, cần quy tắc khác.
 
@@ -236,7 +236,7 @@ Hội chợ có ban ba người giữ ba vai trưởng, thư ký, thủ quỹ. C
 
 Chỉnh hợp chập k của n phần tử phân biệt là chọn k phần tử **có thứ tự**, không lặp. Vị trí đầu có n cách, kế có \(n-1\),… k vị trí: \(A_n^k=\frac{n!}{(n-k)!}\).
 
-**Điều kiện áp dụng:** \(0\le k\le n\) là số nguyên; các vai/ô có phân biệt thứ tự, mỗi đối tượng chỉ nhận một vai. Không dùng công thức này khi một người được giữ nhiều vai nếu đề cho phép.
+**Điều kiện áp dụng:** \(1\le k\le n\) với n và k nguyên; trường hợp \(k=0\) là quy ước mở rộng. Các vai/ô có phân biệt thứ tự, mỗi đối tượng chỉ nhận một vai. Không dùng công thức này khi một người được giữ nhiều vai nếu đề cho phép.
 
 > **ĐỊNH NGHĨA · CHỈNH HỢP**
 >
@@ -383,7 +383,7 @@ Nếu kết quả ra 56, em mới chọn hai vai thay vì ba. Nếu ra \(C_8^3=5
 
 </details>
 
-Các số `C(n,k)` trên máy không phải một loại hệ số bí ẩn: chúng chính là số cách chọn k vị trí trong n thừa số của nhị thức. Bây giờ em có thể nhìn tam giác Pascal và hiểu vì sao các số tổ hợp trở thành hệ số Newton.
+Các giá trị tổ hợp \(C_n^k\) tính bằng chức năng `nCr` trên máy không phải một loại hệ số bí ẩn: chúng chính là số cách chọn k vị trí trong n thừa số của nhị thức. Bây giờ em có thể nhìn tam giác Pascal và hiểu vì sao các số tổ hợp trở thành hệ số Newton.
 
 ## 3. Nhị thức Newton và các vận dụng
 
@@ -440,18 +440,20 @@ Nếu em chép số 4 ở hàng \(n=4\) của tam giác Pascal thì mới đếm
 
 Cùng hệ số tổ hợp nhưng (x−2)^5 có hạng tử dương và âm. Nếu chỉ nhớ 'dấu xen kẽ' mà không xét số lần chọn −2, ta rất dễ sai.
 
-Trong \((u+v)^n\), hạng tử ứng với việc chọn \(v\) đúng \(k\) lần là \(\binom nk u^{n-k}v^k\); hệ số tổ hợp là \(\binom nk\). Nếu v âm và u dương, dấu của hạng tử là \((-1)^k\). Khi hỏi hệ số \(x^m\), tìm số lần chọn bằng cách giải phương trình số mũ trước rồi mới tính dấu.
+Trong \((u+v)^n\), hạng tử ứng với việc chọn \(v\) đúng \(k\) lần là \(\binom nk u^{n-k}v^k\); hệ số tổ hợp là \(\binom nk\). Nếu \(u>0,\ v<0\), dấu của hạng tử là \((-1)^k\). Khi hỏi hệ số \(x^m\), tìm số lần chọn bằng cách giải phương trình số mũ trước rồi mới tính dấu.
 
-**Điều kiện áp dụng:** Với một đa thức thật, số mũ x là không âm; không nhầm thứ tự k là số lần lấy hạng tử thứ hai. Đặc biệt \(0\le k\le n\).
+**Điều kiện áp dụng:** Với đa thức, số mũ x là không âm; không nhầm thứ tự k là số lần lấy hạng tử thứ hai. Đặc biệt \(0\le k\le n\).
 
 > **TÍNH CHẤT · Dấu của hạng tử**
 >
 > \((a-b)^n=\sum_{k=0}^{n}(-1)^k\binom nk a^{n-k}b^k.\) Dấu \((-1)^k\) đến từ chọn \(-b\) k lần, không tự gắn dấu theo vị trí nhìn vào biểu thức.
 
 **Cách tránh nhầm dấu và số mũ.** Khi tìm hệ số của \(x^m\) trong \((ax+b)^n\), với \(n\) nguyên không âm và \(a,b\) là số thực, hạng tử chọn \(b\) đúng \(k\) lần có dạng
+
 \[
 \binom nk (ax)^{n-k}b^k=\binom nk a^{n-k}b^k x^{n-k}.
 \]
+
 Vì vậy phải giải **\(n-k=m\)**, kiểm \(k\) là số nguyên từ \(0\) đến \(n\), rồi mới tính hệ số. Nếu \(b<0\), dấu đến từ \(b^k\); nếu \(a<0\), dấu còn phụ thuộc vào \(a^{n-k}\), nên không có quy tắc “dấu xen kẽ” áp dụng mù cho mọi nhị thức.
 
 **Ví dụ minh họa.** Tìm hệ số \(x^3\) trong \((2x-3)^5\): ta cần \(5-k=3\Rightarrow k=2\). Hệ số là \(\binom52 2^3(-3)^2=10\cdot8\cdot9=720\), dương vì lấy \(-3\) **hai lần**. Không nhầm với \(\binom53=10\) rồi bỏ qua lũy thừa \(2^3\).
@@ -527,7 +529,7 @@ Hai chặng tiếp theo giúp giải các bài SBT có lũy thừa \(\frac1x\) h
 
 Trong \((3x-2)^5\), mỗi thừa số cho hai lựa chọn: \(3x\) hoặc \(-2\). Số hạng **không chứa \(x\)** xuất hiện khi ta chọn \(-2\) ở cả năm thừa số, tức không chọn \(3x\) lần nào. Như vậy, ta tìm số hạng tự do ngay từ cách chọn hạng tử của từng thừa số, không cần ghi nhớ một mẹo riêng.
 
-Trong khai triển \((ax+b)^n\), nếu chọn \(b\) đúng \(k\) lần thì số mũ của \(x\) là \(n-k\) (khi a khác 0). Muốn số hạng tự do, cần \(n-k=0\), tức \(k=n\): chọn \(b\) ở cả \(n\) thừa số, nên số hạng không chứa \(x\) là \(b^n\). Với nhị thức như \((4x-3)^5\), nó bằng \((-3)^5\), **âm**. Đừng nhân thêm \(C(n,1)\) khi chỉ có đúng một cách chọn tất cả các vị trí b: \(C(n,n)=1\).
+Trong khai triển \((ax+b)^n\), nếu chọn \(b\) đúng \(k\) lần thì số mũ của \(x\) là \(n-k\) (khi a khác 0). Muốn số hạng tự do, cần \(n-k=0\), tức \(k=n\): chọn \(b\) ở cả \(n\) thừa số, nên số hạng không chứa \(x\) là \(b^n\). Với nhị thức như \((4x-3)^5\), nó bằng \((-3)^5\), **âm**. Đừng nhân thêm \(C_n^1\) khi chỉ có đúng một cách chọn tất cả các vị trí b: \(C_n^n=1\).
 
 **Điều kiện áp dụng:** Đây là đa thức theo \(x\), nên không phải loại \(x=0\). Trong trường hợp \(a=0\), toàn bộ nhị thức là hằng số, vẫn có số hạng tự do \(b^n\). Chỉ khi gặp hạng tử dạng \(\frac1x\) (tham khảo SBT), mới phải kiểm \(x\ne0\), theo dõi số mũ âm và giải phương trình tổng số mũ bằng 0. Bài chứa \(\frac1x\) là **mở rộng tự chọn**, không coi là SGK Core.
 
@@ -548,7 +550,7 @@ Trong khai triển \((3x-2)^5\), số hạng không chứa \(x\) là bao nhiêu?
 <!-- ITEM_ID: THPT-TOP19-T11; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O11; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Chọn \(-2\) từ cả năm thừa số, không chọn \(3x\) ở vị trí nào, nên có duy nhất \(C(5,5)=1\) cách cho hạng tử đó. Hệ số tự do là \((-2)^5=\mathbf{-32}\).
+Chọn \(-2\) từ cả năm thừa số, không chọn \(3x\) ở vị trí nào, nên có duy nhất \(C_5^5=1\) cách cho hạng tử đó. Hệ số tự do là \((-2)^5=\mathbf{-32}\).
 
 **Kiểm lỗi**
 
@@ -556,7 +558,7 @@ Nếu được +32, em đã quên số lần chọn thừa số âm là **5 lầ
 
 </details>
 
-**Tự chọn mở rộng sau khi hiểu đa thức:** Với \((x+2/x)^4\), \(x\ne0\), nếu chọn \(2/x\) đúng \(k\) lần thì số mũ \(x\) là \(4-2k\). Số hạng không chứa \(x\) chỉ khi \(4-2k=0\), \(k=2\), được \(C(4,2)\cdot2^2=\mathbf{24}\). Đây là một họ bài mở rộng, **không thay câu Vận dụng cơ bản**.
+**Tự chọn mở rộng sau khi hiểu đa thức:** Với \((x+\frac2x)^4\), \(x\ne0\), nếu chọn \(\frac2x\) đúng \(k\) lần thì số mũ \(x\) là \(4-2k\). Số hạng không chứa \(x\) chỉ khi \(4-2k=0\), \(k=2\), được \(C_4^2\cdot2^2=\mathbf{24}\). Đây là một họ bài mở rộng, **không thay câu Vận dụng cơ bản**.
 
 Từ đọc từng số hạng, em có thể kiểm toàn bộ hệ số bằng cách thay \(x=1\) với đa thức hoặc tổng hữu hạn các lũy thừa nguyên của x.
 
@@ -572,7 +574,7 @@ Với đa thức \(P(x)=a_0+a_1x+\cdots+a_nx^n\), \(P(1)=a_0+\cdots+a_n\). Các 
 
 > **TÍNH CHẤT — Tổng hệ số và tam giác Pascal (mở rộng)**
 >
-> Với \(P(x)=\sum_{k=0}^{n}a_kx^k\), tổng hệ số bằng \(P(1)\). Tam giác Pascal thỏa \(\binom nk=\binom{n-1}{k-1}+\binom{n-1}{k}\) cho \(1\le k\le n-1\); nếu đếm tất cả nhóm con, \(\sum_k\binom nk=2^n\).
+> Với \(P(x)=\sum_{k=0}^{n}a_kx^k\), tổng hệ số bằng \(P(1)\). Tam giác Pascal thỏa \(\binom nk=\binom{n-1}{k-1}+\binom{n-1}{k}\) cho \(1\le k\le n-1\); nếu đếm tất cả nhóm con, \(\sum_{k=0}^{n}\binom nk=2^n\).
 
 **Ví dụ**
 
@@ -582,7 +584,7 @@ Với đa thức \(P(x)=a_0+a_1x+\cdots+a_nx^n\), \(P(1)=a_0+\cdots+a_n\). Các 
 
 **Vận dụng**
 
-Tổng hệ số của đa thức (x+2)^5 bằng bao nhiêu?
+Tổng hệ số của đa thức \((x+2)^5\) bằng bao nhiêu?
 
 <!-- ITEM_ID: THPT-TOP19-T12; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O12; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
@@ -602,11 +604,11 @@ Thử nhìn lại một tình huống thực tế: từ quy tắc nhân tạo k�
 > - **Quy tắc đếm:** dùng *cộng* cho các trường hợp loại trừ nhau; dùng *nhân* cho một kết quả được tạo qua nhiều bước. Khi các trường hợp chồng nhau, phải loại trùng hoặc dùng phép bù.
 > - **Chọn hay sắp xếp:** hoán vị \(P_n=n!\) xếp tất cả \(n\) phần tử phân biệt; chỉnh hợp \(A_n^k=\dfrac{n!}{(n-k)!}\) khi **có thứ tự**; tổ hợp \(\binom nk=\dfrac{n!}{k!(n-k)!}\) khi **không xét thứ tự**, với \(0\le k\le n\).
 > - **Nhị thức Newton:** \((a+b)^n=\sum_{k=0}^{n}\binom nk a^{n-k}b^k\) cho \(n\) nguyên không âm. Khi \(b\) âm, dấu của mỗi hạng phụ thuộc số lần chọn \(b\).
-> - **Tự kiểm:** giải thích vì sao thứ tự có/không quan trọng trước khi bấm máy; tổng hệ số của **đa thức** \(P(x)\) bằng \(P(1)\), không áp dụng mẹo này tùy tiện cho phân thức hoặc biểu thức không phải đa thức.
+> - **Tự kiểm:** giải thích vì sao thứ tự có/không quan trọng trước khi bấm máy; tổng hệ số của **đa thức** \(P(x)\) bằng \(P(1)\), cũng đúng với tổng hữu hạn các lũy thừa nguyên, kể cả mũ âm; không áp dụng cho biểu thức không xác định tại 1.
 
 # Luyện tập
 
-Luyện tập theo ba mạch toán: khi nào hai cách chọn khác nhau, có thứ tự hay không, và vì sao hệ số nhị thức là số cách chọn. Hãy tự giải, nêu lý do chọn phép đếm cùng các điều kiện trước khi mở **Lời giải**. Những bài ghi **Bài SGK** có đủ đề để em luyện xen kẽ với bài của Chuyên đề.
+Luyện tập theo ba mạch toán: khi nào hai cách chọn khác nhau, có thứ tự hay không, và vì sao hệ số nhị thức là số cách chọn. Hãy tự giải, nêu lý do chọn phép đếm cùng các điều kiện trước khi mở **Lời giải**. Các bài của SGK được luyện xen kẽ với bài của chuyên đề.
 
 ## 1. Quy tắc đếm và chia trường hợp
 
@@ -995,10 +997,13 @@ Lời giải: Chọn 3 thừa số \((-x)\) và 3 thừa số \(2\): hệ số \
 
 Đáp án: \(-243\), tức số hạng tự do bằng \(-243\) (không phải số mũ hoặc hệ số đi kèm \(x\)).
 Lời giải: Theo nhị thức Newton, số hạng tương ứng với chọn \(k\) thừa số \(4x\) là
+
 \[
 T_k=\binom{5}{k}(4x)^k(-3)^{5-k},\qquad k=0,1,2,3,4,5.
 \]
+
 Số mũ của \(x\) bằng \(k\); vì \(k\geq 0\), điều kiện số hạng không chứa \(x\) là \(k=0\), và đây là giá trị duy nhất. Số hạng tự do:
+
 \[
 T_0=\binom50 (4x)^0 (-3)^5=\boxed{-243}.
 \]
