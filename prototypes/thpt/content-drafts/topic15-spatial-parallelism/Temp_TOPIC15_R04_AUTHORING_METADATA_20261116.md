@@ -1,3 +1,10 @@
+## CURRENT CP17 — CĐ15 AUTHORING custody
+Learner `11d2106a7ed77b801c86420503dca929544dc076`, commit `7d8f72610310cd20747004738cee7ea7dfba38cf`, Draft #846. Same 89 unique item IDs, 67 Practice, eight exact same-ID public replay, 15 Written rubric allocations, 91 balanced disclosures; original SGK 40 item IDs verified against frozen blob e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b. Five SVGs and HTML model unchanged at their recorded paths/blobs. Work O04/O16/O20 and X-G.5 affected scope. No new bank, merge, deploy, official readiness or runtime authorization.
+
+---
+
+Earlier snapshot narratives below are historical; current CP17 evidence and structured fields supersede earlier pointers.
+
 <!-- TOP15_MASTER974_AUTHOR_CUSTODY_20261121 -->
 **CURRENT one effective R04 SOURCE:** `prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md` Git blob **`c1be91f17044d89474d6399308385b4f1fbc7aeb`** (prior immutable `89dd1b775c782bd2a8638560a2aa93d49b589eee`); Q18 current one self-verified v3.2.0 `e84c2f66c9b95d63fbef8d5f0e1493f004036164`. Topic #977-048/049/050 verified and resolved in changed learning source: 22 precise Knowledge Kiểm lỗi→two genuine numbered Practice reattempts; one opt-in 8-public-selfcheck original ID→Practice location; 67 unique contiguous Bài luyện titles and five complete supplemental worked problems; single end-only SGK source credit. **67 complete original SGK+Topic Practice mathematical stem/key/solution/15 Written rubric bodies byte-for-byte preserved**, original 8 public question-only stems, 5 SVG+model assets unchanged, 91/91 voluntary details balanced. Source owner G11 ChIV B10–B14 remains external [PR #705](https://github.com/TMA2015/self-learning-math/pull/705), source SHA `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b`; combined RELEASE R1 still must verify source on integrated HEAD, no copy or private RD1. Old R02/R03 and earlier source SHA lines below are historical, not a second active learner. Current author `SELF_VERIFIED` affected scope, not independent NotebookLM full Topic PASS, browser AP/R or deploy.
 
@@ -20,8 +27,8 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: c1be91f17044d89474d6399308385b4f1fbc7aeb
-SOURCE_BLOB: c1be91f17044d89474d6399308385b4f1fbc7aeb
+ACADEMIC_SOURCE_BLOB: 11d2106a7ed77b801c86420503dca929544dc076
+SOURCE_BLOB: 11d2106a7ed77b801c86420503dca929544dc076
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIV_B10_B14_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_ID: SLM-TOP15-LINE-PLANE-R00
