@@ -6162,5 +6162,295 @@
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP01-KFT01",
+    "content_version": "TOP01-BANK-CP70-20261126-KFT01",
+    "stem": "“\\(2k+1\\) là số lẻ”, với \\(k\\in\\mathbb Z\\), là mệnh đề hay phát biểu chứa biến? Nếu viết “Với mọi \\(k\\in\\mathbb Z\\), \\(2k+1\\) là số lẻ”, em có thể kết luận gì?",
+    "answer_key": "Câu đầu chứa biến chưa được lượng hóa; câu thứ hai là mệnh đề đúng.",
+    "worked_solution": "Câu đầu còn chứa biến \\(k\\) chưa được lượng hóa. Câu thứ hai là một mệnh đề đúng: mọi số nguyên \\(k\\) đều cho biểu thức \\(2k+1\\) có dạng số lẻ. Nếu em vẫn phân vân, thử \\(k=0\\) và \\(k=2\\), rồi phân biệt việc kiểm vài giá trị với một lời khẳng định cho **mọi** số nguyên.\n\n**Kiểm lỗi**\n\nNếu em chỉ thử vài giá trị rồi kết luận cho *mọi* số nguyên, em đã nhầm kiểm tra ví dụ với chứng minh. Hãy đọc lại **Kiến thức 1.1**, rồi làm **Bài 2** trong Luyện tập: phân biệt biến chưa gán, mệnh đề có lượng từ “mọi” và mệnh đề “tồn tại”.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B01-PROPOSITION",
+      "G10-B01-QUANTIFIERS"
+    ],
+    "original_outcome_ids": [
+      "TOP01-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+      "heading_id": "TOP01-M01",
+      "locator": "1.1. Nhận biết mệnh đề và mệnh đề chứa biến / Vận dụng",
+      "line": 38,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP01-KFT02",
+    "content_version": "TOP01-BANK-CP70-20261126-KFT02",
+    "stem": "Hãy phủ định hai phát biểu “\\(t\\ge5\\)” và “\\(t<-1\\)”, với \\(t\\in\\mathbb R\\).",
+    "answer_key": "Hai phủ định là \\(t<5\\) và \\(t\\ge-1\\).",
+    "worked_solution": "Hai phủ định lần lượt là \\(t<5\\) và \\(t\\ge-1\\). Nếu em viết \\(t\\le5\\), hãy thử ngay \\(t=5\\): cả phát biểu gốc và câu mới đều đúng, nên đó không thể là phép phủ định.\n\n**Kiểm lỗi**\n\nNếu em viết phủ định của “t lớn hơn hoặc bằng 5” thành “t nhỏ hơn hoặc bằng 5”, hai câu cùng đúng tại t = 5, nên chưa thực sự phủ định nhau. Hãy xem lại **Kiến thức 1.2**, rồi làm **Bài 3** và **Bài 4** trong Luyện tập để tập đổi đúng giá trị chân lý và dấu bằng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B01-NEGATION"
+    ],
+    "original_outcome_ids": [
+      "TOP01-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+      "heading_id": "TOP01-M02",
+      "locator": "1.2. Phủ định đúng nghĩa / Vận dụng",
+      "line": 73,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP01-KFT04",
+    "content_version": "TOP01-BANK-CP70-20261126-KFT04",
+    "stem": "Với \\(x\\in\\mathbb R\\), bạn An viết: “\\(x^2=9\\) khi và chỉ khi \\(x=3\\)”. Em có đồng ý không? Nếu chỉ xét \\(x\\ge0\\), kết luận thay đổi thế nào?",
+    "answer_key": "Sai trên \\(\\mathbb R\\) (phản ví dụ \\(x=-3\\)); đúng trên miền \\(x\\ge0\\).",
+    "worked_solution": "Trên \\(\\mathbb R\\), phát biểu **sai**. Từ \\(x=3\\) suy ra \\(x^2=9\\), nhưng chiều ngược sai vì \\(x=-3\\) cũng có bình phương bằng 9. Nếu biết thêm \\(x\\ge0\\), phương trình \\(x^2=9\\) chỉ nhận \\(x=3\\), nên hai chiều đều đúng. Khi kiểm tra “khi và chỉ khi”, em cần đọc cả **miền xét** và chứng minh hai hướng.\n\n**Kiểm lỗi**\n\nNếu em bỏ sót nghiệm âm x = −3, em đã chứng minh chiều ngược trên miền hẹp hơn đề bài. Hãy đọc lại **Kiến thức 1.4**, rồi làm **Bài 9** trong Luyện tập: viết hai chiều ra riêng và kiểm tra một phản ví dụ nếu một chiều không đúng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B01-EQUIVALENCE"
+    ],
+    "original_outcome_ids": [
+      "TOP01-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+      "heading_id": "TOP01-M04",
+      "locator": "1.4. Hai chiều của tương đương / Vận dụng",
+      "line": 149,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP01-KFT05",
+    "content_version": "TOP01-BANK-CP70-20261126-KFT05",
+    "stem": "Với mọi số nguyên \\(n\\), tích \\(n(n+1)\\) có luôn là số chẵn không? Hãy viết phủ định của phát biểu rồi chứng minh hoặc bác bỏ phủ định.",
+    "answer_key": "Mệnh đề đúng. Phủ định: tồn tại số nguyên n sao cho n(n+1) lẻ; phủ định sai.",
+    "worked_solution": "Phát biểu **đúng**: trong hai số nguyên liên tiếp \\(n\\) và \\(n+1\\) luôn có một số chẵn, nên tích chia hết cho 2. Phủ định phải là “**Tồn tại** số nguyên \\(n\\) sao cho \\(n(n+1)\\) lẻ”, và phủ định này sai. Chỉ thử vài giá trị \\(n\\) chưa phải chứng minh cho **mọi** số nguyên; hãy giải thích vì sao hai số liên tiếp không thể cùng lẻ.\n\n**Kiểm lỗi**\n\nNếu em chỉ kiểm vài số rồi cho rằng đã chứng minh mệnh đề “mọi”, hãy xét vì sao hai số nguyên liên tiếp không thể cùng lẻ. Ôn **Kiến thức 1.5**, rồi làm **Bài 10** và **Bài 11** trong Luyện tập; phân biệt chứng cứ cho “tồn tại” với lập luận cho “mọi”.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B01-QUANTIFIERS",
+      "G10-B01-NEGATION"
+    ],
+    "original_outcome_ids": [
+      "TOP01-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+      "heading_id": "TOP01-M05",
+      "locator": "1.5. Lượng từ mọi và tồn tại / Vận dụng",
+      "line": 184,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP01-KFT07",
+    "content_version": "TOP01-BANK-CP70-20261126-KFT07",
+    "stem": "Cho \\(A=\\{-1;0;1;2\\}\\) và \\(B=\\{0;2;4\\}\\). Tìm \\(A\\cap B\\) và \\(A\\cup B\\).",
+    "answer_key": "\\(A\\cap B=\\{0;2\\},\\ A\\cup B=\\{-1;0;1;2;4\\}\\).",
+    "worked_solution": "\\(A\\cap B=\\{0;2\\}\\), còn \\(A\\cup B=\\{-1;0;1;2;4\\}\\). Nếu em muốn đếm vùng Ven, hãy đưa 0 và 2 vào phần chung nhưng khi tính tổng mỗi phần tử chỉ xuất hiện một lần.\n\n**Kiểm lỗi**\n\nNếu em bỏ các phần tử chung ra khỏi hợp, em đã hiểu nhầm “hoặc” thành “chỉ thuộc một tập”. Đọc lại **Kiến thức 2.2**, rồi luyện **Bài 14** và **Bài 15**; phần chung thuộc cả giao lẫn hợp nhưng chỉ được viết một lần trong hợp.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B02-UNION_INTERSECTION"
+    ],
+    "original_outcome_ids": [
+      "TOP01-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+      "heading_id": "TOP01-M07",
+      "locator": "2.2. Giao và hợp tập hợp / Vận dụng",
+      "line": 271,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP01-KFT08",
+    "content_version": "TOP01-BANK-CP70-20261126-KFT08",
+    "stem": "\\(A=\\{1;3;5\\}\\), \\(B=\\{3;4;5\\}\\). Tính \\(A\\setminus B\\) và \\(B\\setminus A\\).",
+    "answer_key": "\\(A\\setminus B=\\{1\\},\\ B\\setminus A=\\{4\\}\\).",
+    "worked_solution": "\\(A\\setminus B=\\{1\\}\\), còn \\(B\\setminus A=\\{4\\}\\). Nếu em đổi nhầm kết quả, hãy đọc lại tên tập **đứng trước dấu \\(\\setminus\\)** và xác định phần tử được giữ.\n\n**Kiểm lỗi**\n\nNếu em đổi hai hiệu cho nhau, em đã quên rằng phần tử được giữ phải thuộc **tập đứng trước phép hiệu**. Xem lại **Kiến thức 2.3**, rồi làm **Bài 16** và **Bài 17** trong Luyện tập, lần lượt gạch những phần tử có mặt ở cả hai tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B02-DIFFERENCE"
+    ],
+    "original_outcome_ids": [
+      "TOP01-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+      "heading_id": "TOP01-M08",
+      "locator": "2.3. Hiệu của hai tập hợp / Vận dụng",
+      "line": 306,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP01-KFT09",
+    "content_version": "TOP01-BANK-CP70-20261126-KFT09",
+    "stem": "Trong \\(U=\\{1;2;3;4;5;6;7;8\\}\\), lấy \\(A=\\{2;3;5;7\\}\\). Tìm phần bù của A.",
+    "answer_key": "\\(U\\setminus A=\\{1;4;6;8\\}\\).",
+    "worked_solution": "\\(U\\setminus A=\\{1;4;6;8\\}\\). Nếu em chỉ viết “phần bù của A” mà không nêu U, hãy tự hỏi đang loại A khỏi **tập nào**.\n\n**Kiểm lỗi**\n\nNếu em đưa một số ngoài U vào phần bù, em chưa xác định đúng **vũ trụ**. Ôn **Kiến thức 2.4**, rồi làm **Bài 18** và **Bài 19** trong Luyện tập: liệt kê U trước, sau đó loại các phần tử của A, không thêm phần tử khác.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B02-COMPLEMENT"
+    ],
+    "original_outcome_ids": [
+      "TOP01-O09"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+      "heading_id": "TOP01-M09",
+      "locator": "2.4. Tập bù theo vũ trụ U / Vận dụng",
+      "line": 341,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP01-KFT10",
+    "content_version": "TOP01-BANK-CP70-20261126-KFT10",
+    "stem": "Cho \\(X=[-2;2)\\), \\(Y=(0;4]\\). Tìm hợp và giao, giải thích việc lấy hay bỏ hai đầu 0,2.",
+    "answer_key": "\\(X\\cap Y=(0;2),\\ X\\cup Y=[-2;4]\\). Trong giao, 0 và 2 bị loại; trong hợp, cả hai được nhận.",
+    "worked_solution": "\\(X\\cap Y=(0;2)\\), còn \\(X\\cup Y=[-2;4]\\). Trong giao, 0 bị Y loại và 2 bị X loại; trong hợp, hai điểm ấy vẫn được nhận bởi ít nhất một tập.\n\n**Kiểm lỗi**\n\nNếu em lấy nhầm 0 hoặc 2 trong giao, hãy kiểm riêng hai câu hỏi “0 có thuộc Y không?” và “2 có thuộc X không?”. Đọc lại **Kiến thức 3.1**, rồi làm **Bài 20** và **Bài 21** trong Luyện tập; thử từng điểm mút trước khi đặt dấu ngoặc.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B02-INTERVALS"
+    ],
+    "original_outcome_ids": [
+      "TOP01-O10"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+      "heading_id": "TOP01-M10",
+      "locator": "3.1. Khoảng và dấu ngoặc / Vận dụng",
+      "line": 398,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP01-KFT11",
+    "content_version": "TOP01-BANK-CP70-20261126-KFT11",
+    "stem": "Lớp có 48 học sinh. Có 26 bạn tham gia CLB Toán, 30 bạn tham gia CLB Tiếng Anh và 40 bạn tham gia **ít nhất một** trong hai CLB. Tìm số bạn tham gia cả hai, chỉ từng CLB và không tham gia CLB nào.",
+    "answer_key": "Cả hai 16; chỉ Toán 10; chỉ Tiếng Anh 14; không tham gia 8.",
+    "worked_solution": "Từ \\(40=26+30-|A\\cap B|\\), suy ra **16** bạn tham gia cả hai. Chỉ Toán: \\(26-16=10\\); chỉ Tiếng Anh: \\(30-16=14\\); không tham gia: \\(48-40=8\\). Kiểm lại \\(10+16+14+8=48\\). Đây là bài **biết hợp, tìm giao**: biến đổi công thức đếm theo chiều ngược với ví dụ, không cộng thẳng 26 và 30.\n\n**Kiểm lỗi**\n\nNếu em cộng 26 và 30 rồi coi ngay đó là số bạn tham gia ít nhất một câu lạc bộ, phần giao đã bị đếm hai lần. Hãy đọc lại **Kiến thức 3.2**, rồi làm **Bài 22** và **Bài 24** trong Luyện tập; mỗi lần kiểm tổng bốn vùng Ven phải bằng sĩ số lớp.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B02-VENN_MODEL"
+    ],
+    "original_outcome_ids": [
+      "TOP01-O11"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+      "heading_id": "TOP01-M11",
+      "locator": "3.2. Đếm phần hợp không lặp / Vận dụng",
+      "line": 439,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
