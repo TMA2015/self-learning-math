@@ -1,13 +1,18 @@
+<!-- WORK #1109 CP21 CURRENT 26/11/2026 -->
+## Current affected-scope Q18 AUTHOR_SELF_VERIFIED (v3.2.0)
+
+Source `ba549932e8a56bb46ec2951171e999cc70d6f34f` / source commit `bc112d6f68eaa60657436c49a653b4a08733e871`, Q15 `ba6f4fbe6f7ba86378879488fe5d5c077532e228`. Prior source `82d375da7108b54e914df1f996376904eede309d`; historical signed `2faa5d797eb16020d21673c572c443f1cb7acb41`. Work #1055 CĐ19 O03 leading/trailing zero, O09/O10 term vs coefficient/sign, O12 finite integer powers at x=1 incl negative exponents and domain; remove editorial scope direction. X-G.5 all three pages, 42 Practice, 7 exact same-ID replay, 56 IDs (25 original SGK bank IDs direct membership), 63 placements, 57 balanced disclosures, 571 balanced inline and 3 separated displays, all ID markers unchanged, three rubric score sequences unchanged. 41 executed arithmetic/combinatorics checks; original 4 SVG/model and bank untouched. Prior S1 direct receipt 850dd241e60de58ccf032e48e1e13530988436e3 inspected (G10 B23–25); inherited provenance only, no fresh PDF or independent NotebookLM. AUTHOR_SELF_VERIFIED affected scope, no new whole-topic independent verdict. UI tab truncation remains RELEASE. Affected scope P0/P1=0; no merge/deploy or protected changes. Older narrative below remains historical.
+
 <!-- TOP19_MASTER974_CURRENT_Q18_20261121 -->
 ## CĐ19 R11 — CURRENT AUTHOR_SELF_VERIFIED Q18 source/math/PED · 21/11/2026
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
-ACADEMIC_SOURCE_BLOB: 2faa5d797eb16020d21673c572c443f1cb7acb41
+ACADEMIC_SOURCE_BLOB: ba549932e8a56bb46ec2951171e999cc70d6f34f
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-CURRENT_Q15_56_ITEMS_MATRIX_BLOB: a7b15e559626c6d1f3b6b62c10b1662d0209ddbd
-CURRENT_SOURCE_COMMIT: 20e7b3d9f03e143945aa63a9cbfcb4cd0d43f6f2
-CURRENT_AUTHOR_SIGNOFF: TOP19_MASTER974_14_D6_42_PRACTICE_7_SAME_ID_REPLAY_3_FT_TRANSFER_20261121_2faa5d797eb16020d21673c572c443f1cb7acb41
+CURRENT_Q15_56_ITEMS_MATRIX_BLOB: ba6f4fbe6f7ba86378879488fe5d5c077532e228
+CURRENT_SOURCE_COMMIT: bc112d6f68eaa60657436c49a653b4a08733e871
+CURRENT_AUTHOR_SIGNOFF: TOP19_MASTER974_14_D6_42_PRACTICE_7_SAME_ID_REPLAY_3_FT_TRANSFER_20261121_ba549932e8a56bb46ec2951171e999cc70d6f34f
 DELTA_SCOPE: DELTA_C_ACADEMIC_MATERIAL_TARGETED_T01_T02_T09_FIRSTTRY_STEMS_KEYS; DELTA_C_PED_TARGETED_14_KIEM_LOI_28_MATH_REATTEMPTS; DELTA_A_EDITORIAL_42_SINGLE_DISPLAY_LABELS_AND_7_SAME_ID_LOOKUPS
 QA_P0: 0
 QA_P1: 0
@@ -42,15 +47,15 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-SOURCE_BLOB: 2faa5d797eb16020d21673c572c443f1cb7acb41
-ACADEMIC_SOURCE_BLOB: 2faa5d797eb16020d21673c572c443f1cb7acb41
+SOURCE_BLOB: ba549932e8a56bb46ec2951171e999cc70d6f34f
+ACADEMIC_SOURCE_BLOB: ba549932e8a56bb46ec2951171e999cc70d6f34f
 FROZEN_R09_READY_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
 FROZEN_R09_FULL_AUTHOR_Q18_RECEIPT_BLOB: 55bc391995cccdf0ce66b96ebfa8840c0148c075
 R10_MATERIAL_PED_SOURCE_BLOB: 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae
 R10_TARGETED_PED_Q15_Q18_RECEIPT_BLOB: 440f0c17f1a4f6b813e8627f29626248ba7f5684
 R11_EDITORIAL_DELTA_RECEIPT_BLOB: 2c17b30e78f484606509cf9d3817fea431ae8dad
 R11_CANDIDATE_Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_Q15_56_CANONICAL_SOURCE_LOCKED_CANDIDATE_MATRIX_20261117.md
-R11_CANDIDATE_Q15_MATRIX_BLOB: a7b15e559626c6d1f3b6b62c10b1662d0209ddbd
+R11_CANDIDATE_Q15_MATRIX_BLOB: ba6f4fbe6f7ba86378879488fe5d5c077532e228
 R09_FULL_AUTHOR_A1_A7_MATRIX_BLOB: d21d1d3ede107b3b479d1f61a1ddc0e4df0414ec
 ORIGINAL_G10_SGK_CANONICAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232
 ORIGINAL_G10_SGK_SBT_PDF_VISUAL_RECEIPT_BLOB: 850dd241e60de58ccf032e48e1e13530988436e3
@@ -89,7 +94,7 @@ ASSESSMENT_Q16: The seven public selfcheck questions contain no key/hint/correct
 
 This composite author Q18 receipt chains a previously CONTENT_READY R09 snapshot with exact R10 material math/PED and R11 editorial no-math diffs. The source, matrix and receipt Git blobs are independently pinned above; the original R09 signed snapshot remains valid on its old SHA, not rewritten. Owner-effective Q18 allows AUTHOR_SELF_VERIFIED from substantive source evidence without mandatory new independent NotebookLM; no independent reviewer verdict is invented. The remaining work is precise V2/A1–A7/ready/REGISTER source-hash packaging on R11; **CONTENT_READY has not been issued for R11** by this receipt alone. Neither website integration nor release authorization is part of AUTHORING.
 
-AUTHOR_SIGNOFF: TOP19_MASTER974_14_D6_42_PRACTICE_7_SAME_ID_REPLAY_3_FT_TRANSFER_20261121_2faa5d797eb16020d21673c572c443f1cb7acb41
+AUTHOR_SIGNOFF: TOP19_MASTER974_14_D6_42_PRACTICE_7_SAME_ID_REPLAY_3_FT_TRANSFER_20261121_ba549932e8a56bb46ec2951171e999cc70d6f34f
 VERDICT: AUTHOR_SELF_VERIFIED_ON_EXACT_R11_SOURCE_WITH_TARGETED_DELTA_CHAIN; HANDOFF_PACKAGING_PENDING; NEW_CONTENT_READY_NOT_CLAIMED; NO_MERGE_NO_DEPLOY.
 
 
