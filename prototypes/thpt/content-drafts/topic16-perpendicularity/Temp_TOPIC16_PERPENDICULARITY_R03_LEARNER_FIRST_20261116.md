@@ -28,9 +28,9 @@ Muốn đo góc hai thanh ở xa nhau, hãy dời hai phương đến cùng mộ
 
 > **ĐỊNH NGHĨA**
 >
-> Góc giữa hai đường trong không gian là góc nhỏ giữa hai đường cùng đi qua một điểm và lần lượt song song với hai đường đã cho; vì thế góc luôn trong \([0^\circ;90^\circ]\). Việc dời phương là để đo được ngay cả khi hai đường chéo nhau.
+> Góc giữa hai đường trong không gian là góc không tù giữa hai đường cùng đi qua một điểm và lần lượt có cùng phương với hai đường đã cho; vì thế góc luôn trong \([0^\circ;90^\circ]\). Việc dời phương là để đo được ngay cả khi hai đường chéo nhau.
 
-**Vì sao góc không phụ thuộc vị trí đặt hai đường?** Qua một điểm \(O\) tùy ý, dựng \(a'\parallel a\), \(b'\parallel b\). Hai phương không thay đổi khi dịch song song, nên trong bốn góc tại \(O\) luôn có một góc nhỏ \(\varphi\in[0^\circ;90^\circ]\); đây chính là góc giữa hai đường \(a,b\), bất kể chúng cắt nhau, chéo nhau hay song song. Nếu hai đường song song thì \(\varphi=0^\circ\), còn **vuông góc** khi và chỉ khi \(\varphi=90^\circ\).
+**Vì sao góc không phụ thuộc vị trí đặt hai đường?** Qua một điểm \(O\) tùy ý, dựng \(a'\parallel a\), \(b'\parallel b\). Hai phương không thay đổi khi dịch song song, nên trong bốn góc tại \(O\) luôn có một góc nhỏ \(\varphi\in[0^\circ;90^\circ]\); đây chính là góc giữa hai đường \(a,b\), bất kể chúng cắt nhau, chéo nhau hay song song. Nếu hai đường song song hoặc trùng nhau thì \(\varphi=0^\circ\), còn **vuông góc** khi và chỉ khi \(\varphi=90^\circ\).
 
 > **PHƯƠNG PHÁP — Đưa hai phương về chung gốc.** Chọn điểm dễ dựng (thường là một đỉnh hình hộp), thay mỗi đường bằng đường qua điểm đó song song với nó, rồi dùng góc thật của tam giác hoặc hình chữ nhật; không đọc góc trực tiếp từ hình phối cảnh. Không bắt buộc biết tọa độ Oxyz lớp 12.
 
@@ -40,7 +40,7 @@ Muốn đo góc hai thanh ở xa nhau, hãy dời hai phương đến cùng mộ
 
 **Đề bài:** Trong hộp chữ nhật ABCD.A′B′C′D′, xác định góc giữa AB và CC′, biết cạnh bên vuông góc đáy.
 
-**Lời giải:** \(CC'\parallel AA'\), trong khi \(AA'\perp (ABCD)\) nên \(AA'\perp AB\). Dời phương CC′ về AA′ qua A; góc giữa AB và CC′ bằng góc \(BAA'=90^\circ\), dù AB không cắt CC′.
+**Lời giải:** \(CC'\parallel AA'\), trong khi \(AA'\perp (ABCD)\) nên \(AA'\perp AB\). Dời phương CC′ về AA′ qua A; góc giữa AB và CC′ bằng góc \(\widehat{BAA'}=90^\circ\), dù AB không cắt CC′.
 
 **Vận dụng**
 
@@ -62,7 +62,7 @@ Nếu lấy góc tù \(145^\circ\) làm góc giữa hai đường, đọc lại 
 
 <!-- LESSON_ID: TOP16-M02; OUTCOME_ID: TOP16-O02; S1_ORIGINAL_OUTCOME: G11-B22-PERP_SKEW -->
 
-Hai thanh ở hai góc hộp có thể không cắt và cũng không đồng phẳng, nhưng vẫn vuông góc về phương. Vì vậy, hãy tách phép thử 'chéo nhau' khỏi phép thử 'góc \(90^\circ'\).
+Hai thanh ở hai góc hộp có thể không cắt và cũng không đồng phẳng, nhưng vẫn vuông góc về phương. Vì vậy, hãy tách phép thử 'chéo nhau' khỏi phép thử 'góc \(90^\circ\)'.
 
 > **ĐỊNH NGHĨA**
 >
@@ -566,7 +566,7 @@ Hai mặt phẳng có giao tuyến không nhất thiết vuông góc. Hãy dựn
 
 **Đề bài:** Cho hai mặt \((P):z=0\) và \((Q):x=0\). Tìm góc giữa hai mặt bằng một tiết diện vuông góc giao tuyến.
 
-**Lời giải:** Giao tuyến hai mặt là trục Oy. Trong \(z=0\) chọn Ox, trong \(x=0\) chọn Oz, hai đường cùng qua O và vuông góc Oy. Vì Ox\(\perp \)Oz nên góc giữa hai mặt là \(90^\circ\).
+**Lời giải:** Giao tuyến hai mặt là trục Oy. Trong \(z=0\) chọn Ox, trong \(x=0\) chọn Oz, hai đường cùng qua O và vuông góc Oy. Vì \(Ox\perp Oz\) nên góc giữa hai mặt là \(90^\circ\).
 
 **Vận dụng**
 
@@ -636,7 +636,7 @@ Mặt tường chứa một đường vuông góc sàn thì cả mặt tường 
 
 **Đề bài:** Cho \((P):x=0, (Q):z=0\). Dùng một đường trong (P) để chứng minh hai mặt vuông góc.
 
-**Lời giải:** Trục Oz nằm trong \(x=0\), có hướng \((0;0;1)\), vuông góc mọi đường của \(z=0\). Vì (P) chứa đường Oz\(\perp (Q)\), suy \((P)\perp (Q)\).
+**Lời giải:** Trục Oz nằm trong \(x=0\), có hướng \((0;0;1)\), vuông góc mọi đường của \(z=0\). Vì (P) chứa đường \(Oz\perp(Q)\), suy \((P)\perp (Q)\).
 
 **Vận dụng**
 
@@ -668,7 +668,7 @@ Hai mặt vuông góc có giao tuyến d. Muốn một đường trong mặt th�
 
 **Đề bài:** Hai mặt \((P):x=0\) và \((Q):z=0\) giao theo Oy. Lấy a là trục Oz. Dùng tính chất hai mặt vuông góc chứng minh \(a\perp (Q)\).
 
-**Lời giải:** Oz thuộc mặt \(x=0\) và vuông góc Oy là giao tuyến d. Vì hai mặt vuông góc, đường trong mặt thứ nhất vuông góc d cũng vuông góc mặt thứ hai, nên Oz\(\perp (Q)\).
+**Lời giải:** Oz thuộc mặt \(x=0\) và vuông góc Oy là giao tuyến d. Vì hai mặt vuông góc, đường trong mặt thứ nhất vuông góc d cũng vuông góc mặt thứ hai, nên \(Oz\perp(Q)\).
 
 **Vận dụng**
 
@@ -734,7 +734,7 @@ Tính chất cạnh bên bằng nhau **không** cho phép đồng nhất cạnh 
 SM^2=SO^2+OM^2.
 \]
 
-Mặt khác đường cạnh bên \(SA\) thỏa \(SA^2=SO^2+OA^2\). Do \(OA>OM\), thường \(SA>SM>SO\). **Không** nhầm \(OM\) với \(OA\): \(OM\) là bán kính nội tiếp hình vuông đáy, còn \(OA\) là nửa đường chéo đáy.
+Mặt khác đường cạnh bên \(SA\) thỏa \(SA^2=SO^2+OA^2\). Vì \(OA>OM>0\), trong hình chóp đều không suy biến này luôn có \(SA>SM>SO\). **Không** nhầm \(OM\) với \(OA\): \(OM\) là bán kính nội tiếp hình vuông đáy, còn \(OA\) là nửa đường chéo đáy.
 
 **Ví dụ minh họa.** Đáy vuông cạnh \(6\) cm và đường cao \(SO=4\) cm. Khi đó \(OM=3\) cm, \(OA=3\sqrt2\) cm. Suy \(SM=\sqrt{4^2+3^2}=5\) cm, còn \(SA=\sqrt{4^2+(3\sqrt2)^2}=\sqrt{34}\) cm. Chọn tam giác \(SOM\) khi hỏi **đường cao mặt bên**, chọn \(SOA\) khi hỏi **cạnh bên**.
 
@@ -921,7 +921,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-\(0^\circ: AD\) và B′C′ song song, nên cùng phương. Không lấy khoảng cách giữa hai cạnh để xác định góc.
+\(0^\circ\): AD và B′C′ song song, nên cùng phương. Không lấy khoảng cách giữa hai cạnh để xác định góc.
 
 **D6 nếu sai:** Đừng dùng góc tù hoặc kết luận không có góc chỉ vì hai đường không gặp nhau. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -965,13 +965,13 @@ Từ AB thuộc đáy và CC′ vuông góc mặt đáy, \(CC'\perp AB\); kết 
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D không thuộc AB. Nếu có mặt phẳng nào chứa cả AB và DD′ thì nó phải chứa A, B, D, tức chính là mặt đáy (ABCD); điều này không thể xảy ra vì D′ không nằm ở đáy. Vậy AB và DD′ không đồng phẳng (và không song song), nên chéo nhau. Qua A, đường AA′ song song DD′; vì \(AB\perp AA'\), góc giữa AB và DD′ bằng góc \(BAA' = 90^\circ\). Đó là cách dời *phương* về cùng điểm để đo góc, không dựa trên hình phối cảnh.
+Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D không thuộc AB. Nếu có mặt phẳng nào chứa cả AB và DD′ thì nó phải chứa A, B, D, tức chính là mặt đáy (ABCD); điều này không thể xảy ra vì D′ không nằm ở đáy. Vậy AB và DD′ không đồng phẳng (và không song song), nên chéo nhau. Qua A, đường AA′ song song DD′; vì \(AB\perp AA'\), góc giữa AB và DD′ bằng góc \(\widehat{BAA'}=90^\circ\). Đó là cách dời *phương* về cùng điểm để đo góc, không dựa trên hình phối cảnh.
 
 **Rubric 4 điểm:**
 - Nêu đúng hai phương vuông góc — **1 điểm**.
 - Chứng minh hai đường chéo nhau, không cắt — **1 điểm**.
 - Dựng được AA′ qua A song song DD′ — **1 điểm**.
-- Xác định góc \(BAA' = 90^\circ\) và lý do bất biến phương — **1 điểm**.
+- Xác định góc \(\widehat{BAA'}=90^\circ\) và lý do bất biến phương — **1 điểm**.
 
 </details>
 
@@ -1305,7 +1305,7 @@ H là hình chiếu; \(d(A,(P))=AH=7\,\mathrm{cm}\). Không dùng độ dài m�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Có. Vì \(AH\perp (P)\) nên \(c\perp AH\). Mặt khác, theo giả thiết \(c\perp AB\). Hình chiếu của đường xiên AB lên (P) là đường BH **không suy biến vì B≠H**; theo định lí ba đường vuông góc suy \(c\perp BH\). Nếu bỏ điều kiện \(B\ne H, BH\) chỉ là một điểm nên không thể viết \(c\perp BH\).
+Có. Vì \(AH\perp (P)\) nên \(c\perp AH\). Mặt khác, theo giả thiết \(c\perp AB\). Hình chiếu của đường xiên AB lên (P) là đường BH **không suy biến vì \(B\ne H\)**; theo định lí ba đường vuông góc suy \(c\perp BH\). Nếu bỏ điều kiện \(B\ne H\), BH chỉ là một điểm nên không thể viết \(c\perp BH\).
 
 **D6 nếu sai:** Trước khi dùng định lí, xác định chân H và đảm bảo BH thật sự là hình chiếu AB. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -1467,11 +1467,11 @@ Có. Vì \(AH\perp (P)\) nên \(c\perp AH\). Mặt khác, theo giả thiết \(c
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Bài giải tự đối chiếu sau khi tự làm:** Góc hai mặt \(=68^\circ\), vì lấy góc không tù giữa hai mặt, trong khi góc nhị diện \(112^\circ\) đo hai nửa mặt có hướng.
+**Bài giải tự đối chiếu sau khi tự làm:** Góc hai mặt bằng \(68^\circ\), vì lấy góc không tù giữa hai mặt, trong khi góc nhị diện \(112^\circ\) đo hai nửa mặt có hướng.
 
 **Rubric 4 điểm:**
 1. Phân biệt nhị diện với góc hai mặt (1) — **1 điểm**.
-2. Nêu góc giữa hai mặt \(\le 90^\circ\) (1) — **1 điểm**.
+2. Nêu góc giữa hai mặt không vượt quá \(90^\circ\) (1) — **1 điểm**.
 3. Tính \(180^\circ-112^\circ=68^\circ\) (1) — **1 điểm**.
 4. Giải thích cơ sở chọn góc nhọn (1) — **1 điểm**.
 
