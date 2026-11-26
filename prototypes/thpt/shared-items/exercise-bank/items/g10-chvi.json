@@ -100,7 +100,7 @@
     "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
     "stem": "Một dịch vụ giao hàng thu 18 nghìn đồng cho quãng đường \\(0\\le x\\le3\\) km, và \\(18+5(x-3)\\) nghìn đồng nếu \\(x>3\\). Gọi C(x) là phí giao hàng (nghìn đồng). Tính \\(C(3),C(5)\\), nêu tập xác định của C và giải thích vì sao không dùng \\(5x\\) cho nhánh thứ hai.",
     "answer_key": "\\(D=[0;+\\infty)\\); \\(C(3)=18,\\ C(5)=28\\) (nghìn đồng). Phí thêm chỉ tính phần vượt 3 km.",
-    "worked_solution": "Quãng đường không âm nên \\(D=[0;+\\infty)\\). Tại \\(x=3\\), dùng nhánh đầu: \\(C(3)=18\\). Tại \\(x=5>3\\), \\(C(5)=18+5(5-3)=28\\). Phí nền là 18 nghìn đồng cho 3 km đầu; chỉ số km vượt 3 mới tính thêm 5 nghìn đồng/km. Công thức \\(5x\\) sẽ cho 25 nghìn đồng tại 5 km, sai mô hình.",
+    "worked_solution": "Quãng đường không âm nên \\(D=[0;+\\infty)\\). Tại \\(x=3\\), dùng nhánh đầu: \\(C(3)=18\\). Tại \\(x=5>3\\), \\(C(5)=18+5(5-3)=28\\). Phí nền là 18 nghìn đồng cho quãng đường không quá 3 km; chỉ số km vượt 3 mới tính thêm 5 nghìn đồng mỗi km. Công thức \\(5x\\) sẽ cho 25 nghìn đồng tại 5 km, sai mô hình.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_PIECEWISE"
@@ -685,7 +685,7 @@
   {
     "item_id": "THPT-G10-B16-C03",
     "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(g(x)=2(x-4)^2-3\\), tìm GTNN, nơi đạt GTNN, tập giá trị và hai khoảng tăng/giảm.",
+    "stem": "Với \\(g(x)=2(x-4)^2-3\\), tìm GTNN, nơi đạt GTNN, tập giá trị và các khoảng đồng biến và nghịch biến.",
     "answer_key": "GTNN −3 tại \\(x=4\\); \\(T=[-3;+\\infty)\\); nghịch biến trên \\((-\\infty;4)\\), đồng biến trên \\((4;+\\infty)\\).",
     "worked_solution": "Vì \\(2(x-4)^2\\ge0\\), giá trị nhỏ nhất của g là −3, đạt tại \\(x=4\\). Với mọi \\(y\\ge-3\\), chọn \\(x=4+\\sqrt{\\frac{y+3}{2}}\\) thì \\(g(x)=y\\); vậy tập giá trị là \\([-3;+\\infty)\\). Khi x tăng từ bên trái đến 4, khoảng cách \\(|x-4|\\) giảm nên g giảm; khi x tăng từ 4 về bên phải, khoảng cách tăng nên g tăng. Hàm nghịch biến trên \\((-\\infty;4)\\), đồng biến trên \\((4;+\\infty)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -695,7 +695,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Vì hệ số 2 dương, bình phương không âm; đọc nhánh trái/phải từ trục \\(x=4\\)."
+      "Vì hệ số 2 dương, bình phương không âm; đọc hai nhánh bên trái và bên phải từ trục \\(x=4\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -948,7 +948,7 @@
   {
     "item_id": "THPT-G10-B16-P05",
     "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Có 36 m hàng rào để rào ba cạnh hình chữ nhật dựa vào một bức tường thẳng. Gọi \\(x\\) (m) là chiều rộng vuông góc tường. Tìm miền của \\(x\\), diện tích lớn nhất và kích thước tương ứng.",
+    "stem": "Dùng hết 36 m hàng rào để rào ba cạnh hình chữ nhật dựa vào một bức tường thẳng. Gọi \\(x\\) (m) là chiều rộng vuông góc tường. Tìm miền của \\(x\\), diện tích lớn nhất và kích thước tương ứng.",
     "answer_key": "\\(0<x<18\\) (m); diện tích lớn nhất \\(162\\,\\mathrm{m}^2\\); kích thước \\(9\\,\\mathrm m\\times18\\,\\mathrm m\\).",
     "worked_solution": "Hai cạnh vuông góc tường đều dài x, nên cạnh song song tường dài \\(36-2x\\) (m). Hai kích thước phải dương: \\(0<x<18\\). Diện tích \\(S(x)=x(36-2x)=-2(x-9)^2+162\\). Vì \\(-2(x-9)^2\\le0\\), diện tích không vượt 162; dấu bằng đạt tại \\(x=9\\), thuộc miền. Cạnh còn lại \\(36-2\\cdot9=18\\) m, vậy diện tích lớn nhất là \\(162\\,\\mathrm{m}^2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
