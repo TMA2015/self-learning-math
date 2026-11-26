@@ -18686,6 +18686,106 @@
       "review_scope": "Scoped learner source, math and related formative/Written stem comparisons, not complete bank academic/pedagogy audit or source PDF verification. No private RD1.",
       "remaining": "19 earlier missing skill mappings; global ID/placement scan, three-way Practice/Replay field reconciliation, shared placements CD20/21, depth CD15/19/22, Written and SGK/SBT audit, interaction conversion, visual linkage; no cutover until verified.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp77": {
+      "scope": "CD01–03 Practice/Replay: prior CP48–50 author projection → current learner → candidate. Field review of public Practice stems/options/reveals; current Replay stem and option comparison to Practice; preserve intentional candidate improvements and Written library pointers.",
+      "baseline_commit": "6f1bee84a5ff020452efeca1e6077c81404dee22",
+      "pre_manifest_head": "607fb61316038b90bda855728b872b7735be4b4d",
+      "topics": [
+        {
+          "topic": "CD01",
+          "current_learner_blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+          "prior_practice_projection_blob": "68aff74a219fd7e43e69f2970598a29a933fac89",
+          "practice": 24,
+          "replay": 11,
+          "all_replay_stems_and_options_match_current_practice": true,
+          "placement_blob": "e67d438b3775e5193e21a8c76e671a6e2f5ba552",
+          "local_records": 6,
+          "shared_formative": 16,
+          "written": 2
+        },
+        {
+          "topic": "CD02",
+          "current_learner_blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+          "prior_practice_projection_blob": "3a7fca2aaabee8128e280325822671c1d1e76a73",
+          "practice": 38,
+          "replay": 16,
+          "all_replay_stems_and_options_match_current_practice": true,
+          "placement_blob": "fc8f70d93e2ee517e2ec135a991cc86803c27c7d",
+          "local_records": 18,
+          "shared_formative": 16,
+          "written": 4
+        },
+        {
+          "topic": "CD03",
+          "current_learner_blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+          "prior_practice_projection_blob": "dda346972000e9cd976dfd26f607d77a48e1d42d",
+          "practice": 31,
+          "replay": 12,
+          "all_replay_stems_and_options_match_current_practice": true,
+          "placement_blob": "5f82e5209ad573fdef25357bc7fc65948500e770",
+          "local_records": 21,
+          "shared_formative": 6,
+          "written": 4
+        }
+      ],
+      "files": [
+        {
+          "path": "items/cd01.json",
+          "before": "fb615be4210f2a2190c5857355bc40ee49b18a7a",
+          "after": "188f8cec5c9fa28d810453d0c93bf8001d6af2b4",
+          "commit": "9386efac3162df47eb8d86246530f0b79ad47310",
+          "records": 6
+        },
+        {
+          "path": "items/cd02.json",
+          "before": "f24cf635784a46daec9932d7339837f8f83b5a07",
+          "after": "375d6bd340fda74757d09974bc866031e24c230a",
+          "commit": "2a912eb4521946ac1b561b830cd63549ad761532",
+          "records": 18
+        },
+        {
+          "path": "items/cd03.json",
+          "before": "1bdfe03e647d24162326be01584eb328f194510f",
+          "after": "d48379a5ef43dddf6f738c8b393daf2f4e7a1751",
+          "commit": "607fb61316038b90bda855728b872b7735be4b4d",
+          "records": 21
+        }
+      ],
+      "preserved_candidate_changes": [
+        "CP48 B01-P03 distinct divisibility and necessary/sufficient; B02-C01 empty set, P06 number sets, P03/P04 endpoint and disjoint union.",
+        "CP49 B03-C01/P02/P03/P06 changed choices or model intentionally; CD02 ADD07/08/09/18 stronger sign/bounds reasoning kept.",
+        "CP50 CD03 ADD04/07/08 intentionally changed task and key; ADD21 explicit right angle retained; B18-C02/P03 candidate solution more complete."
+      ],
+      "source_delta_findings": [
+        "Current CĐ01 W02 now defines A/B and includes concrete four-region Venn check; CP48 earlier identified missing A/B. Written library pointer unchanged; bring this source improvement to canonical Written audit, not a duplicate item.",
+        "Current CĐ03 HPT Written HTML tables no longer escaped in latest learner; actual runtime rendering untested.",
+        "Current CĐ02 ADD07 source answer contains confusing duplicated nonnegative phrase; retain candidate exact classification no negative x. CD02 ADD18 integer bound proof retained; latest source enumeration valid.",
+        "Latest source math notation used for 45 local items; deliberate stronger prior candidate stems/solutions preserved; no bulk copying into shared SGK or Written records. Shared SGK notation cleanup and exact canonical version integration still pending."
+      ],
+      "checks": {
+        "practice_reviewed": 93,
+        "public_replay_stem_options_match_current_practice": 39,
+        "local_items_reconciled": 45,
+        "shared_formative_reviewed_preserved": 38,
+        "written_reference_reviewed_preserved": 10,
+        "placement_order_match": 132,
+        "identity_and_skill_ids_preserved": true,
+        "local_hints_remediation_preserved": true,
+        "auto_grade_unchanged": true,
+        "first_try_unchanged": true
+      },
+      "progress": {
+        "topics_scoped_practice_replay_reviewed": 3,
+        "total_topics": 22,
+        "practice_reviewed": 93,
+        "total_practice": 1479,
+        "replay_reviewed": 39,
+        "total_replay": 338,
+        "scope_note": "First batch delta review, not final semantic/academic/PED acceptance. Shared SGK TeX cleanup and Written library source delta open; counts of full parity not claimed."
+      },
+      "remaining": "CĐ04–22 three-way reconciliation; shared SGK TeX, Written source pointer/quality, 19 prior missing skill tags plus legacy practice prerequisite tags, global uniqueness, CĐ20/21 shared placement, depth, interaction conversion. No fresh PDF or release authorization.",
+      "release_authorization": false
     }
   }
 }
