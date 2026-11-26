@@ -29,9 +29,9 @@
       "outcome_id": "G12-CHII-B06-O01",
       "lesson_id": "B06",
       "role": "PRACTICE",
-      "stem": "Với hai điểm phân biệt A, B, vectơ $\\overrightarrow{AA}$ có độ dài và hướng thế nào?",
-      "answer": "Độ dài 0, hướng không xác định",
-      "solution": "Vectơ-không có hai đầu trùng nhau, không có hướng xác định.",
+      "stem": "Với hai điểm phân biệt A, B, vectơ \\(\\overrightarrow{AA}\\) có độ dài bao nhiêu? Theo quy ước, nó có cùng hướng và cùng phương với \\(\\overrightarrow{AB}\\) không?",
+      "answer": "Độ dài 0; có, cùng hướng và cùng phương theo quy ước.",
+      "solution": "Hai đầu của \\(\\overrightarrow{AA}\\) trùng nhau nên đây là vectơ-không. Theo quy ước SGK, vectơ-không cùng hướng và cùng phương với mọi vectơ, kể cả \\(\\overrightarrow{AB}\\). Nó không biểu diễn một hướng dịch chuyển riêng; không xác định góc giữa vectơ-không và vectơ khác.",
       "rubric": ""
     },
     {
