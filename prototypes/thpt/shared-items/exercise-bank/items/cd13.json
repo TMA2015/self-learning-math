@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-TOP13-P01",
     "content_version": 2,
-    "stem": "Cho hình vuông ABCD. So sánh vectơ AB với DC và BC: cặp nào bằng nhau, cặp nào có cùng độ dài nhưng không bằng nhau? Giải thích.",
-    "answer_key": "AB⃗=DC⃗; AB⃗ và BC⃗ cùng độ dài nhưng không bằng nhau vì khác hướng.",
-    "worked_solution": "Trong hình vuông, hai cạnh đối AB và DC có cùng chiều và cùng độ dài nên AB⃗=DC⃗. Hai cạnh kề AB, BC bằng nhau về độ dài nhưng vuông góc, do đó AB⃗≠BC⃗. Hai vectơ bằng nhau không đòi hỏi cùng điểm đầu, nhưng đòi hỏi cùng hướng và cùng độ dài.",
+    "stem": "Cho hình vuông ABCD. So sánh \\(\\overrightarrow{AB}\\) với \\(\\overrightarrow{DC}\\) và \\(\\overrightarrow{BC}\\): cặp nào bằng nhau, cặp nào có cùng độ dài nhưng không bằng nhau? Giải thích.",
+    "answer_key": "\\(\\overrightarrow{AB}=\\overrightarrow{DC}\\); \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{BC}\\) cùng độ dài nhưng không bằng nhau vì khác hướng.",
+    "worked_solution": "Trong hình vuông, \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{DC}\\) có cùng hướng và cùng độ dài nên \\(\\overrightarrow{AB}=\\overrightarrow{DC}\\). Hai cạnh kề AB, BC bằng nhau về độ dài nhưng vuông góc, do đó \\(\\overrightarrow{AB}\\ne\\overrightarrow{BC}\\). Hai vectơ bằng nhau không đòi hỏi cùng điểm đầu, nhưng đòi hỏi cùng hướng và cùng độ dài.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B07-EQUALITY",
@@ -33,8 +33,8 @@
   {
     "item_id": "THPT-TOP13-P02",
     "content_version": 2,
-    "stem": "Khi A=B, độ dài \\(\\lvert\\overrightarrow{AA}\\rvert\\) và quan hệ cùng phương của vectơ-không với vectơ khác không theo quy ước KNTT là gì?",
-    "answer_key": "|AA⃗|=0; vectơ-không được quy ước cùng phương (và cùng hướng) với mọi vectơ.",
+    "stem": "Khi \\(A=B\\), độ dài \\(\\lVert\\overrightarrow{AA}\\rVert\\) và quan hệ cùng phương của vectơ-không với vectơ khác không theo quy ước KNTT là gì?",
+    "answer_key": "\\(\\lVert\\overrightarrow{AA}\\rVert=0\\); vectơ-không được quy ước cùng phương (và cùng hướng) với mọi vectơ.",
     "worked_solution": "\\(\\overrightarrow{AA}=\\vec 0\\) nên độ dài bằng 0; vectơ-không được quy ước cùng phương và cùng hướng với mọi vectơ. Không suy góc xác định với nó.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -65,7 +65,7 @@
     "content_version": 2,
     "stem": "Robot đi thẳng 5 m về đông rồi đi thẳng 12 m về bắc. Tính tổng quãng đường và độ lớn của vectơ độ dời.",
     "answer_key": "Quãng đường 17 m; độ lớn độ dời 13 m.",
-    "worked_solution": "Hai chặng thẳng về đông và bắc vuông góc với nhau. Tổng quãng đường là 5+12=17 m. Vectơ độ dời nối vị trí đầu với vị trí cuối, có độ dài bằng cạnh huyền: √(5²+12²)=13 m. Nếu nhầm 17 m là độ dời, vẽ hai chặng và đường nối đầu–cuối, rồi xem lại Kiến thức 3.",
+    "worked_solution": "Hai chặng thẳng về đông và bắc vuông góc với nhau. Tổng quãng đường là \\(5+12=17\\,\\mathrm m\\). Vectơ độ dời nối vị trí đầu với vị trí cuối, có độ dài bằng cạnh huyền: \\(\\sqrt{5^2+12^2}=13\\,\\mathrm m\\). Nếu nhầm 17 m là độ dời, vẽ hai chặng và đường nối đầu–cuối, rồi xem lại Kiến thức 3.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B08-TRIANGLE",
@@ -89,14 +89,14 @@
       "heading": "## THPT-TOP13-P03 · TOP13-O03"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu cộng 5+12 để tính độ dời, dùng Pitago cho đường nối; quãng đường vẫn là tổng hai chặng. Ôn CĐ13 mục 1.3; luyện THPT-G10-B08-C01."
+    "remediation": "Nếu cộng \\(5+12\\) để tính độ dời, dùng định lí Pythagore cho đường nối; quãng đường vẫn là tổng hai chặng. Ôn CĐ13 mục 1.3; luyện THPT-G10-B08-C01."
   },
   {
     "item_id": "THPT-TOP13-P04",
     "content_version": 2,
-    "stem": "Cho A=(−1,2), B=(4,3), C=(2,−2). Tính \\(\\overrightarrow{AB}-\\overrightarrow{AC}\\) và đối chiếu với một vectơ có điểm đầu C.",
-    "answer_key": "AB⃗−AC⃗=(2;5)=CB⃗.",
-    "worked_solution": "\\(\\overrightarrow{AB}=(5,1)\\), \\(\\overrightarrow{AC}=(3,-4)\\); \\(\\overrightarrow{AB}-\\overrightarrow{AC}=(2,5)=\\overrightarrow{CB}\\), vì \\(B-C=(2,5)\\) theo tọa độ.",
+    "stem": "Cho \\(A(-1;2),\\ B(4;3),\\ C(2;-2)\\). Tính \\(\\overrightarrow{AB}-\\overrightarrow{AC}\\) và đối chiếu với một vectơ có điểm đầu C.",
+    "answer_key": "\\(\\overrightarrow{AB}-\\overrightarrow{AC}=(2;5)=\\overrightarrow{CB}\\).",
+    "worked_solution": "\\(\\overrightarrow{AB}=(5;1)\\), \\(\\overrightarrow{AC}=(3;-4)\\); \\(\\overrightarrow{AB}-\\overrightarrow{AC}=(2;5)\\). Mặt khác, \\(\\overrightarrow{CB}=(4-2;3-(-2))=(2;5)\\), nên \\(\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{CB}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B08-OPPOSITE-SUBTRACTION",
@@ -108,7 +108,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Hai vectơ cùng gốc A: hiệu đi từ đầu mút của vectơ bị trừ đến đầu mút kia."
+      "Hai vectơ cùng gốc A: hiệu đi từ đầu mút C của vectơ trừ đến đầu mút B của vectơ bị trừ."
     ],
     "rubric": null,
     "interaction": {
@@ -120,14 +120,14 @@
       "heading": "## THPT-TOP13-P04 · TOP13-O04"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu ra BC, đảo chiều về CB; kiểm lại bằng tọa độ B−C. Ôn CĐ13 mục 1.4; luyện THPT-G10-B08-P02."
+    "remediation": "Nếu ra \\(\\overrightarrow{BC}\\), đảo chiều về \\(\\overrightarrow{CB}\\); kiểm lại bằng tọa độ cuối trừ đầu. Ôn CĐ13 mục 1.4; luyện THPT-G10-B08-P02."
   },
   {
     "item_id": "THPT-TOP13-P05",
     "content_version": 2,
-    "stem": "Cho u=(2,−1) và v=−4u. Tìm v, độ dài v và quan hệ hướng với u.",
-    "answer_key": "v⃗=(−8;4), |v⃗|=4√5; ngược hướng với u⃗.",
-    "worked_solution": "v=(−8,4), |u|=√5 nên |v|=4√5. Hệ số −4 đảo hướng của u.",
+    "stem": "Cho \\(\\vec u=(2;-1)\\) và \\(\\vec v=-4\\vec u\\). Tìm \\(\\vec v\\), độ dài và quan hệ hướng với \\(\\vec u\\).",
+    "answer_key": "\\(\\vec v=(-8;4)\\), \\(\\lVert\\vec v\\rVert=4\\sqrt5\\); ngược hướng với \\(\\vec u\\).",
+    "worked_solution": "\\(\\vec v=(-8;4)\\), \\(\\lVert\\vec u\\rVert=\\sqrt5\\) nên \\(\\lVert\\vec v\\rVert=4\\sqrt5\\). Hệ số −4 đảo hướng của \\(\\vec u\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B09-LENGTH_DIRECTION",
@@ -156,9 +156,9 @@
   {
     "item_id": "THPT-TOP13-P06",
     "content_version": 2,
-    "stem": "Tam giác A=(−3,0), B=(3,0), C=(0,6). Tìm trung điểm M của BC và trọng tâm G. Kiểm \\(\\overrightarrow{AG}=\\tfrac23\\overrightarrow{AM}\\).",
-    "answer_key": "M(3/2;3), G(0;2); AG⃗=(2/3)AM⃗.",
-    "worked_solution": "Trung điểm lấy trung bình tọa độ B,C: M=((3+0)/2;(0+6)/2)=(3/2;3). Trọng tâm lấy trung bình tọa độ ba đỉnh: G=((−3+3+0)/3;(0+0+6)/3)=(0;2). AG⃗=(3;2), AM⃗=(9/2;3), nên (2/3)AM⃗=(3;2)=AG⃗. Nếu nhầm hệ số, xem lại Kiến thức 6 và phân biệt AM với GM.",
+    "stem": "Tam giác \\(A(-3;0),\\ B(3;0),\\ C(0;6)\\). Tìm trung điểm M của BC và trọng tâm G. Kiểm \\(\\overrightarrow{AG}=\\frac23\\overrightarrow{AM}\\).",
+    "answer_key": "\\(M(\\frac32;3),\\ G(0;2)\\); \\(\\overrightarrow{AG}=\\frac23\\overrightarrow{AM}\\).",
+    "worked_solution": "Trung điểm lấy trung bình tọa độ B,C: \\(M\\left(\\frac{3+0}2;\\frac{0+6}2\\right)=M(\\frac32;3)\\). Trọng tâm lấy trung bình tọa độ ba đỉnh: \\(G\\left(\\frac{-3+3+0}3;\\frac{0+0+6}3\\right)=G(0;2)\\). \\(\\overrightarrow{AG}=(3;2)\\), \\(\\overrightarrow{AM}=(\\frac92;3)\\), nên \\(\\frac23\\overrightarrow{AM}=(3;2)=\\overrightarrow{AG}\\). Nếu nhầm hệ số, xem lại Kiến thức 6 và phân biệt AM với GM.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B10-MIDPOINT_CENTROID",
@@ -182,14 +182,14 @@
       "heading": "## THPT-TOP13-P06 · TOP13-O06"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhầm 2/3 với 1/3, nhớ AG=2/3 AM; GM=1/3 AM về độ dài. Ôn CĐ13 mục 1.6; luyện THPT-G10-B08-P05."
+    "remediation": "Nếu nhầm \\(\\frac23\\) với \\(\\frac13\\), nhớ \\(AG=\\frac23 AM\\) và \\(GM=\\frac13 AM\\) về độ dài. Ôn CĐ13 mục 1.6; luyện THPT-G10-B08-P05."
   },
   {
     "item_id": "THPT-TOP13-P07",
     "content_version": 2,
-    "stem": "Cho A=(−3,4), B=(5,−2). Tính vectơ \\(\\overrightarrow{AB}\\) và độ dài của nó.",
-    "answer_key": "AB⃗=(8;−6); |AB⃗|=10.",
-    "worked_solution": "\\(\\overrightarrow{AB}=(8,-6)\\), độ dài \\(AB=|\\overrightarrow{AB}|=\\sqrt{8^2+6^2}=10\\). Không thay hiệu tọa độ bằng tổng giá trị tuyệt đối.",
+    "stem": "Cho \\(A(-3;4),\\ B(5;-2)\\). Tính vectơ \\(\\overrightarrow{AB}\\) và độ dài của nó.",
+    "answer_key": "\\(\\overrightarrow{AB}=(8;-6)\\); \\(\\lVert\\overrightarrow{AB}\\rVert=10\\).",
+    "worked_solution": "\\(\\overrightarrow{AB}=(8;-6)\\), độ dài \\(AB=\\lVert\\overrightarrow{AB}\\rVert=\\sqrt{8^2+(-6)^2}=10\\). Không thay hiệu tọa độ bằng tổng giá trị tuyệt đối.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B10-VECTOR_COORDS",
@@ -213,14 +213,14 @@
       "heading": "## THPT-TOP13-P07 · TOP13-O07"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu đảo dấu cả hai tọa độ mà độ dài vẫn đúng, kiểm lại chiều AB; độ dài không phân biệt AB với BA. Ôn CĐ13 mục 2.1; luyện THPT-G10-B10-C01."
+    "remediation": "Nếu đảo dấu cả hai tọa độ mà độ dài vẫn đúng, kiểm lại chiều \\(\\overrightarrow{AB}\\); độ dài không phân biệt \\(\\overrightarrow{AB}\\) với \\(\\overrightarrow{BA}\\). Ôn CĐ13 mục 2.1; luyện THPT-G10-B10-C01."
   },
   {
     "item_id": "THPT-TOP13-P08",
     "content_version": 2,
-    "stem": "Cho u=(4,−6), v=(−2,3). Chúng cùng phương không và có cùng hướng không?",
+    "stem": "Cho \\(\\vec u=(4;-6),\\ \\vec v=(-2;3)\\). Chúng cùng phương không và có cùng hướng không?",
     "answer_key": "Cùng phương, ngược hướng.",
-    "worked_solution": "v=−(1/2)u, cả hai khác không nên cùng phương nhưng ngược hướng.",
+    "worked_solution": "\\(\\vec v=-\\frac12\\vec u\\), cả hai khác không nên cùng phương nhưng ngược hướng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B10-COLLINEAR_COORDS",
@@ -232,7 +232,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Thử tìm hệ số k sao cho v=ku, kiểm cả hai thành phần."
+      "Thử tìm hệ số k sao cho \\(\\vec v=k\\vec u\\), kiểm cả hai thành phần."
     ],
     "rubric": null,
     "interaction": {
@@ -244,14 +244,14 @@
       "heading": "## THPT-TOP13-P08 · TOP13-O08"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu k âm mà kết luận cùng hướng, nhớ hai vectơ khác không ngược hướng khi k<0. Ôn CĐ13 mục 2.2; luyện THPT-G10-B10-P05."
+    "remediation": "Nếu k âm mà kết luận cùng hướng, nhớ hai vectơ khác không ngược hướng khi \\(k<0\\). Ôn CĐ13 mục 2.2; luyện THPT-G10-B10-P05."
   },
   {
     "item_id": "THPT-TOP13-P09",
     "content_version": 2,
     "stem": "Hai vectơ có độ dài 8 và 5, góc giữa chúng 120°. Tính tích vô hướng và giải thích dấu.",
     "answer_key": "−20, âm vì góc tù.",
-    "worked_solution": "u·v=8·5·cos120°=−20; góc tù nên tích âm. Nếu ra dương, đã bỏ dấu của cos120°.",
+    "worked_solution": "\\(\\vec u\\cdot\\vec v=8\\cdot5\\cos120^\\circ=-20\\); góc tù nên tích âm. Nếu ra dương, đã bỏ dấu của \\(\\cos120^\\circ\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B11-GEOMETRIC_DOT"
@@ -262,7 +262,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Dùng |u||v|cosθ; kiểm dấu cos120°."
+      "Dùng \\(\\lVert\\vec u\\rVert\\lVert\\vec v\\rVert\\cos\\theta\\); kiểm dấu của \\(\\cos120^\\circ\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -279,9 +279,9 @@
   {
     "item_id": "THPT-TOP13-P10",
     "content_version": 2,
-    "stem": "u=(3,−2),v=(4,6). Kiểm hai vectơ có vuông góc không.",
+    "stem": "\\(\\vec u=(3;-2),\\ \\vec v=(4;6)\\). Kiểm hai vectơ có vuông góc không?",
     "answer_key": "Có, hai vectơ vuông góc.",
-    "worked_solution": "u·v=12−12=0 và u,v khác không ⇒ vuông góc.",
+    "worked_solution": "\\(\\vec u\\cdot\\vec v=12-12=0\\) và cả hai vectơ khác không nên chúng vuông góc.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B11-COORDINATE_DOT",
@@ -305,14 +305,14 @@
       "heading": "## THPT-TOP13-P10 · TOP13-O10"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ dùng tích bằng 0 mà bỏ điều kiện, thử thay u bằng vectơ-không: góc không xác định. Ôn CĐ13 mục 2.4; luyện THPT-G10-B11-P03."
+    "remediation": "Nếu chỉ dùng tích bằng 0 mà bỏ điều kiện, thử thay \\(\\vec u\\) bằng vectơ-không: góc không xác định. Ôn CĐ13 mục 2.4; luyện THPT-G10-B11-P03."
   },
   {
     "item_id": "THPT-TOP13-P11",
     "content_version": 2,
-    "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, AB=2, AD=3, AA′=6. Tính độ dài vectơ AC′⃗ và giải thích vì sao được dùng định lí Pitago hai lần.",
-    "answer_key": "|AC′⃗|=7.",
-    "worked_solution": "AB⊥AD nên AC²=2²+3²=13. CC′ vuông góc mặt đáy nên CC′⊥AC. Do đó AC′²=AC²+CC′²=13+36=49, suy ra |AC′⃗|=7. Không cộng trực tiếp các cạnh vì ba phương vuông góc.",
+    "stem": "Trong hình hộp chữ nhật \\(ABCD.A'B'C'D'\\), \\(AB=2,\\ AD=3,\\ AA'=6\\). Tính độ dài vectơ \\(\\overrightarrow{AC'}\\) và giải thích vì sao được dùng định lí Pythagore hai lần.",
+    "answer_key": "\\(\\lVert\\overrightarrow{AC'}\\rVert=7\\).",
+    "worked_solution": "\\(AB\\perp AD\\) nên \\(AC^2=2^2+3^2=13\\). Vì \\(CC'\\) vuông góc mặt đáy nên \\(CC'\\perp AC\\). Do đó \\(AC'^2=AC^2+CC'^2=13+36=49\\), suy ra \\(\\lVert\\overrightarrow{AC'}\\rVert=7\\). Không cộng trực tiếp các cạnh vì ba phương vuông góc.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B08-O05"
@@ -340,9 +340,9 @@
   {
     "item_id": "THPT-TOP13-P12",
     "content_version": 2,
-    "stem": "A=(−1,2,0), B=(2,−1,4), C=(5,3,−2). Hãy tính \\(\\overrightarrow{AB}\\), \\(\\overrightarrow{BC}\\), \\(\\overrightarrow{AC}\\), rồi xác minh quy tắc ba điểm.",
-    "answer_key": "AB⃗=(3;−3;4), BC⃗=(3;4;−6), AC⃗=(6;1;−2); AB⃗+BC⃗=AC⃗.",
-    "worked_solution": "\\(\\overrightarrow{AB}=(3,-3,4)\\), \\(\\overrightarrow{BC}=(3,4,-6)\\); \\(\\overrightarrow{AB}+\\overrightarrow{BC}=(6,1,-2)=\\overrightarrow{AC}\\). Cần lấy cuối trừ đầu từng cặp.",
+    "stem": "Cho \\(A(-1;2;0),\\ B(2;-1;4),\\ C(5;3;-2)\\). Hãy tính \\(\\overrightarrow{AB}\\), \\(\\overrightarrow{BC}\\), \\(\\overrightarrow{AC}\\), rồi xác minh quy tắc ba điểm.",
+    "answer_key": "\\(\\overrightarrow{AB}=(3;-3;4),\\ \\overrightarrow{BC}=(3;4;-6),\\ \\overrightarrow{AC}=(6;1;-2)\\); \\(\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}\\).",
+    "worked_solution": "\\(\\overrightarrow{AB}=(3;-3;4)\\), \\(\\overrightarrow{BC}=(3;4;-6)\\), \\(\\overrightarrow{AC}=(6;1;-2)\\). Cộng \\(\\overrightarrow{AB}+\\overrightarrow{BC}=(6;1;-2)=\\overrightarrow{AC}\\). Cần lấy cuối trừ đầu từng cặp.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B07-O04",
@@ -367,14 +367,14 @@
       "heading": "## THPT-TOP13-P12 · TOP13-O12"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu ra AC sai, kiểm chặng AB+BC: B triệt tiêu trong (B−A)+(C−B). Ôn CĐ13 mục 3.2; luyện THPT-G12-B06-C03."
+    "remediation": "Nếu ra \\(\\overrightarrow{AC}\\) sai, kiểm chặng \\(\\overrightarrow{AB}+\\overrightarrow{BC}\\): tọa độ B triệt tiêu khi cộng hai hiệu tọa độ liên tiếp. Ôn CĐ13 mục 3.2; luyện THPT-G12-B06-C03."
   },
   {
     "item_id": "THPT-TOP13-P13",
     "content_version": 2,
-    "stem": "Hai vectơ không gian u=(2,−1,2), v=(1,4,1). Tính u·v và góc giữa chúng.",
-    "answer_key": "u⃗·v⃗=0; góc 90°.",
-    "worked_solution": "u·v=2−4+2=0; |u|=3 và |v|=3√2 đều khác 0 nên góc bằng 90°.",
+    "stem": "Hai vectơ không gian \\(\\vec u=(2;-1;2),\\ \\vec v=(1;4;1)\\). Tính \\(\\vec u\\cdot\\vec v\\) và góc giữa chúng.",
+    "answer_key": "\\(\\vec u\\cdot\\vec v=0\\); góc \\(90^\\circ\\).",
+    "worked_solution": "\\(\\vec u\\cdot\\vec v=2-4+2=0\\); \\(\\lVert\\vec u\\rVert=3,\\ \\lVert\\vec v\\rVert=3\\sqrt2\\) đều khác 0 nên góc bằng \\(90^\\circ\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B08-O04"
@@ -397,14 +397,14 @@
       "heading": "## THPT-TOP13-P13 · TOP13-O13"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu bỏ thành phần z, tính đủ 2·1+(−1)·4+2·1 rồi suy góc. Ôn CĐ13 mục 3.3; luyện THPT-G12-B08-P07."
+    "remediation": "Nếu bỏ thành phần z, tính đủ \\(2\\cdot1+(-1)\\cdot4+2\\cdot1\\) rồi suy góc. Ôn CĐ13 mục 3.3; luyện THPT-G12-B08-P07."
   },
   {
     "item_id": "THPT-TOP13-P14",
     "content_version": 2,
-    "stem": "A=(−2,3,1), B=(4,−1,5). Tính tọa độ \\(\\overrightarrow{AB}\\) và khoảng cách từ A tới B.",
-    "answer_key": "AB⃗=(6;−4;4); AB=2√17.",
-    "worked_solution": "\\(\\overrightarrow{AB}=(6,-4,4)\\); khoảng cách \\(AB=|\\overrightarrow{AB}|=\\sqrt{36+16+16}=\\sqrt{68}=2\\sqrt{17}\\).",
+    "stem": "Cho \\(A(-2;3;1),\\ B(4;-1;5)\\). Tính tọa độ \\(\\overrightarrow{AB}\\) và khoảng cách từ A tới B.",
+    "answer_key": "\\(\\overrightarrow{AB}=(6;-4;4)\\); \\(AB=2\\sqrt{17}\\).",
+    "worked_solution": "\\(\\overrightarrow{AB}=(6;-4;4)\\); khoảng cách \\(AB=\\lVert\\overrightarrow{AB}\\rVert=\\sqrt{36+16+16}=\\sqrt{68}=2\\sqrt{17}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B07-O04",
@@ -416,7 +416,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Tọa độ AB bằng B−A, khoảng cách là chuẩn của vectơ đó."
+      "Tọa độ \\(\\overrightarrow{AB}\\) bằng tọa độ B trừ tọa độ A; khoảng cách là độ dài vectơ đó."
     ],
     "rubric": null,
     "interaction": {
@@ -428,14 +428,14 @@
       "heading": "## THPT-TOP13-P14 · TOP13-O14"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu lấy tọa độ B làm AB, kiểm A không phải O; nếu đảo AB thành BA thì độ dài vẫn không đổi. Ôn CĐ13 mục 3.4; luyện THPT-G12-B07-C04."
+    "remediation": "Nếu lấy tọa độ B làm tọa độ \\(\\overrightarrow{AB}\\), kiểm A không phải O; nếu đảo \\(\\overrightarrow{AB}\\) thành \\(\\overrightarrow{BA}\\) thì độ dài vẫn không đổi. Ôn CĐ13 mục 3.4; luyện THPT-G12-B07-C04."
   },
   {
     "item_id": "THPT-TOP13-P15",
     "content_version": 2,
-    "stem": "Cho A=(−1,2,4), B=(5,−2,−4). Tìm trung điểm M và khoảng cách AB.",
-    "answer_key": "M(2;0;0); AB=2√29.",
-    "worked_solution": "\\(M=(2,0,0)\\); \\(\\overrightarrow{AB}=(6,-4,-8)\\) có độ dài \\(AB=\\sqrt{36+16+64}=\\sqrt{116}=2\\sqrt{29}\\).",
+    "stem": "Cho \\(A(-1;2;4),\\ B(5;-2;-4)\\). Tìm trung điểm M và khoảng cách AB.",
+    "answer_key": "\\(M(2;0;0)\\); \\(AB=2\\sqrt{29}\\).",
+    "worked_solution": "\\(M(2;0;0)\\); \\(\\overrightarrow{AB}=(6;-4;-8)\\) có độ dài \\(AB=\\sqrt{36+16+64}=\\sqrt{116}=2\\sqrt{29}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B08-O03",
@@ -459,14 +459,14 @@
       "heading": "## THPT-TOP13-P15 · TOP13-O15"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu lấy tổng tọa độ làm M, nhớ chia 2; kiểm M−A=B−M. Ôn CĐ13 mục 3.5; luyện THPT-G12-B08-C03."
+    "remediation": "Nếu lấy tổng tọa độ làm M, nhớ chia 2; kiểm \\(\\overrightarrow{AM}=\\overrightarrow{MB}\\). Ôn CĐ13 mục 3.5; luyện THPT-G12-B08-C03."
   },
   {
     "item_id": "THPT-TOP13-P16",
     "content_version": 2,
-    "stem": "Drone ở P=(1;−2;0) (tọa độ tính bằng mét), bay thẳng theo vectơ dịch chuyển u⃗=(4;0;3) m rồi bay thẳng theo v⃗=(−1;4;0) m. Tìm tọa độ Q, độ dài độ dời và tổng quãng đường hai chặng.",
-    "answer_key": "Q(4;2;3) (m); độ dài độ dời √34 m; quãng đường 5+√17 m.",
-    "worked_solution": "Cộng tọa độ dịch chuyển vào điểm đầu: Q=(1;−2;0)+(4;0;3)+(−1;4;0)=(4;2;3). Tổng vectơ độ dời là (3;4;3), dài √(9+16+9)=√34 m. Vì mỗi chặng là đoạn thẳng, quãng đường bằng tổng độ dài hai vectơ: √(16+0+9)+√(1+16+0)=5+√17 m. Nếu nhầm, vẽ đường đi hai chặng và đường nối P,Q; xem lại Kiến thức 16.",
+    "stem": "Drone ở \\(P(1;-2;0)\\) (tọa độ tính bằng mét), bay thẳng theo vectơ dịch chuyển \\(\\vec u=(4;0;3)\\) m rồi bay thẳng theo \\(\\vec v=(-1;4;0)\\) m. Tìm tọa độ Q, độ dài độ dời và tổng quãng đường hai chặng.",
+    "answer_key": "\\(Q(4;2;3)\\) (m); độ dài độ dời \\(\\sqrt{34}\\) m; quãng đường \\(5+\\sqrt{17}\\) m.",
+    "worked_solution": "Dùng \\(\\overrightarrow{OQ}=\\overrightarrow{OP}+\\vec u+\\vec v\\), ta có \\(\\overrightarrow{OQ}=(1;-2;0)+(4;0;3)+(-1;4;0)=(4;2;3)\\). Vậy \\(Q(4;2;3)\\). Tổng vectơ độ dời là \\((3;4;3)\\), dài \\(\\sqrt{9+16+9}=\\sqrt{34}\\) m. Vì mỗi chặng là đoạn thẳng, quãng đường bằng tổng độ dài hai vectơ: \\(\\sqrt{16+0+9}+\\sqrt{1+16+0}=5+\\sqrt{17}\\) m. Nếu nhầm, vẽ đường đi hai chặng và đường nối P,Q; xem lại Kiến thức 16.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B08-O01",
@@ -479,7 +479,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Cộng hai vectơ dịch chuyển rồi cộng vào điểm đầu; tính chuẩn riêng từng chặng."
+      "Cộng hai vectơ dịch chuyển rồi cộng với vectơ vị trí ban đầu; tính độ dài riêng từng chặng."
     ],
     "rubric": null,
     "interaction": {
@@ -491,6 +491,6 @@
       "heading": "## THPT-TOP13-P16 · TOP13-O16"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhầm độ dời với quãng đường, so |u+v| với |u|+|v| và kiểm giả thiết bay thẳng từng chặng. Ôn CĐ13 mục 3.6; luyện THPT-G12-B08-P12."
+    "remediation": "Nếu nhầm độ dời với quãng đường, so \\(\\lVert\\vec u+\\vec v\\rVert\\) với \\(\\lVert\\vec u\\rVert+\\lVert\\vec v\\rVert\\) và kiểm giả thiết bay thẳng từng chặng. Ôn CĐ13 mục 3.6; luyện THPT-G12-B08-P12."
   }
 ]
