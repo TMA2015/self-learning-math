@@ -1,5 +1,11 @@
+## CURRENT Q18 — 26/11/2026 · Work #1055 / #1109 A04
+
+Canonical learner blob `71853ed34cb5cb21e312a0a9f9c713b76e5219b4`, source commit `3e79381d6e4626711601fbe83ba588841bb52a13`, PR #890. A1: correct fixed-base decreasing behavior. A2: independent substitution (t=2^x) rejects -1, accepts 4, x=2. A3: negative candidate arises from quadratic product, not squaring. Additional affected observations: O16 explicitly distinguishes positive log arguments from log values; O17 adds threshold practice to existing first try (360>300, 270<300, period 3); preserve D6 routes. X-G.5 equivalent notation in all three pages, no bank edits. Direct source checks: 75 unique Practice IDs all present in exact locked banks (49+26), 18/18 same-ID exact replay stems, identical original marker sequence and all rubric point strings, 12 Written disclosures, 94/94 balanced disclosures, 1215/1215 inline delimiters; residual compound raw notation scan zero; 18 outcomes and five SVG references. Fifteen executed math checks PASS (A2, A3, threshold, B61–63, B65–68, B70–75); B64 covered by A3, B69 inverse identity/domain checked by reasoning. S1 scope inherited from actual owner primary audit receipt c63ca380fe0416b4ed4214f5192197c7e95d20a6, SGK B18–21 printed p4–24, SBT p4–19, solutions p73–85; no new PDF scan. Prior independent verdict remains snapshot-scoped. AUTHOR_SELF_VERIFIED affected delta, no new independent NotebookLM PASS; no UI/AP/runtime/RELEASE/merge/deploy. Historic prose below is evidence for older snapshots only.
+
+---
+
 <!-- TOP04_MASTER974_O17_P21_D6_SELFCHECK_Q18_20261121 -->
-## CĐ04 · Q18 AUTHOR_SELF_VERIFIED v3.2.0 — mô hình giảm đúng nghĩa, Vận dụng độc lập, D6 và 18 selfchecks (21/11/2026)
+## Historical snapshot 21/11/2026 — not current source lock
 
 **CURRENT AUTHORING canonical:** `prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md` Git blob `4e8238e188204eefc060f18c88ef7a0a3c51a60e` (previous immutable learner `a101ca5e0130ff51fab1a1c867e1b23d642d98b8`). Exact current Topic bank `prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md`, blob `377de2e2e9fb6771f02270e8d85e950559669895` (previous bank `004692a2d996b5ba955318a087f4d58dcdb2df04`). **One active canonical path per source, one existing Q18 receipt; old R07 candidate is not selected as alternate learner**. Effective sole standard `SLM-THPT-QUALITY-ONE v3.2.0`; Q01 original SGK G11 KNTT tập 2 B18 p4–9/B19 p10–15/B20 p16–19/B21 p20–24, primary scanned page receipt blob `8adc01afd6d4a7ef87d1c9ae7403c61ef0f02a6c` inherited for actual section scope, no fake new full-book scan.
 
@@ -26,8 +32,8 @@ STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 4e8238e188204eefc060f18c88ef7a0a3c51a60e
-ACADEMIC_SOURCE_BLOB: 4e8238e188204eefc060f18c88ef7a0a3c51a60e
+SOURCE_BLOB: 71853ed34cb5cb21e312a0a9f9c713b76e5219b4
+ACADEMIC_SOURCE_BLOB: 71853ed34cb5cb21e312a0a9f9c713b76e5219b4
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R05_STUDENT_FIRST_75_CANONICAL_VISIBLE_20261115.md
 PREVIOUS_SOURCE_BLOB: c948ad9957bbcd55b416ea7ddce96a6dcdf0d799
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -35,14 +41,14 @@ PREVIOUS_Q18_RECEIPT_BLOB: 436084332b4acc642db3a2a8523d91d980cf566d
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 AUTHOR_QA_H2_H3_SEQ: PASS
 AUTHOR_QA_OUTCOMES: 18/18
-AUTHOR_QA_CANONICAL: 75_UNIQUE_PRACTICE_IDS_74_BYTE_EXACT_BASE_P21_ONE_MATH_MEANING_CORRECTION_SOURCE_BANK_LOCKED
-AUTHOR_QA_SELFCHECK: 18/18 QUESTION_ONLY_PRESERVED
+AUTHOR_QA_CANONICAL: 75_UNIQUE_IDS_SOURCE_MEMBERSHIP_VERIFIED_EQUIVALENT_NOTATION_12_RUBRIC_WEIGHTS_PRESERVED
+AUTHOR_QA_SELFCHECK: 18/18 EXACT_CURRENT_PRACTICE_STEMS_SAME_IDS
 AUTHOR_QA_REVEAL_CONTENT: 94_VALID_VOLUNTARY_DISCLOSURES_18_KNOWLEDGE_75_PRACTICE_1_PUBLIC_SELFCHECK_MAP
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOP04_MASTER974_O17_P21_AND_D6_SELFCHECK_20261121_4e8238e188204eefc060f18c88ef7a0a3c51a60e
+AUTHOR_SIGNOFF: TOP04_WORK_A04_XG5_20261126_71853ed34cb5cb21e312a0a9f9c713b76e5219b4
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
