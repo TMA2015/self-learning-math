@@ -715,16 +715,17 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-P05",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Cho \\(P(A)=0{,}4\\), \\(P(B)=0{,}5\\), \\(P(A\\cap B)=0{,}2\\). Tính xác suất hợp và kiểm nó không nhỏ hơn mỗi xác suất riêng.",
-    "answer_key": "\\(0{,}7\\).",
-    "worked_solution": "Dùng quy tắc cộng: \\(P(A\\cup B)=0{,}4+0{,}5-0{,}2=0{,}7\\). Hợp chứa cả A và B; đúng là \\(0{,}7\\ge0{,}4\\) và \\(0{,}7\\ge0{,}5\\). Kết quả phù hợp tính chất xác suất.",
+    "stem": "Trong một lớp 10 bạn, có 8 bạn tham gia câu lạc bộ A và 5 bạn tham gia câu lạc bộ B. (a) Có thể chỉ có 2 bạn tham gia cả hai không? (b) Tìm số bạn ít nhất và nhiều nhất có thể tham gia cả hai; mô tả cách phân nhóm đạt mỗi giới hạn.",
+    "answer_key": "(a) Không thể. (b) Ít nhất 3 bạn; nhiều nhất 5 bạn. Cả hai giới hạn đều đạt được.",
+    "worked_solution": "Gọi \\(k\\) là số bạn tham gia cả hai. Số bạn tham gia ít nhất một câu lạc bộ là \\(8+5-k=13-k\\). (a) Nếu \\(k=2\\), số này bằng 11, vượt sĩ số 10. (b) Từ \\(13-k\\le 10\\) suy ra \\(k\\ge 3\\); nhóm tham gia cả hai nằm trong nhóm B nên \\(k\\le 5\\). Với \\(k=3\\), số bạn chỉ A, chỉ B, cả hai, không nhóm nào lần lượt là 5, 2, 3, 0; với \\(k=5\\), các số đó là 3, 0, 5, 2. Mỗi cách chia đều có tổng 10 và đúng số lượng của A, B. Vậy hai giới hạn đều đạt được.",
     "skill_ids": [
       "G11-B29-PROBABILITY_BOUNDS"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Tính hợp rồi kiểm lớn hơn hoặc bằng từng xác suất riêng."
+      "Đếm số bạn thuộc ít nhất một câu lạc bộ theo số bạn thuộc cả hai; kết quả không được vượt sĩ số.",
+      "Nhóm tham gia cả hai không thể lớn hơn nhóm B."
     ],
     "rubric": null,
     "interaction": {
@@ -741,7 +742,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Hợp chứa A và B; không thể nhỏ hơn một xác suất riêng. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
+    "remediation": "Đừng chỉ kiểm giới hạn trên của phần giao. Hai nhóm lớn có thể bắt buộc phải có một số phần tử chung tối thiểu. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P06",
@@ -963,16 +964,17 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-P01",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Hai biến cố độc lập, \\(P(A)=\\frac7{10}\\), \\(P(B)=\\frac37\\). Tính \\(P(A\\cap B)\\).",
-    "answer_key": "\\(\\frac3{10}\\).",
-    "worked_solution": "Giả thiết độc lập cho phép nhân: \\(P(A\\cap B)=\\frac7{10}\\cdot\\frac37=\\frac3{10}\\). Không sử dụng quy tắc nhân nếu chưa có căn cứ độc lập.",
+    "stem": "Hai biến cố A và B độc lập. Biết \\(P(A)=\\frac{7}{10}\\) và \\(P(A\\cap B)=\\frac{3}{10}\\). (a) Tìm \\(P(B)\\). (b) Nếu một phép thử khác vẫn có \\(P(A)=\\frac{7}{10}\\) nhưng \\(P(A\\cap B)=\\frac45\\), liệu dữ kiện đó có thể xảy ra không, kể cả khi bỏ giả thiết độc lập?",
+    "answer_key": "(a) \\(P(B)=\\frac37\\). (b) Không thể vì \\(P(A\\cap B)>P(A)\\).",
+    "worked_solution": "(a) Do độc lập, \\(P(A\\cap B)=P(A)P(B)\\). Vì \\(P(A)=\\frac{7}{10}>0\\), chia hai vế cho xác suất này: \\(P(B)=\\frac{3}{10}:\\frac{7}{10}=\\frac37\\). Giá trị thuộc đoạn \\([0;1]\\); nhân lại được \\(\\frac{3}{10}\\). (b) Trong mọi phép thử, \\(A\\cap B\\subseteq A\\) nên \\(P(A\\cap B)\\le P(A)\\), không cần độc lập. Nhưng \\(\\frac45>\\frac{7}{10}\\), nên dữ kiện thứ hai không thể đúng.",
     "skill_ids": [
       "G11-B30-MULTIPLY_INDEPENDENT"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Nhân hai xác suất đã cho vì hai biến cố độc lập."
+      "Viết công thức nhân rồi tìm thừa số chưa biết.",
+      "Phần giao không thể có xác suất lớn hơn xác suất của A."
     ],
     "rubric": null,
     "interaction": {
@@ -989,7 +991,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Chỉ dùng tích vì có giả thiết độc lập. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
+    "remediation": "Chỉ chia từ công thức nhân nếu có giả thiết độc lập và mẫu khác 0. Giới hạn xác suất giao vẫn đúng khi không độc lập. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-P02",
@@ -1118,16 +1120,17 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-P06",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Một thiết bị có hai môđun kiểm lỗi độc lập với xác suất phát hiện lỗi lần lượt 0,8 và 0,7. Tính xác suất cả hai cùng phát hiện.",
-    "answer_key": "\\(0{,}56\\).",
-    "worked_solution": "Giả thiết độc lập cho xác suất cả hai phát hiện bằng tích \\(0{,}8\\cdot0{,}7=0{,}56\\). Không cộng hai xác suất vì đề hỏi cùng xảy ra; tổng 1,5 còn vượt 1.",
+    "stem": "Một thiết bị có hai môđun phát hiện lỗi. Trong 100 trường hợp có lỗi, môđun A phát hiện 80 trường hợp, môđun B phát hiện 70 trường hợp và cả hai cùng phát hiện 70 trường hợp. Chọn đều một trong 100 trường hợp này. (a) Tính xác suất cả hai phát hiện. Hai biến cố phát hiện có độc lập trong mô hình này không? (b) Tính xác suất ít nhất một môđun phát hiện. Giải thích vì sao không thể lấy tích hai xác suất riêng để trả lời (a).",
+    "answer_key": "(a) \\(0{,}7\\); không độc lập. (b) \\(0{,}8\\).",
+    "worked_solution": "Gọi A, B lần lượt là biến cố môđun A, B phát hiện lỗi. (a) Theo dữ liệu, \\(P(A)=\\frac{80}{100}=0{,}8\\), \\(P(B)=\\frac{70}{100}=0{,}7\\), \\(P(A\\cap B)=\\frac{70}{100}=0{,}7\\). Nếu độc lập, xác suất giao phải bằng \\(0{,}8\\cdot0{,}7=0{,}56\\), khác \\(0{,}7\\); hai biến cố không độc lập. (b) Quy tắc cộng không đòi hỏi độc lập: \\(P(A\\cup B)=0{,}8+0{,}7-0{,}7=0{,}8\\). Kiểm lại: 70 trường hợp cả hai phát hiện, 10 chỉ A, 0 chỉ B, 20 không môđun nào phát hiện. Tổng đúng 100. Hai môđun khác nhau không tự bảo đảm hai biến cố độc lập.",
     "skill_ids": [
       "G11-B30-REAL_CONTEXT"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Nhân 0,8 với 0,7 vì hai môđun độc lập."
+      "Tính xác suất giao từ số trường hợp cả hai phát hiện rồi so với tích hai xác suất riêng.",
+      "Dùng quy tắc cộng có trừ phần giao."
     ],
     "rubric": null,
     "interaction": {
@@ -1144,7 +1147,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Xác suất không thể vượt 1; không cộng 0,8+0,7. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
+    "remediation": "Không nhầm hai môđun riêng biệt với hai biến cố độc lập. Đối chiếu xác suất giao với tích; dùng số liệu giao đã cho khi không độc lập. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P13."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-P07",
