@@ -19,13 +19,13 @@ Hai người có thể cùng đi 5 m, nhưng nếu một người đi về đôn
 
 > **ĐỊNH NGHĨA — Vectơ.** Vectơ \(\overrightarrow{AB}\) là đoạn thẳng có hướng với điểm đầu \(A\), điểm cuối \(B\). Độ dài vectơ là \(|\overrightarrow{AB}|=AB\ge0\); \(AB\) chỉ là số đo độ dài, không phải chính vectơ.
 
- Vectơ \(\overrightarrow{BA}=-\overrightarrow{AB}\) là vectơ đối; \(\overrightarrow{AA}=\vec 0\) là vectơ-không, có độ dài 0. **Quy ước đối với vectơ-không:** vectơ-không được coi là cùng phương và cùng hướng với mọi vectơ; đây là quy ước so sánh, không phải một hướng hình học riêng. Khi một vectơ bằng \(\vec0\), số đo góc của nó với vectơ còn lại **có thể chọn tùy ý** trong đoạn \(0^\circ\) đến \(180^\circ\), không được xác định duy nhất bởi hình vẽ. Tích vô hướng với vectơ-không vẫn bằng 0, nhưng không được lấy \(0/(|\vec0||\vec u|)\) để tính cos góc vì mẫu bằng 0.
+Vectơ \(\overrightarrow{BA}=-\overrightarrow{AB}\) là vectơ đối; \(\overrightarrow{AA}=\vec0\) là vectơ-không, có độ dài 0. **Quy ước đối với vectơ-không:** vectơ-không được coi là cùng phương và cùng hướng với mọi vectơ; đây là quy ước so sánh, không phải một hướng hình học riêng. Khi một vectơ bằng \(\vec0\), số đo góc của nó với vectơ còn lại **có thể chọn tùy ý** trong đoạn \([0^\circ;180^\circ]\), không được xác định duy nhất bởi hình vẽ. Tích vô hướng với vectơ-không vẫn bằng 0, nhưng không được dùng \(\frac0{|\vec0||\vec u|}\) để tính cos góc vì mẫu bằng 0.
 
 **Ví dụ**
 
 **Đề bài:** Robot đi 3 m về đông rồi 4 m về bắc. Tính quãng đường và độ dài độ dời, giải thích vì sao khác nhau.
 
-**Lời giải:** Quãng đường cộng độ dài hai chặng là 3+4=7 m. Độ dời là vectơ nối thẳng vị trí đầu tới vị trí cuối, có hai thành phần vuông góc (3,4), nên dài √(3²+4²)=5 m. Vì hướng của hai chặng khác nhau nên không thể lấy 7 m làm độ dài độ dời.
+**Lời giải:** Quãng đường cộng độ dài hai chặng là \(3+4=7\,\mathrm m\). Độ dời là vectơ nối thẳng vị trí đầu tới vị trí cuối; hai chặng vuông góc dài 3 m và 4 m nên theo Pitago, độ dài độ dời là \(\sqrt{3^2+4^2}=5\,\mathrm m\). Vì hướng của hai chặng khác nhau nên không thể lấy 7 m làm độ dài độ dời.
 
 **Vận dụng:** Hai mũi tên dài 4 ô theo hai chiều trái/ngược phải có bằng nhau không?
 
@@ -52,7 +52,7 @@ Với hai vectơ khác không, cùng phương nghĩa là có giá song song ho�
 
 > **ĐỊNH NGHĨA — Hai vectơ bằng nhau.** Hai vectơ bằng nhau khi chúng cùng hướng **và** cùng độ dài. Không đòi hai mũi tên phải cùng vị trí; chỉ bằng nhau về độ dài chưa đủ.
 
- Trong hình bình hành ABCD theo thứ tự, \(\overrightarrow{AB}=\overrightarrow{DC}\), còn \(\overrightarrow{CD}=-\overrightarrow{AB}\); **đây là các đẳng thức vectơ**, không phải đẳng thức chỉ nói về độ dài. Cùng hướng của AB và AM không đủ để khẳng định M nằm giữa A,B.
+Trong hình bình hành ABCD theo thứ tự, \(\overrightarrow{AB}=\overrightarrow{DC}\), còn \(\overrightarrow{CD}=-\overrightarrow{AB}\); **đây là các đẳng thức vectơ**, không phải đẳng thức chỉ nói về độ dài. Ngay cả khi \(\overrightarrow{AB}\) và \(\overrightarrow{AM}\) cùng hướng, M vẫn có thể ở xa A hơn B, nên chưa đủ để khẳng định M nằm giữa A và B.
 
 ![Hình bình hành: đọc hướng AB, DC và CD](../../visuals/THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg)
 
@@ -68,9 +68,9 @@ Với hai vectơ khác không, cùng phương nghĩa là có giá song song ho�
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-BC, vì cùng hướng và độ dài; CB là vectơ đối.
+\(\overrightarrow{BC}\), vì cùng hướng và độ dài với \(\overrightarrow{AD}\); \(\overrightarrow{CB}\) là vectơ đối.
 
-**Khi làm sai:** Nếu nhầm BC/CB, đọc mũi tên từ điểm đầu đến điểm cuối trước khi dùng tính chất hình bình hành.
+**Khi làm sai:** Nếu nhầm \(\overrightarrow{BC}\) với \(\overrightarrow{CB}\), đọc mũi tên từ điểm đầu đến điểm cuối trước khi dùng tính chất hình bình hành.
 
 
 **Kiểm lỗi**
@@ -93,11 +93,11 @@ Vì mũi tên tổng cho biết đúng **độ dời cuối cùng**, đổi th�
 
 > **TÍNH CHẤT — Phép cộng vectơ.** Với các vectơ \(\vec u,\vec v,\vec w\) bất kỳ trong cùng mặt phẳng (và cũng đúng trong không gian), ta có:
 >
-> \[\vec u+\vec v=\vec v+\vec u\quad\text{(giao hoán)},\]
-> \[(\vec u+\vec v)+\vec w=\vec u+(\vec v+\vec w)\quad\text{(kết hợp)},\]
-> \[\vec u+\vec0=\vec0+\vec u=\vec u\quad\text{(vectơ-không)}.\]
+> \(\vec u+\vec v=\vec v+\vec u\) (giao hoán),
+> \((\vec u+\vec v)+\vec w=\vec u+(\vec v+\vec w)\) (kết hợp),
+> \(\vec u+\vec0=\vec0+\vec u=\vec u\) (vectơ-không).
 >
-> Những đẳng thức này nói về **vectơ tổng**, không nói rằng độ dài của tổng luôn bằng tổng độ dài. Chẳng hạn \((2,0)+(0,3)=(2,3)=(0,3)+(2,0)\), nhưng độ dài vectơ tổng là \(\sqrt{13}\), không phải \(5\).
+> Những đẳng thức này nói về **vectơ tổng**, không nói rằng độ dài của tổng luôn bằng tổng độ dài. Chẳng hạn \((2;0)+(0;3)=(2;3)=(0;3)+(2;0)\), nhưng độ dài vectơ tổng là \(\sqrt{13}\), không phải \(5\).
 
  **Độ dài của tổng vectơ** \(\left|\overrightarrow{AB}+\overrightarrow{BC}\right|\) không nhất thiết bằng tổng **độ dài hai đoạn** \(AB+BC\). Với hai bước vuông góc, dùng Pitago để tìm độ dời; không cộng hai độ dài như khi tính quãng đường.
 
@@ -105,7 +105,7 @@ Vì mũi tên tổng cho biết đúng **độ dời cuối cùng**, đổi th�
 
 **Đề bài:** Từ vị trí đầu, đi 4 m đông và tiếp 6 m bắc. Viết vectơ tổng và tính độ dài đường tắt.
 
-**Lời giải:** Chọn Ox hướng đông, Oy hướng bắc: \(\vec u=(4,0)\), \(\vec v=(0,6)\) m. Theo quy tắc tam giác, độ dời tổng \(\vec u+\vec v=(4,6)\) m, dài \(\sqrt{4^2+6^2}=2\sqrt{13}\) m. Quãng đường đi hai chặng là 10 m; công thức cộng vectơ lưu cả chiều, không chỉ số đo.
+**Lời giải:** Nối đuôi hai vectơ độ dời, gọi A là điểm xuất phát, B là điểm kết thúc chặng đông, C là điểm kết thúc chặng bắc. Theo quy tắc tam giác, độ dời tổng là \(\overrightarrow{AC}=\overrightarrow{AB}+\overrightarrow{BC}\). Hai chặng vuông góc, nên \(AC=\sqrt{4^2+6^2}=2\sqrt{13}\,\mathrm m\). Quãng đường là \(4+6=10\,\mathrm m\).
 
 **Vận dụng:** Đi 6 m đông rồi 8 m bắc, độ dài độ dời bằng mấy mét?
 
@@ -132,19 +132,19 @@ Hai lực xuất phát tại cùng một điểm thường được vẽ thành 
 
 **Ví dụ**
 
-**Đề bài:** Cho A=(2,1), B=(5,3), C=(7,−2). Rút gọn \(\overrightarrow{AB}-\overrightarrow{AC}\) và nhận dạng vectơ thu được.
+**Đề bài:** Cho \(A(2;1),\ B(5;3),\ C(7;-2)\). Rút gọn \(\overrightarrow{AB}-\overrightarrow{AC}\) và nhận dạng vectơ thu được.
 
 **Lời giải:** Trước hết, đảo hướng \(\overrightarrow{AC}\) thành \(\overrightarrow{CA}\). Theo quy tắc nối tiếp mũi tên, đi từ \(C\) tới \(A\), rồi từ \(A\) tới \(B\) chính là đi từ \(C\) tới \(B\). Vì vậy \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{AB}+\overrightarrow{CA}=\overrightarrow{CA}+\overrightarrow{AB}=\overrightarrow{CB}\).
 
-Để kiểm bằng số, độ thay đổi từ \(C=(7,-2)\) tới \(B=(5,3)\) là \(5-7=-2\) theo chiều ngang và \(3-(-2)=5\) theo chiều dọc. Vậy vectơ thu được có tọa độ \((-2;5)\). Quy tắc tọa độ cuối trừ đầu sẽ được giải thích ở Kiến thức 2.1.
+Để kiểm bằng số, độ thay đổi từ \(C(7;-2)\) tới \(B(5;3)\) là \(5-7=-2\) theo chiều ngang và \(3-(-2)=5\) theo chiều dọc. Vậy vectơ thu được có tọa độ \((-2;5)\). Quy tắc tọa độ cuối trừ đầu sẽ được giải thích ở Kiến thức 2.1; **không cần biết quy tắc đó để rút gọn hiệu bằng hình học**.
 
 **Vận dụng:** Rút gọn \(\overrightarrow{PQ}-\overrightarrow{PR}\) thành vectơ nối R và Q.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-RQ.
+\(\overrightarrow{RQ}\). Vì \(\overrightarrow{PQ}-\overrightarrow{PR}=\overrightarrow{RP}+\overrightarrow{PQ}=\overrightarrow{RQ}\).
 
-**Khi làm sai:** Nếu ra QR, thay tọa độ đơn giản để kiểm chiều của kết quả.
+**Khi làm sai:** Nếu ra \(\overrightarrow{QR}\), vẽ đường đi từ R qua P đến Q và kiểm lại điểm đầu, điểm cuối.
 
 
 **Kiểm lỗi**
@@ -159,40 +159,40 @@ Nếu em đổi chiều \(\overrightarrow{RQ}\) thành \(\overrightarrow{QR}\), 
 
 Khi tăng gấp đôi một độ dời, mũi tên dài gấp đôi nhưng vẫn đi cùng hướng. Khi nhân với số âm, mũi tên đảo chiều. Quan sát ấy giúp em hiểu phép nhân vectơ với một số trước khi tính tọa độ.
 
-> **TÍNH CHẤT — Nhân vectơ với một số và xét cùng phương.** Với k thực, độ dài của ku bằng |k|·|u|. k>0 giữ chiều, k<0 đảo chiều, k=0 cho vectơ-không. Quy tắc k(u+v)=ku+kv đúng ở cả mặt phẳng và không gian. Với u,v khác không, v=ku thì chúng cùng phương; dấu k cho biết cùng hay ngược hướng.
+> **TÍNH CHẤT — Nhân vectơ với một số và xét cùng phương.** Với k thực, \(|k\vec u|=|k|\cdot|\vec u|\). Nếu \(\vec u\ne\vec0\), \(k>0\) giữ hướng, \(k<0\) đảo hướng; \(k=0\) cho vectơ-không. Với hai vectơ khác không \(\vec u,\vec v\), chúng cùng phương khi và chỉ khi có số thực \(k\ne0\) sao cho \(\vec v=k\vec u\); dấu k cho biết cùng hay ngược hướng.
 
 Phép nhân một vectơ với số thực còn có những tính chất giúp **khai triển hoặc thu gọn** biểu thức. Khi nhân \(k\) với một tổng, ta có thể nhân từng vectơ thành phần rồi cộng. Tương tự, gộp hai lần nhân cùng một vectơ theo tổng hệ số, hoặc nhân liên tiếp hai số, không thay đổi vectơ cuối cùng.
 
 > **TÍNH CHẤT — Phép nhân vectơ với số thực.** Với hai số thực \(k,l\) và hai vectơ \(\vec u,\vec v\):
 >
-> \[k(\vec u+\vec v)=k\vec u+k\vec v,\qquad (k+l)\vec u=k\vec u+l\vec u,\]
-> \[k(l\vec u)=(kl)\vec u,\qquad 1\vec u=\vec u,\quad 0\vec u=\vec0.\]
+> \(k(\vec u+\vec v)=k\vec u+k\vec v,\quad (k+l)\vec u=k\vec u+l\vec u\),
+> \(k(l\vec u)=(kl)\vec u,\quad 1\vec u=\vec u,\quad 0\vec u=\vec0\).
 >
-> Ví dụ \(2[(1,2)+(3,-1)]=(8,2)\) và \(2(1,2)+2(3,-1)=(8,2)\), nên phép phân phối cho kết quả giống nhau. Đối với số âm, vẫn phải xét đúng chiều và giữ dấu của hệ số trước khi kết luận.
+> Ví dụ \(2[(1;2)+(3;-1)]=(8;2)\) và \(2(1;2)+2(3;-1)=(8;2)\), nên phép phân phối cho kết quả giống nhau. Đối với số âm, vẫn phải xét đúng chiều và giữ dấu của hệ số trước khi kết luận.
 
-Khi cần mô tả một độ dời theo **hai phương đã biết**, ta có thể tách nó thành hai vectơ thành phần. Hãy đặt \(\vec a\) và \(\vec b\) cùng gốc, khác \(\vec0\) và **không cùng phương**. Qua đầu mút của \(\vec u\), kẻ các đường song song với hai phương ấy để dựng hình bình hành. Hai cạnh của hình bình hành cho các vectơ thành phần cùng phương \(\vec a\), \(\vec b\), nên có thể viết \(\vec u=x\vec a+y\vec b\). Việc hai phương không song song là điều kiện quyết định: khi đã chọn chúng, vị trí đầu mút của \(\vec u\) xác định đúng một cặp hệ số \((x,y)\). Trong mặt phẳng, điều này đúng với **mọi vectơ \(\vec u\), kể cả vectơ-không**.
+Khi cần mô tả một độ dời theo **hai phương đã biết**, ta có thể tách nó thành hai vectơ thành phần. Hãy đặt \(\vec a\) và \(\vec b\) cùng gốc, khác \(\vec0\) và **không cùng phương**. Qua đầu mút của \(\vec u\), kẻ các đường song song với hai phương ấy để dựng hình bình hành. Hai cạnh của hình bình hành cho các vectơ thành phần cùng phương \(\vec a\), \(\vec b\), nên có thể viết \(\vec u=x\vec a+y\vec b\). Việc hai phương không song song là điều kiện quyết định: khi đã chọn chúng, vị trí đầu mút của \(\vec u\) xác định đúng một cặp hệ số \((x;y)\). Trong mặt phẳng, điều này đúng với **mọi vectơ \(\vec u\), kể cả vectơ-không**.
 
-> **ĐỊNH LÝ — Phân tích một vectơ theo hai vectơ không cùng phương.** Cho hai vectơ \(\vec a,\vec b\) **không cùng phương** trong cùng một mặt phẳng. Khi đó, với mỗi vectơ \(\vec u\) trong mặt phẳng ấy, tồn tại **duy nhất** một cặp số thực \((x,y)\) sao cho
+> **ĐỊNH LÝ — Phân tích một vectơ theo hai vectơ không cùng phương.** Cho hai vectơ \(\vec a,\vec b\) **không cùng phương** trong cùng một mặt phẳng. Khi đó, với mỗi vectơ \(\vec u\) trong mặt phẳng ấy, tồn tại **duy nhất** một cặp số thực \((x;y)\) sao cho
 >
-> \[\vec u=x\vec a+y\vec b.\]
+> \(\vec u=x\vec a+y\vec b\).
 >
 > Đây là tính chất dành cho **hai phương độc lập trong một mặt phẳng**. Không khẳng định hai vectơ bất kỳ có thể biểu diễn mọi vectơ trong không gian ba chiều.
 
-Để **tự kiểm cách phân tích**, xét \(\vec a=(1,1)\), \(\vec b=(1,-1)\), \(\vec u=(5,1)\). Từ \(\vec u=x\vec a+y\vec b\) suy ra \(x+y=5\), \(x-y=1\); giải được \(x=3,y=2\), nên \(\vec u=3\vec a+2\vec b\). Kiểm lại theo từng tọa độ: \(3(1,1)+2(1,-1)=(5,1)\). Nếu chọn \(\vec a=(1,0),\vec b=(2,0)\), hai vectơ **cùng phương**, thì với \(\vec u=(1,0)\) có vô số cặp \((x,y)\) thỏa \(x+2y=1\), còn với \(\vec u=(0,1)\) không có cặp nào; vì thế không được bỏ điều kiện **không cùng phương**. Trên hình minh họa quy tắc hình bình hành, đọc hai cạnh thành phần rồi kiểm chúng cộng thành đường chéo, không suy hệ số chỉ từ độ dài mũi tên vẽ không theo tỉ lệ.
+Để **tự kiểm cách phân tích**, xét \(\vec a=(1;1)\), \(\vec b=(1;-1)\), \(\vec u=(5;1)\). Từ \(\vec u=x\vec a+y\vec b\) suy ra \(x+y=5\), \(x-y=1\); giải được \(x=3,y=2\), nên \(\vec u=3\vec a+2\vec b\). Kiểm lại theo từng tọa độ: \(3(1;1)+2(1;-1)=(5;1)\). Nếu chọn \(\vec a=(1;0),\vec b=(2;0)\), hai vectơ **cùng phương**, thì với \(\vec u=(1;0)\) có vô số cặp \((x;y)\) thỏa \(x+2y=1\), còn với \(\vec u=(0;1)\) không có cặp nào; vì thế không được bỏ điều kiện **không cùng phương**. Trên hình minh họa quy tắc hình bình hành, đọc hai cạnh thành phần rồi kiểm chúng cộng thành đường chéo, không suy hệ số chỉ từ độ dài mũi tên vẽ không theo tỉ lệ.
 
 **Ví dụ**
 
-**Đề bài:** Với u=(2,−3), tính v=−2u, độ dài và hướng của v so với u.
+**Đề bài:** Với \(\vec u=(2;-3)\), tính \(\vec v=-2\vec u\), độ dài và hướng của \(\vec v\) so với \(\vec u\).
 
-**Lời giải:** Nhân từng tọa độ v=(−4,6). |u|=√(2²+(−3)²)=√13, nên |v|=|−2|·|u|=2√13. Vì hệ số âm và u khác vectơ-không, v ngược hướng u; độ dài không thể là số âm.
+**Lời giải:** Nhân từng tọa độ \(\vec v=(-4;6)\). \(|\vec u|=\sqrt{2^2+(-3)^2}=\sqrt{13}\), nên \(|\vec v|=|-2|\cdot|\vec u|=2\sqrt{13}\). Vì hệ số âm và \(\vec u\ne\vec0\), hai vectơ ngược hướng; độ dài không thể là số âm.
 
-**Vận dụng:** v=−3u, |u|=2: |v| và quan hệ hướng thế nào?
+**Vận dụng:** \(\vec v=-3\vec u,\ |\vec u|=2\). Tìm \(|\vec v|\) và quan hệ hướng.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-|v|=6; v ngược hướng u.
+\(|\vec v|=6\); \(\vec v\) ngược hướng \(\vec u\).
 
-**Khi làm sai:** Nếu ghi −6, nhớ độ dài không thể âm; lấy |k| trước.
+**Khi làm sai:** Nếu ghi \(-6\), nhớ độ dài không thể âm; lấy \(|k|\) trước.
 
 
 **Kiểm lỗi**
@@ -207,19 +207,19 @@ Nếu em ghi độ dài \(|-3\vec u|=-6\) hoặc nói vectơ cùng chiều, đ�
 
 Muốn tìm vị trí cân bằng của hai hay ba điểm, lấy trung bình độ dài các đoạn thường không đủ: điều quan trọng là vị trí tương đối theo từng hướng. Từ cách cộng độ dời, ta có thể diễn tả trung điểm và trọng tâm bằng vectơ.
 
-> **TÍNH CHẤT — Trung điểm và trọng tâm từ sự cân bằng vectơ.** Nếu M là trung điểm AB, \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\) và \(\overrightarrow{OM}=\tfrac12(\overrightarrow{OA}+\overrightarrow{OB})\) với gốc O bất kỳ. Với trọng tâm G của tam giác ABC, \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\); \(\overrightarrow{OG}=\tfrac13(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC})\). Nếu M là trung điểm BC, \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\). Đây là trung bình **vị trí**, không phải trung bình độ dài.
+> **TÍNH CHẤT — Trung điểm và trọng tâm từ sự cân bằng vectơ.** Nếu M là trung điểm AB, \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\) và \(\overrightarrow{OM}=\frac12(\overrightarrow{OA}+\overrightarrow{OB})\) với gốc O bất kỳ. Với trọng tâm G của tam giác ABC, \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\); \(\overrightarrow{OG}=\frac13(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC})\). Nếu M là trung điểm BC, \(\overrightarrow{AG}=\frac23\overrightarrow{AM}\). Đây là trung bình **vị trí**, không phải trung bình độ dài.
 
 **Ví dụ**
 
-**Đề bài:** Cho tam giác A(0,0), B(6,0), C(0,3). Tìm trung điểm M của BC, trọng tâm G và kiểm tra hệ thức \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
+**Đề bài:** Cho tam giác \(A(0;0),\ B(6;0),\ C(0;3)\). Tìm trung điểm M của BC, trọng tâm G và kiểm tra hệ thức \(\overrightarrow{AG}=\frac23\overrightarrow{AM}\).
 
-**Lời giải:** Trung điểm M=((6+0)/2,(0+3)/2)=(3,3/2). Trọng tâm G=((0+6+0)/3,(0+0+3)/3)=(2,1). Từ A, \(\overrightarrow{AG}=(2,1)\), \(\overrightarrow{AM}=(3,\tfrac32)\), nên \(\tfrac23\overrightarrow{AM}=(2,1)=\overrightarrow{AG}\). Hệ số 2/3 chỉ áp dụng khi M là trung điểm của BC.
+**Lời giải:** Trung điểm \(M(\frac{6+0}2;\frac{0+3}2)=M(3;\frac32)\). Trọng tâm \(G(\frac{0+6+0}3;\frac{0+0+3}3)=G(2;1)\). Từ A, \(\overrightarrow{AG}=(2;1),\ \overrightarrow{AM}=(3;\frac32)\), nên \(\frac23\overrightarrow{AM}=(2;1)=\overrightarrow{AG}\). Hệ số \(\frac23\) ở đây áp dụng khi M là trung điểm của BC.
 
-**Vận dụng:** Tam giác A(0,0),B(3,0),C(0,6) có trọng tâm ở đâu?
+**Vận dụng:** Tam giác \(A(0;0),\ B(3;0),\ C(0;6)\) có trọng tâm ở đâu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-G=(1,2).
+\(G(1;2)\).
 
 **Khi làm sai:** Nếu lấy trung bình ba độ dài cạnh, hãy nhớ mỗi tọa độ của G là trung bình ba tọa độ tương ứng.
 
@@ -238,26 +238,26 @@ Nếu em lấy trung bình độ dài thay vì tọa độ đỉnh, đọc **Ki�
 
 Trên bản đồ tọa độ, chuyển động từ A đến B được mô tả bằng thay đổi hoành độ và tung độ, chứ không phải bằng tọa độ riêng của B. Ngay cả khi dời cả bản đồ, hiệu hai vị trí vẫn giữ nguyên.
 
-> **CÔNG THỨC — Tọa độ Oxy: vì sao phải lấy cuối trừ đầu?.** Nếu A=(xA,yA), B=(xB,yB) thì \(\overrightarrow{AB}=(x_B-x_A,y_B-y_A)\). Tọa độ **điểm** mô tả vị trí, còn tọa độ **vectơ** mô tả hai thay đổi theo trục. Bảo toàn vectơ khi tịnh tiến cả A,B như nhau. Phép cộng, trừ và nhân số trên Oxy tính theo từng thành phần.
+> **CÔNG THỨC — Tọa độ Oxy: vì sao phải lấy cuối trừ đầu?** Nếu \(A(x_A;y_A),\ B(x_B;y_B)\) thì \(\overrightarrow{AB}=(x_B-x_A;y_B-y_A)\). Tọa độ **điểm** mô tả vị trí, còn tọa độ **vectơ** mô tả hai thay đổi theo trục. Bảo toàn vectơ khi tịnh tiến cả A, B như nhau. Phép cộng, trừ và nhân số trên Oxy tính theo từng thành phần.
 
 **Ví dụ**
 
-**Đề bài:** Hai điểm A=(−2,1), B=(3,5) trong Oxy. Tính tọa độ \(\overrightarrow{AB}\), \(\overrightarrow{BA}\) và so sánh độ dài, hướng.
+**Đề bài:** Hai điểm \(A(-2;1),\ B(3;5)\) trong Oxy. Tính tọa độ \(\overrightarrow{AB}\), \(\overrightarrow{BA}\) và so sánh độ dài, hướng.
 
-**Lời giải:** \(\overrightarrow{AB}=(3-(-2),5-1)=(5,4)\), \(\overrightarrow{BA}=(-2-3,1-5)=(-5,-4)\). Hai vectơ là đối nhau, cùng độ dài \(AB=BA=\sqrt{5^2+4^2}=\sqrt{41}\) nhưng ngược hướng. Cần lấy tọa độ điểm cuối trừ điểm đầu.
+**Lời giải:** \(\overrightarrow{AB}=(3-(-2),5-1)=(5;4)\), \(\overrightarrow{BA}=(-2-3;1-5)=(-5;-4)\). Hai vectơ là đối nhau, cùng độ dài \(AB=BA=\sqrt{5^2+4^2}=\sqrt{41}\) nhưng ngược hướng. Cần lấy tọa độ điểm cuối trừ điểm đầu.
 
-**Vận dụng:** A=(4,−1), B=(−2,3); tọa độ \(\overrightarrow{AB}\) bằng bao nhiêu?
+**Vận dụng:** \(A(4;-1),\ B(-2;3)\); tọa độ \(\overrightarrow{AB}\) bằng bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(\overrightarrow{AB}=(-6,4)\).
+\(\overrightarrow{AB}=(-6;4)\).
 
-**Khi làm sai:** Nếu ra (6,−4), em đã tính \(\overrightarrow{BA}\); hãy viết “cuối trừ đầu” bên cạnh phép tính.
+**Khi làm sai:** Nếu ra \((6;-4)\), em đã tính \(\overrightarrow{BA}\); hãy viết “cuối trừ đầu” bên cạnh phép tính.
 
 
 **Kiểm lỗi**
 
-Nếu em tính A−B thay vì B−A, đọc **Kiến thức 2.1**, làm **Bài luyện 13** và **Bài luyện 39**. Viết rõ tọa độ điểm cuối trừ điểm đầu rồi mới tính độ dài.
+Nếu em lấy tọa độ đầu trừ tọa độ cuối, đọc **Kiến thức 2.1**, làm **Bài luyện 13** và **Bài luyện 39**. Viết rõ tọa độ điểm cuối trừ điểm đầu rồi mới tính độ dài.
 
 </details>
 
@@ -267,19 +267,19 @@ Nếu em tính A−B thay vì B−A, đọc **Kiến thức 2.1**, làm **Bài l
 
 Đi từ A đến B vừa lệch ngang vừa lệch dọc tạo thành một tam giác vuông. Độ dài đoạn thẳng là cạnh huyền của tam giác ấy; còn cùng phương và cùng hướng là hai câu hỏi khác nhau cần kiểm riêng.
 
-> **CÔNG THỨC — Độ dài, khoảng cách và cùng phương trong Oxy.** Với vectơ \(\vec u=(u_x,u_y)\), độ dài \(|\vec u|=\sqrt{u_x^2+u_y^2}\). Độ dài đoạn \(AB=|\overrightarrow{AB}|\), còn tọa độ vectơ \(\overrightarrow{AB}\) là một cặp số. Trung điểm lấy trung bình hoành và tung; trọng tâm tam giác lấy trung bình ba tọa độ từng trục. Hai vectơ **khác không** cùng phương khi \(u_xv_y-u_yv_x=0\); kết quả này không đồng nghĩa cùng hướng. Không dùng tỉ số có mẫu 0.
+> **CÔNG THỨC — Độ dài, khoảng cách và cùng phương trong Oxy.** Với vectơ \(\vec u=(u_x;u_y)\), độ dài \(|\vec u|=\sqrt{u_x^2+u_y^2}\). Độ dài đoạn \(AB=|\overrightarrow{AB}|\), còn tọa độ vectơ \(\overrightarrow{AB}\) là một cặp số. Trung điểm lấy trung bình hoành và tung; trọng tâm tam giác lấy trung bình ba tọa độ từng trục. Hai vectơ **khác không** cùng phương khi \(u_xv_y-u_yv_x=0\); kết quả này không đồng nghĩa cùng hướng. Không dùng tỉ số có mẫu 0.
 
 **Ví dụ**
 
-**Đề bài:** Trong Oxy, A=(−1,2), B=(5,−6). Tính tọa độ \(\overrightarrow{AB}\), độ dài đoạn \(AB\) và tọa độ trung điểm M.
+**Đề bài:** Trong Oxy, \(A(-1;2),\ B(5;-6)\). Tính tọa độ \(\overrightarrow{AB}\), độ dài đoạn AB và tọa độ trung điểm M.
 
-**Lời giải:** \(\overrightarrow{AB}=(6,-8)\), còn độ dài đoạn \(AB=|\overrightarrow{AB}|=\sqrt{6^2+(-8)^2}=10\). Trung điểm \(M=((-1+5)/2,(2-6)/2)=(2,-2)\). Độ dài dùng căn tổng bình phương, còn tọa độ trung điểm là trung bình hai tọa độ cùng trục.
+**Lời giải:** \(\overrightarrow{AB}=(6;-8)\), còn độ dài đoạn \(AB=|\overrightarrow{AB}|=\sqrt{6^2+(-8)^2}=10\). Trung điểm \(M(\frac{-1+5}2;\frac{2-6}2)\), tức \(M(2;-2)\). Độ dài dùng căn tổng bình phương, còn tọa độ trung điểm là trung bình hai tọa độ cùng trục.
 
-**Vận dụng:** u=(2,4),v=(−1,−2): chúng cùng phương, cùng hướng không?
+**Vận dụng:** \(\vec u=(2;4),\ \vec v=(-1;-2)\): chúng cùng phương, cùng hướng không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Cùng phương nhưng ngược hướng vì v=−u/2.
+Cùng phương nhưng ngược hướng vì \(\vec v=-\frac12\vec u\).
 
 **Khi làm sai:** Nếu dựa vào định thức bằng 0 để chọn cùng hướng, cần kiểm tiếp dấu của hệ số tỉ lệ.
 
@@ -296,13 +296,13 @@ Nếu em suy cùng hướng chỉ từ định thức bằng 0, đọc **Kiến 
 
 Nếu một người dùng lực kéo ngang mà vật chỉ chuyển thẳng đứng, độ lớn của lực không nói lên công sinh ra. Ta cần biết góc giữa hướng lực và độ dời, vì phần lực theo hướng chuyển động mới đóng góp vào công.
 
-> **ĐỊNH NGHĨA — Tích vô hướng qua góc: lực cùng hướng và ngược hướng.** Với hai vectơ **khác không**, u·v=|u||v|cosθ, góc θ trong [0°,180°]. Tích dương cho góc nhọn, 0 cho góc vuông, âm cho góc tù. Vectơ-không có tích vô hướng 0 với mọi vectơ nhưng góc với vectơ-không **theo quy ước có thể chọn tùy ý số đo từ 0° đến 180°**; không suy góc bằng công thức cos khi độ dài mẫu bằng 0. Công W=F·s khi lực F không đổi và s là độ dời.
+> **ĐỊNH NGHĨA — Tích vô hướng qua góc: lực cùng hướng và ngược hướng.** Với hai vectơ **khác không**, \(\vec u\cdot\vec v=|\vec u||\vec v|\cos\theta\), với \(\theta\in[0^\circ;180^\circ]\). Tích dương ứng với \(0^\circ\le\theta<90^\circ\) (cùng hướng hoặc góc nhọn), bằng 0 ứng với \(\theta=90^\circ\), âm ứng với \(90^\circ<\theta\le180^\circ\) (góc tù hoặc ngược hướng). Vectơ-không có tích vô hướng 0 với mọi vectơ nhưng góc với vectơ-không theo quy ước có thể chọn tùy ý số đo từ 0° đến 180°; không suy góc bằng công thức cos khi mẫu bằng 0. Công \(W=\vec F\cdot\vec s\) khi lực \(\vec F\) không đổi và \(\vec s\) là độ dời.
 
 **Ví dụ**
 
 **Đề bài:** Hai vectơ không bằng không có độ dài 3 và 4, góc giữa chúng 120°. Tính tích vô hướng và giải thích dấu.
 
-**Lời giải:** Theo định nghĩa u·v=|u||v|cos120°=3·4·(−1/2)=−6. Dấu âm cho thấy góc giữa chúng tù, hai hướng có phần đối nhau; không được thay cos120° bằng cos60° dương.
+**Lời giải:** Theo định nghĩa \(\vec u\cdot\vec v=|\vec u||\vec v|\cos120^\circ=3\cdot4(-\frac12)=-6\). Dấu âm phù hợp với góc tù; không được thay \(\cos120^\circ\) bằng \(\cos60^\circ\) dương.
 
 **Vận dụng:** Lực 5 N vuông góc độ dời 2 m: công của lực?
 
@@ -325,19 +325,19 @@ Nếu em nhân \(5\cdot2\) mà quên góc lực–độ dời, đọc **Kiến t
 
 Hình tọa độ không phải lúc nào cũng đủ chính xác để nhìn một góc vuông. Tính tích vô hướng theo các thành phần giúp kiểm vuông góc bằng số; chỉ sau đó mới suy góc giữa hai vectơ khác không.
 
-> **CÔNG THỨC — Tích vô hướng trong Oxy và cách kiểm vuông góc.** Với u=(ux,uy), v=(vx,vy), u·v=ux·vx+uy·vy. Với u,v **khác không**, chúng vuông góc khi và chỉ khi tích bằng 0. Khi tìm góc bằng cosθ=(u·v)/(|u||v|), phải kiểm hai độ dài khác 0 và cos trong [−1,1]. Tích vô hướng là **số**, không phải vectơ.
+> **CÔNG THỨC — Tích vô hướng trong Oxy và cách kiểm vuông góc.** Với \(\vec u=(u_x;u_y),\ \vec v=(v_x;v_y)\), \(\vec u\cdot\vec v=u_xv_x+u_yv_y\). Với hai vectơ **khác không**, chúng vuông góc khi và chỉ khi tích bằng 0. Khi tìm góc bằng \(\cos\theta=\frac{\vec u\cdot\vec v}{|\vec u||\vec v|}\), phải kiểm hai độ dài khác 0 và cos trong \([-1;1]\). Tích vô hướng là **số**, không phải vectơ.
 
 **Ví dụ**
 
-**Đề bài:** Trong Oxy, u=(2,−1), v=(3,6). Kiểm tra vuông góc; lực F=(3,4) N gây độ dời s=(5,0) m thì sinh công bao nhiêu?
+**Đề bài:** Trong Oxy, \(\vec u=(2;-1),\ \vec v=(3;6)\). Kiểm tra vuông góc; lực \(\vec F=(3;4)\) N không đổi gây độ dời \(\vec s=(5;0)\) m thì sinh công bao nhiêu?
 
-**Lời giải:** Tích vô hướng u·v=2·3+(−1)·6=0; vì hai vectơ đều khác không nên chúng vuông góc. Công của lực F·s=3·5+4·0=15 N·m=15 J. Với lực vuông góc độ dời, công bằng 0, không phải tích độ lớn.
+**Lời giải:** Tích vô hướng \(\vec u\cdot\vec v=2\cdot3+(-1)\cdot6=0\); vì hai vectơ đều khác không nên chúng vuông góc. Công \(W=\vec F\cdot\vec s=3\cdot5+4\cdot0=15\,\mathrm J\). Với lực vuông góc độ dời, công bằng 0, không phải tích độ lớn.
 
-**Vận dụng:** u=(1,2),v=(4,−2) có vuông góc không?
+**Vận dụng:** \(\vec u=(1;2),\ \vec v=(4;-2)\) có vuông góc không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Có, tích 1×4+2×(−2)=0.
+Có, \(\vec u\cdot\vec v=1\cdot4+2(-2)=0\) và cả hai vectơ khác không.
 
 **Khi làm sai:** Nếu cộng thành phần thay vì nhân từng cặp, xem lại hai trục tọa độ vuông góc.
 
@@ -366,7 +366,7 @@ Một drone có thể chuyển về đông, về bắc và lên cao. Hai tọa �
 
 **Đề bài:** Hình hộp chữ nhật có ba cạnh xuất phát từ A vuông góc đôi một và dài 2,3,4. Tính độ dài đường chéo nối A tới đỉnh đối diện C'.
 
-**Lời giải:** Chọn ba trục theo ba cạnh: vectơ \(\overrightarrow{AC'}\) có thành phần (2,3,4). Do các trục vuông góc, độ dài \(AC'=|\overrightarrow{AC'}|=\sqrt{2^2+3^2+4^2}=\sqrt{29}\). Đây là đường chéo không gian, không phải tổng ba cạnh 2+3+4.
+**Lời giải:** Chọn ba trục theo ba cạnh: vectơ \(\overrightarrow{AC'}\) có thành phần \((2;3;4)\). Do các trục vuông góc, độ dài \(AC'=|\overrightarrow{AC'}|=\sqrt{2^2+3^2+4^2}=\sqrt{29}\). Đây là đường chéo không gian, không phải tổng ba cạnh \(2+3+4\).
 
 **Vận dụng:** \(\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA'}\) đi tới C hay C'?
 
@@ -393,21 +393,21 @@ Ba điểm không nhất thiết cùng nằm trên mặt phẳng tọa độ Oxy
 
 Trong không gian, **trọng tâm của tứ diện** không chỉ là trung bình ba đỉnh. Cho tứ diện \(ABCD\) và \(G\) là trọng tâm tam giác \(BCD\). Vì \(G\) là trung bình ba vị trí \(B,C,D\), muốn cân bằng **cả bốn đỉnh** phải lấy điểm \(I\) trên đoạn \(AG\) sao cho \(\overrightarrow{AI}=\frac34\overrightarrow{AG}\).
 
-> **TÍNH CHẤT — Trọng tâm tứ diện.** Với gốc \(O\) bất kỳ, trọng tâm \(I\) thỏa \(\displaystyle\overrightarrow{OI}=\frac14(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}+\overrightarrow{OD})\), hay \(\overrightarrow{IA}+\overrightarrow{IB}+\overrightarrow{IC}+\overrightarrow{ID}=\vec0\). Công thức có **bốn vectơ vị trí**, khác trọng tâm tam giác có ba vectơ.
+> **TÍNH CHẤT — Trọng tâm tứ diện.** Với gốc \(O\) bất kỳ, trọng tâm \(I\) thỏa \(\overrightarrow{OI}=\frac14(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}+\overrightarrow{OD})\), hay \(\overrightarrow{IA}+\overrightarrow{IB}+\overrightarrow{IC}+\overrightarrow{ID}=\vec0\). Công thức có **bốn vectơ vị trí**, khác trọng tâm tam giác có ba vectơ.
 
-**Ví dụ minh họa.** Xét \(A(0,0,0)\), \(B(4,0,0)\), \(C(0,4,0)\), \(D(0,0,4)\). Trọng tâm của mặt \(BCD\) là \(G(4/3,4/3,4/3)\). Trung bình bốn tọa độ đỉnh cho \(I(1,1,1)\), và \(\overrightarrow{AI}=\frac34\overrightarrow{AG}\). Kiểm cả độ lớn lẫn hướng của hai vectơ, không đo hình phối cảnh để suy tỉ lệ.
+**Ví dụ minh họa.** Xét \(A(0;0;0),\ B(4;0;0),\ C(0;4;0),\ D(0;0;4)\). Trọng tâm của mặt BCD là \(G(\frac43;\frac43;\frac43)\). Trung bình bốn tọa độ đỉnh cho \(I(1;1;1)\), và \(\overrightarrow{AI}=\frac34\overrightarrow{AG}\). Kiểm cả độ lớn lẫn hướng, không đo hình phối cảnh để suy tỉ lệ.
 
 **Ví dụ**
 
-**Đề bài:** Trong Oxyz, A=(1,0,2), B=(4,−2,5), C=(5,1,7). Kiểm tra quy tắc Chasles \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\).
+**Đề bài:** Trong Oxyz, \(A(1;0;2),\ B(4;-2;5),\ C(5;1;7)\). Kiểm tra quy tắc Chasles \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\).
 
-**Lời giải:** \(\overrightarrow{AB}=(3,-2,3)\), \(\overrightarrow{BC}=(1,3,2)\), cộng thành \((4,1,5)\). \(\overrightarrow{AC}=C-A=(4,1,5)\) theo tọa độ, khớp. Quy tắc Chasles nối điểm đầu A qua B đến điểm cuối C, đúng trong không gian như trong mặt phẳng.
+**Lời giải:** \(\overrightarrow{AB}=(3;-2;3),\ \overrightarrow{BC}=(1;3;2)\), cộng thành \((4;1;5)\). Tính trực tiếp tọa độ \(\overrightarrow{AC}=(5-1;1-0;7-2)=(4;1;5)\), khớp. Quy tắc Chasles nối điểm đầu A qua B đến điểm cuối C, đúng trong không gian như trong mặt phẳng.
 
-**Vận dụng:** \(\overrightarrow{AB}=(2,-1,3)\), \(\overrightarrow{BC}=(-4,2,0)\): tọa độ \(\overrightarrow{AC}\) là gì?
+**Vận dụng:** \(\overrightarrow{AB}=(2;-1;3)\), \(\overrightarrow{BC}=(-4;2;0)\): tọa độ \(\overrightarrow{AC}\) là gì?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(\overrightarrow{AC}=(-2,1,3)\).
+\(\overrightarrow{AC}=(-2;1;3)\).
 
 **Khi làm sai:** Nếu trừ vì nghĩ chiều BC ngược AB, nhớ quy tắc đường đi là cộng nối tiếp.
 
@@ -424,7 +424,7 @@ Nếu em trừ \(\overrightarrow{BC}\) vì nhìn hai mũi tên khác chiều tr�
 
 Trên hình phối cảnh, hai mũi tên ở các vị trí khác nhau có thể trông lệch lạc dù cùng một góc. Tịnh tiến về chung gốc và tính tích vô hướng giúp em so góc thật, không suy từ nét xiên trên giấy.
 
-> **CÔNG THỨC — Góc, tích vô hướng và vuông góc trong không gian.** Tích vô hướng hình học u·v=|u||v|cosθ đúng cho vectơ không gian. Trong Oxyz cũng có u·v=uxvx+uyvy+uzvz. Với hai vectơ khác không, tích 0 tương đương vuông góc. Hai đường thẳng chéo nhau có thể có vectơ chỉ phương vuông góc dù hai đường không cắt nhau; không gọi hai đoạn vẽ phối cảnh là cắt nhau chỉ vì ảnh chiếu chồng.
+> **CÔNG THỨC — Góc, tích vô hướng và vuông góc trong không gian.** Tịnh tiến hai vectơ khác không về chung gốc O, giữ nguyên độ dài và hướng. Hai tia biểu diễn chúng tạo thành một góc \(\theta\in[0^\circ;180^\circ]\). Tích vô hướng \(\vec u\cdot\vec v=|\vec u||\vec v|\cos\theta\). Trong Oxyz, \(\vec u\cdot\vec v=u_xv_x+u_yv_y+u_zv_z\). Với hai vectơ khác không, tích 0 tương đương vuông góc. Hai đường thẳng chéo nhau có thể có vectơ chỉ phương vuông góc dù hai đường không cắt nhau; không gọi hai đoạn vẽ phối cảnh là cắt nhau chỉ vì ảnh chiếu chồng.
 
 ![Phân rã độ dịch chuyển A→B theo ba trục](../svg/FIG-G12-CHII-B08-R00.svg)
 
@@ -432,29 +432,33 @@ Trên hình phối cảnh, hai mũi tên ở các vị trí khác nhau có thể
 
 ![Hai vectơ vuông góc sau khi tịnh tiến về chung gốc](../../visuals/THPT_TOPIC13_COMMON_ORIGIN_ANGLE.svg)
 
-*Đọc hình:* Hai vectơ khác không nằm trong một mặt phẳng, kể cả khi ban đầu được đặt ở các vị trí khác nhau trong không gian. Hình minh họa riêng trường hợp góc \(90^\circ\); dùng tích vô hướng để kiểm góc của cặp vectơ đã cho, không suy từ hình phác thảo.
+*Đọc hình:* Hai vectơ khác không có thể được tịnh tiến về cùng một gốc O để cùng nằm trong một mặt phẳng, kể cả khi ban đầu đặt ở các vị trí khác nhau trong không gian. Hình minh họa riêng trường hợp góc \(90^\circ\), không theo tỉ lệ độ dài. Dùng tích vô hướng để kiểm góc của cặp vectơ đã cho, không đo trên hình phác thảo.
 
 Tích vô hướng còn cho phép tính **độ dài của tổng và hiệu** từ độ dài hai vectơ và góc giữa chúng. Vì \(\vec u\cdot\vec u=|\vec u|^2\), tích vô hướng giao hoán và phân phối theo phép cộng, nên:
+
 \[
 \vec u\cdot\vec v=\vec v\cdot\vec u,\quad
 (\vec u+\vec v)\cdot\vec w=\vec u\cdot\vec w+\vec v\cdot\vec w,\quad
 (k\vec u)\cdot\vec v=k(\vec u\cdot\vec v);
 \]
+
+
 \[
 |\vec u+\vec v|^2=|\vec u|^2+2\vec u\cdot\vec v+|\vec v|^2,\qquad
 |\vec u-\vec v|^2=|\vec u|^2-2\vec u\cdot\vec v+|\vec v|^2.
 \]
+
 Các tính chất này đúng trong mặt phẳng và không gian; muốn suy ra góc bằng \(\cos\theta=\frac{\vec u\cdot\vec v}{|\vec u||\vec v|}\), **hai vectơ phải khác \(\vec0\)**.
 
 **Ví dụ minh họa.** Nếu \(|\vec u|=3\), \(|\vec v|=4\) và góc của chúng là \(60^\circ\), thì \(\vec u\cdot\vec v=6\), nên \(|\vec u-\vec v|^2=9-12+16=13\), hay \(|\vec u-\vec v|=\sqrt{13}\). Chọn phép khai triển này vì đã biết độ dài và góc nhưng chưa biết các tọa độ.
 
 **Ví dụ**
 
-**Đề bài:** Hai vectơ u=(1,2,2), v=(2,0,−1) trong Oxyz có vuông góc không? Kiểm điều kiện.
+**Đề bài:** Hai vectơ \(\vec u=(1;2;2),\ \vec v=(2;0;-1)\) trong Oxyz có vuông góc không? Kiểm điều kiện.
 
-**Lời giải:** u·v=1·2+2·0+2·(−1)=0. Cả hai đều khác không (|u|=3, |v|=√5), nên cos góc=0/(3√5)=0 và góc bằng 90°. Không suy góc của vectơ-không từ tích vô hướng 0.
+**Lời giải:** \(\vec u\cdot\vec v=1\cdot2+2\cdot0+2(-1)=0\). Cả hai đều khác không (\(|\vec u|=3,\ |\vec v|=\sqrt5\)), nên \(\cos\theta=\frac0{3\sqrt5}=0\) và góc bằng \(90^\circ\). Không suy góc của vectơ-không từ tích vô hướng 0.
 
-**Vận dụng:** u=(1,1,0),v=(1,−1,5) có vuông góc không?
+**Vận dụng:** \(\vec u=(1;1;0),\ \vec v=(1;-1;5)\) có vuông góc không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -475,36 +479,36 @@ Nếu em tin trực giác hình xiên mà không kiểm tích vô hướng, đ�
 
 Đổi gốc tọa độ của bản đồ làm số chỉ vị trí mỗi điểm thay đổi, nhưng độ dời từ A tới B phải giữ nguyên nếu các trục và đơn vị không đổi. Ta cần phân biệt tọa độ điểm với tọa độ vectơ.
 
-> **ĐỊNH NGHĨA — Oxyz: tọa độ điểm khác tọa độ vectơ.** Điểm \(M=(x,y,z)\) là **vị trí**, còn \(\overrightarrow{OM}=(x,y,z)\) là **vectơ dịch chuyển** từ gốc. Với A,B, \(\overrightarrow{AB}=(x_B-x_A,y_B-y_A,z_B-z_A)\). Ba trục vuông góc được vẽ xiên trên mặt giấy; độ dài trên bản vẽ không phải dữ kiện thật. Khi giữ hướng trục và đơn vị, tịnh tiến gốc làm tọa độ điểm thay đổi nhưng hiệu B−A không đổi.
+> **ĐỊNH NGHĨA — Oxyz: tọa độ điểm khác tọa độ vectơ.** Điểm \(M(x;y;z)\) là **vị trí**, còn \(\overrightarrow{OM}=(x;y;z)\) là **vectơ dịch chuyển** từ gốc. Với A, B, \(\overrightarrow{AB}=(x_B-x_A;y_B-y_A;z_B-z_A)\). Ba trục vuông góc được vẽ xiên trên mặt giấy; độ dài trên bản vẽ không phải dữ kiện thật. Khi giữ hướng trục và đơn vị, tịnh tiến gốc làm tọa độ điểm thay đổi nhưng hiệu tọa độ điểm cuối và điểm đầu không đổi.
 
 ![Trục Oxyz và điểm M=(2,1,3)](../svg/FIG-G12-CHII-B07-R00.svg)
 
 **Cách đọc hình:** Ba trục thật vuông góc dù hình vẽ xiên; nét đứt là đường gióng tọa độ, không phải chặng di chuyển.
 
-**Ba trục Descartes vuông góc** \(Ox,Oy,Oz\) có chung gốc \(O\), đôi một vuông góc; \(\vec i,\vec j,\vec k\) là các **vectơ đơn vị** lần lượt cùng chiều dương ba trục. Chúng tạo thành ba hướng cơ sở độc lập: mọi vectơ \(\vec u\) được viết **duy nhất** thành \(\vec u=u_x\vec i+u_y\vec j+u_z\vec k\). Với điểm \(M(x,y,z)\), \(\overrightarrow{OM}=x\vec i+y\vec j+z\vec k\).
+**Ba trục Descartes vuông góc** \(Ox,Oy,Oz\) có chung gốc \(O\), đôi một vuông góc; \(\vec i,\vec j,\vec k\) là các **vectơ đơn vị** lần lượt cùng chiều dương ba trục. Chúng tạo thành ba hướng cơ sở độc lập: mọi vectơ \(\vec u\) được viết **duy nhất** thành \(\vec u=u_x\vec i+u_y\vec j+u_z\vec k\). Với điểm \(M(x;y;z)\), \(\overrightarrow{OM}=x\vec i+y\vec j+z\vec k\).
 
 > **ĐỊNH NGHĨA — Ba mặt phẳng tọa độ.** Trong Oxyz, \((Oxy)\) có \(z=0\), \((Oyz)\) có \(x=0\), \((Ozx)\) có \(y=0\). Điểm thuộc **một trục tọa độ** phải có hai tọa độ còn lại bằng 0; điểm thuộc **một mặt phẳng tọa độ** chỉ cần tọa độ vuông góc với mặt phẳng đó bằng 0.
 
-**Ví dụ minh họa.** Nếu \(\overrightarrow{OM}=2\vec i-\vec j+3\vec k\) thì \(M(2,-1,3)\). Điểm \(N(4,0,-2)\) thuộc mặt phẳng \((Ozx)\) vì tung độ bằng 0, nhưng không thuộc riêng trục \(Ox\) hoặc \(Oz\) do hoành độ và cao độ đều khác 0. Bước kiểm là đối chiếu đúng trục vuông góc, không suy từ hình vẽ xiên.
+**Ví dụ minh họa.** Nếu \(\overrightarrow{OM}=2\vec i-\vec j+3\vec k\) thì \(M(2;-1;3)\). Điểm \(N(4;0;-2)\) thuộc mặt phẳng \((Ozx)\) vì tung độ bằng 0, nhưng không thuộc riêng trục \(Ox\) hoặc \(Oz\) do hoành độ và cao độ đều khác 0. Bước kiểm là đối chiếu đúng trục vuông góc, không suy từ hình vẽ xiên.
 
 **Ví dụ**
 
-**Đề bài:** Trong Oxyz, A=(1,−1,2), B=(4,3,−2). Tính tọa độ \(\overrightarrow{AB}\), \(\overrightarrow{BA}\) và độ dài đoạn \(AB\).
+**Đề bài:** Trong Oxyz, \(A(1;-1;2),\ B(4;3;-2)\). Tính tọa độ \(\overrightarrow{AB}\), \(\overrightarrow{BA}\) và độ dài đoạn AB.
 
-**Lời giải:** \(\overrightarrow{AB}=(4-1,3-(-1),-2-2)=(3,4,-4)\), còn \(\overrightarrow{BA}=(-3,-4,4)\). Độ dài \(AB=|\overrightarrow{AB}|=\sqrt{3^2+4^2+(-4)^2}=\sqrt{41}\). Tọa độ điểm B không tự là tọa độ vectơ \(\overrightarrow{AB}\) nếu gốc không phải O.
+**Lời giải:** \(\overrightarrow{AB}=(4-1,3-(-1),-2-2)=(3;4;-4)\), còn \(\overrightarrow{BA}=(-3;-4;4)\). Độ dài \(AB=|\overrightarrow{AB}|=\sqrt{3^2+4^2+(-4)^2}=\sqrt{41}\). Tọa độ điểm B không tự là tọa độ vectơ \(\overrightarrow{AB}\) nếu gốc không phải O.
 
-**Vận dụng:** A=(2,0,−1), B=(−1,5,3): tọa độ \(\overrightarrow{AB}\) là gì?
+**Vận dụng:** \(A(2;0;-1),\ B(-1;5;3)\): tọa độ \(\overrightarrow{AB}\) là gì?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(\overrightarrow{AB}=(-3,5,4)\).
+\(\overrightarrow{AB}=(-3;5;4)\).
 
-**Khi làm sai:** Nếu đổi dấu tất cả, bạn đã làm A−B thay vì B−A.
+**Khi làm sai:** Nếu đổi dấu tất cả, em đã lấy tọa độ điểm đầu trừ điểm cuối.
 
 
 **Kiểm lỗi**
 
-Nếu em viết tọa độ điểm B thay vì tọa độ \(\overrightarrow{AB}\), đọc **Kiến thức 3.4**, làm **Bài luyện 25** và **Bài luyện 46**. Phân biệt vị trí so với O với độ dời B−A.
+Nếu em viết tọa độ điểm B thay vì tọa độ \(\overrightarrow{AB}\), đọc **Kiến thức 3.4**, làm **Bài luyện 25** và **Bài luyện 46**. Phân biệt vị trí so với O với độ dời từ A tới B.
 
 </details>
 
@@ -514,7 +518,7 @@ Nếu em viết tọa độ điểm B thay vì tọa độ \(\overrightarrow{AB}
 
 Một robot di chuyển theo ba trục nên muốn biết vị trí cuối phải cộng từng thành phần, rồi mới dùng độ dài không gian. Cách cộng ba khoảng cách riêng rẽ không cho độ dài đường nối thẳng.
 
-> **CÔNG THỨC — Cộng, tính độ dài và điểm cân bằng trong Oxyz.** Với u=(u1,u2,u3), v=(v1,v2,v3): u+v=(u1+v1,u2+v2,u3+v3); ku=(ku1,ku2,ku3); |u|=√(u1²+u2²+u3²); u·v=u1v1+u2v2+u3v3. Trung điểm là trung bình tọa độ hai đỉnh, trọng tâm là trung bình tọa độ ba đỉnh. Không cộng trị tuyệt đối ba thành phần để tính độ dài.
+> **CÔNG THỨC — Cộng, tính độ dài và điểm cân bằng trong Oxyz.** Với \(\vec u=(u_1;u_2;u_3),\ \vec v=(v_1;v_2;v_3)\), ta có \(\vec u+\vec v=(u_1+v_1;u_2+v_2;u_3+v_3)\), \(k\vec u=(ku_1;ku_2;ku_3)\), \(|\vec u|=\sqrt{u_1^2+u_2^2+u_3^2}\), \(\vec u\cdot\vec v=u_1v_1+u_2v_2+u_3v_3\). Trung điểm là trung bình tọa độ hai đỉnh, trọng tâm tam giác là trung bình tọa độ ba đỉnh. Không cộng trị tuyệt đối ba thành phần để tính độ dài.
 
 ![Phân rã độ dịch chuyển A→B theo ba trục](../svg/FIG-G12-CHII-B08-R00.svg)
 
@@ -522,21 +526,21 @@ Một robot di chuyển theo ba trục nên muốn biết vị trí cuối phả
 
 Tính tọa độ còn giúp **xét ba điểm thẳng hàng** trong không gian. Với hai điểm phân biệt \(A,B\) và một điểm \(C\), ba điểm \(A,B,C\) thẳng hàng khi và chỉ khi có \(t\in\mathbb R\) sao cho \(\overrightarrow{AC}=t\overrightarrow{AB}\). Ta so tỉ lệ **cùng một hệ số** trên cả ba thành phần, không chia cho một tọa độ bằng 0; nếu \(A=B\), cần xét riêng vì \(\overrightarrow{AB}=\vec0\).
 
-**Ví dụ minh họa.** Với \(A(1,0,2)\), \(B(2,2,1)\), \(C(4,6,-1)\), ta được \(\overrightarrow{AB}=(1,2,-1)\), \(\overrightarrow{AC}=(3,6,-3)=3\overrightarrow{AB}\), nên ba điểm thẳng hàng. Việc ba đoạn có độ dài nào đó bằng nhau không đủ thay cho điều kiện vectơ cùng phương.
+**Ví dụ minh họa.** Với \(A(1;0;2)\), \(B(2;2;1)\), \(C(4;6;-1)\), ta được \(\overrightarrow{AB}=(1;2;-1)\), \(\overrightarrow{AC}=(3;6;-3)=3\overrightarrow{AB}\), nên ba điểm thẳng hàng. Việc ba đoạn có độ dài nào đó bằng nhau không đủ thay cho điều kiện vectơ cùng phương.
 
 **Ví dụ**
 
-**Đề bài:** Cho A=(1,0,2), B=(5,2,−2). Tìm trung điểm M, tọa độ vectơ \(\overrightarrow{AB}\) và kiểm tra hai độ dài \(AM=MB\).
+**Đề bài:** Cho \(A(1;0;2),\ B(5;2;-2)\). Tìm trung điểm M, tọa độ vectơ \(\overrightarrow{AB}\) và kiểm tra hai độ dài \(AM=MB\).
 
-**Lời giải:** \(\overrightarrow{AB}=(4,2,-4)\), có độ dài \(AB=|\overrightarrow{AB}|=\sqrt{16+4+16}=6\). Trung điểm \(M=((1+5)/2,(0+2)/2,(2-2)/2)=(3,1,0)\). Hai vectơ \(\overrightarrow{AM}=\overrightarrow{MB}=(2,1,-2)\), do đó \(AM=MB=3\); M nằm giữa A và B.
+**Lời giải:** \(\overrightarrow{AB}=(4;2;-4)\), có độ dài \(AB=|\overrightarrow{AB}|=\sqrt{16+4+16}=6\). Trung điểm \(M(\frac{1+5}2;\frac{0+2}2;\frac{2-2}2)\), tức \(M(3;1;0)\). Hai vectơ \(\overrightarrow{AM}=\overrightarrow{MB}=(2;1;-2)\), do đó \(AM=MB=3\); M nằm giữa A và B.
 
-**Vận dụng:** A=(0,0,0),B=(6,0,0),C=(0,3,9): trọng tâm?
+**Vận dụng:** \(A(0;0;0),\ B(6;0;0),\ C(0;3;9)\): trọng tâm?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-G=(2,1,3).
+\(G(2;1;3)\).
 
-**Khi làm sai:** Nếu z=9, bạn đã quên chia z cho 3.
+**Khi làm sai:** Nếu \(z=9\), em đã quên chia tổng cao độ ba đỉnh cho 3.
 
 
 **Kiểm lỗi**
@@ -551,15 +555,15 @@ Nếu em chia tọa độ trọng tâm sai hoặc nhầm khoảng cách với ve
 
 Drone bay qua hai chặng có thể trở gần điểm xuất phát dù đã đi một quãng dài. Vì thế quãng đường phải cộng độ dài từng chặng, còn độ dời phải cộng vectơ; nếu có lực không đổi, công còn phụ thuộc hướng của độ dời.
 
-> **PHƯƠNG PHÁP — Độ dời, quãng đường và công trong ứng dụng ba chiều.** Với P ban đầu và hai chặng vectơ u,v, vị trí cuối Q=P+u+v. Độ dài độ dời là |u+v|; nếu hai chặng thẳng, quãng đường là |u|+|v|≥|u+v|. Lực F không đổi trên độ dời s tạo công W=F·s; khi F tính bằng N và s bằng m thì W tính bằng J. Luôn ghi trục, đơn vị, giả thiết lực không đổi; không suy quãng đường thật chỉ từ tọa độ P,Q.
+> **PHƯƠNG PHÁP — Độ dời, quãng đường và công trong ứng dụng ba chiều.** Với P ban đầu và hai chặng vectơ \(\vec u,\vec v\), vị trí cuối Q thỏa \(\overrightarrow{OQ}=\overrightarrow{OP}+\vec u+\vec v\). Độ dài độ dời là \(|\vec u+\vec v|\); nếu hai chặng thẳng, quãng đường là \(|\vec u|+|\vec v|\ge|\vec u+\vec v|\). Lực \(\vec F\) không đổi trên độ dời \(\vec s\) tạo công \(W=\vec F\cdot\vec s\); lực tính bằng N, độ dời tính bằng m thì công tính bằng J. Luôn ghi trục, đơn vị, giả thiết lực không đổi; không suy quãng đường thật chỉ từ tọa độ P, Q.
 
 **Ví dụ**
 
-**Đề bài:** Drone xuất phát P=(1,2,3) m, đi hai chặng u=(3,−2,1) m và v=(−1,4,2) m; lực không đổi F=(2,−1,3) N. Tính Q, độ dài độ dời, quãng đường hai chặng và công.
+**Đề bài:** Drone xuất phát \(P(1;2;3)\) (m), đi hai chặng thẳng \(\vec u=(3;-2;1)\) m và \(\vec v=(-1;4;2)\) m; lực không đổi \(\vec F=(2;-1;3)\) N. Tính Q, độ dài độ dời, quãng đường hai chặng và công.
 
-**Lời giải:** Tổng u+v=(2,2,3) m nên Q=P+(2,2,3)=(3,4,6) m. Độ dời dài √(4+4+9)=√17 m; đường đi gấp khúc dài |u|+|v|=√14+√21 m (lớn hơn √17). Công của lực không đổi trên độ dời tổng là F·(u+v)=2·2+(−1)·2+3·3=11 J. Không suy quãng đường chỉ từ P,Q.
+**Lời giải:** Tổng \(\vec u+\vec v=(2;2;3)\) m, nên tọa độ điểm Q là \((1+2;2+2;3+3)=(3;4;6)\) (m). Độ dời dài \(\sqrt{4+4+9}=\sqrt{17}\,\mathrm m\); đường đi gấp khúc dài \(|\vec u|+|\vec v|=\sqrt{14}+\sqrt{21}\) m (lớn hơn \(\sqrt{17}\) m). Công của lực không đổi trên độ dời tổng là \(W=\vec F\cdot(\vec u+\vec v)=2\cdot2+(-1)\cdot2+3\cdot3=11\,\mathrm J\). Không suy quãng đường chỉ từ P, Q.
 
-**Vận dụng:** Đi (1,0,0) m rồi (−1,0,0) m: độ dời và quãng đường?
+**Vận dụng:** Đi theo hai vectơ \((1;0;0)\) m rồi \((-1;0;0)\) m: độ dời và quãng đường?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
