@@ -1564,13 +1564,13 @@ Giải \(9^x-4\cdot3^x+3=0\) trong \(\mathbb R\) bằng đặt ẩn \(t=3^x>0\);
 
 **Bài 61.**
 
-Giải log₂(x−1)+log₂(x−3)=3, ghi điều kiện và nghiệm bị loại.
+Giải \(\log_2(x-1)+\log_2(x-3)=3\), ghi điều kiện và nghiệm bị loại.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={5}.
+**Đáp án:** \(S=\{5\}\).
 
-ĐK x−1>0 và x−3>0 ⇒ x>3. Gộp log: (x−1)(x−3)=2³=8 ⇒ x²−4x−5=(x−5)(x+1)=0. Ứng viên 5,−1; chỉ 5 hợp miền. Thử log₂4+log₂2=3.
+Điều kiện \(x-1>0\) và \(x-3>0\Rightarrow x>3\). Gộp lôgarit: \((x-1)(x-3)=2^3=8\Rightarrow x^2-4x-5=(x-5)(x+1)=0\). Ứng viên \(5,-1\); chỉ \(5\) hợp miền. Thử \(\log_2 4+\log_2 2=3\).
 
 </details>
 
@@ -1578,13 +1578,13 @@ Giải log₂(x−1)+log₂(x−3)=3, ghi điều kiện và nghiệm bị loạ
 
 **Bài 62.**
 
-Giải (1/3)^(2x−1) ≥ (1/3)^(x+2) trên ℝ.
+Giải \(\left(\frac13\right)^{2x-1}\ge\left(\frac13\right)^{x+2}\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S=(−∞,3].
+**Đáp án:** \(S=(-\infty;3]\).
 
-Vì 0<1/3<1, hàm mũ nghịch biến; bất phương trình tương đương 2x−1≤x+2 ⇒ x≤3. x=3 cho dấu bằng nên lấy mốc.
+Vì \(0<\frac13<1\), hàm mũ nghịch biến; bất phương trình tương đương \(2x-1\le x+2\Rightarrow x\le3\). \(x=3\) cho dấu bằng nên lấy mốc.
 
 </details>
 
@@ -1592,13 +1592,13 @@ Vì 0<1/3<1, hàm mũ nghịch biến; bất phương trình tương đương 2x
 
 **Bài 63.**
 
-Giải log_(1/2)(x−1) ≤ log_(1/2)(5−x) trong ℝ.
+Giải \(\log_{\frac12}(x-1)\le\log_{\frac12}(5-x)\) trong \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S=[3,5).
+**Đáp án:** \(S=[3;5)\).
 
-Điều kiện x−1>0 và 5−x>0 ⇒ 1<x<5. Cơ số 1/2 làm log giảm, nên x−1≥5−x ⇒ x≥3. Lấy giao với miền: [3,5), 5 bị loại vì log 0 vô nghĩa.
+Điều kiện \(x-1>0\) và \(5-x>0\Rightarrow 1<x<5\). Cơ số \(\frac12\) làm hàm lôgarit nghịch biến, nên \(x-1\ge5-x\Rightarrow x\ge3\). Lấy giao với miền: \([3;5)\), \(5\) bị loại vì lôgarit của \(0\) không xác định.
 
 </details>
 
@@ -1606,17 +1606,17 @@ Giải log_(1/2)(x−1) ≤ log_(1/2)(5−x) trong ℝ.
 
 **Bài 64.**
 
-Giải trong ℝ: log₂(x−2)+log₂(x+2)=3. Trình bày miền xác định trước khi gộp log; nêu mọi nghiệm đại số và lí do giữ/loại.
+Giải trong \(\mathbb R\): \(\log_2(x-2)+\log_2(x+2)=3\). Trình bày miền xác định trước khi gộp lôgarit; nêu mọi nghiệm đại số và lí do giữ/loại.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** S={2√3}.
+**Đáp án:** \(S=\{2\sqrt3\}\).
 
-Điều kiện x−2>0 và x+2>0 ⇒ x>2. Gộp log₂[(x−2)(x+2)]=3 ⇔ x²−4=8 ⇔ x²=12, được x=±2√3. Vì 2√3>2 còn −2√3<2, chỉ nhận 2√3. Thử (2√3−2)(2√3+2)=8 ⇒ tổng log=3.
+Điều kiện \(x-2>0\) và \(x+2>0\Rightarrow x>2\). Gộp \(\log_2[(x-2)(x+2)]=3\Leftrightarrow x^2-4=8\Leftrightarrow x^2=12\), được \(x=\pm2\sqrt3\). Vì \(2\sqrt3>2\) còn \(-2\sqrt3<2\), chỉ nhận \(2\sqrt3\). Thử \((2\sqrt3-2)(2\sqrt3+2)=8\Rightarrow\) tổng lôgarit bằng \(3\).
 
 **Rubric tự đối chiếu:**
 
-7 điểm: xác định cả hai đối số dương và x>2 (2đ); gộp log có điều kiện (1đ); giải được hai nghiệm đại số (2đ); loại nghiệm âm đúng (1đ); thử lại và kết luận tập nghiệm (1đ).
+7 điểm: xác định cả hai đối số dương và \(x>2\) (2đ); gộp lôgarit có điều kiện (1đ); giải được hai nghiệm đại số (2đ); loại nghiệm âm đúng (1đ); thử lại và kết luận tập nghiệm (1đ).
 
 </details>
 
@@ -1632,7 +1632,7 @@ Vốn 400 triệu tăng 5% mỗi năm, lãi nhập gốc. Sau 2 năm có bao nhi
 
 **Đáp án:** 441 triệu đồng.
 
-400·1,05²=441. Năm thứ hai tính lãi trên số vốn đã tăng sau năm đầu.
+\(400\cdot1{,}05^2=441\). Năm thứ hai tính lãi trên số vốn đã tăng sau năm đầu.
 
 </details>
 
@@ -1646,7 +1646,7 @@ Vốn 400 triệu tăng 5% mỗi năm, lãi nhập gốc. Sau 2 năm có bao nhi
 
 **Đáp án:** 4 kỳ.
 
-50·2^t=800 ⇒ 2^t=16 ⇒ t=log₂16=4; t≥0.
+\(50\cdot2^t=800\Rightarrow 2^t=16\Rightarrow t=\log_2 16=4\); \(t\ge0\).
 
 </details>
 
@@ -1654,13 +1654,13 @@ Vốn 400 triệu tăng 5% mỗi năm, lãi nhập gốc. Sau 2 năm có bao nhi
 
 **Bài 67.**
 
-Giải log₃(x−4)=log₃(2−x) trên ℝ.
+Giải \(\log_3(x-4)=\log_3(2-x)\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Vô nghiệm.
 
-Điều kiện x−4>0 tức x>4 và 2−x>0 tức x<2 đồng thời; bất khả. Không giải x−4=2−x rồi nhận x=3.
+Điều kiện \(x-4>0\) tức \(x>4\) và \(2-x>0\) tức \(x<2\) đồng thời; bất khả. Không giải \(x-4=2-x\) rồi nhận \(x=3\).
 
 </details>
 
@@ -1674,7 +1674,7 @@ Vốn 100 triệu tăng 10% cuối mỗi năm; n nguyên không âm. Năm đầu
 
 **Đáp án:** Cuối năm 3.
 
-100·1,1²=121 nên năm 2 mới bằng, chưa vượt; n>2 ⇒ n nguyên đầu tiên bằng 3.
+\(100\cdot1{,}1^2=121\) nên năm 2 mới bằng, chưa vượt; \(n>2\Rightarrow\) năm nguyên đầu tiên bằng 3.
 
 </details>
 
@@ -1682,13 +1682,13 @@ Vốn 100 triệu tăng 10% cuối mỗi năm; n nguyên không âm. Năm đầu
 
 **Bài 69.**
 
-Một bạn phát biểu: “log₂(2^x)=2x và y=log₂x xác định với mọi x thực vì hàm y=2^x có TXĐ ℝ”. Hãy tìm và sửa **hai lỗi khái niệm**, sau đó giải thích hàm nào thực hiện phép ngược của hàm nào.
+Một bạn phát biểu: “\(\log_2(2^x)=2x\) và \(y=\log_2 x\) xác định với mọi \(x\) thực vì hàm \(y=2^x\) có tập xác định \(\mathbb R\)”. Hãy tìm và sửa **hai lỗi khái niệm**, sau đó giải thích hàm nào thực hiện phép ngược của hàm nào.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** log₂(2^x)=x với mọi x thực, không phải 2x. Hàm y=log₂x chỉ xác định với x>0. Hai hàm y=2^x và y=log₂x là hai hàm ngược: đầu ra của hàm mũ là đầu vào hợp lệ của hàm logarit.
+**Đáp án:** \(\log_2(2^x)=x\) với mọi \(x\) thực, không phải \(2x\). Hàm \(y=\log_2 x\) chỉ xác định với \(x>0\). Hai hàm \(y=2^x\) và \(y=\log_2 x\) là hai hàm ngược: đầu ra của hàm mũ là đầu vào hợp lệ của hàm lôgarit.
 
-Logarit trả lại **số mũ** đã tạo ra kết quả, không nhân cơ số với số mũ. Hàm 2^x nhận mọi x thực nhưng **cho ra số dương**; chính tập giá trị (0,+∞) đó trở thành TXĐ của hàm ngược log₂x. Nhầm TXĐ của hàm gốc với TXĐ của hàm ngược là lỗi bản chất.
+Lôgarit trả lại **số mũ** đã tạo ra kết quả, không nhân cơ số với số mũ. Hàm \(2^x\) nhận mọi \(x\) thực nhưng **cho ra số dương**; chính tập giá trị \((0;+\infty)\) đó trở thành tập xác định của hàm ngược \(\log_2 x\). Nhầm tập xác định của hàm gốc với tập xác định của hàm ngược là lỗi bản chất.
 
 </details>
 
@@ -1696,16 +1696,16 @@ Logarit trả lại **số mũ** đã tạo ra kết quả, không nhân cơ s�
 
 **Bài 70.**
 
-Vốn 200 triệu đồng gửi lãi gộp 8%/năm, không có phí và rút cuối năm thứ 3. (a) Lập công thức P(n); (b) tính P(3); (c) so với mô hình lãi đơn 8%/năm; (d) giải thích bản chất khác biệt.
+Vốn 200 triệu đồng gửi lãi gộp 8%/năm, không có phí và rút cuối năm thứ 3. (a) Lập công thức \(P(n)\); (b) tính \(P(3)\); (c) so với mô hình lãi đơn 8%/năm; (d) giải thích bản chất khác biệt.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-P(n)=200(1,08)^n triệu; P(3)=200·1,259712=251,9424 triệu. Lãi đơn sau 3 năm 200(1+0,08·3)=248 triệu. Chênh 3,9424 triệu. Khác biệt do lãi gộp trên cả phần lãi đã sinh từ các năm trước.
+\(P(n)=200(1{,}08)^n\) triệu; \(P(3)=200\cdot1{,}259712=251{,}9424\) triệu. Lãi đơn sau 3 năm \(200(1+0{,}08\cdot3)=248\) triệu. Chênh \(3{,}9424\) triệu. Khác biệt do lãi gộp trên cả phần lãi đã sinh từ các năm trước.
 
 **Rubric 4 điểm:**
 
 1. Xác định đúng tỉ lệ nhân 1,08 và công thức lãi kép — **1 điểm**.
-2. Tính P(3)=251,9424 triệu kèm đơn vị — **1 điểm**.
+2. Tính \(P(3)=251{,}9424\) triệu kèm đơn vị — **1 điểm**.
 3. Tính đúng vốn lãi đơn 248 triệu, chênh 3,9424 — **1 điểm**.
 4. Giải thích cơ chế nhập lãi, phạm vi mô hình không phí — **1 điểm**.
 
@@ -1715,18 +1715,18 @@ P(n)=200(1,08)^n triệu; P(3)=200·1,259712=251,9424 triệu. Lãi đơn sau 3 
 
 **Bài 71.**
 
-(a) Giải log₂(x−1)=log₂(7−x); (b) giải log_(1/2)(x+1)≥log_(1/2)4; kiểm điều kiện log ở cả hai ý.
+(a) Giải \(\log_2(x-1)=\log_2(7-x)\); (b) giải \(\log_{\frac12}(x+1)\ge\log_{\frac12}4\); kiểm điều kiện lôgarit ở cả hai ý.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-(a) Điều kiện x>1, x<7; x−1=7−x ⇒ x=4 hợp lệ. (b) Điều kiện x+1>0 ⇒ x>−1. Do log cơ số 1/2 nghịch biến, x+1≤4 ⇒ x≤3, kết hợp −1<x≤3.
+(a) Điều kiện \(x>1,\ x<7\); \(x-1=7-x\Rightarrow x=4\) hợp lệ. (b) Điều kiện \(x+1>0\Rightarrow x>-1\). Do lôgarit cơ số \(\frac12\) nghịch biến, \(x+1\le4\Rightarrow x\le3\), kết hợp \(-1<x\le3\).
 
 **Rubric 4 điểm:**
 
-1. Viết đủ miền (1,7) ý a, tìm nghiệm x=4 — **1 điểm**.
-2. Kiểm x=4 hợp lệ và giải thích tính đơn ánh — **1 điểm**.
-3. Viết điều kiện x>−1 và lý do đảo chiều ý b — **1 điểm**.
-4. Kết luận −1<x≤3 không lấy x=−1 — **1 điểm**.
+1. Viết đủ miền \((1;7)\) ý a, tìm nghiệm \(x=4\) — **1 điểm**.
+2. Kiểm \(x=4\) hợp lệ và giải thích tính đơn ánh — **1 điểm**.
+3. Viết điều kiện \(x>-1\) và lý do đảo chiều ý b — **1 điểm**.
+4. Kết luận \(-1<x\le3\) không lấy \(x=-1\) — **1 điểm**.
 
 </details>
 
@@ -1734,17 +1734,17 @@ P(n)=200(1,08)^n triệu; P(3)=200·1,259712=251,9424 triệu. Lãi đơn sau 3 
 
 **Bài 72.**
 
-Mô hình P(n)=60(1,2)^n triệu đồng, n nguyên không âm. (a) Năm đầu tiên đạt ít nhất 103,68 triệu? (b) năm đầu tiên **vượt** 103,68 triệu? (c) giải thích sự khác biệt ≥ và > ở mốc n nguyên.
+Mô hình \(P(n)=60(1{,}2)^n\) triệu đồng, \(n\) nguyên không âm. (a) Năm đầu tiên đạt ít nhất 103,68 triệu? (b) năm đầu tiên **vượt** 103,68 triệu? (c) giải thích sự khác biệt \(\ge\) và \(>\) ở mốc \(n\) nguyên.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-1,2³=1,728 nên P(3)=103,68. Do cơ số >1, P(n) tăng; lần đầu đạt mức ≥ là n=3, lần đầu vượt nghiêm ngặt là n=4. n chỉ nhận 0,1,2,… nên không chọn số thực tùy ý để làm kết luận thời điểm cuối năm.
+\(1{,}2^3=1{,}728\) nên \(P(3)=103{,}68\). Do cơ số lớn hơn 1, \(P(n)\) tăng; lần đầu đạt mức ít nhất là \(n=3\), lần đầu vượt nghiêm ngặt là \(n=4\). \(n\) chỉ nhận \(0,1,2,\ldots\) nên không chọn số thực tùy ý để làm kết luận thời điểm cuối năm.
 
 **Rubric 4 điểm:**
 
 1. Thiết lập đúng bất đẳng thức với ngưỡng 103,68 — **1 điểm**.
-2. Tính đúng 1,2³=1,728 và P(3)=103,68 — **1 điểm**.
-3. Kết luận lần đầu ≥ ở n=3 và > ở n=4 — **1 điểm**.
+2. Tính đúng \(1{,}2^3=1{,}728\) và \(P(3)=103{,}68\) — **1 điểm**.
+3. Kết luận lần đầu đạt ít nhất ở \(n=3\) và vượt ở \(n=4\) — **1 điểm**.
 4. Giải thích cơ số tăng, dấu chặt và n nguyên không âm — **1 điểm**.
 
 </details>
@@ -1753,13 +1753,13 @@ Mô hình P(n)=60(1,2)^n triệu đồng, n nguyên không âm. (a) Năm đầu 
 
 **Bài 73.**
 
-Một quần thể giả định có 500 cá thể và giảm 20% sau mỗi chu kỳ, không có sinh nhập cư. Mô hình N(n)=500·0,8^n. Tính N(3) và diễn giải phạm vi mô hình.
+Một quần thể giả định có 500 cá thể và giảm 20% sau mỗi chu kỳ, không có sinh nhập cư. Mô hình \(N(n)=500\cdot0{,}8^n\). Tính \(N(3)\) và diễn giải phạm vi mô hình.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** N(3)=256 cá thể **theo mô hình giảm cố định 20% mỗi chu kỳ**; đây là kết quả của công thức đã cho, không phải một kỳ vọng xác suất. Số lượng ngoài thực tế có thể khác khi các giả thiết của mô hình không còn đúng.
+**Đáp án:** \(N(3)=256\) cá thể **theo mô hình giảm cố định 20% mỗi chu kỳ**; đây là kết quả của công thức đã cho, không phải một kỳ vọng xác suất. Số lượng ngoài thực tế có thể khác khi các giả thiết của mô hình không còn đúng.
 
-Mỗi chu kỳ nhân 1−0,2=0,8; ba chu kỳ 500·(4/5)³=500·64/125=256. Mô hình nhân cố định chỉ là giả thiết, không tính các biến cố ngẫu nhiên.
+Mỗi chu kỳ nhân \(1-0{,}2=0{,}8\); ba chu kỳ \(500\cdot\left(\frac45\right)^3=500\cdot\frac{64}{125}=256\). Mô hình nhân cố định chỉ là giả thiết, không tính các biến cố ngẫu nhiên.
 
 </details>
 
@@ -1767,13 +1767,13 @@ Mỗi chu kỳ nhân 1−0,2=0,8; ba chu kỳ 500·(4/5)³=500·64/125=256. Mô 
 
 **Bài 74.**
 
-Giải log₂(x²−1)=log₂(3x+3), bắt buộc ghi miền hai đối số trước khi biến đổi.
+Giải \(\log_2(x^2-1)=\log_2(3x+3)\), bắt buộc ghi miền hai đối số trước khi biến đổi.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={4}.
+**Đáp án:** \(S=\{4\}\).
 
-ĐK x²−1>0 (x<−1 hoặc x>1) và 3x+3>0 (x>−1), giao là x>1. Vì log₂ đơn ánh, x²−1=3x+3 ⇒ x²−3x−4=(x−4)(x+1)=0. Chỉ x=4 hợp miền, kiểm log₂15=log₂15.
+Điều kiện \(x^2-1>0\) (\(x<-1\) hoặc \(x>1\)) và \(3x+3>0\) (\(x>-1\)), giao là \(x>1\). Vì \(\log_2\) đơn ánh, \(x^2-1=3x+3\Rightarrow x^2-3x-4=(x-4)(x+1)=0\). Chỉ \(x=4\) hợp miền, kiểm \(\log_2 15=\log_2 15\).
 
 </details>
 
@@ -1785,13 +1785,13 @@ Một khoản vốn giả định 100 triệu đồng tăng 8% mỗi năm, nhậ
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** Năm đầu tiên là n=3; n=2 có 116,64 triệu, n=3 có 125,9712 triệu.
+**Đáp án:** Năm đầu tiên là \(n=3\); \(n=2\) có 116,64 triệu, \(n=3\) có 125,9712 triệu.
 
-P(n)=100·(1,08)^n triệu. Cần (1,08)^n>1,25 ⇒ n>ln(1,25)/ln(1,08)≈2,8994 vì ln(1,08)>0. Do n nguyên không âm, nhỏ nhất n=3. Kiểm P(2)=100·1,1664=116,64<125, P(3)=100·1,259712=125,9712>125. Mô hình cố định 8%, bỏ qua phí/rủi ro.
+\(P(n)=100\cdot(1{,}08)^n\) triệu. Cần \((1{,}08)^n>1{,}25\Rightarrow n>\frac{\ln(1{,}25)}{\ln(1{,}08)}\approx2{,}8994\) vì \(\ln(1{,}08)>0\). Do \(n\) nguyên không âm, nhỏ nhất \(n=3\). Kiểm \(P(2)=100\cdot1{,}1664=116{,}64<125\), \(P(3)=100\cdot1{,}259712=125{,}9712>125\). Mô hình cố định 8%, bỏ qua phí/rủi ro.
 
 **Rubric tự đối chiếu:**
 
-7 điểm: mô hình tăng trưởng và đơn vị đúng (2đ); lập bất đẳng thức ‘lớn hơn’ đúng (1đ); dùng log đổi chiều đúng và tính ngưỡng n>2,899… (2đ); chọn n=3 là năm nguyên nhỏ nhất (1đ); kiểm P(2), P(3) và kết luận (1đ).
+7 điểm: mô hình tăng trưởng và đơn vị đúng (2đ); lập bất đẳng thức ‘lớn hơn’ đúng (1đ); dùng lôgarit xác định đúng chiều bất đẳng thức và tính ngưỡng \(n>2{,}899\ldots\) (2đ); chọn \(n=3\) là năm nguyên nhỏ nhất (1đ); kiểm \(P(2),P(3)\) và kết luận (1đ).
 
 </details>
 
@@ -1801,67 +1801,67 @@ Hãy tự làm đủ 18 câu trước khi xem lại lời giải. Đây là các
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B18-C01; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O01; NO_MASTERY; NOT_RD1 -->
 
-**Câu 1.** Tại sao (2/5)^(-2) không phải số âm? Tính giá trị.
+**Câu 1.** Tại sao \(\left(\frac25\right)^{-2}\) không phải số âm? Tính giá trị.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B18-C02; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O02; NO_MASTERY; NOT_RD1 -->
 
-**Câu 2.** Giải thích ý nghĩa của 81^(3/4) và tính kết quả.
+**Câu 2.** Giải thích ý nghĩa của \(81^{\frac34}\) và tính kết quả.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B18-C04; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O03; NO_MASTERY; NOT_RD1 -->
 
-**Câu 3.** Một bạn nói: “2^(√2) không có nghĩa, vì √2 không thể đếm số lần nhân 2”. Em giải thích bạn đang hiểu sai điều gì và mô tả cách số này được hình thành.
+**Câu 3.** Một bạn nói: “\(2^{\sqrt2}\) không có nghĩa, vì \(\sqrt2\) không thể đếm số lần nhân 2”. Em giải thích bạn đang hiểu sai điều gì và mô tả cách số này được hình thành.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B18-P01; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O04; NO_MASTERY; NOT_RD1 -->
 
-**Câu 4.** Với a>0, rút gọn a^(-1/2)·a^(3/2).
+**Câu 4.** Với \(a>0\), rút gọn \(a^{-\frac12}\cdot a^{\frac32}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B19-C01; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O05; NO_MASTERY; NOT_RD1 -->
 
-**Câu 5.** log₅125 là số nào và vì sao?
+**Câu 5.** \(\log_5 125\) là số nào và vì sao?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B19-C03; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O06; NO_MASTERY; NOT_RD1 -->
 
-**Câu 6.** log₂(−4) có nghĩa trong ℝ không?
+**Câu 6.** \(\log_2(-4)\) có nghĩa trong \(\mathbb R\) không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B19-P01; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O07; NO_MASTERY; NOT_RD1 -->
 
-**Câu 7.** Tính log₃(81/3), chỉ rõ điều kiện dùng quy tắc thương.
+**Câu 7.** Tính \(\log_3\frac{81}{3}\), chỉ rõ điều kiện dùng quy tắc thương.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B19-P05; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O08; NO_MASTERY; NOT_RD1 -->
 
-**Câu 8.** Viết log₂7 theo lôgarit tự nhiên và nêu điều kiện cơ số.
+**Câu 8.** Viết \(\log_2 7\) theo lôgarit tự nhiên và nêu điều kiện cơ số.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B20-C01; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O09; NO_MASTERY; NOT_RD1 -->
 
-**Câu 9.** Hàm f(x)=5^x có TXĐ, tập giá trị và điểm cắt trục tung là gì?
+**Câu 9.** Hàm \(f(x)=5^x\) có tập xác định, tập giá trị và điểm cắt trục tung là gì?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B20-C02; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O10; NO_MASTERY; NOT_RD1 -->
 
-**Câu 10.** Hàm (1/5)^x đồng biến hay nghịch biến và tại sao?
+**Câu 10.** Hàm \(\left(\frac15\right)^x\) đồng biến hay nghịch biến và tại sao?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B20-C03; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O11; NO_MASTERY; NOT_RD1 -->
 
-**Câu 11.** Hàm g(x)=log₃(x−2) xác định khi nào?
+**Câu 11.** Hàm \(g(x)=\log_3(x-2)\) xác định khi nào?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B20-C04; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O12; NO_MASTERY; NOT_RD1 -->
 
-**Câu 12.** Nếu y=3^x đi qua (3,27), đồ thị y=log₃x có điểm nào tương ứng?
+**Câu 12.** Nếu \(y=3^x\) đi qua \((3;27)\), đồ thị \(y=\log_3 x\) có điểm nào tương ứng?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B21-C01; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O13; NO_MASTERY; NOT_RD1 -->
 
-**Câu 13.** Giải 2^(x+1)=16.
+**Câu 13.** Giải \(2^{x+1}=16\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B21-C02; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O14; NO_MASTERY; NOT_RD1 -->
 
-**Câu 14.** Giải log₃(x−2)=2 kèm điều kiện xác định.
+**Câu 14.** Giải \(\log_3(x-2)=2\) kèm điều kiện xác định.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B21-C03; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O15; NO_MASTERY; NOT_RD1 -->
 
-**Câu 15.** Giải (1/2)^x>(1/2)^2.
+**Câu 15.** Giải \(\left(\frac12\right)^x>\left(\frac12\right)^2\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B21-C04; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O16; NO_MASTERY; NOT_RD1 -->
 
-**Câu 16.** Giải log₂(x−1)≥log₂3.
+**Câu 16.** Giải \(\log_2(x-1)\ge\log_2 3\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B18-P05; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O17; NO_MASTERY; NOT_RD1 -->
 
@@ -1869,7 +1869,7 @@ Hãy tự làm đủ 18 câu trước khi xem lại lời giải. Đây là các
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B21-P05; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O18; NO_MASTERY; NOT_RD1 -->
 
-**Câu 18.** Giải log₃(x−4)=log₃(2−x) trên ℝ.
+**Câu 18.** Giải \(\log_3(x-4)=\log_3(2-x)\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
