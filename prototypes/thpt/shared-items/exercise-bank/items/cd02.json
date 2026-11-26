@@ -14,7 +14,7 @@
     "hints": [
       "Khai triển, gom x về một vế; kiểm dấu của hệ số khi chia."
     ],
-    "remediation": "Nếu quên đảo dấu, thử x=−2 và x=0 trong đề gốc để phát hiện mâu thuẫn. Ôn TOP02-M01; làm lại từ bước chia cho −6.",
+    "remediation": "Nếu quên đảo dấu, thử \\(x=-2\\) và \\(x=0\\) trong đề gốc để phát hiện mâu thuẫn. Ôn TOP02-M01; làm lại từ bước chia cho số âm \\(-6\\).",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -49,7 +49,7 @@
     "hints": [
       "Viết vế trái thành bình phương của một nhị thức."
     ],
-    "remediation": "Nếu khẳng định bình phương luôn dương, thử x=3; tách dấu ≥ và dấu >. Ôn TOP02-M01; luyện THPT-TOP02-ADD07.",
+    "remediation": "Nếu khẳng định bình phương luôn dương, thử \\(x=3\\); phân biệt không âm và dương. Ôn TOP02-M01; luyện THPT-TOP02-ADD07.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -82,9 +82,9 @@
     "problem_type_id": "TOP02-O02-FAM-ADD03",
     "difficulty": "Thông hiểu",
     "hints": [
-      "Tính Δ rồi dùng công thức nghiệm với mẫu 2a; kiểm bằng phép nhân."
+      "Tính \\(\\Delta\\) rồi dùng công thức nghiệm với mẫu \\(2a\\); kiểm bằng phép nhân."
     ],
-    "remediation": "Nếu sai mẫu công thức nghiệm, viết riêng a,b,c, Δ và 2a; thế hai nghiệm vào tam thức rồi nhân lại nhân tử. Ôn TOP02-M02; luyện THPT-TOP02-ADD04.",
+    "remediation": "Nếu sai mẫu công thức nghiệm, viết riêng a, b, c, \\(\\Delta\\) và \\(2a\\); thế hai nghiệm vào tam thức rồi nhân lại các nhân tử. Ôn TOP02-M02; luyện THPT-TOP02-ADD04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -109,7 +109,7 @@
     "content_version": "TOP02-BANK-CP77-20261126-ADD04",
     "stem": "Tam thức \\(f(x)=x^2+6x+9\\) có bao nhiêu nghiệm phân biệt và \\(\\Delta\\) bằng bao nhiêu?",
     "answer_key": "\\(\\Delta=0\\); một nghiệm kép \\(x=-3\\).",
-    "worked_solution": "\\(\\Delta=36-4\\cdot1\\cdot9=0\\); \\(f(x)=(x+3)^2\\). Tam thức chạm trục Ox tại \\(-3\\), không đi xuyên qua trục.",
+    "worked_solution": "\\(\\Delta=36-4\\cdot1\\cdot9=0\\) và \\(f(x)=(x+3)^2\\). Phương trình \\(f(x)=0\\) có một nghiệm thực phân biệt \\(x=-3\\) (nghiệm kép). Đồ thị tiếp xúc trục hoành tại \\((-3;0)\\), không đi xuyên qua trục.",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP02-O02"
@@ -117,9 +117,9 @@
     "problem_type_id": "TOP02-O02-FAM-ADD04",
     "difficulty": "Thông hiểu",
     "hints": [
-      "So sánh Δ với 0; phân biệt nghiệm kép và hai nghiệm phân biệt."
+      "So sánh \\(\\Delta\\) với 0; phân biệt nghiệm kép và hai nghiệm phân biệt."
     ],
-    "remediation": "Nếu đếm nghiệm kép thành hai nghiệm phân biệt, viết (x+3)²=0 và liệt kê tập nghiệm. Ôn TOP02-M02; luyện THPT-TOP02-ADD07.",
+    "remediation": "Nếu đếm nghiệm kép thành hai nghiệm phân biệt, viết \\((x+3)^2=0\\) và liệt kê tập nghiệm. Ôn TOP02-M02; luyện THPT-TOP02-ADD07.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -156,7 +156,7 @@
     "hints": [
       "Thử hoàn thành bình phương, rồi kiểm hằng số còn lại."
     ],
-    "remediation": "Nếu nhầm Δ<0 với tam thức luôn âm, kiểm dấu a và giá trị tại x=1. Ôn TOP02-M03; luyện THPT-TOP02-ADD06.",
+    "remediation": "Nếu nhầm \\(\\Delta<0\\) với tam thức luôn âm, kiểm dấu a và giá trị tại \\(x=1\\). Ôn TOP02-M03; luyện THPT-TOP02-ADD06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -193,7 +193,7 @@
     "hints": [
       "Đặt dấu trừ trước bình phương và kiểm giá trị lớn nhất."
     ],
-    "remediation": "Nếu quên hệ số đầu âm, viết lại dưới dạng −2(x−1)²−3 rồi xác định cận trên. Ôn TOP02-M03; luyện THPT-TOP02-ADD05.",
+    "remediation": "Nếu quên hệ số đầu âm, viết lại dưới dạng \\(-2(x-1)^2-3\\) rồi xác định cận trên. Ôn TOP02-M03; luyện THPT-TOP02-ADD05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -230,7 +230,7 @@
     "hints": [
       "Bình phương bằng 0 khi nào? Hệ số 3 có làm đổi dấu không?"
     ],
-    "remediation": "Nếu bỏ nghiệm kép khi mô tả dấu, xét riêng x=2 và x≠2; kiểm giá trị 0. Ôn TOP02-M04; luyện THPT-TOP02-ADD08.",
+    "remediation": "Nếu bỏ nghiệm kép khi mô tả dấu, xét riêng \\(x=2\\) và \\(x\\ne2\\); kiểm giá trị 0. Ôn TOP02-M04; luyện THPT-TOP02-ADD08.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -267,7 +267,7 @@
     "hints": [
       "Bình phương không âm; dấu trừ phía trước thay đổi dấu thế nào?"
     ],
-    "remediation": "Nếu cho rằng đồ thị đổi dấu qua nghiệm kép, thử x=−2 và x=0 hai phía của −1. Ôn TOP02-M04; luyện THPT-TOP02-ADD07.",
+    "remediation": "Nếu cho rằng đồ thị đổi dấu qua nghiệm kép, thử \\(x=-2\\) và \\(x=0\\) ở hai phía của \\(-1\\). Ôn TOP02-M04; luyện THPT-TOP02-ADD07.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -304,7 +304,7 @@
     "hints": [
       "Phân tích thành nhân tử; chia trục số tại hai nghiệm và thử mỗi khoảng."
     ],
-    "remediation": "Nếu đảo dấu ngoài/trong hai nghiệm, thử x=0,2,4 và ghi ba dấu; tại nghiệm ghi 0. Ôn TOP02-M05; luyện THPT-TOP02-ADD10.",
+    "remediation": "Nếu đảo dấu ngoài/trong hai nghiệm, thử x lần lượt bằng 0, 2, 4 và ghi ba dấu; tại mỗi nghiệm ghi 0. Ôn TOP02-M05; luyện THPT-TOP02-ADD10.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -340,9 +340,9 @@
     "problem_type_id": "TOP02-O05-FAM-ADD10",
     "difficulty": "Thông hiểu",
     "hints": [
-      "Tìm nghiệm, xét hệ số đầu âm và điều kiện dấu >."
+      "Tìm nghiệm, xét hệ số đầu âm và điều kiện tam thức dương nghiêm ngặt."
     ],
-    "remediation": "Nếu lấy miền ngoài khi a âm, thử x=0 và x=4; kiểm dấu > loại nghiệm. Ôn TOP02-M05; luyện THPT-TOP02-ADD09.",
+    "remediation": "Nếu lấy miền ngoài khi a âm, thử \\(x=0\\) và \\(x=4\\); dấu \\(>0\\) không nhận nghiệm của tam thức. Ôn TOP02-M05; luyện THPT-TOP02-ADD09.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -379,7 +379,7 @@
     "hints": [
       "Tìm hai nghiệm; chọn khoảng có tích âm và kiểm đầu mút."
     ],
-    "remediation": "Nếu lấy cả đầu mút với dấu <, thay x=3 và 4 để kiểm 0<0. Ôn TOP02-M06; luyện THPT-TOP02-ADD12.",
+    "remediation": "Nếu lấy cả đầu mút với bất phương trình nghiêm ngặt, thay \\(x=3\\) và \\(x=4\\) để thấy \\(0<0\\) sai. Ôn TOP02-M06; luyện THPT-TOP02-ADD12.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -414,9 +414,9 @@
     "problem_type_id": "TOP02-O06-FAM-ADD12",
     "difficulty": "Vận dụng",
     "hints": [
-      "Đưa dấu trừ ra ngoài; nếu nhân cả hai vế với −1, đảo chiều."
+      "Đưa dấu trừ ra ngoài; nếu nhân cả hai vế với \\(-1\\), đảo chiều."
     ],
-    "remediation": "Nếu quên đảo dấu khi nhân −1, viết hai bất phương trình tương đương và thử x=5/2. Ôn TOP02-M06; luyện THPT-TOP02-ADD11.",
+    "remediation": "Nếu quên đảo dấu khi nhân với \\(-1\\), viết hai bất phương trình tương đương và thử \\(x=\\frac52\\). Ôn TOP02-M06; luyện THPT-TOP02-ADD11.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -451,9 +451,9 @@
     "problem_type_id": "TOP02-O07-FAM-ADD13",
     "difficulty": "Vận dụng",
     "hints": [
-      "Với a=1, giá trị nhỏ nhất bằng 9−m². Cần lớn hơn 0."
+      "Vì \\(a=1\\), giá trị nhỏ nhất là \\(9-m^2\\). Cần giá trị đó lớn hơn 0."
     ],
-    "remediation": "Nếu nhận |m|=3, thế m=3 và x=3 để thấy giá trị bằng 0. Ôn TOP02-M07; luyện THPT-TOP02-ADD14.",
+    "remediation": "Nếu nhận \\(|m|=3\\), thế \\(m=3\\) và \\(x=3\\) để thấy giá trị bằng 0. Ôn TOP02-M07; luyện THPT-TOP02-ADD14.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -488,9 +488,9 @@
     "problem_type_id": "TOP02-O07-FAM-ADD14",
     "difficulty": "Vận dụng",
     "hints": [
-      "Với a=1, giá trị nhỏ nhất bằng 4−m². Cần không âm."
+      "Vì \\(a=1\\), giá trị nhỏ nhất là \\(4-m^2\\). Cần giá trị đó không âm."
     ],
-    "remediation": "Nếu loại |m|=2, thử m=2 và x=2: dấu bằng được phép. Ôn TOP02-M07; luyện THPT-TOP02-ADD13.",
+    "remediation": "Nếu loại \\(|m|=2\\), thử \\(m=2\\) và \\(x=2\\): dấu bằng được phép. Ôn TOP02-M07; luyện THPT-TOP02-ADD13.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -527,7 +527,7 @@
     "hints": [
       "Lập diện tích, giải bất phương trình rồi giao với miền độ dài."
     ],
-    "remediation": "Nếu quên miền vật lý, giao nghiệm bất phương trình với 0<x<12; thử hai biên 5 và 7. Ôn TOP02-M08; luyện THPT-TOP02-ADD16.",
+    "remediation": "Nếu quên miền vật lý, giao nghiệm bất phương trình với \\(0<x<12\\); thử hai biên 5 và 7. Ôn TOP02-M08; luyện THPT-TOP02-ADD16.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -562,9 +562,9 @@
     "problem_type_id": "TOP02-O08-FAM-ADD16",
     "difficulty": "Vận dụng",
     "hints": [
-      "Chuyển 16 sang vế trái, phân tích nhân tử rồi kiểm t≥0."
+      "Chuyển 16 sang vế trái, phân tích nhân tử rồi kiểm \\(t\\ge0\\)."
     ],
-    "remediation": "Nếu nhận thời gian âm hoặc đảo dấu sai, ghi t≥0 trước khi giải; thử t=1,2,3 vào mô hình. Ôn TOP02-M08; luyện THPT-TOP02-ADD15.",
+    "remediation": "Nếu nhận thời gian âm hoặc đảo dấu sai, ghi \\(t\\ge0\\) trước khi giải; thử t lần lượt bằng 1, 2, 3 vào mô hình. Ôn TOP02-M08; luyện THPT-TOP02-ADD15.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -602,7 +602,7 @@
     "hints": [
       "Một hệ số có thể bằng 0; thử hai điểm có tung độ khác nhau."
     ],
-    "remediation": "Nếu đòi cả hai hệ số khác 0, kiểm định nghĩa (a,b)≠(0,0) rồi thử y=3 và y=1. Ôn TOP02-M09; luyện THPT-G10-B03-C01.",
+    "remediation": "Nếu đòi cả hai hệ số khác 0, kiểm định nghĩa \\((a;b)\\ne(0;0)\\) rồi thử \\(y=3\\) và \\(y=1\\). Ôn TOP02-M09; luyện THPT-G10-B03-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -627,7 +627,7 @@
     "content_version": "TOP02-BANK-CP77-20261126-ADD18",
     "stem": "Với x, y nguyên không âm thỏa \\(x+2y\\le7,\\ 2x+y\\le7\\), tối đa hóa \\(P=3x+2y\\). So sánh với tối ưu liên tục.",
     "answer_key": "Tối ưu nguyên \\(P=11\\) tại \\((x;y)=(3;1)\\); tối ưu liên tục \\(\\frac{35}{3}\\) tại \\((\\frac73;\\frac73)\\).",
-    "worked_solution": "Miền thực có các đỉnh \\((0;0),(\\frac72;0),(\\frac73;\\frac73),(0;\\frac72)\\); P lần lượt bằng \\(0,\\frac{21}2,\\frac{35}3,7\\). Vì miền là đa giác kín bị chặn, GTLN thực là \\(\\frac{35}3\\). Nếu x, y nguyên thì P nguyên, nên \\(P\\le11\\). Điểm \\((3;1)\\) thỏa \\(x+2y=5\\le7,\\ 2x+y=7\\le7\\) và \\(P=11\\), đạt cận. Vậy GTLN nguyên là 11. Không làm tròn tọa độ mà bỏ kiểm ràng buộc; chẳng hạn \\((3;3)\\) không khả thi.",
+    "worked_solution": "Miền thực có các đỉnh \\((0;0),(\\frac72;0),(\\frac73;\\frac73),(0;\\frac72)\\); P lần lượt bằng \\(0,\\frac{21}2,\\frac{35}3,7\\). Vì miền là đa giác kín bị chặn và P là hàm tuyến tính, giá trị lớn nhất đạt tại ít nhất một đỉnh, bằng \\(\\frac{35}3\\). Nếu x, y nguyên thì P nguyên, nên \\(P\\le11\\). Điểm \\((3;1)\\) thỏa \\(x+2y=5\\le7\\), \\(2x+y=7\\le7\\) và \\(P=11\\), đạt cận. Vậy giá trị lớn nhất nguyên là 11. Không làm tròn tọa độ rồi bỏ kiểm ràng buộc; chẳng hạn \\((3;3)\\) không khả thi.",
     "skill_ids": [
       "G10-B04-INTEGER_MODELS",
       "G10-B04-LINEAR_OBJECTIVE"
