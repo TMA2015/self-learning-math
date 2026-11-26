@@ -214,7 +214,7 @@ Hợp lực dùng **cộng vectơ lực**, còn công dùng **tích vô hướng
 
 ## 2. Làm quen hệ tọa độ Oxyz
 
-**Từ mũi tên đến vị trí thật.** Hãy theo dõi một chiếc drone đang bay trong kho: nếu gốc O đặt ở một góc nhà, ta chọn Ox hướng Đông, Oy hướng Bắc, Oz hướng lên. Drone bắt đầu ở **A=(1;1;2)** (m). Thay vì mô tả “hơi lệch sang phải và khá cao”, ba tọa độ cho biết chính xác ba độ dời có dấu. Đến cuối chuyên đề, chính drone này sẽ giúp ta nối vectơ vận tốc, phương trình đường bay, mặt phẳng và hình cầu trong một bài toán.
+**Từ mũi tên đến vị trí thật.** Hãy theo dõi một chiếc drone đang bay trong kho: nếu gốc O đặt ở một góc nhà, ta chọn Ox hướng Đông, Oy hướng Bắc, Oz hướng lên. Drone bắt đầu ở **\(A=(1;1;2)\)** (m). Thay vì mô tả “hơi lệch sang phải và khá cao”, ba tọa độ cho biết chính xác ba độ dời có dấu. Đến cuối chuyên đề, chính drone này sẽ giúp ta nối vectơ vận tốc, phương trình đường bay, mặt phẳng và hình cầu trong một bài toán.
 
 **Tự quan sát trước công thức:** Trong mô hình công khai phía dưới, giữ x,y cố định và chỉ kéo z. Điểm M thay đổi độ cao nhưng chân H chiếu xuống mặt Oxy vẫn có tọa độ (x;y;0). Đây là ý nghĩa cụ thể của hình chiếu vuông góc, không phải một công thức cần thuộc lòng trước khi hiểu.
 
@@ -225,7 +225,7 @@ Hợp lực dùng **cộng vectơ lực**, còn công dùng **tích vô hướng
 
 ![Ba trục Oxyz và điểm M(2;1;3) với đường dẫn hình chiếu](../../../../docs/assets/images/thpt/FIG-G12-CHII-B07-R00.svg)
 
-**Đọc hình:** Tìm O và ba trục x,y,z, rồi đọc M(2;1;3). Các nét đứt chỉ dẫn từ M xuống mặt Oxy: tọa độ z là độ cao theo trục chứ không phải độ dài đo trên giấy.
+**Đọc hình:** Tìm O và ba trục x,y,z, rồi đọc \(M(2;1;3)\). Các nét đứt chỉ dẫn từ M xuống mặt Oxy: tọa độ z là độ cao theo trục chứ không phải độ dài đo trên giấy.
 
 ### 2.1. Hệ trục và các mặt tọa độ
 
@@ -246,7 +246,7 @@ Ba trục Ox,Oy,Oz vuông góc đôi một giúp định vị một điểm tron
 
 **Vận dụng**
 
-Điểm M=(2,−1,0) thuộc mặt phẳng tọa độ nào?
+Điểm \(M=(2;-1;0)\) thuộc mặt phẳng tọa độ nào?
 
 <!-- ITEM_ID: THPT-TOP18-T07; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O07 -->
 
@@ -273,19 +273,19 @@ Tọa độ của một điểm là ba số xác định vị trí so với gố
 
 **Ví dụ**
 
-**Đề bài:** Điểm M(2;−1;3). Viết tọa độ OM và giải thích ảnh hưởng của đổi gốc.
+**Đề bài:** Điểm \(M(2;-1;3)\). Viết tọa độ OM và giải thích ảnh hưởng của đổi gốc.
 
-**Lời giải:** M=(2,−1,3) thì vectơ OM=(2,−1,3). Nhưng chuyển gốc tọa độ sẽ đổi tọa độ điểm M, còn độ dời của một vectơ tự do không đổi trong các trục cùng hướng.
+**Lời giải:** \(M=(2;-1;3)\) thì vectơ \(OM=(2;-1;3)\). Nhưng chuyển gốc tọa độ sẽ đổi tọa độ điểm M, còn độ dời của một vectơ tự do không đổi trong các trục cùng hướng.
 
 **Vận dụng**
 
-Điểm M(1,2,3), tọa độ vectơ OM?
+Điểm \(M(1;2;3)\), tọa độ vectơ OM?
 
 <!-- ITEM_ID: THPT-TOP18-T08; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O08 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(1,2,3) trong cùng hệ Oxyz.
+\((1;2;3)\) trong cùng hệ Oxyz.
 
 **Kiểm lỗi**
 
@@ -306,13 +306,13 @@ Tọa độ OM bằng tọa độ M chỉ khi O là gốc của cùng hệ; khô
 
 **Ví dụ**
 
-**Đề bài:** Chọn Ox Đông, Oy Bắc, Oz hướng lên. Đèn ở (2;−1;3) m nằm về hướng nào?
+**Đề bài:** Chọn Ox Đông, Oy Bắc, Oz hướng lên. Đèn ở \((2;-1;3)\) m nằm về hướng nào?
 
-**Lời giải:** Chọn O ở góc nhà, Ox hướng Đông, Oy hướng Bắc, Oz hướng lên. Một đèn ở (2,−1,3) m nằm lệch 1 m về Nam và cao 3 m; không phải thấp hơn sàn.
+**Lời giải:** Chọn O ở góc nhà, Ox hướng Đông, Oy hướng Bắc, Oz hướng lên. Một đèn ở \((2;-1;3)\) m nằm lệch 1 m về Nam và cao 3 m; không phải thấp hơn sàn.
 
 **Vận dụng**
 
-Trong hệ Ox Đông, Oy Bắc, Oz lên, N=(−4,3,2) m nằm về phía nào của O?
+Trong hệ Ox Đông, Oy Bắc, Oz lên, \(N=(-4;3;2)\) m nằm về phía nào của O?
 
 <!-- ITEM_ID: THPT-TOP18-T09; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O09 -->
 
@@ -339,19 +339,19 @@ Vectơ từ A đến B được tính bằng cuối trừ đầu theo từng tr�
 
 **Ví dụ**
 
-**Đề bài:** Cho hai điểm A(1;2;−1) và B(4;−2;3) trong cùng hệ Oxyz. Tính vectơ độ dời từ A đến B, rồi kiểm bằng cộng tọa độ.
+**Đề bài:** Cho hai điểm \(A(1;2;-1)\) và \(B(4;-2;3)\) trong cùng hệ Oxyz. Tính vectơ độ dời từ A đến B, rồi kiểm bằng cộng tọa độ.
 
-**Lời giải:** A=(1,2,−1), B=(4,−2,3) cho AB=(3,−4,4). Kiểm bằng A+AB=B theo từng thành phần. Ta lấy từng tọa độ điểm cuối trừ điểm đầu: (4−1;−2−2;3−(−1))=(3;−4;4). Lấy A cộng độ dời thu lại đúng B, nên không bị đảo dấu.
+**Lời giải:** \(A=(1;2;-1)\), \(B=(4;-2;3)\) cho \(AB=(3;-4;4)\). Kiểm bằng A+AB=B theo từng thành phần. Ta lấy từng tọa độ điểm cuối trừ điểm đầu: (4−1;−2−2;3−(−1))=\((3;-4;4)\). Lấy A cộng độ dời thu lại đúng B, nên không bị đảo dấu.
 
 **Vận dụng**
 
-A=(2,0,−1), B=(5,−2,3). Tính vectơ AB.
+\(A=(2;0;-1)\), \(B=(5;-2;3)\). Tính vectơ AB.
 
 <!-- ITEM_ID: THPT-TOP18-T10; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O10 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(3,−2,4).
+\((3;-2;4)\).
 
 **Kiểm lỗi**
 
@@ -361,7 +361,7 @@ Vectơ từ A tới B là B−A, không phải A−B; kiểm lại bằng phép 
 
 ## 3. Phép toán tọa độ và khoảng cách
 
-**Khi điểm bắt đầu chuyển động.** Drone từ A=(1;1;2) m, mỗi giây tiến **1 m theo Ox, 0 m theo Oy và 1 m theo Oz**. Ta ghi vectơ vận tốc v=(1;0;1) m/s: cùng một vectơ cho biết *hướng và tốc độ theo từng trục*. Sau t giây, vị trí trở thành M(t)=(1+t;1;2+t). Chỉ cần thử t=0 và t=1 là kiểm được: drone từ A tới (2;1;3), thay đổi (1;0;1). Nhờ vậy, phép cộng vectơ không còn là một bảng quy tắc rời rạc.
+**Khi điểm bắt đầu chuyển động.** Drone từ \(A=(1;1;2)\) m, mỗi giây tiến **1 m theo Ox, 0 m theo Oy và 1 m theo Oz**. Ta ghi vectơ vận tốc v=(1;0;1) m/s: cùng một vectơ cho biết *hướng và tốc độ theo từng trục*. Sau t giây, vị trí trở thành M(t)=(1+t;1;2+t). Chỉ cần thử t=0 và t=1 là kiểm được: drone từ A tới \((2;1;3)\), thay đổi \((1;0;1)\). Nhờ vậy, phép cộng vectơ không còn là một bảng quy tắc rời rạc.
 
 
 ![Độ dời từ A đến B phân tích theo Δx, Δy, Δz](../../../../docs/assets/images/thpt/FIG-G12-CHII-B08-R00.svg)
@@ -383,7 +383,7 @@ Phép cộng, trừ và nhân số trên vectơ trong ba trục vuông góc th�
 
 **Đề bài:** Hai vectơ u=(1;2;−1), v=(−2;0;3) được cho theo ba trục Oxyz. Tính u+v và tổ hợp 2u−v.
 
-**Lời giải:** u=(1,2,−1), v=(−2,0,3) thì u+v=(−1,2,2); 2u−v=(4,4,−5). Mỗi phép cộng và trừ xử lý từng thành phần. Cộng theo tọa độ cho (1−2;2+0;−1+3)=(−1;2;2). Với 2u−v, tính 2u=(2;4;−2) rồi trừ v được (4;4;−5).
+**Lời giải:** u=(1,2,−1), v=(−2,0,3) thì u+v=(−1,2,2); 2u−v=(4,4,−5). Mỗi phép cộng và trừ xử lý từng thành phần. Cộng theo tọa độ cho (1−2;2+0;−1+3)=\((-1;2;2)\). Với 2u−v, tính 2u=\((2;4;-2)\) rồi trừ v được \((4;4;-5)\).
 
 **Vận dụng**
 
@@ -393,7 +393,7 @@ u=(1,−2,3), v=(2,0,−1); u+v?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(3,−2,2).
+\((3;-2;2)\).
 
 **Kiểm lỗi**
 
@@ -546,19 +546,19 @@ Mô hình chuyển động thẳng đều có vị trí M(t)=M0+t·v, ba tọa �
 
 **Ví dụ**
 
-**Đề bài:** Drone tại A=(0;0;5) m bay theo v=(2;−1;0) m/s. Sau 3 giây ở đâu?
+**Đề bài:** Drone tại \(A=(0;0;5)\) m bay theo v=(2;−1;0) m/s. Sau 3 giây ở đâu?
 
-**Lời giải:** Drone xuất phát A=(0,0,5) m, v=(2,−1,0) m/s. Sau 3 s, ở (6,−3,5) m: cao độ không đổi. Theo công thức vị trí A+t v, ba thành phần là (0+3·2;0+3·(−1);5+3·0)=(6;−3;5). Đơn vị mét khớp vì v tính bằng m/s và thời gian tính bằng giây.
+**Lời giải:** Drone xuất phát \(A=(0;0;5)\) m, v=(2,−1,0) m/s. Sau 3 s, ở \((6;-3;5)\) m: cao độ không đổi. Theo công thức vị trí A+t v, ba thành phần là (0+3·2;0+3·(−1);5+3·0)=\((6;-3;5)\). Đơn vị mét khớp vì v tính bằng m/s và thời gian tính bằng giây.
 
 **Vận dụng**
 
-M0=(1,0,2), v=(0,3,−1), t=2. Tọa độ M(2)?
+M0=\((1;0;2)\), v=(0,3,−1), t=2. Tọa độ M(2)?
 
 <!-- ITEM_ID: THPT-TOP18-T16; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O16 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(1,6,0).
+\((1;6;0)\).
 
 **Kiểm lỗi**
 
@@ -569,7 +569,7 @@ Vị trí M(t)=M0+t·v chỉ đúng khi đơn vị thời gian phù hợp với 
 
 ## 4. Mặt phẳng trong Oxyz
 
-**Từ vị trí một vật đến cả một bức tường.** Ở chặng trước, ta biết drone sau t giây ở M(t)=(1+t;1;2+t). Bây giờ xét tấm chắn có phương trình **(P): x+y+z=6**. Phương trình không cho một điểm đơn lẻ: bất cứ điểm nào có tổng ba tọa độ bằng 6 đều nằm trên tấm chắn ấy. Vectơ n=(1;1;1) vuông góc với mặt, nên được gọi là *pháp tuyến*. Hãy thử thế M(0)=(1;1;2): tổng là 4, chưa thuộc tấm chắn. Bao giờ tổng đạt 6? Ta sẽ tìm ngay khi học phương trình đường thẳng.
+**Từ vị trí một vật đến cả một bức tường.** Ở chặng trước, ta biết drone sau t giây ở M(t)=(1+t;1;2+t). Bây giờ xét tấm chắn có phương trình **(P): x+y+z=6**. Phương trình không cho một điểm đơn lẻ: bất cứ điểm nào có tổng ba tọa độ bằng 6 đều nằm trên tấm chắn ấy. Vectơ n=(1;1;1) vuông góc với mặt, nên được gọi là *pháp tuyến*. Hãy thử thế M(0)=\((1;1;2)\): tổng là 4, chưa thuộc tấm chắn. Bao giờ tổng đạt 6? Ta sẽ tìm ngay khi học phương trình đường thẳng.
 
 
 ![Mặt phẳng P: M₀, hai hướng u,v và pháp tuyến n](../../../../docs/assets/images/thpt/FIG-TOP18-B14-NORMAL-WHITE-R00.svg)
@@ -632,13 +632,13 @@ Một mặt phẳng là tập các điểm M có độ dời từ điểm M0 n�
 
 **Ví dụ**
 
-**Đề bài:** Qua M0=(1;0;−1) có n=(2;−1;3). Viết phương trình mặt và kiểm M0.
+**Đề bài:** Qua M0=\((1;0;-1)\) có n=(2;−1;3). Viết phương trình mặt và kiểm M0.
 
-**Lời giải:** M0=(1,0,−1),n=(2,−1,3). Thay vào 2(x−1)−(y−0)+3(z+1)=0, thu 2x−y+3z+1=0. Thử điểm M0: 2−3+1=0. Thử lại điểm M0 giúp phát hiện lỗi hệ số tự do.
+**Lời giải:** M0=\((1;0;-1)\),n=(2,−1,3). Thay vào 2(x−1)−(y−0)+3(z+1)=0, thu 2x−y+3z+1=0. Thử điểm M0: 2−3+1=0. Thử lại điểm M0 giúp phát hiện lỗi hệ số tự do.
 
 **Vận dụng**
 
-M0=(0,0,2), n=(0,0,1). Viết mặt phẳng.
+M0=\((0;0;2)\), n=(0,0,1). Viết mặt phẳng.
 
 <!-- ITEM_ID: THPT-TOP18-T18; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O18 -->
 
@@ -665,13 +665,13 @@ Ba điểm phân biệt chưa đủ xác định một mặt: chúng phải **kh
 
 **Ví dụ**
 
-**Đề bài:** Qua A=(1;0;0), B=(0;1;0), C=(0;0;1), lập phương trình mặt.
+**Đề bài:** Qua \(A=(1;0;0)\), \(B=(0;1;0)\), \(C=(0;0;1)\), lập phương trình mặt.
 
-**Lời giải:** A=(1,0,0), B=(0,1,0), C=(0,0,1) cho AB=(−1,1,0), AC=(−1,0,1). Một n=(1,1,1) vuông cả hai; mặt phẳng qua A là x+y+z−1=0. Ba điểm phải không thẳng hàng.
+**Lời giải:** \(A=(1;0;0)\), \(B=(0;1;0)\), \(C=(0;0;1)\) cho \(AB=(-1;1;0)\), \(AC=(-1;0;1)\). Một n=(1,1,1) vuông cả hai; mặt phẳng qua A là x+y+z−1=0. Ba điểm phải không thẳng hàng.
 
 **Vận dụng**
 
-Ba giao điểm trục A=(2,0,0),B=(0,2,0),C=(0,0,2). Mặt phẳng?
+Ba giao điểm trục \(A=(2;0;0)\),\(B=(0;2;0)\),\(C=(0;0;2)\). Mặt phẳng?
 
 <!-- ITEM_ID: THPT-TOP18-T19; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O19 -->
 
@@ -698,13 +698,13 @@ Khi mặt phẳng chứa một đường hoặc trục, mọi vectơ chỉ phư�
 
 **Ví dụ**
 
-**Đề bài:** Mặt phẳng cần đi qua toàn bộ trục Ox và điểm P(0;1;1) nằm ngoài trục. Hãy tìm một phương trình đơn giản của mặt phẳng.
+**Đề bài:** Mặt phẳng cần đi qua toàn bộ trục Ox và điểm \(P(0;1;1)\) nằm ngoài trục. Hãy tìm một phương trình đơn giản của mặt phẳng.
 
-**Lời giải:** Mặt chứa Ox và P=(0,1,1). Hai hướng e1=(1,0,0), OP=(0,1,1) nên một pháp tuyến n=(0,−1,1); mặt qua O là y−z=0. Mặt phải chứa cả trục và điểm đã cho. Chọn hai vectơ độc lập trong mặt: e1=(1;0;0) và OP=(0;1;1). Một pháp tuyến là (0;−1;1), do đó mặt qua O có phương trình y−z=0.
+**Lời giải:** Mặt chứa Ox và \(P=(0;1;1)\). Hai hướng e1=(1,0,0), \(OP=(0;1;1)\) nên một pháp tuyến n=(0,−1,1); mặt qua O là y−z=0. Mặt phải chứa cả trục và điểm đã cho. Chọn hai vectơ độc lập trong mặt: e1=(1;0;0) và \(OP=(0;1;1)\). Một pháp tuyến là \((0;-1;1)\), do đó mặt qua O có phương trình y−z=0.
 
 **Vận dụng**
 
-Mặt chứa trục Oz và điểm (1,1,0). Tìm phương trình đơn giản.
+Mặt chứa trục Oz và điểm \((1;1;0)\). Tìm phương trình đơn giản.
 
 <!-- ITEM_ID: THPT-TOP18-T20; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O20 -->
 
@@ -764,7 +764,7 @@ Khoảng cách từ điểm M đến mặt P là độ dài đường vuông gó
 
 **Ví dụ**
 
-**Đề bài:** Cho mặt phẳng (P):x+2y+2z−6=0 và điểm O(0;0;0). Hãy tính khoảng cách từ O đến (P) và nêu điều kiện áp dụng công thức.
+**Đề bài:** Cho mặt phẳng (P):x+2y+2z−6=0 và điểm \(O(0;0;0)\). Hãy tính khoảng cách từ O đến (P) và nêu điều kiện áp dụng công thức.
 
 **Lời giải:** M=O, P:x+2y+2z−6=0 có độ dài n=3, trị tuyệt đối −6 là 6, nên d=6/3=2. Mẫu số là độ dài pháp tuyến, phải khác 0. Pháp tuyến n=(1;2;2) khác 0 có độ dài √(1+4+4)=3. Tại O, trị tuyệt đối của vế trái là 6 nên d=6/3=2; giá trị không âm vì đây là độ dài đoạn vuông góc.
 
@@ -776,7 +776,7 @@ Khoảng cách từ O đến mặt z=−5?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-5 đơn vị, bởi pháp tuyến (0,0,1), độ chênh z là 5.
+5 đơn vị, bởi pháp tuyến \((0;0;1)\), độ chênh z là 5.
 
 **Kiểm lỗi**
 
@@ -786,7 +786,7 @@ Khoảng cách điểm–mặt phải lấy trị tuyệt đối tử và chia �
 
 ## 5. Đường thẳng và giao điểm
 
-**Tiếp tục chuyến bay đã biết.** Drone có điểm xuất phát A=(1;1;2) và hướng v=(1;0;1), do đó đường bay là M(t)=(1+t;1;2+t). Thế vào (P):x+y+z=6, ta được (1+t)+1+(2+t)=6, tức **4+2t=6**; suy ra **t=1 giây**, vị trí gặp tấm chắn **M(1)=(2;1;3)**. Kiểm lại: 2+1+3=6. Một tham số chung cho đủ ba tọa độ chính là cách giữ cho ba phép tính đang nói về *cùng một điểm trên đường bay*.
+**Tiếp tục chuyến bay đã biết.** Drone có điểm xuất phát \(A=(1;1;2)\) và hướng v=(1;0;1), do đó đường bay là M(t)=(1+t;1;2+t). Thế vào (P):x+y+z=6, ta được (1+t)+1+(2+t)=6, tức **4+2t=6**; suy ra **t=1 giây**, vị trí gặp tấm chắn **M(1)=\((2;1;3)\)**. Kiểm lại: 2+1+3=6. Một tham số chung cho đủ ba tọa độ chính là cách giữ cho ba phép tính đang nói về *cùng một điểm trên đường bay*.
 
 
 ![Đường thẳng qua M₀ với hướng u và điểm M(t)](../../../../docs/assets/images/thpt/FIG-TOP18-B15-LINE-WHITE-R00.svg)
@@ -815,9 +815,9 @@ Một đường thẳng vô hạn được mô tả bằng một điểm M0 nó 
 
 **Ví dụ**
 
-**Đề bài:** Đường qua M0=(1;2;3) có hướng u=(2;−1;0). Viết tham số.
+**Đề bài:** Đường qua M0=\((1;2;3)\) có hướng u=(2;−1;0). Viết tham số.
 
-**Lời giải:** M0=(1,2,3),u=(2,−1,0): x=1+2t,y=2−t,z=3. Độ cao không đổi vì thành phần chỉ phương z bằng 0. Cả ba tọa độ đều dùng một tham số t.
+**Lời giải:** M0=\((1;2;3)\),u=(2,−1,0): x=1+2t,y=2−t,z=3. Độ cao không đổi vì thành phần chỉ phương z bằng 0. Cả ba tọa độ đều dùng một tham số t.
 
 **Vận dụng**
 
@@ -848,13 +848,13 @@ Hai điểm phân biệt A,B xác định một đường và cho vectơ chỉ p
 
 **Ví dụ**
 
-**Đề bài:** Đường qua A=(0;1;2), B=(2;3;2). Viết tham số và kiểm B.
+**Đề bài:** Đường qua \(A=(0;1;2)\), \(B=(2;3;2)\). Viết tham số và kiểm B.
 
-**Lời giải:** A=(0,1,2),B=(2,3,2), AB=(2,2,0); đường AB có x=2t,y=1+2t,z=2. Thay t=1 cho B, nên phương trình phù hợp.
+**Lời giải:** \(A=(0;1;2)\),\(B=(2;3;2)\), \(AB=(2;2;0)\); đường AB có x=2t,y=1+2t,z=2. Thay t=1 cho B, nên phương trình phù hợp.
 
 **Vận dụng**
 
-Đường qua A=(0,0,0), B=(1,2,3) có một dạng tham số?
+Đường qua \(A=(0;0;0)\), \(B=(1;2;3)\) có một dạng tham số?
 
 <!-- ITEM_ID: THPT-TOP18-T25; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O25 -->
 
@@ -914,13 +914,13 @@ Kiểm tra điểm M thuộc đường bằng cách tìm **một** giá trị t 
 
 **Ví dụ**
 
-**Đề bài:** d: x=1+t, y=2−2t, z=t. Kiểm M=(3;−2;2) có thuộc không.
+**Đề bài:** d: x=1+t, y=2−2t, z=t. Kiểm \(M=(3;-2;2)\) có thuộc không.
 
-**Lời giải:** Đường x=1+t,y=2−2t,z=t. M=(3,−2,2) cho t=2 theo x; y=2−4=−2 và z=2 đều đúng nên M thuộc đường. Không được dùng ba tham số khác nhau cho ba tọa độ.
+**Lời giải:** Đường x=1+t,y=2−2t,z=t. \(M=(3;-2;2)\) cho t=2 theo x; y=2−4=−2 và z=2 đều đúng nên M thuộc đường. Không được dùng ba tham số khác nhau cho ba tọa độ.
 
 **Vận dụng**
 
-Điểm N=(0,2,0) có thuộc d: x=t,y=2−t,z=0 không?
+Điểm \(N=(0;2;0)\) có thuộc d: x=t,y=2−t,z=0 không?
 
 <!-- ITEM_ID: THPT-TOP18-T27; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O27 -->
 
@@ -947,13 +947,13 @@ Hai đường có vectơ chỉ phương cùng phương có thể song song phân
 
 **Ví dụ**
 
-**Đề bài:** u=(1;2;0), v=(2;4;0). Hai đường trùng khi cùng qua O? Nếu đường thứ hai qua (0;0;1)?
+**Đề bài:** u=(1;2;0), v=(2;4;0). Hai đường trùng khi cùng qua O? Nếu đường thứ hai qua \((0;0;1)\)?
 
-**Lời giải:** u=(1,2,0) và v=(2,4,0) cùng phương. Nếu cả hai qua O thì trùng; nếu đường thứ hai qua (0,0,1) thì chúng song song phân biệt. Cùng phương chưa kết luận trùng, phải kiểm vị trí.
+**Lời giải:** u=(1,2,0) và v=(2,4,0) cùng phương. Nếu cả hai qua O thì trùng; nếu đường thứ hai qua \((0;0;1)\) thì chúng song song phân biệt. Cùng phương chưa kết luận trùng, phải kiểm vị trí.
 
 **Vận dụng**
 
-Hai đường qua A=(0,0,0) và B=(0,0,1), cùng hướng (1,0,0). Quan hệ?
+Hai đường qua \(A=(0;0;0)\) và \(B=(0;0;1)\), cùng hướng \((1;0;0)\). Quan hệ?
 
 <!-- ITEM_ID: THPT-TOP18-T28; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O28 -->
 
@@ -982,7 +982,7 @@ Trong không gian, hai đường không cùng phương **chưa chắc cắt**: c
 
 **Đề bài:** d1(t)=(t;0;0), d2(s)=(0;s;1): hai đường cắt hay chéo?
 
-**Lời giải:** d1(t)=(t,0,0) và d2(s)=(0,s,1). Nếu cắt, tọa độ z phải đồng thời 0 và 1, bất khả; hai hướng (1,0,0),(0,1,0) khác phương nên chéo nhau. Trong không gian, hai hướng khác nhau có thể chéo nhau.
+**Lời giải:** d1(t)=(t,0,0) và d2(s)=(0,s,1). Nếu cắt, tọa độ z phải đồng thời 0 và 1, bất khả; hai hướng \((1;0;0)\),\((0;1;0)\) khác phương nên chéo nhau. Trong không gian, hai hướng khác nhau có thể chéo nhau.
 
 **Vận dụng**
 
@@ -992,7 +992,7 @@ d1(t)=(t,0,0),d2(s)=(0,s,0). Chúng cắt tại đâu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Tại O=(0,0,0) với t=s=0.
+Tại \(O=(0;0;0)\) với t=s=0.
 
 **Kiểm lỗi**
 
@@ -1015,7 +1015,7 @@ Giao điểm của đường với mặt tìm bằng thay M(t)=M0+t u vào Ax+By
 
 **Đề bài:** d(t)=(1+t;0;2−t), P:x=0, Q:x+z=4. Tìm giao d/P và quan hệ d/Q.
 
-**Lời giải:** d(t)=(1+t,0,2−t), P:x=0. Thay x=1+t=0 suy t=−1, điểm giao (0,0,3). Với Q:x+z=4, vế trái luôn 3 nên đường song song Q nhưng không nằm trong Q. Thay tham số vào mặt giúp phân biệt cắt, nằm trong và song song.
+**Lời giải:** d(t)=(1+t,0,2−t), P:x=0. Thay x=1+t=0 suy t=−1, điểm giao \((0;0;3)\). Với Q:x+z=4, vế trái luôn 3 nên đường song song Q nhưng không nằm trong Q. Thay tham số vào mặt giúp phân biệt cắt, nằm trong và song song.
 
 **Vận dụng**
 
@@ -1132,7 +1132,7 @@ Góc nhỏ giữa hai mặt P,Q phụ thuộc pháp tuyến n1,n2 khác 0; cosθ
 
 **Đề bài:** Hai mặt có pháp tuyến n1=(1;0;0), n2=(1;1;0). Tính góc và thử đổi dấu n2.
 
-**Lời giải:** n1=(1,0,0),n2=(1,1,0), cosθ=1/√2 ⇒ θ=45°. Thay n2 bằng (−1,−1,0), kết quả vẫn 45° vì trị tuyệt đối. Đổi dấu pháp tuyến không đổi góc hai mặt.
+**Lời giải:** n1=(1,0,0),n2=(1,1,0), cosθ=1/√2 ⇒ θ=45°. Thay n2 bằng \((-1;-1;0)\), kết quả vẫn 45° vì trị tuyệt đối. Đổi dấu pháp tuyến không đổi góc hai mặt.
 
 **Vận dụng**
 
@@ -1142,7 +1142,7 @@ Hai mặt P:x=0,Q:y=0 có góc bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-90°, vì nP=(1,0,0),nQ=(0,1,0) vuông góc.
+90°, vì nP=\((1;0;0)\),nQ=\((0;1;0)\) vuông góc.
 
 **Kiểm lỗi**
 
@@ -1191,7 +1191,7 @@ Trong thiết kế đường dốc hoặc băng chuyền, độ nghiêng đối 
 
 > **Kiến thức cần ghi nhớ**
 >
-> Đường dốc có độ tăng cao h, khoảng ngang d>0, chiều dài L>0: \(\tan\theta=h/d\), \(\sin\theta=h/L\).
+> Đường dốc có độ tăng cao h, khoảng ngang d>0, chiều dài L>0: \(\tan\theta=\frac hd\), \(\sin\theta=\frac hL\).
 
 
 **Ví dụ**
@@ -1218,7 +1218,7 @@ Một dốc cao 3 m trên nền ngang 4 m, chiều dài dốc 5 m. sinθ?
 
 ## 7. Mặt cầu và thiết diện
 
-**Từ đường bay đến vùng bao phủ.** Giả sử tại điểm gặp tấm chắn C=(2;1;3), thiết bị phát sóng có vùng phủ dạng cầu bán kính **R=5 m**. Mặt sàn có z=0 nên cách tâm C một đoạn **d=3 m**. Tam giác vuông tạo bởi tâm C, chân H=(2;1;0) và một điểm trên đường tròn giao cho r²+d²=R², tức r=√(25−9)=**4 m**. Đây là lí do bán kính vòng phủ trên sàn nhỏ hơn bán kính hình cầu, dù hình minh họa trông gần bằng nhau.
+**Từ đường bay đến vùng bao phủ.** Giả sử tại điểm gặp tấm chắn \(C=(2;1;3)\), thiết bị phát sóng có vùng phủ dạng cầu bán kính **R=5 m**. Mặt sàn có z=0 nên cách tâm C một đoạn **d=3 m**. Tam giác vuông tạo bởi tâm C, chân \(H=(2;1;0)\) và một điểm trên đường tròn giao cho r²+d²=R², tức r=√(25−9)=**4 m**. Đây là lí do bán kính vòng phủ trên sàn nhỏ hơn bán kính hình cầu, dù hình minh họa trông gần bằng nhau.
 
 [Mở mô hình mặt phẳng cắt mặt cầu](Temp_THPT_TOPIC18_OXYZ_SPHERE_GEOMETRY_R00_20261114.html) — chọn phần **“Mặt phẳng cắt mặt cầu”**, đặt R=5 và d=3 rồi thử lần lượt d=5 và d=6. Suy đoán kết quả trước khi kéo thanh trượt.
 
@@ -1244,9 +1244,9 @@ Mặt cầu tâm C bán kính R>0 gồm các điểm M có CM=R. Bình phương 
 
 **Ví dụ**
 
-**Đề bài:** Lập mặt cầu C=(1;−2;3), R=4 và thử điểm M=(5;−2;3).
+**Đề bài:** Lập mặt cầu \(C=(1;-2;3)\), R=4 và thử điểm \(M=(5;-2;3)\).
 
-**Lời giải:** Tâm C=(1,−2,3), R=4 cho (x−1)²+(y+2)²+(z−3)²=16. Kiểm M=(5,−2,3) thỏa. Kiểm bằng bình phương khoảng cách bằng R².
+**Lời giải:** Tâm \(C=(1;-2;3)\), R=4 cho (x−1)²+(y+2)²+(z−3)²=16. Kiểm \(M=(5;-2;3)\) thỏa. Kiểm bằng bình phương khoảng cách bằng R².
 
 **Vận dụng**
 
@@ -1279,7 +1279,7 @@ Từ phương trình x²+y²+z²+Dx+Ey+Fz+G=0, hoàn thành bình phương từn
 
 **Đề bài:** Cho phương trình x²+y²+z²−2x+4y−6z+5=0. Hãy hoàn thành bình phương để tìm tâm và bán kính nếu là mặt cầu.
 
-**Lời giải:** x²+y²+z²−2x+4y−6z+5=0 thành (x−1)²+(y+2)²+(z−3)²=9, nên tâm (1,−2,3), R=3. Hoàn thành bình phương đúng cả hằng số. Nhóm ba bình phương: (x−1)²+(y+2)²+(z−3)²=1+4+9−5=9. Vì R²=9>0, đây là mặt cầu tâm (1;−2;3) và bán kính R=3.
+**Lời giải:** x²+y²+z²−2x+4y−6z+5=0 thành (x−1)²+(y+2)²+(z−3)²=9, nên tâm \((1;-2;3)\), R=3. Hoàn thành bình phương đúng cả hằng số. Nhóm ba bình phương: (x−1)²+(y+2)²+(z−3)²=1+4+9−5=9. Vì R²=9>0, đây là mặt cầu tâm \((1;-2;3)\) và bán kính R=3.
 
 **Vận dụng**
 
@@ -1289,7 +1289,7 @@ x²+y²+z²−4x=0 có tâm, bán kính?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(2,0,0), R=2 vì (x−2)²+y²+z²=4.
+\((2;0;0)\), R=2 vì (x−2)²+y²+z²=4.
 
 **Kiểm lỗi**
 
@@ -1310,13 +1310,13 @@ Muốn biết điểm nằm trong/trên/ngoài mặt cầu, so CM² với R² th
 
 **Ví dụ**
 
-**Đề bài:** Trong hệ Oxyz, mặt cầu có tâm O(0;0;0) và bán kính R=5. Hãy xác định M(3;4;0) và N(1;1;1) nằm trong, trên hay ngoài mặt cầu.
+**Đề bài:** Trong hệ Oxyz, mặt cầu có tâm \(O(0;0;0)\) và bán kính R=5. Hãy xác định \(M(3;4;0)\) và \(N(1;1;1)\) nằm trong, trên hay ngoài mặt cầu.
 
-**Lời giải:** Mặt cầu tâm O, R=5; M=(3,4,0) có CM²=9+16=25 nên nằm trên. N=(1,1,1) có CM²=3<25 nên nằm trong. So CM² với R² tránh bấm căn không cần thiết.
+**Lời giải:** Mặt cầu tâm O, R=5; \(M=(3;4;0)\) có CM²=9+16=25 nên nằm trên. \(N=(1;1;1)\) có CM²=3<25 nên nằm trong. So CM² với R² tránh bấm căn không cần thiết.
 
 **Vận dụng**
 
-Với mặt cầu tâm O R=3, điểm (0,0,4) ở đâu?
+Với mặt cầu tâm O R=3, điểm \((0;0;4)\) ở đâu?
 
 <!-- ITEM_ID: THPT-TOP18-T38; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O38 -->
 
@@ -1343,13 +1343,13 @@ Nếu hai điểm A,B là hai đầu đường kính của mặt cầu, tâm C l
 
 **Ví dụ**
 
-**Đề bài:** Cầu có đường kính A=(0;0;0), B=(2;4;0). Tìm tâm, bán kính, phương trình.
+**Đề bài:** Cầu có đường kính \(A=(0;0;0)\), \(B=(2;4;0)\). Tìm tâm, bán kính, phương trình.
 
-**Lời giải:** A=(0,0,0),B=(2,4,0) cho C=(1,2,0), AB=√20=2√5, R=√5; phương trình (x−1)²+(y−2)²+z²=5. Bán kính bằng nửa đường kính.
+**Lời giải:** \(A=(0;0;0)\),\(B=(2;4;0)\) cho \(C=(1;2;0)\), AB=√20=2√5, R=√5; phương trình (x−1)²+(y−2)²+z²=5. Bán kính bằng nửa đường kính.
 
 **Vận dụng**
 
-A=(−2,0,0),B=(2,0,0). Viết phương trình mặt cầu đường kính AB.
+\(A=(-2;0;0)\),\(B=(2;0;0)\). Viết phương trình mặt cầu đường kính AB.
 
 <!-- ITEM_ID: THPT-TOP18-T39; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O39 -->
 
@@ -1378,7 +1378,7 @@ Giao của mặt cầu bán kính R với mặt phẳng phụ thuộc khoảng c
 
 **Đề bài:** Cầu O, R=5: mặt z=3 tạo thiết diện gì và mặt z=5 có tiếp xúc không?
 
-**Lời giải:** Mặt cầu tâm O R=5 với mặt z=3 có d=3 và thiết diện bán kính 4. Với mặt z=5 là tiếp xúc ở (0,0,5). Phân loại theo d so với R.
+**Lời giải:** Mặt cầu tâm O R=5 với mặt z=3 có d=3 và thiết diện bán kính 4. Với mặt z=5 là tiếp xúc ở \((0;0;5)\). Phân loại theo d so với R.
 
 **Vận dụng**
 
@@ -1398,7 +1398,7 @@ Bán kính thiết diện không luôn bằng R; trước hết lấy d từ tâ
 
 ## 8. Vận dụng tích hợp sau B17 (tự chọn)
 
-**Khép lại hành trình của một bài toán.** Câu chuyện drone ban đầu có thể được giải mà không học rời rạc sáu công thức: (1) chọn hệ trục và định vị A=(1;1;2); (2) đọc vectơ v=(1;0;1) để viết M(t); (3) tìm lúc M(t) thuộc mặt x+y+z=6, được t=1 và C=(2;1;3); (4) với cầu tâm C bán kính 5, tìm d(C,z=0)=3 và vòng giao mặt sàn bán kính 4. Mỗi bước chỉ sử dụng một ý nghĩa đã hình thành ở các chặng trước. Đây là ví dụ xuyên suốt, **không phải một câu kiểm tra có ID riêng**, và phần kết nối mặt cầu–mặt phẳng chỉ học sau kiến thức B17.
+**Khép lại hành trình của một bài toán.** Câu chuyện drone ban đầu có thể được giải mà không học rời rạc sáu công thức: (1) chọn hệ trục và định vị \(A=(1;1;2)\); (2) đọc vectơ v=(1;0;1) để viết M(t); (3) tìm lúc M(t) thuộc mặt x+y+z=6, được t=1 và \(C=(2;1;3)\); (4) với cầu tâm C bán kính 5, tìm d(C,z=0)=3 và vòng giao mặt sàn bán kính 4. Mỗi bước chỉ sử dụng một ý nghĩa đã hình thành ở các chặng trước. Đây là ví dụ xuyên suốt, **không phải một câu kiểm tra có ID riêng**, và phần kết nối mặt cầu–mặt phẳng chỉ học sau kiến thức B17.
 
 ### 8.1. Mặt cắt và khoảng cách đến mặt cầu
 
@@ -1455,12 +1455,12 @@ Hãy đọc đề, thử giải vào vở rồi tự mở lời giải. Khi ch�
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 13 cm
-- **Lời giải/suy luận:** Đường chéo không gian dài $\sqrt{3^2+4^2+12^2}=13$ cm.
+- **Lời giải/suy luận:** Đường chéo không gian dài \(\sqrt{3^2+4^2+12^2}=13\) cm.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 3.** Với hai điểm phân biệt A, B, vectơ $\overrightarrow{AA}$ có độ dài và hướng thế nào?
+**Bài luyện 3.** Với hai điểm phân biệt A, B, vectơ \(\overrightarrow{AA}\) có độ dài và hướng thế nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1475,7 +1475,7 @@ Hãy đọc đề, thử giải vào vở rồi tự mở lời giải. Khi ch�
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** 7 cm
-- **Lời giải/suy luận:** Chọn ba cạnh vuông góc, áp dụng Pythagore không gian: $\sqrt{2^2+3^2+6^2}=7$. Tổng $2+3+6$ là độ dài đường đi theo ba cạnh, không phải độ dời.
+- **Lời giải/suy luận:** Chọn ba cạnh vuông góc, áp dụng Pythagore không gian: \(\sqrt{2^2+3^2+6^2}=7\). Tổng \(2+3+6\) là độ dài đường đi theo ba cạnh, không phải độ dời.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm lập mô hình ba phương vuông góc; 2 điểm tính căn tổng bình phương; 1 điểm phân biệt đường đi với độ dời.
 
@@ -1493,22 +1493,22 @@ Vì Q nằm giữa P và R nên PR=PQ+QR=3+2=5 cm. Ở trường hợp riêng P=
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 6.** Trong hình bình hành ABCD, vectơ nào bằng $\overrightarrow{AB}$?
+**Bài luyện 6.** Trong hình bình hành ABCD, vectơ nào bằng \(\overrightarrow{AB}\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** $\overrightarrow{DC}$
+- **Đáp án:** \(\overrightarrow{DC}\)
 - **Lời giải/suy luận:** Hai vectơ cùng chiều và cùng độ dài trên hai cạnh đối.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 7.** Trong hình bình hành ABCD, vectơ nào đối với $\overrightarrow{AB}$?
+**Bài luyện 7.** Trong hình bình hành ABCD, vectơ nào đối với \(\overrightarrow{AB}\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** $\overrightarrow{BA}$ hoặc $\overrightarrow{CD}$
-- **Lời giải/suy luận:** Đều cùng độ dài và ngược chiều so với $\overrightarrow{AB}$.
+- **Đáp án:** \(\overrightarrow{BA}\) hoặc \(\overrightarrow{CD}\)
+- **Lời giải/suy luận:** Đều cùng độ dài và ngược chiều so với \(\overrightarrow{AB}\).
 
 </details>
 
@@ -1523,11 +1523,11 @@ Vì Q nằm giữa P và R nên PR=PQ+QR=3+2=5 cm. Ở trường hợp riêng P=
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 9.** Trong hình hộp $ABCD.A\prime B\prime C\prime D\prime$, liệt kê hai vectơ khác vị trí bằng $\overrightarrow{AB}$ và một vectơ đối với nó; giải thích dựa vào hướng và độ dài.
+**Bài luyện 9.** Trong hình hộp \(ABCD.A\prime B\prime C\prime D\prime\), liệt kê hai vectơ khác vị trí bằng \(\overrightarrow{AB}\) và một vectơ đối với nó; giải thích dựa vào hướng và độ dài.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** $\overrightarrow{DC}$ và $\overrightarrow{A\prime B\prime}$ bằng $\overrightarrow{AB}$; $\overrightarrow{BA}$ là vectơ đối.
+- **Đáp án:** \(\overrightarrow{DC}\) và \(\overrightarrow{A\prime B\prime}\) bằng \(\overrightarrow{AB}\); \(\overrightarrow{BA}\) là vectơ đối.
 - **Lời giải/suy luận:** Các cạnh song song đồng hướng tương ứng trong hình hộp có độ dài bằng nhau; đảo đầu-cuối đổi hướng.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm tìm hai vectơ bằng; 1 điểm vectơ đối; 2 điểm giải thích chiều/độ dài.
@@ -1546,41 +1546,41 @@ Vì Q nằm giữa P và R nên PR=PQ+QR=3+2=5 cm. Ở trường hợp riêng P=
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 11.** Với A,B,C bất kì, $\overrightarrow{AB}+\overrightarrow{BC}$ bằng gì?
+**Bài luyện 11.** Với A,B,C bất kì, \(\overrightarrow{AB}+\overrightarrow{BC}\) bằng gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** $\overrightarrow{AC}$
+- **Đáp án:** \(\overrightarrow{AC}\)
 - **Lời giải/suy luận:** Ghép đường đi đầu–đuôi A→B→C.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P05; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 12.** Trong hình bình hành ABCD, $\overrightarrow{AB}+\overrightarrow{AD}$ bằng gì?
+**Bài luyện 12.** Trong hình bình hành ABCD, \(\overrightarrow{AB}+\overrightarrow{AD}\) bằng gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** $\overrightarrow{AC}$
+- **Đáp án:** \(\overrightarrow{AC}\)
 - **Lời giải/suy luận:** Quy tắc đường chéo hình bình hành.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P06; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 13.** Trong hình hộp $ABCD.A\prime B\prime C\prime D\prime$, $\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA\prime}$ bằng gì?
+**Bài luyện 13.** Trong hình hộp \(ABCD.A\prime B\prime C\prime D\prime\), \(\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA\prime}\) bằng gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** $\overrightarrow{AC\prime}$
+- **Đáp án:** \(\overrightarrow{AC\prime}\)
 - **Lời giải/suy luận:** Hai cạnh đáy cho AC, cạnh đứng bằng CC′; nối thành AC′.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 14.** Cho tứ diện ABCD. Rút gọn $\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CD}$ theo hai cách: nối đường đi và nhóm đại số.
+**Bài luyện 14.** Cho tứ diện ABCD. Rút gọn \(\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CD}\) theo hai cách: nối đường đi và nhóm đại số.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** $\overrightarrow{AD}$
+- **Đáp án:** \(\overrightarrow{AD}\)
 - **Lời giải/suy luận:** Nối A→B→C→D được AD. Hoặc AB+BC=AC, AC+CD=AD.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm mô tả đường đi; 2 điểm nhóm đúng; 1 điểm kết luận AD.
@@ -1599,41 +1599,41 @@ Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 16.** Nếu $|\vec a|=3$ và $k=-2$, độ dài $k\vec a$ bằng bao nhiêu?
+**Bài luyện 16.** Nếu \(|\vec a|=3\) và \(k=-2\), độ dài \(k\vec a\) bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 6
-- **Lời giải/suy luận:** $|-2|\cdot 3=6$; hướng đổi do k âm.
+- **Lời giải/suy luận:** \(|-2|\cdot 3=6\); hướng đổi do k âm.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P07; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 17.** Điểm M là trung điểm đoạn AB. Biểu diễn $\overrightarrow{AM}$ qua $\overrightarrow{AB}$.
+**Bài luyện 17.** Điểm M là trung điểm đoạn AB. Biểu diễn \(\overrightarrow{AM}\) qua \(\overrightarrow{AB}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** $\tfrac12\overrightarrow{AB}$
+- **Đáp án:** \(\frac12\overrightarrow{AB}\)
 - **Lời giải/suy luận:** Cùng hướng và độ dài bằng một nửa.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P08; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 18.** Điểm N ở tia đối của AB, AN=3AB. Viết $\overrightarrow{AN}$ qua $\overrightarrow{AB}$.
+**Bài luyện 18.** Điểm N ở tia đối của AB, AN=3AB. Viết \(\overrightarrow{AN}\) qua \(\overrightarrow{AB}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** $-3\overrightarrow{AB}$
+- **Đáp án:** \(-3\overrightarrow{AB}\)
 - **Lời giải/suy luận:** Ngược hướng, độ dài gấp ba.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 19.** Cho $\vec a\ne\vec0$. Hai vectơ $\vec b=-\tfrac32\vec a$ và $\vec c=\tfrac12\vec a$ có cùng phương không? Hướng và tỉ số độ dài?
+**Bài luyện 19.** Cho \(\vec a\ne\vec0\). Hai vectơ \(\vec b=-\frac32\vec a\) và \(\vec c=\frac12\vec a\) có cùng phương không? Hướng và tỉ số độ dài?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** Có; b ngược hướng a, c cùng hướng a; $|b|:|c|=3:1$.
+- **Đáp án:** Có; b ngược hướng a, c cùng hướng a; \(|b|:|c|=3:1\).
 - **Lời giải/suy luận:** b,c là bội số của a; dấu hệ số xác định chiều, độ lớn xác định tỉ lệ.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm chứng minh cùng phương; 2 điểm giải thích hướng; 1 điểm tỉ số.
@@ -1657,7 +1657,7 @@ Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 3
-- **Lời giải/suy luận:** $2\cdot3\cdot\cos60^\circ=3$.
+- **Lời giải/suy luận:** \(2\cdot3\cdot\cos60^\circ=3\).
 
 </details>
 
@@ -1677,17 +1677,17 @@ Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** -12
-- **Lời giải/suy luận:** $3\cdot8\cdot\cos120^\circ=-12$.
+- **Lời giải/suy luận:** \(3\cdot8\cdot\cos120^\circ=-12\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W05; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 24.** Giả sử $|\vec u|=2$, $|\vec v|=5$ và $\vec u\cdot\vec v=-5$. Hãy tìm góc và giải thích dấu âm.
+**Bài luyện 24.** Giả sử \(|\vec u|=2\), \(|\vec v|=5\) và \(\vec u\cdot\vec v=-5\). Hãy tìm góc và giải thích dấu âm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** 120°
-- **Lời giải/suy luận:** $\cos\theta=-5/(2\cdot5)=-1/2$ nên $\theta=120^\circ$; hình chiếu ngược hướng.
+- **Lời giải/suy luận:** \(\cos\theta=\frac{-5}{2\cdot5}=-\frac12\) nên \(\theta=120^\circ\); hình chiếu ngược hướng.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 1 điểm kiểm hai độ dài dương; 2 điểm thiết lập cos; 1 điểm tìm góc; 1 điểm giải thích dấu.
 
@@ -1730,12 +1730,12 @@ Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** -12 J
-- **Lời giải/suy luận:** $W=8\cdot3\cdot(-1/2)=-12$ J; công âm do lực chống chuyển động.
+- **Lời giải/suy luận:** \(W=8\cdot3\cdot(-\frac12)=-12\) J; công âm do lực chống chuyển động.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W06; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 29.** Hai lực không đổi $\vec F_1,\vec F_2$ lần lượt 10 N, 20 N, cùng tạo góc 60° với cùng độ dời 2 m. Tính tổng công và nêu vì sao có thể cộng.
+**Bài luyện 29.** Hai lực không đổi \(\vec F_1,\vec F_2\) lần lượt 10 N, 20 N, cùng tạo góc 60° với cùng độ dời 2 m. Tính tổng công và nêu vì sao có thể cộng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1760,7 +1760,7 @@ W=10·2·cos60°=10 J, vì chỉ thành phần lực dọc chuyển dời sinh c
 ## 2. Làm quen hệ tọa độ Oxyz
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-C01; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 31.** Trong hệ Oxyz, điểm P(4;2;0) nằm trên mặt phẳng tọa độ nào?
+**Bài luyện 31.** Trong hệ Oxyz, điểm \(P(4;2;0)\) nằm trên mặt phẳng tọa độ nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1780,7 +1780,7 @@ W=10·2·cos60°=10 J, vì chỉ thành phần lực dọc chuyển dời sinh c
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 33.** Điểm M(-1;0;3) thuộc mặt phẳng tọa độ nào?
+**Bài luyện 33.** Điểm \(M(-1;0;3)\) thuộc mặt phẳng tọa độ nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1790,7 +1790,7 @@ W=10·2·cos60°=10 J, vì chỉ thành phần lực dọc chuyển dời sinh c
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W01; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 34.** Phân loại A(0;2;-1), B(0;0;5), C(3;-2;0) theo mặt phẳng tọa độ hoặc trục tọa độ; giải thích.
+**Bài luyện 34.** Phân loại \(A(0;2;-1)\), \(B(0;0;5)\), \(C(3;-2;0)\) theo mặt phẳng tọa độ hoặc trục tọa độ; giải thích.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1802,7 +1802,7 @@ W=10·2·cos60°=10 J, vì chỉ thành phần lực dọc chuyển dời sinh c
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P07; PRIMARY_OUTCOME: TOP18-O07; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 35.** Điểm A=(0,4,−3) thuộc mặt phẳng Oyz không? Vì sao?
+**Bài luyện 35.** Điểm \(A=(0;4;-3)\) thuộc mặt phẳng Oyz không? Vì sao?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -1813,42 +1813,42 @@ Có, vì x=0. Không bắt buộc y,z dương để thuộc mặt tọa độ.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-C02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 36.** Cho $\vec a=3\vec i-2\vec j+\vec k$. Tọa độ $\vec a$ là gì?
+**Bài luyện 36.** Cho \(\vec a=3\vec i-2\vec j+\vec k\). Tọa độ \(\vec a\) là gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (3;-2;1)
+- **Đáp án:** \((3;-2;1)\)
 - **Lời giải/suy luận:** Hệ số theo i,j,k tạo thành ba tọa độ.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 37.** Nếu M(-2;4;1), tọa độ vectơ $\overrightarrow{OM}$ bằng gì?
+**Bài luyện 37.** Nếu \(M(-2;4;1)\), tọa độ vectơ \(\overrightarrow{OM}\) bằng gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (-2;4;1)
+- **Đáp án:** \((-2;4;1)\)
 - **Lời giải/suy luận:** Theo định nghĩa tọa độ điểm từ vectơ vị trí.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 38.** Vectơ $\vec u=(0;0;-5)$ viết dưới dạng i,j,k thế nào?
+**Bài luyện 38.** Vectơ \(\vec u=(0;0;-5)\) viết dưới dạng i,j,k thế nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** $-5\vec k$
+- **Đáp án:** \(-5\vec k\)
 - **Lời giải/suy luận:** Hai tọa độ x,y bằng 0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W02; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 39.** Cho P(1;-2;3). Viết vectơ vị trí OP và giải thích vì sao vectơ bằng OP đặt ở một điểm khác vẫn có tọa độ tương tự.
+**Bài luyện 39.** Cho \(P(1;-2;3)\). Viết vectơ vị trí OP và giải thích vì sao vectơ bằng OP đặt ở một điểm khác vẫn có tọa độ tương tự.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** $\overrightarrow{OP}=\vec i-2\vec j+3\vec k$; tọa độ phụ thuộc hướng và độ dài vectơ trong cùng hệ, không phụ thuộc nơi dời song song.
-- **Lời giải/suy luận:** Theo định nghĩa tọa độ điểm, $P(1;-2;3)$ nghĩa là $\overrightarrow{OP}=\vec i-2\vec j+3\vec k$. Vectơ có thể dời song song mà không đổi tọa độ trong cùng hệ, nhưng điểm cuối sẽ đổi nếu đổi điểm đầu.
+- **Đáp án:** \(\overrightarrow{OP}=\vec i-2\vec j+3\vec k\); tọa độ phụ thuộc hướng và độ dài vectơ trong cùng hệ, không phụ thuộc nơi dời song song.
+- **Lời giải/suy luận:** Theo định nghĩa tọa độ điểm, \(P(1;-2;3)\) nghĩa là \(\overrightarrow{OP}=\vec i-2\vec j+3\vec k\). Vectơ có thể dời song song mà không đổi tọa độ trong cùng hệ, nhưng điểm cuối sẽ đổi nếu đổi điểm đầu.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm phân tích đúng; 2 điểm giải thích vectơ tự do; 1 điểm phân biệt điểm/tọa độ.
 
@@ -1859,7 +1859,7 @@ Có, vì x=0. Không bắt buộc y,z dương để thuộc mặt tọa độ.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-u=(−2,3,1) và N(−2,3,1) khi gốc là O và ba trục chuẩn.
+u=(−2,3,1) và \(N(-2;3;1)\) khi gốc là O và ba trục chuẩn.
 
 **D6:** Nhắc lại điểm cần gốc, vectơ cần thành phần dịch chuyển; không tự đổi dấu khi đọc thành phần âm.
 
@@ -1870,7 +1870,7 @@ u=(−2,3,1) và N(−2,3,1) khi gốc là O và ba trục chuẩn.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (2;3;4) m
+- **Đáp án:** \((2;3;4)\) m
 - **Lời giải/suy luận:** Ba chuyển động độc lập theo ba trục từ O.
 
 </details>
@@ -1896,7 +1896,7 @@ u=(−2,3,1) và N(−2,3,1) khi gốc là O và ba trục chuẩn.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 44.** Phòng 5×4×3 m; lấy O ở góc sàn, Ox dài, Oy rộng, Oz cao. Điểm A(5;4;3) là vị trí nào? Nếu gốc thay thành điểm trần đối diện và trục Oz vẫn hướng lên, z của O cũ bằng bao nhiêu?
+**Bài luyện 44.** Phòng 5×4×3 m; lấy O ở góc sàn, Ox dài, Oy rộng, Oz cao. Điểm \(A(5;4;3)\) là vị trí nào? Nếu gốc thay thành điểm trần đối diện và trục Oz vẫn hướng lên, z của O cũ bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1908,7 +1908,7 @@ u=(−2,3,1) và N(−2,3,1) khi gốc là O và ba trục chuẩn.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P09; PRIMARY_OUTCOME: TOP18-O09; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 45.** Drone ở A=(1,−2,5) m; chuyển sang B=(1,2,5) m. Sự thay đổi theo Oy là bao nhiêu, theo chiều nào?
+**Bài luyện 45.** Drone ở \(A=(1;-2;5)\) m; chuyển sang \(B=(1;2;5)\) m. Sự thay đổi theo Oy là bao nhiêu, theo chiều nào?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -1919,41 +1919,41 @@ Tăng 4 m về Bắc; chiều cao z không đổi.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-C04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 46.** A(1;2;3), B(5;2;1). Tọa độ $\overrightarrow{AB}$?
+**Bài luyện 46.** \(A(1;2;3)\), \(B(5;2;1)\). Tọa độ \(\overrightarrow{AB}\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (4;0;-2)
+- **Đáp án:** \((4;0;-2)\)
 - **Lời giải/suy luận:** B-A theo từng tọa độ.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P07; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 47.** A(-2;3;4), B(1;-1;2). Tọa độ $\overrightarrow{BA}$?
+**Bài luyện 47.** \(A(-2;3;4)\), \(B(1;-1;2)\). Tọa độ \(\overrightarrow{BA}\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (-3;4;2)
+- **Đáp án:** \((-3;4;2)\)
 - **Lời giải/suy luận:** A-B vì điểm đầu B, cuối A.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P08; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 48.** A(0;0;0), B(-3;2;5). Tọa độ $\overrightarrow{AB}$?
+**Bài luyện 48.** \(A(0;0;0)\), \(B(-3;2;5)\). Tọa độ \(\overrightarrow{AB}\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (-3;2;5)
+- **Đáp án:** \((-3;2;5)\)
 - **Lời giải/suy luận:** Lấy vị trí B trừ vị trí gốc A.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W04; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 49.** Cho A(2;-3;1), B(-4;5;0). Tính AB và BA theo tọa độ, rồi giải thích quan hệ.
+**Bài luyện 49.** Cho \(A(2;-3;1)\), \(B(-4;5;0)\). Tính AB và BA theo tọa độ, rồi giải thích quan hệ.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** $\overrightarrow{AB}=(-6;8;-1)$ và $\overrightarrow{BA}=(6;-8;1)$; đối nhau.
+- **Đáp án:** \(\overrightarrow{AB}=(-6;8;-1)\) và \(\overrightarrow{BA}=(6;-8;1)\); đối nhau.
 - **Lời giải/suy luận:** B-A và A-B có dấu ngược nhau ở cả 3 thành phần.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm AB; 2 điểm BA; 1 điểm quan hệ vectơ đối.
@@ -1961,11 +1961,11 @@ Tăng 4 m về Bắc; chiều cao z không đổi.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P10; PRIMARY_OUTCOME: TOP18-O10; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 50.** Cho C=(−1,3,2), D=(2,3,−2). Tính CD và DC; có đối nhau không?
+**Bài luyện 50.** Cho \(C=(-1;3;2)\), \(D=(2;3;-2)\). Tính CD và DC; có đối nhau không?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-CD=(3,0,−4), DC=(−3,0,4)=−CD.
+\(CD=(3;0;-4)\), \(DC=(-3;0;4)\)=−CD.
 
 **D6:** Thường xuyên thử lấy tọa độ A cộng kết quả AB để xem có trở về B không.
 
@@ -1978,7 +1978,7 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (4;1;5)
+- **Đáp án:** \((4;1;5)\)
 - **Lời giải/suy luận:** Cộng ba tọa độ tương ứng.
 
 </details>
@@ -1988,7 +1988,7 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (3;-7;1)
+- **Đáp án:** \((3;-7;1)\)
 - **Lời giải/suy luận:** Trừ ba tọa độ tương ứng; -3-4=-7.
 
 </details>
@@ -1998,7 +1998,7 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (-3;6;-12)
+- **Đáp án:** \((-3;6;-12)\)
 - **Lời giải/suy luận:** Nhân từng tọa độ với -3.
 
 </details>
@@ -2008,8 +2008,8 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** (7;-7;-8)
-- **Lời giải/suy luận:** $2a=(4;2;-2)$, $3b=(-3;9;6)$, lấy hiệu (7;-7;-8); tính duy nhất cơ sở trực giao.
+- **Đáp án:** \((7;-7;-8)\)
+- **Lời giải/suy luận:** \(2a=(4;2;-2)\), \(3b=(-3;9;6)\), lấy hiệu \((7;-7;-8)\); tính duy nhất cơ sở trực giao.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 3 điểm tính đúng ba tọa độ; 2 điểm lý giải phép toán theo trục.
 
@@ -2020,7 +2020,7 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-2u−v=(−2,4,8)−(3,−2,1)=(−5,6,7).
+2u−v=(−2,4,8)−\((3;-2;1)\)=\((-5;6;7)\).
 
 **D6:** Không nhân chéo tọa độ khi cộng; làm theo từng trục và kiểm dấu số âm.
 
@@ -2080,53 +2080,53 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 61.** Trung điểm A(1;3;5), B(3;1;7) có tọa độ?
+**Bài luyện 61.** Trung điểm \(A(1;3;5)\), \(B(3;1;7)\) có tọa độ?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (2;2;6)
+- **Đáp án:** \((2;2;6)\)
 - **Lời giải/suy luận:** Trung bình từng thành phần.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P05; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 62.** Trọng tâm tam giác A(0;0;0), B(3;0;0), C(0;6;0) là?
+**Bài luyện 62.** Trọng tâm tam giác \(A(0;0;0)\), \(B(3;0;0)\), \(C(0;6;0)\) là?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (1;2;0)
+- **Đáp án:** \((1;2;0)\)
 - **Lời giải/suy luận:** Lấy tổng ba tọa độ rồi chia 3.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P06; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 63.** Trung điểm đoạn AB với A(-2;4;0) B(4;-2;6) là?
+**Bài luyện 63.** Trung điểm đoạn AB với \(A(-2;4;0)\) \(B(4;-2;6)\) là?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (1;1;3)
+- **Đáp án:** \((1;1;3)\)
 - **Lời giải/suy luận:** Trung bình theo trục x,y,z.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W03; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 64.** Cho A(1;2;3), B(3;4;5), C(5;0;1). Tìm trọng tâm G và kiểm tra tọa độ của trung điểm M của AB.
+**Bài luyện 64.** Cho \(A(1;2;3)\), \(B(3;4;5)\), \(C(5;0;1)\). Tìm trọng tâm G và kiểm tra tọa độ của trung điểm M của AB.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** $G=(3;2;3)$; $M=(2;3;4)$.
-- **Lời giải/suy luận:** $G=((1+3+5)/3;(2+4+0)/3;(3+5+1)/3)=(3;2;3)$. Trung điểm là (2;3;4).
+- **Đáp án:** \(G=(3;2;3)\); \(M=(2;3;4)\).
+- **Lời giải/suy luận:** \(G=(\frac{1+3+5}3;\frac{2+4+0}3;\frac{3+5+1}3)=(3;2;3)\). Trung điểm là \((2;3;4)\).
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 3 điểm G; 2 điểm M và cách tính từng tọa độ.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P13; PRIMARY_OUTCOME: TOP18-O13; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 65.** Tìm trọng tâm tam giác A=(0,0,0), B=(3,0,3), C=(0,6,0).
+**Bài luyện 65.** Tìm trọng tâm tam giác \(A=(0;0;0)\), \(B=(3;0;3)\), \(C=(0;6;0)\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-G=(1,2,1) vì cộng ba tọa độ từng trục rồi chia 3.
+\(G=(1;2;1)\) vì cộng ba tọa độ từng trục rồi chia 3.
 
 **D6:** Nếu kết quả bất ngờ, lấy 2M−A phải thu B; với trọng tâm G, 3G=A+B+C.
 
@@ -2138,7 +2138,7 @@ G=(1,2,1) vì cộng ba tọa độ từng trục rồi chia 3.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** -1
-- **Lời giải/suy luận:** $1·2+2·0+3·(-1)=-1$.
+- **Lời giải/suy luận:** \(1\cdot 2+2\cdot 0+3\cdot (-1)=-1\).
 
 </details>
 
@@ -2158,7 +2158,7 @@ G=(1,2,1) vì cộng ba tọa độ từng trục rồi chia 3.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 45°
-- **Lời giải/suy luận:** $\cos\theta=1/(1\cdot\sqrt2)=1/\sqrt2$.
+- **Lời giải/suy luận:** \(\cos\theta=\frac1{1\cdot\sqrt2}=\frac1{\sqrt2}\).
 
 </details>
 
@@ -2191,17 +2191,17 @@ cos=1/(1·√2)=1/√2 nên góc 45°.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 5
-- **Lời giải/suy luận:** $\sqrt{9+16+0}=5$.
+- **Lời giải/suy luận:** \(\sqrt{9+16+0}=5\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P09; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 72.** Khoảng cách A(1;2;3), B(1;2;7) bằng?
+**Bài luyện 72.** Khoảng cách \(A(1;2;3)\), \(B(1;2;7)\) bằng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 4
-- **Lời giải/suy luận:** Độ chênh tọa độ (0;0;4) có độ dài 4.
+- **Lời giải/suy luận:** Độ chênh tọa độ \((0;0;4)\) có độ dài 4.
 
 </details>
 
@@ -2211,42 +2211,42 @@ cos=1/(1·√2)=1/√2 nên góc 45°.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 7
-- **Lời giải/suy luận:** $\sqrt{4+9+36}=7$.
+- **Lời giải/suy luận:** \(\sqrt{4+9+36}=7\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W05; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 74.** Cho A(-1;2;3), B(2;-2;15). Tính AB. Nêu vì sao không thể lấy tổng trị tuyệt đối ba độ chênh.
+**Bài luyện 74.** Cho \(A(-1;2;3)\), \(B(2;-2;15)\). Tính AB. Nêu vì sao không thể lấy tổng trị tuyệt đối ba độ chênh.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** 13
-- **Lời giải/suy luận:** $\overrightarrow{AB}=(3;-4;12)$, $AB=\sqrt{9+16+144}=13$. Tổng trị tuyệt đối là độ dài đi theo ba trục, không phải khoảng cách thẳng.
+- **Lời giải/suy luận:** \(\overrightarrow{AB}=(3;-4;12)\), \(AB=\sqrt{9+16+144}=13\). Tổng trị tuyệt đối là độ dài đi theo ba trục, không phải khoảng cách thẳng.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm vectơ AB; 2 điểm độ dài; 1 điểm giải thích hình học.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P15; PRIMARY_OUTCOME: TOP18-O15; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 75.** Khoảng cách giữa A=(0,1,−2) và B=(2,−2,4)?
+**Bài luyện 75.** Khoảng cách giữa \(A=(0;1;-2)\) và \(B=(2;-2;4)\)?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-AB=(2,−3,6), nên khoảng cách √(4+9+36)=7.
+\(AB=(2;-3;6)\), nên khoảng cách √(4+9+36)=7.
 
 **D6:** Nếu căn ra số âm hoặc thiếu tọa độ z, quay lại định lí Pitago ba chiều.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-W01; PRIMARY_OUTCOME: TOP18-O15; ROLE: TOPIC_WRITTEN; RUBRIC_ORIGINAL_UNCHANGED -->
-**Bài luyện 76.** Cho A=(1,2,3), B=(4,6,3). Hãy tìm vectơ AB, độ dài AB và trung điểm I của AB, giải thích vì sao không lấy khoảng cách bằng tổng ba biến thiên tọa độ.
+**Bài luyện 76.** Cho \(A=(1;2;3)\), \(B=(4;6;3)\). Hãy tìm vectơ AB, độ dài AB và trung điểm I của AB, giải thích vì sao không lấy khoảng cách bằng tổng ba biến thiên tọa độ.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-AB=B−A=(3,4,0). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung điểm I=((1+4)/2,(2+6)/2,(3+3)/2)=(5/2,4,3), không phải tổng 3+4+0.
+AB=B−\(A=(3;4;0)\). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung điểm I=((1+4)/2,(2+6)/2,(3+3)/2)=(5/2,4,3), không phải tổng 3+4+0.
 
 **Rubric 4 điểm (mỗi tiêu chí 1 điểm):**
-- Tính đúng ba tọa độ vectơ AB=(3,4,0) — **1 điểm**.
+- Tính đúng ba tọa độ vectơ \(AB=(3;4;0)\) — **1 điểm**.
 - Giải thích và dùng Pitago ba chiều — **1 điểm**.
 - Kết luận đúng độ dài AB=5 — **1 điểm**.
 - Tính trung điểm I=(5/2,4,3) và loại ngộ nhận cộng tọa độ — **1 điểm**.
@@ -2254,7 +2254,7 @@ AB=B−A=(3,4,0). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung đi�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C06; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 77.** Robot đi thẳng từ A(0;0;0) tới B(3;4;0), tọa độ mét. Quãng đường đi thẳng là bao nhiêu?
+**Bài luyện 77.** Robot đi thẳng từ \(A(0;0;0)\) tới \(B(3;4;0)\), tọa độ mét. Quãng đường đi thẳng là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2274,21 +2274,21 @@ AB=B−A=(3,4,0). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung đi�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P12; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 79.** Máy bay A(1;2;3) tới B(4;6;15) theo đường thẳng; độ dời dài bao nhiêu?
+**Bài luyện 79.** Máy bay \(A(1;2;3)\) tới \(B(4;6;15)\) theo đường thẳng; độ dời dài bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 13 đơn vị
-- **Lời giải/suy luận:** Hiệu (3;4;12), độ dài 13.
+- **Lời giải/suy luận:** Hiệu \((3;4;12)\), độ dài 13.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W06; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 80.** Một thiết bị chuyển động thẳng từ A(2;0;5) đến B(8;-8;11) trong 4 s (tọa độ mét). Tìm vectơ độ dời, độ dài và tốc độ. Khi nào độ dài độ dời khác quãng đường?
+**Bài luyện 80.** Một thiết bị chuyển động thẳng từ \(A(2;0;5)\) đến \(B(8;-8;11)\) trong 4 s (tọa độ mét). Tìm vectơ độ dời, độ dài và tốc độ. Khi nào độ dài độ dời khác quãng đường?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** Độ dời (6;-8;6) m, độ dài $\sqrt{136}=2\sqrt{34}$ m, tốc độ $\sqrt{34}/2$ m/s.
+- **Đáp án:** Độ dời \((6;-8;6)\) m, độ dài \(\sqrt{136}=2\sqrt{34}\) m, tốc độ \(\frac{\sqrt{34}}2\) m/s.
 - **Lời giải/suy luận:** 4 s>0; nếu đường đi cong hoặc vòng lại thì độ dài độ dời nhỏ hơn hoặc bằng quãng đường thực.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm độ dời; 1 điểm độ dài; 1 điểm tốc độ; 1 điểm điều kiện đường thẳng.
@@ -2296,11 +2296,11 @@ AB=B−A=(3,4,0). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung đi�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P16; PRIMARY_OUTCOME: TOP18-O16; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 81.** Máy bay mô hình M0=(2,−1,4) km, v=(1,2,−1) km/h. Sau 2 h ở đâu?
+**Bài luyện 81.** Máy bay mô hình M0=\((2;-1;4)\) km, v=(1,2,−1) km/h. Sau 2 h ở đâu?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-M=(2,−1,4)+2(1,2,−1)=(4,3,2) km.
+\(M=(2;-1;4)\)+2(1,2,−1)=\((4;3;2)\) km.
 
 **D6:** Nếu thấy độ cao âm mà vật không được dưới mặt đất, kiểm mốc t hoặc chiều dương và giới hạn vật lí.
 
@@ -2313,8 +2313,8 @@ M=(2,−1,4)+2(1,2,−1)=(4,3,2) km.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (1,-2,3)
-- **Lời giải có suy luận:** Đọc hệ số x,y,z; (1,-2,3) khác 0.
+- **Đáp án:** \((1;-2;3)\)
+- **Lời giải có suy luận:** Đọc hệ số x,y,z; \((1;-2;3)\) khác 0.
 
 </details>
 
@@ -2323,18 +2323,18 @@ M=(2,−1,4)+2(1,2,−1)=(4,3,2) km.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (4,-2,1)
+- **Đáp án:** \((4;-2;1)\)
 - **Lời giải có suy luận:** u×v=(4,-2,1); hai tích vô hướng lần lượt 4-4 và -2+2 đều 0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 84.** Hai mép mái có hướng (1,0,1) và (0,2,1). Tìm hướng vuông góc mái.
+**Bài luyện 84.** Hai mép mái có hướng \((1;0;1)\) và \((0;2;1)\). Tìm hướng vuông góc mái.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (-2,-1,2)
-- **Lời giải có suy luận:** Tích có hướng (-2,-1,2), kiểm trực giao với cả hai mép.
+- **Đáp án:** \((-2;-1;2)\)
+- **Lời giải có suy luận:** Tích có hướng \((-2;-1;2)\), kiểm trực giao với cả hai mép.
 
 </details>
 
@@ -2361,7 +2361,7 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 87.** Qua M(0,1,-1), n=(1,2,3) viết mặt phẳng.
+**Bài luyện 87.** Qua \(M(0;1;-1)\), n=(1,2,3) viết mặt phẳng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2371,7 +2371,7 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 88.** Qua M(2,0,1), n=(1,-2,2), viết (P).
+**Bài luyện 88.** Qua \(M(2;0;1)\), n=(1,-2,2), viết (P).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2381,17 +2381,17 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 89.** Mặt sàn ngang qua điểm A(1,2,4). Viết phương trình của sàn.
+**Bài luyện 89.** Mặt sàn ngang qua điểm \(A(1;2;4)\). Viết phương trình của sàn.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** z=4
-- **Lời giải có suy luận:** Mặt ngang có pháp tuyến (0,0,1); đi qua z=4 nên z−4=0.
+- **Lời giải có suy luận:** Mặt ngang có pháp tuyến \((0;0;1)\); đi qua z=4 nên z−4=0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 90.** Qua M(-1,2,0) có pháp tuyến n=(2,3,-1). Viết phương trình và kiểm tại M.
+**Bài luyện 90.** Qua \(M(-1;2;0)\) có pháp tuyến n=(2,3,-1). Viết phương trình và kiểm tại M.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -2402,74 +2402,74 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P18; PRIMARY_OUTCOME: TOP18-O18; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 91.** M0=(−1,2,0), n=(1,2,−1). Viết phương trình mặt phẳng và thử lại M0.
+**Bài luyện 91.** M0=\((-1;2;0)\), n=(1,2,−1). Viết phương trình mặt phẳng và thử lại M0.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-(x+1)+2(y−2)−z=0, suy x+2y−z−3=0. Thay (−1,2,0) được −1+4−3=0.
+(x+1)+2(y−2)−z=0, suy x+2y−z−3=0. Thay \((-1;2;0)\) được −1+4−3=0.
 
 **Đường khắc phục D6:** Không để pháp tuyến n=0; thay tọa độ điểm đã cho vào phương trình để phát hiện lỗi dấu.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 92.** A(1,0,0),B(1,1,0),C(1,0,1). Viết (ABC).
+**Bài luyện 92.** \(A(1;0;0)\),\(B(1;1;0)\),\(C(1;0;1)\). Viết (ABC).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** x=1
-- **Lời giải có suy luận:** AB=(0,1,0),AC=(0,0,1) ⇒ n=(1,0,0); qua A ⇒ x−1=0.
+- **Lời giải có suy luận:** \(AB=(0;1;0)\),\(AC=(0;0;1)\) ⇒ n=(1,0,0); qua A ⇒ x−1=0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 93.** A(0,0,0),B(1,1,0),C(0,0,1). Tìm mặt phẳng.
+**Bài luyện 93.** \(A(0;0;0)\),\(B(1;1;0)\),\(C(0;0;1)\). Tìm mặt phẳng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** x−y=0
-- **Lời giải có suy luận:** AB=(1,1,0), AC=(0,0,1), n=(1,-1,0) theo hệ số khác 0; qua O ⇒ x−y=0.
+- **Lời giải có suy luận:** \(AB=(1;1;0)\), \(AC=(0;0;1)\), n=(1,-1,0) theo hệ số khác 0; qua O ⇒ x−y=0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 94.** Ba đỉnh tường (4,0,0),(0,4,0),(4,0,2). Viết mặt phẳng tường.
+**Bài luyện 94.** Ba đỉnh tường \((4;0;0)\),\((0;4;0)\),\((4;0;2)\). Viết mặt phẳng tường.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** x+y−4=0
-- **Lời giải có suy luận:** Hai vectơ trong tường (-4,4,0),(0,0,2) có pháp tuyến cùng phương (1,1,0); qua (4,0,0).
+- **Lời giải có suy luận:** Hai vectơ trong tường \((-4;4;0)\),\((0;0;2)\) có pháp tuyến cùng phương \((1;1;0)\); qua \((4;0;0)\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 95.** Viết mặt phẳng qua A(1,0,0),B(0,1,0),C(0,0,1) và chứng minh ba điểm không thẳng hàng.
+**Bài luyện 95.** Viết mặt phẳng qua \(A(1;0;0)\),\(B(0;1;0)\),\(C(0;0;1)\) và chứng minh ba điểm không thẳng hàng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** x+y+z−1=0
-- **Lời giải có suy luận:** AB=(-1,1,0), AC=(-1,0,1), tích có hướng khác 0; ba điểm đều thỏa x+y+z=1.
+- **Lời giải có suy luận:** \(AB=(-1;1;0)\), \(AC=(-1;0;1)\), tích có hướng khác 0; ba điểm đều thỏa x+y+z=1.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ lập AB, AC và kiểm không thẳng hàng; 1đ xác định pháp tuyến; 1đ viết phương trình và thử đủ ba điểm; 1đ nêu tính duy nhất.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P19; PRIMARY_OUTCOME: TOP18-O19; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 96.** Lập mặt phẳng qua A=(0,0,0),B=(1,0,1),C=(0,1,1).
+**Bài luyện 96.** Lập mặt phẳng qua \(A=(0;0;0)\),\(B=(1;0;1)\),\(C=(0;1;1)\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-AB=(1,0,1),AC=(0,1,1), n=(−1,−1,1) nên mặt phẳng −x−y+z=0, hoặc z=x+y.
+\(AB=(1;0;1)\),\(AC=(0;1;1)\), n=(−1,−1,1) nên mặt phẳng −x−y+z=0, hoặc z=x+y.
 
 **Đường khắc phục D6:** Kiểm AB,AC có cùng phương không trước khi dựng n, và thay đủ ba điểm vào đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-W02; PRIMARY_OUTCOME: TOP18-O19; ROLE: TOPIC_WRITTEN; RUBRIC_ORIGINAL_UNCHANGED -->
-**Bài luyện 97.** Trong Oxyz, cho A=(1,0,0), B=(0,1,0), C=(0,0,1). Chứng minh ba điểm không thẳng hàng, lập phương trình mặt phẳng (ABC) và kiểm lại cả ba điểm.
+**Bài luyện 97.** Trong Oxyz, cho \(A=(1;0;0)\), \(B=(0;1;0)\), \(C=(0;0;1)\). Chứng minh ba điểm không thẳng hàng, lập phương trình mặt phẳng (ABC) và kiểm lại cả ba điểm.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành phần y). Pháp tuyến n=(1,1,1) vuông góc cả hai. Qua A: (x−1)+y+z=0 ⇒ x+y+z=1. Thay A,B,C đều có tổng tọa độ bằng 1.
+\(AB=(-1;1;0)\), \(AC=(-1;0;1)\) không cùng phương (chẳng hạn vì thành phần y). Pháp tuyến n=(1,1,1) vuông góc cả hai. Qua A: (x−1)+y+z=0 ⇒ x+y+z=1. Thay A,B,C đều có tổng tọa độ bằng 1.
 
 **Rubric 4 điểm (mỗi tiêu chí 1 điểm):**
 - Tính đúng AB,AC và chứng minh chúng không cùng phương — **1 điểm**.
@@ -2480,27 +2480,27 @@ AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành ph�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 98.** Qua (2,1,0) song song Ox và Oz. Viết mặt phẳng.
+**Bài luyện 98.** Qua \((2;1;0)\) song song Ox và Oz. Viết mặt phẳng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** y=1
-- **Lời giải có suy luận:** Có 2 hướng (1,0,0),(0,0,1), pháp tuyến (0,1,0); qua điểm cho trước ⇒ y=1.
+- **Lời giải có suy luận:** Có 2 hướng \((1;0;0)\),\((0;0;1)\), pháp tuyến \((0;1;0)\); qua điểm cho trước ⇒ y=1.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 99.** Mặt phẳng chứa trục Oy và điểm (1,0,2). Viết phương trình.
+**Bài luyện 99.** Mặt phẳng chứa trục Oy và điểm \((1;0;2)\). Viết phương trình.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 2x−z=0
-- **Lời giải có suy luận:** Hai hướng Oy=(0,1,0) và (1,0,2), n=(2,0,-1); qua O.
+- **Lời giải có suy luận:** Hai hướng Oy=\((0;1;0)\) và \((1;0;2)\), n=(2,0,-1); qua O.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 100.** Mái qua P(0,0,2), song song hai hướng (1,1,0),(0,1,1). Viết mặt mái.
+**Bài luyện 100.** Mái qua \(P(0;0;2)\), song song hai hướng \((1;1;0)\),\((0;1;1)\). Viết mặt mái.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2510,22 +2510,22 @@ AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành ph�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 101.** Mặt phẳng qua O chứa Ox và điểm B(0,2,1); lập phương trình.
+**Bài luyện 101.** Mặt phẳng qua O chứa Ox và điểm \(B(0;2;1)\); lập phương trình.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** y−2z=0
-- **Lời giải có suy luận:** Hai hướng Ox và OB=(0,2,1), n=(0,-1,2) hay (0,1,-2); thay B được 0.
+- **Lời giải có suy luận:** Hai hướng Ox và \(OB=(0;2;1)\), n=(0,-1,2) hay \((0;1;-2)\); thay B được 0.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ nhận đúng hai hướng của mặt; 1đ tìm pháp tuyến; 1đ lập và thử phương trình; 1đ giải thích điều kiện chứa trục so với song song trục.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P20; PRIMARY_OUTCOME: TOP18-O20; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 102.** Tìm mặt phẳng chứa Oy và A=(2,0,−1).
+**Bài luyện 102.** Tìm mặt phẳng chứa Oy và \(A=(2;0;-1)\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Dùng e2=(0,1,0) và OA=(2,0,−1); pháp tuyến n=(1,0,2), nên x+2z=0; Oy và A đều thỏa.
+Dùng e2=(0,1,0) và \(OA=(2;0;-1)\); pháp tuyến n=(1,0,2), nên x+2z=0; Oy và A đều thỏa.
 
 **Đường khắc phục D6:** Không bỏ điều kiện chứa điểm/đường; một mặt chỉ có pháp tuyến đúng nhưng lệch vị trí vẫn sai.
 
@@ -2557,7 +2557,7 @@ Dùng e2=(0,1,0) và OA=(2,0,−1); pháp tuyến n=(1,0,2), nên x+2z=0; Oy và
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Có
-- **Lời giải có suy luận:** Pháp tuyến (0,0,1) và (1,0,0) có dot=0.
+- **Lời giải có suy luận:** Pháp tuyến \((0;0;1)\) và \((1;0;0)\) có dot=0.
 
 </details>
 
@@ -2594,7 +2594,7 @@ Pháp tuyến n1=(1,−1,0),n2=(1,1,0); tích n1·n2=0 và cả hai khác không
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 109.** M(2,-1,1), P:2x+y+2z−1=0. Tính d.
+**Bài luyện 109.** \(M(2;-1;1)\), P:2x+y+2z−1=0. Tính d.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2614,7 +2614,7 @@ Pháp tuyến n1=(1,−1,0),n2=(1,1,0); tích n1·n2=0 và cả hai khác không
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 111.** Tính khoảng cách M(1,1,2) đến 2x−2y+z−4=0. Viết đủ tử, mẫu và kết luận.
+**Bài luyện 111.** Tính khoảng cách \(M(1;1;2)\) đến 2x−2y+z−4=0. Viết đủ tử, mẫu và kết luận.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -2625,7 +2625,7 @@ Pháp tuyến n1=(1,−1,0),n2=(1,1,0); tích n1·n2=0 và cả hai khác không
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P22; PRIMARY_OUTCOME: TOP18-O22; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 112.** Tính khoảng cách M=(1,1,1) đến P:2x−y+2z−6=0.
+**Bài luyện 112.** Tính khoảng cách \(M=(1;1;1)\) đến P:2x−y+2z−6=0.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -2636,16 +2636,16 @@ Thay M: 2−1+2−6=−3, |−3|=3, |n|=√(4+1+4)=3 nên d=1.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-W06; PRIMARY_OUTCOME: TOP18-O22; ROLE: TOPIC_WRITTEN; RUBRIC_ORIGINAL_UNCHANGED -->
-**Bài luyện 113.** Một đường bay được mô tả bởi d(t)=(2+t,−1,t), t thực; nó cắt mặt phẳng P:x+y+z=3. Tìm giao điểm và tính khoảng cách từ điểm M=(0,0,0) đến P.
+**Bài luyện 113.** Một đường bay được mô tả bởi d(t)=(2+t,−1,t), t thực; nó cắt mặt phẳng P:x+y+z=3. Tìm giao điểm và tính khoảng cách từ điểm \(M=(0;0;0)\) đến P.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm (3,−1,1). Pháp tuyến P là (1,1,1), khoảng cách từ O đến P bằng |−3|/√3=√3; đây là khoảng cách vuông góc, không phải khoảng cách O đến giao điểm.
+Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm \((3;-1;1)\). Pháp tuyến P là \((1;1;1)\), khoảng cách từ O đến P bằng |−3|/√3=√3; đây là khoảng cách vuông góc, không phải khoảng cách O đến giao điểm.
 
 **Rubric 4 điểm (mỗi tiêu chí 1 điểm):**
 - Thế đúng d vào P và giải t=1 — **1 điểm**.
-- Kết luận giao điểm (3,−1,1), kiểm thuộc P — **1 điểm**.
-- Xác định pháp tuyến (1,1,1) và tính d(O,P)=√3 — **1 điểm**.
+- Kết luận giao điểm \((3;-1;1)\), kiểm thuộc P — **1 điểm**.
+- Xác định pháp tuyến \((1;1;1)\) và tính d(O,P)=√3 — **1 điểm**.
 - Phân biệt khoảng cách O–mặt với đoạn nối O–giao điểm — **1 điểm**.
 
 </details>
@@ -2653,17 +2653,17 @@ Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm (3,−1,1). Pháp tuy
 ## 5. Đường thẳng và giao điểm
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 114.** Đường thẳng qua O hướng (1,0,2)?
+**Bài luyện 114.** Đường thẳng qua O hướng \((1;0;2)\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** (t,0,2t)
-- **Lời giải có suy luận:** M=(0,0,0)+t(1,0,2).
+- **Lời giải có suy luận:** \(M=(0;0;0)\)+\(t(1;0;2)\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 115.** Qua (-1,0,4), hướng (3,2,-1), viết tham số.
+**Bài luyện 115.** Qua \((-1;0;4)\), hướng \((3;2;-1)\), viết tham số.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2673,7 +2673,7 @@ Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm (3,−1,1). Pháp tuy
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 116.** Drone xuất phát (0,2,1), bay thẳng theo tốc độ (1,-1,2) m/s. Vị trí sau t giây?
+**Bài luyện 116.** Drone xuất phát \((0;2;1)\), bay thẳng theo tốc độ \((1;-1;2)\) m/s. Vị trí sau t giây?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2683,18 +2683,18 @@ Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm (3,−1,1). Pháp tuy
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 117.** Qua P(2,1,-1), hướng (-1,3,2). Viết tham số và tìm tọa độ khi t=2.
+**Bài luyện 117.** Qua \(P(2;1;-1)\), hướng \((-1;3;2)\). Viết tham số và tìm tọa độ khi t=2.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** (2−t,1+3t,−1+2t); khi t=2 là (0,7,3)
-- **Lời giải có suy luận:** Thay t=0 thu P; cùng t=2 vào cả ba dòng: (0,7,3).
+- **Đáp án:** (2−t,1+3t,−1+2t); khi t=2 là \((0;7;3)\)
+- **Lời giải có suy luận:** Thay t=0 thu P; cùng t=2 vào cả ba dòng: \((0;7;3)\).
 - **Rubric Written /5 (chấm theo từng bước):** 2đ xác định M0 và hướng u khác 0; 1đ viết một tham số chung t; 1đ tính tọa độ kiểm theo t; 1đ phân biệt đường thẳng t∈R với chuyển động t≥0.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P24; PRIMARY_OUTCOME: TOP18-O24; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 118.** Đường qua P=(−1,2,0) hướng v=(0,3,−2). Viết phương trình tham số.
+**Bài luyện 118.** Đường qua \(P=(-1;2;0)\) hướng v=(0,3,−2). Viết phương trình tham số.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -2705,59 +2705,59 @@ x=−1,y=2+3t,z=−2t (t∈R). Tại t=0 trở về P; vectơ v khác 0.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 119.** Qua A(0,0,0), B(2,0,1).
+**Bài luyện 119.** Qua \(A(0;0;0)\), \(B(2;0;1)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** (2t,0,t)
-- **Lời giải có suy luận:** AB=(2,0,1), t=0→A,t=1→B.
+- **Lời giải có suy luận:** \(AB=(2;0;1)\), t=0→A,t=1→B.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 120.** Qua A(1,2,0),B(1,5,3).
+**Bài luyện 120.** Qua \(A(1;2;0)\),\(B(1;5;3)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** (1,2+3t,3t)
-- **Lời giải có suy luận:** AB=(0,3,3) không phải vectơ 0.
+- **Lời giải có suy luận:** \(AB=(0;3;3)\) không phải vectơ 0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 121.** Cáp căng từ (0,0,4) tới (4,2,0). Viết quỹ đạo cáp.
+**Bài luyện 121.** Cáp căng từ \((0;0;4)\) tới \((4;2;0)\). Viết quỹ đạo cáp.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** (4t,2t,4−4t)
-- **Lời giải có suy luận:** AB=(4,2,-4), đoạn vật lý 0≤t≤1; đường thẳng kéo dài t∈R.
+- **Lời giải có suy luận:** \(AB=(4;2;-4)\), đoạn vật lý 0≤t≤1; đường thẳng kéo dài t∈R.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 122.** Viết tham số qua P(2,-1,0),Q(0,3,2) và kiểm Q.
+**Bài luyện 122.** Viết tham số qua \(P(2;-1;0)\),\(Q(0;3;2)\) và kiểm Q.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** (2−2t,−1+4t,2t)
-- **Lời giải có suy luận:** PQ=(-2,4,2). t=1 cho Q; P khác Q nên đường thẳng xác định.
+- **Lời giải có suy luận:** \(PQ=(-2;4;2)\). t=1 cho Q; P khác Q nên đường thẳng xác định.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ lấy đúng hiệu B−A khác 0; 1đ viết đủ ba phương trình cùng t; 1đ kiểm t=0,1; 1đ giải thích đoạn thẳng 0≤t≤1.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P25; PRIMARY_OUTCOME: TOP18-O25; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 123.** Tìm đường qua C=(1,−1,0),D=(1,1,4).
+**Bài luyện 123.** Tìm đường qua \(C=(1;-1;0)\),\(D=(1;1;4)\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-CD=(0,2,4), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.
+\(CD=(0;2;4)\), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.
 
 **Đường khắc phục D6:** Nhớ A≠B, lấy đúng B−A và thử lại tọa độ cả hai điểm.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 124.** Qua O, hướng (1,2,3). Viết chính tắc.
+**Bài luyện 124.** Qua O, hướng \((1;2;3)\). Viết chính tắc.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2767,7 +2767,7 @@ CD=(0,2,4), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 125.** Qua (1,2,0), hướng (0,1,-2). Viết dạng không chia cho 0.
+**Bài luyện 125.** Qua \((1;2;0)\), hướng \((0;1;-2)\). Viết dạng không chia cho 0.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2777,17 +2777,17 @@ CD=(0,2,4), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 126.** Đường trục thẳng đứng qua (2,3,0) theo hướng Oz có phương trình?
+**Bài luyện 126.** Đường trục thẳng đứng qua \((2;3;0)\) theo hướng Oz có phương trình?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** x=2, y=3, z=t
-- **Lời giải có suy luận:** Hướng (0,0,1); không tạo x/0 hoặc y/0.
+- **Lời giải có suy luận:** Hướng \((0;0;1)\); không tạo x/0 hoặc y/0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 127.** Qua (-1,1,2),u=(2,0,3). Viết cả tham số và dạng chính tắc đúng.
+**Bài luyện 127.** Qua \((-1;1;2)\),u=(2,0,3). Viết cả tham số và dạng chính tắc đúng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -2809,7 +2809,7 @@ x=2 và (y+1)/3=(z−5)/(−1). Không ghi (x−2)/0.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 129.** d=(t,2t,3). Điểm M(2,4,3) thuộc d?
+**Bài luyện 129.** d=(t,2t,3). Điểm \(M(2;4;3)\) thuộc d?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2819,7 +2819,7 @@ x=2 và (y+1)/3=(z−5)/(−1). Không ghi (x−2)/0.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 130.** d=(1+2t,3−t,0). M(5,1,0) thuộc d?
+**Bài luyện 130.** d=(1+2t,3−t,0). \(M(5;1;0)\) thuộc d?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2833,13 +2833,13 @@ x=2 và (y+1)/3=(z−5)/(−1). Không ghi (x−2)/0.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (4,5,0)
+- **Đáp án:** \((4;5;0)\)
 - **Lời giải có suy luận:** Thay cùng t=3 cho ba tọa độ.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 132.** d=(2−t,1+2t,3t). Kiểm M(0,5,6) và N(0,5,5).
+**Bài luyện 132.** d=(2−t,1+2t,3t). Kiểm \(M(0;5;6)\) và \(N(0;5;5)\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -2850,7 +2850,7 @@ x=2 và (y+1)/3=(z−5)/(−1). Không ghi (x−2)/0.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P27; PRIMARY_OUTCOME: TOP18-O27; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 133.** Điểm P=(2,0,2) có thuộc d: x=1+t,y=t,z=t không?
+**Bài luyện 133.** Điểm \(P=(2;0;2)\) có thuộc d: x=1+t,y=t,z=t không?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -2881,7 +2881,7 @@ Không. Từ x=2 suy t=1; khi đó y=z=1, khác y=0,z=2 của P.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 136.** Hai hành lang có hướng (2,1,0),(-1,2,0). Các hướng vuông góc?
+**Bài luyện 136.** Hai hành lang có hướng \((2;1;0)\),\((-1;2;0)\). Các hướng vuông góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2902,11 +2902,11 @@ Không. Từ x=2 suy t=1; khi đó y=z=1, khác y=0,z=2 của P.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P28; PRIMARY_OUTCOME: TOP18-O28; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 138.** d1 qua (1,1,0) hướng (2,0,0), d2 qua (3,1,0) hướng (1,0,0). Trùng hay song song phân biệt?
+**Bài luyện 138.** d1 qua \((1;1;0)\) hướng \((2;0;0)\), d2 qua \((3;1;0)\) hướng \((1;0;0)\). Trùng hay song song phân biệt?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Trùng: hướng cùng phương và điểm (3,1,0) nằm trên d1 khi t=1.
+Trùng: hướng cùng phương và điểm \((3;1;0)\) nằm trên d1 khi t=1.
 
 **Đường khắc phục D6:** Khi đã có hướng tỉ lệ, đừng kết luận song song phân biệt trước khi kiểm một điểm.
 
@@ -2937,7 +2937,7 @@ Trùng: hướng cùng phương và điểm (3,1,0) nằm trên d1 khi t=1.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (0,0,2)
+- **Đáp án:** \((0;0;2)\)
 - **Lời giải có suy luận:** Từ x=y=0 t=s=0; cùng cao độ z=2.
 
 </details>
@@ -2948,7 +2948,7 @@ Trùng: hướng cùng phương và điểm (3,1,0) nằm trên d1 khi t=1.
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** Không giao và khác hướng
-- **Lời giải có suy luận:** Mọi điểm d1 có z=0, d2 có z=1 nên không giao; hướng (1,1,0) và (0,1,0) không cùng phương.
+- **Lời giải có suy luận:** Mọi điểm d1 có z=0, d2 có z=1 nên không giao; hướng \((1;1;0)\) và \((0;1;0)\) không cùng phương.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ lập hệ giao với hai tham số t,s; 1đ xét hai tọa độ; 1đ kiểm tọa độ còn lại và khác hướng; 1đ kết luận chéo/giao có căn cứ.
 
 </details>
@@ -2969,7 +2969,7 @@ Khác phương, z luôn 0 ở d1 nhưng luôn 2 ở d2, hệ vô nghiệm ⇒ ch
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (3,0,1)
+- **Đáp án:** \((3;0;1)\)
 - **Lời giải có suy luận:** 1+t=3 ⇒ t=2.
 
 </details>
@@ -2979,8 +2979,8 @@ Khác phương, z luôn 0 ở d1 nhưng luôn 2 ở d2, hệ vô nghiệm ⇒ ch
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (5,2,1)
-- **Lời giải có suy luận:** Tổng 4+2t=8 ⇒ t=2; điểm (5,2,1).
+- **Đáp án:** \((5;2;1)\)
+- **Lời giải có suy luận:** Tổng 4+2t=8 ⇒ t=2; điểm \((5;2;1)\).
 
 </details>
 
@@ -2989,8 +2989,8 @@ Khác phương, z luôn 0 ở d1 nhưng luôn 2 ở d2, hệ vô nghiệm ⇒ ch
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (10,0,0) khi t=5
-- **Lời giải có suy luận:** Giải 5−t=0 ⇒ t=5; tọa độ (10,0,0).
+- **Đáp án:** \((10;0;0)\) khi t=5
+- **Lời giải có suy luận:** Giải 5−t=0 ⇒ t=5; tọa độ \((10;0;0)\).
 
 </details>
 
@@ -2999,8 +2999,8 @@ Khác phương, z luôn 0 ở d1 nhưng luôn 2 ở d2, hệ vô nghiệm ⇒ ch
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** (3,0,7)
-- **Lời giải có suy luận:** Thế vào vế trái: 1+t−2(2−t)+3+2t=5t ⇒ t=2, điểm (3,0,7), 3+0+7=10.
+- **Đáp án:** \((3;0;7)\)
+- **Lời giải có suy luận:** Thế vào vế trái: 1+t−2(2−t)+3+2t=5t ⇒ t=2, điểm \((3;0;7)\), 3+0+7=10.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ thế đúng ba tham số vào phương trình mặt phẳng; 1đ giải t; 1đ viết và kiểm giao điểm; 1đ nêu trường hợp 0/1/vô số nghiệm.
 
 </details>
@@ -3010,7 +3010,7 @@ Khác phương, z luôn 0 ở d1 nhưng luôn 2 ở d2, hệ vô nghiệm ⇒ ch
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Thay: (2+t)−1+t=3 → 2t=2 → t=1, điểm (3,−1,1).
+Thay: (2+t)−1+t=3 → 2t=2 → t=1, điểm \((3;-1;1)\).
 
 **Đường khắc phục D6:** Khi n·u=0, không chia cho 0; so sánh hằng số để phân biệt nằm trong/sóng song.
 
@@ -3021,12 +3021,12 @@ Thay: (2+t)−1+t=3 → 2t=2 → t=1, điểm (3,−1,1).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Thay tọa độ vào P: (1+t)+(2−t)+t=3+t=4 ⇒ t=1. Khi ấy M(1)=(2,1,1); kiểm 2+1+1=4. Nếu mỗi tọa độ một tham số, đó không còn là cùng một điểm trên quỹ đạo.
+Thay tọa độ vào P: (1+t)+(2−t)+t=3+t=4 ⇒ t=1. Khi ấy M(1)=\((2;1;1)\); kiểm 2+1+1=4. Nếu mỗi tọa độ một tham số, đó không còn là cùng một điểm trên quỹ đạo.
 
 **Rubric 4 điểm (mỗi tiêu chí 1 điểm):**
 - Viết đúng điều kiện 3+t=4 khi thế d vào mặt — **1 điểm**.
 - Giải đúng t=1 giờ — **1 điểm**.
-- Tính tọa độ (2,1,1) và thế kiểm lại P — **1 điểm**.
+- Tính tọa độ \((2;1;1)\) và thế kiểm lại P — **1 điểm**.
 - Giải thích cùng một t trong ba tọa độ và đơn vị thời gian — **1 điểm**.
 
 </details>
@@ -3054,7 +3054,7 @@ Thay tọa độ vào P: (1+t)+(2−t)+t=3+t=4 ⇒ t=1. Khi ấy M(1)=(2,1,1); k
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 152.** Hai hướng (1,0,0) và (1,1,0) tạo góc mấy độ?
+**Bài luyện 152.** Hai hướng \((1;0;0)\) và \((1;1;0)\) tạo góc mấy độ?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3106,7 +3106,7 @@ Tích vô hướng 0, nên góc 90°. Hai hướng đều khác không.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 157.** Đường dốc hướng (3,0,4) so với nền z=0 có góc?
+**Bài luyện 157.** Đường dốc hướng \((3;0;4)\) so với nền z=0 có góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3178,7 +3178,7 @@ u·n=√3, |u|=2, |n|=1 ⇒ sinθ=√3/2, nên góc đường–mặt θ=60°. G
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 45°
-- **Lời giải có suy luận:** n_mái=(-1,0,1),n_nền=(0,0,1), cos=1/√2.
+- **Lời giải có suy luận:** n_mái=\((-1;0;1)\),n_nền=\((0;0;1)\), cos=1/√2.
 
 </details>
 
@@ -3188,7 +3188,7 @@ u·n=√3, |u|=2, |n|=1 ⇒ sinθ=√3/2, nên góc đường–mặt θ=60°. G
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** cosθ=2/3, θ=arccos(2/3)
-- **Lời giải có suy luận:** nP=(1,2,2), |nP|=3, nQ=(0,0,1), cos=2/3.
+- **Lời giải có suy luận:** nP=\((1;2;2)\), |nP|=3, nQ=\((0;0;1)\), cos=2/3.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ tìm đúng pháp tuyến của cả hai mặt; 1đ tính dot/chuẩn; 1đ dùng cos trị tuyệt đối; 1đ so sánh với công thức góc đường–mặt.
 
 </details>
@@ -3250,14 +3250,14 @@ Pháp tuyến n1=(1,1,0),n2=(1,−1,0), dot=0 nên góc 90°.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song song phân biệt.
+n=(1,0,0),u=(0,1,0), n·u=0 và điểm \((1;0;0)\) không thuộc x=0, nên song song phân biệt.
 
 **Đường khắc phục D6:** Một đẳng thức hướng không quyết định vị trí; kiểm điểm/đường thuộc nhau.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 171.** Đường có hướng (1,0,1) so với nền ngang?
+**Bài luyện 171.** Đường có hướng \((1;0;1)\) so với nền ngang?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3287,7 +3287,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 174.** Một thanh chống có hướng (6,0,8) dài 10m. Tính sin góc với nền và độ cao tăng sau đoạn đó.
+**Bài luyện 174.** Một thanh chống có hướng \((6;0;8)\) dài 10m. Tính sin góc với nền và độ cao tăng sau đoạn đó.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -3321,7 +3321,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 177.** C(2,0,-1),R=3. Viết phương trình.
+**Bài luyện 177.** \(C(2;0;-1)\),R=3. Viết phương trình.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3331,7 +3331,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 178.** Bộ phát sóng tâm (0,0,5), bán kính 10m. Biên phủ 3D?
+**Bài luyện 178.** Bộ phát sóng tâm \((0;0;5)\), bán kính 10m. Biên phủ 3D?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3341,7 +3341,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 179.** C(-1,2,0), R=√5. Lập phương trình mặt cầu và chứng minh R>0.
+**Bài luyện 179.** \(C(-1;2;0)\), R=√5. Lập phương trình mặt cầu và chứng minh R>0.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -3352,7 +3352,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P36; PRIMARY_OUTCOME: TOP18-O36; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 180.** Viết mặt cầu tâm (−1,2,0), bán kính 3.
+**Bài luyện 180.** Viết mặt cầu tâm \((-1;2;0)\), bán kính 3.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -3367,7 +3367,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** C(1,0,0), R=1
+- **Đáp án:** \(C(1;0;0)\), R=1
 - **Lời giải có suy luận:** (x−1)²+y²+z²=1.
 
 </details>
@@ -3377,7 +3377,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** C(-1,2,-3), R=3
+- **Đáp án:** \(C(-1;2;-3)\), R=3
 - **Lời giải có suy luận:** Hoàn chỉnh: (x+1)²+(y−2)²+(z+3)²=1+4+9−5=9.
 
 </details>
@@ -3397,7 +3397,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** C(2,-1,1), R=√5
+- **Đáp án:** \(C(2;-1;1)\), R=√5
 - **Lời giải có suy luận:** Chuyển về (x−2)²+(y+1)²+(z−1)²=5; R²=4+1+1−1=5>0.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ hoàn chỉnh ba bình phương; 1đ tìm đúng tâm; 1đ tính R² và R; 1đ xét điều kiện R²>0 và trường hợp suy biến.
 
@@ -3408,14 +3408,14 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Hoàn bình phương: (x+1)²+(y−2)²+z²=1; tâm (−1,2,0), R=1.
+Hoàn bình phương: (x+1)²+(y−2)²+z²=1; tâm \((-1;2;0)\), R=1.
 
 **Đường khắc phục D6:** Không quên chuyển hằng số khi hoàn bình phương; tính R² trước khi lấy căn, kiểm >0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 186.** C=O,R=3,P(1,1,1). Vị trí?
+**Bài luyện 186.** C=O,R=3,\(P(1;1;1)\). Vị trí?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3425,7 +3425,7 @@ Hoàn bình phương: (x+1)²+(y−2)²+z²=1; tâm (−1,2,0), R=1.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 187.** C(1,0,0),R=2,P(4,0,0). Vị trí?
+**Bài luyện 187.** \(C(1;0;0)\),R=2,\(P(4;0;0)\). Vị trí?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3435,7 +3435,7 @@ Hoàn bình phương: (x+1)²+(y−2)²+z²=1; tâm (−1,2,0), R=1.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 188.** Mặt cầu tâm (0,0,3), R=5 cắt nền z=0 theo vòng tròn bán kính?
+**Bài luyện 188.** Mặt cầu tâm \((0;0;3)\), R=5 cắt nền z=0 theo vòng tròn bán kính?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3445,7 +3445,7 @@ Hoàn bình phương: (x+1)²+(y−2)²+z²=1; tâm (−1,2,0), R=1.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 189.** C(1,2,2),R=3. Phân loại P(4,2,2), Q(1,2,0), Z(1,2,6).
+**Bài luyện 189.** \(C(1;2;2)\),R=3. Phân loại \(P(4;2;2)\), \(Q(1;2;0)\), \(Z(1;2;6)\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -3456,7 +3456,7 @@ Hoàn bình phương: (x+1)²+(y−2)²+z²=1; tâm (−1,2,0), R=1.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P38; PRIMARY_OUTCOME: TOP18-O38; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 190.** Mặt cầu tâm C=(1,1,1) R=2, xét P=(1,1,3) và Q=(2,2,2).
+**Bài luyện 190.** Mặt cầu tâm \(C=(1;1;1)\) R=2, xét \(P=(1;1;3)\) và \(Q=(2;2;2)\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -3467,17 +3467,17 @@ CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 191.** A=(0,0,0),B=(2,0,0). Mặt cầu?
+**Bài luyện 191.** \(A=(0;0;0)\),\(B=(2;0;0)\). Mặt cầu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** (x−1)²+y²+z²=1
-- **Lời giải có suy luận:** Tâm (1,0,0), R=1.
+- **Lời giải có suy luận:** Tâm \((1;0;0)\), R=1.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 192.** A(1,1,1), B(3,1,1). Mặt cầu?
+**Bài luyện 192.** \(A(1;1;1)\), \(B(3;1;1)\). Mặt cầu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3487,46 +3487,46 @@ CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 193.** Cáp đối diện A(0,0,0),B(0,6,8). Tâm và bán kính mặt cầu đường kính AB?
+**Bài luyện 193.** Cáp đối diện \(A(0;0;0)\),\(B(0;6;8)\). Tâm và bán kính mặt cầu đường kính AB?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** C(0,3,4), R=5
-- **Lời giải có suy luận:** AB=10, trung điểm (0,3,4), R=5.
+- **Đáp án:** \(C(0;3;4)\), R=5
+- **Lời giải có suy luận:** AB=10, trung điểm \((0;3;4)\), R=5.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 194.** A(-1,0,2),B(3,2,0) là hai đầu đường kính. Viết mặt cầu và kiểm A,B.
+**Bài luyện 194.** \(A(-1;0;2)\),\(B(3;2;0)\) là hai đầu đường kính. Viết mặt cầu và kiểm A,B.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** (x−1)²+(y−1)²+(z−1)²=6
-- **Lời giải có suy luận:** C=(1,1,1), AB²=4²+2²+(−2)²=24 nên R²=6. CA²=CB²=6.
+- **Lời giải có suy luận:** \(C=(1;1;1)\), AB²=4²+2²+(−2)²=24 nên R²=6. CA²=CB²=6.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ tính đúng trung điểm AB; 1đ tính AB² và chia 4; 1đ lập phương trình; 1đ kiểm cả A và B trên mặt cầu.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P39; PRIMARY_OUTCOME: TOP18-O39; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 195.** A=(0,2,0),B=(0,2,6). Xác định tâm, bán kính và phương trình mặt cầu.
+**Bài luyện 195.** \(A=(0;2;0)\),\(B=(0;2;6)\). Xác định tâm, bán kính và phương trình mặt cầu.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Tâm C=(0,2,3), AB=6, R=3, phương trình x²+(y−2)²+(z−3)²=9.
+Tâm \(C=(0;2;3)\), AB=6, R=3, phương trình x²+(y−2)²+(z−3)²=9.
 
 **Đường khắc phục D6:** Tính trung điểm trước; đường kính là AB, bán kính nửa AB, không dùng AB trực tiếp làm R.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-W05; PRIMARY_OUTCOME: TOP18-O39; ROLE: TOPIC_WRITTEN; RUBRIC_ORIGINAL_UNCHANGED -->
-**Bài luyện 196.** Mặt cầu có đường kính AB với A=(0,0,0), B=(2,4,0). Tìm tâm, bán kính và phương trình; tính bán kính đường tròn khi mặt phẳng z=1 cắt mặt cầu.
+**Bài luyện 196.** Mặt cầu có đường kính AB với \(A=(0;0;0)\), \(B=(2;4;0)\). Tìm tâm, bán kính và phương trình; tính bán kính đường tròn khi mặt phẳng z=1 cắt mặt cầu.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+z²=5. Mặt z=1 cách tâm d=1<R, nên tiết diện có bán kính √(5−1)=2.
+Tâm \(C=(1;2;0)\), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+z²=5. Mặt z=1 cách tâm d=1<R, nên tiết diện có bán kính √(5−1)=2.
 
 **Rubric 4 điểm (mỗi tiêu chí 1 điểm):**
-- Tính đúng tâm C=(1,2,0) — **1 điểm**.
+- Tính đúng tâm \(C=(1;2;0)\) — **1 điểm**.
 - Tính đúng bán kính R=√5 và phương trình mặt cầu — **1 điểm**.
 - Xác định d=1 đến mặt phẳng z=1, kiểm d<R — **1 điểm**.
 - Tính đúng bán kính tiết diện 2 và phân biệt với R — **1 điểm**.
@@ -3544,7 +3544,7 @@ Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 198.** C(0,0,1),R=5, mặt z=0 cắt theo vòng tròn bán kính?
+**Bài luyện 198.** \(C(0;0;1)\),R=5, mặt z=0 cắt theo vòng tròn bán kính?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3554,7 +3554,7 @@ Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 199.** Vùng phát sóng tâm (0,0,10),R=6m có chạm nền z=0 không?
+**Bài luyện 199.** Vùng phát sóng tâm \((0;0;10)\),R=6m có chạm nền z=0 không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3564,7 +3564,7 @@ Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 200.** C(1,-2,3), R=4, P:2x−y+2z+2=0. Chứng minh tiếp xúc và tìm tiếp điểm.
+**Bài luyện 200.** \(C(1;-2;3)\), R=4, P:2x−y+2z+2=0. Chứng minh tiếp xúc và tìm tiếp điểm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -3575,11 +3575,11 @@ Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P40; PRIMARY_OUTCOME: TOP18-O40; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 201.** Mặt cầu tâm C=(0,0,1) bán kính 5, mặt z=4. Tính bán kính đường tròn thiết diện.
+**Bài luyện 201.** Mặt cầu tâm \(C=(0;0;1)\) bán kính 5, mặt z=4. Tính bán kính đường tròn thiết diện.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
+Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm \((0;0;4)\).
 
 **Đường khắc phục D6:** Đầu tiên tính khoảng cách tâm–mặt chuẩn; không lấy trực tiếp số D của phương trình làm d nếu pháp tuyến chưa chuẩn hóa.
 
@@ -3591,18 +3591,18 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 
 
 
-**Bối cảnh liên thông.** Một radar đặt tại O=(0;0;0), vùng phủ bán kính 5 km. Máy bay tại A=(6;4;0) km và bay theo hướng u=(−1;0;0) km/giờ, chỉ xét thời gian t≥0. Ta muốn biết **nó có đi vào vùng phủ hay không, và vào–ra lúc nào**. Đây là bài vận dụng tổng hợp: em cần kết hợp tọa độ, tham số thời gian, khoảng cách và phương trình mặt cầu.
+**Bối cảnh liên thông.** Một radar đặt tại \(O=(0;0;0)\), vùng phủ bán kính 5 km. Máy bay tại \(A=(6;4;0)\) km và bay theo hướng u=(−1;0;0) km/giờ, chỉ xét thời gian t≥0. Ta muốn biết **nó có đi vào vùng phủ hay không, và vào–ra lúc nào**. Đây là bài vận dụng tổng hợp: em cần kết hợp tọa độ, tham số thời gian, khoảng cách và phương trình mặt cầu.
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-W07; PRIMARY_OUTCOME: TOP18-O38; ROLE: TOPIC_WRITTEN; APPLICATION_ONLY_AFTER_B17; ORIGINAL_R03_RUBRIC_UNCHANGED -->
-**Bài luyện 202.** Một radar đặt tại O=(0;0;0) km, vùng phủ là khối cầu bán kính 5 km. Máy bay xuất phát từ A=(6;4;0) km, bay thẳng đều với vectơ vận tốc u=(−1;0;0) km/giờ; chỉ xét thời gian t≥0 giờ. (a) Viết tọa độ M(t). (b) Tính khoảng cách ngắn nhất từ radar đến đường bay trong khoảng t≥0. (c) Tìm thời điểm máy bay nằm trên biên vùng phủ và khoảng thời gian nó nằm trong vùng.
+**Bài luyện 202.** Một radar đặt tại \(O=(0;0;0)\) km, vùng phủ là khối cầu bán kính 5 km. Máy bay xuất phát từ \(A=(6;4;0)\) km, bay thẳng đều với vectơ vận tốc u=(−1;0;0) km/giờ; chỉ xét thời gian t≥0 giờ. (a) Viết tọa độ M(t). (b) Tính khoảng cách ngắn nhất từ radar đến đường bay trong khoảng t≥0. (c) Tìm thời điểm máy bay nằm trên biên vùng phủ và khoảng thời gian nó nằm trong vùng.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
 **Bước 1 – biểu diễn hành trình:** M(t)=A+t u=(6−t;4;0), t≥0. Ta không dùng một tham số riêng cho mỗi tọa độ.
 
-**Bước 2 – xác định điểm gần nhất:** OM(t)²=(6−t)²+4²+0²=(t−6)²+16. Vì (t−6)²≥0 và t=6 thỏa t≥0, khoảng cách nhỏ nhất bằng **4 km**, đạt khi M(6)=(0;4;0). Khoảng cách 4<5 nên máy bay có đi vào vùng phủ.
+**Bước 2 – xác định điểm gần nhất:** OM(t)²=(6−t)²+4²+0²=(t−6)²+16. Vì (t−6)²≥0 và t=6 thỏa t≥0, khoảng cách nhỏ nhất bằng **4 km**, đạt khi M(6)=\((0;4;0)\). Khoảng cách 4<5 nên máy bay có đi vào vùng phủ.
 
-**Bước 3 – tìm hai thời điểm qua biên:** Biên cầu thỏa OM(t)²=5² nên (t−6)²+16=25, tức (t−6)²=9. Suy ra **t=3 giờ** và **t=9 giờ**, lần lượt tại M(3)=(3;4;0) và M(9)=(−3;4;0). Kiểm cả hai điểm: 3²+4²=5².
+**Bước 3 – tìm hai thời điểm qua biên:** Biên cầu thỏa OM(t)²=5² nên (t−6)²+16=25, tức (t−6)²=9. Suy ra **t=3 giờ** và **t=9 giờ**, lần lượt tại M(3)=\((3;4;0)\) và M(9)=\((-3;4;0)\). Kiểm cả hai điểm: 3²+4²=5².
 
 **Bước 4 – kết luận có điều kiện:** Với **3<t<9**, OM(t)<5, máy bay ở trong vùng cầu; t=3 hoặc t=9 ở đúng biên; t<3 hay t>9 ngoài vùng. Bài giả định máy bay đi đều với đơn vị km/giờ và radar có vùng phủ hình cầu cố định.
 
@@ -3610,7 +3610,7 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 
 ![Radar tâm O và đường bay qua vùng cầu: vào tại t=3, gần nhất t=6, ra tại t=9](../../../../docs/assets/images/thpt/FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg)
 
-**Đọc hình nền trắng:** Xem thiết diện Oxy (z=0): đường tròn tâm O bán kính 5, đường bay có tung độ y=4. Mũi tên chỉ chiều bay từ A=(6;4) sang phía x giảm. Hai chấm xanh ở t=3 và t=9 là **giao với biên**; chấm cam ở t=6 là vị trí gần radar nhất, cách O đúng 4 km. Hình biểu diễn đúng tỉ lệ trong mặt phẳng Oxy nhưng **không** thay phép chứng minh bằng bình phương khoảng cách.
+**Đọc hình nền trắng:** Xem thiết diện Oxy (z=0): đường tròn tâm O bán kính 5, đường bay có tung độ y=4. Mũi tên chỉ chiều bay từ \(A=(6;4)\) sang phía x giảm. Hai chấm xanh ở t=3 và t=9 là **giao với biên**; chấm cam ở t=6 là vị trí gần radar nhất, cách O đúng 4 km. Hình biểu diễn đúng tỉ lệ trong mặt phẳng Oxy nhưng **không** thay phép chứng minh bằng bình phương khoảng cách.
 
 **Rubric 4 điểm, mỗi tiêu chí 1 điểm:**
 - Viết đúng M(t)=(6−t;4;0), nêu t≥0 — **1 điểm**.
@@ -3623,7 +3623,7 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 ## 8. Vận dụng tích hợp sau B17 (tự chọn)
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 203.** C(0,0,2),R=3; sàn z=0. Bán kính giao?
+**Bài luyện 203.** \(C(0;0;2)\),R=3; sàn z=0. Bán kính giao?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3633,7 +3633,7 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 204.** C(1,2,1),R=2; sàn z=0. Bán kính giao?
+**Bài luyện 204.** \(C(1;2;1)\),R=2; sàn z=0. Bán kính giao?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -3684,28 +3684,28 @@ Những câu dưới đây là bài tự ôn đã có trong Luyện tập, khôn
 **Câu 1.** Trong tam giác ABC, viết vectơ AB + vectơ BC − vectơ AC dưới dạng đơn giản.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P07; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 2.** Điểm A=(0,4,−3) thuộc mặt phẳng Oyz không? Vì sao?
+**Câu 2.** Điểm \(A=(0;4;-3)\) thuộc mặt phẳng Oyz không? Vì sao?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P10; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 3.** Cho C=(−1,3,2), D=(2,3,−2). Tính CD và DC; có đối nhau không?
+**Câu 3.** Cho \(C=(-1;3;2)\), \(D=(2;3;-2)\). Tính CD và DC; có đối nhau không?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P14; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
 **Câu 4.** u=(1,0,0),v=(1,1,0). Tính cos góc giữa hai vectơ.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P16; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 5.** Máy bay mô hình M0=(2,−1,4) km, v=(1,2,−1) km/h. Sau 2 h ở đâu?
+**Câu 5.** Máy bay mô hình M0=\((2;-1;4)\) km, v=(1,2,−1) km/h. Sau 2 h ở đâu?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P17; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
 **Câu 6.** u=(1,1,0),v=(0,1,1). Tìm một pháp tuyến khác không bằng tích có hướng.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P19; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 7.** Lập mặt phẳng qua A=(0,0,0),B=(1,0,1),C=(0,1,1).
+**Câu 7.** Lập mặt phẳng qua \(A=(0;0;0)\),\(B=(1;0;1)\),\(C=(0;1;1)\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P22; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 8.** Tính khoảng cách M=(1,1,1) đến P:2x−y+2z−6=0.
+**Câu 8.** Tính khoảng cách \(M=(1;1;1)\) đến P:2x−y+2z−6=0.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P24; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 9.** Đường qua P=(−1,2,0) hướng v=(0,3,−2). Viết phương trình tham số.
+**Câu 9.** Đường qua \(P=(-1;2;0)\) hướng v=(0,3,−2). Viết phương trình tham số.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P29; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
 **Câu 10.** Phân loại d1(t)=(t,0,0), d2(s)=(0,s,2).
@@ -3714,7 +3714,7 @@ Những câu dưới đây là bài tự ôn đã có trong Luyện tập, khôn
 **Câu 11.** Một dây cáp có độ dời ngang 8 m, tăng cao 6 m. Tính sin góc cáp với nền và độ dài cáp.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P40; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 12.** Mặt cầu tâm C=(0,0,1) bán kính 5, mặt z=4. Tính bán kính đường tròn thiết diện.
+**Câu 12.** Mặt cầu tâm \(C=(0;0;1)\) bán kính 5, mặt z=4. Tính bán kính đường tròn thiết diện.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
