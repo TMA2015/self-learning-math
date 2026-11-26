@@ -9312,5 +9312,581 @@
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT01",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT01",
+    "stem": "Với \\(v_n=1+\\frac3n\\), \\(n\\ge1\\), dãy tiến tới số nào? Giải thích bằng khoảng cách.",
+    "answer_key": "\\(1\\); khoảng cách tới 1 tiến về 0.",
+    "worked_solution": "Giới hạn bằng 1 vì \\(|v_n-1|=\\frac3n\\to0\\). Nếu em cho rằng giới hạn phải là một số hạng, hãy thử giải \\(1+\\frac3n=1\\) để thấy không có \\(n\\) hữu hạn nào thỏa, dù dãy vẫn tiến tới 1.\n\n\n**Kiểm lỗi**\n\nNếu em cho rằng giới hạn phải là một số hạng của dãy, đọc lại **Kiến thức 1.1** rồi giải **Bài 1** và **Bài 3** trong Luyện tập. Tách điều kiện chỉ số nguyên dương khỏi việc khoảng cách tới giá trị giới hạn tiến về 0.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B15-FINITE_SEQUENCE"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M01",
+      "locator": "1.1. Giới hạn dãy số qua sai số / Vận dụng",
+      "line": 35,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT02",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT02",
+    "stem": "So sánh hành vi của \\(u_n=n^2\\) và \\(w_n=(-1)^n n\\), \\(n\\ge1\\). Dãy nào tiến đến \\(+\\infty\\)?",
+    "answer_key": "Chỉ \\(u_n=n^2\\) tiến tới \\(+\\infty\\); \\(w_n\\) không có giới hạn hữu hạn hay vô cực có dấu.",
+    "worked_solution": "Dãy \\(u_n\\to+\\infty\\), vì với mỗi \\(M>0\\), mọi \\(n>\\sqrt M\\) cho \\(n^2>M\\). Dãy \\(w_n\\) có các số hạng chẵn \\(2,4,6,\\ldots\\) tiến tới \\(+\\infty\\), còn các số hạng lẻ \\(-1,-3,-5,\\ldots\\) tiến tới \\(-\\infty\\); không có giới hạn chung. Không bị chặn không đồng nghĩa với tiến tới vô cực có một dấu.\n\nNếu viết '\\(+\\infty\\)' cho \\(w_n=(-1)^n n\\), hãy liệt kê các số hạng chẵn và lẻ rồi xét giới hạn từng dãy con.\n\n\n**Kiểm lỗi**\n\nNếu em cho rằng mọi dãy không hội tụ hữu hạn đều tiến ra vô cực có dấu, đọc lại **Kiến thức 1.2**, làm **Bài 4** (dao động chẵn/lẻ), **Bài 5** (tiến −∞) rồi **Bài 6** (dãy con có hai giới hạn khác nhau).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B15-INFINITE_SEQUENCE"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M02",
+      "locator": "1.2. Dãy tiến vô cực và dãy dao động / Vận dụng",
+      "line": 65,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT03",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT03",
+    "stem": "\\(\\lim_{n\\to\\infty}(\\frac32)^n\\) là gì?",
+    "answer_key": "\\(+\\infty\\).",
+    "worked_solution": "\\(+\\infty\\) vì \\(\\frac32>1\\). Chẳng hạn, theo bất đẳng thức Bernoulli với n nguyên dương, \\((1+\\frac12)^n\\ge1+\\frac n2\\to+\\infty\\).\n\nNếu nhầm \\(q\\) âm với không hội tụ, so \\((-\\frac14)^n\\) và \\((-1)^n\\) qua \\(|q|\\).\n\n\n**Kiểm lỗi**\n\nNếu nhầm lũy thừa cơ số âm có độ lớn nhỏ hơn 1 với dãy dao động không hội tụ, đọc **Kiến thức 1.3** rồi giải **Bài 7** và so sánh **Bài 4**. Hãy xét \\(|q|^n\\) trước, sau đó mới xét dấu.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B15-FINITE_SEQUENCE"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M03",
+      "locator": "1.3. Giới hạn dãy lũy thừa / Vận dụng",
+      "line": 97,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT04",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT04",
+    "stem": "\\(\\lim_{n\\to\\infty}\\frac{4n+3}{2n-1}\\) bằng bao nhiêu?",
+    "answer_key": "2.",
+    "worked_solution": "Với n nguyên dương, \\(2n-1\\ne0\\). Chia cả tử và mẫu cho n: \\(\\frac{4+\\frac3n}{2-\\frac1n}\\to\\frac42=2\\), vì giới hạn mẫu bằng 2 khác 0.\n\nNếu thế '\\(n=\\infty\\)', hãy thực hiện phép chia \\(n^k\\) để chuyển sang giới hạn có thể tính.\n\n\n**Kiểm lỗi**\n\nNếu lấy các hệ số khác bậc hoặc thế máy móc \\(n=\\infty\\), đọc lại **Kiến thức 1.4**, làm **Bài 11** và **Bài 12**: chia đúng lũy thừa bậc cao nhất và kiểm mẫu giới hạn khác 0.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B15-LIMIT_ARITHMETIC"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M04",
+      "locator": "1.4. Tính giới hạn dãy phân thức / Vận dụng",
+      "line": 145,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT05",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT05",
+    "stem": "Cấp số nhân vô hạn \\(6+2+\\frac23+\\cdots\\) có tổng bằng bao nhiêu?",
+    "answer_key": "9.",
+    "worked_solution": "Công bội \\(q=\\frac13\\) thỏa mãn \\(\\lvert q\\rvert<1\\), nên tổng hội tụ và \\(S=\\frac6{1-\\frac13}=9\\).\n\nNếu \\(a\\ne0\\) và \\(q=1\\) hoặc \\(q=-1\\), hãy xét giới hạn của số hạng trước: nó không về 0.\n\n\n**Kiểm lỗi**\n\nNếu áp dụng tổng cấp số nhân vô hạn khi \\(|q|\\ge1\\) hoặc nhầm dấu phần dư, đọc lại **Kiến thức 1.5**, giải **Bài 16** và **Bài 18**; thử thêm **Bài 19** để kiểm điều kiện sai số nghiêm ngặt.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B15-GEOMETRIC"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M05",
+      "locator": "1.5. Tổng cấp số nhân vô hạn / Vận dụng",
+      "line": 179,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT06",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT06",
+    "stem": "\\(\\lim_{x\\to0}\\frac{x(x-4)}x\\) (\\(x\\ne0\\)) bằng bao nhiêu?",
+    "answer_key": "\\(-4\\).",
+    "worked_solution": "\\(-4\\) do biểu thức rút còn \\(x-4\\) trên miền \\(x\\ne0\\).\n\nNếu gọi \\(\\frac00\\) là giới hạn, xem hai hàm \\(\\frac{x-2}{x-2}\\) và \\(\\frac{2(x-2)}{x-2}\\), cùng thế \\(\\frac00\\) nhưng có giới hạn 1 và 2.\n\n\n**Kiểm lỗi**\n\nNếu coi dạng \\(\\frac00\\) là đáp số hoặc tự gán giá trị của hàm tại điểm cấm, đọc **Kiến thức 2.1**, làm **Bài 21** và **Bài 22**. Chỉ rút gọn trên lân cận bỏ điểm rồi mới tính giới hạn.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B16-LIMIT_AT_POINT"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M06",
+      "locator": "2.1. Giới hạn hàm tại một điểm / Vận dụng",
+      "line": 217,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT07",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT07",
+    "stem": "\\(\\lim_{x\\to0^-}\\frac{|x|}{x}\\) và \\(\\lim_{x\\to0^+}\\frac{|x|}{x}\\) bằng gì?",
+    "answer_key": "Trái: \\(-1\\); phải: \\(+1\\); không có giới hạn hai phía.",
+    "worked_solution": "Khi \\(x<0\\), \\(\\frac{|x|}{x}=-1\\); khi \\(x>0\\), \\(\\frac{|x|}{x}=1\\). Hai giới hạn lần lượt là −1 và 1, khác nhau, nên giới hạn hai phía không tồn tại.\n\nNếu chỉ thế nhánh \\(x\\ge0\\) tại 0, hãy vẽ hai mũi tên tiến vào 0 từ hai phía.\n\n\n**Kiểm lỗi**\n\nNếu dùng cùng một nhánh của hàm cho cả trái và phải, đọc lại **Kiến thức 2.2**, làm **Bài 24** rồi **Bài 25**. Tính hai giới hạn một phía riêng; chỉ ghép thành giới hạn hai phía khi chúng bằng nhau.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B16-ONE_SIDED"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M07",
+      "locator": "2.2. Giới hạn trái và phải / Vận dụng",
+      "line": 247,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT08",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT08",
+    "stem": "\\(\\lim_{x\\to3^-}\\frac1{3-x}\\) là gì?",
+    "answer_key": "\\(+\\infty\\).",
+    "worked_solution": "\\(+\\infty\\) vì \\(3-x\\) tiến 0 từ phía dương.\n\nNếu cứ thấy mẫu tiến tới 0 là tự kết luận \\(+\\infty\\), thử \\(x=2{,}99\\) (từ trái 3) và \\(x=3{,}01\\) (từ phải 3) để kiểm: \\(3-x\\) lần lượt dương và âm, nên hai phía có dấu giới hạn khác nhau.\n\n\n**Kiểm lỗi**\n\nNếu thấy mẫu về 0 rồi tự kết luận \\(+\\infty\\), đọc **Kiến thức 2.3**, làm **Bài 27** và **Bài 29**. Lập bảng dấu tử/mẫu theo từng phía; đừng kết luận theo mẫu số bằng 0 ở đúng điểm.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B16-INFINITE_LIMIT"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M08",
+      "locator": "2.3. Giới hạn vô cực gần điểm / Vận dụng",
+      "line": 285,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT09",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT09",
+    "stem": "Tính \\(\\lim_{x\\to+\\infty}\\frac{-3x^3+1}{x^3+4}\\) và \\(\\lim_{x\\to-\\infty}\\frac{2x^3}{x^2+1}\\).",
+    "answer_key": "Lần lượt \\(-3\\) và \\(-\\infty\\).",
+    "worked_solution": "Giới hạn thứ nhất bằng \\(-3\\) khi chia cả tử và mẫu cho \\(x^3\\). Giới hạn thứ hai bằng \\(-\\infty\\), vì \\(\\frac{2x^3}{x^2+1}=\\frac{2x}{1+\\frac1{x^2}}\\), mẫu tiến tới 1 còn tử tiến tới \\(-\\infty\\).\n\nNếu giữ dấu 'x âm' ở mọi hạng, tách \\(x^2\\) và \\(x^3\\) ra để so dấu của từng lũy thừa.\n\n\n**Kiểm lỗi**\n\nNếu dùng dấu của x thay cho dấu của \\(x^2\\), hoặc chọn sai bậc chia, đọc lại **Kiến thức 2.4**, làm **Bài 31** và **Bài 32**; kiểm riêng x tiến \\(+\\infty\\) và \\(-\\infty\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B16-LIMIT_AT_INFINITY"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O09"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M09",
+      "locator": "2.4. Giới hạn khi x tiến vô cực / Vận dụng",
+      "line": 321,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT10",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT10",
+    "stem": "\\(\\lim_{x\\to6}\\frac{x^2-36}{x-6}\\) bằng gì?",
+    "answer_key": "12.",
+    "worked_solution": "12, vì tử là \\((x-6)(x+6)\\) và \\(x\\ne6\\).\n\nNếu viết \\(\\frac00\\) như đáp số hoặc nhầm giới hạn với giá trị hàm tại \\(x=6\\), hãy trở lại lân cận bỏ điểm \\(x=6\\); phân thức gốc không xác định ở đúng điểm ấy.\n\n\n**Kiểm lỗi**\n\nNếu khử nhân tử chung ngay tại điểm cấm rồi kết luận hàm gốc được định nghĩa ở đó, đọc **Kiến thức 2.5**, làm **Bài 33** và **Bài 34**. Phép khử chỉ đúng trên lân cận bỏ điểm; giới hạn không phải giá trị hàm tại điểm ấy.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B16-ALGEBRAIC_TECHNIQUES"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O10"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M10",
+      "locator": "2.5. Khử dạng 0/0 bằng nhân tử / Vận dụng",
+      "line": 351,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT11",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT11",
+    "stem": "\\(\\lim_{x\\to0}\\frac{\\sqrt{x+25}-5}{x}\\) bằng bao nhiêu?",
+    "answer_key": "\\(\\frac1{10}\\).",
+    "worked_solution": "\\(\\frac1{10}\\), vì phân thức bằng \\(\\frac1{\\sqrt{x+25}+5}\\) khi \\(x\\ge-25,\\ x\\ne0\\); mẫu liên hợp tiến tới 10 khác 0 khi \\(x\\to0\\).\n\nNếu căn khiến bạn 'bình phương cả phân thức', thử nhân liên hợp đúng dạng và giữ điều kiện \\(x+25\\ge0\\).\n\n\n**Kiểm lỗi**\n\nNếu biến đổi căn bằng cách bình phương tùy ý hoặc bỏ điều kiện trong căn, đọc **Kiến thức 2.6**, làm **Bài 35** và **Bài 36**: nhân **liên hợp** đúng cả tử/mẫu và kiểm miền xác định.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B16-ALGEBRAIC_TECHNIQUES"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O11"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M11",
+      "locator": "2.6. Khử dạng 0/0 bằng liên hợp / Vận dụng",
+      "line": 381,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT12",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT12",
+    "stem": "Tính \\(\\lim_{x\\to-\\infty}\\bigl(\\sqrt{x^2+6x}+x\\bigr)\\). Vì sao không thể thay \\(\\sqrt{x^2}\\) bằng x trong bước biến đổi?",
+    "answer_key": "\\(-3\\); với x âm, \\(\\sqrt{x^2}=-x\\).",
+    "worked_solution": "Với \\(x<-6\\), \\(x^2+6x=x(x+6)>0\\) và \\(\\sqrt{x^2+6x}-x>0\\), nên phép nhân liên hợp hợp lệ. Nhân liên hợp: \\(\\sqrt{x^2+6x}+x=\\dfrac{6x}{\\sqrt{x^2+6x}-x}\\). Do \\(x<0\\), ta có \\(\\sqrt{x^2+6x}=(-x)\\sqrt{1+\\frac6x}\\). Bởi vậy phân thức bằng \\(\\frac{-6}{\\sqrt{1+\\frac6x}+1}\\to-3\\). Nếu thay sai \\(\\sqrt{x^2}=x\\), em sẽ đánh mất dấu khi chia cho x âm. Chỉ dùng công thức trong miền xác định và ở phía \\(x\\to-\\infty\\).\n\n\n**Kiểm lỗi**\n\nNếu thay \\(\\sqrt{x^2}=x\\) cả khi x âm, đọc **Kiến thức 2.7**, làm **Bài 37** và **Bài 38** trước khi đối chiếu **Bài 39**. Với \\(x\\to-\\infty\\), phải dùng \\(\\sqrt{x^2}=|x|=-x\\), không tự bỏ dấu.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B16-LIMIT_AT_INFINITY"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O12"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M12",
+      "locator": "2.7. Biến đổi dạng vô cực trừ vô cực / Vận dụng",
+      "line": 421,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT13",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT13",
+    "stem": "Cho \\(f(x)=\\sin x\\) khi \\(x\\ne0\\) và \\(f(0)=c\\); cần \\(c\\) bằng gì để liên tục?",
+    "answer_key": "\\(c=0\\).",
+    "worked_solution": "\\(c=0\\) vì \\(\\lim_{x\\to0}\\sin x=0\\), bằng giá trị ở điểm.\n\nNếu quên hàm phải được định nghĩa tại \\(a\\), hãy phân biệt chấm rỗng biểu thị điểm bị khuyết với chấm đặc biểu thị giá trị thực \\(f(a)\\). Ví dụ đồ thị \\(y=x+8\\) với \\(x\\ne8\\) có chấm rỗng tại \\((8;16)\\); gán \\(f(8)=16\\) mới lấp đúng chỗ khuyết.\n\n\n**Kiểm lỗi**\n\nNếu tính được giới hạn nhưng quên điều kiện giá trị hàm phải bằng giới hạn tại điểm, đọc **Kiến thức 3.1**, làm **Bài 42** và **Bài 43**. Kiểm đủ: có \\(f(a)\\), có giới hạn khi \\(x\\to a\\) và chúng bằng nhau.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_POINT"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O13"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M13",
+      "locator": "3.1. Liên tục tại một điểm / Vận dụng",
+      "line": 459,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT14",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT14",
+    "stem": "Nếu \\(g(x)=\\frac{x^2-1}{x-1}\\) với \\(x\\ne1\\) và \\(g(1)=3\\), thuộc kiểu gián đoạn nào?",
+    "answer_key": "Gián đoạn khử được; đặt \\(g(1)=2\\) thì liên tục.",
+    "worked_solution": "Khử được: \\(\\lim_{x\\to1}g(x)=2\\) nhưng \\(g(1)=3\\); đổi \\(g(1)=2\\) thì liên tục.\n\nNếu gọi tất cả lỗ bằng vô cực, kiểm có khử được nhân tử chung hay không.\n\n\n**Kiểm lỗi**\n\nNếu thấy mẫu số bằng 0 rồi gọi tất cả là gián đoạn vô cực, đọc **Kiến thức 3.2**, làm **Bài 45** và **Bài 46**: xét giới hạn trái/phải và xem có thể sửa bằng một giá trị tại điểm hay không.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_POINT"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O14"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M14",
+      "locator": "3.2. Ba kiểu gián đoạn thường gặp / Vận dụng",
+      "line": 495,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT15",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT15",
+    "stem": "Hàm \\(g(x)=\\frac1x\\) có liên tục trên \\((0;1)\\) không? Có thể kết luận như vậy trên \\([0;1]\\) không? Vì sao?",
+    "answer_key": "Có trên \\((0;1)\\); không trên \\([0;1]\\) vì hàm không xác định tại 0.",
+    "worked_solution": "Có trên \\((0;1)\\), vì tại mọi điểm của khoảng, mẫu khác 0. Không thể liên tục trên \\([0;1]\\), vì \\(g(0)\\) không xác định. Điểm 0 không thuộc khoảng mở, nên khi xét \\((0;1)\\) không phải kiểm liên tục tại 0.\n\nNếu hỏi giới hạn trái của \\(\\sqrt x\\) ở 0 trong \\(\\mathbb R\\) và nói 'không liên tục', hãy trở về định nghĩa liên tục trên miền \\([0;9]\\).\n\n\n**Kiểm lỗi**\n\nNếu cho rằng đầu mút không liên tục vì thiếu một phía nằm ngoài miền xác định, đọc **Kiến thức 3.3**, làm **Bài 48** và **Bài 50**. Tại đầu đoạn dùng giới hạn từ phía **trong miền**, không yêu cầu một phía không có giá trị.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_INTERVAL"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O15"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M15",
+      "locator": "3.3. Liên tục trên khoảng và đoạn / Vận dụng",
+      "line": 527,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT16",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT16",
+    "stem": "\\(h(x)=\\frac{\\sqrt{x+2}}{x+1}\\): miền xác định là gì?",
+    "answer_key": "\\([-2;-1)\\cup(-1;+\\infty)\\).",
+    "worked_solution": "\\(x\\ge-2\\) và \\(x\\ne-1\\); liên tục trên \\([-2;-1)\\) và \\((-1;+\\infty)\\) theo miền.\n\nNếu kiểm căn \\(x+2\\ge0\\) nhưng bỏ mẫu \\(x+1\\ne0\\), hãy ghi hai điều kiện bằng dấu 'và'.\n\n\n**Kiểm lỗi**\n\nNếu xét mỗi điều kiện căn nhưng quên mẫu khác 0, hoặc nói liên tục xuyên khoảng bị loại, đọc **Kiến thức 3.4**, làm **Bài 51** và **Bài 52**; giao tất cả điều kiện miền trước khi kết luận các thành phần liên tục.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_OPERATIONS"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O16"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M16",
+      "locator": "3.4. Miền xác định và phép toán liên tục / Vận dụng",
+      "line": 557,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT17",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT17",
+    "stem": "Dùng định lí giá trị trung gian để chứng minh phương trình \\(x^2-3=0\\) có ít nhất một nghiệm trong \\((1;2)\\).",
+    "answer_key": "Có ít nhất một nghiệm của \\(x^2-3=0\\) trong \\((1;2)\\).",
+    "worked_solution": "Có. Đặt \\(f(x)=x^2-3\\); hàm đa thức liên tục trên \\([1;2]\\), \\(f(1)=-2<0\\), \\(f(2)=1>0\\), nên có ít nhất một nghiệm trong \\((1;2)\\).\n\nNếu viết 'duy nhất do IVT', thử \\(g(x)=x(x-1)(x+1)\\) trên \\([-2;2]\\) có nhiều nghiệm mặc dù đổi dấu hai đầu.\n\n\n**Kiểm lỗi**\n\nNếu suy ngay nghiệm **duy nhất** chỉ từ trái dấu ở hai đầu, đọc **Kiến thức 4.1**, làm **Bài 54** và **Bài 56**. Định lí giá trị trung gian cho tồn tại **ít nhất một** nghiệm trên đoạn liên tục; tính duy nhất cần lập luận riêng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B17-ZERO_EXISTENCE"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O17"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M17",
+      "locator": "4.1. Định lí giá trị trung gian / Vận dụng",
+      "line": 597,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP08-KFT18",
+    "content_version": "TOP08-BANK-CP74-20261126-KFT18",
+    "stem": "Đặt \\(g(x)=x^2-3\\) trên \\([1;2]\\). Để khoanh nghiệm của \\(g(x)=0\\), sau một bước chia đôi giữ nửa đoạn nào? Vì sao?",
+    "answer_key": "Giữ đoạn \\([1{,}5;2]\\).",
+    "worked_solution": "Đặt \\(g(x)=x^2-3\\). Vì \\(g(1)=-2<0\\), \\(g(1{,}5)=-0{,}75\\) và \\(g(2)=1>0\\), nên giữ \\([1{,}5;2]\\); \\(g\\) vẫn đổi dấu.\n\nNếu chọn nửa không trái dấu, viết bảng \\(f(a),f(m),f(b)\\) và tìm cặp tích âm trước khi loại nửa còn lại.\n\n\n**Kiểm lỗi**\n\nNếu chọn nửa khoảng không còn đổi dấu hoặc đếm sai độ dài sau mỗi bước, đọc **Kiến thức 4.2**, làm **Bài 57** và **Bài 58**; lập bảng dấu \\(g(a),g(m),g(b)\\), mỗi lần chỉ giữ nửa có hai đầu trái dấu.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B17-ZERO_EXISTENCE"
+    ],
+    "original_outcome_ids": [
+      "TOP08-O18"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+      "heading_id": "TOP08-M18",
+      "locator": "4.2. Chia đôi khoảng để khoanh nghiệm / Vận dụng",
+      "line": 638,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
