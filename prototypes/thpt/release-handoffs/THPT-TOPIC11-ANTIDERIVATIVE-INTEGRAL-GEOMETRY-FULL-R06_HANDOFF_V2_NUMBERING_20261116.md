@@ -1,3 +1,13 @@
+<!-- WORK1109_CP23_CURRENT -->
+## Current CĐ11 one V2 handoff
+
+Work #1055/#1109 CP23, 26/11/2026: O07–O10 unit, independent lower bound, linearity and interval additivity; O12 distance and signed displacement, O16 area splitting, O19 independent bounded-area task 32/3, O21 wrong radius integral 3π/2 vs correct 7π/3, O22 washer 16π. X-G.5 on Knowledge, 116 Practice, 22 same-ID replays; 1721 balanced inline/4 displays, no remaining detected raw compound expressions (unit notation excluded), no brace imbalance; 116/116 actual original ID memberships checked (88 SGK +28 Topic), all original identity comments and rubric point sequences retained, 139/139 disclosures, 4 original SVG unchanged. 40 executed targeted math recomputations PASS. S1 inherited original B11–B13 scope and existing original SGK receipt; no new direct PDF visual scan or independent NotebookLM whole-topic verdict. Source-equivalent Practice notation, clarify particular antiderivative and derivative notation without key changes; Knowledge Work delta author verified. UI 1.1 belongs to RELEASE. No merge/deploy or protected assessment changes.
+
+Source `64688cf81991a432264c06a2ff0a908371ca1f21`, Q18 `e63f9a5df598ea3c6d57efdbeb6808e86ad9f68f`, A1 `decf0f7a7bb1be15aede5f0656d16b9fe681f0d7`. AUTHORING CONTENT_READY only; release intake and UI separate.
+
+---
+Historical narrative below refers to earlier immutable snapshots; current structured source pointers and CP23 section supersede earlier claims of byte-exact display math.
+
 <!-- TOP11_MASTER974_CURRENT_ONE_V2_20261121 -->
 ## CURRENT AUTHORING CĐ11 ONE V2 — existing R06 learner / Q18 SELF_VERIFIED v3.2.0
 
@@ -10,7 +20,7 @@ One current source `prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC1
 PACKET_ID: THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R01
 CONTENT_REVISION: R06_FULL_S1_20261120
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: cfdcd049c6b1ae66d61f87f10fd4b40da3c7c1f2
+AUTHOR_METADATA_BLOB: decf0f7a7bb1be15aede5f0656d16b9fe681f0d7
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -18,9 +28,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 9c27c384af7fad186047aed555ef1a9877c6a30a
+ACADEMIC_SOURCE_BLOB: 64688cf81991a432264c06a2ff0a908371ca1f21
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md
-REVIEW_RECEIPT_BLOB: a6c64c4d9280fbde9752598190206ff1a8e82fca
+REVIEW_RECEIPT_BLOB: e63f9a5df598ea3c6d57efdbeb6808e86ad9f68f
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0
 PUBLIC_ORIGINAL88_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_ORIGINAL88_SGK_CANONICAL_INDEX_R01_20261112.md
