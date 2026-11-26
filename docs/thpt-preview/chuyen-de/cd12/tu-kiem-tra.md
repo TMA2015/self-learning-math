@@ -27,7 +27,7 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC12_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB f773f2622c88bd3e3a1e0137613846a83b3e6629; Q18_RECEIPT_BLOB 496ce6005b50c6fd5baae2a6ac4f3d9414becc20; AUTHORING_PR #840; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB 6fd684807c3cf16489ed91e4a573edc3d1b2a6bc; Q18_RECEIPT_BLOB f091540cf192ab38c85674d2f6e324c7ebc5b948; AUTHORING_PR #840; PUBLIC_PROJECTION_ONLY -->
 
 # Tự kiểm tra
 
@@ -37,21 +37,21 @@ Hãy tự giải đủ **12 câu** trước khi mở phần **Đối chiếu** �
 
 **Câu 1.** Giá trị của \(\cos120^\circ\) là bao nhiêu?
 
-**Lựa chọn:** A. \(\tfrac12\) | B. \(-\tfrac12\) | C. \(\tfrac{\sqrt3}{2}\) | D. \(-\tfrac{\sqrt3}{2}\)
+**Lựa chọn:** A. \(\frac12\) | B. \(-\frac12\) | C. \(\frac{\sqrt3}{2}\) | D. \(-\frac{\sqrt3}{2}\)
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B05-P02; OUTCOME: TOP12-O04; NO_RD1; NO_MASTERY -->
 
-**Câu 2.** Cho góc tù α với \(\cos\alpha=-3/5\). Tính \(\sin\alpha\) và \(\tan\alpha\).
+**Câu 2.** Cho góc tù \(\alpha\) với \(\cos\alpha=-\frac35\). Tính \(\sin\alpha\) và \(\tan\alpha\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B05-P05; OUTCOME: TOP12-O02; NO_RD1; NO_MASTERY -->
 
-**Câu 3.** Trong \([0^\circ,180^\circ]\), có những góc nào thỏa \(\sin\alpha=\sqrt3/2\)?
+**Câu 3.** Trong \([0^\circ;180^\circ]\), có những góc nào thỏa \(\sin\alpha=\frac{\sqrt3}2\)?
 
 **Lựa chọn:** A. Chỉ 60° | B. Chỉ 120° | C. 60° và 120° | D. 30° và 150°
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-P01; OUTCOME: TOP12-O04; NO_RD1; NO_MASTERY -->
 
-**Câu 4.** Góc tù α có \(\cos \alpha=-5/13\). Tính sinα và tanα; giải thích việc chọn dấu.
+**Câu 4.** Góc tù \(\alpha\) có \(\cos\alpha=-\frac5{13}\). Tính \(\sin\alpha\) và \(\tan\alpha\); giải thích việc chọn dấu.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B06-C01; OUTCOME: TOP12-O05; NO_RD1; NO_MASTERY -->
 

@@ -6,11 +6,15 @@ import json
 import pathlib
 import re
 import subprocess
+import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "prototypes/thpt/release-queue/W3_CD12_15_SOURCE_INTAKE_20261122.json"
 data = json.loads(MANIFEST.read_text(encoding="utf-8"))
 assert data["wave"] == "W3" and set(data["topics"]) == {"12", "13", "14", "15"}
+W3A = "--w3a" in sys.argv
+if W3A:
+    data["topics"] = {k: v for k, v in data["topics"].items() if k in ("12", "13", "14")}
 PARTS = ("kien-thuc", "luyen-tap", "tu-kiem-tra")
 HEADINGS = ("# Kiến thức", "# Luyện tập", "# Tự kiểm tra")
 
@@ -67,6 +71,15 @@ for topic, d in data["topics"].items():
     assert blob_sha(source) == d["sourceBlob"], (topic, "SOURCE_BLOB_MISMATCH")
     receipt = subprocess.check_output(["git", "show", f'{d["authorHead"]}:{d["receiptPath"]}'], cwd=ROOT)
     assert blob_sha(receipt) == d["q18ReceiptBlob"], (topic, "Q18_RECEIPT_MISMATCH")
+    if "handoffBlob" in d:
+        assert d["sourceBlob"] in receipt.decode("utf-8"), (topic, "Q18 source binding")
+        for kind in ("handoff", "ready"):
+            packet = subprocess.check_output(["git", "show", f'{d["authorHead"]}:{d[kind+"Path"]}'], cwd=ROOT)
+            assert blob_sha(packet) == d[kind+"Blob"], (topic, kind, "custody SHA")
+            txt = packet.decode("utf-8")
+            assert f'ACADEMIC_SOURCE_BLOB: {d["sourceBlob"]}' in txt and f'REVIEW_RECEIPT_BLOB: {d["q18ReceiptBlob"]}' in txt, (topic, kind, "source/Q18 binding")
+            if kind == "ready":
+                assert f'AUTHOR_HANDOFF_BLOB: {d["handoffBlob"]}' in txt and "STATE: CONTENT_READY" in txt, (topic, "READY binding")
     preface, parts = source_sections(source.decode("utf-8"))
     ids = re.findall(r"<!-- DISPLAY_ONLY_CANONICAL:\s*([A-Z0-9-]+)", parts[1])
     replay = re.findall(r"<!-- PUBLIC_REPLAY_ONLY:\s*([A-Z0-9-]+)", parts[2])
@@ -102,6 +115,8 @@ for topic, d in data["topics"].items():
     for svg in d["svg"]:
         path = ROOT / "docs/assets" / ("visuals" if svg.startswith("FIG_G11_CHIV_B") else "images/thpt") / svg
         assert path.is_file() and "<svg" in path.read_text(encoding="utf-8"), (topic,"broken SVG",svg)
+        if "svgBlobs" in d:
+            assert blob_sha(path.read_bytes()) == d["svgBlobs"][svg], (topic, svg, "pinned SVG bytes")
         if svg.startswith("FIG_G11_CHIV_B"):
             origin = subprocess.check_output(
                 ["git", "show", f'{d["authorHead"]}:prototypes/thpt/visuals/{svg}'],cwd=ROOT)

@@ -2,17 +2,17 @@
   "wave": "W3",
   "standard": "SLM-THPT-QUALITY-ONE v3.2.0 Q01-Q18",
   "golden": "TOPIC_GOLDEN_UI_REV=20261122.1",
-  "ownerScope": "2026-11-22 owner authorized continue RELEASE after W2 P2 PASS",
+  "ownerScope": "2026-11-26 owner incremental direct release, scoped exact HEAD QA + publication evidence (#1055 comment 7194005481); W3a CĐ12–14, CĐ15 historical snapshot unchanged",
   "assessmentMode": "PUBLIC_REPLAY_ONLY / CLIENT_SELF_CHECK_NO_MASTERY",
   "topics": {
     "12": {
       "title": "Hệ thức lượng trong tam giác và giải tam giác",
       "authorPR": 840,
-      "authorHead": "8ff14130b995ae505978e590c4e65d9287f93342",
+      "authorHead": "954053f0a5b3f7f8f19bfc01f4f974e9af844adb",
       "sourcePath": "prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md",
-      "sourceBlob": "f773f2622c88bd3e3a1e0137613846a83b3e6629",
+      "sourceBlob": "6fd684807c3cf16489ed91e4a573edc3d1b2a6bc",
       "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md",
-      "q18ReceiptBlob": "496ce6005b50c6fd5baae2a6ac4f3d9414becc20",
+      "q18ReceiptBlob": "f091540cf192ab38c85674d2f6e324c7ebc5b948",
       "groupsKnowledge": 3,
       "groupsPractice": 3,
       "outcomes": 12,
@@ -22,16 +22,24 @@
         "THPT_G10_B05_SEMICIRCLE_120_D5_R01.svg",
         "THPT_G10_B06_COSINE_AREA_TRIANGLE_D5_R01.svg"
       ],
-      "model": "slm-top12-ssa-01"
+      "model": "slm-top12-ssa-01",
+      "handoffPath": "prototypes/thpt/release-handoffs/THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md",
+      "handoffBlob": "02d91fb123b514b3fb67de246f3eaf3fa6d2d95f",
+      "readyPath": "prototypes/thpt/release-queue/ready/THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R01.md",
+      "readyBlob": "3eeeeef6cfc9ff7ed43a12e3b5f3d72f3e9897dd",
+      "svgBlobs": {
+        "THPT_G10_B05_SEMICIRCLE_120_D5_R01.svg": "6fd343ea37fdd1f737a17da245c18b7b82b3bc4d",
+        "THPT_G10_B06_COSINE_AREA_TRIANGLE_D5_R01.svg": "0dd2f62277ae264fb4f6d6c99699d5a984a0b562"
+      }
     },
     "13": {
       "title": "Vectơ trong mặt phẳng và trong không gian",
       "authorPR": 841,
-      "authorHead": "0edada0daa8a36bcadd4317086bd0530e20ade7e",
+      "authorHead": "7624c5fdce1d9ca3f1baea493eb12e8f8185758e",
       "sourcePath": "prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md",
-      "sourceBlob": "7bd211326e4f644a94e1dfad7868c03e1c415adb",
+      "sourceBlob": "7e54d34b9eee75ab4b8f8e4f53ab40298e701493",
       "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md",
-      "q18ReceiptBlob": "24f5cd26b47852259cdc932fce7577fcf2f44866",
+      "q18ReceiptBlob": "868a8e44359b8fb10e06649e011f4b2354d0ba5c",
       "groupsKnowledge": 3,
       "groupsPractice": 2,
       "outcomes": 16,
@@ -41,18 +49,30 @@
         "THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg",
         "FIG-G12-CHII-B06-R00.svg",
         "FIG-G12-CHII-B08-R00.svg",
+        "THPT_TOPIC13_COMMON_ORIGIN_ANGLE.svg",
         "FIG-G12-CHII-B07-R00.svg"
       ],
-      "model": "slm-top13-dot-01"
+      "model": "slm-top13-dot-01",
+      "handoffPath": "prototypes/thpt/release-handoffs/THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md",
+      "handoffBlob": "4991ba530fd242f2d59cb6d10d512d71c45aa503",
+      "readyPath": "prototypes/thpt/release-queue/ready/THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R01.md",
+      "readyBlob": "6c2d36e9ad6fdfa97704421d0956c75685e650d4",
+      "svgBlobs": {
+        "THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg": "55ec9add04cb79da2cad7703b3897271e5b3436a",
+        "FIG-G12-CHII-B06-R00.svg": "26e388d873521aa5b0bae945343e69357490ec16",
+        "FIG-G12-CHII-B08-R00.svg": "13445da079245a556a08e7a57069d9987097a0be",
+        "THPT_TOPIC13_COMMON_ORIGIN_ANGLE.svg": "03f008e587226f0492ec217373d090cd7cc0d79b",
+        "FIG-G12-CHII-B07-R00.svg": "053c483242c92f11097b5d577aeb4ad5f832497a"
+      }
     },
     "14": {
       "title": "Phương pháp tọa độ trong mặt phẳng Oxy",
       "authorPR": 843,
-      "authorHead": "b31c26c4fe630c0e362d48ed868b465bfe7f7177",
+      "authorHead": "95fe0facb80c71663298f8a3fe685759fe96bac1",
       "sourcePath": "prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md",
-      "sourceBlob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "sourceBlob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md",
-      "q18ReceiptBlob": "e407a0318965dbf6cb65c9e6a2e1ac971f65221e",
+      "q18ReceiptBlob": "c765c578c23da2d7c76ab1b466d50d4bd650181a",
       "groupsKnowledge": 4,
       "groupsPractice": 4,
       "outcomes": 23,
@@ -61,9 +81,20 @@
       "svg": [
         "THPT_G10_B19_LINE_INTERSECTION_DRAFT.svg",
         "THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg",
-        "THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg"
+        "THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg",
+        "THPT_TOPIC14_HYPERBOLA_ASYMPTOTES.svg"
       ],
-      "model": "slm-top14-parabola-01"
+      "model": "slm-top14-parabola-01",
+      "handoffPath": "prototypes/thpt/release-handoffs/THPT-TOPIC14-ANALYTIC-OXY-FULL-R02_HANDOFF_V2_20261116.md",
+      "handoffBlob": "1cb64f277ddf2a9b62963655471124f7e7dde9bd",
+      "readyPath": "prototypes/thpt/release-queue/ready/THPT-TOPIC14-ANALYTIC-OXY-FULL-R02.md",
+      "readyBlob": "a5d20e38481f9c3e33a8255d95cc6d7156c7807d",
+      "svgBlobs": {
+        "THPT_G10_B19_LINE_INTERSECTION_DRAFT.svg": "57485fed0a5dcee6ebcd060f100abe5eed43bc76",
+        "THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg": "0fd1f0671ccdad9b7bdff1d05551a3e32f9d82d1",
+        "THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg": "6a1d532983804a7cdb7d44b5d99f82c688660d62",
+        "THPT_TOPIC14_HYPERBOLA_ASYMPTOTES.svg": "d83a92eda12499dd39226c3eff07a410e51da224"
+      }
     },
     "15": {
       "title": "Quan hệ song song trong không gian",
