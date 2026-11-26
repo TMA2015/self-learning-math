@@ -19083,6 +19083,88 @@
       },
       "remaining": "CD14–22 expanded local-field review, FirstTry, shared SGK, Written/Anchor, return to CD01–12 hints/remediation/options and residual math, skill tags, global semantic and notation audit before interaction conversion/RELEASE. No new S1 PDF read or bank-wide X-G.5/Academic/PED PASS; browser/MathJax belongs to RELEASE.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp82": {
+      "scope": "CD14–15 scoped Practice/Replay reconciliation and expanded X-G.5 review of all visible fields of 45 local SELF_COMPARE records; preserve CP60 improved tasks and mappings",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "d0965e7f86032c948c623f8c9e0661251e7f6f88",
+      "item_commits": [
+        "0c32cf20dd66560a1df21b699d4e4fc66b034c73",
+        "dbd6a8e7d004259c33225854f593928de373bc10"
+      ],
+      "topics": [
+        {
+          "topic": "CD14",
+          "practice": 87,
+          "replay": 23,
+          "local_records": 23,
+          "shared_formative": 55,
+          "written": 9,
+          "learner_commit": "95fe0facb80c71663298f8a3fe685759fe96bac1",
+          "learner_blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
+          "placement_blob": "05f79f4be661eff787ff703ebbcc0d8d435e9805",
+          "before": "e9175f0798a5fb31f7c62c48e491c3736193f54e",
+          "after": "fb0793452ea0c6b1e62e1dbcfa30a8e2bbb9e51d",
+          "fields_changed": {
+            "stem": 23,
+            "answer_key": 20,
+            "worked_solution": 23,
+            "hints": 11,
+            "remediation": 12
+          }
+        },
+        {
+          "topic": "CD15",
+          "practice": 67,
+          "replay": 8,
+          "local_records": 22,
+          "shared_formative": 30,
+          "written": 15,
+          "learner_commit": "2a39bf158d4a645888af00904095350020cc90df",
+          "learner_blob": "11d2106a7ed77b801c86420503dca929544dc076",
+          "placement_blob": "53e66705d922e5dd596a49673644f32ab2a010e1",
+          "before": "14e0fe9bd68537251104fb28b5996287b7afc4f8",
+          "after": "6f89aa2d3f63956d94d873a01b9a360a75c26a76",
+          "fields_changed": {
+            "stem": 22,
+            "answer_key": 18,
+            "worked_solution": 21,
+            "hints": 2,
+            "remediation": 5
+          }
+        }
+      ],
+      "checks": {
+        "practice": 154,
+        "replay": 31,
+        "current_learner_replay_stem_options_match": 31,
+        "placement_order_match": 185,
+        "local_records_updated": 45,
+        "metadata_unchanged": true,
+        "local_self_compare_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "targeted_raw_math_scan_residual": 0,
+        "shared_formative_placements_unchanged": 85,
+        "written_placements_unchanged": 24,
+        "options_or_rubric_present_in_local_records": 0
+      },
+      "findings": [
+        "CD14 preserve parameterized parallel/coincident lines, unique intersection, circle degeneracy, nonright circumcircle, all three line-circle cases, ellipse intersection count and explicit positive-axis parabolic model. Clarify P20 asymptote vs lines through vertices, P21 p vs vertex-to-focus distance.",
+        "CD15 preserve CP60 synthetic geometry variants and explicit cross-grade extension P05; correct P14 hint from MN parallel AB to MN parallel AD, consistent with triangle SAD and solution. P05 explicitly justifies condition on coordinate differences for collapse; P10 retain MNQP construction. All 99 earlier mapping changes retained, no placement edit.",
+        "Legacy practice uses DISPLAY_ONLY_CANONICAL and CANONICAL_ITEM_ID; replay uses DISPLAY_ONLY_CANONICAL. All 185 ID/order matched; exact current learner replay stems equal practice, not all strengthened candidate variants.",
+        "CP60 Written duplicate/pointer/units/cross-grade findings and O09/O13/O22 depth remain open. No claim of complete notation lint, fresh S1 PDF, browser QA or full academic/PED PASS."
+      ],
+      "progress": {
+        "topics_with_scoped_practice_replay_review": 15,
+        "total_topics": 22,
+        "practice_reviewed": 983,
+        "total_practice": 1479,
+        "replay_reviewed": 275,
+        "total_replay": 338
+      },
+      "remaining": "CD16–22 expanded visible-field review; revisit CD01–12, FirstTry, shared SGK, Written/Anchor, missing skills, full semantic/notation/depth check before conversion and RELEASE handoff.",
+      "release_authorization": false
     }
   }
 }
