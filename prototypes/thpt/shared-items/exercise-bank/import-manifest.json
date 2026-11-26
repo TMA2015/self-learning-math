@@ -139,7 +139,31 @@
     "b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d",
     "29b609be3195efcd341aea39cb604a930dba8468",
     "c5e96be714ed2b3d440c37c5507ddc79314bf087",
-    "e9588ca5fcdb107aa62990dc2e36635ef01085c0"
+    "e9588ca5fcdb107aa62990dc2e36635ef01085c0",
+    "e93f1253ac0acb3e19547665a67d64344527e601",
+    "88446b124096057f98f2742c78d4b93ca73d8883",
+    "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+    "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+    "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+    "621afad176e6944f832746b231cbd9265e96bce2",
+    "3f81555846b55690b1a19fed6b69d48950a77309",
+    "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+    "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+    "952ce21e99953348068b6499449dae75d4490d10",
+    "64688cf81991a432264c06a2ff0a908371ca1f21",
+    "6fd684807c3cf16489ed91e4a573edc3d1b2a6bc",
+    "7e54d34b9eee75ab4b8f8e4f53ab40298e701493",
+    "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
+    "11d2106a7ed77b801c86420503dca929544dc076",
+    "3e6f97091a814d7cee7096fd92cd448dd8900435",
+    "03b6b27adbeaf854d3db1d8fc9e830a0294a08aa",
+    "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+    "ba549932e8a56bb46ec2951171e999cc70d6f34f",
+    "d6c34cdf81594ec9d3ce3275ac3d736444aa710c",
+    "755472b2c90471f33ebcbe3ce3a55372348546f3",
+    "f1a059fc6366d2e4bb044edd696154a0b6799d4d",
+    "43d93a7d0d070a288251c34ff411c7de3206dc85",
+    "b748a7c5af4074b39ef8a6a756a7be7839b9cd83"
   ],
   "projection_sources": [
     {
@@ -17500,6 +17524,296 @@
         "Readback 121/121 D6 targets resolve; 142/142 placements resolve; 11+114 practice and 8+9 replay markers exact frozen order. 47/47 source outcomes formative placement; no protected field differences against CP63 baseline; no choices or auto_grade=true introduced, 325 Written refs preserved. No fresh SGK/SBT PDF or Academic/PED PASS. Completed first scoped formative pass across 22 topics, not full academic acceptance."
       ],
       "next": "Targeted reconciliation: actual source-based shared placements CĐ20–21, depth gaps CĐ15/CĐ19/CĐ22 and remaining relevant SGK/first-try, Written library pointer/academic defects per authorized scope. No cutover, merge or deploy."
+    },
+    "source_delta_reconciliation_cp65": {
+      "checkpoint": 65,
+      "baseline": "63b39a0abc7f3ca4858f4255e36a5817b45ad126",
+      "authority": "OWNER resume #1090 after #1109 CP25 (comment 7188857167)",
+      "scope": "22/22 exact latest learner blobs read; compare every practice and public replay marker order to existing CP64 placements, including historical HPT IDs in CĐ03. Reconcile selected changed CĐ18 first-try and shared SGK correction, re-lock Written pointers. Do NOT reset CP01–64 candidate improvements or declare full semantic parity.",
+      "current_topic_sources": [
+        {
+          "topic": "CD01",
+          "author_pr": 817,
+          "learner_blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+          "practice_id_order_verified": 24,
+          "replay_id_order_verified": 11,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD02",
+          "author_pr": 818,
+          "learner_blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+          "practice_id_order_verified": 38,
+          "replay_id_order_verified": 16,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD03",
+          "author_pr": 888,
+          "learner_blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+          "practice_id_order_verified": 31,
+          "replay_id_order_verified": 12,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD04",
+          "author_pr": 890,
+          "learner_blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+          "practice_id_order_verified": 75,
+          "replay_id_order_verified": 18,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD05",
+          "author_pr": 889,
+          "learner_blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+          "practice_id_order_verified": 38,
+          "replay_id_order_verified": 17,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD06",
+          "author_pr": 891,
+          "learner_blob": "621afad176e6944f832746b231cbd9265e96bce2",
+          "practice_id_order_verified": 66,
+          "replay_id_order_verified": 16,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD07",
+          "author_pr": 828,
+          "learner_blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+          "practice_id_order_verified": 69,
+          "replay_id_order_verified": 18,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD08",
+          "author_pr": 829,
+          "learner_blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+          "practice_id_order_verified": 58,
+          "replay_id_order_verified": 18,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD09",
+          "author_pr": 831,
+          "learner_blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+          "practice_id_order_verified": 108,
+          "replay_id_order_verified": 32,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD10",
+          "author_pr": 886,
+          "learner_blob": "952ce21e99953348068b6499449dae75d4490d10",
+          "practice_id_order_verified": 120,
+          "replay_id_order_verified": 36,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD11",
+          "author_pr": 887,
+          "learner_blob": "64688cf81991a432264c06a2ff0a908371ca1f21",
+          "practice_id_order_verified": 116,
+          "replay_id_order_verified": 22,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD12",
+          "author_pr": 840,
+          "learner_blob": "6fd684807c3cf16489ed91e4a573edc3d1b2a6bc",
+          "practice_id_order_verified": 34,
+          "replay_id_order_verified": 12,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD13",
+          "author_pr": 841,
+          "learner_blob": "7e54d34b9eee75ab4b8f8e4f53ab40298e701493",
+          "practice_id_order_verified": 52,
+          "replay_id_order_verified": 16,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD14",
+          "author_pr": 843,
+          "learner_blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
+          "practice_id_order_verified": 87,
+          "replay_id_order_verified": 23,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD15",
+          "author_pr": 846,
+          "learner_blob": "11d2106a7ed77b801c86420503dca929544dc076",
+          "practice_id_order_verified": 67,
+          "replay_id_order_verified": 8,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD16",
+          "author_pr": 848,
+          "learner_blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
+          "practice_id_order_verified": 65,
+          "replay_id_order_verified": 8,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD17",
+          "author_pr": 853,
+          "learner_blob": "03b6b27adbeaf854d3db1d8fc9e830a0294a08aa",
+          "practice_id_order_verified": 37,
+          "replay_id_order_verified": 8,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD18",
+          "author_pr": 855,
+          "learner_blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+          "practice_id_order_verified": 207,
+          "replay_id_order_verified": 12,
+          "content_delta_reconciliation": "PARTIAL_CP65_P02_FIVE_FIRST_TRY_WRITTEN_POINTERS"
+        },
+        {
+          "topic": "CD19",
+          "author_pr": 897,
+          "learner_blob": "ba549932e8a56bb46ec2951171e999cc70d6f34f",
+          "practice_id_order_verified": 42,
+          "replay_id_order_verified": 7,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD20",
+          "author_pr": 884,
+          "learner_blob": "d6c34cdf81594ec9d3ce3275ac3d736444aa710c",
+          "practice_id_order_verified": 20,
+          "replay_id_order_verified": 11,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD21",
+          "author_pr": 885,
+          "learner_blob": "755472b2c90471f33ebcbe3ce3a55372348546f3",
+          "practice_id_order_verified": 11,
+          "replay_id_order_verified": 8,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        },
+        {
+          "topic": "CD22",
+          "author_pr": 812,
+          "learner_blob": "f1a059fc6366d2e4bb044edd696154a0b6799d4d",
+          "practice_id_order_verified": 114,
+          "replay_id_order_verified": 9,
+          "content_delta_reconciliation": "PENDING_THREE_WAY_FIELD_RECONCILIATION"
+        }
+      ],
+      "current_sgk_sources": [
+        {
+          "author_pr": 716,
+          "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+          "delta": "CP20d B06-P02 exact current stem/key/solution; other candidate improvements preserved"
+        },
+        {
+          "author_pr": 725,
+          "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+          "delta": "CP25 B15-W05 updated canonical Written reference only"
+        }
+      ],
+      "files": [
+        {
+          "path": "items/g12-chii.json",
+          "before": "fb40323bb911c851e45a7f2022cc1dc0b746480f",
+          "after": "7db971ab5cf04ac036e10619b56d26b0f8af7d27",
+          "changed": 1,
+          "commit": "45ee9f6f6ad5492aa5cda97c3f5725e3367954c1"
+        },
+        {
+          "path": "items/topic-knowledge-first-try.json",
+          "before": "bb712d1c19560d894024c0b008112a0e61c9002b",
+          "after": "e09011b3172013951202b8ffcd09a0e3af58b4a4",
+          "changed": 5,
+          "commit": "36ae31829dde7b041d0866c4697d5e9b22d6e579"
+        },
+        {
+          "path": "written-references.json",
+          "before": "4c9a032916f3d0593fc0cd639510a5128f56a5e1",
+          "after": "ea57eeab276f963628b9b44063ca7907346f1f2f",
+          "changed": 47,
+          "commit": "be9f93bd0e1c054d3511b748385cfb2cebe6b1cb"
+        }
+      ],
+      "checks": {
+        "practice_id_order": 1479,
+        "replay_id_order": 338,
+        "topics": 22,
+        "formative_item_content_changed": 6,
+        "written_refs_relocked": 47,
+        "identity_counts_unchanged": true,
+        "interaction_auto_grade_unchanged": true,
+        "placement_files_unchanged": true
+      },
+      "changed_first_try": [
+        "THPT-TOP18-T13",
+        "THPT-TOP18-T15",
+        "THPT-TOP18-T32",
+        "THPT-TOP18-T01",
+        "THPT-TOP18-T04"
+      ],
+      "changed_written_refs": [
+        "THPT-G12-B06-W01",
+        "THPT-G12-B06-W02",
+        "THPT-G12-B06-W03",
+        "THPT-G12-B06-W04",
+        "THPT-G12-B06-W05",
+        "THPT-G12-B06-W06",
+        "THPT-G12-B07-W01",
+        "THPT-G12-B07-W02",
+        "THPT-G12-B07-W03",
+        "THPT-G12-B07-W04",
+        "THPT-G12-B08-W01",
+        "THPT-G12-B08-W02",
+        "THPT-G12-B08-W03",
+        "THPT-G12-B08-W04",
+        "THPT-G12-B08-W05",
+        "THPT-G12-B08-W06",
+        "THPT-G12-B14-W01",
+        "THPT-G12-B14-W02",
+        "THPT-G12-B14-W03",
+        "THPT-G12-B14-W04",
+        "THPT-G12-B14-W05",
+        "THPT-G12-B14-W06",
+        "THPT-G12-B14-W07",
+        "THPT-G12-B15-W01",
+        "THPT-G12-B15-W02",
+        "THPT-G12-B15-W03",
+        "THPT-G12-B15-W04",
+        "THPT-G12-B15-W05",
+        "THPT-G12-B15-W06",
+        "THPT-G12-B15-W07",
+        "THPT-G12-B16-W01",
+        "THPT-G12-B16-W02",
+        "THPT-G12-B16-W03",
+        "THPT-G12-B16-W04",
+        "THPT-G12-B16-W05",
+        "THPT-G12-B17-W01",
+        "THPT-G12-B17-W02",
+        "THPT-G12-B17-W03",
+        "THPT-G12-B17-W04",
+        "THPT-G12-B17-W05",
+        "THPT-TOP18-W01",
+        "THPT-TOP18-W02",
+        "THPT-TOP18-W06",
+        "THPT-TOP18-W03",
+        "THPT-TOP18-W04",
+        "THPT-TOP18-W05",
+        "THPT-TOP18-W07"
+      ],
+      "remaining": [
+        "Three-way compare prior authoring snapshot → new #1109 learner vs CP64 candidate: source-equivalent notation not overwrite better candidate items; meaningful FirstTry edits across CD14–22, older CĐ01–13 local first-try inventory; audit B16-W01, B14-W07 and Written pointers; candidate CĐ18 B17-C04/P04 diameter already fixed CP62.",
+        "CĐ20/21 shared SGK placements, depth gaps CĐ15/19/22, remaining SGK first-try and interaction conversion after source reconciliation."
+      ],
+      "release_authorization": false
     }
   }
 }
