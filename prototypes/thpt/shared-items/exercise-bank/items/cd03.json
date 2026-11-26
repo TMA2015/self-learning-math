@@ -4,7 +4,7 @@
     "content_version": "TOP03-BANK-CP77-20261126-ADD01",
     "stem": "Giải \\(2x+6=14\\) và chỉ rõ phép biến đổi tương đương.",
     "answer_key": "\\(S=\\{4\\}\\).",
-    "worked_solution": "Trừ 6 ở cả hai vế: \\(2x=8\\); chia \\(2>0\\) (với phương trình, chỉ cần chia số khác 0) được \\(x=4\\). Thay \\(2\\cdot4+6=14\\). Cả hai bước đều đảo ngược được nên tập nghiệm giữ nguyên.",
+    "worked_solution": "Trừ 6 ở cả hai vế: \\(2x=8\\). Chia cả hai vế cho 2 (khác 0), được \\(x=4\\). Thay vào đề gốc: \\(2\\cdot4+6=14\\). Cả hai bước đều đảo ngược được nên tập nghiệm giữ nguyên.",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O01"
@@ -14,7 +14,7 @@
     "hints": [
       "Thực hiện cùng phép tính ở hai vế; chỉ chia số khác 0."
     ],
-    "remediation": "Nếu cộng/trừ không đều hai vế, thế ngược x=4 để kiểm lại phép biến đổi. Ôn TOP03-M01; luyện THPT-TOP03-ADD02.",
+    "remediation": "Nếu cộng/trừ không đều hai vế, thế ngược \\(x=4\\) để kiểm lại phép biến đổi. Ôn TOP03-M01; luyện THPT-TOP03-ADD02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -47,9 +47,9 @@
     "problem_type_id": "TOP03-TRANSFORM_ONE_WAY",
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Thử x=−3 trong cả hai phương trình."
+      "Thử \\(x=-3\\) trong cả hai phương trình."
     ],
-    "remediation": "Nếu nghĩ x²=9 chỉ có 3, thử x=−3; nối với bài học nghiệm ngoại lai. Ôn TOP03-M01; luyện THPT-TOP03-ADD01.",
+    "remediation": "Nếu nghĩ \\(x^2=9\\) chỉ có nghiệm 3, thử \\(x=-3\\). Khi bình phương, cần kiểm điều kiện để không nhận nghiệm ngoại lai. Ôn TOP03-M01; luyện THPT-TOP03-ADD01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -82,9 +82,9 @@
     "problem_type_id": "TOP03-LINEAR_EQUATION",
     "difficulty": "BASIC",
     "hints": [
-      "Khai triển 3(x−2), rồi thu gọn hai vế."
+      "Khai triển \\(3(x-2)\\) rồi thu gọn hai vế."
     ],
-    "remediation": "Nếu quên nhân 3 với −2, khai triển lại và thử bằng hai vế. Ôn TOP03-M02; luyện THPT-TOP03-ADD04.",
+    "remediation": "Nếu quên nhân 3 với \\(-2\\), khai triển lại và thử nghiệm bằng cách thay vào cả hai vế. Ôn TOP03-M02; luyện THPT-TOP03-ADD04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -119,7 +119,7 @@
     "hints": [
       "Tách các m làm hệ số của x bằng 0 trước khi chia."
     ],
-    "remediation": "Nếu chia cho m−1 hoặc m−2 ngay, kiểm riêng m=1 và m=2 để không mất trường hợp vô số nghiệm hoặc vô nghiệm. Ôn TOP03-M02; luyện THPT-TOP03-ADD03.",
+    "remediation": "Nếu chia cho \\(m-1\\) hoặc \\(m-2\\) ngay, kiểm riêng \\(m=1\\) và \\(m=2\\) để không mất trường hợp vô số nghiệm hoặc vô nghiệm. Ôn TOP03-M02; luyện THPT-TOP03-ADD03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -154,7 +154,7 @@
     "hints": [
       "Dùng quy tắc tích bằng 0, không chia cho một thừa số."
     ],
-    "remediation": "Nếu chia cho x−2, sẽ mất nghiệm x=2; dùng quy tắc tích bằng 0 thay vì khử thừa số. Ôn TOP03-M03; luyện THPT-TOP03-ADD06.",
+    "remediation": "Nếu chia cho \\(x-2\\), sẽ mất nghiệm \\(x=2\\); dùng quy tắc tích bằng 0 thay vì khử thừa số. Ôn TOP03-M03; luyện THPT-TOP03-ADD06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -189,7 +189,7 @@
     "hints": [
       "Tìm giá trị làm từng thừa số bằng 0, không đếm trùng."
     ],
-    "remediation": "Nếu viết {1,1,−4}, phân biệt số lần nghiệm xuất hiện khi phân tích với số phần tử tập nghiệm. Ôn TOP03-M03; luyện THPT-TOP03-ADD05.",
+    "remediation": "Nếu viết \\(\\{1;1;-4\\}\\) như ba nghiệm phân biệt, nhớ tập nghiệm chỉ ghi mỗi giá trị một lần. Bội của nghiệm khác số phần tử tập nghiệm. Ôn TOP03-M03; luyện THPT-TOP03-ADD05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -222,9 +222,9 @@
     "problem_type_id": "TOP03-QUADRATIC_ROOTS",
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Nhận ra b chẵn; tính b'=b/2 và Δ'."
+      "Nhận ra b chẵn; tính \\(b'=\\frac b2\\) và \\(\\Delta'\\)."
     ],
-    "remediation": "Nếu dùng mẫu 2a trong công thức Δ′, phân biệt b với b′=b/2 và kiểm nghiệm bằng nhân tử. Ôn TOP03-M04; luyện THPT-TOP03-ADD08.",
+    "remediation": "Nếu dùng mẫu \\(2a\\) trong công thức nghiệm theo \\(\\Delta'\\), phân biệt \\(b'=\\frac b2\\) với b và nhớ mẫu của công thức thu gọn là a. Kiểm nghiệm bằng nhân tử. Ôn TOP03-M04; luyện THPT-TOP03-ADD08.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -257,9 +257,9 @@
     "problem_type_id": "TOP03-QUADRATIC_NO_REAL_ROOT",
     "difficulty": "UNDERSTAND",
     "hints": [
-      "So Δ với 0 ở từng phương trình; hoàn thành bình phương để kiểm."
+      "So \\(\\Delta\\) với 0 ở từng phương trình; hoàn thành bình phương để kiểm."
     ],
-    "remediation": "Nếu nhầm với nghiệm kép, so Δ=0 và Δ<0; đối chiếu bằng hoàn phương. Ôn TOP03-M04; luyện THPT-TOP03-ADD07.",
+    "remediation": "Nếu nhầm vô nghiệm với nghiệm kép, so \\(\\Delta=0\\) và \\(\\Delta<0\\); đối chiếu bằng hoàn thành bình phương. Ôn TOP03-M04; luyện THPT-TOP03-ADD07.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -284,7 +284,7 @@
     "content_version": "TOP03-BANK-CP77-20261126-ADD09",
     "stem": "Giải \\(\\frac{x^2-4}{x-2}=0\\). Giải thích vì sao \\(x=2\\) bị loại.",
     "answer_key": "\\(S=\\{-2\\}\\).",
-    "worked_solution": "Điều kiện \\(x\\ne2\\). Tử \\((x-2)(x+2)=0\\) cho \\(x=2\\) hoặc \\(x=-2\\); chỉ −2 hợp miền. Rút gọn thành \\(x+2=0\\) chỉ được dùng trên miền \\(x\\ne2\\), không tự lấp lỗ \\(x=2\\).",
+    "worked_solution": "Điều kiện \\(x\\ne2\\). Tử \\((x-2)(x+2)=0\\) cho \\(x=2\\) hoặc \\(x=-2\\); chỉ \\(x=-2\\) hợp miền. Rút gọn thành \\(x+2=0\\) chỉ được dùng trên miền \\(x\\ne2\\), không tự bổ sung điểm bị loại.",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O05"
@@ -294,7 +294,7 @@
     "hints": [
       "Ghi mẫu khác 0 trước khi xét tử bằng 0."
     ],
-    "remediation": "Nếu ghi {−2,2}, hãy thay x=2 vào mẫu và nhận thấy không xác định. Ôn TOP03-M05; luyện THPT-TOP03-ADD10.",
+    "remediation": "Nếu nhận cả \\(-2\\) và 2, hãy thay \\(x=2\\) vào mẫu và nhận thấy biểu thức không xác định. Ôn TOP03-M05; luyện THPT-TOP03-ADD10.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -327,9 +327,9 @@
     "problem_type_id": "TOP03-RATIONAL_COMMON_DENOMINATOR",
     "difficulty": "APPLY",
     "hints": [
-      "Ghi x≠±1 rồi nhân với mẫu chung."
+      "Ghi \\(x\\ne1\\) và \\(x\\ne-1\\) rồi nhân với mẫu chung."
     ],
-    "remediation": "Nếu nhân hai vế với mẫu mà quên điều kiện, quay lại bước x≠1 và x≠−1 rồi đối chiếu nghiệm. Ôn TOP03-M05; luyện THPT-TOP03-ADD09.",
+    "remediation": "Nếu nhân hai vế với mẫu mà quên điều kiện, quay lại bước \\(x\\ne1\\) và \\(x\\ne-1\\) rồi đối chiếu nghiệm. Ôn TOP03-M05; luyện THPT-TOP03-ADD09.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -364,7 +364,7 @@
     "hints": [
       "Vế phải dương nên có hai nhánh dấu."
     ],
-    "remediation": "Nếu chỉ lấy x=4, nhớ |u|=c có hai nhánh khi c>0. Ôn TOP03-M06; luyện THPT-TOP03-ADD12.",
+    "remediation": "Nếu chỉ lấy \\(x=4\\), nhớ \\(|u|=c\\) có hai nhánh \\(u=c\\) hoặc \\(u=-c\\) khi \\(c>0\\). Ôn TOP03-M06; luyện THPT-TOP03-ADD12.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -389,7 +389,7 @@
     "content_version": "TOP03-BANK-CP77-20261126-ADD12",
     "stem": "Giải \\(\\lvert x-2\\rvert=x\\).",
     "answer_key": "\\(S=\\{1\\}\\).",
-    "worked_solution": "Vế trái ≥0 nên \\(x\\ge0\\). Nếu \\(x\\ge2\\) thì \\(\\lvert x-2\\rvert=x-2\\), không thể bằng x; nếu \\(0\\le x<2\\) thì \\(\\lvert x-2\\rvert=2-x=x\\Rightarrow x=1\\) hợp miền. Thử \\(\\lvert-1\\rvert=1\\).",
+    "worked_solution": "Vế trái không âm nên \\(x\\ge0\\). Nếu \\(x\\ge2\\) thì \\(\\lvert x-2\\rvert=x-2\\), phương trình trở thành \\(x-2=x\\), vô nghiệm. Nếu \\(0\\le x<2\\) thì \\(\\lvert x-2\\rvert=2-x=x\\Rightarrow x=1\\) hợp miền. Thử \\(\\lvert1-2\\rvert=1\\).",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O06"
@@ -397,9 +397,9 @@
     "problem_type_id": "TOP03-ABSOLUTE_VALUE_SIGN_CONSTRAINT",
     "difficulty": "APPLY",
     "hints": [
-      "Vế phải phải không âm; xét hai miền của x−2."
+      "Vế phải phải không âm; xét hai miền theo dấu của \\(x-2\\)."
     ],
-    "remediation": "Nếu nhận x âm, kiểm dấu vế phải; nếu nhận cả x≥2, xét nhánh giá trị tuyệt đối đúng miền. Ôn TOP03-M06; luyện THPT-TOP03-ADD11.",
+    "remediation": "Nếu nhận x âm, kiểm dấu vế phải; nếu nhận nghiệm ở miền \\(x\\ge2\\), xét nhánh giá trị tuyệt đối đúng miền. Ôn TOP03-M06; luyện THPT-TOP03-ADD11.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -437,7 +437,7 @@
     "hints": [
       "Kiểm dấu vế phải trước bình phương, rồi thử từng ứng viên."
     ],
-    "remediation": "Nếu kết luận hai nghiệm, thử x=−1 trong phương trình gốc và kiểm dấu. Ôn TOP03-M07; luyện THPT-TOP03-ADD14.",
+    "remediation": "Nếu kết luận hai nghiệm, thử \\(x=-1\\) trong phương trình gốc và kiểm dấu. Ôn TOP03-M07; luyện THPT-TOP03-ADD14.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -472,9 +472,9 @@
     "problem_type_id": "TOP03-SQUARE_ROOT_ABSOLUTE",
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Căn bậc hai số học luôn không âm; √(x²)=|x|."
+      "Căn bậc hai số học luôn không âm; \\(\\sqrt{x^2}=|x|\\)."
     ],
-    "remediation": "Nếu triệt căn/bình phương máy móc rồi nhận cả ℝ, thử x âm để phát hiện mất thông tin dấu. Ôn TOP03-M07; luyện THPT-TOP03-ADD13.",
+    "remediation": "Nếu triệt căn/bình phương máy móc rồi nhận mọi số thực, thử x âm để phát hiện mất thông tin dấu. Ôn TOP03-M07; luyện THPT-TOP03-ADD13.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -548,9 +548,9 @@
     "problem_type_id": "TOP03-ONE_RADICAL_TWO_VALID_ROOTS",
     "difficulty": "APPLY",
     "hints": [
-      "Kiểm x+2≥0 và 5x+4≥0; thử tất cả nghiệm."
+      "Kiểm \\(x+2\\ge0\\) và \\(5x+4\\ge0\\); thử tất cả nghiệm."
     ],
-    "remediation": "Nếu tự loại mất một nghiệm, thử cả x=0 và x=1 trong gốc. Ôn TOP03-M09; luyện THPT-TOP03-ADD13.",
+    "remediation": "Nếu tự loại mất một nghiệm, thử cả \\(x=0\\) và \\(x=1\\) trong phương trình gốc. Ôn TOP03-M09; luyện THPT-TOP03-ADD13.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -588,7 +588,7 @@
     "hints": [
       "Kiểm cả hai biểu thức dưới căn ở mỗi ứng viên."
     ],
-    "remediation": "Nếu giữ cả hai nghiệm, so −2−√6 với −4 bằng bình phương/ước lượng √6>2. Ôn TOP03-M10; luyện THPT-TOP03-ADD15.",
+    "remediation": "Nếu giữ cả hai nghiệm, so \\(-2-\\sqrt6\\) với \\(-4\\) bằng nhận xét \\(\\sqrt6>2\\). Ôn TOP03-M10; luyện THPT-TOP03-ADD15.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -623,9 +623,9 @@
     "problem_type_id": "TOP03-RADICAL_NO_SOLUTION_SIGN",
     "difficulty": "APPLY",
     "hints": [
-      "Kiểm x−1≥0 trước khi giải phương trình sau bình phương."
+      "Kiểm \\(x-1\\ge0\\) trước khi giải phương trình sau bình phương."
     ],
-    "remediation": "Nếu nhận x=−4 vì làm đúng bình phương, thử lại dấu hai vế gốc. Ôn TOP03-M10; luyện THPT-TOP03-ADD17.",
+    "remediation": "Nếu nhận \\(x=-4\\) vì làm đúng bình phương, thử lại dấu hai vế phương trình gốc. Ôn TOP03-M10; luyện THPT-TOP03-ADD17.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -658,9 +658,9 @@
     "problem_type_id": "TOP03-BIQUADRATIC_SUBSTITUTION",
     "difficulty": "APPLY_EXTENSION",
     "hints": [
-      "Đặt t=x²≥0; khi quay về x, xét cả hai dấu."
+      "Đặt \\(t=x^2\\ge0\\); khi quay về x, xét cả hai dấu."
     ],
-    "remediation": "Nếu chỉ lấy x dương, nhớ x²=t>0 có hai nghiệm đối nhau. Ôn TOP03-M11; luyện THPT-TOP03-ADD20.",
+    "remediation": "Nếu chỉ lấy x dương, nhớ phương trình \\(x^2=t\\) với \\(t>0\\) có hai nghiệm đối nhau. Ôn TOP03-M11; luyện THPT-TOP03-ADD20.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -693,9 +693,9 @@
     "problem_type_id": "TOP03-BIQUADRATIC_NEGATIVE_T",
     "difficulty": "APPLY_EXTENSION",
     "hints": [
-      "Lọc t không âm trước khi giải x²=t."
+      "Lọc t không âm trước khi giải \\(x^2=t\\)."
     ],
-    "remediation": "Nếu nhận nghiệm x²=−4 trong ℝ, kiểm bình phương số thực không âm. Ôn TOP03-M11; luyện THPT-TOP03-ADD19.",
+    "remediation": "Nếu nhận nghiệm \\(x^2=-4\\) trong tập số thực, kiểm bình phương số thực không âm. Ôn TOP03-M11; luyện THPT-TOP03-ADD19.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -730,9 +730,9 @@
     "problem_type_id": "TOP03-GEOMETRIC_RADICAL_MODEL",
     "difficulty": "APPLY",
     "hints": [
-      "Vẽ tam giác vuông, cạnh huyền 10 m; giữ x>0."
+      "Vẽ tam giác vuông, cạnh huyền 10 m; giữ \\(x>0\\)."
     ],
-    "remediation": "Nếu nhận −8, kiểm x>0 và x+2>0; nếu sai phân tích, chia 2 trước. Ôn TOP03-M12; luyện THPT-G10-B18-P04.",
+    "remediation": "Nếu nhận \\(x=-8\\), kiểm \\(x>0\\) và \\(x+2>0\\); nếu sai phân tích, chia 2 trước. Ôn TOP03-M12; luyện THPT-G10-B18-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
