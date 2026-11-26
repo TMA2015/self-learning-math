@@ -1248,21 +1248,21 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Đáp án:** \(u_6=128\).
 
-**Lời giải:** u_6=4·2^(6−1)=128.
+**Lời giải:** \(u_6=4\cdot2^{6-1}=128\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P12; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O12; NOT_A_NEW_BANK -->
 
-**Bài 47.** CSN u_1=3,q=−2. Tính u_6.
+**Bài 47.** CSN \(u_1=3,\ q=-2\). Tính \(u_6\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** −96.
 
-**Lời giải có suy luận:** u_6=3(−2)^{6−1}=3(−32)=−96. Lũy thừa bậc lẻ của số âm là âm.
+**Lời giải có suy luận:** \(u_6=3(-2)^{6-1}=3(-32)=-96\). Lũy thừa bậc lẻ của số âm là âm.
 
-**Nếu làm sai:** Nhớ số mũ n−1 và giữ dấu trong ngoặc.
+**Nếu làm sai:** Nhớ số mũ \(n-1\) và giữ dấu trong ngoặc.
 
 </details>
 
@@ -1272,9 +1272,9 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=3.
+**Đáp án:** \(x=3\).
 
-**Lời giải:** x²=9·1=9 và x>0 ⇒ x=3.
+**Lời giải:** \(x^2=9\cdot1=9\) và \(x>0\Rightarrow x=3\).
 
 </details>
 
@@ -1284,137 +1284,137 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=6.
+**Đáp án:** \(x=6\).
 
-**Lời giải:** x²=2·18=36; do các số hạng đều dương nên x=6.
+**Lời giải:** \(x^2=2\cdot18=36\); do các số hạng đều dương nên \(x=6\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P13; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O13; NOT_A_NEW_BANK -->
 
-**Bài 50.** CSN có u_2=6,u_4=54, các số hạng liên quan khác 0. Có bao nhiêu cặp (u_1,q) thực thỏa điều kiện?
+**Bài 50.** CSN có \(u_2=6,\ u_4=54\), các số hạng liên quan khác 0. Có bao nhiêu cặp \((u_1;q)\) thực thỏa điều kiện?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Hai cặp: (2,3) và (−2,−3).
+**Đáp án:** Hai cặp: \((2;3)\) và \((-2;-3)\).
 
-**Lời giải có suy luận:** u_4/u_2=q²=54/6=9 ⇒ q=3 hoặc q=−3. Với u_2=u_1q=6, suy ra u_1=2 khi q=3 và u_1=−2 khi q=−3. Kiểm lại u_4=u_1q³=54 trong cả hai trường hợp.
+**Lời giải có suy luận:** \(\frac{u_4}{u_2}=q^2=\frac{54}6=9\Rightarrow q=3\) hoặc \(q=-3\). Với \(u_2=u_1q=6\), suy ra \(u_1=2\) khi \(q=3\) và \(u_1=-2\) khi \(q=-3\). Kiểm lại \(u_4=u_1q^3=54\) trong cả hai trường hợp.
 
-**Nếu làm sai:** Không tự lấy căn q=+3 và bỏ nghiệm âm.
+**Nếu làm sai:** Không tự lấy căn \(q=+3\) và bỏ nghiệm âm.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHII-W07-01; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O14; NOT_A_NEW_BANK -->
 
-**Bài 51.** CSN có u_1=5,q=−2. Tính u_6, S_6, và chứng minh bằng cộng từng số hạng.
+**Bài 51.** CSN có \(u_1=5,\ q=-2\). Tính \(u_6,\ S_6\) và chứng minh bằng cộng từng số hạng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải:** u_6=5(−2)^5=−160. Sáu số hạng 5,−10,20,−40,80,−160, tổng −105. Công thức S6=5[1−(−2)^6]/[1−(−2)]=5(1−64)/3=−105.
+**Lời giải:** \(u_6=5(-2)^5=-160\). Sáu số hạng \(5,-10,20,-40,80,-160\), tổng \(-105\). Công thức \(S_6=\frac{5[1-(-2)^6]}{1-(-2)}=\frac{5(1-64)}3=-105\).
 
 **Rubric /6:**
-- công thức un (1 điểm).
-- u6=−160 (1 điểm).
+- công thức \(u_n\) (1 điểm).
+- \(u_6=-160\) (1 điểm).
 - liệt kê sáu số hạng (1 điểm).
 - cộng trực tiếp −105 (1 điểm).
-- áp công thức q≠1 (1 điểm).
+- áp công thức \(q\ne1\) (1 điểm).
 - hai cách thống nhất (1 điểm).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B07-P04; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O14; NOT_A_NEW_BANK -->
 
-**Bài 52.** CSN u_1=8,q=1. Tính S_9.
+**Bài 52.** CSN \(u_1=8,\ q=1\). Tính \(S_9\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 72.
 
-**Lời giải:** Dãy hằng bằng 8, S_9=9·8=72; không chia cho 1−q=0.
+**Lời giải:** Dãy hằng bằng 8, \(S_9=9\cdot8=72\); không chia cho \(1-q=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B07-P03; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O14; NOT_A_NEW_BANK -->
 
-**Bài 53.** CSN u_1=2,q=−2. Tính S_5.
+**Bài 53.** CSN \(u_1=2,\ q=-2\). Tính \(S_5\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S_5=22.
+**Đáp án:** \(S_5=22\).
 
-**Lời giải:** S_5=2(1−(−2)^5)/(1−(−2))=2·33/3=22.
+**Lời giải:** \(S_5=\frac{2[1-(-2)^5]}{1-(-2)}=\frac{2\cdot33}3=22\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B07-C03; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O14; NOT_A_NEW_BANK -->
 
-**Bài 54.** CSN u_1=3,q=2. Tính S_4.
+**Bài 54.** CSN \(u_1=3,\ q=2\). Tính \(S_4\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 45.
 
-**Lời giải:** 3+6+12+24=45, hoặc 3(1−2⁴)/(1−2)=45.
+**Lời giải:** \(3+6+12+24=45\), hoặc \(\frac{3(1-2^4)}{1-2}=45\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P14; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O14; NOT_A_NEW_BANK -->
 
-**Bài 55.** CSN u_1=5,q=2. Tính S_6; viết rõ vì sao không dùng công thức q=1.
+**Bài 55.** CSN \(u_1=5,\ q=2\). Tính \(S_6\); viết rõ vì sao không dùng công thức \(q=1\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 315.
 
-**Lời giải có suy luận:** S_6=5(2^6−1)/(2−1)=5·63=315. Vì q=2≠1 nên áp dụng tổng nhân hữu hạn; nếu q=1 thì phải dùng S_n=nu_1.
+**Lời giải có suy luận:** \(S_6=\frac{5(2^6-1)}{2-1}=5\cdot63=315\). Vì \(q=2\ne1\) nên áp dụng tổng nhân hữu hạn; nếu \(q=1\) thì phải dùng \(S_n=nu_1\).
 
-**Nếu làm sai:** Phân biệt q≠1 với q=1; công thức có mẫu q−1 không dùng được khi q=1.
+**Nếu làm sai:** Phân biệt \(q\ne1\) với \(q=1\); công thức có mẫu \(q-1\) không dùng được khi \(q=1\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-W02-ANCHOR; ORIGINAL_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP07-O15; NOT_A_NEW_BANK -->
 
-**Bài 56.** Một thiết bị trong lần thử đầu tiêu thụ 1,2 đơn vị năng lượng. Mỗi lần thử tiếp theo tiêu thụ 3/4 lần liền trước. (a) Viết ba mức tiêu thụ đầu. (b) Thiết lập tổng n lần thử. (c) Tính tổng lý thuyết vô hạn. (d) Giải thích vì sao công thức không áp dụng với q=1.
+**Bài 56.** Một thiết bị trong lần thử đầu tiêu thụ 1,2 đơn vị năng lượng. Mỗi lần thử tiếp theo tiêu thụ \(\frac34\) lần liền trước. (a) Viết ba mức tiêu thụ đầu. (b) Thiết lập tổng n lần thử. (c) Tính tổng lý thuyết vô hạn. (d) Giải thích vì sao công thức không áp dụng với \(q=1\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải và lí do:** (a) 1,2; 0,9; 0,675. (b) Sₙ=1,2(1−(3/4)ⁿ)/(1−3/4). (c) Vì |3/4|<1 nên (3/4)ⁿ→0, S=1,2/(1/4)=4,8. (d) Nếu q=1, mỗi số hạng bằng 1,2, tổng n lần là 1,2n tăng không bị chặn; không có tổng hữu hạn.
+**Lời giải và lí do:** (a) 1,2; 0,9; 0,675. (b) \(S_n=\frac{1{,}2[1-(\frac34)^n]}{1-\frac34}\). (c) Vì \(\lvert\frac34\rvert<1\) nên \((\frac34)^n\to0\), \(S=\frac{1{,}2}{\frac14}=4{,}8\). (d) Nếu \(q=1\), mỗi số hạng bằng 1,2, tổng n lần là \(1{,}2n\) tăng không bị chặn; không có tổng hữu hạn.
 
 **Rubric 4 điểm:**
 1. Tính đúng ba mức đầu và công bội. — 1 điểm.
-2. Thiết lập đúng tổng riêng Sₙ, ghi điều kiện. — 1 điểm.
+2. Thiết lập đúng tổng riêng \(S_n\), ghi điều kiện. — 1 điểm.
 3. Lấy giới hạn và kết luận 4,8 đơn vị. — 1 điểm.
-4. Lí giải đúng q=1 làm tổng không hội tụ hữu hạn. — 1 điểm.
+4. Lí giải đúng \(q=1\) làm tổng không hội tụ hữu hạn. — 1 điểm.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-P07; ORIGINAL_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP07-O15; NOT_A_NEW_BANK -->
 
-**Bài 57.** Bóng rơi từ độ cao 3 m, mỗi lần bật lên cao bằng 1/2 lần trước; mô hình vô hạn. Tổng quãng đường theo phương thẳng đứng là bao nhiêu?
+**Bài 57.** Bóng rơi từ độ cao 3 m, mỗi lần bật lên cao bằng \(\frac12\) lần trước; mô hình vô hạn. Tổng quãng đường theo phương thẳng đứng là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 9 m.
 
-**Lời giải và lời giải thích:** Lần đầu đi xuống 3 m. Những lần sau gồm đi lên và xuống ở các độ cao 3/2,3/4,… nên tổng là 3+2×[(3/2)/(1−1/2)]=9 m. Nêu rõ đây là mô hình lí tưởng.
+**Lời giải và lời giải thích:** Lần đầu đi xuống 3 m. Những lần sau gồm đi lên và xuống ở các độ cao \(\frac32,\frac34,\ldots\) (m), nên tổng là \(3+2\cdot\frac{\frac32}{1-\frac12}=9\) m. Nêu rõ đây là mô hình lí tưởng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-P06; ORIGINAL_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP07-O15; NOT_A_NEW_BANK -->
 
-**Bài 58.** Tính tổng lý thuyết 8−4+2−1+…; vì sao tổng vẫn hữu hạn dù có vô hạn số hạng?
+**Bài 58.** Tính tổng lý thuyết \(8-4+2-1+\cdots\); vì sao tổng vẫn hữu hạn dù có vô hạn số hạng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 16/3.
+**Đáp án:** \(\frac{16}3\).
 
-**Lời giải và lời giải thích:** Đây là cấp số nhân a=8, q=−1/2, |q|<1; tổng bằng 8/(1+1/2)=16/3; số hạng và phần dư tiến về 0.
+**Lời giải và lời giải thích:** Đây là cấp số nhân \(a=8,\ q=-\frac12,\ \lvert q\rvert<1\); tổng bằng \(\frac8{1+\frac12}=\frac{16}3\); số hạng và phần dư tiến về 0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-P05; ORIGINAL_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP07-O15; NOT_A_NEW_BANK -->
 
-**Bài 59.** Dãy vₙ=(−1)ⁿ có giới hạn hữu hạn hoặc ±∞ không?
+**Bài 59.** Dãy \(v_n=(-1)^n\) có giới hạn hữu hạn hoặc \(\pm\infty\) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1426,50 +1426,50 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-C03; ORIGINAL_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP07-O15; NOT_A_NEW_BANK -->
 
-**Bài 60.** Tổng vô hạn 3+3/5+3/25+… có thể dùng công thức cấp số nhân lùi vô hạn không?
+**Bài 60.** Tổng vô hạn \(3+\frac35+\frac3{25}+\cdots\) có thể dùng công thức cấp số nhân lùi vô hạn không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Có; tổng bằng 15/4.
+**Đáp án:** Có; tổng bằng \(\frac{15}4\).
 
-**Lời giải và lời giải thích:** Số hạng đầu 3, công bội 1/5 có trị tuyệt đối nhỏ hơn 1; tổng 3/(1−1/5)=15/4.
+**Lời giải và lời giải thích:** Số hạng đầu 3, công bội \(\frac15\) có trị tuyệt đối nhỏ hơn 1; tổng \(\frac3{1-\frac15}=\frac{15}4\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P15; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O15; NOT_A_NEW_BANK -->
 
-**Bài 61.** CSN vô hạn có a_1=9,q=−1/3. Tính tổng S_∞, tổng bốn số hạng đầu S_4 và phần dư S_∞−S_4.
+**Bài 61.** CSN vô hạn có \(a_1=9,\ q=-\frac13\). Tính tổng \(S_\infty\), tổng bốn số hạng đầu \(S_4\) và phần dư \(S_\infty-S_4\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S_∞=27/4, S_4=20/3, phần dư=1/12.
+**Đáp án:** \(S_\infty=\frac{27}4,\ S_4=\frac{20}3\), phần dư bằng \(\frac1{12}\).
 
-**Lời giải có suy luận:** |q|=1/3<1 nên S_∞=9/(1+1/3)=27/4. S_4=9[1−(−1/3)^4]/(1+1/3)=20/3. Phần dư=27/4−20/3=(81−80)/12=1/12.
+**Lời giải có suy luận:** \(\lvert q\rvert=\frac13<1\) nên \(S_\infty=\frac9{1+\frac13}=\frac{27}4\). \(S_4=\frac{9[1-(-\frac13)^4]}{1+\frac13}=\frac{20}3\). Phần dư bằng \(\frac{27}4-\frac{20}3=\frac{81-80}{12}=\frac1{12}\).
 
-**Nếu làm sai:** Tổng vô hạn cần |q|<1; phần dư có dấu khi q âm.
+**Nếu làm sai:** Công thức tổng vô hạn cần \(\lvert q\rvert<1\); phần dư có dấu khi q âm.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W03; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O15; NOT_A_NEW_BANK -->
 
-**Bài 62.** CSN có u_1=12,q=−1/2. (a) Viết S_n và lý do được tính tổng vô hạn. (b) Tính S_∞. (c) Tìm số nguyên n nhỏ nhất sao cho |S_∞−S_n|<1/4; chú ý dấu < nghiêm ngặt.
+**Bài 62.** CSN có \(u_1=12,\ q=-\frac12\). (a) Viết \(S_n\) và lý do được tính tổng vô hạn. (b) Tính \(S_\infty\). (c) Tìm số nguyên n nhỏ nhất sao cho \(\lvert S_\infty-S_n\rvert<\frac14\); chú ý dấu nhỏ hơn nghiêm ngặt.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** S_n=8[1−(−1/2)^n], S_∞=8, n nhỏ nhất =6.
+**Đáp án:** \(S_n=8[1-(-\frac12)^n],\ S_\infty=8\), n nhỏ nhất bằng 6.
 
-**Lời giải đầy đủ:** Vì q≠1, S_n=12[1−(−1/2)^n]/(1+1/2)=8[1−(−1/2)^n]. Vì |q|=1/2<1 nên q^n→0, S_∞=8. Sai số tuyệt đối |8−S_n|=8/2^n. Muốn nhỏ hơn 1/4 ⇒ 2^n>32, n nguyên nhỏ nhất 6; n=5 chỉ đạt đúng 1/4 nên không thỏa.
+**Lời giải đầy đủ:** Vì \(q\ne1\), \(S_n=\frac{12[1-(-\frac12)^n]}{1+\frac12}=8[1-(-\frac12)^n]\). Vì \(\lvert q\rvert=\frac12<1\) nên \(q^n\to0,\ S_\infty=8\). Sai số tuyệt đối \(\lvert8-S_n\rvert=\frac8{2^n}\). Muốn nhỏ hơn \(\frac14\) thì \(2^n>32\), n nguyên nhỏ nhất là 6; \(n=5\) chỉ đạt đúng \(\frac14\) nên không thỏa.
 
 **Rubric tự đối chiếu /7 điểm:**
-1. Nhận diện u_1,q và điều kiện q≠1 (1đ)
-2. Thiết lập S_n (1đ)
-3. Rút gọn S_n (1đ)
-4. Giải thích |q|<1 (1đ)
-5. Tính S_∞ (1đ)
+1. Nhận diện \(u_1,q\) và điều kiện \(q\ne1\) (1đ)
+2. Thiết lập \(S_n\) (1đ)
+3. Rút gọn \(S_n\) (1đ)
+4. Giải thích \(\lvert q\rvert<1\) (1đ)
+5. Tính \(S_\infty\) (1đ)
 6. Lập bất đẳng thức sai số (1đ)
-7. Tìm n=6 và loại n=5 (1đ)
+7. Tìm \(n=6\) và loại \(n=5\) (1đ)
 
-**Nếu làm sai:** Nếu chọn n=5, phân biệt 'nhỏ hơn' và 'nhỏ hơn hoặc bằng'.
+**Nếu làm sai:** Nếu chọn \(n=5\), phân biệt 'nhỏ hơn' và 'nhỏ hơn hoặc bằng'.
 
 </details>
 
@@ -1477,15 +1477,15 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P16; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O16; NOT_A_NEW_BANK -->
 
-**Bài 63.** Hai mô hình bắt đầu ở kỳ 0 với 50 đơn vị. A tăng 5 đơn vị mỗi kỳ; B tăng 10% so với kỳ trước. Tính A_3,B_3 và xác định kỳ nguyên k≥0 đầu tiên có B_k−A_k≥1.
+**Bài 63.** Hai mô hình bắt đầu ở kỳ 0 với 50 đơn vị. A tăng 5 đơn vị mỗi kỳ; B tăng 10% so với kỳ trước. Tính \(A_3,B_3\) và xác định kỳ nguyên \(k\ge0\) đầu tiên có \(B_k-A_k\ge1\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** A_3=65; B_3=66,55; k=3 là kỳ đầu tiên hiệu ít nhất 1.
+**Đáp án:** \(A_3=65;\ B_3=66{,}55\); \(k=3\) là kỳ đầu tiên hiệu ít nhất 1.
 
-**Lời giải có suy luận:** A_k=50+5k; B_k=50·1,1^k. Theo k=0,1,2,3, A lần lượt 50,55,60,65 và B lần lượt 50,55,60,5,66,55. Hiệu B_k−A_k lần lượt 0,0,0,5,1,55; do đó k=3 là chỉ số đầu tiên thỏa ≥1. Dãy bắt đầu ở kỳ 0, không phải số hạng đầu ở kỳ 1.
+**Lời giải có suy luận:** \(A_k=50+5k;\ B_k=50(1{,}1)^k\). Theo \(k=0,1,2,3\), A lần lượt 50; 55; 60; 65 và B lần lượt 50; 55; 60,5; 66,55. Hiệu \(B_k-A_k\) lần lượt 0; 0; 0,5; 1,55; do đó \(k=3\) là chỉ số đầu tiên thỏa điều kiện. Dãy bắt đầu ở kỳ 0, không phải số hạng đầu ở kỳ 1.
 
-**Nếu làm sai:** Lập bảng từng kỳ 0→3; giữ nguyên 5 khi cộng nhưng tính 10% trên số dư mới khi nhân.
+**Nếu làm sai:** Lập bảng từng kỳ 0–3; giữ nguyên 5 khi cộng nhưng tính 10% trên số dư mới khi nhân.
 
 </details>
 
@@ -1495,14 +1495,14 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải:** V_n=80·1,05^n (triệu), n≥0. V_4=97,2405. Vì V_4<100 và V_5=102,102525>100, năm nguyên đầu tiên là 5.
+**Lời giải:** \(V_n=80(1{,}05)^n\) (triệu đồng), \(n\ge0\). \(V_4=97{,}2405\). Vì \(V_4<100\) và \(V_5=102{,}102525>100\), năm nguyên đầu tiên là 5.
 
 **Rubric /6:**
-- nêu V0, q=1,05 (1 điểm).
-- đúng Vn (1 điểm).
-- V4=97,2405 (1 điểm).
-- chứng minh V4 chưa vượt 100 (1 điểm).
-- V5=102,102525 (1 điểm).
+- nêu \(V_0,\ q=1{,}05\) (1 điểm).
+- đúng \(V_n\) (1 điểm).
+- \(V_4=97{,}2405\) (1 điểm).
+- chứng minh \(V_4\) chưa vượt 100 (1 điểm).
+- \(V_5=102{,}102525\) (1 điểm).
 - kết luận năm 5, làm rõ mốc thời gian (1 điểm).
 
 </details>
@@ -1513,9 +1513,9 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 50·1,04³ = 56,2432 triệu đồng.
+**Đáp án:** \(50(1{,}04)^3=56{,}2432\) triệu đồng.
 
-**Lời giải:** V_3=50(1+0,04)^3=56,2432; phân biệt t=0 và t=3.
+**Lời giải:** \(V_3=50(1+0{,}04)^3=56{,}2432\); phân biệt \(t=0\) và \(t=3\).
 
 </details>
 
@@ -1527,7 +1527,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Đáp án:** 6400 cá thể.
 
-**Lời giải:** N_5=200·2⁵=6400; ban đầu tính là thời điểm t=0.
+**Lời giải:** \(N_5=200\cdot2^5=6400\); ban đầu tính là thời điểm \(t=0\).
 
 </details>
 
@@ -1539,7 +1539,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Đáp án:** 8,82 triệu đồng.
 
-**Lời giải có suy luận:** Mỗi năm nhân số dư với 1,05: 8·1,05²=8·1,1025=8,82 (triệu). Đây là mô hình giả định, chưa trừ thuế/phí nếu có.
+**Lời giải có suy luận:** Mỗi năm nhân số dư với 1,05: \(8(1{,}05)^2=8\cdot1{,}1025=8{,}82\) (triệu đồng). Đây là mô hình giả định, chưa trừ thuế/phí nếu có.
 
 **Nếu làm sai:** 5% là tỉ lệ theo năm, không phải cộng 0,05 triệu mỗi năm.
 
@@ -1553,7 +1553,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Đáp án:** (a) 126,1; (b) gửi đầu kỳ được 132,405, nhiều hơn 6,305 đơn vị.
 
-**Lời giải có suy luận:** Gửi cuối kỳ 1,2,3 được hưởng tương ứng 2,1,0 kỳ lãi: FV_cuối=40[(1,05)^2+1,05+1]=126,1. Gửi đầu kỳ 1,2,3 tương ứng thời điểm 0,1,2 nên mỗi khoản sinh lãi thêm một kỳ: FV_đầu=126,1·1,05=132,405. Chênh lệch =6,305. Các mốc thời gian quan trọng hơn tên công thức.
+**Lời giải có suy luận:** Gửi cuối kỳ 1, 2, 3 được hưởng tương ứng 2, 1, 0 kỳ lãi: \(FV_{\text{cuối}}=40[(1{,}05)^2+1{,}05+1]=126{,}1\). Gửi đầu kỳ 1, 2, 3 tương ứng thời điểm 0, 1, 2 nên mỗi khoản sinh lãi thêm một kỳ: \(FV_{\text{đầu}}=126{,}1\cdot1{,}05=132{,}405\). Chênh lệch bằng 6,305. Các mốc thời gian quan trọng hơn tên công thức.
 
 **Nếu làm sai:** Vẽ các mốc 0–1–2–3 và ghi số kỳ hưởng lãi cho từng khoản trước khi cộng.
 
@@ -1561,21 +1561,21 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W04; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O18; NOT_A_NEW_BANK -->
 
-**Bài 69.** Vay 42 đơn vị tại đầu kỳ 0, lãi 10% mỗi kỳ, trả đều A vào CUỐI hai kỳ 1 và 2, không phí. (a) Lập B_0,B_1,B_2 và tìm A để tất toán. (b) Nếu lãi 0% thì A bằng bao nhiêu? (c) Giải thích thứ tự tính lãi và khoản trả.
+**Bài 69.** Vay 42 đơn vị tại đầu kỳ 0, lãi 10% mỗi kỳ, trả đều A vào CUỐI hai kỳ 1 và 2, không phí. (a) Lập \(B_0,B_1,B_2\) và tìm A để tất toán. (b) Nếu lãi 0% thì A bằng bao nhiêu? (c) Giải thích thứ tự tính lãi và khoản trả.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** Lãi 10%: A=24,2 đơn vị/kỳ, B_0=42, B_1=22, B_2=0. Lãi 0%: A=21 đơn vị/kỳ.
+**Đáp án:** Lãi 10%: \(A=24{,}2\) đơn vị/kỳ, \(B_0=42,\ B_1=22,\ B_2=0\). Lãi 0%: \(A=21\) đơn vị/kỳ.
 
-**Lời giải đầy đủ:** Từ B_0=42, sau kỳ 1: B_1=1,1·42−A=46,2−A. Sau kỳ 2: B_2=1,1(46,2−A)−A=50,82−2,1A. Đặt B_2=0 cho A=50,82/2,1=24,2; kiểm B_1=22, B_2=1,1·22−24,2=0. Với r=0, A=42/2=21. Mỗi kỳ phải tính lãi trên dư nợ đầu kỳ rồi mới trừ khoản trả cuối kỳ; các con số là mô hình toán, không phải báo giá.
+**Lời giải đầy đủ:** Từ \(B_0=42\), sau kỳ 1: \(B_1=1{,}1\cdot42-A=46{,}2-A\). Sau kỳ 2: \(B_2=1{,}1(46{,}2-A)-A=50{,}82-2{,}1A\). Đặt \(B_2=0\) cho \(A=\frac{50{,}82}{2{,}1}=24{,}2\); kiểm \(B_1=22,\ B_2=1{,}1\cdot22-24{,}2=0\). Với \(r=0\), \(A=\frac{42}2=21\). Mỗi kỳ phải tính lãi trên dư nợ đầu kỳ rồi mới trừ khoản trả cuối kỳ; các con số là mô hình toán, không phải báo giá.
 
 **Rubric tự đối chiếu /7 điểm:**
-1. Đặt mốc thời gian, B_0=42 (1đ)
-2. Viết đúng B_1=46,2−A (1đ)
-3. Lập B_2=50,82−2,1A (1đ)
-4. Tìm A=24,2 từ B_2=0 (1đ)
-5. Kiểm lại B_1=22, B_2=0 (1đ)
-6. Phân biệt r=0 và tính A=21 (1đ)
+1. Đặt mốc thời gian, \(B_0=42\) (1đ)
+2. Viết đúng \(B_1=46{,}2-A\) (1đ)
+3. Lập \(B_2=50{,}82-2{,}1A\) (1đ)
+4. Tìm \(A=24{,}2\) từ \(B_2=0\) (1đ)
+5. Kiểm lại \(B_1=22,\ B_2=0\) (1đ)
+6. Phân biệt \(r=0\) và tính \(A=21\) (1đ)
 7. Giải thích lãi trước – trả sau, điều kiện mô hình (1đ)
 
 **Nếu làm sai:** Khi không tất toán, kiểm từng dòng theo đúng thứ tự: nhân số dư đầu kỳ với 1,1 rồi trừ khoản trả cuối kỳ.
@@ -1588,39 +1588,39 @@ Hãy tự làm đủ 18 câu trước khi đối chiếu. Trình bày lý do ch�
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P01; NO_MASTERY; NOT_RD1 -->
 
-**Câu 1.** Cho dãy hữu hạn a_n=(−1)^n(2n+1), n∈{0,1,2,3}. Liệt kê các số hạng; có a_4 trong dãy không?
+**Câu 1.** Cho dãy hữu hạn \(a_n=(-1)^n(2n+1)\), \(n\in\{0;1;2;3\}\). Liệt kê các số hạng; có \(a_4\) trong dãy không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P02; NO_MASTERY; NOT_RD1 -->
 
-**Câu 2.** Dãy vô hạn u_n=(n+1)/(2n+1), n≥1. Tính u_4 và xét 1/2 có phải một số hạng hay không.
+**Câu 2.** Dãy vô hạn \(u_n=\frac{n+1}{2n+1}\), \(n\ge1\). Tính \(u_4\) và xét \(\frac12\) có phải một số hạng hay không.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P03; NO_MASTERY; NOT_RD1 -->
 
-**Câu 3.** Dãy u_1=4, u_{n+1}=2u_n−1. Tìm u_2,u_3,u_4 và chứng minh công thức u_n=3·2^{n−1}+1.
+**Câu 3.** Dãy \(u_1=4,\ u_{n+1}=2u_n-1\). Tìm \(u_2,u_3,u_4\) và chứng minh công thức \(u_n=3\cdot2^{n-1}+1\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P04; NO_MASTERY; NOT_RD1 -->
 
-**Câu 4.** Với u_n=3−2/n (n≥1), xét dãy tăng hay giảm bằng hiệu hai số hạng liên tiếp.
+**Câu 4.** Với \(u_n=3-\frac2n\) (\(n\ge1\)), xét dãy tăng hay giảm bằng hiệu hai số hạng liên tiếp.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P05; NO_MASTERY; NOT_RD1 -->
 
-**Câu 5.** Cho u_n=(2n+1)/(n+2), n≥1. Chứng minh 1≤u_n<2 và cho biết số hạng nào nhận cận dưới 1.
+**Câu 5.** Cho \(u_n=\frac{2n+1}{n+2}\), \(n\ge1\). Chứng minh \(1\le u_n<2\) và cho biết số hạng nào nhận cận dưới 1.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P06; NO_MASTERY; NOT_RD1 -->
 
-**Câu 6.** Dãy 7,4,1,−2,… có là cấp số cộng? Nêu công sai và u_n.
+**Câu 6.** Dãy \(7,4,1,-2,\ldots\) có là cấp số cộng? Nêu công sai và \(u_n\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P07; NO_MASTERY; NOT_RD1 -->
 
-**Câu 7.** CSC có u_1=−4 và d=3. Tính u_{20}.
+**Câu 7.** CSC có \(u_1=-4\) và \(d=3\). Tính \(u_{20}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P08; NO_MASTERY; NOT_RD1 -->
 
-**Câu 8.** CSC có u_5=14 và u_{11}=32. Tìm công sai d và u_1.
+**Câu 8.** CSC có \(u_5=14\) và \(u_{11}=32\). Tìm công sai d và \(u_1\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P09; NO_MASTERY; NOT_RD1 -->
 
-**Câu 9.** CSC có u_1=3,d=4. Tính tổng 15 số hạng đầu.
+**Câu 9.** CSC có \(u_1=3,\ d=4\). Tính tổng 15 số hạng đầu.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P10; NO_MASTERY; NOT_RD1 -->
 
@@ -1632,23 +1632,23 @@ Hãy tự làm đủ 18 câu trước khi đối chiếu. Trình bày lý do ch�
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P12; NO_MASTERY; NOT_RD1 -->
 
-**Câu 12.** CSN u_1=3,q=−2. Tính u_6.
+**Câu 12.** CSN \(u_1=3,\ q=-2\). Tính \(u_6\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P13; NO_MASTERY; NOT_RD1 -->
 
-**Câu 13.** CSN có u_2=6,u_4=54, các số hạng liên quan khác 0. Có bao nhiêu cặp (u_1,q) thực thỏa điều kiện?
+**Câu 13.** CSN có \(u_2=6,\ u_4=54\), các số hạng liên quan khác 0. Có bao nhiêu cặp \((u_1;q)\) thực thỏa điều kiện?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P14; NO_MASTERY; NOT_RD1 -->
 
-**Câu 14.** CSN u_1=5,q=2. Tính S_6; viết rõ vì sao không dùng công thức q=1.
+**Câu 14.** CSN \(u_1=5,\ q=2\). Tính \(S_6\); viết rõ vì sao không dùng công thức \(q=1\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P15; NO_MASTERY; NOT_RD1 -->
 
-**Câu 15.** CSN vô hạn có a_1=9,q=−1/3. Tính tổng S_∞, tổng bốn số hạng đầu S_4 và phần dư S_∞−S_4.
+**Câu 15.** CSN vô hạn có \(a_1=9,\ q=-\frac13\). Tính tổng \(S_\infty\), tổng bốn số hạng đầu \(S_4\) và phần dư \(S_\infty-S_4\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P16; NO_MASTERY; NOT_RD1 -->
 
-**Câu 16.** Hai mô hình bắt đầu ở kỳ 0 với 50 đơn vị. A tăng 5 đơn vị mỗi kỳ; B tăng 10% so với kỳ trước. Tính A_3,B_3 và xác định kỳ nguyên k≥0 đầu tiên có B_k−A_k≥1.
+**Câu 16.** Hai mô hình bắt đầu ở kỳ 0 với 50 đơn vị. A tăng 5 đơn vị mỗi kỳ; B tăng 10% so với kỳ trước. Tính \(A_3,B_3\) và xác định kỳ nguyên \(k\ge0\) đầu tiên có \(B_k-A_k\ge1\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P17; NO_MASTERY; NOT_RD1 -->
 
