@@ -126,6 +126,9 @@ with sync_playwright() as pw:
      cards=p.locator("[data-topic01-practice-card]")
      expect(cards).to_have_count(3)
      expect(p.locator("[data-topic01-source-shelf]")).to_be_hidden()
+     if REFRESH:
+      expect(p.locator("[data-topic01-source-shelf] > template")).to_have_count(1)
+      assert p.locator("[data-topic01-source-shelf] mjx-container").count()==0
      grid=p.locator(".topic01-golden-grid")
      assert len(grid.evaluate("(e)=>getComputedStyle(e).gridTemplateColumns").split())==(1 if width<=640 else 2)
      modal=p.locator("dialog.topic01-practice-dialog")
@@ -142,19 +145,28 @@ with sync_playwright() as pw:
        expect(modal.locator(".thpt-r4-formative-submit")).to_have_count(0) # no duplicated action
        detail=modal.locator(".thpt-r4-formative-actions details")
        expect(detail).to_have_count(1)
-       if REFRESH and width==820:
+       if REFRESH:
         item=modal.locator("[data-topic01-current-item]").get_attribute("data-thpt-canonical-item")
         stem,sol=PRACTICE_MATH[item]
         assert_math(p,"dialog.topic01-practice-dialog .topic01-question-body",stem,("Practice stem",engine,item),True)
        detail.locator("summary").click()
        expect(detail.locator(".thpt-r4-formative-reveal")).to_be_visible()
-       if REFRESH and width==820:
+       if REFRESH:
         assert_math(p,"dialog.topic01-practice-dialog .thpt-r4-formative-reveal",sol,("Practice solution",engine,item))
+        if j==0:
+         detail.locator("summary").click()
+         expect(detail.locator(".thpt-r4-formative-reveal")).to_be_hidden()
+         detail.locator("summary").click()
+         expect(detail.locator(".thpt-r4-formative-reveal")).to_be_visible()
+         assert_math(p,"dialog.topic01-practice-dialog .thpt-r4-formative-reveal",sol,("Practice reopened",engine,item))
       modal.locator(".topic01-close").click()
       expect(modal).to_be_hidden()
     else:
      root=p.locator("[data-topic01-public-selfcheck]")
      expect(root).to_be_visible()
+     if REFRESH:
+      expect(p.locator("[data-topic01-selfcheck-source] > template")).to_have_count(1)
+      assert p.locator("[data-topic01-selfcheck-source] mjx-container").count()==0
      jumps=root.locator(".g10sc-jump-button")
      expect(jumps).to_have_count(11)
      for j in range(11):
@@ -165,16 +177,22 @@ with sync_playwright() as pw:
       solution=body.locator("#topic01-current-solution")
       expect(solution).to_be_hidden()
       expect(body.locator("input,textarea")).to_have_count(0)
-      if REFRESH and width==820:
+      if REFRESH:
        item=body.get_attribute("data-thpt-canonical-item")
        assert_math(p,"[data-topic01-public-selfcheck] .g10sc-rich",REPLAY_MATH[item][0],("Replay stem",engine,item))
       body.get_by_role("button",name="Đối chiếu",exact=True).click()
       expect(solution).to_be_visible()
       expect(solution).to_have_attribute("data-thpt-canonical-solution",body.get_attribute("data-thpt-canonical-item"))
       expect(solution.locator(".g10sc-error")).to_have_count(0)
-      if REFRESH and width==820:
+      if REFRESH:
        assert_math(p,"#topic01-current-solution",PRACTICE_MATH[item][1],("Replay solution",engine,item))
-   if REFRESH and width==820:
+       if j==0:
+        body.get_by_role("button",name="Ẩn đối chiếu",exact=True).click()
+        expect(solution).to_be_hidden()
+        body.get_by_role("button",name="Đối chiếu",exact=True).click()
+        expect(solution).to_be_visible()
+        assert_math(p,"#topic01-current-solution",PRACTICE_MATH[item][1],("Replay reopened",engine,item))
+   if REFRESH:
     print(f"PASS CĐ01 {engine}: ordered MathJax source parity 24 Practice + 11 Replay stems and revealed solutions",flush=True)
    if width==390:
     # Simulate a blocked Topic JS: raw source must recover instead of a blank page.

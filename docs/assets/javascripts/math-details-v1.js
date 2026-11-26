@@ -153,7 +153,9 @@
  * and give these disclosures one serialized MathJax owner. */
 (()=>{
  "use strict";
- if(!/\/thpt-preview\/chuyen-de\/cd(?:0[1-9]|1[0-9]|2[0-2])\/kien-thuc\/(?:index\.html)?$/.test(location.pathname))return;
+ // Extend the existing helper only to the two CĐ01 public replay/formative routes.
+ if(!/\/thpt-preview\/chuyen-de\/cd(?:0[1-9]|1[0-9]|2[0-2])\/kien-thuc\/(?:index\.html)?$/.test(location.pathname)&&
+    !/\/thpt-preview\/chuyen-de\/cd01\/(?:luyen-tap|tu-kiem-tra)\/(?:index\.html)?$/.test(location.pathname))return;
  const make=(tag,value)=>{const el=document.createElement(tag);if(value!==undefined)el.textContent=value;return el};
  const math=(tex,display=false,source=tex)=>{
   const el=make("span",display?"\\["+tex+"\\]":"\\("+tex+"\\)");
