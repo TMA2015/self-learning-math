@@ -45,7 +45,7 @@ def assert_math(page,root,expected,label,stem_only=False):
   const visible=e=>root.contains(e)&&!e.closest('[hidden],details:not([open])')&&(!stemOnly||!e.closest('details,.g10sc-review'));
   return [...m].filter(i=>i.typesetRoot&&visible(i.typesetRoot)).length>=count;
  }""",arg={"selector":root,"stemOnly":stem_only,"count":len(expected)},timeout=20000)
- got=page.locator(root).evaluate("""(root,stemOnly)=>{
+ got=page.locator(root).evaluate(r"""(root,stemOnly)=>{
   const visible=e=>root.contains(e)&&!e.closest('[hidden],details:not([open])')&&(!stemOnly||!e.closest('details,.g10sc-review'));
   const math=[...MathJax.startup.document.math].filter(i=>i.typesetRoot&&visible(i.typesetRoot)).sort((a,b)=>a.typesetRoot===b.typesetRoot?0:a.typesetRoot.compareDocumentPosition(b.typesetRoot)&Node.DOCUMENT_POSITION_FOLLOWING?-1:1).map(i=>i.math.replace(/\s+/g,''));
   const errors=[...root.querySelectorAll('mjx-merror,mjx-container mjx-container')].filter(visible).length;
