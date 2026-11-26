@@ -3,8 +3,8 @@
     "item_id": "THPT-TOP21-P01",
     "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong 40 thẻ vật lí khác nhau được chọn đều có 12 thẻ hình tam giác, trong đó đúng 5 thẻ đỏ. Biết đã chọn thẻ tam giác, tính xác suất thẻ đỏ và giải thích mẫu số.",
-    "answer_key": "5/12.",
-    "worked_solution": "**Lời giải:** Khi chưa biết gì thêm, phép thử có 40 thẻ vật lí đồng khả năng. Nhưng đề đã cho biết **thẻ được chọn mang hình tam giác**, nên chỉ xét 12 thẻ tam giác. Trong nhóm này có đúng 5 thẻ đỏ, vì vậy \\(P(\\text{đỏ}\\mid\\text{tam giác})=5/12\\). Mẫu số 12 là số kết quả còn phù hợp với điều kiện, không phải 40 thẻ ban đầu.",
+    "answer_key": "\\(\\frac5{12}\\).",
+    "worked_solution": "Khi chưa biết gì thêm, phép thử có 40 thẻ vật lí đồng khả năng. Nhưng đề đã cho biết thẻ được chọn mang hình tam giác, nên chỉ xét 12 thẻ tam giác. Trong nhóm này có đúng 5 thẻ đỏ, vì vậy \\(P(\\text{đỏ}\\mid\\text{tam giác})=\\frac5{12}\\). Mẫu số 12 là số kết quả còn phù hợp với điều kiện, không phải 40 thẻ ban đầu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHVI-B18-O01",
@@ -33,9 +33,9 @@
   {
     "item_id": "THPT-TOP21-P02",
     "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Chọn đều một số trong 1,…,12. A: chia hết cho 4; B: lớn hơn 6; C: lớn hơn 12. Tính P(A|B), P(B|A) và cho biết P(A|C) có xác định không.",
-    "answer_key": "P(A|B)=1/3; P(B|A)=2/3; P(A|C) không xác định.",
-    "worked_solution": "A={4,8,12}, B={7,8,9,10,11,12}, A∩B={8,12}. Vì các số đồng khả năng, P(A|B)=2/6=1/3, P(B|A)=2/3. Hai xác suất dùng cùng giao nhưng mẫu số khác nhau. C là biến cố rỗng, P(C)=0, nên công thức xác suất có điều kiện không xác định; không gán kết quả bằng 0.",
+    "stem": "Chọn đều một số trong tập \\(\\{1,2,\\ldots,12\\}\\). A: chia hết cho 4; B: lớn hơn 6; C: lớn hơn 12. Tính \\(P(A\\mid B)\\), \\(P(B\\mid A)\\) và cho biết \\(P(A\\mid C)\\) có xác định không.",
+    "answer_key": "\\(P(A\\mid B)=\\frac13\\); \\(P(B\\mid A)=\\frac23\\); \\(P(A\\mid C)\\) không xác định.",
+    "worked_solution": "\\(A=\\{4,8,12\\}\\), \\(B=\\{7,8,9,10,11,12\\}\\), \\(A\\cap B=\\{8,12\\}\\). Vì các số đồng khả năng, \\(P(A\\mid B)=\\frac26=\\frac13\\), \\(P(B\\mid A)=\\frac23\\). Hai xác suất dùng cùng giao nhưng mẫu số khác nhau. C là biến cố rỗng, \\(P(C)=0\\), nên \\(P(A\\mid C)\\) không xác định; không gán kết quả bằng 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHVI-B18-O02"
@@ -46,7 +46,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Viết A,B và giao; kiểm P của biến cố điều kiện trước khi chia."
+      "Viết A, B và giao; kiểm xác suất của biến cố điều kiện trước khi chia."
     ],
     "rubric": null,
     "interaction": {
@@ -58,14 +58,14 @@
       "heading_id": "THPT-TOP21-P02"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Đảo A và B làm thay đổi mẫu số; nếu P(B)=0 thì P(A|B) không xác định. Ôn CĐ21 mục 1.2; luyện THPT-G12-B18-A03."
+    "remediation": "Đảo A và B làm thay đổi mẫu số. Nếu \\(P(B)=0\\) thì \\(P(A\\mid B)\\) không xác định. Ôn CĐ21 mục 1.2; luyện THPT-G12-B18-A03."
   },
   {
     "item_id": "THPT-TOP21-P03",
     "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hộp có 5 thẻ đỏ, 2 thẻ vàng phân biệt. Rút đều ba thẻ liên tiếp không hoàn lại. Tính xác suất (a) đúng thứ tự đỏ–vàng–đỏ; (b) đúng hai đỏ và một vàng, không yêu cầu thứ tự.",
-    "answer_key": "(a) 4/21; (b) 4/7.",
-    "worked_solution": "(a) Sau mỗi lượt, cập nhật số thẻ còn lại: P(ĐVĐ)=5/7·2/6·4/5=4/21. (b) Có ba thứ tự rời nhau: ĐĐV, ĐVĐ, VĐĐ. Mỗi thứ tự có cùng tử 5·4·2 và mẫu 7·6·5, nên xác suất mỗi thứ tự bằng 4/21. Cộng ba xác suất được 12/21=4/7. Có thể kiểm bằng C(5,2)C(2,1)/C(7,3)=20/35=4/7.",
+    "answer_key": "(a) \\(\\frac4{21}\\); (b) \\(\\frac47\\).",
+    "worked_solution": "(a) Sau mỗi lượt, cập nhật số thẻ còn lại. Xác suất rút đúng thứ tự đỏ–vàng–đỏ là \\(\\frac57\\cdot\\frac26\\cdot\\frac45=\\frac4{21}\\). (b) Có ba thứ tự rời nhau: ĐĐV, ĐVĐ, VĐĐ (Đ: đỏ, V: vàng). Mỗi thứ tự có cùng tử số \\(5\\cdot4\\cdot2\\) và mẫu số \\(7\\cdot6\\cdot5\\), nên xác suất mỗi thứ tự bằng \\(\\frac4{21}\\). Cộng ba xác suất được \\(\\frac{12}{21}=\\frac47\\). Kiểm bằng cách chọn nhóm không thứ tự: \\(\\frac{C_5^2C_2^1}{C_7^3}=\\frac{20}{35}=\\frac47\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHVI-B18-O06",
@@ -94,9 +94,9 @@
   {
     "item_id": "THPT-TOP21-P04",
     "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Gieo một xúc xắc cân đối. A: mặt chẵn; B: mặt lớn hơn 3; C: mặt chia hết cho 3. So sánh P(A|B), P(A|C) với P(A) và kết luận tính độc lập của A với từng biến cố.",
-    "answer_key": "P(A)=1/2; P(A|B)=2/3, A và B không độc lập; P(A|C)=1/2, A và C độc lập.",
-    "worked_solution": "A={2,4,6}, B={4,5,6}, C={3,6}. P(A)=3/6=1/2. A∩B={4,6}, nên P(A|B)=2/3 khác 1/2. A∩C={6}, nên P(A|C)=1/2 bằng P(A). Vì P(B),P(C)>0, điều kiện độc lập tương đương xác suất của A không đổi khi biết biến cố kia; A,B không độc lập, A,C độc lập.",
+    "stem": "Gieo một xúc xắc sáu mặt cân đối. A: mặt chẵn; B: mặt lớn hơn 3; C: mặt chia hết cho 3. So sánh \\(P(A\\mid B)\\), \\(P(A\\mid C)\\) với \\(P(A)\\) và kết luận tính độc lập của A với từng biến cố.",
+    "answer_key": "\\(P(A)=\\frac12\\); \\(P(A\\mid B)=\\frac23\\), A và B không độc lập; \\(P(A\\mid C)=\\frac12\\), A và C độc lập.",
+    "worked_solution": "\\(A=\\{2,4,6\\}\\), \\(B=\\{4,5,6\\}\\), \\(C=\\{3,6\\}\\). \\(P(A)=\\frac36=\\frac12\\). \\(A\\cap B=\\{4,6\\}\\) nên \\(P(A\\mid B)=\\frac23\\ne P(A)\\). \\(A\\cap C=\\{6\\}\\) nên \\(P(A\\mid C)=\\frac12=P(A)\\). Vì \\(P(B)>0\\) và \\(P(C)>0\\), tính độc lập tương đương với xác suất của A không đổi khi biết biến cố kia. Do đó A, B không độc lập; A, C độc lập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHVI-B18-O04"
@@ -107,7 +107,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Tính P(A), rồi lọc các kết quả chẵn trong B và trong C."
+      "Tính \\(P(A)\\), rồi lọc các kết quả chẵn trong B và trong C."
     ],
     "rubric": null,
     "interaction": {
@@ -119,14 +119,14 @@
       "heading_id": "THPT-TOP21-P04"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Không dùng việc hai biến cố có cùng xác suất để kết luận độc lập; kiểm P(A|B)=P(A) khi P(B)>0. Ôn CĐ21 mục 1.4; luyện THPT-G12-B18-A04."
+    "remediation": "Không dùng việc hai biến cố có cùng xác suất để kết luận độc lập. Khi \\(P(B)>0\\), kiểm \\(P(A\\mid B)=P(A)\\). Ôn CĐ21 mục 1.4; luyện THPT-G12-B18-A04."
   },
   {
     "item_id": "THPT-TOP21-P05",
     "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Kho nhập 2/5 kiện hàng từ X với tỉ lệ hỏng 1/20 và 3/5 từ Y với tỉ lệ hỏng 1/10. Chọn đều một kiện trong kho. Tính xác suất hỏng. Nếu tỉ trọng X tăng lên 4/5 và các tỉ lệ hỏng giữ nguyên, xác suất hỏng chung thay đổi thế nào?",
-    "answer_key": "Ban đầu 2/25; sau 3/50, giảm 1/50 (2 điểm phần trăm).",
-    "worked_solution": "Hai nguồn rời nhau và phủ hết kho. Ban đầu P(H)=2/5·1/20+3/5·1/10=1/50+3/50=2/25. Sau thay đổi, P(H)=4/5·1/20+1/5·1/10=2/50+1/50=3/50. Chênh lệch 1/50=0,02, tức giảm 2 điểm phần trăm. Nguồn X có tỉ lệ hỏng thấp hơn nên tăng trọng số X làm giảm tỉ lệ chung.",
+    "stem": "Kho nhập \\(\\frac25\\) số kiện hàng từ X với tỉ lệ hỏng \\(\\frac1{20}\\) và \\(\\frac35\\) từ Y với tỉ lệ hỏng \\(\\frac1{10}\\). Chọn đều một kiện trong kho. Tính xác suất hỏng. Nếu tỉ trọng X tăng lên \\(\\frac45\\), Y còn \\(\\frac15\\) và các tỉ lệ hỏng giữ nguyên, xác suất hỏng chung thay đổi thế nào?",
+    "answer_key": "Ban đầu \\(\\frac2{25}\\); sau \\(\\frac3{50}\\), giảm \\(\\frac1{50}\\) (2 điểm phần trăm).",
+    "worked_solution": "Gọi H là biến cố kiện hàng hỏng. Hai nguồn rời nhau và phủ hết kho. Ban đầu \\(P(H)=\\frac25\\cdot\\frac1{20}+\\frac35\\cdot\\frac1{10}=\\frac1{50}+\\frac3{50}=\\frac2{25}\\). Sau thay đổi, \\(P(H)=\\frac45\\cdot\\frac1{20}+\\frac15\\cdot\\frac1{10}=\\frac2{50}+\\frac1{50}=\\frac3{50}\\). Chênh lệch \\(\\frac2{25}-\\frac3{50}=\\frac1{50}=0{,}02\\), tức giảm 2 điểm phần trăm (từ 8% xuống 6%). Nguồn X có tỉ lệ hỏng thấp hơn nên tăng trọng số X làm giảm tỉ lệ chung.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHVI-B19-O02"
@@ -154,9 +154,9 @@
   {
     "item_id": "THPT-TOP21-P06",
     "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một lô có 1/5 sản phẩm từ H, 4/5 từ K. Tỉ lệ nhãn xanh của H là 3/4, của K là 1/4. Chọn đều một sản phẩm. Biết nó có nhãn xanh, tính xác suất thuộc H và so với tỉ lệ H ban đầu.",
-    "answer_key": "P(H|xanh)=3/7, lớn hơn tỉ lệ ban đầu 1/5.",
-    "worked_solution": "P(H∩xanh)=1/5·3/4=3/20; P(K∩xanh)=4/5·1/4=4/20. P(xanh)=7/20>0. Theo Bayes, P(H|xanh)=(3/20)/(7/20)=3/7. Xác suất thuộc H tăng từ 1/5 lên 3/7 vì nhãn xanh gặp nhiều hơn trong H; không được lấy 3/4 làm xác suất hậu nghiệm.",
+    "stem": "Một lô có \\(\\frac15\\) sản phẩm từ H, \\(\\frac45\\) từ K. Tỉ lệ nhãn xanh của H là \\(\\frac34\\), của K là \\(\\frac14\\). Chọn đều một sản phẩm. Biết nó có nhãn xanh, tính xác suất thuộc H và so với tỉ lệ H ban đầu.",
+    "answer_key": "\\(P(H\\mid X)=\\frac37\\), với X là biến cố sản phẩm có nhãn xanh; lớn hơn tỉ lệ ban đầu \\(\\frac15\\).",
+    "worked_solution": "Gọi H, K là các biến cố sản phẩm thuộc từng nguồn, X là biến cố có nhãn xanh. \\(P(H\\cap X)=\\frac15\\cdot\\frac34=\\frac3{20}\\); \\(P(K\\cap X)=\\frac45\\cdot\\frac14=\\frac4{20}\\). Hai nguồn rời nhau và bao phủ toàn lô nên \\(P(X)=\\frac7{20}>0\\). Theo Bayes, \\(P(H\\mid X)=\\frac{P(H\\cap X)}{P(X)}=\\frac{\\frac3{20}}{\\frac7{20}}=\\frac37\\). Xác suất thuộc H tăng từ \\(\\frac15\\) lên \\(\\frac37\\) vì nhãn xanh gặp nhiều hơn trong H; không được lấy \\(\\frac34\\) làm xác suất hậu nghiệm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHVI-B19-O04"
@@ -179,14 +179,14 @@
       "heading_id": "THPT-TOP21-P06"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "P(xanh|H) không phải P(H|xanh); kiểm mẫu là toàn bộ xác suất xanh. Ôn CĐ21 mục 2.2; luyện THPT-G12-B19-P04."
+    "remediation": "\\(P(X\\mid H)\\) không phải \\(P(H\\mid X)\\); kiểm mẫu là toàn bộ xác suất có nhãn xanh. Ôn CĐ21 mục 2.2; luyện THPT-G12-B19-P04."
   },
   {
     "item_id": "THPT-TOP21-P07",
     "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Chọn tuyến R xác suất 2/5, xác suất thành công khi đi R là 3/4. Chọn tuyến S xác suất 3/5, xác suất thành công khi đi S là 1/2. Tính P(S và thất bại) và P(thành công).",
-    "answer_key": "P(S và thất bại)=3/10; P(thành công)=3/5.",
-    "worked_solution": "**Lời giải:** Cây có hai nhánh gốc: R xác suất \\(2/5\\) và S xác suất \\(3/5\\). Sau khi chọn S, xác suất thất bại là \\(1-1/2=1/2\\), nên đường **S rồi thất bại** có xác suất \\((3/5)(1/2)=3/10\\). Muốn tính xác suất thành công, cộng hai lá thành công rời nhau: R thành công \\((2/5)(3/4)=3/10\\), S thành công \\((3/5)(1/2)=3/10\\), nên \\(P(\\text{thành công})=3/5\\). Hai lá thất bại còn lại có xác suất R thất bại \\(1/10\\) và S thất bại \\(3/10\\); cả bốn lá cộng thành 1.",
+    "stem": "Chọn tuyến R với xác suất \\(\\frac25\\), xác suất thành công khi đi R là \\(\\frac34\\). Chọn tuyến S với xác suất \\(\\frac35\\), xác suất thành công khi đi S là \\(\\frac12\\). Tính xác suất chọn S và thất bại, và xác suất thành công.",
+    "answer_key": "\\(P(S\\cap\\overline T)=\\frac3{10}\\); \\(P(T)=\\frac35\\), với T là biến cố thành công.",
+    "worked_solution": "Gọi T là biến cố thành công. Cây có hai nhánh gốc: R xác suất \\(\\frac25\\) và S xác suất \\(\\frac35\\). Sau khi chọn S, xác suất thất bại là \\(1-\\frac12=\\frac12\\), nên đường S rồi thất bại có xác suất \\(P(S\\cap\\overline T)=\\frac35\\cdot\\frac12=\\frac3{10}\\). Muốn tính xác suất thành công, cộng hai lá thành công rời nhau: \\(P(T)=\\frac25\\cdot\\frac34+\\frac35\\cdot\\frac12=\\frac3{10}+\\frac3{10}=\\frac35\\). Hai lá thất bại còn lại là R thất bại \\(\\frac1{10}\\) và S thất bại \\(\\frac3{10}\\); tổng bốn lá bằng 1.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHVI-B19-O03"
@@ -214,9 +214,9 @@
   {
     "item_id": "THPT-TOP21-P08",
     "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Mô hình gồm 1 000 sản phẩm, đúng 20 sản phẩm lỗi. Máy báo đúng 80% sản phẩm lỗi và báo nhầm 5% sản phẩm tốt. Chọn đều một sản phẩm. Tính P(lỗi|máy báo). Nếu giảm tỉ lệ báo nhầm xuống 1% trong một mô hình xác suất có cùng tỉ lệ nền và độ nhạy, tính lại xác suất.",
-    "answer_key": "Ban đầu 16/65≈24,62%; mô hình mới 80/129≈62,02%.",
-    "worked_solution": "Ban đầu 20 sản phẩm lỗi tạo 16 báo đúng, 980 sản phẩm tốt tạo 49 báo nhầm. P(lỗi|báo)=16/65. Với mô hình xác suất mới, P(lỗi)=0,02, P(báo|lỗi)=0,8, P(báo|tốt)=0,01. P(lỗi∩báo)=0,016; P(tốt∩báo)=0,98·0,01=0,0098. P(lỗi|báo)=0,016/(0,016+0,0098)=80/129≈62,02%. Tỉ lệ báo nhầm giảm làm mẫu số giảm; độ nhạy không đổi. Không diễn giải 9,8 sản phẩm là số đếm thực tế.",
+    "stem": "Mô hình gồm 1 000 sản phẩm, đúng 20 sản phẩm lỗi. Máy báo đúng 80% sản phẩm lỗi và báo nhầm 5% sản phẩm tốt. Chọn đều một sản phẩm. Tính xác suất sản phẩm lỗi khi biết máy báo lỗi. Nếu giảm tỉ lệ báo nhầm xuống 1% trong một mô hình xác suất có cùng tỉ lệ nền và độ nhạy, tính lại xác suất.",
+    "answer_key": "Ban đầu \\(\\frac{16}{65}\\approx24{,}62\\%\\); mô hình mới \\(\\frac{80}{129}\\approx62{,}02\\%\\).",
+    "worked_solution": "Gọi L là biến cố sản phẩm lỗi, B là biến cố máy báo lỗi. Ban đầu 20 sản phẩm lỗi tạo 16 báo đúng, 980 sản phẩm tốt tạo 49 báo nhầm. Trong 65 sản phẩm bị báo lỗi, có 16 sản phẩm lỗi: \\(P(L\\mid B)=\\frac{16}{65}\\). Với mô hình xác suất mới, \\(P(L)=0{,}02\\), \\(P(B\\mid L)=0{,}8\\), \\(P(B\\mid\\overline L)=0{,}01\\). Do đó \\(P(L\\cap B)=0{,}016\\), \\(P(\\overline L\\cap B)=0{,}98\\cdot0{,}01=0{,}0098\\). Tổng xác suất báo lỗi là \\(0{,}016+0{,}0098>0\\), nên \\(P(L\\mid B)=\\frac{0{,}016}{0{,}016+0{,}0098}=\\frac{80}{129}\\approx62{,}02\\%\\). Tỉ lệ báo nhầm giảm làm mẫu số giảm, độ nhạy và tỉ lệ nền không đổi. Đây là mô hình xác suất, không diễn giải 9,8 sản phẩm là số đếm thực tế.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHVI-B19-O05"
