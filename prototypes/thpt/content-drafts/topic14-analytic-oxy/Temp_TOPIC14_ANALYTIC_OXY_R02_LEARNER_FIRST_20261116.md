@@ -893,7 +893,7 @@ Lập phương trình, kiểm điểm thuộc đường và đặt điều kiệ
 
 Đáp án: \(2x-y=0\). Lời giải: \(2(x-1)-(y-2)=0\Rightarrow2x-y=0\).
 
-**Nếu làm sai:** Thay tọa độ điểm và hệ số pháp tuyến vào a(x−x₀)+b(y−y₀)=0.
+**Nếu làm sai:** Thay tọa độ điểm và hệ số pháp tuyến vào \(a(x-x_0)+b(y-y_0)=0\).
 
 </details>
 
@@ -964,79 +964,79 @@ Lập phương trình, kiểm điểm thuộc đường và đặt điều kiệ
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY01; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 9.** Cho n=(2,3) là pháp tuyến của d. Vectơ u=(-3,2) có phải một chỉ phương của d không? Nêu phép kiểm.
+**Bài luyện 9.** Cho \(\vec n=(2;3)\) là pháp tuyến của d. Vectơ \(\vec u=(-3;2)\) có phải một chỉ phương của d không? Nêu phép kiểm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Có, vì n·u=2(-3)+3(2)=0 và u≠(0,0).
+**Đáp án:** Có, vì \(\vec n\cdot\vec u=2(-3)+3(2)=0\) và \(\vec u\ne\vec0\).
 
 **Lý do:** Tích vô hướng bằng 0 chứng minh u vuông góc với pháp tuyến n, tức song song với đường thẳng d; u không phải vectơ không.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY02; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 10.** Đường thẳng qua A(1,3), pháp tuyến n=(2,-1) có phương trình tổng quát nào?
+**Bài luyện 10.** Đường thẳng qua \(A(1;3)\), pháp tuyến \(\vec n=(2;-1)\) có phương trình tổng quát nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2(x-1)-(y-3)=0 hay 2x-y+1=0.
+**Đáp án:** \(2(x-1)-(y-3)=0\) hay \(2x-y+1=0\).
 
-**Lý do:** AM=(x-1,y-3), n·AM=2(x-1)-(y-3); thế A được 0. Không tự đảo vai trò n với vectơ chỉ phương.
+**Lý do:** \(\overrightarrow{AM}=(x-1;y-3),\ \vec n\cdot\overrightarrow{AM}=2(x-1)-(y-3)\); thế A được 0. Không tự đảo vai trò pháp tuyến với vectơ chỉ phương.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY03; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 11.** Viết phương trình tham số đường thẳng qua A(1,-1), chỉ phương u=(-2,3).
+**Bài luyện 11.** Viết phương trình tham số đường thẳng qua \(A(1;-1)\), chỉ phương \(\vec u=(-2;3)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=1-2t, y=-1+3t (t∈ℝ).
+**Đáp án:** \(x=1-2t,\ y=-1+3t\) (\(t\in\mathbb R\)).
 
-**Lý do:** Khi t=0 thu A; khi t=1 thu A+u=(-1,2). Mọi điểm thuộc đường có độ dời t·u.
+**Lý do:** Khi \(t=0\) thu A; khi \(t=1\) thu điểm có tọa độ \((1;-1)+(-2;3)=(-1;2)\). Mọi điểm thuộc đường có độ dời \(t\vec u\) so với A.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY04; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 12.** Cho A(-1,2), B(2,5). Viết một phương trình tổng quát của đường AB.
+**Bài luyện 12.** Cho \(A(-1;2),\ B(2;5)\). Viết một phương trình tổng quát của đường AB.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x-y+3=0.
+**Đáp án:** \(x-y+3=0\).
 
-**Lý do:** AB=(3,3)≠0, chọn n=(1,-1). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.
+**Lý do:** \(\overrightarrow{AB}=(3;3)\ne\vec0\), chọn \(\vec n=(1;-1)\). Qua A: \((x+1)-(y-2)=0\Rightarrow x-y+3=0\); thế B: \(2-5+3=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY05; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 13.** Với d: 2x-3y+1=0, M(1,1) và N(2,1) điểm nào thuộc d?
+**Bài luyện 13.** Với \(d:2x-3y+1=0,\ M(1;1),\ N(2;1)\), điểm nào thuộc d?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** M thuộc d vì 2-3+1=0; N không thuộc vì 4-3+1=2.
+**Đáp án:** M thuộc d vì \(2-3+1=0\); N không thuộc vì \(4-3+1=2\).
 
 **Lý do:** Điểm thuộc là nghiệm của phương trình theo cặp tọa độ. Đây là phép thử hai lần độc lập.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY06; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 14.** Hai đường d1: x+y=4, d2: x-y=2 gặp nhau ở đâu và có vuông góc không?
+**Bài luyện 14.** Hai đường \(d_1:x+y=4,\ d_2:x-y=2\) gặp nhau ở đâu và có vuông góc không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Giao I(3,1); hai đường vuông góc.
+**Đáp án:** Giao \(I(3;1)\); hai đường vuông góc.
 
-**Lý do:** Cộng hai phương trình được 2x=6 ⇒ x=3, y=1. Pháp tuyến (1,1) và (1,-1) có tích vô hướng 1-1=0.
+**Lý do:** Cộng hai phương trình được \(2x=6\Rightarrow x=3,\ y=1\). Pháp tuyến \((1;1)\) và \((1;-1)\) có tích vô hướng \(1-1=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY07; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 15.** Giá trị V theo thời gian t (t≥0) đi qua (0,5) và (2,9), giả sử tuyến tính. Lập V(t) và tính V(3).
+**Bài luyện 15.** Giá trị V theo thời gian t (\(t\ge0\)) đi qua \((0;5)\) và \((2;9)\), giả sử tuyến tính. Lập \(V(t)\) và tính \(V(3)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** V(t)=2t+5, V(3)=11.
+**Đáp án:** \(V(t)=2t+5,\ V(3)=11\).
 
-**Lý do:** Hệ số góc (9-5)/(2-0)=2, giá trị tại t=0 là 5. Đây là phép ngoại suy t=3, chỉ hợp lý nếu giả thiết tăng đều vẫn đúng.
+**Lý do:** Hệ số góc \(\frac{9-5}{2-0}=2\), giá trị tại \(t=0\) là 5. Đây là phép ngoại suy \(t=3\), chỉ hợp lý nếu giả thiết tăng đều vẫn đúng.
 
 </details>
 
@@ -1066,88 +1066,88 @@ Trong mặt phẳng tọa độ, cho \(A(2;-1)\), \(B(5;5)\).
 **Vận dụng với dữ kiện mới**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P01; PRIMARY_OUTCOME: TOP14-O01; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 17.** Đường thẳng d:−2x+5y+4=0. Nêu một vectơ pháp tuyến và một vectơ chỉ phương, rồi kiểm chúng vuông góc.
+**Bài luyện 17.** Đường thẳng \(d:-2x+5y+4=0\). Nêu một vectơ pháp tuyến và một vectơ chỉ phương, rồi kiểm chúng vuông góc.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-n=(−2,5), u=(5,2). n·u=−10+10=0, n≠0, u≠0.
+\(\vec n=(-2;5),\ \vec u=(5;2)\). \(\vec n\cdot\vec u=-10+10=0,\ \vec n\ne\vec0,\ \vec u\ne\vec0\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 1 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P02; PRIMARY_OUTCOME: TOP14-O02; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 18.** Viết đường thẳng qua P(−1,2), có vectơ pháp tuyến n=(3,−2).
+**Bài luyện 18.** Viết đường thẳng qua \(P(-1;2)\), có vectơ pháp tuyến \(\vec n=(3;-2)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-3(x+1)−2(y−2)=0 ⇒ 3x−2y+7=0. Kiểm P: −3−4+7=0.
+\(3(x+1)-2(y-2)=0\Rightarrow3x-2y+7=0\). Kiểm P: \(-3-4+7=0\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 2 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P03; PRIMARY_OUTCOME: TOP14-O03; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 19.** Đường qua A(2,−3), chỉ phương u=(−1,4). Viết tham số và tìm điểm ứng với t=−2.
+**Bài luyện 19.** Đường qua \(A(2;-3)\), chỉ phương \(\vec u=(-1;4)\). Viết tham số và tìm điểm ứng với \(t=-2\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-x=2−t, y=−3+4t (t∈ℝ); tại t=−2 có (4,−11).
+\(x=2-t,\ y=-3+4t\) (\(t\in\mathbb R\)); tại \(t=-2\) có \((4;-11)\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 3 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P04; PRIMARY_OUTCOME: TOP14-O04; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 20.** Dựng phương trình tổng quát đường thẳng qua A(−2,1), B(2,3).
+**Bài luyện 20.** Dựng phương trình tổng quát đường thẳng qua \(A(-2;1),\ B(2;3)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-AB=(4,2), chọn n=(1,−2). Qua A: (x+2)−2(y−1)=0 ⇒ x−2y+4=0; thử cả hai điểm.
+\(\overrightarrow{AB}=(4;2)\), chọn \(\vec n=(1;-2)\). Qua A: \((x+2)-2(y-1)=0\Rightarrow x-2y+4=0\); thử cả hai điểm.
 
 **Nếu làm sai:** Quay về mục Kiến thức 4 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P05; PRIMARY_OUTCOME: TOP14-O05; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 21.** Đường d:x−3y−7=0. Điểm M(4,−1) và N(3,0) có thuộc d không?
+**Bài luyện 21.** Đường \(d:x-3y-7=0\). Điểm \(M(4;-1)\) và \(N(3;0)\) có thuộc d không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-M:4+3−7=0 nên thuộc; N:3−0−7=−4 nên không thuộc.
+M: \(4+3-7=0\) nên thuộc; N: \(3-0-7=-4\) nên không thuộc.
 
 **Nếu làm sai:** Quay về mục Kiến thức 5 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P06; PRIMARY_OUTCOME: TOP14-O06; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 22.** Tìm đường thẳng qua giao của 2x+y=7 và x−y=2, song song 3x−y+2=0.
+**Bài luyện 22.** Tìm đường thẳng qua giao của \(2x+y=7\) và \(x-y=2\), song song \(3x-y+2=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Giao (3,1). Đường cần tìm 3x−y+c=0, thế (3,1) ⇒c=−8. Kết quả 3x−y−8=0.
+Giao \((3;1)\). Đường cần tìm có dạng \(3x-y+c=0\), thế \((3;1)\Rightarrow c=-8\). Kết quả \(3x-y-8=0\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 6 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P07; PRIMARY_OUTCOME: TOP14-O07; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 23.** Bể có 10 lít lúc t=0 và 26 lít lúc t=4 phút, được đổ đều. Viết V(t) và tính V(6), nếu bể chưa tràn.
+**Bài luyện 23.** Bể có 10 lít lúc \(t=0\) và 26 lít lúc \(t=4\) phút, được đổ đều. Viết \(V(t)\) và tính \(V(6)\), nếu bể chưa tràn.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Độ tăng 16/4=4 lít/phút; V(t)=10+4t, V(6)=34 lít. Mô hình chỉ đúng trong thời gian đổ đều và chưa tràn.
+Độ tăng \(\frac{16}4=4\) lít/phút; \(V(t)=10+4t,\ V(6)=34\) lít. Mô hình chỉ đúng trong thời gian đổ đều và chưa tràn.
 
 **Nếu làm sai:** Quay về mục Kiến thức 7 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-W01; PRIMARY_OUTCOME: TOP14-O04; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_WRITTEN -->
-**Bài luyện 24.** Qua A(−1,2),B(3,4): (a) tìm chỉ phương; (b) lập tổng quát; (c) lập tham số; (d) kiểm P(1,3) có thuộc đường không.
+**Bài luyện 24.** Qua \(A(-1;2),\ B(3;4)\): (a) tìm chỉ phương; (b) lập tổng quát; (c) lập tham số; (d) kiểm \(P(1;3)\) có thuộc đường không.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-AB=(4,2) (2đ); chọn n=(1,−2), x−2y+5=0 (2đ); x=−1+4t,y=2+2t (2đ); P(1,3) thỏa 1−6+5=0, hoặc t=1/2 (1đ). Tổng 7đ.
+\(\overrightarrow{AB}=(4;2)\) (2đ); chọn \(\vec n=(1;-2),\ x-2y+5=0\) (2đ); \(x=-1+4t,\ y=2+2t\) (2đ); \(P(1;3)\) thỏa \(1-6+5=0\), hoặc \(t=\frac12\) (1đ). Tổng 7đ.
 
 **Nếu làm sai:** Quay về mục Kiến thức 4 rồi thử một lượt không xem đáp án.
 
@@ -1248,57 +1248,57 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY08; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 33.** d1: 2x-y+1=0, d2: 4x-2y+3=0 là song song phân biệt hay trùng nhau?
+**Bài luyện 33.** \(d_1:2x-y+1=0,\ d_2:4x-2y+3=0\) là song song phân biệt hay trùng nhau?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Song song phân biệt.
 
-**Lý do:** Hai pháp tuyến (2,-1) và (4,-2) tỉ lệ 2 lần, nhưng nhân toàn phương trình d1 với 2 cho hằng số 2, không phải 3 của d2.
+**Lý do:** Hai pháp tuyến \((2;-1)\) và \((4;-2)\) tỉ lệ 2 lần, nhưng nhân toàn phương trình \(d_1\) với 2 cho hằng số 2, không phải 3 của \(d_2\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY09; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 34.** Qua P(1,-2) viết đường vuông góc với d: x+2y-5=0.
+**Bài luyện 34.** Qua \(P(1;-2)\) viết đường vuông góc với \(d:x+2y-5=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2x-y-4=0.
+**Đáp án:** \(2x-y-4=0\).
 
-**Lý do:** n=(1,2) của d, chọn n'=(2,-1) có tích vô hướng 0. Qua P: 2(x-1)-(y+2)=0 ⇒ 2x-y-4=0.
+**Lý do:** \(\vec n=(1;2)\) của d, chọn \(\vec n'=(2;-1)\) có tích vô hướng 0 với \(\vec n\). Qua P: \(2(x-1)-(y+2)=0\Rightarrow2x-y-4=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY10; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 35.** Tìm giao điểm của x+2y=8 và 2x-y=1.
+**Bài luyện 35.** Tìm giao điểm của \(x+2y=8\) và \(2x-y=1\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** I(2,3).
+**Đáp án:** \(I(2;3)\).
 
-**Lý do:** Từ 2x-y=1 ⇒ y=2x-1. Thế vào x+2(2x-1)=8 ⇒ x=2, y=3; kiểm 2+6=8, 4-3=1.
+**Lý do:** Từ \(2x-y=1\Rightarrow y=2x-1\). Thế vào \(x+2(2x-1)=8\Rightarrow x=2,\ y=3\); kiểm \(2+6=8,\ 4-3=1\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY11; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 36.** Tính khoảng cách từ M(1,2) đến d: 3x+4y-1=0.
+**Bài luyện 36.** Tính khoảng cách từ \(M(1;2)\) đến \(d:3x+4y-1=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** d(M,d)=2.
+**Đáp án:** \(d(M,d)=2\).
 
-**Lý do:** Tử |3·1+4·2−1|=10, mẫu √(3²+4²)=5, nên khoảng cách bằng 10/5=2.
+**Lý do:** Tử \(|3\cdot1+4\cdot2-1|=10\), mẫu \(\sqrt{3^2+4^2}=5\), nên khoảng cách bằng \(\frac{10}5=2\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY12; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 37.** Góc nhỏ giữa d1: x=0 và d2: x-y=0 bằng bao nhiêu?
+**Bài luyện 37.** Góc nhỏ giữa \(d_1:x=0\) và \(d_2:x-y=0\) bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 45°.
 
-**Lý do:** Pháp tuyến n1=(1,0), n2=(1,-1). cosφ=|1|/(1·√2)=1/√2 nên φ=45°.
+**Lý do:** Pháp tuyến \(\vec n_1=(1;0),\ \vec n_2=(1;-1)\). \(\cos\varphi=\frac{|1|}{1\cdot\sqrt2}=\frac1{\sqrt2}\) nên \(\varphi=45^\circ\).
 
 </details>
 
@@ -1326,66 +1326,66 @@ Hai pháp tuyến \((m-1;2)\) và \((1;-1)\) vuông góc khi \((m-1)-2=m-3=0\), 
 **Rèn giải hệ và đối chiếu kết quả**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P08; PRIMARY_OUTCOME: TOP14-O08; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 39.** Phân loại d₁:x−2y+1=0 và d₂:2x−4y+3=0.
+**Bài luyện 39.** Phân loại \(d_1:x-2y+1=0\) và \(d_2:2x-4y+3=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Pháp tuyến cùng phương, nhưng hệ số tự do không tỉ lệ (2·1≠3), nên hai đường song song **phân biệt**.
+Pháp tuyến cùng phương, nhưng hệ số tự do không tỉ lệ (\(2\cdot1\ne3\)), nên hai đường song song **phân biệt**.
 
 **Nếu làm sai:** Quay về mục Kiến thức 8 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P09; PRIMARY_OUTCOME: TOP14-O09; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 40.** Qua P(−2,3), dựng đường vuông góc d:2x−3y+1=0.
+**Bài luyện 40.** Qua \(P(-2;3)\), dựng đường vuông góc \(d:2x-3y+1=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đường cần có chỉ phương (2,−3), chọn pháp tuyến (3,2). Qua P:3(x+2)+2(y−3)=0 ⇒3x+2y=0.
+Đường cần có chỉ phương \((2;-3)\), chọn pháp tuyến \((3;2)\). Qua P: \(3(x+2)+2(y-3)=0\Rightarrow3x+2y=0\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 9 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P10; PRIMARY_OUTCOME: TOP14-O10; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 41.** Tìm giao hai đường 3x+y=7, x−y=1.
+**Bài luyện 41.** Tìm giao hai đường \(3x+y=7,\ x-y=1\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Từ y=x−1, thế 3x+x−1=7 ⇒x=2,y=1. Kiểm 3·2+1=7,2−1=1.
+Từ \(y=x-1\), thế \(3x+x-1=7\Rightarrow x=2,\ y=1\). Kiểm \(3\cdot2+1=7,\ 2-1=1\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 10 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P11; PRIMARY_OUTCOME: TOP14-O11; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 42.** Cho P(−1,2) và d:5x+12y−6=0. Tính d(P,d).
+**Bài luyện 42.** Cho \(P(-1;2)\) và \(d:5x+12y-6=0\). Tính \(d(P,d)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-|5(−1)+12·2−6|/√(5²+12²)=|13|/13=1.
+\(\frac{|5(-1)+12\cdot2-6|}{\sqrt{5^2+12^2}}=\frac{|13|}{13}=1\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 11 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P12; PRIMARY_OUTCOME: TOP14-O12; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 43.** Tính góc nhỏ giữa d₁:x=0 và d₂:x+√3 y=0.
+**Bài luyện 43.** Tính góc nhỏ giữa \(d_1:x=0\) và \(d_2:x+\sqrt3\,y=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Pháp tuyến n₁=(1,0), n₂=(1,√3). cosθ=|1|/(1·2)=1/2 ⇒θ=60°.
+Pháp tuyến \(\vec n_1=(1;0),\ \vec n_2=(1;\sqrt3)\). \(\cos\theta=\frac{|1|}{1\cdot2}=\frac12\Rightarrow\theta=60^\circ\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 12 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-W02; PRIMARY_OUTCOME: TOP14-O10; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_WRITTEN -->
-**Bài luyện 44.** Cho d₁:2x+y−7=0, d₂:x−y−2=0, d₃:3x+4y−10=0. (a) tìm giao d₁,d₂; (b) tính khoảng cách giao điểm tới d₃; (c) giải thích vì sao d₁,d₂ cắt nhau duy nhất.
+**Bài luyện 44.** Cho \(d_1:2x+y-7=0,\ d_2:x-y-2=0,\ d_3:3x+4y-10=0\). (a) tìm giao \(d_1,d_2\); (b) tính khoảng cách giao điểm tới \(d_3\); (c) giải thích vì sao \(d_1,d_2\) cắt nhau duy nhất.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Giải hệ được M(3,1) (3đ); d(M,d₃)=|9+4−10|/5=3/5 (3đ); định thức pháp tuyến 2·(−1)−1·1=−3≠0 (1đ). Tổng 7đ.
+Giải hệ được \(M(3;1)\) (3đ); \(d(M,d_3)=\frac{|9+4-10|}5=\frac35\) (3đ); định thức pháp tuyến \(2(-1)-1\cdot1=-3\ne0\) (1đ). Tổng 7đ.
 
 **Nếu làm sai:** Quay về mục Kiến thức 10 rồi thử một lượt không xem đáp án.
 
@@ -1486,57 +1486,57 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY13; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 53.** Đường tròn có tâm I(-2,1) và bán kính 3 có phương trình nào?
+**Bài luyện 53.** Đường tròn có tâm \(I(-2;1)\) và bán kính 3 có phương trình nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** (x+2)²+(y-1)²=9.
+**Đáp án:** \((x+2)^2+(y-1)^2=9\).
 
-**Lý do:** IM²=(x+2)²+(y-1)², và R²=3²=9. Cần R=3>0.
+**Lý do:** \(IM^2=(x+2)^2+(y-1)^2\), và \(R^2=3^2=9\). Cần \(R=3>0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY14; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 54.** Phương trình x²+y²−6x+4y+8=0 biểu diễn đường tròn nào?
+**Bài luyện 54.** Phương trình \(x^2+y^2-6x+4y+8=0\) biểu diễn đường tròn nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** (x−3)²+(y+2)²=5, tâm I(3,−2), bán kính √5.
+**Đáp án:** \((x-3)^2+(y+2)^2=5\), tâm \(I(3;-2)\), bán kính \(\sqrt5\).
 
-**Lý do:** x²−6x=(x−3)²−9, y²+4y=(y+2)²−4. Suy ra tổng hai bình phương bằng −8+9+4=5>0.
+**Lý do:** \(x^2-6x=(x-3)^2-9,\ y^2+4y=(y+2)^2-4\). Suy ra tổng hai bình phương bằng \(-8+9+4=5>0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY15; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 55.** Đường tròn tâm I(1,−1), bán kính 5; M(4,3). Viết tiếp tuyến tại M.
+**Bài luyện 55.** Đường tròn tâm \(I(1;-1)\), bán kính 5; \(M(4;3)\). Viết tiếp tuyến tại M.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 3x+4y−24=0.
+**Đáp án:** \(3x+4y-24=0\).
 
-**Lý do:** IM=(3,4), IM²=9+16=25=R² nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.
+**Lý do:** \(\overrightarrow{IM}=(3;4),\ IM^2=9+16=25=R^2\) nên M thuộc đường tròn. Tiếp tuyến: \(3(x-4)+4(y-3)=0\Rightarrow3x+4y-24=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY16; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 56.** Đường tròn qua A(0,0), B(2,0), C(0,2) có tâm, bán kính và phương trình gì?
+**Bài luyện 56.** Đường tròn qua \(A(0;0),\ B(2;0),\ C(0;2)\) có tâm, bán kính và phương trình gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Tâm I(1,1), bán kính √2, phương trình (x−1)²+(y−1)²=2.
+**Đáp án:** Tâm \(I(1;1)\), bán kính \(\sqrt2\), phương trình \((x-1)^2+(y-1)^2=2\).
 
-**Lý do:** Trung trực AB là x=1; trung trực AC là y=1. IA²=1²+1²=2; thử B và C đều cho tổng bình phương bằng 2.
+**Lý do:** Trung trực AB là \(x=1\); trung trực AC là \(y=1\). \(IA^2=1^2+1^2=2\); thử B và C đều cho tổng bình phương bằng 2.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY17; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 57.** Đường tròn tâm I(1,2), R=3 và đường d: y=−1 có quan hệ nào?
+**Bài luyện 57.** Đường tròn tâm \(I(1;2),\ R=3\) và đường \(d:y=-1\) có quan hệ nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Tiếp xúc; tiếp điểm T(1,−1).
+**Đáp án:** Tiếp xúc; tiếp điểm \(T(1;-1)\).
 
-**Lý do:** Khoảng cách từ I(1,2) đến y=−1 là |2−(−1)|=3=R. Chân đường vuông góc từ I xuống d là T(1,−1).
+**Lý do:** Khoảng cách từ \(I(1;2)\) đến \(y=-1\) là \(|2-(-1)|=3=R\). Chân đường vuông góc từ I xuống d là \(T(1;-1)\).
 
 </details>
 
@@ -1566,66 +1566,66 @@ Cho tam giác \(A(0;0)\), \(B(6;0)\), \(C(0;8)\).
 **Vận dụng cho tiếp tuyến và đường tròn**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P13; PRIMARY_OUTCOME: TOP14-O13; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 59.** Viết phương trình đường tròn tâm I(−2,1), R=4. Kiểm P(2,1) có nằm trên đường tròn không.
+**Bài luyện 59.** Viết phương trình đường tròn tâm \(I(-2;1),\ R=4\). Kiểm \(P(2;1)\) có nằm trên đường tròn không.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-(x+2)²+(y−1)²=16; tại P có (2+2)²=16 nên P thuộc đường tròn.
+\((x+2)^2+(y-1)^2=16\); tại P có \((2+2)^2=16\) nên P thuộc đường tròn.
 
 **Nếu làm sai:** Quay về mục Kiến thức 13 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P14; PRIMARY_OUTCOME: TOP14-O14; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 60.** Xác định tâm, bán kính của x²+y²−6x+2y+1=0.
+**Bài luyện 60.** Xác định tâm, bán kính của \(x^2+y^2-6x+2y+1=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-(x−3)²+(y+1)²=9. Tâm I(3,−1), R=3>0 nên là đường tròn thực.
+\((x-3)^2+(y+1)^2=9\). Tâm \(I(3;-1),\ R=3>0\) nên là đường tròn thực.
 
 **Nếu làm sai:** Quay về mục Kiến thức 14 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P15; PRIMARY_OUTCOME: TOP14-O15; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 61.** Đường tròn tâm I(−1,2) đi qua P(1,6). Viết phương trình tiếp tuyến tại P.
+**Bài luyện 61.** Đường tròn tâm \(I(-1;2)\) đi qua \(P(1;6)\). Viết phương trình tiếp tuyến tại P.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-IP=(2,4) là pháp tuyến; 2(x−1)+4(y−6)=0 ⇒x+2y−13=0. P thật sự thuộc đường tròn bán kính √20.
+\(\overrightarrow{IP}=(2;4)\) là pháp tuyến; \(2(x-1)+4(y-6)=0\Rightarrow x+2y-13=0\). P thật sự thuộc đường tròn bán kính \(\sqrt{20}\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 15 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P16; PRIMARY_OUTCOME: TOP14-O16; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 62.** Cho A(0,0),B(8,0),C(0,6). Xác định tâm và bán kính đường tròn ngoại tiếp tam giác.
+**Bài luyện 62.** Cho \(A(0;0),\ B(8;0),\ C(0;6)\). Xác định tâm và bán kính đường tròn ngoại tiếp tam giác.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Tam giác vuông tại A, tâm là trung điểm BC=(4,3), R=√(4²+3²)=5.
+Tam giác vuông tại A, tâm là trung điểm BC, \(I(4;3)\), \(R=\sqrt{4^2+3^2}=5\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 16 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P17; PRIMARY_OUTCOME: TOP14-O17; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 63.** Đường tròn (x−1)²+(y+2)²=9 và đường y=1 có bao nhiêu giao điểm? Nêu tọa độ.
+**Bài luyện 63.** Đường tròn \((x-1)^2+(y+2)^2=9\) và đường \(y=1\) có bao nhiêu giao điểm? Nêu tọa độ.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-I(1,−2),R=3; khoảng cách tới y=1 bằng3 nên tiếp xúc tại (1,1), đúng một giao điểm.
+\(I(1;-2),\ R=3\); khoảng cách tới \(y=1\) bằng 3 nên tiếp xúc tại \((1;1)\), đúng một giao điểm.
 
 **Nếu làm sai:** Quay về mục Kiến thức 17 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-W03; PRIMARY_OUTCOME: TOP14-O16; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_WRITTEN -->
-**Bài luyện 64.** Cho A(0,0),B(6,0),C(0,8). (a) tìm tâm; (b) bán kính và phương trình; (c) tiếp tuyến tại A; (d) kiểm A thuộc đường tròn.
+**Bài luyện 64.** Cho \(A(0;0),\ B(6;0),\ C(0;8)\). (a) tìm tâm; (b) bán kính và phương trình; (c) tiếp tuyến tại A; (d) kiểm A thuộc đường tròn.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Tâm I(3,4) (2đ); R=5, (x−3)²+(y−4)²=25 (2đ); IA=(−3,−4), tiếp tuyến 3x+4y=0 (2đ); A thỏa 9+16=25 (1đ). Tổng 7đ.
+Tâm \(I(3;4)\) (2đ); \(R=5,\ (x-3)^2+(y-4)^2=25\) (2đ); \(\overrightarrow{IA}=(-3;-4)\), tiếp tuyến \(3x+4y=0\) (2đ); A thỏa \(9+16=25\) (1đ). Tổng 7đ.
 
 **Nếu làm sai:** Quay về mục Kiến thức 16 rồi thử một lượt không xem đáp án.
 
@@ -1644,7 +1644,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 
 Đáp án: \(F_1(-4;0),F_2(4;0)\), \(e=4/5\). Lời giải: \(a=5,b=3,c=\sqrt{a^2-b^2}=\sqrt{16}=4\), \(e=c/a=4/5\).
 
-**Nếu làm sai:** Elip có (c^2=a^2-b^2).
+**Nếu làm sai:** Elip có \(c^2=a^2-b^2\).
 
 </details>
 
@@ -1655,7 +1655,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 
 Đáp án: \(F_{1,2}=(\mp5;0)\); \(y=\pm\frac43x\). Lời giải: \(a=3,b=4,c=\sqrt{a^2+b^2}=5\). Tiệm cận \(y=\pm(b/a)x\).
 
-**Nếu làm sai:** Hypebol có (c^2=a^2+b^2), khác elip.
+**Nếu làm sai:** Hypebol có \(c^2=a^2+b^2\), khác elip.
 
 </details>
 
@@ -1677,7 +1677,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 
 Đáp án: \(\dfrac{x^2}{4}-\dfrac{y^2}{9}=1\). Lời giải: \(a=2,c=\sqrt{13},b^2=c^2-a^2=9\).
 
-**Nếu làm sai:** Hypebol: trừ (y^2/b^2) và (c^2=a^2+b^2).
+**Nếu làm sai:** Hypebol: trừ \(\frac{y^2}{b^2}\) và \(c^2=a^2+b^2\).
 
 </details>
 
@@ -1688,7 +1688,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 
 Đáp án: \(y^2=8x\). Lời giải: Với \(y^2=2px\), tiêu điểm \((p/2;0)\), đường chuẩn \(x=-p/2\), nên \(p=4\).
 
-**Nếu làm sai:** Dùng dạng chính tắc đã học (y^2=2px), (p>0).
+**Nếu làm sai:** Dùng dạng chính tắc đã học \(y^2=2px,\ p>0\).
 
 </details>
 
@@ -1721,7 +1721,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 
 Đáp án: \(M\in P\), \(MF=d(M,\Delta)=4\). Lời giải: Vì \(4^2=8\cdot2=16\), \(M\in P\). Với \(y^2=2px\), \(p=4\), nên tiêu điểm \(F(2;0)\), đường chuẩn \(\Delta:x=-2\). Khi đó \(MF=\sqrt{(2-2)^2+(4-0)^2}=4\), và \(d(M,\Delta)=|2-(-2)|=4\).
 
-**Nếu làm sai:** Xác định p từ 2p=8, rồi kiểm tra hai khoảng cách.
+**Nếu làm sai:** Xác định p từ \(2p=8\), rồi kiểm tra hai khoảng cách.
 
 </details>
 
