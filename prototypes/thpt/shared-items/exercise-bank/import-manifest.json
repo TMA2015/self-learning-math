@@ -19263,6 +19263,60 @@
       },
       "remaining": "CD18–22 local visible-field review, return CD01–12 residual fields, FirstTry, shared SGK, canonical Written/Anchor, missing skill tags and full academic/notation audit before conversion and RELEASE.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp84": {
+      "scope": "CD18 local record X-G.5 review; carry forward exact learner Practice/Replay placement check from CP83 (unchanged placement blob)",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "1127061b202a17dcff710f91353d9feef5e4e1e3",
+      "item_commits": [
+        "092fc027cfc5e4be3d30dec3f655b3b1921628ce",
+        "9f79d4c6f75419860b151cdef77a9ef344384be4",
+        "66ccf935e92fb1d7937dbdff4e9774f03d8b7a63"
+      ],
+      "learner_commit": "a1adb856defdb0005ec0362ab1779ee2eaac2047",
+      "learner_blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "placement_blob": "6599f83a8217dca8f772457f8eb208f8e9bbb851",
+      "item_before": "9672eb0b296e6ceb87653ba140e3f9572e17e23d",
+      "item_after": "63c2ccf8bf93613ef2bc5ec18d9154a759d50f28",
+      "checks": {
+        "practice": 207,
+        "replay": 12,
+        "placement_order_match_cp83_carried_forward": 219,
+        "source_replay_stem_match_cp83_carried_forward": 12,
+        "local_records_reviewed": 40,
+        "local_records_changed": 39,
+        "fields_changed": {
+          "stem": 37,
+          "answer_key": 30,
+          "worked_solution": 39,
+          "hints": 23,
+          "remediation": 20
+        },
+        "metadata_unchanged": true,
+        "local_self_compare_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "targeted_raw_math_scan_residual": 0,
+        "shared_formative_placements_unchanged": 120,
+        "written_placements_unchanged": 47,
+        "options_or_rubric_present_in_local_records": 0
+      },
+      "findings": [
+        "P13 use position vectors and centroid coordinates instead of adding points; P16 state interval including ground contact and position-vector equation.",
+        "P26 distinguish unavailable three-fraction canonical line form from equivalent fixed-coordinate + two-fraction system; P31 hint distinguishes signed vector angle and unsigned line angle; P32 explicitly choose an acute-angle normal.",
+        "P17 zero vector cannot be normal; preserve prior shared source owner corrections; P23 integrated sphere question remains after B17. P02 prose unchanged. No shared record or Written modification.",
+        "CP83 source replay/placement reconciliation inherited; no claim of equality with strengthened bank candidate, fresh S1 PDF, full X-G.5/Academic/PED/browser PASS."
+      ],
+      "progress": {
+        "topics_with_scoped_practice_replay_review": 18,
+        "total_topics": 22,
+        "practice_reviewed": 1292,
+        "total_practice": 1479,
+        "replay_reviewed": 303,
+        "total_replay": 338
+      },
+      "remaining": "CD19–22 local visible-field review, CD01–12 residual fields, FirstTry, shared SGK, canonical Written/Anchor and full semantic/notation/depth checks before conversion. CP61/62 Written and source findings remain pending.",
+      "release_authorization": false
     }
   }
 }
