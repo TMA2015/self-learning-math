@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-G11-CHV-B15-C01",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Với uₙ=7+3/n, số 7 có ý nghĩa gì khi n tăng mãi?",
-    "answer_key": "Giới hạn của dãy là 7.",
-    "worked_solution": "Khoảng cách từ uₙ đến 7 bằng 3/n, tiến về 0. Như vậy 7 không cần là một số hạng của dãy.",
+    "stem": "Với \\(u_n=7+\\frac3n\\), số 7 có ý nghĩa gì khi n tăng mãi?",
+    "answer_key": "\\(\\lim_{n\\to\\infty}u_n=7\\).",
+    "worked_solution": "Khoảng cách từ số hạng đến 7 là \\(|u_n-7|=\\frac3n\\). Khi n tăng không giới hạn, khoảng cách này tiến về 0. Do đó giới hạn của dãy bằng 7, mặc dù mọi số hạng đều lớn hơn 7.",
     "skill_ids": [
       "G11-B15-FINITE_SEQUENCE"
     ],
@@ -33,9 +33,9 @@
   {
     "item_id": "THPT-G11-CHV-B15-C02",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Dãy uₙ=−2n có tiến đến −∞ hay không? Giải thích bằng lời.",
-    "answer_key": "Có, uₙ→−∞.",
-    "worked_solution": "Với mọi M>0, từ n>M/2 thì −2n<−M; các số hạng ngày càng nhỏ theo chiều âm.",
+    "stem": "Dãy \\(u_n=-2n\\) có giới hạn \\(-\\infty\\) không? Giải thích bằng lời.",
+    "answer_key": "Có, \\(\\lim_{n\\to\\infty}u_n=-\\infty\\).",
+    "worked_solution": "Với mỗi số dương M lớn tùy ý, nếu \\(n>\\frac M2\\) thì \\(u_n=-2n<-M\\). Nghĩa là từ một chỉ số đủ lớn trở đi, mọi số hạng nhỏ hơn ngưỡng âm đã chọn. Dãy tiến đến âm vô cực, không phải một số thực.",
     "skill_ids": [
       "G11-B15-INFINITE_SEQUENCE"
     ],
@@ -64,9 +64,9 @@
   {
     "item_id": "THPT-G11-CHV-B15-C03",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Tổng vô hạn 3+3/5+3/25+… có thể dùng công thức cấp số nhân lùi vô hạn không?",
-    "answer_key": "Có; tổng bằng 15/4.",
-    "worked_solution": "Số hạng đầu 3, công bội 1/5 có trị tuyệt đối nhỏ hơn 1; tổng 3/(1−1/5)=15/4.",
+    "stem": "Tổng vô hạn \\(3+\\frac35+\\frac3{25}+\\cdots\\) có thể dùng công thức cấp số nhân lùi vô hạn không?",
+    "answer_key": "Có; tổng bằng \\(\\frac{15}4\\).",
+    "worked_solution": "Các số hạng tạo cấp số nhân có \\(u_1=3\\) và \\(q=\\frac15\\). Vì \\(|q|<1\\), tổng riêng tiến đến \\(\\frac{u_1}{1-q}=\\frac3{1-\\frac15}=\\frac{15}4\\). Tổng vô hạn được hiểu là giới hạn của tổng riêng.",
     "skill_ids": [
       "G11-B15-GEOMETRIC"
     ],
@@ -95,9 +95,9 @@
   {
     "item_id": "THPT-G11-CHV-B15-P01",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Tìm lim(n→∞) (5n²+2)/(2n²+n).",
-    "answer_key": "5/2.",
-    "worked_solution": "Chia tử và mẫu cho n²; các phần 2/n² và 1/n tiến về 0; mẫu giới hạn 2 khác 0.",
+    "stem": "Tính \\(\\lim_{n\\to\\infty}\\frac{5n^2+2}{2n^2+n}\\).",
+    "answer_key": "\\(\\frac52\\).",
+    "worked_solution": "Với n nguyên dương, chia tử và mẫu cho \\(n^2\\), được \\(\\frac{5+\\frac2{n^2}}{2+\\frac1n}\\). Vì \\(\\frac2{n^2}\\) và \\(\\frac1n\\) đều tiến về 0, còn giới hạn mẫu bằng 2 khác 0, quy tắc giới hạn thương cho kết quả \\(\\frac52\\).",
     "skill_ids": [
       "G11-B15-LIMIT_ARITHMETIC"
     ],
@@ -126,9 +126,9 @@
   {
     "item_id": "THPT-G11-CHV-B15-P02",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Với uₙ=−4+9/n, hãy chỉ ra giới hạn và giải thích vì sao không phải −4+9.",
-    "answer_key": "−4.",
-    "worked_solution": "Hiệu uₙ−(−4)=9/n→0; số 9 không giữ nguyên mà được chia cho n đang tăng.",
+    "stem": "Với \\(u_n=-4+\\frac9n\\), hãy chỉ ra giới hạn và giải thích vì sao không phải \\(-4+9\\).",
+    "answer_key": "\\(-4\\).",
+    "worked_solution": "Khi n tăng mãi, phần \\(\\frac9n\\) tiến về 0 chứ không giữ nguyên bằng 9. Hiệu \\(u_n-(-4)=\\frac9n\\) tiến về 0, nên \\(\\lim_{n\\to\\infty}u_n=-4\\). Giá trị −4 không nhất thiết là số hạng.",
     "skill_ids": [
       "G11-B15-FINITE_SEQUENCE"
     ],
@@ -157,9 +157,9 @@
   {
     "item_id": "THPT-G11-CHV-B15-P03",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Tính lim(n→∞) (1−2/n)(4+1/n).",
+    "stem": "Tính \\(\\lim_{n\\to\\infty}(1-\\frac2n)(4+\\frac1n)\\).",
     "answer_key": "4.",
-    "worked_solution": "Hai thừa số có giới hạn hữu hạn 1 và 4, nên giới hạn tích là 1×4.",
+    "worked_solution": "Thừa số thứ nhất tiến đến 1 vì \\(\\frac2n\\to0\\); thừa số thứ hai tiến đến 4 vì \\(\\frac1n\\to0\\). Hai giới hạn hữu hạn nên áp dụng quy tắc giới hạn tích, được \\(1\\cdot4=4\\).",
     "skill_ids": [
       "G11-B15-LIMIT_ARITHMETIC"
     ],
@@ -188,9 +188,9 @@
   {
     "item_id": "THPT-G11-CHV-B15-P04",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Tính \\(\\lim_{n\\to\\infty}\\frac{\\sqrt{n^2+2n}}n\\) với n nguyên dương.",
+    "stem": "Tính \\(\\lim_{n\\to\\infty}\\frac{\\sqrt{n^2+2n}}{n}\\), với n nguyên dương.",
     "answer_key": "1.",
-    "worked_solution": "Vì \\(n>0\\), ta có \\(\\sqrt{n^2}=|n|=n\\). Do đó \\(\\frac{\\sqrt{n^2+2n}}n=\\sqrt{1+\\frac2n}\\to1\\). Lưu ý: với mọi số thực n, \\(\\sqrt{n^2}=|n|\\); nếu \\(n<0\\) thì \\(|n|=-n\\), không phải n.",
+    "worked_solution": "Vì \\(n>0\\), \\(\\sqrt{n^2}=|n|=n\\). Do đó \\(\\frac{\\sqrt{n^2+2n}}n=\\sqrt{1+\\frac2n}\\). Khi n tăng không giới hạn, biểu thức dưới căn tiến đến 1, nên giới hạn bằng 1. Với số thực n âm, phải dùng \\(\\sqrt{n^2}=|n|=-n\\), không phải n.",
     "skill_ids": [
       "G11-B15-LIMIT_ARITHMETIC"
     ],
@@ -219,9 +219,9 @@
   {
     "item_id": "THPT-G11-CHV-B15-P05",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Dãy vₙ=(−1)ⁿ có giới hạn hữu hạn hoặc ±∞ không?",
+    "stem": "Dãy \\(v_n=(-1)^n\\) có giới hạn hữu hạn, \\(+\\infty\\) hoặc \\(-\\infty\\) không?",
     "answer_key": "Không có giới hạn theo các loại đã học.",
-    "worked_solution": "Các số hạng chẵn bằng 1 và lẻ bằng −1, nên không dần về một số hay vô cực có dấu.",
+    "worked_solution": "Với n chẵn, số hạng luôn bằng 1; với n lẻ, luôn bằng −1. Hai dãy con tiến đến hai giá trị khác nhau nên dãy không có giới hạn hữu hạn. Hơn nữa mọi số hạng nằm trong \\([-1;1]\\), nên không tiến đến vô cực có dấu.",
     "skill_ids": [
       "G11-B15-INFINITE_SEQUENCE"
     ],
@@ -250,9 +250,9 @@
   {
     "item_id": "THPT-G11-CHV-B15-P06",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Tính tổng lý thuyết 8−4+2−1+…; vì sao tổng vẫn hữu hạn dù có vô hạn số hạng?",
-    "answer_key": "16/3.",
-    "worked_solution": "Đây là cấp số nhân với a₁=8, q=−1/2, |q|<1. Tổng n số hạng S_n=8[1−(−1/2)^n]/(1+1/2)=16/3·[1−(−1/2)^n]. Vì (−1/2)^n→0, S_n→16/3. Tổng hữu hạn là giới hạn của tổng riêng, không chỉ vì mỗi số hạng tiến về 0.",
+    "stem": "Tính tổng lý thuyết \\(8-4+2-1+\\cdots\\). Vì sao tổng vẫn hữu hạn dù có vô hạn số hạng?",
+    "answer_key": "\\(\\frac{16}3\\).",
+    "worked_solution": "Đây là cấp số nhân có \\(u_1=8,\\ q=-\\frac12\\), thỏa \\(|q|<1\\). Tổng n số hạng là \\(S_n=\\frac{8(1-(-\\frac12)^n)}{1+\\frac12}=\\frac{16}3(1-(-\\frac12)^n)\\). Vì \\((-\\frac12)^n\\to0\\), nên \\(S_n\\to\\frac{16}3\\). Tổng vô hạn hữu hạn vì tổng riêng hội tụ, không chỉ vì từng số hạng tiến về 0.",
     "skill_ids": [
       "G11-B15-GEOMETRIC_APPLICATION"
     ],
@@ -281,9 +281,9 @@
   {
     "item_id": "THPT-G11-CHV-B15-P07",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Bóng rơi từ độ cao 3 m, mỗi lần bật lên cao bằng 1/2 lần trước; mô hình vô hạn. Tổng quãng đường theo phương thẳng đứng là bao nhiêu?",
+    "stem": "Bóng rơi từ độ cao 3 m, mỗi lần bật lên cao bằng một nửa độ cao lần trước, rồi lại rơi xuống. Theo mô hình vô hạn lý tưởng, tổng quãng đường theo phương thẳng đứng là bao nhiêu?",
     "answer_key": "9 m.",
-    "worked_solution": "Lần đầu đi xuống 3 m. Những lần sau gồm đi lên và xuống ở các độ cao 3/2,3/4,… nên tổng là 3+2×[(3/2)/(1−1/2)]=9 m. Nêu rõ đây là mô hình lí tưởng.",
+    "worked_solution": "Lần đầu bóng đi xuống 3 m. Sau đó mỗi lần bật lên và rơi xuống đi hai lần độ cao tương ứng. Các độ cao tạo cấp số nhân \\(\\frac32,\\frac34,\\ldots\\) có công bội \\(\\frac12\\). Tổng quãng đường là \\(3+2\\cdot\\frac{\\frac32}{1-\\frac12}=9\\) (m). Đây là mô hình lý tưởng, không tính hao hụt khác ngoài giả thiết.",
     "skill_ids": [
       "G11-B15-GEOMETRIC_APPLICATION"
     ],
@@ -312,9 +312,9 @@
   {
     "item_id": "THPT-G11-CHV-B16-C01",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Hàm f(x)=(x²−9)/(x−3) (x≠3) không xác định ở x=3. Nó có giới hạn khi x→3 không?",
+    "stem": "Hàm \\(f(x)=\\frac{x^2-9}{x-3}\\) với \\(x\\ne3\\) không xác định ở 3. Nó có giới hạn khi \\(x\\to3\\) không?",
     "answer_key": "Có, giới hạn bằng 6.",
-    "worked_solution": "Với x≠3, f(x)=x+3. Khi x tiến đến 3, f(x) tiến đến 6; giới hạn không yêu cầu f(3) tồn tại.",
+    "worked_solution": "Với \\(x\\ne3\\), phân tích tử thành \\((x-3)(x+3)\\) rồi rút gọn được \\(f(x)=x+3\\). Khi x tiến đến 3 nhưng khác 3, giá trị này tiến đến 6. Giới hạn chỉ xét giá trị ở lân cận điểm, không đòi hỏi f xác định tại chính điểm đó.",
     "skill_ids": [
       "G11-B16-LIMIT_AT_POINT"
     ],
@@ -343,9 +343,9 @@
   {
     "item_id": "THPT-G11-CHV-B16-C02",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Cho f(x)=x+2 nếu x<0 và f(x)=3−x nếu x≥0. Giới hạn hai phía tại 0 có tồn tại không?",
+    "stem": "Cho \\(f(x)=x+2\\) nếu \\(x<0\\), và \\(f(x)=3-x\\) nếu \\(x\\ge0\\). Giới hạn hai phía tại 0 có tồn tại không?",
     "answer_key": "Không.",
-    "worked_solution": "Phía trái tiến đến 2, phía phải tiến đến 3. Hai giới hạn một phía khác nhau nên giới hạn hai phía không tồn tại.",
+    "worked_solution": "Khi x tiến đến 0 từ trái, dùng nhánh thứ nhất: \\(\\lim_{x\\to0^-}f(x)=2\\). Từ phải, dùng nhánh thứ hai: \\(\\lim_{x\\to0^+}f(x)=3\\). Hai giới hạn một phía khác nhau nên giới hạn hai phía không tồn tại, dù \\(f(0)=3\\).",
     "skill_ids": [
       "G11-B16-ONE_SIDED"
     ],
@@ -374,9 +374,9 @@
   {
     "item_id": "THPT-G11-CHV-B16-C03",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Khi x→4⁺ và x→4⁻, f(x)=1/(x−4) có xu hướng như thế nào?",
-    "answer_key": "+∞ ở bên phải và −∞ ở bên trái.",
-    "worked_solution": "Khi x>4 mẫu dương rất nhỏ; khi x<4 mẫu âm rất nhỏ. Dấu mẫu quyết định dấu giới hạn vô cực.",
+    "stem": "Khi \\(x\\to4^+\\) và \\(x\\to4^-\\), hàm \\(f(x)=\\frac1{x-4}\\) có xu hướng như thế nào?",
+    "answer_key": "Từ phải: \\(+\\infty\\); từ trái: \\(-\\infty\\).",
+    "worked_solution": "Khi \\(x\\to4^+\\), mẫu \\(x-4\\) dương và nhỏ dần về 0, nên thương tăng không bị chặn về phía dương. Khi \\(x\\to4^-\\), mẫu âm và tiến đến 0, nên thương tiến đến âm vô cực. Không thể gộp hai giới hạn vô cực trái dấu thành một giới hạn hai phía.",
     "skill_ids": [
       "G11-B16-INFINITE_LIMIT"
     ],
@@ -405,9 +405,9 @@
   {
     "item_id": "THPT-G11-CHV-B16-P01",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Tính lim(x→0) (√(x+4)−2)/x.",
-    "answer_key": "1/4.",
-    "worked_solution": "Với x≠0, nhân liên hợp: (√(x+4)−2)/x=1/(√(x+4)+2), rồi cho x→0.",
+    "stem": "Tính \\(\\lim_{x\\to0}\\frac{\\sqrt{x+4}-2}{x}\\).",
+    "answer_key": "\\(\\frac14\\).",
+    "worked_solution": "Trong lân cận 0 với \\(x\\ne0\\), nhân tử và mẫu với liên hợp \\(\\sqrt{x+4}+2\\). Tử mới là \\(x+4-4=x\\), nên biểu thức bằng \\(\\frac1{\\sqrt{x+4}+2}\\). Mẫu mới tiến đến 4 khác 0. Do đó giới hạn bằng \\(\\frac14\\).",
     "skill_ids": [
       "G11-B16-ALGEBRAIC_TECHNIQUES"
     ],
@@ -436,9 +436,9 @@
   {
     "item_id": "THPT-G11-CHV-B16-P02",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Tính lim(x→1) (x²−1)/(x²+x−2).",
-    "answer_key": "2/3.",
-    "worked_solution": "Phân tích (x−1)(x+1)/[(x−1)(x+2)] khi x≠1, sau đó thế giới hạn 2/3.",
+    "stem": "Tính \\(\\lim_{x\\to1}\\frac{x^2-1}{x^2+x-2}\\).",
+    "answer_key": "\\(\\frac23\\).",
+    "worked_solution": "Phân tích tử và mẫu: \\(\\frac{(x-1)(x+1)}{(x-1)(x+2)}\\). Với x đủ gần 1 nhưng khác 1, có thể rút gọn thành \\(\\frac{x+1}{x+2}\\). Mẫu mới tiến đến 3 khác 0, nên giới hạn là \\(\\frac{1+1}{1+2}=\\frac23\\).",
     "skill_ids": [
       "G11-B16-ALGEBRAIC_TECHNIQUES"
     ],
@@ -467,9 +467,9 @@
   {
     "item_id": "THPT-G11-CHV-B16-P03",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Cho f(x)=x² khi x<2 và f(x)=3x−2 khi x>2, riêng f(2)=7. Tính hai giới hạn một phía tại 2, giới hạn hai phía và xét liên tục tại 2.",
-    "answer_key": "Hai giới hạn một phía bằng 4; giới hạn bằng 4; không liên tục tại 2 vì f(2)=7.",
-    "worked_solution": "Khi x→2⁻, x²→4; khi x→2⁺, 3x−2→4. Vì hai giới hạn một phía bằng nhau, giới hạn tại 2 tồn tại và bằng 4. Nhưng f(2)=7≠4 nên hàm không liên tục tại 2. Giá trị riêng tại một điểm không làm thay đổi giới hạn ở lân cận.",
+    "stem": "Cho \\(f(x)=x^2\\) khi \\(x<2\\), \\(f(x)=3x-2\\) khi \\(x>2\\), riêng \\(f(2)=7\\). Tính hai giới hạn một phía tại 2, giới hạn hai phía và xét liên tục tại 2.",
+    "answer_key": "Hai giới hạn một phía và giới hạn hai phía đều bằng 4; không liên tục vì \\(f(2)=7\\).",
+    "worked_solution": "Ta có \\(\\lim_{x\\to2^-}f(x)=\\lim_{x\\to2^-}x^2=4\\) và \\(\\lim_{x\\to2^+}f(x)=\\lim_{x\\to2^+}(3x-2)=4\\). Hai giới hạn bằng nhau nên \\(\\lim_{x\\to2}f(x)=4\\). Tuy nhiên \\(f(2)=7\\ne4\\), vì vậy không liên tục tại 2. Thay đổi giá trị riêng ở một điểm không làm đổi giới hạn tại điểm đó.",
     "skill_ids": [
       "G11-B16-ONE_SIDED"
     ],
@@ -498,9 +498,9 @@
   {
     "item_id": "THPT-G11-CHV-B16-P04",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Tính lim(x→−∞) √(x²+4)/x.",
-    "answer_key": "−1.",
-    "worked_solution": "Vì x âm đủ lớn, √(x²)=|x|=−x; biểu thức bằng −√(1+4/x²)→−1.",
+    "stem": "Tính \\(\\lim_{x\\to-\\infty}\\frac{\\sqrt{x^2+4}}x\\).",
+    "answer_key": "\\(-1\\).",
+    "worked_solution": "Khi x tiến đến âm vô cực, x âm. Vì \\(\\sqrt{x^2}=|x|=-x\\), ta có \\(\\frac{\\sqrt{x^2+4}}x=-\\sqrt{1+\\frac4{x^2}}\\). Phần \\(\\frac4{x^2}\\) tiến về 0, nên giới hạn bằng −1. Dấu âm xuất phát từ mẫu x.",
     "skill_ids": [
       "G11-B16-LIMIT_AT_INFINITY"
     ],
@@ -529,9 +529,9 @@
   {
     "item_id": "THPT-G11-CHV-B16-P05",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Tính lim(x→+∞) (3x²−x)/(x²+2).",
+    "stem": "Tính \\(\\lim_{x\\to+\\infty}\\frac{3x^2-x}{x^2+2}\\).",
     "answer_key": "3.",
-    "worked_solution": "Chia cả tử và mẫu cho x²; tử→3 và mẫu→1.",
+    "worked_solution": "Chia tử và mẫu cho \\(x^2\\), được \\(\\frac{3-\\frac1x}{1+\\frac2{x^2}}\\). Khi x tiến đến dương vô cực, tử tiến đến 3, mẫu tiến đến 1 khác 0. Giới hạn bằng 3.",
     "skill_ids": [
       "G11-B16-LIMIT_AT_INFINITY"
     ],
@@ -560,9 +560,9 @@
   {
     "item_id": "THPT-G11-CHV-B16-P06",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Tính lim(x→2⁻) (x+1)/(2−x).",
-    "answer_key": "+∞.",
-    "worked_solution": "Tử tiến tới 3>0, mẫu dương và tiến đến 0 khi x<2.",
+    "stem": "Tính \\(\\lim_{x\\to2^-}\\frac{x+1}{2-x}\\).",
+    "answer_key": "\\(+\\infty\\).",
+    "worked_solution": "Khi x tiến đến 2 từ trái, tử \\(x+1\\) tiến đến 3 dương, còn mẫu \\(2-x\\) luôn dương và tiến đến 0. Thương tăng không bị chặn về phía dương, nên giới hạn là \\(+\\infty\\). Dấu của mẫu phải xét theo đúng phía tiến đến.",
     "skill_ids": [
       "G11-B16-INFINITE_LIMIT"
     ],
@@ -591,9 +591,9 @@
   {
     "item_id": "THPT-G11-CHV-B16-P07",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Mô hình hiệu suất H(t)=100t/(t+5) (%), t≥0 (giờ). Tìm giới hạn khi t→+∞. Có thời điểm hữu hạn đạt đúng 100% không? Tìm thời điểm đầu tiên đạt 90%.",
-    "answer_key": "Giới hạn 100%; không đạt 100% tại t hữu hạn; đạt 90% lần đầu ở t=45 giờ.",
-    "worked_solution": "Với t>0, H(t)=100/(1+5/t)→100. Với mọi t≥0, H(t)=100−500/(t+5)<100. Điều kiện H(t)≥90 tương đương 100t≥90(t+5) vì t+5>0, tức t≥45. Vậy thời điểm đầu tiên là 45 giờ. Đây là mô hình giả định, không phải kết quả đo.",
+    "stem": "Mô hình hiệu suất \\(H(t)=\\frac{100t}{t+5}\\) (%), \\(t\\ge0\\) (giờ). Tìm giới hạn khi \\(t\\to+\\infty\\). Có thời điểm hữu hạn đạt đúng 100% không? Tìm thời điểm đầu tiên đạt 90%.",
+    "answer_key": "Giới hạn 100%; không đạt 100% tại thời điểm hữu hạn; đạt 90% lần đầu sau 45 giờ.",
+    "worked_solution": "Với \\(t>0\\), \\(H(t)=\\frac{100}{1+\\frac5t}\\) tiến đến 100. Mặt khác với mọi \\(t\\ge0\\), \\(H(t)=100-\\frac{500}{t+5}<100\\), nên không đạt 100% ở thời điểm hữu hạn. Vì \\(t+5>0\\), điều kiện \\(H(t)\\ge90\\) tương đương \\(100t\\ge90(t+5)\\), tức \\(t\\ge45\\). Thời điểm đầu tiên là 45 giờ, tại đó bằng đúng 90%. Đây là mô hình giả định, không phải số liệu đo.",
     "skill_ids": [
       "G11-B16-REAL_CONTEXT"
     ],
@@ -622,9 +622,9 @@
   {
     "item_id": "THPT-G11-CHV-B17-C01",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Cho f(x)=(x²−1)/(x−1) khi x≠1 và f(1)=2. Hàm có liên tục ở 1 không?",
+    "stem": "Cho \\(f(x)=\\frac{x^2-1}{x-1}\\) khi \\(x\\ne1\\) và \\(f(1)=2\\). Hàm có liên tục ở 1 không?",
     "answer_key": "Có.",
-    "worked_solution": "Giới hạn khi x→1 bằng lim(x+1)=2, khớp với giá trị f(1)=2.",
+    "worked_solution": "Với \\(x\\ne1\\), rút gọn được \\(f(x)=x+1\\), nên \\(\\lim_{x\\to1}f(x)=2\\). Giá trị \\(f(1)\\) tồn tại và cũng bằng 2. Vì giới hạn bằng giá trị hàm tại điểm, hàm liên tục ở 1.",
     "skill_ids": [
       "G11-B17-CONTINUITY_POINT"
     ],
@@ -653,9 +653,9 @@
   {
     "item_id": "THPT-G11-CHV-B17-C02",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Cùng biểu thức (x²−1)/(x−1) khi x≠1 nhưng đặt f(1)=0. Hàm có liên tục ở 1 không?",
+    "stem": "Cho \\(f(x)=\\frac{x^2-1}{x-1}\\) khi \\(x\\ne1\\) và \\(f(1)=0\\). Hàm có liên tục ở 1 không?",
     "answer_key": "Không.",
-    "worked_solution": "Giới hạn bằng 2 nhưng giá trị ở điểm lại bằng 0. Thiếu điều kiện giới hạn bằng giá trị hàm.",
+    "worked_solution": "Với \\(x\\ne1\\), biểu thức bằng \\(x+1\\), nên \\(\\lim_{x\\to1}f(x)=2\\). Nhưng \\(f(1)=0\\ne2\\). Do giới hạn không bằng giá trị hàm tại điểm, hàm không liên tục ở 1.",
     "skill_ids": [
       "G11-B17-CONTINUITY_POINT"
     ],
@@ -684,9 +684,9 @@
   {
     "item_id": "THPT-G11-CHV-B17-C03",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Hàm h(x)=√(x+2) có liên tục tại đầu mút x=−2 trên miền xác định không?",
+    "stem": "Hàm \\(h(x)=\\sqrt{x+2}\\) có liên tục tại đầu mút \\(x=-2\\) trên miền xác định không?",
     "answer_key": "Có, liên tục từ bên phải tại −2.",
-    "worked_solution": "Hàm xác định với x≥−2; lim(x→−2⁺)√(x+2)=0=h(−2). Không kiểm tra từ phía trái ngoài miền xác định.",
+    "worked_solution": "Tập xác định là \\([-2;+\\infty)\\). Ta có \\(h(-2)=0\\) và \\(\\lim_{x\\to-2^+}\\sqrt{x+2}=0\\). Hai giá trị bằng nhau nên hàm liên tục từ bên phải tại đầu mút −2. Không yêu cầu giới hạn từ phía ngoài miền xác định.",
     "skill_ids": [
       "G11-B17-ELEMENTARY_CONTINUITY"
     ],
@@ -715,9 +715,9 @@
   {
     "item_id": "THPT-G11-CHV-B17-P01",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Hàm g(x)=(x+2)/(x−1) liên tục trên những khoảng nào?",
-    "answer_key": "(−∞,1) và (1,+∞).",
-    "worked_solution": "Tử và mẫu là đa thức liên tục, thương liên tục khi mẫu khác 0; phải loại x=1.",
+    "stem": "Hàm \\(g(x)=\\frac{x+2}{x-1}\\) liên tục trên những khoảng nào?",
+    "answer_key": "\\((-\\infty;1)\\) và \\((1;+\\infty)\\).",
+    "worked_solution": "Tử và mẫu là các đa thức liên tục trên tập số thực. Thương liên tục tại mọi điểm mẫu khác 0, tức mọi \\(x\\ne1\\). Vậy g liên tục trên hai khoảng \\((-\\infty;1)\\) và \\((1;+\\infty)\\).",
     "skill_ids": [
       "G11-B17-CONTINUITY_OPERATIONS"
     ],
@@ -746,9 +746,9 @@
   {
     "item_id": "THPT-G11-CHV-B17-P02",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Cho f(x)=ax+1 nếu x<2, và f(x)=x²−1 nếu x≥2. Tìm a để liên tục tại 2.",
-    "answer_key": "a=1.",
-    "worked_solution": "Giới hạn trái 2a+1; giới hạn phải và f(2) đều bằng 3. Điều kiện khớp 2a+1=3.",
+    "stem": "Cho \\(f(x)=ax+1\\) nếu \\(x<2\\), và \\(f(x)=x^2-1\\) nếu \\(x\\ge2\\). Tìm a để liên tục tại 2.",
+    "answer_key": "\\(a=1\\).",
+    "worked_solution": "Giới hạn trái là \\(2a+1\\), giới hạn phải là \\(2^2-1=3\\) và \\(f(2)=3\\). Để liên tục, cần và đủ \\(2a+1=3\\), tức \\(a=1\\). Với giá trị này cả hai giới hạn bằng giá trị hàm, nên điều kiện đủ cũng thỏa.",
     "skill_ids": [
       "G11-B17-CONTINUITY_POINT"
     ],
@@ -777,9 +777,9 @@
   {
     "item_id": "THPT-G11-CHV-B17-P03",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Chứng minh f(x)=x²−2 có ít nhất một nghiệm trong (1,2).",
-    "answer_key": "Có ít nhất một nghiệm.",
-    "worked_solution": "Đa thức liên tục trên [1,2], f(1)=−1<0, f(2)=2>0. Theo định lí giá trị trung gian, tồn tại c∈(1,2) với f(c)=0.",
+    "stem": "Chứng minh \\(f(x)=x^2-2\\) có ít nhất một nghiệm trong \\((1;2)\\).",
+    "answer_key": "Có ít nhất một nghiệm trong \\((1;2)\\).",
+    "worked_solution": "Đa thức f liên tục trên đoạn \\([1;2]\\). Ta có \\(f(1)=-1<0\\) và \\(f(2)=2>0\\), nên hai giá trị trái dấu. Theo định lí về sự tồn tại nghiệm của hàm liên tục đổi dấu, tồn tại \\(c\\in(1;2)\\) sao cho \\(f(c)=0\\). Không cần giải phương trình để chứng minh tồn tại.",
     "skill_ids": [
       "G11-B17-ZERO_EXISTENCE"
     ],
@@ -808,9 +808,9 @@
   {
     "item_id": "THPT-G11-CHV-B17-P04",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Đặt f(x)=(x²−16)/(x−4) khi x≠4 và f(4)=m. Tìm m để liên tục ở 4.",
-    "answer_key": "m=8.",
-    "worked_solution": "Với x≠4 rút gọn thành x+4; giới hạn khi x→4 bằng 8, nên cần f(4)=8.",
+    "stem": "Cho \\(f(x)=\\frac{x^2-16}{x-4}\\) khi \\(x\\ne4\\) và \\(f(4)=m\\). Tìm m để hàm liên tục ở 4.",
+    "answer_key": "\\(m=8\\).",
+    "worked_solution": "Với \\(x\\ne4\\), phân tích tử rồi rút gọn được \\(f(x)=x+4\\). Do đó \\(\\lim_{x\\to4}f(x)=8\\). Hàm liên tục tại 4 khi và chỉ khi \\(f(4)=8\\), tức \\(m=8\\).",
     "skill_ids": [
       "G11-B17-CONTINUITY_POINT"
     ],
@@ -839,9 +839,9 @@
   {
     "item_id": "THPT-G11-CHV-B17-P05",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Hàm f(x)=√(9−x²) có liên tục trên đoạn [−3,3] không?",
+    "stem": "Hàm \\(f(x)=\\sqrt{9-x^2}\\) có liên tục trên đoạn \\([-3;3]\\) không?",
     "answer_key": "Có.",
-    "worked_solution": "Miền xác định là [−3,3]. Hàm liên tục ở bên trong và có giới hạn một phía tại hai đầu mút bằng giá trị hàm.",
+    "worked_solution": "Điều kiện \\(9-x^2\\ge0\\) cho tập xác định \\([-3;3]\\). Hàm liên tục trên khoảng \\((-3;3)\\) do hợp của các hàm liên tục. Tại đầu trái, \\(\\lim_{x\\to-3^+}f(x)=0=f(-3)\\); tại đầu phải, \\(\\lim_{x\\to3^-}f(x)=0=f(3)\\). Vậy hàm liên tục trên cả đoạn.",
     "skill_ids": [
       "G11-B17-CONTINUITY_INTERVAL"
     ],
@@ -870,9 +870,9 @@
   {
     "item_id": "THPT-G11-CHV-B17-P06",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "f(x)=x+1 với x<0, f(x)=x²+1 với x≥0. Liên tục tại 0 không?",
+    "stem": "Cho \\(f(x)=x+1\\) với \\(x<0\\), và \\(f(x)=x^2+1\\) với \\(x\\ge0\\). Hàm có liên tục tại 0 không?",
     "answer_key": "Có.",
-    "worked_solution": "Giới hạn trái và phải cùng bằng 1, giá trị f(0)=1.",
+    "worked_solution": "Giới hạn từ trái là \\(\\lim_{x\\to0^-}(x+1)=1\\), từ phải là \\(\\lim_{x\\to0^+}(x^2+1)=1\\). Do đó giới hạn hai phía bằng 1. Nhánh thứ hai cho \\(f(0)=1\\), nên hàm liên tục tại 0.",
     "skill_ids": [
       "G11-B17-CONTINUITY_INTERVAL"
     ],
@@ -901,9 +901,9 @@
   {
     "item_id": "THPT-G11-CHV-B17-P07",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Cho g(x)=(x−1)(x−2)(x−3) trên [0;4]. Kiểm điều kiện định lí đổi dấu, xác định tất cả nghiệm và giải thích vì sao định lí không bảo đảm nghiệm duy nhất.",
-    "answer_key": "g liên tục, g(0)=−6<0, g(4)=6>0; ba nghiệm 1,2,3. Định lí chỉ bảo đảm ít nhất một nghiệm.",
-    "worked_solution": "g là đa thức nên liên tục trên [0;4]. g(0)=−6, g(4)=6 trái dấu nên tồn tại nghiệm trong (0;4). Từ tích bằng 0, các nghiệm là x=1,2,3, đều thuộc (0;4). Phản ví dụ này chứng tỏ định lí đổi dấu không tự bảo đảm duy nhất.",
+    "stem": "Cho \\(g(x)=(x-1)(x-2)(x-3)\\) trên \\([0;4]\\). Kiểm điều kiện định lí đổi dấu, xác định tất cả nghiệm và giải thích vì sao định lí không bảo đảm nghiệm duy nhất.",
+    "answer_key": "g liên tục, \\(g(0)=-6<0,\\ g(4)=6>0\\); ba nghiệm 1, 2, 3. Định lí chỉ bảo đảm ít nhất một nghiệm.",
+    "worked_solution": "g là đa thức, liên tục trên \\([0;4]\\). Hai giá trị đầu mút \\(g(0)=-6\\) và \\(g(4)=6\\) trái dấu nên có ít nhất một nghiệm trong \\((0;4)\\). Từ tích bằng 0, suy ra tất cả nghiệm là \\(x=1,2,3\\), đều thuộc khoảng. Ví dụ này chứng tỏ định lí không bảo đảm duy nhất; muốn chứng minh duy nhất cần một lập luận khác.",
     "skill_ids": [
       "G11-B17-ZERO_EXISTENCE"
     ],
