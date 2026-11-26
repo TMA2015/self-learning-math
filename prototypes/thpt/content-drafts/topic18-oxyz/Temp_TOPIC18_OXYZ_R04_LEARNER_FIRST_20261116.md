@@ -1220,7 +1220,7 @@ Một dốc cao 3 m trên nền ngang 4 m, chiều dài dốc 5 m. \(\sin\theta\
 
 **Từ đường bay đến vùng bao phủ.** Giả sử tại điểm gặp tấm chắn \(C=(2;1;3)\), thiết bị phát sóng có vùng phủ dạng cầu bán kính **\(R=5\,\mathrm m\)**. Mặt sàn có \(z=0\) nên cách tâm C một đoạn **\(d=3\,\mathrm m\)**. Tam giác vuông tạo bởi tâm C, chân \(H=(2;1;0)\) và một điểm trên đường tròn giao cho \(r^2+d^2=R^2\), tức \(r=\sqrt{25-9}=4\) m. Đây là lí do bán kính vòng phủ trên sàn nhỏ hơn bán kính hình cầu, dù hình minh họa trông gần bằng nhau.
 
-[Mở mô hình mặt phẳng cắt mặt cầu](Temp_THPT_TOPIC18_OXYZ_SPHERE_GEOMETRY_R00_20261114.html) — chọn phần **“Mặt phẳng cắt mặt cầu”**, đặt R=5 và d=3 rồi thử lần lượt d=5 và d=6. Suy đoán kết quả trước khi kéo thanh trượt.
+[Mở mô hình mặt phẳng cắt mặt cầu](Temp_THPT_TOPIC18_OXYZ_SPHERE_GEOMETRY_R00_20261114.html) — chọn phần **“Mặt phẳng cắt mặt cầu”**, đặt \(R=5\) và \(d=3\) rồi thử lần lượt \(d=5\) và \(d=6\). Suy đoán kết quả trước khi kéo thanh trượt.
 
 <!-- AUTHOR_INTERACTIVE_PLACEMENT: MODEL_ID=SLM-TOP18-OXYZ-GEOMETRY-R00; SCENE=SPHERE_PLANE; OUTCOMES=TOP18-O40/TOP18-O23; PUBLIC_DISCOVERY_NO_MASTERY -->
 
@@ -1765,7 +1765,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** (Oxy)
-- **Lời giải/suy luận:** Mặt phẳng Oxy đặc trưng bởi z=0.
+- **Lời giải/suy luận:** Mặt phẳng Oxy đặc trưng bởi \(z=0\).
 
 </details>
 
@@ -1774,7 +1774,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** x=0 và y=0
+- **Đáp án:** \(x=0\) và \(y=0\)
 - **Lời giải/suy luận:** Trên trục Oz chỉ có thành phần z.
 
 </details>
@@ -1785,7 +1785,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** (Oxz)
-- **Lời giải/suy luận:** y=0 nên M thuộc mặt phẳng Oxz.
+- **Lời giải/suy luận:** \(y=0\) nên M thuộc mặt phẳng Oxz.
 
 </details>
 
@@ -1806,7 +1806,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Có, vì x=0. Không bắt buộc y,z dương để thuộc mặt tọa độ.
+Có, vì \(x=0\). Không bắt buộc y,z dương để thuộc mặt tọa độ.
 
 **D6:** Gắn điều kiện bằng 0 với tên của tọa độ bị thiếu, không suy vị trí chỉ từ hình xiên.
 
@@ -1818,7 +1818,7 @@ Có, vì x=0. Không bắt buộc y,z dương để thuộc mặt tọa độ.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** \((3;-2;1)\)
-- **Lời giải/suy luận:** Hệ số theo i,j,k tạo thành ba tọa độ.
+- **Lời giải/suy luận:** Hệ số theo \(\vec i,\vec j,\vec k\) tạo thành ba tọa độ.
 
 </details>
 
@@ -1833,7 +1833,7 @@ Có, vì x=0. Không bắt buộc y,z dương để thuộc mặt tọa độ.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-P04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 38.** Vectơ \(\vec u=(0;0;-5)\) viết dưới dạng i,j,k thế nào?
+**Bài luyện 38.** Vectơ \(\vec u=(0;0;-5)\) viết dưới dạng \(\vec i,\vec j,\vec k\) thế nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1843,7 +1843,7 @@ Có, vì x=0. Không bắt buộc y,z dương để thuộc mặt tọa độ.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 39.** Cho \(P(1;-2;3)\). Viết vectơ vị trí OP và giải thích vì sao vectơ bằng OP đặt ở một điểm khác vẫn có tọa độ tương tự.
+**Bài luyện 39.** Cho \(P(1;-2;3)\). Viết vectơ vị trí \(\overrightarrow{OP}\) và giải thích vì sao vectơ bằng \(\overrightarrow{OP}\) đặt ở một điểm khác vẫn có tọa độ tương tự.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1855,11 +1855,11 @@ Có, vì x=0. Không bắt buộc y,z dương để thuộc mặt tọa độ.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P08; PRIMARY_OUTCOME: TOP18-O08; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 40.** Vectơ u=−2i+3j+k. Viết bộ ba tọa độ của u và của điểm N sao cho ON=u.
+**Bài luyện 40.** Vectơ \(\vec u=-2\vec i+3\vec j+\vec k\). Viết bộ ba tọa độ của u và của điểm N sao cho \(\overrightarrow{ON}=\vec u\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-u=(−2,3,1) và N(−2,3,1) khi gốc là O và ba trục chuẩn.
+\(\vec u=(-2;3;1)\) và \(N(-2;3;1)\) khi gốc là O và ba trục chuẩn.
 
 **D6:** Nhắc lại điểm cần gốc, vectơ cần thành phần dịch chuyển; không tự đổi dấu khi đọc thành phần âm.
 
@@ -1881,7 +1881,7 @@ u=(−2,3,1) và N(−2,3,1) khi gốc là O và ba trục chuẩn.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 3 m
-- **Lời giải/suy luận:** Độ cao được đo từ mặt sàn z=0 theo chiều dương.
+- **Lời giải/suy luận:** Độ cao được đo từ mặt sàn \(z=0\) theo chiều dương.
 
 </details>
 
@@ -1896,7 +1896,7 @@ u=(−2,3,1) và N(−2,3,1) khi gốc là O và ba trục chuẩn.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W03; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 44.** Phòng 5×4×3 m; lấy O ở góc sàn, Ox dài, Oy rộng, Oz cao. Điểm A(5;4;3) là vị trí nào? Nếu gốc thay thành điểm trần đối diện và trục Oz vẫn hướng lên, z của O cũ bằng bao nhiêu?
+**Bài luyện 44.** Phòng \(5\times4\times3\) m; lấy O ở góc sàn, Ox dài, Oy rộng, Oz cao. Điểm \(A(5;4;3)\) là vị trí nào? Nếu gốc thay thành điểm trần đối diện và trục Oz vẫn hướng lên, z của O cũ bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1924,7 +1924,7 @@ Tăng 4 m về Bắc; chiều cao z không đổi.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** \((4;0;-2)\)
-- **Lời giải/suy luận:** B-A theo từng tọa độ.
+- **Lời giải/suy luận:** \(\overrightarrow{OB}-\overrightarrow{OA}\) theo từng tọa độ.
 
 </details>
 
@@ -1934,7 +1934,7 @@ Tăng 4 m về Bắc; chiều cao z không đổi.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** \((-3;4;2)\)
-- **Lời giải/suy luận:** A-B vì điểm đầu B, cuối A.
+- **Lời giải/suy luận:** \(\overrightarrow{OA}-\overrightarrow{OB}\) vì điểm đầu B, cuối A.
 
 </details>
 
@@ -1949,14 +1949,14 @@ Tăng 4 m về Bắc; chiều cao z không đổi.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B07-W04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 49.** Cho \(A(2;-3;1)\), \(B(-4;5;0)\). Tính AB và BA theo tọa độ, rồi giải thích quan hệ.
+**Bài luyện 49.** Cho \(A(2;-3;1)\), \(B(-4;5;0)\). Tính tọa độ \(\overrightarrow{AB}\) và \(\overrightarrow{BA}\), rồi giải thích quan hệ.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** \(\overrightarrow{AB}=(-6;8;-1)\) và \(\overrightarrow{BA}=(6;-8;1)\); đối nhau.
-- **Lời giải/suy luận:** B-A và A-B có dấu ngược nhau ở cả 3 thành phần.
+- **Lời giải/suy luận:** \(\overrightarrow{OB}-\overrightarrow{OA}\) và \(\overrightarrow{OA}-\overrightarrow{OB}\) có dấu ngược nhau ở cả 3 thành phần.
 
-- **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm AB; 2 điểm BA; 1 điểm quan hệ vectơ đối.
+- **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm \(\overrightarrow{AB}\); 2 điểm \(\overrightarrow{BA}\); 1 điểm quan hệ vectơ đối.
 
 </details>
 
@@ -1965,16 +1965,16 @@ Tăng 4 m về Bắc; chiều cao z không đổi.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-CD=(3,0,−4), DC=(−3,0,4)=−CD.
+\(\overrightarrow{CD}=(3;0;-4)\), \(\overrightarrow{DC}=(-3;0;4)=-\overrightarrow{CD}\).
 
-**D6:** Thường xuyên thử lấy tọa độ A cộng kết quả AB để xem có trở về B không.
+**D6:** Thường xuyên thử lấy tọa độ A cộng tọa độ \(\overrightarrow{AB}\) để xem có trở về B không.
 
 </details>
 
 ## 3. Phép toán tọa độ và khoảng cách
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C01; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 51.** Với a=(1;2;3), b=(3;-1;2), tính a+b.
+**Bài luyện 51.** Với \(\vec a=(1;2;3)\), \(\vec b=(3;-1;2)\), tính \(\vec a+\vec b\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1984,17 +1984,17 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P01; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 52.** Với a=(2;-3;1), b=(-1;4;0), tính a-b.
+**Bài luyện 52.** Với \(\vec a=(2;-3;1)\), \(\vec b=(-1;4;0)\), tính \(\vec a-\vec b\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** \((3;-7;1)\)
-- **Lời giải/suy luận:** Trừ ba tọa độ tương ứng; -3-4=-7.
+- **Lời giải/suy luận:** Trừ ba tọa độ tương ứng; \(-3-4=-7\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 53.** Với a=(1;-2;4), tính -3a.
+**Bài luyện 53.** Với \(\vec a=(1;-2;4)\), tính \(-3\vec a\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2004,50 +2004,50 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W01; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 54.** Với a=(2;1;-1), b=(-1;3;2), hãy tính 2a-3b và mô tả vì sao mỗi thành phần được tính riêng.
+**Bài luyện 54.** Với \(\vec a=(2;1;-1)\), \(\vec b=(-1;3;2)\), hãy tính \(2\vec a-3\vec b\) và mô tả vì sao mỗi thành phần được tính riêng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** \((7;-7;-8)\)
-- **Lời giải/suy luận:** \(2a=(4;2;-2)\), \(3b=(-3;9;6)\), lấy hiệu \((7;-7;-8)\); tính duy nhất cơ sở trực giao.
+- **Lời giải/suy luận:** \(2\vec a=(4;2;-2)\), \(3\vec b=(-3;9;6)\), lấy hiệu \((7;-7;-8)\); tính duy nhất cơ sở trực giao.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 3 điểm tính đúng ba tọa độ; 2 điểm lý giải phép toán theo trục.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P11; PRIMARY_OUTCOME: TOP18-O11; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 55.** Cho u=(−1,2,4), v=(3,−2,1). Tính 2u−v.
+**Bài luyện 55.** Cho \(\vec u=(-1;2;4)\), \(\vec v=(3;-2;1)\). Tính \(2\vec u-\vec v\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-2u−v=(−2,4,8)−(3,−2,1)=(−5,6,7).
+\(2\vec u-\vec v=(-2;4;8)-(3;-2;1)=(-5;6;7)\).
 
 **D6:** Không nhân chéo tọa độ khi cộng; làm theo từng trục và kiểm dấu số âm.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 56.** a=(2;4;6) và b=(1;2;3) có cùng phương không?
+**Bài luyện 56.** \(\vec a=(2;4;6)\) và \(\vec b=(1;2;3)\) có cùng phương không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** Có; a=2b
+- **Đáp án:** Có; \(\vec a=2\vec b\)
 - **Lời giải/suy luận:** Một hệ số 2 khớp cả ba tọa độ.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P03; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 57.** u=(3;0;-6) và v=(-1;0;2) có cùng phương không?
+**Bài luyện 57.** \(\vec u=(3;0;-6)\) và \(\vec v=(-1;0;2)\) có cùng phương không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** Có; u=-3v
-- **Lời giải/suy luận:** Kiểm thành phần x,z và 0= -3·0; không lấy tỉ số 0/0.
+- **Đáp án:** Có; \(\vec u=-3\vec v\)
+- **Lời giải/suy luận:** Kiểm thành phần x,z và \(0=-3\cdot0\); không lấy tỉ số \(\frac00\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 58.** a=(1;2;3) và b=(2;4;7) có cùng phương không?
+**Bài luyện 58.** \(\vec a=(1;2;3)\) và \(\vec b=(2;4;7)\) có cùng phương không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2057,23 +2057,23 @@ CD=(3,0,−4), DC=(−3,0,4)=−CD.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W02; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 59.** Cho u=(t;2;4), v=(3;1;2). Tìm t để u, v cùng phương; chỉ ra hướng của chúng.
+**Bài luyện 59.** Cho \(\vec u=(t;2;4)\), \(\vec v=(3;1;2)\). Tìm t để u, v cùng phương; chỉ ra hướng của chúng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** t=6; cùng hướng
-- **Lời giải/suy luận:** Từ tọa độ y: u=2v, kiểm z: 4=2·2, suy t=2·3=6; k=2>0.
+- **Đáp án:** \(t=6\); cùng hướng
+- **Lời giải/suy luận:** Từ tọa độ y: \(\vec u=2\vec v\), kiểm z: \(4=2\cdot2\), suy \(t=2\cdot3=6\); \(k=2>0\).
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm xác định hệ số; 2 điểm suy t và kiểm z; 1 điểm giải thích hướng.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P12; PRIMARY_OUTCOME: TOP18-O12; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 60.** Kiểm tra cùng phương của u=(2,4,1) và v=(1,2,0).
+**Bài luyện 60.** Kiểm tra cùng phương của \(\vec u=(2;4;1)\) và \(\vec v=(1;2;0)\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2·0 sai.
+Không: từ hai thành phần đầu \(k=2\) nhưng thành phần z yêu cầu \(1=2\cdot0\) sai.
 
 **D6:** Không chia cho 0; kiểm cả ba thành phần, nếu một vectơ là vectơ-không thì nói rõ trường hợp riêng.
 
@@ -2128,12 +2128,12 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 
 \(G=(1;2;1)\) vì cộng ba tọa độ từng trục rồi chia 3.
 
-**D6:** Nếu kết quả bất ngờ, lấy 2M−A phải thu B; với trọng tâm G, 3G=A+B+C.
+**D6:** Nếu kết quả bất ngờ, kiểm \(2\overrightarrow{OM}-\overrightarrow{OA}=\overrightarrow{OB}\); với trọng tâm \(G\), kiểm \(3\overrightarrow{OG}=\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 66.** a=(1;2;3), b=(2;0;-1). Tính tích vô hướng a·b.
+**Bài luyện 66.** \(\vec a=(1;2;3)\), \(\vec b=(2;0;-1)\). Tính tích vô hướng \(\vec a\cdot\vec b\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2143,31 +2143,31 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P07; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 67.** u=(1;1;0), v=(1;-1;0) có vuông góc không?
+**Bài luyện 67.** \(\vec u=(1;1;0)\), \(\vec v=(1;-1;0)\) có vuông góc không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Có
-- **Lời giải/suy luận:** Tích vô hướng 1-1+0=0, cả hai vectơ khác 0.
+- **Lời giải/suy luận:** Tích vô hướng \(1-1+0=0\), cả hai vectơ khác 0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P08; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 68.** a=(1;0;0), b=(1;1;0). Góc giữa hai vectơ?
+**Bài luyện 68.** \(\vec a=(1;0;0)\), \(\vec b=(1;1;0)\). Góc giữa hai vectơ?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 45°
+- **Đáp án:** \(45^\circ\)
 - **Lời giải/suy luận:** \(\cos\theta=\frac1{1\cdot\sqrt2}=\frac1{\sqrt2}\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-W04; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 69.** Cho a=(1;2;2), b=(2;-1;0). Chứng minh chúng vuông góc và nêu điều kiện để sử dụng tiêu chuẩn tích vô hướng bằng 0.
+**Bài luyện 69.** Cho \(\vec a=(1;2;2)\), \(\vec b=(2;-1;0)\). Chứng minh chúng vuông góc và nêu điều kiện để sử dụng tiêu chuẩn tích vô hướng bằng 0.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** a·b=2-2+0=0, hai vectơ khác 0 nên vuông góc.
+- **Đáp án:** \(\vec a\cdot\vec b=2-2+0=0\), hai vectơ khác 0 nên vuông góc.
 - **Lời giải/suy luận:** Không được suy vuông góc giữa vectơ-không và vectơ bất kì chỉ từ tích 0.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm tính tích; 1 điểm kiểm khác 0; 2 điểm kết luận và điều kiện.
@@ -2179,14 +2179,14 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-cos=1/(1·√2)=1/√2 nên góc 45°.
+\(\cos\theta=\frac1{1\cdot\sqrt2}=\frac1{\sqrt2}\) nên góc \(45^\circ\).
 
-**D6:** Khi tìm cos, kiểm |u|,|v|>0; nếu làm tròn dữ liệu máy, cos chỉ nằm trong [−1,1].
+**D6:** Khi tìm cos, kiểm \(\lVert\vec u\rVert,\lVert\vec v\rVert>0\); nếu làm tròn dữ liệu máy, cos chỉ nằm trong \([-1;1]\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-C05; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 71.** Tính độ dài vectơ u=(3;4;0).
+**Bài luyện 71.** Tính độ dài vectơ \(\vec u=(3;4;0)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2206,7 +2206,7 @@ cos=1/(1·√2)=1/√2 nên góc 45°.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B08-P10; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 73.** Độ dài vectơ v=(-2;3;6) bằng?
+**Bài luyện 73.** Độ dài vectơ \(\vec v=(-2;3;6)\) bằng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2223,7 +2223,7 @@ cos=1/(1·√2)=1/√2 nên góc 45°.
 - **Đáp án:** 13
 - **Lời giải/suy luận:** \(\overrightarrow{AB}=(3;-4;12)\), \(AB=\sqrt{9+16+144}=13\). Tổng trị tuyệt đối là độ dài đi theo ba trục, không phải khoảng cách thẳng.
 
-- **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm vectơ AB; 2 điểm độ dài; 1 điểm giải thích hình học.
+- **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm vectơ \(\overrightarrow{AB}\); 2 điểm độ dài; 1 điểm giải thích hình học.
 
 </details>
 
@@ -2232,24 +2232,24 @@ cos=1/(1·√2)=1/√2 nên góc 45°.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-AB=(2,−3,6), nên khoảng cách √(4+9+36)=7.
+\(\overrightarrow{AB}=(2;-3;6)\), nên khoảng cách \(\sqrt{4+9+36}=7\).
 
 **D6:** Nếu căn ra số âm hoặc thiếu tọa độ z, quay lại định lí Pitago ba chiều.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-W01; PRIMARY_OUTCOME: TOP18-O15; ROLE: TOPIC_WRITTEN; RUBRIC_ORIGINAL_UNCHANGED -->
-**Bài luyện 76.** Cho \(A=(1;2;3)\), \(B=(4;6;3)\). Hãy tìm vectơ AB, độ dài AB và trung điểm I của AB, giải thích vì sao không lấy khoảng cách bằng tổng ba biến thiên tọa độ.
+**Bài luyện 76.** Cho \(A=(1;2;3)\), \(B=(4;6;3)\). Hãy tìm vectơ \(\overrightarrow{AB}\), độ dài \(AB\) và trung điểm I của AB, giải thích vì sao không lấy khoảng cách bằng tổng ba biến thiên tọa độ.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-AB=B−A=(3,4,0). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung điểm I=((1+4)/2,(2+6)/2,(3+3)/2)=(5/2,4,3), không phải tổng 3+4+0.
+\(\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}=(3;4;0)\). Bởi ba trục vuông góc, \(AB=\sqrt{3^2+4^2+0^2}=5\). Trung điểm \(I=\left(\frac{1+4}2;\frac{2+6}2;\frac{3+3}2\right)=\left(\frac52;4;3\right)\), không phải tổng \(3+4+0\).
 
 **Rubric 4 điểm (mỗi tiêu chí 1 điểm):**
-- Tính đúng ba tọa độ vectơ AB=(3,4,0) — **1 điểm**.
+- Tính đúng ba tọa độ vectơ \(\overrightarrow{AB}=(3;4;0)\) — **1 điểm**.
 - Giải thích và dùng Pitago ba chiều — **1 điểm**.
-- Kết luận đúng độ dài AB=5 — **1 điểm**.
-- Tính trung điểm I=(5/2,4,3) và loại ngộ nhận cộng tọa độ — **1 điểm**.
+- Kết luận đúng độ dài \(AB=5\) — **1 điểm**.
+- Tính trung điểm \(I=\left(\frac52;4;3\right)\) và loại ngộ nhận cộng tọa độ — **1 điểm**.
 
 </details>
 
@@ -2289,7 +2289,7 @@ AB=B−A=(3,4,0). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung đi�
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** Độ dời \((6;-8;6)\) m, độ dài \(\sqrt{136}=2\sqrt{34}\) m, tốc độ \(\frac{\sqrt{34}}2\) m/s.
-- **Lời giải/suy luận:** 4 s>0; nếu đường đi cong hoặc vòng lại thì độ dài độ dời nhỏ hơn hoặc bằng quãng đường thực.
+- **Lời giải/suy luận:** 4 s là khoảng thời gian dương; nếu đường đi cong hoặc vòng lại thì độ dài độ dời nhỏ hơn hoặc bằng quãng đường thực.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm độ dời; 1 điểm độ dài; 1 điểm tốc độ; 1 điểm điều kiện đường thẳng.
 
@@ -2300,7 +2300,7 @@ AB=B−A=(3,4,0). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung đi�
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-M=(2,−1,4)+2(1,2,−1)=(4,3,2) km.
+\(M=(2;-1;4)+2(1;2;-1)=(4;3;2)\) km.
 
 **D6:** Nếu thấy độ cao âm mà vật không được dưới mặt đất, kiểm mốc t hoặc chiều dương và giới hạn vật lí.
 
