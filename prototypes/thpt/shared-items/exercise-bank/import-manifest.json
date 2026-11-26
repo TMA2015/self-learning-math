@@ -20098,6 +20098,69 @@
       ],
       "remaining": "G10 ChV next; separately FirstTry/public selfcheck/Written and other source-owner/depth/semantic checks before conversion.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp95": {
+      "scope": "SGK shared formative G10 ChV B12–B14, 25 canonical C/P records (6 MCQ, 19 other including B12-P07 calculator candidate); FirstTry 15/public selfcheck/Written excluded",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "980818e7942ad75aca3600bbc9d00d03ecca288d",
+      "source_projection": {
+        "paths": [
+          "docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js",
+          "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js"
+        ],
+        "current_main_and_import_blobs": [
+          "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+          "ddd5ec947029f644865110f2f381047214499e3e"
+        ],
+        "ids_and_order": 25,
+        "decision": "Preserve CP52 strengthened variants and B12-P07 author-verified answer, retain pending PED/integration status; do not rollback historical projections."
+      },
+      "item_shard": {
+        "path": "items/g10-chv.json",
+        "before": "3f81c5e8d8a63d14a5ebafb0c44ef932cba097e9",
+        "after": "ba0bd389555358df33d1cab6c3fd79f781bb2928",
+        "commits": [
+          "299859f21b6a6e9317ba3ef9461e6e9ff4fc95a3",
+          "d3df5a6c90c3eaca421e6d83b6f825c4e73c1d43"
+        ]
+      },
+      "checks": {
+        "formative_reviewed": 25,
+        "formative_changed": 25,
+        "fields_changed": {
+          "stem": 9,
+          "answer_key": 12,
+          "worked_solution": 25,
+          "options": 6,
+          "hints": 10,
+          "remediation": 13
+        },
+        "first_try_unchanged": 15,
+        "sgk_placement_blob": "240d485678b3182add1fb3acd7035e6fc9994e08",
+        "topic_placement_blob": "004b2840f79040e738f4f31f8c11014d6faa9ed2",
+        "sgk_placements_for_reviewed_ids": 25,
+        "topic_placements_for_reviewed_ids": 27,
+        "metadata_and_interaction_unchanged": true,
+        "mcq_correct_options_unchanged": [
+          "B",
+          "C",
+          "B",
+          "C",
+          "B",
+          "C"
+        ],
+        "answer_meanings_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "arithmetic_checks_passed": 25,
+        "targeted_raw_math_scan_residual": 0,
+        "mcq_options_reviewed": 24
+      },
+      "findings": [
+        "B12 clarify actual error vs upper bound, relative-error denominator |a| and a nonzero, closed interval and rounding carry; B12-P07 exact cube bounds checked, retain existing candidate/PED status. B13 mean with frequency, median even/odd, multiple modes, quartiles KNTT, outlier effect. B14 population-style descriptive variance /n, units, strict outlier fences and no automatic deletion. Existing B12/B14 learner sources checked for conventions. Preserve MCQ answer values (rather than letters in bank SELF_COMPARE); no auto-grade conversion. 25 manual and numerical checks, no fresh original SGK/SBT PDF or full Academic/PED/browser verdict."
+      ],
+      "remaining": "G10 ChVI next; B12-P07 independent PED/integration pending; separately FirstTry/public selfcheck/Written and source-owner/depth checks.",
+      "release_authorization": false
     }
   }
 }
