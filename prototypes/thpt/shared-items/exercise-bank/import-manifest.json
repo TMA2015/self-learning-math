@@ -19165,6 +19165,104 @@
       },
       "remaining": "CD16–22 expanded visible-field review; revisit CD01–12, FirstTry, shared SGK, Written/Anchor, missing skills, full semantic/notation/depth check before conversion and RELEASE handoff.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp83": {
+      "scope": "CD16–17 scoped Practice/Replay reconciliation and X-G.5 review all five learner-facing fields of 33 local SELF_COMPARE records; preliminary exact source/placement check CD18 only",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "544919f4ebb86cb17dd45f86b36c48e3ba2dc20a",
+      "item_commits": [
+        "52f0d168a22bc001b4f67865aea9eca1193271f0",
+        "5f06dddd3761c567af12918e8daeb83e69f9b440"
+      ],
+      "topics": [
+        {
+          "topic": "CD16",
+          "practice": 65,
+          "replay": 8,
+          "local_records_reviewed": 21,
+          "local_records_changed": 19,
+          "shared_formative": 33,
+          "written": 11,
+          "learner_commit": "4607740d76e635a7a76dffda013ae788bdc3ff46",
+          "learner_blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
+          "placement_blob": "ae47d490936283210a6be104e43d35432d3469cb",
+          "before": "28b2dffdd2453b3832e3b270f4981e9ad64c40a5",
+          "after": "aaee09312f8b6383e3015cfc475a7949a5ada816",
+          "fields_changed": {
+            "stem": 15,
+            "answer_key": 14,
+            "worked_solution": 19,
+            "hints": 5,
+            "remediation": 5
+          }
+        },
+        {
+          "topic": "CD17",
+          "practice": 37,
+          "replay": 8,
+          "local_records_reviewed": 12,
+          "local_records_changed": 12,
+          "shared_formative": 18,
+          "written": 7,
+          "learner_commit": "5acb11da0c0f30c32088b0a5d6be795fa16a9268",
+          "learner_blob": "03b6b27adbeaf854d3db1d8fc9e830a0294a08aa",
+          "placement_blob": "807a03542ef6d2f3e207975a14696c75f200b015",
+          "before": "a5dbe030eccf158b2f292429dcb0cefdb92cfc4a",
+          "after": "04121b489b35665741971b14943c0de5bb6c5813",
+          "fields_changed": {
+            "stem": 7,
+            "answer_key": 8,
+            "worked_solution": 12,
+            "hints": 2,
+            "remediation": 4
+          }
+        }
+      ],
+      "checks": {
+        "practice": 102,
+        "replay": 16,
+        "current_learner_replay_stem_options_match": 16,
+        "placement_order_match": 118,
+        "local_records_reviewed": 33,
+        "local_records_changed": 31,
+        "metadata_unchanged": true,
+        "local_self_compare_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "targeted_raw_math_scan_residual": 0,
+        "shared_formative_placements_unchanged": 51,
+        "written_placements_unchanged": 18,
+        "options_or_rubric_present_in_local_records": 0
+      },
+      "preliminary_cd18": {
+        "learner_commit": "a1adb856defdb0005ec0362ab1779ee2eaac2047",
+        "learner_blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+        "placement_blob": "6599f83a8217dca8f772457f8eb208f8e9bbb851",
+        "item_blob": "9672eb0b296e6ceb87653ba140e3f9572e17e23d",
+        "practice": 207,
+        "replay": 12,
+        "placement_order_match": 219,
+        "source_replay_stem_match": 12,
+        "local_records": 40,
+        "local_records_changed": 0,
+        "completion": false
+      },
+      "findings": [
+        "CD16 preserve strengthened CP61 angle/line-plane/dihedral/projection tasks. P03 counterexample explicitly specifies rectangular box; P21 clarify actual ratio 2:1 then square, not unexplained 16:4. P18/P19 prose-only unchanged after review.",
+        "CD17 retain unique closest-point proof, oblique prism, common perpendicular, frustum independent verification and practical capacity. Explicit Pythagorean equations P01/P02, SI unit exponents and Vietnamese decimal separator. All 12 local solutions revised.",
+        "All 63 prior mapping changes from CP61 retained; current learner replay equality does not mean parity with all improved bank variants. CP61 Written missing pointers, nondegenerate hypotheses, rubric gaps and cross-grade findings pending.",
+        "CD18 source/placement checked preliminarily; 40 local records not yet normalized, do not count as completed topic. No fresh S1 PDF or complete source semantic/notation/browser/Academic/PED PASS."
+      ],
+      "progress": {
+        "topics_with_scoped_practice_replay_review": 17,
+        "total_topics": 22,
+        "practice_reviewed": 1085,
+        "total_practice": 1479,
+        "replay_reviewed": 291,
+        "total_replay": 338
+      },
+      "remaining": "CD18–22 local visible-field review, return CD01–12 residual fields, FirstTry, shared SGK, canonical Written/Anchor, missing skill tags and full academic/notation audit before conversion and RELEASE.",
+      "release_authorization": false
     }
   }
 }
