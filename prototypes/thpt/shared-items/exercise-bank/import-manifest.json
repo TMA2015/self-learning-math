@@ -19535,6 +19535,85 @@
       },
       "remaining": "Revisit CD01–12 residual learner-visible fields; audit shared SGK including source-owner corrections, FirstTry 414 previously reconciled not full notation audit, Written/Anchor canonical source and depth/skill gaps; global semantic and X-G.5 closure before interaction conversion, handoff or cutover. No full Academic/PED/browser PASS.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp87": {
+      "scope": "CD01–03 residual local learner-visible fields after CP77; read all five fields, targeted X-G.5 and reasoning corrections, preserve CP77 stems/keys and strengthened variants; read-only triage CD04–12",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "bfe23c8e5f052894bd201a69b0daa0aa1352f827",
+      "topics": [
+        {
+          "topic": "CD01",
+          "item_before": "188f8cec5c9fa28d810453d0c93bf8001d6af2b4",
+          "item_after": "5b437473d3a63fa6cc29c6e28c2a97b22333be0d",
+          "item_commit": "d9bbdc97b17314c67b1f9e28a66bde9c335154fa",
+          "placement_blob": "e67d438b3775e5193e21a8c76e671a6e2f5ba552",
+          "local_records_reviewed": 6,
+          "local_records_changed": 4,
+          "fields_changed": {
+            "hints": 1,
+            "remediation": 2,
+            "worked_solution": 3
+          },
+          "other_fields_unchanged": true,
+          "placement_unchanged": true,
+          "targeted_raw_math_scan_residual": 0,
+          "inline_and_display_delimiters_balanced": true,
+          "options_or_rubrics_present": 0
+        },
+        {
+          "topic": "CD02",
+          "item_before": "375d6bd340fda74757d09974bc866031e24c230a",
+          "item_after": "57f00380c656270e2c26a78d6a5379fa8baf29f1",
+          "item_commit": "d49d31c72b72e0fb59913d78f96d4c62e02547f8",
+          "placement_blob": "fc8f70d93e2ee517e2ec135a991cc86803c27c7d",
+          "local_records_reviewed": 18,
+          "local_records_changed": 18,
+          "fields_changed": {
+            "hints": 7,
+            "remediation": 17,
+            "worked_solution": 2
+          },
+          "other_fields_unchanged": true,
+          "placement_unchanged": true,
+          "targeted_raw_math_scan_residual": 0,
+          "inline_and_display_delimiters_balanced": true,
+          "options_or_rubrics_present": 0
+        },
+        {
+          "topic": "CD03",
+          "item_before": "d48379a5ef43dddf6f738c8b393daf2f4e7a1751",
+          "item_after": "2ecb25e3019e29850cd90c22a2d07a94f8b16ce8",
+          "item_commit": "320802731b8d6cf8bda8244641e48ebe221c2c66",
+          "placement_blob": "5f82e5209ad573fdef25357bc7fc65948500e770",
+          "local_records_reviewed": 21,
+          "local_records_changed": 20,
+          "fields_changed": {
+            "hints": 12,
+            "remediation": 20,
+            "worked_solution": 3
+          },
+          "other_fields_unchanged": true,
+          "placement_unchanged": true,
+          "targeted_raw_math_scan_residual": 0,
+          "inline_and_display_delimiters_balanced": true,
+          "options_or_rubrics_present": 0
+        }
+      ],
+      "findings": [
+        "CD01 ADD01 distinguish existential witness vs universal counterexample; ADD02 explicitly declare integer k and both implications; ADD04–05 remove redundant duplicate answers. CD02 ADD04 explicitly state one distinct double root; ADD18 justify vertex optimization by linear objective and prove integer bound. CD03 ADD01 division only needs nonzero divisor, ADD07 distinguish reduced discriminant denominator, ADD12 explicit impossible branch and valid branch, ADD09 restricted rational simplification. Read all 45 local records; no changed numeric keys.",
+        "Read-only raw notation triage CD04–12: 210 local records, 123 flagged by targeted regex (not exhaustive semantic audit). Counts CD04 17/22, CD05 16/34, CD06 9/16, CD07 10/18, CD08 9/18, CD09 15/32, CD10 27/36, CD11 14/22, CD12 6/12. CD09–11 also have residual stem/key/solution fields. Prior 22/22 Practice/Replay placement reconciliation unaffected."
+      ],
+      "progress": {
+        "topics_scoped_practice_replay_review": 22,
+        "practice": 1479,
+        "replay": 338,
+        "residual_local_fields_revisited_cd01_cd03": 45,
+        "remaining_cd04_cd12_local_records": 210,
+        "remaining_cd04_cd12_targeted_raw_flags": 123
+      },
+      "remaining": "CD04–12 semantic/notation residual review; shared SGK and source-owner deltas, FirstTry 414 prior reconciliation only, Written/Anchor, skill/depth gaps. No full Academic/PED/browser PASS, fresh primary PDF, interaction conversion, cutover or release.",
+      "release_authorization": false
     }
   }
 }
