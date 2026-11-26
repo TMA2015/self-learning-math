@@ -11419,7 +11419,7 @@ Nếu em chỉ thử vài giá trị rồi kết luận cho *mọi* số nguyên
 <p>Hãy phủ định hai phát biểu “<span class="arithmatex">\(t\ge5\)</span>” và “<span class="arithmatex">\(t&lt;-1\)</span>”, với <span class="arithmatex">\(t\in\mathbb R\)</span>.</p>
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Hai phủ định lần lượt là \(t<5\) và \(t\ge-1\). Nếu em viết \(t\le5\), hãy thử ngay \(t=5\): cả phát biểu gốc và câu mới đều đúng, nên đó không thể là phép phủ định.
+Hai phủ định lần lượt là \(t&lt;5\) và \(t\ge-1\). Nếu em viết \(t\le5\), hãy thử ngay \(t=5\): cả phát biểu gốc và câu mới đều đúng, nên đó không thể là phép phủ định.
 
 **Kiểm lỗi**
 
@@ -11439,6 +11439,7 @@ Nếu em viết phủ định của “t lớn hơn hoặc bằng 5” thành �
 <p>Nhưng một kết luận đúng theo chiều thuận chưa cho phép đọc ngược. Số 3 chia hết cho 3 mà không chia hết cho 6, nên câu đảo <span class="arithmatex">\(Q\Rightarrow P\)</span> sai. Một phản ví dụ đủ bác bỏ một mệnh đề kéo theo nếu tiền đề đúng mà kết luận sai. Về logic hình thức, <span class="arithmatex">\(P\Rightarrow Q\)</span> chỉ sai khi <span class="arithmatex">\(P\)</span> đúng và <span class="arithmatex">\(Q\)</span> sai; quy tắc này không có nghĩa mọi câu “nếu...thì...” là một quan hệ nguyên nhân trong đời sống.</p>
 <p><img alt="Bội của 6 nằm trong tập bội của 3" src="../../../../assets/visuals/THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg" /></p>
 <p><em>Quan sát hình:</em> Hình giúp đọc chiều suy luận: mọi bội của 6 là bội của 3, nhưng vùng chỉ thuộc bội của 3 không cho phép suy ngược.</p>
+<p>Ký hiệu <span class="arithmatex">\(a\mid n\)</span> đọc là “<span class="arithmatex">\(a\)</span> là ước của <span class="arithmatex">\(n\)</span>” hay “<span class="arithmatex">\(n\)</span> chia hết cho <span class="arithmatex">\(a\)</span>” (với <span class="arithmatex">\(a\)</span> là số nguyên khác 0). Chẳng hạn, <span class="arithmatex">\(10\mid n\)</span> nghĩa là <span class="arithmatex">\(n=10k\)</span> với một số nguyên <span class="arithmatex">\(k\)</span>, không phải 10 chia hết cho <span class="arithmatex">\(n\)</span>.</p>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài.</strong> Với <span class="arithmatex">\(n\in\mathbb Z\)</span>, chứng minh <span class="arithmatex">\(10\mid n\Rightarrow5\mid n\)</span> và kiểm chiều đảo.</p>
 <p><strong>Lời giải.</strong> Viết <span class="arithmatex">\(n=10k=5(2k)\)</span> với <span class="arithmatex">\(k\in\mathbb Z\)</span>, nên chiều thuận đúng. Chiều đảo sai tại <span class="arithmatex">\(n=5\)</span>. Ta dùng phép phân tích bội để chứng minh và một phản ví dụ đúng miền để bác bỏ chiều đảo.</p>
@@ -11517,24 +11518,24 @@ Nếu em chỉ kiểm vài số rồi cho rằng đã chứng minh mệnh đề 
 <p><span class="arithmatex">\(x\in A\)</span> nói phần tử x thuộc A; <span class="arithmatex">\(A\subseteq B\)</span> khi mọi phần tử A đều thuộc B. Hai tập hợp bằng nhau khi chứa đúng cùng phần tử, có thể chứng minh hai chiều bao hàm. <span class="arithmatex">\(\varnothing\subseteq A\)</span> với mọi A.</p>
 </blockquote>
 <p><strong>Từ tên nhóm đến cách viết tập hợp.</strong> Một tập hợp có thể được mô tả bằng cách <strong>liệt kê</strong> các phần tử (chẳng hạn <span class="arithmatex">\(E=\{0;2;4;6\}\)</span>) hoặc <strong>nêu tính chất đặc trưng</strong> (<span class="arithmatex">\(E=\{x\in\mathbb N\mid x&lt;8,\ x\text{ chẵn}\}\)</span>); hai cách này cho cùng một tập. Khi liệt kê, mỗi phần tử chỉ tính một lần, không phụ thuộc thứ tự viết; <span class="arithmatex">\(\varnothing\)</span> là tập không có phần tử. Trước khi viết tập bằng tính chất, hãy xác định rõ miền của <span class="arithmatex">\(x\)</span>.</p>
-<p><strong>Các tập hợp số thường dùng.</strong> Trước hết, <span class="arithmatex">\(\mathbb N=\{0;1;2;\ldots\}\)</span> là tập số tự nhiên, còn <span class="arithmatex">\(\mathbb Z=\{\ldots;-2;-1;0;1;2;\ldots\}\)</span> là tập số nguyên. Mọi số nguyên <span class="arithmatex">\(a\)</span> đều viết được thành phân số <span class="arithmatex">\(a/1\)</span>. Vì vậy các số nguyên thuộc tập <strong>số hữu tỉ</strong> <span class="arithmatex">\(\mathbb Q=\{a/b\mid a,b\in\mathbb Z,\ b\ne0\}\)</span>; số thập phân hữu hạn và vô hạn tuần hoàn đều là số hữu tỉ. Ngược lại, các số thập phân vô hạn <strong>không tuần hoàn</strong> như <span class="arithmatex">\(\sqrt2\)</span> là <strong>số vô tỉ</strong>, không thuộc <span class="arithmatex">\(\mathbb Q\)</span>. Tập số thực <span class="arithmatex">\(\mathbb R\)</span> gồm tất cả số hữu tỉ và vô tỉ, nên có chuỗi bao hàm</p>
+<p><strong>Các tập hợp số thường dùng.</strong> Trước hết, <span class="arithmatex">\(\mathbb N=\{0;1;2;\ldots\}\)</span> là tập số tự nhiên, còn <span class="arithmatex">\(\mathbb Z=\{\ldots;-2;-1;0;1;2;\ldots\}\)</span> là tập số nguyên. Mọi số nguyên <span class="arithmatex">\(a\)</span> đều viết được thành phân số <span class="arithmatex">\(\frac a1\)</span>. Vì vậy các số nguyên thuộc tập <strong>số hữu tỉ</strong> <span class="arithmatex">\(\mathbb Q=\{\frac ab\mid a,b\in\mathbb Z,\ b\ne0\}\)</span>; số thập phân hữu hạn và vô hạn tuần hoàn đều là số hữu tỉ. Ngược lại, các số thập phân vô hạn <strong>không tuần hoàn</strong> như <span class="arithmatex">\(\sqrt2\)</span> là <strong>số vô tỉ</strong>, không thuộc <span class="arithmatex">\(\mathbb Q\)</span>. Tập số thực <span class="arithmatex">\(\mathbb R\)</span> gồm tất cả số hữu tỉ và vô tỉ, nên có chuỗi bao hàm</p>
 <div class="arithmatex">\[
 \boxed{\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R.}
 \]</div>
-<p>Đọc chuỗi này từ trái sang phải: một số tự nhiên chắc chắn là số nguyên, hữu tỉ và thực, nhưng chiều ngược không đúng. Ví dụ, <span class="arithmatex">\(-2\in\mathbb Z\)</span> song <span class="arithmatex">\(-2\notin\mathbb N\)</span>; <span class="arithmatex">\(3/4\in\mathbb Q\)</span> song <span class="arithmatex">\(3/4\notin\mathbb Z\)</span>; <span class="arithmatex">\(\sqrt2\in\mathbb R\)</span> song <span class="arithmatex">\(\sqrt2\notin\mathbb Q\)</span>. Đây là lý do phải <strong>chọn đúng tập số</strong> trước khi xét một điều kiện. Với <span class="arithmatex">\(x^2=2\)</span>, tập nghiệm trong <span class="arithmatex">\(\mathbb Q\)</span> là <span class="arithmatex">\(\varnothing\)</span>, còn trong <span class="arithmatex">\(\mathbb R\)</span> là <span class="arithmatex">\(\{-\sqrt2;\sqrt2\}\)</span>.</p>
-<p>Xét <span class="arithmatex">\(A=\{1,2\}\)</span> và <span class="arithmatex">\(B=\{x\in\mathbb N:1\le x\le2\}\)</span>. Hai cách mô tả cho đúng cùng các phần tử nên <span class="arithmatex">\(A=B\)</span>; để chứng minh hai tập bằng nhau, ta có thể chứng minh mỗi tập là tập con của tập kia. Trong <span class="arithmatex">\(A\)</span>, số 2 là một <strong>phần tử</strong>, ký hiệu <span class="arithmatex">\(2\in A\)</span>, còn <span class="arithmatex">\(\{2\}\)</span> là một <strong>tập con</strong>, ký hiệu <span class="arithmatex">\(\{2\}\subseteq A\)</span>. Số 2 không đồng nhất với tập chỉ chứa số 2. Tập rỗng <span class="arithmatex">\(\varnothing\)</span> không có phần tử nhưng vẫn là tập con của mọi tập.</p>
+<p>Đọc chuỗi này từ trái sang phải: một số tự nhiên chắc chắn là số nguyên, hữu tỉ và thực, nhưng chiều ngược không đúng. Ví dụ, <span class="arithmatex">\(-2\in\mathbb Z\)</span> song <span class="arithmatex">\(-2\notin\mathbb N\)</span>; <span class="arithmatex">\(\frac34\in\mathbb Q\)</span> song <span class="arithmatex">\(\frac34\notin\mathbb Z\)</span>; <span class="arithmatex">\(\sqrt2\in\mathbb R\)</span> song <span class="arithmatex">\(\sqrt2\notin\mathbb Q\)</span>. Đây là lý do phải <strong>chọn đúng tập số</strong> trước khi xét một điều kiện. Với <span class="arithmatex">\(x^2=2\)</span>, tập nghiệm trong <span class="arithmatex">\(\mathbb Q\)</span> là <span class="arithmatex">\(\varnothing\)</span>, còn trong <span class="arithmatex">\(\mathbb R\)</span> là <span class="arithmatex">\(\{-\sqrt2;\sqrt2\}\)</span>.</p>
+<p>Xét <span class="arithmatex">\(A=\{1;2\}\)</span> và <span class="arithmatex">\(B=\{x\in\mathbb N:1\le x\le2\}\)</span>. Hai cách mô tả cho đúng cùng các phần tử nên <span class="arithmatex">\(A=B\)</span>; để chứng minh hai tập bằng nhau, ta có thể chứng minh mỗi tập là tập con của tập kia. Trong <span class="arithmatex">\(A\)</span>, số 2 là một <strong>phần tử</strong>, ký hiệu <span class="arithmatex">\(2\in A\)</span>, còn <span class="arithmatex">\(\{2\}\)</span> là một <strong>tập con</strong>, ký hiệu <span class="arithmatex">\(\{2\}\subseteq A\)</span>. Số 2 không đồng nhất với tập chỉ chứa số 2. Tập rỗng <span class="arithmatex">\(\varnothing\)</span> không có phần tử nhưng vẫn là tập con của mọi tập.</p>
 <p><strong>Ví dụ</strong></p>
-<p><strong>Đề bài.</strong> Cho <span class="arithmatex">\(A=\{1,3\}\)</span>, <span class="arithmatex">\(B=\{1,2,3\}\)</span>. Xét <span class="arithmatex">\(1\in A\)</span>, <span class="arithmatex">\(\{1\}\subseteq A\)</span>, <span class="arithmatex">\(A\subseteq B\)</span>, <span class="arithmatex">\(B\subseteq A\)</span>.</p>
+<p><strong>Đề bài.</strong> Cho <span class="arithmatex">\(A=\{1;3\}\)</span>, <span class="arithmatex">\(B=\{1;2;3\}\)</span>. Xét <span class="arithmatex">\(1\in A\)</span>, <span class="arithmatex">\(\{1\}\subseteq A\)</span>, <span class="arithmatex">\(A\subseteq B\)</span>, <span class="arithmatex">\(B\subseteq A\)</span>.</p>
 <p><strong>Lời giải.</strong> Ba phát biểu đầu đúng. Phát biểu cuối sai vì <span class="arithmatex">\(2\in B\)</span> nhưng <span class="arithmatex">\(2\notin A\)</span>. Ta phân biệt phần tử và tập con, rồi kiểm từng phần tử của tập đứng trước.</p>
 <p><strong>Vận dụng</strong></p>
-<p>Với <span class="arithmatex">\(A=\{2,4\}\)</span>, hãy phân biệt đúng sai cho ba phát biểu: <span class="arithmatex">\(2\in A\)</span>, <span class="arithmatex">\(\{2\}\subseteq A\)</span>, <span class="arithmatex">\(\{2\}\in A\)</span>.</p>
+<p>Với <span class="arithmatex">\(A=\{2;4\}\)</span>, hãy phân biệt đúng sai cho ba phát biểu: <span class="arithmatex">\(2\in A\)</span>, <span class="arithmatex">\(\{2\}\subseteq A\)</span>, <span class="arithmatex">\(\{2\}\in A\)</span>.</p>
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Hai phát biểu đầu đúng, phát biểu cuối sai: các phần tử của \(A\) là **số** 2 và 4, không phải **tập** \(\{2\}\). Nếu em còn lẫn, xác định đối tượng bên trái ký hiệu là một phần tử hay một tập hợp trước khi so.
 
 **Kiểm lỗi**
 
-Nếu em cho rằng tập {2} là một phần tử của A trong khi A chỉ chứa các số, em đã nhầm **phần tử** với **tập con**. Quay lại **Kiến thức 2.1**, rồi làm **Bài 12** và **Bài 13** trong Luyện tập; luôn xác định loại đối tượng ở hai vế trước khi dùng ký hiệu.
+Nếu em cho rằng tập \(\{2\}\) là một phần tử của A trong khi A chỉ chứa các số, em đã nhầm **phần tử** với **tập con**. Quay lại **Kiến thức 2.1**, rồi làm **Bài 12** và **Bài 13** trong Luyện tập; luôn xác định loại đối tượng ở hai vế trước khi dùng ký hiệu.
 
 </details>
 
@@ -11547,15 +11548,15 @@ Nếu em cho rằng tập {2} là một phần tử của A trong khi A chỉ ch
 <p><strong>ĐỊNH NGHĨA</strong></p>
 <p><span class="arithmatex">\(A\cap B\)</span> là tập các phần tử thuộc <strong>cả</strong> A và B; <span class="arithmatex">\(A\cup B\)</span> là tập thuộc <strong>ít nhất một</strong> trong hai. Hợp không loại bỏ phần giao, chỉ bỏ việc đếm lặp.</p>
 </blockquote>
-<p>Với <span class="arithmatex">\(A=\{1,2,3,4\}\)</span> và <span class="arithmatex">\(B=\{3,4,5\}\)</span>, các phần tử chung là 3,4 nên <span class="arithmatex">\(A\cap B=\{3,4\}\)</span>. Gom mọi phần tử xuất hiện trong ít nhất một tập và xóa lặp, ta được <span class="arithmatex">\(A\cup B=\{1,2,3,4,5\}\)</span>. Không có lý do bỏ 3 và 4 khỏi hợp chỉ vì chúng cùng ở hai tập. Trên biểu đồ Ven, vùng chung nằm trong cả hình của giao lẫn hợp.</p>
+<p>Với <span class="arithmatex">\(A=\{1;2;3;4\}\)</span> và <span class="arithmatex">\(B=\{3;4;5\}\)</span>, các phần tử chung là 3,4 nên <span class="arithmatex">\(A\cap B=\{3;4\}\)</span>. Gom mọi phần tử xuất hiện trong ít nhất một tập và xóa lặp, ta được <span class="arithmatex">\(A\cup B=\{1;2;3;4;5\}\)</span>. Không có lý do bỏ 3 và 4 khỏi hợp chỉ vì chúng cùng ở hai tập. Trên biểu đồ Ven, vùng chung nằm trong cả hình của giao lẫn hợp.</p>
 <p><strong>Ví dụ</strong></p>
-<p><strong>Đề bài.</strong> Với <span class="arithmatex">\(A=\{1,2,4\}\)</span>, <span class="arithmatex">\(B=\{2,3,4\}\)</span>, tìm giao và hợp.</p>
-<p><strong>Lời giải.</strong> Phần chung là 2 và 4, nên <span class="arithmatex">\(A\cap B=\{2,4\}\)</span>. Hợp gồm 1,2,3,4, mỗi phần tử một lần: <span class="arithmatex">\(A\cup B=\{1,2,3,4\}\)</span>. Phần chung vẫn thuộc hợp.</p>
+<p><strong>Đề bài.</strong> Với <span class="arithmatex">\(A=\{1;2;4\}\)</span>, <span class="arithmatex">\(B=\{2;3;4\}\)</span>, tìm giao và hợp.</p>
+<p><strong>Lời giải.</strong> Phần chung là 2 và 4, nên <span class="arithmatex">\(A\cap B=\{2;4\}\)</span>. Hợp gồm 1,2,3,4, mỗi phần tử một lần: <span class="arithmatex">\(A\cup B=\{1;2;3;4\}\)</span>. Phần chung vẫn thuộc hợp.</p>
 <p><strong>Vận dụng</strong></p>
-<p>Cho <span class="arithmatex">\(A=\{-1,0,1,2\}\)</span> và <span class="arithmatex">\(B=\{0,2,4\}\)</span>. Tìm <span class="arithmatex">\(A\cap B\)</span> và <span class="arithmatex">\(A\cup B\)</span>.</p>
+<p>Cho <span class="arithmatex">\(A=\{-1;0;1;2\}\)</span> và <span class="arithmatex">\(B=\{0;2;4\}\)</span>. Tìm <span class="arithmatex">\(A\cap B\)</span> và <span class="arithmatex">\(A\cup B\)</span>.</p>
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(A\cap B=\{0,2\}\), còn \(A\cup B=\{-1,0,1,2,4\}\). Nếu em muốn đếm vùng Ven, hãy đưa 0 và 2 vào phần chung nhưng khi tính tổng mỗi phần tử chỉ xuất hiện một lần.
+\(A\cap B=\{0;2\}\), còn \(A\cup B=\{-1;0;1;2;4\}\). Nếu em muốn đếm vùng Ven, hãy đưa 0 và 2 vào phần chung nhưng khi tính tổng mỗi phần tử chỉ xuất hiện một lần.
 
 **Kiểm lỗi**
 
@@ -11570,14 +11571,14 @@ Nếu em bỏ các phần tử chung ra khỏi hợp, em đã hiểu nhầm “h
 <p>Đôi khi bài toán không hỏi ai có mặt trong ít nhất một nhóm, mà hỏi ai chỉ ở một nhóm. Một danh sách có thể lọc những người thuộc nhóm A nhưng <strong>không</strong> thuộc nhóm B. Đó là phép <strong>hiệu</strong> <span class="arithmatex">\(A\setminus B\)</span>. Nếu đổi lại thành “thuộc B nhưng không thuộc A”, kết quả là <span class="arithmatex">\(B\setminus A\)</span>, thường khác hẳn. Cách viết định nghĩa là <span class="arithmatex">\(A\setminus B=\{x\in A:x\notin B\}\)</span>: ta <strong>giữ</strong> tập đứng trước dấu trừ và loại những phần tử cũng có trong tập đứng sau.</p>
 <blockquote>
 <p><strong>ĐỊNH NGHĨA</strong></p>
-<p>[A\setminus B={x\in A:x\notin B}.] Hiệu giữ tập đứng trước và loại phần chung; thông thường <span class="arithmatex">\(A\setminus B\ne B\setminus A\)</span>.</p>
+<p><span class="arithmatex">\(A\setminus B=\{x\in A:x\notin B\}\)</span>. Hiệu giữ tập đứng trước và loại phần chung; thông thường <span class="arithmatex">\(A\setminus B\ne B\setminus A\)</span>.</p>
 </blockquote>
-<p>Với <span class="arithmatex">\(A=\{1,2,3,4\}\)</span>, <span class="arithmatex">\(B=\{3,4,5\}\)</span>, giữ A rồi bỏ phần chung 3,4 cho <span class="arithmatex">\(A\setminus B=\{1,2\}\)</span>; đổi chiều lại cho <span class="arithmatex">\(B\setminus A=\{5\}\)</span>. Như vậy hiệu không có tính giao hoán. Trên biểu đồ Ven, <span class="arithmatex">\(A\setminus B\)</span> chính là miền chỉ thuộc A, còn miền giao không thuộc hiệu của hai tập theo bất cứ chiều nào.</p>
+<p>Với <span class="arithmatex">\(A=\{1;2;3;4\}\)</span>, <span class="arithmatex">\(B=\{3;4;5\}\)</span>, giữ A rồi bỏ phần chung 3,4 cho <span class="arithmatex">\(A\setminus B=\{1;2\}\)</span>; đổi chiều lại cho <span class="arithmatex">\(B\setminus A=\{5\}\)</span>. Như vậy hiệu không có tính giao hoán. Trên biểu đồ Ven, <span class="arithmatex">\(A\setminus B\)</span> chính là miền chỉ thuộc A, còn miền giao không thuộc hiệu của hai tập theo bất cứ chiều nào.</p>
 <p><strong>Ví dụ</strong></p>
-<p><strong>Đề bài.</strong> Cho <span class="arithmatex">\(A=\{1,2,5\}\)</span>, <span class="arithmatex">\(B=\{2,3\}\)</span>. Tìm hai hiệu theo hai chiều.</p>
-<p><strong>Lời giải.</strong> Giữ phần tử chỉ thuộc A cho <span class="arithmatex">\(A\setminus B=\{1,5\}\)</span>; giữ phần tử chỉ thuộc B cho <span class="arithmatex">\(B\setminus A=\{3\}\)</span>. Phép hiệu không giao hoán nói chung.</p>
+<p><strong>Đề bài.</strong> Cho <span class="arithmatex">\(A=\{1;2;5\}\)</span>, <span class="arithmatex">\(B=\{2;3\}\)</span>. Tìm hai hiệu theo hai chiều.</p>
+<p><strong>Lời giải.</strong> Giữ phần tử chỉ thuộc A cho <span class="arithmatex">\(A\setminus B=\{1;5\}\)</span>; giữ phần tử chỉ thuộc B cho <span class="arithmatex">\(B\setminus A=\{3\}\)</span>. Phép hiệu không giao hoán nói chung.</p>
 <p><strong>Vận dụng</strong></p>
-<p><span class="arithmatex">\(A=\{1,3,5\}\)</span>, <span class="arithmatex">\(B=\{3,4,5\}\)</span>. Hãy tính hai hiệu theo hai chiều.</p>
+<p><span class="arithmatex">\(A=\{1;3;5\}\)</span>, <span class="arithmatex">\(B=\{3;4;5\}\)</span>. Hãy tính hai hiệu theo hai chiều.</p>
 <details markdown="1"><summary>Đối chiếu</summary>
 
 \(A\setminus B=\{1\}\), còn \(B\setminus A=\{4\}\). Nếu em đổi nhầm kết quả, hãy đọc lại tên tập **đứng trước dấu \(\setminus\)** và xác định phần tử được giữ.
@@ -11597,15 +11598,15 @@ Nếu em đổi hai hiệu cho nhau, em đã quên rằng phần tử được g
 <p><strong>ĐỊNH NGHĨA</strong></p>
 <p>Với vũ trụ <span class="arithmatex">\(U\)</span> đã xác định, phần bù của A trong U là <span class="arithmatex">\(U\setminus A\)</span>. Đổi U có thể làm đổi phần bù dù tập A giữ nguyên. Cần kiểm biên khi mô tả trên trục số.</p>
 </blockquote>
-<p>Chẳng hạn, <span class="arithmatex">\(U=\{1,2,3,4,5,6\}\)</span> và <span class="arithmatex">\(A=\{2,4,6\}\)</span>, phần bù là <span class="arithmatex">\(\{1,3,5\}\)</span>. Nếu mở rộng <span class="arithmatex">\(U\)</span> để thêm 0, phần bù cũng có thêm 0. Với các khoảng số thực, xác định vũ trụ cũng giúp ta quyết định đúng đầu mút nào nằm ở phần bù.</p>
+<p>Chẳng hạn, <span class="arithmatex">\(U=\{1;2;3;4;5;6\}\)</span> và <span class="arithmatex">\(A=\{2;4;6\}\)</span>, phần bù là <span class="arithmatex">\(\{1;3;5\}\)</span>. Nếu mở rộng <span class="arithmatex">\(U\)</span> để thêm 0, phần bù cũng có thêm 0. Với các khoảng số thực, xác định vũ trụ cũng giúp ta quyết định đúng đầu mút nào nằm ở phần bù.</p>
 <p><strong>Ví dụ</strong></p>
-<p><strong>Đề bài.</strong> Cho <span class="arithmatex">\(U=\{0,1,2,3,4\}\)</span>, <span class="arithmatex">\(A=\{0,2,4\}\)</span>. Tìm phần bù trong U.</p>
-<p><strong>Lời giải.</strong> Bỏ 0,2,4 khỏi U, còn <span class="arithmatex">\(U\setminus A=\{1,3\}\)</span>. Không được thêm số nằm ngoài U; phần bù luôn phụ thuộc vũ trụ đã xác định.</p>
+<p><strong>Đề bài.</strong> Cho <span class="arithmatex">\(U=\{0;1;2;3;4\}\)</span>, <span class="arithmatex">\(A=\{0;2;4\}\)</span>. Tìm phần bù trong U.</p>
+<p><strong>Lời giải.</strong> Bỏ 0,2,4 khỏi U, còn <span class="arithmatex">\(U\setminus A=\{1;3\}\)</span>. Không được thêm số nằm ngoài U; phần bù luôn phụ thuộc vũ trụ đã xác định.</p>
 <p><strong>Vận dụng</strong></p>
-<p>Trong <span class="arithmatex">\(U=\{1,2,3,4,5,6,7,8\}\)</span>, lấy <span class="arithmatex">\(A=\{2,3,5,7\}\)</span>. Tìm phần bù của A.</p>
+<p>Trong <span class="arithmatex">\(U=\{1;2;3;4;5;6;7;8\}\)</span>, lấy <span class="arithmatex">\(A=\{2;3;5;7\}\)</span>. Tìm phần bù của A.</p>
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(U\setminus A=\{1,4,6,8\}\). Nếu em chỉ viết “phần bù của A” mà không nêu U, hãy tự hỏi đang loại A khỏi **tập nào**.
+\(U\setminus A=\{1;4;6;8\}\). Nếu em chỉ viết “phần bù của A” mà không nêu U, hãy tự hỏi đang loại A khỏi **tập nào**.
 
 **Kiểm lỗi**
 
@@ -11620,20 +11621,64 @@ Nếu em đưa một số ngoài U vào phần bù, em chưa xác định đúng
 
 <h3 id="31-khoang-va-dau-ngoac">3.1. Khoảng và dấu ngoặc</h3>
 <p>Một đầu mút có thể thuộc hợp nhưng không thuộc giao của hai khoảng không?</p>
-<p>Một điều kiện như “giữa 1 và 3” cần nói rõ <strong>có lấy</strong> 1 hoặc 3 không. Trên trục số, điều này được thể hiện bằng ngoặc: <span class="arithmatex">\((a,b)\)</span> nghĩa <span class="arithmatex">\(a&lt;x&lt;b\)</span>, còn <span class="arithmatex">\([a,b]\)</span> nghĩa <span class="arithmatex">\(a\le x\le b\)</span>. Khoảng <span class="arithmatex">\((a,b]\)</span> bỏ <span class="arithmatex">\(a\)</span> nhưng nhận <span class="arithmatex">\(b\)</span>, còn <strong>nửa khoảng</strong> <span class="arithmatex">\([a,b)\)</span> nhận <span class="arithmatex">\(a\)</span> nhưng bỏ <span class="arithmatex">\(b\)</span>. Nếu <span class="arithmatex">\(a&lt;b\)</span>, <span class="arithmatex">\([a,+\infty)\)</span> gồm mọi <span class="arithmatex">\(x\ge a\)</span> và <span class="arithmatex">\((-\infty,b]\)</span> gồm mọi <span class="arithmatex">\(x\le b\)</span>; ngược lại, <span class="arithmatex">\((a,+\infty)\)</span> và <span class="arithmatex">\((-\infty,b)\)</span> bỏ đầu mút hữu hạn. Với vô cực, luôn dùng ngoặc tròn vì <span class="arithmatex">\(\pm\infty\)</span> không phải một số thực có thể lấy làm đầu mút.</p>
+<p>Một điều kiện như “giữa 1 và 3” cần nói rõ <strong>có lấy</strong> 1 hoặc 3 không. Trên trục số, điều này được thể hiện bằng ngoặc: <span class="arithmatex">\((a;b)\)</span> nghĩa <span class="arithmatex">\(a&lt;x&lt;b\)</span>, còn <span class="arithmatex">\([a;b]\)</span> nghĩa <span class="arithmatex">\(a\le x\le b\)</span>. Khoảng <span class="arithmatex">\((a;b]\)</span> bỏ <span class="arithmatex">\(a\)</span> nhưng nhận <span class="arithmatex">\(b\)</span>, còn <strong>nửa khoảng</strong> <span class="arithmatex">\([a;b)\)</span> nhận <span class="arithmatex">\(a\)</span> nhưng bỏ <span class="arithmatex">\(b\)</span>. Nếu <span class="arithmatex">\(a&lt;b\)</span>, <span class="arithmatex">\([a;+\infty)\)</span> gồm mọi <span class="arithmatex">\(x\ge a\)</span> và <span class="arithmatex">\((-\infty;b]\)</span> gồm mọi <span class="arithmatex">\(x\le b\)</span>; ngược lại, <span class="arithmatex">\((a;+\infty)\)</span> và <span class="arithmatex">\((-\infty;b)\)</span> bỏ đầu mút hữu hạn. Với vô cực, luôn dùng ngoặc tròn vì <span class="arithmatex">\(\pm\infty\)</span> không phải một số thực có thể lấy làm đầu mút.</p>
 <blockquote>
 <p><strong>ĐỊNH NGHĨA</strong></p>
-<p><span class="arithmatex">\((a,b)\)</span> không chứa hai đầu mút; <span class="arithmatex">\([a,b]\)</span> chứa cả hai; <span class="arithmatex">\((a,b]\)</span> chỉ chứa b. Vô cực luôn đi với ngoặc tròn và không là số thực có thể lấy làm đầu mút.</p>
+<p><span class="arithmatex">\((a;b)\)</span> không chứa hai đầu mút; <span class="arithmatex">\([a;b]\)</span> chứa cả hai; <span class="arithmatex">\((a;b]\)</span> chỉ chứa b. Vô cực luôn đi với ngoặc tròn và không là số thực có thể lấy làm đầu mút.</p>
 </blockquote>
-<p>Xét <span class="arithmatex">\(X=(-\infty,3]\)</span> và <span class="arithmatex">\(Y=(1,+\infty)\)</span>. Muốn thuộc <strong>giao</strong>, số phải vừa lớn hơn 1 vừa không vượt 3, nên <span class="arithmatex">\(X\cap Y=(1,3]\)</span>. Muốn thuộc <strong>hợp</strong>, số chỉ cần thỏa ít nhất một điều kiện: mọi số thực đều nằm ở X hoặc Y, vậy <span class="arithmatex">\(X\cup Y=\mathbb R\)</span>. Thử riêng <span class="arithmatex">\(x=1\)</span> và <span class="arithmatex">\(x=3\)</span> giúp ta kiểm dấu ngoặc ở biên.</p>
+<p>Khi biểu diễn khoảng trên trục số, ta đánh dấu các đầu mút hữu hạn bằng <strong>chấm đặc</strong> nếu nhận đầu mút và <strong>chấm rỗng</strong> nếu loại đầu mút. Tô phần trục số thỏa bất đẳng thức. Mũi tên biểu thị phần kéo dài về vô cực.</p>
+<table>
+<thead>
+<tr>
+<th>Ký hiệu</th>
+<th>Điều kiện</th>
+<th>Cách đánh dấu và tô trục số</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\((1;3)\)</span></td>
+<td><span class="arithmatex">\(1&lt;x&lt;3\)</span></td>
+<td>Rỗng tại 1 và 3; tô giữa</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([1;3]\)</span></td>
+<td><span class="arithmatex">\(1\le x\le3\)</span></td>
+<td>Đặc tại 1 và 3; tô giữa</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((1;3]\)</span></td>
+<td><span class="arithmatex">\(1&lt;x\le3\)</span></td>
+<td>Rỗng tại 1, đặc tại 3; tô giữa</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([1;3)\)</span></td>
+<td><span class="arithmatex">\(1\le x&lt;3\)</span></td>
+<td>Đặc tại 1, rỗng tại 3; tô giữa</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((-\infty;3]\)</span></td>
+<td><span class="arithmatex">\(x\le3\)</span></td>
+<td>Đặc tại 3; tô về trái</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((1;+\infty)\)</span></td>
+<td><span class="arithmatex">\(x&gt;1\)</span></td>
+<td>Rỗng tại 1; tô về phải</td>
+</tr>
+</tbody>
+</table>
+<p>Xét <span class="arithmatex">\(X=(-\infty;3]\)</span> và <span class="arithmatex">\(Y=(1;+\infty)\)</span>. Muốn thuộc <strong>giao</strong>, số phải vừa lớn hơn 1 vừa không vượt 3, nên <span class="arithmatex">\(X\cap Y=(1;3]\)</span>. Muốn thuộc <strong>hợp</strong>, số chỉ cần thỏa ít nhất một điều kiện: mọi số thực đều nằm ở X hoặc Y, vậy <span class="arithmatex">\(X\cup Y=\mathbb R\)</span>. Thử riêng <span class="arithmatex">\(x=1\)</span>: thuộc <span class="arithmatex">\(X\)</span> nhưng không thuộc <span class="arithmatex">\(Y\)</span>, nên bị loại khỏi giao. Thử <span class="arithmatex">\(x=3\)</span>: thuộc cả <span class="arithmatex">\(X\)</span> và <span class="arithmatex">\(Y\)</span>, nên được nhận trong giao. Trên trục số, phần tô chung nằm giữa 1 và 3, chấm rỗng ở 1 và chấm đặc ở 3; phần tô của ít nhất một tập phủ kín trục số.</p>
+<p><img alt="Giao và hợp hai khoảng, chấm rỗng tại 1 và chấm đặc tại 3 ở phần giao" src="../../../../assets/visuals/THPT_TOPIC01_INTERVAL_INTERSECTION_UNION.svg" /></p>
+<p><em>Đọc hình:</em> So hai hàng đầu theo đường dóng tại 1 và 3. Điểm 1 chỉ thuộc X, điểm 3 thuộc cả hai. Hàng giao nhận những điểm được tô ở cả hai hàng đầu; hàng hợp nhận các điểm được tô ít nhất một lần.</p>
 <p><strong>Ví dụ</strong></p>
-<p><strong>Đề bài.</strong> Cho <span class="arithmatex">\(X=(-2,1]\)</span>, <span class="arithmatex">\(Y=[1,4)\)</span>. Tìm giao và hợp.</p>
-<p><strong>Lời giải.</strong> Số 1 thuộc cả hai, nên <span class="arithmatex">\(X\cap Y=\{1\}\)</span>. Hai khoảng nối liền, hợp là <span class="arithmatex">\((-2,4)\)</span>, bỏ hai đầu mút mở -2 và 4. Phải thử các điểm biên trước khi kết luận.</p>
+<p><strong>Đề bài.</strong> Cho <span class="arithmatex">\(X=(-2;1]\)</span>, <span class="arithmatex">\(Y=[1;4)\)</span>. Tìm giao và hợp.</p>
+<p><strong>Lời giải.</strong> Số 1 thuộc cả hai, nên <span class="arithmatex">\(X\cap Y=\{1\}\)</span>. Hai khoảng nối liền, hợp là <span class="arithmatex">\((-2;4)\)</span>, bỏ hai đầu mút mở -2 và 4. Phải thử các điểm biên trước khi kết luận.</p>
 <p><strong>Vận dụng</strong></p>
-<p>Cho <span class="arithmatex">\(X=[-2,2)\)</span>, <span class="arithmatex">\(Y=(0,4]\)</span>. Tìm hợp và giao, giải thích việc lấy hay bỏ hai đầu 0,2.</p>
+<p>Cho <span class="arithmatex">\(X=[-2;2)\)</span>, <span class="arithmatex">\(Y=(0;4]\)</span>. Tìm hợp và giao, giải thích việc lấy hay bỏ hai đầu 0,2.</p>
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(X\cap Y=(0,2)\), còn \(X\cup Y=[-2,4]\). Trong giao, 0 bị Y loại và 2 bị X loại; trong hợp, hai điểm ấy vẫn được nhận bởi ít nhất một tập.
+\(X\cap Y=(0;2)\), còn \(X\cup Y=[-2;4]\). Trong giao, 0 bị Y loại và 2 bị X loại; trong hợp, hai điểm ấy vẫn được nhận bởi ít nhất một tập.
 
 **Kiểm lỗi**
 
@@ -11645,10 +11690,11 @@ Nếu em lấy nhầm 0 hoặc 2 trong giao, hãy kiểm riêng hai câu hỏi �
 
 <h3 id="32-em-phan-hop-khong-lap">3.2. Đếm phần hợp không lặp</h3>
 <p>Khi cộng hai nhóm có phần chung, em đã đếm thừa bao nhiêu lần?</p>
+<p>Với một tập hữu hạn <span class="arithmatex">\(A\)</span>, ký hiệu <span class="arithmatex">\(n(A)\)</span> hoặc <span class="arithmatex">\(\lvert A\rvert\)</span> chỉ <strong>số phần tử của tập <span class="arithmatex">\(A\)</span></strong>. Chẳng hạn, nếu <span class="arithmatex">\(A=\{2;4;6\}\)</span> thì <span class="arithmatex">\(n(A)=\lvert A\rvert=3\)</span>. Không nhầm dấu này với giá trị tuyệt đối của một số như <span class="arithmatex">\(\lvert-3\rvert\)</span>. Tương tự, <span class="arithmatex">\(\lvert A\cap B\rvert=n(A\cap B)\)</span> là số phần tử chung của hai tập.</p>
 <p>Khi có số lượng của hai nhóm, phần giao cần được tính đúng một lần để đếm không trùng. Một học sinh tham gia hai câu lạc bộ sẽ được tính <strong>hai lần</strong> nếu ta chỉ cộng số học sinh của từng câu lạc bộ. Vì vậy với hai tập hữu hạn, ta phải trừ một lần phần đã đếm trùng: <span class="arithmatex">\(|A\cup B|=|A|+|B|-|A\cap B|\)</span>. Hình Ven hai nhóm chia vũ trụ thành bốn vùng: chỉ A, cả hai, chỉ B và ngoài cả hai. Ta điền vùng giao trước rồi mới tính các vùng riêng.</p>
 <blockquote>
 <p><strong>CÔNG THỨC</strong></p>
-<p>Với hai tập hữu hạn, [|A\cup B|=|A|+|B|-|A\cap B|.] Trừ phần giao đúng một lần để tránh đếm hai lần. Nếu có vũ trụ U hữu hạn, số không thuộc nhóm nào là <span class="arithmatex">\(|U|-|A\cup B|\)</span>.</p>
+<p>Với hai tập hữu hạn, <span class="arithmatex">\(\lvert A\cup B\rvert=\lvert A\rvert+\lvert B\rvert-\lvert A\cap B\rvert\)</span>. Trừ phần giao đúng một lần để tránh đếm hai lần. Nếu có vũ trụ <span class="arithmatex">\(U\)</span> hữu hạn, số không thuộc nhóm nào là <span class="arithmatex">\(\lvert U\rvert-\lvert A\cup B\rvert\)</span>.</p>
 </blockquote>
 <p>Giả sử lớp có 40 bạn: 23 bạn học Anh, 25 bạn học Toán, 12 bạn học cả hai. Vùng chỉ Anh có <span class="arithmatex">\(23-12=11\)</span> bạn, chỉ Toán có <span class="arithmatex">\(25-12=13\)</span>, vùng cả hai 12. Vậy số bạn học ít nhất một môn là <span class="arithmatex">\(11+12+13=36\)</span>; còn <span class="arithmatex">\(40-36=4\)</span> bạn không học môn nào trong hai. Kiểm lại <span class="arithmatex">\(11+12+13+4=40\)</span> cho thấy không có vùng nào bị tính thiếu hoặc trùng.</p>
 <p><img alt="Bốn vùng trong biểu đồ Ven của lớp 40 học sinh" src="../../../../assets/visuals/THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg" /></p>
@@ -11673,7 +11719,7 @@ Nếu em cộng 26 và 30 rồi coi ngay đó là số bạn tham gia ít nhất
 <ul>
 <li><strong>Mệnh đề</strong> có giá trị đúng hoặc sai; mệnh đề chứa biến cần miền xét và giá trị của biến hoặc lượng từ. Phủ định của “mọi” là “tồn tại ít nhất một phần tử không thỏa”.</li>
 <li><strong>Kéo theo:</strong> <span class="arithmatex">\(P\Rightarrow Q\)</span> nghĩa là <span class="arithmatex">\(P\)</span> là điều kiện đủ cho <span class="arithmatex">\(Q\)</span>, còn <span class="arithmatex">\(Q\)</span> là điều kiện cần cho <span class="arithmatex">\(P\)</span>. Tương đương <span class="arithmatex">\(P\Leftrightarrow Q\)</span> đòi kiểm <strong>cả hai chiều</strong>.</li>
-<li><strong>Các tập hợp số:</strong> <span class="arithmatex">\(\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R\)</span>; số hữu tỉ viết được dưới dạng <span class="arithmatex">\(a/b\)</span> với <span class="arithmatex">\(a,b\in\mathbb Z,\ b\ne0\)</span>, còn số vô tỉ không viết được như vậy.</li>
+<li><strong>Các tập hợp số:</strong> <span class="arithmatex">\(\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R\)</span>; số hữu tỉ viết được dưới dạng <span class="arithmatex">\(\frac ab\)</span> với <span class="arithmatex">\(a,b\in\mathbb Z,\ b\ne0\)</span>, còn số vô tỉ không viết được như vậy.</li>
 <li><strong>Tập hợp:</strong> <span class="arithmatex">\(A\cap B\)</span> chứa các phần tử thuộc cả hai; <span class="arithmatex">\(A\cup B\)</span> thuộc ít nhất một; <span class="arithmatex">\(A\setminus B\)</span> thuộc A nhưng không thuộc B. Phần bù phải nói rõ tập vũ trụ <span class="arithmatex">\(U\)</span>.</li>
 <li><strong>Khoảng và bài toán đếm:</strong> phân biệt dấu ngoặc nhận/loại điểm mút; với hai tập hữu hạn, <span class="arithmatex">\(|A\cup B|=|A|+|B|-|A\cap B|\)</span>, tránh đếm trùng vùng giao.</li>
 </ul>

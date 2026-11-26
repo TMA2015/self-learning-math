@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="title desc">
+<title id="title">Giao và hợp của hai khoảng trên trục số</title>
+<desc id="desc">X gồm mọi số không vượt quá 3, Y gồm mọi số lớn hơn 1. Giao gồm các số lớn hơn 1 và không vượt quá 3; chấm rỗng ở 1, chấm đặc ở 3. Hợp phủ toàn bộ trục số thực.</desc>
+<rect width="780" height="400" fill="#fff"/>
+<g font-family="Arial,sans-serif" fill="#20323c">
+<text x="390" y="32" font-size="22" text-anchor="middle" font-weight="bold">X = (−∞; 3], Y = (1; +∞)</text>
+<path d="M330 54V325 M510 54V325" stroke="#c2cbd0" stroke-dasharray="5 6" fill="none"/>
+<g stroke="#7b8791" stroke-width="1.5" fill="none"><path d="M172 84H738 M172 156H738 M172 228H738 M172 300H738"/><path d="M330 77V91 M510 77V91 M330 149V163 M510 149V163 M330 221V235 M510 221V235 M330 293V307 M510 293V307"/></g>
+<g font-size="19"><text x="22" y="90">X</text><text x="22" y="162">Y</text><text x="22" y="234">X ∩ Y</text><text x="22" y="306">X ∪ Y</text></g>
+<g stroke="#176b82" stroke-width="5" stroke-linecap="round" fill="none"><path d="M178 84H510 M178 84l14 -8 M178 84l14 8"/></g>
+<circle cx="510" cy="84" r="7" fill="#176b82"/>
+<g stroke="#a65330" stroke-width="5" stroke-linecap="round" fill="none"><path d="M330 156H732 M732 156l-14 -8 M732 156l-14 8"/></g>
+<circle cx="330" cy="156" r="7" fill="#fff" stroke="#a65330" stroke-width="3"/>
+<path d="M330 228H510" stroke="#16754e" stroke-width="5" stroke-linecap="round"/><circle cx="330" cy="228" r="7" fill="#fff" stroke="#16754e" stroke-width="3"/><circle cx="510" cy="228" r="7" fill="#16754e"/>
+<g stroke="#46577c" stroke-width="5" stroke-linecap="round" fill="none"><path d="M178 300H732 M178 300l14 -8 M178 300l14 8 M732 300l-14 -8 M732 300l-14 8"/></g>
+<g font-size="18" text-anchor="middle"><text x="330" y="348">1</text><text x="510" y="348">3</text></g>
+<circle cx="113" cy="375" r="6" fill="#fff" stroke="#20323c" stroke-width="2"/><text x="130" y="381" font-size="16">Không lấy đầu mút</text><circle cx="445" cy="375" r="6" fill="#20323c"/><text x="462" y="381" font-size="16">Lấy đầu mút</text>
+</g></svg>

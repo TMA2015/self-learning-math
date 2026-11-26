@@ -16,15 +16,31 @@ const displayShortTopic01=(button,label,full)=>{
 const topic01Ready=part=>{document.documentElement.classList.remove("topic01-boot-pending-"+part);document.documentElement.classList.remove("topic01-boot-fallback-"+part);};
 const rw1Math=()=>window.SLMTopicRW1Math;
 const typeset=n=>{if(rw1Math())return rw1Math().typeset(n);const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([n]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([n])).catch(()=>{})};
+// CĐ01: keep source inert; never clone rendered MathJax output.
+// If startup won the race, recover only the registered original TeX input.
+function cloneSource(node){
+ if(node.nodeType!==1)return node.cloneNode(false);
+ if(node.matches("mjx-container")){
+  const item=[...(window.MathJax?.startup?.document?.math||[])].find(i=>i.typesetRoot===node);
+  if(!item||typeof item.math!=="string"||item.inputJax?.name!=="TeX")throw Error("TOPIC01_SOURCE_TEX_UNAVAILABLE");
+  return document.createTextNode((item.display?"\\[":"\\(")+item.math+(item.display?"\\]":"\\)"));
+ }
+ const copy=node.cloneNode(false);
+ for(const child of node.childNodes)copy.append(cloneSource(child));
+ return copy;
+}
+function parkSource(shelf,nodes){
+ const template=el("template");shelf.append(template);
+ window.MathJax?.typesetClear?.(nodes.filter(n=>n.nodeType===1));
+ template.content.append(...nodes);
+}
+function clearMath(root){window.MathJax?.typesetClear?.([root])}
 function solutionContent(details){
- const out=el("div","thpt-r4-formative-reveal"),clone=details.cloneNode(true);clone.querySelector("summary")?.remove();
- for(const n of [...clone.childNodes]){
-  if(n.nodeType===1){out.append(document.importNode(n,true));continue}
-  if(n.nodeType!==3)continue;
-  for(const part of n.textContent.trim().split(/\n\s*\n/)){if(!part.trim())continue;const p=el("p");
-   for(const c of part.split(/(\*\*[^*]+\*\*|\*[^*\n]+\*)/g)){if(c.startsWith("**")&&c.endsWith("**")&&c.length>4)p.append(el("strong","",c.slice(2,-2)));else if(c.startsWith("*")&&c.endsWith("*")&&c.length>2)p.append(el("em","",c.slice(1,-1)));else p.append(c.replace(/\n/g," ").replace(/&lt;/g,"<").replace(/&gt;/g,">"))}out.append(p)
-  }
- }return out;
+ const out=el("div","thpt-r4-formative-reveal"),clone=cloneSource(details);
+ rw1Math().disclosure(clone);
+ clone.querySelector(":scope > summary")?.remove();
+ out.append(...clone.childNodes);
+ return out;
 }
 function knowledgeStyle(root){
  for(const q of root.querySelectorAll("blockquote")){
@@ -116,7 +132,7 @@ function initTopic01Practice(){
  if(!marker||marker.dataset.ready==="1")return;
  const article=marker.closest(".md-typeset"),end=article?.querySelector("[data-topic01-practice-end]");
  const golden=window.THPT_GOLDEN_RUNTIME;
- if(!article||!end||!golden)return;
+ if(!article||!end||!golden||!rw1Math())return;
  const headings=[...article.children].filter(x=>x.tagName==="H2"&&/^[123]\.\s/.test(x.textContent));
  if(headings.length!==3)return;
  // ID placements only, taken in original order from the 24 AUTHORING Q15 markers.
@@ -139,12 +155,14 @@ function initTopic01Practice(){
   }else if(current)current.nodes.push(n);
  }
  if(items.length!==24||items.some((x,i)=>x.number!==i+1||!x.itemId)||new Set(items.map(x=>x.itemId)).size!==24){console.error("TOPIC01_GOLDEN_SOURCE_GATE",JSON.stringify({count:items.length,ids:items.map(x=>x.itemId),numbers:items.map(x=>x.number)}));return;}
+ // Freeze raw clones before the source is moved or MathJax can mutate it.
+ items.forEach(q=>{q.nodes=q.nodes.map(cloneSource)});
  golden.publicOnly();marker.dataset.ready="1";
  const groups=headings.map(h=>({title:h.textContent.trim(),items:items.filter(q=>q.group===h.textContent.trim())}));
  if(groups.map(g=>g.items.length).join(",")!=="11,8,5")throw Error("TOPIC01_GROUP_SOURCE_GATE");
  const hub=el("section","topic01-golden-hub"),grid=el("div","thpt-r4-practice-sections topic01-golden-grid"),shelf=el("div","");
  hub.dataset.topic01GoldenHub="1";hub.append(grid);shelf.hidden=true;shelf.dataset.topic01SourceShelf="1";shelf.setAttribute("aria-hidden","true");
- article.insertBefore(hub,headings[0]);article.insertBefore(shelf,headings[0]);originalNodes.forEach(n=>shelf.append(n));
+ article.insertBefore(hub,headings[0]);article.insertBefore(shelf,headings[0]);parkSource(shelf,originalNodes);
  const descriptions=["Nhận biết mệnh đề, phủ định, kéo theo, tương đương và lượng từ.","Xác định phần tử, tập con, giao, hợp, hiệu và phần bù.","Đọc khoảng trên trục số, sử dụng sơ đồ Ven và đếm phần hợp."];
  const cards=groups.map((g,i)=>{
   const wrap=el("section","thpt-r4-practice-lesson");wrap.dataset.thptGrade="10";
@@ -161,7 +179,7 @@ function initTopic01Practice(){
  const lifecycle=golden.bindDialog({dialog,closeButton:close,getReturnFocus:()=>cards[activeGroup]});
  const prev=el("button","","← Bài trước"),next=el("button","","Bài tiếp →");prev.type=next.type="button";
  const render=()=>{
-  const g=groups[activeGroup],q=g.items[cursor];body.replaceChildren();badge.textContent=String(activeGroup+1);title.textContent=g.title.replace(/^\d+\.\s*/,"");
+  const g=groups[activeGroup],q=g.items[cursor];clearMath(body);body.replaceChildren();badge.textContent=String(activeGroup+1);title.textContent=g.title.replace(/^\d+\.\s*/,"");
   body.append(el("p","thpt-r4-modal-progress","Câu "+(cursor+1)+" / "+g.items.length));
   const nav=el("div","thpt-r4-modal-question-nav");golden.renderNav({container:nav,count:g.items.length,index:cursor,label:i=>String(i+1),onSelect:i=>{cursor=i;render()}});body.append(nav);
   const card=el("article","md-typeset thpt-r4-reviewed-formative-card topic01-question-body");card.dataset.topic01CurrentItem=String(q.number);card.dataset.thptCanonicalItem=q.itemId;card.append(el("h3","","Bài "+q.number+"."));
@@ -169,7 +187,7 @@ function initTopic01Practice(){
   const source=q.nodes.find(n=>n.nodeType===1&&n.tagName==="DETAILS");if(!source)throw Error("Missing canonical solution "+q.itemId);
   for(const n of q.nodes.slice(1)){if(n.nodeType===1&&n.tagName!=="DETAILS"||n.nodeType===3)card.append(n.cloneNode(true))}
   // One canonical voluntary disclosure: no duplicate "Đối chiếu" action above it.
-  const actions=el("div","thpt-r4-formative-actions"),details=el("details",""),solution=solutionContent(source);details.append(el("summary","","📖 Đáp án / Lời giải"),solution);
+  const actions=el("div","thpt-r4-formative-actions"),details=el("details",""),solution=solutionContent(source);details.dataset.topicRw1Managed="1";details.append(el("summary","","📖 Đáp án / Lời giải"),solution);
   const review=el("a","thpt-r4-remediation-link","↶ Ôn lại kiến thức");review.href="../kien-thuc/";actions.append(details,review);card.append(actions);body.append(card);
   details.addEventListener("toggle",()=>{if(details.open)typeset(solution)});
   const paging=el("div","thpt-r4-modal-buttons");paging.append(prev,next);body.append(paging);pager?.sync();typeset(card);
@@ -179,16 +197,16 @@ function initTopic01Practice(){
  topic01Ready("practice");
 }
 function initTopic01Selfcheck(){
- const marker=document.querySelector("[data-topic01-selfcheck-start]"),end=document.querySelector("[data-topic01-selfcheck-end]");if(!marker||!end||marker.dataset.ready==="1")return;
+ const marker=document.querySelector("[data-topic01-selfcheck-start]"),end=document.querySelector("[data-topic01-selfcheck-end]");if(!marker||!end||marker.dataset.ready==="1"||!rw1Math())return;
  const startHost=marker.closest("p")||marker,endHost=end.closest("p")||end;
  const nodes=[];for(let n=startHost.nextSibling;n&&n!==endHost;n=n.nextSibling)nodes.push(n);
  const items=[];
- for(const n of nodes){if(n.nodeType!==8)continue;const id=n.textContent.match(/PUBLIC_REPLAY_ONLY:\s*([A-Z0-9-]+)/)?.[1];if(!id)continue;let p=n.nextSibling;while(p&&p.nodeType!==1)p=p.nextSibling;const num=Number(p?.querySelector(":scope > strong")?.textContent.match(/^Câu (\d+)\./)?.[1]);if(p?.tagName!=="P"||!num)throw Error("Invalid public replay");const stem=p.cloneNode(true);stem.querySelector(":scope > strong").remove();items.push({id,num,stem})}
+ for(const n of nodes){if(n.nodeType!==8)continue;const id=n.textContent.match(/PUBLIC_REPLAY_ONLY:\s*([A-Z0-9-]+)/)?.[1];if(!id)continue;let p=n.nextSibling;while(p&&p.nodeType!==1)p=p.nextSibling;const num=Number(p?.querySelector(":scope > strong")?.textContent.match(/^Câu (\d+)\./)?.[1]);if(p?.tagName!=="P"||!num)throw Error("Invalid public replay");const stem=cloneSource(p);stem.querySelector(":scope > strong").remove();items.push({id,num,stem})}
  if(items.length!==11||items.some((q,i)=>q.num!==i+1)||new Set(items.map(q=>q.id)).size!==11)return;
  const root=el("div","");root.dataset.g10ChapterSelfcheck="TOP01";root.dataset.g10scBound="topic-public-replay";root.dataset.topic01PublicSelfcheck="1";
  root.append(el("h2","g10sc-heading","Tự kiểm tra chuyên đề 01"),el("p","g10sc-notice","Em tự làm từng câu trên giấy, sau đó mở Đối chiếu. Không chấm điểm tự động, không ghi điểm thành thạo."));
  const progress=el("p","g10sc-progress"),nav=el("div","g10sc-jump"),body=el("section","g10sc-body"),controls=el("div","g10sc-controls"),prev=el("button","g10sc-button","Câu trước"),next=el("button","g10sc-button","Câu tiếp");prev.type=next.type="button";controls.append(prev,next);root.append(progress,nav,body,controls,el("p","g10sc-notice","Học liệu được xây dựng dựa trên Chương I SGK Toán 10, Tập Một – Kết nối tri thức với cuộc sống."));
- const shelf=el("div","");shelf.hidden=true;shelf.dataset.topic01SelfcheckSource="1";startHost.after(root,shelf);nodes.forEach(n=>shelf.append(n));marker.dataset.ready="1";
+ const shelf=el("div","");shelf.hidden=true;shelf.dataset.topic01SelfcheckSource="1";startHost.after(root,shelf);parkSource(shelf,nodes);marker.dataset.ready="1";
  let cursor=0,publicPractice=null;
  async function existingPublicSolution(id){
   if(!items.some(q=>q.id===id))throw Error("Not public replay");
@@ -202,10 +220,10 @@ function initTopic01Selfcheck(){
  function render(){
   const q=items[cursor];progress.textContent="Câu "+(cursor+1)+" / "+items.length;nav.replaceChildren();
   items.forEach((_,j)=>{const b=el("button","g10sc-jump-button"+(j===cursor?" is-current":""),String(j+1));b.type="button";b.setAttribute("aria-label","Đến câu "+(j+1));if(j===cursor)b.setAttribute("aria-current","true");b.onclick=()=>{cursor=j;render()};nav.append(b)});
-  body.replaceChildren(el("h3","","Câu "+q.num));
+  clearMath(body);body.replaceChildren(el("h3","","Câu "+q.num));
    const stemLabel=el("p","topic01-stem-label");stemLabel.append(el("strong","","Đề bài"));body.append(stemLabel);body.dataset.thptCanonicalItem=q.id;const rich=el("div","g10sc-rich");rich.append(q.stem.cloneNode(true));body.append(rich);
   const button=el("button","g10sc-button g10sc-final","Đối chiếu"),solution=el("section","g10sc-review");button.type="button";solution.hidden=true;solution.id="topic01-current-solution";button.setAttribute("aria-controls",solution.id);button.setAttribute("aria-expanded","false");body.append(button,solution);
-  button.onclick=async()=>{if(!solution.hidden){solution.hidden=true;button.textContent="Đối chiếu";button.setAttribute("aria-expanded","false");return}button.disabled=true;try{const original=await existingPublicSolution(q.id);if(!solution.isConnected)return;solution.replaceChildren(...original.childNodes);solution.dataset.thptCanonicalSolution=q.id;solution.hidden=false;button.textContent="Ẩn đối chiếu";button.setAttribute("aria-expanded","true");typeset(solution)}catch(error){if(solution.isConnected){solution.replaceChildren(el("p","g10sc-error","Chưa tải được lời giải. Em bấm Đối chiếu để thử lại."));solution.hidden=false;button.textContent="Ẩn đối chiếu";button.setAttribute("aria-expanded","true")}}finally{button.disabled=false}};
+  button.onclick=async()=>{if(!solution.hidden){solution.hidden=true;button.textContent="Đối chiếu";button.setAttribute("aria-expanded","false");return}button.disabled=true;try{if(solution.dataset.thptCanonicalSolution!==q.id){const original=await existingPublicSolution(q.id);if(!solution.isConnected)return;clearMath(solution);solution.replaceChildren(...original.childNodes);solution.dataset.thptCanonicalSolution=q.id;}solution.hidden=false;button.textContent="Ẩn đối chiếu";button.setAttribute("aria-expanded","true");typeset(solution)}catch(error){if(solution.isConnected){solution.replaceChildren(el("p","g10sc-error","Chưa tải được lời giải. Em bấm Đối chiếu để thử lại."));solution.hidden=false;button.textContent="Ẩn đối chiếu";button.setAttribute("aria-expanded","true")}}finally{button.disabled=false}};
   prev.disabled=cursor===0;next.disabled=cursor===items.length-1;typeset(body)
  }
  prev.onclick=()=>{if(cursor>0){cursor--;render()}};next.onclick=()=>{if(cursor<items.length-1){cursor++;render()}};render();topic01Ready("selfcheck");
