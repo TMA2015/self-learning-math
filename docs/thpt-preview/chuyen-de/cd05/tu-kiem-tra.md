@@ -33,7 +33,7 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC05_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 909f873c57e543b8f6d3c383d0b88df6900e334a; Q18_RECEIPT_BLOB 9c8c62a406e24af99efbdbe0bc081f1998c1f2ba; AUTHORING_PR #889; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB 277e8738c6cb7cce7f7f11c666382446f69be8e9; Q18_RECEIPT_BLOB c2fba301449c6ca519d1d7f75f28db3dffb4b1db; AUTHORING_PR #889; PUBLIC_PROJECTION_ONLY -->
 
 # Tự kiểm tra
 
@@ -41,71 +41,71 @@ Hãy làm đủ 17 câu trước khi mở lại phần Luyện tập để tự 
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P01; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O01; NO_MASTERY; NOT_RD1 -->
 
-**Câu 1.** Một bảng có các cặp (0,2),(1,4),(1,4),(2,5). Đây có phải một hàm số trên tập đầu vào {0,1,2} không?
+**Câu 1.** Một bảng có các cặp \((0;2),(1;4),(1;4),(2;5)\). Đây có phải một hàm số trên tập đầu vào \(\{0;1;2\}\) không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P03; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O02; NO_MASTERY; NOT_RD1 -->
 
-**Câu 2.** Tìm tập xác định f(x)=√(x+2)/(x−3).
+**Câu 2.** Tìm tập xác định \(f(x)=\frac{\sqrt{x+2}}{x-3}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P05; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O03; NO_MASTERY; NOT_RD1 -->
 
-**Câu 3.** Cho f(x)=(x−2)²+1 với D=[−1,3]. Tìm tập giá trị thật của hàm số trên D.
+**Câu 3.** Cho \(f(x)=(x-2)^2+1\) với \(D=[-1;3]\). Tìm tập giá trị thật của hàm số trên D.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P07; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O04; NO_MASTERY; NOT_RD1 -->
 
-**Câu 4.** Trên đồ thị y=|x−1|+2, điểm A(0,3) và B(2,4) có thuộc đồ thị không?
+**Câu 4.** Trên đồ thị \(y=\lvert x-1\rvert+2\), điểm \(A(0;3)\) và \(B(2;4)\) có thuộc đồ thị không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P09; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O05; NO_MASTERY; NOT_RD1 -->
 
-**Câu 5.** Cho f(x)=x² trên D=[−4,−1]. Hàm tăng hay giảm trên D? Tìm giá trị lớn nhất và nhỏ nhất.
+**Câu 5.** Cho \(f(x)=x^2\) trên \(D=[-4;-1]\). Hàm tăng hay giảm trên D? Tìm giá trị lớn nhất và nhỏ nhất.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P11; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O06; NO_MASTERY; NOT_RD1 -->
 
-**Câu 6.** f(x)=−(x−2)²+9 trên [0,5]. Tìm giá trị lớn nhất và nhỏ nhất trên đoạn.
+**Câu 6.** \(f(x)=-(x-2)^2+9\) trên \([0;5]\). Tìm giá trị lớn nhất và nhỏ nhất trên đoạn.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P13; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O07; NO_MASTERY; NOT_RD1 -->
 
-**Câu 7.** Xét f(x)=x³−x trên ℝ. Hàm chẵn, lẻ hay không loại nào? Nêu đối xứng.
+**Câu 7.** Xét \(f(x)=x^3-x\) trên \(\mathbb R\). Hàm chẵn, lẻ hay không loại nào? Nêu đối xứng.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P15; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O08; NO_MASTERY; NOT_RD1 -->
 
-**Câu 8.** Hàm f xác định trên ℝ có chu kỳ 4: f(x+4)=f(x) với mọi x. Nếu f(1)=2, tính f(9).
+**Câu 8.** Hàm f xác định trên \(\mathbb R\) có chu kỳ 4: \(f(x+4)=f(x)\) với mọi x. Nếu \(f(1)=2\), tính \(f(9)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P17; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O09; NO_MASTERY; NOT_RD1 -->
 
-**Câu 9.** Từ f(x)=x², cho g(x)=f(x)−3. Đỉnh g ở đâu và đồ thị dịch theo hướng nào?
+**Câu 9.** Từ \(f(x)=x^2\), cho \(g(x)=f(x)-3\). Đỉnh g ở đâu và đồ thị dịch theo hướng nào?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P19; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O10; NO_MASTERY; NOT_RD1 -->
 
-**Câu 10.** Từ y=x², đồ thị g(x)=(x+3)² được tịnh tiến bao nhiêu đơn vị theo chiều nào?
+**Câu 10.** Từ \(y=x^2\), đồ thị \(g(x)=(x+3)^2\) được tịnh tiến bao nhiêu đơn vị theo chiều nào?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P21; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O11; NO_MASTERY; NOT_RD1 -->
 
-**Câu 11.** Với f(x)=x²+x, h(x)=−f(x). Đối xứng qua trục nào? Tính h(1).
+**Câu 11.** Với \(f(x)=x^2+x\), \(h(x)=-f(x)\). Đối xứng qua trục nào? Tính \(h(1)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P23; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O12; NO_MASTERY; NOT_RD1 -->
 
-**Câu 12.** Cho f(x)=|x|, g(x)=3f(x). Tính g(−2), xét min và mô tả biến đổi.
+**Câu 12.** Cho \(f(x)=\lvert x\rvert\), \(g(x)=3f(x)\). Tính \(g(-2)\), xét giá trị nhỏ nhất và mô tả biến đổi.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P25; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O13; NO_MASTERY; NOT_RD1 -->
 
-**Câu 13.** f(x)=x² và g(x)=f(2x)=4x². So độ rộng hai đồ thị và tìm g(1).
+**Câu 13.** \(f(x)=x^2\) và \(g(x)=f(2x)=4x^2\). So độ rộng hai đồ thị và tìm \(g(1)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P27; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O14; NO_MASTERY; NOT_RD1 -->
 
-**Câu 14.** Từ f(x)=x−2, g(x)=|f(x)|. Đỉnh hình chữ V ở đâu? Nửa dưới trục Ox biến đi đâu?
+**Câu 14.** Từ \(f(x)=x-2\), \(g(x)=\lvert f(x)\rvert\). Đỉnh hình chữ V ở đâu? Nửa dưới trục Ox biến đi đâu?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P29; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O15; NO_MASTERY; NOT_RD1 -->
 
-**Câu 15.** f(x)=x², g(x)=f(x−2)+1. Nêu chuỗi dịch và tính g(0).
+**Câu 15.** \(f(x)=x^2\), \(g(x)=f(x-2)+1\). Nêu chuỗi dịch và tính \(g(0)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P31; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O16; NO_MASTERY; NOT_RD1 -->
 
-**Câu 16.** f(x)=x+1 khi x<0 và f(x)=x²+1 khi x≥0. Tính f(0) và giải thích hai nhánh có nối nhau tại x=0 không.
+**Câu 16.** \(f(x)=x+1\) khi \(x<0\) và \(f(x)=x^2+1\) khi \(x\ge0\). Tính \(f(0)\) và giải thích hai nhánh có nối nhau tại \(x=0\) không.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P33; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O17; NO_MASTERY; NOT_RD1 -->
 
-**Câu 17.** Lợi nhuận giả định R(q)=−(q−5)²+25 (triệu đồng), q∈{0,1,...,8} là số sản phẩm. Tìm giá trị lớn nhất hợp lệ và q tương ứng.
+**Câu 17.** Lợi nhuận giả định \(R(q)=-(q-5)^2+25\) (triệu đồng), \(q\in\{0;1;\ldots;8\}\) là số sản phẩm. Tìm giá trị lớn nhất hợp lệ và q tương ứng.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 

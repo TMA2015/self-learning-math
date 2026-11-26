@@ -37,7 +37,7 @@ hide:
 <span data-topic-w1-source-start="kien-thuc" hidden></span>
 
 <!-- TOPIC03_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 38f41f013e75b42605d7a88f9205c20af6315a41; Q18_RECEIPT_BLOB ef40b5871762558959108cf1879155c7e14158fe; AUTHORING_PR #888; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB bd3b88b635b203872a9afa5893cc1e3af3e7d7c6; Q18_RECEIPT_BLOB 28c43a014a015b1c81986e0b9c7b7127c3dfe55b; AUTHORING_PR #888; PUBLIC_PROJECTION_ONLY -->
 
 # Kiến thức
 
@@ -53,7 +53,7 @@ Trước hết, số thực được ký hiệu \(\mathbb R\), tập nghiệm l�
 
 ### 1.1. Phép biến đổi tương đương
 
-Vì sao từ x=3 suy ra x²=9 nhưng không được kết luận ngược lại?
+Vì sao từ \(x=3\) suy ra \(x^2=9\) nhưng không được kết luận ngược lại?
 
 Giải phương trình không chỉ là tìm một con số trông có vẻ đúng. Ta cần tìm **tất cả** giá trị trong miền xác định chung làm hai vế bằng nhau, đồng thời không để phép biến đổi nào làm mất hoặc sinh thêm nghiệm. Nếu hai phương trình có đúng cùng tập nghiệm trên miền đang xét, chúng là những phương trình tương đương.
 
@@ -87,9 +87,9 @@ Nếu em chỉ tìm một nghiệm sau khi biến đổi hoặc đặt dấu tư
 
 Nếu hệ số của x là tham số có thể bằng 0, tại sao không được vội chia?
 
-> **PHƯƠNG PHÁP — Phương trình bậc nhất có tham số.** Ngay cả phương trình bậc nhất cũng có thể đổi bản chất khi hệ số của ẩn bằng không. Đôi khi phép chia mất cả một trường hợp vô số nghiệm; hiểu điều kiện chia quan trọng hơn thao tác máy. Điểm xuất phát là thu gọn, phân phối, tính chất số 0. Với ax=b: nếu a≠0 có nghiệm duy nhất x=b/a; nếu a=0,b≠0 thì vô nghiệm; nếu a=b=0 thì mọi x∈ℝ đều là nghiệm. Khi a có chứa tham số m, phải xét a=0 trước. Đây là kỹ thuật nền để tự học phép quy về bậc hai.
+> **PHƯƠNG PHÁP — Phương trình bậc nhất có tham số.** Ngay cả phương trình bậc nhất cũng có thể đổi bản chất khi hệ số của ẩn bằng không. Nếu chia ngay cho hệ số chứa tham số, ta có thể mất cả trường hợp vô số nghiệm. Với \(ax=b\): nếu \(a\ne0\) có nghiệm duy nhất \(x=\frac ba\); nếu \(a=0,\ b\ne0\) thì vô nghiệm; nếu \(a=b=0\) thì mọi \(x\in\mathbb R\) đều là nghiệm. Khi a có chứa tham số m, phải xét \(a=0\) trước.
 
-Chẳng hạn, Giải m(x−2)=0: m≠0 ⇒ x=2; m=0 ⇒ 0=0 cho mọi x. Không thể chia cả hai vế cho m khi chưa biết m≠0.
+Chẳng hạn, giải \(m(x-2)=0\): nếu \(m\ne0\) thì \(x=2\); nếu \(m=0\) thì \(0=0\) với mọi x. Không thể chia cả hai vế cho m khi chưa biết \(m\ne0\).
 
 **Ví dụ**
 
@@ -99,13 +99,13 @@ Chẳng hạn, Giải m(x−2)=0: m≠0 ⇒ x=2; m=0 ⇒ 0=0 cho mọi x. Không
 
 **Vận dụng**
 
-Giải a(x−1)=0 theo tham số a.
+Giải \(a(x-1)=0\) theo tham số a.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Nếu a≠0 thì x=1, nếu a=0 thì mọi x∈ℝ.
+Nếu \(a\ne0\) thì \(x=1\); nếu \(a=0\) thì mọi \(x\in\mathbb R\) đều là nghiệm.
 
-Nếu quên trường hợp hệ số 0, đặt a=0 và thử x=6; làm lại Bài 3 và Bài 4 trong phần Luyện tập.
+Nếu quên trường hợp hệ số 0, đặt \(a=0\) và thử \(x=6\); làm lại Bài 3 và Bài 4 trong phần Luyện tập.
 
 </details>
 
@@ -113,31 +113,31 @@ Nếu quên trường hợp hệ số 0, đặt a=0 và thử x=6; làm lại B�
 
 ### 1.3. Tích bằng 0, tránh làm mất nghiệm
 
-Chia cả hai vế cho x−2 có thể làm mất nghiệm nào?
+Chia cả hai vế cho \(x-2\) có thể làm mất nghiệm nào?
 
-Khi một biểu thức được tách thành tích, tính chất tích bằng không giúp nhìn thấy nhiều nghiệm. Đưa phương trình về tích làm lộ nhiều nghiệm, nhưng chia cho một nhân tử có thể làm mất nghiệm ngay tại nhân tử ấy. Ta bắt đầu từ tính chất ab=0 ⇔ a=0 hoặc b=0. 
+Khi một biểu thức được tách thành tích, tính chất tích bằng không giúp nhìn thấy nhiều nghiệm. Đưa phương trình về tích làm lộ nhiều nghiệm, nhưng chia cho một nhân tử có thể làm mất nghiệm ngay tại nhân tử ấy. Ta bắt đầu từ tính chất \(ab=0\) khi và chỉ khi \(a=0\) hoặc \(b=0\).
 
 > **TÍNH CHẤT — Tích bằng không.** Trên miền mà cả hai biểu thức \(A(x)\), \(B(x)\) đều có nghĩa, \(A(x)B(x)=0\) khi và chỉ khi \(A(x)=0\) **hoặc** \(B(x)=0\). Không được chia cho \(A(x)\) khi chưa loại trường hợp \(A(x)=0\).
 
-Nghiệm kép khác với hai nghiệm thực phân biệt. Chia cho A(x) chỉ hợp lệ khi A(x)≠0, nếu không phải tách trường hợp A=0.
+Nghiệm kép khác với hai nghiệm thực phân biệt. Chia cho \(A(x)\) chỉ hợp lệ khi \(A(x)\ne0\); nếu không phải tách trường hợp \(A(x)=0\).
 
-Xét ví dụ: x²−x−6=0 ⇔ (x−3)(x+2)=0 ⇒ x∈{3,−2}. Nếu vội chia cho x−3 sẽ làm mất x=3; vì thế ưu tiên quy tắc tích bằng 0.
+Xét ví dụ: \(x^2-x-6=0\Leftrightarrow (x-3)(x+2)=0\), suy ra \(x\in\{3;-2\}\). Nếu vội chia cho \(x-3\) sẽ làm mất \(x=3\); vì thế ưu tiên quy tắc tích bằng 0.
 
 **Ví dụ**
 
 **Đề bài.** Giải \((x+2)(3x-1)=0\).
 
-**Lời giải.** Theo tính chất tích bằng 0, \(x+2=0\) hoặc \(3x-1=0\). Vậy \(S=\{-2,\frac13\}\). Không chia cho một thừa số chứa x, vì như vậy có thể loại mất nghiệm của chính thừa số ấy.
+**Lời giải.** Theo tính chất tích bằng 0, \(x+2=0\) hoặc \(3x-1=0\). Vậy \(S=\{-2;\frac13\}\). Không chia cho một thừa số chứa x, vì như vậy có thể loại mất nghiệm của chính thừa số ấy.
 
 **Vận dụng**
 
-Giải (x−5)(x+1)=0.
+Giải \((x-5)(x+1)=0\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-x=5 hoặc x=−1; thử vào từng thừa số.
+\(x=5\) hoặc \(x=-1\); thử vào từng thừa số.
 
-Nếu tìm được một nghiệm mà không xét nhân tử còn lại, quay lại ab=0 và làm lại Bài 5 và Bài 6 trong phần Luyện tập.
+Nếu tìm được một nghiệm mà không xét nhân tử còn lại, quay lại \(ab=0\) và làm lại Bài 5 và Bài 6 trong phần Luyện tập.
 
 </details>
 
@@ -153,29 +153,29 @@ Phương trình \(ax^2+bx+c=0\), với \(a,b,c\in\mathbb R\) và \(a\ne0\), là 
 
 > **CÔNG THỨC — Nghiệm theo biệt thức.** Đặt \(\Delta=b^2-4ac\). Nếu \(\Delta>0\), có hai nghiệm phân biệt \(x=\dfrac{-b\pm\sqrt{\Delta}}{2a}\); nếu \(\Delta=0\), có nghiệm kép \(x=-\dfrac b{2a}\); nếu \(\Delta<0\), không có nghiệm thực. Khi giải một phương trình vốn có mẫu hoặc căn bằng phép quy về bậc hai, nghiệm tìm được vẫn phải kiểm lại điều kiện của bài gốc.
 
-Khi hệ số của \(x\) là số chẵn, ta có thể dùng **biệt thức thu gọn** để tính ngắn hơn. Viết \(b=2b'\) (nghĩa là \(b'=b/2\)); khi đó phương trình \(ax^2+bx+c=0\) với \(a\ne0\) chính là \(ax^2+2b'x+c=0\). Không được tính \(\Delta'\) bằng cách thay nhầm \(b\) cho \(b'\), vì \(\Delta=4\Delta'\).
+Khi hệ số của \(x\) là số chẵn, ta có thể dùng **biệt thức thu gọn** để tính ngắn hơn. Viết \(b=2b'\) (nghĩa là \(b'=\frac b2\)); khi đó phương trình \(ax^2+bx+c=0\) với \(a\ne0\) chính là \(ax^2+2b'x+c=0\). Không được tính \(\Delta'\) bằng cách thay nhầm \(b\) cho \(b'\), vì \(\Delta=4\Delta'\).
 
 > **CÔNG THỨC — Biệt thức thu gọn và nghiệm tương ứng.** Với \(a\ne0\), \(b=2b'\), đặt \(\Delta'=(b')^2-ac\). Nếu \(\Delta'>0\) thì phương trình có hai nghiệm \(x=\dfrac{-b'\pm\sqrt{\Delta'}}{a}\); nếu \(\Delta'=0\) thì có một nghiệm kép \(x=-\dfrac{b'}{a}\); nếu \(\Delta'<0\) thì không có nghiệm thực. Hai biệt thức \(\Delta=b^2-4ac\) và \(\Delta'=(b')^2-ac\) đưa ra **cùng một tập nghiệm**, chỉ khác cách tính.
 
 Chẳng hạn, \(2x^2-8x+6=0\) có \(a=2,b'=-4,c=6\) nên \(\Delta'=16-12=4\), nghiệm \(x=\dfrac{4\pm2}{2}\), tức \(x=1\) hoặc \(x=3\); thế lại đều cho giá trị 0. Trong xét dấu tam thức, chính những nghiệm này là các mốc chia khoảng, không vì dùng \(\Delta'\) mà đổi quy tắc xét dấu.
 
-Hãy kiểm tra trường hợp sau: x²−4x+3=0: Δ=16−12=4>0 ⇒ x=(4±2)/2∈{1,3}; kiểm (x−1)(x−3). Hai cách giải tương đương cho chính phương trình bậc hai này.
+Hãy kiểm tra trường hợp sau: \(x^2-4x+3=0\). Ta có \(\Delta=16-12=4>0\), nên \(x=\frac{4\pm2}{2}\in\{1;3\}\). Có thể kiểm bằng cách phân tích thành \((x-1)(x-3)=0\). Hai cách giải tương đương cho chính phương trình bậc hai này.
 
 **Ví dụ**
 
 **Đề bài.** Giải \(2x^2-3x-2=0\) trên \(\mathbb R\).
 
-**Lời giải.** Với \(a=2,b=-3,c=-2\), \(\Delta=b^2-4ac=9+16=25>0\). Hai nghiệm \((3\pm5)/4\) là \(2\) và \(-\frac12\). Có thể đối chiếu bằng \((2x+1)(x-2)=0\).
+**Lời giải.** Với \(a=2,b=-3,c=-2\), \(\Delta=b^2-4ac=9+16=25>0\). Hai nghiệm \(\frac{3\pm5}{4}\) là \(2\) và \(-\frac12\). Có thể đối chiếu bằng \((2x+1)(x-2)=0\).
 
 **Vận dụng**
 
-Giải x²+4x+4=0.
+Giải \(x^2+4x+4=0\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(x+2)²=0 ⇒ x=−2 (nghiệm kép), không phải hai giá trị khác nhau.
+\((x+2)^2=0\Rightarrow x=-2\) (nghiệm kép), không phải hai giá trị khác nhau.
 
-Nếu Δ âm mà cho nghiệm thực, hoàn phương thành tổng số không âm để kiểm; làm lại Bài 7 và Bài 8 trong phần Luyện tập.
+Nếu \(\Delta&lt;0\) mà em vẫn tìm ra nghiệm thực, hãy thử hoàn thành bình phương. Ví dụ \(-x^2-1=0\Leftrightarrow x^2+1=0\). Vì \(x^2+1\ge1>0\) với mọi số thực x, phương trình vô nghiệm. Nếu hệ số bậc hai âm, đổi dấu cả hai vế trước khi xét tổng dương nghiêm ngặt; chỉ không âm thì chưa đủ để kết luận vô nghiệm. Làm lại Bài 7 và Bài 8 trong phần Luyện tập.
 
 </details>
 
@@ -189,9 +189,9 @@ Các phép cộng và trừ cùng một lượng ở hai vế thường có th�
 
 Tại sao rút gọn phân thức không được phép nhận một giá trị làm mẫu số bằng 0?
 
-> **PHƯƠNG PHÁP — Giải phương trình phân thức.** Khử mẫu rất nhanh nhưng chỉ đúng trên miền mẫu khác 0; một phép rút gọn có thể ‘lấp’ điểm biểu thức gốc vô nghĩa. Ta có thể sử dụng phân tích nhân tử, số hữu tỉ và mẫu số. Đầu tiên xét **mọi mẫu số khác 0**. Khi nhân hai vế với mẫu M(x), phép tương đương chỉ đúng **trên miền M(x)≠0**. Giải phương trình kết quả, loại các nghiệm làm mẫu bằng 0 và thay thử. Phương pháp này đặc biệt hữu ích khi một phép biến đổi có thể làm mẫu bằng \(0\); điều kiện của phân thức luôn phải được giữ đến cuối lời giải.
+> **PHƯƠNG PHÁP — Giải phương trình phân thức.** Khử mẫu rất nhanh nhưng chỉ đúng trên miền mẫu khác 0; một phép rút gọn có thể làm mất dấu vết điểm biểu thức gốc vô nghĩa. Đầu tiên xét **mọi mẫu số khác 0**. Khi nhân hai vế với mẫu \(M(x)\), phép biến đổi tương đương chỉ đúng trên miền \(M(x)\ne0\). Giải phương trình kết quả, loại các nghiệm làm mẫu bằng 0 và thay thử. Điều kiện của phân thức luôn phải được giữ đến cuối lời giải.
 
-Chẳng hạn, (x+1)/(x−3)=2, x≠3. Nhân x−3 được x+1=2x−6 ⇒ x=7; thử (7+1)/(7−3)=8/4=2. Nếu nghiệm x=3 xuất hiện, phải loại chứ không được chia 0.
+Chẳng hạn, \(\frac{x+1}{x-3}=2\), điều kiện \(x\ne3\). Nhân hai vế với \(x-3\) được \(x+1=2x-6\Rightarrow x=7\); thử \(\frac{7+1}{7-3}=\frac84=2\). Nếu nghiệm \(x=3\) xuất hiện, phải loại chứ không được chia cho 0.
 
 **Ví dụ**
 
@@ -201,13 +201,13 @@ Chẳng hạn, (x+1)/(x−3)=2, x≠3. Nhân x−3 được x+1=2x−6 ⇒ x=7; 
 
 **Vận dụng**
 
-Giải (x²−9)/(x−3)=0.
+Giải \(\frac{x^2-9}{x-3}=0\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Điều kiện x≠3. Tử (x−3)(x+3)=0 cho 3 hoặc −3; loại 3, nghiệm duy nhất −3.
+Điều kiện \(x\ne3\). Tử số \((x-3)(x+3)=0\) cho 3 hoặc −3; loại 3, nghiệm duy nhất −3.
 
-Nếu rút gọn rồi kết luận nhận x=3, thay x=3 vào mẫu để thấy vô nghĩa; làm lại Bài 9 và Bài 10 trong phần Luyện tập.
+Nếu rút gọn rồi kết luận nhận \(x=3\), thay \(x=3\) vào mẫu để thấy vô nghĩa; làm lại Bài 9 và Bài 10 trong phần Luyện tập.
 
 </details>
 
@@ -215,11 +215,11 @@ Nếu rút gọn rồi kết luận nhận x=3, thay x=3 vào mẫu để thấy
 
 ### 2.2. Phương trình có giá trị tuyệt đối
 
-Từ |x−1|=3, tại sao phải xét cả hai nhánh?
+Từ \(\lvert x-1\rvert=3\), tại sao phải xét cả hai nhánh?
 
-> **PHƯƠNG PHÁP — Phương trình có giá trị tuyệt đối.** Giá trị tuyệt đối cũng yêu cầu chia trường hợp, bởi nó xóa dấu của biểu thức bên trong. Giá trị tuyệt đối luôn không âm; bỏ dấu bằng mắt có thể tạo nghiệm không có trong phương trình gốc. Để xác định điều đó, cần xét giá trị tuyệt đối |u| là khoảng cách đến 0 trên trục số. Nếu |A|=c hằng số: c<0 vô nghiệm; c≥0 giải A=±c (c=0 hai nhánh trùng). Nếu |A(x)|=B(x), cần B(x)≥0 rồi tách A=B hoặc A=−B, **kiểm lại điều kiện trên từng nhánh**. Nhờ phân nhánh đúng theo dấu, ta không bỏ sót nghiệm do giá trị tuyệt đối xóa dấu của biểu thức bên trong.
+> **PHƯƠNG PHÁP — Phương trình có giá trị tuyệt đối.** Giá trị tuyệt đối luôn không âm và \(\lvert u\rvert\) là khoảng cách đến 0 trên trục số. Nếu \(\lvert A\rvert=c\) với c là hằng số: \(c<0\) thì vô nghiệm; \(c\ge0\) thì giải \(A=\pm c\) (hai nhánh trùng khi \(c=0\)). Nếu \(\lvert A(x)\rvert=B(x)\), cần \(B(x)\ge0\) rồi tách \(A(x)=B(x)\) hoặc \(A(x)=-B(x)\), **kiểm lại điều kiện trên từng nhánh**. Nhờ phân nhánh đúng theo dấu, ta không bỏ sót nghiệm.
 
-Chẳng hạn, |x−1|=3 ⇒ x−1=3 hoặc −3 ⇒ x=4 hoặc −2; thử khoảng cách đến 1 đều là 3. Không thể chỉ lấy nghiệm x=4 vì giá trị tuyệt đối xóa dấu.
+Chẳng hạn, \(\lvert x-1\rvert=3\) cho \(x-1=3\) hoặc \(x-1=-3\), nên \(x=4\) hoặc \(x=-2\); cả hai có khoảng cách đến 1 bằng 3. Không thể chỉ lấy \(x=4\).
 
 **Ví dụ**
 
@@ -229,13 +229,13 @@ Chẳng hạn, |x−1|=3 ⇒ x−1=3 hoặc −3 ⇒ x=4 hoặc −2; thử kho�
 
 **Vận dụng**
 
-Giải |x+3|=x+3.
+Giải \(\lvert x+3\rvert=x+3\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Vì |u|=u khi u≥0, ta có x+3≥0 ⇒ x≥−3. Thử x=−4 cho |−1|=1 khác −1.
+Vì \(\lvert u\rvert=u\) khi và chỉ khi \(u\ge0\), ta có \(x+3\ge0\Rightarrow x\ge-3\). Thử \(x=-4\) cho \(\lvert-1\rvert=1\ne-1\).
 
-Nếu quên điều kiện B≥0, thử một x làm B âm; làm lại Bài 11 và Bài 12 trong phần Luyện tập.
+Nếu quên điều kiện \(B\ge0\), thử một x làm B âm; làm lại Bài 11 và Bài 12 trong phần Luyện tập.
 
 </details>
 
@@ -249,13 +249,13 @@ Một **phương trình chứa căn thức** là phương trình có ẩn xuất
 
 Vì sao nghiệm của phương trình bình phương chưa chắc là nghiệm phương trình chứa căn?
 
-Đây là nguyên nhân chính của nghiệm ngoại lai khi giải phương trình chứa căn. Điểm xuất phát là dấu không âm của √A, bình phương hai vế. Từ A=B suy ra A²=B²; chiều đảo không đúng nếu A,B có thể trái dấu. 
+Đây là nguyên nhân chính của nghiệm ngoại lai khi giải phương trình chứa căn. Điểm xuất phát là dấu không âm của \(\sqrt A\). Từ \(A=B\) suy ra \(A^2=B^2\); chiều đảo không đúng nếu A và B có thể trái dấu.
 
 > **TÍNH CHẤT — Bình phương hai vế.** Với hai biểu thức thực có nghĩa, từ \(U=V\) luôn suy ra \(U^2=V^2\). Chiều ngược lại không bắt buộc đúng: \(U^2=V^2\) chỉ cho \(U=V\) hoặc \(U=-V\). Vì vậy, bình phương hai vế của phương trình có thể tạo thêm ứng viên, không được coi là phép biến đổi tương đương nếu thiếu điều kiện về dấu.
 
 Khi vế trái là một căn bậc hai số học, nó không âm; nếu vế phải âm thì ứng viên tìm được sau bình phương phải bị loại. Ta sẽ phát biểu đầy đủ điều kiện tương đương cho hai dạng phương trình chứa căn ở hai mục tiếp theo, rồi kiểm nghiệm vào phương trình gốc.
 
-Chẳng hạn, √(x+3)=x−1 ⇒ điều kiện x≥1; bình phương x+3=(x−1)² ⇒ x²−3x−2=0 ⇒ x=(3±√17)/2. Chỉ x=(3+√17)/2≥1 thỏa; nghiệm còn lại cho vế phải âm nên ngoại lai.
+Chẳng hạn, \(\sqrt{x+3}=x-1\) đòi hỏi \(x\ge1\). Bình phương được \(x+3=(x-1)^2\Rightarrow x^2-3x-2=0\), nên \(x=\frac{3\pm\sqrt{17}}2\). Chỉ \(x=\frac{3+\sqrt{17}}2\ge1\) thỏa; nghiệm còn lại cho vế phải âm nên ngoại lai.
 
 ![Sơ đồ biến đổi tương đương và bước bình phương một chiều](../../../assets/visuals/THPT_TOPIC03_EQUIVALENCE_VS_SQUARING_R01.svg)
 
@@ -269,11 +269,11 @@ Chẳng hạn, √(x+3)=x−1 ⇒ điều kiện x≥1; bình phương x+3=(x−
 
 **Vận dụng**
 
-Giải √(x+1)=x.
+Giải \(\sqrt{x+1}=x\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Điều kiện x≥0; bình phương x+1=x² ⇒ x=(1±√5)/2. Chỉ x=(1+√5)/2≥0 được nhận.
+Điều kiện \(x\ge0\); bình phương được \(x+1=x^2\Rightarrow x=\frac{1\pm\sqrt5}2\). Chỉ \(x=\frac{1+\sqrt5}2\ge0\) được nhận.
 
 Nếu hai nghiệm sau bình phương đều được nhận, thử nghiệm âm và so dấu hai vế; làm lại Bài 19 và Bài 20 trong phần Luyện tập.
 
@@ -285,29 +285,29 @@ Nếu hai nghiệm sau bình phương đều được nhận, thử nghiệm âm
 
 Với hai căn cùng bằng nhau, phải kiểm điều kiện của những biểu thức nào?
 
-> **TÍNH CHẤT — Hai căn bậc hai và điều kiện đồng thời.** Hai căn bậc hai bằng nhau chỉ khi các biểu thức bên trong thỏa những điều kiện cần thiết. Một căn không xác định có thể tạo nghiệm ảo tưởng sau phép bình phương. Ta bắt đầu từ điều kiện √u xác định khi u≥0. Với √A(x)=√B(x) trên ℝ, tương đương với **A=B và A≥0** (khi A=B, B≥0 tự theo). Có thể ghi riêng A≥0, B≥0 để dễ kiểm. Tìm nghiệm ứng viên từ A=B, lọc miền trước khi thế. Không suy ra |A|=|B|.
+> **TÍNH CHẤT — Hai căn bậc hai và điều kiện đồng thời.** Căn \(\sqrt u\) xác định khi \(u\ge0\). Hai căn bậc hai số học có nghĩa và bằng nhau khi và chỉ khi các biểu thức dưới căn bằng nhau và không âm. Với \(\sqrt{A(x)}=\sqrt{B(x)}\) trên \(\mathbb R\), điều kiện tương đương là **\(A(x)=B(x)\) và \(A(x)\ge0\)** (khi hai biểu thức bằng nhau, B cũng không âm). Có thể ghi riêng \(A(x)\ge0\), \(B(x)\ge0\) để dễ kiểm. Chỉ giải \(\lvert A(x)\rvert=\lvert B(x)\rvert\) là chưa đủ: chẳng hạn \(A=-1,\ B=1\) có cùng giá trị tuyệt đối nhưng căn của A không xác định trên \(\mathbb R\). Tìm ứng viên từ \(A(x)=B(x)\), lọc miền rồi thế lại.
 
 Xét ví dụ sát hình trục số: \(\sqrt{x^2+7x+11}=\sqrt{x+3}\). Hai vế đều là căn số học nên, **sau khi ghi điều kiện xác định**, ta giải \(x^2+7x+11=x+3\), hay \((x+2)(x+4)=0\), được các ứng viên \(x=-2,-4\). Điều kiện từ căn phải đòi \(x\ge-3\): loại \(-4\); với \(-2\), cả hai biểu thức dưới căn bằng 1, nên hai vế đều bằng 1. Do đó nghiệm duy nhất là \(x=-2\). Việc kiểm căn trái và thay lại cho thấy không bỏ sót điều kiện ẩn.
 
 ![Hai ứng viên và miền xác định của hai căn](../../../assets/visuals/THPT_TOPIC03_RADICAL_DOMAIN_NUMBERLINE_R01.svg)
 
-*Đọc trục số:* Đầu mút \(-3\) là ranh giới miền \(x\ge-3\), không phải nghiệm. Điểm \(-4\) bị loại vì nằm ngoài miền; \(-2\) được giữ vì hai căn đều bằng 1 khi thay lại. Trục số **minh họa cho chính ví dụ hai căn phía trên**, không thay phép kiểm biểu thức dưới căn trái.
+*Đọc trục số:* Đầu mút \(-3\) được tô kín vì thuộc miền \(x\ge-3\) của căn phải; đó không phải nghiệm của phương trình. Dấu gạch đỏ đánh dấu ứng viên \(-4\) bị loại, còn điểm xanh đậm \(-2\) là ứng viên được nhận vì hai căn đều bằng 1 khi thay lại. Hình không thay phép kiểm biểu thức dưới căn trái.
 
 **Ví dụ**
 
 **Đề bài.** Giải \(\sqrt{x^2+4x+5}=\sqrt{x+5}\) trên \(\mathbb R\).
 
-**Lời giải.** Hai căn xác định khi \(x+5\ge0\) và \(x^2+4x+5\ge0\); điều kiện thứ hai luôn đúng vì \((x+2)^2+1>0\). Bình phương hai căn được \(x^2+3x=0\), nên \(x=0\) hoặc \(x=-3\). Cả hai thỏa \(x\ge-5\) và khi thế vào thì hai biểu thức dưới căn bằng nhau, không âm. Vậy \(S=\{-3,0\}\). Hình trục số phía trên minh họa một trường hợp *khác*, có ứng viên \(-4\) bị loại.
+**Lời giải.** Hai căn xác định khi \(x+5\ge0\) và \(x^2+4x+5\ge0\); điều kiện thứ hai luôn đúng vì \((x+2)^2+1>0\). Bình phương hai căn được \(x^2+3x=0\), nên \(x=0\) hoặc \(x=-3\). Cả hai thỏa \(x\ge-5\) và khi thế vào thì hai biểu thức dưới căn bằng nhau, không âm. Vậy \(S=\{-3;0\}\). Hình trục số phía trên minh họa một trường hợp *khác*, có ứng viên \(-4\) bị loại.
 
 **Vận dụng**
 
-Giải √(x²+5)=√(4x+2).
+Giải \(\sqrt{x^2+5}=\sqrt{4x+2}\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Miền x≥−1/2. Bình phương x²+5=4x+2 ⇒ (x−1)(x−3)=0, x=1 hoặc 3; cả hai hợp miền, thử được √6 và √14 tương ứng ở mỗi vế.
+Miền \(x\ge-\frac12\). Bình phương được \(x^2+5=4x+2\Rightarrow (x-1)(x-3)=0\), nên \(x=1\) hoặc \(x=3\); cả hai hợp miền, thử được \(\sqrt6\) và \(\sqrt{14}\) tương ứng ở mỗi vế.
 
-Nếu quên một miền căn, thay nghiệm âm khiến radicand âm để tự bác; làm lại Bài 21, Bài 14 và Bài 18 trong phần Luyện tập.
+Nếu quên một miền căn, thay ứng viên \(-4\) trong ví dụ sát hình trục số vào \(x+3\) để thấy biểu thức dưới căn âm; làm lại Bài 21, Bài 14 và Bài 18 trong phần Luyện tập.
 
 </details>
 
@@ -315,11 +315,11 @@ Nếu quên một miền căn, thay nghiệm âm khiến radicand âm để tự
 
 ### 3.3. Một căn bằng một biểu thức
 
-Vì sao vế phải của phương trình √A=B phải không âm?
+Vì sao vế phải của phương trình \(\sqrt A=B\) phải không âm?
 
-> **TÍNH CHẤT — Một căn bằng một biểu thức.** Nếu chỉ một vế chứa căn, điều kiện không âm của vế kia trở nên đặc biệt quan trọng. Căn số học không âm, nên không thể bằng số âm dù phương trình sau bình phương thỏa. Trước hết, hãy nhớ căn √u không âm và công thức giải PT bậc hai. √A=B tương đương với **B≥0 và A=B²** trên ℝ; khi A=B²≥0 thì căn cũng xác định. Có thể ghi thêm A≥0 để học sinh kiểm, nhưng đó không phải điều kiện độc lập mới. Giải ứng viên từ A=B² rồi lọc dấu B và thử gốc.
+> **TÍNH CHẤT — Một căn bằng một biểu thức.** Căn số học không âm, nên không thể bằng số âm dù phương trình sau bình phương thỏa. Trước hết, hãy nhớ căn \(\sqrt u\) không âm và công thức giải phương trình bậc hai. \(\sqrt A=B\) tương đương với **\(B\ge0\) và \(A=B^2\)** trên \(\mathbb R\); khi \(A=B^2\ge0\) thì căn cũng xác định. Có thể ghi thêm \(A\ge0\), nhưng đó không phải điều kiện độc lập mới. Giải ứng viên từ \(A=B^2\), lọc dấu B rồi thử gốc.
 
-Hãy kiểm tra trường hợp sau: √(3x+1)=x−1: x≥1. Bình phương 3x+1=(x−1)² ⇒ x²−5x=0 ⇒ x=0 hoặc 5. Loại 0, nhận 5 vì √16=4=5−1.
+Hãy kiểm tra trường hợp sau: \(\sqrt{3x+1}=x-1\) đòi hỏi \(x\ge1\). Bình phương được \(3x+1=(x-1)^2\Rightarrow x^2-5x=0\), nên \(x=0\) hoặc \(x=5\). Loại 0, nhận 5 vì \(\sqrt{16}=4=5-1\).
 
 **Ví dụ**
 
@@ -329,13 +329,13 @@ Hãy kiểm tra trường hợp sau: √(3x+1)=x−1: x≥1. Bình phương 3x+1
 
 **Vận dụng**
 
-Giải √(2x+7)=x+1.
+Giải \(\sqrt{2x+7}=x+1\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Cần x≥−1. Bình phương x²−6=0 ⇒ x=±√6; chỉ +√6≥−1 đạt, âm bị loại. Thử căn bằng √6+1.
+Cần \(x\ge-1\). Bình phương được \(x^2-6=0\Rightarrow x=\pm\sqrt6\); chỉ \(x=\sqrt6\ge-1\) đạt, nghiệm âm bị loại. Thử căn bằng \(\sqrt6+1\).
 
-Nếu chỉ dùng điều kiện A≥0 rồi giữ nghiệm B âm, thử gốc sẽ sai; làm lại Bài 22, Bài 13, Bài 15 và Bài 16 trong phần Luyện tập.
+Nếu chỉ dùng điều kiện \(A\ge0\) rồi giữ nghiệm B âm, thử gốc sẽ sai; làm lại Bài 22, Bài 13, Bài 15 và Bài 16 trong phần Luyện tập.
 
 </details>
 
@@ -345,9 +345,9 @@ Nếu chỉ dùng điều kiện A≥0 rồi giữ nghiệm B âm, thử gốc s
 
 Muốn chắc một nghiệm không ngoại lai, phép kiểm cuối cùng phải dùng phương trình nào?
 
-Như vậy, một nghiệm xuất hiện sau bình phương mới là ứng viên, chưa hẳn nghiệm thật. Một phương trình bình phương có nghiệm không có nghĩa phương trình gốc có nghiệm. Ta có thể sử dụng quy trình √A=√B và √A=B, ĐKXĐ. Lập **bảng ứng viên**: nghiệm của phương trình biến đổi → điều kiện miền → điều kiện dấu của vế phải → thay thử gốc. Đặc biệt với hai căn, ứng viên có thể nằm ngoài miền xác định; với một căn bằng biểu thức, có thể sai do dấu. Phương trình vẫn có thể vô nghiệm sau khi lọc.
+Như vậy, một nghiệm xuất hiện sau bình phương mới là ứng viên, chưa hẳn nghiệm thật. Một phương trình bình phương có nghiệm không có nghĩa phương trình gốc có nghiệm. Ta có thể sử dụng quy trình \(\sqrt A=\sqrt B\) và \(\sqrt A=B\), luôn ghi điều kiện xác định. Lập **bảng ứng viên**: nghiệm của phương trình biến đổi → điều kiện miền → điều kiện dấu của vế phải → thay thử gốc. Đặc biệt với hai căn, ứng viên có thể nằm ngoài miền xác định; với một căn bằng biểu thức, có thể sai do dấu. Phương trình vẫn có thể vô nghiệm sau khi lọc.
 
-Chẳng hạn, √(x+6)=x−2: điều kiện x≥2. Bình phương x+6=(x−2)² ⇒ x²−5x−2=0, nghiệm (5±√33)/2. Chỉ nghiệm dương lớn hơn 2 hợp lệ; nghiệm âm là ngoại lai do vế phải âm. Kiểm x=(5+√33)/2 làm hai vế bằng nhau.
+Chẳng hạn, \(\sqrt{x+6}=x-2\): điều kiện \(x\ge2\). Bình phương được \(x+6=(x-2)^2\Rightarrow x^2-5x-2=0\), nghiệm \(\frac{5\pm\sqrt{33}}2\). Chỉ nghiệm dương lớn hơn 2 hợp lệ; nghiệm âm là ngoại lai do vế phải âm. Với \(r=\frac{5+\sqrt{33}}2\), ta có \(r+6=(r-2)^2\) và \(r-2>0\), nên \(\sqrt{r+6}=r-2\).
 
 ![Hai nhánh giải phương trình chứa căn: kiểm điều kiện → giải ứng viên → thử gốc](../../../assets/images/thpt/THPT_G10_CHVI_B18_RADICAL_FLOW_D5_R03.svg)
 
@@ -357,15 +357,22 @@ Chẳng hạn, √(x+6)=x−2: điều kiện x≥2. Bình phương x+6=(x−2)�
 
 **Đề bài.** Giải \(\sqrt{x+1}=x-3\).
 
-**Lời giải.** Phải có \(x\ge3\). Bình phương cho \(x+1=(x-3)^2\), tức \(x^2-7x+8=0\), nên \(x=(7\pm\sqrt{17})/2\). Ứng viên \((7-\sqrt{17})/2<3\) bị loại; ứng viên \((7+\sqrt{17})/2>3\) nhận sau khi thế lại vào phương trình gốc. Đọc sơ đồ để phân biệt bước tạo ứng viên và bước kiểm nghiệm.
+**Lời giải.** Phải có \(x\ge3\). Bình phương cho \(x+1=(x-3)^2\), tức \(x^2-7x+8=0\), nên có hai ứng viên \(r_-=\frac{7-\sqrt{17}}2\) và \(r_+=\frac{7+\sqrt{17}}2\). Ta kiểm từng ứng viên như sau.
+
+| Ứng viên | Điều kiện \(x\ge3\) | Thế lại phương trình gốc |
+|---|---|---|
+| \(r_-\) | Không thỏa vì \(\sqrt{17}>1\) | Vế phải âm; loại. |
+| \(r_+\) | Thỏa | Vì \(r_++1=(r_+-3)^2\) và \(r_+-3>0\), nên \(\sqrt{r_++1}=r_+-3\); nhận. |
+
+Vậy \(S=\left\{\frac{7+\sqrt{17}}2\right\}\). Với nghiệm vô tỉ, có thể kiểm bằng đẳng thức và dấu như trên, không cần làm tròn.
 
 **Vận dụng**
 
-Giải √(x²+5)=x−2 trong ℝ.
+Giải \(\sqrt{x^2+5}=x-2\) trong \(\mathbb R\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Điều kiện x≥2. Bình phương x²+5=x²−4x+4 ⇒ x=−1/4, trái miền. Vậy S=∅, không nhận ứng viên.
+Điều kiện \(x\ge2\). Bình phương được \(x^2+5=x^2-4x+4\Rightarrow x=-\frac14\), trái miền. Vậy \(S=\varnothing\), không nhận ứng viên.
 
 Nếu kết luận nghiệm chỉ bằng giải phương trình sau bình phương, hãy lập bảng ‘ứng viên→miền→dấu→gốc’; làm lại Bài 23, Bài 24 và Bài 25 trong phần Luyện tập.
 
@@ -377,13 +384,13 @@ Khi một phương trình quá phức tạp, ta có thể đặt ẩn phụ đ�
 
 <!-- LESSON_ID: TOP03-M11; OUTCOME_ID: TOP03-O11; PREVIOUS_SOURCE_BLOB: e94bbe37339f7002bd8e29bdf60e0c86fae0aa95 -->
 
-### 4.1. Đặt t=x², nhớ t không âm
+### 4.1. Đặt ẩn phụ là bình phương, nhớ điều kiện không âm
 
-Khi đặt t=x², một nghiệm t âm phải xử lí ra sao?
+Khi đặt \(t=x^2\), một nghiệm t âm phải xử lí ra sao?
 
-> **PHƯƠNG PHÁP — Đặt t=x², nhớ t không âm.** Một phương trình bậc bốn đôi khi trở thành bậc hai nhưng nghiệm ẩn phụ âm không có nghĩa trên ℝ. Để xác định điều đó, cần xét bình phương ≥0 và nghiệm PT bậc hai. Với x⁴+px²+q=0, đặt t=x²≥0. Giải t²+pt+q=0, **lọc t≥0**, rồi giải x²=t: t=0 cho x=0, t>0 cho x=±√t. Đây là một cách mở rộng phương pháp quy về phương trình bậc hai: biến đổi chỉ có ý nghĩa khi ta giữ điều kiện \(t\ge0\) và trả kết quả về ẩn \(x\).
+> **PHƯƠNG PHÁP — Đặt ẩn phụ là bình phương.** Một phương trình bậc bốn đôi khi trở thành bậc hai nhưng nghiệm ẩn phụ âm không có nghĩa trên \(\mathbb R\). Với \(x^4+px^2+q=0\), đặt \(t=x^2\ge0\). Giải \(t^2+pt+q=0\), **lọc \(t\ge0\)**, rồi giải \(x^2=t\): \(t=0\) cho \(x=0\), \(t>0\) cho \(x=\pm\sqrt t\). Phép đổi biến chỉ có ý nghĩa khi giữ điều kiện \(t\ge0\) và trả kết quả về ẩn x.
 
-Chẳng hạn, x⁴−10x²+9=0 ⇒ t²−10t+9=(t−1)(t−9)=0 ⇒ t=1 hoặc 9, x=±1 hoặc ±3. Không nhận t âm.
+Chẳng hạn, \(x^4-10x^2+9=0\Rightarrow t^2-10t+9=(t-1)(t-9)=0\). Do đó \(t=1\) hoặc \(t=9\), nên \(x=\pm1\) hoặc \(x=\pm3\). Không nhận t âm.
 
 **Ví dụ**
 
@@ -393,13 +400,13 @@ Chẳng hạn, x⁴−10x²+9=0 ⇒ t²−10t+9=(t−1)(t−9)=0 ⇒ t=1 hoặc 
 
 **Vận dụng**
 
-Giải x⁴−2x²−3=0.
+Giải \(x^4-2x^2-3=0\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-t=x²≥0; t²−2t−3=(t−3)(t+1)=0. Chỉ t=3 hợp lệ ⇒ x=±√3.
+\(t=x^2\ge0\); \(t^2-2t-3=(t-3)(t+1)=0\). Chỉ \(t=3\) hợp lệ, nên \(x=\pm\sqrt3\).
 
-Nếu suy x²=−1 có nghiệm thực, kiểm tính không âm của bình phương; làm lại Bài 28 và Bài 29 trong phần Luyện tập.
+Nếu suy \(x^2=-1\) có nghiệm thực, kiểm tính không âm của bình phương; làm lại Bài 28 và Bài 29 trong phần Luyện tập.
 
 </details>
 
@@ -409,9 +416,9 @@ Nếu suy x²=−1 có nghiệm thực, kiểm tính không âm của bình phư
 
 Vì sao nghiệm âm có thể đúng đại số nhưng sai với chiều dài hoặc vận tốc?
 
-> **PHƯƠNG PHÁP — Mô hình hóa và giữ đơn vị.** Cuối cùng, nghiệm đại số phải quay về đúng đại lượng và đơn vị của tình huống thực tế. Trong hình học và chuyển động, một nghiệm âm hay thời gian vô nghĩa không thể dùng làm đáp án. Điểm xuất phát là pythagore, quãng đường/vận tốc=thời gian, đơn vị đo. Ghi biến, đơn vị và điều kiện **trước** phương trình. Chọn mô hình căn độ dài nếu cạnh huyền, phân thức nếu thời gian; giải thành phương trình đại số, lọc điều kiện, kiểm tính đúng của cả số lẫn đơn vị. Điều quan trọng không phải mô hình dùng phương tiện nào, mà là phương trình phải diễn tả đúng cùng một tình huống và nghiệm cuối cùng phải đáp ứng ý nghĩa của đại lượng.
+> **PHƯƠNG PHÁP — Mô hình hóa và giữ đơn vị.** Cuối cùng, nghiệm đại số phải quay về đúng đại lượng và đơn vị của tình huống thực tế. Trong hình học và chuyển động, nghiệm âm hay thời gian vô nghĩa không thể dùng làm đáp án. Điểm xuất phát là định lí Pythagore và quan hệ thời gian bằng quãng đường chia cho vận tốc. Ghi biến, đơn vị và điều kiện **trước** phương trình. Chọn mô hình căn độ dài nếu cạnh huyền, phân thức nếu thời gian; giải thành phương trình đại số, lọc điều kiện, kiểm tính đúng của cả số lẫn đơn vị.
 
-Chẳng hạn, Tam giác vuông có hai cạnh góc vuông x>0 và x+7 mét, cạnh huyền 13 mét: √[x²+(x+7)²]=13. Bình phương 2x²+14x+49=169 ⇒ x²+7x−60=0 ⇒ (x+12)(x−5)=0. Nhận x=5, loại −12; ba cạnh 5,12,13 m, thử 25+144=169.
+Chẳng hạn, tam giác vuông có hai cạnh góc vuông \(x>0\) và \(x+7\) mét, cạnh huyền 13 mét: \(\sqrt{x^2+(x+7)^2}=13\). Bình phương được \(2x^2+14x+49=169\Rightarrow x^2+7x-60=0\Rightarrow (x+12)(x-5)=0\). Nhận \(x=5\), loại −12; ba cạnh 5, 12, 13 m, thử \(25+144=169\).
 
 **Ví dụ**
 
@@ -421,13 +428,13 @@ Chẳng hạn, Tam giác vuông có hai cạnh góc vuông x>0 và x+7 mét, c�
 
 **Vận dụng**
 
-Một xe đi 90 km với tốc độ v>0; nếu tăng 15 km/h thì nhanh hơn 1 giờ. Tìm v.
+Một xe đi 90 km với tốc độ \(v>0\); nếu tăng 15 km/h thì nhanh hơn 1 giờ. Tìm v.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-90/v−90/(v+15)=1 ⇒ v²+15v−1350=0 ⇒ (v−30)(v+45)=0. Lọc v>0 ⇒ v=30 km/h; thời gian 3 giờ và 2 giờ.
+Gọi v là vận tốc cũ (km/h). Thời gian cũ là \(\frac{90}{v}\) giờ, thời gian mới là \(\frac{90}{v+15}\) giờ. Hiệu thời gian cũ trừ thời gian mới bằng 1 giờ, nên \(\frac{90}{v}-\frac{90}{v+15}=1\Rightarrow v^2+15v-1350=0\Rightarrow (v-30)(v+45)=0\). Lọc \(v>0\), nhận \(v=30\,\mathrm{km/h}\); thời gian lần lượt là 3 giờ và 2 giờ.
 
-Nếu quên miền vật lý hoặc mẫu v(v+15)≠0, đặt biến/đơn vị lại rồi thử số; làm lại Bài 30, Bài 26, Bài 27 và Bài 31 trong phần Luyện tập.
+Nếu quên miền vật lý hoặc điều kiện \(v(v+15)\ne0\), đặt biến và đơn vị lại rồi thử số; làm lại Bài 30, Bài 26, Bài 27 và Bài 31 trong phần Luyện tập.
 
 </details>
 
