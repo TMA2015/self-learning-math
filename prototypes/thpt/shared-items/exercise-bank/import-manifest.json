@@ -17917,6 +17917,71 @@
       "review_scope": "Scoped three-way reconciliation and author math review; D6 order/reference existence, not full Written rubric or fresh S1 PDF audit; no bank-wide Academic/PED PASS",
       "remaining": "CD17–19,22 remaining FirstTry (CD18 partial CP65), CD01–13 local first-try; Practice/Replay full field parity, shared placements and depth, Written provenance/rubric and SGK follow-up",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp68": {
+      "scope": "CD17–19 public Knowledge FirstTry only; full Practice/Replay field reconciliation not claimed",
+      "baseline_commit": "4d6c06f9be95a15b0aea0c0d61d842f9b3a2de97",
+      "item_commit": "d2337f8acaef1886a8e79fc9ba82c56f08c4ebbd",
+      "item_shard": {
+        "path": "items/topic-knowledge-first-try.json",
+        "before": "a99fddfabb5f7bf925783faff02ed37a35b4968f",
+        "after": "fc84ecf71227cd2c34aa68c6638f4e9220d62c8e"
+      },
+      "sources": [
+        {
+          "topic": "CD17",
+          "old": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+          "current": "03b6b27adbeaf854d3db1d8fc9e830a0294a08aa",
+          "first_try": 12,
+          "updated": 12
+        },
+        {
+          "topic": "CD18",
+          "old": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+          "current": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+          "first_try": 40,
+          "updated": 35,
+          "cp65_exact_preserved": [
+            "THPT-TOP18-T01",
+            "THPT-TOP18-T04",
+            "THPT-TOP18-T13",
+            "THPT-TOP18-T15",
+            "THPT-TOP18-T32"
+          ],
+          "historical_projection_reconciled": "THPT-TOP18-T40"
+        },
+        {
+          "topic": "CD19",
+          "old": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+          "current": "ba549932e8a56bb46ec2951171e999cc70d6f34f",
+          "first_try": 14,
+          "updated": 14
+        }
+      ],
+      "checks": {
+        "first_try_placements": 66,
+        "source_old_stem_matches_among_updated": 49,
+        "source_old_solution_matches_among_updated": 54,
+        "bank_stem_deltas_reconciled": 12,
+        "bank_solution_deltas_reconciled": 7,
+        "readback_changed_records": 61,
+        "readback_unchanged_records": 109,
+        "cp65_exact_preserved": 5,
+        "first_try_placement_blob_unchanged": "eb32ea775a8ca9242e6b052163f6fc1fcf829426",
+        "d6_order_and_written_reference_resolved": 66,
+        "d6_mixed_formative_written_orders": 5,
+        "inline_math_delimiters_balanced": 66,
+        "auto_grade_false": 66
+      },
+      "academic_changes": [
+        "TOP17-T05 adopt AB/CC' and BC=5; T09 adopt mixed units, 0.3 dm=3 cm, V=30 cm^3; T12 adopt full height=4 and volume=48 task.",
+        "TOP18 retain CP65 five exact; T03 arbitrary-point vector sum; T06 concurrent forces; T16 explicit motion law; T35 explicit sine and tangent; T38 distinguish surface and solid; T40 source custody resolved in scoped FirstTry only.",
+        "TOP19-T13 retain model/estimate caveat; T14 clarify two distinct causes of 56 vs correct 336."
+      ],
+      "review_scope": "Scoped author math and three-way reconciliation; D6 order/reference existence, not full Written rubric or fresh S1 PDF audit; no bank-wide Academic/PED PASS",
+      "progress_existing_first_try": "157/170 reconciled (CP65 five preserved, CP66 25, CP67 66, CP68 61); CD22 13 remaining",
+      "remaining": "CD22 13 existing FirstTry, then CD01–13 local FirstTry; full Practice/Replay field parity, shared placements/depth, Written provenance/rubric and SGK follow-up",
+      "release_authorization": false
     }
   }
 }
