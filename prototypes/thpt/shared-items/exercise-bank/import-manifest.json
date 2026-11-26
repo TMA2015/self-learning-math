@@ -18536,6 +18536,156 @@
       "review_scope": "Scoped source, math, formative/Written stem comparison, D6 resolution; no fresh primary SGK/SBT PDF or Written rubric audit; no bank-wide Academic/PED PASS.",
       "remaining": "CD10–13 remaining 86 blocks; 19 missing skill tags, full Practice/Replay field reconciliation, global scan, shared placements/depth/Written/SGK",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp76": {
+      "scope": "CD10–13: all remaining inventoried public unkeyed Knowledge FirstTry; exact learner sources",
+      "baseline_commit": "a5d887f721a863d2f8f594a8c39ca54331758075",
+      "commits": [
+        "61a9b22c6ef34f222cb229ed37daed684932ded2",
+        "3240fb6363d71d3f6e99ca994d891867d0555c46",
+        "c3003a388792d81fe4c1773eedb45764cf9c9dab",
+        "7dce09bf1472274b0ab2b19b0830587a872bee23"
+      ],
+      "sources": [
+        {
+          "topic": "CD10",
+          "learner_blob": "952ce21e99953348068b6499449dae75d4490d10",
+          "blocks": 36,
+          "added": 32,
+          "reused": 4
+        },
+        {
+          "topic": "CD11",
+          "learner_blob": "64688cf81991a432264c06a2ff0a908371ca1f21",
+          "blocks": 22,
+          "added": 22,
+          "reused": 0
+        },
+        {
+          "topic": "CD12",
+          "learner_blob": "6fd684807c3cf16489ed91e4a573edc3d1b2a6bc",
+          "blocks": 12,
+          "added": 9,
+          "reused": 3
+        },
+        {
+          "topic": "CD13",
+          "learner_blob": "7e54d34b9eee75ab4b8f8e4f53ab40298e701493",
+          "blocks": 16,
+          "added": 15,
+          "reused": 1
+        }
+      ],
+      "reused_existing_ids": [
+        {
+          "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
+          "order": 16,
+          "item_id": "THPT-G12-CHI-B03-C04",
+          "practice_orders": [
+            50,
+            52
+          ]
+        },
+        {
+          "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
+          "order": 17,
+          "item_id": "THPT-G12-CHI-B03-P04",
+          "practice_orders": [
+            55
+          ]
+        },
+        {
+          "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
+          "order": 20,
+          "item_id": "THPT-G12-CHI-B01-C04",
+          "practice_orders": [
+            62,
+            65
+          ]
+        },
+        {
+          "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
+          "order": 25,
+          "item_id": "THPT-G12-B01-KFT03",
+          "practice_orders": [
+            78,
+            80
+          ]
+        },
+        {
+          "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+          "order": 2,
+          "item_id": "THPT-TOP12-P02",
+          "practice_orders": [
+            5,
+            7
+          ]
+        },
+        {
+          "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+          "order": 4,
+          "item_id": "THPT-TOP12-P01",
+          "practice_orders": [
+            4
+          ]
+        },
+        {
+          "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+          "order": 12,
+          "item_id": "THPT-TOP12-P11",
+          "practice_orders": [
+            30
+          ]
+        },
+        {
+          "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+          "order": 11,
+          "item_id": "THPT-G12-B06-P06",
+          "practice_orders": [
+            22,
+            43
+          ]
+        }
+      ],
+      "reuse_note": "Eight reused IDs; no existing items edited. CD10 KFT17/25 use equivalent prompts with domain/counterexample reasoning. CD12 KFT01/05/10 retained as distinct open tasks with distinct demand (sign prediction, explanation of Pitago limitation, subset S and r) vs legacy MCQ/extra R; CD11 KFT10 requires three integrals rather than one. CD13 KFT04 uses distinct literal endpoints. Existing public self-check records untouched. Equivalent historical variants not adjudicated globally.",
+      "academic_changes": [
+        "CD10 explicit extrema attainment, domain/asymptote limits, speed and marginal cost interpretation, boundary and integer optimization; source figure reference KFT18.",
+        "CD11 antiderivative checks and integration bounds, sign, displacement/path, area and volume; KFT18 8/3 verified.",
+        "CD12 correct angle sign feedback and triangle hypotheses; map actual skills instead of same-number practice IDs.",
+        "CD13 explicit parallelogram hypothesis, constant force, coordinates, zero displacement vs path and intermediate calculations."
+      ],
+      "checks": {
+        "item_blob": "710866c0763beeb847251da6791deec7c559ba16",
+        "placement_blob": "72cddbdddad65f2f3af6f5d14349036948d33c6b",
+        "old_first_try_records_unchanged": 315,
+        "old_first_try_placements_unchanged": 328,
+        "new_unique_ids": 78,
+        "new_placements": 86,
+        "existing_ids_reused": 8,
+        "all_D6_orders_resolve_in_batch": true,
+        "all_reuse_self_links_removed": true,
+        "balanced_math_delimiters_new_records": 78,
+        "auto_grade_false": 86,
+        "unmapped_new_skill_ids": [],
+        "required_visual": {
+          "item_id": "THPT-TOP10-KFT18",
+          "blob": "fd95665e72fb029bf5182643ea3888f19bb9732b",
+          "author_commit": "92eaf00e64b4bae1a35165926279407dc192759e",
+          "verified": "SVG source metadata and path at author PR #886, absent from candidate HEAD; RELEASE linkage pending"
+        }
+      },
+      "progress": {
+        "topic_first_try_placements": 414,
+        "distinct_topic_first_try_shard_records": 393,
+        "total_inventoried_topic_first_try_blocks": 414,
+        "pending": 0,
+        "projected_bank_total_ids": 2535,
+        "projected_total_placements": 4165,
+        "counts_note": "CP75 projection 2457/4079 +78/+86, not fresh global scan"
+      },
+      "review_scope": "Scoped learner source, math and related formative/Written stem comparisons, not complete bank academic/pedagogy audit or source PDF verification. No private RD1.",
+      "remaining": "19 earlier missing skill mappings; global ID/placement scan, three-way Practice/Replay field reconciliation, shared placements CD20/21, depth CD15/19/22, Written and SGK/SBT audit, interaction conversion, visual linkage; no cutover until verified.",
+      "release_authorization": false
     }
   }
 }
