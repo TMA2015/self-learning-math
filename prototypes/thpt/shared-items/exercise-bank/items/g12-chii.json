@@ -532,16 +532,16 @@
   {
     "item_id": "THPT-G12-B06-P12",
     "content_version": "G12-SGK-CHII-B06-B08-R00",
-    "stem": "Một lực không đổi 8 N tạo góc 120° với độ dời 3 m. Tính công của lực.",
-    "answer_key": "-12 J",
-    "worked_solution": "Giả sử lực không đổi. Công \\(W=8\\cdot3\\cdot\\cos120^\\circ=24\\cdot(-\\frac12)=-12\\) J. Thành phần lực theo hướng độ dời là âm.",
+    "stem": "Một vật dịch chuyển thẳng 3 m. Lực không đổi \\(\\vec F\\) có độ lớn 8 N và tạo góc \\(120^\\circ\\) với độ dời; lực không đổi \\(\\vec G\\) có độ lớn 6 N cùng hướng độ dời. Tính công của từng lực và công của hợp lực \\(\\vec F+\\vec G\\). Giải thích vì sao hợp lực có công dương dù lực \\(\\vec F\\) có công âm.",
+    "answer_key": "\\(W_F=-12\\,\\mathrm J\\), \\(W_G=18\\,\\mathrm J\\), \\(W_{F+G}=6\\,\\mathrm J\\).",
+    "worked_solution": "Gọi \\(\\vec s\\) là vectơ độ dời. Công của lực \\(\\vec F\\) bằng \\(\\vec F\\cdot\\vec s=8\\cdot3\\cos120^\\circ=-12\\,\\mathrm J\\). Công của \\(\\vec G\\) bằng \\(6\\cdot3\\cos0^\\circ=18\\,\\mathrm J\\). Theo tính phân phối của tích vô hướng, \\(W_{F+G}=(\\vec F+\\vec G)\\cdot\\vec s=W_F+W_G=-12+18=6\\,\\mathrm J\\). Lực F có thành phần ngược hướng độ dời bằng -4 N, còn G đóng góp +6 N, nên hợp lực có thành phần dọc độ dời bằng +2 N. Không cộng độ lớn hai lực rồi nhân 3 vì chúng không cùng hướng.",
     "skill_ids": [
       "G12-CHII-B06-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": 3,
     "hints": [
-      "Công bằng 8·3·cos120°."
+      "Tính từng tích vô hướng với \\(\\vec s\\), rồi dùng tính phân phối của tích vô hướng."
     ],
     "rubric": null,
     "interaction": {
@@ -558,7 +558,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu kết quả dương, lực có thành phần chống độ dời nên công âm. Ôn CĐ18 mục 1.6; luyện THPT-TOP18-P06."
+    "remediation": "Nếu tính 42 J từ tổng độ lớn lực, hãy xét góc của từng lực với độ dời và dấu của từng công. Ôn CĐ18 mục 1.6; luyện THPT-TOP18-P06."
   },
   {
     "item_id": "THPT-G12-B07-C01",
@@ -1462,16 +1462,16 @@
   {
     "item_id": "THPT-G12-B08-P12",
     "content_version": "G12-SGK-CHII-B06-B08-R00",
-    "stem": "Máy bay A(1;2;3) tới B(4;6;15) theo đường thẳng; độ dời dài bao nhiêu?",
-    "answer_key": "13 đơn vị",
-    "worked_solution": "\\(\\overrightarrow{AB}=(4-1;6-2;15-3)=(3;4;12)\\). Độ lớn độ dời là \\(\\sqrt{3^2+4^2+12^2}=\\sqrt{169}=13\\) đơn vị.",
+    "stem": "Một thiết bị bay từ \\(A(1;2;3)\\) đến \\(M(4;6;3)\\), rồi bay thẳng đến \\(B(4;6;15)\\); mỗi chặng là đoạn thẳng, tọa độ tính bằng mét. Tổng thời gian là 4 giây. Tính vectơ độ dời tổng hợp, độ lớn độ dời, quãng đường, vectơ vận tốc trung bình và tốc độ trung bình.",
+    "answer_key": "Độ dời \\((3;4;12)\\) m, độ lớn 13 m; quãng đường 17 m; vận tốc trung bình \\((\\frac34;1;3)\\) m/s; tốc độ trung bình \\(\\frac{17}{4}\\) m/s.",
+    "worked_solution": "Hai chặng có độ dời \\(\\overrightarrow{AM}=(3;4;0)\\), \\(\\overrightarrow{MB}=(0;0;12)\\). Tổng là \\(\\overrightarrow{AB}=(3;4;12)\\), độ lớn \\(\\sqrt{9+16+144}=13\\) m. Vì đi theo hai đoạn thẳng, quãng đường là \\(AM+MB=5+12=17\\) m. Vận tốc trung bình là \\(\\frac14\\overrightarrow{AB}=(\\frac34;1;3)\\) m/s. Tốc độ trung bình là \\(\\frac{17}{4}\\) m/s, không phải \\(\\frac{13}{4}\\) m/s: số sau là độ lớn vận tốc trung bình. Hai đại lượng khác nhau vì đường đi gấp khúc.",
     "skill_ids": [
       "G12-CHII-B08-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": 3,
     "hints": [
-      "Tính B−A rồi độ dài vectơ."
+      "Cộng hai vectơ để tìm độ dời; cộng hai độ dài để tìm quãng đường. Chia từng đại lượng đúng loại cho 4 giây."
     ],
     "rubric": null,
     "interaction": {
@@ -1488,7 +1488,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên z, hiệu z là 12, phải bình phương cả ba thành phần. Ôn CĐ18 mục 3.6; luyện THPT-TOP18-P16."
+    "remediation": "Nếu cho tốc độ trung bình bằng \\(\\frac{13}{4}\\) m/s, em đã chia độ lớn độ dời thay vì quãng đường. Ôn CĐ18 mục 3.6; luyện THPT-TOP18-P16."
   },
   {
     "item_id": "THPT-G12-B06-T01",
