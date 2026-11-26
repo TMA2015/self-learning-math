@@ -774,15 +774,15 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-W01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O01; SINGLE_ITEM_ID -->
 
-**Bài 1.** Viết lời giải kiểm tra hai hàm F(x)=x^3-2x và G(x)=x^3-2x+6 có cùng là nguyên hàm của f(x)=3x^2-2 không.
+**Bài 1.** Viết lời giải kiểm tra hai hàm \(F(x)=x^3-2x\) và \(G(x)=x^3-2x+6\) có cùng là nguyên hàm của \(f(x)=3x^2-2\) không.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** Cả hai đúng; G-F=6.
+**Đáp án:** Cả hai đúng; \(G-F=6\).
 
-**Lời giải:** F'=G'=3x^2-2; cùng trên R; G-F=hằng số 6.
+**Lời giải:** \(F'=G'=3x^2-2\); cùng trên \(\mathbb R\); \(G-F=6\) là hằng số.
 
-**Rubric tự luận /5:** 2đ tính đúng hai đạo hàm; 1đ đối chiếu f; 1đ xét chung khoảng R; 1đ kết luận hai hàm chênh hằng số.
+**Rubric tự luận /5:** 2đ tính đúng hai đạo hàm; 1đ đối chiếu f; 1đ xét chung khoảng \(\mathbb R\); 1đ kết luận hai hàm chênh hằng số.
 
 **Nếu làm sai:** Muốn chứng minh nguyên hàm, hãy lấy đạo hàm F và so với f trên đúng khoảng.
 
@@ -790,13 +790,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-A01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O01; SINGLE_ITEM_ID -->
 
-**Bài 2.** Mô hình vị trí s(t)=t^3+2t (m) với t>=0. Viết vận tốc v(t).
+**Bài 2.** Mô hình vị trí \(s(t)=t^3+2t\) (m) với \(t\ge0\). Viết vận tốc v(t).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** v(t)=3t^2+2 (m/s).
+**Đáp án:** \(v(t)=3t^2+2\) (m/s).
 
-**Lời giải:** Lấy đạo hàm vị trí theo thời gian; v(t)=s'(t)=3t^2+2, t>=0.
+**Lời giải:** Lấy đạo hàm vị trí theo thời gian; \(v(t)=s'(t)=3t^2+2\), \(t\ge0\).
 
 **Nếu làm sai:** Muốn chứng minh nguyên hàm, hãy lấy đạo hàm F và so với f trên đúng khoảng.
 
@@ -804,13 +804,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-P01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O01; SINGLE_ITEM_ID -->
 
-**Bài 3.** Kiểm tra G(x)=x^3/3+x có phải nguyên hàm của g(x)=x^2+1.
+**Bài 3.** Kiểm tra \(G(x)=\frac{x^3}{3}+x\) có phải nguyên hàm của \(g(x)=x^2+1\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Có.
 
-**Lời giải:** G'(x)=x^2+1 trên R. Giải thích chọn cách: Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x.
+**Lời giải:** \(G'(x)=x^2+1\) trên \(\mathbb R\). Giải thích chọn cách: Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x.
 
 **Nếu làm sai:** Muốn chứng minh nguyên hàm, hãy lấy đạo hàm F và so với f trên đúng khoảng.
 
@@ -818,13 +818,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-C01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O01; SINGLE_ITEM_ID -->
 
-**Bài 4.** F(x)=2x^3-5x+7 có là nguyên hàm của f(x)=6x^2-5 trên R không?
+**Bài 4.** \(F(x)=2x^3-5x+7\) có là nguyên hàm của \(f(x)=6x^2-5\) trên \(\mathbb R\) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Có.
 
-**Lời giải:** F'(x)=6x^2-5=f(x) trên R. Giải thích chọn cách: Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x.
+**Lời giải:** \(F'(x)=6x^2-5=f(x)\) trên \(\mathbb R\). Giải thích chọn cách: Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x.
 
 **Nếu làm sai:** Muốn chứng minh nguyên hàm, hãy lấy đạo hàm F và so với f trên đúng khoảng.
 
@@ -832,13 +832,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P01; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O01; SINGLE_ITEM_ID -->
 
-**Bài 5.** Tìm họ nguyên hàm f(x)=6x−4.
+**Bài 5.** Tìm họ nguyên hàm \(f(x)=6x-4\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** F(x)=3x²−4x+C trên ℝ.
+**Đáp án:** \(F(x)=3x^2-4x+C\) trên \(\mathbb R\).
 
-**Lời giải:** Muốn F'=6x−4, chọn F=3x²−4x+C vì (3x²)'=6x và (−4x)'=−4. Hai nguyên hàm trên khoảng ℝ khác nhau hằng số C; kiểm ngược F'=6x−4.
+**Lời giải:** Muốn \(F'=6x-4\), chọn \(F=3x^2-4x+C\) vì \((3x^2)'=6x\) và \((-4x)'=-4\). Hai nguyên hàm trên khoảng \(\mathbb R\) khác nhau hằng số C; kiểm ngược \(F'=6x-4\).
 
 **Nếu làm sai:** Nếu quên +C, nhớ đạo hàm mọi hằng số đều bằng 0, nên có cả một họ nguyên hàm.
 
@@ -846,71 +846,71 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-W02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O02; SINGLE_ITEM_ID -->
 
-**Bài 6.** Tìm F nếu F'(x)=6x và F(-1)=1; kiểm lại đầy đủ.
+**Bài 6.** Tìm F nếu \(F'(x)=6x\) và \(F(-1)=1\); kiểm lại đầy đủ.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** F(x)=3x^2-2.
+**Đáp án:** \(F(x)=3x^2-2\).
 
-**Lời giải:** F=3x^2+C; F(-1)=3+C=1 nên C=-2; đạo hàm 6x và giá trị tại -1 bằng 1.
+**Lời giải:** \(F=3x^2+C\); \(F(-1)=3+C=1\) nên \(C=-2\); đạo hàm 6x và giá trị tại -1 bằng 1.
 
 **Rubric tự luận /5:** 2đ lấy đúng họ nguyên hàm; 1đ lập điều kiện; 1đ giải C; 1đ kiểm lại cả hai điều kiện.
 
-**Nếu làm sai:** Viết F₀+C rồi thay F(a)=b vào F, đừng thay vào đạo hàm F′.
+**Nếu làm sai:** Viết \(F_0+C\) rồi thay \(F(a)=b\) vào \(F\), đừng thay vào đạo hàm \(F'\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-A02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O02; SINGLE_ITEM_ID -->
 
-**Bài 7.** Một vật có v(t)=4t (m/s), s(0)=6m. Viết vị trí s(t) cho t>=0.
+**Bài 7.** Một vật có \(v(t)=4t\) (m/s), \(s(0)=6\) m. Viết vị trí s(t) cho \(t\ge0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** s(t)=2t^2+6.
+**Đáp án:** \(s(t)=2t^2+6\).
 
-**Lời giải:** Từ s'=4t có s=2t^2+C; điều kiện s(0)=6 cho C=6.
+**Lời giải:** Từ \(s'=4t\) có \(s=2t^2+C\); điều kiện \(s(0)=6\) cho \(C=6\).
 
-**Nếu làm sai:** Viết F₀+C rồi thay F(a)=b vào F, đừng thay vào đạo hàm F′.
+**Nếu làm sai:** Viết \(F_0+C\) rồi thay \(F(a)=b\) vào \(F\), đừng thay vào đạo hàm \(F'\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-P02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O02; SINGLE_ITEM_ID -->
 
-**Bài 8.** F'(x)=2x, F(2)=9. Tìm F.
+**Bài 8.** \(F'(x)=2x\), \(F(2)=9\). Tìm F.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** F(x)=x^2+5.
+**Đáp án:** \(F(x)=x^2+5\).
 
-**Lời giải:** F=x^2+C; 4+C=9 nên C=5. Giải thích chọn cách: Tích phân được F+C; thay x0 vào F+C; giải C; kiểm lại đạo hàm và điều kiện đầu.
+**Lời giải:** \(F=x^2+C\); \(4+C=9\) nên \(C=5\). Giải thích chọn cách: Tích phân được F+C; thay \(x_0\) vào F+C; giải C; kiểm lại đạo hàm và điều kiện đầu.
 
-**Nếu làm sai:** Viết F₀+C rồi thay F(a)=b vào F, đừng thay vào đạo hàm F′.
+**Nếu làm sai:** Viết \(F_0+C\) rồi thay \(F(a)=b\) vào \(F\), đừng thay vào đạo hàm \(F'\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-C02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O02; SINGLE_ITEM_ID -->
 
-**Bài 9.** Viết họ nguyên hàm của 4x trên R.
+**Bài 9.** Viết họ nguyên hàm của 4x trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2x^2+C.
+**Đáp án:** \(2x^2+C\).
 
-**Lời giải:** Vì (2x^2)'=4x nên họ là 2x^2+C.
+**Lời giải:** Vì \((2x^2)'=4x\) nên họ là \(2x^2+C\).
 
-**Nếu làm sai:** Viết F₀+C rồi thay F(a)=b vào F, đừng thay vào đạo hàm F′.
+**Nếu làm sai:** Viết \(F_0+C\) rồi thay \(F(a)=b\) vào \(F\), đừng thay vào đạo hàm \(F'\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P02; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O02; SINGLE_ITEM_ID -->
 
-**Bài 10.** F'=3x², F(2)=9; tìm F.
+**Bài 10.** \(F'=3x^2\), \(F(2)=9\); tìm F.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** F=x³+C, C=9−8=1; F=x³+1.
+**Đáp án:** \(F=x^3+C\), \(C=9-8=1\); \(F=x^3+1\).
 
-**Lời giải:** Từ F'=3x² suy F=x³+C. Điều kiện F(2)=9 cho 8+C=9⇒C=1; vậy F=x³+1. Kiểm F'=3x² và F(2)=9.
+**Lời giải:** Từ \(F'=3x^2\) suy \(F=x^3+C\). Điều kiện \(F(2)=9\) cho \(8+C=9\Rightarrow C=1\); vậy \(F=x^3+1\). Kiểm \(F'=3x^2\) và \(F(2)=9\).
 
 **Nếu làm sai:** Thay điều kiện giá trị đầu vào F, không vào F'; C chỉ xuất hiện khi nguyên hàm xong.
 
@@ -918,24 +918,24 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W01; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O02; SINGLE_ITEM_ID -->
 
-**Bài 11.** Cho F'(x)=3x²−4x+1 trên ℝ và F(1)=2. (a) Viết họ nguyên hàm. (b) Tìm C. (c) Tính F(2). (d) Chứng minh nghiệm là duy nhất trên ℝ trong họ nguyên hàm.
+**Bài 11.** Cho \(F'(x)=3x^2-4x+1\) trên \(\mathbb R\) và \(F(1)=2\). (a) Viết họ nguyên hàm. (b) Tìm C. (c) Tính \(F(2)\). (d) Chứng minh nghiệm là duy nhất trên \(\mathbb R\) trong họ nguyên hàm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** F=x³−2x²+x+2; F(2)=8−8+2+2=4; C=2.
+**Đáp án:** \(F=x^3-2x^2+x+2\); \(F(2)=8-8+2+2=4\); \(C=2\).
 
-**Lời giải:** Nguyên hàm F=x³−2x²+x+C; F(1)=1−2+1+C=C=2. F(2)=8−8+2+2=4. Kiểm F'=3x²−4x+1. Hai nguyên hàm của cùng đạo hàm trên khoảng ℝ chỉ khác nhau hằng; dữ kiện F(1)=2 xác định C duy nhất.
+**Lời giải:** Nguyên hàm \(F=x^3-2x^2+x+C\); \(F(1)=1-2+1+C=C=2\). \(F(2)=8-8+2+2=4\). Kiểm \(F'=3x^2-4x+1\). Hai nguyên hàm của cùng đạo hàm trên khoảng \(\mathbb R\) chỉ khác nhau hằng; dữ kiện \(F(1)=2\) xác định C duy nhất.
 
 **Rubric /7:**
-1. Viết nguyên hàm x³ đúng (1đ)
-2. Viết −2x² đúng (1đ)
-3. Viết +x và +C đúng (1đ)
-4. Thay F(1) chính xác (1đ)
-5. Giải C=2 (1đ)
-6. Tính F(2)=4 (1đ)
-7. Kiểm đạo hàm/giải thích duy nhất trên ℝ (1đ)
+1. Viết nguyên hàm \(x^3\) đúng (1đ)
+2. Viết \(-2x^2\) đúng (1đ)
+3. Viết \(+x\) và +C đúng (1đ)
+4. Thay \(F(1)\) chính xác (1đ)
+5. Giải \(C=2\) (1đ)
+6. Tính \(F(2)=4\) (1đ)
+7. Kiểm đạo hàm/giải thích duy nhất trên \(\mathbb R\) (1đ)
 
-**Nếu làm sai:** Đặt F=F₀+C rồi thay điều kiện vào F, không phải vào F'.
+**Nếu làm sai:** Đặt \(F=F_0+C\) rồi thay điều kiện vào F, không phải vào F'.
 
 </details>
 
@@ -945,27 +945,27 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** x^4/2+3x^2−2x+C.
+**Đáp án:** \(\frac{x^4}{2}+3x^2-2x+C\).
 
-**Lời giải:** Từng hạng tử cho x^4/2,3x^2,−2x; lấy đạo hàm khôi phục 2x^3+6x−2.
+**Lời giải:** Từng hạng tử cho \(\frac{x^4}2,3x^2,-2x\); lấy đạo hàm khôi phục \(2x^3+6x-2\).
 
 **Rubric tự luận /5:** 1đ nêu tuyến tính; 2đ tính ba hạng tử; 1đ +C; 1đ kiểm đạo hàm.
 
-**Nếu làm sai:** Nhớ chia cho n+1 khi n≠−1, giữ +C và kiểm đạo hàm ngược.
+**Nếu làm sai:** Nhớ chia cho \(n+1\) khi \(n\ne-1\), giữ \(+C\) và kiểm đạo hàm ngược.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-A03; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O03; SINGLE_ITEM_ID -->
 
-**Bài 13.** Một đại lượng có q'(t)=3t^2+2, q(0)=4. Viết q(t).
+**Bài 13.** Một đại lượng có \(q'(t)=3t^2+2\), \(q(0)=4\). Viết q(t).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** q(t)=t^3+2t+4.
+**Đáp án:** \(q(t)=t^3+2t+4\).
 
-**Lời giải:** Nguyên hàm t^3+2t+C, từ q(0)=4 được C=4.
+**Lời giải:** Nguyên hàm \(t^3+2t+C\), từ \(q(0)=4\) được \(C=4\).
 
-**Nếu làm sai:** Nhớ chia cho n+1 khi n≠−1, giữ +C và kiểm đạo hàm ngược.
+**Nếu làm sai:** Nhớ chia cho \(n+1\) khi \(n\ne-1\), giữ \(+C\) và kiểm đạo hàm ngược.
 
 </details>
 
@@ -975,11 +975,11 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x^5−2x^2+3x+C.
+**Đáp án:** \(x^5-2x^2+3x+C\).
 
 **Lời giải:** Tách ba hạng tử, áp công thức lũy thừa và tuyến tính.
 
-**Nếu làm sai:** Nhớ chia cho n+1 khi n≠−1, giữ +C và kiểm đạo hàm ngược.
+**Nếu làm sai:** Nhớ chia cho \(n+1\) khi \(n\ne-1\), giữ \(+C\) và kiểm đạo hàm ngược.
 
 </details>
 
@@ -989,11 +989,11 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2x^3+C.
+**Đáp án:** \(2x^3+C\).
 
-**Lời giải:** Dùng n=2: 6·x^3/3=2x^3. Giải thích chọn cách: Tách đa thức thành các hạng tử, nâng số mũ một đơn vị, chia số mũ mới, rồi lấy đạo hàm kiểm.
+**Lời giải:** Dùng \(n=2\): \(6\cdot\frac{x^3}3=2x^3\). Giải thích chọn cách: Tách đa thức thành các hạng tử, nâng số mũ một đơn vị, chia số mũ mới, rồi lấy đạo hàm kiểm.
 
-**Nếu làm sai:** Nhớ chia cho n+1 khi n≠−1, giữ +C và kiểm đạo hàm ngược.
+**Nếu làm sai:** Nhớ chia cho \(n+1\) khi \(n\ne-1\), giữ \(+C\) và kiểm đạo hàm ngược.
 
 </details>
 
@@ -1003,9 +1003,9 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x³+2x²−2x+C.
+**Đáp án:** \(x^3+2x^2-2x+C\).
 
-**Lời giải:** Lấy nguyên hàm từng hạng: \(\int 3x^{2}\,\mathrm dx\)=x³, \(\int 4x\,\mathrm dx\)=2x² và \(\int (-2)\,\mathrm dx\)=−2x. Cộng lại được x³+2x²−2x+C; đạo hàm ngược trả đúng3x²+4x−2.
+**Lời giải:** Lấy nguyên hàm từng hạng: \(\int3x^2\,\mathrm dx=x^3\), \(\int4x\,\mathrm dx=2x^2\) và \(\int(-2)\,\mathrm dx=-2x\). Cộng lại được \(x^3+2x^2-2x+C\); đạo hàm ngược trả đúng \(3x^2+4x-2\).
 
 **Nếu làm sai:** Quy tắc lũy thừa tăng số mũ thêm1 rồi chia hệ số mới; kiểm bằng đạo hàm.
 
@@ -1013,96 +1013,96 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-W04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O04; SINGLE_ITEM_ID -->
 
-**Bài 17.** Tính ∫(4/x−x^(−2))dx trên mỗi khoảng không chứa 0; kiểm đạo hàm.
+**Bài 17.** Tính \(\int(\frac4x-x^{-2})\,\mathrm dx\) trên mỗi khoảng không chứa 0; kiểm đạo hàm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** 4ln|x|+1/x+C.
+**Đáp án:** \(4\ln|x|+\frac1x+C\).
 
-**Lời giải:** \(\int -x^{-2}\,\mathrm dx\)=+1/x; đạo hàm của 1/x là −1/x².
+**Lời giải:** \(\int -x^{-2}\,\mathrm dx=\frac1x\); đạo hàm của \(\frac1x\) là \(-\frac1{x^2}\).
 
-**Rubric tự luận /5:** 1đ điều kiện x≠0; 2đ log và lũy thừa; 1đ +C; 1đ đạo hàm kiểm.
+**Rubric tự luận /5:** 1đ điều kiện \(x\ne0\); 2đ log và lũy thừa; 1đ +C; 1đ đạo hàm kiểm.
 
-**Nếu làm sai:** Trên x<0 dùng ln(−x), trên x>0 dùng ln x; mỗi khoảng có hằng số riêng.
+**Nếu làm sai:** Trên \(x<0\) dùng \(\ln(-x)\), trên \(x>0\) dùng \(\ln x\); mỗi khoảng có hằng số riêng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-A04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O04; SINGLE_ITEM_ID -->
 
-**Bài 18.** Biết F'(x)=3/x trên x>0, F(1)=2. Tính F(x).
+**Bài 18.** Biết \(F'(x)=\frac3x\) trên \(x>0\), \(F(1)=2\). Tính F(x).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 3ln x+2.
+**Đáp án:** \(3\ln x+2\).
 
-**Lời giải:** F=3ln x+C; ln1=0 => C=2. Giải thích chọn cách: Nhận diện 1/x, tách tuyến tính các hạng khác, ghi điều kiện x≠0 và lấy đạo hàm kiểm.
+**Lời giải:** \(F=3\ln x+C\); \(\ln1=0\Rightarrow C=2\). Giải thích chọn cách: Nhận diện \(\frac1x\), tách tuyến tính các hạng khác, ghi điều kiện \(x\ne0\) và lấy đạo hàm kiểm.
 
-**Nếu làm sai:** Trên x<0 dùng ln(−x), trên x>0 dùng ln x; mỗi khoảng có hằng số riêng.
+**Nếu làm sai:** Trên \(x<0\) dùng \(\ln(-x)\), trên \(x>0\) dùng \(\ln x\); mỗi khoảng có hằng số riêng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-P04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O04; SINGLE_ITEM_ID -->
 
-**Bài 19.** Tính ∫(1/x+2x)dx trên x>0.
+**Bài 19.** Tính \(\int(\frac1x+2x)\,\mathrm dx\) trên \(x>0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** ln x+x^2+C.
+**Đáp án:** \(\ln x+x^2+C\).
 
-**Lời giải:** Tính từng phần và ghi x>0. Giải thích chọn cách: Nhận diện 1/x, tách tuyến tính các hạng khác, ghi điều kiện x≠0 và lấy đạo hàm kiểm.
+**Lời giải:** Tính từng phần và ghi \(x>0\). Giải thích chọn cách: Nhận diện \(\frac1x\), tách tuyến tính các hạng khác, ghi điều kiện \(x\ne0\) và lấy đạo hàm kiểm.
 
-**Nếu làm sai:** Trên x<0 dùng ln(−x), trên x>0 dùng ln x; mỗi khoảng có hằng số riêng.
+**Nếu làm sai:** Trên \(x<0\) dùng \(\ln(-x)\), trên \(x>0\) dùng \(\ln x\); mỗi khoảng có hằng số riêng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-C04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O04; SINGLE_ITEM_ID -->
 
-**Bài 20.** Tính ∫2/x dx trên x<0.
+**Bài 20.** Tính \(\int\frac2x\,\mathrm dx\) trên \(x<0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2ln|x|+C.
+**Đáp án:** \(2\ln|x|+C\).
 
-**Lời giải:** Dùng nguyên hàm ln|x| hợp lệ trên (−∞,0).
+**Lời giải:** Dùng nguyên hàm \(\ln|x|\) hợp lệ trên \((-\infty;0)\).
 
-**Nếu làm sai:** Trên x<0 dùng ln(−x), trên x>0 dùng ln x; mỗi khoảng có hằng số riêng.
+**Nếu làm sai:** Trên \(x<0\) dùng \(\ln(-x)\), trên \(x>0\) dùng \(\ln x\); mỗi khoảng có hằng số riêng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P04; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O04; SINGLE_ITEM_ID -->
 
-**Bài 21.** Tìm nguyên hàm 2/x trên (−∞,0) biết F(−1)=3.
+**Bài 21.** Tìm nguyên hàm \(\frac2x\) trên \((-\infty;0)\) biết \(F(-1)=3\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** F=2ln(−x)+3 trên x<0.
+**Đáp án:** \(F=2\ln(-x)+3\) trên \(x<0\).
 
-**Lời giải:** Trên x<0, ln|x|=ln(−x) hợp lệ. Họ nguyên hàm F=2ln(−x)+C, và F(−1)=2ln1+C=C=3. Vậy F=2ln(−x)+3. Kiểm F'=2/x trên nhánh âm.
+**Lời giải:** Trên \(x<0\), \(\ln|x|=\ln(-x)\) hợp lệ. Họ nguyên hàm \(F=2\ln(-x)+C\), và \(F(-1)=2\ln1+C=C=3\). Vậy \(F=2\ln(-x)+3\). Kiểm \(F'=\frac2x\) trên nhánh âm.
 
-**Nếu làm sai:** Không dùng ln x cho x âm; phép đổi ln|x| thành ln(−x) chỉ hợp lệ trên x<0.
+**Nếu làm sai:** Không dùng \(\ln x\) cho \(x\) âm; phép đổi \(\ln|x|\) thành \(\ln(-x)\) chỉ hợp lệ trên \(x<0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W02; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O04; SINGLE_ITEM_ID -->
 
-**Bài 22.** Trên khoảng (−∞,0), cho F'(x)=2/x+cos x và F(−1)=4. (a) Tìm họ nguyên hàm. (b) Xác định F đúng miền với hằng C. (c) Kiểm đạo hàm và giá trị đầu. (d) Nêu vì sao không dùng ln x trên khoảng âm.
+**Bài 22.** Trên khoảng \((-\infty;0)\), cho \(F'(x)=\frac2x+\cos x\) và \(F(-1)=4\). (a) Tìm họ nguyên hàm. (b) Xác định F đúng miền với hằng C. (c) Kiểm đạo hàm và giá trị đầu. (d) Nêu vì sao không dùng \(\ln x\) trên khoảng âm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** F(x)=2ln(−x)+sin x+4+sin1 (x<0).
+**Đáp án:** \(F(x)=2\ln(-x)+\sin x+4+\sin1\) (\(x<0\)).
 
-**Lời giải:** Vì x<0 nên ∫2/x dx=2ln(−x), và \(\int \cos  x\,\mathrm dx\)=sin x. F=2ln(−x)+sin x+C. F(−1)=0−sin1+C=4⇒C=4+sin1. Đạo hàm ln(−x) là (−1)/(−x)=1/x, nên F'=2/x+cos x; F(−1)=4. ln x không xác định thực nếu x<0.
+**Lời giải:** Vì \(x<0\) nên \(\int\frac2x\,\mathrm dx=2\ln(-x)+C_1\), và \(\int\cos x\,\mathrm dx=\sin x+C_2\). Do đó \(F=2\ln(-x)+\sin x+C\). \(F(-1)=0-\sin1+C=4\Rightarrow C=4+\sin1\). Đạo hàm \(\ln(-x)\) là \(\frac{-1}{-x}=\frac1x\), nên \(F'=\frac2x+\cos x\); \(F(-1)=4\). \(\ln x\) không xác định thực nếu \(x<0\).
 
 **Rubric /7:**
-1. Giữ miền x<0 (1đ)
-2. Nguyên hàm 2/x thành 2ln(−x) (1đ)
-3. Nguyên hàm cos x đúng (1đ)
-4. Lập F=...+C (1đ)
-5. Tính C=4+sin1 (1đ)
-6. Kiểm F' và F(−1) (1đ)
-7. Giải thích ln x không hợp lệ x<0 (1đ)
+1. Giữ miền \(x<0\) (1đ)
+2. Nguyên hàm \(\frac2x\) thành \(2\ln(-x)\) (1đ)
+3. Nguyên hàm \(\cos x\) đúng (1đ)
+4. Lập \(F=\ldots+C\) (1đ)
+5. Tính \(C=4+\sin1\) (1đ)
+6. Kiểm F' và \(F(-1)\) (1đ)
+7. Giải thích \(\ln x\) không hợp lệ \(x<0\) (1đ)
 
-**Nếu làm sai:** Ghi ln|x| trên mỗi khoảng không chứa0, sau mới dùng giá trị đầu.
+**Nếu làm sai:** Ghi \(\ln|x|\) trên mỗi khoảng không chứa0, sau mới dùng giá trị đầu.
 
 </details>
 
@@ -1112,27 +1112,27 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** 2^x/ln2+3e^x+C.
+**Đáp án:** \(\frac{2^x}{\ln2}+3e^x+C\).
 
-**Lời giải:** Tách tuyến tính, phần 2^x phải chia ln2; kiểm bằng đạo hàm.
+**Lời giải:** Tách tuyến tính, phần \(2^x\) phải chia \(\ln2\); kiểm bằng đạo hàm.
 
-**Rubric tự luận /5:** 1đ nêu a>0,a≠1; 2đ hai nguyên hàm đúng; 1đ hằng số; 1đ kiểm đạo hàm.
+**Rubric tự luận /5:** 1đ nêu \(a>0,a\ne1\); 2đ hai nguyên hàm đúng; 1đ hằng số; 1đ kiểm đạo hàm.
 
-**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: \(\int e^{kx}\,\mathrm dx\)=e^{kx}/k+C.
+**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: \(\int e^{kx}\,\mathrm dx=\frac{e^{kx}}k+C\) (với \(k\ne0\)).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-A05; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O05; SINGLE_ITEM_ID -->
 
-**Bài 24.** Lượng chất có q'(t)=3e^t và q(0)=5. Viết q(t).
+**Bài 24.** Lượng chất có \(q'(t)=3e^t\) và \(q(0)=5\). Viết q(t).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** q(t)=3e^t+2.
+**Đáp án:** \(q(t)=3e^t+2\).
 
-**Lời giải:** q=3e^t+C; 3+C=5 => C=2. Giải thích chọn cách: Tách hệ số rồi chia ln a nếu cơ số a không phải e.
+**Lời giải:** \(q=3e^t+C\); \(3+C=5\Rightarrow C=2\). Giải thích chọn cách: Tách hệ số rồi chia \(\ln a\) nếu cơ số a không phải e.
 
-**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: \(\int e^{kx}\,\mathrm dx\)=e^{kx}/k+C.
+**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: \(\int e^{kx}\,\mathrm dx=\frac{e^{kx}}k+C\) (với \(k\ne0\)).
 
 </details>
 
@@ -1142,11 +1142,11 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2^x/ln2+C.
+**Đáp án:** \(\frac{2^x}{\ln2}+C\).
 
-**Lời giải:** (2^x)'=2^x ln2, vì vậy chia ln2.
+**Lời giải:** \((2^x)'=2^x\ln2\), vì vậy chia \(\ln2\).
 
-**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: \(\int e^{kx}\,\mathrm dx\)=e^{kx}/k+C.
+**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: \(\int e^{kx}\,\mathrm dx=\frac{e^{kx}}k+C\) (với \(k\ne0\)).
 
 </details>
 
@@ -1156,11 +1156,11 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** e^x+C.
+**Đáp án:** \(e^x+C\).
 
-**Lời giải:** Vì đạo hàm e^x là e^x. Giải thích chọn cách: Tách hệ số rồi chia ln a nếu cơ số a không phải e.
+**Lời giải:** Vì đạo hàm \(e^x\) là \(e^x\). Giải thích chọn cách: Tách hệ số rồi chia \(\ln a\) nếu cơ số a không phải e.
 
-**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: \(\int e^{kx}\,\mathrm dx\)=e^{kx}/k+C.
+**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: \(\int e^{kx}\,\mathrm dx=\frac{e^{kx}}k+C\) (với \(k\ne0\)).
 
 </details>
 
@@ -1170,25 +1170,25 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** e^{2x}+3^x/ln3+C.
+**Đáp án:** \(e^{2x}+\frac{3^x}{\ln3}+C\).
 
-**Lời giải:** \(\int 2e^{2x}\,\mathrm dx\)=e^{2x} vì đạo hàm e^{2x} là2e^{2x}. \(\int 3^x\,\mathrm dx\)=3^x/ln3 vì đạo hàm 3^x=3^x ln3. Cộng được F=e^{2x}+3^x/ln3+C.
+**Lời giải:** Một nguyên hàm của \(2e^{2x}\) là \(e^{2x}\) vì đạo hàm của \(e^{2x}\) là \(2e^{2x}\). Một nguyên hàm của \(3^x\) là \(\frac{3^x}{\ln3}\) vì đạo hàm \(3^x\) bằng \(3^x\ln3\). Cộng được \(F=e^{2x}+\frac{3^x}{\ln3}+C\).
 
-**Nếu làm sai:** Không áp quy tắc nguyên hàm x^n cho hàm có x ở số mũ; dùng đạo hàm mũ ngược.
+**Nếu làm sai:** Không áp quy tắc nguyên hàm \(x^n\) cho hàm có x ở số mũ; dùng đạo hàm mũ ngược.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-W06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O06; SINGLE_ITEM_ID -->
 
-**Bài 28.** Tính ∫(1/cos²x+2sin x)dx trên khoảng cosx≠0; kiểm bằng đạo hàm.
+**Bài 28.** Tính \(\int(\frac1{\cos^2 x}+2\sin x)\,\mathrm dx\) trên khoảng \(\cos x\ne0\); kiểm bằng đạo hàm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** tan x−2cos x+C.
+**Đáp án:** \(\tan x-2\cos x+C\).
 
-**Lời giải:** Dùng (tan x)'=sec²x và d(−2cos x)=2sin x.
+**Lời giải:** Dùng \((\tan x)'=\sec^2 x\) và \(d(-2\cos x)=2\sin x\).
 
-**Rubric tự luận /5:** 1đ điều kiện cosx≠0; 2đ hai nguyên hàm; 1đ +C; 1đ kiểm đạo hàm.
+**Rubric tự luận /5:** 1đ điều kiện \(\cos x\ne0\); 2đ hai nguyên hàm; 1đ +C; 1đ kiểm đạo hàm.
 
 **Nếu làm sai:** Nguyên hàm sin có dấu trừ, cos thành sin; góc phải là radian.
 
@@ -1196,13 +1196,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-A06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O06; SINGLE_ITEM_ID -->
 
-**Bài 29.** Vận tốc v(t)=2cos t, 0<=t<=π/2, vị trí s(0)=0. Viết s(t).
+**Bài 29.** Vận tốc \(v(t)=2\cos t\), \(0\le t\le\frac{\pi}2\), vị trí \(s(0)=0\). Viết s(t).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** s(t)=2sin t.
+**Đáp án:** \(s(t)=2\sin t\).
 
-**Lời giải:** s=2sin t+C; s(0)=0=>C=0. Giải thích chọn cách: Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác.
+**Lời giải:** \(s=2\sin t+C\); \(s(0)=0\Rightarrow C=0\). Giải thích chọn cách: Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác.
 
 **Nếu làm sai:** Nguyên hàm sin có dấu trừ, cos thành sin; góc phải là radian.
 
@@ -1214,9 +1214,9 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** −3cos x−2sin x+C.
+**Đáp án:** \(-3\cos x-2\sin x+C\).
 
-**Lời giải:** Từng hạng tử; đạo hàm của −3cos x là +3sin x.
+**Lời giải:** Từng hạng tử; đạo hàm của \(-3\cos x\) là \(+3\sin x\).
 
 **Nếu làm sai:** Nguyên hàm sin có dấu trừ, cos thành sin; góc phải là radian.
 
@@ -1228,9 +1228,9 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2sin x+C.
+**Đáp án:** \(2\sin x+C\).
 
-**Lời giải:** (2sin x)'=2cos x. Giải thích chọn cách: Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác.
+**Lời giải:** \((2\sin x)'=2\cos x\). Giải thích chọn cách: Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác.
 
 **Nếu làm sai:** Nguyên hàm sin có dấu trừ, cos thành sin; góc phải là radian.
 
@@ -1242,9 +1242,9 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2sin x+3cos x+C (x radian).
+**Đáp án:** \(2\sin x+3\cos x+C\) (x radian).
 
-**Lời giải:** Với x đo radian, \(\int 2\cos  x\,\mathrm dx\)=2sin x; \(\int -3\sin  x\,\mathrm dx\)=+3cos x do (cos x)'=−sin x. Họ nguyên hàm là 2sin x+3cos x+C; kiểm ngược cả hai dấu.
+**Lời giải:** Với \(x\) đo radian, một nguyên hàm của \(2\cos x\) là \(2\sin x\); một nguyên hàm của \(-3\sin x\) là \(3\cos x\) do \((\cos x)'=-\sin x\). Họ nguyên hàm là \(2\sin x+3\cos x+C\); kiểm ngược cả hai dấu.
 
 **Nếu làm sai:** Quên dấu âm của đạo hàm cos dễ gây sai nguyên hàm sin; luôn đạo hàm kết quả để kiểm.
 
@@ -1252,73 +1252,73 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-W07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O07; SINGLE_ITEM_ID -->
 
-**Bài 33.** Lợi nhuận biên P'(x)=12x²−4, P(0)=100. Tìm P(x), nêu đơn vị phù hợp nếu P tính bằng nghìn đồng.
+**Bài 33.** Lợi nhuận biên \(P'(x)=12x^2-4\), \(P(0)=100\). Tìm P(x), nêu đơn vị phù hợp nếu P tính bằng nghìn đồng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** P(x)=4x³−4x+100 (nghìn đồng).
+**Đáp án:** \(P(x)=4x^3-4x+100\) (nghìn đồng).
 
-**Lời giải:** P=4x³−4x+C; C=100; P' đúng, P(0)=100.
+**Lời giải:** \(P=4x^3-4x+C\); \(C=100\); P' đúng, \(P(0)=100\).
 
 **Rubric tự luận /5:** 1đ đọc P' đúng; 2đ nguyên hàm; 1đ điều kiện đầu; 1đ kiểm đơn vị và đạo hàm.
 
-**Nếu làm sai:** Điều kiện đầu tìm C trong vị trí s; ∫v chỉ cho độ dời trên khoảng.
+**Nếu làm sai:** Điều kiện đầu tìm C trong vị trí s; \(\int v\,\mathrm dt\) trên khoảng cho độ dời trên khoảng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-A07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O07; SINGLE_ITEM_ID -->
 
-**Bài 34.** Một vật có a(t)=6t, v(0)=2, s(0)=1. Viết v(t), s(t).
+**Bài 34.** Một vật có \(a(t)=6t\), \(v(0)=2\), \(s(0)=1\). Viết v(t), s(t).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** v(t)=3t²+2; s(t)=t³+2t+1.
+**Đáp án:** \(v(t)=3t^2+2\); \(s(t)=t^3+2t+1\).
 
 **Lời giải:** Hai lần nguyên hàm; mỗi lần dùng điều kiện đầu riêng.
 
-**Nếu làm sai:** Điều kiện đầu tìm C trong vị trí s; ∫v chỉ cho độ dời trên khoảng.
+**Nếu làm sai:** Điều kiện đầu tìm C trong vị trí s; \(\int v\,\mathrm dt\) trên khoảng cho độ dời trên khoảng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-P07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O07; SINGLE_ITEM_ID -->
 
-**Bài 35.** Cho v(t)=4t³ và s(1)=5. Tìm s(t).
+**Bài 35.** Cho \(v(t)=4t^3\) và \(s(1)=5\). Tìm s(t).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** s(t)=t⁴+4.
+**Đáp án:** \(s(t)=t^4+4\).
 
-**Lời giải:** s=t⁴+C; 1+C=5 => C=4. Giải thích chọn cách: Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên.
+**Lời giải:** \(s=t^4+C\); \(1+C=5\Rightarrow C=4\). Giải thích chọn cách: Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên.
 
-**Nếu làm sai:** Điều kiện đầu tìm C trong vị trí s; ∫v chỉ cho độ dời trên khoảng.
+**Nếu làm sai:** Điều kiện đầu tìm C trong vị trí s; \(\int v\,\mathrm dt\) trên khoảng cho độ dời trên khoảng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-C07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O07; SINGLE_ITEM_ID -->
 
-**Bài 36.** Cho s'(t)=6t và s(0)=3, tìm s(t).
+**Bài 36.** Cho \(s'(t)=6t\) và \(s(0)=3\), tìm s(t).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** s(t)=3t²+3.
+**Đáp án:** \(s(t)=3t^2+3\).
 
-**Lời giải:** Nguyên hàm 6t là 3t²+C, C=3. Giải thích chọn cách: Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên.
+**Lời giải:** Nguyên hàm 6t là \(3t^2+C\), \(C=3\). Giải thích chọn cách: Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên.
 
-**Nếu làm sai:** Điều kiện đầu tìm C trong vị trí s; ∫v chỉ cho độ dời trên khoảng.
+**Nếu làm sai:** Điều kiện đầu tìm C trong vị trí s; \(\int v\,\mathrm dt\) trên khoảng cho độ dời trên khoảng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P07; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O07; SINGLE_ITEM_ID -->
 
-**Bài 37.** Với v(t)=6t−4, s(0)=3, tìm s(2).
+**Bài 37.** Với \(v(t)=6t-4\), \(s(0)=3\), tìm s(2).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** s(2)=12−8+3=7m.
+**Đáp án:** \(s(2)=12-8+3=7\) m.
 
-**Lời giải:** Vì s'=v=6t−4, tích phân được s=3t²−4t+C. Dùng s(0)=3⇒C=3; thế t=2 cho s(2)=12−8+3=7 m. Đây là vị trí, không phải quãng đường.
+**Lời giải:** Vì \(s'=v=6t-4\), tích phân được \(s=3t^2-4t+C\). Dùng \(s(0)=3\Rightarrow C=3\); thế \(t=2\) cho \(s(2)=12-8+3=7\) m. Đây là vị trí, không phải quãng đường.
 
-**Nếu làm sai:** Nếu chỉ tích phân v trên [0,2], bạn tính độ dời rồi còn phải cộng vị trí đầu để tìm s(2).
+**Nếu làm sai:** Nếu chỉ tích phân v trên \([0;2]\), bạn tính độ dời rồi còn phải cộng vị trí đầu để tìm s(2).
 
 </details>
 
@@ -2509,11 +2509,11 @@ Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Lu
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P01; NO_RD1; NO_MASTERY -->
 
-**Câu 1.** Tìm họ nguyên hàm f(x)=6x−4.
+**Câu 1.** Tìm họ nguyên hàm \(f(x)=6x-4\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P02; NO_RD1; NO_MASTERY -->
 
-**Câu 2.** F'=3x², F(2)=9; tìm F.
+**Câu 2.** \(F'=3x^2\), \(F(2)=9\); tìm F.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P03; NO_RD1; NO_MASTERY -->
 
@@ -2521,7 +2521,7 @@ Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Lu
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P04; NO_RD1; NO_MASTERY -->
 
-**Câu 4.** Tìm nguyên hàm 2/x trên (−∞,0) biết F(−1)=3.
+**Câu 4.** Tìm nguyên hàm \(\frac2x\) trên \((-\infty;0)\) biết \(F(-1)=3\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P05; NO_RD1; NO_MASTERY -->
 
@@ -2533,7 +2533,7 @@ Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Lu
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P07; NO_RD1; NO_MASTERY -->
 
-**Câu 7.** Với v(t)=6t−4, s(0)=3, tìm s(2).
+**Câu 7.** Với \(v(t)=6t-4\), \(s(0)=3\), tìm s(2).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P08; NO_RD1; NO_MASTERY -->
 
