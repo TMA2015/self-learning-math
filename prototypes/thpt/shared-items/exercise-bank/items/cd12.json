@@ -16,7 +16,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Dùng sin²α+cos²α=1 rồi xét góc tù trên nửa đường tròn."
+      "Dùng \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\) rồi xét góc tù trên nửa đường tròn."
     ],
     "rubric": null,
     "interaction": {
@@ -28,7 +28,7 @@
       "heading": "## THPT-TOP12-P01 · TOP12-O04"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu sin âm, nhớ tung độ dương ở góc tù; chỉ cos âm. Kiểm tan bằng thương sin/cos. Ôn CĐ12 mục 1.4; luyện THPT-G10-B05-P02."
+    "remediation": "Nếu sin âm, nhớ tung độ dương ở góc tù; côsin âm. Kiểm \\(\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}\\) với côsin khác 0. Ôn CĐ12 mục 1.4; luyện THPT-G10-B05-P02."
   },
   {
     "item_id": "THPT-TOP12-P02",
@@ -66,7 +66,7 @@
     "content_version": 2,
     "stem": "Trong tam giác ABC có \\(b=4, c=7, A=120^{\\circ}\\). Tính a.",
     "answer_key": "\\(a=\\sqrt{93}\\).",
-    "worked_solution": "\\(a^2=16+49-2\\cdot4\\cdot7\\cdot(-\\frac12)=93\\), nên \\(a=\\sqrt{93}\\). Góc tù khiến cạnh a lớn hơn cả b và c. Nếu sai: mục 5 → bài luyện về định lí cosin.",
+    "worked_solution": "Theo định lí côsin, \\(a^2=b^2+c^2-2bc\\cos A\\). Vì \\(\\cos120^\\circ=-\\frac12\\), ta được \\(a^2=16+49-2\\cdot4\\cdot7\\cdot(-\\frac12)=93\\). Độ dài cạnh dương nên \\(a=\\sqrt{93}\\). Góc A tù, lớn nhất trong tam giác, nên a lớn hơn cả b và c.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-COSINE_RULE"
@@ -89,7 +89,7 @@
       "heading": "## THPT-TOP12-P03 · TOP12-O05"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu ra căn của 37, kiểm dấu cos120° âm làm số hạng −2bc cos A dương. Ôn CĐ12 mục 2.1; luyện THPT-G10-B06-C01."
+    "remediation": "Nếu ra \\(\\sqrt{37}\\), kiểm \\(\\cos120^\\circ=-\\frac12\\) làm số hạng \\(-2bc\\cos A\\) dương. Ôn CĐ12 mục 2.1; luyện THPT-G10-B06-C01."
   },
   {
     "item_id": "THPT-TOP12-P04",
@@ -119,7 +119,7 @@
       "heading": "## THPT-TOP12-P04 · TOP12-O06"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu đảo tỉ số, viết a/sin A=b/sin B=c/sin C; kiểm cạnh đối diện 90° dài nhất. Ôn CĐ12 mục 2.2; luyện THPT-G10-B06-P01."
+    "remediation": "Nếu đảo tỉ số, viết \\(\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}\\); kiểm cạnh đối diện góc \\(90^\\circ\\) dài nhất. Ôn CĐ12 mục 2.2; luyện THPT-G10-B06-P01."
   },
   {
     "item_id": "THPT-TOP12-P05",
@@ -180,7 +180,7 @@
       "heading": "## THPT-TOP12-P06 · TOP12-O08"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ lấy một góc từ máy, kiểm cả hai giá trị B bằng điều kiện A+B<180°. Ôn CĐ12 mục 2.4; luyện THPT-G10-B06-P03."
+    "remediation": "Nếu chỉ lấy một góc từ máy, kiểm cả hai giá trị B bằng điều kiện \\(A+B<180^\\circ\\). Ôn CĐ12 mục 2.4; luyện THPT-G10-B06-P03."
   },
   {
     "item_id": "THPT-TOP12-P07",
@@ -210,7 +210,7 @@
       "heading": "## THPT-TOP12-P07 · TOP12-O08"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu máy báo lỗi, so 7/6 với 1; đây là dữ kiện không thể tạo tam giác. Ôn CĐ12 mục 2.4; luyện THPT-TOP12-P06."
+    "remediation": "Nếu máy báo lỗi, so \\(\\frac76\\) với 1; sin vượt 1 nên dữ kiện không thể tạo tam giác. Ôn CĐ12 mục 2.4; luyện THPT-TOP12-P06."
   },
   {
     "item_id": "THPT-TOP12-P08",
@@ -259,7 +259,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Tính nửa chu vi p; dùng Heron rồi S=pr và S=abc/(4R)."
+      "Tính nửa chu vi p; dùng Heron rồi \\(S=pr\\) và \\(S=\\frac{abc}{4R}\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -271,7 +271,7 @@
       "heading": "## THPT-TOP12-P09 · TOP12-O10"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhầm r với R, kiểm đơn vị và viết hai công thức riêng; không dùng chu vi thay p. Ôn CĐ12 mục 3.2; luyện THPT-G10-B06-P02."
+    "remediation": "Nếu nhầm r với R, kiểm ý nghĩa nội tiếp và ngoại tiếp rồi viết hai công thức riêng; không dùng chu vi thay p. Ôn CĐ12 mục 3.2; luyện THPT-G10-B06-P02."
   },
   {
     "item_id": "THPT-TOP12-P10",
@@ -363,6 +363,6 @@
       "heading": "## THPT-TOP12-P12 · TOP12-O12"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ thấy a=2 từ biểu thức đại số rồi chấp nhận, kiểm 2+5=7 nên ba điểm thẳng hàng. Ôn CĐ12 mục 3.4; luyện THPT-TOP12-P11."
+    "remediation": "Nếu chỉ thấy \\(a=2\\) từ biểu thức đại số rồi chấp nhận, kiểm \\(2+5=7\\) nên ba điểm thẳng hàng. Ôn CĐ12 mục 3.4; luyện THPT-TOP12-P11."
   }
 ]
