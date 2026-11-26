@@ -19970,8 +19970,9 @@
         "metadata_and_answer_keys_unchanged": true,
         "interaction_unchanged": true,
         "inline_delimiters_balanced": true,
-        "targeted_raw_math_scan_residual": 16,
-        "mcq_options_reviewed": 64
+        "targeted_raw_math_scan_residual": 1,
+        "mcq_options_reviewed": 64,
+        "raw_scan_note": "Exclude existing remediation IDs; standalone relation symbols permitted by X-G.5. Targeted scan not proof of rendering."
       },
       "findings": [
         "B03: distinguish zero single coefficient from both zero, inclusive boundary vs strict inequality, negative divisor reverses inequality, test point off boundary, ticket count and weighted average with positive denominator. B04-P03 option C explicitly includes endpoints of optimum segment (not ambiguous 'góc phần tư I'); B04-P02 identify all four feasible vertices; P05 unbounded domain with attained maximum; P06 enumerate integer feasible set and compare real optimum. All 16 answer letters unchanged; manual math review of stems/options/solutions and finite enumeration for B04-P06. No fresh primary SGK/SBT PDF or browser QA; not full Academic/PED PASS. FirstTry/public selfcheck/Written separate as in CP91."
