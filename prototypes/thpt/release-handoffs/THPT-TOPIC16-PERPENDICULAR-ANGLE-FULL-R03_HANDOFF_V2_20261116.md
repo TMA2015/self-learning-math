@@ -1,3 +1,10 @@
+## CURRENT CP18 CĐ16 V2
+Learner `3e6f97091a814d7cee7096fd92cd448dd8900435`, Q18 `18ce1cba1049ec7435ef7cfffc1a27804c1fd394`, A1 `6ca5bfc4941e67e7d7c30f5399755048fcf24cd3`; SGK bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0`. Work O14/O21 and X-G.5 verified, 86 IDs/65 Practice/8 exact replay/11 rubric allocations/87 disclosures. Four SVG and interactive HTML model unchanged. Prior S1 inherited, no fresh independent verdict or publication authorization.
+
+---
+
+Earlier narrative evidence below is historical; current CP18 evidence and structured fields supersede earlier pointers.
+
 <!-- OWNER_APPROVED_SHARED_SGK_G11_B22_B27_DELTA_B_V2_20261121 -->
 **CURRENT EXACT AUTHORING:** one CĐ16 learner `1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84`, current source-owner SGK B22–B27 bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` (**both Topic branches use same source blob**), current Q18 `19a2ed6ebfd7898da5f186350ea6042e2134fa7e`, A1/Q15 `3bdf5ef98ab262407983d5053fcad07632571bfe`, V2 `current`. Original 33/41 G11 shared canonical Practice student-answer labels formerly `Đáp án sau Submit luyện tập`, misleading in direct voluntary Lời giải; now exact `Đáp án` in one **canonical source** (all 51 public SGK items same) and CĐ16 projection (33) + CĐ17 projection (18). **No stem, numeric key, mathematical reasoning, option, rubric, disclosure, final submit/mastery evaluator code changed**; one original G11 Q15 same-ID source bank, old `afc8ec039213b87b4930f2d34d48c28d1fc6277f` preserved in Git history. `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL`, affected source author self QA; no blanket independent NotebookLM PASS, no website/release/merge/deploy.
 ---
@@ -26,15 +33,15 @@ CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84
+ACADEMIC_SOURCE_BLOB: 3e6f97091a814d7cee7096fd92cd448dd8900435
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 19a2ed6ebfd7898da5f186350ea6042e2134fa7e
+REVIEW_RECEIPT_BLOB: 18ce1cba1049ec7435ef7cfffc1a27804c1fd394
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 3bdf5ef98ab262407983d5053fcad07632571bfe
+AUTHOR_A1_A7_BLOB: 6ca5bfc4941e67e7d7c30f5399755048fcf24cd3
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 3bdf5ef98ab262407983d5053fcad07632571bfe
+AUTHOR_METADATA_BLOB: 6ca5bfc4941e67e7d7c30f5399755048fcf24cd3
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
-ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
+ORIGINAL_SGK_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0
 MODEL_ID: SLM-TOP16-RAMP-ANGLE-R00
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
