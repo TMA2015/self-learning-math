@@ -33,8 +33,10 @@ RW2="--rw2" in sys.argv
 ALL22_TAIL="--tail" in sys.argv
 TAIL_SIZES={"17":12,"18":40,"19":14,"20":9,"21":8,"22":13}
 REFRESH01="--topic01-refresh" in sys.argv
-SIZES={"01":11} if REFRESH01 else TAIL_SIZES if ALL22_TAIL else RW2_SIZES if RW2 else RW1_SIZES
-WAVE="SHARED-17-22" if ALL22_TAIL else "R-W2" if RW2 else "R-W1"
+REFRESHW1="--topic-w1-refresh" in sys.argv
+REFRESH=REFRESH01 or REFRESHW1
+SIZES={"01":11} if REFRESH01 else {"02":16,"03":12,"04":18,"05":17} if REFRESHW1 else TAIL_SIZES if ALL22_TAIL else RW2_SIZES if RW2 else RW1_SIZES
+WAVE="W1-REFRESH" if REFRESHW1 else "SHARED-17-22" if ALL22_TAIL else "R-W2" if RW2 else "R-W1"
 CURRENT_BASE="ad3545985c7a1e369799e66fa770678860827be4"
 CURRENT_FILES={
     "docs/assets/javascripts/math-details-v1.js",
@@ -91,16 +93,16 @@ if "--scope" in sys.argv:
     scope()
     sys.exit(0)
 
-BUILD=ROOT/("site" if REFRESH01 else "site-thpt-preview")
+BUILD=ROOT/("site" if REFRESH else "site-thpt-preview")
 assert BUILD.is_dir()
 class RefreshProjectHandler(http.server.SimpleHTTPRequestHandler):
     def translate_path(self,p):
         prefix="/self-learning-math"
-        if REFRESH01 and p.startswith(prefix+"/"): p=p[len(prefix):]
+        if REFRESH and p.startswith(prefix+"/"): p=p[len(prefix):]
         return super().translate_path(p)
 server=http.server.ThreadingHTTPServer(("127.0.0.1",0),functools.partial(RefreshProjectHandler,directory=str(BUILD)))
 threading.Thread(target=server.serve_forever,daemon=True).start()
-BASE=f"http://127.0.0.1:{server.server_address[1]}"+("/self-learning-math" if REFRESH01 else "")+"/thpt-preview/chuyen-de/"
+BASE=f"http://127.0.0.1:{server.server_address[1]}"+("/self-learning-math" if REFRESH else "")+"/thpt-preview/chuyen-de/"
 MODULE="[data-topic01-module-tab],[data-topic-w1-module-tab]"
 SUB="[data-topic01-subtab],[data-topic-w1-subtab]"
 PANEL=".thpt-r4-knowledge-content-panel:visible"
