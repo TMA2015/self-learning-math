@@ -20037,6 +20037,67 @@
       ],
       "remaining": "G10 ChIV next; separately FirstTry/public selfcheck/Written and other source-owner/depth/semantic checks before conversion.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp94": {
+      "scope": "SGK shared formative G10 ChIV B07–B11, 41 canonical C/P records (14 MCQ, 27 other including B09-P07 rubric); FirstTry 26/public selfcheck/Written excluded",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "f48296c32993d9eeaa7bc77ec91c9e781aad4339",
+      "source_projection": {
+        "paths": [
+          "docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js",
+          "docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js",
+          "docs/assets/javascripts/thpt-g10-b09-decomp-r04-formative-extension.js"
+        ],
+        "current_main_and_import_blobs": [
+          "1b59b046b6539280817fb1b968dc9c8460fca7c5",
+          "713e6a97b95c2c807c8b76045b324bdddf1a6737",
+          "e4e795715cc7a68e5f72e429776aa71816e3e023"
+        ],
+        "ids_and_order": 41,
+        "decision": "Preserve CP51 strengthened variants and B09-P07 extension, not rollback to historical projections."
+      },
+      "item_shard": {
+        "path": "items/g10-chiv.json",
+        "before": "dd3698d9e22e0069eda202c629160a3d66ff111c",
+        "after": "a696d5c7a7416f38bc8480b2dd5c2c05554bd946",
+        "commits": [
+          "aeef0e780eb1ce9fb17d3c92a5203d11aacb9484",
+          "d7573a8aae3ca880370dad8c0a998716f038b976"
+        ]
+      },
+      "checks": {
+        "formative_reviewed": 41,
+        "formative_changed": 41,
+        "fields_changed": {
+          "stem": 37,
+          "answer_key": 22,
+          "worked_solution": 41,
+          "options": 9,
+          "hints": 12,
+          "remediation": 21,
+          "rubric": 1
+        },
+        "first_try_unchanged": 26,
+        "sgk_placement_blob": "240d485678b3182add1fb3acd7035e6fc9994e08",
+        "topic_placement_blob": "fd881339d3e36e5a3b880009870265cc2d6aa926",
+        "sgk_placements_for_reviewed_ids": 41,
+        "topic_placements_for_reviewed_ids": 20,
+        "metadata_and_interaction_unchanged": true,
+        "mcq_keys_unchanged": true,
+        "answer_meanings_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "arithmetic_spot_checks_passed": 22,
+        "targeted_raw_math_scan_residual": 0,
+        "raw_scan_findings": [],
+        "mcq_options_reviewed": 56,
+        "rubric": "B09-P07 2+1+2+1=6, same criteria/points; notation and vector vs point/length wording only"
+      },
+      "findings": [
+        "B08-P02 incorrect Vietnamese subtraction terminology corrected (MN is vectơ trừ, MP is vectơ bị trừ); B07-C01 and B08-P04 make distinct endpoints explicit for unique MCQ. B09-P07 distinguish length AN from direction of vector AN and vector noncollinearity; preserve result and rubric. B07 zero-vector convention checked against existing B07 lesson; B09 uniqueness checked against existing lesson. Clarify direction/length, centroid, forces, displacement, coordinate arithmetic, zero denominators, dot product, angle, work. All 41 manually reviewed, 22 supporting numerical checks, no fresh primary SGK/SBT PDF or browser/full Academic/PED verdict."
+      ],
+      "remaining": "G10 ChV next; separately FirstTry/public selfcheck/Written and other source-owner/depth/semantic checks before conversion.",
+      "release_authorization": false
     }
   }
 }
