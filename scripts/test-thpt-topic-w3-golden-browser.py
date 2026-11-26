@@ -112,9 +112,9 @@ with sync_playwright() as pw:
                       const base=document.querySelector('.topic01-knowledge-layout');
                       if(!base)throw Error('Missing Golden Knowledge layout');
                       const label=[...base.querySelectorAll('.thpt-r4-knowledge-content-panel > p')]
-                       .find(p=>/^Vận dụng[:.]?$/.test(p.querySelector(':scope > strong')?.textContent.trim()||''));
+                       .find(p=>p.querySelector(':scope > strong')?.textContent.trim()==='Vận dụng');
                       if(!label)throw Error('Golden Vận dụng label missing');
-                      const stem=label.nextElementSibling,details=stem?.nextElementSibling;
+                      const stem=label.nextElementSibling,host=stem?.nextElementSibling,details=host?.matches('details.question')?host:host?.querySelector('details.question');
                       if(stem?.tagName!=='P'||!details?.matches('details.question'))
                        throw Error('Golden label → stem → details contract broken');
                       const tab=base.querySelector('.thpt-r4-knowledge-module-tab');
