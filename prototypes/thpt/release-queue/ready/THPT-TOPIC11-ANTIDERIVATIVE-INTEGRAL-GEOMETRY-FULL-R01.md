@@ -1,4 +1,12 @@
-<!-- #1109 A03 CP07: candidate bd8b41dd233be07261232ebf1b5e4bbb0e2f95a6 not yet CONTENT_READY. Historical signed pointers below not active; no RELEASE intake until X-G.5, S1 and affected Q18/V2 relock. -->
+<!-- WORK1109_CP23_CURRENT -->
+## AUTHORING CONTENT_READY — CĐ11
+
+Work #1055/#1109 CP23, 26/11/2026: O07–O10 unit, independent lower bound, linearity and interval additivity; O12 distance and signed displacement, O16 area splitting, O19 independent bounded-area task 32/3, O21 wrong radius integral 3π/2 vs correct 7π/3, O22 washer 16π. X-G.5 on Knowledge, 116 Practice, 22 same-ID replays; 1721 balanced inline/4 displays, no remaining detected raw compound expressions (unit notation excluded), no brace imbalance; 116/116 actual original ID memberships checked (88 SGK +28 Topic), all original identity comments and rubric point sequences retained, 139/139 disclosures, 4 original SVG unchanged. 40 executed targeted math recomputations PASS. S1 inherited original B11–B13 scope and existing original SGK receipt; no new direct PDF visual scan or independent NotebookLM whole-topic verdict. Source-equivalent Practice notation, clarify particular antiderivative and derivative notation without key changes; Knowledge Work delta author verified. UI 1.1 belongs to RELEASE. No merge/deploy or protected assessment changes.
+
+Source `64688cf81991a432264c06a2ff0a908371ca1f21`, Q18 `e63f9a5df598ea3c6d57efdbeb6808e86ad9f68f`, A1 `decf0f7a7bb1be15aede5f0656d16b9fe681f0d7`, V2 `ee14e9bfc0afefbe949b5287435d3426c63b067a`. No release authorization.
+
+---
+Historical narrative below refers to earlier immutable snapshots; current structured source pointers and CP23 section supersede earlier claims of byte-exact display math.
 
 <!-- TOP11_MASTER974_CURRENT_ONE_READY_20261121 -->
 **CURRENT AUTHORING CONTENT_READY CĐ11 on same one R06 source; not RELEASE:** learner `prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md` Git blob **`9c27c384af7fad186047aed555ef1a9877c6a30a`**, source commit `521e7eba349ea59160dcdc4ef22d4dbd4037f62a`; current existing Q18 affected-scope author-self proof `a6c64c4d9280fbde9752598190206ff1a8e82fca`, A1 author metadata `cfdcd049c6b1ae66d61f87f10fd4b40da3c7c1f2`, same one V2 handoff `37e3ef8476c042751b4c326e2fa28ed384af3d11`. Source retains **116 original unique Practice items (88 G12 SGK +28 Topic)** with 28 Written rubrics, 22 original PUBLIC_REPLAY_ONLY question-only Selfcheck stems, 4 original SVG assets/refs. #977-036/037/038 FIXED_VERIFIED: all **22/22** FirstTry optional Kiểm lỗi have outcome-specific actual original Practice Bài retry; a single voluntary final `Đối chiếu` navigates exact 22 public selfcheck item IDs to original Practice answer locations; three SGK mentions removed from lessons, only one end of whole Topic proper reference; obsolete hidden metadata updated NOT_FOR_STUDENT_VIEW. Original bank maths, stems, keys/solutions and rubric text preserved byte-exact. **139/139** balanced opt-in disclosures, no new Topic Core, no official held-out Topic Readiness/RD1/Final Submit/Mastery. One standard v3.2.0 Q01–Q18 with scoped inherited original SGK review, current author SELF_VERIFIED PED evidence (not independent NotebookLM Topic PASS). No website AP/R, merge/deploy or Firebase changes.
@@ -14,23 +22,23 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: BLOCKED_BY_AUTHORING
+STATE: CONTENT_READY
 CONTENT_REVISION: R06_FULL_S1_KNOWLEDGE_20261120
-AUTHOR_METADATA_BLOB: cfdcd049c6b1ae66d61f87f10fd4b40da3c7c1f2
+AUTHOR_METADATA_BLOB: decf0f7a7bb1be15aede5f0656d16b9fe681f0d7
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_O08_O15_O20_O22
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
-SOURCE_COMMIT: 521e7eba349ea59160dcdc4ef22d4dbd4037f62a
+SOURCE_COMMIT: 66116a329561709a9fed4bec17dd74adf04ec67f
 AUTHOR_PR: 887
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/887 — DRAFT AUTHORING, not merged/deployed
 CATALOG_TOPIC_ID: CD11
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 9c27c384af7fad186047aed555ef1a9877c6a30a
+ACADEMIC_SOURCE_BLOB: 64688cf81991a432264c06a2ff0a908371ca1f21
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md (Q18 AUTHOR_SELF_VERIFIED v3.2.0, exact-source Delta C author math/PED QA; not independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md
-REVIEW_RECEIPT_BLOB: a6c64c4d9280fbde9752598190206ff1a8e82fca
+REVIEW_RECEIPT_BLOB: e63f9a5df598ea3c6d57efdbeb6808e86ad9f68f
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 37e3ef8476c042751b4c326e2fa28ed384af3d11
+AUTHOR_HANDOFF_BLOB: ee14e9bfc0afefbe949b5287435d3426c63b067a
 PUBLIC_ORIGINAL88_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_ORIGINAL88_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL88_INDEX_BLOB: 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c
 PUBLIC_NEW28_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
@@ -49,7 +57,7 @@ SVG4_PATH: prototypes/thpt/visuals/THPT_TOPIC11_WASHER_REVOLUTION_R01.svg
 SVG4_BLOB: e24c8d91fd5421e6b20ab5c4215db0b2d51342c2
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: #1109 A03 Work Knowledge repair + X-G.5 + S1/current Q18/V2 relock pending
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
