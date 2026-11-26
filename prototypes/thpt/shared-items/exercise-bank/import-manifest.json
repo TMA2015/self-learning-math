@@ -18951,6 +18951,89 @@
       },
       "remaining": "CD10–22, shared SGK and Written reconciliation, skill tags, global checks, depth and interaction conversion; no fresh primary PDF or bank-wide Academic/PED PASS.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp80": {
+      "scope": "CD10–12 scoped Practice/Replay comparison: CP57–59 candidate, historical projection, current exact learner; reconcile local records, preserve strengthened tasks and proofs.",
+      "baseline_commit": "72afed4c2026d06f12b9350917ca65ffbc1ec17b",
+      "item_commit": "644444cda1a5cec9c0e916694e764bf40324f50b",
+      "topics": [
+        {
+          "topic": "CD10",
+          "practice": 120,
+          "replay": 36,
+          "local_records": 36,
+          "shared_formative": 66,
+          "written": 18,
+          "latest_learner_commit": "92eaf00e64b4bae1a35165926279407dc192759e",
+          "latest_learner_blob": "952ce21e99953348068b6499449dae75d4490d10",
+          "prior_projection_blob": "2462e007e3ec6f22ce20a7de82170d6d0b64ec16",
+          "before": "bc793e1cadef57622d5ffc80e0d0b2e93dd0ca8e",
+          "after": "dfadd4adea416a89f84b9343011b5d29a0944246",
+          "placement_blob": "8bb7bb701d97c524bcc389751d9347db1df3be78",
+          "manual_reconciliations": 7
+        },
+        {
+          "topic": "CD11",
+          "practice": 116,
+          "replay": 22,
+          "local_records": 22,
+          "shared_formative": 66,
+          "written": 28,
+          "latest_learner_commit": "2b492772734431b37c9331f63dc6e7b23e314afe",
+          "latest_learner_blob": "64688cf81991a432264c06a2ff0a908371ca1f21",
+          "prior_projection_blob": "a2d7d56bfeb50316718b6695b2c78d95cf82d830",
+          "before": "71062d8cc3be5dbe95648ab76755bcb5f6e99912",
+          "after": "8f2acdf15db7967f34aee47fa4f7dc8580f41ae5",
+          "placement_blob": "dd2ff35b6059ba2da72eb875b4f1f91a634c11da",
+          "manual_reconciliations": 12
+        },
+        {
+          "topic": "CD12",
+          "practice": 34,
+          "replay": 12,
+          "local_records": 12,
+          "shared_formative": 16,
+          "written": 6,
+          "latest_learner_commit": "954053f0a5b3f7f8f19bfc01f4f974e9af844adb",
+          "latest_learner_blob": "6fd684807c3cf16489ed91e4a573edc3d1b2a6bc",
+          "prior_projection_blob": "1a6cd72172ad1fd7d9aaf22ff480d23edf31be10",
+          "before": "caad18897aa521e5a046d932b7f234082456d4dc",
+          "after": "f230ebeaa18e60e72dfd53266cde8cd64ccac3ed",
+          "placement_blob": "009bce34d5871a445b57bd63df2e7f3306c07aa2",
+          "manual_reconciliations": 12
+        }
+      ],
+      "checks": {
+        "practice": 270,
+        "replay": 70,
+        "current_learner_replay_stem_options_match": 70,
+        "placement_order_match": 340,
+        "local_records_updated": 70,
+        "source_equivalent_direct": 39,
+        "manual_field_reconciliation": 31,
+        "local_metadata_unchanged": true,
+        "local_inline_delimiters_balanced": true,
+        "local_self_compare_unchanged": true,
+        "written_placements_unchanged": 52,
+        "shared_formative_placements_unchanged": 148,
+        "commit_only_three_local_item_shards": true
+      },
+      "findings": [
+        "CD10 retain extrema coordinates, adjacent rectangle sides, cost units/finite increment, nondifferentiable candidate, integer optima and removable-point variants.",
+        "CD11 retain position units, changed integral/area tasks, signed displacement vs distance, asymmetric intervals, nonconstant-radius volume; source-equivalent P03/P05/P14 reasoning checked.",
+        "CD12 legacy short solution blocks parsed separately; retain full canonical separated answer and worked reasoning, special-angle G10 prerequisite, non-right triangle/Heron, SSA noncongruent cases and DEG rounding. Current replay exact after stripping heading/Đề labels; not equal to all deliberately strengthened candidate variants.",
+        "Known CP58–59 Written overlaps, missing pointers/rubric steps, TOP12-W02 prerequisite, duplicate B12-C05/B13-C02 remain open. No shared record or Written change. Full notation lint/browser and primary source reread pending."
+      ],
+      "progress": {
+        "topics_with_scoped_practice_replay_review": 12,
+        "total_topics": 22,
+        "practice_reviewed": 777,
+        "total_practice": 1479,
+        "replay_reviewed": 228,
+        "total_replay": 338
+      },
+      "remaining": "CD13–22; shared SGK/Written reconciliation, missing skill tags, global checks, depth and interaction conversion. No fresh primary PDF or bank-wide Academic/PED PASS.",
+      "release_authorization": false
     }
   }
 }
