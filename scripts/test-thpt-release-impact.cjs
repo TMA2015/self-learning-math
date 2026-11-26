@@ -684,28 +684,25 @@ function proveRW3Tabs(){
  assert.equal(changes,69,"Unexpected alias count");
  console.log("PASS R-W3 69 labels only, all renderer logic, content and protected assessment unchanged");
 }
-const TOPIC_BACK_TOP_FILES=new Set(["docs/assets/javascripts/sticky-nav-v1.js","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-release-impact.cjs"]);
+const TOPIC_BACK_TOP_FILES=new Set(["scripts/assemble-thpt-site.cjs","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-release-impact.cjs"]);
 function isExactTopicBackTop(files){
  const crypto=require("node:crypto"),blob=p=>{const b=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
  return files.length===TOPIC_BACK_TOP_FILES.size&&new Set(files).size===files.length&&files.every(f=>TOPIC_BACK_TOP_FILES.has(f))&&
+  blob("scripts/assemble-thpt-site.cjs")==="16efc896576761caab8afea7392854b445c7aee7"&&
   blob("docs/assets/javascripts/sticky-nav-v1.js")==="9b9f23018d7570e84d9d37c9cee7df4f452bf75b"&&
   blob("docs/assets/stylesheets/site-design-system.css")==="5765dfe92168804a67b4d3b62ef4a1305313b349"&&
   fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8").includes("TOPIC_BACK_TOP_R3");
 }
 function proveTopicBackTop(){
  const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"}),base=process.env.BASE_SHA;
- assert.equal(base,"f105257a26a9ff3cd983bc372b87018abc3878d3","R3 base must match published snapshot");
+ assert.equal(base,"0bf8478386709aefdf5083afb4aedf1a74611cac","R3 base must match published snapshot");
  assert(isExactTopicBackTop(git("diff","--no-renames","--name-only",base,"HEAD").trim().split("\n")),"R3 exact scope HOLD");
- const p="docs/assets/javascripts/sticky-nav-v1.js";
- const old=git("show",base+":"+p),now=fs.readFileSync(p,"utf8");
- const prev=old.split("\n"),next=now.split("\n");
- assert.equal(prev.length,next.length,"R3 only expands route scope");
- const changed=prev.map((line,i)=>line===next[i]?null:line).filter(x=>x!==null);
- assert.equal(changed.length,2,"R3 comment + route predicate only");
- assert(changed[0].startsWith("// R3:")&&changed[1].includes("const active=")&&changed[1].includes("kien-thuc"),"Non-R3 change");
- const css="docs/assets/stylesheets/site-design-system.css";
- assert.equal(fs.readFileSync(css,"utf8"),git("show",base+":"+css),"Approved design unchanged");
- console.log("PASS R3 exact delta: expand route predicate only; native behavior, CSS, content/assessment and THCS unchanged");
+ for(const p of ["docs/assets/javascripts/sticky-nav-v1.js","docs/assets/stylesheets/site-design-system.css"]){
+  assert.equal(fs.readFileSync(p,"utf8"),git("show",base+":"+p),"Approved runtime/design unchanged "+p);
+ }
+ const p="scripts/assemble-thpt-site.cjs",old=git("show",base+":"+p),now=fs.readFileSync(p,"utf8");
+ assert.equal(now.replace(/\/\/ R3 first paint: native markup and versioned assets\.[\s\S]*?\/\/ End R3 first paint\.\n/,""),old,"Unrelated assembly behavior changed");
+ console.log("PASS R3 exact delta: first-paint HTML and asset versions only; approved runtime/design and content unchanged");
 }
 const MENU_6_PLUS_1_FILES=new Set(["docs/assets/javascripts/thpt-r4-preview.js","docs/assets/stylesheets/thpt-r4-preview.css","scripts/test-thpt-r4-preview-browser.js","scripts/test-self-learning-math-rename-browser.cjs","scripts/test-math-lab-25-release-intake.cjs","scripts/test-math-lab-25-browser.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/math-lab-25-release-intake-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml"]);
 function isExactMenu6Plus1(files){
