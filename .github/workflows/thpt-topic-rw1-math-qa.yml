@@ -77,17 +77,22 @@ jobs:
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: node scripts/test-thpt-release-impact.cjs --prove-rw3-tabs
+      - name: Prove exact unchanged W1 publication recovery
+        if: steps.impact.outputs.reason == 'OWNER_W1_DEPLOY_RECOVERY_EXACT'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: node scripts/test-thpt-release-impact.cjs --prove-w1-recovery
       - name: Prove immutable approved renderer and build inputs
         if: steps.impact.outputs.reason == 'OWNER_1110_DEPLOY_RECOVERY_EXACT'
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: node scripts/test-thpt-release-impact.cjs --prove-shared-recovery
       - uses: actions/setup-python@v5
-        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.impact.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && steps.impact.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && steps.impact.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && steps.impact.outputs.reason != 'OWNER_TOPIC_W1_REFRESH') || matrix.wave == 'tail')
+        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_W1_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.impact.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && steps.impact.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && steps.impact.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && steps.impact.outputs.reason != 'OWNER_TOPIC_W1_REFRESH') || matrix.wave == 'tail')
         with:
           python-version: '3.12'
       - name: Install scoped QA dependencies
-        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.impact.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && steps.impact.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && steps.impact.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && steps.impact.outputs.reason != 'OWNER_TOPIC_W1_REFRESH') || matrix.wave == 'tail')
+        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_W1_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.impact.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && steps.impact.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && steps.impact.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && steps.impact.outputs.reason != 'OWNER_TOPIC_W1_REFRESH') || matrix.wave == 'tail')
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
           python -m playwright install --with-deps chromium webkit
@@ -99,20 +104,20 @@ jobs:
           fi
           node scripts/test-thpt-topic01-release-intake.cjs
       - name: Strict build (not full-site browser audit)
-        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.impact.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && steps.impact.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && steps.impact.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && steps.impact.outputs.reason != 'OWNER_TOPIC_W1_REFRESH') || matrix.wave == 'tail')
+        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_W1_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.impact.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && steps.impact.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && steps.impact.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && steps.impact.outputs.reason != 'OWNER_TOPIC_W1_REFRESH') || matrix.wave == 'tail')
         run: |
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: Shared-renderer candidate scope (no canonical changes)
-        if: (steps.impact.outputs.impact == 'SCOPED_TOPIC_SHARED_MATH' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.impact.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && steps.impact.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && steps.impact.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && steps.impact.outputs.reason != 'OWNER_TOPIC_W1_REFRESH') || github.event.pull_request.head.ref == 'release/shared-knowledge-math-rw2-20261125'
+        if: (steps.impact.outputs.impact == 'SCOPED_TOPIC_SHARED_MATH' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_W1_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.impact.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && steps.impact.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && steps.impact.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && steps.impact.outputs.reason != 'OWNER_TOPIC_W1_REFRESH') || github.event.pull_request.head.ref == 'release/shared-knowledge-math-rw2-20261125'
         run: python scripts/test-thpt-topic-rw1-math-browser.py --shared-candidate-scope
       - name: Published Topic navigation source preflight
-        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.impact.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && steps.impact.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && steps.impact.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && steps.impact.outputs.reason != 'OWNER_TOPIC_W1_REFRESH') || matrix.wave == 'tail')
+        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_W1_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.impact.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && steps.impact.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && steps.impact.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && steps.impact.outputs.reason != 'OWNER_TOPIC_W1_REFRESH') || matrix.wave == 'tail')
         run: |
           node scripts/test-thpt-topic-knowledge-tabs-v3.cjs --self-test
           node scripts/test-thpt-topic-knowledge-tabs-v3.cjs
       - name: Knowledge outcomes — Markdown/HTML/MathJax, Chromium/WebKit, 390/820/1440
-        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.impact.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && steps.impact.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && steps.impact.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && steps.impact.outputs.reason != 'OWNER_TOPIC_W1_REFRESH') || matrix.wave == 'tail')
+        if: steps.impact.outputs.impact != 'METADATA' && steps.impact.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_W1_DEPLOY_RECOVERY_EXACT' && steps.impact.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && ((steps.impact.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.impact.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && steps.impact.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && steps.impact.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && steps.impact.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && steps.impact.outputs.reason != 'OWNER_TOPIC_W1_REFRESH') || matrix.wave == 'tail')
         run: |
           if [[ "${{ steps.impact.outputs.reason }}" == "OWNER_TOPIC_W1_REFRESH" ]]; then
             git fetch --no-tags origin e8e1efe7d119fa0e37f6d80100c9583de19ad757 9b6d3a1c7b599c559ccb0c2a0fea48f12365409f 62eb09df620af13313d8a17ea74c0922ae9c61aa 731dba42d606a5bc506516fe04eea5199f6d6360

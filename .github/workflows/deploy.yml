@@ -47,6 +47,11 @@ jobs:
              grep -Fxq 'impact=SCOPED_TOPIC_SHARED_MATH' "$GITHUB_OUTPUT"; then
             echo "deploy=true" >> "$GITHUB_OUTPUT"
             echo "Exact #1110 deploy-only recovery; verify prior browser PASS and unchanged inputs, then source/build gates" >> "$GITHUB_STEP_SUMMARY"
+          elif [[ "$classification" == "NO_DEPLOY_METADATA_ONLY" && "$BEFORE_SHA" == "8b3ea2e2500f00578a2f9072d08916c545c72f6c" ]] &&
+             grep -Fxq 'reason=OWNER_W1_DEPLOY_RECOVERY_EXACT' "$GITHUB_OUTPUT" &&
+             grep -Fxq 'impact=SCOPED_TOPIC_SHARED_MATH' "$GITHUB_OUTPUT"; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+            echo "Exact #1120 W1 recovery; verify unchanged approved tree, scoped browser PASS and source/build gates" >> "$GITHUB_STEP_SUMMARY"
           elif [[ "$classification" == "DEPLOY_REQUIRED" ]]; then
             echo "deploy=true" >> "$GITHUB_OUTPUT"
             echo "Site/runtime or unknown files changed: retain ALL existing deploy gates" >> "$GITHUB_STEP_SUMMARY"
@@ -746,7 +751,7 @@ jobs:
       - name: Install scoped QA dependencies
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
-          if [[ "${{ needs.release-scope.outputs.reason }}" != "OWNER_1110_DEPLOY_RECOVERY_EXACT" ]]; then
+          if [[ "${{ needs.release-scope.outputs.reason }}" != "OWNER_1110_DEPLOY_RECOVERY_EXACT" && "${{ needs.release-scope.outputs.reason }}" != "OWNER_W1_DEPLOY_RECOVERY_EXACT" ]]; then
             python -m playwright install --with-deps chromium webkit
           fi
       - name: Reuse approved browser evidence only for exact unchanged recovery
@@ -761,13 +766,27 @@ jobs:
             gh api "repos/$GITHUB_REPOSITORY/actions/runs/$run" > "$RUNNER_TEMP/approved-topic-run.json"
             node -e 'const a=require(process.argv[1]);require("node:assert/strict").equal(a.head_sha,"90cfffe5f3adb09eaf347ac9436c6f9e6d4b8ecd");require("node:assert/strict").equal(a.conclusion,"success");console.log("Verified approved browser PASS run "+a.id)' "$RUNNER_TEMP/approved-topic-run.json"
           done
+      - name: Verify exact W1 browser evidence (unchanged build inputs)
+        if: needs.release-scope.outputs.reason == 'OWNER_W1_DEPLOY_RECOVERY_EXACT'
+        env:
+          BASE_SHA: ${{ github.event.before }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          node scripts/test-thpt-release-impact.cjs --prove-w1-recovery
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/45836538949" > "$RUNNER_TEMP/w1-approved.json"
+          node -e 'const a=require(process.argv[1]);require("node:assert/strict").equal(a.head_sha,"81501e03a0f392812ea84daca7b8249e681a9815");require("node:assert/strict").equal(a.conclusion,"success");console.log("Verified approved W1 browser PASS run "+a.id)' "$RUNNER_TEMP/w1-approved.json"
       - name: Exact source and protected scope gate
         env:
           BASE_SHA: ${{ github.event.before }}
           HEAD_SHA: ${{ github.sha }}
         run: |
           node scripts/test-thpt-release-impact.cjs --self-test
-          if [[ "${{ needs.release-scope.outputs.reason }}" == "OWNER_TOPIC_W1_REFRESH" ]]; then
+          if [[ "${{ needs.release-scope.outputs.reason }}" == "OWNER_W1_DEPLOY_RECOVERY_EXACT" ]]; then
+            node scripts/test-thpt-release-impact.cjs --prove-w1-recovery
+            git fetch --no-tags origin e8e1efe7d119fa0e37f6d80100c9583de19ad757 9b6d3a1c7b599c559ccb0c2a0fea48f12365409f 62eb09df620af13313d8a17ea74c0922ae9c61aa 731dba42d606a5bc506516fe04eea5199f6d6360
+            python scripts/test-thpt-topic-w1-source-locked.py
+          elif [[ "${{ needs.release-scope.outputs.reason }}" == "OWNER_TOPIC_W1_REFRESH" ]]; then
             node scripts/test-thpt-release-impact.cjs --prove-topic-w1-refresh
             git fetch --no-tags origin e8e1efe7d119fa0e37f6d80100c9583de19ad757 9b6d3a1c7b599c559ccb0c2a0fea48f12365409f 62eb09df620af13313d8a17ea74c0922ae9c61aa 731dba42d606a5bc506516fe04eea5199f6d6360
             python scripts/test-thpt-topic-w1-source-locked.py
@@ -793,7 +812,7 @@ jobs:
           node scripts/test-thpt-handoff-gate-v2.cjs --self-test
           node scripts/test-thpt-handoff-gate-v2.cjs
       - name: Preserve signed W2 W3 W4 W5 sources and PUBLIC_REPLAY_ONLY
-        if: needs.release-scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && needs.release-scope.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && needs.release-scope.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && needs.release-scope.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH'
+        if: needs.release-scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && needs.release-scope.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && needs.release-scope.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && needs.release-scope.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_W1_DEPLOY_RECOVERY_EXACT'
         run: |
           git fetch --no-tags origin 7ccecad8e357319f6f432b0765630fd50625b56f a7d3d7756535cfee29f04bde86af6ab58b0a9d30 28bd2103731eef4b4a6960cd5fc33d49c0680017 a1d0c5ae4c37ca0def035939fcbeef0109be3e1b c78cbbeefc92d14060a5bd81a1e2036ea2f6afeb c644ae7a75dc1d02c4e2ac0d0e7ee0856df62f07
           git fetch --no-tags origin 8ff14130b995ae505978e590c4e65d9287f93342 0edada0daa8a36bcadd4317086bd0530e20ade7e b31c26c4fe630c0e362d48ed868b465bfe7f7177 5bb6e5fdb56a2d4d9d6cf749916913da2540b36f
@@ -809,7 +828,7 @@ jobs:
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: All 22 Knowledge pages and affected Golden adapter regressions
-        if: needs.release-scope.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && needs.release-scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && needs.release-scope.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && needs.release-scope.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && needs.release-scope.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH'
+        if: needs.release-scope.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && needs.release-scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && needs.release-scope.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && needs.release-scope.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && needs.release-scope.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_W1_DEPLOY_RECOVERY_EXACT'
         run: |
           python scripts/test-thpt-topic-rw1-math-browser.py
           python scripts/test-thpt-topic-rw1-math-browser.py --rw2
