@@ -341,7 +341,7 @@ with sync_playwright() as pw:
                         section=re.split(r"^#{2,3} ",section,maxsplit=1,flags=re.M)[0].split("<details",1)[0]
                         expected=[re.sub(r"\s+","",html.unescape(x or y)) for x,y in re.findall(r"\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]",section)]
                         assert expected and any("^" in x for x in expected)
-                        assert_math(page,".thpt-r4-knowledge-content-panel:visible",expected,(topic,engine,width,outcome,"explicit exponent parity"))
+                        assert_math(page,".thpt-r4-knowledge-module-panel:not([hidden]) .thpt-r4-knowledge-content-panel:not([hidden])",expected,(topic,engine,width,outcome,"explicit exponent parity"))
                     else:
                         # Shared renderer uses native semantic superscripts for explicit
                         # plain-text shorthand; canonical TeX still uses MathJax.
