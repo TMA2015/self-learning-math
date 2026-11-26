@@ -3,8 +3,8 @@
     "item_id": "THPT-G10-B19-C01",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Cho đường thẳng Δ: \\(3x-2y+6=0\\). Nêu một vectơ pháp tuyến và một vectơ chỉ phương của Δ.",
-    "answer_key": "\\(\\vec n=(3;-2)\\); \\(\\vec u=(2;3)\\).",
-    "worked_solution": "Các hệ số trước \\(x,y\\) cho \\(\\vec n\\); \\(\\vec u\\cdot\\vec n=2\\cdot3+3(-2)=0\\).",
+    "answer_key": "Ví dụ: \\(\\vec n=(3;-2)\\), \\(\\vec u=(2;3)\\).",
+    "worked_solution": "Từ phương trình \\(3x-2y+6=0\\), đọc một vectơ pháp tuyến \\(\\vec n=(3;-2)\\). Vectơ chỉ phương phải khác không và vuông góc với \\(\\vec n\\). Chọn \\(\\vec u=(2;3)\\) vì \\(\\vec u\\cdot\\vec n=2\\cdot3+3(-2)=0\\). Các bội khác 0 của từng vectơ tương ứng cũng là đáp án hợp lệ.",
     "skill_ids": [
       "G10-B19-NORMAL_DIRECTION"
     ],
@@ -35,14 +35,14 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Viết phương trình tổng quát đường thẳng qua \\(A(1;2)\\) và có vectơ pháp tuyến \\(\\vec n=(2;-1)\\).",
     "answer_key": "\\(2x-y=0\\).",
-    "worked_solution": "\\(2(x-1)-(y-2)=0\\Rightarrow2x-y=0\\).",
+    "worked_solution": "Một điểm \\(X(x;y)\\) thuộc đường thẳng qua A có pháp tuyến \\(\\vec n\\) khi \\(\\vec n\\cdot\\overrightarrow{AX}=0\\). Thay dữ kiện: \\(2(x-1)-(y-2)=0\\iff 2x-y=0\\). Kiểm tra A: \\(2\\cdot1-2=0\\).",
     "skill_ids": [
       "G10-B19-GENERAL_POINT"
     ],
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Thay tọa độ điểm và hệ số pháp tuyến vào a(x−x₀)+b(y−y₀)=0."
+      "Dùng \\(a(x-x_0)+b(y-y_0)=0\\) với điểm \\((x_0;y_0)\\) và pháp tuyến \\((a;b)\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -59,14 +59,14 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ hằng số, thế điểm A vào phương trình; dùng dạng n·(X−A)=0. Ôn Bài 19 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY02."
+    "remediation": "Nếu bỏ hằng số, thế A vào phương trình; dùng dạng \\(\\vec n\\cdot\\overrightarrow{AX}=0\\). Ôn Bài 19 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY02."
   },
   {
     "item_id": "THPT-G10-B19-P01",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Viết phương trình tham số đường thẳng qua \\(A(-1;2)\\), nhận \\(\\vec u=(3;-2)\\) làm vectơ chỉ phương.",
     "answer_key": "\\(x=-1+3t,\\ y=2-2t,\\ t\\in\\mathbb R\\).",
-    "worked_solution": "Mọi điểm trên đường thẳng có tọa độ \\(A+t\\vec u\\).",
+    "worked_solution": "Một điểm \\(X(x;y)\\) thuộc đường thẳng khi \\(\\overrightarrow{AX}=t\\vec u\\) với \\(t\\in\\mathbb R\\). Suy ra \\(x-(-1)=3t,\\ y-2=-2t\\), tức \\(x=-1+3t,\\ y=2-2t\\). Khi \\(t=0\\) ta được A; khi t thay đổi, điểm X chạy trên cả đường thẳng.",
     "skill_ids": [
       "G10-B19-PARAMETRIC"
     ],
@@ -97,7 +97,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Viết phương trình tổng quát đường thẳng qua \\(A(1;2)\\) và \\(B(4;-1)\\).",
     "answer_key": "\\(x+y-3=0\\).",
-    "worked_solution": "\\(\\overrightarrow{AB}=(3;-3)\\), một pháp tuyến là \\((1;1)\\). Qua \\(A\\): \\((x-1)+(y-2)=0\\).",
+    "worked_solution": "Hai điểm phân biệt xác định một đường thẳng. Tính \\(\\overrightarrow{AB}=(4-1;-1-2)=(3;-3)\\), chọn pháp tuyến \\(\\vec n=(1;1)\\) vì \\(3-3=0\\). Qua A: \\((x-1)+(y-2)=0\\iff x+y-3=0\\). Thế B cũng được \\(4-1-3=0\\).",
     "skill_ids": [
       "G10-B19-GENERAL_POINT"
     ],
@@ -128,7 +128,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Kiểm tra \\(M(2;3)\\) và \\(N(0;0)\\) có thuộc Δ: \\(2x-y-1=0\\) không.",
     "answer_key": "\\(M\\in\\Delta,\\ N\\notin\\Delta\\).",
-    "worked_solution": "Thế \\(M\\): \\(4-3-1=0\\); thế \\(N\\): \\(-1\\ne0\\).",
+    "worked_solution": "Điểm thuộc đường thẳng khi tọa độ của nó làm vế trái bằng 0. Với M: \\(2\\cdot2-3-1=0\\) nên \\(M\\in\\Delta\\). Với N: \\(2\\cdot0-0-1=-1\\ne0\\), nên \\(N\\notin\\Delta\\).",
     "skill_ids": [
       "G10-B19-MEMBERSHIP"
     ],
@@ -157,9 +157,9 @@
   {
     "item_id": "THPT-G10-B19-P04",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
-    "stem": "Một mô hình nhiệt độ \\(T\\) (°C) theo thời gian \\(t\\) (giờ) có đồ thị đường thẳng qua \\((0;20)\\) và \\((5;5)\\), trong \\(0\\le t\\le5\\). Lập \\(T(t)\\) và tìm thời điểm \\(T=11\\)°C.",
-    "answer_key": "\\(T(t)=20-3t\\), \\(t=3\\) giờ.",
-    "worked_solution": "Độ dốc \\((5-20)/(5-0)=-3\\), nên \\(T=20-3t\\); giải \\(20-3t=11\\) cho \\(t=3\\), thuộc miền.",
+    "stem": "Một mô hình nhiệt độ T (°C) theo thời gian t (giờ) có đồ thị là phần đường thẳng qua \\((0;20)\\) và \\((5;5)\\), với \\(0\\le t\\le5\\). Lập công thức \\(T(t)\\) và tìm thời điểm nhiệt độ bằng 11°C.",
+    "answer_key": "\\(T(t)=20-3t\\), \\(0\\le t\\le5\\); \\(t=3\\) giờ.",
+    "worked_solution": "Hệ số góc là \\(\\frac{5-20}{5-0}=-3\\), nghĩa là nhiệt độ giảm 3°C mỗi giờ. Vì \\(T(0)=20\\), ta có \\(T(t)=20-3t\\) trên \\([0;5]\\). Giải \\(20-3t=11\\iff t=3\\). Thời điểm này thuộc miền mô hình, nên đáp án là sau 3 giờ.",
     "skill_ids": [
       "G10-B19-LINEAR_MODEL"
     ],
@@ -190,7 +190,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Xét \\(d_1:2x-y+3=0\\), \\(d_2:4x-2y-5=0\\). Hai đường có vị trí tương đối nào?",
     "answer_key": "Song song và phân biệt.",
-    "worked_solution": "Hệ số \\(x,y\\) của \\(d_2\\) bằng 2 lần hệ số của \\(d_1\\), nhưng hằng số \\(-5\\ne6\\); do đó không trùng.",
+    "worked_solution": "Hai vectơ pháp tuyến \\((2;-1)\\) và \\((4;-2)\\) cùng phương vì vectơ thứ hai gấp đôi vectơ thứ nhất. Nhân toàn bộ phương trình \\(d_1\\) với 2 được \\(4x-2y+6=0\\), khác \\(d_2:4x-2y-5=0\\). Vì hằng số không bằng nhau, hai đường song song và phân biệt.",
     "skill_ids": [
       "G10-B20-RELATIVE_POSITION"
     ],
@@ -221,7 +221,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Hai đường \\(d_1:x+2y=0\\) và \\(d_2:2x-y+4=0\\) có vuông góc không?",
     "answer_key": "Có, chúng vuông góc.",
-    "worked_solution": "Pháp tuyến \\(\\vec n_1=(1;2)\\), \\(\\vec n_2=(2;-1)\\) có tích vô hướng \\(2-2=0\\).",
+    "worked_solution": "Hai vectơ pháp tuyến \\(\\vec n_1=(1;2)\\), \\(\\vec n_2=(2;-1)\\) đều khác không. Tích vô hướng \\(\\vec n_1\\cdot\\vec n_2=1\\cdot2+2(-1)=0\\). Hai pháp tuyến vuông góc, nên hai đường thẳng cũng vuông góc.",
     "skill_ids": [
       "G10-B20-PERPENDICULAR"
     ],
@@ -252,7 +252,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Tìm giao điểm \\(d_1:x+y-3=0\\) và \\(d_2:x-y-1=0\\).",
     "answer_key": "\\(I(2;1)\\).",
-    "worked_solution": "Giải hệ \\(x+y=3,\\ x-y=1\\) được \\(x=2,y=1\\).",
+    "worked_solution": "Giao điểm phải thỏa đồng thời \\(x+y=3\\) và \\(x-y=1\\). Cộng hai phương trình được \\(2x=4\\), tức \\(x=2\\). Thế vào phương trình đầu được \\(y=1\\). Cặp \\((2;1)\\) thỏa cả hai phương trình, vậy giao điểm duy nhất là \\(I(2;1)\\).",
     "skill_ids": [
       "G10-B20-INTERSECTION"
     ],
@@ -283,7 +283,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Tính khoảng cách từ \\(P(1;-2)\\) đến đường \\(d:3x+4y-5=0\\).",
     "answer_key": "\\(d(P,d)=2\\).",
-    "worked_solution": "\\(\\dfrac{|3\\cdot1+4(-2)-5|}{\\sqrt{3^2+4^2}}=\\dfrac{10}{5}=2\\).",
+    "worked_solution": "Dùng công thức khoảng cách từ điểm đến đường thẳng \\(d(P,d)=\\frac{|ax_P+by_P+c|}{\\sqrt{a^2+b^2}}\\). Thay dữ kiện: \\(d(P,d)=\\frac{|3\\cdot1+4(-2)-5|}{\\sqrt{3^2+4^2}}=\\frac{10}{5}=2\\). Trị tuyệt đối bảo đảm khoảng cách không âm.",
     "skill_ids": [
       "G10-B20-DISTANCE"
     ],
@@ -312,9 +312,9 @@
   {
     "item_id": "THPT-G10-B20-P03",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
-    "stem": "Tìm góc giữa hai đường thẳng d₁: 2x−y=0 và d₂: −x+2y=0. Giải thích vì sao không lấy góc tù giữa hai vectơ pháp tuyến.",
-    "answer_key": "cosφ=4/5; φ≈36,87°.",
-    "worked_solution": "Hai pháp tuyến n₁=(2;−1), n₂=(−1;2) có tích vô hướng −4, mỗi độ dài √5. Góc giữa hai đường thuộc [0°;90°] nên cosφ=|−4|/(√5·√5)=4/5. Bấm arccos(4/5) ở DEG được φ≈36,87°. Đổi chiều một vectơ pháp tuyến không làm đổi đường thẳng.",
+    "stem": "Tìm góc giữa hai đường thẳng \\(d_1:2x-y=0\\) và \\(d_2:-x+2y=0\\). Giải thích vì sao không lấy góc tù giữa hai vectơ pháp tuyến.",
+    "answer_key": "\\(\\cos\\varphi=\\frac45\\); \\(\\varphi\\approx36{,}87^\\circ\\).",
+    "worked_solution": "Hai pháp tuyến \\(\\vec n_1=(2;-1)\\), \\(\\vec n_2=(-1;2)\\) có tích vô hướng −4, mỗi độ dài bằng \\(\\sqrt5\\). Góc giữa hai đường thẳng thuộc \\([0^\\circ;90^\\circ]\\), nên \\(\\cos\\varphi=\\frac{|-4|}{\\sqrt5\\cdot\\sqrt5}=\\frac45\\). Dùng chức năng cosin ngược ở chế độ DEG, được \\(\\varphi\\approx36{,}87^\\circ\\). Đổi chiều một pháp tuyến không làm đổi đường thẳng, vì vậy phải lấy trị tuyệt đối trong công thức góc giữa hai đường.",
     "skill_ids": [
       "G10-B20-ANGLE"
     ],
@@ -345,7 +345,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Viết đường thẳng qua \\(A(2;-1)\\) và vuông góc với \\(d:3x-4y+2=0\\).",
     "answer_key": "\\(4x+3y-5=0\\).",
-    "worked_solution": "Một pháp tuyến của đường cần tìm là vectơ chỉ phương \\((4;3)\\) của \\(d\\). Dùng \\(A\\): \\(4(x-2)+3(y+1)=0\\).",
+    "worked_solution": "Đường d có pháp tuyến \\((3;-4)\\), nên một vectơ chỉ phương là \\((4;3)\\). Đường vuông góc với d nhận \\((4;3)\\) làm pháp tuyến. Qua \\(A(2;-1)\\): \\(4(x-2)+3(y+1)=0\\iff 4x+3y-5=0\\). Kiểm tra tích hai pháp tuyến \\(3\\cdot4+(-4)\\cdot3=0\\).",
     "skill_ids": [
       "G10-B20-PERPENDICULAR"
     ],
@@ -376,7 +376,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Viết phương trình đường tròn tâm \\(I(1;-2)\\), bán kính \\(R=3\\).",
     "answer_key": "\\((x-1)^2+(y+2)^2=9\\).",
-    "worked_solution": "Áp dụng \\((x-a)^2+(y-b)^2=R^2\\).",
+    "worked_solution": "Điểm \\(X(x;y)\\) trên đường tròn tâm I, bán kính R khi \\(IX=R\\), tương đương \\((x-1)^2+(y-(-2))^2=3^2\\). Vậy phương trình là \\((x-1)^2+(y+2)^2=9\\).",
     "skill_ids": [
       "G10-B21-CIRCLE_STANDARD"
     ],
@@ -400,14 +400,14 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy dấu tọa độ tâm sai hoặc vế phải R, viết (x−a)²+(y−b)²=R². Ôn Bài 21 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY13."
+    "remediation": "Nếu lấy dấu tọa độ tâm sai hoặc vế phải là R, viết \\((x-a)^2+(y-b)^2=R^2\\). Ôn Bài 21 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY13."
   },
   {
     "item_id": "THPT-G10-B21-C02",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Tìm tâm và bán kính đường tròn \\(x^2+y^2-4x+6y-12=0\\).",
     "answer_key": "Tâm \\(I(2;-3)\\), bán kính \\(R=5\\).",
-    "worked_solution": "Hoàn thành bình phương: \\((x-2)^2+(y+3)^2=25\\).",
+    "worked_solution": "Gom các số hạng theo từng biến: \\(x^2-4x+y^2+6y=12\\). Thêm 4 và 9 vào cả hai vế, được \\((x-2)^2+(y+3)^2=25\\). So với dạng phương trình đường tròn, tâm \\(I(2;-3)\\), bán kính \\(R=\\sqrt{25}=5>0\\).",
     "skill_ids": [
       "G10-B21-CIRCLE_GENERAL"
     ],
@@ -431,14 +431,14 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đọc trực tiếp hệ số x,y là tâm, hoàn thành bình phương và kiểm R²>0. Ôn Bài 21 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY14."
+    "remediation": "Nếu đọc trực tiếp hệ số x, y là tâm, hoàn thành bình phương và kiểm \\(R^2>0\\). Ôn Bài 21 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY14."
   },
   {
     "item_id": "THPT-G10-B21-P01",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Viết phương trình đường tròn đường kính \\(AB\\), với \\(A(-2;1)\\), \\(B(4;5)\\).",
     "answer_key": "\\((x-1)^2+(y-3)^2=13\\).",
-    "worked_solution": "Trung điểm \\(I(1;3)\\); \\(AB^2=6^2+4^2=52\\), \\(R^2=AB^2/4=13\\).",
+    "worked_solution": "Tâm là trung điểm đường kính AB: \\(I(1;3)\\). Ta có \\(AB^2=6^2+4^2=52\\), nên \\(R^2=\\frac{AB^2}{4}=13\\). Vậy \\((x-1)^2+(y-3)^2=13\\).",
     "skill_ids": [
       "G10-B21-CIRCLE_STANDARD"
     ],
@@ -469,7 +469,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Viết tiếp tuyến của đường tròn \\(x^2+y^2=25\\) tại \\(M(3;4)\\).",
     "answer_key": "\\(3x+4y=25\\).",
-    "worked_solution": "\\(\\overrightarrow{OM}=(3;4)\\) là pháp tuyến của tiếp tuyến tại \\(M\\). Phương trình \\(3(x-3)+4(y-4)=0\\).",
+    "worked_solution": "Kiểm tra \\(3^2+4^2=25\\), nên M thuộc đường tròn. Tâm là O; bán kính OM vuông góc tiếp tuyến tại M. Lấy \\(\\overrightarrow{OM}=(3;4)\\) làm pháp tuyến, viết \\(3(x-3)+4(y-4)=0\\iff 3x+4y=25\\).",
     "skill_ids": [
       "G10-B21-CIRCLE_TANGENT"
     ],
@@ -500,7 +500,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Xét \\((C):(x-1)^2+(y+1)^2=4\\) và đường thẳng \\(d:x=3\\). \\(d\\) có tiếp xúc với \\((C)\\) không? Nêu tiếp điểm.",
     "answer_key": "Có, tiếp xúc tại \\(H(3;-1)\\).",
-    "worked_solution": "Tâm \\((1;-1)\\), \\(R=2\\), khoảng cách từ tâm đến \\(x=3\\) bằng \\(2\\). Hình chiếu vuông góc là \\(H(3;-1)\\).",
+    "worked_solution": "Tâm \\(I(1;-1)\\), bán kính \\(R=2\\). Khoảng cách từ I đến đường thẳng \\(x=3\\) là \\(|1-3|=2=R\\), nên d tiếp xúc đường tròn. Hình chiếu vuông góc của I lên đường thẳng đứng d là \\(H(3;-1)\\), chính là tiếp điểm.",
     "skill_ids": [
       "G10-B21-CIRCLE_TANGENT"
     ],
@@ -529,16 +529,16 @@
   {
     "item_id": "THPT-G10-B21-P04",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
-    "stem": "Tìm phương trình đường tròn qua ba điểm A(0;0), B(4;0), C(1;3). Giải thích vì sao xác định được duy nhất một đường tròn.",
-    "answer_key": "(x−2)²+(y−1)²=5.",
-    "worked_solution": "A,B nằm trên Ox nhưng C không nằm trên Ox nên ba điểm không thẳng hàng. Đặt tâm I(h;k). IA²=IB² cho h²+k²=(h−4)²+k², suy ra h=2. IA²=IC² cho 4+k²=1+(k−3)², suy ra k=1. Vậy R²=IA²=5>0. Tâm xác định duy nhất; thế A,B,C đều thỏa (x−2)²+(y−1)²=5.",
+    "stem": "Tìm phương trình đường tròn qua ba điểm \\(A(0;0), B(4;0), C(1;3)\\). Giải thích vì sao xác định được duy nhất một đường tròn.",
+    "answer_key": "\\((x-2)^2+(y-1)^2=5\\).",
+    "worked_solution": "A và B thuộc Ox còn C không thuộc Ox, nên ba điểm không thẳng hàng. Đặt tâm \\(I(h;k)\\). Từ \\(IA^2=IB^2\\), có \\(h^2+k^2=(h-4)^2+k^2\\iff h=2\\). Từ \\(IA^2=IC^2\\) với \\(h=2\\), có \\(4+k^2=1+(k-3)^2\\iff k=1\\). Do đó \\(R^2=IA^2=5>0\\). Hai điều kiện đã xác định duy nhất tâm và bán kính dương. Thế A, B, C đều thỏa \\((x-2)^2+(y-1)^2=5\\); vậy đây là đường tròn duy nhất.",
     "skill_ids": [
       "G10-B21-CIRCLE_THROUGH_POINTS"
     ],
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Đặt tâm I(h;k), lập hai phương trình từ IA²=IB² và IA²=IC²."
+      "Đặt tâm \\(I(h;k)\\); lập hai phương trình từ \\(IA^2=IB^2\\) và \\(IA^2=IC^2\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -555,21 +555,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy trung điểm cạnh bất kỳ làm tâm, lập IA²=IB²=IC² và kiểm ba điểm không thẳng hàng. Ôn Bài 21 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY16."
+    "remediation": "Nếu lấy trung điểm một cạnh bất kỳ làm tâm, lập \\(IA^2=IB^2=IC^2\\) và kiểm ba điểm không thẳng hàng. Ôn Bài 21 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY16."
   },
   {
     "item_id": "THPT-G10-B22-C01",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Cho elip \\(E:\\dfrac{x^2}{25}+\\dfrac{y^2}{9}=1\\). Tìm hai tiêu điểm và tâm sai.",
-    "answer_key": "\\(F_1(-4;0),F_2(4;0)\\), \\(e=4/5\\).",
-    "worked_solution": "\\(a=5,b=3,c=\\sqrt{a^2-b^2}=\\sqrt{16}=4\\), \\(e=c/a=4/5\\).",
+    "answer_key": "\\(F_1(-4;0),F_2(4;0)\\); tâm sai \\(e=\\frac45\\).",
+    "worked_solution": "Elip có dạng chính tắc \\(\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\), với \\(a>b>0\\). Đọc \\(a=5,b=3\\), tính \\(c=\\sqrt{a^2-b^2}=\\sqrt{25-9}=4\\). Hai tiêu điểm trên Ox là \\(F_1(-4;0),F_2(4;0)\\). Trong phần mở rộng về tâm sai, \\(e=\\frac ca=\\frac45\\).",
     "skill_ids": [
       "G10-B22-ELLIPSE_PARAMETERS"
     ],
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Elip có (c^2=a^2-b^2)."
+      "Với elip, \\(c^2=a^2-b^2\\); trong phần mở rộng, \\(e=\\frac ca\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -586,21 +586,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng a²+b² cho elip, nhớ c²=a²−b² và e=c/a. Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY18."
+    "remediation": "Nếu dùng \\(a^2+b^2\\) cho elip, nhớ \\(c^2=a^2-b^2\\), rồi tính \\(e=\\frac ca\\) nếu xét tâm sai. Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY18."
   },
   {
     "item_id": "THPT-G10-B22-C02",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Cho hypebol \\(H:\\dfrac{x^2}{9}-\\dfrac{y^2}{16}=1\\). Tìm hai tiêu điểm và hai tiệm cận.",
-    "answer_key": "\\(F_{1,2}=(\\mp5;0)\\); \\(y=\\pm\\frac43x\\).",
-    "worked_solution": "\\(a=3,b=4,c=\\sqrt{a^2+b^2}=5\\). Tiệm cận \\(y=\\pm(b/a)x\\).",
+    "answer_key": "\\(F_1(-5;0),F_2(5;0)\\); \\(y=\\pm\\frac43x\\).",
+    "worked_solution": "Hypebol có dạng chính tắc \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\), với \\(a,b>0\\). Đọc \\(a=3,b=4\\), tính \\(c=\\sqrt{a^2+b^2}=5\\). Hai tiêu điểm là \\(F_1(-5;0),F_2(5;0)\\). Với tâm O, trục thực Ox, hai tiệm cận có phương trình \\(y=\\pm\\frac ba x=\\pm\\frac43x\\).",
     "skill_ids": [
       "G10-B22-HYPERBOLA_PARAMETERS"
     ],
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Hypebol có (c^2=a^2+b^2), khác elip."
+      "Hypebol có \\(c^2=a^2+b^2\\), khác elip."
     ],
     "rubric": null,
     "interaction": {
@@ -617,21 +617,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đảo hệ số tiệm cận, viết y=±(b/a)x cho trục thực Ox; kiểm c²=a²+b². Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY20."
+    "remediation": "Nếu đảo hệ số tiệm cận, viết \\(y=\\pm\\frac ba x\\) cho dạng chính tắc có trục thực Ox; kiểm \\(c^2=a^2+b^2\\). Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY20."
   },
   {
     "item_id": "THPT-G10-B22-P01",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Elip có tiêu điểm \\((-3;0)\\), \\((3;0)\\), độ dài trục lớn \\(10\\). Viết phương trình chính tắc.",
     "answer_key": "\\(\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1\\).",
-    "worked_solution": "\\(a=5,c=3,b^2=a^2-c^2=16\\).",
+    "worked_solution": "Hai tiêu điểm đối xứng qua O trên Ox nên \\(c=3\\). Độ dài trục lớn \\(2a=10\\), suy ra \\(a=5>c\\). Từ \\(c^2=a^2-b^2\\), được \\(b^2=25-9=16>0\\). Vậy phương trình chính tắc là \\(\\frac{x^2}{25}+\\frac{y^2}{16}=1\\).",
     "skill_ids": [
       "G10-B22-ELLIPSE_PARAMETERS"
     ],
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Dùng độ dài trục lớn (2a) và khoảng cách tiêu điểm (2c)."
+      "Dùng độ dài trục lớn \\(2a\\) và khoảng cách hai tiêu điểm \\(2c\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -648,21 +648,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy độ dài trục lớn là a, chia 10 cho 2; tính b²=a²−c². Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY18."
+    "remediation": "Nếu lấy độ dài trục lớn là a, chia 10 cho 2; tính \\(b^2=a^2-c^2\\). Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY18."
   },
   {
     "item_id": "THPT-G10-B22-P02",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Hypebol có hai đỉnh \\((-2;0),(2;0)\\), hai tiêu điểm \\((-\\sqrt{13};0),(\\sqrt{13};0)\\). Viết phương trình chính tắc.",
     "answer_key": "\\(\\dfrac{x^2}{4}-\\dfrac{y^2}{9}=1\\).",
-    "worked_solution": "\\(a=2,c=\\sqrt{13},b^2=c^2-a^2=9\\).",
+    "worked_solution": "Hai đỉnh trên Ox cho \\(a=2\\); hai tiêu điểm cho \\(c=\\sqrt{13}\\). Với hypebol, \\(c^2=a^2+b^2\\), nên \\(b^2=13-4=9>0\\). Vậy phương trình chính tắc là \\(\\frac{x^2}{4}-\\frac{y^2}{9}=1\\).",
     "skill_ids": [
       "G10-B22-HYPERBOLA_PARAMETERS"
     ],
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Hypebol: trừ (y^2/b^2) và (c^2=a^2+b^2)."
+      "Hypebol có dạng \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\) và \\(c^2=a^2+b^2\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -679,21 +679,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng c²=a²−b², đối chiếu định nghĩa hypebol và kiểm b²>0. Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY19."
+    "remediation": "Nếu dùng \\(c^2=a^2-b^2\\), đối chiếu quy ước hypebol và kiểm \\(b^2>0\\). Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY19."
   },
   {
     "item_id": "THPT-G10-B22-P03",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Viết phương trình chính tắc của parabol có tiêu điểm \\(F(2;0)\\) và đường chuẩn \\(x=-2\\).",
     "answer_key": "\\(y^2=8x\\).",
-    "worked_solution": "Với \\(y^2=2px\\), tiêu điểm \\((p/2;0)\\), đường chuẩn \\(x=-p/2\\), nên \\(p=4\\).",
+    "worked_solution": "Theo quy ước SGK, phương trình chính tắc \\(y^2=2px\\) có \\(p>0\\), tiêu điểm \\(F(\\frac p2;0)\\) và đường chuẩn \\(x=-\\frac p2\\). Từ \\(F(2;0)\\), có \\(\\frac p2=2\\), suy ra \\(p=4\\); đường chuẩn đúng là \\(x=-2\\). Thay vào \\(y^2=2px\\) được \\(y^2=8x\\).",
     "skill_ids": [
       "G10-B22-PARABOLA_FOCUS"
     ],
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Dùng quy ước SGK (y^2=2px), (p>0)."
+      "Dùng quy ước SGK \\(y^2=2px,\\ p>0\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -710,21 +710,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm p với tọa độ tiêu điểm, dùng F(p/2;0) và đường chuẩn x=−p/2. Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY21."
+    "remediation": "Nếu nhầm p với tọa độ tiêu điểm, dùng \\(F(\\frac p2;0)\\) và đường chuẩn \\(x=-\\frac p2\\). Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY21."
   },
   {
     "item_id": "THPT-G10-B22-P04",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Một mặt cắt chảo phản xạ được mô hình bằng \\(y^2=12x\\) (đơn vị cm). Xác định tiêu điểm và đường chuẩn.",
     "answer_key": "\\(F(3;0)\\), đường chuẩn \\(x=-3\\) (cm).",
-    "worked_solution": "So với \\(y^2=2px\\) được \\(p=6\\); \\(F(p/2;0)=(3;0)\\), đường chuẩn \\(x=-p/2=-3\\). Đây là mô hình hình học lý tưởng, không phải thông số thiết bị thực.",
+    "worked_solution": "So \\(y^2=12x\\) với \\(y^2=2px\\), được \\(2p=12\\iff p=6\\). Tiêu điểm \\(F(\\frac p2;0)=F(3;0)\\), đường chuẩn \\(x=-\\frac p2=-3\\); tọa độ tính theo cm. Khoảng cách từ đỉnh O đến tiêu điểm là 3 cm. Đây là mô hình hình học lý tưởng, không phải thông số thiết bị thực.",
     "skill_ids": [
       "G10-B22-PARABOLA_FOCUS"
     ],
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "So hệ số (12) với (2p); đừng nhầm (p) với tiêu cự đến đỉnh."
+      "So hệ số 12 với \\(2p\\); khoảng cách từ đỉnh đến tiêu điểm là \\(\\frac p2\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -741,14 +741,14 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy p=12, so y²=2px trước khi tìm tiêu điểm; giữ đơn vị. Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY23."
+    "remediation": "Nếu lấy \\(p=12\\), so với \\(y^2=2px\\) trước khi tìm tiêu điểm; giữ đơn vị. Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY23."
   },
   {
     "item_id": "THPT-G10-B19-P05",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Viết phương trình tổng quát của đường thẳng qua \\(P(2;-1)\\) và song song với \\(d:3x+2y-7=0\\).",
     "answer_key": "\\(3x+2y-4=0\\).",
-    "worked_solution": "Đường cần tìm có pháp tuyến \\((3;2)\\), nên dạng \\(3x+2y+c=0\\). Thế \\(P\\): \\(6-2+c=0\\Rightarrow c=-4\\). Hai đường phân biệt vì \\(-4\\ne-7\\).",
+    "worked_solution": "Đường cần tìm song song với d nên có thể dùng cùng pháp tuyến \\((3;2)\\). Viết \\(3x+2y+c=0\\). Thay P: \\(6-2+c=0\\iff c=-4\\). Vậy \\(3x+2y-4=0\\). Hai phương trình có cùng hệ số x, y nhưng hằng số khác nhau nên hai đường song song và phân biệt.",
     "skill_ids": [
       "G10-B19-NORMAL_DIRECTION"
     ],
@@ -779,7 +779,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Tìm phương trình đường thẳng \\(\\Delta\\) đi qua giao điểm của \\(d_1:x+y-4=0\\) và \\(d_2:2x-y-2=0\\), đồng thời vuông góc với \\(d_3:x-2y+1=0\\).",
     "answer_key": "\\(\\Delta:2x+y-6=0\\).",
-    "worked_solution": "Giải hệ \\(x+y=4,\\ 2x-y=2\\) được \\(I(2;2)\\). Đường \\(d_3\\) có vectơ chỉ phương \\((2;1)\\), là pháp tuyến của \\(\\Delta\\). Vậy \\(2(x-2)+(y-2)=0\\).",
+    "worked_solution": "Từ \\(x+y=4,\\ 2x-y=2\\), cộng hai phương trình được \\(3x=6\\), suy ra \\(x=2,y=2\\). Giao điểm là \\(I(2;2)\\). Đường \\(d_3\\) có pháp tuyến \\((1;-2)\\), nên một vectơ chỉ phương là \\((2;1)\\). Vì \\(\\Delta\\perp d_3\\), lấy \\((2;1)\\) làm pháp tuyến của \\(\\Delta\\). Qua I: \\(2(x-2)+(y-2)=0\\iff 2x+y-6=0\\).",
     "skill_ids": [
       "G10-B19-MULTISTEP"
     ],
@@ -810,7 +810,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Tìm \\(m\\in\\mathbb R\\) để \\(d_1:(m+1)x+2y-1=0\\) song song và phân biệt với \\(d_2:3x-6y+4=0\\).",
     "answer_key": "\\(m=-2\\).",
-    "worked_solution": "Hai pháp tuyến cùng phương khi \\((m+1,2)=\\lambda(3,-6)\\). Từ \\(2=-6\\lambda\\) có \\(\\lambda=-1/3\\), suy ra \\(m+1=-1\\), \\(m=-2\\). Khi đó \\(d_1:-x+2y-1=0\\); nhân với \\(-3\\) được \\(3x-6y+3=0\\ne d_2\\), nên hai đường song song phân biệt.",
+    "worked_solution": "Hai pháp tuyến đều khác không vì hệ số y lần lượt là 2 và −6. Chúng cùng phương khi \\((m+1;2)=\\lambda(3;-6)\\). Từ \\(2=-6\\lambda\\) được \\(\\lambda=-\\frac13\\), rồi \\(m+1=-1\\iff m=-2\\). Khi đó \\(d_1:-x+2y-1=0\\). Nhân với −3 được \\(3x-6y+3=0\\), khác \\(d_2:3x-6y+4=0\\). Vậy \\(m=-2\\) thỏa cả điều kiện song song lẫn phân biệt.",
     "skill_ids": [
       "G10-B20-RELATIVE_POSITION"
     ],
@@ -839,9 +839,9 @@
   {
     "item_id": "THPT-G10-B20-P06",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
-    "stem": "Cho d₁: x+2y=0 và d₂: mx+y=0, với m thực. Tìm tất cả m để góc giữa hai đường bằng 45°.",
-    "answer_key": "m=−1/3 hoặc m=3.",
-    "worked_solution": "Hai pháp tuyến (1;2),(m;1) đều khác không. Điều kiện |m+2|/(√5·√(m²+1))=√2/2. Hai vế không âm, bình phương tương đương: 2(m+2)²=5(m²+1), tức 3m²−8m−3=0. Giải được m=3 hoặc m=−1/3. Thay cả hai vào tỉ số ban đầu đều được √2/2.",
+    "stem": "Cho \\(d_1:x+2y=0\\) và \\(d_2:mx+y=0\\), với m thực. Tìm tất cả m để góc giữa hai đường bằng \\(45^\\circ\\).",
+    "answer_key": "\\(m=-\\frac13\\) hoặc \\(m=3\\).",
+    "worked_solution": "Hai pháp tuyến \\((1;2)\\), \\((m;1)\\) đều khác không với mọi m. Điều kiện góc là \\(\\frac{|m+2|}{\\sqrt5\\sqrt{m^2+1}}=\\frac{\\sqrt2}{2}\\). Hai vế không âm, mẫu luôn dương, nên bình phương tương đương: \\(2(m+2)^2=5(m^2+1)\\iff 3m^2-8m-3=0\\iff (3m+1)(m-3)=0\\). Suy ra \\(m=-\\frac13\\) hoặc \\(m=3\\). Thay cả hai vào tỉ số ban đầu đều được \\(\\frac{\\sqrt2}{2}\\), nên không có nghiệm ngoại lai.",
     "skill_ids": [
       "G10-B20-ANGLE"
     ],
@@ -872,7 +872,7 @@
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Tìm \\(k\\in\\mathbb R\\) để \\(x^2+y^2-6x+2y+k=0\\) là đường tròn tiếp xúc với đường thẳng \\(x=0\\). Nêu tiếp điểm.",
     "answer_key": "\\(k=1\\), tiếp điểm \\(H(0;-1)\\).",
-    "worked_solution": "Hoàn thành bình phương: \\((x-3)^2+(y+1)^2=10-k\\). Tâm \\(I(3;-1)\\), khoảng cách tới \\(x=0\\) bằng 3. Tiếp xúc khi \\(R=3\\), tức \\(10-k=9\\Rightarrow k=1\\). Hình chiếu của I lên \\(x=0\\) là \\(H(0;-1)\\).",
+    "worked_solution": "Hoàn thành bình phương: \\((x-3)^2+(y+1)^2=10-k\\). Để là đường tròn, cần \\(10-k>0\\). Tâm \\(I(3;-1)\\) cách đường thẳng \\(x=0\\) một khoảng 3. Tiếp xúc khi bán kính bằng 3, tức \\(10-k=9\\iff k=1\\), thỏa điều kiện \\(10-k>0\\). Hình chiếu vuông góc của I lên \\(x=0\\) là \\(H(0;-1)\\), tiếp điểm.",
     "skill_ids": [
       "G10-B21-CIRCLE_GENERAL"
     ],
@@ -896,14 +896,14 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ giải điều kiện bán kính, kiểm R²>0 và khoảng cách từ tâm đến đường bằng R. Ôn Bài 21 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY17."
+    "remediation": "Nếu chỉ xét bán kính, kiểm \\(R^2>0\\) và khoảng cách từ tâm đến đường bằng R. Ôn Bài 21 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY17."
   },
   {
     "item_id": "THPT-G10-B21-P06",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Tìm phương trình đường tròn đi qua \\(A(1;2)\\), \\(B(5;4)\\), biết tâm nằm trên trục \\(Ox\\).",
     "answer_key": "\\((x-\\frac92)^2+y^2=\\frac{65}{4}\\).",
-    "worked_solution": "Đặt tâm \\(I(h;0)\\). Từ \\(IA^2=IB^2\\): \\((h-1)^2+4=(h-5)^2+16\\Rightarrow 8h=36\\Rightarrow h=9/2\\). Khi đó \\(R^2=(9/2-1)^2+2^2=49/4+16/4=65/4>0\\).",
+    "worked_solution": "Tâm thuộc Ox nên có dạng \\(I(h;0)\\). Từ \\(IA^2=IB^2\\), ta có \\((h-1)^2+4=(h-5)^2+16\\iff 8h=36\\iff h=\\frac92\\). Khi đó \\(R^2=(\\frac92-1)^2+2^2=\\frac{49}{4}+\\frac{16}{4}=\\frac{65}{4}>0\\). Vậy \\((x-\\frac92)^2+y^2=\\frac{65}{4}\\).",
     "skill_ids": [
       "G10-B21-CIRCLE_THROUGH_POINTS"
     ],
@@ -927,14 +927,14 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy trung điểm AB làm tâm mà bỏ ràng buộc Oy=0, đặt I(h;0), giải IA²=IB². Ôn Bài 21 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY16."
+    "remediation": "Nếu lấy trung điểm AB làm tâm mà bỏ điều kiện tung độ tâm bằng 0, đặt \\(I(h;0)\\) rồi giải \\(IA^2=IB^2\\). Ôn Bài 21 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY16."
   },
   {
     "item_id": "THPT-G10-B22-P05",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
     "stem": "Tìm các giao điểm của elip \\(E:\\frac{x^2}{16}+\\frac{y^2}{9}=1\\) với đường thẳng \\(y=\\frac32\\).",
     "answer_key": "\\((2\\sqrt3;\\frac32)\\) và \\((-2\\sqrt3;\\frac32)\\).",
-    "worked_solution": "Thế \\(y=3/2\\): \\(x^2/16+(9/4)/9=1\\Rightarrow x^2/16=3/4\\Rightarrow x^2=12\\), nên \\(x=\\pm2\\sqrt3\\).",
+    "worked_solution": "Giao điểm phải thỏa cả hai phương trình. Thế \\(y=\\frac32\\) vào elip: \\(\\frac{x^2}{16}+\\frac{9/4}{9}=1\\iff\\frac{x^2}{16}=\\frac34\\iff x^2=12\\). Do đó \\(x=\\pm2\\sqrt3\\), cho hai giao điểm \\((2\\sqrt3;\\frac32)\\) và \\((-2\\sqrt3;\\frac32)\\). Cả hai đều thỏa phương trình đường thẳng và elip.",
     "skill_ids": [
       "G10-B22-CONIC_INTERSECTION"
     ],
@@ -963,9 +963,9 @@
   {
     "item_id": "THPT-G10-B22-P06",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
-    "stem": "Cho parabol P: y²=8x. Chứng minh M(8;−8) thuộc P và có khoảng cách tới tiêu điểm bằng khoảng cách tới đường chuẩn.",
-    "answer_key": "M∈P; MF=d(M,Δ)=10.",
-    "worked_solution": "(−8)²=64=8·8 nên M∈P. So với y²=2px được p=4, F(2;0), Δ:x=−2. MF=√[(8−2)²+(−8)²]=10. Khoảng cách vuông góc tới Δ là |8−(−2)|=10. Hai khoảng cách bằng nhau, phù hợp định nghĩa parabol.",
+    "stem": "Cho parabol \\((P):y^2=8x\\). Chứng minh \\(M(8;-8)\\) thuộc \\((P)\\) và có khoảng cách tới tiêu điểm bằng khoảng cách tới đường chuẩn.",
+    "answer_key": "\\(M\\in(P)\\); \\(MF=d(M,\\Delta)=10\\).",
+    "worked_solution": "Thay tọa độ M: \\((-8)^2=64=8\\cdot8\\), nên \\(M\\in(P)\\). So với \\(y^2=2px\\), được \\(p=4\\), tiêu điểm \\(F(2;0)\\), đường chuẩn \\(\\Delta:x=-2\\). Ta có \\(MF=\\sqrt{(8-2)^2+(-8)^2}=\\sqrt{100}=10\\). Khoảng cách vuông góc tới đường chuẩn đứng là \\(d(M,\\Delta)=|8-(-2)|=10\\). Hai khoảng cách bằng nhau, phù hợp định nghĩa parabol.",
     "skill_ids": [
       "G10-B22-PARABOLA_FOCUS"
     ],
@@ -989,7 +989,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm khoảng cách tới đường chuẩn với khoảng cách tới gốc O, tính khoảng cách vuông góc tới x=−2. Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY21."
+    "remediation": "Nếu nhầm khoảng cách tới đường chuẩn với khoảng cách tới O, tính khoảng cách vuông góc tới \\(x=-2\\). Ôn Bài 22 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY21."
   },
   {
     "item_id": "THPT-G10-CHVII-TRY01",
