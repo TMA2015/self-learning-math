@@ -20648,6 +20648,148 @@
       },
       "remaining": "Next G11 ChVII–IX, then G12 ChI–III, three chapters per turn; separate FirstTry/public selfcheck/Written and depth/source review.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp102": {
+      "scope": "G11 ChVII–IX B22–B33 plus chapter synthesis: 152 canonical public formative C/P records; 8 separate KFT unchanged; three-chapter batch",
+      "baseline_commit": "4bfaff16b0b9d983842e125cf6562ffb45fd7de2",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "source_projection": {
+        "paths": [
+          "docs/assets/javascripts/thpt-g11-chvii-b22-b27-source-locked-formative-r01.js",
+          "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+          "docs/assets/javascripts/thpt-g11-chix-b31-b33-source-locked-formative-r00.js"
+        ],
+        "current_main_and_import_blobs": [
+          "4d656f2b8d952a2ad0be1c4298d065e0b8c95c88",
+          "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+          "eda6fdf74345d93cd23e77008d2dcc9a9f6c7111"
+        ],
+        "ids_and_order": 152,
+        "decision": "Preserve existing candidate identity, metadata, placements, interaction and original answer meanings; no public source edits."
+      },
+      "item_shards": [
+        {
+          "path": "items/g11-chvii.json",
+          "before": "b6cf1b635b4f6c176f51d4ecaf0650c04d9acb9f",
+          "after": "32085fcde3427816a9fdb0a1807c342d7b5d1ae5",
+          "reviewed": 51,
+          "changed": 51,
+          "other_unchanged": 2,
+          "commits": [
+            "099b1e869fa2fc7ca310536c987b02ec2b8091ff",
+            "ae61164a205abb4000722bead02424978fc97284",
+            "3f187e017fe95fb2dcf4293f91c7a0ba114acfa6"
+          ],
+          "fields": {
+            "stem": 49,
+            "answer_key": 43,
+            "worked_solution": 51,
+            "hints": 3,
+            "remediation": 9
+          }
+        },
+        {
+          "path": "items/g11-chviii.json",
+          "before": "df162077a215c749606aa97e10c47a3f6f4991af",
+          "after": "b075c4d98ca1c01de6a515d60b19589857a59ce6",
+          "reviewed": 39,
+          "changed": 39,
+          "other_unchanged": 3,
+          "commits": [
+            "776a9048fca3c88d6c76f2b144f3ed9c0ece3351",
+            "b552e86e18e670001508dae51b427ef971cd4a2a",
+            "cd822d497cce1e24934f72c828346139e7ce8b56"
+          ],
+          "fields": {
+            "stem": 39,
+            "answer_key": 28,
+            "worked_solution": 39,
+            "hints": 6,
+            "remediation": 8
+          }
+        },
+        {
+          "path": "items/g11-chix.json",
+          "before": "24816c74d696a08dd21f817644bd1aa5dd5e1406",
+          "after": "03c9c5b9345a6064033d1dc6c1312a5dacd773bc",
+          "reviewed": 62,
+          "changed": 62,
+          "other_unchanged": 3,
+          "commits": [
+            "2b73285797203997b8e002a865af928168cb6009",
+            "539b95e052aa1b83cb2029699c0b3b5be3b164dd",
+            "2be58fb902d2b8ceec08016fdc8f5ad12662e4f0"
+          ],
+          "fields": {
+            "stem": 59,
+            "answer_key": 58,
+            "worked_solution": 62,
+            "hints": 17,
+            "remediation": 22
+          }
+        }
+      ],
+      "checks": {
+        "formative_reviewed": 152,
+        "formative_changed": 152,
+        "fields_changed": {
+          "stem": 147,
+          "answer_key": 129,
+          "worked_solution": 152,
+          "hints": 26,
+          "remediation": 39
+        },
+        "separate_kft_unchanged": 8,
+        "sgk_placement_blob": "ed0461148642c53f6849d943a6f1ffbbe5a11016",
+        "sgk_placements": 222,
+        "sgk_roles": {
+          "SGK_CORE": 83,
+          "SGK_PRACTICE": 69,
+          "CLIENT_SELF_CHECK_NO_MASTERY": 69,
+          "SGK_FIRST_TRY": 1
+        },
+        "topic_placement_shards_scanned": 22,
+        "topic_placements": {
+          "CD09": 62,
+          "CD16": 33,
+          "CD17": 18
+        },
+        "topic_blobs": {
+          "CD09": "cf15dad3c0749780420e036d8cead61344e03e6a",
+          "CD16": "ae47d490936283210a6be104e43d35432d3469cb",
+          "CD17": "807a03542ef6d2f3e207975a14696c75f200b015"
+        },
+        "topic_cd20_references_to_scoped_ids": 0,
+        "metadata_and_interaction_unchanged": true,
+        "answer_meanings_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "targeted_raw_math_scan_residual": 0,
+        "control_character_scan_residual": 0,
+        "manual_review": 152,
+        "supporting_checks": {
+          "VII_numeric": 14,
+          "VIII_set_probability": 39,
+          "IX_derivative_and_examples": 57
+        }
+      },
+      "findings": [
+        "ChVII: distinguish perpendicular lines from intersecting lines, sufficient conditions for line/plane perpendicularity, orthogonal projection and line-plane angle, distance proof via plane intersection/rectangle, correct height and units for volume.",
+        "ChVIII: distinguish incompatibility and independence, inclusive union and complement, specify mutual independence for three trials, correct B29-P04 misleading remediation wording 'not both' versus 'neither'.",
+        "ChIX: difference quotient with h nonzero, endpoint infinite one-sided quotient, domain, composition and quotient, tangent slope vs ordinate, signed velocity vs speed and acceleration, units and second derivative. Numerical finite-difference spot checks are supporting evidence, not a proof.",
+        "TeX escapes in intermediate hint commits were corrected, final control-character and targeted scan zero. All source projection IDs/order verified, no fresh primary SGK/SBT PDFs or separate knowledge-page audit, no full Academic/PED/browser verdict. CD20 contains zero references to scoped SGK probability IDs: do not create placements or claim coverage alignment without separate source-owner review."
+      ],
+      "phase_totals": {
+        "chapters": 18,
+        "total_thpt_chapters": 24,
+        "reviewed": 574,
+        "changed": 573,
+        "unchanged_reviewed": 1,
+        "g11_reviewed": 359,
+        "g11_changed": 359
+      },
+      "remaining": "Next G12 ChI–III, then ChIV–VI, three chapters per turn; separate FirstTry/public selfcheck/Written and depth/source review; investigate existing SGK probability vs CD20 linkage at source-owner stage.",
+      "release_authorization": false
     }
   }
 }
