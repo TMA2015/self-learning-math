@@ -996,7 +996,7 @@
     "content_version": "THPT-G11-CHII-B05-B07-R03",
     "stem": "Ba số 9, x, 1 theo thứ tự là ba số hạng liên tiếp của một cấp số nhân thực. Tìm tất cả x và công bội tương ứng.",
     "answer_key": "\\(x=3,\\ q=\\frac13\\) hoặc \\(x=-3,\\ q=-\\frac13\\).",
-    "worked_solution": "Theo định nghĩa, \\(9q=x\\) và \\(xq=1\\). Vì x khác 0, nhân hai hệ thức hoặc thay \\(q=\\frac x9\\) vào hệ thức sau, được \\(x^2=9\\). Hai nghiệm là 3 và −3, tương ứng công bội \\(\\frac13\\) và \\(-\\frac13\\). Cả hai cặp thỏa hai hệ thức ban đầu.",
+    "worked_solution": "Theo định nghĩa, \\(9q=x\\) và \\(xq=1\\). Vì x khác 0, thay \\(q=\\frac x9\\) vào hệ thức sau, được \\(x^2=9\\). Hai nghiệm là 3 và −3, tương ứng công bội \\(\\frac13\\) và \\(-\\frac13\\). Cả hai cặp thỏa hai hệ thức ban đầu.",
     "skill_ids": [
       "G11-B07-GP-THREE-TERMS"
     ],
