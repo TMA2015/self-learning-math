@@ -5,6 +5,8 @@ import http.server
 import pathlib
 import threading
 import sys
+import re
+import html
 from playwright.sync_api import sync_playwright, expect
 
 ROOT=pathlib.Path(__file__).resolve().parent.parent
@@ -19,6 +21,40 @@ class ProjectHandler(http.server.SimpleHTTPRequestHandler):
 server=http.server.ThreadingHTTPServer(("127.0.0.1",0),functools.partial(ProjectHandler,directory=str(BUILD)))
 threading.Thread(target=server.serve_forever,daemon=True).start()
 BASE=f"http://127.0.0.1:{server.server_address[1]}"+("/self-learning-math" if REFRESH else "")+"/thpt-preview/chuyen-de/cd01/"
+# CP10: verify all changed Practice and Replay formulas against the exact
+# projection Markdown, not just solution visibility or item identity.
+def source_math(part,marker):
+ raw=(ROOT/f"docs/thpt-preview/chuyen-de/cd01/{part}.md").read_text(encoding="utf-8")
+ blocks=re.split(r"<!-- "+marker+r":\s*",raw)[1:]
+ result={}
+ def formulas(t):
+  return [re.sub(r"\s+","",html.unescape(m[0] or m[1])) for m in re.findall(r"\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]",t)]
+ for block in blocks:
+  item=block.split(";",1)[0]
+  stem,_,solution=block.partition("<details")
+  result[item]=(formulas(stem),formulas(solution) if marker=="DISPLAY_ONLY_CANONICAL" else [])
+ return result
+PRACTICE_MATH=source_math("luyen-tap","DISPLAY_ONLY_CANONICAL")
+REPLAY_MATH=source_math("tu-kiem-tra","PUBLIC_REPLAY_ONLY")
+assert len(PRACTICE_MATH)==24 and len(REPLAY_MATH)==11
+def assert_math(page,root,expected,label,stem_only=False):
+ # Do not invoke typeset in a test: require actual learner runtime.
+ page.wait_for_function("""({selector,stemOnly,count})=>{
+  const root=document.querySelector(selector),m=window.MathJax?.startup?.document?.math;
+  if(!root||!m)return false;
+  const visible=e=>root.contains(e)&&!e.closest('[hidden],details:not([open])')&&(!stemOnly||!e.closest('details,.g10sc-review'));
+  return [...m].filter(i=>i.typesetRoot&&visible(i.typesetRoot)).length>=count;
+ }""",arg={"selector":root,"stemOnly":stem_only,"count":len(expected)},timeout=20000)
+ got=page.locator(root).evaluate("""(root,stemOnly)=>{
+  const visible=e=>root.contains(e)&&!e.closest('[hidden],details:not([open])')&&(!stemOnly||!e.closest('details,.g10sc-review'));
+  const math=[...MathJax.startup.document.math].filter(i=>i.typesetRoot&&visible(i.typesetRoot)).sort((a,b)=>a.typesetRoot===b.typesetRoot?0:a.typesetRoot.compareDocumentPosition(b.typesetRoot)&Node.DOCUMENT_POSITION_FOLLOWING?-1:1).map(i=>i.math.replace(/\s+/g,''));
+  const errors=[...root.querySelectorAll('mjx-merror,mjx-container mjx-container')].filter(visible).length;
+  const missing=[...root.querySelectorAll('.arithmatex')].filter(visible).filter(e=>e.querySelectorAll('mjx-container').length!==1).length;
+  const raw=[];const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+  while(walker.nextNode()){const n=walker.currentNode,e=n.parentElement;if(e&&visible(e)&&!e.closest('mjx-container,.arithmatex,script,style,svg,code,pre')&&/\\(?:\(|\)|\[|\]|mathbb\b|setminus\b|cup\b|cap\b|frac\b|sqrt\b|ge\b|le\b|ne\b|mid\b)/.test(n.nodeValue))raw.push(n.nodeValue.trim().slice(0,120));}
+  return {math,errors,missing,raw};
+ }""",stem_only)
+ assert got["math"]==expected and got["errors"]==got["missing"]==0 and not got["raw"],(label,expected,got)
 with sync_playwright() as pw:
  for engine in ("chromium","webkit"):
   browser=getattr(pw,engine).launch(headless=True)
@@ -106,8 +142,14 @@ with sync_playwright() as pw:
        expect(modal.locator(".thpt-r4-formative-submit")).to_have_count(0) # no duplicated action
        detail=modal.locator(".thpt-r4-formative-actions details")
        expect(detail).to_have_count(1)
+       if REFRESH and width==820:
+        item=modal.locator("[data-topic01-current-item]").get_attribute("data-thpt-canonical-item")
+        stem,sol=PRACTICE_MATH[item]
+        assert_math(p,"dialog.topic01-practice-dialog .topic01-question-body",stem,("Practice stem",engine,item),True)
        detail.locator("summary").click()
        expect(detail.locator(".thpt-r4-formative-reveal")).to_be_visible()
+       if REFRESH and width==820:
+        assert_math(p,"dialog.topic01-practice-dialog .thpt-r4-formative-reveal",sol,("Practice solution",engine,item))
       modal.locator(".topic01-close").click()
       expect(modal).to_be_hidden()
     else:
@@ -123,10 +165,17 @@ with sync_playwright() as pw:
       solution=body.locator("#topic01-current-solution")
       expect(solution).to_be_hidden()
       expect(body.locator("input,textarea")).to_have_count(0)
+      if REFRESH and width==820:
+       item=body.get_attribute("data-thpt-canonical-item")
+       assert_math(p,"[data-topic01-public-selfcheck] .g10sc-rich",REPLAY_MATH[item][0],("Replay stem",engine,item))
       body.get_by_role("button",name="Đối chiếu",exact=True).click()
       expect(solution).to_be_visible()
       expect(solution).to_have_attribute("data-thpt-canonical-solution",body.get_attribute("data-thpt-canonical-item"))
       expect(solution.locator(".g10sc-error")).to_have_count(0)
+      if REFRESH and width==820:
+       assert_math(p,"#topic01-current-solution",PRACTICE_MATH[item][1],("Replay solution",engine,item))
+   if REFRESH and width==820:
+    print(f"PASS CĐ01 {engine}: ordered MathJax source parity 24 Practice + 11 Replay stems and revealed solutions",flush=True)
    if width==390:
     # Simulate a blocked Topic JS: raw source must recover instead of a blank page.
     for part,marker in (("kien-thuc","knowledge"),("luyen-tap","practice"),("tu-kiem-tra","selfcheck")):
