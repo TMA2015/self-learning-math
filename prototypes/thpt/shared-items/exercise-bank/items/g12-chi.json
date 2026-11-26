@@ -898,9 +898,9 @@
   {
     "item_id": "THPT-G12-CHI-B03-P06",
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(f(x)=3+\\frac7{x-2}\\), nhánh phải x>2 nằm trên hay dưới y=3? Nhánh trái?",
-    "answer_key": "Nhánh phải ở trên y=3; nhánh trái ở dưới y=3.",
-    "worked_solution": "So sánh tung độ với đường thẳng \\(y=3\\) bằng hiệu \\(f(x)-3=\\frac7{x-2}\\). Hiệu dương khi \\(x>2\\) (nhánh trên), âm khi \\(x<2\\) (nhánh dưới).",
+    "stem": "Cho \\(f(x)=3-\\frac7{x-2}\\). Xác định hai tiệm cận của đồ thị, vị trí mỗi nhánh so với tiệm cận ngang và chiều đi của mỗi nhánh khi tiến sát tiệm cận đứng.",
+    "answer_key": "Tiệm cận đứng \\(x=2\\), ngang \\(y=3\\). Nhánh trái ở trên \\(y=3\\) và tiến tới \\(+\\infty\\) khi \\(x\\to2^-\\); nhánh phải ở dưới \\(y=3\\) và tiến tới \\(-\\infty\\) khi \\(x\\to2^+\\).",
+    "worked_solution": "Miền xác định là \\(\\mathbb R\\setminus\\{2\\}\\). Khi \\(x\\to\\pm\\infty\\), phần dư \\(-\\frac7{x-2}\\to0\\), nên \\(y=3\\) là tiệm cận ngang. Khi \\(x<2\\), phần dư dương nên nhánh trái nằm trên đường ngang; khi \\(x>2\\), phần dư âm nên nhánh phải nằm dưới. Gần \\(x=2\\), mẫu tiến về 0 từ phía âm hoặc dương: \\(\\lim_{x\\to2^-} f(x)=+\\infty\\), \\(\\lim_{x\\to2^+} f(x)=-\\infty\\). Do đó \\(x=2\\) là tiệm cận đứng. Hai nhánh tách rời; không sao chép vị trí nhánh của trường hợp phần dư dương trong ví dụ bài giảng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-GRAPH_INTERPRETATION"
@@ -908,7 +908,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Xét dấu f−3 theo x−2."
+      "Xét dấu của \\(f(x)-3=-\\frac7{x-2}\\) trên hai khoảng, rồi xét giới hạn ở xa và gần x=2."
     ],
     "rubric": null,
     "interaction": {
@@ -925,7 +925,7 @@
       }
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhầm trên/dưới, thử x=3 và x=1, so từng giá trị với 3. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P18."
+    "remediation": "Nếu đảo hai nhánh, thử \\(f(1)=10\\) và \\(f(3)=-4\\), so với 3 rồi xét mẫu tiến về 0. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P18."
   },
   {
     "item_id": "THPT-G12-CHI-B03-P07",
@@ -1154,17 +1154,17 @@
   {
     "item_id": "THPT-G12-CHI-B04-P02",
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho hàm số y=f(x) có đạo hàm trên ℝ. Bảng dấu \\(y'\\) là + trên (−∞;−1), − trên (−1;3), + trên (3;+∞). Xác định loại cực trị tại x=−1 và x=3.",
-    "answer_key": "Cực đại tại x=−1; cực tiểu tại x=3.",
-    "worked_solution": "Tại -1, dấu đạo hàm đổi từ dương sang âm, nên hàm tăng rồi giảm và đạt cực đại. Tại 3, dấu đổi từ âm sang dương, nên đạt cực tiểu. Hàm có đạo hàm trên \\(\\mathbb R\\) nên liên tục tại các mốc; chưa có công thức hay tung độ nên chưa tính được giá trị hai cực trị.",
+    "stem": "Một hàm số liên tục, khả vi trên \\(\\mathbb R\\) có bảng biến thiên sau (mũi tên biểu thị chiều biến thiên):\n\\[\\begin{array}{c|ccccc}x&-\\infty&-1&&3&+\\infty\\\\\\hline f'&+&0&-&0&+\\\\\\hline f&-\\infty\\nearrow&4&\\searrow&-2&\\nearrow+\\infty\\end{array}\\]\n(a) Đọc các khoảng đồng biến, nghịch biến và các điểm cực trị. (b) Trên đoạn [-1;3], xác định GTLN, GTNN. Các giá trị này có phải GTLN, GTNN trên toàn \\(\\mathbb R\\) không?",
+    "answer_key": "Đồng biến trên \\((-\\infty;-1)\\) và \\((3;+\\infty)\\), nghịch biến trên \\((-1;3)\\). Cực đại \\((-1;4)\\), cực tiểu \\((3;-2)\\) trên đồ thị. Trên [-1;3], GTLN 4 và GTNN -2; trên \\(\\mathbb R\\) không có GTLN, GTNN.",
+    "worked_solution": "Đọc hàng dấu đạo hàm và hàng mũi tên: hàm tăng đến x=-1, giảm từ -1 tới 3, rồi tăng tiếp. Tại x=-1, dấu đổi từ + sang -, nên hàm đạt cực đại, giá trị 4; tại x=3, dấu đổi từ - sang +, nên đạt cực tiểu, giá trị -2. Trên đoạn [-1;3], hàm liên tục và giảm, vì vậy mọi giá trị nằm giữa -2 và 4, hai đầu mút đạt các giá trị đó. Nhưng hàng cuối còn cho \\(\\lim_{x\\to-\\infty}f(x)=-\\infty\\) và \\(\\lim_{x\\to+\\infty}f(x)=+\\infty\\); vì vậy trên toàn miền không có GTLN hoặc GTNN. Cực trị địa phương không mặc nhiên là cực trị toàn miền.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-READ_VARIATION_TABLE"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": 3,
     "hints": [
-      "Đọc dấu đạo hàm ở hai bên mỗi mốc."
+      "Đọc cả hàng dấu và hàng giá trị hàm; khi tìm GTLN, GTNN, chú ý miền đang xét."
     ],
     "rubric": null,
     "interaction": {
@@ -1181,7 +1181,7 @@
       }
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhầm cực đại với giá trị cực đại, đề chỉ đủ cho vị trí, chưa biết f tại mốc. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P24."
+    "remediation": "Nếu gọi 4 là GTLN trên toàn miền, xem mũi tên cuối về dương vô cực; nếu gọi -2 là GTNN toàn miền, xem đầu trái. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P24."
   },
   {
     "item_id": "THPT-G12-CHI-B04-P03",
