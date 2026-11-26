@@ -252,7 +252,7 @@ with sync_playwright() as pw:
                 # be siblings on the white panel, never combined in a framed card.
                 assert knowledge.locator(".topic-w1-application").count() == 0, (topic,"unapproved Vận dụng outer card")
                 labels = knowledge.locator(".thpt-r4-knowledge-content-panel > p").filter(
-                    has=page.locator(":scope > strong", has_text="Vận dụng")
+                    has=page.locator(":scope > strong", has_text=re.compile(r"^\s*Vận dụng\s*[:.]?\s*$"))
                 )
                 # CĐ17's signed Q18 explicitly includes one additional voluntary
                 # 2.4 frustum k=0/1/2/1 exploration with its own Đối chiếu.
@@ -263,9 +263,10 @@ with sync_playwright() as pw:
                     extra = page.locator("#w1-17-content-2-4")
                     assert extra.evaluate("""panel => {
                       const ps=[...panel.children].filter(p=>p.tagName==='P'&&
-                        (p.querySelector(':scope > strong')?.textContent||'').trim()==='Vận dụng');
-                      return ps.length===2 &&
-                        [...panel.querySelectorAll(':scope > details.question')].length===2;
+                        /^Vận dụng[:.]?$/.test((p.querySelector(':scope > strong')?.textContent||'').trim()));
+                      const answers=[...panel.querySelectorAll(':scope > details.question, :scope > .topic-sgk-disclosure-pair > details.question')]
+                        .filter(d=>d.querySelector(':scope > summary')?.textContent.trim()==='Đối chiếu');
+                      return ps.length===2 && answers.length===2;
                     }"""), (topic, "signed O10 extra exploratory Vận dụng + two voluntary comparisons")
                 application_issues = knowledge.evaluate("""root=>[...root.querySelectorAll('.thpt-r4-knowledge-content-panel')]
                   .flatMap(panel=>[...panel.children].filter(e=>e.tagName==='P'&&/^Vận dụng[:.]?$/.test(e.querySelector(':scope > strong')?.textContent.trim()||''))
