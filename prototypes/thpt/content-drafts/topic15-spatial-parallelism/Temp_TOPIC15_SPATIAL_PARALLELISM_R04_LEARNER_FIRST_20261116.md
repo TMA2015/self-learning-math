@@ -138,7 +138,7 @@ Một đường có thể xuyên qua, nằm trọn trong hoặc đi song song v�
 
 > **PHƯƠNG PHÁP — Giao điểm của đường và mặt**
 >
-> Khi không nhìn thấy trực tiếp giao điểm M=d∩(P), hãy dựng mặt phụ (Q) chứa d, tìm g=(P)∩(Q), rồi giải d∩g. Bước kiểm tra sau cùng là M thật sự tồn tại; đường d có thể song song hoặc nằm trọn trong (P).
+> Khi chưa nhìn thấy giao điểm của d với \((P)\), chọn một mặt phụ \((Q)\) chứa d và khác \((P)\). Nếu hai mặt cắt nhau theo \(g=(P)\cap(Q)\), tìm giao của d với g ngay trong \((Q)\). Nếu d cắt g tại M thì M là giao điểm cần tìm. Nếu d song song g hoặc nằm trong g, cần kết luận tương ứng là không có giao điểm hoặc cả đường d nằm trong \((P)\). Nếu hai mặt \((Q),(P)\) song song, d không gặp \((P)\).
 
 **Ví dụ**
 
@@ -150,7 +150,7 @@ Một đường có thể xuyên qua, nằm trọn trong hoặc đi song song v�
 
 **Đề bài:** Trong tứ diện \(S.ABC\), lấy \(M\) trên \(SA\), \(N\) trên \(SB\) sao cho \(\frac{SM}{SA}=\frac12\), \(\frac{SN}{SB}=\frac13\). Tìm giao điểm của đường thẳng \(MN\) với \((ABC)\).
 
-**Lời giải:** Chọn mặt phụ \((SAB)\), vì nó chứa cả \(M,N\), do đó chứa \(MN\). Hai mặt \((SAB)\) và \((ABC)\) có hai điểm chung \(A,B\), nên giao tuyến là \(AB\). Trong tam giác \(SAB\), hai tỉ số đã cho khác nhau nên \(MN\) không song song \(AB\) (theo định lí Thalès đảo chiều suy luận). Hai đường này cùng nằm trong \((SAB)\), vì vậy cắt nhau tại một điểm \(I\). Kéo dài \(MN\) và \(AB\) trên hình đến khi gặp nhau. Vì \(I\) thuộc \(MN\) và \(AB\subset(ABC)\), \(I\) là giao điểm cần tìm; \(MN\) không nằm trong \((ABC)\) vì \(M\) nằm trong cạnh \(SA\) và ngoài \((ABC)\).
+**Lời giải:** Chọn mặt phụ \((SAB)\), vì nó chứa cả M, N, do đó chứa MN. Hai mặt \((SAB)\) và \((ABC)\) có hai điểm chung A, B, nên giao tuyến là AB. Trong tam giác SAB, nếu \(MN\parallel AB\) thì theo định lí Thalès phải có \(\frac{SM}{SA}=\frac{SN}{SB}\). Nhưng \(\frac12\ne\frac13\), nên MN không song song AB. Hai đường cùng nằm trong \((SAB)\) và phân biệt, do đó cắt nhau tại một điểm I. Kéo dài MN và AB trên hình đến khi gặp nhau. Vì \(I\in MN\) và \(I\in AB\subset(ABC)\), I là giao điểm cần tìm. MN không nằm trong \((ABC)\) vì M ở bên trong cạnh SA và ngoài \((ABC)\).
 
 <!-- ITEM_ID: THPT-TOP15-T04; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O04; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
@@ -589,7 +589,7 @@ Nếu chỉ có một đường a trong (P) song song (Q) mà kết luận (P)�
 ### 4.3. Mặt thứ ba cắt hai mặt song song
 <!-- LESSON_ID: TOP15-M16; OUTCOME_ID: TOP15-O16; ORIGINAL_SGK_OUTCOME: G11-B13-TRANSVERSAL; ORIGINAL_S1_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b -->
 
-Nếu hai tầng sàn song song và ta dựng một mặt tường cắt cả hai, hai vết cắt phải song song; nếu mặt tường không cắt cả hai thì không có đủ hai đường để so. Muốn so hai giao tuyến của (R) với hai mặt song song, điều đầu tiên cần hỏi là (R) có **thực sự cắt cả hai mặt** không?
+Nếu hai tầng sàn song song phân biệt và một mặt tường cắt tầng thứ nhất, định lí dưới đây cho biết tường cũng cắt tầng thứ hai và hai vết cắt song song. Khi chỉ biết hai mặt sàn song song mà chưa biết mặt tường có cắt một tầng hay không, chưa thể kết luận có hai vết cắt.
 
 > **TÍNH CHẤT — Mặt thứ ba cắt hai mặt song song**
 >
@@ -618,7 +618,7 @@ Nếu (R) chỉ cắt (P) nhưng song song (Q), có được phát biểu hai gi
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Không; chưa có giao tuyến thứ hai. Hơn nữa nếu (P)∥(Q), một mặt (R) cắt (P) thì cũng cắt (Q); giả thiết vừa nêu mâu thuẫn.
+Không có cấu hình như vậy: nếu \((P)\parallel(Q)\) và \((R)\) cắt \((P)\), định lí vừa học bảo đảm \((R)\) cũng cắt \((Q)\), không thể song song \((Q)\). Do đó giả thiết của câu hỏi tự mâu thuẫn; không cần chứng minh lại định lí.
 
 
 
@@ -775,7 +775,7 @@ Phép chiếu song song thay đổi vị trí nhưng giữ cách chia đoạn th
 
 > **TÍNH CHẤT — Tỉ số và trung điểm dưới phép chiếu**
 >
-> Phép chiếu song song là phép biến đổi affine: nếu A,B có ảnh phân biệt và M nằm trên AB với AM:MB=p:q, thì ảnh M′ nằm trên A′B′ với cùng tỉ số. Trường hợp đường AB co thành một điểm cần xét riêng vì không thể chia tỉ số độ dài của đoạn ảnh bằng 0.
+> Nếu A, B có hai ảnh phân biệt và M nằm trong đoạn AB với \(AM:MB=p:q\), thì ảnh \(M'\) nằm trên đoạn \(A'B'\) và \(A'M':M'B'=p:q\). Hãy hình dung các tia chiếu cùng phương qua A, M, B: trong mặt phẳng chứa các tia ấy, định lí Thalès cho cùng tỉ số. Trường hợp đoạn ảnh co thành một điểm phải xét riêng vì không thể chia cho độ dài bằng 0.
 
 Tỉ số được bảo toàn không chỉ khi hai đoạn nằm **trên một đường thẳng**, mà còn khi hai đoạn nằm trên **hai đường thẳng song song** và ảnh các đoạn không co thành điểm. Lý do là hai đoạn đã cùng phương, nên khi cùng chịu một phép chiếu affine, độ dài của mỗi đoạn đều nhân với **cùng một hệ số** theo phương ấy.
 
@@ -785,7 +785,7 @@ Tỉ số được bảo toàn không chỉ khi hai đoạn nằm **trên một 
 
 **Đề bài:** Dưới \(T(x,y,z)=(x-z,y,0)\), lấy \(A(0,0,0)\), \(B(2,0,1)\), \(C(0,1,3)\), \(D(4,1,5)\). Hai đoạn \(AB,CD\) song song. Tính độ dài và tỉ số trước và sau chiếu.
 
-**Lời giải:** \(\overrightarrow{AB}=(2,0,1)\), \(\overrightarrow{CD}=(4,0,2)=2\overrightarrow{AB}\). Do đó \(AB=\sqrt5\), \(CD=2\sqrt5\). Ảnh các đầu mút là \(A'(0,0,0)\), \(B'(1,0,0)\), \(C'(-3,1,0)\), \(D'(-1,1,0)\); suy ra \(A'B'=1\), \(C'D'=2\). Cả hai độ dài đều thay đổi, nhưng \(\frac{AB}{CD}=\frac12=\frac{A'B'}{C'D'}\). Phép chiếu giữ tỉ số của hai đoạn cùng phương không suy biến, không nhất thiết giữ độ dài riêng.
+**Lời giải:** \(\overrightarrow{AB}=(2;0;1)\), \(\overrightarrow{CD}=(4;0;2)=2\overrightarrow{AB}\). Do đó \(AB=\sqrt5\), \(CD=2\sqrt5\). Ảnh các đầu mút là \(A'(0;0;0)\), \(B'(1;0;0)\), \(C'(-3;1;0)\), \(D'(-1;1;0)\); suy ra \(A'B'=1\), \(C'D'=2\). Mỗi độ dài đều bị nhân với cùng hệ số \(\frac1{\sqrt5}\), nên \(\frac{AB}{CD}=\frac12=\frac{A'B'}{C'D'}\). Đây là điều được bảo toàn: tỉ số của hai đoạn cùng phương không suy biến, chứ không phải độ dài từng đoạn.
 
 **Ví dụ**
 
@@ -821,7 +821,7 @@ Một hình chữ nhật thật có thể hiện thành hình bình hành xiên 
 >
 > Khi hình không suy biến, phép chiếu song song đưa các cặp cạnh song song của hình bình hành thành các cặp cạnh song song, nên ảnh vẫn là hình bình hành. Tuy nhiên góc và độ dài thường thay đổi. Vì vậy nhìn hình vẽ như hình bình hành không chứng minh hình gốc không phải hình chữ nhật.
 
-Đối với **hình tròn nằm trong một mặt phẳng không song song phương chiếu**, hình chiếu song song nói chung là **một elip** (có thể là đường tròn trong trường hợp đặc biệt); nếu mặt chứa hình tròn song song phương chiếu, ảnh có thể bị co thành **một đoạn thẳng**. Bởi vậy, khi vẽ một mặt tròn xiên trong không gian, đường biên thường được biểu diễn bằng elip, nhưng không được coi elip vẽ trên giấy là một hình tròn thật hay suy độ dài bán kính từ hai bán trục.
+Đối với **đường tròn nằm trong một mặt phẳng không song song phương chiếu**, hình chiếu song song nói chung là **một elip** (có thể là đường tròn trong trường hợp đặc biệt); nếu phương chiếu song song với mặt chứa đường tròn, ảnh co thành **một đoạn thẳng**. Bởi vậy, khi vẽ một mặt tròn xiên trong không gian, đường biên thường được biểu diễn bằng elip, nhưng không được suy độ dài bán kính thật từ hai bán trục trên hình.
 
 > **TÍNH CHẤT — Hình biểu diễn đường tròn.** Phép chiếu song song **không suy biến trên mặt phẳng chứa đường tròn** biến đường tròn thành elip, với đường tròn là trường hợp đặc biệt. Không đánh đồng phép chiếu song song với **phép chiếu xuyên tâm phối cảnh**: hai đường thẳng song song trong không gian có ảnh song song hoặc trùng dưới phép chiếu song song, còn trong phối cảnh xuyên tâm chúng có thể gặp nhau tại điểm tụ.
 
@@ -863,13 +863,13 @@ Thiết diện, tỉ số đồng dạng và hình chiếu là ba phép nhìn kh
 
 > **PHƯƠNG PHÁP — Kết nối thiết diện, song song và phép chiếu**
 >
-> Ta kết nối ba ý đã học: thiết diện bằng mặt song song đáy, các tỉ số đồng dạng trong mặt cắt, và hình ảnh do phép chiếu. Đừng gộp “mặt cắt có diện tích bằng hình chiếu” thành định lý chung: phép chiếu xiên có thể đổi diện tích. Ở ví dụ chiếu **vuông góc theo phương z** dưới đây, mặt cắt và đáy đều nằm ngang nên diện tích được giữ.
+> Ta kết nối ba ý đã học: thiết diện khi cắt song song đáy, các tỉ số đồng dạng của mặt cắt, và hình ảnh do phép chiếu. Đừng gộp “mặt cắt có diện tích bằng hình chiếu” thành định lí chung. Phép chiếu có thể làm đổi diện tích khi mặt phẳng chứa hình không song song mặt nhận ảnh. Ở ví dụ chiếu vuông góc theo phương z dưới đây, mặt cắt và đáy đều nằm ngang nên diện tích được giữ; khi hai mặt song song, phép chiếu song song giữa hai mặt là phép tịnh tiến, kể cả chiếu xiên.
 
 **Ví dụ**
 
 **Đề bài:** Cho S(0,0,2), A(0,0,0), B(2,0,0), C(0,2,0). Lấy M,N,K là trung điểm SA,SB,SC. Tính diện tích MNK và ABC, rồi chiếu MNK vuông góc xuống z=0.
 
-**Lời giải:** M(0,0,1), N(1,0,1), K(0,1,1) nên MNK vuông tại M, diện tích 1/2. ABC vuông tại A, diện tích 2. Tỉ số 1/4=(1/2)² đúng hệ số đồng dạng. Chiếu theo trục z được M′(0,0,0),N′(1,0,0),K′(0,1,0), tam giác ảnh có diện tích 1/2 vì hai mặt đều ngang và phép chiếu là vuông góc; không suy quy tắc này cho chiếu xiên.
+**Lời giải:** \(M(0;0;1),\ N(1;0;1),\ K(0;1;1)\) nên tam giác MNK vuông tại M, diện tích \(\frac12\). Tam giác ABC vuông tại A, diện tích 2. Tỉ số \(\frac14=(\frac12)^2\) đúng bình phương hệ số đồng dạng. Chiếu theo trục z được \(M'(0;0;0),\ N'(1;0;0),\ K'(0;1;0)\), tam giác ảnh có diện tích \(\frac12\) vì hai mặt đều ngang và phép chiếu giữa hai mặt này là một phép tịnh tiến. Không suy quy tắc bảo toàn diện tích cho mặt chứa hình bất kỳ.
 
 <!-- ITEM_ID: THPT-TOP15-T22; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O22; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
@@ -884,7 +884,7 @@ Là 9/25; không nhầm với t=3/5 áp dụng cho chu vi.
 
 **Kiểm lỗi**
 
-Nếu đánh đồng diện tích thiết diện với ảnh chiếu xiên, đọc **Kiến thức 5.5**. Làm **Bài luyện 49** và **Bài luyện 67**, tính t² cho mặt cắt và xét hướng chiếu độc lập.
+Nếu đánh đồng diện tích thiết diện với diện tích ảnh chiếu trong mọi cấu hình, đọc **Kiến thức 5.5**. Làm **Bài luyện 49** và **Bài luyện 67**, tính \(t^2\) cho mặt cắt và xét quan hệ giữa mặt chứa thiết diện, mặt nhận ảnh và phương chiếu độc lập.
 
 </details>
 
