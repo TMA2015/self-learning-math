@@ -1,3 +1,10 @@
+## CURRENT CP14 AUTHORING custody — CĐ12
+Learner `6fd684807c3cf16489ed91e4a573edc3d1b2a6bc`, Q18 `f091540cf192ab38c85674d2f6e324c7ebc5b948`. Original banks and SVGs unchanged. 34 IDs, 12 exact replay, 6 rubric allocations, 47 disclosures. Source only; no merge/deploy.
+
+---
+
+**Historical evidence below: applies only to the stated earlier snapshot; current structured custody fields supersede earlier narrative pointers.**
+
 <!-- TOP12_MASTER974_CURRENT_SOURCE_CUSTODY_20261121 -->
 **One effective R04 student learner:** `prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md` Git blob `f773f2622c88bd3e3a1e0137613846a83b3e6629`, existing Q18 author-self receipt v3.2.0 `496ce6005b50c6fd5baae2a6ac4f3d9414becc20`, unchanged Topic NEW16 bank `8f05b5556d83675649451dec76a8c1ffa5e1098d`, unchanged original G10 B05/B06 18 IDs. Current #977-039/040/041 real student corrections: 12/12 specific math error recovery→two authentic numbered Practice Bài; 12/12 public original Selfcheck item-ID answer navigation in one voluntary after-all-questions lookup; 34 unique learner-facing Bài luyện titles, exact **Lời giải** (28) / **Lời giải và rubric** (6) reveal labels, only one correct SGK Toán10 KNTT Tập Một ChIII source footer, no source-bank/assessment admin text visible. All 34 original `Đề`/key/solution/rubric mathematical source card bodies byte-exact, 12 original public Selfcheck question-only stems/options and two original SVG unchanged, 47/47 voluntary reveals balanced. Q18 current AUTHOR_SELF_VERIFIED changed pedagogical source scope; inherited original S1/SGK reviewer proof only for unchanged source, **not new independent NotebookLM Topic PASS**. No official RD1/Final Submit/Mastery, website AP/R or merge/deploy. Old historic R01/R02/R03 SHA notes below are immutable history, not competing canonical learner.
 
@@ -6,12 +13,12 @@
 # AUTHORING-only metadata — CĐ12 R04
 
 CURRENT_R04_LEARNER_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-CURRENT_R04_LEARNER_SOURCE_BLOB: f773f2622c88bd3e3a1e0137613846a83b3e6629
+CURRENT_R04_LEARNER_SOURCE_BLOB: 6fd684807c3cf16489ed91e4a573edc3d1b2a6bc
 CURRENT_R04_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_R04_Q18_RECEIPT_BLOB: 496ce6005b50c6fd5baae2a6ac4f3d9414becc20
+CURRENT_R04_Q18_RECEIPT_BLOB: f091540cf192ab38c85674d2f6e324c7ebc5b948
 CURRENT_R04_NEW16_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 CURRENT_R04_NEW16_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
-AUTHORING_STATUS: CURRENT_R04_SOURCE_12_D6_UNIQUE34_AUTHOR_SELF_VERIFIED
+AUTHORING_STATUS: CURRENT_R04_WORK1055_A05_XG5_AUTHOR_SELF_VERIFIED
 
 
 ## Phụ lục AUTHORING — dữ liệu điều phối không hiển thị cho học sinh
