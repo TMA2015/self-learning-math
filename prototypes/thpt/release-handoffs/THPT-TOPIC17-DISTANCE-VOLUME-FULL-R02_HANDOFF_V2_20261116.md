@@ -1,16 +1,23 @@
+## CURRENT CP19 CĐ17 V2
+Learner `03b6b27adbeaf854d3db1d8fc9e830a0294a08aa`, Q18 `87f927cbcbd9ff4f26ba2a3b2c411a9a9770f82e`, A1 `7f5c5ae757d1db6506a242de795d7621702dd46d`; SGK bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0`. Work O05/O09/O12 and X-G.5 verified, 49 IDs/37 Practice/8 exact replay/7 rubric allocations/51 disclosures. Two SVG and model unchanged. Prior S1 inherited; no fresh independent review or publication authorization.
+
+---
+
+Earlier narrative evidence below is historical; current CP19 evidence and structured fields supersede earlier pointers.
+
 <!-- OWNER_APPROVED_SHARED_G11_B22_B27_LABEL_EQUIVALENCE_CĐ17_V2_20261121 -->
 **CURRENT SOURCE_OWNER_PARITY:** Existing one CĐ17 learner `0ef0ad696e97d2549f29c5a22ba675970572a089`, original shared G11 SGK ChVII B22–27 one bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` matched EXACT identical blob in CĐ16 branch. Corrected all **18** original B26–B27 student `Đáp án sau Submit luyện tập` headings to `Đáp án`, matching 51/51 source-owner bank and 33 CĐ16 projection. All original 37 Practice mathematical stems, numeric/text answer values, worked solutions, 7 Written rubrics, 8 public same-ID selfchecks, 2 diagrams, Q16/Final Submit/Mastery unchanged; no duplicate SGK bank or new item version. Current Q18 `5f6fb06ac8751e59d08d22ba78ebeee829c28a55`, A1 `041ba48f0302b6b121fa2017f7ab6bc27d60443e`, V2 `current`; `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL` author-self check only, not independent whole Topic review or website RELEASE. Prior bank `afc8ec039213b87b4930f2d34d48c28d1fc6277f` immutable history.
 ---
 <!-- TOP17_MASTER974_CURRENT_ONE_HANDOFF_20261121 -->
 ## CĐ17 R03 effective V2 custody (same R02 packet), current AUTHORING 21/11/2026
 
-CURRENT_LEARNER_BLOB: 0ef0ad696e97d2549f29c5a22ba675970572a089
-CURRENT_AUTHOR_Q18_BLOB: bb941ea3563034e0aa779c69118f8ac02355a21e
-CURRENT_AUTHOR_A1_A7_BLOB: f0b43ca2b15326b3e2997a5142cfb3bc32cc351b
+CURRENT_LEARNER_BLOB: 03b6b27adbeaf854d3db1d8fc9e830a0294a08aa
+CURRENT_AUTHOR_Q18_BLOB: 87f927cbcbd9ff4f26ba2a3b2c411a9a9770f82e
+CURRENT_AUTHOR_A1_A7_BLOB: 7f5c5ae757d1db6506a242de795d7621702dd46d
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 RELEASE_AUTHORIZATION: NO
-DELTA: DELTA_C_PED_TARGETED_12_D6_PLUS_8_SELF_CHECK_NAV; DELTA_A_EDITORIAL_37_UNIQUE_TITLES
+DELTA: DELTA_C_PED_TARGETED_WORK_1055 + DELTA_B_SOURCE_EQUIVALENT_XG5
 
 Current original learner source academic math: 12 Knowledge outcome explanations, FirstTry mathematical question/answer and independent worked examples unchanged; 12/12 voluntary Kiểm lỗi identify misconception → correct Knowledge subsection → two authentic numbered original Practice retry opportunities. 37 student Practice cards continuously Bài luyện 1–37, all original mathematical stems/keys/solutions/seven Written rubrics byte-exact compared with prior signed 38aa934fc2422b342e314fabddca54a0eb679cce. Eight public same-ID selfcheck replays now have one voluntary answer navigation table after all questions: P01/P02/P04/P05/P06/P08/P10/P12 → Bài 12/13/15/16/17/30/32/34, no key clone. One SGK end source credit, two SVG references and model unchanged; 51/51 balanced voluntary disclosures.
 
@@ -32,13 +39,13 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 0ef0ad696e97d2549f29c5a22ba675970572a089
+ACADEMIC_SOURCE_BLOB: 03b6b27adbeaf854d3db1d8fc9e830a0294a08aa
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: bb941ea3563034e0aa779c69118f8ac02355a21e
+REVIEW_RECEIPT_BLOB: 87f927cbcbd9ff4f26ba2a3b2c411a9a9770f82e
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: f0b43ca2b15326b3e2997a5142cfb3bc32cc351b
+AUTHOR_A1_A7_BLOB: 7f5c5ae757d1db6506a242de795d7621702dd46d
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: f0b43ca2b15326b3e2997a5142cfb3bc32cc351b
+AUTHOR_METADATA_BLOB: 7f5c5ae757d1db6506a242de795d7621702dd46d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
