@@ -1,3 +1,10 @@
+## CURRENT Q18 — CP17 · CĐ15 · A06 Work #1055 / #1109
+Learner `11d2106a7ed77b801c86420503dca929544dc076`, source commit `7d8f72610310cd20747004738cee7ea7dfba38cf`, A1 `d11dcd981ee3734f2deda5f2044c40f1b83fd5fe`. O04 auxiliary plane (SAB) contains MN; intersection AB with unequal SM/SA=1/2 and SN/SB=1/3 ensures MN intersects AB, with M outside base. O16 explicitly invokes the proven third-plane theorem and identifies contradictory First Try hypotheses. O20 projection of parallel nonzero segments of lengths sqrt(5), 2sqrt(5) to lengths 1,2 preserves ratio 1/2, not individual lengths. Clarified nonzero direction, interior-point and nondegenerate conditions, projection between parallel planes as translation (even oblique), and corrected equivalent coordinate notation after readback. 29/29 executed scoped math checks passed before final delimiter-only endpoint edit. X-G.5 on three pages: 638/638 inline pairs, zero residual compound raw/slash scan, 91 balanced details, 89 unique canonical IDs, 67 Practice, 8/8 exact replay stems; all HTML marker lines and 70 score-token sequence preserved, 15 Written rubric allocations. Direct 40 original SGK item ID memberships checked against e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b. Five SVGs and HTML model cf6510d5d964958982fae3ebce5823e35aeac639 read at exact paths, unchanged. Prior owner-verified SGK #705 B10–14 pp70–101, SBT pp53–71 inherited, no fresh PDF scan/new independent NotebookLM verdict. Work sticky navigation overlap/tab truncation remains RELEASE; HTML model functional browser checks not performed. AUTHOR_SELF_VERIFIED affected source only.
+
+---
+
+Earlier snapshot narratives below are historical; current CP17 evidence and structured fields supersede earlier pointers.
+
 <!-- TOP15_MASTER974_CURRENT_AUTHOR_Q18_20261121 -->
 ## CĐ15 · current R04 learner AUTHOR_SELF_VERIFIED Q18 v3.2.0, source-scoped DELTA_C pedagogy + DELTA_A editorial
 
@@ -23,10 +30,10 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: c1be91f17044d89474d6399308385b4f1fbc7aeb
-SOURCE_BLOB: c1be91f17044d89474d6399308385b4f1fbc7aeb
+ACADEMIC_SOURCE_BLOB: 11d2106a7ed77b801c86420503dca929544dc076
+SOURCE_BLOB: 11d2106a7ed77b801c86420503dca929544dc076
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: e8d3d03c5a3a339eac9f68e41429fc0c8621de3c
+AUTHOR_METADATA_BLOB: d11dcd981ee3734f2deda5f2044c40f1b83fd5fe
 ORIGINAL_R02_SOURCE_BLOB: ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b
 ORIGINAL_R03_CANDIDATE_BLOB: 4a5a0c1fd140aab342737f6bde95e37b79237d80
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
@@ -36,7 +43,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP15_MASTER974_22_D6_67_LEARNER_20261121_c1be91f17044d89474d6399308385b4f1fbc7aeb
+AUTHOR_SIGNOFF: TOP15_WORK1055_A06_XG5_20261126_11d2106a7ed77b801c86420503dca929544dc076
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -45,9 +52,9 @@ RELEASE_AUTHORIZATION: NO
 
 S1_RECEIPT: SGK Toán 11 KNTT Tập Một Chương IV theo owner-verified PR #705/original Git blob e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; trang in B10 70–77, B11 78–83, B12 84–87, B13 88–94, B14 95–101, cuối 102–103. SBT Tập Một ChIV trang in B10 53–55, B11 56–59, B12 60–63, B13 64–67, B14 68–71, cuối 72–74. Không tự nhận đã mở lại scan PDF SGK/SBT trong lượt R04; reviewer PASS của SGK không tự truyền sang Topic.
 OUTCOME_AUDIT: 22/22 TOP15-O01..O22 theo G11 ChIV B10(5), B11(4), B12(4), B13(4), B14(5), đủ concept, điều kiện, Ví dụ/Đề bài/Lời giải, Vận dụng, tự mở Đối chiếu và D6 cho từng outcome; ma trận 89 item→outcome→role nguồn V2 không đổi.
-MATH_VERIFICATION: 50/50 bài kiểm hình học/tọa độ/tỉ số diện tích/trường hợp biên đã chạy trên dữ kiện R04, 52/52 phép kiểm source-structure/parity thực hiện trên đúng SHA; 40/40 SGK source-exact +27/27 Topic P/W answer/rubric source-equivalent, 5/5 SVG nguyên Git blob. Đây là các phép kiểm đại diện cụ thể, không phải chứng minh hình học tổng quát bằng máy.
-PED_VERIFICATION: 22/22 khám phá bằng câu hỏi–lý giải trước khung công thức/định lý, 22 Ví dụ độc lập Đề bài–Lời giải, 22 Vận dụng/Đối chiếu + D6, 5 mạch/22 đề mục theo cấp 1.1…5.5 không trùng/nhảy, 5 SVG với chỉ dẫn đọc hình, 67 Practice có stem/answer/rubric thật, 8 Selfcheck question-only.
-CANONICAL_Q15: 89 unique public IDs =40 original SGK items with source-exact display-only projections (30 D3 +10 SGK Written/Anchor) +22 Topic First Try +22 Topic Practice +5 Topic Written. Original 40 SGK and 27 Topic P/W keys/solutions/rubrics không thay; one V2 89 mapped rows. Eight reused SelfCheck P03/P06/P09/P12/P14/P17/P20/P21 = placement-only.
+MATH_VERIFICATION: 29/29 scoped numerical/geometry spot checks PASS; earlier full-scope checks historical
+PED_VERIFICATION: WORK O04/O16/O20 verified; 22 outcomes preserved; three learner pages notation normalized; five SVG and HTML model unchanged
+CANONICAL_Q15: 89 unique IDs; 40 original SGK +22 Topic FirstTry +22 Topic Practice +5 Topic Written; 67 Practice, 8 same-ID exact public replays; 15 rubric allocations and all marker lines preserved
 ASSESSMENT_Q16: Public replay eight stems visible, không key/hint/đúng-sai/AI/rubric trước Final Submit. Không RD1 riêng tư/keys trên GitHub, không Skill Mastery từ học/practice/replay/Written; CLIENT_SELF_CHECK_NO_MASTERY. UI thực thi Submit/ẩn đáp án là việc RELEASE chưa QA, không cấp official TOPIC_READINESS.
 
 ## Q01–Q18: audit đúng bài và outcome
