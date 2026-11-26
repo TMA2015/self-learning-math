@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-TOP12-P01",
     "content_version": 2,
-    "stem": "Góc tù α có `cosα=−5/13`. Tính sinα và tanα; giải thích việc chọn dấu.",
-    "answer_key": "sin α=12/13; tan α=−12/5.",
-    "worked_solution": "Từ sin²α+cos²α=1, suy ra sin²α=1−25/169=144/169. Vì 90°<α<180°, sin α>0 nên sin α=12/13 (không lấy nghiệm âm). Do cos α≠0, tan α=sin α/cos α=(12/13)/(−5/13)=−12/5. Nếu sai dấu, đọc lại mục 1,3,4 và thử một góc tù khác.",
+    "stem": "Góc tù \\(\\alpha\\) có \\(\\cos\\alpha=-\\frac5{13}\\). Tính \\(\\sin\\alpha\\) và \\(\\tan\\alpha\\); giải thích việc chọn dấu.",
+    "answer_key": "\\(\\sin\\alpha=\\frac{12}{13};\\ \\tan\\alpha=-\\frac{12}5\\).",
+    "worked_solution": "Từ \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\), suy ra \\(\\sin^2\\alpha=1-\\frac{25}{169}=\\frac{144}{169}\\). Vì \\(90^\\circ<\\alpha<180^\\circ\\), \\(\\sin\\alpha>0\\) nên \\(\\sin\\alpha=\\frac{12}{13}\\) (không lấy nghiệm âm). Do \\(\\cos\\alpha\\ne0\\), \\(\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}=-\\frac{12}5\\). Nếu sai dấu, đọc lại mục 1,3,4 và thử một góc tù khác.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B05-IDENTITIES",
@@ -33,9 +33,9 @@
   {
     "item_id": "THPT-TOP12-P02",
     "content_version": 2,
-    "stem": "Tính chính xác `sin150°+cos120°` và giải thích quy luật được dùng.",
+    "stem": "Tính chính xác \\(\\sin 150^{\\circ}+\\cos 120^{\\circ}\\) và giải thích quy luật được dùng.",
     "answer_key": "0.",
-    "worked_solution": "Vì 150°=180°−30°, sin150°=sin30°=1/2; 120°=180°−60° nên cos120°=−cos60°=−1/2. Tổng bằng 0. Nếu nhầm dấu, xem lại mục 2 về hai góc bù.",
+    "worked_solution": "Vì \\(150^\\circ=180^\\circ-30^\\circ\\), \\(\\sin150^\\circ=\\sin30^\\circ=\\frac12\\); \\(120^\\circ=180^\\circ-60^\\circ\\) nên \\(\\cos120^\\circ=-\\cos60^\\circ=-\\frac12\\). Tổng bằng 0. Nếu nhầm dấu, xem lại mục 2 về hai góc bù.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B05-SUPPLEMENTARY",
@@ -64,9 +64,9 @@
   {
     "item_id": "THPT-TOP12-P03",
     "content_version": 2,
-    "stem": "Trong tam giác ABC có `b=4, c=7, A=120°`. Tính a.",
-    "answer_key": "a=√93.",
-    "worked_solution": "`a²=16+49−2·4·7·(−1/2)=93`, nên `a=√93`. Góc tù khiến cạnh a lớn hơn cả b và c. Nếu sai: mục 5 → bài luyện về định lí cosin.",
+    "stem": "Trong tam giác ABC có \\(b=4, c=7, A=120^{\\circ}\\). Tính a.",
+    "answer_key": "\\(a=\\sqrt{93}\\).",
+    "worked_solution": "\\(a^2=16+49-2\\cdot4\\cdot7\\cdot(-\\frac12)=93\\), nên \\(a=\\sqrt{93}\\). Góc tù khiến cạnh a lớn hơn cả b và c. Nếu sai: mục 5 → bài luyện về định lí cosin.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-COSINE_RULE"
@@ -94,9 +94,9 @@
   {
     "item_id": "THPT-TOP12-P04",
     "content_version": 2,
-    "stem": "Trong tam giác ABC có A=30°, B=60°, a=6. Tính b, c và kiểm thứ tự độ dài ba cạnh.",
-    "answer_key": "b=6√3; c=12.",
-    "worked_solution": "C=180°−30°−60°=90°. Theo định lí sin, a/sin A=6/(1/2)=12. Do đó b=12 sin60°=6√3 và c=12 sin90°=12. Kiểm 6<6√3<12, phù hợp thứ tự A<B<C.",
+    "stem": "Trong tam giác ABC có \\(A=30^\\circ,\\ B=60^\\circ,\\ a=6\\). Tính b, c và kiểm thứ tự độ dài ba cạnh.",
+    "answer_key": "\\(b=6\\sqrt3;\\ c=12\\).",
+    "worked_solution": "\\(C=180^\\circ-30^\\circ-60^\\circ=90^\\circ\\). Theo định lí sin, \\(\\frac a{\\sin A}=\\frac6{\\frac12}=12\\). Do đó \\(b=12\\sin60^\\circ=6\\sqrt3\\) và \\(c=12\\sin90^\\circ=12\\). Kiểm \\(6<6\\sqrt3<12\\), phù hợp thứ tự \\(A<B<C\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-SINE_RULE"
@@ -125,8 +125,8 @@
     "item_id": "THPT-TOP12-P05",
     "content_version": 2,
     "stem": "Một tam giác có ba cạnh 5, 7, 8. Chọn phương pháp xác định góc lớn nhất là nhọn, vuông hay tù; tính diện tích và hai bán kính r, R.",
-    "answer_key": "Góc lớn nhất nhọn; S=10√3; r=√3; R=7√3/3.",
-    "worked_solution": "Vì 5+7>8, tam giác tồn tại. Góc lớn nhất đối diện cạnh 8, có cos=(25+49−64)/(2·5·7)=1/7>0, nên nhọn. Biết ba cạnh, chọn Heron: p=10, S=√(10·5·3·2)=10√3. S=pr cho r=√3; S=abc/(4R) cho R=280/(40√3)=7√3/3. Không dùng công thức nửa tích hai cạnh nếu chưa biết góc xen giữa hoặc chiều cao.",
+    "answer_key": "Góc lớn nhất nhọn; \\(S=10\\sqrt3;\\ r=\\sqrt3;\\ R=\\frac{7\\sqrt3}3\\).",
+    "worked_solution": "Vì \\(5+7>8\\), tam giác tồn tại. Góc lớn nhất đối diện cạnh 8, có cosin bằng \\(\\frac{25+49-64}{2\\cdot5\\cdot7}=\\frac17>0\\), nên nhọn. Biết ba cạnh, chọn Heron: \\(p=10,\\ S=\\sqrt{10\\cdot5\\cdot3\\cdot2}=10\\sqrt3\\). Từ \\(S=pr\\) suy \\(r=\\sqrt3\\); từ \\(S=\\frac{abc}{4R}\\) suy \\(R=\\frac{280}{40\\sqrt3}=\\frac{7\\sqrt3}3\\). Không dùng công thức nửa tích hai cạnh nếu chưa biết góc xen giữa hoặc chiều cao.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-COSINE_RULE",
@@ -155,9 +155,9 @@
   {
     "item_id": "THPT-TOP12-P06",
     "content_version": 2,
-    "stem": "Biết A=30°, a=6, b=10 trong tam giác ABC (a,b là cạnh đối diện A,B). Có bao nhiêu tam giác không bằng nhau thỏa dữ kiện? Nêu hai giá trị khả dĩ của B theo biểu thức arcsin, tính theo độ.",
-    "answer_key": "Có hai tam giác (không kể các bản bằng nhau); B=arcsin(5/6) hoặc 180°−arcsin(5/6).",
-    "worked_solution": "Theo định lí sin, sin B=b sin A/a=10·(1/2)/6=5/6. Gọi β=arcsin(5/6), tính theo độ; 30°<β<90° vì sin30°<5/6<1. Hai khả năng B=β và B=180°−β đều thuộc (0°,180°). Trường hợp đầu cho C=150°−β>0; trường hợp sau cho C=β−30°>0. Mỗi bộ A,B,C và cạnh a=6 xác định một tam giác đến phép bằng nhau. Vì hai giá trị B khác nhau nên có đúng hai tam giác. Nếu chỉ lấy B nhọn, quay lại mục 8 về hai nghiệm của phương trình sin.",
+    "stem": "Biết \\(A=30^\\circ,\\ a=6,\\ b=10\\) trong tam giác ABC (a,b là cạnh đối diện A,B). Có bao nhiêu tam giác không bằng nhau thỏa dữ kiện? Nêu hai giá trị khả dĩ của B theo biểu thức arcsin, tính theo độ.",
+    "answer_key": "Có hai tam giác (không kể các bản bằng nhau); \\(B=\\arcsin\\frac56\\) hoặc \\(180^\\circ-\\arcsin\\frac56\\).",
+    "worked_solution": "Theo định lí sin, \\(\\sin B=\\frac{b\\sin A}a=\\frac{10\\cdot\\frac12}6=\\frac56\\). Gọi \\(\\beta=\\arcsin\\frac56\\), tính theo độ; \\(30^\\circ<\\beta<90^\\circ\\) vì \\(\\sin30^\\circ<\\frac56<1\\). Hai khả năng \\(B=\\beta\\) và \\(B=180^\\circ-\\beta\\) đều thuộc \\((0^\\circ;180^\\circ)\\). Trường hợp đầu cho \\(C=150^\\circ-\\beta>0\\); trường hợp sau cho \\(C=\\beta-30^\\circ>0\\). Mỗi bộ A,B,C và cạnh \\(a=6\\) xác định một tam giác đến phép bằng nhau. Vì hai giá trị B khác nhau nên có đúng hai tam giác. Nếu chỉ lấy B nhọn, quay lại mục 8 về hai nghiệm của phương trình sin.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-SINE_RULE"
@@ -185,9 +185,9 @@
   {
     "item_id": "THPT-TOP12-P07",
     "content_version": 2,
-    "stem": "`A=30°, a=3, b=7`. Hãy kiểm chứng có tồn tại tam giác ABC hay không.",
+    "stem": "\\(A=30^{\\circ}, a=3, b=7\\). Hãy kiểm chứng có tồn tại tam giác ABC hay không.",
     "answer_key": "Không tồn tại tam giác.",
-    "worked_solution": "`sinB=7·sin30°/3=7/6>1`, vô lý. **Không tồn tại tam giác**. Nếu bấm arcsin trực tiếp và bị lỗi: mục 8 kiểm điều kiện trước.",
+    "worked_solution": "\\(\\sin B=\\frac{7\\sin30^\\circ}3=\\frac76>1\\), vô lý. **Không tồn tại tam giác**. Nếu bấm arcsin trực tiếp và bị lỗi: mục 8 kiểm điều kiện trước.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-SINE_RULE"
@@ -215,9 +215,9 @@
   {
     "item_id": "THPT-TOP12-P08",
     "content_version": 2,
-    "stem": "Trong tam giác ABC có b=6, c=10, A=150°. Tính diện tích S, nêu vì sao S dương.",
-    "answer_key": "S=15; sin150°>0 nên diện tích dương.",
-    "worked_solution": "`S=(1/2)·6·10·sin150°=15`. Góc tù trong tam giác vẫn có sin dương; độ cao đến phần kéo dài của đáy vẫn là độ dài dương. Nếu sai: mục 9 → bài luyện cùng dạng.",
+    "stem": "Trong tam giác ABC có \\(b=6,\\ c=10,\\ A=150^\\circ\\). Tính diện tích S, nêu vì sao S dương.",
+    "answer_key": "\\(S=15\\); \\(\\sin150^\\circ>0\\) nên diện tích dương.",
+    "worked_solution": "\\(S=\\frac12\\cdot6\\cdot10\\cdot\\sin150^\\circ=15\\). Góc tù trong tam giác vẫn có sin dương; độ cao đến phần kéo dài của đáy vẫn là độ dài dương. Nếu sai: mục 9 → bài luyện cùng dạng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-AREA_SIN"
@@ -246,8 +246,8 @@
     "item_id": "THPT-TOP12-P09",
     "content_version": 2,
     "stem": "Tam giác có ba cạnh 5, 6, 7. Tính diện tích S, bán kính nội tiếp r và bán kính ngoại tiếp R.",
-    "answer_key": "S=6√6; r=2√6/3; R=35√6/24.",
-    "worked_solution": "Vì 5+6>7, ba cạnh lập thành tam giác. Nửa chu vi p=9. Heron cho S=√(9·4·3·2)=6√6. Từ S=pr suy r=6√6/9=2√6/3. Từ S=abc/(4R) suy R=210/(24√6)=35√6/24.",
+    "answer_key": "\\(S=6\\sqrt6;\\ r=\\frac{2\\sqrt6}3;\\ R=\\frac{35\\sqrt6}{24}\\).",
+    "worked_solution": "Vì \\(5+6>7\\), ba cạnh lập thành tam giác. Nửa chu vi \\(p=9\\). Heron cho \\(S=\\sqrt{9\\cdot4\\cdot3\\cdot2}=6\\sqrt6\\). Từ \\(S=pr\\) suy \\(r=\\frac{6\\sqrt6}9=\\frac{2\\sqrt6}3\\). Từ \\(S=\\frac{abc}{4R}\\) suy \\(R=\\frac{210}{24\\sqrt6}=\\frac{35\\sqrt6}{24}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-HERON",
@@ -276,9 +276,9 @@
   {
     "item_id": "THPT-TOP12-P10",
     "content_version": 2,
-    "stem": "Hai điểm A,B cách nhau 80 m, cùng nhìn điểm C sao cho các góc trong tam giác ABC là A=35°, B=65°. Tính BC và AC, làm tròn đến 0,1 m (máy tính DEG).",
-    "answer_key": "BC≈46,6 m; AC≈73,6 m.",
-    "worked_solution": "C=180°−35°−65°=80°. Vì tam giác không vuông và đã biết hai góc, một cạnh, dùng định lí sin: BC=80 sin35°/sin80°≈46,6 m; AC=80 sin65°/sin80°≈73,6 m. Chọn chế độ DEG và chỉ làm tròn ở cuối. Kiểm B>A nên AC>BC; C lớn nhất nên AB dài nhất.",
+    "stem": "Hai điểm A,B cách nhau 80 m, cùng nhìn điểm C sao cho các góc trong tam giác ABC là \\(A=35^\\circ,\\ B=65^\\circ\\). Tính BC và AC, làm tròn đến \\(0{,}1\\) m (máy tính DEG).",
+    "answer_key": "\\(BC\\approx46{,}6\\) m; \\(AC\\approx73{,}6\\) m.",
+    "worked_solution": "\\(C=180^\\circ-35^\\circ-65^\\circ=80^\\circ\\). Vì tam giác không vuông và đã biết hai góc, một cạnh, dùng định lí sin: \\(BC=\\frac{80\\sin35^\\circ}{\\sin80^\\circ}\\approx46{,}6\\) m; \\(AC=\\frac{80\\sin65^\\circ}{\\sin80^\\circ}\\approx73{,}6\\) m. Chọn chế độ DEG và chỉ làm tròn ở cuối. Kiểm \\(B>A\\) nên \\(AC>BC\\); C lớn nhất nên AB dài nhất.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-APPLICATION",
@@ -308,8 +308,8 @@
     "item_id": "THPT-TOP12-P11",
     "content_version": 2,
     "stem": "Ba thanh dài 2 cm, 3 cm, 6 cm có ghép thành tam giác không? Giải thích vì sao chưa được dùng Heron.",
-    "answer_key": "Không; 2+3=5<6, nên không tồn tại tam giác.",
-    "worked_solution": "Không, vì `2+3=5<6`. Heron chỉ được áp dụng cho tam giác không suy biến; mục 12 → xem lại điều kiện đầu mục 5.",
+    "answer_key": "Không; \\(2+3=5<6\\), nên không tồn tại tam giác.",
+    "worked_solution": "Không, vì \\(2+3=5<6\\). Heron chỉ được áp dụng cho tam giác không suy biến; mục 12 → xem lại điều kiện đầu mục 5.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-HERON"
@@ -337,9 +337,9 @@
   {
     "item_id": "THPT-TOP12-P12",
     "content_version": 2,
-    "stem": "Một người đặt `A=0°, b=5, c=7` và gọi đó là tam giác ABC không suy biến. Chỉ ra sự mâu thuẫn với điều kiện áp dụng định lí sin/côsin trong tam giác.",
-    "answer_key": "Không có tam giác không suy biến vì A=0°; không áp dụng định lí sin/côsin như cho tam giác không suy biến.",
-    "worked_solution": "Mọi góc trong tam giác không suy biến phải thuộc `(0°,180°)`; A=0° tạo cấu hình suy biến, dù có thể tính đại số `a=|7−5|=2` bằng biểu thức côsin. Không có tam giác không suy biến để dùng định lí sin hoặc Heron. Nếu sai: mục 5,6,12.",
+    "stem": "Một người đặt \\(A=0^{\\circ}, b=5, c=7\\) và gọi đó là tam giác ABC không suy biến. Chỉ ra sự mâu thuẫn với điều kiện áp dụng định lí sin/côsin trong tam giác.",
+    "answer_key": "Không có tam giác không suy biến vì \\(A=0^\\circ\\); không áp dụng định lí sin/côsin như cho tam giác không suy biến.",
+    "worked_solution": "Mọi góc trong tam giác không suy biến phải thuộc \\((0^\\circ;180^\\circ)\\); \\(A=0^\\circ\\) tạo cấu hình suy biến, dù có thể tính đại số \\(a=|7-5|=2\\) bằng biểu thức côsin. Không có tam giác không suy biến để dùng định lí sin hoặc Heron. Nếu sai: mục 5,6,12.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-COSINE_RULE",

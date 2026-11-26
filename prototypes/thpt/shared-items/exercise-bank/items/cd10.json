@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-TOP10-P01",
     "content_version": 2,
-    "stem": "f(x)=7−3x trên [−2,4], chứng minh hướng biến thiên.",
-    "answer_key": "Nghịch biến vì f(x₂)−f(x₁)=−3(x₂−x₁)<0 với mọi x₁<x₂.",
-    "worked_solution": "Với mọi x₁<x₂ thuộc [−2,4], f(x₂)−f(x₁)=(7−3x₂)−(7−3x₁)=−3(x₂−x₁)<0. Theo định nghĩa, f nghịch biến trên cả đoạn; không cần đạo hàm.",
+    "stem": "\\(f(x)=7-3x\\) trên \\([-2;4]\\), chứng minh hướng biến thiên.",
+    "answer_key": "Nghịch biến vì \\(f(x_2)-f(x_1)=-3(x_2-x_1)<0\\) với mọi \\(x_1<x_2\\).",
+    "worked_solution": "Với mọi \\(x_1<x_2\\) thuộc \\([-2;4]\\), \\(f(x_2)-f(x_1)=(7-3x_2)-(7-3x_1)=-3(x_2-x_1)<0\\). Theo định nghĩa, f nghịch biến trên cả đoạn; không cần đạo hàm.",
     "skill_ids": [
       "G12-B01-MONOTONICITY_MEANING"
     ],
@@ -31,9 +31,9 @@
   {
     "item_id": "THPT-TOP10-P02",
     "content_version": 2,
-    "stem": "f=x²−4x, tìm khoảng tăng giảm.",
-    "answer_key": "f'=2x−4: giảm (−∞,2), tăng (2,∞).",
-    "worked_solution": "Đa thức xác định trên ℝ. f'(x)=2x−4=2(x−2), âm với x<2, bằng 0 ở 2 và dương với x>2. Vì thế f giảm trên (−∞,2), tăng trên (2,∞), đạt cực tiểu tại x=2.",
+    "stem": "\\(f=x^2-4x\\), tìm khoảng tăng giảm.",
+    "answer_key": "\\(f'=2x-4\\): giảm \\((-\\infty;2)\\), tăng \\((2;\\infty)\\).",
+    "worked_solution": "Đa thức xác định trên ℝ. \\(f'(x)=2x-4=2(x-2)\\), âm với x<2, bằng 0 ở 2 và dương với x>2. Vì thế f giảm trên \\((-\\infty;2)\\), tăng trên \\((2;\\infty)\\), đạt cực tiểu tại \\(x=2\\).",
     "skill_ids": [
       "G12-B01-DERIVATIVE_SIGN"
     ],
@@ -60,9 +60,9 @@
   {
     "item_id": "THPT-TOP10-P03",
     "content_version": 2,
-    "stem": "f(x)=1/(x+1): tìm các khoảng nghịch biến.",
-    "answer_key": "(−∞,−1), (−1,+∞), không gộp qua x=−1.",
-    "worked_solution": "Miền xác định D=ℝ\\{−1}. f'(x)=−1/(x+1)²<0 cho mọi x≠−1, nên f nghịch biến riêng trên (−∞,−1) và (−1,+∞). Không thể ghép qua x=−1 vì tại đó không có giá trị hàm.",
+    "stem": "\\(f(x)=\\frac1{x+1}\\): tìm các khoảng nghịch biến.",
+    "answer_key": "\\((-\\infty;-1)\\), \\((-1;+\\infty)\\), không gộp qua \\(x=-1\\).",
+    "worked_solution": "Miền xác định \\(D=\\mathbb R\\setminus\\{-1\\}\\). \\(f'(x)=-\\frac1{(x+1)^2}<0\\) cho mọi x≠−1, nên f nghịch biến riêng trên \\((-\\infty;-1)\\) và \\((-1;+\\infty)\\). Không thể ghép qua \\(x=-1\\) vì tại đó không có giá trị hàm.",
     "skill_ids": [
       "G12-B01-DOMAIN_INTERVALS"
     ],
@@ -89,9 +89,9 @@
   {
     "item_id": "THPT-TOP10-P04",
     "content_version": 2,
-    "stem": "Cho f(x)=x³−12x. Tìm hoành độ, giá trị cực trị và tọa độ các điểm cực trị trên đồ thị.",
-    "answer_key": "Cực đại tại x=−2, giá trị 16, điểm (−2;16); cực tiểu tại x=2, giá trị −16, điểm (2;−16).",
-    "worked_solution": "f'=3x²−12=3(x−2)(x+2), bằng 0 tại x=−2,2. Dấu + trên (−∞,−2), − trên (−2,2), + trên (2,∞). Do +→− tại −2, f(−2)=16 là cực đại địa phương; do −→+ tại 2, f(2)=−16 là cực tiểu địa phương. Hai điểm cực trị trên đồ thị lần lượt là (−2;16) và (2;−16).",
+    "stem": "Cho \\(f(x)=x^3-12x\\). Tìm hoành độ, giá trị cực trị và tọa độ các điểm cực trị trên đồ thị.",
+    "answer_key": "Cực đại tại \\(x=-2\\), giá trị 16, điểm \\((-2;16)\\); cực tiểu tại \\(x=2\\), giá trị −16, điểm \\((2;-16)\\).",
+    "worked_solution": "\\(f'(x)=3x^2-12=3(x-2)(x+2)\\), bằng 0 tại \\(x=-2\\) hoặc \\(x=2\\). Dấu dương trên \\((-\\infty;-2)\\), âm trên \\((-2;2)\\), dương trên \\((2;+\\infty)\\). Do đổi dấu dương sang âm tại −2, \\(f(-2)=16\\) là cực đại địa phương; do đổi dấu âm sang dương tại 2, \\(f(2)=-16\\) là cực tiểu địa phương. Hai điểm cực trị trên đồ thị lần lượt là \\((-2;16)\\) và \\((2;-16)\\).",
     "skill_ids": [
       "G12-B01-EXTREMA_SIGN_CHANGE"
     ],
@@ -118,9 +118,9 @@
   {
     "item_id": "THPT-TOP10-P05",
     "content_version": 2,
-    "stem": "f=x⁵ tại 0 có cực trị không?",
-    "answer_key": "Không, f'=5x⁴≥0 và f tăng qua0.",
-    "worked_solution": "f'(x)=5x⁴≥0 trên ℝ và f'(0)=0. Với x₁<x₂ luôn x₁⁵<x₂⁵, hàm tăng nghiêm ngặt trên ℝ; qua x=0 không đổi từ tăng sang giảm hoặc ngược lại. Do đó 0 là điểm dừng nhưng không phải cực trị.",
+    "stem": "\\(f=x^5\\) tại 0 có cực trị không?",
+    "answer_key": "Không, \\(f'=5x^4\\ge0\\) và f tăng qua0.",
+    "worked_solution": "\\(f'(x)=5x^4\\ge0\\) trên ℝ và f'(0)=0. Với \\(x_1<x_2\\) luôn \\(x_1^5<x_2^5\\), hàm tăng nghiêm ngặt trên ℝ; qua \\(x=0\\) không đổi từ tăng sang giảm hoặc ngược lại. Do đó 0 là điểm dừng nhưng không phải cực trị.",
     "skill_ids": [
       "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
     ],
@@ -147,9 +147,9 @@
   {
     "item_id": "THPT-TOP10-P06",
     "content_version": 2,
-    "stem": "s(t)=t²−6t, t≥0, khi nào đổi chiều?",
+    "stem": "\\(s(t)=t^2-6t\\), \\(t\\ge0\\), khi nào đổi chiều?",
     "answer_key": "v=2t−6 đổi dấu tại t=3, từ âm sang dương.",
-    "worked_solution": "Vận tốc có hướng v(t)=s'(t)=2t−6. Trên 0≤t<3 thì v<0 nên vật chuyển động theo chiều âm; tại t=3 thì v=0; với t>3 thì v>0, vật theo chiều dương. Vậy đổi chiều ở t=3, không phụ thuộc dấu s(t).",
+    "worked_solution": "Vận tốc có hướng v(t)=s'(t)=2t−6. Trên 0≤t<3 thì \\(v<0\\) nên vật chuyển động theo chiều âm; tại t=3 thì \\(v=0\\); với t>3 thì \\(v>0\\), vật theo chiều dương. Vậy đổi chiều ở t=3, không phụ thuộc dấu s(t).",
     "skill_ids": [
       "G12-B01-MOTION_CONTEXT"
     ],
@@ -176,9 +176,9 @@
   {
     "item_id": "THPT-TOP10-P07",
     "content_version": 2,
-    "stem": "f=x³−3x trên [−2,2] GTLN/GTNN là gì?",
-    "answer_key": "So f(−2)=−2,f(−1)=2,f(1)=−2,f(2)=2; GTLN2, GTNN−2, đạt tại nhiều điểm.",
-    "worked_solution": "Đạo hàm f'=3(x²−1)=0 tại ±1. Vì f liên tục trên [−2,2], liệt kê hai đầu và hai điểm tới hạn: f(−2)=−2, f(−1)=2, f(1)=−2, f(2)=2. Do đó GTLN bằng 2 tại −1 và 2; GTNN bằng −2 tại −2 và 1.",
+    "stem": "\\(f=x^3-3x\\) trên \\([-2;2]\\) GTLN/GTNN là gì?",
+    "answer_key": "So f(−2)=−2,\\(f(-1)=2\\),\\(f(1)=-2\\),\\(f(2)=2\\); GTLN2, GTNN−2, đạt tại nhiều điểm.",
+    "worked_solution": "Đạo hàm \\(f'=3(x^2-1)=0\\) tại ±1. Vì f liên tục trên \\([-2;2]\\), liệt kê hai đầu và hai điểm tới hạn: f(−2)=−2, \\(f(-1)=2\\), \\(f(1)=-2\\), \\(f(2)=2\\). Do đó GTLN bằng 2 tại −1 và 2; GTNN bằng −2 tại −2 và 1.",
     "skill_ids": [
       "G12-B02-EXTREMA_GLOBAL_MEANING"
     ],
@@ -205,9 +205,9 @@
   {
     "item_id": "THPT-TOP10-P08",
     "content_version": 2,
-    "stem": "f=x²+1 trên [−2,1] tìm GTLN/GTNN.",
+    "stem": "\\(f=x^2+1\\) trên \\([-2;1]\\) tìm GTLN/GTNN.",
     "answer_key": "GTLN5 tại−2, GTNN1 tại0.",
-    "worked_solution": "f=x²+1 liên tục trên [−2,1], f'=2x=0 tại x=0. Tính f(−2)=5, f(0)=1, f(1)=2; so ba giá trị cho GTLN=5 tại −2 và GTNN=1 tại 0.",
+    "worked_solution": "\\(f=x^2+1\\) liên tục trên \\([-2;1]\\), f'=2x=0 tại \\(x=0\\). Tính f(−2)=5, f(0)=1, f(1)=2; so ba giá trị cho GTLN=5 tại −2 và GTNN=1 tại 0.",
     "skill_ids": [
       "G12-B02-CLOSED_INTERVAL_EXISTENCE"
     ],
@@ -234,9 +234,9 @@
   {
     "item_id": "THPT-TOP10-P09",
     "content_version": 2,
-    "stem": "f=x²−2x trên [−1,3], so điểm nào?",
+    "stem": "\\(f=x^2-2x\\) trên \\([-1;3]\\), so điểm nào?",
     "answer_key": "x=−1,1,3; f lần lượt3,−1,3 nên max3,min−1.",
-    "worked_solution": "f=x²−2x liên tục trên [−1,3]; f'=2x−2=0 khi x=1 nằm trong đoạn. Cần so f(−1)=3, f(1)=−1 và f(3)=3. GTLN=3 ở x=−1,3; GTNN=−1 ở x=1.",
+    "worked_solution": "\\(f=x^2-2x\\) liên tục trên \\([-1;3]\\); f'=2x−2=0 khi \\(x=1\\) nằm trong đoạn. Cần so f(−1)=3, f(1)=−1 và f(3)=3. GTLN=3 ở x=−1,3; GTNN=−1 ở \\(x=1\\).",
     "skill_ids": [
       "G12-B02-CRITICAL_END_POINTS"
     ],
@@ -263,9 +263,9 @@
   {
     "item_id": "THPT-TOP10-P10",
     "content_version": 2,
-    "stem": "f=x² trên (0,1) có max/min không?",
+    "stem": "\\(f=x^2\\) trên \\((0;1)\\) có max/min không?",
     "answer_key": "Không có GTLN (sup1), không có GTNN (inf0), vì cả hai đầu bị loại.",
-    "worked_solution": "Trên (0,1), f=x² tăng vì f'=2x>0. Khi x→1⁻, f→1 nhưng điểm x=1 không thuộc miền, nên không có GTLN. Khi x→0⁺, f→0 nhưng x=0 bị loại, nên không có GTNN. Cận trên đúng nhỏ nhất là 1, cận dưới đúng lớn nhất là 0.",
+    "worked_solution": "Trên \\((0;1)\\), \\(f=x^2\\) tăng vì \\(f'=2x>0\\). Khi \\(x\\to1^-\\), \\(f\\to1\\) nhưng điểm \\(x=1\\) không thuộc miền, nên không có GTLN. Khi \\(x\\to0^+\\), \\(f\\to0\\) nhưng \\(x=0\\) bị loại, nên không có GTNN. Cận trên đúng nhỏ nhất là 1, cận dưới đúng lớn nhất là 0.",
     "skill_ids": [
       "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
     ],
@@ -292,9 +292,9 @@
   {
     "item_id": "THPT-TOP10-P11",
     "content_version": 2,
-    "stem": "f=−(x−6)²+20, x∈[0,4], GTLN?",
-    "answer_key": "f(4)=16 tại x=4, không lấy 20 ở x=6.",
-    "worked_solution": "Với x∈[0,4], f=20−(x−6)², f'(x)=−2(x−6)>0 vì x<6. Vậy f tăng trên toàn miền khả thi, đạt GTLN ở đầu phải x=4: f(4)=20−4=16. Đỉnh x=6 nằm ngoài miền.",
+    "stem": "\\(f=-(x-6)^2+20\\), \\(x\\in[0;4]\\), GTLN?",
+    "answer_key": "f(4)=16 tại \\(x=4\\), không lấy 20 ở \\(x=6\\).",
+    "worked_solution": "Với \\(x\\in[0;4]\\), \\(f=20-(x-6)^2\\), f'(x)=−2(x−6)>0 vì x<6. Vậy f tăng trên toàn miền khả thi, đạt GTLN ở đầu phải \\(x=4\\): f(4)=20−4=16. Đỉnh \\(x=6\\) nằm ngoài miền.",
     "skill_ids": [
       "G12-B02-CONSTRAINED_DOMAIN"
     ],
@@ -322,8 +322,8 @@
     "item_id": "THPT-TOP10-P12",
     "content_version": 2,
     "stem": "Hai cạnh kề của một hình chữ nhật có tổng độ dài 9 m. Tìm kích thước để diện tích lớn nhất và tính diện tích đó.",
-    "answer_key": "Hai cạnh 4,5 m và4,5 m, diện tích20,25 m².",
-    "worked_solution": "Đặt hai cạnh x và y>0 (m), ràng buộc x+y=9 nên y=9−x và 0<x<9. Diện tích S=x(9−x)=81/4−(x−9/2)²≤81/4; đẳng thức khi x=y=9/2=4,5 m. Vậy diện tích lớn nhất 20,25 m².",
+    "answer_key": "Hai cạnh \\(4{,}5\\) m và \\(4{,}5\\) m, diện tích \\(20{,}25\\) m².",
+    "worked_solution": "Đặt hai cạnh x và y>0 (m), ràng buộc x+y=9 nên y=9−x và 0<x<9. Diện tích \\(S=x(9-x)=\\frac{81}4-(x-\\frac92)^2\\le\\frac{81}4\\); đẳng thức khi \\(x=y=\\frac92=4{,}5\\) m. Vậy diện tích lớn nhất 20,25 m².",
     "skill_ids": [
       "G12-B02-OPTIMIZATION_MODEL"
     ],
@@ -350,9 +350,9 @@
   {
     "item_id": "THPT-TOP10-P13",
     "content_version": 2,
-    "stem": "f=(5x+2)/(x−7), TCN?",
+    "stem": "\\(f=\\frac{5x+2}{x-7}\\), TCN?",
     "answer_key": "y=5.",
-    "worked_solution": "Chia cả tử và mẫu cho x (khi |x| lớn): f(x)=(5+2/x)/(1−7/x)→5 khi x→+∞ hoặc −∞. Bởi vậy tiệm cận ngang là đường y=5. Điểm x=7 loại miền, không ảnh hưởng kết luận ngang.",
+    "worked_solution": "Chia cả tử và mẫu cho x (khi |x| lớn): \\(f(x)=\\frac{5+\\frac2x}{1-\\frac7x}\\to5\\) khi \\(x\\to+\\infty\\) hoặc −∞. Bởi vậy tiệm cận ngang là đường y=5. Điểm x=7 loại miền, không ảnh hưởng kết luận ngang.",
     "skill_ids": [
       "G12-B03-HORIZONTAL_LIMIT"
     ],
@@ -379,9 +379,9 @@
   {
     "item_id": "THPT-TOP10-P14",
     "content_version": 2,
-    "stem": "f=−2/(x−3), giới hạn hai phía quanh3?",
-    "answer_key": "Trái +∞, phải−∞; TCD x=3.",
-    "worked_solution": "Khi x→3⁻, mẫu x−3 âm và tiến 0, tử −2 âm nên (−2)/(x−3)→+∞. Khi x→3⁺, mẫu dương rất nhỏ nên phân thức→−∞. Vậy x=3 là tiệm cận đứng với hai nhánh ngược dấu.",
+    "stem": "\\(f=-\\frac2{x-3}\\), giới hạn hai phía quanh3?",
+    "answer_key": "Trái +∞, phải−∞; TCD \\(x=3\\).",
+    "worked_solution": "Khi \\(x\\to3^-\\), mẫu x−3 âm và tiến 0, tử −2 âm nên \\(\\frac{-2}{x-3}\\to+\\infty\\). Khi \\(x\\to3^+\\), mẫu dương rất nhỏ nên phân thức→−∞. Vậy \\(x=3\\) là tiệm cận đứng với hai nhánh ngược dấu.",
     "skill_ids": [
       "G12-B03-VERTICAL_ONE_SIDED"
     ],
@@ -408,9 +408,9 @@
   {
     "item_id": "THPT-TOP10-P15",
     "content_version": 2,
-    "stem": "f=(x²+3x+1)/(x+1), TC xiên?",
-    "answer_key": "Chia được x+2−1/(x+1), nên y=x+2.",
-    "worked_solution": "Chia đa thức: x²+3x+1=(x+1)(x+2)−1, nên f=x+2−1/(x+1), x≠−1. Khi x→±∞, hiệu f−(x+2)=−1/(x+1)→0. Do đó tiệm cận xiên là y=x+2.",
+    "stem": "\\(f=\\frac{x^2+3x+1}{x+1}\\), TC xiên?",
+    "answer_key": "Chia được \\(x+2-\\frac1{x+1}\\), nên y=x+2.",
+    "worked_solution": "Chia đa thức: \\(x^2+3x+1=(x+1)(x+2)-1\\), nên \\(f=x+2-\\frac1{x+1}\\), x≠−1. Khi \\(x\\to\\pm\\infty\\), hiệu \\(f-(x+2)=-\\frac1{x+1}\\to0\\). Do đó tiệm cận xiên là y=x+2.",
     "skill_ids": [
       "G12-B03-OBLIQUE_REMAINDER"
     ],
@@ -437,9 +437,9 @@
   {
     "item_id": "THPT-TOP10-P16",
     "content_version": 2,
-    "stem": "f=(x²−1)/(x−1), x≠1, loại gián đoạn?",
-    "answer_key": "Khử được, lim2; không TCD x=1.",
-    "worked_solution": "D=ℝ\\{1}. Với x≠1, f=(x−1)(x+1)/(x−1)=x+1. Vì lim_{x→1}f=2 hữu hạn, x=1 là điểm khuyết khử được, không phải tiệm cận đứng. Không được tự bổ sung f(1)=2 vào hàm gốc.",
+    "stem": "\\(f=\\frac{x^2-1}{x-1}\\), \\(x\\ne1\\), loại gián đoạn?",
+    "answer_key": "Khử được, lim2; không TCD \\(x=1\\).",
+    "worked_solution": "\\(D=\\mathbb R\\setminus\\{1\\}\\). Với \\(x\\ne1\\), \\(f=\\frac{(x-1)(x+1)}{x-1}=x+1\\). Vì \\(\\lim_{x\\to1}f=2\\) hữu hạn, \\(x=1\\) là điểm khuyết khử được, không phải tiệm cận đứng. Không được tự bổ sung f(1)=2 vào hàm gốc.",
     "skill_ids": [
       "G12-B03-REMOVABLE_DISCONTINUITY"
     ],
@@ -466,9 +466,9 @@
   {
     "item_id": "THPT-TOP10-P17",
     "content_version": 2,
-    "stem": "f=1/√(x−2), miền và tiệm cận?",
-    "answer_key": "D=(2,∞), TCD x=2 từ bên phải.",
-    "worked_solution": "Biểu thức 1/√(x−2) yêu cầu x−2>0 vì căn nằm ở mẫu, nên D=(2,+∞). Khi x→2⁺, mẫu dương tiến 0 và f→+∞, do đó x=2 là tiệm cận đứng một phía; không có giá trị thực ở x<2.",
+    "stem": "\\(f=\\frac1{\\sqrt{x-2}}\\), miền và tiệm cận?",
+    "answer_key": "\\(D=(2;+\\infty)\\), TCD \\(x=2\\) từ bên phải.",
+    "worked_solution": "Biểu thức \\(\\frac1{\\sqrt{x-2}}\\) yêu cầu x−2>0 vì căn nằm ở mẫu, nên \\(D=(2;+\\infty)\\). Khi \\(x\\to2^+\\), mẫu dương tiến 0 và \\(f\\to+\\infty\\), do đó \\(x=2\\) là tiệm cận đứng một phía; không có giá trị thực ở x<2.",
     "skill_ids": [
       "G12-B03-DOMAIN_SIDED_LIMITS"
     ],
@@ -495,9 +495,9 @@
   {
     "item_id": "THPT-TOP10-P18",
     "content_version": 2,
-    "stem": "f=x+1/x, có TCN không?",
-    "answer_key": "Không vì f→±∞ theo x; có tiệm cận xiên y=x.",
-    "worked_solution": "Với x≠0, f=x+1/x. Khi x→+∞, f→+∞; khi x→−∞, f→−∞, nên không có tiệm cận ngang hữu hạn. Tuy nhiên f−x=1/x→0 ở cả hai phía vô cực nên y=x là tiệm cận xiên.",
+    "stem": "\\(f=x+\\frac1x\\), có TCN không?",
+    "answer_key": "Không vì \\(f\\to\\pm\\infty\\) theo x; có tiệm cận xiên \\(y=x\\).",
+    "worked_solution": "Với \\(x\\ne0\\), \\(f=x+\\frac1x\\). Khi \\(x\\to+\\infty\\), \\(f\\to+\\infty\\); khi \\(x\\to-\\infty\\), \\(f\\to-\\infty\\), nên không có tiệm cận ngang hữu hạn. Tuy nhiên \\(f-x=\\frac1x\\to0\\) ở cả hai phía vô cực nên \\(y=x\\) là tiệm cận xiên.",
     "skill_ids": [
       "G12-B03-GRAPH_INTERPRETATION"
     ],
@@ -524,9 +524,9 @@
   {
     "item_id": "THPT-TOP10-P19",
     "content_version": 2,
-    "stem": "f=(x−2)², cực tiểu và giao Oy?",
-    "answer_key": "Min tại x=2 y=0; Oy tại(0,4).",
-    "worked_solution": "f=(x−2)²≥0 và bằng0 khi x=2, nên cực tiểu (cũng là GTNN trên ℝ) tại (2,0). Giao trục Oy lấy x=0: f(0)=4 nên là (0,4). Có thể kiểm f'=2(x−2) đổi dấu âm sang dương tại 2.",
+    "stem": "\\(f=(x-2)^2\\), cực tiểu và giao Oy?",
+    "answer_key": "Min tại \\(x=2\\) \\(y=0\\); Oy tại(0,4).",
+    "worked_solution": "\\(f=(x-2)^2\\ge0\\) và bằng0 khi \\(x=2\\), nên cực tiểu (cũng là GTNN trên ℝ) tại \\((2;0)\\). Giao trục Oy lấy \\(x=0\\): f(0)=4 nên là \\((0;4)\\). Có thể kiểm f'=2(x−2) đổi dấu âm sang dương tại 2.",
     "skill_ids": [
       "G12-B04-SURVEY_WORKFLOW",
       "G12-B04-INTERCEPTS_LIMITS",
@@ -555,9 +555,9 @@
   {
     "item_id": "THPT-TOP10-P20",
     "content_version": 2,
-    "stem": "Khảo sát hai cực trị của f(x)=x³−3x trên ℝ.",
-    "answer_key": "Cực đại địa phương (−1,2), cực tiểu địa phương (1,−2).",
-    "worked_solution": "Với f(x)=x³−3x, f'=3(x−1)(x+1). Dấu + trên (−∞,−1), − trên (−1,1), + trên (1,+∞); vì vậy cực đại địa phương tại (−1,2), cực tiểu địa phương tại (1,−2). Đường cong bậc ba vẫn không bị chặn trên ℝ.",
+    "stem": "Khảo sát hai cực trị của \\(f(x)=x^3-3x\\) trên ℝ.",
+    "answer_key": "Cực đại địa phương \\((-1;2)\\), cực tiểu địa phương \\((1;-2)\\).",
+    "worked_solution": "Với \\(f(x)=x^3-3x\\), \\(f'=3(x-1)(x+1)\\). Dấu + trên \\((-\\infty;-1)\\), − trên \\((-1;1)\\), + trên \\((1;+\\infty)\\); vì vậy cực đại địa phương tại \\((-1;2)\\), cực tiểu địa phương tại \\((1;-2)\\). Đường cong bậc ba vẫn không bị chặn trên ℝ.",
     "skill_ids": [
       "G12-B04-CUBIC_VARIATION"
     ],
@@ -584,9 +584,9 @@
   {
     "item_id": "THPT-TOP10-P21",
     "content_version": 2,
-    "stem": "f=(3x−2)/(x+1), TCD,TCN?",
-    "answer_key": "x=−1 (tử ở−1 là−5 khác0), y=3.",
-    "worked_solution": "D=ℝ\\{−1}. Với f=(3x−2)/(x+1), tử tại x=−1 bằng −5 khác0 nên x=−1 là tiệm cận đứng (trái +∞, phải −∞). Chia f=3−5/(x+1), phần dư→0 ở ±∞ nên y=3 là tiệm cận ngang.",
+    "stem": "\\(f=\\frac{3x-2}{x+1}\\), TCD,TCN?",
+    "answer_key": "\\(x=-1\\) (tử ở−1 là−5 khác0), \\(y=3\\).",
+    "worked_solution": "\\(D=\\mathbb R\\setminus\\{-1\\}\\). Với \\(f=\\frac{3x-2}{x+1}\\), tử tại \\(x=-1\\) bằng −5 khác0 nên \\(x=-1\\) là tiệm cận đứng (trái +∞, phải −∞). Chia \\(f=3-\\frac5{x+1}\\), phần dư→0 ở ±∞ nên \\(y=3\\) là tiệm cận ngang.",
     "skill_ids": [
       "G12-B03-VERTICAL_ONE_SIDED",
       "G12-B03-HORIZONTAL_LIMIT"
@@ -614,9 +614,9 @@
   {
     "item_id": "THPT-TOP10-P22",
     "content_version": 2,
-    "stem": "f=(x²−4)/(x−2), x≠2, giao Ox?",
-    "answer_key": "f=x+2 trên D nên giao tại x=−2; x=2 là lỗ, không giao.",
-    "worked_solution": "f=(x²−4)/(x−2), D=ℝ\\{2}; rút trên D thành f=x+2. Giao Ox giải x+2=0 được x=−2 thuộc D, nên điểm giao là (−2,0). Điểm (2,4) bị khuyết, không phải giao trục hay điểm trên đồ thị.",
+    "stem": "\\(f=\\frac{x^2-4}{x-2}\\), \\(x\\ne2\\), giao Ox?",
+    "answer_key": "f=x+2 trên D nên giao tại \\(x=-2\\); \\(x=2\\) là lỗ, không giao.",
+    "worked_solution": "\\(f=\\frac{x^2-4}{x-2}\\), \\(D=\\mathbb R\\setminus\\{2\\}\\); rút trên D thành f=x+2. Giao Ox giải x+2=0 được \\(x=-2\\) thuộc D, nên điểm giao là \\((-2;0)\\). Điểm \\((2;4)\\) bị khuyết, không phải giao trục hay điểm trên đồ thị.",
     "skill_ids": [
       "G12-B04-INTERCEPTS_LIMITS"
     ],
@@ -643,9 +643,9 @@
   {
     "item_id": "THPT-TOP10-P23",
     "content_version": 2,
-    "stem": "f=3−2/(x+4), tâm?",
-    "answer_key": "I(−4,3).",
-    "worked_solution": "f=3−2/(x+4) có TCD x=−4 vì mẫu tiến0, TCN y=3 vì phần phân thức→0 khi |x|→∞. Phép tịnh tiến u=x+4,v=y−3 cho v=−2/u đối xứng qua gốc, nên tâm đối xứng của đồ thị gốc là I(−4,3).",
+    "stem": "\\(f=3-\\frac2{x+4}\\), tâm?",
+    "answer_key": "\\(I(-4;3)\\).",
+    "worked_solution": "\\(f=3-\\frac2{x+4}\\) có TCD \\(x=-4\\) vì mẫu tiến0, TCN \\(y=3\\) vì phần phân thức→0 khi \\(|x|\\to\\infty\\). Phép tịnh tiến u=x+4,v=y−3 cho \\(v=-\\frac2u\\) đối xứng qua gốc, nên tâm đối xứng của đồ thị gốc là \\(I(-4;3)\\).",
     "skill_ids": [
       "G12-B04-CENTER_SYMMETRY"
     ],
@@ -672,9 +672,9 @@
   {
     "item_id": "THPT-TOP10-P24",
     "content_version": 2,
-    "stem": "Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)<0 với x<0 và f'(x)>0 với x>0, f(0)=4. Xác định cực trị tại x=0.",
-    "answer_key": "Cực tiểu địa phương tại (0,4).",
-    "worked_solution": "Theo giả thiết f' âm khi x<0 và dương khi x>0; vì f liên tục tại 0 và f(0)=4, hàm giảm tới 0 rồi tăng, nên (0,4) là điểm cực tiểu địa phương. Không đủ dữ kiện khẳng định đây là GTNN của toàn miền nếu còn nhánh khác.",
+    "stem": "Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)<0 với x<0 và f'(x)>0 với \\(x>0\\), f(0)=4. Xác định cực trị tại \\(x=0\\).",
+    "answer_key": "Cực tiểu địa phương tại \\((0;4)\\).",
+    "worked_solution": "Theo giả thiết f' âm khi x<0 và dương khi \\(x>0\\); vì f liên tục tại 0 và f(0)=4, hàm giảm tới 0 rồi tăng, nên \\((0;4)\\) là điểm cực tiểu địa phương. Không đủ dữ kiện khẳng định đây là GTNN của toàn miền nếu còn nhánh khác.",
     "skill_ids": [
       "G12-B04-READ_VARIATION_TABLE"
     ],
@@ -701,9 +701,9 @@
   {
     "item_id": "THPT-TOP10-P25",
     "content_version": 2,
-    "stem": "f=1/(x+2), có giảm trên D như một tập không?",
+    "stem": "\\(f=\\frac1{x+2}\\), có giảm trên D như một tập không?",
     "answer_key": "Không theo định nghĩa so mọi cặp; chỉ trên hai khoảng tách bởi −2.",
-    "worked_solution": "D=ℝ\\{−2} và f'=−1/(x+2)²<0 trên từng khoảng (−∞,−2), (−2,+∞). Nhưng lấy x₁=−3<x₂=−1 thì f(x₁)=−1<f(x₂)=1, trái điều kiện giảm trên cả tập D theo mọi cặp. Vậy chỉ được nói nghịch biến trên hai khoảng riêng.",
+    "worked_solution": "\\(D=\\mathbb R\\setminus\\{-2\\}\\) và \\(f'=-\\frac1{(x+2)^2}<0\\) trên từng khoảng \\((-\\infty;-2)\\), \\((-2;+\\infty)\\). Nhưng lấy \\(x_1=-3<x_2=-1\\) thì \\(f(x_1)=-1<f(x_2)=1\\), trái điều kiện giảm trên cả tập D theo mọi cặp. Vậy chỉ được nói nghịch biến trên hai khoảng riêng.",
     "skill_ids": [
       "G12-B04-DOMAIN_NONCONNECT"
     ],
@@ -730,9 +730,9 @@
   {
     "item_id": "THPT-TOP10-P26",
     "content_version": 2,
-    "stem": "Tổng chi phí C(q)=80+4q+q² (nghìn đồng), q là số sản phẩm, được mô hình hóa liên tục. Tính C′(2) và ghi đơn vị.",
-    "answer_key": "C′(2)=8 nghìn đồng/sản phẩm.",
-    "worked_solution": "C′(q)=4+2q, nên C′(2)=8 nghìn đồng/sản phẩm. Đây là tốc độ thay đổi tức thời theo sản lượng trong mô hình liên tục, không phải tổng chi phí C(2)=92 nghìn đồng.",
+    "stem": "Tổng chi phí \\(C(q)=80+4q+q^2\\) (nghìn đồng), q là số sản phẩm, được mô hình hóa liên tục. Tính \\(C'(2)\\) và ghi đơn vị.",
+    "answer_key": "\\(C'(2)=8\\) nghìn đồng/sản phẩm.",
+    "worked_solution": "\\(C'(q)=4+2q\\), nên \\(C'(2)=8\\) nghìn đồng/sản phẩm. Đây là tốc độ thay đổi tức thời theo sản lượng trong mô hình liên tục, không phải tổng chi phí \\(C(2)=92\\) nghìn đồng.",
     "skill_ids": [
       "G12-B05-MARGINAL_COST",
       "G12-B05-RATE_INTERPRETATION"
@@ -761,8 +761,8 @@
     "item_id": "THPT-TOP10-P27",
     "content_version": 2,
     "stem": "Cho v=3,a=−2, tốc độ thay đổi?",
-    "answer_key": "Giảm vì v·a<0.",
-    "worked_solution": "Tại thời điểm xét có v=3>0 và a=−2<0. Vì v·a=−6<0, đạo hàm tốc độ |v| bằng a=−2 (khi v>0), nên tốc độ đang giảm. Gia tốc âm không luôn đồng nghĩa chậm dần nếu v cũng âm.",
+    "answer_key": "Giảm vì \\(v\\cdot a<0\\).",
+    "worked_solution": "Tại thời điểm xét có v=3>0 và \\(a=-2<0\\). Vì v·a=−6<0, đạo hàm tốc độ \\(|v|\\) bằng a=−2 (khi v>0), nên tốc độ đang giảm. Gia tốc âm không luôn đồng nghĩa chậm dần nếu v cũng âm.",
     "skill_ids": [
       "G12-B05-MOTION_SPEED_ACCELERATION"
     ],
@@ -789,9 +789,9 @@
   {
     "item_id": "THPT-TOP10-P28",
     "content_version": 2,
-    "stem": "Tổng chi phí C(q)=2q²+q+5 (nghìn đồng), q là số sản phẩm. Tính C′(2) theo mô hình liên tục và so sánh với C(3)−C(2). Ghi đơn vị.",
-    "answer_key": "C′(2)=9 nghìn đồng/sản phẩm; C(3)−C(2)=11 nghìn đồng.",
-    "worked_solution": "C′(q)=4q+1 nên C′(2)=9 nghìn đồng/sản phẩm. Chi phí tăng thêm một sản phẩm là C(3)−C(2)=(18+3+5)−(8+2+5)=11 nghìn đồng. Với Δq=1 sản phẩm, C′(2)·Δq=9 nghìn đồng chỉ là xấp xỉ, không bằng chính xác độ tăng 11 nghìn đồng.",
+    "stem": "Tổng chi phí \\(C(q)=2q^2+q+5\\) (nghìn đồng), q là số sản phẩm. Tính \\(C'(2)\\) theo mô hình liên tục và so sánh với \\(C(3)-C(2)\\). Ghi đơn vị.",
+    "answer_key": "\\(C'(2)=9\\) nghìn đồng/sản phẩm; \\(C(3)-C(2)=11\\) nghìn đồng.",
+    "worked_solution": "\\(C'(q)=4q+1\\) nên \\(C'(2)=9\\) nghìn đồng/sản phẩm. Chi phí tăng thêm một sản phẩm là \\(C(3)-C(2)=(18+3+5)-(8+2+5)=11\\) nghìn đồng. Với \\(\\Delta q=1\\) sản phẩm, \\(C'(2)\\cdot\\Delta q=9\\) nghìn đồng chỉ là xấp xỉ, không bằng chính xác độ tăng 11 nghìn đồng.",
     "skill_ids": [
       "G12-B05-MARGINAL_COST"
     ],
@@ -819,8 +819,8 @@
     "item_id": "THPT-TOP10-P29",
     "content_version": 2,
     "stem": "Hình chữ nhật chu vi24m, một cạnh x có miền?",
-    "answer_key": "0<x<12; cạnh kia 12−x.",
-    "worked_solution": "Hình chữ nhật chu vi24 m có 2(x+y)=24⇒x+y=12. Với hai cạnh đều dương, y=12−x>0 và x>0 nên miền 0<x<12. Các đầu x=0,12 cho hình suy biến, không hợp lệ.",
+    "answer_key": "\\(0<x<12\\); cạnh kia 12−x.",
+    "worked_solution": "Hình chữ nhật chu vi24 m có 2(x+y)=24⇒x+y=12. Với hai cạnh đều dương, y=12−x>0 và \\(x>0\\) nên miền \\(0<x<12\\). Các đầu x=0,12 cho hình suy biến, không hợp lệ.",
     "skill_ids": [
       "G12-B05-MODEL_VARIABLE_DOMAIN"
     ],
@@ -847,9 +847,9 @@
   {
     "item_id": "THPT-TOP10-P30",
     "content_version": 2,
-    "stem": "P(x)=−(x−3)²+7, x∈[0,2], GTLN?",
-    "answer_key": "x=2, P=6; đỉnh3 không hợp lệ.",
-    "worked_solution": "f(x)=7−(x−3)², x∈[0,2]. Vì f'(x)=−2(x−3)>0 trên [0,2), hàm tăng đến x=2 và đạt GTLN f(2)=7−1=6. Đỉnh x=3 cho giá trị7 nhưng nằm ngoài miền, không là phương án.",
+    "stem": "\\(P(x)=-(x-3)^2+7\\), \\(x\\in[0;2]\\), GTLN?",
+    "answer_key": "\\(x=2\\), P=6; đỉnh3 không hợp lệ.",
+    "worked_solution": "\\(f(x)=7-(x-3)^2\\), \\(x\\in[0;2]\\). Vì f'(x)=−2(x−3)>0 trên \\([0;2)\\), hàm tăng đến \\(x=2\\) và đạt GTLN f(2)=7−1=6. Đỉnh \\(x=3\\) cho giá trị7 nhưng nằm ngoài miền, không là phương án.",
     "skill_ids": [
       "G12-B05-OPTIMIZATION_DERIVATIVE"
     ],
@@ -876,9 +876,9 @@
   {
     "item_id": "THPT-TOP10-P31",
     "content_version": 2,
-    "stem": "Tìm GTLN, GTNN của f(x)=|x−2|+1 trên [1;4]. Giải thích tại sao phải xét x=2 dù f′(2) không tồn tại.",
-    "answer_key": "GTNN 1 tại x=2; GTLN 3 tại x=4.",
-    "worked_solution": "Hàm liên tục trên [1;4]. Khi x<2, f(x)=3−x nên giảm; khi x>2, f(x)=x−1 nên tăng. Tại x=2, đạo hàm trái bằng −1, đạo hàm phải bằng 1 nên f′(2) không tồn tại, nhưng điểm này thuộc đoạn và vẫn là ứng viên. So f(1)=2, f(2)=1, f(4)=3: GTNN bằng 1 tại x=2, GTLN bằng 3 tại x=4.",
+    "stem": "Tìm GTLN, GTNN của \\(f(x)=|x-2|+1\\) trên \\([1;4]\\). Giải thích tại sao phải xét \\(x=2\\) dù \\(f'(2)\\) không tồn tại.",
+    "answer_key": "GTNN 1 tại \\(x=2\\); GTLN 3 tại \\(x=4\\).",
+    "worked_solution": "Hàm liên tục trên \\([1;4]\\). Khi \\(x<2\\), \\(f(x)=3-x\\) nên giảm; khi \\(x>2\\), \\(f(x)=x-1\\) nên tăng. Tại \\(x=2\\), đạo hàm trái bằng −1, đạo hàm phải bằng 1 nên \\(f'(2)\\) không tồn tại, nhưng điểm này thuộc đoạn và vẫn là ứng viên. So \\(f(1)=2,\\ f(2)=1,\\ f(4)=3\\): GTNN bằng 1 tại \\(x=2\\), GTLN bằng 3 tại \\(x=4\\).",
     "skill_ids": [
       "G12-B02-CRITICAL_END_POINTS",
       "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
@@ -906,9 +906,9 @@
   {
     "item_id": "THPT-TOP10-P32",
     "content_version": 2,
-    "stem": "Một mô hình lợi ích P(q)=20−(q−2,5)² trên [0;5]. Tìm q tối ưu nếu q liên tục, rồi nếu q chỉ nhận các số nguyên từ 0 đến 5. Có thể chỉ làm tròn 2,5 theo một hướng không?",
-    "answer_key": "Liên tục: q=2,5, P=20. Rời rạc: q=2 hoặc q=3, P=19,75; không tùy ý chọn một hướng làm tròn.",
-    "worked_solution": "Vì (q−2,5)²≥0 nên P(q)≤20, đạt khi q=2,5 nếu biến liên tục. Với q nguyên, khoảng cách nhỏ nhất đến 2,5 là 0,5, đạt tại q=2 và q=3. Các q nguyên khác cách ít nhất 1,5 nên cho P nhỏ hơn. P(2)=P(3)=20−0,25=19,75. Ở đây dạng parabol cho phép so các số nguyên kề đỉnh; với hàm mục tiêu khác phải chứng minh quy tắc chọn ứng viên hoặc so toàn bộ phương án khả thi.",
+    "stem": "Một mô hình lợi ích \\(P(q)=20-(q-2{,}5)^2\\) trên \\([0;5]\\). Tìm q tối ưu nếu q liên tục, rồi nếu q chỉ nhận các số nguyên từ 0 đến 5. Có thể chỉ làm tròn \\(2{,}5\\) theo một hướng không?",
+    "answer_key": "Liên tục: \\(q=2{,}5,\\ P=20\\). Rời rạc: \\(q=2\\) hoặc \\(q=3,\\ P=19{,}75\\); không tùy ý chọn một hướng làm tròn.",
+    "worked_solution": "Vì \\((q-2{,}5)^2\\ge0\\) nên \\(P(q)\\le20\\), đạt khi \\(q=2{,}5\\) nếu biến liên tục. Với q nguyên, khoảng cách nhỏ nhất đến \\(2{,}5\\) là \\(0{,}5\\), đạt tại \\(q=2\\) và \\(q=3\\). Các q nguyên khác cách ít nhất \\(1{,}5\\) nên cho P nhỏ hơn. \\(P(2)=P(3)=20-0{,}25=19{,}75\\). Ở đây dạng parabol cho phép so các số nguyên kề đỉnh; với hàm mục tiêu khác phải chứng minh quy tắc chọn ứng viên hoặc so toàn bộ phương án khả thi.",
     "skill_ids": [
       "G12-B05-MODEL_VARIABLE_DOMAIN",
       "G12-B05-OPTIMIZATION_DERIVATIVE",
@@ -937,9 +937,9 @@
   {
     "item_id": "THPT-TOP10-P33",
     "content_version": 2,
-    "stem": "f=−x²+6x, max trên ℝ?",
-    "answer_key": "GTLN9 tại x=3; không có GTNN.",
-    "worked_solution": "f=−x²+6x=9−(x−3)²≤9 với mọi x∈ℝ, bằng9 tại x=3. Vậy GTLN=9. Khi |x|→∞, f→−∞ nên không có GTNN trên toàn ℝ; điều này phù hợp parabol mở xuống.",
+    "stem": "\\(f=-x^2+6x\\), max trên ℝ?",
+    "answer_key": "GTLN9 tại \\(x=3\\); không có GTNN.",
+    "worked_solution": "\\(f=-x^2+6x=9-(x-3)^2\\le9\\) với mọi x∈ℝ, bằng9 tại \\(x=3\\). Vậy GTLN=9. Khi \\(|x|\\to\\infty\\), \\(f\\to-\\infty\\) nên không có GTNN trên toàn ℝ; điều này phù hợp parabol mở xuống.",
     "skill_ids": [
       "G12-B02-EXTREMA_GLOBAL_MEANING"
     ],
@@ -966,9 +966,9 @@
   {
     "item_id": "THPT-TOP10-P34",
     "content_version": 2,
-    "stem": "f=(x²−4)/(x−2), TCD ở x=2?",
-    "answer_key": "Không có tiệm cận đứng x=2; giới hạn tại 2 bằng 4, đồ thị khuyết điểm (2;4).",
-    "worked_solution": "Tập xác định D=ℝ\\{2}. Trên D, f(x)=(x−2)(x+2)/(x−2)=x+2. Do đó lim khi x→2⁻ hoặc x→2⁺ đều bằng 4, hữu hạn; x=2 không là tiệm cận đứng. Đồ thị là đường y=x+2 bỏ điểm (2;4).",
+    "stem": "\\(f=\\frac{x^2-4}{x-2}\\), TCD ở \\(x=2\\)?",
+    "answer_key": "Không có tiệm cận đứng \\(x=2\\); giới hạn tại 2 bằng 4, đồ thị khuyết điểm \\((2;4)\\).",
+    "worked_solution": "Tập xác định \\(D=\\mathbb R\\setminus\\{2\\}\\). Trên D, \\(f(x)=\\frac{(x-2)(x+2)}{x-2}=x+2\\). Do đó \\(\\lim_{x\\to2^-}f(x)=\\lim_{x\\to2^+}f(x)=4\\), hữu hạn; \\(x=2\\) không là tiệm cận đứng. Đồ thị là đường \\(y=x+2\\) bỏ điểm \\((2;4)\\).",
     "skill_ids": [
       "G12-B03-REMOVABLE_DISCONTINUITY"
     ],
@@ -995,9 +995,9 @@
   {
     "item_id": "THPT-TOP10-P35",
     "content_version": 2,
-    "stem": "P=−q²+6q−2, q∈[0,4], max ở đâu?",
+    "stem": "\\(P=-q^2+6q-2\\), \\(q\\in[0;4]\\), max ở đâu?",
     "answer_key": "q=3, P=7; hai biên−2 và6 nhỏ hơn.",
-    "worked_solution": "P(q)=−q²+6q−2=7−(q−3)²≤7 cho q∈[0,4]. Vì q=3 thuộc miền nên GTLN=7 tại q=3. Kiểm hai biên P(0)=−2,P(4)=6 đều thấp hơn. Nếu q là số lượng nguyên thì q=3 cũng hợp lệ.",
+    "worked_solution": "\\(P(q)=-q^2+6q-2=7-(q-3)^2\\le7\\) cho \\(q\\in[0;4]\\). Vì q=3 thuộc miền nên GTLN=7 tại q=3. Kiểm hai biên P(0)=−2,P(4)=6 đều thấp hơn. Nếu q là số lượng nguyên thì q=3 cũng hợp lệ.",
     "skill_ids": [
       "G12-B05-UNIT_ASSUMPTION_CHECK"
     ],
@@ -1024,9 +1024,9 @@
   {
     "item_id": "THPT-TOP10-P36",
     "content_version": 2,
-    "stem": "g(x)=1−(x−2)² trên miền (0,3) có đạt GTLN/GTNN không?",
-    "answer_key": "GTLN=1 tại x=2; không có GTNN (infimum −3 không đạt).",
-    "worked_solution": "Trên (0,3), g(x)=1−(x−2)²≤1 và bằng1 tại x=2 thuộc miền, nên GTLN=1 đạt ở x=2. Nhưng khi x→0⁺, g→−3, và mọi x∈(0,3) đều có g(x)>−3, nên không có GTNN (infimum −3). Miền mở vẫn có thể đạt max ở nội miền.",
+    "stem": "\\(g(x)=1-(x-2)^2\\) trên miền \\((0;3)\\) có đạt GTLN/GTNN không?",
+    "answer_key": "GTLN=1 tại \\(x=2\\); không có GTNN (infimum −3 không đạt).",
+    "worked_solution": "Trên \\((0;3)\\), \\(g(x)=1-(x-2)^2\\le1\\) và bằng1 tại \\(x=2\\) thuộc miền, nên GTLN=1 đạt ở \\(x=2\\). Nhưng khi \\(x\\to0^+\\), \\(g\\to-3\\), và mọi \\(x\\in(0;3)\\) đều có g(x)>−3, nên không có GTNN (infimum −3). Miền mở vẫn có thể đạt max ở nội miền.",
     "skill_ids": [
       "G12-B02-OPEN_DOMAIN_NONATTAINMENT",
       "G12-B02-EXTREMA_GLOBAL_MEANING"

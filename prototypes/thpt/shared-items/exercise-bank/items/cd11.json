@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-TOP11-P01",
     "content_version": 2,
-    "stem": "Tìm họ nguyên hàm f(x)=6x−4.",
-    "answer_key": "F(x)=3x²−4x+C trên ℝ.",
-    "worked_solution": "Muốn F'=6x−4, chọn F=3x²−4x+C vì (3x²)'=6x và (−4x)'=−4. Hai nguyên hàm trên khoảng ℝ khác nhau hằng số C; kiểm ngược F'=6x−4.",
+    "stem": "Tìm họ nguyên hàm \\(f(x)=6x-4\\).",
+    "answer_key": "\\(F(x)=3x^2-4x+C\\) trên \\(\\mathbb R\\).",
+    "worked_solution": "Muốn \\(F'=6x-4\\), chọn \\(F=3x^2-4x+C\\) vì \\((3x^2)'=6x\\) và \\((-4x)'=-4\\). Hai nguyên hàm trên khoảng \\(\\mathbb R\\) khác nhau hằng số C; kiểm ngược \\(F'=6x-4\\).",
     "skill_ids": [
       "G12-CHIV-B11-O01"
     ],
@@ -31,9 +31,9 @@
   {
     "item_id": "THPT-TOP11-P02",
     "content_version": 2,
-    "stem": "F'=3x², F(2)=9; tìm F.",
-    "answer_key": "F=x³+C, C=9−8=1; F=x³+1.",
-    "worked_solution": "Từ F'=3x² suy F=x³+C. Điều kiện F(2)=9 cho 8+C=9⇒C=1; vậy F=x³+1. Kiểm F'=3x² và F(2)=9.",
+    "stem": "\\(F'=3x^2\\), \\(F(2)=9\\); tìm F.",
+    "answer_key": "\\(F=x^3+C\\), \\(C=9-8=1\\); \\(F=x^3+1\\).",
+    "worked_solution": "Từ \\(F'=3x^2\\) suy \\(F=x^3+C\\). Điều kiện \\(F(2)=9\\) cho \\(8+C=9\\Rightarrow C=1\\); vậy \\(F=x^3+1\\). Kiểm \\(F'=3x^2\\) và \\(F(2)=9\\).",
     "skill_ids": [
       "G12-CHIV-B11-O02"
     ],
@@ -60,9 +60,9 @@
   {
     "item_id": "THPT-TOP11-P03",
     "content_version": 2,
-    "stem": "Tính ∫(3x²+4x−2)dx.",
-    "answer_key": "x³+2x²−2x+C.",
-    "worked_solution": "Lấy nguyên hàm từng hạng: ∫3x²dx=x³, ∫4xdx=2x², ∫(−2)dx=−2x. Họ nguyên hàm là x³+2x²−2x+C; lấy đạo hàm để kiểm lại 3x²+4x−2.",
+    "stem": "Tính \\(\\int (3x^{2}+4x-2)\\,\\mathrm dx\\).",
+    "answer_key": "\\(x^3+2x^2-2x+C\\).",
+    "worked_solution": "Chọn nguyên hàm lần lượt của \\(3x^2,4x,-2\\) là \\(x^3,2x^2,-2x\\). Cộng lại được \\(x^3+2x^2-2x+C\\); đạo hàm ngược trả đúng \\(3x^2+4x-2\\).",
     "skill_ids": [
       "G12-CHIV-B11-O03"
     ],
@@ -89,9 +89,9 @@
   {
     "item_id": "THPT-TOP11-P04",
     "content_version": 2,
-    "stem": "Tìm nguyên hàm 2/x trên (−∞,0) biết F(−1)=3.",
-    "answer_key": "F=2ln(−x)+3 trên x<0.",
-    "worked_solution": "Trên x<0, ln|x|=ln(−x) hợp lệ. Họ nguyên hàm F=2ln(−x)+C, và F(−1)=2ln1+C=C=3. Vậy F=2ln(−x)+3. Kiểm F'=2/x trên nhánh âm.",
+    "stem": "Tìm nguyên hàm \\(\\frac2x\\) trên \\((-\\infty;0)\\) biết \\(F(-1)=3\\).",
+    "answer_key": "\\(F=2\\ln(-x)+3\\) trên \\(x<0\\).",
+    "worked_solution": "Trên \\(x<0\\), \\(\\ln|x|=\\ln(-x)\\) hợp lệ. Họ nguyên hàm \\(F=2\\ln(-x)+C\\), và \\(F(-1)=2\\ln1+C=C=3\\). Vậy \\(F=2\\ln(-x)+3\\). Kiểm \\(F'=\\frac2x\\) trên nhánh âm.",
     "skill_ids": [
       "G12-CHIV-B11-O04"
     ],
@@ -118,9 +118,9 @@
   {
     "item_id": "THPT-TOP11-P05",
     "content_version": 2,
-    "stem": "Tính ∫(2e^{2x}+3^x)dx.",
-    "answer_key": "e^{2x}+3^x/ln3+C.",
-    "worked_solution": "∫2e^(2x)dx=e^(2x) vì đạo hàm của e^(2x) là 2e^(2x). ∫3^xdx=3^x/ln3 vì đạo hàm của 3^x là 3^x ln3. Cộng được F=e^(2x)+3^x/ln3+C.",
+    "stem": "Tính \\(\\int (2e^{2x}+3^x)\\,\\mathrm dx\\).",
+    "answer_key": "\\(e^{2x}+\\frac{3^x}{\\ln3}+C\\).",
+    "worked_solution": "Một nguyên hàm của \\(2e^{2x}\\) là \\(e^{2x}\\) vì đạo hàm của \\(e^{2x}\\) là \\(2e^{2x}\\). Một nguyên hàm của \\(3^x\\) là \\(\\frac{3^x}{\\ln3}\\) vì đạo hàm \\(3^x\\) bằng \\(3^x\\ln3\\). Cộng được \\(F=e^{2x}+\\frac{3^x}{\\ln3}+C\\).",
     "skill_ids": [
       "G12-CHIV-B11-O05"
     ],
@@ -147,9 +147,9 @@
   {
     "item_id": "THPT-TOP11-P06",
     "content_version": 2,
-    "stem": "Tính ∫(2cos x−3sin x)dx.",
-    "answer_key": "2sin x+3cos x+C (x radian).",
-    "worked_solution": "Với x đo radian, ∫2cos x dx=2sin x; ∫−3sin x dx=+3cos x do (cos x)'=−sin x. Họ nguyên hàm là 2sin x+3cos x+C; kiểm ngược cả hai dấu.",
+    "stem": "Tính \\(\\int (2\\cos  x-3\\sin  x)\\,\\mathrm dx\\).",
+    "answer_key": "\\(2\\sin x+3\\cos x+C\\) (x radian).",
+    "worked_solution": "Với \\(x\\) đo radian, một nguyên hàm của \\(2\\cos x\\) là \\(2\\sin x\\); một nguyên hàm của \\(-3\\sin x\\) là \\(3\\cos x\\) do \\((\\cos x)'=-\\sin x\\). Họ nguyên hàm là \\(2\\sin x+3\\cos x+C\\); kiểm ngược cả hai dấu.",
     "skill_ids": [
       "G12-CHIV-B11-O06"
     ],
@@ -176,9 +176,9 @@
   {
     "item_id": "THPT-TOP11-P07",
     "content_version": 2,
-    "stem": "Một vật có vận tốc v(t)=6t−4 (m/s), t tính bằng giây, vị trí s(0)=3 m. Tìm s(2).",
-    "answer_key": "s(2)=12−8+3=7m.",
-    "worked_solution": "Vì s'=v=6t−4, tích phân được s=3t²−4t+C. Dùng s(0)=3⇒C=3; thế t=2 cho s(2)=12−8+3=7 m. Đây là vị trí, không phải quãng đường.",
+    "stem": "Một vật có vận tốc \\(v(t)=6t-4\\) (m/s), t tính bằng giây, vị trí \\(s(0)=3\\) m. Tìm \\(s(2)\\).",
+    "answer_key": "\\(s(2)=12-8+3=7\\) m.",
+    "worked_solution": "Vì \\(s'=v=6t-4\\), tích phân được \\(s=3t^2-4t+C\\). Dùng \\(s(0)=3\\Rightarrow C=3\\); thế \\(t=2\\) cho \\(s(2)=12-8+3=7\\) m. Đây là vị trí, không phải quãng đường.",
     "skill_ids": [
       "G12-CHIV-B11-O07"
     ],
@@ -205,9 +205,9 @@
   {
     "item_id": "THPT-TOP11-P08",
     "content_version": 2,
-    "stem": "Tính ∫₀²(3x²+1)dx.",
-    "answer_key": "[x³+x]₀²=8+2=10.",
-    "worked_solution": "Lấy F=x³+x vì F'=3x²+1. Theo Newton–Leibniz, ∫₀²(3x²+1)dx=F(2)−F(0)=(8+2)−0=10. Tích phân xác định là số, không cộng +C.",
+    "stem": "Tính \\(\\int_{0}^{2} (3x^{2}+1)\\,\\mathrm dx\\).",
+    "answer_key": "\\([x^3+x]_0^2=8+2=10\\).",
+    "worked_solution": "Lấy \\(F=x^3+x\\) vì \\(F'=3x^2+1\\). Theo Newton–Leibniz, \\(\\int_0^2(3x^2+1)\\,\\mathrm dx=F(2)-F(0)=(8+2)-0=10\\). Tích phân xác định là số, không cộng \\(+C\\).",
     "skill_ids": [
       "G12-CHIV-B12-O01"
     ],
@@ -234,9 +234,9 @@
   {
     "item_id": "THPT-TOP11-P09",
     "content_version": 2,
-    "stem": "Tính ∫₁³(2x+1)dx−∫₁³x dx.",
-    "answer_key": "∫₁³(x+1)dx=[x²/2+x]₁³=(9/2+3)−(1/2+1)=6.",
-    "worked_solution": "Hai tích phân cùng cận, nên gộp ∫₁³[(2x+1)−x]dx=∫₁³(x+1)dx. Nguyên hàm F=x²/2+x, hiệu F(3)−F(1)=(9/2+3)−(1/2+1)=6.",
+    "stem": "Tính \\(\\int_1^3(2x+1)\\,\\mathrm dx-\\int_1^3 x\\,\\mathrm dx\\).",
+    "answer_key": "\\(\\int_1^3(x+1)\\,\\mathrm dx=\\left[\\frac{x^2}2+x\\right]_1^3=(\\frac92+3)-(\\frac12+1)=6\\).",
+    "worked_solution": "Hai tích phân cùng cận, nên gộp \\(\\int_1^3[(2x+1)-x]\\,\\mathrm dx=\\int_1^3(x+1)\\,\\mathrm dx\\). Nguyên hàm \\(F=\\frac{x^2}2+x\\), hiệu \\(F(3)-F(1)=(\\frac92+3)-(\\frac12+1)=6\\).",
     "skill_ids": [
       "G12-CHIV-B12-O02"
     ],
@@ -263,9 +263,9 @@
   {
     "item_id": "THPT-TOP11-P10",
     "content_version": 2,
-    "stem": "Tính ∫₃¹ x²dx.",
-    "answer_key": "−26/3.",
-    "worked_solution": "Dùng đảo cận: ∫₃¹x²dx=−∫₁³x²dx=−[x³/3]₁³=−(27−1)/3=−26/3. Giá trị âm do chiều lấy tích phân, không phải diện tích âm.",
+    "stem": "Tính \\(\\int_{3}^{1} x^{2}\\,\\mathrm dx\\).",
+    "answer_key": "\\(-\\frac{26}3\\).",
+    "worked_solution": "Dùng đảo cận: \\(\\int_3^1 x^2\\,\\mathrm dx=-\\int_1^3 x^2\\,\\mathrm dx=-\\left[\\frac{x^3}3\\right]_1^3=-\\frac{27-1}3=-\\frac{26}3\\). Giá trị âm do chiều lấy tích phân, không phải diện tích âm.",
     "skill_ids": [
       "G12-CHIV-B12-O03"
     ],
@@ -292,9 +292,9 @@
   {
     "item_id": "THPT-TOP11-P11",
     "content_version": 2,
-    "stem": "Tính diện tích hình phẳng giới hạn bởi y=x²+1, trục Ox, x=0 và x=2.",
-    "answer_key": "S=14/3 đơn vị diện tích.",
-    "worked_solution": "Vì x²+1>0 trên [0,2], S=∫₀²(x²+1)dx=[x³/3+x]₀²=8/3+2=14/3 đơn vị diện tích. Phần +1 tạo một dải chữ nhật diện tích 2, không được bỏ.",
+    "stem": "Tính diện tích hình phẳng giới hạn bởi \\(y=x^2+1\\), trục Ox, \\(x=0\\) và \\(x=2\\).",
+    "answer_key": "\\(S=\\frac{14}3\\) đơn vị diện tích.",
+    "worked_solution": "Vì \\(x^2+1>0\\) trên \\([0;2]\\), \\(S=\\int_0^2(x^2+1)\\,\\mathrm dx=\\left[\\frac{x^3}3+x\\right]_0^2=\\frac83+2=\\frac{14}3\\) đơn vị diện tích. Phần +1 tạo một dải chữ nhật diện tích 2, không được bỏ.",
     "skill_ids": [
       "G12-CHIV-B12-O04"
     ],
@@ -321,9 +321,9 @@
   {
     "item_id": "THPT-TOP11-P12",
     "content_version": 2,
-    "stem": "Một vật có vận tốc v(t)=t−2 (m/s), với 0≤t≤3 (s). Tính độ dời và tổng quãng đường.",
-    "answer_key": "Độ dời −3/2 m; quãng đường 5/2 m.",
-    "worked_solution": "Độ dời I=∫₀³(t−2)dt=[t²/2−2t]₀³=9/2−6=−3/2 m. Vận tốc đổi dấu tại t=2: âm trước 2, dương sau 2. Quãng đường S=∫₀²(2−t)dt+∫₂³(t−2)dt=2+1/2=5/2 m. |I|=3/2 m khác S; hai đoạn chuyển động ngược chiều nên độ dời có triệt tiêu.",
+    "stem": "Một vật có vận tốc \\(v(t)=t-2\\) (m/s), với \\(0\\le t\\le3\\) (s). Tính độ dời và tổng quãng đường.",
+    "answer_key": "Độ dời \\(-\\frac32\\) m; quãng đường \\(\\frac52\\) m.",
+    "worked_solution": "Độ dời \\(I=\\int_0^3(t-2)\\,\\mathrm dt=\\left[\\frac{t^2}2-2t\\right]_0^3=\\frac92-6=-\\frac32\\) m. Vận tốc đổi dấu tại \\(t=2\\): âm trước 2, dương sau 2. Quãng đường \\(S=\\int_0^2(2-t)\\,\\mathrm dt+\\int_2^3(t-2)\\,\\mathrm dt=2+\\frac12=\\frac52\\) m. \\(|I|=\\frac32\\) m khác S; hai đoạn chuyển động ngược chiều nên độ dời có triệt tiêu.",
     "skill_ids": [
       "G12-CHIV-B12-O05"
     ],
@@ -350,9 +350,9 @@
   {
     "item_id": "THPT-TOP11-P13",
     "content_version": 2,
-    "stem": "Tính ∫₀^π2sin x dx.",
-    "answer_key": "[−2cos x]₀^π=2−(−2)=4.",
-    "worked_solution": "Góc đo radian; F=−2cos x vì F'=2sin x. Thế cận: ∫₀^π2sin x dx=−2cosπ−(−2cos0)=2−(−2)=4. Vì sin≥0 trên [0,π], giá trị này cũng là diện tích dưới đồ thị.",
+    "stem": "Tính \\(\\int_{0}^{\\pi} 2\\sin  x\\,\\mathrm dx\\).",
+    "answer_key": "\\([-2\\cos x]_0^\\pi=2-(-2)=4\\).",
+    "worked_solution": "Góc đo radian; \\(F=-2\\cos x\\) vì \\(F'=2\\sin x\\). Thế cận: \\(\\int_0^\\pi 2\\sin x\\,\\mathrm dx=-2\\cos\\pi-(-2\\cos0)=2-(-2)=4\\). Vì \\(\\sin x\\ge0\\) trên \\([0;\\pi]\\), giá trị này cũng là diện tích dưới đồ thị.",
     "skill_ids": [
       "G12-CHIV-B12-O06"
     ],
@@ -379,9 +379,9 @@
   {
     "item_id": "THPT-TOP11-P14",
     "content_version": 2,
-    "stem": "Một vật có vận tốc v(t)=3t² (m/s), t tính bằng giây, s(0)=5 m. Tính vị trí s(2).",
-    "answer_key": "s(2)=5+8=13m.",
-    "worked_solution": "Vì s′(t)=v(t)=3t², độ dời trong 2 giây là ∫₀²3t²dt=[t³]₀²=8 m. Vị trí cuối s(2)=s(0)+8=13 m. Không dùng v(2)×2 vì vận tốc không hằng.",
+    "stem": "Một vật có vận tốc \\(v(t)=3t^2\\) (m/s), t tính bằng giây, \\(s(0)=5\\) m. Tính vị trí \\(s(2)\\).",
+    "answer_key": "\\(s(2)=5+8=13\\) m.",
+    "worked_solution": "Vì \\(v(t)=s'(t)=3t^2\\), độ dời từ 0 tới 2 là \\(\\int_0^2 3t^2\\,\\mathrm dt=[t^3]_0^2=8\\). Vị trí cuối \\(s(2)=s(0)+8=5+8=13\\) m. Không dùng \\(v(2)\\cdot2\\) vì vận tốc không hằng.",
     "skill_ids": [
       "G12-CHIV-B12-O07"
     ],
@@ -408,9 +408,9 @@
   {
     "item_id": "THPT-TOP11-P15",
     "content_version": 2,
-    "stem": "Tính diện tích hình phẳng dưới y=√x và trên Ox từ x=1 đến x=9.",
-    "answer_key": "52/3 đơn vị diện tích.",
-    "worked_solution": "√x≥0 và liên tục trên [1,9]. S=∫₁⁹x^(1/2)dx=[(2/3)x^(3/2)]₁⁹=(2/3)(27−1)=52/3 đơn vị diện tích.",
+    "stem": "Tính diện tích hình phẳng dưới \\(y=\\sqrt x\\) và trên Ox từ \\(x=1\\) đến \\(x=9\\).",
+    "answer_key": "\\(\\frac{52}3\\) đơn vị diện tích.",
+    "worked_solution": "\\(\\sqrt x\\ge0\\) và liên tục trên \\([1;9]\\). \\(S=\\int_1^9 x^{1/2}\\,\\mathrm dx=\\left[\\frac23x^{3/2}\\right]_1^9=\\frac23(27-1)=\\frac{52}3\\) đơn vị diện tích.",
     "skill_ids": [
       "G12-CHIV-B13-O01"
     ],
@@ -437,9 +437,9 @@
   {
     "item_id": "THPT-TOP11-P16",
     "content_version": 2,
-    "stem": "Tính diện tích hình phẳng giới hạn bởi y=x²−1, Ox, x=−2 và x=1.",
-    "answer_key": "8/3 đơn vị diện tích.",
-    "worked_solution": "Các nghiệm x=−1,1. Trên [−2,−1], x²−1≥0; trên [−1,1], x²−1≤0. S=∫₋₂⁻¹(x²−1)dx+∫₋₁¹(1−x²)dx. Phần đầu [x³/3−x]₋₂⁻¹=4/3; phần sau [x−x³/3]₋₁¹=4/3. Tổng S=8/3 đơn vị diện tích.",
+    "stem": "Tính diện tích hình phẳng giới hạn bởi \\(y=x^2-1\\), Ox, \\(x=-2\\) và \\(x=1\\).",
+    "answer_key": "\\(\\frac83\\) đơn vị diện tích.",
+    "worked_solution": "Các nghiệm \\(x=-1,1\\). Trên \\([-2;-1]\\), \\(x^2-1\\ge0\\); trên \\([-1;1]\\), \\(x^2-1\\le0\\). \\(S=\\int_{-2}^{-1}(x^2-1)\\,\\mathrm dx+\\int_{-1}^{1}(1-x^2)\\,\\mathrm dx\\). Phần đầu \\(\\left[\\frac{x^3}3-x\\right]_{-2}^{-1}=\\frac43\\); phần sau \\(\\left[x-\\frac{x^3}3\\right]_{-1}^1=\\frac43\\). Tổng \\(S=\\frac83\\) đơn vị diện tích.",
     "skill_ids": [
       "G12-CHIV-B13-O02"
     ],
@@ -466,9 +466,9 @@
   {
     "item_id": "THPT-TOP11-P17",
     "content_version": 2,
-    "stem": "Tính diện tích giữa y=2x+3 và y=x²+1 trên [0,2].",
-    "answer_key": "16/3 đơn vị diện tích.",
-    "worked_solution": "Hiệu (2x+3)−(x²+1)=3−(x−1)²≥2 trên [0,2], nên đường thẳng luôn ở trên. S=∫₀²(−x²+2x+2)dx=[−x³/3+x²+2x]₀²=−8/3+4+4=16/3 đơn vị diện tích.",
+    "stem": "Tính diện tích giữa \\(y=2x+3\\) và \\(y=x^2+1\\) trên \\([0;2]\\).",
+    "answer_key": "\\(\\frac{16}3\\) đơn vị diện tích.",
+    "worked_solution": "Hiệu \\((2x+3)-(x^2+1)=3-(x-1)^2\\ge2\\) trên \\([0;2]\\), nên đường thẳng luôn ở trên. \\(S=\\int_0^2(-x^2+2x+2)\\,\\mathrm dx=\\left[-\\frac{x^3}3+x^2+2x\\right]_0^2=-\\frac83+4+4=\\frac{16}3\\) đơn vị diện tích.",
     "skill_ids": [
       "G12-CHIV-B13-O03"
     ],
@@ -495,9 +495,9 @@
   {
     "item_id": "THPT-TOP11-P18",
     "content_version": 2,
-    "stem": "Tính diện tích giữa y=x và y=x² trên [−1,2].",
-    "answer_key": "11/6 đơn vị diện tích.",
-    "worked_solution": "Hai đường giao tại x=0,1. Hiệu x²−x dương trên (−1,0) và (1,2), âm trên (0,1). S=∫₋₁⁰(x²−x)dx+∫₀¹(x−x²)dx+∫₁²(x²−x)dx=5/6+1/6+5/6=11/6 đơn vị diện tích. Không gộp một hiệu có dấu trên cả đoạn.",
+    "stem": "Tính diện tích giữa \\(y=x\\) và \\(y=x^2\\) trên \\([-1;2]\\).",
+    "answer_key": "\\(\\frac{11}6\\) đơn vị diện tích.",
+    "worked_solution": "Hai đường giao tại \\(x=0,1\\). Hiệu \\(x^2-x\\) dương trên \\((-1;0)\\) và \\((1;2)\\), âm trên \\((0;1)\\). \\(S=\\int_{-1}^0(x^2-x)\\,\\mathrm dx+\\int_0^1(x-x^2)\\,\\mathrm dx+\\int_1^2(x^2-x)\\,\\mathrm dx=\\frac56+\\frac16+\\frac56=\\frac{11}6\\) đơn vị diện tích. Không gộp một hiệu có dấu trên cả đoạn.",
     "skill_ids": [
       "G12-CHIV-B13-O04"
     ],
@@ -524,9 +524,9 @@
   {
     "item_id": "THPT-TOP11-P19",
     "content_version": 2,
-    "stem": "Hai đường y=3x và y=x² tạo thành một miền kín. Tự xác định cận tích phân rồi tính diện tích miền đó.",
-    "answer_key": "9/2 đơn vị diện tích.",
-    "worked_solution": "Giải 3x=x² ⇔ x(x−3)=0, nên hai giao điểm có hoành độ 0 và 3. Trên [0,3], 3x−x²=x(3−x)≥0. S=∫₀³(3x−x²)dx=[3x²/2−x³/3]₀³=27/2−9=9/2 đơn vị diện tích.",
+    "stem": "Hai đường \\(y=3x\\) và \\(y=x^2\\) tạo thành một miền kín. Tự xác định cận tích phân rồi tính diện tích miền đó.",
+    "answer_key": "\\(\\frac92\\) đơn vị diện tích.",
+    "worked_solution": "Giải \\(3x=x^2\\Leftrightarrow x(x-3)=0\\), nên hai giao điểm có hoành độ 0 và 3. Trên \\([0;3]\\), \\(3x-x^2=x(3-x)\\ge0\\). \\(S=\\int_0^3(3x-x^2)\\,\\mathrm dx=\\left[\\frac{3x^2}2-\\frac{x^3}3\\right]_0^3=\\frac{27}2-9=\\frac92\\) đơn vị diện tích.",
     "skill_ids": [
       "G12-CHIV-B13-O05"
     ],
@@ -553,9 +553,9 @@
   {
     "item_id": "THPT-TOP11-P20",
     "content_version": 2,
-    "stem": "Cho thiết diện hình vuông cạnh x+1 trên [0,1], tính V.",
-    "answer_key": "V=7/3 đơn vị³.",
-    "worked_solution": "Tiết diện vuông cạnh x+1 có diện tích A(x)=(x+1)²=x²+2x+1. Thể tích V=∫₀¹A(x)dx=[x³/3+x²+x]₀¹=1/3+1+1=7/3 đơn vị³. Không nhân π vì không có hình tròn.",
+    "stem": "Cho thiết diện hình vuông cạnh \\(x+1\\) trên \\([0;1]\\), tính V.",
+    "answer_key": "\\(V=\\frac73\\) đơn vị³.",
+    "worked_solution": "Tiết diện vuông cạnh \\(x+1\\) có diện tích \\(A(x)=(x+1)^2=x^2+2x+1\\). Thể tích \\(V=\\int_0^1 A(x)\\,\\mathrm dx=\\left[\\frac{x^3}3+x^2+x\\right]_0^1=\\frac13+1+1=\\frac73\\) đơn vị³. Không nhân \\(\\pi\\) vì không có hình tròn.",
     "skill_ids": [
       "G12-CHIV-B13-O06"
     ],
@@ -582,9 +582,9 @@
   {
     "item_id": "THPT-TOP11-P21",
     "content_version": 2,
-    "stem": "Một khối có thiết diện vuông góc với Ox là hình tròn bán kính r(x)=3−x, 0≤x≤2. Tính thể tích khối.",
-    "answer_key": "26π/3 đơn vị thể tích.",
-    "worked_solution": "Trên [0,2], r(x)=3−x≥1. Thiết diện tròn có A(x)=π(3−x)². V=π∫₀²(9−6x+x²)dx=π[9x−3x²+x³/3]₀²=π(18−12+8/3)=26π/3 đơn vị thể tích.",
+    "stem": "Một khối có thiết diện vuông góc với Ox là hình tròn bán kính \\(r(x)=3-x\\), \\(0\\le x\\le2\\). Tính thể tích khối.",
+    "answer_key": "\\(\\frac{26\\pi}3\\) đơn vị thể tích.",
+    "worked_solution": "Trên \\([0;2]\\), \\(r(x)=3-x\\ge1\\). Thiết diện tròn có \\(A(x)=\\pi(3-x)^2\\). \\(V=\\pi\\int_0^2(9-6x+x^2)\\,\\mathrm dx=\\pi\\left[9x-3x^2+\\frac{x^3}3\\right]_0^2=\\pi(18-12+\\frac83)=\\frac{26\\pi}3\\) đơn vị thể tích.",
     "skill_ids": [
       "G12-CHIV-B13-O07"
     ],
@@ -611,9 +611,9 @@
   {
     "item_id": "THPT-TOP11-P22",
     "content_version": 3,
-    "stem": "Cho miền 0≤x≤2, 0≤y≤√x quay quanh Ox, V?",
-    "answer_key": "2π đơn vị³.",
-    "worked_solution": "Quay vùng 0≤y≤√x, 0≤x≤2 quanh Ox: tiết diện là đĩa bán kính √x. Diện tích A(x)=π(√x)²=πx; V=π∫₀²x dx=π[x²/2]₀²=2π đơn vị³.",
+    "stem": "Cho miền \\(0\\le x\\le2\\), \\(0\\le y\\le\\sqrt x\\) quay quanh Ox, V?",
+    "answer_key": "\\(2\\pi\\) đơn vị³.",
+    "worked_solution": "Quay vùng \\(0\\le y\\le\\sqrt x,\\ 0\\le x\\le2\\) quanh \\(Ox\\): tiết diện là đĩa bán kính \\(\\sqrt x\\). Diện tích \\(A(x)=\\pi(\\sqrt x)^2=\\pi x\\); \\(V=\\pi\\int_0^2 x\\,\\mathrm dx=\\pi\\left[\\frac{x^2}2\\right]_0^2=2\\pi\\) đơn vị³.",
     "skill_ids": [
       "G12-CHIV-B13-O08"
     ],
