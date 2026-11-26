@@ -2,16 +2,16 @@
   {
     "item_id": "THPT-G11-B08-C01",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Trong bảng các khoảng [0;5), [5;10), [10;15) với tần số 3,7,5, n là bao nhiêu?",
-    "answer_key": "n=15.",
-    "worked_solution": "Cộng tần số: 3+7+5=15. Đây là cỡ mẫu, không phải số nhóm.",
+    "stem": "Trong bảng ghép nhóm, các nhóm \\([0;5),[5;10),[10;15)\\) có tần số lần lượt 3, 7, 5. Cỡ mẫu n là bao nhiêu?",
+    "answer_key": "\\(n=15\\).",
+    "worked_solution": "Mỗi tần số là số quan sát thuộc nhóm đó. Các nhóm không giao nhau và chứa toàn bộ mẫu, nên \\(n=3+7+5=15\\). Cỡ mẫu là số quan sát, không phải số nhóm.",
     "skill_ids": [
       "G11-B08-GROUPED-DEFINITION"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Cộng tần số các nhóm."
+      "Cộng tất cả tần số."
     ],
     "rubric": null,
     "interaction": {
@@ -28,21 +28,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Cỡ mẫu là số quan sát, không phải số nhóm. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P05."
+    "remediation": "Nếu lấy 3 làm cỡ mẫu, phân biệt số nhóm với số quan sát. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P05."
   },
   {
     "item_id": "THPT-G11-B08-C02",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Trong cách chia [0;10),[10;20), số liệu đúng bằng 10 thuộc nhóm nào?",
-    "answer_key": "[10;20).",
-    "worked_solution": "Khoảng trái đóng nhận 10, khoảng trước mở tại 10 nên không nhận.",
+    "stem": "Trong cách chia hai nhóm \\([0;10),[10;20)\\), số liệu đúng bằng 10 thuộc nhóm nào?",
+    "answer_key": "\\([10;20)\\).",
+    "worked_solution": "Nhóm thứ nhất nhận các số từ 0 đến dưới 10, không nhận 10. Nhóm thứ hai nhận đầu mút trái 10, nên số liệu thuộc \\([10;20)\\).",
     "skill_ids": [
       "G11-B08-CLASS-BOUNDARIES"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xét đầu trái đóng, đầu phải mở."
+      "Xét đầu trái đóng và đầu phải mở."
     ],
     "rubric": null,
     "interaction": {
@@ -59,14 +59,14 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "10 thuộc nhóm bắt đầu tại 10, không thuộc nhóm kết thúc ở 10. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
+    "remediation": "Nếu xếp 10 vào nhóm trước, kiểm dấu ngoặc ở hai đầu. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
   },
   {
     "item_id": "THPT-G11-B08-C03",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Độ dài nhóm [12;18) là bao nhiêu?",
+    "stem": "Độ dài nhóm \\([12;18)\\) là bao nhiêu?",
     "answer_key": "6.",
-    "worked_solution": "Lấy đầu mút phải trừ đầu mút trái: 18-12=6.",
+    "worked_solution": "Độ dài nhóm bằng đầu mút phải trừ đầu mút trái: \\(18-12=6\\). Đây là độ rộng khoảng, không phải số quan sát.",
     "skill_ids": [
       "G11-B08-GROUP-WIDTH"
     ],
@@ -90,21 +90,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Độ rộng khác số quan sát; phải dương. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P02."
+    "remediation": "Độ rộng khác tần số và phải dương. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P02."
   },
   {
     "item_id": "THPT-G11-B08-C04",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Các tần số 2,4,5,3 ứng với 4 nhóm. Tần số nhóm thứ ba là gì, cỡ mẫu?",
-    "answer_key": "5; n=14.",
-    "worked_solution": "Tần số đọc tại cột thứ ba; n=2+4+5+3=14.",
+    "stem": "Các nhóm có tần số lần lượt 2, 4, 5, 3. Tìm tần số nhóm thứ ba và cỡ mẫu.",
+    "answer_key": "Tần số 5; \\(n=14\\).",
+    "worked_solution": "Tần số nhóm thứ ba là 5. Cỡ mẫu bằng tổng bốn tần số: \\(n=2+4+5+3=14\\).",
     "skill_ids": [
       "G11-B08-FREQUENCY-TABLE"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc tần số thứ ba rồi cộng bốn tần số."
+      "Đọc tần số thứ ba rồi cộng tất cả tần số."
     ],
     "rubric": null,
     "interaction": {
@@ -126,16 +126,16 @@
   {
     "item_id": "THPT-G11-B08-C05",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Từ bảng ghép nhóm [0;10),[10;20) có tần số 4 và 6, có biết chính xác 10 giá trị ban đầu không?",
+    "stem": "Từ bảng ghép nhóm \\([0;10),[10;20)\\) có tần số lần lượt 4 và 6, có biết chính xác 10 giá trị ban đầu không?",
     "answer_key": "Không.",
-    "worked_solution": "Bảng chỉ lưu khoảng và số lượng trong khoảng, không cho biết vị trí chính xác của từng giá trị.",
+    "worked_solution": "Bảng cho biết có 4 giá trị trong nhóm đầu và 6 giá trị trong nhóm sau, nhưng không cho biết từng giá trị cụ thể. Chẳng hạn, trong nhóm đầu, số 2 có thể thay bằng số 3 mà tần số nhóm không đổi. Vì vậy không thể khôi phục chính xác mẫu gốc chỉ từ bảng.",
     "skill_ids": [
       "G11-B08-INTERPRETATION"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Một bảng nhóm chỉ giữ khoảng và số lượng."
+      "Bảng chỉ giữ khoảng và số lượng."
     ],
     "rubric": null,
     "interaction": {
@@ -152,21 +152,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không khôi phục được dữ liệu gốc nếu thiếu thông tin bên trong nhóm. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P07."
+    "remediation": "Nếu gán một giá trị cụ thể cho mọi quan sát cùng nhóm, kiểm xem giá trị đó có được cung cấp không. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P07."
   },
   {
     "item_id": "THPT-G11-B08-P01",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Ghép các số 5,10,10,19,20,29 vào [0;10),[10;20),[20;30). Lập bảng tần số.",
-    "answer_key": "[1,3,2].",
-    "worked_solution": "5 ở nhóm 1; 10,10,19 nhóm 2; 20,29 nhóm 3; tổng 6.",
+    "stem": "Ghép các số 5, 10, 10, 19, 20, 29 vào các nhóm \\([0;10),[10;20),[20;30)\\). Lập bảng tần số.",
+    "answer_key": "Tần số lần lượt 1; 3; 2.",
+    "worked_solution": "Nhóm \\([0;10)\\) chứa 5 (1 quan sát). Nhóm \\([10;20)\\) chứa 10, 10, 19 (3 quan sát; hai số 10 đều được tính). Nhóm \\([20;30)\\) chứa 20, 29 (2 quan sát). Tần số lần lượt là 1, 3, 2; kiểm tổng bằng 6.",
     "skill_ids": [
       "G11-B08-CLASS-BOUNDARIES"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xếp từng số vào đúng khoảng nửa kín."
+      "Xếp từng số vào khoảng nửa kín, kể cả các giá trị lặp."
     ],
     "rubric": null,
     "interaction": {
@@ -183,21 +183,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Số 10,20 thuộc nhóm bên phải; kiểm tổng 6. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P03."
+    "remediation": "Số 10 và 20 thuộc nhóm bắt đầu tại chúng; kiểm tổng bằng 6. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P03."
   },
   {
     "item_id": "THPT-G11-B08-P02",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Với 4 nhóm [7;11),[11;15),[15;19),[19;23), có cùng độ rộng? Có chồng lấn?",
+    "stem": "Bốn nhóm \\([7;11),[11;15),[15;19),[19;23)\\) có cùng độ rộng không? Có chồng lấn không?",
     "answer_key": "Đều rộng 4, liền nhau và không chồng lấn.",
-    "worked_solution": "Mỗi nhóm rộng 11-7=4; hai nhóm kề nhau cùng biên nhưng một bên mở, một bên đóng.",
+    "worked_solution": "Độ rộng lần lượt là \\(11-7=15-11=19-15=23-19=4\\). Hai nhóm kề nhau chung mốc biên, nhưng nhóm trước không nhận mốc ở đầu phải và nhóm sau nhận mốc ở đầu trái. Vì thế không có số liệu thuộc đồng thời hai nhóm.",
     "skill_ids": [
       "G11-B08-GROUP-WIDTH"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Tính từng độ rộng và kiểm các biên chung."
+      "Tính độ rộng và kiểm các biên chung."
     ],
     "rubric": null,
     "interaction": {
@@ -214,14 +214,14 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Hai nhóm kề không chồng nhau vì một đầu mở, một đầu đóng. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C02."
+    "remediation": "Nếu đếm một mốc biên vào cả hai nhóm, kiểm đầu mút đóng và mở. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C02."
   },
   {
     "item_id": "THPT-G11-B08-P03",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Điểm [1,2,3,4,5,6,7,8,9,10] chia [1;4),[4;7),[7;11). Bảng tần số?",
-    "answer_key": "[3,3,4].",
-    "worked_solution": "Nhóm 1 gồm 1,2,3; nhóm 2 gồm 4,5,6; nhóm 3 gồm 7,8,9,10.",
+    "stem": "Các điểm 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 được ghép vào các nhóm \\([1;4),[4;7),[7;11)\\). Lập bảng tần số.",
+    "answer_key": "Tần số lần lượt 3; 3; 4.",
+    "worked_solution": "Nhóm đầu chứa 1, 2, 3; nhóm thứ hai chứa 4, 5, 6; nhóm cuối chứa 7, 8, 9, 10. Tần số tương ứng là 3, 3, 4. Tổng bằng 10, không bỏ sót hay đếm trùng quan sát.",
     "skill_ids": [
       "G11-B08-FREQUENCY-TABLE"
     ],
@@ -245,14 +245,14 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Hai số ở biên trái thuộc nhóm mới; tổng phải bằng 10. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
+    "remediation": "Hai giá trị ở biên trái thuộc nhóm mới; tổng phải bằng 10. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
   },
   {
     "item_id": "THPT-G11-B08-P04",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Tần số các khoảng điểm [0;4),[4;8),[8;12) là 6,9,5. Tỉ lệ lớp [4;8) bằng?",
-    "answer_key": "9/20=45%.",
-    "worked_solution": "n=6+9+5=20, chia 9 cho 20. Tỉ lệ chỉ phản ánh số liệu trong khoảng.",
+    "stem": "Tần số các khoảng điểm \\([0;4),[4;8),[8;12)\\) lần lượt là 6, 9, 5. Tính tỉ lệ quan sát thuộc nhóm \\([4;8)\\).",
+    "answer_key": "\\(\\frac9{20}=45\\%\\).",
+    "worked_solution": "Cỡ mẫu \\(n=6+9+5=20\\). Có 9 quan sát thuộc nhóm thứ hai, nên tỉ lệ là \\(\\frac9{20}=0{,}45=45\\%\\). Tỉ lệ này chỉ nói về toàn khoảng, không cho biết từng điểm cụ thể.",
     "skill_ids": [
       "G11-B08-INTERPRETATION"
     ],
@@ -276,21 +276,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tỉ lệ 9/20, không phải 9/3. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C04."
+    "remediation": "Nếu chia 9 cho 3, nhớ mẫu số là số quan sát chứ không phải số nhóm. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C04."
   },
   {
     "item_id": "THPT-G11-B08-P05",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Cho 20 quan sát và các nhóm có tần số [4,8,6,?]. Điền tần số cuối.",
+    "stem": "Có 20 quan sát và bốn nhóm có tần số lần lượt 4, 8, 6 và một tần số chưa biết. Tìm tần số cuối.",
     "answer_key": "2.",
-    "worked_solution": "20-(4+8+6)=2, kiểm n=20.",
+    "worked_solution": "Tổng tần số phải bằng 20. Ba nhóm đầu có \\(4+8+6=18\\) quan sát, nên nhóm cuối có \\(20-18=2\\) quan sát. Kiểm tổng bằng 20.",
     "skill_ids": [
       "G11-B08-FREQUENCY-TABLE"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Lấy 20 trừ tổng ba tần số đã biết."
+      "Lấy cỡ mẫu trừ tổng ba tần số đã biết."
     ],
     "rubric": null,
     "interaction": {
@@ -312,16 +312,16 @@
   {
     "item_id": "THPT-G11-B08-P06",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Hai bộ dữ liệu 2,3,4 và 2,2,4 cùng thuộc các nhóm [0;3),[3;6). Có thể có bảng ghép giống nhau?",
-    "answer_key": "Không: bộ thứ nhất [1,2], bộ thứ hai [2,1].",
-    "worked_solution": "Đếm phần tử dưới 3 và từ 3 đến dưới 6 cho từng bộ; không giả định các bộ có cùng bảng chỉ vì cùng miền.",
+    "stem": "Hai mẫu gồm 2, 3, 4 và 2, 2, 4 đều được ghép vào hai nhóm \\([0;3),[3;6)\\). Hai mẫu có cùng bảng tần số ghép nhóm không?",
+    "answer_key": "Không: tần số mẫu thứ nhất 1; 2, mẫu thứ hai 2; 1.",
+    "worked_solution": "Mẫu thứ nhất: chỉ số 2 ở nhóm đầu, số 3 và 4 ở nhóm sau, nên tần số là 1, 2. Mẫu thứ hai: hai số 2 ở nhóm đầu, số 4 ở nhóm sau, nên tần số là 2, 1. Dùng cùng khoảng nhóm không bảo đảm cùng bảng tần số.",
     "skill_ids": [
       "G11-B08-INTERPRETATION"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đếm số dưới 3 và từ 3 đến dưới 6 trong mỗi mẫu."
+      "Đếm riêng số quan sát dưới 3 và từ 3 đến dưới 6."
     ],
     "rubric": null,
     "interaction": {
@@ -338,21 +338,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Cùng các khoảng không đảm bảo cùng bảng tần số. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
+    "remediation": "Nếu kết luận hai mẫu giống nhau do cùng miền, đếm từng nhóm. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
   },
   {
     "item_id": "THPT-G11-B08-P07",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Bảng chiều dài [150;155),[155;160),[160;165) có tần số 6,10,4. Có thể kết luận đúng 10 người cao 157,5 cm không?",
+    "stem": "Bảng chiều cao (cm) có các nhóm \\([150;155),[155;160),[160;165)\\) với tần số 6, 10, 4. Có thể kết luận đúng 10 người cao 157,5 cm không?",
     "answer_key": "Không.",
-    "worked_solution": "157,5 là trung điểm đại diện, không phải chiều cao thực tế của từng người trong nhóm.",
+    "worked_solution": "Tần số 10 cho biết có 10 người cao từ 155 cm đến dưới 160 cm. Giá trị đại diện của nhóm là \\(\\frac{155+160}{2}=157{,}5\\) cm, nhưng từng người có thể có chiều cao khác trung điểm. Không có đủ dữ kiện để biết bao nhiêu người cao đúng 157,5 cm.",
     "skill_ids": [
       "G11-B08-INTERPRETATION"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Trung điểm chỉ là đại diện, không phải giá trị thô."
+      "Trung điểm chỉ đại diện nhóm, không phải giá trị thô."
     ],
     "rubric": null,
     "interaction": {
@@ -369,21 +369,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không gán tất cả người trong khoảng chiều cao bằng 157,5 cm. Ôn CĐ22 mục 2.2; luyện THPT-G11-TOPSTAT-ADD06."
+    "remediation": "Không gán tất cả người trong khoảng chiều cao bằng trung điểm. Ôn CĐ22 mục 2.2; luyện THPT-G11-TOPSTAT-ADD06."
   },
   {
     "item_id": "THPT-G11-B08-P08",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Một bảng khảo sát thu nhập có nhóm “dưới 15 triệu đồng”, không quy định cận dưới của thu nhập trong mô hình. Có đủ dữ kiện tính trung điểm nhóm theo công thức (a+b)/2 không?",
+    "stem": "Một bảng khảo sát thu nhập có nhóm “dưới 15 triệu đồng”, không quy định cận dưới hữu hạn của thu nhập trong mô hình. Có đủ dữ kiện tính trung điểm nhóm theo công thức \\(\\frac{a+b}{2}\\) không?",
     "answer_key": "Không, thiếu cận dưới hữu hạn được quy định.",
-    "worked_solution": "Công thức trung điểm cần hai cận hữu hạn a,b. Nhóm chỉ cho cận trên 15 triệu đồng; không tự đặt cận dưới bằng 0 nếu mô hình chưa nêu (thu nhập ròng có thể âm). Có thể đếm tần số nhóm, nhưng chưa đủ dữ kiện tính giá trị đại diện theo trung điểm.",
+    "worked_solution": "Công thức \\(\\frac{a+b}{2}\\) cần biết hai cận hữu hạn a, b. Đề chỉ cho cận trên 15 triệu đồng. Không tự đặt cận dưới bằng 0 khi mô hình chưa nêu, chẳng hạn thu nhập ròng có thể âm. Có thể biết tần số nhóm nếu bảng cung cấp, nhưng chưa đủ dữ kiện xác định giá trị đại diện theo trung điểm.",
     "skill_ids": [
       "G11-B08-GROUPED-DEFINITION"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Công thức trung điểm cần hai cận hữu hạn đã biết."
+      "Kiểm đã biết cả hai cận hữu hạn chưa."
     ],
     "rubric": null,
     "interaction": {
@@ -400,21 +400,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không tự đặt cận còn thiếu nếu đề chưa quy định. Ôn CĐ22 mục 2.1; luyện THPT-G11-B09-C01."
+    "remediation": "Không tự đặt cận còn thiếu khi đề chưa quy định. Ôn CĐ22 mục 2.1; luyện THPT-G11-B09-C01."
   },
   {
     "item_id": "THPT-G11-B09-C01",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Nhóm [20;30) có giá trị đại diện bằng?",
+    "stem": "Nhóm \\([20;30)\\) có giá trị đại diện bằng bao nhiêu?",
     "answer_key": "25.",
-    "worked_solution": "Trung điểm (20+30)/2=25.",
+    "worked_solution": "Giá trị đại diện là trung điểm của nhóm: \\(\\frac{20+30}{2}=25\\). Giá trị này không nhất thiết xuất hiện trong mẫu gốc.",
     "skill_ids": [
       "G11-B09-REPRESENTATIVE"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Lấy trung bình hai cận."
+      "Lấy trung bình cộng hai đầu mút."
     ],
     "rubric": null,
     "interaction": {
@@ -431,21 +431,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Trung điểm không nhất thiết xuất hiện trong mẫu gốc. Ôn CĐ22 mục 2.2; luyện THPT-G11-TOPSTAT-ADD06."
+    "remediation": "Trung điểm không nhất thiết là một quan sát thực tế. Ôn CĐ22 mục 2.2; luyện THPT-G11-TOPSTAT-ADD06."
   },
   {
     "item_id": "THPT-G11-B09-C02",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Bảng [0;10),[10;20) có tần số 2,6. Số trung bình ghép nhóm?",
-    "answer_key": "12,5.",
-    "worked_solution": "Giá trị đại diện 5,15; (2·5+6·15)/8=100/8=12,5.",
+    "stem": "Bảng ghép nhóm \\([0;10),[10;20)\\) có tần số lần lượt 2, 6. Tính số trung bình ghép nhóm.",
+    "answer_key": "\\(12{,}5\\).",
+    "worked_solution": "Giá trị đại diện hai nhóm là 5 và 15, với tần số 2 và 6. Cỡ mẫu là \\(2+6=8\\). Số trung bình ghép nhóm là \\(\\bar x=\\frac{2\\cdot5+6\\cdot15}{8}=\\frac{100}{8}=12{,}5\\). Đây là giá trị tính từ bảng ghép nhóm, không khẳng định trung bình chính xác của dữ liệu gốc.",
     "skill_ids": [
       "G11-B09-GROUPED-MEAN"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Nhân mỗi trung điểm với tần số rồi chia tổng tần số."
+      "Nhân mỗi trung điểm với tần số, chia tổng tần số."
     ],
     "rubric": null,
     "interaction": {
@@ -462,21 +462,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy trung bình đơn giản của 5 và 15. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P01."
+    "remediation": "Không lấy trung bình đơn giản của hai trung điểm khi tần số khác nhau. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P01."
   },
   {
     "item_id": "THPT-G11-B09-C03",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Tần số [3,5,2,4] có các tần số tích lũy nào?",
-    "answer_key": "[3,8,10,14].",
-    "worked_solution": "Cộng dồn từ trái sang phải: 3, 3+5, 3+5+2, 3+5+2+4.",
+    "stem": "Bốn nhóm có tần số lần lượt 3, 5, 2, 4. Tìm các tần số tích lũy.",
+    "answer_key": "3; 8; 10; 14.",
+    "worked_solution": "Tần số tích lũy đến một nhóm bằng tổng tần số từ nhóm đầu đến nhóm đó. Lần lượt được 3, \\(3+5=8\\), \\(8+2=10\\), \\(10+4=14\\). Giá trị cuối bằng cỡ mẫu.",
     "skill_ids": [
       "G11-B09-CUMULATIVE"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Cộng dồn từ nhóm đầu đến nhóm đang xét."
+      "Cộng dồn từ trái sang phải."
     ],
     "rubric": null,
     "interaction": {
@@ -493,21 +493,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tích lũy cuối phải bằng cỡ mẫu 14. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P06."
+    "remediation": "Tần số tích lũy cuối phải bằng cỡ mẫu 14. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P06."
   },
   {
     "item_id": "THPT-G11-B09-C04",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Với A: các nhóm [0;10),[10;20),[20;30),[30;40), tần số [4,8,6,2], nhóm dùng để nội suy trung vị là nhóm nào?",
-    "answer_key": "[10;20).",
-    "worked_solution": "n=20, n/2=10; tích lũy 4,12,18,20, nên nhóm 2 chứa vị trí 10.",
+    "stem": "Mẫu A có các nhóm \\([0;10),[10;20),[20;30),[30;40)\\), tần số lần lượt 4, 8, 6, 2. Nhóm dùng để nội suy trung vị là nhóm nào?",
+    "answer_key": "\\([10;20)\\).",
+    "worked_solution": "Cỡ mẫu \\(n=20\\), vị trí nội suy trung vị là \\(\\frac n2=10\\). Tần số tích lũy là 4, 12, 18, 20. Nhóm đầu chỉ chứa 4 vị trí đầu; đến hết nhóm hai đã có 12 vị trí. Vì vậy dùng nhóm \\([10;20)\\).",
     "skill_ids": [
       "G11-B09-GROUPED-MEDIAN"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Tìm n/2 rồi xác định nhóm từ tần số tích lũy."
+      "Tìm vị trí \\(\\frac n2\\) rồi đọc tần số tích lũy."
     ],
     "rubric": null,
     "interaction": {
@@ -524,21 +524,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không chọn nhóm có tần số lớn nhất để tìm trung vị. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P02."
+    "remediation": "Không chọn nhóm có tần số lớn nhất chỉ vì nhóm đó đông nhất. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P02."
   },
   {
     "item_id": "THPT-G11-B09-C05",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Các nhóm không cùng độ rộng, có được áp dụng trực tiếp công thức mốt của SGK Toán 11 không?",
+    "stem": "Nếu các nhóm không cùng độ rộng, có được áp dụng trực tiếp công thức mốt theo hiệu tần số trong SGK Toán 11 không?",
     "answer_key": "Không.",
-    "worked_solution": "Công thức mốt với các hiệu tần số được SGK đưa ra cho nhóm bằng độ rộng. Không áp dụng máy móc cho độ rộng khác nhau.",
+    "worked_solution": "Công thức mốt dựa trên tần số của nhóm mốt và hai nhóm kề trong nguồn đang xét áp dụng cho các nhóm cùng độ rộng. Khi độ rộng khác nhau, tần số lớn có thể do khoảng rộng hơn, không thể dùng trực tiếp công thức đó. Cần kiểm điều kiện áp dụng trước khi tính.",
     "skill_ids": [
       "G11-B09-MODE-CONDITIONS"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Kiểm độ rộng nhóm trước khi dùng công thức mốt."
+      "Kiểm độ rộng nhóm trước khi dùng công thức."
     ],
     "rubric": null,
     "interaction": {
@@ -555,14 +555,14 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Công thức hiệu tần số trong nguồn áp dụng nhóm cùng độ rộng. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-P04."
+    "remediation": "Không áp dụng máy móc công thức hiệu tần số cho độ rộng khác nhau. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-P04."
   },
   {
     "item_id": "THPT-G11-B09-P01",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Tìm số trung bình ghép nhóm.",
+    "stem": "Mẫu A có các nhóm \\([0;10),[10;20),[20;30),[30;40)\\), tần số lần lượt 4, 8, 6, 2. Tính số trung bình ghép nhóm.",
     "answer_key": "18.",
-    "worked_solution": "Midpoint 5,15,25,35; (4·5+8·15+6·25+2·35)/20=360/20=18.",
+    "worked_solution": "Các giá trị đại diện là 5, 15, 25, 35. Cỡ mẫu là \\(4+8+6+2=20\\). Tổng có trọng số là \\(4\\cdot5+8\\cdot15+6\\cdot25+2\\cdot35=360\\). Vậy \\(\\bar x=\\frac{360}{20}=18\\).",
     "skill_ids": [
       "G11-B09-GROUPED-MEAN"
     ],
@@ -586,21 +586,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Chia n=20, không chia 4 nhóm. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P05."
+    "remediation": "Chia cho cỡ mẫu 20, không chia 4 nhóm. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P05."
   },
   {
     "item_id": "THPT-G11-B09-P02",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Ước lượng trung vị bằng nội suy.",
-    "answer_key": "17,5.",
-    "worked_solution": "n=20; nhóm [10;20) chứa vị trí n/2=10; Me=10+(10-4)·10/8=17,5.",
+    "stem": "Mẫu A có các nhóm \\([0;10),[10;20),[20;30),[30;40)\\), tần số lần lượt 4, 8, 6, 2. Ước lượng trung vị bằng nội suy.",
+    "answer_key": "\\(17{,}5\\).",
+    "worked_solution": "Cỡ mẫu \\(n=20\\), vị trí nội suy \\(\\frac n2=10\\). Tích lũy là 4, 12, 18, 20 nên dùng nhóm \\([10;20)\\). Trước nhóm có 4 quan sát, nhóm có 8 quan sát và độ rộng 10. Theo công thức nội suy, \\(M_e=10+\\frac{10-4}{8}\\cdot10=17{,}5\\). Đây là trung vị ghép nhóm, không nhất thiết bằng trung vị dữ liệu gốc.",
     "skill_ids": [
       "G11-B09-GROUPED-MEDIAN"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Dùng n/2=10, F trước=4, f=8, h=10."
+      "Xác định vị trí thứ 10, tần số trước nhóm và độ rộng."
     ],
     "rubric": null,
     "interaction": {
@@ -617,21 +617,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy trung điểm 15 làm trung vị khi vị trí nội suy khác. Ôn CĐ22 mục 2.3; luyện THPT-G11-TOPSTAT-ADD07."
+    "remediation": "Không lấy trung điểm 15 thay cho kết quả nội suy. Ôn CĐ22 mục 2.3; luyện THPT-G11-TOPSTAT-ADD07."
   },
   {
     "item_id": "THPT-G11-B09-P03",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Tính Q1, Q3 theo nội suy SGK.",
-    "answer_key": "Q1=11,25; Q3=25.",
-    "worked_solution": "Vị trí 5: Q1=10+(5-4)/8·10=11,25. Vị trí 15: Q3=20+(15-12)/6·10=25.",
+    "stem": "Mẫu A có các nhóm \\([0;10),[10;20),[20;30),[30;40)\\), tần số lần lượt 4, 8, 6, 2. Tính \\(Q_1,Q_3\\) theo nội suy SGK.",
+    "answer_key": "\\(Q_1=11{,}25;\\ Q_3=25\\).",
+    "worked_solution": "Cỡ mẫu 20; tích lũy 4, 12, 18, 20. Vị trí \\(\\frac n4=5\\) nằm trong nhóm \\([10;20)\\), nên \\(Q_1=10+\\frac{5-4}{8}\\cdot10=11{,}25\\). Vị trí \\(\\frac{3n}{4}=15\\) nằm trong nhóm \\([20;30)\\), nên \\(Q_3=20+\\frac{15-12}{6}\\cdot10=25\\).",
     "skill_ids": [
       "G11-B09-GROUPED-QUARTILES"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Định vị n/4 và 3n/4 trước khi nội suy."
+      "Định vị \\(\\frac n4\\) và \\(\\frac{3n}{4}\\) trước khi nội suy."
     ],
     "rubric": null,
     "interaction": {
@@ -648,21 +648,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không dùng cùng nhóm cho Q1 và Q3 nếu tích lũy không chứa cả hai. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P08."
+    "remediation": "Không dùng cùng nhóm nếu hai vị trí thuộc hai nhóm khác nhau. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P08."
   },
   {
     "item_id": "THPT-G11-B09-P04",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Tìm mốt ước lượng.",
-    "answer_key": "50/3≈16,67.",
-    "worked_solution": "Các nhóm cùng độ rộng 10. Nhóm mốt [10;20) có f_m=8, hai nhóm kề có f_-=4, f_+=6. Mo≈10+[(8−4)/((8−4)+(8−6))]·10=50/3≈16,67. Đây là ước lượng từ bảng ghép nhóm, không khẳng định mốt dữ liệu thô.",
+    "stem": "Mẫu A có các nhóm \\([0;10),[10;20),[20;30),[30;40)\\), tần số lần lượt 4, 8, 6, 2. Tìm mốt ghép nhóm.",
+    "answer_key": "\\(M_o=\\frac{50}{3}\\approx16{,}67\\).",
+    "worked_solution": "Các nhóm cùng độ rộng 10. Nhóm mốt \\([10;20)\\) có tần số 8, nhóm kề trái 4, nhóm kề phải 6. Mức chênh lệch lần lượt là 4 và 2. Nội suy \\(M_o=10+\\frac{8-4}{(8-4)+(8-6)}\\cdot10=\\frac{50}{3}\\approx16{,}67\\). Đây là mốt ước lượng từ bảng, không khẳng định mốt của dữ liệu thô.",
     "skill_ids": [
       "G11-B09-GROUPED-MODE"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Nhóm mốt có f=8, hai nhóm kề 4 và 6."
+      "Dùng hiệu giữa tần số nhóm mốt và từng nhóm kề."
     ],
     "rubric": null,
     "interaction": {
@@ -679,21 +679,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Dùng hiệu tần số với nhóm kề, không lấy trung điểm mặc định. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-C05."
+    "remediation": "Không mặc định mốt bằng trung điểm; kiểm nhóm cùng độ rộng. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-C05."
   },
   {
     "item_id": "THPT-G11-B09-P05",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Mẫu B: [10;15)→3 | [15;20)→6 | [20;25)→9 | [25;30)→2. Tính số trung bình ghép nhóm.",
+    "stem": "Mẫu B có các nhóm \\([10;15),[15;20),[20;25),[25;30)\\), tần số lần lượt 3, 6, 9, 2. Tính số trung bình ghép nhóm.",
     "answer_key": "20.",
-    "worked_solution": "Trung điểm 12,5;17,5;22,5;27,5. Tổng trọng số 400; n=20, x̄=20.",
+    "worked_solution": "Các trung điểm lần lượt là 12,5; 17,5; 22,5; 27,5. Tổng có trọng số \\(3\\cdot12{,}5+6\\cdot17{,}5+9\\cdot22{,}5+2\\cdot27{,}5=400\\). Cỡ mẫu 20 nên \\(\\bar x=\\frac{400}{20}=20\\).",
     "skill_ids": [
       "G11-B09-GROUPED-MEAN"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Dùng trung điểm 12,5;17,5;22,5;27,5."
+      "Tính trung điểm và nhân với tần số tương ứng."
     ],
     "rubric": null,
     "interaction": {
@@ -715,16 +715,16 @@
   {
     "item_id": "THPT-G11-B09-P06",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Mẫu B: [10;15)→3 | [15;20)→6 | [20;25)→9 | [25;30)→2. Lập bảng tần số tích lũy, nhóm chứa Q3.",
-    "answer_key": "[3,9,18,20]; nhóm [20;25).",
-    "worked_solution": "n=20; 3n/4=15; tích lũy lần đầu ≥15 tại nhóm thứ 3.",
+    "stem": "Mẫu B có các nhóm \\([10;15),[15;20),[20;25),[25;30)\\), tần số lần lượt 3, 6, 9, 2. Lập bảng tần số tích lũy và xác định nhóm dùng để tính \\(Q_3\\).",
+    "answer_key": "Tích lũy 3; 9; 18; 20; nhóm \\([20;25)\\).",
+    "worked_solution": "Cộng dồn tần số được 3, \\(3+6=9\\), \\(9+9=18\\), \\(18+2=20\\). Vị trí \\(\\frac{3n}{4}=\\frac{3\\cdot20}{4}=15\\) lớn hơn 9 và không vượt 18, nên dùng nhóm thứ ba \\([20;25)\\).",
     "skill_ids": [
       "G11-B09-CUMULATIVE"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Cộng dồn 3,6,9,2; tìm vị trí 3n/4."
+      "Cộng dồn rồi tìm vị trí \\(\\frac{3n}{4}\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -741,21 +741,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Vị trí Q3 là 15, không phải 3/4 số nhóm. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P08."
+    "remediation": "Vị trí nội suy tính theo số quan sát, không theo số nhóm. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P08."
   },
   {
     "item_id": "THPT-G11-B09-P07",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Mẫu B: [10;15)→3 | [15;20)→6 | [20;25)→9 | [25;30)→2. Tính trung vị.",
-    "answer_key": "185/9≈20,56.",
-    "worked_solution": "n/2=10; trước nhóm 3 tích lũy 9, tần số nhóm 9 và h=5: Me=20+(10-9)·5/9=185/9.",
+    "stem": "Mẫu B có các nhóm \\([10;15),[15;20),[20;25),[25;30)\\), tần số lần lượt 3, 6, 9, 2. Tính trung vị ghép nhóm.",
+    "answer_key": "\\(M_e=\\frac{185}{9}\\approx20{,}56\\).",
+    "worked_solution": "Cỡ mẫu 20, vị trí \\(\\frac n2=10\\). Tích lũy 3, 9, 18, 20 nên dùng nhóm \\([20;25)\\), có tần số 9, độ rộng 5, trước nhóm có 9 quan sát. Nội suy \\(M_e=20+\\frac{10-9}{9}\\cdot5=\\frac{185}{9}\\approx20{,}56\\).",
     "skill_ids": [
       "G11-B09-GROUPED-MEDIAN"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Nhóm thứ ba chứa vị trí n/2=10; F trước=9."
+      "Xác định nhóm chứa vị trí thứ 10 và tần số trước nhóm."
     ],
     "rubric": null,
     "interaction": {
@@ -772,21 +772,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Dùng độ rộng 5 và tần số 9; không lấy trung điểm 22,5. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P02."
+    "remediation": "Dùng độ rộng 5 và tần số 9; không mặc định lấy trung điểm. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P02."
   },
   {
     "item_id": "THPT-G11-B09-P08",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Mẫu C: [40;50)→2 | [50;60)→5 | [60;70)→8 | [70;80)→5. Tìm Q1 và Q3.",
-    "answer_key": "Q1=56; Q3=70.",
-    "worked_solution": "n=20; tích lũy [2,7,15,20]. Q1=50+(5-2)·10/5=56. Q3=60+(15-7)·10/8=70 (biên chung của hai nhóm).",
+    "stem": "Mẫu C có các nhóm \\([40;50),[50;60),[60;70),[70;80)\\), tần số lần lượt 2, 5, 8, 5. Tìm \\(Q_1,Q_3\\) theo nội suy SGK.",
+    "answer_key": "\\(Q_1=56;\\ Q_3=70\\).",
+    "worked_solution": "Cỡ mẫu 20; tích lũy 2, 7, 15, 20. Vị trí thứ 5 dùng nhóm \\([50;60)\\), nên \\(Q_1=50+\\frac{5-2}{5}\\cdot10=56\\). Vị trí thứ 15 đúng bằng tần số tích lũy nhóm thứ ba. Nội suy từ nhóm \\([60;70)\\) cho \\(Q_3=60+\\frac{15-7}{8}\\cdot10=70\\). Nếu tính từ đầu nhóm liền sau với tần số trước bằng 15, cũng được 70. Đây là biên chung.",
     "skill_ids": [
       "G11-B09-GROUPED-QUARTILES"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Tính tích lũy và xét đúng mốc biên Q3."
+      "Tính tích lũy và xét trường hợp vị trí đúng mốc tích lũy."
     ],
     "rubric": null,
     "interaction": {
@@ -803,21 +803,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Khi vị trí đúng tích lũy và hai lớp liền nhau, nội suy cho biên chung. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P03."
+    "remediation": "Khi vị trí đúng mốc tích lũy và hai nhóm liền nhau, nội suy cho biên chung. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P03."
   },
   {
     "item_id": "THPT-G11-B09-P09",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Bốn nhóm [0;2),[2;4),[4;6),[6;8) đều có tần số 7. Có mốt theo quy ước SGK không?",
+    "stem": "Bốn nhóm \\([0;2),[2;4),[4;6),[6;8)\\) đều có tần số 7. Mẫu ghép nhóm có mốt theo quy ước SGK đang xét không?",
     "answer_key": "Không.",
-    "worked_solution": "Khi tần số các nhóm bằng nhau, SGK quy ước mẫu ghép nhóm không có mốt.",
+    "worked_solution": "Tất cả các nhóm có cùng độ rộng và cùng tần số 7. Theo quy ước của nguồn học liệu, mẫu ghép nhóm này không có mốt. Không chọn tùy ý một nhóm làm nhóm mốt hoặc dùng công thức có mẫu bằng 0.",
     "skill_ids": [
       "G11-B09-MODE-CONDITIONS"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "So các tần số nhóm; tất cả cùng bằng 7."
+      "So các tần số; tất cả bằng nhau."
     ],
     "rubric": null,
     "interaction": {
@@ -834,21 +834,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Theo quy ước nguồn, mẫu này không có mốt; không chia 0 trong công thức. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-C05."
+    "remediation": "Theo quy ước nguồn, trường hợp này không có mốt; không thực hiện phép chia cho 0. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-C05."
   },
   {
     "item_id": "THPT-G11-B09-P10",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Hai bộ số liệu gốc khác nhau nhưng cho cùng bảng ghép nhóm. Số trung bình thực chính xác có bắt buộc giống nhau?",
+    "stem": "Hai bộ số liệu gốc khác nhau cho cùng một bảng ghép nhóm. Số trung bình chính xác của hai mẫu gốc có bắt buộc bằng nhau không?",
     "answer_key": "Không.",
-    "worked_solution": "Các giá trị bên trong mỗi nhóm có thể khác nhau, nên trung bình gốc khác; trung bình nhóm chỉ là ước lượng.",
+    "worked_solution": "Ví dụ, với hai nhóm \\([0;10),[10;20)\\), mẫu gồm 1 và 11, mẫu gồm 9 và 19 đều có tần số 1 và 1. Trung bình gốc lần lượt là \\(\\frac{1+11}{2}=6\\) và \\(\\frac{9+19}{2}=14\\), khác nhau. Trung bình ghép nhóm của cả hai là \\(\\frac{5+15}{2}=10\\). Vậy cùng bảng ghép nhóm không bảo đảm cùng trung bình gốc.",
     "skill_ids": [
       "G11-B09-INTERPRETATION"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Dựng hai mẫu thô khác nhau trong cùng khoảng."
+      "Dựng hai mẫu khác nhau nhưng giữ nguyên số quan sát trong từng khoảng."
     ],
     "rubric": null,
     "interaction": {
