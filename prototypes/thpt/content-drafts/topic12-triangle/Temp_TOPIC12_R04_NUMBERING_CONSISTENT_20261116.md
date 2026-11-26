@@ -451,13 +451,13 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Đề:** Giá trị của \(\cos120^\circ\) là bao nhiêu?
 
-**Lựa chọn:** A. \(\tfrac12\) | B. \(-\tfrac12\) | C. \(\tfrac{\sqrt3}{2}\) | D. \(-\tfrac{\sqrt3}{2}\)
+**Lựa chọn:** A. \(\frac12\) | B. \(-\frac12\) | C. \(\frac{\sqrt3}{2}\) | D. \(-\frac{\sqrt3}{2}\)
 
 <details><summary>Lời giải</summary>
 
 **Đáp án:** B
 
-**Lời giải:** \(\cos120^\circ=\cos(180^\circ-60^\circ)=-\cos60^\circ=-\tfrac12\).
+**Lời giải:** \(\cos120^\circ=\cos(180^\circ-60^\circ)=-\cos60^\circ=-\frac12\).
 
 **Nếu làm sai:** Nếu mất dấu, vẽ nửa đường tròn và xem hoành/tung theo góc.
 
@@ -475,7 +475,7 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Đáp án:** C
 
-**Lời giải:** Tại 90°, cos=0 nên tan không xác định. Tan180°=0 vì cos180°=−1 khác 0.
+**Lời giải:** Tại \(90^\circ\), \(\cos90^\circ=0\) nên tang không xác định. \(\tan180^\circ=0\) vì \(\cos180^\circ=-1\ne0\).
 
 **Nếu làm sai:** Trước phép chia sin/cos, kiểm mẫu khác 0.
 
@@ -487,15 +487,15 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Đề:** Cặp giá trị \((\sin150^\circ,\cos150^\circ)\) bằng bao nhiêu?
 
-**Lựa chọn:** A. \((\tfrac12,\tfrac{\sqrt3}{2})\) | B. \((\tfrac12,-\tfrac{\sqrt3}{2})\) | C. \((-\tfrac12,-\tfrac{\sqrt3}{2})\) | D. \((\tfrac{\sqrt3}{2},-\tfrac12)\)
+**Lựa chọn:** A. \((\frac12;\frac{\sqrt3}{2})\) | B. \((\frac12;-\frac{\sqrt3}{2})\) | C. \((-\frac12;-\frac{\sqrt3}{2})\) | D. \((\frac{\sqrt3}{2};-\frac12)\)
 
 <details><summary>Lời giải</summary>
 
 **Đáp án:** B
 
-**Lời giải:** \(\sin150^\circ=\sin30^\circ=\tfrac12\); \(\cos150^\circ=-\cos30^\circ=-\tfrac{\sqrt3}{2}\).
+**Lời giải:** \(\sin150^\circ=\sin30^\circ=\frac12\); \(\cos150^\circ=-\cos30^\circ=-\frac{\sqrt3}{2}\).
 
-**Nếu làm sai:** Từ sin²+cos²=1, chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
+**Nếu làm sai:** Từ \(\sin^2\alpha+\cos^2\alpha=1\), chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
 
 </details>
 
@@ -503,15 +503,15 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Bài luyện 4.**
 
-**Đề:** Cho góc tù α với \(\cos\alpha=-3/5\). Tính \(\sin\alpha\) và \(\tan\alpha\).
+**Đề:** Cho góc tù \(\alpha\) với \(\cos\alpha=-\frac35\). Tính \(\sin\alpha\) và \(\tan\alpha\).
 
 <details><summary>Lời giải</summary>
 
-**Đáp án:** \(\sin\alpha=4/5,\ \tan\alpha=-4/3\).
+**Đáp án:** \(\sin\alpha=\frac45,\ \tan\alpha=-\frac43\).
 
-**Lời giải:** \(\sin^2\alpha=1-9/25=16/25\). Góc tù có sin dương nên sin=4/5; tan=(4/5)/(−3/5)=−4/3.
+**Lời giải:** \(\sin^2\alpha=1-\frac9{25}=\frac{16}{25}\). Góc tù có sin dương nên \(\sin\alpha=\frac45;\ \tan\alpha=\frac{\frac45}{-\frac35}=-\frac43\).
 
-**Nếu làm sai:** Từ sin²+cos²=1, chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
+**Nếu làm sai:** Từ \(\sin^2\alpha+\cos^2\alpha=1\), chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
 
 </details>
 
@@ -523,9 +523,9 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 <details><summary>Lời giải</summary>
 
-**Đáp án:** \(T=(\sqrt2-1)/2\).
+**Đáp án:** \(T=\frac{\sqrt2-1}2\).
 
-**Lời giải:** \(\sin135^\circ=\sin45^\circ=\sqrt2/2\), \(\cos120^\circ=-1/2\). Cộng lại được \((\sqrt2-1)/2\).
+**Lời giải:** \(\sin135^\circ=\sin45^\circ=\frac{\sqrt2}2,\ \cos120^\circ=-\frac12\). Cộng lại được \(\frac{\sqrt2-1}2\).
 
 **Nếu làm sai:** Liên hệ góc cần tính với góc nhọn đặc biệt và kiểm dấu sau khi lấy giá trị.
 
@@ -543,9 +543,9 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Đáp án:** B
 
-**Lời giải:** \(\sin^2\alpha+\cos^2\alpha=1\) đúng trên toàn đoạn. Câu A không có nghĩa tại 0°,90°,180°; cos âm với góc tù; cot0° và cot180° không xác định.
+**Lời giải:** \(\sin^2\alpha+\cos^2\alpha=1\) đúng trên toàn đoạn. Câu A không có nghĩa tại \(0^\circ,90^\circ,180^\circ\); cos âm với góc tù; \(\cot0^\circ\) và \(\cot180^\circ\) không xác định.
 
-**Nếu làm sai:** Từ sin²+cos²=1, chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
+**Nếu làm sai:** Từ \(\sin^2\alpha+\cos^2\alpha=1\), chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
 
 </details>
 
@@ -553,7 +553,7 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Bài luyện 7.**
 
-**Đề:** Trong \([0^\circ,180^\circ]\), có những góc nào thỏa \(\sin\alpha=\sqrt3/2\)?
+**Đề:** Trong \([0^\circ;180^\circ]\), có những góc nào thỏa \(\sin\alpha=\frac{\sqrt3}2\)?
 
 **Lựa chọn:** A. Chỉ 60° | B. Chỉ 120° | C. 60° và 120° | D. 30° và 150°
 
@@ -561,7 +561,7 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Đáp án:** C
 
-**Lời giải:** \(\sin60^\circ=\sqrt3/2\); góc bù 120° có cùng sin. Trong đoạn đã cho chỉ có hai góc đó.
+**Lời giải:** \(\sin60^\circ=\frac{\sqrt3}2\); góc bù \(120^\circ\) có cùng sin. Trong đoạn đã cho chỉ có hai góc đó.
 
 **Nếu làm sai:** Liên hệ góc cần tính với góc nhọn đặc biệt và kiểm dấu sau khi lấy giá trị.
 
@@ -575,9 +575,9 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 <details><summary>Lời giải</summary>
 
-**Đáp án:** \(\sin\alpha=2/\sqrt5,\ \cos\alpha=-1/\sqrt5,\ \cot\alpha=-1/2\).
+**Đáp án:** \(\sin\alpha=\frac2{\sqrt5},\ \cos\alpha=-\frac1{\sqrt5},\ \cot\alpha=-\frac12\).
 
-**Lời giải:** \(\cos^2\alpha=1/5\); góc tù nên cos=−1/√5. Sin=tan·cos=2/√5; cot=1/tan=−1/2.
+**Lời giải:** \(\cos^2\alpha=\frac15\); góc tù nên \(\cos\alpha=-\frac1{\sqrt5}\). \(\sin\alpha=\tan\alpha\cdot\cos\alpha=\frac2{\sqrt5};\ \cot\alpha=\frac1{\tan\alpha}=-\frac12\).
 
 **Nếu làm sai:** Trước phép chia sin/cos, kiểm mẫu khác 0.
 
@@ -587,15 +587,15 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Bài luyện 9.**
 
-**Đề:** Một vòng quay có tâm O cao hơn mặt đất 12 m, bán kính 10 m. Xét vị trí M được xác định bởi góc 150° so với tia Ox hướng ngang sang phải, theo chiều dương, trên nửa đường tròn phía trên O. (a) Tính tọa độ của M trong hệ trục Oxy (mét). (b) Tìm độ cao M so với mặt đất. (c) Giải thích dấu của cos150° bằng hình học, không chỉ thuộc bảng số.
+**Đề:** Một vòng quay có tâm O cao hơn mặt đất 12 m, bán kính 10 m. Xét vị trí M được xác định bởi góc \(150^\circ\) so với tia Ox hướng ngang sang phải, theo chiều dương, trên nửa đường tròn phía trên O. (a) Tính tọa độ của M trong hệ trục Oxy (mét). (b) Tìm độ cao M so với mặt đất. (c) Giải thích dấu của \(\cos150^\circ\) bằng hình học, không chỉ thuộc bảng số.
 
 <details><summary>Lời giải và rubric</summary>
 
-**Lời giải:** (a) \(x_M=10\cos150^\circ=-5\sqrt3\) (m), \(y_M=10\sin150^\circ=5\) (m). (b) Độ cao M là \(12+5=17\) m. (c) Góc 150° nằm phía trái trục Oy nên hình chiếu xuống trục Ox âm, từ đó cos150°<0.
+**Lời giải:** (a) \(x_M=10\cos150^\circ=-5\sqrt3\) (m), \(y_M=10\sin150^\circ=5\) (m). (b) Độ cao M là \(12+5=17\) m. (c) Điểm ứng với góc \(150^\circ\) nằm phía trái trục Oy nên hoành độ âm, từ đó \(\cos150^\circ<0\).
 
 **Rubric /7:** (1) Nêu đúng quy chiếu tâm O, bán kính và góc (1đ); (2) viết đúng \(x=R\cos\alpha\), \(y=R\sin\alpha\) với \(\alpha=150^\circ\) (2đ); (3) thay giá trị góc bù tính đủ tọa độ (2đ); (4) tính độ cao mặt đất 17 m (1đ); (5) giải thích hình học dấu cos (1đ). Không trừ điểm hai lần cho cùng một lỗi số ở những bước phụ thuộc khi cách làm và lập luận đúng.
 
-**Nếu làm sai:** Từ sin²+cos²=1, chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
+**Nếu làm sai:** Từ \(\sin^2\alpha+\cos^2\alpha=1\), chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
 
 </details>
 
@@ -611,9 +611,9 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Đáp án:** A
 
-**Lời giải:** \(a^2=25+49-2\cdot5\cdot7\cdot\tfrac12=39\), a=√39.
+**Lời giải:** \(a^2=25+49-2\cdot5\cdot7\cdot\frac12=39\), \(a=\sqrt{39}\).
 
-**Nếu làm sai:** Đặt a đối diện A; nếu biết hai cạnh kẹp góc, dùng côsin rồi kiểm a>0.
+**Nếu làm sai:** Đặt a đối diện A; nếu biết hai cạnh kẹp góc, dùng côsin rồi kiểm \(a>0\).
 
 </details>
 
@@ -629,7 +629,7 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Đáp án:** B
 
-**Lời giải:** \(S=\tfrac12\cdot8\cdot5\cdot\sin30^\circ=10\).
+**Lời giải:** \(S=\frac12\cdot8\cdot5\cdot\sin30^\circ=10\).
 
 **Nếu làm sai:** Diện tích dùng góc giữa đúng hai cạnh và hệ số 1/2.
 
@@ -645,7 +645,7 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Đáp án:** \(b=4\sqrt3,\ R=4\).
 
-**Lời giải:** \(b=4(\sqrt3/2)/(1/2)=4\sqrt3\); \(2R=4/(1/2)=8\), R=4.
+**Lời giải:** \(b=4\cdot\frac{\frac{\sqrt3}2}{\frac12}=4\sqrt3;\ 2R=\frac4{\frac12}=8,\ R=4\).
 
 **Nếu làm sai:** Dùng định lí sin theo cặp cạnh và góc đối diện, không hoán đổi tử/mẫu.
 
@@ -659,11 +659,11 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 <details><summary>Lời giải</summary>
 
-**Đáp án:** \(S=12,\ r=3/2\).
+**Đáp án:** \(S=12,\ r=\frac32\).
 
-**Lời giải:** \(p=8\); \(S=\sqrt{8\cdot3\cdot3\cdot2}=12\); \(r=S/p=3/2\).
+**Lời giải:** \(p=8;\ S=\sqrt{8\cdot3\cdot3\cdot2}=12;\ r=\frac Sp=\frac32\).
 
-**Nếu làm sai:** Trước Heron kiểm tam giác hợp lệ; tính p, rồi r=S/p và R=abc/(4S).
+**Nếu làm sai:** Trước Heron kiểm tam giác hợp lệ; tính p, rồi \(r=\frac Sp,\ R=\frac{abc}{4S}\).
 
 </details>
 
@@ -677,7 +677,7 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Đáp án:** \(a=4,\ b=4\sqrt3\).
 
-**Lời giải:** \(C=90^\circ\), c/sinC=8. Vậy \(a=8\sin30^\circ=4\), \(b=8\sin60^\circ=4\sqrt3\).
+**Lời giải:** \(C=90^\circ,\ \frac c{\sin C}=8\). Vậy \(a=8\sin30^\circ=4,\ b=8\sin60^\circ=4\sqrt3\).
 
 **Nếu làm sai:** Dùng định lí sin theo cặp cạnh và góc đối diện, không hoán đổi tử/mẫu.
 
@@ -691,11 +691,11 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 <details><summary>Lời giải</summary>
 
-**Đáp án:** \(\cos C=2/7,\ S=12\sqrt5\).
+**Đáp án:** \(\cos C=\frac27,\ S=12\sqrt5\).
 
-**Lời giải:** \(\cos C=(a^2+b^2-c^2)/(2ab)=(49+64-81)/(112)=2/7\). p=12; \(S=\sqrt{12\cdot5\cdot4\cdot3}=12\sqrt5\).
+**Lời giải:** \(\cos C=\frac{a^2+b^2-c^2}{2ab}=\frac{49+64-81}{112}=\frac27\). \(p=12;\ S=\sqrt{12\cdot5\cdot4\cdot3}=12\sqrt5\).
 
-**Nếu làm sai:** Trước Heron kiểm tam giác hợp lệ; tính p, rồi r=S/p và R=abc/(4S).
+**Nếu làm sai:** Trước Heron kiểm tam giác hợp lệ; tính p, rồi \(r=\frac Sp,\ R=\frac{abc}{4S}\).
 
 </details>
 
@@ -707,7 +707,7 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 <details><summary>Lời giải</summary>
 
-**Đáp án:** \(BC=50\text{ m},\ AC=50\sqrt3\text{ m}\).
+**Đáp án:** \(BC=50\,\mathrm m,\ AC=50\sqrt3\,\mathrm m\).
 
 **Lời giải:** \(C=90^\circ\), \(AB=100\) là cạnh huyền. \(BC=AB\sin A=50\) m, \(AC=AB\sin B=50\sqrt3\) m.
 
@@ -725,7 +725,7 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Đáp án:** \(A=90^\circ,\ S=15\).
 
-**Lời giải:** \(a^2=61=b^2+c^2=25+36\) nên \(\cos A=0\), A=90°. \(S=\tfrac12 bc=15\).
+**Lời giải:** \(a^2=61=b^2+c^2=25+36\) nên \(\cos A=0,\ A=90^\circ\). \(S=\frac12bc=15\).
 
 **Nếu làm sai:** Ba cạnh cần thỏa bất đẳng thức tam giác; chọn định lí côsin khi tìm góc.
 
@@ -735,13 +735,13 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 **Bài luyện 18.**
 
-**Đề:** Một mảnh đất hình tam giác ABC có AB=9 m, AC=10 m và BC=17 m. (a) Chứng minh ba cạnh tạo thành tam giác. Tính \(\cos A\) và cho biết góc A nhọn hay tù. (b) Tính diện tích S bằng công thức Heron. (c) Tính bán kính đường tròn nội tiếp r và ngoại tiếp R. (d) Nếu trải cỏ toàn bộ mảnh đất, giá 120.000 đồng/m², tính chi phí chưa gồm công.
+**Đề:** Một mảnh đất hình tam giác ABC có \(AB=9\,\mathrm m,\ AC=10\,\mathrm m,\ BC=17\,\mathrm m\). (a) Chứng minh ba cạnh tạo thành tam giác. Tính \(\cos A\) và cho biết góc A nhọn hay tù. (b) Tính diện tích S bằng công thức Heron. (c) Tính bán kính đường tròn nội tiếp r và ngoại tiếp R. (d) Nếu trải cỏ toàn bộ mảnh đất, giá 120.000 đồng trên mỗi \(\mathrm m^2\), tính chi phí chưa gồm công.
 
 <details><summary>Lời giải và rubric</summary>
 
-**Lời giải:** (a) Vì \(9+10=19>17\) nên ba độ dài lập thành một tam giác. Với a=17,b=10,c=9, \(\cos A=(b^2+c^2-a^2)/(2bc)=(100+81-289)/(180)=-3/5\), nên A **tù**. (b) \(p=18\), \(S=\sqrt{18\cdot(18-17)\cdot(18-10)\cdot(18-9)}=\sqrt{18\cdot1\cdot8\cdot9}=36\text{ m}^2\). (c) \(r=S/p=36/18=2\text{ m}\), \(R=abc/(4S)=17\cdot10\cdot9/(4\cdot36)=85/8\text{ m}\). (d) Chi phí \(36\cdot120000=4\,320\,000\) đồng.
+**Lời giải:** (a) Vì \(9+10=19>17\) nên ba độ dài lập thành một tam giác. Với \(a=17,\ b=10,\ c=9\), \(\cos A=\frac{b^2+c^2-a^2}{2bc}=\frac{100+81-289}{180}=-\frac35\), nên A **tù**. (b) \(p=18,\ S=\sqrt{18(18-17)(18-10)(18-9)}=\sqrt{18\cdot1\cdot8\cdot9}=36\,\mathrm m^2\). (c) \(r=\frac Sp=\frac{36}{18}=2\,\mathrm m,\ R=\frac{abc}{4S}=\frac{17\cdot10\cdot9}{4\cdot36}=\frac{85}8\,\mathrm m\). (d) Chi phí \(36\cdot120000=4\,320\,000\) đồng.
 
-**Rubric /7:** kiểm tra bất đẳng thức tam giác (1đ); sử dụng đúng định lí côsin và tính cos A (1.5đ); suy góc A tù (0.5đ); tính p và S đúng kèm m² (2đ); suy r và R đúng đơn vị (1.5đ); chi phí cỏ đúng (0.5đ). Em tự kiểm lại từng tiêu chí của lời giải để tìm phần cần ôn thêm.
+**Rubric /7:** kiểm tra bất đẳng thức tam giác (1đ); sử dụng đúng định lí côsin và tính cos A (1.5đ); suy góc A tù (0.5đ); tính p và S đúng kèm \(\mathrm m^2\) (2đ); suy r và R đúng đơn vị (1.5đ); chi phí cỏ đúng (0.5đ). Em tự kiểm lại từng tiêu chí của lời giải để tìm phần cần ôn thêm.
 
 **Nếu làm sai:** Vẽ lại điểm quan sát, đánh dấu góc trong và cạnh đo được, ghi đơn vị.
 
@@ -751,53 +751,53 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P01; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O04; SINGLE_ITEM_ID -->
 **Bài luyện 19. Dấu và hệ thức lượng**
-**Đề:** Góc tù α có \(\cos \alpha=-5/13\). Tính sinα và tanα; giải thích việc chọn dấu.
-<details><summary>Lời giải</summary>\(\sin^{2}\alpha=144/169\); vì góc tù nên sin dương, sin=12/13 và tan=−12/5. Nhớ xét dấu trước khi lấy căn. Nếu sai: mục 1,3,4 → bài luyện về dấu của sin và cosin.</details>
+**Đề:** Góc tù \(\alpha\) có \(\cos\alpha=-\frac5{13}\). Tính \(\sin\alpha\) và \(\tan\alpha\); giải thích việc chọn dấu.
+<details><summary>Lời giải</summary>\(\sin^2\alpha=\frac{144}{169}\); vì góc tù nên sin dương, \(\sin\alpha=\frac{12}{13},\ \tan\alpha=-\frac{12}5\). Nhớ xét dấu trước khi lấy căn. Nếu sai: mục 1,3,4 → bài luyện về dấu của sin và cosin.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P02; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O02; SINGLE_ITEM_ID -->
 **Bài luyện 20. Hai góc bù**
 **Đề:** Tính chính xác \(\sin 150^{\circ}+\cos 120^{\circ}\) và giải thích quy luật được dùng.
-<details><summary>Lời giải</summary>Sin giữ nguyên, cos đổi dấu khi chuyển về góc bù: \(1/2-1/2=0\). Nếu sai: mục 2 → bài luyện về góc bù.</details>
+<details><summary>Lời giải</summary>Sin giữ nguyên, cos đổi dấu khi chuyển về góc bù: \(\frac12-\frac12=0\). Nếu sai: mục 2 → bài luyện về góc bù.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P03; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O05; SINGLE_ITEM_ID -->
 **Bài luyện 21. Góc tù và định lí côsin**
 **Đề:** Trong tam giác ABC có \(b=4, c=7, A=120^{\circ}\). Tính a.
-<details><summary>Lời giải</summary>\(a^{2}=16+49-2\cdot 4\cdot 7\cdot (-1/2)=93\), nên \(a=\sqrt{93}\). Góc tù khiến cạnh a lớn hơn cả b và c. Nếu sai: mục 5 → bài luyện về định lí cosin.</details>
+<details><summary>Lời giải</summary>\(a^2=16+49-2\cdot4\cdot7(-\frac12)=93\), nên \(a=\sqrt{93}\). Góc tù khiến cạnh a lớn hơn cả b và c. Nếu sai: mục 5 → bài luyện về định lí cosin.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P04; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O06; SINGLE_ITEM_ID -->
 **Bài luyện 22. Hai góc và một cạnh**
 **Đề:** Trong tam giác ABC có \(A=30^{\circ}, B=75^{\circ}, a=6\). Tính b,c.
-<details><summary>Lời giải</summary>\(C=75^{\circ}\), nên \(b=c=6 \sin 75^{\circ}/\sin 30^{\circ}=12 \sin 75^{\circ}=3(\sqrt{6}+\sqrt{2})\). Nếu sai: mục 6–7 → bài luyện về hai góc và một cạnh.</details>
+<details><summary>Lời giải</summary>\(C=75^\circ\), nên \(b=c=\frac{6\sin75^\circ}{\sin30^\circ}=12\sin75^\circ=3(\sqrt6+\sqrt2)\). Nếu sai: mục 6–7 → bài luyện về hai góc và một cạnh.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P05; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O07; SINGLE_ITEM_ID -->
 **Bài luyện 23. Ba cạnh và tam giác vuông**
 **Đề:** Ba cạnh 6,8,10 tạo thành tam giác ABC. Xác định góc đối diện cạnh 10, diện tích S, r và R.
-<details><summary>Lời giải</summary>Vì \(6^{2}+8^{2}=10^{2}\), góc đối diện 10 là 90°. \(S=24\), \(p=12\), \(r=24/12=2\), \(R=6\cdot 8\cdot 10/(4\cdot 24)=5\). Nếu sai: mục 7,9–10 → bài luyện về Heron.</details>
+<details><summary>Lời giải</summary>Vì \(6^2+8^2=10^2\), góc đối diện 10 là \(90^\circ\). \(S=24,\ p=12,\ r=\frac{24}{12}=2,\ R=\frac{6\cdot8\cdot10}{4\cdot24}=5\). Nếu sai: mục 7,9–10 → bài luyện về Heron.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P06; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O08; SINGLE_ITEM_ID -->
 **Bài luyện 24. Dữ kiện SSA có thể có hai nghiệm**
 **Đề:** Biết \(A=30^{\circ}, a=6, b=10\). Có bao nhiêu tam giác khác nhau thỏa dữ kiện? Nêu hai giá trị khả dĩ của B theo biểu thức arcsin.
-<details><summary>Lời giải</summary>\(\sin B=(10 \sin 30^{\circ})/6=5/6\). Hai giá trị \(B=\arcsin (5/6)\) và \(B=180^{\circ}-\arcsin (5/6)\) đều cho A+B<180° (vì arcsin(5/6)>30°); **hai tam giác**. Nếu chỉ lấy B nhọn: mục 8 → bài luyện về dữ kiện vô nghiệm.</details>
+<details><summary>Lời giải</summary>\(\sin B=\frac{10\sin30^\circ}6=\frac56\). Hai giá trị \(B=\arcsin(\frac56)\) và \(B=180^\circ-\arcsin(\frac56)\) đều cho \(A+B<180^\circ\) (vì \(\arcsin(\frac56)>30^\circ\)); **hai tam giác**. Nếu chỉ lấy B nhọn: mục 8 → bài luyện về dữ kiện vô nghiệm.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P07; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O08; SINGLE_ITEM_ID -->
 **Bài luyện 25. Dữ kiện SSA vô nghiệm**
 **Đề:** \(A=30^{\circ}, a=3, b=7\). Hãy kiểm chứng có tồn tại tam giác ABC hay không.
-<details><summary>Lời giải</summary>\(\sin B=7\cdot \sin 30^{\circ}/3=7/6>1\), vô lý. **Không tồn tại tam giác**. Nếu bấm arcsin trực tiếp và bị lỗi: mục 8 kiểm điều kiện trước.</details>
+<details><summary>Lời giải</summary>\(\sin B=\frac{7\sin30^\circ}3=\frac76>1\), vô lý. **Không tồn tại tam giác**. Nếu bấm arcsin trực tiếp và bị lỗi: mục 8 kiểm điều kiện trước.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P08; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O09; SINGLE_ITEM_ID -->
 **Bài luyện 26. Diện tích qua góc tù**
 **Đề:** \(b=6, c=10, A=150^{\circ}\). Tính diện tích S, nêu vì sao S dương.
-<details><summary>Lời giải</summary>\(S=(1/2)\cdot 6\cdot 10\cdot \sin 150^{\circ}=15\). Góc tù trong tam giác vẫn có sin dương; độ cao đến phần kéo dài của đáy vẫn là độ dài dương. Nếu sai: mục 9 → bài luyện cùng dạng.</details>
+<details><summary>Lời giải</summary>\(S=\frac12\cdot6\cdot10\sin150^\circ=15\). Góc tù trong tam giác vẫn có sin dương; độ cao đến phần kéo dài của đáy vẫn là độ dài dương. Nếu sai: mục 9 → bài luyện cùng dạng.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P09; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O10; SINGLE_ITEM_ID -->
 **Bài luyện 27. Heron và hai bán kính**
 **Đề:** Tam giác có cạnh 7,8,9. Tìm S,r,R.
-<details><summary>Lời giải</summary>\(p=12\), \(S=\sqrt{12\cdot 5\cdot 4\cdot 3}=12\sqrt{5}\), \(r=S/p=\sqrt{5}\), \(R=7\cdot 8\cdot 9/(4\cdot 12\sqrt{5})=21\sqrt{5}/10\). Nếu nhầm r/R: mục 10 → bài luyện về diện tích từ ba cạnh.</details>
+<details><summary>Lời giải</summary>\(p=12,\ S=\sqrt{12\cdot5\cdot4\cdot3}=12\sqrt5,\ r=\frac Sp=\sqrt5,\ R=\frac{7\cdot8\cdot9}{4\cdot12\sqrt5}=\frac{21\sqrt5}{10}\). Nếu nhầm r/R: mục 10 → bài luyện về diện tích từ ba cạnh.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P10; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O11; SINGLE_ITEM_ID -->
 **Bài luyện 28. Bài toán đo đạc**
 **Đề:** Hai điểm A,B cách nhau 80 m; cùng nhìn C sao cho \(A=30^{\circ},B=45^{\circ}\) là các góc **trong** của tam giác ABC. Tìm BC và AC dưới dạng căn thức chính xác.
-<details><summary>Lời giải</summary>\(C=105^{\circ}\); \(\sin 105^{\circ}=(\sqrt{6}+\sqrt{2})/4\). Vì AB=c=80, \(BC=a=80 \sin 30^{\circ}/\sin 105^{\circ}=40(\sqrt{6}-\sqrt{2})\,\mathrm{m}\); \(AC=b=80 \sin 45^{\circ}/\sin 105^{\circ}=80(\sqrt{3}-1)\,\mathrm{m}\). Nếu sai: mục 6,11 → bài luyện về đo đạc.</details>
+<details><summary>Lời giải</summary>\(C=105^\circ;\ \sin105^\circ=\frac{\sqrt6+\sqrt2}4\). Vì \(AB=c=80\), \(BC=a=\frac{80\sin30^\circ}{\sin105^\circ}=40(\sqrt6-\sqrt2)\,\mathrm m;\ AC=b=\frac{80\sin45^\circ}{\sin105^\circ}=80(\sqrt3-1)\,\mathrm m\). Nếu sai: mục 6,11 → bài luyện về đo đạc.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P11; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O12; SINGLE_ITEM_ID -->
 **Bài luyện 29. Bất đẳng thức tam giác**
@@ -807,29 +807,29 @@ Bắt đầu từ dấu sin, cos và điều kiện của tan, cot; sau đó luy
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P12; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O12; SINGLE_ITEM_ID -->
 **Bài luyện 30. Biên của công thức**
 **Đề:** Một người đặt \(A=0^{\circ}, b=5, c=7\) và gọi đó là tam giác ABC không suy biến. Chỉ ra sự mâu thuẫn với điều kiện áp dụng định lí sin/côsin trong tam giác.
-<details><summary>Lời giải</summary>Mọi góc trong tam giác không suy biến phải thuộc \((0^{\circ},180^{\circ})\); A=0° tạo cấu hình suy biến, dù có thể tính đại số \(a=|7-5|=2\) bằng biểu thức côsin. Không có tam giác không suy biến để dùng định lí sin hoặc Heron. Nếu sai: mục 5,6,12.</details>
+<details><summary>Lời giải</summary>Mọi góc trong tam giác không suy biến phải thuộc \((0^\circ;180^\circ)\); \(A=0^\circ\) tạo cấu hình suy biến, dù có thể tính đại số \(a=\lvert7-5\rvert=2\) bằng biểu thức côsin. Không có tam giác không suy biến để dùng định lí sin hoặc Heron. Nếu sai: mục 5,6,12.</details>
 
 ## 3. Tự luận: trình bày lập luận
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-W01; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O10; SINGLE_ITEM_ID -->
 **Bài luyện 31. Tam giác 5–12–13**
 **Đề:** Với tam giác có cạnh 5,12,13, hãy (a) xác định loại tam giác; (b) tính diện tích S; (c) tính r và R; (d) giải thích vì sao R lớn hơn r.
-<details><summary>Lời giải và rubric</summary>(a) \(5^{2}+12^{2}=13^{2}\), tam giác vuông (1đ); (b) \(S=5\cdot 12/2=30\) (2đ); (c) \(p=15\), \(r=30/15=2\), \(R=5\cdot 12\cdot 13/(4\cdot 30)=13/2\) (3đ); (d) \(13/2>2\), R thuộc đường tròn đi qua ba đỉnh, r thuộc đường tròn tiếp xúc ba cạnh (1đ). Nếu sai: mục 7,9,10 → bài luyện về Heron.</details>
+<details><summary>Lời giải và rubric</summary>(a) \(5^2+12^2=13^2\), tam giác vuông (1đ); (b) \(S=\frac{5\cdot12}2=30\) (2đ); (c) \(p=15,\ r=\frac{30}{15}=2,\ R=\frac{5\cdot12\cdot13}{4\cdot30}=\frac{13}2\) (3đ); (d) \(\frac{13}2>2\), R thuộc đường tròn đi qua ba đỉnh, r thuộc đường tròn tiếp xúc ba cạnh (1đ). Nếu sai: mục 7,9,10 → bài luyện về Heron.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-W02; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O11; SINGLE_ITEM_ID -->
 **Bài luyện 32. Định vị điểm từ hai hướng nhìn**
 **Đề:** AB dài 120 m; A,B đo được các góc trong \(A=45^{\circ},B=75^{\circ}\) đến C. Tính C, BC, AC; nêu đơn vị và vì sao dùng định lí sin.
-<details><summary>Lời giải và rubric</summary>\(C=60^{\circ}\) (1đ); vì biết hai góc một cạnh, chọn sin (1đ); \(BC=120 \sin 45^{\circ}/\sin 60^{\circ}=40\sqrt{6}\,\mathrm{m}\) (2đ); \(AC=120 \sin 75^{\circ}/\sin 60^{\circ}=60(\sqrt{6}+\sqrt{2})/\sqrt{3}\,\mathrm{m}\) (2đ); ghi đơn vị và kiểm hợp lí (1đ). Nếu sai: mục 6,7,11 → bài luyện về đo đạc.</details>
+<details><summary>Lời giải và rubric</summary>\(C=60^\circ\) (1đ); vì biết hai góc một cạnh, chọn sin (1đ); \(BC=\frac{120\sin45^\circ}{\sin60^\circ}=40\sqrt6\,\mathrm m\) (2đ); \(AC=\frac{120\sin75^\circ}{\sin60^\circ}=\frac{60(\sqrt6+\sqrt2)}{\sqrt3}\,\mathrm m\) (2đ); ghi đơn vị và kiểm hợp lí (1đ). Nếu sai: mục 6,7,11 → bài luyện về đo đạc.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-W03; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O08; SINGLE_ITEM_ID -->
 **Bài luyện 33. Giải thích hiện tượng hai nghiệm**
 **Đề:** Trong tam giác ABC, biết \(A=30^{\circ}, a=8,b=10\). Chứng minh rằng dữ kiện cho hai tam giác khác nhau; mô tả cách tìm C cho mỗi tam giác.
-<details><summary>Lời giải và rubric</summary>Viết \(\sin B=b \sin A/a=5/8\) (2đ); tìm hai giá trị \(B_{1}=\arcsin (5/8)\), \(B_{2}=180^{\circ}-\arcsin (5/8)\) (2đ); chỉ ra cả \(A+B_{1}<180^{\circ}\) và \(A+B_{2}<180^{\circ}\) vì \(B_{1}>30^{\circ}\) (2đ); đặt \(C_i=180^{\circ}-A-B_i\) với C_i>0 (1đ). Lưu ý arcsin là góc nhọn chuẩn. Nếu sai: mục 8 → bài luyện về hai tam giác có thể thỏa dữ kiện.</details>
+<details><summary>Lời giải và rubric</summary>Viết \(\sin B=\frac{b\sin A}a=\frac58\) (2đ); tìm hai giá trị \(B_1=\arcsin(\frac58),\ B_2=180^\circ-\arcsin(\frac58)\) (2đ); chỉ ra cả \(A+B_1<180^\circ\) và \(A+B_2<180^\circ\) vì \(B_1>30^\circ\) (2đ); đặt \(C_i=180^\circ-A-B_i\) với \(C_i>0\) (1đ). Lưu ý arcsin là góc nhọn chuẩn. Nếu sai: mục 8 → bài luyện về hai tam giác có thể thỏa dữ kiện.</details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-W04; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O05; SINGLE_ITEM_ID -->
 **Bài luyện 34. Tam giác có góc tù**
 **Đề:** Tam giác ABC có \(b=5,c=6,A=120^{\circ}\). Tính a, diện tích S và bán kính ngoại tiếp R; giải thích việc chọn dấu trong định lí côsin.
-<details><summary>Lời giải và rubric</summary>\(\cos 120^{\circ}=-1/2\) (1đ); \(a^{2}=25+36-60\cdot (-1/2)=91\), \(a=\sqrt{91}\) (2đ); \(S=(1/2)\cdot 5\cdot 6\cdot \sin 120^{\circ}=15\sqrt{3}/2\) (2đ); \(R=abc/(4S)=\sqrt{91}/\sqrt{3}=\sqrt{273}/3\) (2đ). Nếu sai: mục 2,5,9–10 → bài luyện về góc tù và định lí cosin.</details>
+<details><summary>Lời giải và rubric</summary>\(\cos120^\circ=-\frac12\) (1đ); \(a^2=25+36-60(-\frac12)=91,\ a=\sqrt{91}\) (2đ); \(S=\frac12\cdot5\cdot6\sin120^\circ=\frac{15\sqrt3}2\) (2đ); \(R=\frac{abc}{4S}=\frac{\sqrt{91}}{\sqrt3}=\frac{\sqrt{273}}3\) (2đ). Nếu sai: mục 2,5,9–10 → bài luyện về góc tù và định lí cosin.</details>
 
 # Tự kiểm tra
 
@@ -839,21 +839,21 @@ Hãy tự giải đủ **12 câu** trước khi mở phần **Đối chiếu** �
 
 **Câu 1.** Giá trị của \(\cos120^\circ\) là bao nhiêu?
 
-**Lựa chọn:** A. \(\tfrac12\) | B. \(-\tfrac12\) | C. \(\tfrac{\sqrt3}{2}\) | D. \(-\tfrac{\sqrt3}{2}\)
+**Lựa chọn:** A. \(\frac12\) | B. \(-\frac12\) | C. \(\frac{\sqrt3}{2}\) | D. \(-\frac{\sqrt3}{2}\)
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B05-P02; OUTCOME: TOP12-O04; NO_RD1; NO_MASTERY -->
 
-**Câu 2.** Cho góc tù α với \(\cos\alpha=-3/5\). Tính \(\sin\alpha\) và \(\tan\alpha\).
+**Câu 2.** Cho góc tù \(\alpha\) với \(\cos\alpha=-\frac35\). Tính \(\sin\alpha\) và \(\tan\alpha\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B05-P05; OUTCOME: TOP12-O02; NO_RD1; NO_MASTERY -->
 
-**Câu 3.** Trong \([0^\circ,180^\circ]\), có những góc nào thỏa \(\sin\alpha=\sqrt3/2\)?
+**Câu 3.** Trong \([0^\circ;180^\circ]\), có những góc nào thỏa \(\sin\alpha=\frac{\sqrt3}2\)?
 
 **Lựa chọn:** A. Chỉ 60° | B. Chỉ 120° | C. 60° và 120° | D. 30° và 150°
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-P01; OUTCOME: TOP12-O04; NO_RD1; NO_MASTERY -->
 
-**Câu 4.** Góc tù α có \(\cos \alpha=-5/13\). Tính sinα và tanα; giải thích việc chọn dấu.
+**Câu 4.** Góc tù \(\alpha\) có \(\cos\alpha=-\frac5{13}\). Tính \(\sin\alpha\) và \(\tan\alpha\); giải thích việc chọn dấu.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B06-C01; OUTCOME: TOP12-O05; NO_RD1; NO_MASTERY -->
 
