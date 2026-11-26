@@ -9,7 +9,7 @@
       "G12-CHII-B06-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Độ dài vectơ bằng khoảng cách hai đầu mút."
     ],
@@ -40,7 +40,7 @@
       "G12-CHII-B06-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tính đường chéo đáy rồi đường chéo không gian."
     ],
@@ -71,7 +71,7 @@
       "G12-CHII-B06-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Hai đầu A, A trùng nhau; phân biệt quy ước cùng hướng, cùng phương với góc không có giá trị duy nhất."
     ],
@@ -105,7 +105,7 @@
       "G12-CHII-B06-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "So hai cạnh đối có cùng chiều đi và độ dài."
     ],
@@ -136,7 +136,7 @@
       "G12-CHII-B06-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Đảo chiều AB, giữ nguyên độ dài."
     ],
@@ -167,7 +167,7 @@
       "G12-CHII-B06-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Hai vectơ bằng nhau phải cùng hướng và cùng độ dài."
     ],
@@ -198,7 +198,7 @@
       "G12-CHII-B06-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Ghép đầu–đuôi A→B→C."
     ],
@@ -229,7 +229,7 @@
       "G12-CHII-B06-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Hai vectơ chung gốc A: dùng đường chéo từ A."
     ],
@@ -260,7 +260,7 @@
       "G12-CHII-B06-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Ghép \\(\\overrightarrow{AB},\\overrightarrow{BC}=\\overrightarrow{AD},\\overrightarrow{CC'}=\\overrightarrow{AA'}\\)."
     ],
@@ -291,7 +291,7 @@
       "G12-CHII-B06-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Dùng |k| nhân độ dài, không dùng dấu của k làm độ dài."
     ],
@@ -322,7 +322,7 @@
       "G12-CHII-B06-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "M nằm giữa A,B và AM bằng nửa AB."
     ],
@@ -353,7 +353,7 @@
       "G12-CHII-B06-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "N thuộc tia đối của AB nên hệ số âm."
     ],
@@ -384,7 +384,7 @@
       "G12-CHII-B06-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Dùng cos60°=1/2."
     ],
@@ -415,7 +415,7 @@
       "G12-CHII-B06-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Cos90° bằng 0."
     ],
@@ -446,7 +446,7 @@
       "G12-CHII-B06-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Cos120°=−1/2."
     ],
@@ -477,7 +477,7 @@
       "G12-CHII-B06-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Lực cùng hướng độ dời nên cos0°=1."
     ],
@@ -508,7 +508,7 @@
       "G12-CHII-B06-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Thành phần lực theo độ dời bằng 0."
     ],
@@ -539,7 +539,7 @@
       "G12-CHII-B06-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Công bằng 8·3·cos120°."
     ],
@@ -570,7 +570,7 @@
       "G12-CHII-B07-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Mặt phẳng Oxy có z=0."
     ],
@@ -601,7 +601,7 @@
       "G12-CHII-B07-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Trên Oz, chỉ thành phần z có thể khác 0."
     ],
@@ -632,7 +632,7 @@
       "G12-CHII-B07-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Tọa độ y bằng 0 nên điểm nằm trong mặt chứa Ox,Oz."
     ],
@@ -663,7 +663,7 @@
       "G12-CHII-B07-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Đọc hệ số của i,j,k lần lượt."
     ],
@@ -694,7 +694,7 @@
       "G12-CHII-B07-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Vectơ vị trí OM có tọa độ đúng bằng điểm M."
     ],
@@ -725,7 +725,7 @@
       "G12-CHII-B07-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Chỉ thành phần theo k khác 0."
     ],
@@ -756,7 +756,7 @@
       "G12-CHII-B07-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Đọc các chiều dương của ba trục theo đúng thứ tự x,y,z."
     ],
@@ -787,7 +787,7 @@
       "G12-CHII-B07-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Độ cao tính từ mặt sàn theo Oz hướng lên."
     ],
@@ -818,7 +818,7 @@
       "G12-CHII-B07-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Oz hướng xuống từ gốc trần, nên sàn ở chiều dương."
     ],
@@ -849,7 +849,7 @@
       "G12-CHII-B07-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Lấy B−A theo từng tọa độ."
     ],
@@ -880,7 +880,7 @@
       "G12-CHII-B07-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Điểm đầu B, điểm cuối A; lấy A−B."
     ],
@@ -911,7 +911,7 @@
       "G12-CHII-B07-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "A là gốc nên hiệu B−A bằng tọa độ B."
     ],
@@ -942,7 +942,7 @@
       "G12-CHII-B08-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Cộng từng thành phần tương ứng."
     ],
@@ -973,7 +973,7 @@
       "G12-CHII-B08-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Trừ từng tọa độ, giữ dấu của số bị trừ."
     ],
@@ -1004,7 +1004,7 @@
       "G12-CHII-B08-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Nhân cả ba thành phần với −3."
     ],
@@ -1035,7 +1035,7 @@
       "G12-CHII-B08-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Tìm một k khớp cả ba tọa độ."
     ],
@@ -1066,7 +1066,7 @@
       "G12-CHII-B08-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Dùng u=kv, không chia 0/0."
     ],
@@ -1097,7 +1097,7 @@
       "G12-CHII-B08-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Từ x,y tìm k rồi thử z."
     ],
@@ -1128,7 +1128,7 @@
       "G12-CHII-B08-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Trung điểm lấy trung bình từng tọa độ."
     ],
@@ -1159,7 +1159,7 @@
       "G12-CHII-B08-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Trọng tâm lấy trung bình ba đỉnh."
     ],
@@ -1190,7 +1190,7 @@
       "G12-CHII-B08-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Trung bình từng cặp tọa độ."
     ],
@@ -1221,7 +1221,7 @@
       "G12-CHII-B08-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Cộng ba tích tương ứng, giữ dấu âm."
     ],
@@ -1252,7 +1252,7 @@
       "G12-CHII-B08-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Tính u·v và kiểm cả hai khác 0."
     ],
@@ -1283,7 +1283,7 @@
       "G12-CHII-B08-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tính tích vô hướng, độ dài 1 và √2."
     ],
@@ -1314,7 +1314,7 @@
       "G12-CHII-B08-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Căn tổng bình phương 3,4,0."
     ],
@@ -1345,7 +1345,7 @@
       "G12-CHII-B08-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Hiệu B−A chỉ khác 0 ở z."
     ],
@@ -1376,7 +1376,7 @@
       "G12-CHII-B08-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Bình phương cả ba thành phần rồi lấy căn."
     ],
@@ -1407,7 +1407,7 @@
       "G12-CHII-B08-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Độ dời thẳng AB có thành phần 3,4,0."
     ],
@@ -1438,7 +1438,7 @@
       "G12-CHII-B08-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Tốc độ bằng quãng đường chia thời gian."
     ],
@@ -1469,7 +1469,7 @@
       "G12-CHII-B08-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tính B−A rồi độ dài vectơ."
     ],
