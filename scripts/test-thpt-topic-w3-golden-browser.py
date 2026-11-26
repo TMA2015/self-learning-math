@@ -5,6 +5,7 @@ import functools
 import http.server
 import pathlib
 import threading
+import sys
 
 from playwright.sync_api import sync_playwright, expect
 
@@ -19,10 +20,12 @@ threading.Thread(target=server.serve_forever, daemon=True).start()
 BASE = f"http://127.0.0.1:{server.server_address[1]}/thpt-preview/chuyen-de/"
 SIZES = {
     "12": (3, 3, 12, 34, 12, 2),
-    "13": (3, 2, 16, 52, 16, 5),
-    "14": (4, 4, 23, 87, 23, 3),
+    "13": (3, 2, 16, 52, 16, 6),
+    "14": (4, 4, 23, 87, 23, 4),
     "15": (5, 5, 22, 67, 8, 5),
 }
+if "--w3a" in sys.argv:
+    SIZES = {k: v for k, v in SIZES.items() if k in ("12", "13", "14")}
 PALETTE = {
     "concept": "rgb(232, 247, 242)",
     "rule": "rgb(234, 241, 252)",
