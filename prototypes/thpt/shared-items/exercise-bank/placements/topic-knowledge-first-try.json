@@ -1201,5 +1201,107 @@
     "item_id": "THPT-TOP22-T13",
     "outcome_id": "G12-CHIII-B10-O05",
     "secondary_outcome_id": "G12-CHIII-B10-O06"
+  },
+  {
+    "collection": "TOPIC:CD01:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-TOP01-KFT01",
+    "outcome_id": "TOP01-O01"
+  },
+  {
+    "collection": "TOPIC:CD01:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-TOP01-KFT02",
+    "outcome_id": "TOP01-O02"
+  },
+  {
+    "collection": "TOPIC:CD01:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHI-TRY03",
+    "outcome_id": "TOP01-O03",
+    "source_context": {
+      "blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+      "heading_id": "TOP01-M03",
+      "locator": "1.3. Điều kiện cần, đủ và kéo theo / Vận dụng",
+      "line": 114,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_AND_DEMAND_REUSE_SGK_ID",
+      "remediation": "Nếu em kết luận chiều đảo đúng chỉ vì chiều thuận đúng, hãy thử số 4: chia hết cho 4 nhưng không chia hết cho 8. Đọc lại **Kiến thức 1.3**, rồi thử **Bài 5** trong Luyện tập; ở mỗi chiều phải tìm chứng minh hoặc phản ví dụ riêng.",
+      "practice_orders": [
+        5
+      ]
+    }
+  },
+  {
+    "collection": "TOPIC:CD01:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-TOP01-KFT04",
+    "outcome_id": "TOP01-O04"
+  },
+  {
+    "collection": "TOPIC:CD01:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-TOP01-KFT05",
+    "outcome_id": "TOP01-O05"
+  },
+  {
+    "collection": "TOPIC:CD01:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-G10-CHI-TRY06",
+    "outcome_id": "TOP01-O06",
+    "source_context": {
+      "blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+      "heading_id": "TOP01-M06",
+      "locator": "2.1. Phần tử, tập con, hai tập bằng nhau / Vận dụng",
+      "line": 236,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_AND_DEMAND_REUSE_SGK_ID",
+      "remediation": "Nếu em cho rằng tập \\(\\{2\\}\\) là một phần tử của A trong khi A chỉ chứa các số, em đã nhầm **phần tử** với **tập con**. Quay lại **Kiến thức 2.1**, rồi làm **Bài 12** và **Bài 13** trong Luyện tập; luôn xác định loại đối tượng ở hai vế trước khi dùng ký hiệu.",
+      "practice_orders": [
+        12,
+        13
+      ]
+    }
+  },
+  {
+    "collection": "TOPIC:CD01:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 7,
+    "item_id": "THPT-TOP01-KFT07",
+    "outcome_id": "TOP01-O07"
+  },
+  {
+    "collection": "TOPIC:CD01:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 8,
+    "item_id": "THPT-TOP01-KFT08",
+    "outcome_id": "TOP01-O08"
+  },
+  {
+    "collection": "TOPIC:CD01:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 9,
+    "item_id": "THPT-TOP01-KFT09",
+    "outcome_id": "TOP01-O09"
+  },
+  {
+    "collection": "TOPIC:CD01:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 10,
+    "item_id": "THPT-TOP01-KFT10",
+    "outcome_id": "TOP01-O10"
+  },
+  {
+    "collection": "TOPIC:CD01:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 11,
+    "item_id": "THPT-TOP01-KFT11",
+    "outcome_id": "TOP01-O11"
   }
 ]
