@@ -43,7 +43,7 @@
     "problem_type_id": "TOP06-SIGN_QUADRANT",
     "difficulty": "APPLY",
     "hints": [
-      "Dùng sin²α+cos²α=1 và dấu của cos ở phần tư II."
+      "Dùng \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\) và dấu của côsin ở góc phần tư II."
     ],
     "remediation": "Nếu quên dấu cos, vẽ điểm ở góc phần tư II và kiểm hoành độ âm; ôn TOP06-M02. Luyện THPT-G11-B01-P01.",
     "rubric": null,
@@ -74,7 +74,7 @@
     "hints": [
       "Tính góc quay thực bằng radian, không rút về một vòng trước khi tính đường đi."
     ],
-    "remediation": "Nếu tính quãng đường âm, phân biệt rθ có dấu với r|θ|; ôn TOP06-M03. Luyện THPT-G11-B01-P03.",
+    "remediation": "Nếu tính quãng đường âm, phân biệt độ dời cung có hướng \\(r\\theta\\) với quãng đường \\(r|\\theta|\\); ôn TOP06-M03. Luyện THPT-G11-B01-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -101,9 +101,9 @@
     "problem_type_id": "TOP06-DOMAIN_SIMPLIFICATION",
     "difficulty": "TRANSFER",
     "hints": [
-      "Ghi miền 1+cosx≠0 trước khi dùng công thức nửa góc."
+      "Ghi miền \\(1+\\cos x\\ne0\\) trước khi dùng công thức nửa góc."
     ],
-    "remediation": "Nếu khử cos(x/2) trước khi kiểm miền, thử x=π và ghi điểm loại; ôn TOP06-M04. Luyện THPT-G11-B01-P04.",
+    "remediation": "Nếu khử \\(\\cos\\left(\\frac x2\\right)\\) trước khi kiểm miền, thử \\(x=\\pi\\) và ghi điểm loại; ôn TOP06-M04. Luyện THPT-G11-B01-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -188,9 +188,9 @@
     "problem_type_id": "TOP06-SUM_TO_PRODUCT",
     "difficulty": "APPLY",
     "hints": [
-      "Áp dụng cos A−cos B=−2sin((A+B)/2)sin((A−B)/2)."
+      "Áp dụng \\(\\cos A-\\cos B=-2\\sin\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)\\)."
     ],
-    "remediation": "Nếu nhầm nửa tổng và nửa hiệu, viết A=5x,B=x trước khi thay; ôn TOP06-M07. Luyện THPT-G11-B02-P05.",
+    "remediation": "Nếu nhầm nửa tổng và nửa hiệu, viết \\(A=5x\\), \\(B=x\\) trước khi thay; ôn TOP06-M07. Luyện THPT-G11-B02-P05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -217,9 +217,9 @@
     "problem_type_id": "TOP06-COMPOSITE_DOMAIN",
     "difficulty": "APPLY",
     "hints": [
-      "Tìm các điểm mẫu bằng 0 rồi loại khỏi ℝ."
+      "Tìm các điểm mẫu bằng 0 rồi loại khỏi tập \\(\\mathbb R\\)."
     ],
-    "remediation": "Nếu chỉ loại một họ nghiệm, vẽ đường ngang y=1/2 trên đường tròn đơn vị; ôn TOP06-M08. Luyện THPT-G11-B03-P01.",
+    "remediation": "Nếu chỉ loại một họ nghiệm, vẽ đường ngang \\(y=\\frac12\\) trên đường tròn đơn vị; ôn TOP06-M08. Luyện THPT-G11-B03-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -246,9 +246,9 @@
     "problem_type_id": "TOP06-PERIOD_HARMONICS",
     "difficulty": "APPLY",
     "hints": [
-      "Nếu T là chu kỳ của tổng, so thêm f(x+π/2) để tách hai thành phần."
+      "Nếu T là chu kỳ của tổng, xét hiệu với \\(f\\left(x+\\frac\\pi2\\right)\\) để tách hai thành phần."
     ],
-    "remediation": "Nếu chỉ tìm được chu kỳ mà chưa chứng minh nhỏ nhất, tách sin2x khỏi sin4x bằng hiệu của hai giá trị cách nhau π/2; ôn TOP06-M09. Luyện THPT-G11-B03-P03.",
+    "remediation": "Nếu chỉ tìm được một chu kỳ mà chưa chứng minh nhỏ nhất, tách \\(\\sin(2x)\\) khỏi \\(\\sin(4x)\\) bằng hiệu của hai giá trị cách nhau \\(\\frac\\pi2\\); ôn TOP06-M09. Luyện THPT-G11-B03-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -265,7 +265,7 @@
     "content_version": 1,
     "stem": "\\(h(t)=3-2\\cos(\\frac{\\pi t}{4})\\). Tìm chu kỳ, tập giá trị, \\(h(0)\\), \\(h(4)\\).",
     "answer_key": "8; \\([1;5]\\); 1; 5.",
-    "worked_solution": "\\(\\omega=\\frac{\\pi}{4}\\) nên \\(T=8\\). Vì \\(\\cos(\\frac{\\pi t}{4})\\in[-1;1]\\), \\(h(t)\\in[1;5]\\). Thế \\(t=0\\): \\(h(0)=1\\); \\(t=4\\): \\(\\cos\\pi=-1\\) nên \\(h(4)=5\\).",
+    "worked_solution": "Hệ số của t trong đối số côsin là \\(\\omega=\\frac\\pi4\\), nên chu kỳ cơ bản \\(T=\\frac{2\\pi}{\\omega}=8\\). Vì \\(\\cos\\left(\\frac{\\pi t}{4}\\right)\\in[-1;1]\\) và nhận mọi giá trị trong đoạn này, \\(h(t)\\) nhận mọi giá trị trong \\([1;5]\\). Thế \\(t=0\\) được \\(h(0)=1\\); thế \\(t=4\\) thì \\(\\cos\\pi=-1\\), nên \\(h(4)=5\\).",
     "skill_ids": [
       "G11-B03-SIN_GRAPH"
     ],
@@ -275,9 +275,9 @@
     "problem_type_id": "TOP06-PARAMETER_GRAPH",
     "difficulty": "APPLY",
     "hints": [
-      "Tìm chu kỳ của cos theo hệ số của t; dùng −1≤cos≤1."
+      "Tìm chu kỳ của hàm côsin theo hệ số của t; dùng \\(-1\\le\\cos u\\le1\\) với mọi u thực."
     ],
-    "remediation": "Nếu nhầm 3 là biên độ, viết dạng d+Acos(ωt+φ) và thử t=0,4; ôn TOP06-M10. Luyện THPT-G11-B03-P02.",
+    "remediation": "Nếu nhầm 3 là biên độ, viết dạng \\(d+A\\cos(\\omega t+\\varphi)\\), biên độ là \\(|A|\\), rồi thử \\(t=0\\) và \\(t=4\\); ôn TOP06-M10. Luyện THPT-G11-B03-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -304,9 +304,9 @@
     "problem_type_id": "TOP06-TAN_DOMAIN",
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Tìm nghiệm cos3x=0; chu kỳ tan theo đối số là π."
+      "Tìm nghiệm \\(\\cos(3x)=0\\); chu kỳ của hàm tang theo đối số là \\(\\pi\\)."
     ],
-    "remediation": "Nếu nhận tan tại tiệm cận, kiểm cos3x=0 và chia cả họ cho 3; ôn TOP06-M11. Luyện THPT-G11-B03-P06.",
+    "remediation": "Nếu nhận tang tại tiệm cận đứng, kiểm \\(\\cos(3x)=0\\) và chia cả họ nghiệm cho 3; ôn TOP06-M11. Luyện THPT-G11-B03-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -333,9 +333,9 @@
     "problem_type_id": "TOP06-COS_EQUATION",
     "difficulty": "APPLY",
     "hints": [
-      "Đặt u=3x, giải hai họ của cosu rồi chia cả họ cho 3."
+      "Đặt \\(u=3x\\), giải hai họ nghiệm của phương trình theo u rồi chia cả họ cho 3."
     ],
-    "remediation": "Nếu quên chia cả 2kπ, thử thế một nghiệm của họ vào 3x; ôn TOP06-M12. Luyện THPT-G11-B04-P02.",
+    "remediation": "Nếu quên chia cả \\(2k\\pi\\), thử thế một nghiệm của họ vào \\(3x\\); ôn TOP06-M12. Luyện THPT-G11-B04-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -362,9 +362,9 @@
     "problem_type_id": "TOP06-COT_EQUATION",
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Giải cotu=1, nhớ điều kiện sinu≠0."
+      "Giải \\(\\cot u=1\\), nhớ điều kiện \\(\\sin u\\ne0\\)."
     ],
-    "remediation": "Nếu dùng chu kỳ 2π cho cot, nhớ π và kiểm sin2x≠0; ôn TOP06-M13. Luyện THPT-G11-B04-C04.",
+    "remediation": "Nếu dùng chu kỳ \\(2\\pi\\) cho côtang, nhớ chu kỳ cơ bản là \\(\\pi\\) và kiểm \\(\\sin(2x)\\ne0\\); ôn TOP06-M13. Luyện THPT-G11-B04-C04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -393,7 +393,7 @@
     "hints": [
       "Tử bằng 0 đồng thời mẫu khác 0."
     ],
-    "remediation": "Nếu nhận x=0 sau khi cho tử bằng 0, kiểm mẫu ban đầu và loại điểm không xác định; ôn TOP06-M14. Luyện THPT-G11-B04-P08.",
+    "remediation": "Nếu nhận \\(x=0\\) sau khi cho tử bằng 0, kiểm mẫu ban đầu và loại điểm không xác định; ôn TOP06-M14. Luyện THPT-G11-B04-P08.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -439,7 +439,7 @@
     "content_version": 1,
     "stem": "Mô hình giả định \\(h(t)=20+6\\sin(\\frac{\\pi t}{12})\\) (cm), với \\(0\\le t\\le24\\) giờ. Tìm chu kỳ của công thức, GTLN/GTNN trong miền và khoảng \\(h(t)>20\\) cm.",
     "answer_key": "\\(T=24\\) giờ; GTLN 26 cm tại \\(t=6\\) giờ; GTNN 14 cm tại \\(t=18\\) giờ; \\(h>20\\) cm khi \\(0<t<12\\) giờ.",
-    "worked_solution": "\\(\\omega=\\frac{\\pi}{12}\\Rightarrow T=24\\). Pha đạt \\(\\frac{\\pi}{2}\\) ở \\(t=6\\), \\(\\frac{3\\pi}{2}\\) ở \\(t=18\\). Sin dương trên \\((0;\\pi)\\) tương ứng \\(t\\in(0;12)\\).",
+    "worked_solution": "Hệ số \\(\\omega=\\frac\\pi{12}\\) nên công thức có chu kỳ \\(T=\\frac{2\\pi}{\\omega}=24\\) giờ. Trên miền \\(0\\le t\\le24\\), pha tăng từ 0 đến \\(2\\pi\\). Sin bằng 1 tại pha \\(\\frac\\pi2\\), tức \\(t=6\\) giờ, cho giá trị lớn nhất \\(20+6=26\\) cm; sin bằng \\(-1\\) tại pha \\(\\frac{3\\pi}2\\), tức \\(t=18\\) giờ, cho giá trị nhỏ nhất \\(20-6=14\\) cm. Vì \\(h(t)>20\\iff\\sin\\left(\\frac{\\pi t}{12}\\right)>0\\), trong miền thời gian đã cho ta được \\(0<t<12\\) giờ.",
     "skill_ids": [
       "G11-B04-APPLICATION"
     ],
