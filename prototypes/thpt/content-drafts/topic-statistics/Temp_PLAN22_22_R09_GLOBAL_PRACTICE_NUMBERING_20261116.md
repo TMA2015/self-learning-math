@@ -14,7 +14,7 @@ Thống kê giúp ta mô tả mức điển hình và mức dao động của m�
 
 Một bạn đếm đủ học sinh trong lớp, một bạn đo chiều dài bàn. Vì sao số đếm và số đo không có cùng mức chắc chắn?
 
-Một giá trị đọc từ dụng cụ có thể là **số gần đúng**, không phải số đúng. Khi biết số đúng \(\bar a\) và số ghi \(a\), sai số tuyệt đối \(\Delta=|\bar a-a|\); sai số tương đối theo số gần đúng \(a\ne0\) là \(\delta_a=\Delta/|a|\). Nếu chỉ biết độ chính xác \(d\), ta biết \(\Delta\le d\), **không** biết chắc sai số thực bằng \(d\). Quy tròn đến hàng phần mười theo quy tắc thông thường có chặn sai số \(0{,}05\) đơn vị. Ví dụ giá trị thật \(12{,}47\) mm và bản ghi \(12{,}5\) mm: \(\Delta=0{,}03\) mm, \(\delta_a=0{,}03/12{,}5=0{,}24\%\).
+Một giá trị đọc từ dụng cụ có thể là **số gần đúng**, không phải số đúng. Khi biết số đúng \(\bar a\) và số ghi \(a\), sai số tuyệt đối \(\Delta=\lvert\bar a-a\rvert\); sai số tương đối theo số gần đúng \(a\ne0\) là \(\delta_a=\frac{\Delta}{\lvert a\rvert}\). Nếu chỉ biết độ chính xác \(d\), ta biết \(\Delta\le d\), **không** biết chắc sai số thực bằng \(d\). Quy tròn đến hàng phần mười theo quy tắc thông thường có chặn sai số \(0{,}05\) đơn vị.
 
 
 
@@ -40,13 +40,13 @@ Làm tròn là thay giá trị bởi số thuận tiện hơn ở một hàng x�
 
 **Vì sao “độ chính xác \(d\)” không phải sai số thực?** Khi một phép đo chỉ được bảo đảm có sai số tuyệt đối không vượt quá \(d\), giá trị đúng có thể nằm bất kỳ trong đoạn từ \(a-d\) đến \(a+d\). Chỉ khi biết giá trị đúng \(\bar a\) mới tính được **sai số thực** \(|\bar a-a|\). Không tự nói “sai số đúng bằng \(d\)”, vì \(d\) chỉ là **giới hạn**.
 
-**Ví dụ minh họa.** Một dụng cụ ghi chiều dài \(12{,}5\) cm với độ chính xác \(d=0{,}1\) cm. Ta chỉ suy giá trị đúng nằm trong đoạn \([12{,}4;12{,}6]\) cm theo chặn đã cho. Nếu sau đó biết giá trị đúng thực sự là \(12{,}47\) cm, sai số tuyệt đối là \(0{,}03\) cm, nhỏ hơn \(d\). Sai số tương đối theo số gần đúng là \(\delta=0{,}03/12{,}5=0{,}0024=0{,}24\%\). Phải ghi rõ **đơn vị** ở sai số tuyệt đối, còn sai số tương đối không mang đơn vị.
+**Ví dụ minh họa.** Một dụng cụ ghi chiều dài \(12{,}5\) cm với độ chính xác \(d=0{,}1\) cm. Ta chỉ suy giá trị đúng nằm trong đoạn \([12{,}4;12{,}6]\) cm theo chặn đã cho. Nếu sau đó biết giá trị đúng thực sự là \(12{,}47\) cm, sai số tuyệt đối là \(0{,}03\) cm, nhỏ hơn \(d\). Sai số tương đối theo số gần đúng là \(\delta_a=\frac{0{,}03}{12{,}5}=0{,}0024=0{,}24\%\). Phải ghi rõ **đơn vị** ở sai số tuyệt đối, còn sai số tương đối không mang đơn vị.
 
 **Ví dụ**
 
-**Đề bài.** Một chi tiết dài thật \(12{,}47\) mm nhưng số đo được ghi là \(12{,}5\) mm. Tính sai số tuyệt đối, sai số tương đối theo số gần đúng.
+**Đề bài.** Một chi tiết dài thật \(19{,}94\) mm nhưng số đo được ghi là \(20{,}0\) mm. Tính sai số tuyệt đối, sai số tương đối theo số gần đúng.
 
-**Lời giải.** \(\Delta=|12{,}47-12{,}5|=0{,}03\) mm. Vì \(12{,}5\ne0\), \(\delta_a=0{,}03/12{,}5=0{,}24\%\). Có số đúng mới tính được sai số thực.
+**Lời giải.** \(\Delta=\lvert19{,}94-20{,}0\rvert=0{,}06\) mm. Vì \(20{,}0\ne0\), \(\delta_a=\frac{0{,}06}{20{,}0}=0{,}003=0{,}3\%\). Có số đúng mới tính được sai số thực.
 
 
 
@@ -144,15 +144,15 @@ Trên dãy thô, dùng đúng quy ước chia nửa mẫu của SGK KNTT. Với 
 
 
 
-<!-- ITEM_ID: THPT-TOP22-T03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G10-B13-MEDIAN; SECONDARY_OUTCOME: G10-B13-QUARTILES; CONTENT_VERSION: TOP22-R09-20261121-FT03; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP22-T03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G10-B13-MEDIAN; SECONDARY_OUTCOME: G10-B13-QUARTILES; CONTENT_VERSION: TOP22-R09-WORK-20261126-FT03; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
 
 **Vận dụng**
 
-Tìm Me, Q1, Q3 của 2,4,6,8,10,12.
+Tìm \(M_e,Q_1,Q_3\) của mẫu \(8,2,12,4,10,6\). Hãy sắp xếp mẫu trước khi tính.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Có 6 số: \(Me=(6+8)/2=7\); nửa dưới 2,4,6 có \(Q_1=4\), nửa trên 8,10,12 có \(Q_3=10\).
+Sắp tăng dần: \(2,4,6,8,10,12\). Có 6 số: \(M_e=\frac{6+8}{2}=7\); nửa dưới \(2,4,6\) có \(Q_1=4\), nửa trên \(8,10,12\) có \(Q_3=10\).
 
 **Kiểm lỗi**
 
@@ -259,15 +259,15 @@ Vì tổng bình phương không âm, luôn \(s^2\ge0\); và \(s^2=0\) **khi và
 
 
 
-<!-- ITEM_ID: THPT-TOP22-T05; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G10-B14-VARIANCE; SECONDARY_OUTCOME: G10-B14-COMPARISON; CONTENT_VERSION: TOP22-R09-20261121-FT05; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP22-T05; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G10-B14-VARIANCE; SECONDARY_OUTCOME: G10-B14-COMPARISON; CONTENT_VERSION: TOP22-R09-WORK-20261126-FT05; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
 
 **Vận dụng**
 
-So sánh phương sai A=4,5,6 và B=2,5,8.
+So sánh phương sai của mẫu \(A=(4;5;6)\) và \(B=(2;5;8)\). Vì sao kết quả phương sai không đổi so với hai mẫu trong Ví dụ ngay trước đó?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Trung bình cùng bằng 5; \(s_A^2=2/3\), \(s_B^2=6\). A ít phân tán hơn.
+Trung bình cùng bằng 5; \(s_A^2=\frac23\), \(s_B^2=6\). A ít phân tán hơn. Mỗi giá trị của hai mẫu đều tăng thêm 1 so với mẫu tương ứng trong Ví dụ, nên mỗi trung bình cũng tăng 1; độ lệch từng giá trị so với trung bình giữ nguyên, do đó phương sai không đổi.
 
 **Kiểm lỗi**
 
@@ -310,13 +310,13 @@ Tần số 8 trên tổng 20 nghĩa là 40% mẫu nằm trong khoảng đó. Đi
 
 **Nhóm rộng gấp đôi có thể có nhiều quan sát gấp đôi mà không đông hơn theo “mỗi đơn vị đo”.** Với nhóm \([0,10)\) có tần số \(10\), nhóm \([10,30)\) có tần số \(20\), thì độ rộng hai nhóm lần lượt \(10\) và \(20\); tần số **trên một đơn vị độ dài** đều bằng \(10/10=1\) và \(20/20=1\). Trong một biểu đồ histogram có các cột rộng theo đúng khoảng, để **diện tích cột** biểu diễn tần số, chiều cao tương ứng là \(f_i/h_i\), không phải \(f_i\).
 
-**Ví dụ minh họa.** Hai nhóm trên có tần số lần lượt \(10\) và \(20\) nhưng mật độ tần số đều bằng \(1\). Nếu chỉ đặt hai cột cao \(10\) và \(20\) với độ rộng khác nhau rồi so **chiều cao**, em sẽ tưởng nhóm thứ hai có mức tập trung theo đơn vị đo cao hơn; trong khi nó chỉ chứa **khoảng dài gấp đôi**. Đây là phần hướng dẫn đọc biểu đồ khi **độ rộng nhóm không bằng nhau**, không sửa quy tắc đếm \(n=\sum f_i\).
+**Cách đọc biểu đồ khi độ rộng khác nhau.** Hãy hình dung hai hình chữ nhật có cùng chiều cao 1: cột thứ nhất rộng 10 nên diện tích bằng 10; cột thứ hai rộng 20 nên diện tích bằng 20. Diện tích gấp đôi là vì khoảng rộng gấp đôi, không phải mật độ cao gấp đôi. Đây là phần hướng dẫn đọc histogram; không sửa quy tắc đếm \(n=\sum f_i\).
 
 **Ví dụ**
 
-**Đề bài.** Ghép \(0,9,10,19,20\) vào \([0,10),[10,20),[20,30)\); tìm tần số.
+**Đề bài.** Ghép \(1,8,10,11,19,20\) vào các nhóm \([0;10),[10;20),[20;30)\); tìm tần số.
 
-**Lời giải.** Nhóm đầu có \(0,9\), nhóm thứ hai có \(10,19\), nhóm cuối có \(20\). Tần số \(2,2,1\), tổng đúng bằng năm; không đếm điểm cận phải vào nhóm trước.
+**Lời giải.** Nhóm đầu có \(1,8\), nhóm thứ hai có \(10,11,19\), nhóm cuối có \(20\). Tần số \(2,3,1\), tổng đúng bằng sáu; không đếm điểm cận phải vào nhóm trước.
 
 
 
@@ -555,15 +555,15 @@ Chỉ một nhóm cực biên có vài quan sát cũng có thể khiến độ p
 
 
 
-<!-- ITEM_ID: THPT-TOP22-T10; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G12-CHIII-B09-O01; SECONDARY_OUTCOME: G12-CHIII-B09-O02; CONTENT_VERSION: TOP22-R09-20261121-FT10; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP22-T10; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G12-CHIII-B09-O01; SECONDARY_OUTCOME: G12-CHIII-B09-O02; CONTENT_VERSION: TOP22-R09-WORK-20261126-FT10; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
 
 **Vận dụng**
 
-Nhóm [5,15):3,[15,25):4,[25,35):1: ước lượng độ rộng phủ theo nhóm.
+Bảng gồm bốn nhóm \([0;10),[10;20),[20;30),[30;40)\) có tần số lần lượt \(0,3,4,1\). Tính khoảng biến thiên ghép nhóm.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-35−5=30 đơn vị; không kết luận R thực chắc chắn bằng 30.
+Nhóm đầu có quan sát là \([10;20)\), nhóm cuối có quan sát là \([30;40)\). Do đó \(R_g=40-10=30\). Không lấy cận 0 của nhóm rỗng, cũng không kết luận khoảng biến thiên của dữ liệu gốc chắc chắn bằng 30.
 
 **Kiểm lỗi**
 
@@ -604,15 +604,15 @@ Khi so độ ổn định hai mẫu, R cho biết độ phủ từ cực thấp 
 
 
 
-<!-- ITEM_ID: THPT-TOP22-T11; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G12-CHIII-B09-O04; SECONDARY_OUTCOME: G12-CHIII-B09-O05; CONTENT_VERSION: TOP22-R09-20261121-FT11; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP22-T11; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G12-CHIII-B09-O04; SECONDARY_OUTCOME: G12-CHIII-B09-O05; CONTENT_VERSION: TOP22-R09-WORK-20261126-FT11; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
 
 **Vận dụng**
 
-Nhóm [0,10):4,[10,20):10,[20,30):6: Q1,Q3,IQR ước lượng?
+Mẫu B có các nhóm \([0;10),[10;20),[20;30)\) với tần số \(4,10,6\). Ước lượng \(Q_1,Q_3,\mathrm{IQR}\). So với mẫu trong Ví dụ ngay trước đó, mẫu nào tập trung hơn ở nửa giữa? Vì sao khoảng biến thiên ghép nhóm chưa phân biệt được hai mẫu này?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(Q_1=11\), \(Q_3=20+10/6=65/3\), \(IQR_g=32/3\approx10{,}67\).
+\(Q_1\approx11\), \(Q_3\approx20+\frac{10}{6}=\frac{65}{3}\), \(\mathrm{IQR}_g\approx\frac{32}{3}\approx10{,}67\). Mẫu B có IQR nhỏ hơn \(12{,}5\) của mẫu trong Ví dụ, nên nửa giữa tập trung hơn theo ước lượng. Cả hai có cùng nhóm đầu và cuối không rỗng, nên \(R_g=30\) ở cả hai; chỉ dùng R chưa thấy sự khác biệt này.
 
 **Kiểm lỗi**
 
@@ -708,15 +708,15 @@ Thống kê mô tả chỉ mô tả dữ liệu đã quan sát, không chứng m
 
 
 
-<!-- ITEM_ID: THPT-TOP22-T13; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G12-CHIII-B10-O05; SECONDARY_OUTCOME: G12-CHIII-B10-O06; CONTENT_VERSION: TOP22-R09-20261121-FT13; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP22-T13; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G12-CHIII-B10-O05; SECONDARY_OUTCOME: G12-CHIII-B10-O06; CONTENT_VERSION: TOP22-R09-WORK-20261126-FT13; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
 
 **Vận dụng**
 
-A có tần số 1,4,1 và B 2,2,2 trên ba nhóm trên: so sánh phương sai nhóm.
+A có tần số \(1,4,1\) và B có \(2,2,2\) trên ba nhóm trên. So sánh phương sai nhóm. Viết một nhận xét được phép kết luận và một thông tin còn thiếu nếu muốn khuyến nghị chọn A hay B.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Cùng \(\bar x_g=15\). \(s_A^2=100/3\), \(s_B^2=200/3\), nên A ít phân tán hơn.
+Cùng \(\bar x_g=15\). \(s_A^2=\frac{100}{3}\), \(s_B^2=\frac{200}{3}\), nên A ít phân tán hơn theo bảng ghép nhóm. Chưa thể nói A tốt hơn: chẳng hạn cần biết đại lượng đo, mục tiêu lựa chọn và liệu mẫu có đại diện cho đối tượng muốn khuyến nghị hay không.
 
 **Kiểm lỗi**
 
