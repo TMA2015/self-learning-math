@@ -19786,6 +19786,92 @@
       },
       "remaining": "CD10–12 local residuals; shared SGK/source-owner reconciliation, FirstTry, Written/Anchor, skill/depth gaps. No bank-wide Academic/PED/browser PASS, conversion, merge/deploy.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp90": {
+      "scope": "CD10–12 residual local learner-visible fields after CP80; close CD01–12 residual local review",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "ca67d9617cfe6dbfe03b04ced480ff904dcaa952",
+      "topics": [
+        {
+          "topic": "CD10",
+          "item_before": "dfadd4adea416a89f84b9343011b5d29a0944246",
+          "item_after": "7064ee56cc2c23fdc8f226ecea7ee2e7f05e460d",
+          "item_commit": "552e4fa36ece9cc88bac3b62ddd04c9c9b1a4ab4",
+          "placement_blob": "8bb7bb701d97c524bcc389751d9347db1df3be78",
+          "local_records_reviewed": 36,
+          "local_records_changed": 33,
+          "fields_changed": {
+            "stem": 5,
+            "answer_key": 21,
+            "worked_solution": 26,
+            "hints": 22,
+            "remediation": 23
+          },
+          "other_fields_unchanged": true,
+          "placement_unchanged": true,
+          "targeted_raw_math_scan_residual": 0,
+          "inline_and_display_delimiters_balanced": true,
+          "options_or_rubrics_present": 0
+        },
+        {
+          "topic": "CD11",
+          "item_before": "8f2acdf15db7967f34aee47fa4f7dc8580f41ae5",
+          "item_after": "1fec0a72639790a280bad9b55a9c5582585fa17b",
+          "item_commit": "71975f652f8d6fc53679f82c34477dbc06cf32a7",
+          "placement_blob": "dd2ff35b6059ba2da72eb875b4f1f91a634c11da",
+          "local_records_reviewed": 22,
+          "local_records_changed": 21,
+          "fields_changed": {
+            "stem": 0,
+            "answer_key": 2,
+            "worked_solution": 3,
+            "hints": 15,
+            "remediation": 18
+          },
+          "other_fields_unchanged": true,
+          "placement_unchanged": true,
+          "targeted_raw_math_scan_residual": 0,
+          "inline_and_display_delimiters_balanced": true,
+          "options_or_rubrics_present": 0
+        },
+        {
+          "topic": "CD12",
+          "item_before": "f230ebeaa18e60e72dfd53266cde8cd64ccac3ed",
+          "item_after": "d3be4a9148a2077c6551cb2be0e0f0e2edb1ae6d",
+          "item_commit": "dcfaa9c15ecb70b70307db6810767bf80c07a08e",
+          "placement_blob": "009bce34d5871a445b57bd63df2e7f3306c07aa2",
+          "local_records_reviewed": 12,
+          "local_records_changed": 7,
+          "fields_changed": {
+            "stem": 0,
+            "answer_key": 0,
+            "worked_solution": 1,
+            "hints": 2,
+            "remediation": 7
+          },
+          "other_fields_unchanged": true,
+          "placement_unchanged": true,
+          "targeted_raw_math_scan_residual": 0,
+          "inline_and_display_delimiters_balanced": true,
+          "options_or_rubrics_present": 0
+        }
+      ],
+      "findings": [
+        "CD10 P17 missing horizontal asymptote y=0 corrected in key, worked solution, hint and remediation; original domain and vertical asymptote retained. CD10 other changed keys retain mathematical results; P07/P09 specify all attainment locations, P19/P22 coordinate convention, P24 clarify local domain, P30 keep P consistently. CD11 P18 explicitly identify antiderivative and signed subintervals; P20/P22 volume units; CD12 P03 explicitly state cosine rule and positive length. No new primary PDF or independent review.",
+        "70 local records read; 61 revised. No ID, source, metadata, placement, auto_grade or protected changes; source projection not rewritten. Targeted raw scan is not exhaustive semantic or rendered-math validation."
+      ],
+      "progress": {
+        "topics_scoped_practice_replay_review": 22,
+        "practice": 1479,
+        "replay": 338,
+        "residual_local_fields_revisited_cd01_cd12": 255,
+        "total_cd01_cd12_local_records": 255,
+        "local_records_revised_cumulative": 205,
+        "remaining_cd01_cd12_local_records": 0
+      },
+      "remaining": "Shared SGK/source-owner reconciliation (including CD10-P17 correction propagation if present in current source), FirstTry, Written/Anchor, skill/depth gaps and whole-bank semantic/notation closure. No bank-wide Academic/PED/browser PASS, conversion, merge/deploy.",
+      "release_authorization": false
     }
   }
 }
