@@ -99,11 +99,11 @@
     "15": {
       "title": "Quan hệ song song trong không gian",
       "authorPR": 846,
-      "authorHead": "5bb6e5fdb56a2d4d9d6cf749916913da2540b36f",
+      "authorHead": "2a39bf158d4a645888af00904095350020cc90df",
       "sourcePath": "prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md",
-      "sourceBlob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "sourceBlob": "11d2106a7ed77b801c86420503dca929544dc076",
       "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md",
-      "q18ReceiptBlob": "e84c2f66c9b95d63fbef8d5f0e1493f004036164",
+      "q18ReceiptBlob": "3063f34811455faea336d5b9f7109466e184a820",
       "groupsKnowledge": 5,
       "groupsPractice": 5,
       "outcomes": 22,
@@ -116,7 +116,11 @@
         "FIG_G11_CHIV_B13_SHARED_R01.svg",
         "FIG_G11_CHIV_B14_SHARED_R01.svg"
       ],
-      "model": "slm-top15-line-plane-r00"
+      "model": "slm-top15-line-plane-r00",
+      "v2Path": "prototypes/thpt/release-handoffs/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R04_HANDOFF_V2_20261116.md",
+      "v2Blob": "0261bbf0be8807032f037375ddb0371a2a80affb",
+      "readyPath": "prototypes/thpt/release-queue/ready/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R04.md",
+      "readyBlob": "d0e4bf82839989d8c15a9e835f22c75cae01fb5a"
     }
   }
 }

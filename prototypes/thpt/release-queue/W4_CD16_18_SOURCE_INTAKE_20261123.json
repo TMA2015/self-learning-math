@@ -13,11 +13,11 @@
     "16": {
       "title": "Quan hệ vuông góc và góc trong không gian",
       "authorPR": 848,
-      "authorHead": "805feb8080396f7f39ee3b04e3230c5a2bbd135b",
+      "authorHead": "4607740d76e635a7a76dffda013ae788bdc3ff46",
       "sourcePath": "prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md",
-      "sourceBlob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "sourceBlob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md",
-      "q18ReceiptBlob": "19a2ed6ebfd7898da5f186350ea6042e2134fa7e",
+      "q18ReceiptBlob": "18ce1cba1049ec7435ef7cfffc1a27804c1fd394",
       "readyId": "THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03",
       "outcomes": 21,
       "items": 65,
@@ -37,16 +37,20 @@
         "FIG-G11-CHVII-B25-01_R00.svg"
       ],
       "groupsKnowledge": 4,
-      "groupsPractice": 4
+      "groupsPractice": 4,
+      "v2Path": "prototypes/thpt/release-handoffs/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03_HANDOFF_V2_20261116.md",
+      "v2Blob": "3c433d8c8e763c0017dc156a71c88accc6bf4ca1",
+      "readyPath": "prototypes/thpt/release-queue/ready/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03.md",
+      "readyBlob": "6ac00b33e50c68f4937460cc2725902fd4292d44"
     },
     "17": {
       "title": "Khoảng cách và thể tích khối đa diện",
       "authorPR": 853,
-      "authorHead": "97458512ce9343077a4fa350247e3152a6833ce2",
+      "authorHead": "5acb11da0c0f30c32088b0a5d6be795fa16a9268",
       "sourcePath": "prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md",
-      "sourceBlob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+      "sourceBlob": "03b6b27adbeaf854d3db1d8fc9e830a0294a08aa",
       "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md",
-      "q18ReceiptBlob": "bb941ea3563034e0aa779c69118f8ac02355a21e",
+      "q18ReceiptBlob": "87f927cbcbd9ff4f26ba2a3b2c411a9a9770f82e",
       "readyId": "THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02",
       "outcomes": 12,
       "items": 37,
@@ -62,16 +66,20 @@
         "FIG-G11-CHVII-B27-01_R00.svg"
       ],
       "groupsKnowledge": 2,
-      "groupsPractice": 3
+      "groupsPractice": 3,
+      "v2Path": "prototypes/thpt/release-handoffs/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02_HANDOFF_V2_20261116.md",
+      "v2Blob": "0925484aad44b7d19408816aafa84ad0a1bc36e8",
+      "readyPath": "prototypes/thpt/release-queue/ready/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02.md",
+      "readyBlob": "952eed6931893f32602cfdee8959cd2a161ed523"
     },
     "18": {
       "title": "Phương pháp tọa độ trong không gian Oxyz",
       "authorPR": 855,
-      "authorHead": "25f892c43ad03ed002d61bdb1d5f274cf81c1227",
+      "authorHead": "a1adb856defdb0005ec0362ab1779ee2eaac2047",
       "sourcePath": "prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md",
-      "sourceBlob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+      "sourceBlob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
       "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md",
-      "q18ReceiptBlob": "3a0cbbfb74252787f08c9504de9018c7e58bf8a1",
+      "q18ReceiptBlob": "1d575aebabb51597f0c351265a3914249dbd28ef",
       "readyId": "THPT-TOPIC18-OXYZ-FULL-R04",
       "outcomes": 40,
       "items": 207,
@@ -103,7 +111,11 @@
         "FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg"
       ],
       "groupsKnowledge": 8,
-      "groupsPractice": 8
+      "groupsPractice": 8,
+      "v2Path": "prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R04_HANDOFF_V2_20261116.md",
+      "v2Blob": "d79c5c6669ba0880154da2fad3ccce3dbcbad095",
+      "readyPath": "prototypes/thpt/release-queue/ready/THPT-TOPIC18-OXYZ-FULL-R04.md",
+      "readyBlob": "adccc8e2393737bf36c1cdabb27593241da58858"
     }
   },
   "verifiedSourceReceiptPairs": 6,
