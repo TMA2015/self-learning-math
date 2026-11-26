@@ -1182,17 +1182,17 @@ Tính \(\log_{\frac19}3\). Giá trị này dương hay âm?
 
 **Bài 35.**
 
-Đặt L=log₄8+log_(1/2)4−log₉3. (a) Tính L chính xác bằng cách đổi cơ số/nhận diện lũy thừa. (b) Nêu các điều kiện để log_a b tồn tại trên ℝ và giải thích log₄(−8) không có nghĩa.
+Đặt \(L=\log_4 8+\log_{\frac12}4-\log_9 3\). (a) Tính L chính xác bằng cách đổi cơ số hoặc nhận diện lũy thừa. (b) Nêu các điều kiện để \(\log_a b\) tồn tại trên \(\mathbb R\) và giải thích \(\log_4(-8)\) không có nghĩa.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** L=−1. Điều kiện a>0, a≠1, b>0; log₄(−8) không tồn tại trên ℝ.
+**Đáp án:** \(L=-1\). Điều kiện \(a>0,\ a\ne1,\ b>0\); \(\log_4(-8)\) không tồn tại trên \(\mathbb R\).
 
-log₄8=3/2 vì 4^(3/2)=8; log_(1/2)4=−2 vì (1/2)^(−2)=4; log₉3=1/2 vì 9^(1/2)=3. Tổng L=3/2−2−1/2=−1. Với log_a b thực, cơ số a>0 và a≠1, đối số b>0; đối số −8 sai điều kiện.
+\(\log_4 8=\frac32\) vì \(4^{\frac32}=8\); \(\log_{\frac12}4=-2\) vì \(\left(\frac12\right)^{-2}=4\); \(\log_9 3=\frac12\) vì \(9^{\frac12}=3\). Tổng \(L=\frac32-2-\frac12=-1\). Với \(\log_a b\) thực, cơ số \(a>0,\ a\ne1\), đối số \(b>0\); đối số \(-8\) sai điều kiện.
 
 **Rubric tự đối chiếu:**
 
-7 điểm: viết điều kiện cơ số/đối số (1đ); tính đúng log₄8 (1đ), log_(1/2)4 (1đ), log₉3 (1đ); tổng L=−1 (1đ); giải thích một cách đổi cơ số hợp lệ (1đ); giải thích log₄(−8) vô nghĩa (1đ).
+7 điểm: viết điều kiện cơ số/đối số (1đ); tính đúng \(\log_4 8\) (1đ), \(\log_{\frac12}4\) (1đ), \(\log_9 3\) (1đ); tổng \(L=-1\) (1đ); giải thích một cách đổi cơ số hợp lệ (1đ); giải thích \(\log_4(-8)\) vô nghĩa (1đ).
 
 </details>
 
@@ -1202,13 +1202,13 @@ log₄8=3/2 vì 4^(3/2)=8; log_(1/2)4=−2 vì (1/2)^(−2)=4; log₉3=1/2 vì 9
 
 **Bài 36.**
 
-Hàm f(x)=5^x có TXĐ, tập giá trị và điểm cắt trục tung là gì?
+Hàm \(f(x)=5^x\) có tập xác định, tập giá trị và điểm cắt trục tung là gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** TXĐ ℝ; tập giá trị (0,+∞); đi qua (0,1).
+**Đáp án:** Tập xác định \(\mathbb R\); tập giá trị \((0;+\infty)\); đi qua \((0;1)\).
 
-Số mũ x được nhận mọi số thực; 5^x luôn dương; f(0)=1.
+Số mũ x được nhận mọi số thực; \(5^x\) luôn dương; \(f(0)=1\).
 
 </details>
 
@@ -1216,13 +1216,13 @@ Số mũ x được nhận mọi số thực; 5^x luôn dương; f(0)=1.
 
 **Bài 37.**
 
-Hàm (1/5)^x đồng biến hay nghịch biến và tại sao?
+Hàm \(\left(\frac15\right)^x\) đồng biến hay nghịch biến và tại sao?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Nghịch biến trên ℝ.
+**Đáp án:** Nghịch biến trên \(\mathbb R\).
 
-Mỗi khi x tăng 1, giá trị hàm nhân 1/5, tức giảm; 0<1/5<1.
+Mỗi khi x tăng 1, giá trị hàm nhân với \(\frac15\), tức giảm; \(0<\frac15<1\).
 
 </details>
 
@@ -1230,13 +1230,13 @@ Mỗi khi x tăng 1, giá trị hàm nhân 1/5, tức giảm; 0<1/5<1.
 
 **Bài 38.**
 
-Hàm g(x)=log₃(x−2) xác định khi nào?
+Hàm \(g(x)=\log_3(x-2)\) xác định khi nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x>2.
+**Đáp án:** \(x>2\).
 
-Đối số của logarit phải dương: x−2>0.
+Đối số của lôgarit phải dương: \(x-2>0\).
 
 </details>
 
@@ -1244,11 +1244,11 @@ Hàm g(x)=log₃(x−2) xác định khi nào?
 
 **Bài 39.**
 
-Nếu y=3^x đi qua (3,27), đồ thị y=log₃x có điểm nào tương ứng?
+Nếu \(y=3^x\) đi qua \((3;27)\), đồ thị \(y=\log_3 x\) có điểm nào tương ứng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** (27,3).
+**Đáp án:** \((27;3)\).
 
 Hai hàm ngược nhau, hoán đổi tọa độ x và y.
 
@@ -1258,13 +1258,13 @@ Hai hàm ngược nhau, hoán đổi tọa độ x và y.
 
 **Bài 40.**
 
-Tìm x>0 sao cho log₂x=−1.
+Tìm \(x>0\) sao cho \(\log_2 x=-1\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=1/2.
+**Đáp án:** \(x=\frac12\).
 
-Chuyển về lũy thừa x=2^(−1)=1/2 >0.
+Chuyển về lũy thừa \(x=2^{-1}=\frac12>0\).
 
 </details>
 
@@ -1272,13 +1272,13 @@ Chuyển về lũy thừa x=2^(−1)=1/2 >0.
 
 **Bài 41.**
 
-So sánh 3^(1/2) và 3^1 mà không dùng máy tính.
+So sánh \(3^{\frac12}\) và \(3^1\) mà không dùng máy tính.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 3^(1/2)<3.
+**Đáp án:** \(3^{\frac12}<3\).
 
-Hàm 3^x tăng vì 3>1; số mũ 1/2<1.
+Hàm \(3^x\) tăng vì \(3>1\); số mũ \(\frac12<1\).
 
 </details>
 
@@ -1286,13 +1286,13 @@ Hàm 3^x tăng vì 3>1; số mũ 1/2<1.
 
 **Bài 42.**
 
-Tính log_(1/2)2 và giải thích dấu.
+Tính \(\log_{\frac12}2\) và giải thích dấu.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** −1.
 
-(1/2)^(−1)=2, nên log_(1/2)2=−1. Cơ số thuộc (0,1) hợp lệ.
+\(\left(\frac12\right)^{-1}=2\), nên \(\log_{\frac12}2=-1\). Cơ số thuộc \((0;1)\) hợp lệ.
 
 </details>
 
@@ -1300,13 +1300,13 @@ Tính log_(1/2)2 và giải thích dấu.
 
 **Bài 43.**
 
-Mô hình N(t)=20·(3/2)^t, t≥0 (kỳ). Tính N(2) và giải thích tại sao theo t tăng thì N tăng.
+Mô hình \(N(t)=20\cdot\left(\frac32\right)^t,\ t\ge0\) (kỳ). Tính \(N(2)\) và giải thích tại sao khi t tăng thì N tăng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 45; N tăng vì cơ số 3/2>1.
+**Đáp án:** 45; N tăng vì cơ số \(\frac32>1\).
 
-20·(3/2)²=45; mỗi kỳ lượng tăng theo hệ số 1,5 của kỳ trước (mô hình lý tưởng).
+\(20\cdot\left(\frac32\right)^2=45\); mỗi kỳ lượng tăng theo hệ số 1,5 của kỳ trước (mô hình lý tưởng).
 
 </details>
 
@@ -1314,18 +1314,18 @@ Mô hình N(t)=20·(3/2)^t, t≥0 (kỳ). Tính N(2) và giải thích tại sao
 
 **Bài 44.**
 
-Lập bảng ba điểm của f(x)=2^x ứng với x=0,1,2 và ba điểm tương ứng của g(x)=log₂x; nêu TXĐ/TGT, sự đối xứng đồ thị và cách đọc ý nghĩa hai hàm.
+Lập bảng ba điểm của \(f(x)=2^x\) ứng với \(x=0,1,2\) và ba điểm tương ứng của \(g(x)=\log_2 x\); nêu tập xác định, tập giá trị, sự đối xứng đồ thị và cách đọc ý nghĩa hai hàm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-f có (0,1),(1,2),(2,4); g có (1,0),(2,1),(4,2). f: TXĐ ℝ, TGT (0,+∞); g: TXĐ (0,+∞), TGT ℝ. Mỗi điểm (x,y) hoán đổi thành (y,x) khi lấy hàm ngược, nên đồ thị đối xứng qua y=x.
+Đồ thị f có \((0;1),(1;2),(2;4)\); đồ thị g có \((1;0),(2;1),(4;2)\). Hàm f: tập xác định \(\mathbb R\), tập giá trị \((0;+\infty)\); hàm g: tập xác định \((0;+\infty)\), tập giá trị \(\mathbb R\). Mỗi điểm \((x;y)\) hoán đổi thành \((y;x)\) khi lấy hàm ngược, nên hai đồ thị đối xứng qua \(y=x\).
 
 **Rubric 4 điểm:**
 
 1. Lập đúng ba tọa độ của f — **1 điểm**.
 2. Lập đúng ba tọa độ của g — **1 điểm**.
 3. Nêu đủ TXĐ/TGT mỗi hàm — **1 điểm**.
-4. Giải thích ngược nhau/đối xứng qua y=x bằng hoán đổi vai trò — **1 điểm**.
+4. Giải thích ngược nhau/đối xứng qua \(y=x\) bằng hoán đổi vai trò — **1 điểm**.
 
 </details>
 
@@ -1333,18 +1333,18 @@ f có (0,1),(1,2),(2,4); g có (1,0),(2,1),(4,2). f: TXĐ ℝ, TGT (0,+∞); g: 
 
 **Bài 45.**
 
-Một mẫu giảm còn một nửa sau mỗi kỳ: N(t)=80(1/2)^t với t≥0. (a) Tính N(3); (b) tìm t để N(t)=5; (c) giải thích ý nghĩa logarit và lý do hàm giảm.
+Một mẫu giảm còn một nửa sau mỗi kỳ: \(N(t)=80\left(\frac12\right)^t\) với \(t\ge0\). (a) Tính \(N(3)\); (b) tìm t để \(N(t)=5\); (c) giải thích ý nghĩa lôgarit và lý do hàm giảm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-N(3)=80/8=10. N(t)=5 ⇒ (1/2)^t=1/16=(1/2)^4 ⇒ t=4; hoặc t=log_(1/2)(1/16)=4. Vì cơ số giữa 0 và 1, mỗi kỳ nhân một số nhỏ hơn 1 nên hàm giảm. Mô hình lý tưởng liên tục nếu t được cho phép thực.
+\(N(3)=\frac{80}{8}=10\). Từ \(N(t)=5\) suy ra \(\left(\frac12\right)^t=\frac1{16}=\left(\frac12\right)^4\), tức \(t=4\); hoặc \(t=\log_{\frac12}\frac1{16}=4\). Vì cơ số giữa 0 và 1, mỗi kỳ nhân một số nhỏ hơn 1 nên hàm giảm. Mô hình lý tưởng liên tục nếu t được cho phép thực.
 
 **Rubric 4 điểm:**
 
-1. Tính N(3)=10 kèm đơn vị mô hình — **1 điểm**.
-2. Lập đúng phương trình N(t)=5 và tìm t=4 — **1 điểm**.
+1. Tính \(N(3)=10\) kèm đơn vị mô hình — **1 điểm**.
+2. Lập đúng phương trình \(N(t)=5\) và tìm \(t=4\) — **1 điểm**.
 3. Giải thích log là số mũ cần tìm — **1 điểm**.
-4. Nêu cơ số 1/2 làm hàm giảm và phạm vi t≥0 — **1 điểm**.
+4. Nêu cơ số \(\frac12\) làm hàm giảm và phạm vi \(t\ge0\) — **1 điểm**.
 
 </details>
 
@@ -1352,13 +1352,13 @@ N(3)=80/8=10. N(t)=5 ⇒ (1/2)^t=1/16=(1/2)^4 ⇒ t=4; hoặc t=log_(1/2)(1/16)=
 
 **Bài 46.**
 
-Cho f(x)=(1/3)^x. Nêu tập xác định, tập giá trị và tính f(0), f(−1).
+Cho \(f(x)=\left(\frac13\right)^x\). Nêu tập xác định, tập giá trị và tính \(f(0)\), \(f(-1)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** D=ℝ, T=(0,+∞), f(0)=1, f(−1)=3.
+**Đáp án:** \(D=\mathbb R,\ T=(0;+\infty),\ f(0)=1,\ f(-1)=3\).
 
-Với cơ số 1/3>0 khác 1, hàm mũ xác định mọi x thực, luôn dương. (1/3)^0=1, (1/3)^(−1)=3; không có nghiệm f(x)=0.
+Với cơ số \(\frac13>0\) khác 1, hàm mũ xác định với mọi x thực, luôn dương. \(\left(\frac13\right)^0=1\), \(\left(\frac13\right)^{-1}=3\); không có nghiệm của \(f(x)=0\).
 
 </details>
 
@@ -1366,13 +1366,13 @@ Với cơ số 1/3>0 khác 1, hàm mũ xác định mọi x thực, luôn dươn
 
 **Bài 47.**
 
-Hàm y=2^x có thể cắt trục hoành không? Khi x→−∞ thì y tiến về số nào?
+Hàm \(y=2^x\) có thể cắt trục hoành không? Khi \(x\to-\infty\) thì y tiến về số nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Không cắt Ox; y>0 mọi x và tiến về 0 từ phía dương khi x→−∞.
+**Đáp án:** Không cắt Ox; \(y>0\) với mọi x và tiến về 0 từ phía dương khi \(x\to-\infty\).
 
-Mọi lũy thừa thực của cơ số 2>0 đều dương, nên không có nghiệm 2^x=0. Nếu x giảm không giới hạn, 2^x=1/2^(−x) tiến về 0 nhưng không bằng 0.
+Mọi lũy thừa thực của cơ số \(2>0\) đều dương, nên không có nghiệm \(2^x=0\). Nếu x giảm không giới hạn, \(2^x=\frac1{2^{-x}}\) tiến về 0 nhưng không bằng 0.
 
 </details>
 
@@ -1380,13 +1380,13 @@ Mọi lũy thừa thực của cơ số 2>0 đều dương, nên không có nghi
 
 **Bài 48.**
 
-Sắp xếp theo thứ tự giảm dần các giá trị (1/5)^(−1), (1/5)^0 và (1/5)^2.
+Sắp xếp theo thứ tự giảm dần các giá trị \(\left(\frac15\right)^{-1}\), \(\left(\frac15\right)^0\) và \(\left(\frac15\right)^2\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 5 > 1 > 1/25, tương ứng các số mũ −1,0,2.
+**Đáp án:** \(5>1>\frac1{25}\), tương ứng các số mũ \(-1,0,2\).
 
-Với 0<a=1/5<1, a^x nghịch biến. Tính trực tiếp: a^(−1)=5, a^0=1, a²=1/25.
+Với \(0<a=\frac15<1\), hàm \(a^x\) nghịch biến. Tính trực tiếp: \(a^{-1}=5,\ a^0=1,\ a^2=\frac1{25}\).
 
 </details>
 
@@ -1394,13 +1394,13 @@ Với 0<a=1/5<1, a^x nghịch biến. Tính trực tiếp: a^(−1)=5, a^0=1, a�
 
 **Bài 49.**
 
-Cho g(x)=log_(1/2)x. Nêu miền, tính g(1/4), g(4) và nhận xét biến thiên.
+Cho \(g(x)=\log_{\frac12}x\). Nêu miền, tính \(g(\frac14)\), \(g(4)\) và nhận xét biến thiên.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** D=(0,+∞), g(1/4)=2, g(4)=−2, hàm nghịch biến.
+**Đáp án:** \(D=(0;+\infty),\ g(\frac14)=2,\ g(4)=-2\), hàm nghịch biến.
 
-(1/2)^2=1/4 và (1/2)^(−2)=4. Cơ số nằm giữa 0 và 1 nên logarit giảm; trục Oy (x=0) là tiệm cận đứng, không có log cho x≤0.
+\(\left(\frac12\right)^2=\frac14\) và \(\left(\frac12\right)^{-2}=4\). Cơ số nằm giữa 0 và 1 nên hàm lôgarit giảm; trục Oy (\(x=0\)) là tiệm cận đứng, không có lôgarit cho \(x\le0\).
 
 </details>
 
@@ -1408,13 +1408,13 @@ Cho g(x)=log_(1/2)x. Nêu miền, tính g(1/4), g(4) và nhận xét biến thi�
 
 **Bài 50.**
 
-Với f(x)=2^x, g(x)=log₂x, tìm điểm tương ứng trên g nếu (−1;1/2) nằm trên f; nói rõ miền của g(f(x)) và f(g(x)).
+Với \(f(x)=2^x,\ g(x)=\log_2 x\), tìm điểm tương ứng trên g nếu \((-1;\frac12)\) nằm trên f; nói rõ miền của \(g(f(x))\) và \(f(g(x))\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Điểm (1/2;−1). g(f(x))=x với mọi x∈ℝ; f(g(x))=x chỉ khi x>0.
+**Đáp án:** Điểm \((\frac12;-1)\). \(g(f(x))=x\) với mọi \(x\in\mathbb R\); \(f(g(x))=x\) chỉ khi \(x>0\).
 
-Hai hàm ngược nhau nên tọa độ đổi chỗ qua y=x. f(x)>0 với mọi x nên g(f(x)) có nghĩa; g(x) chỉ tồn tại x>0, do đó f(g(x)) chỉ xét x>0.
+Hai hàm ngược nhau nên tọa độ đổi chỗ qua \(y=x\). \(f(x)>0\) với mọi x nên \(g(f(x))\) có nghĩa; \(g(x)\) chỉ tồn tại khi \(x>0\), do đó \(f(g(x))\) chỉ xét \(x>0\).
 
 </details>
 
@@ -1424,13 +1424,13 @@ Hai hàm ngược nhau nên tọa độ đổi chỗ qua y=x. f(x)>0 với mọi
 
 **Bài 51.**
 
-Giải 2^(x+1)=16.
+Giải \(2^{x+1}=16\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=3.
+**Đáp án:** \(x=3\).
 
-16=2⁴, hàm 2^t đơn ánh nên x+1=4.
+\(16=2^4\), hàm \(2^t\) đơn ánh nên \(x+1=4\).
 
 </details>
 
@@ -1438,13 +1438,13 @@ Giải 2^(x+1)=16.
 
 **Bài 52.**
 
-Giải log₃(x−2)=2 kèm điều kiện xác định.
+Giải \(\log_3(x-2)=2\) kèm điều kiện xác định.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=11.
+**Đáp án:** \(x=11\).
 
-Điều kiện x>2; x−2=3²=9 ⇒ x=11, hợp lệ.
+Điều kiện \(x>2\); \(x-2=3^2=9\Rightarrow x=11\), hợp lệ.
 
 </details>
 
@@ -1452,13 +1452,13 @@ Giải log₃(x−2)=2 kèm điều kiện xác định.
 
 **Bài 53.**
 
-Giải (1/2)^x>(1/2)^2.
+Giải \(\left(\frac12\right)^x>\left(\frac12\right)^2\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x<2.
+**Đáp án:** \(x<2\).
 
-Hàm cơ số 1/2 nghịch biến: đảo chiều khi so sánh số mũ.
+Hàm mũ cơ số \(\frac12\) nghịch biến: đảo chiều khi so sánh số mũ.
 
 </details>
 
@@ -1466,13 +1466,13 @@ Hàm cơ số 1/2 nghịch biến: đảo chiều khi so sánh số mũ.
 
 **Bài 54.**
 
-Giải log₂(x−1)≥log₂3.
+Giải \(\log_2(x-1)\ge\log_2 3\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x≥4.
+**Đáp án:** \(x\ge4\).
 
-Điều kiện x>1; cơ số 2>1 tăng, suy ra x−1≥3 ⇒ x≥4.
+Điều kiện \(x>1\); hàm lôgarit cơ số \(2>1\) đồng biến, suy ra \(x-1\ge3\Rightarrow x\ge4\).
 
 </details>
 
@@ -1480,13 +1480,13 @@ Giải log₂(x−1)≥log₂3.
 
 **Bài 55.**
 
-Giải 5^(2x−1)=1/25.
+Giải \(5^{2x-1}=\frac1{25}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=−1/2.
+**Đáp án:** \(x=-\frac12\).
 
-1/25=5^(−2), nên 2x−1=−2 ⇒ x=−1/2.
+\(\frac1{25}=5^{-2}\), nên \(2x-1=-2\Rightarrow x=-\frac12\).
 
 </details>
 
@@ -1494,13 +1494,13 @@ Giải 5^(2x−1)=1/25.
 
 **Bài 56.**
 
-Giải log_(1/2)(x+2)=−2.
+Giải \(\log_{\frac12}(x+2)=-2\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=2.
+**Đáp án:** \(x=2\).
 
-x+2>0; x+2=(1/2)^(−2)=4 ⇒ x=2 hợp lệ.
+\(x+2>0\); \(x+2=\left(\frac12\right)^{-2}=4\Rightarrow x=2\) hợp lệ.
 
 </details>
 
@@ -1508,13 +1508,13 @@ x+2>0; x+2=(1/2)^(−2)=4 ⇒ x=2 hợp lệ.
 
 **Bài 57.**
 
-Giải (1/3)^(2x−1)≤(1/3)^3.
+Giải \(\left(\frac13\right)^{2x-1}\le\left(\frac13\right)^3\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x≥2.
+**Đáp án:** \(x\ge2\).
 
-Vì 0<1/3<1, đảo chiều số mũ: 2x−1≥3 ⇒ x≥2.
+Vì \(0<\frac13<1\), đảo chiều số mũ: \(2x-1\ge3\Rightarrow x\ge2\).
 
 </details>
 
@@ -1522,13 +1522,13 @@ Vì 0<1/3<1, đảo chiều số mũ: 2x−1≥3 ⇒ x≥2.
 
 **Bài 58.**
 
-Giải log_(1/4)(x−1)>log_(1/4)4.
+Giải \(\log_{\frac14}(x-1)>\log_{\frac14}4\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 1<x<5.
+**Đáp án:** \(1<x<5\).
 
-Điều kiện x>1; hàm log cơ số 1/4 giảm, nên 0<x−1<4 ⇒ 1<x<5.
+Điều kiện \(x>1\); hàm lôgarit cơ số \(\frac14\) giảm, nên \(0<x-1<4\Rightarrow1<x<5\).
 
 </details>
 
@@ -1536,13 +1536,13 @@ Giải log_(1/4)(x−1)>log_(1/4)4.
 
 **Bài 59.**
 
-Phương trình 2^x=−1 có nghiệm thực không? Vì sao?
+Phương trình \(2^x=-1\) có nghiệm thực không? Vì sao?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Không có.
 
-2^x>0 với mọi x thực; không thể bằng −1.
+\(2^x>0\) với mọi x thực; không thể bằng \(-1\).
 
 </details>
 
@@ -1550,13 +1550,13 @@ Phương trình 2^x=−1 có nghiệm thực không? Vì sao?
 
 **Bài 60.**
 
-Giải 9^x−4·3^x+3=0 trong ℝ bằng đặt ẩn t=3^x>0; ghi rõ vì sao không thể nhận t≤0.
+Giải \(9^x-4\cdot3^x+3=0\) trong \(\mathbb R\) bằng đặt ẩn \(t=3^x>0\); ghi rõ vì sao không thể nhận \(t\le0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S={0,1}.
+**Đáp án:** \(S=\{0;1\}\).
 
-9^x=(3^x)². Đặt t=3^x>0, phương trình t²−4t+3=(t−1)(t−3)=0. Hai t=1,3 đều dương, tương ứng x=0,1. Đây là kỹ thuật vận dụng mở rộng CĐ04, không mạo nhận là phương pháp đã giải thích trong SGK B21 cũ.
+\(9^x=(3^x)^2\). Đặt \(t=3^x>0\), phương trình \(t^2-4t+3=(t-1)(t-3)=0\). Hai nghiệm \(t=1,3\) đều dương, tương ứng \(x=0,1\). Đây là kỹ thuật vận dụng mở rộng CĐ04, không mạo nhận là phương pháp đã giải thích trong SGK B21 cũ.
 
 </details>
 
