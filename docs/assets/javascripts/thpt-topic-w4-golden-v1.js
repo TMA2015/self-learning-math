@@ -399,6 +399,19 @@ function practiceBank(){
  }
  if(items.length!==expected.items||items.some((x,i)=>x.number!==i+1)||new Set(items.map(x=>x.id)).size!==expected.items)throw Error("Practice Q15 item count/ID mismatch");
  if(items.some(x=>x.nodes.filter(n=>n.nodeType===1&&n.tagName==="DETAILS").length!==1))throw Error("Practice missing exactly one canonical solution");
+ // The signed CĐ18 radar introduction lies between Bài 201's solution and
+ // Bài 202's ID marker. Preserve that exact context, but display it with Bài 202.
+ if(topic==="18"&&w4Public){
+  const previous=items.find(q=>q.id==="THPT-TOP18-P40"),radar=items.find(q=>q.id==="THPT-TOP18-W07");
+  if(!previous||!radar||previous.number!==201||radar.number!==202||previous.group!==radar.group)throw Error("Radar context identity mismatch");
+  const boundary=previous.nodes.findIndex(n=>n.nodeType===1&&n.tagName==="DETAILS");
+  const context=previous.nodes.slice(boundary+1).filter(n=>n.nodeType===1||n.nodeType===3&&n.textContent.trim());
+  if(boundary<1||context.length!==2||context.some(n=>n.nodeType!==1||n.tagName!=="P")||
+    context[0].querySelector(":scope > strong")?.textContent.trim()!=="Vận dụng tổng hợp — radar và hành trình bay"||
+    context[1].querySelector(":scope > strong")?.textContent.trim()!=="Bối cảnh liên thông.")throw Error("Radar source context boundary mismatch");
+  previous.nodes=previous.nodes.slice(0,boundary+1);
+  radar.nodes.splice(1,0,...context);
+ }
  const groups=headings.map(h=>({title:h.textContent.trim(),items:items.filter(q=>q.group===h.textContent.trim())}));
  if(groups.some(g=>!g.items.length))throw Error("Empty Practice group");
  return{nodes,headings,groups,items};

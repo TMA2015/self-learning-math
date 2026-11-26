@@ -80,7 +80,7 @@ try:
                     expect(dlg).to_be_visible(timeout=15000)
                     expect(dlg.locator("[data-thpt-canonical-item]")).to_have_attribute("data-thpt-canonical-item",item)
                     answer=dlg.locator(".thpt-g12-golden-solution")
-                    assert not answer.get_attribute("open") and phrase not in dlg.inner_text()
+                    assert answer.get_attribute("open") is None and phrase not in dlg.inner_text()
                     answer.locator("summary").click()
                     expect(answer.locator(".thpt-r4-formative-reveal")).to_be_visible()
                     expect(answer).to_contain_text(phrase)

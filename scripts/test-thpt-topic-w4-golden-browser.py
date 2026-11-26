@@ -50,6 +50,11 @@ def source_math(topic,part,marker):
         stem,_,solution=block.partition("<details")
         solution=solution.split("</details>",1)[0]
         result[item]=(formulas(stem),formulas(solution) if marker=="DISPLAY_ONLY_CANONICAL" else [],"**Các phương án:**" in stem)
+    if topic=="18" and marker=="DISPLAY_ONLY_CANONICAL":
+        context=raw.split("**Vận dụng tổng hợp — radar và hành trình bay**",1)[1].split("<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-W07;",1)[0]
+        assert "**Bối cảnh liên thông.**" in context
+        stem,solution,options=result["THPT-TOP18-W07"]
+        result["THPT-TOP18-W07"]=(formulas(context)+stem,solution,options)
     return result
 
 def assert_math(page,root,expected,label,stem_only=False):
@@ -342,6 +347,10 @@ with sync_playwright() as pw:
                             item=card.get_attribute("data-thpt-canonical-item")
                             stem,sol,options=practice_math[item]
                             assert_math(page,".topic-w1-question-body",stem,(topic,engine,width,item,"Practice stem"),True)
+                            if topic=="18" and item in ("THPT-TOP18-P40","THPT-TOP18-W07"):
+                                context=card.locator(":scope > p > strong",has_text=re.compile(r"^Bối cảnh liên thông\.$"))
+                                expect(context).to_have_count(1 if item=="THPT-TOP18-W07" else 0)
+                                expect(card.locator(":scope > p > strong",has_text="Vận dụng tổng hợp — radar và hành trình bay")).to_have_count(1 if item=="THPT-TOP18-W07" else 0)
                         details.locator("summary").click()
                         expect(details.locator(".thpt-r4-formative-reveal")).to_be_visible()
                         if REFRESH:
