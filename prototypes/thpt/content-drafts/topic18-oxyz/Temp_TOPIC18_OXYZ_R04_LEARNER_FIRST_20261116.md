@@ -3315,18 +3315,18 @@ Pháp tuyến \(\vec n_1=(1;1;0),\ \vec n_2=(1;-1;0)\), \(\vec n_1\cdot\vec n_2=
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** x²+y²+z²=4
-- **Lời giải có suy luận:** M cách O đúng2 nên OM²=4.
+- **Đáp án:** \(x^2+y^2+z^2=4\)
+- **Lời giải có suy luận:** M cách O đúng2 nên \(OM^2=4\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 177.** C(2,0,-1),R=3. Viết phương trình.
+**Bài luyện 177.** \(C(2;0;-1)\),\(R=3\). Viết phương trình.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (x−2)²+y²+(z+1)²=9
-- **Lời giải có suy luận:** Trừ đúng tọa độ tâm, R²=9.
+- **Đáp án:** \((x-2)^2+y^2+(z+1)^2=9\)
+- **Lời giải có suy luận:** Trừ đúng tọa độ tâm, \(R^2=9\).
 
 </details>
 
@@ -3335,19 +3335,19 @@ Pháp tuyến \(\vec n_1=(1;1;0),\ \vec n_2=(1;-1;0)\), \(\vec n_1\cdot\vec n_2=
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** x²+y²+(z−5)²=100
-- **Lời giải có suy luận:** Mặt cầu bán kính10m quanh tâm; vùng phủ là bất đẳng thức ≤100 chứ không phải phương trình bề mặt.
+- **Đáp án:** \(x^2+y^2+(z-5)^2=100\)
+- **Lời giải có suy luận:** Mặt cầu bán kính10m quanh tâm; vùng phủ là bất đẳng thức \(\le100\) chứ không phải phương trình bề mặt.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 179.** C(-1,2,0), R=√5. Lập phương trình mặt cầu và chứng minh R>0.
+**Bài luyện 179.** \(C(-1;2;0)\), \(R=\sqrt5\). Lập phương trình mặt cầu và chứng minh \(R>0\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** (x+1)²+(y−2)²+z²=5
-- **Lời giải có suy luận:** Thế tâm cho vế trái0; R²=5 dương, dùng công thức chuẩn.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định tâm C và bán kính R>0; 1đ lập ba hiệu bình phương; 1đ ghi chính xác R²; 1đ phân biệt bề mặt cầu với khối cầu.
+- **Đáp án:** \((x+1)^2+(y-2)^2+z^2=5\)
+- **Lời giải có suy luận:** Thế tâm cho vế trái0; \(R^2=5\) dương, dùng công thức chuẩn.
+- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định tâm C và bán kính \(R>0\); 1đ lập ba hiệu bình phương; 1đ ghi chính xác \(R^2\); 1đ phân biệt bề mặt cầu với khối cầu.
 
 </details>
 
@@ -3356,111 +3356,111 @@ Pháp tuyến \(\vec n_1=(1;1;0),\ \vec n_2=(1;-1;0)\), \(\vec n_1\cdot\vec n_2=
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-(x+1)²+(y−2)²+z²=9. Các dấu trong ngoặc đối với tọa độ tâm.
+\((x+1)^2+(y-2)^2+z^2=9\). Các dấu trong ngoặc đối với tọa độ tâm.
 
 **Đường khắc phục D6:** Bán kính phải dương; phương trình không có điểm nếu tổng bình phương bằng số âm.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 181.** x²+y²+z²−2x=0 có tâm và bán kính?
+**Bài luyện 181.** \(x^2+y^2+z^2-2x=0\) có tâm và bán kính?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** C(1,0,0), R=1
-- **Lời giải có suy luận:** (x−1)²+y²+z²=1.
+- **Đáp án:** \(C(1;0;0)\), \(R=1\)
+- **Lời giải có suy luận:** \((x-1)^2+y^2+z^2=1\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 182.** x²+y²+z²+2x−4y+6z+5=0 có tâm, R?
+**Bài luyện 182.** \(x^2+y^2+z^2+2x-4y+6z+5=0\) có tâm, R?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** C(-1,2,-3), R=3
-- **Lời giải có suy luận:** Hoàn chỉnh: (x+1)²+(y−2)²+(z+3)²=1+4+9−5=9.
+- **Đáp án:** \(C(-1;2;-3)\), \(R=3\)
+- **Lời giải có suy luận:** Hoàn chỉnh: \((x+1)^2+(y-2)^2+(z+3)^2=1+4+9-5=9\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 183.** x²+y²+z²+4=0 có là mặt cầu thực?
+**Bài luyện 183.** \(x^2+y^2+z^2+4=0\) có là mặt cầu thực?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Không
-- **Lời giải có suy luận:** Tổng ba bình phương ≥0 nên không thể bằng −4; R²<0.
+- **Lời giải có suy luận:** Tổng ba bình phương \(\ge0\) nên không thể bằng \(-4\); \(R^2<0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 184.** Hoàn chỉnh và phân loại x²+y²+z²−4x+2y−2z+1=0.
+**Bài luyện 184.** Hoàn chỉnh và phân loại \(x^2+y^2+z^2-4x+2y-2z+1=0\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** C(2,-1,1), R=√5
-- **Lời giải có suy luận:** Chuyển về (x−2)²+(y+1)²+(z−1)²=5; R²=4+1+1−1=5>0.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ hoàn chỉnh ba bình phương; 1đ tìm đúng tâm; 1đ tính R² và R; 1đ xét điều kiện R²>0 và trường hợp suy biến.
+- **Đáp án:** \(C(2;-1;1)\), \(R=\sqrt5\)
+- **Lời giải có suy luận:** Chuyển về \((x-2)^2+(y+1)^2+(z-1)^2=5\); \(R^2=4+1+1-1=5>0\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ hoàn chỉnh ba bình phương; 1đ tìm đúng tâm; 1đ tính \(R^2\) và R; 1đ xét điều kiện \(R^2>0\) và trường hợp suy biến.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P37; PRIMARY_OUTCOME: TOP18-O37; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 185.** Viết tâm và bán kính của x²+y²+z²+2x−4y+4=0.
+**Bài luyện 185.** Viết tâm và bán kính của \(x^2+y^2+z^2+2x-4y+4=0\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Hoàn bình phương: (x+1)²+(y−2)²+z²=1; tâm (−1,2,0), R=1.
+Hoàn bình phương: \((x+1)^2+(y-2)^2+z^2=1\); tâm \((-1;2;0)\), \(R=1\).
 
-**Đường khắc phục D6:** Không quên chuyển hằng số khi hoàn bình phương; tính R² trước khi lấy căn, kiểm >0.
+**Đường khắc phục D6:** Không quên chuyển hằng số khi hoàn bình phương; tính \(R^2\) trước khi lấy căn, kiểm \(>0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 186.** C=O,R=3,P(1,1,1). Vị trí?
+**Bài luyện 186.** \(C=O\),\(R=3\),\(P(1;1;1)\). Vị trí?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Trong khối cầu
-- **Lời giải có suy luận:** OP²=3<9.
+- **Lời giải có suy luận:** \(OP^2=3<9\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 187.** C(1,0,0),R=2,P(4,0,0). Vị trí?
+**Bài luyện 187.** \(C(1;0;0)\),\(R=2\),\(P(4;0;0)\). Vị trí?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Ngoài khối cầu
-- **Lời giải có suy luận:** CP²=(4−1)²=9>4.
+- **Lời giải có suy luận:** \(CP^2=(4-1)^2=9>4\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 188.** Mặt cầu tâm (0,0,3), R=5 cắt nền z=0 theo vòng tròn bán kính?
+**Bài luyện 188.** Mặt cầu tâm \((0;0;3)\), \(R=5\) cắt nền \(z=0\) theo vòng tròn bán kính?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 4m
-- **Lời giải có suy luận:** Khoảng cách tâm-nền3; r²=25−9=16 nên r=4.
+- **Lời giải có suy luận:** Khoảng cách tâm-nền3; \(r^2=25-9=16\) nên \(r=4\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 189.** C(1,2,2),R=3. Phân loại P(4,2,2), Q(1,2,0), Z(1,2,6).
+**Bài luyện 189.** \(C(1;2;2)\),\(R=3\). Phân loại \(P(4;2;2)\), \(Q(1;2;0)\), \(Z(1;2;6)\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** P trên; Q trong; Z ngoài
-- **Lời giải có suy luận:** CP²=9, CQ²=4, CZ²=16, so với R²=9.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ tính ba khoảng cách bình phương so với tâm; 1đ so với R²; 1đ phân loại đủ từng điểm; 1đ phân biệt trong khối cầu và trên mặt cầu.
+- **Lời giải có suy luận:** \(CP^2=9,\ CQ^2=4,\ CZ^2=16\), so với \(R^2=9\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ tính ba khoảng cách bình phương so với tâm; 1đ so với \(R^2\); 1đ phân loại đủ từng điểm; 1đ phân biệt trong khối cầu và trên mặt cầu.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P38; PRIMARY_OUTCOME: TOP18-O38; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 190.** Mặt cầu tâm C=(1,1,1) R=2, xét P=(1,1,3) và Q=(2,2,2).
+**Bài luyện 190.** Mặt cầu tâm \(C=(1;1;1)\) \(R=2\), xét \(P=(1;1;3)\) và \(Q=(2;2;2)\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.
+\(CP^2=4=R^2\) nên P trên; \(CQ^2=3<R^2\) nên Q trong.
 
 **Đường khắc phục D6:** So bình phương khoảng cách và bán kính; nếu nhầm tâm, thay hệ tọa độ dịch chuyển M−C.
 
@@ -3471,8 +3471,8 @@ CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (x−1)²+y²+z²=1
-- **Lời giải có suy luận:** Tâm (1,0,0), R=1.
+- **Đáp án:** \((x-1)^2+y^2+z^2=1\)
+- **Lời giải có suy luận:** Tâm \((1;0;0)\), \(R=1\).
 
 </details>
 
@@ -3481,8 +3481,8 @@ CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** (x−2)²+(y−1)²+(z−1)²=1
-- **Lời giải có suy luận:** Trung điểm(2,1,1), R=1.
+- **Đáp án:** \((x-2)^2+(y-1)^2+(z-1)^2=1\)
+- **Lời giải có suy luận:** Trung điểm\((2;1;1)\), \(R=1\).
 
 </details>
 
@@ -3491,8 +3491,8 @@ CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** C(0,3,4), R=5
-- **Lời giải có suy luận:** AB=10, trung điểm (0,3,4), R=5.
+- **Đáp án:** \(C(0;3;4)\), \(R=5\)
+- **Lời giải có suy luận:** \(AB=10\), trung điểm \((0;3;4)\), \(R=5\).
 
 </details>
 
@@ -3501,9 +3501,9 @@ CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** (x−1)²+(y−1)²+(z−1)²=6
-- **Lời giải có suy luận:** C=(1,1,1), AB²=4²+2²+(−2)²=24 nên R²=6. CA²=CB²=6.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ tính đúng trung điểm AB; 1đ tính AB² và chia 4; 1đ lập phương trình; 1đ kiểm cả A và B trên mặt cầu.
+- **Đáp án:** \((x-1)^2+(y-1)^2+(z-1)^2=6\)
+- **Lời giải có suy luận:** \(C=(1;1;1)\), \(AB^2=4^2+2^2+(-2)^2=24\) nên \(R^2=6\). \(CA^2=CB^2=6\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ tính đúng trung điểm AB; 1đ tính \(AB^2\) và chia 4; 1đ lập phương trình; 1đ kiểm cả A và B trên mặt cầu.
 
 </details>
 
@@ -3512,65 +3512,65 @@ CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Tâm C=(0,2,3), AB=6, R=3, phương trình x²+(y−2)²+(z−3)²=9.
+Tâm \(C=(0;2;3)\), \(AB=6\), \(R=3\), phương trình \(x^2+(y-2)^2+(z-3)^2=9\).
 
 **Đường khắc phục D6:** Tính trung điểm trước; đường kính là AB, bán kính nửa AB, không dùng AB trực tiếp làm R.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-W05; PRIMARY_OUTCOME: TOP18-O39; ROLE: TOPIC_WRITTEN; RUBRIC_ORIGINAL_UNCHANGED -->
-**Bài luyện 196.** Mặt cầu có đường kính AB với A=(0,0,0), B=(2,4,0). Tìm tâm, bán kính và phương trình; tính bán kính đường tròn khi mặt phẳng z=1 cắt mặt cầu.
+**Bài luyện 196.** Mặt cầu có đường kính AB với \(A=(0;0;0)\), \(B=(2;4;0)\). Tìm tâm, bán kính và phương trình; tính bán kính đường tròn khi mặt phẳng \(z=1\) cắt mặt cầu.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+z²=5. Mặt z=1 cách tâm d=1<R, nên tiết diện có bán kính √(5−1)=2.
+Tâm \(C=(1;2;0)\), \(AB=\sqrt{4+16}=2\sqrt5\), \(R=\sqrt5\). Phương trình \((x-1)^2+(y-2)^2+z^2=5\). Mặt \(z=1\) cách tâm \(d=1<R\), nên tiết diện có bán kính \(\sqrt{5-1}=2\).
 
 **Rubric 4 điểm (mỗi tiêu chí 1 điểm):**
 - Tính đúng tâm \(C=(1;2;0)\) — **1 điểm**.
-- Tính đúng bán kính R=√5 và phương trình mặt cầu — **1 điểm**.
-- Xác định d=1 đến mặt phẳng z=1, kiểm d<R — **1 điểm**.
+- Tính đúng bán kính \(R=\sqrt5\) và phương trình mặt cầu — **1 điểm**.
+- Xác định \(d=1\) đến mặt phẳng \(z=1\), kiểm \(d<R\) — **1 điểm**.
 - Tính đúng bán kính tiết diện 2 và phân biệt với R — **1 điểm**.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 197.** C=O, R=3, mặt z=3 phân loại?
+**Bài luyện 197.** \(C=O\), \(R=3\), mặt \(z=3\) phân loại?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Tiếp xúc
-- **Lời giải có suy luận:** h=3=R.
+- **Lời giải có suy luận:** \(h=3=R\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 198.** C(0,0,1),R=5, mặt z=0 cắt theo vòng tròn bán kính?
+**Bài luyện 198.** \(C(0;0;1)\),\(R=5\), mặt \(z=0\) cắt theo vòng tròn bán kính?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 2√6
-- **Lời giải có suy luận:** h=1<5, r=√(25−1)=√24=2√6.
+- **Đáp án:** \(2\sqrt6\)
+- **Lời giải có suy luận:** \(h=1<5\), \(r=\sqrt{25-1}=\sqrt{24}=2\sqrt6\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 199.** Vùng phát sóng tâm (0,0,10),R=6m có chạm nền z=0 không?
+**Bài luyện 199.** Vùng phát sóng tâm \((0;0;10)\),\(R=6\) m có chạm nền \(z=0\) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Không
-- **Lời giải có suy luận:** h=10>R=6, không có điểm chung.
+- **Lời giải có suy luận:** \(h=10>R=6\), không có điểm chung.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 200.** C(1,-2,3), R=4, P:2x−y+2z+2=0. Chứng minh tiếp xúc và tìm tiếp điểm.
+**Bài luyện 200.** \(C(1;-2;3)\), \(R=4\), \((P):2x-y+2z+2=0\). Chứng minh tiếp xúc và tìm tiếp điểm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** Tiếp xúc tại H(-5/3,-2/3,1/3)
-- **Lời giải có suy luận:** h=|2+2+6+2|/3=12/3=4; pháp tuyến n=(2,-1,2); H=C−(12/9)n=(-5/3,-2/3,1/3), H∈P.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ tính khoảng cách h từ tâm tới mặt phẳng; 1đ so với R; 1đ tìm bán kính thiết diện hoặc tiếp điểm; 1đ kiểm kết luận và điều kiện h<R/h=R/h>R.
+- **Đáp án:** Tiếp xúc tại \(H\left(-\frac53;-\frac23;\frac13\right)\)
+- **Lời giải có suy luận:** \(h=\frac{|2+2+6+2|}{3}=\frac{12}3=4\); pháp tuyến \(\vec n=(2;-1;2)\); \(\overrightarrow{OH}=\overrightarrow{OC}-\frac{12}{9}\vec n=\left(-\frac53;-\frac23;\frac13\right)\), \(H\in(P)\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ tính khoảng cách h từ tâm tới mặt phẳng; 1đ so với R; 1đ tìm bán kính thiết diện hoặc tiếp điểm; 1đ kiểm kết luận và điều kiện \(h<R,\ h=R,\ h>R\).
 
 </details>
 
@@ -3579,7 +3579,7 @@ Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
+Khoảng cách \(d=|4-1|=3\), \(r=\sqrt{25-9}=4\); hình tròn có tâm \((0;0;4)\).
 
 **Đường khắc phục D6:** Đầu tiên tính khoảng cách tâm–mặt chuẩn; không lấy trực tiếp số D của phương trình làm d nếu pháp tuyến chưa chuẩn hóa.
 
@@ -3591,31 +3591,31 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 
 
 
-**Bối cảnh liên thông.** Một radar đặt tại O=(0;0;0), vùng phủ bán kính 5 km. Máy bay tại A=(6;4;0) km và bay theo hướng u=(−1;0;0) km/giờ, chỉ xét thời gian t≥0. Ta muốn biết **nó có đi vào vùng phủ hay không, và vào–ra lúc nào**. Đây là bài vận dụng tổng hợp: em cần kết hợp tọa độ, tham số thời gian, khoảng cách và phương trình mặt cầu.
+**Bối cảnh liên thông.** Một radar đặt tại \(O=(0;0;0)\), vùng phủ bán kính 5 km. Máy bay tại \(A=(6;4;0)\) km và bay theo hướng \(\vec u=(-1;0;0)\) km/giờ, chỉ xét thời gian \(t\ge0\). Ta muốn biết **nó có đi vào vùng phủ hay không, và vào–ra lúc nào**. Đây là bài vận dụng tổng hợp: em cần kết hợp tọa độ, tham số thời gian, khoảng cách và phương trình mặt cầu.
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-W07; PRIMARY_OUTCOME: TOP18-O38; ROLE: TOPIC_WRITTEN; APPLICATION_ONLY_AFTER_B17; ORIGINAL_R03_RUBRIC_UNCHANGED -->
-**Bài luyện 202.** Một radar đặt tại O=(0;0;0) km, vùng phủ là khối cầu bán kính 5 km. Máy bay xuất phát từ A=(6;4;0) km, bay thẳng đều với vectơ vận tốc u=(−1;0;0) km/giờ; chỉ xét thời gian t≥0 giờ. (a) Viết tọa độ M(t). (b) Tính khoảng cách ngắn nhất từ radar đến đường bay trong khoảng t≥0. (c) Tìm thời điểm máy bay nằm trên biên vùng phủ và khoảng thời gian nó nằm trong vùng.
+**Bài luyện 202.** Một radar đặt tại \(O=(0;0;0)\) km, vùng phủ là khối cầu bán kính 5 km. Máy bay xuất phát từ \(A=(6;4;0)\) km, bay thẳng đều với vectơ vận tốc \(\vec u=(-1;0;0)\) km/giờ; chỉ xét thời gian \(t\ge0\) giờ. (a) Viết tọa độ M(t). (b) Tính khoảng cách ngắn nhất từ radar đến đường bay trong khoảng \(t\ge0\). (c) Tìm thời điểm máy bay nằm trên biên vùng phủ và khoảng thời gian nó nằm trong vùng.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-**Bước 1 – biểu diễn hành trình:** M(t)=A+t u=(6−t;4;0), t≥0. Ta không dùng một tham số riêng cho mỗi tọa độ.
+**Bước 1 – biểu diễn hành trình:** \(\overrightarrow{OM(t)}=\overrightarrow{OA}+t\vec u=(6-t;4;0)\), \(t\ge0\). Ta không dùng một tham số riêng cho mỗi tọa độ.
 
-**Bước 2 – xác định điểm gần nhất:** OM(t)²=(6−t)²+4²+0²=(t−6)²+16. Vì (t−6)²≥0 và t=6 thỏa t≥0, khoảng cách nhỏ nhất bằng **4 km**, đạt khi M(6)=(0;4;0). Khoảng cách 4<5 nên máy bay có đi vào vùng phủ.
+**Bước 2 – xác định điểm gần nhất:** \(OM(t)^2=(6-t)^2+4^2+0^2=(t-6)^2+16\). Vì \((t-6)^2\ge0\) và \(t=6\) thỏa \(t\ge0\), khoảng cách nhỏ nhất bằng **4 km**, đạt khi \(M(6)=(0;4;0)\). Khoảng cách \(4<5\) nên máy bay có đi vào vùng phủ.
 
-**Bước 3 – tìm hai thời điểm qua biên:** Biên cầu thỏa OM(t)²=5² nên (t−6)²+16=25, tức (t−6)²=9. Suy ra **t=3 giờ** và **t=9 giờ**, lần lượt tại M(3)=(3;4;0) và M(9)=(−3;4;0). Kiểm cả hai điểm: 3²+4²=5².
+**Bước 3 – tìm hai thời điểm qua biên:** Biên cầu thỏa \(OM(t)^2=5^2\) nên \((t-6)^2+16=25\), tức \((t-6)^2=9\). Suy ra **\(t=3\) giờ** và **\(t=9\) giờ**, lần lượt tại \(M(3)=(3;4;0)\) và \(M(9)=(-3;4;0)\). Kiểm cả hai điểm: \(3^2+4^2=5^2\).
 
-**Bước 4 – kết luận có điều kiện:** Với **3<t<9**, OM(t)<5, máy bay ở trong vùng cầu; t=3 hoặc t=9 ở đúng biên; t<3 hay t>9 ngoài vùng. Bài giả định máy bay đi đều với đơn vị km/giờ và radar có vùng phủ hình cầu cố định.
+**Bước 4 – kết luận có điều kiện:** Với **\(3<t<9\)**, \(OM(t)<5\), máy bay ở trong vùng cầu; \(t=3\) hoặc \(t=9\) ở đúng biên; \(t<3\) hay \(t>9\) ngoài vùng. Bài giả định máy bay đi đều với đơn vị km/giờ và radar có vùng phủ hình cầu cố định.
 
 **Đối chiếu bằng hình sau khi tự giải:**
 
 ![Radar tâm O và đường bay qua vùng cầu: vào tại t=3, gần nhất t=6, ra tại t=9](../../../../docs/assets/images/thpt/FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg)
 
-**Đọc hình nền trắng:** Xem thiết diện Oxy (z=0): đường tròn tâm O bán kính 5, đường bay có tung độ y=4. Mũi tên chỉ chiều bay từ A=(6;4) sang phía x giảm. Hai chấm xanh ở t=3 và t=9 là **giao với biên**; chấm cam ở t=6 là vị trí gần radar nhất, cách O đúng 4 km. Hình biểu diễn đúng tỉ lệ trong mặt phẳng Oxy nhưng **không** thay phép chứng minh bằng bình phương khoảng cách.
+**Đọc hình nền trắng:** Xem thiết diện Oxy (\(z=0\)): đường tròn tâm O bán kính 5, đường bay có tung độ \(y=4\). Mũi tên chỉ chiều bay từ \(A=(6;4)\) sang phía x giảm. Hai chấm xanh ở \(t=3\) và \(t=9\) là **giao với biên**; chấm cam ở \(t=6\) là vị trí gần radar nhất, cách O đúng 4 km. Hình biểu diễn đúng tỉ lệ trong mặt phẳng Oxy nhưng **không** thay phép chứng minh bằng bình phương khoảng cách.
 
 **Rubric 4 điểm, mỗi tiêu chí 1 điểm:**
-- Viết đúng M(t)=(6−t;4;0), nêu t≥0 — **1 điểm**.
-- Lập OM(t)²=(t−6)²+16 và tìm đúng khoảng cách nhỏ nhất 4 km tại t=6 — **1 điểm**.
-- Giải đúng phương trình giao biên t=3 và t=9, kiểm lại tọa độ — **1 điểm**.
+- Viết đúng \(M(t)=(6-t;4;0)\), nêu \(t\ge0\) — **1 điểm**.
+- Lập \(OM(t)^2=(t-6)^2+16\) và tìm đúng khoảng cách nhỏ nhất 4 km tại \(t=6\) — **1 điểm**.
+- Giải đúng phương trình giao biên \(t=3\) và \(t=9\), kiểm lại tọa độ — **1 điểm**.
 - Phân loại trong/ngoài/biên theo t, nêu rõ điều kiện thời gian và đơn vị — **1 điểm**.
 
 </details>
@@ -3623,22 +3623,22 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 ## 8. Vận dụng tích hợp sau B17 (tự chọn)
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 203.** C(0,0,2),R=3; sàn z=0. Bán kính giao?
+**Bài luyện 203.** \(C(0;0;2)\),\(R=3\); sàn \(z=0\). Bán kính giao?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** √5
-- **Lời giải có suy luận:** r=√(3²−2²)=√5.
+- **Đáp án:** \(\sqrt5\)
+- **Lời giải có suy luận:** \(r=\sqrt{3^2-2^2}=\sqrt5\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 204.** C(1,2,1),R=2; sàn z=0. Bán kính giao?
+**Bài luyện 204.** \(C(1;2;1)\),\(R=2\); sàn \(z=0\). Bán kính giao?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** √3
-- **Lời giải có suy luận:** h=1, r=√(4−1)=√3.
+- **Đáp án:** \(\sqrt3\)
+- **Lời giải có suy luận:** \(h=1\), \(r=\sqrt{4-1}=\sqrt3\).
 
 </details>
 
@@ -3648,7 +3648,7 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 8m
-- **Lời giải có suy luận:** h=6<R=10 nên r=√(100−36)=8m.
+- **Lời giải có suy luận:** \(h=6<R=10\) nên \(r=\sqrt{100-36}=8\) m.
 
 </details>
 
@@ -3657,18 +3657,18 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** h<R: hình tròn; h=R: tiếp xúc; h>R: không giao.
-- **Lời giải có suy luận:** Dùng vuông góc tâm–mặt phẳng và r²=R²−h² khi vế phải không âm.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định khoảng cách tâm–mặt và điều kiện h so R; 1đ lập r²+h²=R²; 1đ tính bán kính/3 trường hợp; 1đ giải thích ý nghĩa vật lý.
+- **Đáp án:** \(h<R\): hình tròn; \(h=R\): tiếp xúc; \(h>R\): không giao.
+- **Lời giải có suy luận:** Dùng vuông góc tâm–mặt phẳng và \(r^2=R^2-h^2\) khi vế phải không âm.
+- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định khoảng cách tâm–mặt và điều kiện h so R; 1đ lập \(r^2+h^2=R^2\); 1đ tính bán kính/3 trường hợp; 1đ giải thích ý nghĩa vật lý.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P23; PRIMARY_OUTCOME: TOP18-O23; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 207.** Mặt cầu tâm O R=10, mặt phẳng z=6. Tính bán kính đường tròn cắt.
+**Bài luyện 207.** Mặt cầu tâm O \(R=10\), mặt phẳng \(z=6\). Tính bán kính đường tròn cắt.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-r=√(100−36)=8. Nếu mặt ở z=11 thì d>R nên không có giao.
+\(r=\sqrt{100-36}=8\). Nếu mặt ở \(z=11\) thì \(d>R\) nên không có giao.
 
 **Đường khắc phục D6:** Cần học khái niệm mặt cầu B17 trước; không cho O23 làm outcome Core bắt buộc của B14 hay SGK-ChII.
 
