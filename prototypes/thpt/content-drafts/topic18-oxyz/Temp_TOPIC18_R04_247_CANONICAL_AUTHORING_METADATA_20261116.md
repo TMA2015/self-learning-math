@@ -1,12 +1,22 @@
+<!-- WORK1109_CP25_CURRENT -->
+## Current CĐ18 A1–A7/Q15 exact ID custody
+
+CP25 / #1109 scoped closure, 26/11/2026. Owner continuation after CP24 explicit correction proposal interpreted as authorization for B15-W05 and the same false rule in two B15-O05 Knowledge passages only. SGK source-owner #725 corrected three lines, 96/96 ID/stem/key/rubric exact (old ad4165de0a2c3442b50d7f3d0019a99b5bbdef39 → current b748a7c5af4074b39ef8a6a756a7be7839b9cd83; source commit 9db462adb566c7828efb64466d5773408ef161d3). CĐ18 exact same wrapper copied, 97 source pointers updated, B137 explanation aligned, O31 explicitly says perpendicular spatial lines may be skew. S1 corroboration Toán 11 KNTT B22 (https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-7-quan-he-vuong-goc-trong-khong-gian-1069/bai-22-hai-duong-thang-vuong-goc-3580.html and https://luyen.org/lop-11/toan/kntt/c7-b22), mathematical counterexample B143: directions (1;0;0),(0;1;0), dot 0 yet z=0 vs z=2. CP20a–f Work O13/O15/O23/O32, CP20d owner-approved zero-vector convention (current ChII 43d93a7d0d070a288251c34ff411c7de3206dc85), CP24 X-G.5 complete. Final exact-source checks: 50 executed arithmetic/vector/geometry recomputations PASS, 160/160 SGK bank ID memberships, 247/247 canonical matrix IDs (259 placements including 12 replays), 40 outcomes/40 FirstTry, 207 Practice, 12 exact matching replay stems, all rubric score sequences and identity markers retained modulo source-pointer relock, 1662/1662 inline, 248/248 details, raw compound scan zero, 10 SVG refs. Historical S1 p25 P2 remains; no fresh primary PDF visual scan or independent NotebookLM review. Remaining practice-bank wording candidates outside #1109: B191/B192 (B17-C04/P04) should explicitly say AB is diameter, context is source outcome B17-O04; B206 (B14-W07) 'cầu' ambiguous solid vs surface, distinguish disk vs circumference; retain frozen stem/key here, flag for #1090 scoped review; no claim of full bank acceptance. P0/P1 in #1109 Work/authorized correction scope zero. Source-only CONTENT_READY under #1109, not RELEASE, no CI/browser PASS, no protected assessment edits.
+
+Current learner `0e31acbcecffecbcefcf734b290cfe8d4ff960cc`, current Q18 `1d575aebabb51597f0c351265a3914249dbd28ef`; all 247 existing matrix IDs unchanged, actual placements verified. Current SGK ChII `43d93a7d0d070a288251c34ff411c7de3206dc85`, ChV `b748a7c5af4074b39ef8a6a756a7be7839b9cd83`.
+
+---
+Historical narrative below applies to earlier immutable snapshots; current fields and CP25 supersede old byte-exact/readiness claims. Original S1 and independent reviewer blob pointers remain historical provenance.
+
 <!-- OWNER_APPROVED_SHARED_G12_CHV_WRITTEN_24_STAFF_NOTE_REMOVAL_A1_20261121 -->
 **CURRENT EXACT SOURCE_EQUIVALENT AUTHORING:** Same one CĐ18 original R04 learner `d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960` and original G12 SGK ChV B14–B17 shared bank `ad4165de0a2c3442b50d7f3d0019a99b5bbdef39` (matching source-owner #725 and CĐ18 branch hash). All **24** original `- **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery...` staff-only visible prose removed from original shared SGK canonical and exactly 24 Topic projected Written answers. In SGK canonical there is now ONE hidden `Q16_AUTHORING_ONLY` metadata comment retaining the existing no self-graded Mastery policy; Topic source keeps `NO_MASTERY` Q16 controls. Original **24/24 original Written rubric mathematical criteria/point weights and solutions byte-for-byte unchanged** once removing the one staff sentence; remaining 183 Practice question/answer bodies untouched, all 247 original canonical public IDs, 40 FirstTry, 12 public question-only selfcheck, 10 SVG and W07 anti-spoiler preserved. Historical G12 SBT B14 page25 source provenance remains P2 not claimed solved. Q18 `3a0cbbfb74252787f08c9504de9018c7e58bf8a1`, A1 `current`, V2 `current`; `DELTA_B_SOURCE_EQUIVALENT` (student-only editorial). No full independent NotebookLM Topic PASS or website release/merge/deploy.
 ---
 <!-- TOP18_MASTER974_W07_TARGETED_Q18_A1_CORRECTION_20261121 -->
 ## CĐ18 current W07 answer-leak fix · signed A1 recheck 21/11/2026
 
-CURRENT_EFFECTIVE_LEARNER_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
+CURRENT_EFFECTIVE_LEARNER_BLOB: 0e31acbcecffecbcefcf734b290cfe8d4ff960cc
 PREVIOUS_AFFECTED_SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
-SOURCE_COMMIT: aee8a33bcf44acb90268f96b297fa161a3861de3
+SOURCE_COMMIT: 546764c91104fcfb88fa675eb87e74cc62dc00bc
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_TARGETED_W07_STANDALONE_GIVENS; DELTA_A_UI_SVG_MOVED_UNDER_VOLUNTARY_ANSWER
 VERIFIED_DEFECT: TOP22-20261121-063 P1 FIXED_VERIFIED
 W07_DIRECT_CHECK: Original W07 asked (a) M(t), (b) minimal radar distance, (c) entry/exit but numeric O, R, A, u, t≥0 were only in a separate prefatory paragraph, not self-contained card. Its source SVG c818e636ded54730582b139f4476ce9daa2156b2 showed full solved t=3/t=6/t=9 and d_min=4 BEFORE W07 student attempt. Current W07 stem now repeats precisely radar O=(0,0,0), R=5 km, A=(6,4,0) km, u=(-1,0,0) km/h, t≥0. The exact SVG file/sha is unchanged but same image+read-guide moved inside W07 own opt-in answer disclosure after math solution, so it is hidden until requested. Student-facing NotebookLM author-source note in prelude removed.
@@ -18,20 +28,20 @@ CURRENT_STANDARD_VERSION: 3.2.0; Q18_MODE: AUTHOR_SELF_VERIFIED; NO independent 
 <!-- TOP18_MASTER974_CURRENT_A1_A7_20261121 -->
 ## CĐ18 current AUTHORING A1–A7 source-snapshot 21/11/2026
 
-CURRENT_SOURCE_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
+CURRENT_SOURCE_BLOB: 0e31acbcecffecbcefcf734b290cfe8d4ff960cc
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-CURRENT_SOURCE_COMMIT: aee8a33bcf44acb90268f96b297fa161a3861de3
+CURRENT_SOURCE_COMMIT: 546764c91104fcfb88fa675eb87e74cc62dc00bc
 CURRENT_STANDARD_ID: SLM-THPT-QUALITY-ONE
 CURRENT_STANDARD_VERSION: 3.2.0
 CURRENT_Q18_MODE: AUTHOR_SELF_VERIFIED
 CURRENT_REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_DELTA: DELTA_C_PED_TARGETED_40_D6_80_MATH_LINKS_AND_O06_EXPLANATION; DELTA_A_EDITORIAL_40_VANDUNG_207_PRACTICE_12_REPLAY_LABELS
-CURRENT_PUBLIC_CANONICAL: 247 unique IDs exactly = 160 original G12 SGK (from original ChII 856a37bd16d2746ffc2e12906de18d1f4338a3b6 and ChV 11eb2834cfdb4a24685157f84666c2bb0767970a), 40 TOP18 FirstTry T01–T40, 40 original TOP18 Practice P01–P40 and seven Topic Written W01–W07; 12 extra public SelfCheck placements reuse P03/P07/P10/P14/P16/P17/P19/P22/P24/P29/P35/P40 at real Practice numbers 15/35/50/70/81/86/96/112/118/143/175/201, not extra items.
-CURRENT_SOURCE_QA: 40/40 Knowledge lesson/outcome math and Vận dụng stem/answer untouched, 40 individualized voluntary Kiểm lỗi passages mapping exact subsection and two mathematically relevant existing numbered Bài (80 valid references total); 206/207 entire Practice mathematical stems/answers/solutions byte-exact versus preceding blob 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355; the remaining Topic W07 question is now self-contained and its original full mathematical answer plus rubric /4 remain byte-exact; all 47 Written rubrics remain unchanged, labels-only 207 sequential Bài luyện 1–207, 40 source-bank lead-in labels removed, 40 Vận dụng visible labels normalized, redundant "### 2." removed without deleting underlying math content; 12 public question-only items byte-exact, one voluntary after-12 answer-location disclosure; 10 SVG links/model unchanged; 248 balanced opt-in details, one SGK end source.
+CURRENT_DELTA: CP20d and CP25 authorized source corrections; Work Knowledge and X-G.5 equivalence; original historical scope below.
+CURRENT_PUBLIC_CANONICAL: 247 unique IDs, 259 placements; 160 SGK source IDs (64 current ChII, 96 current ChV), 40 T, 40 P, 7 W; 12 replay reuse same IDs.
+CURRENT_SOURCE_QA: CP25 exact-source audit above; 247/247 ID matrix, 259 placements, 50 math checks, 160 bank memberships, 12 exact replay, 248 disclosures.
 CURRENT_O06_PED_NOTE: Original resultant example 3N/4N gives 5N, FirstTry 6N/8N gives 10N, source question bank P06 tests WORK =10J for force10N, displacement2m and angle60°. New concept distinction between vector resultant and work added, no canonical bank item stem/key changed.
 CURRENT_P0: 0
 CURRENT_P1: 0
-CURRENT_P2: 2 (older SBT_REFERENCE_GAP_DOCUMENTED_G12_CHV_B14_PRINTED_P25; new TOP22-20261121-062 original G12 source-owner 24 administrative Written/Mastery labels, pending coordinated canonical source edit)
+CURRENT_P2: inherited SBT B14 p25 source gap and outside-scope bank wording candidates listed in CP25; staff note issue previously fixed.
 CURRENT_NOTEBOOKLM_INDEPENDENT_PASS: NOT_CLAIMED
 CURRENT_S1_Q01: G12 KNTT Tập Một ChII B06–B08 and Tập Hai ChV B14–B17 evidence INHERITED_SNAPSHOT_SCOPED from prior SGK owner/Git original; G12 SBT B14 printed p25 remains unavailable. No new direct PDF screenshot/page read or new source-proof claim.
 CURRENT_OFFICIAL_TOPIC_READINESS: NOT_CLAIMED; PUBLIC_SELF_CHECK=CLIENT_SELF_CHECK_NO_MASTERY; PRIVATE_RD1=UNCHANGED; FINAL_SUBMIT=UNCHANGED; WEBSITE=NOT_IN_SCOPE; RELEASE_AUTHORIZATION=NO
@@ -50,7 +60,7 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
+ACADEMIC_SOURCE_BLOB: 0e31acbcecffecbcefcf734b290cfe8d4ff960cc
 ORIGINAL_S1_CROSSWALK_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R01_S1_40_OUTCOME_160_SGK_CANONICAL_CROSSWALK_20261114.md
 ORIGINAL_S1_CROSSWALK_BLOB: 7cba588cfe60d3675df99d8aa7e4b9275da9690e
 S1_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
