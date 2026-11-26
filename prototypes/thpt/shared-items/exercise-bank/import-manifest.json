@@ -21312,6 +21312,93 @@
       },
       "remaining": "Next: structural-family and cognitive-depth review G10/G11 and other Topics; separate FirstTry/Written/public selfcheck audit; then interaction classification/conversion under current owner restrictions. Keep source history and CP104/105 totals.",
       "release_authorization": false
+    },
+    "coverage_depth_cp107": {
+      "scope": "G10–G11 first structural-family triage after CP106; scan 18 chapter shards, complete missing difficulty classification, manually deepen selected G11 geometry/derivative tasks",
+      "baseline_commit": "fa987e482e4563eaa8f06b3449199fb6c8bc7973",
+      "scan": {
+        "g10": 215,
+        "g11": 359,
+        "total": 574,
+        "normalized_stem_exact_duplicates_within_each_grade": 0,
+        "note": "214 G10 records match C/P/A suffix and 1 legacy CORE-QF01 verified separately via SGK placement and source. Text scan is not semantic deduplication; no cross-grade scan or exhaustive family coverage verdict.",
+        "g11_single_item_skill_tags": 65,
+        "remaining": "Review tags against Topic, FirstTry and Written, not quotas."
+      },
+      "difficulty": {
+        "newly_classified": 54,
+        "distribution": {
+          "1": 17,
+          "2": 29,
+          "3": 8
+        },
+        "g10_final_missing": 0,
+        "g11_missing": 0,
+        "g12_missing_from_cp106": 0,
+        "scope": "894 SGK formative items now have a difficulty value; older string labels remain as imported, no assertion of uniform calibration.",
+        "shards": [
+          {
+            "path": "items/g10-chvi.json",
+            "count": 30,
+            "before": "9267f9fd228ab073ea70b6340b2f10382df6b772",
+            "after": "d176304ea58d8af89da0627c349919a951e883b5",
+            "distribution": {
+              "1": 7,
+              "2": 17,
+              "3": 6
+            }
+          },
+          {
+            "path": "items/g10-chvii.json",
+            "count": 24,
+            "before": "b964cd2a06887166504cfe76c39a03e10a4f70b7",
+            "after": "478164e8471507332940a1608488d1a1201817fc",
+            "distribution": {
+              "1": 10,
+              "2": 12,
+              "3": 2
+            }
+          }
+        ]
+      },
+      "depth_changes": [
+        {
+          "id": "THPT-G11-CHVII-B23-P03",
+          "path": "items/g11-chvii.json",
+          "reason": "C04/P03 repeated the same yes/no property. Now transfer perpendicularity between parallel planes, prove distinct parallel lines by feet, then construct counterexample to one-line test. Add source-heading/SGK placement skill G11-B23-PARALLEL_TRANSFER, retain G11-B23-PLANE_PROPERTY and CD16 O08.",
+          "knowledge_blob": "03cccc3ae3b48856589611ee4d3ffea05cdc89b4"
+        },
+        {
+          "id": "THPT-G11-CHVII-B27-P01",
+          "path": "items/g11-chvii.json",
+          "reason": "C02/P01 merely changed numbers in pyramid formula. Now invert pyramid volume and compare prism with same base/height or same volume; h=9 dm, V=108 dm³, alternate h=3 dm. Add source-heading/placement skill G11-B27-PRISM_VOLUME; retain G11-B27-PYRAMID_VOLUME and CD17 O08.",
+          "knowledge_blob": "d1f4a6cd17321278cb8c6bc65ab397f8b15feb0b"
+        },
+        {
+          "id": "THPT-G11-CHIX-B31-P05",
+          "path": "items/g11-chix.json",
+          "reason": "C06/P05/P06 all corner/non-differentiability cases. P05 now tests piecewise function with equal finite one-sided difference quotients: continuous and f'(1)=2. Preserve G11-B31-CONTINUITY_NECESSARY and CD09 O05.",
+          "knowledge_blob": "8f3d2b6e144a5d5bee5635b7f5058291cc89c9ac"
+        }
+      ],
+      "verification": {
+        "changed_records": 57,
+        "difficulty_only": 54,
+        "task_changes": 3,
+        "skill_tags_added": 2,
+        "original_skills_retained": true,
+        "ids_order_preserved": true,
+        "other_records_unchanged_in_changed_shards": 166,
+        "exact_diff_pre_manifest": 4,
+        "placement_changes": 0,
+        "existing_reuse": "Three revised items retain SGK practice, Topic practice and public client self-check placements; no mode changes; projected content must be revalidated by RELEASE before publication.",
+        "sgk_g10_placement_blob": "240d485678b3182add1fb3acd7035e6fc9994e08",
+        "sgk_g11_placement_blob": "ed0461148642c53f6849d943a6f1ffbbe5a11016",
+        "verdict": "AUTHOR_SELF_VERIFIED scoped changes only"
+      },
+      "limitations": "G10 B18 current knowledge guessed path returned 404; no B18 task changed; difficulty classification uses exact bank stems/keys. G10/G11 older labels not normalized; semantic family and skill coverage review remains in progress. No new items/placements or independent review.",
+      "next": "Continue semantic family review by chapter groups, especially G10–11 single-tag skills and existing Topic practice. Then FirstTry/Written/public selfcheck and interaction classification; no new standards, no cutover or release.",
+      "release_authorization": false
     }
   }
 }
