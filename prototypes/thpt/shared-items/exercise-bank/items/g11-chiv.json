@@ -95,16 +95,17 @@
   {
     "item_id": "THPT-G11-CHIV-B10-P02",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Trong tứ diện S.ABC, M nằm trong cạnh SB. Tìm giao điểm của đường CM với \\((SAB)\\).",
-    "answer_key": "Điểm M.",
-    "worked_solution": "Vì \\(M\\in SB\\) và \\(SB\\subset(SAB)\\), nên \\(M\\in(SAB)\\). Đỉnh C không thuộc \\((SAB)\\) do S.ABC là tứ diện. Vì vậy CM không nằm trong mặt phẳng này và có đúng một điểm chung M.",
+    "stem": "Trong tứ diện \\(S.ABC\\), M là trung điểm SA, N nằm trên cạnh SB sao cho \\(\\frac{SN}{SB}=\\frac13\\). Hãy dựng giao điểm I của đường thẳng MN với mặt phẳng \\((ABC)\\). Nêu lý do giao điểm tồn tại và duy nhất. Có nhất thiết I thuộc đoạn AB không?",
+    "answer_key": "Kéo dài MN và AB, lấy \\(I=MN\\cap AB\\). I tồn tại duy nhất và nằm ngoài đoạn AB.",
+    "worked_solution": "Vì MN nằm trong mặt phẳng \\((SAB)\\), chọn mặt phẳng này làm mặt phẳng phụ. Hai mặt phẳng \\((SAB)\\) và \\((ABC)\\) cắt nhau theo AB. Trong tam giác SAB, \\(\\frac{SM}{SA}=\\frac12\\ne\\frac{SN}{SB}=\\frac13\\), nên MN không song song AB theo định lý Thalès. Hai đường MN và AB cùng thuộc \\((SAB)\\), không song song và không trùng nhau, nên cắt nhau tại đúng một điểm I. Vì \\(I\\in AB\\subset(ABC)\\), I là giao điểm cần tìm; MN không nằm trong mặt đáy vì M không thuộc mặt đáy. Đoạn MN nằm trong tam giác SAB và không gặp cạnh AB vì M,N thuộc phần trong hai cạnh SA, SB. Đường MN đi qua tam giác từ M đến N, nên giao điểm với đường AB không thể nằm trên đoạn AB. Khi dựng phải kéo dài các đường, không chỉ xét các đoạn.",
     "skill_ids": [
       "G11-B10-LINE_PLANE"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Dùng M thuộc SB và xét C có thuộc mặt không."
+      "Chọn mặt phẳng phụ \\((SAB)\\) chứa MN và tìm giao tuyến với mặt đáy.",
+      "So sánh hai tỉ số trên các cạnh bên để biết MN và AB có song song không."
     ],
     "rubric": null,
     "interaction": {
@@ -121,7 +122,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "M nằm trong mặt, C nằm ngoài; đường CM chỉ có một điểm chung với mặt. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P09."
+    "remediation": "Phân biệt đường thẳng với đoạn thẳng; giao điểm có thể nằm ngoài cạnh của hình. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P09."
   },
   {
     "item_id": "THPT-G11-CHIV-B10-P03",
@@ -529,16 +530,17 @@
   {
     "item_id": "THPT-G11-CHIV-B12-P04",
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
-    "stem": "Hình chóp S.ABCD có đáy là hình bình hành. M, N là trung điểm SA, SB. Biết \\(MN\\parallel(ABCD)\\), MN có nằm trong \\((ABCD)\\) không?",
-    "answer_key": "Không.",
-    "worked_solution": "M nằm trong cạnh SA, còn SA chỉ gặp mặt đáy tại A, nên M không thuộc mặt đáy. Vì thế MN không nằm trong mặt đáy. Theo định nghĩa, đường song song mặt phẳng không có điểm chung với mặt phẳng đó.",
+    "stem": "Trong hình chóp \\(S.ABCD\\) có đáy ABCD là hình bình hành không suy biến, M nằm trong cạnh SA và \\(SM:MA=2:3\\). Hãy dựng điểm N thuộc cạnh SD sao cho \\(MN\\parallel(ABCD)\\). Tính tỉ số SN:ND và chứng minh N là điểm duy nhất thỏa mãn.",
+    "answer_key": "Trong \\((SAD)\\), qua M kẻ đường thẳng song song AD, cắt SD tại N. \\(SN:ND=2:3\\). N duy nhất.",
+    "worked_solution": "Muốn dựng MN song song mặt đáy, ta tìm một đường trong đáy cùng phương với MN. Vì \\(M,N\\in(SAD)\\) và \\((SAD)\\cap(ABCD)=AD\\), nếu \\(MN\\parallel(ABCD)\\) thì \\(MN\\parallel AD\\). Do đó trong tam giác SAD, qua M kẻ đường thẳng song song AD; đường này cắt SD tại N nằm trong cạnh. Theo định lý Thalès, \\(\\frac{SN}{SD}=\\frac{SM}{SA}=\\frac25\\), suy ra \\(SN:ND=2:3\\). Kiểm lại: \\(MN\\parallel AD\\), \\(AD\\subset(ABCD)\\) và M không thuộc đáy, nên \\(MN\\parallel(ABCD)\\) theo dấu hiệu đường thẳng song song mặt phẳng. Trong mặt phẳng \\((SAD)\\), qua M chỉ có một đường thẳng song song AD; giao điểm của đường ấy với SD là duy nhất. Vì vậy N vừa tồn tại vừa duy nhất.",
     "skill_ids": [
       "G11-B12-CONSTRUCTION"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Kiểm M thuộc cạnh bên SA hay thuộc đáy."
+      "Tìm giao tuyến của mặt bên \\((SAD)\\) với đáy rồi xác định phương của MN.",
+      "Dùng định lý Thalès trong tam giác SAD để tính tỉ số."
     ],
     "rubric": null,
     "interaction": {
@@ -555,7 +557,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "M không thuộc đáy; đường song song mặt phẳng không có điểm chung với mặt. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P14."
+    "remediation": "Không tự chọn trung điểm khi đề cho tỉ số khác. Phải tìm đúng phương của đường cần dựng, kiểm điều kiện không nằm trong đáy và chứng minh duy nhất. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P14."
   },
   {
     "item_id": "THPT-G11-CHIV-B13-C01",
