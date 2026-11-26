@@ -93,7 +93,7 @@ Xét ví dụ: \(\int (6x^2-4x+3)\,\mathrm dx=2x^3-2x^2+3x+C\). Đạo hàm củ
 
 **Lời giải:** Trên \(\mathbb R\), dùng tính tuyến tính và quy tắc lũy thừa. Một nguyên hàm của \(2x^5\) là \(\frac{x^6}{3}\), của \(-4x^3\) là \(-x^4\), của \(6\) là \(6x\). Kết quả \(F(x)=\frac{x^6}{3}-x^4+6x+C\). Lấy đạo hàm được \(F'(x)=2x^5-4x^3+6\).
 
-**Vận dụng** \(\int (5x^{4}+2x)\,\mathrm dx\)=?
+**Vận dụng** \(\int (5x^4+2x)\,\mathrm dx\)?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -473,7 +473,7 @@ Nếu kết quả còn đơn vị m/s, em chưa tích phân theo thời gian (gi
 
 **Kiểm lỗi**
 
-Nếu em lấy giá trị vận tốc cuối nhân tổng thời gian, hoặc không đổi đơn vị m/s theo giây thành mét, đọc **Kiến thức 2.7**, làm **Bài 71** và **Bài 73**. Độ dời là \(\int v(t)dt\); quãng đường mới cần \(\int|v(t)|dt\).
+Nếu em lấy giá trị vận tốc cuối nhân tổng thời gian, hoặc không đổi đơn vị m/s theo giây thành mét, đọc **Kiến thức 2.7**, làm **Bài 71** và **Bài 73**. Độ dời là \(\int_a^b v(t)\,\mathrm dt\); quãng đường mới cần \(\int_a^b|v(t)|\,\mathrm dt\).
 
 </details>
 
@@ -599,7 +599,7 @@ Xét \(f(x)=x,\ g(x)=x^2\) trên \([0;2]\), giao nhau tại \(x=0,\ x=1\). Trên
 
 **Lời giải:** Hai đường giao khi \(x^2=3x\), tức \(x=0\) hoặc \(x=3\). Trên \((0;3)\), \(3x>x^2\); trên \((3;4)\), \(x^2>3x\). Do đó \(S=\int_0^3(3x-x^2)\,\mathrm dx+\int_3^4(x^2-3x)\,\mathrm dx=\frac92+\frac{11}6=\frac{19}3\). Không lấy trị tuyệt đối của một tích phân duy nhất.
 
-**Vận dụng** Tính diện tích giữa \(y=2x\) và \(y=x^2\) trên đoạn \([0,3]\). Vì sao phải chia miền tại một giao điểm ở trong đoạn?
+**Vận dụng** Tính diện tích giữa \(y=2x\) và \(y=x^2\) trên đoạn \([0;3]\). Vì sao phải chia miền tại một giao điểm ở trong đoạn?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -662,9 +662,11 @@ Chẳng hạn, thiết diện vuông cạnh \(2x\) trên \([0;1]\) (độ dài t
 *Đọc hình:* Lát vuông có cạnh 1 nên diện tích 1; lát tròn có bán kính 1 nên diện tích \(\pi\). Đây là so sánh diện tích của hai mặt cắt, không phải thể tích của hai khối.
 
 Từ công thức thiết diện, ta còn có thể **tự suy ra thể tích khối chóp cụt**, không phải học thuộc một công thức không có nguồn gốc. Xét khối chóp cụt có hai đáy đồng dạng diện tích \(S_0\) và \(S_1\), chiều cao \(h>0\). Đặt \(x\) là khoảng cách từ đáy thứ nhất (\(0\le x\le h\)). Vì các thiết diện song song với đáy đồng dạng, kích thước dài thay đổi tuyến tính, nên căn bậc hai diện tích thiết diện biến thiên tuyến tính:
+
 \[
 \sqrt{A(x)}=\sqrt{S_0}+\frac{x}{h}(\sqrt{S_1}-\sqrt{S_0}).
 \]
+
 Bình phương rồi lấy tích phân từ \(0\) đến \(h\) cho thể tích.
 
 > **CÔNG THỨC — Thể tích khối chóp cụt.** Với hai đáy đồng dạng diện tích \(S_0,S_1\ge0\) và chiều cao \(h>0\), thể tích là \(\displaystyle V=\frac h3(S_0+\sqrt{S_0S_1}+S_1)\). Khi một đáy thu về đỉnh (\(S_1=0\)), nhận được công thức khối chóp \(V=\frac h3S_0\). Cần đúng giả thiết các tiết diện đồng dạng và kích thước biến thiên tuyến tính theo chiều cao.
@@ -763,7 +765,7 @@ Nếu em dùng công thức đĩa đặc cho một miền quay có lỗ hoặc l
 >
 > - **Nguyên hàm** \(F'=f\) trên một khoảng có họ \(F+C\); điều kiện đầu mới xác định \(C\). Với \(x^n\), công thức chia cho \(n+1\) chỉ khi \(n\ne-1\); \(\frac1x\) dùng \(\ln|x|\) trên từng nhánh.
 > - **Newton–Leibniz:** với \(f\) liên tục và \(F'=f\) trên đoạn, \(\int_a^b f=F(b)-F(a)\), không viết \(+C\). Đảo cận làm đổi dấu, ghép cận phải theo đúng vị trí.
-> - **Phân biệt tích phân và diện tích:** tích phân có dấu có thể âm/triệt tiêu; diện tích dùng \(\int|f|\), quãng đường dùng \(\int|v|\), còn độ dời dùng \(\int v\). Kiểm chỗ đổi dấu.
+> - **Phân biệt tích phân và diện tích:** tích phân có dấu có thể âm/triệt tiêu; diện tích dùng \(\int_a^b|f(x)|\,\mathrm dx\), quãng đường dùng \(\int_a^b|v(t)|\,\mathrm dt\), còn độ dời dùng \(\int_a^b v(t)\,\mathrm dt\). Kiểm chỗ đổi dấu.
 > - **Thể tích theo thiết diện:** \(V=\int_a^b A(x)\,dx\); đĩa tròn \(A=\pi r^2\), vành khăn \(A=\pi(R^2-r^2)\) khi bán kính ngoài/trong và miền quay đã xác định đúng.
 
 # Luyện tập
@@ -1005,7 +1007,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** \(x^3+2x^2-2x+C\).
 
-**Lời giải:** Lấy nguyên hàm từng hạng: \(\int3x^2\,\mathrm dx=x^3\), \(\int4x\,\mathrm dx=2x^2\) và \(\int(-2)\,\mathrm dx=-2x\). Cộng lại được \(x^3+2x^2-2x+C\); đạo hàm ngược trả đúng \(3x^2+4x-2\).
+**Lời giải:** Chọn nguyên hàm lần lượt của \(3x^2,4x,-2\) là \(x^3,2x^2,-2x\). Cộng lại được \(x^3+2x^2-2x+C\); đạo hàm ngược trả đúng \(3x^2+4x-2\).
 
 **Nếu làm sai:** Quy tắc lũy thừa tăng số mũ thêm1 rồi chia hệ số mới; kiểm bằng đạo hàm.
 
@@ -1019,7 +1021,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** \(4\ln|x|+\frac1x+C\).
 
-**Lời giải:** \(\int -x^{-2}\,\mathrm dx=\frac1x\); đạo hàm của \(\frac1x\) là \(-\frac1{x^2}\).
+**Lời giải:** Một nguyên hàm của \(-x^{-2}\) là \(\frac1x\); đạo hàm của \(\frac1x\) là \(-\frac1{x^2}\).
 
 **Rubric tự luận /5:** 1đ điều kiện \(x\ne0\); 2đ log và lũy thừa; 1đ +C; 1đ đạo hàm kiểm.
 
@@ -1186,7 +1188,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** \(\tan x-2\cos x+C\).
 
-**Lời giải:** Dùng \((\tan x)'=\sec^2 x\) và \(d(-2\cos x)=2\sin x\).
+**Lời giải:** Dùng \((\tan x)'=\frac1{\cos^2 x}\) và \((-2\cos x)'=2\sin x\).
 
 **Rubric tự luận /5:** 1đ điều kiện \(\cos x\ne0\); 2đ hai nguyên hàm; 1đ +C; 1đ kiểm đạo hàm.
 
@@ -1781,7 +1783,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-W07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O14; SINGLE_ITEM_ID -->
 
-**Bài 69.** \(a(t)=4\) m/s², \(v(0)=-3\) m/s, \(s(0)=2\) m. Tìm độ dời trong \([0;2]\)s, giải thích tại sao không được coi là quãng đường.
+**Bài 69.** \(a(t)=4\) m/s², \(v(0)=-3\) m/s, \(s(0)=2\) m. Tìm độ dời trong \([0;2]\) s, giải thích tại sao không được coi là quãng đường.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -2365,7 +2367,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B13-P07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O21; SINGLE_ITEM_ID -->
 
-**Bài 108.** Lát cắt tròn có \(r=2x\) cm trên \([0;2]\)cm. Tính V.
+**Bài 108.** Lát cắt tròn có \(r=2x\) cm trên \([0;2]\) cm. Tính V.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2541,7 +2543,7 @@ Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Lu
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P09; NO_RD1; NO_MASTERY -->
 
-**Câu 9.** Tính \(\int_{1}^{3} (2x+1)\,\mathrm dx\)−\(\int_{1}^{3} x\,\mathrm dx\).
+**Câu 9.** Tính \(\int_1^3(2x+1)\,\mathrm dx-\int_1^3 x\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P10; NO_RD1; NO_MASTERY -->
 
@@ -2549,11 +2551,11 @@ Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Lu
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P11; NO_RD1; NO_MASTERY -->
 
-**Câu 11.** Tính diện tích dưới y=x² trên [0,2].
+**Câu 11.** Tính diện tích dưới \(y=x^2\) trên \([0;2]\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P12; NO_RD1; NO_MASTERY -->
 
-**Câu 12.** Với f=x trên [−2,1], tính tích phân có dấu và diện tích.
+**Câu 12.** Với \(f=x\) trên \([-2;1]\), tính tích phân có dấu và diện tích.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P13; NO_RD1; NO_MASTERY -->
 
@@ -2561,39 +2563,39 @@ Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Lu
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P14; NO_RD1; NO_MASTERY -->
 
-**Câu 14.** Với v=3t², s(0)=5, tính s(2).
+**Câu 14.** Với \(v=3t^2\), \(s(0)=5\), tính s(2).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P15; NO_RD1; NO_MASTERY -->
 
-**Câu 15.** Tính diện tích dưới y=√x trên [0,4].
+**Câu 15.** Tính diện tích dưới \(y=\sqrt x\) trên \([0;4]\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P16; NO_RD1; NO_MASTERY -->
 
-**Câu 16.** Tính S giữa y=|x| và Ox trên [−1,2].
+**Câu 16.** Tính S giữa \(y=|x|\) và Ox trên \([-1;2]\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P17; NO_RD1; NO_MASTERY -->
 
-**Câu 17.** Tính diện tích giữa y=x+2 và y=x² trên [0,2].
+**Câu 17.** Tính diện tích giữa \(y=x+2\) và \(y=x^2\) trên \([0;2]\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P18; NO_RD1; NO_MASTERY -->
 
-**Câu 18.** Tính S giữa y=x và y=x² trên [0,2].
+**Câu 18.** Tính S giữa \(y=x\) và \(y=x^2\) trên \([0;2]\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P19; NO_RD1; NO_MASTERY -->
 
-**Câu 19.** Tính S giữa y=2x và y=x² từ hai điểm giao.
+**Câu 19.** Tính S giữa \(y=2x\) và \(y=x^2\) từ hai điểm giao.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P20; NO_RD1; NO_MASTERY -->
 
-**Câu 20.** Cho thiết diện hình vuông cạnh x+1 trên [0,1], tính V.
+**Câu 20.** Cho thiết diện hình vuông cạnh \(x+1\) trên \([0;1]\), tính V.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P21; NO_RD1; NO_MASTERY -->
 
-**Câu 21.** Cho r(x)=x trên [0,2], tính V hình tròn cắt vuông góc Ox.
+**Câu 21.** Cho \(r(x)=x\) trên \([0;2]\), tính V hình tròn cắt vuông góc Ox.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P22; NO_RD1; NO_MASTERY -->
 
-**Câu 22.** Cho miền 0≤x≤2, 0≤y≤√x quay quanh Ox, V?
+**Câu 22.** Cho miền \(0\le x\le2\), \(0\le y\le\sqrt x\) quay quanh Ox, V?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
