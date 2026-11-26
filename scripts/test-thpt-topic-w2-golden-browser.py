@@ -75,6 +75,20 @@ def assert_math(page,root,expected,label,stem_only=False):
   return {math,errors,missing,raw};
  }""",stem_only)
  assert got["math"]==expected and got["errors"]==got["missing"]==0 and not got["raw"],(label,expected,got)
+def assert_signed_display(page,topic,outcome,root):
+    # Check actual signed display TeX, not a historical renderer-specific marker.
+    raw=(ROOT/f"docs/thpt-preview/chuyen-de/cd{topic}/kien-thuc.md").read_text(encoding="utf-8")
+    section=re.split(r"^### "+re.escape(outcome)+r"\.\s",raw,flags=re.M)[1]
+    section=re.split(r"^#{2,3} ",section,maxsplit=1,flags=re.M)[0]
+    section=re.sub(r"^>\s?", "", section,flags=re.M)
+    expected=[re.sub(r"\s+","",html.unescape(x)) for x in re.findall(r"\\\[([\s\S]*?)\\\]",section)]
+    assert len(expected)==1,(topic,outcome,"signed display inventory",expected)
+    expect(root.locator("mjx-container[display='true']")).to_have_count(1,timeout=20000)
+    expect(root.locator("mjx-container[display='true']")).to_be_visible()
+    got=root.evaluate(r"""el=>[...MathJax.startup.document.math].filter(i=>i.display&&i.typesetRoot&&el.contains(i.typesetRoot)&&!i.typesetRoot.closest('[hidden],details:not([open])')).map(i=>i.math.replace(/\s+/g,''))""")
+    assert got==expected,(topic,outcome,"signed display mismatch",expected,got)
+    assert root.locator("mjx-merror,mjx-container mjx-container").count()==0
+
 with sync_playwright() as pw:
     for engine in ("chromium", "webkit"):
         browser = getattr(pw, engine).launch(headless=True)
@@ -198,8 +212,12 @@ with sync_playwright() as pw:
                 assert page.locator(".topic-w2-model-link a").get_attribute("href") is not None
                 roles = page.locator("[data-topic-w1-callout]")
                 assert roles.count() >= outcomes, (topic, "missing 3+1 boxes", roles.count())
-                bad_semantic = roles.evaluate_all("""els=>els.map(el=>({role:el.dataset.topicW1Callout,labels:[...el.children].map(p=>p.querySelector(':scope > strong')?.textContent||'').filter(s=>/^(ĐỊNH NGHĨA|KHÁI NIỆM|CÔNG THỨC|HỆ THỨC|TÍNH CHẤT|ĐỊNH LÝ|ĐỊNH LÍ|QUY TẮC|PHƯƠNG PHÁP|KIẾN THỨC CẦN GHI NHỚ|GHI NHỚ|LƯU Ý)/.test(s.toLocaleUpperCase('vi').trim())),html:el.innerHTML.slice(0,250)})).filter(b=>b.labels.length!==1)""")
+                bad_semantic = roles.evaluate_all("""els=>els.map(el=>({continuation: (()=>{const panel=el.closest('.thpt-r4-knowledge-content-panel');let prior=el.previousElementSibling;while(prior&&!prior.hasAttribute('data-topic-w1-callout'))prior=prior.previousElementSibling;return panel?.querySelector('h3')?.textContent.startsWith('2.3.')&&el.dataset.topicW1Callout==='concept'&&prior?.dataset.topicW1Callout==='concept'&&el.textContent.trim().startsWith('Viết')&&el.textContent.includes('Giới hạn');})(),role:el.dataset.topicW1Callout,labels:[...el.children].map(p=>p.querySelector(':scope > strong')?.textContent||'').filter(s=>/^(ĐỊNH NGHĨA|KHÁI NIỆM|CÔNG THỨC|HỆ THỨC|TÍNH CHẤT|ĐỊNH LÝ|ĐỊNH LÍ|QUY TẮC|PHƯƠNG PHÁP|KIẾN THỨC CẦN GHI NHỚ|GHI NHỚ|LƯU Ý)/.test(s.toLocaleUpperCase('vi').trim())),html:el.innerHTML.slice(0,250)})).filter(b=>b.labels.length!==1 && !(b.labels.length===0 && b.continuation))""")
                 assert not bad_semantic, (topic,"merged or unlabelled formal cards",bad_semantic[:5])
+                if topic == '08':
+                    continuation=page.locator('.thpt-r4-knowledge-content-panel').filter(has=page.locator('h3',has_text='2.3. Giới hạn vô cực gần điểm')).locator('[data-topic-w1-callout="concept"]')
+                    expect(continuation).to_have_count(2)
+                    assert continuation.nth(1).inner_text().strip().startswith('Viết')
                 for role, color in PALETTE.items():
                     elems = page.locator('[data-topic-w1-callout="' + role + '"]')
                     for e in elems.all():
@@ -270,9 +288,12 @@ with sync_playwright() as pw:
                     page.locator('[data-topic-w1-subtab="1-1"]').click()
                     chasles = page.locator('[data-topic-w1-callout="rule"]').filter(has_text="Hệ thức Chasles")
                     expect(chasles).to_have_count(1)
-                    restored = chasles.locator('[data-topic-w2-display-math="recovered-display"]')
-                    expect(restored).to_have_count(1)
-                    expect(restored.locator("mjx-container").first).to_be_visible(timeout=20000)
+                    if REFRESH:
+                        assert_signed_display(page,topic,"1.1",chasles)
+                    else:
+                        restored = chasles.locator('[data-topic-w2-display-math="recovered-display"]')
+                        expect(restored).to_have_count(1)
+                        expect(restored.locator("mjx-container").first).to_be_visible(timeout=20000)
                     assert not chasles.evaluate(r"(e) => e.innerText.includes('\\operatorname')"), (
                         engine, topic, width, "raw Chasles TeX escaped into visible text",
                     )
@@ -293,9 +314,13 @@ with sync_playwright() as pw:
                         has_text="Phép toán với giới hạn hữu hạn của dãy số"
                     )
                     expect(limits).to_have_count(1)
-                    recovered = limits.locator('[data-topic-w2-display-math="recovered-display"]')
-                    expect(recovered).to_have_count(1)
-                    expect(recovered.locator("mjx-container").first).to_be_visible(timeout=20000)
+                    if REFRESH:
+                        # The current signed aligned display follows the labelled card as a sibling.
+                        assert_signed_display(page,topic,"1.4",page.locator(".thpt-r4-knowledge-content-panel:visible"))
+                    else:
+                        recovered = limits.locator('[data-topic-w2-display-math="recovered-display"]')
+                        expect(recovered).to_have_count(1)
+                        expect(recovered.locator("mjx-container").first).to_be_visible(timeout=20000)
                     assert not limits.evaluate(r"(e) => e.innerText.includes('\\lim(')"), (
                         engine, topic, width, "raw limit TeX escaped into visible text",
                     )
