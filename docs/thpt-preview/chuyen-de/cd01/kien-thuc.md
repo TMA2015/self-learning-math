@@ -114,7 +114,7 @@ Hãy phủ định hai phát biểu “\(t\ge5\)” và “\(t<-1\)”, với \(
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Hai phủ định lần lượt là \(t<5\) và \(t\ge-1\). Nếu em viết \(t\le5\), hãy thử ngay \(t=5\): cả phát biểu gốc và câu mới đều đúng, nên đó không thể là phép phủ định.
+Hai phủ định lần lượt là \(t&lt;5\) và \(t\ge-1\). Nếu em viết \(t\le5\), hãy thử ngay \(t=5\): cả phát biểu gốc và câu mới đều đúng, nên đó không thể là phép phủ định.
 
 **Kiểm lỗi**
 
@@ -140,6 +140,8 @@ Nhưng một kết luận đúng theo chiều thuận chưa cho phép đọc ng�
 ![Bội của 6 nằm trong tập bội của 3](../../../assets/visuals/THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg)
 
 *Quan sát hình:* Hình giúp đọc chiều suy luận: mọi bội của 6 là bội của 3, nhưng vùng chỉ thuộc bội của 3 không cho phép suy ngược.
+
+Ký hiệu \(a\mid n\) đọc là “\(a\) là ước của \(n\)” hay “\(n\) chia hết cho \(a\)” (với \(a\) là số nguyên khác 0). Chẳng hạn, \(10\mid n\) nghĩa là \(n=10k\) với một số nguyên \(k\), không phải 10 chia hết cho \(n\).
 
 **Ví dụ**
 
@@ -253,25 +255,25 @@ Khi nói một học sinh **thuộc** câu lạc bộ, ta đang xét một cá t
 
 **Từ tên nhóm đến cách viết tập hợp.** Một tập hợp có thể được mô tả bằng cách **liệt kê** các phần tử (chẳng hạn \(E=\{0;2;4;6\}\)) hoặc **nêu tính chất đặc trưng** (\(E=\{x\in\mathbb N\mid x<8,\ x\text{ chẵn}\}\)); hai cách này cho cùng một tập. Khi liệt kê, mỗi phần tử chỉ tính một lần, không phụ thuộc thứ tự viết; \(\varnothing\) là tập không có phần tử. Trước khi viết tập bằng tính chất, hãy xác định rõ miền của \(x\).
 
-**Các tập hợp số thường dùng.** Trước hết, \(\mathbb N=\{0;1;2;\ldots\}\) là tập số tự nhiên, còn \(\mathbb Z=\{\ldots;-2;-1;0;1;2;\ldots\}\) là tập số nguyên. Mọi số nguyên \(a\) đều viết được thành phân số \(a/1\). Vì vậy các số nguyên thuộc tập **số hữu tỉ** \(\mathbb Q=\{a/b\mid a,b\in\mathbb Z,\ b\ne0\}\); số thập phân hữu hạn và vô hạn tuần hoàn đều là số hữu tỉ. Ngược lại, các số thập phân vô hạn **không tuần hoàn** như \(\sqrt2\) là **số vô tỉ**, không thuộc \(\mathbb Q\). Tập số thực \(\mathbb R\) gồm tất cả số hữu tỉ và vô tỉ, nên có chuỗi bao hàm
+**Các tập hợp số thường dùng.** Trước hết, \(\mathbb N=\{0;1;2;\ldots\}\) là tập số tự nhiên, còn \(\mathbb Z=\{\ldots;-2;-1;0;1;2;\ldots\}\) là tập số nguyên. Mọi số nguyên \(a\) đều viết được thành phân số \(\frac a1\). Vì vậy các số nguyên thuộc tập **số hữu tỉ** \(\mathbb Q=\{\frac ab\mid a,b\in\mathbb Z,\ b\ne0\}\); số thập phân hữu hạn và vô hạn tuần hoàn đều là số hữu tỉ. Ngược lại, các số thập phân vô hạn **không tuần hoàn** như \(\sqrt2\) là **số vô tỉ**, không thuộc \(\mathbb Q\). Tập số thực \(\mathbb R\) gồm tất cả số hữu tỉ và vô tỉ, nên có chuỗi bao hàm
 
 \[
 \boxed{\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R.}
 \]
 
-Đọc chuỗi này từ trái sang phải: một số tự nhiên chắc chắn là số nguyên, hữu tỉ và thực, nhưng chiều ngược không đúng. Ví dụ, \(-2\in\mathbb Z\) song \(-2\notin\mathbb N\); \(3/4\in\mathbb Q\) song \(3/4\notin\mathbb Z\); \(\sqrt2\in\mathbb R\) song \(\sqrt2\notin\mathbb Q\). Đây là lý do phải **chọn đúng tập số** trước khi xét một điều kiện. Với \(x^2=2\), tập nghiệm trong \(\mathbb Q\) là \(\varnothing\), còn trong \(\mathbb R\) là \(\{-\sqrt2;\sqrt2\}\).
+Đọc chuỗi này từ trái sang phải: một số tự nhiên chắc chắn là số nguyên, hữu tỉ và thực, nhưng chiều ngược không đúng. Ví dụ, \(-2\in\mathbb Z\) song \(-2\notin\mathbb N\); \(\frac34\in\mathbb Q\) song \(\frac34\notin\mathbb Z\); \(\sqrt2\in\mathbb R\) song \(\sqrt2\notin\mathbb Q\). Đây là lý do phải **chọn đúng tập số** trước khi xét một điều kiện. Với \(x^2=2\), tập nghiệm trong \(\mathbb Q\) là \(\varnothing\), còn trong \(\mathbb R\) là \(\{-\sqrt2;\sqrt2\}\).
 
-Xét \(A=\{1,2\}\) và \(B=\{x\in\mathbb N:1\le x\le2\}\). Hai cách mô tả cho đúng cùng các phần tử nên \(A=B\); để chứng minh hai tập bằng nhau, ta có thể chứng minh mỗi tập là tập con của tập kia. Trong \(A\), số 2 là một **phần tử**, ký hiệu \(2\in A\), còn \(\{2\}\) là một **tập con**, ký hiệu \(\{2\}\subseteq A\). Số 2 không đồng nhất với tập chỉ chứa số 2. Tập rỗng \(\varnothing\) không có phần tử nhưng vẫn là tập con của mọi tập.
+Xét \(A=\{1;2\}\) và \(B=\{x\in\mathbb N:1\le x\le2\}\). Hai cách mô tả cho đúng cùng các phần tử nên \(A=B\); để chứng minh hai tập bằng nhau, ta có thể chứng minh mỗi tập là tập con của tập kia. Trong \(A\), số 2 là một **phần tử**, ký hiệu \(2\in A\), còn \(\{2\}\) là một **tập con**, ký hiệu \(\{2\}\subseteq A\). Số 2 không đồng nhất với tập chỉ chứa số 2. Tập rỗng \(\varnothing\) không có phần tử nhưng vẫn là tập con của mọi tập.
 
 **Ví dụ**
 
-**Đề bài.** Cho \(A=\{1,3\}\), \(B=\{1,2,3\}\). Xét \(1\in A\), \(\{1\}\subseteq A\), \(A\subseteq B\), \(B\subseteq A\).
+**Đề bài.** Cho \(A=\{1;3\}\), \(B=\{1;2;3\}\). Xét \(1\in A\), \(\{1\}\subseteq A\), \(A\subseteq B\), \(B\subseteq A\).
 
 **Lời giải.** Ba phát biểu đầu đúng. Phát biểu cuối sai vì \(2\in B\) nhưng \(2\notin A\). Ta phân biệt phần tử và tập con, rồi kiểm từng phần tử của tập đứng trước.
 
 **Vận dụng**
 
-Với \(A=\{2,4\}\), hãy phân biệt đúng sai cho ba phát biểu: \(2\in A\), \(\{2\}\subseteq A\), \(\{2\}\in A\).
+Với \(A=\{2;4\}\), hãy phân biệt đúng sai cho ba phát biểu: \(2\in A\), \(\{2\}\subseteq A\), \(\{2\}\in A\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -279,7 +281,7 @@ Hai phát biểu đầu đúng, phát biểu cuối sai: các phần tử của 
 
 **Kiểm lỗi**
 
-Nếu em cho rằng tập {2} là một phần tử của A trong khi A chỉ chứa các số, em đã nhầm **phần tử** với **tập con**. Quay lại **Kiến thức 2.1**, rồi làm **Bài 12** và **Bài 13** trong Luyện tập; luôn xác định loại đối tượng ở hai vế trước khi dùng ký hiệu.
+Nếu em cho rằng tập \(\{2\}\) là một phần tử của A trong khi A chỉ chứa các số, em đã nhầm **phần tử** với **tập con**. Quay lại **Kiến thức 2.1**, rồi làm **Bài 12** và **Bài 13** trong Luyện tập; luôn xác định loại đối tượng ở hai vế trước khi dùng ký hiệu.
 
 </details>
 
@@ -296,21 +298,21 @@ Sau khi phân biệt phần tử với tập con, ta mới có thể ghép các 
 > \(A\cap B\) là tập các phần tử thuộc **cả** A và B; \(A\cup B\) là tập thuộc **ít nhất một** trong hai. Hợp không loại bỏ phần giao, chỉ bỏ việc đếm lặp.
 
 
-Với \(A=\{1,2,3,4\}\) và \(B=\{3,4,5\}\), các phần tử chung là 3,4 nên \(A\cap B=\{3,4\}\). Gom mọi phần tử xuất hiện trong ít nhất một tập và xóa lặp, ta được \(A\cup B=\{1,2,3,4,5\}\). Không có lý do bỏ 3 và 4 khỏi hợp chỉ vì chúng cùng ở hai tập. Trên biểu đồ Ven, vùng chung nằm trong cả hình của giao lẫn hợp.
+Với \(A=\{1;2;3;4\}\) và \(B=\{3;4;5\}\), các phần tử chung là 3,4 nên \(A\cap B=\{3;4\}\). Gom mọi phần tử xuất hiện trong ít nhất một tập và xóa lặp, ta được \(A\cup B=\{1;2;3;4;5\}\). Không có lý do bỏ 3 và 4 khỏi hợp chỉ vì chúng cùng ở hai tập. Trên biểu đồ Ven, vùng chung nằm trong cả hình của giao lẫn hợp.
 
 **Ví dụ**
 
-**Đề bài.** Với \(A=\{1,2,4\}\), \(B=\{2,3,4\}\), tìm giao và hợp.
+**Đề bài.** Với \(A=\{1;2;4\}\), \(B=\{2;3;4\}\), tìm giao và hợp.
 
-**Lời giải.** Phần chung là 2 và 4, nên \(A\cap B=\{2,4\}\). Hợp gồm 1,2,3,4, mỗi phần tử một lần: \(A\cup B=\{1,2,3,4\}\). Phần chung vẫn thuộc hợp.
+**Lời giải.** Phần chung là 2 và 4, nên \(A\cap B=\{2;4\}\). Hợp gồm 1,2,3,4, mỗi phần tử một lần: \(A\cup B=\{1;2;3;4\}\). Phần chung vẫn thuộc hợp.
 
 **Vận dụng**
 
-Cho \(A=\{-1,0,1,2\}\) và \(B=\{0,2,4\}\). Tìm \(A\cap B\) và \(A\cup B\).
+Cho \(A=\{-1;0;1;2\}\) và \(B=\{0;2;4\}\). Tìm \(A\cap B\) và \(A\cup B\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(A\cap B=\{0,2\}\), còn \(A\cup B=\{-1,0,1,2,4\}\). Nếu em muốn đếm vùng Ven, hãy đưa 0 và 2 vào phần chung nhưng khi tính tổng mỗi phần tử chỉ xuất hiện một lần.
+\(A\cap B=\{0;2\}\), còn \(A\cup B=\{-1;0;1;2;4\}\). Nếu em muốn đếm vùng Ven, hãy đưa 0 và 2 vào phần chung nhưng khi tính tổng mỗi phần tử chỉ xuất hiện một lần.
 
 **Kiểm lỗi**
 
@@ -328,20 +330,20 @@ Vì sao thứ tự hai tập trong phép hiệu lại quan trọng?
 
 > **ĐỊNH NGHĨA**
 >
-> \[A\setminus B=\{x\in A:x\notin B\}.\] Hiệu giữ tập đứng trước và loại phần chung; thông thường \(A\setminus B\ne B\setminus A\).
+> \(A\setminus B=\{x\in A:x\notin B\}\). Hiệu giữ tập đứng trước và loại phần chung; thông thường \(A\setminus B\ne B\setminus A\).
 
 
-Với \(A=\{1,2,3,4\}\), \(B=\{3,4,5\}\), giữ A rồi bỏ phần chung 3,4 cho \(A\setminus B=\{1,2\}\); đổi chiều lại cho \(B\setminus A=\{5\}\). Như vậy hiệu không có tính giao hoán. Trên biểu đồ Ven, \(A\setminus B\) chính là miền chỉ thuộc A, còn miền giao không thuộc hiệu của hai tập theo bất cứ chiều nào.
+Với \(A=\{1;2;3;4\}\), \(B=\{3;4;5\}\), giữ A rồi bỏ phần chung 3,4 cho \(A\setminus B=\{1;2\}\); đổi chiều lại cho \(B\setminus A=\{5\}\). Như vậy hiệu không có tính giao hoán. Trên biểu đồ Ven, \(A\setminus B\) chính là miền chỉ thuộc A, còn miền giao không thuộc hiệu của hai tập theo bất cứ chiều nào.
 
 **Ví dụ**
 
-**Đề bài.** Cho \(A=\{1,2,5\}\), \(B=\{2,3\}\). Tìm hai hiệu theo hai chiều.
+**Đề bài.** Cho \(A=\{1;2;5\}\), \(B=\{2;3\}\). Tìm hai hiệu theo hai chiều.
 
-**Lời giải.** Giữ phần tử chỉ thuộc A cho \(A\setminus B=\{1,5\}\); giữ phần tử chỉ thuộc B cho \(B\setminus A=\{3\}\). Phép hiệu không giao hoán nói chung.
+**Lời giải.** Giữ phần tử chỉ thuộc A cho \(A\setminus B=\{1;5\}\); giữ phần tử chỉ thuộc B cho \(B\setminus A=\{3\}\). Phép hiệu không giao hoán nói chung.
 
 **Vận dụng**
 
-\(A=\{1,3,5\}\), \(B=\{3,4,5\}\). Hãy tính hai hiệu theo hai chiều.
+\(A=\{1;3;5\}\), \(B=\{3;4;5\}\). Hãy tính hai hiệu theo hai chiều.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -366,21 +368,21 @@ Những đối tượng bị loại khỏi A luôn phải được hiểu trong 
 > Với vũ trụ \(U\) đã xác định, phần bù của A trong U là \(U\setminus A\). Đổi U có thể làm đổi phần bù dù tập A giữ nguyên. Cần kiểm biên khi mô tả trên trục số.
 
 
-Chẳng hạn, \(U=\{1,2,3,4,5,6\}\) và \(A=\{2,4,6\}\), phần bù là \(\{1,3,5\}\). Nếu mở rộng \(U\) để thêm 0, phần bù cũng có thêm 0. Với các khoảng số thực, xác định vũ trụ cũng giúp ta quyết định đúng đầu mút nào nằm ở phần bù.
+Chẳng hạn, \(U=\{1;2;3;4;5;6\}\) và \(A=\{2;4;6\}\), phần bù là \(\{1;3;5\}\). Nếu mở rộng \(U\) để thêm 0, phần bù cũng có thêm 0. Với các khoảng số thực, xác định vũ trụ cũng giúp ta quyết định đúng đầu mút nào nằm ở phần bù.
 
 **Ví dụ**
 
-**Đề bài.** Cho \(U=\{0,1,2,3,4\}\), \(A=\{0,2,4\}\). Tìm phần bù trong U.
+**Đề bài.** Cho \(U=\{0;1;2;3;4\}\), \(A=\{0;2;4\}\). Tìm phần bù trong U.
 
-**Lời giải.** Bỏ 0,2,4 khỏi U, còn \(U\setminus A=\{1,3\}\). Không được thêm số nằm ngoài U; phần bù luôn phụ thuộc vũ trụ đã xác định.
+**Lời giải.** Bỏ 0,2,4 khỏi U, còn \(U\setminus A=\{1;3\}\). Không được thêm số nằm ngoài U; phần bù luôn phụ thuộc vũ trụ đã xác định.
 
 **Vận dụng**
 
-Trong \(U=\{1,2,3,4,5,6,7,8\}\), lấy \(A=\{2,3,5,7\}\). Tìm phần bù của A.
+Trong \(U=\{1;2;3;4;5;6;7;8\}\), lấy \(A=\{2;3;5;7\}\). Tìm phần bù của A.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(U\setminus A=\{1,4,6,8\}\). Nếu em chỉ viết “phần bù của A” mà không nêu U, hãy tự hỏi đang loại A khỏi **tập nào**.
+\(U\setminus A=\{1;4;6;8\}\). Nếu em chỉ viết “phần bù của A” mà không nêu U, hãy tự hỏi đang loại A khỏi **tập nào**.
 
 **Kiểm lỗi**
 
@@ -401,28 +403,43 @@ Một tập số thực có thể được diễn tả bằng bất đẳng th�
 
 Một đầu mút có thể thuộc hợp nhưng không thuộc giao của hai khoảng không?
 
-Một điều kiện như “giữa 1 và 3” cần nói rõ **có lấy** 1 hoặc 3 không. Trên trục số, điều này được thể hiện bằng ngoặc: \((a,b)\) nghĩa \(a<x<b\), còn \([a,b]\) nghĩa \(a\le x\le b\). Khoảng \((a,b]\) bỏ \(a\) nhưng nhận \(b\), còn **nửa khoảng** \([a,b)\) nhận \(a\) nhưng bỏ \(b\). Nếu \(a<b\), \([a,+\infty)\) gồm mọi \(x\ge a\) và \((-\infty,b]\) gồm mọi \(x\le b\); ngược lại, \((a,+\infty)\) và \((-\infty,b)\) bỏ đầu mút hữu hạn. Với vô cực, luôn dùng ngoặc tròn vì \(\pm\infty\) không phải một số thực có thể lấy làm đầu mút.
+Một điều kiện như “giữa 1 và 3” cần nói rõ **có lấy** 1 hoặc 3 không. Trên trục số, điều này được thể hiện bằng ngoặc: \((a;b)\) nghĩa \(a<x<b\), còn \([a;b]\) nghĩa \(a\le x\le b\). Khoảng \((a;b]\) bỏ \(a\) nhưng nhận \(b\), còn **nửa khoảng** \([a;b)\) nhận \(a\) nhưng bỏ \(b\). Nếu \(a<b\), \([a;+\infty)\) gồm mọi \(x\ge a\) và \((-\infty;b]\) gồm mọi \(x\le b\); ngược lại, \((a;+\infty)\) và \((-\infty;b)\) bỏ đầu mút hữu hạn. Với vô cực, luôn dùng ngoặc tròn vì \(\pm\infty\) không phải một số thực có thể lấy làm đầu mút.
 
 > **ĐỊNH NGHĨA**
 >
-> \((a,b)\) không chứa hai đầu mút; \([a,b]\) chứa cả hai; \((a,b]\) chỉ chứa b. Vô cực luôn đi với ngoặc tròn và không là số thực có thể lấy làm đầu mút.
+> \((a;b)\) không chứa hai đầu mút; \([a;b]\) chứa cả hai; \((a;b]\) chỉ chứa b. Vô cực luôn đi với ngoặc tròn và không là số thực có thể lấy làm đầu mút.
 
 
-Xét \(X=(-\infty,3]\) và \(Y=(1,+\infty)\). Muốn thuộc **giao**, số phải vừa lớn hơn 1 vừa không vượt 3, nên \(X\cap Y=(1,3]\). Muốn thuộc **hợp**, số chỉ cần thỏa ít nhất một điều kiện: mọi số thực đều nằm ở X hoặc Y, vậy \(X\cup Y=\mathbb R\). Thử riêng \(x=1\) và \(x=3\) giúp ta kiểm dấu ngoặc ở biên.
+Khi biểu diễn khoảng trên trục số, ta đánh dấu các đầu mút hữu hạn bằng **chấm đặc** nếu nhận đầu mút và **chấm rỗng** nếu loại đầu mút. Tô phần trục số thỏa bất đẳng thức. Mũi tên biểu thị phần kéo dài về vô cực.
+
+| Ký hiệu | Điều kiện | Cách đánh dấu và tô trục số |
+|---|---|---|
+| \((1;3)\) | \(1<x<3\) | Rỗng tại 1 và 3; tô giữa |
+| \([1;3]\) | \(1\le x\le3\) | Đặc tại 1 và 3; tô giữa |
+| \((1;3]\) | \(1<x\le3\) | Rỗng tại 1, đặc tại 3; tô giữa |
+| \([1;3)\) | \(1\le x<3\) | Đặc tại 1, rỗng tại 3; tô giữa |
+| \((-\infty;3]\) | \(x\le3\) | Đặc tại 3; tô về trái |
+| \((1;+\infty)\) | \(x>1\) | Rỗng tại 1; tô về phải |
+
+Xét \(X=(-\infty;3]\) và \(Y=(1;+\infty)\). Muốn thuộc **giao**, số phải vừa lớn hơn 1 vừa không vượt 3, nên \(X\cap Y=(1;3]\). Muốn thuộc **hợp**, số chỉ cần thỏa ít nhất một điều kiện: mọi số thực đều nằm ở X hoặc Y, vậy \(X\cup Y=\mathbb R\). Thử riêng \(x=1\): thuộc \(X\) nhưng không thuộc \(Y\), nên bị loại khỏi giao. Thử \(x=3\): thuộc cả \(X\) và \(Y\), nên được nhận trong giao. Trên trục số, phần tô chung nằm giữa 1 và 3, chấm rỗng ở 1 và chấm đặc ở 3; phần tô của ít nhất một tập phủ kín trục số.
+
+![Giao và hợp hai khoảng, chấm rỗng tại 1 và chấm đặc tại 3 ở phần giao](../../../assets/visuals/THPT_TOPIC01_INTERVAL_INTERSECTION_UNION.svg)
+
+*Đọc hình:* So hai hàng đầu theo đường dóng tại 1 và 3. Điểm 1 chỉ thuộc X, điểm 3 thuộc cả hai. Hàng giao nhận những điểm được tô ở cả hai hàng đầu; hàng hợp nhận các điểm được tô ít nhất một lần.
 
 **Ví dụ**
 
-**Đề bài.** Cho \(X=(-2,1]\), \(Y=[1,4)\). Tìm giao và hợp.
+**Đề bài.** Cho \(X=(-2;1]\), \(Y=[1;4)\). Tìm giao và hợp.
 
-**Lời giải.** Số 1 thuộc cả hai, nên \(X\cap Y=\{1\}\). Hai khoảng nối liền, hợp là \((-2,4)\), bỏ hai đầu mút mở -2 và 4. Phải thử các điểm biên trước khi kết luận.
+**Lời giải.** Số 1 thuộc cả hai, nên \(X\cap Y=\{1\}\). Hai khoảng nối liền, hợp là \((-2;4)\), bỏ hai đầu mút mở -2 và 4. Phải thử các điểm biên trước khi kết luận.
 
 **Vận dụng**
 
-Cho \(X=[-2,2)\), \(Y=(0,4]\). Tìm hợp và giao, giải thích việc lấy hay bỏ hai đầu 0,2.
+Cho \(X=[-2;2)\), \(Y=(0;4]\). Tìm hợp và giao, giải thích việc lấy hay bỏ hai đầu 0,2.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(X\cap Y=(0,2)\), còn \(X\cup Y=[-2,4]\). Trong giao, 0 bị Y loại và 2 bị X loại; trong hợp, hai điểm ấy vẫn được nhận bởi ít nhất một tập.
+\(X\cap Y=(0;2)\), còn \(X\cup Y=[-2;4]\). Trong giao, 0 bị Y loại và 2 bị X loại; trong hợp, hai điểm ấy vẫn được nhận bởi ít nhất một tập.
 
 **Kiểm lỗi**
 
@@ -436,11 +453,13 @@ Nếu em lấy nhầm 0 hoặc 2 trong giao, hãy kiểm riêng hai câu hỏi �
 
 Khi cộng hai nhóm có phần chung, em đã đếm thừa bao nhiêu lần?
 
+Với một tập hữu hạn \(A\), ký hiệu \(n(A)\) hoặc \(\lvert A\rvert\) chỉ **số phần tử của tập \(A\)**. Chẳng hạn, nếu \(A=\{2;4;6\}\) thì \(n(A)=\lvert A\rvert=3\). Không nhầm dấu này với giá trị tuyệt đối của một số như \(\lvert-3\rvert\). Tương tự, \(\lvert A\cap B\rvert=n(A\cap B)\) là số phần tử chung của hai tập.
+
 Khi có số lượng của hai nhóm, phần giao cần được tính đúng một lần để đếm không trùng. Một học sinh tham gia hai câu lạc bộ sẽ được tính **hai lần** nếu ta chỉ cộng số học sinh của từng câu lạc bộ. Vì vậy với hai tập hữu hạn, ta phải trừ một lần phần đã đếm trùng: \(|A\cup B|=|A|+|B|-|A\cap B|\). Hình Ven hai nhóm chia vũ trụ thành bốn vùng: chỉ A, cả hai, chỉ B và ngoài cả hai. Ta điền vùng giao trước rồi mới tính các vùng riêng.
 
 > **CÔNG THỨC**
 >
-> Với hai tập hữu hạn, \[|A\cup B|=|A|+|B|-|A\cap B|.\] Trừ phần giao đúng một lần để tránh đếm hai lần. Nếu có vũ trụ U hữu hạn, số không thuộc nhóm nào là \(|U|-|A\cup B|\).
+> Với hai tập hữu hạn, \(\lvert A\cup B\rvert=\lvert A\rvert+\lvert B\rvert-\lvert A\cap B\rvert\). Trừ phần giao đúng một lần để tránh đếm hai lần. Nếu có vũ trụ \(U\) hữu hạn, số không thuộc nhóm nào là \(\lvert U\rvert-\lvert A\cup B\rvert\).
 
 
 Giả sử lớp có 40 bạn: 23 bạn học Anh, 25 bạn học Toán, 12 bạn học cả hai. Vùng chỉ Anh có \(23-12=11\) bạn, chỉ Toán có \(25-12=13\), vùng cả hai 12. Vậy số bạn học ít nhất một môn là \(11+12+13=36\); còn \(40-36=4\) bạn không học môn nào trong hai. Kiểm lại \(11+12+13+4=40\) cho thấy không có vùng nào bị tính thiếu hoặc trùng.
@@ -473,7 +492,7 @@ Nếu em cộng 26 và 30 rồi coi ngay đó là số bạn tham gia ít nhất
 >
 > - **Mệnh đề** có giá trị đúng hoặc sai; mệnh đề chứa biến cần miền xét và giá trị của biến hoặc lượng từ. Phủ định của “mọi” là “tồn tại ít nhất một phần tử không thỏa”.
 > - **Kéo theo:** \(P\Rightarrow Q\) nghĩa là \(P\) là điều kiện đủ cho \(Q\), còn \(Q\) là điều kiện cần cho \(P\). Tương đương \(P\Leftrightarrow Q\) đòi kiểm **cả hai chiều**.
-> - **Các tập hợp số:** \(\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R\); số hữu tỉ viết được dưới dạng \(a/b\) với \(a,b\in\mathbb Z,\ b\ne0\), còn số vô tỉ không viết được như vậy.
+> - **Các tập hợp số:** \(\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R\); số hữu tỉ viết được dưới dạng \(\frac ab\) với \(a,b\in\mathbb Z,\ b\ne0\), còn số vô tỉ không viết được như vậy.
 > - **Tập hợp:** \(A\cap B\) chứa các phần tử thuộc cả hai; \(A\cup B\) thuộc ít nhất một; \(A\setminus B\) thuộc A nhưng không thuộc B. Phần bù phải nói rõ tập vũ trụ \(U\).
 > - **Khoảng và bài toán đếm:** phân biệt dấu ngoặc nhận/loại điểm mút; với hai tập hữu hạn, \(|A\cup B|=|A|+|B|-|A\cap B|\), tránh đếm trùng vùng giao.
 

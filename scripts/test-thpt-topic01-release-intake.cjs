@@ -5,8 +5,8 @@
 const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto"),assert=require("node:assert/strict");
 const ROOT=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(ROOT,p),"utf8");
 const blob=s=>{const b=Buffer.from(s,"utf8");return crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex")};
-const sourceSHA="9271a9784e343ea87981a67dae7dabcf69e4c0ed";
-const receiptSHA="e5cccc6d98bf3ce5244114752075f74a3389c46b";
+const sourceSHA="e93f1253ac0acb3e19547665a67d64344527e601";
+const receiptSHA="36e61918b988f287edb68d628df2a2451bc9f2e4";
 const modelId="SLM-TOP01-TRUTH-01";
 const paths=["kien-thuc","luyen-tap","tu-kiem-tra"].map(x=>"docs/thpt-preview/chuyen-de/cd01/"+x+".md");
 const start="<!-- TOPIC01_APPROVED_SOURCE_START -->\n\n";
@@ -21,11 +21,11 @@ const sections=paths.map(x=>{
  assert(!raw.includes("data-thpt-readiness")&&!raw.includes("data-mastery-credit"),"Unauthorised official assessment "+x);
  return raw.slice(a+start.length,z);
 });
-const normal=sections[0].replaceAll("../../../assets/visuals/","../../visuals/")+sections[1].replace("1&lt;x≤3.","1<x≤3.")+sections[2];
-assert.equal(sections[1].split("1&lt;x≤3.").length,2,"Exactly one HTML-safe less-than presentation normalization is allowed");
+const normal=sections.map(s=>s.replaceAll("](../../../assets/visuals/","](../../visuals/").replace(/(<details markdown="1"><summary>[^<]*<\/summary>)([\s\S]*?)(<\/details>)/g,(_,a,b,c)=>a+b.replaceAll("&lt;","<")+c)).join("");
+// CP10 #1109 source-locked handoff: reversible visual relocation and HTML-safe math only.
 assert.equal(blob(normal),sourceSHA,"Learner body differs from owner-accepted canonical Git blob");
 const manifest=read("scripts/topic01-release-intake-manifest.tsv");
-assert(manifest.includes(sourceSHA)&&manifest.includes(receiptSHA)&&manifest.includes(modelId)&&manifest.includes("CLIENT_SELF_CHECK_NO_MASTERY"),"Missing source/receipt/model/Q16 manifest");
+assert(manifest.includes(sourceSHA)&&manifest.includes(receiptSHA)&&manifest.includes("36943dfa13e919baa99d94f8613f4d4e8beb4041")&&manifest.includes("c60012fca079ad89d52c62a229a6ce5e895df734")&&manifest.includes(modelId)&&manifest.includes("CLIENT_SELF_CHECK_NO_MASTERY"),"Missing source/receipt/V2/READY/model/Q16 manifest");
 assert.equal((sections[0].match(/^## \d+\./gm)||[]).length,3,"Knowledge math groups not 3");
 assert.equal((sections[0].match(/^### \d+\.\d+\./gm)||[]).length,11,"Knowledge outcomes not 11");
 assert.deepEqual([...sections[1].matchAll(/\*\*Bài\s+(\d+)/g)].map(m=>Number(m[1])),Array.from({length:24},(_,i)=>i+1),"Practice missing/reordered original 24");
@@ -34,7 +34,8 @@ assert.equal(sections.join("").match(/<details markdown="1">/g)?.length,36,"Chan
 assert.equal(sections.join("").match(/<summary>/g)?.length,36,"Changed solution reveal captions");
 const images=[
  ["THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg","40b53b26deb48a7cfdff91be5fe01d12a67bebeb"],
- ["THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg","ea84ee68187e83aa4bc6b14e49a965b3d7da5a11"]
+ ["THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg","ea84ee68187e83aa4bc6b14e49a965b3d7da5a11"],
+ ["THPT_TOPIC01_INTERVAL_INTERSECTION_UNION.svg","f405493bc6eefedc2106bb93316d981eb36931ce"]
 ];
 for(const [file,sha] of images){assert.equal(blob(read("docs/assets/visuals/"+file)),sha,"Altered canonical diagram "+file);assert(sections[0].includes("../../../assets/visuals/"+file),"Missing expected diagram "+file)}
 const overview=read("docs/thpt-preview/chuyen-de/index.md");
@@ -85,7 +86,7 @@ if(process.argv.includes("--built")){
   for(const [name] of images)assert(fs.existsSync(path.join(siteDir,"assets/visuals",name)),"Built diagram absent "+name);
   const model=path.join(siteDir,"thpt-preview/math-lab/models/slm-top01-truth-01/index.html");
   assert(fs.existsSync(model),"Optional Math Lab model deep-link missing");
-  console.log("PASS "+site+" all 3 topic pages + 2 source SVG + 1 Math Lab route");
+  console.log("PASS "+site+" all 3 topic pages + 3 source SVG + 1 Math Lab route");
  }
  assert(count>=1,"No built site directory tested");
 }

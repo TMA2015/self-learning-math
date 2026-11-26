@@ -176,6 +176,8 @@ jobs:
             node scripts/test-thpt-release-impact.cjs --prove-rw3-tabs
           elif grep -Fxq 'reason=OWNER_THPT_MENU_6_PLUS_1' "$RUNNER_TEMP/safety-pr-impact.txt"; then
             node scripts/test-thpt-release-impact.cjs --prove-menu-6-plus-1
+          elif grep -Fxq 'reason=OWNER_TOPIC01_REFRESH_CP10' "$RUNNER_TEMP/safety-pr-impact.txt"; then
+            node scripts/test-thpt-release-impact.cjs --prove-topic01-refresh
           elif grep -Fxq 'reason=OWNER_WRITTEN_LIBRARY_UI' "$RUNNER_TEMP/safety-pr-impact.txt"; then
             node scripts/test-thpt-release-impact.cjs --prove-written-library-ui
           elif grep -Fxq 'reason=OWNER_TOPIC_BACK_TOP_R3' "$RUNNER_TEMP/safety-pr-impact.txt"; then
