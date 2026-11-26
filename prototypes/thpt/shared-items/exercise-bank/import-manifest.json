@@ -21479,6 +21479,37 @@
       "limitations": "Scoped AUTHOR_SELF_VERIFIED, not full Academic/PED or Written PASS; no fresh direct S1 PDF inspection, no new figure or renderer change. B14 construction would benefit from a compact figure at future authorized integration; no extra asset/schema introduced. Chapter integrated skill linkage and other sparse tags remain under review.",
       "next": "Continue G10/G11 other chapter families; check integrated public task coverage without inspecting protected RD1, Written CP108 wording and interaction classification.",
       "release_authorization": false
+    },
+    "coverage_depth_cp111": {
+      "base": "d6517a1d1c1df0a6185baa7ea4e6ff3e031d32c4",
+      "head": "3334eabe303caf536b60000138d64f68d3ed694f",
+      "scope": "G11 ChVI / CD04",
+      "review": {
+        "sgk_stems_keys": 45,
+        "topic_own_stems_keys": 22,
+        "written_projections": 8,
+        "note": "Also triaged G10 ChI–III 80 stems/keys; MCQ letters without options not sufficient for math verdict; no G10 changes."
+      },
+      "shard": "70513c9ea7fac3a52aebc5aac15c8855da13ec02",
+      "changes": [
+        {
+          "id": "THPT-G11-CHVI-B19-P06",
+          "reason": "Previous exact integer power did not require logarithm. New non-power threshold 600/50=12, log2(12), 3<t<4, first integer observation 4; N(3)=400, N(4)=800."
+        },
+        {
+          "id": "THPT-G11-CHVI-B20-P03",
+          "reason": "Replace definition-only computation with decreasing log order, sign, and strict bounds -2<log_(1/2)(3)<-1; g(3)<g(1)=0<g(1/3)."
+        },
+        {
+          "id": "THPT-G11-CHVI-B21-P07",
+          "reason": "Extend impossible negative RHS to parameter family 2^(x+1)=m-3; unique solution iff m>3, x=log2(m-3)-1; m=7 gives 1, m=3 or 2 none."
+        }
+      ],
+      "coverage": "Five singleton tags: POWER_REAL has CD04 P03/P04, LOG_BASE_CHANGE has CD04 P10, LOG_APPLICATION improved P06, REAL_CONTEXT supported by B21 P06 and B21 Written anchor, INTEGRATED retains B21 P08; no quota-based additions or full integrated mastery verdict.",
+      "verification": "3 of 45 records changed, 42 preserved; all other fields unchanged, delimiters balanced. All three retain SGK Practice, CD04 Practice and public SGK self-check NO_MASTERY; no placements changed. Public chapter 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; Written dba16473909e60d1dc186f41dfc2e270f06a104e.",
+      "limitations": "Scoped AUTHOR_SELF_VERIFIED only; no independent review, fresh original S1 PDF visual or exhaustive Academic/PED/Written PASS. Historical chapter source explicitly records S1 fidelity pending; do not silently upgrade. No new figure or runtime.",
+      "next": "G10 ChI–III family review with MCQ options and complete source; then remaining G10/G11, Written CP108 ambiguity and interaction classification.",
+      "release_authorization": false
     }
   }
 }
