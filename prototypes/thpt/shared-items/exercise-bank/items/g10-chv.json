@@ -42,7 +42,7 @@
     "item_id": "THPT-G10-B12-C02",
     "content_version": "R01",
     "stem": "Kết quả đo \\(12{,}3\\,\\mathrm{cm}\\) có độ chính xác \\(d=0{,}2\\,\\mathrm{cm}\\). Kết luận chắc chắn nào đúng?",
-    "answer_key": "\\(\\bar a\\in[12{,}1;12{,}5]\\,\\mathrm{cm}\\)",
+    "answer_key": "\\(\\bar a\\in[12{,}1;12{,}5]\\) (đơn vị cm).",
     "worked_solution": "Độ chính xác d là cận trên của sai số tuyệt đối: \\(|\\bar a-12{,}3|\\le0{,}2\\). Suy ra \\(12{,}1\\le\\bar a\\le12{,}5\\) (đơn vị cm). Cả hai đầu mút đều được phép; chưa thể biết số đúng hay sai số thực chính xác bằng bao nhiêu.",
     "options": [
       "A. \\(\\bar a=12{,}5\\)",
@@ -267,8 +267,8 @@
     "item_id": "THPT-G10-B12-P07",
     "content_version": "THPT-G10-CHV-B12-CALCULATOR-R03-CANDIDATE_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hãy tự dùng máy tính cầm tay tìm số gần đúng của \\(\\sqrt[3]{7}\\) đến hàng phần nghìn, rồi kiểm tra sai số của kết quả có nhỏ hơn \\(0{,}0005\\) không. Nêu cách nhập để không nhầm phép căn bậc ba với chia cho 3.",
-    "answer_key": "\\(\\sqrt[3]7\\approx1{,}913\\); sai số khoảng \\(0{,}00006882<0{,}0005\\). Nhập căn bậc ba hoặc \\(7^{\\frac13}\\), không chia 7 cho 3.",
-    "worked_solution": "Nhập căn bậc ba của 7 hoặc nhập 7 lũy thừa (1 chia 3), có ngoặc quanh số mũ. Máy cho \\(\\sqrt[3]7\\approx1{,}91293118\\). Chữ số hàng phần mười nghìn là 9, nên quy tròn đến hàng phần nghìn được \\(1{,}913\\). Để kiểm tra cận mà không phụ thuộc vào số chữ số hiển thị của máy, tính \\(1{,}9125^3<7<1{,}9135^3\\). Hàm lập phương tăng trên các số dương, nên \\(1{,}9125<\\sqrt[3]7<1{,}9135\\), suy ra \\(|\\sqrt[3]7-1{,}913|<0{,}0005\\). Sai số xấp xỉ \\(0{,}00006882\\). Không nhầm căn bậc ba với phép chia \\(\\frac73\\).",
+    "answer_key": "\\(\\sqrt[3]{7}\\approx1{,}913\\); sai số khoảng \\(0{,}00006882<0{,}0005\\). Nhập căn bậc ba hoặc \\(7^{\\frac13}\\), không chia 7 cho 3.",
+    "worked_solution": "Nhập căn bậc ba của 7 hoặc nhập 7 lũy thừa (1 chia 3), có ngoặc quanh số mũ. Máy cho \\(\\sqrt[3]{7}\\approx1{,}91293118\\). Chữ số hàng phần mười nghìn là 9, nên quy tròn đến hàng phần nghìn được \\(1{,}913\\). Để kiểm tra cận mà không phụ thuộc vào số chữ số hiển thị của máy, tính \\(1{,}9125^3<7<1{,}9135^3\\). Hàm lập phương tăng trên các số dương, nên \\(1{,}9125<\\sqrt[3]{7}<1{,}9135\\), suy ra \\(|\\sqrt[3]{7}-1{,}913|<0{,}0005\\). Sai số xấp xỉ \\(0{,}00006882\\). Không nhầm căn bậc ba với phép chia \\(\\frac73\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B12-CALCULATOR_APPROX"
@@ -766,7 +766,7 @@
     "content_version": "R01",
     "stem": "Độ dài (cm) của 4 vật: \\(5,7,7,9\\). Tính phương sai và độ lệch chuẩn; ghi đúng đơn vị.",
     "answer_key": "\\(s^2=2\\,\\mathrm{cm}^2,\\ s=\\sqrt2\\,\\mathrm{cm}\\)",
-    "worked_solution": "Trung bình là \\(\\bar x=\\frac{5+7+7+9}{4}=7\\,\\mathrm{cm}\\). Phương sai \\(s^2=\\frac{(-2)^2+0^2+0^2+2^2}{4}=2\\,\\mathrm{cm}^2\\). Độ lệch chuẩn \\(s=\\sqrt2\\,\\mathrm{cm}\\). Bình phương độ lệch làm đơn vị thành cm²; lấy căn đưa độ lệch chuẩn về đơn vị cm ban đầu.",
+    "worked_solution": "Trung bình là \\(\\bar x=\\frac{5+7+7+9}{4}=7\\,\\mathrm{cm}\\). Phương sai \\(s^2=\\frac{(-2)^2+0^2+0^2+2^2}{4}=2\\,\\mathrm{cm}^2\\). Độ lệch chuẩn \\(s=\\sqrt2\\,\\mathrm{cm}\\). Bình phương độ lệch làm đơn vị thành \\(\\mathrm{cm}^2\\); lấy căn đưa độ lệch chuẩn về đơn vị cm ban đầu.",
     "skill_ids": [
       "G10-B14-STDDEV"
     ],
@@ -790,7 +790,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ghi cm² cho độ lệch chuẩn s, nhớ \\(s=\\sqrt{s^2}\\), đơn vị của s trở về cm. Ôn Bài 14 §2.2; luyện THPT-G10-CHV-TRY12."
+    "remediation": "Nếu ghi \\(\\mathrm{cm}^2\\) cho độ lệch chuẩn s, nhớ \\(s=\\sqrt{s^2}\\), đơn vị của s trở về cm. Ôn Bài 14 §2.2; luyện THPT-G10-CHV-TRY12."
   },
   {
     "item_id": "THPT-G10-B14-P06",
