@@ -1359,7 +1359,7 @@ function selfTest(){
    assert.equal(classify([...lab,extra]).impact,"FULL","Shared or assessment change must be FULL: "+extra);
  assert.equal(classify(lab,{manual:true}).impact,"FULL","Manual FULL cannot be suppressed");
  const w4=[...W4_EXACT_SCOPE_FILES];
- assert.equal(classify(w4).impact,"SCOPED_TOPIC_W4","W4 signed 30-path wave uses only W4 scoped QA");
+ assert.equal(classify(w4).impact,isExactW4TopicWave(w4)?"SCOPED_TOPIC_W4":"FULL","Historical W4 bundle valid only with original signed manifest; refreshed source cannot use legacy scope");
  assert.equal(classify(w4.filter(p=>!p.endsWith("cd18/tu-kiem-tra.md"))).impact,"FULL","Missing CĐ18 question-only page must fail closed");
  assert.equal(classify([...w4,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).impact,"FULL","Shared runtime change must use FULL");
  assert.equal(classify([...w4,"docs/thpt-preview/sgk/chuong-v/bai-14.md"]).impact,"FULL","Mixed SGK scope must use FULL");
