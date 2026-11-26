@@ -262,7 +262,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Ghép AB, BC=AD, CC′=AA′."
+      "Ghép \\(\\overrightarrow{AB},\\overrightarrow{BC}=\\overrightarrow{AD},\\overrightarrow{CC'}=\\overrightarrow{AA'}\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -279,7 +279,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dừng tại C, còn thiếu độ dời CC′. Ôn CĐ18 mục 1.3; luyện THPT-TOP18-P03."
+    "remediation": "Nếu dừng tại C, còn thiếu độ dời \\(\\overrightarrow{CC'}\\). Ôn CĐ18 mục 1.3; luyện THPT-TOP18-P03."
   },
   {
     "item_id": "THPT-G12-B06-C04",
@@ -1123,7 +1123,7 @@
     "content_version": "G12-SGK-CHII-B06-B08-R00",
     "stem": "Trung điểm A(1;3;5), B(3;1;7) có tọa độ?",
     "answer_key": "(2;2;6)",
-    "worked_solution": "Trung điểm M có mỗi tọa độ bằng trung bình cộng của hai tọa độ tương ứng: \\(M(\\frac{1+3}{2};\\frac{3+1}{2};\\frac{5+7}{2})=(2;2;6)\\).",
+    "worked_solution": "Trung điểm M có mỗi tọa độ bằng trung bình cộng của hai tọa độ tương ứng. Tọa độ M là \\((\\frac{1+3}{2};\\frac{3+1}{2};\\frac{5+7}{2})=(2;2;6)\\).",
     "skill_ids": [
       "G12-CHII-B08-O03"
     ],
@@ -1154,7 +1154,7 @@
     "content_version": "G12-SGK-CHII-B06-B08-R00",
     "stem": "Trọng tâm tam giác A(0;0;0), B(3;0;0), C(0;6;0) là?",
     "answer_key": "(1;2;0)",
-    "worked_solution": "Tọa độ trọng tâm là trung bình cộng theo từng trục của ba đỉnh: \\(G(\\frac{0+3+0}{3};\\frac{0+0+6}{3};\\frac{0+0+0}{3})=(1;2;0)\\).",
+    "worked_solution": "Tọa độ trọng tâm là trung bình cộng theo từng trục của ba đỉnh. Tọa độ G là \\((\\frac{0+3+0}{3};\\frac{0+0+6}{3};\\frac{0+0+0}{3})=(1;2;0)\\).",
     "skill_ids": [
       "G12-CHII-B08-O03"
     ],
@@ -1395,7 +1395,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ tọa độ âm hoặc tính bình phương âm, (−2)²=4. Ôn CĐ18 mục 3.5; luyện THPT-TOP18-P15."
+    "remediation": "Nếu bỏ tọa độ âm hoặc tính bình phương âm, nhớ \\((-2)^2=4\\). Ôn CĐ18 mục 3.5; luyện THPT-TOP18-P15."
   },
   {
     "item_id": "THPT-G12-B08-C06",
