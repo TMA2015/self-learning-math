@@ -4,15 +4,17 @@ STANDARD_VERSION: 1.0.0
 LEARNING_PATH: SGK_CHAPTER
 PACKET_ID: G12-SGK-CHII-B06-B08-R00
 REVIEW_SCOPE: 3 actual SGK lessons (B06, B07, B08) plus chapter-end public placement
-ACADEMIC_VERDICT: PASS_ON_FROZEN_R00_COMPONENTS
-PEDAGOGICAL_VERDICT: PASS_ON_FROZEN_R00_COMPONENTS
+ACADEMIC_VERDICT: TARGETED_AUTHOR_DELTA_20261126; HISTORICAL_PASS_ON_FROZEN_R00_COMPONENTS
+PEDAGOGICAL_VERDICT: TARGETED_AUTHOR_DELTA_20261126; HISTORICAL_PASS_ON_FROZEN_R00_COMPONENTS
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
 PRIVATE_RD1: ONLY_METADATA_AND_SHA256
 AUTHORING_SNAPSHOT_DATE: 2026-11-03
 
-## Immutable review-component fidelity
+## Review-component provenance (historical R00; targeted owner-approved delta 26/11/2026)
+
+Current canonical wrapper supersedes the historical blob `856a37bd16d2746ffc2e12906de18d1f4338a3b6` for the affected passages and item THPT-G12-B06-P02 only. The BEGIN/END component hashes and the following original fidelity statement describe the prior immutable snapshot, not byte equality of this edited wrapper. Original reviewer evidence remains unchanged. Targeted correction: SGK KNTT Toán 12 Tập Một Bài 6 p48, zero-vector convention. See #1109; no new independent reviewer verdict, no release authorization.
 This authoring wrapper concatenates the **five exact original reviewed public R00 Markdown source components**, without modifying the contents inside each BEGIN/END marker. The reviewer reviewed those component files, not this newly generated wrapper SHA. A separate author parity test verifies every component source byte against its original Git blob; the Academic/PED verdict applies only to the unchanged R00 components. The earlier NOT_REVIEWED/CANDIDATE wording embedded in historical R00 files is preserved, and superseded by the independently signed author handoff/receipt without changing the source.
 - Original three SVG assets retain Git blob SHA B06 `26e388d873521aa5b0bae945343e69357490ec16`, B07 `979ca912e99fdadfc4e91ae0edad5db34fc13928`, B08 `13445da079245a556a08e7a57069d9987097a0be`; NotebookLM received three derived PNG review images, not website SVG substitutes.
 - Only **64 public canonical IDs** exist (16 Core, 32 Practice, 16 Written); chapter end has **16 references/placements**, no duplicate item. This supersedes the stale historical sentence claiming 12 placements inside the original S1 audit metadata; the original source is left byte-exact.
@@ -54,7 +56,7 @@ ROLE: `AUTHORING` · NOTEBOOKLM: `NOT_REVIEWED` · CONTENT_READY: `NO` · RELEAS
 
 | OUTCOME_ID | Nội dung học sinh làm được | PED/điều kiện then chốt | Evidence |
 |---|---|---|---|
-| `G12-CHII-B06-O01` | Nhận diện vectơ không gian, độ dài, hướng, vectơ-không | Đầu/cuối; vectơ-không không có hướng xác định | SGK 45–47 |
+| `G12-CHII-B06-O01` | Nhận diện vectơ không gian, độ dài, hướng, vectơ-không | Đầu/cuối; vectơ-không dài 0, cùng hướng và cùng phương với mọi vectơ theo quy ước; không có hướng hình học riêng | SGK 45–48 |
 | `G12-CHII-B06-O02` | Phân biệt bằng nhau, đối nhau, cùng phương/cùng hướng | Bằng nhau cần cùng hướng và cùng độ dài | SGK 47–48, 51 |
 | `G12-CHII-B06-O03` | Dựng và biến đổi tổng, hiệu theo tam giác/hình bình hành/hình hộp | Đọc đường đi và thứ tự mũi tên | SGK 49–50 |
 | `G12-CHII-B06-O04` | Hiểu và sử dụng phép nhân vectơ với số thực | Độ dài, hướng, k=0 và đường thẳng song song | SGK 52–53 |
@@ -116,7 +118,7 @@ Trong phòng học, một vật có thể chuyển động sang trái/phải, l�
 
 ### 3.1. Vectơ không gian: hình dung mũi tên tự do
 
-Cho hai điểm $A,B$ trong không gian. $\overrightarrow{AB}$ có điểm đầu $A$, điểm cuối $B$, độ dài bằng khoảng cách $AB$. Hai vectơ bằng nhau khi **cùng hướng và cùng độ dài**, dù đặt ở vị trí khác nhau. Vectơ-không $\vec 0$ có hai đầu trùng nhau, độ dài 0 và **không có hướng xác định**; tránh nói vectơ-không “chỉ lên”. Hai vectơ khác không cùng phương khi giá song song hoặc trùng nhau, có thể cùng hoặc ngược hướng.
+Cho hai điểm $A,B$ trong không gian. $\overrightarrow{AB}$ có điểm đầu $A$, điểm cuối $B$, độ dài bằng khoảng cách $AB$. Hai vectơ bằng nhau khi **cùng hướng và cùng độ dài**, dù đặt ở vị trí khác nhau. Vectơ-không \(\vec 0\) có hai đầu trùng nhau và độ dài 0. Theo quy ước SGK, vectơ-không cùng hướng và cùng phương với mọi vectơ. Điều này không có nghĩa nó chỉ một hướng dịch chuyển cụ thể: hai đầu trùng nhau nên không xác định được một mũi tên có hướng riêng, cũng không xác định góc với vectơ khác. Hai vectơ khác không cùng phương khi giá song song hoặc trùng nhau, có thể cùng hoặc ngược hướng.
 
 Khi đọc một hình phối cảnh, đừng dựa vào độ dài vẽ trên màn hình để quyết định độ dài thật của cạnh. Hình chiếu có thể làm đoạn thẳng trông ngắn hơn. Xem **FIG-G12-CHII-B06-R00.svg**: các mũi tên $\overrightarrow{AB}$ và $\overrightarrow{DC}$ song song và bằng nhau trong một mặt của hình hộp; đường chéo $\overrightarrow{AC}$ là đường đi rút gọn của hai cạnh liên tiếp.
 
@@ -138,7 +140,7 @@ Nếu $\vec a$ là dịch chuyển 2 m về một hướng, $3\vec a$ là dịch
 
 $$|k\vec a|=|k|\,|\vec a|.$$
 
-Khi $k>0$, giữ hướng; khi $k<0$, đổi hướng; khi $k=0$, được $\vec 0$ không có hướng xác định. Với $\vec b\ne\vec 0$, điều kiện hai vectơ cùng phương có thể viết $\vec a=k\vec b$ với một số thực $k$. Không kết luận “cùng hướng” chỉ từ cùng phương: hãy xét dấu $k$.
+Với \(\vec a\ne\vec 0\), khi \(k>0\), giữ hướng; khi \(k<0\), đổi hướng; khi \(k=0\), được \(\vec 0\), cùng hướng và cùng phương với mọi vectơ theo quy ước. Nếu \(\vec a=\vec 0\), tích \(k\vec a=\vec 0\) với mọi k. Với $\vec b\ne\vec 0$, điều kiện hai vectơ cùng phương có thể viết $\vec a=k\vec b$ với một số thực $k$. Với hai vectơ khác không, không kết luận “cùng hướng” chỉ từ cùng phương: hãy xét dấu \(k\).
 
 ### 3.4. Tích vô hướng: một hướng có “đóng góp” bao nhiêu cho hướng kia?
 
@@ -199,9 +201,9 @@ Tất cả câu nằm trong bảng canonical bên dưới của bản nguồn; C
 
 **`ITEM_ID=THPT-G12-B06-P02` · `OUTCOME_ID=G12-CHII-B06-O01` · `ROLE=PRACTICE`**
 
-- **Đề mới:** Với hai điểm phân biệt A, B, vectơ $\overrightarrow{AA}$ có độ dài và hướng thế nào?
-- **Đáp án:** Độ dài 0, hướng không xác định
-- **Lời giải/suy luận:** Vectơ-không có hai đầu trùng nhau, không có hướng xác định.
+- **Đề mới:** Với hai điểm phân biệt A, B, vectơ \(\overrightarrow{AA}\) có độ dài bao nhiêu? Theo quy ước, nó có cùng hướng và cùng phương với \(\overrightarrow{AB}\) không?
+- **Đáp án:** Độ dài 0; có, cùng hướng và cùng phương theo quy ước.
+- **Lời giải/suy luận:** Hai đầu của \(\overrightarrow{AA}\) trùng nhau nên đây là vectơ-không. Theo quy ước SGK, vectơ-không cùng hướng và cùng phương với mọi vectơ, kể cả \(\overrightarrow{AB}\). Nó không biểu diễn một hướng dịch chuyển riêng; không xác định góc giữa vectơ-không và vectơ khác.
 
 - **Feedback sau khi tự thử:** Kiểm lại điều kiện, chiều vectơ và từng phép biến đổi; nếu vẫn sai quay mục D6 cùng outcome, rồi thử lại với số khác.
 
@@ -679,7 +681,7 @@ Giả sử $\vec a$ làm thay đổi vị trí $(x_1;y_1;z_1)$ và $\vec b$ làm
 $$\vec a+\vec b=(x_1+x_2;y_1+y_2;z_1+z_2),$$
 $$\vec a-\vec b=(x_1-x_2;y_1-y_2;z_1-z_2),\quad k\vec a=(kx_1;ky_1;kz_1).$$
 
-**Cùng phương:** hai vectơ $\vec a,\vec b$ cùng phương khi một vectơ là bội số thực của vectơ kia, nghĩa là $\vec a=k\vec b$ hoặc $\vec b=k\vec a$ (tùy vectơ nào khác không). Nếu **cả hai khác không**, kiểm từng thành phần với cùng một $k$; không viết các tỉ số khi mẫu tọa độ bằng 0. Vectơ-không là ngoại lệ: trong quy ước vectơ, nó cùng phương với mọi vectơ, nhưng không có hướng riêng. Không suy rằng hai vectơ cùng phương thì cùng hướng.
+**Cùng phương:** hai vectơ $\vec a,\vec b$ cùng phương khi một vectơ là bội số thực của vectơ kia, nghĩa là $\vec a=k\vec b$ hoặc $\vec b=k\vec a$ (tùy vectơ nào khác không). Nếu **cả hai khác không**, kiểm từng thành phần với cùng một $k$; không viết các tỉ số khi mẫu tọa độ bằng 0. Vectơ-không cùng phương và cùng hướng với mọi vectơ theo quy ước SGK, nhưng không biểu diễn hướng dịch chuyển riêng. Với hai vectơ khác không, không suy rằng cùng phương thì cùng hướng.
 
 ### 2.2. Trung điểm và trọng tâm không phải là trung bình độ dài
 
