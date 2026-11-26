@@ -684,6 +684,20 @@ function proveRW3Tabs(){
  assert.equal(changes,69,"Unexpected alias count");
  console.log("PASS R-W3 69 labels only, all renderer logic, content and protected assessment unchanged");
 }
+// One-time recovery: #1120 merged, no main-push run and gh-pages still at CĐ01.
+const W1_RECOVERY_BASE="8b3ea2e2500f00578a2f9072d08916c545c72f6c";
+const W1_RECOVERY_APPROVED="81501e03a0f392812ea84daca7b8249e681a9815";
+const W1_RECOVERY_FILES=new Set(["scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml",".github/workflows/deploy.yml"]);
+function isExactW1Recovery(files,base){
+ return base===W1_RECOVERY_BASE&&files.length===W1_RECOVERY_FILES.size&&new Set(files).size===files.length&&files.every(p=>W1_RECOVERY_FILES.has(p))&&isExactTopicW1Refresh([...TOPIC_W1_REFRESH_FILES]);
+}
+function proveW1Recovery(){
+ const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"}).trim();
+ assert.equal(process.env.BASE_SHA,W1_RECOVERY_BASE,"Exact merged W1 snapshot required");
+ assert.equal(git("rev-parse",W1_RECOVERY_APPROVED+"^{tree}"),git("rev-parse",W1_RECOVERY_BASE+"^{tree}"),"Approved W1 and merged tree differ");
+ assert(isExactW1Recovery(git("diff","--no-renames","--name-only",W1_RECOVERY_APPROVED,"HEAD").split("\n").filter(Boolean),process.env.BASE_SHA),"Recovery includes changes outside exact four QA files");
+ console.log("PASS W1 unchanged approved tree; only exact four deploy/QA files changed");
+}
 const TOPIC_W1_REFRESH_FILES=new Set(["docs/assets/visuals/THPT_TOPIC03_RADICAL_DOMAIN_NUMBERLINE_R01.svg","docs/thpt-preview/chuyen-de/cd02/kien-thuc.md","docs/thpt-preview/chuyen-de/cd02/luyen-tap.md","docs/thpt-preview/chuyen-de/cd02/tu-kiem-tra.md","docs/thpt-preview/chuyen-de/cd03/kien-thuc.md","docs/thpt-preview/chuyen-de/cd03/luyen-tap.md","docs/thpt-preview/chuyen-de/cd03/tu-kiem-tra.md","docs/thpt-preview/chuyen-de/cd04/kien-thuc.md","docs/thpt-preview/chuyen-de/cd04/luyen-tap.md","docs/thpt-preview/chuyen-de/cd04/tu-kiem-tra.md","docs/thpt-preview/chuyen-de/cd05/kien-thuc.md","docs/thpt-preview/chuyen-de/cd05/luyen-tap.md","docs/thpt-preview/chuyen-de/cd05/tu-kiem-tra.md","scripts/test-thpt-topic-w1-source-locked.py","docs/assets/javascripts/thpt-topic-w1-golden-v1.js","docs/assets/javascripts/math-details-v1.js","scripts/test-thpt-topic-w1-golden-browser.py","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-w1-golden-release-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml"]);
 const TOPIC_W1_REFRESH_BLOBS={"docs/assets/visuals/THPT_TOPIC03_RADICAL_DOMAIN_NUMBERLINE_R01.svg":"78689938988f1a4e097aebbade89c85be0ab8b79","docs/thpt-preview/chuyen-de/cd02/kien-thuc.md":"fa291bb9c8dd4c2a47a5904e369cbd9fb6ca8ec8","docs/thpt-preview/chuyen-de/cd02/luyen-tap.md":"4fcaf06e4d6e5486d071808cc8825a7ed518a387","docs/thpt-preview/chuyen-de/cd02/tu-kiem-tra.md":"b20ac5670e2cc947f867ea967298be21d66dee5b","docs/thpt-preview/chuyen-de/cd03/kien-thuc.md":"c706aef1363f2b12327f8cae02fda96b9966378a","docs/thpt-preview/chuyen-de/cd03/luyen-tap.md":"b3162e0bd10d3e8f77a9ddcaec65c8279ac0cc7d","docs/thpt-preview/chuyen-de/cd03/tu-kiem-tra.md":"788cbed9793f74bcfdcff58ea6dc139ff865657d","docs/thpt-preview/chuyen-de/cd04/kien-thuc.md":"68bd81dbd71a3b139249d2fe09df1a0b966b144a","docs/thpt-preview/chuyen-de/cd04/luyen-tap.md":"fd0694d0a77b10867a34fd9fecda29421cf4accb","docs/thpt-preview/chuyen-de/cd04/tu-kiem-tra.md":"5a1f9830346909082c826d24adb0272c0548dc20","docs/thpt-preview/chuyen-de/cd05/kien-thuc.md":"65eab422a486ce828201e43aaafc44f8e909ec12","docs/thpt-preview/chuyen-de/cd05/luyen-tap.md":"82f79a8610bcad4e83093acdd529116d435fb2c7","docs/thpt-preview/chuyen-de/cd05/tu-kiem-tra.md":"5c29ccdbfe86eeeef510f73340b093001a1d828e","scripts/test-thpt-topic-w1-source-locked.py":"bf624cf2955c88666f7decc7cc74fb70d00ebd26","docs/assets/javascripts/thpt-topic-w1-golden-v1.js":"d9495451ac961d0d0d8247cf7f6ae8ea06c0bf3b","docs/assets/javascripts/math-details-v1.js":"0f20a009d429b5f9e31a8ee6ead95710abaeb395"};
 function isExactTopicW1Refresh(files){
@@ -807,6 +821,7 @@ function classify(paths,{manual=false,base=""}={}){
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(files.length===MATH_NOTATION_GOVERNANCE.size&&new Set(files).size===files.length&&files.every(p=>MATH_NOTATION_GOVERNANCE.has(p)))
   return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"EXACT_MATH_NOTATION_GOVERNANCE_ONLY"};
+ if(isExactW1Recovery(files,base))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_W1_DEPLOY_RECOVERY_EXACT"};
  if(isExactTopicW1Refresh(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_W1_REFRESH"};
  if(isExactTopic01Refresh(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC01_REFRESH_CP10"};
  if(isExactWrittenLibraryUI(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_WRITTEN_LIBRARY_UI"};
@@ -1000,6 +1015,11 @@ function selfTest(){
  assert.equal(classify(shared,{manual:true}).impact,"FULL");
  const backTop=[...TOPIC_BACK_TOP_FILES];
  if(isExactTopicBackTop(backTop))assert.equal(classify(backTop).reason,"OWNER_TOPIC_BACK_TOP_R3");
+ const w1Recovery=[...W1_RECOVERY_FILES];
+ if(isExactW1Recovery(w1Recovery,W1_RECOVERY_BASE))assert.equal(classify(w1Recovery,{base:W1_RECOVERY_BASE}).reason,"OWNER_W1_DEPLOY_RECOVERY_EXACT");
+ assert.notEqual(classify(w1Recovery,{base:"0".repeat(40)}).reason,"OWNER_W1_DEPLOY_RECOVERY_EXACT");
+ assert.notEqual(classify([...w1Recovery,"docs/assets/javascripts/firebase-gemini-v1.js"],{base:W1_RECOVERY_BASE}).reason,"OWNER_W1_DEPLOY_RECOVERY_EXACT");
+ assert.notEqual(classify(w1Recovery,{base:W1_RECOVERY_BASE,manual:true}).reason,"OWNER_W1_DEPLOY_RECOVERY_EXACT");
  const refreshW1=[...TOPIC_W1_REFRESH_FILES];
  if(isExactTopicW1Refresh(refreshW1))assert.equal(classify(refreshW1).reason,"OWNER_TOPIC_W1_REFRESH");
  else assert.equal(classify(refreshW1).impact,"FULL");
@@ -1393,7 +1413,8 @@ function selfTest(){
  console.log("PASS scoped CI impact classifier: canonical SGK page/receipt-only fast lanes, global/unknown/assessment full, manual full");
 }
 if(require.main===module){
- if(process.argv.includes("--prove-topic-w1-refresh"))proveTopicW1Refresh();
+ if(process.argv.includes("--prove-w1-recovery"))proveW1Recovery();
+ else if(process.argv.includes("--prove-topic-w1-refresh"))proveTopicW1Refresh();
  else if(process.argv.includes("--prove-topic01-refresh"))proveTopic01Refresh();
  else if(process.argv.includes("--prove-written-library-ui"))proveWrittenLibraryUI();
  else if(process.argv.includes("--prove-topic-back-top"))proveTopicBackTop();
