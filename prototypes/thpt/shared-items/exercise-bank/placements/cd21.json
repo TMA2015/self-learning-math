@@ -126,5 +126,53 @@
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 8,
     "item_id": "THPT-TOP21-P08"
+  },
+  {
+    "collection": "TOPIC:CD21:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 12,
+    "item_id": "THPT-G12-B18-P05",
+    "outcome_id": "TOP21-O02",
+    "optional": true
+  },
+  {
+    "collection": "TOPIC:CD21:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 13,
+    "item_id": "THPT-G12-B18-C06",
+    "outcome_id": "TOP21-O03",
+    "optional": true
+  },
+  {
+    "collection": "TOPIC:CD21:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 14,
+    "item_id": "THPT-G12-B18-P04",
+    "outcome_id": "TOP21-O04",
+    "optional": true
+  },
+  {
+    "collection": "TOPIC:CD21:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 15,
+    "item_id": "THPT-G12-B19-A01",
+    "outcome_id": "TOP21-O05",
+    "optional": true
+  },
+  {
+    "collection": "TOPIC:CD21:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 16,
+    "item_id": "THPT-G12-B19-P06",
+    "outcome_id": "TOP21-O05",
+    "optional": true
+  },
+  {
+    "collection": "TOPIC:CD21:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 17,
+    "item_id": "THPT-G12-B19-A07",
+    "outcome_id": "TOP21-O06",
+    "optional": true
   }
 ]
