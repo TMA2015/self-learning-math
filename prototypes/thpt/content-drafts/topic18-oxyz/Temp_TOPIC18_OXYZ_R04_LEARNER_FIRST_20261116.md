@@ -41,7 +41,7 @@ A trùng B. Vectơ \(\overrightarrow{AB}\) có độ dài bao nhiêu? Theo quy �
 
 **Kiểm lỗi**
 
-Nếu hai đầu trùng nhau, độ dài bằng 0. Phân biệt quy ước cùng hướng, cùng phương với mọi vectơ và việc không có hướng dịch chuyển riêng; không suy ra góc bằng 0° từ quy ước ấy. Quay về **Kiến thức 1.1**, sau đó tự giải **Bài luyện 3** và **Bài luyện 5** trong Luyện tập.
+Nếu hai đầu trùng nhau, độ dài bằng 0. Phân biệt quy ước cùng hướng, cùng phương với mọi vectơ và việc không có hướng dịch chuyển riêng; không suy ra góc bằng \(0^\circ\) từ quy ước ấy. Quay về **Kiến thức 1.1**, sau đó tự giải **Bài luyện 3** và **Bài luyện 5** trong Luyện tập.
 
 </details>
 
@@ -194,7 +194,7 @@ Bài lực ba chiều thường hỏi hợp lực, hình chiếu hay công sinh 
 
 **Lời giải:** Hai lực cùng điểm có độ lớn 3 N và 4 N vuông góc thì hợp lực dài 5 N theo Pitago. Nếu cùng hướng, hợp lực 7 N; vì thế phải đọc hướng trước khi tính.
 
-**Để phân biệt trước khi luyện:** Hợp lực của hai lực là tổng **vectơ lực**, có đơn vị N. **Công** của một lực là tích vô hướng với độ dời, đơn vị J: lực 10 N hợp với độ dời 2 m góc 60° sinh công \(10\cdot 2\cdot\cos60^\circ=10\) J. Bài luyện 13 giúp kiểm cộng vectơ, còn Bài luyện 30 rèn tính công. Hai kết quả không được dùng thay nhau.
+**Để phân biệt trước khi luyện:** Hợp lực của hai lực là tổng **vectơ lực**, có đơn vị N. **Công** của một lực là tích vô hướng với độ dời, đơn vị J: lực 10 N hợp với độ dời 2 m góc \(60^\circ\) sinh công \(10\cdot 2\cdot\cos60^\circ=10\) J. Bài luyện 13 giúp kiểm cộng vectơ, còn Bài luyện 30 rèn tính công. Hai kết quả không được dùng thay nhau.
 
 **Vận dụng**
 
@@ -482,7 +482,7 @@ Tích vô hướng trong hệ trực chuẩn Oxyz là \(\vec u\cdot\vec v=u_xv_x
 
 **Đề bài:** Cho \(\vec u=(1;2;0)\), \(\vec v=(2;-1;0)\). Dùng tích vô hướng kiểm vuông góc.
 
-**Lời giải:** \(\vec u=(1;2;0)\),\(\vec v=(2;-1;0)\), tích \(1\cdot2+2\cdot(-1)+0=0\), nên hai vectơ khác không vuông góc. Trước khi kết luận vuông góc, kiểm cả hai vectơ đều khác 0; ở đây u và v đều có thành phần không bằng 0. Tích vô hướng bằng 0 nên góc giữa chúng là 90°.
+**Lời giải:** \(\vec u=(1;2;0)\),\(\vec v=(2;-1;0)\), tích \(1\cdot2+2\cdot(-1)+0=0\), nên hai vectơ khác không vuông góc. Trước khi kết luận vuông góc, kiểm cả hai vectơ đều khác 0; ở đây u và v đều có thành phần không bằng 0. Tích vô hướng bằng 0 nên góc giữa chúng là \(90^\circ\).
 
 **Vận dụng**
 
@@ -492,7 +492,7 @@ Tích vô hướng trong hệ trực chuẩn Oxyz là \(\vec u\cdot\vec v=u_xv_x
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-90° vì tích vô hướng \(1-1=0\) và cả hai khác không.
+\(90^\circ\) vì tích vô hướng \(1-1=0\) và cả hai khác không.
 
 **Kiểm lỗi**
 
@@ -1055,7 +1055,7 @@ Nếu \(\vec n\cdot\vec u=0\) thì không chia để tìm giao: thử một đi�
 
 <!-- LESSON_ID: TOP18-M31; OUTCOME_ID: TOP18-O31; S1_ORIGINAL_OUTCOME: G12-CHV-B16-O01; SCOPE: G12_CHV -->
 
-Góc giữa hai đường thẳng không định hướng được lấy là góc nhỏ 0°–90°. Nếu u,v là hai vectơ chỉ phương khác 0 thì \(\cos\theta=\frac{\lvert\vec u\cdot\vec v\rvert}{\lVert\vec u\rVert\lVert\vec v\rVert}\). Trị tuyệt đối cần thiết: đảo hướng vectơ không đổi góc hai đường.
+Góc giữa hai đường thẳng không định hướng được lấy là góc nhỏ \(0^\circ\)–\(90^\circ\). Nếu u,v là hai vectơ chỉ phương khác 0 thì \(\cos\theta=\frac{\lvert\vec u\cdot\vec v\rvert}{\lVert\vec u\rVert\lVert\vec v\rVert}\). Trị tuyệt đối cần thiết: đảo hướng vectơ không đổi góc hai đường.
 
 > **Kiến thức cần ghi nhớ**
 >
@@ -1076,7 +1076,7 @@ Góc giữa hai đường thẳng không định hướng được lấy là gó
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-0°, không phải 180°, vì hai phương cùng đường dù mũi tên ngược.
+\(0^\circ\), không phải \(180^\circ\), vì hai phương cùng đường dù mũi tên ngược.
 
 **Kiểm lỗi**
 
@@ -1132,7 +1132,7 @@ Góc nhỏ giữa hai mặt P,Q phụ thuộc pháp tuyến \(\vec n_1,\vec n_2\
 
 **Đề bài:** Hai mặt có pháp tuyến \(\vec n_1=(1;0;0)\), \(\vec n_2=(1;1;0)\). Tính góc và thử đổi dấu \(\vec n_2\).
 
-**Lời giải:** \(\vec n_1=(1;0;0)\),\(\vec n_2=(1;1;0)\), \(\cos\theta=\frac1{\sqrt2}\Rightarrow\theta=45^\circ\). Thay \(\vec n_2\) bằng \((-1;-1;0)\), kết quả vẫn 45° vì trị tuyệt đối. Đổi dấu pháp tuyến không đổi góc hai mặt.
+**Lời giải:** \(\vec n_1=(1;0;0)\),\(\vec n_2=(1;1;0)\), \(\cos\theta=\frac1{\sqrt2}\Rightarrow\theta=45^\circ\). Thay \(\vec n_2\) bằng \((-1;-1;0)\), kết quả vẫn \(45^\circ\) vì trị tuyệt đối. Đổi dấu pháp tuyến không đổi góc hai mặt.
 
 **Vận dụng**
 
@@ -1142,7 +1142,7 @@ Hai mặt \((P):x=0\),\((Q):y=0\) có góc bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-90°, vì \(\vec n_P=(1;0;0)\),\(\vec n_Q=(0;1;0)\) vuông góc.
+\(90^\circ\), vì \(\vec n_P=(1;0;0)\),\(\vec n_Q=(0;1;0)\) vuông góc.
 
 **Kiểm lỗi**
 
@@ -1312,7 +1312,7 @@ Muốn biết điểm nằm trong/trên/ngoài mặt cầu, so \(CM^2\) với \(
 
 **Đề bài:** Trong hệ Oxyz, mặt cầu có tâm \(O(0;0;0)\) và bán kính \(R=5\). Hãy xác định \(M(3;4;0)\) và \(N(1;1;1)\) nằm trong, trên hay ngoài mặt cầu.
 
-**Lời giải:** Mặt cầu tâm O, \(R=5\); \(M=(3;4;0)\) có \(OM^2=9+16=25\) nên nằm trên. \(N=(1;1;1)\) có \(ON^2=3<25\) nên nằm trong. So \(CM^2\) với \(R^2\) tránh bấm căn không cần thiết.
+**Lời giải:** Mặt cầu tâm O, \(R=5\); \(M=(3;4;0)\) có \(OM^2=9+16=25\) nên nằm trên. \(N=(1;1;1)\) có \(ON^2=3<25\) nên nằm trong. So bình phương khoảng cách đến O với \(R^2\) tránh bấm căn không cần thiết.
 
 **Vận dụng**
 
@@ -1652,7 +1652,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-C05; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 21.** Hai vectơ khác 0 dài 2 và 3, tạo góc 60°. Tính tích vô hướng.
+**Bài luyện 21.** Hai vectơ khác 0 dài 2 và 3, tạo góc \(60^\circ\). Tính tích vô hướng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1672,7 +1672,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P10; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 23.** Hai vectơ khác 0 dài 3 và 8 tạo góc 120°. Tích vô hướng bằng bao nhiêu?
+**Bài luyện 23.** Hai vectơ khác 0 dài 3 và 8 tạo góc \(120^\circ\). Tích vô hướng bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1686,7 +1686,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** 120°
+- **Đáp án:** \(120^\circ\)
 - **Lời giải/suy luận:** \(\cos\theta=\frac{-5}{2\cdot5}=-\frac12\) nên \(\theta=120^\circ\); hình chiếu ngược hướng.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 1 điểm kiểm hai độ dài dương; 2 điểm thiết lập cos; 1 điểm tìm góc; 1 điểm giải thích dấu.
@@ -1694,7 +1694,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P05; PRIMARY_OUTCOME: TOP18-O05; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 25.** Hai vectơ độ dài 3 và 4, góc giữa chúng 60°. Tính tích vô hướng.
+**Bài luyện 25.** Hai vectơ độ dài 3 và 4, góc giữa chúng \(60^\circ\). Tính tích vô hướng.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -1710,7 +1710,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 40 J
-- **Lời giải/suy luận:** Góc 0°, \(W=10\cdot4\cdot\cos0^\circ=40\) J.
+- **Lời giải/suy luận:** Góc \(0^\circ\), \(W=10\cdot4\cdot\cos0^\circ=40\) J.
 
 </details>
 
@@ -1720,12 +1720,12 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 0 J
-- **Lời giải/suy luận:** Góc 90° nên thành phần lực theo độ dời bằng 0.
+- **Lời giải/suy luận:** Góc \(90^\circ\) nên thành phần lực theo độ dời bằng 0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P12; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 28.** Lực 8 N tạo góc 120° với độ dời 3 m. Công bằng bao nhiêu?
+**Bài luyện 28.** Lực 8 N tạo góc \(120^\circ\) với độ dời 3 m. Công bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1735,7 +1735,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-W06; ORIGINAL_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 29.** Hai lực không đổi \(\vec F_1,\vec F_2\) lần lượt 10 N, 20 N, cùng tạo góc 60° với cùng độ dời 2 m. Tính tổng công và nêu vì sao có thể cộng.
+**Bài luyện 29.** Hai lực không đổi \(\vec F_1,\vec F_2\) lần lượt 10 N, 20 N, cùng tạo góc \(60^\circ\) với cùng độ dời 2 m. Tính tổng công và nêu vì sao có thể cộng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1747,7 +1747,7 @@ Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarr
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P06; PRIMARY_OUTCOME: TOP18-O06; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 30.** Một lực 10 N tạo góc 60° với độ dời dài 2 m. Công của lực theo hướng độ dời?
+**Bài luyện 30.** Một lực 10 N tạo góc \(60^\circ\) với độ dời dài 2 m. Công của lực theo hướng độ dời?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
