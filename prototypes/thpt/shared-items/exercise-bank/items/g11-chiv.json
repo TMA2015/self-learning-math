@@ -11,7 +11,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 10 trước khi mở lời giải."
+      "Tìm hai điểm phân biệt cùng thuộc mặt phẳng."
     ],
     "rubric": null,
     "interaction": {
@@ -28,7 +28,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu suy AC thuộc mặt chỉ từ A thuộc, kiểm cả C nằm ngoài. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P06."
+    "remediation": "Nếu chỉ có một điểm thuộc mặt, chưa thể kết luận cả đường nằm trong mặt; ở đây đã có A và B phân biệt. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P06."
   },
   {
     "item_id": "THPT-G11-CHIV-B10-C02",
@@ -42,7 +42,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 10 trước khi mở lời giải."
+      "Xét các mặt phẳng chứa đường AB."
     ],
     "rubric": null,
     "interaction": {
@@ -59,7 +59,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ ba điểm bất kỳ luôn xác định một mặt, dùng thêm một điểm ngoài đường để xác định duy nhất mặt. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P07."
+    "remediation": "Ba điểm thẳng hàng chưa đủ; chọn thêm một điểm ngoài AB để xác định mặt. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P07."
   },
   {
     "item_id": "THPT-G11-CHIV-B10-P01",
@@ -73,7 +73,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 10 trước khi mở lời giải."
+      "Tìm hai điểm chung phân biệt của hai mặt."
     ],
     "rubric": null,
     "interaction": {
@@ -90,7 +90,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ tìm S, chưa đủ xác định giao tuyến; tìm thêm đỉnh chung C. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P08."
+    "remediation": "Hai điểm chung là S và A, không phải C; kiểm hai mặt phân biệt vì tứ diện không đồng phẳng. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P08."
   },
   {
     "item_id": "THPT-G11-CHIV-B10-P02",
@@ -104,7 +104,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 10 trước khi mở lời giải."
+      "Dùng M thuộc SB và xét C có thuộc mặt không."
     ],
     "rubric": null,
     "interaction": {
@@ -121,7 +121,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho đường chỉ có một điểm chung mà song song mặt, nhớ song song yêu cầu không có điểm chung. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P09."
+    "remediation": "M nằm trong mặt, C nằm ngoài; đường CM chỉ có một điểm chung với mặt. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P09."
   },
   {
     "item_id": "THPT-G11-CHIV-B10-P03",
@@ -135,7 +135,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 10 trước khi mở lời giải."
+      "Chọn hai điểm phân biệt trên a, ghép với A."
     ],
     "rubric": null,
     "interaction": {
@@ -152,7 +152,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ ba điểm bất kỳ luôn xác định một mặt, dùng thêm một điểm ngoài đường để xác định duy nhất mặt. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P07."
+    "remediation": "Dùng ba điểm không thẳng hàng để chứng minh tồn tại và duy nhất. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P07."
   },
   {
     "item_id": "THPT-G11-CHIV-B10-P04",
@@ -166,7 +166,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 10 trước khi mở lời giải."
+      "Xét đoạn giao trên từng mặt tam giác bên."
     ],
     "rubric": null,
     "interaction": {
@@ -183,7 +183,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ nối các điểm theo hình biểu diễn, kiểm mỗi cạnh thiết diện nằm trên đúng mặt của khối. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P10."
+    "remediation": "Kiểm ba điểm thuộc ba cạnh bên và mặt cắt không gặp đáy; không chỉ dựa vào hình biểu diễn. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P10."
   },
   {
     "item_id": "THPT-G11-CHIV-B11-C01",
@@ -197,7 +197,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 11 trước khi mở lời giải."
+      "Hai đường không cắt có nhất thiết đồng phẳng không?"
     ],
     "rubric": null,
     "interaction": {
@@ -214,7 +214,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu không cắt mà kết luận song song, phải chứng minh đồng phẳng; hai cạnh đối tứ diện có thể chéo. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P02."
+    "remediation": "Kiểm đồng phẳng trước khi kết luận song song; hai cạnh đối tứ diện là phản ví dụ. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P02."
   },
   {
     "item_id": "THPT-G11-CHIV-B11-C02",
@@ -228,7 +228,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 11 trước khi mở lời giải."
+      "Dùng tính chất hai cạnh đối của hình bình hành."
     ],
     "rubric": null,
     "interaction": {
@@ -245,7 +245,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho chéo nhau, cả hai nằm trong mặt phẳng ABCD; dùng tính chất hình bình hành. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P02."
+    "remediation": "AB và CD đồng phẳng, phân biệt và không cắt nhau. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P02."
   },
   {
     "item_id": "THPT-G11-CHIV-B11-P01",
@@ -259,7 +259,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 11 trước khi mở lời giải."
+      "Giả sử SA và BC cùng thuộc một mặt phẳng."
     ],
     "rubric": null,
     "interaction": {
@@ -276,7 +276,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng hình vẽ để kết luận chéo, thay bằng phản chứng bốn đỉnh tứ diện không đồng phẳng. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P11."
+    "remediation": "Nếu đồng phẳng, cả bốn đỉnh thuộc mặt đó, trái với giả thiết tứ diện. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P11."
   },
   {
     "item_id": "THPT-G11-CHIV-B11-P02",
@@ -290,7 +290,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 11 trước khi mở lời giải."
+      "Xét tam giác SAB và hai trung điểm."
     ],
     "rubric": null,
     "interaction": {
@@ -307,7 +307,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng SM/MA thay SM/SA, đổi mẫu về toàn cạnh tương ứng. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P12."
+    "remediation": "Áp dụng định lí đường trung bình trong tam giác SAB, không suy chỉ từ hình biểu diễn. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P12."
   },
   {
     "item_id": "THPT-G11-CHIV-B11-P03",
@@ -321,7 +321,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 11 trước khi mở lời giải."
+      "Giả sử mặt phẳng chứa SA và CD, xét ba điểm A, C, D."
     ],
     "rubric": null,
     "interaction": {
@@ -338,7 +338,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng hình vẽ để kết luận chéo, thay bằng phản chứng bốn đỉnh tứ diện không đồng phẳng. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P11."
+    "remediation": "Ba điểm A, C, D xác định mặt đáy; S không nằm trong mặt đó. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P11."
   },
   {
     "item_id": "THPT-G11-CHIV-B11-P04",
@@ -352,7 +352,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 11 trước khi mở lời giải."
+      "Thử trường hợp c chính là a."
     ],
     "rubric": null,
     "interaction": {
@@ -369,7 +369,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu a=c, chỉ có một đường; thêm điều kiện a≠c mới kết luận song song. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P02."
+    "remediation": "Nếu a và c trùng nhau thì không phải hai đường song song phân biệt. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P02."
   },
   {
     "item_id": "THPT-G11-CHIV-B12-C01",
@@ -383,7 +383,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 12 trước khi mở lời giải."
+      "So số điểm chung của hai vị trí tương đối."
     ],
     "rubric": null,
     "interaction": {
@@ -400,7 +400,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu gọi đường nằm trong mặt là song song với mặt, kiểm số điểm chung (vô số so với không có). Ôn Toán 11 Bài 12; luyện THPT-TOP15-P03."
+    "remediation": "Đường nằm trong mặt có vô số điểm chung, đường song song mặt không có điểm chung. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P03."
   },
   {
     "item_id": "THPT-G11-CHIV-B12-C02",
@@ -414,7 +414,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 12 trước khi mở lời giải."
+      "Xét khả năng a cũng nằm trong mặt phẳng."
     ],
     "rubric": null,
     "interaction": {
@@ -431,7 +431,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ điều kiện MN không nằm trong mặt, hai đường cùng nằm trong đáy vẫn có thể song song. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P14."
+    "remediation": "Cần thêm điều kiện a không nằm trong mặt; nếu không, dấu hiệu không áp dụng. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P14."
   },
   {
     "item_id": "THPT-G11-CHIV-B12-P01",
@@ -445,7 +445,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 12 trước khi mở lời giải."
+      "Dùng đường trung bình rồi kiểm M có thuộc đáy không."
     ],
     "rubric": null,
     "interaction": {
@@ -462,7 +462,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ điều kiện MN không nằm trong mặt, hai đường cùng nằm trong đáy vẫn có thể song song. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P14."
+    "remediation": "Chứng minh MN song song AB và MN không nằm trong đáy trước khi dùng dấu hiệu. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P14."
   },
   {
     "item_id": "THPT-G11-CHIV-B12-P02",
@@ -476,7 +476,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 12 trước khi mở lời giải."
+      "A thuộc đáy, S có thuộc đáy không?"
     ],
     "rubric": null,
     "interaction": {
@@ -493,7 +493,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu gọi đường nằm trong mặt là song song với mặt, kiểm số điểm chung (vô số so với không có). Ôn Toán 11 Bài 12; luyện THPT-TOP15-P03."
+    "remediation": "SA chứa A nhưng không nằm trong đáy, nên cắt đáy duy nhất tại A. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P03."
   },
   {
     "item_id": "THPT-G11-CHIV-B12-P03",
@@ -507,7 +507,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 12 trước khi mở lời giải."
+      "Cả d và e nằm trong mặt phẳng nào?"
     ],
     "rubric": null,
     "interaction": {
@@ -524,7 +524,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu MN gặp AB thì gặp mặt đáy, trái với MN∥(ABC); dùng đồng phẳng và không giao. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P15."
+    "remediation": "Nếu d gặp e, d gặp mặt phẳng P, trái với giả thiết; dùng đồng phẳng và không giao. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P15."
   },
   {
     "item_id": "THPT-G11-CHIV-B12-P04",
@@ -538,7 +538,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 12 trước khi mở lời giải."
+      "Kiểm M thuộc cạnh bên SA hay thuộc đáy."
     ],
     "rubric": null,
     "interaction": {
@@ -555,7 +555,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ điều kiện MN không nằm trong mặt, hai đường cùng nằm trong đáy vẫn có thể song song. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P14."
+    "remediation": "M không thuộc đáy; đường song song mặt phẳng không có điểm chung với mặt. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P14."
   },
   {
     "item_id": "THPT-G11-CHIV-B13-C01",
@@ -569,7 +569,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 13 trước khi mở lời giải."
+      "Dùng định nghĩa hai mặt phẳng không giao nhau."
     ],
     "rubric": null,
     "interaction": {
@@ -586,7 +586,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hai mặt có tên khác mà kết luận phân biệt, kiểm chúng có cùng chứa ba điểm không thẳng hàng hay không. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P17."
+    "remediation": "Hai mặt phẳng song song không có điểm chung; hai mặt trùng nhau có mọi điểm chung. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P17."
   },
   {
     "item_id": "THPT-G11-CHIV-B13-C02",
@@ -600,7 +600,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 13 trước khi mở lời giải."
+      "Dùng dấu hiệu qua hai đường cắt nhau."
     ],
     "rubric": null,
     "interaction": {
@@ -617,7 +617,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thay bằng hai đường song song, hãy tìm phản ví dụ ở hai mặt kề của hình hộp. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P18."
+    "remediation": "Cần hai đường cắt nhau trong cùng một mặt phẳng, không thay bằng hai đường song song. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P18."
   },
   {
     "item_id": "THPT-G11-CHIV-B13-P01",
@@ -631,7 +631,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 13 trước khi mở lời giải."
+      "Xét hai giao tuyến trong mặt phẳng R."
     ],
     "rubric": null,
     "interaction": {
@@ -648,7 +648,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hai giao tuyến cắt nhau thì điểm cắt thuộc cả hai đáy, trái giả thiết; cả hai đồng phẳng trong mặt thứ ba. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P19."
+    "remediation": "Nếu chúng cắt nhau, điểm chung thuộc cả P và Q, trái giả thiết. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P19."
   },
   {
     "item_id": "THPT-G11-CHIV-B13-P02",
@@ -662,7 +662,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 13 trước khi mở lời giải."
+      "Thử hai mặt phẳng cắt nhau theo e; chọn a song song e trong P."
     ],
     "rubric": null,
     "interaction": {
@@ -679,7 +679,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thay bằng hai đường song song, hãy tìm phản ví dụ ở hai mặt kề của hình hộp. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P18."
+    "remediation": "Một đường song song mặt chưa đủ; cần hai đường cắt nhau trong mặt P. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P18."
   },
   {
     "item_id": "THPT-G11-CHIV-B13-P03",
@@ -693,7 +693,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 13 trước khi mở lời giải."
+      "Dùng Thalès đảo trong hai tam giác bên có chung cạnh SA."
     ],
     "rubric": null,
     "interaction": {
@@ -710,7 +710,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ dựng một đoạn song song đáy, chưa xác định mặt; cần hai đường cắt nhau và kiểm điểm trong cạnh. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P16."
+    "remediation": "Chứng minh MN và MK đều song song đáy, rồi dùng hai đường cắt nhau tại M. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P16."
   },
   {
     "item_id": "THPT-G11-CHIV-B13-P04",
@@ -724,7 +724,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 13 trước khi mở lời giải."
+      "Diện tích thay đổi theo bình phương tỉ số độ dài."
     ],
     "rubric": null,
     "interaction": {
@@ -741,7 +741,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhân cả chu vi và diện tích với t, diện tích phải nhân t² do hai chiều dài cùng đổi t lần. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P04."
+    "remediation": "Không nhân diện tích chỉ với \\(\\frac23\\); bình phương tỉ số đồng dạng. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P04."
   },
   {
     "item_id": "THPT-G11-CHIV-B14-C01",
@@ -755,7 +755,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 14 trước khi mở lời giải."
+      "Một đường chiếu qua điểm ngoài mặt có gặp mặt không?"
     ],
     "rubric": null,
     "interaction": {
@@ -772,7 +772,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn hình chiếu vuông góc khi đề cho phương khác, ảnh sẽ sai; kiểm đường chiếu song song phương đã chọn. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P20."
+    "remediation": "Phương song song mặt chiếu làm ảnh của điểm ngoài mặt không xác định. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P20."
   },
   {
     "item_id": "THPT-G11-CHIV-B14-C02",
@@ -786,7 +786,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 14 trước khi mở lời giải."
+      "Nghĩ đến ảnh của hình vuông khi chiếu xiên."
     ],
     "rubric": null,
     "interaction": {
@@ -803,7 +803,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ góc luôn bảo toàn, hình chữ nhật có thể thành hình bình hành không có góc vuông. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P22."
+    "remediation": "Phép chiếu không bảo toàn góc; hình vuông có thể thành hình bình hành không vuông. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P22."
   },
   {
     "item_id": "THPT-G11-CHIV-B14-P01",
@@ -817,7 +817,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 14 trước khi mở lời giải."
+      "Dùng quan hệ giữa BB′ và AA′."
     ],
     "rubric": null,
     "interaction": {
@@ -834,7 +834,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn hình chiếu vuông góc khi đề cho phương khác, ảnh sẽ sai; kiểm đường chiếu song song phương đã chọn. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P20."
+    "remediation": "Đường chiếu qua B′ theo phương AA′ chính là BB′. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P20."
   },
   {
     "item_id": "THPT-G11-CHIV-B14-P02",
@@ -848,7 +848,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 14 trước khi mở lời giải."
+      "Xác định ảnh hai đầu mút rồi xét tỉ số."
     ],
     "rubric": null,
     "interaction": {
@@ -865,7 +865,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hai đầu mút có cùng ảnh, tỉ số độ dài không còn xác định; phân biệt trường hợp suy biến. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P22."
+    "remediation": "Hai đầu mút có ảnh phân biệt; tỉ số trên đoạn được bảo toàn. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P22."
   },
   {
     "item_id": "THPT-G11-CHIV-B14-P03",
@@ -879,7 +879,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đọc lại D1 và các điều kiện trong Bài 14 trước khi mở lời giải."
+      "Xét đường chiếu qua hai điểm bất kì thuộc a."
     ],
     "rubric": null,
     "interaction": {
@@ -896,7 +896,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho ảnh vẫn là đường, kiểm mọi điểm trên đường gốc đều chiếu tới cùng giao điểm. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P21."
+    "remediation": "Tất cả đường chiếu trùng với a; giao điểm với mặt chiếu là ảnh chung. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P21."
   },
   {
     "item_id": "THPT-G11-CHIV-B14-P04",
@@ -910,7 +910,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Kiểm phương chiếu có nằm trong phương của mặt phẳng chứa hình bình hành không."
+      "Kiểm phương chiếu có nằm trong phương của mặt phẳng chứa hình không."
     ],
     "rubric": null,
     "interaction": {
@@ -927,7 +927,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho hình bình hành luôn giữ nguyên dạng, xét trường hợp phương chiếu song song một cạnh: cạnh đó co thành điểm, ảnh có thể là đoạn. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P05."
+    "remediation": "Nếu phương chiếu cùng phương một cạnh, cạnh đó co thành điểm, ảnh toàn hình là đoạn. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P05."
   },
   {
     "item_id": "THPT-G11-B10-KFT01",
