@@ -20790,6 +20790,118 @@
       },
       "remaining": "Next G12 ChI–III, then ChIV–VI, three chapters per turn; separate FirstTry/public selfcheck/Written and depth/source review; investigate existing SGK probability vs CD20 linkage at source-owner stage.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp103": {
+      "scope": "G12 ChI–III B01–B10: 140 canonical public Core/Practice/Application records",
+      "baseline_commit": "cde055b8986609196da387fdcff2c2738897e72d",
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "owner_decision": "2026-11-26: use verified canonical lessons as direct exercise basis; self-check maths and pedagogy; three chapters per turn",
+      "knowledge_source": {
+        "B01": "28f6b83ab28731f51667164fe5f239cb868b948c",
+        "B02": "b40ce4dad554e94a6cb88c5b5d20274f91e8c336",
+        "B03": "be100bd245a9caaa511c98f88b5d76280d9f503f",
+        "B04": "d3949a0120e7fd19a690a2ac6f7eddd25cc922f4",
+        "B05": "6f9a867a541530c2c44ca03f016eb59348977306",
+        "B06": "e3091a022ce73d2a355aaf8dd1acc292e7bafce3",
+        "B07": "eb93bf6a1ac1fd07347bf01d872aae26957ebc78",
+        "B08": "40b60e3419e71738bbfa61dcb4ff45c58c5342f2",
+        "B09": "2d143590b7bfb1bb2d807c69f4040f62a7700968",
+        "B10": "ac62a6cfb481327fa98f330b64b72f1684c9b267"
+      },
+      "source_projection": {
+        "paths": [
+          "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+          "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+          "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json"
+        ],
+        "current_main_blobs": [
+          "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+          "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+          "e72c6050cc97f897939bfbc4e1469691a4ffed62"
+        ],
+        "ids_and_order": 140
+      },
+      "item_shards": [
+        {
+          "path": "items/g12-chi.json",
+          "before": "839fd0cdabd2de38893c4e9835effac5a5b118cf",
+          "after": "427b15912f7447d625a4e72e7bffc28871ccd627",
+          "reviewed": 56,
+          "changed": 56,
+          "other_unchanged": 13,
+          "fields": {
+            "stem": 49,
+            "answer_key": 10,
+            "worked_solution": 56,
+            "hints": 15,
+            "remediation": 6
+          }
+        },
+        {
+          "path": "items/g12-chii.json",
+          "before": "7db971ab5cf04ac036e10619b56d26b0f8af7d27",
+          "after": "b895384e5a9a6de40704e1876dbebe71c5ceaa53",
+          "reviewed": 48,
+          "changed": 48,
+          "other_unchanged": 3,
+          "fields": {
+            "stem": 19,
+            "answer_key": 8,
+            "worked_solution": 48,
+            "hints": 2,
+            "remediation": 3
+          }
+        },
+        {
+          "path": "items/g12-chiii.json",
+          "before": "6f3a4b8555e056fa449eb74170e6d50dff6eeff4",
+          "after": "cba0277dd31610a747dcc3b86d120c998103ce65",
+          "reviewed": 36,
+          "changed": 36,
+          "other_unchanged": 3,
+          "fields": {
+            "stem": 13,
+            "worked_solution": 36,
+            "hints": 5,
+            "remediation": 1
+          }
+        }
+      ],
+      "checks": {
+        "manual_item_review": 140,
+        "formative_changed": 140,
+        "worked_solutions_changed": 140,
+        "other_firsttry_unchanged": 19,
+        "sgk_placement_blob": "8f1f02b762930fe937af785d2f63b00d9f0205ad",
+        "sgk_placements": 171,
+        "sgk_roles": {
+          "SGK_CORE": 48,
+          "SGK_PRACTICE": 72,
+          "SGK_APPLICATION": 20,
+          "CLIENT_SELF_CHECK_NO_MASTERY": 28,
+          "SGK_FIRST_TRY": 3
+        },
+        "ids_order_and_metadata_unchanged": true,
+        "balanced_delimiters": true,
+        "control_characters": 0,
+        "targeted_raw_scan": "one acceptable standalone unit Giờ²; no other match; not a renderer or exhaustive notation test",
+        "supporting_examples": "IQR 325/42 ≈ 7.74; variance 19/3; 3-4-12 diagonal 13; dot -12; comparative variances 20 and 60; profit 600; exact readback"
+      },
+      "findings": [
+        "ChI: strict monotonicity on connected intervals, local vs global extrema, one-sided limits and holes, derivative units, discrete/continuous models, constraints and nonattainment.",
+        "ChII: zero-vector convention consistent with B06 (no unique angle), two opposite vectors in parallelogram, constant-force assumption, coordinate sign, vector vs scalar; preserve prior P02 answer meaning.",
+        "ChIII: nonempty extreme groups, quartile boundary interpolation and round only final result, weighted squared deviations divided by n, distinguish grouped vs raw data; CV as optional reading only on appropriate ratio scale."
+      ],
+      "verdict": "AUTHOR_SELF_VERIFIED_SCOPED_ITEM_MATH_AND_SOLUTION_REVIEW; no new whole-chapter Q18/content-ready verdict; separate FirstTry, standalone public selfcheck, Written and broader coverage remain outside this phase",
+      "phase_totals": {
+        "chapters": 21,
+        "total_thpt_chapters": 24,
+        "reviewed": 714,
+        "changed": 713,
+        "unchanged_reviewed": 1
+      },
+      "remaining": "G12 ChIV–VI next; keep separate FirstTry/public selfcheck/Written and source-owner/coverage reviews",
+      "release_authorization": false
     }
   }
 }
