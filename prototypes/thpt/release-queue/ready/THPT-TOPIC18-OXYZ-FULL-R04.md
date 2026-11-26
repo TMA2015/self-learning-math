@@ -1,3 +1,13 @@
+<!-- WORK1109_CP25_CURRENT -->
+## AUTHORING CONTENT_READY — CĐ18
+
+CP25 / #1109 scoped closure, 26/11/2026. Owner continuation after CP24 explicit correction proposal interpreted as authorization for B15-W05 and the same false rule in two B15-O05 Knowledge passages only. SGK source-owner #725 corrected three lines, 96/96 ID/stem/key/rubric exact (old ad4165de0a2c3442b50d7f3d0019a99b5bbdef39 → current b748a7c5af4074b39ef8a6a756a7be7839b9cd83; source commit 9db462adb566c7828efb64466d5773408ef161d3). CĐ18 exact same wrapper copied, 97 source pointers updated, B137 explanation aligned, O31 explicitly says perpendicular spatial lines may be skew. S1 corroboration Toán 11 KNTT B22 (https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-7-quan-he-vuong-goc-trong-khong-gian-1069/bai-22-hai-duong-thang-vuong-goc-3580.html and https://luyen.org/lop-11/toan/kntt/c7-b22), mathematical counterexample B143: directions (1;0;0),(0;1;0), dot 0 yet z=0 vs z=2. CP20a–f Work O13/O15/O23/O32, CP20d owner-approved zero-vector convention (current ChII 43d93a7d0d070a288251c34ff411c7de3206dc85), CP24 X-G.5 complete. Final exact-source checks: 50 executed arithmetic/vector/geometry recomputations PASS, 160/160 SGK bank ID memberships, 247/247 canonical matrix IDs (259 placements including 12 replays), 40 outcomes/40 FirstTry, 207 Practice, 12 exact matching replay stems, all rubric score sequences and identity markers retained modulo source-pointer relock, 1662/1662 inline, 248/248 details, raw compound scan zero, 10 SVG refs. Historical S1 p25 P2 remains; no fresh primary PDF visual scan or independent NotebookLM review. Remaining practice-bank wording candidates outside #1109: B191/B192 (B17-C04/P04) should explicitly say AB is diameter, context is source outcome B17-O04; B206 (B14-W07) 'cầu' ambiguous solid vs surface, distinguish disk vs circumference; retain frozen stem/key here, flag for #1090 scoped review; no claim of full bank acceptance. P0/P1 in #1109 Work/authorized correction scope zero. Source-only CONTENT_READY under #1109, not RELEASE, no CI/browser PASS, no protected assessment edits.
+
+Current source `0e31acbcecffecbcefcf734b290cfe8d4ff960cc`, Q18 `1d575aebabb51597f0c351265a3914249dbd28ef`, A1 `eac1880ee2a7f4c84d1d48133990be07da2a7e5c`, V2 `d79c5c6669ba0880154da2fad3ccce3dbcbad095`. Prior CP20a HOLD superseded for #1109 scope only; no RELEASE authorization.
+
+---
+Historical narrative below applies to earlier immutable snapshots; current fields and CP25 supersede old byte-exact/readiness claims. Original S1 and independent reviewer blob pointers remain historical provenance.
+
 <!-- WORK #1109 CURRENT CANDIDATE -->
 **BLOCKED_BY_AUTHORING — CP20a (2026-11-26).** Work O13/O15/O32/O23 source corrections verified; current learner `a29fcdede9ee5e8063f48ebd531b9b2c0cdccae0`, source commit `e5a58c735e36c02ef42f5a4584613ea39a794fcd`. 17/17 targeted spot checks, 207 Practice, 12/12 exact replay stems, 247 unique public IDs (160 original SGK memberships verified + 40 FirstTry + 47 Topic Practice/Written), all markers and rubric score tokens unchanged, 248 balanced disclosures. Converted 74 legacy dollar-inline expressions; 383 balanced inline pairs; 529 residual scan lines require semantic X-G.5 review (including false-positive candidates). Cross-topic zero-vector convention in CĐ13 differs from CĐ18 and the frozen grade-12 canonical wording; original textbook confirmation pending, no unauthorized key change. Earlier Q18/V2/ready signed pointers below are historical only. Not yet CONTENT_READY; no release authorization.
 
@@ -23,20 +33,20 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: BLOCKED_BY_AUTHORING
-SOURCE_COMMIT: aee8a33bcf44acb90268f96b297fa161a3861de3
+STATE: CONTENT_READY
+SOURCE_COMMIT: 546764c91104fcfb88fa675eb87e74cc62dc00bc
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
+ACADEMIC_SOURCE_BLOB: 0e31acbcecffecbcefcf734b290cfe8d4ff960cc
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md (SIGNED_AUTHOR_SELF_VERIFIED; NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 3a0cbbfb74252787f08c9504de9018c7e58bf8a1
+REVIEW_RECEIPT_BLOB: 1d575aebabb51597f0c351265a3914249dbd28ef
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R04_247_CANONICAL_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: baac29f51c2bbc7a66d95f39680c6d7be285916d
+AUTHOR_A1_A7_BLOB: eac1880ee2a7f4c84d1d48133990be07da2a7e5c
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R04_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 79fe1557f85488361322d9e36b606f1e44b3ddd1
+AUTHOR_HANDOFF_BLOB: d79c5c6669ba0880154da2fad3ccce3dbcbad095
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -49,7 +59,7 @@ P0: 0
 P1: 0
 P2: 2
 P2_NOTE: SBT_REFERENCE_GAP_DOCUMENTED_G12_B14_PRINTED_P25
-BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
+BLOCKERS: NONE_FOR_1109_SCOPED_AUTHORING; RELEASE_GATES_SEPARATE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
