@@ -438,28 +438,28 @@ Hai vectơ cùng phương cần một hệ số k áp dụng cho đủ ba thành
 
 <!-- LESSON_ID: TOP18-M13; OUTCOME_ID: TOP18-O13; S1_ORIGINAL_OUTCOME: G12-CHII-B08-O03 -->
 
-Trung điểm và trọng tâm của tam giác là trung bình *tọa độ*, không phải trung bình khoảng cách tới gốc. Vì mỗi trục độc lập, trung điểm M=(A+B)/2; trọng tâm G=(A+B+C)/3 theo từng thành phần.
+Trung điểm và trọng tâm của tam giác là trung bình *tọa độ*, không phải trung bình khoảng cách tới gốc. Gọi O là gốc tọa độ. Với trung điểm M của AB, hai độ dời từ A tới M và từ M tới B bằng nhau, nên \(\overrightarrow{OM}=\frac{\overrightarrow{OA}+\overrightarrow{OB}}2\). Với trọng tâm G của tam giác ABC, nếu N là trung điểm BC thì \(\overrightarrow{AG}=\frac23\overrightarrow{AN}\). Thay biểu thức trung điểm N vào hệ thức này, ta được \(\overrightarrow{OG}=\frac{\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}}3\). Vì vậy lấy trung bình theo từng thành phần.
 
 > **Kiến thức cần ghi nhớ**
 >
-> Trung điểm A,B có tọa độ \(((x_A+x_B)/2;(y_A+y_B)/2;(z_A+z_B)/2)\); trọng tâm tam giác là trung bình tọa độ ba đỉnh.
+> Với \(A(x_A;y_A;z_A)\), \(B(x_B;y_B;z_B)\), \(C(x_C;y_C;z_C)\), trung điểm AB là \(M\left(\frac{x_A+x_B}2;\frac{y_A+y_B}2;\frac{z_A+z_B}2\right)\); trọng tâm tam giác ABC là \(G\left(\frac{x_A+x_B+x_C}3;\frac{y_A+y_B+y_C}3;\frac{z_A+z_B+z_C}3\right)\).
 
 
 **Ví dụ**
 
-**Đề bài:** Trong hệ tọa độ Oxyz, hai điểm A(0;2;4), B(2;0;0) là hai đầu của một đoạn. Hãy tìm trung điểm.
+**Đề bài:** Trong hệ Oxyz, cho tam giác \(A(0;2;4),\ B(2;0;0),\ C(4;4;2)\). Tìm trung điểm M của AB và trọng tâm G của tam giác ABC.
 
-**Lời giải:** A=(0,2,4),B=(2,0,0) có M=(1,1,2). Không lấy trung bình độ dài OA và OB. Điểm giữa phải cân bằng độ dời tới hai đầu mút, nên mỗi tọa độ là trung bình của hai giá trị tương ứng: ((0+2)/2;(2+0)/2;(4+0)/2)=(1;1;2).
+**Lời giải:** Trung điểm \(M\left(\frac{0+2}2;\frac{2+0}2;\frac{4+0}2\right)\), tức \(M(1;1;2)\). Trọng tâm lấy trung bình tọa độ **ba** đỉnh: \(G\left(\frac{0+2+4}3;\frac{2+0+4}3;\frac{4+0+2}3\right)\), tức \(G(2;2;2)\). Kiểm lại bằng trung tuyến CM: \(\overrightarrow{CM}=(-3;-3;0)\), \(\overrightarrow{CG}=(-2;-2;0)=\frac23\overrightarrow{CM}\). Không lấy trung bình độ dài OA, OB, OC.
 
 **Vận dụng**
 
-Cho tam giác ABC với A(0;0;2), B(2;4;0), C(4;2;4). Tìm trung điểm M của AB và trọng tâm G của tam giác ABC.
+Cho tam giác ABC với \(A(0;0;2),\ B(2;4;0),\ C(4;2;4)\). Tìm trung điểm M của AB và trọng tâm G của tam giác ABC.
 
 <!-- ITEM_ID: THPT-TOP18-T13; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O13 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-M(1;2;1) là trung bình tọa độ của A và B. Trọng tâm G có tọa độ trung bình của cả ba đỉnh: G(2;2;2), vì (0+2+4)/3=2, (0+4+2)/3=2 và (2+0+4)/3=2.
+\(M(1;2;1)\) là trung bình tọa độ của A và B. Trọng tâm G có tọa độ trung bình của cả ba đỉnh: \(G(2;2;2)\), vì \(\frac{0+2+4}3=2\), \(\frac{0+4+2}3=2\) và \(\frac{2+0+4}3=2\).
 
 **Kiểm lỗi**
 
@@ -504,28 +504,28 @@ u=(1,1,0),v=(1,−1,0). Góc giữa chúng?
 
 <!-- LESSON_ID: TOP18-M15; OUTCOME_ID: TOP18-O15; S1_ORIGINAL_OUTCOME: G12-CHII-B08-O05 -->
 
-Độ dài vectơ dùng căn tổng bình phương ba thành phần; khoảng cách AB là độ dài vectơ AB. Điều này nối Pitago phẳng thành ba phương vuông góc, kết quả luôn không âm.
+Độ dài vectơ dùng căn tổng bình phương ba thành phần; khoảng cách giữa hai điểm A và B là độ dài của vectơ \(\overrightarrow{AB}\). Điều này nối Pitago phẳng thành ba phương vuông góc, kết quả luôn không âm. Vectơ có ba tọa độ, còn độ dài là một số.
 
 > **Kiến thức cần ghi nhớ**
 >
-> Độ dài \(|\vec u|=\sqrt{u_x^2+u_y^2+u_z^2}\); khoảng cách AB là độ dài vectơ \(\overrightarrow{AB}=\vec B-\vec A\).
+> Độ dài \(|\vec u|=\sqrt{u_x^2+u_y^2+u_z^2}\). Với \(A(x_A;y_A;z_A)\), \(B(x_B;y_B;z_B)\), ta có \(\overrightarrow{AB}=(x_B-x_A;y_B-y_A;z_B-z_A)\), còn \(AB=|\overrightarrow{AB}|=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2+(z_B-z_A)^2}\).
 
 
 **Ví dụ**
 
-**Đề bài:** Cho hai điểm A(1;2;3) và B(4;6;3) trong hệ Oxyz. Tính tọa độ vectơ AB và độ dài đoạn thẳng AB.
+**Đề bài:** Cho hai điểm \(A(1;2;3)\) và \(B(4;6;3)\) trong hệ Oxyz. Tính tọa độ vectơ \(\overrightarrow{AB}\) và độ dài đoạn thẳng AB.
 
 **Lời giải:** Dùng cuối trừ đầu: \(\overrightarrow{AB}=(4-1;6-2;3-3)=(3;4;0)\). Độ dài đoạn thẳng là \(AB=|\overrightarrow{AB}|=\sqrt{3^2+4^2+0^2}=5\). Phân biệt vectơ (ba tọa độ) với độ dài (một số không âm).
 
 **Vận dụng**
 
-Độ dài vectơ u=(2,−1,2)?
+Độ dài vectơ \(\vec u=(2;-1;2)\) bằng bao nhiêu?
 
 <!-- ITEM_ID: THPT-TOP18-T15; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O15 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-√(4+1+4)=3.
+\(|\vec u|=\sqrt{4+1+4}=3\).
 
 **Kiểm lỗi**
 
@@ -1035,12 +1035,12 @@ Nếu n·u=0 thì không chia để tìm giao: thử một điểm gốc để p
 
 ## 6. Góc và quan hệ vị trí
 
-**Vì sao độ dốc không phải góc với pháp tuyến?** Hướng drone v=(1;0;1) có độ tăng cao 1 m cho mỗi 1 m chuyển dời theo Ox, nên góc giữa đường bay và mặt phẳng sàn Oxy bằng **45°**. Nếu chuyển sang bức tường (P):x+y+z=6, phải dùng pháp tuyến n=(1;1;1): vì v·n=2, |v|=√2, |n|=√3 nên sinθ=2/√6. Góc đổi vì mặt dùng để so đã đổi. Không được dùng cùng một góc chỉ vì mũi tên bay không thay đổi.
+**Vì sao độ dốc không phải góc với pháp tuyến?** Hướng drone \(\vec v=(1;0;1)\) có độ tăng cao 1 m cho mỗi 1 m chuyển dời theo Ox, nên góc giữa đường bay và mặt phẳng sàn Oxy bằng \(45^\circ\). Nếu chuyển sang bức tường \((P):x+y+z=6\), phải dùng pháp tuyến \(\vec n=(1;1;1)\): vì \(\vec v\cdot\vec n=2,\ |\vec v|=\sqrt2,\ |\vec n|=\sqrt3\) nên \(\sin\theta=\frac2{\sqrt6}\). Góc đổi vì mặt dùng để so đã đổi. Không được dùng cùng một góc chỉ vì mũi tên bay không thay đổi.
 
 
 ![Góc đường d với hình chiếu d′ lên mặt phẳng P](../../../../docs/assets/images/thpt/FIG-TOP18-B16-LINE-PLANE-ANGLE-WHITE-R00.svg)
 
-**Đọc hình:** Đọc d, d′ trong (P), pháp tuyến n và góc θ. Vì góc đường–mặt là với hình chiếu nên dùng sinθ=|u·n|/(|u||n|), không phải góc trực tiếp với n.
+**Đọc hình:** Đọc d, d' trong \((P)\), pháp tuyến \(\vec n\) và góc \(\theta\). Khi hình chiếu là một đường thẳng, góc đường–mặt là góc với hình chiếu. Nếu đường vuông góc mặt thì hình chiếu co thành điểm, góc đường–mặt bằng \(90^\circ\). Với vectơ chỉ phương \(\vec u\) và pháp tuyến \(\vec n\) đều khác không, dùng \(\sin\theta=\frac{|\vec u\cdot\vec n|}{|\vec u||\vec n|}\), không phải cos của góc trực tiếp với pháp tuyến.
 
 <!-- AUTHOR_TOPIC18_WHITE_SVG: docs/assets/images/thpt/FIG-TOP18-B16-LINE-PLANE-ANGLE-WHITE-R00.svg; NEW_SOURCE_BLOB: dafbebf04cbe7cc740eb6d718bf22b6724411737; WHITE_BACKGROUND=YES; ORIGINAL_SGK_PNG_REFERENCE_ONLY=Temp_FIG-G12-CHV-B16-R00.png; ORIGINAL_PNG_BLOB=4dbe38abdc36744cedf69e4e411c8449d7f0b31d; ORIGINAL_PNG_NOT_VISUALLY_QA_VERIFIED -->
 
@@ -1088,32 +1088,32 @@ Góc giữa hai **đường** là góc không tù; dùng trị tuyệt đối t�
 
 <!-- LESSON_ID: TOP18-M32; OUTCOME_ID: TOP18-O32; S1_ORIGINAL_OUTCOME: G12-CHV-B16-O02; SCOPE: G12_CHV -->
 
-Nếu đường d không vuông góc mặt P, góc θ giữa chúng là góc không tù giữa đường d và hình chiếu vuông góc của nó trên P. Nếu d vuông góc P, hình chiếu chỉ là một điểm và quy ước θ=90°. Do đó θ luôn thuộc 0°–90°. Với vectơ chỉ phương u≠0, pháp tuyến n≠0, sinθ=|u·n|/(|u||n|). Đây là góc phụ của góc không tù giữa phương của u và phương pháp tuyến n, không dùng cos trực tiếp để gọi góc đường–mặt.
+Nếu đường d không vuông góc mặt \((P)\), góc \(\theta\) giữa chúng là góc không tù giữa d và hình chiếu vuông góc của nó trên \((P)\). Nếu \(d\perp(P)\), hình chiếu chỉ là một điểm; khi đó góc đường–mặt bằng \(90^\circ\). Do đó \(\theta\in[0^\circ;90^\circ]\). Với vectơ chỉ phương \(\vec u\ne\vec0\) và pháp tuyến \(\vec n\ne\vec0\), góc đường–mặt phụ với góc không tù giữa hai phương của \(\vec u,\vec n\).
 
 > **Kiến thức cần ghi nhớ**
 >
-> Với hướng đường u và pháp tuyến mặt n đều khác 0, góc đường–mặt thỏa \(\sin\theta=\frac{|u\cdot n|}{|u||n|}\), \(0^\circ\le\theta\le90^\circ\).
+> Với \(\vec u,\vec n\) đều khác không, góc đường–mặt thỏa \(\sin\theta=\frac{|\vec u\cdot\vec n|}{|\vec u||\vec n|}\), \(0^\circ\le\theta\le90^\circ\). Công thức áp dụng cả khi hình chiếu co thành điểm.
 
 
 **Ví dụ**
 
-**Đề bài:** Cho đường u=(3;0;4) và mặt có pháp tuyến n=(0;0;1). Tính góc đường–mặt.
+**Đề bài:** Cho đường có vectơ chỉ phương \(\vec u=(3;0;4)\) và mặt có pháp tuyến \(\vec n=(0;0;1)\). Tính góc đường–mặt.
 
-**Lời giải:** u·n=4, |u|=5, |n|=1 nên sinθ=4/5, suy ra θ≈53,13°. Nếu dùng cosθ=4/5 thì được 36,87°, là góc với pháp tuyến, không phải góc đường–mặt. Nếu u·n=0 thì θ=0° (đường song song hoặc nằm trong mặt).
+**Lời giải:** \(\vec u\cdot\vec n=4,\ |\vec u|=5,\ |\vec n|=1\), nên \(\sin\theta=\frac45\), suy ra \(\theta\approx53{,}13^\circ\). Nếu dùng cos bằng \(\frac45\) thì được \(36{,}87^\circ\), là góc không tù với phương pháp tuyến, không phải góc đường–mặt. Nếu \(\vec u\cdot\vec n=0\) thì \(\theta=0^\circ\) (đường song song hoặc nằm trong mặt).
 
 **Vận dụng**
 
-Đường có hướng (0,0,1), mặt z=0. Góc đường–mặt?
+Đường có hướng \((0;0;1)\), mặt \(z=0\). Góc đường–mặt bằng bao nhiêu?
 
 <!-- ITEM_ID: THPT-TOP18-T32; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O32 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-90° vì hướng đường trùng pháp tuyến.
+\(90^\circ\) vì hướng đường trùng phương pháp tuyến, nên hình chiếu của đường co thành một điểm. Công thức cho \(\sin\theta=1\).
 
 **Kiểm lỗi**
 
-Góc giữa đường và mặt **phụ** với góc nhọn giữa hướng đường và pháp tuyến; dùng sinθ=|u·n|/(|u||n|). Quay về **Kiến thức 6.2**, sau đó tự giải **Bài luyện 156** và **Bài luyện 159** trong Luyện tập.
+Góc giữa đường và mặt **phụ** với góc không tù giữa hướng đường và phương pháp tuyến; dùng \(\sin\theta=\frac{|\vec u\cdot\vec n|}{|\vec u||\vec n|}\). Quay về **Kiến thức 6.2**, sau đó tự giải **Bài luyện 156** và **Bài luyện 159** trong Luyện tập.
 
 </details>
 
@@ -1404,32 +1404,32 @@ Bán kính thiết diện không luôn bằng R; trước hết lấy d từ tâ
 
 <!-- LESSON_ID: TOP18-M23; OUTCOME_ID: TOP18-O23; S1_ORIGINAL_OUTCOME: G12-CHV-B14-O07; SCOPE: OPTIONAL_AFTER_B17 -->
 
-**Mở rộng sau khi đã học mặt cầu.** Khi cắt mặt cầu bằng mặt phẳng, chỉ cần so khoảng cách d từ tâm C đến mặt phẳng với bán kính R: d>R không cắt, d=R tiếp xúc, d<R cho đường tròn bán kính √(R²−d²). Đây là ứng dụng kết hợp khoảng cách điểm–mặt với tính chất mặt cầu.
+**Mở rộng sau khi đã học mặt cầu.** Khi cắt mặt cầu bằng mặt phẳng, chỉ cần so khoảng cách d từ tâm C đến mặt phẳng với bán kính R: \(d>R\) không cắt, \(d=R\) tiếp xúc, \(d<R\) cho đường tròn bán kính \(\sqrt{R^2-d^2}\). Đây là ứng dụng kết hợp khoảng cách điểm–mặt với tính chất mặt cầu.
 
 > **Kiến thức cần ghi nhớ**
 >
-> Với mặt cầu tâm C bán kính R>0 và mặt phẳng cách tâm d≥0, nếu d<R thiết diện là đường tròn bán kính \(\sqrt{R^2-d^2}\); d=R tiếp xúc một điểm; d>R không cắt.
+> Với mặt cầu tâm C bán kính \(R>0\) và mặt phẳng cách tâm \(d\ge0\), nếu \(d<R\), thiết diện là đường tròn bán kính \(\sqrt{R^2-d^2}\); \(d=R\) tiếp xúc một điểm; \(d>R\) không cắt.
 
 
 **Ví dụ**
 
-**Đề bài:** Cho mặt cầu tâm C(1;−2;3), bán kính 13 và mặt phẳng z=8. Xác định tâm, bán kính thiết diện và giải thích vì sao điều kiện d<R quan trọng.
+**Đề bài:** Cho mặt cầu tâm \(C(1;-2;3)\), bán kính 13 và mặt phẳng \((P):z=8\). Xác định tâm, bán kính thiết diện và giải thích vì sao điều kiện \(d<R\) quan trọng.
 
-**Lời giải:** Chân đường vuông góc từ tâm C xuống mặt z=8 là H(1;−2;8), nên d(C,(P))=5<13. Mặt cắt là đường tròn tâm H với bán kính r=√(13²−5²)=√144=12. Độ dài r không phải bán kính cầu 13, vì mặt phẳng không qua tâm. Bài kết hợp phương pháp khoảng cách điểm–mặt và kiến thức mặt cầu.
+**Lời giải:** Chân đường vuông góc từ tâm C xuống mặt \((P)\) là \(H(1;-2;8)\), nên \(d(C,(P))=5<13\). Mặt cắt là đường tròn tâm H với bán kính \(r=\sqrt{13^2-5^2}=\sqrt{144}=12\). Độ dài r không phải bán kính cầu 13, vì mặt phẳng không qua tâm.
 
 **Vận dụng**
 
-Mặt cầu tâm O R=4, mặt z=4 cắt theo hình gì?
+Mặt cầu tâm O, \(R=4\), mặt \(z=4\) cắt theo hình gì?
 
 <!-- ITEM_ID: THPT-TOP18-T23; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O23 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Tiếp xúc một điểm (0,0,4), vì d=R.
+Tiếp xúc tại một điểm \((0;0;4)\), vì \(d=R\).
 
 **Kiểm lỗi**
 
-Đây là phần tự chọn sau khi học mặt cầu. Chỉ dùng so d với R khi có mặt cầu với R>0 và khoảng cách d≥0; d=R là tiếp xúc một điểm. Quay về **Kiến thức 8.1**, sau đó tự giải **Bài luyện 203** và **Bài luyện 207** trong Luyện tập.
+Chỉ dùng cách so sánh d với R khi có mặt cầu với \(R>0\) và khoảng cách \(d\ge0\); \(d=R\) là tiếp xúc một điểm. Quay về **Kiến thức 8.1**, sau đó tự giải **Bài luyện 203** và **Bài luyện 207** trong Luyện tập.
 
 </details>
 
