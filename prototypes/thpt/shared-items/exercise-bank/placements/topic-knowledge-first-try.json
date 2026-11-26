@@ -1499,5 +1499,359 @@
     "order": 12,
     "item_id": "THPT-TOP03-KFT12",
     "outcome_id": "TOP03-O12"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-TOP04-KFT01",
+    "outcome_id": "TOP04-O01"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-TOP04-KFT02",
+    "outcome_id": "TOP04-O02"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-TOP04-KFT03",
+    "outcome_id": "TOP04-O03"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-TOP04-P05",
+    "outcome_id": "TOP04-O04",
+    "source_context": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M04",
+      "locator": "1.4. Quy tắc lũy thừa và điều kiện sử dụng / Vận dụng",
+      "line": 155,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_REUSE_TOPIC_PRACTICE_ID",
+      "remediation": "Đọc lại Kiến thức 1.4, làm Bài 9 và Bài 6: đổi căn sang mũ hữu tỉ, kiểm cơ số dương và quy tắc cộng/trừ số mũ.",
+      "practice_orders": [
+        9,
+        6
+      ],
+      "original_practice_orders": [
+        17,
+        9
+      ],
+      "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    }
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-TOP04-P06",
+    "outcome_id": "TOP04-O05",
+    "source_context": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M05",
+      "locator": "2.1. Định nghĩa lôgarit qua câu hỏi ngược / Vận dụng",
+      "line": 201,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_REUSE_TOPIC_PRACTICE_ID",
+      "remediation": "Nếu nhầm lôgarit âm với đối số âm, kiểm đối số dương rồi đổi sang lũy thừa; ôn Kiến thức 2.1, làm Bài 19 và Bài 20.",
+      "practice_orders": [
+        19,
+        20
+      ],
+      "original_practice_orders": [
+        29,
+        19,
+        20
+      ],
+      "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    }
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-TOP04-KFT06",
+    "outcome_id": "TOP04-O06"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 7,
+    "item_id": "THPT-TOP04-P09",
+    "outcome_id": "TOP04-O07",
+    "source_context": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M07",
+      "locator": "2.3. Các quy tắc tính lôgarit / Vận dụng",
+      "line": 261,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_REUSE_TOPIC_PRACTICE_ID",
+      "remediation": "Ôn Kiến thức 2.3; kiểm điều kiện từng đối số và phân biệt quy tắc tích/thương với phép cộng/trừ đối số. Làm Bài 22 và Bài 23.",
+      "practice_orders": [
+        22,
+        23
+      ],
+      "original_practice_orders": [
+        22,
+        32
+      ],
+      "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    }
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 8,
+    "item_id": "THPT-TOP04-KFT08",
+    "outcome_id": "TOP04-O08"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 9,
+    "item_id": "THPT-TOP04-P13",
+    "outcome_id": "TOP04-O09",
+    "source_context": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M09",
+      "locator": "3.1. Miền, giá trị và đồ thị hàm mũ / Vận dụng",
+      "line": 342,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_REUSE_TOPIC_PRACTICE_ID",
+      "remediation": "Ôn Kiến thức 3.1 rồi làm Bài 36 và Bài 46; phân biệt tiệm cận ngang với điểm thuộc đồ thị.",
+      "practice_orders": [
+        36,
+        46
+      ],
+      "original_practice_orders": [
+        36,
+        46
+      ],
+      "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    }
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 10,
+    "item_id": "THPT-TOP04-KFT10",
+    "outcome_id": "TOP04-O10"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 11,
+    "item_id": "THPT-TOP04-KFT11",
+    "outcome_id": "TOP04-O11"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 12,
+    "item_id": "THPT-TOP04-KFT12",
+    "outcome_id": "TOP04-O12"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 13,
+    "item_id": "THPT-TOP04-KFT13",
+    "outcome_id": "TOP04-O13"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 14,
+    "item_id": "THPT-TOP04-KFT14",
+    "outcome_id": "TOP04-O14"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 15,
+    "item_id": "THPT-TOP04-P19",
+    "outcome_id": "TOP04-O15",
+    "source_context": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M15",
+      "locator": "4.3. Bất phương trình mũ và chiều so sánh / Vận dụng",
+      "line": 554,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_REUSE_TOPIC_PRACTICE_ID",
+      "remediation": "Nếu giữ chiều khi cơ số nhỏ hơn 1, kiểm x=4; ôn Kiến thức 4.3 rồi làm Bài 53 và Bài 57.",
+      "practice_orders": [
+        53,
+        57
+      ],
+      "original_practice_orders": [
+        62,
+        53,
+        57
+      ],
+      "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    }
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 16,
+    "item_id": "THPT-TOP04-KFT16",
+    "outcome_id": "TOP04-O16"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 17,
+    "item_id": "THPT-TOP04-KFT17",
+    "outcome_id": "TOP04-O17"
+  },
+  {
+    "collection": "TOPIC:CD04:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 18,
+    "item_id": "THPT-TOP04-KFT18",
+    "outcome_id": "TOP04-O18"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-TOP05-KFT01",
+    "outcome_id": "TOP05-O01"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-TOP05-KFT02",
+    "outcome_id": "TOP05-O02"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-TOP05-KFT03",
+    "outcome_id": "TOP05-O03"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-TOP05-KFT04",
+    "outcome_id": "TOP05-O04"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-TOP05-KFT05",
+    "outcome_id": "TOP05-O05"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-TOP05-KFT06",
+    "outcome_id": "TOP05-O06"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 7,
+    "item_id": "THPT-TOP05-P14",
+    "outcome_id": "TOP05-O07",
+    "source_context": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M07",
+      "locator": "2.3. Chẵn, lẻ và miền đối xứng / Vận dụng",
+      "line": 245,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_REUSE_TOPIC_PRACTICE_ID",
+      "remediation": "Thay −x vào toàn bộ biểu thức và kiểm miền đối xứng; ôn Kiến thức 2.3 rồi làm Bài 14.",
+      "practice_orders": [
+        14
+      ],
+      "original_practice_orders": [
+        14,
+        15
+      ],
+      "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    }
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 8,
+    "item_id": "THPT-TOP05-KFT08",
+    "outcome_id": "TOP05-O08"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 9,
+    "item_id": "THPT-TOP05-KFT09",
+    "outcome_id": "TOP05-O09"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 10,
+    "item_id": "THPT-TOP05-KFT10",
+    "outcome_id": "TOP05-O10"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 11,
+    "item_id": "THPT-TOP05-KFT11",
+    "outcome_id": "TOP05-O11"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 12,
+    "item_id": "THPT-TOP05-KFT12",
+    "outcome_id": "TOP05-O12"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 13,
+    "item_id": "THPT-TOP05-KFT13",
+    "outcome_id": "TOP05-O13"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 14,
+    "item_id": "THPT-TOP05-KFT14",
+    "outcome_id": "TOP05-O14"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 15,
+    "item_id": "THPT-TOP05-KFT15",
+    "outcome_id": "TOP05-O15"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 16,
+    "item_id": "THPT-TOP05-KFT16",
+    "outcome_id": "TOP05-O16"
+  },
+  {
+    "collection": "TOPIC:CD05:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 17,
+    "item_id": "THPT-TOP05-KFT17",
+    "outcome_id": "TOP05-O17"
   }
 ]
