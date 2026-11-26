@@ -14,9 +14,9 @@
     "problem_type_id": "TOP10-HIEU_ONG_BIEN_NGHICH_BIEN_THEO_THU_TU_AU_V",
     "difficulty": "BASIC_TO_APPLY",
     "hints": [
-      "Chọn hai số bất kỳ x₁<x₂ rồi xét hiệu f(x₂)−f(x₁)."
+      "Chọn \\(x_1<x_2\\) bất kỳ trong đoạn rồi xét \\(f(x_2)-f(x_1)\\)."
     ],
-    "remediation": "Đừng nhầm hệ số góc âm với giá trị hàm âm. Nếu còn lẫn, chọn hai điểm trong đoạn và so f(x₁), f(x₂). Ôn TOP10-M01; luyện THPT-G12-CHI-B01-C01.",
+    "remediation": "Đừng nhầm hệ số góc âm với giá trị hàm âm; so \\(f(x_1)\\) và \\(f(x_2)\\). Ôn TOP10-M01; luyện THPT-G12-CHI-B01-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -32,8 +32,8 @@
     "item_id": "THPT-TOP10-P02",
     "content_version": 2,
     "stem": "\\(f=x^2-4x\\), tìm khoảng tăng giảm.",
-    "answer_key": "\\(f'=2x-4\\): giảm \\((-\\infty;2)\\), tăng \\((2;\\infty)\\).",
-    "worked_solution": "Đa thức xác định trên ℝ. \\(f'(x)=2x-4=2(x-2)\\), âm với x<2, bằng 0 ở 2 và dương với x>2. Vì thế f giảm trên \\((-\\infty;2)\\), tăng trên \\((2;\\infty)\\), đạt cực tiểu tại \\(x=2\\).",
+    "answer_key": "Nghịch biến trên \\((-\\infty;2)\\), đồng biến trên \\((2;+\\infty)\\).",
+    "worked_solution": "Đa thức xác định trên \\(\\mathbb R\\). \\(f'(x)=2(x-2)\\) âm khi \\(x<2\\), bằng 0 tại 2 và dương khi \\(x>2\\). Vì vậy f nghịch biến trên \\((-\\infty;2)\\), đồng biến trên \\((2;+\\infty)\\).",
     "skill_ids": [
       "G12-B01-DERIVATIVE_SIGN"
     ],
@@ -43,9 +43,9 @@
     "problem_type_id": "TOP10-LIEN_HE_DAU_AO_HAM_VA_CHIEU_BIEN_THIEN",
     "difficulty": "BASIC_TO_APPLY",
     "hints": [
-      "Phân tích f′=2(x−2); xét dấu hai phía của 2."
+      "Phân tích \\(f'(x)=2(x-2)\\); xét dấu hai phía của 2."
     ],
-    "remediation": "Nếu giải f'=0 nhưng bỏ bảng dấu, hãy thử x=1 và x=3 để nhận ra sự đổi chiều. Ôn TOP10-M02; luyện THPT-G12-CHI-B01-C02.",
+    "remediation": "Nếu chỉ giải \\(f'(x)=0\\), thử \\(x=1\\) và \\(x=3\\) để nhận ra dấu đạo hàm. Ôn TOP10-M02; luyện THPT-G12-CHI-B01-C02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -62,7 +62,7 @@
     "content_version": 2,
     "stem": "\\(f(x)=\\frac1{x+1}\\): tìm các khoảng nghịch biến.",
     "answer_key": "\\((-\\infty;-1)\\), \\((-1;+\\infty)\\), không gộp qua \\(x=-1\\).",
-    "worked_solution": "Miền xác định \\(D=\\mathbb R\\setminus\\{-1\\}\\). \\(f'(x)=-\\frac1{(x+1)^2}<0\\) cho mọi x≠−1, nên f nghịch biến riêng trên \\((-\\infty;-1)\\) và \\((-1;+\\infty)\\). Không thể ghép qua \\(x=-1\\) vì tại đó không có giá trị hàm.",
+    "worked_solution": "Miền \\(D=\\mathbb R\\setminus\\{-1\\}\\). \\(f'(x)=-\\frac1{(x+1)^2}<0\\) khi \\(x\\ne-1\\), nên f nghịch biến trên từng khoảng \\((-\\infty;-1)\\) và \\((-1;+\\infty)\\). Không gộp qua điểm không xác định; so cả tập D cũng sai vì \\(-2<0\\) nhưng \\(f(-2)=-1<f(0)=1\\).",
     "skill_ids": [
       "G12-B01-DOMAIN_INTERVALS"
     ],
@@ -74,7 +74,7 @@
     "hints": [
       "Ghi điểm làm mẫu bằng 0 trước khi lập dấu đạo hàm."
     ],
-    "remediation": "Nếu gọi f giảm trên toàn D, thử x₁=−2 và x₂=0: f(−2)=−1<f(0)=1, trái điều kiện giảm cho hai điểm ở hai nhánh. Ôn TOP10-M03; luyện THPT-G12-CHI-B01-P01.",
+    "remediation": "Nếu gọi f giảm trên toàn D, thử \\(x_1=-2<x_2=0\\): \\(f(-2)=-1<f(0)=1\\), trái điều kiện giảm. Ôn TOP10-M03; luyện THPT-G12-CHI-B01-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -101,9 +101,9 @@
     "problem_type_id": "TOP10-CUC_TRI_IA_PHUONG_QUA_OI_DAU",
     "difficulty": "BASIC_TO_APPLY",
     "hints": [
-      "Giải f′=0, xét dấu ba khoảng rồi tính f tại hai nghiệm."
+      "Giải \\(f'(x)=0\\), xét dấu ba khoảng rồi tính f tại hai nghiệm."
     ],
-    "remediation": "Nếu chỉ nêu x=±2, hãy thêm bảng dấu f' để phân loại; nhớ kiểm giá trị của chính f tại các điểm đó. Ôn TOP10-M04; luyện THPT-G12-CHI-B01-P03.",
+    "remediation": "Nếu chỉ nêu \\(x=\\pm2\\), thêm bảng dấu đạo hàm và tính giá trị hàm. Ôn TOP10-M04; luyện THPT-G12-CHI-B01-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -119,8 +119,8 @@
     "item_id": "THPT-TOP10-P05",
     "content_version": 2,
     "stem": "\\(f=x^5\\) tại 0 có cực trị không?",
-    "answer_key": "Không, \\(f'=5x^4\\ge0\\) và f tăng qua0.",
-    "worked_solution": "\\(f'(x)=5x^4\\ge0\\) trên ℝ và f'(0)=0. Với \\(x_1<x_2\\) luôn \\(x_1^5<x_2^5\\), hàm tăng nghiêm ngặt trên ℝ; qua \\(x=0\\) không đổi từ tăng sang giảm hoặc ngược lại. Do đó 0 là điểm dừng nhưng không phải cực trị.",
+    "answer_key": "Không, \\(f'(x)=5x^4\\ge0\\) và f tăng nghiêm ngặt qua 0.",
+    "worked_solution": "\\(f'(x)=5x^4\\ge0\\) trên \\(\\mathbb R\\), \\(f'(0)=0\\). Với mọi \\(x_1<x_2\\), \\(x_1^5<x_2^5\\). Hàm tăng nghiêm ngặt, không đổi chiều tại 0; đó là điểm dừng chứ không phải cực trị.",
     "skill_ids": [
       "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
     ],
@@ -130,9 +130,9 @@
     "problem_type_id": "TOP10-_IEM_F_0_KHONG_U_TAO_CUC_TRI",
     "difficulty": "BASIC_TO_APPLY",
     "hints": [
-      "So dấu f′ hai phía 0; đừng chỉ nhìn f′(0)."
+      "So dấu \\(f'(x)\\) hai phía 0; đừng chỉ nhìn \\(f'(0)\\)."
     ],
-    "remediation": "Trường hợp f'(c)=0 mới là ứng viên. Hãy đối chiếu dấu f' hai phía c hoặc định nghĩa cực trị trong lân cận. Ôn TOP10-M05; luyện THPT-G12-CHI-B01-C04.",
+    "remediation": "Điều kiện \\(f'(c)=0\\) chỉ cho một ứng viên cực trị; kiểm dấu đạo hàm hai phía hoặc định nghĩa cực trị. Ôn TOP10-M05; luyện THPT-G12-CHI-B01-C04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -148,8 +148,8 @@
     "item_id": "THPT-TOP10-P06",
     "content_version": 2,
     "stem": "\\(s(t)=t^2-6t\\), \\(t\\ge0\\), khi nào đổi chiều?",
-    "answer_key": "v=2t−6 đổi dấu tại t=3, từ âm sang dương.",
-    "worked_solution": "Vận tốc có hướng v(t)=s'(t)=2t−6. Trên 0≤t<3 thì \\(v<0\\) nên vật chuyển động theo chiều âm; tại t=3 thì \\(v=0\\); với t>3 thì \\(v>0\\), vật theo chiều dương. Vậy đổi chiều ở t=3, không phụ thuộc dấu s(t).",
+    "answer_key": "Đổi chiều tại \\(t=3\\), từ chiều âm sang dương.",
+    "worked_solution": "\\(v(t)=s'(t)=2t-6\\). Với \\(0\\le t<3\\), v âm; tại \\(t=3\\), v bằng 0; với \\(t>3\\), v dương. Vật đổi chiều tại \\(t=3\\), không phụ thuộc dấu tọa độ.",
     "skill_ids": [
       "G12-B01-MOTION_CONTEXT"
     ],
@@ -159,9 +159,9 @@
     "problem_type_id": "TOP10-Y_NGHIA_DAU_AO_HAM_TRONG_CHUYEN_ONG",
     "difficulty": "APPLY",
     "hints": [
-      "Tính v=s′ và tìm thời điểm v đổi dấu trong miền t≥0."
+      "Tính \\(v(t)=s'(t)\\), tìm lúc v đổi dấu trong miền \\(t\\ge0\\)."
     ],
-    "remediation": "Nếu dùng dấu tọa độ s để kết luận chiều, hãy nhớ chiều chuyển động do v=s' quyết định. Ôn TOP10-M06; luyện THPT-G12-CHI-B01-A01.",
+    "remediation": "Chiều chuyển động do \\(v(t)=s'(t)\\) quyết định, không phải dấu tọa độ. Ôn TOP10-M06; luyện THPT-G12-CHI-B01-A01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -177,8 +177,8 @@
     "item_id": "THPT-TOP10-P07",
     "content_version": 2,
     "stem": "\\(f=x^3-3x\\) trên \\([-2;2]\\) GTLN/GTNN là gì?",
-    "answer_key": "So f(−2)=−2,\\(f(-1)=2\\),\\(f(1)=-2\\),\\(f(2)=2\\); GTLN2, GTNN−2, đạt tại nhiều điểm.",
-    "worked_solution": "Đạo hàm \\(f'=3(x^2-1)=0\\) tại ±1. Vì f liên tục trên \\([-2;2]\\), liệt kê hai đầu và hai điểm tới hạn: f(−2)=−2, \\(f(-1)=2\\), \\(f(1)=-2\\), \\(f(2)=2\\). Do đó GTLN bằng 2 tại −1 và 2; GTNN bằng −2 tại −2 và 1.",
+    "answer_key": "GTLN 2 tại \\(x=-1\\) và \\(x=2\\); GTNN -2 tại \\(x=-2\\) và \\(x=1\\).",
+    "worked_solution": "\\(f'(x)=3(x^2-1)\\) bằng 0 tại \\(x=\\pm1\\). Hàm liên tục trên \\([-2;2]\\) nên so \\(f(-2)=-2\\), \\(f(-1)=2\\), \\(f(1)=-2\\), \\(f(2)=2\\). Vậy GTLN 2 tại -1 và 2; GTNN -2 tại -2 và 1.",
     "skill_ids": [
       "G12-B02-EXTREMA_GLOBAL_MEANING"
     ],
@@ -188,9 +188,9 @@
     "problem_type_id": "TOP10-CUC_TRI_IA_PHUONG_VA_GIA_TRI_LON_NHAT_NHO_",
     "difficulty": "APPLY",
     "hints": [
-      "So giá trị tại hai đầu mút và hai nghiệm f′=0."
+      "So giá trị hai đầu mút và hai nghiệm \\(f'(x)=0\\)."
     ],
-    "remediation": "Cực đại địa phương chưa chắc là max toàn cục. Trên đoạn đóng phải so cả hai đầu mút. Ôn TOP10-M07; luyện THPT-G12-CHI-B02-P04.",
+    "remediation": "Cực đại địa phương chưa chắc là GTLN trên đoạn. So cả hai đầu mút. Ôn TOP10-M07; luyện THPT-G12-CHI-B02-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -206,8 +206,8 @@
     "item_id": "THPT-TOP10-P08",
     "content_version": 2,
     "stem": "\\(f=x^2+1\\) trên \\([-2;1]\\) tìm GTLN/GTNN.",
-    "answer_key": "GTLN5 tại−2, GTNN1 tại0.",
-    "worked_solution": "\\(f=x^2+1\\) liên tục trên \\([-2;1]\\), f'=2x=0 tại \\(x=0\\). Tính f(−2)=5, f(0)=1, f(1)=2; so ba giá trị cho GTLN=5 tại −2 và GTNN=1 tại 0.",
+    "answer_key": "GTLN 5 tại \\(x=-2\\); GTNN 1 tại \\(x=0\\).",
+    "worked_solution": "Hàm liên tục trên \\([-2;1]\\); \\(f'(x)=2x=0\\) tại \\(x=0\\). So \\(f(-2)=5\\), \\(f(0)=1\\), \\(f(1)=2\\). GTLN 5 tại -2, GTNN 1 tại 0.",
     "skill_ids": [
       "G12-B02-CLOSED_INTERVAL_EXISTENCE"
     ],
@@ -219,7 +219,7 @@
     "hints": [
       "Kiểm tính liên tục trên đoạn đóng; xét hai đầu và điểm dừng."
     ],
-    "remediation": "Nếu chỉ xét f'=0, hãy bổ sung ngay hai đầu đoạn [−2,1] vào danh sách ứng viên. Ôn TOP10-M08; luyện THPT-G12-CHI-B02-C02.",
+    "remediation": "Nếu chỉ xét \\(f'(x)=0\\), bổ sung hai đầu mút \\([-2;1]\\). Ôn TOP10-M08; luyện THPT-G12-CHI-B02-C02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -235,8 +235,8 @@
     "item_id": "THPT-TOP10-P09",
     "content_version": 2,
     "stem": "\\(f=x^2-2x\\) trên \\([-1;3]\\), so điểm nào?",
-    "answer_key": "x=−1,1,3; f lần lượt3,−1,3 nên max3,min−1.",
-    "worked_solution": "\\(f=x^2-2x\\) liên tục trên \\([-1;3]\\); f'=2x−2=0 khi \\(x=1\\) nằm trong đoạn. Cần so f(−1)=3, f(1)=−1 và f(3)=3. GTLN=3 ở x=−1,3; GTNN=−1 ở \\(x=1\\).",
+    "answer_key": "So \\(x=-1,1,3\\); GTLN 3 tại -1 và 3, GTNN -1 tại 1.",
+    "worked_solution": "Hàm liên tục trên \\([-1;3]\\); \\(f'(x)=2x-2=0\\) tại \\(x=1\\). So \\(f(-1)=3\\), \\(f(1)=-1\\), \\(f(3)=3\\). GTLN 3 tại -1 và 3; GTNN -1 tại 1.",
     "skill_ids": [
       "G12-B02-CRITICAL_END_POINTS"
     ],
@@ -293,8 +293,8 @@
     "item_id": "THPT-TOP10-P11",
     "content_version": 2,
     "stem": "\\(f=-(x-6)^2+20\\), \\(x\\in[0;4]\\), GTLN?",
-    "answer_key": "f(4)=16 tại \\(x=4\\), không lấy 20 ở \\(x=6\\).",
-    "worked_solution": "Với \\(x\\in[0;4]\\), \\(f=20-(x-6)^2\\), f'(x)=−2(x−6)>0 vì x<6. Vậy f tăng trên toàn miền khả thi, đạt GTLN ở đầu phải \\(x=4\\): f(4)=20−4=16. Đỉnh \\(x=6\\) nằm ngoài miền.",
+    "answer_key": "\\(f(4)=16\\) là GTLN, không lấy 20 ở \\(x=6\\).",
+    "worked_solution": "Với \\(x\\in[0;4]\\), \\(f'(x)=-2(x-6)>0\\), nên hàm tăng trên miền khả thi. GTLN tại \\(x=4\\): \\(f(4)=20-(4-6)^2=16\\). Đỉnh \\(x=6\\) ngoài miền.",
     "skill_ids": [
       "G12-B02-CONSTRAINED_DOMAIN"
     ],
@@ -304,9 +304,9 @@
     "problem_type_id": "TOP10-GIA_TRI_LON_NHAT_TREN_MIEN_CO_RANG_BUOC",
     "difficulty": "APPLY",
     "hints": [
-      "Đặt đỉnh x=6 và đoạn [0;4] trên trục số."
+      "Đặt đỉnh \\(x=6\\) và đoạn \\([0;4]\\) trên trục số."
     ],
-    "remediation": "Nếu nghiệm f'=0 ngoài miền, loại nó trước khi so; tối ưu luôn gắn với điều kiện khả thi. Ôn TOP10-M11; luyện THPT-G12-CHI-B02-P03.",
+    "remediation": "Nếu nghiệm \\(f'(x)=0\\) ngoài miền, loại trước khi so. Ôn TOP10-M11; luyện THPT-G12-CHI-B02-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -322,8 +322,8 @@
     "item_id": "THPT-TOP10-P12",
     "content_version": 2,
     "stem": "Hai cạnh kề của một hình chữ nhật có tổng độ dài 9 m. Tìm kích thước để diện tích lớn nhất và tính diện tích đó.",
-    "answer_key": "Hai cạnh \\(4{,}5\\) m và \\(4{,}5\\) m, diện tích \\(20{,}25\\) m².",
-    "worked_solution": "Đặt hai cạnh x và y>0 (m), ràng buộc x+y=9 nên y=9−x và 0<x<9. Diện tích \\(S=x(9-x)=\\frac{81}4-(x-\\frac92)^2\\le\\frac{81}4\\); đẳng thức khi \\(x=y=\\frac92=4{,}5\\) m. Vậy diện tích lớn nhất 20,25 m².",
+    "answer_key": "Hai cạnh đều \\(4{,}5\\,\\mathrm m\\); diện tích \\(20{,}25\\,\\mathrm{m^2}\\).",
+    "worked_solution": "Đặt hai cạnh x và y dương (m). \\(x+y=9\\) nên \\(y=9-x\\), \\(0<x<9\\). \\(S=x(9-x)=\\frac{81}4-(x-\\frac92)^2\\le\\frac{81}4\\). Dấu bằng khi \\(x=y=\\frac92\\), thỏa điều kiện. Diện tích lớn nhất \\(20{,}25\\,\\mathrm{m^2}\\).",
     "skill_ids": [
       "G12-B02-OPTIMIZATION_MODEL"
     ],
@@ -351,8 +351,8 @@
     "item_id": "THPT-TOP10-P13",
     "content_version": 2,
     "stem": "\\(f=\\frac{5x+2}{x-7}\\), TCN?",
-    "answer_key": "y=5.",
-    "worked_solution": "Chia cả tử và mẫu cho x (khi |x| lớn): \\(f(x)=\\frac{5+\\frac2x}{1-\\frac7x}\\to5\\) khi \\(x\\to+\\infty\\) hoặc −∞. Bởi vậy tiệm cận ngang là đường y=5. Điểm x=7 loại miền, không ảnh hưởng kết luận ngang.",
+    "answer_key": "Tiệm cận ngang \\(y=5\\).",
+    "worked_solution": "Chia tử mẫu cho x khi \\(|x|\\) lớn: \\(f(x)=\\frac{5+\\frac2x}{1-\\frac7x}\\). Khi \\(x\\to\\pm\\infty\\), tử tiến tới 5, mẫu tới 1. Vậy \\(y=5\\) là tiệm cận ngang. \\(x=7\\) bị loại khỏi miền.",
     "skill_ids": [
       "G12-B03-HORIZONTAL_LIMIT"
     ],
@@ -380,8 +380,8 @@
     "item_id": "THPT-TOP10-P14",
     "content_version": 2,
     "stem": "\\(f=-\\frac2{x-3}\\), giới hạn hai phía quanh3?",
-    "answer_key": "Trái +∞, phải−∞; TCD \\(x=3\\).",
-    "worked_solution": "Khi \\(x\\to3^-\\), mẫu x−3 âm và tiến 0, tử −2 âm nên \\(\\frac{-2}{x-3}\\to+\\infty\\). Khi \\(x\\to3^+\\), mẫu dương rất nhỏ nên phân thức→−∞. Vậy \\(x=3\\) là tiệm cận đứng với hai nhánh ngược dấu.",
+    "answer_key": "\\(\\lim_{x\\to3^-}f(x)=+\\infty\\); \\(\\lim_{x\\to3^+}f(x)=-\\infty\\). Tiệm cận đứng \\(x=3\\).",
+    "worked_solution": "Khi \\(x\\to3^-\\), mẫu \\(x-3\\) âm và tiến tới 0, tử âm nên f tiến tới dương vô cực. Khi \\(x\\to3^+\\), mẫu dương và tiến tới 0 nên f tiến tới âm vô cực. Vậy \\(x=3\\) là tiệm cận đứng.",
     "skill_ids": [
       "G12-B03-VERTICAL_ONE_SIDED"
     ],
@@ -391,7 +391,7 @@
     "problem_type_id": "TOP10-TIEM_CAN_UNG_KIEM_GIOI_HAN_MOT_PHIA",
     "difficulty": "APPLY",
     "hints": [
-      "Xét dấu x−3 ở từng phía; tử âm."
+      "Xét dấu \\(x-3\\) ở từng phía; tử âm."
     ],
     "remediation": "Kiểm riêng dấu tử và mẫu ở mỗi phía điểm cấm; không viết '∞' không kèm dấu. Ôn TOP10-M14; luyện THPT-G12-CHI-B03-P02.",
     "rubric": null,
@@ -409,8 +409,8 @@
     "item_id": "THPT-TOP10-P15",
     "content_version": 2,
     "stem": "\\(f=\\frac{x^2+3x+1}{x+1}\\), TC xiên?",
-    "answer_key": "Chia được \\(x+2-\\frac1{x+1}\\), nên y=x+2.",
-    "worked_solution": "Chia đa thức: \\(x^2+3x+1=(x+1)(x+2)-1\\), nên \\(f=x+2-\\frac1{x+1}\\), x≠−1. Khi \\(x\\to\\pm\\infty\\), hiệu \\(f-(x+2)=-\\frac1{x+1}\\to0\\). Do đó tiệm cận xiên là y=x+2.",
+    "answer_key": "Tiệm cận xiên \\(y=x+2\\).",
+    "worked_solution": "\\(x^2+3x+1=(x+1)(x+2)-1\\). Với \\(x\\ne-1\\), \\(f(x)=x+2-\\frac1{x+1}\\). Khi \\(x\\to\\pm\\infty\\), \\(f(x)-(x+2)=-\\frac1{x+1}\\to0\\). Vậy \\(y=x+2\\) là tiệm cận xiên.",
     "skill_ids": [
       "G12-B03-OBLIQUE_REMAINDER"
     ],
@@ -438,8 +438,8 @@
     "item_id": "THPT-TOP10-P16",
     "content_version": 2,
     "stem": "\\(f=\\frac{x^2-1}{x-1}\\), \\(x\\ne1\\), loại gián đoạn?",
-    "answer_key": "Khử được, lim2; không TCD \\(x=1\\).",
-    "worked_solution": "\\(D=\\mathbb R\\setminus\\{1\\}\\). Với \\(x\\ne1\\), \\(f=\\frac{(x-1)(x+1)}{x-1}=x+1\\). Vì \\(\\lim_{x\\to1}f=2\\) hữu hạn, \\(x=1\\) là điểm khuyết khử được, không phải tiệm cận đứng. Không được tự bổ sung f(1)=2 vào hàm gốc.",
+    "answer_key": "Điểm khuyết có thể khử; \\(\\lim_{x\\to1}f(x)=2\\), không có tiệm cận đứng tại \\(x=1\\).",
+    "worked_solution": "\\(D=\\mathbb R\\setminus\\{1\\}\\). Với \\(x\\ne1\\), \\(f(x)=\\frac{(x-1)(x+1)}{x-1}=x+1\\). Giới hạn tại 1 bằng 2, hữu hạn; điểm khuyết có thể khử bằng cách bổ sung giá trị 2, không phải tiệm cận đứng. Hàm gốc vẫn không xác định tại 1.",
     "skill_ids": [
       "G12-B03-REMOVABLE_DISCONTINUITY"
     ],
@@ -449,9 +449,9 @@
     "problem_type_id": "TOP10-LO_KHU_UOC_KHONG_PHAI_TIEM_CAN_UNG",
     "difficulty": "APPLY",
     "hints": [
-      "Phân tích tử thành nhân tử, giữ điều kiện x≠1."
+      "Phân tích tử, giữ điều kiện \\(x\\ne1\\)."
     ],
-    "remediation": "Nếu thấy mẫu bằng0, hãy thử phân tích tử thành nhân tử và xét giới hạn sau rút trên miền hợp lệ. Ôn TOP10-M16; luyện THPT-G12-CHI-B03-C04.",
+    "remediation": "Nếu mẫu bằng 0, thử phân tích tử và xét giới hạn sau rút gọn trên miền hợp lệ. Ôn TOP10-M16; luyện THPT-G12-CHI-B03-C04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -467,8 +467,8 @@
     "item_id": "THPT-TOP10-P17",
     "content_version": 2,
     "stem": "\\(f=\\frac1{\\sqrt{x-2}}\\), miền và tiệm cận?",
-    "answer_key": "\\(D=(2;+\\infty)\\), TCD \\(x=2\\) từ bên phải.",
-    "worked_solution": "Biểu thức \\(\\frac1{\\sqrt{x-2}}\\) yêu cầu x−2>0 vì căn nằm ở mẫu, nên \\(D=(2;+\\infty)\\). Khi \\(x\\to2^+\\), mẫu dương tiến 0 và \\(f\\to+\\infty\\), do đó \\(x=2\\) là tiệm cận đứng một phía; không có giá trị thực ở x<2.",
+    "answer_key": "\\(D=(2;+\\infty)\\); tiệm cận đứng \\(x=2\\) (từ bên phải), tiệm cận ngang \\(y=0\\).",
+    "worked_solution": "Căn ở mẫu nên \\(x-2>0\\), tức \\(D=(2;+\\infty)\\). Khi \\(x\\to2^+\\), mẫu dương tiến tới 0 nên \\(\\lim_{x\\to2^+}f(x)=+\\infty\\); tiệm cận đứng \\(x=2\\). Khi \\(x\\to+\\infty\\), mẫu tiến tới dương vô cực nên \\(\\lim_{x\\to+\\infty}f(x)=0\\); tiệm cận ngang \\(y=0\\). Không xét bên trái 2 hoặc âm vô cực vì ngoài miền.",
     "skill_ids": [
       "G12-B03-DOMAIN_SIDED_LIMITS"
     ],
@@ -478,9 +478,9 @@
     "problem_type_id": "TOP10-MIEN_XAC_INH_QUYET_INH_TU_PHIA_NAO_LAY_GIO",
     "difficulty": "APPLY",
     "hints": [
-      "Căn nằm ở mẫu nên biểu thức dưới căn phải dương."
+      "Căn ở mẫu nên biểu thức dưới căn phải dương. Xét giới hạn ở đầu miền và dương vô cực."
     ],
-    "remediation": "Căn ở tử cho điều kiện ≥0, nhưng căn ở mẫu phải >0. Không tính giới hạn từ phía ngoài miền. Ôn TOP10-M17; luyện THPT-G12-CHI-B03-P04.",
+    "remediation": "Căn ở tử cho phép bằng 0, căn ở mẫu thì không. Xét cả tiệm cận đứng và ngang bằng giới hạn; không xét ngoài miền. Ôn TOP10-M17; luyện THPT-G12-CHI-B03-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -507,9 +507,9 @@
     "problem_type_id": "TOP10-_OC_HINH_VA_PHAN_BIET_TIEM_CAN_NGANG_UNG_X",
     "difficulty": "APPLY",
     "hints": [
-      "Xét giới hạn của f và của f−x ở vô cực."
+      "Xét giới hạn \\(f(x)\\) và \\(f(x)-x\\) ở vô cực."
     ],
-    "remediation": "Để tìm tiệm cận ngang, xét giới hạn chính f; để tìm xiên, xét hiệu với đường ax+b. Ôn TOP10-M18; luyện THPT-G12-CHI-B03-P06.",
+    "remediation": "Tiệm cận ngang xét giới hạn f; tiệm cận xiên xét hiệu \\(f(x)-(ax+b)\\). Ôn TOP10-M18; luyện THPT-G12-CHI-B03-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -525,8 +525,8 @@
     "item_id": "THPT-TOP10-P19",
     "content_version": 2,
     "stem": "\\(f=(x-2)^2\\), cực tiểu và giao Oy?",
-    "answer_key": "Min tại \\(x=2\\) \\(y=0\\); Oy tại(0,4).",
-    "worked_solution": "\\(f=(x-2)^2\\ge0\\) và bằng0 khi \\(x=2\\), nên cực tiểu (cũng là GTNN trên ℝ) tại \\((2;0)\\). Giao trục Oy lấy \\(x=0\\): f(0)=4 nên là \\((0;4)\\). Có thể kiểm f'=2(x−2) đổi dấu âm sang dương tại 2.",
+    "answer_key": "Cực tiểu tại \\(x=2\\), giá trị 0; giao Oy tại \\((0;4)\\).",
+    "worked_solution": "\\(f(x)=(x-2)^2\\ge0\\), bằng 0 tại \\(x=2\\), nên cực tiểu cũng là GTNN trên \\(\\mathbb R\\), điểm \\((2;0)\\). Giao Oy lấy \\(x=0\\): \\(f(0)=4\\), điểm \\((0;4)\\). \\(f'(x)=2(x-2)\\) đổi dấu âm sang dương tại 2.",
     "skill_ids": [
       "G12-B04-SURVEY_WORKFLOW",
       "G12-B04-INTERCEPTS_LIMITS",
@@ -538,9 +538,9 @@
     "problem_type_id": "TOP10-QUY_TRINH_KHAO_SAT_VA_VE_O_THI_CO_KY_LUAT",
     "difficulty": "APPLY",
     "hints": [
-      "Tìm x làm bình phương bằng 0; đặt x=0 để tìm giao Oy."
+      "Tìm x làm bình phương bằng 0; đặt \\(x=0\\) để tìm giao Oy."
     ],
-    "remediation": "Đọc 'giao Oy' nghĩa là x=0, không phải nghiệm f=0 (giao Ox). Ôn TOP10-M19; luyện THPT-G12-CHI-B04-C01.",
+    "remediation": "Giao Oy lấy \\(x=0\\), không phải nghiệm \\(f(x)=0\\). Ôn TOP10-M19; luyện THPT-G12-CHI-B04-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -555,9 +555,9 @@
   {
     "item_id": "THPT-TOP10-P20",
     "content_version": 2,
-    "stem": "Khảo sát hai cực trị của \\(f(x)=x^3-3x\\) trên ℝ.",
+    "stem": "Khảo sát hai cực trị của \\(f(x)=x^3-3x\\) trên \\(\\mathbb R\\).",
     "answer_key": "Cực đại địa phương \\((-1;2)\\), cực tiểu địa phương \\((1;-2)\\).",
-    "worked_solution": "Với \\(f(x)=x^3-3x\\), \\(f'=3(x-1)(x+1)\\). Dấu + trên \\((-\\infty;-1)\\), − trên \\((-1;1)\\), + trên \\((1;+\\infty)\\); vì vậy cực đại địa phương tại \\((-1;2)\\), cực tiểu địa phương tại \\((1;-2)\\). Đường cong bậc ba vẫn không bị chặn trên ℝ.",
+    "worked_solution": "\\(f'(x)=3(x-1)(x+1)\\) dương trên \\((-\\infty;-1)\\), âm trên \\((-1;1)\\), dương trên \\((1;+\\infty)\\). Cực đại tại \\(x=-1\\), giá trị 2; cực tiểu tại \\(x=1\\), giá trị -2. Hai điểm \\((-1;2)\\) và \\((1;-2)\\). Hàm không bị chặn trên \\(\\mathbb R\\).",
     "skill_ids": [
       "G12-B04-CUBIC_VARIATION"
     ],
@@ -567,9 +567,9 @@
     "problem_type_id": "TOP10-KHAO_SAT_A_THUC_BAC_BA_BANG_BANG_DAU",
     "difficulty": "APPLY",
     "hints": [
-      "Phân tích f′ rồi xét dấu quanh −1,1."
+      "Phân tích \\(f'(x)\\) rồi xét dấu quanh hai mốc -1 và 1."
     ],
-    "remediation": "Giải nghiệm f'=0 không đủ; dùng dấu để xác định +→− là cực đại, −→+ là cực tiểu. Ôn TOP10-M20; luyện THPT-G12-CHI-B04-P04.",
+    "remediation": "Giải \\(f'(x)=0\\) chưa đủ; dấu dương sang âm cho cực đại, âm sang dương cho cực tiểu. Ôn TOP10-M20; luyện THPT-G12-CHI-B04-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -585,8 +585,8 @@
     "item_id": "THPT-TOP10-P21",
     "content_version": 2,
     "stem": "\\(f=\\frac{3x-2}{x+1}\\), TCD,TCN?",
-    "answer_key": "\\(x=-1\\) (tử ở−1 là−5 khác0), \\(y=3\\).",
-    "worked_solution": "\\(D=\\mathbb R\\setminus\\{-1\\}\\). Với \\(f=\\frac{3x-2}{x+1}\\), tử tại \\(x=-1\\) bằng −5 khác0 nên \\(x=-1\\) là tiệm cận đứng (trái +∞, phải −∞). Chia \\(f=3-\\frac5{x+1}\\), phần dư→0 ở ±∞ nên \\(y=3\\) là tiệm cận ngang.",
+    "answer_key": "Tiệm cận đứng \\(x=-1\\); tiệm cận ngang \\(y=3\\).",
+    "worked_solution": "\\(D=\\mathbb R\\setminus\\{-1\\}\\). \\(f(x)=3-\\frac5{x+1}\\). Khi \\(x\\to-1^-\\), f tiến tới dương vô cực; khi \\(x\\to-1^+\\), f tiến tới âm vô cực. Vậy \\(x=-1\\) là tiệm cận đứng. Khi \\(x\\to\\pm\\infty\\), f tiến tới 3, nên \\(y=3\\) là tiệm cận ngang.",
     "skill_ids": [
       "G12-B03-VERTICAL_ONE_SIDED",
       "G12-B03-HORIZONTAL_LIMIT"
@@ -597,9 +597,9 @@
     "problem_type_id": "TOP10-KHAO_SAT_PHAN_THUC_HUU_TI_CO_IEM_CAM",
     "difficulty": "APPLY",
     "hints": [
-      "Viết f=3−5/(x+1); xét gần −1 và ở vô cực."
+      "Viết \\(f(x)=3-\\frac5{x+1}\\); xét gần \\(x=-1\\) và ở vô cực."
     ],
-    "remediation": "Nếu muốn biết hướng nhánh gần TCD, thay số sát −1 ở từng phía, không chỉ ghi vị trí mẫu bằng0. Ôn TOP10-M21; luyện THPT-G12-CHI-B04-C03.",
+    "remediation": "Xét dấu phân thức ở mỗi phía \\(x=-1\\) và giới hạn tương ứng. Ôn TOP10-M21; luyện THPT-G12-CHI-B04-C03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -615,8 +615,8 @@
     "item_id": "THPT-TOP10-P22",
     "content_version": 2,
     "stem": "\\(f=\\frac{x^2-4}{x-2}\\), \\(x\\ne2\\), giao Ox?",
-    "answer_key": "f=x+2 trên D nên giao tại \\(x=-2\\); \\(x=2\\) là lỗ, không giao.",
-    "worked_solution": "\\(f=\\frac{x^2-4}{x-2}\\), \\(D=\\mathbb R\\setminus\\{2\\}\\); rút trên D thành f=x+2. Giao Ox giải x+2=0 được \\(x=-2\\) thuộc D, nên điểm giao là \\((-2;0)\\). Điểm \\((2;4)\\) bị khuyết, không phải giao trục hay điểm trên đồ thị.",
+    "answer_key": "Giao Ox tại \\((-2;0)\\); điểm \\((2;4)\\) bị khuyết.",
+    "worked_solution": "\\(D=\\mathbb R\\setminus\\{2\\}\\). Trên D, \\(f(x)=\\frac{(x-2)(x+2)}{x-2}=x+2\\). Giao Ox giải \\(x+2=0\\) được \\(x=-2\\) thuộc D, điểm \\((-2;0)\\). Điểm \\((2;4)\\) không thuộc đồ thị.",
     "skill_ids": [
       "G12-B04-INTERCEPTS_LIMITS"
     ],
@@ -626,7 +626,7 @@
     "problem_type_id": "TOP10-GIAO_TRUC_GIOI_HAN_VA_IEM_AC_BIET_CUA_O_TH",
     "difficulty": "APPLY",
     "hints": [
-      "Rút gọn trên miền ban đầu, rồi kiểm nghiệm f=0."
+      "Rút gọn trên miền ban đầu, rồi kiểm nghiệm \\(f(x)=0\\)."
     ],
     "remediation": "Rút gọn biểu thức không mở rộng miền của hàm; luôn đối chiếu nghiệm với mẫu ban đầu. Ôn TOP10-M22; luyện THPT-G12-CHI-B04-C04.",
     "rubric": null,
@@ -645,7 +645,7 @@
     "content_version": 2,
     "stem": "\\(f=3-\\frac2{x+4}\\), tâm?",
     "answer_key": "\\(I(-4;3)\\).",
-    "worked_solution": "\\(f=3-\\frac2{x+4}\\) có TCD \\(x=-4\\) vì mẫu tiến0, TCN \\(y=3\\) vì phần phân thức→0 khi \\(|x|\\to\\infty\\). Phép tịnh tiến u=x+4,v=y−3 cho \\(v=-\\frac2u\\) đối xứng qua gốc, nên tâm đối xứng của đồ thị gốc là \\(I(-4;3)\\).",
+    "worked_solution": "Hai tiệm cận \\(x=-4\\) và \\(y=3\\). Tịnh tiến bằng \\(u=x+4\\), \\(v=y-3\\), được \\(v=-\\frac2u\\) với \\(u\\ne0\\). Thay u bằng -u thì v đổi thành -v, nên đồ thị mới đối xứng qua gốc. Tâm ban đầu \\(I(-4;3)\\).",
     "skill_ids": [
       "G12-B04-CENTER_SYMMETRY"
     ],
@@ -657,7 +657,7 @@
     "hints": [
       "Tịnh tiến gốc về giao hai tiệm cận; kiểm hai điểm đối nhau."
     ],
-    "remediation": "Tâm phân thức dạng b+k/(x−a) là giao hai tiệm cận (a,b), không phải giao trục tọa độ. Ôn TOP10-M23; luyện THPT-G12-CHI-B04-P01.",
+    "remediation": "Tâm đồ thị dạng \\(y=b+\\frac{k}{x-a}\\) với \\(k\\ne0\\) là giao hai tiệm cận \\((a;b)\\). Ôn TOP10-M23; luyện THPT-G12-CHI-B04-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -672,9 +672,9 @@
   {
     "item_id": "THPT-TOP10-P24",
     "content_version": 2,
-    "stem": "Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)<0 với x<0 và f'(x)>0 với \\(x>0\\), f(0)=4. Xác định cực trị tại \\(x=0\\).",
+    "stem": "Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, \\(f'(x)<0\\) khi \\(x<0\\) và \\(f'(x)>0\\) khi \\(x>0\\) trong lân cận đó, \\(f(0)=4\\). Xác định cực trị tại \\(x=0\\).",
     "answer_key": "Cực tiểu địa phương tại \\((0;4)\\).",
-    "worked_solution": "Theo giả thiết f' âm khi x<0 và dương khi \\(x>0\\); vì f liên tục tại 0 và f(0)=4, hàm giảm tới 0 rồi tăng, nên \\((0;4)\\) là điểm cực tiểu địa phương. Không đủ dữ kiện khẳng định đây là GTNN của toàn miền nếu còn nhánh khác.",
+    "worked_solution": "Đạo hàm âm ở trái và dương ở phải 0 trong lân cận đang xét. Vì f liên tục tại 0, hàm giảm tới 0 rồi tăng; cực tiểu địa phương tại \\(x=0\\), giá trị 4, điểm \\((0;4)\\). Không đủ dữ kiện kết luận GTNN toàn miền.",
     "skill_ids": [
       "G12-B04-READ_VARIATION_TABLE"
     ],
@@ -686,7 +686,7 @@
     "hints": [
       "Dùng dấu − sang + và giả thiết liên tục tại 0."
     ],
-    "remediation": "Bảng dấu âm→dương nghĩa là đồ thị đi xuống rồi đi lên. Kiểm giả thiết liên tục ở điểm chuyển dấu. Ôn TOP10-M24; luyện THPT-G12-CHI-B04-P02.",
+    "remediation": "Đạo hàm âm sang dương nghĩa là đồ thị đi xuống rồi đi lên. Kiểm tính liên tục tại điểm chuyển dấu. Ôn TOP10-M24; luyện THPT-G12-CHI-B04-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -743,9 +743,9 @@
     "problem_type_id": "TOP10-_AO_HAM_LA_TOC_O_BIEN_OI_CUC_BO_TRONG_UNG_",
     "difficulty": "APPLY",
     "hints": [
-      "Lấy đạo hàm theo q rồi thế q=2; ghi đơn vị."
+      "Lấy đạo hàm theo q rồi thế \\(q=2\\); ghi đơn vị."
     ],
-    "remediation": "Nếu đáp án vẫn chứa q, hãy thế q=2 sau khi đạo hàm; luôn ghi đơn vị của tốc độ cận biên. Ôn TOP10-M26; luyện THPT-G12-CHI-B05-C03.",
+    "remediation": "Nếu đáp án còn q, thế \\(q=2\\) sau khi đạo hàm và ghi đơn vị. Ôn TOP10-M26; luyện THPT-G12-CHI-B05-C03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -760,9 +760,9 @@
   {
     "item_id": "THPT-TOP10-P27",
     "content_version": 2,
-    "stem": "Cho v=3,a=−2, tốc độ thay đổi?",
+    "stem": "Cho vận tốc \\(v=3\\) và gia tốc \\(a=-2\\) tại một thời điểm. Tốc độ đang tăng hay giảm?",
     "answer_key": "Giảm vì \\(v\\cdot a<0\\).",
-    "worked_solution": "Tại thời điểm xét có v=3>0 và \\(a=-2<0\\). Vì v·a=−6<0, đạo hàm tốc độ \\(|v|\\) bằng a=−2 (khi v>0), nên tốc độ đang giảm. Gia tốc âm không luôn đồng nghĩa chậm dần nếu v cũng âm.",
+    "worked_solution": "Tại thời điểm xét, \\(v=3>0\\) và \\(a=-2<0\\). Vì v dương, tốc độ \\(|v|=v\\) có đạo hàm theo thời gian bằng a, đang âm. Vậy tốc độ giảm. Gia tốc âm không luôn đồng nghĩa chậm dần nếu v cũng âm.",
     "skill_ids": [
       "G12-B05-MOTION_SPEED_ACCELERATION"
     ],
@@ -772,7 +772,7 @@
     "problem_type_id": "TOP10-VAN_TOC_CO_HUONG_TOC_O_VA_GIA_TOC",
     "difficulty": "APPLICATION_TRANSFER",
     "hints": [
-      "Vì v≠0, so dấu v và a."
+      "Vì \\(v\\ne0\\), so dấu v và a."
     ],
     "remediation": "Để đánh giá tốc độ tăng/giảm, kiểm dấu v và a cùng lúc, không dùng riêng dấu gia tốc. Ôn TOP10-M27; luyện THPT-G12-CHI-B05-P02.",
     "rubric": null,
@@ -801,9 +801,9 @@
     "problem_type_id": "TOP10-CHI_PHI_CAN_BIEN_VA_QUYET_INH_KINH_TE",
     "difficulty": "APPLICATION_TRANSFER",
     "hints": [
-      "Tính riêng C′(2) và C(3)−C(2)."
+      "Tính riêng \\(C'(2)\\) và \\(C(3)-C(2)\\)."
     ],
-    "remediation": "Nếu ra 11 thay cho C'(2), bạn đã tính ΔC với Δq=1, không phải đạo hàm tại q=2. Ôn TOP10-M28; luyện THPT-G12-CHI-B05-P03.",
+    "remediation": "Nếu ra 11 thay cho \\(C'(2)\\), em đã tính \\(\\Delta C\\) với \\(\\Delta q=1\\), không phải đạo hàm tại \\(q=2\\). Ôn TOP10-M28; luyện THPT-G12-CHI-B05-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -818,9 +818,9 @@
   {
     "item_id": "THPT-TOP10-P29",
     "content_version": 2,
-    "stem": "Hình chữ nhật chu vi24m, một cạnh x có miền?",
-    "answer_key": "\\(0<x<12\\); cạnh kia 12−x.",
-    "worked_solution": "Hình chữ nhật chu vi24 m có 2(x+y)=24⇒x+y=12. Với hai cạnh đều dương, y=12−x>0 và \\(x>0\\) nên miền \\(0<x<12\\). Các đầu x=0,12 cho hình suy biến, không hợp lệ.",
+    "stem": "Hình chữ nhật có chu vi 24 m. Nếu một cạnh dài x mét, xác định miền giá trị của x.",
+    "answer_key": "\\(0<x<12\\); cạnh kia \\(12-x\\) mét.",
+    "worked_solution": "Gọi cạnh còn lại y (m). \\(2(x+y)=24\\) cho \\(y=12-x\\). Hai cạnh dương nên \\(x>0\\) và \\(12-x>0\\), tức \\(0<x<12\\). Hai đầu mút tạo hình suy biến.",
     "skill_ids": [
       "G12-B05-MODEL_VARIABLE_DOMAIN"
     ],
@@ -830,9 +830,9 @@
     "problem_type_id": "TOP10-XAC_INH_MIEN_CUA_MO_HINH_TOI_UU_THUC_TE",
     "difficulty": "APPLICATION_TRANSFER",
     "hints": [
-      "Viết 2(x+y)=24; cả hai cạnh dương."
+      "Viết \\(2(x+y)=24\\); cả hai cạnh dương."
     ],
-    "remediation": "Nếu cho 0≤x≤24, hãy chia chu vi cho2 và ghi điều kiện cạnh còn lại dương. Ôn TOP10-M29; luyện THPT-G12-CHI-B05-C04.",
+    "remediation": "Nếu cho \\(0\\le x\\le24\\), chia chu vi cho 2 và ghi điều kiện cạnh còn lại dương. Ôn TOP10-M29; luyện THPT-G12-CHI-B05-C04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -848,8 +848,8 @@
     "item_id": "THPT-TOP10-P30",
     "content_version": 2,
     "stem": "\\(P(x)=-(x-3)^2+7\\), \\(x\\in[0;2]\\), GTLN?",
-    "answer_key": "\\(x=2\\), P=6; đỉnh3 không hợp lệ.",
-    "worked_solution": "\\(f(x)=7-(x-3)^2\\), \\(x\\in[0;2]\\). Vì f'(x)=−2(x−3)>0 trên \\([0;2)\\), hàm tăng đến \\(x=2\\) và đạt GTLN f(2)=7−1=6. Đỉnh \\(x=3\\) cho giá trị7 nhưng nằm ngoài miền, không là phương án.",
+    "answer_key": "GTLN 6 tại \\(x=2\\); đỉnh \\(x=3\\) ngoài miền.",
+    "worked_solution": "\\(P(x)=7-(x-3)^2\\) trên \\([0;2]\\). \\(P'(x)=-2(x-3)>0\\) nên P tăng đến \\(x=2\\), đạt \\(P(2)=6\\). Đỉnh \\(x=3\\) cho 7 nhưng không khả thi.",
     "skill_ids": [
       "G12-B05-OPTIMIZATION_DERIVATIVE"
     ],
@@ -859,9 +859,9 @@
     "problem_type_id": "TOP10-_AO_HAM_E_TIM_TOI_UU_TRONG_MIEN",
     "difficulty": "APPLICATION_TRANSFER",
     "hints": [
-      "Xét đỉnh parabol có thuộc [0;2] không."
+      "Xét đỉnh có thuộc \\([0;2]\\) không."
     ],
-    "remediation": "Khi tối ưu có ràng buộc, hãy xét ứng viên f'=0 có thực sự nằm trong miền hay không. Ôn TOP10-M30; luyện THPT-G12-CHI-B05-P04.",
+    "remediation": "Xét ứng viên \\(P'(x)=0\\) có nằm trong miền khả thi không. Ôn TOP10-M30; luyện THPT-G12-CHI-B05-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -891,7 +891,7 @@
     "hints": [
       "Tìm cả đầu mút và điểm đạo hàm không tồn tại."
     ],
-    "remediation": "Nếu chỉ xét f′=0, điểm gấp khúc x=2 và hai đầu mút cũng là ứng viên. Ôn TOP10-M31; luyện THPT-G12-CHI-B01-P04 rồi THPT-G12-CHI-B02-C03.",
+    "remediation": "Nếu chỉ xét \\(f'(x)=0\\), điểm gấp khúc \\(x=2\\) và hai đầu mút cũng là ứng viên. Ôn TOP10-M31; luyện THPT-G12-CHI-B01-P04 rồi THPT-G12-CHI-B02-C03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -937,9 +937,9 @@
   {
     "item_id": "THPT-TOP10-P33",
     "content_version": 2,
-    "stem": "\\(f=-x^2+6x\\), max trên ℝ?",
-    "answer_key": "GTLN9 tại \\(x=3\\); không có GTNN.",
-    "worked_solution": "\\(f=-x^2+6x=9-(x-3)^2\\le9\\) với mọi x∈ℝ, bằng9 tại \\(x=3\\). Vậy GTLN=9. Khi \\(|x|\\to\\infty\\), \\(f\\to-\\infty\\) nên không có GTNN trên toàn ℝ; điều này phù hợp parabol mở xuống.",
+    "stem": "Cho \\(f(x)=-x^2+6x\\). Tìm giá trị lớn nhất trên \\(\\mathbb R\\).",
+    "answer_key": "GTLN 9 tại \\(x=3\\); không có GTNN.",
+    "worked_solution": "\\(f(x)=9-(x-3)^2\\le9\\) trên \\(\\mathbb R\\), bằng 9 tại \\(x=3\\). Khi \\(|x|\\to\\infty\\), f tiến tới âm vô cực, nên không có GTNN.",
     "skill_ids": [
       "G12-B02-EXTREMA_GLOBAL_MEANING"
     ],
@@ -949,7 +949,7 @@
     "problem_type_id": "TOP10-TONG_HOP_CHIEU_BIEN_THIEN_VA_CUC_TRI",
     "difficulty": "APPLICATION_TRANSFER",
     "hints": [
-      "Hoàn thành bình phương; xét khi |x| rất lớn."
+      "Hoàn thành bình phương; xét khi \\(|x|\\) rất lớn."
     ],
     "remediation": "Chứng minh GTLN bằng bình phương không âm; để phủ nhận GTNN, chỉ ra hàm không bị chặn dưới. Ôn TOP10-M33; luyện THPT-G12-CHI-B02-P04.",
     "rubric": null,
@@ -978,9 +978,9 @@
     "problem_type_id": "TOP10-TONG_HOP_TIEM_CAN_VA_OC_O_THI_HUU_TI",
     "difficulty": "APPLICATION_TRANSFER",
     "hints": [
-      "Rút gọn với x≠2 rồi tính giới hạn tại 2."
+      "Rút gọn với \\(x\\ne2\\) rồi tính giới hạn tại 2."
     ],
-    "remediation": "Đừng mặc định mẫu bằng0 là TCD; phân tích nhân tử và tính giới hạn một phía trước. Ôn TOP10-M34; luyện THPT-G12-CHI-B03-C04.",
+    "remediation": "Đừng mặc định mẫu bằng 0 là tiệm cận đứng; phân tích nhân tử và tính giới hạn một phía. Ôn TOP10-M34; luyện THPT-G12-CHI-B03-C04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -996,8 +996,8 @@
     "item_id": "THPT-TOP10-P35",
     "content_version": 2,
     "stem": "\\(P=-q^2+6q-2\\), \\(q\\in[0;4]\\), max ở đâu?",
-    "answer_key": "q=3, P=7; hai biên−2 và6 nhỏ hơn.",
-    "worked_solution": "\\(P(q)=-q^2+6q-2=7-(q-3)^2\\le7\\) cho \\(q\\in[0;4]\\). Vì q=3 thuộc miền nên GTLN=7 tại q=3. Kiểm hai biên P(0)=−2,P(4)=6 đều thấp hơn. Nếu q là số lượng nguyên thì q=3 cũng hợp lệ.",
+    "answer_key": "GTLN 7 tại \\(q=3\\).",
+    "worked_solution": "\\(P(q)=7-(q-3)^2\\le7\\) trên \\([0;4]\\). Dấu bằng tại \\(q=3\\) thuộc miền. Hai đầu mút \\(P(0)=-2\\), \\(P(4)=6\\) đều nhỏ hơn 7. Nếu q nguyên, 3 vẫn khả thi.",
     "skill_ids": [
       "G12-B05-UNIT_ASSUMPTION_CHECK"
     ],
@@ -1025,8 +1025,8 @@
     "item_id": "THPT-TOP10-P36",
     "content_version": 2,
     "stem": "\\(g(x)=1-(x-2)^2\\) trên miền \\((0;3)\\) có đạt GTLN/GTNN không?",
-    "answer_key": "GTLN=1 tại \\(x=2\\); không có GTNN (infimum −3 không đạt).",
-    "worked_solution": "Trên \\((0;3)\\), \\(g(x)=1-(x-2)^2\\le1\\) và bằng1 tại \\(x=2\\) thuộc miền, nên GTLN=1 đạt ở \\(x=2\\). Nhưng khi \\(x\\to0^+\\), \\(g\\to-3\\), và mọi \\(x\\in(0;3)\\) đều có g(x)>−3, nên không có GTNN (infimum −3). Miền mở vẫn có thể đạt max ở nội miền.",
+    "answer_key": "GTLN 1 tại \\(x=2\\); không có GTNN (cận dưới -3 không đạt).",
+    "worked_solution": "\\(g(x)=1-(x-2)^2\\le1\\), bằng 1 tại \\(x=2\\) thuộc miền. Với \\(x\\in(0;3)\\), \\(|x-2|<2\\) nên \\(g(x)>-3\\). Khi \\(x\\to0^+\\), g tiến tới -3. Vậy không có GTNN, dù GTLN đạt ở nội miền.",
     "skill_ids": [
       "G12-B02-OPEN_DOMAIN_NONATTAINMENT",
       "G12-B02-EXTREMA_GLOBAL_MEANING"
