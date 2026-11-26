@@ -1,3 +1,10 @@
+## CURRENT Q18 — CP18 · CĐ16 · A06 Work #1055 / #1109
+Learner `3e6f97091a814d7cee7096fd92cd448dd8900435`, source commit `ce59c2fa80fe3f79fed49fcdc253e15ff272927b`, A1 `6ca5bfc4941e67e7d7c30f5399755048fcf24cd3`. Official Work summary 7154191520 identifies two AUTHORING defects: O14 adds actual slope-angle FirstTry on height 3 and horizontal distance 4, ramp 5, tan=3/4 not sin=3/5; O21 feedback uses exact FirstTry side lengths 6:3 and area ratio 36:9=4:1 rather than unrelated 8:4. Clarified orthogonal projection of a point already in plane, distinction line vs segment projection, nondegenerate conditions and same-direction angle definition. 33/33 executed scoped numeric/geometry spot checks passed. X-G.5 all three learner pages: 481/481 inline pairs, three separated display blocks, zero residual raw-compound/slash scan; 87 balanced details, 86 canonical IDs, 65 Practice, 8/8 exact replay stems, 11 Written score sequences and marker lines unchanged. 41 original SGK IDs verified at exact current bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0`, four SVG and HTML model 931093557eb411b9f78286a92e6545dcbd59aa73 verified unchanged. Prior shared answer-label defect #054 owner-resolved; no old label remains. Historical original source afc8ec039213b87b4930f2d34d48c28d1fc6277f and S1 #710 SGK B22–25 pp27–53, SBT pp24–34 evidence inherited; no fresh PDF scan or independent NotebookLM verdict. Work tab label truncation, model browser and website QA remain RELEASE. Optional Work suggestion of separate SO/SM diagram not treated as a defect requiring a new SVG. AUTHOR_SELF_VERIFIED affected source only.
+
+---
+
+Earlier narrative evidence below is historical; current CP18 evidence and structured fields supersede earlier pointers.
+
 <!-- OWNER_APPROVED_SHARED_SGK_G11_B22_B27_DELTA_B_Q18_20261121 -->
 **CURRENT EXACT AUTHORING:** one CĐ16 learner `1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84`, current source-owner SGK B22–B27 bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` (**both Topic branches use same source blob**), current Q18 `self`, A1/Q15 `current`, V2 `current`. Original 33/41 G11 shared canonical Practice student-answer labels formerly `Đáp án sau Submit luyện tập`, misleading in direct voluntary Lời giải; now exact `Đáp án` in one **canonical source** (all 51 public SGK items same) and CĐ16 projection (33) + CĐ17 projection (18). **No stem, numeric key, mathematical reasoning, option, rubric, disclosure, final submit/mastery evaluator code changed**; one original G11 Q15 same-ID source bank, old `afc8ec039213b87b4930f2d34d48c28d1fc6277f` preserved in Git history. `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL`, affected source author self QA; no blanket independent NotebookLM PASS, no website/release/merge/deploy.
 ---
@@ -28,20 +35,20 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84
-SOURCE_BLOB: 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84
+ACADEMIC_SOURCE_BLOB: 3e6f97091a814d7cee7096fd92cd448dd8900435
+SOURCE_BLOB: 3e6f97091a814d7cee7096fd92cd448dd8900435
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 2324f83b982ccffd513c8ddb7f3666177aa70b8f
+AUTHOR_METADATA_BLOB: 6ca5bfc4941e67e7d7c30f5399755048fcf24cd3
 ORIGINAL_R01_SOURCE_BLOB: 0e934389ebfe239ace19cc23c5dedf9c23d8ebdc
 ORIGINAL_R02_EDITORIAL_CANDIDATE_BLOB: 60f69d43bfa3f4508e8c7a787bad517141f9b2b2
-ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
+ORIGINAL_SGK_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0
 INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-P2: 1
-AUTHOR_SIGNOFF: TOP16_MASTER974_21_D6_65_PRACTICE_20261121_9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
+P2: 0 (affected Work scope; historical shared label resolved by owner)
+AUTHOR_SIGNOFF: TOP16_WORK1055_A06_XG5_20261126_3e6f97091a814d7cee7096fd92cd448dd8900435
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -50,9 +57,9 @@ RELEASE_AUTHORIZATION: NO
 
 S1_RECEIPT: SGK Toán 11 KNTT Tập Hai, Chương VII B22 tr.27–30, B23 tr.31–37, B24 tr.38–43, B25 tr.44–53; SBT Tập Hai B22 tr.24–25, B23 tr.26–28, B24 tr.29–30, B25 tr.31–34. Dùng owner/historical G11 original-source receipt Git blob afc8ec039213b87b4930f2d34d48c28d1fc6277f và prior authoring PR #710; không nhận đã trực tiếp mở lại PDF SGK/SBT trong lượt R03. G11 B26–B27/CHVII-INTEGRATED thuộc CĐ17, không cộng vào CĐ16.
 OUTCOME_AUDIT: 21/21 TOP16-O01..O21 thuộc B22=4, B23=5, B24=5, B25=7; từng mục có diễn giải bản chất, điều kiện, định lí, Ví dụ với Đề bài và Lời giải tách độc lập, Vận dụng rồi tự mở Đối chiếu và hướng D6. Ma trận canonical item–outcome–role 86/86 không đổi; eight original Topic-only SGK skill reassignments remain as source-locked R01 metadata.
-MATH_VERIFICATION: CURRENT_O12_DIRECT_AUTHOR_MATH_CHECK_PASS: for (P):z=0, A=(0,0,2) OUTSIDE plane, H=(0,0,0) and B=(3,0,0) IN plane; AH direction (0,0,-2) perpendicular all in-plane directions, BH direction (3,0,0), c through H direction (0,1,0), c perpendicular BH and vector AB=(3,0,-2) dot direction c = 0. Correct application of three-perpendicular-lines theorem. The earlier 57/57 math/edge assertions and 51/51 source/parity checks belong to the PRIOR immutable signed R03 snapshot, not claimed newly run on this changed learner. Current 21 lesson / 86 Q15 ID / 8 replay / 4 SVG and unchanged Practice/Written stem/key/rubric source directly cross-checked; no formal proof for unseen cases.
-PED_VERIFICATION: Four connected discovery arcs from two line directions to perpendicular floor, roof slope/orthogonal projection, dihedral cross-section. 21 narrative why-and-condition explanations before appropriate formal statements, 21 standalone solved examples, 21 learner-try Vận dụng / optional Đối chiếu / D6, 65 learner-visible Practice questions (33 SGK +8 SGK Written +21 Topic P+3 Topic W), 8 public question-only selfchecks. Four original images with guided reading near lessons. Uses NotebookLM draft only as editorial inspiration with its incorrect ChVIII scope rejected; not independent reviewer verdict.
-CANONICAL_Q15: Exactly 86 unique PUBLIC IDs: 41 source-exact display-only original G11 ChVII SGK (33 D3 +8 Written/Anchor), 21 Topic FirstTry T01–T21, 21 Topic Practice P01–P21, 3 Topic Written W01–W03. Eight selfcheck public replay P02/P06/P09/P12/P14/P16/P18/P21 are existing placements, NOT new items. One canonical stem/key/solution/rubric per ID, original SGK source owner unchanged, 8 Topic-only semantic crosswalks preserved.
+MATH_VERIFICATION: 33/33 scoped numeric and geometry spot checks PASS; prior broader checks historical
+PED_VERIFICATION: Work O14/O21 verified; 21 outcomes preserved; X-G.5 three learner pages; four SVG and HTML model unchanged
+CANONICAL_Q15: 86 unique public IDs: 41 current original SGK +21 Topic FirstTry +21 Topic Practice +3 Topic Written; 65 Practice, 8 exact same-ID replay placements, 11 Written allocations preserved
 ASSESSMENT_Q16: Eight question-only public replay stems shown, no hint/key/correctness/rubric/AI Tutor before official Final Submit; it is `CLIENT_SELF_CHECK_NO_MASTERY` and never official Topic Readiness. Zero protected private RD1 questions/answers/rubrics uploaded, no Learner/Firebase updates, Final Submit rendering/submit engine belongs to RELEASE and is NOT claimed working.
 
 ## 21 outcome math and conditions from original R01, independently reconfirmed where changed
