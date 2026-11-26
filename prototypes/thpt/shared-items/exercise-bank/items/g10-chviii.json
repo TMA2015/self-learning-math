@@ -228,7 +228,7 @@
     "problem_type_id": null,
     "difficulty": "BASE",
     "hints": [
-      "Vai trò A/B/C khác nhau nên thứ tự quan trọng."
+      "Ba vị trí A, B, C khác nhau; đổi người giữa các vị trí tạo cách phân công mới."
     ],
     "rubric": null,
     "interaction": {
