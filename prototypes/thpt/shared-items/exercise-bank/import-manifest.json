@@ -19694,6 +19694,98 @@
       },
       "remaining": "CD07–12 semantic/notation residual review (138 records); shared SGK/source-owner reconciliation, FirstTry, Written/Anchor, skill/depth gaps. No full Academic/PED/browser PASS, conversion, merge/deploy.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp89": {
+      "scope": "CD07–09 residual local learner-visible fields after CP79; targeted X-G.5 and reasoning improvements",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "f7f271c2047fc871a98ba12855a64b5ac9a2dcd8",
+      "topics": [
+        {
+          "topic": "CD07",
+          "item_before": "2f2ef8483a62e39a434044b05df4c7e0675907fb",
+          "item_after": "0703e62ff5cb6aa28a388836591a0da71197cf18",
+          "item_commit": "cc3b14d42e82affd5cd04e53f4d172b75ed1a8e6",
+          "placement_blob": "6aa535191c10e5cd25e64cef75440a3ba9a00794",
+          "local_records_reviewed": 18,
+          "local_records_changed": 14,
+          "fields_changed": {
+            "hints": 12,
+            "remediation": 12,
+            "worked_solution": 1,
+            "answer_key": 0
+          },
+          "other_fields_unchanged": true,
+          "placement_unchanged": true,
+          "targeted_raw_math_scan_residual": 0,
+          "inline_and_display_delimiters_balanced": true,
+          "options_or_rubrics_present": 0,
+          "key_change_notation_only": []
+        },
+        {
+          "topic": "CD08",
+          "item_before": "dc90a8c7c46491eafaa239fedad0657dbf747f64",
+          "item_after": "10d082644f841f9bbcafa56f8b891133b0280ec7",
+          "item_commit": "a17ccdd3bb99e42743f741335239629915dc88dc",
+          "placement_blob": "397aa8601b45f6740408b192319e972a1a4138e6",
+          "local_records_reviewed": 18,
+          "local_records_changed": 12,
+          "fields_changed": {
+            "hints": 7,
+            "remediation": 12,
+            "worked_solution": 3,
+            "answer_key": 0
+          },
+          "other_fields_unchanged": true,
+          "placement_unchanged": true,
+          "targeted_raw_math_scan_residual": 0,
+          "inline_and_display_delimiters_balanced": true,
+          "options_or_rubrics_present": 0,
+          "key_change_notation_only": []
+        },
+        {
+          "topic": "CD09",
+          "item_before": "350c8687764bed8cd29c1876045e1863fcd3faa0",
+          "item_after": "6d57f0ac118cd705e972dae1ac41ee1cb279ae91",
+          "item_commit": "8eda084aeb7b6d5dae353bcf147791119100975a",
+          "placement_blob": "cf15dad3c0749780420e036d8cead61344e03e6a",
+          "local_records_reviewed": 32,
+          "local_records_changed": 25,
+          "fields_changed": {
+            "hints": 15,
+            "remediation": 20,
+            "worked_solution": 9,
+            "answer_key": 1
+          },
+          "other_fields_unchanged": true,
+          "placement_unchanged": true,
+          "targeted_raw_math_scan_residual": 0,
+          "inline_and_display_delimiters_balanced": true,
+          "options_or_rubrics_present": 0,
+          "key_change_notation_only": [
+            [
+              "THPT-TOP09-P29",
+              "\\(a(1)=-6\\,\\mathrm{m/s^2}\\)."
+            ]
+          ]
+        }
+      ],
+      "findings": [
+        "CD07 P03 explicitly compute requested first terms and derive shifted recurrence. CD08 P08 distinguish opposite one-sided infinities from a two-sided infinite limit, P13 show factorization and removable discontinuity criterion, P16 explicitly derive domain and endpoint right continuity. CD09 P02/P04/P08 show secant limit, one-sided difference quotients and tangent slope; P20 distinguish constant base 1 extension, P21 finish derivative formula, P29 unit notation only, P30 speed versus signed velocity, P31 explicit evaluations, P32 clarify first-order remainder. All 68 local records read, 51 changed; numerical keys unchanged.",
+        "No change to prior source/placement reconciliation or shared items. Targeted raw scan not exhaustive proof/rendering. No fresh S1 PDF or new independent review."
+      ],
+      "progress": {
+        "topics_scoped_practice_replay_review": 22,
+        "practice": 1479,
+        "replay": 338,
+        "residual_local_fields_revisited_cd01_cd09": 185,
+        "total_cd01_cd12_local_records": 255,
+        "local_records_revised_cumulative": 144,
+        "remaining_cd10_cd12_local_records": 70,
+        "remaining_cd10_cd12_prior_targeted_raw_flags": 47
+      },
+      "remaining": "CD10–12 local residuals; shared SGK/source-owner reconciliation, FirstTry, Written/Anchor, skill/depth gaps. No bank-wide Academic/PED/browser PASS, conversion, merge/deploy.",
+      "release_authorization": false
     }
   }
 }
