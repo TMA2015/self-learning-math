@@ -20161,6 +20161,63 @@
       ],
       "remaining": "G10 ChVI next; B12-P07 independent PED/integration pending; separately FirstTry/public selfcheck/Written and source-owner/depth checks.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp96": {
+      "scope": "SGK shared formative G10 ChVI B15–B18, 30 records: 29 lesson C/P items revised and THPT-CORE-QF01 reviewed unchanged; 18 separate TRY records excluded",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "b96f059f19941417f6033985bfa3bda26cfef3b7",
+      "source_projection": {
+        "paths": [
+          "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+          "docs/thpt-preview/sgk/core/ham-so-bac-hai.md"
+        ],
+        "current_main_and_import_blobs": [
+          "1223d4c2b574433479c5d222dbeff363718ee4bb",
+          "ff29cbee1f5566bb6eef9e352355e156400a17ac"
+        ],
+        "ids_match": 30,
+        "decision": "Preserve CP50/CP53 stronger variants and existing B16 core key values; no historical rollback."
+      },
+      "item_shard": {
+        "path": "items/g10-chvi.json",
+        "before": "814e7b82c5ed9e126ce16fbb948c480c234e0c8b",
+        "after": "9267f9fd228ab073ea70b6340b2f10382df6b772",
+        "commits": [
+          "3cee172d1222912ba15d578c74de109a4b510b69",
+          "026bc63b1eb83d69dd1a5bba75102938292a741a"
+        ]
+      },
+      "checks": {
+        "formative_reviewed": 30,
+        "formative_changed": 29,
+        "fields_changed": {
+          "stem": 21,
+          "answer_key": 28,
+          "worked_solution": 29,
+          "hints": 7,
+          "remediation": 27
+        },
+        "separate_first_try_unchanged": 18,
+        "core_qf01_unchanged": true,
+        "sgk_placement_blob": "240d485678b3182add1fb3acd7035e6fc9994e08",
+        "sgk_placements_for_reviewed_ids": 31,
+        "cd03_placement_blob": "5f82e5209ad573fdef25357bc7fc65948500e770",
+        "cd03_placements_for_reviewed_ids": 10,
+        "shared_public_first_try_placement": "B18-C01 is also SGK_FIRST_TRY; same canonical ID and answer, improved solution/notation; placement unchanged",
+        "metadata_and_interaction_unchanged": true,
+        "mcq_options_and_keys_unchanged": true,
+        "mcq_options_reviewed": 6,
+        "answer_meanings_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "arithmetic_and_example_checks_passed": 30,
+        "targeted_raw_math_scan_residual": 0
+      },
+      "findings": [
+        "B15 unique outputs/domain and tiered fees including endpoints; B16 parameter degeneracy, explicit range proof, restricted interval, accept any valid extra symmetric pair; B17 strict vs nonstrict and realistic positive dimensions; B18 radical equivalence with domain and verification. QF01 already valid, unchanged. No new graphics/rendering, fresh original SGK/SBT PDF, or full Academic/PED verdict."
+      ],
+      "remaining": "G10 ChVII next; separately FirstTry/public selfcheck/Written and depth/owner checks; B16 graph drawing instructions reviewed but no rendering QA.",
+      "release_authorization": false
     }
   }
 }
