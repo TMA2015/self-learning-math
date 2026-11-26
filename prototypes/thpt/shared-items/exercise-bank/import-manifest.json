@@ -1318,17 +1318,17 @@
     }
   ],
   "counts": {
-    "formative_items": 1880,
+    "formative_items": 1913,
     "written_references": 325,
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3995,
+    "placements": 4029,
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
     "legacy_combined_answer_items": 0,
-    "topic_knowledge_first_try": 244,
+    "topic_knowledge_first_try": 278,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
   },
@@ -18337,6 +18337,72 @@
       },
       "review_scope": "Scoped math and local task equivalence; no fresh primary SGK/SBT PDF, Written rubric audit or global duplicate scan. No bank-wide Academic/PED PASS.",
       "remaining": "CD06–13 remaining 170 blocks; confirmed skill mapping, RELEASE placement context integration, global uniqueness, full Practice/Replay parity, shared placements/depth/Written/SGK",
+      "release_authorization": false
+    },
+    "source_delta_reconciliation_cp73": {
+      "scope": "CD06–07 current learner unkeyed Vận dụng; compare Topic Practice and relevant SGK G11 ChI/II/V",
+      "baseline_commit": "8df448ab45a9a74c86e96470a30575790debaa68",
+      "item_commit": "289ae08ae2002b71225fd8a3d3b2a434be98fbfc",
+      "placement_commit": "119004e2ebcafd65c18047018b8090bc3afc2d63",
+      "sources": [
+        {
+          "topic": "CD06",
+          "learner_blob": "621afad176e6944f832746b231cbd9265e96bce2",
+          "blocks": 16,
+          "added": 15,
+          "reused": 1
+        },
+        {
+          "topic": "CD07",
+          "learner_blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+          "blocks": 18,
+          "added": 18,
+          "reused": 0
+        }
+      ],
+      "reused_existing_ids": [
+        {
+          "topic": "CD06",
+          "order": 6,
+          "id": "THPT-G11-B02-P01",
+          "d6_orders": [
+            12,
+            25
+          ]
+        }
+      ],
+      "reuse_note": "Same sin75 task, canonical solution explicitly uses 45+30. Source context and remediation on placement; canonical SGK unchanged. CD06 KFT12 vs SGK compound task with interval demand retained separately; CD07 KFT05 vs SGK bounds task differs in whether bound is attained. RELEASE handling of shared placements pending.",
+      "academic_changes": [
+        "CD06 KFT02 identity and sign, KFT03 arc length with units and absolute angle, KFT05 compare both sine values, KFT09 period formula, KFT10 show attained extrema.",
+        "CD07 KFT02 index domain, KFT06/KFT11 verify zero common difference/ratio via definitions, KFT08/14/15 explicit sequence type and requested sum, KFT13 both signs, KFT16–18 clarify compounding/timing/initial balance and no fees."
+      ],
+      "checks": {
+        "item_shard_after": "6735f22a98bdc638ee9730320093e12c52a632cf",
+        "placement_shard_after": "6a96cba868906b7b7f9ba381418cddae4fde9de3",
+        "existing_records_unchanged": 236,
+        "existing_first_try_placements_unchanged": 244,
+        "new_items": 33,
+        "new_placements": 34,
+        "unique_item_shard_records": 269,
+        "exact_one_new_item_placement": 33,
+        "d6_order_and_written_reference_resolved": 34,
+        "d6_self_reference_absent": 34,
+        "inline_and_display_math_delimiters_balanced_new_items": 33,
+        "auto_grade_false": 34,
+        "skill_tags_missing_new_items": 0,
+        "skill_note": "All new items mapped to existing relevant tags; 18 new items from CP71–72 still pending mapping."
+      },
+      "progress": {
+        "topic_first_try_placements": 278,
+        "distinct_topic_first_try_shard_records": 269,
+        "total_inventoried_topic_first_try_blocks": 414,
+        "pending": 136,
+        "projected_bank_total_ids": 2411,
+        "projected_total_placements": 4029,
+        "counts_note": "CP72 projected 2378/3995 +33/+34; not fresh global scan"
+      },
+      "review_scope": "Scoped math/source/local task comparison and D6 link resolution; no fresh primary PDF, Written rubric audit or full global duplicate scan. No bank-wide Academic/PED PASS.",
+      "remaining": "CD08–13 remaining 136 blocks; existing skill mapping, shared placement integration, global uniqueness and Practice/Replay parity, depth/Written/SGK",
       "release_authorization": false
     }
   }
