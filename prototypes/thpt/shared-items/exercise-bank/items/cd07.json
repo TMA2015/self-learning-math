@@ -14,9 +14,9 @@
     "problem_type_id": "TOP07-FINITE_INDEX",
     "difficulty": "BASIC",
     "hints": [
-      "Thế đúng từng chỉ số trong tập {0;1;2;3}."
+      "Thế đúng từng chỉ số trong tập \\(\\{0;1;2;3\\}\\)."
     ],
-    "remediation": "Nếu ghi a₄, kiểm miền chỉ số, không phải cứ thay vào biểu thức được là thuộc dãy. Ôn TOP07-M01; luyện THPT-G11-B05-C01.",
+    "remediation": "Nếu ghi \\(a_4\\), kiểm miền chỉ số. Tính được giá trị biểu thức tại một chỉ số ngoài miền không có nghĩa giá trị ấy thuộc dãy. Ôn TOP07-M01; luyện THPT-G11-B05-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -43,9 +43,9 @@
     "problem_type_id": "TOP07-EXPLICIT_MEMBERSHIP",
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Để xét có số hạng bằng 1/2, giải phương trình theo n nguyên dương."
+      "Để xét có số hạng bằng \\(\\frac12\\), giải phương trình theo n nguyên dương."
     ],
-    "remediation": "Nếu nhận 1/2 vì gần giới hạn, giải phương trình chính xác rồi kiểm n nguyên dương. Ôn TOP07-M02; luyện THPT-G11-B05-P01.",
+    "remediation": "Nếu nhận \\(\\frac12\\) vì gần giới hạn, giải phương trình chính xác rồi kiểm n nguyên dương. Ôn TOP07-M02; luyện THPT-G11-B05-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -62,7 +62,7 @@
     "content_version": 1,
     "stem": "Dãy \\(u_1=4,\\ u_{n+1}=2u_n-1\\). Tìm \\(u_2,u_3,u_4\\) và chứng minh công thức \\(u_n=3\\cdot2^{n-1}+1\\).",
     "answer_key": "\\(u_2=7,\\ u_3=13,\\ u_4=25;\\ u_n=3\\cdot2^{n-1}+1\\).",
-    "worked_solution": "Đặt \\(v_n=u_n-1\\), khi đó \\(v_{n+1}=2v_n\\) và \\(v_1=3\\), suy ra \\(v_n=3\\cdot2^{n-1}\\). Hoặc quy nạp: công thức đúng \\(n=1\\), thay vào truy hồi cho \\(n+1\\) đúng.",
+    "worked_solution": "Từ truy hồi, \\(u_2=2\\cdot4-1=7\\), \\(u_3=2\\cdot7-1=13\\), \\(u_4=2\\cdot13-1=25\\). Để tìm công thức tổng quát, đặt \\(v_n=u_n-1\\). Khi đó \\(v_{n+1}=u_{n+1}-1=2u_n-2=2v_n\\) và \\(v_1=3\\). Vậy v là cấp số nhân công bội 2, có \\(v_n=3\\cdot2^{n-1}\\). Suy ra \\(u_n=3\\cdot2^{n-1}+1\\) với mọi n nguyên dương.",
     "skill_ids": [
       "G11-B05-RECURRENCE"
     ],
@@ -72,9 +72,9 @@
     "problem_type_id": "TOP07-RECURRENCE_CLOSED",
     "difficulty": "APPLY",
     "hints": [
-      "Đặt v_n=u_n−1 để triệt tiêu hằng số truy hồi."
+      "Đặt \\(v_n=u_n-1\\) để triệt tiêu hằng số truy hồi."
     ],
-    "remediation": "Nếu nhầm 2u_n−1 thành 2(u_n−1), khai triển; kiểm v_{n+1}=2v_n. Ôn TOP07-M03; luyện THPT-G11-B05-P02.",
+    "remediation": "Nếu nhầm \\(2u_n-1\\) thành \\(2(u_n-1)\\), khai triển và kiểm \\(v_{n+1}=2v_n\\). Ôn TOP07-M03; luyện THPT-G11-B05-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -101,9 +101,9 @@
     "problem_type_id": "TOP07-MONOTONIC_PROOF",
     "difficulty": "APPLY",
     "hints": [
-      "Tính u_{n+1}−u_n với n bất kỳ."
+      "Tính \\(u_{n+1}-u_n\\) với n bất kỳ."
     ],
-    "remediation": "Nếu chỉ xét vài số đầu, chứng minh hiệu dương với mọi n≥1. Ôn TOP07-M04; luyện THPT-G11-B05-P03.",
+    "remediation": "Nếu chỉ xét vài số đầu, chứng minh hiệu dương với mọi \\(n\\ge1\\). Ôn TOP07-M04; luyện THPT-G11-B05-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -130,9 +130,9 @@
     "problem_type_id": "TOP07-BOUNDS_SHARP",
     "difficulty": "APPLY",
     "hints": [
-      "Viết u_n=2−3/(n+2) rồi xét cận của phân số."
+      "Viết \\(u_n=2-\\frac3{n+2}\\) rồi xét cận của phân số."
     ],
-    "remediation": "Nếu cho u_n=2 tại một n hữu hạn, kiểm 3/(n+2)>0. Ôn TOP07-M05; luyện THPT-G11-B05-P08.",
+    "remediation": "Nếu cho \\(u_n=2\\) tại một n hữu hạn, kiểm \\(\\frac3{n+2}>0\\). Ôn TOP07-M05; luyện THPT-G11-B05-P08.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -159,7 +159,7 @@
     "problem_type_id": "TOP07-AP_CONSTANT_DIFF",
     "difficulty": "BASIC",
     "hints": [
-      "Tính hiệu u_{n+1}−u_n với n bất kỳ, không chỉ bốn số đầu."
+      "Tính \\(u_{n+1}-u_n\\) với n bất kỳ, không chỉ bốn số đầu."
     ],
     "remediation": "Nếu kết luận chỉ từ vài số đầu, kiểm hiệu tổng quát hoặc tìm một cách nối tiếp khác. Ôn TOP07-M06; luyện THPT-G11-B06-P02.",
     "rubric": null,
@@ -190,7 +190,7 @@
     "hints": [
       "Đếm số bước từ 1 đến 20."
     ],
-    "remediation": "Nếu dùng 20 bước, viết u_1 rồi u_2=u_1+d, suy ra 19 bước. Ôn TOP07-M07; luyện THPT-G11-B06-C02.",
+    "remediation": "Nếu dùng 20 bước, viết \\(u_1\\) rồi \\(u_2=u_1+d\\), suy ra 19 bước từ số hạng thứ nhất đến số hạng thứ 20. Ôn TOP07-M07; luyện THPT-G11-B06-C02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -219,7 +219,7 @@
     "hints": [
       "Lấy hiệu hai số hạng chia số bước."
     ],
-    "remediation": "Nếu chia 18 cho 11 hoặc 5, đếm 11−5=6 bước. Ôn TOP07-M08; luyện THPT-G11-B06-P01.",
+    "remediation": "Nếu chia 18 cho 11 hoặc 5, đếm \\(11-5=6\\) bước. Ôn TOP07-M08; luyện THPT-G11-B06-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -246,9 +246,9 @@
     "problem_type_id": "TOP07-AP_SUM",
     "difficulty": "APPLY",
     "hints": [
-      "Tìm u_15 rồi ghép số hạng đầu và cuối."
+      "Tìm \\(u_{15}\\) rồi ghép số hạng đầu và cuối."
     ],
-    "remediation": "Nếu lấy 15d thay 14d, tính u_15 rồi kiểm S_15. Ôn TOP07-M09; luyện THPT-G11-B06-P07.",
+    "remediation": "Nếu lấy \\(15d\\) thay \\(14d\\), đếm lại số bước, tính \\(u_{15}\\) rồi kiểm \\(S_{15}\\). Ôn TOP07-M09; luyện THPT-G11-B06-P07.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -304,7 +304,7 @@
     "problem_type_id": "TOP07-GP_SIGN_RATIO",
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Kiểm định nghĩa u_{n+1}=qu_n với mọi n; công bội âm làm dấu luân phiên."
+      "Kiểm định nghĩa \\(u_{n+1}=qu_n\\) với mọi n; công bội âm làm dấu luân phiên."
     ],
     "remediation": "Nếu bỏ dấu âm của q, kiểm tích với số hạng trước. Ôn TOP07-M11; luyện THPT-G11-B07-P07.",
     "rubric": null,
@@ -333,9 +333,9 @@
     "problem_type_id": "TOP07-GP_NTH",
     "difficulty": "APPLY",
     "hints": [
-      "Đếm n−1 lần nhân và xét chẵn/lẻ số mũ."
+      "Đếm \\(n-1\\) lần nhân và xét tính chẵn/lẻ của số mũ."
     ],
-    "remediation": "Nếu tính (−2)^6, kiểm số mũ n−1=5. Ôn TOP07-M12; luyện THPT-G11-B07-P01.",
+    "remediation": "Nếu tính \\((-2)^6\\), kiểm số mũ \\(n-1=5\\). Ôn TOP07-M12; luyện THPT-G11-B07-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -362,9 +362,9 @@
     "problem_type_id": "TOP07-GP_REVERSE",
     "difficulty": "TRANSFER",
     "hints": [
-      "Chia hai số hạng khác 0; giải q²=9 đủ hai dấu."
+      "Chia hai số hạng khác 0; giải \\(q^2=9\\) đủ hai nghiệm."
     ],
-    "remediation": "Nếu lấy q=3 duy nhất, nhớ căn của q² có hai dấu và thử lại. Ôn TOP07-M13; luyện THPT-G11-B07-P05.",
+    "remediation": "Nếu chỉ lấy \\(q=3\\), nhớ phương trình \\(q^2=9\\) còn nghiệm \\(q=-3\\); kiểm cả hai cặp. Ôn TOP07-M13; luyện THPT-G11-B07-P05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -391,9 +391,9 @@
     "problem_type_id": "TOP07-GP_SUM_FINITE",
     "difficulty": "APPLY",
     "hints": [
-      "Kiểm riêng q=1 trước khi dùng công thức thương."
+      "Kiểm riêng \\(q=1\\) trước khi dùng công thức thương."
     ],
-    "remediation": "Nếu chia 1−q khi q=1, dùng tổng n số hạng bằng nhau. Ôn TOP07-M14; luyện THPT-G11-B07-P04.",
+    "remediation": "Nếu chia cho \\(1-q\\) khi \\(q=1\\), dùng tổng n số hạng bằng nhau. Ôn TOP07-M14; luyện THPT-G11-B07-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -420,9 +420,9 @@
     "problem_type_id": "TOP07-GP_INFINITE_REMAINDER",
     "difficulty": "TRANSFER",
     "hints": [
-      "Tính tổng riêng bằng công thức hữu hạn; tổng vô hạn chỉ dùng khi |q|<1."
+      "Tính tổng riêng bằng công thức hữu hạn; công thức tổng vô hạn dùng khi \\(|q|<1\\)."
     ],
-    "remediation": "Nếu coi tổng riêng là tổng vô hạn, kiểm q^n và dấu của phần dư. Ôn TOP07-M15; luyện THPT-G11-CHV-B15-P06.",
+    "remediation": "Nếu coi tổng riêng là tổng vô hạn, kiểm \\(q^n\\) và dấu của phần dư. Ôn TOP07-M15; luyện THPT-G11-CHV-B15-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
