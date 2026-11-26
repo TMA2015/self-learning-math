@@ -1397,16 +1397,16 @@
   {
     "item_id": "THPT-G12-B13-C02",
     "content_version": "G12-SGK-CHIV-B11-B13-R00",
-    "stem": "Tính diện tích giữa \\(y=x\\) và Ox trên [-2;2].",
-    "answer_key": "4 đơn vị diện tích.",
-    "worked_solution": "Phía trái Ox có tung độ âm, phía phải có tung độ dương. Hai tam giác đều có đáy 2, chiều cao 2 nên mỗi diện tích là 2. Tổng là 4, cũng bằng \\(\\int_{-2}^2|x|\\,\\mathrm dx\\).",
+    "stem": "Tính diện tích hình phẳng giới hạn bởi \\(y=x^2-4\\), trục Ox và hai đường \\(x=0,\\ x=3\\).",
+    "answer_key": "\\(\\frac{23}{3}\\) đơn vị diện tích.",
+    "worked_solution": "Trên đoạn [0;3], đồ thị cắt Ox tại x=2. Khi \\(0\\le x<2\\), \\(x^2-4<0\\); khi \\(2<x\\le3\\), \\(x^2-4>0\\). Vì vậy \\(S=\\int_0^2(4-x^2)\\,\\mathrm dx+\\int_2^3(x^2-4)\\,\\mathrm dx\\). Phần thứ nhất bằng \\(8-\\frac83=\\frac{16}{3}\\); phần thứ hai bằng \\((9-12)-(\\frac83-8)=\\frac73\\). Cộng lại được \\(S=\\frac{23}{3}\\). Không lấy trị tuyệt đối sau khi cộng hai tích phân có dấu.",
     "skill_ids": [
       "G12-CHIV-B13-O02"
     ],
     "problem_type_id": null,
     "difficulty": "1",
     "hints": [
-      "Chia tại 0; tính riêng phần dưới và trên Ox."
+      "Tìm nghiệm của \\(x^2-4=0\\) thuộc [0;3], xét dấu rồi tách diện tích."
     ],
     "rubric": null,
     "interaction": {
@@ -1423,7 +1423,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu tích phân có dấu bằng 0, hai phần triệt tiêu. Tính diện tích bằng tích phân của \\(|x|\\). Ôn Toán 12 Bài 13; luyện THPT-TOP11-P16."
+    "remediation": "Nếu chỉ tích phân trên [0;3] rồi lấy trị tuyệt đối, phần âm và dương đã bù trừ nhau. Tách tại x=2 và cộng diện tích dương. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P16."
   },
   {
     "item_id": "THPT-G12-B13-P02",
