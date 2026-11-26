@@ -14,9 +14,9 @@
     "problem_type_id": "TOP08-FINITE_LIMIT",
     "difficulty": "BASIC",
     "hints": [
-      "Tìm khoảng cách |u_n−5| và điều kiện chỉ số."
+      "Tìm khoảng cách \\(|u_n-5|\\) và điều kiện chỉ số."
     ],
-    "remediation": "Nếu coi giới hạn phải là số hạng, giải 4/n=0 rồi kiểm n hữu hạn. Ôn TOP08-M01; luyện THPT-G11-CHV-B15-C01.",
+    "remediation": "Nếu coi giới hạn phải là số hạng, giải \\(\\frac4n=0\\) rồi kiểm n hữu hạn. Khi tìm chỉ số nhỏ nhất, phân biệt nhỏ hơn và nhỏ hơn hoặc bằng. Ôn TOP08-M01; luyện THPT-G11-CHV-B15-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -72,9 +72,9 @@
     "problem_type_id": "TOP08-GEOMETRIC_QN",
     "difficulty": "APPLY",
     "hints": [
-      "So |q| với 1, không chỉ xét dấu q."
+      "So \\(|q|\\) với 1, không chỉ xét dấu q."
     ],
-    "remediation": "Nếu q âm khiến em kết luận không hội tụ, xét |q| và độ lớn từng số hạng. Ôn TOP08-M03; luyện THPT-TOP08-P02.",
+    "remediation": "Nếu q âm khiến em kết luận không hội tụ, xét \\(|q|\\) và độ lớn từng số hạng. Ôn TOP08-M03; luyện THPT-TOP08-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -101,9 +101,9 @@
     "problem_type_id": "TOP08-SEQUENCE_LEADING_POWERS",
     "difficulty": "APPLY",
     "hints": [
-      "Chia tử mẫu cho n²; kiểm mẫu giới hạn."
+      "Chia tử và mẫu cho \\(n^2\\); kiểm giới hạn của mẫu."
     ],
-    "remediation": "Nếu chia cho n thay n², viết từng số hạng sau chia; kiểm mẫu tiến về số khác 0. Ôn TOP08-M04; luyện THPT-G11-CHV-B15-P01.",
+    "remediation": "Nếu chia cho n thay \\(n^2\\), viết từng số hạng sau khi chia; kiểm mẫu tiến về số khác 0. Ôn TOP08-M04; luyện THPT-G11-CHV-B15-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -132,7 +132,7 @@
     "hints": [
       "Tìm công bội và lấy giới hạn tổng riêng."
     ],
-    "remediation": "Nếu dùng công thức khi |q|≥1, kiểm q^n có tiến về 0 không. Ôn TOP08-M05; luyện THPT-G11-CHV-B15-P06.",
+    "remediation": "Nếu dùng công thức tổng cấp số nhân vô hạn khi \\(|q|\\ge1\\), kiểm \\(q^n\\) có tiến về 0 không. Với số hạng đầu khác 0, điều này là điều kiện cần để có tổng hữu hạn. Ôn TOP08-M05; luyện THPT-G11-CHV-B15-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -159,9 +159,9 @@
     "problem_type_id": "TOP08-PUNCTURED_NEIGHBORHOOD",
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Phân tích tử, chỉ khử nhân tử khi x≠2."
+      "Phân tích tử, chỉ khử nhân tử khi \\(x\\ne2\\)."
     ],
-    "remediation": "Nếu thế x=2 sau khi khử và ghi f(2), phân biệt biểu thức rút gọn trong lân cận với giá trị hàm ban đầu. Ôn TOP08-M06; luyện THPT-G11-CHV-B16-C01.",
+    "remediation": "Nếu thế \\(x=2\\) sau khi khử và ghi \\(f(2)\\), phân biệt biểu thức rút gọn trong lân cận với giá trị hàm ban đầu. Ôn TOP08-M06; luyện THPT-G11-CHV-B16-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -190,7 +190,7 @@
     "hints": [
       "Đọc công thức riêng ở mỗi phía điểm nối."
     ],
-    "remediation": "Nếu chỉ dùng nhánh chứa điểm nối, tính hai giới hạn riêng, không dùng f(1) thay giới hạn trái. Ôn TOP08-M07; luyện THPT-G11-CHV-B16-P03.",
+    "remediation": "Nếu chỉ dùng nhánh chứa điểm nối, tính hai giới hạn riêng, không dùng \\(f(1)\\) thay giới hạn trái. Ôn TOP08-M07; luyện THPT-G11-CHV-B16-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -207,7 +207,7 @@
     "content_version": 1,
     "stem": "Xét \\(f(x)=\\frac{x+1}{x-2}\\). Khi \\(x\\to2^-\\) và \\(x\\to2^+\\), \\(f(x)\\) tiến tới đâu? Có giới hạn hữu hạn hai phía không?",
     "answer_key": "Giới hạn trái −∞, phải +∞; không có giới hạn hai phía hữu hạn.",
-    "worked_solution": "Gần \\(x=2\\), tử \\(x+1\\to3>0\\). Mẫu \\(x-2\\) âm rất nhỏ từ trái ⇒ \\(f(x)\\to-\\infty\\); dương rất nhỏ từ phải ⇒ \\(f(x)\\to+\\infty\\). Không gộp hai vô cực khác dấu thành một giới hạn.",
+    "worked_solution": "Gần \\(x=2\\), tử \\(x+1\\) tiến tới \\(3>0\\). Khi \\(x\\to2^-\\), mẫu \\(x-2\\) âm và tiến tới 0 nên \\(\\lim_{x\\to2^-}f(x)=-\\infty\\). Khi \\(x\\to2^+\\), mẫu dương và tiến tới 0 nên \\(\\lim_{x\\to2^+}f(x)=+\\infty\\). Hai hướng cho hai kết quả khác dấu, do đó không có giới hạn hai phía, kể cả giới hạn vô cực.",
     "skill_ids": [
       "G11-B16-INFINITE_LIMIT"
     ],
@@ -219,7 +219,7 @@
     "hints": [
       "Xét dấu tử và mẫu theo từng phía."
     ],
-    "remediation": "Nếu bỏ dấu của mẫu, thử x=1,99 và x=2,01 rồi suy hướng. Ôn TOP08-M08; luyện THPT-G11-CHV-B16-P06.",
+    "remediation": "Nếu bỏ dấu của mẫu, thử \\(x=1{,}99\\) và \\(x=2{,}01\\) để nhận biết dấu, sau đó xét mẫu tiến về 0 từ mỗi phía. Ôn TOP08-M08; luyện THPT-G11-CHV-B16-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -246,9 +246,9 @@
     "problem_type_id": "TOP08-FUNCTION_INFINITY_EQUAL_DEGREE",
     "difficulty": "APPLY",
     "hints": [
-      "Chia cả tử và mẫu cho x²; xét riêng dấu và xu hướng của tử, mẫu."
+      "Chia cả tử và mẫu cho \\(x^2\\); xét riêng dấu và xu hướng của tử, mẫu."
     ],
-    "remediation": "Nếu lấy 4/2, kiểm bậc tử 3 lớn hơn bậc mẫu 2. Chia cả hai cho x², giữ số hạng 4x và xét dấu khi x→−∞. Ôn TOP08-M09; luyện THPT-G11-CHV-B16-P05.",
+    "remediation": "Nếu lấy \\(\\frac42\\), kiểm bậc tử 3 lớn hơn bậc mẫu 2. Chia cả hai cho \\(x^2\\), giữ số hạng \\(4x\\) và xét dấu khi \\(x\\to-\\infty\\). Ôn TOP08-M09; luyện THPT-G11-CHV-B16-P05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -275,9 +275,9 @@
     "problem_type_id": "TOP08-INDETERMINATE_FACTOR",
     "difficulty": "APPLY",
     "hints": [
-      "Thế thử để nhận dạng 0/0, phân tích nhân tử."
+      "Thế thử để nhận dạng vô định \\(\\frac00\\), phân tích nhân tử."
     ],
-    "remediation": "Nếu coi 0/0 là 0, khử nhân tử ở x≠3 rồi lấy giới hạn. Ôn TOP08-M10; luyện THPT-G11-CHV-B16-P02.",
+    "remediation": "Nếu coi \\(\\frac00\\) là 0, khử nhân tử ở \\(x\\ne3\\) rồi lấy giới hạn. Ôn TOP08-M10; luyện THPT-G11-CHV-B16-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -333,9 +333,9 @@
     "problem_type_id": "TOP08-ASYMPTOTIC_RADICAL",
     "difficulty": "TRANSFER",
     "hints": [
-      "Nhân liên hợp, dùng √(x²)=|x| theo từng hướng."
+      "Nhân liên hợp khi thích hợp; dùng \\(\\sqrt{x^2}=|x|\\) và xét dấu x theo từng hướng."
     ],
-    "remediation": "Nếu cho √(x²)=x ở cả hai hướng, viết |x| rồi xét từng trường hợp. Ôn TOP08-M12; luyện THPT-G11-CHV-B16-P04.",
+    "remediation": "Nếu cho \\(\\sqrt{x^2}=x\\) ở cả hai hướng, viết \\(|x|\\) rồi xét từng trường hợp. Ôn TOP08-M12; luyện THPT-G11-CHV-B16-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -352,7 +352,7 @@
     "content_version": 1,
     "stem": "\\(f(x)=\\frac{x^2-4}{x-2}\\) với \\(x\\ne2\\), \\(f(2)=k\\). Tìm k để f liên tục tại 2.",
     "answer_key": "\\(k=4\\).",
-    "worked_solution": "Trong lân cận \\(x\\ne2\\), \\(f=x+2\\) ⇒ \\(\\lim_{x\\to2}f(x)=4\\). Liên tục tại 2 đòi \\(f(2)\\) được định nghĩa và bằng giới hạn, nên \\(k=4\\); các k khác tạo gián đoạn có thể sửa được.",
+    "worked_solution": "Với \\(x\\ne2\\), phân tích tử cho \\(f(x)=\\frac{(x-2)(x+2)}{x-2}=x+2\\). Suy ra \\(\\lim_{x\\to2}f(x)=4\\). Điều kiện liên tục tại 2 là \\(f(2)=\\lim_{x\\to2}f(x)\\), tức \\(k=4\\). Nếu chọn k khác 4, chỉ cần sửa giá trị tại điểm 2 để khử gián đoạn.",
     "skill_ids": [
       "G11-B17-CONTINUITY_POINT"
     ],
@@ -364,7 +364,7 @@
     "hints": [
       "Tính giới hạn hai phía trước khi tìm tham số tại điểm."
     ],
-    "remediation": "Nếu chọn k trước khi tính giới hạn, rút gọn ngoài điểm rồi đối chiếu f(2). Ôn TOP08-M13; luyện THPT-G11-CHV-B17-P02.",
+    "remediation": "Nếu chọn k trước khi tính giới hạn, rút gọn ngoài điểm rồi đối chiếu \\(f(2)\\). Ôn TOP08-M13; luyện THPT-G11-CHV-B17-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -439,7 +439,7 @@
     "content_version": 1,
     "stem": "Tìm miền xác định và các khoảng/đoạn liên tục theo miền cho \\(f(x)=\\frac{\\sqrt{x-1}}{x-3}\\).",
     "answer_key": "\\(D=[1;3)\\cup(3;+\\infty)\\); liên tục trên mỗi thành phần theo nghĩa tương đối, tại \\(x=1\\) liên tục phải.",
-    "worked_solution": "Cần \\(x-1\\ge0\\) ⇒ \\(x\\ge1\\), đồng thời \\(x-3\\ne0\\) ⇒ \\(x\\ne3\\). Căn và phép chia liên tục nơi xác định; tại \\(x=1\\), \\(f(1)=\\frac0{-2}=0\\) và giới hạn phải cùng bằng 0. Không nói f liên tục xuyên điểm loại 3.",
+    "worked_solution": "Điều kiện căn \\(x-1\\ge0\\) tương đương \\(x\\ge1\\); điều kiện mẫu \\(x-3\\ne0\\) tương đương \\(x\\ne3\\). Giao hai điều kiện cho \\(D=[1;3)\\cup(3;+\\infty)\\). Căn và phép chia liên tục tại những điểm trong miền mà mẫu khác 0. Tại \\(x=1\\), \\(f(1)=0\\) và \\(\\lim_{x\\to1^+}f(x)=0\\), nên hàm liên tục phải. Không nói f liên tục qua điểm bị loại 3.",
     "skill_ids": [
       "G11-B17-CONTINUITY_OPERATIONS"
     ],
@@ -451,7 +451,7 @@
     "hints": [
       "Giao điều kiện căn với điều kiện mẫu khác 0."
     ],
-    "remediation": "Nếu bỏ điểm mẫu 0, thử thế x=3 vào mẫu và tách các khoảng. Ôn TOP08-M16; luyện THPT-G11-CHV-B17-P01.",
+    "remediation": "Nếu bỏ điểm mẫu bằng 0, thử thế \\(x=3\\) vào mẫu và tách các khoảng. Ôn TOP08-M16; luyện THPT-G11-CHV-B17-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
