@@ -20902,6 +20902,137 @@
       },
       "remaining": "G12 ChIV–VI next; keep separate FirstTry/public selfcheck/Written and source-owner/coverage reviews",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp104": {
+      "scope": "G12 ChIV–VI B11–B19: 180 canonical public Core/Practice/Application records; completes SGK 24-chapter reconciliation phase only",
+      "baseline_commit": "3555335f22e0997bb9636b4c803bf6396dfdd1a3",
+      "knowledge_source": {
+        "B11": "8ce272ea3bd2425c943b4ed9c642e229a659ffa0",
+        "B12": "ad7f4379832984d2ce30db269a59d8e0990b7e64",
+        "B13": "fb7d4173e0ed6376aa71bfaf53f70803a6bade5e",
+        "B14": "20d336fa969d51bfe047b287e8efa05398ecd97a",
+        "B15": "0c3550887f8101a8a83db9e6a26a0784028001e2",
+        "B16": "92e0bfa08d30927e170abde61519c17ffa042aa2",
+        "B17": "a1dc9094e7bd2701adf99c0716b2680df87a53a5",
+        "B18": "16e42fc19688b8c48269cf3d9c8a512274c62269",
+        "B19": "e1dc4c032e6f6dfc509b9c51949f0d845fdbafd9"
+      },
+      "source_projection": {
+        "paths": [
+          "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+          "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+          "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json"
+        ],
+        "current_main_blobs": [
+          "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+          "04478b7f379efb21377216b3543de656e2ace1f0",
+          "a5a96800c059dff9fbfa5393bd665c219c764060"
+        ],
+        "ids_and_order": 180
+      },
+      "item_shards": [
+        {
+          "path": "items/g12-chiv.json",
+          "before": "263e828f3dd8ea9f0641bc6a7ec3d75a1cd4f899",
+          "after": "0bb0a25b6e3f81d9bdc0247ef92b90db3833144e",
+          "reviewed": 66,
+          "changed": 66,
+          "other_unchanged": 6,
+          "fields": {
+            "stem": 66,
+            "worked_solution": 66,
+            "hints": 28,
+            "remediation": 17,
+            "answer_key": 46
+          }
+        },
+        {
+          "path": "items/g12-chv.json",
+          "before": "0a508a3d450f7bf662b67bc880ae4604bced6b7a",
+          "after": "902b2b0d994f23629c185caf633bbf6dc9132254",
+          "reviewed": 72,
+          "changed": 72,
+          "other_unchanged": 6,
+          "fields": {
+            "stem": 72,
+            "answer_key": 72,
+            "worked_solution": 72,
+            "hints": 15,
+            "remediation": 10
+          }
+        },
+        {
+          "path": "items/g12-chvi.json",
+          "before": "9c5283cd30e5e49d3ce70364b08e859dba4721dd",
+          "after": "0a16c169c3d28a4e1b9ef55de3be2361d8ae29de",
+          "reviewed": 42,
+          "changed": 42,
+          "other_unchanged": 4,
+          "fields": {
+            "stem": 42,
+            "answer_key": 42,
+            "worked_solution": 42,
+            "hints": 12,
+            "remediation": 7
+          }
+        }
+      ],
+      "checks": {
+        "manual_item_review": 180,
+        "changed": 180,
+        "stem_changed": 180,
+        "worked_solution_changed": 180,
+        "answer_presentation_changed": 160,
+        "hints_changed": 55,
+        "remediation_changed": 34,
+        "separate_firsttry_unchanged": 16,
+        "sgk_placement_blob": "8f1f02b762930fe937af785d2f63b00d9f0205ad",
+        "sgk_placements": 241,
+        "sgk_roles": {
+          "SGK_CORE": 60,
+          "SGK_PRACTICE": 60,
+          "SGK_APPLICATION": 60,
+          "CLIENT_SELF_CHECK_NO_MASTERY": 60,
+          "SGK_FIRST_TRY": 1
+        },
+        "optional_after_B17_preserved": [
+          "THPT-G12-B14-C07",
+          "THPT-G12-B14-P07",
+          "THPT-G12-B14-A07"
+        ],
+        "topic_placement_counts_checked": {
+          "CD11": 66,
+          "CD18": 72,
+          "CD21": 0
+        },
+        "all_placement_paths_unchanged_by_exact_diff": true,
+        "ids_order_and_metadata_unchanged": true,
+        "balanced_delimiters": true,
+        "control_characters": 0,
+        "targeted_raw_scan_residual": 0,
+        "representative_calculations": "area 32/3; volume 32π/3; plane distance 4/3; angle 53.13 degrees; Bayes total 0.845, posterior 9/58; sampling without replacement 3/5"
+      },
+      "findings": [
+        "ChIV: antiderivative domains and constants, endpoint difference, signed integral vs geometric area, displacement vs distance, disks and cross-sections; avoid generic repeated solution boilerplate.",
+        "ChV: nonzero normal/direction, noncollinearity, same parameter and geometric versus physical domain, line-plane and plane-plane angles, sphere surface versus solid; B14 integrated optional placement after B17 preserved.",
+        "ChVI: conditional denominator, independent versus disjoint, conditional multiplication, disjoint paths/partition, base-rate Bayes; specify consistent sampling unit and equiprobability for finite counts."
+      ],
+      "followup_depth_and_linkage": [
+        "B12-C05 and B13-C02 are the same mathematical task; B16-C02 and B16-P04 also duplicate the mathematical task. Retain historical IDs and placements pending whole-bank structural diversity/source-owner review, not inflate coverage.",
+        "CD21 placement shard currently has no references to scoped 42 G12 probability items; verify source ownership/equivalent questions before linking or merging, do not duplicate or change placements by assumption."
+      ],
+      "verdict": "AUTHOR_SELF_VERIFIED_SCOPED_ITEM_MATH_AND_SOLUTION_REVIEW; no independent reviewer verdict; 24-chapter SGK C/P/A reconciliation complete, not whole-bank academic coverage approval",
+      "phase_totals": {
+        "chapters": 24,
+        "total_thpt_chapters": 24,
+        "reviewed": 894,
+        "changed": 893,
+        "unchanged_reviewed": 1,
+        "g12_reviewed": 320,
+        "g12_changed": 320
+      },
+      "remaining": "Separate whole-bank source-owner/linkage and diversity/coverage, FirstTry, standalone public selfcheck, Written references and rubric review; interaction conversion and cutover not authorized in this batch",
+      "release_authorization": false
     }
   }
 }
