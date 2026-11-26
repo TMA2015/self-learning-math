@@ -43,7 +43,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Tính u×v và kiểm n·u=n·v=0."
+      "Tính tích có hướng \\([\\vec u,\\vec v]\\) và kiểm tích vô hướng với cả hai vectơ bằng 0."
     ],
     "rubric": null,
     "interaction": {
@@ -107,7 +107,7 @@
     "problem_type_id": null,
     "difficulty": 1,
     "hints": [
-      "Dùng n·(X−M)=0."
+      "Dùng điều kiện \\(\\vec n\\cdot\\overrightarrow{MX}=0\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -157,7 +157,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên −2 ở x−2 hoặc z−1, thử lại M. Ôn CĐ18 mục 4.2; luyện THPT-TOP18-P18."
+    "remediation": "Nếu bỏ mất tọa độ gốc trong (x-2) hoặc (z-1), thay M vào phương trình để kiểm lại. Ôn CĐ18 mục 4.2; luyện THPT-TOP18-P18."
   },
   {
     "item_id": "THPT-G12-B14-A02",
@@ -203,7 +203,7 @@
     "problem_type_id": null,
     "difficulty": 1,
     "hints": [
-      "Lấy AB,AC rồi tìm hướng vuông góc cả hai."
+      "Lấy \\(\\overrightarrow{AB},\\overrightarrow{AC}\\), kiểm không cùng phương, rồi tìm tích có hướng."
     ],
     "rubric": null,
     "interaction": {
@@ -235,7 +235,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Dùng AB,AC không cùng phương."
+      "Dùng \\(\\overrightarrow{AB},\\overrightarrow{AC}\\) không cùng phương."
     ],
     "rubric": null,
     "interaction": {
@@ -253,7 +253,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn n=(1;1;0), tích với AB không bằng 0. Ôn CĐ18 mục 4.3; luyện THPT-TOP18-P19."
+    "remediation": "Nếu chọn \\(\\vec n=(1;1;0)\\), tích vô hướng với \\(\\overrightarrow{AB}\\) không bằng 0. Ôn CĐ18 mục 4.3; luyện THPT-TOP18-P19."
   },
   {
     "item_id": "THPT-G12-B14-A03",
@@ -427,7 +427,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Tính tích hai pháp tuyến."
+      "Tính tích vô hướng của hai pháp tuyến."
     ],
     "rubric": null,
     "interaction": {
@@ -523,7 +523,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Thay M vào vế trái, chia √(4+1+4)."
+      "Thay M vào vế trái rồi chia cho \\(\\sqrt{4+1+4}\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -605,7 +605,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu d<R, bán kính đường tròn là √(R²−d²), không phải R−d. Ôn CĐ18 mục 8.1; luyện THPT-TOP18-P23."
+    "remediation": "Nếu d<R, dùng bán kính đường tròn \\(r=\\sqrt{R^2-d^2}\\), không lấy R-d. Ôn CĐ18 mục 8.1; luyện THPT-TOP18-P23."
   },
   {
     "item_id": "THPT-G12-B14-P07",
@@ -669,7 +669,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy 10−6, dùng Pitago r²=R²−h². Ôn CĐ18 mục 8.1; luyện THPT-TOP18-P23."
+    "remediation": "Nếu lấy 10-6, hãy dùng Pitago: \\(r^2=R^2-h^2\\). Ôn CĐ18 mục 8.1; luyện THPT-TOP18-P23."
   },
   {
     "item_id": "THPT-G12-B15-C01",
@@ -811,7 +811,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "AB=(0;3;3), x giữ hằng."
+      "\\(\\overrightarrow{AB}=(0;3;3)\\), tọa độ x giữ nguyên."
     ],
     "rubric": null,
     "interaction": {
@@ -843,7 +843,7 @@
     "problem_type_id": null,
     "difficulty": 3,
     "hints": [
-      "Dùng A+t(B−A), xét đoạn 0≤t≤1."
+      "Dùng vị trí điểm A cộng \\(t\\overrightarrow{AB}\\), với \\(0\\le t\\le1\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -1469,7 +1469,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "u·n=0 cho góc đường–mặt 0°, không phải 90°. Ôn CĐ18 mục 6.2; luyện THPT-TOP18-P32."
+    "remediation": "\\(\\vec u\\cdot\\vec n=0\\) cho góc đường–mặt 0°, không phải 90°. Ôn CĐ18 mục 6.2; luyện THPT-TOP18-P32."
   },
   {
     "item_id": "THPT-G12-B16-P02",
@@ -1515,7 +1515,7 @@
     "problem_type_id": null,
     "difficulty": 3,
     "hints": [
-      "Dùng sin=|thành phần z|/|u|."
+      "Dùng sin của góc đường–mặt, bằng trị tuyệt đối thành phần z chia độ dài chỉ phương."
     ],
     "rubric": null,
     "interaction": {
@@ -1661,7 +1661,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "u∥n thì đường vuông góc mặt. Ôn CĐ18 mục 6.4; luyện THPT-TOP18-P34."
+    "remediation": "Nếu chỉ phương khác không cùng phương pháp tuyến, đường thẳng vuông góc mặt phẳng. Ôn CĐ18 mục 6.4; luyện THPT-TOP18-P34."
   },
   {
     "item_id": "THPT-G12-B16-P04",
@@ -1739,7 +1739,7 @@
     "problem_type_id": null,
     "difficulty": 1,
     "hints": [
-      "Độ dài hướng là √2, thành phần đứng là 1."
+      "Độ dài chỉ phương là \\(\\sqrt2\\), thành phần đứng bằng 1."
     ],
     "rubric": null,
     "interaction": {
@@ -1803,7 +1803,7 @@
     "problem_type_id": null,
     "difficulty": 3,
     "hints": [
-      "Lập n0=(0;0;1), tính |n·n0|/(|n||n0|)."
+      "Lập pháp tuyến nền \\(\\vec n_0=(0;0;1)\\), dùng công thức cosin góc giữa hai mặt phẳng."
     ],
     "rubric": null,
     "interaction": {
@@ -1835,7 +1835,7 @@
     "problem_type_id": null,
     "difficulty": 1,
     "hints": [
-      "Dùng OM²=R²."
+      "Dùng \\(OM^2=R^2\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -1853,7 +1853,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Vế phải là R²=4, không phải 2. Ôn CĐ18 mục 7.1; luyện THPT-TOP18-P36."
+    "remediation": "Vế phải là \\(R^2=4\\), không phải 2. Ôn CĐ18 mục 7.1; luyện THPT-TOP18-P36."
   },
   {
     "item_id": "THPT-G12-B17-P01",
@@ -1963,7 +1963,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Hoàn thành ba bình phương rồi tính R²."
+      "Hoàn thành ba bình phương rồi tính \\(R^2\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -2013,7 +2013,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu R²<0, không có mặt cầu thực. Ôn CĐ18 mục 7.2; luyện THPT-TOP18-P37."
+    "remediation": "Nếu \\(R^2<0\\), không có mặt cầu thực; nếu bằng 0, chỉ có một điểm. Ôn CĐ18 mục 7.2; luyện THPT-TOP18-P37."
   },
   {
     "item_id": "THPT-G12-B17-C03",
@@ -2027,7 +2027,7 @@
     "problem_type_id": null,
     "difficulty": 1,
     "hints": [
-      "So OP² với R²=9."
+      "So \\(OP^2\\) với \\(R^2=9\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -2059,7 +2059,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Tính CP² và so với 4."
+      "Tính \\(CP^2\\) và so với 4."
     ],
     "rubric": null,
     "interaction": {
@@ -2205,7 +2205,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy √(6²+8²)=10 làm R, đó là đường kính. Ôn CĐ18 mục 7.4; luyện THPT-TOP18-P39."
+    "remediation": "Nếu lấy \\(\\sqrt{6^2+8^2}=10\\) làm R, đó là đường kính; chia đôi để được bán kính. Ôn CĐ18 mục 7.4; luyện THPT-TOP18-P39."
   },
   {
     "item_id": "THPT-G12-B17-C05",
@@ -2269,7 +2269,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Dùng √(R²−d²), không R−d. Ôn CĐ18 mục 7.5; luyện THPT-TOP18-P40."
+    "remediation": "Dùng \\(\\sqrt{R^2-d^2}\\), không lấy R-d. Ôn CĐ18 mục 7.5; luyện THPT-TOP18-P40."
   },
   {
     "item_id": "THPT-G12-B17-A05",
