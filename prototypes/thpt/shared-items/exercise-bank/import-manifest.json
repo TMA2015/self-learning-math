@@ -19925,6 +19925,59 @@
       ],
       "remaining": "Continue G10 ChII B03/B04 then remaining SGK chapters and public selfcheck supplements, preserve FirstTry and Written for their separate review; source-owner deltas and full semantic/notation/depth closure remain pending.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp92": {
+      "scope": "SGK shared formative G10 ChII B03/B04, 16 canonical C/P MCQ records; FirstTry 10 and public chapter selfcheck excluded/preserved",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "2fbb06ebc6c2d03dfa7becedcc75b94f10bdfe25",
+      "source_projection": {
+        "path": "docs/assets/javascripts/thpt-chii-reviewed-formative-v1.js",
+        "import_blob": "c258edc212022944c0e0e4693c5efffb72754f4a",
+        "current_main_blob": "c258edc212022944c0e0e4693c5efffb72754f4a",
+        "ids_and_order": 16,
+        "pre_edit_candidate_stem_or_option_variants": [
+          "THPT-G10-B03-C01",
+          "THPT-G10-B03-P02",
+          "THPT-G10-B03-P03",
+          "THPT-G10-B03-P06",
+          "THPT-G10-B04-P05"
+        ],
+        "decision": "Preserve CP49 strengthened variants; old projection is historical, not candidate parity."
+      },
+      "item_shard": {
+        "path": "items/g10-chii.json",
+        "before": "21915c60f6e14be08ab0a1e9ea1be5c93664de7f",
+        "after": "14c0d0a60e94eb22e213ca49d111f0b3593136dd",
+        "commit": "ff50ce0524f0cd24b71cd9ec5dbe6bb0389edc05"
+      },
+      "checks": {
+        "formative_reviewed": 16,
+        "formative_changed": 16,
+        "fields_changed": {
+          "stem": 14,
+          "answer_key": 0,
+          "worked_solution": 16,
+          "options": 13,
+          "hints": 9,
+          "remediation": 10
+        },
+        "first_try_unchanged": 10,
+        "sgk_placement_blob": "240d485678b3182add1fb3acd7035e6fc9994e08",
+        "topic_placement_blob": "fc8f70d93e2ee517e2ec135a991cc86803c27c7d",
+        "sgk_placements_for_reviewed_ids": 16,
+        "topic_placements_for_reviewed_ids": 24,
+        "metadata_and_answer_keys_unchanged": true,
+        "interaction_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "targeted_raw_math_scan_residual": 16,
+        "mcq_options_reviewed": 64
+      },
+      "findings": [
+        "B03: distinguish zero single coefficient from both zero, inclusive boundary vs strict inequality, negative divisor reverses inequality, test point off boundary, ticket count and weighted average with positive denominator. B04-P03 option C explicitly includes endpoints of optimum segment (not ambiguous 'góc phần tư I'); B04-P02 identify all four feasible vertices; P05 unbounded domain with attained maximum; P06 enumerate integer feasible set and compare real optimum. All 16 answer letters unchanged; manual math review of stems/options/solutions and finite enumeration for B04-P06. No fresh primary SGK/SBT PDF or browser QA; not full Academic/PED PASS. FirstTry/public selfcheck/Written separate as in CP91."
+      ],
+      "remaining": "G10 ChIII next; complete remaining SGK shared formative chapters, separately FirstTry/public selfcheck/Written and remaining source-owner, depth and semantic checks before conversion.",
+      "release_authorization": false
     }
   }
 }
