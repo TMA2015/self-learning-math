@@ -1,3 +1,11 @@
+## CURRENT Q18 — CP15 · 26/11/2026 · CĐ13 Work #1055 / #1109
+
+Learner `7e54d34b9eee75ab4b8f8e4f53ab40298e701493`, commit `63ef1576e36e8f16d2d2d50c8c5a0c23295a1bf9`. Work O04: derive AB−AC=CB geometrically by reversing AC and chaining C→A→B; coordinates only as optional check. First Try gives RQ with geometric reason. O13: common-origin angle defined before dot-product formula; added separate schematic of two nonzero perpendicular vectors explicitly not length-scale, SVG `03f008e587226f0492ec217373d090cd7cc0d79b` read in source. Corrected sign explanation at 0° and 180° endpoints and distinguished vector displacement from scalar length. X-G.5 on three public sections: no dollar-delimited math or slash fractions remain; 612/612 inline pairs, two separated display blocks, 69 balanced details. 52 canonical IDs unchanged, 16/16 exact same-ID replay stems, MC key letters and four Written point sequences unchanged. All 52 ID memberships checked in actual three canonical source banks (G10 current `18c29d7f60448a0a52d5b9f5aa5002e0f331defd` on sibling Draft #750 HEAD f4b49aad1d5f8faba55292e5dac678822ecd7249; G12; NEW20). Five unique SVG files read, six placements, four inherited SVG blobs unchanged. 29/29 executed scoped numerical checks PASS. Historical SGK/SBT source receipts inherited; no new PDF scan or independent NotebookLM PASS. Original bank content unchanged; only equivalent notation in Practice/Replay. Pre-existing Practice feedback in Bài 31/32 mentions drone/work rather than midpoint/centroid: outside approved notation-only changes, not modified; no new key defect. Tab-label truncation is RELEASE UI; cross-PR #750 availability must be verified on combined integration HEAD. AUTHOR_SELF_VERIFIED affected source only; no browser/CI or merge/deploy permission.
+
+---
+
+Earlier narrative evidence below applies only to its stated snapshots; current structured fields supersede earlier pointers.
+
 <!-- OWNER_20261121_SHARED_CANONICAL_EDITORIAL_SOURCE_EQUIVALENT_TOPIC13_Q18 -->
 **CURRENT OWNER-APPROVED SOURCE_EQUIVALENT:** CĐ13 learner `7bd211326e4f644a94e1dfad7868c03e1c415adb`, original G10 SGK canonical B07-P04 `18c29d7f60448a0a52d5b9f5aa5002e0f331defd` (prior `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` immutable historical), Q18 `self`, Q15/A1 `pending`, V2 `pending`. Exact original B07-P04 vector-zero stem asks SAME conventional fact, MCQ choices and **Đáp án D** unchanged, mathematical solution still states zero vector is length 0 and by the learned convention has same direction; only citation prose “SGK/SBT KNTT” removed from stem/solution in BOTH source owner and Topic projection. Remaining 51 Practice math and 4 written rubrics, 16 public selfchecks and SVG unaffected. DELTA_B_SOURCE_EQUIVALENT; no new independent NotebookLM whole Topic PASS/RELEASE/merge/deploy.
 ---
@@ -46,8 +54,8 @@ STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 7bd211326e4f644a94e1dfad7868c03e1c415adb
-ACADEMIC_SOURCE_BLOB: 7bd211326e4f644a94e1dfad7868c03e1c415adb
+SOURCE_BLOB: 7e54d34b9eee75ab4b8f8e4f53ab40298e701493
+ACADEMIC_SOURCE_BLOB: 7e54d34b9eee75ab4b8f8e4f53ab40298e701493
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R03_STUDENT_FIRST_52_CANONICAL_VISIBLE_20261116.md
@@ -58,19 +66,21 @@ SVG1_BLOB: 55ec9add04cb79da2cad7703b3897271e5b3436a
 SVG2_BLOB: 26e388d873521aa5b0bae945343e69357490ec16
 SVG3_BLOB: 979ca912e99fdadfc4e91ae0edad5db34fc13928
 SVG4_BLOB: 13445da079245a556a08e7a57069d9987097a0be
-DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
+SVG5_PATH: prototypes/thpt/visuals/THPT_TOPIC13_COMMON_ORIGIN_ANGLE.svg
+SVG5_BLOB: 03f008e587226f0492ec217373d090cd7cc0d79b
+DELTA_CLASS: DELTA_C_PED_TARGETED_WORK_1055 + DELTA_B_SOURCE_EQUIVALENT_XG5
 AUTHOR_QA_NUMBERING: PASS
 AUTHOR_QA_NUMBERING_H2_H3: NO_GAPS_NO_MIXED_SIBLINGS
-AUTHOR_QA_CANONICAL_PARITY: 52/52 SAME_ITEM_IDS; 20/20 CURRENT_NEW20_STEM_MATCH; W03_CONTENT_VERSION_2
+AUTHOR_QA_CANONICAL_PARITY: 52/52 SAME_IDS; SAME_CANONICAL_MATH_AND_EQUIVALENT_NOTATION; W03_CONTENT_VERSION_2
 AUTHOR_QA_LESSON_HIERARCHY: 16/16 PASS
-AUTHOR_QA_PUBLIC_SELFCHECK: 16/16 SAME_REPLAY_IDS; 6 STEM_FORMAT_ONLY_REPHRASES; NO_ANSWERS
-AUTHOR_QA_ANSWER_SOLUTION_RUBRIC_D6: NUMERIC_RESULT_AND_SCORE_ALLOCATION_UNCHANGED; AFFECTED_VECTOR_NOTATION_RECHECKED
+AUTHOR_QA_PUBLIC_SELFCHECK: 16/16 EXACT_CURRENT_PRACTICE_STEMS; SAME_IDS; NO_ANSWERS
+AUTHOR_QA_ANSWER_SOLUTION_RUBRIC_D6: MC_KEYS_AND_4_WRITTEN_POINT_SEQUENCES_PRESERVED; KNOWLEDGE_WORK_FIXES_VERIFIED
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP13_MASTER974_16_PED6_52_LABEL_20261121_893829bacc3b4bae8c1463b1bdb0ebbd9857831f
+AUTHOR_SIGNOFF: TOP13_WORK1055_A05_XG5_20261126_7e54d34b9eee75ab4b8f8e4f53ab40298e701493
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
