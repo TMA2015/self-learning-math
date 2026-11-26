@@ -12,7 +12,10 @@ import html
 from playwright.sync_api import sync_playwright, expect
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-REFRESH="--w2a" in sys.argv
+W2A="--w2a" in sys.argv
+W2B="--w2b" in sys.argv
+assert not (W2A and W2B), "Select one wave"
+REFRESH=W2A or W2B
 BUILD = ROOT / ("site" if REFRESH else "site-thpt-preview")
 class ProjectHandler(http.server.SimpleHTTPRequestHandler):
     def translate_path(self,p):
@@ -31,11 +34,11 @@ SIZES = {
     "07": (4, 4, 18, 69, 18, 3),
     "08": (4, 4, 18, 58, 18, 3),
     "09": (5, 4, 32, 108, 32, 4),
-    "10": (6, 6, 36, 120, 36, 4),
+    "10": (6, 6, 36, 120, 36, 5),
     "11": (4, 4, 22, 116, 22, 4),
 }
 if REFRESH:
-    SIZES={k:v for k,v in SIZES.items() if k in ("06","07","08")}
+    SIZES={k:v for k,v in SIZES.items() if k in (("06","07","08") if W2A else ("09","10","11"))}
 PALETTE = {
     "concept": "rgb(232, 247, 242)",
     "rule": "rgb(234, 241, 252)",
@@ -329,15 +332,26 @@ with sync_playwright() as pw:
                     page.locator(f'[data-topic-w1-module-tab="{module}"]').click()
                     page.locator(f'[data-topic-w1-subtab="{sub}"]').click()
                     current = page.locator('.thpt-r4-knowledge-content-panel:visible')
-                    # Shared renderer uses native semantic superscripts for explicit
-                    # plain-text shorthand; canonical TeX still uses MathJax.
-                    exp = current.locator('sup[data-topic-rw1-original]')
-                    assert exp.count() >= (2 if topic == "09" else 3), (engine, topic, width, "raw superscripts not normalized", exp.count())
-                    expect(exp.first).to_be_visible(timeout=20000)
-                    assert exp.first.inner_text() == ("g" if topic == "09" else "2x"), (topic, "incorrect exponent content")
-                    assert not current.evaluate(r"(e) => /(?:e|a|x)\^\{/.test(e.innerText)"), (
-                        engine, topic, width, "visible unrendered superscript syntax",
-                    )
+                    if W2B:
+                        # The new signed exponent expressions are explicit TeX.
+                        # Compare the entire visible outcome (before disclosure) to source.
+                        raw=(ROOT/f"docs/thpt-preview/chuyen-de/cd{topic}/kien-thuc.md").read_text(encoding="utf-8")
+                        outcome="4.6" if topic=="09" else "1.5"
+                        section=re.split(r"^### "+re.escape(outcome)+r"\.\s",raw,flags=re.M)[1]
+                        section=re.split(r"^#{2,3} ",section,maxsplit=1,flags=re.M)[0].split("<details",1)[0]
+                        expected=[re.sub(r"\s+","",html.unescape(x or y)) for x,y in re.findall(r"\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]",section)]
+                        assert expected and any("^" in x for x in expected)
+                        assert_math(page,".thpt-r4-knowledge-module-panel:not([hidden]) .thpt-r4-knowledge-content-panel:not([hidden])",expected,(topic,engine,width,outcome,"explicit exponent parity"))
+                    else:
+                        # Shared renderer uses native semantic superscripts for explicit
+                        # plain-text shorthand; canonical TeX still uses MathJax.
+                        exp = current.locator('sup[data-topic-rw1-original]')
+                        assert exp.count() >= (2 if topic == "09" else 3), (engine, topic, width, "raw superscripts not normalized", exp.count())
+                        expect(exp.first).to_be_visible(timeout=20000)
+                        assert exp.first.inner_text() == ("g" if topic == "09" else "2x"), (topic, "incorrect exponent content")
+                        assert not current.evaluate(r"(e) => /(?:e|a|x)\^\{/.test(e.innerText)"), (
+                            engine, topic, width, "visible unrendered superscript syntax",
+                        )
                 # Check dark role readability only on one representative per topic.
                 if width == 820:
                     page.locator("body").evaluate("(e)=>e.setAttribute('data-md-color-scheme','slate')")

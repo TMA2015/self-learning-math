@@ -28,7 +28,7 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC10_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 7954f917b89c64527b166d02aac1844da08ed806; Q18_RECEIPT_BLOB 4cf2638f752b93fd87aa5446a1d89b66665afede; AUTHORING_PR #886; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB 952ce21e99953348068b6499449dae75d4490d10; Q18_RECEIPT_BLOB 74ecc58ea5c86f83b5549732a2dde769ad5696a8; AUTHORING_PR #886; PUBLIC_PROJECTION_ONLY -->
 
 # Tự kiểm tra
 
@@ -36,47 +36,47 @@ Hãy tự làm 36 câu sau trước khi xem lời giải ở phần Luyện tậ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P01; NO_RD1; NO_MASTERY -->
 
-**Câu 1.** f(x)=7−3x trên [−2,4], chứng minh hướng biến thiên.
+**Câu 1.** \(f(x)=7-3x\) trên \([-2;4]\), chứng minh hướng biến thiên.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P02; NO_RD1; NO_MASTERY -->
 
-**Câu 2.** f=x²−4x, tìm khoảng tăng giảm.
+**Câu 2.** \(f=x^2-4x\), tìm khoảng tăng giảm.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P03; NO_RD1; NO_MASTERY -->
 
-**Câu 3.** f(x)=1/(x+1): tìm các khoảng nghịch biến.
+**Câu 3.** \(f(x)=\frac1{x+1}\): tìm các khoảng nghịch biến.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P04; NO_RD1; NO_MASTERY -->
 
-**Câu 4.** f=x³−12x, tìm điểm cực trị.
+**Câu 4.** \(f=x^3-12x\), tìm điểm cực trị.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P05; NO_RD1; NO_MASTERY -->
 
-**Câu 5.** f=x⁵ tại 0 có cực trị không?
+**Câu 5.** \(f=x^5\) tại 0 có cực trị không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P06; NO_RD1; NO_MASTERY -->
 
-**Câu 6.** s(t)=t²−6t, t≥0, khi nào đổi chiều?
+**Câu 6.** \(s(t)=t^2-6t\), \(t\ge0\), khi nào đổi chiều?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P07; NO_RD1; NO_MASTERY -->
 
-**Câu 7.** f=x³−3x trên [−2,2] GTLN/GTNN là gì?
+**Câu 7.** \(f=x^3-3x\) trên \([-2;2]\) GTLN/GTNN là gì?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P08; NO_RD1; NO_MASTERY -->
 
-**Câu 8.** f=x²+1 trên [−2,1] tìm GTLN/GTNN.
+**Câu 8.** \(f=x^2+1\) trên \([-2;1]\) tìm GTLN/GTNN.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P09; NO_RD1; NO_MASTERY -->
 
-**Câu 9.** f=x²−2x trên [−1,3], so điểm nào?
+**Câu 9.** \(f=x^2-2x\) trên \([-1;3]\), so điểm nào?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P10; NO_RD1; NO_MASTERY -->
 
-**Câu 10.** f=x² trên (0,1) có max/min không?
+**Câu 10.** \(f=x^2\) trên \((0;1)\) có max/min không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P11; NO_RD1; NO_MASTERY -->
 
-**Câu 11.** f=−(x−6)²+20, x∈[0,4], GTLN?
+**Câu 11.** \(f=-(x-6)^2+20\), \(x\in[0;4]\), GTLN?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P12; NO_RD1; NO_MASTERY -->
 
@@ -84,59 +84,59 @@ Hãy tự làm 36 câu sau trước khi xem lời giải ở phần Luyện tậ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P13; NO_RD1; NO_MASTERY -->
 
-**Câu 13.** f=(5x+2)/(x−7), TCN?
+**Câu 13.** \(f=\frac{5x+2}{x-7}\), TCN?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P14; NO_RD1; NO_MASTERY -->
 
-**Câu 14.** f=−2/(x−3), giới hạn hai phía quanh3?
+**Câu 14.** \(f=-\frac2{x-3}\), giới hạn hai phía quanh3?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P15; NO_RD1; NO_MASTERY -->
 
-**Câu 15.** f=(x²+3x+1)/(x+1), TC xiên?
+**Câu 15.** \(f=\frac{x^2+3x+1}{x+1}\), TC xiên?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P16; NO_RD1; NO_MASTERY -->
 
-**Câu 16.** f=(x²−1)/(x−1), x≠1, loại gián đoạn?
+**Câu 16.** \(f=\frac{x^2-1}{x-1}\), \(x\ne1\), loại gián đoạn?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P17; NO_RD1; NO_MASTERY -->
 
-**Câu 17.** f=1/√(x−2), miền và tiệm cận?
+**Câu 17.** \(f=\frac1{\sqrt{x-2}}\), miền và tiệm cận?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P18; NO_RD1; NO_MASTERY -->
 
-**Câu 18.** f=x+1/x, có TCN không?
+**Câu 18.** \(f=x+\frac1x\), có TCN không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P19; NO_RD1; NO_MASTERY -->
 
-**Câu 19.** f=(x−2)², cực tiểu và giao Oy?
+**Câu 19.** \(f=(x-2)^2\), cực tiểu và giao Oy?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P20; NO_RD1; NO_MASTERY -->
 
-**Câu 20.** Khảo sát hai cực trị của f(x)=x³−3x trên ℝ.
+**Câu 20.** Khảo sát hai cực trị của \(f(x)=x^3-3x\) trên ℝ.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P21; NO_RD1; NO_MASTERY -->
 
-**Câu 21.** f=(3x−2)/(x+1), TCD,TCN?
+**Câu 21.** \(f=\frac{3x-2}{x+1}\), TCD,TCN?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P22; NO_RD1; NO_MASTERY -->
 
-**Câu 22.** f=(x²−4)/(x−2), x≠2, giao Ox?
+**Câu 22.** \(f=\frac{x^2-4}{x-2}\), \(x\ne2\), giao Ox?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P23; NO_RD1; NO_MASTERY -->
 
-**Câu 23.** f=3−2/(x+4), tâm?
+**Câu 23.** \(f=3-\frac2{x+4}\), tâm?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P24; NO_RD1; NO_MASTERY -->
 
-**Câu 24.** Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)&lt;0 với x&lt;0 và f'(x)>0 với x>0, f(0)=4. Xác định cực trị tại x=0.
+**Câu 24.** Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)&lt;0 với x&lt;0 và f'(x)>0 với \(x>0\), f(0)=4. Xác định cực trị tại \(x=0\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P25; NO_RD1; NO_MASTERY -->
 
-**Câu 25.** f=1/(x+2), có giảm trên D như một tập không?
+**Câu 25.** \(f=\frac1{x+2}\), có giảm trên D như một tập không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P26; NO_RD1; NO_MASTERY -->
 
-**Câu 26.** C(q)=80+4q+q², C'(2)?
+**Câu 26.** \(C(q)=80+4q+q^2\), C'(2)?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P27; NO_RD1; NO_MASTERY -->
 
@@ -144,7 +144,7 @@ Hãy tự làm 36 câu sau trước khi xem lời giải ở phần Luyện tậ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P28; NO_RD1; NO_MASTERY -->
 
-**Câu 28.** C(q)=2q²+q+5, C'(2)?
+**Câu 28.** \(C(q)=2q^2+q+5\), C'(2)?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P29; NO_RD1; NO_MASTERY -->
 
@@ -152,11 +152,11 @@ Hãy tự làm 36 câu sau trước khi xem lời giải ở phần Luyện tậ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P30; NO_RD1; NO_MASTERY -->
 
-**Câu 30.** P(x)=−(x−3)²+7, x∈[0,2], GTLN?
+**Câu 30.** \(P(x)=-(x-3)^2+7\), \(x\in[0;2]\), GTLN?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P31; NO_RD1; NO_MASTERY -->
 
-**Câu 31.** f=x² trên [1,3], min/max?
+**Câu 31.** \(f=x^2\) trên \([1;3]\), min/max?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P32; NO_RD1; NO_MASTERY -->
 
@@ -164,19 +164,19 @@ Hãy tự làm 36 câu sau trước khi xem lời giải ở phần Luyện tậ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P33; NO_RD1; NO_MASTERY -->
 
-**Câu 33.** f=−x²+6x, max trên ℝ?
+**Câu 33.** \(f=-x^2+6x\), max trên ℝ?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P34; NO_RD1; NO_MASTERY -->
 
-**Câu 34.** f=(x²−4)/(x−2), TCD ở x=2?
+**Câu 34.** \(f=\frac{x^2-4}{x-2}\), TCD ở \(x=2\)?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P35; NO_RD1; NO_MASTERY -->
 
-**Câu 35.** P=−q²+6q−2, q∈[0,4], max ở đâu?
+**Câu 35.** \(P=-q^2+6q-2\), \(q\in[0;4]\), max ở đâu?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P36; NO_RD1; NO_MASTERY -->
 
-**Câu 36.** g(x)=1−(x−2)² trên miền (0,3) có đạt GTLN/GTNN không?
+**Câu 36.** \(g(x)=1-(x-2)^2\) trên miền \((0;3)\) có đạt GTLN/GTNN không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 

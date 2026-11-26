@@ -698,6 +698,24 @@ function proveW1Recovery(){
  assert(isExactW1Recovery(git("diff","--no-renames","--name-only",W1_RECOVERY_APPROVED,"HEAD").split("\n").filter(Boolean),process.env.BASE_SHA),"Recovery includes changes outside exact four QA files");
  console.log("PASS W1 unchanged approved tree; only exact four deploy/QA files changed");
 }
+const W2B_REFRESH_FILES=new Set(["docs/assets/javascripts/math-details-v1.js","docs/assets/javascripts/thpt-topic-w2-golden-v1.js","docs/assets/visuals/THPT_TOPIC10_ASYMPTOTE_READING_R01.svg","docs/thpt-preview/chuyen-de/cd09/kien-thuc.md","docs/thpt-preview/chuyen-de/cd09/luyen-tap.md","docs/thpt-preview/chuyen-de/cd09/tu-kiem-tra.md","docs/thpt-preview/chuyen-de/cd10/kien-thuc.md","docs/thpt-preview/chuyen-de/cd10/luyen-tap.md","docs/thpt-preview/chuyen-de/cd10/tu-kiem-tra.md","docs/thpt-preview/chuyen-de/cd11/kien-thuc.md","docs/thpt-preview/chuyen-de/cd11/luyen-tap.md","docs/thpt-preview/chuyen-de/cd11/tu-kiem-tra.md","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-topic-w2-golden-browser.py","scripts/test-thpt-topic-w2-source-locked.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-w2-golden-release-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml"]);
+const W2B_REFRESH_BLOBS={"docs/assets/javascripts/math-details-v1.js":"60001a8569412a9846581624e245a70a578c4f2a","docs/assets/javascripts/thpt-topic-w2-golden-v1.js":"57e4a6a6c3fe5299dc018f896073d61a49923da5","docs/assets/visuals/THPT_TOPIC10_ASYMPTOTE_READING_R01.svg":"fd95665e72fb029bf5182643ea3888f19bb9732b","docs/thpt-preview/chuyen-de/cd09/kien-thuc.md":"c91e3fb51ec7157dc7d3c7d6e806554f848b8a89","docs/thpt-preview/chuyen-de/cd09/luyen-tap.md":"47e3e3c39601142ef9cc76bc271656343e7055e8","docs/thpt-preview/chuyen-de/cd09/tu-kiem-tra.md":"64787e7baa81ed6e3b0a74b03d4fc84e1596eaeb","docs/thpt-preview/chuyen-de/cd10/kien-thuc.md":"edcb8a492bb24126fcd40393e5afde07c7b35961","docs/thpt-preview/chuyen-de/cd10/luyen-tap.md":"c56dda1c4d405906870407fa6940062682f9fdd2","docs/thpt-preview/chuyen-de/cd10/tu-kiem-tra.md":"1025ee30cce22294257b3f04f90df9f7cd23fc51","docs/thpt-preview/chuyen-de/cd11/kien-thuc.md":"4f6b2e3a5e9dfb137626f02a58a4eeedb487a1a1","docs/thpt-preview/chuyen-de/cd11/luyen-tap.md":"62b40d0a392d670d4e2b8cfd7e5a6f9568852ac9","docs/thpt-preview/chuyen-de/cd11/tu-kiem-tra.md":"cd45183dffbd60c04d8c75cf0e55d8c2ac21efbe","scripts/test-thpt-topic-rw1-math-browser.py":"2bb6602bb255926bc52e5611d1dbc5520f3be8d9","scripts/test-thpt-topic-w2-golden-browser.py":"dc5337609bd46e96a5b8f35cda82b706bcca8dd2","scripts/test-thpt-topic-w2-source-locked.py":"00019a07f39a9d734c23a835c4426f1941e3bdff"};
+function isExactW2bRefresh(files){
+ const crypto=require("node:crypto"),blob=p=>{const b=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
+ return files.length===W2B_REFRESH_FILES.size&&new Set(files).size===files.length&&files.every(f=>W2B_REFRESH_FILES.has(f))&&Object.entries(W2B_REFRESH_BLOBS).every(([p,sha])=>blob(p)===sha);
+}
+function proveW2bRefresh(){
+ const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"}),base=process.env.BASE_SHA;
+ assert.equal(base,"63cd3f3eafff6c2f013c15405903006cef14165c","W2b base must be exact W2a merge");
+ assert(isExactW2bRefresh(git("diff","--no-renames","--name-only",base,"HEAD").trim().split("\n")),"W2b exact scope HOLD");
+ const helper="docs/assets/javascripts/math-details-v1.js",adapter="docs/assets/javascripts/thpt-topic-w2-golden-v1.js",before=git("show",base+":"+helper),now=fs.readFileSync(helper,"utf8");
+ assert(now.includes("cd(?:0[1-9]|1[01])\\/(?:luyen-tap|tu-kiem-tra)")&&now.replace("cd(?:0[1-9]|1[01])\\/(?:luyen-tap|tu-kiem-tra)","cd0[1-8]\\/(?:luyen-tap|tu-kiem-tra)")===before,"Unrelated shared math behavior changed");
+ const j=fs.readFileSync(adapter,"utf8");
+ assert(j.includes('["06","07","08","09","10","11"].includes(topic)')&&j.replace('["06","07","08","09","10","11"].includes(topic)','["06","07","08"].includes(topic)')===git("show",base+":"+adapter),"W2a or other adapter behavior changed");
+ cp.execFileSync("node",["--check",adapter],{stdio:"inherit"});
+ cp.execFileSync("node",["--check",helper],{stdio:"inherit"});
+ console.log("PASS exact W2b nine projections and signed figure; public route-only MathJax, W2a unchanged");
+}
 const W2A_REFRESH_FILES=new Set(["docs/assets/javascripts/math-details-v1.js","docs/assets/javascripts/thpt-topic-w2-golden-v1.js","docs/assets/visuals/THPT_TOPIC06_COS_PHASE_COMPARISON_R01.svg","docs/assets/visuals/THPT_TOPIC06_COT_ASYMPTOTES_R01.svg","docs/assets/visuals/THPT_TOPIC06_TAN_ASYMPTOTES_R01.svg","docs/assets/visuals/THPT_TOPIC07_AP_VS_GP_GROWTH_R01.svg","docs/thpt-preview/chuyen-de/cd06/kien-thuc.md","docs/thpt-preview/chuyen-de/cd06/luyen-tap.md","docs/thpt-preview/chuyen-de/cd06/tu-kiem-tra.md","docs/thpt-preview/chuyen-de/cd07/kien-thuc.md","docs/thpt-preview/chuyen-de/cd07/luyen-tap.md","docs/thpt-preview/chuyen-de/cd07/tu-kiem-tra.md","docs/thpt-preview/chuyen-de/cd08/kien-thuc.md","docs/thpt-preview/chuyen-de/cd08/luyen-tap.md","docs/thpt-preview/chuyen-de/cd08/tu-kiem-tra.md","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-topic-w2-golden-browser.py","scripts/test-thpt-topic-w2-source-locked.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-w2-golden-release-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml"]);
 const W2A_REFRESH_BLOBS={"docs/assets/javascripts/math-details-v1.js":"2f465a36312fe662ada47631fc51f7ca42ced7b1","docs/assets/javascripts/thpt-topic-w2-golden-v1.js":"2b67a81dbef1d79eaeed1360698724b851ca3241","docs/assets/visuals/THPT_TOPIC06_COS_PHASE_COMPARISON_R01.svg":"c8734ab09037afc437aa48344178a975bc23bf87","docs/assets/visuals/THPT_TOPIC06_COT_ASYMPTOTES_R01.svg":"eac15f15e82e2e33cde3e09b07ced3c6455728b5","docs/assets/visuals/THPT_TOPIC06_TAN_ASYMPTOTES_R01.svg":"76edbe0917c90d9f67f82cfd91f1fd28784f2e53","docs/assets/visuals/THPT_TOPIC07_AP_VS_GP_GROWTH_R01.svg":"e3be79f17eadcd26d36b99f28dc0df8f4158addb","docs/thpt-preview/chuyen-de/cd06/kien-thuc.md":"e290dcfeb4c98721d46add0a777967dbfc1950aa","docs/thpt-preview/chuyen-de/cd06/luyen-tap.md":"b929c3a9fec06dc3ef374272d9ba1fb00dab01b5","docs/thpt-preview/chuyen-de/cd06/tu-kiem-tra.md":"70f606e59e42dd88f6f985c924f8f10bd9f48504","docs/thpt-preview/chuyen-de/cd07/kien-thuc.md":"4e08635870d886fec6dbc6a7b70c31d46cdadae9","docs/thpt-preview/chuyen-de/cd07/luyen-tap.md":"de9c5d7c617448d267584a983e48789bcd5ae720","docs/thpt-preview/chuyen-de/cd07/tu-kiem-tra.md":"931625da273d3190b3feaa6e63d1e2820f3810a3","docs/thpt-preview/chuyen-de/cd08/kien-thuc.md":"af2a6603fc2db415b511ac8f7f32db1c7f570fad","docs/thpt-preview/chuyen-de/cd08/luyen-tap.md":"45af28531465c49521b6af7e4695a650223d5d84","docs/thpt-preview/chuyen-de/cd08/tu-kiem-tra.md":"0ff6692b1a27927778ae69255721823b35240aee","scripts/test-thpt-topic-rw1-math-browser.py":"402e4df22b41b29f894d5912600edd06e571074c","scripts/test-thpt-topic-w2-golden-browser.py":"8190f0634ee307349242afcc40fde0dfb766c502","scripts/test-thpt-topic-w2-source-locked.py":"6f7172a042278627aa5828d4413cb3fc9cfd486e"};
 function isExactW2aRefresh(files){
@@ -838,6 +856,7 @@ function classify(paths,{manual=false,base=""}={}){
  if(files.length===MATH_NOTATION_GOVERNANCE.size&&new Set(files).size===files.length&&files.every(p=>MATH_NOTATION_GOVERNANCE.has(p)))
   return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"EXACT_MATH_NOTATION_GOVERNANCE_ONLY"};
  if(isExactW1Recovery(files,base))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_W1_DEPLOY_RECOVERY_EXACT"};
+ if(isExactW2bRefresh(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_W2B_REFRESH"};
  if(isExactW2aRefresh(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_W2A_REFRESH"};
  if(isExactTopicW1Refresh(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_W1_REFRESH"};
  if(isExactTopic01Refresh(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC01_REFRESH_CP10"};
@@ -1037,6 +1056,12 @@ function selfTest(){
  assert.notEqual(classify(w1Recovery,{base:"0".repeat(40)}).reason,"OWNER_W1_DEPLOY_RECOVERY_EXACT");
  assert.notEqual(classify([...w1Recovery,"docs/assets/javascripts/firebase-gemini-v1.js"],{base:W1_RECOVERY_BASE}).reason,"OWNER_W1_DEPLOY_RECOVERY_EXACT");
  assert.notEqual(classify(w1Recovery,{base:W1_RECOVERY_BASE,manual:true}).reason,"OWNER_W1_DEPLOY_RECOVERY_EXACT");
+ const refreshW2b=[...W2B_REFRESH_FILES];
+ if(isExactW2bRefresh(refreshW2b))assert.equal(classify(refreshW2b).reason,"OWNER_TOPIC_W2B_REFRESH");
+ else assert.equal(classify(refreshW2b).impact,"FULL");
+ assert.equal(classify([...refreshW2b,"mkdocs.yml"]).impact,"FULL");
+ assert.equal(classify(refreshW2b.slice(1)).impact,"FULL");
+ assert.equal(classify(refreshW2b,{manual:true}).impact,"FULL");
  const refreshW2a=[...W2A_REFRESH_FILES];
  if(isExactW2aRefresh(refreshW2a))assert.equal(classify(refreshW2a).reason,"OWNER_TOPIC_W2A_REFRESH");
  else assert.equal(classify(refreshW2a).impact,"FULL");
@@ -1436,7 +1461,8 @@ function selfTest(){
  console.log("PASS scoped CI impact classifier: canonical SGK page/receipt-only fast lanes, global/unknown/assessment full, manual full");
 }
 if(require.main===module){
- if(process.argv.includes("--prove-w2a-refresh"))proveW2aRefresh();
+ if(process.argv.includes("--prove-w2b-refresh"))proveW2bRefresh();
+ else if(process.argv.includes("--prove-w2a-refresh"))proveW2aRefresh();
  else if(process.argv.includes("--prove-w1-recovery"))proveW1Recovery();
  else if(process.argv.includes("--prove-topic-w1-refresh"))proveTopicW1Refresh();
  else if(process.argv.includes("--prove-topic01-refresh"))proveTopic01Refresh();
