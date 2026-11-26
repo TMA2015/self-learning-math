@@ -1318,17 +1318,17 @@
     }
   ],
   "counts": {
-    "formative_items": 1814,
+    "formative_items": 1823,
     "written_references": 325,
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3921,
+    "placements": 3932,
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
     "legacy_combined_answer_items": 0,
-    "topic_knowledge_first_try": 170,
+    "topic_knowledge_first_try": 181,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
   },
@@ -18022,6 +18022,158 @@
       "review_scope": "Scoped math reconciliation of CD22; all 170 source pointers, unique IDs, placement existence, D6 order/Written reference existence, delimiter pairing and interaction invariants checked, not fresh full mathematical re-audit of prior 157 or Written rubric/SGK PDF review",
       "progress_existing_first_try": "170/170 CD14–22 existing FirstTry reconciled; CD01–13 local FirstTry inventory remains",
       "remaining": "Inventory CD01–13 public local FirstTry for existing IDs and source ownership before importing; full Practice/Replay field parity, shared placements/depth, Written provenance/rubric and SGK follow-up",
+      "release_authorization": false
+    },
+    "source_delta_reconciliation_cp70": {
+      "scope": "Inventory CD01–13 current learner unkeyed Vận dụng blocks; import only CD01 after task comparison",
+      "baseline_commit": "71135546a4e35038d769b7cb9eac7e7b766762f8",
+      "item_commit": "96dc72a1464be5f1d70d844c757d9fe43f172c87",
+      "placement_commit": "389de360ca5c07f63d45b37f64620ef085c381bc",
+      "inventory": [
+        {
+          "topic": "CD01",
+          "learner_blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+          "unkeyed_first_try_blocks": 11,
+          "parsed_stem_and_reveal": 11,
+          "empty_blocks": 0,
+          "disposition": "IMPORTED_NINE_AND_REUSED_TWO_SGK_IDS"
+        },
+        {
+          "topic": "CD02",
+          "learner_blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+          "unkeyed_first_try_blocks": 16,
+          "parsed_stem_and_reveal": 16,
+          "empty_blocks": 0,
+          "disposition": "PENDING_ID_AND_TASK_EQUIVALENCE_REVIEW"
+        },
+        {
+          "topic": "CD03",
+          "learner_blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+          "unkeyed_first_try_blocks": 12,
+          "parsed_stem_and_reveal": 12,
+          "empty_blocks": 0,
+          "disposition": "PENDING_ID_AND_TASK_EQUIVALENCE_REVIEW"
+        },
+        {
+          "topic": "CD04",
+          "learner_blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+          "unkeyed_first_try_blocks": 18,
+          "parsed_stem_and_reveal": 18,
+          "empty_blocks": 0,
+          "disposition": "PENDING_ID_AND_TASK_EQUIVALENCE_REVIEW"
+        },
+        {
+          "topic": "CD05",
+          "learner_blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+          "unkeyed_first_try_blocks": 17,
+          "parsed_stem_and_reveal": 17,
+          "empty_blocks": 0,
+          "disposition": "PENDING_ID_AND_TASK_EQUIVALENCE_REVIEW"
+        },
+        {
+          "topic": "CD06",
+          "learner_blob": "621afad176e6944f832746b231cbd9265e96bce2",
+          "unkeyed_first_try_blocks": 16,
+          "parsed_stem_and_reveal": 16,
+          "empty_blocks": 0,
+          "disposition": "PENDING_ID_AND_TASK_EQUIVALENCE_REVIEW"
+        },
+        {
+          "topic": "CD07",
+          "learner_blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+          "unkeyed_first_try_blocks": 18,
+          "parsed_stem_and_reveal": 18,
+          "empty_blocks": 0,
+          "disposition": "PENDING_ID_AND_TASK_EQUIVALENCE_REVIEW"
+        },
+        {
+          "topic": "CD08",
+          "learner_blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+          "unkeyed_first_try_blocks": 18,
+          "parsed_stem_and_reveal": 18,
+          "empty_blocks": 0,
+          "disposition": "PENDING_ID_AND_TASK_EQUIVALENCE_REVIEW"
+        },
+        {
+          "topic": "CD09",
+          "learner_blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+          "unkeyed_first_try_blocks": 32,
+          "parsed_stem_and_reveal": 32,
+          "empty_blocks": 0,
+          "disposition": "PENDING_ID_AND_TASK_EQUIVALENCE_REVIEW"
+        },
+        {
+          "topic": "CD10",
+          "learner_blob": "952ce21e99953348068b6499449dae75d4490d10",
+          "unkeyed_first_try_blocks": 36,
+          "parsed_stem_and_reveal": 36,
+          "empty_blocks": 0,
+          "disposition": "PENDING_ID_AND_TASK_EQUIVALENCE_REVIEW"
+        },
+        {
+          "topic": "CD11",
+          "learner_blob": "64688cf81991a432264c06a2ff0a908371ca1f21",
+          "unkeyed_first_try_blocks": 22,
+          "parsed_stem_and_reveal": 22,
+          "empty_blocks": 0,
+          "disposition": "PENDING_ID_AND_TASK_EQUIVALENCE_REVIEW"
+        },
+        {
+          "topic": "CD12",
+          "learner_blob": "6fd684807c3cf16489ed91e4a573edc3d1b2a6bc",
+          "unkeyed_first_try_blocks": 12,
+          "parsed_stem_and_reveal": 12,
+          "empty_blocks": 0,
+          "disposition": "PENDING_ID_AND_TASK_EQUIVALENCE_REVIEW"
+        },
+        {
+          "topic": "CD13",
+          "learner_blob": "7e54d34b9eee75ab4b8f8e4f53ab40298e701493",
+          "unkeyed_first_try_blocks": 16,
+          "parsed_stem_and_reveal": 16,
+          "empty_blocks": 0,
+          "disposition": "PENDING_ID_AND_TASK_EQUIVALENCE_REVIEW"
+        }
+      ],
+      "total_unkeyed_blocks": 244,
+      "processed_cd01": 11,
+      "pending_unkeyed_blocks": 233,
+      "new_records": 9,
+      "reused_sgk_ids": [
+        {
+          "order": 3,
+          "item_id": "THPT-G10-CHI-TRY03"
+        },
+        {
+          "order": 6,
+          "item_id": "THPT-G10-CHI-TRY06"
+        }
+      ],
+      "id_assignment": "THPT-TOP01-KFTxx by source heading order, gaps for reused existing SGK IDs; prior IDs unchanged",
+      "placement_context_note": "Two reused SGK records remain canonical unchanged; retain topic-specific D6 only in placement.source_context with current learner blob/heading/line. Candidate metadata; release integration not tested.",
+      "checks": {
+        "item_shard_after": "8abb1c6ec5eecd60bfa23615d247a4977e92bcdc",
+        "placement_shard_after": "5aae0e3c24d0658b55f4f7f504dedbeff455f77e",
+        "existing_records_unchanged": 170,
+        "existing_first_try_placements_unchanged": 170,
+        "unique_item_shard_records": 179,
+        "new_placements": 11,
+        "cd01_resolved_and_d6": 11,
+        "sgk_canonical_shard_unchanged": "7f2fd69e717938773ff4da895933261a7b49b89d",
+        "cd01_practice_unchanged": "e67d438b3775e5193e21a8c76e671a6e2f5ba552",
+        "collision_check_scope": "Existing FirstTry shard, CD01 and G10 ChI relevant items and placements, Written references; full global fresh scan pending"
+      },
+      "progress": {
+        "topic_first_try_placements": 181,
+        "distinct_topic_first_try_shard_records": 179,
+        "total_inventoried_topic_first_try_blocks": 414,
+        "pending": 233,
+        "projected_bank_total_ids": 2321,
+        "projected_total_placements": 3932,
+        "counts_note": "Projected from prior 2312/3921 baseline plus 9/11; global_reconciliation.actual_counts remains historical snapshot. counts.topic_knowledge_first_try now counts placements including shared SGK IDs."
+      },
+      "review_scope": "CD01 current source stem/solution and separate author keys, source locator and D6; two same-task SGK matches verified; no full global duplicate scan or fresh primary SGK PDF audit. Historical CD01 knowledge projection path not resolved, no invented projection metadata.",
+      "remaining": "CD02–13 remaining 233 unkeyed blocks, task-equivalence before ID allocation; global uniqueness scan, full Practice/Replay parity and depth/Written/SGK follow-up",
       "release_authorization": false
     }
   }
