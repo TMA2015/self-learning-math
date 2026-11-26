@@ -3007,5 +3007,271 @@
     "order": 22,
     "item_id": "THPT-TOP11-KFT22",
     "outcome_id": "TOP11-O22"
+  },
+  {
+    "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-TOP12-KFT01",
+    "outcome_id": "TOP12-O01"
+  },
+  {
+    "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-TOP12-P02",
+    "outcome_id": "TOP12-O02",
+    "source_context": {
+      "blob": "6fd684807c3cf16489ed91e4a573edc3d1b2a6bc",
+      "heading_id": "TOP12-M02",
+      "locator": "1.2. Góc đặc biệt và góc bù / Vận dụng",
+      "line": 79,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_REUSE_EXISTING_ID",
+      "remediation": "Nếu em nhầm sin của góc bù với cos, đọc **Kiến thức 1.2**. Tự đưa góc về góc nhọn trong **Bài luyện 5** và **Bài luyện 7** rồi kiểm dấu.",
+      "practice_orders": [
+        5,
+        7
+      ],
+      "original_practice_orders": [
+        5,
+        7
+      ],
+      "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    }
+  },
+  {
+    "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-TOP12-KFT03",
+    "outcome_id": "TOP12-O03"
+  },
+  {
+    "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-TOP12-P01",
+    "outcome_id": "TOP12-O04",
+    "source_context": {
+      "blob": "6fd684807c3cf16489ed91e4a573edc3d1b2a6bc",
+      "heading_id": "TOP12-M04",
+      "locator": "1.4. Hệ thức lượng giác và dấu / Vận dụng",
+      "line": 149,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_REUSE_EXISTING_ID",
+      "remediation": "Nếu chọn sai dấu sin, đọc Kiến thức 1.4 rồi làm Bài luyện 4; kiểm dấu trước khi lấy căn.",
+      "practice_orders": [
+        4
+      ],
+      "original_practice_orders": [
+        4,
+        19
+      ],
+      "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    }
+  },
+  {
+    "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-TOP12-KFT05",
+    "outcome_id": "TOP12-O05"
+  },
+  {
+    "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-TOP12-KFT06",
+    "outcome_id": "TOP12-O06"
+  },
+  {
+    "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 7,
+    "item_id": "THPT-TOP12-KFT07",
+    "outcome_id": "TOP12-O07"
+  },
+  {
+    "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 8,
+    "item_id": "THPT-TOP12-KFT08",
+    "outcome_id": "TOP12-O08"
+  },
+  {
+    "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 9,
+    "item_id": "THPT-TOP12-KFT09",
+    "outcome_id": "TOP12-O09"
+  },
+  {
+    "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 10,
+    "item_id": "THPT-TOP12-KFT10",
+    "outcome_id": "TOP12-O10"
+  },
+  {
+    "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 11,
+    "item_id": "THPT-TOP12-KFT11",
+    "outcome_id": "TOP12-O11"
+  },
+  {
+    "collection": "TOPIC:CD12:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 12,
+    "item_id": "THPT-TOP12-P11",
+    "outcome_id": "TOP12-O12",
+    "source_context": {
+      "blob": "6fd684807c3cf16489ed91e4a573edc3d1b2a6bc",
+      "heading_id": "TOP12-M12",
+      "locator": "3.4. Kiểm tra điều kiện và kết quả / Vận dụng",
+      "line": 428,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_REUSE_EXISTING_ID",
+      "remediation": "Nếu căn Heron báo lỗi, đọc Kiến thức 3.4 rồi làm Bài luyện 30; kiểm bất đẳng thức tam giác và góc trong.",
+      "practice_orders": [
+        30
+      ],
+      "original_practice_orders": [
+        29,
+        30
+      ],
+      "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    }
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-TOP13-KFT01",
+    "outcome_id": "TOP13-O01"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-TOP13-KFT02",
+    "outcome_id": "TOP13-O02"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-TOP13-KFT03",
+    "outcome_id": "TOP13-O03"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-TOP13-KFT04",
+    "outcome_id": "TOP13-O04"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-TOP13-KFT05",
+    "outcome_id": "TOP13-O05"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-TOP13-KFT06",
+    "outcome_id": "TOP13-O06"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 7,
+    "item_id": "THPT-TOP13-KFT07",
+    "outcome_id": "TOP13-O07"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 8,
+    "item_id": "THPT-TOP13-KFT08",
+    "outcome_id": "TOP13-O08"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 9,
+    "item_id": "THPT-TOP13-KFT09",
+    "outcome_id": "TOP13-O09"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 10,
+    "item_id": "THPT-TOP13-KFT10",
+    "outcome_id": "TOP13-O10"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 11,
+    "item_id": "THPT-G12-B06-P06",
+    "outcome_id": "TOP13-O11",
+    "source_context": {
+      "blob": "7e54d34b9eee75ab4b8f8e4f53ab40298e701493",
+      "heading_id": "TOP13-M11",
+      "locator": "3.1. Ba hướng không gian: từ hình bình hành đến hình hộp / Vận dụng",
+      "line": 371,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_REUSE_EXISTING_ID",
+      "remediation": "Nếu em dừng tại đỉnh C thay vì C′ khi còn vectơ \\(\\overrightarrow{AA'}\\), đọc **Kiến thức 3.1**, làm **Bài luyện 22** và **Bài luyện 43**. Hãy đi đủ ba phương trong hình hộp và phân biệt vectơ đường chéo với độ dài 13.",
+      "practice_orders": [
+        22,
+        43
+      ],
+      "original_practice_orders": [
+        22,
+        43
+      ],
+      "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    }
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 12,
+    "item_id": "THPT-TOP13-KFT12",
+    "outcome_id": "TOP13-O12"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 13,
+    "item_id": "THPT-TOP13-KFT13",
+    "outcome_id": "TOP13-O13"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 14,
+    "item_id": "THPT-TOP13-KFT14",
+    "outcome_id": "TOP13-O14"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 15,
+    "item_id": "THPT-TOP13-KFT15",
+    "outcome_id": "TOP13-O15"
+  },
+  {
+    "collection": "TOPIC:CD13:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 16,
+    "item_id": "THPT-TOP13-KFT16",
+    "outcome_id": "TOP13-O16"
   }
 ]
