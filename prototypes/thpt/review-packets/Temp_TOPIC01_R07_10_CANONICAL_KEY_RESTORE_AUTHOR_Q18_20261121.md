@@ -1,3 +1,25 @@
+<!-- TOP01_WORK1109_CURRENT_Q18_20261126 -->
+## CĐ01 — Q18 hiện hành · Work #1055 / X-G.5 · 26/11/2026
+
+SOURCE_BLOB: e93f1253ac0acb3e19547665a67d64344527e601
+SOURCE_COMMIT: 63183db8f69daf28424cc95581cc447919ad706d
+STANDARD_VERSION: 3.2.0
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_TARGETED + DELTA_B_SOURCE_EQUIVALENT
+AUTHOR_SELF_VERIFIED: AFFECTED_SCOPE
+CONTENT_STATE: CONTENT_READY
+S1: INHERITED_SNAPSHOT_SCOPED
+RELEASE_AUTHORIZATION: NO
+
+**Thực chứng:** Đã đọc lại toàn bộ 11 mục Kiến thức, 24 Practice và 11 public Replay; đối chiếu source bank 18 SGK (`95a554e31a613b8e215679fe6790738473d598df`) + 6 Topic (`89ae1cd2338f2c5c48b9af874a8b52b1306c8acd`). O03: giải nghĩa a|n trước ví dụ, không đảo đối tượng. O10: sáu trường hợp đầu mút, thêm hình trục số chính xác X=(-∞;3], Y=(1;+∞), giao (1;3], hợp R; SVG `f405493bc6eefedc2106bb93316d981eb36931ce` được kiểm tọa độ và chấm rỗng/đặc tại nguồn. O11: phân biệt số phần tử với trị tuyệt đối; Bài 23 giữ đề và rubric gốc về nghĩa/điểm, nói rõ A/B và cách vẽ bốn miền 15,9,12,6. Bài 7 kết luận chia hết tường minh từ k nguyên. Không đổi canonical bank, key, rubric weights, ID hay mode.
+
+**X-G.5:** Rà trọn ba phần; các biểu thức phức hợp/hiệu tập hợp, lượng từ, lũy thừa, phân số, khoảng, rubric toán và 11 Replay dùng LaTeX tương đương; chuyển hai công thức dính blockquote về inline hợp lệ. 524 cặp inline cân bằng, display độc lập, không còn ký hiệu phức hợp thô theo phép dò. 14/14 kiểm tra cấu trúc/nội dung đích thực thi PASS, gồm 24 ID duy nhất, 11/11 Replay trùng stem theo ID, 36/36 disclosure, marker giữ nguyên, kiểm tập bù, giao/hợp, số liệu Ven 42/48/50 và tọa độ SVG. Tự kiểm các đáp án trước/sau theo nghĩa, không tuyên bố byte-identical stem/solution/rubric sau chuyển LaTeX. Hai SVG gốc giữ nguyên; thêm một SVG trục số. Các phát hiện Work A01–A03 đã xử lý ở nguồn.
+
+**S1:** Đã đọc lại chứng cứ quét gốc SGK 20/11 `6d3a7195672b35c569f7829451b5f3e4703423cb`, pp5–11 B01, pp12–19 B02; delta không thêm họ kiến thức S1. Không tìm được bản PDF gốc trong tìm kiếm Drive lượt này, không tuyên bố quét lại PDF. Kế thừa đúng phạm vi nguồn đã khóa; kiểm toán học/PED mới chỉ phần delta. P0/P1=0 trong phần thay đổi. Không cấp NotebookLM độc lập mới, CI/browser/RELEASE chưa nghiệm thu. Q16: public only, NO_MASTERY, không RD1/Final Submit.
+
+Các phần bên dưới là lịch sử chứng cứ, không phải kết luận hiện hành cho blob mới.
+
+---
+
 <!-- TOP01_MASTER974_BANK_SELFCHECK_GAP_CLOSURE_20261121 -->
 ## CĐ01 — Bổ sung kiểm sâu 24 canonical và đường Đối chiếu 11 câu Tự kiểm tra (21/11/2026)
 
@@ -30,7 +52,7 @@
 ## 21/11/2026 — CĐ01 answer-completeness fix against original SGK canonical; no new mathematics
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 PACKET_ID: THPT-TOPIC01-LOGIC-SETS-FULL-R01
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
 CURRENT_SOURCE_BLOB: 9271a9784e343ea87981a67dae7dabcf69e4c0ed
@@ -59,8 +81,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 9271a9784e343ea87981a67dae7dabcf69e4c0ed
-ACADEMIC_SOURCE_BLOB: 9271a9784e343ea87981a67dae7dabcf69e4c0ed
+SOURCE_BLOB: e93f1253ac0acb3e19547665a67d64344527e601
+ACADEMIC_SOURCE_BLOB: e93f1253ac0acb3e19547665a67d64344527e601
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R06_STUDENT_FIRST_24_CANONICAL_VISIBLE_20261115.md
 PREVIOUS_SOURCE_BLOB: d4eafd811066997ee64de70a49c5da4a7ff26dcd
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md
