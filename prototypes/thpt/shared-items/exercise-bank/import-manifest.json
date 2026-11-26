@@ -20512,6 +20512,142 @@
       },
       "remaining": "Next G11 ChIV–VI, three chapters per owner instruction; separate FirstTry/public selfcheck/Written and depth/source review.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp101": {
+      "scope": "G11 ChIV–VI B10–B21: 101 canonical public formative C/P records; 10 separate KFT unchanged; three-chapter batch",
+      "baseline_commit": "623959fb94a5b88a11f90240e3b49508269c5f3c",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "source_projection": {
+        "paths": [
+          "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+          "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+          "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js"
+        ],
+        "current_main_and_import_blobs": [
+          "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+          "cbe3608a8551b85440e955835706f7046d88ef7d",
+          "33cf4229baa63ac70b4ca1b640a5be8414ed54c1"
+        ],
+        "ids_reviewed": 101,
+        "decision": "Retain source pointers, content_version, candidate states, previously strengthened variants and placements; no public projection edits."
+      },
+      "item_shards": [
+        {
+          "path": "items/g11-chiv.json",
+          "before": "e41a9bfdf1f5880eca833d13b9bc2119e481dfd3",
+          "after": "92a416321ce5f2df225b606c5a388d391ae2c612",
+          "reviewed": 30,
+          "changed": 30,
+          "other_unchanged": 4,
+          "commits": [
+            "f57165fccadd11fd7de43ee2be8118a4fe625472",
+            "a5de8f1c6fd2cfc5519652db278618f38110ad16"
+          ],
+          "fields": {
+            "stem": 28,
+            "answer_key": 14,
+            "worked_solution": 30,
+            "hints": 30,
+            "remediation": 30
+          }
+        },
+        {
+          "path": "items/g11-chv.json",
+          "before": "9da6c315018b7fba57303fefd8668ec583ec57fa",
+          "after": "29ae455210886539dffbd8773f04388d8d8183c2",
+          "reviewed": 30,
+          "changed": 30,
+          "other_unchanged": 2,
+          "commits": [
+            "ca8014151161688922e933e76b11422a10d392b4",
+            "4b672befd1482c54eed4515d9ba246ab2fbd0a2c"
+          ],
+          "fields": {
+            "stem": 30,
+            "answer_key": 18,
+            "worked_solution": 30,
+            "hints": 27,
+            "remediation": 30
+          }
+        },
+        {
+          "path": "items/g11-chvi.json",
+          "before": "07045f4bfa7de40fe60f3f1dd661665e58ccea92",
+          "after": "b0ebc95dab7730b97dd043b7b6a1393573ad1f06",
+          "reviewed": 41,
+          "changed": 41,
+          "other_unchanged": 4,
+          "commits": [
+            "f39f1f56b51f66674aa061c109b6016997828b0c",
+            "9a2791b320df6ad9eb22cf3e46cf2c6eda1e8e86"
+          ],
+          "fields": {
+            "stem": 41,
+            "answer_key": 29,
+            "worked_solution": 41,
+            "hints": 39,
+            "remediation": 41
+          }
+        }
+      ],
+      "checks": {
+        "formative_reviewed": 101,
+        "formative_changed": 101,
+        "fields_changed": {
+          "stem": 99,
+          "answer_key": 61,
+          "worked_solution": 101,
+          "hints": 96,
+          "remediation": 101
+        },
+        "separate_kft_unchanged": 10,
+        "sgk_placement_blob": "ed0461148642c53f6849d943a6f1ffbbe5a11016",
+        "sgk_placements": 153,
+        "sgk_roles": {
+          "SGK_CORE": 35,
+          "SGK_PRACTICE": 62,
+          "SGK_APPLICATION": 4,
+          "CLIENT_SELF_CHECK_NO_MASTERY": 50,
+          "SGK_FIRST_TRY": 2
+        },
+        "topic_placement_shards_scanned": 22,
+        "topic_placements": {
+          "CD04": 59,
+          "CD07": 4,
+          "CD08": 30,
+          "CD15": 30
+        },
+        "topic_blobs": {
+          "CD04": "a4b5d1d3c810fe92382bc48400a94de0775d22b0",
+          "CD07": "6aa535191c10e5cd25e64cef75440a3ba9a00794",
+          "CD08": "397aa8601b45f6740408b192319e972a1a4138e6",
+          "CD15": "53e66705d922e5dd596a49673644f32ab2a010e1"
+        },
+        "metadata_and_interaction_unchanged": true,
+        "answer_meanings_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "targeted_raw_math_scan_residual": 0,
+        "manual_geometry_reasoning_reviewed": 30,
+        "supporting_arithmetic_and_example_checks": {
+          "V": 30,
+          "VI": 41
+        }
+      },
+      "findings": [
+        "ChIV: distinguish incidence and coplanarity, prove section and parallelism conditions, projection degeneracy. Replace 29 generic D1 hints and one existing hint with targeted prompts; correct B10-P01 remediation wrongly naming C instead of A; B12-P03 remediation now refers to d,e rather than unrelated MN,AB; improve B11-P03 reasoning for pyramid.",
+        "ChV: distinguish limits from point values and bounds, signs of one-sided infinite limits, absolute value at negative infinity, series as limit of partial sums, endpoint continuity and existence vs uniqueness; preserve saturation model threshold 45 hours.",
+        "ChVI: positive base and negative exponent, roots versus equations, log domain before transformations, range attainability, inverse restrictions, strict discrete threshold year 3. Independent numerical/example spot checks 71/71; not formal proof by numeric tests. Three historical public source projections inspected; no fresh primary SGK/SBT PDFs or separate knowledge-page audit, no full Academic/PED/browser verdict. Shared public selfcheck/FirstTry placements refer to improved canonical content; separate KFT unchanged."
+      ],
+      "phase_totals": {
+        "chapters": 15,
+        "total_thpt_chapters": 24,
+        "reviewed": 422,
+        "changed": 421,
+        "unchanged_reviewed": 1
+      },
+      "remaining": "Next G11 ChVII–IX, then G12 ChI–III, three chapters per turn; separate FirstTry/public selfcheck/Written and depth/source review.",
+      "release_authorization": false
     }
   }
 }
