@@ -2582,10 +2582,10 @@
   },
   {
     "item_id": "THPT-TOP18-T01",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
-    "stem": "A trùng B. Vectơ AB có độ dài và hướng thế nào?",
-    "answer_key": "AB⃗=0⃗, độ dài 0, không có hướng hình học riêng.",
-    "worked_solution": "Khi A=B, AB⃗ là vectơ-không, có độ dài bằng 0 và không có hướng hình học riêng. Theo quy ước, vectơ-không cùng phương, cùng hướng với mọi vectơ; điều này không cho phép xác định góc riêng của nó.\n\n**Kiểm lỗi**\n\nVectơ-không dài 0 và không có hướng riêng, dù vẽ mũi tên thế nào; kiểm xem hai đầu có trùng nhau, không dùng nó để đo góc. Quay về **Kiến thức 1.1**, sau đó tự giải **Bài luyện 3** và **Bài luyện 5** trong Luyện tập.",
+    "content_version": "TOP18-R04-CP25-20261126-T01",
+    "stem": "A trùng B. Vectơ \\(\\overrightarrow{AB}\\) có độ dài bao nhiêu? Theo quy ước, nó có cùng hướng và cùng phương với mọi vectơ không?",
+    "answer_key": "Độ dài bằng 0; có, cùng hướng và cùng phương với mọi vectơ theo quy ước SGK.",
+    "worked_solution": "Độ dài bằng 0; có, cùng hướng và cùng phương với mọi vectơ theo quy ước SGK. Vectơ-không không biểu diễn hướng dịch chuyển riêng, nên không xác định góc với vectơ khác.\n\n**Kiểm lỗi**\n\nNếu hai đầu trùng nhau, độ dài bằng 0. Phân biệt quy ước cùng hướng, cùng phương với mọi vectơ và việc không có hướng dịch chuyển riêng; không suy ra góc bằng \\(0^\\circ\\) từ quy ước ấy. Quay về **Kiến thức 1.1**, sau đó tự giải **Bài luyện 3** và **Bài luyện 5** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B06-O01",
@@ -2603,13 +2603,16 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+      "blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
       "heading_id": "THPT-TOP18-T01",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd18/kien-thuc.md",
         "blob": "97350084db7e5d979d7f1d4c92c2810bf7116b9f",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+      "previous_content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP25_WORK_SOURCE_RECONCILIATION; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
@@ -2682,10 +2685,10 @@
   },
   {
     "item_id": "THPT-TOP18-T04",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho vectơ u⃗ khác vectơ-không. 0u⃗ là vectơ nào? Phân biệt hướng hình học riêng của 0u⃗ với quy ước cùng hướng.",
-    "answer_key": "0u⃗=0⃗; độ dài 0, không có hướng hình học riêng; theo quy ước cùng hướng với u⃗.",
-    "worked_solution": "Tích 0u⃗ là vectơ-không. Theo quy ước trong học liệu SGK KNTT, vectơ-không cùng phương, cùng hướng với mọi vectơ, kể cả u⃗. Tuy nhiên, nó không có hướng hình học riêng và không dùng để xác định góc giữa hai vectơ.\n\n**Kiểm lỗi**\n\nNhân k làm độ dài nhân |k|; k âm đảo chiều và k=0 cho vectơ không, không có độ dài âm. Quay về **Kiến thức 1.4**, sau đó tự giải **Bài luyện 16** và **Bài luyện 20** trong Luyện tập.",
+    "content_version": "TOP18-R04-CP25-20261126-T04",
+    "stem": "Cho \\(\\vec u\\ne\\vec0\\). Theo quy ước SGK, \\(0\\vec u\\) có cùng hướng với \\(\\vec u\\) không? Có xác định góc giữa chúng không?",
+    "answer_key": "Có, cùng hướng và cùng phương theo quy ước; góc giữa chúng không xác định.",
+    "worked_solution": "Có. Vì \\(0\\vec u=\\vec0\\), theo quy ước SGK nó cùng hướng và cùng phương với \\(\\vec u\\). Tuy nhiên góc giữa chúng không xác định.\n\n**Kiểm lỗi**\n\nVới vectơ khác không, dấu của k quyết định chiều khi \\(k\\ne0\\). Khi \\(k=0\\), kết quả là vectơ-không: cùng hướng và cùng phương theo quy ước, nhưng không có góc xác định. Độ dài không âm. Quay về **Kiến thức 1.4**, sau đó tự giải **Bài luyện 16** và **Bài luyện 20** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B06-O04",
@@ -2703,13 +2706,16 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+      "blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
       "heading_id": "THPT-TOP18-T04",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd18/kien-thuc.md",
         "blob": "97350084db7e5d979d7f1d4c92c2810bf7116b9f",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+      "previous_content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP25_WORK_SOURCE_RECONCILIATION; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
@@ -2980,10 +2986,10 @@
   },
   {
     "item_id": "THPT-TOP18-T13",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trung điểm A=(0,0,2), B=(2,4,0)?",
-    "answer_key": "M(1;2;1).",
-    "worked_solution": "M=(1,2,1).\n\n**Kiểm lỗi**\n\nTrung điểm lấy trung bình của hai điểm; trọng tâm tam giác là trung bình tọa độ ba đỉnh, không lấy hiệu. Quay về **Kiến thức 3.3**, sau đó tự giải **Bài luyện 61** và **Bài luyện 65** trong Luyện tập.",
+    "content_version": "TOP18-R04-CP25-20261126-T13",
+    "stem": "Cho tam giác ABC với \\(A(0;0;2),\\ B(2;4;0),\\ C(4;2;4)\\). Tìm trung điểm M của AB và trọng tâm G của tam giác ABC.",
+    "answer_key": "\\(M(1;2;1),\\ G(2;2;2)\\).",
+    "worked_solution": "\\(M(1;2;1)\\) là trung bình tọa độ của A và B. Trọng tâm G có tọa độ trung bình của cả ba đỉnh: \\(G(2;2;2)\\), vì \\(\\frac{0+2+4}3=2\\), \\(\\frac{0+4+2}3=2\\) và \\(\\frac{2+0+4}3=2\\).\n\n**Kiểm lỗi**\n\nTrung điểm lấy trung bình của hai điểm; trọng tâm tam giác là trung bình tọa độ ba đỉnh, không lấy hiệu. Quay về **Kiến thức 3.3**, sau đó tự giải **Bài luyện 61** và **Bài luyện 65** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B08-O03"
@@ -3000,13 +3006,16 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+      "blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
       "heading_id": "THPT-TOP18-T13",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd18/kien-thuc.md",
         "blob": "97350084db7e5d979d7f1d4c92c2810bf7116b9f",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+      "previous_content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP25_WORK_SOURCE_RECONCILIATION; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
@@ -3046,10 +3055,10 @@
   },
   {
     "item_id": "THPT-TOP18-T15",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Độ dài vectơ u=(2,−1,2)?",
-    "answer_key": "3.",
-    "worked_solution": "√(4+1+4)=3.\n\n**Kiểm lỗi**\n\nĐộ dài là căn tổng **bình phương cả ba** độ chênh, không phải tổng các chênh lệch. Quay về **Kiến thức 3.5**, sau đó tự giải **Bài luyện 74** và **Bài luyện 75** trong Luyện tập.",
+    "content_version": "TOP18-R04-CP25-20261126-T15",
+    "stem": "Độ dài vectơ \\(\\vec u=(2;-1;2)\\) bằng bao nhiêu?",
+    "answer_key": "\\(3\\).",
+    "worked_solution": "\\(|\\vec u|=\\sqrt{4+1+4}=3\\).\n\n**Kiểm lỗi**\n\nĐộ dài là căn tổng **bình phương cả ba** độ chênh, không phải tổng các chênh lệch. Quay về **Kiến thức 3.5**, sau đó tự giải **Bài luyện 74** và **Bài luyện 75** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B08-O05"
@@ -3066,13 +3075,16 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+      "blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
       "heading_id": "THPT-TOP18-T15",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd18/kien-thuc.md",
         "blob": "97350084db7e5d979d7f1d4c92c2810bf7116b9f",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+      "previous_content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP25_WORK_SOURCE_RECONCILIATION; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
@@ -3574,10 +3586,10 @@
   },
   {
     "item_id": "THPT-TOP18-T32",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Đường có hướng (0,0,1), mặt z=0. Góc đường–mặt?",
-    "answer_key": "90°.",
-    "worked_solution": "90° vì hướng đường trùng pháp tuyến.\n\n**Kiểm lỗi**\n\nGóc giữa đường và mặt **phụ** với góc nhọn giữa hướng đường và pháp tuyến; dùng sinθ=|u·n|/(|u||n|). Quay về **Kiến thức 6.2**, sau đó tự giải **Bài luyện 156** và **Bài luyện 159** trong Luyện tập.",
+    "content_version": "TOP18-R04-CP25-20261126-T32",
+    "stem": "Đường có hướng \\((0;0;1)\\), mặt \\(z=0\\). Góc đường–mặt bằng bao nhiêu?",
+    "answer_key": "\\(90^\\circ\\).",
+    "worked_solution": "\\(90^\\circ\\) vì hướng đường trùng phương pháp tuyến, nên hình chiếu của đường co thành một điểm. Công thức cho \\(\\sin\\theta=1\\).\n\n**Kiểm lỗi**\n\nGóc giữa đường và mặt **phụ** với góc không tù giữa hướng đường và phương pháp tuyến; dùng \\(\\sin\\theta=\\frac{|\\vec u\\cdot\\vec n|}{|\\vec u||\\vec n|}\\). Quay về **Kiến thức 6.2**, sau đó tự giải **Bài luyện 156** và **Bài luyện 159** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B16-O02"
@@ -3594,13 +3606,16 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+      "blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
       "heading_id": "THPT-TOP18-T32",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd18/kien-thuc.md",
         "blob": "97350084db7e5d979d7f1d4c92c2810bf7116b9f",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+      "previous_content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP25_WORK_SOURCE_RECONCILIATION; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
