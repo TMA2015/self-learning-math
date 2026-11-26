@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-TOP20-P01",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Rút đều một thẻ trong 10 thẻ đánh số 0 đến 9. Viết Ω và biến cố A “số chẵn”.",
-    "answer_key": "Ω={0,1,2,3,4,5,6,7,8,9}; A={0,2,4,6,8}.",
-    "worked_solution": "**Lời giải:** Vì phép thử rút đều một thẻ và chỉ ghi số trên thẻ nên không gian mẫu là \\(\\Omega=\\{0,1,2,3,4,5,6,7,8,9\\}\\). Một số nguyên chẵn khi chia hết cho 2; số 0 cũng là số chẵn. Do đó biến cố cần viết là \\(A=\\{0,2,4,6,8\\}\\), gồm năm kết quả sơ cấp. Bài yêu cầu **mô tả biến cố**, không yêu cầu tính xác suất.",
+    "stem": "Rút đều một thẻ trong 10 thẻ đánh số 0 đến 9. Viết không gian mẫu \\(\\Omega\\) và biến cố A “số chẵn”.",
+    "answer_key": "\\(\\Omega=\\{0,1,2,3,4,5,6,7,8,9\\}\\); \\(A=\\{0,2,4,6,8\\}\\).",
+    "worked_solution": "Mỗi số từ 0 đến 9 có thể xuất hiện, nên \\(\\Omega=\\{0,1,2,3,4,5,6,7,8,9\\}\\). Số nguyên chẵn khi chia hết cho 2; số 0 cũng là số chẵn. Do đó \\(A=\\{0,2,4,6,8\\}\\), gồm năm kết quả sơ cấp. Đề yêu cầu mô tả biến cố, không yêu cầu tính xác suất.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B26-EXPERIMENT_SAMPLE_SPACE",
@@ -34,8 +34,8 @@
     "item_id": "THPT-TOP20-P02",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
     "stem": "Gieo xúc xắc sáu mặt đánh số 1–6 một lần. Viết biến cố A: kết quả bé hơn 2; B: kết quả lớn hơn 6; C: kết quả không lớn hơn 6. Phân loại mỗi biến cố.",
-    "answer_key": "A={1}, có thể nhưng không chắc chắn; B=∅, không thể; C=Ω={1,2,3,4,5,6}, chắc chắn.",
-    "worked_solution": "Ω={1,2,3,4,5,6}. A chỉ gồm 1, là tập con khác rỗng và khác Ω nên có thể xảy ra nhưng không chắc chắn. Không có mặt nào lớn hơn 6 nên B=∅. Mọi mặt đều không lớn hơn 6 nên C=Ω. Việc phân loại dựa trên tập kết quả, không cần tính xác suất.",
+    "answer_key": "\\(A=\\{1\\}\\): có thể nhưng không chắc chắn; \\(B=\\varnothing\\): không thể; \\(C=\\Omega=\\{1,2,3,4,5,6\\}\\): chắc chắn.",
+    "worked_solution": "\\(\\Omega=\\{1,2,3,4,5,6\\}\\). A chỉ gồm 1, là tập con khác rỗng và khác \\(\\Omega\\) nên có thể xảy ra nhưng không chắc chắn. Không có mặt nào lớn hơn 6 nên \\(B=\\varnothing\\). Mọi mặt đều không lớn hơn 6 nên \\(C=\\Omega\\). Việc phân loại dựa trên tập kết quả, không cần tính xác suất.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B26-EVENT_SUBSET"
@@ -46,7 +46,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Viết tập kết quả thỏa điều kiện và so với Ω."
+      "Viết tập kết quả thỏa từng điều kiện và so với không gian mẫu \\(\\Omega\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -58,14 +58,14 @@
       "heading_id": "THPT-TOP20-P02"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Biến cố chắc chắn bằng toàn bộ Ω; biến cố không thể là tập rỗng. Ôn CĐ20 mục 1.1; luyện THPT-G11-CHVIII-B28-C02."
+    "remediation": "Biến cố chắc chắn bằng toàn bộ \\(\\Omega\\); biến cố không thể là tập rỗng \\(\\varnothing\\). Ôn CĐ20 mục 1.1; luyện THPT-G11-CHVIII-B28-C02."
   },
   {
     "item_id": "THPT-TOP20-P03",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Túi có 10 phiếu phân biệt, 3 phiếu ghi giải A, 2 phiếu ghi giải B, 5 phiếu không thưởng. Rút đều một phiếu. Tính xác suất trúng thưởng và giải thích vì sao không phải 2/3.",
-    "answer_key": "1/2; ba nhãn A,B,không thưởng không đồng khả năng.",
-    "worked_solution": "Mỗi phiếu vật lý là một kết quả sơ cấp đồng khả năng. Có 3+2=5 phiếu trúng trong 10 phiếu nên P(trúng)=5/10=1/2. Ba nhãn có số phiếu tương ứng 3,2,5 nên xác suất của chúng khác nhau; không thể đếm 2 nhãn trúng trên 3 nhãn để tính 2/3.",
+    "stem": "Túi có 10 phiếu phân biệt, 3 phiếu ghi giải A, 2 phiếu ghi giải B, 5 phiếu không thưởng. Rút đều một phiếu. Tính xác suất trúng thưởng và giải thích vì sao không phải \\(\\frac23\\).",
+    "answer_key": "\\(\\frac12\\); ba nhãn A, B, không thưởng không đồng khả năng.",
+    "worked_solution": "Mỗi phiếu vật lý là một kết quả sơ cấp đồng khả năng. Có \\(3+2=5\\) phiếu trúng trong 10 phiếu nên \\(P(\\text{trúng})=\\frac5{10}=\\frac12\\). Ba nhãn có số phiếu tương ứng 3, 2, 5 nên xác suất khác nhau; không thể đếm 2 nhãn trúng trên 3 nhãn để tính \\(\\frac23\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B26-CLASSICAL_RATIO"
@@ -88,14 +88,14 @@
       "heading_id": "THPT-TOP20-P03"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Tỉ số n(A)/n(Ω) chỉ dùng khi các kết quả sơ cấp đồng khả năng. Ôn CĐ20 mục 1.2; luyện THPT-G10-B26-C02."
+    "remediation": "Tỉ số \\(\\frac{n(A)}{n(\\Omega)}\\) chỉ dùng khi các kết quả sơ cấp đồng khả năng. Ôn CĐ20 mục 1.2; luyện THPT-G10-B26-C02."
   },
   {
     "item_id": "THPT-TOP20-P04",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong 12 thẻ khác nhau, có 4 thẻ bị lỗi. Rút đều một thẻ. Tính P(không lỗi) bằng biến cố đối.",
-    "answer_key": "2/3.",
-    "worked_solution": "**Lời giải:** Gọi \\(B\\) là biến cố “rút được thẻ lỗi”. Vì có 4 thẻ lỗi trong 12 thẻ được rút đều, \\(P(B)=4/12=1/3\\). Biến cố “không lỗi” chính là \\(\\bar B\\), nên \\(P(\\bar B)=1-P(B)=1-\\dfrac{4}{12}=\\dfrac{8}{12}=\\dfrac23\\). Kiểm lại: tám thẻ còn lại đều không lỗi, khớp với xác suất vừa tìm.",
+    "stem": "Trong 12 thẻ khác nhau, có 4 thẻ bị lỗi. Rút đều một thẻ. Tính xác suất không lỗi bằng biến cố đối.",
+    "answer_key": "\\(\\frac23\\).",
+    "worked_solution": "Gọi B là biến cố “rút được thẻ lỗi”. Vì có 4 thẻ lỗi trong 12 thẻ được rút đều, \\(P(B)=\\frac4{12}=\\frac13\\). Biến cố “không lỗi” là \\(\\overline B\\), nên \\(P(\\overline B)=1-P(B)=1-\\frac4{12}=\\frac8{12}=\\frac23\\). Kiểm lại: tám thẻ còn lại đều không lỗi, khớp với xác suất vừa tìm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B26-COMPLEMENT"
@@ -124,8 +124,8 @@
     "item_id": "THPT-TOP20-P05",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong 40 vé phân biệt, có đúng một vé trúng; rút đều một vé. So xác suất trúng với hai mô hình khác: không có vé trúng, và mọi vé đều trúng. Có thể kết luận gì từ xác suất rất nhỏ trong mô hình này?",
-    "answer_key": "1/40; 0; 1. Xác suất 1/40 nhỏ nhưng vẫn có thể trúng.",
-    "worked_solution": "Mọi vé đồng khả năng, nên xác suất trúng lần lượt là 1/40, 0/40=0 và 40/40=1. Trong mô hình hữu hạn đồng khả năng này, trường hợp 0 là biến cố rỗng, trường hợp 1 là toàn bộ Ω. Một vé trúng vẫn là kết quả có thể xuất hiện dù xác suất nhỏ.",
+    "answer_key": "\\(\\frac1{40}\\); 0; 1. Xác suất \\(\\frac1{40}\\) nhỏ nhưng vẫn có thể trúng.",
+    "worked_solution": "Mọi vé đồng khả năng, nên xác suất trúng lần lượt là \\(\\frac1{40}\\), \\(\\frac0{40}=0\\) và \\(\\frac{40}{40}=1\\). Trong mô hình hữu hạn đồng khả năng này, xác suất 0 ứng với biến cố rỗng, xác suất 1 ứng với toàn bộ \\(\\Omega\\). Một vé trúng vẫn là kết quả có thể xuất hiện dù xác suất nhỏ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B26-SCOPE_SMALL_PROBABILITY"
@@ -148,14 +148,14 @@
       "heading_id": "THPT-TOP20-P05"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Biến cố hiếm khác biến cố không thể; không suy rộng P=0 thành không thể trong mọi mô hình liên tục. Ôn CĐ20 mục 1.3; luyện THPT-G10-B26-P04."
+    "remediation": "Biến cố hiếm khác biến cố không thể; không suy rộng xác suất 0 thành không thể trong mọi mô hình liên tục. Ôn CĐ20 mục 1.3; luyện THPT-G10-B26-P04."
   },
   {
     "item_id": "THPT-TOP20-P06",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Bốn thẻ phân biệt được ghi 1, 2, 3, 4. Rút lần lượt hai thẻ **không hoàn lại**, mỗi lượt chọn đều trong các thẻ còn lại; chỉ ghi **tổng hai số**. So sánh xác suất tổng bằng 5 và tổng bằng 7. Có được xem các tổng có thể xuất hiện là đồng khả năng không?",
-    "answer_key": "P(S=5)=1/3; P(S=7)=1/6; các tổng không đồng khả năng.",
-    "worked_solution": "**Lời giải:** Vì rút **lần lượt và không hoàn lại**, mỗi kết quả sơ cấp là một cặp có thứ tự \\((a,b)\\) với \\(a\\ne b\\). Có \\(4\\cdot3=12\\) cặp đồng khả năng. Tổng bằng 5 khi rút các cặp \\((1,4),(4,1),(2,3),(3,2)\\), nên \\(P(S=5)=\\dfrac4{12}=\\dfrac13\\). Tổng bằng 7 chỉ có \\((3,4),(4,3)\\), nên \\(P(S=7)=\\dfrac2{12}=\\dfrac16\\). Vì hai xác suất khác nhau, các giá trị tổng **không đồng khả năng**, dù từng cặp có thứ tự đồng khả năng.",
+    "stem": "Bốn thẻ phân biệt được ghi 1, 2, 3, 4. Rút lần lượt hai thẻ không hoàn lại, mỗi lượt chọn đều trong các thẻ còn lại; chỉ ghi tổng hai số. So sánh xác suất tổng bằng 5 và tổng bằng 7. Có được xem các tổng có thể xuất hiện là đồng khả năng không?",
+    "answer_key": "\\(P(S=5)=\\frac13\\); \\(P(S=7)=\\frac16\\); các tổng không đồng khả năng.",
+    "worked_solution": "Gọi S là tổng hai số. Vì rút lần lượt và không hoàn lại, mỗi kết quả sơ cấp là một cặp có thứ tự \\((a;b)\\) với \\(a\\ne b\\). Có \\(4\\cdot3=12\\) cặp đồng khả năng. Tổng bằng 5 khi rút các cặp \\((1;4),(4;1),(2;3),(3;2)\\), nên \\(P(S=5)=\\frac4{12}=\\frac13\\). Tổng bằng 7 chỉ có \\((3;4),(4;3)\\), nên \\(P(S=7)=\\frac2{12}=\\frac16\\). Vì hai xác suất khác nhau, các giá trị tổng không đồng khả năng, dù từng cặp có thứ tự đồng khả năng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B27-EQUIPROBABLE_MODELLING"
@@ -183,9 +183,9 @@
   {
     "item_id": "THPT-TOP20-P07",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Từ 7 thẻ khác nhau, trong đó có 3 thẻ ghi sao, lấy đều 2 thẻ cùng lúc (không xét thứ tự). Tính P(cả hai sao).",
-    "answer_key": "1/7.",
-    "worked_solution": "**Lời giải:** Hai thẻ được lấy **cùng lúc**, không phân biệt thẻ nào được chọn trước. Do đó một kết quả sơ cấp là một nhóm hai thẻ, có \\(\\binom72=21\\) nhóm đồng khả năng. Muốn cả hai đều ghi sao, ta phải chọn cả hai trong ba thẻ sao, nên có \\(\\binom32=3\\) nhóm thuận lợi. Xác suất là \\(P=\\dfrac{\\binom32}{\\binom72}=\\dfrac3{21}=\\dfrac17\\). Cả tử và mẫu đều đếm nhóm **không có thứ tự**.",
+    "stem": "Từ 7 thẻ khác nhau, trong đó có 3 thẻ ghi sao, lấy đều 2 thẻ cùng lúc (không xét thứ tự). Tính xác suất cả hai thẻ ghi sao.",
+    "answer_key": "\\(\\frac17\\).",
+    "worked_solution": "Hai thẻ được lấy cùng lúc, không phân biệt thẻ nào được chọn trước. Do đó một kết quả sơ cấp là một nhóm hai thẻ, có \\(C_7^2=21\\) nhóm đồng khả năng. Muốn cả hai đều ghi sao, phải chọn cả hai trong ba thẻ sao, nên có \\(C_3^2=3\\) nhóm thuận lợi. Xác suất là \\(P=\\frac{C_3^2}{C_7^2}=\\frac3{21}=\\frac17\\). Cả tử và mẫu đều đếm nhóm không có thứ tự.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B27-COUNTING_OUTCOMES",
@@ -214,9 +214,9 @@
   {
     "item_id": "THPT-TOP20-P08",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Túi có 3 bóng đỏ và 5 bóng xanh phân biệt. Chọn đều 3 bóng cùng lúc. Tính P(ít nhất một bóng đỏ) bằng biến cố đối và kiểm lại bằng cách đếm 1, 2 hoặc 3 bóng đỏ.",
-    "answer_key": "23/28.",
-    "worked_solution": "Có C(8,3)=56 nhóm đồng khả năng. Biến cố đối là 3 bóng đều xanh, có C(5,3)=10 nhóm. P(ít nhất một đỏ)=1−10/56=46/56=23/28. Kiểm trực tiếp: đúng 1 đỏ có C(3,1)C(5,2)=30; đúng 2 đỏ có C(3,2)C(5,1)=15; đúng 3 đỏ có 1. Tổng 46 nhóm, khớp.",
+    "stem": "Túi có 3 bóng đỏ và 5 bóng xanh phân biệt. Chọn đều 3 bóng cùng lúc. Tính xác suất ít nhất một bóng đỏ bằng biến cố đối và kiểm lại bằng cách đếm 1, 2 hoặc 3 bóng đỏ.",
+    "answer_key": "\\(\\frac{23}{28}\\).",
+    "worked_solution": "Có \\(C_8^3=56\\) nhóm đồng khả năng. Biến cố đối là ba bóng đều xanh, có \\(C_5^3=10\\) nhóm. Xác suất cần tìm là \\(1-\\frac{10}{56}=\\frac{46}{56}=\\frac{23}{28}\\). Kiểm trực tiếp: đúng 1 đỏ có \\(C_3^1C_5^2=30\\) nhóm; đúng 2 đỏ có \\(C_3^2C_5^1=15\\) nhóm; đúng 3 đỏ có \\(C_3^3=1\\) nhóm. Tổng \\(30+15+1=46\\) nhóm, khớp.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B27-COMPLEMENT_PROBABILITY"
@@ -244,9 +244,9 @@
   {
     "item_id": "THPT-TOP20-P09",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tung một đồng xu cân đối ba lần độc lập. Vẽ cây ba tầng hoặc liệt kê chuỗi có thứ tự để tính xác suất **lượt đầu và lượt cuối đều ngửa**, không giới hạn lượt ở giữa.",
-    "answer_key": "1/4; NNN và NSN (N: ngửa, S: sấp).",
-    "worked_solution": "**Lời giải:** Ba lần tung đồng xu cân đối, độc lập tạo \\(2^3=8\\) chuỗi có thứ tự đồng khả năng. Đề chỉ ràng buộc **lượt đầu và lượt cuối ngửa**; lượt giữa có thể ngửa hoặc sấp. Vì vậy có đúng hai chuỗi thuận lợi: **NNN** và **NSN**. Xác suất cần tìm là \\(P=\\dfrac28=\\dfrac14\\). Khi lập cây, phải giữ vị trí của ba lượt trên từng đường đi; đếm theo tổng số mặt ngửa sẽ làm mất thông tin đề yêu cầu.",
+    "stem": "Tung một đồng xu cân đối ba lần độc lập. Vẽ cây ba tầng hoặc liệt kê chuỗi có thứ tự để tính xác suất lượt đầu và lượt cuối đều ngửa, không giới hạn lượt ở giữa.",
+    "answer_key": "\\(\\frac14\\); NNN và NSN (N: ngửa, S: sấp).",
+    "worked_solution": "Ba lần tung đồng xu cân đối, độc lập tạo \\(2^3=8\\) chuỗi có thứ tự đồng khả năng. Đề chỉ ràng buộc lượt đầu và lượt cuối ngửa; lượt giữa có thể ngửa hoặc sấp. Vì vậy có đúng hai chuỗi thuận lợi: NNN và NSN. Xác suất cần tìm là \\(P=\\frac28=\\frac14\\). Khi lập cây, giữ vị trí ba lượt trên từng đường đi; đếm theo tổng số mặt ngửa sẽ làm mất thông tin đề yêu cầu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B27-TREE_SEQUENCE"
@@ -274,9 +274,9 @@
   {
     "item_id": "THPT-TOP20-P10",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hộp 5 thẻ phân biệt gồm 2 đỏ, 3 xanh. Rút đều liên tiếp hai thẻ. Tính P(cả hai đỏ) khi (a) không hoàn lại; (b) hoàn lại thẻ đầu và trộn đều. Dùng đếm cặp có thứ tự.",
-    "answer_key": "(a) 1/10; (b) 4/25.",
-    "worked_solution": "(a) Có 5·4=20 cặp đồng khả năng với hai thẻ khác nhau; 2·1=2 cặp đỏ–đỏ, xác suất 2/20=1/10. (b) Có 5·5=25 cặp đồng khả năng, cho phép cùng một thẻ xuất hiện hai lượt; 2·2=4 cặp đỏ–đỏ, xác suất 4/25. Hai mô hình có mẫu và số cặp thuận lợi khác nhau.",
+    "stem": "Hộp 5 thẻ phân biệt gồm 2 đỏ, 3 xanh. Rút đều liên tiếp hai thẻ. Tính xác suất cả hai đỏ khi (a) không hoàn lại; (b) hoàn lại thẻ đầu và trộn đều. Dùng đếm cặp có thứ tự.",
+    "answer_key": "(a) \\(\\frac1{10}\\); (b) \\(\\frac4{25}\\).",
+    "worked_solution": "(a) Có \\(5\\cdot4=20\\) cặp đồng khả năng với hai thẻ khác nhau; \\(2\\cdot1=2\\) cặp đỏ–đỏ, xác suất \\(\\frac2{20}=\\frac1{10}\\). (b) Có \\(5\\cdot5=25\\) cặp đồng khả năng, cho phép cùng một thẻ xuất hiện hai lượt; \\(2\\cdot2=4\\) cặp đỏ–đỏ, xác suất \\(\\frac4{25}\\). Hai mô hình có số kết quả sơ cấp và số cặp thuận lợi khác nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B27-MULTISTEP_CONTEXT"
@@ -304,9 +304,9 @@
   {
     "item_id": "THPT-TOP20-P11",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Gieo xúc xắc: A=ra số lẻ, B=ra số không nhỏ hơn 5. Viết A∩B và A∪B.",
-    "answer_key": "A∩B={5}; A∪B={1,3,5,6}.",
-    "worked_solution": "**Lời giải:** Trên không gian mẫu \\(\\Omega=\\{1,2,3,4,5,6\\}\\), biến cố lẻ là \\(A=\\{1,3,5\\}\\), còn “không nhỏ hơn 5” nghĩa là **lớn hơn hoặc bằng 5**, nên \\(B=\\{5,6\\}\\). Giao gồm những kết quả thỏa **đồng thời** hai điều kiện: \\(A\\cap B=\\{5\\}\\). Hợp gồm những kết quả thỏa **ít nhất một** điều kiện: \\(A\\cup B=\\{1,3,5,6\\}\\). Trong hợp, số 5 chỉ được viết một lần.",
+    "stem": "Gieo một xúc xắc sáu mặt đánh số 1 đến 6. Gọi A là biến cố ra số lẻ, B là biến cố ra số không nhỏ hơn 5. Viết \\(A\\cap B\\) và \\(A\\cup B\\).",
+    "answer_key": "\\(A\\cap B=\\{5\\}\\); \\(A\\cup B=\\{1,3,5,6\\}\\).",
+    "worked_solution": "Trên không gian mẫu \\(\\Omega=\\{1,2,3,4,5,6\\}\\), biến cố lẻ là \\(A=\\{1,3,5\\}\\), còn “không nhỏ hơn 5” nghĩa là lớn hơn hoặc bằng 5, nên \\(B=\\{5,6\\}\\). Giao gồm những kết quả thỏa đồng thời hai điều kiện: \\(A\\cap B=\\{5\\}\\). Hợp gồm những kết quả thỏa ít nhất một điều kiện: \\(A\\cup B=\\{1,3,5,6\\}\\). Trong hợp, số 5 chỉ được viết một lần.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B28-UNION",
@@ -335,9 +335,9 @@
   {
     "item_id": "THPT-TOP20-P12",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lớn hơn 4; B: con thứ hai ra số chẵn. Tính P(A∩B).",
-    "answer_key": "1/6.",
-    "worked_solution": "**Lời giải:** Gọi \\(A\\) là biến cố con xúc xắc thứ nhất ra 5 hoặc 6, nên \\(P(A)=2/6=1/3\\). Gọi \\(B\\) là biến cố con thứ hai ra số chẵn 2, 4 hoặc 6, nên \\(P(B)=3/6=1/2\\). Vì hai xúc xắc được gieo độc lập, ta dùng **quy tắc nhân cho giao**: \\(P(A\\cap B)=P(A)P(B)=\\dfrac13\\cdot\\dfrac12=\\dfrac16\\).",
+    "stem": "Hai xúc xắc cân đối được gieo độc lập. A: con thứ nhất ra số lớn hơn 4; B: con thứ hai ra số chẵn. Tính \\(P(A\\cap B)\\).",
+    "answer_key": "\\(\\frac16\\).",
+    "worked_solution": "Biến cố A xảy ra khi con thứ nhất ra 5 hoặc 6, nên \\(P(A)=\\frac26=\\frac13\\). Biến cố B xảy ra khi con thứ hai ra số chẵn 2, 4 hoặc 6, nên \\(P(B)=\\frac36=\\frac12\\). Vì hai xúc xắc được gieo độc lập, dùng quy tắc nhân cho giao: \\(P(A\\cap B)=P(A)P(B)=\\frac13\\cdot\\frac12=\\frac16\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B30-MULTIPLY_INDEPENDENT"
@@ -365,9 +365,9 @@
   {
     "item_id": "THPT-TOP20-P13",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Gieo một xúc xắc sáu mặt cân đối một lần. A={1,2}, B={3,4}. Hai biến cố có xung khắc và độc lập không?",
+    "stem": "Gieo một xúc xắc sáu mặt cân đối một lần. Cho \\(A=\\{1,2\\}\\), \\(B=\\{3,4\\}\\). Hai biến cố có xung khắc và độc lập không?",
     "answer_key": "Xung khắc; không độc lập.",
-    "worked_solution": "**Lời giải:** Hai biến cố \\(A=\\{1,2\\}\\) và \\(B=\\{3,4\\}\\) **xung khắc** vì \\(A\\cap B=\\varnothing\\). Nhưng để xét **độc lập**, phải kiểm tra đẳng thức \\(P(A\\cap B)=P(A)P(B)\\). Ở đây \\(P(A\\cap B)=0\\), trong khi \\(P(A)P(B)=\\dfrac26\\cdot\\dfrac26=\\dfrac19>0\\). Hai vế khác nhau, nên \\(A\\) và \\(B\\) **không độc lập**. Không đánh đồng hai khái niệm.",
+    "worked_solution": "Hai biến cố \\(A=\\{1,2\\}\\) và \\(B=\\{3,4\\}\\) xung khắc vì \\(A\\cap B=\\varnothing\\). Để xét độc lập, kiểm tra đẳng thức \\(P(A\\cap B)=P(A)P(B)\\). Ở đây \\(P(A\\cap B)=0\\), trong khi \\(P(A)P(B)=\\frac26\\cdot\\frac26=\\frac19>0\\). Hai vế khác nhau, nên A và B không độc lập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B30-INDEPENDENT_VS_DISJOINT"
@@ -378,7 +378,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Kiểm giao rỗng và so P(giao) với tích xác suất riêng."
+      "Kiểm giao rỗng và so \\(P(A\\cap B)\\) với \\(P(A)P(B)\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -395,9 +395,9 @@
   {
     "item_id": "THPT-TOP20-P14",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho P(A)=2/5, P(B)=1/2, P(A∪B)=3/4. Tính P(A∩B). Một bạn cho P(A∩B)=3/5 có thể đúng không? Giải thích.",
-    "answer_key": "P(A∩B)=3/20; 3/5 không thể vì giao là tập con của A và B.",
-    "worked_solution": "Từ quy tắc cộng, P(A∩B)=P(A)+P(B)−P(A∪B)=8/20+10/20−15/20=3/20. Giao là tập con của cả A và B nên xác suất giao không vượt 2/5 hay 1/2. Giá trị 3/5 lớn hơn cả hai, không thể đúng.",
+    "stem": "Cho \\(P(A)=\\frac25\\), \\(P(B)=\\frac12\\), \\(P(A\\cup B)=\\frac34\\). Tính \\(P(A\\cap B)\\). Một bạn cho \\(P(A\\cap B)=\\frac35\\) có thể đúng không? Giải thích.",
+    "answer_key": "\\(P(A\\cap B)=\\frac3{20}\\); \\(\\frac35\\) không thể vì giao là tập con của A và B.",
+    "worked_solution": "Từ quy tắc cộng, \\(P(A\\cap B)=P(A)+P(B)-P(A\\cup B)=\\frac8{20}+\\frac{10}{20}-\\frac{15}{20}=\\frac3{20}\\). Giao là tập con của cả A và B nên \\(0\\le P(A\\cap B)\\le\\min(P(A),P(B))\\). Giá trị \\(\\frac35\\) lớn hơn cả \\(\\frac25\\) và \\(\\frac12\\), không thể đúng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B29-ADDITION_OVERLAP"
@@ -408,7 +408,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Biến đổi công thức P(A∪B)=P(A)+P(B)−P(A∩B) để tìm giao."
+      "Biến đổi công thức \\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\) để tìm giao."
     ],
     "rubric": null,
     "interaction": {
@@ -420,14 +420,14 @@
       "heading_id": "THPT-TOP20-P14"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Quy tắc cộng phải trừ giao; kiểm kết quả nằm trong [0,1] và không nhỏ hơn xác suất riêng. Ôn CĐ20 mục 2.3; luyện THPT-G11-CHVIII-B29-P01."
+    "remediation": "Quy tắc cộng phải trừ xác suất giao. Kiểm \\(0\\le P(A\\cap B)\\le\\min(P(A),P(B))\\); xác suất giao không được lớn hơn bất kỳ xác suất riêng nào. Ôn CĐ20 mục 2.3; luyện THPT-G11-CHVIII-B29-P01."
   },
   {
     "item_id": "THPT-TOP20-P15",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Gieo một xúc xắc sáu mặt cân đối một lần. A=ra 1 và B=ra 6. Tính P(A∪B) và giải thích vì sao cộng trực tiếp.",
-    "answer_key": "1/3; vì hai biến cố xung khắc.",
-    "worked_solution": "**Lời giải:** Trên một lần gieo xúc xắc, \\(A=\\{1\\}\\) và \\(B=\\{6\\}\\). Hai biến cố này **xung khắc** vì không có kết quả nào vừa là 1 vừa là 6, tức \\(A\\cap B=\\varnothing\\). Do đó áp dụng **quy tắc cộng cho biến cố xung khắc**: \\(P(A\\cup B)=P(A)+P(B)=\\dfrac16+\\dfrac16=\\dfrac13\\). Không cần và cũng không được suy rằng hai biến cố độc lập.",
+    "stem": "Gieo một xúc xắc sáu mặt cân đối một lần. A: ra 1; B: ra 6. Tính \\(P(A\\cup B)\\) và giải thích vì sao cộng trực tiếp.",
+    "answer_key": "\\(\\frac13\\); vì hai biến cố xung khắc.",
+    "worked_solution": "Trên một lần gieo xúc xắc, \\(A=\\{1\\}\\) và \\(B=\\{6\\}\\). Hai biến cố xung khắc vì không có kết quả nào vừa là 1 vừa là 6, tức \\(A\\cap B=\\varnothing\\). Do đó \\(P(A\\cup B)=P(A)+P(B)=\\frac16+\\frac16=\\frac13\\). Không được suy rằng hai biến cố độc lập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B29-ADDITION_DISJOINT"
@@ -455,9 +455,9 @@
   {
     "item_id": "THPT-TOP20-P16",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai thiết bị hoạt động độc lập, xác suất hoạt động của thiết bị thứ nhất là 2/3, của thiết bị thứ hai là 3/5. Tính xác suất ít nhất một thiết bị hoạt động và xác suất cả hai hoạt động.",
-    "answer_key": "Ít nhất một: 13/15; cả hai: 2/5.",
-    "worked_solution": "Gọi A,B là biến cố từng thiết bị hoạt động. Do độc lập, P(A∩B)=2/3·3/5=2/5. Hai biến cố đối cũng độc lập nên xác suất cả hai không hoạt động bằng (1−2/3)(1−3/5)=2/15. Vậy P(A∪B)=1−2/15=13/15. Kiểm bằng quy tắc cộng: 2/3+3/5−2/5=13/15.",
+    "stem": "Hai thiết bị hoạt động độc lập, xác suất hoạt động của thiết bị thứ nhất là \\(\\frac23\\), của thiết bị thứ hai là \\(\\frac35\\). Tính xác suất ít nhất một thiết bị hoạt động và xác suất cả hai hoạt động.",
+    "answer_key": "Ít nhất một: \\(\\frac{13}{15}\\); cả hai: \\(\\frac25\\).",
+    "worked_solution": "Gọi A, B là biến cố từng thiết bị hoạt động. Do độc lập, \\(P(A\\cap B)=\\frac23\\cdot\\frac35=\\frac25\\). Hai biến cố đối cũng độc lập nên xác suất cả hai không hoạt động bằng \\((1-\\frac23)(1-\\frac35)=\\frac2{15}\\). Vậy \\(P(A\\cup B)=1-\\frac2{15}=\\frac{13}{15}\\). Kiểm bằng quy tắc cộng: \\(\\frac23+\\frac35-\\frac25=\\frac{13}{15}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B30-MULTIPLY_INDEPENDENT"
@@ -486,8 +486,8 @@
     "item_id": "THPT-TOP20-P17",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hai xúc xắc cân đối được gieo độc lập. A: con thứ nhất ra số lẻ; B: con thứ hai ra số không lớn hơn 2. Tính xác suất (a) cả hai biến cố; (b) ít nhất một; (c) đúng một biến cố xảy ra.",
-    "answer_key": "(a) 1/6; (b) 2/3; (c) 1/2.",
-    "worked_solution": "P(A)=1/2, P(B)=1/3. (a) Độc lập nên P(A∩B)=1/6. (b) P(A∪B)=1/2+1/3−1/6=2/3. (c) Đúng một nghĩa là thuộc hợp nhưng không thuộc giao; P=2/3−1/6=1/2. Không nhầm 'ít nhất một' với 'đúng một'.",
+    "answer_key": "(a) \\(\\frac16\\); (b) \\(\\frac23\\); (c) \\(\\frac12\\).",
+    "worked_solution": "\\(P(A)=\\frac12\\), \\(P(B)=\\frac13\\). (a) Độc lập nên \\(P(A\\cap B)=\\frac12\\cdot\\frac13=\\frac16\\). (b) \\(P(A\\cup B)=\\frac12+\\frac13-\\frac16=\\frac23\\). (c) Đúng một nghĩa là thuộc hợp nhưng không thuộc giao; xác suất bằng \\(\\frac23-\\frac16=\\frac12\\). Không nhầm “ít nhất một” với “đúng một”.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-CHVIII-INTEGRATED"
@@ -510,6 +510,6 @@
       "heading_id": "THPT-TOP20-P17"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu hỏi không có biến cố nào, lấy 1 trừ xác suất hợp; không lấy 1 trừ giao. Ôn CĐ20 mục 2.4; luyện THPT-G11-CHVIII-CHVIII-P01."
+    "remediation": "Nếu dùng xác suất hợp để trả lời câu (c), em đã tính cả trường hợp hai biến cố cùng xảy ra. Hãy trừ xác suất giao khỏi xác suất hợp. Ôn CĐ20 mục 2.4; luyện THPT-G11-CHVIII-CHVIII-P01."
   }
 ]
