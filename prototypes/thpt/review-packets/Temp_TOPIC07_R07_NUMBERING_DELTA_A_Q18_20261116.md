@@ -1,3 +1,9 @@
+## CURRENT Q18 — 26/11/2026 · A05 Work #1055 / #1109
+
+Learner `3f81555846b55690b1a19fed6b69d48950a77309`, source commit `1a5527712c1a9d0e4880ffefd811879b3a9043e7`, Draft #828. CD07-A01 fixed-point derivation and all-n recurrence proof, independent first-try; A02 even-exponent counterexample; A03 signed remainder vs absolute error and convergence (nonzero first term), A04 actual SVG period 0–3 label `e3be79f17eadcd26d36b99f28dc0df8f4158addb`, A05 repayment example and independent two-period debt trial, both reach zero. Additional targeted Work suggestions addressed: two sequences differ at n=4, positive-term ratio test, backward AP, two-row sums, all-zero sequence, nominal vs effective annual interest under explicitly monthly capitalization. No new mandatory S1 family. X-G.5 reviewed line by line in three learner sections. 69/69 original ID membership checked against locked 42 ChII +5 B15 +22 Topic records, all HTML markers unchanged, 18/18 exact same-ID replay stems, eleven Written point sequences unchanged, 88 balanced details, 901 paired inline delimiters; residual compound-notation and inline slash scan zero. 24/24 executed targeted numerical/structural math checks PASS, supplemented by symbolic recurrence identity proof in source. Original scanned SGK receipt `bada66e655a07b111f361b1cad634015f5dbae07` B05–B07 pp42–55/B15 pp104–110 inherited, no new primary scan or independent reviewer claim. UI U01 remains RELEASE. AUTHOR_SELF_VERIFIED scope; no release CI/browser/assessment/runtime/merge/deploy. Historical evidence below applies only to old snapshots.
+
+---
+
 <!-- TOP07_MASTER974_CURRENT_EDITORIAL_PED6_Q18_20261121 -->
 ## CURRENT CĐ07 AUTHOR_SELF_VERIFIED — 18 tuyến khắc phục thật, 18 Tự kiểm tra tự mở (21/11/2026)
 
@@ -27,8 +33,8 @@ STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba
-ACADEMIC_SOURCE_BLOB: 7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba
+SOURCE_BLOB: 3f81555846b55690b1a19fed6b69d48950a77309
+ACADEMIC_SOURCE_BLOB: 3f81555846b55690b1a19fed6b69d48950a77309
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R06_STUDENT_FIRST_69_CANONICAL_VISIBLE_20261115.md
 PREVIOUS_SOURCE_BLOB: 22609934f525e6e9c2c8f1513e439c3cd4d54221
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -36,23 +42,23 @@ PREVIOUS_Q18_RECEIPT_BLOB: 73fc766c9bea00be48e25d0514548e12fa783f60
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 AUTHOR_QA_H2_H3_SEQ: PASS
 AUTHOR_QA_OUTCOMES: 18/18
-AUTHOR_QA_CANONICAL: 69/69 EXACT_ID_STEM_KEY_SOLUTION_RUBRIC_D6
-AUTHOR_QA_SELFCHECK: 18/18 PRESERVED
-AUTHOR_QA_REVEAL_CONTENT: 18_VOLUNTARY_KNOWLEDGE_D6_UPDATED; 69_PRACTICE_REVEALS_BYTE_EXACT; ONE_EXTRA_POST_SELFCHECK_VOLUNTARY_MAP
+AUTHOR_QA_CANONICAL: 69/69 SAME_ID_AND_MATH_MEANING_EQUIVALENT_NOTATION; 11_WRITTEN_POINT_WEIGHTS_PRESERVED
+AUTHOR_QA_SELFCHECK: 18/18 EXACT_CURRENT_PRACTICE_STEMS_SAME_ID
+AUTHOR_QA_REVEAL_CONTENT: 88_BALANCED_18_KNOWLEDGE_69_PRACTICE_1_REPLAY_MAP
 PRIOR_R07_NUMBERING_SNAPSHOT_BLOB: b28b4222c19ae949072c507ac53be0a4ebfbf535
 PRIOR_EFFECTIVE_EDITORIAL_SOURCE_BLOB: c2a04632a0e6e2a37d48abb5360e0a90eb69e9a4
 CURRENT_FORMAL_KNOWLEDGE_QA: TOP07-O01_O06_O11 PASS
 CURRENT_RECALL_SUMMARY_QA: TOP07-O01_O06_O11_O18 PASS
 CURRENT_SOURCE_STRUCTURE: THREE_PARTS_H1_H2_H3_PASS
-CURRENT_SOURCE_PROTECTED_REPLAY: 18/18 SAME_QUESTION_ONLY_BYTE_EXACT; ONE OPTIONAL_POST_SELFCHECK_NAVIGATION_TO_EXISTING_PRACTICE_ANSWERS_NO_MASTERY
-CURRENT_SOURCE_ITEM_PROJECTION: 69/69 SAME_PRACTICE_STEM_KEY_SOLUTION_RUBRIC_D6
-CURRENT_SOURCE_SVG: 3/3 SAME_PATH
-CURRENT_SOURCE_DELTA: 18 original voluntary D6 reveals extended with actual Knowledge and numbered Practice remediation; 1 voluntary post-selfcheck answer-location map; 1 SGK body attribution converted to normal mathematical instruction; 2 hidden authoring metadata comments clarified; all 69 Practice and 18 selfcheck question stems immutable.
+CURRENT_SOURCE_PROTECTED_REPLAY: 18/18 SAME_ID_AND_EXACT_CURRENT_STEM; NO_MASTERY
+CURRENT_SOURCE_ITEM_PROJECTION: 69/69 SAME_ID_EQUIVALENT_NOTATION_PRACTICE_AND_RUBRIC_WEIGHTS
+CURRENT_SOURCE_SVG: 3 SAME_PATHS; GROWTH_LABEL_0_TO_3_CORRECTED_e3be79f17eadcd26d36b99f28dc0df8f4158addb
+CURRENT_SOURCE_DELTA: WORK1055_A01_A05_TARGETED_MATH_PED_AND_XG5
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOP07_MASTER974_D6_18_OUTCOMES_AND_18_PUBLIC_SELFCHK_AUTHOR_Q18_7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba
+AUTHOR_SIGNOFF: TOP07_WORK_A05_XG5_20261126_3f81555846b55690b1a19fed6b69d48950a77309
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
