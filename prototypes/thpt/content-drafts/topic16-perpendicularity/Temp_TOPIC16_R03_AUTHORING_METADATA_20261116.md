@@ -1,20 +1,27 @@
+## CURRENT CP18 — CĐ16 AUTHORING custody
+Learner `3e6f97091a814d7cee7096fd92cd448dd8900435`, commit `ce59c2fa80fe3f79fed49fcdc253e15ff272927b`, Draft #848. Work #1055 lists two AUTHORING defects O14/O21, not eight. 86 unique IDs, 65 Practice, eight exact same-ID public replay, 11 Written rubric allocations, 87 disclosures. Original 41 SGK IDs verified at current owner bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` at its exact source path. Historical original label defect #054 already resolved by owner-approved shared-bank edit; no old label present. Four SVGs and HTML model unchanged. No new canonical bank, merge, deploy, official readiness or runtime authorization.
+
+---
+
+Earlier narrative evidence below is historical; current CP18 evidence and structured fields supersede earlier pointers.
+
 <!-- OWNER_APPROVED_SHARED_SGK_G11_B22_B27_DELTA_B_A1_20261121 -->
 **CURRENT EXACT AUTHORING:** one CĐ16 learner `1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84`, current source-owner SGK B22–B27 bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` (**both Topic branches use same source blob**), current Q18 `19a2ed6ebfd7898da5f186350ea6042e2134fa7e`, A1/Q15 `current`, V2 `current`. Original 33/41 G11 shared canonical Practice student-answer labels formerly `Đáp án sau Submit luyện tập`, misleading in direct voluntary Lời giải; now exact `Đáp án` in one **canonical source** (all 51 public SGK items same) and CĐ16 projection (33) + CĐ17 projection (18). **No stem, numeric key, mathematical reasoning, option, rubric, disclosure, final submit/mastery evaluator code changed**; one original G11 Q15 same-ID source bank, old `afc8ec039213b87b4930f2d34d48c28d1fc6277f` preserved in Git history. `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL`, affected source author self QA; no blanket independent NotebookLM PASS, no website/release/merge/deploy.
 ---
 <!-- TOP16_MASTER974_CURRENT_A1_A7_20261121 -->
 ## CĐ16 current AUTHORING A1–A7 · one R03 learner, #974 / #977 #051–054
 
-CURRENT_SOURCE_BLOB: 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84
+CURRENT_SOURCE_BLOB: 3e6f97091a814d7cee7096fd92cd448dd8900435
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-DELTA_SCOPE: DELTA_C_PED_TARGETED_21_D6_AND_PUBLIC_LOOKUP; DELTA_A_EDITORIAL_65_DISPLAY_TITLES
-SOURCE_COMMIT: b998dfbe82ba2fd60d0838e91fb2c9413e68fa41
-CANONICAL_Q15: Original 41 G11 SGK +21 TOP16-T01–T21 +21 TOP16-P01–P21 +3 TOP16-W01–W03 =86 unique public IDs. Same original SGK source blob afc8ec039213b87b4930f2d34d48c28d1fc6277f. Eight PUBLIC_SELF_CHECK use P02/P06/P09/P12/P14/P16/P18/P21 as second placement only; Practice ordinals 11,26,29,42,44,59,61,64.
-A1_A7_SOURCE_QA: 21 unchanged outcome knowledge mathematics and FirstTry stems/keys; 21 individualized voluntary Kiểm lỗi with one true subsection and two actual source-matched practice return items; 65/65 canonical original complete Practice stem/key/solution/11 Written rubric bodies byte-exact, only display title 1–65 and grouping labels changed; 8 public question-only prompts unchanged; 4 SVG and one model unchanged; 87/87 details balanced, one end Topic SGK source credit.
-OPEN_P2: TOP22-20261121-054 original owner SGK answer string "Đáp án sau Submit luyện tập" in 33 reused G11 original solution bodies; leave canonical original item text unchanged pending coordinated source-owner editorial edit. P0=0, P1=0 in directly changed scope; do not equate this P2 with math hold.
+DELTA_SCOPE: DELTA_C_PED_TARGETED_WORK_1055_O14_O21 + DELTA_B_SOURCE_EQUIVALENT_XG5
+SOURCE_COMMIT: ce59c2fa80fe3f79fed49fcdc253e15ff272927b
+CANONICAL_Q15: 86 unique IDs: 41 original G11 SGK from 5646241f4bb72f12419aaf585ee1fbea6f4185d0; 21 FirstTry, 21 Topic Practice, 3 Topic Written; 8 same-ID replay placements only
+A1_A7_SOURCE_QA: Work O14/O21 verified, three public pages equivalent notation; 65 Practice, 8 exact replay stems, 11 Written score sequences and markers preserved; 87 balanced details; four SVG and model unchanged
+OPEN_P2: Historical #054 resolved in owner-approved shared SGK label edit; no old label remains in current learner. No open Work academic blocker in affected scope.
 SOURCE_RECEIPT_SCOPE: original Toán11 KNTT Tập Hai ChVII B22–B25 custody as historical source owner; no new physical PDF visual scan and no newly independent NotebookLM full-Topic PASS.
 RELEASE_AUTHORIZATION: NO
 ---
@@ -29,8 +36,8 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_R03_SELF_VERIFIED
 SCOPE_NOTES: PLAN22-17 Khoảng cách & Thể tích (G11 B26–B27 + CHVII-INTEGRATED) out of CĐ16, not silently retired/finished
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84
-ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
+ACADEMIC_SOURCE_BLOB: 3e6f97091a814d7cee7096fd92cd448dd8900435
+ORIGINAL_G11_SGK_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
 MODEL_ID: SLM-TOP16-RAMP-ANGLE-R00
