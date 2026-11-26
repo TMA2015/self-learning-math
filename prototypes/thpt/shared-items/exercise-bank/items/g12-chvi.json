@@ -104,7 +104,7 @@
     "problem_type_id": null,
     "difficulty": 1,
     "hints": [
-      "Lấy xác suất giao chia P(B)>0."
+      "Lấy xác suất giao chia cho \\(P(B)>0\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -135,7 +135,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Liệt kê B và A∩B."
+      "Liệt kê B và \\(A\\cap B\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -152,7 +152,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng 2/8, đó là xác suất giao. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
+    "remediation": "Nếu dùng \\(\\frac28\\), đó là xác suất giao, chưa phải xác suất có điều kiện. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
   },
   {
     "item_id": "THPT-G12-B18-A02",
@@ -276,7 +276,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "P(rổ|đá) dùng 12; P(đá|rổ) dùng 15. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
+    "remediation": "\\(P(R\\mid D)\\) dùng mẫu 12; \\(P(D\\mid R)\\) dùng mẫu 15 (R là bóng rổ, D là bóng đá). Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
   },
   {
     "item_id": "THPT-G12-B18-C04",
@@ -290,7 +290,7 @@
     "problem_type_id": null,
     "difficulty": 1,
     "hints": [
-      "Tính P(A)P(B) rồi so với giao."
+      "Tính \\(P(A)P(B)\\), rồi so với xác suất giao."
     ],
     "rubric": null,
     "interaction": {
@@ -321,7 +321,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "So 0 với tích 1/2·1/2."
+      "So 0 với tích \\(\\frac12\\cdot\\frac12\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -476,7 +476,7 @@
     "problem_type_id": null,
     "difficulty": 1,
     "hints": [
-      "Dùng P(A∩B)=P(A)P(B|A)."
+      "Dùng \\(P(A\\cap B)=P(A)P(B\\mid A)\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -507,7 +507,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Dùng P(B)P(A|B)."
+      "Dùng \\(P(A\\cap B)=P(B)P(A\\mid B)\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -586,7 +586,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không dùng (4/6)^2 khi không hoàn lại. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
+    "remediation": "Không dùng \\(\\left(\\frac46\\right)^2\\) khi không hoàn lại; sau lần đầu số bi còn lại thay đổi. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
   },
   {
     "item_id": "THPT-G12-B18-P07",
@@ -662,7 +662,7 @@
     "problem_type_id": null,
     "difficulty": 1,
     "hints": [
-      "Dùng P(Ā)=1−P(A)."
+      "Dùng \\(P(\\overline A)=1-P(A)\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -693,7 +693,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Lấy 1−2/5 rồi kiểm tổng."
+      "Lấy \\(1-\\frac25\\), rồi kiểm tổng."
     ],
     "rubric": null,
     "interaction": {
@@ -710,7 +710,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không nhầm Ā với một biến cố tùy ý khác A. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07."
+    "remediation": "Không nhầm \\(\\overline A\\) với một biến cố tùy ý khác A. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07."
   },
   {
     "item_id": "THPT-G12-B19-A01",
@@ -724,7 +724,7 @@
     "problem_type_id": null,
     "difficulty": 3,
     "hints": [
-      "Lập 0,32=0,4·0,5+0,6·x."
+      "Đặt x là xác suất cần tìm, lập \\(0{,}32=0{,}4\\cdot0{,}5+0{,}6x\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -848,7 +848,7 @@
     "problem_type_id": null,
     "difficulty": 1,
     "hints": [
-      "Nhánh Ā có xác suất 1−0,2."
+      "Nhánh \\(\\overline A\\) có xác suất 1-0,2."
     ],
     "rubric": null,
     "interaction": {
@@ -879,7 +879,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Nhánh Ā có xác suất 0,3."
+      "Nhánh \\(\\overline A\\) có xác suất 0,3."
     ],
     "rubric": null,
     "interaction": {
@@ -927,7 +927,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không đảo P(E|A) thành P(A|E). Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
+    "remediation": "Không đảo \\(P(E\\mid A)\\) thành \\(P(A\\mid E)\\). Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
   },
   {
     "item_id": "THPT-G12-B19-C04",
@@ -958,7 +958,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ chia cho 0,1, mẫu chưa gồm Ā. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
+    "remediation": "Nếu chỉ chia cho 0,1, mẫu chưa gồm cả nhánh \\(\\overline A\\). Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
   },
   {
     "item_id": "THPT-G12-B19-P04",
@@ -972,7 +972,7 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Tính tử 1/4·4/5 và đường Ā–B."
+      "Tính nhánh \\(\\frac14\\cdot\\frac45\\) và nhánh từ biến cố đối đến B."
     ],
     "rubric": null,
     "interaction": {
@@ -1237,7 +1237,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không nhầm P(thành công|sáng) và P(sáng|thành công). Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
+    "remediation": "Không nhầm xác suất thành công khi biết ca sáng với xác suất thuộc ca sáng khi biết thành công. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
   },
   {
     "item_id": "THPT-G12-B19-P07",
