@@ -312,7 +312,9 @@ Tần số 8 trên tổng 20 nghĩa là 40% mẫu nằm trong khoảng đó. Đi
 
 **Nhóm rộng gấp đôi có thể có nhiều quan sát gấp đôi mà không đông hơn theo “mỗi đơn vị đo”.** Với nhóm \([0;10)\) có tần số \(10\), nhóm \([10;30)\) có tần số \(20\), thì độ rộng hai nhóm lần lượt \(10\) và \(20\); tần số **trên một đơn vị độ dài** đều bằng \(\frac{10}{10}=1\) và \(\frac{20}{20}=1\). Trong một biểu đồ histogram có các cột rộng theo đúng khoảng, để **diện tích cột** biểu diễn tần số, chiều cao tương ứng là \(\frac{f_i}{h_i}\), không phải \(f_i\).
 
-**Cách đọc biểu đồ khi độ rộng khác nhau.** Hãy hình dung hai hình chữ nhật có cùng chiều cao 1: cột thứ nhất rộng 10 nên diện tích bằng 10; cột thứ hai rộng 20 nên diện tích bằng 20. Diện tích gấp đôi là vì khoảng rộng gấp đôi, không phải mật độ cao gấp đôi. Đây là phần hướng dẫn đọc histogram; không sửa quy tắc đếm \(n=\sum f_i\).
+![Histogram hai khoảng rộng 10 và 20 có cùng mật độ 1](assets/Temp_STATISTICS_HISTOGRAM_DENSITY_WORK_20261126.svg)
+
+**Đọc hình.** Hai hình chữ nhật có cùng chiều cao 1: cột thứ nhất rộng 10 nên diện tích bằng 10; cột thứ hai rộng 20 nên diện tích bằng 20. Diện tích gấp đôi là vì khoảng rộng gấp đôi, không phải mật độ cao gấp đôi. Đây là phần hướng dẫn đọc histogram; không sửa quy tắc đếm \(n=\sum f_i\).
 
 **Ví dụ**
 
@@ -464,7 +466,7 @@ Tích lũy 5,10,20. \(M_e=20,Q_1=10,Q_3=25\).
 
 **Kiểm lỗi**
 
-Nếu chọn nhầm nhóm, tô cột tích lũy đến n/4,n/2,3n/4 trước khi nội suy. Đọc lại **Kiến thức 2.3**, rồi tự làm **Bài luyện 52**, **Bài luyện 53**, **Bài luyện 58** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
+Nếu chọn nhầm nhóm, tô cột tích lũy đến \(\frac n4,\frac n2,\frac{3n}4\) trước khi nội suy. Đọc lại **Kiến thức 2.3**, rồi tự làm **Bài luyện 52**, **Bài luyện 53**, **Bài luyện 58** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -497,6 +499,8 @@ Nếu nhóm cao nhất nằm ở biên, nhiều nhóm cùng cao nhất hoặc đ
 Từ bảng nhóm, trung bình, trung vị, tứ phân vị và mốt đều được suy qua đại diện/nội suy, nên chỉ báo **ước lượng**. Không suy kết quả chính xác của dữ liệu gốc hoặc kết luận nhóm có 'mọi người như nhau'. Dùng bảng nhóm thích hợp cho mô tả tổng quan, không thay dữ liệu cá nhân.
 
 **Ví dụ**
+
+**Trước hết xét nhóm mốt ở giữa.** Ba nhóm \([0;10),[10;20),[20;30)\) có tần số \(3,9,6\). Nhóm mốt là \([10;20)\); hai mức chênh tần số là \(9-3=6\) và \(9-6=3\), nên \(M_o\approx10+\frac{6}{6+3}\cdot10=\frac{50}{3}\approx16{,}67\), nằm trong nhóm mốt. Khi nhóm mốt ở biên, mới cần quy ước tần số kề bằng 0.
 
 **Đề bài.** Ba nhóm cùng rộng 10 có tần số \([0;10):12,[10;20):7,[20;30):3\). Ước lượng mốt nhóm ở biên trái.
 
