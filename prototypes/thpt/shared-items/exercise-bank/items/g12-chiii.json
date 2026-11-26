@@ -260,7 +260,7 @@
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
     "stem": "Mẫu A có R=20, mẫu B có R=30 (cùng đơn vị). Có thể suy B có IQR lớn hơn không?",
     "answer_key": "Không",
-    "worked_solution": "Không. R chỉ phản ánh hai biên của mẫu ghép nhóm, trong khi khoảng tứ phân vị đo độ rộng giữa Q₁ và Q₃. Một mẫu có các nhóm biên rất xa nhưng phần giữa tập trung vẫn có thể có khoảng tứ phân vị nhỏ.",
+    "worked_solution": "Không. R chỉ phản ánh hai biên của mẫu ghép nhóm, trong khi khoảng tứ phân vị đo độ rộng giữa \\(Q_1\\) và \\(Q_3\\). Mẫu có các nhóm biên rất xa nhưng phần giữa tập trung vẫn có thể có khoảng tứ phân vị nhỏ.",
     "skill_ids": [
       "G12-CHIII-B09-O03"
     ],
@@ -290,7 +290,7 @@
   {
     "item_id": "THPT-G12-B09-C04",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Với f=(6,14,12,8), n=40; lớp chứa Q₁ thuộc vị trí nào?",
+    "stem": "Bốn lớp có tần số lần lượt 6, 14, 12, 8. Biết cỡ mẫu \\(n=40\\), dùng lớp nào để nội suy \\(Q_1\\)?",
     "answer_key": "Lớp 2",
     "worked_solution": "Mốc nội suy \\(n/4=40/4=10\\). Tần số tích lũy sau lớp 1 là 6 và sau lớp 2 là 20. Vì \\(6<10\\le20\\), dùng lớp 2 để nội suy \\(Q_1\\).",
     "skill_ids": [
@@ -322,7 +322,7 @@
   {
     "item_id": "THPT-G12-B09-P07",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Một bảng ghép nhóm có tần số bốn lớp lần lượt 6, 14, 12, 8. Dùng lớp nào để nội suy Q₃?",
+    "stem": "Một bảng ghép nhóm có tần số bốn lớp lần lượt 6, 14, 12, 8. Dùng lớp nào để nội suy \\(Q_3\\)?",
     "answer_key": "Lớp 3",
     "worked_solution": "Cỡ mẫu \\(n=6+14+12+8=40\\). Mốc \\(3n/4=30\\); tần số tích lũy là 6, 20, 32, 40. Vì \\(20<30\\le32\\), dùng lớp 3 để nội suy \\(Q_3\\).",
     "skill_ids": [
@@ -683,7 +683,7 @@
     "problem_type_id": null,
     "difficulty": "1",
     "hints": [
-      "Tính n và trung bình có trọng số, rồi tổng f(c−x̄)²."
+      "Tính n và trung bình có trọng số, rồi tính tổng \\(\\sum_i f_i(c_i-\\overline{x})^2\\)."
     ],
     "rubric": null,
     "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.",
@@ -797,7 +797,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không nhầm E(c²) với [E(c)]². Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P05."
+    "remediation": "Không nhầm trung bình bình phương \\(\\overline{c^2}\\) với bình phương trung bình \\(\\overline{x}^{\\,2}\\). Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P05."
   },
   {
     "item_id": "THPT-G12-B10-P05",
@@ -811,7 +811,7 @@
     "problem_type_id": null,
     "difficulty": "2",
     "hints": [
-      "Tính tổng f·c² rồi chia n."
+      "Tính tổng \\(\\sum_i f_ic_i^2\\) rồi chia n."
     ],
     "rubric": null,
     "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
@@ -834,7 +834,7 @@
   {
     "item_id": "THPT-G12-B10-P06",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Nếu tính được s²≈−0,000001 do làm tròn, có kết luận phương sai âm thật không?",
+    "stem": "Nếu tính được \\(s^2\\approx-0{,}000001\\) do làm tròn, có kết luận phương sai âm thật không?",
     "answer_key": "Không",
     "worked_solution": "Không. Theo định nghĩa, \\(s^2\\) là tổng có trọng số của các bình phương độ lệch chia cho n dương, nên không âm. Kết quả âm nhỏ có thể do làm tròn trung gian hoặc sai phép tính; tính lại với đủ chữ số hoặc dùng công thức độ lệch trước khi kết luận.",
     "skill_ids": [
@@ -866,7 +866,7 @@
   {
     "item_id": "THPT-G12-B10-C04",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Nếu s²=9 cm², độ lệch chuẩn s là bao nhiêu?",
+    "stem": "Nếu \\(s^2=9\\) cm², độ lệch chuẩn s là bao nhiêu?",
     "answer_key": "3 cm",
     "worked_solution": "Độ lệch chuẩn là căn không âm của phương sai: \\(s=\\sqrt9=3\\) cm. Đơn vị trở lại cùng đơn vị dữ liệu.",
     "skill_ids": [
@@ -875,7 +875,7 @@
     "problem_type_id": null,
     "difficulty": "1",
     "hints": [
-      "Lấy căn bậc hai không âm của s²."
+      "Lấy căn bậc hai không âm của \\(s^2\\)."
     ],
     "rubric": null,
     "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.",
@@ -930,7 +930,7 @@
   {
     "item_id": "THPT-G12-B10-P08",
     "content_version": "G12-SGK-CHIII-B09-B10-R00",
-    "stem": "Câu “s=16 giờ²” khi s²=16 giờ² sai ở đâu?",
+    "stem": "Câu “\\(s=16\\) giờ²” khi \\(s^2=16\\) giờ² sai ở đâu?",
     "answer_key": "s=4 giờ; nhầm giá trị và đơn vị",
     "worked_solution": "16 giờ² là phương sai \\(s^2\\), không phải độ lệch chuẩn s. Lấy căn không âm: \\(s=\\sqrt{16}=4\\) giờ; câu ban đầu sai cả giá trị lẫn đơn vị.",
     "skill_ids": [
