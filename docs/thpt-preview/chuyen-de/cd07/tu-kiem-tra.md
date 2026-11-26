@@ -28,7 +28,7 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC07_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba; Q18_RECEIPT_BLOB 737f3c09766f4c15b50ee05ce93bcf0bb375d861; AUTHORING_PR #828; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB 3f81555846b55690b1a19fed6b69d48950a77309; Q18_RECEIPT_BLOB d0fe9e8b1b5234eb98f0120fe5d98035ff7a4705; AUTHORING_PR #828; PUBLIC_PROJECTION_ONLY -->
 
 # Tự kiểm tra
 
@@ -36,39 +36,39 @@ Hãy tự làm đủ 18 câu trước khi đối chiếu. Trình bày lý do ch�
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P01; NO_MASTERY; NOT_RD1 -->
 
-**Câu 1.** Cho dãy hữu hạn a_n=(−1)^n(2n+1), n∈{0,1,2,3}. Liệt kê các số hạng; có a_4 trong dãy không?
+**Câu 1.** Cho dãy hữu hạn \(a_n=(-1)^n(2n+1)\), \(n\in\{0;1;2;3\}\). Liệt kê các số hạng; có \(a_4\) trong dãy không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P02; NO_MASTERY; NOT_RD1 -->
 
-**Câu 2.** Dãy vô hạn u_n=(n+1)/(2n+1), n≥1. Tính u_4 và xét 1/2 có phải một số hạng hay không.
+**Câu 2.** Dãy vô hạn \(u_n=\frac{n+1}{2n+1}\), \(n\ge1\). Tính \(u_4\) và xét \(\frac12\) có phải một số hạng hay không.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P03; NO_MASTERY; NOT_RD1 -->
 
-**Câu 3.** Dãy u_1=4, u_{n+1}=2u_n−1. Tìm u_2,u_3,u_4 và chứng minh công thức u_n=3·2^{n−1}+1.
+**Câu 3.** Dãy \(u_1=4,\ u_{n+1}=2u_n-1\). Tìm \(u_2,u_3,u_4\) và chứng minh công thức \(u_n=3\cdot2^{n-1}+1\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P04; NO_MASTERY; NOT_RD1 -->
 
-**Câu 4.** Với u_n=3−2/n (n≥1), xét dãy tăng hay giảm bằng hiệu hai số hạng liên tiếp.
+**Câu 4.** Với \(u_n=3-\frac2n\) (\(n\ge1\)), xét dãy tăng hay giảm bằng hiệu hai số hạng liên tiếp.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P05; NO_MASTERY; NOT_RD1 -->
 
-**Câu 5.** Cho u_n=(2n+1)/(n+2), n≥1. Chứng minh 1≤u_n&lt;2 và cho biết số hạng nào nhận cận dưới 1.
+**Câu 5.** Cho \(u_n=\frac{2n+1}{n+2}\), \(n\ge1\). Chứng minh \(1\le u_n&lt;2\) và cho biết số hạng nào nhận cận dưới 1.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P06; NO_MASTERY; NOT_RD1 -->
 
-**Câu 6.** Dãy 7,4,1,−2,… có là cấp số cộng? Nêu công sai và u_n.
+**Câu 6.** Dãy \(7,4,1,-2,\ldots\) có là cấp số cộng? Nêu công sai và \(u_n\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P07; NO_MASTERY; NOT_RD1 -->
 
-**Câu 7.** CSC có u_1=−4 và d=3. Tính u_{20}.
+**Câu 7.** CSC có \(u_1=-4\) và \(d=3\). Tính \(u_{20}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P08; NO_MASTERY; NOT_RD1 -->
 
-**Câu 8.** CSC có u_5=14 và u_{11}=32. Tìm công sai d và u_1.
+**Câu 8.** CSC có \(u_5=14\) và \(u_{11}=32\). Tìm công sai d và \(u_1\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P09; NO_MASTERY; NOT_RD1 -->
 
-**Câu 9.** CSC có u_1=3,d=4. Tính tổng 15 số hạng đầu.
+**Câu 9.** CSC có \(u_1=3,\ d=4\). Tính tổng 15 số hạng đầu.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P10; NO_MASTERY; NOT_RD1 -->
 
@@ -80,23 +80,23 @@ Hãy tự làm đủ 18 câu trước khi đối chiếu. Trình bày lý do ch�
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P12; NO_MASTERY; NOT_RD1 -->
 
-**Câu 12.** CSN u_1=3,q=−2. Tính u_6.
+**Câu 12.** CSN \(u_1=3,\ q=-2\). Tính \(u_6\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P13; NO_MASTERY; NOT_RD1 -->
 
-**Câu 13.** CSN có u_2=6,u_4=54, các số hạng liên quan khác 0. Có bao nhiêu cặp (u_1,q) thực thỏa điều kiện?
+**Câu 13.** CSN có \(u_2=6,\ u_4=54\), các số hạng liên quan khác 0. Có bao nhiêu cặp \((u_1;q)\) thực thỏa điều kiện?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P14; NO_MASTERY; NOT_RD1 -->
 
-**Câu 14.** CSN u_1=5,q=2. Tính S_6; viết rõ vì sao không dùng công thức q=1.
+**Câu 14.** CSN \(u_1=5,\ q=2\). Tính \(S_6\); viết rõ vì sao không dùng công thức \(q=1\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P15; NO_MASTERY; NOT_RD1 -->
 
-**Câu 15.** CSN vô hạn có a_1=9,q=−1/3. Tính tổng S_∞, tổng bốn số hạng đầu S_4 và phần dư S_∞−S_4.
+**Câu 15.** CSN vô hạn có \(a_1=9,\ q=-\frac13\). Tính tổng \(S_\infty\), tổng bốn số hạng đầu \(S_4\) và phần dư \(S_\infty-S_4\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P16; NO_MASTERY; NOT_RD1 -->
 
-**Câu 16.** Hai mô hình bắt đầu ở kỳ 0 với 50 đơn vị. A tăng 5 đơn vị mỗi kỳ; B tăng 10% so với kỳ trước. Tính A_3,B_3 và xác định kỳ nguyên k≥0 đầu tiên có B_k−A_k≥1.
+**Câu 16.** Hai mô hình bắt đầu ở kỳ 0 với 50 đơn vị. A tăng 5 đơn vị mỗi kỳ; B tăng 10% so với kỳ trước. Tính \(A_3,B_3\) và xác định kỳ nguyên \(k\ge0\) đầu tiên có \(B_k-A_k\ge1\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P17; NO_MASTERY; NOT_RD1 -->
 
