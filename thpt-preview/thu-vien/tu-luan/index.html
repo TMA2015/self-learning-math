@@ -131,7 +131,75 @@
 
     
     
-  </head>
+  <style id="slm-written-library-ui">/* DELTA_A_UI: equal-height centered controls matching THCS visual rhythm.
+   Scoped to formative modals; disclose only when opened by the learner. */
+.md-typeset .thpt-r4-written-card .slm-written-actions{
+ display:flex;flex-wrap:wrap;align-items:stretch;
+ gap:8px;margin:17px 0 6px;
+}
+.md-typeset .thpt-r4-written-card .slm-written-actions details{
+ margin:0;padding:0;min-width:0;flex:0 1 auto;
+ background:transparent;border:0;border-radius:0;
+ white-space:normal;line-height:1.45;
+}
+.md-typeset .thpt-r4-written-card .slm-written-actions details summary,
+.md-typeset .thpt-r4-written-card .slm-written-actions .thpt-r4-remediation-link{
+ display:inline-flex;box-sizing:border-box;align-items:center;justify-content:center;gap:6px;
+ width:auto;max-width:100%;height:42px;min-height:42px;max-height:42px;
+ padding:0 12px;margin:0;border:1px solid var(--md-default-fg-color--lightest);
+ border-radius:8px;background:var(--md-code-bg-color);
+ color:var(--md-default-fg-color);font-size:.84rem;
+ font-weight:400!important;line-height:1.25;
+ text-decoration:none;white-space:nowrap;vertical-align:middle;cursor:pointer;
+}
+.md-typeset .thpt-r4-written-card .slm-written-actions details summary{
+ display:inline-flex;list-style:none;
+}
+.md-typeset .thpt-r4-written-card .slm-written-actions details summary::-webkit-details-marker{
+ display:none;
+}
+.md-typeset .thpt-r4-written-card .slm-written-actions details summary::before{
+ content:"▸";display:inline-block;flex:none;font-size:.75rem;line-height:1;
+}
+.md-typeset .thpt-r4-written-card .slm-written-actions details[open] summary::before{
+ transform:rotate(90deg);
+}
+.md-typeset .thpt-r4-written-card .slm-written-actions details[open]{
+ flex:1 0 100%;
+}
+.md-typeset .thpt-r4-written-card .slm-written-actions .slm-written-reveal{
+ white-space:pre-wrap;overflow-wrap:anywhere;
+ margin:8px 0 0;padding:12px 14px;
+ border:1px solid var(--md-default-fg-color--lightest);
+ border-radius:8px;background:var(--md-code-bg-color);
+ font-size:.92rem;line-height:1.6;
+}
+.md-typeset .thpt-r4-written-card .slm-written-actions
+ :is(details summary,.thpt-r4-remediation-link):focus-visible{
+ outline:2px solid var(--md-accent-fg-color);outline-offset:2px;
+}
+@media(max-width:480px){
+ .md-typeset .thpt-r4-written-card .slm-written-actions{gap:7px;}
+ .md-typeset .thpt-r4-written-card .slm-written-actions details summary,
+ .md-typeset .thpt-r4-written-card .slm-written-actions .thpt-r4-remediation-link{
+  font-size:.82rem;height:42px;min-height:42px;max-height:42px;padding:0 9px;
+ }
+}
+
+
+.md-typeset .thpt-r4-written-card .slm-written-actions{font-size:inherit}
+.md-typeset .thpt-r4-written-card .slm-written-actions>details{font-size:inherit;box-shadow:none!important;overflow:visible;background:transparent!important;border:0!important;margin:0!important;padding:0!important}
+.md-typeset .thpt-r4-written-card .slm-written-actions>details>summary{font-family:inherit;box-shadow:none!important;background:var(--md-code-bg-color)!important;border:1px solid var(--md-default-fg-color--lightest)!important;margin:0!important;padding:0 12px!important}
+.md-typeset .thpt-r4-written-card .slm-written-actions>details>summary::before,.md-typeset .thpt-r4-written-card .slm-written-actions>details>summary::after{content:none!important;display:none!important}
+.md-typeset .thpt-r4-written-card .slm-written-actions>details>summary::marker{content:""}
+.md-typeset .thpt-r4-written-card .slm-written-actions>details>.slm-written-reveal{box-sizing:border-box;min-width:0;max-width:100%;font-size:inherit;line-height:1.6;white-space:normal;overflow-wrap:anywhere;overflow-x:auto}
+.md-typeset .thpt-r4-written-card .slm-written-actions .slm-written-reveal :is(p,ul,ol,li,table,thead,tbody,tr,th,td,strong,em){font-size:inherit}
+.md-typeset .thpt-r4-written-card .slm-written-actions .slm-written-reveal>:first-child{margin-top:0}
+.md-typeset .thpt-r4-written-card .slm-written-actions .slm-written-reveal>:last-child{margin-bottom:0}
+.md-typeset .thpt-r4-written-card .slm-written-actions .slm-written-reveal table{max-width:100%;white-space:normal}
+.md-typeset .thpt-r4-written-card .slm-written-actions .slm-written-reveal :is(th,td){padding:.55rem .75rem;vertical-align:top}
+@media(max-width:480px){.md-typeset .thpt-r4-written-card .slm-written-actions>details>summary{padding:0 9px!important}}
+</style></head>
   
   
     
@@ -11278,41 +11346,41 @@
 <p class="thpt-r4-eyebrow">BÀI TỰ LUẬN</p>
 <h2>Tìm đỉnh và giá trị nhỏ nhất</h2>
 <p>Cho <strong>y = x² − 6x + 7</strong>. Đưa về dạng đỉnh; xác định đỉnh, trục đối xứng và giá trị nhỏ nhất. Giải thích.</p>
-<details><summary>Gợi ý (tự chọn)</summary>Hoàn thành bình phương: x² − 6x = (x − 3)² − 9.</details>
-<details><summary>Lời giải và rubric tự chấm (4 điểm)</summary><p>y = (x − 3)² − 2. Đỉnh I(3; −2), trục x = 3, GTNN = −2 tại x = 3 vì hệ số bình phương dương.</p>
-<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Biến đổi đúng</td><td>1</td></tr><tr><td>Đỉnh và trục</td><td>1</td></tr><tr><td>GTNN và điều kiện đạt</td><td>1</td></tr><tr><td>Lập luận rõ ràng</td><td>1</td></tr></tbody></table></details>
+<div class="slm-written-actions"><details><summary>Gợi ý</summary><div class="slm-written-reveal">Hoàn thành bình phương: x² − 6x = (x − 3)² − 9.</div></details>
+<details><summary>Lời giải và rubic</summary><div class="slm-written-reveal"><p>y = (x − 3)² − 2. Đỉnh I(3; −2), trục x = 3, GTNN = −2 tại x = 3 vì hệ số bình phương dương.</p>
+<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Biến đổi đúng</td><td>1</td></tr><tr><td>Đỉnh và trục</td><td>1</td></tr><tr><td>GTNN và điều kiện đạt</td><td>1</td></tr><tr><td>Lập luận rõ ràng</td><td>1</td></tr></tbody></table></div></details></div>
 </section>
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="anchor" data-thpt-filter-text="lớp 10 hàm số bậc hai diện tích lớn nhất hình chữ nhật tối ưu mô hình hóa" data-thpt-written-canonical="HPT-WRI-DEMO-ANCHOR-01" data-thpt-exposure-role="SGK_WRITTEN" id="bai-mo-neo-demo">
 <p class="thpt-r4-eyebrow">BÀI MỎ NEO</p>
 <h2>Diện tích hình chữ nhật lớn nhất</h2>
 <p>Hình chữ nhật có chu vi 24 m. Đặt một cạnh x (m), biểu diễn diện tích S theo x, tìm S lớn nhất và kích thước đạt được; ghi điều kiện x và đơn vị.</p>
-<details><summary>Gợi ý theo chiến lược (tự chọn)</summary>Hai cạnh có tổng 12 m, cạnh còn lại 12 − x; điều kiện 0 &lt; x &lt; 12. Dùng dạng bình phương.</details>
-<details><summary>Lời giải và rubric tự chấm (6 điểm)</summary>
+<div class="slm-written-actions"><details><summary>Gợi ý</summary><div class="slm-written-reveal">Hai cạnh có tổng 12 m, cạnh còn lại 12 − x; điều kiện 0 &lt; x &lt; 12. Dùng dạng bình phương.</div></details>
+<details><summary>Lời giải và rubic</summary><div class="slm-written-reveal">
 <p>Với 0 &lt; x &lt; 12, S = x(12 − x) = −(x − 6)² + 36 (m²). Vậy S ≤ 36 m², đạt tại x = 6 m; hình vuông cạnh 6 m.</p>
-<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Chọn ẩn và điều kiện</td><td>2</td></tr><tr><td>Lập hàm diện tích</td><td>1</td></tr><tr><td>Chứng minh cực đại</td><td>2</td></tr><tr><td>Kết luận, đơn vị, trình bày</td><td>1</td></tr></tbody></table></details>
+<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Chọn ẩn và điều kiện</td><td>2</td></tr><tr><td>Lập hàm diện tích</td><td>1</td></tr><tr><td>Chứng minh cực đại</td><td>2</td></tr><tr><td>Kết luận, đơn vị, trình bày</td><td>1</td></tr></tbody></table></div></details></div>
 </section>
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương VI hàm số bảng tập xác định tập giá trị đồ thị" data-thpt-written-canonical="HPT-G10-CHVI-WRI-15-01" data-thpt-exposure-role="SGK_WRITTEN" id="hpt-g10-chvi-wri-15-01">
 <p class="thpt-r4-eyebrow">BÀI TỰ LUẬN</p>
 <h2>Bài 15 · Bảng giá trị và tính đơn trị</h2>
 <p>Bảng quan sát x∈{0,1,2,3} có f(x)∈{2,4,4,8} theo đúng thứ tự. (a) Xác định tập xác định và tập giá trị. (b) Điểm A(2;4) và B(3;4) có thuộc đồ thị không? (c) Giải thích vì sao bảng mô tả một hàm số dù hai đầu vào có cùng đầu ra.</p>
-<details><summary>Gợi ý (tự chọn)</summary>Một x chỉ cần có một giá trị y, không bắt buộc hai x khác nhau cho hai giá trị khác nhau.</details>
-<details><summary>Lời giải và rubric tự chấm (5 điểm)</summary><p>D={0,1,2,3}; T={2,4,8}. Vì f(2)=4 nên A thuộc đồ thị; f(3)=8 nên B không thuộc. Mỗi đầu vào đều có đúng một đầu ra, vì vậy đây vẫn là hàm số.</p>
-<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Tập xác định D đúng</td><td>1</td></tr><tr><td>Tập giá trị T không lặp</td><td>1</td></tr><tr><td>Kiểm tra A đúng</td><td>1</td></tr><tr><td>Kiểm tra B đúng</td><td>1</td></tr><tr><td>Giải thích tính đơn trị</td><td>1</td></tr></tbody></table></details>
+<div class="slm-written-actions"><details><summary>Gợi ý</summary><div class="slm-written-reveal">Một x chỉ cần có một giá trị y, không bắt buộc hai x khác nhau cho hai giá trị khác nhau.</div></details>
+<details><summary>Lời giải và rubic</summary><div class="slm-written-reveal"><p>D={0,1,2,3}; T={2,4,8}. Vì f(2)=4 nên A thuộc đồ thị; f(3)=8 nên B không thuộc. Mỗi đầu vào đều có đúng một đầu ra, vì vậy đây vẫn là hàm số.</p>
+<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Tập xác định D đúng</td><td>1</td></tr><tr><td>Tập giá trị T không lặp</td><td>1</td></tr><tr><td>Kiểm tra A đúng</td><td>1</td></tr><tr><td>Kiểm tra B đúng</td><td>1</td></tr><tr><td>Giải thích tính đơn trị</td><td>1</td></tr></tbody></table></div></details></div>
 </section>
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="anchor" data-thpt-filter-text="lớp 10 chương VI hàm số từng đoạn mô hình chi phí mỏ neo" data-thpt-written-canonical="HPT-G10-CHVI-WRI-15-02" data-thpt-exposure-role="SGK_WRITTEN" id="hpt-g10-chvi-wri-15-02">
 <p class="thpt-r4-eyebrow">BÀI MỎ NEO</p>
 <h2>Bài 15 · Mỏ neo: biểu giá từng khoảng</h2>
 <p>Dịch vụ xe giả định thu 20 nghìn đồng cho chuyến 0&lt;x≤2 km, trên 2 km thu thêm 5 nghìn đồng/km. (a) Lập C(x). (b) Tính C(2), C(6). (c) Tìm miền quãng đường với ngân sách tối đa 50 nghìn đồng.</p>
-<details><summary>Gợi ý (tự chọn)</summary>Phải viết hai nhánh của biểu giá theo điều kiện x rồi giải bất phương trình trên từng miền.</details>
-<details><summary>Lời giải và rubric tự chấm (6 điểm)</summary><p>C(x)=20 khi 0&lt;x≤2; C(x)=20+5(x−2) khi x&gt;2. C(2)=20; C(6)=40 nghìn đồng. Ngân sách ≤50 thỏa mọi 0&lt;x≤2; trên nhánh x&gt;2: 20+5(x−2)≤50 ⇔ x≤8. Kết hợp: 0&lt;x≤8 km.</p>
-<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Chọn miền, đơn vị</td><td>1</td></tr><tr><td>Hai nhánh C(x) đúng</td><td>2</td></tr><tr><td>Hai giá trị C(2), C(6)</td><td>1</td></tr><tr><td>Giải bất phương trình đúng miền</td><td>1</td></tr><tr><td>Kết luận tổng hợp</td><td>1</td></tr></tbody></table></details>
+<div class="slm-written-actions"><details><summary>Gợi ý</summary><div class="slm-written-reveal">Phải viết hai nhánh của biểu giá theo điều kiện x rồi giải bất phương trình trên từng miền.</div></details>
+<details><summary>Lời giải và rubic</summary><div class="slm-written-reveal"><p>C(x)=20 khi 0&lt;x≤2; C(x)=20+5(x−2) khi x&gt;2. C(2)=20; C(6)=40 nghìn đồng. Ngân sách ≤50 thỏa mọi 0&lt;x≤2; trên nhánh x&gt;2: 20+5(x−2)≤50 ⇔ x≤8. Kết hợp: 0&lt;x≤8 km.</p>
+<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Chọn miền, đơn vị</td><td>1</td></tr><tr><td>Hai nhánh C(x) đúng</td><td>2</td></tr><tr><td>Hai giá trị C(2), C(6)</td><td>1</td></tr><tr><td>Giải bất phương trình đúng miền</td><td>1</td></tr><tr><td>Kết luận tổng hợp</td><td>1</td></tr></tbody></table></div></details></div>
 </section>
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương VI bài 16 hàm số bậc hai parabol đỉnh trục giao điểm tập giá trị" data-thpt-written-canonical="HPT-G10-CHVI-WRI-16-01" data-thpt-outcome-id="B16_OUT_02 B16_OUT_03 B16_OUT_04" data-thpt-exposure-role="SGK_WRITTEN" id="bai-16-tu-luan">
 <p class="thpt-r4-eyebrow">BÀI 16 · TỰ LUẬN</p>
 <h2>Phân tích toàn diện một parabol</h2>
 <p>Xét hàm số <span class="arithmatex">\(f(x)=x^2-2x-8\)</span> trên tập số thực. (a) Đưa về dạng đỉnh, tìm đỉnh và trục đối xứng. (b) Tìm các giao điểm với hai trục tọa độ. (c) Xác định các khoảng đồng biến, nghịch biến và tập giá trị. (d) Nêu một phép kiểm bằng điểm đối xứng.</p>
-<details><summary>Gợi ý (tự chọn)</summary><p>Hoàn thành bình phương: <span class="arithmatex">\(x^2-2x=(x-1)^2-1\)</span>. Với giao <span class="arithmatex">\(Ox\)</span>, giải <span class="arithmatex">\(f(x)=0\)</span>; giao <span class="arithmatex">\(Oy\)</span>, thay <span class="arithmatex">\(x=0\)</span>.</p></details>
-<details><summary>Đối chiếu lời giải và rubric tự chấm (6 điểm)</summary>
+<div class="slm-written-actions"><details><summary>Gợi ý</summary><div class="slm-written-reveal"><p>Hoàn thành bình phương: <span class="arithmatex">\(x^2-2x=(x-1)^2-1\)</span>. Với giao <span class="arithmatex">\(Ox\)</span>, giải <span class="arithmatex">\(f(x)=0\)</span>; giao <span class="arithmatex">\(Oy\)</span>, thay <span class="arithmatex">\(x=0\)</span>.</p></div></details>
+<details><summary>Lời giải và rubic</summary><div class="slm-written-reveal">
 <p><span class="arithmatex">\(f(x)=(x-1)^2-9\)</span>, đỉnh <span class="arithmatex">\(I(1;-9)\)</span>, trục đối xứng <span class="arithmatex">\(x=1\)</span>, parabol mở lên. Ta có <span class="arithmatex">\(f(x)=(x-4)(x+2)\)</span>, nên giao với <span class="arithmatex">\(Ox\)</span> tại <span class="arithmatex">\((-2;0),(4;0)\)</span>; giao với <span class="arithmatex">\(Oy\)</span> tại <span class="arithmatex">\((0;-8)\)</span>. Hàm nghịch biến trên <span class="arithmatex">\((-\infty;1)\)</span>, đồng biến trên <span class="arithmatex">\((1;+\infty)\)</span>, tập giá trị <span class="arithmatex">\([-9;+\infty)\)</span>. Hai hoành độ <span class="arithmatex">\(0,2\)</span> cách đều 1 và <span class="arithmatex">\(f(0)=f(2)=-8\)</span>, xác nhận đối xứng.</p>
 <table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody>
 <tr><td>Đưa về dạng đỉnh đúng và xác định đỉnh/trục</td><td>2</td></tr>
@@ -11320,13 +11388,13 @@
 <tr><td>Hai khoảng biến thiên và tập giá trị đúng</td><td>1</td></tr>
 <tr><td>Phép kiểm đối xứng và diễn giải mạch lạc</td><td>1</td></tr></tbody></table>
 <p>Tự đối chiếu trên giấy, không ghi Skill Mastery hay điểm đánh giá chính thức.</p>
-</details></section>
+</div></details></div></section>
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="anchor" data-thpt-filter-text="lớp 10 chương VI bài 16 hàm số bậc hai mỏ neo doanh thu điều kiện khoảng giá tối ưu" data-thpt-written-canonical="HPT-G10-CHVI-WRI-16-02" data-thpt-outcome-id="B16_OUT_05" data-thpt-exposure-role="SGK_WRITTEN" id="bai-16-mo-neo">
 <p class="thpt-r4-eyebrow">BÀI 16 · MỎ NEO</p>
 <h2>Tối ưu doanh thu theo giá bán và ngưỡng mục tiêu</h2>
 <p>Một cửa hàng xét mô hình giả định: nếu bán với giá <span class="arithmatex">\(p\)</span> nghìn đồng/sản phẩm thì số lượng bán được là <span class="arithmatex">\(n(p)=160-2p\)</span> sản phẩm, với <span class="arithmatex">\(0\le p\le80\)</span>. (a) Lập doanh thu <span class="arithmatex">\(R(p)\)</span> (nghìn đồng). (b) Tìm giá bán và số lượng để doanh thu lớn nhất. (c) Tìm toàn bộ khoảng giá sao cho doanh thu ít nhất 3 triệu đồng, đồng thời kiểm tra điều kiện của mô hình.</p>
-<details><summary>Gợi ý (tự chọn)</summary><p>Doanh thu bằng số lượng nhân đơn giá. Đưa <span class="arithmatex">\(R(p)=160p-2p^2\)</span> về dạng bình phương; lưu ý 3 triệu đồng bằng 3000 nghìn đồng.</p></details>
-<details><summary>Đối chiếu lời giải và rubric tự chấm (7 điểm)</summary>
+<div class="slm-written-actions"><details><summary>Gợi ý</summary><div class="slm-written-reveal"><p>Doanh thu bằng số lượng nhân đơn giá. Đưa <span class="arithmatex">\(R(p)=160p-2p^2\)</span> về dạng bình phương; lưu ý 3 triệu đồng bằng 3000 nghìn đồng.</p></div></details>
+<details><summary>Lời giải và rubic</summary><div class="slm-written-reveal">
 <p><span class="arithmatex">\(R(p)=p(160-2p)=-2(p-40)^2+3200\)</span> (nghìn đồng), với <span class="arithmatex">\(p\in[0;80]\)</span>. Vì parabol mở xuống và đỉnh <span class="arithmatex">\(p=40\)</span> thuộc miền, doanh thu tối đa <strong>3200 nghìn đồng = 3,2 triệu đồng</strong> khi bán với giá 40 nghìn đồng, lúc đó <span class="arithmatex">\(n(40)=80\)</span> sản phẩm. Với ngưỡng 3 triệu đồng: <span class="arithmatex">\(-2(p-40)^2+3200\ge3000\iff(p-40)^2\le100\iff30\le p\le50\)</span>. Khoảng này nằm trong miền giả định [0;80], nên kết quả hợp lệ. Đây là mô hình giả định, không phải dự báo doanh thu thực tế.</p>
 <table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody>
 <tr><td>Xác định đúng biến, đơn vị, miền và mô hình doanh thu</td><td>2</td></tr>
@@ -11335,38 +11403,38 @@
 <tr><td>Giải bất đẳng thức ngưỡng doanh thu</td><td>1</td></tr>
 <tr><td>Kiểm điều kiện mô hình và kết luận hợp lý</td><td>1</td></tr></tbody></table>
 <p>Tự đối chiếu chỉ để học, không dùng bài đã xem lời giải làm chứng cứ độc lập cho Final Submit.</p>
-</details></section>
+</div></details></div></section>
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương VI tam thức dấu bất phương trình tự luận" data-thpt-written-canonical="HPT-G10-CHVI-WRI-17-01" data-thpt-exposure-role="SGK_WRITTEN" id="hpt-g10-chvi-wri-17-01">
 <p class="thpt-r4-eyebrow">BÀI TỰ LUẬN</p>
 <h2>Bài 17 · Bảng xét dấu tam thức</h2>
 <p>Với f(x)=−2x²+4x+6: (a) tìm nghiệm f(x)=0; (b) lập bảng dấu; (c) giải f(x)≥0 và f(x)&lt;0.</p>
-<details><summary>Gợi ý (tự chọn)</summary>Phân tích thành −2(x−3)(x+1), nhớ hệ số a âm.</details>
-<details><summary>Lời giải và rubric tự chấm (6 điểm)</summary><p>f(x)=−2(x−3)(x+1), nghiệm −1 và 3. Dấu âm khi x&lt;−1, dương khi −1&lt;x&lt;3, âm khi x&gt;3; bằng 0 tại −1 và 3. f≥0 cho [−1;3]; f&lt;0 cho (−∞;−1)∪(3;+∞).</p>
-<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Nghiệm đúng</td><td>1</td></tr><tr><td>Bảng xét dấu đúng</td><td>2</td></tr><tr><td>Nghiệm f≥0 có biên đúng</td><td>1</td></tr><tr><td>Nghiệm f&lt;0 có biên đúng</td><td>1</td></tr><tr><td>Lập luận dấu a và điều kiện</td><td>1</td></tr></tbody></table></details>
+<div class="slm-written-actions"><details><summary>Gợi ý</summary><div class="slm-written-reveal">Phân tích thành −2(x−3)(x+1), nhớ hệ số a âm.</div></details>
+<details><summary>Lời giải và rubic</summary><div class="slm-written-reveal"><p>f(x)=−2(x−3)(x+1), nghiệm −1 và 3. Dấu âm khi x&lt;−1, dương khi −1&lt;x&lt;3, âm khi x&gt;3; bằng 0 tại −1 và 3. f≥0 cho [−1;3]; f&lt;0 cho (−∞;−1)∪(3;+∞).</p>
+<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Nghiệm đúng</td><td>1</td></tr><tr><td>Bảng xét dấu đúng</td><td>2</td></tr><tr><td>Nghiệm f≥0 có biên đúng</td><td>1</td></tr><tr><td>Nghiệm f&lt;0 có biên đúng</td><td>1</td></tr><tr><td>Lập luận dấu a và điều kiện</td><td>1</td></tr></tbody></table></div></details></div>
 </section>
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="anchor" data-thpt-filter-text="lớp 10 chương VI tam thức hình chữ nhật diện tích rào mỏ neo" data-thpt-written-canonical="HPT-G10-CHVI-WRI-17-02" data-thpt-exposure-role="SGK_WRITTEN" id="hpt-g10-chvi-wri-17-02">
 <p class="thpt-r4-eyebrow">BÀI MỎ NEO</p>
 <h2>Bài 17 · Mỏ neo: diện tích rào vườn</h2>
 <p>Có 28 m lưới rào ba cạnh hình chữ nhật dựa tường; x là độ dài cạnh vuông góc tường. (a) Xác định miền và diện tích S(x). (b) Tìm diện tích lớn nhất. (c) Tìm x để diện tích ít nhất 90 m².</p>
-<details><summary>Gợi ý (tự chọn)</summary>Cạnh còn lại là 28−2x và điều kiện độ dài dương. Dùng dạng bình phương để tìm GTLN.</details>
-<details><summary>Lời giải và rubric tự chấm (6 điểm)</summary><p>0&lt;x&lt;14; S=x(28−2x)=−2(x−7)²+98. Smax=98 m² tại x=7 m. S≥90 ⇔ (x−7)²≤4, suy ra 5≤x≤9 (m), đều thỏa miền.</p>
-<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Điều kiện</td><td>1</td></tr><tr><td>Lập hàm diện tích</td><td>1</td></tr><tr><td>GTLN và khi đạt</td><td>2</td></tr><tr><td>Bất phương trình và nghiệm</td><td>1</td></tr><tr><td>Đơn vị/kết luận</td><td>1</td></tr></tbody></table></details>
+<div class="slm-written-actions"><details><summary>Gợi ý</summary><div class="slm-written-reveal">Cạnh còn lại là 28−2x và điều kiện độ dài dương. Dùng dạng bình phương để tìm GTLN.</div></details>
+<details><summary>Lời giải và rubic</summary><div class="slm-written-reveal"><p>0&lt;x&lt;14; S=x(28−2x)=−2(x−7)²+98. Smax=98 m² tại x=7 m. S≥90 ⇔ (x−7)²≤4, suy ra 5≤x≤9 (m), đều thỏa miền.</p>
+<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Điều kiện</td><td>1</td></tr><tr><td>Lập hàm diện tích</td><td>1</td></tr><tr><td>GTLN và khi đạt</td><td>2</td></tr><tr><td>Bất phương trình và nghiệm</td><td>1</td></tr><tr><td>Đơn vị/kết luận</td><td>1</td></tr></tbody></table></div></details></div>
 </section>
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương VI phương trình căn điều kiện tự luận" data-thpt-written-canonical="HPT-G10-CHVI-WRI-18-01" data-thpt-exposure-role="SGK_WRITTEN" id="hpt-g10-chvi-wri-18-01">
 <p class="thpt-r4-eyebrow">BÀI TỰ LUẬN</p>
 <h2>Bài 18 · Phương trình hai căn</h2>
 <p>Giải trong ℝ phương trình √(x²+4x+4)=√(2x+4). Nêu điều kiện và kiểm tra nghiệm.</p>
-<details><summary>Gợi ý (tự chọn)</summary>Căn vế phải yêu cầu x≥−2. Bình phương hai vế rồi kiểm tra từng ứng viên.</details>
-<details><summary>Lời giải và rubric tự chấm (5 điểm)</summary><p>Điều kiện x≥−2. Bình phương (x+2)²=2x+4 ⇔ x²+2x=0 ⇔ x(x+2)=0; ứng viên x=0 và x=−2 đều đạt điều kiện và thay lại lần lượt được 2=2 và 0=0. S={−2;0}.</p>
-<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Điều kiện xác định</td><td>1</td></tr><tr><td>Bình phương đúng</td><td>1</td></tr><tr><td>Tìm nghiệm ứng viên</td><td>1</td></tr><tr><td>Thử lại hai nghiệm</td><td>1</td></tr><tr><td>Tập nghiệm và kết luận</td><td>1</td></tr></tbody></table></details>
+<div class="slm-written-actions"><details><summary>Gợi ý</summary><div class="slm-written-reveal">Căn vế phải yêu cầu x≥−2. Bình phương hai vế rồi kiểm tra từng ứng viên.</div></details>
+<details><summary>Lời giải và rubic</summary><div class="slm-written-reveal"><p>Điều kiện x≥−2. Bình phương (x+2)²=2x+4 ⇔ x²+2x=0 ⇔ x(x+2)=0; ứng viên x=0 và x=−2 đều đạt điều kiện và thay lại lần lượt được 2=2 và 0=0. S={−2;0}.</p>
+<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Điều kiện xác định</td><td>1</td></tr><tr><td>Bình phương đúng</td><td>1</td></tr><tr><td>Tìm nghiệm ứng viên</td><td>1</td></tr><tr><td>Thử lại hai nghiệm</td><td>1</td></tr><tr><td>Tập nghiệm và kết luận</td><td>1</td></tr></tbody></table></div></details></div>
 </section>
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="anchor" data-thpt-filter-text="lớp 10 chương VI phương trình căn pythagore hình học mỏ neo" data-thpt-written-canonical="HPT-G10-CHVI-WRI-18-02" data-thpt-exposure-role="SGK_WRITTEN" id="hpt-g10-chvi-wri-18-02">
 <p class="thpt-r4-eyebrow">BÀI MỎ NEO</p>
 <h2>Bài 18 · Mỏ neo: tam giác vuông</h2>
 <p>Tam giác vuông có hai cạnh góc vuông x&gt;0 m và 5 m, cạnh huyền x+1 m. (a) Lập phương trình chứa căn; (b) giải và kiểm nghiệm; (c) nêu độ dài ba cạnh.</p>
-<details><summary>Gợi ý (tự chọn)</summary>Dùng Pythagore √(x²+25)=x+1 rồi giữ điều kiện x&gt;0.</details>
-<details><summary>Lời giải và rubric tự chấm (6 điểm)</summary><p>√(x²+25)=x+1. Bình phương được x²+25=x²+2x+1 ⇒ x=12. Thử lại √169=13=12+1. Ba cạnh là 12 m, 5 m, 13 m.</p>
-<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Dựng điều kiện và đại lượng</td><td>1</td></tr><tr><td>Lập phương trình</td><td>2</td></tr><tr><td>Giải x</td><td>1</td></tr><tr><td>Thử nghiệm</td><td>1</td></tr><tr><td>Kết luận 3 cạnh, đơn vị</td><td>1</td></tr></tbody></table></details>
+<div class="slm-written-actions"><details><summary>Gợi ý</summary><div class="slm-written-reveal">Dùng Pythagore √(x²+25)=x+1 rồi giữ điều kiện x&gt;0.</div></details>
+<details><summary>Lời giải và rubic</summary><div class="slm-written-reveal"><p>√(x²+25)=x+1. Bình phương được x²+25=x²+2x+1 ⇒ x=12. Thử lại √169=13=12+1. Ba cạnh là 12 m, 5 m, 13 m.</p>
+<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Dựng điều kiện và đại lượng</td><td>1</td></tr><tr><td>Lập phương trình</td><td>2</td></tr><tr><td>Giải x</td><td>1</td></tr><tr><td>Thử nghiệm</td><td>1</td></tr><tr><td>Kết luận 3 cạnh, đơn vị</td><td>1</td></tr></tbody></table></div></details></div>
 </section></div></div>
 
 <p><a href="../tu-luan-chuong-vii/"><strong>Tự luận Chương VII — 4 bài mới, gồm 1 bài mỏ neo</strong></a>.</p>
