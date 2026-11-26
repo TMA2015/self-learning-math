@@ -1,3 +1,10 @@
+## CURRENT CP15 CĐ13 custody
+Learner `7e54d34b9eee75ab4b8f8e4f53ab40298e701493`, Q18 `868a8e44359b8fb10e06649e011f4b2354d0ba5c`; G10 source `18c29d7f60448a0a52d5b9f5aa5002e0f331defd` on sibling #750, G12 and NEW20 banks unchanged. New common-origin angle visual `03f008e587226f0492ec217373d090cd7cc0d79b`. 52 IDs/16 exact replays/4 rubrics/69 disclosures. No merge/deploy.
+
+---
+
+**Earlier narrative evidence below is historical; current structured snapshot fields supersede prior narrative pointers.**
+
 <!-- OWNER_20261121_SHARED_CANONICAL_EDITORIAL_SOURCE_EQUIVALENT_TOPIC13_A1 -->
 **CURRENT OWNER-APPROVED SOURCE_EQUIVALENT:** CĐ13 learner `7bd211326e4f644a94e1dfad7868c03e1c415adb`, original G10 SGK canonical B07-P04 `18c29d7f60448a0a52d5b9f5aa5002e0f331defd` (prior `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` immutable historical), Q18 `24f5cd26b47852259cdc932fce7577fcf2f44866`, Q15/A1 `pending`, V2 `pending`. Exact original B07-P04 vector-zero stem asks SAME conventional fact, MCQ choices and **Đáp án D** unchanged, mathematical solution still states zero vector is length 0 and by the learned convention has same direction; only citation prose “SGK/SBT KNTT” removed from stem/solution in BOTH source owner and Topic projection. Remaining 51 Practice math and 4 written rubrics, 16 public selfchecks and SVG unaffected. DELTA_B_SOURCE_EQUIVALENT; no new independent NotebookLM whole Topic PASS/RELEASE/merge/deploy.
 ---
@@ -26,19 +33,19 @@ CONTENT_REVISION: R07_EDITORIAL_FINAL_20261118
 PUBLIC_NEW20_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_NEW20_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 Q18_R04_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-Q18_R04_RECEIPT_BLOB: 9c902eb7d5c8fcf5eb62690fa8e2b9a6c3d5cad7
+Q18_R04_RECEIPT_BLOB: 868a8e44359b8fb10e06649e011f4b2354d0ba5c
 G10_SOURCE_EXTERNAL_PR: 750
 G10_SOURCE_EXTERNAL_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
-AUTHORING_STATUS: CURRENT_R07_TOPIC13_16_PED6_52_UNIQUE_AUTHOR_SELF_VERIFIED
+AUTHORING_STATUS: CURRENT_CD13_WORK1055_A05_XG5_AUTHOR_SELF_VERIFIED
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 7bd211326e4f644a94e1dfad7868c03e1c415adb
-SOURCE_BLOB: 7bd211326e4f644a94e1dfad7868c03e1c415adb
-ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
+ACADEMIC_SOURCE_BLOB: 7e54d34b9eee75ab4b8f8e4f53ab40298e701493
+SOURCE_BLOB: 7e54d34b9eee75ab4b8f8e4f53ab40298e701493
+ORIGINAL_G10_SGK_SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
