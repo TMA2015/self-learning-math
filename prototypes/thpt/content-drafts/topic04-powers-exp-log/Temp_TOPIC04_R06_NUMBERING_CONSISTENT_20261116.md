@@ -685,13 +685,13 @@ Hãy giải từng bài trước khi mở lời giải. Với lôgarit, ghi rõ 
 
 **Bài 1.**
 
-Tại sao (2/5)^(-2) không phải số âm? Tính giá trị.
+Tại sao \(\left(\frac25\right)^{-2}\) không phải số âm? Tính giá trị.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 25/4.
+**Đáp án:** \(\frac{25}{4}\).
 
-Số mũ âm nói lấy nghịch đảo, không phải dấu âm trước lũy thừa: (2/5)^(-2)=(5/2)^2=25/4.
+Số mũ âm nói lấy nghịch đảo, không phải dấu âm trước lũy thừa: \(\left(\frac25\right)^{-2}=\left(\frac52\right)^2=\frac{25}{4}\).
 
 </details>
 
@@ -699,7 +699,7 @@ Số mũ âm nói lấy nghịch đảo, không phải dấu âm trước lũy t
 
 **Bài 2.**
 
-Giải thích ý nghĩa của 81^(3/4) và tính kết quả.
+Giải thích ý nghĩa của \(81^{\frac34}\) và tính kết quả.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -713,13 +713,13 @@ Cơ số dương, căn bậc 4 của 81 bằng 3; lấy lũy thừa bậc 3 đư
 
 **Bài 3.**
 
-0^(-2) có nghĩa trong tập số thực không? Vì sao?
+\(0^{-2}\) có nghĩa trong tập số thực không? Vì sao?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Không.
 
-Nếu dùng quy tắc số mũ âm sẽ là 1/0², phép chia cho 0 không xác định.
+Nếu dùng quy tắc số mũ âm sẽ gặp phép chia cho \(0^2=0\), không xác định.
 
 </details>
 
@@ -727,13 +727,13 @@ Nếu dùng quy tắc số mũ âm sẽ là 1/0², phép chia cho 0 không xác 
 
 **Bài 4.**
 
-Một bạn nói: “2^(√2) không có nghĩa, vì √2 không thể đếm số lần nhân 2”. Em giải thích bạn đang hiểu sai điều gì và mô tả cách số này được hình thành.
+Một bạn nói: “\(2^{\sqrt2}\) không có nghĩa, vì \(\sqrt2\) không thể đếm số lần nhân 2”. Em giải thích bạn đang hiểu sai điều gì và mô tả cách số này được hình thành.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2^(√2) có nghĩa vì cơ số 2>0; số mũ thực không còn được hiểu là số lần nhân nguyên. Nó được định nghĩa bằng giới hạn của dãy giá trị 2^r khi các số hữu tỉ r tiến đến √2.
+**Đáp án:** \(2^{\sqrt2}\) có nghĩa vì cơ số \(2>0\); số mũ thực không còn được hiểu là số lần nhân nguyên. Nó được định nghĩa bằng giới hạn của dãy giá trị \(2^r\) khi các số hữu tỉ r tiến đến \(\sqrt2\).
 
-Các số mũ hữu tỉ gần √2 như 1,4;1,41;1,414,… đã có định nghĩa bằng căn/lũy thừa. Khi các giá trị 2^r tiến đến một số xác định không phụ thuộc dãy xấp xỉ, ta gọi đó là 2^(√2). Đây là mở rộng nhất quán của khái niệm, không phải “nhân số 2 √2 lần”.
+Các số mũ hữu tỉ gần \(\sqrt2\) như 1,4; 1,41; 1,414; … đã có định nghĩa bằng căn/lũy thừa. Khi các giá trị \(2^r\) tiến đến một số xác định không phụ thuộc dãy xấp xỉ, ta gọi đó là \(2^{\sqrt2}\). Đây là mở rộng nhất quán của khái niệm, không phải “nhân số 2 đúng \(\sqrt2\) lần”.
 
 </details>
 
@@ -747,7 +747,7 @@ Phân biệt hai yêu cầu: tìm \(\sqrt{25}\) và giải \(x^2=25\). Nếu chu
 
 **Đáp án:** \(\sqrt{25}=5\) là căn không âm; phương trình \(x^2=25\) có hai nghiệm \(x=5\) và \(x=-5\); \(\sqrt[3]{-27}=-3\).
 
-Ký hiệu căn bậc chẵn lấy giá trị không âm, còn phương trình \(x^2=25\) yêu cầu tìm **mọi** số bình phương bằng 25. Căn bậc lẻ của số âm tồn tại trong ℝ vì \((-3)^3=-27\). Không suy rộng cơ số âm sang mọi số mũ thực.
+Ký hiệu căn bậc chẵn lấy giá trị không âm, còn phương trình \(x^2=25\) yêu cầu tìm **mọi** số bình phương bằng 25. Căn bậc lẻ của số âm tồn tại trong \(\mathbb R\) vì \((-3)^3=-27\). Không suy rộng cơ số âm sang mọi số mũ thực.
 
 </details>
 
@@ -755,13 +755,13 @@ Ký hiệu căn bậc chẵn lấy giá trị không âm, còn phương trình \
 
 **Bài 6.**
 
-Với a>0, rút gọn a^(-1/2)·a^(3/2).
+Với \(a>0\), rút gọn \(a^{-\frac12}\cdot a^{\frac32}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** a.
 
-Cộng các số mũ do cùng cơ số dương: a^((-1/2)+(3/2))=a^1=a.
+Cộng các số mũ do cùng cơ số dương: \(a^{-\frac12+\frac32}=a^1=a\).
 
 </details>
 
@@ -769,11 +769,11 @@ Cộng các số mũ do cùng cơ số dương: a^((-1/2)+(3/2))=a^1=a.
 
 **Bài 7.**
 
-Tính 64^(-1/3).
+Tính \(64^{-\frac13}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 1/4.
+**Đáp án:** \(\frac14\).
 
 Căn bậc ba của 64 là 4; số mũ âm lấy nghịch đảo.
 
@@ -783,13 +783,13 @@ Căn bậc ba của 64 là 4; số mũ âm lấy nghịch đảo.
 
 **Bài 8.**
 
-Tính 16^(3/4) theo căn bậc bốn.
+Tính \(16^{\frac34}\) theo căn bậc bốn.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 8.
 
-Căn bậc 4 của 16 là 2, sau đó lấy 2³=8.
+Căn bậc 4 của 16 là 2, sau đó lấy \(2^3=8\).
 
 </details>
 
@@ -797,13 +797,13 @@ Căn bậc 4 của 16 là 2, sau đó lấy 2³=8.
 
 **Bài 9.**
 
-Với a>0, rút gọn (a^(2/3))^(3/2).
+Với \(a>0\), rút gọn \(\left(a^{\frac23}\right)^{\frac32}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** a.
 
-Nhân số mũ 2/3·3/2=1 với cơ số dương để mọi phép tính hợp lệ.
+Nhân số mũ \(\frac23\cdot\frac32=1\) với cơ số dương để mọi phép tính hợp lệ.
 
 </details>
 
@@ -811,13 +811,13 @@ Nhân số mũ 2/3·3/2=1 với cơ số dương để mọi phép tính hợp l
 
 **Bài 10.**
 
-Bạn viết 2²+2³=2⁵. Hãy nêu lỗi và kết quả đúng.
+Bạn viết \(2^2+2^3=2^5\). Hãy nêu lỗi và kết quả đúng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 12; quy tắc cộng số mũ không áp dụng cho tổng hai lũy thừa.
 
-2²+2³=4+8=12; 2⁵=32 chỉ bằng 2²·2³.
+\(2^2+2^3=4+8=12\); \(2^5=32\) chỉ bằng \(2^2\cdot2^3\).
 
 </details>
 
@@ -829,7 +829,7 @@ Viết \(0{,}0000075\) dưới dạng kí hiệu khoa học, rồi giải thích
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** \(7{,}5\times10^{-6}\). Biểu thức \(75\times10^{-7}\) cũng bằng cùng giá trị nhưng hệ số 75 không thuộc đoạn \([1,10)\) nên không phải dạng chuẩn.
+**Đáp án:** \(7{,}5\times10^{-6}\). Biểu thức \(75\times10^{-7}\) cũng bằng cùng giá trị nhưng hệ số 75 không thuộc \([1;10)\) nên không phải dạng chuẩn.
 
 Số rất nhỏ hơn 1 nên số mũ của 10 âm; chuyển dấu phẩy sáu chữ số để có phần hệ số 7,5, nhân \(10^{-6}\) để giữ đúng giá trị. Kí hiệu khoa học chuẩn có phần trị tuyệt đối hệ số từ 1 đến dưới 10.
 
@@ -839,18 +839,18 @@ Số rất nhỏ hơn 1 nên số mũ của 10 âm; chuyển dấu phẩy sáu c
 
 **Bài 12.**
 
-Với a>0: (a) rút gọn E=a^(3/2)·a^(−1/2)/a^(1/3); (b) tính 64^(2/3); (c) giải thích tại sao điều kiện a>0 được giữ trong E.
+Với \(a>0\): (a) rút gọn \(E=\frac{a^{\frac32}\cdot a^{-\frac12}}{a^{\frac13}}\); (b) tính \(64^{\frac23}\); (c) giải thích tại sao điều kiện \(a>0\) được giữ trong E.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-(a) E=a^(3/2−1/2−1/3)=a^(2/3); (b) ³√64=4, bình phương là 16; (c) cần a>0 để các lũy thừa có số mũ thực/hữu tỉ được dùng nhất quán và mẫu khác 0.
+(a) \(E=a^{\frac32-\frac12-\frac13}=a^{\frac23}\); (b) \(\sqrt[3]{64}=4\), bình phương là 16; (c) cần \(a>0\) để các lũy thừa có số mũ thực/hữu tỉ được dùng nhất quán và mẫu khác 0.
 
 **Rubric 4 điểm:**
 
-1. Kiểm đúng a>0 và nêu ý nghĩa hợp lệ phép chia — **1 điểm**.
+1. Kiểm đúng \(a>0\) và nêu ý nghĩa hợp lệ phép chia — **1 điểm**.
 2. Đưa E về một lũy thừa bằng cách cộng/trừ số mũ đúng — **1 điểm**.
-3. Kết luận E=a^(2/3) không bỏ điều kiện — **1 điểm**.
-4. Tính 64^(2/3)=16 và giải thích qua căn bậc ba — **1 điểm**.
+3. Kết luận \(E=a^{\frac23}\) không bỏ điều kiện — **1 điểm**.
+4. Tính \(64^{\frac23}=16\) và giải thích qua căn bậc ba — **1 điểm**.
 
 </details>
 
@@ -858,13 +858,13 @@ Với a>0: (a) rút gọn E=a^(3/2)·a^(−1/2)/a^(1/3); (b) tính 64^(2/3); (c)
 
 **Bài 13.**
 
-Giải thích tại sao 3^(-2)·9=1 nhưng 0^(-2) không xác định.
+Giải thích tại sao \(3^{-2}\cdot9=1\) nhưng \(0^{-2}\) không xác định.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 3^(-2)·9=1; 0^(-2) không xác định.
+**Đáp án:** \(3^{-2}\cdot9=1\); \(0^{-2}\) không xác định.
 
-3^(-2)=1/9 vì 3≠0; nhân 9 cho 1. Nếu thay cơ số bằng 0 thì số mũ −2 đòi lấy 1/0², là phép chia cho 0.
+\(3^{-2}=\frac19\) vì \(3\ne0\); nhân 9 cho 1. Nếu thay cơ số bằng 0 thì số mũ \(-2\) đòi chia cho \(0^2=0\), là phép chia cho 0.
 
 </details>
 
@@ -872,13 +872,13 @@ Giải thích tại sao 3^(-2)·9=1 nhưng 0^(-2) không xác định.
 
 **Bài 14.**
 
-Phân biệt ⁴√16 với nghiệm của x⁴=16; tính thêm ³√(−8).
+Phân biệt \(\sqrt[4]{16}\) với nghiệm của \(x^4=16\); tính thêm \(\sqrt[3]{-8}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** ⁴√16=2; x⁴=16 có x=±2; ³√(−8)=−2.
+**Đáp án:** \(\sqrt[4]{16}=2\); \(x^4=16\) có \(x=\pm2\); \(\sqrt[3]{-8}=-2\).
 
-Căn số học bậc chẵn chỉ nhận giá trị không âm; phương trình bậc chẵn có thể có hai nghiệm đối nhau. Căn bậc lẻ của số âm có nghĩa vì (−2)³=−8.
+Căn số học bậc chẵn chỉ nhận giá trị không âm; phương trình bậc chẵn có thể có hai nghiệm đối nhau. Căn bậc lẻ của số âm có nghĩa vì \((-2)^3=-8\).
 
 </details>
 
@@ -886,13 +886,13 @@ Căn số học bậc chẵn chỉ nhận giá trị không âm; phương trình
 
 **Bài 15.**
 
-So sánh 2^(√2) và 2^(3/2) mà không dùng máy tính; nêu điều kiện cơ số.
+So sánh \(2^{\sqrt2}\) và \(2^{\frac32}\) mà không dùng máy tính; nêu điều kiện cơ số.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2^(√2) < 2^(3/2).
+**Đáp án:** \(2^{\sqrt2}<2^{\frac32}\).
 
-√2<3/2 vì 2<9/4, và y=2^x tăng nghiêm ngặt. Cơ số 2>0 nên lũy thừa với số mũ vô tỉ xác định.
+\(\sqrt2<\frac32\) vì \(2<\frac94\), và \(y=2^x\) tăng nghiêm ngặt. Cơ số \(2>0\) nên lũy thừa với số mũ vô tỉ xác định.
 
 </details>
 
@@ -900,13 +900,13 @@ So sánh 2^(√2) và 2^(3/2) mà không dùng máy tính; nêu điều kiện c
 
 **Bài 16.**
 
-So sánh (1/2)^(√3) với (1/2)^2, giải thích dấu so sánh.
+So sánh \(\left(\frac12\right)^{\sqrt3}\) với \(\left(\frac12\right)^2\), giải thích dấu so sánh.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** (1/2)^(√3) > (1/2)^2.
+**Đáp án:** \(\left(\frac12\right)^{\sqrt3}>\left(\frac12\right)^2\).
 
-√3<2, nhưng cơ số 1/2 nằm giữa 0 và 1 nên hàm lũy thừa theo số mũ giảm: số mũ nhỏ cho giá trị lớn. Không được dùng quy tắc so sánh cơ số >1.
+\(\sqrt3<2\), nhưng cơ số \(\frac12\) nằm giữa 0 và 1 nên hàm lũy thừa theo số mũ giảm: số mũ nhỏ cho giá trị lớn. Không được dùng quy tắc so sánh của cơ số lớn hơn 1.
 
 </details>
 
@@ -914,13 +914,13 @@ So sánh (1/2)^(√3) với (1/2)^2, giải thích dấu so sánh.
 
 **Bài 17.**
 
-Với a>0, rút gọn E=a^(3/4)·a^(−1/4)/√a. Điều kiện nào bảo đảm phép tính có nghĩa?
+Với \(a>0\), rút gọn \(E=\frac{a^{\frac34}\cdot a^{-\frac14}}{\sqrt a}\). Điều kiện nào bảo đảm phép tính có nghĩa?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** E=1 với a>0.
+**Đáp án:** \(E=1\) với \(a>0\).
 
-√a=a^(1/2)>0 vì a>0. E=a^(3/4−1/4−1/2)=a^0=1. Với a=0 phép chia cho √a không xác định; với a âm không dùng nhất quán mũ thực theo định nghĩa SGK.
+\(\sqrt a=a^{\frac12}>0\) vì \(a>0\). Ta có \(E=a^{\frac34-\frac14-\frac12}=a^0=1\). Với \(a=0\), phép chia cho \(\sqrt a\) không xác định; với a âm không dùng nhất quán mũ thực theo định nghĩa SGK.
 
 </details>
 
@@ -928,17 +928,17 @@ Với a>0, rút gọn E=a^(3/4)·a^(−1/4)/√a. Điều kiện nào bảo đ�
 
 **Bài 18.**
 
-Với a>0, đặt E=a^(3/4)·a^(−5/4)/a^(−1/2). (a) Rút gọn E và giải thích tại sao phải giữ a>0. (b) Viết 0,0000075 dưới dạng kí hiệu khoa học chuẩn. (c) Vì sao 75·10^(−7) không là dạng chuẩn mặc dù bằng cùng số?
+Với \(a>0\), đặt \(E=\frac{a^{\frac34}\cdot a^{-\frac54}}{a^{-\frac12}}\). (a) Rút gọn E và giải thích tại sao phải giữ \(a>0\). (b) Viết \(0{,}0000075\) dưới dạng kí hiệu khoa học chuẩn. (c) Vì sao \(75\cdot10^{-7}\) không là dạng chuẩn mặc dù bằng cùng số?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** E=1 (a>0); 0,0000075=7,5·10^(−6); 75·10^(−7) bằng cùng giá trị nhưng hệ số không thuộc [1,10).
+**Đáp án:** \(E=1\) (\(a>0\)); \(0{,}0000075=7{,}5\cdot10^{-6}\); \(75\cdot10^{-7}\) bằng cùng giá trị nhưng hệ số không thuộc \([1;10)\).
 
-Vì a>0 nên mọi lũy thừa thực và phép chia đều có nghĩa; E=a^(3/4−5/4+1/2)=a^0=1. Số 0,0000075=7,5·10^(−6). Kí hiệu khoa học chuẩn yêu cầu 1≤|k|<10, nên hệ số 75 của 75·10^(−7) là sai **dạng chuẩn**, không sai giá trị.
+Vì \(a>0\) nên mọi lũy thừa thực và phép chia đều có nghĩa; \(E=a^{\frac34-\frac54+\frac12}=a^0=1\). Số \(0{,}0000075=7{,}5\cdot10^{-6}\). Kí hiệu khoa học chuẩn yêu cầu \(1\le\lvert k\rvert<10\), nên hệ số 75 của \(75\cdot10^{-7}\) là sai **dạng chuẩn**, không sai giá trị.
 
 **Rubric tự đối chiếu:**
 
-7 điểm: nhận diện điều kiện a>0 và mẫu không bằng 0 (1đ); cộng/trừ đúng ba số mũ (2đ); kết luận E=1 (1đ); viết 7,5·10^(−6) (2đ); phân biệt đúng giá trị và dạng chuẩn của 75·10^(−7) (1đ).
+7 điểm: nhận diện điều kiện \(a>0\) và mẫu không bằng 0 (1đ); cộng/trừ đúng ba số mũ (2đ); kết luận \(E=1\) (1đ); viết \(7{,}5\cdot10^{-6}\) (2đ); phân biệt đúng giá trị và dạng chuẩn của \(75\cdot10^{-7}\) (1đ).
 
 </details>
 
@@ -948,13 +948,13 @@ Vì a>0 nên mọi lũy thừa thực và phép chia đều có nghĩa; E=a^(3/4
 
 **Bài 19.**
 
-log₅125 là số nào và vì sao?
+\(\log_5 125\) là số nào và vì sao?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 3.
 
-5³=125, logarit là số mũ cần tìm.
+\(5^3=125\), lôgarit là số mũ cần tìm.
 
 </details>
 
@@ -962,13 +962,13 @@ log₅125 là số nào và vì sao?
 
 **Bài 20.**
 
-Giải thích log₂(1/8)=-3 bằng lũy thừa.
+Giải thích \(\log_2\frac18=-3\) bằng lũy thừa.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** −3.
 
-2^(−3)=1/8. Giá trị logarit có thể âm dù đối số phải dương.
+\(2^{-3}=\frac18\). Giá trị lôgarit có thể âm dù đối số phải dương.
 
 </details>
 
@@ -976,13 +976,13 @@ Giải thích log₂(1/8)=-3 bằng lũy thừa.
 
 **Bài 21.**
 
-log₂(−4) có nghĩa trong ℝ không?
+\(\log_2(-4)\) có nghĩa trong \(\mathbb R\) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Không.
 
-Với cơ số 2>0, 2^x luôn dương nên không thể bằng −4.
+Với cơ số \(2>0\), \(2^x\) luôn dương nên không thể bằng \(-4\).
 
 </details>
 
@@ -990,13 +990,13 @@ Với cơ số 2>0, 2^x luôn dương nên không thể bằng −4.
 
 **Bài 22.**
 
-Tính log₃(81/3), chỉ rõ điều kiện dùng quy tắc thương.
+Tính \(\log_3\frac{81}{3}\), chỉ rõ điều kiện dùng quy tắc thương.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 3.
 
-81/3=27 và log₃27=3; hoặc log₃81−log₃3=4−1=3, các đối số đều dương.
+\(\frac{81}{3}=27\) và \(\log_3 27=3\); hoặc \(\log_3 81-\log_3 3=4-1=3\), các đối số đều dương.
 
 </details>
 
@@ -1004,13 +1004,13 @@ Tính log₃(81/3), chỉ rõ điều kiện dùng quy tắc thương.
 
 **Bài 23.**
 
-Tính log₂8+log₂4 và diễn giải bằng quy tắc tích.
+Tính \(\log_2 8+\log_2 4\) và diễn giải bằng quy tắc tích.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 5.
 
-log₂8=3, log₂4=2; tổng là log₂(8·4)=log₂32=5.
+\(\log_2 8=3,\ \log_2 4=2\); tổng là \(\log_2(8\cdot4)=\log_2 32=5\).
 
 </details>
 
@@ -1018,13 +1018,13 @@ log₂8=3, log₂4=2; tổng là log₂(8·4)=log₂32=5.
 
 **Bài 24.**
 
-Tính log₄64 và log₄(√4).
+Tính \(\log_4 64\) và \(\log_4\sqrt4\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 3 và 1/2.
+**Đáp án:** 3 và \(\frac12\).
 
-4³=64 và 4^(1/2)=√4=2.
+\(4^3=64\) và \(4^{\frac12}=\sqrt4=2\).
 
 </details>
 
@@ -1032,13 +1032,13 @@ Tính log₄64 và log₄(√4).
 
 **Bài 25.**
 
-Tìm điều kiện xác định của log₂((x−1)(x+2)); có luôn tách thành tổng hai log không?
+Tìm điều kiện xác định của \(\log_2((x-1)(x+2))\); có luôn tách thành tổng hai lôgarit không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x<−2 hoặc x>1; không tách được trên toàn miền.
+**Đáp án:** \(x<-2\) hoặc \(x>1\); không tách được trên toàn miền.
 
-Tích dương khi hai thừa số cùng dấu. Trên x<−2, từng thừa số âm nên hai log riêng không có nghĩa.
+Tích dương khi hai thừa số cùng dấu. Trên \(x<-2\), từng thừa số âm nên hai lôgarit riêng không có nghĩa.
 
 </details>
 
@@ -1046,13 +1046,13 @@ Tích dương khi hai thừa số cùng dấu. Trên x<−2, từng thừa số 
 
 **Bài 26.**
 
-Viết log₂7 theo lôgarit tự nhiên và nêu điều kiện cơ số.
+Viết \(\log_2 7\) theo lôgarit tự nhiên và nêu điều kiện cơ số.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** ln7/ln2.
+**Đáp án:** \(\frac{\ln7}{\ln2}\).
 
-Đổi cơ số: log₂7=(ln7)/(ln2); 2>0,2≠1,7>0 và ln2≠0.
+Đổi cơ số: \(\log_2 7=\frac{\ln7}{\ln2}\); \(2>0,\ 2\ne1,\ 7>0\) và \(\ln2\ne0\).
 
 </details>
 
@@ -1060,18 +1060,18 @@ Viết log₂7 theo lôgarit tự nhiên và nêu điều kiện cơ số.
 
 **Bài 27.**
 
-Giải phương trình log₂(x−1)+log₂(x+1)=3. Viết rõ miền xác định, vì sao được gộp log, các nghiệm đại số và nghiệm nhận.
+Giải phương trình \(\log_2(x-1)+\log_2(x+1)=3\). Viết rõ miền xác định, vì sao được gộp lôgarit, các nghiệm đại số và nghiệm nhận.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Điều kiện x−1>0 và x+1>0, tức x>1. Quy tắc tổng cho log₂((x−1)(x+1))=3, suy ra x²−1=8 ⇒ x=±3; chỉ x=3 thỏa x>1.
+Điều kiện \(x-1>0\) và \(x+1>0\), tức \(x>1\). Quy tắc tích cho \(\log_2((x-1)(x+1))=3\), suy ra \(x^2-1=8\Rightarrow x=\pm3\); chỉ \(x=3\) thỏa \(x>1\).
 
 **Rubric 4 điểm:**
 
-1. Tìm đúng điều kiện x>1 trước biến đổi — **1 điểm**.
+1. Tìm đúng điều kiện \(x>1\) trước biến đổi — **1 điểm**.
 2. Chỉ ra vì sao phép gộp log hợp lệ khi hai đối số dương — **1 điểm**.
-3. Suy ra x²=9 và xét x=±3 — **1 điểm**.
-4. Loại −3, chốt x=3 và thế kiểm tra — **1 điểm**.
+3. Suy ra \(x^2=9\) và xét \(x=\pm3\) — **1 điểm**.
+4. Loại \(-3\), chốt \(x=3\) và thế kiểm tra — **1 điểm**.
 
 </details>
 
@@ -1079,18 +1079,18 @@ Giải phương trình log₂(x−1)+log₂(x+1)=3. Viết rõ miền xác đị
 
 **Bài 28.**
 
-(a) Tính A=log₃81−2log₃3. (b) Tìm miền xác định của log₂((x−2)(x+3)) và giải thích vì sao tách thành log₂(x−2)+log₂(x+3) chỉ đúng trên một phần miền.
+(a) Tính \(A=\log_3 81-2\log_3 3\). (b) Tìm miền xác định của \(\log_2((x-2)(x+3))\) và giải thích vì sao tách thành \(\log_2(x-2)+\log_2(x+3)\) chỉ đúng trên một phần miền.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-(a) A=4−2=2. (b) (x−2)(x+3)>0 ⇔ x<−3 hoặc x>2. Trên x>2 cả hai thừa số dương nên tách hợp lệ. Trên x<−3 cả hai thừa số âm, log riêng không xác định dù log tích có nghĩa.
+(a) \(A=4-2=2\). (b) \((x-2)(x+3)>0\) khi và chỉ khi \(x<-3\) hoặc \(x>2\). Trên \(x>2\) cả hai thừa số dương nên tách hợp lệ. Trên \(x<-3\) cả hai thừa số âm, lôgarit riêng không xác định dù lôgarit của tích có nghĩa.
 
 **Rubric 4 điểm:**
 
-1. Tính đúng A=2 — **1 điểm**.
+1. Tính đúng \(A=2\) — **1 điểm**.
 2. Giải đúng bất phương trình tích, được hai khoảng — **1 điểm**.
-3. Chỉ ra trên x>2 tách log hợp lệ — **1 điểm**.
-4. Giải thích trên x<−3 không thể tách log vì đối số âm — **1 điểm**.
+3. Chỉ ra trên \(x>2\) tách lôgarit hợp lệ — **1 điểm**.
+4. Giải thích trên \(x<-3\) không thể tách lôgarit vì đối số âm — **1 điểm**.
 
 </details>
 
@@ -1098,13 +1098,13 @@ Giải phương trình log₂(x−1)+log₂(x+1)=3. Viết rõ miền xác đị
 
 **Bài 29.**
 
-Tính log₄(1/8) và giải thích số âm xuất hiện ở đâu.
+Tính \(\log_4\frac18\) và giải thích số âm xuất hiện ở đâu.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** log₄(1/8)=−3/2.
+**Đáp án:** \(\log_4\frac18=-\frac32\).
 
-4^(−3/2)=1/(√4)^3=1/8. Logarit là số mũ cần đặt lên cơ số 4 để nhận 1/8, không phải đối số âm.
+\(4^{-\frac32}=\frac1{(\sqrt4)^3}=\frac18\). Lôgarit là số mũ cần đặt lên cơ số 4 để nhận \(\frac18\), không phải đối số âm.
 
 </details>
 
@@ -1112,13 +1112,13 @@ Tính log₄(1/8) và giải thích số âm xuất hiện ở đâu.
 
 **Bài 30.**
 
-Tìm miền xác định của log₃[(x−1)(x−4)]. Ở miền nào có thể tách thành log₃(x−1)+log₃(x−4)?
+Tìm miền xác định của \(\log_3[(x-1)(x-4)]\). Ở miền nào có thể tách thành \(\log_3(x-1)+\log_3(x-4)\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Miền x<1 hoặc x>4; chỉ tách thành tổng log thực khi x>4.
+**Đáp án:** Miền \(x<1\) hoặc \(x>4\); chỉ tách thành tổng lôgarit thực khi \(x>4\).
 
-Điều kiện (x−1)(x−4)>0 ⇒ x<1 hoặc x>4. Để tách, **từng** đối số x−1 và x−4 phải dương ⇒ x>4; x<1 cho tích dương nhưng hai thừa số âm.
+Điều kiện \((x-1)(x-4)>0\) suy ra \(x<1\) hoặc \(x>4\). Để tách, **từng** đối số \(x-1\) và \(x-4\) phải dương, suy ra \(x>4\); \(x<1\) cho tích dương nhưng hai thừa số âm.
 
 </details>
 
@@ -1126,13 +1126,13 @@ Tìm miền xác định của log₃[(x−1)(x−4)]. Ở miền nào có thể
 
 **Bài 31.**
 
-Tìm miền của log₂(x²−9), rồi xét tính hợp lệ của log₂(x−3)+log₂(x+3) trên toàn miền đó.
+Tìm miền xác định của \(\log_2(x^2-9)\), rồi xét tính hợp lệ của \(\log_2(x-3)+\log_2(x+3)\) trên toàn miền đó.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** TXĐ x<−3 hoặc x>3; tách thành tổng log thực chỉ trên x>3.
+**Đáp án:** Tập xác định: \(x<-3\) hoặc \(x>3\); tách thành tổng lôgarit thực chỉ trên \(x>3\).
 
-x²−9=(x−3)(x+3)>0 khi |x|>3. Muốn log của từng thừa số có nghĩa phải có x−3>0 và x+3>0 ⇒ x>3.
+\(x^2-9=(x-3)(x+3)>0\) khi \(\lvert x\rvert>3\). Muốn lôgarit của từng thừa số có nghĩa phải có \(x-3>0\) và \(x+3>0\), suy ra \(x>3\).
 
 </details>
 
@@ -1140,13 +1140,13 @@ x²−9=(x−3)(x+3)>0 khi |x|>3. Muốn log của từng thừa số có nghĩa
 
 **Bài 32.**
 
-Tính log₂24−log₂3. Vì sao không cần tính riêng hai số thập phân?
+Tính \(\log_2 24-\log_2 3\). Vì sao không cần tính riêng hai số thập phân?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 3.
 
-Hai đối số 24,3 đều dương. Quy tắc log thương cho log₂(24/3)=log₂8=3 vì 2³=8. Quy tắc chỉ hợp khi cả hai log được xác định.
+Hai đối số 24, 3 đều dương. Quy tắc thương cho \(\log_2\frac{24}{3}=\log_2 8=3\) vì \(2^3=8\). Quy tắc chỉ hợp lệ khi cả hai lôgarit được xác định.
 
 </details>
 
@@ -1154,13 +1154,13 @@ Hai đối số 24,3 đều dương. Quy tắc log thương cho log₂(24/3)=log
 
 **Bài 33.**
 
-Tính log₄8 bằng hai cách: tìm số mũ và đổi cơ số log₂.
+Tính \(\log_4 8\) bằng hai cách: tìm số mũ và đổi sang cơ số 2.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 3/2.
+**Đáp án:** \(\frac32\).
 
-4^(3/2)=(√4)^3=8. Mặt khác log₄8=log₂8/log₂4=3/2, mẫu ≠0 do cơ số 4≠1.
+\(4^{\frac32}=(\sqrt4)^3=8\). Mặt khác \(\log_4 8=\frac{\log_2 8}{\log_2 4}=\frac32\), mẫu khác 0 do cơ số \(4\ne1\).
 
 </details>
 
@@ -1168,13 +1168,13 @@ Tính log₄8 bằng hai cách: tìm số mũ và đổi cơ số log₂.
 
 **Bài 34.**
 
-Tính log_(1/9)3. Giá trị này dương hay âm?
+Tính \(\log_{\frac19}3\). Giá trị này dương hay âm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** −1/2.
+**Đáp án:** \(-\frac12\).
 
-(1/9)^(−1/2)=1/√(1/9)=3; do cơ số 1/9<1, số mũ âm có thể cho giá trị >1. Cơ số vẫn hợp lệ vì >0, ≠1.
+\(\left(\frac19\right)^{-\frac12}=\frac1{\sqrt{\frac19}}=3\); do cơ số \(\frac19<1\), số mũ âm có thể cho giá trị lớn hơn 1. Cơ số vẫn hợp lệ vì dương và khác 1.
 
 </details>
 
