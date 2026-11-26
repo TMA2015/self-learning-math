@@ -1,3 +1,16 @@
+<!-- CP25_CURRENT_CP20D_SGK_CHII -->
+## Current affected Q18 — AUTHOR_SELF_VERIFIED
+
+CP20d owner-approved correction, re-lock CP25, 26/11/2026. Current source 43d93a7d0d070a288251c34ff411c7de3206dc85, source commit 7ef72e43d1a0393591b0428eb8db59bb729b98bf. Zero vector is conventionally collinear and same direction as every vector (KNTT Toán 12 Tập Một Bài 6 p48), without a unique displacement direction or defined geometric angle; dot product with zero vector is 0. B06/O01/O02/O04 and B08/O02 Knowledge, P02 stem/key/explanation and matching public END reference updated. 64/64 canonical IDs and original rubric lines preserved; CĐ18 B3 same-ID projection synchronized. Original R00 independent receipt remains frozen provenance on 856a37bd16d2746ffc2e12906de18d1f4338a3b6, not independent review of changed content. Targeted author self-verification CP20d; no new visual PDF scan (screenshot unavailable), CI/RELEASE PASS or private RD1/Mastery changes; protect student records and do not reuse cached previous key. #716 remains Draft; release intake only under owner gate.
+
+CURRENT_SOURCE_BLOB: 43d93a7d0d070a288251c34ff411c7de3206dc85
+CURRENT_SOURCE_COMMIT: 7ef72e43d1a0393591b0428eb8db59bb729b98bf
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_TARGETED_B06_B08
+
+---
+Historical independent review and original snapshot narrative below remain historical, not a new reviewer verdict.
+
 # G12 SGK Chương II B06–B08 R00 — Independent NotebookLM Academic/PED + targeted Q06/Q07/Q14/Q18 source receipt
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.0.0
