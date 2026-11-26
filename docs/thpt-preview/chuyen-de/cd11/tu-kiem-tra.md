@@ -28,7 +28,7 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC11_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 9c27c384af7fad186047aed555ef1a9877c6a30a; Q18_RECEIPT_BLOB a6c64c4d9280fbde9752598190206ff1a8e82fca; AUTHORING_PR #887; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB 64688cf81991a432264c06a2ff0a908371ca1f21; Q18_RECEIPT_BLOB e63f9a5df598ea3c6d57efdbeb6808e86ad9f68f; AUTHORING_PR #887; PUBLIC_PROJECTION_ONLY -->
 
 # Tự kiểm tra
 
@@ -36,91 +36,91 @@ Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Lu
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P01; NO_RD1; NO_MASTERY -->
 
-**Câu 1.** Tìm họ nguyên hàm f(x)=6x−4.
+**Câu 1.** Tìm họ nguyên hàm \(f(x)=6x-4\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P02; NO_RD1; NO_MASTERY -->
 
-**Câu 2.** F'=3x², F(2)=9; tìm F.
+**Câu 2.** \(F'=3x^2\), \(F(2)=9\); tìm F.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P03; NO_RD1; NO_MASTERY -->
 
-**Câu 3.** Tính ∫(3x²+4x−2)dx.
+**Câu 3.** Tính \(\int (3x^{2}+4x-2)\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P04; NO_RD1; NO_MASTERY -->
 
-**Câu 4.** Tìm nguyên hàm 2/x trên (−∞,0) biết F(−1)=3.
+**Câu 4.** Tìm nguyên hàm \(\frac2x\) trên \((-\infty;0)\) biết \(F(-1)=3\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P05; NO_RD1; NO_MASTERY -->
 
-**Câu 5.** Tính ∫(2e^{2x}+3^x)dx.
+**Câu 5.** Tính \(\int (2e^{2x}+3^x)\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P06; NO_RD1; NO_MASTERY -->
 
-**Câu 6.** Tính ∫(2cos x−3sin x)dx.
+**Câu 6.** Tính \(\int (2\cos  x-3\sin  x)\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P07; NO_RD1; NO_MASTERY -->
 
-**Câu 7.** Với v(t)=6t−4, s(0)=3, tìm s(2).
+**Câu 7.** Với \(v(t)=6t-4\), \(s(0)=3\), tìm s(2).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P08; NO_RD1; NO_MASTERY -->
 
-**Câu 8.** Tính ∫₀²(3x²+1)dx.
+**Câu 8.** Tính \(\int_{0}^{2} (3x^{2}+1)\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P09; NO_RD1; NO_MASTERY -->
 
-**Câu 9.** Tính ∫₁³(2x+1)dx−∫₁³x dx.
+**Câu 9.** Tính \(\int_1^3(2x+1)\,\mathrm dx-\int_1^3 x\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P10; NO_RD1; NO_MASTERY -->
 
-**Câu 10.** Tính ∫₃¹ x²dx.
+**Câu 10.** Tính \(\int_{3}^{1} x^{2}\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P11; NO_RD1; NO_MASTERY -->
 
-**Câu 11.** Tính diện tích dưới y=x² trên [0,2].
+**Câu 11.** Tính diện tích dưới \(y=x^2\) trên \([0;2]\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P12; NO_RD1; NO_MASTERY -->
 
-**Câu 12.** Với f=x trên [−2,1], tính tích phân có dấu và diện tích.
+**Câu 12.** Với \(f=x\) trên \([-2;1]\), tính tích phân có dấu và diện tích.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P13; NO_RD1; NO_MASTERY -->
 
-**Câu 13.** Tính ∫₀^π2sin x dx.
+**Câu 13.** Tính \(\int_{0}^{\pi} 2\sin  x\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P14; NO_RD1; NO_MASTERY -->
 
-**Câu 14.** Với v=3t², s(0)=5, tính s(2).
+**Câu 14.** Với \(v=3t^2\), \(s(0)=5\), tính s(2).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P15; NO_RD1; NO_MASTERY -->
 
-**Câu 15.** Tính diện tích dưới y=√x trên [0,4].
+**Câu 15.** Tính diện tích dưới \(y=\sqrt x\) trên \([0;4]\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P16; NO_RD1; NO_MASTERY -->
 
-**Câu 16.** Tính S giữa y=|x| và Ox trên [−1,2].
+**Câu 16.** Tính S giữa \(y=|x|\) và Ox trên \([-1;2]\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P17; NO_RD1; NO_MASTERY -->
 
-**Câu 17.** Tính diện tích giữa y=x+2 và y=x² trên [0,2].
+**Câu 17.** Tính diện tích giữa \(y=x+2\) và \(y=x^2\) trên \([0;2]\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P18; NO_RD1; NO_MASTERY -->
 
-**Câu 18.** Tính S giữa y=x và y=x² trên [0,2].
+**Câu 18.** Tính S giữa \(y=x\) và \(y=x^2\) trên \([0;2]\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P19; NO_RD1; NO_MASTERY -->
 
-**Câu 19.** Tính S giữa y=2x và y=x² từ hai điểm giao.
+**Câu 19.** Tính S giữa \(y=2x\) và \(y=x^2\) từ hai điểm giao.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P20; NO_RD1; NO_MASTERY -->
 
-**Câu 20.** Cho thiết diện hình vuông cạnh x+1 trên [0,1], tính V.
+**Câu 20.** Cho thiết diện hình vuông cạnh \(x+1\) trên \([0;1]\), tính V.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P21; NO_RD1; NO_MASTERY -->
 
-**Câu 21.** Cho r(x)=x trên [0,2], tính V hình tròn cắt vuông góc Ox.
+**Câu 21.** Cho \(r(x)=x\) trên \([0;2]\), tính V hình tròn cắt vuông góc Ox.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P22; NO_RD1; NO_MASTERY -->
 
-**Câu 22.** Cho miền 0≤x≤2, 0≤y≤√x quay quanh Ox, V?
+**Câu 22.** Cho miền \(0\le x\le2\), \(0\le y\le\sqrt x\) quay quanh Ox, V?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
