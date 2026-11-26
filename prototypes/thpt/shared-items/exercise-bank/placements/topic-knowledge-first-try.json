@@ -2109,5 +2109,131 @@
     "order": 18,
     "item_id": "THPT-TOP07-KFT18",
     "outcome_id": "TOP07-O18"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-TOP08-KFT01",
+    "outcome_id": "TOP08-O01"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-TOP08-KFT02",
+    "outcome_id": "TOP08-O02"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-TOP08-KFT03",
+    "outcome_id": "TOP08-O03"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-TOP08-KFT04",
+    "outcome_id": "TOP08-O04"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-TOP08-KFT05",
+    "outcome_id": "TOP08-O05"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-TOP08-KFT06",
+    "outcome_id": "TOP08-O06"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 7,
+    "item_id": "THPT-TOP08-KFT07",
+    "outcome_id": "TOP08-O07"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 8,
+    "item_id": "THPT-TOP08-KFT08",
+    "outcome_id": "TOP08-O08"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 9,
+    "item_id": "THPT-TOP08-KFT09",
+    "outcome_id": "TOP08-O09"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 10,
+    "item_id": "THPT-TOP08-KFT10",
+    "outcome_id": "TOP08-O10"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 11,
+    "item_id": "THPT-TOP08-KFT11",
+    "outcome_id": "TOP08-O11"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 12,
+    "item_id": "THPT-TOP08-KFT12",
+    "outcome_id": "TOP08-O12"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 13,
+    "item_id": "THPT-TOP08-KFT13",
+    "outcome_id": "TOP08-O13"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 14,
+    "item_id": "THPT-TOP08-KFT14",
+    "outcome_id": "TOP08-O14"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 15,
+    "item_id": "THPT-TOP08-KFT15",
+    "outcome_id": "TOP08-O15"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 16,
+    "item_id": "THPT-TOP08-KFT16",
+    "outcome_id": "TOP08-O16"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 17,
+    "item_id": "THPT-TOP08-KFT17",
+    "outcome_id": "TOP08-O17"
+  },
+  {
+    "collection": "TOPIC:CD08:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 18,
+    "item_id": "THPT-TOP08-KFT18",
+    "outcome_id": "TOP08-O18"
   }
 ]
