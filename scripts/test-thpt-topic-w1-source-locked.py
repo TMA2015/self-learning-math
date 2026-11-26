@@ -10,22 +10,60 @@ import subprocess
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CASES = {
-    "02": ("a720cce239fdae6a8d9bc537029f634adc6f3d11",
+    "02": ("e8e1efe7d119fa0e37f6d80100c9583de19ad757",
            "prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md",
-           "d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5",
-           "c1766ba52a80be61b9f8fd2124d0116605f74b92", (16, 38, 16, 4)),
-    "03": ("501d5d892aa8542b72f0a354e32f93724a1699f0",
+           "88446b124096057f98f2742c78d4b93ca73d8883",
+           "463eab588a4ee13b3e4532089088ebecf28ebc9c", (16, 38, 16, 4)),
+    "03": ("9b6d3a1c7b599c559ccb0c2a0fea48f12365409f",
            "prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md",
-           "38f41f013e75b42605d7a88f9205c20af6315a41",
-           "ef40b5871762558959108cf1879155c7e14158fe", (12, 31, 12, 4)),
-    "04": ("053645571ce5b59dbfc0d502d18884acc706680a",
+           "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+           "28c43a014a015b1c81986e0b9c7b7127c3dfe55b", (12, 31, 12, 4)),
+    "04": ("62eb09df620af13313d8a17ea74c0922ae9c61aa",
            "prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md",
-           "4e8238e188204eefc060f18c88ef7a0a3c51a60e",
-           "eba1e820c2544b54e3ff09b0c37ed780e18c3dd5", (18, 75, 18, 5)),
-    "05": ("fb7da5885dffa7b8ea1f3b192dd894cec8cf3db9",
+           "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+           "0e605108aefcf18b81348311445225d559f96e8e", (18, 75, 18, 5)),
+    "05": ("731dba42d606a5bc506516fe04eea5199f6d6360",
            "prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md",
-           "909f873c57e543b8f6d3c383d0b88df6900e334a",
-           "9c8c62a406e24af99efbdbe0bc081f1998c1f2ba", (17, 38, 17, 4)),
+           "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+           "c2fba301449c6ca519d1d7f75f28db3dffb4b1db", (17, 38, 17, 4)),
+}
+CUSTODY = {
+    "02": (
+        ("prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md", "463eab588a4ee13b3e4532089088ebecf28ebc9c"),
+        ("prototypes/thpt/release-handoffs/THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md", "0a2a64a39f7323b192da67ec77c5c8489b90b972"),
+        ("prototypes/thpt/release-queue/ready/THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R01.md", "4cc94314f92840050b49efe22537ef68317eab4e"),
+    ),
+    "03": (
+        ("prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md", "28c43a014a015b1c81986e0b9c7b7127c3dfe55b"),
+        ("prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md", "1b0e9680b3ea340f6ee01a3dd100941aa0b1e828"),
+        ("prototypes/thpt/release-queue/ready/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01.md", "e97dde9beb89b9867f66cd6bbf3ce0ac0600d000"),
+    ),
+    "04": (
+        ("prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md", "0e605108aefcf18b81348311445225d559f96e8e"),
+        ("prototypes/thpt/release-handoffs/THPT-TOPIC04-POWERS-EXP-LOG-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md", "b8a9511203f49a5e2a70fef6aa6f9f2020d61355"),
+        ("prototypes/thpt/release-queue/ready/THPT-TOPIC04-POWERS-EXP-LOG-FULL-R01.md", "a4e807a91df6a60b92864179f4dfb8255fca9bda"),
+    ),
+    "05": (
+        ("prototypes/thpt/review-packets/Temp_TOPIC05_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md", "c2fba301449c6ca519d1d7f75f28db3dffb4b1db"),
+        ("prototypes/thpt/release-handoffs/THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md", "32ad6c62a2d48c34b904e8db7b322b1bc5634d90"),
+        ("prototypes/thpt/release-queue/ready/THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R06.md", "c9a657074c313232ace991cf367eba9db951b9fa"),
+    ),
+}
+FIGURE_BLOBS = {
+    "docs/assets/visuals/THPT_TOPIC02_QUADRATIC_SIGN_R01.svg": "809ee7091849592e8312548fb8d916f1f461a77f",
+    "docs/assets/images/thpt/THPT_G10_B03_HALFPLANES_D5_R01.svg": "a69e5ffabce6c77787ba3829471be7da97e21578",
+    "docs/assets/images/thpt/THPT_G10_B04_FEASIBLE_POLYGON_D5_R01.svg": "64b0ca1142f9cbcb1edebbb220e5bb7a0752ec61",
+    "docs/assets/visuals/THPT_TOPIC03_EQUIVALENCE_VS_SQUARING_R01.svg": "abb748c7b13dadc1786ea0de5f489a09dd2fe676",
+    "docs/assets/visuals/THPT_TOPIC03_RADICAL_DOMAIN_NUMBERLINE_R01.svg": "78689938988f1a4e097aebbade89c85be0ab8b79",
+    "docs/assets/images/thpt/THPT_G10_CHVI_B18_RADICAL_FLOW_D5_R03.svg": "57dc5868ca6b726c4936b2b5e5a3419112752930",
+    "docs/assets/images/thpt/FIG-G11-CHVI-B18-01_R00.svg": "79528bcd2c87eb40b1b54f18c697b0ae3458e642",
+    "docs/assets/images/thpt/FIG-G11-CHVI-B19-01_R00.svg": "fe2895ac101dcc4cf4046d57428181ad0f448dc8",
+    "docs/assets/images/thpt/FIG-G11-CHVI-B20-01_R00.svg": "64bcb465bd6d809095a4ca2b910555e314badb69",
+    "docs/assets/images/thpt/FIG-G11-CHVI-B21-01_R00.svg": "6d43f842d096b974eb70af21e6751f1ec70eea00",
+    "docs/assets/visuals/THPT_TOPIC04_LOG_DOMAIN_AND_DECREASING_INEQUALITY_R01.svg": "7fe8a2d2faf325f3ee9b0876929402b733138f96",
+    "docs/assets/visuals/THPT_TOPIC05_GRAPH_TRANSLATION_R01.svg": "e73c9c7a076de103edebf65cae0ed3529449ad06",
+    "docs/assets/visuals/THPT_TOPIC05_REFLECTION_VERTICAL_SCALE_R01.svg": "0f20dc39c3432be8a8fe0af6e86df7207ffdcaa7",
+    "docs/assets/visuals/THPT_TOPIC05_PIECEWISE_ENDPOINTS_R01.svg": "77f9345af366a64a3fba4a35c3d8d6b84a5d845e",
 }
 PARTS = ("kien-thuc", "luyen-tap", "tu-kiem-tra")
 HEADINGS = ("Kiến thức", "Luyện tập", "Tự kiểm tra")
@@ -53,6 +91,10 @@ def project_svg(md: str) -> str:
 for topic, (head, path, blob, receipt, (outcomes, items, replay, groups)) in CASES.items():
     source = subprocess.check_output(["git", "show", f"{head}:{path}"], cwd=ROOT)
     assert git_blob(source) == blob, (topic, "AUTHORING SOURCE SHA CHANGED")
+    for proof_path, proof_blob in CUSTODY[topic]:
+        proof = subprocess.check_output(["git", "show", f"{head}:{proof_path}"], cwd=ROOT)
+        assert git_blob(proof) == proof_blob, (topic, proof_path, "signed custody blob changed")
+        assert blob in proof.decode("utf-8"), (topic, proof_path, "learner blob missing")
     text = source.decode("utf-8")
     pos = [text.find("# " + x + "\n") for x in HEADINGS]
     assert all(p >= 0 for p in pos) and pos == sorted(pos), (topic, "invalid source sections")
@@ -88,6 +130,9 @@ for topic, (head, path, blob, receipt, (outcomes, items, replay, groups)) in CAS
             assert "CLIENT_SELF_CHECK" not in region or "NO_MASTERY" in region
             assert not re.search(r"Final Submit|Skill Mastery|data-g10-.*submit", region, re.I)
     print(f"PASS CĐ{topic}: SOURCE {blob[:12]}, receipt {receipt[:12]}, outcomes {outcomes}, {items} Q15 items, {replay} Q16 public, {groups} groups, three Q18 projections")
+for figure, expected in FIGURE_BLOBS.items():
+    assert git_blob((ROOT / figure).read_bytes()) == expected, (figure, "signed W1 SVG mismatch")
+print("PASS all 14 W1 SVGs pinned to current AUTHORING source")
 js = (ROOT / "docs/assets/javascripts/thpt-topic-w1-golden-v1.js").read_text(encoding="utf-8")
 assert 'credentials:"omit"' in js and 'method:"GET"' in js and "target.origin!==location.origin" in js
 assert "FINAL_SUBMIT" not in js and "Skill Mastery" not in js
@@ -99,8 +144,7 @@ mk = (ROOT / "mkdocs.yml").read_text(encoding="utf-8")
 for topic in CASES:
     for part in PARTS:
         assert f"thpt-preview/chuyen-de/cd{topic}/{part}.md" in mk
-# Directly affected existing CĐ01 routes: ONLY previously unavailable "next topic"
-# now targets CĐ02. Keep original academic body and other Golden nav unchanged.
+# Read-only existing CĐ01 → CĐ02 navigation compatibility. No CĐ01 changes or browser rerun for this W1 refresh.
 for part in PARTS:
     path = ROOT / f"docs/thpt-preview/chuyen-de/cd01/{part}.md"
     text = path.read_text(encoding="utf-8")
@@ -109,5 +153,5 @@ for part in PARTS:
     assert len(re.findall(r'<(?:a|span)\b', nav.group(0))) == 4, (part,"exact four navigation controls")
     assert text.count("<!-- TOPIC01_APPROVED_SOURCE_START -->") == 1
     assert text.count("<!-- TOPIC01_APPROVED_SOURCE_END -->") == 1
-print("PASS CĐ01 direct impact: only Golden next-Topic deep-link, academic source delimiters intact")
+print("PASS existing CĐ01 next-Topic deep-link intact; no CĐ01 delta")
 print("PASS W1 source/receipt/Q15/Q16, no private grader/Mastery or unrelated site changes")
