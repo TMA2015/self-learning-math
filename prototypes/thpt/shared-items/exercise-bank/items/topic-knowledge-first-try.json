@@ -8251,5 +8251,1066 @@
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT01",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT01",
+    "stem": "Đổi \\(-150^\\circ\\) sang radian, rồi cho biết góc quay mang dấu gì.",
+    "answer_key": "\\(-\\frac{5\\pi}{6}\\) radian; góc quay âm, thuận chiều kim đồng hồ.",
+    "worked_solution": "\\(-150\\cdot\\frac{\\pi}{180}=-\\frac{5\\pi}{6}\\) radian. Dấu âm cho biết chiều quay thuận kim đồng hồ. Nếu em làm mất dấu, hãy so vị trí cuối của \\(+90^\\circ\\) và \\(-90^\\circ\\) trên đường tròn.\n\n**Kiểm lỗi**\n\nNếu em đổi độ sang radian nhưng bỏ dấu quay hoặc thay góc ban đầu bằng góc đại diện mà quên số vòng, đọc lại **Kiến thức 1.1** rồi làm **Bài 1** (đổi độ sang radian, xác định góc phần tư) và **Bài 6** (góc âm và tia cuối) trong Luyện tập. Giữ nguyên góc quay gốc khi đề hỏi chuyển động đã thực hiện.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B01-DEG_RAD"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M01",
+      "locator": "1.1. Độ và radian của góc có hướng / Vận dụng",
+      "line": 43,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT02",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT02",
+    "stem": "\\(\\sin\\alpha=-\\frac35\\), \\(\\alpha\\) thuộc góc phần tư IV; \\(\\cos\\alpha\\) bằng bao nhiêu?",
+    "answer_key": "\\(\\frac45\\).",
+    "worked_solution": "Dùng \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\), được \\(\\cos^2\\alpha=1-\\frac9{25}=\\frac{16}{25}\\). Góc phần tư IV có cos dương, nên \\(\\cos\\alpha=\\frac45\\).\n\nNếu ra \\(-\\frac45\\), xem lại trục hoành phía phải; làm lại Bài 2 và Bài 7 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B01-TRIG_IDENTITIES",
+      "G11-B01-TRIG_UNIT_CIRCLE"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M02",
+      "locator": "1.2. Sin/cos từ tọa độ đường tròn / Vận dụng",
+      "line": 92,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT03",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT03",
+    "stem": "Một điểm trên đường tròn bán kính 3 đơn vị độ dài quay một chiều qua góc \\(\\frac{3\\pi}{2}\\) radian. Tính độ dài cung điểm đã đi.",
+    "answer_key": "\\(\\frac{9\\pi}{2}\\) đơn vị độ dài.",
+    "worked_solution": "Độ dài cung \\(s=r|\\theta|\\) với góc tính bằng radian. Thay \\(r=3,\\ \\theta=\\frac{3\\pi}{2}\\), được \\(s=\\frac{9\\pi}{2}\\) đơn vị độ dài.\n\nNếu nhân bán kính với số đo góc bằng độ trực tiếp, đổi \\(270^\\circ=\\frac{3\\pi}{2}\\) radian rồi tính lại. Hãy làm lại Bài 4 và Bài 8 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B01-ARC_LENGTH"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M03",
+      "locator": "1.3. Cung hình học và độ dời có hướng / Vận dụng",
+      "line": 120,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT04",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT04",
+    "stem": "Với \\(x=\\frac{\\pi}{2}\\), \\(\\tan x\\) tồn tại không?",
+    "answer_key": "Không xác định vì \\(\\cos\\frac\\pi2=0\\).",
+    "worked_solution": "Không, \\(\\cos\\left(\\frac{\\pi}{2}\\right)=0\\).\n\nGhi điều kiện trước khi áp dụng đẳng thức phân thức; làm lại Bài 10 và Bài 23 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B01-TRIG_IDENTITIES"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M04",
+      "locator": "2.1. Hệ thức lượng giác cùng điều kiện / Vận dụng",
+      "line": 158,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT05",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT05",
+    "stem": "Tính và so sánh \\(\\sin(-\\frac\\pi3)\\) với \\(\\sin(\\frac\\pi3)\\).",
+    "answer_key": "\\(\\sin(-\\frac\\pi3)=-\\frac{\\sqrt3}{2}<\\sin(\\frac\\pi3)=\\frac{\\sqrt3}{2}\\).",
+    "worked_solution": "Vì sin là hàm lẻ, \\(\\sin(-\\frac\\pi3)=-\\sin(\\frac\\pi3)=-\\frac{\\sqrt3}{2}\\), còn \\(\\sin(\\frac\\pi3)=\\frac{\\sqrt3}{2}>0\\). Do đó giá trị thứ nhất nhỏ hơn giá trị thứ hai.\n\nVẽ trục Ox và phản xạ trên đường tròn; làm lại Bài 20 và Bài 24 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B01-RELATED_ANGLES"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M05",
+      "locator": "2.2. Góc liên quan và đối xứng / Vận dụng",
+      "line": 199,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT07",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT07",
+    "stem": "Không dùng máy tính, viết \\(\\sin^2 x-\\cos^2 x\\) thành một hàm của \\(2x\\). Sau đó dùng công thức tích thành tổng để viết \\(\\sin(3x)\\cos(2x)\\) thành tổng.",
+    "answer_key": "\\(-\\cos(2x)\\); \\(\\frac12[\\sin(5x)+\\sin x]\\).",
+    "worked_solution": "Từ \\(\\cos(2x)=\\cos^2 x-\\sin^2 x\\), đổi thứ tự hai số hạng cho \\(\\sin^2 x-\\cos^2 x=-\\cos(2x)\\). Kiểm tại \\(x=0\\): hai vế cùng bằng \\(-1\\).\n\nÁp dụng tích thành tổng với \\(a=3x,\\ b=2x\\), được \\(\\sin(3x)\\cos(2x)=\\frac12[\\sin(5x)+\\sin x]\\). Có thể nhân ngược công thức cộng của sin để tự kiểm. Nếu quên hệ số \\(\\frac12\\), hãy thử \\(x=\\frac{\\pi}{2}\\) để thấy vế trái bằng 1 nhưng tổng chưa chia bằng 2. Hãy làm lại Bài 17, Bài 18 và Bài 26 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B02-DOUBLE_ANGLE",
+      "G11-B02-PRODUCT_TO_SUM"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M07",
+      "locator": "2.4. Góc nhân đôi và đổi dạng / Vận dụng",
+      "line": 311,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT08",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT08",
+    "stem": "Tìm miền xác định của \\(g(x)=\\frac{\\sqrt{2\\sin x-1}}{\\cos x}\\).",
+    "answer_key": "\\(D=\\bigcup_{k\\in\\mathbb Z}([\\frac\\pi6+2k\\pi;\\frac\\pi2+2k\\pi)\\cup(\\frac\\pi2+2k\\pi;\\frac{5\\pi}6+2k\\pi])\\).",
+    "worked_solution": "Căn có nghĩa khi \\(\\sin x\\ge\\frac12\\), tức \\(x\\in[\\frac{\\pi}{6}+2k\\pi;\\frac{5\\pi}{6}+2k\\pi]\\) với \\(k\\in\\mathbb Z\\). Mẫu phải khác 0, nên trong mỗi khoảng trên phải loại \\(x=\\frac{\\pi}{2}+2k\\pi\\). Vì thế miền xác định là\n\n\\[\nD=\\bigcup_{k\\in\\mathbb Z}\\left([\\tfrac{\\pi}{6}+2k\\pi;\\tfrac{\\pi}{2}+2k\\pi)\\cup(\\tfrac{\\pi}{2}+2k\\pi;\\tfrac{5\\pi}{6}+2k\\pi]\\right).\n\\]\n\nHai đầu mút ngoài được nhận vì tử bằng 0 và mẫu khác 0.\n\nNếu chỉ kiểm điều kiện dưới căn, thử \\(x=\\frac{\\pi}{2}\\): căn có giá trị 1 nhưng mẫu bằng 0, nên phải loại. Nếu loại luôn hai đầu mút ngoài, thử \\(x=\\frac{\\pi}{6}\\): tử bằng 0 và mẫu khác 0, nên vẫn nhận. Hãy làm lại Bài 28 và Bài 39 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B03-DOMAIN_RANGE"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M08",
+      "locator": "3.1. Miền xác định của biểu thức lượng giác / Vận dụng",
+      "line": 345,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT09",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT09",
+    "stem": "Chu kỳ cơ bản của \\(y=\\cos(4x)\\) là gì?",
+    "answer_key": "\\(T=\\frac\\pi2\\).",
+    "worked_solution": "Chu kỳ dương cơ bản của \\(\\cos(ax)\\) với \\(a\\ne0\\) là \\(\\frac{2\\pi}{|a|}\\). Vì \\(a=4\\), ta có \\(T=\\frac\\pi2\\).\n\nNếu đo chu kỳ bằng cách nhìn một đỉnh, kiểm đỉnh tiếp theo và điều kiện trên mọi x. Hãy làm lại Bài 30 và Bài 40 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B03-PERIOD"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O09"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M09",
+      "locator": "3.2. Chu kỳ cơ bản và đối xứng / Vận dụng",
+      "line": 385,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT10",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT10",
+    "stem": "\\(y=3\\cos(2x)+4\\) có giá trị lớn nhất, nhỏ nhất là bao nhiêu?",
+    "answer_key": "GTLN 7; GTNN 1.",
+    "worked_solution": "Vì \\(-1\\le\\cos(2x)\\le1\\), suy ra \\(1\\le3\\cos(2x)+4\\le7\\). Hai cận đều đạt được: tại \\(x=0\\) hàm bằng 7; tại \\(x=\\frac\\pi2\\) hàm bằng 1. Vậy GTLN là 7 và GTNN là 1.\n\nNếu tính sai cận, kiểm hai giá trị của cos bằng 1 và −1. Làm lại Bài 33 (tập giá trị), Bài 41 (trục giữa, biên độ và chu kỳ) và Bài 34 (chu kỳ có pha) trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B03-COS_GRAPH",
+      "G11-B03-DOMAIN_RANGE"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O10"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M10",
+      "locator": "3.3. Biên độ, pha và trục giữa / Vận dụng",
+      "line": 421,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT11",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT11",
+    "stem": "\\(\\tan x\\) xác định tại \\(x=\\pi\\) không?",
+    "answer_key": "Có, \\(\\tan\\pi=0\\).",
+    "worked_solution": "Có, \\(\\tan\\pi=0\\); \\(\\cot\\pi\\) mới không xác định.\n\nGhi bảng điểm loại trước khi nối hình; làm lại Bài 37, Bài 38 và Bài 42 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B03-TAN_GRAPH"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O11"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M11",
+      "locator": "3.4. Nhánh tan/cot và tiệm cận đứng / Vận dụng",
+      "line": 459,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT12",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT12",
+    "stem": "Giải \\(\\cos x=0\\) trên \\(\\mathbb R\\).",
+    "answer_key": "\\(x=\\frac\\pi2+k\\pi,\\ k\\in\\mathbb Z\\).",
+    "worked_solution": "Từ \\(\\cos x=0\\), ta có \\(x=\\frac{\\pi}{2}+2m\\pi\\) hoặc \\(x=-\\frac{\\pi}{2}+2m\\pi\\), với \\(m\\in\\mathbb Z\\). Họ thứ nhất ứng với \\(k=2m\\), họ thứ hai ứng với \\(k=2m-1\\) trong công thức \\(x=\\frac{\\pi}{2}+k\\pi\\). Mọi số nguyên \\(k\\) đều chẵn hoặc lẻ, nên hai họ gộp thành đúng một họ \\(x=\\frac{\\pi}{2}+k\\pi\\), \\(k\\in\\mathbb Z\\).\n\nNếu chỉ viết một nghiệm, quay thêm chu kỳ; nếu \\(\\lvert a\\rvert>1\\) thì vô nghiệm. Hãy làm lại Bài 44, Bài 45 và Bài 60 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B04-COS_EQ"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O12"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M12",
+      "locator": "4.1. Nghiệm của sin/cos / Vận dụng",
+      "line": 497,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT13",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT13",
+    "stem": "Giải \\(\\tan(2x)=0\\) và \\(\\cot(2x)=0\\). Vì sao hai phương trình không có nghiệm chung?",
+    "answer_key": "Tang: \\(x=\\frac{k\\pi}{2}\\); côtang: \\(x=\\frac\\pi4+\\frac{k\\pi}{2}\\), \\(k\\in\\mathbb Z\\); không có nghiệm chung vì hai điều kiện xác định loại trừ nhau tại các nghiệm.",
+    "worked_solution": "Với tang, cần \\(\\cos(2x)\\ne0\\); tử số bằng 0 khi \\(2x=k\\pi\\), nên \\(x=\\frac{k\\pi}{2}\\). Với côtang, cần \\(\\sin(2x)\\ne0\\); tử số bằng 0 khi \\(2x=\\frac{\\pi}{2}+k\\pi\\), nên \\(x=\\frac{\\pi}{4}+\\frac{k\\pi}{2}\\), với \\(k\\in\\mathbb Z\\) trong cả hai họ. Mỗi họ đều thỏa điều kiện riêng, nhưng ở nghiệm của tang thì côtang không xác định và ngược lại.\n\nNếu viết cùng một họ cho cả hai phương trình, hãy đối chiếu hai mẫu số và hai đồ thị ở mục 3.4; làm lại Bài 46, Bài 47 và Bài 61 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B04-TAN_EQ",
+      "G11-B04-COT_EQ"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O13"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M13",
+      "locator": "4.2. Nghiệm của tan/cot / Vận dụng",
+      "line": 531,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT14",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT14",
+    "stem": "Giải \\(2\\sin x\\cos x=0\\).",
+    "answer_key": "\\(x=\\frac{k\\pi}{2},\\ k\\in\\mathbb Z\\).",
+    "worked_solution": "\\(x=\\frac{k\\pi}{2}\\), \\(k\\in\\mathbb Z\\); hoặc xét \\(\\sin x=0\\) cho \\(x=k\\pi\\), hoặc \\(\\cos x=0\\) cho \\(x=\\frac{\\pi}{2}+k\\pi\\).\n\nNếu định chia hai vế cho \\(\\sin x\\), hãy xét riêng trường hợp \\(\\sin x=0\\) trước để không mất nghiệm. Làm lại Bài 62 (phương trình phân thức cần lọc điểm mẫu bằng 0), rồi Bài 55 (điều kiện xác định của hai biểu thức tang) trong phần Luyện tập; không chia hoặc nhân với biểu thức có thể bằng 0 khi chưa xét điều kiện.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B04-TRANSFORM"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O14"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M14",
+      "locator": "4.3. Biến đổi không làm mất nghiệm / Vận dụng",
+      "line": 559,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT15",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT15",
+    "stem": "Giải \\(\\sin x=0\\) trên \\([0;2\\pi)\\).",
+    "answer_key": "\\(S=\\{0;\\pi\\}\\).",
+    "worked_solution": "\\(x=0\\) hoặc \\(x=\\pi\\); loại \\(2\\pi\\).\n\nVẽ dãy nghiệm trên trục số và đánh dấu đầu mút; làm lại Bài 53, Bài 54 và Bài 63 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B04-INTERVAL"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O15"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M15",
+      "locator": "4.4. Lọc nghiệm theo khoảng / Vận dụng",
+      "line": 587,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP06-KFT16",
+    "content_version": "TOP06-BANK-CP73-20261126-KFT16",
+    "stem": "Một mô hình giả định mô tả độ cao \\(h(t)=4+0{,}8\\sin(\\frac{\\pi t}{8})\\) mét trong khoảng \\(0\\le t\\le16\\) giờ. Tìm chu kỳ của hàm theo công thức, tính \\(h(4)\\), và cho biết có được dùng mô hình này để khẳng định độ cao tại \\(t=20\\) giờ không.",
+    "answer_key": "Chu kỳ của công thức 16 giờ; \\(h(4)=4{,}8\\) m; không được khẳng định độ cao tại giờ 20 ngoài miền mô hình.",
+    "worked_solution": "Với \\(\\omega=\\frac{\\pi}{8}\\ne0\\), chu kỳ của hàm sin là \\(T=\\frac{2\\pi}{\\frac{\\pi}{8}}=16\\) giờ. Tại \\(t=4\\), góc bằng \\(\\frac{\\pi}{2}\\), do đó \\(h(4)=4+0{,}8\\sin(\\frac{\\pi}{2})=4{,}8\\) m. Vì mô hình chỉ được giả thiết trên \\([0;16]\\), thời điểm \\(t=20\\) **ngoài miền đã cho**: không thể khẳng định độ cao thực tế lúc ấy từ công thức này, dù phép tính đại số vẫn thực hiện được.\n\n**Kiểm lỗi**\n\nNếu em quên hệ số \\(\\omega\\) khi tính chu kỳ, viết \\(\\omega T=2\\pi\\); nếu em áp dụng công thức ở mọi thời điểm chỉ vì hàm sin tuần hoàn, kiểm lại miền thời gian của **mô hình**, khác miền xác định của hàm sin. Đọc lại **Kiến thức 4.5**, làm **Bài 64** (giới hạn thời gian và chu kỳ) và **Bài 56** (lọc điều kiện trong bài toán lượng giác) ở Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B04-APPLICATION",
+      "G11-B03-MODELING"
+    ],
+    "original_outcome_ids": [
+      "TOP06-O16"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M16",
+      "locator": "4.5. Chu kỳ trong mô hình có giới hạn / Vận dụng",
+      "line": 615,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT01",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT01",
+    "stem": "Dãy \\(u_n=3n\\) được cho với \\(n\\in\\{1,2,3\\}\\). Dãy có các số hạng nào? Có \\(u_0\\) không?",
+    "answer_key": "3, 6, 9; không có u₀ trong miền chỉ số.",
+    "worked_solution": "Dãy gồm 3, 6, 9 và **không có \\(u_0\\)** vì 0 không thuộc miền chỉ số. Nếu em tính \\(u_0=0\\), hãy phân biệt giá trị của biểu thức đại số tại 0 với số hạng thực sự thuộc dãy.\n\n\n**Kiểm lỗi**\n\nNếu em tính thêm số hạng ở một chỉ số **ngoài tập đã cho**, em đang nhầm công thức đại số với miền chỉ số của dãy. Đọc lại **Kiến thức 1.1**, giải **Bài 2** (dãy hữu hạn không có số hạng thứ năm) và **Bài 1** (liệt kê đúng số hạng trong miền).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B05-SEQUENCE-DEFINITION"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M01",
+      "locator": "1.1. Dãy số và tập chỉ số / Vận dụng",
+      "line": 33,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT02",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT02",
+    "stem": "Với \\(u_n=4n-1\\), \\(n\\ge1\\), tính \\(u_6\\).",
+    "answer_key": "\\(u_6=23\\).",
+    "worked_solution": "23; n bắt đầu từ 1 nhưng số hạng thứ sáu thế \\(n=6\\), không phải 5.\n\nNếu dùng n−1 vô cớ, phân biệt chỉ số của biểu thức với số lần tăng trong cấp số.\n\n\n**Kiểm lỗi**\n\nNếu thế sai chỉ số hoặc cho rằng một giá trị có thể đạt chỉ vì biểu thức tiến gần tới nó, đọc lại **Kiến thức 1.2** rồi làm **Bài 5** (đúng thứ tự chỉ số) và **Bài 6** (kiểm tra một giá trị có thực sự là số hạng hay không).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B05-EXPLICIT-TERM"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M02",
+      "locator": "1.2. Công thức tường minh và quy luật / Vận dụng",
+      "line": 65,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT03",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT03",
+    "stem": "(a) Cho \\(u_1=2,\\ u_{n+1}=u_n+4\\). Tính \\(u_3\\). (b) Cho \\(w_1=3,\\ w_{n+1}=3w_n-4\\). Tìm số không đổi c thỏa \\(c=3c-4\\), rồi dùng \\(v_n=w_n-c\\) tìm công thức tường minh và kiểm hệ thức truy hồi.",
+    "answer_key": "(a) \\(u_3=10\\). (b) \\(c=2,\\ w_n=2+3^{n-1}\\); thỏa điều kiện đầu và truy hồi.",
+    "worked_solution": "(a) \\(u_2=6,\\ u_3=10\\); cần chạy truy hồi hai lần. (b) \\(c=2\\), nên \\(v_1=1,\\ v_{n+1}=3v_n\\). Do đó \\(v_n=3^{n-1}\\) và \\(w_n=2+3^{n-1}\\). Kiểm \\(w_1=3\\); với mọi \\(n\\ge1\\), \\(3w_n-4=3(2+3^{n-1})-4=2+3^n=w_{n+1}\\).\n\nNếu nhảy trực tiếp từ \\(u_1\\) đến \\(u_3\\), ghi hai mũi tên \\(1\\to2\\to3\\). Khi đổi biến, hãy kiểm điều kiện đầu và hệ thức truy hồi cho mọi chỉ số hợp lệ, không chỉ thử vài số đầu.\n\n\n**Kiểm lỗi**\n\nNếu bỏ qua điều kiện đầu hoặc nhảy một bước khi dùng hệ thức truy hồi, đọc lại **Kiến thức 1.3**, làm **Bài 8** (tính từng bước) rồi **Bài 11** (chứng minh công thức tường minh bằng dãy đã cho).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B05-RECURRENCE"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M03",
+      "locator": "1.3. Hệ thức truy hồi / Vận dụng",
+      "line": 97,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT04",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT04",
+    "stem": "Dãy \\(u_n=\\frac1n\\) (\\(n\\ge1\\)) tăng hay giảm?",
+    "answer_key": "Giảm nghiêm ngặt.",
+    "worked_solution": "Giảm nghiêm ngặt vì \\(\\frac1{n+1}<\\frac1n\\) với mẫu dương.\n\nNếu chỉ nhìn \\(1,\\frac12,\\frac13\\) thì đó mới là gợi ý; chứng minh dấu cho mọi n.\n\n\n**Kiểm lỗi**\n\nNếu chỉ dựa vào vài số hạng đầu để khẳng định dãy tăng/giảm, đọc lại **Kiến thức 1.4**; giải **Bài 14** và **Bài 16**, luôn xét dấu hiệu hai số hạng liên tiếp cho **mọi chỉ số hợp lệ**.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B05-MONOTONICITY"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M04",
+      "locator": "1.4. Chứng minh tăng, giảm / Vận dụng",
+      "line": 127,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT05",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT05",
+    "stem": "Dãy \\(u_n=2-\\frac1n\\) (\\(n\\ge1\\)) có đạt 2 không?",
+    "answer_key": "Không, mọi số hạng đều nhỏ hơn 2.",
+    "worked_solution": "Không; \\(\\frac1n>0\\) nên \\(u_n<2\\) với mọi n nguyên dương.\n\nPhân biệt dấu nhỏ hơn hoặc bằng với dấu nhỏ hơn nghiêm ngặt; thử giải \\(u_n=2\\) bằng phương trình.\n\n\n**Kiểm lỗi**\n\nNếu nhầm cận trên với số hạng lớn nhất, hoặc dấu nhỏ hơn nghiêm ngặt với dấu bằng, đọc lại **Kiến thức 1.5**, làm **Bài 19** (chứng minh hai cận) và **Bài 20** (cận dưới đạt, cận trên không đạt).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B05-BOUNDS"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M05",
+      "locator": "1.5. Tính bị chặn / Vận dụng",
+      "line": 159,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT06",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT06",
+    "stem": "Dãy 2,2,2,2 có phải CSC không?",
+    "answer_key": "Có, \\(d=0\\).",
+    "worked_solution": "Có. Hiệu hai số hạng liên tiếp đều bằng \\(2-2=0\\), nên đây là cấp số cộng với công sai \\(d=0\\).\n\nNếu loại một cấp số cộng chỉ vì các số hạng không tăng, đọc lại **Kiến thức 2.1**: công sai có thể bằng 0 hoặc âm. Làm **Bài 22** và **Bài 23**.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B06-AP-DEFINITION"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M06",
+      "locator": "2.1. Nhận diện cấp số cộng / Vận dụng",
+      "line": 199,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT07",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT07",
+    "stem": "CSC \\(u_1=10,\\ d=-3\\): tính \\(u_4\\).",
+    "answer_key": "\\(u_4=1\\).",
+    "worked_solution": "\\(u_4=10+3(-3)=1\\).\n\nNếu tính thành −2, xem lại từ số hạng 1 đến 4 chỉ có 3 khoảng.\n\n\n**Kiểm lỗi**\n\nNếu dùng n thay n−1 lần cộng công sai, đọc lại **Kiến thức 2.2**, làm **Bài 26** (tìm số hạng theo chỉ số) và **Bài 27** (giải số hạng xa). Đếm số *khoảng cách chỉ số* từ số hạng đầu.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B06-AP-NTH"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M07",
+      "locator": "2.2. Công thức số hạng tổng quát / Vận dụng",
+      "line": 229,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT08",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT08",
+    "stem": "Cho cấp số cộng có \\(u_2=7,\\ u_5=16\\). Tính công sai d.",
+    "answer_key": "\\(d=3\\).",
+    "worked_solution": "\\(d=\\frac{16-7}{5-2}=3\\).\n\nKhông chia cho số thứ tự lớn hơn; chia chênh chỉ số.\n\n\n**Kiểm lỗi**\n\nNếu tính công sai bằng cách chia cho số thứ tự thay vì **hiệu chỉ số**, đọc lại **Kiến thức 2.3**, làm **Bài 25** và **Bài 30**; lấy hiệu hai giá trị chia cho hiệu hai chỉ số rồi thế ngược để kiểm.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B06-AP-NTH"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M08",
+      "locator": "2.3. Tìm công sai từ hai số hạng / Vận dụng",
+      "line": 261,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT09",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT09",
+    "stem": "Tính 1+3+5+7+9.",
+    "answer_key": "25.",
+    "worked_solution": "25; đây là CSC có 5 số hạng, số đầu 1, số cuối 9, \\(S_5=\\frac{5(1+9)}2=25\\).\n\nNếu lấy n bằng số cuối 9, viết rõ có bao nhiêu số được cộng.\n\n\n**Kiểm lỗi**\n\nNếu nhầm số số hạng n với số hạng cuối, đọc lại **Kiến thức 2.4**, tính tổng ở **Bài 34** và **Bài 35** theo cặp đầu–cuối; kiểm xem đã xác định đúng n và \\(u_n\\) chưa.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B06-AP-SUM"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O09"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M09",
+      "locator": "2.4. Tổng các số hạng đầu / Vận dụng",
+      "line": 291,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT10",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT10",
+    "stem": "Hàng 1 có 8 ghế, mỗi hàng thêm 2 ghế, 4 hàng có bao nhiêu ghế?",
+    "answer_key": "44 ghế.",
+    "worked_solution": "\\(8+10+12+14=44\\) ghế.\n\nNếu chỉ trả số ghế hàng cuối, phân biệt 'mỗi hàng' và 'tổng toàn bộ'.\n\n\n**Kiểm lỗi**\n\nNếu chỉ trả sản lượng hàng cuối thay vì tổng tất cả hàng/kỳ, đọc lại **Kiến thức 2.5**, giải **Bài 38** và **Bài 40**; trước khi cộng, ghi rõ số hàng và số ghế hàng cuối.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B06-AP-APPLICATION"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O10"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M10",
+      "locator": "2.5. Bài toán tích lũy / Vận dụng",
+      "line": 321,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT11",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT11",
+    "stem": "Dãy 4,0,0,0,… có là CSN không?",
+    "answer_key": "Có, \\(q=0\\).",
+    "worked_solution": "Có. Chọn \\(q=0\\): từ số hạng đầu 4, nhân 0 được số hạng thứ hai bằng 0, và các số hạng sau tiếp tục bằng 0. Hệ thức \\(u_{n+1}=qu_n\\) đúng với mọi \\(n\\ge1\\).\n\nNếu cố tìm công bội bằng phép chia cho 0, đọc lại **Kiến thức 3.1**, làm **Bài 41** và **Bài 44**. Ưu tiên hệ thức nhân liên tiếp thay vì phép chia khi mẫu bằng 0.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B07-GP-DEFINITION"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O11"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M11",
+      "locator": "3.1. Công bội và trường hợp đặc biệt / Vận dụng",
+      "line": 361,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT12",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT12",
+    "stem": "CSN \\(u_1=5,\\ q=-2\\): tính \\(u_4\\).",
+    "answer_key": "\\(u_4=-40\\).",
+    "worked_solution": "\\(5(-2)^3=-40\\).\n\nDấu ngoặc đặc biệt quan trọng khi số mũ chẵn: \\(u_3=5(-2)^2=20\\), trong khi \\(5\\cdot(-2^2)=-20\\). Hai biểu thức với số mũ lẻ có thể trùng giá trị, nên hãy dùng \\(u_3\\) để phát hiện lỗi bỏ ngoặc.\n\n\n**Kiểm lỗi**\n\nNếu đặt mũ là n thay cho n−1 hoặc làm mất dấu của công bội âm, đọc lại **Kiến thức 3.2**, làm **Bài 46** (số hạng thứ sáu) và **Bài 47** (công bội âm). Kiểm trực tiếp hai số hạng đầu.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B07-GP-NTH"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O12"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M12",
+      "locator": "3.2. Số hạng tổng quát / Vận dụng",
+      "line": 391,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT13",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT13",
+    "stem": "Ba số 2, b, 18 là CSN với \\(b\\ne0\\): b có thể bằng bao nhiêu?",
+    "answer_key": "\\(b=\\pm6\\), tương ứng \\(q=\\pm3\\).",
+    "worked_solution": "Vì \\(b\\ne0\\), công bội thỏa \\(q=\\frac b2=\\frac{18}b\\). Suy ra \\(b^2=36\\), tức \\(b=6\\) hoặc \\(b=-6\\), tương ứng \\(q=3\\) hoặc \\(q=-3\\). Hai dãy đều thỏa hệ thức nhân liên tiếp.\n\nNếu chỉ lấy căn dương khi đề không yêu cầu các số hạng dương, đọc lại **Kiến thức 3.3**, so **Bài 48** với **Bài 50**.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B07-GP-THREE-TERMS"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O13"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M13",
+      "locator": "3.3. Suy công bội từ hai số hạng / Vận dụng",
+      "line": 421,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT14",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT14",
+    "stem": "Cho cấp số nhân có \\(u_1=-4,\\ q=1\\). Tính tổng năm số hạng đầu \\(S_5\\).",
+    "answer_key": "\\(S_5=-20\\).",
+    "worked_solution": "\\(S_5=5(-4)=-20\\); không chia cho \\(1-q=0\\).\n\nNếu gặp 0 ở mẫu, tách \\(q=1\\) trước.\n\n\n**Kiểm lỗi**\n\nNếu dùng công thức có mẫu \\(1-q\\) khi \\(q=1\\), hoặc nhầm tổng hữu hạn với tổng vô hạn, đọc lại **Kiến thức 3.4**, làm **Bài 52** (\\(q=1\\)) và **Bài 55** (q khác 1). Thử cộng trực tiếp vài số hạng để kiểm dấu.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B07-GP-SUM"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O14"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M14",
+      "locator": "3.4. Tổng hữu hạn / Vận dụng",
+      "line": 451,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT15",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT15",
+    "stem": "Cấp số nhân vô hạn có \\(u_1=4,\\ q=-1\\). Có thể tính tổng vô hạn bằng công thức \\(\\frac{u_1}{1-q}\\) không? Vì sao?",
+    "answer_key": "Không; tổng riêng dao động giữa 4 và 0, không hội tụ.",
+    "worked_solution": "Không; |q|=1, tổng riêng lần lượt 4,0,4,0,… không hội tụ.\n\nNếu tự thay \\(q=-1\\) vào biểu thức \\(\\frac{u_1}{1-q}\\) được 2, đó là lạm dụng công thức ngoài miền \\(\\lvert q\\rvert<1\\).\n\n\n**Kiểm lỗi**\n\nNếu lấy tổng vô hạn theo công thức khi \\(\\lvert q\\rvert\\ge1\\) hoặc bỏ mất dấu phần dư với công bội âm, đọc lại **Kiến thức 3.5**, làm **Bài 58** (chuỗi lùi có hội tụ) và **Bài 61** (tổng cùng phần dư). Chỉ sử dụng công thức sau khi kiểm \\(\\lvert q\\rvert<1\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B15-GEOMETRIC"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O15"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M15",
+      "locator": "3.5. Tổng vô hạn và phần dư / Vận dụng",
+      "line": 481,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT16",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT16",
+    "stem": "Giá trị ban đầu 50, mỗi kỳ tăng 10% so với giá trị kỳ trước. Sau hai lần tăng, giá trị có bằng 60 không?",
+    "answer_key": "Không, giá trị là 60,5.",
+    "worked_solution": "Không, \\(50\\cdot(1{,}1)^2=60{,}5\\).\n\nNếu ghi 60, bạn đã cộng 5 cố định và vô tình dùng CSC thay CSN.\n\n\n**Kiểm lỗi**\n\nNếu nhầm tăng đều một lượng với tăng theo phần trăm của **giá trị kỳ trước**, đọc lại **Kiến thức 4.1**, làm **Bài 40** (mô hình cộng đều) rồi **Bài 63** (đặt hai quy luật tăng cạnh nhau theo chỉ số kỳ).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B07-GP-APPLICATION"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O16"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M16",
+      "locator": "4.1. Thay đổi tuyệt đối so với thay đổi theo tỉ lệ / Vận dụng",
+      "line": 521,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT17",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT17",
+    "stem": "Gửi 1 triệu đồng theo mô hình lãi kép 10% mỗi kỳ, lãi nhập gốc cuối kỳ, không nộp thêm, rút tiền hoặc tính phí. Số dư sau hai kỳ là bao nhiêu?",
+    "answer_key": "1,21 triệu đồng.",
+    "worked_solution": "\\(1\\cdot(1{,}1)^2=1{,}21\\) triệu đồng.\n\nNếu làm thành 1,2 triệu, bạn đã dùng lãi đơn thay lãi kép; ghi rõ 'không nộp/rút'.\n\n\n**Kiểm lỗi**\n\nNếu cộng cùng một khoản lãi mỗi kỳ dù đề đã nói **lãi nhập gốc**, đọc lại **Kiến thức 4.2**, giải **Bài 65** và **Bài 67**; ghi mốc kỳ 0, kỳ 1 rồi kỳ 2 và nhân hệ số tăng cho từng kỳ.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B07-GP-APPLICATION"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O17"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M17",
+      "locator": "4.2. Mô hình lãi kép / Vận dụng",
+      "line": 551,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP07-KFT18",
+    "content_version": "TOP07-BANK-CP73-20261126-KFT18",
+    "stem": "(a) Ban đầu số dư bằng 0. Gửi 20 đơn vị vào cuối mỗi kỳ trong hai kỳ, lãi nhập gốc 10%/kỳ, không phí. Tính số dư ngay sau khoản gửi cuối. (b) Vay 315 đơn vị ở kỳ 0, lãi 10%/kỳ trên dư nợ, không phí; trả 181,5 đơn vị cuối mỗi kỳ sau khi tính lãi. Tính dư nợ cuối kỳ 1 và 2; kiểm đã tất toán chưa.",
+    "answer_key": "(a) 42 đơn vị. (b) \\(B_1=165,\\ B_2=0\\); đã tất toán.",
+    "worked_solution": "(a) \\(20\\cdot1{,}1+20=42\\); khoản gửi cuối kỳ 2 chưa sinh lãi.\n\n(b) \\(B_1=315\\cdot1{,}1-181{,}5=165\\); \\(B_2=165\\cdot1{,}1-181{,}5=0\\). Đã tất toán sau hai kỳ. Khoản trả làm giảm dư nợ, nên dùng phép trừ, không dùng phép cộng như gửi góp.\n\nNếu nhân cả hai khoản gửi với \\((1{,}1)^2\\), vẽ trục kỳ 0–1–2 và đánh dấu ngay sau khi nộp.\n\n\n**Kiểm lỗi**\n\nNếu cộng lãi cho khoản gửi ngay **cuối kỳ** vừa nộp hoặc nhầm thời điểm trả nợ với tính lãi, đọc lại **Kiến thức 4.3**, làm **Bài 68** (gửi đầu/cuối kỳ) và **Bài 69** (trả nợ cuối kỳ); vẽ trục thời gian và đánh dấu khoản tiền trước khi lập công thức.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B07-GP-APPLICATION"
+    ],
+    "original_outcome_ids": [
+      "TOP07-O18"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+      "heading_id": "TOP07-M18",
+      "locator": "4.3. Gửi góp và trả nợ theo kỳ / Vận dụng",
+      "line": 598,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
