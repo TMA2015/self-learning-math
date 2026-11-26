@@ -19872,6 +19872,59 @@
       },
       "remaining": "Shared SGK/source-owner reconciliation (including CD10-P17 correction propagation if present in current source), FirstTry, Written/Anchor, skill/depth gaps and whole-bank semantic/notation closure. No bank-wide Academic/PED/browser PASS, conversion, merge/deploy.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp91": {
+      "scope": "SGK shared formative G10 ChI B01/B02, 16 local canonical C/P records; FirstTry 11 records excluded/preserved",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+      "source_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "import_blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "current_main_blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "unchanged": true,
+        "ids_and_order": 16,
+        "pre_edit_candidate_stem_variants": [
+          "THPT-G10-B01-P03",
+          "THPT-G10-B02-C01",
+          "THPT-G10-B02-P03",
+          "THPT-G10-B02-P04",
+          "THPT-G10-B02-P06"
+        ],
+        "decision": "Preserve CP48 strengthened candidate variants rather than overwrite from older published projection."
+      },
+      "item_shard": {
+        "path": "items/g10-chi.json",
+        "before": "7f2fd69e717938773ff4da895933261a7b49b89d",
+        "after": "3351c54dfc1e01fdee7a193f6326aca33491adf6",
+        "commit": "b103c7c0c5f4424a1a0776e60d0f924bedc130ca"
+      },
+      "checks": {
+        "formative_reviewed": 16,
+        "formative_changed": 16,
+        "fields_changed": {
+          "stem": 14,
+          "answer_key": 12,
+          "worked_solution": 16,
+          "hints": 8,
+          "remediation": 9
+        },
+        "first_try_unchanged": 11,
+        "sgk_placement_blob": "240d485678b3182add1fb3acd7035e6fc9994e08",
+        "topic_placement_blob": "e67d438b3775e5193e21a8c76e671a6e2f5ba552",
+        "sgk_placements_for_reviewed_ids": 16,
+        "topic_placements_for_reviewed_ids": 27,
+        "metadata_and_interaction_unchanged": true,
+        "targeted_raw_math_scan_residual": 0,
+        "inline_delimiters_balanced": true,
+        "options_or_rubrics_present": 0
+      },
+      "findings": [
+        "B01 P02 replace misleading hint that integer squares are between 1 and 4 with exhaustive |n|≤1 or |n|≥2 cases; B01 P03 retain divisibility 10→5 and necessary/sufficient distinction; B01 P04 both parity directions; B01 P06 explain false antecedent. B02 distinguish membership/subset, set differences, endpoints, number-set classification, four-region Venn model; use TeX and SGK semicolon interval notation. All answer meanings retained.",
+        "Manual reasoning checked on 16 tasks, supplementary finite arithmetic/logic spot checks (not substitute for proofs); old public projection main unchanged, no fresh PDF/NotebookLM/browser review. Do not claim semantic parity of CP48 improved variants with old source. Prior source-owner G11/G12 corrections and CD10-P17 propagation remain pending."
+      ],
+      "remaining": "Continue G10 ChII B03/B04 then remaining SGK chapters and public selfcheck supplements, preserve FirstTry and Written for their separate review; source-owner deltas and full semantic/notation/depth closure remain pending.",
+      "release_authorization": false
     }
   }
 }
