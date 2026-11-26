@@ -8,7 +8,7 @@ const config=document.querySelector(".topic-w1-release-nav[data-topic-w1][data-t
 if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
 const rw1Active=part==="kien-thuc";
-const w2aPublic=part!=="kien-thuc"&&["06","07","08"].includes(topic);
+const w2aPublic=part!=="kien-thuc"&&["06","07","08","09","10","11"].includes(topic);
 const rw1Math=()=>rw1Active||w2aPublic?window.SLMTHPTKnowledgeMath:null;
 let rw1Prepared=false;
 const sizes={"10":{"outcomes":36,"items":120,"replay":36,"groups":6,"practiceGroups":6},"11":{"outcomes":22,"items":116,"replay":22,"groups":4,"practiceGroups":4},"06":{"outcomes":16,"items":66,"replay":16,"groups":4,"practiceGroups":4},"07":{"outcomes":18,"items":69,"replay":18,"groups":4,"practiceGroups":4},"08":{"outcomes":18,"items":58,"replay":18,"groups":4,"practiceGroups":4},"09":{"outcomes":32,"items":108,"replay":32,"groups":5,"practiceGroups":4}};

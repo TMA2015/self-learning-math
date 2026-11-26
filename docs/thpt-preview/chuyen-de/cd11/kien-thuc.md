@@ -29,7 +29,7 @@ hide:
 <span data-topic-w1-source-start="kien-thuc" hidden></span>
 
 <!-- TOPIC11_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 9c27c384af7fad186047aed555ef1a9877c6a30a; Q18_RECEIPT_BLOB a6c64c4d9280fbde9752598190206ff1a8e82fca; AUTHORING_PR #887; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB 64688cf81991a432264c06a2ff0a908371ca1f21; Q18_RECEIPT_BLOB e63f9a5df598ea3c6d57efdbeb6808e86ad9f68f; AUTHORING_PR #887; PUBLIC_PROJECTION_ONLY -->
 
 # Kiến thức
 
@@ -55,9 +55,9 @@ Ví dụ, với \(f(x)=4x^3+2\), ta nhận thấy \((x^4)'=4x^3\) và \((2x)'=2\
 
 **Ví dụ**
 
-**Đề bài:** Tìm mọi nguyên hàm của f(x)=9x²−4x+1 trên ℝ.
+**Đề bài:** Tìm mọi nguyên hàm của \(f(x)=9x^2-4x+1\) trên \(\mathbb R\).
 
-**Lời giải:** Lấy từng hạng tử: F(x)=3x³−2x²+x+C. Kiểm F′(x)=9x²−4x+1 trên ℝ. Hằng C cần có vì đạo hàm của mọi hằng số bằng 0.
+**Lời giải:** Lấy nguyên hàm từng hạng tử: \(F(x)=3x^3-2x^2+x+C\). Kiểm tra \(F'(x)=9x^2-4x+1\) trên \(\mathbb R\). Hằng số \(C\) cần có vì đạo hàm của mọi hằng số bằng 0.
 
 **Vận dụng** Tìm họ nguyên hàm của \(f(x)=8x^3-2\). Em kiểm lại được bằng đạo hàm không?
 
@@ -76,23 +76,23 @@ Nếu em chỉ thấy một nguyên hàm mà bỏ \(+C\), hoặc kết luận b�
 
 <!-- LESSON_ID: TOP11-M02; OUTCOME_ID: TOP11-O02 -->
 
-> **TÍNH CHẤT — Một họ nguyên hàm và điều kiện đầu.** Các nguyên hàm khác nhau bởi hằng số; điều kiện đầu chọn một hàm. Nếu hai hàm có cùng đạo hàm, số liệu ban đầu có chọn ra đúng một hàm không? Ta đã biết viết F₀(x)+C, biết a thuộc khoảng và F(a)=b. Nếu f liên tục trên một khoảng, mọi nguyên hàm khác nhau một hằng số trên khoảng ấy. Giá trị đầu F(a)=b cho phương trình F₀(a)+C=b, giải C; không áp dữ kiện ở một thành phần miền để khóa hằng trên thành phần tách rời. Hãy kiểm cả điều kiện và đạo hàm.
+> **TÍNH CHẤT — Một họ nguyên hàm và điều kiện đầu.** Nếu hai hàm có cùng đạo hàm trên một khoảng thì chúng chỉ khác nhau một hằng số. Chọn một nguyên hàm \(F_0\) của \(f\), ta viết \(F(x)=F_0(x)+C\). Nếu biết \(a\) thuộc khoảng đó và \(F(a)=b\), ta có \(F_0(a)+C=b\), từ đó xác định \(C=b-F_0(a)\). Dữ kiện ở một khoảng không xác định hằng số trên một khoảng tách rời khác. Hãy kiểm cả đạo hàm và giá trị ban đầu.
 
-Chẳng hạn, F'=3x²−4, F(1)=5. Họ F=x³−4x+C, thay x=1 cho 1−4+C=5 ⇒ C=8, F=x³−4x+8. Kiểm F'=3x²−4 và F(1)=5.
+Chẳng hạn, \(F'(x)=3x^2-4\), \(F(1)=5\). Họ nguyên hàm là \(F(x)=x^3-4x+C\). Thay \(x=1\), ta được \(1-4+C=5\), suy ra \(C=8\). Vậy \(F(x)=x^3-4x+8\). Kiểm lại \(F'(x)=3x^2-4\) và \(F(1)=5\).
 
 **Ví dụ**
 
-**Đề bài:** Biết F′(x)=4x−3 trên ℝ và F(2)=5. Tìm F(x).
+**Đề bài:** Biết \(F'(x)=4x-3\) trên \(\mathbb R\) và \(F(2)=5\). Tìm \(F(x)\).
 
-**Lời giải:** Từ F′ suy ra F=2x²−3x+C. Điều kiện F(2)=8−6+C=5 cho C=3, vậy F(x)=2x²−3x+3. Thế lại x=2 và lấy đạo hàm để kiểm cả hai điều kiện.
+**Lời giải:** Từ \(F'\) suy ra \(F(x)=2x^2-3x+C\). Điều kiện \(F(2)=8-6+C=5\) cho \(C=3\), vậy \(F(x)=2x^2-3x+3\). Thế lại \(x=2\) và lấy đạo hàm để kiểm cả hai điều kiện.
 
-**Vận dụng** F'=2x+1 và F(0)=7: tìm F.
+**Vận dụng** \(F'(x)=2x+1\) và \(F(0)=7\): tìm \(F\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-F=x²+x+7.
+\(F(x)=x^2+x+7\).
 
-Nếu thay F'(0)=7, bạn đã dùng sai loại dữ kiện; F(0) mới là vị trí ban đầu.
+Nếu dùng \(F'(0)=7\), em đã dùng sai loại dữ kiện; \(F(0)\) mới là giá trị ban đầu.
 
 
 **Kiểm lỗi**
@@ -105,25 +105,25 @@ Nếu em thay điều kiện \(F(a)\) thành \(F'(a)\) hoặc không tìm hằng
 
 <!-- LESSON_ID: TOP11-M03; OUTCOME_ID: TOP11-O03 -->
 
-Từ định nghĩa, ta suy ra nguyên hàm lũy thừa và tổng. Vì sao n=−1 là trường hợp đặc biệt, còn các lũy thừa khác chia được cho n+1? Ta sử dụng đạo hàm của x^{n+1} và tính tuyến tính, miền x^n. 
+Từ quy tắc đạo hàm lũy thừa, ta biết \((x^{n+1})'=(n+1)x^n\) trên khoảng thích hợp. Muốn đạo hàm trở về đúng \(x^n\), ta chia cho \(n+1\). Khi \(n=-1\), phép chia này không thực hiện được; ta sẽ xét trường hợp ấy riêng.
 
 > **CÔNG THỨC — Nguyên hàm lũy thừa.** Với \(n\ne-1\) và trên khoảng mà biểu thức thực \(x^n\) được xác định, \(\displaystyle\int x^n\,dx=\frac{x^{n+1}}{n+1}+C\). Trường hợp \(n=-1\) dùng \(\ln|x|+C\) trên từng khoảng tránh \(0\); không thay trực tiếp vào mẫu \(n+1=0\).
 
- Với αf+βg, nguyên hàm là αF+βG+C. Không để +C riêng từng hạng rồi tính thành nhiều hằng độc lập trong cùng một tổng.
+ Nếu \(F'=f\), \(G'=g\) trên cùng một khoảng và \(\alpha,\beta\) là các hằng số thì họ nguyên hàm của \(\alpha f+\beta g\) là \(\alpha F+\beta G+C\). Các hằng số cộng được gộp thành một hằng số \(C\) duy nhất.
 
-Xét ví dụ: ∫(6x²−4x+3)dx=2x³−2x²+3x+C. Vì đạo hàm 2x³ là6x², −2x² là−4x và 3x là3. Kiểm từng hạng giúp tránh lỗi hệ số.
+Xét ví dụ: \(\int (6x^2-4x+3)\,\mathrm dx=2x^3-2x^2+3x+C\). Đạo hàm của \(2x^3\) là \(6x^2\), của \(-2x^2\) là \(-4x\) và của \(3x\) là \(3\). Kiểm từng hạng giúp tránh lỗi hệ số.
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫(2x⁵−4x³+6)dx.
+**Đề bài:** Tính \(\int (2x^{5}-4x^{3}+6)\,\mathrm dx\).
 
-**Lời giải:** Trên ℝ, dùng tính tuyến tính và quy tắc lũy thừa: ∫2x⁵dx=x⁶/3, ∫(−4x³)dx=−x⁴, ∫6dx=6x. Kết quả F=x⁶/3−x⁴+6x+C, đạo hàm F′=2x⁵−4x³+6.
+**Lời giải:** Trên \(\mathbb R\), dùng tính tuyến tính và quy tắc lũy thừa. Một nguyên hàm của \(2x^5\) là \(\frac{x^6}{3}\), của \(-4x^3\) là \(-x^4\), của \(6\) là \(6x\). Kết quả \(F(x)=\frac{x^6}{3}-x^4+6x+C\). Lấy đạo hàm được \(F'(x)=2x^5-4x^3+6\).
 
-**Vận dụng** ∫(5x⁴+2x)dx=?
+**Vận dụng** \(\int (5x^4+2x)\,\mathrm dx\)?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-x⁵+x²+C.
+\(x^5+x^2+C\).
 
 Nếu không chia hệ số mũ mới, kiểm đạo hàm ngược sẽ phát hiện hệ số dư.
 
@@ -134,27 +134,27 @@ Nếu em quên chia hệ số theo mũ mới khi tính nguyên hàm lũy thừa,
 
 </details>
 
-### 1.4. Nguyên hàm 1/x trên khoảng
+### 1.4. Nguyên hàm của \(\frac1x\) trên khoảng
 
 <!-- LESSON_ID: TOP11-M04; OUTCOME_ID: TOP11-O04 -->
 
-> **CÔNG THỨC — Nguyên hàm 1/x trên khoảng.** Nguyên hàm 1/x đặc biệt vì số mũ −1 làm mẫu công thức bằng 0. Tại sao ln|x| xuất hiện, và có thể dùng một C qua x=0 không? Ta bắt đầu từ logarit thực, (ln|x|)'=1/x khi x khác0, miền liên thông. Đạo hàm ln|x| bằng1/x với x≠0; vì vậy ∫dx/x=ln|x|+C trên từng khoảng (-∞,0) hoặc (0,+∞). Không có nguyên hàm liên tục vượt điểm 0 cho 1/x do hàm gốc không xác định ở đó. Trên miền rời có thể dùng C_- và C_+ khác nhau; một điều kiện tại −1 không xác định hằng ở nhánh dương.
+> **CÔNG THỨC — Nguyên hàm của \(\frac1x\).** Khi \(x>0\), ta có \((\ln x)'=\frac1x\). Khi \(x&lt;0\), \(-x>0\) nên \((\ln(-x))'=\frac1{-x}\cdot(-1)=\frac1x\). Hai biểu thức logarit này được viết gọn thành \(\ln|x|\). Vì vậy \(\int\frac1x\,\mathrm dx=\ln|x|+C\) trên từng khoảng \((-\infty;0)\) hoặc \((0;+\infty)\). Không thể áp dụng công thức trên một khoảng chứa \(0\), vì hàm số không xác định tại đó. Hai khoảng có thể có các hằng số \(C_-\) và \(C_+\) khác nhau; một điều kiện tại \(-1\) không xác định hằng số ở nhánh dương.
 
-Chẳng hạn, Trên x&lt;0, ∫(3/x)dx=3ln(−x)+C. Lấy đạo hàm 3·(−1)/(−x)=3/x, đúng. Chọn ln(−x) vì −x>0 trên nhánh âm; ln x không hợp lệ.
+Chẳng hạn, trên \(x&lt;0\), \(\int\frac3x\,\mathrm dx=3\ln(-x)+C\). Lấy đạo hàm: \(3\cdot\frac{-1}{-x}=\frac3x\), đúng với hàm đã cho. Ta chọn \(\ln(-x)\) vì \(-x>0\) trên nhánh âm; \(\ln x\) không xác định ở đó.
 
 **Ví dụ**
 
-**Đề bài:** Tìm F′(x)=3/x trên x&lt;0, biết F(−2)=7.
+**Đề bài:** Tìm \(F(x)\) biết \(F'(x)=\frac{3}{x}\) trên \(x&lt;0\) và \(F(-2)=7\).
 
-**Lời giải:** Trên khoảng (−∞,0), F(x)=3ln|x|+C=3ln(−x)+C. Thay x=−2: 3ln2+C=7, nên C=7−3ln2. Không dùng ln x trên khoảng x&lt;0 hoặc nối qua x=0.
+**Lời giải:** Trên khoảng \((-\infty;0)\), \(F(x)=3\ln|x|+C=3\ln(-x)+C\). Thay \(x=-2\): \(3\ln 2+C=7\), nên \(C=7-3\ln 2\). Vậy \(F(x)=3\ln(-x)+7-3\ln 2\). Không dùng \(\ln x\) trên khoảng \(x&lt;0\) hoặc nối qua \(x=0\).
 
-**Vận dụng** F'=1/x trên x&lt;0, F(−1)=2. F là gì?
+**Vận dụng** \(F'(x)=\frac1x\) trên \(x&lt;0\), \(F(-1)=2\). Tìm \(F(x)\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-F(x)=ln(−x)+2 trên x&lt;0.
+\(F(x)=\ln(-x)+2\) trên \(x&lt;0\).
 
-Không viết ln x ở x âm; sau đó kiểm đạo hàm trước khi kết luận.
+Không viết \(\ln x\) khi \(x&lt;0\); sau đó kiểm đạo hàm trước khi kết luận.
 
 
 **Kiểm lỗi**
@@ -167,23 +167,23 @@ Nếu em dùng \(\ln x\) cho \(x&lt;0\) hoặc ghép hằng số xuyên qua đi�
 
 <!-- LESSON_ID: TOP11-M05; OUTCOME_ID: TOP11-O05 -->
 
-> **CÔNG THỨC — Hàm mũ và hệ số bù.** Hàm mũ đòi hỏi hệ số bù theo đạo hàm của biểu thức trong. Nếu e^{2x} thay đổi nhanh gấp đôi lớp ngoài, phải sửa nguyên hàm bằng cách nào? Cần nhớ dây chuyền (e^{kx})'=k e^{kx}, (a^x)'=a^x ln a. Với k≠0, nguyên hàm e^{kx} là e^{kx}/k+C; với a>0,a≠1, nguyên hàm a^x là a^x/ln a+C. Hệ số bù chính là nghịch của hệ số khi đạo hàm. Không áp công thức lũy thừa x^n cho a^x, vì vị trí biến khác.
+> **CÔNG THỨC — Hàm mũ và hệ số bù.** Từ quy tắc đạo hàm hàm hợp, \((e^{kx})'=ke^{kx}\). Khi \(k\ne0\), ta chia cho \(k\) để có đạo hàm đúng bằng \(e^{kx}\). Vì vậy \(\int e^{kx}\,\mathrm dx=\frac{e^{kx}}k+C\). Tương tự, \((a^x)'=a^x\ln a\), nên \(\int a^x\,\mathrm dx=\frac{a^x}{\ln a}+C\) với \(a>0,\ a\ne1\). Không áp dụng quy tắc nguyên hàm lũy thừa \(x^n\) cho hàm mũ \(a^x\), vì vị trí của biến khác nhau.
 
-Chẳng hạn, ∫(6e^{3x}+2^x)dx=2e^{3x}+2^x/ln2+C. Đạo hàm ngược cho 6e^{3x}+2^x. Chọn đối chiếu quy tắc mũ và chain trước.
+Chẳng hạn, \(\int(6e^{3x}+2^x)\,\mathrm dx=2e^{3x}+\frac{2^x}{\ln 2}+C\). Lấy đạo hàm kết quả, ta được \(6e^{3x}+2^x\). Hệ số \(2\) ở số hạng đầu xuất hiện vì ta chia \(6\) cho \(3\).
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫(3e^{3x}+2^x)dx.
+**Đề bài:** Tính \(\int (3e^{3x}+2^x)\,\mathrm dx\).
 
-**Lời giải:** Vì (e^{3x})′=3e^{3x} và (2^x/ln2)′=2^x (2>0,2≠1), họ nguyên hàm là e^{3x}+2^x/ln2+C. Kiểm đạo hàm để xác nhận hệ số bù.
+**Lời giải:** Vì \((e^{3x})'=3e^{3x}\) và \(\left(\frac{2^x}{\ln 2}\right)'=2^x\) (cơ số \(2>0,\ 2\ne1\)), họ nguyên hàm là \(e^{3x}+\frac{2^x}{\ln 2}+C\). Lấy đạo hàm để xác nhận các hệ số.
 
-**Vận dụng** Tìm ∫5e^{5x}dx.
+**Vận dụng** Tìm \(\int 5e^{5x}\,\mathrm dx\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-e^{5x}+C.
+\(e^{5x}+C\).
 
-Nếu ra 5e^{5x}, đạo hàm ngược sẽ cho 25e^{5x}, phải chia5.
+Nếu kết quả là \(5e^{5x}\), lấy đạo hàm sẽ được \(25e^{5x}\), gấp năm lần hàm đã cho. Em cần chia hệ số cho \(5\).
 
 
 **Kiểm lỗi**
@@ -196,7 +196,7 @@ Nếu em đạo hàm ngược \(e^{kx}\) hay \(a^x\) mà thiếu hệ số bù, 
 
 <!-- LESSON_ID: TOP11-M06; OUTCOME_ID: TOP11-O06 -->
 
-> **CÔNG THỨC — Nguyên hàm lượng giác.** Với lượng giác, kiểm dấu và đơn vị radian. Nguyên hàm sin và cos có luôn giữ nguyên dấu không? Để xác định điều đó, cần xét (sin x)'=cos x và (cos x)'=−sin x với x radian. ∫cos(kx)dx=sin(kx)/k+C, ∫sin(kx)dx=−cos(kx)/k+C khi k≠0 và góc radian. Dấu trừ của nguyên hàm sin đến từ đạo hàm cos. Không dùng công thức này nguyên dạng khi biến x là số đo độ; phải quy đổi đơn vị.
+> **CÔNG THỨC — Nguyên hàm lượng giác.** Với góc tính bằng radian, \((\sin x)'=\cos x\), \((\cos x)'=-\sin x\). Theo quy tắc đạo hàm hàm hợp, khi \(k\ne0\), ta có \(\int\cos(kx)\,\mathrm dx=\frac{\sin(kx)}k+C\) và \(\int\sin(kx)\,\mathrm dx=-\frac{\cos(kx)}k+C\). Dấu trừ trong công thức thứ hai xuất hiện vì đạo hàm của cos mang dấu âm. Nếu góc được cho theo độ, phải đổi đơn vị trước khi áp dụng.
 
 Từ hai đạo hàm \((\tan x)'=\dfrac{1}{\cos^2x}\) (khi \(\cos x\ne0\)) và \((\cot x)'=-\dfrac{1}{\sin^2x}\) (khi \(\sin x\ne0\)), ta còn hai nguyên hàm cơ bản mà chỉ học sin và cos sẽ bỏ sót:
 
@@ -205,23 +205,23 @@ Từ hai đạo hàm \((\tan x)'=\dfrac{1}{\cos^2x}\) (khi \(\cos x\ne0\)) và \
 \int \frac{1}{\sin^2x}\,dx=-\cot x+C\quad(\sin x\ne0).
 \]
 
-Mỗi công thức được áp dụng trên **một khoảng** không chứa điểm làm mẫu bằng 0. Chẳng hạn, trên khoảng \(0&lt;x&lt;\pi/2\), \(\int(2/\cos^2x-3/\sin^2x)\,dx=2\tan x+3\cot x+C\). Lấy đạo hàm của kết quả cho đúng \(2/\cos^2x-3/\sin^2x\); dấu cộng trước \(3\cot x\) đến từ \((\cot x)'=-1/\sin^2x\). Trên những khoảng xác định tách rời, hằng số \(C\) có thể khác nhau.
+Mỗi công thức được áp dụng trên **một khoảng** không chứa điểm làm mẫu bằng 0. Chẳng hạn, trên khoảng \(0&lt;x&lt;\frac{\pi}{2}\), ta có \(\int\left(\frac{2}{\cos^2x}-\frac{3}{\sin^2x}\right)\mathrm dx=2\tan x+3\cot x+C\). Lấy đạo hàm kết quả cho đúng \(\frac{2}{\cos^2x}-\frac{3}{\sin^2x}\); dấu cộng trước \(3\cot x\) đến từ \((\cot x)'=-\frac{1}{\sin^2x}\). Trên những khoảng xác định tách rời, hằng số \(C\) có thể khác nhau.
 
-Chẳng hạn, ∫(4cos2x+3sin3x)dx=2sin2x−cos3x+C. Chọn đạo hàm ngược: 2·2cos2x=4cos2x; derivative −cos3x là+3sin3x.
+Chẳng hạn, \(\int(4\cos(2x)+3\sin(3x))\,\mathrm dx=2\sin(2x)-\cos(3x)+C\). Kiểm bằng đạo hàm: \((2\sin(2x))'=4\cos(2x)\) và \((-\cos(3x))'=3\sin(3x)\).
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫(4cos(2x)−3sin(3x))dx, góc đo radian.
+**Đề bài:** Tính \(\int (4\cos (2x)-3\sin (3x))\,\mathrm dx\), góc đo radian.
 
-**Lời giải:** Ta có (2sin2x)′=4cos2x và (cos3x)′=−3sin3x. Vậy F=2sin2x+cos3x+C. Dùng radian và quy tắc dây chuyền khi lấy đạo hàm ngược.
+**Lời giải:** Ta có \((2\sin(2x))'=4\cos(2x)\) và \((\cos(3x))'=-3\sin(3x)\). Vậy \(F(x)=2\sin(2x)+\cos(3x)+C\). Khi lấy đạo hàm để kiểm lại, dùng góc radian và quy tắc đạo hàm hàm hợp.
 
-**Vận dụng** ∫2sin(2x)dx?
+**Vận dụng** \(\int 2\sin (2x)\,\mathrm dx\)?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-−cos(2x)+C.
+\(-\cos(2x)+C\).
 
-Nếu thiếu dấu âm, lấy đạo hàm cos(2x) là −2sin(2x) rồi sửa.
+Nếu thiếu dấu âm, em hãy lấy đạo hàm của \(\cos(2x)\): kết quả là \(-2\sin(2x)\), trái dấu với hàm đề bài.
 
 
 **Kiểm lỗi**
@@ -234,23 +234,23 @@ Nếu em mất dấu khi nguyên hàm \(\sin\) hoặc quên nhân hệ số góc
 
 <!-- LESSON_ID: TOP11-M07; OUTCOME_ID: TOP11-O07 -->
 
-> **PHƯƠNG PHÁP — Từ vận tốc khôi phục vị trí.** Khi nguyên hàm là vị trí, điều kiện đầu mang nghĩa vật lý. Một đồ thị v(t) mô tả vận tốc, có xác định duy nhất vị trí s(t) chưa? Ta đã biết v=s'(t), nguyên hàm và điều kiện vị trí đầu s(t₀). Vận tốc có hướng v(t)=s'(t) giúp dựng lại vị trí s(t)=F(t)+C, nhưng C cần giá trị đầu. Tích phân v trên [a,b] cho **độ dời**, không phải luôn là tổng quãng đường. Đọc đơn vị: v (m/s), s (m), dv/dt gia tốc (m/s²).
+> **PHƯƠNG PHÁP — Từ vận tốc khôi phục vị trí.** Vận tốc có hướng \(v(t)=s'(t)\) cho biết vị trí \(s(t)\) biến đổi nhanh thế nào. Nếu \(F\) là một nguyên hàm của \(v\) thì \(s(t)=F(t)+C\). Ta cần biết vị trí ban đầu \(s(t_0)\) để tìm \(C\); chỉ biết vận tốc chưa đủ để xác định vị trí. Tích phân của \(v\) trên \([a;b]\) cho **độ dời**, không phải luôn là tổng quãng đường. Nếu thời gian tính bằng giây và vị trí tính bằng mét, đơn vị vận tốc là \(\mathrm{m/s}\), còn gia tốc \(v'(t)\) có đơn vị \(\mathrm{m/s^2}\).
 
-Chẳng hạn, cho v(t)=4t−2 (m/s), s(0)=3m: s(t)=2t²−2t+3. Sau2 giây s(2)=8−4+3=7m. Kiểm đạo hàm s'=4t−2, đơn vị m/s. Chọn nguyên hàm rồi mới khóa C.
+Chẳng hạn, cho \(v(t)=4t-2\) (m/s), \(s(0)=3\) m. Một họ nguyên hàm là \(s(t)=2t^2-2t+C\); từ vị trí ban đầu suy ra \(C=3\). Sau 2 giây, \(s(2)=8-4+3=7\) m. Kiểm lại \(s'(t)=4t-2\) (m/s).
 
 **Ví dụ**
 
-**Đề bài:** Vận tốc có hướng v(t)=4t+1 m/s, t≥0, và s(1)=6 m. Tính s(2).
+**Đề bài:** Vận tốc có hướng \(v(t)=4t+1\) (m/s), \(t\ge0\), và \(s(1)=6\) m. Tính \(s(2)\).
 
-**Lời giải:** Vì s′=v, s(t)=2t²+t+C (m). s(1)=2+1+C=6 ⇒ C=3. Do đó s(2)=8+2+3=13 m. Cần điều kiện đầu để xác định s; tích phân vận tốc cho độ dời.
+**Lời giải:** Vì \(s'=v\), ta có \(s(t)=2t^2+t+C\) (m). Thay \(t=1\), \(s(1)=2+1+C=6\), suy ra \(C=3\). Do đó \(s(2)=8+2+3=13\) m. Cần điều kiện vị trí đã biết để xác định hằng số; riêng tích phân vận tốc chỉ cho độ dời.
 
-**Vận dụng** v(t)=6t, s(0)=1, s(1) bằng?
+**Vận dụng** Vật chuyển động thẳng có vận tốc \(v(t)=6t\) (m/s), thời gian \(t\) tính bằng giây, vị trí ban đầu \(s(0)=1\) m. Tính vị trí \(s(1)\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-s(t)=3t²+1 nên s(1)=4m.
+Vì \(s'(t)=v(t)\), ta có \(s(t)=3t^2+C\). Thế \(s(0)=1\) được \(C=1\); do đó \(s(1)=4\) m.
 
-Nếu không có s(0), không thể nói vị trí tuyệt đối cụ thể.
+Nếu không biết \(s(0)\), ta chưa xác định được vị trí tuyệt đối cụ thể.
 
 
 **Kiểm lỗi**
@@ -269,7 +269,7 @@ Khi biến thiên diễn ra suốt một khoảng, tích phân cộng dồn các
 
 <!-- LESSON_ID: TOP11-M08; OUTCOME_ID: TOP11-O08 -->
 
-Vì sao cùng nguyên hàm khác nhau C nhưng tích phân có cận vẫn là một số? Ta sử dụng F′=f trên đoạn [a,b] với F là một nguyên hàm, và f liên tục trên đoạn để áp dụng Newton–Leibniz. 
+Các nguyên hàm của cùng một hàm số trên một khoảng có thể khác nhau hằng số. Vì sao khi tính tích phân có cận, ta vẫn luôn thu được cùng một số? Với \(f\) liên tục trên đoạn \([a;b]\), chọn nguyên hàm \(F\) của \(f\) trên đoạn ấy.
 
 > **ĐỊNH NGHĨA — Tích phân xác định.** Với \(f\) liên tục trên đoạn \([a,b]\), chọn một nguyên hàm \(F\) của \(f\) trên đoạn ấy. **Tích phân của \(f\) từ \(a\) đến \(b\)** là số \(F(b)-F(a)\), ký hiệu \(\displaystyle\int_a^b f(x)\,dx\). Kết quả không phụ thuộc vào việc chọn nguyên hàm nào: nếu chọn \(F+C\) thì hai hằng số ở hai cận triệt tiêu. \(a\) là cận dưới, \(b\) là cận trên, \(f\) là hàm dưới dấu tích phân; khi đảo hai cận thì tích phân đổi dấu.
 
@@ -277,23 +277,23 @@ Như vậy định nghĩa giải thích **vì sao tích phân xác định là m
 
 > **ĐỊNH LÝ — Newton–Leibniz.** Nếu \(f\) liên tục trên đoạn \([a,b]\), \(a&lt;b\), và \(F\) liên tục trên \([a,b]\), khả vi trên \((a,b)\) với \(F'(x)=f(x)\) tại mọi \(x\in(a,b)\), thì \(\displaystyle\int_a^b f(x)\,dx=F(b)-F(a)\). Đây là **một số thực**, không có \(+C\).
 
- C bị triệt trong hiệu. Khác nguyên hàm bất định, tích phân xác định không thêm +C. Tên biến lấy tích phân là **ký hiệu thay chỗ**, nên nếu giữ đúng cùng hàm và cận thì \(\int_a^b f(x)\,dx=\int_a^b f(t)\,dt\); còn đổi hàm hay đổi cận thì nói chung đổi giá trị. Nếu hàm không liên tục/không xác định trên đoạn, không áp máy móc mà kiểm điều kiện.
+ Hằng số \(C\) bị triệt tiêu trong hiệu \((F(b)+C)-(F(a)+C)=F(b)-F(a)\). Khác với nguyên hàm bất định, tích phân xác định không thêm \(+C\). Tên biến lấy tích phân là **ký hiệu thay chỗ**, nên nếu giữ cùng hàm và cận thì \(\int_a^b f(x)\,\mathrm dx=\int_a^b f(t)\,\mathrm dt\); còn đổi hàm hoặc đổi cận thì nói chung giá trị thay đổi. Nếu hàm không xác định hoặc không liên tục trên đoạn, cần kiểm điều kiện trước khi áp dụng công thức.
 
-Xét ví dụ: ∫₁² 4x³dx=[x⁴]₁²=16−1=15. Chọn nguyên hàm x⁴, kiểm đa thức liên tục trên [1,2]; nếu viết +C trong 15 sẽ biến kết quả số thành họ hàm vô nghĩa.
+Xét ví dụ: \(\int_1^2 4x^3\,\mathrm dx=\left[x^4\right]_1^2=16-1=15\). Chọn nguyên hàm \(F(x)=x^4\); hàm dưới dấu tích phân là đa thức, liên tục trên \([1;2]\). Kết quả là một số, không thêm \(+C\).
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫₁³4x dx bằng nguyên hàm và cận.
+**Đề bài:** Tính \(\int_{1}^{3} 4x\,\mathrm dx\) bằng nguyên hàm và cận.
 
-**Lời giải:** f(x)=4x liên tục trên [1,3], F(x)=2x². Định lí Newton–Leibniz cho ∫₁³4x dx=F(3)−F(1)=18−2=16. Tích phân có cận là số, không thêm +C.
+**Lời giải:** \(f(x)=4x\) liên tục trên \([1;3]\), chọn \(F(x)=2x^2\). Theo công thức Newton–Leibniz, \(\int_1^3 4x\,\mathrm dx=F(3)-F(1)=18-2=16\). Tích phân có cận là một số, không thêm \(+C\).
 
-**Vận dụng** ∫₀²2x dx?
+**Vận dụng** Tính \(\displaystyle\int_1^3 2x\,dx\). Viết rõ giá trị nguyên hàm ở cả hai cận.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-[x²]₀²=4.
+\(\left[x^2\right]_1^3=3^2-1^2=8\). Nếu em ra 9, em mới thế cận trên mà quên trừ giá trị tại cận dưới.
 
-Nếu chỉ thế cận trên, luôn nhắc hiệu F(b)−F(a).
+Nếu chỉ thế cận trên, hãy nhớ công thức là hiệu \(F(b)-F(a)\).
 
 
 **Kiểm lỗi**
@@ -306,21 +306,28 @@ Nếu em thêm \(+C\) vào tích phân có cận hoặc chỉ thế cận trên,
 
 <!-- LESSON_ID: TOP11-M09; OUTCOME_ID: TOP11-O09 -->
 
-> **TÍNH CHẤT — Tính tuyến tính của tích phân.** Tính tuyến tính cho phép gộp những tích phân có cận phù hợp. Vì sao có thể tách một biểu thức dài thành vài tích phân nhỏ? Ta bắt đầu từ phép cộng, hằng số và cùng cận [a,b]. ∫_a^b(αf+βg)=α∫_a^b f+β∫_a^b g khi các thành phần khả tích; tất cả dùng cùng cận. Tính tuyến tính không cho quyền thay cận tùy ý. Nếu một thành phần không xác định trên đoạn, phải xử lý vấn đề trước.
+> **TÍNH CHẤT — Tính tuyến tính của tích phân.** Nếu \(f,g\) liên tục trên \([a;b]\) và \(\alpha,\beta\) là hằng số, thì \(\int_a^b(\alpha f(x)+\beta g(x))\,\mathrm dx=\alpha\int_a^b f(x)\,\mathrm dx+\beta\int_a^b g(x)\,\mathrm dx\). Vì hiệu giá trị nguyên hàm cũng tuân theo phép cộng và nhân với hằng số, ta có thể tách một biểu thức dài thành các tích phân đơn giản hơn. Tất cả tích phân trong công thức đều giữ cùng hai cận. Nếu một thành phần không xác định trên đoạn, cần kiểm điều kiện trước.
 
-Chẳng hạn, ∫₀¹(3x²+2x+1)dx=[x³+x²+x]₀¹=3. Có thể tách thành1+1+1. Chọn cách tổng từng thành phần vì số hạng là đa thức.
+Chẳng hạn, \(\int_0^1(3x^2+2x+1)\,\mathrm dx=\left[x^3+x^2+x\right]_0^1=3\). Có thể tính ba tích phân thành phần riêng rồi cộng: \(1+1+1=3\).
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫₀²(3x²−2x+4)dx và giải thích phép tách.
+**Đề bài:** Tính \(\int_{0}^{2} (3x^{2}-2x+4)\,\mathrm dx\) và giải thích phép tách.
 
-**Lời giải:** Các đa thức đều khả tích trên [0,2]; dùng tuyến tính, F=x³−x²+4x. Giá trị là F(2)−F(0)=8−4+8=12. Không thay cận riêng cho từng hạng tử.
+**Lời giải:** Các đa thức đều liên tục trên \([0;2]\); dùng tính tuyến tính, chọn nguyên hàm \(F(x)=x^3-x^2+4x\). Giá trị là \(F(2)-F(0)=8-4+8=12\). Cũng có thể tách thành ba tích phân và tính riêng từng tích phân **với cùng hai cận 0 và 2**:
 
-**Vận dụng** ∫₀²(2x+3)dx?
+\[
+\int_0^2 3x^2\,dx-\int_0^2 2x\,dx+\int_0^2 4\,dx
+=8-4+8=12.
+\]
+
+Hai cách hoàn toàn tương đương; không được tự ý thay cận của một số hạng mà không có phép biến đổi hợp lệ.
+
+**Vận dụng** \(\int_{0}^{2} (2x+3)\,\mathrm dx\)?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-[x²+3x]₀²=4+6=10.
+\(\left[x^2+3x\right]_0^2=4+6=10\).
 
 Nếu ghép các tích phân khác cận mà không đổi cận, đó không phải quy tắc tuyến tính.
 
@@ -335,23 +342,21 @@ Nếu em tách biểu thức nhưng đổi nhầm cận hoặc không nhân hệ
 
 <!-- LESSON_ID: TOP11-M10; OUTCOME_ID: TOP11-O10 -->
 
-> **TÍNH CHẤT — Đảo cận và ghép cận.** Chiều lấy cận quyết định dấu tích phân. Đi ngược chiều tích lũy làm thay đổi dấu nhưng có làm diện tích âm không? Cần nhớ F(b)−F(a) với F′=f, và phép đổi dấu khi đảo hai cận. ∫_b^a f=−∫_a^b f, ∫_a^a f=0; nếu a≤c≤b, ∫_a^b f=∫_a^c f+∫_c^b f. Đây là **tích phân có hướng**, không đồng nhất với diện tích hình học. Quy tắc ghép cũng có thể dùng để chia tại nghiệm đổi dấu.
+> **TÍNH CHẤT — Đảo cận và ghép cận.** Với \(f\) liên tục trên đoạn chứa các cận, từ hiệu \(F(b)-F(a)\) của một nguyên hàm \(F\), suy ra \(\int_b^a f(x)\,\mathrm dx=-\int_a^b f(x)\,\mathrm dx\) và \(\int_a^a f(x)\,\mathrm dx=0\). Nếu \(a\le c\le b\), thì \(\int_a^b f(x)\,\mathrm dx=\int_a^c f(x)\,\mathrm dx+\int_c^b f(x)\,\mathrm dx\), vì giá trị \(F(c)\) được cộng rồi trừ đi. Tích phân có hướng, không đồng nhất với diện tích hình học. Quy tắc ghép cận giúp ta chia khoảng tại điểm hàm đổi dấu.
 
-Chẳng hạn, ∫₂⁰(3x²+1)dx=−∫₀²(3x²+1)dx=−10. Giá trị âm xuất phát đảo cận, không đại diện diện tích âm. Chọn đổi thứ tự cận trước thay số.
+Chẳng hạn, \(\int_2^0(3x^2+1)\,\mathrm dx=-\int_0^2(3x^2+1)\,\mathrm dx=-10\). Giá trị âm xuất phát từ việc đảo cận, không đại diện cho một diện tích âm.
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫₄¹2x dx và so với ∫₁⁴2x dx.
+**Đề bài:** Tính \(\int_{4}^{1} 2x\,\mathrm dx\) và so với \(\int_{1}^{4} 2x\,\mathrm dx\).
 
-**Lời giải:** F=x². Theo chiều cận 4→1, ∫₄¹2x dx=F(1)−F(4)=1−16=−15; cận đảo cho +15. Dấu âm là chiều tích lũy, không phải diện tích hình học âm.
+**Lời giải:** Chọn \(F(x)=x^2\). Theo chiều cận từ 4 đến 1, \(\int_4^1 2x\,\mathrm dx=F(1)-F(4)=1-16=-15\). Khi đảo lại hai cận, \(\int_1^4 2x\,\mathrm dx=15\). Dấu âm biểu thị hướng lấy tích phân, không phải diện tích hình học âm.
 
-**Vận dụng** ∫₁¹(x²+1)dx?
+**Vận dụng** Biết \(\int_1^3 f(x)\,dx=5\) và \(\int_3^5 f(x)\,dx=-2\), trong đó \(f\) liên tục trên \([1;5]\). Tính \(\int_1^5 f(x)\,dx\), \(\int_5^1 f(x)\,dx\) và \(\int_3^3 f(x)\,dx\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-0.
-
-Nếu kết luận diện tích hình học từ tích phân đảo cận, phải quay lại miền và |f|.
+Ghép tại \(3\): \(\int_1^5 f(x)\,dx=5+(-2)=3\). Đảo cận cho \(\int_5^1 f(x)\,dx=-3\); hai cận bằng nhau cho \(\int_3^3 f(x)\,dx=0\). Nếu em cộng thành 7, em đã thay số hạng âm bằng trị tuyệt đối, trong khi đề hỏi tích phân có dấu.
 
 
 **Kiểm lỗi**
@@ -364,21 +369,21 @@ Nếu em quên dấu khi đảo cận hoặc ghép sai khoảng, đọc **Kiến
 
 <!-- LESSON_ID: TOP11-M11; OUTCOME_ID: TOP11-O11 -->
 
-> **CÔNG THỨC — Từ tích lũy tới diện tích không âm.** Diện tích dưới đồ thị bằng tích phân khi hàm không âm. Tại sao tổng các hình chữ nhật rất mỏng mô phỏng đúng diện tích cong? Để xác định điều đó, cần xét đồ thị liên tục và không âm, dải đứng rộng dx. Nếu f(x)≥0 liên tục trên [a,b], diện tích vùng giữa đồ thị, Ox, hai đường x=a,b bằng ∫_a^b f(x)dx. Ý nghĩa là giới hạn tổng diện tích dải hẹp f(x)dx. Nếu f đổi dấu, tích phân cho phần diện tích đại số chứ không phải tổng vùng.
+> **CÔNG THỨC — Từ tích lũy tới diện tích không âm.** Giả sử \(f\) liên tục và \(f(x)\ge0\) trên \([a;b]\), với \(a&lt;b\). Chia đoạn thành nhiều khoảng nhỏ: một dải đứng có chiều cao gần bằng \(f(x)\), chiều rộng rất nhỏ \(\Delta x\), nên diện tích gần bằng \(f(x)\Delta x\). Khi các dải ngày càng hẹp, tổng diện tích tiến đến \(S=\int_a^b f(x)\,\mathrm dx\). Đây là diện tích vùng giới hạn bởi đồ thị, trục \(Ox\) và hai đường \(x=a,\ x=b\). Nếu hàm đổi dấu, tích phân có dấu không còn bằng tổng diện tích hình học.
 
-Chẳng hạn, y=2x trên [0,2] không âm: S=∫₀²2x dx=[x²]₀²=4, đúng diện tích tam giác đáy2 cao4 là4. Hai phương pháp kiểm chéo bản chất.
+Chẳng hạn, \(y=2x\) không âm trên \([0;2]\). Ta có \(S=\int_0^2 2x\,\mathrm dx=\left[x^2\right]_0^2=4\). Kiểm bằng hình học: tam giác có đáy 2 và chiều cao 4, diện tích \(\frac12\cdot2\cdot4=4\).
 
 **Ví dụ**
 
-**Đề bài:** Tính diện tích hình phẳng dưới y=2x+1 trên [0,2].
+**Đề bài:** Tính diện tích hình phẳng dưới đồ thị \(y=2x+1\), giới hạn bởi trục \(Ox\) và hai đường \(x=0,\ x=2\).
 
-**Lời giải:** Vì f=2x+1≥1>0 và liên tục trên đoạn, S=∫₀²(2x+1)dx=[x²+x]₀²=4+2=6 đơn vị diện tích. Dùng diện tích bằng tích phân vì đồ thị nằm trên Ox.
+**Lời giải:** Hàm \(f(x)=2x+1\) liên tục và \(f(x)\ge1>0\) trên \([0;2]\). Đồ thị nằm trên \(Ox\), do đó \(S=\int_0^2(2x+1)\,\mathrm dx=\left[x^2+x\right]_0^2=4+2=6\) đơn vị diện tích.
 
-**Vận dụng** Diện tích dưới y=x² trên [0,1]?
+**Vận dụng** Tính diện tích dưới đồ thị \(y=x^2\), phía trên trục \(Ox\), từ \(x=0\) đến \(x=1\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-∫₀¹x²dx=1/3 đơn vị².
+\(\int_0^1 x^2\,\mathrm dx=\frac13\) đơn vị diện tích.
 
 Nếu trả diện tích âm, kiểm f có âm trên đoạn hay không.
 
@@ -393,29 +398,33 @@ Nếu em coi tích phân âm là diện tích âm, hoặc bỏ kiểm dấu \(f\
 
 <!-- LESSON_ID: TOP11-M12; OUTCOME_ID: TOP11-O12 -->
 
-Độ dời khác quãng đường vì tích phân có dấu có thể triệt tiêu. Một vận tốc đổi dấu có thể cho độ dời bằng0 nhưng quãng đường khác0? Ta đã biết dấu f, nghiệm f=0, ∫f và ∫|f|. Tích phân ∫f là phần có dấu; ∫|f| là tổng độ lớn không âm. Diện tích hình học giữa Ox và đồ thị dùng ∫|f|; quãng đường khi v là vận tốc có hướng dùng ∫|v|, còn độ dời dùng ∫v. Tìm nghiệm đổi dấu và chia đoạn trước khi lấy trị tuyệt đối từng phần. Không lấy |∫f| thay ∫|f|.
+Độ dời khác quãng đường vì các phần có dấu trái nhau trong tích phân có thể triệt tiêu. Với vận tốc có hướng \(v\) liên tục trên \([a;b]\), độ dời là \(\int_a^b v(t)\,\mathrm dt\), còn quãng đường là \(\int_a^b |v(t)|\,\mathrm dt\). Tương tự, diện tích giữa đồ thị của \(f\) và trục \(Ox\) là \(\int_a^b |f(x)|\,\mathrm dx\). Khi hàm đổi dấu tại một số hữu hạn điểm, chia đoạn tại các điểm đó để tính từng phần không âm. Không thay tích phân của trị tuyệt đối bằng trị tuyệt đối của tích phân khi chưa kiểm dấu.
 
-Chẳng hạn, v(t)=t−1 trên [0,2]: ∫v=0, nhưng ∫|v|=∫₀¹(1−t)+∫₁²(t−1)=1. Tại t=1 vật đổi chiều; diện tích hai tam giác 1/2+1/2=1.
+Chẳng hạn, \(v(t)=t-1\) (m/s) trong \(0\le t\le2\) giây. Độ dời là \(\int_0^2(t-1)\,\mathrm dt=0\) m. Vật đổi chiều tại \(t=1\); quãng đường là \(\int_0^1(1-t)\,\mathrm dt+\int_1^2(t-1)\,\mathrm dt=\frac12+\frac12=1\) m.
 
-> **PHƯƠNG PHÁP — Phân biệt độ dời và quãng đường.** Một ví dụ **khác đúng với hình** là \(f(x)=x\) trên đoạn \([-1,2]\). Trên \([-1,0]\), đồ thị nằm dưới trục nên tích phân đóng góp \(-1/2\); trên \([0,2]\), vùng tam giác phía trên có diện tích 2 và đóng góp \(+2\). Vì thế \(\int_{-1}^{2}x\,dx=3/2\), nhưng **diện tích hình học** của hai vùng là \(1/2+2=5/2\). Trong bài vận tốc \(v(t)=t-1\) trên \([0,2]\) vừa xét, hai số tương ứng là 0 và 1; không được đọc kết quả của hình này thành kết quả bài đó.
+> **PHƯƠNG PHÁP — Phân biệt độ dời và quãng đường.** Hình dưới minh họa một ví dụ khác: \(f(x)=x\) trên \([-1;2]\). Trên \([-1;0]\), đồ thị nằm dưới trục nên phần tích phân bằng \(-\frac12\); trên \([0;2]\), vùng tam giác phía trên có diện tích 2 và đóng góp \(+2\). Vì thế \(\int_{-1}^2 x\,\mathrm dx=\frac32\), nhưng **diện tích hình học** của hai vùng là \(\frac12+2=\frac52\). Trong bài vận tốc \(v(t)=t-1\) trên \([0;2]\) vừa xét, hai số tương ứng là 0 và 1; không dùng kết quả của hình này cho bài vận tốc đó.
 
 ![Tích phân có dấu và diện tích hình học là hai đại lượng khác nhau](../../../assets/visuals/THPT_TOPIC11_SIGNED_INTEGRAL_R01.svg)
 
-*Đọc hình:* Đây là \(y=x\) trên \([-1,2]\), đổi dấu tại \(x=0\). Hai vùng tam giác có diện tích lần lượt \(1/2\) và 2, nên phần dưới góp số **âm** vào tích phân nhưng vẫn là diện tích **dương** khi cộng diện tích hình học.
+*Đọc hình:* Đây là \(y=x\) trên \([-1;2]\), đổi dấu tại \(x=0\). Hai vùng tam giác có diện tích lần lượt \(\frac12\) và 2, nên phần dưới góp số **âm** vào tích phân nhưng vẫn là diện tích **dương** khi cộng diện tích hình học.
 
 **Ví dụ**
 
-**Đề bài:** Với f(x)=x−1 trên [0,4], tính tích phân có dấu và diện tích hình học.
+**Đề bài:** Với \(f(x)=x-1\) trên \([0;4]\), tính tích phân có dấu và diện tích hình học giữa đồ thị với \(Ox\).
 
-**Lời giải:** f đổi dấu ở x=1. Tích phân có dấu ∫₀⁴(x−1)dx=[x²/2−x]₀⁴=4. Diện tích phải tách: ∫₀¹(1−x)dx=1/2 và ∫₁⁴(x−1)dx=9/2, tổng S=5. Không lấy |4| thay ∫|f|.
+**Lời giải:** Hàm đổi dấu tại \(x=1\). Tích phân có dấu là \(\int_0^4(x-1)\,\mathrm dx=\left[\frac{x^2}2-x\right]_0^4=4\). Để tính diện tích, tách tại \(x=1\): \(\int_0^1(1-x)\,\mathrm dx=\frac12\) và \(\int_1^4(x-1)\,\mathrm dx=\frac92\). Tổng diện tích là \(S=\frac12+\frac92=5\), khác với \(|4|=4\).
 
-**Vận dụng** f=x trên [−1,1], diện tích và tích phân là gì?
+**Vận dụng** Một vật chuyển động thẳng với vận tốc có hướng \(v(t)=2-t\) (m/s), \(0\le t\le5\) giây. Tìm thời điểm đổi chiều, độ dời và tổng quãng đường của vật.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Diện tích1, tích phân có dấu0.
+Vận tốc bằng 0 tại \(t=2\), dương trước 2 và âm sau 2 nên vật đổi chiều tại đó. Độ dời là
 
-Nếu câu hỏi 'quãng đường', hãy chia đoạn tại nghiệm v=0 rồi lấy |v|.
+\[
+\int_0^5(2-t)\,dt=\left[2t-\frac{t^2}2\right]_0^5=-\frac52\ \text{m}.
+\]
+
+Hai phần quãng đường là \(\int_0^2(2-t)\,dt=2\) m và \(\int_2^5(t-2)\,dt=\frac92\) m. Tổng quãng đường \(\frac{13}2\) m. Nếu lấy \(\frac52\) m, em mới lấy trị tuyệt đối của độ dời, chưa cộng quãng đường ở cả hai chiều.
 
 
 **Kiểm lỗi**
@@ -428,21 +437,21 @@ Nếu em lấy trị tuyệt đối của **một** tích phân có dấu làm q
 
 <!-- LESSON_ID: TOP11-M13; OUTCOME_ID: TOP11-O13 -->
 
-> **CÔNG THỨC — Tích phân lượng giác.** Sin, cos và mũ dùng cùng nguyên tắc thế cận sau nguyên hàm. Một biểu thức lượng giác hoặc hàm mũ vẫn tính bằng F(b)−F(a) được không? Ta sử dụng hàm e^x, sin/cos liên tục trên đoạn, góc radian. Nếu f liên tục, quy tắc Newton–Leibniz không phụ thuộc biểu thức có là đa thức hay không. Nguyên hàm cos x là sin x+C, nguyên hàm sin x là −cos x+C (góc radian), và nguyên hàm e^x là e^x+C. Lấy giá trị hai cận đúng, kiểm sinh ra số và dấu. Với e^{kx}, chia k khi tìm nguyên hàm.
+> **CÔNG THỨC — Tích phân lượng giác.** Nếu hàm liên tục trên đoạn lấy tích phân, công thức Newton–Leibniz vẫn là \(F(b)-F(a)\), dù hàm dưới dấu tích phân là đa thức, hàm mũ hay lượng giác. Với góc radian, ta chọn nguyên hàm của \(\cos x\) là \(\sin x\), của \(\sin x\) là \(-\cos x\). Với \(e^x\), nguyên hàm là \(e^x\); với \(e^{kx}\), nguyên hàm là \(\frac{e^{kx}}k\) khi \(k\ne0\). Sau khi chọn nguyên hàm, thay cả hai cận và lấy hiệu; không thêm \(+C\) vào kết quả tích phân.
 
-Xét ví dụ: ∫₀^{ln3}e^x dx=e^{ln3}−1=2. Chọn F=e^x vì d(e^x)=e^x, cận ln3 cho giá trị hữu hạn. Không viết ln3 thành3 ở cận x.
+Xét ví dụ: \(\int_0^{\ln 3} e^x\,\mathrm dx=\left[e^x\right]_0^{\ln 3}=e^{\ln 3}-1=2\). Chọn \(F(x)=e^x\) vì \(F'(x)=e^x\). Lưu ý cận trên là \(\ln 3\), không phải 3.
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫₀^π sin x dx khi góc đo radian.
+**Đề bài:** Tính \(\int_{0}^{\pi} \sin  x\,\mathrm dx\) khi góc đo radian.
 
-**Lời giải:** Hàm sin liên tục, F=−cos x. ∫₀^π sin x dx=[−cos x]₀^π=1−(−1)=2. Dùng radian; kết quả khác việc coi góc theo độ.
+**Lời giải:** Hàm sin liên tục trên đoạn; chọn \(F(x)=-\cos x\). Ta có \(\int_0^\pi\sin x\,\mathrm dx=\left[-\cos x\right]_0^\pi=1-(-1)=2\). Góc được tính bằng radian.
 
-**Vận dụng** ∫₀^{π/2} sin x dx?
+**Vận dụng** \(\int_{0}^{\frac{\pi}{2}} \sin  x\,\mathrm dx\)?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-[−cos x]₀^{π/2}=−0−(−1)=1.
+\(\left[-\cos x\right]_0^{\frac{\pi}{2}}=0-(-1)=1\).
 
 Nếu thay cận góc độ mà không quy đổi, xem lại giả thiết radian.
 
@@ -457,28 +466,28 @@ Nếu em quên đạo hàm \(-\cos x\) bằng \(\sin x\) hoặc thế cận góc
 
 <!-- LESSON_ID: TOP11-M14; OUTCOME_ID: TOP11-O14 -->
 
-> **PHƯƠNG PHÁP — Tích lũy từ tốc độ biến thiên.** Tích phân từ tốc độ cho lại lượng tích lũy. Biết tốc độ cuối khoảng có suy được lượng tích lũy bằng 'tốc độ cuối×thời gian'? Ta bắt đầu từ tốc độ biến thiên r(t) và tích phân của r. Nếu Q'(t)=r(t), lượng biến đổi ròng Q(b)−Q(a)=∫_a^b r(t)dt. Khi r không hằng, dùng r(b)(b−a) thường sai; diện tích dưới đồ thị tốc độ phản ánh toàn thời gian. Đơn vị r là lượng/giây, sau tích phân là lượng. Với r đổi dấu, diễn giải ròng.
+> **PHƯƠNG PHÁP — Tích lũy từ tốc độ biến thiên.** Giả sử \(Q'(t)=r(t)\) và \(r\) liên tục trên \([a;b]\). Lượng biến đổi ròng là \(Q(b)-Q(a)=\int_a^b r(t)\,\mathrm dt\). Nếu tốc độ \(r\) không hằng, không thể chỉ lấy tốc độ cuối \(r(b)\) nhân với thời gian \(b-a\). Ta phải cộng dồn sự thay đổi trong toàn khoảng. Nếu tốc độ tính bằng lượng mỗi giây và thời gian tính bằng giây, tích phân có đơn vị lượng. Khi tốc độ đổi dấu, kết quả vẫn là biến đổi ròng.
 
-Chẳng hạn, Lưu lượng r(t)=2t lít/phút trên [0,2]: Q(2)−Q(0)=∫₀²2t dt=4 lít, không phải r(2)·2=8 lít. Chọn dải tốc độ thay đổi thay vì một mức cuối.
+Chẳng hạn, lưu lượng \(r(t)=2t\) lít/phút trong \(0\le t\le2\) phút. Lượng nước tăng thêm là \(Q(2)-Q(0)=\int_0^2 2t\,\mathrm dt=4\) lít, không phải \(r(2)\cdot2=8\) lít.
 
 **Ví dụ**
 
-**Đề bài:** Một vật chuyển động thẳng với vận tốc có hướng v(t)=5−2t (m/s) trong 0≤t≤2 giây. Tính độ dời của vật.
+**Đề bài:** Một vật chuyển động thẳng với vận tốc có hướng \(v(t)=5-2t\) (m/s) trong \(0\le t\le2\) giây. Tính độ dời của vật.
 
-**Lời giải:** Độ dời s(2)−s(0)=∫₀²v(t)dt=∫₀²(5−2t)dt=[5t−t²]₀²=10−4=6 m. Không tính bằng v(2)·2=2 m vì vận tốc không hằng; trên [0,2] có v(t)≥1 m/s nên quãng đường cũng bằng 6 m.
+**Lời giải:** Độ dời là \(s(2)-s(0)=\int_0^2(5-2t)\,\mathrm dt=\left[5t-t^2\right]_0^2=10-4=6\) m. Không tính bằng \(v(2)\cdot2=2\) m vì vận tốc không hằng; trên \([0;2]\) có \(v(t)\ge1\) (m/s), nên quãng đường cũng bằng 6 m.
 
-**Vận dụng** Một vật có vận tốc có hướng v(t)=3t² (m/s) trong 0≤t≤1 giây. Độ dời là bao nhiêu?
+**Vận dụng** Một vật có vận tốc có hướng \(v(t)=3t^2\) (m/s) trong \(0\le t\le1\) giây. Độ dời là bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Độ dời bằng ∫₀¹3t²dt=1 m.
+Độ dời bằng \(\int_0^1 3t^2\,\mathrm dt=1\) m.
 
 Nếu kết quả còn đơn vị m/s, em chưa tích phân theo thời gian (giây).
 
 
 **Kiểm lỗi**
 
-Nếu em lấy giá trị vận tốc cuối nhân tổng thời gian, hoặc không đổi đơn vị m/s theo giây thành mét, đọc **Kiến thức 2.7**, làm **Bài 71** và **Bài 73**. Độ dời là \(\int v(t)dt\); quãng đường mới cần \(\int|v(t)|dt\).
+Nếu em lấy giá trị vận tốc cuối nhân tổng thời gian, hoặc không đổi đơn vị m/s theo giây thành mét, đọc **Kiến thức 2.7**, làm **Bài 71** và **Bài 73**. Độ dời là \(\int_a^b v(t)\,\mathrm dt\); quãng đường mới cần \(\int_a^b|v(t)|\,\mathrm dt\).
 
 </details>
 
@@ -492,9 +501,9 @@ Diện tích hình học không thể âm. Vì vậy, khi đồ thị đổi ph�
 
 <!-- LESSON_ID: TOP11-M15; OUTCOME_ID: TOP11-O15 -->
 
-> **PHƯƠNG PHÁP — Diện tích dưới hàm căn.** Diện tích dưới √x tính khác hình chữ nhật vì chiều cao thay đổi thế nào? Cần nhớ hàm căn trên x≥0, f≥0 và nguyên hàm x^{1/2}. Nếu y=√x trên [a,b] với 0≤a&lt;b, f liên tục, không âm, S=∫_a^b√x dx= (2/3)[x^{3/2}]_a^b. Không lấy cận âm để làm phép nguyên hàm trên số thực. Hình phẳng được mô tả bằng hai đường dọc x=a,b, Ox và đồ thị.
+> **PHƯƠNG PHÁP — Diện tích dưới hàm căn.** Hàm \(y=\sqrt{x}\) liên tục, không âm trên đoạn \([a;b]\) với \(0\le a&lt;b\). Vùng giới hạn bởi đồ thị, trục \(Ox\) và hai đường \(x=a,\ x=b\) có diện tích \(S=\int_a^b\sqrt{x}\,\mathrm dx=\frac23\left[x^{\frac32}\right]_a^b\). Để tìm nguyên hàm, viết \(\sqrt{x}=x^{\frac12}\) rồi dùng quy tắc lũy thừa. Không lấy cận âm khi hàm căn không xác định trên số thực.
 
-Chẳng hạn, S dưới y=√x trên [0,1]: ∫₀¹x^{1/2}dx=2/3 đơn vị². Kiểm với hình 1×1 có đường √x nằm trong hình nên diện tích &lt;1.
+Chẳng hạn, diện tích dưới \(y=\sqrt{x}\) trên \([0;1]\) là \(\int_0^1 x^{\frac12}\,\mathrm dx=\frac23\) đơn vị diện tích. Kiểm lại: đường cong nằm trong hình vuông cạnh 1, nên diện tích nhỏ hơn 1.
 
 Không phải mọi hình phẳng có hàm căn đều cần tìm nguyên hàm bằng công thức. Chẳng hạn, đồ thị \(y=\sqrt{4-x^2}\), \(-2\le x\le2\), chính là **nửa đường tròn phía trên** của đường tròn \(x^2+y^2=4\): bình phương hai vế được phương trình đường tròn, còn dấu \(y\ge0\) chọn nửa trên. Do đó, diện tích dưới đồ thị từ \(-2\) tới \(2\) là nửa diện tích hình tròn bán kính \(2\).
 
@@ -504,22 +513,22 @@ Không phải mọi hình phẳng có hàm căn đều cần tìm nguyên hàm b
 
 **Ví dụ**
 
-**Đề bài:** Tính diện tích dưới y=√x trên [1,4].
+**Đề bài:** Tính diện tích dưới \(y=\sqrt{x}\) và trên \(Ox\), từ \(x=1\) đến \(x=4\).
 
-**Lời giải:** Hàm √x liên tục, không âm khi x≥0. S=∫₁⁴x^{1/2}dx=(2/3)[x^{3/2}]₁⁴=(2/3)(8−1)=14/3 đơn vị diện tích. Phải kiểm cận không âm.
+**Lời giải:** Hàm \(\sqrt{x}\) liên tục và không âm trên \([1;4]\). Ta có \(S=\int_1^4 x^{\frac12}\,\mathrm dx=\frac23\left[x^{\frac32}\right]_1^4=\frac23(8-1)=\frac{14}{3}\) đơn vị diện tích. Hai cận đều thuộc miền xác định.
 
-**Vận dụng** S dưới y=√x trên [0,9]?
+**Vận dụng** Tính diện tích dưới \(y=\sqrt{x}\) và trên \(Ox\), từ \(x=0\) đến \(x=9\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(2/3)9^{3/2}=(2/3)27=18 đơn vị².
+\(\frac23\cdot9^{\frac32}=\frac23\cdot27=18\) đơn vị diện tích.
 
-Nếu coi √x như x², phải đổi thành x^{1/2} trước tính.
+Nếu em nhầm \(\sqrt{x}\) với \(x^2\), hãy viết lại \(\sqrt{x}=x^{\frac12}\) trước khi tìm nguyên hàm.
 
 
 **Kiểm lỗi**
 
-Nếu em áp dụng công thức nguyên hàm \(x^2\) cho \(\sqrt{x}\) hoặc bỏ miền \(x\ge0\), đọc **Kiến thức 3.1**, làm **Bài 74** và **Bài 78**. Đổi \(\sqrt{x}=x^{1/2}\) rồi kiểm cận và đơn vị diện tích.
+Nếu em áp dụng công thức nguyên hàm \(x^2\) cho \(\sqrt{x}\) hoặc bỏ miền \(x\ge0\), đọc **Kiến thức 3.1**, làm **Bài 74** và **Bài 78**. Đổi \(\sqrt{x}=x^{\frac12}\) rồi kiểm cận và đơn vị diện tích.
 
 </details>
 
@@ -527,27 +536,25 @@ Nếu em áp dụng công thức nguyên hàm \(x^2\) cho \(\sqrt{x}\) hoặc b�
 
 <!-- LESSON_ID: TOP11-M16; OUTCOME_ID: TOP11-O16 -->
 
-Khi đồ thị cắt trục, cần chia miền và cộng diện tích. Khi đường cong chạy qua trục Ox, những mảnh phía dưới có phải trừ khỏi diện tích? Để xác định điều đó, cần xét nghiệm của f(x)=0, dấu f trên mỗi khoảng và ∫|f|. 
+Khi đồ thị cắt trục \(Ox\), những mảnh nằm dưới trục vẫn có diện tích dương. Tìm các điểm mà \(f(x)=0\), xét dấu của \(f\) trên từng khoảng và cộng độ lớn của các tích phân tương ứng.
 
 > **CÔNG THỨC — Diện tích hình phẳng so với trục Ox.** Nếu \(f\) liên tục trên \([a,b]\) thì diện tích hình phẳng giới hạn bởi đồ thị, trục \(Ox\) và các đường \(x=a,x=b\) là \(\displaystyle S=\int_a^b|f(x)|\,dx\). Nếu \(f\) đổi dấu, chia đoạn ở các nghiệm trước khi tính; không lấy \(\left|\int_a^b f(x)\,dx\right|\) thay thế nói chung.
 
- Nếu f đổi dấu, chia tại tất cả nghiệm trong đoạn và đổi dấu tích phân tương ứng; nếu f không âm xuyên đoạn, không cần chia. Diện tích luôn ≥0 và có đơn vị²; không dùng |∫f| trừ khi f giữ dấu.
+ Nếu hàm đổi dấu tại hữu hạn điểm, ta chia đoạn tại các điểm đổi dấu và lấy dấu thích hợp cho từng tích phân. Nếu hàm giữ dấu trên toàn đoạn thì không cần chia. Diện tích luôn không âm; không thay \(\int_a^b |f(x)|\,\mathrm dx\) bằng \(\left|\int_a^b f(x)\,\mathrm dx\right|\) khi chưa kiểm dấu.
 
-Chẳng hạn, f(x)=x trên [−2,2]: tích phân có dấu0, nhưng S=∫−₂⁰(−x)dx+∫₀²x dx=2+2=4. Chọn mốc x=0 vì đường cắt Ox ở đó.
+Chẳng hạn, \(f(x)=x\) trên \([-2;2]\): tích phân có dấu bằng 0, nhưng \(S=\int_{-2}^0(-x)\,\mathrm dx+\int_0^2 x\,\mathrm dx=2+2=4\). Ta chọn mốc \(x=0\) vì đồ thị cắt \(Ox\) tại đó.
 
 **Ví dụ**
 
-**Đề bài:** Với y=x²−1 trên [−2,2], tính tích phân có dấu và diện tích giữa đồ thị với Ox.
+**Đề bài:** Với \(y=x^2-1\) trên \([-2;2]\), tính tích phân có dấu và diện tích giữa đồ thị với \(Ox\).
 
-**Lời giải:** Hàm đổi dấu ở x=−1 và x=1. Tích phân có dấu ∫₋₂²(x²−1)dx=[x³/3−x]₋₂²=4/3. Diện tích: hai mảnh ngoài mỗi mảnh ∫₁²(x²−1)dx=4/3 và mảnh giữa ∫₋₁¹(1−x²)dx=4/3, nên S=4. Không lấy |∫f| làm diện tích.
+**Lời giải:** Hàm đổi dấu tại \(x=-1\) và \(x=1\). Tích phân có dấu là \(\int_{-2}^2(x^2-1)\,\mathrm dx=\left[\frac{x^3}3-x\right]_{-2}^2=\frac43\). Do tính đối xứng, hai mảnh ngoài mỗi mảnh có diện tích \(\int_1^2(x^2-1)\,\mathrm dx=\frac43\); mảnh giữa có diện tích \(\int_{-1}^1(1-x^2)\,\mathrm dx=\frac43\). Vậy \(S=3\cdot\frac43=4\).
 
-**Vận dụng** S giữa y=x và Ox trên [−1,0]?
+**Vận dụng** Tính diện tích hình phẳng giữa \(y=2x-2\) và trục hoành trên \([0;3]\). Tự tìm mốc chia đoạn.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-1/2 đơn vị².
-
-Nếu tích phân có dấu0 mà hình có hai miền, bạn đã để triệt tiêu sai.
+Hàm bằng 0 tại \(x=1\), âm trên \([0;1)\) và dương trên \((1;3]\). Diện tích là \(\int_0^1(2-2x)\,dx+\int_1^3(2x-2)\,dx=1+4=5\) đơn vị diện tích. Tích phân có dấu chỉ bằng \(-1+4=3\); hai mảnh diện tích không triệt tiêu nhau.
 
 
 **Kiểm lỗi**
@@ -560,21 +567,21 @@ Nếu em cho phép hai phần hình nằm trên/dưới Ox triệt tiêu thành 
 
 <!-- LESSON_ID: TOP11-M17; OUTCOME_ID: TOP11-O17 -->
 
-> **CÔNG THỨC — Diện tích giữa hai đường.** Giữa hai đường, phải xét đường trên trước. Lấy 'trên−dưới' vì sao cho diện tích dải đứng không âm? Ta đã biết đồ thị liên tục f,g trên [a,b] và dấu f−g. Nếu f(x)≥g(x) trên cả đoạn, dải đứng có chiều cao f−g≥0; diện tích S=∫_a^b(f−g)dx. Kiểm bằng một điểm thử trong mỗi khoảng có thể đổi thứ tự; nếu f−g không giữ dấu, chuyển sang bài chia miền. Đơn vị².
+> **CÔNG THỨC — Diện tích giữa hai đường.** Nếu \(f,g\) liên tục trên \([a;b]\) và \(f(x)\ge g(x)\) trên cả đoạn, dải đứng giữa hai đồ thị có chiều cao \(f(x)-g(x)\ge0\). Diện tích là \(S=\int_a^b(f(x)-g(x))\,\mathrm dx\). Cần xác định đường trên và đường dưới trước khi lấy hiệu. Nếu hai đường đổi thứ tự, chia miền tại các giao điểm đổi dấu.
 
-Chẳng hạn, Trên [0,1], f=2, g=x², rõ 2>x², S=∫₀¹(2−x²)dx=2−1/3=5/3. Chọn đường trên y=2 rồi trừ y=x²; kết quả dương.
+Chẳng hạn, trên \([0;1]\), \(2>x^2\), nên diện tích giữa \(y=2\) và \(y=x^2\) là \(S=\int_0^1(2-x^2)\,\mathrm dx=2-\frac13=\frac53\).
 
 **Ví dụ**
 
-**Đề bài:** Tính diện tích giữa y=2x+1 và y=x+1 trên [0,2].
+**Đề bài:** Tính diện tích giữa \(y=2x+1\) và \(y=x+1\) trên \([0;2]\).
 
-**Lời giải:** Hiệu (2x+1)−(x+1)=x≥0 trên [0,2], nên đường thứ nhất nằm trên. S=∫₀²x dx=[x²/2]₀²=2 đơn vị diện tích. Chọn trên−dưới thay vì cộng hai tích phân.
+**Lời giải:** Hiệu \((2x+1)-(x+1)=x\ge0\) trên \([0;2]\), nên đường thứ nhất nằm trên. Do đó \(S=\int_0^2 x\,\mathrm dx=\left[\frac{x^2}2\right]_0^2=2\) đơn vị diện tích. Lấy đường trên trừ đường dưới, không cộng hai hàm.
 
-**Vận dụng** S giữa y=3 và y=x trên [0,2]?
+**Vận dụng** Tính diện tích giữa \(y=3\) và \(y=x\) trên \([0;2]\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-∫₀²(3−x)dx=4.
+\(S=\int_0^2(3-x)\,\mathrm dx=4\).
 
 Nếu hiệu âm, hãy kiểm đã trừ đúng 'trên−dưới'.
 
@@ -589,25 +596,25 @@ Nếu em lấy đường dưới trừ đường trên hoặc bỏ kiểm vị t
 
 <!-- LESSON_ID: TOP11-M18; OUTCOME_ID: TOP11-O18 -->
 
-> **PHƯƠNG PHÁP — Hai đường đổi thứ tự.** Khi hai đường giao, thứ tự có thể đổi trong đoạn. Một giao điểm nằm trong [a,b] có thể đổi thứ tự hai đường ra sao? Ta sử dụng phương trình f=g, dấu f−g, tích phân trị tuyệt đối. Tính diện tích giữa hai đường trên [a,b] bằng ∫_a^b|f−g|dx; giải điểm giao, chia tại nghiệm trong khoảng, kiểm đường nào trên mỗi mảnh. Các diện tích không âm phải **cộng**, không cộng tích phân có dấu chưa đổi. Không cần chia tại điểm chạm không đổi dấu, nhưng phải kiểm.
+> **PHƯƠNG PHÁP — Hai đường đổi thứ tự.** Với \(f,g\) liên tục trên \([a;b]\), diện tích giữa hai đồ thị là \(S=\int_a^b|f(x)-g(x)|\,\mathrm dx\). Giải phương trình \(f(x)=g(x)\) để tìm giao điểm, rồi xét dấu của hiệu trên các khoảng. Nếu hai đường đổi thứ tự tại một số hữu hạn điểm, chia đoạn tại những điểm đó và lấy đường trên trừ đường dưới ở mỗi phần. Các diện tích không âm phải được cộng lại. Nếu hai đường chỉ tiếp xúc mà không đổi thứ tự, không bắt buộc chia tại điểm đó.
 
-Xét ví dụ: f=x,g=x² trên [0,2], giao x=0,1. Trên (0,1) x>x², trên (1,2) x²>x: S=1/6+5/6=1. Trong khi ∫₀²(x−x²)=−2/3, minh họa sai nếu không chia.
+Xét \(f(x)=x,\ g(x)=x^2\) trên \([0;2]\), giao nhau tại \(x=0,\ x=1\). Trên \((0;1)\), \(x>x^2\); trên \((1;2)\), \(x^2>x\). Diện tích là \(S=\int_0^1(x-x^2)\,\mathrm dx+\int_1^2(x^2-x)\,\mathrm dx=\frac16+\frac56=1\). Trong khi đó \(\int_0^2(x-x^2)\,\mathrm dx=-\frac23\), không phải diện tích.
 
 ![Hai đường y=x và y=x bình phương cắt nhau](../../../assets/visuals/THPT_TOPIC11_TWO_CURVES_SPLIT_R01.svg)
 
-*Quan sát hình:* Trên [0,1] lấy x−x², trên [1,2] lấy x²−x. Hai diện tích là 1/6 và 5/6, nên tổng1 không phải trị tuyệt đối của tích phân có dấu.
+*Quan sát hình:* Trên \([0;1]\) lấy \(x-x^2\), trên \([1;2]\) lấy \(x^2-x\). Hai diện tích là \(\frac16\) và \(\frac56\), nên tổng bằng 1, không phải trị tuyệt đối của tích phân có dấu.
 
 **Ví dụ**
 
-**Đề bài:** Tính diện tích giữa y=3x và y=x² trên [0,4]; cần chia ở đâu?
+**Đề bài:** Tính diện tích giữa \(y=3x\) và \(y=x^2\) trên \([0;4]\); cần chia ở đâu?
 
-**Lời giải:** Hai đường giao khi x²=3x, tức x=0 và x=3. Trên (0,3) 3x>x², trên (3,4) x²>3x. S=∫₀³(3x−x²)dx+∫₃⁴(x²−3x)dx=9/2+11/6=19/3. Không lấy trị tuyệt đối của một tích phân duy nhất.
+**Lời giải:** Hai đường giao khi \(x^2=3x\), tức \(x=0\) hoặc \(x=3\). Trên \((0;3)\), \(3x>x^2\); trên \((3;4)\), \(x^2>3x\). Do đó \(S=\int_0^3(3x-x^2)\,\mathrm dx+\int_3^4(x^2-3x)\,\mathrm dx=\frac92+\frac{11}6=\frac{19}3\). Không lấy trị tuyệt đối của một tích phân duy nhất.
 
-**Vận dụng** Tính diện tích giữa \(y=2x\) và \(y=x^2\) trên đoạn \([0,3]\). Vì sao phải chia miền tại một giao điểm ở trong đoạn?
+**Vận dụng** Tính diện tích giữa \(y=2x\) và \(y=x^2\) trên đoạn \([0;3]\). Vì sao phải chia miền tại một giao điểm ở trong đoạn?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Giải \(2x=x^2\) được \(x=0\) và \(x=2\). Trên \([0,2]\), \(2x\ge x^2\); trên \([2,3]\), \(x^2\ge2x\). Vì thế \(S=\int_0^2(2x-x^2)dx+\int_2^3(x^2-2x)dx=4/3+4/3=8/3\). Nếu em lấy ngay \(\left|\int_0^3(2x-x^2)dx\right|\), hai phần trái dấu sẽ bị triệt và không cho diện tích thực.
+Giải \(2x=x^2\) được \(x=0\) và \(x=2\). Trên \([0,2]\), \(2x\ge x^2\); trên \([2,3]\), \(x^2\ge2x\). Vì thế \(S=\int_0^2(2x-x^2)\,\mathrm dx+\int_2^3(x^2-2x)\,\mathrm dx=\frac43+\frac43=\frac83\). Nếu em lấy ngay \(\left|\int_0^3(2x-x^2)dx\right|\), hai phần trái dấu sẽ bị triệt và không cho diện tích thực.
 
 
 **Kiểm lỗi**
@@ -620,23 +627,21 @@ Nếu em dùng một hiệu có dấu xuyên qua giao điểm đổi thứ tự 
 
 <!-- LESSON_ID: TOP11-M19; OUTCOME_ID: TOP11-O19 -->
 
-> **PHƯƠNG PHÁP — Mô hình diện tích từ giao điểm.** Mô hình diện tích cần đúng giao điểm, cận và đơn vị. Vì sao phải tìm đường biên và giao điểm trước khi bấm nguyên hàm? Ta bắt đầu từ hình phẳng bị chặn, giải f=g và kiểm miền các nhánh. Lập mô hình: xác định ranh giới và trục, chọn biến theo chiều lát cắt, giải giao điểm thực nằm trong miền, kiểm thứ tự trên/dưới, tính tích phân diện tích, ghi đơn vị². Có khi hai đường không tạo miền kín nếu thiếu cận hoặc không có điểm giao thứ hai; không tự tạo cận 0,1 từ hình tưởng tượng.
+> **PHƯƠNG PHÁP — Mô hình diện tích từ giao điểm.** Trước khi tính nguyên hàm, hãy xác định miền hình phẳng: các đường biên, giao điểm thực thuộc miền đang xét và biến tích phân. Với các lát cắt đứng, giải phương trình \(f(x)=g(x)\) để tìm giao điểm; kiểm tra thứ tự trên/dưới trên từng khoảng rồi lập tích phân. Hai đường không nhất thiết tạo thành một miền kín; không tự đặt cận nếu đề bài hoặc giao điểm chưa xác định chúng.
 
-Chẳng hạn, cho y=2x và y=x²: giao x=0 và2, trên (0,2) 2x≥x² nên S=∫₀²(2x−x²)dx=4/3 đơn vị². Chọn cận 0..2 từ phương trình chứ không từ dáng đồ thị.
+Chẳng hạn, \(y=2x\) và \(y=x^2\) giao tại \(x=0\) và \(x=2\). Trên \((0;2)\), \(2x>x^2\), nên \(S=\int_0^2(2x-x^2)\,\mathrm dx=\frac43\) đơn vị diện tích. Hai cận được xác định từ phương trình giao điểm.
 
 **Ví dụ**
 
-**Đề bài:** Tìm diện tích hình phẳng giới hạn bởi y=2−x² và y=x giữa hai giao điểm.
+**Đề bài:** Tìm diện tích hình phẳng giới hạn bởi \(y=2-x^2\) và \(y=x\) giữa hai giao điểm.
 
-**Lời giải:** Giải 2−x²=x ⇒ x²+x−2=0 ⇒ x=−2 và x=1. Trên (−2,1) hiệu 2−x²−x>0 (thử x=0). S=∫₋₂¹(2−x²−x)dx=[2x−x³/3−x²/2]₋₂¹=9/2 đơn vị diện tích. Các cận do giao điểm quyết định.
+**Lời giải:** Giải \(2-x^2=x\), tương đương \(x^2+x-2=0\), được \(x=-2\) hoặc \(x=1\). Trên \((-2;1)\), hiệu \(2-x^2-x=(1-x)(x+2)>0\). Vậy \(S=\int_{-2}^1(2-x^2-x)\,\mathrm dx=\left[2x-\frac{x^3}3-\frac{x^2}2\right]_{-2}^1=\frac92\) đơn vị diện tích.
 
-**Vận dụng** Cho y=x+1 và y=1 trên [0,2], S?
+**Vận dụng** Hai đồ thị \(y=4-x^2\) và \(y=0\) tạo thành một hình phẳng bị chặn. Tự tìm hai giao điểm, xác định đường nằm trên giữa chúng rồi tính diện tích.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-∫₀² x dx=2 đơn vị².
-
-Nếu thiếu cận trong đề không tự nói đó là hình kín; tìm giao điểm/ranh giới trước.
+Giải \(4-x^2=0\), được \(x=-2\) hoặc \(x=2\). Trên \((-2;2)\), \(4-x^2>0\), nên parabol nằm trên trục hoành. Vậy \(S=\int_{-2}^{2}(4-x^2)\,dx=\left[4x-\dfrac{x^3}{3}\right]_{-2}^{2}=\dfrac{32}{3}\) đơn vị diện tích. Hai cận phải đến từ giao điểm; không lấy lại cận của ví dụ đã học.
 
 
 **Kiểm lỗi**
@@ -655,20 +660,22 @@ Mỗi lát cắt mỏng của một khối có diện tích riêng; cộng chún
 
 <!-- LESSON_ID: TOP11-M20; OUTCOME_ID: TOP11-O20 -->
 
-Nếu mỗi lát mỏng đã biết diện tích, tổng lát cho thể tích như thế nào? Cần nhớ tiết diện A(x)≥0 có đơn vị diện tích, độ dày dx. Với khối được xác định trên [a,b], diện tích thiết diện vuông góc Ox tại x là A(x), V=∫_a^bA(x)dx (khi hàm diện tích thiết diện A liên tục trên [a,b]). Chọn công thức A theo **hình dạng tiết diện thật**: vuông thì s², tròn thì πr², hình khác có công thức khác. Không thêm π nếu không phải mặt cắt tròn.
+Nếu mặt cắt vuông góc với \(Ox\) tại \(x\) có diện tích \(A(x)\ge0\) và \(A\) liên tục trên \([a;b]\), thể tích khối là \(V=\int_a^b A(x)\,\mathrm dx\). Một lát mỏng có thể tích gần bằng diện tích mặt cắt nhân độ dày. Vì vậy cần chọn đúng diện tích mặt cắt: hình vuông cạnh \(s\) có diện tích \(s^2\), hình tròn bán kính \(r\) có diện tích \(\pi r^2\). Không thêm \(\pi\) nếu mặt cắt không phải hình tròn.
 
-Chẳng hạn, Tiết diện vuông cạnh 2x trên [0,1] (đơn vị cm): A=4x² cm², V=∫₀¹4x²dx=4/3 cm³. Chọn vuông nên không có π.
+Chẳng hạn, thiết diện vuông cạnh \(2x\) trên \([0;1]\) (độ dài tính bằng cm) có diện tích \(A(x)=4x^2\) cm² và thể tích \(V=\int_0^1 4x^2\,\mathrm dx=\frac43\) cm³. Không nhân thêm \(\pi\) vì mặt cắt là hình vuông.
 
-> **CÔNG THỨC — Thể tích từ thiết diện vuông.** Hình minh họa **hai lát cắt có cùng độ dài tham chiếu bằng 1**, không phải các thiết diện cạnh \(2x\) của ví dụ tính \(4/3\) vừa giải. Nếu cạnh hình vuông \(s=1\), diện tích là \(s^2=1\); nếu bán kính hình tròn \(r=1\), diện tích là \(\pi r^2=\pi\). Bởi vậy phải xác định hình dạng mặt cắt **trước** khi lập \(V=\int A(x)\,dx\): khác hình, khác diện tích dù dùng cùng một số đo chiều dài.
+> **CÔNG THỨC — Thể tích từ thiết diện vuông.** Hình minh họa **hai lát cắt có cùng độ dài tham chiếu bằng 1**, không phải các thiết diện cạnh \(2x\) của ví dụ tính \(\frac43\) vừa giải. Nếu cạnh hình vuông \(s=1\), diện tích là \(s^2=1\); nếu bán kính hình tròn \(r=1\), diện tích là \(\pi r^2=\pi\). Bởi vậy phải xác định hình dạng mặt cắt **trước** khi lập \(V=\int A(x)\,dx\): khác hình, khác diện tích dù dùng cùng một số đo chiều dài.
 
 ![Phân biệt thiết diện vuông và tròn](../../../assets/visuals/THPT_TOPIC11_CROSS_SECTION_SQUARE_CIRCLE_R01.svg)
 
-*Đọc hình:* Lát vuông có cạnh1 nên diện tích1; lát tròn có bán kính1 nên diện tích \(\pi\). Đây là so sánh **đơn vị diện tích lát**, không phải hai khối có thể tích bằng nhau.
+*Đọc hình:* Lát vuông có cạnh 1 nên diện tích 1; lát tròn có bán kính 1 nên diện tích \(\pi\). Đây là so sánh diện tích của hai mặt cắt, không phải thể tích của hai khối.
 
 Từ công thức thiết diện, ta còn có thể **tự suy ra thể tích khối chóp cụt**, không phải học thuộc một công thức không có nguồn gốc. Xét khối chóp cụt có hai đáy đồng dạng diện tích \(S_0\) và \(S_1\), chiều cao \(h>0\). Đặt \(x\) là khoảng cách từ đáy thứ nhất (\(0\le x\le h\)). Vì các thiết diện song song với đáy đồng dạng, kích thước dài thay đổi tuyến tính, nên căn bậc hai diện tích thiết diện biến thiên tuyến tính:
+
 \[
 \sqrt{A(x)}=\sqrt{S_0}+\frac{x}{h}(\sqrt{S_1}-\sqrt{S_0}).
 \]
+
 Bình phương rồi lấy tích phân từ \(0\) đến \(h\) cho thể tích.
 
 > **CÔNG THỨC — Thể tích khối chóp cụt.** Với hai đáy đồng dạng diện tích \(S_0,S_1\ge0\) và chiều cao \(h>0\), thể tích là \(\displaystyle V=\frac h3(S_0+\sqrt{S_0S_1}+S_1)\). Khi một đáy thu về đỉnh (\(S_1=0\)), nhận được công thức khối chóp \(V=\frac h3S_0\). Cần đúng giả thiết các tiết diện đồng dạng và kích thước biến thiên tuyến tính theo chiều cao.
@@ -677,15 +684,15 @@ Bình phương rồi lấy tích phân từ \(0\) đến \(h\) cho thể tích.
 
 **Ví dụ**
 
-**Đề bài:** Một khối có tiết diện vuông cạnh s(x)=2x+1 cm, x∈[0,1] cm. Tính thể tích.
+**Đề bài:** Một khối có tiết diện vuông cạnh \(s(x)=2x+1\) cm, với \(x\in[0;1]\) (cm). Tính thể tích.
 
-**Lời giải:** Diện tích mặt cắt A(x)=(2x+1)²=4x²+4x+1 cm². V=∫₀¹A(x)dx=4/3+2+1=13/3 cm³. Không nhân π vì tiết diện là hình vuông.
+**Lời giải:** Diện tích mặt cắt là \(A(x)=(2x+1)^2=4x^2+4x+1\) cm². Do đó \(V=\int_0^1(4x^2+4x+1)\,\mathrm dx=\frac43+2+1=\frac{13}3\) cm³. Không nhân \(\pi\) vì tiết diện là hình vuông.
 
-**Vận dụng** Tiết diện vuông cạnh 3 không đổi, đoạn dài2: thể tích?
+**Vận dụng** Một khối có thiết diện vuông cạnh 3 không đổi trên đoạn dài 2 (cùng đơn vị độ dài). Tính thể tích.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-9·2=18 đơn vị³.
+\(V=3^2\cdot2=18\) đơn vị thể tích.
 
 Nếu dùng 3 thay cho9, bạn lấy cạnh làm diện tích.
 
@@ -700,23 +707,23 @@ Nếu em lấy chiều dài cạnh hình vuông làm diện tích, hoặc nhân 
 
 <!-- LESSON_ID: TOP11-M21; OUTCOME_ID: TOP11-O21 -->
 
-> **CÔNG THỨC — Thể tích từ tiết diện tròn.** Thiết diện tròn dùng diện tích đĩa πr². Nếu lát cắt tròn, công thức phải sửa như thế nào so với tiết diện vuông? Để xác định điều đó, cần xét diện tích đĩa tròn πr², r≥0 theo x. Đối với khối có mặt cắt vuông góc Ox hình tròn bán kính r(x)≥0 trên [a,b], A(x)=πr(x)², V=π∫r²dx. Đây là phương pháp mặt cắt; **không nhất thiết** là miền quay nếu bài toán chỉ nói thiết diện. Chuyển đơn vị: r cm ⇒ A cm², dx cm ⇒ V cm³.
+> **CÔNG THỨC — Thể tích từ tiết diện tròn.** Nếu khối có mặt cắt vuông góc với \(Ox\) là hình tròn bán kính \(r(x)\ge0\) trên \([a;b]\), diện tích mặt cắt là \(A(x)=\pi r(x)^2\). Khi \(A\) liên tục, thể tích là \(V=\pi\int_a^b r(x)^2\,\mathrm dx\). Đây là phương pháp mặt cắt, không bắt buộc khối được tạo bởi phép quay. Nếu bán kính và độ dày tính bằng cm, diện tích tính bằng cm² và thể tích tính bằng cm³.
 
-Chẳng hạn, r(x)=2x trên [0,1], V=π∫₀¹4x²dx=4π/3 đơn vị³. Chọn π vì lát tròn và bình phương r, không nhầm bán kính với diện tích.
+Chẳng hạn, với \(r(x)=2x\) trên \([0;1]\), thể tích là \(V=\pi\int_0^1 4x^2\,\mathrm dx=\frac{4\pi}3\) đơn vị thể tích. Phải bình phương bán kính trước khi lấy tích phân.
 
 **Ví dụ**
 
-**Đề bài:** Khối có thiết diện tròn bán kính r(x)=√(x+1) cm với x∈[0,3] cm. Tính V.
+**Đề bài:** Khối có thiết diện tròn bán kính \(r(x)=\sqrt{x+1}\) cm với \(x\in[0;3]\) (cm). Tính thể tích \(V\).
 
-**Lời giải:** Vì r≥0, A(x)=πr²=π(x+1) cm². V=π∫₀³(x+1)dx=π(9/2+3)=15π/2 cm³. Đơn vị cm³; không lấy diện tích hình vuông.
+**Lời giải:** Bán kính không âm trên đoạn; diện tích mặt cắt là \(A(x)=\pi r(x)^2=\pi(x+1)\) cm². Vậy \(V=\pi\int_0^3(x+1)\,\mathrm dx=\pi\left(\frac92+3\right)=\frac{15\pi}2\) cm³.
 
-**Vận dụng** r(x)=1+x trên [0,1], V?
+**Vận dụng** Một khối có thiết diện tròn bán kính \(r(x)=1+x\) trên \([0;1]\). Tính thể tích.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-π∫₀¹(1+x)²dx=7π/3.
+\(V=\pi\int_0^1(1+x)^2\,\mathrm dx=\frac{7\pi}3\).
 
-Nếu ra 2π, bạn đã tích phân r thay r².
+Nếu ra \(\frac{3\pi}2\), em đã tính \(\pi\int_0^1(1+x)\,dx\), tức tích phân bán kính thay vì diện tích tiết diện. Phải bình phương bán kính trước: \(\pi(1+x)^2\).
 
 
 **Kiểm lỗi**
@@ -729,29 +736,27 @@ Nếu em quên bình phương bán kính hoặc nhầm đường kính với bá
 
 <!-- LESSON_ID: TOP11-M22; OUTCOME_ID: TOP11-O22 -->
 
-> **CÔNG THỨC — Đĩa và vành khăn khối xoay.** Khối xoay cho tiết diện đĩa hoặc vành khăn tùy vùng. Vì sao thể tích quay một vùng giữa hai đồ thị có thể phải trừ hai đĩa? Ta đã biết bán kính là khoảng cách từ đồ thị đến Ox, miền f≥g≥0. Nếu \(f\) **liên tục, không âm** trên \([a,b]\) và quay vùng 0≤y≤f(x) quanh Ox, lát cắt đĩa bán kính f, thể tích V=π∫f²dx. Điều kiện liên tục và không âm giúp áp dụng đúng công thức đĩa; với vùng khác cần phân tích lại thiết diện. Nếu quay miền g≤y≤f với 0≤g≤f quanh Ox, lát cắt là vành khăn với bán kính ngoài R=f, bán kính trong r=g, V=π∫(R²−r²)dx. Nếu đường cắt Ox/hai vùng chồng khi quay, công thức đơn giản có thể không áp; cần phân tích hình cắt cẩn thận.
+> **CÔNG THỨC — Đĩa và vành khăn khối xoay.** Nếu \(f\) liên tục, không âm trên \([a;b]\), khi quay miền \(0\le y\le f(x)\) quanh \(Ox\), mặt cắt là đĩa bán kính \(f(x)\). Thể tích là \(V=\pi\int_a^b f(x)^2\,\mathrm dx\). Nếu quay miền \(g(x)\le y\le f(x)\) với \(f,g\) liên tục và \(0\le g(x)\le f(x)\), mặt cắt là vành khăn bán kính ngoài \(R(x)=f(x)\), bán kính trong \(r(x)=g(x)\). Khi đó \(V=\pi\int_a^b\left(R(x)^2-r(x)^2\right)\mathrm dx\). Nếu miền cắt hoặc nằm khác phía trục quay, cần xác định lại bán kính và hình dạng mặt cắt, không áp dụng máy móc công thức này.
 
-Chẳng hạn, Quay vùng 0≤y≤x, x∈[0,1] quanh Ox, V=π∫₀¹x²dx=π/3. Nếu quay vùng x≤y≤2, x∈[0,2], ngoài R=2 trong r=x: V=π∫₀²(4−x²)dx=16π/3. Chọn hiệu bình phương bán kính chứ không bình phương chiều dày.
+Chẳng hạn, quay miền \(0\le y\le x\), \(x\in[0;1]\) quanh \(Ox\), ta được \(V=\pi\int_0^1 x^2\,\mathrm dx=\frac{\pi}3\). Nếu quay miền \(x\le y\le2\), \(x\in[0;2]\), bán kính ngoài là 2, bán kính trong là \(x\); khi đó \(V=\pi\int_0^2(4-x^2)\,\mathrm dx=\frac{16\pi}3\). Phải lấy hiệu hai bình phương, không bình phương hiệu hai bán kính.
 
-Ngay trên hình, lấy miền \(0\le x\le2\), \(x\le y\le2\) quay quanh \(Ox\). Tại lát \(x=1\), vành khăn có bán kính ngoài 2, trong 1 nên diện tích \(\pi(2^2-1^2)=3\pi\). Khi cộng các lát, \(V=\pi\int_0^2(4-x^2)\,dx=16\pi/3\). Việc **trừ hai bình phương** xuất phát từ diện tích đĩa lớn trừ đĩa nhỏ, không từ bình phương bề dày.
+Ngay trên hình, lấy miền \(0\le x\le2\), \(x\le y\le2\) quay quanh \(Ox\). Tại lát \(x=1\), vành khăn có bán kính ngoài 2, trong 1 nên diện tích \(\pi(2^2-1^2)=3\pi\). Khi cộng các lát, \(V=\pi\int_0^2(4-x^2)\,\mathrm dx=\frac{16\pi}3\). Việc **trừ hai bình phương** xuất phát từ diện tích đĩa lớn trừ đĩa nhỏ, không từ bình phương bề dày.
 
 ![Tiết diện vành khăn khi quay quanh trục Ox](../../../assets/visuals/THPT_TOPIC11_WASHER_REVOLUTION_R01.svg)
 
-*Đọc hình:* Ở mỗi \(x\), bán kính ngoài luôn 2 và bán kính trong bằng \(x\). Lát \(x=1\) có diện tích \(3\pi\), còn tổng cả khối \(16\pi/3\); không thay \(R^2-r^2\) bằng \((R-r)^2\).
+*Đọc hình:* Ở mỗi \(x\), bán kính ngoài luôn 2 và bán kính trong bằng \(x\). Lát \(x=1\) có diện tích \(3\pi\), còn tổng cả khối \(\frac{16\pi}3\); không thay \(R^2-r^2\) bằng \((R-r)^2\).
 
 **Ví dụ**
 
-**Đề bài:** Miền 0≤x≤1, x≤y≤x+2 quay quanh Ox. Tính thể tích khối xoay.
+**Đề bài:** Miền \(0\le x\le1\), \(x\le y\le x+2\) quay quanh \(Ox\). Tính thể tích khối xoay.
 
-**Lời giải:** Bán kính ngoài R=x+2, trong r=x≥0; lát cắt là vành khăn. A=π(R²−r²)=π[(x+2)²−x²]=π(4x+4). V=π∫₀¹(4x+4)dx=π(2+4)=6π đơn vị³. Không tính π(R−r)² và không nhầm với đĩa đặc.
+**Lời giải:** Bán kính ngoài \(R=x+2\), bán kính trong \(r=x\ge0\). Lát cắt là vành khăn có diện tích \(A(x)=\pi(R^2-r^2)=\pi\left((x+2)^2-x^2\right)=\pi(4x+4)\). Do đó \(V=\pi\int_0^1(4x+4)\,\mathrm dx=6\pi\) đơn vị thể tích. Không tính \(\pi(R-r)^2\) và không nhầm với đĩa đặc.
 
-**Vận dụng** Quay miền 0≤y≤2, x∈[0,3] quanh Ox, V?
+**Vận dụng** Quay miền \(0\le x\le2,\ 1\le y\le3\) quanh trục \(Ox\). Tính thể tích và giải thích vì sao không dùng đĩa đặc.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Đĩa r=2 không đổi, V=π·4·3=12π.
-
-Nếu vùng không chạm Ox, không dùng đĩa đầy; kiểm lỗ r>0.
+Miền không chạm trục \(Ox\), nên mỗi thiết diện là vành khăn có bán kính ngoài \(R=3\), trong \(r=1\). Diện tích là \(\pi(3^2-1^2)=8\pi\). Thể tích \(V=\int_0^2 8\pi\,dx=16\pi\) đơn vị thể tích. Nếu ra \(18\pi\), em đã tính cả phần lỗ; nếu ra \(8\pi\), em đã dùng \(\pi(R-r)^2\) thay hiệu hai diện tích.
 
 
 **Kiểm lỗi**
@@ -764,9 +769,9 @@ Nếu em dùng công thức đĩa đặc cho một miền quay có lỗ hoặc l
 
 > **Kiến thức cần ghi nhớ**
 >
-> - **Nguyên hàm** \(F'=f\) trên một khoảng có họ \(F+C\); điều kiện đầu mới xác định \(C\). Với \(x^n\), công thức chia cho \(n+1\) chỉ khi \(n\ne-1\); \(1/x\) dùng \(\ln|x|\) trên từng nhánh.
+> - **Nguyên hàm** \(F'=f\) trên một khoảng có họ \(F+C\); điều kiện đầu mới xác định \(C\). Với \(x^n\), công thức chia cho \(n+1\) chỉ khi \(n\ne-1\); \(\frac1x\) dùng \(\ln|x|\) trên từng nhánh.
 > - **Newton–Leibniz:** với \(f\) liên tục và \(F'=f\) trên đoạn, \(\int_a^b f=F(b)-F(a)\), không viết \(+C\). Đảo cận làm đổi dấu, ghép cận phải theo đúng vị trí.
-> - **Phân biệt tích phân và diện tích:** tích phân có dấu có thể âm/triệt tiêu; diện tích dùng \(\int|f|\), quãng đường dùng \(\int|v|\), còn độ dời dùng \(\int v\). Kiểm chỗ đổi dấu.
+> - **Phân biệt tích phân và diện tích:** tích phân có dấu có thể âm/triệt tiêu; diện tích dùng \(\int_a^b|f(x)|\,\mathrm dx\), quãng đường dùng \(\int_a^b|v(t)|\,\mathrm dt\), còn độ dời dùng \(\int_a^b v(t)\,\mathrm dt\). Kiểm chỗ đổi dấu.
 > - **Thể tích theo thiết diện:** \(V=\int_a^b A(x)\,dx\); đĩa tròn \(A=\pi r^2\), vành khăn \(A=\pi(R^2-r^2)\) khi bán kính ngoài/trong và miền quay đã xác định đúng.
 
 <!-- TOPIC11_APPROVED_SOURCE_END -->
