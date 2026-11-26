@@ -636,176 +636,176 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Đáp án:** 1; 4; 9; 16; 25.
 
-**Lời giải:** Số hạng thứ n là n², n=1,2,3,4,5. Dãy có đúng năm số hạng.
+**Lời giải:** Số hạng thứ n là \(n^2\), \(n=1,2,3,4,5\). Dãy có đúng năm số hạng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P01; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O01; NOT_A_NEW_BANK -->
 
-**Bài 2.** Cho dãy hữu hạn a_n=(−1)^n(2n+1), n∈{0,1,2,3}. Liệt kê các số hạng; có a_4 trong dãy không?
+**Bài 2.** Cho dãy hữu hạn \(a_n=(-1)^n(2n+1)\), \(n\in\{0;1;2;3\}\). Liệt kê các số hạng; có \(a_4\) trong dãy không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** a_0=1,a_1=−3,a_2=5,a_3=−7; không có a_4.
+**Đáp án:** \(a_0=1,\ a_1=-3,\ a_2=5,\ a_3=-7\); không có \(a_4\).
 
-**Lời giải có suy luận:** Thế lần lượt n=0,1,2,3 cho 1,−3,5,−7. Miền chỉ số của dãy có 0 nhưng không có 4; tính biểu thức tại n=4 được 9 không khiến 9 trở thành số hạng thuộc dãy đã cho.
+**Lời giải có suy luận:** Thế lần lượt \(n=0,1,2,3\) cho 1, −3, 5, −7. Miền chỉ số của dãy có 0 nhưng không có 4; tính biểu thức tại \(n=4\) được 9 không khiến 9 trở thành số hạng thuộc dãy đã cho.
 
-**Nếu làm sai:** Viết miền chỉ số trước khi thay số; không mặc định mọi dãy bắt đầu n=1.
+**Nếu làm sai:** Viết miền chỉ số trước khi thay số; không mặc định mọi dãy bắt đầu \(n=1\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P06; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O02; NOT_A_NEW_BANK -->
 
-**Bài 3.** Một khán phòng có hàng ghế thứ n gồm 10+2(n−1) ghế; có 12 hàng. Hỏi hàng cuối có bao nhiêu ghế?
+**Bài 3.** Một khán phòng có hàng ghế thứ n gồm \(10+2(n-1)\) ghế; có 12 hàng. Hỏi hàng cuối có bao nhiêu ghế?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 32 ghế.
 
-**Lời giải:** Thế n=12: 10+2·11=32; không tính tổng khi chỉ hỏi một hàng.
+**Lời giải:** Thế \(n=12\): \(10+2\cdot11=32\); không tính tổng khi chỉ hỏi một hàng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P01; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O02; NOT_A_NEW_BANK -->
 
-**Bài 4.** Dãy u_n=5n+2 (n≥1). Có số hạng nào bằng 87 không? Nếu có là số hạng thứ mấy?
+**Bài 4.** Dãy \(u_n=5n+2\) (\(n\ge1\)). Có số hạng nào bằng 87 không? Nếu có là số hạng thứ mấy?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Có, n=17.
+**Đáp án:** Có, \(n=17\).
 
-**Lời giải:** 5n+2=87 ⇒ n=17 là số nguyên dương.
+**Lời giải:** \(5n+2=87\Rightarrow n=17\) là số nguyên dương.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-C02; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O02; NOT_A_NEW_BANK -->
 
-**Bài 5.** Cho u_n=4n−3 (n≥1). Tìm u_1 và u_6.
+**Bài 5.** Cho \(u_n=4n-3\) (\(n\ge1\)). Tìm \(u_1\) và \(u_6\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** u_1=1; u_6=21.
+**Đáp án:** \(u_1=1;\ u_6=21\).
 
-**Lời giải:** Thế n=1 và n=6, tương ứng 4·1−3=1, 4·6−3=21.
+**Lời giải:** Thế \(n=1\) và \(n=6\), tương ứng \(4\cdot1-3=1,\ 4\cdot6-3=21\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P02; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O02; NOT_A_NEW_BANK -->
 
-**Bài 6.** Dãy vô hạn u_n=(n+1)/(2n+1), n≥1. Tính u_4 và xét 1/2 có phải một số hạng hay không.
+**Bài 6.** Dãy vô hạn \(u_n=\frac{n+1}{2n+1}\), \(n\ge1\). Tính \(u_4\) và xét \(\frac12\) có phải một số hạng hay không.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** u_4=5/9; 1/2 không là số hạng.
+**Đáp án:** \(u_4=\frac59\); \(\frac12\) không là số hạng.
 
-**Lời giải có suy luận:** Thế n=4 được 5/9. Nếu (n+1)/(2n+1)=1/2 thì 2n+2=2n+1, vô lý; không có chỉ số nguyên dương nào thỏa.
+**Lời giải có suy luận:** Thế \(n=4\) được \(\frac59\). Nếu \(\frac{n+1}{2n+1}=\frac12\) thì \(2n+2=2n+1\), vô lý; không có chỉ số nguyên dương nào thỏa.
 
-**Nếu làm sai:** Không suy từ giới hạn 1/2 thành 'phải có một số hạng đúng bằng 1/2'.
+**Nếu làm sai:** Không suy từ giới hạn \(\frac12\) thành 'phải có một số hạng đúng bằng \(\frac12\)'.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHII-W05-02-ANCHOR; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
 
-**Bài 7.** Dãy u_1=1 và u_{n+1}=2u_n+1. Tính 5 số hạng đầu và chứng minh công thức u_n=2^n−1.
+**Bài 7.** Dãy \(u_1=1\) và \(u_{n+1}=2u_n+1\). Tính 5 số hạng đầu và chứng minh công thức \(u_n=2^n-1\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải:** u_1=1,u_2=3,u_3=7,u_4=15,u_5=31. Quy nạp: n=1 đúng; nếu u_n=2^n−1 thì u_{n+1}=2(2^n−1)+1=2^(n+1)−1.
+**Lời giải:** \(u_1=1,\ u_2=3,\ u_3=7,\ u_4=15,\ u_5=31\). Quy nạp: \(n=1\) đúng; nếu \(u_n=2^n-1\) thì \(u_{n+1}=2(2^n-1)+1=2^{n+1}-1\).
 
 **Rubric /6:**
 - 5 số hạng đầu đúng (1 điểm).
 - giả thuyết công thức (1 điểm).
 - bước cơ sở (1 điểm).
 - giả thiết quy nạp (1 điểm).
-- bước chuyển n→n+1 (1 điểm).
-- kết luận n≥1 (1 điểm).
+- bước chuyển \(n\to n+1\) (1 điểm).
+- kết luận \(n\ge1\) (1 điểm).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P07; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
 
-**Bài 8.** Với u_1=4, u_{n+1}=3u_n−2, tính u_3.
+**Bài 8.** Với \(u_1=4,\ u_{n+1}=3u_n-2\), tính \(u_3\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** u_3=28.
+**Đáp án:** \(u_3=28\).
 
-**Lời giải:** u_2=3·4−2=10, u_3=3·10−2=28.
+**Lời giải:** \(u_2=3\cdot4-2=10,\ u_3=3\cdot10-2=28\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P02; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
 
-**Bài 9.** u_1=1,u_{n+1}=2u_n+1. Tìm u_4.
+**Bài 9.** \(u_1=1,\ u_{n+1}=2u_n+1\). Tìm \(u_4\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** u_4=15.
+**Đáp án:** \(u_4=15\).
 
-**Lời giải:** u_2=3,u_3=7,u_4=15; không nhầm 2u_n+1 với 2(u_n+1).
+**Lời giải:** \(u_2=3,\ u_3=7,\ u_4=15\); không nhầm \(2u_n+1\) với \(2(u_n+1)\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-C03; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
 
-**Bài 10.** u_1=2, u_{n+1}=u_n+5. Viết 4 số hạng đầu.
+**Bài 10.** \(u_1=2,\ u_{n+1}=u_n+5\). Viết 4 số hạng đầu.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 2; 7; 12; 17.
 
-**Lời giải:** Bắt đầu tại u_1=2, mỗi lần tăng 5.
+**Lời giải:** Bắt đầu tại \(u_1=2\), mỗi lần tăng 5.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P03; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
 
-**Bài 11.** Dãy u_1=4, u_{n+1}=2u_n−1. Tìm u_2,u_3,u_4 và chứng minh công thức u_n=3·2^{n−1}+1.
+**Bài 11.** Dãy \(u_1=4,\ u_{n+1}=2u_n-1\). Tìm \(u_2,u_3,u_4\) và chứng minh công thức \(u_n=3\cdot2^{n-1}+1\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** u_2=7,u_3=13,u_4=25; u_n=3·2^{n−1}+1.
+**Đáp án:** \(u_2=7,\ u_3=13,\ u_4=25;\ u_n=3\cdot2^{n-1}+1\).
 
-**Lời giải có suy luận:** Đặt v_n=u_n−1, khi đó v_{n+1}=2v_n và v_1=3, suy ra v_n=3·2^{n−1}. Hoặc quy nạp: công thức đúng n=1, thay vào truy hồi cho n+1 đúng.
+**Lời giải có suy luận:** Đặt \(v_n=u_n-1\), khi đó \(v_{n+1}=2v_n\) và \(v_1=3\), suy ra \(v_n=3\cdot2^{n-1}\). Hoặc quy nạp: công thức đúng \(n=1\), thay vào truy hồi cho \(n+1\) đúng.
 
-**Nếu làm sai:** Nếu nhầm u_{n+1}=2(u_n−1), khai triển và đối chiếu u_2.
+**Nếu làm sai:** Nếu nhầm \(u_{n+1}=2(u_n-1)\), khai triển và đối chiếu \(u_2\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W01; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
 
-**Bài 12.** Dãy u_1=2, u_{n+1}=3u_n−2 (n≥1). (a) Tính u_2,u_3. (b) Đặt v_n=u_n−1 và tìm số hạng tổng quát u_n, chứng minh bằng quy nạp. (c) Chứng minh dãy tăng và tính u_4.
+**Bài 12.** Dãy \(u_1=2,\ u_{n+1}=3u_n-2\) (\(n\ge1\)). (a) Tính \(u_2,u_3\). (b) Đặt \(v_n=u_n-1\) và tìm số hạng tổng quát \(u_n\), chứng minh bằng quy nạp. (c) Chứng minh dãy tăng và tính \(u_4\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** u_2=4,u_3=10,u_n=3^{n−1}+1, u_4=28; tăng nghiêm ngặt.
+**Đáp án:** \(u_2=4,\ u_3=10,\ u_n=3^{n-1}+1,\ u_4=28\); tăng nghiêm ngặt.
 
-**Lời giải đầy đủ:** Từ truy hồi u_2=3·2−2=4, u_3=3·4−2=10. v_n=u_n−1 ⇒ v_{n+1}=u_{n+1}−1=3u_n−3=3(u_n−1)=3v_n, v_1=1 ⇒ v_n=3^{n−1}. Công thức u_n=3^{n−1}+1 đúng n=1; nếu đúng ở n, 3u_n−2=3·3^{n−1}+1=3^n+1 nên đúng ở n+1. Hiệu u_{n+1}−u_n=2·3^{n−1}>0. u_4=3³+1=28.
+**Lời giải đầy đủ:** Từ truy hồi \(u_2=3\cdot2-2=4,\ u_3=3\cdot4-2=10\). Đặt \(v_n=u_n-1\Rightarrow v_{n+1}=u_{n+1}-1=3u_n-3=3(u_n-1)=3v_n\), \(v_1=1\Rightarrow v_n=3^{n-1}\). Công thức \(u_n=3^{n-1}+1\) đúng tại \(n=1\); nếu đúng ở n, \(3u_n-2=3\cdot3^{n-1}+1=3^n+1\) nên đúng ở \(n+1\). Hiệu \(u_{n+1}-u_n=2\cdot3^{n-1}>0\). Ta có \(u_4=3^3+1=28\).
 
 **Rubric tự đối chiếu /7 điểm:**
-1. Tính u_2 (1đ)
-2. Tính u_3 (1đ)
-3. Đặt v_n và biến đổi truy hồi (1đ)
-4. Viết công thức u_n (1đ)
+1. Tính \(u_2\) (1đ)
+2. Tính \(u_3\) (1đ)
+3. Đặt \(v_n\) và biến đổi truy hồi (1đ)
+4. Viết công thức \(u_n\) (1đ)
 5. Chứng minh quy nạp đầy đủ (1đ)
-6. Chứng minh tăng mọi n≥1 (1đ)
-7. Tính u_4 và kiểm lại (1đ)
+6. Chứng minh tăng với mọi \(n\ge1\) (1đ)
+7. Tính \(u_4\) và kiểm lại (1đ)
 
-**Nếu làm sai:** Nếu nhầm 3u_n−2 thành 3(u_n−2), hãy khai triển; kiểm lại u_2.
+**Nếu làm sai:** Nếu nhầm \(3u_n-2\) thành \(3(u_n-2)\), hãy khai triển; kiểm lại \(u_2\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHII-W05-01; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O04; NOT_A_NEW_BANK -->
 
-**Bài 13.** Cho u_n=(2n+1)/(n+2), n≥1. Tính u_1,u_2, chứng minh dãy tăng và bị chặn.
+**Bài 13.** Cho \(u_n=\frac{2n+1}{n+2}\), \(n\ge1\). Tính \(u_1,u_2\), chứng minh dãy tăng và bị chặn.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải:** u_1=1,u_2=5/4. u_n=2−3/(n+2), u_{n+1}−u_n=3/[(n+2)(n+3)]>0. Vì 0<3/(n+2)≤1 nên 1≤u_n<2.
+**Lời giải:** \(u_1=1,\ u_2=\frac54\). Ta có \(u_n=2-\frac3{n+2}\), \(u_{n+1}-u_n=\frac3{(n+2)(n+3)}>0\). Vì \(0<\frac3{n+2}\le1\) nên \(1\le u_n<2\).
 
 **Rubric /6:**
-- u_1,u_2 đúng (1 điểm).
-- biến đổi 2−3/(n+2) (1 điểm).
+- \(u_1,u_2\) đúng (1 điểm).
+- biến đổi \(2-\frac3{n+2}\) (1 điểm).
 - tính hiệu dương (1 điểm).
 - kết luận tăng (1 điểm).
 - chứng minh hai cận (1 điểm).
@@ -815,87 +815,87 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P03; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O04; NOT_A_NEW_BANK -->
 
-**Bài 14.** Chứng minh u_n=3/(n+2) giảm với mọi n≥1.
+**Bài 14.** Chứng minh \(u_n=\frac3{n+2}\) giảm với mọi \(n\ge1\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Giảm nghiêm ngặt.
 
-**Lời giải:** u_{n+1}−u_n=3/(n+3)−3/(n+2)=−3/[(n+2)(n+3)]<0.
+**Lời giải:** \(u_{n+1}-u_n=\frac3{n+3}-\frac3{n+2}=-\frac3{(n+2)(n+3)}<0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-C04; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O04; NOT_A_NEW_BANK -->
 
-**Bài 15.** Dãy u_n=5−2n (n≥1) tăng hay giảm?
+**Bài 15.** Dãy \(u_n=5-2n\) (\(n\ge1\)) tăng hay giảm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Giảm nghiêm ngặt.
 
-**Lời giải:** u_{n+1}−u_n=−2<0 với mọi n≥1.
+**Lời giải:** \(u_{n+1}-u_n=-2<0\) với mọi \(n\ge1\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P04; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O04; NOT_A_NEW_BANK -->
 
-**Bài 16.** Với u_n=3−2/n (n≥1), xét dãy tăng hay giảm bằng hiệu hai số hạng liên tiếp.
+**Bài 16.** Với \(u_n=3-\frac2n\) (\(n\ge1\)), xét dãy tăng hay giảm bằng hiệu hai số hạng liên tiếp.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Tăng nghiêm ngặt.
 
-**Lời giải có suy luận:** u_{n+1}−u_n=(3−2/(n+1))−(3−2/n)=2/[n(n+1)]>0 vì n≥1. Kết luận tăng với mọi chỉ số thuộc miền.
+**Lời giải có suy luận:** \(u_{n+1}-u_n=(3-\frac2{n+1})-(3-\frac2n)=\frac2{n(n+1)}>0\) vì \(n\ge1\). Kết luận tăng với mọi chỉ số thuộc miền.
 
-**Nếu làm sai:** Thử n=1,2 để đoán rồi phải chứng minh dấu tổng quát.
+**Nếu làm sai:** Thử \(n=1,2\) để đoán rồi phải chứng minh dấu tổng quát.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P08; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O05; NOT_A_NEW_BANK -->
 
-**Bài 17.** Chứng minh u_n=n/(n+1) (n≥1) bị chặn và tìm một khoảng chứa mọi u_n.
+**Bài 17.** Chứng minh \(u_n=\frac n{n+1}\) (\(n\ge1\)) bị chặn và tìm một khoảng chứa mọi \(u_n\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 1/2≤u_n<1.
+**Đáp án:** \(\frac12\le u_n<1\).
 
-**Lời giải:** u_n=1−1/(n+1); n≥1 ⇒ 0<1/(n+1)≤1/2; suy ra 1/2≤u_n<1.
+**Lời giải:** \(u_n=1-\frac1{n+1}\); \(n\ge1\Rightarrow0<\frac1{n+1}\le\frac12\); suy ra \(\frac12\le u_n<1\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P05; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O05; NOT_A_NEW_BANK -->
 
-**Bài 18.** Dãy u_n=(-1)^n (n≥1) có tăng, giảm hay bị chặn không?
+**Bài 18.** Dãy \(u_n=(-1)^n\) (\(n\ge1\)) có tăng, giảm hay bị chặn không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Không tăng hoặc giảm; bị chặn bởi -1 và 1.
 
-**Lời giải:** Các giá trị luân phiên −1,1,−1,1...; −1≤u_n≤1.
+**Lời giải:** Các giá trị luân phiên \(-1,1,-1,1,\ldots\); \(-1\le u_n\le1\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P04; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O05; NOT_A_NEW_BANK -->
 
-**Bài 19.** Xác định một cận trên và một cận dưới của u_n=2−1/n (n≥1).
+**Bài 19.** Xác định một cận trên và một cận dưới của \(u_n=2-\frac1n\) (\(n\ge1\)).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 1≤u_n<2; cận dưới 1, cận trên 2.
+**Đáp án:** \(1\le u_n<2\); cận dưới 1, cận trên 2.
 
-**Lời giải:** Vì 0<1/n≤1 nên 1≤2−1/n<2.
+**Lời giải:** Vì \(0<\frac1n\le1\) nên \(1\le2-\frac1n<2\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P05; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O05; NOT_A_NEW_BANK -->
 
-**Bài 20.** Cho u_n=(2n+1)/(n+2), n≥1. Chứng minh 1≤u_n<2 và cho biết số hạng nào nhận cận dưới 1.
+**Bài 20.** Cho \(u_n=\frac{2n+1}{n+2}\), \(n\ge1\). Chứng minh \(1\le u_n<2\) và cho biết số hạng nào nhận cận dưới 1.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 1≤u_n<2; u_1=1.
+**Đáp án:** \(1\le u_n<2;\ u_1=1\).
 
-**Lời giải có suy luận:** Biến đổi u_n=2−3/(n+2). Vì n≥1 nên 0<3/(n+2)≤1; do đó 1≤u_n<2; dấu bằng trái tại n=1.
+**Lời giải có suy luận:** Biến đổi \(u_n=2-\frac3{n+2}\). Vì \(n\ge1\) nên \(0<\frac3{n+2}\le1\); do đó \(1\le u_n<2\); dấu bằng trái tại \(n=1\).
 
 **Nếu làm sai:** Đừng đánh đồng cận trên 2 với một giá trị dãy thực sự đạt.
 
