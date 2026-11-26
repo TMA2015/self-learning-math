@@ -36,7 +36,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho f(x)=x²−4x+1. Xác định dấu f′ và khoảng tăng/giảm.",
     "answer_key": "f′(x)=2x−4; f′<0 khi x<2, f′=0 khi x=2, f′>0 khi x>2; nghịch biến (−∞;2), đồng biến (2;+∞).",
-    "worked_solution": "f′(x)=2x−4=2(x−2). Vì hệ số 2 dương, dấu của f′ là dấu của x−2: âm khi x<2, bằng 0 khi x=2, dương khi x>2. Theo dấu đạo hàm, f nghịch biến trên (−∞;2) và đồng biến trên (2;+∞).",
+    "worked_solution": "\\(f'(x)=2x-4=2(x-2)\\). Dấu của đạo hàm là dấu của \\(x-2\\): âm trên \\((-\\infty;2)\\), bằng 0 tại 2, dương trên \\((2;+\\infty)\\). Vì vậy hàm nghịch biến trên khoảng thứ nhất và đồng biến trên khoảng thứ hai.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-DERIVATIVE_SIGN"
@@ -132,7 +132,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Với f(x)=1/(x−2), nêu miền xác định và tất cả khoảng nghịch biến, giải thích tại sao phải tách.",
     "answer_key": "D=ℝ\\{2}; nghịch biến trên (−∞;2) và (2;+∞).",
-    "worked_solution": "D=ℝ\\{2}. Trên D, f′(x)=−1/(x−2)²<0. Hàm nghịch biến trên từng khoảng (−∞;2) và (2;+∞), không nối hai khoảng qua điểm x=2 không thuộc D. Chẳng hạn, 1<3 nhưng f(1)=−1<f(3)=1, nên không thể kết luận nghịch biến trên cả D.",
+    "worked_solution": "Tập xác định \\(D=\\mathbb R\\setminus\\{2\\}\\). Đạo hàm \\(f'(x)=-\\frac1{(x-2)^2}<0\\) trên từng khoảng xác định. Không ghép hai khoảng \\((-\\infty;2)\\), \\((2;+\\infty)\\) qua điểm 2: chẳng hạn \\(1<3\\) nhưng \\(f(1)=-1<1=f(3)\\), trái với điều kiện nghịch biến trên toàn D.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-DOMAIN_INTERVALS"
@@ -196,7 +196,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f(x)=x³−3x. Tìm hoành độ và giá trị của các cực trị.",
     "answer_key": "Cực đại tại x=−1, giá trị 2; cực tiểu tại x=1, giá trị −2.",
-    "worked_solution": "f′(x)=3x²−3=3(x+1)(x−1). Đạo hàm dương khi x<−1 hoặc x>1, âm khi −1<x<1. Tại x=−1, f′ đổi dấu từ + sang − nên f đạt cực đại, f(−1)=2. Tại x=1, f′ đổi dấu từ − sang + nên f đạt cực tiểu, f(1)=−2.",
+    "worked_solution": "\\(f'(x)=3x^2-3=3(x+1)(x-1)\\). Dấu đạo hàm lần lượt là +, −, + trên ba khoảng ngăn bởi -1 và 1. Hàm tăng rồi giảm tại -1 nên cực đại \\(f(-1)=2\\); giảm rồi tăng tại 1 nên cực tiểu \\(f(1)=-2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-EXTREMA_SIGN_CHANGE"
@@ -228,7 +228,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hàm f(x)=|x| có cực tiểu tại 0 không, mặc dù f′(0) không tồn tại?",
     "answer_key": "Có cực tiểu tại x=0, giá trị 0.",
-    "worked_solution": "Có. Với mọi x≠0, |x|>0=f(0), nên x=0 là điểm cực tiểu. Đạo hàm tại 0 không tồn tại vì đạo hàm một phía bên trái bằng −1, bên phải bằng 1. Điều kiện f′(x₀)=0 chỉ là điều kiện cần của cực trị tại điểm trong miền mà hàm có đạo hàm, không phải điều kiện bắt buộc cho mọi cực trị.",
+    "worked_solution": "Với mọi \\(x\\ne0\\), \\(f(x)=|x|>0=f(0)\\), nên 0 là điểm cực tiểu. Đạo hàm tại 0 không tồn tại vì hai đạo hàm một phía là -1 và 1. Điều kiện đạo hàm bằng 0 tại cực trị chỉ bắt buộc khi hàm có đạo hàm tại điểm trong miền, không áp dụng cho mọi cực trị.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
@@ -260,7 +260,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Vật có vị trí s(t)=t³−6t²+9t m, t≥0 s. Xác định các khoảng thời gian vật chuyển động theo chiều dương và âm.",
     "answer_key": "Chiều dương khi 0≤t<1 hoặc t>3; chiều âm khi 1<t<3; v=0 tại t=1,3.",
-    "worked_solution": "Vận tốc v(t)=s′(t)=3t²−12t+9=3(t−1)(t−3) (m/s). Trong miền t≥0, v>0 khi 0≤t<1 hoặc t>3, vật chuyển động theo chiều dương; v<0 khi 1<t<3, vật chuyển động theo chiều âm. Tại t=1 và t=3 vận tốc bằng 0, vật dừng tức thời. Tại thời điểm ban đầu t=0, v(0)=9 m/s theo chiều dương.",
+    "worked_solution": "Vận tốc \\(v(t)=s'(t)=3t^2-12t+9=3(t-1)(t-3)\\) m/s. Trên miền \\(t\\ge0\\), vận tốc dương khi \\(0\\le t<1\\) hoặc \\(t>3\\), âm khi \\(1<t<3\\). Vật chuyển động theo chiều dương hoặc âm tương ứng; tại \\(t=1,3\\) vận tốc bằng 0, vật dừng tức thời.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-MOTION_CONTEXT"
@@ -292,7 +292,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f(x)=x trên (0,1) có GTLN bằng 1 không? Giải thích.",
     "answer_key": "Không có GTLN trên (0;1); 1 không đạt được.",
-    "worked_solution": "Không. Với mọi x∈(0;1), chọn y=(x+1)/2 thì x<y<1, nên f(y)>f(x). Như vậy không có giá trị nào của hàm lớn nhất trên khoảng. Số 1 là cận trên mà các giá trị của hàm có thể tiến sát tới, nhưng không đạt được.",
+    "worked_solution": "Không. Với mỗi \\(x\\in(0;1)\\), đặt \\(y=\\frac{x+1}{2}\\) thì \\(x<y<1\\) và \\(f(y)>f(x)\\). Không có điểm nào cho giá trị lớn nhất. Số 1 là cận trên nhỏ nhất nhưng không được đạt tới.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-EXTREMA_GLOBAL_MEANING"
@@ -356,7 +356,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tìm GTLN/GTNN f(x)=x²−2x trên [0,4].",
     "answer_key": "GTLN 8 tại x=4; GTNN −1 tại x=1.",
-    "worked_solution": "Hàm liên tục trên [0;4]. Ta có f′(x)=2x−2, bằng 0 tại x=1 thuộc đoạn. So sánh giá trị tại điểm này và hai đầu mút: f(0)=0, f(1)=−1, f(4)=8. Vậy GTNN bằng −1 tại x=1; GTLN bằng 8 tại x=4.",
+    "worked_solution": "Hàm liên tục trên \\([0;4]\\). \\(f'(x)=2x-2=0\\) tại \\(x=1\\). So sánh \\(f(0)=0,\\ f(1)=-1,\\ f(4)=8\\). GTNN bằng -1 tại 1; GTLN bằng 8 tại 4.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-CRITICAL_END_POINTS"
@@ -452,7 +452,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f(x)=x² trên (−1,1) có GTNN? GTLN? Chứng minh.",
     "answer_key": "GTNN 0 tại x=0; không có GTLN.",
-    "worked_solution": "Với x∈(−1;1), x²≥0, dấu bằng tại x=0 nên GTNN bằng 0. Không có GTLN: với mọi x trong khoảng, chọn y=(|x|+1)/2. Khi đó |x|<y<1, nên f(y)=y²>x²=f(x). Các giá trị x² có thể tiến sát 1 nhưng không đạt 1.",
+    "worked_solution": "Với \\(x\\in(-1;1)\\), \\(x^2\\ge0\\) và dấu bằng tại 0 nên GTNN bằng 0. Với bất kì x trong khoảng, chọn \\(y=\\frac{|x|+1}{2}\\); khi đó \\(|x|<y<1\\), suy ra \\(f(y)>f(x)\\). Vì thế không có GTLN, dù giá trị có thể tiến sát 1.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
@@ -484,7 +484,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Xét f(x)=x/(x²+1), x≥0. Tìm GTLN, GTNN.",
     "answer_key": "GTLN 1/2 tại x=1; GTNN 0 tại x=0.",
-    "worked_solution": "f′(x)=(1−x²)/(x²+1)². Với 0≤x<1, f′>0; với x>1, f′<0. Hàm tăng đến x=1 rồi giảm, nên GTLN bằng f(1)=1/2. Mặt khác x≥0 và x²+1>0 nên f(x)≥0, dấu bằng tại x=0; GTNN bằng 0. Giới hạn f(x)→0 khi x→+∞ không tự chứng minh GTNN: cần kiểm tra giá trị 0 thực sự đạt được.",
+    "worked_solution": "\\(f'(x)=\\frac{1-x^2}{(x^2+1)^2}\\). Trên \\((0;1)\\) đạo hàm dương; trên \\((1;+\\infty)\\) đạo hàm âm. Hàm đạt GTLN \\(f(1)=\\frac12\\). Mặt khác, \\(f(x)\\ge0\\) với \\(x\\ge0\\) và \\(f(0)=0\\), nên GTNN bằng 0. Không được suy ra GTNN chỉ từ giới hạn ở vô cực.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-CONSTRAINED_DOMAIN"
@@ -516,7 +516,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trên đoạn [−2;2], f(x)=x³ có GTLN, GTNN và cực trị tại điểm nằm trong khoảng (−2;2) không?",
     "answer_key": "GTLN 8 tại x=2; GTNN −8 tại x=−2; không có cực trị trong (−2;2).",
-    "worked_solution": "f′(x)=3x²≥0 và chỉ bằng 0 tại x=0. Hàm x³ đồng biến trên toàn đoạn, nên GTLN f(2)=8, GTNN f(−2)=−8. Tại x=0 đạo hàm không đổi dấu và hàm vẫn tăng; không có cực trị tại điểm nằm trong (−2;2). Giá trị lớn nhất/nhỏ nhất trên đoạn không đồng nghĩa với cực trị tại điểm bên trong đoạn.",
+    "worked_solution": "Hàm \\(x^3\\) đồng biến nghiêm ngặt trên toàn đoạn, dù \\(f'(0)=0\\). Vì vậy GTLN là \\(f(2)=8\\), GTNN là \\(f(-2)=-8\\). Không có cực trị trong \\((-2;2)\\), vì hàm không đổi chiều biến thiên. Giá trị lớn nhất, nhỏ nhất trên đoạn khác với cực trị địa phương ở bên trong.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-EXTREMA_GLOBAL_MEANING"
@@ -580,7 +580,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Mảnh vườn chữ nhật chu vi 24 m, hai cạnh dương. Diện tích lớn nhất và có GTNN dương không?",
     "answer_key": "Diện tích lớn nhất 36 m² khi hai cạnh đều dài 6 m; không có GTNN.",
-    "worked_solution": "Gọi x (m) là một cạnh thì cạnh kia dài 12−x (m), vì chu vi bằng 24 m. Hai cạnh dương nên 0<x<12. Diện tích A=x(12−x)=36−(x−6)²≤36 (m²), dấu bằng khi x=6. Khi đó hai cạnh đều dài 6 m. Không có GTNN vì A>0 trên miền và A→0 khi x→0⁺, nên với mọi diện tích dương đang xét đều có thể chọn cạnh đủ nhỏ để được diện tích nhỏ hơn.",
+    "worked_solution": "Gọi x (m) là một cạnh, cạnh kia dài \\(12-x\\) (m), với \\(0<x<12\\). Diện tích \\(A(x)=x(12-x)=36-(x-6)^2\\le36\\) m². Dấu bằng khi \\(x=6\\), tức vườn là hình vuông cạnh 6 m. Mọi diện tích hợp lệ đều dương nhưng \\(A(x)\\to0\\) khi \\(x\\to0^+\\), nên không có GTNN.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-OPTIMIZATION_MODEL"
@@ -612,7 +612,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "lim(x→∞)[5+2/(x−1)] và phương trình tiệm cận ngang?",
     "answer_key": "Giới hạn 5; tiệm cận ngang y=5.",
-    "worked_solution": "Khi x→+∞, 2/(x−1)→0, do đó 5+2/(x−1)→5. Theo định nghĩa, đồ thị có tiệm cận ngang y=5.",
+    "worked_solution": "Khi \\(x\\to+\\infty\\), \\(\\frac2{x-1}\\to0\\). Do đó \\(\\lim_{x\\to+\\infty}(5+\\frac2{x-1})=5\\). Theo định nghĩa, \\(y=5\\) là tiệm cận ngang về phía \\(+\\infty\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-HORIZONTAL_LIMIT"
@@ -676,7 +676,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "g(x)=x−2+3/(x+1). Tiệm cận xiên khi x→∞?",
     "answer_key": "Tiệm cận xiên y=x−2.",
-    "worked_solution": "g(x)−(x−2)=3/(x+1)→0 khi x→+∞. Vậy đường thẳng y=x−2 là tiệm cận xiên của đồ thị g. Không lấy mẫu x+1 làm phương trình tiệm cận xiên.",
+    "worked_solution": "Hiệu giữa hàm và đường thẳng là \\(g(x)-(x-2)=\\frac3{x+1}\\). Hiệu tiến về 0 khi \\(x\\to+\\infty\\), nên \\(y=x-2\\) là tiệm cận xiên. Mẫu số bằng 0 chỉ gợi ý kiểm tra tiệm cận đứng, không xác định đường xiên.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-OBLIQUE_REMAINDER"
@@ -804,7 +804,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "h=(x²+2x+3)/(x+1). Tìm tiệm cận xiên và đứng.",
     "answer_key": "Tiệm cận xiên y=x+1; tiệm cận đứng x=−1.",
-    "worked_solution": "Chia đa thức: h(x)=x+1+2/(x+1), với x≠−1. Khi x→±∞, h(x)−(x+1)=2/(x+1)→0 nên y=x+1 là tiệm cận xiên. Khi x→−1⁻, phần 2/(x+1)→−∞; khi x→−1⁺, phần này→+∞, còn x+1→0. Do đó x=−1 là tiệm cận đứng.",
+    "worked_solution": "Chia đa thức: \\(h(x)=x+1+\\frac2{x+1}\\) với \\(x\\ne-1\\). Khi \\(x\\to\\pm\\infty\\), hiệu \\(h(x)-(x+1)\\to0\\), nên \\(y=x+1\\) là tiệm cận xiên. Khi \\(x\\to-1^-\\), phân số tiến tới \\(-\\infty\\); từ phải tiến tới \\(+\\infty\\), trong khi \\(x+1\\to0\\). Vì vậy \\(x=-1\\) là tiệm cận đứng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-OBLIQUE_REMAINDER"
@@ -932,7 +932,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f=x/sqrt(x²+1) có bao nhiêu đường tiệm cận ngang? Phía nào?",
     "answer_key": "Hai tiệm cận ngang: y=1 về phía +∞, y=−1 về phía −∞.",
-    "worked_solution": "Với x≠0, f(x)=(x/|x|)/√(1+1/x²). Khi x→+∞, x/|x|=1 và mẫu tiến đến 1 nên giới hạn bằng 1. Khi x→−∞, x/|x|=−1 nên giới hạn bằng −1. Vì thế có hai tiệm cận ngang y=1 ở phía phải và y=−1 ở phía trái; phải dùng √(x²)=|x| chứ không phải x.",
+    "worked_solution": "Với \\(x\\ne0\\), viết \\(f(x)=\\frac{x/|x|}{\\sqrt{1+1/x^2}}\\). Khi \\(x\\to+\\infty\\), tử bằng 1 và mẫu tiến tới 1; khi \\(x\\to-\\infty\\), tử bằng -1. Do đó hai tiệm cận ngang lần lượt là \\(y=1\\) ở phía phải và \\(y=-1\\) ở phía trái. Nhớ \\(\\sqrt{x^2}=|x|\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-HORIZONTAL_LIMIT"
@@ -964,7 +964,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chi phí trung bình đơn vị C(q)=20+120/q (nghìn đồng/sp), q>0. Phân tích q→+∞ và q→0+, chỉ ra tiệm cận; ý nghĩa mô hình.",
     "answer_key": "C(q)→20 khi q→+∞, C(q)→+∞ khi q→0⁺; tiệm cận ngang C=20, đứng q=0; q=0 không có chi phí trung bình xác định.",
-    "worked_solution": "Khi q→+∞, 120/q→0 nên C(q)→20 nghìn đồng/sp; đường C=20 là tiệm cận ngang. Theo mô hình liên tục, khi q→0⁺, 120/q→+∞ nên C(q)→+∞; q=0 là tiệm cận đứng. Giá trị q=0 không thuộc miền xác định. Chi phí trung bình tiến gần 20 khi sản lượng tăng, nhưng luôn lớn hơn 20 ở mọi q hữu hạn dương. Nếu q là số sản phẩm nguyên, giới hạn q→0⁺ chỉ mô tả phần mở rộng liên tục của mô hình, không phải sản lượng nguyên dương thực tế.",
+    "worked_solution": "Trong mô hình liên tục \\(q>0\\), \\(\\lim_{q\\to+\\infty}C(q)=20\\) nghìn đồng/sản phẩm, nên đường \\(C=20\\) là tiệm cận ngang. Khi \\(q\\to0^+\\), phần \\(120/q\\to+\\infty\\), nên \\(q=0\\) là tiệm cận đứng. Với q hữu hạn dương, chi phí trung bình luôn lớn hơn 20. Sản lượng 0 không có chi phí trung bình xác định; nếu q là số sản phẩm nguyên, giới hạn tại 0 chỉ thuộc phần mở rộng liên tục của mô hình.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-DOMAIN_SIDED_LIMITS"
@@ -1028,7 +1028,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f=x³−3x² có mấy cực trị và ở đâu?",
     "answer_key": "Hai cực trị: cực đại tại x=0, giá trị 0; cực tiểu tại x=2, giá trị −4.",
-    "worked_solution": "f′(x)=3x(x−2), bằng 0 tại x=0 và x=2. Dấu f′ lần lượt là +, −, + trên (−∞;0), (0;2), (2;+∞). Do đó f đạt cực đại tại x=0 với f(0)=0, cực tiểu tại x=2 với f(2)=−4. Hai điểm cực trị trên đồ thị là (0;0) và (2;−4).",
+    "worked_solution": "\\(f'(x)=3x(x-2)\\), bằng 0 tại 0 và 2. Dấu lần lượt +, −, + trên \\((-\\infty;0)\\), \\((0;2)\\), \\((2;+\\infty)\\). Hàm đạt cực đại \\(f(0)=0\\), cực tiểu \\(f(2)=-4\\); hai điểm trên đồ thị là \\((0;0)\\) và \\((2;-4)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-CUBIC_VARIATION"
@@ -1092,7 +1092,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f=(x+2)/(x−1) cắt trục Ox và Oy ở đâu?",
     "answer_key": "Giao Ox tại (−2;0); giao Oy tại (0;−2).",
-    "worked_solution": "Tập xác định là ℝ\\{1}. Giao Ox: đặt y=0, suy ra x+2=0, tức x=−2; giá trị này thuộc tập xác định, nên giao điểm là (−2;0). Giao Oy: đặt x=0, được y=2/(−1)=−2, nên giao điểm là (0;−2).",
+    "worked_solution": "Tập xác định \\(D=\\mathbb R\\setminus\\{1\\}\\). Giao Ox: đặt \\(y=0\\), suy ra \\(x+2=0\\), tức \\(x=-2\\) hợp lệ, được \\((-2;0)\\). Giao Oy: đặt \\(x=0\\), được \\(y=-2\\), tức \\((0;-2)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-INTERCEPTS_LIMITS"
@@ -1124,7 +1124,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tâm đối xứng của y=2+5/(x−4)?",
     "answer_key": "Tâm đối xứng I(4;2).",
-    "worked_solution": "Hai tiệm cận là x=4 và y=2. Đặt X=x−4, Y=y−2 thì phương trình trở thành Y=5/X (X≠0). Nếu (X;Y) thuộc đồ thị mới, (−X;−Y) cũng thuộc vì −Y=5/(−X). Do đó đồ thị đối xứng qua gốc tọa độ mới, tức I(4;2), giao điểm của hai tiệm cận trong hệ ban đầu.",
+    "worked_solution": "Hai tiệm cận là \\(x=4,\\ y=2\\). Đặt \\(X=x-4,\\ Y=y-2\\), phương trình trở thành \\(Y=5/X\\) với \\(X\\ne0\\). Nếu \\((X;Y)\\) thuộc đồ thị mới thì \\((-X;-Y)\\) cũng thuộc, nên đồ thị đối xứng qua gốc mới, tức tâm \\(I(4;2)\\) trong hệ ban đầu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-CENTER_SYMMETRY"
@@ -1156,7 +1156,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho hàm số y=f(x) có đạo hàm trên ℝ. Bảng dấu y′ là + trên (−∞;−1), − trên (−1;3), + trên (3;+∞). Xác định loại cực trị tại x=−1 và x=3.",
     "answer_key": "Cực đại tại x=−1; cực tiểu tại x=3.",
-    "worked_solution": "Tại x=−1, đạo hàm đổi dấu từ + sang −, nên hàm tăng rồi giảm: cực đại tại x=−1. Tại x=3, đạo hàm đổi dấu từ − sang +, nên hàm giảm rồi tăng: cực tiểu tại x=3. Chưa có công thức hay giá trị hàm tại hai điểm, nên chưa xác định được giá trị cực đại, cực tiểu.",
+    "worked_solution": "Tại -1, dấu đạo hàm đổi từ dương sang âm, nên hàm tăng rồi giảm và đạt cực đại. Tại 3, dấu đổi từ âm sang dương, nên đạt cực tiểu. Hàm có đạo hàm trên \\(\\mathbb R\\) nên liên tục tại các mốc; chưa có công thức hay tung độ nên chưa tính được giá trị hai cực trị.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-READ_VARIATION_TABLE"
@@ -1188,7 +1188,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Với y=1+2/(x+1), có nên nối hai nhánh qua x=−1?",
     "answer_key": "Không; x=−1 không thuộc tập xác định và là tiệm cận đứng.",
-    "worked_solution": "Không. Tập xác định là ℝ\\{−1}. Khi x→−1⁻, 2/(x+1)→−∞; khi x→−1⁺, 2/(x+1)→+∞. Đường x=−1 là tiệm cận đứng, không có điểm đồ thị nào tại x=−1. Khi phác đồ thị, vẽ hai nhánh riêng ở hai phía, không nối chúng qua tiệm cận.",
+    "worked_solution": "Tập xác định \\(D=\\mathbb R\\setminus\\{-1\\}\\). Khi \\(x\\to-1^-\\), \\(y\\to-\\infty\\); khi \\(x\\to-1^+\\), \\(y\\to+\\infty\\). Đường \\(x=-1\\) là tiệm cận đứng, không có điểm đồ thị tại đó, nên phải vẽ hai nhánh riêng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-DOMAIN_NONCONNECT"
@@ -1220,7 +1220,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "h=−x³+3x, tìm các khoảng tăng/giảm và cực trị.",
     "answer_key": "Đồng biến trên (−1;1); nghịch biến trên (−∞;−1), (1;+∞); cực tiểu tại x=−1, giá trị −2; cực đại tại x=1, giá trị 2.",
-    "worked_solution": "h′(x)=3(1−x²), bằng 0 tại x=−1 và x=1. Đạo hàm dương trên (−1;1), âm trên (−∞;−1) và (1;+∞). Hàm đồng biến trên khoảng giữa, nghịch biến trên hai khoảng ngoài. Tại x=−1, dấu − sang + nên cực tiểu h(−1)=−2; tại x=1, dấu + sang − nên cực đại h(1)=2. Đây là cực trị địa phương, không phải GTNN và GTLN toàn ℝ, vì h(x)→+∞ khi x→−∞ và h(x)→−∞ khi x→+∞.",
+    "worked_solution": "\\(h'(x)=3(1-x^2)\\), bằng 0 tại -1 và 1. Dấu lần lượt âm, dương, âm. Hàm nghịch biến trên \\((-\\infty;-1)\\), \\((1;+\\infty)\\), đồng biến trên \\((-1;1)\\). Cực tiểu \\(h(-1)=-2\\), cực đại \\(h(1)=2\\). Hai cực trị không phải GTNN và GTLN trên toàn \\(\\mathbb R\\), vì hàm không bị chặn.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-CUBIC_VARIATION"
@@ -1252,7 +1252,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "y=x³−3x² cắt hay tiếp xúc Ox tại x=0 và tại x=3?",
     "answer_key": "Tiếp xúc Ox tại (0;0); cắt Ox tại (3;0).",
-    "worked_solution": "Phân tích y=x²(x−3). Gần x=0, x−3<0, còn x²>0 khi x≠0, nên đồ thị nằm dưới Ox ở cả hai phía của 0. Vì y(0)=0 và y′(0)=0, đồ thị tiếp xúc Ox tại (0;0). Gần x=3, x²>0, nên y đổi dấu từ âm sang dương khi qua 3: đồ thị cắt Ox tại (3;0).",
+    "worked_solution": "\\(y=x^2(x-3)\\). Gần 0, \\(x-3<0\\), còn \\(x^2>0\\) khi \\(x\\ne0\\), nên đồ thị ở dưới Ox cả hai phía. Do \\(y(0)=0\\), \\(y'(0)=0\\), đồ thị tiếp xúc Ox tại \\((0;0)\\). Gần 3, \\(x^2>0\\) còn \\(x-3\\) đổi dấu, nên đồ thị cắt Ox tại \\((3;0)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-INTERCEPTS_LIMITS"
@@ -1284,7 +1284,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tâm đối xứng đồ thị y=x³−3x²?",
     "answer_key": "Tâm đối xứng I(1;−2).",
-    "worked_solution": "Viết x=1+u. Khi đó f(1+u)=u³−3u−2. Suy ra f(1+u)+2=u³−3u và f(1−u)+2=−(u³−3u), hay f(1+u)+f(1−u)=−4. Hai điểm của đồ thị có hoành độ 1+u và 1−u luôn có trung điểm I(1;−2). Vì vậy I là tâm đối xứng. Không nhầm với điểm cực đại (0;0).",
+    "worked_solution": "Đặt \\(x=1+u\\), ta có \\(f(1+u)=u^3-3u-2\\). Vì \\(f(1+u)+f(1-u)=-4\\), hai điểm có hoành độ \\(1+u\\) và \\(1-u\\) luôn có trung điểm \\(I(1;-2)\\). Vậy I là tâm đối xứng, không phải điểm cực đại.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-CENTER_SYMMETRY"
@@ -1316,7 +1316,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chi phí bình quân f(q)=4+200/(q−10) cho q>10 đơn vị. Tính giới hạn q→10+, q→∞ và nhận định chi phí theo q.",
     "answer_key": "Giới hạn +∞ khi q→10⁺, giới hạn 4 khi q→+∞; chi phí giảm trên (10;+∞), luôn lớn hơn 4.",
-    "worked_solution": "Trong miền q>10, f′(q)=−200/(q−10)²<0, nên chi phí bình quân giảm khi q tăng. Khi q→10⁺, mẫu dương tiến về 0 nên f(q)→+∞. Khi q→+∞, phần 200/(q−10)→0 nên f(q)→4. Mọi q hữu hạn trong miền đều cho f(q)>4: mức 4 là giới hạn, không phải mức đạt được. Không mở rộng mô hình sang q≤10. Nếu q là sản lượng nguyên, giới hạn tại 10⁺ là tính chất của phần mở rộng liên tục, không phải quá trình qua các sản lượng nguyên.",
+    "worked_solution": "Với \\(q>10\\), \\(f'(q)=-\\frac{200}{(q-10)^2}<0\\) nên chi phí bình quân giảm. Khi \\(q\\to10^+\\), mẫu dương tiến về 0 nên \\(f(q)\\to+\\infty\\); khi \\(q\\to+\\infty\\), \\(f(q)\\to4\\). Chi phí luôn lớn hơn 4 trên miền hợp lệ, không đạt giới hạn đó. Nếu q nguyên, giới hạn tại \\(10^+\\) chỉ mô tả phần mở rộng liên tục.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-RATIONAL_VARIATION"
@@ -1380,7 +1380,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Đại lượng f(x)=2x²+3 đo bằng mét, biến x đo bằng giây. Tính f′(2) và đơn vị.",
     "answer_key": "f′(2)=8 m/s.",
-    "worked_solution": "f′(x)=4x nên f′(2)=8. Đạo hàm đo mức thay đổi của f theo thời gian, có đơn vị m/s. Nếu f là tọa độ, đây là vận tốc; không phải gia tốc.",
+    "worked_solution": "\\(f'(x)=4x\\), nên \\(f'(2)=8\\) m/s. Đạo hàm đo tốc độ thay đổi tức thời của đại lượng theo thời gian. Nếu đại lượng là tọa độ của vật thì đây là vận tốc, không phải gia tốc.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-RATE_INTERPRETATION"
@@ -1444,7 +1444,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tổng chi phí sản xuất q sản phẩm được mô tả bởi C(q)=q²+10q+100 (nghìn đồng). Tính chi phí cận biên tại q=5.",
     "answer_key": "C′(5)=20 nghìn đồng/sản phẩm.",
-    "worked_solution": "C′(q)=2q+10, nên C′(5)=20 nghìn đồng/sản phẩm. Đây là tốc độ thay đổi tức thời của chi phí theo sản lượng trong mô hình liên tục, xấp xỉ chi phí tăng thêm khi sản lượng tăng một đơn vị; không phải tổng chi phí C(5).",
+    "worked_solution": "\\(C'(q)=2q+10\\), nên \\(C'(5)=20\\) nghìn đồng/sản phẩm. Đó là tốc độ thay đổi tức thời của tổng chi phí theo sản lượng trong mô hình liên tục, xấp xỉ mức tăng chi phí cho một sản phẩm bổ sung, không phải tổng chi phí tại 5.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-MARGINAL_COST"
@@ -1476,7 +1476,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tấm bìa hình chữ nhật kích thước 30 cm × 20 cm. Cắt bỏ ở mỗi góc một hình vuông cạnh x cm, rồi gấp thành hộp không nắp. Tìm miền x để hộp không suy biến.",
     "answer_key": "0<x<10 cm.",
-    "worked_solution": "Chiều cao hộp là x, hai cạnh đáy là 30−2x và 20−2x (cm). Cả ba kích thước phải dương: x>0, x<15 và x<10. Giao các điều kiện là 0<x<10 (cm). Không lấy x=0 hoặc x=10 vì khi đó hộp suy biến.",
+    "worked_solution": "Chiều cao hộp là x, hai cạnh đáy là \\(30-2x\\) và \\(20-2x\\) (cm). Cả ba kích thước phải dương: \\(x>0,\\ x<15,\\ x<10\\). Giao các điều kiện cho \\(0<x<10\\) cm. Hai đầu miền cho hình suy biến.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-MODEL_VARIABLE_DOMAIN"
@@ -1508,7 +1508,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Từ f(x)=x³ cm với x phút, f'(2) và ý nghĩa x tăng rất nhỏ?",
     "answer_key": "f′(2)=12 cm/phút; khi x tăng một lượng nhỏ Δx, Δf≈12Δx cm (Δx tính bằng phút).",
-    "worked_solution": "f′(x)=3x² nên f′(2)=12 cm/phút. Khi x tăng từ 2 thêm một lượng rất nhỏ Δx phút, ta có Δf≈f′(2)Δx=12Δx cm. Đây là mức thay đổi tức thời tại x=2; không có nghĩa f tăng đúng 12 cm trong mọi khoảng một phút.",
+    "worked_solution": "\\(f'(x)=3x^2\\), do đó \\(f'(2)=12\\) cm/phút. Khi x tăng từ 2 thêm lượng nhỏ \\(\\Delta x\\) phút, \\(\\Delta f\\approx12\\Delta x\\) cm. Đây là xấp xỉ tại một thời điểm, không phải mức tăng chính xác trong mọi khoảng một phút.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-RATE_INTERPRETATION"
@@ -1540,7 +1540,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Vật có v(t)=t−3 m/s, a=1 m/s². Ở t=2 tốc độ đang tăng hay giảm? Tại t=3 có thể kết luận chỉ bằng dấu a?",
     "answer_key": "Tại t=2 tốc độ đang giảm; tại t=3 tốc độ bằng 0, không suy chiều biến thiên chỉ từ dấu gia tốc.",
-    "worked_solution": "Tại t=2, v(2)=−1 m/s và a=1 m/s². Vận tốc âm nhưng đang tăng về 0, nên độ lớn |v| giảm. Với mô hình này, tốc độ là |t−3|: giảm trước t=3, bằng 0 tại t=3, tăng sau t=3. Tại t=3, tốc độ đổi chiều biến thiên và không có đạo hàm hai phía; chỉ biết a>0 không đủ để kết luận tốc độ đang tăng.",
+    "worked_solution": "Tại \\(t=2\\), \\(v(2)=-1\\) m/s còn \\(a=1\\) m/s². Vận tốc âm đang tiến về 0, nên tốc độ giảm. Cụ thể tốc độ \\(|t-3|\\) giảm trước 3, bằng 0 tại 3 rồi tăng sau 3. Tại 3, tốc độ không có đạo hàm hai phía; dấu dương của gia tốc không đủ để khẳng định tốc độ tăng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-MOTION_SPEED_ACCELERATION"
@@ -1572,7 +1572,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tổng chi phí C(q)=0,02q²+5q+1200 (nghìn đồng), với q là số sản phẩm. Tính và so sánh C′(100) với chi phí tăng thêm C(101)−C(100), ghi rõ đơn vị.",
     "answer_key": "C′(100)=9 nghìn đồng/sản phẩm; C(101)−C(100)=9,02 nghìn đồng.",
-    "worked_solution": "C′(q)=0,04q+5, nên C′(100)=9 nghìn đồng/sản phẩm. Chi phí tăng thêm khi sản xuất từ 100 lên 101 sản phẩm là 0,02(101²−100²)+5(101−100)=0,02·201+5=9,02 nghìn đồng. Trong bước tăng một sản phẩm, giá trị số 9 từ đạo hàm là xấp xỉ cho chi phí tăng thêm 9,02; đạo hàm không luôn bằng sai phân hữu hạn.",
+    "worked_solution": "\\(C'(q)=0{,}04q+5\\), nên \\(C'(100)=9\\) nghìn đồng/sản phẩm. Chi phí tăng thêm thực tế theo mô hình là \\(C(101)-C(100)=0{,}02(101^2-100^2)+5=9{,}02\\) nghìn đồng. Đạo hàm chỉ xấp xỉ mức tăng với bước một sản phẩm; hai đại lượng có đơn vị khác nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-MARGINAL_COST"
@@ -1636,7 +1636,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Thể tích hộp không nắp gấp từ tấm bìa 30 cm × 20 cm bằng V(x)=x(30−2x)(20−2x) cm³, trong đó x (cm) là cạnh hình vuông cắt ở mỗi góc. Tại x=10 có thể gọi V=0 là thể tích nhỏ nhất của một hộp không suy biến tạo được không?",
     "answer_key": "Không; miền hộp không suy biến là 0<x<10, thể tích tiến về 0 nhưng không đạt 0; không có GTNN.",
-    "worked_solution": "Không. Hộp không suy biến cần chiều cao x>0, chiều dài đáy 30−2x>0 và chiều rộng đáy 20−2x>0, tức 0<x<10. Khi x=10, chiều rộng đáy bằng 0 nên không còn hộp. Với mọi x trong miền, V(x)>0, nhưng V(x)→0 khi x→10⁻ (hoặc x→0⁺). Vì thế thể tích có thể nhỏ tùy ý mà không đạt 0; không có GTNN trên miền hợp lệ.",
+    "worked_solution": "Hộp không suy biến cần \\(x>0,\\ 30-2x>0,\\ 20-2x>0\\), tức \\(0<x<10\\). Tại 10, chiều rộng đáy bằng 0 nên không còn hộp. Trên miền hợp lệ \\(V(x)>0\\), nhưng thể tích tiến về 0 khi \\(x\\to10^-\\) hoặc \\(x\\to0^+\\). Vậy không có GTNN; 0 không đạt được.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-BOUNDARY_FEASIBILITY"
@@ -1700,7 +1700,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Quây một mảnh vườn hình chữ nhật sát bức tường thẳng bằng 40 m hàng rào cho đúng ba cạnh, không rào cạnh sát tường. Tìm hai kích thước để diện tích vườn lớn nhất.",
     "answer_key": "Hai cạnh vuông góc tường dài 10 m mỗi cạnh, cạnh song song tường dài 20 m; diện tích lớn nhất 200 m².",
-    "worked_solution": "Gọi x (m) là chiều dài mỗi cạnh vuông góc tường, y (m) là chiều dài cạnh song song tường. Điều kiện 2x+y=40 với x,y>0, nên y=40−2x và 0<x<20. Diện tích A(x)=x(40−2x), A′(x)=40−4x. Đạo hàm dương khi x<10, âm khi x>10 trong miền, nên diện tích lớn nhất tại x=10. Khi đó y=20, A=200 m². Hai đầu miền không được lấy vì vườn suy biến.",
+    "worked_solution": "Gọi x là độ dài mỗi cạnh vuông góc tường, y là cạnh song song tường (m). Chỉ rào ba cạnh nên \\(2x+y=40\\), tức \\(y=40-2x\\) và \\(0<x<20\\). Diện tích \\(A(x)=40x-2x^2=200-2(x-10)^2\\le200\\) m². Dấu bằng khi \\(x=10\\), suy ra \\(y=20\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-OPTIMIZATION_DERIVATIVE"
@@ -1732,7 +1732,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Mô hình giá p(q)=30−0.1q, q≥0 và không cho giá âm. Miền q nào hợp lệ?",
     "answer_key": "0≤q≤300; nếu q là số sản phẩm nguyên, q∈{0,1,…,300}.",
-    "worked_solution": "Điều kiện q≥0 và p(q)≥0 cho 30−0,1q≥0, tương đương q≤300. Vậy miền liên tục hợp lệ là [0;300]. Nếu q biểu thị số sản phẩm phải nguyên, miền là các số nguyên từ 0 đến 300. Nếu yêu cầu giá phải dương thay vì không âm, q=300 sẽ bị loại; ở đây đề cho phép giá 0.",
+    "worked_solution": "Điều kiện \\(q\\ge0\\) và \\(30-0{,}1q\\ge0\\) cho \\(0\\le q\\le300\\). Nếu q biểu thị số sản phẩm nguyên thì lấy các số nguyên từ 0 đến 300. Điểm 300 được phép vì đề chỉ loại giá âm, không loại giá bằng 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-MODEL_VARIABLE_DOMAIN"
@@ -1764,7 +1764,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Lợi nhuận P(q)=20q−0.1q²−400 (nghìn đồng), 0≤q≤300. Nếu tính được q=100, lợi nhuận tối đa là bao nhiêu và với đơn vị nào?",
     "answer_key": "Lợi nhuận lớn nhất 600 nghìn đồng tại q=100 sản phẩm.",
-    "worked_solution": "P′(q)=20−0,2q, bằng 0 tại q=100 thuộc [0;300]. Đạo hàm dương trước 100 và âm sau 100, nên P đạt GTLN tại q=100. P(100)=2000−1000−400=600 nghìn đồng. Số 100 có đơn vị sản phẩm, còn 600 có đơn vị nghìn đồng. Nếu sản lượng phải nguyên, 100 vẫn là một giá trị nguyên hợp lệ.",
+    "worked_solution": "\\(P'(q)=20-0{,}2q\\), bằng 0 tại 100. Đạo hàm dương trước 100, âm sau 100 trên miền \\([0;300]\\), nên lợi nhuận đạt GTLN tại 100. \\(P(100)=2000-1000-400=600\\) nghìn đồng. Sản lượng 100 là số nguyên hợp lệ nếu bài toán yêu cầu sản lượng nguyên.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-UNIT_ASSUMPTION_CHECK"
