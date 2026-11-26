@@ -12,7 +12,7 @@ Một bản vẽ không gian chỉ là hình biểu diễn trên mặt phẳng. 
 
 <details><summary>Tùy chọn: cách đọc minh họa tọa độ khi em cần</summary>
 
-**Cách đọc ví dụ tọa độ (không cần học trước hình giải tích không gian lớp 12).** Ba số \((x,y,z)\) lần lượt là vị trí theo ba trục vuông góc; \(z=0\) biểu diễn một mặt phẳng nằm ngang, \(z=c\) một mặt phẳng nằm ngang khác. Một đường viết \((x,y,z)=(a,b,c)+t(u,v,w)\) nghĩa là chọn **cùng một số thực t** để có một điểm trên đường: \(x=a+tu,\ y=b+tv,\ z=c+tw\). Muốn tìm giao với \(z=0\), giải \(c+tw=0\) và thay lại vào cả ba tọa độ. Nếu \(w=0\) và \(c=0\) đường **nằm trong** mặt; nếu \(w=0\) nhưng \(c\ne 0\) đường **song song phân biệt**; nếu \(w\ne 0\) đường **cắt** mặt đúng một điểm. Phép biến đổi \(T(x,y,z)\) ở mạch cuối chỉ là chiếu một điểm theo một phương cố định, không phải một công thức học thuộc bắt buộc. Khi không quen tọa độ, có thể kiểm cùng một kết luận bằng quan hệ giao tuyến và định lý song song đã giải thích.
+**Cách đọc ví dụ tọa độ (không cần học trước hình giải tích không gian lớp 12).** Ba số \((x;y;z)\) lần lượt là vị trí theo ba trục vuông góc; \(z=0\) biểu diễn một mặt phẳng nằm ngang, \(z=c\) một mặt phẳng nằm ngang khác. Một đường viết \((x;y;z)=(a;b;c)+t(u;v;w)\) nghĩa là chọn **cùng một số thực t** để có một điểm trên đường: \(x=a+tu,\ y=b+tv,\ z=c+tw\). Muốn tìm giao với \(z=0\), giải \(c+tw=0\) và thay lại vào cả ba tọa độ. Nếu \(w=0\) và \(c=0\) đường **nằm trong** mặt; nếu \(w=0\) nhưng \(c\ne 0\) đường **song song phân biệt**; nếu \(w\ne 0\) đường **cắt** mặt đúng một điểm. Phép biến đổi \(T(x;y;z)\) ở mạch cuối chỉ là chiếu một điểm theo một phương cố định, không phải một công thức học thuộc bắt buộc. Khi không quen tọa độ, có thể kiểm cùng một kết luận bằng quan hệ giao tuyến và định lý song song đã giải thích.
 
 </details>
 
@@ -42,16 +42,16 @@ Hãy tưởng tượng một tấm bìa phẳng: một chấm nằm trên bìa k
 
 **Đề bài:** Cho mặt phẳng (P) chứa hai điểm phân biệt A,B. C là điểm bất kỳ của đoạn AB. Chứng minh C thuộc (P).
 
-**Lời giải:** Theo tính chất cơ bản về quan hệ thuộc, vì A,B phân biệt cùng thuộc (P), cả đường thẳng AB nằm trong (P). Điểm C thuộc đoạn AB nên C thuộc AB, suy ra C∈(P). Việc C chia AB theo tỉ số nào không làm đổi kết luận.
+**Lời giải:** Theo tính chất cơ bản về quan hệ thuộc, vì A,B phân biệt cùng thuộc (P), cả đường thẳng AB nằm trong (P). Điểm C thuộc đoạn AB nên C thuộc AB, suy ra \(C\in (P)\). Việc C chia AB theo tỉ số nào không làm đổi kết luận.
 
 <!-- ITEM_ID: THPT-TOP15-T01; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O01; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-A,B∈(P), A≠B; M chia AB theo tỉ số AM:MB=2:1. M có thuộc (P) không?
+\(A,B\in(P),\ A\ne B\); M chia AB theo tỉ số \(AM:MB=2:1\). M có thuộc \((P)\) không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Có. M thuộc đường AB, mà AB⊂(P); không cần biết tỉ số để suy quan hệ thuộc.
+Có. M thuộc đường AB, mà \(AB\subset (P)\); không cần biết tỉ số để suy quan hệ thuộc.
 
 
 
@@ -81,11 +81,11 @@ Một đường thẳng có thể xoay trong nhiều mặt phẳng như bản l�
 <!-- ITEM_ID: THPT-TOP15-T02; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O02; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Một đường a và điểm M∉a xác định bao nhiêu mặt phẳng?
+Một đường a và điểm \(M\notin a\) xác định bao nhiêu mặt phẳng?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Đúng một mặt phẳng. Nếu M∈a sẽ có vô số mặt phẳng chứa a.
+Đúng một mặt phẳng. Nếu \(M\in a\) sẽ có vô số mặt phẳng chứa a.
 
 
 
@@ -110,7 +110,7 @@ Khi hai tấm phẳng phân biệt cùng chứa hai điểm, chúng bắt buộc
 
 **Đề bài:** Trong tứ diện S.ABC, tìm giao tuyến của hai mặt phẳng (SAB) và (SAC). Nêu vì sao tồn tại duy nhất một giao tuyến.
 
-**Lời giải:** Cả hai mặt đều chứa S và A, với S≠A. Hai mặt phân biệt vì B,C không cùng mặt chứa S,A trong một tứ diện không suy biến. Do đó giao tuyến là đường SA; không thể chỉ là một đoạn trên cạnh.
+**Lời giải:** Cả hai mặt đều chứa S và A, với \(S\ne A\). Hai mặt phân biệt vì B,C không cùng mặt chứa S,A trong một tứ diện không suy biến. Do đó giao tuyến là đường SA; không thể chỉ là một đoạn trên cạnh.
 
 <!-- ITEM_ID: THPT-TOP15-T03; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O03; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
@@ -144,7 +144,7 @@ Một đường có thể xuyên qua, nằm trọn trong hoặc đi song song v�
 
 **Đề bài:** Trong tứ diện S.ABC, lấy M là điểm bên trong cạnh SB. Tìm giao điểm của CM với mặt phẳng (SAB).
 
-**Lời giải:** Vì SB⊂(SAB), ta có M∈(SAB). Đường CM đi qua M. Đỉnh C nằm ngoài (SAB), nên CM không thể nằm trọn trong mặt đó; nó cắt (SAB) tại duy nhất M.
+**Lời giải:** Vì \(SB\subset (SAB)\), ta có \(M\in (SAB)\). Đường CM đi qua M. Đỉnh C nằm ngoài (SAB), nên CM không thể nằm trọn trong mặt đó; nó cắt (SAB) tại duy nhất M.
 
 **Ví dụ**
 
@@ -155,11 +155,11 @@ Một đường có thể xuyên qua, nằm trọn trong hoặc đi song song v�
 <!-- ITEM_ID: THPT-TOP15-T04; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O04; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Với d:(x,y,z)=(1+t,2,3+t), d cắt (P):z=0 ở đâu?
+Với \(d:(x;y;z)=(1+t;2;3+t)\), d cắt mặt \((P):z=0\) ở đâu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-t=−3, nên d∩(P)={(-2,2,0)}.
+\(t=-3\), nên giao điểm có tọa độ \((-2;2;0)\).
 
 
 
@@ -230,7 +230,7 @@ Trong bản vẽ, hai nét không gặp nhau có thể do bị che hoặc do kh�
 
 **Đề bài:** Trong một hình hộp không suy biến ABCD.A′B′C′D′, hãy phân loại AB với A′B′, AA′ và B′C′.
 
-**Lời giải:** AB∥A′B′ vì là hai cạnh tương ứng của các mặt song song. AB và AA′ cắt tại A. AB và B′C′ không đồng phẳng, không giao nên chéo nhau. Ba quan hệ khác nhau dù cùng xuất hiện trên một hình.
+**Lời giải:** \(AB\parallel A'B'\) vì là hai cạnh tương ứng của các mặt song song. AB và AA′ cắt tại A. AB và B′C′ không đồng phẳng, không giao nên chéo nhau. Ba quan hệ khác nhau dù cùng xuất hiện trên một hình.
 
 <!-- ITEM_ID: THPT-TOP15-T06; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O06; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
@@ -292,22 +292,22 @@ Khi hai điểm di chuyển trên hai cạnh của cùng một tam giác với c
 
 > **ĐỊNH LÝ — Chứng minh song song qua tam giác**
 >
-> Đường trung bình và Thales đảo cung cấp chứng minh **trong một tam giác xác định**. Nếu M∈SA, N∈SB và SM/SA=SN/SB với M,N khác S, ta có MN∥AB. Không cần hai đoạn bằng nhau về độ dài, mà cần **hai tỉ số** tương ứng bằng nhau.
+> Đường trung bình và Thales đảo cung cấp chứng minh **trong một tam giác xác định**. Nếu \(M\in SA, N\in SB\) và \(\frac{SM}{SA}=\frac{SN}{SB}\) với M,N khác S, ta có \(MN\parallel AB\). Không cần hai đoạn bằng nhau về độ dài, mà cần **hai tỉ số** tương ứng bằng nhau.
 
 **Ví dụ**
 
-**Đề bài:** Trong tam giác SAB, M,N là trung điểm của SA,SB. Chứng minh MN∥AB và cho biết tỉ số MN/AB.
+**Đề bài:** Trong tam giác SAB, M,N là trung điểm của SA,SB. Chứng minh \(MN\parallel AB\) và cho biết tỉ số \(\frac{MN}{AB}\).
 
-**Lời giải:** Vì M,N là trung điểm, SM/SA=SN/SB=1/2. Theo định lý Thales đảo hoặc đường trung bình, MN∥AB và MN/AB=1/2. Hai điểm phải nằm trên hai cạnh xuất phát từ cùng đỉnh S.
+**Lời giải:** Vì M,N là trung điểm, \(\frac{SM}{SA}=\frac{SN}{SB}=\frac{1}{2}\). Theo định lý Thales đảo hoặc đường trung bình, \(MN\parallel AB\) và \(\frac{MN}{AB}=\frac{1}{2}\). Hai điểm phải nằm trên hai cạnh xuất phát từ cùng đỉnh S.
 
 <!-- ITEM_ID: THPT-TOP15-T08; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O08; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Nếu SM/SA=SN/SB=3/5, M,N nằm trên hai cạnh SA,SB, kết luận về MN và AB?
+Nếu \(\frac{SM}{SA}=\frac{SN}{SB}=\frac{3}{5}, M,N\) nằm trên hai cạnh SA,SB, kết luận về MN và AB?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-MN∥AB nhờ Thales đảo trong tam giác SAB.
+\(MN\parallel AB\) nhờ Thales đảo trong tam giác SAB.
 
 
 
@@ -317,7 +317,7 @@ Nếu áp dụng Thalès đảo cho hai tỉ số không cùng đỉnh, đọc *
 
 </details>
 
-**Nếu làm sai:** Nếu chỉ biết SM=SN, hãy kiểm hai cạnh SA,SB có bằng nhau hay không trước khi dùng Thales.
+**Nếu làm sai:** Nếu chỉ biết \(SM=SN\), hãy kiểm hai cạnh SA,SB có bằng nhau hay không trước khi dùng Thales.
 
 ### 2.4. Giao tuyến của hai mặt chứa đường cùng hướng
 <!-- LESSON_ID: TOP15-M09; OUTCOME_ID: TOP15-O09; ORIGINAL_SGK_OUTCOME: G11-B11-INTERSECT_PLANES; ORIGINAL_S1_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b -->
@@ -330,18 +330,18 @@ Một giao tuyến có thể khó nhìn, nhưng biết hai mặt cùng chứa nh
 
 **Ví dụ**
 
-**Đề bài:** Cho hình chóp S.ABCD có đáy ABCD là hình bình hành. Tìm giao tuyến d=(SAB)∩(SCD).
+**Đề bài:** Cho hình chóp S.ABCD có đáy ABCD là hình bình hành. Tìm giao tuyến \(d=(SAB)\cap (SCD)\).
 
-**Lời giải:** AB⊂(SAB), CD⊂(SCD) và AB∥CD. Hai mặt phân biệt cùng chứa S, nên giao tuyến d đi qua S. Trong mỗi mặt đều có đường qua S song song AB (hoặc CD); vì tính duy nhất của đường qua S theo một phương, d là đường qua S song song AB. Không kết luận d trùng cạnh AB.
+**Lời giải:** \(AB\subset (SAB), CD\subset (SCD)\) và \(AB\parallel CD\). Hai mặt phân biệt cùng chứa S, nên giao tuyến d đi qua S. Trong mỗi mặt đều có đường qua S song song AB (hoặc CD); vì tính duy nhất của đường qua S theo một phương, d là đường qua S song song AB. Không kết luận d trùng cạnh AB.
 
 <!-- ITEM_ID: THPT-TOP15-T09; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O09; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Trong chóp S.ABCD đáy hình bình hành, giao tuyến (SAD)∩(SBC) có phương của cạnh nào?
+Trong chóp S.ABCD đáy hình bình hành, giao tuyến \((SAD)\cap (SBC)\) có phương của cạnh nào?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Là đường qua S song song AD và BC vì AD∥BC.
+Là đường qua S song song AD và BC vì \(AD\parallel BC\).
 
 
 
@@ -372,32 +372,32 @@ Nếu coi giao tuyến qua S trùng cạnh AB, đọc **Kiến thức 2.4**: gia
 
 > **ĐỊNH NGHĨA — Ba quan hệ giữa đường và mặt**
 >
-> Một đường thẳng với một mặt phẳng có đúng ba khả năng: nằm trong mặt (vô số điểm chung), cắt tại một điểm, hoặc song song (không điểm chung). Với mặt z=0, xem thành phần z của đường theo tham số giúp phân loại chính xác thay vì đoán từ hình.
+> Một đường thẳng với một mặt phẳng có đúng ba khả năng: nằm trong mặt (vô số điểm chung), cắt tại một điểm, hoặc song song (không điểm chung). Với mặt \(z=0\), xem thành phần z của đường theo tham số giúp phân loại chính xác thay vì đoán từ hình.
 
 **Ví dụ**
 
-**Đề bài:** Xét (P):z=0 và các đường d:(x,y,z)=(t,0,1+t), e=(t,0,1), f=(t,0,0), t∈ℝ. Phân loại từng đường với (P).
+**Đề bài:** Xét \((P):z=0\) và các đường \(d:(x;y;z)=(t;0;1+t), e=(t;0;1), f=(t;0;0), t\in \mathbb R\). Phân loại từng đường với (P).
 
-**Lời giải:** Với d, giải 1+t=0 được t=−1, giao tại (−1,0,0). Với e, z luôn bằng 1 nên không có điểm chung với (P): e∥(P). Với f, z=0 với mọi t nên f⊂(P). Ba trường hợp khác nhau về số điểm chung.
+**Lời giải:** Với d, giải \(1+t=0\) được \(t=-1\), giao tại \((-1;0;0)\). Với e, z luôn bằng 1 nên không có điểm chung với \((P): e\parallel (P)\). Với \(f, z=0\) với mọi t nên \(f\subset (P)\). Ba trường hợp khác nhau về số điểm chung.
 
 <!-- ITEM_ID: THPT-TOP15-T10; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O10; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Đường d:(1+t,2,3) có quan hệ gì với z=0?
+Đường \(d:(x;y;z)=(1+t;2;3)\) có quan hệ gì với mặt phẳng \(z=0\)?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Song song vì z luôn bằng 3≠0.
+Song song vì z luôn bằng \(3\ne 0\).
 
 
 
 **Kiểm lỗi**
 
-Nếu nhầm đường trên cao z=3 với đường nằm trong z=0, đọc **Kiến thức 3.1**. Làm **Bài luyện 28** và **Bài luyện 36**, dùng số điểm chung để phân biệt ba quan hệ.
+Nếu nhầm đường trên cao \(z=3\) với đường nằm trong \(z=0\), đọc **Kiến thức 3.1**. Làm **Bài luyện 28** và **Bài luyện 36**, dùng số điểm chung để phân biệt ba quan hệ.
 
 </details>
 
-**Nếu làm sai:** Hãy xét phương trình z=0 với **mọi** t trước khi gọi một đường là nằm trong mặt.
+**Nếu làm sai:** Hãy xét phương trình \(z=0\) với **mọi** t trước khi gọi một đường là nằm trong mặt.
 
 ### 3.2. Điều kiện không được bỏ trong dấu hiệu
 <!-- LESSON_ID: TOP15-M11; OUTCOME_ID: TOP15-O11; ORIGINAL_SGK_OUTCOME: G11-B12-PARALLEL_TEST; ORIGINAL_S1_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b -->
@@ -406,18 +406,18 @@ Một đường dọc theo cạnh đáy luôn song song với một cạnh đáy
 
 > **ĐỊNH LÝ — Điều kiện không được bỏ trong dấu hiệu**
 >
-> Nếu d song song một đường a nằm trong (P), có **hai** khả năng: d nằm trong (P), hoặc d song song (P). Muốn kết luận d∥(P) còn phải kiểm d không nằm trong (P), ví dụ chỉ ra một điểm của d ở ngoài mặt. Hai đường chỉ “cùng hướng” chưa đủ.
+> Nếu d song song một đường a nằm trong (P), có **hai** khả năng: d nằm trong (P), hoặc d song song (P). Muốn kết luận \(d\parallel (P)\) còn phải kiểm d không nằm trong (P), ví dụ chỉ ra một điểm của d ở ngoài mặt. Hai đường chỉ “cùng hướng” chưa đủ.
 
 **Ví dụ**
 
-**Đề bài:** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC).
+**Đề bài:** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh \(MN\parallel (ABC)\).
 
-**Lời giải:** Trong tam giác SAB, MN∥AB. Vì M nằm bên trong SA và S∉(ABC), M∉(ABC), nên MN không nằm trong đáy. Mặt khác AB⊂(ABC). Theo dấu hiệu đường song song mặt phẳng, MN∥(ABC). Điều kiện MN không thuộc mặt đáy là thiết yếu.
+**Lời giải:** Trong tam giác \(SAB, MN\parallel AB\). Vì M nằm bên trong SA và \(S\notin (ABC), M\notin (ABC)\), nên MN không nằm trong đáy. Mặt khác \(AB\subset (ABC)\). Theo dấu hiệu đường song song mặt phẳng, \(MN\parallel (ABC)\). Điều kiện MN không thuộc mặt đáy là thiết yếu.
 
 <!-- ITEM_ID: THPT-TOP15-T11; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O11; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-d và a là hai đường phân biệt cùng nằm trong (P), d∥a. Có thể kết luận d∥(P) không?
+d và a là hai đường phân biệt cùng nằm trong \((P), d\parallel a\). Có thể kết luận \(d\parallel (P)\) không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -427,16 +427,16 @@ Không; d nằm trong (P) nên có vô số điểm chung với (P).
 
 **Kiểm lỗi**
 
-Nếu thấy d song song a⊂(P) mà quên d có nằm trong (P) hay không, đọc **Kiến thức 3.2**. Làm **Bài luyện 29** và **Bài luyện 37**, kiểm một điểm ngoài mặt.
+Nếu thấy d song song \(a\subset (P)\) mà quên d có nằm trong (P) hay không, đọc **Kiến thức 3.2**. Làm **Bài luyện 29** và **Bài luyện 37**, kiểm một điểm ngoài mặt.
 
 </details>
 
-**Nếu làm sai:** Nếu em chứng minh d∥a rồi dừng, cần kiểm thêm d⊄(P).
+**Nếu làm sai:** Nếu em chứng minh \(d\parallel a\) rồi dừng, cần kiểm thêm \(d\not\subset (P)\).
 
 
 <!-- MODEL_ID: SLM-TOP15-LINE-PLANE-R00; MODEL_VERSION: R01; PLACEMENT: TOP15-O11; PUBLIC_DISCOVERY_NO_MASTERY -->
 
-**Mô hình quan sát:** [Mở thí nghiệm đường–mặt](./Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html) — chỉ dùng khi chạy được HTML. Thử h=0/khác 0 và α=0/khác 0 để thấy ba trạng thái; nếu mô hình không chạy, dùng công thức mặt z=0 và đường d=(t,0,h+t·tanα) rồi giải z=0. Mô hình không làm thay chứng minh và không ghi điểm. Hình là **mặt cắt xOz**, không phải một mô hình 3D thật; giao có thể ở ngoài cửa sổ nhìn.
+**Mô hình quan sát:** [Mở thí nghiệm đường–mặt](./Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html) — chỉ dùng khi chạy được HTML. Thử \(h=0\) hoặc \(h\ne 0\) và \(\alpha =0\) hoặc \(\alpha \ne 0\) để thấy ba trạng thái; nếu mô hình không chạy, dùng công thức mặt \(z=0\) và đường \(d=(t;0;h+t\cdot \tan \alpha )\) rồi giải \(z=0\). Mô hình không làm thay chứng minh và không ghi điểm. Hình là **mặt cắt xOz**, không phải một mô hình 3D thật; giao có thể ở ngoài cửa sổ nhìn.
 
 ### 3.3. Giao tuyến khi có đường song song mặt khác
 <!-- LESSON_ID: TOP15-M12; OUTCOME_ID: TOP15-O12; ORIGINAL_SGK_OUTCOME: G11-B12-PLANE_INTERSECTION; ORIGINAL_S1_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b -->
@@ -445,22 +445,22 @@ Muốn tìm hướng giao tuyến của hai mặt, đôi khi chỉ cần một �
 
 > **TÍNH CHẤT — Giao tuyến khi có đường song song mặt khác**
 >
-> Nếu d⊂(Q), d∥(P), và hai mặt (P),(Q) cắt nhau theo g thì d,g cùng nằm trong (Q), phân biệt và không cắt nhau; vì d không có điểm chung với (P) còn g⊂(P). Suy d∥g. Đây là cách tìm phương giao tuyến, không được dùng khi (P),(Q) không cắt.
+> Nếu \(d\subset (Q), d\parallel (P)\), và hai mặt (P),(Q) cắt nhau theo g thì d,g cùng nằm trong (Q), phân biệt và không cắt nhau; vì d không có điểm chung với (P) còn \(g\subset (P)\). Suy \(d\parallel g\). Đây là cách tìm phương giao tuyến, không được dùng khi (P),(Q) không cắt.
 
 **Ví dụ**
 
-**Đề bài:** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Đặt (Q)=(SAB), (P)=(ABC). Hãy xác định quan hệ MN với giao tuyến g=(Q)∩(P).
+**Đề bài:** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Đặt \((Q)=(SAB), (P)=(ABC)\). Hãy xác định quan hệ MN với giao tuyến \(g=(Q)\cap (P)\).
 
-**Lời giải:** Ta có g=AB. Đường MN⊂(Q) và MN∥(P) vì là đường trung bình nằm ngoài đáy. MN và g cùng nằm trong (Q), phân biệt, không giao; suy MN∥g=AB. Không áp dụng khi hai mặt phẳng không có giao tuyến.
+**Lời giải:** Ta có \(g=AB\). Đường \(MN\subset (Q)\) và \(MN\parallel (P)\) vì là đường trung bình nằm ngoài đáy. MN và g cùng nằm trong (Q), phân biệt, không giao; suy \(MN\parallel g=AB\). Không áp dụng khi hai mặt phẳng không có giao tuyến.
 
 <!-- ITEM_ID: THPT-TOP15-T12; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O12; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Trong (Q), d∥(P) và g=(Q)∩(P). d và g có thể cắt nhau không?
+Trong \((Q), d\parallel (P)\) và \(g=(Q)\cap (P)\). d và g có thể cắt nhau không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Không, vì giao điểm nếu có thuộc (P), trái d∥(P); do đó d∥g.
+Không, vì giao điểm nếu có thuộc (P), trái \(d\parallel (P)\); do đó \(d\parallel g\).
 
 
 
@@ -479,28 +479,28 @@ Một mặt cắt song song đáy cắt các cạnh bên của tứ diện tại
 
 > **PHƯƠNG PHÁP — Dựng mặt phẳng cắt song song đáy**
 >
-> Để dựng mặt cắt qua M nằm trên SA và song song đáy (ABC), tìm trên SB,SC các điểm N,K có SN/SB=SK/SC=SM/SA=t. Khi 0<t<1, MN∥AB và MK∥AC, suy mặt (MNK)∥(ABC). Không dựng tùy ý N,K theo mắt.
+> Để dựng mặt cắt qua M nằm trên SA và song song đáy (ABC), tìm trên SB,SC các điểm N,K có \(\frac{SN}{SB}=\frac{SK}{SC}=\frac{SM}{SA}=t\). Khi \(0<t<1, MN\parallel AB\) và \(MK\parallel AC\), suy mặt \((MNK)\parallel (ABC)\). Không dựng tùy ý N,K theo mắt.
 
 **Ví dụ**
 
 **Đề bài:** Trong tứ diện S.ABC, M là trung điểm SA. Dựng mặt phẳng qua M song song đáy (ABC). Nó gặp SB,SC tại đâu và tạo thiết diện gì?
 
-**Lời giải:** Mặt qua M song song (ABC) gặp SB,SC lần lượt tại trung điểm N,K theo định lý Thales trong các mặt bên. Khi đó SM/SA=SN/SB=SK/SC=1/2, nên MN∥AB, MK∥AC; (MNK)∥(ABC). Thiết diện là tam giác MNK.
+**Lời giải:** Mặt qua M song song (ABC) gặp SB,SC lần lượt tại trung điểm N,K theo định lý Thales trong các mặt bên. Khi đó \(\frac{SM}{SA}=\frac{SN}{SB}=\frac{SK}{SC}=\frac{1}{2}\), nên \(MN\parallel AB, MK\parallel AC; (MNK)\parallel (ABC)\). Thiết diện là tam giác MNK.
 
 <!-- ITEM_ID: THPT-TOP15-T13; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O13; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Cho SM/SA=2/3, chọn SN/SB và SK/SC bằng bao nhiêu để mặt cắt song song đáy?
+Cho \(\frac{SM}{SA}=\frac{2}{3}\), chọn \(\frac{SN}{SB}\) và \(\frac{SK}{SC}\) bằng bao nhiêu để mặt cắt song song đáy?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Cả hai tỉ số bằng 2/3.
+Cả hai tỉ số bằng \(\frac{2}{3}\).
 
 
 
 **Kiểm lỗi**
 
-Nếu tự chọn N,K mà ba tỉ số không đều, đọc **Kiến thức 3.4**. Làm **Bài luyện 39** và **Bài luyện 44**, kiểm cùng tỉ số SM/SA, SN/SB, SK/SC.
+Nếu tự chọn N,K mà ba tỉ số không đều, đọc **Kiến thức 3.4**. Làm **Bài luyện 39** và **Bài luyện 44**, kiểm cùng tỉ số \(\frac{SM}{SA}, \frac{SN}{SB}, \frac{SK}{SC}\).
 
 </details>
 
@@ -521,32 +521,32 @@ Một mặt sàn và trần có thể song song, nhưng một vết cắt tạo 
 ### 4.1. Ba quan hệ giữa hai mặt phẳng
 <!-- LESSON_ID: TOP15-M14; OUTCOME_ID: TOP15-O14; ORIGINAL_SGK_OUTCOME: G11-B13-PLANE_POSITIONS; ORIGINAL_S1_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b -->
 
-Hai bản vẽ phương trình khác nhau có thể chỉ cùng một mặt; vì vậy trước hết cần xem chúng trùng, cắt hay thực sự ở hai tầng khác nhau. Hai phương trình z=0 và 2z=0 trông khác nhau nhưng có thực sự là hai mặt khác? Chúng có đúng cùng tập điểm nên phải kiểm tập nghiệm trước.
+Hai bản vẽ phương trình khác nhau có thể chỉ cùng một mặt; vì vậy trước hết cần xem chúng trùng, cắt hay thực sự ở hai tầng khác nhau. Hai phương trình \(z=0\) và \(2z=0\) trông khác nhau nhưng có thực sự là hai mặt khác? Chúng có đúng cùng tập điểm nên phải kiểm tập nghiệm trước.
 
 > **ĐỊNH NGHĨA — Ba quan hệ giữa hai mặt phẳng**
 >
-> Hai mặt phẳng có thể trùng, cắt theo một đường, hoặc phân biệt và song song. Điều kiện “phân biệt” rất quan trọng: hai phương trình khác cách viết vẫn có thể chỉ cùng một mặt. Mặt z=0 và z=2 song song; mặt z=0 và x=0 cắt theo đường x=z=0.
+> Hai mặt phẳng có thể trùng, cắt theo một đường, hoặc phân biệt và song song. Điều kiện “phân biệt” rất quan trọng: hai phương trình khác cách viết vẫn có thể chỉ cùng một mặt. Mặt \(z=0\) và \(z=2\) song song; mặt \(z=0\) và \(x=0\) cắt theo đường \(x=z=0\).
 
 **Ví dụ**
 
-**Đề bài:** Phân loại (P):z=0 với (Q):z=2 và (R):x=0. Hãy nêu giao tuyến nếu có.
+**Đề bài:** Phân loại \((P):z=0\) với \((Q):z=2\) và \((R):x=0\). Hãy nêu giao tuyến nếu có.
 
-**Lời giải:** (P) và (Q) không có điểm chung vì không điểm nào vừa có z=0 vừa z=2, nên song song phân biệt. (P) và (R) cùng chứa mọi điểm (0,t,0) với t thực nên cắt nhau theo đường x=z=0.
+**Lời giải:** (P) và (Q) không có điểm chung vì không điểm nào vừa có \(z=0\) vừa \(z=2\), nên song song phân biệt. (P) và (R) cùng chứa mọi điểm \((0;t;0)\) với t thực nên cắt nhau theo đường \(x=z=0\).
 
 <!-- ITEM_ID: THPT-TOP15-T14; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O14; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Hai mặt z=0 và 2z=0 trùng hay song song phân biệt?
+Hai mặt \(z=0\) và \(2z=0\) trùng hay song song phân biệt?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Trùng nhau, vì chúng cùng tập điểm z=0.
+Trùng nhau, vì chúng cùng tập điểm \(z=0\).
 
 
 
 **Kiểm lỗi**
 
-Nếu coi z=0 và 2z=0 song song phân biệt, đọc **Kiến thức 4.1**. Làm **Bài luyện 40** và **Bài luyện 50**; trước hết kiểm hai tập điểm có trùng nhau không.
+Nếu coi \(z=0\) và \(2z=0\) song song phân biệt, đọc **Kiến thức 4.1**. Làm **Bài luyện 40** và **Bài luyện 50**; trước hết kiểm hai tập điểm có trùng nhau không.
 
 </details>
 
@@ -559,18 +559,18 @@ Muốn chứng minh cả mặt phẳng song song với mặt khác, một đư�
 
 > **ĐỊNH LÝ — Dấu hiệu hai mặt song song**
 >
-> Nếu trong (P) có hai đường **cắt nhau** a,b và **cả hai** đều song song (Q), thì (P)∥(Q). Một đường a riêng lẻ không đủ: mặt (P) có thể cắt (Q) theo đường g và chứa đường a song song g nhưng không nằm trong (Q).
+> Nếu trong (P) có hai đường **cắt nhau** a,b và **cả hai** đều song song (Q), thì \((P)\parallel (Q)\). Một đường a riêng lẻ không đủ: mặt (P) có thể cắt (Q) theo đường g và chứa đường a song song g nhưng không nằm trong (Q).
 
 **Ví dụ**
 
 **Đề bài:** Trong tứ diện S.ABC, M,N,K là trung điểm SA,SB,SC. Chứng minh mặt phẳng (MNK) song song (ABC).
 
-**Lời giải:** MN∥AB và MK∥AC bởi định lý đường trung bình trong các tam giác SAB,SAC. Hai đường MN,MK cắt nhau tại M trong (MNK); chúng lần lượt song song với các đường AB,AC nằm trong (ABC) và không thuộc đáy. Theo dấu hiệu hai mặt phẳng song song, (MNK)∥(ABC).
+**Lời giải:** \(MN\parallel AB\) và \(MK\parallel AC\) bởi định lý đường trung bình trong các tam giác SAB,SAC. Hai đường MN,MK cắt nhau tại M trong (MNK); chúng lần lượt song song với các đường AB,AC nằm trong (ABC) và không thuộc đáy. Theo dấu hiệu hai mặt phẳng song song, \((MNK)\parallel (ABC)\).
 
 <!-- ITEM_ID: THPT-TOP15-T15; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O15; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Cho a,b⊂(P) nhưng a∥b và a∥(Q),b∥(Q). Có đủ kết luận (P)∥(Q) không?
+Cho \(a,b\subset (P)\) nhưng \(a\parallel b\) và \(a\parallel (Q),b\parallel (Q)\). Có đủ kết luận \((P)\parallel (Q)\) không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -580,7 +580,7 @@ Chưa đủ. Cần a và b cắt nhau trong (P), không song song với nhau.
 
 **Kiểm lỗi**
 
-Nếu chỉ có một đường a trong (P) song song (Q) mà kết luận (P)∥(Q), đọc **Kiến thức 4.2**. Làm **Bài luyện 41** và **Bài luyện 51**, cần hai đường cắt nhau trong (P).
+Nếu chỉ có một đường a trong (P) song song (Q) mà kết luận \((P)\parallel (Q)\), đọc **Kiến thức 4.2**. Làm **Bài luyện 41** và **Bài luyện 51**, cần hai đường cắt nhau trong (P).
 
 </details>
 
@@ -593,7 +593,7 @@ Nếu hai tầng sàn song song phân biệt và một mặt tường cắt tầ
 
 > **TÍNH CHẤT — Mặt thứ ba cắt hai mặt song song**
 >
-> Nếu (P)∥(Q) và (R) cắt cả hai theo các đường g,h, thì g∥h. Lý do: g,h cùng nằm trong (R); nếu cắt nhau thì điểm giao thuộc cả (P) lẫn (Q), vô lý. Từ giả thiết không giao ta thu được cặp đường song song trong mặt (R).
+> Nếu \((P)\parallel (Q)\) và (R) cắt cả hai theo các đường g,h, thì \(g\parallel h\). Lý do: g,h cùng nằm trong (R); nếu cắt nhau thì điểm giao thuộc cả (P) lẫn (Q), vô lý. Từ giả thiết không giao ta thu được cặp đường song song trong mặt (R).
 
 Ta còn có thể phát biểu mạnh hơn phần “giao tuyến song song”. Nếu một mặt phẳng \((R)\) **cắt một trong hai mặt phẳng song song phân biệt** \((P)\) và \((Q)\), thì \((R)\) cũng **phải cắt mặt còn lại**. Nếu giả sử \((R)\) song song \((Q)\), trong khi \((P)\parallel(Q)\) và \((R)\) cắt \((P)\), ta sẽ mâu thuẫn với tính duy nhất của mặt phẳng song song qua một điểm ngoài \((Q)\). Khi ấy hai giao tuyến của \((R)\) với \((P),(Q)\) song song với nhau.
 
@@ -603,13 +603,13 @@ Ta còn có thể phát biểu mạnh hơn phần “giao tuyến song song”. 
 
 **Đề bài:** Cho \((P):z=0\), \((Q):z=4\), \((R):x+y=1\). Xác định giao tuyến của \((R)\) với từng mặt \((P),(Q)\), và chứng minh quan hệ giữa hai giao tuyến.
 
-**Lời giải:** Mặt \((R)\) cắt \((P)\) theo \(g:\{x+y=1,z=0\}\). Nó cũng cắt \((Q)\) theo \(h:\{x+y=1,z=4\}\). Cả hai giao tuyến có vectơ chỉ phương \((1,-1,0)\), ở hai độ cao khác nhau nên song song phân biệt. Ở đây có thể viện dẫn ngay định lí vừa học: vì \((P)\parallel(Q)\) và \((R)\) cắt \((P)\), \((R)\) cũng cắt \((Q)\); không cần chứng minh lại điều đó. Việc tìm hai giao tuyến bằng phương trình là cách kiểm trực tiếp, không suy từ hình vẽ.
+**Lời giải:** Mặt \((R)\) cắt \((P)\) theo \(g:\{x+y=1,z=0\}\). Nó cũng cắt \((Q)\) theo \(h:\{x+y=1,z=4\}\). Cả hai giao tuyến có vectơ chỉ phương \((1;-1;0)\), ở hai độ cao khác nhau nên song song phân biệt. Ở đây có thể viện dẫn ngay định lí vừa học: vì \((P)\parallel(Q)\) và \((R)\) cắt \((P)\), \((R)\) cũng cắt \((Q)\); không cần chứng minh lại điều đó. Việc tìm hai giao tuyến bằng phương trình là cách kiểm trực tiếp, không suy từ hình vẽ.
 
 **Ví dụ**
 
-**Đề bài:** Cho (P):z=0, (Q):z=2 và (R):x=0. Tìm giao tuyến của (R) với từng mặt và phân loại chúng.
+**Đề bài:** Cho \((P):z=0, (Q):z=2\) và \((R):x=0\). Tìm giao tuyến của (R) với từng mặt và phân loại chúng.
 
-**Lời giải:** Giao tuyến g=(P)∩(R) gồm các điểm (0,t,0). Giao tuyến h=(Q)∩(R) gồm các điểm (0,t,2). Hai đường cùng hướng (0,1,0), cùng nằm trong (R), không gặp nhau nên song song. Nếu đã biết \((P)\parallel(Q)\) và \((R)\) cắt \((P)\), định lí bảo đảm giao tuyến thứ hai tồn tại. Trong ví dụ này ta viết rõ cả hai giao tuyến để kiểm.
+**Lời giải:** Giao tuyến \(g=(P)\cap (R)\) gồm các điểm \((0;t;0)\). Giao tuyến \(h=(Q)\cap (R)\) gồm các điểm \((0;t;2)\). Hai đường cùng hướng \((0;1;0)\), cùng nằm trong (R), không gặp nhau nên song song. Nếu đã biết \((P)\parallel(Q)\) và \((R)\) cắt \((P)\), định lí bảo đảm giao tuyến thứ hai tồn tại. Trong ví dụ này ta viết rõ cả hai giao tuyến để kiểm.
 
 <!-- ITEM_ID: THPT-TOP15-T16; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O16; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
@@ -637,19 +637,19 @@ Khi mặt cắt đồng dạng với đáy, độ dài thay theo một hệ số
 
 > **TÍNH CHẤT — Mặt cắt song song và tỉ số đồng dạng**
 >
-> Mặt cắt song song đáy hình chóp tạo ra đa giác đồng dạng với đáy: tỉ số mọi độ dài là t, tỉ số chu vi là t, còn tỉ số **diện tích là t²**. Điều này đúng khi mặt cắt thật sự song song đáy và tỉ số trên các cạnh xuất phát từ đỉnh S là như nhau.
+> Mặt cắt song song đáy hình chóp tạo ra đa giác đồng dạng với đáy: tỉ số mọi độ dài là t, tỉ số chu vi là t, còn **tỉ số diện tích là \(t^2\)**. Điều này đúng khi mặt cắt thật sự song song đáy và tỉ số trên các cạnh xuất phát từ đỉnh S là như nhau.
 
 ### Định lí Thalès trong không gian
 
 Ở tam giác phẳng, các đường song song chia hai cạnh theo cùng tỉ số. Trong không gian, **ba mặt phẳng đôi một song song phân biệt** đóng vai trò ba đường song song ấy: nếu chúng cắt hai đường thẳng tại các điểm tương ứng thì các đoạn tương ứng cũng tỉ lệ. Định lí này là nền tảng để tính độ cao, vị trí mặt cắt và phân chia các thanh trong những mô hình ba chiều.
 
-> **ĐỊNH LÍ — Thalès trong không gian.** Ba mặt phẳng \((P),(Q),(R)\) đôi một song song phân biệt cắt một đường thẳng tại \(A,B,C\) và một đường thẳng khác tại \(A',B',C'\) theo **cùng thứ tự mặt phẳng**. Khi đó \(\displaystyle\frac{AB}{BC}=\frac{A'B'}{B'C'}\) (các mẫu phải khác \(0\)); nếu xét đoạn có hướng, dùng các tỉ số đại số tương ứng. Không dùng định lí nếu các mặt phẳng không đôi một song song hoặc một cát tuyến không cắt đủ ba mặt.
+> **ĐỊNH LÍ — Thalès trong không gian.** Ba mặt phẳng \((P),(Q),(R)\) đôi một song song phân biệt cắt một đường thẳng tại \(A,B,C\) và một đường thẳng khác tại \(A',B',C'\) theo **cùng thứ tự mặt phẳng**. Khi đó \(\frac{AB}{BC}=\frac{A'B'}{B'C'}\) (các mẫu phải khác \(0\)); nếu xét đoạn có hướng, dùng các tỉ số đại số tương ứng. Không dùng định lí nếu các mặt phẳng không đôi một song song hoặc một cát tuyến không cắt đủ ba mặt.
 
 **Ví dụ**
 
-**Đề bài:** Ba mặt song song \(z=0,z=2,z=5\) cắt hai đường \(d:(0,0,t)\), \(e:(t,2,2t)\) ở \(t=0,2,5\) trên \(d\) và \(t=0,1,5/2\) trên \(e\). Tính các độ dài đoạn liên tiếp trên từng cát tuyến, rồi so tỉ số của chúng.
+**Đề bài:** Ba mặt song song \(z=0,z=2,z=5\) cắt hai đường \(d:(0;0;t)\), \(e:(t;2;2t)\) ở \(t=0,2,5\) trên \(d\) và \(t=0,1,\frac52\) trên \(e\). Tính các độ dài đoạn liên tiếp trên từng cát tuyến, rồi so tỉ số của chúng.
 
-**Lời giải:** Trên \(d\), hai đoạn liên tiếp dài \(2\) và \(3\); trên \(e\), vectơ chỉ phương \((1,0,2)\) có độ dài \(\sqrt5\), nên hai đoạn dài \(\sqrt5\) và \(\frac32\sqrt5\). Tỉ số hai đoạn là \(2/3\) trên cả hai cát tuyến. Chọn tỉ số thay vì đo trực tiếp từ hình chiếu.
+**Lời giải:** Trên \(d\), hai đoạn liên tiếp dài \(2\) và \(3\); trên \(e\), vectơ chỉ phương \((1;0;2)\) có độ dài \(\sqrt5\), nên hai đoạn dài \(\sqrt5\) và \(\frac32\sqrt5\). Tỉ số hai đoạn là \(\frac23\) trên cả hai cát tuyến. Chọn tỉ số thay vì đo trực tiếp từ hình chiếu.
 
 ### Hình lăng trụ và hình hộp
 
@@ -659,30 +659,30 @@ Không phải khối nào có hai mặt song song cũng là hình chóp cụt. T
 
 **Ví dụ**
 
-**Đề bài:** Cho lăng trụ tam giác có \(A(0,0,0),B(2,0,0),C(0,3,0)\) và ba đỉnh trên lần lượt là \(A'(1,0,4),B'(3,0,4),C'(1,3,4)\). Kiểm tra hai đáy là các hình bằng nhau và mặt \(ABB'A'\) là hình bình hành; so diện tích hai đáy.
+**Đề bài:** Cho lăng trụ tam giác có \(A(0;0;0),B(2;0;0),C(0;3;0)\) và ba đỉnh trên lần lượt là \(A'(1;0;4),B'(3;0;4),C'(1;3;4)\). Kiểm tra hai đáy là các hình bằng nhau và mặt \(ABB'A'\) là hình bình hành; so diện tích hai đáy.
 
-**Lời giải:** Khi đó ba vectơ cạnh bên đều là \((1,0,4)\), đáy trên là bản tịnh tiến của đáy dưới. Ta có \(\overrightarrow{AB}=(2,0,0)=\overrightarrow{A'B'}\); vì hai cặp cạnh đối song song và bằng nhau, mặt \(ABB'A'\) là hình bình hành. Hai đáy đều có diện tích \(3\), **không giảm theo bình phương tỉ số** như các mặt cắt thu nhỏ của hình chóp.
+**Lời giải:** Khi đó ba vectơ cạnh bên đều là \((1;0;4)\), đáy trên là bản tịnh tiến của đáy dưới. Ta có \(\overrightarrow{AB}=(2;0;0)=\overrightarrow{A'B'}\); vì hai cặp cạnh đối song song và bằng nhau, mặt \(ABB'A'\) là hình bình hành. Hai đáy đều có diện tích \(3\), **không giảm theo bình phương tỉ số** như các mặt cắt thu nhỏ của hình chóp.
 
 **Ví dụ**
 
-**Đề bài:** Trong tứ diện S.ABC, mặt (MNK) song song đáy và SM/SA=3/5. Nếu diện tích ABC bằng 75 cm², tính diện tích MNK.
+**Đề bài:** Trong tứ diện S.ABC, mặt (MNK) song song đáy và \(\frac{SM}{SA}=\frac{3}{5}\). Nếu diện tích ABC bằng \(75\,\mathrm{cm}^2\), tính diện tích MNK.
 
-**Lời giải:** Do các tam giác MNK và ABC đồng dạng với tỉ số độ dài t=3/5, diện tích tỉ lệ t². Vậy S_MNK=(3/5)²×75=27 cm². Không dùng 3/5 trực tiếp cho diện tích.
+**Lời giải:** Do các tam giác MNK và ABC đồng dạng với tỉ số độ dài \(t=\frac{3}{5}\), diện tích tỉ lệ \(t^2\). Vậy \(S_{MNK}=(\frac{3}{5})^2\times 75=27\,\mathrm{cm}^2\). Không dùng \(\frac{3}{5}\) trực tiếp cho diện tích.
 
 <!-- ITEM_ID: THPT-TOP15-T17; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O17; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Khi t=2/5, diện tích đáy 100 cm², diện tích thiết diện bao nhiêu?
+Khi \(t=\frac{2}{5}\), diện tích đáy \(100\,\mathrm{cm}^2\), diện tích thiết diện bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(2/5)²·100=16 cm².
+\((\frac{2}{5})^2\cdot 100=16\,\mathrm{cm}^2\).
 
 
 
 **Kiểm lỗi**
 
-Nếu lấy t thay cho t² làm tỉ số diện tích, đọc **Kiến thức 4.4** và Thalès trong không gian. Làm **Bài luyện 45** và **Bài luyện 49**, phân biệt tỉ số cạnh/chu vi và diện tích.
+Nếu lấy t thay cho \(t^2\) làm tỉ số diện tích, đọc **Kiến thức 4.4** và Thalès trong không gian. Làm **Bài luyện 45** và **Bài luyện 49**, phân biệt tỉ số cạnh/chu vi và diện tích.
 
 </details>
 
@@ -707,32 +707,32 @@ Thay vì đổ bóng thẳng đứng, ta có thể chiếu theo một phương n
 
 > **ĐỊNH NGHĨA — Phép chiếu theo một phương cố định**
 >
-> Chọn mặt chiếu (P) và phương v **không song song (P)**. Qua mỗi điểm M có duy nhất đường theo phương v cắt (P) tại ảnh M′; vì vậy phép chiếu được xác định trên mọi điểm. Với (P):z=0 và v=(1,0,1), ảnh của (x,y,z) là T(x,y,z)=(x−z,y,0).
+> Chọn mặt chiếu (P) và phương v **không song song (P)**. Qua mỗi điểm M có duy nhất đường theo phương v cắt (P) tại ảnh M′; vì vậy phép chiếu được xác định trên mọi điểm. Với \((P):z=0\) và \(v=(1;0;1)\), ảnh của \((x;y;z)\) là \(T(x;y;z)=(x-z;y;0)\).
 
 **Ví dụ**
 
-**Đề bài:** Chiếu song song lên mặt (P):z=0 theo vectơ v=(1,0,1). Tìm ảnh của điểm M(1,2,3).
+**Đề bài:** Chiếu song song lên mặt \((P):z=0\) theo vectơ \(v=(1;0;1)\). Tìm ảnh của điểm \(M(1;2;3)\).
 
-**Lời giải:** Đường chiếu qua M có dạng M+λv=(1+λ,2,3+λ). Đặt z=0 được λ=−3; khi đó M′=(−2,2,0). Vậy T(x,y,z)=(x−z,y,0). Phương v không song song (P) vì có thành phần z≠0.
+**Lời giải:** Đường chiếu qua M có tọa độ \((1+\lambda;2;3+\lambda)\). Đặt \(z=0\) được \(\lambda=-3\); khi đó \(M'(-2;2;0)\). Vậy \(T(x;y;z)=(x-z;y;0)\). Phương chiếu không song song mặt \((P)\) vì có thành phần z khác 0.
 
 <!-- ITEM_ID: THPT-TOP15-T18; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O18; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Tìm ảnh N(3,−1,2) dưới phép chiếu T(x,y,z)=(x−z,y,0).
+Tìm ảnh \(N(3;-1;2)\) dưới phép chiếu \(T(x;y;z)=(x-z;y;0)\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-N′=(1,−1,0). Kiểm z′=0 và N−N′=2(1,0,1).
+\(N'(1;-1;0)\). Kiểm cao độ của ảnh bằng 0 và \(\overrightarrow{N'N}=2(1;0;1)\) cùng phương chiếu.
 
 
 
 **Kiểm lỗi**
 
-Nếu chiếu theo phương song song z=0 mà tưởng mọi điểm đều có ảnh, đọc **Kiến thức 5.1**. Làm **Bài luyện 54** và **Bài luyện 63**; giải tham số tại z=0.
+Nếu chiếu theo phương song song \(z=0\) mà tưởng mọi điểm đều có ảnh, đọc **Kiến thức 5.1**. Làm **Bài luyện 54** và **Bài luyện 63**; giải tham số tại \(z=0\).
 
 </details>
 
-**Nếu làm sai:** Nếu phương chiếu v có tọa độ z bằng 0, đường qua điểm ngoài z=0 sẽ không gặp mặt; cần đổi phương.
+**Nếu làm sai:** Nếu phương chiếu v có tọa độ z bằng 0, đường qua điểm ngoài \(z=0\) sẽ không gặp mặt; cần đổi phương.
 
 ### 5.2. Vì sao một đoạn có thể co thành điểm
 <!-- LESSON_ID: TOP15-M19; OUTCOME_ID: TOP15-O19; ORIGINAL_SGK_OUTCOME: G11-B14-DEGENERACY; ORIGINAL_S1_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b -->
@@ -745,18 +745,18 @@ Tùy hướng chiếu, một đoạn có thể thu ngắn đến đúng một đ
 
 **Ví dụ**
 
-**Đề bài:** Với phép chiếu T(x,y,z)=(x−z,y,0), xét U(1,2,3), V(3,2,5). Chứng minh cả đoạn UV có một ảnh duy nhất.
+**Đề bài:** Với phép chiếu \(T(x;y;z)=(x-z;y;0)\), xét \(U(1;2;3), V(3;2;5)\). Chứng minh cả đoạn UV có một ảnh duy nhất.
 
-**Lời giải:** T(U)=(-2,2,0) và T(V)=(-2,2,0). Với X=U+t(V-U)=(1+2t,2,3+2t), ta có T(X)=(-2,2,0) với mọi t∈[0,1]. Đoạn UV song song phương (1,0,1), nên toàn bộ ảnh co thành một điểm.
+**Lời giải:** \(T(U)=(-2;2;0)\) và \(T(V)=(-2;2;0)\). Với điểm X trên UV có tọa độ \((1+2t;2;3+2t)\), \(t\in[0;1]\), ta có \(T(X)=(-2;2;0)\) với mọi t trong đoạn đó. Đoạn UV song song phương \((1;0;1)\), nên toàn bộ ảnh co thành một điểm.
 
 <!-- ITEM_ID: THPT-TOP15-T19; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O19; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Đường d:(x,y,z)=(1+t,2,3+t) có ảnh qua T là đường hay điểm?
+Đường \(d:(x;y;z)=(1+t;2;3+t)\) có ảnh qua T là đường hay điểm?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Một điểm: T(1+t,2,3+t)=(-2,2,0) với mọi t.
+Một điểm: \(T(1+t;2;3+t)=(-2;2;0)\) với mọi t.
 
 
 
@@ -779,34 +779,34 @@ Phép chiếu song song thay đổi vị trí nhưng giữ cách chia đoạn th
 
 Tỉ số được bảo toàn không chỉ khi hai đoạn nằm **trên một đường thẳng**, mà còn khi hai đoạn nằm trên **hai đường thẳng song song** và ảnh các đoạn không co thành điểm. Lý do là hai đoạn đã cùng phương, nên khi cùng chịu một phép chiếu affine, độ dài của mỗi đoạn đều nhân với **cùng một hệ số** theo phương ấy.
 
-> **TÍNH CHẤT — Bảo toàn tỉ số trên các đường song song.** Nếu \(AB\parallel CD\) và dưới phép chiếu song song các đoạn \(A'B',C'D'\) đều không suy biến, thì \(\displaystyle\frac{A'B'}{C'D'}=\frac{AB}{CD}\). Cần phân biệt **bảo toàn tỉ số cùng phương** với **bảo toàn độ dài**, điều mà phép chiếu xiên không đảm bảo.
+> **TÍNH CHẤT — Bảo toàn tỉ số trên các đường song song.** Nếu \(AB\parallel CD\) và dưới phép chiếu song song các đoạn \(A'B',C'D'\) đều không suy biến, thì \(\frac{A'B'}{C'D'}=\frac{AB}{CD}\). Cần phân biệt **bảo toàn tỉ số cùng phương** với **bảo toàn độ dài**, điều mà phép chiếu xiên không đảm bảo.
 
 **Ví dụ**
 
-**Đề bài:** Dưới \(T(x,y,z)=(x-z,y,0)\), lấy \(A(0,0,0)\), \(B(2,0,1)\), \(C(0,1,3)\), \(D(4,1,5)\). Hai đoạn \(AB,CD\) song song. Tính độ dài và tỉ số trước và sau chiếu.
+**Đề bài:** Dưới \(T(x;y;z)=(x-z;y;0)\), lấy \(A(0;0;0)\), \(B(2;0;1)\), \(C(0;1;3)\), \(D(4;1;5)\). Hai đoạn \(AB,CD\) song song. Tính độ dài và tỉ số trước và sau chiếu.
 
 **Lời giải:** \(\overrightarrow{AB}=(2;0;1)\), \(\overrightarrow{CD}=(4;0;2)=2\overrightarrow{AB}\). Do đó \(AB=\sqrt5\), \(CD=2\sqrt5\). Ảnh các đầu mút là \(A'(0;0;0)\), \(B'(1;0;0)\), \(C'(-3;1;0)\), \(D'(-1;1;0)\); suy ra \(A'B'=1\), \(C'D'=2\). Mỗi độ dài đều bị nhân với cùng hệ số \(\frac1{\sqrt5}\), nên \(\frac{AB}{CD}=\frac12=\frac{A'B'}{C'D'}\). Đây là điều được bảo toàn: tỉ số của hai đoạn cùng phương không suy biến, chứ không phải độ dài từng đoạn.
 
 **Ví dụ**
 
-**Đề bài:** Cho A(0,0,1), B(4,2,1), M là trung điểm AB. Dưới T(x,y,z)=(x−z,y,0), hãy tính ảnh của ba điểm và kiểm tính trung điểm.
+**Đề bài:** Cho \(A(0;0;1), B(4;2;1), M\) là trung điểm AB. Dưới \(T(x;y;z)=(x-z;y;0)\), hãy tính ảnh của ba điểm và kiểm tính trung điểm.
 
-**Lời giải:** A′=(-1,0,0), B′=(3,2,0). Trung điểm M=(2,1,1) nên M′=(1,1,0), đúng bằng (A′+B′)/2. Vì A′≠B′, khái niệm tỉ số đoạn ảnh có nghĩa; nếu A′=B′ thì không được chia tỉ số độ dài.
+**Lời giải:** \(A'(-1;0;0), B'(3;2;0)\). Trung điểm \(M(2;1;1)\) có ảnh \(M'(1;1;0)\), đúng bằng tọa độ trung điểm của đoạn \(A'B'\). Vì \(A'\ne B'\), tỉ số đoạn ảnh có nghĩa; nếu \(A'=B'\) thì không được chia cho độ dài đoạn ảnh bằng 0.
 
 <!-- ITEM_ID: THPT-TOP15-T20; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O20; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Nếu M là trung điểm AB và A′≠B′, M′ nằm ở đâu?
+Nếu M là trung điểm AB và \(A'\ne B', M'\) nằm ở đâu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Là trung điểm A′B′; điều kiện A′≠B′ loại trường hợp đường ảnh co thành điểm.
+Là trung điểm A′B′; điều kiện \(A'\ne B'\) loại trường hợp đường ảnh co thành điểm.
 
 
 
 **Kiểm lỗi**
 
-Nếu chia tỉ số độ dài ảnh khi A′=B′, đọc **Kiến thức 5.3**. Làm **Bài luyện 57** và **Bài luyện 65**, kiểm ảnh đoạn không suy biến trước.
+Nếu chia tỉ số độ dài ảnh khi \(A'=B'\), đọc **Kiến thức 5.3**. Làm **Bài luyện 57** và **Bài luyện 65**, kiểm ảnh đoạn không suy biến trước.
 
 </details>
 
@@ -827,15 +827,15 @@ Một hình chữ nhật thật có thể hiện thành hình bình hành xiên 
 
 **Ví dụ**
 
-**Đề bài:** Xét đường tròn \(y^2+z^2=4\) trong mặt \(x=0\) và phép chiếu lên \(z=0\) theo vectơ \((1,0,2)\). Tìm phương trình hình chiếu trên mặt nhận ảnh, hai bán trục và giải thích vì sao không đọc bán kính thật từ trục ngắn.
+**Đề bài:** Xét đường tròn \(y^2+z^2=4\) trong mặt \(x=0\) và phép chiếu lên \(z=0\) theo vectơ \((1;0;2)\). Tìm phương trình hình chiếu trên mặt nhận ảnh, hai bán trục và giải thích vì sao không đọc bán kính thật từ trục ngắn.
 
-**Lời giải:** Điểm \((0,y,z)\) có ảnh \((-z/2,y,0)\), nên \(z=-2x'\), \(y=y'\). Phương trình ảnh là \(4x'^2+y'^2=4\), tức \(\frac{x'^2}{1}+\frac{y'^2}{4}=1\), một elip. Hai bán trục của hình chiếu dài \(1\) và \(2\), còn bán kính của đường tròn gốc bằng \(2\); không suy bán kính thật bằng trục ngắn trên hình chiếu.
+**Lời giải:** Điểm \((0;y;z)\) có ảnh \((-\frac z2;y;0)\), nên \(z=-2x'\), \(y=y'\). Phương trình ảnh là \(4x'^2+y'^2=4\), tức \(\frac{x'^2}{1}+\frac{y'^2}{4}=1\), một elip. Hai bán trục của hình chiếu dài \(1\) và \(2\), còn bán kính của đường tròn gốc bằng \(2\); không suy bán kính thật bằng trục ngắn trên hình chiếu.
 
 **Ví dụ**
 
-**Đề bài:** Cho A(0,0,0), B(2,0,0), C(2,1,1), D(0,1,1). Dưới T(x,y,z)=(x−z,y,0), chứng minh ảnh là hình bình hành không có góc vuông tại A′.
+**Đề bài:** Cho \(A(0;0;0), B(2;0;0), C(2;1;1), D(0;1;1)\). Dưới \(T(x;y;z)=(x-z;y;0)\), chứng minh ảnh là hình bình hành không có góc vuông tại A′.
 
-**Lời giải:** Trong hình gốc \(\overrightarrow{AB}=(2,0,0)\), \(\overrightarrow{AD}=(0,1,1)\) có tích vô hướng \(\overrightarrow{AB}\cdot\overrightarrow{AD}=0\), nên ABCD là hình chữ nhật (các cạnh đối song song). Ảnh: A′=(0,0,0), B′=(2,0,0), C′=(1,1,0), D′=(-1,1,0). Ta có \(\overrightarrow{A′B′}=(2,0,0)=\overrightarrow{D′C′}\), \(\overrightarrow{A′D′}=(-1,1,0)=\overrightarrow{B′C′}\), nên ảnh là hình bình hành. Nhưng \(\overrightarrow{A′B′}\cdot\overrightarrow{A′D′}=-2\ne0\), do đó góc A′ không vuông.
+**Lời giải:** Trong hình gốc \(\overrightarrow{AB}=(2;0;0)\), \(\overrightarrow{AD}=(0;1;1)\) có tích vô hướng \(\overrightarrow{AB}\cdot\overrightarrow{AD}=0\), nên ABCD là hình chữ nhật (các cạnh đối song song). Ảnh: \(A'=(0;0;0), B'=(2;0;0), C'=(1;1;0), D'=(-1;1;0)\). Ta có \(\overrightarrow{A'B'}=(2;0;0)=\overrightarrow{D'C'}\), \(\overrightarrow{A'D'}=(-1;1;0)=\overrightarrow{B'C'}\), nên ảnh là hình bình hành. Nhưng \(\overrightarrow{A'B'}\cdot\overrightarrow{A'D'}=-2\ne0\), do đó góc A′ không vuông.
 
 <!-- ITEM_ID: THPT-TOP15-T21; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O21; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
@@ -859,7 +859,7 @@ Nếu suy giữ nguyên góc vuông vì hình chiếu còn hai cặp cạnh đ�
 ### 5.5. Kết nối thiết diện, song song và phép chiếu
 <!-- LESSON_ID: TOP15-M22; OUTCOME_ID: TOP15-O22; ORIGINAL_SGK_OUTCOME: G11-CHIV-INTEGRATED; ORIGINAL_S1_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b -->
 
-Thiết diện, tỉ số đồng dạng và hình chiếu là ba phép nhìn khác nhau. Hãy tính riêng diện tích mặt cắt trước khi so với bóng chiếu, không đồng nhất chúng vô điều kiện. Ta có thể dùng cùng một tỉ số độ dài t cho cạnh đáy và diện tích mặt cắt không? Không: diện tích dùng t², còn diện tích ảnh chiếu cần xét riêng phương chiếu.
+Thiết diện, tỉ số đồng dạng và hình chiếu là ba phép nhìn khác nhau. Hãy tính riêng diện tích mặt cắt trước khi so với bóng chiếu, không đồng nhất chúng vô điều kiện. Ta có thể dùng cùng một tỉ số độ dài t cho cạnh đáy và diện tích mặt cắt không? Không: diện tích dùng \(t^2\), còn diện tích ảnh chiếu cần xét riêng phương chiếu.
 
 > **PHƯƠNG PHÁP — Kết nối thiết diện, song song và phép chiếu**
 >
@@ -867,18 +867,18 @@ Thiết diện, tỉ số đồng dạng và hình chiếu là ba phép nhìn kh
 
 **Ví dụ**
 
-**Đề bài:** Cho S(0,0,2), A(0,0,0), B(2,0,0), C(0,2,0). Lấy M,N,K là trung điểm SA,SB,SC. Tính diện tích MNK và ABC, rồi chiếu MNK vuông góc xuống z=0.
+**Đề bài:** Cho \(S(0;0;2), A(0;0;0), B(2;0;0), C(0;2;0)\). Lấy M,N,K là trung điểm SA,SB,SC. Tính diện tích MNK và ABC, rồi chiếu MNK vuông góc xuống \(z=0\).
 
 **Lời giải:** \(M(0;0;1),\ N(1;0;1),\ K(0;1;1)\) nên tam giác MNK vuông tại M, diện tích \(\frac12\). Tam giác ABC vuông tại A, diện tích 2. Tỉ số \(\frac14=(\frac12)^2\) đúng bình phương hệ số đồng dạng. Chiếu theo trục z được \(M'(0;0;0),\ N'(1;0;0),\ K'(0;1;0)\), tam giác ảnh có diện tích \(\frac12\) vì hai mặt đều ngang và phép chiếu giữa hai mặt này là một phép tịnh tiến. Không suy quy tắc bảo toàn diện tích cho mặt chứa hình bất kỳ.
 
 <!-- ITEM_ID: THPT-TOP15-T22; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O22; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
-Nếu thay các trung điểm bằng các điểm có t=3/5, mặt cắt có tỉ số diện tích so với đáy là bao nhiêu?
+Nếu thay các trung điểm bằng các điểm có \(t=\frac{3}{5}\), mặt cắt có tỉ số diện tích so với đáy là bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Là 9/25; không nhầm với t=3/5 áp dụng cho chu vi.
+Là \(\frac{9}{25}\); không nhầm với \(t=\frac{3}{5}\) áp dụng cho chu vi.
 
 
 
@@ -910,7 +910,7 @@ Hãy tự giải mỗi bài vào vở trước khi mở **Lời giải**. Trư�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Có, AB⊂(P).
+**Đáp án:** Có, \(AB\subset (P)\).
 
 **Lời giải:** Theo tiên đề: nếu hai điểm phân biệt của một đường thuộc mặt phẳng thì đường đó nằm trong mặt phẳng.
 
@@ -945,12 +945,12 @@ Hãy tự giải mỗi bài vào vở trước khi mở **Lời giải**. Trư�
 
 **Đáp án:** M.
 
-**Lời giải:** Vì M∈SB⊂(SAB) và C không nằm trong (SAB), đường CM gặp mặt tại M.
+**Lời giải:** Vì \(M\in SB\subset (SAB)\) và C không nằm trong (SAB), đường CM gặp mặt tại M.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B10-P03; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài luyện 5.** Cho đường a và A∉a. Có bao nhiêu mặt phẳng chứa a và A?
+**Bài luyện 5.** Cho đường a và \(A\notin a\). Có bao nhiêu mặt phẳng chứa a và A?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -972,14 +972,14 @@ Hãy tự giải mỗi bài vào vở trước khi mở **Lời giải**. Trư�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B10-W01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Bài luyện 7.** Trong tứ diện S.ABC, M∈SA, N∈SB, K∈SC là ba điểm trong cạnh. Tìm giao tuyến của (SMN) và (SBC); rồi cho biết thiết diện (MNK) của tứ diện.
+**Bài luyện 7.** Trong tứ diện \(S.ABC, M\in SA, N\in SB, K\in SC\) là ba điểm trong cạnh. Tìm giao tuyến của (SMN) và (SBC); rồi cho biết thiết diện (MNK) của tứ diện.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án và lời giải:** Do M∈SA,N∈SB nên (SMN)=(SAB); giao (SAB)∩(SBC)=SB. Thiết diện (MNK) là tam giác MNK; giao với (SAB),(SBC),(SAC) lần lượt MN,NK,KM.
+**Đáp án và lời giải:** Do \(M\in SA,N\in SB\) nên \((SMN)=(SAB)\); giao \((SAB)\cap (SBC)=SB\). Thiết diện (MNK) là tam giác MNK; giao với (SAB),(SBC),(SAC) lần lượt MN,NK,KM.
 
 **Rubric 4 điểm:**
-1. Xác định (SMN)=(SAB) — 1 điểm.
+1. Xác định \((SMN)=(SAB)\) — 1 điểm.
 2. Tìm hai điểm chung S,B và giao tuyến SB — 1 điểm.
 3. Liệt kê đúng ba đoạn giao trên các mặt — 1 điểm.
 4. Kết luận tam giác và điều kiện điểm trong cạnh — 1 điểm.
@@ -987,7 +987,7 @@ Hãy tự giải mỗi bài vào vở trước khi mở **Lời giải**. Trư�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B10-W02-ANCHOR; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Bài luyện 8.** Cho tứ diện S.ABC và P∈AB (khác A,B). Mặt phẳng (SCP) cắt tứ diện theo thiết diện nào? Giải thích từng cạnh của thiết diện.
+**Bài luyện 8.** Cho tứ diện S.ABC và \(P\in AB\) (khác A, B). Mặt phẳng (SCP) cắt tứ diện theo thiết diện nào? Giải thích từng cạnh của thiết diện.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1004,33 +1004,33 @@ Hãy tự giải mỗi bài vào vở trước khi mở **Lời giải**. Trư�
 **Bài luyện và tự luận của chuyên đề**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P06; OUTCOME_ID: TOP15-O01; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 9.** Cho A,B phân biệt thuộc (P), M∈AB, C nằm ngoài (P). Hỏi M∈(P) không và AC⊂(P) có đúng không?
+**Bài luyện 9.** Cho A,B phân biệt thuộc \((P), M\in AB, C\) nằm ngoài (P). Hỏi \(M\in (P)\) không và \(AC\subset (P)\) có đúng không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-M∈(P) vì AB⊂(P). AC không nằm trọn (P), do C nằm ngoài (P).
+\(M\in (P)\) vì \(AB\subset (P)\). AC không nằm trọn (P), do C nằm ngoài (P).
 
 
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P07; OUTCOME_ID: TOP15-O02; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 10.** Xét ba điểm A(0,0,0),B(1,0,0),C(2,0,0). Chúng có xác định duy nhất một mặt phẳng không? Thêm D(0,1,0) thì (ABD) có duy nhất không?
+**Bài luyện 10.** Xét ba điểm \(A(0;0;0),B(1;0;0),C(2;0;0)\). Chúng có xác định duy nhất một mặt phẳng không? Thêm \(D(0;1;0)\) thì (ABD) có duy nhất không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-A,B,C thẳng hàng theo Ox nên không xác định một mặt duy nhất. A,B,D không thẳng hàng nên (ABD) duy nhất, là z=0.
+A,B,C thẳng hàng theo Ox nên không xác định một mặt duy nhất. A,B,D không thẳng hàng nên (ABD) duy nhất, là \(z=0\).
 
 
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P08; OUTCOME_ID: TOP15-O03; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 11.** Trong tứ diện S.ABC, tìm (SAC)∩(SBC). Chỉ ra hai điểm chung hợp lệ.
+**Bài luyện 11.** Trong tứ diện S.ABC, tìm \((SAC)\cap (SBC)\). Chỉ ra hai điểm chung hợp lệ.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1043,20 +1043,20 @@ Hai mặt có S,C chung và phân biệt; giao tuyến là SC.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P09; OUTCOME_ID: TOP15-O04; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 12.** Cho d:(x,y,z)=(2+t,1,4−2t), (P):z=0. Tìm d∩(P); đường e:(t,1,4) có cắt (P) không?
+**Bài luyện 12.** Cho \(d:(x;y;z)=(2+t;1;4-2t), (P):z=0\). Tìm \(d\cap (P)\); đường \(e:(t;1;4)\) có cắt (P) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-Với d: 4−2t=0 ⇒ t=2, giao tại (4,1,0). e có z=4 với mọi t nên song song (P), không cắt.
+Với \(d: 4-2t=0 \Rightarrow  t=2\), giao tại \((4;1;0)\). e có \(z=4\) với mọi t nên song song (P), không cắt.
 
 
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P10; OUTCOME_ID: TOP15-O05; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 13.** Trong tứ diện S.ABC, P∈AB và Q∈AC là các điểm trong cạnh. Mặt (SPQ) có thiết diện gì? Nêu các đoạn giao.
+**Bài luyện 13.** Trong tứ diện \(S.ABC, P\in AB\) và \(Q\in AC\) là các điểm trong cạnh. Mặt (SPQ) có thiết diện gì? Nêu các đoạn giao.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1069,15 +1069,15 @@ Thiết diện tam giác SPQ: các đoạn SP trên (SAB), SQ trên (SAC), PQ tr
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-W03; OUTCOME_ID: TOP15-O05; ROLE: TOPIC_WRITTEN; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 14.** Trong tứ diện S.ABC, P là trung điểm AB, Q là trung điểm AC. Xét mặt (SPQ). a) Xác định thiết diện. b) Chứng minh PQ∥BC. c) Nếu BC=10 cm, tính PQ.
+**Bài luyện 14.** Trong tứ diện S.ABC, P là trung điểm AB, Q là trung điểm AC. Xét mặt (SPQ). a) Xác định thiết diện. b) Chứng minh \(PQ\parallel BC\). c) Nếu \(BC=10\,\mathrm{cm}\), tính PQ.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 
 
-a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bên. b) Trong tam giác ABC, P,Q là trung điểm AB,AC nên PQ∥BC. c) PQ=BC/2=5 cm.
+a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bên. b) Trong tam giác ABC, P,Q là trung điểm AB,AC nên \(PQ\parallel BC\). c) \(PQ=\frac{BC}{2}=5\,\mathrm{cm}\).
 
-**Rubric:** (1) Xác định ba đoạn thiết diện SP,SQ,PQ — 1 điểm; (2) Nêu P,Q là trung điểm của hai cạnh trong tam giác ABC — 1 điểm; (3) Dùng định lý đường trung bình để chứng minh PQ∥BC — 1 điểm; (4) Tính PQ=5 cm, đúng đơn vị — 1 điểm.
+**Rubric:** (1) Xác định ba đoạn thiết diện SP,SQ,PQ — 1 điểm; (2) Nêu P,Q là trung điểm của hai cạnh trong tam giác ABC — 1 điểm; (3) Dùng định lý đường trung bình để chứng minh \(PQ\parallel BC\) — 1 điểm; (4) Tính \(PQ=5\,\mathrm{cm}\), đúng đơn vị — 1 điểm.
 
 
 
@@ -1125,7 +1125,7 @@ a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bê
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** MN∥AB.
+**Đáp án:** \(MN\parallel AB\).
 
 **Lời giải:** Định lý đường trung bình trong tam giác SAB; M,N,AB thuộc cùng (SAB).
 
@@ -1143,22 +1143,22 @@ a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bê
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B11-P04; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài luyện 20.** Nếu a∥b và b∥c, có thể kết luận a∥c ngay khi chưa biết a≠c không?
+**Bài luyện 20.** Nếu \(a\parallel b\) và \(b\parallel c\), có thể kết luận \(a\parallel c\) ngay khi chưa biết \(a\ne c\) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Chưa.
 
-**Lời giải:** a và c cùng phương; nếu trùng nhau thì không gọi hai đường phân biệt song song. Nêu thêm a≠c.
+**Lời giải:** a và c cùng phương; nếu trùng nhau thì không gọi hai đường phân biệt song song. Nêu thêm \(a\ne c\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B11-W01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Bài luyện 21.** Trong tứ diện S.ABC, M,N lần lượt là trung điểm SA và SB. (a) Chứng minh MN∥AB. (b) SA và BC song song hay chéo nhau?
+**Bài luyện 21.** Trong tứ diện S.ABC, M,N lần lượt là trung điểm SA và SB. (a) Chứng minh \(MN\parallel AB\). (b) SA và BC song song hay chéo nhau?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án và lời giải:** (a) M,N ở tam giác SAB nên MN là đường trung bình, MN∥AB. (b) SA và BC là hai cạnh đối tứ diện, không đồng phẳng, do đó chéo nhau.
+**Đáp án và lời giải:** (a) M,N ở tam giác SAB nên MN là đường trung bình, \(MN\parallel AB\). (b) SA và BC là hai cạnh đối tứ diện, không đồng phẳng, do đó chéo nhau.
 
 **Rubric 4 điểm:**
 1. Xác định tam giác SAB chứa M,N — 1 điểm.
@@ -1169,27 +1169,27 @@ a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bê
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B11-W02-ANCHOR; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Bài luyện 22.** Hình chóp S.ABCD có đáy là hình bình hành. Lấy M,N là trung điểm SA,SD. (a) Chứng minh MN∥AD. (b) Suy ra MN∥BC.
+**Bài luyện 22.** Hình chóp S.ABCD có đáy là hình bình hành. Lấy M,N là trung điểm SA,SD. (a) Chứng minh \(MN\parallel AD\). (b) Suy ra \(MN\parallel BC\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án và lời giải:** Trong ΔSAD, MN là trung bình nên MN∥AD; trong hình bình hành đáy, AD∥BC; vì MN và BC là hai đường phân biệt cùng phương nên MN∥BC.
+**Đáp án và lời giải:** Trong ΔSAD, MN là trung bình nên \(MN\parallel AD\); trong hình bình hành đáy, \(AD\parallel BC\); vì MN và BC là hai đường phân biệt cùng phương nên \(MN\parallel BC\).
 
 **Rubric 4 điểm:**
 1. Xác định trung điểm M,N trong ΔSAD — 1 điểm.
-2. Chứng minh MN∥AD — 1 điểm.
-3. Nêu AD∥BC từ hình bình hành — 1 điểm.
-4. Lập luận MN≠BC để kết luận — 1 điểm.
+2. Chứng minh \(MN\parallel AD\) — 1 điểm.
+3. Nêu \(AD\parallel BC\) từ hình bình hành — 1 điểm.
+4. Lập luận \(MN\ne BC\) để kết luận — 1 điểm.
 
 </details>
 
 **Bài luyện và tự luận của chuyên đề**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P02; OUTCOME_ID: TOP15-O06; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 23.** Không giao hay chéo?. a=(t,0,0), b=(0,2,1)+u(1,0,0), c=(0,2,1)+u(0,1,0), t,u∈ℝ. Phân loại từng cặp a,b; a,c; b,c.
+**Bài luyện 23.** Không giao hay chéo?. \(a=(t;0;0), b=(0;2;1)+u(1;0;0), c=(0;2;1)+u(0;1;0), t,u\in \mathbb R\). Phân loại từng cặp a,b; a,c; b,c.
 <details markdown="1"><summary>Lời giải</summary>
 
-a∥b; a,c chéo vì hai hướng khác nhau và z=0 so với z=1; b,c cắt nhau tại (0,2,1). Đặt từng phương trình tham số thay vì tin nét vẽ.
+\(a\parallel b; a,c\) chéo vì hai hướng khác nhau và \(z=0\) so với \(z=1; b,c\) cắt nhau tại \((0;2;1)\). Đặt từng phương trình tham số thay vì tin nét vẽ.
 
 </details>
 
@@ -1207,41 +1207,41 @@ Nếu SA và BC đồng phẳng thì S,A,B,C đồng phẳng, vô lý. SA và SB
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P12; OUTCOME_ID: TOP15-O08; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 25.** Trong tam giác SAB, M∈SA, N∈SB với SM:MA=2:3 và SN:NB=2:3. Chứng minh MN∥AB.
+**Bài luyện 25.** Trong tam giác \(SAB, M\in SA, N\in SB\) với \(SM:MA=2:3\) và \(SN:NB=2:3\). Chứng minh \(MN\parallel AB\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-SM/SA=2/5 và SN/SB=2/5; hai điểm trên hai cạnh có cùng tỉ số tính từ S, nên MN∥AB theo Thales đảo.
+\(\frac{SM}{SA}=\frac{2}{5}\) và \(\frac{SN}{SB}=\frac{2}{5}\); hai điểm trên hai cạnh có cùng tỉ số tính từ S, nên \(MN\parallel AB\) theo Thales đảo.
 
 
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P13; OUTCOME_ID: TOP15-O09; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 26.** Hình chóp S.ABCD có đáy hình bình hành. Xác định giao tuyến (SAB)∩(SCD) bằng điểm và phương. Có được kết luận giao tuyến là AB không?
+**Bài luyện 26.** Hình chóp S.ABCD có đáy hình bình hành. Xác định giao tuyến \((SAB)\cap (SCD)\) bằng điểm và phương. Có được kết luận giao tuyến là AB không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-Giao tuyến đi qua S và song song AB∥CD. Không thể là AB vì S ngoài mặt đáy và S∉AB.
+Giao tuyến đi qua S và song song \(AB\parallel CD\). Không thể là AB vì S ngoài mặt đáy và \(S\notin AB\).
 
 
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-W04; OUTCOME_ID: TOP15-O09; ROLE: TOPIC_WRITTEN; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 27.** Trong hình chóp S.ABCD, ABCD là hình bình hành. a) Xác định d=(SAB)∩(SCD). b) Xác định e=(SAD)∩(SBC). c) Giải thích vì sao d và e cắt nhau tại S mà không trùng nhau.
+**Bài luyện 27.** Trong hình chóp S.ABCD, ABCD là hình bình hành. a) Xác định \(d=(SAB)\cap (SCD)\). b) Xác định \(e=(SAD)\cap (SBC)\). c) Giải thích vì sao d và e cắt nhau tại S mà không trùng nhau.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 
 
-d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD không cùng phương vì đáy là hình bình hành không suy biến. Do đó d và e là hai đường phân biệt cắt tại S.
+d qua S song song \(AB\parallel CD; e\) qua S song song \(AD\parallel BC\). Hai hướng AB và AD không cùng phương vì đáy là hình bình hành không suy biến. Do đó d và e là hai đường phân biệt cắt tại S.
 
-**Rubric:** (1) Xác định d đi qua S — 1 điểm; (2) Nêu đúng phương d là AB/CD — 1 điểm; (3) Xác định e qua S theo AD/BC — 1 điểm; (4) Giải thích d≠e do hai phương đáy không trùng — 1 điểm.
+**Rubric:** (1) Xác định d đi qua S — 1 điểm; (2) Nêu đúng phương d là AB/CD — 1 điểm; (3) Xác định e qua S theo AD/BC — 1 điểm; (4) Giải thích \(d\ne e\) do hai phương đáy không trùng — 1 điểm.
 
 
 
@@ -1252,35 +1252,35 @@ d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD kh�
 **Kiểm điều kiện đường song song mặt phẳng**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-C01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_CORE; NO_NEW_CANONICAL -->
-**Bài luyện 28.** Một đường a nằm trong (P) có được gọi là a∥(P) theo định nghĩa không?
+**Bài luyện 28.** Một đường a nằm trong (P) có được gọi là \(a\parallel (P)\) theo định nghĩa không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Không.
 
-**Lời giải:** a có vô số điểm chung với (P); a∥(P) yêu cầu không có điểm chung.
+**Lời giải:** a có vô số điểm chung với \((P); a\parallel (P)\) yêu cầu không có điểm chung.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-C02; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_CORE; NO_NEW_CANONICAL -->
-**Bài luyện 29.** Điều kiện còn thiếu: a∥b, b⊂(P) suy ra a∥(P) khi ...?
+**Bài luyện 29.** Điều kiện còn thiếu: \(a\parallel b, b\subset (P)\) suy ra \(a\parallel (P)\) khi ...?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** a không nằm trong (P).
 
-**Lời giải:** Nếu a⊂(P), kết luận sai; cần a⊄(P).
+**Lời giải:** Nếu \(a\subset (P)\), kết luận sai; cần \(a\not\subset (P)\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-P01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài luyện 30.** Trong hình chóp S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC).
+**Bài luyện 30.** Trong hình chóp S.ABC, M,N là trung điểm SA,SB. Chứng minh \(MN\parallel (ABC)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** MN∥(ABC).
+**Đáp án:** \(MN\parallel (ABC)\).
 
-**Lời giải:** MN∥AB theo đường trung bình, AB⊂(ABC), MN không thuộc đáy.
+**Lời giải:** \(MN\parallel AB\) theo đường trung bình, \(AB\subset (ABC), MN\) không thuộc đáy.
 
 </details>
 
@@ -1296,36 +1296,36 @@ d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD kh�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-P03; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài luyện 32.** Cho d∥(P), d⊂(Q), (Q)∩(P)=e. Quan hệ d,e?
+**Bài luyện 32.** Cho \(d\parallel (P), d\subset (Q), (Q)\cap (P)=e\). Quan hệ d,e?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** d∥e.
+**Đáp án:** \(d\parallel e\).
 
 **Lời giải:** Cùng thuộc (Q) và không giao: nếu d giao e thì d gặp (P), mâu thuẫn.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-P04; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài luyện 33.** Hình chóp S.ABCD đáy hình bình hành. M,N trung điểm SA,SB. MN∥(ABCD) nhưng MN có nằm trong (ABCD) không?
+**Bài luyện 33.** Hình chóp S.ABCD đáy hình bình hành. M,N trung điểm SA,SB. \(MN\parallel (ABCD)\) nhưng MN có nằm trong (ABCD) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Không.
 
-**Lời giải:** M,N thuộc các cạnh bên phía trên đáy; MN∥AB⊂đáy và không nằm đáy.
+**Lời giải:** M,N thuộc các cạnh bên phía trên đáy; \(MN\parallel AB, AB\) nằm trong đáy và không nằm đáy.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-W01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Bài luyện 34.** Cho hình chóp S.ABC; M,N trung điểm SA,SB. (a) Chứng minh MN∥(ABC). (b) Giao tuyến của (SAB) và (ABC)?
+**Bài luyện 34.** Cho hình chóp S.ABC; M,N trung điểm SA,SB. (a) Chứng minh \(MN\parallel (ABC)\). (b) Giao tuyến của (SAB) và (ABC)?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án và lời giải:** (a) MN∥AB trong tam giác SAB, AB⊂(ABC); MN nằm trên mặt bên và không thuộc đáy, nên MN∥(ABC). (b) Giao tuyến AB (các điểm A,B thuộc cả hai).
+**Đáp án và lời giải:** (a) \(MN\parallel AB\) trong tam giác \(SAB, AB\subset (ABC); MN\) nằm trên mặt bên và không thuộc đáy, nên \(MN\parallel (ABC)\). (b) Giao tuyến AB (các điểm A,B thuộc cả hai).
 
 **Rubric 4 điểm:**
-1. Chứng minh MN∥AB — 1 điểm.
+1. Chứng minh \(MN\parallel AB\) — 1 điểm.
 2. Kiểm tra AB nằm trong mặt đáy — 1 điểm.
 3. Kiểm tra MN không nằm trong mặt đáy để suy song song — 1 điểm.
 4. Tìm giao tuyến AB bằng hai điểm chung — 1 điểm.
@@ -1333,64 +1333,64 @@ d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD kh�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-W02-ANCHOR; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Bài luyện 35.** Hình chóp S.ABCD đáy hình bình hành, M,N trung điểm SA,SB. Một học sinh nói “MN∥AB và AB nằm trong đáy, nên MN nằm trong đáy”. Phản biện và kết luận chính xác.
+**Bài luyện 35.** Hình chóp S.ABCD đáy hình bình hành, M,N trung điểm SA,SB. Một học sinh nói “\(MN\parallel AB\) và AB nằm trong đáy, nên MN nằm trong đáy”. Phản biện và kết luận chính xác.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án và lời giải:** MN∥AB vì đường trung bình ΔSAB. M,N khác A,B và nằm trên cạnh bên nên MN không thuộc mặt đáy; theo dấu hiệu đúng MN∥(ABCD), không phải MN⊂(ABCD).
+**Đáp án và lời giải:** \(MN\parallel AB\) vì đường trung bình ΔSAB. M,N khác A,B và nằm trên cạnh bên nên MN không thuộc mặt đáy; theo dấu hiệu đúng \(MN\parallel (ABCD)\), không phải \(MN\subset (ABCD)\).
 
 **Rubric 4 điểm:**
-1. Chứng minh MN∥AB — 1 điểm.
+1. Chứng minh \(MN\parallel AB\) — 1 điểm.
 2. Nêu MN không nằm trong đáy — 1 điểm.
 3. Viết điều kiện dấu hiệu đường song song mặt — 1 điểm.
-4. Kết luận MN∥đáy và bác bỏ phát biểu — 1 điểm.
+4. Kết luận MN song song mặt đáy và bác bỏ phát biểu — 1 điểm.
 
 </details>
 
 **Bài luyện và tự luận của chuyên đề**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P03; OUTCOME_ID: TOP15-O10; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 36.** Đường và mặt. d=(1+t,2,3+2t); (P): z=0. Xác định d∩(P). Đường e=(1+t,2,3) và f=(1+t,2,0) thuộc loại nào so với (P)?
+**Bài luyện 36.** Đường và mặt. \(d=(1+t;2;3+2t); (P): z=0\). Xác định \(d\cap (P)\). Đường \(e=(1+t;2;3)\) và \(f=(1+t;2;0)\) thuộc loại nào so với (P)?
 <details markdown="1"><summary>Lời giải</summary>
 
-d cắt (P) khi t=−3/2, tại (−1/2,2,0). e∥(P) vì z=3 không đổi; f⊂(P) vì z=0 với mọi t. Ba trường hợp phải phân biệt.
+d cắt (P) khi \(t=-\frac{3}{2}\), tại \((-\frac{1}{2};2;0)\). \(e\parallel (P)\) vì \(z=3\) không đổi; \(f\subset (P)\) vì \(z=0\) với mọi t. Ba trường hợp phải phân biệt.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P14; OUTCOME_ID: TOP15-O11; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 37.** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC) và nêu vì sao không thể bỏ điều kiện MN nằm ngoài mặt đáy.
+**Bài luyện 37.** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh \(MN\parallel (ABC)\) và nêu vì sao không thể bỏ điều kiện MN nằm ngoài mặt đáy.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-MN∥AB⊂(ABC) theo đường trung bình; M,N nằm ngoài đáy, MN⊄(ABC), nên MN∥(ABC). Nếu MN nằm trong đáy thì không gọi song song mặt vì nó có vô số điểm chung.
+\(MN\parallel AB\subset (ABC)\) theo đường trung bình; M,N nằm ngoài đáy, \(MN\not\subset (ABC)\), nên \(MN\parallel (ABC)\). Nếu MN nằm trong đáy thì không gọi song song mặt vì nó có vô số điểm chung.
 
 
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P15; OUTCOME_ID: TOP15-O12; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 38.** Trong tứ diện S.ABC, với M,N∈SA,SB, M,N khác S và đáy, MN∥AB. Biết (SAB)∩(ABC)=AB. Hãy giải thích vì sao MN∥g với g là giao tuyến hai mặt.
+**Bài luyện 38.** Trong tứ diện S.ABC, với \(M,N\in SA,SB, M,N\) khác S và đáy, \(MN\parallel AB\). Biết \((SAB)\cap (ABC)=AB\). Hãy giải thích vì sao \(MN\parallel g\) với g là giao tuyến hai mặt.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-Giao tuyến g=AB; MN và AB cùng nằm trong (SAB), phân biệt và không gặp, suy MN∥g. Không nhầm g với một đường bất kỳ trong đáy.
+Giao tuyến \(g=AB; MN\) và AB cùng nằm trong (SAB), phân biệt và không gặp, suy \(MN\parallel g\). Không nhầm g với một đường bất kỳ trong đáy.
 
 
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P16; OUTCOME_ID: TOP15-O13; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 39.** Trong tứ diện S.ABC, chọn M∈SA sao cho SM/SA=1/4. Dựng N∈SB, K∈SC để mặt MNK song song đáy; xác định ba tỉ số và dạng thiết diện.
+**Bài luyện 39.** Trong tứ diện S.ABC, chọn \(M\in SA\) sao cho \(\frac{SM}{SA}=\frac{1}{4}\). Dựng \(N\in SB, K\in SC\) để mặt MNK song song đáy; xác định ba tỉ số và dạng thiết diện.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết diện tam giác MNK.
+Chọn \(\frac{SN}{SB}=\frac{SK}{SC}=\frac{1}{4}\); khi đó \(MN\parallel AB, MK\parallel AC\) nên \((MNK)\parallel (ABC)\), thiết diện tam giác MNK.
 
 
 
@@ -1416,25 +1416,25 @@ Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết di
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** (P)∥(Q).
+**Đáp án:** \((P)\parallel (Q)\).
 
 **Lời giải:** Dấu hiệu hai mặt phẳng song song qua hai đường cắt nhau trong cùng (P).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-P01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài luyện 42.** (P)∥(Q), (R) cắt cả hai theo d,e. Quan hệ d,e?
+**Bài luyện 42.** \((P)\parallel (Q), (R)\) cắt cả hai theo d,e. Quan hệ d,e?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** d∥e.
+**Đáp án:** \(d\parallel e\).
 
 **Lời giải:** Hai giao tuyến cùng nằm trong (R), phân biệt, không giao nhau do (P),(Q) không giao.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-P02; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài luyện 43.** Trong (P) chỉ có một đường a∥(Q). Có đủ khẳng định (P)∥(Q) không?
+**Bài luyện 43.** Trong (P) chỉ có một đường \(a\parallel (Q)\). Có đủ khẳng định \((P)\parallel (Q)\) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1445,83 +1445,83 @@ Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết di
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-P03; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài luyện 44.** Trong chóp S.ABC, M,N,K cùng tỉ số SM/SA=SN/SB=SK/SC=1/3. Có (MNK)∥(ABC) không?
+**Bài luyện 44.** Trong chóp S.ABC, M,N,K cùng tỉ số \(\frac{SM}{SA}=\frac{SN}{SB}=\frac{SK}{SC}=\frac{1}{3}\). Có \((MNK)\parallel (ABC)\) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Có.
 
-**Lời giải:** Theo các đường trung bình tổng quát MN∥AB, MK∥AC; cả hai cắt nhau trong (MNK), suy hai mặt song song.
+**Lời giải:** Theo các đường trung bình tổng quát \(MN\parallel AB, MK\parallel AC\); cả hai cắt nhau trong (MNK), suy hai mặt song song.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-P04; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài luyện 45.** Trong cùng chóp, mặt cắt song song đáy có tỉ số cạnh 2/3. Tỉ số diện tích thiết diện/đáy?
+**Bài luyện 45.** Trong cùng chóp, mặt cắt song song đáy có tỉ số cạnh \(\frac{2}{3}\). Tỉ số diện tích thiết diện/đáy?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 4/9.
+**Đáp án:** \(\frac{4}{9}\).
 
-**Lời giải:** Hai tam giác đồng dạng nên tỉ số diện tích bằng bình phương 2/3.
+**Lời giải:** Hai tam giác đồng dạng nên tỉ số diện tích bằng bình phương \(\frac{2}{3}\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-W01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Bài luyện 46.** Trong tứ diện S.ABC, M,N,K lần lượt nằm trên SA,SB,SC và SM/SA=SN/SB=SK/SC=t với 0<t<1. Chứng minh (MNK)∥(ABC).
+**Bài luyện 46.** Trong tứ diện S.ABC, M,N,K lần lượt nằm trên SA,SB,SC và \(\frac{SM}{SA}=\frac{SN}{SB}=\frac{SK}{SC}=t\) với \(0<t<1\). Chứng minh \((MNK)\parallel (ABC)\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án và lời giải:** Thales trong ΔSAB cho MN∥AB, trong ΔSAC cho MK∥AC. MN,MK cắt tại M; AB,AC cắt tại A; dấu hiệu hai đường cắt nhau song song mặt đối diện suy (MNK)∥(ABC).
+**Đáp án và lời giải:** Thales trong ΔSAB cho \(MN\parallel AB\), trong ΔSAC cho \(MK\parallel AC\). MN,MK cắt tại M; AB,AC cắt tại A; dấu hiệu hai đường cắt nhau song song mặt đối diện suy \((MNK)\parallel (ABC)\).
 
 **Rubric 4 điểm:**
-1. Dùng tỉ số dựng MN∥AB — 1 điểm.
-2. Dùng tỉ số dựng MK∥AC — 1 điểm.
+1. Dùng tỉ số dựng \(MN\parallel AB\) — 1 điểm.
+2. Dùng tỉ số dựng \(MK\parallel AC\) — 1 điểm.
 3. Nêu MN,MK cắt nhau trong (MNK) — 1 điểm.
 4. Áp dụng đúng dấu hiệu hai mặt phẳng song song — 1 điểm.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-W02-ANCHOR; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Bài luyện 47.** Trong tứ diện S.ABC có mặt (MNK)∥(ABC) cắt các cạnh SA,SB,SC; biết SM/SA=2/5 và diện tích ABC là 50 cm². Tính diện tích MNK, giải thích công thức.
+**Bài luyện 47.** Trong tứ diện S.ABC có mặt \((MNK)\parallel (ABC)\) cắt các cạnh SA,SB,SC; biết \(\frac{SM}{SA}=\frac{2}{5}\) và diện tích ABC là \(50\,\mathrm{cm}^2\). Tính diện tích MNK, giải thích công thức.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án và lời giải:** Do hai mặt song song, các tam giác MNK và ABC đồng dạng theo tỉ số SM/SA=2/5. Diện tích bằng (2/5)²·50=8 cm².
+**Đáp án và lời giải:** Do hai mặt song song, các tam giác MNK và ABC đồng dạng theo tỉ số \(\frac{SM}{SA}=\frac{2}{5}\). Diện tích bằng \((\frac{2}{5})^2\cdot 50=8\,\mathrm{cm}^2\).
 
 **Rubric 4 điểm:**
 1. Nêu hai tam giác đồng dạng — 1 điểm.
-2. Tìm đúng tỉ số cạnh 2/5 — 1 điểm.
+2. Tìm đúng tỉ số cạnh \(\frac{2}{5}\) — 1 điểm.
 3. Bình phương tỉ số để tính diện tích — 1 điểm.
-4. Kết luận 8 cm² cùng đơn vị — 1 điểm.
+4. Kết luận \(8\,\mathrm{cm}^2\) cùng đơn vị — 1 điểm.
 
 </details>
 
 **Bài luyện và tự luận của chuyên đề**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P01; OUTCOME_ID: TOP15-O17; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 48.** Thiết diện có điều kiện. Trong tứ diện S.ABC, M∈SA, N∈SB, K∈SC, biết SM/SA=SN/SB=2/5 nhưng SK/SC=3/5. Có (MNK)∥(ABC) không? Nếu thay SK/SC thành 2/5 và diện tích ABC là 100 cm², tính diện tích MNK.
+**Bài luyện 48.** Thiết diện có điều kiện. Trong tứ diện \(S.ABC, M\in SA, N\in SB, K\in SC\), biết \(\frac{SM}{SA}=\frac{SN}{SB}=\frac{2}{5}\) nhưng \(\frac{SK}{SC}=\frac{3}{5}\). Có \((MNK)\parallel (ABC)\) không? Nếu thay \(\frac{SK}{SC}\) thành \(\frac{2}{5}\) và diện tích ABC là \(100\,\mathrm{cm}^2\), tính diện tích MNK.
 <details markdown="1"><summary>Lời giải</summary>
 
-Ban đầu không song song vì ba tỉ số không cùng bằng 2/5. Khi cùng t=2/5 thì (MNK)∥(ABC), diện tích MNK=(2/5)²·100=16 cm². Lỗi thường gặp là nhân diện tích với t thay vì t².
+Ban đầu không song song vì ba tỉ số không cùng bằng \(\frac{2}{5}\). Khi cùng \(t=\frac{2}{5}\) thì \((MNK)\parallel (ABC)\), diện tích \(MNK=(\frac{2}{5})^2\cdot 100=16\,\mathrm{cm}^2\). Lỗi thường gặp là nhân diện tích với t thay vì \(t^2\).
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P04; OUTCOME_ID: TOP15-O17; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 49.** Mặt cắt và tỉ số. Tứ diện S.ABC, (MNK)∥(ABC); tỉ số SM/SA=3/5. Nếu chu vi ABC là 30 cm và diện tích ABC là 75 cm², hãy tính chu vi và diện tích MNK. Giải thích vì sao hai phép tính dùng lũy thừa khác nhau.
+**Bài luyện 49.** Mặt cắt và tỉ số. Tứ diện \(S.ABC, (MNK)\parallel (ABC)\); tỉ số \(\frac{SM}{SA}=\frac{3}{5}\). Nếu chu vi ABC là 30 cm và diện tích ABC là \(75\,\mathrm{cm}^2\), hãy tính chu vi và diện tích MNK. Giải thích vì sao hai phép tính dùng lũy thừa khác nhau.
 <details markdown="1"><summary>Lời giải</summary>
 
-Chu vi tỉ lệ t, bằng 18 cm; diện tích tỉ lệ t², bằng 27 cm². Đồng dạng biến mỗi cạnh nhân t, còn diện tích là tích hai chiều nên nhân t².
+Chu vi tỉ lệ t, bằng 18 cm; diện tích tỉ lệ \(t^2\), bằng \(27\,\mathrm{cm}^2\). Đồng dạng biến mỗi cạnh nhân t, còn diện tích là tích hai chiều nên nhân \(t^2\).
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P17; OUTCOME_ID: TOP15-O14; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 50.** Phân loại: (P):z=0, (Q):z=−3, (R):x=0, (T):3z=0; xét (P) với từng mặt còn lại.
+**Bài luyện 50.** Phân loại: \((P):z=0, (Q):z=-3, (R):x=0, (T):3z=0\); xét (P) với từng mặt còn lại.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-(P) song song phân biệt (Q); cắt (R) theo đường x=z=0; trùng (T). Khác biểu thức chưa chắc khác mặt.
+(P) song song phân biệt (Q); cắt (R) theo đường \(x=z=0\); trùng (T). Khác biểu thức chưa chắc khác mặt.
 
 
 
@@ -1534,20 +1534,20 @@ Chu vi tỉ lệ t, bằng 18 cm; diện tích tỉ lệ t², bằng 27 cm². Đ
 
 
 
-Vì hai đường cắt nhau trong (P) đều song song (Q), suy (P)∥(Q). Nếu a∥b, một mặt chứa chúng vẫn có thể cắt (Q), nên chưa đủ.
+Vì hai đường cắt nhau trong (P) đều song song (Q), suy \((P)\parallel (Q)\). Nếu \(a\parallel b\), một mặt chứa chúng vẫn có thể cắt (Q), nên chưa đủ.
 
 
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P19; OUTCOME_ID: TOP15-O16; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 52.** Cho (P):z=0, (Q):z=4, (R):y=1. Viết phương trình tham số hai giao tuyến và chứng minh chúng song song.
+**Bài luyện 52.** Cho \((P):z=0, (Q):z=4, (R):y=1\). Viết phương trình tham số hai giao tuyến và chứng minh chúng song song.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-g=(t,1,0), h=(t,1,4), cùng vectơ (1,0,0), phân biệt, cùng thuộc (R); g∥h.
+\(g=(t;1;0), h=(t;1;4)\), cùng vectơ \((1;0;0)\), phân biệt, cùng thuộc \((R); g\parallel h\).
 
 
 
@@ -1557,7 +1557,7 @@ g=(t,1,0), h=(t,1,4), cùng vectơ (1,0,0), phân biệt, cùng thuộc (R); g�
 **Bài luyện 53.** Cho hình hộp ABCD.A′B′C′D′. Gọi (R) là mặt phẳng đi qua ba điểm A,C,A′. Chứng minh C′ cũng thuộc (R), xác định giao tuyến của (R) với hai mặt đáy và giải thích vì sao hai giao tuyến song song.
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C∈(R), đường qua C song song AA′ nằm trong (R), suy C′∈(R) (1đ). Giao tuyến (R) với (ABCD) là AC, với (A′B′C′D′) là A′C′ (1đ). Hai mặt đáy song song, cắt bởi mặt (R) nên AC∥A′C′ (1đ). Đừng nhận định A′C′ thuộc (R) chỉ vì nhìn giống AC trên hình biểu diễn.
+Do \(A,A'\in (R)\) nên \(AA'\subset (R)\) (1đ). Trong hình hộp, \(CC'\parallel AA'\); vì \(C\in (R)\), đường qua C song song AA′ nằm trong (R), suy \(C'\in (R)\) (1đ). Giao tuyến (R) với (ABCD) là AC, với (A′B′C′D′) là A′C′ (1đ). Hai mặt đáy song song, cắt bởi mặt (R) nên \(AC\parallel A'C'\) (1đ). Đừng nhận định A′C′ thuộc (R) chỉ vì nhìn giống AC trên hình biểu diễn.
 
 </details>
 
@@ -1594,7 +1594,7 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 
 **Đáp án:** B.
 
-**Lời giải:** BB′∥AA′ và B∈(ABC), nên đường chiếu qua B′ gặp (ABC) đúng tại B.
+**Lời giải:** \(BB'\parallel AA'\) và \(B\in (ABC)\), nên đường chiếu qua B′ gặp (ABC) đúng tại B.
 
 </details>
 
@@ -1632,17 +1632,17 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B14-W01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Bài luyện 60.** Trong lăng trụ ABC.A′B′C′, M′∈A′B′ có A′M′:M′B′=2:3. Chiếu theo phương AA′ xuống mặt (ABC), M là ảnh M′. Biết AB=25 cm. Tính AM, MB và chứng minh tỉ số được bảo toàn.
+**Bài luyện 60.** Trong lăng trụ \(ABC.A'B'C', M'\in A'B'\) có \(A'M':M'B'=2:3\). Chiếu theo phương AA′ xuống mặt (ABC), M là ảnh M′. Biết \(AB=25\,\mathrm{cm}\). Tính AM, MB và chứng minh tỉ số được bảo toàn.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án và lời giải:** Chiếu A′↦A, B′↦B, đường A′B′ có ảnh AB không suy biến. Tỉ số AM:MB=2:3. Tổng AB gồm 5 phần, mỗi phần 5 cm, nên AM=10 cm, MB=15 cm.
+**Đáp án và lời giải:** Chiếu \(A'\mapsto A, B'\mapsto B\), đường A′B′ có ảnh AB không suy biến. Tỉ số \(AM:MB=2:3\). Tổng AB gồm 5 phần, mỗi phần 5 cm, nên \(AM=10\,\mathrm{cm}, MB=15\,\mathrm{cm}\).
 
 **Rubric 4 điểm:**
-1. Xác định ảnh A′=A, B′=B — 1 điểm.
-2. Nêu ảnh A′B′=AB không suy biến — 1 điểm.
-3. Dùng tỉ số bảo toàn AM:MB=2:3 — 1 điểm.
-4. Tính AM=10 cm, MB=15 cm — 1 điểm.
+1. Xác định ảnh của \(A',B'\) lần lượt là A, B — 1 điểm.
+2. Nêu ảnh của đoạn \(A'B'\) là đoạn AB không suy biến — 1 điểm.
+3. Dùng tỉ số bảo toàn \(AM:MB=2:3\) — 1 điểm.
+4. Tính \(AM=10\,\mathrm{cm}, MB=15\,\mathrm{cm}\) — 1 điểm.
 
 </details>
 
@@ -1651,11 +1651,11 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án và lời giải:** D thuộc BC, BD/DC=1 nên B′,D′,C′ thẳng hàng và B′D′/D′C′=1; D′ trung điểm B′C′. A′D′ là trung tuyến. Góc, ví dụ ∠ABC, không nhất thiết bằng ∠A′B′C′.
+**Đáp án và lời giải:** D thuộc \(BC, \frac{BD}{DC}=1\) nên B′,D′,C′ thẳng hàng và \(\frac{B'D'}{D'C'}=1; D'\) trung điểm B′C′. A′D′ là trung tuyến. Góc, ví dụ ∠ABC, không nhất thiết bằng ∠A′B′C′.
 
 **Rubric 4 điểm:**
 1. Chứng minh ba ảnh B′,D′,C′ thẳng hàng — 1 điểm.
-2. Bảo toàn tỉ số BD/DC=1 — 1 điểm.
+2. Bảo toàn tỉ số \(\frac{BD}{DC}=1\) — 1 điểm.
 3. Kết luận D′ trung điểm và A′D′ trung tuyến — 1 điểm.
 4. Nêu góc/độ dài không bảo toàn nói chung — 1 điểm.
 
@@ -1664,70 +1664,70 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 **Bài luyện và tự luận của chuyên đề**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P05; OUTCOME_ID: TOP15-O19; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 62.** Ảnh suy biến. Cho T(x,y,z)=(x−z,y,0). Tìm ảnh của U(1,2,3) và V(3,2,5); xác định ảnh của cả đoạn UV; nêu điều kiện phương làm đoạn co thành điểm.
+**Bài luyện 62.** Ảnh suy biến. Cho \(T(x;y;z)=(x-z;y;0)\). Tìm ảnh của \(U(1;2;3)\) và \(V(3;2;5)\); xác định ảnh của cả đoạn UV; nêu điều kiện phương làm đoạn co thành điểm.
 <details markdown="1"><summary>Lời giải</summary>
 
-T(U)=T(V)=(-2,2,0); mọi điểm U+λ(V−U) có ảnh giống U. Đoạn co thành điểm vì UV∥(1,0,1), đúng phương chiếu.
+\(T(U)=T(V)=(-2;2;0)\); mọi điểm U+λ(V−U) có ảnh giống U. Đoạn co thành điểm vì \(UV\parallel (1;0;1)\), đúng phương chiếu.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P20; OUTCOME_ID: TOP15-O18; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 63.** Chiếu song song theo (1,0,2) lên (P):z=0. Tìm ảnh M(3,1,4) và giải thích vì sao không dùng T(x,y,z)=(x−z,y,0).
+**Bài luyện 63.** Chiếu song song theo \((1;0;2)\) lên \((P):z=0\). Tìm ảnh \(M(3;1;4)\) và giải thích vì sao không dùng \(T(x;y;z)=(x-z;y;0)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-Chuyển điểm theo λ(1,0,2), λ=−z/2=−2: M′=(1,1,0). Công thức T cũ dành cho phương (1,0,1), không được dùng sai phương.
+Chuyển điểm theo \(\lambda (1;0;2), \lambda =-\frac{z}{2}=-2: M'=(1;1;0)\). Công thức T cũ dành cho phương \((1;0;1)\), không được dùng sai phương.
 
 
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P21; OUTCOME_ID: TOP15-O19; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 64.** Qua phép chiếu T(x,y,z)=(x−z,y,0), ảnh đường d:(x,y,z)=(2+t,5,−1+t) là đường hay điểm?
+**Bài luyện 64.** Qua phép chiếu \(T(x;y;z)=(x-z;y;0)\), ảnh đường \(d:(x;y;z)=(2+t;5;-1+t)\) là đường hay điểm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-T(d(t))=(2+t−(−1+t),5,0)=(3,5,0), là một điểm vì vectơ chỉ phương d=(1,0,1) trùng hướng chiếu.
+\(T(d(t))=(2+t-(-1+t),5{,}0)=(3;5;0)\), là một điểm vì vectơ chỉ phương \(d=(1;0;1)\) trùng hướng chiếu.
 
 
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P22; OUTCOME_ID: TOP15-O20; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 65.** Cho A(1,0,1),B(5,2,1),M=(A+B)/2. Dưới T(x,y,z)=(x−z,y,0), tính A′, B′, M′ và kiểm tính trung điểm.
+**Bài luyện 65.** Cho \(A(1;0;1),B(5;2;1),M=\frac{A+B}{2}\). Dưới \(T(x;y;z)=(x-z;y;0)\), tính A′, B′, M′ và kiểm tính trung điểm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 
 
-A′=(0,0,0), B′=(4,2,0), M=(3,1,1) nên M′=(2,1,0), đúng trung điểm A′B′.
+\(A'=(0;0;0), B'=(4;2;0), M=(3;1;1)\) nên \(M'=(2;1;0)\), đúng trung điểm A′B′.
 
 
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-W02; OUTCOME_ID: TOP15-O22; ROLE: TOPIC_WRITTEN; CONTENT_VERSION: 2; DELTA_C_VECTOR_DOT_PRODUCT_NOTATION_20261118; CANONICAL_ID_UNCHANGED -->
-**Bài luyện 66.** Chứng minh phép chiếu T(x,y,z)=(x−z,y,0) biến hình chữ nhật ABCD với A(0,0,0), B(2,0,0), C(2,1,1), D(0,1,1) thành hình bình hành không có góc vuông tại A′.
+**Bài luyện 66.** Chứng minh phép chiếu \(T(x;y;z)=(x-z;y;0)\) biến hình chữ nhật ABCD với \(A(0;0;0), B(2;0;0), C(2;1;1), D(0;1;1)\) thành hình bình hành không có góc vuông tại A′.
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-\(\overrightarrow{AB}\cdot\overrightarrow{AD}=0\) và các cạnh đối tương ứng song song, xác lập ABCD là hình chữ nhật (1đ); tính A′(0,0), B′(2,0), C′(1,1), D′(−1,1) (1đ); \(A′B′\parallel C′D′\) và \(A′D′\parallel B′C′\) (1đ); \(\overrightarrow{A′B′}\cdot\overrightarrow{A′D′}=-2\ne0\), nên góc A′ không vuông (1đ). Không suy vuông góc từ hình biểu diễn.
+\(\overrightarrow{AB}\cdot\overrightarrow{AD}=0\) và các cạnh đối tương ứng song song, xác lập ABCD là hình chữ nhật (1đ); tính \(A'(0;0), B'(2;0), C'(1;1), D'(-1;1)\) (1đ); \(A'B'\parallel C'D'\) và \(A'D'\parallel B'C'\) (1đ); \(\overrightarrow{A'B'}\cdot\overrightarrow{A'D'}=-2\ne0\), nên góc A′ không vuông (1đ). Không suy vuông góc từ hình biểu diễn.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-W05; OUTCOME_ID: TOP15-O22; ROLE: TOPIC_WRITTEN; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 67.** Cho S(0,0,5), A(0,0,0), B(5,0,0), C(0,5,0). Lấy M∈SA, N∈SB, K∈SC sao cho SM/SA=SN/SB=SK/SC=3/5. a) Tìm tọa độ M,N,K. b) Chứng minh (MNK)∥(ABC). c) Tính diện tích hai tam giác. d) Chiếu vuông góc theo Oz lên đáy, tìm ảnh M′N′K′ và giải thích tỉ số diện tích.
+**Bài luyện 67.** Cho \(S(0;0;5), A(0;0;0), B(5;0;0), C(0;5;0)\). Lấy \(M\in SA, N\in SB, K\in SC\) sao cho \(\frac{SM}{SA}=\frac{SN}{SB}=\frac{SK}{SC}=\frac{3}{5}\). a) Tìm tọa độ M,N,K. b) Chứng minh \((MNK)\parallel (ABC)\). c) Tính diện tích hai tam giác. d) Chiếu vuông góc theo Oz lên đáy, tìm ảnh M′N′K′ và giải thích tỉ số diện tích.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 
 
-M=(0,0,2), N=(3,0,2), K=(0,3,2). M,N,K ở mặt z=2 song song đáy z=0. Tam giác ABC vuông tại A có diện tích 25/2=12,5; MNK vuông tại M với MN=MK=3 có diện tích 9/2=4,5. Chiếu dọc Oz được M′=(0,0,0), N′=(3,0,0), K′=(0,3,0); diện tích ảnh 9/2 do hai mặt song song và chiếu vuông góc. Tỉ số (9/2)/(25/2)=9/25=(3/5)².
+\(M(0;0;2), N(3;0;2), K(0;3;2)\). M,N,K ở mặt \(z=2\) song song đáy \(z=0\). Tam giác ABC vuông tại A có diện tích \(\frac{25}{2}=12{,}5\); MNK vuông tại M với \(MN=MK=3\) có diện tích \(\frac92=4{,}5\). Chiếu dọc Oz được \(M'(0;0;0), N'(3;0;0), K'(0;3;0)\); diện tích ảnh \(\frac92\) do hai mặt song song và chiếu vuông góc. Tỉ số \(\frac{\frac92}{\frac{25}2}=\frac9{25}=(\frac35)^2\).
 
-**Rubric:** (1) Tính chính xác ba tọa độ M,N,K — 1 điểm; (2) Chứng minh cả ba điểm cùng z=2, mặt cắt song song đáy — 1 điểm; (3) Tính diện tích 9/2 và 25/2 đúng đơn vị bình phương — 1 điểm; (4) Xác định hình chiếu đúng và giải thích tỉ số 9/25 — 1 điểm.
+**Rubric:** (1) Tính chính xác ba tọa độ M,N,K — 1 điểm; (2) Chứng minh cả ba điểm cùng \(z=2\), mặt cắt song song đáy — 1 điểm; (3) Tính diện tích \(\frac{9}{2}\) và \(\frac{25}{2}\) đúng đơn vị bình phương — 1 điểm; (4) Xác định hình chiếu đúng và giải thích tỉ số \(\frac{9}{25}\) — 1 điểm.
 
 
 
@@ -1740,28 +1740,28 @@ Hãy tự giải đủ **8 câu** ra giấy, vẽ hoặc mô tả các mặt và
 ## 1. Câu hỏi tự ôn
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P03; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 1.** d=(1+t,2,3+2t); (P): z=0. Xác định d∩(P). Đường e=(1+t,2,3) và f=(1+t,2,0) thuộc loại nào so với (P)?
+**Câu 1.** Đường và mặt. \(d=(1+t;2;3+2t); (P): z=0\). Xác định \(d\cap (P)\). Đường \(e=(1+t;2;3)\) và \(f=(1+t;2;0)\) thuộc loại nào so với (P)?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P06; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 2.** Cho A,B phân biệt thuộc (P), M∈AB, C nằm ngoài (P). Hỏi M∈(P) không và AC⊂(P) có đúng không?
+**Câu 2.** Cho A,B phân biệt thuộc \((P), M\in AB, C\) nằm ngoài (P). Hỏi \(M\in (P)\) không và \(AC\subset (P)\) có đúng không?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P09; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 3.** Cho d:(x,y,z)=(2+t,1,4−2t), (P):z=0. Tìm d∩(P); đường e:(t,1,4) có cắt (P) không?
+**Câu 3.** Cho \(d:(x;y;z)=(2+t;1;4-2t), (P):z=0\). Tìm \(d\cap (P)\); đường \(e:(t;1;4)\) có cắt (P) không?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P12; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 4.** Trong tam giác SAB, M∈SA, N∈SB với SM:MA=2:3 và SN:NB=2:3. Chứng minh MN∥AB.
+**Câu 4.** Trong tam giác \(SAB, M\in SA, N\in SB\) với \(SM:MA=2:3\) và \(SN:NB=2:3\). Chứng minh \(MN\parallel AB\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P14; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 5.** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC) và nêu vì sao không thể bỏ điều kiện MN nằm ngoài mặt đáy.
+**Câu 5.** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh \(MN\parallel (ABC)\) và nêu vì sao không thể bỏ điều kiện MN nằm ngoài mặt đáy.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P17; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 6.** Phân loại: (P):z=0, (Q):z=−3, (R):x=0, (T):3z=0; xét (P) với từng mặt còn lại.
+**Câu 6.** Phân loại: \((P):z=0, (Q):z=-3, (R):x=0, (T):3z=0\); xét (P) với từng mặt còn lại.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P20; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 7.** Chiếu song song theo (1,0,2) lên (P):z=0. Tìm ảnh M(3,1,4) và giải thích vì sao không dùng T(x,y,z)=(x−z,y,0).
+**Câu 7.** Chiếu song song theo \((1;0;2)\) lên \((P):z=0\). Tìm ảnh \(M(3;1;4)\) và giải thích vì sao không dùng \(T(x;y;z)=(x-z;y;0)\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P21; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 8.** Qua phép chiếu T(x,y,z)=(x−z,y,0), ảnh đường d:(x,y,z)=(2+t,5,−1+t) là đường hay điểm?
+**Câu 8.** Qua phép chiếu \(T(x;y;z)=(x-z;y;0)\), ảnh đường \(d:(x;y;z)=(2+t;5;-1+t)\) là đường hay điểm?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
