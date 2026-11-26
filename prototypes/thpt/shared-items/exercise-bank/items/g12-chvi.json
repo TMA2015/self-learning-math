@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-G12-B18-C01",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn đều một số trong {1,2,3,4,5,6}. Đã biết số được chọn là số lẻ; xác suất số đó lớn hơn 3 là bao nhiêu?",
-    "answer_key": "`1/3`.",
-    "worked_solution": "B={1,3,5}, A∩B={5}; vì chỉ còn 3 khả năng nên P(A|B)=1/3.",
+    "stem": "Chọn ngẫu nhiên, đồng khả năng một số từ 1 đến 6. Biết số đã chọn là số lẻ, tính xác suất số đó lớn hơn 3.",
+    "answer_key": "\\(\\frac13\\).",
+    "worked_solution": "Gọi B là biến cố chọn số lẻ, A là chọn số lớn hơn 3. Khi biết B, chỉ còn ba số đồng khả năng \\(\\{1;3;5\\}\\), trong đó chỉ 5 thỏa A. Do đó \\(P(A\\mid B)=\\frac13\\).",
     "skill_ids": [
       "G12-CHVI-B18-O01"
     ],
@@ -33,9 +33,9 @@
   {
     "item_id": "THPT-G12-B18-P01",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn đều một thẻ từ 1 đến 12. Biết thẻ chia hết cho 3; tính xác suất thẻ đồng thời là số chẵn.",
-    "answer_key": "`1/2`.",
-    "worked_solution": "B={3,6,9,12}, A∩B={6,12}, do đó P(A|B)=2/4=1/2.",
+    "stem": "Chọn ngẫu nhiên, đồng khả năng một thẻ từ 1 đến 12. Biết thẻ chia hết cho 3, tính xác suất thẻ là số chẵn.",
+    "answer_key": "\\(\\frac12\\).",
+    "worked_solution": "Nhóm điều kiện B gồm \\(\\{3;6;9;12\\}\\). Hai thẻ 6 và 12 là số chẵn. Vì các thẻ đồng khả năng, \\(P(A\\mid B)=\\frac24=\\frac12\\).",
     "skill_ids": [
       "G12-CHVI-B18-O01"
     ],
@@ -64,9 +64,9 @@
   {
     "item_id": "THPT-G12-B18-A01",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Thư viện có 12 cuốn sách: 5 sách khoa học gồm 3 bìa cứng, 7 sách văn học gồm 2 bìa cứng. Chọn đều một cuốn trong nhóm bìa cứng. Xác suất sách khoa học là bao nhiêu?",
-    "answer_key": "`3/5`.",
-    "worked_solution": "Có 5 cuốn bìa cứng, trong đó 3 khoa học nên 3/5. Không chia cho tổng số 12 cuốn.",
+    "stem": "Thư viện có 5 sách khoa học (3 bìa cứng) và 7 sách văn học (2 bìa cứng). Chọn đồng khả năng một cuốn trong nhóm bìa cứng. Tính xác suất đó là sách khoa học.",
+    "answer_key": "\\(\\frac35\\).",
+    "worked_solution": "Nhóm bìa cứng gồm 3+2=5 cuốn, trong đó 3 cuốn khoa học. Xác suất là \\(\\frac35\\). Mẫu số là số sách trong nhóm điều kiện, không phải toàn bộ 12 cuốn.",
     "skill_ids": [
       "G12-CHVI-B18-O01"
     ],
@@ -95,9 +95,9 @@
   {
     "item_id": "THPT-G12-B18-C02",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho P(B)=3/5 và P(A∩B)=1/5. Tính P(A|B).",
-    "answer_key": "`1/3`.",
-    "worked_solution": "P(A|B)=(1/5)/(3/5)=1/3.",
+    "stem": "Cho \\(P(B)=\\frac35\\), \\(P(A\\cap B)=\\frac15\\). Tính \\(P(A\\mid B)\\).",
+    "answer_key": "\\(\\frac13\\).",
+    "worked_solution": "Vì P(B)>0, dùng định nghĩa \\(P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{1/5}{3/5}=\\frac13\\).",
     "skill_ids": [
       "G12-CHVI-B18-O02"
     ],
@@ -126,9 +126,9 @@
   {
     "item_id": "THPT-G12-B18-P02",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Từ 8 thẻ đánh số 1–8, chọn đều một thẻ. B: thẻ chẵn; A: thẻ chia hết cho 4. Tính P(A|B) theo công thức.",
-    "answer_key": "`1/2`.",
-    "worked_solution": "P(B)=4/8, P(A∩B)=2/8, nên (2/8)/(4/8)=1/2.",
+    "stem": "Chọn đồng khả năng một thẻ trong 8 thẻ đánh số từ 1 đến 8. B là biến cố thẻ chẵn, A là thẻ chia hết cho 4. Tính \\(P(A\\mid B)\\) bằng công thức.",
+    "answer_key": "\\(\\frac12\\).",
+    "worked_solution": "Có 4 thẻ chẵn; giao A và B gồm hai thẻ 4, 8. \\(P(B)=\\frac48\\), \\(P(A\\cap B)=\\frac28\\). Vì P(B)>0, \\(P(A\\mid B)=\\frac{2/8}{4/8}=\\frac12\\).",
     "skill_ids": [
       "G12-CHVI-B18-O02"
     ],
@@ -157,9 +157,9 @@
   {
     "item_id": "THPT-G12-B18-A02",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Trong 60 thí sinh, 30 người tham dự câu lạc bộ tiếng Anh và 18 người thuộc câu lạc bộ đồng thời đạt điểm giỏi. Chọn đều một người, biết người đó thuộc câu lạc bộ; xác suất đạt giỏi?",
-    "answer_key": "`3/5`.",
-    "worked_solution": "P(B)=30/60; P(A∩B)=18/60. Chia được 18/30=3/5.",
+    "stem": "Trong 60 thí sinh, 30 người tham gia CLB tiếng Anh, trong đó 18 người đạt điểm giỏi. Chọn đồng khả năng một người. Biết người đó thuộc CLB, tính xác suất đạt giỏi.",
+    "answer_key": "\\(\\frac35\\).",
+    "worked_solution": "Gọi B là thuộc CLB, A là đạt giỏi. Nhóm điều kiện có 30 người và giao có 18 người. \\(P(A\\mid B)=\\frac{18/60}{30/60}=\\frac{18}{30}=\\frac35\\).",
     "skill_ids": [
       "G12-CHVI-B18-O02"
     ],
@@ -188,9 +188,9 @@
   {
     "item_id": "THPT-G12-B18-C03",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn đều một học sinh trong lớp. Có 20 học sinh đi xe buýt, trong đó 8 em là nữ; toàn lớp có 25 nữ. Tính P(nữ|đi xe buýt).",
-    "answer_key": "`2/5`.",
-    "worked_solution": "Nhóm điều kiện có 20 em, giao có 8 em, nên 8/20=2/5.",
+    "stem": "Chọn đồng khả năng một học sinh trong lớp. Có 20 học sinh đi xe buýt, trong đó 8 là nữ; toàn lớp có 25 nữ. Tính xác suất học sinh là nữ khi biết em đó đi xe buýt.",
+    "answer_key": "\\(\\frac25\\).",
+    "worked_solution": "Điều kiện là đi xe buýt, nên xét đúng 20 học sinh đi xe buýt. Có 8 nữ trong nhóm này; xác suất bằng \\(\\frac8{20}=\\frac25\\). Không dùng mẫu số 25 vì đó là nhóm nữ.",
     "skill_ids": [
       "G12-CHVI-B18-O03"
     ],
@@ -219,9 +219,9 @@
   {
     "item_id": "THPT-G12-B18-P03",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn đều một học sinh trong lớp. Có 20 em đi xe buýt, 8 nữ trong số đó; cả lớp có 25 nữ. Tính P(đi xe buýt|nữ).",
-    "answer_key": "`8/25`.",
-    "worked_solution": "Điều kiện là 25 học sinh nữ, giao có 8 nên 8/25.",
+    "stem": "Chọn đồng khả năng một học sinh trong lớp. Có 20 em đi xe buýt, trong đó 8 là nữ; toàn lớp có 25 nữ. Tính xác suất đi xe buýt khi biết học sinh là nữ.",
+    "answer_key": "\\(\\frac8{25}\\).",
+    "worked_solution": "Nhóm điều kiện là 25 học sinh nữ. Trong nhóm này, 8 em đi xe buýt, nên xác suất bằng \\(\\frac8{25}\\). Đảo điều kiện làm thay đổi mẫu số.",
     "skill_ids": [
       "G12-CHVI-B18-O03"
     ],
@@ -250,9 +250,9 @@
   {
     "item_id": "THPT-G12-B18-A03",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn đều một người trong một đội có 15 người chơi bóng rổ, 12 người chơi bóng đá, 6 chơi cả hai. Tính P(rổ|đá) và P(đá|rổ), giải thích vì sao khác nhau.",
-    "answer_key": "`1/2 và 2/5`.",
-    "worked_solution": "Giao gồm 6 người. Biết chơi đá, mẫu 12 người nên P(rổ|đá)=6/12=1/2. Biết chơi rổ, mẫu 15 người nên P(đá|rổ)=6/15=2/5. Cùng tử nhưng nhóm điều kiện khác nhau.",
+    "stem": "Chọn đồng khả năng một người trong đội. Có 15 người chơi bóng rổ, 12 người chơi bóng đá, 6 chơi cả hai. Tính xác suất chơi bóng rổ khi biết chơi bóng đá và xác suất ngược lại; giải thích sự khác nhau.",
+    "answer_key": "Lần lượt \\(\\frac12\\) và \\(\\frac25\\).",
+    "worked_solution": "Gọi R là chơi rổ, D là chơi đá. Giao có 6 người. \\(P(R\\mid D)=\\frac6{12}=\\frac12\\), còn \\(P(D\\mid R)=\\frac6{15}=\\frac25\\). Hai xác suất có cùng số người ở giao nhưng điều kiện khác nhau.",
     "skill_ids": [
       "G12-CHVI-B18-O03"
     ],
@@ -281,9 +281,9 @@
   {
     "item_id": "THPT-G12-B18-C04",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho P(A)=2/5, P(B)=1/4, P(A∩B)=1/10. A và B có độc lập không?",
-    "answer_key": "`Có`.",
-    "worked_solution": "P(A)P(B)=(2/5)(1/4)=1/10=P(A∩B) nên độc lập.",
+    "stem": "Cho \\(P(A)=\\frac25\\), \\(P(B)=\\frac14\\), \\(P(A\\cap B)=\\frac1{10}\\). Hai biến cố có độc lập không?",
+    "answer_key": "Có.",
+    "worked_solution": "Tính \\(P(A)P(B)=\\frac25\\cdot\\frac14=\\frac1{10}=P(A\\cap B)\\). Theo tiêu chuẩn độc lập, A và B độc lập.",
     "skill_ids": [
       "G12-CHVI-B18-O04"
     ],
@@ -312,9 +312,9 @@
   {
     "item_id": "THPT-G12-B18-P04",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho P(A)=1/2, P(B)=1/2 nhưng P(A∩B)=0. Có thể nói hai biến cố độc lập không?",
-    "answer_key": "`Không`.",
-    "worked_solution": "Không; P(A)P(B)=1/4 khác 0. Hai biến cố xung khắc và có xác suất dương không độc lập.",
+    "stem": "Cho \\(P(A)=P(B)=\\frac12\\) nhưng \\(P(A\\cap B)=0\\). Hai biến cố có độc lập không?",
+    "answer_key": "Không.",
+    "worked_solution": "Nếu độc lập thì xác suất giao phải bằng \\(P(A)P(B)=\\frac14\\), nhưng dữ kiện cho 0. Do đó không độc lập. Hai biến cố xung khắc có xác suất dương không thể độc lập.",
     "skill_ids": [
       "G12-CHVI-B18-O04"
     ],
@@ -343,9 +343,9 @@
   {
     "item_id": "THPT-G12-B18-A04",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Một lớp có P(chơi cờ)=0,3, P(chơi nhạc)=0,6 và P(cả hai)=0,18. Tính P(chơi cờ|chơi nhạc) và nhận xét.",
-    "answer_key": "`0,3; độc lập`.",
-    "worked_solution": "0,18/0,6=0,3=P(chơi cờ), nên hai biến cố độc lập với dữ liệu đã cho.",
+    "stem": "Trong lớp, xác suất chơi cờ là 0,3; chơi nhạc là 0,6; chơi cả hai là 0,18. Tính xác suất chơi cờ khi biết chơi nhạc và xét độc lập.",
+    "answer_key": "0,3; hai biến cố độc lập.",
+    "worked_solution": "Gọi C là chơi cờ, N là chơi nhạc. \\(P(C\\mid N)=\\frac{0{,}18}{0{,}6}=0{,}3=P(C)\\). Vì P(N)>0, đẳng thức này cho biết C và N độc lập theo dữ kiện.",
     "skill_ids": [
       "G12-CHVI-B18-O04"
     ],
@@ -374,9 +374,9 @@
   {
     "item_id": "THPT-G12-B18-C05",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Khảo sát: CLB có 8 đạt,2 chưa; không CLB có 12 đạt,8 chưa. Tính P(đạt|CLB).",
-    "answer_key": "`4/5`.",
-    "worked_solution": "Tổng CLB=10, đạt=8 nên 8/10=4/5.",
+    "stem": "Trong khảo sát, nhóm tham gia CLB có 8 người đạt, 2 chưa đạt; nhóm không tham gia có 12 đạt, 8 chưa đạt. Chọn đồng khả năng một người. Biết thuộc CLB, tính xác suất đạt.",
+    "answer_key": "\\(\\frac45\\).",
+    "worked_solution": "Trong nhóm điều kiện CLB có 8+2=10 người, trong đó 8 đạt. Xác suất cần tìm là \\(\\frac8{10}=\\frac45\\).",
     "skill_ids": [
       "G12-CHVI-B18-O05"
     ],
@@ -405,9 +405,9 @@
   {
     "item_id": "THPT-G12-B18-P05",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Dữ liệu: Nhóm X 30 chọn A,20 không; Nhóm Y 15 chọn A,35 không. Tính P(X|chọn A).",
-    "answer_key": "`2/3`.",
-    "worked_solution": "Tổng chọn A=30+15=45, số trong X=30, P=30/45=2/3.",
+    "stem": "Nhóm X có 30 người chọn A, 20 không chọn; nhóm Y có 15 người chọn A, 35 không chọn. Chọn đồng khả năng một người. Biết người đó chọn A, tính xác suất thuộc X.",
+    "answer_key": "\\(\\frac23\\).",
+    "worked_solution": "Nhóm điều kiện gồm 30+15=45 người chọn A. Trong đó 30 người thuộc X. Xác suất bằng \\(\\frac{30}{45}=\\frac23\\); không chia cho tổng số người trong X.",
     "skill_ids": [
       "G12-CHVI-B18-O05"
     ],
@@ -436,9 +436,9 @@
   {
     "item_id": "THPT-G12-B18-A05",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Nhóm I: 18 đúng,12 sai; Nhóm II: 24 đúng,6 sai. So sánh xác suất trả lời đúng trong từng nhóm.",
-    "answer_key": "`3/5 và 4/5`.",
-    "worked_solution": "P(đúng|I)=18/30=3/5; P(đúng|II)=24/30=4/5, nhóm II cao hơn 1/5.",
+    "stem": "Nhóm I có 18 câu trả lời đúng, 12 sai; nhóm II có 24 đúng, 6 sai. Chọn đồng khả năng một lượt trả lời trong từng nhóm. So sánh xác suất trả lời đúng.",
+    "answer_key": "Nhóm I: \\(\\frac35\\); nhóm II: \\(\\frac45\\); nhóm II cao hơn.",
+    "worked_solution": "Mỗi nhóm có 30 lượt. \\(P(\\text{đúng}\\mid I)=\\frac{18}{30}=\\frac35\\) và \\(P(\\text{đúng}\\mid II)=\\frac{24}{30}=\\frac45\\). Nhóm II cao hơn \\(\\frac15\\) (20 điểm phần trăm).",
     "skill_ids": [
       "G12-CHVI-B18-O05"
     ],
@@ -467,9 +467,9 @@
   {
     "item_id": "THPT-G12-B18-C06",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho P(A)=0,3, P(B|A)=0,6. Tính P(A∩B).",
-    "answer_key": "`9/50`.",
-    "worked_solution": "0,3×0,6=0,18.",
+    "stem": "Cho \\(P(A)=0{,}3\\), \\(P(B\\mid A)=0{,}6\\). Tính \\(P(A\\cap B)\\).",
+    "answer_key": "\\(\\frac9{50}=0{,}18\\).",
+    "worked_solution": "Dùng công thức nhân xác suất: \\(P(A\\cap B)=P(A)P(B\\mid A)=0{,}3\\cdot0{,}6=0{,}18\\). Không cần giả thiết hai biến cố độc lập.",
     "skill_ids": [
       "G12-CHVI-B18-O06"
     ],
@@ -498,9 +498,9 @@
   {
     "item_id": "THPT-G12-B18-P06",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho P(B)=2/5 và P(A|B)=1/4. Tính P(A∩B).",
-    "answer_key": "`1/10`.",
-    "worked_solution": "P(B)P(A|B)=(2/5)(1/4)=1/10.",
+    "stem": "Cho \\(P(B)=\\frac25\\), \\(P(A\\mid B)=\\frac14\\). Tính \\(P(A\\cap B)\\).",
+    "answer_key": "\\(\\frac1{10}\\).",
+    "worked_solution": "Vì B là điều kiện, lấy xác suất B nhân xác suất A khi B xảy ra: \\(P(A\\cap B)=\\frac25\\cdot\\frac14=\\frac1{10}\\).",
     "skill_ids": [
       "G12-CHVI-B18-O06"
     ],
@@ -529,9 +529,9 @@
   {
     "item_id": "THPT-G12-B18-A06",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Trong các lượt hành khách được khảo sát, 80% đi chuyến tàu đến đúng giờ. Trong nhóm lượt hành khách đi chuyến đúng giờ, 90% kết nối chuyến tiếp theo thành công. Chọn đều một lượt hành khách, tính xác suất đi chuyến đúng giờ và kết nối thành công.",
-    "answer_key": "`18/25`.",
-    "worked_solution": "Gọi A là lượt hành khách đi chuyến đúng giờ, B là kết nối thành công. P(A)=0,8 và P(B|A)=0,9; cùng một đơn vị kết quả là lượt hành khách. P(A∩B)=0,8·0,9=0,72=18/25.",
+    "stem": "Trong khảo sát lượt hành khách, 80% đi chuyến tàu đúng giờ; trong nhóm này, 90% kết nối chuyến tiếp theo thành công. Chọn ngẫu nhiên một lượt hành khách. Tính xác suất đồng thời đi chuyến đúng giờ và kết nối thành công.",
+    "answer_key": "\\(\\frac{18}{25}=0{,}72\\).",
+    "worked_solution": "Gọi A là lượt đi chuyến đúng giờ, B là kết nối thành công. \\(P(A\\cap B)=P(A)P(B\\mid A)=0{,}8\\cdot0{,}9=0{,}72\\). Cả hai xác suất được hiểu trên cùng đơn vị khảo sát là lượt hành khách.",
     "skill_ids": [
       "G12-CHVI-B18-O06"
     ],
@@ -560,9 +560,9 @@
   {
     "item_id": "THPT-G12-B18-C07",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Túi 4 bi vàng, 2 bi đen; lấy 2 bi không hoàn lại. Tính P(cả hai vàng).",
-    "answer_key": "`2/5`.",
-    "worked_solution": "P=(4/6)(3/5)=2/5.",
+    "stem": "Túi có 4 bi vàng và 2 bi đen. Rút ngẫu nhiên lần lượt 2 bi, mỗi lần các bi còn lại đồng khả năng, không hoàn lại. Tính xác suất cả hai vàng.",
+    "answer_key": "\\(\\frac25\\).",
+    "worked_solution": "Lần đầu vàng có xác suất 4/6. Khi đó còn 3 vàng trong 5 bi, nên lần hai vàng với điều kiện lần đầu vàng có xác suất 3/5. Xác suất giao là \\(\\frac46\\cdot\\frac35=\\frac25\\).",
     "skill_ids": [
       "G12-CHVI-B18-O07"
     ],
@@ -591,9 +591,9 @@
   {
     "item_id": "THPT-G12-B18-P07",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Túi 3 bi đỏ và 2 bi xanh; lấy hai bi không hoàn lại. Tính xác suất hai bi khác màu.",
-    "answer_key": "`3/5`.",
-    "worked_solution": "P(đỏ rồi xanh)=3/5×2/4=3/10; P(xanh rồi đỏ)=2/5×3/4=3/10; cộng=3/5.",
+    "stem": "Túi có 3 bi đỏ, 2 bi xanh. Rút ngẫu nhiên lần lượt 2 bi, không hoàn lại, các bi còn lại đồng khả năng. Tính xác suất hai bi khác màu.",
+    "answer_key": "\\(\\frac35\\).",
+    "worked_solution": "Hai trường hợp rời nhau: đỏ rồi xanh hoặc xanh rồi đỏ. Xác suất tương ứng \\(\\frac35\\cdot\\frac24=\\frac3{10}\\) và \\(\\frac25\\cdot\\frac34=\\frac3{10}\\). Cộng được \\(\\frac35\\).",
     "skill_ids": [
       "G12-CHVI-B18-O07"
     ],
@@ -622,9 +622,9 @@
   {
     "item_id": "THPT-G12-B18-A07",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Túi 4 bi đỏ, 2 bi xanh; rút 3 lần không hoàn lại. Xác suất đúng 2 đỏ và 1 xanh?",
-    "answer_key": "`3/5`.",
-    "worked_solution": "Có 3 thứ tự RRB, RBR, BRR; mỗi thứ tự có xác suất (4×3×2)/(6×5×4)=1/5; tổng=3/5.",
+    "stem": "Túi có 4 bi đỏ, 2 bi xanh. Rút ngẫu nhiên lần lượt 3 bi không hoàn lại, các bi còn lại đồng khả năng. Tính xác suất đúng 2 đỏ, 1 xanh.",
+    "answer_key": "\\(\\frac35\\).",
+    "worked_solution": "Có ba thứ tự màu rời nhau: đỏ–đỏ–xanh, đỏ–xanh–đỏ, xanh–đỏ–đỏ. Mỗi thứ tự có tích xác suất bằng \\(\\frac{4\\cdot3\\cdot2}{6\\cdot5\\cdot4}=\\frac15\\). Cộng ba nhánh được \\(\\frac35\\).",
     "skill_ids": [
       "G12-CHVI-B18-O07"
     ],
@@ -653,9 +653,9 @@
   {
     "item_id": "THPT-G12-B19-C01",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho P(A)=0,35. Tính P(Ā).",
-    "answer_key": "`13/20`.",
-    "worked_solution": "P(Ā)=1−0,35=0,65.",
+    "stem": "Cho \\(P(A)=0{,}35\\). Tính xác suất biến cố đối của A.",
+    "answer_key": "\\(\\frac{13}{20}=0{,}65\\).",
+    "worked_solution": "A và biến cố đối không giao nhau và phủ hết không gian mẫu. Vì vậy \\(P(\\overline A)=1-P(A)=1-0{,}35=0{,}65\\).",
     "skill_ids": [
       "G12-CHVI-B19-O01"
     ],
@@ -684,9 +684,9 @@
   {
     "item_id": "THPT-G12-B19-P01",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho P(A)=2/5. Tính P(Ā), kiểm hai nhánh phủ hết không gian.",
-    "answer_key": "`3/5`.",
-    "worked_solution": "P(Ā)=3/5, tổng bằng 1 và A∩Ā=∅.",
+    "stem": "Cho \\(P(A)=\\frac25\\). Tính \\(P(\\overline A)\\) và giải thích vì sao tổng xác suất hai biến cố bằng 1.",
+    "answer_key": "\\(\\frac35\\).",
+    "worked_solution": "\\(P(\\overline A)=1-\\frac25=\\frac35\\). Hai biến cố rời nhau, hợp là toàn bộ không gian mẫu, nên tổng xác suất bằng 1.",
     "skill_ids": [
       "G12-CHVI-B19-O01"
     ],
@@ -715,9 +715,9 @@
   {
     "item_id": "THPT-G12-B19-A01",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho P(B)=0,32, P(A)=0,4, P(B|A)=0,5. Tìm P(B|Ā).",
-    "answer_key": "`1/5`.",
-    "worked_solution": "0,32=0,4×0,5+0,6×x ⇒ 0,12=0,6x ⇒ x=0,2.",
+    "stem": "Cho \\(P(B)=0{,}32\\), \\(P(A)=0{,}4\\), \\(P(B\\mid A)=0{,}5\\). Tìm \\(P(B\\mid\\overline A)\\).",
+    "answer_key": "\\(\\frac15=0{,}2\\).",
+    "worked_solution": "Đặt x là xác suất cần tìm. Dùng toàn phần theo A và biến cố đối: \\(0{,}32=0{,}4\\cdot0{,}5+0{,}6x\\). Suy ra \\(0{,}12=0{,}6x\\) nên x=0,2. Giá trị nằm trong [0;1].",
     "skill_ids": [
       "G12-CHVI-B19-O01"
     ],
@@ -746,9 +746,9 @@
   {
     "item_id": "THPT-G12-B19-C02",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Nhóm A chiếm 40%, xác suất đạt 80%; nhóm còn lại 60%, xác suất đạt 60%. Tính P(đạt).",
-    "answer_key": "`17/25`.",
-    "worked_solution": "0,4×0,8+0,6×0,6=0,32+0,36=0,68=17/25.",
+    "stem": "Nhóm A chiếm 40%, tỉ lệ đạt trong nhóm là 80%; nhóm còn lại chiếm 60%, tỉ lệ đạt 60%. Chọn ngẫu nhiên một người. Tính xác suất đạt.",
+    "answer_key": "\\(\\frac{17}{25}=0{,}68\\).",
+    "worked_solution": "Hai nhóm phân hoạch tập người. Xác suất đạt là tổng hai nhánh: \\(0{,}4\\cdot0{,}8+0{,}6\\cdot0{,}6=0{,}32+0{,}36=0{,}68\\). Không lấy trung bình cộng 80% và 60%.",
     "skill_ids": [
       "G12-CHVI-B19-O02"
     ],
@@ -777,9 +777,9 @@
   {
     "item_id": "THPT-G12-B19-P02",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Hai nguồn cung A 30%, B 70%, tỉ lệ lỗi lần lượt 10% và 20%. Xác suất lấy ngẫu nhiên một sản phẩm lỗi?",
-    "answer_key": "`17/100`.",
-    "worked_solution": "0,3×0,1+0,7×0,2=0,03+0,14=0,17.",
+    "stem": "Hai nguồn cung A, B chiếm lần lượt 30% và 70% sản phẩm. Tỉ lệ lỗi tương ứng là 10% và 20%. Chọn ngẫu nhiên một sản phẩm. Tính xác suất lỗi.",
+    "answer_key": "\\(\\frac{17}{100}=0{,}17\\).",
+    "worked_solution": "Lỗi có thể đến từ A hoặc B, hai nhánh rời nhau. Theo toàn phần, \\(P(L)=0{,}3\\cdot0{,}1+0{,}7\\cdot0{,}2=0{,}03+0{,}14=0{,}17\\).",
     "skill_ids": [
       "G12-CHVI-B19-O02"
     ],
@@ -808,9 +808,9 @@
   {
     "item_id": "THPT-G12-B19-A02",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Tỉ lệ người di chuyển ngày nghỉ là 60%, 80% trong số này dùng xe công cộng; ngày thường là 40%, 50% dùng xe công cộng. Xác suất ngẫu nhiên một lượt khảo sát dùng xe công cộng?",
-    "answer_key": "`17/25`.",
-    "worked_solution": "0,6×0,8+0,4×0,5=0,48+0,20=0,68.",
+    "stem": "Trong các lượt khảo sát di chuyển, 60% diễn ra ngày nghỉ và 40% ngày thường. Tỉ lệ dùng xe công cộng trong hai nhóm lần lượt 80% và 50%. Chọn ngẫu nhiên một lượt. Tính xác suất dùng xe công cộng.",
+    "answer_key": "\\(\\frac{17}{25}=0{,}68\\).",
+    "worked_solution": "Hai loại ngày tạo hai nhánh rời nhau của lượt khảo sát. \\(P(\\text{xe công cộng})=0{,}6\\cdot0{,}8+0{,}4\\cdot0{,}5=0{,}48+0{,}20=0{,}68\\).",
     "skill_ids": [
       "G12-CHVI-B19-O02"
     ],
@@ -839,9 +839,9 @@
   {
     "item_id": "THPT-G12-B19-C03",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cây: P(A)=0,2, P(B|A)=0,7, P(B|Ā)=0,4. Tính P(B).",
-    "answer_key": "`23/50`.",
-    "worked_solution": "0,2×0,7+0,8×0,4=0,14+0,32=0,46.",
+    "stem": "Cây xác suất có \\(P(A)=0{,}2\\), \\(P(B\\mid A)=0{,}7\\), \\(P(B\\mid\\overline A)=0{,}4\\). Tính P(B).",
+    "answer_key": "\\(\\frac{23}{50}=0{,}46\\).",
+    "worked_solution": "Nhánh đối có xác suất 0,8. Nhân dọc từng nhánh kết thúc ở B rồi cộng hai lá: \\(P(B)=0{,}2\\cdot0{,}7+0{,}8\\cdot0{,}4=0{,}14+0{,}32=0{,}46\\).",
     "skill_ids": [
       "G12-CHVI-B19-O03"
     ],
@@ -870,9 +870,9 @@
   {
     "item_id": "THPT-G12-B19-P03",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cây: P(A)=0,7; xác suất kết quả E nếu A là 0,2, nếu Ā là 0,5. Tính P(E).",
-    "answer_key": "`29/100`.",
-    "worked_solution": "0,7×0,2+0,3×0,5=0,14+0,15=0,29.",
+    "stem": "Cho \\(P(A)=0{,}7\\), \\(P(E\\mid A)=0{,}2\\), \\(P(E\\mid\\overline A)=0{,}5\\). Tính P(E).",
+    "answer_key": "\\(\\frac{29}{100}=0{,}29\\).",
+    "worked_solution": "Vì \\(P(\\overline A)=0{,}3\\), hai nhánh dẫn đến E có xác suất 0,14 và 0,15. Tổng \\(P(E)=0{,}7\\cdot0{,}2+0{,}3\\cdot0{,}5=0{,}29\\).",
     "skill_ids": [
       "G12-CHVI-B19-O03"
     ],
@@ -901,9 +901,9 @@
   {
     "item_id": "THPT-G12-B19-A03",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Theo cây P(A)=0,7, P(E|A)=0,2, P(E|Ā)=0,5, tính P(A|E).",
-    "answer_key": "`14/29`.",
-    "worked_solution": "P(A∩E)=0,14; P(E)=0,29 nên P(A|E)=14/29.",
+    "stem": "Cho \\(P(A)=0{,}7\\), \\(P(E\\mid A)=0{,}2\\), \\(P(E\\mid\\overline A)=0{,}5\\). Tính \\(P(A\\mid E)\\).",
+    "answer_key": "\\(\\frac{14}{29}\\).",
+    "worked_solution": "Nhánh A và E có xác suất \\(0{,}7\\cdot0{,}2=0{,}14\\). Tổng xác suất E là \\(0{,}14+0{,}3\\cdot0{,}5=0{,}29>0\\). Theo Bayes, \\(P(A\\mid E)=\\frac{0{,}14}{0{,}29}=\\frac{14}{29}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O03"
     ],
@@ -932,9 +932,9 @@
   {
     "item_id": "THPT-G12-B19-C04",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "P(A)=0,3, P(B|A)=0,1, P(B|Ā)=0,2. Tính P(A|B).",
-    "answer_key": "`3/17`.",
-    "worked_solution": "Tử 0,03; mẫu 0,03+0,14=0,17; được 3/17.",
+    "stem": "Cho \\(P(A)=0{,}3\\), \\(P(B\\mid A)=0{,}1\\), \\(P(B\\mid\\overline A)=0{,}2\\). Tính \\(P(A\\mid B)\\).",
+    "answer_key": "\\(\\frac3{17}\\).",
+    "worked_solution": "Tử số là nhánh A và B: \\(0{,}3\\cdot0{,}1=0{,}03\\). Mẫu là tất cả nhánh B: \\(0{,}03+0{,}7\\cdot0{,}2=0{,}17>0\\). Tỉ số bằng \\(\\frac3{17}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O04"
     ],
@@ -963,9 +963,9 @@
   {
     "item_id": "THPT-G12-B19-P04",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "P(A)=1/4, P(B|A)=4/5, P(B|Ā)=3/5. Tính P(A|B).",
-    "answer_key": "`4/13`.",
-    "worked_solution": "Tử (1/4)(4/5)=1/5; mẫu 1/5+(3/4)(3/5)=13/20; hậu nghiệm=4/13.",
+    "stem": "Cho \\(P(A)=\\frac14\\), \\(P(B\\mid A)=\\frac45\\), \\(P(B\\mid\\overline A)=\\frac35\\). Tính \\(P(A\\mid B)\\).",
+    "answer_key": "\\(\\frac4{13}\\).",
+    "worked_solution": "Tử số \\(P(A\\cap B)=\\frac14\\cdot\\frac45=\\frac15\\). Toàn phần cho \\(P(B)=\\frac15+\\frac34\\cdot\\frac35=\\frac{13}{20}>0\\). Bayes: \\(\\frac{1/5}{13/20}=\\frac4{13}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O04"
     ],
@@ -994,9 +994,9 @@
   {
     "item_id": "THPT-G12-B19-A04",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Một tỉ lệ nền là 2%, độ nhạy của phép thử là 90%, tỷ lệ dương tính giả 10% (giả định). Nếu kết quả dương, xác suất thuộc nhóm có đặc điểm là bao nhiêu?",
-    "answer_key": "`9/58`.",
-    "worked_solution": "P(A|+)=(0,02×0,9)/(0,02×0,9+0,98×0,1)=0,018/0,116=9/58. Đây chỉ là ví dụ toán giả định.",
+    "stem": "Trong mô hình giả định, 2% đối tượng có một đặc điểm. Phép thử cho kết quả dương ở 90% đối tượng có đặc điểm và 10% đối tượng không có đặc điểm. Biết kết quả dương, tính xác suất đối tượng có đặc điểm.",
+    "answer_key": "\\(\\frac9{58}\\).",
+    "worked_solution": "Xét 1000 đối tượng theo tỉ lệ mô hình: 20 có đặc điểm, 18 dương; 980 không có, 98 dương. Trong 116 kết quả dương, 18 thuộc nhóm có đặc điểm. Bayes cho \\(\\frac{18}{116}=\\frac9{58}\\). Đây là mô hình toán giả định.",
     "skill_ids": [
       "G12-CHVI-B19-O04"
     ],
@@ -1025,9 +1025,9 @@
   {
     "item_id": "THPT-G12-B19-C05",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Giả định tỷ lệ nền 2%, độ nhạy 90%, xác suất dương tính giả 5%. Tính P(có đặc điểm|dương).",
-    "answer_key": "`18/67`.",
-    "worked_solution": "Tử 0,02×0,9=0,018; giả dương 0,98×0,05=0,049; tổng 0,067; P=18/67.",
+    "stem": "Trong mô hình giả định, 2% đối tượng có đặc điểm; 90% nhóm có đặc điểm và 5% nhóm không có đặc điểm cho kết quả dương. Biết kết quả dương, tính xác suất có đặc điểm.",
+    "answer_key": "\\(\\frac{18}{67}\\).",
+    "worked_solution": "Nhánh có đặc điểm và dương: \\(0{,}02\\cdot0{,}9=0{,}018\\). Nhánh không có và dương: \\(0{,}98\\cdot0{,}05=0{,}049\\). Tổng dương 0,067; xác suất cần tìm \\(\\frac{0{,}018}{0{,}067}=\\frac{18}{67}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O05"
     ],
@@ -1056,9 +1056,9 @@
   {
     "item_id": "THPT-G12-B19-P05",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Giả định tỷ lệ nền 1%, độ nhạy 80%, tỷ lệ dương giả 10%. Tính P(có đặc điểm|dương).",
-    "answer_key": "`8/107`.",
-    "worked_solution": "Tử 0,008; giả dương 0,99×0,10=0,099; tổng 0,107; P=8/107.",
+    "stem": "Trong mô hình giả định, 1% đối tượng có đặc điểm; 80% nhóm có đặc điểm và 10% nhóm không có đặc điểm cho kết quả dương. Biết dương, tính xác suất có đặc điểm.",
+    "answer_key": "\\(\\frac8{107}\\).",
+    "worked_solution": "Hai nhánh dương có xác suất \\(0{,}01\\cdot0{,}8=0{,}008\\) và \\(0{,}99\\cdot0{,}1=0{,}099\\). Tổng 0,107. Bayes cho \\(\\frac{0{,}008}{0{,}107}=\\frac8{107}\\); không nhầm với độ nhạy 80%.",
     "skill_ids": [
       "G12-CHVI-B19-O05"
     ],
@@ -1087,9 +1087,9 @@
   {
     "item_id": "THPT-G12-B19-A05",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Một bộ lọc thư có tỷ lệ thư rác 5%, nhận diện đúng thư rác 90%, gắn nhầm thư thường 4%. Nếu thư bị gắn rác, xác suất thư thực sự rác?",
-    "answer_key": "`45/83`.",
-    "worked_solution": "P(rác|gắn)=0,05×0,9/[0,05×0,9+0,95×0,04]=0,045/0,083=45/83.",
+    "stem": "Bộ lọc thư: 5% thư là rác, 90% thư rác bị gắn nhãn rác, 4% thư thường bị gắn nhầm rác. Biết thư bị gắn nhãn rác, tính xác suất thực sự là thư rác.",
+    "answer_key": "\\(\\frac{45}{83}\\).",
+    "worked_solution": "Nhánh thư rác và bị gắn nhãn có xác suất \\(0{,}05\\cdot0{,}9=0{,}045\\). Nhánh thư thường bị gắn nhầm là \\(0{,}95\\cdot0{,}04=0{,}038\\). Tổng bị gắn nhãn là 0,083. Bayes cho \\(\\frac{0{,}045}{0{,}083}=\\frac{45}{83}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O05"
     ],
@@ -1118,9 +1118,9 @@
   {
     "item_id": "THPT-G12-B19-C06",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn ngẫu nhiên một lượt khảo sát từ ba vùng A,B,C có tỉ trọng lượt khảo sát lần lượt 25%,50%,25%; xác suất ghi nhận mưa trong từng vùng lần lượt 60%,20%,40%. Tính xác suất lượt khảo sát ghi nhận mưa.",
-    "answer_key": "`7/20`.",
-    "worked_solution": "Ba vùng phân hoạch các lượt khảo sát. Theo toàn phần: P(mưa)=0,25·0,6+0,5·0,2+0,25·0,4=0,35=7/20.",
+    "stem": "Chọn ngẫu nhiên một lượt khảo sát từ ba vùng A, B, C chiếm lần lượt 25%, 50%, 25% lượt. Tỉ lệ ghi nhận mưa trong từng vùng là 60%, 20%, 40%. Tính xác suất lượt ghi nhận mưa.",
+    "answer_key": "\\(\\frac7{20}=0{,}35\\).",
+    "worked_solution": "Ba vùng phân hoạch lượt khảo sát. Theo toàn phần, \\(0{,}25\\cdot0{,}6+0{,}5\\cdot0{,}2+0{,}25\\cdot0{,}4=0{,}15+0{,}10+0{,}10=0{,}35\\).",
     "skill_ids": [
       "G12-CHVI-B19-O06"
     ],
@@ -1149,9 +1149,9 @@
   {
     "item_id": "THPT-G12-B19-P06",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Ba nhà máy đóng góp 20%,30%,50%, tỉ lệ lỗi 1%,2%,3%. Tính tỉ lệ lỗi chung.",
-    "answer_key": "`23/1000`.",
-    "worked_solution": "0,2×0,01+0,3×0,02+0,5×0,03=0,002+0,006+0,015=0,023.",
+    "stem": "Ba nhà máy đóng góp lần lượt 20%, 30%, 50% sản phẩm; tỉ lệ lỗi tương ứng 1%, 2%, 3%. Tính xác suất sản phẩm chọn ngẫu nhiên bị lỗi.",
+    "answer_key": "\\(\\frac{23}{1000}=0{,}023\\).",
+    "worked_solution": "Cộng ba nhánh lỗi có trọng số: \\(0{,}2\\cdot0{,}01+0{,}3\\cdot0{,}02+0{,}5\\cdot0{,}03=0{,}002+0{,}006+0{,}015=0{,}023\\) (2,3%).",
     "skill_ids": [
       "G12-CHVI-B19-O06"
     ],
@@ -1180,9 +1180,9 @@
   {
     "item_id": "THPT-G12-B19-A06",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Ba nguồn cung chiếm 40%,35%,25%, tỷ lệ lỗi lần lượt 2%,4%,8%. Tính P(lỗi).",
-    "answer_key": "`21/500`.",
-    "worked_solution": "0,4×0,02+0,35×0,04+0,25×0,08=0,008+0,014+0,02=0,042.",
+    "stem": "Ba nguồn cung chiếm lần lượt 40%, 35%, 25% sản phẩm, tỉ lệ lỗi tương ứng 2%, 4%, 8%. Tính xác suất lỗi của sản phẩm chọn ngẫu nhiên.",
+    "answer_key": "\\(\\frac{21}{500}=0{,}042\\).",
+    "worked_solution": "Ba nguồn tạo phân hoạch. Xác suất lỗi là \\(0{,}4\\cdot0{,}02+0{,}35\\cdot0{,}04+0{,}25\\cdot0{,}08=0{,}008+0{,}014+0{,}02=0{,}042\\) (4,2%).",
     "skill_ids": [
       "G12-CHVI-B19-O06"
     ],
@@ -1211,9 +1211,9 @@
   {
     "item_id": "THPT-G12-B19-C07",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "70% đơn thuộc ca sáng thành công 80%; 30% ca tối thành công 50%. Tính P(thành công) và P(ca sáng|thành công).",
-    "answer_key": "`71/100 và 56/71`.",
-    "worked_solution": "P(S)=0,7×0,8+0,3×0,5=0,71; P(sáng|S)=0,56/0,71=56/71.",
+    "stem": "70% đơn thuộc ca sáng, tỉ lệ thành công 80%; 30% thuộc ca tối, tỉ lệ thành công 50%. Chọn ngẫu nhiên một đơn. Tính xác suất thành công và xác suất thuộc ca sáng khi biết thành công.",
+    "answer_key": "\\(\\frac{71}{100}\\) và \\(\\frac{56}{71}\\).",
+    "worked_solution": "Hai nhánh thành công có xác suất 0,56 và 0,15. Toàn phần cho \\(P(S)=0{,}56+0{,}15=0{,}71\\). Trong tất cả đơn thành công, phần từ ca sáng theo Bayes là \\(\\frac{0{,}56}{0{,}71}=\\frac{56}{71}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O07"
     ],
@@ -1242,9 +1242,9 @@
   {
     "item_id": "THPT-G12-B19-P07",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Nguồn A 60% có tỉ lệ hỏng 10%; nguồn B 40% hỏng 5%. Tính P(hỏng) và P(A|hỏng).",
-    "answer_key": "`2/25 và 3/4`.",
-    "worked_solution": "P(H)=0,6×0,1+0,4×0,05=0,08; P(A|H)=0,06/0,08=3/4.",
+    "stem": "Nguồn A cung cấp 60% sản phẩm, tỉ lệ hỏng 10%; nguồn B cung cấp 40%, tỉ lệ hỏng 5%. Chọn ngẫu nhiên một sản phẩm. Tính xác suất hỏng và xác suất thuộc A khi biết hỏng.",
+    "answer_key": "\\(\\frac2{25}\\) và \\(\\frac34\\).",
+    "worked_solution": "Nhánh A và hỏng có xác suất 0,06; nhánh B và hỏng là 0,02. Tổng hỏng \\(P(H)=0{,}08=\\frac2{25}\\). Bayes cho \\(P(A\\mid H)=\\frac{0{,}06}{0{,}08}=\\frac34\\).",
     "skill_ids": [
       "G12-CHVI-B19-O07"
     ],
@@ -1273,9 +1273,9 @@
   {
     "item_id": "THPT-G12-B19-A07",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Tỷ lệ giao ca sáng 45%, tỷ lệ giao đúng là 90%; ca tối 55%, tỷ lệ giao đúng là 80%. Tính P(giao đúng), sau đó P(ca tối|giao đúng).",
-    "answer_key": "`169/200 và 88/169`.",
-    "worked_solution": "P(Đ)=0,45×0,9+0,55×0,8=0,845=169/200; P(tối|Đ)=0,44/0,845=88/169.",
+    "stem": "Trong các đơn giao hàng, 45% thuộc ca sáng với tỉ lệ giao đúng 90%, 55% thuộc ca tối với tỉ lệ giao đúng 80%. Chọn ngẫu nhiên một đơn. Tính xác suất giao đúng rồi tính xác suất thuộc ca tối khi biết giao đúng.",
+    "answer_key": "\\(\\frac{169}{200}\\) và \\(\\frac{88}{169}\\).",
+    "worked_solution": "Nhánh sáng giao đúng: \\(0{,}45\\cdot0{,}9=0{,}405\\); nhánh tối giao đúng: \\(0{,}55\\cdot0{,}8=0{,}44\\). Tổng đúng \\(0{,}845=\\frac{169}{200}\\). Bayes cho xác suất ca tối \\(\\frac{0{,}44}{0{,}845}=\\frac{88}{169}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O07"
     ],
