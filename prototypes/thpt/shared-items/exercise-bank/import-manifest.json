@@ -1318,17 +1318,17 @@
     }
   ],
   "counts": {
-    "formative_items": 1823,
+    "formative_items": 1851,
     "written_references": 325,
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3932,
+    "placements": 3960,
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
     "legacy_combined_answer_items": 0,
-    "topic_knowledge_first_try": 181,
+    "topic_knowledge_first_try": 209,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
   },
@@ -18174,6 +18174,59 @@
       },
       "review_scope": "CD01 current source stem/solution and separate author keys, source locator and D6; two same-task SGK matches verified; no full global duplicate scan or fresh primary SGK PDF audit. Historical CD01 knowledge projection path not resolved, no invented projection metadata.",
       "remaining": "CD02–13 remaining 233 unkeyed blocks, task-equivalence before ID allocation; global uniqueness scan, full Practice/Replay parity and depth/Written/SGK follow-up",
+      "release_authorization": false
+    },
+    "source_delta_reconciliation_cp71": {
+      "scope": "CD02–03 current learner unkeyed Vận dụng blocks; comparison with related local and SGK ChII/ChVI items, then import distinct tasks",
+      "baseline_commit": "b652f38f97b0e3ba7b73715669c31252190a5c4b",
+      "item_commit": "3f07e0384a1939ea4e4e4884c7aeb8a8a98f64f8",
+      "placement_commit": "6e26232f258af6c8e37cd6a2eece31e1946e8267",
+      "sources": [
+        {
+          "topic": "CD02",
+          "learner_blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+          "blocks": 16,
+          "added": 16
+        },
+        {
+          "topic": "CD03",
+          "learner_blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+          "blocks": 12,
+          "added": 12
+        }
+      ],
+      "reused_existing_ids": 0,
+      "comparison_note": "Related tasks have different mathematical data and/or demands; no exact same task identified in reviewed CD02/03 and relevant SGK ChII/ChVI records. Not a full global duplicate scan.",
+      "academic_changes": [
+        "CD02 KFT07 complete square and explicitly justify accepted boundary m=±1; remove context-dependent example remediation. KFT16 prove integer upper bound 2 from sum constraints and verify all attaining pairs, distinguish continuous optimum 8/3. KFT10 specify origin and boundary test.",
+        "CD03 KFT07–09 separate both radicand and sign conditions before squaring, filter candidate solutions; KFT12 explicit fixed distance and constant speed; KFT01 replace dependency on prior example with explicit equation."
+      ],
+      "checks": {
+        "item_shard_after": "e46fb73cfa29b1aaefcd015cb3c88ac87f2d04f0",
+        "placement_shard_after": "50eebb4f93aa7248181132424967b34b3ea0c867",
+        "existing_records_unchanged": 179,
+        "existing_first_try_placements_unchanged": 181,
+        "new_items": 28,
+        "new_placements": 28,
+        "unique_item_shard_records": 207,
+        "exact_one_placement": 28,
+        "d6_order_and_written_reference_resolved": 28,
+        "inline_math_delimiters_balanced": 28,
+        "auto_grade_false": 28,
+        "skill_tags_missing": 9,
+        "skill_note": "Nine tasks have no confirmed skill tag in analogous current records; preserve source outcome and leave skill_ids empty rather than invent parallel taxonomy. Complete mapping before final handoff."
+      },
+      "progress": {
+        "topic_first_try_placements": 209,
+        "distinct_topic_first_try_shard_records": 207,
+        "total_inventoried_topic_first_try_blocks": 414,
+        "pending": 205,
+        "projected_bank_total_ids": 2349,
+        "projected_total_placements": 3960,
+        "counts_note": "Prior CP70 projected 2321/3932 +28/+28, not a fresh global scan"
+      },
+      "review_scope": "Scoped author math, source, local collision and D6 reference review; no fresh primary PDF, Written rubric audit, or full global duplicate scan. No bank-wide Academic/PED PASS.",
+      "remaining": "CD04–13 remaining 205 unkeyed blocks, skill tag mapping for nine CD02–03 tasks, global uniqueness and full Practice/Replay field reconciliation, shared placements/depth/Written/SGK",
       "release_authorization": false
     }
   }
