@@ -17857,6 +17857,66 @@
       "review_scope": "Scoped author verification of 25 solutions and source reconciliation, no bank-wide Q18 or fresh primary PDF review; CD20/21 practice/replay field parity and shared SGK placement coverage remain pending",
       "remaining": "Next FirstTry CD14–19,22 then local CD01–13; shared placements and depth gaps, Written and SGK outstanding; no interaction conversion or cutover authorization",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp67": {
+      "scope": "CD14–16 public Knowledge FirstTry only; full Practice/Replay field reconciliation not claimed",
+      "baseline_commit": "7aeee527df335faecd47c50cc39e1aa6c7f3881e",
+      "item_commit": "c4d791bb620274171ebc260491e2c1ffb4f2aee1",
+      "item_shard": {
+        "path": "items/topic-knowledge-first-try.json",
+        "before": "6d30ead43dc72199075f406c5336f50beba9744a",
+        "after": "a99fddfabb5f7bf925783faff02ed37a35b4968f"
+      },
+      "sources": [
+        {
+          "topic": "CD14",
+          "old": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+          "current": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
+          "first_try": 23,
+          "old_stem_match": 18,
+          "old_solution_match": 11
+        },
+        {
+          "topic": "CD15",
+          "old": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+          "current": "11d2106a7ed77b801c86420503dca929544dc076",
+          "first_try": 22,
+          "old_stem_match": 12,
+          "old_solution_match": 15
+        },
+        {
+          "topic": "CD16",
+          "old": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+          "current": "3e6f97091a814d7cee7096fd92cd448dd8900435",
+          "first_try": 21,
+          "old_stem_match": 16,
+          "old_solution_match": 18
+        }
+      ],
+      "checks": {
+        "first_try_placements": 66,
+        "source_old_stem_matches": 46,
+        "source_old_solution_matches": 44,
+        "bank_stem_deltas_reconciled": 20,
+        "bank_solution_deltas_reconciled": 22,
+        "readback_changed_records": 66,
+        "readback_unchanged_records": 104,
+        "first_try_placement_blob_unchanged": "eb32ea775a8ca9242e6b052163f6fc1fcf829426",
+        "d6_formative_order_resolved": 61,
+        "d6_mixed_formative_written_order_resolved": 5,
+        "written_reference_ids_found": 5,
+        "inline_math_delimiters_balanced": 66,
+        "auto_grade_false": 66
+      },
+      "academic_changes": [
+        "TOP16-T14: adopt current learner additional tangent task, length 5 m, opposite 3 m, adjacent 4 m, tan=3/4; synchronize stem/key/solution; correct unrelated 5+12 feedback to 3+4.",
+        "TOP14: preserve full parameter, constant-flow assumptions, circle construction, substitution and perpendicular/tangent derivations; explicitly identify origin for T15; preserve parabolic focus convention.",
+        "TOP15-T13: establish necessity and sufficiency of equal edge ratios; T15 keep concrete counterexample; T16 retain explicit parallel-plane hypothesis; T21 explain degenerate projection.",
+        "TOP16: retain skew-perpendicular example and counterexample to parallel test lines; T10 distinguish on-plane point from nonzero perpendicular segment."
+      ],
+      "review_scope": "Scoped three-way reconciliation and author math review; D6 order/reference existence, not full Written rubric or fresh S1 PDF audit; no bank-wide Academic/PED PASS",
+      "remaining": "CD17–19,22 remaining FirstTry (CD18 partial CP65), CD01–13 local first-try; Practice/Replay full field parity, shared placements and depth, Written provenance/rubric and SGK follow-up",
+      "release_authorization": false
     }
   }
 }
