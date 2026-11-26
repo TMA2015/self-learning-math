@@ -1,3 +1,10 @@
+## CURRENT CP15 CĐ13 V2
+Learner `7e54d34b9eee75ab4b8f8e4f53ab40298e701493`, Q18 `868a8e44359b8fb10e06649e011f4b2354d0ba5c`, A1 `b843c9b42395434bbce295ca90fd712af7562b06`, added SVG `03f008e587226f0492ec217373d090cd7cc0d79b`; 52 IDs, 16 exact replay stems, 4 rubric point sequences, 69 disclosures. G10 cross-PR #750 actual canonical `18c29d7f60448a0a52d5b9f5aa5002e0f331defd` must be available at RELEASE integration. Work O04/O13 source verified; RELEASE UI and browser not tested.
+
+---
+
+**Earlier narrative evidence below is historical; current structured snapshot fields supersede prior narrative pointers.**
+
 <!-- OWNER_20261121_SHARED_CANONICAL_EDITORIAL_SOURCE_EQUIVALENT_TOPIC13_V2 -->
 **CURRENT OWNER-APPROVED SOURCE_EQUIVALENT:** CĐ13 learner `7bd211326e4f644a94e1dfad7868c03e1c415adb`, original G10 SGK canonical B07-P04 `18c29d7f60448a0a52d5b9f5aa5002e0f331defd` (prior `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` immutable historical), Q18 `24f5cd26b47852259cdc932fce7577fcf2f44866`, Q15/A1 `6389565e2a528ab22d06f39591e7ab048c10c3de`, V2 `pending`. Exact original B07-P04 vector-zero stem asks SAME conventional fact, MCQ choices and **Đáp án D** unchanged, mathematical solution still states zero vector is length 0 and by the learned convention has same direction; only citation prose “SGK/SBT KNTT” removed from stem/solution in BOTH source owner and Topic projection. Remaining 51 Practice math and 4 written rubrics, 16 public selfchecks and SVG unaffected. DELTA_B_SOURCE_EQUIVALENT; no new independent NotebookLM whole Topic PASS/RELEASE/merge/deploy.
 ---
@@ -33,19 +40,19 @@ CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 7bd211326e4f644a94e1dfad7868c03e1c415adb
+ACADEMIC_SOURCE_BLOB: 7e54d34b9eee75ab4b8f8e4f53ab40298e701493
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 24f5cd26b47852259cdc932fce7577fcf2f44866
+REVIEW_RECEIPT_BLOB: 868a8e44359b8fb10e06649e011f4b2354d0ba5c
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 6389565e2a528ab22d06f39591e7ab048c10c3de
+AUTHOR_A1_A7_BLOB: b843c9b42395434bbce295ca90fd712af7562b06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 6389565e2a528ab22d06f39591e7ab048c10c3de
+AUTHOR_METADATA_BLOB: b843c9b42395434bbce295ca90fd712af7562b06
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 G10_SGK_CROSS_PR_DEPENDENCY: 750
 G10_SGK_SOURCE_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
 ORIGINAL_G10_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHIV_FULL_R03_CONSOLIDATED_SOURCE_20261105.md
-ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
+ORIGINAL_G10_SGK_SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd
 ORIGINAL_G12_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 SVG1_PATH: prototypes/thpt/visuals/THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg
@@ -56,6 +63,8 @@ SVG3_PATH: prototypes/thpt/content-drafts/svg/FIG-G12-CHII-B07-R00.svg
 SVG3_BLOB: 979ca912e99fdadfc4e91ae0edad5db34fc13928
 SVG4_PATH: prototypes/thpt/content-drafts/svg/FIG-G12-CHII-B08-R00.svg
 SVG4_BLOB: 13445da079245a556a08e7a57069d9987097a0be
+SVG5_PATH: prototypes/thpt/visuals/THPT_TOPIC13_COMMON_ORIGIN_ANGLE.svg
+SVG5_BLOB: 03f008e587226f0492ec217373d090cd7cc0d79b
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 BLOCKERS: NONE
