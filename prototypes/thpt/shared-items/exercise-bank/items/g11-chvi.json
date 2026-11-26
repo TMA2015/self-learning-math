@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-G11-CHVI-B18-C01",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tại sao (2/5)^(-2) không phải số âm? Tính giá trị.",
-    "answer_key": "25/4.",
-    "worked_solution": "Số mũ âm nói lấy nghịch đảo, không phải dấu âm trước lũy thừa: (2/5)^(-2)=(5/2)^2=25/4.",
+    "stem": "Tại sao \\((\\frac25)^{-2}\\) không phải số âm? Tính giá trị.",
+    "answer_key": "\\(\\frac{25}4\\).",
+    "worked_solution": "Số mũ âm cho biết phải lấy nghịch đảo của lũy thừa, không phải đặt dấu âm trước nó. Vì cơ số dương và khác 0, \\((\\frac25)^{-2}=\\frac1{(\\frac25)^2}=(\\frac52)^2=\\frac{25}4\\).",
     "skill_ids": [
       "G11-B18-POWER_INTEGER"
     ],
@@ -33,9 +33,9 @@
   {
     "item_id": "THPT-G11-CHVI-B18-C02",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải thích ý nghĩa của 81^(3/4) và tính kết quả.",
+    "stem": "Giải thích ý nghĩa của \\(81^{\\frac34}\\) và tính giá trị.",
     "answer_key": "27.",
-    "worked_solution": "Cơ số dương, căn bậc 4 của 81 bằng 3; lấy lũy thừa bậc 3 được 27.",
+    "worked_solution": "Với cơ số dương, số mũ hữu tỉ \\(\\frac34\\) nghĩa là lấy căn bậc bốn rồi nâng lên lũy thừa bậc ba. Vậy \\(81^{\\frac34}=(\\sqrt[4]{81})^3=3^3=27\\).",
     "skill_ids": [
       "G11-B18-POWER_RATIONAL"
     ],
@@ -64,9 +64,9 @@
   {
     "item_id": "THPT-G11-CHVI-B18-C03",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "0^(-2) có nghĩa trong tập số thực không? Vì sao?",
+    "stem": "\\(0^{-2}\\) có nghĩa trong tập số thực không? Vì sao?",
     "answer_key": "Không.",
-    "worked_solution": "Nếu dùng quy tắc số mũ âm sẽ là 1/0², phép chia cho 0 không xác định.",
+    "worked_solution": "Quy tắc \\(a^{-2}=\\frac1{a^2}\\) chỉ có nghĩa khi a khác 0. Nếu lấy a bằng 0, mẫu bằng 0, phép chia không xác định. Do đó \\(0^{-2}\\) không có nghĩa.",
     "skill_ids": [
       "G11-B18-POWER_INTEGER"
     ],
@@ -95,9 +95,9 @@
   {
     "item_id": "THPT-G11-CHVI-B18-C04",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Một bạn nói: “2^(√2) không có nghĩa, vì √2 không thể đếm số lần nhân 2”. Em giải thích bạn đang hiểu sai điều gì và mô tả cách số này được hình thành.",
-    "answer_key": "2^(√2) có nghĩa vì cơ số 2>0; số mũ thực không còn được hiểu là số lần nhân nguyên. Nó được định nghĩa bằng giới hạn của dãy giá trị 2^r khi các số hữu tỉ r tiến đến √2.",
-    "worked_solution": "Các số mũ hữu tỉ gần √2 như 1,4;1,41;1,414,… đã có định nghĩa bằng căn/lũy thừa. Khi các giá trị 2^r tiến đến một số xác định không phụ thuộc dãy xấp xỉ, ta gọi đó là 2^(√2). Đây là mở rộng nhất quán của khái niệm, không phải “nhân số 2 √2 lần”.",
+    "stem": "Một bạn nói: “\\(2^{\\sqrt2}\\) không có nghĩa, vì \\(\\sqrt2\\) không thể đếm số lần nhân 2”. Giải thích sai lầm và mô tả cách số này được hình thành.",
+    "answer_key": "\\(2^{\\sqrt2}\\) có nghĩa vì cơ số 2 dương; lũy thừa với số mũ thực được mở rộng bằng giới hạn của lũy thừa với số mũ hữu tỉ.",
+    "worked_solution": "Với số mũ nguyên dương, lũy thừa mô tả số lần nhân; với số mũ hữu tỉ đã mở rộng bằng căn và lũy thừa. Chọn một dãy số hữu tỉ tiến đến \\(\\sqrt2\\), chẳng hạn 1,4; 1,41; 1,414; ... . Các lũy thừa tương ứng của 2 tiến đến một giới hạn xác định, không phụ thuộc vào dãy xấp xỉ. Giới hạn ấy là \\(2^{\\sqrt2}\\), không phải phép nhân 2 một số lần vô tỉ.",
     "skill_ids": [
       "G11-B18-POWER_REAL"
     ],
@@ -126,9 +126,9 @@
   {
     "item_id": "THPT-G11-CHVI-B18-C05",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Phân biệt hai yêu cầu: tìm `√25` và giải `x²=25`. Nếu chuyển sang `∛(−27)`, kết quả ra sao? Giải thích vai trò của căn bậc chẵn/lẻ.",
-    "answer_key": "`√25=5` là căn không âm; phương trình `x²=25` có hai nghiệm `x=5` và `x=−5`; `∛(−27)=−3`.",
-    "worked_solution": "Ký hiệu căn bậc chẵn lấy giá trị không âm, còn phương trình `x²=25` yêu cầu tìm **mọi** số bình phương bằng 25. Căn bậc lẻ của số âm tồn tại trong ℝ vì `(−3)³=−27`. Không suy rộng cơ số âm sang mọi số mũ thực.",
+    "stem": "Phân biệt yêu cầu tính \\(\\sqrt{25}\\) và giải \\(x^2=25\\). Tính thêm \\(\\sqrt[3]{-27}\\) và giải thích vai trò của căn bậc chẵn, lẻ.",
+    "answer_key": "\\(\\sqrt{25}=5\\); phương trình có hai nghiệm \\(x=\\pm5\\); \\(\\sqrt[3]{-27}=-3\\).",
+    "worked_solution": "Căn bậc hai số học là giá trị không âm có bình phương bằng 25, nên \\(\\sqrt{25}=5\\). Phương trình \\(x^2=25\\) yêu cầu mọi số có bình phương bằng 25, gồm 5 và −5. Căn bậc ba của số âm tồn tại vì \\((-3)^3=-27\\), nên \\(\\sqrt[3]{-27}=-3\\). Không từ đó suy rộng lũy thừa cơ số âm cho mọi số mũ thực.",
     "skill_ids": [
       "G11-B18-POWER_RATIONAL"
     ],
@@ -157,9 +157,9 @@
   {
     "item_id": "THPT-G11-CHVI-B18-P01",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Với a>0, rút gọn a^(-1/2)·a^(3/2).",
+    "stem": "Với \\(a>0\\), rút gọn \\(a^{-\\frac12}\\cdot a^{\\frac32}\\).",
     "answer_key": "a.",
-    "worked_solution": "Cộng các số mũ do cùng cơ số dương: a^((-1/2)+(3/2))=a^1=a.",
+    "worked_solution": "Hai lũy thừa cùng cơ số dương, nên khi nhân ta cộng số mũ: \\(a^{-\\frac12}\\cdot a^{\\frac32}=a^{-\\frac12+\\frac32}=a^1=a\\).",
     "skill_ids": [
       "G11-B18-POWER_LAWS"
     ],
@@ -188,9 +188,9 @@
   {
     "item_id": "THPT-G11-CHVI-B18-P02",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tính 64^(-1/3).",
-    "answer_key": "1/4.",
-    "worked_solution": "Căn bậc ba của 64 là 4; số mũ âm lấy nghịch đảo.",
+    "stem": "Tính \\(64^{-\\frac13}\\).",
+    "answer_key": "\\(\\frac14\\).",
+    "worked_solution": "Do \\(64>0\\), dùng quy tắc số mũ âm và hữu tỉ: \\(64^{-\\frac13}=\\frac1{\\sqrt[3]{64}}=\\frac14\\).",
     "skill_ids": [
       "G11-B18-POWER_RATIONAL"
     ],
@@ -219,9 +219,9 @@
   {
     "item_id": "THPT-G11-CHVI-B18-P03",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tính 16^(3/4) theo căn bậc bốn.",
+    "stem": "Tính \\(16^{\\frac34}\\) theo căn bậc bốn.",
     "answer_key": "8.",
-    "worked_solution": "Căn bậc 4 của 16 là 2, sau đó lấy 2³=8.",
+    "worked_solution": "Cơ số dương nên \\(16^{\\frac34}=(\\sqrt[4]{16})^3=2^3=8\\). Căn bậc bốn là 2, không lấy cả hai dấu.",
     "skill_ids": [
       "G11-B18-POWER_RATIONAL"
     ],
@@ -250,9 +250,9 @@
   {
     "item_id": "THPT-G11-CHVI-B18-P04",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Với a>0, rút gọn (a^(2/3))^(3/2).",
+    "stem": "Với \\(a>0\\), rút gọn \\((a^{\\frac23})^{\\frac32}\\).",
     "answer_key": "a.",
-    "worked_solution": "Nhân số mũ 2/3·3/2=1 với cơ số dương để mọi phép tính hợp lệ.",
+    "worked_solution": "Vì a dương, áp dụng quy tắc lũy thừa của lũy thừa: \\((a^{\\frac23})^{\\frac32}=a^{\\frac23\\cdot\\frac32}=a\\). Giả thiết dương bảo đảm các lũy thừa thực có nghĩa.",
     "skill_ids": [
       "G11-B18-POWER_LAWS"
     ],
@@ -281,9 +281,9 @@
   {
     "item_id": "THPT-G11-CHVI-B18-P05",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Vốn 400 triệu tăng 5% mỗi năm, lãi nhập gốc. Sau 2 năm có bao nhiêu triệu đồng (bỏ qua phí)?",
+    "stem": "Vốn 400 triệu đồng tăng 5% mỗi năm, lãi nhập gốc cuối mỗi năm. Sau 2 năm có bao nhiêu triệu đồng (bỏ qua phí)?",
     "answer_key": "441 triệu đồng.",
-    "worked_solution": "400·1,05²=441. Năm thứ hai tính lãi trên số vốn đã tăng sau năm đầu.",
+    "worked_solution": "Mỗi năm, số dư được nhân với \\(1+\\frac5{100}=1{,}05\\). Sau năm đầu có \\(400\\cdot1{,}05=420\\) triệu đồng. Năm thứ hai tính lãi trên 420 triệu, nên số dư là \\(400\\cdot1{,}05^2=441\\) triệu đồng.",
     "skill_ids": [
       "G11-B18-GROWTH_MODEL"
     ],
@@ -312,9 +312,9 @@
   {
     "item_id": "THPT-G11-CHVI-B18-P06",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Bạn viết 2²+2³=2⁵. Hãy nêu lỗi và kết quả đúng.",
-    "answer_key": "12; quy tắc cộng số mũ không áp dụng cho tổng hai lũy thừa.",
-    "worked_solution": "2²+2³=4+8=12; 2⁵=32 chỉ bằng 2²·2³.",
+    "stem": "Một bạn viết \\(2^2+2^3=2^5\\). Nêu lỗi và tính kết quả đúng.",
+    "answer_key": "12; quy tắc cộng số mũ không áp dụng cho phép cộng hai lũy thừa.",
+    "worked_solution": "Tính từng lũy thừa: \\(2^2+2^3=4+8=12\\). Quy tắc cộng số mũ chỉ dùng cho tích cùng cơ số: \\(2^2\\cdot2^3=2^5=32\\). Hai phép toán khác nhau.",
     "skill_ids": [
       "G11-B18-POWER_LAWS"
     ],
@@ -343,9 +343,9 @@
   {
     "item_id": "THPT-G11-CHVI-B18-P07",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Viết `0,0000075` dưới dạng kí hiệu khoa học, rồi giải thích dấu của số mũ và vì sao không được viết `75×10^{-7}` làm **dạng chuẩn** dù giá trị bằng nhau.",
-    "answer_key": "`7,5×10^{-6}`. Biểu thức `75×10^{-7}` cũng bằng cùng giá trị nhưng hệ số 75 không thuộc đoạn `[1,10)` nên không phải dạng chuẩn.",
-    "worked_solution": "Số rất nhỏ hơn 1 nên số mũ của 10 âm; chuyển dấu phẩy sáu chữ số để có phần hệ số 7,5, nhân `10^{-6}` để giữ đúng giá trị. Kí hiệu khoa học chuẩn có phần trị tuyệt đối hệ số từ 1 đến dưới 10.",
+    "stem": "Viết 0,0000075 dưới dạng kí hiệu khoa học. Giải thích dấu của số mũ và vì sao \\(75\\cdot10^{-7}\\) không phải dạng chuẩn dù giá trị bằng nhau.",
+    "answer_key": "\\(7{,}5\\cdot10^{-6}\\). Biểu thức \\(75\\cdot10^{-7}\\) có cùng giá trị nhưng hệ số 75 không thuộc \\([1;10)\\).",
+    "worked_solution": "Dời dấu phẩy sang phải sáu vị trí để được 7,5. Để giữ giá trị ban đầu, nhân với \\(10^{-6}\\); số mũ âm phù hợp với số dương nhỏ hơn 1. Hệ số 7,5 thuộc \\([1;10)\\), còn 75 không thuộc đoạn này. Do đó \\(75\\cdot10^{-7}\\) đúng về giá trị nhưng không chuẩn.",
     "skill_ids": [
       "G11-B18-POWER_INTEGER"
     ],
@@ -374,9 +374,9 @@
   {
     "item_id": "THPT-G11-CHVI-B19-C01",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "log₅125 là số nào và vì sao?",
+    "stem": "Tính \\(\\log_5 125\\) và giải thích.",
     "answer_key": "3.",
-    "worked_solution": "5³=125, logarit là số mũ cần tìm.",
+    "worked_solution": "Lôgarit cơ số 5 của 125 là số mũ cần đặt cho 5 để được 125. Vì \\(5^3=125\\) và cơ số 5 hợp lệ, \\(\\log_5 125=3\\).",
     "skill_ids": [
       "G11-B19-LOG_DEFINITION"
     ],
@@ -405,9 +405,9 @@
   {
     "item_id": "THPT-G11-CHVI-B19-C02",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải thích log₂(1/8)=-3 bằng lũy thừa.",
-    "answer_key": "−3.",
-    "worked_solution": "2^(−3)=1/8. Giá trị logarit có thể âm dù đối số phải dương.",
+    "stem": "Giải thích \\(\\log_2\\frac18=-3\\) bằng lũy thừa.",
+    "answer_key": "\\(-3\\).",
+    "worked_solution": "Ta có \\(2^{-3}=\\frac1{2^3}=\\frac18\\). Theo định nghĩa, \\(\\log_2\\frac18=-3\\). Giá trị lôgarit có thể âm, dù đối số luôn phải dương.",
     "skill_ids": [
       "G11-B19-LOG_DEFINITION"
     ],
@@ -436,9 +436,9 @@
   {
     "item_id": "THPT-G11-CHVI-B19-C03",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "log₂(−4) có nghĩa trong ℝ không?",
+    "stem": "\\(\\log_2(-4)\\) có nghĩa trong tập số thực không?",
     "answer_key": "Không.",
-    "worked_solution": "Với cơ số 2>0, 2^x luôn dương nên không thể bằng −4.",
+    "worked_solution": "Nếu có một giá trị thực x, theo định nghĩa phải có \\(2^x=-4\\). Nhưng \\(2^x>0\\) với mọi x thực. Vì vậy không tồn tại giá trị như thế.",
     "skill_ids": [
       "G11-B19-LOG_DOMAIN"
     ],
@@ -467,9 +467,9 @@
   {
     "item_id": "THPT-G11-CHVI-B19-P01",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tính log₃(81/3), chỉ rõ điều kiện dùng quy tắc thương.",
+    "stem": "Tính \\(\\log_3\\frac{81}3\\), chỉ rõ điều kiện dùng quy tắc thương.",
     "answer_key": "3.",
-    "worked_solution": "81/3=27 và log₃27=3; hoặc log₃81−log₃3=4−1=3, các đối số đều dương.",
+    "worked_solution": "Cơ số 3 dương và khác 1, hai đối số 81 và 3 đều dương. Áp dụng quy tắc thương: \\(\\log_3\\frac{81}3=\\log_3 81-\\log_3 3=4-1=3\\). Kiểm lại bằng \\(\\frac{81}3=27=3^3\\).",
     "skill_ids": [
       "G11-B19-LOG_LAWS"
     ],
@@ -498,9 +498,9 @@
   {
     "item_id": "THPT-G11-CHVI-B19-P02",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tính log₂8+log₂4 và diễn giải bằng quy tắc tích.",
+    "stem": "Tính \\(\\log_2 8+\\log_2 4\\) và diễn giải bằng quy tắc tích.",
     "answer_key": "5.",
-    "worked_solution": "log₂8=3, log₂4=2; tổng là log₂(8·4)=log₂32=5.",
+    "worked_solution": "Cơ số 2 hợp lệ và cả 8, 4 đều dương. Theo quy tắc tích, \\(\\log_2 8+\\log_2 4=\\log_2(8\\cdot4)=\\log_2 32=5\\). Cũng có thể cộng hai số mũ 3 và 2.",
     "skill_ids": [
       "G11-B19-LOG_LAWS"
     ],
@@ -529,9 +529,9 @@
   {
     "item_id": "THPT-G11-CHVI-B19-P03",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tính log₄64 và log₄(√4).",
-    "answer_key": "3 và 1/2.",
-    "worked_solution": "4³=64 và 4^(1/2)=√4=2.",
+    "stem": "Tính \\(\\log_4 64\\) và \\(\\log_4\\sqrt4\\).",
+    "answer_key": "Lần lượt 3 và \\(\\frac12\\).",
+    "worked_solution": "Vì \\(4^3=64\\), \\(\\log_4 64=3\\). Vì \\(4^{\\frac12}=\\sqrt4=2\\), \\(\\log_4\\sqrt4=\\frac12\\). Lôgarit trả lại số mũ.",
     "skill_ids": [
       "G11-B19-LOG_DEFINITION"
     ],
@@ -560,9 +560,9 @@
   {
     "item_id": "THPT-G11-CHVI-B19-P04",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tìm điều kiện xác định của log₂((x−1)(x+2)); có luôn tách thành tổng hai log không?",
-    "answer_key": "x<−2 hoặc x>1; không tách được trên toàn miền.",
-    "worked_solution": "Tích dương khi hai thừa số cùng dấu. Trên x<−2, từng thừa số âm nên hai log riêng không có nghĩa.",
+    "stem": "Tìm điều kiện xác định của \\(\\log_2((x-1)(x+2))\\). Có luôn tách thành tổng hai lôgarit riêng không?",
+    "answer_key": "\\(x<-2\\) hoặc \\(x>1\\); không tách được trên toàn miền.",
+    "worked_solution": "Đối số phải dương: \\((x-1)(x+2)>0\\). Hai thừa số cùng dấu khi \\(x<-2\\) hoặc \\(x>1\\). Chỉ trên \\(x>1\\) cả hai thừa số dương, mới dùng được \\(\\log_2(x-1)+\\log_2(x+2)\\). Trên \\(x<-2\\) tích vẫn dương nhưng hai lôgarit riêng không xác định.",
     "skill_ids": [
       "G11-B19-LOG_DOMAIN"
     ],
@@ -591,9 +591,9 @@
   {
     "item_id": "THPT-G11-CHVI-B19-P05",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Viết log₂7 theo lôgarit tự nhiên và nêu điều kiện cơ số.",
-    "answer_key": "ln7/ln2.",
-    "worked_solution": "Đổi cơ số: log₂7=(ln7)/(ln2); 2>0,2≠1,7>0 và ln2≠0.",
+    "stem": "Viết \\(\\log_2 7\\) theo lôgarit tự nhiên và nêu điều kiện cơ số.",
+    "answer_key": "\\(\\frac{\\ln7}{\\ln2}\\).",
+    "worked_solution": "Cơ số của lôgarit phải dương, khác 1; đối số phải dương. Ở đây 2 và 7 thỏa điều kiện, cơ số e của ln cũng hợp lệ. Theo công thức đổi cơ số, \\(\\log_2 7=\\frac{\\ln7}{\\ln2}\\), với \\(\\ln2\\ne0\\).",
     "skill_ids": [
       "G11-B19-LOG_BASE_CHANGE"
     ],
@@ -622,9 +622,9 @@
   {
     "item_id": "THPT-G11-CHVI-B19-P06",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "50 đơn vị tăng gấp đôi mỗi kỳ. Sau bao nhiêu kỳ (cho phép thời gian thực) thì đạt 800 đơn vị?",
+    "stem": "Một đại lượng ban đầu bằng 50 đơn vị, tăng gấp đôi mỗi kỳ theo mô hình thời gian thực \\(N(t)=50\\cdot2^t\\), \\(t\\ge0\\). Sau bao nhiêu kỳ đạt 800 đơn vị?",
     "answer_key": "4 kỳ.",
-    "worked_solution": "50·2^t=800 ⇒ 2^t=16 ⇒ t=log₂16=4; t≥0.",
+    "worked_solution": "Điều kiện đạt 800 là \\(50\\cdot2^t=800\\), tương đương \\(2^t=16=2^4\\). Vì hàm mũ cơ số 2 đơn ánh, \\(t=4\\). Giá trị này thuộc miền thời gian và cho đúng 800.",
     "skill_ids": [
       "G11-B19-LOG_APPLICATION"
     ],
@@ -653,9 +653,9 @@
   {
     "item_id": "THPT-G11-CHVI-B20-C01",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Hàm f(x)=5^x có TXĐ, tập giá trị và điểm cắt trục tung là gì?",
-    "answer_key": "TXĐ ℝ; tập giá trị (0,+∞); đi qua (0,1).",
-    "worked_solution": "Số mũ x được nhận mọi số thực; 5^x luôn dương; f(0)=1.",
+    "stem": "Hàm \\(f(x)=5^x\\) có tập xác định, tập giá trị và giao điểm với trục tung là gì?",
+    "answer_key": "Tập xác định \\(\\mathbb R\\); tập giá trị \\((0;+\\infty)\\); giao điểm \\((0;1)\\).",
+    "worked_solution": "Mọi số mũ thực đều hợp lệ vì cơ số 5 dương. Lũy thừa luôn dương; ngược lại với mỗi \\(y>0\\), chọn \\(x=\\log_5 y\\) thì \\(5^x=y\\). Vậy tập giá trị là \\((0;+\\infty)\\). Tại x bằng 0, \\(f(0)=1\\), nên giao Oy tại \\((0;1)\\).",
     "skill_ids": [
       "G11-B20-EXP_FUNCTION"
     ],
@@ -684,9 +684,9 @@
   {
     "item_id": "THPT-G11-CHVI-B20-C02",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Hàm (1/5)^x đồng biến hay nghịch biến và tại sao?",
-    "answer_key": "Nghịch biến trên ℝ.",
-    "worked_solution": "Với x₁<x₂, đặt d=x₂−x₁>0. Vì 0<1/5<1 nên (1/5)^d<1. Do đó f(x₂)=f(x₁)·(1/5)^d<f(x₁), do f(x₁)>0. Hàm nghịch biến trên ℝ, không chỉ tại các số mũ nguyên.",
+    "stem": "Hàm \\(f(x)=(\\frac15)^x\\) đồng biến hay nghịch biến? Giải thích.",
+    "answer_key": "Nghịch biến trên \\(\\mathbb R\\).",
+    "worked_solution": "Với \\(x_1<x_2\\), đặt \\(d=x_2-x_1>0\\). Vì \\(0<\\frac15<1\\), có \\(0<(\\frac15)^d<1\\). Do \\(f(x_1)>0\\), suy ra \\(f(x_2)=f(x_1)(\\frac15)^d<f(x_1)\\). Vậy hàm nghịch biến trên toàn tập số thực, không chỉ trên các số nguyên.",
     "skill_ids": [
       "G11-B20-EXP_MONOTONIC"
     ],
@@ -715,9 +715,9 @@
   {
     "item_id": "THPT-G11-CHVI-B20-C03",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Hàm g(x)=log₃(x−2) xác định khi nào?",
-    "answer_key": "x>2.",
-    "worked_solution": "Đối số của logarit phải dương: x−2>0.",
+    "stem": "Tìm tập xác định của \\(g(x)=\\log_3(x-2)\\).",
+    "answer_key": "\\((2;+\\infty)\\).",
+    "worked_solution": "Cơ số 3 hợp lệ. Đối số phải dương: \\(x-2>0\\), tương đương \\(x>2\\). Mốc 2 không được nhận vì lôgarit của 0 không xác định.",
     "skill_ids": [
       "G11-B20-LOG_FUNCTION"
     ],
@@ -746,9 +746,9 @@
   {
     "item_id": "THPT-G11-CHVI-B20-C04",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Nếu y=3^x đi qua (3,27), đồ thị y=log₃x có điểm nào tương ứng?",
-    "answer_key": "(27,3).",
-    "worked_solution": "Hai hàm ngược nhau, hoán đổi tọa độ x và y.",
+    "stem": "Đồ thị \\(y=3^x\\) đi qua \\((3;27)\\). Đồ thị \\(y=\\log_3 x\\) có điểm nào tương ứng?",
+    "answer_key": "\\((27;3)\\).",
+    "worked_solution": "Hai hàm là hàm ngược: \\(3^3=27\\) tương đương \\(\\log_3 27=3\\). Vì vậy hoán đổi hoành độ và tung độ được điểm \\((27;3)\\) trên đồ thị lôgarit.",
     "skill_ids": [
       "G11-B20-INVERSE_GRAPH"
     ],
@@ -777,9 +777,9 @@
   {
     "item_id": "THPT-G11-CHVI-B20-P01",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tìm x>0 sao cho log₂x=−1.",
-    "answer_key": "x=1/2.",
-    "worked_solution": "Chuyển về lũy thừa x=2^(−1)=1/2 >0.",
+    "stem": "Tìm \\(x>0\\) sao cho \\(\\log_2 x=-1\\).",
+    "answer_key": "\\(x=\\frac12\\).",
+    "worked_solution": "Đối số dương, cơ số 2 hợp lệ. Theo định nghĩa, \\(\\log_2 x=-1\\) tương đương \\(x=2^{-1}=\\frac12\\). Giá trị này dương nên nhận.",
     "skill_ids": [
       "G11-B20-LOG_FUNCTION"
     ],
@@ -808,9 +808,9 @@
   {
     "item_id": "THPT-G11-CHVI-B20-P02",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "So sánh 3^(1/2) và 3^1 mà không dùng máy tính.",
-    "answer_key": "3^(1/2)<3.",
-    "worked_solution": "Hàm 3^x tăng vì 3>1; số mũ 1/2<1.",
+    "stem": "So sánh \\(3^{\\frac12}\\) và \\(3^1\\) mà không dùng máy tính.",
+    "answer_key": "\\(3^{\\frac12}<3^1\\).",
+    "worked_solution": "Vì cơ số 3 lớn hơn 1, hàm \\(y=3^x\\) đồng biến trên tập số thực. Từ \\(\\frac12<1\\), suy ra \\(3^{\\frac12}<3^1=3\\).",
     "skill_ids": [
       "G11-B20-EXP_MONOTONIC"
     ],
@@ -839,9 +839,9 @@
   {
     "item_id": "THPT-G11-CHVI-B20-P03",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tính log_(1/2)2 và giải thích dấu.",
-    "answer_key": "−1.",
-    "worked_solution": "(1/2)^(−1)=2, nên log_(1/2)2=−1. Cơ số thuộc (0,1) hợp lệ.",
+    "stem": "Tính \\(\\log_{\\frac12}2\\) và giải thích dấu.",
+    "answer_key": "\\(-1\\).",
+    "worked_solution": "Cơ số \\(\\frac12\\) dương, khác 1. Vì \\((\\frac12)^{-1}=2\\), theo định nghĩa \\(\\log_{\\frac12}2=-1\\). Với cơ số nhỏ hơn 1, muốn lũy thừa lớn hơn 1 thì số mũ phải âm.",
     "skill_ids": [
       "G11-B20-LOG_MONOTONIC"
     ],
@@ -870,9 +870,9 @@
   {
     "item_id": "THPT-G11-CHVI-B20-P04",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Mô hình N(t)=20·(3/2)^t với t≥0 (kỳ, xét t thực). (a) Tính N(2) và giải thích tính tăng. (b) Viết hàm ngược t theo N và nêu miền của hàm ngược trong mô hình.",
-    "answer_key": "N(2)=45; N tăng. t=log_(3/2)(N/20), với N≥20.",
-    "worked_solution": "N(2)=20·(3/2)²=45. Vì cơ số 3/2>1 và hệ số 20>0, N tăng theo t. N/20=(3/2)^t nên t=log_(3/2)(N/20). Do t≥0 và N(0)=20, tập giá trị của mô hình liên tục là [20,+∞), chính là miền của hàm ngược; thử N=45 cho t=2. Nếu chỉ cập nhật ở kỳ nguyên, chỉ xét các N tương ứng với t nguyên.",
+    "stem": "Mô hình \\(N(t)=20(\\frac32)^t\\) với \\(t\\ge0\\) (kỳ, xét t thực). (a) Tính \\(N(2)\\) và giải thích tính tăng. (b) Viết hàm ngược t theo N và nêu miền của hàm ngược.",
+    "answer_key": "\\(N(2)=45\\), N tăng; \\(t=\\log_{\\frac32}\\frac N{20}\\) với \\(N\\ge20\\).",
+    "worked_solution": "(a) \\(N(2)=20(\\frac32)^2=45\\). Cơ số lớn hơn 1 và hệ số 20 dương nên N tăng theo t. (b) Từ \\(\\frac N{20}=(\\frac32)^t\\), suy ra \\(t=\\log_{\\frac32}\\frac N{20}\\). Vì \\(t\\ge0\\), N nhận mọi giá trị trong \\([20;+\\infty)\\), là miền của hàm ngược. Thử N bằng 45 cho t bằng 2. Nếu chỉ xét kỳ nguyên, miền hàm ngược chỉ gồm các giá trị N tương ứng kỳ nguyên.",
     "skill_ids": [
       "G11-B20-INVERSE_GRAPH"
     ],
@@ -901,9 +901,9 @@
   {
     "item_id": "THPT-G11-CHVI-B21-C01",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải 2^(x+1)=16.",
-    "answer_key": "x=3.",
-    "worked_solution": "16=2⁴, hàm 2^t đơn ánh nên x+1=4.",
+    "stem": "Giải \\(2^{x+1}=16\\).",
+    "answer_key": "\\(x=3\\).",
+    "worked_solution": "Vì \\(16=2^4\\) và hàm mũ cơ số 2 đồng biến, phương trình tương đương \\(x+1=4\\). Suy ra \\(x=3\\); thay lại được 16.",
     "skill_ids": [
       "G11-B21-EXP_EQUATION"
     ],
@@ -932,9 +932,9 @@
   {
     "item_id": "THPT-G11-CHVI-B21-C02",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải log₃(x−2)=2 kèm điều kiện xác định.",
-    "answer_key": "x=11.",
-    "worked_solution": "Điều kiện x>2; x−2=3²=9 ⇒ x=11, hợp lệ.",
+    "stem": "Giải \\(\\log_3(x-2)=2\\), kèm điều kiện xác định.",
+    "answer_key": "\\(x=11\\).",
+    "worked_solution": "Điều kiện \\(x-2>0\\), tức \\(x>2\\). Trên miền này, phương trình tương đương \\(x-2=3^2=9\\), cho \\(x=11\\). Nghiệm thỏa điều kiện.",
     "skill_ids": [
       "G11-B21-LOG_EQUATION"
     ],
@@ -963,9 +963,9 @@
   {
     "item_id": "THPT-G11-CHVI-B21-C03",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải (1/2)^x>(1/2)^2.",
-    "answer_key": "x<2.",
-    "worked_solution": "Hàm cơ số 1/2 nghịch biến: đảo chiều khi so sánh số mũ.",
+    "stem": "Giải \\((\\frac12)^x>(\\frac12)^2\\).",
+    "answer_key": "\\(x<2\\).",
+    "worked_solution": "Hàm mũ cơ số \\(\\frac12\\) nghịch biến vì cơ số nằm giữa 0 và 1. Vì thế so sánh hai giá trị mũ phải đảo chiều khi chuyển sang so sánh số mũ. Bất phương trình tương đương \\(x<2\\).",
     "skill_ids": [
       "G11-B21-EXP_INEQUALITY"
     ],
@@ -994,9 +994,9 @@
   {
     "item_id": "THPT-G11-CHVI-B21-C04",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải log₂(x−1)≥log₂3.",
-    "answer_key": "x≥4.",
-    "worked_solution": "Điều kiện x>1; cơ số 2>1 tăng, suy ra x−1≥3 ⇒ x≥4.",
+    "stem": "Giải \\(\\log_2(x-1)\\ge\\log_2 3\\).",
+    "answer_key": "\\(x\\ge4\\).",
+    "worked_solution": "Điều kiện \\(x>1\\). Vì lôgarit cơ số 2 đồng biến, bất phương trình tương đương \\(x-1\\ge3\\), tức \\(x\\ge4\\). Giao với điều kiện xác định vẫn là \\([4;+\\infty)\\).",
     "skill_ids": [
       "G11-B21-LOG_INEQUALITY"
     ],
@@ -1025,9 +1025,9 @@
   {
     "item_id": "THPT-G11-CHVI-B21-P01",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải 5^(2x−1)=1/25.",
-    "answer_key": "x=−1/2.",
-    "worked_solution": "1/25=5^(−2), nên 2x−1=−2 ⇒ x=−1/2.",
+    "stem": "Giải \\(5^{2x-1}=\\frac1{25}\\).",
+    "answer_key": "\\(x=-\\frac12\\).",
+    "worked_solution": "Viết \\(\\frac1{25}=5^{-2}\\). Vì hàm mũ cơ số 5 đơn ánh, \\(2x-1=-2\\), suy ra \\(x=-\\frac12\\). Thay lại, số mũ bằng −2, đúng.",
     "skill_ids": [
       "G11-B21-EXP_EQUATION"
     ],
@@ -1056,9 +1056,9 @@
   {
     "item_id": "THPT-G11-CHVI-B21-P02",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải log_(1/2)(x+2)=−2.",
-    "answer_key": "x=2.",
-    "worked_solution": "x+2>0; x+2=(1/2)^(−2)=4 ⇒ x=2 hợp lệ.",
+    "stem": "Giải \\(\\log_{\\frac12}(x+2)=-2\\).",
+    "answer_key": "\\(x=2\\).",
+    "worked_solution": "Điều kiện \\(x>-2\\). Theo định nghĩa, \\(x+2=(\\frac12)^{-2}=4\\), nên \\(x=2\\). Nghiệm thỏa điều kiện và đối số bằng 4.",
     "skill_ids": [
       "G11-B21-LOG_EQUATION"
     ],
@@ -1087,9 +1087,9 @@
   {
     "item_id": "THPT-G11-CHVI-B21-P03",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải (1/3)^(2x−1)≤(1/3)^3.",
-    "answer_key": "x≥2.",
-    "worked_solution": "Vì 0<1/3<1, đảo chiều số mũ: 2x−1≥3 ⇒ x≥2.",
+    "stem": "Giải \\((\\frac13)^{2x-1}\\le(\\frac13)^3\\).",
+    "answer_key": "\\(x\\ge2\\).",
+    "worked_solution": "Vì \\(0<\\frac13<1\\), hàm mũ nghịch biến. Bất phương trình tương đương \\(2x-1\\ge3\\), tức \\(x\\ge2\\). Dấu bằng được giữ, nên nhận x bằng 2.",
     "skill_ids": [
       "G11-B21-EXP_INEQUALITY"
     ],
@@ -1118,9 +1118,9 @@
   {
     "item_id": "THPT-G11-CHVI-B21-P04",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải log_(1/4)(x−1)>log_(1/4)4.",
-    "answer_key": "1<x<5.",
-    "worked_solution": "Điều kiện x>1; hàm log cơ số 1/4 giảm, nên 0<x−1<4 ⇒ 1<x<5.",
+    "stem": "Giải \\(\\log_{\\frac14}(x-1)>\\log_{\\frac14}4\\).",
+    "answer_key": "\\(1<x<5\\).",
+    "worked_solution": "Điều kiện \\(x-1>0\\). Hàm lôgarit cơ số \\(\\frac14\\) nghịch biến nên bất phương trình tương đương \\(x-1<4\\). Kết hợp điều kiện, \\(0<x-1<4\\), tức \\(1<x<5\\). Không nhận hai đầu mút.",
     "skill_ids": [
       "G11-B21-LOG_INEQUALITY"
     ],
@@ -1149,9 +1149,9 @@
   {
     "item_id": "THPT-G11-CHVI-B21-P05",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải log₃(x−4)=log₃(2−x) trên ℝ.",
+    "stem": "Giải \\(\\log_3(x-4)=\\log_3(2-x)\\) trên \\(\\mathbb R\\).",
     "answer_key": "Vô nghiệm.",
-    "worked_solution": "Điều kiện x−4>0 tức x>4 và 2−x>0 tức x<2 đồng thời; bất khả. Không giải x−4=2−x rồi nhận x=3.",
+    "worked_solution": "Hai đối số phải đồng thời dương: \\(x-4>0\\) và \\(2-x>0\\), tức \\(x>4\\) và \\(x<2\\). Không có số thực nào thỏa cả hai điều kiện. Vì vậy phương trình vô nghiệm ngay từ miền xác định; không nhận x bằng 3 từ việc đặt hai đối số bằng nhau.",
     "skill_ids": [
       "G11-B21-DOMAIN_CHECK"
     ],
@@ -1180,9 +1180,9 @@
   {
     "item_id": "THPT-G11-CHVI-B21-P06",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Vốn 100 triệu tăng 10% cuối mỗi năm; n nguyên không âm. Năm đầu tiên vốn **vượt** 121 triệu là năm nào?",
-    "answer_key": "Cuối năm 3.",
-    "worked_solution": "100·1,1²=121 nên năm 2 mới bằng, chưa vượt; n>2 ⇒ n nguyên đầu tiên bằng 3.",
+    "stem": "Vốn 100 triệu đồng tăng 10% cuối mỗi năm, lãi nhập gốc, n nguyên không âm. Cuối năm nào vốn lần đầu tiên vượt 121 triệu đồng?",
+    "answer_key": "Cuối năm thứ 3.",
+    "worked_solution": "Sau n năm, vốn là \\(100\\cdot1{,}1^n\\) triệu đồng. Điều kiện vượt 121 tương đương \\(1{,}1^n>1{,}21=1{,}1^2\\). Vì cơ số lớn hơn 1, suy ra \\(n>2\\). Chỉ số nguyên nhỏ nhất thỏa là 3. Cuối năm thứ hai mới bằng 121, chưa vượt.",
     "skill_ids": [
       "G11-B21-REAL_CONTEXT"
     ],
@@ -1211,9 +1211,9 @@
   {
     "item_id": "THPT-G11-CHVI-B21-P07",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Phương trình 2^x=−1 có nghiệm thực không? Vì sao?",
-    "answer_key": "Không có.",
-    "worked_solution": "2^x>0 với mọi x thực; không thể bằng −1.",
+    "stem": "Phương trình \\(2^x=-1\\) có nghiệm thực không? Vì sao?",
+    "answer_key": "Không có nghiệm thực.",
+    "worked_solution": "Với mọi x thực, \\(2^x>0\\). Vế phải −1 âm, nằm ngoài tập giá trị của hàm mũ. Vì vậy không thể có nghiệm thực.",
     "skill_ids": [
       "G11-B21-EXP_EQUATION"
     ],
@@ -1242,9 +1242,9 @@
   {
     "item_id": "THPT-G11-CHVI-B21-P08",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Một bạn phát biểu: “log₂(2^x)=2x và y=log₂x xác định với mọi x thực vì hàm y=2^x có TXĐ ℝ”. Hãy tìm và sửa **hai lỗi khái niệm**, sau đó giải thích hàm nào thực hiện phép ngược của hàm nào.",
-    "answer_key": "log₂(2^x)=x với mọi x thực, không phải 2x. Hàm y=log₂x chỉ xác định với x>0. Hai hàm y=2^x và y=log₂x là hai hàm ngược: đầu ra của hàm mũ là đầu vào hợp lệ của hàm logarit.",
-    "worked_solution": "Logarit trả lại **số mũ** đã tạo ra kết quả, không nhân cơ số với số mũ. Hàm 2^x nhận mọi x thực nhưng **cho ra số dương**; chính tập giá trị (0,+∞) đó trở thành TXĐ của hàm ngược log₂x. Nhầm TXĐ của hàm gốc với TXĐ của hàm ngược là lỗi bản chất.",
+    "stem": "Một bạn nói: “\\(\\log_2(2^x)=2x\\) và \\(y=\\log_2 x\\) xác định với mọi x thực vì \\(y=2^x\\) có tập xác định \\(\\mathbb R\\)”. Sửa hai lỗi khái niệm và giải thích quan hệ hàm ngược.",
+    "answer_key": "\\(\\log_2(2^x)=x\\) với mọi x thực; \\(y=\\log_2 x\\) chỉ xác định khi \\(x>0\\). Hai hàm là hàm ngược.",
+    "worked_solution": "Lôgarit trả lại số mũ, không nhân cơ số với số mũ: \\(\\log_2(2^x)=x\\) vì \\(2^x>0\\). Ngược lại, \\(2^{\\log_2 x}=x\\) chỉ với \\(x>0\\). Tập xác định của hàm mũ là \\(\\mathbb R\\), tập giá trị là \\((0;+\\infty)\\); hai tập đổi vai khi lấy hàm ngược. Vì vậy lôgarit chỉ nhận đầu vào dương.",
     "skill_ids": [
       "G11-CHVI-INTEGRATED"
     ],
