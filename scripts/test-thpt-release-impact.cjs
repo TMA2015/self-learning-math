@@ -684,6 +684,19 @@ function proveRW3Tabs(){
  assert.equal(changes,69,"Unexpected alias count");
  console.log("PASS R-W3 69 labels only, all renderer logic, content and protected assessment unchanged");
 }
+const WRITTEN_LIBRARY_UI_FILES=new Set(["scripts/assemble-thpt-site.cjs","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-topic-rw1-math-browser.py",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml"]);
+function isExactWrittenLibraryUI(files){
+ const crypto=require("node:crypto"),blob=p=>{const b=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
+ return files.length===WRITTEN_LIBRARY_UI_FILES.size&&new Set(files).size===files.length&&files.every(f=>WRITTEN_LIBRARY_UI_FILES.has(f))&&blob("scripts/assemble-thpt-site.cjs")==="03ade7da1ce85da92fecc9a9e3771ac55a052f16"&&fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8").includes("WRITTEN_LIBRARY_UI_ONLY");
+}
+function proveWrittenLibraryUI(){
+ const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"}),base=process.env.BASE_SHA;
+ assert.equal(base,"ba76a2e7abe6e3b9bc50459795ff0cf6593edb0b","Written library base must match published snapshot");
+ assert(isExactWrittenLibraryUI(git("diff","--no-renames","--name-only",base,"HEAD").trim().split("\n")),"Written library exact scope HOLD");
+ const p="scripts/assemble-thpt-site.cjs",old=git("show",base+":"+p),now=fs.readFileSync(p,"utf8");
+ assert.equal(now.replace(/\/\/ BEGIN WRITTEN LIBRARY UI:[\s\S]*?\/\/ END WRITTEN LIBRARY UI\n/,""),old,"Unrelated assembly changed");
+ console.log("PASS Written library exact scope: canonical content, Core CSS/runtime, R3 and all other assets unchanged");
+}
 const TOPIC_BACK_TOP_FILES=new Set(["scripts/assemble-thpt-site.cjs","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-release-impact.cjs"]);
 function isExactTopicBackTop(files){
  const crypto=require("node:crypto"),blob=p=>{const b=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
@@ -757,6 +770,7 @@ function classify(paths,{manual=false,base=""}={}){
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(files.length===MATH_NOTATION_GOVERNANCE.size&&new Set(files).size===files.length&&files.every(p=>MATH_NOTATION_GOVERNANCE.has(p)))
   return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"EXACT_MATH_NOTATION_GOVERNANCE_ONLY"};
+ if(isExactWrittenLibraryUI(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_WRITTEN_LIBRARY_UI"};
  if(isExactTopicBackTop(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_BACK_TOP_R3"};
  if(isExactMenu6Plus1(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_THPT_MENU_6_PLUS_1"};
  if(isExactTopicDisclosures(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_SGK_DISCLOSURES"};
@@ -946,7 +960,11 @@ function selfTest(){
  assert.equal(classify([...shared,"docs/assets/javascripts/firebase-gemini-v1.js"]).impact,"FULL");
  assert.equal(classify(shared,{manual:true}).impact,"FULL");
  const backTop=[...TOPIC_BACK_TOP_FILES];
- if(fs.readFileSync("docs/assets/javascripts/sticky-nav-v1.js","utf8").includes("slm-topic-back-top"))assert.equal(classify(backTop).reason,"OWNER_TOPIC_BACK_TOP_R3");
+ if(isExactTopicBackTop(backTop))assert.equal(classify(backTop).reason,"OWNER_TOPIC_BACK_TOP_R3");
+ const libraryUI=[...WRITTEN_LIBRARY_UI_FILES];
+ if(fs.readFileSync("scripts/assemble-thpt-site.cjs","utf8").includes("BEGIN WRITTEN LIBRARY UI"))assert.equal(classify(libraryUI).reason,"OWNER_WRITTEN_LIBRARY_UI");
+ assert.equal(classify([...libraryUI,"mkdocs.yml"]).impact,"FULL");
+ assert.equal(classify(libraryUI,{manual:true}).impact,"FULL");
  assert.equal(classify([...backTop,"mkdocs.yml"]).impact,"FULL");
  assert.equal(classify(backTop,{manual:true}).impact,"FULL");
  const menu6=[...MENU_6_PLUS_1_FILES];
@@ -1324,7 +1342,8 @@ function selfTest(){
  console.log("PASS scoped CI impact classifier: canonical SGK page/receipt-only fast lanes, global/unknown/assessment full, manual full");
 }
 if(require.main===module){
- if(process.argv.includes("--prove-topic-back-top"))proveTopicBackTop();
+ if(process.argv.includes("--prove-written-library-ui"))proveWrittenLibraryUI();
+ else if(process.argv.includes("--prove-topic-back-top"))proveTopicBackTop();
  else if(process.argv.includes("--prove-menu-6-plus-1"))proveMenu6Plus1();
  else if(process.argv.includes("--prove-topic-disclosures"))proveTopicDisclosures();
  else if(process.argv.includes("--prove-rw3-tabs"))proveRW3Tabs();

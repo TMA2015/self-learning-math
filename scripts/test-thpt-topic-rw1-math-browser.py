@@ -175,6 +175,97 @@ def tab_check(button,width):
     assert abs(info["height"]-44)<=1 and info["font"]==("14px" if width<=640 else "15px"),info
     assert info["scroll"]<=info["client"]+2,("clipped tab",info)
 
+if "--written-library-only" in sys.argv:
+    # WRITTEN_LIBRARY_UI_ONLY: actual assembled HTML; content parity for every
+    # static Written card; UI comparison to B26 Core only.
+    subprocess.run(["node","scripts/assemble-thpt-site.cjs"],cwd=ROOT,check=True)
+    public=ROOT/"site"
+    cards_re=r'<section\b(?=[^>]*\bclass="thpt-r4-written-card")[^>]*>[\s\S]*?</section>'
+    old_re=r'<details><summary>([\s\S]*?)</summary>([\s\S]*?)</details>'
+    new_re=r'<details><summary>([\s\S]*?)</summary><div class="slm-written-reveal">([\s\S]*?)</div></details>'
+    pages=cards=controls=0
+    for src in sorted((BUILD/"thpt-preview/thu-vien").rglob("*.html")):
+        raw=src.read_text(encoding="utf-8")
+        actual=(public/src.relative_to(BUILD)).read_text(encoding="utf-8")
+        old=re.findall(cards_re,raw); new=re.findall(cards_re,actual)
+        assert len(old)==len(new),src
+        if not old:
+            assert 'id="slm-written-library-ui"' not in actual,src
+            continue
+        assert 'id="slm-written-library-ui"' in actual,src
+        pages+=1
+        for before,after in zip(old,new):
+            pairs=re.findall(old_re,before); shown=re.findall(new_re,after)
+            assert pairs and len(pairs)==len(shown),(src,before[:120])
+            for (label,body),(name,result) in zip(pairs,shown):
+                assert name==("Lời giải và rubic" if "rubric" in label.lower() else "Gợi ý"),(src,label,name)
+                assert body==result,("Canonical disclosure body changed",src)
+            restored=after.replace('<div class="slm-written-actions">',"",1)
+            restored=re.sub(new_re,lambda m: '<details><summary>'+pairs.pop(0)[0]+'</summary>'+m[2]+'</details>',restored)
+            # Remove the single wrapper closing tag after the last disclosure.
+            restored=restored.replace("</details></div>","</details>",1)
+            assert restored==before,("Unrelated card markup changed",src)
+            cards+=1; controls+=len(shown)
+    assert pages>=15 and cards>=50 and controls>=cards,(pages,cards,controls)
+    print(f"PASS written library exact content: {pages} pages, {cards} cards, {controls} controls",flush=True)
+    class ProjectHandler(http.server.SimpleHTTPRequestHandler):
+        def translate_path(self,p):
+            prefix="/self-learning-math"
+            if p.startswith(prefix+"/"): p=p[len(prefix):]
+            return super().translate_path(p)
+    live_server=http.server.ThreadingHTTPServer(("127.0.0.1",0),functools.partial(ProjectHandler,directory=str(public)))
+    threading.Thread(target=live_server.serve_forever,daemon=True).start()
+    live=f"http://127.0.0.1:{live_server.server_address[1]}/self-learning-math/thpt-preview/"
+    style="""e=>{const s=getComputedStyle(e);return Object.fromEntries(['height','minHeight','maxHeight','paddingTop','paddingRight','paddingBottom','paddingLeft','borderTopWidth','borderTopColor','borderTopLeftRadius','backgroundColor','color','fontSize','fontWeight','lineHeight'].map(k=>[k,s[k]]))}"""
+    with sync_playwright() as pw:
+        for engine in ("chromium","webkit"):
+            browser=getattr(pw,engine).launch(headless=True)
+            for width in (390,820,1440):
+                page=browser.new_page(viewport={"width":width,"height":850})
+                page.goto(live+"sgk/chuong-ix/luyen-tap/",wait_until="domcontentloaded")
+                page.locator('[data-thpt-open-quiz="b26-core"]').click(timeout=20000)
+                ref=page.locator(".thpt-r4-reviewed-formative-card .thpt-r4-formative-actions details summary").first
+                expect(ref).to_be_visible(timeout=20000)
+                reference={}
+                for theme in ("default","slate"):
+                    page.locator("body").evaluate("(e,t)=>e.setAttribute('data-md-color-scheme',t)",theme)
+                    reference[theme]=ref.evaluate(style)
+                page.goto(live+"thu-vien/tu-luan/",wait_until="domcontentloaded")
+                card=page.locator("#tu-luan-thuong-demo")
+                btn=card.locator(".slm-written-actions>details>summary")
+                expect(btn).to_have_count(2)
+                assert btn.all_inner_texts()==["Gợi ý","Lời giải và rubic"]
+                details=card.locator(".slm-written-actions>details")
+                panels=details.locator(".slm-written-reveal")
+                assert details.evaluate_all("els=>els.every(e=>!e.open)")
+                for theme in ("default","slate"):
+                    page.locator("body").evaluate("(e,t)=>e.setAttribute('data-md-color-scheme',t)",theme)
+                    for button in btn.all():
+                        assert button.evaluate(style)==reference[theme],(engine,width,theme,button.evaluate(style),reference[theme])
+                        assert button.evaluate("""e=>['::before','::after'].every(p=>{const s=getComputedStyle(e,p);return s.content==='none'||s.display==='none'})""")
+                btn.nth(0).click(); expect(panels.nth(0)).to_be_visible()
+                assert not details.nth(1).evaluate("e=>e.open")
+                btn.nth(1).click(); expect(panels.nth(1)).to_be_visible()
+                assert details.nth(0).evaluate("e=>e.open")
+                outer=card.locator(":scope>p:not(.thpt-r4-eyebrow)").first.evaluate("e=>getComputedStyle(e).fontSize")
+                for panel in panels.all():
+                    info=panel.evaluate("""e=>{const s=getComputedStyle(e);return {font:s.fontSize,padding:[s.paddingTop,s.paddingRight,s.paddingBottom,s.paddingLeft],sizes:[...e.querySelectorAll('p,li,th,td')].map(n=>getComputedStyle(n).fontSize),fits:e.scrollWidth<=e.clientWidth+2}}""")
+                    assert info["font"]==outer and all(v==outer for v in info["sizes"]),(engine,width,outer,info)
+                    assert info["padding"]==["12px","14px","12px","14px"] and info["fits"],info
+                assert page.evaluate("document.documentElement.scrollWidth<=innerWidth+2")
+                btn.nth(0).click(); expect(panels.nth(0)).to_be_hidden()
+                assert details.nth(1).evaluate("e=>e.open")
+                btn.nth(1).click(); expect(panels.nth(1)).to_be_hidden()
+                page.goto(live+"thu-vien/tu-luan-g11-chuong-viii/",wait_until="domcontentloaded")
+                only=page.locator(".thpt-r4-written-card").first.locator(".slm-written-actions>details>summary")
+                expect(only).to_have_count(1); expect(only).to_have_text("Lời giải và rubic")
+                only.click(); expect(only.locator("xpath=following-sibling::div")).to_be_visible()
+                print(f"PASS written library {engine} {width}: exact Core style, text-only, body/table typography, independent toggles, solution-only route",flush=True)
+                page.close()
+            browser.close()
+    live_server.shutdown(); server.shutdown()
+    sys.exit(0)
+
 if "--back-top-only" in sys.argv:
     # TOPIC_BACK_TOP_R3: test final production assembly, not preview HTML.
     from html.parser import HTMLParser
