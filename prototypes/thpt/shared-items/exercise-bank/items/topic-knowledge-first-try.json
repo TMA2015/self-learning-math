@@ -7341,5 +7341,915 @@
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT01",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT01",
+    "stem": "Tính \\(5^{-2}\\cdot25\\). Biểu thức \\(0^{-1}\\) có nghĩa không? Vì sao?",
+    "answer_key": "\\(1\\); \\(0^{-1}\\) không xác định vì không thể chia cho 0.",
+    "worked_solution": "\\(5^{-2}\\cdot25=\\frac1{25}\\cdot25=1\\). \\(0^{-1}\\) không xác định vì dẫn tới phép chia cho 0. Nếu em nhầm dấu âm của số mũ thành dấu âm của giá trị, hãy so \\(-2^2=-4\\) với \\(2^{-2}=\\frac14\\).\n\n\n**Kiểm lỗi**\n\nNếu nghĩ số mũ âm làm kết quả âm, đọc lại **Kiến thức 1.1** rồi giải **Bài 13** và **Bài 11**: viết thành phân số nghịch đảo và kiểm điều kiện cơ số khác 0.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B18-POWER_INTEGER"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M01",
+      "locator": "1.1. Số mũ nguyên, số mũ không và số mũ âm / Vận dụng",
+      "line": 39,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT02",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT02",
+    "stem": "Tính \\(27^{\\frac23}\\) và \\(\\sqrt[3]{-27}\\).",
+    "answer_key": "\\(9\\) và \\(-3\\).",
+    "worked_solution": "\\(27^{\\frac23}=3^2=9\\); \\(\\sqrt[3]{-27}=-3\\) vì \\((-3)^3=-27\\).\n\nNếu chỉ nhận nghiệm dương khi giải \\(x^4=16\\), thử số đối; nếu đổi dấu căn bậc chẵn, nhớ căn số học không âm.\n\n\n**Kiểm lỗi**\n\nNếu nhầm căn bậc chẵn số học với cả hai nghiệm của phương trình, đọc **Kiến thức 1.2**, làm **Bài 14** rồi **Bài 5**; luôn kiểm dấu của căn và trường hợp bậc lẻ.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B18-POWER_RATIONAL"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M02",
+      "locator": "1.2. Căn bậc chẵn, căn bậc lẻ và mũ hữu tỉ / Vận dụng",
+      "line": 85,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT03",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT03",
+    "stem": "So sánh \\(\\left(\\frac13\\right)^{\\sqrt3}\\) với \\(\\left(\\frac13\\right)^2\\).",
+    "answer_key": "\\(\\left(\\frac13\\right)^{\\sqrt3}>\\left(\\frac13\\right)^2\\).",
+    "worked_solution": "\\(\\sqrt3<2\\); hàm mũ cơ số \\(\\frac13\\) nghịch biến nên \\(\\left(\\frac13\\right)^{\\sqrt3}>\\left(\\frac13\\right)^2\\).\n\nNếu đảo dấu sai, dùng \\(x=0\\) và \\(x=1\\) để quan sát 1 và cơ số a; xem lại mục Kiến thức 1.3 về chiều tăng/giảm của lũy thừa khi cơ số lớn hơn 1 hoặc nằm giữa 0 và 1.\n\n\n**Kiểm lỗi**\n\nNếu so sánh mũ thực mà giữ chiều như cơ số lớn hơn 1, quay lại **Kiến thức 1.3**, giải **Bài 15** và **Bài 16**, dùng cơ số trong khoảng (0,1) để thử ngược kết luận.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B18-POWER_REAL"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M03",
+      "locator": "1.3. Lũy thừa với số mũ thực / Vận dụng",
+      "line": 122,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT06",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT06",
+    "stem": "Tìm miền xác định của \\(\\log_2(x^2-9)\\); có thể tách thành \\(\\log_2(x-3)+\\log_2(x+3)\\) trên toàn miền đó không?",
+    "answer_key": "\\(D=(-\\infty;-3)\\cup(3;+\\infty)\\); chỉ tách được trên \\(x>3\\).",
+    "worked_solution": "Điều kiện là \\(x^2-9=(x-3)(x+3)>0\\), nên \\(x<-3\\) hoặc \\(x>3\\). Để tách thành hai lôgarit, phải có \\(x-3>0\\) và \\(x+3>0\\), tức \\(x>3\\). Chẳng hạn \\(x=-4\\) làm tích bằng 7 dương nhưng từng thừa số âm; lôgarit của tích có nghĩa còn hai lôgarit riêng không có nghĩa.\n\nNếu mắc lỗi ‘log của tích’ trên toàn miền, lấy \\(x=-4\\) làm phản ví dụ; làm lại Bài 30, Bài 31 và Bài 28 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B19-LOG_DOMAIN"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M06",
+      "locator": "2.2. Điều kiện đối số và bẫy tách lôgarit / Vận dụng",
+      "line": 233,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT08",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT08",
+    "stem": "Tính \\(\\log_8 2\\) bằng đổi cơ số.",
+    "answer_key": "\\(\\log_8 2=\\frac13\\).",
+    "worked_solution": "\\(\\frac{\\ln2}{\\ln8}=\\frac13\\) (hoặc \\(8^{\\frac13}=2\\)).\n\nNếu tính \\(\\log_{\\frac19}3=+\\frac12\\), kiểm cơ số nhỏ hơn 1 và thử lũy thừa.\n\n\n**Kiểm lỗi**\n\nNếu dấu của lôgarit cơ số nhỏ hơn 1 hoặc phép đổi cơ số bị nhầm, đọc **Kiến thức 2.4**, làm **Bài 26** rồi **Bài 33**, so lại với định nghĩa lũy thừa.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B19-LOG_BASE_CHANGE"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M08",
+      "locator": "2.4. Đổi cơ số và dấu của lôgarit / Vận dụng",
+      "line": 302,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT10",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT10",
+    "stem": "So \\(\\left(\\frac15\\right)^{-1}\\) và \\(\\left(\\frac15\\right)^2\\).",
+    "answer_key": "\\(\\left(\\frac15\\right)^{-1}=5>\\frac1{25}=\\left(\\frac15\\right)^2\\).",
+    "worked_solution": "\\(5>\\frac1{25}\\). Cơ số \\(\\frac15\\) không đổi và thuộc \\((0;1)\\), nên hàm số nghịch biến: số mũ \\(-1\\) nhỏ hơn 2 thì giá trị lũy thừa lớn hơn.\n\nNếu luôn giữ dấu so sánh khi bỏ mũ, vẽ hai điểm 0,1 trên đồ thị để sửa.\n\n\n**Kiểm lỗi**\n\nNếu so sánh hai lũy thừa cơ số \\(0<a<1\\) mà không đảo chiều, đọc **Kiến thức 3.2**, thực hiện **Bài 37** và **Bài 41** với điểm thử 0, 1.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B20-EXP_MONOTONIC"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O10"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M10",
+      "locator": "3.2. Tính đơn điệu của hàm mũ / Vận dụng",
+      "line": 375,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT11",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT11",
+    "stem": "Với \\(y=\\log_2 x\\), giá trị tại \\(x=\\frac18\\) và \\(x=8\\) là gì?",
+    "answer_key": "Lần lượt \\(-3\\) và \\(3\\).",
+    "worked_solution": "\\(\\log_2\\frac18=-3,\\ \\log_2 8=3\\), hàm tăng vì cơ số \\(2>1\\).\n\nNếu đặt điểm \\(x=0\\) lên đồ thị lôgarit, hỏi số mũ nào cho lũy thừa của cơ số hợp lệ bằng 0 (không có).\n\n\n**Kiểm lỗi**\n\nNếu nhận \\(x\\le0\\) vào tập xác định của \\(\\log_a x\\), đọc **Kiến thức 3.3**, thử **Bài 38** và **Bài 40**; kiểm từng tọa độ theo điều kiện đối số dương.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B20-LOG_FUNCTION"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O11"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M11",
+      "locator": "3.3. Miền và đồ thị hàm lôgarit / Vận dụng",
+      "line": 408,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT12",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT12",
+    "stem": "Cho \\(f(x)=3^x\\). Điểm \\((1;3)\\) trên f tương ứng điểm nào trên đồ thị \\(y=\\log_3 x\\)?",
+    "answer_key": "\\((3;1)\\).",
+    "worked_solution": "\\((3;1)\\) vì \\(\\log_3 3=1\\).\n\nNếu dùng \\(\\log_3(-3)\\) để đảo hàm, kiểm miền lôgarit phải có đối số dương; làm lại Bài 50 (hàm ngược) và Bài 44 (đối xứng đồ thị hàm mũ–lôgarit) trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B20-INVERSE_GRAPH"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O12"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M12",
+      "locator": "3.4. Hàm mũ và lôgarit là hai hàm ngược / Vận dụng",
+      "line": 445,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT13",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT13",
+    "stem": "Giải phương trình \\(2^{2x}-3\\cdot2^x-4=0\\). Đặt \\(t=2^x\\), xác định điều kiện của \\(t\\) rồi giải.",
+    "answer_key": "\\(t>0,\\ S=\\{2\\}\\).",
+    "worked_solution": "Đặt \\(t=2^x>0\\). Phương trình trở thành \\(t^2-3t-4=0\\), hay \\((t-4)(t+1)=0\\). Ta nhận \\(t=4\\) và loại \\(t=-1\\) vì \\(2^x\\) luôn dương. Từ \\(2^x=4\\), suy ra \\(x=2\\). Kiểm lại: \\(16-3\\cdot4-4=0\\).\n\n**Kiểm lỗi**\n\nNếu em nhận cả \\(t=-1\\), hãy nhớ không tồn tại số thực \\(x\\) sao cho \\(2^x=-1\\). Ôn Bài 60 (đặt ẩn dương) và Bài 51 (phương trình mũ) trong Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B21-EXP_EQUATION"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O13"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M13",
+      "locator": "4.1. Phương trình mũ và ẩn phụ dương / Vận dụng",
+      "line": 484,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT14",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT14",
+    "stem": "Giải \\(\\log_2(x-2)+\\log_2(x+2)=3\\).",
+    "answer_key": "\\(D=(2;+\\infty),\\ S=\\{2\\sqrt3\\}\\).",
+    "worked_solution": "Điều kiện \\(x-2>0,\\ x+2>0\\), tức \\(x>2\\). Gộp hai lôgarit trong miền đó rồi chuyển sang dạng lũy thừa: \\((x-2)(x+2)=2^3=8\\). Suy ra \\(x^2-4=8\\), tức \\(x=\\pm2\\sqrt3\\). Chỉ \\(x=2\\sqrt3\\) thỏa \\(x>2\\).\n\n**Kiểm lỗi**\n\nNghiệm âm xuất hiện khi giải phương trình bậc hai thu được từ tích hai đối số, không phải do bình phương hai vế. Nếu em nhận nghiệm âm, thay vào từng đối số để thấy lôgarit không xác định. Ôn Bài 61, Bài 64 và Bài 27 trong Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B21-LOG_EQUATION"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O14"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M14",
+      "locator": "4.2. Phương trình lôgarit và lọc nghiệm / Vận dụng",
+      "line": 518,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT16",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT16",
+    "stem": "Giải \\(\\log_{\\frac13}(x+1)>\\log_{\\frac13}4\\).",
+    "answer_key": "\\(S=(-1;3)\\).",
+    "worked_solution": "Điều kiện \\(x+1>0\\), tức \\(x>-1\\). Vì cơ số \\(\\frac13\\) nằm giữa 0 và 1, hàm lôgarit nghịch biến, nên bất phương trình tương đương \\(x+1<4\\), tức \\(x<3\\). Giao hai điều kiện được \\(S=(-1;3)\\). Tại \\(x=-1\\), lôgarit không xác định; tại \\(x=3\\), hai vế bằng nhau nên không thỏa dấu nghiêm.\n\n**Kiểm lỗi**\n\nNếu quên giao miền đối số dương hoặc không đảo dấu khi cơ số \\(0<a<1\\), đọc **Kiến thức 4.4**, làm **Bài 54** và **Bài 58**; kiểm riêng từng điểm biên.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B21-LOG_INEQUALITY"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O16"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M16",
+      "locator": "4.4. Bất phương trình lôgarit giảm, giao miền / Vận dụng",
+      "line": 588,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT17",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT17",
+    "stem": "Một quần thể giả định ban đầu có 640 cá thể và giảm 25% mỗi kỳ theo quy tắc nhân cố định. (a) Tính số lượng theo mô hình sau 2 kỳ; vì sao không trừ 160 cá thể ở mỗi kỳ? (b) Kỳ nguyên đầu tiên mà số lượng theo mô hình nhỏ hơn 300 là kỳ nào?",
+    "answer_key": "Sau 2 kỳ: 360 cá thể; giảm theo số còn lại, không trừ cố định 160; kỳ đầu nhỏ hơn 300 là kỳ 3.",
+    "worked_solution": "(a) Sau 2 kỳ, mô hình cho \\(N(2)=640\\cdot(0{,}75)^2=360\\) cá thể. Mỗi kỳ số còn lại nhân với \\(0{,}75\\): kỳ 1 còn 480, kỳ 2 còn 360. Nếu trừ cố định 160 cá thể mỗi kỳ thì chỉ còn 320, không phải quy tắc giảm 25% của số còn lại. (b) Cần \\(640(0{,}75)^n<300\\), hay \\((0{,}75)^n<\\frac{15}{32}\\). Vì \\(\\ln(0{,}75)<0\\), suy ra \\(n>\\frac{\\ln(\\frac{15}{32})}{\\ln(0{,}75)}\\approx2{,}63\\). Kiểm \\(N(2)=360>300\\), \\(N(3)=270<300\\), vậy kỳ 3 là kỳ đầu. Đây là kết quả của mô hình giả định, không phải dự đoán chắc chắn số lượng ngoài thực tế.\n\nNếu tăng/giảm tuyến tính theo số cộng, kiểm tỷ lệ thực mỗi năm; làm lại Bài 73, Bài 75 (mô hình tăng/giảm theo kỳ) và Bài 65 (lãi kép) trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B18-GROWTH_MODEL"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O17"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M17",
+      "locator": "5.1. Mô hình tăng giảm theo kỳ nguyên / Vận dụng",
+      "line": 628,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP04-KFT18",
+    "content_version": "TOP04-BANK-CP72-20261126-KFT18",
+    "stem": "Giải \\(\\log_3(x-1)=1+\\log_3(5-x)\\). Hãy nêu miền trước khi dùng quy tắc logarit.",
+    "answer_key": "\\(1<x<5;\\ S=\\{4\\}\\).",
+    "worked_solution": "Điều kiện \\(x-1>0\\), \\(5-x>0\\), tức \\(1<x<5\\). Vì \\(1=\\log_3 3\\), ta có \\(\\log_3(x-1)=\\log_3[3(5-x)]\\). Hai đối số dương và cơ số 3 hợp lệ nên \\(x-1=15-3x\\), suy ra \\(x=4\\). Thử: \\(\\log_3 3=1+\\log_3 1=1\\). Nếu em bỏ điều kiện và nhận nghiệm ngoài \\((1;5)\\), quay lại bước xác định miền trước khi giải.\n\n\n**Kiểm lỗi**\n\nNếu giải phương trình logarit rồi quên lọc nghiệm theo đồng thời hai đối số, đọc **Kiến thức 5.2** rồi thử **Bài 67** và **Bài 69**; chỉ kết luận sau khi thế vào phương trình gốc.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B21-LOG_EQUATION"
+    ],
+    "original_outcome_ids": [
+      "TOP04-O18"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+      "heading_id": "TOP04-M18",
+      "locator": "5.2. Bài toán tổng hợp nhiều điều kiện / Vận dụng",
+      "line": 656,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT01",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT01",
+    "stem": "Các cặp \\((1;3),(2;3),(3;5)\\) có thể là dữ liệu của một hàm số không? Điều gì quyết định?",
+    "answer_key": "Có; mỗi đầu vào có đúng một đầu ra.",
+    "worked_solution": "Có. Ba đầu vào 1, 2, 3 khác nhau và mỗi đầu vào chỉ có một đầu ra. Việc hai đầu vào cùng cho giá trị 3 không vi phạm định nghĩa. Nếu em nhầm với yêu cầu “mỗi y chỉ đến từ một x”, hãy nhớ đó là tính một-một, không phải điều kiện cơ bản của hàm số.\n\n**Kiểm lỗi**\n\nNếu em nhầm “nhiều đầu vào có cùng một đầu ra” với “một đầu vào có nhiều đầu ra”, đọc lại **Kiến thức 1.1** rồi làm **Bài 1** và **Bài 2** trong Luyện tập. Ở Bài 1, cặp \\((1;4)\\) lặp lại nhưng vẫn là hàm; ở Bài 2, một đầu vào 0 cho hai giá trị 1 và 3 nên không là hàm.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "FUNCTION_MAPPING"
+    ],
+    "original_outcome_ids": [
+      "TOP05-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M01",
+      "locator": "1.1. Thế nào là một hàm số? / Vận dụng",
+      "line": 43,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT02",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT02",
+    "stem": "Tìm tập xác định D của hàm số \\(\\frac{\\sqrt{9-x^2}}{x-1}\\) trên \\(\\mathbb R\\).",
+    "answer_key": "\\(D=[-3;1)\\cup(1;3]\\).",
+    "worked_solution": "\\(D=[-3;1)\\cup(1;3]\\), vì \\(-3\\le x\\le3\\) và \\(x\\ne1\\).\n\nNếu bỏ điều kiện mẫu, thử \\(x=1\\); nếu loại căn bằng 0, thử \\(x=\\pm3\\); làm lại Bài 3 và Bài 4 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "FUNCTION_DOMAIN"
+    ],
+    "original_outcome_ids": [
+      "TOP05-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M02",
+      "locator": "1.2. Tập xác định của biểu thức / Vận dụng",
+      "line": 79,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT03",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT03",
+    "stem": "\\(f(q)=3q-1\\) với \\(q\\in\\{0;1;2\\}\\) có tập giá trị T nào?",
+    "answer_key": "\\(T=\\{-1;2;5\\}\\).",
+    "worked_solution": "Thay lần lượt các đầu vào cho phép: \\(f(0)=-1,\\ f(1)=2,\\ f(2)=5\\). Do đó \\(T=\\{-1;2;5\\}\\). Không phải toàn đoạn \\([-1;5]\\), vì các đầu vào khác không thuộc miền đã cho.\n\nNếu lầm T với đoạn từ min đến max, liệt kê đầu vào thực sự cho phép; làm lại Bài 5 và Bài 6 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "FUNCTION_MODELING"
+    ],
+    "original_outcome_ids": [
+      "TOP05-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M03",
+      "locator": "1.3. Tập giá trị phụ thuộc miền / Vận dụng",
+      "line": 107,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT04",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT04",
+    "stem": "Vì sao đường tròn \\(x^2+y^2=9\\) không biểu diễn hàm \\(y=f(x)\\) trên \\([-3;3]\\)?",
+    "answer_key": "Không, vì tại x=0 có hai giá trị y=3 và y=−3.",
+    "worked_solution": "\\(x=0\\) cho hai giá trị \\(y=3\\) và \\(y=-3\\), vi phạm một đầu vào một đầu ra.\n\nNếu chỉ nhìn đường cong mượt và gọi hàm, kẻ đường thẳng đứng qua \\(x=0\\); làm lại Bài 8 và Bài 9 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP05-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M04",
+      "locator": "1.4. Đọc một điểm thuộc đồ thị / Vận dụng",
+      "line": 135,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT05",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT05",
+    "stem": "Hàm \\(f(x)=x^2\\) đồng biến hay nghịch biến trên \\([-5;-2]\\)?",
+    "answer_key": "Nghịch biến trên đoạn đã cho.",
+    "worked_solution": "Hàm nghịch biến trên \\([-5;-2]\\). Thật vậy, nếu \\(-5\\le x_1<x_2\\le-2\\), thì \\(f(x_2)-f(x_1)=(x_2-x_1)(x_2+x_1)<0\\). Giá trị lớn nhất là 25 tại \\(x=-5\\); giá trị nhỏ nhất là 4 tại \\(x=-2\\).\n\nNếu em kết luận đồng biến vì số mũ chẵn, hãy so \\(f(-5)=25\\) với \\(f(-2)=4\\), rồi kiểm dấu của \\(x_2+x_1\\) với hai điểm bất kỳ trong khoảng đã cho. Làm lại Bài 10 và Bài 11 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "FUNCTION_MONOTONICITY"
+    ],
+    "original_outcome_ids": [
+      "TOP05-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M05",
+      "locator": "2.1. Đồng biến và nghịch biến / Vận dụng",
+      "line": 167,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT06",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT06",
+    "stem": "\\(f(x)=(x+2)^2-1\\) trên \\([-1;3]\\) có giá trị nhỏ nhất và lớn nhất là bao nhiêu?",
+    "answer_key": "GTNN \\(0\\) tại \\(x=-1\\); GTLN \\(24\\) tại \\(x=3\\).",
+    "worked_solution": "Đỉnh có hoành độ \\(-2\\), nằm ngoài miền \\([-1;3]\\). Trên miền đã cho, \\(x+2\\) tăng từ 1 đến 5 và luôn dương; bình phương giữ thứ tự, nên f đồng biến. GTNN \\(f(-1)=1^2-1=0\\); GTLN \\(f(3)=5^2-1=24\\).\n\nNếu lấy đỉnh vô điều kiện, khoanh D trước khi chọn; làm lại Bài 12 và Bài 13 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "B16_OUT_04"
+    ],
+    "original_outcome_ids": [
+      "TOP05-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M06",
+      "locator": "2.2. Đỉnh parabol trên miền cho phép / Vận dụng",
+      "line": 213,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT08",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT08",
+    "stem": "Hàm f xác định trên \\(\\mathbb R\\) và thỏa \\(f(x+3)=f(x)\\) với mọi x. Biết \\(f(1)=4\\); tính \\(f(10)\\).",
+    "answer_key": "\\(f(10)=4\\).",
+    "worked_solution": "Áp dụng đẳng thức ba lần: \\(f(10)=f(7)=f(4)=f(1)=4\\). Số 3 là một chu kỳ theo giả thiết trên \\(\\mathbb R\\), nhưng chưa đủ để kết luận đó là chu kỳ dương nhỏ nhất.\n\nNếu từ bốn điểm suy toàn miền tuần hoàn, hãy tách quan sát và định nghĩa; làm lại Bài 16 và Bài 17 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP05-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M08",
+      "locator": "2.4. Chu kỳ hàm số / Vận dụng",
+      "line": 273,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT09",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT09",
+    "stem": "Từ \\(f(x)=x^2\\), cho \\(g(x)=f(x)-2\\). Đỉnh g ở đâu?",
+    "answer_key": "Đỉnh \\((0;-2)\\).",
+    "worked_solution": "\\((0;-2)\\), và điểm \\((1;1)\\) thành \\((1;-1)\\).\n\nNếu nói dịch ngang, hãy xem x có bị thay trong f không; làm lại Bài 18 và Bài 19 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP05-O09"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M09",
+      "locator": "3.1. Dịch đồ thị theo phương đứng / Vận dụng",
+      "line": 305,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT10",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT10",
+    "stem": "\\(g(x)=(x+2)^2\\) dịch parabol \\(y=x^2\\) thế nào?",
+    "answer_key": "Dịch sang trái 2 đơn vị, đỉnh \\((-2;0)\\).",
+    "worked_solution": "Dịch trái 2, đỉnh \\((-2;0)\\), vì \\(x+2=0\\) tại \\(x=-2\\).\n\nNếu dịch phải vì dấu+, tìm x để đối số bằng0; làm lại Bài 20 và Bài 21 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP05-O10"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M10",
+      "locator": "3.2. Dịch đồ thị theo phương ngang / Vận dụng",
+      "line": 337,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT11",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT11",
+    "stem": "Với \\(f(x)=x^2-2x\\), tính \\(f(-x)\\).",
+    "answer_key": "\\(f(-x)=x^2+2x\\).",
+    "worked_solution": "\\(x^2+2x\\), là ảnh qua trục Oy.\n\nNếu đổi dấu toàn biểu thức, đó là phản xạ Ox; làm lại Bài 22 và Bài 23 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP05-O11"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M11",
+      "locator": "3.3. Phản xạ qua hai trục / Vận dụng",
+      "line": 365,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT12",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT12",
+    "stem": "So sánh \\(g(x)=\\frac12\\lvert x\\rvert\\) với \\(f(x)=\\lvert x\\rvert\\) tại \\(x=4\\).",
+    "answer_key": "\\(g(4)=2,\\ f(4)=4\\).",
+    "worked_solution": "\\(g(4)=2\\), \\(f(4)=4\\), co đứng một nửa.\n\nNếu kết luận co ngang, giữ \\(x=4\\) và so hai tung độ; làm lại Bài 24 và Bài 25 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP05-O12"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M12",
+      "locator": "3.4. Đổi độ cao và phản xạ đứng / Vận dụng",
+      "line": 397,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT13",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT13",
+    "stem": "Cho \\(f(x)=\\sqrt x\\), \\(g(x)=f(3x)\\). Tìm miền D của g và x khi \\(g(x)=2\\).",
+    "answer_key": "\\(D=[0;+\\infty),\\ x=\\frac43\\).",
+    "worked_solution": "Ta có \\(g(x)=\\sqrt{3x}\\), xác định khi \\(3x\\ge0\\), tức \\(D=[0;+\\infty)\\). Vì hai vế không âm, \\(\\sqrt{3x}=2\\Leftrightarrow3x=4\\), nên \\(x=\\frac43\\). So với f đạt tung độ 2 ở \\(x=4\\), hoành độ tương ứng của g bằng một phần ba.\n\nNếu nhận giãn ngang 3, dùng \\(u=3x\\Rightarrow x=\\frac u3\\); làm lại Bài 26 và Bài 27 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP05-O13"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M13",
+      "locator": "3.5. Co giãn ngang theo đối số / Vận dụng",
+      "line": 425,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT14",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT14",
+    "stem": "Cho \\(f(x)=x^2-1\\), tính \\(\\lvert f(0)\\rvert\\) và \\(f(\\lvert0\\rvert)\\).",
+    "answer_key": "\\(|f(0)|=1,\\ f(|0|)=-1\\).",
+    "worked_solution": "\\(\\lvert-1\\rvert=1\\), còn \\(f(0)=-1\\).\n\nNếu gán hai hàm bằng nhau với mọi x, dùng \\(x=0\\) làm phản ví dụ; làm lại Bài 28 và Bài 29 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP05-O14"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M14",
+      "locator": "3.6. Giá trị tuyệt đối ngoài và trong hàm / Vận dụng",
+      "line": 453,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT15",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT15",
+    "stem": "\\(g(x)=-f(x+2)+1\\) với \\(f(x)=x^2\\) có đỉnh và hướng mở thế nào?",
+    "answer_key": "Đỉnh \\((-2;1)\\), mở xuống.",
+    "worked_solution": "\\(g(x)=-(x+2)^2+1\\), đỉnh \\((-2;1)\\), mở xuống.\n\nNếu đọc \\(x+2\\) là dịch phải, tìm x làm \\(x+2=0\\); làm lại Bài 30, Bài 31 và Bài 36 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP05-O15"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M15",
+      "locator": "4.1. Phối hợp nhiều phép biến đổi / Vận dụng",
+      "line": 487,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT16",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT16",
+    "stem": "Cho \\(f(x)=0\\) nếu \\(x\\le0\\) và \\(f(x)=x+2\\) nếu \\(x>0\\). Có bước nhảy tại 0 không?",
+    "answer_key": "Có, bước nhảy hướng lên 2 đơn vị; \\(f(0)=0\\).",
+    "worked_solution": "Có. Chấm đặc \\((0;0)\\) thuộc đồ thị vì nhánh trái nhận \\(x=0\\), nên \\(f(0)=0\\). Chấm rỗng \\((0;2)\\) chỉ đánh dấu vị trí nhánh phải tiến tới khi x tiến đến 0 từ bên phải; nó **không thuộc đồ thị**, vì nhánh phải chỉ nhận \\(x>0\\). Hai độ cao khác nhau; bước nhảy hướng lên có độ lớn \\(2-0=2\\) đơn vị.\n\nNếu tính \\(f(0)=2\\), em đã dùng nhầm nhánh \\(x>0\\). Hãy kiểm xem 0 thỏa điều kiện của nhánh nào, rồi đặt chấm đặc tại đúng giá trị \\(f(0)\\). Làm lại Bài 32, Bài 33 và Bài 37 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "FUNCTION_PIECEWISE"
+    ],
+    "original_outcome_ids": [
+      "TOP05-O16"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M16",
+      "locator": "4.2. Hàm từng đoạn và điểm đầu mút / Vận dụng",
+      "line": 519,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-TOP05-KFT17",
+    "content_version": "TOP05-BANK-CP72-20261126-KFT17",
+    "stem": "\\(Q(t)=(t-3)^2+2\\) trên \\(t\\in[5;7]\\); giá trị nhỏ nhất là bao nhiêu?",
+    "answer_key": "GTNN \\(6\\) tại \\(t=5\\).",
+    "worked_solution": "Trên miền \\(5\\le t\\le7\\), hiệu \\(t-3\\) luôn dương và tăng từ 2 đến 4. Do đó \\((t-3)^2+2\\) tăng trên đoạn, nhỏ nhất tại \\(t=5\\), bằng \\(2^2+2=6\\). Không chọn \\(Q(3)=2\\) vì \\(3\\notin[5;7]\\).\n\nNếu vẫn chọn đỉnh không hợp lệ, viết lại tập khả thi và thử các biên; làm lại Bài 34, Bài 35 và Bài 38 trong phần Luyện tập.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "B16_OUT_04"
+    ],
+    "original_outcome_ids": [
+      "TOP05-O17"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+      "heading_id": "TOP05-M17",
+      "locator": "4.3. Tối ưu trong miền khả thi / Vận dụng",
+      "line": 551,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
