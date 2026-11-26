@@ -1332,25 +1332,25 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 6.
 
-**Lời giải:** F=x²+x; F(2)=6; F(−1)=0; tích phân xác định là số 6.
+**Lời giải:** \(F=x^2+x\); \(F(2)=6\); \(F(-1)=0\); tích phân xác định là số 6.
 
-**Rubric tự luận /5:** 1đ chọn F đúng; 1đ ghi F(b)−F(a); 2đ thế cận và tính; 1đ nêu không có +C.
+**Rubric tự luận /5:** 1đ chọn F đúng; 1đ ghi \(F(b)-F(a)\); 2đ thế cận và tính; 1đ nêu không có +C.
 
-**Nếu làm sai:** Kiểm nguyên hàm F và thay đúng b−a, không thêm +C vào tích phân xác định.
+**Nếu làm sai:** Kiểm nguyên hàm \(F\) và thay đúng \(F(b)-F(a)\), không thêm \(+C\) vào tích phân xác định.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-A01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O08; SINGLE_ITEM_ID -->
 
-**Bài 39.** Vận tốc v(t)=3t² m/s, 0<=t<=2. Tính độ dời.
+**Bài 39.** Vận tốc \(v(t)=3t^2\) m/s, \(0\le t\le2\). Tính độ dời.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 8 m.
 
-**Lời giải:** \(\int_{0}^{2} 3t^{2}\,\mathrm dt\)=[t³]_0²=8 m; vận tốc không âm nên bằng quãng đường.
+**Lời giải:** \(\int_0^2 3t^2\,\mathrm dt=[t^3]_0^2=8\) m; vận tốc không âm nên bằng quãng đường.
 
-**Nếu làm sai:** Kiểm nguyên hàm F và thay đúng b−a, không thêm +C vào tích phân xác định.
+**Nếu làm sai:** Kiểm nguyên hàm \(F\) và thay đúng \(F(b)-F(a)\), không thêm \(+C\) vào tích phân xác định.
 
 </details>
 
@@ -1360,11 +1360,11 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 26/3.
+**Đáp án:** \(\frac{26}3\).
 
-**Lời giải:** F=x³/3; F(3)−F(1)=9−1/3=26/3. Giải thích chọn cách: Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu.
+**Lời giải:** \(F=\frac{x^3}3\); \(F(3)-F(1)=9-\frac13=\frac{26}3\). Giải thích chọn cách: Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu.
 
-**Nếu làm sai:** Kiểm nguyên hàm F và thay đúng b−a, không thêm +C vào tích phân xác định.
+**Nếu làm sai:** Kiểm nguyên hàm \(F\) và thay đúng \(F(b)-F(a)\), không thêm \(+C\) vào tích phân xác định.
 
 </details>
 
@@ -1376,9 +1376,9 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 4.
 
-**Lời giải:** F=x²; F(2)−F(0)=4. Giải thích chọn cách: Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu.
+**Lời giải:** \(F=x^2\); \(F(2)-F(0)=4\). Giải thích chọn cách: Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu.
 
-**Nếu làm sai:** Kiểm nguyên hàm F và thay đúng b−a, không thêm +C vào tích phân xác định.
+**Nếu làm sai:** Kiểm nguyên hàm \(F\) và thay đúng \(F(b)-F(a)\), không thêm \(+C\) vào tích phân xác định.
 
 </details>
 
@@ -1388,9 +1388,9 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** [x³+x]₀²=8+2=10.
+**Đáp án:** \([x^3+x]_0^2=8+2=10\).
 
-**Lời giải:** Lấy F=x³+x vì F'=3x²+1. Theo Newton–Leibniz, \(\int_{0}^{2} (3x^{2}+1)\,\mathrm dx\)=F(2)−F(0)=(8+2)−0=10. Tích phân xác định là số, không cộng +C.
+**Lời giải:** Lấy \(F=x^3+x\) vì \(F'=3x^2+1\). Theo Newton–Leibniz, \(\int_0^2(3x^2+1)\,\mathrm dx=F(2)-F(0)=(8+2)-0=10\). Tích phân xác định là số, không cộng \(+C\).
 
 **Nếu làm sai:** Ghi hai cận rõ ràng và luôn trừ giá trị tại cận dưới.
 
@@ -1404,7 +1404,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 9.
 
-**Lời giải:** F=2x³−2x²+x, F(2)=10 và F(1)=1 =>9.
+**Lời giải:** \(F=2x^3-2x^2+x\), \(F(2)=10\) và \(F(1)=1\Rightarrow10-1=9\).
 
 **Rubric tự luận /5:** 1đ nêu tính tuyến tính; 2đ F đúng; 1đ thế hai cận; 1đ kiểm phép tính.
 
@@ -1414,13 +1414,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-A02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O09; SINGLE_ITEM_ID -->
 
-**Bài 44.** Nhu cầu r(t)=4+2t đơn vị/giờ, 0<=t<=1. Lượng tích lũy?
+**Bài 44.** Nhu cầu \(r(t)=4+2t\) đơn vị/giờ, \(0\le t\le1\). Lượng tích lũy?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 5 đơn vị.
 
-**Lời giải:** \(\int_{0}^{1} (4+2t)\,\mathrm dt\)=[4t+t²]_0^1=5. Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.
+**Lời giải:** \(\int_0^1(4+2t)\,\mathrm dt=[4t+t^2]_0^1=5\). Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp \(F\).
 
 **Nếu làm sai:** Tách các hạng tử phải giữ cùng cận và hệ số, rồi tính hiệu tại hai đầu.
 
@@ -1434,7 +1434,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 4.
 
-**Lời giải:** F=x³−2x; tại 2 cho 8−4=4. Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.
+**Lời giải:** \(F=x^3-2x\); tại 2 cho \(8-4=4\). Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.
 
 **Nếu làm sai:** Tách các hạng tử phải giữ cùng cận và hệ số, rồi tính hiệu tại hai đầu.
 
@@ -1448,7 +1448,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 4.
 
-**Lời giải:** F=x²+3x; F(1)−F(0)=4. Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.
+**Lời giải:** \(F=x^2+3x\); \(F(1)-F(0)=4\). Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.
 
 **Nếu làm sai:** Tách các hạng tử phải giữ cùng cận và hệ số, rồi tính hiệu tại hai đầu.
 
@@ -1456,13 +1456,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P09; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O09; SINGLE_ITEM_ID -->
 
-**Bài 47.** Tính \(\int_{1}^{3} (2x+1)\,\mathrm dx\)−\(\int_{1}^{3} x\,\mathrm dx\).
+**Bài 47.** Tính \(\int_1^3(2x+1)\,\mathrm dx-\int_1^3 x\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** \(\int_{1}^{3} (x+1)\,\mathrm dx\)=[x²/2+x]₁³=(9/2+3)−(1/2+1)=6.
+**Đáp án:** \(\int_1^3(x+1)\,\mathrm dx=\left[\frac{x^2}2+x\right]_1^3=(\frac92+3)-(\frac12+1)=6\).
 
-**Lời giải:** Hai tích phân cùng cận, nên gộp ∫₁³[(2x+1)−x]dx=\(\int_{1}^{3} (x+1)\,\mathrm dx\). Nguyên hàm F=x²/2+x, hiệu F(3)−F(1)=(9/2+3)−(1/2+1)=6.
+**Lời giải:** Hai tích phân cùng cận, nên gộp \(\int_1^3[(2x+1)-x]\,\mathrm dx=\int_1^3(x+1)\,\mathrm dx\). Nguyên hàm \(F=\frac{x^2}2+x\), hiệu \(F(3)-F(1)=(\frac92+3)-(\frac12+1)=6\).
 
 **Nếu làm sai:** Nếu cận khác nhau, không gộp trực tiếp. Kiểm dấu của dấu trừ trước khi cộng hạng.
 
@@ -1470,13 +1470,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-W03; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O10; SINGLE_ITEM_ID -->
 
-**Bài 48.** Cho ∫_{−1}^1 f=5 và ∫_1^4 f=−3. Tính ∫_4^{−1} f.
+**Bài 48.** Cho \(\int_{-1}^1 f(x)\,\mathrm dx=5\) và \(\int_1^4 f(x)\,\mathrm dx=-3\). Tính \(\int_4^{-1} f(x)\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** −2.
+**Đáp án:** \(-2\).
 
-**Lời giải:** ∫_{−1}^4 f=5−3=2; đảo cận được −2.
+**Lời giải:** \(\int_{-1}^4 f(x)\,\mathrm dx=5-3=2\); đảo cận được \(-2\).
 
 **Rubric tự luận /5:** 1đ ghép hai đoạn; 1đ cộng đúng dấu; 1đ dùng đảo cận; 1đ kết quả; 1đ giải thích dấu.
 
@@ -1492,7 +1492,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** −2 m.
 
-**Lời giải:** Cộng đại số 4−6=−2: vị trí cuối lùi 2m so với đầu.
+**Lời giải:** Cộng đại số \(4-6=-2\): vị trí cuối lùi 2m so với đầu.
 
 **Nếu làm sai:** Đảo cận đổi dấu; tích phân có cận trùng nhau bằng 0, không là diện tích âm.
 
@@ -1500,13 +1500,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-P03; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O10; SINGLE_ITEM_ID -->
 
-**Bài 50.** Biết ∫_0^2 f=7 và ∫_0^5 f=9. Tính ∫_2^5 f.
+**Bài 50.** Biết \(\int_0^2 f(x)\,\mathrm dx=7\) và \(\int_0^5 f(x)\,\mathrm dx=9\). Tính \(\int_2^5 f(x)\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 2.
 
-**Lời giải:** ∫_2^5=∫_0^5−∫_0^2=9−7=2. Giải thích chọn cách: Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu.
+**Lời giải:** \(\int_2^5 f(x)\,\mathrm dx=\int_0^5 f(x)\,\mathrm dx-\int_0^2 f(x)\,\mathrm dx=9-7=2\). Giải thích chọn cách: Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu.
 
 **Nếu làm sai:** Đảo cận đổi dấu; tích phân có cận trùng nhau bằng 0, không là diện tích âm.
 
@@ -1514,13 +1514,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-C03; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O10; SINGLE_ITEM_ID -->
 
-**Bài 51.** Biết ∫_1^3 f=5 và ∫_3^5 f=−2. Tính ∫_1^5 f.
+**Bài 51.** Biết \(\int_1^3 f(x)\,\mathrm dx=5\) và \(\int_3^5 f(x)\,\mathrm dx=-2\). Tính \(\int_1^5 f(x)\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 3.
 
-**Lời giải:** Ghép đoạn: 5+(−2)=3. Giải thích chọn cách: Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu.
+**Lời giải:** Ghép đoạn: \(5+(-2)=3\). Giải thích chọn cách: Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu.
 
 **Nếu làm sai:** Đảo cận đổi dấu; tích phân có cận trùng nhau bằng 0, không là diện tích âm.
 
@@ -1532,9 +1532,9 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** −26/3.
+**Đáp án:** \(-\frac{26}3\).
 
-**Lời giải:** Dùng đảo cận: \(\int_{3}^{1} x^{2}\,\mathrm dx\)=−\(\int_{1}^{3} x^{2}\,\mathrm dx\)=−[x³/3]₁³=−(27−1)/3=−26/3. Giá trị âm do chiều lấy tích phân, không phải diện tích âm.
+**Lời giải:** Dùng đảo cận: \(\int_3^1 x^2\,\mathrm dx=-\int_1^3 x^2\,\mathrm dx=-\left[\frac{x^3}3\right]_1^3=-\frac{27-1}3=-\frac{26}3\). Giá trị âm do chiều lấy tích phân, không phải diện tích âm.
 
 **Nếu làm sai:** Khi cận trên nhỏ hơn cận dưới, đổi chỗ và đặt dấu trừ một lần.
 
@@ -1542,168 +1542,168 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-W04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O11; SINGLE_ITEM_ID -->
 
-**Bài 53.** Tính diện tích giữa y=4−x² và Ox từ x=0 đến x=2, kèm kiểm dấu.
+**Bài 53.** Tính diện tích giữa \(y=4-x^2\) và Ox từ \(x=0\) đến \(x=2\), kèm kiểm dấu.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** 16/3 đơn vị².
+**Đáp án:** \(\frac{16}3\) đơn vị².
 
-**Lời giải:** 4−x²≥0 trên [0,2], S=[4x−x³/3]_0²=8−8/3=16/3.
+**Lời giải:** \(4-x^2\ge0\) trên \([0;2]\), \(S=\left[4x-\frac{x^3}3\right]_0^2=8-\frac83=\frac{16}3\).
 
 **Rubric tự luận /5:** 1đ chứng minh không âm; 1đ viết tích phân; 2đ nguyên hàm và cận; 1đ đơn vị/kết luận.
 
-**Nếu làm sai:** Diện tích bằng ∫f chỉ khi f≥0 trên [a,b]; nhớ đơn vị bình phương.
+**Nếu làm sai:** Diện tích bằng \(\int_a^b f(x)\,\mathrm dx\) chỉ khi \(f\ge0\) trên \([a;b]\); nhớ đơn vị bình phương.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-A04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O11; SINGLE_ITEM_ID -->
 
-**Bài 54.** Độ cao y=1+x (m) và bề rộng biến x∈[0,2] (m). Tính diện tích phần dưới đồ thị.
+**Bài 54.** Độ cao \(y=1+x\) (m) và bề rộng biến \(x\in[0;2]\) (m). Tính diện tích phần dưới đồ thị.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 4 m².
 
-**Lời giải:** S=\(\int_{0}^{2} (1+x)\,\mathrm dx\)=[x+x²/2]_0²=4. Giải thích chọn cách: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng.
+**Lời giải:** \(S=\int_0^2(1+x)\,\mathrm dx=\left[x+\frac{x^2}2\right]_0^2=4\). Giải thích chọn cách: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với \(Ox\), lấy cận đúng.
 
-**Nếu làm sai:** Diện tích bằng ∫f chỉ khi f≥0 trên [a,b]; nhớ đơn vị bình phương.
+**Nếu làm sai:** Diện tích bằng \(\int_a^b f(x)\,\mathrm dx\) chỉ khi \(f\ge0\) trên \([a;b]\); nhớ đơn vị bình phương.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-P04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O11; SINGLE_ITEM_ID -->
 
-**Bài 55.** Tính diện tích dưới y=2−x trên [0,2].
+**Bài 55.** Tính diện tích dưới \(y=2-x\) trên \([0;2]\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 2 đơn vị².
 
-**Lời giải:** 2−x≥0, S=[2x−x²/2]_0²=4−2=2. Giải thích chọn cách: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng.
+**Lời giải:** \(2-x\ge0\), \(S=\left[2x-\frac{x^2}2\right]_0^2=4-2=2\). Giải thích chọn cách: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng.
 
-**Nếu làm sai:** Diện tích bằng ∫f chỉ khi f≥0 trên [a,b]; nhớ đơn vị bình phương.
+**Nếu làm sai:** Diện tích bằng \(\int_a^b f(x)\,\mathrm dx\) chỉ khi \(f\ge0\) trên \([a;b]\); nhớ đơn vị bình phương.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-C04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O11; SINGLE_ITEM_ID -->
 
-**Bài 56.** Diện tích dưới y=x trên [0,2] là bao nhiêu?
+**Bài 56.** Diện tích dưới \(y=x\) trên \([0;2]\) là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 2 đơn vị².
 
-**Lời giải:** Hàm không âm; S=\(\int_{0}^{2} x\,\mathrm dx\)=[x²/2]_0²=2.
+**Lời giải:** Hàm không âm; \(S=\int_0^2 x\,\mathrm dx=\left[\frac{x^2}2\right]_0^2=2\).
 
-**Nếu làm sai:** Diện tích bằng ∫f chỉ khi f≥0 trên [a,b]; nhớ đơn vị bình phương.
+**Nếu làm sai:** Diện tích bằng \(\int_a^b f(x)\,\mathrm dx\) chỉ khi \(f\ge0\) trên \([a;b]\); nhớ đơn vị bình phương.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P11; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O11; SINGLE_ITEM_ID -->
 
-**Bài 57.** Tính diện tích dưới y=x² trên [0,2].
+**Bài 57.** Tính diện tích dưới \(y=x^2\) trên \([0;2]\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S=8/3 đơn vị diện tích.
+**Đáp án:** \(S=\frac83\) đơn vị diện tích.
 
-**Lời giải:** Vì x²≥0 liên tục trên [0,2], diện tích đúng bằng tích phân \(\int_{0}^{2} x^{2}\,\mathrm dx\)=[x³/3]₀²=8/3 đơn vị². Nếu f đổi dấu, công thức diện tích phải dùng |f|.
+**Lời giải:** Vì \(x^2\ge0\) và hàm liên tục trên \([0;2]\), diện tích đúng bằng tích phân \(\int_0^2 x^2\,\mathrm dx=\left[\frac{x^3}3\right]_0^2=\frac83\) đơn vị². Nếu \(f\) đổi dấu, công thức diện tích phải dùng \(|f|\).
 
-**Nếu làm sai:** Đừng quên xác nhận f≥0 trên đoạn trước khi gọi tích phân là diện tích hình học.
+**Nếu làm sai:** Đừng quên xác nhận \(f\ge0\) trên đoạn trước khi gọi tích phân là diện tích hình học.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-W05; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O12; SINGLE_ITEM_ID -->
 
-**Bài 58.** Diện tích giữa y=x²−1 và Ox trên [−2,2] là bao nhiêu?
+**Bài 58.** Diện tích giữa \(y=x^2-1\) và Ox trên \([-2;2]\) là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 **Đáp án:** 4 đơn vị².
 
-**Lời giải:** Nghiệm ±1; hai vùng ngoài tổng 8/3, vùng giữa 4/3; S=4.
+**Lời giải:** Nghiệm \(\pm1\); hai vùng ngoài tổng \(\frac83\), vùng giữa \(\frac43\); \(S=4\).
 
 **Rubric tự luận /5:** 1đ nghiệm và bảng dấu; 1đ chia tích phân; 2đ tính từng phần; 1đ cộng và phân biệt tích phân có dấu.
 
-**Nếu làm sai:** Chia tại nghiệm f=0 rồi cộng độ lớn ∫|f|, không lấy |∫f|.
+**Nếu làm sai:** Chia tại nghiệm \(f=0\) rồi cộng độ lớn từng phần: \(\int_a^b|f(x)|\,\mathrm dx\), không lấy \(\left|\int_a^b f(x)\,\mathrm dx\right|\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-A05; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O12; SINGLE_ITEM_ID -->
 
-**Bài 59.** Vật có v(t)=t−2 m/s, t∈[0,4]. Tính độ dời và quãng đường.
+**Bài 59.** Vật có \(v(t)=t-2\) m/s, \(t\in[0;4]\). Tính độ dời và quãng đường.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Độ dời 0 m; quãng đường 4 m.
 
-**Lời giải:** \(\int_{0}^{4} (t-2)\,\mathrm dt\)=0; chia tại t=2, ∫|t−2|=2+2=4.
+**Lời giải:** \(\int_0^4(t-2)\,\mathrm dt=0\); chia tại \(t=2\), \(\int_0^4|t-2|\,\mathrm dt=2+2=4\).
 
-**Nếu làm sai:** Chia tại nghiệm f=0 rồi cộng độ lớn ∫|f|, không lấy |∫f|.
+**Nếu làm sai:** Chia tại nghiệm \(f=0\) rồi cộng độ lớn từng phần: \(\int_a^b|f(x)|\,\mathrm dx\), không lấy \(\left|\int_a^b f(x)\,\mathrm dx\right|\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-P05; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O12; SINGLE_ITEM_ID -->
 
-**Bài 60.** Diện tích giữa y=x−1 và Ox trên [0,2]?
+**Bài 60.** Diện tích giữa \(y=x-1\) và Ox trên \([0;2]\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 1 đơn vị².
 
-**Lời giải:** Chia tại x=1: hai tam giác mỗi diện tích 1/2, tổng 1.
+**Lời giải:** Chia tại \(x=1\): hai tam giác mỗi diện tích \(\frac12\), tổng 1.
 
-**Nếu làm sai:** Chia tại nghiệm f=0 rồi cộng độ lớn ∫|f|, không lấy |∫f|.
+**Nếu làm sai:** Chia tại nghiệm \(f=0\) rồi cộng độ lớn từng phần: \(\int_a^b|f(x)|\,\mathrm dx\), không lấy \(\left|\int_a^b f(x)\,\mathrm dx\right|\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-C05; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O12; SINGLE_ITEM_ID -->
 
-**Bài 61.** Tính diện tích giữa y=x và trục Ox trên [−2,2].
+**Bài 61.** Tính diện tích giữa \(y=x\) và trục Ox trên \([-2;2]\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 4 đơn vị².
 
-**Lời giải:** Chia tại x=0: \(\int_{-2}^{0} (-x)\,\mathrm dx\)+\(\int_{0}^{2} x\,\mathrm dx\)=2+2=4.
+**Lời giải:** Chia tại \(x=0\): \(\int_{-2}^0(-x)\,\mathrm dx+\int_0^2 x\,\mathrm dx=2+2=4\).
 
-**Nếu làm sai:** Chia tại nghiệm f=0 rồi cộng độ lớn ∫|f|, không lấy |∫f|.
+**Nếu làm sai:** Chia tại nghiệm \(f=0\) rồi cộng độ lớn từng phần: \(\int_a^b|f(x)|\,\mathrm dx\), không lấy \(\left|\int_a^b f(x)\,\mathrm dx\right|\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P12; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O12; SINGLE_ITEM_ID -->
 
-**Bài 62.** Với f=x trên [−2,1], tính tích phân có dấu và diện tích.
+**Bài 62.** Với \(f=x\) trên \([-2;1]\), tính tích phân có dấu và diện tích.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** \(\int_{-2}^{1} x\,\mathrm dx\)=(1−4)/2=−3/2; diện tích 2+1/2=5/2.
+**Đáp án:** \(\int_{-2}^1 x\,\mathrm dx=\frac{1-4}2=-\frac32\); diện tích \(2+\frac12=\frac52\).
 
-**Lời giải:** Tích phân có dấu I=\(\int_{-2}^{1} x\,\mathrm dx\)=[x²/2]_{−2}^{1}=1/2−2=−3/2. Để tính diện tích, chia tại x=0: S=\(\int_{-2}^{0} (-x)\,\mathrm dx\)+\(\int_{0}^{1} x\,\mathrm dx\)=2+1/2=5/2 đơn vị². |I|=3/2 khác S.
+**Lời giải:** Tích phân có dấu \(I=\int_{-2}^1 x\,\mathrm dx=\left[\frac{x^2}2\right]_{-2}^1=\frac12-2=-\frac32\). Để tính diện tích, chia tại \(x=0\): \(S=\int_{-2}^0(-x)\,\mathrm dx+\int_0^1 x\,\mathrm dx=2+\frac12=\frac52\) đơn vị². \(|I|=\frac32\) khác \(S\).
 
-**Nếu làm sai:** Tìm nghiệm làm f đổi dấu rồi lấy trị tuyệt đối từng phần; không lấy |∫f| thay ∫|f|.
+**Nếu làm sai:** Tìm nghiệm làm f đổi dấu rồi lấy trị tuyệt đối từng phần; không lấy \(\left|\int_a^b f(x)\,\mathrm dx\right|\) thay \(\int_a^b|f(x)|\,\mathrm dx\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W03; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O12; SINGLE_ITEM_ID -->
 
-**Bài 63.** Một vật có vận tốc v(t)=t−1 (m/s) trong 0≤t≤2 s. (a) Tính độ dời bằng tích phân. (b) Xác định thời điểm đổi chiều. (c) Tính tổng quãng đường. (d) Giải thích vì sao không dùng trị tuyệt đối độ dời làm quãng đường.
+**Bài 63.** Một vật có vận tốc \(v(t)=t-1\) (m/s) trong \(0\le t\le2\) s. (a) Tính độ dời bằng tích phân. (b) Xác định thời điểm đổi chiều. (c) Tính tổng quãng đường. (d) Giải thích vì sao không dùng trị tuyệt đối độ dời làm quãng đường.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** Độ dời=0 m, đổi chiều ở t=1 s, quãng đường=1 m.
+**Đáp án:** Độ dời bằng 0 m, đổi chiều ở \(t=1\) s, quãng đường bằng 1 m.
 
-**Lời giải:** \(\int_{0}^{2} (t-1)\,\mathrm dt\)=[t²/2−t]₀²=2−2=0. v<0 trên (0,1), v>0 trên (1,2), nên đổi chiều tại1. Quãng đường \(\int_{0}^{1} (1-t)\,\mathrm dt\)+\(\int_{1}^{2} (t-1)\,\mathrm dt\)=1/2+1/2=1 m. |∫v|=0 khác ∫|v|=1 vì hai đoạn đối chiều triệt trong độ dời.
+**Lời giải:** \(\int_0^2(t-1)\,\mathrm dt=\left[\frac{t^2}2-t\right]_0^2=2-2=0\). \(v<0\) trên \((0;1)\), \(v>0\) trên \((1;2)\), nên đổi chiều tại 1. Quãng đường \(\int_0^1(1-t)\,\mathrm dt+\int_1^2(t-1)\,\mathrm dt=\frac12+\frac12=1\) m. \(\left|\int_0^2 v\,\mathrm dt\right|=0\) khác \(\int_0^2|v|\,\mathrm dt=1\) vì hai đoạn đối chiều triệt trong độ dời.
 
 **Rubric /7:**
 1. Đặt đúng tích phân v(t) (1đ)
 2. Tính độ dời0 (1đ)
-3. Giải v(t)=0 tại1 (1đ)
+3. Giải \(v(t)=0\) tại1 (1đ)
 4. Xét dấu v hai bên (1đ)
 5. Lập hai tích phân trị tuyệt đối (1đ)
 6. Tính quãng đường1m (1đ)
 7. Giải thích độ dời và quãng đường khác nhau (1đ)
 
-**Nếu làm sai:** Thấy v đổi dấu phải tách khoảng để tính ∫|v|, không lấy trị tuyệt đối toàn tổng.
+**Nếu làm sai:** Thấy v đổi dấu phải tách khoảng để tính \(\int_a^b|v(t)|\,\mathrm dt\), không lấy trị tuyệt đối toàn tổng.
 
 </details>
 
@@ -1715,25 +1715,25 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 3.
 
-**Lời giải:** F=2sin x−cos x; F(π/2)=2, F(0)=−1 =>3.
+**Lời giải:** \(F=2\sin x-\cos x\); \(F(\frac{\pi}2)=2\), \(F(0)=-1\Rightarrow2-(-1)=3\).
 
 **Rubric tự luận /5:** 1đ nêu điều kiện liên tục; 2đ nguyên hàm; 1đ thế cận; 1đ kết quả/chính xác.
 
-**Nếu làm sai:** Thử đạo hàm của sin, cos, e^x và so cận trong radian.
+**Nếu làm sai:** Thử đạo hàm của \(\sin x,\cos x,e^x\) và so cận trong radian.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-A06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O13; SINGLE_ITEM_ID -->
 
-**Bài 65.** Tốc độ r(t)=2e^t đơn vị/giờ trên [0,ln2]. Lượng tăng?
+**Bài 65.** Tốc độ \(r(t)=2e^t\) đơn vị/giờ trên \([0;\ln2]\). Lượng tăng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 2 đơn vị.
 
-**Lời giải:** \(\int_{0}^{\ln 2} 2e^t\,\mathrm dt\)=2(2−1)=2. Giải thích chọn cách: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.
+**Lời giải:** \(\int_0^{\ln2}2e^t\,\mathrm dt=2(2-1)=2\). Giải thích chọn cách: Giữ \(\pi,e,\ln2\) dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.
 
-**Nếu làm sai:** Thử đạo hàm của sin, cos, e^x và so cận trong radian.
+**Nếu làm sai:** Thử đạo hàm của \(\sin x,\cos x,e^x\) và so cận trong radian.
 
 </details>
 
@@ -1745,9 +1745,9 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 0.
 
-**Lời giải:** [sin x]_0^π=0. Giải thích chọn cách: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.
+**Lời giải:** \([\sin x]_0^\pi=0\). Giải thích chọn cách: Giữ \(\pi,e,\ln2\) dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.
 
-**Nếu làm sai:** Thử đạo hàm của sin, cos, e^x và so cận trong radian.
+**Nếu làm sai:** Thử đạo hàm của \(\sin x,\cos x,e^x\) và so cận trong radian.
 
 </details>
 
@@ -1759,9 +1759,9 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 1.
 
-**Lời giải:** [e^x]_0^{ln2}=2−1=1. Giải thích chọn cách: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.
+**Lời giải:** \([e^x]_0^{\ln2}=2-1=1\). Giải thích chọn cách: Giữ \(\pi,e,\ln2\) dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.
 
-**Nếu làm sai:** Thử đạo hàm của sin, cos, e^x và so cận trong radian.
+**Nếu làm sai:** Thử đạo hàm của \(\sin x,\cos x,e^x\) và so cận trong radian.
 
 </details>
 
@@ -1771,81 +1771,81 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** [−2cos x]₀^π=2−(−2)=4.
+**Đáp án:** \([-2\cos x]_0^\pi=2-(-2)=4\).
 
-**Lời giải:** Góc đo radian; F=−2cos x vì F'=2sin x. Thế cận: \(\int_{0}^{\pi} 2\sin  x\,\mathrm dx\)=−2cosπ−(−2cos0)=2−(−2)=4. Vì sin≥0 trên [0,π], giá trị này cũng là diện tích dưới đồ thị.
+**Lời giải:** Góc đo radian; \(F=-2\cos x\) vì \(F'=2\sin x\). Thế cận: \(\int_0^\pi 2\sin x\,\mathrm dx=-2\cos\pi-(-2\cos0)=2-(-2)=4\). Vì \(\sin x\ge0\) trên \([0;\pi]\), giá trị này cũng là diện tích dưới đồ thị.
 
-**Nếu làm sai:** Nếu ra 0, kiểm lại cosπ=−1 và dấu trừ trước F(0).
+**Nếu làm sai:** Nếu ra 0, kiểm lại \(\cos\pi=-1\) và dấu trừ trước F(0).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-W07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O14; SINGLE_ITEM_ID -->
 
-**Bài 69.** a(t)=4m/s², v(0)=−3m/s, s(0)=2m. Tìm độ dời trong [0,2]s, giải thích tại sao không được coi là quãng đường.
+**Bài 69.** \(a(t)=4\) m/s², \(v(0)=-3\) m/s, \(s(0)=2\) m. Tìm độ dời trong \([0;2]\)s, giải thích tại sao không được coi là quãng đường.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 **Đáp án:** Độ dời 2m.
 
-**Lời giải:** v(t)=4t−3; \(\int_{0}^{2} v\,\mathrm dt\)=[2t²−3t]_0²=8−6=2m. Vì v đổi dấu ở t=3/4 nên quãng đường >|2m|.
+**Lời giải:** \(v(t)=4t-3\); \(\int_0^2 v\,\mathrm dt=[2t^2-3t]_0^2=8-6=2\) m. Vì \(v\) đổi dấu ở \(t=\frac34\) nên quãng đường lớn hơn độ lớn của độ dời (2 m).
 
 **Rubric tự luận /5:** 1đ tìm v(t); 1đ tìm thời điểm đổi dấu; 2đ tính tích phân; 1đ nêu phân biệt độ dời và quãng đường.
 
-**Nếu làm sai:** Tốc độ biến thiên không hằng phải tích phân; không dùng giá trị cuối×thời gian.
+**Nếu làm sai:** Tốc độ biến thiên không hằng phải tích phân; không dùng tích của giá trị cuối với thời gian.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-A07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O14; SINGLE_ITEM_ID -->
 
-**Bài 70.** Sản lượng tăng với q'(t)=4+3t² (sản phẩm/giờ), t=0..2 giờ. Lượng tăng?
+**Bài 70.** Sản lượng tăng với \(q'(t)=4+3t^2\) (sản phẩm/giờ), \(t\in[0;2]\) giờ. Lượng tăng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 16 sản phẩm.
 
-**Lời giải:** \(\int_{0}^{2} (4+3t^{2})\,\mathrm dt\)=[4t+t³]_0²=8+8=16.
+**Lời giải:** \(\int_0^2(4+3t^2)\,\mathrm dt=[4t+t^3]_0^2=8+8=16\).
 
-**Nếu làm sai:** Tốc độ biến thiên không hằng phải tích phân; không dùng giá trị cuối×thời gian.
+**Nếu làm sai:** Tốc độ biến thiên không hằng phải tích phân; không dùng tích của giá trị cuối với thời gian.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-P07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O14; SINGLE_ITEM_ID -->
 
-**Bài 71.** Vận tốc v=t² trên [1,2] s. Tính quãng đường.
+**Bài 71.** Vận tốc \(v=t^2\) trên \([1;2]\) s. Tính quãng đường.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 7/3 m (nếu v đo m/s).
+**Đáp án:** \(\frac73\) m (nếu v đo m/s).
 
-**Lời giải:** v≥0 nên \(\int_{1}^{2} t^{2}\,\mathrm dt\)=(8−1)/3=7/3.
+**Lời giải:** \(v\ge0\) nên \(\int_1^2 t^2\,\mathrm dt=\frac{8-1}3=\frac73\).
 
-**Nếu làm sai:** Tốc độ biến thiên không hằng phải tích phân; không dùng giá trị cuối×thời gian.
+**Nếu làm sai:** Tốc độ biến thiên không hằng phải tích phân; không dùng tích của giá trị cuối với thời gian.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-C07; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O14; SINGLE_ITEM_ID -->
 
-**Bài 72.** Vận tốc v(t)=2t+1 m/s trong 0≤t≤3. Tính độ dời.
+**Bài 72.** Vận tốc \(v(t)=2t+1\) m/s trong \(0\le t\le3\). Tính độ dời.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 12 m.
 
-**Lời giải:** \(\int_{0}^{3} (2t+1)\,\mathrm dt\)=[t²+t]_0³=9+3=12.
+**Lời giải:** \(\int_0^3(2t+1)\,\mathrm dt=[t^2+t]_0^3=9+3=12\).
 
-**Nếu làm sai:** Tốc độ biến thiên không hằng phải tích phân; không dùng giá trị cuối×thời gian.
+**Nếu làm sai:** Tốc độ biến thiên không hằng phải tích phân; không dùng tích của giá trị cuối với thời gian.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P14; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O14; SINGLE_ITEM_ID -->
 
-**Bài 73.** Với v=3t², s(0)=5, tính s(2).
+**Bài 73.** Với \(v=3t^2\), \(s(0)=5\), tính s(2).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** s(2)=5+8=13m.
+**Đáp án:** \(s(2)=5+8=13\) m.
 
-**Lời giải:** Vì v(t)=s'(t)=3t², độ dời từ0 tới2 là \(\int_{0}^{2} 3t^{2}\,\mathrm dt\)=[t³]₀²=8. Vị trí cuối s(2)=s(0)+8=5+8=13 m. Không dùng v(2)×2 vì vận tốc không hằng.
+**Lời giải:** Vì \(v(t)=s'(t)=3t^2\), độ dời từ 0 tới 2 là \(\int_0^2 3t^2\,\mathrm dt=[t^3]_0^2=8\). Vị trí cuối \(s(2)=s(0)+8=5+8=13\) m. Không dùng \(v(2)\cdot2\) vì vận tốc không hằng.
 
 **Nếu làm sai:** Phân biệt độ dời và vị trí cuối: vị trí cuối bằng vị trí đầu cộng độ dời.
 
