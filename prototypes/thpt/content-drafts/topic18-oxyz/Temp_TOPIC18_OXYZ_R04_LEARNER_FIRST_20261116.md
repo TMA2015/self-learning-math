@@ -25,13 +25,13 @@ Một vectơ biểu diễn độ dời có hướng từ điểm đầu đến �
 
 **Ví dụ**
 
-**Đề bài:** Trong ba điểm A–B–C thẳng hàng theo thứ tự, ghép AB với BC thu được độ dời nào? Khi A=B, AB có hướng riêng không?
+**Đề bài:** Trong ba điểm A–B–C thẳng hàng theo thứ tự, ghép \(\overrightarrow{AB}\) với \(\overrightarrow{BC}\) thu được độ dời nào? Khi \(A=B\), \(\overrightarrow{AB}\) có hướng riêng không?
 
-**Lời giải:** Nếu A,B,C thẳng hàng và AB,BC cùng hướng thì khi đi A→B rồi B→C, ta thu được độ dời A→C. Khi A trùng B, vectơ AB là vectơ-không dù hai điểm mang cùng vị trí. Vectơ-không không được gán một góc riêng.
+**Lời giải:** Nếu A,B,C thẳng hàng và \(\overrightarrow{AB},\overrightarrow{BC}\) cùng hướng thì khi đi A→B rồi B→C, ta thu được độ dời A→C. Khi A trùng B, vectơ \(\overrightarrow{AB}\) là vectơ-không dù hai điểm mang cùng vị trí. Vectơ-không không được gán một góc riêng.
 
 **Vận dụng**
 
-A trùng B. Vectơ AB có độ dài và hướng thế nào?
+A trùng B. Vectơ \(\overrightarrow{AB}\) có độ dài và hướng thế nào?
 
 <!-- ITEM_ID: THPT-TOP18-T01; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O01 -->
 
@@ -58,19 +58,19 @@ Hai vectơ bằng nhau phải cùng hướng và cùng độ dài; chỉ cùng �
 
 **Ví dụ**
 
-**Đề bài:** Trong hình bình hành ABCD, so các vectơ AB, DC và CD: đâu là cặp bằng nhau, đâu là cặp đối?
+**Đề bài:** Trong hình bình hành ABCD, so các vectơ \(\overrightarrow{AB},\overrightarrow{DC},\overrightarrow{CD}\): đâu là cặp bằng nhau, đâu là cặp đối?
 
-**Lời giải:** Trên hình bình hành ABCD, vectơ AB bằng vectơ DC; vectơ AB đối vectơ CD. Cùng hai cạnh nhưng đổi thứ tự đầu–cuối thì đảo chiều, không đổi độ dài.
+**Lời giải:** Trên hình bình hành ABCD, \(\overrightarrow{AB}=\overrightarrow{DC}\); \(\overrightarrow{AB}=-\overrightarrow{CD}\). Cùng hai cạnh nhưng đổi thứ tự đầu–cuối thì đảo chiều, không đổi độ dài.
 
 **Vận dụng**
 
-Trong hình bình hành ABCD, vectơ AB có bằng vectơ CD không?
+Trong hình bình hành ABCD, vectơ \(\overrightarrow{AB}\) có bằng vectơ \(\overrightarrow{CD}\) không?
 
 <!-- ITEM_ID: THPT-TOP18-T02; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O02 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Không. AB và CD đối nhau; AB bằng DC.
+Không. \(\overrightarrow{AB}\) và \(\overrightarrow{CD}\) đối nhau; \(\overrightarrow{AB}=\overrightarrow{DC}\).
 
 **Kiểm lỗi**
 
@@ -82,7 +82,7 @@ Bằng nhau cần cả cùng hướng lẫn độ dài; hai độ dời dài b�
 
 <!-- LESSON_ID: TOP18-M03; OUTCOME_ID: TOP18-O03; S1_ORIGINAL_OUTCOME: G12-CHII-B06-O03 -->
 
-Cộng vectơ là ghép các độ dời, không cộng số đo chiều dài tùy ý. Quy tắc ba điểm AB+BC=AC phản ánh đi liên tiếp; trong hình hộp, tổng ba cạnh kề ở A đưa đến đỉnh đối diện C′.
+Cộng vectơ là ghép các độ dời, không cộng số đo chiều dài tùy ý. Quy tắc ba điểm \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\) phản ánh đi liên tiếp; trong hình hộp, tổng ba cạnh kề ở A đưa đến đỉnh đối diện C′.
 
 > **Kiến thức cần ghi nhớ**
 >
@@ -91,19 +91,19 @@ Cộng vectơ là ghép các độ dời, không cộng số đo chiều dài t�
 
 **Ví dụ**
 
-**Đề bài:** Trong hình hộp ABCD.A′B′C′D′, ba độ dời AB, AD, AA′ đưa ta tới đỉnh nào?
+**Đề bài:** Trong hình hộp ABCD.A′B′C′D′, ba độ dời \(\overrightarrow{AB},\overrightarrow{AD},\overrightarrow{AA'}\) đưa ta tới đỉnh nào?
 
-**Lời giải:** Trong hình hộp ABCD.A′B′C′D′, đi A→B, rồi B→C, rồi C→C′ có cùng độ dời với A→C′. Vì AB+AD=AC và AC+AA′=AC′, suy AB+AD+AA′=AC′.
+**Lời giải:** Trong hình hộp ABCD.A′B′C′D′, đi A→B, rồi B→C, rồi C→C′ có cùng độ dời với A→C′. Vì \(\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}\) và \(\overrightarrow{AC}+\overrightarrow{AA'}=\overrightarrow{AC'}\), suy ra \(\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA'}=\overrightarrow{AC'}\).
 
 **Vận dụng**
 
-Tính dạng rút gọn của vectơ PQ + vectơ QR.
+Tính dạng rút gọn của \(\overrightarrow{PQ}+\overrightarrow{QR}\).
 
 <!-- ITEM_ID: THPT-TOP18-T03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O03 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Vectơ PR theo quy tắc ba điểm, miễn các điểm được lấy đúng thứ tự.
+Vectơ \(\overrightarrow{PR}\) theo quy tắc ba điểm, miễn các điểm được lấy đúng thứ tự.
 
 **Kiểm lỗi**
 
@@ -115,32 +115,32 @@ Vectơ PR theo quy tắc ba điểm, miễn các điểm được lấy đúng t
 
 <!-- LESSON_ID: TOP18-M04; OUTCOME_ID: TOP18-O04; S1_ORIGINAL_OUTCOME: G12-CHII-B06-O04 -->
 
-Nhân vectơ với số k thay đổi độ dài theo |k|, cùng hướng nếu k>0, ngược hướng nếu k<0 và tạo vectơ-không nếu k=0. Điều này giải thích tại sao nhân 3 biểu thị ba lần độ dời cùng hướng, còn nhân −1 là đảo chiều.
+Nhân vectơ với số k thay đổi độ dài theo \(\lvert k\rvert\), cùng hướng nếu \(k>0\), ngược hướng nếu \(k<0\) và tạo vectơ-không nếu \(k=0\). Điều này giải thích tại sao nhân 3 biểu thị ba lần độ dời cùng hướng, còn nhân −1 là đảo chiều.
 
 > **Kiến thức cần ghi nhớ**
 >
-> Nhân vectơ với số k thay đổi độ dài theo |k|, cùng hướng nếu k>0, ngược hướng nếu k<0 và tạo vectơ-không nếu k=0.
+> Nhân vectơ với số k thay đổi độ dài theo \(\lvert k\rvert\), cùng hướng nếu \(k>0\), ngược hướng nếu \(k<0\) và tạo vectơ-không nếu \(k=0\).
 
 
 **Ví dụ**
 
-**Đề bài:** Vectơ u dài 2 m hướng Bắc. Xác định độ dài và hướng của −3u.
+**Đề bài:** Vectơ u dài 2 m hướng Bắc. Xác định độ dài và hướng của \(-3\vec u\).
 
-**Lời giải:** Nếu vectơ u dài 2 m về hướng Bắc, −3u dài 6 m về hướng Nam. Không viết độ dài −6 m; độ dài luôn không âm.
+**Lời giải:** Nếu vectơ u dài 2 m về hướng Bắc, \(-3\vec u\) dài 6 m về hướng Nam. Không viết độ dài −6 m; độ dài luôn không âm.
 
 **Vận dụng**
 
-Vectơ u khác không, 0u có cùng hướng u không?
+Vectơ u khác không, \(0\vec u\) có cùng hướng u không?
 
 <!-- ITEM_ID: THPT-TOP18-T04; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O04 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Không. 0u là vectơ-không, không có hướng xác định.
+Không. \(0\vec u\) là vectơ-không, không có hướng xác định.
 
 **Kiểm lỗi**
 
-Nhân k làm độ dài nhân |k|; k âm đảo chiều và k=0 cho vectơ không, không có độ dài âm. Quay về **Kiến thức 1.4**, sau đó tự giải **Bài luyện 16** và **Bài luyện 20** trong Luyện tập.
+Nhân k làm độ dài nhân \(\lvert k\rvert\); k âm đảo chiều và \(k=0\) cho vectơ không, không có độ dài âm. Quay về **Kiến thức 1.4**, sau đó tự giải **Bài luyện 16** và **Bài luyện 20** trong Luyện tập.
 
 </details>
 
@@ -148,11 +148,11 @@ Nhân k làm độ dài nhân |k|; k âm đảo chiều và k=0 cho vectơ khôn
 
 <!-- LESSON_ID: TOP18-M05; OUTCOME_ID: TOP18-O05; S1_ORIGINAL_OUTCOME: G12-CHII-B06-O05 -->
 
-Tích vô hướng đo phần 'đi cùng phương' của hai vectơ; nó dương khi góc nhọn, âm khi góc tù và bằng 0 khi vuông góc. Công thức u·v=|u||v|cosφ đúng cho mọi vectơ, nhưng góc φ chỉ được định nghĩa khi hai vectơ khác không.
+Tích vô hướng đo phần 'đi cùng phương' của hai vectơ; nó dương khi góc nhọn, âm khi góc tù và bằng 0 khi vuông góc. Khi hai vectơ khác không, tích vô hướng được tính bằng \(\vec u\cdot\vec v=\lVert\vec u\rVert\lVert\vec v\rVert\cos\theta\), với \(\theta\) là góc giữa chúng. Nếu một vectơ bằng vectơ-không, tích vô hướng bằng 0; không cần tính góc.
 
 > **Kiến thức cần ghi nhớ**
 >
-> Hai vectơ khác không có tích vô hướng \(\vec u\cdot\vec v=|\vec u||\vec v|\cos\theta\); tích bằng 0 khi chúng vuông góc. Không định nghĩa góc với vectơ-không.
+> Hai vectơ khác không có tích vô hướng \(\vec u\cdot\vec v=\lVert\vec u\rVert\lVert\vec v\rVert\cos\theta\); tích bằng 0 khi chúng vuông góc. Không định nghĩa góc với vectơ-không.
 
 
 **Ví dụ**
@@ -169,7 +169,7 @@ Hai vectơ khác không vuông góc; tích vô hướng bằng bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Bằng 0 vì cos90°=0.
+Bằng 0 vì \(\cos90^\circ=0\).
 
 **Kiểm lỗi**
 
@@ -204,7 +204,7 @@ Hai lực 6 N và 8 N vuông góc, độ lớn hợp lực?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-10 N vì bình phương độ lớn tổng bằng 6²+8².
+10 N vì bình phương độ lớn tổng bằng \(6^2+8^2\).
 
 **Kiểm lỗi**
 
@@ -1482,11 +1482,11 @@ Hãy đọc đề, thử giải vào vở rồi tự mở lời giải. Khi ch�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P01; PRIMARY_OUTCOME: TOP18-O01; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 5.** Cho ba điểm P, Q, R thẳng hàng **theo thứ tự P–Q–R** (Q nằm giữa P và R), PQ=3 cm và QR=2 cm. Tính PR. Trong trường hợp riêng P=Q, vectơ PQ có phải vectơ đơn vị không?
+**Bài luyện 5.** Cho ba điểm P, Q, R thẳng hàng **theo thứ tự P–Q–R** (Q nằm giữa P và R), \(PQ=3\) cm và \(QR=2\) cm. Tính PR. Trong trường hợp riêng \(P=Q\), vectơ \(\overrightarrow{PQ}\) có phải vectơ đơn vị không?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Vì Q nằm giữa P và R nên PR=PQ+QR=3+2=5 cm. Ở trường hợp riêng P=Q thì vectơ PQ là vectơ-không, độ dài bằng 0 nên không phải vectơ đơn vị.
+Vì Q nằm giữa P và R nên \(PR=PQ+QR=3+2=5\) cm. Ở trường hợp riêng \(P=Q\) thì vectơ \(\overrightarrow{PQ}\) là vectơ-không, độ dài bằng 0 nên không phải vectơ đơn vị.
 
 **D6:** Không suy hướng từ nét vẽ, kiểm điểm đầu/cuối; vectơ-không không được đưa vào công thức góc.
 
@@ -1571,7 +1571,7 @@ Vì Q nằm giữa P và R nên PR=PQ+QR=3+2=5 cm. Ở trường hợp riêng P=
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** \(\overrightarrow{AC\prime}\)
-- **Lời giải/suy luận:** Hai cạnh đáy cho AC, cạnh đứng bằng CC′; nối thành AC′.
+- **Lời giải/suy luận:** Hai cạnh đáy cho \(\overrightarrow{AC}\), vectơ cạnh đứng bằng \(\overrightarrow{CC'}\); nối thành \(\overrightarrow{AC'}\).
 
 </details>
 
@@ -1581,18 +1581,18 @@ Vì Q nằm giữa P và R nên PR=PQ+QR=3+2=5 cm. Ở trường hợp riêng P=
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** \(\overrightarrow{AD}\)
-- **Lời giải/suy luận:** Nối A→B→C→D được AD. Hoặc AB+BC=AC, AC+CD=AD.
+- **Lời giải/suy luận:** Nối A→B→C→D được \(\overrightarrow{AD}\). Hoặc \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\), \(\overrightarrow{AC}+\overrightarrow{CD}=\overrightarrow{AD}\).
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm mô tả đường đi; 2 điểm nhóm đúng; 1 điểm kết luận AD.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P03; PRIMARY_OUTCOME: TOP18-O03; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 15.** Trong tam giác ABC, viết vectơ AB + vectơ BC − vectơ AC dưới dạng đơn giản.
+**Bài luyện 15.** Trong tam giác ABC, viết \(\overrightarrow{AB}+\overrightarrow{BC}-\overrightarrow{AC}\) dưới dạng đơn giản.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
+Bằng vectơ-không vì \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\), nên hiệu với \(\overrightarrow{AC}\) bằng \(\vec 0\).
 
 **D6:** Nếu không ghép được đầu của mũi tên thứ hai vào cuối mũi tên thứ nhất, hãy tịnh tiến vectơ rồi mới cộng.
 
@@ -1619,7 +1619,7 @@ Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B06-P08; ORIGINAL_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHII_SOURCE -->
-**Bài luyện 18.** Điểm N ở tia đối của AB, AN=3AB. Viết \(\overrightarrow{AN}\) qua \(\overrightarrow{AB}\).
+**Bài luyện 18.** Điểm N ở tia đối của AB, \(AN=3AB\). Viết \(\overrightarrow{AN}\) qua \(\overrightarrow{AB}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1633,7 +1633,7 @@ Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** Có; b ngược hướng a, c cùng hướng a; \(|b|:|c|=3:1\).
+- **Đáp án:** Có; b ngược hướng a, c cùng hướng a; \(\lVert\vec b\rVert:\lVert\vec c\rVert=3:1\).
 - **Lời giải/suy luận:** b,c là bội số của a; dấu hệ số xác định chiều, độ lớn xác định tỉ lệ.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm chứng minh cùng phương; 2 điểm giải thích hướng; 1 điểm tỉ số.
@@ -1641,13 +1641,13 @@ Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P04; PRIMARY_OUTCOME: TOP18-O04; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 20.** Cho độ dời u có độ dài 5 cm và k=−2. Tính độ dài ku và so sánh hướng với u.
+**Bài luyện 20.** Cho độ dời u có độ dài 5 cm và \(k=-2\). Tính độ dài \(k\vec u\) và so sánh hướng với u.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Độ dài |−2|·5=10 cm; vì k âm nên ngược hướng u.
+Độ dài \(\lvert-2\rvert\cdot5=10\) cm; vì k âm nên ngược hướng u.
 
-**D6:** Nếu lẫn dấu và độ dài, tách riêng: độ dài nhân |k|, chiều quyết định theo dấu k.
+**D6:** Nếu lẫn dấu và độ dài, tách riêng: độ dài nhân \(\lvert k\rvert\), chiều quyết định theo dấu k.
 
 </details>
 
@@ -1667,7 +1667,7 @@ Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 0
-- **Lời giải/suy luận:** Cos90°=0 nên tích bằng 0.
+- **Lời giải/suy luận:** \(\cos90^\circ=0\) nên tích bằng 0.
 
 </details>
 
@@ -1698,7 +1698,7 @@ Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-3·4·cos60°=6. Cần biết cả độ dài và góc; không nhân 3·4 trực tiếp.
+\(3\cdot4\cdot\cos60^\circ=6\). Cần biết cả độ dài và góc; không nhân \(3\cdot4\) trực tiếp.
 
 **D6:** Nếu một vectơ bằng 0, tích vô hướng vẫn bằng 0 nhưng không dùng phép chia cho tích độ dài để tìm cos góc.
 
@@ -1710,7 +1710,7 @@ Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 40 J
-- **Lời giải/suy luận:** Góc 0°, W=10·4·cos0°=40 J.
+- **Lời giải/suy luận:** Góc 0°, \(W=10\cdot4\cdot\cos0^\circ=40\) J.
 
 </details>
 
@@ -1740,7 +1740,7 @@ Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** 30 J
-- **Lời giải/suy luận:** Theo tính phân phối của tích vô hướng, W=W1+W2=10·2·1/2+20·2·1/2=10+20=30 J.
+- **Lời giải/suy luận:** Theo tính phân phối của tích vô hướng, \(W=W_1+W_2=10\cdot2\cdot\frac12+20\cdot2\cdot\frac12=10+20=30\) J.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm công mỗi lực; 2 điểm cộng hợp lí bằng phân phối; 1 điểm đơn vị và giả thiết.
 
@@ -1751,7 +1751,7 @@ Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-W=10·2·cos60°=10 J, vì chỉ thành phần lực dọc chuyển dời sinh công.
+\(W=10\cdot2\cdot\cos60^\circ=10\) J, vì chỉ thành phần lực dọc chuyển dời sinh công.
 
 **D6:** D6: phân loại bài hỏi tổng vectơ hay hình chiếu; luôn có sơ đồ phương và đơn vị.
 
@@ -1961,7 +1961,7 @@ Tăng 4 m về Bắc; chiều cao z không đổi.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P10; PRIMARY_OUTCOME: TOP18-O10; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 50.** Cho \(C=(-1;3;2)\), \(D=(2;3;-2)\). Tính CD và DC; có đối nhau không?
+**Bài luyện 50.** Cho \(C=(-1;3;2)\), \(D=(2;3;-2)\). Tính \(\overrightarrow{CD}\) và \(\overrightarrow{DC}\); có đối nhau không?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -2175,7 +2175,7 @@ Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P14; PRIMARY_OUTCOME: TOP18-O14; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 70.** u=(1,0,0),v=(1,1,0). Tính cos góc giữa hai vectơ.
+**Bài luyện 70.** \(\vec u=(1;0;0)\), \(\vec v=(1;1;0)\). Tính cos góc giữa hai vectơ.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -2296,7 +2296,7 @@ AB=B−A=(3,4,0). Bởi ba trục vuông góc, AB=√(3²+4²+0²)=5. Trung đi�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P16; PRIMARY_OUTCOME: TOP18-O16; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 81.** Máy bay mô hình M0=(2,−1,4) km, v=(1,2,−1) km/h. Sau 2 h ở đâu?
+**Bài luyện 81.** Máy bay mô hình \(M_0=(2;-1;4)\) km, \(\vec v=(1;2;-1)\) km/h. Sau 2 h ở đâu?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -2350,7 +2350,7 @@ M=(2,−1,4)+2(1,2,−1)=(4,3,2) km.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P17; PRIMARY_OUTCOME: TOP18-O17; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 86.** u=(1,1,0),v=(0,1,1). Tìm một pháp tuyến khác không bằng tích có hướng.
+**Bài luyện 86.** \(\vec u=(1;1;0)\), \(\vec v=(0;1;1)\). Tìm một pháp tuyến khác không bằng tích có hướng.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -2625,7 +2625,7 @@ Pháp tuyến n1=(1,−1,0),n2=(1,1,0); tích n1·n2=0 và cả hai khác không
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P22; PRIMARY_OUTCOME: TOP18-O22; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 112.** Tính khoảng cách M=(1,1,1) đến P:2x−y+2z−6=0.
+**Bài luyện 112.** Tính khoảng cách \(M=(1;1;1)\) đến \((P):2x-y+2z-6=0\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -2694,7 +2694,7 @@ Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm (3,−1,1). Pháp tuy
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P24; PRIMARY_OUTCOME: TOP18-O24; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 118.** Đường qua P=(−1,2,0) hướng v=(0,3,−2). Viết phương trình tham số.
+**Bài luyện 118.** Đường qua \(P=(-1;2;0)\) hướng \(\vec v=(0;3;-2)\). Viết phương trình tham số.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -2954,7 +2954,7 @@ Trùng: hướng cùng phương và điểm (3,1,0) nằm trên d1 khi t=1.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P29; PRIMARY_OUTCOME: TOP18-O29; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 143.** Phân loại d1(t)=(t,0,0), d2(s)=(0,s,2).
+**Bài luyện 143.** Phân loại \(d_1(t)=(t;0;0)\), \(d_2(s)=(0;s;2)\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -3575,7 +3575,7 @@ Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P40; PRIMARY_OUTCOME: TOP18-O40; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 201.** Mặt cầu tâm C=(0,0,1) bán kính 5, mặt z=4. Tính bán kính đường tròn thiết diện.
+**Bài luyện 201.** Mặt cầu tâm \(C=(0;0;1)\) bán kính 5, mặt \(z=4\). Tính bán kính đường tròn thiết diện.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
@@ -3681,40 +3681,40 @@ Những câu dưới đây là bài tự ôn đã có trong Luyện tập, khôn
 ## 1. Câu hỏi tự ôn
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P03; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 1.** Trong tam giác ABC, viết vectơ AB + vectơ BC − vectơ AC dưới dạng đơn giản.
+**Câu 1.** Trong tam giác ABC, viết \(\overrightarrow{AB}+\overrightarrow{BC}-\overrightarrow{AC}\) dưới dạng đơn giản.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P07; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
 **Câu 2.** Điểm \(A=(0;4;-3)\) thuộc mặt phẳng Oyz không? Vì sao?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P10; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 3.** Cho \(C=(-1;3;2)\), \(D=(2;3;-2)\). Tính CD và DC; có đối nhau không?
+**Câu 3.** Cho \(C=(-1;3;2)\), \(D=(2;3;-2)\). Tính \(\overrightarrow{CD}\) và \(\overrightarrow{DC}\); có đối nhau không?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P14; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 4.** u=(1,0,0),v=(1,1,0). Tính cos góc giữa hai vectơ.
+**Câu 4.** \(\vec u=(1;0;0)\), \(\vec v=(1;1;0)\). Tính cos góc giữa hai vectơ.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P16; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 5.** Máy bay mô hình M0=(2,−1,4) km, v=(1,2,−1) km/h. Sau 2 h ở đâu?
+**Câu 5.** Máy bay mô hình \(M_0=(2;-1;4)\) km, \(\vec v=(1;2;-1)\) km/h. Sau 2 h ở đâu?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P17; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 6.** u=(1,1,0),v=(0,1,1). Tìm một pháp tuyến khác không bằng tích có hướng.
+**Câu 6.** \(\vec u=(1;1;0)\), \(\vec v=(0;1;1)\). Tìm một pháp tuyến khác không bằng tích có hướng.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P19; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
 **Câu 7.** Lập mặt phẳng qua \(A=(0;0;0)\),\(B=(1;0;1)\),\(C=(0;1;1)\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P22; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 8.** Tính khoảng cách M=(1,1,1) đến P:2x−y+2z−6=0.
+**Câu 8.** Tính khoảng cách \(M=(1;1;1)\) đến \((P):2x-y+2z-6=0\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P24; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 9.** Đường qua P=(−1,2,0) hướng v=(0,3,−2). Viết phương trình tham số.
+**Câu 9.** Đường qua \(P=(-1;2;0)\) hướng \(\vec v=(0;3;-2)\). Viết phương trình tham số.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P29; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 10.** Phân loại d1(t)=(t,0,0), d2(s)=(0,s,2).
+**Câu 10.** Phân loại \(d_1(t)=(t;0;0)\), \(d_2(s)=(0;s;2)\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P35; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
 **Câu 11.** Một dây cáp có độ dời ngang 8 m, tăng cao 6 m. Tính sin góc cáp với nền và độ dài cáp.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-P40; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NEVER_OFFICIAL_RD1; NO_PRE_SUBMIT_KEY_RUBRIC_AI -->
-**Câu 12.** Mặt cầu tâm C=(0,0,1) bán kính 5, mặt z=4. Tính bán kính đường tròn thiết diện.
+**Câu 12.** Mặt cầu tâm \(C=(0;0;1)\) bán kính 5, mặt \(z=4\). Tính bán kính đường tròn thiết diện.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
