@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-G12-CHI-B01-C01",
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hàm f(x)=x² giảm trên khoảng nào trong (−∞,0), (0,+∞)?",
-    "answer_key": "Nghịch biến trên (−∞;0).",
-    "worked_solution": "(−∞,0): khi x tiến về 0 từ bên trái, giá trị x² giảm; trên (0,+∞) hàm tăng.",
+    "stem": "Hàm số \\(f(x)=x^2\\) nghịch biến trên khoảng nào trong hai khoảng \\((-\\infty;0)\\), \\((0;+\\infty)\\)?",
+    "answer_key": "Nghịch biến trên \\((-\\infty;0)\\).",
+    "worked_solution": "Nếu \\(x_1<x_2<0\\), thì \\(|x_1|>|x_2|\\), do đó \\(x_1^2>x_2^2\\). Khi biến tăng, giá trị hàm giảm. Trên \\((0;+\\infty)\\), bình phương tăng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-MONOTONICITY_MEANING"
@@ -68,7 +68,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f′ đổi dấu + sang − tại x=−1 và − sang + tại x=1. Xác định loại cực trị tại mỗi điểm nếu f liên tục và khả vi quanh chúng.",
     "answer_key": "Cực đại tại x=−1; cực tiểu tại x=1.",
-    "worked_solution": "Cực đại tại −1, cực tiểu tại 1; dấu đổi mới quyết định loại cực trị.",
+    "worked_solution": "Tại \\(x=-1\\), hàm tăng ở bên trái và giảm ở bên phải; vì hàm liên tục tại mốc nên đạt cực đại tại đó. Tại \\(x=1\\), hàm giảm rồi tăng nên đạt cực tiểu. Chưa có dữ kiện để tính giá trị hai cực trị.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-EXTREMA_SIGN_CHANGE"
@@ -100,7 +100,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f(x)=x³ có f′(0)=0. x=0 có là điểm cực trị không, vì sao?",
     "answer_key": "Không có cực trị tại x=0.",
-    "worked_solution": "Không; f′=3x²>0 ở hai phía (trừ x=0), nên hàm vẫn tăng qua x=0.",
+    "worked_solution": "\\(f'(x)=3x^2\\) dương trên cả hai khoảng hai bên 0. Hàm vẫn đồng biến qua 0; cũng có thể kiểm tra \\(f(-h)<f(0)<f(h)\\) với mọi \\(h>0\\). Vậy không có cực trị tại 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
@@ -164,7 +164,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho f′(x)=(x+1)(x−2) trên ℝ. Hãy nêu các khoảng tăng/giảm của f.",
     "answer_key": "Đồng biến trên (−∞;−1), (2;+∞); nghịch biến trên (−1;2).",
-    "worked_solution": "f′>0 khi x<−1 hoặc x>2, f′<0 khi −1<x<2 ⇒ tăng, giảm, tăng theo ba khoảng.",
+    "worked_solution": "Các mốc là \\(-1\\) và 2. Hai thừa số cùng dấu ngoài hai mốc nên tích dương; trái dấu giữa hai mốc nên tích âm. Vì vậy hàm đồng biến trên \\((-\\infty;-1)\\), \\((2;+\\infty)\\) và nghịch biến trên \\((-1;2)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-DERIVATIVE_SIGN"
@@ -324,7 +324,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hàm liên tục trên [−1,3] có chắc đạt GTNN và GTLN không?",
     "answer_key": "Có, đạt cả GTLN và GTNN.",
-    "worked_solution": "Có, bởi định lý giá trị cực trị trên đoạn đóng hữu hạn; chưa cần biết chúng ở điểm nào.",
+    "worked_solution": "Định lí về hàm liên tục trên đoạn đóng hữu hạn bảo đảm có ít nhất một điểm đạt GTLN và ít nhất một điểm đạt GTNN. Không nhất thiết đạt ở hai đầu mút; muốn biết vị trí phải có thêm thông tin.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-CLOSED_INTERVAL_EXISTENCE"
@@ -388,7 +388,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trên miền (0,+∞), f(x)=1/x có giá trị nhỏ nhất bằng 0 không?",
     "answer_key": "Không có GTNN; cũng không có GTLN trên (0;+∞).",
-    "worked_solution": "Không; mọi 1/x>0, lim∞=0 không đạt được; cũng không có GTLN vì không bị chặn trên gần 0+.",
+    "worked_solution": "Mọi \\(x>0\\) đều cho \\(f(x)>0\\), nhưng \\(\\lim_{x\\to+\\infty}f(x)=0\\). Với bất cứ \\(x>0\\), \\(f(2x)<f(x)\\), nên không có GTNN. Tương tự \\(f(x/2)>f(x)\\), nên cũng không có GTLN.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
@@ -420,7 +420,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tìm max/min g(x)=−x²+4x+2 trên [0,5], ghi cả điểm đạt.",
     "answer_key": "GTLN 6 tại x=2; GTNN −3 tại x=5.",
-    "worked_solution": "g'=−2x+4, c=2; g(0)=2, g(2)=6, g(5)=−3. Max=6 tại2, min=−3 tại5.",
+    "worked_solution": "Hàm liên tục trên đoạn. \\(g'(x)=-2x+4\\), bằng 0 tại \\(x=2\\). So sánh \\(g(0)=2,\\ g(2)=6,\\ g(5)=-3\\). Vậy GTLN bằng 6 tại 2, GTNN bằng -3 tại 5.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-CRITICAL_END_POINTS"
@@ -548,7 +548,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Vì sao f(x)=1/x trên [−1,1]\\{0} không được áp dụng định lý liên tục trên đoạn [−1,1]?",
     "answer_key": "Không áp dụng được vì hàm không xác định tại 0, không liên tục trên toàn đoạn [−1;1].",
-    "worked_solution": "Không xác định tại0, miền xét không phải toàn đoạn đóng [−1,1]; f không bị chặn gần 0 nên cũng không có min/max toàn miền.",
+    "worked_solution": "Định lí cần hàm xác định và liên tục trên toàn đoạn đóng. Điểm 0 không thuộc tập xác định, nên giả thiết không thỏa. Hơn nữa, \\(\\lim_{x\\to0^+}1/x=+\\infty\\) và \\(\\lim_{x\\to0^-}1/x=-\\infty\\), nên không có GTLN hoặc GTNN trên tập đã cho.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-CLOSED_INTERVAL_EXISTENCE"
@@ -644,7 +644,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f=1/(x+3). Điểm x=−3 có là tiệm cận đứng? Nêu giới hạn hai phía.",
     "answer_key": "lim x→−3⁻ f(x)=−∞; lim x→−3⁺ f(x)=+∞; tiệm cận đứng x=−3.",
-    "worked_solution": "lim x→−3− f=−∞, lim x→−3+ f=+∞; x=−3 là tiệm cận đứng.",
+    "worked_solution": "Tử số bằng 1, mẫu \\(x+3\\) tiến về 0. Khi \\(x\\to-3^-\\), mẫu âm nên giới hạn bằng \\(-\\infty\\); khi \\(x\\to-3^+\\), mẫu dương nên giới hạn bằng \\(+\\infty\\). Chỉ cần một giới hạn một phía vô cực đã đủ kết luận tiệm cận đứng \\(x=-3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-VERTICAL_ONE_SIDED"
@@ -708,7 +708,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f=(x²−9)/(x−3) có tiệm cận đứng x=3 không?",
     "answer_key": "Không; giới hạn bằng 6, đồ thị thiếu điểm (3;6).",
-    "worked_solution": "Không; x≠3, f=x+3; lim x→3 f=6, chỉ là lỗ tại (3,6).",
+    "worked_solution": "Với \\(x\\ne3\\), phân tích tử và rút gọn được \\(f(x)=x+3\\). Vì \\(\\lim_{x\\to3}f(x)=6\\) hữu hạn, không có tiệm cận đứng ở 3. Đồ thị là đường thẳng \\(y=x+3\\) bỏ điểm \\((3;6)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-REMOVABLE_DISCONTINUITY"
@@ -740,7 +740,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f=(2x−1)/(x+2). Tìm tiệm cận ngang.",
     "answer_key": "Tiệm cận ngang y=2.",
-    "worked_solution": "Chia 2−5/(x+2) nên y=2.",
+    "worked_solution": "Chia tử cho mẫu: \\(f(x)=2-\\frac5{x+2}\\) với \\(x\\ne-2\\). Khi \\(x\\to\\pm\\infty\\), phân số tiến về 0. Vậy \\(y=2\\) là tiệm cận ngang ở cả hai phía.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-HORIZONTAL_LIMIT"
@@ -772,7 +772,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "g=(x+1)/(x−2). Tính giới hạn một bên khi x→2±.",
     "answer_key": "lim x→2⁻ g(x)=−∞; lim x→2⁺ g(x)=+∞.",
-    "worked_solution": "Tử gần3>0, mẫu âm/dương nên lim 2−=−∞, 2+=+∞; x=2 tiệm cận đứng.",
+    "worked_solution": "Khi \\(x\\to2\\), tử tiến tới 3 dương. Mẫu \\(x-2\\) âm và tiến về 0 từ trái nên giới hạn là \\(-\\infty\\); từ phải mẫu dương nên giới hạn là \\(+\\infty\\). Do đó \\(x=2\\) là tiệm cận đứng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-VERTICAL_ONE_SIDED"
@@ -836,7 +836,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f(x)=1/sqrt(x−1), D=(1,+∞). x=1 có là tiệm cận đứng dù không thể xét từ bên trái?",
     "answer_key": "Có, x=1 là tiệm cận đứng vì giới hạn bên phải bằng +∞.",
-    "worked_solution": "Có, lim x→1+=+∞ đủ để kết luận; chỉ dùng giới hạn trong D.",
+    "worked_solution": "Miền xác định chỉ có \\(x>1\\). Khi \\(x\\to1^+\\), \\(\\sqrt{x-1}\\) dương và tiến về 0, nên \\(f(x)\\to+\\infty\\). Một giới hạn một phía vô cực là đủ; không cần xét phía nằm ngoài miền xác định.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-DOMAIN_SIDED_LIMITS"
@@ -868,7 +868,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "k=(x²−4)/(x−2), x≠2. Vẽ mô tả đồ thị có nên vẽ chấm đặc tại (2,4)?",
     "answer_key": "Không vẽ chấm đặc; đồ thị là đường y=x+2 bỏ điểm (2;4).",
-    "worked_solution": "Không. k=x+2 chỉ khi x≠2; (2,4) là lỗ, không có tiệm cận đứng.",
+    "worked_solution": "Với \\(x\\ne2\\), \\(k(x)=x+2\\). Tuy nhiên biểu thức ban đầu không xác định tại 2, nên điểm \\((2;4)\\) phải được bỏ khỏi đồ thị, không vẽ chấm đặc.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-REMOVABLE_DISCONTINUITY"
@@ -900,7 +900,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Với f=3+7/(x−2), nhánh phải x>2 nằm trên hay dưới y=3? Nhánh trái?",
     "answer_key": "Nhánh phải ở trên y=3; nhánh trái ở dưới y=3.",
-    "worked_solution": "x>2 ⇒ 7/(x−2)>0 ⇒ trên; x<2 ⇒ dưới. Không cần vẽ thêm đường sai.",
+    "worked_solution": "So sánh tung độ với đường thẳng \\(y=3\\) bằng hiệu \\(f(x)-3=\\frac7{x-2}\\). Hiệu dương khi \\(x>2\\) (nhánh trên), âm khi \\(x<2\\) (nhánh dưới).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-GRAPH_INTERPRETATION"
@@ -995,8 +995,8 @@
     "item_id": "THPT-G12-CHI-B04-C01",
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Khi khảo sát f=(x+1)/(x−2), cần xác định D trước hay giao Ox trước, vì sao?",
-    "answer_key": "Xác định D=ℝ\\{2} trước.",
-    "worked_solution": "D=ℝ\\{2} trước; điểm không thuộc D không thể vẽ thành điểm trên đồ thị hoặc cực trị.",
+    "answer_key": "Xác định tập xác định trước: \\(D=\\mathbb R\\setminus\\{2\\}\\).",
+    "worked_solution": "Mẫu bằng 0 tại 2 nên phải loại điểm này. Sau đó mới tìm giao với các trục, cực trị và giới hạn trên từng khoảng của miền. Một nghiệm của phương trình tìm giao điểm chỉ được nhận nếu thuộc miền xác định.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-SURVEY_WORKFLOW"
@@ -1060,7 +1060,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "g=(x+2)/(x−1), xác định các khoảng giảm.",
     "answer_key": "Nghịch biến trên (−∞;1) và (1;+∞).",
-    "worked_solution": "g'=−3/(x−1)²<0; giảm riêng trên (−∞,1) và (1,+∞).",
+    "worked_solution": "\\(g'(x)=-\\frac3{(x-1)^2}<0\\) với \\(x\\ne1\\). Theo dấu đạo hàm, hàm nghịch biến riêng trên \\((-\\infty;1)\\) và \\((1;+\\infty)\\); không ghép qua điểm bị loại.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-RATIONAL_VARIATION"
@@ -1348,7 +1348,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Người học vẽ y=x³−3x² đi từ +∞ ở x→−∞ và tăng liên tục tới +∞. Chỉ ra hai lỗi từ dữ liệu khảo sát.",
     "answer_key": "Khi x→−∞, y→−∞; hàm nghịch biến trên (0;2), không đồng biến toàn ℝ.",
-    "worked_solution": "lim x→−∞ =−∞ (không phải +∞); y'<0 trên (0,2) nên không tăng liên tục.",
+    "worked_solution": "Hệ số bậc ba dương nên \\(\\lim_{x\\to-\\infty}(x^3-3x^2)=-\\infty\\), không phải \\(+\\infty\\). Đạo hàm \\(y'=3x(x-2)\\) âm trên \\((0;2)\\), nên đồ thị đi xuống từ cực đại đến cực tiểu; không tăng liên tục.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-SURVEY_WORKFLOW"
@@ -1412,7 +1412,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "s(t)=t²−4t+5 m, t≥0 s. Vận tốc/tốc độ tại t=1?",
     "answer_key": "Vận tốc −2 m/s (chiều âm); tốc độ 2 m/s.",
-    "worked_solution": "v=2t−4, v(1)=−2 m/s; tốc độ 2 m/s, chiều âm.",
+    "worked_solution": "\\(v(t)=s'(t)=2t-4\\), do đó \\(v(1)=-2\\) m/s. Dấu âm chỉ chiều chuyển động ngược chiều dương; tốc độ là độ lớn của vận tốc, bằng 2 m/s.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-MOTION_SPEED_ACCELERATION"
@@ -1604,7 +1604,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tối đa hóa f(x)=−x²+8x−3, 0≤x≤6.",
     "answer_key": "GTLN 13 tại x=4.",
-    "worked_solution": "f'=−2x+8, x=4 cho f=13; f(0)=−3, f(6)=9; max13 tại4.",
+    "worked_solution": "Hàm liên tục trên \\([0;6]\\). Hoàn thành bình phương: \\(f(x)=13-(x-4)^2\\le13\\). Dấu bằng khi \\(x=4\\), thuộc đoạn đã cho. Vậy GTLN bằng 13.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-OPTIMIZATION_DERIVATIVE"
@@ -1668,7 +1668,7 @@
     "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Nếu diện tích A(x) đo bằng m² và x bằng m, đơn vị A'(x) là gì? Có được gọi A' là vận tốc không?",
     "answer_key": "Đơn vị m; không phải vận tốc vì x không phải thời gian.",
-    "worked_solution": "m²/m=m; đó là độ nhạy diện tích theo độ dài, **không** là vận tốc nếu x không phải thời gian.",
+    "worked_solution": "Đạo hàm theo độ dài có đơn vị \\(\\mathrm{m}^2/\\mathrm m=\\mathrm m\\). Nó đo mức thay đổi diện tích khi độ dài thay đổi, không phải vận tốc vì biến độc lập không phải thời gian.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-UNIT_ASSUMPTION_CHECK"
