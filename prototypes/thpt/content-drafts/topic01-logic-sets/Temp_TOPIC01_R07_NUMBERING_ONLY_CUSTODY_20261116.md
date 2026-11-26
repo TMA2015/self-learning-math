@@ -1,3 +1,6 @@
+<!-- TOP01_WORK1109_CURRENT_CUSTODY -->
+**CURRENT AUTHORING 26/11:** source `e93f1253ac0acb3e19547665a67d64344527e601`, Q18 `36e61918b988f287edb68d628df2a2451bc9f2e4`, X-G.5 v3.2.0 and Work A01–A03 source-verified. Existing 24 item IDs/11 Replay/2 rubric weights preserved, 36 disclosures, original bank and two visuals unchanged; third SVG `f405493bc6eefedc2106bb93316d981eb36931ce` at `prototypes/thpt/visuals/THPT_TOPIC01_INTERVAL_INTERSECTION_UNION.svg`. Existing S1 scope inherited; no fresh PDF scan or independent NotebookLM verdict. Historical sections below not current. No RELEASE authorization.
+
 <!-- TOP01_MASTER974_CANONICAL_DEPTH_GAP_CLOSED_20261121 -->
 **Current scoped AUTHORING verification:** source `9271a9784e343ea87981a67dae7dabcf69e4c0ed`, existing self-Q18 receipt `e5cccc6d98bf3ce5244114752075f74a3389c46b`. Verified 18 SGK + 6 Topic original canonical stems/solutions and both Written rubrics. Added 3 explicit learner answer conclusions matching original canonical + 1 optional public selfcheck `Đối chiếu` mapping 11 questions to existing Practice answers; 36 opt-in disclosure blocks total. This is a targeted pedagogical improvement, **not** a new bank, duplicate learner, independent NotebookLM full PASS, or website release. Older snapshots and SHA in historical sections below remain historical.
 
@@ -13,15 +16,15 @@ Original G10/Topic bank keys exact 10/10, visible only inside optional answer di
 # CĐ1 R07 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 9271a9784e343ea87981a67dae7dabcf69e4c0ed
+CURRENT_SOURCE_BLOB: e93f1253ac0acb3e19547665a67d64344527e601
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_10_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
-CURRENT_Q18_RECEIPT_BLOB: e5cccc6d98bf3ce5244114752075f74a3389c46b
+CURRENT_Q18_RECEIPT_BLOB: 36e61918b988f287edb68d628df2a2451bc9f2e4
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
 PREVIOUS_AUTHOR_METADATA_BLOB: 0bf738b497b1b893ac90c3b82f758f661c0cf05c
-AUTHORING_STATUS: R07_LOGIC_SET_RECAP_TARGETED_Q18_AUTHOR_SELF_VERIFIED
+AUTHORING_STATUS: WORK1109_XG5_TARGETED_AUTHOR_SELF_VERIFIED
 RELEASE_AUTHORIZATION: NO
 
 Original A1–A7/SGK/outcome/item source matrix below is inherited **unaltered**; only current learner snapshot formatting and Q18 source custody above changed. User-facing headings are now page H1, numbered group H2 and child H3, with Practice Bài labels not H4. Old author metadata Git blob `0bf738b497b1b893ac90c3b82f758f661c0cf05c` and old academic source/Q18 remain immutable. No independent reviewer claim or RELEASE approval.
