@@ -193,11 +193,36 @@ if "--back-top-only" in sys.argv:
                 expect(tabs.first).to_be_visible(timeout=20000)
                 selected=lambda:page.locator('.thpt-r4-knowledge-tab[aria-selected="true"]').evaluate_all("(els)=>els.map(e=>e.getAttribute('aria-controls'))")
                 active=selected()
-                # Scroll down then up, matching Material's native show-on-upscroll.
-                page.evaluate("window.scrollTo(0,document.documentElement.scrollHeight)")
-                page.wait_for_timeout(400)
-                page.evaluate("window.scrollBy(0,-160)")
-                expect(top).to_be_visible(timeout=10000)
+                # Material shows the native control only on an up-scroll at y>0.
+                # Wait for its actual viewport stream, then use two settled scroll
+                # positions within the reading area (not a changing footer/end).
+                page.wait_for_function("typeof window.viewport$?.subscribe === 'function'")
+                page.evaluate("""() => {
+                  window.__r3ViewportOffsets=[];
+                  window.viewport$.subscribe(v=>window.__r3ViewportOffsets.push(v.offset.y));
+                }""")
+                page.wait_for_function("window.__r3ViewportOffsets.length>0 && document.documentElement.scrollHeight-innerHeight>=240")
+                down=page.evaluate("""() => {
+                  const max=document.documentElement.scrollHeight-innerHeight;
+                  const y=Math.min(800,max-8);
+                  window.scrollTo({top:y,behavior:'instant'});
+                  return y;
+                }""")
+                page.wait_for_function("y=>Math.abs(scrollY-y)<3 && Math.abs(window.__r3ViewportOffsets.at(-1)-y)<3",arg=down)
+                page.wait_for_timeout(350)
+                up=down-100
+                page.evaluate("y=>window.scrollTo({top:y,behavior:'instant'})",up)
+                page.wait_for_function("y=>Math.abs(scrollY-y)<3 && Math.abs(window.__r3ViewportOffsets.at(-1)-y)<3",arg=up)
+                try:
+                    expect(top).to_be_visible(timeout=10000)
+                except AssertionError:
+                    print("R3_NATIVE_VISIBILITY_HOLD",engine,width,topic,top.evaluate("""e=>({
+                      y:scrollY,offsets:window.__r3ViewportOffsets.slice(-20),
+                      mainTop:document.querySelector('main')?.offsetTop,
+                      hidden:e.hidden,inline:e.getAttribute('style'),
+                      visibility:getComputedStyle(e).visibility,display:getComputedStyle(e).display
+                    })"""),flush=True)
+                    raise
                 for theme in ("default","slate"):
                     page.locator("body").evaluate("(e,t)=>e.setAttribute('data-md-color-scheme',t)",theme)
                     geo=top.evaluate("""e=>{
