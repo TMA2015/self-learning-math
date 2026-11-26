@@ -694,6 +694,12 @@ function proveTopic01Refresh(){
  const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"}),base=process.env.BASE_SHA;
  assert.equal(base,"360ee2737c86f59fa16a7ecdcd8951e2686f3c96","CĐ01 refresh base must match published snapshot");
  assert(isExactTopic01Refresh(git("diff","--no-renames","--name-only",base,"HEAD").trim().split("\n")),"CĐ01 exact scope HOLD");
+ const helper="docs/assets/javascripts/math-details-v1.js";
+ const before=git("show",base+":"+helper),candidate=fs.readFileSync(helper,"utf8");
+ const oldRoute=' if(!/\\/thpt-preview\\/chuyen-de\\/cd(?:0[1-9]|1[0-9]|2[0-2])\\/kien-thuc\\/(?:index\\.html)?$/.test(location.pathname))return;';
+ const newRoute=' // Extend the existing helper only to the two CĐ01 public replay/formative routes.\n if(!/\\/thpt-preview\\/chuyen-de\\/cd(?:0[1-9]|1[0-9]|2[0-2])\\/kien-thuc\\/(?:index\\.html)?$/.test(location.pathname)&&\n    !/\\/thpt-preview\\/chuyen-de\\/cd01\\/(?:luyen-tap|tu-kiem-tra)\\/(?:index\\.html)?$/.test(location.pathname))return;';
+ assert(candidate.includes(newRoute),"Exact CĐ01-only helper route guard missing");
+ assert.equal(candidate.replace(newRoute,oldRoute),before,"Unrelated shared MathJax/SGK/THCS implementation changed");
  cp.execFileSync("node",["scripts/test-thpt-topic01-release-intake.cjs"],{stdio:"inherit"});
  cp.execFileSync("node",["--check","docs/assets/javascripts/thpt-topic01-release-tabs-v1.js"],{stdio:"inherit"});
  cp.execFileSync("node",["--check","docs/assets/javascripts/math-details-v1.js"],{stdio:"inherit"});
@@ -993,7 +999,9 @@ function selfTest(){
  assert.equal(classify([...menu6,"mkdocs.yml"]).impact,"FULL");
  assert.equal(classify(menu6,{manual:true}).impact,"FULL");
  const topicDisclosures=[...TOPIC_DISCLOSURE_FILES];
- if(fs.readFileSync("docs/assets/javascripts/math-details-v1.js","utf8").includes("function splitSGKDisclosure"))assert.equal(classify(topicDisclosures).reason,"OWNER_TOPIC_SGK_DISCLOSURES");
+ // Historical exact-blob fixtures must reject later renderer revisions, even when the old function survives.
+ if(isExactTopicDisclosures(topicDisclosures))assert.equal(classify(topicDisclosures).reason,"OWNER_TOPIC_SGK_DISCLOSURES");
+ else assert.equal(classify(topicDisclosures).impact,"FULL","Historical disclosure fixture cannot authorize a different renderer blob");
  assert.equal(classify([...topicDisclosures,"mkdocs.yml"]).impact,"FULL");
  assert.equal(classify(topicDisclosures,{manual:true}).impact,"FULL");
  const rw3Tabs=[...RW3_TAB_FILES];
