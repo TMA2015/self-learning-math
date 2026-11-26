@@ -18404,6 +18404,52 @@
       "review_scope": "Scoped math/source/local task comparison and D6 link resolution; no fresh primary PDF, Written rubric audit or full global duplicate scan. No bank-wide Academic/PED PASS.",
       "remaining": "CD08–13 remaining 136 blocks; existing skill mapping, shared placement integration, global uniqueness and Practice/Replay parity, depth/Written/SGK",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp74": {
+      "scope": "CD08 current learner unkeyed Vận dụng; compared CD08 Practice and G11 ChV formative and related SGK Written stems; Topic Written full comparison pending",
+      "baseline_commit": "385dd4f2c4ef77d7b69dff585a3d968bfd4574b7",
+      "item_commit": "cb0e607c3527cef0279ff16d238d45f274c897b6",
+      "placement_commit": "9d98ca524ddae1fdf0b8e3f3476129375a515056",
+      "sources": [
+        {
+          "topic": "CD08",
+          "learner_blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+          "blocks": 18,
+          "added": 18,
+          "reused": 0
+        }
+      ],
+      "reuse_note": "No identical formative task found in CD08 and G11 ChV; CD08 KFT14 changes the value and asks classification rather than SGK C02 yes/no; KFT17 differs from SGK B17-P03 radicand. Topic Written full stem comparison and global collision scan pending.",
+      "academic_changes": [
+        "KFT02 correct feedback to actual unbounded alternating sequence; KFT03 justify growth by q>1; KFT04 nonzero denominator; KFT05 specify geometric series and convergence condition; KFT07 distinguish |x| branches; KFT11 clarify domain and conjugate; KFT12 require x<-6 and positive conjugate; KFT17–18 specify equation and existence/bracketing."
+      ],
+      "checks": {
+        "item_shard_after": "752a3724a459a65be18be841f81657bce9c0e8f9",
+        "placement_shard_after": "a3f6c08854b15cdba155ebce165af6820a252b8c",
+        "existing_records_unchanged": 269,
+        "existing_first_try_placements_unchanged": 278,
+        "new_items": 18,
+        "new_placements": 18,
+        "unique_item_shard_records": 287,
+        "exact_one_new_item_placement": 18,
+        "d6_order_and_written_reference_resolved": 18,
+        "d6_self_reference_absent": 18,
+        "inline_and_display_math_delimiters_balanced_new_items": 18,
+        "auto_grade_false": 18,
+        "skill_tags_missing_new_items": 0
+      },
+      "progress": {
+        "topic_first_try_placements": 296,
+        "distinct_topic_first_try_shard_records": 287,
+        "total_inventoried_topic_first_try_blocks": 414,
+        "pending": 118,
+        "projected_bank_total_ids": 2429,
+        "projected_total_placements": 4047,
+        "counts_note": "CP73 projected 2411/4029 +18/+18; not fresh global scan"
+      },
+      "review_scope": "Scoped source, math, formative task comparison, D6 link resolution; no fresh primary SGK/SBT PDF or Written rubric audit, no full bank Academic/PED PASS.",
+      "remaining": "CD09–13 remaining 118 blocks; 18 missing skill tags CP71–72, full Practice/Replay field reconciliation, shared placements/depth/Written/SGK, global scan",
+      "release_authorization": false
     }
   }
 }
