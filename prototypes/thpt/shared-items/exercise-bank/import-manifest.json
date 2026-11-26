@@ -17982,6 +17982,47 @@
       "progress_existing_first_try": "157/170 reconciled (CP65 five preserved, CP66 25, CP67 66, CP68 61); CD22 13 remaining",
       "remaining": "CD22 13 existing FirstTry, then CD01–13 local FirstTry; full Practice/Replay field parity, shared placements/depth, Written provenance/rubric and SGK follow-up",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp69": {
+      "scope": "CD22 public Knowledge FirstTry plus structural/source/D6 regression of all 170 existing CD14–22 FirstTry",
+      "baseline_commit": "e9d1d295b34721a287b5b1f5022e269dd8bb7915",
+      "item_commit": "42f81d9045ef510a052893e4088d835d0f80612a",
+      "item_shard": {
+        "path": "items/topic-knowledge-first-try.json",
+        "before": "fc84ecf71227cd2c34aa68c6638f4e9220d62c8e",
+        "after": "bdd98107ac5595a97f29f4630e3ccfea2aa5d059"
+      },
+      "sources": [
+        {
+          "topic": "CD22",
+          "old": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
+          "current": "f1a059fc6366d2e4bb044edd696154a0b6799d4d",
+          "first_try": 13,
+          "updated": 13,
+          "old_stem_matches": 10,
+          "old_solution_matches": 5
+        }
+      ],
+      "checks": {
+        "readback_changed_records": 13,
+        "readback_unchanged_records": 157,
+        "unique_first_try_ids": 170,
+        "first_try_placements_exact_one": 170,
+        "first_try_placement_blob_unchanged": "eb32ea775a8ca9242e6b052163f6fc1fcf829426",
+        "current_source_blob_match": 170,
+        "d6_order_written_reference_resolved": 170,
+        "inline_math_delimiters_balanced": 170,
+        "auto_grade_false": 170
+      },
+      "academic_changes": [
+        "T02 correct stale mode key 3 to 1; T07 correct stale weighted mean 15 to 17.5 and cumulative frequencies 1,3,4 to 1,2,4.",
+        "T05 explicitly provide original samples and show variance translation invariance; T10 adopt empty-leading-group task and distinguish grouped/raw range; T11 supply comparison data and full interpolation; T13 explicit group intervals and limits of recommendation; preserve stronger solutions on relative error, quartiles, grouped interpolation and mode.",
+        "T12 explicit frequency weights; standalone context for T05,T11,T13; mathematical answers aligned to current tasks."
+      ],
+      "review_scope": "Scoped math reconciliation of CD22; all 170 source pointers, unique IDs, placement existence, D6 order/Written reference existence, delimiter pairing and interaction invariants checked, not fresh full mathematical re-audit of prior 157 or Written rubric/SGK PDF review",
+      "progress_existing_first_try": "170/170 CD14–22 existing FirstTry reconciled; CD01–13 local FirstTry inventory remains",
+      "remaining": "Inventory CD01–13 public local FirstTry for existing IDs and source ownership before importing; full Practice/Replay field parity, shared placements/depth, Written provenance/rubric and SGK follow-up",
+      "release_authorization": false
     }
   }
 }
