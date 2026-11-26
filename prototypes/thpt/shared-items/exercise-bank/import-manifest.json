@@ -18864,6 +18864,93 @@
       },
       "remaining": "CD07–22, shared SGK and Written source deltas, 19 FirstTry missing skill mappings plus existing legacy gaps, global scan, depth audit and interaction conversion.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp79": {
+      "scope": "CD07–09 scoped Practice/Replay delta reconciliation with CP54–56, current exact learner, old projection and candidate local records; targeted verified shared explanation correction.",
+      "baseline_commit": "12a6db2b28b395d52c9e979fe5e435dd84f110e1",
+      "local_item_commit": "bf9cb9392f818491c46fbf0a0d93b8c71ebfd2b2",
+      "shared_item_commit": "a3b744ec4b4d67fe9681b806508a605742488533",
+      "topics": [
+        {
+          "topic": "CD07",
+          "practice": 69,
+          "replay": 18,
+          "local_records": 18,
+          "prior_candidate_improvements_preserved": 6,
+          "latest_learner_commit": "b73c6bea5eb02508c26faa089e9b43700f5550b0",
+          "latest_learner_blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+          "prior_projection_blob": "6dc4c5a5b2da6056182c70cad07ef3a524b20ace",
+          "before": "07781bf11eac3f4d7c5b3bc64c05d4608b8ecce9",
+          "after": "2f2ef8483a62e39a434044b05df4c7e0675907fb",
+          "placement_blob": "6aa535191c10e5cd25e64cef75440a3ba9a00794"
+        },
+        {
+          "topic": "CD08",
+          "practice": 58,
+          "replay": 18,
+          "local_records": 18,
+          "prior_candidate_improvements_preserved": 5,
+          "latest_learner_commit": "b3d22f4d9524f812d4e92584f379f3b0575f48ed",
+          "latest_learner_blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+          "prior_projection_blob": "bef2e32b6bafb396659b5b899108b6d5f344731a",
+          "before": "29a8adeb6ed89ba110cb68885c16d27865b1a586",
+          "after": "dc90a8c7c46491eafaa239fedad0657dbf747f64",
+          "placement_blob": "397aa8601b45f6740408b192319e972a1a4138e6"
+        },
+        {
+          "topic": "CD09",
+          "practice": 108,
+          "replay": 32,
+          "local_records": 32,
+          "prior_candidate_improvements_preserved": 8,
+          "latest_learner_commit": "7696b705c52a0d14d453083730cc9e0f9f3b2a9f",
+          "latest_learner_blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+          "prior_projection_blob": "09c9a9f220c076add7512d0cc0a2316217bf9aa9",
+          "before": "152dcb9c24d9ffd655896fdef77fb5055903efa7",
+          "after": "350c8687764bed8cd29c1876045e1863fcd3faa0",
+          "placement_blob": "cf15dad3c0749780420e036d8cead61344e03e6a"
+        }
+      ],
+      "checks": {
+        "practice": 235,
+        "replay": 68,
+        "current_learner_replay_stem_options_match": 68,
+        "placement_order_match": 303,
+        "local_records_updated": 68,
+        "source_equivalent_direct": 49,
+        "prior_candidate_improvements_preserved": 19,
+        "local_metadata_unchanged": true,
+        "local_inline_delimiters_balanced": true,
+        "local_self_compare_unchanged": true,
+        "written_placements_unchanged": 35,
+        "shared_formative_placements": 132,
+        "shared_records_corrected": 1,
+        "other_shared_reconciliation_pending": true
+      },
+      "shared_correction": {
+        "item_id": "THPT-G11-CHV-B15-P04",
+        "before": "9f7f2a7343048004cac155a1d31c7a9df5ec0a87",
+        "after": "9da6c315018b7fba57303fefd8668ec583ec57fa",
+        "issue": "CD08 B9 existing wording misleadingly contrasts sqrt(n²) with |n| for negative n; exact source and candidate reproduced.",
+        "fix": "sqrt(n²)=|n| for all real n; |n|=n when n>0 and -n when n<0. Correct limit 1 retained. No ID/key/hint/remediation/mode change.",
+        "readback_other_records_unchanged": 31
+      },
+      "findings": [
+        "CD07 retained rigorous AP/GP proof, capacity, q=1, signed remainder and >= vs > threshold variants.",
+        "CD08 retained strict n=41, unequal-degree limit, two infinity directions, removable vs jump, existence and uniqueness variants.",
+        "CD09 retained average velocity vs motion, unequal one-sided derivative, trig variant, signed velocity, Vietnamese terminology and exact endpoint quotient. CD09 P32 skill ID remains pending.",
+        "Prior CP54–56 Written pointer, rubric and unit findings remain for canonical Written closure. Current learner replay equality is not full candidate parity for stronger variants."
+      ],
+      "progress": {
+        "topics_with_scoped_practice_replay_review": 9,
+        "total_topics": 22,
+        "practice_reviewed": 507,
+        "total_practice": 1479,
+        "replay_reviewed": 158,
+        "total_replay": 338
+      },
+      "remaining": "CD10–22, shared SGK and Written reconciliation, skill tags, global checks, depth and interaction conversion; no fresh primary PDF or bank-wide Academic/PED PASS.",
+      "release_authorization": false
     }
   }
 }
