@@ -4,14 +4,21 @@ import functools
 import http.server
 import pathlib
 import threading
+import sys
 from playwright.sync_api import sync_playwright, expect
 
 ROOT=pathlib.Path(__file__).resolve().parent.parent
-BUILD=ROOT/"site-thpt-preview"
+REFRESH="--refresh" in sys.argv
+BUILD=ROOT/("site" if REFRESH else "site-thpt-preview")
 assert BUILD.is_dir()
-server=http.server.ThreadingHTTPServer(("127.0.0.1",0),functools.partial(http.server.SimpleHTTPRequestHandler,directory=str(BUILD)))
+class ProjectHandler(http.server.SimpleHTTPRequestHandler):
+ def translate_path(self,p):
+  prefix="/self-learning-math"
+  if REFRESH and p.startswith(prefix+"/"): p=p[len(prefix):]
+  return super().translate_path(p)
+server=http.server.ThreadingHTTPServer(("127.0.0.1",0),functools.partial(ProjectHandler,directory=str(BUILD)))
 threading.Thread(target=server.serve_forever,daemon=True).start()
-BASE=f"http://127.0.0.1:{server.server_address[1]}/thpt-preview/chuyen-de/cd01/"
+BASE=f"http://127.0.0.1:{server.server_address[1]}"+("/self-learning-math" if REFRESH else "")+"/thpt-preview/chuyen-de/cd01/"
 with sync_playwright() as pw:
  for engine in ("chromium","webkit"):
   browser=getattr(pw,engine).launch(headless=True)
@@ -74,7 +81,7 @@ with sync_playwright() as pw:
        overflow=p.evaluate("""() => ({scroll:document.documentElement.scrollWidth,viewport:innerWidth, elements:[...document.querySelectorAll('body *')].filter(e=>{const r=e.getBoundingClientRect(),style=getComputedStyle(e);return r.right>innerWidth+2&&style.display!=='none'&&style.visibility!=='hidden'&&r.width>0}).slice(0,14).map(e=>({tag:e.tagName,class:e.className?.toString().slice(0,100),right:Math.round(e.getBoundingClientRect().right),width:Math.round(e.getBoundingClientRect().width),text:e.textContent.slice(0,48)}))})""")
        assert overflow["scroll"]<=overflow["viewport"]+1,(engine,width,"viewport overflow",overflow)
      assert p.locator("article.md-typeset").evaluate("(e)=>parseFloat(getComputedStyle(e).fontSize)")==p.evaluate("parseFloat(getComputedStyle(document.documentElement).fontSize)*.8")
-     for name in ("THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg","THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg"):
+     for name in ("THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg","THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg","THPT_TOPIC01_INTERVAL_INTERSECTION_UNION.svg"):
       img=p.locator("img[src*='"+name+"']")
       expect(img).to_have_count(1)
       assert p.request.get(img.evaluate("(e)=>e.src")).ok
