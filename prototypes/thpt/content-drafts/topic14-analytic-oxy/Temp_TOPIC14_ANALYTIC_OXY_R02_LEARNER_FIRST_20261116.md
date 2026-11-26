@@ -395,7 +395,7 @@ Chỉ dùng công thức này **sau khi đã chuẩn hóa** hai phương trình 
 
 **Đề bài:** Tính khoảng cách từ \(P(1;2)\) đến đường \(d:3x+4y-10=0\).
 
-**Lời giải:** Pháp tuyến \((3;4)\ne\vec0\) có độ dài 5. Vậy \(d(P;d)=\frac{|3\cdot1+4\cdot2-10|}5=\frac{|1|}5=\frac15\). Trị tuyệt đối giữ kết quả không âm.
+**Lời giải:** Pháp tuyến \((3;4)\ne\vec0\) có độ dài 5. Vậy \(d(P,d)=\frac{|3\cdot1+4\cdot2-10|}5=\frac{|1|}5=\frac15\). Trị tuyệt đối giữ kết quả không âm.
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-T11; PRIMARY_OUTCOME: TOP14-O11; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Vận dụng**
@@ -595,7 +595,7 @@ Không cần giải một phương trình bậc hai ngay để biết có bao nh
 
 Khoảng cách từ tâm đến đường cho biết nó ở ngoài, tiếp xúc hay đi qua hình tròn; tìm tọa độ giao lại cần giải phương trình.
 
-> **TÍNH CHẤT — Đường thẳng và đường tròn: số giao điểm.** Với đường tròn tâm I, \(R>0\) và đường d, đặt \(\delta=d(I;d)\): nếu \(\delta>R\) thì 0 giao; \(\delta=R\) có 1 tiếp điểm; \(\delta<R\) có 2 giao điểm. Khi cần **tọa độ giao**, thế phương trình đường vào phương trình đường tròn và giải; số nghiệm thực tương ứng 0, 1 hoặc 2 điểm. Không dùng \(\delta\) để suy tọa độ cụ thể.
+> **TÍNH CHẤT — Đường thẳng và đường tròn: số giao điểm.** Với đường tròn tâm I, \(R>0\) và đường d, đặt \(\delta=d(I,d)\): nếu \(\delta>R\) thì 0 giao; \(\delta=R\) có 1 tiếp điểm; \(\delta<R\) có 2 giao điểm. Khi cần **tọa độ giao**, thế phương trình đường vào phương trình đường tròn và giải; số nghiệm thực tương ứng 0, 1 hoặc 2 điểm. Không dùng \(\delta\) để suy tọa độ cụ thể.
 
 **Ví dụ**
 
@@ -617,7 +617,7 @@ Khoảng cách từ tâm đến đường cho biết nó ở ngoài, tiếp xúc
 
 **Kiểm lỗi**
 
-Nếu tính hai giao điểm khi đường chỉ tiếp xúc, đọc **Kiến thức 3.5**. Làm **Bài luyện 49** và **Bài luyện 63**, so \(d(I;d)\) với R; tiếp xúc chỉ có một điểm.
+Nếu tính hai giao điểm khi đường chỉ tiếp xúc, đọc **Kiến thức 3.5**. Làm **Bài luyện 49** và **Bài luyện 63**, so \(d(I,d)\) với R; tiếp xúc chỉ có một điểm.
 
 </details>
 
@@ -935,7 +935,7 @@ Lập phương trình, kiểm điểm thuộc đường và đặt điều kiệ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \(T(t)=20-3t\), \(t=3\) giờ. Lời giải: Độ dốc \((5-20)/(5-0)=-3\), nên \(T=20-3t\); giải \(20-3t=11\) cho \(t=3\), thuộc miền.
+Đáp án: \(T(t)=20-3t\), \(t=3\) giờ. Lời giải: Độ dốc \(\frac{5-20}{5-0}=-3\), nên \(T=20-3t\); giải \(20-3t=11\) cho \(t=3\), thuộc miền.
 
 **Nếu làm sai:** Tìm hệ số góc theo hai điểm và nhớ miền thực tế.
 
@@ -1197,7 +1197,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \(d(P,d)=2\). Lời giải: \(\dfrac{|3\cdot1+4(-2)-5|}{\sqrt{3^2+4^2}}=\dfrac{10}{5}=2\).
+Đáp án: \(d(P,d)=2\). Lời giải: \(\frac{|3\cdot1+4(-2)-5|}{\sqrt{3^2+4^2}}=\frac{10}{5}=2\).
 
 **Nếu làm sai:** Tử là trị tuyệt đối; mẫu là độ dài vectơ pháp tuyến.
 
@@ -1208,7 +1208,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \(45^\circ\). Lời giải: Pháp tuyến \((1;-1)\), \((1;0)\) có \(|\cos\varphi|=1/\sqrt2\). Do đó góc nhọn là \(45^\circ\).
+Đáp án: \(45^\circ\). Lời giải: Pháp tuyến \((1;-1)\), \((1;0)\) có \(|\cos\varphi|=\frac1{\sqrt2}\). Do đó góc nhọn là \(45^\circ\).
 
 **Nếu làm sai:** Dùng giá trị tuyệt đối trong công thức góc giữa hai đường.
 
@@ -1230,7 +1230,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \(m=-2\). Lời giải: Hai pháp tuyến cùng phương khi \((m+1,2)=\lambda(3,-6)\). Từ \(2=-6\lambda\) có \(\lambda=-1/3\), suy ra \(m+1=-1\), \(m=-2\). Khi đó \(d_1:-x+2y-1=0\); nhân với \(-3\) được \(3x-6y+3=0\ne d_2\), nên hai đường song song phân biệt.
+Đáp án: \(m=-2\). Lời giải: Hai pháp tuyến cùng phương khi \((m+1,2)=\lambda(3,-6)\). Từ \(2=-6\lambda\) có \(\lambda=-\frac13\), suy ra \(m+1=-1\), \(m=-2\). Khi đó \(d_1:-x+2y-1=0\); nhân với \(-3\) được \(3x-6y+3=0\ne d_2\), nên hai đường song song phân biệt.
 
 **Nếu làm sai:** Sau khi tìm m, kiểm tra cả hằng số để loại trường hợp trùng.
 
@@ -1424,7 +1424,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \((x-1)^2+(y-3)^2=13\). Lời giải: Trung điểm \(I(1;3)\); \(AB^2=6^2+4^2=52\), \(R^2=AB^2/4=13\).
+Đáp án: \((x-1)^2+(y-3)^2=13\). Lời giải: Trung điểm \(I(1;3)\); \(AB^2=6^2+4^2=52\), \(R^2=\frac{AB^2}4=13\).
 
 **Nếu làm sai:** Tâm là trung điểm đường kính, bán kính bằng một nửa độ dài AB.
 
@@ -1479,7 +1479,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \((x-\frac92)^2+y^2=\frac{65}{4}\). Lời giải: Đặt tâm \(I(h;0)\). Từ \(IA^2=IB^2\): \((h-1)^2+4=(h-5)^2+16\Rightarrow 8h=36\Rightarrow h=9/2\). Khi đó \(R^2=(9/2-1)^2+2^2=49/4+16/4=65/4>0\).
+Đáp án: \((x-\frac92)^2+y^2=\frac{65}{4}\). Lời giải: Đặt tâm \(I(h;0)\). Từ \(IA^2=IB^2\): \((h-1)^2+4=(h-5)^2+16\Rightarrow 8h=36\Rightarrow h=\frac92\). Khi đó \(R^2=(\frac92-1)^2+2^2=\frac{49}4+\frac{16}4=\frac{65}4>0\).
 
 **Nếu làm sai:** Dùng tính chất hai bán kính IA và IB bằng nhau.
 
@@ -1638,22 +1638,22 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 **Phân biệt elip, hypebol và parabol**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B22-C01; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 65.** Cho elip \(E:\dfrac{x^2}{25}+\dfrac{y^2}{9}=1\). Tìm hai tiêu điểm và tâm sai.
+**Bài luyện 65.** Cho elip \(E:\frac{x^2}{25}+\frac{y^2}{9}=1\). Tìm hai tiêu điểm và tâm sai.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \(F_1(-4;0),F_2(4;0)\), \(e=4/5\). Lời giải: \(a=5,b=3,c=\sqrt{a^2-b^2}=\sqrt{16}=4\), \(e=c/a=4/5\).
+Đáp án: \(F_1(-4;0),F_2(4;0)\), \(e=\frac45\). Lời giải: \(a=5,b=3,c=\sqrt{a^2-b^2}=\sqrt{16}=4\), \(e=\frac ca=\frac45\).
 
 **Nếu làm sai:** Elip có \(c^2=a^2-b^2\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B22-C02; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 66.** Cho hypebol \(H:\dfrac{x^2}{9}-\dfrac{y^2}{16}=1\). Tìm hai tiêu điểm và hai tiệm cận.
+**Bài luyện 66.** Cho hypebol \(H:\frac{x^2}{9}-\frac{y^2}{16}=1\). Tìm hai tiêu điểm và hai tiệm cận.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \(F_{1,2}=(\mp5;0)\); \(y=\pm\frac43x\). Lời giải: \(a=3,b=4,c=\sqrt{a^2+b^2}=5\). Tiệm cận \(y=\pm(b/a)x\).
+Đáp án: \(F_{1,2}=(\mp5;0)\); \(y=\pm\frac43x\). Lời giải: \(a=3,b=4,c=\sqrt{a^2+b^2}=5\). Tiệm cận \(y=\pm\frac bax\).
 
 **Nếu làm sai:** Hypebol có \(c^2=a^2+b^2\), khác elip.
 
@@ -1664,7 +1664,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \(\dfrac{x^2}{25}+\dfrac{y^2}{16}=1\). Lời giải: \(a=5,c=3,b^2=a^2-c^2=16\).
+Đáp án: \(\frac{x^2}{25}+\frac{y^2}{16}=1\). Lời giải: \(a=5,c=3,b^2=a^2-c^2=16\).
 
 **Nếu làm sai:** Dùng độ dài trục lớn (2a) và khoảng cách tiêu điểm (2c).
 
@@ -1675,7 +1675,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \(\dfrac{x^2}{4}-\dfrac{y^2}{9}=1\). Lời giải: \(a=2,c=\sqrt{13},b^2=c^2-a^2=9\).
+Đáp án: \(\frac{x^2}{4}-\frac{y^2}{9}=1\). Lời giải: \(a=2,c=\sqrt{13},b^2=c^2-a^2=9\).
 
 **Nếu làm sai:** Hypebol: trừ \(\frac{y^2}{b^2}\) và \(c^2=a^2+b^2\).
 
@@ -1686,7 +1686,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \(y^2=8x\). Lời giải: Với \(y^2=2px\), tiêu điểm \((p/2;0)\), đường chuẩn \(x=-p/2\), nên \(p=4\).
+Đáp án: \(y^2=8x\). Lời giải: Với \(y^2=2px\), tiêu điểm \((\frac p2;0)\), đường chuẩn \(x=-\frac p2\), nên \(p=4\).
 
 **Nếu làm sai:** Dùng dạng chính tắc đã học \(y^2=2px,\ p>0\).
 
@@ -1697,7 +1697,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \(F(3;0)\), đường chuẩn \(x=-3\) (cm). Lời giải: So với \(y^2=2px\) được \(p=6\); \(F(p/2;0)=(3;0)\), đường chuẩn \(x=-p/2=-3\). Đây là mô hình hình học lý tưởng, không phải thông số thiết bị thực.
+Đáp án: \(F(3;0)\), đường chuẩn \(x=-3\) (cm). Lời giải: So với \(y^2=2px\) được \(p=6\); \(F(\frac p2;0)=(3;0)\), đường chuẩn \(x=-\frac p2=-3\). Đây là mô hình hình học lý tưởng, không phải thông số thiết bị thực.
 
 **Nếu làm sai:** So hệ số (12) với (2p); đừng nhầm (p) với tiêu cự đến đỉnh.
 
@@ -1708,7 +1708,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đáp án: \((2\sqrt3;\frac32)\) và \((-2\sqrt3;\frac32)\). Lời giải: Thế \(y=3/2\): \(x^2/16+(9/4)/9=1\Rightarrow x^2/16=3/4\Rightarrow x^2=12\), nên \(x=\pm2\sqrt3\).
+Đáp án: \((2\sqrt3;\frac32)\) và \((-2\sqrt3;\frac32)\). Lời giải: Thế \(y=\frac32\): \(\frac{x^2}{16}+\frac{\frac94}9=1\Rightarrow \frac{x^2}{16}=\frac34\Rightarrow x^2=12\), nên \(x=\pm2\sqrt3\).
 
 **Nếu làm sai:** Thay y trước, giải phương trình một ẩn x.
 
@@ -1726,68 +1726,68 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY18; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 73.** Với elip x²/25+y²/16=1, tìm a, b, c và hai tiêu điểm.
+**Bài luyện 73.** Với elip \(\frac{x^2}{25}+\frac{y^2}{16}=1\), tìm a, b, c và hai tiêu điểm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** a=5, b=4, c=3; F1(−3,0), F2(3,0).
+**Đáp án:** \(a=5,\ b=4,\ c=3;\ F_1(-3;0),\ F_2(3;0)\).
 
-**Lý do:** a²=25>b²=16, c²=25−16=9 ⇒ c=3; elip có trục lớn Ox.
+**Lý do:** \(a^2=25>b^2=16,\ c^2=25-16=9\Rightarrow c=3\); elip có trục lớn Ox.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY19; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 74.** Hypebol x²/16−y²/9=1 có các đỉnh và hai tiêu điểm tọa độ nào?
+**Bài luyện 74.** Hypebol \(\frac{x^2}{16}-\frac{y^2}{9}=1\) có các đỉnh và hai tiêu điểm tọa độ nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Đỉnh A1(−4,0), A2(4,0); tiêu điểm F1(−5,0), F2(5,0).
+**Đáp án:** Đỉnh \(A_1(-4;0),\ A_2(4;0)\); tiêu điểm \(F_1(-5;0),\ F_2(5;0)\).
 
-**Lý do:** a=4, b=3, c²=a²+b²=16+9=25 ⇒ c=5; trục thực Ox.
+**Lý do:** \(a=4,\ b=3,\ c^2=a^2+b^2=16+9=25\Rightarrow c=5\); trục thực Ox.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY20; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 75.** Hypebol x²/25−y²/4=1 có hai đường tiệm cận nào?
+**Bài luyện 75.** Hypebol \(\frac{x^2}{25}-\frac{y^2}4=1\) có hai đường tiệm cận nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** y=(2/5)x và y=−(2/5)x.
+**Đáp án:** \(y=\frac25x\) và \(y=-\frac25x\).
 
-**Lý do:** a²=25 ⇒ a=5; b²=4 ⇒ b=2. Hệ số góc tiệm cận là ±b/a=±2/5.
+**Lý do:** \(a^2=25\Rightarrow a=5;\ b^2=4\Rightarrow b=2\). Hệ số góc tiệm cận là \(\pm\frac ba=\pm\frac25\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY21; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 76.** Cho parabol y²=8x với x≥0. Xác định tiêu điểm, đường chuẩn; M(2,4) có thuộc parabol không?
+**Bài luyện 76.** Cho parabol \(y^2=8x\) với \(x\ge0\). Xác định tiêu điểm, đường chuẩn; \(M(2;4)\) có thuộc parabol không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** p=4; F(2,0), đường chuẩn x=−2; M(2,4) thuộc vì 4²=8·2.
+**Đáp án:** \(p=4;\ F(2;0)\), đường chuẩn \(x=-2\); \(M(2;4)\) thuộc vì \(4^2=8\cdot2\).
 
-**Lý do:** 2p=8 ⇒ p=4, F=(p/2,0)=(2,0), đường chuẩn x=−p/2=−2. M có MF=4 và khoảng cách đến x=−2 là 4.
+**Lý do:** \(2p=8\Rightarrow p=4\), \(F(\frac p2;0)\) tức \(F(2;0)\), đường chuẩn \(x=-\frac p2=-2\). M có \(MF=4\) và khoảng cách đến \(x=-2\) là 4.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY22; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 77.** Đường x=0 cắt elip x²/9+y²/4=1 tại những điểm nào?
+**Bài luyện 77.** Đường \(x=0\) cắt elip \(\frac{x^2}9+\frac{y^2}4=1\) tại những điểm nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** (0,2) và (0,−2).
+**Đáp án:** \((0;2)\) và \((0;-2)\).
 
-**Lý do:** Thế x=0 được y²/4=1 ⇒ y²=4 ⇒ y=±2; cả hai tọa độ thỏa phương trình gốc.
+**Lý do:** Thế \(x=0\) được \(\frac{y^2}4=1\Rightarrow y^2=4\Rightarrow y=\pm2\); cả hai tọa độ thỏa phương trình gốc.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY23; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài luyện 78.** Mặt cắt một máng giả sử có dạng y²=20x (x,y tính bằng cm). Bề rộng của máng tại x=5 cm là bao nhiêu?
+**Bài luyện 78.** Mặt cắt một máng giả sử có dạng \(y^2=20x\) (x, y tính bằng cm). Bề rộng của máng tại \(x=5\) cm là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 20 cm.
 
-**Lý do:** Thế x=5 được y²=100 ⇒ y=±10 cm. Độ rộng là 10−(−10)=20 cm.
+**Lý do:** Thế \(x=5\) được \(y^2=100\Rightarrow y=\pm10\) cm. Độ rộng là \(10-(-10)=20\) cm.
 
 </details>
 
@@ -1815,88 +1815,88 @@ Một elip tâm \(O\), trục lớn trùng \(Ox\), độ dài trục lớn bằn
 **Vận dụng với đường conic và mô hình thực tế**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P18; PRIMARY_OUTCOME: TOP14-O18; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 80.** Elip x²/36+y²/20=1 có hai tiêu điểm nào?
+**Bài luyện 80.** Elip \(\frac{x^2}{36}+\frac{y^2}{20}=1\) có hai tiêu điểm nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-a²=36,b²=20,c²=36−20=16 ⇒ c=4; F₁(−4,0),F₂(4,0).
+\(a^2=36,\ b^2=20,\ c^2=36-20=16\Rightarrow c=4;\ F_1(-4;0),\ F_2(4;0)\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 18 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P19; PRIMARY_OUTCOME: TOP14-O19; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 81.** Hypebol x²/25−y²/24=1 có tiêu điểm nào?
+**Bài luyện 81.** Hypebol \(\frac{x^2}{25}-\frac{y^2}{24}=1\) có tiêu điểm nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-a²=25,b²=24,c²=25+24=49 ⇒ c=7, F₁(−7,0),F₂(7,0).
+\(a^2=25,\ b^2=24,\ c^2=25+24=49\Rightarrow c=7,\ F_1(-7;0),\ F_2(7;0)\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 19 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P20; PRIMARY_OUTCOME: TOP14-O20; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 82.** Tìm hai tiệm cận của x²/16−y²/25=1.
+**Bài luyện 82.** Tìm hai tiệm cận của \(\frac{x^2}{16}-\frac{y^2}{25}=1\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-a=4,b=5 ⇒ y=±(5/4)x. Hai đường x=±4 là vị trí đỉnh, không phải tiệm cận.
+\(a=4,\ b=5\Rightarrow y=\pm\frac54x\). Hai đường \(x=\pm4\) là các đường đi qua đỉnh, không phải tiệm cận.
 
 **Nếu làm sai:** Quay về mục Kiến thức 20 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P21; PRIMARY_OUTCOME: TOP14-O21; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 83.** Parabol y²=10x có tiêu điểm và đường chuẩn nào theo y²=2px (p>0)?
+**Bài luyện 83.** Parabol \(y^2=10x\) có tiêu điểm và đường chuẩn nào theo \(y^2=2px\) (\(p>0\))?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-2p=10,p=5 ⇒ F(5/2,0), đường chuẩn x=−5/2.
+\(2p=10,\ p=5\Rightarrow F(\frac52;0)\), đường chuẩn \(x=-\frac52\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 21 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P22; PRIMARY_OUTCOME: TOP14-O22; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 84.** Tìm các giao điểm của elip x²/16+y²/9=1 và đường y=0.
+**Bài luyện 84.** Tìm các giao điểm của elip \(\frac{x^2}{16}+\frac{y^2}9=1\) và đường \(y=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Đặt y=0 ⇒x²/16=1 ⇒x=±4; giao (−4,0),(4,0).
+Đặt \(y=0\Rightarrow\frac{x^2}{16}=1\Rightarrow x=\pm4\); giao \((-4;0),(4;0)\).
 
 **Nếu làm sai:** Quay về mục Kiến thức 22 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-P23; PRIMARY_OUTCOME: TOP14-O23; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
-**Bài luyện 85.** Mặt cắt ăng-ten có trục Ox, đỉnh O, tiêu điểm cách đỉnh 4 cm. Viết phương trình; tại độ sâu x=9 cm, khoảng cách giữa hai mép theo phương y bao nhiêu?
+**Bài luyện 85.** Mặt cắt ăng-ten có trục Ox, đỉnh O, tiêu điểm cách đỉnh 4 cm. Viết phương trình; tại độ sâu \(x=9\) cm, khoảng cách giữa hai mép theo phương y bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-f=4 ⇒ y²=4fx=16x (tọa độ cm). Tại x=9, y²=144 nên y=±12 cm; bề rộng miệng là 24 cm.
+\(f=4\Rightarrow y^2=4fx=16x\) (tọa độ đo bằng cm). Tại \(x=9,\ y^2=144\) nên \(y=\pm12\) cm; bề rộng miệng là 24 cm.
 
 **Nếu làm sai:** Quay về mục Kiến thức 23 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-W04; PRIMARY_OUTCOME: TOP14-O20; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_WRITTEN -->
-**Bài luyện 86.** Xét (E):x²/25+y²/9=1 và (H):x²/9−y²/16=1. (a) tiêu điểm E; (b) tiêu điểm H; (c) hai tiệm cận H; (d) giải thích vì sao không dùng một công thức c² cho cả hai.
+**Bài luyện 86.** Xét \((E):\frac{x^2}{25}+\frac{y^2}9=1\) và \((H):\frac{x^2}9-\frac{y^2}{16}=1\). (a) tiêu điểm E; (b) tiêu điểm H; (c) hai tiệm cận H; (d) giải thích vì sao không dùng một công thức \(c^2\) cho cả hai.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-E: c²=25−9=16, tiêu điểm (±4,0) (2đ); H: c²=9+16=25, tiêu điểm (±5,0) (2đ); tiệm cận y=±(4/3)x (2đ); E là tổng khoảng cách không đổi còn H là hiệu trị tuyệt đối, hai dạng dẫn đến dấu khác nhau trong c² (1đ). Tổng 7đ.
+E: \(c^2=25-9=16\), tiêu điểm \((\pm4;0)\) (2đ); H: \(c^2=9+16=25\), tiêu điểm \((\pm5;0)\) (2đ); tiệm cận \(y=\pm\frac43x\) (2đ); E là tổng khoảng cách không đổi còn H là hiệu trị tuyệt đối, hai dạng dẫn đến dấu khác nhau trong \(c^2\) (1đ). Tổng 7đ.
 
 **Nếu làm sai:** Quay về mục Kiến thức 20 rồi thử một lượt không xem đáp án.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-W05; PRIMARY_OUTCOME: TOP14-O23; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_WRITTEN -->
-**Bài luyện 87.** Mặt cắt parabol y²=12x (đơn vị cm). (a) tìm tiêu điểm và đường chuẩn; (b) tìm giao với đường x=3; (c) độ rộng mặt cắt tại x=3 và giải thích ý nghĩa.
+**Bài luyện 87.** Mặt cắt parabol \(y^2=12x\) (đơn vị cm). (a) tìm tiêu điểm và đường chuẩn; (b) tìm giao với đường \(x=3\); (c) độ rộng mặt cắt tại \(x=3\) và giải thích ý nghĩa.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-2p=12⇒p=6,F(3,0), đường chuẩn x=−3 (2đ); x=3⇒y²=36, giao (3,−6),(3,6) (2đ); bề rộng=12 cm (2đ); đây là độ rộng mặt cắt tại x=3, không phải tiêu cự/chiều sâu (1đ). Tổng 7đ.
+\(2p=12\Rightarrow p=6,\ F(3;0)\), đường chuẩn \(x=-3\) (2đ); \(x=3\Rightarrow y^2=36\), giao \((3;-6),(3;6)\) (2đ); bề rộng 12 cm (2đ); đây là độ rộng mặt cắt tại \(x=3\), không phải tiêu cự/chiều sâu (1đ). Tổng 7đ.
 
 **Nếu làm sai:** Quay về mục Kiến thức 23 rồi thử một lượt không xem đáp án.
 
@@ -1909,73 +1909,73 @@ Hãy tự giải đủ **23 câu** vào vở trước khi mở **Đối chiếu*
 ## 1. Câu hỏi tự ôn
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P01; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 1.** Đường thẳng d:−2x+5y+4=0. Nêu một vectơ pháp tuyến và một vectơ chỉ phương, rồi kiểm chúng vuông góc.
+**Câu 1.** Đường thẳng \(d:-2x+5y+4=0\). Nêu một vectơ pháp tuyến và một vectơ chỉ phương, rồi kiểm chúng vuông góc.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P02; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 2.** Viết đường thẳng qua P(−1,2), có vectơ pháp tuyến n=(3,−2).
+**Câu 2.** Viết đường thẳng qua \(P(-1;2)\), có vectơ pháp tuyến \(\vec n=(3;-2)\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P03; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 3.** Đường qua A(2,−3), chỉ phương u=(−1,4). Viết tham số và tìm điểm ứng với t=−2.
+**Câu 3.** Đường qua \(A(2;-3)\), chỉ phương \(\vec u=(-1;4)\). Viết tham số và tìm điểm ứng với \(t=-2\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P04; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 4.** Dựng phương trình tổng quát đường thẳng qua A(−2,1), B(2,3).
+**Câu 4.** Dựng phương trình tổng quát đường thẳng qua \(A(-2;1),\ B(2;3)\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P05; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 5.** Đường d:x−3y−7=0. Điểm M(4,−1) và N(3,0) có thuộc d không?
+**Câu 5.** Đường \(d:x-3y-7=0\). Điểm \(M(4;-1)\) và \(N(3;0)\) có thuộc d không?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P06; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 6.** Tìm đường thẳng qua giao của 2x+y=7 và x−y=2, song song 3x−y+2=0.
+**Câu 6.** Tìm đường thẳng qua giao của \(2x+y=7\) và \(x-y=2\), song song \(3x-y+2=0\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P07; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 7.** Bể có 10 lít lúc t=0 và 26 lít lúc t=4 phút, được đổ đều. Viết V(t) và tính V(6), nếu bể chưa tràn.
+**Câu 7.** Bể có 10 lít lúc \(t=0\) và 26 lít lúc \(t=4\) phút, được đổ đều. Viết \(V(t)\) và tính \(V(6)\), nếu bể chưa tràn.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P08; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 8.** Phân loại d₁:x−2y+1=0 và d₂:2x−4y+3=0.
+**Câu 8.** Phân loại \(d_1:x-2y+1=0\) và \(d_2:2x-4y+3=0\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P09; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 9.** Qua P(−2,3), dựng đường vuông góc d:2x−3y+1=0.
+**Câu 9.** Qua \(P(-2;3)\), dựng đường vuông góc \(d:2x-3y+1=0\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P10; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 10.** Tìm giao hai đường 3x+y=7, x−y=1.
+**Câu 10.** Tìm giao hai đường \(3x+y=7,\ x-y=1\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P11; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 11.** Cho P(−1,2) và d:5x+12y−6=0. Tính d(P,d).
+**Câu 11.** Cho \(P(-1;2)\) và \(d:5x+12y-6=0\). Tính \(d(P,d)\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P12; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 12.** Tính góc nhỏ giữa d₁:x=0 và d₂:x+√3 y=0.
+**Câu 12.** Tính góc nhỏ giữa \(d_1:x=0\) và \(d_2:x+\sqrt3\,y=0\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P13; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 13.** Viết phương trình đường tròn tâm I(−2,1), R=4. Kiểm P(2,1) có nằm trên đường tròn không.
+**Câu 13.** Viết phương trình đường tròn tâm \(I(-2;1),\ R=4\). Kiểm \(P(2;1)\) có nằm trên đường tròn không.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P14; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 14.** Xác định tâm, bán kính của x²+y²−6x+2y+1=0.
+**Câu 14.** Xác định tâm, bán kính của \(x^2+y^2-6x+2y+1=0\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P15; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 15.** Đường tròn tâm I(−1,2) đi qua P(1,6). Viết phương trình tiếp tuyến tại P.
+**Câu 15.** Đường tròn tâm \(I(-1;2)\) đi qua \(P(1;6)\). Viết phương trình tiếp tuyến tại P.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P16; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 16.** Cho A(0,0),B(8,0),C(0,6). Xác định tâm và bán kính đường tròn ngoại tiếp tam giác.
+**Câu 16.** Cho \(A(0;0),\ B(8;0),\ C(0;6)\). Xác định tâm và bán kính đường tròn ngoại tiếp tam giác.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P17; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 17.** Đường tròn (x−1)²+(y+2)²=9 và đường y=1 có bao nhiêu giao điểm? Nêu tọa độ.
+**Câu 17.** Đường tròn \((x-1)^2+(y+2)^2=9\) và đường \(y=1\) có bao nhiêu giao điểm? Nêu tọa độ.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P18; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 18.** Elip x²/36+y²/20=1 có hai tiêu điểm nào?
+**Câu 18.** Elip \(\frac{x^2}{36}+\frac{y^2}{20}=1\) có hai tiêu điểm nào?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P19; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 19.** Hypebol x²/25−y²/24=1 có tiêu điểm nào?
+**Câu 19.** Hypebol \(\frac{x^2}{25}-\frac{y^2}{24}=1\) có tiêu điểm nào?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P20; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 20.** Tìm hai tiệm cận của x²/16−y²/25=1.
+**Câu 20.** Tìm hai tiệm cận của \(\frac{x^2}{16}-\frac{y^2}{25}=1\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P21; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 21.** Parabol y²=10x có tiêu điểm và đường chuẩn nào theo y²=2px (p>0)?
+**Câu 21.** Parabol \(y^2=10x\) có tiêu điểm và đường chuẩn nào theo \(y^2=2px\) (\(p>0\))?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P22; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 22.** Tìm các giao điểm của elip x²/16+y²/9=1 và đường y=0.
+**Câu 22.** Tìm các giao điểm của elip \(\frac{x^2}{16}+\frac{y^2}9=1\) và đường \(y=0\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP14-P23; PLACEMENT: TOPIC_PUBLIC_SELF_CHECK; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; QUESTION_ONLY; no key/solution/rubric/hint pre-Final Submit -->
-**Câu 23.** Mặt cắt ăng-ten có trục Ox, đỉnh O, tiêu điểm cách đỉnh 4 cm. Viết phương trình; tại độ sâu x=9 cm, khoảng cách giữa hai mép theo phương y bao nhiêu?
+**Câu 23.** Mặt cắt ăng-ten có trục Ox, đỉnh O, tiêu điểm cách đỉnh 4 cm. Viết phương trình; tại độ sâu \(x=9\) cm, khoảng cách giữa hai mép theo phương y bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
