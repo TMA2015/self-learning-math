@@ -176,23 +176,52 @@ def tab_check(button,width):
     assert info["scroll"]<=info["client"]+2,("clipped tab",info)
 
 if "--back-top-only" in sys.argv:
-    # TOPIC_BACK_TOP_R3: verify the native Material button, no synthetic scroll handler.
+    # TOPIC_BACK_TOP_R3: one native component on every THPT MkDocs page.
+    # Inventory every compiled route, no full-site lesson browser re-audit.
+    from html.parser import HTMLParser
+    class TopInventory(HTMLParser):
+        def __init__(self):
+            super().__init__(); self.top=0; self.js=0; self.css=0
+        def handle_starttag(self,tag,attrs):
+            a=dict(attrs)
+            if tag=='button' and a.get('data-md-component')=='top': self.top+=1
+            if tag=='script' and a.get('src','').endswith('/sticky-nav-v1.js'): self.js+=1
+            if tag=='link' and a.get('href','').endswith('/site-design-system.css'): self.css+=1
+    native=0; non_native=[]
+    for path in sorted((BUILD/'thpt-preview').rglob('*.html')):
+        parser=TopInventory(); parser.feed(path.read_text(encoding='utf-8'))
+        if parser.top:
+            assert (parser.top,parser.js,parser.css)==(1,1,1),(path,parser.top,parser.js,parser.css)
+            native+=1
+        else: non_native.append(str(path.relative_to(BUILD)))
+    assert native>=150,native
+    print(f'PASS R3 THPT route inventory: {native} native pages use same assets; {len(non_native)} non-native pages left unchanged',flush=True)
+    print('Non-native routes:',non_native,flush=True)
+    routes=((390,'sgk/chuong-v/bai-14/'),(820,'sgk/lop-11/chuong-i/bai-2/'),(1440,'sgk/lop-12/chuong-i/bai-1/'),(390,'chuyen-de/cd12/luyen-tap/'),(820,'chuyen-de/cd12/tu-kiem-tra/'),(1440,'math-lab/'),(820,'chuyen-de/cd01/kien-thuc/'),(390,'home/'),(1440,'thu-vien/'),(820,'tien-do/'))
     with sync_playwright() as pw:
         for engine in ("chromium","webkit"):
             browser=getattr(pw,engine).launch(headless=True)
-            for width,topic in ((390,"12"),(820,"01"),(1440,"22")):
+            for width,route in routes:
                 page=browser.new_page(viewport={"width":width,"height":700})
-                page.goto(BASE+"cd"+topic+"/kien-thuc/",wait_until="domcontentloaded")
+                page.goto(BASE.removesuffix("chuyen-de/")+route,wait_until="domcontentloaded")
                 top=page.locator("button.md-top.slm-topic-back-top")
                 expect(top).to_have_count(1,timeout=20000)
                 expect(top).to_have_attribute("aria-label","Về đầu trang")
                 expect(top).to_have_attribute("title","Về đầu trang")
                 assert top.inner_text().strip()==""
                 expect(top).to_be_hidden()
-                tabs=page.locator('.thpt-r4-knowledge-tab[role="tab"]:visible')
-                expect(tabs.first).to_be_visible(timeout=20000)
-                selected=lambda:page.locator('.thpt-r4-knowledge-tab[aria-selected="true"]').evaluate_all("(els)=>els.map(e=>e.getAttribute('aria-controls'))")
+                selected=lambda:page.locator('[role="tab"][aria-selected="true"]').evaluate_all("(els)=>els.map(e=>e.getAttribute('aria-controls')||e.id||e.textContent.trim())")
+                if route.endswith("kien-thuc/"):
+                    expect(page.locator('.thpt-r4-knowledge-tab[role="tab"]:visible').first).to_be_visible(timeout=20000)
                 active=selected()
+                page.wait_for_load_state("load")
+                page.wait_for_function("typeof window.viewport$?.subscribe === 'function'")
+                if page.evaluate("document.documentElement.scrollHeight-innerHeight<240"):
+                    # A short page needs no scroll control; test initial hidden state,
+                    # common styling and label rather than inventing scrollable content.
+                    print(f"PASS R3 native component present and hidden on short route {route} {engine} {width}",flush=True)
+                    page.close()
+                    continue
                 # Material shows the native control only on an up-scroll at y>0.
                 # Wait for its actual viewport stream, then use two settled scroll
                 # positions within the reading area (not a changing footer/end).
@@ -216,7 +245,7 @@ if "--back-top-only" in sys.argv:
                 try:
                     expect(top).to_be_visible(timeout=10000)
                 except AssertionError:
-                    print("R3_NATIVE_VISIBILITY_HOLD",engine,width,topic,top.evaluate("""e=>({
+                    print("R3_NATIVE_VISIBILITY_HOLD",engine,width,route,top.evaluate("""e=>({
                       y:scrollY,offsets:window.__r3ViewportOffsets.slice(-20),
                       mainTop:document.querySelector('main')?.offsetTop,
                       hidden:e.hidden,inline:e.getAttribute('style'),
@@ -237,12 +266,18 @@ if "--back-top-only" in sys.argv:
                 page.wait_for_function("window.scrollY<=2",timeout=10000)
                 expect(top).to_be_hidden()
                 assert selected()==active,"Active Knowledge tabs changed"
-                # Outside Topic Knowledge, the native control remains unmodified.
-                page.goto(BASE.replace("chuyen-de/","sgk/chuong-v/bai-14/"),wait_until="domcontentloaded")
-                expect(page.locator("button.md-top")).to_have_count(1)
-                expect(page.locator(".slm-topic-back-top")).to_have_count(0)
-                print(f"PASS R3 Back to top CĐ{topic} {engine} {width}: geometry, safe spacing, light/slate, native scroll, tab retained, SGK untouched",flush=True)
+                print(f"PASS R3 Back to top {route} {engine} {width}: geometry, safe spacing, light/slate, native scroll, tab retained",flush=True)
                 page.close()
+            # THCS remains unchanged: verify actual root build with its own HTTP server.
+            thcs=browser.new_page(viewport={"width":820,"height":700})
+            root_server=http.server.ThreadingHTTPServer(("127.0.0.1",0),functools.partial(http.server.SimpleHTTPRequestHandler,directory=str(ROOT/"site")))
+            threading.Thread(target=root_server.serve_forever,daemon=True).start()
+            thcs.goto(f"http://127.0.0.1:{root_server.server_address[1]}/kien-thuc/02-so-va-phep-tinh/",wait_until="load")
+            expect(thcs.locator("button.md-top")).to_have_count(1)
+            expect(thcs.locator(".slm-topic-back-top")).to_have_count(0)
+            assert "Trở lại mục lục" in thcs.locator("button.md-top").text_content()
+            print(f"PASS R3 THCS excluded {engine}",flush=True)
+            thcs.close(); root_server.shutdown()
             browser.close()
     server.shutdown()
     sys.exit(0)
