@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-C01",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Một túi chứa các thẻ đánh số 1, 2, 3. Mỗi lần lấy đúng một thẻ. Viết Ω.",
-    "answer_key": "Ω={1,2,3}.",
-    "worked_solution": "Không gian mẫu là mọi kết quả có thể xảy ra, không gồm bộ đôi vì chỉ lấy một thẻ.",
+    "stem": "Một túi chứa ba thẻ đánh số 1, 2, 3. Lấy đúng một thẻ. Viết không gian mẫu \\(\\Omega\\).",
+    "answer_key": "\\(\\Omega=\\{1;2;3\\}\\).",
+    "worked_solution": "Mỗi kết quả là số ghi trên một thẻ, nên có đúng ba kết quả có thể xảy ra: 1, 2, 3. Không liệt kê các cặp vì chỉ rút một thẻ.",
     "skill_ids": [
       "G11-B28-SAMPLE_SPACE"
     ],
@@ -33,9 +33,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-C02",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Với Ω={1,2,3,4,5}, viết biến cố A=\"chọn được số nguyên tố\".",
-    "answer_key": "A={2,3,5}.",
-    "worked_solution": "Số 1 không phải số nguyên tố; biến cố là tập con của Ω.",
+    "stem": "Với \\(\\Omega=\\{1;2;3;4;5\\}\\), viết biến cố A: “chọn được số nguyên tố”.",
+    "answer_key": "\\(A=\\{2;3;5\\}\\).",
+    "worked_solution": "Số nguyên tố là số nguyên dương lớn hơn 1 có đúng hai ước dương. Trong không gian mẫu, 2, 3, 5 thỏa điều kiện; 1 và 4 không thỏa. Vậy biến cố gồm ba kết quả trên.",
     "skill_ids": [
       "G11-B28-EVENT_MODEL"
     ],
@@ -64,9 +64,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-C03",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Ω={1,2,3,4,5}, A={1,3}, B={3,5}. Tìm A∪B.",
-    "answer_key": "{1,3,5}.",
-    "worked_solution": "Hợp chứa mọi kết quả thuộc ít nhất một trong hai tập; số 3 chỉ viết một lần.",
+    "stem": "Cho \\(\\Omega=\\{1;2;3;4;5\\}\\), \\(A=\\{1;3\\}\\), \\(B=\\{3;5\\}\\). Tìm \\(A\\cup B\\).",
+    "answer_key": "\\(\\{1;3;5\\}\\).",
+    "worked_solution": "Biến cố hợp gồm mọi kết quả thuộc A hoặc B, kể cả thuộc cả hai. Số 3 có trong cả hai tập nhưng chỉ ghi một lần, nên \\(A\\cup B=\\{1;3;5\\}\\).",
     "skill_ids": [
       "G11-B28-UNION"
     ],
@@ -95,9 +95,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-C04",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Ω={1,2,3,4,5}, A={2,3,4}, B={1,3,5}. Tìm A∩B.",
-    "answer_key": "{3}.",
-    "worked_solution": "Giao là phần tử thuộc cả A lẫn B.",
+    "stem": "Cho \\(\\Omega=\\{1;2;3;4;5\\}\\), \\(A=\\{2;3;4\\}\\), \\(B=\\{1;3;5\\}\\). Tìm \\(A\\cap B\\).",
+    "answer_key": "\\(\\{3\\}\\).",
+    "worked_solution": "Biến cố giao gồm những kết quả đồng thời thuộc A và B. Chỉ có 3 xuất hiện trong cả hai tập, nên \\(A\\cap B=\\{3\\}\\).",
     "skill_ids": [
       "G11-B28-INTERSECTION"
     ],
@@ -126,9 +126,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-C05",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Ω={0,1,2,3,4}, A={0,2,4}. Tìm Ā.",
-    "answer_key": "{1,3}.",
-    "worked_solution": "Phần bù lấy tất cả phần tử trong Ω không thuộc A.",
+    "stem": "Cho \\(\\Omega=\\{0;1;2;3;4\\}\\), \\(A=\\{0;2;4\\}\\). Tìm \\(\\overline A\\).",
+    "answer_key": "\\(\\{1;3\\}\\).",
+    "worked_solution": "Biến cố đối gồm tất cả kết quả trong không gian mẫu không thuộc A. Loại 0, 2, 4 khỏi \\(\\Omega\\), còn \\(\\overline A=\\{1;3\\}\\).",
     "skill_ids": [
       "G11-B28-COMPLEMENT"
     ],
@@ -157,9 +157,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-C06",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Một xúc xắc gieo một lần. A=\"ra số nhỏ hơn 3\", B=\"ra số lớn hơn 4\". A,B có xung khắc?",
+    "stem": "Gieo một xúc xắc sáu mặt một lần. A là biến cố “ra số nhỏ hơn 3”, B là biến cố “ra số lớn hơn 4”. A và B có xung khắc không?",
     "answer_key": "Có.",
-    "worked_solution": "A={1,2}, B={5,6}; giao rỗng.",
+    "worked_solution": "Ta có \\(A=\\{1;2\\}\\) và \\(B=\\{5;6\\}\\). Không có kết quả nào thuộc cả hai, tức \\(A\\cap B=\\varnothing\\). Hai biến cố không thể cùng xảy ra nên xung khắc.",
     "skill_ids": [
       "G11-B28-DISJOINT"
     ],
@@ -188,9 +188,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-C07",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Hai biến cố có P(A)=1/2, P(B)=1/3 và P(A∩B)=1/6. Có độc lập không?",
+    "stem": "Hai biến cố có \\(P(A)=\\frac12\\), \\(P(B)=\\frac13\\) và \\(P(A\\cap B)=\\frac16\\). Chúng có độc lập không?",
     "answer_key": "Có.",
-    "worked_solution": "Tích xác suất riêng bằng giao: 1/2·1/3=1/6.",
+    "worked_solution": "Tiêu chuẩn độc lập là \\(P(A\\cap B)=P(A)P(B)\\). Tích hai xác suất riêng bằng \\(\\frac12\\cdot\\frac13=\\frac16\\), đúng bằng xác suất giao. Vậy A và B độc lập.",
     "skill_ids": [
       "G11-B28-INDEPENDENCE"
     ],
@@ -219,9 +219,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-P01",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Khi chọn đều 1 thẻ từ 1 đến 8, A=\"bội của 2\", B=\"bội của 3\". Viết A∪B.",
-    "answer_key": "{2,3,4,6,8}.",
-    "worked_solution": "A={2,4,6,8}, B={3,6}; hợp không lặp số 6.",
+    "stem": "Chọn đều ngẫu nhiên một thẻ đánh số từ 1 đến 8. A: “bội của 2”, B: “bội của 3”. Viết \\(A\\cup B\\).",
+    "answer_key": "\\(\\{2;3;4;6;8\\}\\).",
+    "worked_solution": "Liệt kê \\(A=\\{2;4;6;8\\}\\), \\(B=\\{3;6\\}\\). Hợp gồm mọi phần tử thuộc ít nhất một tập; 6 chỉ xuất hiện một lần. Vậy \\(A\\cup B=\\{2;3;4;6;8\\}\\).",
     "skill_ids": [
       "G11-B28-UNION"
     ],
@@ -250,9 +250,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-P02",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Với cùng 8 thẻ, A=\"số chẵn\", B=\"số lớn hơn 5\". Tìm A∩B.",
-    "answer_key": "{6,8}.",
-    "worked_solution": "B={6,7,8}; cùng chẵn và lớn hơn 5 có hai giá trị.",
+    "stem": "Chọn một thẻ trong tám thẻ đánh số từ 1 đến 8. A: “số chẵn”, B: “số lớn hơn 5”. Tìm \\(A\\cap B\\).",
+    "answer_key": "\\(\\{6;8\\}\\).",
+    "worked_solution": "Ta có \\(A=\\{2;4;6;8\\}\\) và \\(B=\\{6;7;8\\}\\). Chỉ 6 và 8 vừa chẵn vừa lớn hơn 5. Vậy giao gồm hai kết quả này.",
     "skill_ids": [
       "G11-B28-INTERSECTION"
     ],
@@ -281,9 +281,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-P03",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Một hộp có 3 thẻ đỏ, 1 thẻ xanh. Vì sao khi chọn đều 1 thẻ không được gộp Ω={đỏ,xanh} rồi kết luận P(đỏ)=1/2?",
-    "answer_key": "Vì hai màu không đồng khả năng; P(đỏ)=3/4.",
-    "worked_solution": "Không gian mẫu màu có thể dùng nếu gán đúng xác suất; không được chia đều cho 2 màu.",
+    "stem": "Một hộp có ba thẻ đỏ và một thẻ xanh. Vì sao khi chọn đều ngẫu nhiên một thẻ, không thể gộp không gian mẫu thành hai màu rồi kết luận xác suất đỏ bằng \\(\\frac12\\)?",
+    "answer_key": "Hai màu không đồng khả năng; xác suất đỏ bằng \\(\\frac34\\).",
+    "worked_solution": "Bốn thẻ phân biệt có cùng khả năng được chọn. Ba thẻ đỏ tạo ba kết quả thuận lợi, nên xác suất đỏ bằng \\(\\frac34\\). Có thể mô tả kết quả bằng màu, nhưng hai màu khi đó có xác suất \\(\\frac34\\) và \\(\\frac14\\), không thể chia đều cho hai màu.",
     "skill_ids": [
       "G11-B28-EVENT_MODEL"
     ],
@@ -312,9 +312,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-P04",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "A và B xung khắc với P(A)=1/4 và P(B)=2/5. Chúng có thể độc lập không?",
+    "stem": "A và B xung khắc, \\(P(A)=\\frac14\\) và \\(P(B)=\\frac25\\). Chúng có thể độc lập không?",
     "answer_key": "Không.",
-    "worked_solution": "P(A∩B)=0 nhưng P(A)P(B)=1/10>0.",
+    "worked_solution": "Xung khắc nghĩa là \\(A\\cap B=\\varnothing\\), nên \\(P(A\\cap B)=0\\). Trong khi đó \\(P(A)P(B)=\\frac14\\cdot\\frac25=\\frac1{10}>0\\). Hai giá trị khác nhau nên không độc lập.",
     "skill_ids": [
       "G11-B28-DISJOINT"
     ],
@@ -343,9 +343,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-P05",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Biết P(A)=1/2, P(B)=3/5, P(A∩B)=1/5. Kiểm tra tính độc lập.",
+    "stem": "Biết \\(P(A)=\\frac12\\), \\(P(B)=\\frac35\\), \\(P(A\\cap B)=\\frac15\\). Kiểm tra tính độc lập.",
     "answer_key": "Không độc lập.",
-    "worked_solution": "1/2·3/5=3/10 khác 1/5.",
+    "worked_solution": "Tính \\(P(A)P(B)=\\frac12\\cdot\\frac35=\\frac3{10}\\). Xác suất giao bằng \\(\\frac15=\\frac2{10}\\), khác tích. Vậy A và B không độc lập.",
     "skill_ids": [
       "G11-B28-INDEPENDENCE"
     ],
@@ -374,9 +374,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B28-P06",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Ω={a,b,c,d,e,f}, A={b,e}. Viết Ā và số phần tử của nó.",
-    "answer_key": "{a,c,d,f}; 4 phần tử.",
-    "worked_solution": "Bù trong Ω, không phải chỉ phần bên ngoài sơ đồ khi chưa rõ Ω.",
+    "stem": "Cho \\(\\Omega=\\{a;b;c;d;e;f\\}\\), \\(A=\\{b;e\\}\\). Viết \\(\\overline A\\) và số phần tử của nó.",
+    "answer_key": "\\(\\overline A=\\{a;c;d;f\\}\\), có 4 phần tử.",
+    "worked_solution": "Lấy các kết quả trong \\(\\Omega\\) không thuộc A, tức bỏ b và e. Còn a, c, d, f, nên số phần tử của biến cố đối bằng \\(6-2=4\\).",
     "skill_ids": [
       "G11-B28-COMPLEMENT"
     ],
@@ -405,9 +405,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-C01",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "P(A)=2/5, P(B)=1/2, P(A∩B)=1/5. Tính P(A∪B).",
-    "answer_key": "7/10.",
-    "worked_solution": "2/5+1/2−1/5=7/10; phải trừ phần giao.",
+    "stem": "Cho \\(P(A)=\\frac25\\), \\(P(B)=\\frac12\\), \\(P(A\\cap B)=\\frac15\\). Tính \\(P(A\\cup B)\\).",
+    "answer_key": "\\(\\frac7{10}\\).",
+    "worked_solution": "Khi cộng hai xác suất riêng, phần giao bị tính hai lần. Dùng quy tắc cộng \\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)=\\frac25+\\frac12-\\frac15=\\frac7{10}\\).",
     "skill_ids": [
       "G11-B29-ADDITION_OVERLAP"
     ],
@@ -436,9 +436,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-C02",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "A,B xung khắc, P(A)=1/8, P(B)=3/8. Tính P(A∪B).",
-    "answer_key": "1/2.",
-    "worked_solution": "Giao rỗng nên cộng trực tiếp 1/8+3/8.",
+    "stem": "A, B xung khắc, \\(P(A)=\\frac18\\), \\(P(B)=\\frac38\\). Tính \\(P(A\\cup B)\\).",
+    "answer_key": "\\(\\frac12\\).",
+    "worked_solution": "Vì A, B xung khắc nên giao rỗng và xác suất giao bằng 0. Quy tắc cộng cho \\(P(A\\cup B)=\\frac18+\\frac38=\\frac48=\\frac12\\).",
     "skill_ids": [
       "G11-B29-ADDITION_DISJOINT"
     ],
@@ -467,9 +467,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-C03",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "P(K)=9/25. Tính P(K̄).",
-    "answer_key": "16/25.",
-    "worked_solution": "Biến cố và bù tạo thành Ω, nên 1−9/25.",
+    "stem": "Cho \\(P(K)=\\frac9{25}\\). Tính \\(P(\\overline K)\\).",
+    "answer_key": "\\(\\frac{16}{25}\\).",
+    "worked_solution": "K và biến cố đối không thể cùng xảy ra, hợp của chúng là toàn bộ không gian mẫu. Do đó \\(P(\\overline K)=1-P(K)=1-\\frac9{25}=\\frac{16}{25}\\).",
     "skill_ids": [
       "G11-B29-COMPLEMENT_PROB"
     ],
@@ -498,9 +498,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-C04",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Một lớp 25 học sinh: chỉ thích trà có 6, thích cả trà và cà phê có 4, chỉ thích cà phê có 5. Chọn đều 1 bạn: P(thích ít nhất một loại)?",
-    "answer_key": "3/5.",
-    "worked_solution": "Có 6+4+5=15 bạn thuộc hợp, xác suất 15/25=3/5.",
+    "stem": "Một lớp 25 học sinh: chỉ thích trà có 6, thích cả trà và cà phê có 4, chỉ thích cà phê có 5. Chọn đều ngẫu nhiên một bạn. Tính xác suất bạn đó thích ít nhất một loại.",
+    "answer_key": "\\(\\frac35\\).",
+    "worked_solution": "Ba nhóm được nêu không chồng lấn, nên số bạn thích ít nhất một loại là \\(6+4+5=15\\). Vì mọi học sinh có cùng khả năng được chọn, xác suất bằng \\(\\frac{15}{25}=\\frac35\\). Không trừ 4 lần nữa.",
     "skill_ids": [
       "G11-B29-VENN_COUNTS"
     ],
@@ -529,9 +529,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-C05",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Nếu P(A)=0,3 mà P(A∩B)=0,4, dữ liệu có thể đúng không?",
+    "stem": "Nếu \\(P(A)=0{,}3\\) mà \\(P(A\\cap B)=0{,}4\\), dữ liệu có thể đúng không?",
     "answer_key": "Không.",
-    "worked_solution": "Giao là tập con A nên P(A∩B)≤0,3.",
+    "worked_solution": "Mọi kết quả thuộc giao cũng thuộc A, tức \\(A\\cap B\\subset A\\). Do đó \\(P(A\\cap B)\\le P(A)=0{,}3\\). Giá trị 0,4 lớn hơn 0,3, nên dữ liệu mâu thuẫn.",
     "skill_ids": [
       "G11-B29-PROBABILITY_BOUNDS"
     ],
@@ -560,9 +560,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-C06",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Trong 60 phiếu, 26 chọn kênh A, 24 chọn B, 10 chọn cả hai. Chọn đều một phiếu, P(chọn A hoặc B)?",
-    "answer_key": "2/3.",
-    "worked_solution": "(26+24−10)/60=40/60=2/3.",
+    "stem": "Trong 60 phiếu, 26 chọn kênh A, 24 chọn kênh B, 10 chọn cả hai. Chọn đều ngẫu nhiên một phiếu. Tính xác suất chọn A hoặc B (kể cả cả hai).",
+    "answer_key": "\\(\\frac23\\).",
+    "worked_solution": "Khi cộng 26 và 24, mười phiếu chọn cả hai bị tính hai lần. Số phiếu thuộc hợp là \\(26+24-10=40\\). Xác suất bằng \\(\\frac{40}{60}=\\frac23\\).",
     "skill_ids": [
       "G11-B29-REAL_APPLICATION"
     ],
@@ -591,9 +591,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-P01",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "P(A∪B)=3/4, P(A)=1/2 và P(B)=3/5. Tìm P(A∩B).",
-    "answer_key": "7/20.",
-    "worked_solution": "P(A∩B)=1/2+3/5−3/4=10/20+12/20−15/20=7/20.",
+    "stem": "Cho \\(P(A\\cup B)=\\frac34\\), \\(P(A)=\\frac12\\), \\(P(B)=\\frac35\\). Tìm \\(P(A\\cap B)\\).",
+    "answer_key": "\\(\\frac7{20}\\).",
+    "worked_solution": "Từ quy tắc cộng, chuyển vế được \\(P(A\\cap B)=P(A)+P(B)-P(A\\cup B)\\). Thay số: \\(\\frac12+\\frac35-\\frac34=\\frac{10+12-15}{20}=\\frac7{20}\\).",
     "skill_ids": [
       "G11-B29-ADDITION_OVERLAP"
     ],
@@ -622,9 +622,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-P02",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "A,B xung khắc có P(A)=0,45, P(B)=0,65. Dữ liệu có hợp lý?",
+    "stem": "A, B xung khắc với \\(P(A)=0{,}45\\), \\(P(B)=0{,}65\\). Dữ liệu có hợp lí không?",
     "answer_key": "Không.",
-    "worked_solution": "Xung khắc ⇒ P(A∪B)=1,10>1, trái giới hạn xác suất.",
+    "worked_solution": "Xung khắc cho xác suất giao bằng 0, nên \\(P(A\\cup B)=0{,}45+0{,}65=1{,}10\\). Xác suất phải thuộc \\([0;1]\\), vì vậy dữ liệu không thể đồng thời đúng.",
     "skill_ids": [
       "G11-B29-ADDITION_DISJOINT"
     ],
@@ -653,9 +653,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-P03",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Một phép thử có xác suất lỗi 1/20. Xác suất không lỗi là bao nhiêu?",
-    "answer_key": "19/20.",
-    "worked_solution": "Hai biến cố lỗi và không lỗi là bù nhau.",
+    "stem": "Một phép thử có xác suất lỗi bằng \\(\\frac1{20}\\). Tính xác suất không lỗi.",
+    "answer_key": "\\(\\frac{19}{20}\\).",
+    "worked_solution": "Lỗi và không lỗi là hai biến cố đối nhau. Do đó xác suất không lỗi là \\(1-\\frac1{20}=\\frac{19}{20}\\). Không cần giả thiết độc lập.",
     "skill_ids": [
       "G11-B29-COMPLEMENT_PROB"
     ],
@@ -684,9 +684,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-P04",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Trong 100 người, 40 thích A, 35 thích B và 15 thích cả hai. Hỏi bao nhiêu người không thích A lẫn B?",
+    "stem": "Trong 100 người, 40 thích A, 35 thích B và 15 thích cả hai. Có bao nhiêu người không thích loại nào trong hai loại A, B?",
     "answer_key": "40 người.",
-    "worked_solution": "Hợp có 40+35−15=60 người; ngoài hợp 100−60=40.",
+    "worked_solution": "Số người thích ít nhất một loại là \\(40+35-15=60\\). Người không thích loại nào nằm ngoài hợp, nên có \\(100-60=40\\) người. Không nhầm với người không thích đồng thời cả hai.",
     "skill_ids": [
       "G11-B29-VENN_COUNTS"
     ],
@@ -715,9 +715,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-P05",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "P(A)=0,4, P(B)=0,5, P(A∩B)=0,2. Tính hợp và kiểm nó không nhỏ hơn xác suất riêng.",
-    "answer_key": "0,7.",
-    "worked_solution": "Hợp=0,4+0,5−0,2=0,7≥0,5 và ≥0,4.",
+    "stem": "Cho \\(P(A)=0{,}4\\), \\(P(B)=0{,}5\\), \\(P(A\\cap B)=0{,}2\\). Tính xác suất hợp và kiểm nó không nhỏ hơn mỗi xác suất riêng.",
+    "answer_key": "\\(0{,}7\\).",
+    "worked_solution": "Dùng quy tắc cộng: \\(P(A\\cup B)=0{,}4+0{,}5-0{,}2=0{,}7\\). Hợp chứa cả A và B; đúng là \\(0{,}7\\ge0{,}4\\) và \\(0{,}7\\ge0{,}5\\). Kết quả phù hợp tính chất xác suất.",
     "skill_ids": [
       "G11-B29-PROBABILITY_BOUNDS"
     ],
@@ -746,9 +746,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B29-P06",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Một nhóm 48 bạn có 21 bạn học vẽ, 18 bạn học nhạc, 8 bạn học cả hai. Chọn đều một bạn, xác suất không học môn nào?",
-    "answer_key": "17/48.",
-    "worked_solution": "Hợp=21+18−8=31; không học môn nào=48−31=17.",
+    "stem": "Một nhóm 48 bạn có 21 bạn học vẽ, 18 bạn học nhạc, 8 bạn học cả hai. Chọn đều ngẫu nhiên một bạn. Tính xác suất không học môn nào trong hai môn.",
+    "answer_key": "\\(\\frac{17}{48}\\).",
+    "worked_solution": "Số bạn học ít nhất một môn là \\(21+18-8=31\\). Có \\(48-31=17\\) bạn không học môn nào. Vì chọn đều trong 48 bạn, xác suất bằng \\(\\frac{17}{48}\\).",
     "skill_ids": [
       "G11-B29-REAL_APPLICATION"
     ],
@@ -777,9 +777,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-C01",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "A,B độc lập; P(A)=3/10, P(B)=2/5. Tính P(A∩B).",
-    "answer_key": "3/25.",
-    "worked_solution": "Nhân 3/10·2/5=6/50=3/25 do giả thiết độc lập.",
+    "stem": "A, B độc lập, \\(P(A)=\\frac3{10}\\), \\(P(B)=\\frac25\\). Tính \\(P(A\\cap B)\\).",
+    "answer_key": "\\(\\frac3{25}\\).",
+    "worked_solution": "Vì hai biến cố độc lập nên quy tắc nhân cho \\(P(A\\cap B)=P(A)P(B)=\\frac3{10}\\cdot\\frac25=\\frac6{50}=\\frac3{25}\\).",
     "skill_ids": [
       "G11-B30-MULTIPLY_INDEPENDENT"
     ],
@@ -808,9 +808,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-C02",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "P(A)=3/4, P(B)=1/3, P(A∩B)=1/4. Độc lập không?",
+    "stem": "Cho \\(P(A)=\\frac34\\), \\(P(B)=\\frac13\\), \\(P(A\\cap B)=\\frac14\\). A và B có độc lập không?",
     "answer_key": "Có.",
-    "worked_solution": "3/4·1/3=1/4, đúng tiêu chuẩn.",
+    "worked_solution": "Tính tích hai xác suất riêng: \\(\\frac34\\cdot\\frac13=\\frac14\\), đúng bằng \\(P(A\\cap B)\\). Theo tiêu chuẩn độc lập, A và B độc lập.",
     "skill_ids": [
       "G11-B30-VERIFY_INDEPENDENCE"
     ],
@@ -839,9 +839,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-C03",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Ba lần thử độc lập, mỗi lần xác suất đạt 1/2. Tính cả ba lần đạt.",
-    "answer_key": "1/8.",
-    "worked_solution": "(1/2)^3=1/8, cần ba lần độc lập, không chỉ có cùng tỉ lệ.",
+    "stem": "Ba lần thử độc lập đồng thời, mỗi lần có xác suất đạt \\(\\frac12\\). Tính xác suất cả ba lần đều đạt.",
+    "answer_key": "\\(\\frac18\\).",
+    "worked_solution": "Gọi ba biến cố đạt tương ứng là A, B, C. Vì ba phép thử độc lập đồng thời, xác suất cả ba đạt bằng tích ba xác suất: \\((\\frac12)^3=\\frac18\\). Cùng xác suất riêng không đủ nếu thiếu độc lập.",
     "skill_ids": [
       "G11-B30-REPEATED_TRIALS"
     ],
@@ -870,9 +870,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-C04",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Hai cảm biến độc lập, mỗi cảm biến có xác suất thất bại 1/5. Tính xác suất ít nhất một cảm biến hoạt động.",
-    "answer_key": "24/25.",
-    "worked_solution": "Bù của ít nhất một hoạt động là cả hai thất bại: 1−(1/5)^2=24/25.",
+    "stem": "Hai cảm biến hoạt động độc lập, mỗi cảm biến có xác suất thất bại \\(\\frac15\\). Tính xác suất ít nhất một cảm biến hoạt động thành công.",
+    "answer_key": "\\(\\frac{24}{25}\\).",
+    "worked_solution": "Biến cố đối của ít nhất một thành công là cả hai thất bại. Do độc lập, xác suất cả hai thất bại là \\((\\frac15)^2=\\frac1{25}\\). Lấy phần bù, được \\(1-\\frac1{25}=\\frac{24}{25}\\).",
     "skill_ids": [
       "G11-B30-AT_LEAST_ONE"
     ],
@@ -901,9 +901,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-C05",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Hai biến cố xung khắc có P(A)=1/3, P(B)=1/4. Chúng độc lập không?",
+    "stem": "Hai biến cố xung khắc có \\(P(A)=\\frac13\\), \\(P(B)=\\frac14\\). Chúng có độc lập không?",
     "answer_key": "Không.",
-    "worked_solution": "P(A∩B)=0 khác (1/3)(1/4)=1/12.",
+    "worked_solution": "Xung khắc cho \\(P(A\\cap B)=0\\). Nhưng \\(P(A)P(B)=\\frac13\\cdot\\frac14=\\frac1{12}>0\\). Vì không bằng nhau, hai biến cố không độc lập.",
     "skill_ids": [
       "G11-B30-INDEPENDENT_VS_DISJOINT"
     ],
@@ -932,9 +932,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-C06",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Hai máy in hoạt động độc lập, cơ hội in thành công lần lượt 4/5 và 5/6. P(cả hai thành công)?",
-    "answer_key": "2/3.",
-    "worked_solution": "4/5·5/6=2/3; độc lập được nêu rõ trong đề.",
+    "stem": "Hai máy in hoạt động độc lập, xác suất in thành công lần lượt \\(\\frac45\\) và \\(\\frac56\\). Tính xác suất cả hai thành công.",
+    "answer_key": "\\(\\frac23\\).",
+    "worked_solution": "Do độc lập, biến cố cả hai máy in thành công có xác suất bằng tích hai xác suất riêng: \\(\\frac45\\cdot\\frac56=\\frac46=\\frac23\\).",
     "skill_ids": [
       "G11-B30-REAL_CONTEXT"
     ],
@@ -963,9 +963,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-P01",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Hai sự kiện độc lập, P(A)=7/10, P(B)=3/7. Tính P(A∩B).",
-    "answer_key": "3/10.",
-    "worked_solution": "7/10·3/7=3/10; triệt tiêu 7.",
+    "stem": "Hai biến cố độc lập, \\(P(A)=\\frac7{10}\\), \\(P(B)=\\frac37\\). Tính \\(P(A\\cap B)\\).",
+    "answer_key": "\\(\\frac3{10}\\).",
+    "worked_solution": "Giả thiết độc lập cho phép nhân: \\(P(A\\cap B)=\\frac7{10}\\cdot\\frac37=\\frac3{10}\\). Không sử dụng quy tắc nhân nếu chưa có căn cứ độc lập.",
     "skill_ids": [
       "G11-B30-MULTIPLY_INDEPENDENT"
     ],
@@ -994,9 +994,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-P02",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "P(A)=0,6, P(B)=0,5 nhưng P(A∩B)=0,2. Độc lập?",
+    "stem": "Cho \\(P(A)=0{,}6\\), \\(P(B)=0{,}5\\), \\(P(A\\cap B)=0{,}2\\). Chúng có độc lập không?",
     "answer_key": "Không.",
-    "worked_solution": "0,6·0,5=0,3 khác 0,2.",
+    "worked_solution": "Tích xác suất riêng bằng \\(0{,}6\\cdot0{,}5=0{,}3\\), khác xác suất giao 0,2. Do không thỏa tiêu chuẩn độc lập, hai biến cố không độc lập.",
     "skill_ids": [
       "G11-B30-VERIFY_INDEPENDENCE"
     ],
@@ -1025,9 +1025,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-P03",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Ba công tắc độc lập, xác suất bật lần lượt 1/2, 2/3, 3/4. Xác suất cả ba bật?",
-    "answer_key": "1/4.",
-    "worked_solution": "Tích 1/2·2/3·3/4=1/4.",
+    "stem": "Ba công tắc độc lập đồng thời, xác suất bật lần lượt \\(\\frac12,\\frac23,\\frac34\\). Tính xác suất cả ba bật.",
+    "answer_key": "\\(\\frac14\\).",
+    "worked_solution": "Theo giả thiết độc lập đồng thời, xác suất giao của ba biến cố bật là tích \\(\\frac12\\cdot\\frac23\\cdot\\frac34=\\frac14\\). Chỉ có độc lập từng cặp thì chưa đủ để kết luận tích ba xác suất.",
     "skill_ids": [
       "G11-B30-REPEATED_TRIALS"
     ],
@@ -1056,9 +1056,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-P04",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Hai lời nhắc độc lập có xác suất được nhận lần lượt 3/5 và 1/2. Tính xác suất ít nhất một lời nhắc được nhận.",
-    "answer_key": "4/5.",
-    "worked_solution": "1−(2/5)(1/2)=1−1/5=4/5.",
+    "stem": "Hai lời nhắc độc lập có xác suất được nhận lần lượt \\(\\frac35\\) và \\(\\frac12\\). Tính xác suất ít nhất một lời nhắc được nhận.",
+    "answer_key": "\\(\\frac45\\).",
+    "worked_solution": "Biến cố đối là cả hai lời nhắc đều không được nhận. Các xác suất không nhận lần lượt là \\(\\frac25\\) và \\(\\frac12\\); hai biến cố đối vẫn độc lập. Xác suất không nhận lời nào bằng \\(\\frac25\\cdot\\frac12=\\frac15\\). Vậy xác suất cần tìm là \\(1-\\frac15=\\frac45\\).",
     "skill_ids": [
       "G11-B30-AT_LEAST_ONE"
     ],
@@ -1087,9 +1087,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-P05",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "A,B độc lập với P(A)=1/2, P(B)=1/2. Có thể A∩B rỗng không?",
+    "stem": "A, B độc lập với \\(P(A)=P(B)=\\frac12\\). Có thể \\(A\\cap B=\\varnothing\\) không?",
     "answer_key": "Không.",
-    "worked_solution": "Độc lập cho giao có xác suất 1/4>0 nên không thể rỗng.",
+    "worked_solution": "Độc lập cho \\(P(A\\cap B)=\\frac12\\cdot\\frac12=\\frac14>0\\). Nếu giao rỗng, xác suất giao phải bằng 0, mâu thuẫn. Do đó giao không rỗng.",
     "skill_ids": [
       "G11-B30-INDEPENDENT_VS_DISJOINT"
     ],
@@ -1118,9 +1118,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-P06",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Một thiết bị có hai môđun kiểm lỗi độc lập với xác suất phát hiện lần lượt 0,8 và 0,7. Xác suất cả hai cùng phát hiện?",
-    "answer_key": "0,56.",
-    "worked_solution": "0,8×0,7=0,56; xác suất không phải 1,5.",
+    "stem": "Một thiết bị có hai môđun kiểm lỗi độc lập với xác suất phát hiện lỗi lần lượt 0,8 và 0,7. Tính xác suất cả hai cùng phát hiện.",
+    "answer_key": "\\(0{,}56\\).",
+    "worked_solution": "Giả thiết độc lập cho xác suất cả hai phát hiện bằng tích \\(0{,}8\\cdot0{,}7=0{,}56\\). Không cộng hai xác suất vì đề hỏi cùng xảy ra; tổng 1,5 còn vượt 1.",
     "skill_ids": [
       "G11-B30-REAL_CONTEXT"
     ],
@@ -1149,9 +1149,9 @@
   {
     "item_id": "THPT-G11-CHVIII-B30-P07",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Ba phép thử độc lập có xác suất lỗi 1/2, 1/3, 1/4. Xác suất ít nhất một lần không lỗi?",
-    "answer_key": "23/24.",
-    "worked_solution": "Bù là cả ba lỗi: 1−(1/2)(1/3)(1/4)=23/24.",
+    "stem": "Ba phép thử độc lập đồng thời có xác suất lỗi lần lượt \\(\\frac12,\\frac13,\\frac14\\). Tính xác suất ít nhất một lần không lỗi.",
+    "answer_key": "\\(\\frac{23}{24}\\).",
+    "worked_solution": "Biến cố đối là cả ba lần đều lỗi. Vì độc lập đồng thời, xác suất đó bằng \\(\\frac12\\cdot\\frac13\\cdot\\frac14=\\frac1{24}\\). Vậy xác suất có ít nhất một lần không lỗi là \\(1-\\frac1{24}=\\frac{23}{24}\\).",
     "skill_ids": [
       "G11-B30-AT_LEAST_ONE"
     ],
@@ -1180,9 +1180,9 @@
   {
     "item_id": "THPT-G11-CHVIII-CHVIII-P01",
     "content_version": "THPT-G11-CHVIII-B28-B30-R00",
-    "stem": "Hai biến cố độc lập có P(A)=2/5, P(B)=1/4. Tính P(A∩B), P(A∪B) và chỉ ra công thức nào dùng trước.",
-    "answer_key": "P(A∩B)=1/10; P(A∪B)=11/20.",
-    "worked_solution": "Dùng nhân cho giao vì độc lập, rồi cộng có trừ giao: 2/5+1/4−1/10=8/20+5/20−2/20=11/20.",
+    "stem": "Hai biến cố độc lập có \\(P(A)=\\frac25\\), \\(P(B)=\\frac14\\). Tính \\(P(A\\cap B)\\), \\(P(A\\cup B)\\) và chỉ ra công thức nào dùng trước.",
+    "answer_key": "\\(P(A\\cap B)=\\frac1{10}\\); \\(P(A\\cup B)=\\frac{11}{20}\\).",
+    "worked_solution": "Trước hết dùng quy tắc nhân vì A, B độc lập: \\(P(A\\cap B)=\\frac25\\cdot\\frac14=\\frac1{10}\\). Sau đó dùng quy tắc cộng có trừ giao: \\(P(A\\cup B)=\\frac25+\\frac14-\\frac1{10}=\\frac{8+5-2}{20}=\\frac{11}{20}\\). Kết quả hợp không nhỏ hơn từng xác suất riêng.",
     "skill_ids": [
       "G11-CHVIII-INTEGRATED"
     ],
