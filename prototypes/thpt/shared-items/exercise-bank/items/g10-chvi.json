@@ -10,7 +10,7 @@
       "FUNCTION_MAPPING"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Kiểm tra mỗi giá trị x có đúng một giá trị y hay không."
     ],
@@ -42,7 +42,7 @@
       "FUNCTION_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Biểu thức dưới căn bậc hai phải không âm."
     ],
@@ -74,7 +74,7 @@
       "FUNCTION_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Mẫu số phải khác 0."
     ],
@@ -106,7 +106,7 @@
       "FUNCTION_PIECEWISE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Xác định nhánh chứa mốc \\(x=3\\); với \\(x>3\\) chỉ tính thêm phần \\(x-3\\)."
     ],
@@ -138,7 +138,7 @@
       "FUNCTION_MONOTONICITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Viết hàm trị tuyệt đối thành hai công thức."
     ],
@@ -170,7 +170,7 @@
       "FUNCTION_MODELING"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Xét từng miền rồi lấy hợp nghiệm."
     ],
@@ -202,7 +202,7 @@
       "QUAD_SIGN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Tính \\(\\Delta\\) và xét dấu a."
     ],
@@ -234,7 +234,7 @@
       "QUAD_DOUBLE_ROOT_SIGN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Xét khi bình phương bằng 0, rồi kiểm dấu nghiêm và không nghiêm."
     ],
@@ -266,7 +266,7 @@
       "QUAD_INEQUALITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tìm nghiệm và xét dấu giữa hai nghiệm."
     ],
@@ -298,7 +298,7 @@
       "QUAD_INEQUALITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Chú ý hệ số a âm."
     ],
@@ -330,7 +330,7 @@
       "QUAD_PARAMETER"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Dấu \\(>0\\) với mọi x đòi hỏi \\(\\Delta<0\\), không phải \\(\\Delta\\le0\\)."
     ],
@@ -362,7 +362,7 @@
       "QUAD_MODELING"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Lập diện tích và giữ miền độ dài thực tế."
     ],
@@ -394,7 +394,7 @@
       "RADICAL_CONDITION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Vế phải cần không âm trước khi bình phương."
     ],
@@ -426,7 +426,7 @@
       "RADICAL_TWO_SIDES"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Xem miền của căn thứ hai trước khi bình phương."
     ],
@@ -458,7 +458,7 @@
       "RADICAL_FILTER"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Vế phải không âm; thử lại mọi nghiệm ứng viên."
     ],
@@ -490,7 +490,7 @@
       "RADICAL_FILTER"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Không mặc định phương trình chỉ có một nghiệm."
     ],
@@ -522,7 +522,7 @@
       "RADICAL_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Kiểm điều kiện thực của cả hai biểu thức dưới căn."
     ],
@@ -554,7 +554,7 @@
       "RADICAL_MODELING"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Dùng định lí Pitago và giữ điều kiện \\(x>0\\)."
     ],
@@ -600,7 +600,7 @@
       "B16_OUT_02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Viết \\(x+3=x-(-3)\\), rồi so sánh với \\(a(x-h)^2+k\\)."
     ],
@@ -631,7 +631,7 @@
       "B16_OUT_01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Hãy đọc hệ số đứng trước \\(x^2\\) sau khi thu gọn và dùng định nghĩa \\(a\\ne0\\)."
     ],
@@ -662,7 +662,7 @@
       "B16_OUT_03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Viết \\(g(x)=(x-3)^2-4\\) rồi so khoảng cách của 2 và 4 đến 3."
     ],
@@ -693,7 +693,7 @@
       "B16_OUT_04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Vì hệ số 2 dương, bình phương không âm; đọc hai nhánh bên trái và bên phải từ trục \\(x=4\\)."
     ],
@@ -724,7 +724,7 @@
       "B16_OUT_05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Đỉnh của parabol mở xuống nằm ở \\(t=3\\). Đừng quên kiểm \\(3\\in[0;6]\\)."
     ],
@@ -755,7 +755,7 @@
       "B16_OUT_02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Tách \\(x^2+6x=(x+3)^2-9\\)."
     ],
@@ -800,7 +800,7 @@
       "B16_OUT_03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 1,
     "hints": [
       "Đặt \\(y=0\\), chia cả hai vế cho \\(-2\\), rồi phân tích thành nhân tử."
     ],
@@ -832,7 +832,7 @@
       "B16_OUT_01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Điều kiện bậc hai chỉ phụ thuộc hệ số \\(k+1\\). Đa thức xác định tại mọi số thực."
     ],
@@ -863,7 +863,7 @@
       "B16_OUT_02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Hoàn thành bình phương hoặc dùng \\(x=-\\frac b{2a}\\) để tìm hoành độ đỉnh; giải phương trình \\(f(x)=0\\) riêng."
     ],
@@ -894,7 +894,7 @@
       "B16_OUT_03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Viết \\(f(x)=(x+1)^2-9\\). Giao \\(Oy\\): cho \\(x=0\\). Giao \\(Ox\\): giải \\(f(x)=0\\)."
     ],
@@ -925,7 +925,7 @@
       "B16_OUT_04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 2,
     "hints": [
       "Đỉnh ở \\(x=2\\) nằm ngoài đoạn \\([3;5]\\): không áp dụng máy móc GTLN 7 của toàn trục số."
     ],
@@ -956,7 +956,7 @@
       "B16_OUT_05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": 3,
     "hints": [
       "Cạnh song song tường cần rào dài \\(36-2x\\) (m), nên \\(0<x<18\\). Đưa \\(S(x)=x(36-2x)\\) về dạng đỉnh."
     ],
