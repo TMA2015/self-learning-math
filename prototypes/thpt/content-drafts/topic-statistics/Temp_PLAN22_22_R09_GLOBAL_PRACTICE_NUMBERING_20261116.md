@@ -106,7 +106,7 @@ Mẫu 1,1,4,6,8 có trung bình và mốt nào?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Trung bình bằng 20/5=4. Mốt bằng 1 vì 1 xuất hiện hai lần, nhiều nhất. Trung vị bằng 4, khác mốt.
+Trung bình bằng \(\frac{20}{5}=4\). Mốt bằng 1 vì 1 xuất hiện hai lần, nhiều nhất. Trung vị bằng 4, khác mốt.
 
 **Kiểm lỗi**
 
@@ -210,7 +210,7 @@ Mẫu 2,3,4,5,6,7,25 có IQR và hàng rào trên bao nhiêu?
 
 **Kiểm lỗi**
 
-Đọc đúng Q1/Q3 trước khi gán nhãn ngoại lệ; đừng loại bỏ điểm dữ liệu chỉ vì trông khác. Đọc lại **Kiến thức 1.4**, rồi tự làm **Bài luyện 21**, **Bài luyện 31** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
+Đọc đúng \(Q_1,Q_3\) trước khi gán nhãn ngoại lệ; đừng loại bỏ điểm dữ liệu chỉ vì trông khác. Đọc lại **Kiến thức 1.4**, rồi tự làm **Bài luyện 21**, **Bài luyện 31** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -219,7 +219,7 @@ Mẫu 2,3,4,5,6,7,25 có IQR và hàng rào trên bao nhiêu?
 
 Hai nhóm cùng trung bình nhưng mức ổn định khác nhau. Làm thế nào đo độ lệch mà các số âm và dương không triệt tiêu?
 
-Để so sánh hai nhóm có cùng trung bình, xét sai lệch từng giá trị so với \(\bar x\). **Phương sai mô tả** \(s^2=\frac1n\sum_{i=1}^n(x_i-\bar x)^2\), **độ lệch chuẩn** \(s=\sqrt{s^2}\). Dữ liệu đo bằng phút thì \(s\) tính phút, \(s^2\) tính phút bình phương. Ví dụ A=3,4,5 và B=1,4,7 đều có trung bình 4; \(s_A^2=\frac23\), \(s_B^2=6\) nên A ổn định hơn. Không tự thay mẫu số \(n\) bằng \(n-1\) trong công thức SGK này.
+Để so sánh hai nhóm có cùng trung bình, xét sai lệch từng giá trị so với \(\bar x\). **Phương sai mô tả** \(s^2=\frac1n\sum_{i=1}^n(x_i-\bar x)^2\), **độ lệch chuẩn** \(s=\sqrt{s^2}\). Dữ liệu đo bằng phút thì \(s\) tính phút, \(s^2\) tính phút bình phương. Ví dụ \(A=(3;4;5)\) và \(B=(1;4;7)\) đều có trung bình 4; \(s_A^2=\frac23\), \(s_B^2=6\) nên A ổn định hơn. Không tự thay mẫu số \(n\) bằng \(n-1\) trong công thức SGK này.
 
 
 
@@ -237,10 +237,10 @@ Hai nhóm cùng trung bình nhưng mức ổn định khác nhau. Làm thế nà
 Bình phương sai lệch giúp các độ lệch âm/dương không triệt tiêu. Theo phương sai mô tả SGK, chia **cho \(n\)** chứ không tự đổi sang \(n-1\). Khi tính \(s^2\), hãy kiểm \(\sum(x_i-\bar x)^2\ge0\); nếu phương sai âm, chắc chắn có lỗi số học.
 <!-- OUTCOME_REF: G10-B14-STDDEV -->
 
-Độ lệch chuẩn là căn bậc hai của phương sai, giúp thước đo trở lại cùng **đơn vị** với dữ liệu. Nếu số đo tính bằng cm, \(s\) tính cm nhưng \(s^2\) tính cm². So sánh độ lệch chuẩn có ý nghĩa khi các mẫu dùng cùng đơn vị và bối cảnh.
+Độ lệch chuẩn là căn bậc hai của phương sai, giúp thước đo trở lại cùng **đơn vị** với dữ liệu. Nếu số đo tính bằng cm, \(s\) tính cm nhưng \(s^2\) tính \(\mathrm{cm}^2\). So sánh độ lệch chuẩn có ý nghĩa khi các mẫu dùng cùng đơn vị và bối cảnh.
 <!-- OUTCOME_REF: G10-B14-COMPARISON -->
 
-Hai dãy có cùng số trung bình không nhất thiết phân tán như nhau. Với A=3,4,5 và B=1,4,7, trung bình đều là 4, nhưng B biến động mạnh hơn. Hãy ghi rõ bạn đang so theo phương sai, độ lệch chuẩn hay IQR; không kết luận nguyên nhân chỉ từ khác biệt thống kê.
+Hai dãy có cùng số trung bình không nhất thiết phân tán như nhau. Với \(A=(3;4;5)\) và \(B=(1;4;7)\), trung bình đều là 4, nhưng B biến động mạnh hơn. Hãy ghi rõ bạn đang so theo phương sai, độ lệch chuẩn hay IQR; không kết luận nguyên nhân chỉ từ khác biệt thống kê.
 
 **Có thể kiểm công thức phương sai bằng cách rút gọn đại số.** Từ công thức mô tả với mẫu số \(n>0\) và \(\bar x=\frac1n\sum x_i\), khai triển bình phương:
 
@@ -283,7 +283,7 @@ Lập bảng x−x̄ rồi bình phương và chia đúng n; kiểm phương sai
 
 Khi số đo nằm đúng ranh giới hai khoảng, ta phải đếm thế nào để không tính hai lần?
 
-Khi có quá nhiều quan sát, gom thành các khoảng **trái đóng, phải mở** \([a;b)\) để một số ở ranh giới chỉ thuộc **một** nhóm. Độ rộng nhóm \(h=b-a\); tần số \(f_i\) là số phần tử thuộc nhóm, tổng \(\sum f_i=n\). Ví dụ dữ liệu 0,9,10,19,20 ghép \([0;10),[10;20),[20;30)\) có tần số 2,2,1. Sau ghép nhóm, thông tin từng quan sát mất đi: không thể khẳng định mọi số ở nhóm [10,20) đều bằng 15.
+Khi có quá nhiều quan sát, gom thành các khoảng **trái đóng, phải mở** \([a;b)\) để một số ở ranh giới chỉ thuộc **một** nhóm. Độ rộng nhóm \(h=b-a\); tần số \(f_i\) là số phần tử thuộc nhóm, tổng \(\sum f_i=n\). Ví dụ dữ liệu 0,9,10,19,20 ghép \([0;10),[10;20),[20;30)\) có tần số 2,2,1. Sau ghép nhóm, thông tin từng quan sát mất đi: không thể khẳng định mọi số ở nhóm \([10;20)\) đều bằng 15.
 
 
 
@@ -296,13 +296,13 @@ Khi có quá nhiều quan sát, gom thành các khoảng **trái đóng, phải 
 
 <!-- OUTCOME_REF: G11-B08-GROUPED-DEFINITION -->
 
-Bảng ghép nhóm thay các số đo riêng lẻ bằng số phần tử nằm trong các khoảng. Được lợi khả năng đọc tổng quan nhưng **mất độ chính xác từng cá thể**. Khi nhóm [10,20) có tần số 5, ta biết có năm quan sát từ 10 đến dưới 20, không biết mỗi người bằng 15.
+Bảng ghép nhóm thay các số đo riêng lẻ bằng số phần tử nằm trong các khoảng. Được lợi khả năng đọc tổng quan nhưng **mất độ chính xác từng cá thể**. Khi nhóm \([10;20)\) có tần số 5, ta biết có năm quan sát từ 10 đến dưới 20, không biết mỗi người bằng 15.
 <!-- OUTCOME_REF: G11-B08-CLASS-BOUNDARIES -->
 
-Trong ký hiệu [10,20), 10 được lấy nhưng 20 không; số 20 chuyển sang [20,30). Điều này bảo đảm một điểm biên không bị đếm hai lần. Trước khi lập bảng, hãy kiểm nhóm có liền nhau, không trùng và không bỏ lọt số đo cần xét.
+Trong ký hiệu \([10;20)\), 10 được lấy nhưng 20 không; số 20 chuyển sang \([20;30)\). Điều này bảo đảm một điểm biên không bị đếm hai lần. Trước khi lập bảng, hãy kiểm nhóm có liền nhau, không trùng và không bỏ lọt số đo cần xét.
 <!-- OUTCOME_REF: G11-B08-GROUP-WIDTH -->
 
-Độ rộng nhóm \(h=b-a\) phải dương. Nhóm [0,10) có độ rộng 10, khác nhóm [10,30) rộng 20. Với độ rộng không đều, chỉ so chiều cao cột tần số hoặc dùng công thức mốt cho nhóm bằng nhau có thể gây sai; phải kiểm điều kiện nhóm của bài.
+Độ rộng nhóm \(h=b-a\) phải dương. Nhóm \([0;10)\) có độ rộng 10, khác nhóm \([10;30)\) rộng 20. Với độ rộng không đều, chỉ so chiều cao cột tần số hoặc dùng công thức mốt cho nhóm bằng nhau có thể gây sai; phải kiểm điều kiện nhóm của bài.
 <!-- OUTCOME_REF: G11-B08-FREQUENCY-TABLE -->
 
 Mỗi quan sát được gán đúng **một** khoảng, rồi đếm tần số. Tổng \(\sum f_i\) phải bằng số quan sát gốc \(n\); nếu thiếu hoặc dư, kiểm ngay các số ở ranh giới. Sau khi tạo bảng, đọc tỷ lệ \(\frac{f_i}{n}\) thay vì tự gán xác suất hay giá trị trung điểm cho mọi cá thể.
@@ -326,7 +326,7 @@ Tần số 8 trên tổng 20 nghĩa là 40% mẫu nằm trong khoảng đó. Đi
 
 **Vận dụng**
 
-Tần số của các nhóm [0,10), [10,20), [20,30) với dữ liệu 3,10,10,20,29?
+Tần số của các nhóm \([0;10)\), \([10;20)\), \([20;30)\) với dữ liệu 3,10,10,20,29?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -408,7 +408,7 @@ Không lấy trung bình ba trung điểm nếu nhóm có tần số khác nhau.
 
 Sau khi chỉ còn bảng tần số theo khoảng, ta biết trung vị thật hay phải ước lượng qua tần số tích lũy?
 
-Với bảng nhóm, tìm nhóm chứa vị trí \(p\) từ **tần số tích lũy**, rồi nội suy: \(\mathrm{estimate}=L+\frac{(p-F_{\mathrm{trước}})h}{f}\) khi tần số nhóm \(f>0\). Với trung vị dùng \(p=\frac n2\), tứ phân vị \(p=\frac n4,\frac{3n}4\). Ví dụ nhóm [0,10):4, [10,20):6, [20,30):8, [30,40):2 có \(n=20\), tích lũy 4,10,18,20. \(M_e=20\), \(Q_1=10+\frac{(5-4)10}{6}=\frac{35}{3}\), \(Q_3=20+\frac{(15-10)10}{8}=26{,}25\). Đều là **ước lượng** từ bảng, không là số gốc chính xác.
+Với bảng nhóm, tìm nhóm chứa vị trí \(p\) từ **tần số tích lũy**, rồi nội suy: \(\mathrm{estimate}=L+\frac{(p-F_{\mathrm{trước}})h}{f}\) khi tần số nhóm \(f>0\). Với trung vị dùng \(p=\frac n2\), tứ phân vị \(p=\frac n4,\frac{3n}4\). Ví dụ nhóm \([0;10):4\), \([10;20):6\), \([20;30):8\), \([30;40):2\) có \(n=20\), tích lũy 4,10,18,20. \(M_e=20\), \(Q_1=10+\frac{(5-4)10}{6}=\frac{35}{3}\), \(Q_3=20+\frac{(15-10)10}{8}=26{,}25\). Đều là **ước lượng** từ bảng, không là số gốc chính xác.
 
 | Khoảng | Tần số | Tần số tích lũy |
 |---|---:|---:|
@@ -417,7 +417,7 @@ Với bảng nhóm, tìm nhóm chứa vị trí \(p\) từ **tần số tích l�
 | [20;30) | 8 | 18 |
 | [30;40) | 2 | 20 |
 
-**Vì sao nội suy?** Khi không biết từng giá trị trong nhóm, ta giả định các quan sát được phân bố đều trong khoảng để ước lượng. Nếu vị trí cần tìm đã đi qua một phần của tần số nhóm, ta đi qua cùng tỉ lệ chiều rộng khoảng. Chẳng hạn vị trí thứ 5 nằm trong nhóm [10;20), sau 4 quan sát của nhóm trước: ta đi thêm 1/6 chiều rộng 10, tức 10/6 kể từ cận trái 10.
+**Vì sao nội suy?** Khi không biết từng giá trị trong nhóm, ta giả định các quan sát được phân bố đều trong khoảng để ước lượng. Nếu vị trí cần tìm đã đi qua một phần của tần số nhóm, ta đi qua cùng tỉ lệ chiều rộng khoảng. Chẳng hạn vị trí thứ 5 nằm trong nhóm \([10;20)\), sau 4 quan sát của nhóm trước: ta đi thêm \(\frac16\) chiều rộng 10, tức \(\frac{10}6\) kể từ cận trái 10.
 
 ![Biểu đồ tần số ghép nhóm của 20 quan sát với bốn cột](assets/Temp_STATISTICS_GROUPED_FREQ_R00_20261111.svg)
 
@@ -456,7 +456,7 @@ Với \(Q_1,Q_3\), thay vị trí \(p\) bằng \(\frac n4\) hoặc \(\frac{3n}4\
 
 **Vận dụng**
 
-Nhóm [0,10):5, [10,20):5, [20,30):10: ước lượng Me, Q1, Q3.
+Nhóm \([0;10):5\), \([10;20):5\), \([20;30):10\): ước lượng \(M_e,Q_1,Q_3\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -510,11 +510,11 @@ Từ bảng nhóm, trung bình, trung vị, tứ phân vị và mốt đều đ�
 
 **Vận dụng**
 
-Nhóm [0,10):4,[10,20):10,[20,30):6, cùng độ rộng: ước lượng mốt.
+Nhóm \([0;10):4\),\([10;20):10\),\([20;30):6\), cùng độ rộng: ước lượng mốt.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Nhóm mốt [10,20); \(M_o=10+\frac{6}{6+4}\cdot10=16\).
+Nhóm mốt \([10;20)\); \(M_o=10+\frac{6}{6+4}\cdot10=16\).
 
 **Kiểm lỗi**
 
@@ -528,7 +528,7 @@ Kiểm mẫu số dương, tần số các nhóm kề và điều kiện cùng �
 
 Từ bảng ghép nhóm, ta còn biết giá trị nhỏ nhất/lớn nhất thật hay chỉ biết chúng nằm trong khoảng nào?
 
-Khi dữ liệu chỉ còn nhóm, ta không biết số nhỏ nhất/lớn nhất thật. Độ rộng phủ nhóm không rỗng từ \([a_1;b_1)\) tới \([a_k;b_k)\) cho ước lượng \(R_g=b_k-a_1\), **không** đồng nhất với khoảng biến thiên thật. Ví dụ [0,10):2,[10,20):4,[20,30):3 cho \(R_g=30\). Đây là khoảng phủ theo biên nhóm; các quan sát có thể nằm cách xa cận.
+Khi dữ liệu chỉ còn nhóm, ta không biết số nhỏ nhất/lớn nhất thật. Độ rộng phủ nhóm không rỗng từ \([a_1;b_1)\) tới \([a_k;b_k)\) cho ước lượng \(R_g=b_k-a_1\), **không** đồng nhất với khoảng biến thiên thật. Ví dụ \([0;10):2\),\([10;20):4\),\([20;30):3\) cho \(R_g=30\). Đây là khoảng phủ theo biên nhóm; các quan sát có thể nằm cách xa cận.
 
 
 
@@ -577,7 +577,7 @@ Nếu nhầm đầu mút nhóm với quan sát thực, thử đặt hai bộ s�
 
 Vì sao muốn mô tả nửa mẫu ở giữa phải dùng hai tứ phân vị thay vì chỉ nhìn biên xa nhất?
 
-Ước lượng \(Q_1,Q_3\) từ tần số tích lũy và nội suy như mảng trước, sau đó \(IQR_g=Q_3-Q_1\). Mẫu nhóm [0,10):4,[10,20):8,[20,30):8 có \(n=20\), tích lũy 4,12,20: \(Q_1=10+\frac{(5-4)10}{8}=11{,}25\), \(Q_3=20+\frac{(15-12)10}{8}=23{,}75\), \(IQR_g=12{,}5\). IQR nhóm là ước lượng, không dùng để xác định chắc chắn cá thể ngoại lệ khi thiếu dữ liệu thô.
+Ước lượng \(Q_1,Q_3\) từ tần số tích lũy và nội suy như mảng trước, sau đó \(IQR_g=Q_3-Q_1\). Mẫu nhóm \([0;10):4\),\([10;20):8\),\([20;30):8\) có \(n=20\), tích lũy 4,12,20: \(Q_1=10+\frac{(5-4)10}{8}=11{,}25\), \(Q_3=20+\frac{(15-12)10}{8}=23{,}75\), \(IQR_g=12{,}5\). IQR nhóm là ước lượng, không dùng để xác định chắc chắn cá thể ngoại lệ khi thiếu dữ liệu thô.
 
 
 
@@ -618,7 +618,7 @@ Mẫu B có các nhóm \([0;10),[10;20),[20;30)\) với tần số \(4,10,6\). �
 
 **Kiểm lỗi**
 
-Nếu sai Q1/Q3, tự kiểm nhóm chứa vị trí n/4 và 3n/4, luôn kiểm Q1≤Q3. Đọc lại **Kiến thức 3.2**, rồi tự làm **Bài luyện 83**, **Bài luyện 84**, **Bài luyện 85** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
+Nếu sai \(Q_1,Q_3\), tự kiểm nhóm chứa vị trí \(\frac n4\) và \(\frac{3n}4\), luôn kiểm \(Q_1\le Q_3\). Đọc lại **Kiến thức 3.2**, rồi tự làm **Bài luyện 83**, **Bài luyện 84**, **Bài luyện 85** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -626,7 +626,7 @@ Nếu sai Q1/Q3, tự kiểm nhóm chứa vị trí n/4 và 3n/4, luôn kiểm Q
 
 Sau khi thay các quan sát bằng trung điểm nhóm, phương sai tính được có còn chính xác cho dữ liệu gốc không?
 
-Dữ liệu gốc đã ẩn nên dùng trung điểm \(c_i\) để ước lượng: \(\bar x_g=\frac{\sum_i f_ic_i}{n}\), \(s_g^2=\frac{\sum_i f_i(c_i-\bar x_g)^2}{n}=\frac{\sum_i f_ic_i^2}{n}-\bar x_g^2\), \(s_g=\sqrt{s_g^2}\). Nếu nhóm [0,10):2,[10,20):2 thì \(c=5,15\), \(\bar x_g=10\), \(s_g^2=\frac{50+50}{4}=25\), \(s_g=5\). Phương sai có **bình phương đơn vị**, độ lệch chuẩn có đơn vị gốc. Đây là ước lượng theo trung điểm.
+Dữ liệu gốc đã ẩn nên dùng trung điểm \(c_i\) để ước lượng: \(\bar x_g=\frac{\sum_i f_ic_i}{n}\), \(s_g^2=\frac{\sum_i f_i(c_i-\bar x_g)^2}{n}=\frac{\sum_i f_ic_i^2}{n}-\bar x_g^2\), \(s_g=\sqrt{s_g^2}\). Nếu nhóm \([0;10):2\),\([10;20):2\) thì \(c=5,15\), \(\bar x_g=10\), \(s_g^2=\frac{50+50}{4}=25\), \(s_g=5\). Phương sai có **bình phương đơn vị**, độ lệch chuẩn có đơn vị gốc. Đây là ước lượng theo trung điểm.
 
 
 
@@ -648,7 +648,7 @@ Phương sai là trung bình **bình phương** khoảng cách đến giá trị
 Có hai cách kiểm chéo: \(\frac{\sum_i f_i(c_i-\bar x_g)^2}{n}\) và \(\frac{\sum_i f_i c_i^2}{n}-\bar x_g^2\). Hai cách phải bằng nhau (sai khác nhỏ khi làm tròn). Nếu công thức rút gọn cho số âm rõ rệt, kiểm số học và bước ước lượng trung bình.
 <!-- OUTCOME_REF: G12-CHIII-B10-O04 -->
 
-Độ lệch chuẩn là căn của phương sai ước lượng, giúp diễn giải theo đơn vị **gốc**. Phương sai dữ liệu tính bằng phút có đơn vị phút²; độ lệch chuẩn tính bằng phút. Nếu báo cáo ngược đơn vị, người đọc khó hiểu mức biến động thực tế.
+Độ lệch chuẩn là căn của phương sai ước lượng, giúp diễn giải theo đơn vị **gốc**. Phương sai dữ liệu tính bằng phút có đơn vị \(\mathrm{phút}^2\); độ lệch chuẩn tính bằng phút. Nếu báo cáo ngược đơn vị, người đọc khó hiểu mức biến động thực tế.
 
 **Tại sao phương sai nhóm có thể che giấu độ dao động trong từng nhóm?** Xét bảng gồm hai nhóm \([0;10),[10;20)\), mỗi nhóm tần số \(2\). Cách thay bằng trung điểm \(5,15\) cho \(\bar x_g=10\), \(s_g^2=\frac{2(5-10)^2+2(15-10)^2}{4}=25\). Nhưng cùng một bảng có thể xuất phát từ hai dãy:
 - \(D_1=(5,5,15,15)\): trung bình thật \(10\), phương sai mô tả thật \(25\).
@@ -668,7 +668,7 @@ Có hai cách kiểm chéo: \(\frac{\sum_i f_i(c_i-\bar x_g)^2}{n}\) và \(\frac
 
 **Vận dụng**
 
-Cho ba nhóm [0;10), [10;20), [20;30) có tần số lần lượt là 1, 2, 1. Tính phương sai và độ lệch chuẩn ước lượng.
+Cho ba nhóm \([0;10)\), \([10;20)\), \([20;30)\) có tần số lần lượt là 1, 2, 1. Tính phương sai và độ lệch chuẩn ước lượng.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -684,7 +684,7 @@ Các trung điểm 5,15,25; \(\bar x_g=15\); \(s_g^2=\frac{100+0+100}4=50\), \(s
 
 Một mẫu phân tán hơn có nhất thiết là lựa chọn tệ hơn? Cần biết mục tiêu so sánh nào trước khi nhận xét?
 
-Hai mẫu có cùng trung bình vẫn có độ ổn định khác nhau. Trên các nhóm [0,10),[10,20),[20,30) với trung điểm 5,15,25: A tần số 1,2,1 và B 2,0,2 cùng \(\bar x_g=15\), nhưng \(s_A^2=50<s_B^2=100\). Vì vậy A ổn định hơn **theo độ phân tán nhóm**, không phải kết luận về mọi biến cố tương lai. Chỉ so sánh khi hai mẫu dùng cùng thang đo, đơn vị và cách nhóm hợp lí.
+Hai mẫu có cùng trung bình vẫn có độ ổn định khác nhau. Trên các nhóm \([0;10)\),\([10;20)\),\([20;30)\) với trung điểm 5,15,25: A tần số 1,2,1 và B 2,0,2 cùng \(\bar x_g=15\), nhưng \(s_A^2=50<s_B^2=100\). Vì vậy A ổn định hơn **theo độ phân tán nhóm**, không phải kết luận về mọi biến cố tương lai. Chỉ so sánh khi hai mẫu dùng cùng thang đo, đơn vị và cách nhóm hợp lí.
 
 
 
@@ -798,7 +798,7 @@ Quy tròn số đúng 4286 đến hàng chục. Hãy cho số quy tròn và sai 
 
 **Bài luyện 5.**
 
-Số đúng là 2500 người, số gần đúng a=2475 người. Sai số tương đối là bao nhiêu?
+Số đúng là 2500 người, số gần đúng \(a=2475\) người. Sai số tương đối là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1010,7 +1010,7 @@ Mẫu \(1,1,5,5\). Tính phương sai và độ lệch chuẩn.
 
 **Bài luyện 21.**
 
-Mẫu \(1,2,2,3,3,4,4,30\). Theo hàng rào 1,5·IQR, giá trị nào bất thường?
+Mẫu \(1,2,2,3,3,4,4,30\). Theo hàng rào \(1{,}5\cdot\mathrm{IQR}\), giá trị nào bất thường?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1038,7 +1038,7 @@ Mẫu \(1,2,2,3,3,4,4,30\). Theo hàng rào 1,5·IQR, giá trị nào bất thư
 
 <details markdown="1"><summary>Lời giải</summary>
 
-\(s^2=\frac{4+0+0+4}{4}=2\,\mathrm{cm}^2\). \(s=\sqrt2\,\mathrm{cm}\). Không gán đơn vị cm² cho độ lệch chuẩn.
+\(s^2=\frac{4+0+0+4}{4}=2\,\mathrm{cm}^2\). \(s=\sqrt2\,\mathrm{cm}\). Không gán đơn vị \(\mathrm{cm}^2\) cho độ lệch chuẩn.
 
 </details>
 
@@ -1050,7 +1050,7 @@ Mẫu \(2,6,6,10\). Tính khoảng biến thiên, IQR và phương sai theo SGK.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-\(R=10-2=8\); \(Q_1=4,Q_3=8\) nên IQR=4; \(s^2=\frac{16+0+0+16}{4}=8\).
+\(R=10-2=8\); \(Q_1=4,Q_3=8\) nên \(\mathrm{IQR}=4\); \(s^2=\frac{16+0+0+16}{4}=8\).
 
 </details>
 
@@ -1062,7 +1062,7 @@ Mẫu \(2,6,6,10\). Tính khoảng biến thiên, IQR và phương sai theo SGK.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-(a) \(\Delta=|2{,}486-2{,}49|=0{,}004\,\mathrm{cm}\), \(\delta_a=\frac{0{,}004}{2{,}49}\approx0{,}16064\%\approx0{,}161\%\). (b) Số đúng 2,486 làm tròn tới hàng phần trăm → a=2,49; sai số 0,004 không vượt 0,005. (c) Nếu không biết số đúng \(\bar a\), chỉ có \(2{,}485\le\bar a\le2{,}495\); \(d\) là mức chặn, không phải giá trị \(\Delta\) thực.
+(a) \(\Delta=|2{,}486-2{,}49|=0{,}004\,\mathrm{cm}\), \(\delta_a=\frac{0{,}004}{2{,}49}\approx0{,}16064\%\approx0{,}161\%\). (b) Số đúng 2,486 làm tròn tới hàng phần trăm → \(a=2{,}49\); sai số 0,004 không vượt 0,005. (c) Nếu không biết số đúng \(\bar a\), chỉ có \(2{,}485\le\bar a\le2{,}495\); \(d\) là mức chặn, không phải giá trị \(\Delta\) thực.
 
 **Các bước tự đối chiếu:** tìm đúng \(\Delta\), đơn vị (1,5); \(\delta_a\), dùng mẫu số **a gần đúng** và % (1,5); làm tròn đúng hàng (1); kiểm giới hạn làm tròn (1); khoảng bất định (1); giải thích độ chính xác khác sai số thật (1).
 
@@ -1078,7 +1078,7 @@ Số cuốn sách học sinh đọc trong tháng có bảng: 1 cuốn (1 bạn),
 
 Dãy \(1,2,2,2,3,3,3,3,4,4\), \(n=10\); tổng \(1+6+12+8=27\), \(\bar x=2{,}7\). Trung vị \(\frac{3+3}{2}=3\), nửa trái \(1,2,2,2,3\) nên \(Q_1=2\), nửa phải \(3,3,3,4,4\) nên \(Q_3=3\); mốt 3 (4 lần). Mẫu mới thay 4 bằng 20, tổng \(27-4+20=43\), \(\bar x'=4{,}3\); hai phần tử thứ 5–6 vẫn là 3 nên \(\mathrm{M_e}'=3\). Trung bình bị kéo lên trong khi trung vị không đổi.
 
-**Các bước tự đối chiếu:** dãy đúng và n (1); trung bình ban đầu (1,5); trung vị (1); Q1/Q3 đúng quy tắc (1,5); mốt (0,5); trung bình sau (1); trung vị/giải thích sau (0,5).
+**Các bước tự đối chiếu:** dãy đúng và n (1); trung bình ban đầu (1,5); trung vị (1); \(Q_1,Q_3\) đúng quy tắc (1,5); mốt (0,5); trung bình sau (1); trung vị/giải thích sau (0,5).
 
 </details>
 
@@ -1090,9 +1090,9 @@ Hai nhóm có thời gian thực hành (phút): A: \(4,5,5,6,5\); B: \(1,5,5,5,9
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-A sắp \(4,5,5,5,6\), B sắp \(1,5,5,5,9\); trung bình cả hai =5 phút, trung vị cả hai =5. \(R_A=2,R_B=8\); A n lẻ bỏ median: \(Q_1=4{,}5,Q_3=5{,}5\) nên IQR=1; B \(Q_1=3,Q_3=7\), IQR=4. \(s_A^2=\frac{1+0+0+0+1}{5}=\frac25=0{,}4\,\mathrm{phút}^2\), \(s_B^2=\frac{16+0+0+0+16}{5}=\frac{32}5=6{,}4\,\mathrm{phút}^2\). \(s_A=\sqrt{0{,}4}\approx0{,}632\,\mathrm{phút}\), \(s_B=\sqrt{6{,}4}\approx2{,}530\,\mathrm{phút}\). A ổn định hơn. Không dùng n−1.
+A sắp \(4,5,5,5,6\), B sắp \(1,5,5,5,9\); trung bình và trung vị của cả hai đều bằng 5 phút. \(R_A=2,R_B=8\); A n lẻ bỏ trung vị: \(Q_1=4{,}5,Q_3=5{,}5\) nên \(\mathrm{IQR}=1\); B \(Q_1=3,Q_3=7\), \(\mathrm{IQR}=4\). \(s_A^2=\frac{1+0+0+0+1}{5}=\frac25=0{,}4\,\mathrm{phút}^2\), \(s_B^2=\frac{16+0+0+0+16}{5}=\frac{32}5=6{,}4\,\mathrm{phút}^2\). \(s_A=\sqrt{0{,}4}\approx0{,}632\,\mathrm{phút}\), \(s_B=\sqrt{6{,}4}\approx2{,}530\,\mathrm{phút}\). A ổn định hơn. Không dùng \(n-1\).
 
-**Các bước tự đối chiếu:** dãy và trung bình/trung vị đúng (1); hai R (1); Q1/Q3 và IQR mỗi mẫu (1,5); 2 phương sai chia n (1,5); 2 độ lệch chuẩn/đơn vị (1); so sánh có căn cứ (1).
+**Các bước tự đối chiếu:** dãy và trung bình/trung vị đúng (1); hai R (1); \(Q_1,Q_3\) và IQR mỗi mẫu (1,5); 2 phương sai chia n (1,5); 2 độ lệch chuẩn/đơn vị (1); so sánh có căn cứ (1).
 
 </details>
 
@@ -1132,7 +1132,7 @@ Dữ liệu thời gian (phút) là 9,2,4,7,1,5. Tính trung vị và cho biết
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Sắp tăng dần: 1,2,4,5,7,9. Có 6 số nên trung vị (4+5)/2=4,5 phút.
+Sắp tăng dần: 1,2,4,5,7,9. Có 6 số nên trung vị \(\frac{4+5}{2}=4{,}5\) phút.
 
 **Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Chỉ đối chiếu từng bước sau khi tự giải; đây không phải điểm đánh giá chính thức.
 
@@ -1142,11 +1142,11 @@ Sắp tăng dần: 1,2,4,5,7,9. Có 6 số nên trung vị (4+5)/2=4,5 phút.
 
 **Bài luyện 31.**
 
-Mẫu đã sắp 2,3,3,4,5,6,20. Tính Q1,Q3,IQR và kiểm số 20 theo hàng rào 1,5 IQR.
+Mẫu đã sắp 2,3,3,4,5,6,20. Tính \(Q_1,Q_3,\mathrm{IQR}\) và kiểm số 20 theo hàng rào \(1{,}5\,\mathrm{IQR}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Me=4; nửa dưới 2,3,3 cho Q1=3; nửa trên 5,6,20 cho Q3=6. IQR=3, hàng rào trên 6+1,5·3=10,5, nên 20 là ngoại lệ theo quy tắc này.
+\(M_e=4\); nửa dưới 2,3,3 cho \(Q_1=3\); nửa trên 5,6,20 cho \(Q_3=6\). \(\mathrm{IQR}=3\), hàng rào trên \(6+1{,}5\cdot3=10{,}5\), nên 20 là ngoại lệ theo quy tắc này.
 
 **Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Chỉ đối chiếu từng bước sau khi tự giải; đây không phải điểm đánh giá chính thức.
 
@@ -1156,11 +1156,11 @@ Me=4; nửa dưới 2,3,3 cho Q1=3; nửa trên 5,6,20 cho Q3=6. IQR=3, hàng r�
 
 **Bài luyện 32.**
 
-Hai nhóm A=2,4,6 và B=3,4,5 có cùng đơn vị đo. Tính trung bình và phương sai mô tả chia n rồi chọn nhóm ổn định hơn.
+Hai nhóm \(A=(2;4;6)\) và \(B=(3;4;5)\) có cùng đơn vị đo. Tính trung bình và phương sai mô tả chia n rồi chọn nhóm ổn định hơn.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Cả hai có trung bình 4. Phương sai A=(4+0+4)/3=8/3; B=(1+0+1)/3=2/3. Nhóm B ổn định hơn.
+Cả hai có trung bình 4. Phương sai của A là \(s_A^2=\frac{4+0+4}{3}=\frac83\); của B là \(s_B^2=\frac{1+0+1}{3}=\frac23\). Nhóm B ổn định hơn.
 
 **Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Chỉ đối chiếu từng bước sau khi tự giải; đây không phải điểm đánh giá chính thức.
 
@@ -1172,11 +1172,11 @@ Cả hai có trung bình 4. Phương sai A=(4+0+4)/3=8/3; B=(1+0+1)/3=2/3. Nhóm
 
 **Bài luyện 33.**
 
-Trong bảng các khoảng [0;5), [5;10), [10;15) với tần số 3,7,5, n là bao nhiêu?
+Trong bảng các khoảng \([0;5)\), \([5;10)\), \([10;15)\) với tần số 3,7,5, n là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Cộng tần số: 3+7+5=15. Đây là cỡ mẫu, không phải số nhóm.
+Cộng tần số: \(3+7+5=15\). Đây là cỡ mẫu, không phải số nhóm.
 
 </details>
 
@@ -1184,11 +1184,11 @@ Cộng tần số: 3+7+5=15. Đây là cỡ mẫu, không phải số nhóm.
 
 **Bài luyện 34.**
 
-Trong cách chia [0;10),[10;20), số liệu đúng bằng 10 thuộc nhóm nào?
+Trong cách chia \([0;10)\),\([10;20)\), số liệu đúng bằng 10 thuộc nhóm nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** [10;20).
+**Đáp án canonical:** \([10;20)\).
 
 
 Khoảng trái đóng nhận 10, khoảng trước mở tại 10 nên không nhận.
@@ -1199,11 +1199,11 @@ Khoảng trái đóng nhận 10, khoảng trước mở tại 10 nên không nh�
 
 **Bài luyện 35.**
 
-Độ dài nhóm [12;18) là bao nhiêu?
+Độ dài nhóm \([12;18)\) là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Lấy đầu mút phải trừ đầu mút trái: 18-12=6.
+Lấy đầu mút phải trừ đầu mút trái: \(18-12=6\).
 
 </details>
 
@@ -1215,10 +1215,10 @@ Các tần số 2,4,5,3 ứng với 4 nhóm. Tần số nhóm thứ ba là gì, 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** 5; n=14.
+**Đáp án canonical:** 5; \(n=14\).
 
 
-Tần số đọc tại cột thứ ba; n=2+4+5+3=14.
+Tần số đọc tại cột thứ ba; \(n=2+4+5+3=14\).
 
 </details>
 
@@ -1226,7 +1226,7 @@ Tần số đọc tại cột thứ ba; n=2+4+5+3=14.
 
 **Bài luyện 37.**
 
-Từ bảng ghép nhóm [0;10),[10;20) có tần số 4 và 6, có biết chính xác 10 giá trị ban đầu không?
+Từ bảng ghép nhóm \([0;10)\),\([10;20)\) có tần số 4 và 6, có biết chính xác 10 giá trị ban đầu không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1238,7 +1238,7 @@ Bảng chỉ lưu khoảng và số lượng trong khoảng, không cho biết v
 
 **Bài luyện 38.**
 
-Ghép các số 5,10,10,19,20,29 vào [0;10),[10;20),[20;30). Lập bảng tần số.
+Ghép các số 5,10,10,19,20,29 vào \([0;10)\),\([10;20)\),\([20;30)\). Lập bảng tần số.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1253,14 +1253,14 @@ Ghép các số 5,10,10,19,20,29 vào [0;10),[10;20),[20;30). Lập bảng tần
 
 **Bài luyện 39.**
 
-Với 4 nhóm [7;11),[11;15),[15;19),[19;23), có cùng độ rộng? Có chồng lấn?
+Với 4 nhóm \([7;11)\),\([11;15)\),\([15;19)\),\([19;23)\), có cùng độ rộng? Có chồng lấn?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án canonical:** Đều rộng 4, liền nhau và không chồng lấn.
 
 
-Mỗi nhóm rộng 11-7=4; hai nhóm kề nhau cùng biên nhưng một bên mở, một bên đóng.
+Mỗi nhóm rộng \(11-7=4\); hai nhóm kề nhau cùng biên nhưng một bên mở, một bên đóng.
 
 </details>
 
@@ -1268,7 +1268,7 @@ Mỗi nhóm rộng 11-7=4; hai nhóm kề nhau cùng biên nhưng một bên m�
 
 **Bài luyện 40.**
 
-Điểm [1,2,3,4,5,6,7,8,9,10] chia [1;4),[4;7),[7;11). Bảng tần số?
+Điểm [1,2,3,4,5,6,7,8,9,10] chia \([1;4)\),\([4;7)\),\([7;11)\). Bảng tần số?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1283,14 +1283,14 @@ Nhóm 1 gồm 1,2,3; nhóm 2 gồm 4,5,6; nhóm 3 gồm 7,8,9,10.
 
 **Bài luyện 41.**
 
-Tần số các khoảng điểm [0;4),[4;8),[8;12) là 6,9,5. Tỉ lệ lớp [4;8) bằng?
+Tần số các khoảng điểm \([0;4)\),\([4;8)\),\([8;12)\) là 6,9,5. Tỉ lệ lớp \([4;8)\) bằng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** 9/20=45%.
+**Đáp án canonical:** \(\frac9{20}=45\%\).
 
 
-n=6+9+5=20, chia 9 cho 20. Tỉ lệ chỉ phản ánh số liệu trong khoảng.
+\(n=6+9+5=20\), chia 9 cho 20. Tỉ lệ chỉ phản ánh số liệu trong khoảng.
 
 </details>
 
@@ -1302,7 +1302,7 @@ Cho 20 quan sát và các nhóm có tần số [4,8,6,?]. Điền tần số cu�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-20-(4+8+6)=2, kiểm n=20.
+\(20-(4+8+6)=2\), kiểm \(n=20\).
 
 </details>
 
@@ -1310,7 +1310,7 @@ Cho 20 quan sát và các nhóm có tần số [4,8,6,?]. Điền tần số cu�
 
 **Bài luyện 43.**
 
-Hai bộ dữ liệu 2,3,4 và 2,2,4 cùng thuộc các nhóm [0;3),[3;6). Có thể có bảng ghép giống nhau?
+Hai bộ dữ liệu 2,3,4 và 2,2,4 cùng thuộc các nhóm \([0;3)\),\([3;6)\). Có thể có bảng ghép giống nhau?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1325,7 +1325,7 @@ Hai bộ dữ liệu 2,3,4 và 2,2,4 cùng thuộc các nhóm [0;3),[3;6). Có t
 
 **Bài luyện 44.**
 
-Bảng chiều dài [150;155),[155;160),[160;165) có tần số 6,10,4. Có thể kết luận đúng 10 người cao 157,5 cm không?
+Bảng chiều dài \([150;155)\),\([155;160)\),\([160;165)\) có tần số 6,10,4. Có thể kết luận đúng 10 người cao 157,5 cm không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1349,11 +1349,11 @@ Ghép nhóm không nhất thiết khoảng đóng cả hai phía. Các phép tí
 
 **Bài luyện 46.**
 
-Nhóm [20;30) có giá trị đại diện bằng?
+Nhóm \([20;30)\) có giá trị đại diện bằng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Trung điểm (20+30)/2=25.
+Trung điểm \(\frac{20+30}{2}=25\).
 
 </details>
 
@@ -1361,11 +1361,11 @@ Trung điểm (20+30)/2=25.
 
 **Bài luyện 47.**
 
-Bảng [0;10),[10;20) có tần số 2,6. Số trung bình ghép nhóm?
+Bảng \([0;10)\),\([10;20)\) có tần số 2,6. Số trung bình ghép nhóm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Giá trị đại diện 5,15; (2·5+6·15)/8=100/8=12,5.
+Giá trị đại diện 5,15; \(\frac{2\cdot5+6\cdot15}8=\frac{100}8=12{,}5\).
 
 </details>
 
@@ -1388,11 +1388,11 @@ Cộng dồn từ trái sang phải: 3, 3+5, 3+5+2, 3+5+2+4.
 
 **Bài luyện 49.**
 
-Với A: các nhóm [0;10),[10;20),[20;30),[30;40), tần số [4,8,6,2], trung vị nằm trong nhóm nào?
+Với A: các nhóm \([0;10)\),\([10;20)\),\([20;30)\),\([30;40)\), tần số [4,8,6,2], trung vị nằm trong nhóm nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-n=20, n/2=10; tích lũy 4,12,18,20, nên nhóm 2 chứa vị trí 10.
+\(n=20\), \(\frac n2=10\); tích lũy 4,12,18,20, nên nhóm 2 chứa vị trí 10.
 
 </details>
 
@@ -1412,11 +1412,11 @@ Công thức mốt với các hiệu tần số được SGK đưa ra cho nhóm 
 
 **Bài luyện 51.**
 
-Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Tìm số trung bình ghép nhóm.
+Mẫu A: \([0;10)\to4\) | \([10;20)\to8\) | \([20;30)\to6\) | \([30;40)\to2\). Tìm số trung bình ghép nhóm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Midpoint 5,15,25,35; (4·5+8·15+6·25+2·35)/20=360/20=18.
+Trung điểm 5,15,25,35; \(\frac{4\cdot5+8\cdot15+6\cdot25+2\cdot35}{20}=\frac{360}{20}=18\).
 
 </details>
 
@@ -1424,11 +1424,11 @@ Midpoint 5,15,25,35; (4·5+8·15+6·25+2·35)/20=360/20=18.
 
 **Bài luyện 52.**
 
-Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Ước lượng trung vị bằng nội suy.
+Mẫu A: \([0;10)\to4\) | \([10;20)\to8\) | \([20;30)\to6\) | \([30;40)\to2\). Ước lượng trung vị bằng nội suy.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-n=20; nhóm [10;20) chứa vị trí n/2=10; Me=10+(10-4)·10/8=17,5.
+\(n=20\); nhóm \([10;20)\) chứa vị trí \(\frac n2=10\); \(M_e=10+\frac{(10-4)\cdot10}{8}=17{,}5\).
 
 </details>
 
@@ -1436,11 +1436,11 @@ n=20; nhóm [10;20) chứa vị trí n/2=10; Me=10+(10-4)·10/8=17,5.
 
 **Bài luyện 53.**
 
-Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Tính Q1, Q3 theo nội suy SGK.
+Mẫu A: \([0;10)\to4\) | \([10;20)\to8\) | \([20;30)\to6\) | \([30;40)\to2\). Tính \(Q_1,Q_3\) theo nội suy SGK.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Vị trí 5: Q1=10+(5-4)/8·10=11,25. Vị trí 15: Q3=20+(15-12)/6·10=25.
+Vị trí 5: \(Q_1=10+\frac{5-4}{8}\cdot10=11{,}25\). Vị trí 15: \(Q_3=20+\frac{15-12}{6}\cdot10=25\).
 
 </details>
 
@@ -1448,11 +1448,11 @@ Vị trí 5: Q1=10+(5-4)/8·10=11,25. Vị trí 15: Q3=20+(15-12)/6·10=25.
 
 **Bài luyện 54.**
 
-Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Tìm mốt ước lượng.
+Mẫu A: \([0;10)\to4\) | \([10;20)\to8\) | \([20;30)\to6\) | \([30;40)\to2\). Tìm mốt ước lượng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Nhóm mốt [10;20) m=8, trước 4, sau 6. Mo=10+[(8-4)/((8-4)+(8-6))]·10=50/3.
+Nhóm mốt \([10;20)\) \(m=8\), trước 4, sau 6. \(M_o=10+\frac{8-4}{(8-4)+(8-6)}\cdot10=\frac{50}{3}\).
 
 </details>
 
@@ -1460,11 +1460,11 @@ Nhóm mốt [10;20) m=8, trước 4, sau 6. Mo=10+[(8-4)/((8-4)+(8-6))]·10=50/3
 
 **Bài luyện 55.**
 
-Mẫu B: [10;15)→3 | [15;20)→6 | [20;25)→9 | [25;30)→2. Tính số trung bình ghép nhóm.
+Mẫu B: \([10;15)\to3\) | \([15;20)\to6\) | \([20;25)\to9\) | \([25;30)\to2\). Tính số trung bình ghép nhóm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Trung điểm 12,5;17,5;22,5;27,5. Tổng trọng số 400; n=20, x̄=20.
+Trung điểm 12,5;17,5;22,5;27,5. Tổng trọng số 400; \(n=20,\ \bar x=20\).
 
 </details>
 
@@ -1472,14 +1472,14 @@ Trung điểm 12,5;17,5;22,5;27,5. Tổng trọng số 400; n=20, x̄=20.
 
 **Bài luyện 56.**
 
-Mẫu B: [10;15)→3 | [15;20)→6 | [20;25)→9 | [25;30)→2. Lập bảng tần số tích lũy, nhóm chứa Q3.
+Mẫu B: \([10;15)\to3\) | \([15;20)\to6\) | \([20;25)\to9\) | \([25;30)\to2\). Lập bảng tần số tích lũy, nhóm chứa \(Q_3\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** [3,9,18,20]; nhóm [20;25).
+**Đáp án canonical:** [3,9,18,20]; nhóm \([20;25)\).
 
 
-n=20; 3n/4=15; tích lũy lần đầu ≥15 tại nhóm thứ 3.
+\(n=20\); \(\frac{3n}4=15\); tích lũy lần đầu \(\ge15\) tại nhóm thứ 3.
 
 </details>
 
@@ -1487,11 +1487,11 @@ n=20; 3n/4=15; tích lũy lần đầu ≥15 tại nhóm thứ 3.
 
 **Bài luyện 57.**
 
-Mẫu B: [10;15)→3 | [15;20)→6 | [20;25)→9 | [25;30)→2. Tính trung vị.
+Mẫu B: \([10;15)\to3\) | \([15;20)\to6\) | \([20;25)\to9\) | \([25;30)\to2\). Tính trung vị.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-n/2=10; trước nhóm 3 tích lũy 9, tần số nhóm 9 và h=5: Me=20+(10-9)·5/9=185/9.
+\(\frac n2=10\); trước nhóm 3 tích lũy 9, tần số nhóm 9 và \(h=5\): \(M_e=20+\frac{(10-9)\cdot5}9=\frac{185}9\).
 
 </details>
 
@@ -1499,11 +1499,11 @@ n/2=10; trước nhóm 3 tích lũy 9, tần số nhóm 9 và h=5: Me=20+(10-9)�
 
 **Bài luyện 58.**
 
-Mẫu C: [40;50)→2 | [50;60)→5 | [60;70)→8 | [70;80)→5. Tìm Q1 và Q3.
+Mẫu C: \([40;50)\to2\) | \([50;60)\to5\) | \([60;70)\to8\) | \([70;80)\to5\). Tìm \(Q_1\) và \(Q_3\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-n=20; tích lũy [2,7,15,20]. Q1=50+(5-2)·10/5=56. Q3=60+(15-7)·10/8=70 (biên chung của hai nhóm).
+\(n=20\); tích lũy [2,7,15,20]. \(Q_1=50+\frac{(5-2)\cdot10}5=56\). \(Q_3=60+\frac{(15-7)\cdot10}8=70\) (biên chung của hai nhóm).
 
 </details>
 
@@ -1511,7 +1511,7 @@ n=20; tích lũy [2,7,15,20]. Q1=50+(5-2)·10/5=56. Q3=60+(15-7)·10/8=70 (biên
 
 **Bài luyện 59.**
 
-Bốn nhóm [0;2),[2;4),[4;6),[6;8) đều có tần số 7. Có mốt theo quy ước SGK không?
+Bốn nhóm \([0;2)\),\([2;4)\),\([4;6)\),\([6;8)\) đều có tần số 7. Có mốt theo quy ước SGK không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1538,11 +1538,11 @@ Các giá trị bên trong mỗi nhóm có thể khác nhau, nên trung bình g�
 
 **Bài luyện 61.**
 
-Dữ liệu quãng đường (km): 1,2,2,3,3,4,5,5,6,7,8,9. Lập bảng tần số ghép nhóm [0;3),[3;6),[6;9),[9;12), kiểm cỡ mẫu.
+Dữ liệu quãng đường (km): 1,2,2,3,3,4,5,5,6,7,8,9. Lập bảng tần số ghép nhóm \([0;3)\),\([3;6)\),\([6;9)\),\([9;12)\), kiểm cỡ mẫu.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-[0;3) nhận 1,2,2; [3;6) nhận 3,3,4,5,5; [6;9) nhận 6,7,8; [9;12) nhận 9. Tổng 12.
+\([0;3)\) nhận 1,2,2; \([3;6)\) nhận 3,3,4,5,5; \([6;9)\) nhận 6,7,8; \([9;12)\) nhận 9. Tổng 12.
 
 **Các bước tự đối chiếu:** (1) Xác định bốn nhóm đúng — 1đ; (2) Đếm đúng hai nhóm đầu — 1đ; (3) Đếm đúng hai nhóm cuối — 1đ; (4) Cộng tổng và giải thích biên — 1đ
 
@@ -1552,11 +1552,11 @@ Dữ liệu quãng đường (km): 1,2,2,3,3,4,5,5,6,7,8,9. Lập bảng tần s
 
 **Bài luyện 62.**
 
-Bảng khoảng thời gian [0;15),[15;30),[30;45) có tần số 8,12,4. (a) Tỉ lệ từ 15 tới dưới 30 phút? (b) Có thể nói mọi người nhóm 2 mất đúng 22,5 phút không?
+Bảng khoảng thời gian \([0;15)\),\([15;30)\),\([30;45)\) có tần số 8,12,4. (a) Tỉ lệ từ 15 tới dưới 30 phút? (b) Có thể nói mọi người nhóm 2 mất đúng 22,5 phút không?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Tổng 24; 12/24=50%. 22,5 là giá trị đại diện theo trung điểm, không xác định từng thời gian thực.
+Tổng 24; \(\frac{12}{24}=50\%\). 22,5 là giá trị đại diện theo trung điểm, không xác định từng thời gian thực.
 
 **Các bước tự đối chiếu:** (1) Tính cỡ mẫu — 1đ; (2) Tỉ lệ phân số — 1đ; (3) Quy đổi phần trăm — 1đ; (4) Nhận xét mất thông tin/không gán mọi cá thể — 1đ
 
@@ -1566,11 +1566,11 @@ Tổng 24; 12/24=50%. 22,5 là giá trị đại diện theo trung điểm, khô
 
 **Bài luyện 63.**
 
-Với mẫu D [2;4)→4 | [4;6)→6 | [6;8)→8 | [8;10)→2, tính số trung bình, trung vị và giải thích đây là các ước lượng.
+Với mẫu D \([2;4)\to4\) | \([4;6)\to6\) | \([6;8)\to8\) | \([8;10)\to2\), tính số trung bình, trung vị và giải thích đây là các ước lượng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-n=20; trung điểm 3,5,7,9; tổng 4·3+6·5+8·7+2·9=116, x̄=116/20=5,8. Tích lũy [4,10,18,20]; n/2=10 thuộc nhóm [4;6); Me=4+(10-4)·2/6=6. Đây là hai ước lượng khi chỉ biết bảng ghép nhóm, không phải giá trị gốc chính xác.
+\(n=20\); trung điểm 3,5,7,9; tổng \(4\cdot3+6\cdot5+8\cdot7+2\cdot9=116\), \(\bar x=\frac{116}{20}=5{,}8\). Tích lũy [4,10,18,20]; \(\frac n2=10\) thuộc nhóm \([4;6)\); \(M_e=4+\frac{(10-4)\cdot2}6=6\). Đây là hai ước lượng khi chỉ biết bảng ghép nhóm, không phải giá trị gốc chính xác.
 
 **Các bước tự đối chiếu:** (1) Giá trị đại diện — 1đ; (2) Tổng trọng số và n — 1đ; (3) Nội suy Me đúng — 1đ; (4) Nêu tính xấp xỉ — 1đ
 
@@ -1580,13 +1580,13 @@ n=20; trung điểm 3,5,7,9; tổng 4·3+6·5+8·7+2·9=116, x̄=116/20=5,8. Tí
 
 **Bài luyện 64.**
 
-Với mẫu E [100;110)→5 | [110;120)→10 | [120;130)→3 | [130;140)→2, tìm Q1,Q3,Mo và ý nghĩa.
+Với mẫu E \([100;110)\to5\) | \([110;120)\to10\) | \([120;130)\to3\) | \([130;140)\to2\), tìm \(Q_1,Q_3,M_o\) và ý nghĩa.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-n=20; tích lũy [5,15,18,20]. Q1=100+(5-0)·10/5=110; Q3=110+(15-5)·10/10=120 (không phải 117,5). Mốt nhóm [110;120), m=10, trước 5, sau 3: Mo=110+[5/(5+7)]·10=685/6≈114,17. Cả Q1, Q3 và Mo chỉ ước lượng vị trí trung tâm của mẫu gốc, không xác định giá trị gốc chính xác.
+\(n=20\); tích lũy [5,15,18,20]. \(Q_1=100+\frac{(5-0)\cdot10}5=110\); \(Q_3=110+\frac{(15-5)\cdot10}{10}=120\) (không phải 117,5). Mốt nhóm \([110;120)\), \(m=10\), trước 5, sau 3: \(M_o=110+\frac5{5+7}\cdot10=\frac{685}{6}\approx114{,}17\). Cả \(Q_1,Q_3\) và \(M_o\) chỉ ước lượng vị trí trung tâm của mẫu gốc, không xác định giá trị gốc chính xác.
 
-**Các bước tự đối chiếu:** (1) Chọn đúng nhóm Q1 — 1đ; (2) Nội suy Q1 — 1đ; (3) Chọn nhóm Q3 và Q3 — 1đ; (4) Mốt và giải thích xấp xỉ — 1đ
+**Các bước tự đối chiếu:** (1) Chọn đúng nhóm \(Q_1\) — 1đ; (2) Nội suy \(Q_1\) — 1đ; (3) Chọn nhóm \(Q_3\) và \(Q_3\) — 1đ; (4) Mốt và giải thích xấp xỉ — 1đ
 
 </details>
 
@@ -1594,11 +1594,11 @@ n=20; tích lũy [5,15,18,20]. Q1=100+(5-0)·10/5=110; Q3=110+(15-5)·10/10=120 
 
 **Bài luyện 65.**
 
-Một bảng ghép nhóm có [10,20):4 người và [20,30):6 người. Chọn giá trị đại diện, ước lượng trung bình và giải thích có thể kết luận 4 người đầu đều bằng 15 không.
+Một bảng ghép nhóm có \([10;20):4\) người và \([20;30):6\) người. Chọn giá trị đại diện, ước lượng trung bình và giải thích có thể kết luận 4 người đầu đều bằng 15 không.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Trung điểm là 15 và 25; trung bình ước lượng (4×15+6×25)/10=21. Không thể kết luận bốn người nhóm đầu đều có giá trị đúng 15; bảng nhóm mất thông tin thô.
+Trung điểm là 15 và 25; trung bình ước lượng \(\frac{4\cdot15+6\cdot25}{10}=21\). Không thể kết luận bốn người nhóm đầu đều có giá trị đúng 15; bảng nhóm mất thông tin thô.
 
 **Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Chỉ đối chiếu từng bước sau khi tự giải; đây không phải điểm đánh giá chính thức.
 
@@ -1608,11 +1608,11 @@ Trung điểm là 15 và 25; trung bình ước lượng (4×15+6×25)/10=21. Kh
 
 **Bài luyện 66.**
 
-Mẫu ghép [0,10):3 và [10,20):7 có n=10. Ước lượng trung vị và đánh giá phát biểu “trung vị dữ liệu gốc chắc chắn bằng số ước lượng”.
+Mẫu ghép \([0;10):3\) và \([10;20):7\) có \(n=10\). Ước lượng trung vị và đánh giá phát biểu “trung vị dữ liệu gốc chắc chắn bằng số ước lượng”.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Tích lũy là 3,10; nhóm trung vị thứ hai có L=10,h=10,f=7,F trước=3. Me≈10+(5−3)×10/7=90/7≈12,86. Không thể khẳng định trung vị dữ liệu thô đúng bằng 90/7.
+Tích lũy là 3,10; nhóm trung vị thứ hai có \(L=10,\ h=10,\ f=7,\ F_{\mathrm{trước}}=3\). \(M_e\approx10+\frac{(5-3)\cdot10}7=\frac{90}7\approx12{,}86\). Không thể khẳng định trung vị dữ liệu thô đúng bằng \(\frac{90}7\).
 
 **Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Chỉ đối chiếu từng bước sau khi tự giải; đây không phải điểm đánh giá chính thức.
 
@@ -1624,11 +1624,11 @@ Tích lũy là 3,10; nhóm trung vị thứ hai có L=10,h=10,f=7,F trước=3. 
 
 **Bài luyện 67.**
 
-Các nhóm [0;10), [10;20), [20;30) có tần số 0,5,7. Cỡ mẫu là bao nhiêu?
+Các nhóm \([0;10)\), \([10;20)\), \([20;30)\) có tần số 0,5,7. Cỡ mẫu là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Cộng tần số 0+5+7=12; lớp rỗng không làm tăng cỡ mẫu.
+Cộng tần số \(0+5+7=12\); lớp rỗng không làm tăng cỡ mẫu.
 
 </details>
 
@@ -1636,7 +1636,7 @@ Cộng tần số 0+5+7=12; lớp rỗng không làm tăng cỡ mẫu.
 
 **Bài luyện 68.**
 
-Bảng gồm các nhóm [5;10), [10;15), [15;20) với f=(2,0,6). Nhóm giữa có giá trị gốc không?
+Bảng gồm các nhóm \([5;10)\), \([10;15)\), \([15;20)\) với \(f=(2;0;6)\). Nhóm giữa có giá trị gốc không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1660,11 +1660,11 @@ Tần số chỉ cho biết số quan sát thuộc nhóm, không giữ từng gi
 
 **Bài luyện 70.**
 
-Trình bày bảng [0;5),[5;10),[10;15),[15;20) với f=(0,3,7,0): cỡ mẫu, hai nhóm có quan sát và điều ta không thể biết chính xác về mẫu gốc.
+Trình bày bảng \([0;5)\),\([5;10)\),\([10;15)\),\([15;20)\) với \(f=(0;3;7;0)\): cỡ mẫu, hai nhóm có quan sát và điều ta không thể biết chính xác về mẫu gốc.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Tổng f=10; loại hai nhóm có f=0; trong các nhóm còn lại không biết từng quan sát cụ thể.
+Tổng \(\sum_i f_i=10\); loại hai nhóm có \(f=0\); trong các nhóm còn lại không biết từng quan sát cụ thể.
 
 **Các bước tự đối chiếu:**
 - 1 điểm — Tính n
@@ -1677,11 +1677,11 @@ Tổng f=10; loại hai nhóm có f=0; trong các nhóm còn lại không biết
 
 **Bài luyện 71.**
 
-Các nhóm [0;5),[5;10),[10;15),[15;20) có f=(0,5,10,0). R là bao nhiêu?
+Các nhóm \([0;5)\),\([5;10)\),\([10;15)\),\([15;20)\) có \(f=(0;5;10;0)\). R là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Nhóm đầu có dữ liệu là [5;10), cuối [10;15), nên R=15−5=10.
+Nhóm đầu có dữ liệu là \([5;10)\), cuối \([10;15)\), nên \(R=15-5=10\).
 
 </details>
 
@@ -1689,11 +1689,11 @@ Nhóm đầu có dữ liệu là [5;10), cuối [10;15), nên R=15−5=10.
 
 **Bài luyện 72.**
 
-Các nhóm [10;20),[20;30),[30;40),[40;50) có f=(2,0,7,1). R ghép nhóm?
+Các nhóm \([10;20)\),\([20;30)\),\([30;40)\),\([40;50)\) có \(f=(2;0;7;1)\). R ghép nhóm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Nhóm đầu [10;20), cuối [40;50): R=50−10=40.
+Nhóm đầu \([10;20)\), cuối \([40;50)\): \(R=50-10=40\).
 
 </details>
 
@@ -1701,11 +1701,11 @@ Nhóm đầu [10;20), cuối [40;50): R=50−10=40.
 
 **Bài luyện 73.**
 
-Một mẫu gốc có min=13, max=47; bảng ghép lớp [10;20) đến [40;50) ở hai biên. So R gốc với R ghép nhóm.
+Một mẫu gốc có \(x_{\min}=13,\ x_{\max}=47\); bảng ghép lớp \([10;20)\) đến \([40;50)\) ở hai biên. So R gốc với R ghép nhóm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-R gốc=47−13=34; nhóm biên có f>0 nên R ghép=50−10=40.
+Khoảng biến thiên gốc \(R=47-13=34\); nhóm biên có \(f>0\) nên \(R_g=50-10=40\).
 
 </details>
 
@@ -1713,7 +1713,7 @@ R gốc=47−13=34; nhóm biên có f>0 nên R ghép=50−10=40.
 
 **Bài luyện 74.**
 
-Đọc bảng nhóm [2;4),[4;6),[6;8),[8;10),[10;12), tần số 0,3,4,2,0; tính R ghép và giải thích vì sao không được lấy 12−2.
+Đọc bảng nhóm \([2;4)\),\([4;6)\),\([6;8)\),\([8;10)\),\([10;12)\), tần số 0,3,4,2,0; tính R ghép và giải thích vì sao không được lấy 12−2.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1722,7 +1722,7 @@ Loại các lớp có tần số 0 ở hai biên; lấy cận lớp đầu có d
 **Các bước tự đối chiếu:**
 - 1 điểm — Chỉ ra nhóm có tần số dương
 - 2 điểm — Chọn đúng hai cận
-- 1 điểm — Tính R=6
+- 1 điểm — Tính \(R=6\)
 - 1 điểm — Giải thích lỗi 12−2
 
 </details>
@@ -1743,11 +1743,11 @@ R dựa vào hai cận nhóm có dữ liệu ở xa nhất; một quan sát có 
 
 **Bài luyện 76.**
 
-Phân bố ban đầu có nhóm dương đầu [10;20), cuối [30;40). Sau thêm 1 số liệu ở [60;70), R tăng bao nhiêu?
+Phân bố ban đầu có nhóm dương đầu \([10;20)\), cuối \([30;40)\). Sau thêm 1 số liệu ở \([60;70)\), R tăng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-R cũ=40−10=30; R mới=70−10=60; tăng 30.
+R cũ \(=40-10=30\); R mới \(=70-10=60\); tăng 30.
 
 </details>
 
@@ -1755,7 +1755,7 @@ R cũ=40−10=30; R mới=70−10=60; tăng 30.
 
 **Bài luyện 77.**
 
-Mẫu A có R=20, mẫu B có R=30 (cùng đơn vị). Có thể suy B có IQR lớn hơn không?
+Mẫu A có \(R=20\), mẫu B có \(R=30\) (cùng đơn vị). Có thể suy B có IQR lớn hơn không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1767,7 +1767,7 @@ Khoảng biến thiên không quyết định mức phân tán ở 50% giữa m�
 
 **Bài luyện 78.**
 
-Một bảng ban đầu có lớp đầu [0;10), lớp cuối [20;30), tần số dương. Sau thêm 1 quan sát trong [50;60), tính R trước/sau và giải thích điều chưa thể kết luận về IQR.
+Một bảng ban đầu có lớp đầu \([0;10)\), lớp cuối \([20;30)\), tần số dương. Sau thêm 1 quan sát trong \([50;60)\), tính R trước/sau và giải thích điều chưa thể kết luận về IQR.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1785,11 +1785,11 @@ Cùng đầu 0; biên cuối đổi 30→60; IQR cần toàn bộ tần số tí
 
 **Bài luyện 79.**
 
-Với f=(6,14,12,8), n=40; lớp chứa Q₁ thuộc vị trí nào?
+Với \(f=(6;14;12;8)\), \(n=40\); lớp chứa \(Q_1\) thuộc vị trí nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-n/4=10; cộng dồn 6<10≤20 nên nằm lớp 2.
+\(\frac n4=10\); cộng dồn \(6<10\le20\) nên nằm lớp 2.
 
 </details>
 
@@ -1797,11 +1797,11 @@ n/4=10; cộng dồn 6<10≤20 nên nằm lớp 2.
 
 **Bài luyện 80.**
 
-Với f=(6,14,12,8), lớp chứa Q₃ là lớp mấy?
+Với \(f=(6;14;12;8)\), lớp chứa \(Q_3\) là lớp mấy?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-3n/4=30; cộng dồn 6,20,32 nên lớp 3.
+\(\frac{3n}4=30\); cộng dồn 6,20,32 nên lớp 3.
 
 </details>
 
@@ -1809,7 +1809,7 @@ Với f=(6,14,12,8), lớp chứa Q₃ là lớp mấy?
 
 **Bài luyện 81.**
 
-Tần số (2,6,10,6) có n=24. Nêu vị trí n/4 và 3n/4 và hai lớp tương ứng.
+Tần số (2,6,10,6) có \(n=24\). Nêu vị trí \(\frac n4\) và \(\frac{3n}4\) và hai lớp tương ứng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1821,14 +1821,14 @@ Cộng dồn 2,8,18,24; vị trí 6 nằm lớp 2; vị trí 18 ở biên trên 
 
 **Bài luyện 82.**
 
-Bảng tần số 4 nhóm liên tiếp f=(4,8,12,8): lập tần số cộng dồn, tìm vị trí n/4,3n/4 và hai nhóm chứa Q.
+Bảng tần số 4 nhóm liên tiếp \(f=(4;8;12;8)\): lập tần số cộng dồn, tìm vị trí \(\frac n4\),\(\frac{3n}4\) và hai nhóm chứa Q.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án canonical:** n=32; cộng dồn 4,12,24,32; Q₁ lớp 2; Q₃ lớp 3 (biên trên)
+**Đáp án canonical:** \(n=32\); cộng dồn 4,12,24,32; \(Q_1\) lớp 2; \(Q_3\) lớp 3 (biên trên)
 
 
-Lập n=32; hai vị trí 8 và 24; dùng cộng dồn nhận đúng lớp. Ở mốc biên trên, nội suy lớp kề cho cùng giá trị nếu lớp liền nhau.
+Lập \(n=32\); hai vị trí 8 và 24; dùng cộng dồn nhận đúng lớp. Ở mốc biên trên, nội suy lớp kề cho cùng giá trị nếu lớp liền nhau.
 
 **Các bước tự đối chiếu:**
 - 1 điểm — Tính n
@@ -1842,11 +1842,11 @@ Lập n=32; hai vị trí 8 và 24; dùng cộng dồn nhận đúng lớp. Ở 
 
 **Bài luyện 83.**
 
-Nhóm [15;20) chứa Q₁ của mẫu n=40, C=6, f=14. Tính Q₁ (2 chữ số).
+Nhóm \([15;20)\) chứa \(Q_1\) của mẫu \(n=40\), \(C=6,\ f=14\). Tính \(Q_1\) (2 chữ số).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Q₁≈15+((10−6)/14)·5=16,42857≈16,43.
+\(Q_1\approx15+\frac{10-6}{14}\cdot5=16{,}42857\ldots\approx16{,}43\).
 
 </details>
 
@@ -1854,11 +1854,11 @@ Q₁≈15+((10−6)/14)·5=16,42857≈16,43.
 
 **Bài luyện 84.**
 
-Nhóm [20;25) chứa Q₃ của mẫu n=40, C=20, f=12. Tính Q₃ (2 chữ số).
+Nhóm \([20;25)\) chứa \(Q_3\) của mẫu \(n=40\), \(C=20,\ f=12\). Tính \(Q_3\) (2 chữ số).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Q₃≈20+((30−20)/12)·5=24,1667≈24,17.
+\(Q_3\approx20+\frac{30-20}{12}\cdot5\approx24{,}1667\approx24{,}17\).
 
 </details>
 
@@ -1866,11 +1866,11 @@ Q₃≈20+((30−20)/12)·5=24,1667≈24,17.
 
 **Bài luyện 85.**
 
-Với Bảng f=(6,14,12,8) trên các lớp [10;15),[15;20),[20;25),[25;30), IQR bằng bao nhiêu (2 chữ số)?
+Với Bảng \(f=(6;14;12;8)\) trên các lớp \([10;15)\),\([15;20)\),\([20;25)\),\([25;30)\), IQR bằng bao nhiêu (2 chữ số)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Tính Q₁≈16,4286; Q₃≈24,1667; Δ_Q≈7,7381≈7,74.
+Tính \(Q_1\approx16{,}4286\); \(Q_3\approx24{,}1667\); \(\Delta_Q\approx7{,}7381\approx7{,}74\).
 
 </details>
 
@@ -1878,16 +1878,16 @@ Tính Q₁≈16,4286; Q₃≈24,1667; Δ_Q≈7,7381≈7,74.
 
 **Bài luyện 86.**
 
-Bảng [0;20),[20;40),[40;60),[60;80) có f=(5,10,10,5). Xác định Q₁, Q₃, Δ_Q và giới hạn phương pháp.
+Bảng \([0;20)\),\([20;40)\),\([40;60)\),\([60;80)\) có \(f=(5;10;10;5)\). Xác định \(Q_1,Q_3,\Delta_Q\) và giới hạn phương pháp.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-n=30; Q₁ ở lớp 2, Q₁=20+((7,5−5)/10)20=25; Q₃ ở lớp 3, Q₃=40+((22,5−15)/10)20=55; trừ được 30; nội suy từ bảng ghép nên chỉ xấp xỉ.
+\(n=30\); \(Q_1\) ở lớp 2, \(Q_1=20+\frac{7{,}5-5}{10}\cdot20=25\); \(Q_3\) ở lớp 3, \(Q_3=40+\frac{22{,}5-15}{10}\cdot20=55\); trừ được 30; nội suy từ bảng ghép nên chỉ xấp xỉ.
 
 **Các bước tự đối chiếu:**
 - 1 điểm — Xác định vị trí và nhóm
-- 1 điểm — Tính Q₁
-- 1 điểm — Tính Q₃
+- 1 điểm — Tính \(Q_1\)
+- 1 điểm — Tính \(Q_3\)
 - 1 điểm — IQR
 - 1 điểm — Nêu giới hạn xấp xỉ
 
@@ -1901,7 +1901,7 @@ Muốn bớt nhạy với các nhóm cực trị khi so sánh nửa giữa của
 
 <details markdown="1"><summary>Lời giải</summary>
 
-IQR dựa trên Q₁ và Q₃, phản ánh 50% giữa; R dựa hai biên.
+IQR dựa trên \(Q_1\) và \(Q_3\), phản ánh 50% giữa; R dựa hai biên.
 
 </details>
 
@@ -1909,7 +1909,7 @@ IQR dựa trên Q₁ và Q₃, phản ánh 50% giữa; R dựa hai biên.
 
 **Bài luyện 88.**
 
-Hai mẫu cùng đơn vị có R_A=50, IQR_A=14; R_B=30, IQR_B=9. Nhận xét chính xác?
+Hai mẫu cùng đơn vị có \(R_A=50,\ \mathrm{IQR}_A=14\); \(R_B=30,\ \mathrm{IQR}_B=9\). Nhận xét chính xác?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1933,19 +1933,19 @@ Hai chỉ số đo các phần khác nhau; dữ liệu có thể có biên xa nh
 
 **Bài luyện 90.**
 
-Các nhóm [0;10),…,[40;50) có A f=(1,9,12,9,1), B f=(0,7,18,7,0). So sánh R và IQR (làm tròn hai chữ số); giải thích.
+Các nhóm \([0;10)\),…,\([40;50)\) có A \(f=(1;9;12;9;1)\), B \(f=(0;7;18;7;0)\). So sánh R và IQR (làm tròn hai chữ số); giải thích.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án canonical:** R_A=50, R_B=30; IQR_A≈14,44, IQR_B≈8,89
+**Đáp án canonical:** \(R_A=50,\ R_B=30\); \(\mathrm{IQR}_A\approx14{,}44,\ \mathrm{IQR}_B\approx8{,}89\)
 
 
-Tính 2 R từ cận nhóm dương, n=32 mỗi mẫu; nội suy Q₁ và Q₃ bằng cộng dồn rồi trừ; A lớn hơn B theo cả R và IQR, với giới hạn xấp xỉ.
+Tính 2 R từ cận nhóm dương, \(n=32\) mỗi mẫu; nội suy \(Q_1\) và \(Q_3\) bằng cộng dồn rồi trừ; A lớn hơn B theo cả R và IQR, với giới hạn xấp xỉ.
 
 **Các bước tự đối chiếu:**
 - 1 điểm — Hai khoảng biến thiên
-- 1 điểm — Q₁ của hai mẫu
-- 1 điểm — Q₃ của hai mẫu
+- 1 điểm — \(Q_1\) của hai mẫu
+- 1 điểm — \(Q_3\) của hai mẫu
 - 1 điểm — Hai IQR
 - 1 điểm — Nhận xét có điều kiện
 
@@ -1955,11 +1955,11 @@ Tính 2 R từ cận nhóm dương, n=32 mỗi mẫu; nội suy Q₁ và Q₃ b�
 
 **Bài luyện 91.**
 
-Giá trị đại diện của nhóm [10;20) là số nào?
+Giá trị đại diện của nhóm \([10;20)\) là số nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Trung điểm (10+20)/2=15.
+Trung điểm \(\frac{10+20}{2}=15\).
 
 </details>
 
@@ -1967,11 +1967,11 @@ Trung điểm (10+20)/2=15.
 
 **Bài luyện 92.**
 
-Các nhóm [0;10),[10;20),[20;30),[30;40), f=(2,6,6,2). Tính x̄ ghép nhóm.
+Các nhóm \([0;10)\),\([10;20)\),\([20;30)\),\([30;40)\), \(f=(2;6;6;2)\). Tính \(\bar x\) ghép nhóm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Giá trị đại diện 5,15,25,35; tổng trọng số=320, n=16 ⇒ x̄=20.
+Giá trị đại diện 5,15,25,35; tổng trọng số bằng 320, \(n=16\Rightarrow\bar x=20\).
 
 </details>
 
@@ -1979,11 +1979,11 @@ Giá trị đại diện 5,15,25,35; tổng trọng số=320, n=16 ⇒ x̄=20.
 
 **Bài luyện 93.**
 
-Lớp [0;20) có f=1, [20;40) có f=9. Trung bình ghép nhóm?
+Lớp \([0;20)\) có \(f=1\), \([20;40)\) có \(f=9\). Trung bình ghép nhóm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Giá trị đại diện 10 và 30; (1·10+9·30)/10=28, không phải (10+30)/2.
+Giá trị đại diện 10 và 30; \(\frac{1\cdot10+9\cdot30}{10}=28\), không phải \(\frac{10+30}2\).
 
 </details>
 
@@ -1991,11 +1991,11 @@ Giá trị đại diện 10 và 30; (1·10+9·30)/10=28, không phải (10+30)/2
 
 **Bài luyện 94.**
 
-Bảng [0;10),[10;20),[20;30) có f=(2,3,5). Tìm cỡ mẫu, ba giá trị đại diện và x̄; giải thích tính xấp xỉ.
+Bảng \([0;10)\),\([10;20)\),\([20;30)\) có \(f=(2;3;5)\). Tìm cỡ mẫu, ba giá trị đại diện và \(\bar x\); giải thích tính xấp xỉ.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-n=2+3+5=10; các trung điểm 5,15,25; Σfc=2·5+3·15+5·25=180; x̄=18, phụ thuộc việc đại diện lớp.
+\(n=2+3+5=10\); các trung điểm 5,15,25; \(\sum_i f_i c_i=2\cdot5+3\cdot15+5\cdot25=180\); \(\bar x=18\), phụ thuộc việc đại diện lớp.
 
 **Các bước tự đối chiếu:**
 - 1 điểm — Cỡ mẫu
@@ -2010,11 +2010,11 @@ n=2+3+5=10; các trung điểm 5,15,25; Σfc=2·5+3·15+5·25=180; x̄=18, phụ
 
 **Bài luyện 95.**
 
-Các trung điểm (1,3,5,7) có f=(1,3,3,1). Phương sai s² theo mẫu số n là bao nhiêu?
+Các trung điểm (1,3,5,7) có \(f=(1;3;3;1)\). Phương sai \(s^2\) theo mẫu số n là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-x̄=4, tổng f(c−4)²=24; n=8; s²=24/8=3.
+\(\bar x=4\), tổng \(\sum_i f_i(c_i-4)^2=24\); \(n=8\); \(s^2=\frac{24}8=3\).
 
 </details>
 
@@ -2022,7 +2022,7 @@ x̄=4, tổng f(c−4)²=24; n=8; s²=24/8=3.
 
 **Bài luyện 96.**
 
-Nếu 10 quan sát đại diện đều bằng 6, s² bằng bao nhiêu?
+Nếu 10 quan sát đại diện đều bằng 6, \(s^2\) bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2038,7 +2038,7 @@ Mỗi độ lệch c−x̄ bằng 0 nên tổng bình phương bằng 0.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** Giờ²
+**Đáp án canonical:** \(\mathrm{giờ}^2\)
 
 
 Phương sai lấy bình phương sai lệch nên đơn vị bình phương.
@@ -2049,11 +2049,11 @@ Phương sai lấy bình phương sai lệch nên đơn vị bình phương.
 
 **Bài luyện 98.**
 
-Các nhóm [5;15),[15;25),[25;35) có f=(2,6,2). Tính x̄, s² với mẫu số n và giải thích dấu/đơn vị nếu số liệu tính bằng phút.
+Các nhóm \([5;15)\),\([15;25)\),\([25;35)\) có \(f=(2;6;2)\). Tính \(\bar x\), \(s^2\) với mẫu số n và giải thích dấu/đơn vị nếu số liệu tính bằng phút.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-c=(10,20,30), n=10; x̄=(20+120+60)/10=20; s²=(2·100+6·0+2·100)/10=40; không âm và đơn vị phút².
+\(c=(10;20;30)\), \(n=10\); \(\bar x=\frac{20+120+60}{10}=20\); \(s^2=\frac{2\cdot100+6\cdot0+2\cdot100}{10}=40\); không âm và đơn vị \(\mathrm{phút}^2\).
 
 **Các bước tự đối chiếu:**
 - 1 điểm — Trung điểm và n
@@ -2067,11 +2067,11 @@ c=(10,20,30), n=10; x̄=(20+120+60)/10=20; s²=(2·100+6·0+2·100)/10=40; khôn
 
 **Bài luyện 99.**
 
-Dữ liệu có E(c²)=19 và x̄=4. s² bằng bao nhiêu?
+Dữ liệu có \(E(c^2)=19\) và \(\bar x=4\). \(s^2\) bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Áp dụng s²=E(c²)−x̄²=19−16=3.
+Áp dụng \(s^2=E(c^2)-\bar x^2=19-16=3\).
 
 </details>
 
@@ -2079,11 +2079,11 @@ Dữ liệu có E(c²)=19 và x̄=4. s² bằng bao nhiêu?
 
 **Bài luyện 100.**
 
-Có f=(2,6,2), c=(10,20,30). Tính E(c²).
+Có \(f=(2;6;2)\), \(c=(10;20;30)\). Tính \(E(c^2)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-(2·100+6·400+2·900)/10=440.
+\(\frac{2\cdot100+6\cdot400+2\cdot900}{10}=440\).
 
 </details>
 
@@ -2091,7 +2091,7 @@ Có f=(2,6,2), c=(10,20,30). Tính E(c²).
 
 **Bài luyện 101.**
 
-Nếu tính được s²≈−0,000001 do làm tròn, có kết luận phương sai âm thật không?
+Nếu tính được \(s^2\approx-0{,}000001\) do làm tròn, có kết luận phương sai âm thật không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2103,17 +2103,17 @@ Phương sai theo định nghĩa luôn không âm; kiểm độ chính xác trun
 
 **Bài luyện 102.**
 
-Cho c=(1,3,5,7), f=(1,3,3,1). Tính Σfc², x̄, s² bằng công thức rút gọn và giải thích kiểm bằng công thức gốc.
+Cho \(c=(1;3;5;7)\), \(f=(1;3;3;1)\). Tính \(\sum_i f_i c_i^2\), \(\bar x\), \(s^2\) bằng công thức rút gọn và giải thích kiểm bằng công thức gốc.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-n=8; Σfc=32, x̄=4; Σfc²=1+27+75+49=152; s²=19−16=3; khớp tổng f(c−4)²/8=3.
+\(n=8\); \(\sum_i f_i c_i=32\), \(\bar x=4\); \(\sum_i f_i c_i^2=1+27+75+49=152\); \(s^2=19-16=3\); khớp \(\frac{\sum_i f_i(c_i-4)^2}{8}=3\).
 
 **Các bước tự đối chiếu:**
 - 1 điểm — Tính n,Σfc
 - 1 điểm — x̄
-- 1 điểm — Σfc²
-- 1 điểm — s²
+- 1 điểm — \(\sum_i f_i c_i^2\)
+- 1 điểm — \(s^2\)
 - 1 điểm — Kiểm chéo hai cách
 
 </details>
@@ -2122,14 +2122,14 @@ n=8; Σfc=32, x̄=4; Σfc²=1+27+75+49=152; s²=19−16=3; khớp tổng f(c−4
 
 **Bài luyện 103.**
 
-Nếu s²=9 cm², độ lệch chuẩn s là bao nhiêu?
+Nếu \(s^2=9\,\mathrm{cm}^2\), độ lệch chuẩn s là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án canonical:** 3 cm
 
 
-s=√9=3 và đơn vị trở lại cm.
+\(s=\sqrt9=3\) và đơn vị trở lại cm.
 
 </details>
 
@@ -2137,11 +2137,11 @@ s=√9=3 và đơn vị trở lại cm.
 
 **Bài luyện 104.**
 
-Phương sai 75 phút² cho độ lệch chuẩn xấp xỉ bao nhiêu phút?
+Phương sai 75 \(\mathrm{phút}^2\) cho độ lệch chuẩn xấp xỉ bao nhiêu phút?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-s=√75≈8,66 phút.
+\(s=\sqrt{75}\approx8{,}66\) phút.
 
 </details>
 
@@ -2149,11 +2149,11 @@ s=√75≈8,66 phút.
 
 **Bài luyện 105.**
 
-Câu “s=16 giờ²” khi s²=16 giờ² sai ở đâu?
+Câu “\(s=16\,\mathrm{giờ}^2\)” khi \(s^2=16\,\mathrm{giờ}^2\) sai ở đâu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Phải lấy căn √16=4, đơn vị giờ.
+Phải lấy căn \(\sqrt{16}=4\), đơn vị giờ.
 
 </details>
 
@@ -2161,16 +2161,16 @@ Phải lấy căn √16=4, đơn vị giờ.
 
 **Bài luyện 106.**
 
-Bảng [0;10),[10;20),[20;30),[30;40) có f=(2,6,6,2). Tính n, x̄, s², s và đơn vị nếu biến là phút.
+Bảng \([0;10)\),\([10;20)\),\([20;30)\),\([30;40)\) có \(f=(2;6;6;2)\). Tính n, \(\bar x\), \(s^2\), s và đơn vị nếu biến là phút.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-c=(5,15,25,35); Σfc/16=20; Σf(c−20)²=1200; s²=75; s=√75≈8,66 phút.
+\(c=(5;15;25;35)\); \(\frac{\sum_i f_i c_i}{16}=20\); \(\sum_i f_i(c_i-20)^2=1200\); \(s^2=75\); \(s=\sqrt{75}\approx8{,}66\) phút.
 
 **Các bước tự đối chiếu:**
 - 1 điểm — Trung điểm và n
 - 1 điểm — x̄
-- 1 điểm — s²
+- 1 điểm — \(s^2\)
 - 1 điểm — s
 - 1 điểm — Phân biệt đơn vị
 
@@ -2180,7 +2180,7 @@ c=(5,15,25,35); Σfc/16=20; Σf(c−20)²=1200; s²=75; s=√75≈8,66 phút.
 
 **Bài luyện 107.**
 
-Hai mẫu cùng trung bình/cùng đơn vị có s_A=2, s_B=5. Mẫu nào ít phân tán quanh trung bình theo s?
+Hai mẫu cùng trung bình/cùng đơn vị có \(s_A=2,\ s_B=5\). Mẫu nào ít phân tán quanh trung bình theo s?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2192,11 +2192,11 @@ Hai mẫu cùng trung bình/cùng đơn vị có s_A=2, s_B=5. Mẫu nào ít ph
 
 **Bài luyện 108.**
 
-Tần số A=(2,6,2), B=(4,2,4) trên c=(10,20,30). So s²_A và s²_B.
+Tần số \(A=(2;6;2),\ B=(4;2;4)\) trên \(c=(10;20;30)\). So \(s_A^2\) và \(s_B^2\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Cả hai x̄=20; A: (2·100+2·100)/10=40; B: (4·100+4·100)/10=80.
+Cả hai \(\bar x=20\); A: \(\frac{2\cdot100+2\cdot100}{10}=40\); B: \(\frac{4\cdot100+4\cdot100}{10}=80\).
 
 </details>
 
@@ -2220,15 +2220,15 @@ Hai máy có cùng mức đo trung bình 20, mẫu A tần số (2,6,2), B (4,2,
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án canonical:** s_A≈6,32; s_B≈8,94; A ít dao động hơn theo tiêu chí này
+**Đáp án canonical:** \(s_A\approx6{,}32;\ s_B\approx8{,}94\); A ít dao động hơn theo tiêu chí này
 
 
-Hai trung bình bằng 20; phương sai A=40, B=80; lấy căn; so cùng đơn vị và chỉ nói độ ổn định trong mẫu.
+Hai trung bình bằng 20; phương sai \(s_A^2=40,\ s_B^2=80\); lấy căn; so cùng đơn vị và chỉ nói độ ổn định trong mẫu.
 
 **Các bước tự đối chiếu:**
 - 1 điểm — Hai trung bình
-- 1 điểm — s²_A
-- 1 điểm — s²_B
+- 1 điểm — \(s_A^2\)
+- 1 điểm — \(s_B^2\)
 - 1 điểm — Hai s
 - 1 điểm — Nhận xét giới hạn
 
@@ -2238,7 +2238,7 @@ Hai trung bình bằng 20; phương sai A=40, B=80; lấy căn; so cùng đơn v
 
 **Bài luyện 111.**
 
-A có x̄=20, s=4; B có x̄=200, s=20. So s trực tiếp 20>4 để kết luận B có rủi ro tương đối lớn hơn có đủ không?
+A có \(\bar x=20,\ s=4\); B có \(\bar x=200,\ s=20\). So s trực tiếp \(20>4\) để kết luận B có rủi ro tương đối lớn hơn có đủ không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2250,11 +2250,11 @@ Mức trung bình khác xa; s tuyệt đối không đủ đánh giá rủi ro t
 
 **Bài luyện 112.**
 
-Trong ô tham khảo “Em có biết”, CV=s/x̄. Nếu x̄=20,s=4, CV là bao nhiêu?
+Trong ô tham khảo “Em có biết”, \(\mathrm{CV}=\frac{s}{\bar x}\). Nếu \(\bar x=20,\ s=4\), CV là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Khi x̄>0, CV=4/20=0,2=20%; đây là tham khảo, không phải Core.
+Khi \(\bar x>0\), \(\mathrm{CV}=\frac4{20}=0{,}2=20\%\); đây là tham khảo, không phải Core.
 
 </details>
 
@@ -2262,7 +2262,7 @@ Khi x̄>0, CV=4/20=0,2=20%; đây là tham khảo, không phải Core.
 
 **Bài luyện 113.**
 
-Nếu x̄=0, có được dùng CV=s/x̄ không?
+Nếu \(\bar x=0\), có được dùng \(\mathrm{CV}=\frac{s}{\bar x}\) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2274,11 +2274,11 @@ Mẫu số bằng 0; không xác định. Trước đó cần xem lại mô hìn
 
 **Bài luyện 114.**
 
-Hai phương án thu nhập có x̄_A=30 triệu, s_A=6 triệu; x̄_B=300 triệu, s_B=18 triệu. Giải thích vì sao không so “rủi ro tương đối” chỉ theo s, và nêu một lựa chọn thước đo có điều kiện.
+Hai phương án thu nhập có \(\bar x_A=30\) triệu, \(s_A=6\) triệu; \(\bar x_B=300\) triệu, \(s_B=18\) triệu. Giải thích vì sao không so “rủi ro tương đối” chỉ theo s, và nêu một lựa chọn thước đo có điều kiện.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Nhận ra trung bình lệch xa; s tuyệt đối 18>6 không đủ kết luận; CV chỉ là công cụ tham khảo SGK: 6/30=0,2, 18/300=0,06; nêu giả định thu nhập dương và cùng bối cảnh.
+Nhận ra trung bình lệch xa; s tuyệt đối \(18>6\) không đủ kết luận; CV chỉ là công cụ tham khảo SGK: \(\frac6{30}=0{,}2\), \(\frac{18}{300}=0{,}06\); nêu giả định thu nhập dương và cùng bối cảnh.
 
 **Các bước tự đối chiếu:**
 - 1 điểm — Chỉ ra hai trung bình khác xa
@@ -2311,19 +2311,19 @@ Chín câu dưới đây giúp em ôn lại từ dữ liệu thô đến bảng 
 
 <!-- REUSE_PUBLIC: THPT-G11-B08-P03 NO_MASTERY NOT_RD1 -->
 
-**Câu 4.** Điểm [1,2,3,4,5,6,7,8,9,10] chia [1;4),[4;7),[7;11). Bảng tần số?
+**Câu 4.** Điểm [1,2,3,4,5,6,7,8,9,10] chia \([1;4)\),\([4;7)\),\([7;11)\). Bảng tần số?
 
 <!-- REUSE_PUBLIC: THPT-G11-B09-P02 NO_MASTERY NOT_RD1 -->
 
-**Câu 5.** Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Ước lượng trung vị bằng nội suy.
+**Câu 5.** Mẫu A: \([0;10)\to4\) | \([10;20)\to8\) | \([20;30)\to6\) | \([30;40)\to2\). Ước lượng trung vị bằng nội suy.
 
 <!-- REUSE_PUBLIC: THPT-G11-B09-P04 NO_MASTERY NOT_RD1 -->
 
-**Câu 6.** Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Tìm mốt ước lượng.
+**Câu 6.** Mẫu A: \([0;10)\to4\) | \([10;20)\to8\) | \([20;30)\to6\) | \([30;40)\to2\). Tìm mốt ước lượng.
 
 <!-- REUSE_PUBLIC: THPT-G12-B09-P04 NO_MASTERY NOT_RD1 -->
 
-**Câu 7.** Một mẫu gốc có min=13, max=47; bảng ghép lớp [10;20) đến [40;50) ở hai biên. So R gốc với R ghép nhóm.
+**Câu 7.** Một mẫu gốc có \(x_{\min}=13,\ x_{\max}=47\); bảng ghép lớp \([10;20)\) đến \([40;50)\) ở hai biên. So R gốc với R ghép nhóm.
 
 <!-- REUSE_PUBLIC: THPT-G12-B10-P04 NO_MASTERY NOT_RD1 -->
 
@@ -2331,7 +2331,7 @@ Chín câu dưới đây giúp em ôn lại từ dữ liệu thô đến bảng 
 
 <!-- REUSE_PUBLIC: THPT-G12-B10-P08 NO_MASTERY NOT_RD1 -->
 
-**Câu 9.** Câu “s=16 giờ²” khi s²=16 giờ² sai ở đâu?
+**Câu 9.** Câu “\(s=16\,\mathrm{giờ}^2\)” khi \(s^2=16\,\mathrm{giờ}^2\) sai ở đâu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
