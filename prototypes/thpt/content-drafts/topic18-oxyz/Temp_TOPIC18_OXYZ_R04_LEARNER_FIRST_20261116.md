@@ -2309,7 +2309,7 @@ Không: từ hai thành phần đầu \(k=2\) nhưng thành phần z yêu cầu 
 ## 4. Mặt phẳng trong Oxyz
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 82.** Mặt phẳng x−2y+3z−4=0 có pháp tuyến nào?
+**Bài luyện 82.** Mặt phẳng \(x-2y+3z-4=0\) có pháp tuyến nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2319,12 +2319,12 @@ Không: từ hai thành phần đầu \(k=2\) nhưng thành phần z yêu cầu 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 83.** Tìm một n vuông góc với u=(1,2,0),v=(0,1,2).
+**Bài luyện 83.** Tìm một \(\vec n\) vuông góc với \(\vec u=(1;2;0)\),\(\vec v=(0;1;2)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** \((4;-2;1)\)
-- **Lời giải có suy luận:** u×v=(4,-2,1); hai tích vô hướng lần lượt 4-4 và -2+2 đều 0.
+- **Lời giải có suy luận:** \(\vec u\times\vec v=(4;-2;1)\); hai tích vô hướng lần lượt \(4-4\) và \(-2+2\) đều 0.
 
 </details>
 
@@ -2339,13 +2339,13 @@ Không: từ hai thành phần đầu \(k=2\) nhưng thành phần z yêu cầu 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 85.** Giải thích vì sao u=(1,1,0),v=(2,2,0) không đủ để xác định pháp tuyến duy nhất bằng tích có hướng.
+**Bài luyện 85.** Giải thích vì sao \(\vec u=(1;1;0)\),\(\vec v=(2;2;0)\) không đủ để xác định pháp tuyến duy nhất bằng tích có hướng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** u×v=0, vì u và v cùng phương.
-- **Lời giải có suy luận:** v=2u nên tích có hướng bằng 0. Cần hướng thứ hai không cùng phương; không được lấy n=0 làm pháp tuyến.
-- **Rubric Written /5 (chấm theo từng bước) — R01 đã review DELTA_C:** 2đ chỉ ra v=2u, hai vectơ cùng phương/phụ thuộc tuyến tính nên không tạo cặp hướng độc lập; 1đ tính hoặc chứng minh u×v=(0,0,0); 1đ giải thích vectơ không không được dùng làm vectơ pháp tuyến; 1đ nêu cách khắc phục: chọn hướng thứ hai không cùng phương với u rồi mới tính tích có hướng.
+- **Đáp án:** \(\vec u\times\vec v=\vec 0\), vì u và v cùng phương.
+- **Lời giải có suy luận:** \(\vec v=2\vec u\) nên tích có hướng bằng 0. Cần hướng thứ hai không cùng phương; không được lấy \(\vec n=\vec0\) làm pháp tuyến.
+- **Rubric Written /5 (chấm theo từng bước) — R01 đã review DELTA_C:** 2đ chỉ ra \(\vec v=2\vec u\), hai vectơ cùng phương/phụ thuộc tuyến tính nên không tạo cặp hướng độc lập; 1đ tính hoặc chứng minh \(\vec u\times\vec v=(0;0;0)\); 1đ giải thích vectơ không không được dùng làm vectơ pháp tuyến; 1đ nêu cách khắc phục: chọn hướng thứ hai không cùng phương với u rồi mới tính tích có hướng.
 
 </details>
 
@@ -2354,29 +2354,29 @@ Không: từ hai thành phần đầu \(k=2\) nhưng thành phần z yêu cầu 
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc lập nên n≠0.
+\(\vec u\times\vec v=(1;-1;1)\). Kiểm \(\vec n\cdot\vec u=1-1=0\), \(\vec n\cdot\vec v=-1+1=0\). Hai vectơ đã cho độc lập nên \(\vec n\ne\vec0\).
 
 **Đường khắc phục D6:** Nếu tích có hướng 0, phải kiểm hai hướng có cùng phương hay không; không dùng vectơ 0 làm pháp tuyến.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 87.** Qua M(0,1,-1), n=(1,2,3) viết mặt phẳng.
+**Bài luyện 87.** Qua \(M(0;1;-1)\), \(\vec n=(1;2;3)\) viết mặt phẳng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** x+2y+3z+1=0
-- **Lời giải có suy luận:** x+2(y−1)+3(z+1)=0 ⇒ x+2y+3z+1=0.
+- **Đáp án:** \(x+2y+3z+1=0\)
+- **Lời giải có suy luận:** \(x+2(y-1)+3(z+1)=0\Rightarrow x+2y+3z+1=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 88.** Qua M(2,0,1), n=(1,-2,2), viết (P).
+**Bài luyện 88.** Qua \(M(2;0;1)\), \(\vec n=(1;-2;2)\), viết (P).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** x−2y+2z−4=0
-- **Lời giải có suy luận:** (x−2)−2y+2(z−1)=0 ⇒ x−2y+2z−4=0.
+- **Đáp án:** \(x-2y+2z-4=0\)
+- **Lời giải có suy luận:** \((x-2)-2y+2(z-1)=0\Rightarrow x-2y+2z-4=0\).
 
 </details>
 
@@ -2385,30 +2385,30 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** z=4
-- **Lời giải có suy luận:** Mặt ngang có pháp tuyến (0,0,1); đi qua z=4 nên z−4=0.
+- **Đáp án:** \(z=4\)
+- **Lời giải có suy luận:** Mặt ngang có pháp tuyến \((0;0;1)\); đi qua \(z=4\) nên \(z-4=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 90.** Qua M(-1,2,0) có pháp tuyến n=(2,3,-1). Viết phương trình và kiểm tại M.
+**Bài luyện 90.** Qua \(M(-1;2;0)\) có pháp tuyến \(\vec n=(2;3;-1)\). Viết phương trình và kiểm tại M.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** 2x+3y−z−4=0
-- **Lời giải có suy luận:** 2(x+1)+3(y−2)−z=0 ⇒ 2x+3y−z−4=0; tại M: -2+6-4=0.
+- **Đáp án:** \(2x+3y-z-4=0\)
+- **Lời giải có suy luận:** \(2(x+1)+3(y-2)-z=0\Rightarrow2x+3y-z-4=0\); tại M: \(-2+6-4=0\).
 - **Rubric Written /5 (chấm theo từng bước):** 2đ lập đúng dạng điểm–pháp tuyến; 1đ triển khai hệ số tự do; 1đ thử lại điểm M; 1đ ghi điều kiện n khác 0.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P18; PRIMARY_OUTCOME: TOP18-O18; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 91.** M0=(−1,2,0), n=(1,2,−1). Viết phương trình mặt phẳng và thử lại M0.
+**Bài luyện 91.** \(M_0=(-1;2;0)\), \(\vec n=(1;2;-1)\). Viết phương trình mặt phẳng và thử lại \(M_0\).
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-(x+1)+2(y−2)−z=0, suy x+2y−z−3=0. Thay (−1,2,0) được −1+4−3=0.
+\((x+1)+2(y-2)-z=0\), suy \(x+2y-z-3=0\). Thay \((-1;2;0)\) được \(-1+4-3=0\).
 
-**Đường khắc phục D6:** Không để pháp tuyến n=0; thay tọa độ điểm đã cho vào phương trình để phát hiện lỗi dấu.
+**Đường khắc phục D6:** Không để pháp tuyến \(\vec n=\vec0\); thay tọa độ điểm đã cho vào phương trình để phát hiện lỗi dấu.
 
 </details>
 
@@ -2417,8 +2417,8 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** x=1
-- **Lời giải có suy luận:** AB=(0,1,0),AC=(0,0,1) ⇒ n=(1,0,0); qua A ⇒ x−1=0.
+- **Đáp án:** \(x=1\)
+- **Lời giải có suy luận:** \(\overrightarrow{AB}=(0;1;0),\ \overrightarrow{AC}=(0;0;1)\Rightarrow\vec n=(1;0;0)\); qua A ⇒ \(x-1=0\).
 
 </details>
 
@@ -2427,8 +2427,8 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** x−y=0
-- **Lời giải có suy luận:** AB=(1,1,0), AC=(0,0,1), n=(1,-1,0) theo hệ số khác 0; qua O ⇒ x−y=0.
+- **Đáp án:** \(x-y=0\)
+- **Lời giải có suy luận:** \(\overrightarrow{AB}=(1;1;0)\), \(\overrightarrow{AC}=(0;0;1)\), \(\vec n=(1;-1;0)\) theo hệ số khác 0; qua O ⇒ \(x-y=0\).
 
 </details>
 
@@ -2437,7 +2437,7 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** x+y−4=0
+- **Đáp án:** \(x+y-4=0\)
 - **Lời giải có suy luận:** Hai vectơ trong tường \((-4;4;0)\),\((0;0;2)\) có pháp tuyến cùng phương \((1;1;0)\); qua \((4;0;0)\).
 
 </details>
@@ -2447,9 +2447,9 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** x+y+z−1=0
-- **Lời giải có suy luận:** AB=(-1,1,0), AC=(-1,0,1), tích có hướng khác 0; ba điểm đều thỏa x+y+z=1.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ lập AB, AC và kiểm không thẳng hàng; 1đ xác định pháp tuyến; 1đ viết phương trình và thử đủ ba điểm; 1đ nêu tính duy nhất.
+- **Đáp án:** \(x+y+z-1=0\)
+- **Lời giải có suy luận:** \(\overrightarrow{AB}=(-1;1;0)\), \(\overrightarrow{AC}=(-1;0;1)\), tích có hướng khác 0; ba điểm đều thỏa \(x+y+z=1\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ lập \(\overrightarrow{AB},\overrightarrow{AC}\) và kiểm không thẳng hàng; 1đ xác định pháp tuyến; 1đ viết phương trình và thử đủ ba điểm; 1đ nêu tính duy nhất.
 
 </details>
 
@@ -2458,9 +2458,9 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-AB=(1,0,1),AC=(0,1,1), n=(−1,−1,1) nên mặt phẳng −x−y+z=0, hoặc z=x+y.
+\(\overrightarrow{AB}=(1;0;1)\),\(\overrightarrow{AC}=(0;1;1)\), \(\vec n=(-1;-1;1)\) nên mặt phẳng \(-x-y+z=0\), hoặc \(z=x+y\).
 
-**Đường khắc phục D6:** Kiểm AB,AC có cùng phương không trước khi dựng n, và thay đủ ba điểm vào đáp án.
+**Đường khắc phục D6:** Kiểm \(\overrightarrow{AB},\overrightarrow{AC}\) có cùng phương không trước khi dựng n, và thay đủ ba điểm vào đáp án.
 
 </details>
 
@@ -2469,12 +2469,12 @@ AB=(1,0,1),AC=(0,1,1), n=(−1,−1,1) nên mặt phẳng −x−y+z=0, hoặc z
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành phần y). Pháp tuyến n=(1,1,1) vuông góc cả hai. Qua A: (x−1)+y+z=0 ⇒ x+y+z=1. Thay A,B,C đều có tổng tọa độ bằng 1.
+\(\overrightarrow{AB}=(-1;1;0)\), \(\overrightarrow{AC}=(-1;0;1)\) không cùng phương (chẳng hạn vì thành phần y). Pháp tuyến \(\vec n=(1;1;1)\) vuông góc cả hai. Qua A: \((x-1)+y+z=0\Rightarrow x+y+z=1\). Thay A,B,C đều có tổng tọa độ bằng 1.
 
 **Rubric 4 điểm (mỗi tiêu chí 1 điểm):**
-- Tính đúng AB,AC và chứng minh chúng không cùng phương — **1 điểm**.
+- Tính đúng \(\overrightarrow{AB},\overrightarrow{AC}\) và chứng minh chúng không cùng phương — **1 điểm**.
 - Dựng một pháp tuyến khác không của (ABC) — **1 điểm**.
-- Viết đúng x+y+z=1 — **1 điểm**.
+- Viết đúng \(x+y+z=1\) — **1 điểm**.
 - Thử lại cả A,B,C và giải thích điều kiện qua ba điểm — **1 điểm**.
 
 </details>
@@ -2484,8 +2484,8 @@ AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành ph�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** y=1
-- **Lời giải có suy luận:** Có 2 hướng (1,0,0),(0,0,1), pháp tuyến (0,1,0); qua điểm cho trước ⇒ y=1.
+- **Đáp án:** \(y=1\)
+- **Lời giải có suy luận:** Có 2 hướng \((1;0;0),(0;0;1)\), pháp tuyến \((0;1;0)\); qua điểm cho trước ⇒ \(y=1\).
 
 </details>
 
@@ -2494,8 +2494,8 @@ AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành ph�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 2x−z=0
-- **Lời giải có suy luận:** Hai hướng Oy=(0,1,0) và (1,0,2), n=(2,0,-1); qua O.
+- **Đáp án:** \(2x-z=0\)
+- **Lời giải có suy luận:** Hai hướng \(\vec j=(0;1;0)\) theo trục \(Oy\) và \((1;0;2)\), \(\vec n=(2;0;-1)\); qua O.
 
 </details>
 
@@ -2504,8 +2504,8 @@ AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành ph�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** x−y+z−2=0
-- **Lời giải có suy luận:** n=(1,-1,1); qua P ⇒ x−y+z−2=0.
+- **Đáp án:** \(x-y+z-2=0\)
+- **Lời giải có suy luận:** \(\vec n=(1;-1;1)\); qua P ⇒ \(x-y+z-2=0\).
 
 </details>
 
@@ -2514,8 +2514,8 @@ AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành ph�
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** y−2z=0
-- **Lời giải có suy luận:** Hai hướng Ox và OB=(0,2,1), n=(0,-1,2) hay (0,1,-2); thay B được 0.
+- **Đáp án:** \(y-2z=0\)
+- **Lời giải có suy luận:** Hai hướng Ox và \(\overrightarrow{OB}=(0;2;1)\), \(\vec n=(0;-1;2)\) hay \((0;1;-2)\); thay B được 0.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ nhận đúng hai hướng của mặt; 1đ tìm pháp tuyến; 1đ lập và thử phương trình; 1đ giải thích điều kiện chứa trục so với song song trục.
 
 </details>
@@ -2525,14 +2525,14 @@ AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành ph�
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Dùng e2=(0,1,0) và OA=(2,0,−1); pháp tuyến n=(1,0,2), nên x+2z=0; Oy và A đều thỏa.
+Dùng \(\vec j=(0;1;0)\) và \(\overrightarrow{OA}=(2;0;-1)\); pháp tuyến \(\vec n=(1;0;2)\), nên \(x+2z=0\); Oy và A đều thỏa.
 
 **Đường khắc phục D6:** Không bỏ điều kiện chứa điểm/đường; một mặt chỉ có pháp tuyến đúng nhưng lệch vị trí vẫn sai.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 103.** x−2y+z=1 và 2x−4y+2z=5 có vị trí gì?
+**Bài luyện 103.** \(x-2y+z=1\) và \(2x-4y+2z=5\) có vị trí gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2542,84 +2542,84 @@ Dùng e2=(0,1,0) và OA=(2,0,−1); pháp tuyến n=(1,0,2), nên x+2z=0; Oy và
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 104.** Hai mặt 2x+y−z=0 và x−2y=0 có vuông góc?
+**Bài luyện 104.** Hai mặt \(2x+y-z=0\) và \(x-2y=0\) có vuông góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Có
-- **Lời giải có suy luận:** n1=(2,1,-1), n2=(1,-2,0), dot=2−2+0=0.
+- **Lời giải có suy luận:** \(\vec n_1=(2;1;-1)\), \(\vec n_2=(1;-2;0)\), \(\vec n_1\cdot\vec n_2=2-2+0=0\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 105.** Mặt sàn z=0 và tường x=0 có vuông góc?
+**Bài luyện 105.** Mặt sàn \(z=0\) và tường \(x=0\) có vuông góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** Có
-- **Lời giải có suy luận:** Pháp tuyến (0,0,1) và (1,0,0) có dot=0.
+- **Lời giải có suy luận:** Pháp tuyến \((0;0;1)\) và \((1;0;0)\) có tích vô hướng bằng 0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 106.** Chứng minh (P):x+y−z=0 song song (Q):2x+2y−2z+1=0 và vuông góc (R):x−y=0.
+**Bài luyện 106.** Chứng minh \((P):x+y-z=0\) song song \((Q):2x+2y-2z+1=0\) và vuông góc \((R):x-y=0\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** P∥Q phân biệt; P⊥R
-- **Lời giải có suy luận:** nQ=2nP nhưng hai phương trình không trùng; nP·nR=1−1=0.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định hai cặp pháp tuyến; 1đ so sánh tỉ lệ/dot; 1đ kiểm hằng số để phân biệt trùng/song song; 1đ kết luận hai quan hệ rõ ràng.
+- **Đáp án:** \((P)\parallel(Q)\) phân biệt; \((P)\perp(R)\)
+- **Lời giải có suy luận:** \(\vec n_Q=2\vec n_P\) nhưng hai phương trình không trùng; \(\vec n_P\cdot\vec n_R=1-1=0\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định hai cặp pháp tuyến; 1đ so sánh tỉ lệ và tích vô hướng; 1đ kiểm hằng số để phân biệt trùng/song song; 1đ kết luận hai quan hệ rõ ràng.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-P21; PRIMARY_OUTCOME: TOP18-O21; ROLE: TOPIC_PRACTICE; ORIGINAL_R03_ANSWER_UNCHANGED -->
-**Bài luyện 107.** P:x−y=0, Q:x+y=0. Chúng vuông góc không?
+**Bài luyện 107.** \((P):x-y=0\), \((Q):x+y=0\). Chúng vuông góc không?
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Pháp tuyến n1=(1,−1,0),n2=(1,1,0); tích n1·n2=0 và cả hai khác không nên hai mặt vuông góc.
+Pháp tuyến \(\vec n_1=(1;-1;0)\),\(\vec n_2=(1;1;0)\); tích \(\vec n_1\cdot\vec n_2=0\) và cả hai khác không nên hai mặt vuông góc.
 
-**Đường khắc phục D6:** Nếu n1∥n2, kiểm tỉ lệ cả hệ số tự do trước khi nói 'hai mặt song song phân biệt'.
+**Đường khắc phục D6:** Nếu \(\vec n_1\parallel\vec n_2\), kiểm tỉ lệ cả hệ số tự do trước khi nói 'hai mặt song song phân biệt'.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 108.** Khoảng cách O tới x+2y+2z−3=0?
+**Bài luyện 108.** Khoảng cách O tới \(x+2y+2z-3=0\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 1
-- **Lời giải có suy luận:** Tử |−3|=3, mẫu √9=3.
+- **Lời giải có suy luận:** Tử \(|-3|=3\), mẫu \(\sqrt9=3\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 109.** M(2,-1,1), P:2x+y+2z−1=0. Tính d.
+**Bài luyện 109.** \(M(2;-1;1)\), \((P):2x+y+2z-1=0\). Tính d.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-- **Đáp án:** 4/3
-- **Lời giải có suy luận:** Tử |4−1+2−1|=4, mẫu 3.
+- **Đáp án:** \(\frac43\)
+- **Lời giải có suy luận:** Tử \(|4-1+2-1|=4\), mẫu 3.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 110.** Hai mặt sàn z=0 và trần z=3 có khoảng cách bao nhiêu mét nếu tọa độ mét?
+**Bài luyện 110.** Hai mặt sàn \(z=0\) và trần \(z=3\) có khoảng cách bao nhiêu mét nếu tọa độ mét?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 - **Đáp án:** 3m
-- **Lời giải có suy luận:** Chọn điểm O thuộc sàn, d(O,z−3=0)=3m.
+- **Lời giải có suy luận:** Chọn điểm O thuộc sàn, \(d(O,(z-3=0))=3\) m.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Bài luyện 111.** Tính khoảng cách M(1,1,2) đến 2x−2y+z−4=0. Viết đủ tử, mẫu và kết luận.
+**Bài luyện 111.** Tính khoảng cách \(M(1;1;2)\) đến \(2x-2y+z-4=0\). Viết đủ tử, mẫu và kết luận.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** 2/3
-- **Lời giải có suy luận:** Tử |2−2+2−4|=2; mẫu √(4+4+1)=3 nên d=2/3.
+- **Đáp án:** \(\frac23\)
+- **Lời giải có suy luận:** Tử \(|2-2+2-4|=2\); mẫu \(\sqrt{4+4+1}=3\) nên \(d=\frac23\).
 - **Rubric Written /5 (chấm theo từng bước):** 2đ thế tọa độ vào tử số và tính chuẩn n; 1đ sử dụng trị tuyệt đối; 1đ kết quả khoảng cách đúng; 1đ giải thích đơn vị và không âm.
 
 </details>
@@ -2629,23 +2629,23 @@ Pháp tuyến n1=(1,−1,0),n2=(1,1,0); tích n1·n2=0 và cả hai khác không
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Thay M: 2−1+2−6=−3, |−3|=3, |n|=√(4+1+4)=3 nên d=1.
+Thay M: \(2-1+2-6=-3\), \(|-3|=3\), \(\lVert\vec n\rVert=\sqrt{4+1+4}=3\) nên \(d=1\).
 
 **Đường khắc phục D6:** Đừng quên trị tuyệt đối và chuẩn hóa pháp tuyến; đáp án khoảng cách phải không âm.
 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP18-W06; PRIMARY_OUTCOME: TOP18-O22; ROLE: TOPIC_WRITTEN; RUBRIC_ORIGINAL_UNCHANGED -->
-**Bài luyện 113.** Một đường bay được mô tả bởi d(t)=(2+t,−1,t), t thực; nó cắt mặt phẳng P:x+y+z=3. Tìm giao điểm và tính khoảng cách từ điểm M=(0,0,0) đến P.
+**Bài luyện 113.** Một đường bay được mô tả bởi \(d(t)=(2+t;-1;t)\), t thực; nó cắt mặt phẳng \((P):x+y+z=3\). Tìm giao điểm và tính khoảng cách từ điểm \(M=(0;0;0)\) đến P.
 
 <details markdown="1"><summary>Lời giải và tự đối chiếu</summary>
 
-Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm (3,−1,1). Pháp tuyến P là (1,1,1), khoảng cách từ O đến P bằng |−3|/√3=√3; đây là khoảng cách vuông góc, không phải khoảng cách O đến giao điểm.
+Thay d(t) vào P: \((2+t)-1+t=1+2t=3\Rightarrow t=1\), giao điểm \((3;-1;1)\). Pháp tuyến P là \((1;1;1)\), khoảng cách từ O đến P bằng \(\frac{|-3|}{\sqrt3}=\sqrt3\); đây là khoảng cách vuông góc, không phải khoảng cách O đến giao điểm.
 
 **Rubric 4 điểm (mỗi tiêu chí 1 điểm):**
-- Thế đúng d vào P và giải t=1 — **1 điểm**.
+- Thế đúng d vào P và giải \(t=1\) — **1 điểm**.
 - Kết luận giao điểm \((3;-1;1)\), kiểm thuộc P — **1 điểm**.
-- Xác định pháp tuyến (1,1,1) và tính d(O,P)=√3 — **1 điểm**.
+- Xác định pháp tuyến \((1;1;1)\) và tính \(d(O,(P))=\sqrt3\) — **1 điểm**.
 - Phân biệt khoảng cách O–mặt với đoạn nối O–giao điểm — **1 điểm**.
 
 </details>
