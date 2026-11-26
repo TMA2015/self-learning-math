@@ -1318,17 +1318,17 @@
     }
   ],
   "counts": {
-    "formative_items": 1851,
+    "formative_items": 1880,
     "written_references": 325,
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3960,
+    "placements": 3995,
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
     "legacy_combined_answer_items": 0,
-    "topic_knowledge_first_try": 209,
+    "topic_knowledge_first_try": 244,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
   },
@@ -18227,6 +18227,116 @@
       },
       "review_scope": "Scoped author math, source, local collision and D6 reference review; no fresh primary PDF, Written rubric audit, or full global duplicate scan. No bank-wide Academic/PED PASS.",
       "remaining": "CD04–13 remaining 205 unkeyed blocks, skill tag mapping for nine CD02–03 tasks, global uniqueness and full Practice/Replay field reconciliation, shared placements/depth/Written/SGK",
+      "release_authorization": false
+    },
+    "source_delta_reconciliation_cp72": {
+      "scope": "CD04–05 current learner unkeyed Vận dụng; compare local Practice and related SGK G11/G10 ChVI before import or reuse",
+      "baseline_commit": "f357007183bc543c17a20089e85bdede8b3b6b9a",
+      "item_commit": "1e20c6bbf2a0572bc60b440ea86071deddf0968e",
+      "placement_commit": "c3c60c4cbd61c0284a4b8c6203cb5019a335b485",
+      "sources": [
+        {
+          "topic": "CD04",
+          "learner_blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+          "blocks": 18,
+          "added": 13,
+          "reused": 5
+        },
+        {
+          "topic": "CD05",
+          "learner_blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+          "blocks": 17,
+          "added": 16,
+          "reused": 1
+        }
+      ],
+      "reused_existing_ids": [
+        {
+          "topic": "CD04",
+          "order": 4,
+          "id": "THPT-TOP04-P05",
+          "d6_orders": [
+            9,
+            6
+          ]
+        },
+        {
+          "topic": "CD04",
+          "order": 5,
+          "id": "THPT-TOP04-P06",
+          "d6_orders": [
+            19,
+            20
+          ]
+        },
+        {
+          "topic": "CD04",
+          "order": 7,
+          "id": "THPT-TOP04-P09",
+          "d6_orders": [
+            22,
+            23
+          ]
+        },
+        {
+          "topic": "CD04",
+          "order": 9,
+          "id": "THPT-TOP04-P13",
+          "d6_orders": [
+            36,
+            46
+          ]
+        },
+        {
+          "topic": "CD04",
+          "order": 15,
+          "id": "THPT-TOP04-P19",
+          "d6_orders": [
+            53,
+            57
+          ]
+        },
+        {
+          "topic": "CD05",
+          "order": 7,
+          "id": "THPT-TOP05-P14",
+          "d6_orders": [
+            14
+          ]
+        }
+      ],
+      "reuse_note": "Same mathematical task; existing Practice canonical records unchanged including any additional explanation demand. Topic remediation and provenance retained in placement.source_context, with D6 self-reference removed. FirstTry no Mastery, no new scoring. RELEASE handling of reuse/placement context and practice progression pending. Partial overlap CD04 KFT10 vs P14 retained because P14 adds a third value and ordering demand; CD04 KFT02 vs SGK B18-KFT01/C05 overlaps only components.",
+      "academic_changes": [
+        "CD04 KFT06 prove domain and counterexample to invalid log splitting; KFT16 distinguish undefined endpoint and strict inequality endpoint.",
+        "CD05 KFT03 evaluate each admissible input; KFT06/KFT17 explain monotonicity on restricted interval rather than choose excluded vertex; KFT08 clarify universal periodicity hypothesis; KFT13 derive domain and horizontal scaling."
+      ],
+      "checks": {
+        "item_shard_after": "15034d57fc8a4155146cd2aacb071b0f75b0cea5",
+        "placement_shard_after": "88657ec86b412665a6b1a887748566e383bf4bd3",
+        "existing_records_unchanged": 207,
+        "existing_first_try_placements_unchanged": 209,
+        "new_items": 29,
+        "new_placements": 35,
+        "unique_item_shard_records": 236,
+        "exact_one_new_item_placement": 29,
+        "d6_order_and_written_reference_resolved": 35,
+        "d6_self_reference_absent": 35,
+        "inline_math_delimiters_balanced_new_items": 29,
+        "auto_grade_false": 35,
+        "skill_tags_missing_new_items": 9,
+        "skill_note": "Nine CD05 new tasks have no confirmed skill tag in analogous records; existing outcome IDs retained. Total 18 newly imported tasks missing confirmed skill tags from CP71–72; reused P14 also has legacy empty skill list."
+      },
+      "progress": {
+        "topic_first_try_placements": 244,
+        "distinct_topic_first_try_shard_records": 236,
+        "total_inventoried_topic_first_try_blocks": 414,
+        "pending": 170,
+        "projected_bank_total_ids": 2378,
+        "projected_total_placements": 3995,
+        "counts_note": "CP71 projected 2349/3960 +29/+35; not fresh global scan"
+      },
+      "review_scope": "Scoped math and local task equivalence; no fresh primary SGK/SBT PDF, Written rubric audit or global duplicate scan. No bank-wide Academic/PED PASS.",
+      "remaining": "CD06–13 remaining 170 blocks; confirmed skill mapping, RELEASE placement context integration, global uniqueness, full Practice/Replay parity, shared placements/depth/Written/SGK",
       "release_authorization": false
     }
   }
