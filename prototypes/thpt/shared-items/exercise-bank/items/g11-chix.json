@@ -35,7 +35,7 @@
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
     "stem": "Chiều cao \\(H(t)=5+2t+t^2\\) (m), t tính bằng giây. Tính tốc độ biến thiên trung bình trên đoạn \\([2;4]\\).",
     "answer_key": "\\(8\\,\\mathrm{m/s}\\).",
-    "worked_solution": "Tính \\(H(2)=13\\) m và \\(H(4)=29\\) m. Trong 2 giây, chiều cao tăng 16 m, nên tốc độ biến thiên trung bình là \\(\\frac{H(4)-H(2)}{4-2}=\\frac{29-13}{2}=8\\) (m/s).",
+    "worked_solution": "Tính \\(H(2)=13\\) m và \\(H(4)=29\\) m. Trong 2 giây, chiều cao tăng 16 m, nên tốc độ biến thiên trung bình là \\(\\frac{H(4)-H(2)}{4-2}=\\frac{29-13}{2}=8\\) (mét trên giây).",
     "skill_ids": [
       "G11-B31-AVERAGE_RATE"
     ],
@@ -59,7 +59,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm m với m/s, chia 16 m cho 2 s. Ôn TOP09-M01; luyện THPT-TOP09-P01."
+    "remediation": "Nếu nhầm mét với mét trên giây, chia 16 m cho 2 s. Ôn TOP09-M01; luyện THPT-TOP09-P01."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C02",
@@ -90,7 +90,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ lấy giới hạn tử, giữ thương với h≠0. Ôn TOP09-M02; luyện THPT-TOP09-P02."
+    "remediation": "Khi lập thương, luôn giữ điều kiện h khác 0; sau đó mới lấy giới hạn. Ôn TOP09-M02; luyện THPT-TOP09-P02."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P02",
@@ -104,7 +104,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Khai triển 2(1+h)² rồi khử h."
+      "Khai triển tử số rồi khử h."
     ],
     "rubric": null,
     "interaction": {
@@ -121,7 +121,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thế h=0 trước, khai triển và khử h. Ôn TOP09-M02; luyện THPT-TOP09-P02."
+    "remediation": "Nếu thế h bằng 0 trước, hãy khai triển và khử h khi h khác 0. Ôn TOP09-M02; luyện THPT-TOP09-P02."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C03",
@@ -152,7 +152,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu giữ 3h² sau khi chia, kiểm từng hạng tử. Ôn TOP09-M03; luyện THPT-TOP09-P03."
+    "remediation": "Chia từng hạng tử của tử cho h trước khi lấy giới hạn. Ôn TOP09-M03; luyện THPT-TOP09-P03."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P03",
@@ -183,7 +183,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên trừ f(3), tính giá trị tại h=0 để kiểm tử bằng 0. Ôn TOP09-M03; luyện THPT-TOP09-P03."
+    "remediation": "Nếu quên trừ f(3), kiểm tử số phải bằng 0 khi h bằng 0. Ôn TOP09-M03; luyện THPT-TOP09-P03."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C04",
@@ -221,7 +221,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho đạo hàm ở x=0, kiểm f(0) không tồn tại. Ôn TOP09-M04; luyện THPT-TOP09-P04."
+    "remediation": "Không có đạo hàm tại 0 vì hàm gốc không xác định tại đó. Ôn TOP09-M04; luyện THPT-TOP09-P04."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P04",
@@ -235,7 +235,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Tính thương phải tại 0 bằng √h/h."
+      "Tính thương phải tại 0 bằng \\(rac{sqrt h}{h}\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -283,7 +283,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đảo chiều mệnh đề, kiểm ví dụ góc nhọn liên tục nhưng không khả vi. Ôn TOP09-M05; luyện THPT-TOP09-P05."
+    "remediation": "Nếu đảo chiều mệnh đề, kiểm ví dụ đồ thị có góc gãy liên tục nhưng không khả vi. Ôn TOP09-M05; luyện THPT-TOP09-P05."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P05",
@@ -376,7 +376,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng x thay h tại điểm −3, chuyển điểm về h=0. Ôn TOP09-M06; luyện THPT-TOP09-P06."
+    "remediation": "Đặt độ thay đổi của x là h; khi x tiến tới −3, h tiến tới 0. Ôn TOP09-M06; luyện THPT-TOP09-P06."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C07",
@@ -469,7 +469,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ tung độ tiếp điểm, thế x=1 vào phương trình để kiểm. Ôn TOP09-M08; luyện THPT-TOP09-P08."
+    "remediation": "Thế x bằng 1 vào phương trình để kiểm tung độ tiếp điểm. Ôn TOP09-M08; luyện THPT-TOP09-P08."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P08",
@@ -507,7 +507,7 @@
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
     "stem": "Vật có tọa độ \\(s(t)=5t^2\\) (m), t tính bằng giây. Tìm vận tốc tức thời tại \\(t=2\\).",
     "answer_key": "\\(20\\,\\mathrm{m/s}\\).",
-    "worked_solution": "Vận tốc tức thời là đạo hàm tọa độ theo thời gian: \\(v(t)=s'(t)=10t\\). Tại 2 giây, \\(v(2)=20\\) (m/s). Không nhầm với tọa độ \\(s(2)=20\\) (m), dù số đo tình cờ bằng nhau.",
+    "worked_solution": "Vận tốc tức thời là đạo hàm tọa độ theo thời gian: \\(v(t)=s'(t)=10t\\). Tại 2 giây, \\(v(2)=20\\) (mét trên giây). Không nhầm với tọa độ \\(s(2)=20\\) (m), dù số đo tình cờ bằng nhau.",
     "skill_ids": [
       "G11-B31-INSTANT_VELOCITY"
     ],
@@ -538,7 +538,7 @@
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
     "stem": "Vật có tọa độ \\(s(t)=12t-2t^2\\) (m), t tính bằng giây. Tính tốc độ tại \\(t=4\\).",
     "answer_key": "\\(4\\,\\mathrm{m/s}\\).",
-    "worked_solution": "Vận tốc \\(v(t)=s'(t)=12-4t\\). Tại 4 giây, \\(v(4)=-4\\) (m/s), nghĩa là chuyển động theo chiều âm của trục. Tốc độ là độ lớn vận tốc, \\(|v(4)|=4\\) (m/s).",
+    "worked_solution": "Vận tốc \\(v(t)=s'(t)=12-4t\\). Tại 4 giây, \\(v(4)=-4\\) (mét trên giây), nghĩa là chuyển động theo chiều âm của trục. Tốc độ là độ lớn vận tốc, \\(|v(4)|=4\\) (mét trên giây).",
     "skill_ids": [
       "G11-B31-INSTANT_VELOCITY"
     ],
@@ -568,7 +568,7 @@
     "item_id": "THPT-G11-CHIX-B31-C10",
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
     "stem": "Thể tích V(t) tính bằng lít và t tính bằng phút. Đơn vị của \\(V'(t)\\) là gì?",
-    "answer_key": "Lít/phút.",
+    "answer_key": "Lít trên phút.",
     "worked_solution": "Đạo hàm là giới hạn của thương độ biến thiên thể tích chia độ biến thiên thời gian. Vì tử đo bằng lít, mẫu đo bằng phút, đơn vị của đạo hàm là lít trên phút.",
     "skill_ids": [
       "G11-B31-RATE_UNITS"
@@ -593,21 +593,21 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ghi lít thay lít/phút, viết thương ΔV/Δt. Ôn TOP09-M10; luyện THPT-TOP09-P10."
+    "remediation": "Đơn vị đạo hàm là đơn vị thể tích chia cho đơn vị thời gian. Ôn TOP09-M10; luyện THPT-TOP09-P10."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P10",
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
     "stem": "Chi phí \\(C(q)=100+7q+0{,}1q^2\\) (nghìn đồng), q là lượng sản phẩm trong mô hình liên tục. Tính \\(C'(10)\\) và nêu đơn vị.",
-    "answer_key": "\\(9\\) nghìn đồng/sản phẩm.",
-    "worked_solution": "Lấy đạo hàm theo q: \\(C'(q)=7+0{,}2q\\). Tại q bằng 10, \\(C'(10)=9\\) nghìn đồng/sản phẩm. Đây là chi phí cận biên, gần đúng mức tăng chi phí cho một sản phẩm thêm, không phải tổng chi phí tại 10 sản phẩm.",
+    "answer_key": "\\(9\\) nghìn đồng trên mỗi sản phẩm.",
+    "worked_solution": "Lấy đạo hàm theo q: \\(C'(q)=7+0{,}2q\\). Tại q bằng 10, \\(C'(10)=9\\) nghìn đồng trên mỗi sản phẩm. Đây là chi phí cận biên, gần đúng mức tăng chi phí cho một sản phẩm thêm, không phải tổng chi phí tại 10 sản phẩm.",
     "skill_ids": [
       "G11-B31-RATE_UNITS"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đạo hàm theo q, giữ đơn vị nghìn đồng/sản phẩm."
+      "Đạo hàm theo q, giữ đơn vị nghìn đồng trên mỗi sản phẩm."
     ],
     "rubric": null,
     "interaction": {
@@ -655,7 +655,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu giữ số mũ 6, viết quy tắc n x^{n−1}. Ôn TOP09-M11; luyện THPT-TOP09-P11."
+    "remediation": "Dùng quy tắc \\((x^n)'=nx^{n-1}\\). Ôn TOP09-M11; luyện THPT-TOP09-P11."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P01",
@@ -669,7 +669,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Tính f′(x) rồi thế x=1."
+      "Tính đạo hàm rồi mới thế x bằng 1."
     ],
     "rubric": null,
     "interaction": {
@@ -686,7 +686,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thế x=1 trước khi đạo hàm, giữ biểu thức theo x đến cuối. Ôn TOP09-M11; luyện THPT-TOP09-P11."
+    "remediation": "Nếu thay x bằng 1 quá sớm, giữ biểu thức theo x đến cuối. Ôn TOP09-M11; luyện THPT-TOP09-P11."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C02",
@@ -731,7 +731,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Tính đạo hàm 5√x tại x dương."
+      "Dùng quy tắc nhân hằng số và đạo hàm căn tại điểm dương."
     ],
     "rubric": null,
     "interaction": {
@@ -855,7 +855,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đặt u=x, v=x²+4."
+      "Đặt \\(u=x\\), \\(v=x^2+4\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -872,7 +872,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ hạng x²+4, khai triển x³+4x để tự kiểm. Ôn TOP09-M14; luyện THPT-TOP09-P14."
+    "remediation": "Nếu thiếu một hạng tử, khai triển \\(x^3+4x\\) để kiểm. Ôn TOP09-M14; luyện THPT-TOP09-P14."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C05",
@@ -886,7 +886,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Viết tử u′v−uv′, mẫu v²."
+      "Viết tử \\(u'v-uv'\\) và mẫu \\(v^2\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -917,7 +917,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Ghi miền x≠−1 rồi áp dụng thương."
+      "Loại x bằng −1 rồi áp dụng quy tắc thương."
     ],
     "rubric": null,
     "interaction": {
@@ -955,7 +955,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đặt u=2x−1, nhân u′."
+      "Đặt \\(u=2x-1\\) rồi nhân đạo hàm đối số."
     ],
     "rubric": null,
     "interaction": {
@@ -1079,7 +1079,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Kiểm cos x≠0 trước khi áp công thức."
+      "Kiểm cos khác 0 trước khi áp dụng công thức."
     ],
     "rubric": null,
     "interaction": {
@@ -1096,7 +1096,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng tại cos x=0, kiểm miền tan. Ôn TOP09-M18; luyện THPT-TOP09-P18."
+    "remediation": "Nếu cos bằng 0, hàm tang không xác định. Ôn TOP09-M18; luyện THPT-TOP09-P18."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P08",
@@ -1127,7 +1127,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thiếu dấu âm, nhớ cot có đạo hàm −1/sin²x. Ôn TOP09-M18; luyện THPT-TOP09-P18."
+    "remediation": "Nếu thiếu dấu âm, kiểm công thức \\((cot x)'=-\frac1{sin^2x}\\). Ôn TOP09-M18; luyện THPT-TOP09-P18."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C09",
@@ -1141,7 +1141,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đặt u=5x và nhân 5."
+      "Đặt \\(u=5x\\) và nhân đạo hàm đối số."
     ],
     "rubric": null,
     "interaction": {
@@ -1172,7 +1172,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đặt u=x²; kiểm cos u≠0."
+      "Đặt \\(u=x^2\\) và kiểm $cos u\ne0$."
     ],
     "rubric": null,
     "interaction": {
@@ -1203,7 +1203,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đạo hàm e^x bằng chính nó."
+      "Nhớ đạo hàm hàm mũ cơ số e bằng chính hàm đó."
     ],
     "rubric": null,
     "interaction": {
@@ -1220,7 +1220,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhân ln e, nhớ ln e=1. Ôn TOP09-M20; luyện THPT-TOP09-P20."
+    "remediation": "Trong công thức tổng quát, \\(ln e=1\\). Ôn TOP09-M20; luyện THPT-TOP09-P20."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P10",
@@ -1234,7 +1234,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Dùng a^x ln a với a=5."
+      "Dùng công thức \\((a^x)'=a^xln a\\) với a bằng 5."
     ],
     "rubric": null,
     "interaction": {
@@ -1282,7 +1282,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng 1/x cho x âm, kiểm miền ln. Ôn TOP09-M21; luyện THPT-TOP09-P21."
+    "remediation": "Không áp dụng công thức đạo hàm ln ở x âm. Ôn TOP09-M21; luyện THPT-TOP09-P21."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P11",
@@ -1358,7 +1358,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Kiểm x²+4>0, nhân đạo hàm đối số."
+      "Kiểm đối số dương rồi nhân đạo hàm đối số."
     ],
     "rubric": null,
     "interaction": {
@@ -1375,7 +1375,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho log đối số âm, kiểm x²+4≥4. Ôn TOP09-M22; luyện THPT-TOP09-P22."
+    "remediation": "Đối số \\(x^2+4\\) luôn lớn hơn hoặc bằng 4. Ôn TOP09-M22; luyện THPT-TOP09-P22."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C13",
@@ -1406,7 +1406,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhận x=2, log của 0 không xác định. Ôn TOP09-M23; luyện THPT-TOP09-P23."
+    "remediation": "Không nhận x bằng 2 vì lôgarit của 0 không xác định. Ôn TOP09-M23; luyện THPT-TOP09-P23."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P13",
@@ -1506,14 +1506,14 @@
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
     "stem": "Độ cao có công thức \\(h(t)=18t-3t^2\\) (m), t tính bằng giây. Tính vận tốc tức thời theo phương thẳng đứng sau 1 giây.",
     "answer_key": "\\(12\\,\\mathrm{m/s}\\).",
-    "worked_solution": "Vận tốc là đạo hàm độ cao: \\(h'(t)=18-6t\\). Tại t bằng 1, \\(h'(1)=12\\) (m/s). Độ cao lúc đó là 15 m, không phải vận tốc.",
+    "worked_solution": "Vận tốc là đạo hàm độ cao: \\(h'(t)=18-6t\\). Tại t bằng 1, \\(h'(1)=12\\) (mét trên giây). Độ cao lúc đó là 15 m, không phải vận tốc.",
     "skill_ids": [
       "G11-B32-APPLIED_VELOCITY"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Tính h′(t), rồi thế t=1."
+      "Tính đạo hàm độ cao rồi thế t bằng 1."
     ],
     "rubric": null,
     "interaction": {
@@ -1536,15 +1536,15 @@
     "item_id": "THPT-G11-CHIX-B32-P15",
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
     "stem": "Cho \\(s(t)=2\\sin(3t)\\) (cm), t tính bằng giây, đối số góc tính bằng radian. Tìm vận tốc \\(v(t)\\).",
-    "answer_key": "\\(v(t)=6\\cos(3t)\\) (cm/s).",
-    "worked_solution": "Vận tốc là đạo hàm tọa độ theo thời gian. Dùng quy tắc hàm hợp: \\(v(t)=2\\cos(3t)\\cdot3=6\\cos(3t)\\). Đơn vị là cm/s.",
+    "answer_key": "\\(v(t)=6\\cos(3t)\\) (xăng-ti-mét trên giây).",
+    "worked_solution": "Vận tốc là đạo hàm tọa độ theo thời gian. Dùng quy tắc hàm hợp: \\(v(t)=2\\cos(3t)\\cdot3=6\\cos(3t)\\). Đơn vị là xăng-ti-mét trên giây.",
     "skill_ids": [
       "G11-B32-APPLIED_VELOCITY"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đặt u=3t, nhân u′."
+      "Đặt \\(u=3t\\) và nhân đạo hàm đối số."
     ],
     "rubric": null,
     "interaction": {
@@ -1623,7 +1623,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ghi f″=3x², còn thiếu một lượt. Ôn TOP09-M26; luyện THPT-TOP09-P26."
+    "remediation": "Nếu chỉ lấy đạo hàm một lần, còn thiếu đạo hàm cấp hai. Ôn TOP09-M26; luyện THPT-TOP09-P26."
   },
   {
     "item_id": "THPT-G11-CHIX-B33-C02",
@@ -1654,7 +1654,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thay x=1 quá sớm, giữ biểu thức theo x. Ôn TOP09-M27; luyện THPT-TOP09-P27."
+    "remediation": "Nếu thế x bằng 1 quá sớm, giữ biến đến sau lần đạo hàm thứ hai. Ôn TOP09-M27; luyện THPT-TOP09-P27."
   },
   {
     "item_id": "THPT-G11-CHIX-B33-P02",
@@ -1754,7 +1754,7 @@
     "content_version": "THPT-G11-CHIX-B31-B33-R00-CP75-20261126",
     "stem": "Vật chuyển động trên trục có tọa độ \\(s(t)=5t^2\\) (m), t tính bằng giây. Tính gia tốc \\(a(t)\\).",
     "answer_key": "\\(a(t)=10\\,\\mathrm{m/s^2}\\).",
-    "worked_solution": "Vận tốc \\(v(t)=s'(t)=10t\\) (m/s). Gia tốc là đạo hàm của vận tốc theo thời gian: \\(a(t)=v'(t)=s''(t)=10\\) (\\(\\mathrm{m/s^2}\\)).",
+    "worked_solution": "Vận tốc \\(v(t)=s'(t)=10t\\) (mét trên giây). Gia tốc là đạo hàm của vận tốc theo thời gian: \\(a(t)=v'(t)=s''(t)=10\\) (\\(\\mathrm{m/s^2}\\)).",
     "skill_ids": [
       "G11-B33-ACCELERATION"
     ],
@@ -1891,7 +1891,7 @@
     "item_id": "THPT-G11-CHIX-CHIX-C01",
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
     "stem": "Vật có tọa độ \\(s(t)=t^3-3t^2\\) (m), t tính bằng giây. Tìm vận tốc và gia tốc.",
-    "answer_key": "\\(v(t)=3t^2-6t\\) (m/s); \\(a(t)=6t-6\\) (\\(\\mathrm{m/s^2}\\)).",
+    "answer_key": "\\(v(t)=3t^2-6t\\) (mét trên giây); \\(a(t)=6t-6\\) (\\(\\mathrm{m/s^2}\\)).",
     "worked_solution": "Đạo hàm lần đầu theo thời gian cho vận tốc \\(v(t)=s'(t)=3t^2-6t\\). Đạo hàm lần hai cho gia tốc \\(a(t)=s''(t)=6t-6\\). Đơn vị tương ứng là m/s và mét trên giây bình phương.",
     "skill_ids": [
       "G11-CHIX-INTEGRATED"
@@ -1916,7 +1916,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm s″ với (s′)², tính đạo hàm của v. Ôn TOP09-M31; luyện THPT-TOP09-P31."
+    "remediation": "Không nhầm đạo hàm cấp hai với bình phương đạo hàm cấp một. Ôn TOP09-M31; luyện THPT-TOP09-P31."
   },
   {
     "item_id": "THPT-G11-CHIX-CHIX-P01",
