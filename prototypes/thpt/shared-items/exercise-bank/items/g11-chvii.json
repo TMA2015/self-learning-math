@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-G11-CHVII-B22-C01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Hai đường có góc giữa hai tia cùng phương được chọn là 145°. Góc giữa hai đường thẳng là bao nhiêu?",
-    "answer_key": "35°",
-    "worked_solution": "Góc giữa hai đường thẳng là góc không tù: 180°−145°=35°.",
+    "stem": "Hai đường có góc giữa hai tia cùng phương được chọn là \\(145^\\circ\\). Góc giữa hai đường thẳng là bao nhiêu?",
+    "answer_key": "\\(35^\\circ\\).",
+    "worked_solution": "Góc giữa hai đường thẳng là góc không tù giữa hai phương. Hai góc kề bù có số đo \\(145^\\circ\\) và \\(180^\\circ-145^\\circ=35^\\circ\\), nên chọn \\(35^\\circ\\).",
     "skill_ids": [
       "G11-B22-ANGLE_LINES"
     ],
@@ -34,9 +34,9 @@
   {
     "item_id": "THPT-G11-CHVII-B22-C02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Có thể có a⊥b nhưng a và b không có điểm chung không?",
-    "answer_key": "Có",
-    "worked_solution": "Góc vuông là quan hệ giữa phương; đường chéo nhau vẫn có thể có hai phương vuông góc.",
+    "stem": "Có thể có \\(a\\perp b\\) nhưng a và b không có điểm chung không?",
+    "answer_key": "Có.",
+    "worked_solution": "Trong không gian, hai đường vuông góc khi góc giữa hai phương bằng \\(90^\\circ\\). Chúng không bắt buộc cắt nhau; chẳng hạn hai cạnh AB và CC′ của hình hộp chữ nhật ABCD.A′B′C′ vuông góc và chéo nhau.",
     "skill_ids": [
       "G11-B22-PERP_SKEW"
     ],
@@ -66,9 +66,9 @@
   {
     "item_id": "THPT-G11-CHVII-B22-C03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Nếu a//a′ và a⊥b thì góc giữa a′ và b bằng bao nhiêu?",
-    "answer_key": "90°",
-    "worked_solution": "Đường song song giữ phương nên giữ góc với b.",
+    "stem": "Nếu \\(a\\parallel a'\\) và \\(a\\perp b\\), góc giữa a′ và b bằng bao nhiêu?",
+    "answer_key": "\\(90^\\circ\\).",
+    "worked_solution": "Hai đường song song có cùng phương. Khi dựng các đường cùng phương qua một điểm để xác định góc, a và a′ cho cùng một phương, nên góc với b vẫn bằng \\(90^\\circ\\).",
     "skill_ids": [
       "G11-B22-PARALLEL_DIRECTION"
     ],
@@ -98,9 +98,9 @@
   {
     "item_id": "THPT-G11-CHVII-B22-C04",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Hai thanh thép cách nhau, một theo phương Đông–Tây, một thẳng đứng. Chúng có vuông góc theo định nghĩa không?",
-    "answer_key": "Có, góc giữa hai phương bằng 90°",
-    "worked_solution": "Chuyển một thanh bằng đường song song đến cùng điểm; không cần chúng cắt nhau.",
+    "stem": "Hai thanh thép cách nhau, một nằm theo phương Đông–Tây, một thẳng đứng. Hai đường chứa chúng có vuông góc theo định nghĩa không?",
+    "answer_key": "Có, góc giữa hai phương bằng \\(90^\\circ\\).",
+    "worked_solution": "Phương Đông–Tây nằm ngang, phương thẳng đứng vuông góc với mọi phương ngang. Dựng hai đường theo hai phương đó qua một điểm, chúng tạo góc vuông. Vị trí hai thanh không ảnh hưởng đến góc giữa hai phương.",
     "skill_ids": [
       "G11-B22-PROOF_CONTEXT"
     ],
@@ -130,9 +130,9 @@
   {
     "item_id": "THPT-G11-CHVII-B22-P01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Nêu cách xác định góc của hai đường chéo nhau mà không phải kéo chúng tới chỗ gặp nhau.",
-    "answer_key": "Qua một điểm chung dựng hai đường lần lượt song song hai đường ban đầu, đo góc không tù giữa chúng.",
-    "worked_solution": "Hình thức tịnh tiến hướng, không biến hai đường thật thành đồng phẳng.",
+    "stem": "Nêu cách xác định góc của hai đường chéo nhau mà không cần chúng gặp nhau.",
+    "answer_key": "Qua một điểm dựng hai đường lần lượt cùng phương với hai đường ban đầu, chọn góc không tù giữa chúng.",
+    "worked_solution": "Chọn một điểm O, dựng hai đường qua O lần lượt cùng phương với hai đường đã cho. Góc giữa hai đường ban đầu là góc không tù giữa hai đường mới. Đây chỉ là cách chuyển phương để đo góc; hai đường ban đầu vẫn chéo nhau.",
     "skill_ids": [
       "G11-B22-ANGLE_LINES"
     ],
@@ -162,9 +162,9 @@
   {
     "item_id": "THPT-G11-CHVII-B22-P02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Trong hộp chữ nhật, AB và D′C′ có góc giữa là bao nhiêu?",
-    "answer_key": "0°",
-    "worked_solution": "AB//D′C′, hai đường song song trong không gian.",
+    "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′, góc giữa AB và D′C′ là bao nhiêu?",
+    "answer_key": "\\(0^\\circ\\).",
+    "worked_solution": "Trong đáy, AB song song DC. Hai cạnh tương ứng DC và D′C′ cũng song song. Vì AB và D′C′ cùng phương, góc giữa chúng bằng \\(0^\\circ\\).",
     "skill_ids": [
       "G11-B22-ANGLE_LINES"
     ],
@@ -195,8 +195,8 @@
     "item_id": "THPT-G11-CHVII-B22-P03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
     "stem": "Một bạn nói hai đường vuông góc phải gặp nhau. Nêu một phản ví dụ chính xác.",
-    "answer_key": "Trong hộp chữ nhật AB⊥CC′ dù không cắt nhau.",
-    "worked_solution": "Vì CC′//AA′ và AA′⊥AB.",
+    "answer_key": "Trong hình hộp chữ nhật ABCD.A′B′C′, \\(AB\\perp CC'\\) dù chúng không cắt nhau.",
+    "worked_solution": "Cạnh AA′ vuông góc mặt đáy nên vuông góc AB. Vì CC′ song song AA′, suy ra \\(AB\\perp CC'\\). Mặt khác CC′ chỉ gặp mặt đáy tại C, mà C không thuộc AB, nên AB và CC′ không cắt nhau.",
     "skill_ids": [
       "G11-B22-PERP_SKEW"
     ],
@@ -226,9 +226,9 @@
   {
     "item_id": "THPT-G11-CHVII-B23-C01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Một cột chỉ vuông góc một đường trong mặt sân, có đủ kết luận cột vuông góc sân?",
-    "answer_key": "Chưa đủ",
-    "worked_solution": "Định nghĩa đòi vuông góc mọi phương nằm trong mặt; một phương chưa đủ.",
+    "stem": "Một cột chỉ vuông góc với một đường thẳng trong mặt sân. Có đủ kết luận cột vuông góc với mặt sân không?",
+    "answer_key": "Chưa đủ.",
+    "worked_solution": "Một đường vuông góc mặt phẳng phải vuông góc với mọi đường trong mặt. Phản ví dụ: một đường nằm ngay trong mặt sân và vuông góc một đường khác của sân. Dấu hiệu đủ cần hai đường cắt nhau trong mặt sân.",
     "skill_ids": [
       "G11-B23-PERP_PLANE_DEF"
     ],
@@ -258,9 +258,9 @@
   {
     "item_id": "THPT-G11-CHVII-B23-C02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Trong mặt (P), a,b cắt nhau. d⊥a và d⊥b thì d quan hệ gì với (P)?",
-    "answer_key": "d⊥(P)",
-    "worked_solution": "Hai phương cắt nhau đủ theo điều kiện xác định đường vuông góc mặt phẳng.",
+    "stem": "Trong \\((P)\\), a và b cắt nhau. Nếu \\(d\\perp a\\) và \\(d\\perp b\\) thì d có quan hệ gì với \\((P)\\)?",
+    "answer_key": "\\(d\\perp(P)\\).",
+    "worked_solution": "Hai đường a, b nằm trong \\((P)\\) và cắt nhau. Theo dấu hiệu đường thẳng vuông góc mặt phẳng, d vuông góc với cả hai đường ấy thì d vuông góc với \\((P)\\).",
     "skill_ids": [
       "G11-B23-TWO_INTERSECT"
     ],
@@ -290,9 +290,9 @@
   {
     "item_id": "THPT-G11-CHVII-B23-C03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "d⊥(P) và e//d. e có vuông góc (P)?",
-    "answer_key": "Có",
-    "worked_solution": "Đường e giữ phương vuông góc (P) của d.",
+    "stem": "Cho \\(d\\perp(P)\\) và \\(e\\parallel d\\). Đường e có vuông góc với \\((P)\\) không?",
+    "answer_key": "Có.",
+    "worked_solution": "Vì e cùng phương với d nên e cũng vuông góc với mọi đường thẳng trong \\((P)\\). Theo định nghĩa, \\(e\\perp(P)\\). Không cần e đi qua chân đường vuông góc của d.",
     "skill_ids": [
       "G11-B23-PARALLEL_TRANSFER"
     ],
@@ -322,9 +322,9 @@
   {
     "item_id": "THPT-G11-CHVII-B23-C04",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Hai đường d,e cùng vuông góc một mặt phẳng, chúng có thể cắt nhau mà không trùng nhau không?",
-    "answer_key": "Không; d//e hoặc d=e",
-    "worked_solution": "Hai đường cùng phương pháp tuyến. Nếu cùng đi qua một điểm thì chúng trùng, nếu khác đường thì song song.",
+    "stem": "Hai đường d, e cùng vuông góc với một mặt phẳng. Chúng có thể cắt nhau mà không trùng nhau không?",
+    "answer_key": "Không; chúng song song hoặc trùng nhau.",
+    "worked_solution": "Hai đường cùng vuông góc với một mặt phẳng có cùng phương. Nếu chúng có một điểm chung thì chúng trùng nhau; nếu phân biệt thì chúng song song.",
     "skill_ids": [
       "G11-B23-PLANE_PROPERTY"
     ],
@@ -354,9 +354,9 @@
   {
     "item_id": "THPT-G11-CHVII-B23-C05",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Chân giá treo đỡ cột theo hai thanh nằm trên nền mà hai thanh cắt nhau. Cột vuông góc cả hai thanh. Kết luận?",
-    "answer_key": "Cột vuông góc nền",
-    "worked_solution": "Vì hai thanh thuộc nền cắt nhau và cột vuông góc cả hai.",
+    "stem": "Hai thanh nằm trên nền phẳng và cắt nhau. Một cột vuông góc với cả hai thanh. Kết luận gì về cột và nền?",
+    "answer_key": "Cột vuông góc với mặt phẳng nền.",
+    "worked_solution": "Hai đường chứa hai thanh cắt nhau trong mặt nền. Vì đường chứa cột vuông góc với cả hai, dấu hiệu đường thẳng vuông góc mặt phẳng cho kết luận. Nếu hai thanh song song thì không đủ.",
     "skill_ids": [
       "G11-B23-PRACTICAL_POST"
     ],
@@ -386,9 +386,9 @@
   {
     "item_id": "THPT-G11-CHVII-B23-P01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "d⊥(P) và (P)//(Q). d có vuông góc (Q)?",
+    "stem": "Cho \\(d\\perp(P)\\) và \\((P)\\parallel(Q)\\). Đường d có vuông góc với \\((Q)\\) không?",
     "answer_key": "Có.",
-    "worked_solution": "Mặt song song có các phương trong mặt giống nhau; pháp tuyến chung.",
+    "worked_solution": "Hai mặt phẳng song song có cùng phương mặt phẳng. Chọn hai đường cắt nhau trong \\((Q)\\), dựng hai đường cùng phương với chúng trong \\((P)\\). Vì d vuông góc với cả hai đường trong \\((P)\\), d cũng vuông góc với hai đường đã chọn trong \\((Q)\\). Suy ra \\(d\\perp(Q)\\).",
     "skill_ids": [
       "G11-B23-PARALLEL_TRANSFER"
     ],
@@ -418,9 +418,9 @@
   {
     "item_id": "THPT-G11-CHVII-B23-P02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Nếu một đường d vuông góc hai đường song song trong (P), kết luận d⊥(P) có chắc đúng?",
+    "stem": "Nếu d vuông góc với hai đường song song trong \\((P)\\), có chắc \\(d\\perp(P)\\) không?",
     "answer_key": "Không chắc.",
-    "worked_solution": "Thiếu hai phương cắt nhau/độc lập trong mặt phẳng.",
+    "worked_solution": "Hai đường song song chỉ cho một phương. Có thể chọn d nằm ngay trong \\((P)\\) và vuông góc với phương chung của hai đường đó. Khi ấy d không vuông góc mặt phẳng. Cần hai đường cắt nhau trong mặt để áp dụng dấu hiệu đủ.",
     "skill_ids": [
       "G11-B23-TWO_INTERSECT"
     ],
@@ -450,9 +450,9 @@
   {
     "item_id": "THPT-G11-CHVII-B23-P03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Có thể có hai đường phân biệt, cắt nhau và đều vuông góc (P)?",
+    "stem": "Có thể có hai đường phân biệt, cắt nhau và đều vuông góc với \\((P)\\) không?",
     "answer_key": "Không.",
-    "worked_solution": "Hai đường cùng vuông góc một mặt chỉ có thể song song hoặc trùng nhau.",
+    "worked_solution": "Qua một điểm chỉ có một đường vuông góc với mặt phẳng cho trước. Nếu hai đường cùng vuông góc \\((P)\\) và cắt nhau tại một điểm, chúng phải trùng nhau, trái với giả thiết phân biệt.",
     "skill_ids": [
       "G11-B23-PLANE_PROPERTY"
     ],
@@ -482,9 +482,9 @@
   {
     "item_id": "THPT-G11-CHVII-B24-C01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "M nằm ngoài (P), H∈(P), MH⊥(P), MH=7 cm. H là điểm gì?",
-    "answer_key": "H là hình chiếu vuông góc của M lên (P)",
-    "worked_solution": "H∈(P) và MH⊥(P) nên H là hình chiếu vuông góc của M lên (P). MH=7 cm là khoảng cách từ M đến mặt phẳng.",
+    "stem": "M nằm ngoài \\((P)\\), \\(H\\in(P)\\), \\(MH\\perp(P)\\) và \\(MH=7\\,\\mathrm{cm}\\). H là điểm gì?",
+    "answer_key": "H là hình chiếu vuông góc của M lên \\((P)\\).",
+    "worked_solution": "H là giao điểm của đường vuông góc kẻ từ M với \\((P)\\). Theo định nghĩa đó là hình chiếu vuông góc của M. Độ dài MH cũng là khoảng cách từ M đến mặt phẳng, bằng 7 cm.",
     "skill_ids": [
       "G11-B24-POINT_PROJECTION"
     ],
@@ -514,9 +514,9 @@
   {
     "item_id": "THPT-G11-CHVII-B24-C02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Đường l vuông góc (P). Hình chiếu của l trên (P) là đường hay điểm?",
-    "answer_key": "Một điểm",
-    "worked_solution": "Mọi điểm trên l chiếu đến cùng chân l∩(P).",
+    "stem": "Đường l vuông góc với \\((P)\\). Hình chiếu vuông góc của l trên \\((P)\\) là đường hay điểm?",
+    "answer_key": "Một điểm.",
+    "worked_solution": "Gọi H là giao điểm của l với \\((P)\\). Qua mọi điểm của l, đường chiếu vuông góc với \\((P)\\) chính là l, nên tất cả có cùng ảnh H.",
     "skill_ids": [
       "G11-B24-LINE_PROJECTION"
     ],
@@ -546,9 +546,9 @@
   {
     "item_id": "THPT-G11-CHVII-B24-C03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "a nằm trong (P), b là đường xiên có hình chiếu b′ trên (P). Biết a⊥b′; suy gì?",
-    "answer_key": "a⊥b",
-    "worked_solution": "Định lí ba đường vuông góc cho phép chuyển góc với hình chiếu sang góc với đường xiên.",
+    "stem": "Đường a nằm trong \\((P)\\), b là đường xiên có hình chiếu vuông góc b′ trên \\((P)\\). Biết \\(a\\perp b'\\), suy ra gì?",
+    "answer_key": "\\(a\\perp b\\).",
+    "worked_solution": "Vì b xiên nên hình chiếu b′ là một đường thẳng, không co thành điểm. Đường a nằm trong mặt phẳng chiếu và vuông góc b′. Theo định lí ba đường vuông góc, a vuông góc b.",
     "skill_ids": [
       "G11-B24-THREE_PERP"
     ],
@@ -578,9 +578,9 @@
   {
     "item_id": "THPT-G11-CHVII-B24-C04",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Cho A∈(P), B∉(P), C là hình chiếu vuông góc của B trên (P), C≠A. Góc giữa đường xiên AB và (P) là góc nào?",
-    "answer_key": "Góc BAC (góc nhọn giữa AB và hình chiếu AC).",
-    "worked_solution": "A đã thuộc (P), B chiếu xuống C nên hình chiếu AB là AC; C≠A bảo đảm ảnh là đường. Tam giác ABC vuông tại C, góc BAC là góc đường AB với (P).",
+    "stem": "Cho \\(A\\in(P)\\), \\(B\\notin(P)\\), C là hình chiếu vuông góc của B trên \\((P)\\), \\(C\\ne A\\). Góc giữa AB và \\((P)\\) là góc nào?",
+    "answer_key": "\\(\\widehat{BAC}\\).",
+    "worked_solution": "A có ảnh là A, B có ảnh là C, nên hình chiếu của AB là AC. Vì C khác A, ảnh không suy biến. Tam giác ABC vuông tại C; góc nhọn giữa AB và AC tại A chính là góc giữa AB và mặt phẳng.",
     "skill_ids": [
       "G11-B24-LINE_PLANE_ANGLE"
     ],
@@ -610,9 +610,9 @@
   {
     "item_id": "THPT-G11-CHVII-B24-C05",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Đoạn xiên dài 13m, chiều cao 5m. Tính sin góc với mặt đất.",
-    "answer_key": "5/13",
-    "worked_solution": "sinθ=h/độ dài xiên=5/13, không lấy h/độ dài hình chiếu.",
+    "stem": "Đoạn xiên từ một điểm trên mặt đất đến một điểm cao 5 m so với mặt đất dài 13 m. Tính sin của góc giữa đoạn xiên và mặt đất.",
+    "answer_key": "\\(\\frac5{13}\\).",
+    "worked_solution": "Dựng hình chiếu vuông góc của đầu cao xuống mặt đất. Tam giác vuông có cạnh huyền 13 m và cạnh đối với góc đường–mặt dài 5 m. Vậy \\(\\sin\\theta=\\frac5{13}\\).",
     "skill_ids": [
       "G11-B24-ANGLE_APPLICATION"
     ],
@@ -642,9 +642,9 @@
   {
     "item_id": "THPT-G11-CHVII-B24-P01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Một tia tạo góc 35° với mặt nền. Góc tia đó với phương thẳng đứng bằng bao nhiêu (cùng mặt phẳng đứng chứa tia)?",
-    "answer_key": "55°.",
-    "worked_solution": "Hai góc phụ nhau do phương thẳng đứng vuông góc mặt nền.",
+    "stem": "Một tia tạo góc \\(35^\\circ\\) với mặt nền nằm ngang. Góc nhọn giữa đường chứa tia và phương thẳng đứng bằng bao nhiêu?",
+    "answer_key": "\\(55^\\circ\\).",
+    "worked_solution": "Trong mặt phẳng đứng chứa tia, hình chiếu của tia trên nền và phương thẳng đứng tạo góc vuông. Góc nhọn giữa đường chứa tia và phương đứng là góc phụ của \\(35^\\circ\\), bằng \\(90^\\circ-35^\\circ=55^\\circ\\).",
     "skill_ids": [
       "G11-B24-LINE_PLANE_ANGLE"
     ],
@@ -674,9 +674,9 @@
   {
     "item_id": "THPT-G11-CHVII-B24-P02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Cầu trượt có độ cao 3m, độ dài trượt 5m. Tính độ dài hình chiếu lên nền.",
-    "answer_key": "4m.",
-    "worked_solution": "Tam giác vuông, cạnh hình chiếu bằng √(25−9)=4m.",
+    "stem": "Cầu trượt thẳng có độ cao 3 m, độ dài trượt 5 m. Tính độ dài hình chiếu của nó lên nền ngang.",
+    "answer_key": "4 m.",
+    "worked_solution": "Đoạn trượt, chiều cao và hình chiếu tạo tam giác vuông; đoạn trượt là cạnh huyền. Theo Pitago, độ dài hình chiếu là \\(\\sqrt{5^2-3^2}=4\\) (m).",
     "skill_ids": [
       "G11-B24-LINE_PROJECTION"
     ],
@@ -706,9 +706,9 @@
   {
     "item_id": "THPT-G11-CHVII-B24-P03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Có thể dùng đoạn hình chiếu nằm trên mặt nền để biểu diễn độ cao AH?",
+    "stem": "A nằm ngoài mặt nền, H là hình chiếu vuông góc của A trên nền. Có thể dùng một đoạn hình chiếu nằm trên mặt nền để biểu diễn độ cao AH không?",
     "answer_key": "Không.",
-    "worked_solution": "Hình chiếu là thành phần nằm trong mặt; AH là thành phần vuông góc.",
+    "worked_solution": "AH vuông góc mặt nền và đo độ cao của A. Đoạn hình chiếu nằm trong mặt nền, đo thành phần theo phương ngang. Hai đoạn có ý nghĩa hình học khác nhau; không thay độ cao bằng độ dài hình chiếu ngang.",
     "skill_ids": [
       "G11-B24-LINE_PROJECTION"
     ],
@@ -738,9 +738,9 @@
   {
     "item_id": "THPT-G11-CHVII-B25-C01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Góc giữa hai đường pháp tuyến của hai mặt phẳng là 75°. Góc hai mặt là bao nhiêu?",
-    "answer_key": "75°",
-    "worked_solution": "Góc hai mặt là góc không tù giữa các pháp tuyến.",
+    "stem": "Góc giữa hai đường pháp tuyến của hai mặt phẳng là \\(75^\\circ\\). Góc giữa hai mặt phẳng bằng bao nhiêu?",
+    "answer_key": "\\(75^\\circ\\).",
+    "worked_solution": "Góc giữa hai mặt phẳng bằng góc không tù giữa hai đường thẳng lần lượt vuông góc với chúng. Góc giữa hai pháp tuyến đã cho là \\(75^\\circ\\), nên góc hai mặt cũng bằng \\(75^\\circ\\).",
     "skill_ids": [
       "G11-B25-PLANE_ANGLE"
     ],
@@ -770,9 +770,9 @@
   {
     "item_id": "THPT-G11-CHVII-B25-C02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Góc phẳng của một góc nhị diện bằng 125°. Góc giữa hai mặt phẳng chứa nó?",
-    "answer_key": "55°",
-    "worked_solution": "Hai mặt chứa hai nửa mặt tạo góc không tù bằng 180°−125°.",
+    "stem": "Góc phẳng của một góc nhị diện bằng \\(125^\\circ\\). Góc giữa hai mặt phẳng chứa nó bằng bao nhiêu?",
+    "answer_key": "\\(55^\\circ\\).",
+    "worked_solution": "Góc phẳng nhị diện có thể tù, nhưng góc giữa hai mặt phẳng là góc không tù. Hai góc tương ứng bù nhau, nên góc cần tìm là \\(180^\\circ-125^\\circ=55^\\circ\\).",
     "skill_ids": [
       "G11-B25-DIHEDRAL"
     ],
@@ -802,9 +802,9 @@
   {
     "item_id": "THPT-G11-CHVII-B25-C03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "a⊂(P), a⊥(Q) thì (P) và (Q) có vuông góc?",
-    "answer_key": "Có",
-    "worked_solution": "Tiêu chí đủ: một mặt chứa đường vuông góc với mặt kia.",
+    "stem": "Nếu \\(a\\subset(P)\\) và \\(a\\perp(Q)\\) thì hai mặt phẳng \\((P)\\) và \\((Q)\\) có vuông góc không?",
+    "answer_key": "Có.",
+    "worked_solution": "Mặt phẳng \\((P)\\) chứa một đường thẳng a vuông góc với \\((Q)\\). Đây là dấu hiệu đủ để kết luận \\((P)\\perp(Q)\\).",
     "skill_ids": [
       "G11-B25-PERP_PLANES"
     ],
@@ -834,9 +834,9 @@
   {
     "item_id": "THPT-G11-CHVII-B25-C04",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "(P)⊥(Q) theo giao tuyến Δ; a⊂(P), a⊥Δ. Có suy a⊥(Q)?",
-    "answer_key": "Có",
-    "worked_solution": "Định lí quan hệ vuông góc giữa hai mặt đã vuông góc; kiểm a nằm trong (P).",
+    "stem": "Cho \\((P)\\perp(Q)\\), giao tuyến là \\(\\Delta\\). Nếu \\(a\\subset(P)\\) và \\(a\\perp\\Delta\\), có suy ra \\(a\\perp(Q)\\) không?",
+    "answer_key": "Có.",
+    "worked_solution": "Hai mặt phẳng đã vuông góc; a nằm trong một mặt và vuông góc với giao tuyến của chúng. Theo định lí về hai mặt phẳng vuông góc, a vuông góc với mặt phẳng còn lại \\((Q)\\).",
     "skill_ids": [
       "G11-B25-PERP_PLANE_RULE"
     ],
@@ -866,9 +866,9 @@
   {
     "item_id": "THPT-G11-CHVII-B25-C05",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Lăng trụ đứng đáy ngũ giác đều có phải lăng trụ đều?",
-    "answer_key": "Có",
-    "worked_solution": "Định nghĩa lăng trụ đều: lăng trụ đứng có đáy đa giác đều.",
+    "stem": "Lăng trụ đứng có đáy là ngũ giác đều có phải lăng trụ đều không?",
+    "answer_key": "Có.",
+    "worked_solution": "Lăng trụ đều là lăng trụ đứng có đáy là đa giác đều. Lăng trụ đã cho thỏa cả hai điều kiện, nên là lăng trụ đều.",
     "skill_ids": [
       "G11-B25-RIGHT_PRISM"
     ],
@@ -898,9 +898,9 @@
   {
     "item_id": "THPT-G11-CHVII-B25-C06",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Trong chóp đều có đáy hình vuông tâm O, chân đường cao kẻ từ S nằm ở đâu?",
-    "answer_key": "Tại O",
-    "worked_solution": "Đường cao chóp đều đi qua tâm đa giác đáy.",
+    "stem": "Trong hình chóp đều có đáy là hình vuông tâm O, chân đường cao kẻ từ đỉnh S nằm ở đâu?",
+    "answer_key": "Tại O.",
+    "worked_solution": "Theo định nghĩa hình chóp đều, chân đường cao trùng với tâm của đa giác đều ở đáy. Do đó \\(SO\\perp(ABCD)\\) nếu đáy là ABCD, và O là chân đường cao.",
     "skill_ids": [
       "G11-B25-REGULAR_PYRAMID"
     ],
@@ -930,9 +930,9 @@
   {
     "item_id": "THPT-G11-CHVII-B25-C07",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Hai đáy của chóp cụt đều có quan hệ nào?",
-    "answer_key": "Song song, đồng dạng, đều",
-    "worked_solution": "Các mặt cắt song song đáy của một chóp đều tạo các đa giác đều đồng dạng.",
+    "stem": "Hai đáy của hình chóp cụt đều có quan hệ nào?",
+    "answer_key": "Nằm trong hai mặt phẳng song song, là hai đa giác đều đồng dạng.",
+    "worked_solution": "Chóp cụt đều được tạo khi cắt một hình chóp đều bởi mặt phẳng song song với đáy. Thiết diện đồng dạng với đáy ban đầu và vẫn là đa giác đều. Hai đáy của chóp cụt có mặt phẳng song song, không nhất thiết bằng nhau.",
     "skill_ids": [
       "G11-B25-REGULAR_FRUSTUM"
     ],
@@ -962,9 +962,9 @@
   {
     "item_id": "THPT-G11-CHVII-B25-P01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Có thể khẳng định góc giữa hai mặt phẳng là 130°?",
+    "stem": "Có thể khẳng định góc giữa hai mặt phẳng bằng \\(130^\\circ\\) không?",
     "answer_key": "Không.",
-    "worked_solution": "Góc hai mặt phẳng theo định nghĩa nằm trong [0°,90°]; 130° có thể là góc phẳng của góc nhị diện.",
+    "worked_solution": "Góc giữa hai mặt phẳng thuộc đoạn \\([0^\\circ;90^\\circ]\\). Số đo \\(130^\\circ\\) có thể là góc phẳng của một góc nhị diện, nhưng góc giữa hai mặt phẳng khi đó là \\(50^\\circ\\).",
     "skill_ids": [
       "G11-B25-PLANE_ANGLE"
     ],
@@ -994,9 +994,9 @@
   {
     "item_id": "THPT-G11-CHVII-B25-P02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Hình chóp đều có cạnh bên luôn vuông góc đáy?",
+    "stem": "Cạnh bên của hình chóp đều có luôn vuông góc với đáy không?",
     "answer_key": "Không.",
-    "worked_solution": "Đường cao qua đỉnh S tới tâm O đáy mới vuông góc đáy; cạnh SA thường xiên.",
+    "worked_solution": "Trong chóp đều, đường cao SO đi từ đỉnh đến tâm O của đáy và vuông góc đáy. Cạnh bên SA đi đến một đỉnh A của đáy, khác O. Vì đường vuông góc qua S là duy nhất, SA không phải đường cao.",
     "skill_ids": [
       "G11-B25-REGULAR_PYRAMID"
     ],
@@ -1026,9 +1026,9 @@
   {
     "item_id": "THPT-G11-CHVII-B25-P03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Hình lăng trụ đứng có đáy hình thang bất kỳ có là lăng trụ đều không?",
+    "stem": "Một lăng trụ đứng có đáy là hình thang không đều có phải lăng trụ đều không?",
     "answer_key": "Không.",
-    "worked_solution": "Lăng trụ đều còn đòi đáy là đa giác đều.",
+    "worked_solution": "Lăng trụ đứng chỉ bảo đảm các cạnh bên vuông góc đáy. Muốn là lăng trụ đều, đáy còn phải là đa giác đều. Hình thang không đều không đáp ứng điều kiện này.",
     "skill_ids": [
       "G11-B25-RIGHT_PRISM"
     ],
@@ -1058,9 +1058,9 @@
   {
     "item_id": "THPT-G11-CHVII-B26-C01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Cho điểm M ngoài đường thẳng a, H là hình chiếu vuông góc của M trên a. Với K∈a, K≠H, so sánh MH và MK.",
-    "answer_key": "MH<MK",
-    "worked_solution": "MH⊥a, HK⊂a và K≠H nên tam giác MHK vuông tại H. MK²=MH²+HK²>MH², suy MK>MH.",
+    "stem": "Cho M ngoài đường thẳng a, H là hình chiếu vuông góc của M trên a. Với \\(K\\in a\\), \\(K\\ne H\\), so sánh MH và MK.",
+    "answer_key": "\\(MH<MK\\).",
+    "worked_solution": "Tam giác MHK vuông tại H vì \\(MH\\perp a\\) và HK nằm trên a. Theo Pitago, \\(MK^2=MH^2+HK^2\\). Vì \\(HK>0\\), suy ra \\(MK^2>MH^2\\), hay \\(MK>MH\\). Đoạn vuông góc là đoạn ngắn nhất từ M đến a.",
     "skill_ids": [
       "G11-B26-POINT_LINE"
     ],
@@ -1090,9 +1090,9 @@
   {
     "item_id": "THPT-G11-CHVII-B26-C02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Nếu M thuộc (P), d(M,(P)) là bao nhiêu?",
-    "answer_key": "0",
-    "worked_solution": "M là hình chiếu chính nó; không có khoảng cách dương.",
+    "stem": "Nếu \\(M\\in(P)\\), khoảng cách \\(d(M,(P))\\) bằng bao nhiêu?",
+    "answer_key": "0.",
+    "worked_solution": "Hình chiếu vuông góc của M lên \\((P)\\) chính là M, nên khoảng cách bằng độ dài đoạn MM, tức 0.",
     "skill_ids": [
       "G11-B26-POINT_PLANE"
     ],
@@ -1122,9 +1122,9 @@
   {
     "item_id": "THPT-G11-CHVII-B26-C03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "a//(P). Khoảng cách từ hai điểm M,N∈a tới (P) có bằng nhau?",
-    "answer_key": "Bằng nhau",
-    "worked_solution": "Cả đường có cùng phương song song nên độ cao vuông góc tới mặt không đổi.",
+    "stem": "Cho \\(a\\parallel(P)\\). Khoảng cách từ hai điểm \\(M,N\\in a\\) tới \\((P)\\) có bằng nhau không?",
+    "answer_key": "Bằng nhau.",
+    "worked_solution": "Nếu M và N khác nhau, gọi H, K lần lượt là hình chiếu của chúng trên \\((P)\\). Vì a song song mặt phẳng chiếu, hai điểm có cùng độ cao vuông góc; đoạn HK cùng phương và bằng MN, còn MH song song NK. Tứ giác MNKH là hình chữ nhật, nên \\(MH=NK\\). Nếu M trùng N, kết luận hiển nhiên.",
     "skill_ids": [
       "G11-B26-PARALLEL_LINE_PLANE"
     ],
@@ -1154,9 +1154,9 @@
   {
     "item_id": "THPT-G11-CHVII-B26-C04",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Hai mặt phẳng song song cách nhau h=4,5m. M trên mặt thứ nhất, d(M,mặt thứ hai)?",
-    "answer_key": "4,5m",
-    "worked_solution": "Khoảng cách hai mặt song song đo theo pháp tuyến không đổi.",
+    "stem": "Hai mặt phẳng song song cách nhau 4,5 m. M thuộc mặt thứ nhất. Khoảng cách từ M đến mặt thứ hai bằng bao nhiêu?",
+    "answer_key": "4,5 m.",
+    "worked_solution": "Khoảng cách giữa hai mặt phẳng song song là khoảng cách từ một điểm bất kì trên mặt thứ nhất đến mặt thứ hai. Dựng đường vuông góc từ M xuống mặt kia, độ dài đoạn đó bằng 4,5 m.",
     "skill_ids": [
       "G11-B26-PARALLEL_PLANES"
     ],
@@ -1186,9 +1186,9 @@
   {
     "item_id": "THPT-G11-CHVII-B26-C05",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Đoạn nối hai đường chéo nhau chỉ vuông góc đường đầu, không vuông góc đường hai. Có là đoạn vuông góc chung?",
-    "answer_key": "Không",
-    "worked_solution": "Phải nối hai điểm thuộc hai đường và vuông góc **cả hai** phương.",
+    "stem": "Đoạn nối hai đường chéo nhau chỉ vuông góc với đường đầu, không vuông góc đường thứ hai. Có phải đoạn vuông góc chung không?",
+    "answer_key": "Không.",
+    "worked_solution": "Đoạn vuông góc chung phải có hai đầu lần lượt thuộc hai đường và đồng thời vuông góc với cả hai đường. Thiếu điều kiện vuông góc thứ hai nên đoạn đã cho không phải đoạn vuông góc chung.",
     "skill_ids": [
       "G11-B26-SKEW_COMMON_PERP"
     ],
@@ -1218,9 +1218,9 @@
   {
     "item_id": "THPT-G11-CHVII-B26-C06",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Trong chóp S.ABC, SA=10, SH=8 với H là hình chiếu S lên đáy. Chiều cao chóp?",
-    "answer_key": "8",
-    "worked_solution": "Độ cao là khoảng cách vuông góc SH, không phải cạnh bên SA.",
+    "stem": "Trong hình chóp S.ABC, \\(SA=10\\), \\(SH=8\\), H là hình chiếu vuông góc của S lên đáy. Tính chiều cao hình chóp.",
+    "answer_key": "8 (cùng đơn vị độ dài).",
+    "worked_solution": "Chiều cao là khoảng cách vuông góc từ đỉnh đến mặt đáy. Vì H là hình chiếu của S, chiều cao bằng SH, tức 8. SA là cạnh bên, không phải chiều cao.",
     "skill_ids": [
       "G11-B26-HEIGHT_APPLICATION"
     ],
@@ -1250,9 +1250,9 @@
   {
     "item_id": "THPT-G11-CHVII-B26-P01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Chóp có cạnh xiên tới một đỉnh đáy 17cm, hình chiếu ngang tới đỉnh đó 15cm. Tính chiều cao.",
-    "answer_key": "8cm.",
-    "worked_solution": "h=√(17²−15²)=8cm.",
+    "stem": "Hình chóp có cạnh xiên từ đỉnh đến một đỉnh đáy dài 17 cm, hình chiếu vuông góc của cạnh xiên lên đáy dài 15 cm. Tính chiều cao.",
+    "answer_key": "8 cm.",
+    "worked_solution": "Cạnh xiên là cạnh huyền của tam giác vuông tạo bởi chiều cao và hình chiếu. Theo Pitago, \\(h=\\sqrt{17^2-15^2}=\\sqrt{64}=8\\) (cm).",
     "skill_ids": [
       "G11-B26-HEIGHT_APPLICATION"
     ],
@@ -1282,9 +1282,9 @@
   {
     "item_id": "THPT-G11-CHVII-B26-P02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Vì sao d(M,(P)) không thể âm?",
-    "answer_key": "Vì là độ dài đoạn vuông góc MH≥0.",
-    "worked_solution": "Độ dài đoạn thẳng không âm; =0 khi M∈(P).",
+    "stem": "Vì sao khoảng cách \\(d(M,(P))\\) không thể âm?",
+    "answer_key": "Vì đó là độ dài đoạn vuông góc, luôn không âm.",
+    "worked_solution": "Gọi H là hình chiếu của M lên \\((P)\\). Theo định nghĩa, \\(d(M,(P))=MH\\ge0\\). Đẳng thức xảy ra khi M thuộc \\((P)\\) và H trùng M.",
     "skill_ids": [
       "G11-B26-POINT_PLANE"
     ],
@@ -1314,9 +1314,9 @@
   {
     "item_id": "THPT-G11-CHVII-B26-P03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Hai đường chéo nhau có thể có khoảng cách 0 khi chúng là hai đường phân biệt cố định?",
+    "stem": "Hai đường chéo nhau cố định có thể có khoảng cách bằng 0 không?",
     "answer_key": "Không.",
-    "worked_solution": "Hai đường chéo nhau cố định có đoạn vuông góc chung độ dài dương; giao nhau mới cho khoảng cách 0.",
+    "worked_solution": "Hai đường chéo nhau có đoạn vuông góc chung nối hai điểm phân biệt trên chúng. Khoảng cách là độ dài đoạn này. Nếu bằng 0, hai đầu trùng nhau, tức hai đường có điểm chung, trái với giả thiết chéo nhau.",
     "skill_ids": [
       "G11-B26-SKEW_COMMON_PERP"
     ],
@@ -1346,9 +1346,9 @@
   {
     "item_id": "THPT-G11-CHVII-B27-C01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Lăng trụ có diện tích đáy 15cm², chiều cao vuông góc 7cm. Thể tích?",
-    "answer_key": "105cm³",
-    "worked_solution": "V=S·h=15×7=105cm³.",
+    "stem": "Lăng trụ có diện tích đáy \\(15\\,\\mathrm{cm}^2\\), chiều cao vuông góc 7 cm. Tính thể tích.",
+    "answer_key": "\\(105\\,\\mathrm{cm}^3\\).",
+    "worked_solution": "Thể tích lăng trụ bằng diện tích đáy nhân chiều cao vuông góc: \\(V=Sh=15\\cdot7=105\\) \\(\\mathrm{cm}^3\\). Không chia 3 như công thức hình chóp.",
     "skill_ids": [
       "G11-B27-PRISM_VOLUME"
     ],
@@ -1378,9 +1378,9 @@
   {
     "item_id": "THPT-G11-CHVII-B27-C02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Chóp có S_đáy=21cm², chiều cao 6cm. Thể tích?",
-    "answer_key": "42cm³",
-    "worked_solution": "V=S·h/3=21×6/3=42cm³.",
+    "stem": "Hình chóp có diện tích đáy \\(21\\,\\mathrm{cm}^2\\), chiều cao 6 cm. Tính thể tích.",
+    "answer_key": "\\(42\\,\\mathrm{cm}^3\\).",
+    "worked_solution": "Thể tích hình chóp bằng một phần ba tích diện tích đáy và chiều cao: \\(V=\\frac13Sh=\\frac13\\cdot21\\cdot6=42\\) \\(\\mathrm{cm}^3\\).",
     "skill_ids": [
       "G11-B27-PYRAMID_VOLUME"
     ],
@@ -1410,9 +1410,9 @@
   {
     "item_id": "THPT-G11-CHVII-B27-C03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Hộp chữ nhật 2m×3m×4m chứa tối đa bao nhiêu m³?",
-    "answer_key": "24m³",
-    "worked_solution": "V=dài×rộng×cao=24m³ nếu hộp trống hoàn toàn.",
+    "stem": "Một hộp chữ nhật có kích thước trong lòng hộp 2 m, 3 m, 4 m. Thể tích tối đa chứa được là bao nhiêu?",
+    "answer_key": "\\(24\\,\\mathrm{m}^3\\).",
+    "worked_solution": "Diện tích đáy là \\(2\\cdot3=6\\) \\(\\mathrm{m}^2\\), chiều cao 4 m. Thể tích trong lòng hộp là \\(6\\cdot4=24\\) \\(\\mathrm{m}^3\\). Ba kích thước cùng đơn vị mét nên thể tích tính bằng mét khối.",
     "skill_ids": [
       "G11-B27-BOX_VOLUME"
     ],
@@ -1442,9 +1442,9 @@
   {
     "item_id": "THPT-G11-CHVII-B27-C04",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Chóp cụt đều có S=25cm²,S′=4cm²,h=3cm. Thể tích?",
-    "answer_key": "39cm³",
-    "worked_solution": "V=3(25+4+√100)/3=39cm³.",
+    "stem": "Chóp cụt đều có diện tích hai đáy \\(S=25\\,\\mathrm{cm}^2\\), \\(S'=4\\,\\mathrm{cm}^2\\), chiều cao 3 cm. Tính thể tích.",
+    "answer_key": "\\(39\\,\\mathrm{cm}^3\\).",
+    "worked_solution": "Dùng công thức \\(V=\\frac h3(S+S'+\\sqrt{SS'})\\). Ta có \\(\\sqrt{25\\cdot4}=10\\) \\(\\mathrm{cm}^2\\). Thay vào được \\(V=\\frac33(25+4+10)=39\\) \\(\\mathrm{cm}^3\\).",
     "skill_ids": [
       "G11-B27-FRUSTUM_VOLUME"
     ],
@@ -1474,9 +1474,9 @@
   {
     "item_id": "THPT-G11-CHVII-B27-C05",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Thể tích khối là 0,36m³. Đổi ra lít?",
-    "answer_key": "360 lít",
-    "worked_solution": "1m³=1000L nên 0,36m³=360L.",
+    "stem": "Thể tích khối là \\(0{,}36\\,\\mathrm{m}^3\\). Đổi ra lít.",
+    "answer_key": "360 lít.",
+    "worked_solution": "Vì 1 m bằng 10 dm nên \\(1\\,\\mathrm{m}^3=1000\\,\\mathrm{dm}^3\\), và một đề-xi-mét khối bằng một lít. Do đó \\(0{,}36\\cdot1000=360\\) lít.",
     "skill_ids": [
       "G11-B27-VOLUME_APPLICATION"
     ],
@@ -1506,9 +1506,9 @@
   {
     "item_id": "THPT-G11-CHVII-B27-P01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Chóp S.ABC có S đáy 12dm², cao 9dm. Tính V theo dm³.",
-    "answer_key": "36dm³.",
-    "worked_solution": "12×9/3=36dm³.",
+    "stem": "Hình chóp S.ABC có diện tích đáy \\(12\\,\\mathrm{dm}^2\\) và chiều cao 9 dm. Tính thể tích.",
+    "answer_key": "\\(36\\,\\mathrm{dm}^3\\).",
+    "worked_solution": "Áp dụng công thức hình chóp \\(V=\\frac13Sh=\\frac13\\cdot12\\cdot9=36\\) \\(\\mathrm{dm}^3\\). Chiều cao phải đo vuông góc với đáy.",
     "skill_ids": [
       "G11-B27-PYRAMID_VOLUME"
     ],
@@ -1538,9 +1538,9 @@
   {
     "item_id": "THPT-G11-CHVII-B27-P02",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Chóp cụt đều có diện tích hai đáy S=16 cm², S′=9 cm² và chiều cao vuông góc h=6 cm. Tính thể tích.",
-    "answer_key": "74cm³.",
-    "worked_solution": "V=h(S+S′+√(SS′))/3=6(16+9+√144)/3=2(25+12)=74 cm³.",
+    "stem": "Chóp cụt đều có diện tích hai đáy \\(S=16\\,\\mathrm{cm}^2\\), \\(S'=9\\,\\mathrm{cm}^2\\) và chiều cao vuông góc 6 cm. Tính thể tích.",
+    "answer_key": "\\(74\\,\\mathrm{cm}^3\\).",
+    "worked_solution": "Theo công thức \\(V=\\frac h3(S+S'+\\sqrt{SS'})\\), tính \\(\\sqrt{16\\cdot9}=12\\) \\(\\mathrm{cm}^2\\). Suy ra \\(V=\\frac63(16+9+12)=2\\cdot37=74\\) \\(\\mathrm{cm}^3\\).",
     "skill_ids": [
       "G11-B27-FRUSTUM_VOLUME"
     ],
@@ -1571,8 +1571,8 @@
     "item_id": "THPT-G11-CHVII-B27-P03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
     "stem": "Một bạn dùng cạnh bên xiên của chóp cụt đều không suy biến làm chiều cao trong công thức thể tích. Nhận xét và nêu cách xác định đúng chiều cao.",
-    "answer_key": "Sai; chiều cao là khoảng cách vuông góc giữa hai mặt đáy song song, không phải cạnh bên xiên.",
-    "worked_solution": "Chiều cao h phải là độ dài đoạn vuông góc nối hai mặt đáy song song. Nếu cạnh bên là đoạn xiên nối hai đáy thì độ dài lớn hơn h. Có thể dựng chân chiếu của một điểm trên đáy trên xuống mặt đáy dưới và lấy khoảng cách vuông góc đó.",
+    "answer_key": "Sai; chiều cao là khoảng cách vuông góc giữa hai mặt đáy song song.",
+    "worked_solution": "Dựng đường vuông góc từ một điểm của đáy trên đến mặt phẳng đáy dưới; độ dài đoạn vuông góc là h. Cạnh bên xiên nối hai đáy nhưng có thành phần ngang khác 0, nên dài hơn h theo định lí Pitago. Không dùng cạnh xiên thay chiều cao.",
     "skill_ids": [
       "G11-B27-FRUSTUM_VOLUME"
     ],
@@ -1602,9 +1602,9 @@
   {
     "item_id": "THPT-G11-CHVII-CHVII-C01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Đỉnh S cao 6cm trên đáy có diện tích 24cm². Một bạn dùng cạnh xiên 10cm tính V chóp. Chọn chiều cao và kết quả đúng.",
-    "answer_key": "h=6cm, V=48cm³",
-    "worked_solution": "Độ cao là khoảng cách vuông góc S tới mặt đáy; V=24×6/3=48, không dùng cạnh xiên.",
+    "stem": "Đỉnh S của hình chóp cao 6 cm so với đáy có diện tích \\(24\\,\\mathrm{cm}^2\\). Một bạn dùng cạnh xiên 10 cm tính thể tích. Chọn chiều cao và tính đúng thể tích.",
+    "answer_key": "\\(h=6\\,\\mathrm{cm}\\), \\(V=48\\,\\mathrm{cm}^3\\).",
+    "worked_solution": "Chiều cao là khoảng cách vuông góc từ S tới mặt đáy, bằng 6 cm, không phải cạnh xiên 10 cm. Dùng \\(V=\\frac13Sh=\\frac13\\cdot24\\cdot6=48\\) \\(\\mathrm{cm}^3\\).",
     "skill_ids": [
       "G11-CHVII-INTEGRATED"
     ],
