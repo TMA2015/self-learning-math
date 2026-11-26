@@ -106,7 +106,7 @@
     "hints": [
       "Giải bất phương trình dưới căn trước, sau đó loại nghiệm làm mẫu 0."
     ],
-    "remediation": "Nếu dùng hợp hai miền, thử x=−1 và x=3 trong biểu thức gốc. Ôn TOP05-M02; luyện THPT-TOP05-P03.",
+    "remediation": "Nếu dùng hợp hai miền, thử \\(x=-1\\) và \\(x=3\\) trong biểu thức gốc. Điều kiện căn và mẫu phải đồng thời thỏa mãn. Ôn TOP05-M02; luyện THPT-TOP05-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -166,7 +166,7 @@
     "hints": [
       "Liệt kê từng đầu vào được phép, không lấp các khoảng trống."
     ],
-    "remediation": "Nếu ghi cả đoạn [1;7], thử y=4 và kiểm q không nguyên. Ôn TOP05-M03; luyện THPT-TOP05-P05.",
+    "remediation": "Nếu ghi cả đoạn \\([1;7]\\), thử \\(y=4\\) và kiểm q không nguyên. Ôn TOP05-M03; luyện THPT-TOP05-P05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -222,7 +222,7 @@
     "hints": [
       "Tìm một đường thẳng đứng cắt đường tròn tại hai điểm."
     ],
-    "remediation": "Nếu coi cả đường tròn là đồ thị hàm số, thử x=0 và chỉ ra hai tung độ. Ôn TOP05-M04; luyện THPT-TOP05-P07.",
+    "remediation": "Nếu coi cả đường tròn là đồ thị hàm số, thử \\(x=0\\) và chỉ ra hai tung độ. Ôn TOP05-M04; luyện THPT-TOP05-P07.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -252,7 +252,7 @@
     "hints": [
       "So sánh bình phương của hai số âm có thứ tự."
     ],
-    "remediation": "Nếu lấy x² tăng trên toàn ℝ, chọn hai số âm và so trị tuyệt đối. Ôn TOP05-M05; luyện THPT-TOP05-P10.",
+    "remediation": "Nếu cho rằng \\(x^2\\) tăng trên toàn \\(\\mathbb R\\), chọn hai số âm và so trị tuyệt đối. Ôn TOP05-M05; luyện THPT-TOP05-P10.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -280,9 +280,9 @@
     "problem_type_id": "TOP05-LINEAR_MONOTONIC",
     "difficulty": "BASIC",
     "hints": [
-      "Lấy hiệu f(x₂)−f(x₁) khi x₁<x₂."
+      "Lấy hiệu \\(f(x_2)-f(x_1)\\) với \\(x_1<x_2\\)."
     ],
-    "remediation": "Nếu chỉ thử hai điểm, lấy hiệu với hai biến bất kì x₁<x₂. Ôn TOP05-M05; luyện THPT-TOP05-P09.",
+    "remediation": "Nếu chỉ thử hai điểm, lấy hiệu với hai biến bất kì \\(x_1<x_2\\) trong tập xác định. Ôn TOP05-M05; luyện THPT-TOP05-P09.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -370,7 +370,7 @@
     "hints": [
       "Kiểm miền đối xứng qua 0 trước khi thay −x."
     ],
-    "remediation": "Nếu chỉ nhìn số mũ, kiểm miền đối xứng và f(−x). Ôn TOP05-M07; luyện THPT-TOP05-P14.",
+    "remediation": "Nếu chỉ nhìn số mũ, kiểm miền đối xứng qua 0 rồi xét \\(f(-x)\\). Ôn TOP05-M07; luyện THPT-TOP05-P14.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -398,7 +398,7 @@
     "hints": [
       "Dùng một giá trị x để bác bỏ cả hai đẳng thức."
     ],
-    "remediation": "Nếu kết luận chẵn hoặc lẻ vì có một số hạng chẵn/lẻ, kiểm x=1. Ôn TOP05-M07; luyện THPT-TOP05-P13.",
+    "remediation": "Nếu kết luận chẵn hoặc lẻ vì có một số hạng chẵn/lẻ, kiểm \\(x=1\\). Ôn TOP05-M07; luyện THPT-TOP05-P13.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -424,7 +424,7 @@
     "problem_type_id": "TOP05-PERIODIC_RELATION",
     "difficulty": "BASIC",
     "hints": [
-      "Dùng f(x+4)=f(x) lặp lại; không mặc định chu kỳ nhỏ nhất."
+      "Dùng \\(f(x+4)=f(x)\\) lặp lại; không mặc định chu kỳ nhỏ nhất."
     ],
     "remediation": "Nếu dừng ở một lần dịch, dùng hai lần; không suy 4 là chu kỳ nhỏ nhất. Ôn TOP05-M08; luyện THPT-TOP05-P16.",
     "rubric": null,
@@ -454,7 +454,7 @@
     "hints": [
       "Một phản ví dụ chỉ cần đúng bốn dữ kiện nhưng sai tại cặp cách nhau 2."
     ],
-    "remediation": "Nếu cho vài giá trị lặp là đủ, tìm x=2 có f(4) khác f(2). Ôn TOP05-M08; luyện THPT-TOP05-P15.",
+    "remediation": "Nếu cho vài giá trị lặp là đủ, thử phản ví dụ tại \\(x=2\\) sao cho \\(f(4)\\ne f(2)\\). Ôn TOP05-M08; luyện THPT-TOP05-P15.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -508,9 +508,9 @@
     "problem_type_id": "TOP05-VERTICAL_TRANSLATE_UP",
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Dùng |x|≥0; xét dấu bằng."
+      "Dùng \\(|x|\\ge0\\); xét dấu bằng."
     ],
-    "remediation": "Nếu cho min ở x=−2, kiểm |x|=0 tại x=0. Ôn TOP05-M09; luyện THPT-TOP05-P17.",
+    "remediation": "Nếu cho giá trị nhỏ nhất ở \\(x=-2\\), kiểm \\(|x|=0\\) tại \\(x=0\\). Ôn TOP05-M09; luyện THPT-TOP05-P17.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -538,7 +538,7 @@
     "hints": [
       "Tìm x làm đối số bằng 0."
     ],
-    "remediation": "Nếu dịch sai chiều, giải x+3=0 để tìm đỉnh. Ôn TOP05-M10; luyện THPT-TOP05-P20.",
+    "remediation": "Nếu dịch sai chiều, giải \\(x+3=0\\) để tìm đỉnh. Ôn TOP05-M10; luyện THPT-TOP05-P20.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -564,9 +564,9 @@
     "problem_type_id": "TOP05-HORIZONTAL_DOMAIN_SHIFT",
     "difficulty": "APPLY",
     "hints": [
-      "Tìm miền từ x−4≥0, rồi dịch điểm đầu của đồ thị."
+      "Tìm miền từ \\(x-4\\ge0\\), rồi dịch điểm đầu của đồ thị."
     ],
-    "remediation": "Nếu giữ miền cũ, kiểm x=0 không thỏa căn mới. Ôn TOP05-M10; luyện THPT-TOP05-P19.",
+    "remediation": "Nếu giữ miền cũ, kiểm \\(x=0\\) không thỏa điều kiện của căn mới. Ôn TOP05-M10; luyện THPT-TOP05-P19.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -696,7 +696,7 @@
     "content_version": "R01",
     "stem": "\\(f(x)=x^2\\) và \\(g(x)=f(2x)=4x^2\\). So độ rộng hai đồ thị và tìm \\(g(1)\\).",
     "answer_key": "g co ngang hệ số \\(\\frac12\\); \\(g(1)=4\\).",
-    "worked_solution": "Cùng mức \\(y=4\\), f đạt \\(x=\\pm2\\) còn g đạt \\(x=\\pm1\\), nên hình g hẹp theo Ox gấp đôi. \\(g(1)=2^2=4\\).",
+    "worked_solution": "Cùng mức \\(y=4\\), đồ thị f có hai điểm với \\(x=\\pm2\\), còn đồ thị g có hai điểm với \\(x=\\pm1\\). Mỗi điểm \\((a;f(a))\\) của f tương ứng với điểm \\(\\left(\\frac a2;f(a)\\right)\\) của g, vì vậy đồ thị g co ngang theo hệ số \\(\\frac12\\). Tính \\(g(1)=f(2)=4\\).",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP05-O13"
@@ -706,7 +706,7 @@
     "hints": [
       "Chọn cùng một mức y, so hai hoành độ."
     ],
-    "remediation": "Nếu cho đồ thị rộng gấp đôi, so hoành độ tại cùng y=4. Ôn TOP05-M13; luyện THPT-TOP05-P26.",
+    "remediation": "Nếu cho đồ thị rộng gấp đôi, so hoành độ tại cùng mức \\(y=4\\). Ôn TOP05-M13; luyện THPT-TOP05-P26.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -732,9 +732,9 @@
     "problem_type_id": "TOP05-HORIZONTAL_STRETCH",
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Đặt x/3 bằng hoành độ cũ."
+      "Đặt \\(\\frac x3\\) bằng hoành độ cũ."
     ],
-    "remediation": "Nếu co ngang vì thấy chia 3, giải x/3=±2. Ôn TOP05-M13; luyện THPT-TOP05-P25.",
+    "remediation": "Nếu cho rằng co ngang vì thấy chia 3, giải \\(\\frac x3=\\pm2\\) để kiểm vị trí mới. Ôn TOP05-M13; luyện THPT-TOP05-P25.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -788,9 +788,9 @@
     "problem_type_id": "TOP05-ABS_PARABOLA",
     "difficulty": "APPLY",
     "hints": [
-      "Giải f(x)=0; xét dấu f(0) trước khi lấy trị tuyệt đối."
+      "Giải \\(f(x)=0\\); xét dấu \\(f(0)\\) trước khi lấy trị tuyệt đối."
     ],
-    "remediation": "Nếu cho cả g=f trên ℝ, thử x=0 ở phần f âm. Ôn TOP05-M14; luyện THPT-TOP05-P27.",
+    "remediation": "Nếu cho rằng \\(g(x)=f(x)\\) trên \\(\\mathbb R\\), thử \\(x=0\\) ở phần f âm. Ôn TOP05-M14; luyện THPT-TOP05-P27.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -818,7 +818,7 @@
     "hints": [
       "Dịch ngang theo đối số, dịch đứng theo số cộng ngoài hàm."
     ],
-    "remediation": "Nếu dịch ngang sai dấu, tìm x−2=0; sau đó cộng 1 vào y. Ôn TOP05-M15; luyện THPT-TOP05-P30.",
+    "remediation": "Nếu dịch ngang sai dấu, tìm nghiệm của \\(x-2=0\\); sau đó cộng 1 vào tung độ. Ôn TOP05-M15; luyện THPT-TOP05-P30.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -844,9 +844,9 @@
     "problem_type_id": "TOP05-CHAIN_REFLECT_SCALE_SHIFT",
     "difficulty": "APPLY",
     "hints": [
-      "Tìm x làm x+1=0, xét hệ số −2 và số cộng 3."
+      "Tìm x sao cho \\(x+1=0\\), xét hệ số \\(-2\\) và số cộng 3."
     ],
-    "remediation": "Nếu tìm sai đỉnh, giải x+1=0 rồi thay x vào hàm. Ôn TOP05-M15; luyện THPT-TOP05-P29.",
+    "remediation": "Nếu tìm sai đỉnh, giải \\(x+1=0\\) rồi thay x vào hàm. Ôn TOP05-M15; luyện THPT-TOP05-P29.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -876,7 +876,7 @@
     "hints": [
       "Xác định nhánh chứa 0; so hai giá trị khi tiến sát mốc."
     ],
-    "remediation": "Nếu dùng cả hai nhánh tại 0, kiểm dấu ≥; nhánh trái chỉ tiến sát mốc. Ôn TOP05-M16; luyện THPT-TOP05-P32.",
+    "remediation": "Nếu dùng cả hai nhánh tại 0, kiểm nhánh nào có điều kiện nhận \\(x=0\\); nhánh trái chỉ tiến sát mốc. Ôn TOP05-M16; luyện THPT-TOP05-P32.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -906,7 +906,7 @@
     "hints": [
       "Dùng dấu ≤ và > để chọn chấm đặc/rỗng."
     ],
-    "remediation": "Nếu vẽ hai chấm đặc, xác định nhánh nào lấy x=1. Ôn TOP05-M16; luyện THPT-TOP05-P31.",
+    "remediation": "Nếu vẽ hai chấm đặc, xác định nhánh nào nhận \\(x=1\\). Ôn TOP05-M16; luyện THPT-TOP05-P31.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -954,7 +954,7 @@
     "content_version": "R01",
     "stem": "Giá thuê dịch vụ \\(F(k)=12000+9000\\cdot\\max(k-2;0)\\) (đồng), \\(k\\ge0\\) tính bằng giờ. Tính \\(F(1)\\), \\(F(4)\\) và giải thích vai trò ngưỡng 2 giờ.",
     "answer_key": "\\(F(1)=12000\\) đồng, \\(F(4)=30000\\) đồng; trước hoặc bằng 2 giờ chỉ trả phí nền.",
-    "worked_solution": "\\(\\max(k-2;0)\\) bằng 0 với \\(k\\le2\\) và bằng \\(k-2\\) khi \\(k>2\\). Khi \\(k=4\\), \\(F(4)=12000+9000\\cdot2=30000\\). Quy tắc theo từng khoảng tạo điểm đổi dốc ở \\(k=2\\).",
+    "worked_solution": "\\(\\max(k-2;0)\\) bằng 0 khi \\(0\\le k\\le2\\), bằng \\(k-2\\) khi \\(k>2\\). Vì \\(1\\le2\\), \\(F(1)=12000\\) đồng. Vì \\(4>2\\), \\(F(4)=12000+9000\\cdot2=30000\\) đồng. Ngưỡng 2 giờ là điểm bắt đầu tính phí theo phần thời gian vượt ngưỡng, không phải toàn bộ thời gian thuê.",
     "skill_ids": [
       "FUNCTION_MODELING",
       "FUNCTION_PIECEWISE"
@@ -965,7 +965,7 @@
     "problem_type_id": "TOP05-PIECEWISE_TARIFF_MODEL",
     "difficulty": "APPLY",
     "hints": [
-      "Xét k≤2 và k>2, thay từng đầu vào đúng nhánh."
+      "Xét \\(0\\le k\\le2\\) và \\(k>2\\), thay từng đầu vào vào đúng nhánh."
     ],
     "remediation": "Nếu cộng phí theo toàn bộ k, chỉ tính phần giờ vượt 2. Ôn TOP05-M17; luyện THPT-TOP05-P33.",
     "rubric": null,
