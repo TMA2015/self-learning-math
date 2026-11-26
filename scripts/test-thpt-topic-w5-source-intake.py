@@ -34,6 +34,10 @@ for n, t in M["topics"].items():
     ready = git("show", f'{sha}:{t["readyPath"]}')
     assert t["sourceBlob"] in receipt and t["sourceBlob"] in ready, f"CĐ{n} source/Q18 mismatch"
     assert t["q18ReceiptBlob"] in ready, f"CĐ{n} ready/Q18 mismatch"
+    if "v2Blob" in t:
+        v2=git("show",f'{sha}:{t["v2Path"]}')
+        assert source_blob(t["v2Path"])==t["v2Blob"] and t["v2Blob"] in ready
+        assert all(t[k] in v2 for k in ("sourceBlob","q18ReceiptBlob")) and "STATE: CONTENT_READY" in ready
     assert "AUTHOR_SELF_VERIFIED" in ready or "AUTHOR_SELF_VERIFIED" in receipt
     assert content.count("\n# Luyện tập") == content.count("\n# Tự kiểm tra") == 1
     know, rest = content.split("\n# Luyện tập", 1)

@@ -12,7 +12,8 @@ import html
 from playwright.sync_api import sync_playwright, expect
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-REFRESH = "--w3a" in sys.argv
+W3B = "--w3b" in sys.argv
+REFRESH = "--w3a" in sys.argv or W3B
 BUILD = ROOT / ("site" if REFRESH else "site-thpt-preview")
 class ProjectHandler(http.server.SimpleHTTPRequestHandler):
     def translate_path(self,p):
@@ -33,7 +34,7 @@ SIZES = {
     "15": (5, 5, 22, 67, 8, 5),
 }
 if REFRESH:
-    SIZES = {k: v for k, v in SIZES.items() if k in ("12", "13", "14")}
+    SIZES = {k: v for k, v in SIZES.items() if k in (("15",) if W3B else ("12", "13", "14"))}
 PALETTE = {
     "concept": "rgb(232, 247, 242)",
     "rule": "rgb(234, 241, 252)",
@@ -250,7 +251,8 @@ with sync_playwright() as pw:
                     .map(label=>{let n=label.nextElementSibling,stem=0,details=0;
                       while(n&&n.tagName!=='H3'&&!n.matches('.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula')){
                         if(n.matches('p'))stem++;
-                        if(n.matches('details.question')){details++;break}
+                        const answers=n.matches('details.question')?[n]:n.matches('.topic-sgk-disclosure-pair')?[...n.querySelectorAll(':scope > details.question')]:[];
+                        if(answers.length){details+=answers.filter(d=>d.querySelector(':scope > summary')?.textContent.trim()==='Đối chiếu').length;break}
                         n=n.nextElementSibling
                       }
                       return {stem,details,wrapped:!!label.closest('.topic-w1-application')}
