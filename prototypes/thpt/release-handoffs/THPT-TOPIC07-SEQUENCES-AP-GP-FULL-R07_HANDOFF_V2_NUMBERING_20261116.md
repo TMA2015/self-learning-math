@@ -1,3 +1,7 @@
+## CURRENT V2 — 26/11/2026 · A05 source only
+
+PR #828 learner `3f81555846b55690b1a19fed6b69d48950a77309`, Q18 `d0fe9e8b1b5234eb98f0120fe5d98035ff7a4705`, custody `303faf108d3b8dd33ad32bce5dfc117e0c33c7cf`, growth SVG `e3be79f17eadcd26d36b99f28dc0df8f4158addb`. Work A01–A05 and X-G.5 verified, 69/18/11/88; original S1 evidence inherited. UI U01 remains RELEASE, prior notes historical. No merge/deploy authority.
+
 <!-- TOP07_MASTER974_ONE_EFFECTIVE_V2_20261121 -->
 **CURRENT V2 AUTHORING source scope:** one R07 learner `7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba`, same 47 original SGK+22 Topic public canonicals and 11 Written rubrics; existing Q18 AUTHOR_SELF_VERIFIED `737f3c09766f4c15b50ee05ce93bcf0bb375d861`, authoring metadata `f7e0045bed4b0d6ae614bc004835e17e9d892580`; inherited S1 original-scan audit `bada66e655a07b111f361b1cad634015f5dbae07`. Changes #977-022/-023/-024 completed only in original learner source: 18 individualized Kiểm lỗi routes to actual Practice, one opt-in solution location table for 18 public selfcheck questions, one SGK attribution footer, source management comment flagged AUTHORING_ONLY. No canonical stems/answers/rubrics or 3 SVG modified, 88/88 opt-in disclosures balanced. This is author-targeted Q18 math/PED source verification (Delta C on D6), NOT a new NotebookLM independent verdict, official readiness, website release or deployment. Historical Q18 and previous revisions remain source-SHA scoped. No merge/deploy.
 
@@ -8,7 +12,7 @@
 PACKET_ID: THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R01
 CONTENT_REVISION: R07
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: f7e0045bed4b0d6ae614bc004835e17e9d892580
+AUTHOR_METADATA_BLOB: 303faf108d3b8dd33ad32bce5dfc117e0c33c7cf
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -16,9 +20,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba
+ACADEMIC_SOURCE_BLOB: 3f81555846b55690b1a19fed6b69d48950a77309
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R07_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 737f3c09766f4c15b50ee05ce93bcf0bb375d861
+REVIEW_RECEIPT_BLOB: d0fe9e8b1b5234eb98f0120fe5d98035ff7a4705
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R06_20261115.md
 PUBLIC_CANONICAL_BANK_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767
 PUBLIC_ORIGINAL47_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_ORIGINAL47_SGK_PLACEMENT_INDEX_R06_20261115.md
