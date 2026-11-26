@@ -250,7 +250,8 @@ with sync_playwright() as pw:
                     .map(label=>{let n=label.nextElementSibling,stem=0,details=0;
                       while(n&&n.tagName!=='H3'&&!n.matches('.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula')){
                         if(n.matches('p'))stem++;
-                        if(n.matches('details.question')){details++;break}
+                        const answers=n.matches('details.question')?[n]:n.matches('.topic-sgk-disclosure-pair')?[...n.querySelectorAll(':scope > details.question')]:[];
+                        if(answers.length){details+=answers.filter(d=>d.querySelector(':scope > summary')?.textContent.trim()==='Đối chiếu').length;break}
                         n=n.nextElementSibling
                       }
                       return {stem,details,wrapped:!!label.closest('.topic-w1-application')}
