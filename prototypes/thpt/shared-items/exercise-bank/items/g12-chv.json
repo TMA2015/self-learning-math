@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-G12-B14-C01",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Mặt phẳng x−2y+3z−4=0 có pháp tuyến nào?",
-    "answer_key": "(1,-2,3)",
-    "worked_solution": "Đọc hệ số x,y,z; (1,-2,3) khác 0.",
+    "stem": "Cho mặt phẳng \\(x-2y+3z-4=0\\). Tìm một vectơ pháp tuyến.",
+    "answer_key": "\\((1;-2;3)\\).",
+    "worked_solution": "Hệ số của x, y, z tạo thành vectơ pháp tuyến \\(\\vec n=(1;-2;3)\\ne\\vec0\\). Hằng số -4 chỉ xác định vị trí mặt phẳng.",
     "skill_ids": [
       "G12-CHV-B14-O01"
     ],
@@ -34,9 +34,9 @@
   {
     "item_id": "THPT-G12-B14-P01",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Tìm một vectơ n khác không vuông góc với u=(1;2;0), v=(0;1;2).",
-    "answer_key": "(4,-2,1)",
-    "worked_solution": "u×v=(4,-2,1); hai tích vô hướng lần lượt 4-4 và -2+2 đều 0.",
+    "stem": "Tìm một vectơ khác không vuông góc với cả \\(\\vec u=(1;2;0)\\), \\(\\vec v=(0;1;2)\\).",
+    "answer_key": "\\((4;-2;1)\\) hoặc bội khác 0.",
+    "worked_solution": "Hai vectơ không cùng phương. Tích có hướng \\([\\vec u,\\vec v]=(2\\cdot2-0\\cdot1;0\\cdot0-1\\cdot2;1\\cdot1-2\\cdot0)=(4;-2;1)\\). Kiểm hai tích vô hướng lần lượt bằng 0.",
     "skill_ids": [
       "G12-CHV-B14-O01"
     ],
@@ -66,9 +66,9 @@
   {
     "item_id": "THPT-G12-B14-A01",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Hai mép mái có hướng (1,0,1) và (0,2,1). Tìm hướng vuông góc mái.",
-    "answer_key": "(-2,-1,2)",
-    "worked_solution": "Tích có hướng (-2,-1,2), kiểm trực giao với cả hai mép.",
+    "stem": "Hai mép mái phẳng có vectơ chỉ phương \\((1;0;1)\\) và \\((0;2;1)\\). Tìm một vectơ pháp tuyến của mái.",
+    "answer_key": "\\((-2;-1;2)\\) hoặc bội khác 0.",
+    "worked_solution": "Hai hướng không cùng phương nên tích có hướng là pháp tuyến: \\((-2;-1;2)\\). Kiểm: \\(-2+2=0\\) và \\(-2+2=0\\) khi lấy tích vô hướng với từng hướng.",
     "skill_ids": [
       "G12-CHV-B14-O01"
     ],
@@ -98,9 +98,9 @@
   {
     "item_id": "THPT-G12-B14-C02",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Qua M(0,1,-1), n=(1,2,3) viết mặt phẳng.",
-    "answer_key": "x+2y+3z+1=0",
-    "worked_solution": "x+2(y−1)+3(z+1)=0 ⇒ x+2y+3z+1=0.",
+    "stem": "Viết phương trình mặt phẳng qua \\(M(0;1;-1)\\) và có pháp tuyến \\(\\vec n=(1;2;3)\\).",
+    "answer_key": "\\(x+2y+3z+1=0\\).",
+    "worked_solution": "Dùng dạng điểm–pháp tuyến: \\(x+2(y-1)+3(z+1)=0\\). Thu gọn được phương trình cần tìm; thay M vào vế trái cho 0.",
     "skill_ids": [
       "G12-CHV-B14-O02"
     ],
@@ -130,9 +130,9 @@
   {
     "item_id": "THPT-G12-B14-P02",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Qua M(2,0,1), n=(1,-2,2), viết (P).",
-    "answer_key": "x−2y+2z−4=0",
-    "worked_solution": "(x−2)−2y+2(z−1)=0 ⇒ x−2y+2z−4=0.",
+    "stem": "Viết phương trình mặt phẳng (P) qua \\(M(2;0;1)\\), pháp tuyến \\(\\vec n=(1;-2;2)\\).",
+    "answer_key": "\\(x-2y+2z-4=0\\).",
+    "worked_solution": "Vì \\(\\vec n\\cdot\\overrightarrow{MX}=0\\), phương trình là \\((x-2)-2y+2(z-1)=0\\). Thu gọn và thử M: \\(2+2-4=0\\).",
     "skill_ids": [
       "G12-CHV-B14-O02"
     ],
@@ -162,9 +162,9 @@
   {
     "item_id": "THPT-G12-B14-A02",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Mặt sàn ngang qua điểm A(1,2,4). Viết phương trình của sàn.",
-    "answer_key": "z=4",
-    "worked_solution": "Mặt ngang có pháp tuyến (0,0,1); đi qua z=4 nên z−4=0.",
+    "stem": "Trong Oxyz với Oz thẳng đứng, mặt sàn nằm ngang qua \\(A(1;2;4)\\). Viết phương trình mặt sàn.",
+    "answer_key": "\\(z=4\\).",
+    "worked_solution": "Sàn nằm ngang có pháp tuyến \\((0;0;1)\\). Qua A, ta được \\(z-4=0\\). Tất cả điểm trên sàn có cùng cao độ 4.",
     "skill_ids": [
       "G12-CHV-B14-O02"
     ],
@@ -194,9 +194,9 @@
   {
     "item_id": "THPT-G12-B14-C03",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "A(1,0,0),B(1,1,0),C(1,0,1). Viết (ABC).",
-    "answer_key": "x=1",
-    "worked_solution": "AB=(0,1,0),AC=(0,0,1) ⇒ n=(1,0,0); qua A ⇒ x−1=0.",
+    "stem": "Viết phương trình mặt phẳng qua \\(A(1;0;0), B(1;1;0), C(1;0;1)\\).",
+    "answer_key": "\\(x=1\\).",
+    "worked_solution": "\\(\\overrightarrow{AB}=(0;1;0),\\overrightarrow{AC}=(0;0;1)\\) không cùng phương. Tích có hướng là \\((1;0;0)\\). Mặt phẳng qua A có phương trình \\(x-1=0\\); B và C cũng thỏa.",
     "skill_ids": [
       "G12-CHV-B14-O03"
     ],
@@ -226,9 +226,9 @@
   {
     "item_id": "THPT-G12-B14-P03",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "A(0,0,0),B(1,1,0),C(0,0,1). Tìm mặt phẳng.",
-    "answer_key": "x−y=0",
-    "worked_solution": "AB=(1,1,0), AC=(0,0,1), n=(1,-1,0) theo hệ số khác 0; qua O ⇒ x−y=0.",
+    "stem": "Viết phương trình mặt phẳng qua \\(A(0;0;0),B(1;1;0),C(0;0;1)\\).",
+    "answer_key": "\\(x-y=0\\).",
+    "worked_solution": "Hai vectơ \\(\\overrightarrow{AB}=(1;1;0),\\overrightarrow{AC}=(0;0;1)\\) không cùng phương. Tích có hướng là \\((1;-1;0)\\). Qua O nên hằng số bằng 0, cho \\(x-y=0\\).",
     "skill_ids": [
       "G12-CHV-B14-O03"
     ],
@@ -258,9 +258,9 @@
   {
     "item_id": "THPT-G12-B14-A03",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Ba đỉnh tường (4,0,0),(0,4,0),(4,0,2). Viết mặt phẳng tường.",
-    "answer_key": "x+y−4=0",
-    "worked_solution": "Hai vectơ trong tường (-4,4,0),(0,0,2) có pháp tuyến cùng phương (1,1,0); qua (4,0,0).",
+    "stem": "Ba điểm trên một mặt tường phẳng có tọa độ \\((4;0;0),(0;4;0),(4;0;2)\\). Tìm phương trình mặt tường.",
+    "answer_key": "\\(x+y-4=0\\).",
+    "worked_solution": "Từ điểm đầu tới hai điểm kia có hai hướng \\((-4;4;0),(0;0;2)\\) không cùng phương. Tích có hướng là \\((8;8;0)\\), chọn pháp tuyến \\((1;1;0)\\). Thế điểm đầu được \\(x+y-4=0\\).",
     "skill_ids": [
       "G12-CHV-B14-O03"
     ],
@@ -290,9 +290,9 @@
   {
     "item_id": "THPT-G12-B14-C04",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Qua (2,1,0) song song Ox và Oz. Viết mặt phẳng.",
-    "answer_key": "y=1",
-    "worked_solution": "Có 2 hướng (1,0,0),(0,0,1), pháp tuyến (0,1,0); qua điểm cho trước ⇒ y=1.",
+    "stem": "Mặt phẳng đi qua \\((2;1;0)\\) và song song với hai phương Ox, Oz. Viết phương trình.",
+    "answer_key": "\\(y=1\\).",
+    "worked_solution": "Hai hướng độc lập \\((1;0;0),(0;0;1)\\) có pháp tuyến \\((0;1;0)\\). Mặt phẳng qua điểm có y=1, vì vậy mọi điểm của mặt phẳng có y=1.",
     "skill_ids": [
       "G12-CHV-B14-O04"
     ],
@@ -322,9 +322,9 @@
   {
     "item_id": "THPT-G12-B14-P04",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Mặt phẳng chứa trục Oy và điểm (1,0,2). Viết phương trình.",
-    "answer_key": "2x−z=0",
-    "worked_solution": "Hai hướng Oy=(0,1,0) và (1,0,2), n=(2,0,-1); qua O.",
+    "stem": "Mặt phẳng chứa trục Oy và điểm \\((1;0;2)\\). Viết phương trình.",
+    "answer_key": "\\(2x-z=0\\).",
+    "worked_solution": "Mặt phẳng chứa O và hai hướng \\((0;1;0),(1;0;2)\\) không cùng phương. Tích có hướng là \\((2;0;-1)\\). Vì qua O nên phương trình là \\(2x-z=0\\).",
     "skill_ids": [
       "G12-CHV-B14-O04"
     ],
@@ -354,9 +354,9 @@
   {
     "item_id": "THPT-G12-B14-A04",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Mái qua P(0,0,2), song song hai hướng (1,1,0),(0,1,1). Viết mặt mái.",
-    "answer_key": "x−y+z−2=0",
-    "worked_solution": "n=(1,-1,1); qua P ⇒ x−y+z−2=0.",
+    "stem": "Mặt mái đi qua \\(P(0;0;2)\\), song song hai phương \\((1;1;0),(0;1;1)\\). Viết phương trình mặt mái.",
+    "answer_key": "\\(x-y+z-2=0\\).",
+    "worked_solution": "Tích có hướng của hai vectơ là \\((1;-1;1)\\), khác vectơ-không. Dùng điểm P: \\(x-y+(z-2)=0\\). Thử lại P và hai hướng đều phù hợp.",
     "skill_ids": [
       "G12-CHV-B14-O04"
     ],
@@ -386,9 +386,9 @@
   {
     "item_id": "THPT-G12-B14-C05",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "x−2y+z=1 và 2x−4y+2z=5 có vị trí gì?",
-    "answer_key": "Song song phân biệt",
-    "worked_solution": "Hai pháp tuyến tỉ lệ 2, nhưng nếu nhân cả phương trình đầu với 2 có vế phải 2 khác 5.",
+    "stem": "Xét vị trí tương đối của hai mặt phẳng \\(x-2y+z=1\\) và \\(2x-4y+2z=5\\).",
+    "answer_key": "Song song và phân biệt.",
+    "worked_solution": "Hai pháp tuyến tỉ lệ 2. Nếu hai mặt phẳng trùng, nhân toàn bộ phương trình thứ nhất với 2 phải cho phương trình thứ hai. Nhưng vế phải khi đó bằng 2, không bằng 5, nên hai mặt phẳng song song phân biệt.",
     "skill_ids": [
       "G12-CHV-B14-O05"
     ],
@@ -418,9 +418,9 @@
   {
     "item_id": "THPT-G12-B14-P05",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Hai mặt 2x+y−z=0 và x−2y=0 có vuông góc?",
-    "answer_key": "Có",
-    "worked_solution": "n1=(2,1,-1), n2=(1,-2,0), dot=2−2+0=0.",
+    "stem": "Hai mặt phẳng \\(2x+y-z=0\\) và \\(x-2y=0\\) có vuông góc không?",
+    "answer_key": "Có.",
+    "worked_solution": "Hai pháp tuyến là \\((2;1;-1)\\) và \\((1;-2;0)\\). Tích vô hướng \\(2-2+0=0\\). Vì cả hai khác không, hai mặt phẳng vuông góc.",
     "skill_ids": [
       "G12-CHV-B14-O05"
     ],
@@ -450,9 +450,9 @@
   {
     "item_id": "THPT-G12-B14-A05",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Mặt sàn z=0 và tường x=0 có vuông góc?",
-    "answer_key": "Có",
-    "worked_solution": "Pháp tuyến (0,0,1) và (1,0,0) có dot=0.",
+    "stem": "Mặt sàn \\(z=0\\) và mặt tường \\(x=0\\) có vuông góc không?",
+    "answer_key": "Có.",
+    "worked_solution": "Pháp tuyến tương ứng \\((0;0;1)\\) và \\((1;0;0)\\) có tích vô hướng bằng 0. Do đó hai mặt phẳng vuông góc.",
     "skill_ids": [
       "G12-CHV-B14-O05"
     ],
@@ -482,9 +482,9 @@
   {
     "item_id": "THPT-G12-B14-C06",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Khoảng cách O tới x+2y+2z−3=0?",
-    "answer_key": "1",
-    "worked_solution": "Tử |−3|=3, mẫu √9=3.",
+    "stem": "Tính khoảng cách từ O đến mặt phẳng \\(x+2y+2z-3=0\\).",
+    "answer_key": "1.",
+    "worked_solution": "Áp dụng công thức khoảng cách điểm–mặt: \\(d=\\frac{|0+0+0-3|}{\\sqrt{1^2+2^2+2^2}}=\\frac33=1\\). Trị tuyệt đối bảo đảm khoảng cách không âm.",
     "skill_ids": [
       "G12-CHV-B14-O06"
     ],
@@ -514,9 +514,9 @@
   {
     "item_id": "THPT-G12-B14-P06",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "M(2,-1,1), P:2x+y+2z−1=0. Tính d.",
-    "answer_key": "4/3",
-    "worked_solution": "Tử |4−1+2−1|=4, mẫu 3.",
+    "stem": "Tính khoảng cách từ \\(M(2;-1;1)\\) đến mặt phẳng \\(2x+y+2z-1=0\\).",
+    "answer_key": "\\(\\frac43\\).",
+    "worked_solution": "Thay tọa độ M vào tử số và dùng độ dài pháp tuyến ở mẫu: \\(d=\\frac{|4-1+2-1|}{\\sqrt{4+1+4}}=\\frac43\\).",
     "skill_ids": [
       "G12-CHV-B14-O06"
     ],
@@ -546,9 +546,9 @@
   {
     "item_id": "THPT-G12-B14-A06",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Hai mặt sàn z=0 và trần z=3 có khoảng cách bao nhiêu mét nếu tọa độ mét?",
-    "answer_key": "3m",
-    "worked_solution": "Chọn điểm O thuộc sàn, d(O,z−3=0)=3m.",
+    "stem": "Hai mặt phẳng sàn \\(z=0\\) và trần \\(z=3\\). Tọa độ tính bằng mét. Tính khoảng cách giữa chúng.",
+    "answer_key": "3 m.",
+    "worked_solution": "Hai mặt phẳng song song. Chọn O trên sàn; khoảng cách tới trần là \\(\\frac{|0-3|}{1}=3\\) m. Do song song, chọn bất kì điểm nào trên sàn cũng cho cùng kết quả.",
     "skill_ids": [
       "G12-CHV-B14-O06"
     ],
@@ -578,9 +578,9 @@
   {
     "item_id": "THPT-G12-B14-C07",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Bài tích hợp sau B17: mặt cầu tâm C(0;0;2), R=3; mặt phẳng z=0. Tính bán kính đường tròn giao tuyến.",
-    "answer_key": "√5",
-    "worked_solution": "d=2<R=3 nên mặt cầu cắt mặt phẳng theo đường tròn bán kính r=√(3²−2²)=√5.",
+    "stem": "Bài tích hợp sau B17: Mặt cầu tâm \\(C(0;0;2)\\), bán kính R=3, cắt mặt phẳng z=0. Tính bán kính đường tròn giao tuyến.",
+    "answer_key": "\\(\\sqrt5\\).",
+    "worked_solution": "Khoảng cách từ C tới mặt phẳng bằng 2, nhỏ hơn R=3. Bán kính đường tròn giao tuyến và khoảng cách này là hai cạnh góc vuông của tam giác có cạnh huyền R. Do đó \\(r=\\sqrt{3^2-2^2}=\\sqrt5\\).",
     "skill_ids": [
       "G12-CHV-B14-O07"
     ],
@@ -610,9 +610,9 @@
   {
     "item_id": "THPT-G12-B14-P07",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Bài tích hợp sau B17: mặt cầu tâm C(1;2;1), R=2; mặt phẳng z=0. Tính bán kính đường tròn giao tuyến.",
-    "answer_key": "√3",
-    "worked_solution": "d=1<R=2 nên r=√(4−1)=√3.",
+    "stem": "Bài tích hợp sau B17: Mặt cầu tâm \\(C(1;2;1)\\), R=2, cắt mặt phẳng z=0. Tính bán kính giao tuyến.",
+    "answer_key": "\\(\\sqrt3\\).",
+    "worked_solution": "Khoảng cách từ tâm đến mặt phẳng là 1, nhỏ hơn 2. Áp dụng Pitago trong mặt phẳng qua tâm và một điểm giao tuyến: \\(r=\\sqrt{2^2-1^2}=\\sqrt3\\).",
     "skill_ids": [
       "G12-CHV-B14-O07"
     ],
@@ -642,9 +642,9 @@
   {
     "item_id": "THPT-G12-B14-A07",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Bài tích hợp sau B17: vùng phủ lý tưởng là khối cầu bán kính 10 m, tâm cao 6 m so với nền ngang. Tìm bán kính vùng phủ trên nền.",
-    "answer_key": "8m",
-    "worked_solution": "Khoảng cách tâm đến nền h=6 m<R=10 m. Giao khối cầu với nền là hình tròn, biên là đường tròn có r=√(100−36)=8 m.",
+    "stem": "Bài tích hợp sau B17: Vùng phủ lý tưởng là khối cầu bán kính 10 m, tâm cao 6 m trên nền ngang. Tính bán kính vùng phủ trên nền.",
+    "answer_key": "8 m.",
+    "worked_solution": "Khoảng cách từ tâm đến nền là 6 m, nhỏ hơn bán kính 10 m. Giao khối cầu với nền là hình tròn; đường biên có bán kính \\(r=\\sqrt{10^2-6^2}=8\\) m.",
     "skill_ids": [
       "G12-CHV-B14-O07"
     ],
@@ -674,9 +674,9 @@
   {
     "item_id": "THPT-G12-B15-C01",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Đường thẳng qua O hướng (1,0,2)?",
-    "answer_key": "(t,0,2t)",
-    "worked_solution": "M=(0,0,0)+t(1,0,2).",
+    "stem": "Viết phương trình tham số của đường thẳng qua O có vectơ chỉ phương \\((1;0;2)\\).",
+    "answer_key": "\\((x;y;z)=(t;0;2t),\\ t\\in\\mathbb R\\).",
+    "worked_solution": "Mọi điểm X trên đường thỏa \\(\\overrightarrow{OX}=t(1;0;2)\\). Vì vậy x=t, y=0, z=2t; tham số chạy trên toàn bộ số thực.",
     "skill_ids": [
       "G12-CHV-B15-O01"
     ],
@@ -706,9 +706,9 @@
   {
     "item_id": "THPT-G12-B15-P01",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Qua (-1,0,4), hướng (3,2,-1), viết tham số.",
-    "answer_key": "(-1+3t,2t,4−t)",
-    "worked_solution": "Cùng một t nhân từng thành phần của u.",
+    "stem": "Viết phương trình tham số của đường thẳng qua \\((-1;0;4)\\), có chỉ phương \\((3;2;-1)\\).",
+    "answer_key": "\\((x;y;z)=(-1+3t;2t;4-t),\\ t\\in\\mathbb R\\).",
+    "worked_solution": "Cộng tọa độ điểm đã biết với t lần vectơ chỉ phương. Dùng cùng một tham số t trong cả ba tọa độ; t=0 cho điểm ban đầu.",
     "skill_ids": [
       "G12-CHV-B15-O01"
     ],
@@ -738,9 +738,9 @@
   {
     "item_id": "THPT-G12-B15-A01",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Drone xuất phát từ (0;2;1) m, có vectơ vận tốc không đổi (1;−1;2) m/s. Viết tọa độ vị trí sau t giây, t≥0, trong thời gian chuyển động đều.",
-    "answer_key": "(t;2−t;1+2t) m, t≥0 trong thời gian chuyển động đều.",
-    "worked_solution": "Vị trí=điểm đầu+t·v, điều kiện vật lý t≥0; đường thẳng hình học có t∈R.",
+    "stem": "Drone xuất phát từ \\((0;2;1)\\) m, vận tốc không đổi \\((1;-1;2)\\) m/s. Tìm tọa độ sau t giây trong thời gian chuyển động đều, \\(t\\ge0\\).",
+    "answer_key": "\\((t;2-t;1+2t)\\) m, \\(t\\ge0\\) trong thời gian chuyển động đều.",
+    "worked_solution": "Vị trí bằng vị trí đầu cộng độ dời: \\((0;2;1)+t(1;-1;2)=(t;2-t;1+2t)\\). Chỉ nhận thời gian thuộc mô hình; đường thẳng hình học kéo dài với t thực.",
     "skill_ids": [
       "G12-CHV-B15-O01"
     ],
@@ -770,9 +770,9 @@
   {
     "item_id": "THPT-G12-B15-C02",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Qua A(0,0,0), B(2,0,1).",
-    "answer_key": "(2t,0,t)",
-    "worked_solution": "AB=(2,0,1), t=0→A,t=1→B.",
+    "stem": "Viết phương trình tham số của đường thẳng qua \\(A(0;0;0),B(2;0;1)\\).",
+    "answer_key": "\\((x;y;z)=(2t;0;t),\\ t\\in\\mathbb R\\).",
+    "worked_solution": "\\(\\overrightarrow{AB}=(2;0;1)\\) khác không, là một chỉ phương. Dùng A làm điểm gốc được phương trình trên; t=0 cho A, t=1 cho B.",
     "skill_ids": [
       "G12-CHV-B15-O02"
     ],
@@ -802,9 +802,9 @@
   {
     "item_id": "THPT-G12-B15-P02",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Qua A(1,2,0),B(1,5,3).",
-    "answer_key": "(1,2+3t,3t)",
-    "worked_solution": "AB=(0,3,3) không phải vectơ 0.",
+    "stem": "Viết phương trình tham số của đường thẳng qua \\(A(1;2;0),B(1;5;3)\\).",
+    "answer_key": "\\((x;y;z)=(1;2+3t;3t),\\ t\\in\\mathbb R\\).",
+    "worked_solution": "Chỉ phương \\(\\overrightarrow{AB}=(0;3;3)\\ne\\vec0\\). Dùng A làm điểm gốc; x luôn bằng 1. Thay t=1 thu được B.",
     "skill_ids": [
       "G12-CHV-B15-O02"
     ],
@@ -834,9 +834,9 @@
   {
     "item_id": "THPT-G12-B15-A02",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Dây cáp thẳng căng từ A(0;0;4) đến B(4;2;0). Viết tọa độ điểm chạy trên đoạn cáp theo tham số t và nêu miền t.",
-    "answer_key": "(4t;2t;4−4t), 0≤t≤1.",
-    "worked_solution": "AB=(4,2,-4), đoạn vật lý 0≤t≤1; đường thẳng kéo dài t∈R.",
+    "stem": "Dây cáp thẳng nối \\(A(0;0;4)\\) với \\(B(4;2;0)\\). Viết tọa độ điểm trên đoạn cáp theo tham số t và nêu miền t, chọn t=0 tại A và t=1 tại B.",
+    "answer_key": "\\((4t;2t;4-4t),\\ 0\\le t\\le1\\).",
+    "worked_solution": "\\(\\overrightarrow{AB}=(4;2;-4)\\). Điểm trên đoạn có vị trí A+tAB với \\(0\\le t\\le1\\); ngoài khoảng đó là phần kéo dài của đường thẳng, không thuộc dây cáp.",
     "skill_ids": [
       "G12-CHV-B15-O02"
     ],
@@ -866,9 +866,9 @@
   {
     "item_id": "THPT-G12-B15-C03",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Qua O, hướng (1,2,3). Viết chính tắc.",
-    "answer_key": "x/1=y/2=z/3",
-    "worked_solution": "Khử tham số từ (t,2t,3t).",
+    "stem": "Viết phương trình chính tắc của đường thẳng qua O, chỉ phương \\((1;2;3)\\).",
+    "answer_key": "\\(\\frac x1=\\frac y2=\\frac z3\\).",
+    "worked_solution": "Từ tham số \\((t;2t;3t)\\), giải t theo từng tọa độ được ba phân số bằng nhau. Các mẫu đều khác 0 nên dùng được dạng chính tắc.",
     "skill_ids": [
       "G12-CHV-B15-O03"
     ],
@@ -898,9 +898,9 @@
   {
     "item_id": "THPT-G12-B15-P03",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Qua (1,2,0), hướng (0,1,-2). Viết dạng không chia cho 0.",
-    "answer_key": "x=1; y−2=z/(−2)",
-    "worked_solution": "x là hằng, chỉ khử tham số từ y=2+t và z=−2t.",
+    "stem": "Đường thẳng qua \\((1;2;0)\\), chỉ phương \\((0;1;-2)\\). Viết hệ phương trình không chứa phép chia cho 0.",
+    "answer_key": "\\(x=1;\\quad y-2=\\frac z{-2}\\).",
+    "worked_solution": "Phương trình tham số là \\((1;2+t;-2t)\\). Do x không đổi, giữ x=1; khử t từ y và z được hệ trên. Không có phân số với mẫu 0.",
     "skill_ids": [
       "G12-CHV-B15-O03"
     ],
@@ -930,9 +930,9 @@
   {
     "item_id": "THPT-G12-B15-A03",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Đường trục thẳng đứng qua (2,3,0) theo hướng Oz có phương trình?",
-    "answer_key": "x=2, y=3, z=t",
-    "worked_solution": "Hướng (0,0,1); không tạo x/0 hoặc y/0.",
+    "stem": "Đường trục thẳng đứng qua \\((2;3;0)\\) theo phương Oz có phương trình tham số nào?",
+    "answer_key": "\\(x=2,\\ y=3,\\ z=t,\\ t\\in\\mathbb R\\).",
+    "worked_solution": "Chỉ phương \\((0;0;1)\\). Hai tọa độ ngang giữ nguyên; z thay đổi theo t. Không viết x/0 hoặc y/0.",
     "skill_ids": [
       "G12-CHV-B15-O03"
     ],
@@ -962,9 +962,9 @@
   {
     "item_id": "THPT-G12-B15-C04",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "d=(t,2t,3). Điểm M(2,4,3) thuộc d?",
-    "answer_key": "Có",
-    "worked_solution": "t=2 thỏa x=2,y=4,z cố định 3.",
+    "stem": "Cho đường thẳng \\(d:(x;y;z)=(t;2t;3)\\), t thực. Điểm \\(M(2;4;3)\\) có thuộc d không?",
+    "answer_key": "Có.",
+    "worked_solution": "Từ x=2 suy ra t=2. Cùng tham số này cho y=4 và z=3, đều đúng. Vì cả ba tọa độ cùng thỏa nên M thuộc d.",
     "skill_ids": [
       "G12-CHV-B15-O04"
     ],
@@ -994,9 +994,9 @@
   {
     "item_id": "THPT-G12-B15-P04",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "d=(1+2t,3−t,0). M(5,1,0) thuộc d?",
-    "answer_key": "Có",
-    "worked_solution": "t=2 thỏa x=5,y=1,z=0.",
+    "stem": "Cho đường thẳng \\(d:(x;y;z)=(1+2t;3-t;0)\\), t thực. Điểm \\(M(5;1;0)\\) có thuộc d không?",
+    "answer_key": "Có.",
+    "worked_solution": "Từ 1+2t=5 suy ra t=2. Khi đó 3-t=1, z=0 đúng với M. Phải dùng cùng một t cho cả ba tọa độ.",
     "skill_ids": [
       "G12-CHV-B15-O04"
     ],
@@ -1026,9 +1026,9 @@
   {
     "item_id": "THPT-G12-B15-A04",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Vị trí p(t)=(1+t,2+t,3−t). Tại t=3 drone ở đâu?",
-    "answer_key": "(4,5,0)",
-    "worked_solution": "Thay cùng t=3 cho ba tọa độ.",
+    "stem": "Vị trí drone là \\(p(t)=(1+t;2+t;3-t)\\). Tìm tọa độ tại t=3.",
+    "answer_key": "\\((4;5;0)\\).",
+    "worked_solution": "Thay t=3 vào cả ba thành phần: \\((1+3;2+3;3-3)=(4;5;0)\\).",
     "skill_ids": [
       "G12-CHV-B15-O04"
     ],
@@ -1058,9 +1058,9 @@
   {
     "item_id": "THPT-G12-B15-C05",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "u=(1,2,0),v=(2,4,0). Hai hướng?",
-    "answer_key": "Cùng phương",
-    "worked_solution": "v=2u.",
+    "stem": "Hai vectơ \\(\\vec u=(1;2;0),\\vec v=(2;4;0)\\) có cùng phương không?",
+    "answer_key": "Có, \\(\\vec v=2\\vec u\\).",
+    "worked_solution": "Cả ba tọa độ thỏa cùng một hệ số 2; hai vectơ khác không nên cùng phương, đồng thời cùng hướng. Nếu là chỉ phương của hai đường, chỉ biết vậy chưa phân biệt song song với trùng.",
     "skill_ids": [
       "G12-CHV-B15-O05"
     ],
@@ -1090,9 +1090,9 @@
   {
     "item_id": "THPT-G12-B15-P05",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Hai đường có vectơ chỉ phương u=(1;0;1), v=(1;0;−1). Chúng có cùng phương không? Hai phương tạo góc bao nhiêu?",
-    "answer_key": "Không cùng phương; hai phương vuông góc (90°).",
-    "worked_solution": "u·v=1−1=0, hai vectơ khác 0 nên vuông góc và không cùng phương. Hai đường có góc 90° dù chưa biết vị trí giao hay chéo nhau.",
+    "stem": "Hai đường có chỉ phương \\(\\vec u=(1;0;1),\\vec v=(1;0;-1)\\). Chúng có cùng phương không? Góc giữa hai đường bằng bao nhiêu?",
+    "answer_key": "Không cùng phương; góc 90°.",
+    "worked_solution": "\\(\\vec u\\cdot\\vec v=1+0-1=0\\). Hai vectơ khác không nên vuông góc, không cùng phương. Hai đường có góc 90°, dù chưa biết chúng cắt nhau hay chéo nhau.",
     "skill_ids": [
       "G12-CHV-B15-O05"
     ],
@@ -1122,9 +1122,9 @@
   {
     "item_id": "THPT-G12-B15-A05",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Hai hành lang có hướng (2,1,0),(-1,2,0). Các hướng vuông góc?",
-    "answer_key": "Có",
-    "worked_solution": "Tích vô hướng −2+2=0.",
+    "stem": "Hai hành lang thẳng có vectơ chỉ phương \\((2;1;0)\\) và \\((-1;2;0)\\). Hai phương có vuông góc không?",
+    "answer_key": "Có.",
+    "worked_solution": "Tích vô hướng \\(2(-1)+1\\cdot2+0=0\\). Hai hướng khác không nên vuông góc; chưa đủ dữ kiện kết luận hai hành lang giao nhau.",
     "skill_ids": [
       "G12-CHV-B15-O05"
     ],
@@ -1154,9 +1154,9 @@
   {
     "item_id": "THPT-G12-B15-C06",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "d1=(t,0,0), d2=(0,s,0). Có giao?",
-    "answer_key": "Cắt tại O",
-    "worked_solution": "x,y buộc t=s=0, z đều 0; hai hướng không cùng phương.",
+    "stem": "Xét giao điểm của hai đường \\(d_1:(t;0;0),\\ d_2:(0;s;0)\\), với t, s thực.",
+    "answer_key": "Cắt tại O.",
+    "worked_solution": "Đồng nhất ba tọa độ cho t=0 và s=0; tọa độ z tự thỏa. Hai chỉ phương không cùng phương nên có đúng một giao điểm O.",
     "skill_ids": [
       "G12-CHV-B15-O06"
     ],
@@ -1186,9 +1186,9 @@
   {
     "item_id": "THPT-G12-B15-P06",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "d1=(t,1,0), d2=(0,s,1). Quan hệ?",
-    "answer_key": "Chéo nhau",
-    "worked_solution": "Không thể giao vì z luôn là 0 và 1; hai hướng độc lập.",
+    "stem": "Xét vị trí tương đối của \\(d_1:(t;1;0),\\ d_2:(0;s;1)\\), với t, s thực.",
+    "answer_key": "Chéo nhau.",
+    "worked_solution": "Hai chỉ phương \\((1;0;0),(0;1;0)\\) không cùng phương. Không thể có giao điểm vì z của đường đầu luôn 0, của đường sau luôn 1. Hai đường không song song, không cắt nên chéo nhau.",
     "skill_ids": [
       "G12-CHV-B15-O06"
     ],
@@ -1218,9 +1218,9 @@
   {
     "item_id": "THPT-G12-B15-A06",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Hai cáp d1=(t,0,2),d2=(0,s,2). Chúng giao đâu?",
-    "answer_key": "(0,0,2)",
-    "worked_solution": "Từ x=y=0 t=s=0; cùng cao độ z=2.",
+    "stem": "Hai đường cáp được mô hình bởi \\(d_1:(t;0;2),\\ d_2:(0;s;2)\\), với t,s thực. Tìm giao điểm của hai đường.",
+    "answer_key": "\\((0;0;2)\\).",
+    "worked_solution": "Đồng nhất tọa độ x và y cho t=s=0, còn z cùng bằng 2. Hai hướng độc lập nên có đúng một giao điểm \\((0;0;2)\\).",
     "skill_ids": [
       "G12-CHV-B15-O06"
     ],
@@ -1250,9 +1250,9 @@
   {
     "item_id": "THPT-G12-B15-C07",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "d=(1+t,0,1), P:x=3. Tìm giao.",
-    "answer_key": "(3,0,1)",
-    "worked_solution": "1+t=3 ⇒ t=2.",
+    "stem": "Tìm giao điểm của đường \\(d:(1+t;0;1)\\), t thực, với mặt phẳng \\(x=3\\).",
+    "answer_key": "\\((3;0;1)\\).",
+    "worked_solution": "Thay tọa độ đường vào phương trình mặt: 1+t=3 nên t=2. Thế lại vào cả ba tọa độ được giao điểm duy nhất.",
     "skill_ids": [
       "G12-CHV-B15-O07"
     ],
@@ -1282,9 +1282,9 @@
   {
     "item_id": "THPT-G12-B15-P07",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "d=(1+2t,t,3−t), P:x+y+z=8. Tìm giao.",
-    "answer_key": "(5,2,1)",
-    "worked_solution": "Tổng 4+2t=8 ⇒ t=2; điểm (5,2,1).",
+    "stem": "Tìm giao điểm của đường \\(d:(1+2t;t;3-t)\\), t thực, với mặt phẳng \\(x+y+z=8\\).",
+    "answer_key": "\\((5;2;1)\\).",
+    "worked_solution": "Thay tọa độ: \\((1+2t)+t+(3-t)=8\\), tức \\(4+2t=8\\). Suy ra t=2; giao điểm \\((5;2;1)\\). Kiểm tổng ba tọa độ bằng 8.",
     "skill_ids": [
       "G12-CHV-B15-O07"
     ],
@@ -1314,9 +1314,9 @@
   {
     "item_id": "THPT-G12-B15-A07",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Quỹ đạo drone (2t,0,5−t), t≥0, chạm mặt đất z=0 ở đâu?",
-    "answer_key": "(10,0,0) khi t=5",
-    "worked_solution": "Giải 5−t=0 ⇒ t=5; tọa độ (10,0,0).",
+    "stem": "Drone di chuyển theo quỹ đạo \\((2t;0;5-t)\\), \\(t\\ge0\\). Tìm thời điểm và tọa độ khi chạm nền z=0, nếu mô hình còn hiệu lực đến lúc đó.",
+    "answer_key": "\\(t=5\\), điểm \\((10;0;0)\\).",
+    "worked_solution": "Điều kiện chạm nền là 5-t=0, cho t=5 thuộc miền thời gian. Thay t=5 vào tọa độ x, y, z được \\((10;0;0)\\).",
     "skill_ids": [
       "G12-CHV-B15-O07"
     ],
@@ -1346,9 +1346,9 @@
   {
     "item_id": "THPT-G12-B16-C01",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "u=(1,0,0),v=(0,1,0). Góc?",
-    "answer_key": "90°",
-    "worked_solution": "Dot=0 nên cosθ=0.",
+    "stem": "Hai đường có chỉ phương \\((1;0;0)\\) và \\((0;1;0)\\). Tính góc giữa hai đường.",
+    "answer_key": "90°.",
+    "worked_solution": "Tích vô hướng bằng 0, hai độ dài đều bằng 1. Cosin góc giữa hai đường bằng trị tuyệt đối của tích vô hướng chia tích độ dài, tức 0. Góc là 90°.",
     "skill_ids": [
       "G12-CHV-B16-O01"
     ],
@@ -1378,9 +1378,9 @@
   {
     "item_id": "THPT-G12-B16-P01",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "u=(1,1,0),v=(1,-1,0). Góc?",
-    "answer_key": "90°",
-    "worked_solution": "Dot=1−1=0.",
+    "stem": "Hai đường có chỉ phương \\((1;1;0)\\) và \\((1;-1;0)\\). Tính góc giữa hai đường.",
+    "answer_key": "90°.",
+    "worked_solution": "Tích vô hướng \\(1-1=0\\), hai chỉ phương khác không. Cosin góc giữa hai đường bằng 0, nên góc 90°.",
     "skill_ids": [
       "G12-CHV-B16-O01"
     ],
@@ -1410,9 +1410,9 @@
   {
     "item_id": "THPT-G12-B16-A01",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Hai hướng (1,0,0) và (1,1,0) tạo góc mấy độ?",
-    "answer_key": "45°",
-    "worked_solution": "Cosθ=1/√2, góc45°.",
+    "stem": "Hai đường có chỉ phương \\((1;0;0)\\) và \\((1;1;0)\\). Tính góc giữa chúng.",
+    "answer_key": "45°.",
+    "worked_solution": "Tích vô hướng bằng 1; độ dài hai vectơ là 1 và \\(\\sqrt2\\). Vì vậy \\(\\cos\\theta=\\frac1{\\sqrt2}\\), suy ra góc giữa hai đường là 45°.",
     "skill_ids": [
       "G12-CHV-B16-O01"
     ],
@@ -1442,9 +1442,9 @@
   {
     "item_id": "THPT-G12-B16-C02",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "u=(1,0,0) và mặt z=0 tạo góc?",
-    "answer_key": "0°",
-    "worked_solution": "u·n=0 nên sinθ=0.",
+    "stem": "Đường có chỉ phương \\((1;0;0)\\) tạo với mặt phẳng \\(z=0\\) góc bao nhiêu?",
+    "answer_key": "0°.",
+    "worked_solution": "Pháp tuyến mặt phẳng là \\((0;0;1)\\). Tích vô hướng với chỉ phương bằng 0; theo công thức góc đường–mặt, sin góc bằng 0. Góc bằng 0°, nhưng chưa biết đường nằm trong hay song song mặt.",
     "skill_ids": [
       "G12-CHV-B16-O02"
     ],
@@ -1474,9 +1474,9 @@
   {
     "item_id": "THPT-G12-B16-P02",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "u=(0,0,1) và mặt z=0 tạo góc?",
-    "answer_key": "90°",
-    "worked_solution": "|u·n|/(|u||n|)=1.",
+    "stem": "Đường có chỉ phương \\((0;0;1)\\) tạo với mặt phẳng z=0 góc bao nhiêu?",
+    "answer_key": "90°.",
+    "worked_solution": "Chỉ phương cùng phương với pháp tuyến \\((0;0;1)\\). Sin góc đường–mặt bằng \\(\\frac{|1|}{1\\cdot1}=1\\), nên góc 90°.",
     "skill_ids": [
       "G12-CHV-B16-O02"
     ],
@@ -1506,9 +1506,9 @@
   {
     "item_id": "THPT-G12-B16-A02",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Đường dốc hướng (3,0,4) so với nền z=0 có góc?",
-    "answer_key": "arcsin(4/5) ≈53.13°",
-    "worked_solution": "Độ tăng theo pháp tuyến z là4 trên quãng dài5, sinθ=4/5.",
+    "stem": "Đường dốc có chỉ phương \\((3;0;4)\\). Tính góc với nền ngang z=0, làm tròn đến hai chữ số thập phân theo độ.",
+    "answer_key": "\\(\\arcsin\\frac45\\approx53{,}13^\\circ\\).",
+    "worked_solution": "Pháp tuyến nền là \\((0;0;1)\\), độ dài chỉ phương là 5. \\(\\sin\\theta=\\frac{|4|}{5\\cdot1}=\\frac45\\). Góc trong [0°;90°], nên máy tính ở chế độ độ cho khoảng 53,13°.",
     "skill_ids": [
       "G12-CHV-B16-O02"
     ],
@@ -1538,9 +1538,9 @@
   {
     "item_id": "THPT-G12-B16-C03",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Hai mặt z=0 và x=0 tạo góc?",
-    "answer_key": "90°",
-    "worked_solution": "Pháp tuyến vuông góc.",
+    "stem": "Tính góc giữa hai mặt phẳng z=0 và x=0.",
+    "answer_key": "90°.",
+    "worked_solution": "Hai pháp tuyến \\((0;0;1),(1;0;0)\\) có tích vô hướng 0, nên cosin góc giữa hai mặt bằng 0. Góc là 90°.",
     "skill_ids": [
       "G12-CHV-B16-O03"
     ],
@@ -1570,9 +1570,9 @@
   {
     "item_id": "THPT-G12-B16-P03",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Hai mặt x+y=0 và x−y=0 tạo góc?",
-    "answer_key": "90°",
-    "worked_solution": "n1·n2=1−1=0.",
+    "stem": "Tính góc giữa hai mặt phẳng \\(x+y=0\\) và \\(x-y=0\\).",
+    "answer_key": "90°.",
+    "worked_solution": "Pháp tuyến \\((1;1;0),(1;-1;0)\\) có tích vô hướng \\(1-1=0\\). Do đó hai mặt phẳng vuông góc.",
     "skill_ids": [
       "G12-CHV-B16-O03"
     ],
@@ -1602,9 +1602,9 @@
   {
     "item_id": "THPT-G12-B16-A03",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Mái z=x và nền z=0 tạo góc?",
-    "answer_key": "45°",
-    "worked_solution": "n_mái=(-1,0,1),n_nền=(0,0,1), cos=1/√2.",
+    "stem": "Tính góc giữa mái phẳng \\(z=x\\) và nền z=0.",
+    "answer_key": "45°.",
+    "worked_solution": "Viết mái dưới dạng \\(-x+z=0\\), pháp tuyến \\((-1;0;1)\\); nền có pháp tuyến \\((0;0;1)\\). \\(\\cos\\theta=\\frac{|1|}{\\sqrt2}=\\frac1{\\sqrt2}\\), suy ra 45°.",
     "skill_ids": [
       "G12-CHV-B16-O03"
     ],
@@ -1634,9 +1634,9 @@
   {
     "item_id": "THPT-G12-B16-C04",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "u=(0,0,1), mặt z=0. Quan hệ hướng?",
-    "answer_key": "Đường vuông góc mặt",
-    "worked_solution": "u cùng phương n=(0,0,1), góc90°.",
+    "stem": "Đường có chỉ phương \\((0;0;1)\\) có quan hệ gì với mặt phẳng z=0?",
+    "answer_key": "Đường thẳng vuông góc mặt phẳng.",
+    "worked_solution": "Chỉ phương khác không cùng phương với pháp tuyến của mặt. Do đó đường thẳng vuông góc mặt phẳng, góc 90°.",
     "skill_ids": [
       "G12-CHV-B16-O04"
     ],
@@ -1666,9 +1666,9 @@
   {
     "item_id": "THPT-G12-B16-P04",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "u=(1,0,0), mặt z=0. Góc?",
-    "answer_key": "0°",
-    "worked_solution": "u·n=0, hướng song song mặt.",
+    "stem": "Đường có chỉ phương \\((1;0;0)\\) tạo góc nào với mặt phẳng z=0?",
+    "answer_key": "0°.",
+    "worked_solution": "Pháp tuyến của mặt là \\((0;0;1)\\). Tích vô hướng bằng 0, nên sin góc bằng 0 và góc bằng 0°. Chỉ từ hướng không kết luận được đường có nằm trong mặt hay không.",
     "skill_ids": [
       "G12-CHV-B16-O04"
     ],
@@ -1698,9 +1698,9 @@
   {
     "item_id": "THPT-G12-B16-A04",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Thang máy đi theo hướng Oz; sàn nằm z=2. Góc đường với sàn?",
-    "answer_key": "90°",
-    "worked_solution": "Oz cùng phương pháp tuyến mặt sàn.",
+    "stem": "Thang máy đi theo phương Oz, sàn phẳng có phương trình z=2. Tính góc giữa đường chuyển động và sàn.",
+    "answer_key": "90°.",
+    "worked_solution": "Phương Oz có chỉ phương \\((0;0;1)\\), cùng phương với pháp tuyến sàn. Vì vậy đường chuyển động vuông góc sàn.",
     "skill_ids": [
       "G12-CHV-B16-O04"
     ],
@@ -1730,9 +1730,9 @@
   {
     "item_id": "THPT-G12-B16-C05",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Đường có hướng (1,0,1) so với nền ngang?",
-    "answer_key": "45°",
-    "worked_solution": "Độ cao1 trên độ dài√2.",
+    "stem": "Đường có chỉ phương \\((1;0;1)\\) tạo góc bao nhiêu với nền ngang z=0?",
+    "answer_key": "45°.",
+    "worked_solution": "Độ dài chỉ phương là \\(\\sqrt2\\), thành phần theo pháp tuyến đơn vị của nền bằng 1. \\(\\sin\\theta=\\frac1{\\sqrt2}\\), nên góc 45°.",
     "skill_ids": [
       "G12-CHV-B16-O05"
     ],
@@ -1762,9 +1762,9 @@
   {
     "item_id": "THPT-G12-B16-P05",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Pháp tuyến mái n=(0,3,4); mặt đất n0=(0,0,1). Góc hai mặt?",
-    "answer_key": "arccos(4/5) ≈36.87°",
-    "worked_solution": "Cos góc giữa pháp tuyến =4/5.",
+    "stem": "Mái có pháp tuyến \\((0;3;4)\\), mặt đất có pháp tuyến \\((0;0;1)\\). Tính góc giữa hai mặt, làm tròn đến hai chữ số thập phân theo độ.",
+    "answer_key": "\\(\\arccos\\frac45\\approx36{,}87^\\circ\\).",
+    "worked_solution": "Hai độ dài là 5 và 1, tích vô hướng bằng 4. Công thức góc hai mặt cho \\(\\cos\\theta=\\frac{|4|}{5}=\\frac45\\). Góc nhọn xấp xỉ 36,87°.",
     "skill_ids": [
       "G12-CHV-B16-O05"
     ],
@@ -1794,9 +1794,9 @@
   {
     "item_id": "THPT-G12-B16-A05",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Mái phẳng có phương trình 3y+4z−12=0, nền z=0. Tính độ nghiêng của mái so với nền và giải thích vì sao hằng số −12 không ảnh hưởng đến góc.",
-    "answer_key": "arccos(4/5)≈36,87°.",
-    "worked_solution": "Pháp tuyến mái n=(0;3;4), pháp tuyến nền n₀=(0;0;1). Cos góc giữa hai mặt là |4|/(5·1)=4/5; dùng máy ở chế độ DEG, θ≈36,87°. Hằng số −12 chỉ xác định vị trí mặt, không đổi phương pháp tuyến.",
+    "stem": "Mái phẳng \\(3y+4z-12=0\\), nền z=0. Tính độ nghiêng của mái, làm tròn hai chữ số thập phân theo độ; giải thích vai trò của -12.",
+    "answer_key": "\\(\\arccos\\frac45\\approx36{,}87^\\circ\\).",
+    "worked_solution": "Pháp tuyến mái \\((0;3;4)\\), nền \\((0;0;1)\\). \\(\\cos\\theta=\\frac{|4|}{5\\cdot1}=\\frac45\\) nên góc khoảng 36,87°. Hằng số -12 tịnh tiến vị trí mặt nhưng không đổi pháp tuyến hay góc nghiêng.",
     "skill_ids": [
       "G12-CHV-B16-O05"
     ],
@@ -1826,9 +1826,9 @@
   {
     "item_id": "THPT-G12-B17-C01",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Tâm O, bán kính2, phương trình?",
-    "answer_key": "x²+y²+z²=4",
-    "worked_solution": "M cách O đúng2 nên OM²=4.",
+    "stem": "Viết phương trình mặt cầu tâm O, bán kính 2.",
+    "answer_key": "\\(x^2+y^2+z^2=4\\).",
+    "worked_solution": "M thuộc mặt cầu khi và chỉ khi OM=2. Bình phương công thức khoảng cách từ O được \\(x^2+y^2+z^2=2^2=4\\).",
     "skill_ids": [
       "G12-CHV-B17-O01"
     ],
@@ -1858,9 +1858,9 @@
   {
     "item_id": "THPT-G12-B17-P01",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "C(2,0,-1),R=3. Viết phương trình.",
-    "answer_key": "(x−2)²+y²+(z+1)²=9",
-    "worked_solution": "Trừ đúng tọa độ tâm, R²=9.",
+    "stem": "Viết phương trình mặt cầu tâm \\(C(2;0;-1)\\), bán kính 3.",
+    "answer_key": "\\((x-2)^2+y^2+(z+1)^2=9\\).",
+    "worked_solution": "Dùng điều kiện CM=3 và bình phương khoảng cách. Trừ từng tọa độ của tâm: \\(z-(-1)=z+1\\); vế phải là \\(3^2=9\\).",
     "skill_ids": [
       "G12-CHV-B17-O01"
     ],
@@ -1890,9 +1890,9 @@
   {
     "item_id": "THPT-G12-B17-A01",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Bộ phát sóng tâm (0,0,5), bán kính 10m. Biên phủ 3D?",
-    "answer_key": "x²+y²+(z−5)²=100",
-    "worked_solution": "Mặt cầu bán kính10m quanh tâm; vùng phủ là bất đẳng thức ≤100 chứ không phải phương trình bề mặt.",
+    "stem": "Bộ phát sóng có tâm \\((0;0;5)\\), bán kính phủ 10 m trong mô hình đẳng hướng. Tọa độ tính bằng mét. Viết phương trình bề mặt biên của vùng phủ.",
+    "answer_key": "\\(x^2+y^2+(z-5)^2=100\\).",
+    "worked_solution": "Điểm trên biên cách tâm đúng 10 m, nên bình phương khoảng cách bằng 100. Vùng phủ đầy đủ là khối cầu với vế trái nhỏ hơn hoặc bằng 100, khác với bề mặt biên.",
     "skill_ids": [
       "G12-CHV-B17-O01"
     ],
@@ -1922,9 +1922,9 @@
   {
     "item_id": "THPT-G12-B17-C02",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "x²+y²+z²−2x=0 có tâm và bán kính?",
-    "answer_key": "C(1,0,0), R=1",
-    "worked_solution": "(x−1)²+y²+z²=1.",
+    "stem": "Tìm tâm và bán kính của mặt cầu \\(x^2+y^2+z^2-2x=0\\).",
+    "answer_key": "\\(C(1;0;0),\\ R=1\\).",
+    "worked_solution": "Hoàn thành bình phương: \\(x^2-2x=(x-1)^2-1\\). Suy ra \\((x-1)^2+y^2+z^2=1\\). Đọc tâm và lấy căn dương của vế phải.",
     "skill_ids": [
       "G12-CHV-B17-O02"
     ],
@@ -1954,9 +1954,9 @@
   {
     "item_id": "THPT-G12-B17-P02",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "x²+y²+z²+2x−4y+6z+5=0 có tâm, R?",
-    "answer_key": "C(-1,2,-3), R=3",
-    "worked_solution": "Hoàn chỉnh: (x+1)²+(y−2)²+(z+3)²=1+4+9−5=9.",
+    "stem": "Tìm tâm và bán kính của mặt cầu \\(x^2+y^2+z^2+2x-4y+6z+5=0\\).",
+    "answer_key": "\\(C(-1;2;-3),\\ R=3\\).",
+    "worked_solution": "Hoàn thành bình phương từng biến: \\((x+1)^2+(y-2)^2+(z+3)^2=1+4+9-5=9\\). Vế phải dương, nên là mặt cầu bán kính 3 với tâm đã nêu.",
     "skill_ids": [
       "G12-CHV-B17-O02"
     ],
@@ -1986,9 +1986,9 @@
   {
     "item_id": "THPT-G12-B17-A02",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "x²+y²+z²+4=0 có là mặt cầu thực?",
-    "answer_key": "Không",
-    "worked_solution": "Tổng ba bình phương ≥0 nên không thể bằng −4; R²<0.",
+    "stem": "Phương trình \\(x^2+y^2+z^2+4=0\\) có xác định một mặt cầu thực không?",
+    "answer_key": "Không.",
+    "worked_solution": "Chuyển vế được tổng ba bình phương bằng -4, bất khả thi vì tổng này không âm. Không có điểm thực nào thỏa, nên không xác định mặt cầu.",
     "skill_ids": [
       "G12-CHV-B17-O02"
     ],
@@ -2018,9 +2018,9 @@
   {
     "item_id": "THPT-G12-B17-C03",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "C=O,R=3,P(1,1,1). Vị trí?",
-    "answer_key": "Trong khối cầu",
-    "worked_solution": "OP²=3<9.",
+    "stem": "Khối cầu tâm O, bán kính 3. Điểm \\(P(1;1;1)\\) ở trong, trên biên hay ngoài khối cầu?",
+    "answer_key": "Trong khối cầu.",
+    "worked_solution": "\\(OP^2=1+1+1=3<9=R^2\\). Vì khoảng cách từ P đến tâm nhỏ hơn bán kính, P ở phía trong, không nằm trên biên.",
     "skill_ids": [
       "G12-CHV-B17-O03"
     ],
@@ -2050,9 +2050,9 @@
   {
     "item_id": "THPT-G12-B17-P03",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "C(1,0,0),R=2,P(4,0,0). Vị trí?",
-    "answer_key": "Ngoài khối cầu",
-    "worked_solution": "CP²=(4−1)²=9>4.",
+    "stem": "Khối cầu tâm \\(C(1;0;0)\\), bán kính 2. Điểm \\(P(4;0;0)\\) ở vị trí nào so với khối cầu?",
+    "answer_key": "Ngoài khối cầu.",
+    "worked_solution": "\\(CP=|4-1|=3>2\\). Tương đương \\(CP^2=9>R^2=4\\), nên P nằm ngoài.",
     "skill_ids": [
       "G12-CHV-B17-O03"
     ],
@@ -2082,9 +2082,9 @@
   {
     "item_id": "THPT-G12-B17-A03",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Mặt cầu tâm (0;0;3), R=5 m cắt nền z=0 theo đường tròn bán kính bao nhiêu? Tọa độ tính bằng mét.",
-    "answer_key": "4m",
-    "worked_solution": "Khoảng cách từ tâm đến nền z=0 bằng 3 m, nhỏ hơn R=5 m. Tâm giao tuyến là hình chiếu (0;0;0), bán kính r=√(25−9)=4 m.",
+    "stem": "Mặt cầu tâm \\((0;0;3)\\), bán kính 5 m, cắt nền z=0. Tọa độ tính bằng mét. Tính bán kính đường tròn giao tuyến.",
+    "answer_key": "4 m.",
+    "worked_solution": "Hình chiếu của tâm xuống nền là \\((0;0;0)\\), khoảng cách 3 m nhỏ hơn 5 m. Dùng Pitago, bán kính giao tuyến là \\(\\sqrt{5^2-3^2}=4\\) m.",
     "skill_ids": [
       "G12-CHV-B17-O05"
     ],
@@ -2114,9 +2114,9 @@
   {
     "item_id": "THPT-G12-B17-C04",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Cho mặt cầu đường kính AB, A(0;0;0), B(2;0;0). Viết phương trình mặt cầu.",
-    "answer_key": "(x−1)²+y²+z²=1",
-    "worked_solution": "Tâm C là trung điểm AB, C(1;0;0); AB=2 nên R=1. Phương trình (x−1)²+y²+z²=1.",
+    "stem": "Viết phương trình mặt cầu đường kính AB với \\(A(0;0;0),B(2;0;0)\\).",
+    "answer_key": "\\((x-1)^2+y^2+z^2=1\\).",
+    "worked_solution": "Tâm là trung điểm AB, tọa độ \\((1;0;0)\\). Độ dài AB=2 nên bán kính bằng 1, không phải 2. Thay tâm và bán kính vào phương trình.",
     "skill_ids": [
       "G12-CHV-B17-O04"
     ],
@@ -2146,9 +2146,9 @@
   {
     "item_id": "THPT-G12-B17-P04",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Cho mặt cầu đường kính AB, A(1;1;1), B(3;1;1). Viết phương trình mặt cầu.",
-    "answer_key": "(x−2)²+(y−1)²+(z−1)²=1",
-    "worked_solution": "Tâm C là trung điểm AB, C(2;1;1); AB=2 nên R=1. Phương trình (x−2)²+(y−1)²+(z−1)²=1.",
+    "stem": "Viết phương trình mặt cầu đường kính AB với \\(A(1;1;1),B(3;1;1)\\).",
+    "answer_key": "\\((x-2)^2+(y-1)^2+(z-1)^2=1\\).",
+    "worked_solution": "Trung điểm AB là \\((2;1;1)\\). Độ dài AB=2, do đó R=1. Phương trình nhận được bằng cách lấy bình phương khoảng cách tới tâm bằng 1.",
     "skill_ids": [
       "G12-CHV-B17-O04"
     ],
@@ -2178,9 +2178,9 @@
   {
     "item_id": "THPT-G12-B17-A04",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Cáp đối diện A(0,0,0),B(0,6,8). Tâm và bán kính mặt cầu đường kính AB?",
-    "answer_key": "C(0,3,4), R=5",
-    "worked_solution": "AB=10, trung điểm (0,3,4), R=5.",
+    "stem": "Hai đầu mút đường kính của mặt cầu là \\(A(0;0;0),B(0;6;8)\\). Tìm tâm và bán kính.",
+    "answer_key": "\\(C(0;3;4),\\ R=5\\).",
+    "worked_solution": "Tâm là trung điểm AB: \\((0;3;4)\\). Độ dài đường kính \\(AB=\\sqrt{6^2+8^2}=10\\). Bán kính bằng nửa đường kính, tức 5.",
     "skill_ids": [
       "G12-CHV-B17-O04"
     ],
@@ -2210,9 +2210,9 @@
   {
     "item_id": "THPT-G12-B17-C05",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "C=O, R=3, mặt z=3 phân loại?",
-    "answer_key": "Tiếp xúc",
-    "worked_solution": "h=3=R.",
+    "stem": "Xét vị trí tương đối của mặt cầu tâm O, R=3, và mặt phẳng z=3.",
+    "answer_key": "Tiếp xúc tại \\((0;0;3)\\).",
+    "worked_solution": "Khoảng cách tâm đến mặt phẳng bằng 3, bằng R. Chỉ hình chiếu vuông góc của tâm lên mặt phẳng nằm trên mặt cầu; hai mặt tiếp xúc tại điểm đó.",
     "skill_ids": [
       "G12-CHV-B17-O05"
     ],
@@ -2242,9 +2242,9 @@
   {
     "item_id": "THPT-G12-B17-P05",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "C(0,0,1),R=5, mặt z=0 cắt theo vòng tròn bán kính?",
-    "answer_key": "2√6",
-    "worked_solution": "h=1<5, r=√(25−1)=√24=2√6.",
+    "stem": "Mặt cầu tâm \\(C(0;0;1)\\), R=5, cắt mặt phẳng z=0. Tính bán kính đường tròn giao tuyến.",
+    "answer_key": "\\(2\\sqrt6\\).",
+    "worked_solution": "Khoảng cách tâm đến mặt phẳng là 1, nhỏ hơn R. \\(r=\\sqrt{5^2-1^2}=\\sqrt{24}=2\\sqrt6\\).",
     "skill_ids": [
       "G12-CHV-B17-O05"
     ],
@@ -2274,9 +2274,9 @@
   {
     "item_id": "THPT-G12-B17-A05",
     "content_version": "G12-SGK-CHV-B14-B17-R01",
-    "stem": "Vùng phát sóng tâm (0,0,10),R=6m có chạm nền z=0 không?",
-    "answer_key": "Không",
-    "worked_solution": "h=10>R=6, không có điểm chung.",
+    "stem": "Vùng phát sóng lý tưởng là khối cầu tâm \\((0;0;10)\\), bán kính 6 m. Tọa độ tính bằng mét. Vùng phủ có chạm nền z=0 không?",
+    "answer_key": "Không.",
+    "worked_solution": "Khoảng cách nhỏ nhất từ tâm đến nền là 10 m, lớn hơn R=6 m. Vì mọi điểm nền cách tâm ít nhất 10 m, không điểm nào thuộc khối cầu.",
     "skill_ids": [
       "G12-CHV-B17-O05"
     ],
