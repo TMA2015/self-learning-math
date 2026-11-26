@@ -17,7 +17,7 @@
     "hints": [
       "Phân biệt thử một giá trị để bác bỏ “mọi” và để chứng minh “tồn tại”."
     ],
-    "remediation": "Nếu gán đúng/sai cho câu chưa gán m, thử m=0 và m=5; phân biệt phản ví dụ với phủ định của mệnh đề. Ôn TOP01-M01, TOP01-M05; luyện THPT-G10-B01-C01.",
+    "remediation": "Nếu gán đúng/sai cho câu chưa gán m, thử \\(m=0\\) và \\(m=5\\): kết quả khác nhau. Một phản ví dụ đủ bác bỏ mệnh đề “mọi”, còn một ví dụ thỏa đủ chứng minh mệnh đề “tồn tại”. Ôn TOP01-M01, TOP01-M05; luyện THPT-G10-B01-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -42,7 +42,7 @@
     "content_version": "TOP01-BANK-CP77-20261126-ADD02",
     "stem": "Với \\(n\\in\\mathbb Z\\), phát biểu “\\(4\\mid n\\iff4\\mid n^2\\)” đúng hay sai? Xác định chiều đúng và nêu phản ví dụ cho chiều sai.",
     "answer_key": "Sai. Chiều \\(4\\mid n\\Rightarrow4\\mid n^2\\) đúng; chiều đảo sai, phản ví dụ \\(n=2\\).",
-    "worked_solution": "Nếu \\(n=4k\\) thì \\(n^2=16k^2\\) chia hết cho 4. Lấy \\(n=2\\): \\(n^2=4\\) chia hết cho 4 nhưng 2 không chia hết cho 4, do đó không có tương đương.",
+    "worked_solution": "Nếu \\(n=4k\\) với \\(k\\in\\mathbb Z\\) thì \\(n^2=16k^2\\) chia hết cho 4. Vậy chiều \\(4\\mid n\\Rightarrow4\\mid n^2\\) đúng. Lấy \\(n=2\\): \\(n^2=4\\) chia hết cho 4 nhưng 2 không chia hết cho 4. Chiều đảo sai, nên mệnh đề tương đương sai.",
     "skill_ids": [
       "G10-B01-EQUIVALENCE"
     ],
@@ -52,9 +52,9 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Viết riêng hai chiều; thử n=2 cho chiều đảo."
+      "Viết riêng hai chiều; thử \\(n=2\\) cho chiều đảo."
     ],
-    "remediation": "Nếu kết luận tương đương chỉ vì một chiều đúng, viết hai mũi tên riêng; tìm số mà n² chia hết 4 nhưng n không chia hết 4. Ôn TOP01-M04; luyện THPT-G10-B01-P04.",
+    "remediation": "Nếu kết luận tương đương chỉ vì một chiều đúng, viết hai chiều riêng; tìm số n mà \\(n^2\\) chia hết cho 4 nhưng n không chia hết cho 4. Ôn TOP01-M04; luyện THPT-G10-B01-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -116,7 +116,7 @@
     "content_version": "TOP01-BANK-CP77-20261126-ADD04",
     "stem": "Cho \\(A=\\{1;2;4;6\\}\\), \\(B=\\{2;3;6;8\\}\\). Tính \\(A\\setminus B\\) và \\(B\\setminus A\\). Có thể kết luận hai hiệu luôn bằng nhau không?",
     "answer_key": "\\(A\\setminus B=\\{1;4\\}\\), \\(B\\setminus A=\\{3;8\\}\\); không luôn bằng nhau.",
-    "worked_solution": "\\(A\\setminus B=\\{1;4\\}\\); \\(B\\setminus A=\\{3;8\\}\\); không.\n\n\nGiữ phần tử nằm trong A nhưng không ở B cho \\(A\\setminus B\\); đổi vai A,B cho \\(B\\setminus A\\). Hai kết quả khác nhau là phản ví dụ cho tính giao hoán.",
+    "worked_solution": "Giữ những phần tử thuộc A nhưng không thuộc B, được \\(A\\setminus B=\\{1;4\\}\\). Đổi vai A và B, được \\(B\\setminus A=\\{3;8\\}\\). Hai kết quả khác nhau là phản ví dụ cho khẳng định hai hiệu luôn bằng nhau.",
     "skill_ids": [
       "G10-B02-DIFFERENCE"
     ],
@@ -153,7 +153,7 @@
     "content_version": "TOP01-BANK-CP77-20261126-ADD05",
     "stem": "Cho \\(U=\\{-3;-2;-1;0;1;2;3\\}\\), \\(A=\\{x\\in U\\mid x^2\\le1\\}\\). Xác định \\(U\\setminus A\\).",
     "answer_key": "\\(A=\\{-1;0;1\\}\\), \\(U\\setminus A=\\{-3;-2;2;3\\}\\).",
-    "worked_solution": "\\(A=\\{-1;0;1\\}\\); \\(U\\setminus A=\\{-3;-2;2;3\\}\\).\n\n\nDo \\(x^2\\le1\\) trên các số nguyên của U đúng khi \\(x\\in\\{-1;0;1\\}\\). Loại chính các phần tử ấy ra khỏi U, giữ bốn số còn lại.",
+    "worked_solution": "Do \\(x^2\\le1\\) trên các số nguyên của U đúng khi \\(x\\in\\{-1;0;1\\}\\), ta có \\(A=\\{-1;0;1\\}\\). Loại chính các phần tử ấy ra khỏi U, giữ bốn số còn lại: \\(U\\setminus A=\\{-3;-2;2;3\\}\\).",
     "skill_ids": [
       "G10-B02-COMPLEMENT"
     ],
