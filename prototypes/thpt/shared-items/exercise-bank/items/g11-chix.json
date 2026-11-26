@@ -187,10 +187,10 @@
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C04",
-    "content_version": "THPT-G11-CHIX-B31-B33-R00",
-    "stem": "Có thể khẳng định $f(x)=1/x$ có đạo hàm trên toàn ℝ không?",
-    "answer_key": "Không, vì f không xác định tại x=0.",
-    "worked_solution": "Đạo hàm không thể tồn tại tại điểm ngoài miền xác định.",
+    "content_version": "THPT-G11-CHIX-B31-B33-R00-CP75-20261126",
+    "stem": "Có thể khẳng định \\(f(x)=\\frac1x\\) có đạo hàm trên toàn \\(\\mathbb R\\) không?",
+    "answer_key": "Không; hàm có đạo hàm trên \\(\\mathbb R\\setminus\\{0\\}\\) với \\(f'(x)=-\\frac1{x^2}\\).",
+    "worked_solution": "Không, vì \\(f(x)=\\frac1x\\) không xác định tại 0. Với \\(x\\ne0\\), chọn h đủ nhỏ sao cho \\(h\\ne0\\) và \\(x+h\\ne0\\). Khi đó \\(\\frac{f(x+h)-f(x)}h=-\\frac1{x(x+h)}\\to-\\frac1{x^2}\\) khi \\(h\\to0\\). Vậy hàm có đạo hàm trên \\(\\mathbb R\\setminus\\{0\\}\\).",
     "skill_ids": [
       "G11-B31-DIFFERENTIABILITY"
     ],
@@ -211,6 +211,13 @@
         "path": "docs/assets/javascripts/thpt-g11-chix-b31-b33-source-locked-formative-r00.js",
         "blob": "eda6fdf74345d93cd23e77008d2dcc9a9f6c7111",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "previous_content_version": "THPT-G11-CHIX-B31-B33-R00",
+      "revision_scope": "CP75_SAME_TASK_SOURCE_EQUIVALENT_REUSE_PED_CLARIFICATION",
+      "additional_public_knowledge_source": {
+        "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+        "heading_id": "TOP09-M04",
+        "line": 142
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
@@ -900,10 +907,10 @@
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P05",
-    "content_version": "THPT-G11-CHIX-B31-B33-R00",
-    "stem": "$f(x)=x/(x+1)$, tính đạo hàm và miền.",
-    "answer_key": "$1/(x+1)^2$ với x≠-1.",
-    "worked_solution": "Tử (x+1)-x=1, mẫu không bằng 0.",
+    "content_version": "THPT-G11-CHIX-B31-B33-R00-CP75-20261126",
+    "stem": "Cho \\(f(x)=\\frac{x}{x+1}\\). Tính đạo hàm và nêu miền xác định.",
+    "answer_key": "\\(f'(x)=\\frac1{(x+1)^2}\\), \\(x\\ne-1\\).",
+    "worked_solution": "Miền xác định \\(x\\ne-1\\). Áp dụng quy tắc thương: \\(f'(x)=\\frac{1\\cdot(x+1)-x\\cdot1}{(x+1)^2}=\\frac1{(x+1)^2}\\). Không nhận \\(x=-1\\) vì mẫu của hàm gốc bằng 0.",
     "skill_ids": [
       "G11-B32-QUOTIENT"
     ],
@@ -924,6 +931,13 @@
         "path": "docs/assets/javascripts/thpt-g11-chix-b31-b33-source-locked-formative-r00.js",
         "blob": "eda6fdf74345d93cd23e77008d2dcc9a9f6c7111",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "previous_content_version": "THPT-G11-CHIX-B31-B33-R00",
+      "revision_scope": "CP75_SAME_TASK_SOURCE_EQUIVALENT_REUSE_PED_CLARIFICATION",
+      "additional_public_knowledge_source": {
+        "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+        "heading_id": "TOP09-M15",
+        "line": 515
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
@@ -1737,10 +1751,10 @@
   },
   {
     "item_id": "THPT-G11-CHIX-B33-C04",
-    "content_version": "THPT-G11-CHIX-B31-B33-R00",
-    "stem": "$s(t)=5t^2$ m, gia tốc là?",
-    "answer_key": "$s''=10$ m/s².",
-    "worked_solution": "$v=s'=10t$ m/s, gia tốc là đạo hàm của v.",
+    "content_version": "THPT-G11-CHIX-B31-B33-R00-CP75-20261126",
+    "stem": "Vật chuyển động trên trục có tọa độ \\(s(t)=5t^2\\) (m), t tính bằng giây. Tính gia tốc \\(a(t)\\).",
+    "answer_key": "\\(a(t)=10\\) m/s².",
+    "worked_solution": "Với tọa độ tính bằng m và t tính bằng giây, \\(v(t)=s'(t)=10t\\) m/s. Lấy đạo hàm lần hai: \\(a(t)=v'(t)=10\\) m/s².",
     "skill_ids": [
       "G11-B33-ACCELERATION"
     ],
@@ -1761,6 +1775,13 @@
         "path": "docs/assets/javascripts/thpt-g11-chix-b31-b33-source-locked-formative-r00.js",
         "blob": "eda6fdf74345d93cd23e77008d2dcc9a9f6c7111",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "previous_content_version": "THPT-G11-CHIX-B31-B33-R00",
+      "revision_scope": "CP75_SAME_TASK_SOURCE_EQUIVALENT_REUSE_PED_CLARIFICATION",
+      "additional_public_knowledge_source": {
+        "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+        "heading_id": "TOP09-M29",
+        "line": 983
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
@@ -1799,10 +1820,10 @@
   },
   {
     "item_id": "THPT-G11-CHIX-B33-C05",
-    "content_version": "THPT-G11-CHIX-B31-B33-R00",
-    "stem": "Nếu v(t0)<0 và a(t0)<0, tốc độ |v| tại t0 tăng hay giảm?",
-    "answer_key": "Đang tăng cục bộ (nếu v,a liên tục thích hợp).",
-    "worked_solution": "Hai dấu cùng nhau làm độ lớn vận tốc tăng theo chiều âm.",
+    "content_version": "THPT-G11-CHIX-B31-B33-R00-CP75-20261126",
+    "stem": "Nếu tại thời điểm \\(t_0\\), \\(v(t_0)<0\\) và \\(a(t_0)=v'(t_0)<0\\), tốc độ \\(|v|\\) tại \\(t_0\\) đang tăng hay giảm?",
+    "answer_key": "Tốc độ đang tăng tại thời điểm xét.",
+    "worked_solution": "Tại \\(t_0\\), vì \\(v(t_0)<0\\) và v khả vi tại \\(t_0\\) nên v liên tục tại đó và vẫn âm trong lân cận đủ nhỏ. Khi đó tốc độ \\(|v|=-v\\), nên đạo hàm tốc độ tại \\(t_0\\) bằng \\(-a(t_0)>0\\). Ví dụ v = −3 m/s, a = −2 m/s² thì tốc độ đang tăng với tốc độ biến thiên 2 m/s².",
     "skill_ids": [
       "G11-B33-SIGN_INTERPRET"
     ],
@@ -1823,6 +1844,13 @@
         "path": "docs/assets/javascripts/thpt-g11-chix-b31-b33-source-locked-formative-r00.js",
         "blob": "eda6fdf74345d93cd23e77008d2dcc9a9f6c7111",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "previous_content_version": "THPT-G11-CHIX-B31-B33-R00",
+      "revision_scope": "CP75_SAME_TASK_SOURCE_EQUIVALENT_REUSE_PED_CLARIFICATION",
+      "additional_public_knowledge_source": {
+        "blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+        "heading_id": "TOP09-M30",
+        "line": 1013
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
