@@ -1,13 +1,23 @@
+<!-- CP25_CURRENT_TARGETED_SGK_CHV -->
+## Current affected Q18 author self-verification
+
+CP25, 26/11/2026, owner continuation after explicit CP24 B15-W05 correction proposal. Exact source b748a7c5af4074b39ef8a6a756a7be7839b9cd83, source commit 9db462adb566c7828efb64466d5773408ef161d3. Three lines corrected: B15-O05 rule and example check, B15-W05 explanation; two spatial lines with nonzero orthogonal direction vectors are perpendicular even if skew. B143 counterexample checked dot=0 and differing z; W05 dot=0 and w=3u checked. 96/96 canonical ID/stem/key/rubric lines unchanged; original independent receipt pertains to earlier snapshot. CĐ18 #855 synchronized exact same canonical source (CP25). Targeted author self-verification, no new independent NotebookLM/RELEASE PASS; SBT p25 historical source gap remains. B17-C04/P04 implicit diameter, B14-W07 surface/solid wording flagged for future scoped bank audit #1090, not edited. No merge/deploy or assessment/runtime/student data edits.
+
+Current source `b748a7c5af4074b39ef8a6a756a7be7839b9cd83`, previous source `ad4165de0a2c3442b50d7f3d0019a99b5bbdef39`.
+
+---
+Historical narrative below refers to its original snapshot; CP25 current source/evidence pointers supersede old claims for B15-O05/W05.
+
 # SGK Toán 12 ChV B14–B17 · Q18 Delta B giao diện lời giải tự luận (21/11/2026)
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
-DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_TARGETED_B15_O05_W05; PRIOR_DELTA_B_HISTORICAL
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED_TARGETED_ONLY
 PACKET_ID: G12-SGK-CHV-B14-B17-R01
 SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
-ACADEMIC_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39
-SOURCE_COMMIT: 7d9bf367f7816b8384eb95bb1c36e5b79540a794
+ACADEMIC_SOURCE_BLOB: b748a7c5af4074b39ef8a6a756a7be7839b9cd83
+SOURCE_COMMIT: 9db462adb566c7828efb64466d5773408ef161d3
 PREVIOUS_IMMUTABLE_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
 INDEPENDENT_HISTORIC_R01_COMPOSITE_RECEIPT_PATH: prototypes/thpt/review-packets/G12_CHV_R01_ACADEMIC_PED_COMPOSITE_SOURCE_RECEIPT_20261103.md
 INDEPENDENT_HISTORIC_R01_COMPOSITE_RECEIPT_BLOB: a07070119259bd0133535fc3250d008cd78d8195
