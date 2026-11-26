@@ -20218,6 +20218,56 @@
       ],
       "remaining": "G10 ChVII next; separately FirstTry/public selfcheck/Written and depth/owner checks; B16 graph drawing instructions reviewed but no rendering QA.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp97": {
+      "scope": "G10 ChVII B19–B22: 32 canonical public formative C/P records; 25 separate FirstTry untouched",
+      "baseline_commit": "28938559ecadabb71b9b9c7fe59e4eaf9b8af84c",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "source_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "current_main_and_import_blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "ids_and_order": 32,
+        "decision": "Preserve stronger CP54/later candidate variants. B22-C01 remains optional specialized Practice only; B22-P01 shared Core/Practice single canonical ID."
+      },
+      "item_shard": {
+        "path": "items/g10-chvii.json",
+        "before": "24f1abf72455abe7cf2c8e69e97fed683f3eb623",
+        "after": "b964cd2a06887166504cfe76c39a03e10a4f70b7",
+        "commits": [
+          "d0002fa1bcc7921d7ec98e7c4ce439972635cc7e",
+          "3e71e414400a9b2df10c2b8880c6d06eba706669"
+        ]
+      },
+      "checks": {
+        "formative_reviewed": 32,
+        "formative_changed": 32,
+        "fields_changed": {
+          "stem": 5,
+          "answer_key": 8,
+          "worked_solution": 32,
+          "hints": 8,
+          "remediation": 14
+        },
+        "first_try_unchanged": 25,
+        "sgk_placements": 33,
+        "sgk_placement_blob": "240d485678b3182add1fb3acd7035e6fc9994e08",
+        "cd14_placements": 32,
+        "cd14_placement_blob": "05f79f4be661eff787ff703ebbcc0d8d435e9805",
+        "metadata_and_interaction_unchanged": true,
+        "answer_meanings_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "targeted_raw_math_scan_residual": 0,
+        "arithmetic_and_example_checks_passed": 32
+      },
+      "findings": [
+        "B19 valid scalar multiples of direction/normal vectors; point-line test and restricted temperature model.",
+        "B20 normal-vector distinction, coincident vs parallel, intersection, nonnegative distance, acute line angle and both parameter solutions.",
+        "B21 derive circle and tangent from locus and positive radius, unique circle through noncollinear points, correct Ox condition y=0 (not Oy=0).",
+        "B22 preserve optional eccentricity placement, explain ellipse/hyperbola parameter conventions and parabola y²=2px; verify intersection signs and focus/directrix equality. B22 lesson consulted for convention; no fresh primary SGK/SBT PDF or full Academic/PED/rendering verdict."
+      ],
+      "remaining": "G10 ChVIII next; separate FirstTry/public selfcheck/Written, source-owner/depth and renderer review.",
+      "release_authorization": false
     }
   }
 }
