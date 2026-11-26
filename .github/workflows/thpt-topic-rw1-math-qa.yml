@@ -149,9 +149,13 @@ jobs:
             python scripts/test-thpt-topic-w4-source-locked.py
             python scripts/test-thpt-topic-w4-shared-owner-delta.py --source-only
             node scripts/assemble-thpt-site.cjs
-            python scripts/test-thpt-topic-rw1-math-browser.py --topic-w4-refresh
-            python scripts/test-thpt-topic-w4-golden-browser.py --w4-refresh
-            python scripts/test-thpt-topic-w4-shared-owner-delta.py
+            # Collect all affected independent browser gates even if one fails.
+            # Preserve fail-closed final result; never skip a gate after a defect.
+            status=0
+            python scripts/test-thpt-topic-w4-shared-owner-delta.py || status=1
+            python scripts/test-thpt-topic-rw1-math-browser.py --topic-w4-refresh || status=1
+            python scripts/test-thpt-topic-w4-golden-browser.py --w4-refresh || status=1
+            exit "$status"
           elif [[ "${{ steps.impact.outputs.reason }}" == "OWNER_TOPIC_W3B_REFRESH" ]]; then
             git fetch --no-tags origin 2a39bf158d4a645888af00904095350020cc90df
             python scripts/test-thpt-topic-w3-source-locked.py --w3b

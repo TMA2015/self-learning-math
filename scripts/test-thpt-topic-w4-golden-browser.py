@@ -363,10 +363,13 @@ with sync_playwright() as pw:
                                 assert_math(page,".topic-w1-question-body .thpt-r4-formative-reveal",sol,(topic,engine,width,item,"Practice reopen"))
                         # Signed CĐ18 SVG manifest has 10 originals in TWO pages:
                         # 9 Knowledge figures + radar timeline only in Written Bài 202.
-                        if topic == "18" and engine == "chromium" and width == 820 and card.get_attribute("data-thpt-canonical-item") == "THPT-TOP18-W07":
+                        if topic == "18" and card.get_attribute("data-thpt-canonical-item") == "THPT-TOP18-W07":
                             radar = details.locator('img[src*="FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg"]')
                             expect(radar).to_have_count(1)
+                            expect(radar).to_be_visible()
+                            assert radar.get_attribute("alt") and "Radar tâm O" in radar.get_attribute("alt")
                             assert page.request.get(radar.first.evaluate("(e)=>e.src")).ok, (topic, "Bài 202 radar SVG failed to load")
+                            assert radar.evaluate("(e)=>e.complete && e.naturalWidth>0"), (topic,engine,width,"radar SVG not rendered")
                     total_seen += group_count
                     modal.locator(".topic-w1-close").click()
                     expect(modal).to_be_hidden()
