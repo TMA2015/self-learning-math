@@ -385,6 +385,10 @@ Khi biểu diễn khoảng trên trục số, ta đánh dấu các đầu mút h
 
 Xét \(X=(-\infty;3]\) và \(Y=(1;+\infty)\). Muốn thuộc **giao**, số phải vừa lớn hơn 1 vừa không vượt 3, nên \(X\cap Y=(1;3]\). Muốn thuộc **hợp**, số chỉ cần thỏa ít nhất một điều kiện: mọi số thực đều nằm ở X hoặc Y, vậy \(X\cup Y=\mathbb R\). Thử riêng \(x=1\): thuộc \(X\) nhưng không thuộc \(Y\), nên bị loại khỏi giao. Thử \(x=3\): thuộc cả \(X\) và \(Y\), nên được nhận trong giao. Trên trục số, phần tô chung nằm giữa 1 và 3, chấm rỗng ở 1 và chấm đặc ở 3; phần tô của ít nhất một tập phủ kín trục số.
 
+![Giao và hợp hai khoảng, chấm rỗng tại 1 và chấm đặc tại 3 ở phần giao](../../visuals/THPT_TOPIC01_INTERVAL_INTERSECTION_UNION.svg)
+
+*Đọc hình:* So hai hàng đầu theo đường dóng tại 1 và 3. Điểm 1 chỉ thuộc X, điểm 3 thuộc cả hai. Hàng giao nhận những điểm được tô ở cả hai hàng đầu; hàng hợp nhận các điểm được tô ít nhất một lần.
+
 **Ví dụ**
 
 **Đề bài.** Cho \(X=(-2;1]\), \(Y=[1;4)\). Tìm giao và hợp.
@@ -549,7 +553,7 @@ Tự luận: Xét các số nguyên n. (a) Chứng minh “\(12\mid n\Rightarrow
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-(a) \(n=12k=4\cdot3k\). (b) “\(4\mid n\Rightarrow12\mid n\)” là sai, phản ví dụ \(n=4\). (c) “Tồn tại n nguyên chia hết cho 4 nhưng không chia hết cho 12”, đúng, ví dụ \(n=4\).
+(a) Vì \(12\mid n\), tồn tại \(k\in\mathbb Z\) sao cho \(n=12k=4(3k)\), nên \(4\mid n\). (b) “\(4\mid n\Rightarrow12\mid n\)” là sai, phản ví dụ \(n=4\). (c) “Tồn tại n nguyên chia hết cho 4 nhưng không chia hết cho 12”, đúng, ví dụ \(n=4\).
 
 **Các bước tự đối chiếu:** Rubric 7 điểm: (a) biểu diễn \(n=12k\) 2đ, suy ra \(n=4(3k)\) 1đ; (b) phát biểu đảo 1đ, phản ví dụ \(n=4\) 1đ; (c) đổi đúng \(\forall\) thành \(\exists\) 1đ, nêu đồng thời chia hết 4 và không chia hết 12 1đ.
 
