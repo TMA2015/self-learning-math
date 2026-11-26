@@ -1,3 +1,13 @@
+<!-- CP25_CURRENT_TARGETED_SGK_CHV -->
+## Current source-only handoff
+
+CP25, 26/11/2026, owner continuation after explicit CP24 B15-W05 correction proposal. Exact source b748a7c5af4074b39ef8a6a756a7be7839b9cd83, source commit 9db462adb566c7828efb64466d5773408ef161d3. Three lines corrected: B15-O05 rule and example check, B15-W05 explanation; two spatial lines with nonzero orthogonal direction vectors are perpendicular even if skew. B143 counterexample checked dot=0 and differing z; W05 dot=0 and w=3u checked. 96/96 canonical ID/stem/key/rubric lines unchanged; original independent receipt pertains to earlier snapshot. CĐ18 #855 synchronized exact same canonical source (CP25). Targeted author self-verification, no new independent NotebookLM/RELEASE PASS; SBT p25 historical source gap remains. B17-C04/P04 implicit diameter, B14-W07 surface/solid wording flagged for future scoped bank audit #1090, not edited. No merge/deploy or assessment/runtime/student data edits.
+
+Current Q18 `7a5f3a377c090a7f3abf5a5e9502ac58c191d176`, V2 `405adc8e5872af843e05a7987ab4af8c49fafbcf`.
+
+---
+Historical narrative below refers to its original snapshot; CP25 current source/evidence pointers supersede old claims for B15-O05/W05.
+
 <!-- OWNER_20261121_G12_SGK_CHV_24_WRITTEN_STAFF_NOTES_READY -->
 **CURRENT SOURCE/EVIDENCE AFTER OWNER DELTA_B:** SGK ChV 24 original source-owned Written items `ad4165de0a2c3442b50d7f3d0019a99b5bbdef39`; exactly 24 irrelevant student-visible Written/Mastery administrative notes removed, all 24 mathematical rubrics, questions, answers, solutions preserved. Q16 rule kept in a single hidden metadata note in source and full historic independent R01 receipt `a07070119259bd0133535fc3250d008cd78d8195` **unchanged immutable**; current targeted author Q18 Delta B receipt `b81c2cfdda530897740c19c92cbe7e99fd0631f2` on matching current source. Source version original `11eb2834cfdb4a24685157f84666c2bb0767970a` remains historical, SBT B14 p25 source gap explicitly remains HOLD for page provenance. Current V2 `da8f8e060fe21d14a2560b854063130d2d7e2e38` / ready `current`. `AUTHOR_SELF_VERIFIED_TARGETED_DELTA_B` only, NOT new independent full Reviewer PASS, no website/merge/deploy.
 ---
@@ -10,13 +20,13 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 7d9bf367f7816b8384eb95bb1c36e5b79540a794
+SOURCE_COMMIT: 9db462adb566c7828efb64466d5773408ef161d3
 AUTHOR_PR: 725
 CURRENT_PR: #725 Draft AUTHORING, source-locked no website release
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
-ACADEMIC_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39
+ACADEMIC_SOURCE_BLOB: b748a7c5af4074b39ef8a6a756a7be7839b9cd83
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_CHV_R01_ACADEMIC_PED_COMPOSITE_SOURCE_RECEIPT_20261103.md
-REVIEW_RECEIPT_BLOB: b81c2cfdda530897740c19c92cbe7e99fd0631f2
+REVIEW_RECEIPT_BLOB: 7a5f3a377c090a7f3abf5a5e9502ac58c191d176
 REVIEW_RECEIPT: prototypes/thpt/review-packets/G12_CHV_R01_ACADEMIC_PED_COMPOSITE_SOURCE_RECEIPT_20261103.md
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/G12-SGK-CHV-B14-B17-R01_HANDOFF_V2_20261103.md
 ACADEMIC_VERDICT: PASS_ON_LOCKED_SNAPSHOT
