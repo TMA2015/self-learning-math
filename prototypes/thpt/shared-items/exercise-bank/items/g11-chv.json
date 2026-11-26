@@ -188,9 +188,9 @@
   {
     "item_id": "THPT-G11-CHV-B15-P04",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Tính lim(n→∞) √(n²+2n)/n với n nguyên dương.",
+    "stem": "Tính \\(\\lim_{n\\to\\infty}\\frac{\\sqrt{n^2+2n}}n\\) với n nguyên dương.",
     "answer_key": "1.",
-    "worked_solution": "Do n>0, chia trong căn cho n²: √(1+2/n)→1; không nhầm √(n²) với |n| cho n âm.",
+    "worked_solution": "Vì \\(n>0\\), ta có \\(\\sqrt{n^2}=|n|=n\\). Do đó \\(\\frac{\\sqrt{n^2+2n}}n=\\sqrt{1+\\frac2n}\\to1\\). Lưu ý: với mọi số thực n, \\(\\sqrt{n^2}=|n|\\); nếu \\(n<0\\) thì \\(|n|=-n\\), không phải n.",
     "skill_ids": [
       "G11-B15-LIMIT_ARITHMETIC"
     ],
