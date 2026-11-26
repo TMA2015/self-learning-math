@@ -16,7 +16,7 @@
     "hints": [
       "Đạo hàm một đa thức bậc hai và một hạng tử bậc nhất để nhận ra hệ số."
     ],
-    "remediation": "Nếu thiếu +C, lấy đạo hàm hai hàm chỉ khác nhau 1; chúng có cùng đạo hàm. Ôn CĐ11 mục 1.1; luyện THPT-G12-B11-P01.",
+    "remediation": "Nếu thiếu hằng số C, lấy đạo hàm hai hàm chỉ khác nhau 1; chúng có cùng đạo hàm. Ôn CĐ11 mục 1.1; luyện THPT-G12-B11-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -43,9 +43,9 @@
     "problem_type_id": "TOP11-INITIAL",
     "difficulty": "BASIC_TO_APPLY",
     "hints": [
-      "Viết họ F=x³+C rồi mới thay x=2 vào F."
+      "Viết họ \\(F(x)=x^3+C\\) rồi mới thay \\(x=2\\) vào F."
     ],
-    "remediation": "Nếu nhầm điều kiện vào F′, kiểm cả F′ và F(2) sau khi tìm C. Ôn CĐ11 mục 1.2; luyện THPT-G12-B11-P02.",
+    "remediation": "Nếu nhầm điều kiện vào đạo hàm, kiểm cả \\(F'(x)\\) và \\(F(2)\\) sau khi tìm C. Ôn CĐ11 mục 1.2; luyện THPT-G12-B11-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -74,7 +74,7 @@
     "hints": [
       "Tách ba hạng tử, tăng số mũ rồi chia số mũ mới."
     ],
-    "remediation": "Nếu mất hạng tử hằng −2, nhớ nguyên hàm của −2 là −2x; đạo hàm ngược từng hạng. Ôn CĐ11 mục 1.3; luyện THPT-G12-B11-P03.",
+    "remediation": "Nếu mất hạng tử hằng \\(-2\\), nhớ một nguyên hàm của nó là \\(-2x\\); đạo hàm ngược từng hạng. Ôn CĐ11 mục 1.3; luyện THPT-G12-B11-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -101,9 +101,9 @@
     "problem_type_id": "TOP11-LOG_ABS",
     "difficulty": "BASIC_TO_APPLY",
     "hints": [
-      "Trên x<0, |x|=−x; dùng điều kiện F(−1)."
+      "Trên \\(x<0\\), \\(|x|=-x\\); dùng điều kiện \\(F(-1)=3\\)."
     ],
-    "remediation": "Nếu viết ln x trên miền âm, thử x=−1: ln x không xác định thực. Dùng ln(−x) và kiểm đạo hàm. Ôn CĐ11 mục 1.4; luyện THPT-G12-B11-P04.",
+    "remediation": "Nếu viết \\(\\ln x\\) trên miền âm, thử \\(x=-1\\): lôgarit không xác định thực. Dùng \\(\\ln(-x)\\) và kiểm đạo hàm. Ôn CĐ11 mục 1.4; luyện THPT-G12-B11-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -130,9 +130,9 @@
     "problem_type_id": "TOP11-EXP",
     "difficulty": "BASIC_TO_APPLY",
     "hints": [
-      "Đạo hàm e^(2x) và 3^x để nhận diện hệ số bù."
+      "Đạo hàm \\(e^{2x}\\) và \\(3^x\\) để nhận diện hệ số bù."
     ],
-    "remediation": "Nếu quên chia ln3 hoặc nhân thừa 2, đạo hàm từng hạng để so với đề. Ôn CĐ11 mục 1.5; luyện THPT-G12-B11-P05.",
+    "remediation": "Nếu quên chia cho \\(\\ln3\\) hoặc nhân thừa 2, đạo hàm từng hạng để so với đề. Ôn CĐ11 mục 1.5; luyện THPT-G12-B11-P05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -161,7 +161,7 @@
     "hints": [
       "Viết hai công thức đạo hàm sin và cos trước khi lấy nguyên hàm."
     ],
-    "remediation": "Nếu sai dấu của sin, đạo hàm +3cos x để kiểm −3sin x. Ôn CĐ11 mục 1.6; luyện THPT-G12-B11-P06.",
+    "remediation": "Nếu sai dấu, đạo hàm \\(3\\cos x\\) để kiểm \\(-3\\sin x\\). Ôn CĐ11 mục 1.6; luyện THPT-G12-B11-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -188,7 +188,7 @@
     "problem_type_id": "TOP11-RECOVERY",
     "difficulty": "BASIC_TO_APPLY",
     "hints": [
-      "Viết s′=v, tích phân và dùng s(0)."
+      "Viết \\(s'(t)=v(t)\\), lấy nguyên hàm và dùng \\(s(0)\\)."
     ],
     "remediation": "Nếu chỉ tính độ dời, cộng lại vị trí đầu; nếu cần quãng đường phải xét dấu v. Ôn CĐ11 mục 1.7; luyện THPT-G12-B11-P07.",
     "rubric": null,
@@ -217,9 +217,9 @@
     "problem_type_id": "TOP11-FTC",
     "difficulty": "UNDERSTAND_TO_APPLY",
     "hints": [
-      "Chọn F sao cho F′=3x²+1, rồi lấy F(2)−F(0)."
+      "Chọn F sao cho \\(F'(x)=3x^2+1\\), rồi lấy \\(F(2)-F(0)\\)."
     ],
-    "remediation": "Nếu cộng +C vào tích phân xác định, viết F(b)+C−[F(a)+C] để thấy C triệt tiêu. Ôn CĐ11 mục 2.1; luyện THPT-G12-B12-P01.",
+    "remediation": "Nếu cộng hằng số C vào tích phân xác định, viết \\([F(b)+C]-[F(a)+C]\\) để thấy C triệt tiêu. Ôn CĐ11 mục 2.1; luyện THPT-G12-B12-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -248,7 +248,7 @@
     "hints": [
       "Hai tích phân cùng cận: gộp hiệu hai hàm dưới dấu tích phân."
     ],
-    "remediation": "Nếu đổi dấu cả hai hạng tử, viết (2x+1)−x trong ngoặc trước khi rút gọn. Ôn CĐ11 mục 2.2; luyện THPT-G12-B12-P02.",
+    "remediation": "Nếu đổi dấu cả hai hạng tử, viết \\((2x+1)-x\\) trong ngoặc trước khi rút gọn. Ôn CĐ11 mục 2.2; luyện THPT-G12-B12-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -306,7 +306,7 @@
     "hints": [
       "Kiểm hàm không âm trên cả đoạn rồi tìm nguyên hàm."
     ],
-    "remediation": "Nếu bỏ phần +1, hình có thêm một dải chữ nhật cao 1; tính đủ cả hai hạng tử. Ôn CĐ11 mục 2.4; luyện THPT-G12-B12-P04.",
+    "remediation": "Nếu bỏ hạng tử 1, hình có thêm một dải chữ nhật cao 1; tính đủ cả hai hạng tử. Ôn CĐ11 mục 2.4; luyện THPT-G12-B12-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -333,9 +333,9 @@
     "problem_type_id": "TOP11-SIGNED",
     "difficulty": "UNDERSTAND_TO_APPLY",
     "hints": [
-      "Tìm lúc v=0, xét dấu v trước và sau thời điểm đó."
+      "Tìm lúc \\(v(t)=0\\), xét dấu v trước và sau thời điểm đó."
     ],
-    "remediation": "Nếu dùng |độ dời| làm quãng đường, chia tại t=2, tính ∫|v| rồi so hai kết quả. Ôn CĐ11 mục 2.5; luyện THPT-G12-B12-P05.",
+    "remediation": "Nếu dùng trị tuyệt đối của độ dời làm quãng đường, chia tại \\(t=2\\), tính \\(\\int_0^3|v(t)|\\,\\mathrm dt\\) rồi so hai kết quả. Ôn CĐ11 mục 2.5; luyện THPT-G12-B12-P05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -362,9 +362,9 @@
     "problem_type_id": "TOP11-TRIG_EXP_DEFINITE",
     "difficulty": "UNDERSTAND_TO_APPLY",
     "hints": [
-      "Dùng nguyên hàm −2cos x; ghi cả hai giá trị cận."
+      "Dùng nguyên hàm \\(-2\\cos x\\); ghi cả hai giá trị cận."
     ],
-    "remediation": "Nếu ra 0, viết cosπ=−1 và cos0=1, giữ dấu trừ của F(0). Ôn CĐ11 mục 2.6; luyện THPT-G12-B12-P06.",
+    "remediation": "Nếu ra 0, viết \\(\\cos\\pi=-1\\) và \\(\\cos0=1\\), giữ dấu trừ của \\(F(0)\\). Ôn CĐ11 mục 2.6; luyện THPT-G12-B12-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -391,9 +391,9 @@
     "problem_type_id": "TOP11-ACCUMULATE",
     "difficulty": "UNDERSTAND_TO_APPLY",
     "hints": [
-      "Tích phân v để được độ dời, cộng s(0) để ra vị trí."
+      "Tích phân v để được độ dời, cộng \\(s(0)\\) để ra vị trí."
     ],
-    "remediation": "Nếu nhân v(2) với 2, nhớ vận tốc thay đổi theo t; diện tích dưới đồ thị v mới cho độ dời. Ôn CĐ11 mục 2.7; luyện THPT-G12-B12-P07.",
+    "remediation": "Nếu nhân \\(v(2)\\) với 2, nhớ vận tốc thay đổi theo t; tích phân có dấu của v mới cho độ dời. Ôn CĐ11 mục 2.7; luyện THPT-G12-B12-P07.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -420,9 +420,9 @@
     "problem_type_id": "TOP11-CURVE_AREA",
     "difficulty": "APPLY_TO_TRANSFER",
     "hints": [
-      "Đổi √x thành x^(1/2); cả hai cận đều dương."
+      "Đổi \\(\\sqrt x\\) thành \\(x^{\\frac12}\\); cả hai cận đều dương."
     ],
-    "remediation": "Nếu chỉ tính F(9), còn phải trừ F(1); kiểm 9^(3/2)=27. Ôn CĐ11 mục 3.1; luyện THPT-G12-B13-P01.",
+    "remediation": "Nếu chỉ tính \\(F(9)\\), còn phải trừ \\(F(1)\\); kiểm \\(9^{\\frac32}=27\\). Ôn CĐ11 mục 3.1; luyện THPT-G12-B13-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -449,9 +449,9 @@
     "problem_type_id": "TOP11-SPLIT_AXIS",
     "difficulty": "APPLY_TO_TRANSFER",
     "hints": [
-      "Tìm nghiệm x²−1=0 trong đoạn rồi chia các phần âm và dương."
+      "Tìm nghiệm \\(x^2-1=0\\) trong đoạn rồi chia các phần âm và dương."
     ],
-    "remediation": "Nếu tích phân có dấu cho kết quả nhỏ hơn diện tích, viết dấu của x²−1 trên từng khoảng và đổi dấu phần dưới Ox. Ôn CĐ11 mục 3.2; luyện THPT-G12-B13-P02.",
+    "remediation": "Nếu tích phân có dấu cho kết quả nhỏ hơn diện tích, xét dấu \\(x^2-1\\) trên từng khoảng và đổi dấu phần dưới Ox. Ôn CĐ11 mục 3.2; luyện THPT-G12-B13-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -480,7 +480,7 @@
     "hints": [
       "Lập hiệu hai hàm rồi chứng minh hiệu không âm bằng bình phương hoàn chỉnh."
     ],
-    "remediation": "Nếu chỉ thử một điểm rồi cho rằng đường luôn ở trên, xét 3−(x−1)² trên toàn [0,2]. Ôn CĐ11 mục 3.3; luyện THPT-G12-B13-P03.",
+    "remediation": "Nếu chỉ thử một điểm rồi kết luận đường luôn ở trên, xét \\(3-(x-1)^2\\) trên đoạn \\([0;2]\\). Ôn CĐ11 mục 3.3; luyện THPT-G12-B13-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -497,7 +497,7 @@
     "content_version": 2,
     "stem": "Tính diện tích giữa \\(y=x\\) và \\(y=x^2\\) trên \\([-1;2]\\).",
     "answer_key": "\\(\\frac{11}6\\) đơn vị diện tích.",
-    "worked_solution": "Hai đường giao tại \\(x=0,1\\). Hiệu \\(x^2-x\\) dương trên \\((-1;0)\\) và \\((1;2)\\), âm trên \\((0;1)\\). \\(S=\\int_{-1}^0(x^2-x)\\,\\mathrm dx+\\int_0^1(x-x^2)\\,\\mathrm dx+\\int_1^2(x^2-x)\\,\\mathrm dx=\\frac56+\\frac16+\\frac56=\\frac{11}6\\) đơn vị diện tích. Không gộp một hiệu có dấu trên cả đoạn.",
+    "worked_solution": "Hai đường giao tại \\(x=0\\) và \\(x=1\\). Hiệu \\(x^2-x=x(x-1)\\) dương trên \\((-1;0)\\) và \\((1;2)\\), âm trên \\((0;1)\\). Do đó \\(S=\\int_{-1}^0(x^2-x)\\,\\mathrm dx+\\int_0^1(x-x^2)\\,\\mathrm dx+\\int_1^2(x^2-x)\\,\\mathrm dx\\). Dùng nguyên hàm \\(F(x)=\\frac{x^3}3-\\frac{x^2}2\\) cho hiệu \\(x^2-x\\), ba diện tích lần lượt là \\(\\frac56\\), \\(\\frac16\\), \\(\\frac56\\). Tổng \\(S=\\frac{11}6\\) đơn vị diện tích. Không gộp hiệu có dấu trên cả đoạn.",
     "skill_ids": [
       "G12-CHIV-B13-O04"
     ],
@@ -507,9 +507,9 @@
     "problem_type_id": "TOP11-BETWEEN_CROSSED",
     "difficulty": "APPLY_TO_TRANSFER",
     "hints": [
-      "Giải x=x²; chia đoạn ở cả 0 và 1."
+      "Giải \\(x=x^2\\); chia đoạn ở cả 0 và 1."
     ],
-    "remediation": "Nếu quên vùng bên trái 0, xét dấu x(x−1) trên ba khoảng và cộng ba diện tích dương. Ôn CĐ11 mục 3.4; luyện THPT-G12-B13-P04.",
+    "remediation": "Nếu quên vùng bên trái 0, xét dấu \\(x(x-1)\\) trên ba khoảng và cộng ba diện tích dương. Ôn CĐ11 mục 3.4; luyện THPT-G12-B13-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -536,7 +536,7 @@
     "problem_type_id": "TOP11-MODEL_INTERSECTIONS",
     "difficulty": "APPLY_TO_TRANSFER",
     "hints": [
-      "Giải 3x=x² để tự xác định hai cận của miền kín."
+      "Giải \\(3x=x^2\\) để tự xác định hai cận của miền kín."
     ],
     "remediation": "Nếu đoán cận từ hình, giải giao điểm trước rồi kiểm hiệu hai hàm giữa chúng. Ôn CĐ11 mục 3.5; luyện THPT-G12-B13-P05.",
     "rubric": null,
@@ -554,8 +554,8 @@
     "item_id": "THPT-TOP11-P20",
     "content_version": 2,
     "stem": "Cho thiết diện hình vuông cạnh \\(x+1\\) trên \\([0;1]\\), tính V.",
-    "answer_key": "\\(V=\\frac73\\) đơn vị³.",
-    "worked_solution": "Tiết diện vuông cạnh \\(x+1\\) có diện tích \\(A(x)=(x+1)^2=x^2+2x+1\\). Thể tích \\(V=\\int_0^1 A(x)\\,\\mathrm dx=\\left[\\frac{x^3}3+x^2+x\\right]_0^1=\\frac13+1+1=\\frac73\\) đơn vị³. Không nhân \\(\\pi\\) vì không có hình tròn.",
+    "answer_key": "\\(V=\\frac73\\) đơn vị thể tích.",
+    "worked_solution": "Tiết diện vuông cạnh \\(x+1\\) có diện tích \\(A(x)=(x+1)^2=x^2+2x+1\\). Thể tích \\(V=\\int_0^1 A(x)\\,\\mathrm dx=\\left[\\frac{x^3}3+x^2+x\\right]_0^1=\\frac13+1+1=\\frac73\\) đơn vị thể tích. Không nhân \\(\\pi\\) vì tiết diện không phải hình tròn.",
     "skill_ids": [
       "G12-CHIV-B13-O06"
     ],
@@ -565,7 +565,7 @@
     "problem_type_id": "TOP11-SQUARE_SLICES",
     "difficulty": "APPLY_TO_TRANSFER",
     "hints": [
-      "Từ cạnh x+1 suy ra diện tích lát cắt là (x+1)²."
+      "Từ cạnh \\(x+1\\) suy ra diện tích lát cắt \\(A(x)=(x+1)^2\\)."
     ],
     "remediation": "Nếu nhân π, hãy xác định lại hình vuông hay hình tròn; nếu thiếu bình phương, kiểm thứ nguyên diện tích. Ôn CĐ11 mục 4.1; luyện THPT-G12-B13-P06.",
     "rubric": null,
@@ -594,9 +594,9 @@
     "problem_type_id": "TOP11-CIRCULAR_SLICES",
     "difficulty": "APPLY_TO_TRANSFER",
     "hints": [
-      "Bán kính r=3−x không âm; diện tích tiết diện bằng πr²."
+      "Bán kính \\(r(x)=3-x\\) không âm; diện tích tiết diện bằng \\(\\pi r(x)^2\\)."
     ],
-    "remediation": "Nếu dùng πr hoặc 2πr, kiểm đó không phải diện tích; khai triển (3−x)² trước tích phân. Ôn CĐ11 mục 4.2; luyện THPT-G12-B13-P07.",
+    "remediation": "Nếu dùng \\(\\pi r\\) hoặc \\(2\\pi r\\), kiểm đó không phải diện tích; khai triển \\((3-x)^2\\) trước khi tích phân. Ôn CĐ11 mục 4.2; luyện THPT-G12-B13-P07.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -612,8 +612,8 @@
     "item_id": "THPT-TOP11-P22",
     "content_version": 3,
     "stem": "Cho miền \\(0\\le x\\le2\\), \\(0\\le y\\le\\sqrt x\\) quay quanh Ox, V?",
-    "answer_key": "\\(2\\pi\\) đơn vị³.",
-    "worked_solution": "Quay vùng \\(0\\le y\\le\\sqrt x,\\ 0\\le x\\le2\\) quanh \\(Ox\\): tiết diện là đĩa bán kính \\(\\sqrt x\\). Diện tích \\(A(x)=\\pi(\\sqrt x)^2=\\pi x\\); \\(V=\\pi\\int_0^2 x\\,\\mathrm dx=\\pi\\left[\\frac{x^2}2\\right]_0^2=2\\pi\\) đơn vị³.",
+    "answer_key": "\\(V=2\\pi\\) đơn vị thể tích.",
+    "worked_solution": "Quay vùng \\(0\\le y\\le\\sqrt x\\), \\(0\\le x\\le2\\) quanh Ox, tiết diện vuông góc Ox là đĩa bán kính \\(\\sqrt x\\). Diện tích \\(A(x)=\\pi(\\sqrt x)^2=\\pi x\\). Thể tích \\(V=\\pi\\int_0^2 x\\,\\mathrm dx=\\pi\\left[\\frac{x^2}2\\right]_0^2=2\\pi\\) đơn vị thể tích.",
     "skill_ids": [
       "G12-CHIV-B13-O08"
     ],
@@ -623,9 +623,9 @@
     "problem_type_id": "TOP11-WASHERS",
     "difficulty": "APPLY_TO_TRANSFER",
     "hints": [
-      "Mỗi tiết diện vuông góc Ox là đĩa bán kính √x."
+      "Mỗi tiết diện vuông góc Ox là đĩa bán kính \\(\\sqrt x\\)."
     ],
-    "remediation": "Nếu bình phương sai √x, hãy viết A=π(√x)²=πx và thế đúng hai cận. Ôn CĐ11 mục 4.3; luyện THPT-G12-B13-P08.",
+    "remediation": "Nếu bình phương sai \\(\\sqrt x\\), viết \\(A(x)=\\pi(\\sqrt x)^2=\\pi x\\) và thế đúng hai cận. Ôn CĐ11 mục 4.3; luyện THPT-G12-B13-P08.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
