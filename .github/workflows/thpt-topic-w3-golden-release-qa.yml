@@ -3,7 +3,6 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - 'docs/thpt-preview/chuyen-de/cd11/**'
       - 'docs/thpt-preview/chuyen-de/cd12/**'
       - 'docs/thpt-preview/chuyen-de/cd13/**'
       - 'docs/thpt-preview/chuyen-de/cd14/**'
