@@ -20376,6 +20376,142 @@
       },
       "remaining": "G11 ChI next, one chapter per turn; G10 FirstTry/public selfcheck/Written, source-owner/depth and rendering remain separate.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp100": {
+      "scope": "G11 ChI–III B01–B09: 106 canonical public formative C/P records, first owner-authorized three-chapter batch; 27 separate TRY/KFT unchanged",
+      "baseline_commit": "437fec4d14af2737f107d8d6515abbd398f0ae79",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "source_projection": {
+        "paths": [
+          "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+          "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+          "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+          "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js"
+        ],
+        "current_main_and_import_blobs": [
+          "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+          "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+          "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+          "ac9b93b1b62d4976fc78a7b1807e87e9cf878448"
+        ],
+        "ids_reviewed": 106,
+        "decision": "Retain earlier strengthened variants, source pointers, content_version and candidate states. Only canonical candidate bank content changed."
+      },
+      "item_shards": [
+        {
+          "path": "items/g11-chi.json",
+          "before": "00f7ceb8b80db391274dcb6ad5b6d65682bb76ab",
+          "after": "01a2968659616ae9928e80188f9f33d2eee7a1c3",
+          "reviewed": 42,
+          "changed": 42,
+          "other_unchanged": 23,
+          "commits": [
+            "af91d3ee4c980097a94eefd01d75176ae5033a9f",
+            "5e4a7a7c8ab690496eac2342bc298f7009f83f89"
+          ],
+          "fields": {
+            "stem": 42,
+            "answer_key": 41,
+            "worked_solution": 42,
+            "hints": 39,
+            "remediation": 39
+          }
+        },
+        {
+          "path": "items/g11-chii.json",
+          "before": "a70e8039813b57f5951f407a118af98ae6c50239",
+          "after": "5e44b1249c2fb02e628155de79cc28ef1933644d",
+          "reviewed": 36,
+          "changed": 36,
+          "other_unchanged": 3,
+          "commits": [
+            "10a781fc9d287c57041ca11664cd34b3a31c40be",
+            "ea223835cb56f716367aa530a9d553e045bbd98d"
+          ],
+          "fields": {
+            "stem": 35,
+            "answer_key": 29,
+            "worked_solution": 36,
+            "hints": 34,
+            "remediation": 36
+          }
+        },
+        {
+          "path": "items/g11-chiii.json",
+          "before": "238dd3cabb11e28570f061724dd2c4213ffb7785",
+          "after": "a33cdd2e47a7cf7c1790da398cd015b0082db336",
+          "reviewed": 28,
+          "changed": 28,
+          "other_unchanged": 1,
+          "commits": [
+            "c6e60323fea7411d1ce25280ec8533b92e7c9181"
+          ],
+          "fields": {
+            "stem": 28,
+            "answer_key": 16,
+            "worked_solution": 28,
+            "hints": 24,
+            "remediation": 24
+          }
+        }
+      ],
+      "checks": {
+        "formative_reviewed": 106,
+        "formative_changed": 106,
+        "fields_changed": {
+          "stem": 105,
+          "answer_key": 86,
+          "worked_solution": 106,
+          "hints": 97,
+          "remediation": 99
+        },
+        "separate_try_kft_unchanged": 27,
+        "sgk_placement_blob": "ed0461148642c53f6849d943a6f1ffbbe5a11016",
+        "sgk_placements": 134,
+        "sgk_roles": {
+          "SGK_CORE": 34,
+          "SGK_PRACTICE": 72,
+          "CLIENT_SELF_CHECK_NO_MASTERY": 27,
+          "SGK_FIRST_TRY": 1
+        },
+        "topic_placement_shards_scanned": 22,
+        "topic_placements": {
+          "CD06": 42,
+          "CD07": 36,
+          "CD22": 31
+        },
+        "topic_blobs": {
+          "CD06": "f60bbe409e3dfc94a3c8d7185414bd604b1e3099",
+          "CD07": "6aa535191c10e5cd25e64cef75440a3ba9a00794",
+          "CD22": "004b2840f79040e738f4f31f8c11014d6faa9ed2"
+        },
+        "metadata_and_interaction_unchanged": true,
+        "answer_meanings_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "targeted_raw_math_scan_residual": 0,
+        "supporting_arithmetic_and_example_checks": {
+          "I": 42,
+          "II": 36,
+          "III": 28
+        },
+        "math_check_baseline": "c6e60323fea7411d1ce25280ec8533b92e7c9181",
+        "later_edits": "Only fraction/wording and substitution explanation; final structure rechecked."
+      },
+      "findings": [
+        "ChI prove least positive periods, range attainability, distinguish domain restrictions and full-formula period, check solution families and endpoints; B04-P08 includes explicit excluded values in answer.",
+        "ChII show recurrence for every n, distinguish bounds from attained extrema, sum vs term, q=0 or 1 and signed q, compound interest model; preserve original numeric answers.",
+        "ChIII grouped-data information loss and explicit counterexample; clarify cumulative frequency, group boundaries, weighted mean, quantile interpolation including exact common boundary, equal-width mode convention; remove English fragments. Shared SGK selfcheck/FirstTry placements retain IDs and keys, improved canonical explanations flow through references. Source projection blobs inspected; attempted knowledge page paths not found; no fresh original SGK/SBT PDF, no full Academic/PED/rendering verdict."
+      ],
+      "phase_totals": {
+        "chapters": 12,
+        "total_thpt_chapters": 24,
+        "reviewed": 321,
+        "changed": 320,
+        "unchanged_reviewed": 1
+      },
+      "remaining": "Next G11 ChIV–VI, three chapters per owner instruction; separate FirstTry/public selfcheck/Written and depth/source review.",
+      "release_authorization": false
     }
   }
 }
