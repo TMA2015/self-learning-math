@@ -19034,6 +19034,55 @@
       },
       "remaining": "CD13–22; shared SGK/Written reconciliation, missing skill tags, global checks, depth and interaction conversion. No fresh primary PDF or bank-wide Academic/PED PASS.",
       "release_authorization": false
+    },
+    "source_delta_reconciliation_cp81": {
+      "scope": "CD13 scoped Practice/Replay reconciliation and expanded X-G.5 authoring for all learner-visible fields of 16 local SELF_COMPARE records, per owner 26/11",
+      "owner_decision_issue_comment": 7193974583,
+      "standard_blob": "48d83f0089c4eaaf6c44d3e54aa842cc57676cb7",
+      "baseline_commit": "a9290d0d475849162953e6926b258a9c0c0ce1e6",
+      "item_commit": "d2011acb3e422a058da3e6cb89b2bf3db1df4a14",
+      "latest_learner_commit": "7624c5fdce1d9ca3f1baea493eb12e8f8185758e",
+      "latest_learner_blob": "7e54d34b9eee75ab4b8f8e4f53ab40298e701493",
+      "placement_blob": "fd881339d3e36e5a3b880009870265cc2d6aa926",
+      "item_before": "44aff680ef913914b21a7aa78305a576944f159e",
+      "item_after": "38157db863420c22f38e562c6f8c8493c066f550",
+      "checks": {
+        "practice": 52,
+        "replay": 16,
+        "current_learner_replay_stem_options_match": 16,
+        "placement_order_match": 68,
+        "local_records_updated": 16,
+        "fields_changed": {
+          "stem": 14,
+          "answer_key": 12,
+          "worked_solution": 15,
+          "hints": 5,
+          "remediation": 11
+        },
+        "local_metadata_unchanged": true,
+        "local_self_compare_unchanged": true,
+        "inline_delimiters_balanced": true,
+        "targeted_raw_math_scan_residual": 0,
+        "shared_formative_placements_unchanged": 32,
+        "written_placements_unchanged": 4,
+        "options_or_rubric_present_in_local_records": 0
+      },
+      "findings": [
+        "Preserved square-vectors contrast P01, straight-path assumption P03/P16, stronger space-diagonal P11, complete P06 coordinate averaging, and previously reviewed KNTT zero-vector convention P02.",
+        "Corrected P04 hint that reversed start and end of vector difference: from endpoint of subtrahend to endpoint of minuend; worked solution and key agree. P14/P15 hints and remediation distinguish vectors, points and lengths; P16 position-vector equation avoids adding points as vectors.",
+        "Retained seven prior corrected outcome mappings in placement shard; replay equality describes current learner, not deliberately stronger bank variants.",
+        "CD14/15 current exact learner blobs located (db502fc8ebc435b3d25b6cd5a813b6c0e156d421 / 11d2106a7ed77b801c86420503dca929544dc076); legacy replay markers use DISPLAY_ONLY_CANONICAL; Practice may include supplementary placements. No reconciliation completion asserted for either."
+      ],
+      "progress": {
+        "topics_with_scoped_practice_replay_review": 13,
+        "total_topics": 22,
+        "practice_reviewed": 829,
+        "total_practice": 1479,
+        "replay_reviewed": 244,
+        "total_replay": 338
+      },
+      "remaining": "CD14–22 expanded local-field review, FirstTry, shared SGK, Written/Anchor, return to CD01–12 hints/remediation/options and residual math, skill tags, global semantic and notation audit before interaction conversion/RELEASE. No new S1 PDF read or bank-wide X-G.5/Academic/PED PASS; browser/MathJax belongs to RELEASE.",
+      "release_authorization": false
     }
   }
 }
