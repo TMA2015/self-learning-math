@@ -905,13 +905,13 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B06-P02; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O06; NOT_A_NEW_BANK -->
 
-**Bài 21.** Dãy u_n=3n²+1 (n≥1) có phải CSC không?
+**Bài 21.** Dãy \(u_n=3n^2+1\) (\(n\ge1\)) có phải CSC không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Không.
 
-**Lời giải:** u_{n+1}−u_n=6n+3 phụ thuộc n.
+**Lời giải:** \(u_{n+1}-u_n=6n+3\) phụ thuộc n.
 
 </details>
 
@@ -921,7 +921,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Có, d=−4.
+**Đáp án:** Có, \(d=-4\).
 
 **Lời giải:** Các hiệu liên tiếp đều bằng −4.
 
@@ -929,77 +929,77 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P06; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O06; NOT_A_NEW_BANK -->
 
-**Bài 23.** Dãy 7,4,1,−2,… có là cấp số cộng? Nêu công sai và u_n.
+**Bài 23.** Dãy \(7,4,1,-2,\ldots\) có là cấp số cộng? Nêu công sai và \(u_n\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Có; d=−3; u_n=7−3(n−1).
+**Đáp án:** Có; \(d=-3;\ u_n=7-3(n-1)\).
 
-**Lời giải có suy luận:** Hiệu mỗi số sau trừ số trước luôn −3. Dãy CSC với số đầu 7, công sai −3 và số thứ n là 7+(n−1)(−3).
+**Lời giải có suy luận:** Hiệu mỗi số sau trừ số trước luôn \(-3\). Dãy CSC với số đầu 7, công sai \(-3\) và số thứ n là \(7+(n-1)(-3)\).
 
-**Nếu làm sai:** Kiểm dấu hiệu u_{n+1}−u_n không phụ thuộc n.
+**Nếu làm sai:** Kiểm tra hiệu \(u_{n+1}-u_n\) không phụ thuộc n.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B06-P04; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O07; NOT_A_NEW_BANK -->
 
-**Bài 24.** CSC u_1=−5,d=4 có số hạng nào bằng 39?
+**Bài 24.** CSC \(u_1=-5,\ d=4\) có số hạng nào bằng 39?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Có, n=12.
+**Đáp án:** Có, \(n=12\).
 
-**Lời giải:** −5+4(n−1)=39 ⇒ n−1=11 ⇒ n=12 nguyên dương.
+**Lời giải:** \(-5+4(n-1)=39\Rightarrow n-1=11\Rightarrow n=12\) nguyên dương.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B06-P01; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O07; NOT_A_NEW_BANK -->
 
-**Bài 25.** CSC u_3=10,u_8=30. Tìm công sai và u_1.
+**Bài 25.** CSC \(u_3=10,\ u_8=30\). Tìm công sai và \(u_1\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** d=4,u_1=2.
+**Đáp án:** \(d=4,\ u_1=2\).
 
-**Lời giải:** u_8−u_3=5d=20 ⇒ d=4; u_1=u_3−2d=2.
+**Lời giải:** \(u_8-u_3=5d=20\Rightarrow d=4;\ u_1=u_3-2d=2\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B06-C02; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O07; NOT_A_NEW_BANK -->
 
-**Bài 26.** CSC có u_1=6,d=3. Tìm u_9.
+**Bài 26.** CSC có \(u_1=6,\ d=3\). Tìm \(u_9\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** u_9=30.
+**Đáp án:** \(u_9=30\).
 
-**Lời giải:** u_9=6+(9−1)·3=30.
+**Lời giải:** \(u_9=6+(9-1)\cdot3=30\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P07; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O07; NOT_A_NEW_BANK -->
 
-**Bài 27.** CSC có u_1=−4 và d=3. Tính u_{20}.
+**Bài 27.** CSC có \(u_1=-4\) và \(d=3\). Tính \(u_{20}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 53.
 
-**Lời giải có suy luận:** Từ số hạng thứ nhất đến thứ 20 có 19 bước cộng d. u_{20}=−4+19·3=53.
+**Lời giải có suy luận:** Từ số hạng thứ nhất đến thứ 20 có 19 bước cộng d. \(u_{20}=-4+19\cdot3=53\).
 
-**Nếu làm sai:** Không nhầm n bước với n−1 bước.
+**Nếu làm sai:** Không nhầm n bước với \(n-1\) bước.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B06-P05; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O08; NOT_A_NEW_BANK -->
 
-**Bài 28.** Ba số 2x−1, x+5, 3x+1 là ba số hạng liên tiếp của CSC. Tìm x.
+**Bài 28.** Ba số \(2x-1,\ x+5,\ 3x+1\) là ba số hạng liên tiếp của CSC. Tìm x.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=10/3.
+**Đáp án:** \(x=\frac{10}3\).
 
-**Lời giải:** 2(x+5)=(2x−1)+(3x+1)=5x ⇒ 2x+10=5x ⇒ x=10/3.
+**Lời giải:** \(2(x+5)=(2x-1)+(3x+1)=5x\Rightarrow2x+10=5x\Rightarrow x=\frac{10}3\).
 
 </details>
 
@@ -1009,21 +1009,21 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=10.
+**Đáp án:** \(x=10\).
 
-**Lời giải:** 2x=6+14 ⇒ x=10.
+**Lời giải:** \(2x=6+14\Rightarrow x=10\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P08; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O08; NOT_A_NEW_BANK -->
 
-**Bài 30.** CSC có u_5=14 và u_{11}=32. Tìm công sai d và u_1.
+**Bài 30.** CSC có \(u_5=14\) và \(u_{11}=32\). Tìm công sai d và \(u_1\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** d=3, u_1=2.
+**Đáp án:** \(d=3,\ u_1=2\).
 
-**Lời giải có suy luận:** Khoảng cách chỉ số là 11−5=6 bước; d=(32−14)/6=3, suy ra u_1=u_5−4d=14−12=2.
+**Lời giải có suy luận:** Khoảng cách chỉ số là \(11-5=6\) bước; \(d=\frac{32-14}6=3\), suy ra \(u_1=u_5-4d=14-12=2\).
 
 **Nếu làm sai:** Không chia hiệu giá trị cho 11 hay 5.
 
@@ -1031,92 +1031,92 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHII-W06-01; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O09; NOT_A_NEW_BANK -->
 
-**Bài 31.** Một CSC có u_4=11,u_9=26. Tìm u_1,d,u_{15} và S_{15}.
+**Bài 31.** Một CSC có \(u_4=11,\ u_9=26\). Tìm \(u_1,d,u_{15}\) và \(S_{15}\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải:** 5d=15⇒d=3;u_1=11−9=2;u_15=2+14·3=44;S_15=15(2+44)/2=345.
+**Lời giải:** \(5d=15\Rightarrow d=3;\ u_1=11-9=2;\ u_{15}=2+14\cdot3=44;\ S_{15}=\frac{15(2+44)}2=345\).
 
 **Rubric /6:**
 - thiết lập hiệu hai số hạng (1 điểm).
-- tìm d=3 (1 điểm).
-- tìm u1=2 (1 điểm).
-- tìm u15=44 (1 điểm).
+- tìm \(d=3\) (1 điểm).
+- tìm \(u_1=2\) (1 điểm).
+- tìm \(u_{15}=44\) (1 điểm).
 - công thức tổng đúng (1 điểm).
-- S15=345 và đơn vị nếu có (1 điểm).
+- \(S_{15}=345\) và đơn vị nếu có (1 điểm).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B06-P07; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O09; NOT_A_NEW_BANK -->
 
-**Bài 32.** CSC d=−3,u_5=13. Tính S_12.
+**Bài 32.** CSC \(d=-3,\ u_5=13\). Tính \(S_{12}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S_12=102.
+**Đáp án:** \(S_{12}=102\).
 
-**Lời giải:** u_1=u_5−4d=25;u_12=25−33=−8;S_12=12(25−8)/2=102.
+**Lời giải:** \(u_1=u_5-4d=25;\ u_{12}=25-33=-8;\ S_{12}=\frac{12(25-8)}2=102\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B06-P03; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O09; NOT_A_NEW_BANK -->
 
-**Bài 33.** CSC có u_1=9,d=−2. Tính S_8.
+**Bài 33.** CSC có \(u_1=9,\ d=-2\). Tính \(S_8\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S_8=16.
+**Đáp án:** \(S_8=16\).
 
-**Lời giải:** u_8=9−14=−5, S_8=8(9−5)/2=16.
+**Lời giải:** \(u_8=9-14=-5,\ S_8=\frac{8(9-5)}2=16\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B06-C03; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O09; NOT_A_NEW_BANK -->
 
-**Bài 34.** CSC có u_1=2,d=2. Tính S_5.
+**Bài 34.** CSC có \(u_1=2,\ d=2\). Tính \(S_5\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** S_5=30.
+**Đáp án:** \(S_5=30\).
 
-**Lời giải:** Năm số hạng đầu 2,4,6,8,10 nên tổng 30, hoặc 5(2+10)/2=30.
+**Lời giải:** Năm số hạng đầu 2, 4, 6, 8, 10 nên tổng 30, hoặc \(\frac{5(2+10)}2=30\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P09; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O09; NOT_A_NEW_BANK -->
 
-**Bài 35.** CSC có u_1=3,d=4. Tính tổng 15 số hạng đầu.
+**Bài 35.** CSC có \(u_1=3,\ d=4\). Tính tổng 15 số hạng đầu.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 465.
 
-**Lời giải có suy luận:** u_{15}=3+14·4=59. Ghép số hạng đầu và cuối: S_{15}=15(3+59)/2=465.
+**Lời giải có suy luận:** \(u_{15}=3+14\cdot4=59\). Ghép số hạng đầu và cuối: \(S_{15}=\frac{15(3+59)}2=465\).
 
-**Nếu làm sai:** Nếu dùng n/2[2u_1+(n−1)d], bảo đảm n=15 và d=4.
+**Nếu làm sai:** Nếu dùng \(\frac n2[2u_1+(n-1)d]\), bảo đảm \(n=15\) và \(d=4\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W02; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O09; NOT_A_NEW_BANK -->
 
-**Bài 36.** Một cấp số cộng thỏa u_4=13 và u_{10}=31. (a) Tìm u_1,d. (b) Tìm u_{20}. (c) Tính S_{20} theo hai cách: cặp đầu–cuối và công thức công sai. Đối chiếu.
+**Bài 36.** Một cấp số cộng thỏa \(u_4=13\) và \(u_{10}=31\). (a) Tìm \(u_1,d\). (b) Tìm \(u_{20}\). (c) Tính \(S_{20}\) theo hai cách: cặp đầu–cuối và công thức công sai. Đối chiếu.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** d=3,u_1=4,u_{20}=61,S_{20}=650.
+**Đáp án:** \(d=3,\ u_1=4,\ u_{20}=61,\ S_{20}=650\).
 
-**Lời giải đầy đủ:** u_{10}−u_4=(10−4)d=18 ⇒ d=3. u_1=u_4−3d=13−9=4. u_{20}=4+19·3=61. Ghép đầu–cuối S_{20}=20(4+61)/2=650. Công thức khác S_{20}=20[2·4+19·3]/2=10(8+57)=650; hai cách thống nhất.
+**Lời giải đầy đủ:** \(u_{10}-u_4=(10-4)d=18\Rightarrow d=3\). \(u_1=u_4-3d=13-9=4\). \(u_{20}=4+19\cdot3=61\). Ghép đầu–cuối \(S_{20}=\frac{20(4+61)}2=650\). Công thức khác \(S_{20}=\frac{20[2\cdot4+19\cdot3]}2=10(8+57)=650\); hai cách thống nhất.
 
 **Rubric tự đối chiếu /7 điểm:**
 1. Lập phương trình hai chỉ số (1đ)
 2. Tìm d (1đ)
-3. Tìm u_1 (1đ)
-4. Tính u_{20} (1đ)
+3. Tìm \(u_1\) (1đ)
+4. Tính \(u_{20}\) (1đ)
 5. Tổng theo đầu–cuối (1đ)
 6. Tổng theo công sai (1đ)
 7. Đối chiếu và kết luận (1đ)
 
-**Nếu làm sai:** Đếm bước 10−4=6; n=20 có 19 lần tăng d.
+**Nếu làm sai:** Đếm bước \(10-4=6\); \(n=20\) có 19 lần tăng d.
 
 </details>
 
@@ -1126,14 +1126,14 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải:** u_18=12+17·3=63. S_18=18(12+63)/2=675. Năm hàng cuối (14–18) có u_14=51; tổng 5(51+63)/2=285.
+**Lời giải:** \(u_{18}=12+17\cdot3=63\). \(S_{18}=\frac{18(12+63)}2=675\). Năm hàng cuối (14–18) có \(u_{14}=51\); tổng \(\frac{5(51+63)}2=285\).
 
 **Rubric /6:**
 - xác định CSC (1 điểm).
-- u18=63 (1 điểm).
-- S18 công thức (1 điểm).
-- S18=675 (1 điểm).
-- đúng u14=51 (1 điểm).
+- \(u_{18}=63\) (1 điểm).
+- \(S_{18}\) công thức (1 điểm).
+- \(S_{18}=675\) (1 điểm).
+- đúng \(u_{14}=51\) (1 điểm).
 - tổng năm hàng cuối 285 (1 điểm).
 
 </details>
@@ -1146,7 +1146,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Đáp án:** 510 ghế.
 
-**Lời giải:** u_15=20+14·2=48, S_15=15(20+48)/2=510.
+**Lời giải:** \(u_{15}=20+14\cdot2=48,\ S_{15}=\frac{15(20+48)}2=510\).
 
 </details>
 
@@ -1158,7 +1158,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Đáp án:** 16,5 triệu đồng.
 
-**Lời giải:** u_1=1,2;d=0,1;u_10=2,1;S_10=10(1,2+2,1)/2=16,5.
+**Lời giải:** \(u_1=1{,}2;\ d=0{,}1;\ u_{10}=2{,}1;\ S_{10}=\frac{10(1{,}2+2{,}1)}2=16{,}5\) triệu đồng.
 
 </details>
 
@@ -1170,9 +1170,9 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Đáp án:** 255 ghế.
 
-**Lời giải có suy luận:** Số ghế theo hàng là CSC với u_1=12,d=3,n=10. Hàng cuối 12+9·3=39; tổng S_{10}=10(12+39)/2=255. Ghế phải đếm số nguyên không âm.
+**Lời giải có suy luận:** Số ghế theo hàng là CSC với \(u_1=12,\ d=3,\ n=10\). Hàng cuối \(12+9\cdot3=39\); tổng \(S_{10}=\frac{10(12+39)}2=255\). Ghế phải đếm số nguyên không âm.
 
-**Nếu làm sai:** Dùng n−1 khoảng tăng cho hàng cuối rồi mới tính tổng.
+**Nếu làm sai:** Dùng \(n-1\) khoảng tăng cho hàng cuối rồi mới tính tổng.
 
 </details>
 
@@ -1184,21 +1184,21 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Có, công bội q=0.
+**Đáp án:** Có, công bội \(q=0\).
 
-**Lời giải:** u_{n+1}=0·u_n cho mọi n≥1; không dùng u_3/u_2=0/0.
+**Lời giải:** \(u_{n+1}=0\cdot u_n\) cho mọi \(n\ge1\); không dùng phép chia \(\frac{u_3}{u_2}\) vì mẫu bằng 0.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B07-P01; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O11; NOT_A_NEW_BANK -->
 
-**Bài 42.** Dãy u_n=7(−2)^(n−1) là CSN? Tìm q và u_4.
+**Bài 42.** Dãy \(u_n=7(-2)^{n-1}\) là CSN? Tìm q và \(u_4\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** q=−2,u_4=−56.
+**Đáp án:** \(q=-2,\ u_4=-56\).
 
-**Lời giải:** u_{n+1}=−2u_n; u_4=7(−2)^3=−56.
+**Lời giải:** \(u_{n+1}=-2u_n;\ u_4=7(-2)^3=-56\).
 
 </details>
 
@@ -1208,7 +1208,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Có, q=3.
+**Đáp án:** Có, \(q=3\).
 
 **Lời giải:** Mỗi số hạng sau gấp 3 lần số hạng trước.
 
@@ -1220,33 +1220,33 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Có; q=−2; tiếp theo −48.
+**Đáp án:** Có; \(q=-2\); tiếp theo \(-48\).
 
-**Lời giải có suy luận:** Tỉ số 6/(−3)=(−12)/6=24/(−12)=−2. Công bội âm làm dấu luân phiên; nhân 24 với −2 được −48.
+**Lời giải có suy luận:** Tỉ số \(\frac6{-3}=\frac{-12}6=\frac{24}{-12}=-2\). Công bội âm làm dấu luân phiên; nhân 24 với \(-2\) được \(-48\).
 
-**Nếu làm sai:** Không lấy |q|=2 rồi làm mất dấu.
+**Nếu làm sai:** Không lấy \(\lvert q\rvert=2\) rồi làm mất dấu.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B07-P02; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O12; NOT_A_NEW_BANK -->
 
-**Bài 45.** CSN u_2=6,u_5=162, các số hạng đầu khác 0. Tìm q và u_1.
+**Bài 45.** CSN \(u_2=6,\ u_5=162\), các số hạng đầu khác 0. Tìm q và \(u_1\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** q=3,u_1=2.
+**Đáp án:** \(q=3,\ u_1=2\).
 
-**Lời giải:** u_5/u_2=q³=27 ⇒ q=3 (nghiệm thực duy nhất);u_1=u_2/q=2.
+**Lời giải:** \(\frac{u_5}{u_2}=q^3=27\Rightarrow q=3\) (nghiệm thực duy nhất); \(u_1=\frac{u_2}q=2\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B07-C02; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O12; NOT_A_NEW_BANK -->
 
-**Bài 46.** CSN u_1=4,q=2. Tìm u_6.
+**Bài 46.** CSN \(u_1=4,\ q=2\). Tìm \(u_6\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** u_6=128.
+**Đáp án:** \(u_6=128\).
 
 **Lời giải:** u_6=4·2^(6−1)=128.
 
