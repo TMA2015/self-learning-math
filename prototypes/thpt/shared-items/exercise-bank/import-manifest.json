@@ -18406,7 +18406,7 @@
       "release_authorization": false
     },
     "source_delta_reconciliation_cp74": {
-      "scope": "CD08 current learner unkeyed Vận dụng; compared CD08 Practice and G11 ChV formative and related SGK Written stems; Topic Written full comparison pending",
+      "scope": "CD08 current learner unkeyed Vận dụng; compared CD08 Practice, G11 ChV formative, six SGK ChV and four Topic Written stems",
       "baseline_commit": "385dd4f2c4ef77d7b69dff585a3d968bfd4574b7",
       "item_commit": "cb0e607c3527cef0279ff16d238d45f274c897b6",
       "placement_commit": "9d98ca524ddae1fdf0b8e3f3476129375a515056",
@@ -18419,12 +18419,13 @@
           "reused": 0
         }
       ],
-      "reuse_note": "No identical formative task found in CD08 and G11 ChV; CD08 KFT14 changes the value and asks classification rather than SGK C02 yes/no; KFT17 differs from SGK B17-P03 radicand. Topic Written full stem comparison and global collision scan pending.",
+      "reuse_note": "No identical task found in CD08 and G11 ChV formative and ten related Written stems. KFT14 changes the value and asks classification rather than SGK C02 yes/no; KFT17 differs from SGK B17-P03 radicand. Global collision scan pending.",
       "academic_changes": [
-        "KFT02 correct feedback to actual unbounded alternating sequence; KFT03 justify growth by q>1; KFT04 nonzero denominator; KFT05 specify geometric series and convergence condition; KFT07 distinguish |x| branches; KFT11 clarify domain and conjugate; KFT12 require x<-6 and positive conjugate; KFT17–18 specify equation and existence/bracketing."
+        "KFT02 correct feedback to actual unbounded alternating sequence; KFT03 justify growth by q>1; KFT04 nonzero denominator; KFT05 specify geometric series and convergence condition; KFT07 distinguish |x| branches; KFT11 clarify domain and conjugate; KFT12 require x<-6 and positive conjugate; KFT17–18 specify equation and existence/bracketing.",
+        "KFT03 uses the existing power-limit property rather than an additional named inequality. Four Topic Written and six SGK Written stems differ in data/demand; no Written content or rubric modified."
       ],
       "checks": {
-        "item_shard_after": "752a3724a459a65be18be841f81657bce9c0e8f9",
+        "item_shard_after": "89f120c22c83e73ca2231c6c1f066b333f329a21",
         "placement_shard_after": "a3f6c08854b15cdba155ebce165af6820a252b8c",
         "existing_records_unchanged": 269,
         "existing_first_try_placements_unchanged": 278,
@@ -18449,7 +18450,8 @@
       },
       "review_scope": "Scoped source, math, formative task comparison, D6 link resolution; no fresh primary SGK/SBT PDF or Written rubric audit, no full bank Academic/PED PASS.",
       "remaining": "CD09–13 remaining 118 blocks; 18 missing skill tags CP71–72, full Practice/Replay field reconciliation, shared placements/depth/Written/SGK, global scan",
-      "release_authorization": false
+      "release_authorization": false,
+      "item_refinement_commit": "6e1046ccfe9cbb0414d960d881135fc59c4878a5"
     }
   }
 }
