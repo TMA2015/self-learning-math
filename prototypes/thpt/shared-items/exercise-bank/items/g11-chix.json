@@ -235,7 +235,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Tính thương phải tại 0 bằng \\(rac{sqrt h}{h}\\)."
+      "Tính thương phải tại 0 bằng \\(\\frac{\\sqrt h}{h}\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -1127,7 +1127,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thiếu dấu âm, kiểm công thức \\((cot x)'=-\frac1{sin^2x}\\). Ôn TOP09-M18; luyện THPT-TOP09-P18."
+    "remediation": "Nếu thiếu dấu âm, kiểm công thức \\((\\cot x)'=-\\frac1{\\sin^2x}\\). Ôn TOP09-M18; luyện THPT-TOP09-P18."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C09",
@@ -1172,7 +1172,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Đặt \\(u=x^2\\) và kiểm $cos u\ne0$."
+      "Đặt \\(u=x^2\\) và kiểm \\(\\cos u\\ne0\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -1220,7 +1220,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Trong công thức tổng quát, \\(ln e=1\\). Ôn TOP09-M20; luyện THPT-TOP09-P20."
+    "remediation": "Trong công thức tổng quát, \\(\\ln e=1\\). Ôn TOP09-M20; luyện THPT-TOP09-P20."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P10",
@@ -1234,7 +1234,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Dùng công thức \\((a^x)'=a^xln a\\) với a bằng 5."
+      "Dùng công thức \\((a^x)'=a^x\\ln a\\) với a bằng 5."
     ],
     "rubric": null,
     "interaction": {
@@ -1892,7 +1892,7 @@
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
     "stem": "Vật có tọa độ \\(s(t)=t^3-3t^2\\) (m), t tính bằng giây. Tìm vận tốc và gia tốc.",
     "answer_key": "\\(v(t)=3t^2-6t\\) (mét trên giây); \\(a(t)=6t-6\\) (\\(\\mathrm{m/s^2}\\)).",
-    "worked_solution": "Đạo hàm lần đầu theo thời gian cho vận tốc \\(v(t)=s'(t)=3t^2-6t\\). Đạo hàm lần hai cho gia tốc \\(a(t)=s''(t)=6t-6\\). Đơn vị tương ứng là m/s và mét trên giây bình phương.",
+    "worked_solution": "Đạo hàm lần đầu theo thời gian cho vận tốc \\(v(t)=s'(t)=3t^2-6t\\). Đạo hàm lần hai cho gia tốc \\(a(t)=s''(t)=6t-6\\). Đơn vị tương ứng là mét trên giây và mét trên giây bình phương.",
     "skill_ids": [
       "G11-CHIX-INTEGRATED"
     ],
