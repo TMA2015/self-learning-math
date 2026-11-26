@@ -21439,6 +21439,46 @@
       "limitations": "Scoped author self verification of two revised tasks, no fresh S1 PDF visual, independent review, full bank or Written PASS. No image asset changed. Remaining G11 tags and topic families not fully reviewed.",
       "next": "Check remaining sparse skills, including B14-PARALLEL_AND_SHAPES and SGK B11 intersection/integrated outcome linkage, then G10/G11 remaining chapters.",
       "release_authorization": false
+    },
+    "coverage_depth_cp110": {
+      "base": "d717ad4da364c78f9c1208a4978eac9aa2465378",
+      "head": "07130944525a0094f4ccd5dfbc149ab9d2b37756",
+      "scope": "G11 ChIV continuation and ChV/CD15/CD08",
+      "review": {
+        "sgk_shards": 66,
+        "note": "ChIV 34 records (targeted B11/B14 continuation from CP109), ChV 32 records stems/keys; targeted source and relevant Topic/Written cross-check, not exhaustive worked-solution review."
+      },
+      "shards": [
+        {
+          "path": "items/g11-chiv.json",
+          "sha": "4ef238ce2081d3254a8d3850e5b6dc20254215f0"
+        },
+        {
+          "path": "items/g11-chv.json",
+          "sha": "f0659e7a8af6ef50b7c58fc1739fa6bba61ba5fe"
+        }
+      ],
+      "changes": [
+        {
+          "id": "THPT-G11-CHIV-B11-P03",
+          "reason": "Replace duplicate skew example with skew proof and construct common line through C parallel MN and AB. Retain primary skill G11-B11-RELATIVE; add existing chapter outcome G11-B11-INTERSECT_PLANES from canonical RD0, previously no dedicated SGK formative tag; existing placements unchanged.",
+          "check": "Affine coordinates yield intersection y=1,z=0 parallel x-axis."
+        },
+        {
+          "id": "THPT-G11-CHIV-B14-P04",
+          "reason": "Concrete rectangular box projection along AA' versus AC': segment AB versus non-right-angle parallelogram ABFE, plus general nondegeneracy criterion.",
+          "check": "E=(-a,-b,0), F=(0,-b,0), AB dot AE=-a² !=0 for positive box sides."
+        },
+        {
+          "id": "THPT-G11-CHV-B17-P06",
+          "reason": "Replace single-point yes/no with continuity over a closed interval at two joins and incompatible parameter variant.",
+          "check": "a=1 at both joins; altered final branch requires a=2 at second join."
+        }
+      ],
+      "verification": "3 changed records, 63 unchanged across 2 shards; all other fields and original tags retained, one existing outcome tag added, balanced delimiters. Readback confirms no placement changes: all 3 SGK Practice, B11/B14 reused CD15, B17 reused CD08, B14 public SGK self-check NO_MASTERY. Source blobs e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b and 7934757ed06de4ae4b63dbc351ef524fc054e0d0; ChV Written 047f42f1d3cd241d1d5155e6f7ebc3c5bdd20aff.",
+      "limitations": "Scoped AUTHOR_SELF_VERIFIED, not full Academic/PED or Written PASS; no fresh direct S1 PDF inspection, no new figure or renderer change. B14 construction would benefit from a compact figure at future authorized integration; no extra asset/schema introduced. Chapter integrated skill linkage and other sparse tags remain under review.",
+      "next": "Continue G10/G11 other chapter families; check integrated public task coverage without inspecting protected RD1, Written CP108 wording and interaction classification.",
+      "release_authorization": false
     }
   }
 }
