@@ -1,19 +1,26 @@
+## CURRENT CP19 — CĐ17 AUTHORING custody
+Learner `03b6b27adbeaf854d3db1d8fc9e830a0294a08aa`, commit `d1e02081bdd9bcb17ed34d980bc68b93a8975575`, Draft #853. Work #1055 O05/O09/O12 verified; 49 unique canonical IDs, 37 Practice, eight exact same-ID public replays, seven Written scoring sequences, 51 disclosures. All 22 original SGK item IDs verified in existing owner bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0`; two SVG files and HTML model unchanged. No new bank, merge, deploy or runtime authorization.
+
+---
+
+Earlier narrative evidence below is historical; current CP19 evidence and structured fields supersede earlier pointers.
+
 <!-- OWNER_APPROVED_SHARED_G11_B22_B27_LABEL_EQUIVALENCE_CĐ17_A1_20261121 -->
 **CURRENT SOURCE_OWNER_PARITY:** Existing one CĐ17 learner `0ef0ad696e97d2549f29c5a22ba675970572a089`, original shared G11 SGK ChVII B22–27 one bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` matched EXACT identical blob in CĐ16 branch. Corrected all **18** original B26–B27 student `Đáp án sau Submit luyện tập` headings to `Đáp án`, matching 51/51 source-owner bank and 33 CĐ16 projection. All original 37 Practice mathematical stems, numeric/text answer values, worked solutions, 7 Written rubrics, 8 public same-ID selfchecks, 2 diagrams, Q16/Final Submit/Mastery unchanged; no duplicate SGK bank or new item version. Current Q18 `bb941ea3563034e0aa779c69118f8ac02355a21e`, A1 `current`, V2 `current`; `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL` author-self check only, not independent whole Topic review or website RELEASE. Prior bank `afc8ec039213b87b4930f2d34d48c28d1fc6277f` immutable history.
 ---
 <!-- TOP17_MASTER974_CURRENT_A1_A7_20261121 -->
 ## ONE CĐ17 active A1–A7 source lock — 21/11/2026
 
-CURRENT_SOURCE_BLOB: 0ef0ad696e97d2549f29c5a22ba675970572a089
+CURRENT_SOURCE_BLOB: 03b6b27adbeaf854d3db1d8fc9e830a0294a08aa
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-SOURCE_COMMIT: 648c048d96fff2ae82489c4878fb43306e4011cf
-DELTA_SCOPE: DELTA_C_PED_TARGETED_12_D6_PUBLIC_REPLAY; DELTA_A_EDITORIAL_37_EXERCISE_LABELS
-CANONICAL_Q15: 49 unique public IDs =22 G11 original SGK B26/B27/end +12 TOP17-T01–T12 +12 TOP17-P01–P12 +3 TOP17-W01–W03; original SGK source afc8ec039213b87b4930f2d34d48c28d1fc6277f unchanged. Eight public replay placements P01/P02/P04/P05/P06/P08/P10/P12 reuse existing same IDs, not eight additional items; exact Practice ordinals 12,13,15,16,17,30,32,34.
-AUTHOR_SOURCE_QA: 12 Knowledge outcomes/FirstTry mathematical stems and voluntary keys unchanged; 12 mathematically targeted optional Kiểm lỗi (each with two actual numbered Practice routes, 24/24); 37 original complete Practice stem/key/explanation and 7 Written rubric bodies byte-identical to previous source, caption-only Bài luyện 1–37 and one student-focused group heading; 8 unchanged original public SelfCheck question-only prompts, one answer-lookup disclosure after all 8; two source SVG paths and HTML math model unchanged; 51 optional disclosures balanced, one SGK credit at Topic end.
-OPEN_P2: Existing original G11 canonical item answer display label `Đáp án sau Submit luyện tập` inherited in 18 SGK original source-equivalent solutions; ledger #977 TOP22-054 original-source-owner coordination, no Topic-only Q15 divergent edit. No new P0/P1 in directly affected source. Not claiming independent NotebookLM full Topic PASS, PDF scan, website AP/R/CI, RD1, Mastery, Final Submit or owner RELEASE.
+SOURCE_COMMIT: d1e02081bdd9bcb17ed34d980bc68b93a8975575
+DELTA_SCOPE: DELTA_C_PED_TARGETED_WORK_1055_O05_O09_O12 + DELTA_B_SOURCE_EQUIVALENT_XG5
+CANONICAL_Q15: 49 unique IDs: 22 original G11 SGK from 5646241f4bb72f12419aaf585ee1fbea6f4185d0; 12 FirstTry, 12 Topic Practice, 3 Topic Written; eight same-ID replay placements only
+AUTHOR_SOURCE_QA: Work O05/O09/O12 verified; 37 Practice and 8 exact replay stems, seven Written score sequences and marker lines preserved; X-G.5 three learner pages; 51 balanced details; two SVGs and HTML model unchanged
+OPEN_P2: Historical shared answer-label #054 resolved by prior owner-approved source edit; no old label remains. No open mandatory Work academic blocker in affected scope.
 ---
 
 # CĐ17 — Khoảng cách & Thể tích · bản thảo hiệu lực R03 (giữ nguyên đường dẫn học liệu)
@@ -27,7 +34,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_CONTENT_READY_SOURCE_ONLY
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 0ef0ad696e97d2549f29c5a22ba675970572a089
+ACADEMIC_SOURCE_BLOB: 03b6b27adbeaf854d3db1d8fc9e830a0294a08aa
 ORIGINAL_G11_SGK_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: cfb2bd522531167003eeae8e7342c6d1349ca425
