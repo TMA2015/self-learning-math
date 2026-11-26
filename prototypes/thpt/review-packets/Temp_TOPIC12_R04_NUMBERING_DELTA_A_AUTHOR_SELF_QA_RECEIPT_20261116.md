@@ -1,3 +1,10 @@
+## CURRENT Q18 — CP14 — 26/11/2026
+Source `6fd684807c3cf16489ed91e4a573edc3d1b2a6bc`, commit `c5fe516b7b0ac0887b2047fd84bd8c2065d341d4`. Work O08/O09 corrected references to 2.2/2.1; O11 explains DEG and exact sin75°, both yielding BC=60(√3−1)m ≈43.92m. SSA t=1 deduplicated; angle conditions and meaning-first derivations checked. X-G.5 all three pages: 34/34 original bank ID membership (18+16), unchanged markers/MC keys/6 rubric point allocations, 12/12 exact replay, 47/47 balanced disclosures, 457 balanced inline pairs, 9 display blocks with blank lines; no residual compound raw math or slash fractions. 26 targeted numerical checks passed after correcting floating-point boundary test at t=1 (not a learner defect); includes SSA 0/1/2, areas, Heron, r/R, measurements. Original SGK/SBT receipt inherited within B05–B06 scope; no new PDF scan, no independent NotebookLM verdict. AUTHOR_SELF_VERIFIED affected source only. P0/P1 none identified in checked scope; RELEASE UI/CI/owner permission pending.
+
+---
+
+**Historical evidence below: applies only to the stated earlier snapshot; current structured custody fields supersede earlier narrative pointers.**
+
 <!-- TOP12_MASTER974_CURRENT_R04_AUTHOR_Q18_20261121 -->
 ## CURRENT AUTHORING Q18 v3.2.0 · CĐ12 / 12 outcome · 34 nguyên bản canonical
 
@@ -25,8 +32,8 @@ STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: f773f2622c88bd3e3a1e0137613846a83b3e6629
-ACADEMIC_SOURCE_BLOB: f773f2622c88bd3e3a1e0137613846a83b3e6629
+SOURCE_BLOB: 6fd684807c3cf16489ed91e4a573edc3d1b2a6bc
+ACADEMIC_SOURCE_BLOB: 6fd684807c3cf16489ed91e4a573edc3d1b2a6bc
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R03_LEARNER_FIRST_34_CANONICAL_VISIBLE_20261116.md
@@ -35,19 +42,19 @@ PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R03_AUTHO
 PREVIOUS_Q18_RECEIPT_BLOB: d8ad3986da4776260c950cca337e0407da015252
 SVG1_BLOB: 6fd343ea37fdd1f737a17da245c18b7b82b3bc4d
 SVG2_BLOB: 0dd2f62277ae264fb4f6d6c99699d5a984a0b562
-DELTA_CLASS: DELTA_C_PED_TARGETED_12_D6 + DELTA_A_EDITORIAL_34_LABELS_ONE_SOURCE
+DELTA_CLASS: DELTA_C_PED_TARGETED_WORK_1055 + DELTA_B_SOURCE_EQUIVALENT_XG5
 AUTHOR_QA_NUMBERING: PASS
 AUTHOR_QA_NUMBERING_H2_H3: NO_GAPS_NO_MIXED_SIBLINGS
-AUTHOR_QA_CANONICAL_PARITY: 34/34 UNCHANGED
+AUTHOR_QA_CANONICAL_PARITY: 34/34 IDs and mathematical meaning preserved; notation equivalent
 AUTHOR_QA_LESSON_HIERARCHY: 12/12 PASS
-AUTHOR_QA_PUBLIC_SELFCHECK: 12/12 UNCHANGED
-AUTHOR_QA_ANSWER_SOLUTION_RUBRIC_D6: ORIGINAL_34_CARD_MATH_KEY_SOLUTION_6_RUBRICS_BYTE_EXACT; 12_OUTCOME_D6_ROUTING_ADDED
+AUTHOR_QA_PUBLIC_SELFCHECK: 12/12 exact stem/options vs same-ID current Practice
+AUTHOR_QA_ANSWER_SOLUTION_RUBRIC_D6: KEYS_AND_6_WRITTEN_POINT_ALLOCATIONS_PRESERVED; WORK_KNOWLEDGE_D6_CORRECTED
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP12_MASTER974_R04_12_PED6_UNIQUE34_20261121_f773f2622c88bd3e3a1e0137613846a83b3e6629
+AUTHOR_SIGNOFF: TOP12_WORK1055_A05_XG5_20261126_6fd684807c3cf16489ed91e4a573edc3d1b2a6bc
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
