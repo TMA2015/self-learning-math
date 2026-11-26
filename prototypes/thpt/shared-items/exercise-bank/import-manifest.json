@@ -21159,6 +21159,159 @@
       },
       "remaining": "Continue G12 coverage and classify 104 missing difficulty tags based on actual tasks; check nine single-tag skills against knowledge/FirstTry/Written rather than quotas. Extend structural-family review to G10/G11 and remaining Topics; separate FirstTry, Written, independent public selfcheck; interaction conversion after coverage and owner-approved assessment policy. Preserve CP104 phase totals and historical global reconciliation baseline counts; current placement delta +11.",
       "release_authorization": false
+    },
+    "coverage_depth_cp106": {
+      "scope": "G12 CP105 follow-up: classify 104 unclassified SGK C/P/A items in ChI–II; investigate nine single-tag skills and improve four tasks",
+      "baseline_commit": "f80351cb9e4252a4b30e520a46fbe68d6e250cdf",
+      "author_decision": "Reuse existing numeric 1–3 scale by actual cognitive demand, not by role. Leave existing difficulty values in ChIII–VI unchanged; string vs numeric representation remains a schema normalization concern for later conversion, not a new taxonomy. Preserve all original IDs and placements.",
+      "difficulty": {
+        "classified": 104,
+        "distribution": {
+          "1": 52,
+          "2": 38,
+          "3": 14
+        },
+        "chI": {
+          "count": 56,
+          "distribution": {
+            "1": 14,
+            "2": 30,
+            "3": 12
+          },
+          "before": "427b15912f7447d625a4e72e7bffc28871ccd627",
+          "after": "ddc073ba4776d82da767b44db801e918b7d86b7d"
+        },
+        "chII": {
+          "count": 48,
+          "distribution": {
+            "1": 38,
+            "2": 8,
+            "3": 2
+          },
+          "before": "b895384e5a9a6de40704e1876dbebe71c5ceaa53",
+          "after": "16eeae23a2927f988b476d4b724f73f878ebf077"
+        },
+        "g12_final": {
+          "count": 320,
+          "missing": 0,
+          "distribution": {
+            "1": 124,
+            "2": 110,
+            "3": 86
+          },
+          "note": "216 pre-existing level tags retained; no fresh difficulty audit of those 216."
+        }
+      },
+      "skill_coverage": {
+        "basis": "Existing CP105 single-tag list; actual SGK ChI items, CD10 item shard and placements, SGK/Topic FirstTry metadata and stems, 5 existing Written projection entries with rubric read for coverage only.",
+        "cd10_blob": "7064ee56cc2c23fdc8f226ecea7ee2e7f05e460d",
+        "written_projection_blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "skills": [
+          [
+            "G12-B01-MONOTONICITY_MEANING",
+            "THPT-TOP10-P01",
+            "THPT-TOP10-KFT01",
+            "direct inequality proof vs x² recognition"
+          ],
+          [
+            "G12-B01-DOMAIN_INTERVALS",
+            "THPT-TOP10-P03",
+            "THPT-G12-B01-KFT03",
+            "THPT-G12-CHI-B01-W02",
+            "counterexample to combining disconnected intervals; Written includes same function as SGK P01, intentional elaboration"
+          ],
+          [
+            "G12-B01-MOTION_CONTEXT",
+            "THPT-TOP10-P06",
+            "THPT-TOP10-KFT06",
+            "change direction vs identify positive/negative intervals"
+          ],
+          [
+            "G12-B02-CONSTRAINED_DOMAIN",
+            "THPT-TOP10-P11",
+            "THPT-TOP10-KFT11",
+            "THPT-G12-B02-KFT03",
+            "restricted maximum at endpoint versus interior maximum"
+          ],
+          [
+            "G12-B02-OPTIMIZATION_MODEL",
+            "THPT-TOP10-P12",
+            "THPT-TOP10-KFT12",
+            "THPT-G12-CHI-B02-W02",
+            "model domain and open boundary; wall constraint differs from four sides"
+          ],
+          [
+            "G12-B03-GRAPH_INTERPRETATION",
+            "THPT-TOP10-P18",
+            "THPT-TOP10-KFT18",
+            "THPT-G12-CHI-B03-W01",
+            "P06 revised to negative remainder and one-sided limits; KFT image content not independently verified"
+          ],
+          [
+            "G12-B04-READ_VARIATION_TABLE",
+            "THPT-TOP10-P24",
+            "THPT-TOP10-KFT24",
+            "P02 now actual variation table, local vs global extrema"
+          ],
+          [
+            "G12-B04-DOMAIN_NONCONNECT",
+            "THPT-TOP10-P25",
+            "THPT-G12-B04-KFT01",
+            "THPT-G12-CHI-B04-W02",
+            "different tasks: drawing separated branches, monotonicity counterexample, full survey"
+          ],
+          [
+            "G12-B05-BOUNDARY_FEASIBILITY",
+            "THPT-G12-B05-KFT04",
+            "THPT-G12-CHI-B05-W01",
+            "invalid boundary vs optimizing over valid domain; no new item necessary on evidence"
+          ]
+        ],
+        "conclusion": "All nine have existing supplementary tasks; eight have distinct CD10 practice records. Do not treat one SGK tag as proof of missing content or count KFT/Written as independent assessment. Coverage investigated, not Q18 or full Written/FirstTry audit."
+      },
+      "depth_changes": [
+        {
+          "id": "THPT-G12-CHI-B03-P06",
+          "reason": "Avoid copying knowledge figure and identical algebraic form of W01; change sign of remainder and ask both asymptotes, branch positions and one-sided limits.",
+          "knowledge_blob": "be100bd245a9caaa511c98f88b5d76280d9f503f",
+          "answer": "x=2, y=3; left above/+∞, right below/−∞"
+        },
+        {
+          "id": "THPT-G12-CHI-B04-P02",
+          "reason": "Replace simple sign-change repetition by actual variation table and local vs restricted/global extrema.",
+          "knowledge_blob": "d3949a0120e7fd19a690a2ac6f7eddd25cc922f4",
+          "answer": "local max 4 at −1, min −2 at 3; interval extrema same, neither global on R"
+        },
+        {
+          "id": "THPT-G12-B06-P12",
+          "reason": "Combine work of two non-collinear constant forces using distributivity and signs; depth 3.",
+          "knowledge_blob": "e3091a022ce73d2a355aaf8dd1acc292e7bafce3",
+          "answer": "−12 J, 18 J, 6 J"
+        },
+        {
+          "id": "THPT-G12-B08-P12",
+          "reason": "Two-leg motion distinguishes displacement/distance and average velocity/speed; depth 3.",
+          "knowledge_blob": "40b60e3419e71738bbfa61dcb4ff45c58c5342f2",
+          "answer": "(3;4;12) m, 13 m, 17 m, (3/4;1;3) m/s, 17/4 m/s"
+        }
+      ],
+      "verification": {
+        "exact_diff_pre_manifest": 2,
+        "changed_item_records": 104,
+        "difficulty_only": 100,
+        "depth_changes": 4,
+        "other_items_unchanged": 16,
+        "ids_order_and_metadata_preserved": true,
+        "delimiters_and_control_characters_checked": true,
+        "sgk_placement_blob": "8f1f02b762930fe937af785d2f63b00d9f0205ad",
+        "cd10_placement_blob": "8bb7bb701d97c524bcc389751d9347db1df3be78",
+        "cd18_placement_blob": "6599f83a8217dca8f772457f8eb208f8e9bbb851",
+        "affected_placements": "4 SGK practice, 4 topic practice and 2 already-public CLIENT_SELF_CHECK_NO_MASTERY reuse (B06-P12, B08-P12). No placement/mode change; RELEASE must verify eventual projections and table rendering.",
+        "unchanged_assessment_private": true,
+        "verdict": "AUTHOR_SELF_VERIFIED scoped changes; no full coverage/Q18 certification"
+      },
+      "remaining": "Next: structural-family and cognitive-depth review G10/G11 and other Topics; separate FirstTry/Written/public selfcheck audit; then interaction classification/conversion under current owner restrictions. Keep source history and CP104/105 totals.",
+      "release_authorization": false
     }
   }
 }
