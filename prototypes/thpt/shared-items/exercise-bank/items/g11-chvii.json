@@ -450,16 +450,17 @@
   {
     "item_id": "THPT-G11-CHVII-B23-P03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Có thể có hai đường phân biệt, cắt nhau và đều vuông góc với \\((P)\\) không?",
-    "answer_key": "Không.",
-    "worked_solution": "Qua một điểm chỉ có một đường vuông góc với mặt phẳng cho trước. Nếu hai đường cùng vuông góc \\((P)\\) và cắt nhau tại một điểm, chúng phải trùng nhau, trái với giả thiết phân biệt.",
+    "stem": "Hai mặt phẳng \\((P)\\parallel(Q)\\). Đường thẳng \\(a\\perp(P)\\) tại A; đường thẳng b đi qua điểm B khác A của (P) và vuông góc với (Q). Chứng minh a và b song song phân biệt. Nếu chỉ biết b vuông góc với một đường thẳng nằm trong (Q), kết luận còn chắc chắn không?",
+    "answer_key": "\\(a\\parallel b\\) và a, b phân biệt. Nếu chỉ biết b vuông góc với một đường trong (Q), không đủ kết luận.",
+    "worked_solution": "Vì \\((P)\\parallel(Q)\\), đường b vuông góc với (Q) cũng vuông góc với (P). Hai đường a và b cùng vuông góc với (P), nên cùng phương. Chúng không thể trùng nhau vì a chỉ cắt (P) tại A, còn b cắt (P) tại B khác A. Vậy a và b song song phân biệt. Nếu chỉ có một đường c nằm trong (Q) với \\(b\\perp c\\), chưa đủ hai phương cắt nhau để kết luận \\(b\\perp(Q)\\). Chẳng hạn chọn b nằm trong (P) qua B và vuông góc với phương của c; khi ấy b không song song với a.",
     "skill_ids": [
-      "G11-B23-PLANE_PROPERTY"
+      "G11-B23-PLANE_PROPERTY",
+      "G11-B23-PARALLEL_TRANSFER"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Dùng tính duy nhất đường vuông góc mặt qua một điểm."
+      "Chuyển quan hệ vuông góc từ mặt (Q) sang (P), sau đó kiểm hai chân trên (P)."
     ],
     "rubric": null,
     "interaction": {
@@ -477,7 +478,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hai đường có cùng điểm, chúng trùng; không thể phân biệt và cắt nhau. Ôn CĐ16 mục 2.4; luyện THPT-TOP16-P08."
+    "remediation": "Nếu chỉ dựa vào một quan hệ vuông góc đường–đường, nhớ tiêu chuẩn hai đường cắt nhau trong mặt phẳng. Ôn CĐ16 mục 2.4; luyện THPT-TOP16-P08."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C01",
@@ -1506,16 +1507,17 @@
   {
     "item_id": "THPT-G11-CHVII-B27-P01",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Hình chóp S.ABC có diện tích đáy \\(12\\,\\mathrm{dm}^2\\) và chiều cao 9 dm. Tính thể tích.",
-    "answer_key": "\\(36\\,\\mathrm{dm}^3\\).",
-    "worked_solution": "Áp dụng công thức hình chóp \\(V=\\frac13Sh=\\frac13\\cdot12\\cdot9=36\\) \\(\\mathrm{dm}^3\\). Chiều cao phải đo vuông góc với đáy.",
+    "stem": "Một khối chóp có diện tích đáy \\(12\\,\\mathrm{dm}^2\\), thể tích \\(36\\,\\mathrm{dm}^3\\). Một khối lăng trụ có cùng diện tích đáy và cùng chiều cao với khối chóp. Tính chiều cao và thể tích lăng trụ. Nếu muốn lăng trụ có thể tích bằng khối chóp mà giữ nguyên diện tích đáy, chiều cao lăng trụ phải bằng bao nhiêu?",
+    "answer_key": "Chiều cao chung 9 dm; thể tích lăng trụ \\(108\\,\\mathrm{dm}^3\\). Với cùng thể tích \\(36\\,\\mathrm{dm}^3\\), chiều cao lăng trụ là 3 dm.",
+    "worked_solution": "Từ công thức thể tích chóp \\(V=\\frac13Sh\\), suy ra \\(h=\\frac{3V}{S}=\\frac{3\\cdot36}{12}=9\\) dm. Với cùng đáy và chiều cao, thể tích lăng trụ là \\(Sh=12\\cdot9=108\\,\\mathrm{dm}^3\\), gấp ba lần thể tích chóp. Nếu giữ nguyên diện tích đáy và yêu cầu thể tích bằng 36 dm³, chiều cao lăng trụ phải thỏa \\(12h'=36\\), nên \\(h'=3\\) dm. Hai công thức khác nhau ở hệ số một phần ba, không phải ở cách đo chiều cao.",
     "skill_ids": [
-      "G11-B27-PYRAMID_VOLUME"
+      "G11-B27-PYRAMID_VOLUME",
+      "G11-B27-PRISM_VOLUME"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Dùng công thức thể tích chóp, không phải lăng trụ."
+      "Tìm h từ công thức thể tích chóp trước; sau đó dùng V=Sh cho lăng trụ."
     ],
     "rubric": null,
     "interaction": {
@@ -1533,7 +1535,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra 108 đề-xi-mét khối, cần chia 3 vì đây là hình chóp. Ôn CĐ17 mục 2.2; luyện THPT-TOP17-P08."
+    "remediation": "Nếu dùng cùng công thức cho cả hai khối, đối chiếu hệ số 1/3 của hình chóp với lăng trụ. Ôn CĐ17 mục 2.1 và 2.2; luyện THPT-TOP17-P08."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-P02",
