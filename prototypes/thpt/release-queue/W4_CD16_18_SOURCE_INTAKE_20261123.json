@@ -41,7 +41,13 @@
       "v2Path": "prototypes/thpt/release-handoffs/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03_HANDOFF_V2_20261116.md",
       "v2Blob": "3c433d8c8e763c0017dc156a71c88accc6bf4ca1",
       "readyPath": "prototypes/thpt/release-queue/ready/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03.md",
-      "readyBlob": "6ac00b33e50c68f4937460cc2725902fd4292d44"
+      "readyBlob": "6ac00b33e50c68f4937460cc2725902fd4292d44",
+      "svgBlobs": {
+        "FIG-G11-CHVII-B22-01_R00.svg": "5f2d23adb6f947064312d04d67ce5a5bb2d1ff48",
+        "FIG-G11-CHVII-B23-01_R00.svg": "b53b65704f9830e1c97b533bac0e79a0b56761b6",
+        "FIG-G11-CHVII-B24-01_R00.svg": "c98d7df30b87c339336636e00322816a4099681b",
+        "FIG-G11-CHVII-B25-01_R00.svg": "3f6112a7b12f1829ee2249b979d45f1f5370fc66"
+      }
     },
     "17": {
       "title": "Khoảng cách và thể tích khối đa diện",
@@ -70,7 +76,11 @@
       "v2Path": "prototypes/thpt/release-handoffs/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02_HANDOFF_V2_20261116.md",
       "v2Blob": "0925484aad44b7d19408816aafa84ad0a1bc36e8",
       "readyPath": "prototypes/thpt/release-queue/ready/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02.md",
-      "readyBlob": "952eed6931893f32602cfdee8959cd2a161ed523"
+      "readyBlob": "952eed6931893f32602cfdee8959cd2a161ed523",
+      "svgBlobs": {
+        "FIG-G11-CHVII-B26-01_R00.svg": "26fb51f3af65ba7d86a2907f0eaff808d2d87532",
+        "FIG-G11-CHVII-B27-01_R00.svg": "a7bec7a20295d09ca6f32aae0e8910cef7bed9dc"
+      }
     },
     "18": {
       "title": "Phương pháp tọa độ trong không gian Oxyz",
@@ -115,7 +125,26 @@
       "v2Path": "prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R04_HANDOFF_V2_20261116.md",
       "v2Blob": "d79c5c6669ba0880154da2fad3ccce3dbcbad095",
       "readyPath": "prototypes/thpt/release-queue/ready/THPT-TOPIC18-OXYZ-FULL-R04.md",
-      "readyBlob": "adccc8e2393737bf36c1cdabb27593241da58858"
+      "readyBlob": "adccc8e2393737bf36c1cdabb27593241da58858",
+      "svgBlobs": {
+        "FIG-G12-CHII-B06-R00.svg": "26e388d873521aa5b0bae945343e69357490ec16",
+        "FIG-G12-CHII-B07-R00.svg": "053c483242c92f11097b5d577aeb4ad5f832497a",
+        "FIG-G12-CHII-B08-R00.svg": "13445da079245a556a08e7a57069d9987097a0be",
+        "FIG-TOP18-B14-NORMAL-WHITE-R00.svg": "353ab2fb6f070c03e7895706fd68362c73904fc7",
+        "FIG-TOP18-B15-LINE-WHITE-R00.svg": "d99c0dd13170111f1b72aededc843d64c3ada4d8",
+        "FIG-TOP18-B15-SKEW-WHITE-R00.svg": "1683f44f7d159081caca47152c1bf75c16440488",
+        "FIG-TOP18-B16-LINE-PLANE-ANGLE-WHITE-R00.svg": "dafbebf04cbe7cc740eb6d718bf22b6724411737",
+        "FIG-TOP18-B16-TWO-PLANES-WHITE-R00.svg": "5eac9686ebce6bef48556067a61dfa71fa41b7a3",
+        "FIG-TOP18-B17-SPHERE-SECTION-WHITE-R00.svg": "258d0059806bdc840e9c5200ca8944168aa62f67",
+        "FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg": "c818e636ded54730582b139f4476ce9daa2156b2"
+      },
+      "sharedFigureReconciliation": {
+        "file": "FIG-G12-CHII-B07-R00.svg",
+        "authorBlob": "979ca912e99fdadfc4e91ae0edad5db34fc13928",
+        "publishedBaseBlob": "053c483242c92f11097b5d577aeb4ad5f832497a",
+        "status": "EXISTING_SHARED_PUBLIC_VARIANT_UNCHANGED; VERIFY_SOURCE_SEMANTICS_AND_PRIOR_OWNER_ACCEPTANCE_BEFORE_MERGE",
+        "note": "Difference predates current refresh; do not overwrite shared SGK figure from older author branch."
+      }
     }
   },
   "verifiedSourceReceiptPairs": 6,
