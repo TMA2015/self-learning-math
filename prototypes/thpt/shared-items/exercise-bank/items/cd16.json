@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-TOP16-P01",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong hình lập phương ABCD.A′B′C′D′, xác định góc giữa AB và B′D′ bằng cách chuyển B′D′ về một đường trong mặt đáy.",
+    "stem": "Trong hình lập phương \\(ABCD.A'B'C'D'\\), xác định góc giữa AB và \\(B'D'\\) bằng cách chuyển \\(B'D'\\) về một đường trong mặt đáy.",
     "answer_key": "45°.",
-    "worked_solution": "Trong hai đáy song song của hình lập phương, B′D′∥BD. Góc giữa AB và B′D′ bằng góc giữa AB và BD. Tam giác ABD vuông cân tại A, nên góc ABD=45°. Vì vậy góc giữa hai đường là 45°.",
+    "worked_solution": "Trong hai đáy song song của hình lập phương, \\(B'D'\\parallel BD\\). Góc giữa AB và \\(B'D'\\) bằng góc giữa AB và BD. Tam giác ABD vuông cân tại A, nên \\(\\widehat{ABD}=45^\\circ\\). Vì vậy góc giữa hai đường là \\(45^\\circ\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B22-ANGLE_LINES"
@@ -15,7 +15,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "B′D′ song song đường chéo nào của đáy? Xét tam giác ABD."
+      "\\(B'D'\\) song song đường chéo nào của đáy? Xét tam giác ABD."
     ],
     "rubric": null,
     "interaction": {
@@ -28,14 +28,14 @@
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu lấy 135° vì chọn hai tia ngược chiều, góc giữa hai đường là góc không tù. Chuyển B′D′ về BD rồi xét tam giác ABD vuông cân. Ôn CĐ16 mục 1.1; luyện THPT-G11-CHVII-B22-P01."
+    "remediation": "Nếu lấy \\(135^\\circ\\) vì chọn hai tia ngược chiều, góc giữa hai đường là góc không tù. Chuyển \\(B'D'\\) về BD rồi xét tam giác ABD vuông cân. Ôn CĐ16 mục 1.1; luyện THPT-G11-CHVII-B22-P01."
   },
   {
     "item_id": "THPT-TOP16-P02",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, chứng minh BC vuông góc AA′.",
-    "answer_key": "BC⊥AA′.",
-    "worked_solution": "Trong mặt bên BCC′B′ là hình chữ nhật, BC⊥BB′. Vì AA′∥BB′, góc giữa BC và AA′ bằng góc giữa BC và BB′, tức 90°. Do đó BC⊥AA′ dù hai đường không cắt nhau.",
+    "stem": "Trong hình hộp chữ nhật \\(ABCD.A'B'C'D'\\), chứng minh \\(BC\\perp AA'\\).",
+    "answer_key": "\\(BC\\perp AA'\\).",
+    "worked_solution": "Trong mặt bên \\(BCC'B'\\) là hình chữ nhật, \\(BC\\perp BB'\\). Vì \\(AA'\\parallel BB'\\), góc giữa BC và \\(AA'\\) bằng góc giữa BC và \\(BB'\\), tức \\(90^\\circ\\). Do đó \\(BC\\perp AA'\\) dù hai đường không cắt nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B22-PERP_SKEW"
@@ -46,7 +46,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Thay AA′ bằng BB′ cùng phương rồi xét góc CBB′."
+      "Thay \\(AA'\\) bằng \\(BB'\\) cùng phương rồi xét góc \\(\\widehat{CBB'}\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -64,9 +64,9 @@
   {
     "item_id": "THPT-TOP16-P03",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong hình hộp ABCD.A′B′C′D′, biết BC⊥BB′ và DD′∥BB′. Chứng minh BC⊥DD′.",
-    "answer_key": "BC⊥DD′.",
-    "worked_solution": "Thay DD′ bằng BB′ cùng phương. Vì BC⊥BB′ nên BC⊥DD′; không yêu cầu BC gặp DD′.",
+    "stem": "Trong hình hộp \\(ABCD.A'B'C'D'\\), biết \\(BC\\perp BB'\\) và \\(DD'\\parallel BB'\\). Chứng minh \\(BC\\perp DD'\\).",
+    "answer_key": "\\(BC\\perp DD'\\).",
+    "worked_solution": "Thay \\(DD'\\) bằng \\(BB'\\) cùng phương. Vì \\(BC\\perp BB'\\) nên \\(BC\\perp DD'\\); không yêu cầu BC gặp \\(DD'\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B22-PARALLEL_DIRECTION"
@@ -77,7 +77,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Tìm đường song song DD′ mà BC đã vuông góc."
+      "Tìm đường song song \\(DD'\\) mà BC đã vuông góc."
     ],
     "rubric": null,
     "interaction": {
@@ -90,14 +90,14 @@
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu suy hai đường cùng vuông góc đường thứ ba phải song song, xét AB và AD cùng vuông góc AA′ nhưng cắt nhau. Ôn CĐ16 mục 1.3; luyện THPT-G11-CHVII-B22-C03."
+    "remediation": "Nếu suy hai đường cùng vuông góc đường thứ ba phải song song, xét AB và AD trong hình hộp chữ nhật: cả hai vuông góc \\(AA'\\) nhưng cắt nhau. Ôn CĐ16 mục 1.3; luyện THPT-G11-CHVII-B22-C03."
   },
   {
     "item_id": "THPT-TOP16-P04",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, nêu một chứng cứ chắc chắn để kết luận AB⊥CC′.",
-    "answer_key": "AB⊥CC′ vì AB⊥BB′ và BB′∥CC′.",
-    "worked_solution": "Trong mặt bên ABB′A′ là hình chữ nhật nên AB⊥BB′. Vì CC′∥BB′, góc giữa AB và CC′ bằng góc giữa AB và BB′, tức 90°. Kết luận AB⊥CC′ dựa vào tính chất hình chữ nhật và cạnh bên song song, không dựa vào nét vẽ.",
+    "stem": "Trong hình hộp chữ nhật \\(ABCD.A'B'C'D'\\), nêu một chứng cứ chắc chắn để kết luận \\(AB\\perp CC'\\).",
+    "answer_key": "\\(AB\\perp CC'\\) vì \\(AB\\perp BB'\\) và \\(BB'\\parallel CC'\\).",
+    "worked_solution": "Trong mặt bên \\(ABB'A'\\) là hình chữ nhật nên \\(AB\\perp BB'\\). Vì \\(CC'\\parallel BB'\\), góc giữa AB và \\(CC'\\) bằng góc giữa AB và \\(BB'\\), tức \\(90^\\circ\\). Kết luận \\(AB\\perp CC'\\) dựa vào tính chất hình chữ nhật và cạnh bên song song, không dựa vào nét vẽ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B22-PROOF_CONTEXT"
@@ -126,9 +126,9 @@
   {
     "item_id": "THPT-TOP16-P05",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, một bạn thấy AB⊥AA′ nên kết luận AB⊥(ABCD). Nhận xét; hãy chỉ ra đường nào trong mặt đáy chứng tỏ kết luận sai.",
-    "answer_key": "Sai; AB nằm trong (ABCD) và không vuông góc CD (AB∥CD).",
-    "worked_solution": "Một đường vuông góc mặt phẳng phải vuông góc với mọi đường nằm trong mặt ấy. AB⊥AA′ không chứng minh được điều đó vì AA′ không nằm trong đáy. AB∥CD, CD⊂(ABCD), nên AB không vuông góc CD. Do đó AB không vuông góc (ABCD).",
+    "stem": "Trong hình hộp chữ nhật \\(ABCD.A'B'C'D'\\), một bạn thấy \\(AB\\perp AA'\\) nên kết luận \\(AB\\perp(ABCD)\\). Nhận xét; hãy chỉ ra đường nào trong mặt đáy chứng tỏ kết luận sai.",
+    "answer_key": "Sai; AB nằm trong \\((ABCD)\\) và không vuông góc CD vì \\(AB\\parallel CD\\).",
+    "worked_solution": "Một đường vuông góc mặt phẳng phải vuông góc với mọi đường nằm trong mặt ấy. \\(AB\\perp AA'\\) không chứng minh được điều đó vì \\(AA'\\) không nằm trong đáy. \\(AB\\parallel CD,\\ CD\\subset(ABCD)\\), nên AB không vuông góc CD. Do đó AB không vuông góc \\((ABCD)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B23-PERP_PLANE_DEF"
@@ -157,9 +157,9 @@
   {
     "item_id": "THPT-TOP16-P06",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho tứ diện S.ABC có SA⊥AB và SA⊥AC. Chứng minh SA⊥(ABC), từ đó suy ra SA⊥BC.",
-    "answer_key": "SA⊥(ABC), SA⊥BC.",
-    "worked_solution": "AB,AC cùng nằm trong (ABC), cắt nhau tại A và khác nhau vì tam giác ABC không suy biến. SA vuông góc cả AB và AC, nên theo dấu hiệu đường vuông góc hai đường cắt nhau trong mặt phẳng, SA⊥(ABC). Vì BC⊂(ABC), suy SA⊥BC dù SA và BC không cắt nhau.",
+    "stem": "Cho tứ diện \\(S.ABC\\) có \\(SA\\perp AB\\) và \\(SA\\perp AC\\). Chứng minh \\(SA\\perp(ABC)\\), từ đó suy ra \\(SA\\perp BC\\).",
+    "answer_key": "\\(SA\\perp(ABC),\\ SA\\perp BC\\).",
+    "worked_solution": "AB,AC cùng nằm trong \\((ABC)\\), cắt nhau tại A và khác nhau vì tam giác ABC không suy biến. SA vuông góc cả AB và AC, nên theo dấu hiệu đường vuông góc hai đường cắt nhau trong mặt phẳng, \\(SA\\perp(ABC)\\). Vì \\(BC\\subset(ABC)\\), suy ra \\(SA\\perp BC\\) dù SA và BC không cắt nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B23-TWO_INTERSECT"
@@ -188,9 +188,9 @@
   {
     "item_id": "THPT-TOP16-P07",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Đường a⊥(P), hai mặt phẳng (P)∥(Q). Quan hệ a và (Q)?",
-    "answer_key": "a⊥(Q).",
-    "worked_solution": "Trong (Q), chọn hai đường cắt nhau b,c. Vì (P)∥(Q), qua một điểm của (P) có thể dựng hai đường lần lượt song song b,c và nằm trong (P). Do a⊥(P), a vuông góc cả hai đường đó, nên a⊥b và a⊥c. Theo dấu hiệu nhận biết, a⊥(Q).",
+    "stem": "Đường \\(a\\perp(P)\\), hai mặt phẳng \\((P)\\parallel(Q)\\). Quan hệ giữa a và \\((Q)\\)?",
+    "answer_key": "\\(a\\perp(Q)\\).",
+    "worked_solution": "Trong \\((Q)\\), chọn hai đường cắt nhau b,c. Vì \\((P)\\parallel(Q)\\), qua một điểm của \\((P)\\) có thể dựng hai đường lần lượt song song b,c và nằm trong \\((P)\\). Do \\(a\\perp(P)\\), a vuông góc cả hai đường đó, nên \\(a\\perp b\\) và \\(a\\perp c\\). Theo dấu hiệu nhận biết, \\(a\\perp(Q)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B23-PARALLEL_TRANSFER"
@@ -214,14 +214,14 @@
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ nhìn hai mặt có vẻ song song, phải dùng giả thiết (P)∥(Q) mới chuyển được các phương. Ôn CĐ16 mục 2.3; luyện THPT-G11-CHVII-B23-C03."
+    "remediation": "Nếu chỉ nhìn hai mặt có vẻ song song, phải dùng giả thiết \\((P)\\parallel(Q)\\) mới chuyển được các phương. Ôn CĐ16 mục 2.3; luyện THPT-G11-CHVII-B23-C03."
   },
   {
     "item_id": "THPT-TOP16-P08",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "d⊥(P), e⊥(P) và d≠e. Chứng minh d∥e.",
-    "answer_key": "d∥e.",
-    "worked_solution": "Qua mỗi điểm có duy nhất một đường thẳng vuông góc (P), và mọi đường vuông góc (P) đều cùng phương. Vì d,e phân biệt, chúng song song.",
+    "stem": "\\(d\\perp(P),\\ e\\perp(P)\\) và \\(d\\ne e\\). Chứng minh \\(d\\parallel e\\).",
+    "answer_key": "\\(d\\parallel e\\).",
+    "worked_solution": "Mọi đường vuông góc \\((P)\\) đều cùng phương theo định lí hai đường thẳng cùng vuông góc một mặt phẳng. Vì d,e phân biệt, chúng song song.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B23-PLANE_PROPERTY"
@@ -245,14 +245,14 @@
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu d,e đi qua cùng một điểm, chúng trùng; giả thiết d≠e mới cho song song. Ôn CĐ16 mục 2.4; luyện THPT-G11-CHVII-B23-C04."
+    "remediation": "Nếu d,e đi qua cùng một điểm, chúng trùng; giả thiết \\(d\\ne e\\) mới cho song song. Ôn CĐ16 mục 2.4; luyện THPT-G11-CHVII-B23-C04."
   },
   {
     "item_id": "THPT-TOP16-P09",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Để kiểm tra cột d có vuông góc nền phẳng hình chữ nhật ABCD, người thợ thấy d⊥AB và d⊥CD. Đã đủ chưa? Nếu đo thêm d⊥AD thì kết luận gì?",
-    "answer_key": "Chưa đủ; thêm d⊥AD thì d⊥(ABCD).",
-    "worked_solution": "AB∥CD nên hai phép đo chỉ kiểm một phương. Chẳng hạn đường AD cũng vuông góc AB và CD nhưng nằm trong nền, không vuông góc nền. Nếu có thêm d⊥AD, vì AB và AD cắt nhau tại A, thuộc nền, dấu hiệu hai đường cắt nhau cho d⊥(ABCD).",
+    "stem": "Để kiểm tra cột d có vuông góc nền phẳng hình chữ nhật ABCD, người thợ thấy \\(d\\perp AB\\) và \\(d\\perp CD\\). Đã đủ chưa? Nếu đo thêm \\(d\\perp AD\\) thì kết luận gì?",
+    "answer_key": "Chưa đủ; thêm \\(d\\perp AD\\) thì \\(d\\perp(ABCD)\\).",
+    "worked_solution": "\\(AB\\parallel CD\\) nên hai phép đo chỉ kiểm một phương. Chẳng hạn đường AD cũng vuông góc AB và CD nhưng nằm trong nền, không vuông góc nền. Nếu có thêm \\(d\\perp AD\\), vì AB và AD cắt nhau tại A, thuộc nền, dấu hiệu hai đường cắt nhau cho \\(d\\perp(ABCD)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B23-PRACTICAL_POST"
@@ -281,9 +281,9 @@
   {
     "item_id": "THPT-TOP16-P10",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, AB=6 cm, AA′=8 cm. Xác định hình chiếu vuông góc của A′ lên (ABCD), tính A′B và khoảng cách từ A′ đến mặt đáy.",
-    "answer_key": "Hình chiếu A; A′B=10 cm; khoảng cách 8 cm.",
-    "worked_solution": "AA′⊥(ABCD) và A∈(ABCD) nên A là chân chiếu của A′. Tam giác A′AB vuông tại A, A′B=√(8²+6²)=10 cm. Khoảng cách đến đáy là A′A=8 cm, không phải cạnh xiên A′B.",
+    "stem": "Trong hình hộp chữ nhật \\(ABCD.A'B'C'D'\\), \\(AB=6\\,\\mathrm{cm},\\ AA'=8\\,\\mathrm{cm}\\). Xác định hình chiếu vuông góc của \\(A'\\) lên \\((ABCD)\\), tính \\(A'B\\) và khoảng cách từ \\(A'\\) đến mặt đáy.",
+    "answer_key": "Hình chiếu A; \\(A'B=10\\,\\mathrm{cm}\\); khoảng cách 8 cm.",
+    "worked_solution": "\\(AA'\\perp(ABCD)\\) và \\(A\\in(ABCD)\\) nên A là chân chiếu của \\(A'\\). Tam giác \\(A'AB\\) vuông tại A, \\(A'B=\\sqrt{8^2+6^2}=10\\,\\mathrm{cm}\\). Khoảng cách đến đáy là \\(A'A=8\\,\\mathrm{cm}\\), không phải cạnh xiên \\(A'B\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B24-POINT_PROJECTION"
@@ -294,7 +294,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Xác định đường vuông góc từ A′ đến đáy rồi xét tam giác A′AB."
+      "Xác định đường vuông góc từ \\(A'\\) đến đáy rồi xét tam giác \\(A'AB\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -312,9 +312,9 @@
   {
     "item_id": "THPT-TOP16-P11",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong lăng trụ đứng ABC.A′B′C′, xác định hình chiếu vuông góc của B′C′, A′B và CC′ lên mặt đáy (ABC).",
+    "stem": "Trong lăng trụ đứng \\(ABC.A'B'C'\\), xác định hình chiếu vuông góc của các đoạn \\(B'C',\\ A'B,\\ CC'\\) lên mặt đáy \\((ABC)\\).",
     "answer_key": "Lần lượt BC, AB và điểm C.",
-    "worked_solution": "Các cạnh bên vuông góc đáy nên A′,B′,C′ chiếu xuống A,B,C. B và C đã nằm trong đáy nên ảnh của chúng là chính chúng. Hai đầu mút B′C′ chiếu thành B,C phân biệt; A′B chiếu thành A,B phân biệt. Riêng CC′ có hai đầu cùng chiếu thành C, và mọi điểm trên CC′ cùng ảnh C.",
+    "worked_solution": "Các cạnh bên vuông góc đáy nên \\(A',B',C'\\) chiếu xuống A,B,C. B và C đã nằm trong đáy nên ảnh của chúng là chính chúng. Hai đầu mút \\(B'C'\\) chiếu thành B,C phân biệt; \\(A'B\\) chiếu thành A,B phân biệt. Riêng \\(CC'\\) có hai đầu cùng chiếu thành C, và mọi điểm trên \\(CC'\\) cùng ảnh C.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B24-LINE_PROJECTION"
@@ -343,9 +343,9 @@
   {
     "item_id": "THPT-TOP16-P12",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho A∉(P), H∈(P), AH⊥(P), B∈(P), B≠H và c⊂(P), c⊥AB. Hỏi c⊥BH không?",
-    "answer_key": "Có, c⊥BH.",
-    "worked_solution": "Vì A∉(P), AH⊥(P) và H∈(P), H là hình chiếu vuông góc của A. B nằm trong (P), nên hình chiếu đường AB là đường HB, xác định vì B≠H. Theo định lí ba đường vuông góc, với c⊂(P), c⊥AB tương đương c⊥HB. Từ giả thiết suy c⊥BH. Nếu B=H, ảnh chỉ là điểm H, không còn đường BH để xét vuông góc.",
+    "stem": "Cho \\(A\\notin(P),\\ H\\in(P),\\ AH\\perp(P),\\ B\\in(P),\\ B\\ne H\\) và \\(c\\subset(P),\\ c\\perp AB\\). Hỏi \\(c\\perp BH\\) không?",
+    "answer_key": "Có, \\(c\\perp BH\\).",
+    "worked_solution": "Vì \\(A\\notin(P),\\ AH\\perp(P)\\) và \\(H\\in(P)\\), H là hình chiếu vuông góc của A. B nằm trong \\((P)\\), nên hình chiếu đường AB là đường HB, xác định vì \\(B\\ne H\\). Theo định lí ba đường vuông góc, với \\(c\\subset(P)\\), \\(c\\perp AB\\) tương đương \\(c\\perp HB\\). Từ giả thiết suy \\(c\\perp BH\\). Nếu \\(B=H\\), ảnh chỉ là điểm H, không còn đường BH để xét vuông góc.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B24-THREE_PERP"
@@ -356,7 +356,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Xác định hình chiếu BH của đường xiên AB; kiểm B≠H."
+      "Xác định hình chiếu BH của đường xiên AB; kiểm \\(B\\ne H\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -369,14 +369,14 @@
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu B=H, ảnh chỉ là điểm và định lí ba đường vuông góc dạng này không áp dụng. Ôn CĐ16 mục 3.3; luyện THPT-G11-CHVII-B24-C03."
+    "remediation": "Nếu \\(B=H\\), ảnh chỉ là điểm và định lí ba đường vuông góc dạng này không áp dụng. Ôn CĐ16 mục 3.3; luyện THPT-G11-CHVII-B24-C03."
   },
   {
     "item_id": "THPT-TOP16-P13",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho A∉(P), H là hình chiếu vuông góc của A lên (P). B∈(P), AH=6 m, BH=8 m. Tính sin và cos của góc giữa AB và (P).",
-    "answer_key": "sinθ=3/5; cosθ=4/5.",
-    "worked_solution": "BH là hình chiếu của AB vì B∈(P), H là chân chiếu và B≠H. Tam giác ABH vuông tại H, AB=√(6²+8²)=10 m. Góc θ giữa AB và (P) là góc ABH, nên sinθ=6/10=3/5 và cosθ=8/10=4/5.",
+    "stem": "Cho \\(A\\notin(P)\\), H là hình chiếu vuông góc của A lên \\((P)\\). \\(B\\in(P),\\ AH=6\\,\\mathrm m,\\ BH=8\\,\\mathrm m\\). Tính sin và cos của góc giữa AB và \\((P)\\).",
+    "answer_key": "\\(\\sin\\theta=\\frac35;\\ \\cos\\theta=\\frac45\\).",
+    "worked_solution": "BH là hình chiếu của AB vì \\(B\\in(P)\\), H là chân chiếu và \\(B\\ne H\\). Tam giác ABH vuông tại H, \\(AB=\\sqrt{6^2+8^2}=10\\,\\mathrm m\\). Góc \\(\\theta\\) giữa AB và \\((P)\\) là \\(\\widehat{ABH}\\), nên \\(\\sin\\theta=\\frac6{10}=\\frac35\\) và \\(\\cos\\theta=\\frac8{10}=\\frac45\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B24-LINE_PLANE_ANGLE"
@@ -406,8 +406,8 @@
     "item_id": "THPT-TOP16-P14",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "Một đoạn đường dốc thẳng có độ chênh cao 5 m và hình chiếu ngang dài 12 m. Tính độ dài đoạn dốc và tan góc dốc với phương ngang.",
-    "answer_key": "Độ dài 13 m; tan θ=5/12.",
-    "worked_solution": "Đoạn dốc thẳng, độ cao và hình chiếu ngang tạo tam giác vuông. Độ dài dốc là √(5²+12²)=13 m; nếu θ là góc với phương ngang, tan θ=5/12.",
+    "answer_key": "Độ dài 13 m; \\(\\tan\\theta=\\frac5{12}\\).",
+    "worked_solution": "Đoạn dốc thẳng, độ cao và hình chiếu ngang tạo tam giác vuông. Độ dài dốc là \\(\\sqrt{5^2+12^2}=13\\,\\mathrm m\\); nếu \\(\\theta\\) là góc với phương ngang, \\(\\tan\\theta=\\frac5{12}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B24-ANGLE_APPLICATION"
@@ -436,9 +436,9 @@
   {
     "item_id": "THPT-TOP16-P15",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong chóp S.ABCD có đáy là hình vuông, SO⊥(ABCD) với O là tâm đáy. M là trung điểm AB, SO=OM. Tính góc giữa (SAB) và (ABCD).",
+    "stem": "Trong chóp \\(S.ABCD\\) có đáy là hình vuông, \\(SO\\perp(ABCD)\\) với O là tâm đáy. M là trung điểm AB, \\(SO=OM\\). Tính góc giữa \\((SAB)\\) và \\((ABCD)\\).",
     "answer_key": "45°.",
-    "worked_solution": "Hai mặt cắt nhau theo AB. Vì O là tâm hình vuông, OM⊥AB. SO⊥(ABCD) nên SO⊥AB. SO,OM cắt nhau tại O, cùng nằm trong (SOM), suy AB⊥(SOM), do đó AB⊥SM. SM nằm trong (SAB), OM nằm trong đáy, cùng vuông góc AB tại M. Góc giữa hai mặt là góc SMO (nhọn). Tam giác SOM vuông cân tại O vì SO=OM, nên góc SMO=45°.",
+    "worked_solution": "Hai mặt cắt nhau theo AB. Vì O là tâm hình vuông, \\(OM\\perp AB\\). \\(SO\\perp(ABCD)\\) nên \\(SO\\perp AB\\). SO,OM cắt nhau tại O, cùng nằm trong \\((SOM)\\), suy ra \\(AB\\perp(SOM)\\), do đó \\(AB\\perp SM\\). SM nằm trong \\((SAB)\\), OM nằm trong đáy, cùng vuông góc AB tại M. Góc giữa hai mặt là \\(\\widehat{SMO}\\) (nhọn). Tam giác SOM vuông cân tại O vì \\(SO=OM\\), nên \\(\\widehat{SMO}=45^\\circ\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-PLANE_ANGLE"
@@ -469,7 +469,7 @@
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "Góc phẳng của nhị diện 135°. Tìm góc giữa hai mặt phẳng chứa hai nửa mặt phẳng.",
     "answer_key": "45°.",
-    "worked_solution": "45° = min(135°, 180°−135°). Góc nhị diện vẫn 135° theo hai nửa mặt được chọn.",
+    "worked_solution": "\\(\\min(135^\\circ;180^\\circ-135^\\circ)=45^\\circ\\). Góc nhị diện vẫn là \\(135^\\circ\\) theo hai nửa mặt được chọn.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-DIHEDRAL"
@@ -498,9 +498,9 @@
   {
     "item_id": "THPT-TOP16-P17",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong tứ diện S.ABC có SA⊥AB và SA⊥AC. Chứng minh (SAB)⊥(ABC) và (SAC)⊥(ABC).",
-    "answer_key": "Cả (SAB) và (SAC) đều vuông góc (ABC).",
-    "worked_solution": "AB,AC cắt nhau trong (ABC) và đều vuông góc SA, nên SA⊥(ABC). Hai mặt (SAB),(SAC) đều chứa SA. Mỗi mặt chứa một đường vuông góc (ABC), nên cả hai mặt đều vuông góc (ABC).",
+    "stem": "Trong tứ diện \\(S.ABC\\) có \\(SA\\perp AB\\) và \\(SA\\perp AC\\). Chứng minh \\((SAB)\\perp(ABC)\\) và \\((SAC)\\perp(ABC)\\).",
+    "answer_key": "Cả \\((SAB)\\) và \\((SAC)\\) đều vuông góc \\((ABC)\\).",
+    "worked_solution": "AB,AC cắt nhau trong \\((ABC)\\) và đều vuông góc SA, nên \\(SA\\perp(ABC)\\). Hai mặt \\((SAB),(SAC)\\) đều chứa SA. Mỗi mặt chứa một đường vuông góc \\((ABC)\\), nên cả hai mặt đều vuông góc \\((ABC)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-PERP_PLANES"
@@ -592,8 +592,8 @@
     "item_id": "THPT-TOP16-P20",
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chóp đều đáy vuông cạnh 10 cm, chiều cao 12 cm. Tính đường cao mặt bên và cạnh bên; giải thích vì sao chúng khác nhau.",
-    "answer_key": "Đường cao mặt bên 13 cm; cạnh bên √194 cm.",
-    "worked_solution": "Gọi S là đỉnh, O là tâm đáy, M là trung điểm AB. SO=12 cm vuông góc đáy; OM=5 cm, OA=5√2 cm. SM là đường cao mặt bên vì tam giác SAB cân tại S, M là trung điểm AB. Từ hai tam giác vuông SOM, SOA: SM=√(144+25)=13 cm, SA=√(144+50)=√194 cm. Hai đoạn có chân khác nhau, đều không phải chiều cao SO.",
+    "answer_key": "Đường cao mặt bên 13 cm; cạnh bên \\(\\sqrt{194}\\,\\mathrm{cm}\\).",
+    "worked_solution": "Gọi S là đỉnh, O là tâm đáy, M là trung điểm AB. \\(SO=12\\,\\mathrm{cm}\\) vuông góc đáy; \\(OM=5\\,\\mathrm{cm},\\ OA=5\\sqrt2\\,\\mathrm{cm}\\). SM là đường cao mặt bên vì tam giác SAB cân tại S, M là trung điểm AB. Từ hai tam giác vuông SOM, SOA: \\(SM=\\sqrt{144+25}=13\\,\\mathrm{cm}\\), \\(SA=\\sqrt{144+50}=\\sqrt{194}\\,\\mathrm{cm}\\). Hai đoạn có chân khác nhau, đều không phải chiều cao SO.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-REGULAR_PYRAMID"
@@ -624,7 +624,7 @@
     "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chóp cụt đều có hai đáy là tam giác đều cạnh 8 và 4. Tính tỉ số diện tích đáy lớn : đáy nhỏ.",
     "answer_key": "4:1 (đáy lớn : đáy nhỏ).",
-    "worked_solution": "16:4=4:1 vì diện tích các hình đồng dạng tỉ lệ bình phương độ dài tương ứng.",
+    "worked_solution": "Tỉ số cạnh là \\(8:4=2:1\\). Vì diện tích các hình đồng dạng tỉ lệ với bình phương độ dài tương ứng, tỉ số diện tích là \\(2^2:1^2=4:1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-REGULAR_FRUSTUM"
