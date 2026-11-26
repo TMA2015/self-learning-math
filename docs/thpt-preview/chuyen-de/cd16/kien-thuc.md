@@ -28,7 +28,8 @@ hide:
 <span data-topic-w1-source-start="kien-thuc" hidden></span>
 
 <!-- TOPIC16_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84; Q18_RECEIPT_BLOB 19a2ed6ebfd7898da5f186350ea6042e2134fa7e; AUTHORING_PR #848; PUBLIC_PROJECTION_ONLY -->
+
+<!-- Q18 SOURCE_LEARNER_BLOB 3e6f97091a814d7cee7096fd92cd448dd8900435; Q18_RECEIPT_BLOB 18ce1cba1049ec7435ef7cfffc1a27804c1fd394; AUTHORING_PR #848; PUBLIC_PROJECTION_ONLY -->
 
 # Kiến thức
 
@@ -47,7 +48,7 @@ Quan sát các cạnh của căn phòng, cột và mái dốc, em sẽ học cá
 
 **Đọc hình:**
 
-Quan sát đường **a** và **b** ở hai vị trí không cắt nhau; đừng cố nối đầu mút để lấy góc. Theo các dấu **a′∥a**, **b′∥b**, đưa hai phương về điểm **O** và đọc góc tại O. Nếu thay O bằng điểm khác thì hai phương không đổi, nên góc không đổi.
+Quan sát đường a và b ở hai vị trí không cắt nhau; đừng cố nối đầu mút để lấy góc. Theo các dấu \(a'\parallel a\), \(b'\parallel b\), đưa hai phương về điểm O và đọc góc tại O. Nếu thay O bằng điểm khác thì hai phương không đổi, nên góc không đổi.
 
 *Nếu không hiển thị hình, hãy đọc lại mô tả bằng lời ở trên và tự dựng quan hệ theo giả thiết; không suy góc hay độ dài từ nét phối cảnh.*
 
@@ -59,9 +60,9 @@ Muốn đo góc hai thanh ở xa nhau, hãy dời hai phương đến cùng mộ
 
 > **ĐỊNH NGHĨA**
 >
-> Góc giữa hai đường trong không gian là góc nhỏ giữa hai đường cùng đi qua một điểm và lần lượt song song với hai đường đã cho; vì thế góc luôn trong [0°,90°]. Việc dời phương là để đo được ngay cả khi hai đường chéo nhau.
+> Góc giữa hai đường trong không gian là góc không tù giữa hai đường cùng đi qua một điểm và lần lượt có cùng phương với hai đường đã cho; vì thế góc luôn trong \([0^\circ;90^\circ]\). Việc dời phương là để đo được ngay cả khi hai đường chéo nhau.
 
-**Vì sao góc không phụ thuộc vị trí đặt hai đường?** Qua một điểm \(O\) tùy ý, dựng \(a'\parallel a\), \(b'\parallel b\). Hai phương không thay đổi khi dịch song song, nên trong bốn góc tại \(O\) luôn có một góc nhỏ \(\varphi\in[0^\circ,90^\circ]\); đây chính là góc giữa hai đường \(a,b\), bất kể chúng cắt nhau, chéo nhau hay song song. Nếu hai đường song song thì \(\varphi=0^\circ\), còn **vuông góc** khi và chỉ khi \(\varphi=90^\circ\).
+**Vì sao góc không phụ thuộc vị trí đặt hai đường?** Qua một điểm \(O\) tùy ý, dựng \(a'\parallel a\), \(b'\parallel b\). Hai phương không thay đổi khi dịch song song, nên trong bốn góc tại \(O\) luôn có một góc nhỏ \(\varphi\in[0^\circ;90^\circ]\); đây chính là góc giữa hai đường \(a,b\), bất kể chúng cắt nhau, chéo nhau hay song song. Nếu hai đường song song hoặc trùng nhau thì \(\varphi=0^\circ\), còn **vuông góc** khi và chỉ khi \(\varphi=90^\circ\).
 
 > **PHƯƠNG PHÁP — Đưa hai phương về chung gốc.** Chọn điểm dễ dựng (thường là một đỉnh hình hộp), thay mỗi đường bằng đường qua điểm đó song song với nó, rồi dùng góc thật của tam giác hoặc hình chữ nhật; không đọc góc trực tiếp từ hình phối cảnh. Không bắt buộc biết tọa độ Oxyz lớp 12.
 
@@ -71,7 +72,7 @@ Muốn đo góc hai thanh ở xa nhau, hãy dời hai phương đến cùng mộ
 
 **Đề bài:** Trong hộp chữ nhật ABCD.A′B′C′D′, xác định góc giữa AB và CC′, biết cạnh bên vuông góc đáy.
 
-**Lời giải:** CC′∥AA′, trong khi AA′⊥(ABCD) nên AA′⊥AB. Dời phương CC′ về AA′ qua A; góc giữa AB và CC′ bằng góc BAA′=90°, dù AB không cắt CC′.
+**Lời giải:** \(CC'\parallel AA'\), trong khi \(AA'\perp (ABCD)\) nên \(AA'\perp AB\). Dời phương CC′ về AA′ qua A; góc giữa AB và CC′ bằng góc \(\widehat{BAA'}=90^\circ\), dù AB không cắt CC′.
 
 **Vận dụng**
 
@@ -81,11 +82,11 @@ Trong hình hộp chữ nhật, góc giữa AB và A′B′ bằng bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-0° vì AB và A′B′ song song.
+\(0^\circ\) vì AB và A′B′ song song.
 
 **Kiểm lỗi**
 
-Nếu lấy góc tù 145° làm góc giữa hai đường, đọc lại **Kiến thức 1.1**: phải đưa hai phương về chung gốc và chọn góc không tù. Thử **Bài luyện 1** (góc bù) và **Bài luyện 10** (hai cạnh song song).
+Nếu lấy góc tù \(145^\circ\) làm góc giữa hai đường, đọc lại **Kiến thức 1.1**: phải đưa hai phương về chung gốc và chọn góc không tù. Thử **Bài luyện 1** (góc bù) và **Bài luyện 10** (hai cạnh song song).
 
 </details>
 
@@ -93,17 +94,17 @@ Nếu lấy góc tù 145° làm góc giữa hai đường, đọc lại **Kiến
 
 <!-- LESSON_ID: TOP16-M02; OUTCOME_ID: TOP16-O02; S1_ORIGINAL_OUTCOME: G11-B22-PERP_SKEW -->
 
-Hai thanh ở hai góc hộp có thể không cắt và cũng không đồng phẳng, nhưng vẫn vuông góc về phương. Vì vậy, hãy tách phép thử 'chéo nhau' khỏi phép thử 'góc 90°'.
+Hai thanh ở hai góc hộp có thể không cắt và cũng không đồng phẳng, nhưng vẫn vuông góc về phương. Vì vậy, hãy tách phép thử 'chéo nhau' khỏi phép thử 'góc \(90^\circ\)'.
 
 > **ĐỊNH NGHĨA**
 >
-> Vuông góc giữa hai đường là quan hệ **phương**: hai đường chéo nhau vẫn vuông góc nếu hai phương tạo góc 90°. Điều kiện cắt nhau không phải thành phần của định nghĩa này.
+> Vuông góc giữa hai đường là quan hệ **phương**: hai đường chéo nhau vẫn vuông góc nếu hai phương tạo góc \(90^\circ\). Điều kiện cắt nhau không phải thành phần của định nghĩa này.
 
 **Ví dụ**
 
 **Đề bài:** Trong hình lập phương ABCD.A′B′C′D′, chứng minh AD và BB′ chéo nhau nhưng vuông góc.
 
-**Lời giải:** Nếu AD và BB′ đồng phẳng thì mặt ấy chứa A,D,B, do đó là đáy, nhưng B′ nằm ngoài đáy; suy hai đường chéo nhau. BB′∥AA′ và AA′⊥AD nên góc hai phương là 90°.
+**Lời giải:** Nếu AD và BB′ đồng phẳng thì mặt ấy chứa A,D,B, do đó là đáy, nhưng B′ nằm ngoài đáy; suy hai đường chéo nhau. \(BB'\parallel AA'\) và \(AA'\perp AD\) nên góc hai phương là \(90^\circ\).
 
 **Vận dụng**
 
@@ -129,23 +130,23 @@ Một cạnh khuất có thể thay bằng cạnh nhìn thấy song song với n
 
 > **ĐỊNH LÝ**
 >
-> Thay một đường bằng đường song song bảo toàn góc giữa các phương. Nếu a⊥b và b∥c thì a⊥c, dù a,c có thể chéo nhau.
+> Thay một đường bằng đường song song bảo toàn góc giữa các phương. Nếu \(a\perp b\) và \(b\parallel c\) thì \(a\perp c\), dù a,c có thể chéo nhau.
 
 **Ví dụ**
 
-**Đề bài:** Trong hình hộp chữ nhật, AD⊥AA′ và CC′∥AA′. Chứng minh AD⊥CC′.
+**Đề bài:** Trong hình hộp chữ nhật, \(AD\perp AA'\) và \(CC'\parallel AA'\). Chứng minh \(AD\perp CC'\).
 
-**Lời giải:** Do CC′∥AA′ trong hình hộp nên chúng có cùng phương; AD⊥AA′ là góc vuông đã biết ở một đỉnh. Khi dời đường CC′ về đường AA′ qua A, ta đo đúng cùng một góc giữa các phương. Vì vậy AD⊥CC′, dù hai đường ban đầu không gặp nhau.
+**Lời giải:** Do \(CC'\parallel AA'\) trong hình hộp nên chúng có cùng phương; \(AD\perp AA'\) là góc vuông đã biết ở một đỉnh. Khi dời đường CC′ về đường AA′ qua A, ta đo đúng cùng một góc giữa các phương. Vì vậy \(AD\perp CC'\), dù hai đường ban đầu không gặp nhau.
 
 **Vận dụng**
 
-Nếu a⊥b và c∥b thì kết luận gì về a,c?
+Nếu \(a\perp b\) và \(c\parallel b\) thì kết luận gì về a,c?
 
 <!-- ITEM_ID: THPT-TOP16-T03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O03 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-a⊥c theo tính bất biến của góc khi thay đường bằng đường song song.
+\(a\perp c\) theo tính bất biến của góc khi thay đường bằng đường song song.
 
 **Kiểm lỗi**
 
@@ -165,13 +166,13 @@ Nếu trên giấy hai nét vuông góc, ta vẫn chưa chứng minh hai thanh t
 
 **Ví dụ**
 
-**Đề bài:** Trong hộp chữ nhật, chứng minh AB⊥B′C′ bằng tính chất hình, không dùng thước đo nét vẽ.
+**Đề bài:** Trong hộp chữ nhật, chứng minh \(AB\perp B'C'\) bằng tính chất hình, không dùng thước đo nét vẽ.
 
-**Lời giải:** Trong đáy hình chữ nhật, AB⊥BC. Vì B′C′∥BC, hai hướng của B′C′ và BC trùng nhau, do đó AB⊥B′C′.
+**Lời giải:** Trong đáy hình chữ nhật, \(AB\perp BC\). Vì \(B'C'\parallel BC\), hai hướng của B′C′ và BC trùng nhau, do đó \(AB\perp B'C'\).
 
 **Vận dụng**
 
-Nét vẽ có hai đoạn tạo góc 90° trên giấy, đủ kết luận hai thanh trong không gian vuông góc chưa?
+Nét vẽ có hai đoạn tạo góc \(90^\circ\) trên giấy, đủ kết luận hai thanh trong không gian vuông góc chưa?
 
 <!-- ITEM_ID: THPT-TOP16-T04; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O04 -->
 
@@ -188,7 +189,7 @@ Nếu kết luận chỉ vì hình vẽ trông có góc vuông, trở lại **Ki
 
 **Từ hai đường đến cả mặt phẳng.** Một chiếc cột nhìn có vẻ đứng thẳng vẫn có thể bị nghiêng về một phía mà ảnh chụp không nhận ra. Nếu chỉ kiểm tra cột vuông góc với **một** đường trên sàn, ta chưa loại trừ được hướng nghiêng khác. Chọn **hai đường cắt nhau** trên cùng mặt sàn thì hai phương độc lập mới đủ kiểm tra cột có vuông góc với toàn bộ sàn hay không. Đây là ý nghĩa của định lí, không phải mẹo ghi nhớ.
 
-Chẳng hạn, Cho chóp S.ABC, tam giác ABC vuông tại B và SA⊥(ABC). Vì SA⊥BC và AB⊥BC; hai đường SA,AB cắt nhau ở A cùng thuộc (SAB), nên BC⊥(SAB), do đó BC⊥SB. Một kết luận từ “vô số phương” được đưa về hai điều kiện có thể chứng minh.
+Chẳng hạn, Cho chóp S.ABC, tam giác ABC vuông tại B và \(SA\perp (ABC)\). Vì \(SA\perp BC\) và \(AB\perp BC\); hai đường SA,AB cắt nhau ở A cùng thuộc (SAB), nên \(BC\perp (SAB)\), do đó \(BC\perp SB\). Một kết luận từ “vô số phương” được đưa về hai điều kiện có thể chứng minh.
 
 ## 2. Đường thẳng vuông góc mặt phẳng
 
@@ -196,7 +197,7 @@ Chẳng hạn, Cho chóp S.ABC, tam giác ABC vuông tại B và SA⊥(ABC). Vì
 
 **Đọc hình:**
 
-Chỉ hai cạnh **AB** và **AD** trong mặt **(P)**, chúng cắt nhau tại **A**. Cột **AH** vuông góc với cả hai: không phải “hai góc vuông là đủ” một cách máy móc, mà vì AB,AD tạo hai hướng không song song cùng nằm trong một mặt. Nếu hai cạnh kiểm tra song song thì không được suy AH⊥(P).
+Chỉ hai cạnh AB và AD trong mặt \((P)\), chúng cắt nhau tại A. Cột AH vuông góc với cả hai: không phải “hai góc vuông là đủ” một cách máy móc, mà vì AB, AD tạo hai hướng không song song cùng nằm trong một mặt. Nếu hai cạnh kiểm tra song song thì không được suy \(AH\perp(P)\).
 
 *Nếu không hiển thị hình, hãy đọc lại mô tả bằng lời ở trên và tự dựng quan hệ theo giả thiết; không suy góc hay độ dài từ nét phối cảnh.*
 
@@ -212,13 +213,13 @@ Mặt sàn có vô số hướng. Một cột chỉ vuông góc một vạch sà
 
 **Ví dụ**
 
-**Đề bài:** Xét mặt (P):z=0 và đường d:(0,0,t) với t thực. Chứng minh d⊥(P) theo định nghĩa.
+**Đề bài:** Xét mặt \((P):z=0\) và đường \(d:(0;0;t)\) với t thực. Chứng minh \(d\perp (P)\) theo định nghĩa.
 
-**Lời giải:** Mọi đường của z=0 có hướng (u,v,0) khác vectơ không. Hướng d là (0,0,1), tích vô hướng bằng 0 với (u,v,0). Do đó d vuông góc mọi đường của (P), tức d⊥(P).
+**Lời giải:** Mọi đường của \(z=0\) có hướng \((u;v;0)\) khác vectơ không. Hướng d là \((0;0;1)\), tích vô hướng bằng 0 với \((u;v;0)\). Do đó d vuông góc mọi đường của (P), tức \(d\perp (P)\).
 
 **Vận dụng**
 
-d vuông góc chỉ một đường a thuộc (P). Đủ kết luận d⊥(P) không?
+d vuông góc chỉ một đường a thuộc (P). Đủ kết luận \(d\perp (P)\) không?
 
 <!-- ITEM_ID: THPT-TOP16-T05; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O05 -->
 
@@ -240,7 +241,7 @@ Không ai có thể kiểm vô số đường nằm trong một mặt. Hai đư�
 
 > **ĐỊNH LÝ**
 >
-> Hai đường a,b **cắt nhau** trong (P) tạo hai hướng độc lập. Nếu d⊥a và d⊥b thì d vuông góc cả mặt phẳng; điều kiện cắt nhau không thể bỏ.
+> Hai đường a,b **cắt nhau** trong (P) tạo hai hướng độc lập. Nếu \(d\perp a\) và \(d\perp b\) thì d vuông góc cả mặt phẳng; điều kiện cắt nhau không thể bỏ.
 
 Dấu hiệu hai đường cắt nhau là **điều kiện đủ**, không phải lời khuyên kiểm hai đường bất kỳ: hai đường được chọn phải cùng thuộc một mặt phẳng và **cắt nhau** để xác định hai hướng độc lập. Nếu chọn hai đường song song trong mặt, có thể tồn tại đường vuông góc cả hai nhưng vẫn **nằm trong** mặt, nên không vuông góc mặt.
 
@@ -248,13 +249,13 @@ Dấu hiệu hai đường cắt nhau là **điều kiện đủ**, không phả
 
 **Ví dụ**
 
-**Đề bài:** Trong đáy hình bình hành ABCD, d qua A và d⊥AB, d⊥AD. Chứng minh d⊥(ABCD).
+**Đề bài:** Trong đáy hình bình hành ABCD, d qua A và \(d\perp AB, d\perp AD\). Chứng minh \(d\perp (ABCD)\).
 
-**Lời giải:** AB,AD thuộc (ABCD), cắt nhau tại A và không song song. Vì d vuông góc cả AB và AD, theo dấu hiệu hai đường cắt trong mặt, d⊥(ABCD).
+**Lời giải:** AB,AD thuộc (ABCD), cắt nhau tại A và không song song. Vì d vuông góc cả AB và AD, theo dấu hiệu hai đường cắt trong mặt, \(d\perp (ABCD)\).
 
 **Vận dụng**
 
-Nếu a∥b trong (P), d⊥a và d⊥b đã đủ d⊥(P) chưa?
+Nếu \(a\parallel b\) trong \((P), d\perp a\) và \(d\perp b\) đã đủ \(d\perp (P)\) chưa?
 
 <!-- ITEM_ID: THPT-TOP16-T06; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O06 -->
 
@@ -280,13 +281,13 @@ Nhiều cạnh bên của hình hộp ở vị trí khác nhau nhưng cùng hư�
 
 **Ví dụ**
 
-**Đề bài:** Trong hình hộp chữ nhật, AA′⊥(ABCD). Chứng minh DD′⊥(ABCD).
+**Đề bài:** Trong hình hộp chữ nhật, \(AA'\perp (ABCD)\). Chứng minh \(DD'\perp (ABCD)\).
 
-**Lời giải:** DD′∥AA′ trong hình hộp. Một đường song song với đường vuông góc mặt phẳng cũng vuông góc mặt ấy, nên DD′⊥(ABCD).
+**Lời giải:** \(DD'\parallel AA'\) trong hình hộp. Một đường song song với đường vuông góc mặt phẳng cũng vuông góc mặt ấy, nên \(DD'\perp (ABCD)\).
 
 **Vận dụng**
 
-Nếu a⊥(P) và b∥a thì b có vuông góc (P) không?
+Nếu \(a\perp (P)\) và \(b\parallel a\) thì b có vuông góc (P) không?
 
 <!-- ITEM_ID: THPT-TOP16-T07; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O07 -->
 
@@ -312,9 +313,9 @@ Qua mỗi điểm chỉ có một phương pháp tuyến đối với một mặ
 
 **Ví dụ**
 
-**Đề bài:** Với (P):z=0 và M(2,−1,3), tìm đường qua M vuông góc (P) và giải thích duy nhất.
+**Đề bài:** Với \((P):z=0\) và \(M(2;-1;3)\), tìm đường qua M vuông góc (P) và giải thích duy nhất.
 
-**Lời giải:** Pháp tuyến mặt z=0 có hướng (0,0,1), nên đường d=(2,−1,3)+t(0,0,1) đi qua M và vuông góc mặt. Mọi đường khác qua M vuông góc mặt phải cùng hướng này, do đó trùng d.
+**Lời giải:** Pháp tuyến mặt \(z=0\) có hướng \((0;0;1)\), nên đường \(d=(2;-1;3)+t(0;0;1)\) đi qua M và vuông góc mặt. Mọi đường khác qua M vuông góc mặt phải cùng hướng này, do đó trùng d.
 
 **Vận dụng**
 
@@ -344,9 +345,9 @@ Chỉ dùng một thước vuông với một vạch trên nền vẫn cho phép
 
 **Ví dụ**
 
-**Đề bài:** Nền z=0 có hai hướng Ox và Oy. Cột qua O có hướng (0,0,1). Vì sao cột vuông góc nền? Một hướng sàn có đủ không?
+**Đề bài:** Nền \(z=0\) có hai hướng Ox và Oy. Cột qua O có hướng \((0;0;1)\). Vì sao cột vuông góc nền? Một hướng sàn có đủ không?
 
-**Lời giải:** Hướng cột (0,0,1) vuông góc với Ox(1,0,0) và Oy(0,1,0) là hai đường cắt nhau trong nền, nên cột vuông góc nền. Nếu chỉ vuông góc Ox, hướng (0,1,1) vẫn thỏa nhưng không vuông góc Oy.
+**Lời giải:** Hướng cột \((0;0;1)\) vuông góc với Ox\((1;0;0)\) và Oy\((0;1;0)\) là hai đường cắt nhau trong nền, nên cột vuông góc nền. Nếu chỉ vuông góc Ox, hướng \((0;1;1)\) vẫn thỏa nhưng không vuông góc Oy.
 
 **Vận dụng**
 
@@ -373,7 +374,7 @@ Nếu chỉ kiểm cột với một cạnh sàn, quay lại **Kiến thức 2.5
 
 **Đọc hình:**
 
-Tìm **A** ở cao, **H** là chân AH⊥(P), **M** ở nền. Đường xiên **AM** chiếu thành **HM**, do đó góc cần đo là **AMH tại M**, không phải góc ở A. Tam giác AHM vuông tại H nên khi biết AH,AM có thể dùng sin(góc AMH)=AH/AM; không lấy nét vẽ phối cảnh làm phép đo.
+Tìm A ở cao, H là chân của \(AH\perp(P)\), M ở nền. Đường xiên AM chiếu thành HM, do đó góc cần đo là \(\widehat{AMH}\) tại M, không phải góc ở A. Tam giác AHM vuông tại H nên khi \(M\ne H\), \(\sin\widehat{AMH}=\frac{AH}{AM}\); không lấy nét vẽ phối cảnh làm phép đo.
 
 *Nếu không hiển thị hình, hãy đọc lại mô tả bằng lời ở trên và tự dựng quan hệ theo giả thiết; không suy góc hay độ dài từ nét phối cảnh.*
 
@@ -391,13 +392,13 @@ Chiếu điểm xuống nền theo phương vuông góc là đi theo đường p
 
 > **ĐỊNH NGHĨA**
 >
-> Hình chiếu vuông góc H của A trên (P) là chân duy nhất của AH⊥(P). Độ dài AH là khoảng cách ngắn nhất từ A đến (P).
+> Nếu A nằm ngoài mặt \((P)\), hình chiếu vuông góc H của A là chân duy nhất của đường qua A vuông góc \((P)\). Độ dài AH là khoảng cách ngắn nhất từ A đến \((P)\). Nếu A thuộc mặt, ảnh chính là A và khoảng cách bằng 0.
 
 **Ví dụ**
 
-**Đề bài:** Tìm hình chiếu vuông góc của A(1,2,4) trên mặt (P):z=0.
+**Đề bài:** Tìm hình chiếu vuông góc của \(A(1;2;4)\) trên mặt \((P):z=0\).
 
-**Lời giải:** Đường pháp tuyến qua A có dạng (1,2,4+t); cho z=0 được t=−4, nên H(1,2,0). AH có hướng thẳng đứng, vuông góc (P), H thuộc (P).
+**Lời giải:** Đường pháp tuyến qua A có dạng \((1;2;4+t)\); cho \(z=0\) được \(t=-4\), nên \(H(1;2;0)\). AH có hướng thẳng đứng, vuông góc (P), H thuộc (P).
 
 **Vận dụng**
 
@@ -433,13 +434,13 @@ Hai đầu đoạn có hai ảnh khác nhau thì hình chiếu là một đoạn
 
 **Vận dụng**
 
-Đường d⊥(P). Ảnh vuông góc của d lên (P) là gì?
+Đường \(d\perp (P)\). Ảnh vuông góc của d lên (P) là gì?
 
 <!-- ITEM_ID: THPT-TOP16-T11; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O11 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Một điểm: chân giao d∩(P).
+Một điểm: chân giao \(d\cap (P)\).
 
 **Kiểm lỗi**
 
@@ -457,23 +458,25 @@ Một đường xiên có thành phần nằm ngang và thành phần thẳng đ
 >
 > Định lí ba đường vuông góc liên hệ đường xiên, hình chiếu vuông góc của nó và đường nằm trong mặt phẳng: đường của mặt phẳng vuông góc hình chiếu thì cũng vuông góc đường xiên.
 
-Định lí có **cả hai chiều**. Lấy \(A\notin(P)\), \(H\) là chân đường vuông góc từ \(A\) xuống \((P)\), \(B\in(P)\) với \(B\ne H\). Đoạn \(BH\) chính là hình chiếu vuông góc của đường xiên \(AB\). Với **bất kỳ đường \(c\subset(P)\)**, dù \(c\) không đi qua \(H\), quan hệ vuông góc giữa các đường được hiểu theo **phương** nên:
+Định lí có **cả hai chiều**. Lấy \(A\notin(P)\), H là chân đường vuông góc từ A xuống \((P)\), \(B\in(P)\) với \(B\ne H\). Hình chiếu vuông góc của đường thẳng AB là đường thẳng BH; hình chiếu của đoạn AB là đoạn BH. Với **bất kỳ đường \(c\subset(P)\)**, dù c không đi qua H, quan hệ vuông góc giữa các đường được hiểu theo **phương** nên:
+
 \[
 c\perp AB\quad\Longleftrightarrow\quad c\perp BH.
 \]
+
 **Vì sao?** Vectơ \(\overrightarrow{AB}=\overrightarrow{AH}+\overrightarrow{HB}\), trong đó \(AH\perp(P)\) nên phương của \(AH\) vuông góc \(c\). Phần có thể đóng góp thành phần theo phương \(c\) chỉ là \(HB\). Vì vậy \(c\perp AB\) đúng khi và chỉ khi \(c\perp HB\). Nếu \(B=H\), hình chiếu \(AB\) co thành **một điểm**, không có đường \(BH\) để áp định lí theo dạng trên; xử lý riêng \(AB\perp(P)\).
 
-**Ví dụ minh họa.** Trong mặt \(z=0\), cho \(A(0,0,3)\), \(H(0,0,0)\), \(B(4,2,0)\). Đường \(c\) ở trong mặt có phương \((1,-2,0)\). Ta có \(\overrightarrow{HB}=(4,2,0)\), tích với phương \(c\) bằng \(4-4=0\). Với \(\overrightarrow{AB}=(4,2,-3)\), tích với \(c\) vẫn bằng \(4-4+0=0\). Đây là cách kiểm **hai chiều**, không kết luận từ việc đường thẳng nhìn cắt nhau trên hình.
+**Ví dụ minh họa.** Trong mặt \(z=0\), cho \(A(0;0;3)\), \(H(0;0;0)\), \(B(4;2;0)\). Đường \(c\) ở trong mặt có phương \((1;-2;0)\). Ta có \(\overrightarrow{HB}=(4;2;0)\), tích với phương \(c\) bằng \(4-4=0\). Với \(\overrightarrow{AB}=(4;2;-3)\), tích với \(c\) vẫn bằng \(4-4+0=0\). Đây là cách kiểm **hai chiều**, không kết luận từ việc đường thẳng nhìn cắt nhau trên hình.
 
 **Ví dụ**
 
-**Đề bài:** Với mặt phẳng (P): z=0, lấy A(0,0,2) nằm ngoài (P), H(0,0,0) và B(3,0,0) thuộc (P). Chứng minh đường c qua H có hướng (0,1,0) vuông góc với đường AB.
+**Đề bài:** Với mặt phẳng \((P): z=0\), lấy \(A(0;0;2)\) nằm ngoài \((P), H(0;0;0)\) và \(B(3;0;0)\) thuộc (P). Chứng minh đường c qua H có hướng \((0;1;0)\) vuông góc với đường AB.
 
-**Lời giải:** AH⊥(P) vì A và H có cùng hai tọa độ ngang, H∈(P); BH nằm trong (P) và B≠H. Đường c qua H có hướng (0,1,0) nằm trong (P), vuông góc BH theo (1,0,0). Định lí ba đường vuông góc cho c⊥AB; kiểm bằng tọa độ vectơ \(\overrightarrow{AB}=(3,0,-2)\) có tích vô hướng với hướng (0,1,0) của c bằng 0.
+**Lời giải:** \(AH\perp (P)\) vì A và H có cùng hai tọa độ ngang, \(H\in (P); BH\) nằm trong (P) và \(B\ne H\). Đường c qua H có hướng \((0;1;0)\) nằm trong (P), vuông góc BH theo \((1;0;0)\). Định lí ba đường vuông góc cho \(c\perp AB\); kiểm bằng tọa độ vectơ \(\overrightarrow{AB}=(3;0;-2)\) có tích vô hướng với hướng \((0;1;0)\) của c bằng 0.
 
 **Vận dụng**
 
-AH⊥(P), B∈(P) và B≠H nên BH là một đường thẳng trên (P). Nếu c⊂(P), c⊥BH, có thể kết luận c⊥AB không?
+\(AH\perp (P), B\in (P)\) và \(B\ne H\) nên BH là một đường thẳng trên (P). Nếu \(c\subset (P), c\perp BH\), có thể kết luận \(c\perp AB\) không?
 
 <!-- ITEM_ID: THPT-TOP16-T12; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O12 -->
 
@@ -483,7 +486,7 @@ Có: BH là hình chiếu của AB lên (P); dùng định lí ba đường vuô
 
 **Kiểm lỗi**
 
-Nếu dùng định lí ba đường vuông góc mà chưa xác định đúng hình chiếu của đường xiên, đọc **Kiến thức 3.3**: H là chân từ A và B≠H để BH không suy biến. Thử **Bài luyện 32** (chiều thuận) và **Bài luyện 42** (chiều đảo), chỉ rõ ba đường liên quan.
+Nếu dùng định lí ba đường vuông góc mà chưa xác định đúng hình chiếu của đường xiên, đọc **Kiến thức 3.3**: H là chân từ A và \(B\ne H\) để BH không suy biến. Thử **Bài luyện 32** (chiều thuận) và **Bài luyện 42** (chiều đảo), chỉ rõ ba đường liên quan.
 
 </details>
 
@@ -491,30 +494,32 @@ Nếu dùng định lí ba đường vuông góc mà chưa xác định đúng h
 
 <!-- LESSON_ID: TOP16-M13; OUTCOME_ID: TOP16-O13; S1_ORIGINAL_OUTCOME: G11-B24-LINE_PLANE_ANGLE -->
 
-Góc một đường với mặt nền cần lấy qua chính hình chiếu của đường trên nền. Nếu đường vuông góc nền thì ảnh co thành điểm và góc 90° được xét riêng.
+Góc một đường với mặt nền cần lấy qua chính hình chiếu của đường trên nền. Nếu đường vuông góc nền thì ảnh co thành điểm và góc \(90^\circ\) được xét riêng.
 
 > **ĐỊNH NGHĨA**
 >
-> Góc giữa đường xiên AB và (P) là góc giữa AB và hình chiếu BH của nó, trong [0°,90°]. Nếu AB⊥(P) thì góc 90° dù hình chiếu thu thành điểm.
+> Góc giữa đường thẳng và mặt phẳng là góc không tù, thuộc \([0^\circ;90^\circ]\). Khi đường xiên AB cắt mặt tại B và có hình chiếu không suy biến BH, góc đường–mặt là \(\widehat{ABH}\). Nếu đường vuông góc mặt thì góc bằng \(90^\circ\), dù hình chiếu co thành điểm.
 
 Cần xét đủ **ba vị trí** trước khi dùng hình chiếu để tính góc:
 - Nếu \(d\subset(P)\) hoặc \(d\parallel(P)\), góc bằng \(0^\circ\) vì phương của \(d\) song song một đường trong \((P)\).
 - Nếu \(d\perp(P)\), góc bằng \(90^\circ\); hình chiếu của \(d\) suy biến thành một điểm nên **không** dựng góc với một “đường ảnh” không tồn tại.
 - Nếu \(d\) cắt \((P)\) nhưng không vuông góc, lấy \(B=d\cap(P)\), chọn \(A\in d\setminus(P)\) và \(H\) là chân chiếu của \(A\). Góc cần tính là \(\theta=\widehat{ABH}\) của tam giác vuông \(ABH\), với \(0^\circ&lt;\theta&lt;90^\circ\), nên:
+
 \[
 \sin\theta=\frac{AH}{AB},\quad
 \cos\theta=\frac{BH}{AB},\quad
 \tan\theta=\frac{AH}{BH}.
 \]
+
 Trong đó \(AH\) là **độ cao vuông góc**, \(BH\) là **độ dài hình chiếu trong mặt**, \(AB\) là đoạn xiên. Những tỉ số này đòi \(B\ne H\), \(AB>0\), \(BH>0\).
 
-**Ví dụ minh họa.** Một thanh dài \(10\) m nối \(A\) cao \(6\) m với chân \(B\) trên nền. Trong tam giác vuông \(ABH\), ta có \(BH=\sqrt{10^2-6^2}=8\) m; góc thanh–nền thỏa \(\sin\theta=6/10=3/5\), hay \(\theta\approx36{,}87^\circ\). Nếu tính \(\tan\theta=6/10\) là sai vì mẫu của tang phải là **hình chiếu ngang \(8\) m**, không phải chiều dài thanh.
+**Ví dụ minh họa.** Một thanh dài \(10\) m nối \(A\) cao \(6\) m với chân \(B\) trên nền. Trong tam giác vuông \(ABH\), ta có \(BH=\sqrt{10^2-6^2}=8\) m; góc thanh–nền thỏa \(\sin\theta=\frac6{10}=\frac35\), hay \(\theta\approx36{,}87^\circ\). Nếu tính \(\tan\theta=\frac6{10}\) là sai vì mẫu của tang phải là **hình chiếu ngang \(8\) m**, không phải chiều dài thanh.
 
 **Ví dụ**
 
-**Đề bài:** Cho A cao 3 m so với nền, H là chân hình chiếu, B trên nền, BH=4 m. Tính góc giữa AB và nền.
+**Đề bài:** Cho A cao 3 m so với nền, H là chân hình chiếu, B trên nền, \(BH=4\,\mathrm{m}\). Tính góc giữa AB và nền.
 
-**Lời giải:** Tam giác ABH vuông H, AB=√(3²+4²)=5 m. Góc giữa AB và nền là góc ABH với sinθ=3/5, nên θ≈36,87°. Điều kiện B≠H đảm bảo hình chiếu BH là đường.
+**Lời giải:** Tam giác ABH vuông tại H, \(AB=\sqrt{3^2+4^2}=5\,\mathrm m\). Góc giữa AB và nền là \(\theta=\widehat{ABH}\), với \(\sin\theta=\frac35\), nên \(\theta\approx36{,}87^\circ\). Điều kiện \(B\ne H\) bảo đảm hình chiếu BH không suy biến.
 
 **Vận dụng**
 
@@ -524,7 +529,7 @@ Trong đó \(AH\) là **độ cao vuông góc**, \(BH\) là **độ dài hình c
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-0°. Khi đường vuông góc (P), góc 90°.
+\(0^\circ\). Khi đường vuông góc (P), góc \(90^\circ\).
 
 **Kiểm lỗi**
 
@@ -546,17 +551,17 @@ Nếu đo góc với đường pháp tuyến thay cho góc đường–mặt, đ
 
 **Đề bài:** Đoạn dốc cao 5 m và có khoảng ngang 12 m. Tính chiều dài dốc và tang góc dốc.
 
-**Lời giải:** Tam giác vuông có hai cạnh góc vuông 5 và 12, nên cạnh huyền √(25+144)=13 m. Với góc dốc θ, tanθ=5/12; không lấy 13 làm khoảng ngang.
+**Lời giải:** Tam giác vuông có hai cạnh góc vuông 5 và 12, nên chiều dài dốc \(\sqrt{25+144}=13\,\mathrm m\). Với góc dốc \(\theta\), \(\tan\theta=\frac5{12}\); không lấy 13 làm khoảng ngang.
 
 **Vận dụng**
 
-Dốc cao 3 m, ngang 4 m: độ dài đoạn dốc?
+Dốc cao 3 m, khoảng ngang 4 m: tính độ dài đoạn dốc. Tiếp theo, gọi \(\theta\) là góc giữa đoạn dốc và mặt nền ngang; hãy xác định cạnh đối, cạnh kề và tính \(\tan\theta\).
 
 <!-- ITEM_ID: THPT-TOP16-T14; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O14 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-5 m theo định lí Pitago, không phải 7 m.
+Độ dài dốc là \(\sqrt{3^2+4^2}=5\) m, không phải 7 m. Góc dốc \(\theta\) nằm giữa cạnh huyền và đoạn ngang; cạnh đối dài 3 m, cạnh kề dài 4 m. Vì vậy \(\tan\theta=\frac34\). Nếu dùng \(\frac35\), em đã tính sin thay cho tang.
 
 **Kiểm lỗi**
 
@@ -567,7 +572,7 @@ Nếu cộng 5 và 12 để tính chiều dài dốc hoặc dùng nhầm tan v�
 
 **Từ góc của một đường đến góc của cả mặt.** Hai bề mặt của mái và trần có thể gặp nhau theo một đường dài; nếu lấy bất kỳ đường xiên nào trong từng mặt để đo, đáp án sẽ thay đổi theo vị trí thước. Muốn đo góc ổn định, tại một điểm trên **giao tuyến** hãy dựng trong mỗi mặt một đường vuông góc giao tuyến. Chính góc trong thiết diện vuông góc ấy là thông tin cần dùng. Lưu ý: góc phẳng của một **góc nhị diện** có thể là góc tù, còn góc giữa hai **mặt phẳng không định hướng** luôn được lấy là góc nhỏ.
 
-**Một ví dụ nối ba ý tưởng:** Cho SA⊥(ABC) và H là chân vuông góc từ A đến BC. Khi ấy BC⊥SA và BC⊥AH; suy BC⊥(SAH), nên BC⊥SH. Hai đường AH⊂(ABC) và SH⊂(SBC) cùng vuông góc BC tại H, vì vậy góc SHA trong tiết diện SAH diễn tả góc phẳng của nhị diện có bờ BC (với hai nửa mặt tương ứng), còn góc giữa hai mặt phẳng là góc nhỏ giữa AH và SH. Đừng nhầm góc tại S với góc tại H.
+**Một ví dụ nối ba ý tưởng:** Cho hình chóp S.ABC, \(SA\perp(ABC)\), H là chân vuông góc từ A đến BC. Khi ấy \(BC\perp SA\) và \(BC\perp AH\); suy \(BC\perp(SAH)\), nên \(BC\perp SH\). Hai đường \(AH\subset(ABC)\) và \(SH\subset(SBC)\) cùng vuông góc BC tại H, vì vậy góc SHA trong tiết diện SAH diễn tả góc phẳng của nhị diện có bờ BC (với hai nửa mặt tương ứng), còn góc giữa hai mặt phẳng là góc nhỏ giữa AH và SH. Đừng nhầm góc tại S với góc tại H.
 
 ## 4. Hai mặt phẳng vuông góc và hình khối đặc biệt
 
@@ -575,7 +580,7 @@ Nếu cộng 5 và 12 để tính chiều dài dốc hoặc dùng nhầm tan v�
 
 **Đọc hình:**
 
-Trước hết chỉ **giao tuyến Δ**, sau đó xem hai tia **OU, OV** cùng vuông góc Δ tại **O** nhưng nằm trên hai mặt khác nhau. **UOV** là góc phẳng của nhị diện đã chọn, có thể tù. Khi câu hỏi nói góc **giữa hai mặt phẳng**, lấy góc không tù giữa hai đường thẳng chứa OU và OV, không tùy tiện giữ góc nhị diện lớn hơn 90°.
+Trước hết chỉ **giao tuyến Δ**, sau đó xem hai tia **OU, OV** cùng vuông góc Δ tại **O** nhưng nằm trên hai mặt khác nhau. **UOV** là góc phẳng của nhị diện đã chọn, có thể tù. Khi câu hỏi nói góc **giữa hai mặt phẳng**, lấy góc không tù giữa hai đường thẳng chứa OU và OV, không tùy tiện giữ góc nhị diện lớn hơn \(90^\circ\).
 
 *Nếu không hiển thị hình, hãy đọc lại mô tả bằng lời ở trên và tự dựng quan hệ theo giả thiết; không suy góc hay độ dài từ nét phối cảnh.*
 
@@ -587,13 +592,13 @@ Hai mặt phẳng có giao tuyến không nhất thiết vuông góc. Hãy dựn
 
 > **ĐỊNH NGHĨA**
 >
-> Góc giữa hai **mặt phẳng** được đo bằng góc nhỏ của hai đường lần lượt nằm trong hai mặt và cùng vuông góc giao tuyến; kết quả thuộc [0°,90°] khi xét mặt phẳng không định hướng.
+> Góc giữa hai **mặt phẳng** được đo bằng góc nhỏ của hai đường lần lượt nằm trong hai mặt và cùng vuông góc giao tuyến; kết quả thuộc \([0^\circ;90^\circ]\) khi xét mặt phẳng không định hướng.
 
 **Ví dụ**
 
-**Đề bài:** Cho hai mặt (P):z=0 và (Q):x=0. Tìm góc giữa hai mặt bằng một tiết diện vuông góc giao tuyến.
+**Đề bài:** Cho hai mặt \((P):z=0\) và \((Q):x=0\). Tìm góc giữa hai mặt bằng một tiết diện vuông góc giao tuyến.
 
-**Lời giải:** Giao tuyến hai mặt là trục Oy. Trong z=0 chọn Ox, trong x=0 chọn Oz, hai đường cùng qua O và vuông góc Oy. Vì Ox⊥Oz nên góc giữa hai mặt là 90°.
+**Lời giải:** Giao tuyến hai mặt là trục Oy. Trong \(z=0\) chọn Ox, trong \(x=0\) chọn Oz, hai đường cùng qua O và vuông góc Oy. Vì \(Ox\perp Oz\) nên góc giữa hai mặt là \(90^\circ\).
 
 **Vận dụng**
 
@@ -603,7 +608,7 @@ Hai mặt phẳng song song tạo góc giữa hai mặt bằng bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-0° theo quy ước góc giữa các mặt phẳng.
+\(0^\circ\) theo quy ước góc giữa các mặt phẳng.
 
 **Kiểm lỗi**
 
@@ -619,29 +624,29 @@ Nhị diện dùng hai nửa mặt phẳng có chọn phía nên góc phẳng c�
 
 > **ĐỊNH NGHĨA**
 >
-> Góc nhị diện gắn với **hai nửa mặt phẳng** có chung bờ: góc phẳng của nhị diện có thể lớn hơn 90°. Góc giữa hai mặt phẳng không định hướng lấy góc nhỏ.
+> Góc nhị diện gắn với **hai nửa mặt phẳng** có chung bờ: góc phẳng của nhị diện có thể lớn hơn \(90^\circ\). Góc giữa hai mặt phẳng không định hướng lấy góc nhỏ.
 
-**Cách dựng góc phẳng nhị diện theo đúng hai nửa mặt:** Hai nửa mặt phẳng \((\alpha)\), \((\beta)\) có chung bờ \(d\) xác định góc nhị diện. Chọn \(O\in d\); trong mỗi nửa mặt, kẻ tia \(Om\), \(On\) **vuông góc \(d\) tại \(O\)** và đi về phía trong từng nửa mặt. Khi đó \(\widehat{mOn}\in[0^\circ,180^\circ]\) là **góc phẳng của góc nhị diện**. Nếu đổi phía một nửa mặt, góc phẳng trở thành góc bù \(180^\circ-\widehat{mOn}\), trong khi **góc nhỏ giữa hai mặt phẳng** vẫn không đổi.
+**Cách dựng góc phẳng nhị diện theo đúng hai nửa mặt:** Hai nửa mặt phẳng \((\alpha)\), \((\beta)\) có chung bờ \(d\) xác định góc nhị diện. Chọn \(O\in d\); trong mỗi nửa mặt, kẻ tia \(Om\), \(On\) **vuông góc \(d\) tại \(O\)** và đi về phía trong từng nửa mặt. Khi đó \(\widehat{mOn}\in[0^\circ;180^\circ]\) là **góc phẳng của góc nhị diện**. Nếu đổi phía một nửa mặt, góc phẳng trở thành góc bù \(180^\circ-\widehat{mOn}\), trong khi **góc nhỏ giữa hai mặt phẳng** vẫn không đổi.
 
-> **PHƯƠNG PHÁP — Đo nhị diện đúng phía.** Xác định bờ \(d\) trước; chọn mặt cắt vuông góc \(d\), rồi chọn đúng **hai tia** đi trong hai nửa mặt đã cho. Không lấy bừa một góc của tứ giác trong hình chiếu. Góc nhị diện có thể tù, nhưng góc giữa hai **mặt phẳng không định hướng** luôn là góc nhỏ thuộc \([0^\circ,90^\circ]\).
+> **PHƯƠNG PHÁP — Đo nhị diện đúng phía.** Xác định bờ \(d\) trước; chọn mặt cắt vuông góc \(d\), rồi chọn đúng **hai tia** đi trong hai nửa mặt đã cho. Không lấy bừa một góc của tứ giác trong hình chiếu. Góc nhị diện có thể tù, nhưng góc giữa hai **mặt phẳng không định hướng** luôn là góc nhỏ thuộc \([0^\circ;90^\circ]\).
 
 **Ví dụ minh họa.** Một nhị diện có góc phẳng \(120^\circ\). Nếu thay nửa mặt \((\beta)\) bằng nửa mặt đối trên cùng mặt phẳng, góc phẳng mới \(60^\circ\); song góc giữa hai **mặt chứa** chúng luôn là \(60^\circ\). Ta so góc nhị diện theo hai tia, còn góc hai mặt theo **góc nhỏ**. Kết luận không phụ thuộc hình vẽ nhìn từ phía nào.
 
 **Ví dụ**
 
-**Đề bài:** Một nhị diện có góc phẳng 135°. Tính góc nhỏ giữa hai mặt phẳng chứa nó.
+**Đề bài:** Một nhị diện có góc phẳng \(135^\circ\). Tính góc nhỏ giữa hai mặt phẳng chứa nó.
 
-**Lời giải:** Góc nhị diện 135° là góc của hai nửa mặt phẳng có hướng. Góc nhỏ giữa hai mặt không định hướng là min(135°,180°−135°)=45°.
+**Lời giải:** Góc nhị diện \(135^\circ\) là góc của hai nửa mặt phẳng đã chọn. Góc nhỏ giữa hai mặt không định hướng bằng \(180^\circ-135^\circ=45^\circ\).
 
 **Vận dụng**
 
-Nhị diện 120° cho góc nhỏ giữa hai mặt phẳng chứa nó bằng bao nhiêu?
+Nhị diện \(120^\circ\) cho góc nhỏ giữa hai mặt phẳng chứa nó bằng bao nhiêu?
 
 <!-- ITEM_ID: THPT-TOP16-T16; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O16 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-60° = 180°−120°.
+\(60^\circ = 180^\circ-120^\circ\).
 
 **Kiểm lỗi**
 
@@ -657,23 +662,23 @@ Mặt tường chứa một đường vuông góc sàn thì cả mặt tường 
 
 > **ĐỊNH LÝ**
 >
-> Muốn chứng minh (P)⊥(Q), tìm **một đường** nằm trong (P) và vuông góc với (Q). Không chỉ chứng minh hai đường thuộc hai mặt vuông góc.
+> Muốn chứng minh \((P)\perp (Q)\), tìm **một đường** nằm trong (P) và vuông góc với (Q). Không chỉ chứng minh hai đường thuộc hai mặt vuông góc.
 
 **Ví dụ**
 
-**Đề bài:** Cho (P):x=0, (Q):z=0. Dùng một đường trong (P) để chứng minh hai mặt vuông góc.
+**Đề bài:** Cho \((P):x=0, (Q):z=0\). Dùng một đường trong (P) để chứng minh hai mặt vuông góc.
 
-**Lời giải:** Trục Oz nằm trong x=0, có hướng (0,0,1), vuông góc mọi đường của z=0. Vì (P) chứa đường Oz⊥(Q), suy (P)⊥(Q).
+**Lời giải:** Trục Oz nằm trong \(x=0\), có hướng \((0;0;1)\), vuông góc mọi đường của \(z=0\). Vì (P) chứa đường \(Oz\perp(Q)\), suy \((P)\perp (Q)\).
 
 **Vận dụng**
 
-d⊂(P), d⊥(Q). Quan hệ hai mặt (P),(Q)?
+\(d\subset (P), d\perp (Q)\). Quan hệ hai mặt (P),(Q)?
 
 <!-- ITEM_ID: THPT-TOP16-T17; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O17 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(P)⊥(Q), theo dấu hiệu một đường trong mặt vuông góc mặt kia.
+\((P)\perp (Q)\), theo dấu hiệu một đường trong mặt vuông góc mặt kia.
 
 **Kiểm lỗi**
 
@@ -689,17 +694,17 @@ Hai mặt vuông góc có giao tuyến d. Muốn một đường trong mặt th�
 
 > **ĐỊNH LÝ**
 >
-> Khi hai mặt (P)⊥(Q) cắt theo d, đường a **trong (P)** và **vuông góc d** sẽ vuông góc (Q), theo định lí về hai mặt vuông góc.
+> Khi hai mặt \((P)\perp (Q)\) cắt theo d, đường a **trong (P)** và **vuông góc d** sẽ vuông góc (Q), theo định lí về hai mặt vuông góc.
 
 **Ví dụ**
 
-**Đề bài:** Hai mặt (P):x=0 và (Q):z=0 giao theo Oy. Lấy a là trục Oz. Dùng tính chất hai mặt vuông góc chứng minh a⊥(Q).
+**Đề bài:** Hai mặt \((P):x=0\) và \((Q):z=0\) giao theo Oy. Lấy a là trục Oz. Dùng tính chất hai mặt vuông góc chứng minh \(a\perp (Q)\).
 
-**Lời giải:** Oz thuộc mặt x=0 và vuông góc Oy là giao tuyến d. Vì hai mặt vuông góc, đường trong mặt thứ nhất vuông góc d cũng vuông góc mặt thứ hai, nên Oz⊥(Q).
+**Lời giải:** Oz thuộc mặt \(x=0\) và vuông góc Oy là giao tuyến d. Vì hai mặt vuông góc, đường trong mặt thứ nhất vuông góc d cũng vuông góc mặt thứ hai, nên \(Oz\perp(Q)\).
 
 **Vận dụng**
 
-(P)⊥(Q) theo d. a⊂(P), a⊥d. Có a⊥(Q) không?
+\((P)\perp (Q)\) theo d. \(a\subset (P), a\perp d\). Có \(a\perp (Q)\) không?
 
 <!-- ITEM_ID: THPT-TOP16-T18; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O18 -->
 
@@ -756,10 +761,12 @@ Chóp đều có đường cao qua tâm đáy. Đường nối đỉnh với tru
 > Chóp đều có đáy là đa giác đều và chân đường cao là tâm của đáy, nên các cạnh bên bằng nhau. Độ dài cạnh bên, chiều cao và đường cao mặt bên là ba khái niệm khác.
 
 Tính chất cạnh bên bằng nhau **không** cho phép đồng nhất cạnh bên với chiều cao hay trung đoạn của mặt bên. Trong chóp đều \(S.ABCD\) có đáy vuông tâm \(O\), lấy \(M\) là trung điểm \(AB\). Vì \(SO\perp(ABCD)\), tam giác \(SOM\) vuông tại \(O\), nên đường cao mặt bên \(SM\) là:
+
 \[
 SM^2=SO^2+OM^2.
 \]
-Mặt khác đường cạnh bên \(SA\) thỏa \(SA^2=SO^2+OA^2\). Do \(OA>OM\), thường \(SA>SM>SO\). **Không** nhầm \(OM\) với \(OA\): \(OM\) là bán kính nội tiếp hình vuông đáy, còn \(OA\) là nửa đường chéo đáy.
+
+Mặt khác đường cạnh bên \(SA\) thỏa \(SA^2=SO^2+OA^2\). Vì \(OA>OM>0\), trong hình chóp đều không suy biến này luôn có \(SA>SM>SO\). **Không** nhầm \(OM\) với \(OA\): \(OM\) là bán kính nội tiếp hình vuông đáy, còn \(OA\) là nửa đường chéo đáy.
 
 **Ví dụ minh họa.** Đáy vuông cạnh \(6\) cm và đường cao \(SO=4\) cm. Khi đó \(OM=3\) cm, \(OA=3\sqrt2\) cm. Suy \(SM=\sqrt{4^2+3^2}=5\) cm, còn \(SA=\sqrt{4^2+(3\sqrt2)^2}=\sqrt{34}\) cm. Chọn tam giác \(SOM\) khi hỏi **đường cao mặt bên**, chọn \(SOA\) khi hỏi **cạnh bên**.
 
@@ -767,11 +774,11 @@ Mặt khác đường cạnh bên \(SA\) thỏa \(SA^2=SO^2+OA^2\). Do \(OA>OM\)
 
 **Đề bài:** Chóp tứ giác đều có đáy vuông cạnh 10 cm, chiều cao 12 cm. Tính đường cao mặt bên qua trung điểm một cạnh đáy.
 
-**Lời giải:** Tâm O của đáy vuông cách trung điểm M cạnh đáy OM=5 cm. SO=12 cm vuông góc đáy, nên tam giác SOM vuông O; đường cao mặt bên SM=√(12²+5²)=13 cm, không phải 12 cm.
+**Lời giải:** Tâm O của đáy vuông cách trung điểm M cạnh đáy \(OM=5\,\mathrm{cm}\). Vì \(SO=12\,\mathrm{cm}\) và \(SO\perp(ABCD)\), tam giác SOM vuông tại O; đường cao mặt bên \(SM=\sqrt{12^2+5^2}=13\,\mathrm{cm}\), không phải 12 cm.
 
 **Vận dụng**
 
-Chóp đều đáy vuông cạnh 6, h=4. Đường cao của mặt bên qua trung điểm cạnh đáy dài bao nhiêu?
+Chóp đều đáy vuông cạnh \(6, h=4\). Đường cao của mặt bên qua trung điểm cạnh đáy dài bao nhiêu?
 
 <!-- ITEM_ID: THPT-TOP16-T20; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O20 -->
 
@@ -799,7 +806,7 @@ Cắt chóp đều bằng mặt song song đáy tạo chóp cụt đều với h
 
 **Đề bài:** Chóp cụt đều có hai đáy hình vuông cạnh 10 cm và 4 cm. Tính tỉ số diện tích hai đáy.
 
-**Lời giải:** Diện tích hai đáy là 10²=100 và 4²=16 cm². Tỉ số 100:16=25:4, bằng bình phương tỉ số cạnh (10/4)².
+**Lời giải:** Diện tích đáy lớn \(10^2=100\,\mathrm{cm}^2\), đáy nhỏ \(4^2=16\,\mathrm{cm}^2\). Tỉ số \(100:16=25:4\), bằng bình phương tỉ số cạnh \((\frac{10}4)^2\).
 
 **Vận dụng**
 
@@ -809,11 +816,11 @@ Hai đáy hình vuông cạnh 6 và 3 có tỉ số diện tích đáy lớn : �
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-36:9 = 4:1.
+\(36:9 = 4:1\).
 
 **Kiểm lỗi**
 
-Nếu lấy tỉ số cạnh 8:4 làm ngay tỉ số diện tích, đọc **Kiến thức 4.7**: hai đáy chóp cụt đều đồng dạng nên tỉ số diện tích là bình phương tỉ số cạnh tương ứng. Thử **Bài luyện 52** và **Bài luyện 64**.
+Nếu lấy tỉ số cạnh \(6:3=2:1\) làm ngay tỉ số diện tích, đọc **Kiến thức 4.7**: hai đáy chóp cụt đều đồng dạng nên tỉ số diện tích là bình phương tỉ số cạnh tương ứng. Thử **Bài luyện 52** và **Bài luyện 64**.
 
 </details>
 
@@ -821,7 +828,7 @@ Nếu lấy tỉ số cạnh 8:4 làm ngay tỉ số diện tích, đọc **Ki�
 >
 > - **Góc giữa hai đường:** để so hai đường chéo nhau, chuyển hai phương về cùng điểm bằng đường song song rồi đo góc nhỏ; không lấy số đo góc vẽ phối cảnh.
 > - **Vuông góc đường–mặt:** đường thẳng vuông góc mặt phẳng nếu vuông góc với mọi đường nằm trong mặt; khi chứng minh, đủ chỉ ra vuông góc với **hai đường cắt nhau** nằm trong mặt ấy, không thay bằng hai đường song song.
-> - **Hình chiếu và góc đường–mặt:** dựng chân vuông góc trước khi chọn tam giác tính góc; nếu đường vuông góc mặt phẳng thì góc bằng 90°, đường song song thì góc bằng 0°. Phân biệt góc đường–mặt với góc hai mặt.
+> - **Hình chiếu và góc đường–mặt:** dựng chân vuông góc trước khi chọn tam giác tính góc; nếu đường vuông góc mặt phẳng thì góc bằng \(90^\circ\), đường song song thì góc bằng \(0^\circ\). Phân biệt góc đường–mặt với góc hai mặt.
 > - **Góc nhị diện, hình khối:** đo góc hai mặt bằng hai đường cùng vuông góc giao tuyến tại cùng một điểm trong các mặt; chiều cao lăng trụ/chóp phải vuông góc với mặt đáy, không lấy độ dài cạnh xiên thay thế.
 
 <!-- TOPIC16_APPROVED_SOURCE_END -->

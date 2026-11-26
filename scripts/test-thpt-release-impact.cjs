@@ -699,6 +699,24 @@ function proveW1Recovery(){
  console.log("PASS W1 unchanged approved tree; only exact four deploy/QA files changed");
 }
 
+
+const W4_REFRESH_FILES=new Set([".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/thpt-topic-w4-golden-release-qa.yml",".github/workflows/thpt-topic-w5-golden-release-qa.yml","docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json","docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json","docs/assets/javascripts/math-details-v1.js","docs/assets/javascripts/thpt-topic-w4-golden-v1.js","docs/thpt-preview/chuyen-de/cd16/kien-thuc.md","docs/thpt-preview/chuyen-de/cd16/luyen-tap.md","docs/thpt-preview/chuyen-de/cd16/tu-kiem-tra.md","docs/thpt-preview/chuyen-de/cd17/kien-thuc.md","docs/thpt-preview/chuyen-de/cd17/luyen-tap.md","docs/thpt-preview/chuyen-de/cd17/tu-kiem-tra.md","docs/thpt-preview/chuyen-de/cd18/kien-thuc.md","docs/thpt-preview/chuyen-de/cd18/luyen-tap.md","docs/thpt-preview/chuyen-de/cd18/tu-kiem-tra.md","prototypes/thpt/release-queue/W4_CD16_18_SOURCE_INTAKE_20261123.json","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-topic-w4-golden-browser.py","scripts/test-thpt-topic-w4-shared-owner-delta.py","scripts/test-thpt-topic-w4-source-locked.py"]);
+const W4_REFRESH_BLOBS={"docs/assets/javascripts/thpt-topic-w4-golden-v1.js":"d22fd57a923854c24e780533e6d8fe6f47c9a6e0","docs/thpt-preview/chuyen-de/cd16/kien-thuc.md":"543ecfabcf425fc7d8f476eca4f06134bba8fec8","docs/thpt-preview/chuyen-de/cd16/luyen-tap.md":"e474b4fb5ef7f6d4cd3347a2c2175001c8beaf15","docs/thpt-preview/chuyen-de/cd16/tu-kiem-tra.md":"0f0403f23eca705b907e205733786706a94c5a3c","docs/thpt-preview/chuyen-de/cd17/kien-thuc.md":"51cd07a5903f338732822b4d67082709efee04bf","docs/thpt-preview/chuyen-de/cd17/luyen-tap.md":"152f74ee481d5c9bbe23a168bb57f03a73be892c","docs/thpt-preview/chuyen-de/cd17/tu-kiem-tra.md":"f1ad9835cb203c07718ce4cc37e7adb76fd219d3","docs/thpt-preview/chuyen-de/cd18/kien-thuc.md":"a53ea677c5a69118e6965cc68a68162b3dc4166b","docs/thpt-preview/chuyen-de/cd18/luyen-tap.md":"09175d2fd967205e4498e886a0bf422d1aac8449","docs/thpt-preview/chuyen-de/cd18/tu-kiem-tra.md":"0923b36a797d53e51e2fa2a6e603557307a4e7e5","scripts/test-thpt-topic-w4-source-locked.py":"99a26f7009b57dd8ccc11a059bbe8d8728fc7caa","scripts/test-thpt-topic-w4-golden-browser.py":"55544d27288b875d45c4cb945be0f1431ea08e9e","docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json":"7291de1c6afd270dc5b3da3c01d8b9c660b00e85","docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json":"0570aed17f04537aa5c1047c56d3bf18b91a25dd","docs/assets/javascripts/math-details-v1.js":"0a817a09fb9111a0d6f45fa340caeeede28f9687","prototypes/thpt/release-queue/W4_CD16_18_SOURCE_INTAKE_20261123.json":"63488123ec85341b4c232a0897932763f596fd3e","scripts/test-thpt-topic-w4-shared-owner-delta.py":"a3e08708ebd3226df6073583d7e4b8fae6b6d053",".github/workflows/deploy.yml":"266e857d3ff431c7a82046fc361ef3b8b5991b8d",".github/workflows/thpt-deploy-scope-safety-qa.yml":"d5f523aca3d49234a8c60927e33abb4dc2c9bb34",".github/workflows/thpt-topic-rw1-math-qa.yml":"31b57bfca73a422b5cbb510e7fff243ebd70bb2f",".github/workflows/thpt-topic-w4-golden-release-qa.yml":"e9019fef20459693444266276e217391eb1ea7a2",".github/workflows/thpt-topic-w5-golden-release-qa.yml":"fdfd8f3256ab6cdb4e75015b43451c93c45718b2"};
+function isExactW4Refresh(files){
+ const crypto=require("node:crypto"),blob=p=>{const b=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
+ return files.length===W4_REFRESH_FILES.size&&new Set(files).size===files.length&&files.every(f=>W4_REFRESH_FILES.has(f))&&Object.entries(W4_REFRESH_BLOBS).every(([p,sha])=>blob(p)===sha);
+}
+function proveW4Refresh(){
+ const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"}),base=process.env.BASE_SHA;
+ assert(base&&/^[0-9a-f]{40}$/.test(base),"W4 requires actual base SHA");
+ assert.equal(git("rev-parse",base+"^{tree}").trim(),"854ca224634dbfe394f6637c45ef0d2e8a4c79e3","W4 base must have exact W3b candidate tree; reconcile after merge if changed");
+ assert(isExactW4Refresh(git("diff","--no-renames","--name-only",base,"HEAD").trim().split("\n")),"W4 exact scope HOLD");
+ const helper="docs/assets/javascripts/math-details-v1.js",before=git("show",base+":"+helper),now=fs.readFileSync(helper,"utf8");
+ assert(now.includes("cd(?:0[1-9]|1[0-8])\\/(?:luyen-tap|tu-kiem-tra)")&&now.replace("cd(?:0[1-9]|1[0-8])\\/(?:luyen-tap|tu-kiem-tra)","cd(?:0[1-9]|1[0-5])\\/(?:luyen-tap|tu-kiem-tra)")===before,"Unrelated shared math behavior changed");
+ for(const p of [helper,"docs/assets/javascripts/thpt-topic-w4-golden-v1.js"])cp.execFileSync("node",["--check",p],{stdio:"inherit"});
+ console.log("PASS exact W4 signed projections + two owner-approved public SGK deltas; W3b preserved");
+}
+
 const W3B_REFRESH_FILES=new Set([".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/thpt-topic-w3-golden-release-qa.yml","docs/assets/javascripts/math-details-v1.js","docs/assets/javascripts/thpt-topic-w3-golden-v1.js","docs/thpt-preview/chuyen-de/cd15/kien-thuc.md","docs/thpt-preview/chuyen-de/cd15/luyen-tap.md","docs/thpt-preview/chuyen-de/cd15/tu-kiem-tra.md","prototypes/thpt/release-queue/W3_CD12_15_SOURCE_INTAKE_20261122.json","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-topic-w3-golden-browser.py","scripts/test-thpt-topic-w3-source-locked.py"]);
 const W3B_REFRESH_BLOBS={"docs/thpt-preview/chuyen-de/cd15/kien-thuc.md":"421e83b1229e4b2a5fc5a0193a864956da277273","docs/thpt-preview/chuyen-de/cd15/luyen-tap.md":"1cf97880db7acbab45da1ed71fbd1baaeb40c57e","docs/thpt-preview/chuyen-de/cd15/tu-kiem-tra.md":"692a495977ddcc2d450ab7ddd514a64b3b510751","docs/assets/javascripts/thpt-topic-w3-golden-v1.js":"6b437fbf873704d2a39534d1ae16815b5e6e8414","scripts/test-thpt-topic-w3-source-locked.py":"0da3153bac79971ac22d27f8198f2cc671d281d4","scripts/test-thpt-topic-rw1-math-browser.py":"1f6cda997d0142f505ab2dfcb82b84ac7e17623a","scripts/test-thpt-topic-w3-golden-browser.py":"bc06b9f0013006a97388675cc25688b534b4ae43","docs/assets/javascripts/math-details-v1.js":"8026a1042d086d1f3bf33d272b47dc1cac8d8c33","prototypes/thpt/release-queue/W3_CD12_15_SOURCE_INTAKE_20261122.json":"0c6692dc125c8cf536216a447362e898b3cbe0cc",".github/workflows/deploy.yml":"a42ac809706fecad42d95d43055ac8a11c5a2fbd",".github/workflows/thpt-deploy-scope-safety-qa.yml":"c10fec855d2e4dae5d23a05ce26034206e056684",".github/workflows/thpt-topic-rw1-math-qa.yml":"6501b3b352186ff99abfb0ba8eabe1ca7e183fda",".github/workflows/thpt-topic-w3-golden-release-qa.yml":"f4d766f98c583871c364c50667975ba93f393210"};
 function isExactW3bRefresh(files){
@@ -889,6 +907,7 @@ function classify(paths,{manual=false,base=""}={}){
  if(files.length===MATH_NOTATION_GOVERNANCE.size&&new Set(files).size===files.length&&files.every(p=>MATH_NOTATION_GOVERNANCE.has(p)))
   return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"EXACT_MATH_NOTATION_GOVERNANCE_ONLY"};
  if(isExactW1Recovery(files,base))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_W1_DEPLOY_RECOVERY_EXACT"};
+ if(isExactW4Refresh(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_W4_REFRESH"};
  if(isExactW3bRefresh(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_W3B_REFRESH"};
  if(isExactW3aRefresh(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_W3A_REFRESH"};
  if(isExactW2bRefresh(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_W2B_REFRESH"};
@@ -1091,6 +1110,12 @@ function selfTest(){
  assert.notEqual(classify(w1Recovery,{base:"0".repeat(40)}).reason,"OWNER_W1_DEPLOY_RECOVERY_EXACT");
  assert.notEqual(classify([...w1Recovery,"docs/assets/javascripts/firebase-gemini-v1.js"],{base:W1_RECOVERY_BASE}).reason,"OWNER_W1_DEPLOY_RECOVERY_EXACT");
  assert.notEqual(classify(w1Recovery,{base:W1_RECOVERY_BASE,manual:true}).reason,"OWNER_W1_DEPLOY_RECOVERY_EXACT");
+ const refreshW4=[...W4_REFRESH_FILES];
+ if(isExactW4Refresh(refreshW4))assert.equal(classify(refreshW4).reason,"OWNER_TOPIC_W4_REFRESH");
+ else assert.equal(classify(refreshW4).impact,"FULL");
+ assert.equal(classify([...refreshW4,"mkdocs.yml"]).impact,"FULL");
+ assert.equal(classify(refreshW4.slice(1)).impact,"FULL");
+ assert.equal(classify(refreshW4,{manual:true}).impact,"FULL");
  const refreshW3b=[...W3B_REFRESH_FILES];
  if(isExactW3bRefresh(refreshW3b))assert.equal(classify(refreshW3b).reason,"OWNER_TOPIC_W3B_REFRESH");
  else assert.equal(classify(refreshW3b).impact,"FULL");
@@ -1508,7 +1533,8 @@ function selfTest(){
  console.log("PASS scoped CI impact classifier: canonical SGK page/receipt-only fast lanes, global/unknown/assessment full, manual full");
 }
 if(require.main===module){
- if(process.argv.includes("--prove-w3b-refresh"))proveW3bRefresh();
+ if(process.argv.includes("--prove-w4-refresh"))proveW4Refresh();
+ else if(process.argv.includes("--prove-w3b-refresh"))proveW3bRefresh();
  else if(process.argv.includes("--prove-w3a-refresh"))proveW3aRefresh();
  else if(process.argv.includes("--prove-w2b-refresh"))proveW2bRefresh();
  else if(process.argv.includes("--prove-w2a-refresh"))proveW2aRefresh();
