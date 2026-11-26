@@ -230,7 +230,7 @@ Nếu em lấy \(x=1\) hoặc \(x=3\) cho dấu \(>0\), hãy thế vào đề g�
 
 ### 2.6. Bất phương trình đúng với mọi x
 
-> **TÍNH CHẤT — Bất phương trình đúng với mọi x.** Nếu hệ số chứa tham số, kết luận 'đúng với mọi x' phải kiểm tra mọi trường hợp hợp lệ. Một vài phép thử x không chứng minh ‘đúng với mọi x’. Điểm xuất phát là biệt thức và nghiệm kép. Với \(a>0\) **cố định**, \(f(x)>0\) với mọi \(x\in\mathbb R\) khi và chỉ khi \(\Delta<0\); \(f(x)\ge0\) với mọi \(x\in\mathbb R\) khi và chỉ khi \(\Delta\le0\). Với a<0 cố định dùng điều kiện âm tương ứng. Không âm thầm áp dụng cho a(m) có thể bằng 0.
+> **TÍNH CHẤT — Bất phương trình đúng với mọi x.** Nếu hệ số chứa tham số, kết luận 'đúng với mọi x' phải kiểm tra mọi trường hợp hợp lệ. Một vài phép thử x không chứng minh ‘đúng với mọi x’. Điểm xuất phát là biệt thức và nghiệm kép. Với \(a>0\) **cố định**, \(f(x)>0\) với mọi \(x\in\mathbb R\) khi và chỉ khi \(\Delta<0\); \(f(x)\ge0\) với mọi \(x\in\mathbb R\) khi và chỉ khi \(\Delta\le0\). Với \(a<0\) cố định dùng điều kiện âm tương ứng. Không âm thầm áp dụng cho \(a(m)\) có thể bằng 0.
 
 Chẳng hạn, \(x^2+2(m-1)x+(m+1)>0\) với mọi x khi \(\Delta=4m(m-3)<0\), tức \(0<m<3\); hai biên làm tam thức chạm 0 nên bị loại.
 
@@ -238,7 +238,7 @@ Chẳng hạn, \(x^2+2(m-1)x+(m+1)>0\) với mọi x khi \(\Delta=4m(m-3)<0\), t
 
 **Đề bài.** Tìm \(m\) để \(x^2+2(m-1)x+(m+1)>0\) với mọi x thực.
 
-**Lời giải.** Vì a=1 cố định dương, điều kiện dương nghiêm trên \(\mathbb R\) là \(\Delta=4m(m-3)<0\), suy ra \(0<m<3\); hai biên có nghiệm kép nên loại.
+**Lời giải.** Vì \(a=1\) cố định dương, điều kiện dương nghiêm trên \(\mathbb R\) là \(\Delta=4m(m-3)<0\), suy ra \(0<m<3\); hai biên có nghiệm kép nên loại.
 
 **Vận dụng**
 
