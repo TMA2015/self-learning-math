@@ -63,17 +63,17 @@
   },
   {
     "item_id": "THPT-G12-B06-P02",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
-    "stem": "Với hai điểm phân biệt A, B, vectơ $\\overrightarrow{AA}$ có độ dài và hướng thế nào?",
-    "answer_key": "Độ dài 0, hướng không xác định",
-    "worked_solution": "Vectơ-không có hai đầu trùng nhau, không có hướng xác định.",
+    "content_version": "G12-SGK-CHII-B06-B08-R00_CP20D_20261126_P02",
+    "stem": "Với hai điểm phân biệt A, B, vectơ \\(\\overrightarrow{AA}\\) có độ dài bao nhiêu? Theo quy ước, nó có cùng hướng và cùng phương với \\(\\overrightarrow{AB}\\) không?",
+    "answer_key": "Độ dài 0; có, cùng hướng và cùng phương theo quy ước.",
+    "worked_solution": "Hai đầu của \\(\\overrightarrow{AA}\\) trùng nhau nên đây là vectơ-không. Theo quy ước SGK, vectơ-không cùng hướng và cùng phương với mọi vectơ, kể cả \\(\\overrightarrow{AB}\\). Nó không biểu diễn một hướng dịch chuyển riêng; không xác định góc giữa vectơ-không và vectơ khác.",
     "skill_ids": [
       "G12-CHII-B06-O01"
     ],
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Hai đầu A,A trùng nhau; phân biệt độ dài và việc đo góc."
+      "Hai đầu A, A trùng nhau; phân biệt quy ước cùng hướng, cùng phương với việc xác định góc."
     ],
     "rubric": null,
     "interaction": {
@@ -81,16 +81,19 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
       "heading": "**`ITEM_ID=THPT-G12-B06-P02` · `OUTCOME_ID=G12-CHII-B06-O01` · `ROLE=PRACTICE`**",
       "public_projection": {
         "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
         "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "previous_content_version": "G12-SGK-CHII-B06-B08-R00",
+      "revision_scope": "CP20d_OWNER_APPROVED_DELTA_C; PUBLIC_PROJECTION_HISTORICAL"
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Vectơ-không có độ dài 0, không chỉ một hướng hình học riêng; không xác định góc với vectơ-không. Ôn CĐ18 mục 1.1; luyện THPT-TOP18-P01."
+    "remediation": "Nếu nói vectơ-không không cùng hướng với vectơ khác, xem quy ước SGK: cùng hướng và cùng phương với mọi vectơ nhưng không có hướng dịch chuyển riêng hay góc xác định. Ôn CĐ18 mục 1.1; luyện THPT-TOP18-P01."
   },
   {
     "item_id": "THPT-G12-B06-C02",
