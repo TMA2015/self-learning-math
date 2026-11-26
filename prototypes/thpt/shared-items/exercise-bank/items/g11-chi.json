@@ -841,7 +841,7 @@
     "content_version": "THPT-G11-CHI-B03-B04-R01",
     "stem": "Nhiệt độ giả định \\(H(t)=24+3\\cos(\\frac{\\pi t}{6})\\) (°C), t tính bằng giờ, chỉ xét \\(2\\le t\\le10\\). Tìm chu kì của công thức trên toàn trục số, GTLN và GTNN trong miền đã cho.",
     "answer_key": "Chu kì công thức 12 giờ; GTLN 25,5°C tại t bằng 2 và 10; GTNN 21°C tại t bằng 6.",
-    "worked_solution": "Chu kì của công thức trên toàn trục số là \\(\\frac{2\\pi}{\\pi/6}=12\\) giờ. Trên miền đã cho, đối số thuộc \\([\\frac\\pi3;\\frac{5\\pi}{3}]\\). Cos giảm từ \\(\\frac12\\) đến −1 tại \\(\\pi\\) rồi tăng đến \\(\\frac12\\). Vậy \\(H(2)=H(10)=24+\\frac32=25{,}5\\) là GTLN, còn \\(H(6)=24-3=21\\) là GTNN (°C). Không lấy 27°C vì không có đối số là bội của \\(2\\pi\\) trong miền.",
+    "worked_solution": "Chu kì của công thức trên toàn trục số là \\(\\frac{2\\pi}{\\frac\\pi6}=12\\) giờ. Trên miền đã cho, đối số thuộc \\([\\frac\\pi3;\\frac{5\\pi}{3}]\\). Cos giảm từ \\(\\frac12\\) đến −1 tại \\(\\pi\\) rồi tăng đến \\(\\frac12\\). Vậy \\(H(2)=H(10)=24+\\frac32=25{,}5\\) là GTLN, còn \\(H(6)=24-3=21\\) là GTNN (°C). Không lấy 27°C vì không có đối số là bội của \\(2\\pi\\) trong miền.",
     "skill_ids": [
       "G11-B03-MODELING"
     ],
@@ -1120,7 +1120,7 @@
     "content_version": "THPT-G11-CHI-B03-B04-R01",
     "stem": "Giải \\(\\sin x=\\sin(3x)\\) trên \\(\\mathbb R\\).",
     "answer_key": "\\(x=k\\pi\\) hoặc \\(x=\\frac\\pi4+\\frac{k\\pi}{2},\\ k\\in\\mathbb Z\\).",
-    "worked_solution": "Hai góc có cùng sin khi chúng bằng nhau hoặc bù nhau theo modulo \\(2\\pi\\). Nhánh \\(x=3x+2k\\pi\\) cho \\(x=-k\\pi\\), tức mọi bội nguyên của \\(\\pi\\). Nhánh \\(x=\\pi-3x+2k\\pi\\) cho \\(4x=\\pi+2k\\pi\\), tức \\(x=\\frac\\pi4+\\frac{k\\pi}{2}\\). Không chia hai vế cho sin vì có thể làm mất nghiệm.",
+    "worked_solution": "Hai góc có cùng sin khi chúng bằng nhau hoặc bù nhau sau khi cộng một bội nguyên của \\(2\\pi\\). Nhánh \\(x=3x+2k\\pi\\) cho \\(x=-k\\pi\\), tức mọi bội nguyên của \\(\\pi\\). Nhánh \\(x=\\pi-3x+2k\\pi\\) cho \\(4x=\\pi+2k\\pi\\), tức \\(x=\\frac\\pi4+\\frac{k\\pi}{2}\\). Không chia hai vế cho sin vì có thể làm mất nghiệm.",
     "skill_ids": [
       "G11-B04-TRANSFORM"
     ],
