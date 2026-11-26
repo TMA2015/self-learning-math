@@ -1,10 +1,10 @@
 [
   {
     "item_id": "THPT-TOP14-T01",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP14-BANK-CP67-20261126-T01",
     "stem": "Đường \\(3x+2y-1=0\\) có một vectơ chỉ phương nào?",
-    "answer_key": "Một vectơ chỉ phương là (−2;3) (hoặc mọi bội khác 0 của nó).",
-    "worked_solution": "Có thể chọn (−2,3), vì (3,2)·(−2,3)=0.\n\n**Nếu làm sai:** Nếu lấy (3,2) làm chỉ phương, bạn đã nhầm với pháp tuyến; kiểm tích vô hướng.\n\n\n**Kiểm lỗi**\n\nNếu em lấy (3,2) làm chỉ phương cho đường 3x+2y−1=0, đọc **Kiến thức 1.1** để tách vai trò pháp tuyến/chỉ phương. Làm **Bài luyện 1** và **Bài luyện 17**, kiểm tích vô hướng bằng 0.",
+    "answer_key": "Một vectơ chỉ phương là \\((-2;3)\\) (hoặc mọi bội khác 0 của nó).",
+    "worked_solution": "Có thể chọn \\(\\vec u=(-2;3)\\), vì \\((3;2)\\cdot(-2;3)=0\\).\n\n**Nếu làm sai:** Nếu lấy \\((3;2)\\) làm chỉ phương, em đã nhầm với pháp tuyến; kiểm tích vô hướng.\n\n\n**Kiểm lỗi**\n\nNếu em lấy \\((3;2)\\) làm chỉ phương cho đường \\(3x+2y-1=0\\), đọc **Kiến thức 1.1** để tách vai trò pháp tuyến/chỉ phương. Làm **Bài luyện 1** và **Bài luyện 17**, kiểm tích vô hướng bằng 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B19-NORMAL_DIRECTION"
@@ -21,23 +21,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T01",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T02",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Qua P(2,3), có pháp tuyến n=(1,−2). Viết phương trình đường thẳng.",
-    "answer_key": "x−2y+4=0.",
-    "worked_solution": "\\(x-2-2(y-3)=0\\), tức \\(x-2y+4=0\\).\n\n**Nếu làm sai:** Nếu phương trình không đi qua P, thay tọa độ P để tìm sai dấu trước.\n\n\n**Kiểm lỗi**\n\nNếu phương trình không qua P(2,3), đọc **Kiến thức 1.2** về n·PM=0. Làm **Bài luyện 2** rồi **Bài luyện 18**, thay tọa độ điểm vào phương trình để phát hiện sai dấu.",
+    "content_version": "TOP14-BANK-CP67-20261126-T02",
+    "stem": "Qua \\(P(2;3)\\), có pháp tuyến \\(\\vec n=(1;-2)\\). Viết phương trình đường thẳng.",
+    "answer_key": "\\(x-2y+4=0\\).",
+    "worked_solution": "\\(x-2-2(y-3)=0\\), tức \\(x-2y+4=0\\).\n\n**Nếu làm sai:** Nếu phương trình không đi qua P, thay tọa độ P để tìm sai dấu trước.\n\n\n**Kiểm lỗi**\n\nNếu phương trình không qua \\(P(2;3)\\), đọc **Kiến thức 1.2** về \\(\\vec n\\cdot\\overrightarrow{PM}=0\\). Làm **Bài luyện 2** rồi **Bài luyện 18**, thay tọa độ điểm vào phương trình để phát hiện sai dấu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B19-GENERAL_POINT"
@@ -54,23 +57,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T02",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T03",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Đường thẳng qua A(1;−1), có vectơ chỉ phương u⃗=(2;3), viết theo tham số M=A+t u⃗. Tìm tọa độ M khi t=2.",
-    "answer_key": "M(5;5).",
-    "worked_solution": "Phương trình tham số của đường qua A(1;−1) có chỉ phương u⃗=(2;3) là x=1+2t, y=−1+3t. Cùng thay t=2 vào cả hai biểu thức, được M(5;5).\n\n**Nếu làm sai:** Nếu thay t khác nhau cho x và y, bạn đã bỏ mất điều kiện một tham số chung.\n\n\n**Kiểm lỗi**\n\nNếu dùng hai giá trị t khác nhau cho x,y, đọc **Kiến thức 1.3**: một điểm trên đường tương ứng một tham số chung. Làm **Bài luyện 3** và **Bài luyện 19**, thế t vào cả hai tọa độ.",
+    "content_version": "TOP14-BANK-CP67-20261126-T03",
+    "stem": "Đường thẳng qua \\(A(1;-1)\\), có vectơ chỉ phương \\(\\vec u=(2;3)\\), viết theo tham số \\(\\overrightarrow{AM}=t\\vec u\\). Tìm tọa độ M khi \\(t=2\\).",
+    "answer_key": "\\(M(5;5)\\).",
+    "worked_solution": "Phương trình tham số của đường là \\(x=1+2t,\\ y=-1+3t\\). Cùng thay \\(t=2\\) vào cả hai biểu thức, được \\(M(5;5)\\).\n\n**Nếu làm sai:** Nếu thay t khác nhau cho x và y, bạn đã bỏ mất điều kiện một tham số chung.\n\n\n**Kiểm lỗi**\n\nNếu dùng hai giá trị t khác nhau cho x,y, đọc **Kiến thức 1.3**: một điểm trên đường tương ứng một tham số chung. Làm **Bài luyện 3** và **Bài luyện 19**, thế t vào cả hai tọa độ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B19-PARAMETRIC"
@@ -87,23 +93,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T03",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T04",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Qua A(0,2), B(2,0), viết phương trình đường.",
-    "answer_key": "x+y−2=0.",
-    "worked_solution": "AB⃗=(2;−2) là chỉ phương; chọn pháp tuyến (1;1) vì 2−2=0. Qua A(0;2), phương trình x+y−2=0. Thay A và B đều cho vế trái bằng 0.\n\n**Nếu làm sai:** Nếu ra x−y−2=0, bạn chưa kiểm cả hai điểm thuộc đường.\n\n\n**Kiểm lỗi**\n\nNếu đường vừa lập không chứa cả hai điểm, đọc **Kiến thức 1.4** để dùng vectơ AB làm chỉ phương. Làm **Bài luyện 4** và **Bài luyện 20**, kiểm trực tiếp hai điểm.",
+    "content_version": "TOP14-BANK-CP67-20261126-T04",
+    "stem": "Qua \\(A(0;2),\\ B(2;0)\\), viết phương trình đường.",
+    "answer_key": "\\(x+y-2=0\\).",
+    "worked_solution": "\\(\\overrightarrow{AB}=(2;-2)\\) là chỉ phương; chọn pháp tuyến \\((1;1)\\) vì \\(2-2=0\\). Qua \\(A(0;2)\\), phương trình \\(x+y-2=0\\). Thay A và B đều cho vế trái bằng 0.\n\n**Nếu làm sai:** Nếu ra \\(x-y-2=0\\), em chưa kiểm cả hai điểm thuộc đường.\n\n\n**Kiểm lỗi**\n\nNếu đường vừa lập không chứa cả hai điểm, đọc **Kiến thức 1.4** để dùng vectơ \\(\\overrightarrow{AB}\\) làm chỉ phương. Làm **Bài luyện 4** và **Bài luyện 20**, kiểm trực tiếp hai điểm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B19-TWO_POINTS"
@@ -120,23 +129,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T04",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T05",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Điểm (−1,3) có thuộc \\(x+2y-5=0\\) không?",
+    "content_version": "TOP14-BANK-CP67-20261126-T05",
+    "stem": "Điểm \\((-1;3)\\) có thuộc \\(x+2y-5=0\\) không?",
     "answer_key": "Có, điểm thuộc đường thẳng.",
-    "worked_solution": "Có, vì −1+6−5=0.\n\n**Nếu làm sai:** Nếu chỉ nhìn hình hoặc kiểm một tọa độ, hãy viết đầy đủ biểu thức bên trái.\n\n\n**Kiểm lỗi**\n\nNếu chỉ so một tọa độ hoặc nhìn hình để xác định điểm thuộc đường, đọc **Kiến thức 1.5**. Làm **Bài luyện 5** và **Bài luyện 21**, thay đầy đủ x,y vào vế trái.",
+    "worked_solution": "Có, vì \\(-1+6-5=0\\).\n\n**Nếu làm sai:** Nếu chỉ nhìn hình hoặc kiểm một tọa độ, hãy viết đầy đủ biểu thức bên trái.\n\n\n**Kiểm lỗi**\n\nNếu chỉ so một tọa độ hoặc nhìn hình để xác định điểm thuộc đường, đọc **Kiến thức 1.5**. Làm **Bài luyện 5** và **Bài luyện 21**, thay đầy đủ x,y vào vế trái.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B19-MEMBERSHIP"
@@ -153,23 +165,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T05",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T06",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Qua giao của x+y=6 và x−y=2, song song \\(3x+y-1=0\\). Tìm phương trình.",
-    "answer_key": "3x+y−14=0.",
-    "worked_solution": "Cộng x+y=6 và x−y=2 được 2x=8, nên x=4, y=2. Đường song song với 3x+y−1=0 có dạng 3x+y+c=0. Thay (4;2) được c=−14. Hệ số tự do −14 khác −1 nên hai đường phân biệt.\n\n**Nếu làm sai:** Nếu thế điểm giao không thỏa, quay lại giải hệ trước khi đặt hằng số.\n\n\n**Kiểm lỗi**\n\nNếu đặt đường qua giao điểm mà không giải hệ trước, đọc **Kiến thức 1.6**. Làm **Bài luyện 8** và **Bài luyện 22**, kiểm nghiệm giao thuộc cả hai đường rồi thế vào đường cần tìm.",
+    "content_version": "TOP14-BANK-CP67-20261126-T06",
+    "stem": "Qua giao của \\(x+y=6\\) và \\(x-y=2\\), song song \\(3x+y-1=0\\). Tìm phương trình.",
+    "answer_key": "\\(3x+y-14=0\\).",
+    "worked_solution": "Cộng \\(x+y=6\\) và \\(x-y=2\\) được \\(2x=8\\), nên \\(x=4,y=2\\). Đường cần tìm có dạng \\(3x+y+c=0\\). Thay \\((4;2)\\) được \\(c=-14\\). Hệ số tự do \\(-14\\ne-1\\) nên hai đường phân biệt; kết quả \\(3x+y-14=0\\).\n\n**Nếu làm sai:** Nếu thế điểm giao không thỏa, quay lại giải hệ trước khi đặt hằng số.\n\n\n**Kiểm lỗi**\n\nNếu đặt đường qua giao điểm mà không giải hệ trước, đọc **Kiến thức 1.6**. Làm **Bài luyện 8** và **Bài luyện 22**, kiểm nghiệm giao thuộc cả hai đường rồi thế vào đường cần tìm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B19-MULTISTEP",
@@ -188,23 +203,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T06",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T07",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP14-BANK-CP67-20261126-T07",
     "stem": "Ban đầu bể có 5 lít, sau 3 phút có 11 lít khi đổ nước với lưu lượng không đổi, không có nước chảy ra. Sau 4 phút có bao nhiêu lít nếu vẫn đổ đều và bể chưa tràn?",
     "answer_key": "13 lít, nếu vẫn đổ đều và chưa tràn.",
-    "worked_solution": "Lượng nước tăng 11−5=6 lít trong 3 phút, nên lưu lượng là 2 lít/phút. V(t)=5+2t, với t tính bằng phút, trong thời gian đổ đều và chưa tràn. V(4)=5+2·4=13 lít.\n\n**Nếu làm sai:** Nếu chỉ lấy 11/3, bạn đã nhầm lượng tổng với lượng **tăng thêm**.\n\n\n**Kiểm lỗi**\n\nNếu lấy 11/3 làm lượng tăng mỗi phút, đọc **Kiến thức 1.7**: hệ số góc là hiệu lượng chia hiệu thời gian, có giá trị ban đầu. Làm **Bài luyện 6** và **Bài luyện 23**, chú ý miền thời gian mô hình có ý nghĩa.",
+    "worked_solution": "Lượng nước tăng \\(11-5=6\\) lít trong 3 phút, nên lưu lượng là 2 lít/phút. \\(V(t)=5+2t\\), với t tính bằng phút, trong thời gian đổ đều, không có nước chảy ra và chưa tràn. \\(V(4)=5+2\\cdot4=13\\) lít.\n\n**Nếu làm sai:** Nếu chỉ lấy \\(\\frac{11}3\\), em đã nhầm lượng tổng với lượng **tăng thêm**.\n\n\n**Kiểm lỗi**\n\nNếu lấy \\(\\frac{11}3\\) làm lượng tăng mỗi phút, đọc **Kiến thức 1.7**: hệ số góc là hiệu lượng chia hiệu thời gian, có giá trị ban đầu. Làm **Bài luyện 6** và **Bài luyện 23**, chú ý miền thời gian mô hình có ý nghĩa.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B19-LINEAR_MODEL"
@@ -221,23 +239,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T07",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T08",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai đường x+2y=3 và 2x+4y=6 có trùng không?",
+    "content_version": "TOP14-BANK-CP67-20261126-T08",
+    "stem": "Hai đường \\(x+2y=3\\) và \\(2x+4y=6\\) có trùng không?",
     "answer_key": "Hai đường trùng nhau.",
-    "worked_solution": "Trùng nhau: toàn bộ phương trình thứ hai bằng 2 lần thứ nhất.\n\n**Nếu làm sai:** Nếu chỉ xét tỉ số a/b mà bỏ c, bạn sẽ nhầm trùng và song song.\n\n\n**Kiểm lỗi**\n\nNếu chỉ thấy pháp tuyến tỉ lệ mà kết luận hai đường trùng, đọc **Kiến thức 2.1**. Làm **Bài luyện 25** và **Bài luyện 39**: kiểm cả hệ số tự do để phân biệt trùng với song song phân biệt.",
+    "worked_solution": "Trùng nhau: toàn bộ phương trình thứ hai bằng 2 lần thứ nhất.\n\n**Nếu làm sai:** Nếu chỉ xét sự tỉ lệ của các hệ số a, b mà bỏ c, em sẽ nhầm trùng và song song.\n\n\n**Kiểm lỗi**\n\nNếu chỉ thấy pháp tuyến tỉ lệ mà kết luận hai đường trùng, đọc **Kiến thức 2.1**. Làm **Bài luyện 25** và **Bài luyện 39**: kiểm cả hệ số tự do để phân biệt trùng với song song phân biệt.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B20-RELATIVE_POSITION"
@@ -254,23 +275,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T08",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T09",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Qua P(1,2), vuông góc \\(x-3y+1=0\\). Viết đường thẳng.",
-    "answer_key": "3x+y−5=0.",
-    "worked_solution": "Đường đã cho có pháp tuyến (1;−3); đường vuông góc nhận vectơ này làm chỉ phương. Chọn pháp tuyến (3;1) vì 3·1+1·(−3)=0. Qua P(1;2), ta có 3(x−1)+(y−2)=0, tức 3x+y−5=0.\n\n**Nếu làm sai:** Nếu chỉ sao chép a,b của đường cũ, bạn đang dựng đường song song chứ không phải vuông góc.\n\n\n**Kiểm lỗi**\n\nNếu dùng lại pháp tuyến của đường cũ khi dựng đường vuông góc, đọc **Kiến thức 2.2**. Làm **Bài luyện 30** và **Bài luyện 40**, kiểm tích vô hướng hai hướng và điểm đã cho.",
+    "content_version": "TOP14-BANK-CP67-20261126-T09",
+    "stem": "Qua \\(P(1;2)\\), vuông góc \\(x-3y+1=0\\). Viết đường thẳng.",
+    "answer_key": "\\(3x+y-5=0\\).",
+    "worked_solution": "Đường đã cho có pháp tuyến \\((1;-3)\\); đường vuông góc nhận vectơ này làm chỉ phương. Chọn pháp tuyến \\((3;1)\\) vì \\(3\\cdot1+1\\cdot(-3)=0\\). Qua \\(P(1;2)\\), ta có \\(3(x-1)+(y-2)=0\\), tức \\(3x+y-5=0\\).\n\n**Nếu làm sai:** Nếu chỉ sao chép a,b của đường cũ, bạn đang dựng đường song song chứ không phải vuông góc.\n\n\n**Kiểm lỗi**\n\nNếu dùng lại pháp tuyến của đường cũ khi dựng đường vuông góc, đọc **Kiến thức 2.2**. Làm **Bài luyện 30** và **Bài luyện 40**, kiểm tích vô hướng hai hướng và điểm đã cho.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B20-PERPENDICULAR",
@@ -288,23 +312,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T09",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T10",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tìm giao của x+2y=7 và x−y=1.",
-    "answer_key": "Giao điểm (3;2).",
-    "worked_solution": "Từ x=y+1, thế được 3y=6, y=2,x=3. Giao (3,2).\n\n**Nếu làm sai:** Nếu chỉ thế được một đường, hãy kiểm điều kiện thứ hai.\n\n\n**Kiểm lỗi**\n\nNếu nghiệm chỉ thỏa một đường, đọc **Kiến thức 2.3** rồi làm **Bài luyện 27** và **Bài luyện 41**. Giải cùng một hệ và thay nghiệm vào cả hai phương trình.",
+    "content_version": "TOP14-BANK-CP67-20261126-T10",
+    "stem": "Tìm giao của \\(x+2y=7\\) và \\(x-y=1\\).",
+    "answer_key": "Giao điểm \\((3;2)\\).",
+    "worked_solution": "Từ \\(x=y+1\\), thế được \\(3y=6,\\ y=2,\\ x=3\\). Giao điểm \\((3;2)\\).\n\n**Nếu làm sai:** Nếu chỉ thế được một đường, hãy kiểm điều kiện thứ hai.\n\n\n**Kiểm lỗi**\n\nNếu nghiệm chỉ thỏa một đường, đọc **Kiến thức 2.3** rồi làm **Bài luyện 27** và **Bài luyện 41**. Giải cùng một hệ và thay nghiệm vào cả hai phương trình.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B20-INTERSECTION"
@@ -321,23 +348,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T10",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T11",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "P(2,1), d:3x+4y−20=0. Tính khoảng cách.",
+    "content_version": "TOP14-BANK-CP67-20261126-T11",
+    "stem": "\\(P(2;1),\\ d:3x+4y-20=0\\). Tính khoảng cách.",
     "answer_key": "2 đơn vị độ dài.",
-    "worked_solution": "|6+4−20|/5=2 đơn vị.\n\n**Nếu làm sai:** Nếu ra −2, bạn quên trị tuyệt đối; nếu ra 10, bạn quên chia độ dài pháp tuyến.\n\n\n**Kiểm lỗi**\n\nNếu khoảng cách có dấu âm hay quên chia độ dài pháp tuyến, đọc **Kiến thức 2.4**. Làm **Bài luyện 28** và **Bài luyện 42**, kiểm trị tuyệt đối và mẫu √(a²+b²).",
+    "worked_solution": "\\(\\frac{|6+4-20|}5=2\\) đơn vị.\n\n**Nếu làm sai:** Nếu ra \\(-2\\), em quên trị tuyệt đối; nếu ra 10, em quên chia độ dài pháp tuyến.\n\n\n**Kiểm lỗi**\n\nNếu khoảng cách có dấu âm hay quên chia độ dài pháp tuyến, đọc **Kiến thức 2.4**. Làm **Bài luyện 28** và **Bài luyện 42**, kiểm trị tuyệt đối và mẫu \\(\\sqrt{a^2+b^2}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B20-DISTANCE"
@@ -354,23 +384,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T11",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T12",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Góc nhỏ giữa trục Oy (x=0) và đường y=x là bao nhiêu?",
-    "answer_key": "45°.",
-    "worked_solution": "45°, vì pháp tuyến (1,0) và (1,−1) có cos góc nhỏ 1/√2.\n\n**Nếu làm sai:** Nếu dùng góc 135° do đổi chiều vectơ, hãy nhớ đường thẳng không có chiều cố định.\n\n\n**Kiểm lỗi**\n\nNếu góc nhọn ra 135° vì chọn hướng pháp tuyến khác, đọc **Kiến thức 2.5**. Làm **Bài luyện 29** và **Bài luyện 43**, dùng trị tuyệt đối trong công thức cos góc nhỏ giữa hai đường.",
+    "content_version": "TOP14-BANK-CP67-20261126-T12",
+    "stem": "Góc nhỏ giữa trục Oy (\\(x=0\\)) và đường \\(y=x\\) là bao nhiêu?",
+    "answer_key": "\\(45^\\circ\\).",
+    "worked_solution": "\\(45^\\circ\\), vì pháp tuyến \\((1;0)\\) và \\((1;-1)\\) cho cos góc nhỏ bằng \\(\\frac1{\\sqrt2}\\).\n\n**Nếu làm sai:** Nếu dùng góc 135° do đổi chiều vectơ, hãy nhớ đường thẳng không có chiều cố định.\n\n\n**Kiểm lỗi**\n\nNếu góc nhọn ra 135° vì chọn hướng pháp tuyến khác, đọc **Kiến thức 2.5**. Làm **Bài luyện 29** và **Bài luyện 43**, dùng trị tuyệt đối trong công thức cos góc nhỏ giữa hai đường.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B20-ANGLE"
@@ -387,23 +420,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T12",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T13",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Viết đường tròn tâm (−1,3), bán kính 2.",
-    "answer_key": "(x+1)²+(y−3)²=4.",
-    "worked_solution": "\\((x+1)^2+(y-3)^2=4\\).\n\n**Nếu làm sai:** Nếu dấu trước hoành độ tâm nhầm, thay trực tiếp điểm cách tâm đúng R vào phương trình.\n\n\n**Kiểm lỗi**\n\nNếu khai triển sai dấu của tâm I(−1,3), đọc **Kiến thức 3.1**. Làm **Bài luyện 45** và **Bài luyện 59**, thế điểm cách tâm đúng R để kiểm.",
+    "content_version": "TOP14-BANK-CP67-20261126-T13",
+    "stem": "Viết đường tròn tâm \\((-1;3)\\), bán kính 2.",
+    "answer_key": "\\((x+1)^2+(y-3)^2=4\\).",
+    "worked_solution": "\\((x+1)^2+(y-3)^2=4\\).\n\n**Nếu làm sai:** Nếu dấu trước hoành độ tâm nhầm, thay trực tiếp điểm cách tâm đúng R vào phương trình.\n\n\n**Kiểm lỗi**\n\nNếu khai triển sai dấu của tâm \\(I(-1;3)\\), đọc **Kiến thức 3.1**. Làm **Bài luyện 45** và **Bài luyện 59**, thế điểm cách tâm đúng R để kiểm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B21-CIRCLE_STANDARD"
@@ -420,23 +456,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T13",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T14",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "x²+y²+2x−4y+1=0 là đường tròn tâm nào, bán kính bao nhiêu?",
-    "answer_key": "Tâm I(−1;2), R=2.",
-    "worked_solution": "Viết x²+2x=(x+1)²−1 và y²−4y=(y−2)²−4. Thế vào phương trình, được (x+1)²+(y−2)²=4. Tâm I(−1;2) và bán kính R=√4=2.\n\n**Nếu làm sai:** Nếu đọc R=4, bạn đã nhầm bán kính với **bình phương** bán kính.\n\n\n**Kiểm lỗi**\n\nNếu đọc R=4 khi hoàn thành bình phương cho R²=4, đọc **Kiến thức 3.2**. Làm **Bài luyện 46** và **Bài luyện 60**, kiểm R>0 và tâm đúng dấu.",
+    "content_version": "TOP14-BANK-CP67-20261126-T14",
+    "stem": "\\(x^2+y^2+2x-4y+1=0\\) là đường tròn tâm nào, bán kính bao nhiêu?",
+    "answer_key": "Tâm \\(I(-1;2),R=2\\).",
+    "worked_solution": "Viết \\(x^2+2x=(x+1)^2-1\\) và \\(y^2-4y=(y-2)^2-4\\). Thế vào phương trình, được \\((x+1)^2+(y-2)^2=4\\). Tâm \\(I(-1;2)\\), bán kính \\(R=\\sqrt4=2\\).\n\n**Nếu làm sai:** Nếu đọc \\(R=4\\), em đã nhầm bán kính với **bình phương** bán kính.\n\n\n**Kiểm lỗi**\n\nNếu đọc \\(R=4\\) khi hoàn thành bình phương cho \\(R^2=4\\), đọc **Kiến thức 3.2**. Làm **Bài luyện 46** và **Bài luyện 60**, kiểm \\(R>0\\) và tâm đúng dấu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B21-CIRCLE_GENERAL"
@@ -453,23 +492,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T14",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T15",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Đường tròn tâm O, R=5, P(3,4). Viết tiếp tuyến tại P.",
-    "answer_key": "3x+4y=25.",
-    "worked_solution": "Kiểm OP=√(3²+4²)=5=R nên P thuộc đường tròn. Tiếp tuyến tại P vuông góc với bán kính OP, nên nhận OP⃗=(3;4) làm pháp tuyến. Phương trình 3(x−3)+4(y−4)=0, hay 3x+4y=25.\n\n**Nếu làm sai:** Nếu dùng vectơ tiếp tuyến làm pháp tuyến, hãy vẽ IP vuông góc với tiếp tuyến rồi kiểm P thực sự thuộc đường tròn.\n\n\n**Kiểm lỗi**\n\nNếu chọn vectơ tiếp tuyến làm pháp tuyến hoặc chưa kiểm P nằm trên đường tròn, đọc **Kiến thức 3.3**. Làm **Bài luyện 48** và **Bài luyện 61**, dùng bán kính IP vuông góc tiếp tuyến.",
+    "content_version": "TOP14-BANK-CP67-20261126-T15",
+    "stem": "Đường tròn tâm \\(O(0;0)\\), \\(R=5\\), \\(P(3;4)\\). Viết tiếp tuyến tại P.",
+    "answer_key": "\\(3x+4y=25\\).",
+    "worked_solution": "Kiểm \\(OP=\\sqrt{3^2+4^2}=5=R\\) nên P thuộc đường tròn. Tiếp tuyến tại P vuông góc với bán kính OP, nên nhận \\(\\overrightarrow{OP}=(3;4)\\) làm pháp tuyến. Phương trình \\(3(x-3)+4(y-4)=0\\), hay \\(3x+4y=25\\).\n\n**Nếu làm sai:** Nếu dùng vectơ tiếp tuyến làm pháp tuyến, hãy vẽ IP vuông góc với tiếp tuyến rồi kiểm P thực sự thuộc đường tròn.\n\n\n**Kiểm lỗi**\n\nNếu chọn vectơ tiếp tuyến làm pháp tuyến hoặc chưa kiểm P nằm trên đường tròn, đọc **Kiến thức 3.3**. Làm **Bài luyện 48** và **Bài luyện 61**, dùng bán kính IP vuông góc tiếp tuyến.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B21-CIRCLE_TANGENT"
@@ -486,23 +528,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T15",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T16",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tìm tâm và bán kính đường tròn đi qua ba điểm A(0;0), B(6;0), C(0;8).",
-    "answer_key": "Tâm I(3;4), R=5.",
-    "worked_solution": "A,B,C tạo thành tam giác vuông tại A vì AB nằm trên Ox và AC nằm trên Oy. Tâm đường tròn ngoại tiếp là trung điểm BC: I(3;4). R=IA=√(3²+4²)=5.\n\n**Nếu làm sai:** Nếu một điểm không cách tâm đúng R, kiểm lại dấu ở tọa độ trung điểm.\n\n\n**Kiểm lỗi**\n\nNếu tâm tìm được không cách đều A,B,C, đọc **Kiến thức 3.4**. Làm **Bài luyện 50** và **Bài luyện 62**, kiểm ba bán kính bằng nhau; ba điểm không thẳng hàng.",
+    "content_version": "TOP14-BANK-CP67-20261126-T16",
+    "stem": "Tìm tâm và bán kính đường tròn đi qua ba điểm \\(A(0;0), B(6;0), C(0;8)\\).",
+    "answer_key": "Tâm \\(I(3;4),R=5\\).",
+    "worked_solution": "A,B,C tạo thành tam giác vuông tại A vì AB nằm trên Ox và AC nằm trên Oy. Tâm đường tròn ngoại tiếp là trung điểm BC: \\(I(3;4)\\). \\(R=IA=\\sqrt{3^2+4^2}=5\\).\n\n**Nếu làm sai:** Nếu một điểm không cách tâm đúng R, kiểm lại dấu ở tọa độ trung điểm.\n\n\n**Kiểm lỗi**\n\nNếu tâm tìm được không cách đều A,B,C, đọc **Kiến thức 3.4**. Làm **Bài luyện 50** và **Bài luyện 62**, kiểm ba bán kính bằng nhau; ba điểm không thẳng hàng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B21-CIRCLE_THROUGH_POINTS"
@@ -519,23 +564,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T16",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T17",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Đường tròn x²+y²=25 và x=5 có mấy điểm chung? Điểm nào?",
-    "answer_key": "Một điểm chung (5;0), tiếp xúc.",
-    "worked_solution": "Thế x=5 vào x²+y²=25, được y²=0 nên y=0. Có đúng một điểm chung (5;0). Đường thẳng x=5 tiếp xúc với đường tròn vì khoảng cách từ tâm O đến đường thẳng bằng bán kính 5.\n\n**Nếu làm sai:** Nếu đếm hai nghiệm bằng nhau là hai tiếp điểm, nhớ nghiệm bội chỉ cho **một** điểm.\n\n\n**Kiểm lỗi**\n\nNếu tính hai giao điểm khi đường chỉ tiếp xúc, đọc **Kiến thức 3.5**. Làm **Bài luyện 49** và **Bài luyện 63**, so d(I,đường) với R; tiếp xúc chỉ có một điểm.",
+    "content_version": "TOP14-BANK-CP67-20261126-T17",
+    "stem": "Đường tròn \\(x^2+y^2=25\\) và \\(x=5\\) có mấy điểm chung? Điểm nào?",
+    "answer_key": "Một điểm chung \\((5;0)\\), tiếp xúc.",
+    "worked_solution": "Thế \\(x=5\\) vào \\(x^2+y^2=25\\), được \\(y^2=0\\) nên \\(y=0\\). Có đúng một điểm chung \\((5;0)\\). Đường thẳng \\(x=5\\) tiếp xúc với đường tròn vì khoảng cách từ tâm O đến đường thẳng bằng bán kính 5.\n\n**Nếu làm sai:** Nếu đếm hai nghiệm bằng nhau là hai tiếp điểm, nhớ nghiệm bội chỉ cho **một** điểm.\n\n\n**Kiểm lỗi**\n\nNếu tính hai giao điểm khi đường chỉ tiếp xúc, đọc **Kiến thức 3.5**. Làm **Bài luyện 49** và **Bài luyện 63**, so \\(d(I,d)\\) với R; tiếp xúc chỉ có một điểm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B21-LINE_CIRCLE_POSITION"
@@ -552,23 +600,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T17",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T18",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với elip x²/25+y²/16=1, tìm hai tiêu điểm.",
-    "answer_key": "F₁(−3;0), F₂(3;0).",
-    "worked_solution": "c²=25−16=9⇒c=3, F₁(−3,0),F₂(3,0).\n\n**Nếu làm sai:** Nếu lấy c²=a²+b², bạn đang dùng công thức của **hypebol** chứ không phải elip.\n\n\n**Kiểm lỗi**\n\nNếu dùng c²=a²+b² cho elip, đọc **Kiến thức 4.1**. Làm **Bài luyện 65** và **Bài luyện 80**: trên elip chính tắc a²>b²>0, c²=a²−b².",
+    "content_version": "TOP14-BANK-CP67-20261126-T18",
+    "stem": "Với elip \\(\\frac{x^2}{25}+\\frac{y^2}{16}=1\\), tìm hai tiêu điểm.",
+    "answer_key": "\\(F_1(-3;0),F_2(3;0)\\).",
+    "worked_solution": "\\(c^2=25-16=9\\Rightarrow c=3\\), \\(F_1(-3;0),F_2(3;0)\\).\n\n**Nếu làm sai:** Nếu lấy \\(c^2=a^2+b^2\\), em đang dùng công thức của **hypebol** chứ không phải elip.\n\n\n**Kiểm lỗi**\n\nNếu dùng \\(c^2=a^2+b^2\\) cho elip, đọc **Kiến thức 4.1**. Làm **Bài luyện 65** và **Bài luyện 80**: trên elip chính tắc \\(a^2>b^2>0,\\ c^2=a^2-b^2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B22-ELLIPSE_PARAMETERS"
@@ -585,23 +636,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T18",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T19",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với hypebol x²/16−y²/9=1, hai tiêu điểm ở đâu?",
-    "answer_key": "F₁(−5;0), F₂(5;0).",
-    "worked_solution": "c²=16+9=25, c=5, tiêu điểm (−5,0),(5,0).\n\n**Nếu làm sai:** Nếu tính c=√7, bạn đã dùng nhầm phép trừ của elip.\n\n\n**Kiểm lỗi**\n\nNếu lấy c²=a²−b² cho hypebol, đọc **Kiến thức 4.2**. Làm **Bài luyện 66** và **Bài luyện 81**, kiểm dấu trừ trong phương trình và c²=a²+b².",
+    "content_version": "TOP14-BANK-CP67-20261126-T19",
+    "stem": "Với hypebol \\(\\frac{x^2}{16}-\\frac{y^2}{9}=1\\), hai tiêu điểm ở đâu?",
+    "answer_key": "\\(F_1(-5;0),F_2(5;0)\\).",
+    "worked_solution": "\\(c^2=16+9=25,\\ c=5\\), tiêu điểm \\((-5;0),(5;0)\\).\n\n**Nếu làm sai:** Nếu tính \\(c=\\sqrt7\\), em đã dùng nhầm phép trừ của elip.\n\n\n**Kiểm lỗi**\n\nNếu lấy \\(c^2=a^2-b^2\\) cho hypebol, đọc **Kiến thức 4.2**. Làm **Bài luyện 66** và **Bài luyện 81**, kiểm dấu trừ trong phương trình và \\(c^2=a^2+b^2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B22-HYPERBOLA_PARAMETERS"
@@ -618,23 +672,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T19",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T20",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với x²/25−y²/9=1, viết phương trình hai tiệm cận.",
-    "answer_key": "y=(3/5)x và y=−(3/5)x.",
-    "worked_solution": "Với hypebol x²/a²−y²/b²=1, hai tiệm cận có phương trình y=±(b/a)x. Ở đây a=5, b=3, nên y=±(3/5)x.\n\n**Nếu làm sai:** Nếu ra x=±5, bạn đã nhầm tọa độ đỉnh với tiệm cận.\n\n\n**Kiểm lỗi**\n\nNếu nhầm tọa độ đỉnh (±a,0) với hai tiệm cận, đọc **Kiến thức 4.3**. Làm **Bài luyện 75** và **Bài luyện 82**; đường tiệm cận qua tâm có hệ số góc ±b/a.",
+    "content_version": "TOP14-BANK-CP67-20261126-T20",
+    "stem": "Với \\(\\frac{x^2}{25}-\\frac{y^2}{9}=1\\), viết phương trình hai tiệm cận.",
+    "answer_key": "\\(y=\\pm\\frac35 x\\).",
+    "worked_solution": "Với hypebol \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\), hai tiệm cận có phương trình \\(y=\\pm\\frac ba x\\). Ở đây \\(a=5,b=3\\), nên \\(y=\\pm\\frac35 x\\).\n\n**Nếu làm sai:** Nếu ra \\(x=\\pm5\\), em đã nhầm tọa độ đỉnh với tiệm cận.\n\n\n**Kiểm lỗi**\n\nNếu nhầm tọa độ đỉnh \\((\\pm a;0)\\) với hai tiệm cận, đọc **Kiến thức 4.3**. Làm **Bài luyện 75** và **Bài luyện 82**; đường tiệm cận qua tâm có hệ số góc \\(\\pm\\frac ba\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B22-HYPERBOLA_ASYMPTOTES"
@@ -651,23 +708,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T20",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T21",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "y²=6x có tiêu điểm và đường chuẩn nào?",
-    "answer_key": "F(3/2;0); đường chuẩn x=−3/2.",
-    "worked_solution": "p=3, F(3/2,0), đường chuẩn x=−3/2.\n\n**Nếu làm sai:** Nếu lấy F(3,0), bạn đã nhầm p với p/2.\n\n\n**Kiểm lỗi**\n\nNếu đồng nhất p với hoành độ tiêu điểm, đọc **Kiến thức 4.4**. Làm **Bài luyện 69** và **Bài luyện 83**, xác định F(p/2,0), đường chuẩn x=−p/2 trong y²=2px.",
+    "content_version": "TOP14-BANK-CP67-20261126-T21",
+    "stem": "\\(y^2=6x\\) có tiêu điểm và đường chuẩn nào?",
+    "answer_key": "\\(F(\\frac32;0)\\); đường chuẩn \\(x=-\\frac32\\).",
+    "worked_solution": "\\(p=3,\\ F(\\frac32;0)\\), đường chuẩn \\(x=-\\frac32\\).\n\n**Nếu làm sai:** Nếu lấy \\(F(3;0)\\), em đã nhầm p với \\(\\frac p2\\).\n\n\n**Kiểm lỗi**\n\nNếu đồng nhất p với hoành độ tiêu điểm, đọc **Kiến thức 4.4**. Làm **Bài luyện 69** và **Bài luyện 83**, xác định \\(F(\\frac p2;0)\\), đường chuẩn \\(x=-\\frac p2\\) trong \\(y^2=2px\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B22-PARABOLA_FOCUS"
@@ -684,23 +744,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T21",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T22",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Parabol y²=4x và đường x=1 có bao nhiêu giao điểm?",
-    "answer_key": "Hai giao điểm (1;2) và (1;−2).",
-    "worked_solution": "Thay x=1 vào y²=4x được y²=4, nên y=2 hoặc y=−2. Cả hai điểm đều thỏa mãn hai phương trình.\n\n**Nếu làm sai:** Nếu chỉ lấy \\(y=2\\), em đã bỏ nghiệm âm khi giải \\(y^2=4\\). Thay \\(x=1\\) vào parabol \\(y^2=4x\\), ta được \\(y=\\pm2\\); cả \\((1,2)\\) và \\((1,-2)\\) đều thuộc parabol và đối xứng qua trục \\(Ox\\).\n\n\n**Kiểm lỗi**\n\nNếu chỉ giữ nghiệm y dương khi giao parabol với đường thẳng hoặc nhầm parabol và elip, đọc **Kiến thức 4.5**. Làm **Bài luyện 84** (cắt elip) và **Bài luyện 87** (cắt parabol), thế nghiệm trở lại cả hai phương trình.",
+    "content_version": "TOP14-BANK-CP67-20261126-T22",
+    "stem": "Parabol \\(y^2=4x\\) và đường \\(x=1\\) có bao nhiêu giao điểm?",
+    "answer_key": "Hai giao điểm \\((1;2),(1;-2)\\).",
+    "worked_solution": "Thay \\(x=1\\) vào \\(y^2=4x\\) được \\(y^2=4\\), nên \\(y=2\\) hoặc \\(y=-2\\). Hai điểm \\((1;2),(1;-2)\\) đều thỏa mãn hai phương trình.\n\n**Nếu làm sai:** Nếu chỉ lấy \\(y=2\\), em đã bỏ nghiệm âm khi giải \\(y^2=4\\). Thay \\(x=1\\) vào parabol \\(y^2=4x\\), ta được \\(y=\\pm2\\); cả \\((1;2)\\) và \\((1;-2)\\) đều thuộc parabol và đối xứng qua trục \\(Ox\\).\n\n\n**Kiểm lỗi**\n\nNếu chỉ giữ nghiệm y dương khi giao parabol với đường thẳng hoặc nhầm parabol và elip, đọc **Kiến thức 4.5**. Làm **Bài luyện 84** (cắt elip) và **Bài luyện 87** (cắt parabol), thế nghiệm trở lại cả hai phương trình.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B22-CONIC_INTERSECTION"
@@ -717,23 +780,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T22",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T23",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Mặt cắt có dạng parabol với đỉnh O, trục Ox và nguồn thu đặt tại tiêu điểm F trên nửa trục Ox dương, cách đỉnh 3 cm. Viết phương trình mặt cắt với tọa độ tính bằng cm.",
-    "answer_key": "y²=12x, tọa độ tính bằng cm.",
-    "worked_solution": "Mặt cắt là parabol đỉnh O, tiêu điểm F(3;0), nên f=3 cm và y²=4fx=12x, với tọa độ tính bằng cm. Đường chuẩn là x=−3. So với y²=2px, ta có p=6, không phải 3.\n\n**Nếu làm sai:** Nếu viết y²=6x, bạn đã quên rằng f=p/2.\n\n\n**Kiểm lỗi**\n\nNếu viết y²=2fx thay cho y²=4fx khi f là khoảng cách từ đỉnh đến tiêu điểm, đọc **Kiến thức 4.6**. Làm **Bài luyện 78** và **Bài luyện 85**; độ rộng mặt cắt bằng hai lần |y| tại cùng x.",
+    "content_version": "TOP14-BANK-CP67-20261126-T23",
+    "stem": "Mặt cắt ăng-ten là parabol có đỉnh \\(O\\), trục đối xứng \\(Ox\\), mở về phía \\(x>0\\). Nguồn thu ở tiêu điểm cách đỉnh 3 cm. Viết phương trình mặt cắt trong đơn vị cm.",
+    "answer_key": "\\(y^2=12x\\), tọa độ tính bằng cm.",
+    "worked_solution": "Mặt cắt là parabol đỉnh O, tiêu điểm \\(F(3;0)\\), nên \\(f=3\\) cm và \\(y^2=4fx=12x\\), với tọa độ tính bằng cm. Đường chuẩn là \\(x=-3\\). So với \\(y^2=2px\\), ta có \\(p=6\\), không phải 3.\n\n**Nếu làm sai:** Nếu viết \\(y^2=6x\\), em đã quên rằng \\(f=\\frac p2\\).\n\n\n**Kiểm lỗi**\n\nNếu viết \\(y^2=2fx\\) thay cho \\(y^2=4fx\\) khi f là khoảng cách từ đỉnh đến tiêu điểm, đọc **Kiến thức 4.6**. Làm **Bài luyện 78** và **Bài luyện 85**; độ rộng mặt cắt bằng hai lần \\(|y|\\) tại cùng x.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B22-PARABOLA_FOCUS",
@@ -751,23 +817,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
       "heading_id": "THPT-TOP14-T23",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
         "blob": "a67f3e9a9e75a6d9ab006f5525848147680dbbe5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "previous_content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T01",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "A,B∈(P), A≠B; M chia AB theo tỉ số AM:MB=2:1. M có thuộc (P) không?",
-    "answer_key": "Có, M∈(P).",
-    "worked_solution": "Có. M thuộc đường AB, mà AB⊂(P); không cần biết tỉ số để suy quan hệ thuộc.\n\n\n\n**Kiểm lỗi**\n\nNếu chỉ vì M chia AB theo một tỉ số mà em không chắc M thuộc (P), trở lại **Kiến thức 1.1**: cả đường AB thuộc (P) khi A,B phân biệt cùng thuộc (P). Thử **Bài luyện 1** và **Bài luyện 9**.",
+    "content_version": "TOP15-BANK-CP67-20261126-T01",
+    "stem": "\\(A,B\\in(P),\\ A\\ne B\\); M chia AB theo tỉ số \\(AM:MB=2:1\\). M có thuộc \\((P)\\) không?",
+    "answer_key": "Có, \\(M\\in(P)\\).",
+    "worked_solution": "Có. M thuộc đường AB, mà \\(AB\\subset (P)\\); không cần biết tỉ số để suy quan hệ thuộc.\n\n\n\n**Kiểm lỗi**\n\nNếu chỉ vì M chia AB theo một tỉ số mà em không chắc M thuộc (P), trở lại **Kiến thức 1.1**: cả đường AB thuộc (P) khi A,B phân biệt cùng thuộc (P). Thử **Bài luyện 1** và **Bài luyện 9**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B10-INCIDENCE"
@@ -784,23 +853,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T01",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T02",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một đường a và điểm M∉a xác định bao nhiêu mặt phẳng?",
+    "content_version": "TOP15-BANK-CP67-20261126-T02",
+    "stem": "Một đường a và điểm \\(M\\notin a\\) xác định bao nhiêu mặt phẳng?",
     "answer_key": "Đúng một mặt phẳng.",
-    "worked_solution": "Đúng một mặt phẳng. Nếu M∈a sẽ có vô số mặt phẳng chứa a.\n\n\n\n**Kiểm lỗi**\n\nNếu ba điểm thẳng hàng mà em kết luận duy nhất một mặt phẳng, đọc **Kiến thức 1.2**: cần ba điểm không thẳng hàng hoặc đường và điểm ngoài đường. Thử **Bài luyện 2** và **Bài luyện 10**.",
+    "worked_solution": "Đúng một mặt phẳng. Nếu \\(M\\in a\\) sẽ có vô số mặt phẳng chứa a.\n\n\n\n**Kiểm lỗi**\n\nNếu ba điểm thẳng hàng mà em kết luận duy nhất một mặt phẳng, đọc **Kiến thức 1.2**: cần ba điểm không thẳng hàng hoặc đường và điểm ngoài đường. Thử **Bài luyện 2** và **Bài luyện 10**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B10-PLANE"
@@ -817,20 +889,23 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T02",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T03",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP15-BANK-CP67-20261126-T03",
     "stem": "Trong tứ diện S.ABC, giao tuyến của (SAB) và (SBC) là gì?",
     "answer_key": "Giao tuyến SB.",
     "worked_solution": "SB vì S,B là hai điểm chung phân biệt của hai mặt.\n\n\n\n**Kiểm lỗi**\n\nNếu nhầm giao tuyến của hai mặt tứ diện, đọc **Kiến thức 1.3**: tìm hai điểm chung phân biệt. Làm **Bài luyện 3** và **Bài luyện 11**, chỉ rõ điểm nào thuộc cả hai mặt.",
@@ -850,23 +925,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T03",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T04",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với d:(x,y,z)=(1+t,2,3+t), d cắt (P):z=0 ở đâu?",
-    "answer_key": "(−2;2;0).",
-    "worked_solution": "t=−3, nên d∩(P)={(-2,2,0)}.\n\n\n\n**Kiểm lỗi**\n\nNếu chỉ ghi tham số hoặc coi cả d là giao tuyến, đọc **Kiến thức 1.4**. Làm **Bài luyện 4** và **Bài luyện 12**; điểm giao phải thỏa phương trình đường và mặt.",
+    "content_version": "TOP15-BANK-CP67-20261126-T04",
+    "stem": "Với \\(d:(x;y;z)=(1+t;2;3+t)\\), d cắt mặt \\((P):z=0\\) ở đâu?",
+    "answer_key": "\\((-2;2;0)\\).",
+    "worked_solution": "\\(t=-3\\), nên giao điểm có tọa độ \\((-2;2;0)\\).\n\n\n\n**Kiểm lỗi**\n\nNếu chỉ ghi tham số hoặc coi cả d là giao tuyến, đọc **Kiến thức 1.4**. Làm **Bài luyện 4** và **Bài luyện 12**; điểm giao phải thỏa phương trình đường và mặt.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B10-LINE_PLANE"
@@ -883,20 +961,23 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T04",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T05",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP15-BANK-CP67-20261126-T05",
     "stem": "Trong tứ diện S.ABC, P nằm trong cạnh AB. Thiết diện do mặt phẳng (SCP) tạo ra cắt mặt tam giác ABC và mặt tam giác SAB theo những đoạn nào?",
     "answer_key": "Đáy: CP; mặt SAB: SP; thiết diện tam giác SCP.",
     "worked_solution": "Theo CP và SP; cạnh còn lại của thiết diện là SC. Thiết diện là tam giác SCP.\n\n\n\n**Kiểm lỗi**\n\nNếu vẽ thiết diện kéo dài ra ngoài khối, đọc **Kiến thức 1.5**. Làm **Bài luyện 6** và **Bài luyện 13**; mỗi cạnh thiết diện là đoạn thực sự nằm trên một mặt tứ diện.",
@@ -916,20 +997,23 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T05",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T06",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP15-BANK-CP67-20261126-T06",
     "stem": "Trong tứ diện S.ABC, SA và BC có phải song song vì không gặp nhau?",
     "answer_key": "Không; SA và BC chéo nhau.",
     "worked_solution": "Nếu SA và BC đồng phẳng thì cả S,A,B,C nằm trong một mặt phẳng, trái giả thiết tứ diện. Do đó SA và BC chéo nhau, không phải song song.\n\n\n\n**Kiểm lỗi**\n\nNếu nói hai đường không gặp nhau chắc chắn song song, đọc **Kiến thức 2.1**. Làm **Bài luyện 15** và **Bài luyện 24**; phải chứng minh đồng phẳng rồi mới kết luận.",
@@ -949,20 +1033,23 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T06",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T07",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP15-BANK-CP67-20261126-T07",
     "stem": "Hai đường cắt nhau tại M có thể chéo nhau không?",
     "answer_key": "Không, hai đường cắt nhau đồng phẳng.",
     "worked_solution": "Không. Hai đường cắt nhau xác định duy nhất một mặt phẳng, nên đồng phẳng.\n\n\n\n**Kiểm lỗi**\n\nNếu nhầm đường cắt nhau thành chéo nhau vì hình phối cảnh, đọc **Kiến thức 2.2**. Làm **Bài luyện 16** và **Bài luyện 23**, kiểm mặt phẳng chung.",
@@ -983,23 +1070,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T07",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T08",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong tam giác SAB, M,N nằm trong hai cạnh SA,SB và SM/SA=SN/SB=3/5. Kết luận về MN và AB?",
-    "answer_key": "MN∥AB.",
-    "worked_solution": "MN∥AB nhờ Thales đảo trong tam giác SAB.\n\n\n\n**Kiểm lỗi**\n\nNếu áp dụng Thalès đảo cho hai tỉ số không cùng đỉnh, đọc **Kiến thức 2.3**. Làm **Bài luyện 18** và **Bài luyện 25**; so hai tỉ lệ từ đỉnh S trong cùng tam giác.",
+    "content_version": "TOP15-BANK-CP67-20261126-T08",
+    "stem": "Trong tam giác SAB, M,N nằm trong hai cạnh SA,SB và \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac35\\). Kết luận về MN và AB?",
+    "answer_key": "\\(MN\\parallel AB\\).",
+    "worked_solution": "\\(MN\\parallel AB\\) nhờ Thales đảo trong tam giác SAB.\n\n\n\n**Kiểm lỗi**\n\nNếu áp dụng Thalès đảo cho hai tỉ số không cùng đỉnh, đọc **Kiến thức 2.3**. Làm **Bài luyện 18** và **Bài luyện 25**; so hai tỉ lệ từ đỉnh S trong cùng tam giác.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B11-PARALLEL_PROOF"
@@ -1016,23 +1106,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T08",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T09",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong chóp S.ABCD đáy hình bình hành, giao tuyến (SAD)∩(SBC) có phương của cạnh nào?",
+    "content_version": "TOP15-BANK-CP67-20261126-T09",
+    "stem": "Trong chóp S.ABCD đáy hình bình hành, giao tuyến \\((SAD)\\cap (SBC)\\) có phương của cạnh nào?",
     "answer_key": "Đường qua S, song song AD và BC.",
-    "worked_solution": "Là đường qua S song song AD và BC vì AD∥BC.\n\n\n\n**Kiểm lỗi**\n\nNếu coi giao tuyến qua S trùng cạnh AB, đọc **Kiến thức 2.4**: giao tuyến chỉ cùng phương với AB. Làm **Bài luyện 26** và **Bài luyện 27**, nêu điểm chung S trước khi xác định phương.",
+    "worked_solution": "Là đường qua S song song AD và BC vì \\(AD\\parallel BC\\).\n\n\n\n**Kiểm lỗi**\n\nNếu coi giao tuyến qua S trùng cạnh AB, đọc **Kiến thức 2.4**: giao tuyến chỉ cùng phương với AB. Làm **Bài luyện 26** và **Bài luyện 27**, nêu điểm chung S trước khi xác định phương.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B10-PLANE_INTERSECTION",
@@ -1050,23 +1143,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T09",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T10",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Đường thẳng d: (x,y,z)=(1+t,2,3), t∈ℝ có quan hệ gì với mặt phẳng (P): z=0?",
-    "answer_key": "d∥(P), với (P): z=0.",
-    "worked_solution": "Song song vì z luôn bằng 3≠0.\n\n\n\n**Kiểm lỗi**\n\nNếu nhầm đường trên cao z=3 với đường nằm trong z=0, đọc **Kiến thức 3.1**. Làm **Bài luyện 28** và **Bài luyện 36**, dùng số điểm chung để phân biệt ba quan hệ.",
+    "content_version": "TOP15-BANK-CP67-20261126-T10",
+    "stem": "Đường thẳng \\(d:(x;y;z)=(1+t;2;3),\\,t\\in\\mathbb R\\) có quan hệ gì với mặt phẳng (P): \\(z=0\\)?",
+    "answer_key": "\\(d\\parallel(P)\\), với (P): \\(z=0\\).",
+    "worked_solution": "Song song vì z luôn bằng \\(3\\ne 0\\).\n\n\n\n**Kiểm lỗi**\n\nNếu nhầm đường trên cao \\(z=3\\) với đường nằm trong \\(z=0\\), đọc **Kiến thức 3.1**. Làm **Bài luyện 28** và **Bài luyện 36**, dùng số điểm chung để phân biệt ba quan hệ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B12-POSITIONS"
@@ -1083,23 +1179,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T10",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T11",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "d và a là hai đường phân biệt cùng nằm trong (P), d∥a. Có thể kết luận d∥(P) không?",
+    "content_version": "TOP15-BANK-CP67-20261126-T11",
+    "stem": "d và a là hai đường phân biệt cùng nằm trong \\((P), d\\parallel a\\). Có thể kết luận \\(d\\parallel (P)\\) không?",
     "answer_key": "Không; d nằm trong (P).",
-    "worked_solution": "Không; d nằm trong (P) nên có vô số điểm chung với (P).\n\n\n\n**Kiểm lỗi**\n\nNếu thấy d song song a⊂(P) mà quên d có nằm trong (P) hay không, đọc **Kiến thức 3.2**. Làm **Bài luyện 29** và **Bài luyện 37**, kiểm một điểm ngoài mặt.",
+    "worked_solution": "Không; d nằm trong (P) nên có vô số điểm chung với (P).\n\n\n\n**Kiểm lỗi**\n\nNếu thấy d song song \\(a\\subset (P)\\) mà quên d có nằm trong (P) hay không, đọc **Kiến thức 3.2**. Làm **Bài luyện 29** và **Bài luyện 37**, kiểm một điểm ngoài mặt.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B12-PARALLEL_TEST"
@@ -1116,23 +1215,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T11",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T12",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho d⊂(Q), d∥(P) và hai mặt phẳng cắt nhau theo đường g=(Q)∩(P). d và g có thể cắt nhau không?",
-    "answer_key": "Không; d∥g.",
-    "worked_solution": "Không, vì giao điểm nếu có thuộc (P), trái d∥(P); do đó d∥g.\n\n\n\n**Kiểm lỗi**\n\nNếu phát biểu d song song g khi hai mặt không cắt, đọc **Kiến thức 3.3**. Làm **Bài luyện 32** và **Bài luyện 38**; phải có giao tuyến g thật và d không gặp mặt kia.",
+    "content_version": "TOP15-BANK-CP67-20261126-T12",
+    "stem": "Cho \\(d\\subset(Q),\\,d\\parallel(P)\\) và hai mặt phẳng cắt nhau theo đường \\(g=(Q)\\cap(P)\\). d và g có thể cắt nhau không?",
+    "answer_key": "Không; \\(d\\parallel g\\).",
+    "worked_solution": "Không, vì giao điểm nếu có thuộc (P), trái \\(d\\parallel (P)\\); do đó \\(d\\parallel g\\).\n\n\n\n**Kiểm lỗi**\n\nNếu phát biểu d song song g khi hai mặt không cắt, đọc **Kiến thức 3.3**. Làm **Bài luyện 32** và **Bài luyện 38**; phải có giao tuyến g thật và d không gặp mặt kia.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B12-PLANE_INTERSECTION"
@@ -1149,23 +1251,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T12",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T13",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong tứ diện S.ABC, M nằm trong SA và SM/SA=2/3. Chọn N,K lần lượt trên SB,SC sao cho mặt (MNK) song song đáy (ABC). Tìm SN/SB và SK/SC.",
-    "answer_key": "SN/SB=SK/SC=2/3.",
-    "worked_solution": "Chọn N,K trên SB,SC sao cho SN/SB=SK/SC=2/3. Theo Thales đảo, MN∥AB và MK∥AC. Vì MN và MK cắt nhau, mặt (MNK) song song với (ABC).\n\n\n\n**Kiểm lỗi**\n\nNếu tự chọn N,K mà ba tỉ số không đều, đọc **Kiến thức 3.4**. Làm **Bài luyện 39** và **Bài luyện 44**, kiểm cùng tỉ số SM/SA, SN/SB, SK/SC.",
+    "content_version": "TOP15-BANK-CP67-20261126-T13",
+    "stem": "Trong tứ diện S.ABC, M nằm trong SA và \\(\\frac{SM}{SA}=\\frac23\\). Chọn N,K lần lượt trên SB,SC sao cho mặt (MNK) song song đáy (ABC). Tìm \\(\\frac{SN}{SB}\\) và \\(\\frac{SK}{SC}\\).",
+    "answer_key": "\\(\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac23\\).",
+    "worked_solution": "Nếu mặt cắt song song đáy thì \\(MN\\parallel AB\\) và \\(MK\\parallel AC\\) (giao tuyến của hai mặt song song với mặt thứ ba). Theo Thalès, \\(\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac{SM}{SA}=\\frac23\\). Ngược lại, chọn hai tỉ số bằng \\(\\frac23\\) thì Thalès đảo cho \\(MN\\parallel AB\\), \\(MK\\parallel AC\\). Hai đường MN,MK cắt nhau nên (MNK) song song (ABC).\n\n\n\n**Kiểm lỗi**\n\nNếu tự chọn N,K mà ba tỉ số không đều, đọc **Kiến thức 3.4**. Làm **Bài luyện 39** và **Bài luyện 44**, kiểm cùng tỉ số \\(\\frac{SM}{SA}, \\frac{SN}{SB}, \\frac{SK}{SC}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B13-PRISM_RATIO",
@@ -1183,23 +1288,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T13",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T14",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai mặt z=0 và 2z=0 trùng hay song song phân biệt?",
+    "content_version": "TOP15-BANK-CP67-20261126-T14",
+    "stem": "Hai mặt \\(z=0\\) và \\(2z=0\\) trùng hay song song phân biệt?",
     "answer_key": "Hai mặt phẳng trùng nhau.",
-    "worked_solution": "Trùng nhau, vì chúng cùng tập điểm z=0.\n\n\n\n**Kiểm lỗi**\n\nNếu coi z=0 và 2z=0 song song phân biệt, đọc **Kiến thức 4.1**. Làm **Bài luyện 40** và **Bài luyện 50**; trước hết kiểm hai tập điểm có trùng nhau không.",
+    "worked_solution": "Trùng nhau, vì chúng cùng tập điểm \\(z=0\\).\n\n\n\n**Kiểm lỗi**\n\nNếu coi \\(z=0\\) và \\(2z=0\\) song song phân biệt, đọc **Kiến thức 4.1**. Làm **Bài luyện 40** và **Bài luyện 50**; trước hết kiểm hai tập điểm có trùng nhau không.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B13-PLANE_POSITIONS"
@@ -1216,23 +1324,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T14",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T15",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho a,b⊂(P) nhưng a∥b và a∥(Q),b∥(Q). Có đủ kết luận (P)∥(Q) không?",
+    "content_version": "TOP15-BANK-CP67-20261126-T15",
+    "stem": "Cho \\(a,b\\subset (P)\\) nhưng \\(a\\parallel b\\) và \\(a\\parallel (Q),b\\parallel (Q)\\). Có đủ kết luận \\((P)\\parallel (Q)\\) không?",
     "answer_key": "Chưa đủ.",
-    "worked_solution": "Hai đường a,b song song không đáp ứng điều kiện hai đường cắt nhau trong dấu hiệu song song hai mặt phẳng. Chẳng hạn (P): z=0, (Q): y=0, a: (t;1;0), b: (t;2;0), t∈ℝ. Cả a,b song song (Q) nhưng (P) và (Q) cắt nhau theo Ox.\n\n\n\n**Kiểm lỗi**\n\nNếu chỉ có một đường a trong (P) song song (Q) mà kết luận (P)∥(Q), đọc **Kiến thức 4.2**. Làm **Bài luyện 41** và **Bài luyện 51**, cần hai đường cắt nhau trong (P).",
+    "worked_solution": "Hai đường a,b song song không đáp ứng điều kiện hai đường cắt nhau. Chẳng hạn \\((P):z=0,\\ (Q):y=0\\), \\(a:(x;y;z)=(t;1;0)\\), \\(b:(x;y;z)=(t;2;0)\\), \\(t\\in\\mathbb R\\). Cả a,b song song (Q) nhưng (P) và (Q) cắt nhau theo Ox.\n\n\n\n**Kiểm lỗi**\n\nNếu chỉ có một đường a trong (P) song song (Q) mà kết luận \\((P)\\parallel (Q)\\), đọc **Kiến thức 4.2**. Làm **Bài luyện 41** và **Bài luyện 51**, cần hai đường cắt nhau trong (P).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B13-PLANE_TEST"
@@ -1249,23 +1360,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T15",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T16",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho hai mặt phẳng phân biệt (P)∥(Q). Một người cho rằng mặt phẳng (R) cắt (P) nhưng song song (Q), rồi kết luận hai giao tuyến song song. Nhận xét lập luận đó.",
-    "answer_key": "Không; giả thiết mâu thuẫn khi (P)∥(Q).",
-    "worked_solution": "Nếu (P)∥(Q) và (R) cắt (P), thì (R) cũng cắt (Q). Vì vậy giả thiết (R) song song (Q) đồng thời cắt (P) là không thể. Không có hai giao tuyến trong cấu hình đã nêu để so sánh.\n\n\n\n**Kiểm lỗi**\n\nNếu quên điều kiện mặt thứ ba cắt cả hai mặt song song, đọc **Kiến thức 4.3**. Làm **Bài luyện 42** và **Bài luyện 52**; xác định hai giao tuyến trước khi suy chúng song song.",
+    "content_version": "TOP15-BANK-CP67-20261126-T16",
+    "stem": "Cho hai mặt phẳng phân biệt \\((P)\\parallel(Q)\\). Một người cho rằng mặt phẳng (R) cắt (P) nhưng song song (Q), rồi kết luận hai giao tuyến song song. Nhận xét lập luận đó.",
+    "answer_key": "Không; giả thiết mâu thuẫn khi \\((P)\\parallel(Q)\\).",
+    "worked_solution": "Nếu \\((P)\\parallel(Q)\\) và (R) cắt (P), thì (R) cũng cắt (Q). Vì vậy giả thiết (R) song song (Q) đồng thời cắt (P) là không thể. Không có hai giao tuyến trong cấu hình đã nêu để so sánh.\n\n\n\n**Kiểm lỗi**\n\nNếu quên điều kiện mặt thứ ba cắt cả hai mặt song song, đọc **Kiến thức 4.3**. Làm **Bài luyện 42** và **Bài luyện 52**; xác định hai giao tuyến trước khi suy chúng song song.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B13-TRANSVERSAL"
@@ -1282,23 +1396,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T16",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T17",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong tứ diện S.ABC, M,N,K nằm trong các cạnh SA,SB,SC, có SM/SA=SN/SB=SK/SC=2/5. Diện tích đáy ABC là 100 cm². Tính diện tích thiết diện MNK.",
-    "answer_key": "16 cm².",
-    "worked_solution": "Mặt cắt song song đáy tạo tam giác đồng dạng với đáy, tỉ số cạnh t=2/5. Diện tích tỉ lệ t², nên bằng (2/5)²·100=16 cm².\n\n\n\n**Kiểm lỗi**\n\nNếu lấy t thay cho t² làm tỉ số diện tích, đọc **Kiến thức 4.4** và Thalès trong không gian. Làm **Bài luyện 45** và **Bài luyện 49**, phân biệt tỉ số cạnh/chu vi và diện tích.",
+    "content_version": "TOP15-BANK-CP67-20261126-T17",
+    "stem": "Trong tứ diện S.ABC, M,N,K nằm trong các cạnh SA,SB,SC, có \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac25\\). Diện tích đáy ABC là \\(100\\,\\mathrm{cm}^2\\). Tính diện tích thiết diện MNK.",
+    "answer_key": "\\(16\\,\\mathrm{cm}^2\\).",
+    "worked_solution": "Mặt cắt song song đáy tạo tam giác đồng dạng với đáy, tỉ số cạnh \\(t=\\frac25\\). Diện tích tỉ lệ với \\(t^2\\), nên bằng \\(\\left(\\frac25\\right)^2\\cdot100=16\\,\\mathrm{cm}^2\\).\n\n\n\n**Kiểm lỗi**\n\nNếu lấy t thay cho \\(t^2\\) làm tỉ số diện tích, đọc **Kiến thức 4.4** và Thalès trong không gian. Làm **Bài luyện 45** và **Bài luyện 49**, phân biệt tỉ số cạnh/chu vi và diện tích.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B13-PRISM_RATIO"
@@ -1315,23 +1432,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T17",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T18",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tìm ảnh N(3,−1,2) dưới phép chiếu T(x,y,z)=(x−z,y,0).",
-    "answer_key": "N′(1;−1;0).",
-    "worked_solution": "N′=(1,−1,0). Kiểm z′=0 và N−N′=2(1,0,1).\n\n\n\n**Kiểm lỗi**\n\nNếu chiếu theo phương song song z=0 mà tưởng mọi điểm đều có ảnh, đọc **Kiến thức 5.1**. Làm **Bài luyện 54** và **Bài luyện 63**; giải tham số tại z=0.",
+    "content_version": "TOP15-BANK-CP67-20261126-T18",
+    "stem": "Tìm ảnh \\(N(3;-1;2)\\) dưới phép chiếu \\(T(x;y;z)=(x-z;y;0)\\).",
+    "answer_key": "\\(N'(1;-1;0)\\).",
+    "worked_solution": "\\(N'(1;-1;0)\\). Kiểm cao độ của ảnh bằng 0 và \\(\\overrightarrow{N'N}=2(1;0;1)\\) cùng phương chiếu.\n\n\n\n**Kiểm lỗi**\n\nNếu chiếu theo phương song song \\(z=0\\) mà tưởng mọi điểm đều có ảnh, đọc **Kiến thức 5.1**. Làm **Bài luyện 54** và **Bài luyện 63**; giải tham số tại \\(z=0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B14-PROJECTION_DEF"
@@ -1348,23 +1468,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T18",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T19",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho phép chiếu song song T(x,y,z)=(x−z,y,0). Đường d: (x,y,z)=(1+t,2,3+t), t∈ℝ có ảnh qua T là đường hay điểm?",
-    "answer_key": "Ảnh là điểm (−2;2;0).",
-    "worked_solution": "Một điểm: T(1+t,2,3+t)=(-2,2,0) với mọi t.\n\n\n\n**Kiểm lỗi**\n\nNếu tưởng đường nào cũng có ảnh là đường, đọc **Kiến thức 5.2**. Làm **Bài luyện 58** và **Bài luyện 62**, so ảnh hai điểm khi đường cùng phương chiếu.",
+    "content_version": "TOP15-BANK-CP67-20261126-T19",
+    "stem": "Cho phép chiếu song song \\(T(x;y;z)=(x-z;y;0)\\). Đường \\(d:(x;y;z)=(1+t;2;3+t),\\,t\\in\\mathbb R\\) có ảnh qua T là đường hay điểm?",
+    "answer_key": "Ảnh là điểm \\((-2;2;0)\\).",
+    "worked_solution": "Một điểm: \\(T(1+t;2;3+t)=(-2;2;0)\\) với mọi t.\n\n\n\n**Kiểm lỗi**\n\nNếu tưởng đường nào cũng có ảnh là đường, đọc **Kiến thức 5.2**. Làm **Bài luyện 58** và **Bài luyện 62**, so ảnh hai điểm khi đường cùng phương chiếu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B14-DEGENERACY"
@@ -1381,23 +1504,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T19",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T20",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Qua phép chiếu song song, A′,B′,M′ lần lượt là ảnh của A,B,M. Nếu M là trung điểm AB và A′≠B′, M′ nằm ở đâu?",
+    "content_version": "TOP15-BANK-CP67-20261126-T20",
+    "stem": "Qua phép chiếu song song, A′,B′,M′ lần lượt là ảnh của A,B,M. Nếu M là trung điểm AB và \\(A'\\ne B'\\), M′ nằm ở đâu?",
     "answer_key": "M′ là trung điểm A′B′.",
-    "worked_solution": "Là trung điểm A′B′; điều kiện A′≠B′ loại trường hợp đường ảnh co thành điểm.\n\n\n\n**Kiểm lỗi**\n\nNếu chia tỉ số độ dài ảnh khi A′=B′, đọc **Kiến thức 5.3**. Làm **Bài luyện 57** và **Bài luyện 65**, kiểm ảnh đoạn không suy biến trước.",
+    "worked_solution": "Là trung điểm A′B′; điều kiện \\(A'\\ne B'\\) loại trường hợp đường ảnh co thành điểm.\n\n\n\n**Kiểm lỗi**\n\nNếu chia tỉ số độ dài ảnh khi \\(A'=B'\\), đọc **Kiến thức 5.3**. Làm **Bài luyện 57** và **Bài luyện 65**, kiểm ảnh đoạn không suy biến trước.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B14-AFFINE_INVARIANTS"
@@ -1414,23 +1540,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T20",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T21",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP15-BANK-CP67-20261126-T21",
     "stem": "Hình chiếu song song của hình bình hành không suy biến có thể là hình thang chỉ có một cặp cạnh song song không?",
     "answer_key": "Không; ảnh không suy biến là hình bình hành, ảnh suy biến không phải hình thang.",
-    "worked_solution": "Phép chiếu song song bảo toàn quan hệ song song của hai cặp cạnh đối khi hình ảnh không suy biến, nên ảnh là hình bình hành. Nếu mặt phẳng chứa hình song song phương chiếu, ảnh có thể co thành đoạn thẳng, không phải hình thang. Vì vậy không thể thu được hình thang chỉ có một cặp cạnh song song.\n\n\n\n**Kiểm lỗi**\n\nNếu suy giữ nguyên góc vuông vì hình chiếu còn hai cặp cạnh đối song song, đọc **Kiến thức 5.4**. Làm **Bài luyện 59** và **Bài luyện 66**, kiểm góc ảnh riêng.",
+    "worked_solution": "Phép chiếu song song bảo toàn quan hệ song song của hai cặp cạnh đối khi hình ảnh không suy biến, nên ảnh là hình bình hành. Nếu mặt phẳng chứa hình song song phương chiếu, ảnh co thành đoạn thẳng, không phải hình thang. Vì vậy không thể thu được hình thang chỉ có một cặp cạnh song song.\n\n\n\n**Kiểm lỗi**\n\nNếu suy giữ nguyên góc vuông vì hình chiếu còn hai cặp cạnh đối song song, đọc **Kiến thức 5.4**. Làm **Bài luyện 59** và **Bài luyện 66**, kiểm góc ảnh riêng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B14-PARALLEL_AND_SHAPES"
@@ -1447,23 +1576,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T21",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T22",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong tứ diện S.ABC, M,N,K nằm trong các cạnh SA,SB,SC, có SM/SA=SN/SB=SK/SC=3/5. Tính tỉ số diện tích tam giác MNK so với ABC.",
-    "answer_key": "Tỉ số diện tích bằng 9/25.",
-    "worked_solution": "Ba tỉ số cạnh tính từ S cùng bằng 3/5, nên thiết diện MNK song song đáy và đồng dạng với ABC. Tỉ số diện tích là (3/5)²=9/25; tỉ số chu vi mới là 3/5.\n\n\n\n**Kiểm lỗi**\n\nNếu đánh đồng diện tích thiết diện với ảnh chiếu xiên, đọc **Kiến thức 5.5**. Làm **Bài luyện 49** và **Bài luyện 67**, tính t² cho mặt cắt và xét hướng chiếu độc lập.",
+    "content_version": "TOP15-BANK-CP67-20261126-T22",
+    "stem": "Trong tứ diện S.ABC, M,N,K nằm trong các cạnh SA,SB,SC, có \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac35\\). Tính tỉ số diện tích tam giác MNK so với ABC.",
+    "answer_key": "Tỉ số diện tích bằng \\(\\frac9{25}\\).",
+    "worked_solution": "Ba tỉ số cạnh tính từ S cùng bằng \\(\\frac35\\), nên thiết diện MNK song song đáy và đồng dạng với ABC. Tỉ số diện tích là \\(\\left(\\frac35\\right)^2=\\frac9{25}\\); tỉ số chu vi mới là \\(\\frac35\\).\n\n\n\n**Kiểm lỗi**\n\nNếu đánh đồng diện tích thiết diện với diện tích ảnh chiếu trong mọi cấu hình, đọc **Kiến thức 5.5**. Làm **Bài luyện 49** và **Bài luyện 67**, tính \\(t^2\\) cho mặt cắt và xét quan hệ giữa mặt chứa thiết diện, mặt nhận ảnh và phương chiếu độc lập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B13-PRISM_RATIO"
@@ -1480,23 +1612,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "blob": "11d2106a7ed77b801c86420503dca929544dc076",
       "heading_id": "THPT-TOP15-T22",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
         "blob": "4f1a21c9d44dcf6ed814edfba580ab9c60eddec0",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "previous_content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T01",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP16-BANK-CP67-20261126-T01",
     "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, góc giữa AB và A′B′ bằng bao nhiêu?",
-    "answer_key": "0°.",
-    "worked_solution": "0° vì AB và A′B′ song song.\n\n**Kiểm lỗi**\n\nNếu lấy góc tù 145° làm góc giữa hai đường, đọc lại **Kiến thức 1.1**: phải đưa hai phương về chung gốc và chọn góc không tù. Thử **Bài luyện 1** (góc bù) và **Bài luyện 10** (hai cạnh song song).",
+    "answer_key": "\\(0^\\circ\\).",
+    "worked_solution": "\\(0^\\circ\\) vì AB và A′B′ song song.\n\n**Kiểm lỗi**\n\nNếu lấy góc tù \\(145^\\circ\\) làm góc giữa hai đường, đọc lại **Kiến thức 1.1**: phải đưa hai phương về chung gốc và chọn góc không tù. Thử **Bài luyện 1** (góc bù) và **Bài luyện 10** (hai cạnh song song).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B22-ANGLE_LINES"
@@ -1513,23 +1648,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T01",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T02",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP16-BANK-CP67-20261126-T02",
     "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, AB và DD′ có phải là hai đường vuông góc không?",
-    "answer_key": "Có, AB⊥DD′.",
-    "worked_solution": "Trong hình hộp chữ nhật, DD′∥AA′ và AB⊥AA′, nên AB⊥DD′. Hai đường AB,DD′ chéo nhau nhưng vẫn vuông góc theo phương.\n\n**Kiểm lỗi**\n\nNếu nghĩ hai đường không cắt thì không thể vuông góc, đọc **Kiến thức 1.2**: vuông góc là quan hệ giữa hai phương, còn chéo nhau là quan hệ vị trí. Thử **Bài luyện 7** (phản ví dụ) và **Bài luyện 11** (hình hộp).",
+    "answer_key": "Có, \\(AB\\perp DD'\\).",
+    "worked_solution": "Trong hình hộp chữ nhật, \\(DD'\\parallel AA'\\) và \\(AB\\perp AA'\\), nên \\(AB\\perp DD'\\). Hai đường AB,DD′ chéo nhau nhưng vẫn vuông góc theo phương.\n\n**Kiểm lỗi**\n\nNếu nghĩ hai đường không cắt thì không thể vuông góc, đọc **Kiến thức 1.2**: vuông góc là quan hệ giữa hai phương, còn chéo nhau là quan hệ vị trí. Thử **Bài luyện 7** (phản ví dụ) và **Bài luyện 11** (hình hộp).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B22-PERP_SKEW"
@@ -1546,23 +1684,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T02",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T03",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Nếu a⊥b và c∥b thì kết luận gì về a,c?",
-    "answer_key": "a⊥c.",
-    "worked_solution": "a⊥c theo tính bất biến của góc khi thay đường bằng đường song song.\n\n**Kiểm lỗi**\n\nNếu suy 'cùng vuông góc một đường' thì phải song song, xem lại **Kiến thức 1.3**: phép chuyển phương đúng là thay **một** đường bằng đường song song với nó. Thử **Bài luyện 3** và **Bài luyện 12**, xác định cặp đường nào thật sự song song.",
+    "content_version": "TOP16-BANK-CP67-20261126-T03",
+    "stem": "Nếu \\(a\\perp b\\) và \\(c\\parallel b\\) thì kết luận gì về a,c?",
+    "answer_key": "\\(a\\perp c\\).",
+    "worked_solution": "\\(a\\perp c\\) theo tính bất biến của góc khi thay đường bằng đường song song.\n\n**Kiểm lỗi**\n\nNếu suy 'cùng vuông góc một đường' thì phải song song, xem lại **Kiến thức 1.3**: phép chuyển phương đúng là thay **một** đường bằng đường song song với nó. Thử **Bài luyện 3** và **Bài luyện 12**, xác định cặp đường nào thật sự song song.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B22-PARALLEL_DIRECTION"
@@ -1579,21 +1720,24 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T03",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T04",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Nét vẽ có hai đoạn tạo góc 90° trên giấy, đủ kết luận hai thanh trong không gian vuông góc chưa?",
+    "content_version": "TOP16-BANK-CP67-20261126-T04",
+    "stem": "Nét vẽ có hai đoạn tạo góc \\(90^\\circ\\) trên giấy, đủ kết luận hai thanh trong không gian vuông góc chưa?",
     "answer_key": "Chưa đủ.",
     "worked_solution": "Chưa; cần chứng cứ hình học về phương hoặc góc thật.\n\n**Kiểm lỗi**\n\nNếu kết luận chỉ vì hình vẽ trông có góc vuông, trở lại **Kiến thức 1.4** và thay nét vẽ bằng dữ kiện về phương, cạnh đáy và cạnh bên. Thử **Bài luyện 4** và **Bài luyện 13**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1612,21 +1756,24 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T04",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T05",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "d vuông góc chỉ một đường a thuộc (P). Đủ kết luận d⊥(P) không?",
+    "content_version": "TOP16-BANK-CP67-20261126-T05",
+    "stem": "d vuông góc chỉ một đường a thuộc (P). Đủ kết luận \\(d\\perp (P)\\) không?",
     "answer_key": "Không đủ.",
     "worked_solution": "Không; cần thêm dữ kiện, thường là d vuông góc hai đường cắt nhau trong (P).\n\n**Kiểm lỗi**\n\nNếu thấy d vuông góc một đường trên sân rồi kết luận d vuông góc cả mặt, đọc **Kiến thức 2.1**: một hướng không đủ đại diện cho mọi hướng trong mặt phẳng. Thử **Bài luyện 15** và **Bài luyện 25**; đối chiếu dữ kiện cần bổ sung.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1645,23 +1792,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T05",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T06",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Nếu a∥b trong (P), d⊥a và d⊥b đã đủ d⊥(P) chưa?",
+    "content_version": "TOP16-BANK-CP67-20261126-T06",
+    "stem": "Nếu \\(a\\parallel b\\) trong \\((P), d\\perp a\\) và \\(d\\perp b\\) đã đủ \\(d\\perp (P)\\) chưa?",
     "answer_key": "Chưa đủ.",
-    "worked_solution": "Hai đường song song chỉ cung cấp một phương. Ví dụ trong mặt phẳng (P), chọn d cũng nằm trong (P) và vuông góc a. Khi b∥a thì d⊥b, nhưng d không vuông góc (P).\n\n**Kiểm lỗi**\n\nNếu hai đường dùng để kiểm tra lại song song, điều kiện của dấu hiệu chưa đủ; đọc **Kiến thức 2.2**: phải có hai đường **cắt nhau** thuộc cùng mặt. Thử **Bài luyện 21** và **Bài luyện 26**.",
+    "worked_solution": "Hai đường song song chỉ cung cấp một phương. Ví dụ trong mặt phẳng (P), chọn d cũng nằm trong (P) và vuông góc a. Khi \\(b\\parallel a\\) thì \\(d\\perp b\\), nhưng d không vuông góc (P).\n\n**Kiểm lỗi**\n\nNếu hai đường dùng để kiểm tra lại song song, điều kiện của dấu hiệu chưa đủ; đọc **Kiến thức 2.2**: phải có hai đường **cắt nhau** thuộc cùng mặt. Thử **Bài luyện 21** và **Bài luyện 26**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B23-TWO_INTERSECT"
@@ -1678,22 +1828,25 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T06",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T07",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Nếu a⊥(P) và b∥a thì b có vuông góc (P) không?",
-    "answer_key": "Có, b⊥(P).",
+    "content_version": "TOP16-BANK-CP67-20261126-T07",
+    "stem": "Nếu \\(a\\perp (P)\\) và \\(b\\parallel a\\) thì b có vuông góc (P) không?",
+    "answer_key": "Có, \\(b\\perp(P)\\).",
     "worked_solution": "Có; mọi đường của (P) vẫn vuông góc phương b.\n\n**Kiểm lỗi**\n\nNếu thay đường/mặt mà không kiểm tra song song thực sự, đọc **Kiến thức 2.3**: đường cùng phương pháp tuyến vẫn vuông góc với mặt song song. Thử **Bài luyện 17** và **Bài luyện 27**, ghi rõ giả thiết song song.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1711,20 +1864,23 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T07",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T08",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP16-BANK-CP67-20261126-T08",
     "stem": "Qua điểm M có thể có hai đường phân biệt cùng vuông góc (P) không?",
     "answer_key": "Không; chỉ có một đường.",
     "worked_solution": "Không; pháp tuyến qua M xác định duy nhất.\n\n**Kiểm lỗi**\n\nNếu cho rằng qua M có hai pháp tuyến phân biệt, đọc **Kiến thức 2.4**: một điểm và một phương pháp tuyến xác định một đường duy nhất. Thử **Bài luyện 18** và **Bài luyện 28**, phân biệt đường trùng với đường song song khác.",
@@ -1744,20 +1900,23 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T08",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T09",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP16-BANK-CP67-20261126-T09",
     "stem": "Nền nằm ngang hình chữ nhật ABCD. Đo được cột vuông góc cạnh AB. Đã đủ khẳng định cột thẳng đứng chưa?",
     "answer_key": "Chưa đủ.",
     "worked_solution": "Nếu nền nằm ngang, cột thẳng đứng phải vuông góc mặt phẳng nền. Cần kiểm tra thêm một đường trong nền cắt AB, chẳng hạn AD, rồi dùng dấu hiệu vuông góc hai đường cắt nhau.\n\n**Kiểm lỗi**\n\nNếu chỉ kiểm cột với một cạnh sàn, quay lại **Kiến thức 2.5**: cần hai hướng sàn cắt nhau. Thử **Bài luyện 19** và **Bài luyện 29**, nêu hai đường trong nền trước khi kết luận.",
@@ -1777,23 +1936,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T09",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T10",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP16-BANK-CP67-20261126-T10",
     "stem": "Nếu A thuộc (P), hình chiếu vuông góc của A trên (P) ở đâu?",
     "answer_key": "Chính A; khoảng cách bằng 0.",
-    "worked_solution": "Chính là A; khoảng cách A đến (P) bằng 0.\n\n**Kiểm lỗi**\n\nNếu chọn hình chiếu theo cảm giác gần nhất trên hình vẽ, đọc **Kiến thức 3.1**: chân H phải thỏa AH vuông góc mặt. Thử **Bài luyện 30** và **Bài luyện 40**, phân biệt chân hình chiếu với đoạn xiên.",
+    "worked_solution": "Chính là A; khoảng cách A đến (P) bằng 0.\n\n**Kiểm lỗi**\n\nNếu chọn hình chiếu theo cảm giác gần nhất trên hình vẽ, đọc **Kiến thức 3.1**: nếu A đã thuộc mặt thì H=A; nếu A ở ngoài mặt thì AH vuông góc mặt. Thử **Bài luyện 30** và **Bài luyện 40**, phân biệt chân hình chiếu với đoạn xiên.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B24-POINT_PROJECTION"
@@ -1810,23 +1972,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T10",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T11",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Đường d⊥(P). Ảnh vuông góc của d lên (P) là gì?",
+    "content_version": "TOP16-BANK-CP67-20261126-T11",
+    "stem": "Đường \\(d\\perp (P)\\). Ảnh vuông góc của d lên (P) là gì?",
     "answer_key": "Một điểm: giao điểm của d với (P).",
-    "worked_solution": "Một điểm: chân giao d∩(P).\n\n**Kiểm lỗi**\n\nNếu nối hai ảnh trùng nhau rồi gọi đó là một đường, đọc **Kiến thức 3.2**: ảnh đường pháp tuyến có thể suy biến thành một điểm. Thử **Bài luyện 31** và **Bài luyện 41**, kiểm ảnh từng đầu mút.",
+    "worked_solution": "Một điểm: chân giao \\(d\\cap (P)\\).\n\n**Kiểm lỗi**\n\nNếu nối hai ảnh trùng nhau rồi gọi đó là một đường, đọc **Kiến thức 3.2**: ảnh đường pháp tuyến có thể suy biến thành một điểm. Thử **Bài luyện 31** và **Bài luyện 41**, kiểm ảnh từng đầu mút.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B24-LINE_PROJECTION"
@@ -1843,23 +2008,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T11",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T12",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho A∉(P), H∈(P), AH⊥(P), B∈(P), B≠H. Nếu c⊂(P) và c⊥BH, có thể kết luận c⊥AB không?",
-    "answer_key": "Có, c⊥AB.",
-    "worked_solution": "Có: BH là hình chiếu của AB lên (P); dùng định lí ba đường vuông góc.\n\n**Kiểm lỗi**\n\nNếu dùng định lí ba đường vuông góc mà chưa xác định đúng hình chiếu của đường xiên, đọc **Kiến thức 3.3**: H là chân từ A và B≠H để BH không suy biến. Thử **Bài luyện 32** (chiều thuận) và **Bài luyện 42** (chiều đảo), chỉ rõ ba đường liên quan.",
+    "content_version": "TOP16-BANK-CP67-20261126-T12",
+    "stem": "Cho \\(A\\notin(P), H\\in(P), AH\\perp(P), B\\in(P), B\\ne H\\). Nếu \\(c\\subset(P)\\) và \\(c\\perp BH\\), có thể kết luận \\(c\\perp AB\\) không?",
+    "answer_key": "Có, \\(c\\perp AB\\).",
+    "worked_solution": "Có: BH là hình chiếu của AB lên (P); dùng định lí ba đường vuông góc.\n\n**Kiểm lỗi**\n\nNếu dùng định lí ba đường vuông góc mà chưa xác định đúng hình chiếu của đường xiên, đọc **Kiến thức 3.3**: H là chân từ A và \\(B\\ne H\\) để BH không suy biến. Thử **Bài luyện 32** (chiều thuận) và **Bài luyện 42** (chiều đảo), chỉ rõ ba đường liên quan.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B24-THREE_PERP"
@@ -1876,23 +2044,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T12",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T13",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP16-BANK-CP67-20261126-T13",
     "stem": "Đường nằm trong (P) tạo góc bao nhiêu với (P)?",
-    "answer_key": "0°.",
-    "worked_solution": "0°. Khi đường vuông góc (P), góc 90°.\n\n**Kiểm lỗi**\n\nNếu đo góc với đường pháp tuyến thay cho góc đường–mặt, đọc **Kiến thức 3.4**: dùng góc giữa đường xiên và hình chiếu không suy biến. Thử **Bài luyện 33** và **Bài luyện 43**, kiểm xem tỉ số sin lấy đúng cạnh.",
+    "answer_key": "\\(0^\\circ\\).",
+    "worked_solution": "\\(0^\\circ\\). Khi đường vuông góc (P), góc \\(90^\\circ\\).\n\n**Kiểm lỗi**\n\nNếu đo góc với đường pháp tuyến thay cho góc đường–mặt, đọc **Kiến thức 3.4**: dùng góc giữa đường xiên và hình chiếu không suy biến. Thử **Bài luyện 33** và **Bài luyện 43**, kiểm xem tỉ số sin lấy đúng cạnh.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B24-LINE_PLANE_ANGLE"
@@ -1909,23 +2080,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T13",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T14",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Đoạn dốc thẳng cao 3 m, hình chiếu ngang dài 4 m. Tính độ dài đoạn dốc.",
-    "answer_key": "5 m.",
-    "worked_solution": "5 m theo định lí Pitago, không phải 7 m.\n\n**Kiểm lỗi**\n\nNếu cộng 5 và 12 để tính chiều dài dốc hoặc dùng nhầm tan với sin, đọc **Kiến thức 3.5**: dựng tam giác vuông giữa chiều cao, chiều ngang và đoạn xiên. Thử **Bài luyện 36** và **Bài luyện 44**.",
+    "content_version": "TOP16-BANK-CP67-20261126-T14",
+    "stem": "Đoạn dốc thẳng cao 3 m, hình chiếu ngang dài 4 m. Tính độ dài đoạn dốc. Gọi \\(\\theta\\) là góc giữa đoạn dốc và mặt nền ngang; hãy xác định cạnh đối, cạnh kề và tính \\(\\tan\\theta\\).",
+    "answer_key": "5 m; cạnh đối 3 m, cạnh kề 4 m; \\(\\tan\\theta=\\frac34\\).",
+    "worked_solution": "Độ dài dốc là \\(\\sqrt{3^2+4^2}=5\\) m, không phải 7 m. Góc dốc \\(\\theta\\) nằm giữa cạnh huyền và đoạn ngang; cạnh đối dài 3 m, cạnh kề dài 4 m. Vì vậy \\(\\tan\\theta=\\frac34\\). Nếu dùng \\(\\frac35\\), em đã tính sin thay cho tang.\n\n**Kiểm lỗi**\n\nNếu cộng 3 và 4 để tính chiều dài dốc hoặc dùng nhầm tan với sin, đọc **Kiến thức 3.5**: dựng tam giác vuông giữa chiều cao, chiều ngang và đoạn xiên. Thử **Bài luyện 36** và **Bài luyện 44**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B24-ANGLE_APPLICATION"
@@ -1942,23 +2116,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T14",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T15",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP16-BANK-CP67-20261126-T15",
     "stem": "Hai mặt phẳng song song tạo góc giữa hai mặt bằng bao nhiêu?",
-    "answer_key": "0°.",
-    "worked_solution": "0° theo quy ước góc giữa các mặt phẳng.\n\n**Kiểm lỗi**\n\nNếu lấy hai đường tùy ý trên hai mặt để đo góc, trở lại **Kiến thức 4.1**: cần đường vuông góc giao tuyến trong tiết diện phù hợp (hoặc hai pháp tuyến). Thử **Bài luyện 46** và **Bài luyện 58**, ghi rõ cách chọn góc không tù.",
+    "answer_key": "\\(0^\\circ\\).",
+    "worked_solution": "\\(0^\\circ\\) theo quy ước góc giữa các mặt phẳng.\n\n**Kiểm lỗi**\n\nNếu lấy hai đường tùy ý trên hai mặt để đo góc, trở lại **Kiến thức 4.1**: cần đường vuông góc giao tuyến trong tiết diện phù hợp (hoặc hai pháp tuyến). Thử **Bài luyện 46** và **Bài luyện 58**, ghi rõ cách chọn góc không tù.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-PLANE_ANGLE"
@@ -1975,23 +2152,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T15",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T16",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Nhị diện 120° cho góc nhỏ giữa hai mặt phẳng chứa nó bằng bao nhiêu?",
-    "answer_key": "60°.",
-    "worked_solution": "60° = 180°−120°.\n\n**Kiểm lỗi**\n\nNếu kết luận góc hai mặt bằng trực tiếp góc nhị diện tù, đọc **Kiến thức 4.2**: nhị diện gắn hai nửa mặt có hướng, còn góc giữa hai mặt lấy góc không tù. Thử **Bài luyện 47** và **Bài luyện 59**.",
+    "content_version": "TOP16-BANK-CP67-20261126-T16",
+    "stem": "Nhị diện \\(120^\\circ\\) cho góc nhỏ giữa hai mặt phẳng chứa nó bằng bao nhiêu?",
+    "answer_key": "\\(60^\\circ\\).",
+    "worked_solution": "\\(60^\\circ = 180^\\circ-120^\\circ\\).\n\n**Kiểm lỗi**\n\nNếu kết luận góc hai mặt bằng trực tiếp góc nhị diện tù, đọc **Kiến thức 4.2**: nhị diện gắn hai nửa mặt có hướng, còn góc giữa hai mặt lấy góc không tù. Thử **Bài luyện 47** và **Bài luyện 59**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-DIHEDRAL"
@@ -2008,23 +2188,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T16",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T17",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "d⊂(P), d⊥(Q). Quan hệ hai mặt (P),(Q)?",
-    "answer_key": "(P)⊥(Q).",
-    "worked_solution": "(P)⊥(Q), theo dấu hiệu một đường trong mặt vuông góc mặt kia.\n\n**Kiểm lỗi**\n\nNếu chỉ tìm được một cặp đường vuông góc mà kết luận hai mặt vuông góc, đọc **Kiến thức 4.3**: cần một **đường nằm trong mặt này** vuông góc **toàn bộ mặt kia**. Thử **Bài luyện 48** và **Bài luyện 60**.",
+    "content_version": "TOP16-BANK-CP67-20261126-T17",
+    "stem": "\\(d\\subset (P), d\\perp (Q)\\). Quan hệ hai mặt (P),(Q)?",
+    "answer_key": "\\((P)\\perp(Q)\\).",
+    "worked_solution": "\\((P)\\perp (Q)\\), theo dấu hiệu một đường trong mặt vuông góc mặt kia.\n\n**Kiểm lỗi**\n\nNếu chỉ tìm được một cặp đường vuông góc mà kết luận hai mặt vuông góc, đọc **Kiến thức 4.3**: cần một **đường nằm trong mặt này** vuông góc **toàn bộ mặt kia**. Thử **Bài luyện 48** và **Bài luyện 60**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-PERP_PLANES"
@@ -2041,22 +2224,25 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T17",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T18",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "(P)⊥(Q) theo d. a⊂(P), a⊥d. Có a⊥(Q) không?",
-    "answer_key": "Có, a⊥(Q).",
+    "content_version": "TOP16-BANK-CP67-20261126-T18",
+    "stem": "\\((P)\\perp (Q)\\) theo d. \\(a\\subset (P), a\\perp d\\). Có \\(a\\perp (Q)\\) không?",
+    "answer_key": "Có, \\(a\\perp(Q)\\).",
     "worked_solution": "Có, theo định lí hai mặt phẳng vuông góc. a phải nằm trong (P) và vuông góc giao tuyến d.\n\n**Kiểm lỗi**\n\nNếu quên điều kiện đường a vuông góc với giao tuyến, đọc **Kiến thức 4.4**: với hai mặt vuông góc, a phải thuộc một mặt và vuông góc giao tuyến mới suy ra a vuông góc mặt kia. Thử **Bài luyện 49** và **Bài luyện 61**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2074,20 +2260,23 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T18",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T19",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP16-BANK-CP67-20261126-T19",
     "stem": "Lăng trụ đứng có cạnh bên 7 cm, chiều cao bao nhiêu?",
     "answer_key": "7 cm.",
     "worked_solution": "7 cm, vì cạnh bên vuông góc mặt đáy.\n\n**Kiểm lỗi**\n\nNếu cho rằng lăng trụ đứng có đáy bất kì cũng là lăng trụ đều, đọc **Kiến thức 4.5**: lăng trụ đều phải có đáy là đa giác đều, còn chiều cao lăng trụ đứng bằng cạnh bên. Thử **Bài luyện 50** và **Bài luyện 62**.",
@@ -2107,21 +2296,24 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T19",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T20",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Chóp đều đáy vuông cạnh 6, h=4. Đường cao của mặt bên qua trung điểm cạnh đáy dài bao nhiêu?",
+    "content_version": "TOP16-BANK-CP67-20261126-T20",
+    "stem": "Chóp đều đáy vuông cạnh \\(6, h=4\\). Đường cao của mặt bên qua trung điểm cạnh đáy dài bao nhiêu?",
     "answer_key": "5.",
     "worked_solution": "5, do tam giác vuông có hai cạnh 4 và 3.\n\n**Kiểm lỗi**\n\nNếu nhầm cạnh bên SA hay đường cao mặt bên với chiều cao SO, đọc **Kiến thức 4.6**: chóp đều có SO vuông góc đáy, còn đường cao mặt bên tới trung điểm một cạnh đáy. Thử **Bài luyện 57** và **Bài luyện 63**, vẽ hai tam giác vuông khác nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2140,23 +2332,26 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T20",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-T21",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "TOP16-BANK-CP67-20261126-T21",
     "stem": "Hai đáy hình vuông cạnh 6 và 3 có tỉ số diện tích đáy lớn : đáy nhỏ?",
-    "answer_key": "4:1.",
-    "worked_solution": "36:9 = 4:1.\n\n**Kiểm lỗi**\n\nNếu lấy tỉ số cạnh 8:4 làm ngay tỉ số diện tích, đọc **Kiến thức 4.7**: hai đáy chóp cụt đều đồng dạng nên tỉ số diện tích là bình phương tỉ số cạnh tương ứng. Thử **Bài luyện 52** và **Bài luyện 64**.",
+    "answer_key": "\\(4:1\\).",
+    "worked_solution": "\\(36:9 = 4:1\\).\n\n**Kiểm lỗi**\n\nNếu lấy tỉ số cạnh \\(6:3=2:1\\) làm ngay tỉ số diện tích, đọc **Kiến thức 4.7**: hai đáy chóp cụt đều đồng dạng nên tỉ số diện tích là bình phương tỉ số cạnh tương ứng. Thử **Bài luyện 52** và **Bài luyện 64**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-REGULAR_FRUSTUM"
@@ -2173,13 +2368,16 @@
       "auto_grade": false
     },
     "source": {
-      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
       "heading_id": "THPT-TOP16-T21",
       "public_projection": {
         "path": "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
         "blob": "f4576823969f7cb602802c938e9aca52d6dc7eb5",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "previous_content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+      "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
