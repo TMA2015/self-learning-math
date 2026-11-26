@@ -292,7 +292,7 @@ Khi hai điểm di chuyển trên hai cạnh của cùng một tam giác với c
 
 > **ĐỊNH LÝ — Chứng minh song song qua tam giác**
 >
-> Đường trung bình và định lí Thalès đảo cung cấp chứng minh **trong một tam giác xác định**. Nếu M, N lần lượt nằm trong hai cạnh SA, SB và \(\frac{SM}{SA}=\frac{SN}{SB}\), ta có \(MN\parallel AB\). Không cần hai đoạn bằng nhau về độ dài, mà cần **hai tỉ số** tương ứng bằng nhau. Nếu M=A và N=B, hai đường trùng nhau; nếu M=N=S, đường MN không xác định.
+> Đường trung bình và định lí Thalès đảo cung cấp chứng minh **trong một tam giác xác định**. Nếu M, N lần lượt nằm trong hai cạnh SA, SB và \(\frac{SM}{SA}=\frac{SN}{SB}\), ta có \(MN\parallel AB\). Không cần hai đoạn bằng nhau về độ dài, mà cần **hai tỉ số** tương ứng bằng nhau. Nếu \(M=A\) và \(N=B\), hai đường trùng nhau; nếu \(M=N=S\), đường MN không xác định.
 
 **Ví dụ**
 
