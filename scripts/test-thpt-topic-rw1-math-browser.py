@@ -34,9 +34,11 @@ ALL22_TAIL="--tail" in sys.argv
 TAIL_SIZES={"17":12,"18":40,"19":14,"20":9,"21":8,"22":13}
 REFRESH01="--topic01-refresh" in sys.argv
 REFRESHW1="--topic-w1-refresh" in sys.argv
-REFRESH=REFRESH01 or REFRESHW1
-SIZES={"01":11} if REFRESH01 else {"02":16,"03":12,"04":18,"05":17} if REFRESHW1 else TAIL_SIZES if ALL22_TAIL else RW2_SIZES if RW2 else RW1_SIZES
-WAVE="W1-REFRESH" if REFRESHW1 else "SHARED-17-22" if ALL22_TAIL else "R-W2" if RW2 else "R-W1"
+REFRESHW2A="--topic-w2a-refresh" in sys.argv
+REFRESHW2B="--topic-w2b-refresh" in sys.argv
+REFRESH=REFRESH01 or REFRESHW1 or REFRESHW2A or REFRESHW2B
+SIZES={"01":11} if REFRESH01 else {"02":16,"03":12,"04":18,"05":17} if REFRESHW1 else {"06":16,"07":18,"08":18} if REFRESHW2A else {"09":32,"10":36,"11":22} if REFRESHW2B else TAIL_SIZES if ALL22_TAIL else RW2_SIZES if RW2 else RW1_SIZES
+WAVE="W2B-REFRESH" if REFRESHW2B else "W2A-REFRESH" if REFRESHW2A else "W1-REFRESH" if REFRESHW1 else "SHARED-17-22" if ALL22_TAIL else "R-W2" if RW2 else "R-W1"
 CURRENT_BASE="ad3545985c7a1e369799e66fa770678860827be4"
 CURRENT_FILES={
     "docs/assets/javascripts/math-details-v1.js",
@@ -580,6 +582,7 @@ with sync_playwright() as pw:
                 res=page.goto(BASE+"cd"+topic+"/kien-thuc/",wait_until="domcontentloaded")
                 assert res and res.status==200
                 expect(page.locator(".topic01-knowledge-layout")).to_be_visible(timeout=20000)
+                assert not page.evaluate("document.documentElement.classList.contains('topic-w1-fallback')"),(engine,topic,width,"adapter fallback",errors)
                 page.wait_for_function("()=>!!window.SLMTopicRW1Math && !!window.MathJax?.startup?.document",timeout=30000)
                 page.evaluate("()=>MathJax.startup.promise")
                 inventory=page.evaluate(SOURCE)
@@ -597,7 +600,7 @@ with sync_playwright() as pw:
                     module.click()
                     tab_check(module,width)
                     group=page.locator(".thpt-r4-knowledge-module-panel:visible")
-                    expect(group).to_have_count(1)
+                    assert group.count()==1,(engine,topic,width,"visible module count",group.count(),errors)
                     for sub in group.locator(SUB).all():
                         sub.click()
                         tab_check(sub,width)
