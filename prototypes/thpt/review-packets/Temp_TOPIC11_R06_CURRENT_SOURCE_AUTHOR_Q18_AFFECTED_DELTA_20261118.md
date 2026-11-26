@@ -1,3 +1,13 @@
+<!-- WORK1109_CP23_CURRENT -->
+## Current CĐ11 affected Q18 — AUTHOR_SELF_VERIFIED
+
+Work #1055/#1109 CP23, 26/11/2026: O07–O10 unit, independent lower bound, linearity and interval additivity; O12 distance and signed displacement, O16 area splitting, O19 independent bounded-area task 32/3, O21 wrong radius integral 3π/2 vs correct 7π/3, O22 washer 16π. X-G.5 on Knowledge, 116 Practice, 22 same-ID replays; 1721 balanced inline/4 displays, no remaining detected raw compound expressions (unit notation excluded), no brace imbalance; 116/116 actual original ID memberships checked (88 SGK +28 Topic), all original identity comments and rubric point sequences retained, 139/139 disclosures, 4 original SVG unchanged. 40 executed targeted math recomputations PASS. S1 inherited original B11–B13 scope and existing original SGK receipt; no new direct PDF visual scan or independent NotebookLM whole-topic verdict. Source-equivalent Practice notation, clarify particular antiderivative and derivative notation without key changes; Knowledge Work delta author verified. UI 1.1 belongs to RELEASE. No merge/deploy or protected assessment changes.
+
+Source `64688cf81991a432264c06a2ff0a908371ca1f21`, commit `66116a329561709a9fed4bec17dd74adf04ec67f`. P0/P1 in checked scope: 0.
+
+---
+Historical narrative below refers to earlier immutable snapshots; current structured source pointers and CP23 section supersede earlier claims of byte-exact display math.
+
 <!-- TOP11_MASTER974_CURRENT_R06_PED6_Q18_20261121 -->
 ## CĐ11 · CURRENT AUTHORING Q18 SELF_VERIFIED v3.2.0 — 22 outcome / 116 canonical
 
@@ -27,8 +37,8 @@ LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 CURRENT_STATUS: AUTHOR_SELF_VERIFIED_FULL_S1_KNOWLEDGE_B11_B13
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 9c27c384af7fad186047aed555ef1a9877c6a30a
-ACADEMIC_SOURCE_BLOB: 9c27c384af7fad186047aed555ef1a9877c6a30a
+SOURCE_BLOB: 64688cf81991a432264c06a2ff0a908371ca1f21
+ACADEMIC_SOURCE_BLOB: 64688cf81991a432264c06a2ff0a908371ca1f21
 SIGNED_R06_PREVIOUS_SOURCE_BLOB: 58b16f7c442d560f3950aafdbaf1f686e1e337e4
 SIGNED_R06_PREVIOUS_Q18_BLOB: ee42fcc98ccc51fef08a7eabdbf99032b0110c27
 ORIGINAL_R05_STUDENT_BLOB: 7d8eac917be4f7688a8a718e54cce4a84bc055ef
@@ -44,7 +54,7 @@ P0: 0
 P1: 0
 P2: 0
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON — owner-effective Q18 v3.1.0 author self verification; O08/O14 exact math and PED conditions directly checked
-AUTHOR_SIGNOFF: TOP11_MASTER974_CURRENT_R06_22_PED6_ONE_SGK_9c27c384af7fad186047aed555ef1a9877c6a30a
+AUTHOR_SIGNOFF: TOP11_WORK_CP23_AUTHOR_SELF_VERIFIED_64688cf81991a432264c06a2ff0a908371ca1f21
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
 PRIVATE_RD1_IMPORTED: 0
