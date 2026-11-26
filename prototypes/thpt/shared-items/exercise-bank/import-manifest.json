@@ -21399,6 +21399,46 @@
       "limitations": "G10 B18 current knowledge guessed path returned 404; no B18 task changed; difficulty classification uses exact bank stems/keys. G10/G11 older labels not normalized; semantic family and skill coverage review remains in progress. No new items/placements or independent review.",
       "next": "Continue semantic family review by chapter groups, especially G10–11 single-tag skills and existing Topic practice. Then FirstTry/Written/public selfcheck and interaction classification; no new standards, no cutover or release.",
       "release_authorization": false
+    },
+    "coverage_depth_cp108": {
+      "base": "91fc8d8c11a14326fb9d1fc92249aeeb7599821f",
+      "head": "b8b68b42d7027d3c95ce5913534d3a1bd6f1f6d9",
+      "shard": "235f107191544391b8f987e5598f09ac3b62fc37",
+      "scope": "G11 ChVIII/CD20",
+      "review": {
+        "sgk": 42,
+        "topic": 17,
+        "written": 8
+      },
+      "changes": [
+        "B29-P05: feasible overlap 3–5 of 10; probabilities 0.3,0.4,0.5",
+        "B30-P01: inverse product P(B)=3/7 and impossible intersection 4/5>7/10",
+        "B30-P06: observed joint 0.7 differs from independent product 0.56; union 0.8"
+      ],
+      "verification": "3 records changed; 39 preserved; IDs, skills, source, rubric, interaction, placements unchanged; SGK practice/public self-check only; scoped author self verification",
+      "written_pending": "B29-W03 'không chọn cả hai' ambiguous; preserve existing written source/reference",
+      "evidence": "Issue #1090 comment 7198253135; public chapter fde4f8be91b5884b4559fef59fde46cf826c2bc9; Written projection 378b118788e3cd7ab92ef6bc91ef8cac83063f3a",
+      "release_authorization": false
+    },
+    "coverage_depth_cp109": {
+      "base": "b8b68b42d7027d3c95ce5913534d3a1bd6f1f6d9",
+      "head": "31bc7539fda5fc40c7e86dfeae038a7ce161fbb7",
+      "shard": "710e7559f8ae46f4179f543c7f4503482b256afa",
+      "scope": "G11 ChIV/CD15",
+      "review": {
+        "sgk": 34,
+        "topic_own": 22,
+        "written": 10
+      },
+      "changes": [
+        "B10-P02: find unique line-plane intersection by auxiliary plane, nonparallel ratios, extension outside AB; independent affine check I=(2,-1).",
+        "B12-P04: construct unique N on SD, prove MN parallel base with noncontainment, SN:ND=2:3."
+      ],
+      "verification": "2/34 records changed; 32 unchanged, IDs/order/skills/source/rubric/mode retained, delimiters balanced; SGK Practice, CD15 Practice, SGK public self-check reuse confirmed. No placement changes.",
+      "evidence": "Public chapter e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; Written projection 17bb4f8071a421060f665f2ec89e1ea9f88218ca.",
+      "limitations": "Scoped author self verification of two revised tasks, no fresh S1 PDF visual, independent review, full bank or Written PASS. No image asset changed. Remaining G11 tags and topic families not fully reviewed.",
+      "next": "Check remaining sparse skills, including B14-PARALLEL_AND_SHAPES and SGK B11 intersection/integrated outcome linkage, then G10/G11 remaining chapters.",
+      "release_authorization": false
     }
   }
 }
