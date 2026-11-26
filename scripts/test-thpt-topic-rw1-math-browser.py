@@ -581,6 +581,7 @@ with sync_playwright() as pw:
                 res=page.goto(BASE+"cd"+topic+"/kien-thuc/",wait_until="domcontentloaded")
                 assert res and res.status==200
                 expect(page.locator(".topic01-knowledge-layout")).to_be_visible(timeout=20000)
+                assert not page.evaluate("document.documentElement.classList.contains('topic-w1-fallback')"),(engine,topic,width,"adapter fallback",errors)
                 page.wait_for_function("()=>!!window.SLMTopicRW1Math && !!window.MathJax?.startup?.document",timeout=30000)
                 page.evaluate("()=>MathJax.startup.promise")
                 inventory=page.evaluate(SOURCE)
@@ -598,7 +599,7 @@ with sync_playwright() as pw:
                     module.click()
                     tab_check(module,width)
                     group=page.locator(".thpt-r4-knowledge-module-panel:visible")
-                    expect(group).to_have_count(1)
+                    assert group.count()==1,(engine,topic,width,"visible module count",group.count(),errors)
                     for sub in group.locator(SUB).all():
                         sub.click()
                         tab_check(sub,width)

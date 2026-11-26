@@ -422,7 +422,18 @@ function styleKnowledge(root){
    if(role){box=create("div",role[1]);box.dataset.topicW1Callout=role[0];box.setAttribute("role","note");boxes.push(box)}
    if(!box){
     if(child.nodeType===3&&!child.textContent.trim())continue;
-    throw Error("Unclassified approved semantic callout "+quote.textContent.slice(0,90));
+    // CĐ08 O08: signed definition continues in a second, unlabeled quote,
+    // after intervening explanatory prose. Preserve its position and inherit
+    // the preceding semantic role within the SAME outcome, not a new label.
+    const panel=quote.closest(".thpt-r4-knowledge-content-panel");
+    if(topic==="08"&&panel?.querySelector("h3")?.textContent.startsWith("2.3.")){
+     let prior=quote.previousElementSibling;
+     while(prior&&!prior.hasAttribute("data-topic-w1-callout"))prior=prior.previousElementSibling;
+     if(prior?.dataset.topicW1Callout==="concept"){
+      box=create("div",prior.className);box.dataset.topicW1Callout="concept";box.setAttribute("role","note");boxes.push(box);
+     }
+    }
+    if(!box)throw Error("Unclassified approved semantic callout "+quote.textContent.slice(0,90));
    }
    box.append(child);
   }
