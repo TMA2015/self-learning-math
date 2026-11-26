@@ -1,5 +1,9 @@
-<!-- A06 WORK #1109 CURRENT CANDIDATE -->
-**BLOCKED_BY_AUTHORING** — Work #1055 O14/O21 edited in canonical at candidate blob `1610c73783f16c83f4f2870474965fb70bd56de4`, commit `cea05f2d1e531fb8da5ab699fb74d3e05ea00f57`. Previous signed pointers below are historical only until affected Q18/V2/ready re-lock and X-G.5 verification; no RELEASE authorization.
+## CURRENT CP18 — CĐ16 AUTHORING CONTENT_READY
+Learner `3e6f97091a814d7cee7096fd92cd448dd8900435`, Q18 `18ce1cba1049ec7435ef7cfffc1a27804c1fd394`, A1 `6ca5bfc4941e67e7d7c30f5399755048fcf24cd3`, V2 `3c433d8c8e763c0017dc156a71c88accc6bf4ca1`; current original SGK bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0`. Two official Work corrections and X-G.5 verified, 33 scoped math checks PASS. 86/65/8/11/87 preserved. Four SVG and model unchanged; tab labels and model/browser execution belong to RELEASE. Historical S1 inherited, no fresh independent NotebookLM verdict or merge/deploy.
+
+---
+
+Earlier narrative evidence below is historical; current CP18 evidence and structured fields supersede earlier pointers.
 
 <!-- OWNER_APPROVED_SHARED_SGK_G11_B22_B27_DELTA_B_READY_20261121 -->
 **CURRENT EXACT AUTHORING:** one CĐ16 learner `1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84`, current source-owner SGK B22–B27 bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` (**both Topic branches use same source blob**), current Q18 `19a2ed6ebfd7898da5f186350ea6042e2134fa7e`, A1/Q15 `3bdf5ef98ab262407983d5053fcad07632571bfe`, V2 `7ea472429022a313e5457cdafb665d4c9f10f68c`. Original 33/41 G11 shared canonical Practice student-answer labels formerly `Đáp án sau Submit luyện tập`, misleading in direct voluntary Lời giải; now exact `Đáp án` in one **canonical source** (all 51 public SGK items same) and CĐ16 projection (33) + CĐ17 projection (18). **No stem, numeric key, mathematical reasoning, option, rubric, disclosure, final submit/mastery evaluator code changed**; one original G11 Q15 same-ID source bank, old `afc8ec039213b87b4930f2d34d48c28d1fc6277f` preserved in Git history. `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL`, affected source author self QA; no blanket independent NotebookLM PASS, no website/release/merge/deploy.
@@ -17,24 +21,24 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: BLOCKED_BY_AUTHORING
+STATE: CONTENT_READY
 CONTENT_REVISION: R03_MASTER974_21D6_PUBLIC_LOOKUP_20261121
-DELTA_CLASS: DELTA_C_PED_TARGETED_21_D6_PUBLIC_SELF_CHECK; DELTA_A_EDITORIAL_65_TITLES; OLD_O01_O06_O12_O13_O16_O20_AND_MODEL_CSS_HISTORICAL
+DELTA_CLASS: DELTA_C_PED_TARGETED_WORK_1055 + DELTA_B_SOURCE_EQUIVALENT_XG5
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
-SOURCE_COMMIT: b998dfbe82ba2fd60d0838e91fb2c9413e68fa41
+SOURCE_COMMIT: ce59c2fa80fe3f79fed49fcdc253e15ff272927b
 CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84
+ACADEMIC_SOURCE_BLOB: 3e6f97091a814d7cee7096fd92cd448dd8900435
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md (SIGNED_AUTHOR_Q18, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 19a2ed6ebfd7898da5f186350ea6042e2134fa7e
+REVIEW_RECEIPT_BLOB: 18ce1cba1049ec7435ef7cfffc1a27804c1fd394
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 3bdf5ef98ab262407983d5053fcad07632571bfe
+AUTHOR_A1_A7_BLOB: 6ca5bfc4941e67e7d7c30f5399755048fcf24cd3
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 7ea472429022a313e5457cdafb665d4c9f10f68c
-ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
+AUTHOR_HANDOFF_BLOB: 3c433d8c8e763c0017dc156a71c88accc6bf4ca1
+ORIGINAL_SGK_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
 SVG_B22_BLOB: 5f2d23adb6f947064312d04d67ce5a5bb2d1ff48
@@ -45,7 +49,7 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
