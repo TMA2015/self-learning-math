@@ -1,3 +1,10 @@
+## CURRENT CP16 CĐ14 AUTHORING custody
+Learner `db502fc8ebc435b3d25b6cd5a813b6c0e156d421`; Q18 `c765c578c23da2d7c76ab1b466d50d4bd650181a`; new hyperbola SVG `d83a92eda12499dd39226c3eff07a410e51da224`. Same 110 canonical IDs and nine Written score sequences, 87 Practice, 23 exact public replay. 59 SGK locked source IDs directly read by blob, original wrapper available by exact SHA; physical integration path verification belongs to RELEASE. No new bank, merge or deploy.
+
+---
+
+Earlier snapshot narratives below are historical; current structured fields and CP16 evidence control.
+
 <!-- OWNER_APPROVED_TOPIC14_20261121_EDITORIAL_EQUIVALENCE_A1 -->
 **LATEST SOURCE_EQUIVALENT_CLEANUP:** Current one CĐ14 original R02 learner Git `d3c54d3867e6e831d6968a81d9c24d9d6b219363`, Q18 `e407a0318965dbf6cb65c9e6a2e1ac971f65221e`, A1/Q15 `current`, V2 `current`. The old learner `ff3d838680899b3c0a54ddd5774bebdf2f7d7d19` had two student-facing SGK/staff-like source-specific notes in reused `THPT-G10-B22-P03` and `THPT-G10-CHVII-W22-01`. Now only `SGK` citation reference removed in explanatory `Nếu làm sai` and `Depth note` renamed normal `Lưu ý phương pháp`; the math **y²=2px, p>0**, F(p/2;0), unique-intersection tangent proof, original problem, key and /6 written rubric unchanged. Original SGK ChVII canonical author source has no identical extra student notes; therefore changes are to **Topic-only extra annotation** and do not manufacture alternate SGK bank answers. Exactly 57/59 other shared SGK projection card bodies and 28 Topic practice untouched. `DELTA_A_UI_EDITORIAL` + source-equivalent D6; no independent full Topic review, merge/deploy or website behavior changes.
 ---
@@ -22,8 +29,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: d3c54d3867e6e831d6968a81d9c24d9d6b219363
-SOURCE_BLOB: d3c54d3867e6e831d6968a81d9c24d9d6b219363
+ACADEMIC_SOURCE_BLOB: db502fc8ebc435b3d25b6cd5a813b6c0e156d421
+SOURCE_BLOB: db502fc8ebc435b3d25b6cd5a813b6c0e156d421
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_SGK_PED_R01_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
