@@ -1853,5 +1853,261 @@
     "order": 17,
     "item_id": "THPT-TOP05-KFT17",
     "outcome_id": "TOP05-O17"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-TOP06-KFT01",
+    "outcome_id": "TOP06-O01"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-TOP06-KFT02",
+    "outcome_id": "TOP06-O02"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-TOP06-KFT03",
+    "outcome_id": "TOP06-O03"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-TOP06-KFT04",
+    "outcome_id": "TOP06-O04"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-TOP06-KFT05",
+    "outcome_id": "TOP06-O05"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-G11-B02-P01",
+    "outcome_id": "TOP06-O06",
+    "source_context": {
+      "blob": "621afad176e6944f832746b231cbd9265e96bce2",
+      "heading_id": "TOP06-M06",
+      "locator": "2.3. Công thức cộng/trừ góc / Vận dụng",
+      "line": 242,
+      "original_item_id": null,
+      "mapping": "SAME_MATHEMATICAL_TASK_REUSE_SGK_PRACTICE_ID",
+      "remediation": "Không cộng trực tiếp sin của hai góc; khai triển đủ hai tích của công thức cộng. Làm Bài 12 và Bài 25.",
+      "practice_orders": [
+        12,
+        25
+      ],
+      "original_practice_orders": [
+        12,
+        25
+      ],
+      "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    }
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 7,
+    "item_id": "THPT-TOP06-KFT07",
+    "outcome_id": "TOP06-O07"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 8,
+    "item_id": "THPT-TOP06-KFT08",
+    "outcome_id": "TOP06-O08"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 9,
+    "item_id": "THPT-TOP06-KFT09",
+    "outcome_id": "TOP06-O09"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 10,
+    "item_id": "THPT-TOP06-KFT10",
+    "outcome_id": "TOP06-O10"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 11,
+    "item_id": "THPT-TOP06-KFT11",
+    "outcome_id": "TOP06-O11"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 12,
+    "item_id": "THPT-TOP06-KFT12",
+    "outcome_id": "TOP06-O12"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 13,
+    "item_id": "THPT-TOP06-KFT13",
+    "outcome_id": "TOP06-O13"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 14,
+    "item_id": "THPT-TOP06-KFT14",
+    "outcome_id": "TOP06-O14"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 15,
+    "item_id": "THPT-TOP06-KFT15",
+    "outcome_id": "TOP06-O15"
+  },
+  {
+    "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 16,
+    "item_id": "THPT-TOP06-KFT16",
+    "outcome_id": "TOP06-O16"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-TOP07-KFT01",
+    "outcome_id": "TOP07-O01"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-TOP07-KFT02",
+    "outcome_id": "TOP07-O02"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-TOP07-KFT03",
+    "outcome_id": "TOP07-O03"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-TOP07-KFT04",
+    "outcome_id": "TOP07-O04"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-TOP07-KFT05",
+    "outcome_id": "TOP07-O05"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-TOP07-KFT06",
+    "outcome_id": "TOP07-O06"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 7,
+    "item_id": "THPT-TOP07-KFT07",
+    "outcome_id": "TOP07-O07"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 8,
+    "item_id": "THPT-TOP07-KFT08",
+    "outcome_id": "TOP07-O08"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 9,
+    "item_id": "THPT-TOP07-KFT09",
+    "outcome_id": "TOP07-O09"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 10,
+    "item_id": "THPT-TOP07-KFT10",
+    "outcome_id": "TOP07-O10"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 11,
+    "item_id": "THPT-TOP07-KFT11",
+    "outcome_id": "TOP07-O11"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 12,
+    "item_id": "THPT-TOP07-KFT12",
+    "outcome_id": "TOP07-O12"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 13,
+    "item_id": "THPT-TOP07-KFT13",
+    "outcome_id": "TOP07-O13"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 14,
+    "item_id": "THPT-TOP07-KFT14",
+    "outcome_id": "TOP07-O14"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 15,
+    "item_id": "THPT-TOP07-KFT15",
+    "outcome_id": "TOP07-O15"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 16,
+    "item_id": "THPT-TOP07-KFT16",
+    "outcome_id": "TOP07-O16"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 17,
+    "item_id": "THPT-TOP07-KFT17",
+    "outcome_id": "TOP07-O17"
+  },
+  {
+    "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
+    "role": "TOPIC_FIRST_TRY",
+    "order": 18,
+    "item_id": "THPT-TOP07-KFT18",
+    "outcome_id": "TOP07-O18"
   }
 ]
