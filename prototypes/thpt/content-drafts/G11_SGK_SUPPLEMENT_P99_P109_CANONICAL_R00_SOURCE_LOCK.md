@@ -238,34 +238,34 @@ These are original author tasks derived from SGK learning goals, NOT the publish
 ## D4 — one shared public Written and Anchor library; no duplicate IDs
 Original human-readable solutions below are for learner-controlled self-compare after completing formative task; **not** independent RD1 scoring and never counted as Mastery.
 ### THPT-G11-SUPP-E01-W01 | skill_id=G11-E01-HALF_LIFE | placement=SGK_WRITTEN | role=ANCHOR_TAG
-**Đề tự luận:** Một mẫu A0=120g với chu kì bán rã 8 năm. (a) Lập A(t). (b) Tính A(16). (c) Tìm t để A(t)=15g. (d) Nêu giả định mô hình.
-**Đáp án tự mở sau tự làm:** A(t)=120·2^(-t/8); A(16)=30g; A(t)=15g ⇒ 2^(-t/8)=1/8 ⇒ t=24 năm; chu kì bán rã 8 năm giả định ổn định.
-**Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
+**Đề tự luận:** Một mẫu có khối lượng ban đầu \(A_0=120\,\mathrm g\), chu kì bán rã 8 năm. (a) Lập \(A(t)\), t tính bằng năm. (b) Tính \(A(16)\). (c) Tìm t để \(A(t)=15\,\mathrm g\). (d) Nêu giả định mô hình.
+**Lời giải chuẩn để mở sau tự thử:** (a) Sau mỗi 8 năm khối lượng còn một nửa; với \(t\ge0\), \(A(t)=120\cdot2^{-t/8}\) (g). (b) \(A(16)=120\cdot2^{-2}=30\,\mathrm g\). (c) \(120\cdot2^{-t/8}=15\Rightarrow2^{-t/8}=2^{-3}\Rightarrow t=24\) năm. Kiểm lại: ba chu kì cho \(120/8=15\,\mathrm g\). (d) Giả sử chu kì bán rã ổn định và lượng mẫu được mô tả bằng mô hình phân rã này.
+**Rubric /4:** (a) 1 điểm lập đúng hàm và miền; (b) 1 điểm tính 30 g; (c) 1 điểm tìm 24 năm với lập luận; (d) 1 điểm nêu giả định. Chấp nhận cách giải tương đương.
 
 ### THPT-G11-SUPP-E01-W02 | skill_id=G11-E01-DECIBEL_SCALE | placement=SGK_WRITTEN | role=WRITTEN
-**Đề tự luận:** Cường độ nguồn âm đo được L=50dB với I0=10^-12 W/m². (a) Tìm I/I0. (b) Tìm I. (c) I tăng 10 lần thì mức mới? (d) Không suy cảm giác âm từ tỉ số nào?
-**Đáp án tự mở sau tự làm:** I/I0=10^5; I=10^-7 W/m²; mức mới 60dB. Không được suy độ to cảm giác người nghe gấp 10 từ cường độ vật lý gấp 10.
-**Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
+**Đề tự luận:** Cường độ âm có mức \(L=50\,\mathrm{dB}\), với \(I_0=10^{-12}\,\mathrm{W/m^2}\). (a) Tính \(\frac I{I_0}\). (b) Tìm I. (c) Nếu cường độ I tăng 10 lần, mức âm mới là bao nhiêu? (d) Có thể kết luận cảm giác âm to gấp 10 lần không? Giải thích.
+**Lời giải chuẩn để mở sau tự thử:** (a) Theo \(L=10\log_{10}\frac I{I_0}\), \(\log_{10}\frac I{I_0}=5\), nên \(\frac I{I_0}=10^5\). (b) \(I=10^5\cdot10^{-12}=10^{-7}\,\mathrm{W/m^2}\). (c) \(L'=10\log_{10}\frac{10I}{I_0}=L+10=60\,\mathrm{dB}\). (d) Không: cường độ vật lí và cảm giác độ to không cùng đại lượng; từ tỉ số cường độ không thể suy ra tỉ số cảm giác âm.
+**Rubric /4:** (a) 1 điểm tỉ số đúng; (b) 1 điểm I và đơn vị; (c) 1 điểm mức mới với lí do; (d) 1 điểm phân biệt hai đại lượng. Chấp nhận cách giải tương đương.
 
 ### THPT-G11-SUPP-E01-W03 | skill_id=G11-E01-MODEL_ASSUMPTIONS | placement=SGK_WRITTEN | role=ANCHOR_TAG
-**Đề tự luận:** Ban đầu 800 cá thể tăng 4%/năm. (a) Lập mô hình năm rời rạc. (b) Tìm k liên tục tương đương tại năm nguyên. (c) Tính N(3). (d) Nêu giới hạn.
-**Đáp án tự mở sau tự làm:** N(n)=800·1,04^n; k=ln(1,04)≈0,0392207; N(3)≈899,89; tỉ lệ và môi trường không chắc bất biến.
-**Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
+**Đề tự luận:** Ban đầu có 800 cá thể, mô hình tăng 4% mỗi năm. (a) Lập mô hình năm rời rạc. (b) Tìm k trong mô hình \(N(t)=800e^{kt}\) tương đương tại các năm nguyên. (c) Tính \(N(3)\); nếu cần số cá thể nguyên, làm tròn đến hàng đơn vị. (d) Nêu giới hạn mô hình.
+**Lời giải chuẩn để mở sau tự thử:** (a) Sau mỗi năm nhân \(1{,}04\), nên \(N(n)=800\cdot1{,}04^n\), với \(n=0,1,\ldots\). (b) Để hai mô hình trùng tại năm nguyên, \(e^k=1{,}04\), tức \(k=\ln(1{,}04)\approx0{,}0392207\) mỗi năm. (c) \(N(3)=800\cdot1{,}04^3=899{,}8912\). Giá trị mô hình xấp xỉ 900 cá thể khi làm tròn; không phải số đếm thực tế chính xác. (d) Mô hình giả sử tốc độ tăng không đổi; môi trường và nguồn sống có thể thay đổi.
+**Rubric /4:** (a) 1 điểm mô hình rời rạc; (b) 1 điểm k và lí do; (c) 1 điểm tính và làm tròn hợp lí; (d) 1 điểm nêu giới hạn. Chấp nhận cách giải tương đương.
 
 ### THPT-G11-SUPP-E02-W01 | skill_id=G11-E02-LINE_PLANE_MEASURE | placement=SGK_WRITTEN | role=WRITTEN
-**Đề tự luận:** Cọc 1,8m thẳng đứng, bóng 2,4m. (a) Vẽ tam giác vuông, gắn nhãn. (b) Nêu hình chiếu tia sáng. (c) Tính góc tia–đất. (d) Nêu điều kiện đo.
-**Đáp án tự mở sau tự làm:** Cạnh đối 1,8m/cạnh kề 2,4m; tanθ=0,75; θ≈36,87°. Nền phẳng, cọc vuông góc, bóng đo cùng thời điểm.
-**Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
+**Đề tự luận:** Cọc thẳng đứng cao \(1{,}8\,\mathrm m\), bóng trên nền phẳng dài \(2{,}4\,\mathrm m\). (a) Vẽ tam giác vuông, gắn nhãn. (b) Nêu hình chiếu của đoạn tia sáng từ đỉnh cọc đến đầu bóng trên nền. (c) Tính góc giữa tia sáng và nền. (d) Nêu điều kiện đo.
+**Lời giải chuẩn để mở sau tự thử:** (a) Gọi A là chân cọc, B là đỉnh cọc, C là đầu bóng. Tam giác ABC vuông tại A, \(AB=1{,}8\,\mathrm m\), \(AC=2{,}4\,\mathrm m\). (b) B chiếu xuống A, C nằm trên nền; đoạn BC chiếu thành AC, chính là đoạn bóng. (c) Góc giữa tia và nền là \(\theta=\widehat{BCA}\). Ta có \(\tan\theta=\frac{1{,}8}{2{,}4}=0{,}75\), suy ra \(\theta\approx36{,}87^\circ\). (d) Nền phẳng nằm ngang, cọc vuông góc nền, bóng và chiều cao đo đúng cùng điều kiện chiếu sáng.
+**Rubric /4:** (a) 1 điểm tam giác và nhãn đúng; (b) 1 điểm hình chiếu AC; (c) 1 điểm góc và tính toán; (d) 1 điểm điều kiện. Chấp nhận hình vẽ và cách tính tương đương.
 
 ### THPT-G11-SUPP-E02-W02 | skill_id=G11-E02-VOLUME_MODEL | placement=SGK_WRITTEN | role=ANCHOR_TAG
-**Đề tự luận:** Một lăng trụ đứng có đáy tam giác vuông hai cạnh góc vuông 6cm,8cm, cao 5cm. (a) Tìm Sđáy. (b) Tìm V lăng trụ. (c) V chóp cùng đáy và cao? (d) Lý do hệ số 1/3?
-**Đáp án tự mở sau tự làm:** Sđáy=24cm²; Vlăng trụ=120cm³; Vchóp=40cm³; chóp một phần ba lăng trụ cùng diện tích đáy/chiều cao.
-**Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
+**Đề tự luận:** Một lăng trụ đứng có đáy tam giác vuông với hai cạnh góc vuông 6 cm, 8 cm, chiều cao 5 cm. (a) Tính diện tích đáy. (b) Tính thể tích lăng trụ. (c) Tính thể tích hình chóp cùng diện tích đáy và chiều cao. (d) Nêu công thức làm cơ sở cho tỉ số thể tích.
+**Lời giải chuẩn để mở sau tự thử:** (a) \(S=\frac12\cdot6\cdot8=24\,\mathrm{cm}^2\). (b) \(V_{\mathrm{lt}}=Sh=24\cdot5=120\,\mathrm{cm}^3\). (c) \(V_{\mathrm{chóp}}=\frac13 Sh=40\,\mathrm{cm}^3\). (d) Theo hai công thức thể tích hình chóp và lăng trụ, cùng S và chiều cao vuông góc h thì \(\frac{V_{\mathrm{chóp}}}{V_{\mathrm{lt}}}=\frac{\frac13 Sh}{Sh}=\frac13\). Đây là áp dụng định lí thể tích, không phải giả định mọi hình chóp có thể tích bằng một phần ba mọi lăng trụ.
+**Rubric /4:** (a) 1 điểm diện tích; (b) 1 điểm thể tích lăng trụ; (c) 1 điểm thể tích chóp; (d) 1 điểm công thức và điều kiện cùng diện tích đáy, chiều cao. Chấp nhận cách giải tương đương.
 
 ### THPT-G11-SUPP-E02-W03 | skill_id=G11-E02-GEOGEBRA_REPRESENTATION | placement=SGK_WRITTEN | role=WRITTEN
-**Đề tự luận:** Thiết kế giấy/GeoGebra một lăng trụ ABC.A'B'C': (a) hai đáy; (b) nối cạnh bên; (c) đánh dấu cạnh khuất; (d) điều kiện để lăng trụ đứng.
-**Đáp án tự mở sau tự làm:** Đáy tam giác bằng nhau ở hai mặt song song; nối đỉnh tương ứng; nét khuất đứt; cạnh bên vuông góc hai đáy mới là lăng trụ đứng.
-**Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
+**Đề tự luận:** Vẽ trên giấy hoặc dựng bằng GeoGebra lăng trụ tam giác \(ABC.A'B'C'\). (a) Dựng hai đáy. (b) Nối cạnh bên. (c) Đánh dấu cạnh khuất theo góc nhìn đã chọn. (d) Nêu điều kiện để lăng trụ là lăng trụ đứng.
+**Lời giải chuẩn để mở sau tự thử:** (a) Dựng tam giác ABC không suy biến và ảnh tịnh tiến \(A'B'C'\) trong mặt phẳng song song phân biệt với mặt phẳng đáy. (b) Nối \(AA'\), \(BB'\), \(CC'\); ba cạnh bên song song và bằng nhau. (c) Dùng nét đứt cho những cạnh bị mặt khối che khuất ở góc nhìn đã chọn; không quy định một cạnh luôn khuất ở mọi góc. (d) Lăng trụ đứng khi cạnh bên vuông góc với mặt phẳng đáy, khi đó độ dài cạnh bên là chiều cao.
+**Rubric /4:** (a) 1 điểm hai đáy bằng nhau, song song; (b) 1 điểm nối đúng các đỉnh; (c) 1 điểm nét khuất phù hợp góc nhìn; (d) 1 điểm điều kiện vuông góc. Chấp nhận bản vẽ giấy hoặc mô hình tương đương đúng.
 
 ## D5 — five original authored SVG sources; independent mathematical and visual QA pending
 FIG-G11-SUPP-E01-01: time-versus-quantity axes, discrete dot model and continuous model with k=ln(1+r) if synchronized at integer years. Avoid pretending k=r gives identical graphs.
@@ -691,9 +691,9 @@ Each answer is an author solution to be shown only AFTER individual formative Su
 ## D4 — ten canonical year-end Written/Anchor /4 rubric library
 Anchor is a label of the same Written question, never a duplicate; self-assessed manuscript is not independent final Readiness or Mastery evidence.
 ### THPT-G11-YR-TRIG-W01 | skill_id=G11-YR-TRIG_IDENTITY | placement=SGK_WRITTEN | role=ANCHOR_TAG
-**Đề tự luận mới:** (a) Giải sinx=1/2 trong [0,2π]. (b) Giải thích hai vị trí trên vòng tròn. (c) Viết chu kì sin. (d) Kiểm đủ đầu mút.
-**Lời giải chuẩn để mở sau tự thử:** x=π/6 hoặc 5π/6; sin dương ở hai góc đối xứng trong nửa trên; chu kì 2π; 0 và 2π không thỏa sin=1/2.
-**Rubric /4 cụ thể:** Hai nghiệm/2 điểm 1đ; dấu và giải thích 1đ; chu kì 1đ; kiểm miền và kết luận 1đ.
+**Đề tự luận:** (a) Giải \(\sin x=\frac12\) trên \([0;2\pi]\). (b) Giải thích hai vị trí trên đường tròn lượng giác. (c) Viết chu kì của hàm sin. (d) Kiểm tra hai đầu mút.
+**Lời giải chuẩn để mở sau tự thử:** (a) Hai nghiệm là \(x=\frac\pi6\) và \(x=\frac{5\pi}6\). (b) Sin là tung độ của điểm trên đường tròn lượng giác; đường ngang có tung độ \(\frac12\) cắt nửa trên tại hai điểm đối xứng qua trục tung. (c) Chu kì cơ bản là \(2\pi\). (d) \(\sin0=\sin2\pi=0\ne\frac12\), nên không thêm nghiệm ở hai đầu mút.
+**Rubric /4:** (a) 1 điểm cho đủ hai nghiệm; (b) 1 điểm giải thích hai vị trí; (c) 1 điểm chu kì; (d) 1 điểm kiểm hai đầu mút và kết luận.
 
 ### THPT-G11-YR-SEQ-W01 | skill_id=G11-YR-SEQUENCE_MODEL | placement=SGK_WRITTEN | role=WRITTEN
 **Đề tự luận mới:** Hợp đồng A trả 120 triệu năm 1 và tăng 8 triệu/năm. Hợp đồng B trả 120 triệu năm 1 và tăng 5%/năm. (a) Viết u_n, v_n. (b) Tính năm 4. (c) Tổng 4 năm. (d) So sánh.
@@ -711,14 +711,14 @@ Anchor is a label of the same Written question, never a duplicate; self-assessed
 **Rubric /4 cụ thể:** Điều kiện 1đ; quy tắc log 1đ; nghiệm đại số 1đ; loại nghiệm sai/thử lại 1đ.
 
 ### THPT-G11-YR-DERIV-W01 | skill_id=G11-YR-DERIVATIVE_RATE | placement=SGK_WRITTEN | role=ANCHOR_TAG
-**Đề tự luận mới:** Cho f(x)=x³−3x. (a) Tính f'(x). (b) f(2),f'(2). (c) Tiếp tuyến tại x=2. (d) Nếu s(t)=f(t) m, tìm gia tốc ở t=2 và nêu đơn vị.
-**Lời giải chuẩn để mở sau tự thử:** f'=3x²−3, f(2)=2, f'(2)=9; y−2=9(x−2); s''(t)=6t, a(2)=12 m/s². Hệ số góc 9 không phải tung độ 2.
-**Rubric /4 cụ thể:** Đạo hàm 1đ; điểm và hệ số góc 1đ; phương trình tiếp tuyến 1đ; gia tốc và đơn vị 1đ.
+**Đề tự luận:** Cho \(f(x)=x^3-3x\). (a) Tính \(f'(x)\). (b) Tính \(f(2),f'(2)\). (c) Viết tiếp tuyến tại \(x=2\). (d) Nếu tọa độ chuyển động \(s(t)=f(t)\) tính bằng mét, t tính bằng giây, hãy tìm gia tốc tại \(t=2\) và nêu đơn vị.
+**Lời giải chuẩn để mở sau tự thử:** (a) \(f'(x)=3x^2-3\). (b) \(f(2)=2,\ f'(2)=9\). (c) Tiếp tuyến qua \((2;2)\) có hệ số góc 9, nên \(y-2=9(x-2)\). (d) Gia tốc là đạo hàm cấp hai của tọa độ: \(s''(t)=6t\), do đó \(a(2)=12\,\mathrm{m/s^2}\). Hệ số góc 9 không phải tung độ 2.
+**Rubric /4:** (a) 1 điểm đạo hàm; (b) 1 điểm điểm và hệ số góc; (c) 1 điểm tiếp tuyến; (d) 1 điểm gia tốc và đơn vị.
 
 ### THPT-G11-YR-SPACE-W01 | skill_id=G11-YR-SPACE_PERP_DISTANCE | placement=SGK_WRITTEN | role=WRITTEN
-**Đề tự luận mới:** Trong lập phương ABCD.A'B'C'D' cạnh a, (a) vẽ/ghi đúng AB và CC'. (b) Chứng minh BC vuông góc cả hai đường. (c) Suy khoảng cách. (d) Nêu vì sao không dùng cạnh xiên bất kì.
-**Lời giải chuẩn để mở sau tự thử:** BC⊥AB do đáy vuông, BC⊥CC' vì CC'⊥(ABCD); B∈AB, C∈CC', BC là vuông góc chung, d(AB,CC')=a.
-**Rubric /4 cụ thể:** Nêu phương và vị trí 1đ; hai vuông góc 1đ; BC là đoạn chung và khoảng cách a 1đ; điều kiện không dùng đoạn xiên 1đ.
+**Đề tự luận:** Trong hình lập phương \(ABCD.A'B'C'D'\) cạnh a, (a) vẽ hoặc ghi đúng hai đường thẳng \(AB\) và \(CC'\). (b) Chứng minh \(BC\) vuông góc với cả hai đường. (c) Suy ra khoảng cách giữa chúng. (d) Vì sao không dùng một đoạn xiên bất kì nối hai đường?
+**Lời giải chuẩn để mở sau tự thử:** (a) \(AB\) nằm trên đáy, \(CC'\) là cạnh bên không cắt AB. Hai đường không song song nên chéo nhau. (b) \(BC\perp AB\) vì đáy là hình vuông; \(BC\perp CC'\) vì \(CC'\perp(ABCD)\) và BC đi qua C. (c) \(B\in AB,\ C\in CC'\); BC là đoạn vuông góc chung, nên \(d(AB,CC')=BC=a\). (d) Khoảng cách là độ dài đoạn vuông góc chung, ngắn nhất trong các đoạn nối hai đường. Ví dụ AC nối A và C nhưng \(AC=a\sqrt2>a\), nên không thể lấy AC làm khoảng cách.
+**Rubric /4:** (a) 1 điểm vị trí hai đường; (b) 1 điểm chứng minh hai vuông góc; (c) 1 điểm đoạn vuông góc chung và khoảng cách a; (d) 1 điểm giải thích đoạn xiên không cho khoảng cách. Chấp nhận lập luận đúng khác.
 
 ### THPT-G11-YR-VOLUME-W01 | skill_id=G11-YR-SPACE_VOLUME | placement=SGK_WRITTEN | role=ANCHOR_TAG
 **Đề tự luận mới:** Một lăng trụ đứng đáy tam giác vuông cạnh góc vuông 3cm và 4cm, cao 10cm. (a) Sđáy. (b) Vlăng trụ. (c) Vchóp cùng đáy/cao. (d) Tỉ số và đơn vị.
@@ -726,9 +726,9 @@ Anchor is a label of the same Written question, never a duplicate; self-assessed
 **Rubric /4 cụ thể:** Diện tích đáy 1đ; lăng trụ 1đ; chóp 1đ; tỉ lệ/đơn vị/chiều cao 1đ.
 
 ### THPT-G11-YR-STAT-W01 | skill_id=G11-YR-GROUPED_STATS | placement=SGK_WRITTEN | role=WRITTEN
-**Đề tự luận mới:** Bảng nhóm [0,10):4; [10,20):8; [20,30):8. (a) n. (b) Nhóm chứa trung vị. (c) Ước lượng trung vị theo nội suy đều. (d) Nêu vì sao không thể nói mốt là số cụ thể chắc chắn.
-**Lời giải chuẩn để mở sau tự thử:** n=20; vị trí n/2=10 nằm ở [10,20); median≈10+(10−4)/8·10=17,5. Hai nhóm sau cùng có cùng tần số 8, không có một nhóm mốt duy nhất; số liệu gốc đã mất thông tin cá nhân.
-**Rubric /4 cụ thể:** n/tích lũy 1đ; nhóm trung vị 1đ; ước lượng 17,5 1đ; giải thích mốt và giới hạn grouped data 1đ.
+**Đề tự luận:** Bảng số liệu ghép nhóm: \([0;10)\) có tần số 4; \([10;20)\) có tần số 8; \([20;30)\) có tần số 8. (a) Tính n. (b) Xác định nhóm chứa trung vị. (c) Tính trung vị ghép nhóm theo công thức nội suy. (d) Giải thích vì sao không xác định chắc chắn một mốt của mẫu gốc.
+**Lời giải chuẩn để mở sau tự thử:** (a) \(n=4+8+8=20\), tần số tích lũy lần lượt 4, 12, 20. (b) Vị trí giữa \(n/2=10\) thuộc nhóm \([10;20)\). (c) Theo công thức trung vị ghép nhóm, \(M_e=10+\frac{10-4}{8}\cdot10=17{,}5\). Đây là giá trị nội suy theo nhóm, không khẳng định trung vị chính xác của mẫu gốc. (d) Hai nhóm \([10;20)\) và \([20;30)\) cùng có tần số lớn nhất 8, không có một nhóm mốt duy nhất. Bảng không chứa từng giá trị và tần số riêng lẻ, nên không suy chắc chắn mốt của mẫu gốc.
+**Rubric /4:** (a) 1 điểm n và tần số tích lũy; (b) 1 điểm nhóm trung vị; (c) 1 điểm nội suy đúng 17,5; (d) 1 điểm giải thích đồng hạng và giới hạn thông tin mẫu gốc.
 
 ### THPT-G11-YR-PROB-W01 | skill_id=G11-YR-PROBABILITY_COMBINE | placement=SGK_WRITTEN | role=ANCHOR_TAG
 **Đề tự luận mới:** Hai biến cố có P(A)=0,5, P(B)=0,4, P(A∩B)=0,2. (a) Tính hợp. (b) Tính bù của hợp. (c) Kiểm độc lập. (d) Giải thích khác biệt với xung khắc.
