@@ -2800,10 +2800,11 @@
   {
     "item_id": "THPT-G12-B06-W01",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B06-W01",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -2811,15 +2812,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B06-O01"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B06-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B06-W02",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B06-W02",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -2827,15 +2836,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B06-O02"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B06-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B06-W03",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B06-W03",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -2843,15 +2860,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B06-O03"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B06-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B06-W04",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B06-W04",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -2859,15 +2884,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B06-O04"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B06-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B06-W05",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B06-W05",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -2875,15 +2908,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B06-O05"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B06-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B06-W06",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B06-W06",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -2891,15 +2932,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B06-O06"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B06-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B07-W01",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B07-W01",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -2907,15 +2956,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B07-O01"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B07-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B07-W02",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B07-W02",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -2923,15 +2980,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B07-O02"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B07-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B07-W03",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B07-W03",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -2939,15 +3004,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B07-O03"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B07-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B07-W04",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B07-W04",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -2955,15 +3028,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B07-O04"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B07-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B08-W01",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B08-W01",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -2971,15 +3052,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B08-O01"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B08-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B08-W02",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B08-W02",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -2987,15 +3076,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B08-O02"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B08-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B08-W03",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B08-W03",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -3003,15 +3100,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B08-O03"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B08-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B08-W04",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B08-W04",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -3019,15 +3124,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B08-O04"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B08-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B08-W05",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B08-W05",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -3035,15 +3148,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B08-O05"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B08-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B08-W06",
     "source": {
-      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
       "heading_id": "THPT-G12-B08-W06",
-      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
@@ -3051,7 +3172,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B08-O06"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B08-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP13-W01",
@@ -4060,12 +4188,13 @@
   {
     "item_id": "THPT-G12-B14-W01",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B14-W01",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4073,17 +4202,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B14-O01"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B14-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B14-W02",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B14-W02",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4091,17 +4228,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B14-O02"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B14-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B14-W03",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B14-W03",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4109,17 +4254,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B14-O03"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B14-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B14-W04",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B14-W04",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4127,17 +4280,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B14-O04"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B14-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B14-W05",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B14-W05",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4145,17 +4306,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B14-O05"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B14-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B14-W06",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B14-W06",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4163,17 +4332,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B14-O06"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B14-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B14-W07",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B14-W07",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4181,17 +4358,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B14-O07"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B14-W07",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B15-W01",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B15-W01",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4199,17 +4384,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B15-O01"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B15-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B15-W02",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B15-W02",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4217,17 +4410,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B15-O02"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B15-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B15-W03",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B15-W03",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4235,17 +4436,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B15-O03"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B15-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B15-W04",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B15-W04",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4253,17 +4462,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B15-O04"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B15-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B15-W05",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B15-W05",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4271,17 +4488,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B15-O05"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B15-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B15-W06",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B15-W06",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4289,17 +4514,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B15-O06"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B15-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B15-W07",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B15-W07",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4307,17 +4540,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B15-O07"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B15-W07",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B16-W01",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B16-W01",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4325,17 +4566,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B16-O01"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B16-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B16-W02",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B16-W02",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4343,17 +4592,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B16-O02"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B16-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B16-W03",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B16-W03",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4361,17 +4618,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B16-O03"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B16-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B16-W04",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B16-W04",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4379,17 +4644,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B16-O04"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B16-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B16-W05",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B16-W05",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4397,17 +4670,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B16-O05"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B16-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B17-W01",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B17-W01",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4415,17 +4696,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B17-O01"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B17-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B17-W02",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B17-W02",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4433,17 +4722,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B17-O02"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B17-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B17-W03",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B17-W03",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4451,17 +4748,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B17-O03"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B17-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B17-W04",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B17-W04",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4469,17 +4774,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B17-O04"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B17-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B17-W05",
     "source": {
-      "blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "heading_id": "THPT-G12-B17-W05",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4487,91 +4800,154 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B17-O05"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-G12-B17-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP18-W01",
     "source": {
-      "blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "blob": "21904191544d9a8a30c43699c485bad08cf86fc7",
       "heading_id": "THPT-TOP18-W01",
-      "previous_source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHII-B08-O05"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-TOP18-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP18-W02",
     "source": {
-      "blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "blob": "21904191544d9a8a30c43699c485bad08cf86fc7",
       "heading_id": "THPT-TOP18-W02",
-      "previous_source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B14-O03"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-TOP18-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP18-W06",
     "source": {
-      "blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "blob": "21904191544d9a8a30c43699c485bad08cf86fc7",
       "heading_id": "THPT-TOP18-W06",
-      "previous_source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B14-O06"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-TOP18-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP18-W03",
     "source": {
-      "blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "blob": "21904191544d9a8a30c43699c485bad08cf86fc7",
       "heading_id": "THPT-TOP18-W03",
-      "previous_source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B15-O07"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-TOP18-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP18-W04",
     "source": {
-      "blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "blob": "21904191544d9a8a30c43699c485bad08cf86fc7",
       "heading_id": "THPT-TOP18-W04",
-      "previous_source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B16-O02"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-TOP18-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP18-W05",
     "source": {
-      "blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "blob": "21904191544d9a8a30c43699c485bad08cf86fc7",
       "heading_id": "THPT-TOP18-W05",
-      "previous_source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B17-O04"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-TOP18-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP18-W07",
     "source": {
-      "blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "blob": "21904191544d9a8a30c43699c485bad08cf86fc7",
       "heading_id": "THPT-TOP18-W07",
-      "previous_source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-      "revision_scope": "CP25_CURRENT_AUTHORING_SOURCE; HISTORICAL_PROJECTION_UNCHANGED"
+      "previous_source_blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "path": "prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHV-B17-O03"
+    ],
+    "content_version": "CD18-BANK-20261127-THPT-TOP18-W07",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHVIII-W23-01",
