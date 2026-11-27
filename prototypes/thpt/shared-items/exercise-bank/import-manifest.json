@@ -2373,7 +2373,7 @@
     }
   ],
   "academic_audit": "AUTHOR_REVIEW_18_DRAFTS_AND_709_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
-  "interaction_conversion": "IN_PROGRESS_CP125_CD01_CD05_CONTENT_COMPLETE_248_CHOICE_CANDIDATES_AUTO_GRADE_DISABLED",
+  "interaction_conversion": "IN_PROGRESS_CP128_CD01_CD08_CONTENT_COMPLETE_459_CHOICE_CANDIDATES_AUTO_GRADE_DISABLED",
   "release_authorization": false,
   "import_batches": [
     {
@@ -24058,6 +24058,240 @@
       "source_section_scope": "Exact comparison excluding revised Written sections confirmed non-Written content unchanged in 4 original source files; 18 revised sections and 2 preserved original SGK B18 HTML source sections.",
       "handoff": "Keep original ID/role and historical snapshots. Reuse same item across SGK/Topic, reveal/score only after whole submission for public selfcheck; all candidate auto_grade=false; no official mastery. Resolve skill metadata and two historic HTML typography deltas at intake, no runtime or public source modifications before release authorization. No fresh PDF direct audit or new independent review claimed.",
       "next": "STOP after CD05 for this group; next group CD06 onward on owner direction."
+    },
+    "exercise_completion_cp126_cp128": {
+      "scope": "Owner-directed grouped CD06–08 authoring candidate",
+      "baseline": "49a3d2854fc4a482905248133213f0ffb3c5a1b9",
+      "head_before_manifest": "0b683ffa479fe84625967b2d0323cf40067097ec",
+      "standard": "Q01–Q18 v3.2.0 X-G.5/X-G.6 #1091",
+      "status": "AUTHORING_BANK_CD06_CD08_CONTENT_COMPLETE_RELEASE_PENDING",
+      "group_inventory": {
+        "unique": 239,
+        "interactive": 211,
+        "written": 28,
+        "per_topic_unique_sum": 244,
+        "shared_between_cd07_cd08": {
+          "interactive": 4,
+          "written": 1
+        },
+        "practice_total": 195,
+        "practice_interactive": 166,
+        "vandung_placements": 52,
+        "vandung_reuses": 3,
+        "selfcheck_reuses": 52,
+        "placements": 299,
+        "choices": 844,
+        "outcomes": 52,
+        "skill_mapping_pending": 0
+      },
+      "reports": [
+        {
+          "topic": "CD06",
+          "title": "Lượng giác",
+          "unique": 81,
+          "interactive": 73,
+          "written": 8,
+          "practice": 66,
+          "practice_interactive": 58,
+          "vandung": 16,
+          "vandung_reuses": 1,
+          "replay": 16,
+          "placements": 98,
+          "choices": 292,
+          "outcomes": 16,
+          "levels": {
+            "RECOGNIZE": 12,
+            "UNDERSTAND": 30,
+            "APPLY": 18,
+            "SYNTHESIS": 13
+          },
+          "groups": [
+            14,
+            13,
+            15,
+            24
+          ],
+          "rubrics": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "scores": [
+            16,
+            0,
+            8,
+            null
+          ],
+          "math": "Signed angles, arc distance, quadrant signs, formula/domain, proof of fundamental period, restricted-domain extrema, general and interval solutions. W03 exact duplicate of SGK W04 replaced by distinct variant cos(2x)=1−sin x: S={0,π/6,5π/6,π}; source section version 2, same ID/outcome, historical blob retained."
+        },
+        {
+          "topic": "CD07",
+          "title": "Dãy số, cấp số cộng và cấp số nhân",
+          "unique": 87,
+          "interactive": 76,
+          "written": 11,
+          "practice": 70,
+          "practice_interactive": 59,
+          "vandung": 18,
+          "vandung_reuses": 1,
+          "replay": 18,
+          "placements": 106,
+          "choices": 304,
+          "outcomes": 18,
+          "levels": {
+            "RECOGNIZE": 13,
+            "UNDERSTAND": 29,
+            "APPLY": 18,
+            "SYNTHESIS": 16
+          },
+          "groups": [
+            20,
+            20,
+            22,
+            8
+          ],
+          "rubrics": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            4,
+            7,
+            7,
+            7,
+            7
+          ],
+          "scores": [
+            18,
+            0,
+            9,
+            null
+          ],
+          "math": "Index domain, recurrence/induction, bounds, AP/GP q=0/q=1, signed finite and infinite sums, integer capacity thresholds, strict error, deposit timing 126.1 vs 132.405, debt repayment 24.2 vs 21 at zero interest. O16 second practice reuses KFT16, no new ID."
+        },
+        {
+          "topic": "CD08",
+          "title": "Giới hạn và hàm số liên tục",
+          "unique": 76,
+          "interactive": 66,
+          "written": 10,
+          "practice": 59,
+          "practice_interactive": 49,
+          "vandung": 18,
+          "vandung_reuses": 1,
+          "replay": 18,
+          "placements": 95,
+          "choices": 264,
+          "outcomes": 18,
+          "levels": {
+            "RECOGNIZE": 3,
+            "UNDERSTAND": 15,
+            "APPLY": 36,
+            "SYNTHESIS": 12
+          },
+          "groups": [
+            20,
+            20,
+            13,
+            6
+          ],
+          "rubrics": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            7,
+            7,
+            7,
+            7
+          ],
+          "scores": [
+            18,
+            0,
+            9,
+            null
+          ],
+          "math": "Finite and infinite limits, subsequence signs, strict n>40, one-sided infinity, conjugation and negative infinity, removable/jump, relative endpoint continuity, IVT existence vs uniqueness, bisection [5/4,3/2]. O03 second practice reuses KFT03; skill corrected to existing infinite sequence. Four interactive and one Written reused unchanged from CD07."
+        }
+      ],
+      "files": {
+        "items/cd06.json": "0ce718aa4da35eb8e8956be5c15a8a5c7259ce70",
+        "items/cd07.json": "17267b26edf8fd1335ae70a25dd22af00cdff821",
+        "items/cd08.json": "c897e0a2a164ef6894f477d2c376bec16fd0f7f3",
+        "items/g11-chi.json": "5699d91ca1fa8a72b2ce176aa1b134324393bc62",
+        "items/g11-chii.json": "2f1d18b2f42aa77012a3fac4e1c39f9e1ddbae28",
+        "items/g11-chv.json": "a6d5619bff965e33947b86c304781158faa68713",
+        "items/topic-knowledge-first-try.json": "d2d88c7187244ebb4fdbfbf7e65e1620888bb6d7",
+        "placements/cd06.json": "a7b9028026f11ad68387c4eeeeb2d52ec4c895f5",
+        "placements/cd07.json": "9d0de364eba9fa908c056f666b2c982ed3e514c2",
+        "placements/cd08.json": "6132e0d9ec6729d82c65821a2a5d63f5f0820388",
+        "placements/topic-knowledge-first-try.json": "94e8d20c2bfcb0f859e7b5f88b7daf36cc732144",
+        "written-references.json": "ae8177fb7ae020c575eac101e4075c4b70fbaf40"
+      },
+      "sources": [
+        {
+          "path": "prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md",
+          "prior": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+          "blob": "8267b297bb90da68552b5722515063d8eb7c4d66",
+          "sections": 4,
+          "outside_unchanged": true
+        },
+        {
+          "path": "prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_NEW20_PUBLIC_CANONICAL_R01_20261112.md",
+          "prior": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+          "blob": "b9dd540fff2fa5f0c9548f6c3f26b72a2150cafb",
+          "sections": 4,
+          "outside_unchanged": true
+        },
+        {
+          "path": "prototypes/thpt/content-drafts/G11_CHII_B05_B07_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+          "prior": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+          "blob": "ac2e861ed6ea9a109169a3f871613a287a8b1a4d",
+          "sections": 6,
+          "outside_unchanged": true
+        },
+        {
+          "path": "prototypes/thpt/content-drafts/G11_CHV_B15_B17_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+          "prior": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+          "blob": "13e33dfb9fe11c0d0a7e9c5aa509a8b5ed31b4de",
+          "sections": 6,
+          "outside_unchanged": true
+        },
+        {
+          "path": "prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R06_20261115.md",
+          "prior": "f70e2c961dfcf31825d135b61e301cbb4c322767",
+          "blob": "021521e98424ee81883bd2bcdffa262b586332a3",
+          "sections": 4,
+          "outside_unchanged": true
+        },
+        {
+          "path": "prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_NEW22_PUBLIC_CANONICAL_R05_20261115.md",
+          "prior": "2e93db80384de53e208248eaa0396a7f487302ac",
+          "blob": "c14967bf365a9d06c6af50b7f0cf75e568c0e462",
+          "sections": 4,
+          "outside_unchanged": true
+        }
+      ],
+      "qa": {
+        "source_and_math_author_review": "All current source records and original Written sections read and self-checked; no new independent academic/PED verdict",
+        "choice_schema": "Four unique options, sole key matches correct option text, all hints/solutions/skill IDs present, auto_grade=false",
+        "outcome_coverage": "52/52 ≥2 Practice, 1 Vận dụng and 1 public replay; no new ID",
+        "notation": "Scoped delimiter/raw-symbol scan passed on interactive fields; written sections checked",
+        "links": "D6 candidate ID/order match passed",
+        "score_order": "all correct, all wrong, mixed, incomplete",
+        "outside_shared_shards": "Earlier exact structural comparison unchanged outside group, last edits only scoped records",
+        "limitations": "No direct new SGK PDF read, no independent NotebookLM PASS or browser/render/runtime QA. Substantive W03 change awaits scoped delta review."
+      },
+      "handoff": "No merge/deploy or change to protected runtime, Golden, private RD1, Mastery, Final Submit or Firebase. Preserve prior skill metadata gaps CD02–05 outside scope. Stop after CD08; next CD09–11 when owner directs."
     }
   }
 }
