@@ -5283,7 +5283,8 @@
     "item_id": "THPT-G11-CHVIII-B28-W01",
     "source": {
       "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
-      "heading_id": "THPT-G11-CHVIII-B28-W01"
+      "heading_id": "THPT-G11-CHVIII-B28-W01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-viii.md",
@@ -5291,13 +5292,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-B28-UNION",
+      "G11-B28-INTERSECTION"
+    ],
+    "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B28-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Source solution lists correct sets but does not explicitly explain why 6 belongs to both; expand at scoped PED review."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-W02-ANCHOR",
     "source": {
       "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
-      "heading_id": "THPT-G11-CHVIII-B28-W02-ANCHOR"
+      "heading_id": "THPT-G11-CHVIII-B28-W02-ANCHOR",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-viii.md",
@@ -5305,13 +5316,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-B28-INDEPENDENCE",
+      "G11-B28-DISJOINT"
+    ],
+    "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B28-W02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-W01",
     "source": {
       "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
-      "heading_id": "THPT-G11-CHVIII-B29-W01"
+      "heading_id": "THPT-G11-CHVIII-B29-W01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-viii.md",
@@ -5319,13 +5339,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-B29-ADDITION_OVERLAP",
+      "G11-B29-COMPLEMENT_PROB"
+    ],
+    "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B29-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Source solution omits explicit double-count explanation demanded by prompt/rubric."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-W02-ANCHOR",
     "source": {
       "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
-      "heading_id": "THPT-G11-CHVIII-B29-W02-ANCHOR"
+      "heading_id": "THPT-G11-CHVIII-B29-W02-ANCHOR",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-viii.md",
@@ -5333,13 +5363,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-B29-PROBABILITY_BOUNDS",
+      "G11-B29-ADDITION_OVERLAP"
+    ],
+    "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B29-W02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-W03",
     "source": {
       "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
-      "heading_id": "THPT-G11-CHVIII-B29-W03"
+      "heading_id": "THPT-G11-CHVIII-B29-W03",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-viii.md",
@@ -5347,13 +5386,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-B29-REAL_APPLICATION",
+      "G11-B29-VENN_COUNTS"
+    ],
+    "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B29-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Wording 'không chọn cả hai' ambiguous between neither and not both; solution uses neither; scoped wording Delta required."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-W01",
     "source": {
       "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
-      "heading_id": "THPT-G11-CHVIII-B30-W01"
+      "heading_id": "THPT-G11-CHVIII-B30-W01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-viii.md",
@@ -5361,13 +5410,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-B30-MULTIPLY_INDEPENDENT",
+      "G11-B30-REPEATED_TRIALS"
+    ],
+    "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B30-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-W02-ANCHOR",
     "source": {
       "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
-      "heading_id": "THPT-G11-CHVIII-B30-W02-ANCHOR"
+      "heading_id": "THPT-G11-CHVIII-B30-W02-ANCHOR",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-viii.md",
@@ -5375,13 +5433,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-B30-AT_LEAST_ONE",
+      "G11-B30-MULTIPLY_INDEPENDENT"
+    ],
+    "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B30-W02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVIII-CHVIII-W01-ANCHOR",
     "source": {
       "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
-      "heading_id": "THPT-G11-CHVIII-CHVIII-W01-ANCHOR"
+      "heading_id": "THPT-G11-CHVIII-CHVIII-W01-ANCHOR",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-viii.md",
@@ -5389,7 +5456,16 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B30-MULTIPLY_INDEPENDENT",
+      "G11-B29-ADDITION_OVERLAP",
+      "G11-B29-COMPLEMENT_PROB"
+    ],
+    "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-CHVIII-W01-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP20-W01",
