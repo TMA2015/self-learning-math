@@ -9474,7 +9474,9 @@
     "answer_key": "Đỉnh \\((0;-2)\\).",
     "worked_solution": "\\((0;-2)\\), và điểm \\((1;1)\\) thành \\((1;-1)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "B16_OUT_02"
+    ],
     "original_outcome_ids": [
       "TOP05-O09"
     ],
@@ -9530,7 +9532,9 @@
     "answer_key": "Dịch sang trái 2 đơn vị, đỉnh \\((-2;0)\\).",
     "worked_solution": "Dịch trái 2, đỉnh \\((-2;0)\\), vì \\(x+2=0\\) tại \\(x=-2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "B16_OUT_02"
+    ],
     "original_outcome_ids": [
       "TOP05-O10"
     ],
@@ -9812,7 +9816,9 @@
     "answer_key": "Đỉnh \\((-2;1)\\), mở xuống.",
     "worked_solution": "\\(g(x)=-(x+2)^2+1\\), đỉnh \\((-2;1)\\), mở xuống.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "B16_OUT_02"
+    ],
     "original_outcome_ids": [
       "TOP05-O15"
     ],
