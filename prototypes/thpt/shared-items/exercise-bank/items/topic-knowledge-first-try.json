@@ -6976,7 +6976,9 @@
     "answer_key": "\\(x=3\\); trừ 2 và chia cho 3 là hai phép biến đổi có phép ngược.",
     "worked_solution": "Trừ 2 ở hai vế được \\(3x=9\\); chia cho \\(3\\ne0\\) được \\(x=3\\). Cả hai bước đều có phép ngược hợp lệ. Thử lại: \\(3\\cdot3+2=11\\). Nếu em dùng dấu tương đương cho phép bình phương mà không kiểm điều kiện, hãy so trường hợp \\(x=3\\) và \\(x=-3\\) khi bình phương hai vế của phương trình \\(x=3\\).\n\n**Kiểm lỗi**\n\nNếu em chỉ tìm một nghiệm sau khi biến đổi hoặc đặt dấu tương đương cho một phép bình phương không có chiều ngược, hãy đọc lại **Kiến thức 1.1**, rồi giải **Bài 1** và **Bài 2** trong Luyện tập. Kiểm từng nghiệm bằng cách thế vào phương trình ban đầu; phân biệt phép trừ/chia hằng số khác 0 với bước có thể sinh nghiệm ngoại lai.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-EQUIVALENCE"
+    ],
     "original_outcome_ids": [
       "TOP03-O01"
     ],
@@ -7861,7 +7863,9 @@
     "answer_key": "Không, vì tại x=0 có hai giá trị y=3 và y=−3.",
     "worked_solution": "\\(x=0\\) cho hai giá trị \\(y=3\\) và \\(y=-3\\), vi phạm một đầu vào một đầu ra.\n\nNếu chỉ nhìn đường cong mượt và gọi hàm, kẻ đường thẳng đứng qua \\(x=0\\); làm lại Bài 8 và Bài 9 trong phần Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "FUNCTION_MAPPING"
+    ],
     "original_outcome_ids": [
       "TOP05-O04"
     ],
@@ -8105,7 +8109,9 @@
     "answer_key": "\\(D=[0;+\\infty),\\ x=\\frac43\\).",
     "worked_solution": "Ta có \\(g(x)=\\sqrt{3x}\\), xác định khi \\(3x\\ge0\\), tức \\(D=[0;+\\infty)\\). Vì hai vế không âm, \\(\\sqrt{3x}=2\\Leftrightarrow3x=4\\), nên \\(x=\\frac43\\). So với f đạt tung độ 2 ở \\(x=4\\), hoành độ tương ứng của g bằng một phần ba.\n\nNếu nhận giãn ngang 3, dùng \\(u=3x\\Rightarrow x=\\frac u3\\); làm lại Bài 26 và Bài 27 trong phần Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "FUNCTION_DOMAIN"
+    ],
     "original_outcome_ids": [
       "TOP05-O13"
     ],
