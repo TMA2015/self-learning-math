@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "description": "Data contract only; Q01–Q18 unchanged",
+  "schema_version": 2,
+  "description": "Implementation data contract for Q01–Q18 X-G.5/X-G.6; not a parallel academic standard. Legacy fields retained during migration only.",
   "item_required": [
     "item_id",
     "content_version",
@@ -29,5 +29,122 @@
   ],
   "private_rd1_allowed": false,
   "public_selfcheck_mastery": false,
-  "answer_key_null_rule": "Allowed only for a legacy source with combined answer and solution; answer_representation=COMBINED_ANSWER_AND_SOLUTION, nonempty worked_solution, auto_grade=false. Split only during academic audit."
+  "answer_key_null_rule": "Allowed only for a legacy source with combined answer and solution; answer_representation=COMBINED_ANSWER_AND_SOLUTION, nonempty worked_solution, auto_grade=false. Split only during academic audit.",
+  "exercise_types": [
+    "INTERACTIVE",
+    "WRITTEN"
+  ],
+  "difficulty_bands": [
+    {
+      "value": "RECOGNIZE",
+      "level": 1,
+      "label": "Nhận biết"
+    },
+    {
+      "value": "UNDERSTAND",
+      "level": 2,
+      "label": "Thông hiểu"
+    },
+    {
+      "value": "APPLY",
+      "level": 3,
+      "label": "Vận dụng"
+    },
+    {
+      "value": "SYNTHESIS",
+      "level": 4,
+      "label": "Tổng hợp"
+    }
+  ],
+  "interactive_candidate": {
+    "required": [
+      "exercise_type",
+      "item_id",
+      "content_version",
+      "stem",
+      "options",
+      "answer_key",
+      "hints",
+      "worked_solution",
+      "skill_ids",
+      "difficulty",
+      "source",
+      "interaction",
+      "status"
+    ],
+    "optional": [
+      "check_again",
+      "remediation",
+      "problem_type_id",
+      "original_outcome_ids",
+      "rubric"
+    ],
+    "options": {
+      "min_items": 2,
+      "fields": [
+        "id",
+        "text"
+      ],
+      "unique_ids": true,
+      "semantically_distinct": true
+    },
+    "interaction": {
+      "types": [
+        "SINGLE_CHOICE",
+        "MULTIPLE_CHOICE"
+      ],
+      "required": [
+        "type",
+        "correct_option_ids",
+        "scoring_rule",
+        "auto_grade"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "correct_ids_must_resolve": true,
+      "single_choice_key_count": 1,
+      "auto_grade": false
+    },
+    "ready_scope": "complete fields, math/key/distractors, notation and PED reviewed for item; not release readiness"
+  },
+  "written_candidate": {
+    "exercise_type": "WRITTEN",
+    "canonical_required": [
+      "item_id",
+      "stem",
+      "worked_solution",
+      "rubric",
+      "difficulty",
+      "source"
+    ],
+    "optional": [
+      "hints",
+      "check_again",
+      "remediation",
+      "skill_ids"
+    ],
+    "reference_rule": "Resolve unique existing source; do not duplicate stem, solution or rubric. Reference-only records remain pending until canonical fields verified.",
+    "auto_grade": false
+  },
+  "placement_policy": {
+    "student_labels": {
+      "SGK_FIRST_TRY": "Vận dụng",
+      "SGK_PRE_CORE_FIRST_TRY": "Vận dụng",
+      "TOPIC_FIRST_TRY": "Vận dụng"
+    },
+    "practice_reveal": "AFTER_EACH_ANSWER",
+    "selfcheck_reveal": "AFTER_WHOLE_SUBMISSION",
+    "selfcheck_hints_before_submission": false,
+    "private_rd1_excluded": true,
+    "mastery_unchanged": true,
+    "legacy_placement_mode_preserved_until_release": true,
+    "group_by": "knowledge area/outcome",
+    "sort_within_group": "difficulty ascending; prerequisite order respected"
+  },
+  "migration": {
+    "legacy_interaction": "SELF_COMPARE",
+    "legacy_difficulty_allowed_until_review": true,
+    "legacy_missing_fields_allowed_until_review": true,
+    "converted_status": "AUTHOR_INTERACTION_CANDIDATE",
+    "readiness": "No blanket PASS; validate migrated items, never activate production scoring from candidate."
+  }
 }
