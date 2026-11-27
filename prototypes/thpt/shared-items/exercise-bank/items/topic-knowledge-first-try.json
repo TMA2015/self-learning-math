@@ -13867,7 +13867,8 @@
     "worked_solution": "\\((0;-2)\\), và điểm \\((1;1)\\) thành \\((1;-1)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
-      "B16_OUT_02"
+      "B16_OUT_02",
+      "TOP05-SKILL-VERTICAL_TRANSLATION"
     ],
     "original_outcome_ids": [
       "TOP05-O09"
@@ -14099,7 +14100,8 @@
     "worked_solution": "Ta có \\(g(x)=\\sqrt{3x}\\), xác định khi \\(3x\\ge0\\), tức \\(D=[0;+\\infty)\\). Vì hai vế không âm, \\(\\sqrt{3x}=2\\Leftrightarrow3x=4\\), nên \\(x=\\frac43\\). So với f đạt tung độ 2 ở \\(x=4\\), hoành độ tương ứng của g bằng một phần ba.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
-      "FUNCTION_DOMAIN"
+      "FUNCTION_DOMAIN",
+      "TOP05-SKILL-HORIZONTAL_SCALING"
     ],
     "original_outcome_ids": [
       "TOP05-O13"
