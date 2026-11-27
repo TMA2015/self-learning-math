@@ -1617,7 +1617,9 @@
     "stem": "\\(f(x)=x^2\\), x ban đầu \\(a=2\\) và tăng \\(\\Delta x=0{,}1\\). Tính vi phân tuyến tính \\(dy=f'(a)\\Delta x\\), độ tăng thật \\(\\Delta y=f(2{,}1)-f(2)\\), sai lệch \\(|\\Delta y-dy|\\); phát biểu điều kiện khi dùng xấp xỉ.",
     "answer_key": "\\(dy=0{,}4\\); \\(\\Delta y=0{,}41\\); sai lệch \\(0{,}01\\). Vi phân cho xấp xỉ bậc nhất khi hàm khả vi tại \\(a\\) và bước \\(\\Delta x\\) đủ nhỏ trong miền xác định; không coi \\(dy=\\Delta y\\) là đẳng thức tổng quát.",
     "worked_solution": "\\(f'(x)=2x\\) nên \\(f'(2)=4\\). Vi phân tại \\(a=2\\) với \\(dx=\\Delta x=0{,}1\\) là \\(dy=4\\cdot0{,}1=0{,}4\\). Độ tăng thực là \\(\\Delta y=(2{,}1)^2-2^2=4{,}41-4=0{,}41\\). Với \\(f(x)=x^2\\), \\(\\Delta y=2a\\Delta x+(\\Delta x)^2\\) nên \\(|\\Delta y-dy|=(\\Delta x)^2=0{,}01\\). Vì hàm khả vi tại a, khi \\(\\Delta x\\) tiến tới 0, vi phân dy cho xấp xỉ bậc nhất của độ tăng; phần dư chia cho \\(\\Delta x\\) tiến tới 0. Không đồng nhất \\(\\Delta y\\) và dy, nhất là khi bước thay đổi lớn.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP09-SKILL-DIFFERENTIAL_APPROXIMATION"
+    ],
     "original_outcome_ids": [
       "TOP09-O32"
     ],
