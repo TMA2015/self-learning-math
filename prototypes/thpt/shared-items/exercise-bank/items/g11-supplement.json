@@ -1135,20 +1135,26 @@
   },
   {
     "item_id": "THPT-G11-YR-TRIG-C01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Viết đúng công thức cos(a+b).",
-    "answer_key": "cos(a+b)=cos a cos b−sin a sin b.",
-    "worked_solution": "cos a cos b−sin a sin b; dấu trừ không phải cộng.",
+    "content_version": "G11-YR-XG6-20261127-TRIG-C01",
+    "stem": "Công thức nào đúng cho \\(\\cos(a+b)\\)?",
+    "answer_key": "\\(\\cos a\\cos b-\\sin a\\sin b\\)",
+    "worked_solution": "Công thức cộng là \\(\\cos(a+b)=\\cos a\\cos b-\\sin a\\sin b\\). Dấu cộng giữa hai tích xuất hiện trong công thức cos của hiệu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-TRIG_IDENTITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Phân biệt công thức cos của tổng với cos của hiệu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1160,24 +1166,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\cos a\\cos b-\\sin a\\sin b\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\cos a\\cos b+\\sin a\\sin b\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\sin a\\cos b+\\cos a\\sin b\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\cos a+\\cos b\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-TRIG-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Chu kì cơ bản của hàm y=sin(3x) là?",
-    "answer_key": "2π/3.",
-    "worked_solution": "Chu kì cơ bản của sin x là 2π. Với y=sin(3x), chu kì dương nhỏ nhất T thỏa 3T=2π, nên T=2π/3.",
+    "content_version": "G11-YR-XG6-20261127-TRIG-P01",
+    "stem": "Chu kì cơ bản của hàm số \\(y=\\sin(3x)\\) bằng bao nhiêu?",
+    "answer_key": "\\(\\frac{2\\pi}{3}\\)",
+    "worked_solution": "Chu kì dương nhỏ nhất T thỏa \\(3T=2\\pi\\), nên \\(T=\\frac{2\\pi}{3}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-TRIG_IDENTITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đối số 3x phải tăng bao nhiêu để sin lặp lại?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1189,24 +1220,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(2\\pi\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(6\\pi\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{\\pi}{3}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{2\\pi}{3}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-TRIG-P02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Giải sin x=0 với x thuộc [0,2π].",
-    "answer_key": "x∈{0,π,2π}.",
-    "worked_solution": "x=0,π,2π. Nếu khoảng có cả hai đầu mút thì tính cả 0 và 2π.",
+    "content_version": "G11-YR-XG6-20261127-TRIG-P02",
+    "stem": "Giải \\(\\sin x=0\\) với \\(x\\in[0;2\\pi]\\).",
+    "answer_key": "\\(x\\in\\{0;\\pi;2\\pi\\}\\)",
+    "worked_solution": "\\(\\sin x=0\\iff x=k\\pi,\\ k\\in\\mathbb Z\\). Trong đoạn đã cho, k nhận 0, 1, 2. Vậy \\(x\\in\\{0;\\pi;2\\pi\\}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-TRIG_IDENTITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Nhớ nghiệm tổng quát và kiểm cả hai đầu mút."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1218,24 +1274,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x\\in\\{0;\\pi\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x\\in\\{\\pi;2\\pi\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x\\in\\{0;\\pi;2\\pi\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x\\in\\{\\pi/2;3\\pi/2\\}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-SEQ-C01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "u1=5 và d=2 cấp số cộng, tìm u6.",
-    "answer_key": "u₆=15.",
-    "worked_solution": "u6=5+5·2=15.",
+    "content_version": "G11-YR-XG6-20261127-SEQ-C01",
+    "stem": "Một cấp số cộng có \\(u_1=5,\\ d=2\\). Tìm \\(u_6\\).",
+    "answer_key": "15.",
+    "worked_solution": "\\(u_6=u_1+5d=5+5\\cdot2=15\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-SEQUENCE_MODEL"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Từ số hạng thứ nhất đến thứ sáu có bao nhiêu lần cộng công sai?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1247,24 +1328,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "17."
+      },
+      {
+        "id": "B",
+        "text": "15."
+      },
+      {
+        "id": "C",
+        "text": "12."
+      },
+      {
+        "id": "D",
+        "text": "25."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-SEQ-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cấp số nhân v1=3, q=2, tìm tổng 4 số hạng đầu.",
-    "answer_key": "S₄=45.",
-    "worked_solution": "S4=3(1+2+4+8)=45.",
+    "content_version": "G11-YR-XG6-20261127-SEQ-P01",
+    "stem": "Một cấp số nhân có \\(v_1=3,\\ q=2\\). Tổng bốn số hạng đầu bằng bao nhiêu?",
+    "answer_key": "45.",
+    "worked_solution": "Bốn số hạng là 3, 6, 12, 24. Tổng \\(S_4=3+6+12+24=45\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-SEQUENCE_MODEL"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Liệt kê đúng bốn số hạng đầu hoặc dùng công thức tổng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1276,24 +1382,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "45."
+      },
+      {
+        "id": "B",
+        "text": "24."
+      },
+      {
+        "id": "C",
+        "text": "48."
+      },
+      {
+        "id": "D",
+        "text": "93."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-SEQ-P02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tiền công năm đầu 50 triệu đồng, mỗi năm sau tăng thêm đúng 5 triệu đồng so với năm trước. Tính tổng tiền công trong 3 năm.",
+    "content_version": "G11-YR-XG6-20261127-SEQ-P02",
+    "stem": "Tiền công năm đầu là 50 triệu đồng; mỗi năm sau tăng thêm đúng 5 triệu đồng so với năm trước. Tính tổng tiền công trong ba năm.",
     "answer_key": "165 triệu đồng.",
-    "worked_solution": "Tiền công mỗi năm tạo cấp số cộng có số hạng đầu 50 và công sai 5 (triệu đồng). Ba năm lần lượt nhận 50,55,60 triệu đồng; tổng bằng 165 triệu đồng.",
+    "worked_solution": "Tiền công tạo cấp số cộng với số hạng đầu 50 và công sai 5 (triệu đồng). Ba năm lần lượt nhận 50, 55, 60 triệu đồng, tổng là 165 triệu đồng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-SEQUENCE_MODEL"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Viết tiền công của từng năm, sau đó cộng lại."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1305,24 +1436,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "150 triệu đồng."
+      },
+      {
+        "id": "B",
+        "text": "180 triệu đồng."
+      },
+      {
+        "id": "C",
+        "text": "60 triệu đồng."
+      },
+      {
+        "id": "D",
+        "text": "165 triệu đồng."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-LIMIT-C01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tính lim(x→2)(x²−4)/(x−2).",
+    "content_version": "G11-YR-XG6-20261127-LIMIT-C01",
+    "stem": "Tính \\(\\lim_{x\\to2}\\frac{x^2-4}{x-2}\\).",
     "answer_key": "4.",
-    "worked_solution": "Với x≠2, (x²−4)/(x−2)=x+2. Khi x tiến đến 2, x+2 tiến đến 4. Không thay x=2 trực tiếp vào phân thức ban đầu.",
+    "worked_solution": "Với \\(x\\ne2\\), \\(\\frac{x^2-4}{x-2}=x+2\\). Vì vậy giới hạn bằng 4. Không thay x=2 trực tiếp vào phân thức ban đầu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-LIMIT_CONTINUITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Phân tích tử thành tích rồi rút gọn khi x khác 2."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1334,24 +1490,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0."
+      },
+      {
+        "id": "B",
+        "text": "2."
+      },
+      {
+        "id": "C",
+        "text": "4."
+      },
+      {
+        "id": "D",
+        "text": "Không tồn tại."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-LIMIT-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với f(x)=x+2 khi x≠1, f(1)=a, tìm a để liên tục tại1.",
-    "answer_key": "a=3.",
-    "worked_solution": "a=3, bằng giới hạn hai phía 3.",
+    "content_version": "G11-YR-XG6-20261127-LIMIT-P01",
+    "stem": "Cho \\(f(x)=\\begin{cases}x+2&x\\ne1\\\\a&x=1\\end{cases}\\). Tìm a để f liên tục tại 1.",
+    "answer_key": "\\(a=3\\)",
+    "worked_solution": "\\(\\lim_{x\\to1}f(x)=\\lim_{x\\to1}(x+2)=3\\). Điều kiện liên tục là \\(f(1)=3\\), tức a=3.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-LIMIT_CONTINUITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Giá trị hàm tại 1 phải bằng giới hạn tại 1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1363,24 +1544,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(a=1\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(a=3\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(a=2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(a=0\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-LIMIT-P02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "lim(x→+∞)(3x²+2)/(x²−1) bằng?",
+    "content_version": "G11-YR-XG6-20261127-LIMIT-P02",
+    "stem": "Tính \\(\\lim_{x\\to+\\infty}\\frac{3x^2+2}{x^2-1}\\).",
     "answer_key": "3.",
-    "worked_solution": "3, chia cả tử và mẫu cho x².",
+    "worked_solution": "\\(\\frac{3x^2+2}{x^2-1}=\\frac{3+2/x^2}{1-1/x^2}\\). Khi x tiến đến dương vô cực, các số hạng chứa \\(1/x^2\\) tiến đến 0. Giới hạn là 3.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-LIMIT_CONTINUITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Chia cả tử và mẫu cho lũy thừa bậc cao nhất của x."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1392,24 +1598,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3."
+      },
+      {
+        "id": "B",
+        "text": "0."
+      },
+      {
+        "id": "C",
+        "text": "1."
+      },
+      {
+        "id": "D",
+        "text": "5."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-EXPL-C01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Giải log2(x−1)=3 và ghi miền.",
+    "content_version": "G11-YR-XG6-20261127-EXPL-C01",
+    "stem": "Giải \\(\\log_2(x-1)=3\\) và xác định điều kiện.",
     "answer_key": "Điều kiện x>1; nghiệm x=9.",
-    "worked_solution": "x>1, x−1=8 ⇒ x=9.",
+    "worked_solution": "Điều kiện \\(x-1>0\\iff x>1\\). Ta có \\(x-1=2^3=8\\) nên x=9, thỏa điều kiện.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-EXP_LOG_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đối số phải dương; đổi phương trình logarit về lũy thừa."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1421,24 +1652,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Điều kiện x>0; nghiệm x=9."
+      },
+      {
+        "id": "B",
+        "text": "Điều kiện x>1; nghiệm x=7."
+      },
+      {
+        "id": "C",
+        "text": "Điều kiện x>1; nghiệm x=8."
+      },
+      {
+        "id": "D",
+        "text": "Điều kiện x>1; nghiệm x=9."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-EXPL-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Giải 3^(x−2)=27.",
-    "answer_key": "x=5.",
-    "worked_solution": "x−2=3 ⇒ x=5.",
+    "content_version": "G11-YR-XG6-20261127-EXPL-P01",
+    "stem": "Giải \\(3^{x-2}=27\\).",
+    "answer_key": "\\(x=5\\)",
+    "worked_solution": "\\(27=3^3\\). Hàm mũ cơ số 3 đồng biến, nên \\(x-2=3\\iff x=5\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-EXP_LOG_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Viết 27 thành lũy thừa của 3."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1450,24 +1706,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x=1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x=5\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x=9\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-EXPL-P02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Giải bất phương trình (1/2)^x ≥ (1/2)^3.",
-    "answer_key": "x≤3.",
-    "worked_solution": "x≤3 vì hàm cơ số 1/2 nghịch biến.",
+    "content_version": "G11-YR-XG6-20261127-EXPL-P02",
+    "stem": "Giải bất phương trình \\((1/2)^x\\ge(1/2)^3\\).",
+    "answer_key": "\\(x\\le3\\)",
+    "worked_solution": "Vì \\(0<1/2<1\\), hàm mũ nghịch biến. Do đó \\((1/2)^x\\ge(1/2)^3\\iff x\\le3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-EXP_LOG_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hàm mũ có cơ số nằm giữa 0 và 1 là đồng biến hay nghịch biến?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1479,24 +1760,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x\\ge3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x\\le3\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x<3\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x=3\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-DERIV-C01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hàm f(x)=x³−2x có đạo hàm tại x=1 bằng?",
-    "answer_key": "f′(1)=1.",
-    "worked_solution": "f'=3x²−2 nên f'(1)=1.",
+    "content_version": "G11-YR-XG6-20261127-DERIV-C01",
+    "stem": "Cho \\(f(x)=x^3-2x\\). Tính \\(f'(1)\\).",
+    "answer_key": "1.",
+    "worked_solution": "\\(f'(x)=3x^2-2\\). Vậy \\(f'(1)=3-2=1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-DERIVATIVE_RATE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính hàm đạo hàm trước rồi thay x=1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1508,24 +1814,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "1."
+      },
+      {
+        "id": "B",
+        "text": "−1."
+      },
+      {
+        "id": "C",
+        "text": "3."
+      },
+      {
+        "id": "D",
+        "text": "5."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-DERIV-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tính đạo hàm (x²+1)sin x.",
-    "answer_key": "2x sin x+(x²+1)cos x.",
-    "worked_solution": "2x sin x+(x²+1)cos x; chọn quy tắc tích.",
+    "content_version": "G11-YR-XG6-20261127-DERIV-P01",
+    "stem": "Tính đạo hàm của \\((x^2+1)\\sin x\\).",
+    "answer_key": "\\(2x\\sin x+(x^2+1)\\cos x\\)",
+    "worked_solution": "\\((uv)'=u'v+uv'\\). Với \\(u=x^2+1,\\ v=\\sin x\\), ta có \\(u'=2x,\\ v'=\\cos x\\); kết quả là \\(2x\\sin x+(x^2+1)\\cos x\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-DERIVATIVE_RATE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng quy tắc đạo hàm của tích hai hàm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1537,24 +1868,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(2x\\cos x\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(2x\\sin x-(x^2+1)\\cos x\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((x^2+1)\\cos x\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(2x\\sin x+(x^2+1)\\cos x\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-DERIV-P02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Vật chuyển động trên một trục có tọa độ s(t)=t²−4t (m), với t tính bằng giây và t≥0. Tại t=1, vật đang đi theo chiều dương hay chiều âm?",
-    "answer_key": "Đi theo chiều âm; vận tốc −2 m/s, tốc độ 2 m/s.",
-    "worked_solution": "Vận tốc v(t)=s′(t)=2t−4 (m/s). Tại t=1, v(1)=−2 m/s. Dấu âm cho biết vật đang chuyển động theo chiều âm; tốc độ là |v(1)|=2 m/s.",
+    "content_version": "G11-YR-XG6-20261127-DERIV-P02",
+    "stem": "Vật chuyển động trên một trục với tọa độ \\(s(t)=t^2-4t\\) (m), t tính bằng giây, t≥0. Tại t=1, vật đi theo chiều nào?",
+    "answer_key": "Chiều âm; vận tốc −2 m/s, tốc độ 2 m/s.",
+    "worked_solution": "\\(v(t)=s'(t)=2t-4\\) (m/s). Tại t=1, v(1)=−2 m/s. Dấu âm cho biết chuyển động theo chiều âm, còn tốc độ là \\(|v(1)|=2\\) m/s.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-DERIVATIVE_RATE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Lấy đạo hàm tọa độ; dấu của vận tốc cho biết chiều chuyển động."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1566,24 +1922,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chiều dương; vận tốc 2 m/s, tốc độ 2 m/s."
+      },
+      {
+        "id": "B",
+        "text": "Chiều âm; vận tốc −3 m/s, tốc độ 3 m/s."
+      },
+      {
+        "id": "C",
+        "text": "Chiều âm; vận tốc −2 m/s, tốc độ 2 m/s."
+      },
+      {
+        "id": "D",
+        "text": "Đứng yên vì tọa độ âm."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-SPACE-C01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "d vuông góc hai đường a,b cắt nhau và cùng thuộc (P). Kết luận?",
-    "answer_key": "d⊥(P).",
-    "worked_solution": "d vuông góc mặt phẳng (P); điều kiện a,b cắt nhau là quan trọng.",
+    "content_version": "G11-YR-XG6-20261127-SPACE-C01",
+    "stem": "Đường thẳng d vuông góc với hai đường thẳng a, b cắt nhau và cùng nằm trong mặt phẳng (P). Kết luận nào đúng?",
+    "answer_key": "\\(d\\perp(P)\\)",
+    "worked_solution": "Nếu d vuông góc với hai đường thẳng cắt nhau nằm trong (P), thì \\(d\\perp(P)\\). Điều kiện a, b cắt nhau là thiết yếu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-SPACE_PERP_DISTANCE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ tiêu chuẩn đường thẳng vuông góc mặt phẳng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1595,24 +1976,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(d\\parallel(P)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(d\\perp(P)\\)"
+      },
+      {
+        "id": "C",
+        "text": "d nằm trong (P)."
+      },
+      {
+        "id": "D",
+        "text": "Chưa đủ điều kiện kết luận."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-SPACE-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cọc cao 1 m vuông góc nền ngang, bóng dài 2 m. Tính tan θ, với θ là góc giữa tia sáng và nền.",
-    "answer_key": "tan θ=1/2.",
-    "worked_solution": "1/2, vì góc đo với hình chiếu bóng, cạnh đối là độ cao cọc.",
+    "content_version": "G11-YR-XG6-20261127-SPACE-P01",
+    "stem": "Cọc cao 1 m vuông góc nền ngang, bóng dài 2 m. Gọi \\(\\theta\\) là góc giữa tia sáng và nền. Tính \\(\\tan\\theta\\).",
+    "answer_key": "\\(\\frac12\\)",
+    "worked_solution": "Cạnh đối là chiều cao cọc (1 m), cạnh kề là bóng (2 m). Do đó \\(\\tan\\theta=\\frac12\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-SPACE_PERP_DISTANCE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Xác định cạnh đối và cạnh kề của góc trong tam giác vuông."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1624,24 +2030,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac12\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(2\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac1{\\sqrt5}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac2{\\sqrt5}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-SPACE-P02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong hình lập phương ABCD.A′B′C′D′ cạnh a>0, tính khoảng cách giữa hai đường thẳng AB và CC′.",
-    "answer_key": "a.",
-    "worked_solution": "Trong hình lập phương ABCD.A′B′C′D′, BC nối B∈AB và C∈CC′. Vì đáy là hình vuông, BC⊥AB; vì CC′ vuông góc đáy, BC⊥CC′. Hai đường AB và CC′ chéo nhau, nên BC là đoạn vuông góc chung và khoảng cách bằng BC=a.",
+    "content_version": "G11-YR-XG6-20261127-SPACE-P02",
+    "stem": "Trong hình lập phương \\(ABCD.A'B'C'D'\\) cạnh a>0, chọn đoạn vuông góc chung của AB và CC′ và khoảng cách tương ứng.",
+    "answer_key": "BC; khoảng cách a.",
+    "worked_solution": "B thuộc AB, C thuộc CC′. Vì đáy là hình vuông, \\(BC\\perp AB\\); vì CC′ vuông góc đáy, \\(BC\\perp CC'\\). Hai đường chéo nhau nên BC là đoạn vuông góc chung, khoảng cách bằng BC=a.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-SPACE_PERP_DISTANCE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm đoạn có hai đầu trên hai đường đã cho và vuông góc với cả hai."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1653,24 +2084,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "AC; khoảng cách a√2."
+      },
+      {
+        "id": "B",
+        "text": "BB′; khoảng cách a."
+      },
+      {
+        "id": "C",
+        "text": "AB; khoảng cách a."
+      },
+      {
+        "id": "D",
+        "text": "BC; khoảng cách a."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-VOL-C01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Chóp có diện tích đáy 12cm², cao 6cm, thể tích?",
+    "content_version": "G11-YR-XG6-20261127-VOL-C01",
+    "stem": "Hình chóp có diện tích đáy 12 cm² và chiều cao 6 cm. Thể tích bằng bao nhiêu?",
     "answer_key": "24 cm³.",
-    "worked_solution": "24cm³ vì V=12·6/3.",
+    "worked_solution": "\\(V=\\frac13\\cdot12\\cdot6=24\\) cm³.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-SPACE_VOLUME"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Hình chóp có hệ số nào trong công thức thể tích?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1682,24 +2138,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "72 cm³."
+      },
+      {
+        "id": "B",
+        "text": "36 cm³."
+      },
+      {
+        "id": "C",
+        "text": "24 cm³."
+      },
+      {
+        "id": "D",
+        "text": "18 cm³."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-VOL-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "G11-YR-XG6-20261127-VOL-P01",
     "stem": "Lăng trụ có đáy là tam giác vuông với hai cạnh góc vuông 6 cm và 8 cm, chiều cao lăng trụ 3 cm. Tính thể tích.",
     "answer_key": "72 cm³.",
-    "worked_solution": "Diện tích đáy tam giác vuông là 6·8/2=24 cm². Chiều cao lăng trụ bằng 3 cm, nên V=Sđáy·h=24·3=72 cm³.",
+    "worked_solution": "Diện tích đáy là \\(\\frac{6\\cdot8}{2}=24\\) cm². Thể tích \\(V=24\\cdot3=72\\) cm³.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-SPACE_VOLUME"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính diện tích đáy tam giác vuông rồi nhân chiều cao lăng trụ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1711,24 +2192,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "144 cm³."
+      },
+      {
+        "id": "B",
+        "text": "72 cm³."
+      },
+      {
+        "id": "C",
+        "text": "24 cm³."
+      },
+      {
+        "id": "D",
+        "text": "42 cm³."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-VOL-P02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Chóp và lăng trụ cùng diện tích đáy và cao; nếu Vchóp=15cm³ thì Vlăng trụ?",
+    "content_version": "G11-YR-XG6-20261127-VOL-P02",
+    "stem": "Hình chóp và lăng trụ có cùng diện tích đáy và chiều cao. Nếu thể tích chóp là 15 cm³ thì thể tích lăng trụ bằng bao nhiêu?",
     "answer_key": "45 cm³.",
-    "worked_solution": "45cm³, tỉ số 1:3.",
+    "worked_solution": "Thể tích hình chóp bằng một phần ba thể tích lăng trụ cùng diện tích đáy và chiều cao. Vậy thể tích lăng trụ là 3 × 15 = 45 cm³.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-SPACE_VOLUME"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So sánh hai công thức thể tích khi diện tích đáy và chiều cao giống nhau."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1740,24 +2246,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "45 cm³."
+      },
+      {
+        "id": "B",
+        "text": "5 cm³."
+      },
+      {
+        "id": "C",
+        "text": "15 cm³."
+      },
+      {
+        "id": "D",
+        "text": "30 cm³."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-STAT-C01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Dữ liệu nhóm [0,10):2, [10,20):5, [20,30):3, nhóm chứa trung vị?",
-    "answer_key": "[10,20).",
-    "worked_solution": "[10,20), vì n=10 và tích lũy nhóm đầu2, nhóm thứ hai7.",
+    "content_version": "G11-YR-XG6-20261127-STAT-C01",
+    "stem": "Mẫu số liệu ghép nhóm có tần số: \\([0;10):2,\\ [10;20):5,\\ [20;30):3\\). Nhóm nào chứa trung vị?",
+    "answer_key": "\\([10;20)\\)",
+    "worked_solution": "Cỡ mẫu n=10, tần số tích lũy là 2, 7, 10. Hai vị trí 5 và 6 đều thuộc nhóm \\([10;20)\\), nên nhóm này chứa trung vị.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-GROUPED_STATS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính tần số tích lũy và xác định vị trí ở giữa mẫu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1769,24 +2300,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\([0;10)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\([20;30)\\)"
+      },
+      {
+        "id": "C",
+        "text": "Không xác định được nhóm."
+      },
+      {
+        "id": "D",
+        "text": "\\([10;20)\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-STAT-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Mẫu ghép nhóm [0,10):2, [10,20):5, [20,30):3. Nhóm nào có tần số lớn nhất?",
-    "answer_key": "[10,20), tần số 5.",
-    "worked_solution": "So sánh các tần số 2,5,3, lớn nhất là 5 thuộc nhóm [10,20). Đây là nhóm chứa mốt theo bảng ghép nhóm, không khẳng định mốt của dữ liệu gốc bằng trung điểm 15.",
+    "content_version": "G11-YR-XG6-20261127-STAT-P01",
+    "stem": "Mẫu số liệu ghép nhóm có tần số: \\([0;10):2,\\ [10;20):5,\\ [20;30):3\\). Nhóm nào có tần số lớn nhất?",
+    "answer_key": "\\([10;20)\\) với tần số 5.",
+    "worked_solution": "Tần số lớn nhất là 5, thuộc nhóm [10;20). Đây là nhóm chứa mốt theo bảng ghép nhóm; không khẳng định mốt của dữ liệu gốc bằng trung điểm 15.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-GROUPED_STATS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "So sánh ba tần số, không so sánh giá trị đầu mút."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1798,24 +2354,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\([0;10)\\) với tần số 2."
+      },
+      {
+        "id": "B",
+        "text": "\\([20;30)\\) với tần số 3."
+      },
+      {
+        "id": "C",
+        "text": "\\([10;20)\\) với tần số 5."
+      },
+      {
+        "id": "D",
+        "text": "Cả ba nhóm có tần số bằng nhau."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-STAT-P02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Bảng ghép nhóm [0,10):4, [10,20):8, [20,30):8 (n=20). Ước lượng Q1 và Q3 bằng nội suy trong lớp; nói rõ giả định.",
-    "answer_key": "Q₁≈11,25; Q₃≈23,75; nội suy giả định số liệu phân bố đều trong từng lớp.",
-    "worked_solution": "Tích lũy 4,12,20; Q1 vị trí 5 thuộc [10,20) ⇒ Q1≈10+(5−4)/8·10=11,25. Q3 vị trí 15 thuộc [20,30) ⇒ Q3≈20+(15−12)/8·10=23,75. Các số là ước lượng do giả định dữ liệu phân bố đều trong mỗi lớp.",
+    "content_version": "G11-YR-XG6-20261127-STAT-P02",
+    "stem": "Bảng ghép nhóm có tần số \\([0;10):4,\\ [10;20):8,\\ [20;30):8\\) (n=20). Ước lượng \\(Q_1,Q_3\\) bằng nội suy. Chọn cả kết quả và cách diễn giải đúng.",
+    "answer_key": "\\(Q_1\\approx11{,}25,\\ Q_3\\approx23{,}75\\); giả định số liệu phân bố đều trong mỗi nhóm.",
+    "worked_solution": "Tần số tích lũy là 4, 12, 20. Vị trí n/4=5 thuộc nhóm [10;20), nên \\(Q_1\\approx10+\\frac{5-4}{8}\\cdot10=11{,}25\\). Vị trí 3n/4=15 thuộc nhóm [20;30), nên \\(Q_3\\approx20+\\frac{15-12}{8}\\cdot10=23{,}75\\). Đây là ước lượng theo giả định nội suy, không phải giá trị chính xác của mẫu gốc.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-GROUPED_STATS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Xác định nhóm chứa vị trí n/4 và 3n/4 bằng tần số tích lũy."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1827,24 +2408,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(Q_1=10,\\ Q_3=20\\); đó là các giá trị chính xác."
+      },
+      {
+        "id": "B",
+        "text": "\\(Q_1\\approx11{,}25,\\ Q_3\\approx23{,}75\\); giả định số liệu phân bố đều trong mỗi nhóm."
+      },
+      {
+        "id": "C",
+        "text": "\\(Q_1\\approx12{,}5,\\ Q_3\\approx25\\); lấy trung điểm các nhóm."
+      },
+      {
+        "id": "D",
+        "text": "\\(Q_1\\approx11{,}25,\\ Q_3\\approx23{,}75\\); chắc chắn bằng tứ phân vị dữ liệu gốc."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-PROB-C01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "P(A)=0,6, P(B)=0,5, P(A∩B)=0,3. Tính P(A∪B).",
+    "content_version": "G11-YR-XG6-20261127-PROB-C01",
+    "stem": "Biết \\(P(A)=0{,}6,\\ P(B)=0{,}5,\\ P(A\\cap B)=0{,}3\\). Tính \\(P(A\\cup B)\\).",
     "answer_key": "0,8.",
-    "worked_solution": "0,6+0,5−0,3=0,8.",
+    "worked_solution": "\\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)=0{,}6+0{,}5-0{,}3=0{,}8\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-PROBABILITY_COMBINE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Khi cộng hai xác suất, phần giao đã bị tính hai lần."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1856,24 +2462,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0,8."
+      },
+      {
+        "id": "B",
+        "text": "1,1."
+      },
+      {
+        "id": "C",
+        "text": "0,3."
+      },
+      {
+        "id": "D",
+        "text": "0,2."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-PROB-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "A,B xung khắc với xác suất 0,2 và 0,4. P(A∪B)?",
+    "content_version": "G11-YR-XG6-20261127-PROB-P01",
+    "stem": "Hai biến cố A, B xung khắc, có xác suất lần lượt là 0,2 và 0,4. Tính \\(P(A\\cup B)\\).",
     "answer_key": "0,6.",
-    "worked_solution": "0,6 vì giao rỗng.",
+    "worked_solution": "\\(A\\cap B=\\varnothing\\), nên \\(P(A\\cup B)=0{,}2+0{,}4=0{,}6\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-PROBABILITY_COMBINE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai biến cố xung khắc có phần giao rỗng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1885,24 +2516,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0,08."
+      },
+      {
+        "id": "B",
+        "text": "0,2."
+      },
+      {
+        "id": "C",
+        "text": "0,4."
+      },
+      {
+        "id": "D",
+        "text": "0,6."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-PROB-P02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "P(A)=0,7. Xác suất biến cố đối Ā?",
+    "content_version": "G11-YR-XG6-20261127-PROB-P02",
+    "stem": "Biết \\(P(A)=0{,}7\\). Tính xác suất biến cố đối của A.",
     "answer_key": "0,3.",
-    "worked_solution": "0,3, vì P(A)+P(Ā)=1.",
+    "worked_solution": "\\(P(\\overline A)=1-P(A)=1-0{,}7=0{,}3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-PROBABILITY_COMBINE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Một biến cố và biến cố đối có tổng xác suất bằng 1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1914,24 +2570,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0,7."
+      },
+      {
+        "id": "B",
+        "text": "1,7."
+      },
+      {
+        "id": "C",
+        "text": "0,3."
+      },
+      {
+        "id": "D",
+        "text": "0,49."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-IND-C01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "A,B độc lập với P(A)=0,2, P(B)=0,3. Tìm P(A∩B).",
+    "content_version": "G11-YR-XG6-20261127-IND-C01",
+    "stem": "Hai biến cố A, B độc lập, \\(P(A)=0{,}2,\\ P(B)=0{,}3\\). Tính \\(P(A\\cap B)\\).",
     "answer_key": "0,06.",
-    "worked_solution": "0,06 do tích 0,2·0,3.",
+    "worked_solution": "\\(P(A\\cap B)=P(A)P(B)=0{,}2\\cdot0{,}3=0{,}06\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-PROBABILITY_INDEP"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Độc lập cho phép nhân hai xác suất."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1943,24 +2624,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0,5."
+      },
+      {
+        "id": "B",
+        "text": "0,06."
+      },
+      {
+        "id": "C",
+        "text": "0,1."
+      },
+      {
+        "id": "D",
+        "text": "0,6."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-IND-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai phép thử độc lập, xác suất thành công mỗi lần là 0,2. Xác suất ít nhất một thành công?",
+    "content_version": "G11-YR-XG6-20261127-IND-P01",
+    "stem": "Hai phép thử độc lập, xác suất thành công mỗi lần là 0,2. Xác suất có ít nhất một lần thành công bằng bao nhiêu?",
     "answer_key": "0,36.",
-    "worked_solution": "1−0,8²=0,36.",
+    "worked_solution": "Xác suất cả hai lần thất bại là \\(0{,}8^2=0{,}64\\), nhờ tính độc lập. Xác suất ít nhất một thành công là \\(1-0{,}64=0{,}36\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-PROBABILITY_INDEP"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Xét biến cố đối: cả hai lần đều không thành công."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1972,24 +2678,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0,36."
+      },
+      {
+        "id": "B",
+        "text": "0,04."
+      },
+      {
+        "id": "C",
+        "text": "0,32."
+      },
+      {
+        "id": "D",
+        "text": "0,64."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-IND-P02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai biến cố có P(A)=1/2, P(B)=1/3, P(A∩B)=1/5. Có độc lập?",
-    "answer_key": "Không độc lập.",
-    "worked_solution": "Không vì tích riêng=1/6 khác 1/5.",
+    "content_version": "G11-YR-XG6-20261127-IND-P02",
+    "stem": "Hai biến cố A, B có \\(P(A)=\\frac12,\\ P(B)=\\frac13,\\ P(A\\cap B)=\\frac15\\). Chúng có độc lập không?",
+    "answer_key": "Không, vì \\(P(A)P(B)=\\frac16\\ne\\frac15\\).",
+    "worked_solution": "Tích xác suất riêng bằng \\(\\frac12\\cdot\\frac13=\\frac16\\) khác \\(\\frac15\\). Vậy hai biến cố không độc lập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-PROBABILITY_INDEP"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đối chiếu xác suất giao với tích hai xác suất riêng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2001,24 +2732,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, vì \\(P(A\\cap B)>0\\)."
+      },
+      {
+        "id": "B",
+        "text": "Có, vì A và B có xác suất khác nhau."
+      },
+      {
+        "id": "C",
+        "text": "Không, vì hai biến cố độc lập phải xung khắc."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì \\(P(A)P(B)=\\frac16\\ne\\frac15\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-INT-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một bạn tìm giới hạn 0/0 bằng 0, bạn khác giải log mà bỏ x>0. Hai bạn cần quay lại kết quả học nào?",
-    "answer_key": "Bạn thứ nhất: giới hạn dạng vô định (G11-YR-LIMIT_CONTINUITY); bạn thứ hai: điều kiện xác định logarit (G11-YR-EXP_LOG_DOMAIN).",
-    "worked_solution": "Dạng 0/0 không tự xác định giới hạn bằng 0; cần biến đổi hoặc phương pháp thích hợp. Với logarit logₐx, điều kiện là x>0 (với a>0, a≠1). Vì đây là hai lỗi khác nhau, cần quay lại hai kỹ năng tương ứng, không dùng một tổng điểm để chẩn đoán cả hai.",
+    "content_version": "G11-YR-XG6-20261127-INT-P01",
+    "stem": "Một bạn kết luận giới hạn dạng \\(0/0\\) bằng 0; bạn khác giải phương trình logarit nhưng bỏ điều kiện đối số dương. Nên hướng dẫn mỗi bạn ôn lại nội dung nào?",
+    "answer_key": "Bạn thứ nhất: xử lý dạng vô định của giới hạn; bạn thứ hai: điều kiện xác định logarit.",
+    "worked_solution": "Dạng \\(0/0\\) là dạng vô định, không tự xác định giới hạn bằng 0; cần biến đổi hoặc phương pháp phù hợp. Logarit \\(\\log_a x\\) xác định khi x>0 với a>0, a≠1. Hai lỗi thuộc hai kỹ năng khác nhau, nên cần hai hướng ôn riêng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR_CROSS_CHAPTER_REMEDIATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Xác định riêng điều kiện hoặc bước suy luận sai của mỗi bạn."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2030,6 +2786,25 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả hai chỉ cần luyện tính đạo hàm."
+      },
+      {
+        "id": "B",
+        "text": "Bạn thứ nhất: điều kiện logarit; bạn thứ hai: cấp số cộng."
+      },
+      {
+        "id": "C",
+        "text": "Bạn thứ nhất: xử lý dạng vô định của giới hạn; bạn thứ hai: điều kiện xác định logarit."
+      },
+      {
+        "id": "D",
+        "text": "Cả hai chỉ cần luyện thay số trực tiếp."
+      }
+    ]
   }
 ]
