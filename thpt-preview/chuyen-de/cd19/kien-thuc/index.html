@@ -11816,7 +11816,7 @@
 </script>
 <p><span data-topic-w1-source-start="kien-thuc" hidden></span></p>
 <!-- TOPIC19_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 2faa5d797eb16020d21673c572c443f1cb7acb41; Q18_RECEIPT_BLOB 019254781e99ba857019ee662ab49056d298d18e; AUTHORING_PR #897; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB ba549932e8a56bb46ec2951171e999cc70d6f34f; Q18_RECEIPT_BLOB 3d83c951f5e4df94162271b107b079451f6cc544; AUTHORING_PR #897; PUBLIC_PROJECTION_ONLY -->
 <!-- W5_LINK_EQUIVALENT: source SVG path, optional model display link; canonical source immutable -->
 
 <h1 id="kien-thuc">Kiến thức</h1>
@@ -11827,14 +11827,14 @@
 <h2 id="1-quy-tac-em-va-chia-truong-hop">1. Quy tắc đếm và chia trường hợp</h2>
 <p><img alt="So sánh chọn một nhóm và tạo một cặp lựa chọn" src="../../../../assets/images/thpt/FIG-TOP19-B23-ADD-MULTIPLY-WHITE-R00.svg" /></p>
 <p><img alt="Sơ đồ hình cây: 2 áo, 3 quần và đúng 6 cặp" src="../../../../assets/images/thpt/FIG-TOP19-B23-TWO_STAGE_TREE_WHITE_R00.svg" /></p>
-<p><strong>Cách đọc cây:</strong> Đi từ nút “Bắt đầu”, mỗi lần chọn một áo rồi một quần. Hai nhánh áo A/B, mỗi nhánh có ba lá A1,A2,A3/B1,B2,B3. Mỗi lá là <strong>một kết quả đầy đủ</strong>: 2×3=6. Chỉ cần đếm lá để kiểm quy tắc nhân, không đo nhánh qua màu hoặc độ dài.</p>
-<p><strong>Đọc hình:</strong> Khung “hoặc” gồm 4 nhóm nghệ thuật, 3 thể thao không trùng nên 4+3=7; khung “và” yêu cầu một mục ở <strong>mỗi</strong> nhóm, nên 4×3=12 cặp. Hình mang màu nền trắng; phép đếm không phụ thuộc màu. Chỉ dùng quy tắc cộng đơn giản khi hai danh sách không giao nhau.</p>
+<p><strong>Cách đọc cây:</strong> Đi từ nút “Bắt đầu”, mỗi lần chọn một áo rồi một quần. Hai nhánh áo A/B, mỗi nhánh có ba lá A1,A2,A3/B1,B2,B3. Mỗi lá là <strong>một kết quả đầy đủ</strong>: <span class="arithmatex">\(2\cdot3=6\)</span>. Chỉ cần đếm lá để kiểm quy tắc nhân, không đo nhánh qua màu hoặc độ dài.</p>
+<p><strong>Đọc hình:</strong> Khung “hoặc” gồm 4 nhóm nghệ thuật, 3 thể thao không trùng nên <span class="arithmatex">\(4+3=7\)</span>; khung “và” yêu cầu một mục ở <strong>mỗi</strong> nhóm, nên <span class="arithmatex">\(4\cdot3=12\)</span> cặp. Hình mang màu nền trắng; phép đếm không phụ thuộc màu. Chỉ dùng quy tắc cộng đơn giản khi hai danh sách không giao nhau.</p>
 <p><a href="../../../math-lab/models/slm-top19-combinatorics-pascal-r00/">Mở mô hình tương tác công khai: “Hoặc / Và”</a> — kéo hai số lượng, chuyển chế độ và so liệt kê trước khi áp dụng quy tắc. Mô hình không chấm điểm.</p>
 <h3 id="11-em-ung-mot-lua-chon-khi-nao-cong">1.1. Đếm đúng một lựa chọn: khi nào cộng?</h3>
 <!-- LESSON_ID: TOP19-M01; OUTCOME_ID: TOP19-O01; ORIGINAL_SGK_SKILL: G10-B23-ADDITION; S1_LESSON: G10-B23; SOURCE_ROLE: SGK_CORE_AUTHORITY -->
 
 <p>Ở hội chợ trường, mỗi học sinh chỉ đăng ký một câu lạc bộ. Nếu hai nhóm câu lạc bộ rời nhau, em có thể gộp số lựa chọn; nhưng nếu một câu lạc bộ nằm trong cả hai danh sách thì cộng thẳng sẽ đếm hai lần.</p>
-<p>Một kết quả hoàn chỉnh ở đây chỉ là <strong>một</strong> câu lạc bộ. Chia các kết quả thành các nhóm không trùng nhau rồi cộng số phần tử từng nhóm. Nếu A và B giao nhau, phải trừ phần giao: |A∪B|=|A|+|B|−|A∩B|; phần có giao là kiến thức giúp kiểm điều kiện, không thay quy tắc cộng rời nhau của B23.</p>
+<p>Một kết quả hoàn chỉnh ở đây chỉ là <strong>một</strong> câu lạc bộ. Chia các kết quả thành các nhóm không trùng nhau rồi cộng số phần tử từng nhóm. Nếu A và B giao nhau, phải trừ phần giao: <span class="arithmatex">\(\lvert A\cup B\rvert=\lvert A\rvert+\lvert B\rvert-\lvert A\cap B\rvert\)</span>; phần có giao là kiến thức giúp kiểm điều kiện, không thay quy tắc cộng rời nhau của B23.</p>
 <p><strong>Điều kiện áp dụng:</strong> Các trường hợp cộng phải rời nhau hoặc đã sửa đếm trùng; không nhầm “chọn đúng một” với “làm cả hai bước”.</p>
 <blockquote>
 <p><strong>PHƯƠNG PHÁP · Quy tắc cộng</strong></p>
@@ -11848,11 +11848,11 @@
 <!-- ITEM_ID: THPT-TOP19-T01; CONTENT_VERSION: TOP19-R11-20261121-T01; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O01; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**9 cách**, vì hai nhóm cuốn sách không trùng nhau và mỗi kết quả chỉ lấy đúng một cuốn: 5+4=9.
+**9 cách**, vì hai nhóm cuốn sách không trùng nhau và mỗi kết quả chỉ lấy đúng một cuốn: \(5+4=9\).
 
 **Kiểm lỗi**
 
-Nếu tính 5×2, hãy thử viết một kết quả: chỉ tên **một** cuốn sách, không phải một cặp. Quay lại xem điều kiện “hoặc”. Đọc lại **Kiến thức 1.1**, sau đó thử **Bài luyện 1** và **Bài luyện 3** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
+Nếu tính \(5\cdot4\), hãy thử viết một kết quả: chỉ tên **một** cuốn sách, không phải một cặp. Quay lại xem điều kiện “hoặc”. Đọc lại **Kiến thức 1.1**, sau đó thử **Bài luyện 1** và **Bài luyện 3** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -11897,16 +11897,16 @@ Nếu được 8, em có thể đã cộng \(5+3\). Hãy vẽ bảng gồm 5 hà
 </blockquote>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài:</strong> Một mã gồm hai ký tự đầu lấy từ <span class="arithmatex">\(\{A,B,C,D\}\)</span>, được phép lặp, và một chữ số cuối lấy từ 0 đến 9. Có bao nhiêu mã khác nhau? Mã có được kết thúc bằng 0 không?</p>
-<p><strong>Lời giải:</strong> Mỗi ký tự trong hai vị trí đầu có 4 lựa chọn; chữ số cuối có 10 lựa chọn, <strong>kể cả 0</strong>. Theo quy tắc nhân có <span class="arithmatex">\(4\cdot4\cdot10=160\)</span> mã. Mã có thể kết thúc bằng 0 vì đề quy định <strong>mã</strong>, không phải số tự nhiên có ba chữ số; giới hạn “không được bắt đầu bằng 0” của bài lập số không được bê sang mô hình này.</p>
+<p><strong>Lời giải:</strong> Mỗi ký tự trong hai vị trí đầu có 4 lựa chọn; chữ số cuối có 10 lựa chọn, <strong>kể cả 0</strong>. Theo quy tắc nhân có <span class="arithmatex">\(4\cdot4\cdot10=160\)</span> mã. Mã có thể kết thúc bằng 0 vì đề cho phép mọi chữ số từ 0 đến 9 ở vị trí cuối. Số tự nhiên có ba chữ số cũng có thể tận cùng bằng 0 (ví dụ 120); điểm khác biệt là số có ba chữ số không được bắt đầu bằng 0, còn mã có thể bắt đầu bằng 0 nếu quy định của mã cho phép.</p>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài:</strong> Từ các chữ số <span class="arithmatex">\(\{0,1,2,3\}\)</span>, lập các số tự nhiên có đúng ba chữ số <strong>khác nhau</strong>. Có bao nhiêu số?</p>
 <p><strong>Lời giải:</strong> Chữ số hàng trăm không được bằng 0 nên có 3 cách: 1, 2 hoặc 3. Sau đó hàng chục còn 3 chữ số chưa dùng (có thể gồm 0), hàng đơn vị còn 2. Do thứ tự vị trí quan trọng, quy tắc nhân cho <span class="arithmatex">\(3\cdot3\cdot2=18\)</span> số. Những chuỗi bắt đầu bằng 0 không phải số tự nhiên có ba chữ số.</p>
 <p><strong>Vận dụng</strong></p>
-<p>Từ {0,1,2,3,4} lập số tự nhiên có hai chữ số khác nhau. Có bao nhiêu số?</p>
+<p>Từ <span class="arithmatex">\(\{0,1,2,3,4\}\)</span> lập số tự nhiên có hai chữ số khác nhau. Có bao nhiêu số?</p>
 <!-- ITEM_ID: THPT-TOP19-T03; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O03; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Hàng chục có 4 cách (1–4); hàng đơn vị còn 4 cách (kể cả 0 nếu chưa dùng): 4×4=**16** số.
+Hàng chục có 4 cách (1–4); hàng đơn vị còn 4 cách (kể cả 0 nếu chưa dùng): \(4\cdot4=16\) số.
 
 **Kiểm lỗi**
 
@@ -11930,32 +11930,32 @@ Nếu có 20, em đã cho chữ số hàng chục nhận 0. Nếu có 12, em có
 <p><strong>Đề bài:</strong> Từ các chữ số <span class="arithmatex">\(\{0,1,2,3,4\}\)</span>, lập số tự nhiên <strong>chẵn có ba chữ số khác nhau</strong>. Có bao nhiêu số?</p>
 <p><strong>Lời giải:</strong> Chia hai trường hợp rời nhau theo chữ số cuối. <strong>Cuối là 0:</strong> hàng trăm có 4 cách, hàng chục còn 3, được <span class="arithmatex">\(4\cdot3=12\)</span>. <strong>Cuối là 2 hoặc 4:</strong> có 2 cách chọn cuối, hàng trăm có 3 lựa chọn khác 0 và khác chữ số cuối, hàng chục còn 3, được <span class="arithmatex">\(2\cdot3\cdot3=18\)</span>. Hai trường hợp không trùng nên cộng <span class="arithmatex">\(12+18=30\)</span> số.</p>
 <p><strong>Vận dụng</strong></p>
-<p>Từ {0,1,2,3} lập số chẵn có hai chữ số khác nhau. Có bao nhiêu số?</p>
+<p>Từ <span class="arithmatex">\(\{0,1,2,3\}\)</span> lập số chẵn có hai chữ số khác nhau. Có bao nhiêu số?</p>
 <!-- ITEM_ID: THPT-TOP19-T04; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O04; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Đơn vị 0: hàng chục có 3 cách; đơn vị 2: hàng chục chỉ 1 hoặc 3, có 2 cách; tổng **3+2=5** số.
+Đơn vị 0: hàng chục có 3 cách; đơn vị 2: hàng chục chỉ 1 hoặc 3, có 2 cách; tổng **\(3+2=5\)** số.
 
 **Kiểm lỗi**
 
-Nếu em nhân 2×3, hãy xét riêng đuôi 0: hàng chục có 3 lựa chọn, còn đuôi 2 chỉ có 2. Đọc lại **Kiến thức 1.4**, sau đó thử **Bài luyện 10** và **Bài luyện 12** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
+Nếu em nhân \(2\cdot3\), hãy xét riêng đuôi 0: hàng chục có 3 lựa chọn, còn đuôi 2 chỉ có 2. Đọc lại **Kiến thức 1.4**, sau đó thử **Bài luyện 10** và **Bài luyện 12** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
 <p>Từ đếm từng số hợp lệ, ta chuyển sang đếm các cách sắp người và chọn nhóm; kết quả có hoặc không có thứ tự là câu hỏi quyết định.</p>
 <h2 id="2-hoan-vi-chinh-hop-to-hop-va-cong-cu-tinh">2. Hoán vị, chỉnh hợp, tổ hợp và công cụ tính</h2>
 <p><img alt="Đếm nhóm và phân vai khác nhau" src="../../../../assets/images/thpt/FIG-TOP19-B24-ORDER-GROUP-WHITE-R00.svg" /></p>
-<p><strong>Đọc hình:</strong> Từ A, B, C, khi có hai <strong>vai khác nhau</strong>: AB,BA là hai kết quả; khi chỉ chọn nhóm hai người, AB và BA trùng nhau. Đếm trực tiếp n=3,k=2 là 6 và 3. Điều kiện là các thành viên phân biệt và không chọn lặp.</p>
-<p><a href="../../../math-lab/models/slm-top19-combinatorics-pascal-r00/">Mở mô hình tương tác công khai: “Chọn nhóm / Phân vai”</a> — thử n=4,k=2 và n=5,k=3. Cần so <strong>cả danh sách kết quả</strong> để thấy vì sao phải chia k!, không chỉ so hai con số.</p>
+<p><strong>Đọc hình:</strong> Từ A, B, C, khi có hai <strong>vai khác nhau</strong>: AB,BA là hai kết quả; khi chỉ chọn nhóm hai người, AB và BA trùng nhau. Đếm trực tiếp <span class="arithmatex">\(n=3,k=2\)</span> là 6 và 3. Điều kiện là các thành viên phân biệt và không chọn lặp.</p>
+<p><a href="../../../math-lab/models/slm-top19-combinatorics-pascal-r00/">Mở mô hình tương tác công khai: “Chọn nhóm / Phân vai”</a> — thử <span class="arithmatex">\(n=4,k=2\)</span> và <span class="arithmatex">\(n=5,k=3\)</span>. Cần so <strong>cả danh sách kết quả</strong> để thấy vì sao phải chia <span class="arithmatex">\(k!\)</span>, không chỉ so hai con số.</p>
 <h3 id="21-hoan-vi-xep-tat-ca-oi-tuong">2.1. Hoán vị: xếp tất cả đối tượng</h3>
 <!-- LESSON_ID: TOP19-M05; OUTCOME_ID: TOP19-O05; ORIGINAL_SGK_SKILL: G10-B24-PERMUTATION; S1_LESSON: G10-B24; SOURCE_ROLE: SGK_CORE_AUTHORITY -->
 
 <p>Bốn bạn cùng tham gia hội chợ nhưng đứng thành hàng theo thứ tự khác nhau sẽ tạo ra ảnh xếp hàng khác nhau, dù tập bốn bạn không đổi.</p>
-<p>Để xếp hết n đối tượng <strong>phân biệt</strong>, vị trí thứ nhất có n lựa chọn, vị trí sau còn n−1,… đến vị trí cuối còn 1. Do đó số hoán vị bằng n!=n(n−1)…2·1; quy ước 0!=1 giúp công thức nhất quán với tập rỗng, không có nghĩa là 0 vật có nhiều cách.</p>
-<p><strong>Điều kiện áp dụng:</strong> Đếm thứ tự của <strong>tất cả</strong> n đối tượng riêng biệt, mỗi đối tượng dùng đúng một lần. Nếu vật trùng nhau thì n! có thể đếm lặp, cần quy tắc khác.</p>
+<p>Để xếp hết n đối tượng <strong>phân biệt</strong>, vị trí thứ nhất có n lựa chọn, vị trí sau còn <span class="arithmatex">\(n-1\)</span>,… đến vị trí cuối còn 1. Do đó số hoán vị bằng <span class="arithmatex">\(n!=n(n-1)\cdots2\cdot1\)</span>; quy ước <span class="arithmatex">\(0!=1\)</span> giúp công thức nhất quán với tập rỗng, nghĩa là có đúng một cách sắp xếp không có phần tử nào.</p>
+<p><strong>Điều kiện áp dụng:</strong> Đếm thứ tự của <strong>tất cả</strong> n đối tượng riêng biệt, mỗi đối tượng dùng đúng một lần. Nếu vật trùng nhau thì <span class="arithmatex">\(n!\)</span> có thể đếm lặp, cần quy tắc khác.</p>
 <blockquote>
 <p><strong>ĐỊNH NGHĨA · HOÁN VỊ</strong></p>
-<p>Với <span class="arithmatex">\(n\)</span> đối tượng phân biệt, một hoán vị là một cách <strong>xếp thứ tự toàn bộ n đối tượng</strong>; số hoán vị [P_n=n!,\quad n\ge1.]</p>
+<p>Với <span class="arithmatex">\(n\)</span> đối tượng phân biệt, một hoán vị là một cách <strong>xếp thứ tự toàn bộ n đối tượng</strong>; số hoán vị <span class="arithmatex">\(P_n=n!,\quad n\ge1.\)</span></p>
 </blockquote>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài:</strong> Có bốn cuốn sách Toán, Văn, Anh và Lý phân biệt. Xếp cả bốn cuốn thành một hàng. Có bao nhiêu cách xếp?</p>
@@ -11965,7 +11965,7 @@ Nếu em nhân 2×3, hãy xét riêng đuôi 0: hàng chục có 3 lựa chọn,
 <!-- ITEM_ID: THPT-TOP19-T05; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O05; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Hoán vị cả 5 học sinh, mỗi người một vị trí: 5!=**120**.
+Hoán vị cả 5 học sinh, mỗi người một vị trí: \(5!=120\).
 
 **Kiểm lỗi**
 
@@ -11977,11 +11977,11 @@ Nếu em dùng tổ hợp, hãy đổi chỗ hai học sinh; thứ tự hàng đ
 <!-- LESSON_ID: TOP19-M06; OUTCOME_ID: TOP19-O06; ORIGINAL_SGK_SKILL: G10-B24-ARRANGEMENT; S1_LESSON: G10-B24; SOURCE_ROLE: SGK_CORE_AUTHORITY -->
 
 <p>Hội chợ có ban ba người giữ ba vai trưởng, thư ký, thủ quỹ. Chọn đúng ba bạn nhưng đổi người giữ vai sẽ thay đổi kết quả.</p>
-<p>Chỉnh hợp chập k của n phần tử phân biệt là chọn k phần tử <strong>có thứ tự</strong>, không lặp. Vị trí đầu có n cách, kế có n−1,… k vị trí: A(n,k)=n!/(n−k)!.</p>
-<p><strong>Điều kiện áp dụng:</strong> 0≤k≤n là số nguyên; các vai/ô có phân biệt thứ tự, mỗi đối tượng chỉ nhận một vai. Không dùng công thức này khi một người được giữ nhiều vai nếu đề cho phép.</p>
+<p>Chỉnh hợp chập k của n phần tử phân biệt là chọn k phần tử <strong>có thứ tự</strong>, không lặp. Vị trí đầu có n cách, kế có <span class="arithmatex">\(n-1\)</span>,… k vị trí: <span class="arithmatex">\(A_n^k=\frac{n!}{(n-k)!}\)</span>.</p>
+<p><strong>Điều kiện áp dụng:</strong> <span class="arithmatex">\(1\le k\le n\)</span> với n và k nguyên; trường hợp <span class="arithmatex">\(k=0\)</span> là quy ước mở rộng. Các vai/ô có phân biệt thứ tự, mỗi đối tượng chỉ nhận một vai. Không dùng công thức này khi một người được giữ nhiều vai nếu đề cho phép.</p>
 <blockquote>
 <p><strong>ĐỊNH NGHĨA · CHỈNH HỢP</strong></p>
-<p>Chỉnh hợp chập <span class="arithmatex">\(k\)</span> của <span class="arithmatex">\(n\)</span> phần tử phân biệt là chọn <span class="arithmatex">\(k\)</span> phần tử <strong>có thứ tự, không lặp</strong>. [A_n^k=\frac{n!}{(n-k)!},\qquad 1\le k\le n.] <strong>Điều kiện trong nội dung SGK:</strong> <span class="arithmatex">\(n,k\)</span> nguyên, <span class="arithmatex">\(n\ge1\)</span>. Quy ước trường hợp <span class="arithmatex">\(k=0\)</span> là một mở rộng của phép đếm rỗng, không trình bày như định nghĩa bắt buộc ở đây.</p>
+<p>Chỉnh hợp chập <span class="arithmatex">\(k\)</span> của <span class="arithmatex">\(n\)</span> phần tử phân biệt là chọn <span class="arithmatex">\(k\)</span> phần tử <strong>có thứ tự, không lặp</strong>. <span class="arithmatex">\(A_n^k=\frac{n!}{(n-k)!},\qquad 1\le k\le n.\)</span> <strong>Điều kiện trong nội dung SGK:</strong> <span class="arithmatex">\(n,k\)</span> nguyên, <span class="arithmatex">\(n\ge1\)</span>. Quy ước trường hợp <span class="arithmatex">\(k=0\)</span> là một mở rộng của phép đếm rỗng, không trình bày như định nghĩa bắt buộc ở đây.</p>
 </blockquote>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài:</strong> Từ 5 học sinh khác nhau, chọn ba bạn giữ ba vai <strong>trưởng nhóm, thư ký, thủ quỹ</strong>, mỗi bạn một vai và không kiêm nhiệm. Có bao nhiêu cách?</p>
@@ -11991,7 +11991,7 @@ Nếu em dùng tổ hợp, hãy đổi chỗ hai học sinh; thứ tự hàng đ
 <!-- ITEM_ID: THPT-TOP19-T06; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O06; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Hai vai phân biệt, lần lượt 6 rồi 5 lựa chọn: A(6,2)=**30**.
+Hai vai phân biệt, lần lượt 6 rồi 5 lựa chọn: \(A_6^2=30\).
 
 **Kiểm lỗi**
 
@@ -12003,11 +12003,11 @@ Nếu ra 15, em đang coi A làm trưởng/B làm phó giống B trưởng/A ph�
 <!-- LESSON_ID: TOP19-M07; OUTCOME_ID: TOP19-O07; ORIGINAL_SGK_SKILL: G10-B24-COMBINATION; S1_LESSON: G10-B24; SOURCE_ROLE: SGK_CORE_AUTHORITY -->
 
 <p>Nhóm bạn đại diện đi thi không phân vai. Viết nhóm AB hay BA vẫn cùng hai người, nên phép đếm có thứ tự đang đếm nhiều lần một nhóm.</p>
-<p>Mỗi nhóm k người có đúng k! cách hoán đổi thứ tự (k người phân biệt). Vì chỉnh hợp đã đếm mỗi nhóm k! lần, số nhóm C(n,k)=A(n,k)/k!=n!/[k!(n−k)!]. Đây là số tập con k phần tử, không phải công thức học riêng khỏi chỉnh hợp.</p>
-<p><strong>Điều kiện áp dụng:</strong> 0≤k≤n là số nguyên; nhóm không phân vai/không xét thứ tự và mỗi người chỉ chọn một lần. C(n,0)=C(n,n)=1; C(n,k)=C(n,n−k) do chọn người cũng tương ứng chọn nhóm không được chọn.</p>
+<p>Mỗi nhóm k người có đúng <span class="arithmatex">\(k!\)</span> cách hoán đổi thứ tự (k người phân biệt). Vì chỉnh hợp đã đếm mỗi nhóm <span class="arithmatex">\(k!\)</span> lần, số nhóm <span class="arithmatex">\(C_n^k=\frac{A_n^k}{k!}=\frac{n!}{k!(n-k)!}\)</span>. Đây là số tập con k phần tử, không phải công thức học riêng khỏi chỉnh hợp.</p>
+<p><strong>Điều kiện áp dụng:</strong> <span class="arithmatex">\(0\le k\le n\)</span> là số nguyên; nhóm không phân vai/không xét thứ tự và mỗi người chỉ chọn một lần. <span class="arithmatex">\(C_n^0=C_n^n=1\)</span>; <span class="arithmatex">\(C_n^k=C_n^{n-k}\)</span> do chọn người cũng tương ứng chọn nhóm không được chọn.</p>
 <blockquote>
 <p><strong>ĐỊNH NGHĨA · TỔ HỢP</strong></p>
-<p>Tổ hợp chập k của n phần tử phân biệt là chọn k phần tử <strong>không xét thứ tự, không lặp</strong>. [C_n^k=\binom nk=\frac{n!}{k!(n-k)!}.]</p>
+<p>Tổ hợp chập k của n phần tử phân biệt là chọn k phần tử <strong>không xét thứ tự, không lặp</strong>. <span class="arithmatex">\(C_n^k=\binom nk=\frac{n!}{k!(n-k)!}.\)</span></p>
 </blockquote>
 <p><strong>Ba mối liên hệ giúp tự kiểm công thức</strong>, không phải ba công thức rời rạc. Với tập gồm <span class="arithmatex">\(n\)</span> phần tử phân biệt và <span class="arithmatex">\(0\le k\le n\)</span>:</p>
 <ol>
@@ -12018,17 +12018,17 @@ Nếu ra 15, em đang coi A làm trưởng/B làm phó giống B trưởng/A ph�
 <p><strong>Ví dụ minh họa.</strong> Chọn 3 trong 5 học sinh: <span class="arithmatex">\(\binom53=10\)</span>. Chia theo việc bạn A có mặt: chọn thêm 2 từ 4 người <span class="arithmatex">\(\binom42=6\)</span> nhóm; không có A: <span class="arithmatex">\(\binom43=4\)</span> nhóm. Tổng <span class="arithmatex">\(6+4=10\)</span>. Cách kiểm đối xứng là <span class="arithmatex">\(\binom53=\binom52=10\)</span>; cả ba cách phải khớp nếu đã xác định đúng <strong>đối tượng được đếm</strong>.</p>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài:</strong> Từ 5 học sinh phân biệt, chọn một nhóm 2 người, <strong>không phân vai</strong>. Có bao nhiêu nhóm?</p>
-<p><strong>Lời giải:</strong> Nếu chọn có thứ tự, có <span class="arithmatex">\(5\cdot4=20\)</span> cặp; nhưng mỗi nhóm hai người đã bị đếm hai lần, ví dụ AB và BA. Chia cho <span class="arithmatex">\(2!=2\)</span> để được <span class="arithmatex">\(C_5^2=20/2=10\)</span> nhóm. Vì không phân vai, không dùng 20 làm đáp số.</p>
+<p><strong>Lời giải:</strong> Nếu chọn có thứ tự, có <span class="arithmatex">\(5\cdot4=20\)</span> cặp; nhưng mỗi nhóm hai người đã bị đếm hai lần, ví dụ AB và BA. Chia cho <span class="arithmatex">\(2!=2\)</span> để được <span class="arithmatex">\(C_5^2=\frac{20}{2}=10\)</span> nhóm. Vì không phân vai, không dùng 20 làm đáp số.</p>
 <p><strong>Vận dụng</strong></p>
 <p>Chọn một nhóm 3 người từ 6 người khác nhau, không phân vai. Có bao nhiêu nhóm?</p>
 <!-- ITEM_ID: THPT-TOP19-T07; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O07; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-C(6,3)=6×5×4/(3×2×1)=**20** nhóm.
+\(C_6^3=\frac{6\cdot5\cdot4}{3\cdot2\cdot1}=20\) nhóm.
 
 **Kiểm lỗi**
 
-Nếu em ra 120, đó là số thứ tự của bộ ba; mỗi nhóm bị đếm 3!=6 lần, phải chia 6. Đọc lại **Kiến thức 2.3**, sau đó thử **Bài luyện 21** và **Bài luyện 22** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
+Nếu em ra 120, đó là số thứ tự của bộ ba; mỗi nhóm bị đếm \(3!=6\) lần, phải chia 6. Đọc lại **Kiến thức 2.3**, sau đó thử **Bài luyện 21** và **Bài luyện 22** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -12050,55 +12050,55 @@ Nếu em ra 120, đó là số thứ tự của bộ ba; mỗi nhóm bị đếm
 <!-- ITEM_ID: THPT-TOP19-T08; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O08; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Chọn 2 nữ trong 4: C(4,2)=6; chọn 1 nam trong 3: 3. Nhân: **18** nhóm.
+Chọn 2 nữ trong 4: \(C_4^2=6\); chọn 1 nam trong 3: 3. Nhân: **18** nhóm.
 
 **Kiểm lỗi**
 
-Nếu tính A(4,2)×3, em đã phân biệt thứ tự hai nữ; bài này chỉ chọn nhóm nên dùng tổ hợp. Đọc lại **Kiến thức 2.4**, sau đó thử **Bài luyện 23** và **Bài luyện 25** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
+Nếu tính \(A_4^2\cdot3\), em đã phân biệt thứ tự hai nữ; bài này chỉ chọn nhóm nên dùng tổ hợp. Đọc lại **Kiến thức 2.4**, sau đó thử **Bài luyện 23** và **Bài luyện 25** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
-<p>Hãy tự kiểm thử n!, nPr và nCr ở mục Kiến thức 2.5 để nhớ khi nào kết quả là một <strong>nhóm</strong> và khi nào là <strong>danh sách có thứ tự</strong>. Sau đó C(n,k) sẽ trở thành hệ số trong khai triển Newton.</p>
+<p>Hãy tự kiểm thử <span class="arithmatex">\(n!\)</span>, nPr và nCr ở mục Kiến thức 2.5 để nhớ khi nào kết quả là một <strong>nhóm</strong> và khi nào là <strong>danh sách có thứ tự</strong>. Sau đó <span class="arithmatex">\(C_n^k\)</span> sẽ trở thành hệ số trong khai triển Newton.</p>
 <h3 id="25-may-tinh-cam-tay-ho-tro-tinh-n-chinh-hop-va-to-hop-va-cach-tu-kiem-ket-qua">2.5. Máy tính cầm tay hỗ trợ tính n!, chỉnh hợp và tổ hợp — và cách tự kiểm kết quả</h3>
 <!-- LESSON_ID: TOP19-M14; OUTCOME_ID: TOP19-O14; ORIGINAL_SGK_SKILL: G10-B24-CALCULATOR_N_FACTORIAL_NPR_NCR; S1_LESSON: G10-B24; S1_PRINT_PAGE: 70; SOURCE_ROLE: SGK_CORE_AUTHORITY; SOURCE_STATUS: DIRECT_ORIGINAL_PDF_VERIFIED -->
 
 <p>Khi số phần tử tăng lên, việc nhân thủ công dễ mất thời gian và sai số. Bài học phần này hướng dẫn dùng máy tính cầm tay để tính <strong>hoán vị, chỉnh hợp, tổ hợp</strong>. Máy chỉ giúp tính số nhanh hơn; em vẫn phải hiểu bài toán là <strong>xếp có thứ tự hay chọn nhóm</strong>, nếu không máy sẽ cho đúng phép tính nhưng sai phương pháp.</p>
 <p>Trước hết hãy viết rõ ý nghĩa và đối số: <span class="arithmatex">\(n!\)</span> là số cách xếp hết n vật; <code>nPr</code> (hay <span class="arithmatex">\(A_n^k\)</span>) là chọn k vật <strong>có thứ tự</strong> từ n; <code>nCr</code> (hay <span class="arithmatex">\(C_n^k\)</span>) là chỉ chọn k vật <strong>không thứ tự</strong>. Một số máy có menu xác suất/hoán vị/tổ hợp, máy khác cần phím <code>SHIFT</code> hoặc tổ hợp phím riêng; <strong>không có một chuỗi phím chung cho mọi mẫu máy</strong>. Trên máy đang dùng, tìm chức năng được ghi <code>x!</code>, <code>nPr</code>, <code>nCr</code> trong hướng dẫn/nhãn phím, nhập đúng n rồi k, nhấn dấu bằng. Nếu máy không có chức năng này, em dùng các tích ngắn và chia bằng tay; kiến thức phải tự đủ, không phụ thuộc thương hiệu máy.</p>
-<p><strong>Điều kiện áp dụng:</strong> n và k nguyên, n≥0, 0≤k≤n; số hoán vị/chỉnh hợp/tổ hợp luôn không âm và nguyên. Để kiểm kết quả, dùng <span class="arithmatex">\(A_n^k=C_n^k\cdot k!\)</span>. Lưu ý <code>nPr</code> không phải <code>nCr</code>; giới hạn số lớn của máy có thể gây tràn, không được xem hiển thị <code>E</code> hoặc kết quả thập phân xấp xỉ là số cách chính xác nếu đề đếm hữu hạn.</p>
+<p><strong>Điều kiện áp dụng:</strong> n và k nguyên, <span class="arithmatex">\(n\ge0\)</span>, <span class="arithmatex">\(0\le k\le n\)</span>; số hoán vị/chỉnh hợp/tổ hợp luôn không âm và nguyên. Để kiểm kết quả, dùng <span class="arithmatex">\(A_n^k=C_n^k\cdot k!\)</span>. Lưu ý <code>nPr</code> không phải <code>nCr</code>; giới hạn số lớn của máy có thể gây tràn, không được xem hiển thị <code>E</code> hoặc kết quả thập phân xấp xỉ là số cách chính xác nếu đề đếm hữu hạn.</p>
 <blockquote>
 <p><strong>PHƯƠNG PHÁP · Máy tính cầm tay</strong></p>
 <p>Các phép <span class="arithmatex">\(n!\)</span>, <span class="arithmatex">\(\operatorname{nPr}\)</span>, <span class="arithmatex">\(\operatorname{nCr}\)</span> giúp tính số khi đã xác định đúng <strong>xếp hết, chọn và xếp k, hay chọn k không thứ tự</strong>. Dùng máy để kiểm phép tính, không thay bước nhận dạng mô hình.</p>
 </blockquote>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài:</strong> Dùng máy tính cầm tay (nếu có chức năng phù hợp) và phép tính tay để xác định: (a) số cách xếp cả 6 sách khác nhau; (b) số cách phân hai chức danh khác nhau từ 8 người; (c) số nhóm 2 người không phân vai chọn từ 8 người.</p>
-<p><strong>Lời giải:</strong> (a) Dùng <span class="arithmatex">\(6!\)</span>, kiểm bằng <span class="arithmatex">\(6\cdot5\cdot4\cdot3\cdot2\cdot1=720\)</span>. (b) Vì hai chức danh khác nhau, dùng <span class="arithmatex">\(8\operatorname{nPr}2=A_8^2=8\cdot7=56\)</span>. (c) Vì chỉ chọn nhóm, dùng <span class="arithmatex">\(8\operatorname{nCr}2=C_8^2=56/2=28\)</span>. Máy chỉ tính phép đã chọn; trước khi bấm phải xác định <strong>có xét thứ tự hay không</strong>.</p>
+<p><strong>Lời giải:</strong> (a) Dùng <span class="arithmatex">\(6!\)</span>, kiểm bằng <span class="arithmatex">\(6\cdot5\cdot4\cdot3\cdot2\cdot1=720\)</span>. (b) Vì hai chức danh khác nhau, dùng <span class="arithmatex">\(8\operatorname{nPr}2=A_8^2=8\cdot7=56\)</span>. (c) Vì chỉ chọn nhóm, dùng <span class="arithmatex">\(8\operatorname{nCr}2=C_8^2=\frac{56}{2}=28\)</span>. Máy chỉ tính phép đã chọn; trước khi bấm phải xác định <strong>có xét thứ tự hay không</strong>.</p>
 <p><strong>Vận dụng</strong></p>
 <p>Từ 8 ứng viên khác nhau, chọn 3 bạn giữ ba vai trò phân biệt. Hãy (a) xác định phép tính máy cần dùng, (b) cho số cách và (c) tự kiểm bằng tích không cần máy.</p>
 <!-- ITEM_ID: THPT-TOP19-T14; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O14; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Ba vai khác nhau, nên dùng **nPr** (chỉnh hợp): A(8,3)=8×7×6=**336** cách. Trên máy có `nPr`, tính `8 nPr 3`; trên máy không có, nhân ba số giảm dần 8·7·6. Không dùng C(8,3) vì đó là chọn **nhóm không phân vai**.
+Ba vai khác nhau, nên dùng **nPr** (chỉnh hợp): \(A_8^3=8\cdot7\cdot6=336\) cách. Trên máy có `nPr`, tính `8 nPr 3`; trên máy không có, nhân ba số giảm dần \(8\cdot7\cdot6\). Không dùng \(C_8^3\) vì đó là chọn **nhóm không phân vai**.
 
 **Kiểm lỗi**
 
-Nếu kết quả ra 56, em mới chọn hai vai thay vì ba. Nếu ra C(8,3)=56, em quên **ba vai phân biệt**; so A(8,3)=C(8,3)×3!=56×6=336. Quay lại Kiến thức 2.2–2.3 để phân biệt kết quả có thứ tự và không có thứ tự. Đọc lại **Kiến thức 2.5**, sau đó thử **Bài luyện 20** và **Bài luyện 27** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
+Nếu kết quả ra 56, em mới chọn hai vai thay vì ba. Nếu ra \(C_8^3=56\), em quên **ba vai phân biệt**; so \(A_8^3=C_8^3\cdot3!=56\cdot6=336\). Quay lại Kiến thức 2.2–2.3 để phân biệt kết quả có thứ tự và không có thứ tự. Đọc lại **Kiến thức 2.5**, sau đó thử **Bài luyện 20** và **Bài luyện 27** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
-<p>Các số <code>C(n,k)</code> trên máy không phải một loại hệ số bí ẩn: chúng chính là số cách chọn k vị trí trong n thừa số của nhị thức. Bây giờ em có thể nhìn tam giác Pascal và hiểu vì sao các số tổ hợp trở thành hệ số Newton.</p>
+<p>Các giá trị tổ hợp <span class="arithmatex">\(C_n^k\)</span> tính bằng chức năng <code>nCr</code> trên máy không phải một loại hệ số bí ẩn: chúng chính là số cách chọn k vị trí trong n thừa số của nhị thức. Bây giờ em có thể nhìn tam giác Pascal và hiểu vì sao các số tổ hợp trở thành hệ số Newton.</p>
 <h2 id="3-nhi-thuc-newton-va-cac-van-dung">3. Nhị thức Newton và các vận dụng</h2>
 <p><img alt="Tam giác Pascal từ hàng n=0 đến n=4" src="../../../../assets/images/thpt/FIG-TOP19-B25-PASCAL-WHITE-R00.svg" /></p>
-<p><strong>Đọc hình:</strong> Hàng thứ tư 1,4,6,4,1 giải thích hệ số của (a+b)⁴. Số 6 ở giữa nhận từ 3+3 của hàng trên, đồng thời bằng C(4,2) là số cách lấy hai vị trí b. Đây là kết nối <strong>tổ hợp → hệ số</strong>, không phải công thức cần nhớ rời nhau.</p>
-<p><a href="../../../math-lab/models/slm-top19-combinatorics-pascal-r00/">Mở mô hình tương tác công khai: “Hệ số Newton n=4,5”</a> — đổi k và đọc hạng tử, không dùng ngoài phạm vi n=4,5 khi chưa học mở rộng.</p>
+<p><strong>Đọc hình:</strong> Hàng thứ tư 1,4,6,4,1 giải thích hệ số của <span class="arithmatex">\((a+b)^4\)</span>. Số 6 ở giữa nhận từ <span class="arithmatex">\(3+3\)</span> của hàng trên, đồng thời bằng <span class="arithmatex">\(C_4^2\)</span> là số cách lấy hai vị trí b. Đây là kết nối <strong>tổ hợp → hệ số</strong>, không phải công thức cần nhớ rời nhau.</p>
+<p><a href="../../../math-lab/models/slm-top19-combinatorics-pascal-r00/">Mở mô hình tương tác công khai: “Hệ số Newton <span class="arithmatex">\(n=4,5\)</span>”</a> — đổi k và đọc hạng tử, không dùng ngoài phạm vi <span class="arithmatex">\(n=4,5\)</span> khi chưa học mở rộng.</p>
 <h3 id="31-nhi-thuc-newton-he-so-la-so-cach-chon-vi-tri">3.1. Nhị thức Newton: hệ số là số cách chọn vị trí</h3>
 <!-- LESSON_ID: TOP19-M09; OUTCOME_ID: TOP19-O09; ORIGINAL_SGK_SKILL: G10-B25-NEWTON_EXPANSION; S1_LESSON: G10-B25; SOURCE_ROLE: SGK_CORE_AUTHORITY -->
 
 <p>Khi khai triển <span class="arithmatex">\((a+b)^4\)</span>, ta nhân bốn thừa số <span class="arithmatex">\((a+b)\)</span>. Mỗi lần tạo một hạng tử, ta chọn <span class="arithmatex">\(a\)</span> hoặc <span class="arithmatex">\(b\)</span> từ từng thừa số. Vì thế, hệ số của một hạng tử được xác định bằng số cách chọn các vị trí lấy <span class="arithmatex">\(b\)</span>; chẳng hạn chọn đúng hai trong bốn vị trí có 6 cách.</p>
-<p>Để nhận hạng tử a^(n−k)b^k trong (a+b)^n, chọn đúng k trong n vị trí lấy b, các vị trí còn lại lấy a. Có C(n,k) cách. Vì thế khai triển là tổng các hệ số C(n,k)a^(n−k)b^k. Ở phạm vi SGK đang đối chiếu chỉ học chắc n=4,5; không đưa mũ bất kỳ vào Core nếu chưa xác nhận.</p>
-<p><strong>Điều kiện áp dụng:</strong> n là số nguyên không âm; trong chương này đặc biệt dùng n=4 hoặc n=5. Hệ số là số cách chọn vị trí, không phải số lần ta viết chữ b trong một tích.</p>
+<p>Để nhận hạng tử <span class="arithmatex">\(a^{n-k}b^k\)</span> trong <span class="arithmatex">\((a+b)^n\)</span>, chọn đúng k trong n vị trí lấy b, các vị trí còn lại lấy a. Có <span class="arithmatex">\(C_n^k\)</span> cách. Vì thế khai triển là tổng các hạng tử <span class="arithmatex">\(\binom nk a^{n-k}b^k\)</span>, trong đó <span class="arithmatex">\(\binom nk\)</span> là hệ số tổ hợp. Ở Toán 10, trước tiên luyện hai trường hợp <span class="arithmatex">\(n=4\)</span> và <span class="arithmatex">\(n=5\)</span>; công thức tổng quát là phần mở rộng.</p>
+<p><strong>Điều kiện áp dụng:</strong> n là số nguyên không âm; trong chương này đặc biệt dùng <span class="arithmatex">\(n=4\)</span> hoặc <span class="arithmatex">\(n=5\)</span>. Hệ số là số cách chọn vị trí, không phải số lần ta viết chữ b trong một tích.</p>
 <blockquote>
 <p><strong>CÔNG THỨC · Nhị thức Newton</strong></p>
-<p>[(a+b)^n=\sum_{k=0}^{n}\binom nk a^{n-k}b^k,\qquad n\in\mathbb N.] Hệ số <span class="arithmatex">\(\binom nk\)</span> đếm số cách chọn <span class="arithmatex">\(k\)</span> vị trí lấy <span class="arithmatex">\(b\)</span> trong <span class="arithmatex">\(n\)</span> thừa số. <strong>Phạm vi học:</strong> Trước tiên luyện trường hợp <span class="arithmatex">\(n=4\)</span> và <span class="arithmatex">\(n=5\)</span> ở Toán 10; ký hiệu tổng <span class="arithmatex">\(\sum\)</span> cho số mũ tổng quát là <strong>kiến thức mở rộng</strong>, không coi là yêu cầu bắt buộc của bài Toán 10.</p>
+<p><span class="arithmatex">\((a+b)^n=\sum_{k=0}^{n}\binom nk a^{n-k}b^k,\qquad n\in\mathbb N.\)</span> Hệ số <span class="arithmatex">\(\binom nk\)</span> đếm số cách chọn <span class="arithmatex">\(k\)</span> vị trí lấy <span class="arithmatex">\(b\)</span> trong <span class="arithmatex">\(n\)</span> thừa số. <strong>Phạm vi học:</strong> Trước tiên luyện trường hợp <span class="arithmatex">\(n=4\)</span> và <span class="arithmatex">\(n=5\)</span> ở Toán 10; ký hiệu tổng <span class="arithmatex">\(\sum\)</span> cho số mũ tổng quát là <strong>kiến thức mở rộng</strong>, không coi là yêu cầu bắt buộc của bài Toán 10.</p>
 </blockquote>
 <p><strong>Vì sao hệ số giữa là <span class="arithmatex">\(6\)</span> trong <span class="arithmatex">\((a+b)^4\)</span>?</strong> Bốn thừa số <span class="arithmatex">\((a+b)\)</span> có bốn <strong>vị trí phân biệt</strong>. Để tạo <span class="arithmatex">\(a^2b^2\)</span>, em chọn hai vị trí lấy <span class="arithmatex">\(b\)</span> trong bốn vị trí, tức chọn cặp vị trí <span class="arithmatex">\(\{1,2\},\{1,3\},\{1,4\},\{2,3\},\{2,4\},\{3,4\}\)</span> — đúng <span class="arithmatex">\(C_4^2=6\)</span> cách. Các tích thu được đều có cùng dạng <span class="arithmatex">\(a^2b^2\)</span>, nên chúng được cộng hệ số. Điều này <strong>giải thích</strong>, không chỉ ghi nhớ, dãy <span class="arithmatex">\(1,4,6,4,1\)</span>.</p>
 <p><strong>Ví dụ minh họa.</strong> Trong <span class="arithmatex">\((2x+3)^4\)</span>, hệ số của <span class="arithmatex">\(x^2\)</span> phải lấy đúng <strong>hai</strong> vị trí <span class="arithmatex">\(2x\)</span> và hai vị trí <span class="arithmatex">\(3\)</span>: <span class="arithmatex">\(C_4^2(2^2)(3^2)=6\cdot4\cdot9=216\)</span>. Đừng lấy <span class="arithmatex">\(C_4^2\)</span> một mình vì hệ số của từng hạng tử <span class="arithmatex">\(2x\)</span> và <span class="arithmatex">\(3\)</span> cũng đóng góp. Kiểm nhanh: mỗi tích tạo <span class="arithmatex">\(x^2\)</span> có giá trị <span class="arithmatex">\(36x^2\)</span>, xuất hiện sáu lần.</p>
@@ -12106,15 +12106,15 @@ Nếu kết quả ra 56, em mới chọn hai vai thay vì ba. Nếu ra C(8,3)=56
 <p><strong>Đề bài:</strong> Xét khai triển <span class="arithmatex">\((a+b)^4\)</span>. (a) Tìm hệ số của <span class="arithmatex">\(a^2b^2\)</span>. (b) Viết khai triển đầy đủ.</p>
 <p><strong>Lời giải:</strong> (a) Để tạo <span class="arithmatex">\(a^2b^2\)</span>, ta chọn 2 trong 4 vị trí dùng <span class="arithmatex">\(b\)</span>, có <span class="arithmatex">\(C_4^2=6\)</span> cách, nên hệ số là <strong>6</strong>. (b) Theo số lần chọn <span class="arithmatex">\(b\)</span> từ 0 đến 4, khai triển là <span class="arithmatex">\((a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4\)</span>. Hệ số nhị thức xuất phát từ <strong>số cách chọn vị trí</strong>, không phải số lần viết lại một hạng tử.</p>
 <p><strong>Vận dụng</strong></p>
-<p>Hệ số của x³ trong (x+3)^4 bằng bao nhiêu? Giải thích số cách chọn ba thừa số chứa x và hệ số của thừa số còn lại.</p>
+<p>Hệ số của <span class="arithmatex">\(x^3\)</span> trong <span class="arithmatex">\((x+3)^4\)</span> bằng bao nhiêu? Giải thích số cách chọn ba thừa số chứa x và hệ số của thừa số còn lại.</p>
 <!-- ITEM_ID: THPT-TOP19-T09; CONTENT_VERSION: TOP19-R11-20261121-T09; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O09; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Muốn x³ chọn x tại 3 trong 4 vị trí: C(4,3)=4 cách; vị trí còn lại phải chọn 3, nên hệ số là 4·3=**12**.
+Muốn \(x^3\) chọn x tại 3 trong 4 vị trí: \(C_4^3=4\) cách; vị trí còn lại phải chọn 3, nên hệ số là \(4\cdot3=12\).
 
 **Kiểm lỗi**
 
-Nếu em chép số 4 ở hàng n=4 của tam giác Pascal thì mới đếm số cách chọn vị trí, chưa nhân hệ số 3 của thừa số không chứa x. Viết rõ ba lần chọn x và một lần chọn 3: C(4,3)·3=12. Đọc lại **Kiến thức 3.1**, sau đó thử **Bài luyện 28** và **Bài luyện 30** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
+Nếu em chép số 4 ở hàng \(n=4\) của tam giác Pascal thì mới đếm số cách chọn vị trí, chưa nhân hệ số 3 của thừa số không chứa x. Viết rõ ba lần chọn x và một lần chọn 3: \(C_4^3\cdot3=12\). Đọc lại **Kiến thức 3.1**, sau đó thử **Bài luyện 28** và **Bài luyện 30** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -12122,27 +12122,27 @@ Nếu em chép số 4 ở hàng n=4 của tam giác Pascal thì mới đếm s�
 <!-- LESSON_ID: TOP19-M10; OUTCOME_ID: TOP19-O10; ORIGINAL_SGK_SKILL: G10-B25-COEFFICIENT_SIGN; S1_LESSON: G10-B25; SOURCE_ROLE: SGK_CORE_AUTHORITY -->
 
 <p>Cùng hệ số tổ hợp nhưng (x−2)^5 có hạng tử dương và âm. Nếu chỉ nhớ 'dấu xen kẽ' mà không xét số lần chọn −2, ta rất dễ sai.</p>
-<p>Trong (u+v)^n, hạng tử chọn v đúng k lần có hệ số C(n,k)u^(n−k)v^k. Nếu v âm, dấu của hạng tử là (−1)^k. Khi hỏi hệ số x^m, tìm số lần chọn bằng cách giải phương trình số mũ trước rồi mới tính dấu.</p>
-<p><strong>Điều kiện áp dụng:</strong> Với một đa thức thật, số mũ x là không âm; không nhầm thứ tự k là số lần lấy hạng tử thứ hai. Đặc biệt 0≤k≤n.</p>
+<p>Trong <span class="arithmatex">\((u+v)^n\)</span>, hạng tử ứng với việc chọn <span class="arithmatex">\(v\)</span> đúng <span class="arithmatex">\(k\)</span> lần là <span class="arithmatex">\(\binom nk u^{n-k}v^k\)</span>; hệ số tổ hợp là <span class="arithmatex">\(\binom nk\)</span>. Nếu <span class="arithmatex">\(u&gt;0,\ v&lt;0\)</span>, dấu của hạng tử là <span class="arithmatex">\((-1)^k\)</span>. Khi hỏi hệ số <span class="arithmatex">\(x^m\)</span>, tìm số lần chọn bằng cách giải phương trình số mũ trước rồi mới tính dấu.</p>
+<p><strong>Điều kiện áp dụng:</strong> Với đa thức, số mũ x là không âm; không nhầm thứ tự k là số lần lấy hạng tử thứ hai. Đặc biệt <span class="arithmatex">\(0\le k\le n\)</span>.</p>
 <blockquote>
 <p><strong>TÍNH CHẤT · Dấu của hạng tử</strong></p>
-<p>[(a-b)^n=\sum_{k=0}^{n}(-1)^k\binom nk a^{n-k}b^k.] Dấu <span class="arithmatex">\((-1)^k\)</span> đến từ chọn <span class="arithmatex">\(-b\)</span> k lần, không tự gắn dấu theo vị trí nhìn vào biểu thức.</p>
+<p><span class="arithmatex">\((a-b)^n=\sum_{k=0}^{n}(-1)^k\binom nk a^{n-k}b^k.\)</span> Dấu <span class="arithmatex">\((-1)^k\)</span> đến từ chọn <span class="arithmatex">\(-b\)</span> k lần, không tự gắn dấu theo vị trí nhìn vào biểu thức.</p>
 </blockquote>
-<p><strong>Cách tránh nhầm dấu và số mũ.</strong> Khi tìm hệ số của <span class="arithmatex">\(x^m\)</span> trong <span class="arithmatex">\((ax+b)^n\)</span>, với <span class="arithmatex">\(n\)</span> nguyên không âm và <span class="arithmatex">\(a,b\)</span> là số thực, hạng tử chọn <span class="arithmatex">\(b\)</span> đúng <span class="arithmatex">\(k\)</span> lần có dạng
-[
+<p><strong>Cách tránh nhầm dấu và số mũ.</strong> Khi tìm hệ số của <span class="arithmatex">\(x^m\)</span> trong <span class="arithmatex">\((ax+b)^n\)</span>, với <span class="arithmatex">\(n\)</span> nguyên không âm và <span class="arithmatex">\(a,b\)</span> là số thực, hạng tử chọn <span class="arithmatex">\(b\)</span> đúng <span class="arithmatex">\(k\)</span> lần có dạng</p>
+<div class="arithmatex">\[
 \binom nk (ax)^{n-k}b^k=\binom nk a^{n-k}b^k x^{n-k}.
-]
-Vì vậy phải giải <strong><span class="arithmatex">\(n-k=m\)</span></strong>, kiểm <span class="arithmatex">\(k\)</span> là số nguyên từ <span class="arithmatex">\(0\)</span> đến <span class="arithmatex">\(n\)</span>, rồi mới tính hệ số. Nếu <span class="arithmatex">\(b&lt;0\)</span>, dấu đến từ <span class="arithmatex">\(b^k\)</span>; nếu <span class="arithmatex">\(a&lt;0\)</span>, dấu còn phụ thuộc vào <span class="arithmatex">\(a^{n-k}\)</span>, nên không có quy tắc “dấu xen kẽ” áp dụng mù cho mọi nhị thức.</p>
+\]</div>
+<p>Vì vậy phải giải <strong><span class="arithmatex">\(n-k=m\)</span></strong>, kiểm <span class="arithmatex">\(k\)</span> là số nguyên từ <span class="arithmatex">\(0\)</span> đến <span class="arithmatex">\(n\)</span>, rồi mới tính hệ số. Nếu <span class="arithmatex">\(b&lt;0\)</span>, dấu đến từ <span class="arithmatex">\(b^k\)</span>; nếu <span class="arithmatex">\(a&lt;0\)</span>, dấu còn phụ thuộc vào <span class="arithmatex">\(a^{n-k}\)</span>, nên không có quy tắc “dấu xen kẽ” áp dụng mù cho mọi nhị thức.</p>
 <p><strong>Ví dụ minh họa.</strong> Tìm hệ số <span class="arithmatex">\(x^3\)</span> trong <span class="arithmatex">\((2x-3)^5\)</span>: ta cần <span class="arithmatex">\(5-k=3\Rightarrow k=2\)</span>. Hệ số là <span class="arithmatex">\(\binom52 2^3(-3)^2=10\cdot8\cdot9=720\)</span>, dương vì lấy <span class="arithmatex">\(-3\)</span> <strong>hai lần</strong>. Không nhầm với <span class="arithmatex">\(\binom53=10\)</span> rồi bỏ qua lũy thừa <span class="arithmatex">\(2^3\)</span>.</p>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài:</strong> Tìm hệ số của <span class="arithmatex">\(x^3\)</span> trong khai triển <span class="arithmatex">\((2x-1)^5\)</span>. Giải thích dấu của hệ số.</p>
 <p><strong>Lời giải:</strong> Chọn <span class="arithmatex">\(-1\)</span> đúng <span class="arithmatex">\(k\)</span> lần thì lũy thừa còn lại là <span class="arithmatex">\((2x)^{5-k}\)</span>. Muốn số mũ của <span class="arithmatex">\(x\)</span> bằng 3 phải có <span class="arithmatex">\(5-k=3\)</span>, suy ra <span class="arithmatex">\(k=2\)</span>. Hệ số là <span class="arithmatex">\(C_5^2\cdot 2^3\cdot(-1)^2=10\cdot8=80\)</span>. Dấu dương vì hạng tử âm được chọn <strong>hai lần</strong>.</p>
 <p><strong>Vận dụng</strong></p>
-<p>Hệ số x² trong (x−2)^4 là bao nhiêu?</p>
+<p>Hệ số <span class="arithmatex">\(x^2\)</span> trong <span class="arithmatex">\((x-2)^4\)</span> là bao nhiêu?</p>
 <!-- ITEM_ID: THPT-TOP19-T10; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O10; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Muốn x² thì k=2 lần chọn −2. Hệ số C(4,2)(−2)²=6·4=**24**.
+Muốn \(x^2\) thì \(k=2\) lần chọn −2. Hệ số \(C_4^2(-2)^2=6\cdot4=24\).
 
 **Kiểm lỗi**
 
@@ -12154,11 +12154,11 @@ Nếu ra −24, kiểm lại: chọn −2 hai lần thì tích dương; dấu ph
 <!-- LESSON_ID: TOP19-M13; OUTCOME_ID: TOP19-O13; ORIGINAL_SGK_SKILL: G10-B25-BINOMIAL_APPROX_APPLICATION; S1_LESSON: G10-B25; S1_PRINT_PAGE: 75; SOURCE_ROLE: SGK_CORE_AUTHORITY; SGK_EXERCISES: 8.15_AND_8.16_ORIGINAL_CONTEXT_NOT_COPIED -->
 
 <p>Hội chợ muốn ước tính nhanh lượng đơn đặt hàng sau vài đợt tăng trưởng. Nhân lặp (1+r)^5 có thể tính chính xác bằng máy, nhưng đôi khi ta chỉ cần <strong>ước lượng có lý do</strong> và biết mình đang bỏ qua phần nào.</p>
-<p>Nếu lượng ban đầu N₀ tăng tỉ lệ r (viết dạng số thập phân) ở cuối mỗi năm, sau 5 năm ta có N₅=N₀(1+r)^5. Nhị thức Newton cho (1+r)^5=1+5r+10r²+10r³+5r⁴+r⁵. Khi 0&lt;r≪1, các hạng chứa r²,r³,… nhỏ hơn nhiều so với 5r. <strong>Hai số hạng đầu</strong> cho ước tính N₅≈N₀(1+5r), chứ không phải một đẳng thức chính xác.</p>
+<p>Nếu lượng ban đầu <span class="arithmatex">\(N_0\)</span> tăng tỉ lệ r (viết dạng số thập phân) ở cuối mỗi năm, sau 5 năm ta có <span class="arithmatex">\(N_5=N_0(1+r)^5\)</span>. Nhị thức Newton cho <span class="arithmatex">\((1+r)^5=1+5r+10r^2+10r^3+5r^4+r^5\)</span>. Khi <span class="arithmatex">\(0&lt;r\ll1\)</span>, các hạng chứa <span class="arithmatex">\(r^2,r^3,\ldots\)</span> nhỏ hơn nhiều so với <span class="arithmatex">\(5r\)</span>. <strong>Hai số hạng đầu</strong> cho ước tính <span class="arithmatex">\(N_5\approx N_0(1+5r)\)</span>, chứ không phải một đẳng thức chính xác.</p>
 <p><strong>Điều kiện áp dụng:</strong> r&gt;-1 để hệ số tăng hằng năm không âm theo mô hình thực tế, và chỉ khi |r| nhỏ mới hy vọng bỏ qua các hạng bậc cao mà vẫn gần chính xác. Với r&gt;0, các hạng bỏ đi đều dương, nên dùng hai số hạng đầu <strong>ước lượng thấp hơn</strong> số chính xác. Phải nêu rõ đơn vị số lượng, thời gian và giả thiết tỉ lệ mỗi năm như nhau.</p>
 <blockquote>
 <p><strong>PHƯƠNG PHÁP — Ước tính tăng trưởng (vận dụng)</strong></p>
-<p>[(1+r)^5=1+5r+10r^2+10r^3+5r^4+r^5.] Khi <span class="arithmatex">\(|r|\)</span> nhỏ, có thể dùng <span class="arithmatex">\(1+5r\)</span> để <strong>ước lượng</strong>, nhưng phải nêu phần còn bỏ và không gọi là đẳng thức chính xác.</p>
+<p><span class="arithmatex">\((1+r)^5=1+5r+10r^2+10r^3+5r^4+r^5.\)</span> Khi <span class="arithmatex">\(|r|\)</span> nhỏ, có thể dùng <span class="arithmatex">\(1+5r\)</span> để <strong>ước lượng</strong>, nhưng phải nêu phần còn bỏ và không gọi là đẳng thức chính xác.</p>
 </blockquote>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài:</strong> Một kho có 1.000 bộ dụng cụ và số lượng tăng <strong>2% mỗi năm trong 5 năm</strong>, theo cùng tỉ lệ tăng trưởng. (a) Ước lượng lượng cuối kỳ bằng hai số hạng đầu của <span class="arithmatex">\((1+r)^5\)</span>. (b) So sánh với phép tính đủ năm năm và giải thích độ lệch.</p>
@@ -12168,23 +12168,23 @@ Nếu ra −24, kiểm lại: chọn −2 hai lần thì tích dương; dấu ph
 <!-- ITEM_ID: THPT-TOP19-T13; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O13; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-r=0,01. Hai số hạng đầu là 1+5r=1,05. Do đó 5 000×1,05=**5 250 bộ** (ước tính). Các hạng bậc 2 trở lên đều dương nên số thực tế mô hình 5 000×1,01^5 lớn hơn 5 250 một ít.
+\(r=0{,}01\). Hai số hạng đầu là \(1+5r=1{,}05\). Do đó \(5000\cdot1{,}05=5250\) bộ (ước tính). Các hạng bậc 2 trở lên đều dương nên số thực tế mô hình \(5000\cdot1{,}01^5\) lớn hơn 5 250 một ít.
 
 **Kiểm lỗi**
 
-Nếu tính 5 000(1+0,01) mà bỏ mũ 5, em mới tính tăng một năm. Quay lại Kiến thức 3.1 để viết năm thừa số rồi đọc hệ số của r là C(5,1)=5. Nếu viết dấu bằng chính xác, hãy chỉ phần r² còn bị bỏ qua. Đọc lại **Kiến thức 3.3**, sau đó thử **Bài luyện 29** và **Bài luyện 38** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
+Nếu tính \(5000(1+0{,}01)\) mà bỏ mũ 5, em mới tính tăng một năm. Quay lại Kiến thức 3.1 để viết năm thừa số rồi đọc hệ số của r là \(C_5^1=5\). Nếu viết dấu bằng chính xác, hãy chỉ phần \(r^2\) còn bị bỏ qua. Đọc lại **Kiến thức 3.3**, sau đó thử **Bài luyện 29** và **Bài luyện 38** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
 <p>Em đã dùng quy tắc nhân trong đếm bước, tổ hợp trong chọn nhóm và chính số tổ hợp làm hệ số để ước lượng một mô hình thực tế. Không thay một ước lượng bằng kết quả chính xác khi đề yêu cầu độ sai số.</p>
 <p><strong>Mở rộng sau mạch SGK bắt buộc (tự chọn)</strong></p>
-<p>Hai chặng tiếp theo giúp giải các bài SBT có lũy thừa <span class="arithmatex">\(1/x\)</span> hoặc nhận biết tổng hệ số qua <span class="arithmatex">\(P(1)\)</span>. Đây là phần <strong>mở rộng</strong>, không phải điều kiện tiên quyết để học Bài 25 trong SGK; có thể học sau khi em đã làm bài Vận dụng ở Kiến thức 3.3.</p>
+<p>Hai chặng tiếp theo giúp giải các bài SBT có lũy thừa <span class="arithmatex">\(\frac1x\)</span> hoặc nhận biết tổng hệ số qua <span class="arithmatex">\(P(1)\)</span>. Đây là phần <strong>mở rộng</strong>, không phải điều kiện tiên quyết để học Bài 25 trong SGK; có thể học sau khi em đã làm bài Vận dụng ở Kiến thức 3.3.</p>
 <h3 id="34-so-hang-khong-chua-x-tu-a-thuc-en-mo-rong-phan-thuc">3.4. Số hạng không chứa x: từ đa thức đến mở rộng phân thức</h3>
 <!-- LESSON_ID: TOP19-M11; OUTCOME_ID: TOP19-O11; ORIGINAL_SGK_SKILL: G10-B25-CONSTANT_TERM; S1_LESSON: G10-B25; SOURCE_ROLE: SGK_CORE_POLYNOMIAL_CONSTANT_WITH_SBT_OPTIONAL_RECIPROCAL -->
 
 <p>Trong <span class="arithmatex">\((3x-2)^5\)</span>, mỗi thừa số cho hai lựa chọn: <span class="arithmatex">\(3x\)</span> hoặc <span class="arithmatex">\(-2\)</span>. Số hạng <strong>không chứa <span class="arithmatex">\(x\)</span></strong> xuất hiện khi ta chọn <span class="arithmatex">\(-2\)</span> ở cả năm thừa số, tức không chọn <span class="arithmatex">\(3x\)</span> lần nào. Như vậy, ta tìm số hạng tự do ngay từ cách chọn hạng tử của từng thừa số, không cần ghi nhớ một mẹo riêng.</p>
-<p>Trong khai triển <span class="arithmatex">\((ax+b)^n\)</span>, nếu chọn <span class="arithmatex">\(b\)</span> đúng <span class="arithmatex">\(k\)</span> lần thì số mũ của <span class="arithmatex">\(x\)</span> là <span class="arithmatex">\(n-k\)</span> (khi a khác 0). Muốn số hạng tự do, cần <span class="arithmatex">\(n-k=0\)</span>, tức <span class="arithmatex">\(k=n\)</span>: chọn <span class="arithmatex">\(b\)</span> ở cả <span class="arithmatex">\(n\)</span> thừa số, nên số hạng không chứa <span class="arithmatex">\(x\)</span> là <span class="arithmatex">\(b^n\)</span>. Với nhị thức như <span class="arithmatex">\((4x-3)^5\)</span>, nó bằng <span class="arithmatex">\((-3)^5\)</span>, <strong>âm</strong>. Đừng nhân thêm <span class="arithmatex">\(C(n,1)\)</span> khi chỉ có đúng một cách chọn tất cả các vị trí b: <span class="arithmatex">\(C(n,n)=1\)</span>.</p>
-<p><strong>Điều kiện áp dụng:</strong> Đây là đa thức theo <span class="arithmatex">\(x\)</span>, nên không phải loại <span class="arithmatex">\(x=0\)</span>. Trong trường hợp <span class="arithmatex">\(a=0\)</span>, toàn bộ nhị thức là hằng số, vẫn có số hạng tự do <span class="arithmatex">\(b^n\)</span>. Chỉ khi gặp hạng tử dạng <span class="arithmatex">\(1/x\)</span> (tham khảo SBT), mới phải kiểm <span class="arithmatex">\(x\ne0\)</span>, theo dõi số mũ âm và giải phương trình tổng số mũ bằng 0. Bài chứa <span class="arithmatex">\(1/x\)</span> là <strong>mở rộng tự chọn</strong>, không coi là SGK Core.</p>
+<p>Trong khai triển <span class="arithmatex">\((ax+b)^n\)</span>, nếu chọn <span class="arithmatex">\(b\)</span> đúng <span class="arithmatex">\(k\)</span> lần thì số mũ của <span class="arithmatex">\(x\)</span> là <span class="arithmatex">\(n-k\)</span> (khi a khác 0). Muốn số hạng tự do, cần <span class="arithmatex">\(n-k=0\)</span>, tức <span class="arithmatex">\(k=n\)</span>: chọn <span class="arithmatex">\(b\)</span> ở cả <span class="arithmatex">\(n\)</span> thừa số, nên số hạng không chứa <span class="arithmatex">\(x\)</span> là <span class="arithmatex">\(b^n\)</span>. Với nhị thức như <span class="arithmatex">\((4x-3)^5\)</span>, nó bằng <span class="arithmatex">\((-3)^5\)</span>, <strong>âm</strong>. Đừng nhân thêm <span class="arithmatex">\(C_n^1\)</span> khi chỉ có đúng một cách chọn tất cả các vị trí b: <span class="arithmatex">\(C_n^n=1\)</span>.</p>
+<p><strong>Điều kiện áp dụng:</strong> Đây là đa thức theo <span class="arithmatex">\(x\)</span>, nên không phải loại <span class="arithmatex">\(x=0\)</span>. Trong trường hợp <span class="arithmatex">\(a=0\)</span>, toàn bộ nhị thức là hằng số, vẫn có số hạng tự do <span class="arithmatex">\(b^n\)</span>. Chỉ khi gặp hạng tử dạng <span class="arithmatex">\(\frac1x\)</span> (tham khảo SBT), mới phải kiểm <span class="arithmatex">\(x\ne0\)</span>, theo dõi số mũ âm và giải phương trình tổng số mũ bằng 0. Bài chứa <span class="arithmatex">\(\frac1x\)</span> là <strong>mở rộng tự chọn</strong>, không coi là SGK Core.</p>
 <blockquote>
 <p><strong>PHƯƠNG PHÁP — Số hạng không chứa x (mở rộng)</strong></p>
 <p>Trong mỗi số hạng khai triển, cộng số mũ của x từ các thừa số đã chọn. Chỉ giữ số hạng có <strong>tổng số mũ bằng 0</strong>; với phân thức cần điều kiện <span class="arithmatex">\(x\ne0\)</span>. Đây là mở rộng thực hành, không phải toàn bộ Core B25.</p>
@@ -12197,39 +12197,39 @@ Nếu tính 5 000(1+0,01) mà bỏ mũ 5, em mới tính tăng một năm. Quay 
 <!-- ITEM_ID: THPT-TOP19-T11; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O11; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Chọn \(-2\) từ cả năm thừa số, không chọn \(3x\) ở vị trí nào, nên có duy nhất \(C(5,5)=1\) cách cho hạng tử đó. Hệ số tự do là \((-2)^5=\mathbf{-32}\).
+Chọn \(-2\) từ cả năm thừa số, không chọn \(3x\) ở vị trí nào, nên có duy nhất \(C_5^5=1\) cách cho hạng tử đó. Hệ số tự do là \((-2)^5=\mathbf{-32}\).
 
 **Kiểm lỗi**
 
-Nếu được +32, em đã quên số lần chọn thừa số âm là **5 lần (lẻ)**. Nếu tính \(5\cdot(-2)\), em đã nhầm cộng năm lần với **nhân năm thừa số**. Thử n=2 trước: \((x-2)^2=x^2-4x+4\) có hằng số \((-2)^2=4\). Đọc lại **Kiến thức 3.4**, sau đó thử **Bài luyện 35** và **Bài luyện 40** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
+Nếu được +32, em đã quên số lần chọn thừa số âm là **5 lần (lẻ)**. Nếu tính \(5\cdot(-2)\), em đã nhầm cộng năm lần với **nhân năm thừa số**. Thử \(n=2\) trước: \((x-2)^2=x^2-4x+4\) có hằng số \((-2)^2=4\). Đọc lại **Kiến thức 3.4**, sau đó thử **Bài luyện 35** và **Bài luyện 40** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
-<p><strong>Tự chọn mở rộng sau khi hiểu đa thức:</strong> Với <span class="arithmatex">\((x+2/x)^4\)</span>, <span class="arithmatex">\(x\ne0\)</span>, nếu chọn <span class="arithmatex">\(2/x\)</span> đúng <span class="arithmatex">\(k\)</span> lần thì số mũ <span class="arithmatex">\(x\)</span> là <span class="arithmatex">\(4-2k\)</span>. Số hạng không chứa <span class="arithmatex">\(x\)</span> chỉ khi <span class="arithmatex">\(4-2k=0\)</span>, <span class="arithmatex">\(k=2\)</span>, được <span class="arithmatex">\(C(4,2)\cdot2^2=\mathbf{24}\)</span>. Đây là một họ bài mở rộng, <strong>không thay câu Vận dụng cơ bản</strong>.</p>
-<p>Từ đọc từng số hạng, em có thể kiểm toàn bộ hệ số bằng cách thay <span class="arithmatex">\(x=1\)</span> nếu biểu thức là đa thức.</p>
+<p><strong>Tự chọn mở rộng sau khi hiểu đa thức:</strong> Với <span class="arithmatex">\((x+\frac2x)^4\)</span>, <span class="arithmatex">\(x\ne0\)</span>, nếu chọn <span class="arithmatex">\(\frac2x\)</span> đúng <span class="arithmatex">\(k\)</span> lần thì số mũ <span class="arithmatex">\(x\)</span> là <span class="arithmatex">\(4-2k\)</span>. Số hạng không chứa <span class="arithmatex">\(x\)</span> chỉ khi <span class="arithmatex">\(4-2k=0\)</span>, <span class="arithmatex">\(k=2\)</span>, được <span class="arithmatex">\(C_4^2\cdot2^2=\mathbf{24}\)</span>. Đây là một họ bài mở rộng, <strong>không thay câu Vận dụng cơ bản</strong>.</p>
+<p>Từ đọc từng số hạng, em có thể kiểm toàn bộ hệ số bằng cách thay <span class="arithmatex">\(x=1\)</span> với đa thức hoặc tổng hữu hạn các lũy thừa nguyên của x.</p>
 <h3 id="35-tong-he-so-va-tam-giac-pascal-van-dung-sau-khai-trien">3.5. Tổng hệ số và tam giác Pascal (vận dụng sau khai triển)</h3>
 <!-- LESSON_ID: TOP19-M12; OUTCOME_ID: TOP19-O12; ORIGINAL_SGK_SKILL: G10-B25-COEFFICIENT_SUM; S1_LESSON: G10-B25; SOURCE_ROLE: TOPIC_EXTENSION_OPTIONAL; OPTIONAL_SCOPE -->
 
-<p>Khi khai triển dài, cộng từng hệ số là việc nặng. Nhưng tổng hệ số của đa thức P(x) lại có một cách kiểm đơn giản: thay x=1 để mọi x^k trở thành 1.</p>
-<p>Với đa thức P(x)=a₀+a₁x+...+aₙxⁿ, P(1)=a₀+...+aₙ. Các hệ số tổ hợp hàng n tạo thành tam giác Pascal; mỗi số ở giữa bằng tổng hai số ở hàng n−1 vì có thể chọn hoặc không chọn một phần tử cố định.</p>
-<p><strong>Điều kiện áp dụng:</strong> Chỉ áp dụng tổng hệ số bằng P(1) khi biểu thức là <strong>đa thức theo x</strong>, không tùy tiện áp dụng cho phân thức chưa xác định tại 1. Tổng hệ số/tổng chẵn lẻ cao hơn yêu cầu n=4,5 phải gắn nhãn vận dụng hoặc mở rộng.</p>
+<p>Khi khai triển dài, cộng từng hệ số là việc nặng. Nhưng tổng hệ số của đa thức <span class="arithmatex">\(P(x)\)</span> lại có một cách kiểm đơn giản: thay <span class="arithmatex">\(x=1\)</span> để mọi <span class="arithmatex">\(x^k\)</span> trở thành 1.</p>
+<p>Với đa thức <span class="arithmatex">\(P(x)=a_0+a_1x+\cdots+a_nx^n\)</span>, <span class="arithmatex">\(P(1)=a_0+\cdots+a_n\)</span>. Các hệ số tổ hợp hàng n tạo thành tam giác Pascal; mỗi số ở giữa bằng tổng hai số ở hàng <span class="arithmatex">\(n-1\)</span> vì có thể chọn hoặc không chọn một phần tử cố định.</p>
+<p><strong>Điều kiện áp dụng:</strong> Với đa thức hữu hạn, thay <span class="arithmatex">\(x=1\)</span> cho tổng các hệ số. Mẹo này cũng đúng cho tổng hữu hạn các lũy thừa nguyên của <span class="arithmatex">\(x\)</span>, kể cả số mũ âm, vì <span class="arithmatex">\(1^k=1\)</span> với mọi số nguyên <span class="arithmatex">\(k\)</span>. Không áp dụng tùy tiện cho phân thức không xác định tại 1 hoặc biểu thức chưa được viết thành tổng hữu hạn các lũy thừa. Đây là kiến thức mở rộng sau khai triển nhị thức.</p>
 <blockquote>
 <p><strong>TÍNH CHẤT — Tổng hệ số và tam giác Pascal (mở rộng)</strong></p>
-<p>Với <span class="arithmatex">\(P(x)=\sum_{k=0}^{n}a_kx^k\)</span>, tổng hệ số bằng <span class="arithmatex">\(P(1)\)</span>. Tam giác Pascal thỏa <span class="arithmatex">\(\binom nk=\binom{n-1}{k-1}+\binom{n-1}{k}\)</span> cho <span class="arithmatex">\(1\le k\le n-1\)</span>; nếu đếm tất cả nhóm con, <span class="arithmatex">\(\sum_k\binom nk=2^n\)</span>.</p>
+<p>Với <span class="arithmatex">\(P(x)=\sum_{k=0}^{n}a_kx^k\)</span>, tổng hệ số bằng <span class="arithmatex">\(P(1)\)</span>. Tam giác Pascal thỏa <span class="arithmatex">\(\binom nk=\binom{n-1}{k-1}+\binom{n-1}{k}\)</span> cho <span class="arithmatex">\(1\le k\le n-1\)</span>; nếu đếm tất cả nhóm con, <span class="arithmatex">\(\sum_{k=0}^{n}\binom nk=2^n\)</span>.</p>
 </blockquote>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài:</strong> Cho đa thức <span class="arithmatex">\(P(x)=(2x-1)^4\)</span>. Tính tổng tất cả hệ số của <span class="arithmatex">\(P(x)\)</span> mà không khai triển đủ.</p>
-<p><strong>Lời giải:</strong> Với một <strong>đa thức</strong> <span class="arithmatex">\(P(x)=a_0+a_1x+\cdots+a_nx^n\)</span>, thay <span class="arithmatex">\(x=1\)</span> sẽ cho <span class="arithmatex">\(P(1)=a_0+a_1+\cdots+a_n\)</span>. Vậy tổng hệ số của <span class="arithmatex">\((2x-1)^4\)</span> bằng <span class="arithmatex">\(P(1)=(2-1)^4=1\)</span>. Cách này hợp lệ với đa thức hữu hạn, không tự áp dụng cho biểu thức chứa <span class="arithmatex">\(x^{-1}\)</span>.</p>
+<p><strong>Lời giải:</strong> Với một <strong>đa thức</strong> <span class="arithmatex">\(P(x)=a_0+a_1x+\cdots+a_nx^n\)</span>, thay <span class="arithmatex">\(x=1\)</span> sẽ cho <span class="arithmatex">\(P(1)=a_0+a_1+\cdots+a_n\)</span>. Vậy tổng hệ số của <span class="arithmatex">\((2x-1)^4\)</span> bằng <span class="arithmatex">\(P(1)=(2-1)^4=1\)</span>. Cách này hợp lệ với đa thức hữu hạn. Chẳng hạn, tổng hệ số của <span class="arithmatex">\(2x^{-1}+3x\)</span> cũng bằng <span class="arithmatex">\(2+3=5\)</span>, đúng bằng giá trị tại <span class="arithmatex">\(x=1\)</span>; nhưng không áp dụng cho biểu thức không xác định tại 1.</p>
 <p><strong>Vận dụng</strong></p>
-<p>Tổng hệ số của đa thức (x+2)^5 bằng bao nhiêu?</p>
+<p>Tổng hệ số của đa thức <span class="arithmatex">\((x+2)^5\)</span> bằng bao nhiêu?</p>
 <!-- ITEM_ID: THPT-TOP19-T12; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O12; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Thay x=1: (1+2)^5=**243**.
+Thay \(x=1\): \((1+2)^5=243\).
 
 **Kiểm lỗi**
 
-Nếu cộng lẻ từng số hạng và sai, nhớ P(1) chỉ đúng khi cả đa thức được tính tại 1, không chỉ thay hệ số tổ hợp. Đọc lại **Kiến thức 3.5**, sau đó thử **Bài luyện 41** và **Bài luyện 42** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
+Nếu cộng lẻ từng số hạng và sai, nhớ thay \(x=1\) vào toàn bộ biểu thức hữu hạn đã khai triển, kể cả các thừa số hằng; không chỉ cộng các hệ số tổ hợp. Đọc lại **Kiến thức 3.5**, sau đó thử **Bài luyện 41** và **Bài luyện 42** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -12240,7 +12240,7 @@ Nếu cộng lẻ từng số hạng và sai, nhớ P(1) chỉ đúng khi cả �
 <li><strong>Quy tắc đếm:</strong> dùng <em>cộng</em> cho các trường hợp loại trừ nhau; dùng <em>nhân</em> cho một kết quả được tạo qua nhiều bước. Khi các trường hợp chồng nhau, phải loại trùng hoặc dùng phép bù.</li>
 <li><strong>Chọn hay sắp xếp:</strong> hoán vị <span class="arithmatex">\(P_n=n!\)</span> xếp tất cả <span class="arithmatex">\(n\)</span> phần tử phân biệt; chỉnh hợp <span class="arithmatex">\(A_n^k=\dfrac{n!}{(n-k)!}\)</span> khi <strong>có thứ tự</strong>; tổ hợp <span class="arithmatex">\(\binom nk=\dfrac{n!}{k!(n-k)!}\)</span> khi <strong>không xét thứ tự</strong>, với <span class="arithmatex">\(0\le k\le n\)</span>.</li>
 <li><strong>Nhị thức Newton:</strong> <span class="arithmatex">\((a+b)^n=\sum_{k=0}^{n}\binom nk a^{n-k}b^k\)</span> cho <span class="arithmatex">\(n\)</span> nguyên không âm. Khi <span class="arithmatex">\(b\)</span> âm, dấu của mỗi hạng phụ thuộc số lần chọn <span class="arithmatex">\(b\)</span>.</li>
-<li><strong>Tự kiểm:</strong> giải thích vì sao thứ tự có/không quan trọng trước khi bấm máy; tổng hệ số của <strong>đa thức</strong> <span class="arithmatex">\(P(x)\)</span> bằng <span class="arithmatex">\(P(1)\)</span>, không áp dụng mẹo này tùy tiện cho phân thức hoặc biểu thức không phải đa thức.</li>
+<li><strong>Tự kiểm:</strong> giải thích vì sao thứ tự có/không quan trọng trước khi bấm máy; tổng hệ số của <strong>đa thức</strong> <span class="arithmatex">\(P(x)\)</span> bằng <span class="arithmatex">\(P(1)\)</span>, cũng đúng với tổng hữu hạn các lũy thừa nguyên, kể cả mũ âm; không áp dụng cho biểu thức không xác định tại 1.</li>
 </ul>
 </blockquote>
 <!-- TOPIC19_APPROVED_SOURCE_END -->
