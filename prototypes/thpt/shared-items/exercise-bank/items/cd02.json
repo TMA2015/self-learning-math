@@ -63,7 +63,9 @@
     "stem": "Chứng minh \\(x^2-6x+9\\ge0\\) với mọi số thực x; khi nào xảy ra dấu bằng? Chọn phương án đầy đủ và tự giải thích trước khi đối chiếu.",
     "answer_key": "Đúng với mọi \\(x\\in\\mathbb R\\); bằng 0 khi \\(x=3\\).",
     "worked_solution": "\\(x^2-6x+9=(x-3)^2\\ge0\\) do bình phương số thực không âm; dấu bằng xảy ra khi và chỉ khi \\(x-3=0\\iff x=3\\). Đây là chứng minh bất đẳng thức bằng biểu diễn dạng bình phương.",
-    "skill_ids": [],
+    "skill_ids": [
+      "QUAD_DOUBLE_ROOT_SIGN"
+    ],
     "original_outcome_ids": [
       "TOP02-O01"
     ],
@@ -121,7 +123,9 @@
     "stem": "Cho \\(f(x)=2x^2-5x+2\\). Tìm a, \\(\\Delta\\), nghiệm và dạng phân tích thành nhân tử. Chọn phương án đầy đủ và tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(a=2,\\ \\Delta=9\\), nghiệm \\(\\frac12\\) và 2; \\(f(x)=(2x-1)(x-2)\\).",
     "worked_solution": "\\(a=2,\\ b=-5,\\ c=2\\) nên \\(\\Delta=b^2-4ac=25-16=9\\); \\(x=\\frac{5\\pm3}{4}\\in\\{\\frac12;2\\}\\). Nhân \\((2x-1)(x-2)=2x^2-5x+2\\).",
-    "skill_ids": [],
+    "skill_ids": [
+      "QUAD_SIGN"
+    ],
     "original_outcome_ids": [
       "TOP02-O02"
     ],
@@ -179,7 +183,9 @@
     "stem": "Tam thức \\(f(x)=x^2+6x+9\\) có bao nhiêu nghiệm phân biệt và \\(\\Delta\\) bằng bao nhiêu?",
     "answer_key": "\\(\\Delta=0\\); một nghiệm kép \\(x=-3\\).",
     "worked_solution": "\\(\\Delta=36-4\\cdot1\\cdot9=0\\) và \\(f(x)=(x+3)^2\\). Phương trình \\(f(x)=0\\) có một nghiệm thực phân biệt \\(x=-3\\) (nghiệm kép). Đồ thị tiếp xúc trục hoành tại \\((-3;0)\\), không đi xuyên qua trục.",
-    "skill_ids": [],
+    "skill_ids": [
+      "QUAD_DOUBLE_ROOT_SIGN"
+    ],
     "original_outcome_ids": [
       "TOP02-O02"
     ],
@@ -1057,19 +1063,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Max nguyên \\(15\\) tại \\((3;3)\\), max liên tục \\(\\frac{35}{3}\\)."
+        "text": "Giá trị lớn nhất nguyên \\(15\\) tại \\((3;3)\\), giá trị lớn nhất liên tục \\(\\frac{35}{3}\\)."
       },
       {
         "id": "B",
-        "text": "Max nguyên \\(10\\) tại \\((2;2)\\), max liên tục \\(11\\)."
+        "text": "Giá trị lớn nhất nguyên \\(10\\) tại \\((2;2)\\), giá trị lớn nhất liên tục \\(11\\)."
       },
       {
         "id": "C",
-        "text": "Max nguyên \\(11\\) tại \\((3;1)\\), max liên tục \\(\\frac{35}{3}\\) tại \\((\\frac73;\\frac73)\\)."
+        "text": "Giá trị lớn nhất nguyên \\(11\\) tại \\((3;1)\\), giá trị lớn nhất liên tục \\(\\frac{35}{3}\\) tại \\((\\frac73;\\frac73)\\)."
       },
       {
         "id": "D",
-        "text": "Max nguyên và liên tục đều bằng \\(\\frac{35}{3}\\)."
+        "text": "Giá trị lớn nhất nguyên và liên tục đều bằng \\(\\frac{35}{3}\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
