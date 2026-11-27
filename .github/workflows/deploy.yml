@@ -786,6 +786,11 @@ jobs:
             node scripts/test-thpt-release-impact.cjs --prove-w1-recovery
             git fetch --no-tags origin e8e1efe7d119fa0e37f6d80100c9583de19ad757 9b6d3a1c7b599c559ccb0c2a0fea48f12365409f 62eb09df620af13313d8a17ea74c0922ae9c61aa 731dba42d606a5bc506516fe04eea5199f6d6360
             python scripts/test-thpt-topic-w1-source-locked.py
+          elif [[ "${{ needs.release-scope.outputs.reason }}" == "OWNER_TOPIC_W5_REFRESH" ]]; then
+            node scripts/test-thpt-release-impact.cjs --prove-w5-refresh
+            git fetch --no-tags origin e60200c43dc1f38c83cbf4ec47e90dc96391eef8 6e6b89ff37f9493bef2fa951ea094110a1c7e28c 5fef4c1007d8e3d3737a5fa0483b276b2e67f457 d53155ef922d5f5f43f9f6b4c37729a7040e013f
+            python scripts/test-thpt-topic-w5-source-intake.py
+            python scripts/test-thpt-topic-w5-source-locked.py
           elif [[ "${{ needs.release-scope.outputs.reason }}" == "OWNER_TOPIC_W4_REFRESH" ]]; then
             node scripts/test-thpt-release-impact.cjs --prove-w4-refresh
             git fetch --no-tags origin 4607740d76e635a7a76dffda013ae788bdc3ff46 5acb11da0c0f30c32088b0a5d6be795fa16a9268 a1adb856defdb0005ec0362ab1779ee2eaac2047 fe70e18403a6d1dafc35b104834b0a4f568fd97c 1a3e31f43d5f0ac9e5b4c23a9b230132c4971378
@@ -833,7 +838,7 @@ jobs:
           node scripts/test-thpt-handoff-gate-v2.cjs --self-test
           node scripts/test-thpt-handoff-gate-v2.cjs
       - name: Preserve signed W2 W3 W4 W5 sources and PUBLIC_REPLAY_ONLY
-        if: needs.release-scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && needs.release-scope.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && needs.release-scope.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && needs.release-scope.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W2A_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W2B_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W3A_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W3B_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W4_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_W1_DEPLOY_RECOVERY_EXACT'
+        if: needs.release-scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && needs.release-scope.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && needs.release-scope.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && needs.release-scope.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W2A_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W2B_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W3A_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W3B_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W4_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W5_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_W1_DEPLOY_RECOVERY_EXACT'
         run: |
           git fetch --no-tags origin 7ccecad8e357319f6f432b0765630fd50625b56f a7d3d7756535cfee29f04bde86af6ab58b0a9d30 d5c44c6f4dec50a2e04e867c74bbf08aab2ba582 b73c6bea5eb02508c26faa089e9b43700f5550b0 b3d22f4d9524f812d4e92584f379f3b0575f48ed c644ae7a75dc1d02c4e2ac0d0e7ee0856df62f07
           git fetch --no-tags origin 8ff14130b995ae505978e590c4e65d9287f93342 0edada0daa8a36bcadd4317086bd0530e20ade7e b31c26c4fe630c0e362d48ed868b465bfe7f7177 5bb6e5fdb56a2d4d9d6cf749916913da2540b36f
@@ -849,7 +854,7 @@ jobs:
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: All 22 Knowledge pages and affected Golden adapter regressions
-        if: needs.release-scope.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && needs.release-scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && needs.release-scope.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && needs.release-scope.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && needs.release-scope.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W2A_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W2B_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W3A_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W3B_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W4_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_W1_DEPLOY_RECOVERY_EXACT'
+        if: needs.release-scope.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && needs.release-scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES' && needs.release-scope.outputs.reason != 'OWNER_THPT_MENU_6_PLUS_1' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_BACK_TOP_R3' && needs.release-scope.outputs.reason != 'OWNER_WRITTEN_LIBRARY_UI' && needs.release-scope.outputs.reason != 'OWNER_TOPIC01_REFRESH_CP10' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W1_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W2A_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W2B_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W3A_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W3B_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W4_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_W5_REFRESH' && needs.release-scope.outputs.reason != 'OWNER_W1_DEPLOY_RECOVERY_EXACT'
         run: |
           python scripts/test-thpt-topic-rw1-math-browser.py
           python scripts/test-thpt-topic-rw1-math-browser.py --rw2
@@ -865,6 +870,12 @@ jobs:
       - name: THPT menu 6+1 only
         if: needs.release-scope.outputs.reason == 'OWNER_THPT_MENU_6_PLUS_1'
         run: python scripts/test-math-lab-25-browser.py --menu-only
+      - name: W5 CĐ19–22 refresh only
+        if: needs.release-scope.outputs.reason == 'OWNER_TOPIC_W5_REFRESH'
+        run: |
+          node scripts/assemble-thpt-site.cjs
+          python scripts/test-thpt-topic-rw1-math-browser.py --topic-w5-refresh
+          python scripts/test-thpt-topic-w5-golden-browser.py --w5-refresh
       - name: W4 CĐ16–18 and two shared public items only
         if: needs.release-scope.outputs.reason == 'OWNER_TOPIC_W4_REFRESH'
         run: |

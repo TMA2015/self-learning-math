@@ -6,23 +6,31 @@ import http.server
 import pathlib
 import re
 import threading
+import sys
+import html
 
 from playwright.sync_api import sync_playwright, expect
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-BUILD = ROOT / "site-thpt-preview"
+REFRESH = "--w5-refresh" in sys.argv
+BUILD = ROOT / ("site" if REFRESH else "site-thpt-preview")
+class ProjectHandler(http.server.SimpleHTTPRequestHandler):
+    def translate_path(self,p):
+        prefix="/self-learning-math"
+        if REFRESH and p.startswith(prefix+"/"): p=p[len(prefix):]
+        return super().translate_path(p)
 assert BUILD.is_dir(), "THPT MkDocs compiled tree required"
 server = http.server.ThreadingHTTPServer(
     ("127.0.0.1", 0),
-    functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(BUILD))
+    functools.partial(ProjectHandler, directory=str(BUILD))
 )
 threading.Thread(target=server.serve_forever, daemon=True).start()
-BASE = f"http://127.0.0.1:{server.server_address[1]}/thpt-preview/chuyen-de/"
+BASE = f"http://127.0.0.1:{server.server_address[1]}"+("/self-learning-math" if REFRESH else "")+"/thpt-preview/chuyen-de/"
 SIZES = {
     "19": (3, 3, 14, 42, 7, 4),
     "20": (2, 3, 9, 20, 11, 2),
     "21": (3, 3, 8, 11, 8, 2),
-    "22": (3, 3, 13, 114, 9, 2),
+    "22": (3, 3, 13, 114, 9, 3),
 }
 PALETTE = {
     "concept": "rgb(232, 247, 242)",
@@ -60,10 +68,62 @@ def audit_visible_math(root, case: str) -> None:
     assert not leaking, ("W5_COMPLETE_VISIBLE_MATH_AUDIT", case, leaking)
 
 
+def source_math(topic,part,marker):
+    raw=(ROOT/f"docs/thpt-preview/chuyen-de/cd{topic}/{part}.md").read_text(encoding="utf-8")
+    raw=raw.split(f"<!-- TOPIC{topic}_APPROVED_SOURCE_END -->",1)[0]
+    result={}
+    def formulas(t):
+        return [re.sub(r"\s+","",html.unescape(m[0] or m[1])) for m in re.findall(r"\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]",t)]
+    if part=="luyen-tap":
+        # A signed Practice ID may precede the title, occur after it,
+        # or follow the complete stem (CĐ21 W01–W03). Pair by the exact
+        # question/solution boundary, not the ID-to-ID text interval.
+        for number,block in enumerate(raw.split("</details>")[:-1],1):
+            before,sep,solution=block.partition("<details")
+            assert sep,(topic,number,"missing source solution")
+            ids=re.findall(r"<!--\s*(?:"+marker+r"):\s*(THPT-[A-Z0-9-]+)",before)
+            titles=list(re.finditer(r"(?m)^\*\*Bài luyện\s+(\d+)\.\*\*",before))
+            assert len(ids)==len(titles)==1 and int(titles[0][1])==number,(topic,number,ids)
+            assert ids[0] not in result,(topic,ids[0],"duplicate source ID")
+            stem=before[titles[0].end():]
+            result[ids[0]]=(formulas(stem),formulas(solution),"**Các phương án:**" in stem)
+        return result
+    blocks=re.split(r"<!--\s*(?:"+marker+r"):\s*",raw)[1:]
+    for block in blocks:
+        item=re.match(r"THPT-[A-Z0-9-]+",block).group(0)
+        stem,_,solution=block.partition("<details")
+        solution=solution.split("</details>",1)[0]
+        result[item]=(formulas(stem),formulas(solution) if part=="luyen-tap" else [],"**Các phương án:**" in stem)
+    return result
+
+def assert_math(page,root,expected,label,stem_only=False):
+ # Do not invoke typeset in a test: require actual learner runtime.
+ page.wait_for_function("""({selector,stemOnly,count})=>{
+  const root=document.querySelector(selector),m=window.MathJax?.startup?.document?.math;
+  if(!root||!m)return false;
+  const visible=e=>root.contains(e)&&!e.closest('[hidden],details:not([open])')&&(!stemOnly||!e.closest('details,.g10sc-review'));
+  return [...m].filter(i=>i.typesetRoot&&visible(i.typesetRoot)).length>=count;
+ }""",arg={"selector":root,"stemOnly":stem_only,"count":len(expected)},timeout=20000)
+ got=page.locator(root).evaluate(r"""(root,stemOnly)=>{
+  const visible=e=>root.contains(e)&&!e.closest('[hidden],details:not([open])')&&(!stemOnly||!e.closest('details,.g10sc-review'));
+  const math=[...MathJax.startup.document.math].filter(i=>i.typesetRoot&&visible(i.typesetRoot)).sort((a,b)=>a.typesetRoot===b.typesetRoot?0:a.typesetRoot.compareDocumentPosition(b.typesetRoot)&Node.DOCUMENT_POSITION_FOLLOWING?-1:1).map(i=>i.math.replace(/\s+/g,''));
+  const errors=[...root.querySelectorAll('mjx-merror,mjx-container mjx-container')].filter(visible).length;
+  const missing=[...root.querySelectorAll('.arithmatex')].filter(visible).filter(e=>e.querySelectorAll('mjx-container').length!==1).length;
+  const raw=[];const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+  while(walker.nextNode()){const n=walker.currentNode,e=n.parentElement;if(e&&visible(e)&&!e.closest('mjx-container,.arithmatex,script,style,svg,code,pre')&&/\\(?:\(|\)|\[|\]|mathbb\b|setminus\b|cup\b|cap\b|frac\b|sqrt\b|ge\b|le\b|ne\b|mid\b)/.test(n.nodeValue))raw.push(n.nodeValue.trim().slice(0,120));}
+  return {math,errors,missing,raw};
+ }""",stem_only)
+ assert got["math"]==expected and got["errors"]==got["missing"]==0 and not got["raw"],(label,expected,got)
+
+
 with sync_playwright() as pw:
     for engine in ("chromium", "webkit"):
         browser = getattr(pw, engine).launch(headless=True)
         for topic, (groups, practice_groups, outcomes, item_count, replays, svg_count) in SIZES.items():
+            if REFRESH:
+                practice_math=source_math(topic,"luyen-tap","DISPLAY_ONLY_CANONICAL|CANONICAL_ITEM_ID|ITEM_ID|DISPLAY_ONLY")
+                replay_math=source_math(topic,"tu-kiem-tra","DISPLAY_ONLY_CANONICAL|REUSE_PUBLIC")
+                assert len(practice_math)==item_count and len(replay_math)==replays
             for width in (390, 820, 1440):
                 ctx = browser.new_context(viewport={"width": width, "height": 850}, device_scale_factor=1)
                 page = ctx.new_page()
@@ -163,7 +223,8 @@ with sync_playwright() as pw:
                       const label=[...base.querySelectorAll('.thpt-r4-knowledge-content-panel > p')]
                        .find(p=>/^Vận dụng[:.]?$/.test(p.querySelector(':scope > strong')?.textContent.trim()||''));
                       if(!label)throw Error('Golden Vận dụng label missing');
-                      const stem=label.nextElementSibling,details=stem?.nextElementSibling;
+                      const stem=label.nextElementSibling,after=stem?.nextElementSibling;
+                      const details=after?.matches('details.question')?after:after?.querySelector('details.question');
                       if(stem?.tagName!=='P'||!details?.matches('details.question'))
                        throw Error('Golden label → stem → details contract broken');
                       const tab=base.querySelector('.thpt-r4-knowledge-module-tab');
@@ -219,7 +280,7 @@ with sync_playwright() as pw:
                         expect(active).to_have_count(1)
                         if width == 820 and engine == "chromium":
                             audit_visible_math(active, f"CĐ{topic} Knowledge {i+1}.{j+1}")
-                            if topic == "19" and i == 2 and j in (0, 1):
+                            if not REFRESH and topic == "19" and i == 2 and j in (0, 1):
                                 repaired = active.locator('sup[data-topic-rw1-original]')
                                 assert repaired.count() >= 3, ("CĐ19_SIGNED_NEWTON_INLINE_TEX", i, j)
                                 expect(repaired.first).to_be_visible(timeout=15000)
@@ -265,7 +326,8 @@ with sync_playwright() as pw:
                     .map(label=>{let n=label.nextElementSibling,stem=0,details=0;
                       while(n&&n.tagName!=='H3'&&!n.matches('.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula')){
                         if(n.matches('p'))stem++;
-                        if(n.matches('details.question')){details++;break}
+                        const answers=n.matches('details.question')?[n]:n.matches('.topic-sgk-disclosure-pair')?[...n.querySelectorAll(':scope > details.question')]:[];
+                        if(answers.length){details+=answers.filter(d=>d.querySelector(':scope > summary')?.textContent.trim()==='Đối chiếu').length;break}
                         n=n.nextElementSibling
                       }
                       return {stem,details,wrapped:!!label.closest('.topic-w1-application')}
@@ -305,7 +367,19 @@ with sync_playwright() as pw:
                     "21": [("2", "2-1", "[P(L)=")],
                     "22": [("3", "3-1", "[R_g="), ("3", "3-2", "[IQR_g=")],
                 }
-                for module_id, subtab_id, literal in reported_display_formulas[topic]:
+                # Signed refreshed inline TeX must be verified in its actual source mode.
+                targets = reported_display_formulas[topic]
+                if REFRESH:
+                    # Legacy raw HTML oracle used two literal backslashes.
+                    # Signed inline TeX uses one. Keep both historical and
+                    # refreshed fixtures explicit; do not normalize source TeX.
+                    targets = {
+                        "19": [("3", "3-1", "[(a+b)^n="), ("3", "3-2", "[(a-b)^n="), ("3", "3-3", "[(1+r)^5=")],
+                        "20": [("2", "2-3", r"[P(A\cup B)=")],
+                        "21": [("2", "2-1", "[P(L)=")],
+                        "22": [("3", "3-1", "[R_g="), ("3", "3-2", "[IQR_g=")],
+                    }[topic]
+                for module_id, subtab_id, literal in targets:
                     page.locator('[data-topic-w1-module-tab="' + module_id + '"]').click()
                     page.locator('[data-topic-w1-subtab="' + subtab_id + '"]').click()
                     current_panel = page.locator(".thpt-r4-knowledge-content-panel:visible")
@@ -316,15 +390,41 @@ with sync_playwright() as pw:
                       .map(n => n.nodeValue.slice(0, 220))""", literal)
                     assert not orphan_literals, (engine, topic, width, subtab_id,
                                                  "OWNER_P1_RAW_DISPLAY_MATH", orphan_literals)
-                    recovered = current_panel.locator('[data-topic-rw1-display="1"][data-topic-rw1-original^="["]')
-                    assert recovered.count() >= 1, (engine, topic, width, subtab_id,
-                                                     "DISPLAY_MATH_WRAPPER_MISSING", literal)
-                    expect(recovered.first.locator("mjx-container")).to_have_count(1, timeout=12000)
-                    expect(recovered.first.locator("mjx-container").first).to_be_visible(timeout=12000)
+                    if REFRESH:
+                        source = (ROOT/f"docs/thpt-preview/chuyen-de/cd{topic}/kien-thuc.md").read_text(encoding="utf-8")
+                        heading = "### " + subtab_id.replace("-", ".") + "."
+                        section = source.split(heading, 1)[1].split("\n### ", 1)[0]
+                        normalize = lambda value: re.sub(r"\s+", "", html.unescape(value))
+                        signed = [(normalize(x or y), bool(y))
+                                  for line in section.splitlines() if line.startswith(">")
+                                  for x, y in re.findall(r"\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]", line)
+                                  if normalize(x or y).startswith(normalize(literal[1:]))]
+                        assert len(signed) == 1, (topic, subtab_id, "SIGNED_FORMULA_TARGET", signed)
+                        tex, display = signed[0]
+                        page.wait_for_function(r"""({tex, display}) => {
+                          const panel = [...document.querySelectorAll('.thpt-r4-knowledge-content-panel')]
+                            .find(e => e.getClientRects().length && !e.closest('[hidden]'));
+                          const math = window.MathJax?.startup?.document?.math;
+                          return !!panel && !!math && [...math].some(i =>
+                            i.typesetRoot && panel.contains(i.typesetRoot) &&
+                            i.typesetRoot.getClientRects().length &&
+                            !i.typesetRoot.closest('[hidden],details:not([open])') &&
+                            !i.typesetRoot.querySelector('mjx-merror') &&
+                            i.math.replace(/\s+/g,'') === tex && !!i.display === display);
+                        }""", arg={"tex": tex, "display": display}, timeout=12000)
+                    else:
+                        recovered = current_panel.locator('[data-topic-rw1-display="1"][data-topic-rw1-original^="["]')
+                        assert recovered.count() >= 1, (engine, topic, width, subtab_id,
+                                                         "DISPLAY_MATH_WRAPPER_MISSING", literal)
+                        expect(recovered.first.locator("mjx-container")).to_have_count(1, timeout=12000)
+                        expect(recovered.first.locator("mjx-container").first).to_be_visible(timeout=12000)
                 load("luyen-tap")
                 cards = page.locator("[data-topic-w1-practice-card]")
                 expect(cards).to_have_count(practice_groups)
                 expect(page.locator(".topic-w1-source-shelf")).to_be_hidden()
+                if REFRESH:
+                    expect(page.locator(".topic-w1-source-shelf > template")).to_have_count(1)
+                    assert page.locator(".topic-w1-source-shelf mjx-container").count()==0
                 grid = page.locator(".topic01-golden-grid")
                 assert len(grid.evaluate("(e)=>getComputedStyle(e).gridTemplateColumns").split()) == (1 if width <= 640 else 2)
                 modal = page.locator("[data-topic-w1-dialog]")
@@ -335,7 +435,7 @@ with sync_playwright() as pw:
                     chooser = modal.locator(".thpt-r4-modal-question-nav button")
                     group_count = chooser.count()
                     assert group_count > 0
-                    checks = list(range(group_count)) if (engine == "chromium" and width == 820) else sorted({0,group_count-1})
+                    checks = list(range(group_count)) if REFRESH or (engine == "chromium" and width == 820) else sorted({0,group_count-1})
                     for j in checks:
                         chooser.nth(j).click()
                         card = modal.locator("[data-thpt-canonical-item]")
@@ -348,8 +448,27 @@ with sync_playwright() as pw:
                         expect(details).to_have_count(1)
                         assert not details.evaluate("(e)=>e.open"), (topic,i,j,"early reveal")
                         expect(details.locator("summary")).to_have_text("📖 Đáp án / Lời giải")
+                        if REFRESH:
+                            item=card.get_attribute("data-thpt-canonical-item")
+                            stem,sol,options=practice_math[item]
+                            assert_math(page,".topic-w1-question-body",stem,(topic,engine,width,item,"Practice stem"),True)
                         details.locator("summary").click()
                         expect(details.locator(".thpt-r4-formative-reveal")).to_be_visible()
+                        if REFRESH:
+                            assert_math(page,".topic-w1-question-body .thpt-r4-formative-reveal",sol,(topic,engine,width,item,"Practice solution"))
+                            if topic=="21" and item=="THPT-TOP21-W01":
+                                table=details.locator("table")
+                                expect(table).to_have_count(1)
+                                expect(table).to_be_visible()
+                                expect(table.locator("tr")).to_have_count(4)
+                                rows=table.locator("tr").evaluate_all("els=>els.map(r=>[...r.cells].map(c=>c.textContent.trim()))")
+                                assert rows==[["","Đeo kính","Không đeo kính","Tổng"],["Thuộc C","15","9","24"],["Không thuộc C","18","18","36"],["Tổng","33","27","60"]],(topic,item,"signed table cells",rows)
+                            if j==0:
+                                details.locator("summary").click()
+                                expect(details.locator(".thpt-r4-formative-reveal")).to_be_hidden()
+                                details.locator("summary").click()
+                                expect(details.locator(".thpt-r4-formative-reveal")).to_be_visible()
+                                assert_math(page,".topic-w1-question-body .thpt-r4-formative-reveal",sol,(topic,engine,width,item,"Practice reopen"))
                         if width == 820 and engine == "chromium":
                             audit_visible_math(details, f"CĐ{topic} Practice solution {j+1}")
                     total_seen += group_count
@@ -359,9 +478,12 @@ with sync_playwright() as pw:
                 load("tu-kiem-tra")
                 selfcheck = page.locator("[data-topic-w1-selfcheck]")
                 expect(selfcheck).to_be_visible()
+                if REFRESH:
+                    expect(page.locator(".topic-w1-selfcheck-source-shelf > template")).to_have_count(1)
+                    assert page.locator(".topic-w1-selfcheck-source-shelf mjx-container").count()==0
                 jump = selfcheck.locator(".g10sc-jump-button")
                 expect(jump).to_have_count(replays)
-                questions = list(range(replays)) if (engine == "chromium" and width == 820) else sorted({0,replays-1})
+                questions = list(range(replays)) if REFRESH or (engine == "chromium" and width == 820) else sorted({0,replays-1})
                 for j in questions:
                     jump.nth(j).click()
                     body = selfcheck.locator(".g10sc-body")
@@ -372,10 +494,22 @@ with sync_playwright() as pw:
                     expect(body.locator(":scope > .topic-w1-stem-label strong")).to_have_text("Đề bài")
                     solution = body.locator("[data-topic-w1-solution]")
                     expect(solution).to_be_hidden()
+                    if REFRESH:
+                        item=body.get_attribute("data-thpt-canonical-item")
+                        stem,_,options=replay_math[item]
+                        assert_math(page,"[data-topic-w1-selfcheck] .g10sc-rich",stem,(topic,engine,width,item,"Replay stem"))
                     body.get_by_role("button",name="Đối chiếu",exact=True).click()
                     expect(solution).to_be_visible()
                     assert solution.get_attribute("data-thpt-canonical-solution") == body.get_attribute("data-thpt-canonical-item"), (topic,j,"wrong canonical answer")
                     assert solution.locator(".g10sc-error").count()==0, (topic,j,"public solution retrieval failed")
+                    if REFRESH:
+                        assert_math(page,"[data-topic-w1-solution]",practice_math[item][1],(topic,engine,width,item,"Replay solution"))
+                        if j==0:
+                            body.get_by_role("button",name="Ẩn đối chiếu",exact=True).click()
+                            expect(solution).to_be_hidden()
+                            body.get_by_role("button",name="Đối chiếu",exact=True).click()
+                            expect(solution).to_be_visible()
+                            assert_math(page,"[data-topic-w1-solution]",practice_math[item][1],(topic,engine,width,item,"Replay reopen"))
                     if width == 820 and engine == "chromium":
                         audit_visible_math(solution, f"CĐ{topic} SelfCheck solution {j+1}")
                 assert not errors, (engine,topic,width,"uncaught JS",errors)
