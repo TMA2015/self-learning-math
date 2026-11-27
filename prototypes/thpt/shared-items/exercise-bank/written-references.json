@@ -1671,11 +1671,13 @@
   {
     "item_id": "THPT-G12-CHI-B01-W01",
     "source": {
-      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
       "heading_id": "THPT-G12-CHI-B01-W01",
       "active_solution_delta_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
       "delta_review_blob": "9f0466b7ded7d2a7441fdc55768949536f7a680e",
-      "effective_solution_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562"
+      "effective_solution_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
+      "historical_base_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "revision_scope": "EXISTING_REVIEWED_ACTIVE_FULL_SOURCE_BINDING_NO_CONTENT_CHANGE"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1690,16 +1692,19 @@
       "G12-B01-EXTREMA_SIGN_CHANGE"
     ],
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B01-W01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "Delta05: active full canonical blob is the sole resolver for stem, answer, complete five-step solution, original /4 rubric and D6. Historical R00 + targeted independent receipt retained; CĐ10 stale display is projection-only and must regenerate from this source at cutover; show after self-attempt, no Mastery. Historical content version unchanged."
   },
   {
     "item_id": "THPT-G12-CHI-B01-W02",
     "source": {
-      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
       "heading_id": "THPT-G12-CHI-B01-W02",
       "active_solution_delta_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
       "delta_review_blob": "9f0466b7ded7d2a7441fdc55768949536f7a680e",
-      "effective_solution_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562"
+      "effective_solution_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
+      "historical_base_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "revision_scope": "EXISTING_REVIEWED_ACTIVE_FULL_SOURCE_BINDING_NO_CONTENT_CHANGE"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1714,7 +1719,8 @@
       "G12-B01-DOMAIN_INTERVALS"
     ],
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B01-W02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "Delta05: active full canonical blob is the sole resolver for stem, answer, complete five-step solution, original /4 rubric and D6. Historical R00 + targeted independent receipt retained; CĐ10 stale display is projection-only and must regenerate from this source at cutover; show after self-attempt, no Mastery. Historical content version unchanged."
   },
   {
     "item_id": "THPT-G12-CHI-B02-W01",
@@ -5261,11 +5267,14 @@
   {
     "item_id": "THPT-G10-CHIX-W26-01",
     "source": {
-      "blob": "3207c7522f220db8068d7b8d037ba49c2a12328c",
+      "blob": "efe4521854ede2a43628f058f81ce4566ce80049",
       "heading_id": "THPT-G10-CHIX-W26-01",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
-      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-ix.md",
-      "previous_reviewed_blob": "fe0c6486eef27392d116c076d848c372c95ec881"
+      "revision_scope": "DELTA05_CANONICAL_CUSTODY_AND_MODEL_ASSUMPTION_SCOPED_AUTHOR_CHECK",
+      "path": "prototypes/thpt/shared-items/exercise-bank/written/THPT-G10-CHIX-W26-01.md",
+      "previous_reviewed_blob": "fe0c6486eef27392d116c076d848c372c95ec881",
+      "previous_candidate_blob": "3207c7522f220db8068d7b8d037ba49c2a12328c",
+      "historical_reviewed_blob": "51c5f78e41d569fff11070e0f48f3ab25f58b587",
+      "historical_receipt_blob": "05c3dd40a094b4b34c28b48cc72d1752c21190fe"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-ix.md",
@@ -5282,9 +5291,9 @@
       "G10-B26-CLASSICAL_RATIO",
       "G10-B26-COMPLEMENT"
     ],
-    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIX-W26-01.DELTA03",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "CP119 confirmed need to state independent trials; historical source preserved, candidate wording needs scoped Delta before acceptance. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIX-W26-01.DELTA03.DELTA05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "Delta05: one canonical source outside docs; historical website restored exactly. Independent/equiprobable model explicit; classical count 12/2/10, probabilities 1/6 and 5/6; rubric /6 unchanged, defined N/S, D6 table; no future-grade probability formula needed. Scoped source math/PED check only, final Q18/cutover pending."
   },
   {
     "item_id": "THPT-G10-CHIX-W27-ANCHOR-01",
