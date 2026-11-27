@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "DELTA_WAVE_01_SCOPED_SOURCE_FIXES_AND_STRUCTURAL_INVENTORY_FULL_ACCEPTANCE_PENDING",
+  "academic_audit": "DELTA_WAVE_02_GLOBAL_ID_JOIN_COMPLETE_26_WRITTEN_SOURCE_DELTAS_FULL_ACCEPTANCE_PENDING",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "92ea69333bd6e6fc8fa1d856dace57fbf538b2cc",
+    "as_of_commit": "21268eb3b0e66127d17415760f8095c8f58abce9",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Complete cross-shard exact ID/placement reconciliation; verify canonical skill taxonomy for 38 missing mappings, not outcome substitutions; scoped Written/interaction Delta and substantive Q01–Q18 audit, then authorized release handoff.",
-    "status": "DELTA_AUDIT_IN_PROGRESS_NOT_ACCEPTED",
+    "next": "Resolve 38 canonical skill IDs via authoritative taxonomy/owner decision for extension (16 confirmed outcome groups); continue unresolved Written source custody/PED and scoped Delta, X-G.5 full notation, Q01–Q18 acceptance. No cutover.",
+    "status": "DELTA_AUDIT_WAVE02_GLOBAL_ID_RECONCILED_SKILL_AND_SCOPED_ACCEPTANCE_PENDING",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,75 +112,90 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "delta_audit_wave01",
-    "delta_audit_wave01": {
-      "baseline": "f44755f6fe15fa4b99ac84164c65a42de2302ca1",
+    "current_checkpoint_key": "delta_audit_wave02",
+    "delta_audit_wave02": {
+      "baseline": "bb5073e0a82e5c6c52bc94bbd163b09c494d587a",
       "inventory": {
         "interactive_shards": 61,
-        "interactive_records": 2214,
-        "written_records": 325,
-        "total_records": 2539,
+        "interactive_unique": 2214,
+        "written_unique": 325,
+        "total_unique": 2539,
         "placement_shards": 26,
         "placement_rows": 4301,
-        "counts_by_interactive_group": {
-          "topic_including_knowledge_first_try": 832,
-          "g10": 496,
-          "g11_including_supplement": 476,
-          "g12_including_supplements": 410
-        },
-        "missing_skill_ids": 38,
-        "missing_difficulty": 0,
-        "missing_hints": 0,
-        "unresolved_choice_key_reference": 0,
-        "legacy_self_compare": 0,
-        "auto_grade_enabled": 0,
-        "within_shard_duplicate_ids": 0,
-        "within_placement_shard_duplicate_collection_order": 0,
-        "limitation": "Structural counts across exact snapshot shards, not global distinct-ID proof; cross-shard duplicate/orphan join still pending. Dollar delimiter scan is not full notation QA. Written bodies not exhaustively re-reviewed."
+        "global_duplicate_ids": 0,
+        "unresolved_placement_ids": 0,
+        "unplaced_items": 0,
+        "evidence": "Exact snapshot shard ID sets emitted as lossless prefix/suffix ranges; reconstructed full set with counts, checked both placement groups (1079/3222 rows, 830/2229 distinct IDs; first covers all 310 absent from second); no orphan, union=2539. All ID sets preserved by subsequent Written-only changes."
       },
-      "delta": {
-        "revised_written_ids": [
-          "THPT-G12-YE-W01",
-          "THPT-G12-YE-W06",
-          "THPT-G12-YE-W08",
-          "THPT-G12-YE-W14",
-          "THPT-G12-YE-W16"
-        ],
-        "old_source_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
-        "candidate_source_blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
-        "canonical_path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
-        "written_ref_blob": "7557461cbdfefda78e0279d5525af31727ece3b3",
-        "source_scope_verification": "All text outside five Written sections byte-identical; exact source references updated; historical public projection unchanged, regenerate after approval.",
-        "revised_interactive": [
-          "THPT-TOP15-P25",
-          "THPT-G12-YE-M07",
-          "THPT-G12-YE-M08"
-        ],
-        "cd15_blob": "cde6095b27d800efcff7f298d310714f5ef124cb",
-        "g12_yearend_blob": "41bf1330913281fb29c1f4040a77a05a95e3a496",
-        "classification": "P25 condition clarification and Written changes (including rubric/assumptions): scoped DELTA_C review; M07/M08 equivalent notation only DELTA_B. No new PASS."
+      "skill_mapping": {
+        "reviewed": 38,
+        "confirmed_outcome_groups": 16,
+        "verified_canonical_skill_codes_added": 0,
+        "pending": 38
       },
-      "historical_pass_reconciled": [
-        {
-          "scope": "G12 year-end R00",
-          "source": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
-          "receipt": "3b5b7f70e3b68895fd976a265ae6f454f774e1cc",
-          "pr": 735
-        },
-        {
-          "scope": "G12 experience R01",
-          "source": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
-          "receipt": "b765e732fa8049482936dbededfafd7b9eb99341",
-          "pr": 733,
-          "provenance": "owner-pasted independent review transcription"
-        }
-      ],
-      "limitations": "No full academic/PED/Q18 acceptance, no fresh S1 inspection, no runtime/browser QA, no protected runtime changes. Do not reopen historical source PASS due to obsolete pending header."
+      "written_delta": {
+        "revised": 26,
+        "ids": [
+          "THPT-G12-B14-W07",
+          "THPT-G11-CHVIII-B28-W01",
+          "THPT-G11-CHVIII-B29-W01",
+          "THPT-G11-CHVIII-B29-W03",
+          "THPT-G12-B18-W01",
+          "THPT-G12-B18-W03",
+          "THPT-G12-B18-W05",
+          "THPT-G12-B18-W07",
+          "THPT-G12-B19-W03",
+          "THPT-G12-B19-W04",
+          "THPT-G12-B19-W05",
+          "THPT-G11-SUPP-E01-W01",
+          "THPT-G11-SUPP-E01-W02",
+          "THPT-G11-SUPP-E01-W03",
+          "THPT-G11-SUPP-E02-W01",
+          "THPT-G11-SUPP-E02-W02",
+          "THPT-G11-SUPP-E02-W03",
+          "THPT-G11-YR-TRIG-W01",
+          "THPT-G11-YR-DERIV-W01",
+          "THPT-G11-YR-SPACE-W01",
+          "THPT-G11-YR-STAT-W01",
+          "THPT-G12-EXP01-W04",
+          "THPT-G12-EXP01-W05",
+          "THPT-G12-EXP02-W02",
+          "THPT-G12-EXP02-W04",
+          "THPT-G12-EXP02-W05"
+        ],
+        "sources": [
+          {
+            "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
+            "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a"
+          },
+          {
+            "path": "prototypes/thpt/content-drafts/G12_SGK_XP_TWO_EXPERIENCES_R01_CANONICAL_20261103.md",
+            "blob": "6f0a17cdc229e4b821f9ca80aef9e9ede0e6cb14"
+          },
+          {
+            "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+            "blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
+          },
+          {
+            "path": "prototypes/thpt/review-packets/Temp_THPT_G11_CHVIII_B28_B30_PUBLIC_D1_D6_AUTHOR_REVIEW_R00_20261101.md",
+            "blob": "6637d7661bcc2ac982c19e352d7acc3ba11748c9"
+          },
+          {
+            "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+            "blob": "24e463e61c6cc4f78dca45c1f19661ffed6786eb"
+          }
+        ],
+        "written_ref_blob": "58eae2958dfc5761a8a9acc42c815bd742d59788",
+        "verified_outside_scope_unchanged": true,
+        "retained": "THPT-G12-EXP01-W01: review confirms distinct verification demand; unchanged, historical PASS.",
+        "limitations": "Targeted author math review only; no fresh S1 direct inspection, no independent verdict or scoped Q18/PED acceptance; other historical Written findings remain."
+      },
+      "protected_scope": "Only five existing canonical source paths and Written reference index changed; no item/placement ID or runtime, no Mastery, no Firebase, no release."
     },
     "previous_manifest": {
-      "commit": "f44755f6fe15fa4b99ac84164c65a42de2302ca1",
-      "blob": "f6e38b83e05d8ea13921eaaaa533f6692d857fbc",
-      "key": "exercise_candidate_g12_yearend_and_sequence_closure"
+      "commit": "bb5073e0a82e5c6c52bc94bbd163b09c494d587a",
+      "blob": "2da993708380c127ac125aace00ddde4cdd79ac9",
+      "key": "delta_audit_wave01"
     }
   },
   "pending_review": {
@@ -233,7 +248,26 @@
         "exercise_completion_cp123_cp125",
         "exercise_completion_cp129"
       ],
-      "note": "38 reported unresolved mappings in completed CD01–16 wave. Older broader crosswalk findings in coverage_depth_cp118 and coverage_depth_cp119 are preserved; do not treat this list as whole-bank total or invent skill IDs."
+      "note": "All 38 missing-skill IDs checked against exact item original_outcome_ids and placements (16 distinct outcomes). CĐ02/03/05/09 historical CP122/125/129 explicitly hold extension codes; do not invent IDs or treat outcome IDs as verified skill codes. TOP05-P07 matches B15_OUT_03 task, but this is existing unresolved outcome-to-skill alias, not verified taxonomy code. Need authoritative current registry mapping or owner-authorized extension to same taxonomy, no Mastery activation.",
+      "status": "38_OUTCOME_MAPPINGS_VERIFIED_CANONICAL_SKILL_CODES_UNRESOLVED",
+      "verified_outcome_groups": {
+        "TOP02-O01": "Đổi chiều bất phương trình một ẩn",
+        "TOP03-O02": "Biện luận phương trình bậc nhất theo tham số",
+        "TOP03-O03": "Phương trình tích và nghiệm phân biệt",
+        "TOP03-O04": "Phương trình bậc hai/biệt thức",
+        "TOP03-O05": "Phương trình phân thức và điều kiện",
+        "TOP03-O06": "Phương trình giá trị tuyệt đối",
+        "TOP03-O11": "Đặt ẩn phụ x² và lọc nghiệm",
+        "TOP05-O04": "Điểm thuộc đồ thị",
+        "TOP05-O07": "Chẵn lẻ và miền đối xứng",
+        "TOP05-O08": "Chu kỳ hàm số và giới hạn suy từ mẫu",
+        "TOP05-O09": "Dịch đứng và cực trị",
+        "TOP05-O11": "Phản xạ qua trục",
+        "TOP05-O12": "Co giãn đứng",
+        "TOP05-O13": "Co giãn ngang",
+        "TOP05-O14": "Giá trị tuyệt đối trong/ngoài hàm",
+        "TOP09-O32": "Vi phân xấp xỉ tuyến tính"
+      }
     },
     "scoped_academic_delta": [
       {
@@ -333,7 +367,8 @@
         "THPT-G11-YR-SPACE-W01",
         "THPT-G11-YR-STAT-W01"
       ],
-      "note": "Refer to exact per-item author_review_note; preserve source PASS snapshot; Delta review pending."
+      "note": "Ten notes addressed in existing canonical source, exact unchanged-outside-target verification. Scoped Delta PED/Q18 and regenerate projection pending; historic PASS preserved.",
+      "candidate_source_blob": "e4ea892c21ffd036c846fb7f5702e033187c410a"
     },
     "g12_experience_written": {
       "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
@@ -345,7 +380,8 @@
         "THPT-G12-EXP02-W04",
         "THPT-G12-EXP02-W05"
       ],
-      "note": "Historical R01 Q18 discrepancy CLOSED by exact receipt b765e732fa8049482936dbededfafd7b9eb99341 (#733). Six scoped author notes remain; historical PASS preserved."
+      "note": "Five notes addressed; EXP01-W01 retained historical source (distinct double verification from A01; not independent evidence). Historical R01 Q18 correction #733 remains PASS. Scoped Delta PED/Q18 and projection pending.",
+      "candidate_source_blob": "6f0a17cdc229e4b821f9ca80aef9e9ede0e6cb14"
     },
     "g12_yearend_written": {
       "source_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -359,7 +395,11 @@
       "note": "Historical R00 PASS reconciled (#735). Five notes addressed in canonical source; targeted math verified, scoped PED/Q18 and projection regeneration pending. Do not repeat historical reviewer audit.",
       "candidate_source_blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
       "receipt": "3b5b7f70e3b68895fd976a265ae6f454f774e1cc"
-    }
+    },
+    "sgk_g11_vii_ix_written_delta": "G11 ChVIII B28-W01/B29-W01/B29-W03 corrected in exact public source; candidate 6637d7661bcc2ac982c19e352d7acc3ba11748c9, historical reviewed blob preserved; targeted PED/Q18 and projection pending.",
+    "sgk_g12_chvi_written_delta": "Seven B18/B19 Written notes addressed in existing canonical source c2e57e310fbc5253a0657b1b04c840890eaa29a5; targeted PED/Q18 and projection pending. B19-W05 repeats same example, practice only.",
+    "g12_b14_w07_delta": "Prior corrected stem verified in 4891b4b2; further aligned rubric and reasoning on 24e463e61c6cc4f78dca45c1f19661ffed6786eb; targeted PED/Q18 and projection pending.",
+    "remaining_written_source_custody": "G10 CHIV W09/W10/W11-ANCHOR historical source 18c29d7f60448a0a52d5b9f5aa5002e0f331defd readable by blob but canonical path from #986 not present on current branch; locate active owner source, do not create duplicate. G10 W26-01 source fe0c6486eef27392d116c076d848c372c95ec881 is existing learner HTML; independence assumption confirmed, do not edit live projection during migration. W08-FORCE-TR01 pipe-split rubric projection and W25-01/RD1-10 reused polynomial remain pending. Other carried scoped delta items need actual verification, not automatic closure."
   },
   "checkpoint_policy": "Replace current_progress and current checkpoint, do not append cumulative report trees. Record detailed scoped evidence in existing issue/PR or prior immutable Git snapshot; preserve exact commit/path/blob and relevant key. Carry forward unresolved issues only; retain older history pointer. Never infer PASS, authorize cutover or change protected runtime from compaction."
 }
