@@ -24292,6 +24292,78 @@
         "limitations": "No direct new SGK PDF read, no independent NotebookLM PASS or browser/render/runtime QA. Substantive W03 change awaits scoped delta review."
       },
       "handoff": "No merge/deploy or change to protected runtime, Golden, private RD1, Mastery, Final Submit or Firebase. Preserve prior skill metadata gaps CD02–05 outside scope. Stop after CD08; next CD09–11 when owner directs."
+    },
+    "exercise_completion_cp129": {
+      "scope": "Owner-directed CD09 authoring candidate; CD10–11 not started",
+      "baseline": "fc24897d399e5d4635086093b4b8f313caeaf0db",
+      "head_before_manifest": "790234ee35cdaabda7be711fcfcff9982406153a",
+      "standard": "Q01–Q18 v3.2.0 X-G.5/X-G.6 #1091",
+      "status": "AUTHORING_BANK_CD09_CONTENT_CANDIDATE_SKILL_MAPPING_PENDING_RELEASE_PENDING",
+      "report": {
+        "topic": "CD09",
+        "title": "Đạo hàm",
+        "unique": 136,
+        "interactive": 122,
+        "written": 14,
+        "practice": 109,
+        "practice_interactive": 95,
+        "vandung": 32,
+        "vandung_reuses": 5,
+        "replay": 32,
+        "placements": 173,
+        "choices": 488,
+        "outcomes": 32,
+        "levels": {
+          "RECOGNIZE": 18,
+          "UNDERSTAND": 33,
+          "APPLY": 58,
+          "SYNTHESIS": 13
+        },
+        "groups": [
+          21,
+          14,
+          21,
+          26,
+          27
+        ],
+        "skill_mapping_pending": [
+          "THPT-TOP09-P32",
+          "THPT-TOP09-KFT32"
+        ],
+        "cumulative_unique_cd01_cd09": 649,
+        "math": "Derivative by definition and rules, one-sided and endpoint conditions, tangent, velocity/acceleration and units, second derivatives, linear approximation; O32 is topic extension, not promoted to SGK Core. 14 Written solutions and rubrics revised, same IDs, prior sources preserved; 5 x /7 and 9 x /4. O32 second practice reuses existing KFT32."
+      },
+      "files": {
+        "placements/cd09.json": "eb9b634ad8d89b063be9fc542af8a4fd9a94eeca",
+        "placements/topic-knowledge-first-try.json": "d826e320bbe53b6ed377e14a7bc1f59dd826628c",
+        "items/topic-knowledge-first-try.json": "190a48271be22d90d56d51032d725e5fa22f2456",
+        "items/g11-chix.json": "1249dcbc72be17ef6943d23798bac3b8fc2f1cd7",
+        "items/cd09.json": "9624e9db57a200f734f51111d9f6bdc7ba4009bc",
+        "written-references.json": "39a982ad65e3e26c95316e2c7a5d5ef23e25c2f8"
+      },
+      "sources": [
+        {
+          "path": "prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md",
+          "prior": "f249949be3b254a29c8859301b6c4904e636c505",
+          "blob": "d345a9e6d6a19444ad065b8c3bd86aa6de3d01cf",
+          "sections": 5,
+          "outside_unchanged": true
+        },
+        {
+          "path": "prototypes/thpt/review-packets/Temp_THPT_G11_CHIX_B31_B33_PUBLIC_D1_D6_AUTHOR_REVIEW_R00_20261101.md",
+          "prior": "3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0",
+          "blob": "a717d86712a7a7ab501f863f046949f9bfe8fe34",
+          "sections": 9,
+          "outside_unchanged": true
+        }
+      ],
+      "qa": {
+        "choice_schema": "122/122 four distinct option texts, key resolves, no production auto_grade",
+        "outcome_coverage": "32/32 ≥2 practice, 1 Vận dụng, 1 public replay; all 173 references resolved",
+        "outside_shared_shards": "Structural equality outside CD09 verified",
+        "limitations": "No fresh direct SGK PDF audit, independent NotebookLM verdict, browser or runtime QA; 2 skill mappings unresolved; no full Q18/RELEASE clearance."
+      },
+      "handoff": "Continue CD10–11; no merge/deploy or edits to runtime, RD1, Final Submit, Mastery, Firebase or Golden UI."
     }
   }
 }
