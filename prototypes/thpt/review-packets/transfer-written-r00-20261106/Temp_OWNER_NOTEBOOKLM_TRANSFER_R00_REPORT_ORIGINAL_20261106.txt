@@ -1,0 +1,191 @@
+# BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP
+
+**Gói kiểm toán:** `SLM-THPT-TRANSFER-WRITTEN-20261106-R00`  
+**Nội dung:** 5 bài tự luận chuyển giao thực tế mới (Written Transfer), 5 ví dụ hướng dẫn D2, 5 câu Tự thử chẩn đoán PED6, 5 thẻ D6 và 5 hình minh họa D5 trong PDF đính kèm (Toán 10 Chương IV, VII & Toán 11 Chương IX).  
+**Bộ chuẩn áp dụng duy nhất:** `SLM-THPT-QUALITY-ONE v1.2.0 (Q01–Q18)`  
+**Đơn vị thực hiện:** NotebookLM Independent Reviewer (Phản biện học thuật & Sư phạm độc lập)  
+**Ngày thực hiện:** 06/11/2026  
+
+---
+
+### I. NGUỒN CƠ SỞ VÀ SOURCE RECEIPT (SOURCE RECEIPT)
+
+#### 1. Bộ Permanent Sources THPT v2.1 (Đã đối chiếu 5 tài liệu quy phạm)
+1. `01_THPT_MASTER_PLAN_v2.1.md`
+2. `02_THPT_NOTEBOOKLM_INDEPENDENT_REVIEW_RULES_v2.1.md`
+3. `03_THPT_ACADEMIC_SOURCES_AND_DEPTH_AUDIT_v2.1.md`
+4. `04_THPT_GOLDEN_LEARNING_ARCHITECTURE_v2.1.md`
+5. `05_THPT_CANONICAL_EXERCISE_AND_ID_CONTRACT_v2.1.md`
+
+#### 2. Nguồn gốc SGK & SBT S1 (KNTT Toán 10 & Toán 11)
+* **Toán 10 Tập Một (KNTT):** SGK trang in 52–54 (Bài 8 Hợp lực, vận tốc sông); SBT trang in 50–51 (Bài 4.12 Lực cân bằng). PDF SHA256: `3cbb335780dc0f2f4a034a55eb542e3bbe67693412b10a90ca1dffe9ea50eac2` / SBT SHA256: `2b1b98665b2c5cccb99f6699a43cbf71b8b2dfc63bdaec759a7b1c51778e2fa1`.
+* **Toán 10 Tập Hai (KNTT):** SGK trang in 56–57 (Bài 7.24 Tín hiệu & LORAN); SBT trang in 46 (Bài 7.35 Hầm nửa elip) & trang in 50 (Bài 7.61 Elip ứng dụng). PDF SHA256: `ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6` / SBT SHA256: `3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7`.
+* **Toán 11 Tập Hai (KNTT):** SGK trang in 96–98 (Bài 9.33 Vận tốc & Quãng đường chuyển động bậc ba); SBT trang in 60 (Bài 9.16 Vận tốc cực đại). PDF SHA256: `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491` / SBT SHA256: `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`.
+
+#### 3. Tệp học liệu đính kèm kiểm toán
+* `Temp_G10_CHIV_FORCE_RIVER_TRANSFER_R00_20261106.md` (21,015 bytes) — Mô-đun Lực & Dòng nước.
+* `Temp_G10_CHVII_ELLIPSE_HYPERBOLA_TRANSFER_R00_20261106.md` (21,265 bytes) — Mô-đun Nửa Elip & Định vị Hypebol LORAN.
+* `Temp_G11_CHIX_MOTION_TRANSFER_R00_20261106.md` (14,278 bytes) — Mô-đun Chuyển động Bậc ba, Vận tốc Cực đại & Quãng đường.
+* `Temp_D5_FIGURES_PDF_R00_20261106.pdf` (5 trang PDF minh họa D5).
+
+#### 4. Bảo toàn Snapshot Lịch sử
+* **Bảo toàn 100% 238 bài tự luận canonical** đã PASS (G10: 31, G11: 83, G12: 124). Không đánh giá lại hoặc làm thay đổi các câu cũ.
+* Các tệp hình minh họa D5 được đối chiếu trực tiếp từ tệp PDF `Temp_D5_FIGURES_PDF_R00_20261106.pdf` đính kèm (không yêu cầu tệp SVG làm nguồn NotebookLM).
+
+---
+
+### II. MA TRẬN ITEM – OUTCOME – ROLE (15 CANDIDATE ITEMS MỚI)
+
+| STT | ITEM_ID Canonical | ROLE | PRIMARY OUTCOME | SECONDARY OUTCOME | Vị trí Placement |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **1** | `THPT-G10-CHIV-TRY-FORCE-TR01` | `SGK_PRE_CORE_FIRST_TRY` (unscored) | `G10-B08-PARALLELOGRAM` | `G10-B11-GEOMETRIC_DOT` | G10/ChIV/B11 (Sau B11) |
+| **2** | `EX-G10-B08-FORCE-TR01` | `SGK_D2_WORKED_EXAMPLE` | `G10-B08-PARALLELOGRAM` | `G10-B11-GEOMETRIC_DOT` | G10/ChIV/B11 (Sau B11) |
+| **3** | `THPT-G10-CHIV-W08-FORCE-TR01` | `SGK_WRITTEN` (TRANSFER) | `G10-B08-PARALLELOGRAM` | `G10-B11-GEOMETRIC_DOT` | G10/ChIV/B11 (Sau B11) |
+| **4** | `THPT-G10-CHIV-TRY-RIVER-TR01` | `SGK_PRE_CORE_FIRST_TRY` (unscored) | `G10-B10-OPERATIONS` | `G10-B08-OPPOSITE-SUBTRACTION` | G10/ChIV/B10 |
+| **5** | `EX-G10-B10-RIVER-TR01` | `SGK_D2_WORKED_EXAMPLE` | `G10-B10-OPERATIONS` | `G10-B08-OPPOSITE-SUBTRACTION` | G10/ChIV/B10 |
+| **6** | `THPT-G10-CHIV-W10-RIVER-TR01` | `SGK_WRITTEN` (TRANSFER) | `G10-B10-OPERATIONS` | `G10-B08-OPPOSITE-SUBTRACTION` | G10/ChIV/B10 |
+| **7** | `THPT-G10-CHVII-TRY-ELLIPSE-TR01` | `SGK_PRE_CORE_FIRST_TRY` (unscored) | `G10-B22-ELLIPSE_PARAMETERS` | `G10-B22-CONIC_MODEL` | G10/ChVII/B22 |
+| **8** | `EX-G10-B22-ELLIPSE-TR01` | `SGK_D2_WORKED_EXAMPLE` | `G10-B22-ELLIPSE_PARAMETERS` | `G10-B22-CONIC_MODEL` | G10/ChVII/B22 |
+| **9** | `THPT-G10-CHVII-W22-ELLIPSE-TR01` | `SGK_WRITTEN` (TRANSFER) | `G10-B22-ELLIPSE_PARAMETERS` | `G10-B22-CONIC_MODEL` | G10/ChVII/B22 |
+| **10** | `THPT-G10-CHVII-TRY-HYPERBOLA-TR01` | `SGK_PRE_CORE_FIRST_TRY` (unscored) | `G10-B22-HYPERBOLA_PARAMETERS` | `G10-B22-CONIC_MODEL` | G10/ChVII/B22 |
+| **11** | `EX-G10-B22-HYPERBOLA-TR01` | `SGK_D2_WORKED_EXAMPLE` | `G10-B22-HYPERBOLA_PARAMETERS` | `G10-B22-CONIC_MODEL` | G10/ChVII/B22 |
+| **12** | `THPT-G10-CHVII-W22-HYPERBOLA-TR01` | `SGK_WRITTEN` (TRANSFER) | `G10-B22-HYPERBOLA_PARAMETERS` | `G10-B22-CONIC_MODEL` | G10/ChVII/B22 |
+| **13** | `THPT-G11-CHIX-TRY-MOTION-TR01` | `SGK_PRE_CORE_FIRST_TRY` (unscored) | `G11-B31-INSTANT_VELOCITY` | `G11-B33-ACCELERATION` | G11/ChIX/B33 |
+| **14** | `EX-G11-B33-MOTION-TR01` | `SGK_D2_WORKED_EXAMPLE` | `G11-B33-ACCELERATION` | `G11-B31-INSTANT_VELOCITY` | G11/ChIX/B33 |
+| **15** | `THPT-G11-CHIX-W33-MOTION-TR01` | `SGK_WRITTEN` (TRANSFER) | `G11-B33-SIGN_INTERPRET` | `G11-B31-INSTANT_VELOCITY` | G11/ChIX/B33 |
+
+---
+
+### III. ĐÁNH GIÁ CHI TIẾT THEO TỪNG MÔ-ĐUN VÀ HÌNH MINH HỌA D5
+
+#### MÔ-ĐUN 1: TOÁN 10 CHƯƠNG IV — HỢP LỰC GÓC KHÔNG VUÔNG VÀ LỰC CÂN BẰNG
+* **Phạm vị học thuật:** `G10-SGK-B08`, `G10-SGK-B11` (Bố trí sau Bài 11 vì sử dụng tích vô hướng để tính hợp lực góc không vuông).
+* **Kiểm tra Tự thử & D2:**
+  * `THPT-G10-CHIV-TRY-FORCE-TR01`: Hai lực $4\text{ N}$ tạo góc $60^\circ \implies |F_1+F_2| = \sqrt{4^2+4^2+2(4)(4)\cos 60^\circ} = 4\sqrt{3}\text{ N}$. Lực thứ ba $F_3 = -(F_1+F_2)$ có độ lớn $4\sqrt{3}\text{ N}$ và ngược chiều hợp lực. **Đúng 100%**.
+  * `EX-G10-B08-FORCE-TR01`: Hai lực $6\text{ N}$ góc $120^\circ \implies |F_1+F_2| = \sqrt{6^2+6^2+2(6)(6)\cos 120^\circ} = 6\text{ N} \implies |F_3| = 6\text{ N}$ ngược chiều hợp lực. **Đúng 100%**.
+* **Thẩm định Bài tự luận `THPT-G10-CHIV-W08-FORCE-TR01`:**
+  * **(a) Điều kiện vectơ:** $F_1 + F_2 + F_3 = 0$. Không được cộng $8+15$ vì $120^\circ \ne 0^\circ$.
+  * **(b) Độ lớn hợp lực:** $|F_1+F_2|^2 = 8^2 + 15^2 + 2(8)(15)\cos 120^\circ = 64 + 225 - 120 = 169 \implies |F_3| = |F_1+F_2| = 13\text{ N}$.
+  * **(c) Tọa độ lực:** $F_1 = (8,0)$, $F_2 = (15\cos 120^\circ, 15\sin 120^\circ) = (-7{,}5; 7{,}5\sqrt{3}) \implies R = F_1+F_2 = (0{,}5; 7{,}5\sqrt{3})\text{ N} \implies F_3 = -R = (-0{,}5; -7{,}5\sqrt{3})\text{ N}$.
+  * **(d) Phân tích hai lỗi:** Lỗi 1: cộng độ lớn đại số $8+15=23\text{ N}$ bỏ qua góc $120^\circ$; Lỗi 2: cho $F_3$ cùng chiều hợp lực thay vì ngược chiều.
+  * **Rubric 4 điểm:** Phân bổ 1.0 điểm/ý minh bạch, chính xác.
+* **Đối chiếu Hình D5 (`FIG-G10-CHIV-FORCE-TR01` - PDF trang 1):** Khung Oxy, $F_1$ hướng $+Ox$, $F_2$ hợp góc $120^\circ$, hợp lực $R$ trên đường chéo hình bình hành, $F_3$ đối chiều $R$. Nhãn, độ dài và góc thể hiện khớp 100% dữ kiện bài toán. **PASS**.
+* **Phán quyết Mô-đun 1:** **`ACADEMIC PASS`** | **`PEDAGOGICAL PASS`**
+
+---
+
+#### MÔ-ĐUN 2: TOÁN 10 CHƯƠNG IV — CA NÔ, VẬN TỐC TƯƠNG ĐỐI VÀ ĐIỀU KIỆN CẬP BỜ
+* **Phạm vị học thuật:** `G10-SGK-B10`, `G10-SGK-B08`.
+* **Kiểm tra Tự thử & D2:**
+  * `THPT-G10-CHIV-TRY-RIVER-TR01`: Sông rộng $60\text{ m}$, dòng chảy $3\text{ m/s}$ Đông, ca nô $5\text{ m/s}$ Bắc $\implies v_{\text{bờ}} = (3, 5)\text{ m/s}$. Thời gian qua sông $t = 60/5 = 12\text{ s}$, độ trôi Đông $3 \times 12 = 36\text{ m}$. **Đúng 100%**.
+  * `EX-G10-B10-RIVER-TR01`: Sông $96\text{ m}$, dòng $3\text{ m/s}$, thuyền $5\text{ m/s}$. Lái Bắc: $t = 96/5 = 19{,}2\text{ s}$, trôi $57{,}6\text{ m}$. Cập đối diện: $v_{\text{riêng}, x} = -3 \implies v_{\text{riêng}, y} = +4\text{ m/s} \implies t = 96/4 = 24\text{ s}$. **Đúng 100%**.
+* **Thẩm định Bài tự luận `THPT-G10-CHIV-W10-RIVER-TR01`:**
+  * **(a) Hệ thức vectơ:** $\vec{v}_{\text{bờ}} = \vec{v}_{\text{riêng}} + \vec{v}_{\text{dòng}}$. Hướng mũi ca nô quy định bởi $\vec{v}_{\text{riêng}}$, quỹ đạo trên bản đồ quy định bởi $\vec{v}_{\text{bờ}}$.
+  * **(b) Lái thẳng Bắc:** $\vec{v}_{\text{dòng}} = (2{,}5; 0)$, $\vec{v}_{\text{riêng}} = (0; 6{,}5) \implies \vec{v}_{\text{bờ}} = (2{,}5; 6{,}5)\text{ m/s}$. Thời gian $t = 150 / 6{,}5 = 300/13 \approx 23{,}08\text{ s}$. Độ trôi Đông $d_x = 2{,}5 \times (300/13) = 750/13 \approx 57{,}69\text{ m}$.
+  * **(c) Cập đúng điểm đối diện:** Để $v_{\text{bờ}, x} = 0 \implies v_{\text{riêng}, x} = -2{,}5\text{ m/s}$. Do $|\vec{v}_{\text{riêng}}| = 6{,}5 \implies v_{\text{riêng}, y} = \sqrt{6{,}5^2 - 2{,}5^2} = 6\text{ m/s} \implies \vec{v}_{\text{riêng}} = (-2{,}5; 6)\text{ m/s}$. Thời gian qua sông $t = 150 / 6 = 25\text{ s}$.
+  * **(d) Dòng chảy tăng lên $7\text{ m/s}$:** Không thể cập đối diện vì $|v_{\text{riêng}, x}| \le 6{,}5 < 7\text{ m/s}$, thuyền không đủ tốc độ để triệt tiêu hoàn toàn dòng chảy $7\text{ m/s}$ về Tây.
+  * **Rubric 4 điểm:** Phân bổ 1.0 điểm/ý chuẩn xác.
+* **Đối chiếu Hình D5 (`FIG-G10-CHIV-RIVER-TR01` - PDF trang 2):** Biểu diễn 2 bờ sông song song, hệ trục $Ox$ Đông / $Oy$ Bắc, tam giác cộng vectơ vận tốc trong 2 trường hợp (lái thẳng Bắc và lái chếch Tây để cập đối diện). Nhãn và chiều vectơ chính xác 100%. **PASS**.
+* **Phán quyết Mô-đun 2:** **`ACADEMIC PASS`** | **`PEDAGOGICAL PASS`**
+
+---
+
+#### MÔ-ĐUN 3: TOÁN 10 CHƯƠNG VII — MẶT CẮT NỬA ELIP VÀ ĐỘ HỞ AN TOÀN
+* **Phạm vị học thuật:** `G10-SGK-B22` (`G10-B22-ELLIPSE_PARAMETERS`, `G10-B22-CONIC_MODEL`).
+* **Kiểm tra Tự thử & D2:**
+  * `THPT-G10-CHVII-TRY-ELLIPSE-TR01`: Nửa elip rộng $12\text{ m}$, cao $4\text{ m} \implies a_x = 6, b_y = 4 \implies \frac{x^2}{36} + \frac{y^2}{16} = 1$ ($y \ge 0$). Tại $x=3\text{ m} \implies y = 4\sqrt{1 - 9/36} = 2\sqrt{3} \approx 3{,}464\text{ m}$. **Đúng 100%**.
+  * `EX-G10-B22-ELLIPSE-TR01`: Nửa elip rộng $30\text{ m}$, cao $10\text{ m} \implies a_x = 15, b_y = 10$. Người đứng cách chân $6\text{ m} \implies x = 15 - 6 = 9\text{ m} \implies y = 10\sqrt{1 - 81/225} = 8\text{ m}$. **Đúng 100%**.
+* **Thẩm định Bài tự luận `THPT-G10-CHVII-W22-ELLIPSE-TR01`:**
+  * **(a) Phương trình nửa elip:** Bán trục $a=10, b=6 \implies \frac{x^2}{100} + \frac{y^2}{36} = 1$ với $y \ge 0, |x| \le 10$.
+  * **(b) Độ cao mái nhỏ nhất trên khối trưng bày:** Khối rộng $14\text{ m}$ đặt giữa $\implies$ hai mép khối ở $x = \pm 7\text{ m}$.  
+    Chiều cao mái tại mép $x=7$: $y(7) = 6\sqrt{1 - 49/100} = \frac{6\sqrt{51}}{10} = \frac{3\sqrt{51}}{5} \approx 4{,}285\text{ m}$.  
+    Khoảng hở nhỏ nhất trên đỉnh khối (cao $4\text{ m}$): $4{,}285 - 4 = 0{,}285\text{ m}$.
+  * **(c) Kiểm tra quy định độ hở $0{,}8\text{ m}$:** Yêu cầu độ hở $\ge 0{,}8\text{ m} \implies$ chiều cao mái $y \ge 4 + 0{,}8 = 4{,}8\text{ m}$.  
+    Vì $0{,}285\text{ m} < 0{,}8\text{ m} \implies$ khối KHÔNG đạt yêu cầu.  
+    Tìm bề rộng tối đa $w$: Thế $y = 4{,}8 = 24/5 \implies \frac{x^2}{100} + \frac{23{,}04}{36} = 1 \iff \frac{x^2}{100} + 0{,}64 = 1 \iff x^2 = 36 \iff |x| = 6\text{ m}$.  
+    Bề rộng tối đa của khối là $w = 2 \times 6 = 12\text{ m}$.
+  * **(d) Giải thích:** Chiều cao nửa elip giảm dần từ tâm $x=0$ ($y=6\text{ m}$) ra hai biên $x=\pm 10$. Đỉnh khối chữ nhật phẳng tại $y=4\text{ m}$, nên độ hở nhỏ nhất xuất hiện tại 2 góc mép $x = \pm w/2$, không xuất hiện ở tâm $x=0$.
+  * **Rubric 4 điểm:** Phân bổ 1.0 điểm/ý mạch lạc, chính xác.
+* **Đối chiếu Hình D5 (`FIG-G10-CHVII-ELLIPSE-TR01` - PDF trang 3):** Mặt cắt nửa elip tâm $O$, chân $x=\pm 10$, đỉnh $y=6$, khối trưng bày rộng $14\text{ m}$ ($x=\pm 7$), cao $4\text{ m}$, khoảng hở $0{,}285\text{ m}$ tại góc mép thể hiện trực quan, chính xác. **PASS**.
+* **Phán quyết Mô-đun 3:** **`ACADEMIC PASS`** | **`PEDAGOGICAL PASS`**
+
+---
+
+#### MÔ-ĐUN 4: TOÁN 10 CHƯƠNG VII — ĐỊNH VỊ HYPEBOL LORAN
+* **Phạm vị học thuật:** `G10-SGK-B22` (`G10-B22-HYPERBOLA_PARAMETERS`, `G10-B22-CONIC_MODEL`).
+* **Kiểm tra Tự thử & D2:**
+  * `THPT-G10-CHVII-TRY-HYPERBOLA-TR01`: $A(-40,0), B(40,0) \implies c=40$. Tín hiệu $100.000\text{ km/s}$, độ trễ $0{,}0004\text{ s} \implies 2a = 40 \implies a=20 \implies b^2 = 1600 - 400 = 1200 \implies \frac{x^2}{400} - \frac{y^2}{1200} = 1$. Nhận tín hiệu từ $A$ sớm hơn $\implies P$ thuộc nhánh trái $x \le -20$. **Đúng 100%**.
+  * `EX-G10-B22-HYPERBOLA-TR01`: $A(-50,0), B(50,0) \implies c=50$. Tốc độ $100.000\text{ km/s}$, trễ $0{,}0004\text{ s} \implies 2a=40 \implies a=20 \implies b^2 = 2100 \implies \frac{x^2}{400} - \frac{y^2}{2100} = 1$ (nhánh trái $x \le -20$). **Đúng 100%**.
+* **Thẩm định Bài tự luận `THPT-G10-CHVII-W22-HYPERBOLA-TR01`:**
+  * **(a) Hệ thức trễ:** $A(-50,0), B(50,0)$, tín hiệu từ $B$ đến sớm hơn $\implies PB < PA \implies PA - PB = v \Delta t = 200.000 \times 0{,}0003 = 60\text{ km}$. Dấu dương vì $P$ gần $B$ hơn $A$.
+  * **(b) Phương trình chính tắc toàn hypebol:** $2c = 100 \implies c=50$. $2a = 60 \implies a=30 \implies a^2 = 900$. $b^2 = c^2 - a^2 = 2500 - 900 = 1600 \implies \frac{x^2}{900} - \frac{y^2}{1600} = 1$. Thỏa điều kiện $0 < 2a < 2c$ ($60 < 100$).
+  * **(c) Nhánh quỹ tích & Vị trí duy nhất:** $P$ gần $B(50,0)$ hơn $\implies P$ thuộc nhánh phải $x \ge 30$. Một cặp trạm chỉ cho 1 đường hypebol (quỹ tích 1 chiều), chưa đủ xác định vị trí điểm 2D duy nhất (cần thêm trạm thứ ba).
+  * **(d) Phép đo trễ $0{,}00055\text{ s}$:** Chênh quãng đường $2a = 200.000 \times 0{,}00055 = 110\text{ km}$. Bất đẳng thức tam giác yêu cầu $|PA - PB| \le AB = 100\text{ km}$. Do $110\text{ km} > 100\text{ km} \implies$ phép đo KHÔNG khả thi (không tồn tại điểm $P$).
+  * **Rubric 4 điểm:** Phân bổ 1.0 điểm/ý chặt chẽ, chính xác.
+* **Đối chiếu Hình D5 (`FIG-G10-CHVII-HYPERBOLA-TR01` - PDF trang 4):** Hai tiêu điểm $A(-50,0), B(50,0)$, 2 nhánh hypebol qua $x=\pm 30$, nhánh phải $x \ge 30$ được tô đậm nhấn mạnh quỹ tích điểm $P$. Nhãn và tiêu điểm khớp 100%. **PASS**.
+* **Phán quyết Mô-đun 4:** **`ACADEMIC PASS`** | **`PEDAGOGICAL PASS`**
+
+---
+
+#### MÔ-ĐUN 5: TOÁN 11 CHƯƠNG IX — CHUYỂN ĐỘNG BẬC BA, VẬN TỐC CỰC ĐẠI VÀ QUÃNG ĐƯỜNG
+* **Phạm vị học thuật:** `G11-SGK-B31`, `G11-SGK-B33` (`G11-B31-INSTANT_VELOCITY`, `G11-B33-ACCELERATION`, `G11-B33-SIGN_INTERPRET`).
+* **Kiểm tra Tự thử & D2:**
+  * `THPT-G11-CHIX-TRY-MOTION-TR01`: $s(t) = -t^3 + 3t^2 + 3t\text{ (m)}$ ($0 \le t \le 2$). $v(t) = -3t^2 + 6t + 3 = 6 - 3(t-1)^2 \implies v_{\max} = 6\text{ m/s}$ tại $t=1\text{ s}$. Trên $$, $v(t) \ge 3 > 0 \implies$ không đổi chiều. Quãng đường $s(1) - s(0) = 5\text{ m}$. **Đúng 100%**.
+  * `EX-G11-B33-MOTION-TR01`: $s(t) = -t^3 + 6t^2 + 4t\text{ (m)}$ ($0 \le t \le 3$). $v(t) = -3t^2 + 12t + 4 = 16 - 3(t-2)^2 \implies v_{\max} = 16\text{ m/s}$ tại $t=2\text{ s}$. Trên $$, $v(t) \ge 4 > 0 \implies$ quãng đường $s(2) - s(0) = 24\text{ m}$. **Đúng 100%**.
+* **Thẩm định Bài tự luận `THPT-G11-CHIX-W33-MOTION-TR01`:**
+  * **(a) Vận tốc, gia tốc & Vận tốc cực đại:**  
+    $v(t) = s'(t) = -3t^2 + 12t - 9 = 3 - 3(t-2)^2\text{ (m/s)}$; $a(t) = v'(t) = -6t + 12\text{ (m/s}^2)$.  
+    Vì $(t-2)^2 \ge 0 \implies v(t) \le 3\text{ m/s}$, đạt cực đại toàn cục tại $t = 2\text{ s} \in$ với $v_{\max} = 3\text{ m/s}$.
+  * **(b) Đổi chiều chuyển động trên đoạn $$:**  
+    $v(t) = -3(t-1)(t-3) = 0 \iff t=1$ hoặc $t=3$. Nghiệm $t=1\text{ s} \in (0,2)$.  
+    Trên $[0,1)$, $v(t) < 0$ (đi theo chiều âm); trên $(1,2]$, $v(t) > 0$ (đi theo chiều dương). Vật đổi chiều tại $t = 1\text{ s}$.  
+    Tọa độ các mốc: $s(0) = 0\text{ m}$, $s(1) = -4\text{ m}$, $s(2) = -2\text{ m}$.
+  * **(c) Tổng quãng đường thực vs Độ dời có dấu:**  
+    Quãng đường $L = |s(1) - s(0)| + |s(2) - s(1)| = |-4 - 0| + |-2 - (-4)| = 4 + 2 = 6\text{ m}$.  
+    Độ dời $\Delta s = s(2) - s(0) = -2 - 0 = -2\text{ m}$.  
+    Giải thích: Quãng đường cộng gộp tổng độ dài di chuyển $4+2=6\text{ m}$, trong khi độ dời đo sự thay đổi vị trí ròng $s(2) - s(0) = -2\text{ m}$.
+  * **(d) So sánh tốc độ lớn nhất vs vận tốc có dấu lớn nhất trên $$:**  
+    Tốc độ $|v(t)|$: Tại $t=0 \implies |v(0)| = |-9| = 9\text{ m/s}$; Tại $t=1 \implies |v(1)| = 0\text{ m/s}$; Tại $t=2 \implies |v(2)| = 3\text{ m/s}$.  
+    Tốc độ lớn nhất là $9\text{ m/s}$ (tại $t=0$), khác vận tốc có dấu lớn nhất $3\text{ m/s}$ (tại $t=2$).
+  * **Rubric 4 điểm:** Phân bổ 1.0 điểm/ý sắc bén, chuẩn xác cao.
+* **Đối chiếu Hình D5 (`FIG-G11-CHIX-MOTION-TR01` - PDF trang 5):** Biểu diễn đồ thị vị trí $s(t)$ và vận tốc $v(t)$ trên đoạn $$, thể hiện rõ các mốc $t=0, 1, 2, 3$, điểm đổi chiều $t=1$ ($s=-4\text{ m}$), điểm $v_{\max}$ ($t=2\text{ s}, v=3\text{ m/s}$) và tốc độ $|v(0)| = 9\text{ m/s}$. **PASS**.
+* **Phán quyết Mô-đun 5:** **`ACADEMIC PASS`** | **`PEDAGOGICAL PASS`**
+
+---
+
+### IV. BẢNG ĐỐI CHIẾU CHUẨN Q01–Q18 & D1–D6 & PED1–PED6
+
+| Mã Q / Tiêu chuẩn | Nội hàm Tiêu chuẩn | Kết quả Audit | Chứng cứ Chi tiết gói SLM-THPT-TRANSFER-WRITTEN-20261106-R00 |
+| :--- | :--- | :--- | :--- |
+| **Q01** | S1 Scope & Provenance | **PASS** | Khóa đúng SGK/SBT Toán 10 Tập 1 (B08, B10), Tập 2 (B22) & Toán 11 Tập 2 (B31, B33). |
+| **Q02** | Outcomes Coverage | **PASS** | Gắn đúng các outcomes `G10-B08`, `G10-B10`, `G10-B11`, `G10-B22` và `G11-B31`, `G11-B33`. |
+| **Q03** | D1 Rigor & Meaning | **PASS** | Phân tích trực giác lý do chọn mô hình vectơ, elip/hypebol thực tế và đạo hàm chuyển động trước công thức. |
+| **Q04** | D2 Worked Examples | **PASS** | 5 ví dụ D2 (`EX-G10-B08-FORCE-TR01`, `EX-G10-B10-RIVER-TR01`, `EX-G10-B22-ELLIPSE-TR01`, `EX-G10-B22-HYPERBOLA-TR01`, `EX-G11-B33-MOTION-TR01`) có lập luận suy luận và điều kiện biên. |
+| **Q05** | D3 Core / Practice Depth | **PASS** | Đạt độ sâu ứng dụng chuyển giao (Transfer Level), liên kết bài học hợp lý. |
+| **Q06** | D4 Written / Rubric | **PASS** | 5 bài tự luận D4 mới (`THPT-G10-CHIV-W08-FORCE-TR01`, `W10-RIVER-TR01`, `THPT-G10-CHVII-W22-ELLIPSE-TR01`, `W22-HYPERBOLA-TR01`, `THPT-G11-CHIX-W33-MOTION-TR01`) có Rubric 4.0 điểm tường minh. |
+| **Q07** | D5 Figures & Visuals | **PASS** | 5 hình D5 trong PDF `Temp_D5_FIGURES_PDF_R00_20261106.pdf` (trang 1–5) khớp 100% dữ kiện, nhãn và tỷ lệ toán học với file Markdown. |
+| **Q08** | D6 Remediation Pathways | **PASS** | 5 thẻ HELP D6 (`HELP-G10-CHIV-FORCE-TR01`, `RIVER-TR01`, `HELP-G10-CHVII-ELLIPSE-TR01`, `HYPERBOLA-TR01`, `HELP-G11-CHIX-MOTION-TR01`) đủ 5 bước chẩn đoán và khắc phục. |
+| **Q09–Q14** | PED1–PED6 Process | **PASS** | Đầy đủ 6 bước dẫn dắt từ WHY $\rightarrow$ PRE $\rightarrow$ MEANING $\rightarrow$ READING_VISUAL $\rightarrow$ METHOD $\rightarrow$ FIRST_TRY. |
+| **Q15** | Canonical ID Contract | **PASS** | 15 ID mới duy nhất, không trùng lặp, không nhân bản stem hay tạo Anchor giả. |
+| **Q16** | Assessment Safety | **PASS** | Ẩn đáp án/rubric trước khi nộp bài, không tính Mastery từ câu đã xem lời giải. |
+| **Q17** | Dual Learning Paths | **PASS** | Đánh giá độc lập trên tuyến `SGK_CHAPTER`, không giả định PASS Chuyên đề. |
+| **Q18** | Independent Review Audit | **PASS** | Đã thực hiện kiểm toán độc lập trên mounted snapshot, không vi phạm thẩm quyền. |
+
+---
+
+### V. TỔNG HỢP PHÁN QUYẾT CHÍNH THỨC VÀ RỜI TỎA GIỚI HẠN
+
+* **`ACADEMIC_VERDICT`:** **`PASS`** (Nội dung toán học đạt độ chính xác 100%)
+* **`PEDAGOGICAL_VERDICT`:** **`PASS`** (Nội dung sư phạm PED1–PED6 & D1–D6 đạt chuẩn 100%)
+* **MỨC ĐỘ SỬA ĐỔI:** **`P0 = 0`**, **`P1 = 0`**, **`P2 = 0`**
+* **`MINIMAL_DELTA`:** **`0 REVISIONS REQUIRED`** (Không yêu cầu sửa đổi nội dung toán học hay hình vẽ)
+* **`DELTA_CLASS`:** `DELTA_C_ACADEMIC_MATERIAL`
+
+#### Giới hạn Thẩm quyền Hệ thống (System Safety Limits)
+* **`CONTENT_READY`:** **`NO`**
+* **`RELEASE_AUTHORIZATION`:** **`NO`**
+* **`MASTERY_ACTIVATION`:** **`NO`**
+* **`PRIVATE_RD1_COUNT_NEW`:** **`0`**
+
+---
+*(Tệp báo cáo kiểm toán chi tiết đầy đủ đã được xuất bản và đồng bộ chính thức tại Studio panel với tên tệp: `Bao_Cao_Kiem_Toan_SLM_THPT_TRANSFER_WRITTEN_20261106_R00.md`).*
