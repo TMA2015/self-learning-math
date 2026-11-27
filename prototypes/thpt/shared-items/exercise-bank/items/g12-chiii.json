@@ -1,7 +1,7 @@
 [
   {
     "item_id": "THPT-G12-B09-C01",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-C01",
     "stem": "Các nhóm [0;10), [10;20), [20;30) có tần số 0,5,7. Cỡ mẫu là bao nhiêu?",
     "answer_key": "12",
     "worked_solution": "Cỡ mẫu là tổng số quan sát, bằng tổng tần số các lớp: \\(n=0+5+7=12\\). Lớp rỗng không có quan sát nào, nhưng vẫn có thể ghi trong bảng.",
@@ -9,14 +9,18 @@
       "G12-CHIII-B09-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Cộng các tần số kể cả tần số 0."
     ],
     "rubric": null,
     "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -26,14 +30,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Cỡ mẫu là số quan sát, lớp rỗng không đóng góp. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Cỡ mẫu là số quan sát, lớp rỗng không đóng góp. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "12"
+      },
+      {
+        "id": "B",
+        "text": "7"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "0"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-P01",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P01",
     "stem": "Bảng gồm các nhóm [5;10), [10;15), [15;20) với f=(2,0,6). Nhóm giữa có giá trị gốc không?",
     "answer_key": "Không",
     "worked_solution": "Lớp giữa \\([10;15)\\) có tần số 0, nghĩa là không có quan sát nào thuộc lớp đó. Không phải các quan sát ở lớp này đều bằng 0.",
@@ -41,14 +65,18 @@
       "G12-CHIII-B09-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đọc tần số lớp giữa."
     ],
     "rubric": null,
     "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -58,14 +86,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tần số 0 nghĩa là không có quan sát thuộc lớp. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Tần số 0 nghĩa là không có quan sát thuộc lớp. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-C01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, một giá trị ở trung điểm"
+      },
+      {
+        "id": "B",
+        "text": "Không, vì tần số nhóm bằng 0"
+      },
+      {
+        "id": "C",
+        "text": "Có, vì nhóm có độ rộng dương"
+      },
+      {
+        "id": "D",
+        "text": "Không, vì nhóm này không có cận"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-P02",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P02",
     "stem": "Hai bảng có cùng các khoảng ghép nhóm và cùng tần số (3, 4, 3). Có thể khẳng định các số liệu gốc của chúng giống hệt nhau không?",
     "answer_key": "Không",
     "worked_solution": "Không. Kể cả khi các lớp giống nhau, tần số chỉ giữ số quan sát trong từng khoảng, không giữ từng giá trị. Ví dụ trong lớp [0;10), thay một quan sát 2 bằng 3 không làm đổi tần số.",
@@ -73,14 +121,18 @@
       "G12-CHIII-B09-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Cùng tần số chỉ cho biết cùng số lượng ở mỗi lớp nếu lớp giống nhau."
     ],
     "rubric": null,
     "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -90,14 +142,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không suy dữ liệu thô bằng nhau. Ôn CĐ22 mục 3.1; luyện THPT-G11-TOPSTAT-ADD06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không suy dữ liệu thô bằng nhau. Ôn CĐ22 mục 3.1; luyện THPT-G11-TOPSTAT-ADD06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, do cùng cỡ mẫu"
+      },
+      {
+        "id": "B",
+        "text": "Có, do cùng trung điểm"
+      },
+      {
+        "id": "C",
+        "text": "Không, vì vị trí cụ thể của quan sát trong từng nhóm có thể khác"
+      },
+      {
+        "id": "D",
+        "text": "Không, vì hai bảng phải có cỡ mẫu khác nhau"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-C02",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-C02",
     "stem": "Các nhóm [0;5),[5;10),[10;15),[15;20) có f=(0,5,10,0). R là bao nhiêu?",
     "answer_key": "10",
     "worked_solution": "Bỏ hai lớp biên có tần số 0. Lớp đầu có dữ liệu là \\([5;10)\\), lớp cuối là \\([10;15)\\). Khoảng biến thiên ghép nhóm \\(R=15-5=10\\); đây là hiệu hai cận lớp, không phải khoảng biến thiên chính xác của dữ liệu gốc.",
@@ -105,14 +177,18 @@
       "G12-CHIII-B09-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Bỏ lớp rỗng ở hai biên rồi tìm cận hai lớp dương ngoài cùng."
     ],
     "rubric": null,
     "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -122,14 +198,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy 20−0 khi hai lớp biên không có dữ liệu. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không lấy 20−0 khi hai lớp biên không có dữ liệu. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "20"
+      },
+      {
+        "id": "B",
+        "text": "15"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "10"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-P03",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P03",
     "stem": "Các nhóm [10;20),[20;30),[30;40),[40;50) có f=(2,0,7,1). R ghép nhóm?",
     "answer_key": "40",
     "worked_solution": "Lớp đầu có dữ liệu là \\([10;20)\\), lớp cuối là \\([40;50)\\). Lấy cận trên lớp cuối trừ cận dưới lớp đầu: \\(R=50-10=40\\). Lớp rỗng nằm giữa không thay đổi hai cận này.",
@@ -137,14 +233,18 @@
       "G12-CHIII-B09-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Lấy cận trên lớp cuối dương trừ cận dưới lớp đầu dương."
     ],
     "rubric": null,
     "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -154,14 +254,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Lớp rỗng ở giữa không thay hai biên. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-C02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Lớp rỗng ở giữa không thay hai biên. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-C02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "40"
+      },
+      {
+        "id": "B",
+        "text": "30"
+      },
+      {
+        "id": "C",
+        "text": "20"
+      },
+      {
+        "id": "D",
+        "text": "10"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-P04",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P04",
     "stem": "Một mẫu gốc có min=13, max=47; bảng ghép lớp [10;20) đến [40;50) ở hai biên. So R gốc với R ghép nhóm.",
     "answer_key": "R gốc=34; R ghép nhóm=40",
     "worked_solution": "Mẫu gốc có \\(R_{\\mathrm{gốc}}=47-13=34\\). Bảng ghép nhóm dùng cận dưới lớp đầu và cận trên lớp cuối có dữ liệu nên \\(R_{\\mathrm{ghép}}=50-10=40\\). Hai kết quả không nhất thiết bằng nhau.",
@@ -169,14 +289,18 @@
       "G12-CHIII-B09-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Tính R gốc từ max,min; R ghép từ cận lớp có dữ liệu."
     ],
     "rubric": null,
     "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -186,14 +310,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không đồng nhất hai khoảng biến thiên; nhóm nửa kín có cận phải không phải quan sát thật. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không đồng nhất hai khoảng biến thiên; nhóm nửa kín có cận phải không phải quan sát thật. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "34; 34"
+      },
+      {
+        "id": "B",
+        "text": "34; 40"
+      },
+      {
+        "id": "C",
+        "text": "40; 34"
+      },
+      {
+        "id": "D",
+        "text": "47; 50"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-C03",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-C03",
     "stem": "Nếu giữ nguyên các lớp cũ và thêm một quan sát thuộc một lớp mới rất xa về phía trên, khoảng biến thiên ghép nhóm có thể tăng mạnh dù chỉ thêm một quan sát. Đúng hay sai?",
     "answer_key": "Đúng",
     "worked_solution": "Đúng: chỉ cần một quan sát làm xuất hiện lớp có dữ liệu ở xa hơn, cận trên cuối cùng tăng, trong khi cận dưới đầu giữ nguyên. Chẳng hạn từ cận 10 và 40, nếu có thêm lớp \\([60;70)\\), R tăng từ 30 lên 60.",
@@ -201,14 +345,18 @@
       "G12-CHIII-B09-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Xem cận cuối thay đổi thế nào."
     ],
     "rubric": null,
     "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -218,14 +366,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "R nhạy với quan sát cực trị, không đại diện toàn bộ phân bố. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "R nhạy với quan sát cực trị, không đại diện toàn bộ phân bố. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sai, thêm một quan sát không thể làm R thay đổi"
+      },
+      {
+        "id": "B",
+        "text": "Sai, vì R chỉ phụ thuộc cỡ mẫu"
+      },
+      {
+        "id": "C",
+        "text": "Đúng, cận trên của nhóm có dữ liệu có thể đổi mạnh"
+      },
+      {
+        "id": "D",
+        "text": "Đúng, vì R luôn tăng đúng 1"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-P05",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P05",
     "stem": "Phân bố ban đầu có nhóm dương đầu [10;20), cuối [30;40). Sau thêm 1 số liệu ở [60;70), R tăng bao nhiêu?",
     "answer_key": "30",
     "worked_solution": "Trước khi thêm, \\(R_{\\mathrm{cũ}}=40-10=30\\). Sau khi thêm, cận dưới vẫn là 10 nhưng cận trên cuối là 70, nên \\(R_{\\mathrm{mới}}=70-10=60\\). Mức tăng là \\(60-30=30\\).",
@@ -233,14 +401,18 @@
       "G12-CHIII-B09-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Tính hai khoảng từ cận đầu 10 và cận cuối cũ/mới."
     ],
     "rubric": null,
     "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -250,14 +422,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy độ rộng riêng của lớp mới làm mức tăng R. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không lấy độ rộng riêng của lớp mới làm mức tăng R. Ôn CĐ22 mục 3.1; luyện THPT-G12-B09-P04.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "60"
+      },
+      {
+        "id": "B",
+        "text": "40"
+      },
+      {
+        "id": "C",
+        "text": "10"
+      },
+      {
+        "id": "D",
+        "text": "30"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-P06",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P06",
     "stem": "Mẫu A có R=20, mẫu B có R=30 (cùng đơn vị). Có thể suy B có IQR lớn hơn không?",
     "answer_key": "Không",
     "worked_solution": "Không. R chỉ phản ánh hai biên của mẫu ghép nhóm, trong khi khoảng tứ phân vị đo độ rộng giữa \\(Q_1\\) và \\(Q_3\\). Mẫu có các nhóm biên rất xa nhưng phần giữa tập trung vẫn có thể có khoảng tứ phân vị nhỏ.",
@@ -265,14 +457,18 @@
       "G12-CHIII-B09-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So R và IQR: chúng đo phạm vi khác nhau."
     ],
     "rubric": null,
     "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -282,14 +478,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "R lớn không đảm bảo IQR lớn; IQR dựa vào nửa giữa. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "R lớn không đảm bảo IQR lớn; IQR dựa vào nửa giữa. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P12.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, IQR phụ thuộc nửa giữa chứ không chỉ hai cận"
+      },
+      {
+        "id": "B",
+        "text": "Có, vì R lớn hơn luôn kéo theo IQR lớn hơn"
+      },
+      {
+        "id": "C",
+        "text": "Có, IQR tăng đúng 10"
+      },
+      {
+        "id": "D",
+        "text": "Không, vì IQR luôn bằng 0"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-C04",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-C04",
     "stem": "Bốn lớp có tần số lần lượt 6, 14, 12, 8. Biết cỡ mẫu \\(n=40\\), dùng lớp nào để nội suy \\(Q_1\\)?",
     "answer_key": "Lớp 2",
     "worked_solution": "Mốc nội suy \\(n/4=40/4=10\\). Tần số tích lũy sau lớp 1 là 6 và sau lớp 2 là 20. Vì \\(6<10\\le20\\), dùng lớp 2 để nội suy \\(Q_1\\).",
@@ -297,14 +513,18 @@
       "G12-CHIII-B09-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính n/4 rồi xem cộng dồn."
     ],
     "rubric": null,
     "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -314,14 +534,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không chọn lớp theo tần số lớn nhất. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không chọn lớp theo tần số lớn nhất. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lớp 1"
+      },
+      {
+        "id": "B",
+        "text": "Lớp 2"
+      },
+      {
+        "id": "C",
+        "text": "Lớp 3"
+      },
+      {
+        "id": "D",
+        "text": "Lớp 4"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-P07",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P07",
     "stem": "Một bảng ghép nhóm có tần số bốn lớp lần lượt 6, 14, 12, 8. Dùng lớp nào để nội suy \\(Q_3\\)?",
     "answer_key": "Lớp 3",
     "worked_solution": "Cỡ mẫu \\(n=6+14+12+8=40\\). Mốc \\(3n/4=30\\); tần số tích lũy là 6, 20, 32, 40. Vì \\(20<30\\le32\\), dùng lớp 3 để nội suy \\(Q_3\\).",
@@ -329,14 +569,18 @@
       "G12-CHIII-B09-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính 3n/4 rồi tìm lớp từ tích lũy."
     ],
     "rubric": null,
     "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -346,14 +590,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không dùng n/4 để tìm Q3. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không dùng n/4 để tìm Q3. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lớp 1"
+      },
+      {
+        "id": "B",
+        "text": "Lớp 2"
+      },
+      {
+        "id": "C",
+        "text": "Lớp 3"
+      },
+      {
+        "id": "D",
+        "text": "Lớp 4"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-P08",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P08",
     "stem": "Tần số (2,6,10,6), n=24, các nhóm liền nhau. Nêu vị trí n/4, 3n/4 và lớp dùng để nội suy từng tứ phân vị; giải thích trường hợp đúng biên.",
     "answer_key": "6 và 18; lớp 2 và lớp 3 để nội suy; Q3 bằng biên chung lớp 3 và lớp 4.",
     "worked_solution": "Tần số tích lũy là 2, 8, 18, 24. Mốc \\(n/4=6\\) nằm trong lớp 2. Mốc \\(3n/4=18\\) trùng tần số tích lũy cuối lớp 3: nội suy lớp 3 cho đúng cận trên, cũng là cận dưới lớp 4 vì các lớp liền nhau. Đó là giá trị nội suy ở biên chung, không phải khẳng định cận phải thuộc lớp nửa kín thứ ba.",
@@ -361,14 +625,18 @@
       "G12-CHIII-B09-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Cộng dồn 2,8,18,24; tìm vị trí 6 và 18."
     ],
     "rubric": null,
     "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -378,14 +646,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tại mốc 18 nội suy lớp thứ ba cho biên trên; không nói giá trị thuộc khoảng nửa kín khi bằng biên phải. Ôn CĐ22 mục 3.2; luyện THPT-G11-B09-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Tại mốc 18 nội suy lớp thứ ba cho biên trên; không nói giá trị thuộc khoảng nửa kín khi bằng biên phải. Ôn CĐ22 mục 3.2; luyện THPT-G11-B09-P08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 và 18; lớp 1 và 3; Q3 ở biên"
+      },
+      {
+        "id": "B",
+        "text": "6 và 18; lớp 2 và 3; Q3 ở giữa lớp 3"
+      },
+      {
+        "id": "C",
+        "text": "12 và 18; lớp 3 và 4; Q3 ở biên"
+      },
+      {
+        "id": "D",
+        "text": "6 và 18; lớp 2 và 3; Q3 bằng biên chung lớp 3 và lớp 4"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-C05",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-C05",
     "stem": "Mẫu ghép nhóm có \\(n=40\\). Lớp dùng để nội suy \\(Q_1\\) là \\([15;20)\\), có tần số 14 và tần số tích lũy trước lớp bằng 6. Tính \\(Q_1\\), làm tròn đến hai chữ số thập phân.",
     "answer_key": "16,43",
     "worked_solution": "Cận dưới lớp là 15, độ rộng 5, tần số lớp 14 và tần số tích lũy trước lớp 6. Thay vào công thức: \\(Q_1=15+\\frac{40/4-6}{14}\\cdot5\\approx16{,}43\\). Kết quả nằm trong lớp đã cho.",
@@ -393,14 +681,18 @@
       "G12-CHIII-B09-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "APPLY",
     "hints": [
       "Dùng L=15,h=5,F trước=6,f=14 và n/4."
     ],
     "rubric": null,
     "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -410,14 +702,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy trung điểm lớp làm Q1 mặc định. Ôn CĐ22 mục 3.2; luyện THPT-G11-B09-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không lấy trung điểm lớp làm Q1 mặc định. Ôn CĐ22 mục 3.2; luyện THPT-G11-B09-P03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "16,43"
+      },
+      {
+        "id": "B",
+        "text": "15,71"
+      },
+      {
+        "id": "C",
+        "text": "18,57"
+      },
+      {
+        "id": "D",
+        "text": "19,29"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-P09",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P09",
     "stem": "Mẫu ghép nhóm có \\(n=40\\). Lớp dùng để nội suy \\(Q_3\\) là \\([20;25)\\), có tần số 12 và tần số tích lũy trước lớp bằng 20. Tính \\(Q_3\\), làm tròn đến hai chữ số thập phân.",
     "answer_key": "24,17",
     "worked_solution": "Cận dưới 20, độ rộng 5, tần số lớp 12 và tích lũy trước lớp 20. \\(Q_3=20+\\frac{3\\cdot40/4-20}{12}\\cdot5\\approx24{,}17\\). Kết quả nằm trong lớp [20;25).",
@@ -425,14 +737,18 @@
       "G12-CHIII-B09-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Dùng vị trí 3n/4 và tần số tích lũy trước lớp."
     ],
     "rubric": null,
     "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -442,14 +758,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không thay 30 bằng n/4=10. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không thay 30 bằng n/4=10. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P10.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "22,50"
+      },
+      {
+        "id": "B",
+        "text": "24,17"
+      },
+      {
+        "id": "C",
+        "text": "25,00"
+      },
+      {
+        "id": "D",
+        "text": "23,33"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-P10",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P10",
     "stem": "Bốn lớp [10;15), [15;20), [20;25), [25;30) có tần số lần lượt 6, 14, 12, 8. Tính khoảng tứ phân vị của mẫu ghép nhóm, làm tròn đến hai chữ số thập phân.",
     "answer_key": "7,74",
     "worked_solution": "Tần số tích lũy là 6, 20, 32, 40; dùng lớp 2 và 3. \\(Q_1=15+\\frac{10-6}{14}\\cdot5=\\frac{115}{7}\\), \\(Q_3=20+\\frac{30-20}{12}\\cdot5=\\frac{145}{6}\\). Khoảng tứ phân vị \\(\\Delta_Q=Q_3-Q_1=\\frac{325}{42}\\approx7{,}74\\). Chỉ làm tròn ở kết quả cuối.",
@@ -457,14 +793,18 @@
       "G12-CHIII-B09-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Tính hai tứ phân vị bằng phân số chính xác, rồi lấy hiệu; chỉ làm tròn ở cuối."
     ],
     "rubric": null,
     "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -474,14 +814,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không làm tròn từng Q quá sớm; IQR không âm. Ôn CĐ22 mục 3.2; luyện THPT-G11-B09-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không làm tròn từng Q quá sớm; IQR không âm. Ôn CĐ22 mục 3.2; luyện THPT-G11-B09-P03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "8,26"
+      },
+      {
+        "id": "B",
+        "text": "10,00"
+      },
+      {
+        "id": "C",
+        "text": "7,74"
+      },
+      {
+        "id": "D",
+        "text": "5,00"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-C06",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-C06",
     "stem": "Muốn bớt nhạy với các nhóm cực trị khi so sánh nửa giữa của hai mẫu, nên ưu tiên R hay IQR?",
     "answer_key": "IQR",
     "worked_solution": "Ưu tiên khoảng tứ phân vị \\(\\Delta_Q=Q_3-Q_1\\), vì nó đo độ rộng của phần giữa mẫu, ít chịu ảnh hưởng trực tiếp của các giá trị cực biên hơn R. Không có nghĩa là nó mô tả mọi đặc điểm phân bố.",
@@ -489,14 +849,18 @@
       "G12-CHIII-B09-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "IQR đo nửa giữa; R đo hai biên ngoài."
     ],
     "rubric": null,
     "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -506,14 +870,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu có giá trị cực trị, R dễ thay đổi hơn IQR. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu có giá trị cực trị, R dễ thay đổi hơn IQR. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P12.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "R, vì dùng hai biên"
+      },
+      {
+        "id": "B",
+        "text": "Trung bình"
+      },
+      {
+        "id": "C",
+        "text": "Mốt"
+      },
+      {
+        "id": "D",
+        "text": "IQR, vì tập trung vào nửa giữa"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-P11",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P11",
     "stem": "Hai mẫu cùng đơn vị có R_A=50, IQR_A=14; R_B=30, IQR_B=9. Nhận xét chính xác?",
     "answer_key": "A trải rộng hơn theo cả hai thước đo này",
     "worked_solution": "Vì \\(50>30\\), A có khoảng biến thiên lớn hơn. Vì \\(14>9\\), A cũng có khoảng tứ phân vị lớn hơn. Nếu hai mẫu đo cùng đại lượng, ghép nhóm tương thích, A trải rộng hơn theo cả hai chỉ số này; không suy ra mọi đặc điểm phân bố đều lớn hơn.",
@@ -521,14 +905,18 @@
       "G12-CHIII-B09-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So từng chỉ số với cùng đơn vị."
     ],
     "rubric": null,
     "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -538,14 +926,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không kết luận mọi quan sát A xa nhau hơn B. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không kết luận mọi quan sát A xa nhau hơn B. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P12.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "A trải rộng hơn theo cả hai thước đo này"
+      },
+      {
+        "id": "B",
+        "text": "B trải rộng hơn theo cả hai thước đo"
+      },
+      {
+        "id": "C",
+        "text": "A luôn có độ lệch chuẩn lớn hơn B"
+      },
+      {
+        "id": "D",
+        "text": "A và B có cùng độ phân tán"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-P12",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P12",
     "stem": "Nếu IQR của A nhỏ hơn B nhưng R_A lớn hơn R_B thì kết luận “A luôn ít phân tán hơn B” có đúng không?",
     "answer_key": "Không",
     "worked_solution": "Không. R lớn cho thấy hai biên của A xa nhau hơn; khoảng tứ phân vị nhỏ cho thấy phần giữa của A tập trung hơn. Hai số đo phản ánh hai khía cạnh khác nhau, không thể dùng chữ “luôn” để xếp hạng toàn bộ độ phân tán.",
@@ -553,14 +961,18 @@
       "G12-CHIII-B09-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Xét tình huống biên xa nhưng nửa giữa tập trung."
     ],
     "rubric": null,
     "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -570,14 +982,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không có thứ tự tuyệt đối về phân tán từ hai chỉ số trái chiều. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không có thứ tự tuyệt đối về phân tán từ hai chỉ số trái chiều. Ôn CĐ22 mục 3.2; luyện THPT-G12-B09-P06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, vì chỉ IQR mới có ý nghĩa"
+      },
+      {
+        "id": "B",
+        "text": "Không, hai thước đo phản ánh các khía cạnh khác nhau"
+      },
+      {
+        "id": "C",
+        "text": "Có, vì R không phụ thuộc biên"
+      },
+      {
+        "id": "D",
+        "text": "Không, vì cả R và IQR phải luôn bằng nhau"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-C01",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-C01",
     "stem": "Giá trị đại diện của nhóm [10;20) là số nào?",
     "answer_key": "15",
     "worked_solution": "Giá trị đại diện của nhóm là trung điểm hai cận, \\(\\frac{10+20}{2}=15\\). Đây là giá trị thay thế các quan sát trong nhóm khi tính các số đặc trưng.",
@@ -585,14 +1017,18 @@
       "G12-CHIII-B10-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Tính trung điểm hai cận."
     ],
     "rubric": null,
     "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -602,14 +1038,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy cận dưới làm đại diện. Ôn CĐ22 mục 3.3; luyện THPT-G11-B09-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không lấy cận dưới làm đại diện. Ôn CĐ22 mục 3.3; luyện THPT-G11-B09-C01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "10"
+      },
+      {
+        "id": "B",
+        "text": "20"
+      },
+      {
+        "id": "C",
+        "text": "15"
+      },
+      {
+        "id": "D",
+        "text": "30"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-P01",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P01",
     "stem": "Các nhóm [0;10),[10;20),[20;30),[30;40), f=(2,6,6,2). Tính x̄ ghép nhóm.",
     "answer_key": "20",
     "worked_solution": "Các trung điểm là 5, 15, 25, 35; cỡ mẫu \\(n=2+6+6+2=16\\). Trung bình ghép nhóm \\(\\overline{x}=\\frac{2\\cdot5+6\\cdot15+6\\cdot25+2\\cdot35}{16}=\\frac{320}{16}=20\\).",
@@ -617,14 +1073,18 @@
       "G12-CHIII-B10-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Nhân bốn trung điểm với tần số rồi chia n."
     ],
     "rubric": null,
     "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -634,14 +1094,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Dùng mẫu số 16, không chia 4. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Dùng mẫu số 16, không chia 4. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "15"
+      },
+      {
+        "id": "B",
+        "text": "25"
+      },
+      {
+        "id": "C",
+        "text": "16"
+      },
+      {
+        "id": "D",
+        "text": "20"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-P02",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P02",
     "stem": "Lớp [0;20) có f=1, [20;40) có f=9. Trung bình ghép nhóm?",
     "answer_key": "28",
     "worked_solution": "Hai giá trị đại diện là 10 và 30. Vì nhóm thứ hai có 9 quan sát, phải dùng trung bình có trọng số: \\(\\overline{x}=\\frac{1\\cdot10+9\\cdot30}{1+9}=28\\). Không lấy trung bình đơn giản của hai trung điểm.",
@@ -649,14 +1129,18 @@
       "G12-CHIII-B10-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Nhóm thứ hai có 9 quan sát, phải dùng trọng số."
     ],
     "rubric": null,
     "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -666,14 +1150,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy trung bình đơn giản (10+30)/2. Ôn CĐ22 mục 3.3; luyện THPT-G11-TOPSTAT-ADD06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không lấy trung bình đơn giản (10+30)/2. Ôn CĐ22 mục 3.3; luyện THPT-G11-TOPSTAT-ADD06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "28"
+      },
+      {
+        "id": "B",
+        "text": "20"
+      },
+      {
+        "id": "C",
+        "text": "30"
+      },
+      {
+        "id": "D",
+        "text": "18"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-C02",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-C02",
     "stem": "Các giá trị đại diện (2,4,6,8) có tần số (2,1,1,2). Tính phương sai ghép nhóm với mẫu số n.",
     "answer_key": "19/3.",
     "worked_solution": "Cỡ mẫu \\(n=2+1+1+2=6\\). Trung bình \\(\\overline{x}=\\frac{2\\cdot2+4+6+2\\cdot8}{6}=5\\). Phương sai \\(s^2=\\frac{2(2-5)^2+(4-5)^2+(6-5)^2+2(8-5)^2}{6}=\\frac{38}{6}=\\frac{19}{3}\\). Dùng mẫu số n theo định nghĩa đang học.",
@@ -681,14 +1185,18 @@
       "G12-CHIII-B10-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "APPLY",
     "hints": [
       "Tính n và trung bình có trọng số, rồi tính tổng \\(\\sum_i f_i(c_i-\\overline{x})^2\\)."
     ],
     "rubric": null,
     "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -698,14 +1206,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Chia n=8, không chia n−1. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Chia n=8, không chia n−1. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P09.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "38"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{19}{3}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{38}{5}\\)"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-P03",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P03",
     "stem": "Trong phép tính phương sai ghép nhóm, cả 10 quan sát đều được đại diện bằng giá trị 6. Phương sai ghép nhóm bằng bao nhiêu? Có chắc phương sai dữ liệu gốc cũng bằng 0 không?",
     "answer_key": "Phương sai ghép nhóm 0; không chắc phương sai dữ liệu gốc bằng 0.",
     "worked_solution": "Trung bình đại diện là 6. Mọi độ lệch đại diện đều bằng 0 nên \\(s^2=0\\). Tuy nhiên, các quan sát thật trong nhóm có thể khác nhau; thay chúng bằng cùng trung điểm đã làm mất thông tin, nên không kết luận phương sai mẫu gốc bằng 0.",
@@ -713,14 +1241,18 @@
       "G12-CHIII-B10-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Nếu mọi giá trị đại diện bằng 6, mỗi độ lệch bằng 0."
     ],
     "rubric": null,
     "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -730,14 +1262,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Phương sai ghép nhóm bằng 0 không chứng minh mọi dữ liệu thô bằng nhau. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Phương sai ghép nhóm bằng 0 không chứng minh mọi dữ liệu thô bằng nhau. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả hai phương sai chắc chắn bằng 0"
+      },
+      {
+        "id": "B",
+        "text": "Phương sai ghép nhóm 6; phương sai gốc không biết"
+      },
+      {
+        "id": "C",
+        "text": "Phương sai ghép nhóm 0; không chắc phương sai gốc bằng 0"
+      },
+      {
+        "id": "D",
+        "text": "Phương sai ghép nhóm 36; phương sai gốc bằng 0"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-P04",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P04",
     "stem": "Đơn vị dữ liệu là giờ. Đơn vị phương sai là gì?",
     "answer_key": "Giờ²",
     "worked_solution": "Phương sai là trung bình của bình phương độ lệch, nên đơn vị là giờ². Chỉ độ lệch chuẩn (căn bậc hai của phương sai) mới có đơn vị giờ.",
@@ -745,14 +1297,18 @@
       "G12-CHIII-B10-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Phương sai bình phương độ lệch có đơn vị giờ."
     ],
     "rubric": null,
     "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -762,14 +1318,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Độ lệch chuẩn mới có đơn vị giờ. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Độ lệch chuẩn mới có đơn vị giờ. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giờ"
+      },
+      {
+        "id": "B",
+        "text": "Không có đơn vị"
+      },
+      {
+        "id": "C",
+        "text": "Căn giờ"
+      },
+      {
+        "id": "D",
+        "text": "Giờ bình phương"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-C03",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-C03",
     "stem": "Trung bình có trọng số của bình phương các giá trị đại diện là \\(\\overline{c^2}=19\\), số trung bình mẫu là \\(\\overline{x}=4\\). Tính phương sai \\(s^2\\).",
     "answer_key": "3",
     "worked_solution": "Dùng công thức rút gọn: \\(s^2=\\overline{c^2}-(\\overline{x})^2=19-4^2=3\\). Ở đây \\(\\overline{c^2}\\) là trung bình có trọng số của bình phương các giá trị đại diện.",
@@ -777,14 +1353,18 @@
       "G12-CHIII-B10-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Lấy trung bình bình phương trừ bình phương trung bình: \\(s^2=\\overline{c^2}-\\overline{x}^{\\,2}\\)."
     ],
     "rubric": null,
     "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -794,14 +1374,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không nhầm trung bình bình phương \\(\\overline{c^2}\\) với bình phương trung bình \\(\\overline{x}^{\\,2}\\). Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không nhầm trung bình bình phương \\(\\overline{c^2}\\) với bình phương trung bình \\(\\overline{x}^{\\,2}\\). Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "15"
+      },
+      {
+        "id": "C",
+        "text": "19"
+      },
+      {
+        "id": "D",
+        "text": "35"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-P05",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P05",
     "stem": "Ba giá trị đại diện \\(c=(10;20;30)\\) có tần số tương ứng \\(f=(2;6;2)\\). Tính trung bình có trọng số của bình phương các giá trị đại diện.",
     "answer_key": "440",
     "worked_solution": "Cỡ mẫu là \\(2+6+2=10\\). Trung bình có trọng số của bình phương các giá trị đại diện là \\(\\frac{2\\cdot10^2+6\\cdot20^2+2\\cdot30^2}{10}=\\frac{4400}{10}=440\\). Không nhầm với bình phương trung bình.",
@@ -809,14 +1409,18 @@
       "G12-CHIII-B10-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Tính tổng \\(\\sum_i f_ic_i^2\\) rồi chia n."
     ],
     "rubric": null,
     "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -826,14 +1430,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Bình phương từng đại diện trước khi nhân tần số. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Bình phương từng đại diện trước khi nhân tần số. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "400"
+      },
+      {
+        "id": "B",
+        "text": "440"
+      },
+      {
+        "id": "C",
+        "text": "220"
+      },
+      {
+        "id": "D",
+        "text": "44"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-P06",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P06",
     "stem": "Nếu tính được \\(s^2\\approx-0{,}000001\\) do làm tròn, có kết luận phương sai âm thật không?",
     "answer_key": "Không",
     "worked_solution": "Không. Theo định nghĩa, \\(s^2\\) là tổng có trọng số của các bình phương độ lệch chia cho n dương, nên không âm. Kết quả âm nhỏ có thể do làm tròn trung gian hoặc sai phép tính; tính lại với đủ chữ số hoặc dùng công thức độ lệch trước khi kết luận.",
@@ -841,14 +1465,18 @@
       "G12-CHIII-B10-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Kiểm phép tính bằng công thức tổng bình phương."
     ],
     "rubric": null,
     "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -858,14 +1486,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Phương sai thật không âm; không tự lấy căn số âm hay luôn ép âm thành 0. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Phương sai thật không âm; không tự lấy căn số âm hay luôn ép âm thành 0. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, vì máy tính đã trả kết quả âm"
+      },
+      {
+        "id": "B",
+        "text": "Có, phương sai có thể âm nếu trung bình âm"
+      },
+      {
+        "id": "C",
+        "text": "Không, cần rà soát làm tròn vì phương sai không âm"
+      },
+      {
+        "id": "D",
+        "text": "Không, phải tự đổi dấu thành số dương mà không kiểm"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-C04",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-C04",
     "stem": "Nếu \\(s^2=9\\) cm², độ lệch chuẩn s là bao nhiêu?",
     "answer_key": "3 cm",
     "worked_solution": "Độ lệch chuẩn là căn không âm của phương sai: \\(s=\\sqrt9=3\\) cm. Đơn vị trở lại cùng đơn vị dữ liệu.",
@@ -873,14 +1521,18 @@
       "G12-CHIII-B10-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Lấy căn bậc hai không âm của \\(s^2\\)."
     ],
     "rubric": null,
     "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -890,14 +1542,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Đơn vị từ cm² trở lại cm. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Đơn vị từ cm² trở lại cm. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-P08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "9 cm"
+      },
+      {
+        "id": "B",
+        "text": "3 cm²"
+      },
+      {
+        "id": "C",
+        "text": "81 cm²"
+      },
+      {
+        "id": "D",
+        "text": "3 cm"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-P07",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P07",
     "stem": "Phương sai 75 phút² cho độ lệch chuẩn xấp xỉ bao nhiêu phút?",
     "answer_key": "8,66 phút",
     "worked_solution": "\\(s=\\sqrt{75}=5\\sqrt3\\approx8{,}66\\) phút. Phương sai có đơn vị phút², còn độ lệch chuẩn có đơn vị phút.",
@@ -905,14 +1577,18 @@
       "G12-CHIII-B10-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính căn √75, làm tròn sau cùng."
     ],
     "rubric": null,
     "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -922,14 +1598,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không viết 75 phút cho độ lệch chuẩn. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không viết 75 phút cho độ lệch chuẩn. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C04.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "8,66 phút"
+      },
+      {
+        "id": "B",
+        "text": "75 phút"
+      },
+      {
+        "id": "C",
+        "text": "37,5 phút"
+      },
+      {
+        "id": "D",
+        "text": "8,66 phút²"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-P08",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P08",
     "stem": "Câu “\\(s=16\\) giờ²” khi \\(s^2=16\\) giờ² sai ở đâu?",
     "answer_key": "s=4 giờ; nhầm giá trị và đơn vị",
     "worked_solution": "16 giờ² là phương sai \\(s^2\\), không phải độ lệch chuẩn s. Lấy căn không âm: \\(s=\\sqrt{16}=4\\) giờ; câu ban đầu sai cả giá trị lẫn đơn vị.",
@@ -937,14 +1633,18 @@
       "G12-CHIII-B10-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Lấy √16 và ghi lại đơn vị gốc."
     ],
     "rubric": null,
     "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -954,14 +1654,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Phương sai và độ lệch chuẩn khác giá trị và đơn vị. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Phương sai và độ lệch chuẩn khác giá trị và đơn vị. Ôn CĐ22 mục 3.3; luyện THPT-G12-B10-C04.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ sai đơn vị: s=16 giờ"
+      },
+      {
+        "id": "B",
+        "text": "Sai cả giá trị và đơn vị: s=4 giờ"
+      },
+      {
+        "id": "C",
+        "text": "Chỉ sai giá trị: s=4 giờ²"
+      },
+      {
+        "id": "D",
+        "text": "Không sai"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-C05",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-C05",
     "stem": "Hai mẫu cùng trung bình/cùng đơn vị có s_A=2, s_B=5. Mẫu nào ít phân tán quanh trung bình theo s?",
     "answer_key": "A",
     "worked_solution": "Theo tiêu chí độ lệch chuẩn, A ít phân tán hơn quanh trung bình vì \\(s_A=2<5=s_B\\), với hai mẫu đo cùng đại lượng và cùng đơn vị. Không suy ra mọi quan sát A đều gần trung bình hơn mọi quan sát B.",
@@ -969,14 +1689,18 @@
       "G12-CHIII-B10-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Hai mẫu cùng trung bình và đơn vị; so s."
     ],
     "rubric": null,
     "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -986,14 +1710,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Chỉ kết luận phân tán quanh trung bình theo s. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-P09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Chỉ kết luận phân tán quanh trung bình theo s. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-P09.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "B"
+      },
+      {
+        "id": "B",
+        "text": "Cả hai như nhau"
+      },
+      {
+        "id": "C",
+        "text": "A"
+      },
+      {
+        "id": "D",
+        "text": "Không thể so sánh dù cùng đơn vị và trung bình"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-P09",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P09",
     "stem": "Trên các đại diện (10,20,30), mẫu A có tần số (1,8,1), mẫu B có (3,4,3). Tính trung bình, phương sai và so sánh.",
     "answer_key": "Trung bình đều 20; phương sai A=20, B=60; A ít phân tán hơn.",
     "worked_solution": "Hai mẫu đều có 10 quan sát và tần số đối xứng quanh 20 nên trung bình đều bằng 20. Với A, \\(s_A^2=\\frac{1\\cdot100+8\\cdot0+1\\cdot100}{10}=20\\). Với B, \\(s_B^2=\\frac{3\\cdot100+4\\cdot0+3\\cdot100}{10}=60\\). A ít phân tán hơn quanh trung bình theo phương sai (và độ lệch chuẩn).",
@@ -1001,14 +1745,18 @@
       "G12-CHIII-B10-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Tính trung bình 20 rồi bình phương độ lệch có trọng số."
     ],
     "rubric": null,
     "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1018,14 +1766,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không dùng tổng tần số như giá trị dữ liệu; chia n=10. Ôn CĐ22 mục 3.4; luyện THPT-G10-TOPSTAT-ADD05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không dùng tổng tần số như giá trị dữ liệu; chia n=10. Ôn CĐ22 mục 3.4; luyện THPT-G10-TOPSTAT-ADD05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trung bình đều 20; phương sai A=60, B=20; B ít phân tán"
+      },
+      {
+        "id": "B",
+        "text": "Trung bình đều 20; phương sai A=B=20"
+      },
+      {
+        "id": "C",
+        "text": "Trung bình A=10, B=30; phương sai A=20, B=60"
+      },
+      {
+        "id": "D",
+        "text": "Trung bình đều 20; phương sai A=20, B=60; A ít phân tán"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-P10",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P10",
     "stem": "Nếu A có s thấp nhưng điểm trung bình cũng thấp hơn mục tiêu tối thiểu, có thể kết luận A tốt hơn không?",
     "answer_key": "Không",
     "worked_solution": "Không. Độ lệch chuẩn thấp chỉ cho biết kết quả ít phân tán quanh trung bình, không cho biết trung bình đạt mục tiêu. Một mẫu tập trung đều ở mức thấp vẫn có độ lệch chuẩn nhỏ nhưng không đạt yêu cầu.",
@@ -1033,14 +1801,18 @@
       "G12-CHIII-B10-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So mức trung bình với mục tiêu và độ phân tán riêng."
     ],
     "rubric": null,
     "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1050,14 +1822,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Ổn định không đồng nghĩa đạt yêu cầu chất lượng. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-C05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Ổn định không đồng nghĩa đạt yêu cầu chất lượng. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-C05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, phải xét cả mục tiêu trung bình"
+      },
+      {
+        "id": "B",
+        "text": "Có, vì s thấp luôn tốt hơn"
+      },
+      {
+        "id": "C",
+        "text": "Có, vì trung bình không liên quan"
+      },
+      {
+        "id": "D",
+        "text": "Không, vì s thấp chứng tỏ dữ liệu luôn sai"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-C06",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-C06",
     "stem": "A có x̄=20, s=4; B có x̄=200, s=20. So s trực tiếp 20>4 để kết luận B có rủi ro tương đối lớn hơn có đủ không?",
     "answer_key": "Không",
     "worked_solution": "Không. B có độ lệch chuẩn tuyệt đối lớn hơn, nhưng quy mô trung bình cũng lớn hơn. Nếu đại lượng có gốc 0 thực sự và trung bình dương có ý nghĩa, phần đọc thêm cho phép so sánh hệ số biến thiên: \\(CV_A=4/20=20\\%\\), \\(CV_B=20/200=10\\%\\). A biến động tương đối lớn hơn theo thước đo này; không kết luận về mọi loại rủi ro.",
@@ -1065,14 +1857,18 @@
       "G12-CHIII-B10-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So trung bình khác nhau nhiều; độ lệch chuẩn tuyệt đối không đủ."
     ],
     "rubric": null,
     "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1082,14 +1878,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không suy rủi ro tương đối trực tiếp; CV chỉ tham khảo có điều kiện. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-P11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không suy rủi ro tương đối trực tiếp; CV chỉ tham khảo có điều kiện. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-P11.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đủ, vì 20 lớn hơn 4"
+      },
+      {
+        "id": "B",
+        "text": "Không đủ, cần xét độ phân tán so với mức trung bình và bối cảnh"
+      },
+      {
+        "id": "C",
+        "text": "Đủ, vì trung bình B lớn hơn A"
+      },
+      {
+        "id": "D",
+        "text": "Không đủ, vì s không bao giờ có đơn vị"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-P11",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P11",
     "stem": "Trong phần đọc thêm “Em có biết?”, hệ số biến thiên là \\(CV=s/\\overline{x}\\). Với đại lượng có gốc 0 thực sự, \\(\\overline{x}=20,\\ s=4\\), tính CV.",
     "answer_key": "0,2 = 20%",
     "worked_solution": "Giả sử đại lượng được đo trên thang có gốc 0 thực sự và trung bình dương có ý nghĩa. Khi đó \\(CV=\\frac{s}{\\overline{x}}=\\frac4{20}=0{,}2=20\\%\\). Hệ số không có đơn vị; đây là nội dung đọc thêm.",
@@ -1097,14 +1913,18 @@
       "G12-CHIII-B10-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Dùng CV=s/x̄ với trung bình dương trong bối cảnh phù hợp."
     ],
     "rubric": null,
     "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1114,14 +1934,34 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "CV là tỉ số không đơn vị, chỉ tham khảo, không Core. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "CV là tỉ số không đơn vị, chỉ tham khảo, không Core. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-P12.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "5%"
+      },
+      {
+        "id": "B",
+        "text": "80%"
+      },
+      {
+        "id": "C",
+        "text": "20%"
+      },
+      {
+        "id": "D",
+        "text": "4%"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B10-P12",
-    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P12",
     "stem": "Nếu x̄=0, có được dùng CV=s/x̄ không?",
     "answer_key": "Không",
     "worked_solution": "Không. Khi \\(\\overline{x}=0\\), biểu thức \\(CV=s/\\overline{x}\\) không xác định. Ngay cả khi trung bình gần 0 hoặc âm, cũng không nên sử dụng máy móc thước đo này.",
@@ -1129,14 +1969,18 @@
       "G12-CHIII-B10-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Kiểm mẫu số trước khi chia."
     ],
     "rubric": null,
     "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1146,10 +1990,30 @@
         "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
         "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHIII-B09-B10-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu trung bình 0, CV không xác định; không dùng máy móc cho trung bình âm. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-C06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu trung bình 0, CV không xác định; không dùng máy móc cho trung bình âm. Ôn CĐ22 mục 3.4; luyện THPT-G12-B10-C06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, CV=0"
+      },
+      {
+        "id": "B",
+        "text": "Có, CV=s"
+      },
+      {
+        "id": "C",
+        "text": "Có, CV=1"
+      },
+      {
+        "id": "D",
+        "text": "Không, mẫu số bằng 0"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B09-T01",
