@@ -70,10 +70,10 @@
   },
   {
     "item_id": "THPT-G10-CHIV-RD1-02",
-    "content_version": "SGK-G10-CHIV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIV-RD1-02",
-    "stem": "Cho \\vec u khác \\vec0, và một vectơ \\vec v thỏa \\vec u+\\vec v=\\vec u. Phát biểu nào đúng theo quy ước vectơ-không SBT KNTT? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "A",
-    "worked_solution": "Trừ cùng vectơ u ở hai vế cho v=0. Theo quy ước SBT B07, vectơ-không có độ dài 0 và cùng hướng với mọi vectơ.",
+    "content_version": "SGK-G10-CHIV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIV-RD1-02.DELTA03",
+    "stem": "Cho \\(\\vec u\\ne\\vec0\\) và \\(\\vec v\\) thỏa \\(\\vec u+\\vec v=\\vec u\\). Phát biểu nào đúng về vectơ-không theo quy ước đã học? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
+    "answer_key": "\\(\\vec v=\\vec0\\), độ dài 0, cùng hướng với \\(\\vec u\\) theo quy ước.",
+    "worked_solution": "Trừ \\(\\vec u\\) ở hai vế, được \\(\\vec v=\\vec0\\). Vectơ-không có độ dài 0 và theo quy ước cùng hướng với mọi vectơ.",
     "skill_ids": [
       "G10-B07-ZERO",
       "G10-B07-DEFINITION"
@@ -82,7 +82,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Trừ vectơ u ở hai vế."
+      "Trừ cùng vectơ ở hai vế."
     ],
     "rubric": "MCQ 1đ.",
     "interaction": {
@@ -118,22 +118,23 @@
     "options": [
       {
         "id": "A",
-        "text": "v=u."
+        "text": "\\(\\vec v=\\vec u\\)."
       },
       {
         "id": "B",
-        "text": "v là vectơ-không, độ dài 0, quy ước cùng hướng với u."
+        "text": "\\(\\vec v=\\vec0\\), độ dài 0, cùng hướng với \\(\\vec u\\) theo quy ước."
       },
       {
         "id": "C",
-        "text": "v ngược hướng u và khác 0."
+        "text": "\\(\\vec v\\) ngược hướng \\(\\vec u\\) và khác \\(\\vec0\\)."
       },
       {
         "id": "D",
-        "text": "Độ dài v bằng độ dài u."
+        "text": "Độ dài \\(\\vec v\\) bằng độ dài \\(\\vec u\\)."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "Legacy answer letter conflicted with current choice order. Verified mathematics and aligned answer_key to the existing correct_option_id; scoped notation corrected. Historical source/placement/exposure unchanged."
   },
   {
     "item_id": "THPT-G10-CHIV-RD1-03",
@@ -476,10 +477,10 @@
   },
   {
     "item_id": "THPT-G10-CHIV-RD1-08",
-    "content_version": "SGK-G10-CHIV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIV-RD1-08",
-    "stem": "Cho \\vec v khác \\vec0, |\\vec v|=3. Đặt \\vec u=2\\vec v và \\vec w=-3\\vec u+4\\vec v. Kết luận đúng là: Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "B",
-    "worked_solution": "w=-3(2v)+4v=-2v; do v khác 0, w ngược hướng v và |w|=2×3=6.",
+    "content_version": "SGK-G10-CHIV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIV-RD1-08.DELTA03",
+    "stem": "Cho \\(\\vec v\\ne\\vec0\\), \\(\\lVert\\vec v\\rVert=3\\). Đặt \\(\\vec u=2\\vec v\\) và \\(\\vec w=-3\\vec u+4\\vec v\\). Chọn kết luận đúng; tự giải thích trước khi nộp toàn bài.",
+    "answer_key": "\\(\\vec w=-2\\vec v\\), ngược hướng với \\(\\vec v\\), độ dài 6.",
+    "worked_solution": "Thế \\(\\vec u=2\\vec v\\), được \\(\\vec w=-6\\vec v+4\\vec v=-2\\vec v\\). Vì \\(\\vec v\\ne\\vec0\\), hệ số âm cho biết hai vectơ ngược hướng; độ dài \\(\\lVert\\vec w\\rVert=2\\cdot3=6\\).",
     "skill_ids": [
       "G10-B09-COLLINEAR",
       "G10-B09-DISTRIBUTION",
@@ -490,7 +491,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Thay u bằng 2v và thu hệ số."
+      "Thế \\(\\vec u\\) theo \\(\\vec v\\), rồi xét dấu hệ số."
     ],
     "rubric": "MCQ 1đ.",
     "interaction": {
@@ -526,22 +527,23 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\vec w=2\\vec v\\), cùng hướng v."
+        "text": "\\(\\vec w=2\\vec v\\), cùng hướng với \\(\\vec v\\)."
       },
       {
         "id": "B",
-        "text": "\\(\\vec w=-6\\vec v\\), dài 18."
+        "text": "\\(\\vec w=-6\\vec v\\), độ dài 18."
       },
       {
         "id": "C",
-        "text": "\\(\\vec w=\\vec0\\)"
+        "text": "\\(\\vec w=\\vec0\\)."
       },
       {
         "id": "D",
-        "text": "\\(\\vec w=-2\\vec v\\), ngược hướng v, dài 6."
+        "text": "\\(\\vec w=-2\\vec v\\), ngược hướng với \\(\\vec v\\), độ dài 6."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "Legacy answer letter conflicted with current choice order. Verified mathematics and aligned answer_key to the existing correct_option_id; scoped notation corrected. Historical source/placement/exposure unchanged."
   },
   {
     "item_id": "THPT-G10-CHIV-RD1-09",
@@ -749,10 +751,10 @@
   },
   {
     "item_id": "THPT-G10-CHIV-RD1-12",
-    "content_version": "SGK-G10-CHIV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIV-RD1-12",
-    "stem": "Ba điểm A(-1;2), B(3;6), C(7;10). Phát biểu nào đúng? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "A",
-    "worked_solution": "Trung điểm AC là ((-1+7)/2,(2+10)/2)=(3,6)=B; AB=(4,4)=BC.",
+    "content_version": "SGK-G10-CHIV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIV-RD1-12.DELTA03",
+    "stem": "Ba điểm \\(A(-1;2), B(3;6), C(7;10)\\). Chọn phát biểu đúng; tự giải thích trước khi nộp toàn bài.",
+    "answer_key": "B là trung điểm của AC và \\(\\overrightarrow{AB}=\\overrightarrow{BC}\\).",
+    "worked_solution": "Trung điểm AC có tọa độ \\(\\left(\\frac{-1+7}{2};\\frac{2+10}{2}\\right)=(3;6)\\), chính là B. Tính \\(\\overrightarrow{AB}=(4;4)\\) và \\(\\overrightarrow{BC}=(4;4)\\); hai vectơ bằng nhau.",
     "skill_ids": [
       "G10-B10-VECTOR_COORDS",
       "G10-B10-MIDPOINT_CENTROID"
@@ -761,7 +763,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "So hai hiệu tọa độ liên tiếp."
+      "Tính trung điểm AC và hai vectơ bằng phép trừ tọa độ."
     ],
     "rubric": "MCQ 1đ.",
     "interaction": {
@@ -797,22 +799,23 @@
     "options": [
       {
         "id": "A",
-        "text": "B là trung điểm nhưng hai vectơ AB,BC ngược hướng."
+        "text": "B là trung điểm của AC nhưng \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{BC}\\) ngược hướng."
       },
       {
         "id": "B",
-        "text": "A là trung điểm BC."
+        "text": "A là trung điểm của BC."
       },
       {
         "id": "C",
-        "text": "AB và BC không cùng phương."
+        "text": "\\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{BC}\\) không cùng phương."
       },
       {
         "id": "D",
-        "text": "B là trung điểm AC và \\(\\overrightarrow{AB}=\\overrightarrow{BC}\\)."
+        "text": "B là trung điểm của AC và \\(\\overrightarrow{AB}=\\overrightarrow{BC}\\)."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "Legacy answer letter conflicted with current choice order. Verified mathematics and aligned answer_key to the existing correct_option_id; scoped notation corrected. Historical source/placement/exposure unchanged."
   },
   {
     "item_id": "THPT-G10-CHIV-RD1-13",
@@ -951,10 +954,10 @@
   },
   {
     "item_id": "THPT-G10-CHIV-RD1-15",
-    "content_version": "SGK-G10-CHIV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIV-RD1-15",
-    "stem": "Cho \\vec u=(1;-3), \\vec v=(-2;4). Tìm tham số t để hai tọa độ của \\vec w=t\\vec u+\\vec v bằng nhau; đồng thời chọn đúng độ dài |w|. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "B",
-    "worked_solution": "w=(t−2,−3t+4). Đặt t−2=−3t+4 được 4t=6, t=3/2. Khi đó w=(−1/2,−1/2), có độ dài √2/2.",
+    "content_version": "SGK-G10-CHIV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIV-RD1-15.DELTA03",
+    "stem": "Cho \\(\\vec u=(1;-3)\\), \\(\\vec v=(-2;4)\\). Tìm tham số t để hai tọa độ của \\(\\vec w=t\\vec u+\\vec v\\) bằng nhau; đồng thời chọn đúng độ dài \\(\\lVert\\vec w\\rVert\\). Tự giải thích trước khi nộp toàn bài.",
+    "answer_key": "\\(t=\\frac32,\\ \\lVert\\vec w\\rVert=\\frac{\\sqrt2}{2}\\).",
+    "worked_solution": "Ta có \\(\\vec w=(t-2;-3t+4)\\). Hai tọa độ bằng nhau khi \\(t-2=-3t+4\\), tức \\(4t=6\\), suy ra \\(t=\\frac32\\). Khi đó \\(\\vec w=(-\\frac12;-\\frac12)\\), nên \\(\\lVert\\vec w\\rVert=\\sqrt{\\frac14+\\frac14}=\\frac{\\sqrt2}{2}\\).",
     "skill_ids": [
       "G10-B10-OPERATIONS",
       "G10-B10-NORM_DISTANCE"
@@ -963,7 +966,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Đặt hai tọa độ của w bằng nhau rồi tính chuẩn."
+      "Lập phương trình bằng cách cho hai tọa độ bằng nhau, rồi tính độ dài."
     ],
     "rubric": "MCQ 1đ; lời giải nêu thêm vectơ và độ dài để đối chiếu outcome.",
     "interaction": {
@@ -999,22 +1002,23 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(t=1,\\ \\lVert\\vec w\\rVert=\\frac{\\sqrt2}{2}\\)"
+        "text": "\\(t=1,\\ \\lVert\\vec w\\rVert=\\frac{\\sqrt2}{2}\\)."
       },
       {
         "id": "B",
-        "text": "\\(t=2,\\ \\lVert\\vec w\\rVert=\\sqrt5\\)"
+        "text": "\\(t=2,\\ \\lVert\\vec w\\rVert=\\sqrt5\\)."
       },
       {
         "id": "C",
-        "text": "\\(t=\\frac32,\\ \\lVert\\vec w\\rVert=\\frac{\\sqrt2}{2}\\)"
+        "text": "\\(t=\\frac32,\\ \\lVert\\vec w\\rVert=\\frac{\\sqrt2}{2}\\)."
       },
       {
         "id": "D",
-        "text": "\\(t=3,\\ \\lVert\\vec w\\rVert=2\\)"
+        "text": "\\(t=3,\\ \\lVert\\vec w\\rVert=2\\)."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "Legacy answer letter conflicted with current choice order. Verified mathematics and aligned answer_key to the existing correct_option_id; scoped notation corrected. Historical source/placement/exposure unchanged."
   },
   {
     "item_id": "THPT-G10-CHIV-RD1-16",
