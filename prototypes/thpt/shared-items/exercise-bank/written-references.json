@@ -5530,7 +5530,16 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B12-ABS_ERROR",
+      "G10-B12-REL_ERROR",
+      "G10-B12-ROUNDING"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-CHV-W12",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHV-W13",
@@ -5544,7 +5553,18 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B13-MEAN",
+      "G10-B13-MEDIAN",
+      "G10-B13-QUARTILES",
+      "G10-B13-MODE",
+      "G10-B13-INTERPRETATION"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-CHV-W13",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHV-W14-ANCHOR",
@@ -5558,7 +5578,17 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B14-VARIANCE",
+      "G10-B14-STDDEV",
+      "G10-B14-COMPARISON",
+      "G10-B14-RANGE_IQR"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-CHV-W14-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHIII-W08-01",
@@ -5572,7 +5602,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B08-FREQUENCY-TABLE"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-CHIII-W08-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHIII-W08-02-ANCHOR",
@@ -5586,7 +5623,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B08-INTERPRETATION"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-CHIII-W08-02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHIII-W09-01",
@@ -5600,7 +5644,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B09-GROUPED-MEAN",
+      "G11-B09-GROUPED-MEDIAN"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-CHIII-W09-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHIII-W09-02-ANCHOR",
@@ -5614,7 +5666,16 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B09-GROUPED-QUARTILES",
+      "G11-B09-GROUPED-MODE"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-CHIII-W09-02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_MATH_CHECKED_SCOPED_PED_DELTA_PENDING",
+    "review_note": "Math correct; source calls Q1/Q3 estimates of central location, should distinguish quarter positions and mode; rubric gives only one point to mode plus interpretation. Targeted wording/rubric review before final cutover."
   },
   {
     "item_id": "THPT-G12-B09-W01",
@@ -5628,7 +5689,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHIII-B09-O01"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B09-W02",
@@ -5642,7 +5710,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHIII-B09-O02"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B09-W03",
@@ -5656,7 +5731,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHIII-B09-O03"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-W03",
+    "status": "AUTHOR_WRITTEN_MATH_CHECKED_SCOPED_PED_DELTA_PENDING",
+    "review_note": "Math correct; rubric explicitly awards 1 point for increase 30 although stem only asks before/after and IQR. Clarify requirement or allocate the point to comparison; do not silently alter rubric."
   },
   {
     "item_id": "THPT-G12-B09-W04",
@@ -5670,7 +5753,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHIII-B09-O04"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-W04",
+    "status": "AUTHOR_WRITTEN_MATH_CHECKED_SCOPED_PED_DELTA_PENDING",
+    "review_note": "Math correct; rubric asks explanation of boundary although stem asks identify groups. Clarify wording/rubric before final cutover."
   },
   {
     "item_id": "THPT-G12-B09-W05",
@@ -5684,7 +5775,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIII-B09-O05"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B09-W06",
@@ -5698,7 +5796,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIII-B09-O06"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B10-W01",
@@ -5712,7 +5817,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHIII-B10-O01"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B10-W02",
@@ -5726,7 +5838,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHIII-B10-O02"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B10-W03",
@@ -5740,7 +5859,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHIII-B10-O03"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-W03",
+    "status": "AUTHOR_WRITTEN_MATH_CHECKED_SCOPED_PED_DELTA_PENDING",
+    "review_note": "Math correct; rubric requires cross-check by original formula while stem asks explain checking. Clarify accepted explanations versus explicit computation at final scoped review."
   },
   {
     "item_id": "THPT-G12-B10-W04",
@@ -5754,7 +5881,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHIII-B10-O04"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B10-W05",
@@ -5768,7 +5902,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIII-B10-O05"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B10-W06",
@@ -5782,7 +5923,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIII-B10-O06"
+    ],
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-SUPP-E01-W01",
