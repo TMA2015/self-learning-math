@@ -954,5 +954,245 @@
     "order": 9,
     "item_id": "THPT-G12-B10-P08",
     "outcome_id": "G12-CHIII-B10-O04"
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 10,
+    "item_id": "THPT-G10-B12-C01",
+    "outcome_id": "G10-B12-ABS_ERROR",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 11,
+    "item_id": "THPT-G10-B12-P02",
+    "outcome_id": "G10-B12-ROUNDING",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 12,
+    "item_id": "THPT-G10-B12-P04",
+    "outcome_id": "G10-B12-APPROX_CONCEPT",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 13,
+    "item_id": "THPT-G10-B13-P01",
+    "outcome_id": "G10-B13-MEAN",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 14,
+    "item_id": "THPT-G10-B13-C02",
+    "outcome_id": "G10-B13-MEDIAN",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 15,
+    "item_id": "THPT-G10-B13-P02",
+    "outcome_id": "G10-B13-QUARTILES",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 16,
+    "item_id": "THPT-G10-B13-P04",
+    "outcome_id": "G10-B13-INTERPRETATION",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 17,
+    "item_id": "THPT-G10-B14-P01",
+    "outcome_id": "G10-B14-RANGE_IQR",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 18,
+    "item_id": "THPT-G10-B14-P06",
+    "outcome_id": "G10-B14-VARIANCE",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 19,
+    "item_id": "THPT-G10-B14-P03",
+    "outcome_id": "G10-B14-OUTLIERS",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 20,
+    "item_id": "THPT-G10-B14-P04",
+    "outcome_id": "G10-B14-COMPARISON",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 21,
+    "item_id": "THPT-G11-B08-P08",
+    "outcome_id": "G11-B08-GROUPED-DEFINITION",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 22,
+    "item_id": "THPT-G11-B08-P01",
+    "outcome_id": "G11-B08-CLASS-BOUNDARIES",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 23,
+    "item_id": "THPT-G11-B08-P02",
+    "outcome_id": "G11-B08-GROUP-WIDTH",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 24,
+    "item_id": "THPT-G11-B08-P04",
+    "outcome_id": "G11-B08-INTERPRETATION",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 25,
+    "item_id": "THPT-G11-B09-C01",
+    "outcome_id": "G11-B09-REPRESENTATIVE",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 26,
+    "item_id": "THPT-G11-B09-P01",
+    "outcome_id": "G11-B09-GROUPED-MEAN",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 27,
+    "item_id": "THPT-G11-B09-P06",
+    "outcome_id": "G11-B09-CUMULATIVE",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 28,
+    "item_id": "THPT-G11-B09-P09",
+    "outcome_id": "G11-B09-MODE-CONDITIONS",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 29,
+    "item_id": "THPT-G11-B09-P03",
+    "outcome_id": "G11-B09-GROUPED-QUARTILES",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 30,
+    "item_id": "THPT-G11-B09-P10",
+    "outcome_id": "G11-B09-INTERPRETATION",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 31,
+    "item_id": "THPT-G12-B09-P01",
+    "outcome_id": "G12-CHIII-B09-O01",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 32,
+    "item_id": "THPT-G12-B09-P05",
+    "outcome_id": "G12-CHIII-B09-O03",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 33,
+    "item_id": "THPT-G12-B09-P07",
+    "outcome_id": "G12-CHIII-B09-O04",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 34,
+    "item_id": "THPT-G12-B09-P09",
+    "outcome_id": "G12-CHIII-B09-O05",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 35,
+    "item_id": "THPT-G12-B09-P11",
+    "outcome_id": "G12-CHIII-B09-O06",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 36,
+    "item_id": "THPT-G12-B10-P01",
+    "outcome_id": "G12-CHIII-B10-O01",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 37,
+    "item_id": "THPT-G12-B10-P05",
+    "outcome_id": "G12-CHIII-B10-O03",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 38,
+    "item_id": "THPT-G12-B10-P09",
+    "outcome_id": "G12-CHIII-B10-O05",
+    "candidate_added": true
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 39,
+    "item_id": "THPT-G12-B10-P11",
+    "outcome_id": "G12-CHIII-B10-O06",
+    "candidate_added": true
   }
 ]
