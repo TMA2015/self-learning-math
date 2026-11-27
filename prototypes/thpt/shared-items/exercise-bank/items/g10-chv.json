@@ -531,16 +531,17 @@
   {
     "item_id": "THPT-G10-B13-P06",
     "content_version": "R01",
-    "stem": "Hai nhóm có số liệu: A gồm 6, 7, 8, 9, 10; B gồm 6, 7, 8, 9, 30. So sánh số trung bình và trung vị của hai nhóm.",
-    "answer_key": "Nhóm A: \\(\\bar x_A=8,\\ \\mathrm{Me}_A=8\\); nhóm B: \\(\\bar x_B=12,\\ \\mathrm{Me}_B=8\\).",
-    "worked_solution": "\\(\\bar x_A=\\frac{40}{5}=8\\), \\(\\bar x_B=\\frac{60}{5}=12\\). Mỗi nhóm có 5 quan sát đã sắp tăng dần và cùng có giá trị thứ 3 bằng 8, nên trung vị đều bằng 8. Thay 10 bằng 30 làm trung bình tăng \\(\\frac{30-10}{5}=4\\) nhưng không làm đổi trung vị.",
+    "stem": "Hai cửa hàng ghi số sản phẩm bán được trong 5 ngày. Cửa hàng A: 6, 7, 8, 9, 10. Cửa hàng B: 2, 3, 4, 5, x (x là số nguyên không âm). Biết số trung bình của hai mẫu bằng nhau. (a) Tìm x và trung vị của mỗi mẫu. (b) Người quản lý nói: “Hai cửa hàng có số bán điển hình mỗi ngày giống nhau vì trung bình bằng nhau”. Hãy nhận xét dựa trên cả hai số đặc trưng. (c) Nếu muốn biết tổng số sản phẩm bán trong 5 ngày, cần dùng số đặc trưng nào cùng với số ngày?",
+    "answer_key": "\\(x=26\\); cả hai trung bình 8, trung vị A bằng 8, B bằng 4. Cùng trung bình không có nghĩa cùng mức bán điển hình; B có một ngày cao nổi bật. Tổng số bán mỗi cửa hàng bằng \\(5\\cdot8=40\\); dùng số trung bình và số ngày.",
+    "worked_solution": "Tổng mẫu A là \\(6+7+8+9+10=40\\), nên trung bình bằng 8. Vì B cũng có 5 quan sát và cùng trung bình, tổng mẫu B phải bằng 40. Do đó \\(2+3+4+5+x=40\\), suy ra \\(x=26\\), thỏa điều kiện số nguyên không âm. Hai dãy đã được sắp tăng dần; giá trị thứ ba của A là 8, của B là 4, nên trung vị lần lượt là 8 và 4. Ở B, bốn trong năm ngày bán không quá 5 sản phẩm; ngày bán 26 sản phẩm kéo trung bình lên 8. Vì vậy không thể chỉ dựa vào trung bình để nói mức bán điển hình hằng ngày giống nhau; trung vị giúp mô tả vị trí giữa của mẫu và ít bị ngày bán rất cao chi phối. Nếu cần tính tổng số bán, từ định nghĩa trung bình ta lấy số trung bình nhân số quan sát, được \\(8\\cdot5=40\\) sản phẩm cho mỗi cửa hàng. Không dùng trung vị nhân số ngày để tính tổng.",
     "skill_ids": [
       "G10-B13-INTERPRETATION"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Cùng bốn số đầu; 10 đổi thành 30, ảnh hưởng tới tổng nhưng không đổi phần tử thứ ba."
+      "Cùng số quan sát và cùng trung bình thì tổng hai mẫu có quan hệ gì?",
+      "Sau khi tìm x, sắp mẫu và so sánh giá trị ở vị trí giữa."
     ],
     "rubric": null,
     "interaction": {
@@ -557,7 +558,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho trung bình và trung vị luôn đổi cùng nhau, thay một cực trị mà giữ thứ tự giữa, tính lại hai đại lượng. Ôn Bài 13 §2.1; luyện THPT-G10-CHV-TRY09."
+    "remediation": "Phân biệt ý nghĩa của trung bình và trung vị: trung bình liên hệ trực tiếp với tổng, trung vị mô tả vị trí giữa. Ôn Bài 13; luyện THPT-G10-CHV-TRY09."
   },
   {
     "item_id": "THPT-G10-B14-C01",
