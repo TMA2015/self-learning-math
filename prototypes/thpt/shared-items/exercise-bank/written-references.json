@@ -6943,7 +6943,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-YE-O01"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Lời giải tính đúng cực trị; cần phân biệt giá trị cực trị với tọa độ điểm cực trị, mô tả nét phác rõ hơn. Gần trùng M01 về đạo hàm, nhưng yêu cầu tự luận bổ sung cực trị và đồ thị."
   },
   {
     "item_id": "THPT-G12-YE-W02",
@@ -6957,7 +6965,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-YE-O01"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-YE-W03",
@@ -6971,7 +6986,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-YE-O02"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-YE-W04",
@@ -6985,7 +7007,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-YE-O02"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-YE-W05",
@@ -6999,7 +7028,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-YE-O03"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-YE-W06",
@@ -7013,7 +7049,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-YE-O03"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Cụm 'hai parabol–đường thẳng' trong đề chưa chuẩn: một parabol và một đường thẳng."
   },
   {
     "item_id": "THPT-G12-YE-W07",
@@ -7027,7 +7071,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-SGK-YE-O03"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W07",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-YE-W08",
@@ -7041,7 +7092,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-SGK-YE-O04"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W08",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Lời giải/rubric bắt buộc định thức hoặc vectơ; ưu tiên cách SGK: đáy ABC vuông tại A có S=3, AD vuông góc đáy dài 4, V=4. Chấp nhận cách đúng khác, không bắt buộc định thức ngoài lộ trình."
   },
   {
     "item_id": "THPT-G12-YE-W09",
@@ -7055,7 +7114,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-YE-O04"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W09",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-YE-W10",
@@ -7069,7 +7135,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-YE-O04"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W10",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-YE-W11",
@@ -7083,7 +7156,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "UNDERSTAND",
+    "skill_ids": [
+      "G12-SGK-YE-O04"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W11",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-YE-W12",
@@ -7097,7 +7177,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-SGK-YE-O04"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W12",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-YE-W13",
@@ -7111,7 +7198,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-SGK-YE-O04"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W13",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-YE-W14",
@@ -7125,7 +7219,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-YE-O05"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W14",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Các số tính đúng theo đại diện lớp; phân biệt giá trị thống kê của mẫu ghép nhóm với ước lượng đại lượng của mẫu gốc. Chuẩn hóa dấu phẩy thập phân."
   },
   {
     "item_id": "THPT-G12-YE-W15",
@@ -7139,7 +7241,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-YE-O06"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W15",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-YE-W16",
@@ -7153,6 +7262,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-YE-O06"
+    ],
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W16",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Nêu rõ lấy ngẫu nhiên đều ở mỗi lượt; xác suất hiện tại dựa trên giả thiết này."
   }
 ]
