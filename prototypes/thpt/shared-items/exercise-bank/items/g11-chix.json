@@ -3378,9 +3378,9 @@
   },
   {
     "item_id": "THPT-G11-B31-KFT01",
-    "content_version": "SOURCE_BLOB_20f6b47a4f56a1531ee695fde11953edfb9661bb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một vật có tọa độ \\(s(t)=3t^2+2t\\) (m), với t tính bằng giây. Tính vận tốc tức thời tại \\(t=1\\) **bằng định nghĩa**. Vì sao phải rút gọn h trước khi lấy giới hạn? Nếu \\(f(1)=5\\) và \\(f'(1)=8\\), phương trình tiếp tuyến của đồ thị \\(y=f(x)\\) tại x=1 là gì?",
-    "answer_key": "v(1)=8 m/s; thương sai phân cần h≠0; tiếp tuyến y−5=8(x−1).",
+    "content_version": "SGK-G11-CHIX-BANK-CANDIDATE-20261127-THPT-G11-B31-KFT01",
+    "stem": "Một vật có tọa độ \\(s(t)=3t^2+2t\\) (m), với t tính bằng giây. Tính vận tốc tức thời tại \\(t=1\\) **bằng định nghĩa**. Vì sao phải rút gọn h trước khi lấy giới hạn? Nếu \\(f(1)=5\\) và \\(f'(1)=8\\), phương trình tiếp tuyến của đồ thị \\(y=f(x)\\) tại x=1 là gì? Chọn phương án đúng sau khi tự giải thích.",
+    "answer_key": "\\(v(1)=8\\) m/s; thương sai phân cần \\(h\\ne0\\); tiếp tuyến \\(y-5=8(x-1)\\).",
     "worked_solution": "**Đối chiếu sau khi thử:** \\(s(1)=5\\) và \\(s(1+h)=3(1+h)^2+2(1+h)=5+8h+3h^2\\). Với \\(h\\ne0\\),\n\\[\n\\frac{s(1+h)-s(1)}h=\\frac{8h+3h^2}h=8+3h.\n\\]\nKhông đặt h=0 trong thương ban đầu vì mẫu bằng 0. Sau khi rút gọn với h khác 0, lấy giới hạn khi h→0 được \\(v(1)=8\\) m/s. Tiếp tuyến của đồ thị \\(y=f(x)\\) qua điểm (1;5) có hệ số góc 8, nên \\(y-5=8(x-1)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -3390,11 +3390,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Khai triển s(1+h), trừ s(1), chia cho h khác 0 rồi mới lấy giới hạn."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3411,13 +3417,32 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(v(1)=5\\) m/s; tiếp tuyến \\(y-5=5(x-1)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(v(1)=8\\) m/s; thương sai phân cần \\(h\\ne0\\); tiếp tuyến \\(y-5=8(x-1)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(v(1)=8\\) m/s; thay h=0 trực tiếp vào thương; tiếp tuyến \\(y=8x\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(v(1)=3\\) m/s; tiếp tuyến \\(y-5=3(x-1)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-B32-KFT01",
-    "content_version": "SOURCE_BLOB_078a5d9aca09954fd2b451508152147f6a655015_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tính đạo hàm của \\(y=(x+1)\\cos(2x)\\), \\(z=\\ln(5-x)\\), \\(w=e^{x^2}\\), ghi điều kiện xác định. Hãy nêu mỗi biểu thức dùng quy tắc ngoài nào và vì sao.",
-    "answer_key": "y′=cos(2x)−2(x+1)sin(2x), quy tắc tích; z′=−1/(5−x), x<5, log hàm hợp; w′=2xe^(x²), mũ hàm hợp.",
+    "content_version": "SGK-G11-CHIX-BANK-CANDIDATE-20261127-THPT-G11-B32-KFT01",
+    "stem": "Tính đạo hàm của \\(y=(x+1)\\cos(2x)\\), \\(z=\\ln(5-x)\\), \\(w=e^{x^2}\\), ghi điều kiện xác định. Hãy nêu mỗi biểu thức dùng quy tắc ngoài nào và vì sao. Chọn phương án đúng sau khi tự giải thích.",
+    "answer_key": "\\(y'=\\cos2x-2(x+1)\\sin2x\\) (tích, \\(\\mathbb R\\)); \\(z'=-\\frac1{5-x}\\) (hàm hợp, \\(x<5\\)); \\(w'=2xe^{x^2}\\) (hàm hợp, \\(\\mathbb R\\)).",
     "worked_solution": "**Đối chiếu sau khi thử:** \\(y\\) xác định trên \\(\\mathbb R\\). Vì y là tích của x+1 và cos(2x), dùng quy tắc tích; khi tính đạo hàm cos(2x) dùng quy tắc hàm hợp: \\((\\cos(2x))'=-2\\sin(2x)\\). Do đó \\(y'=\\cos(2x)-2(x+1)\\sin(2x)\\).\n\nVới z, điều kiện \\(5-x>0\\), tức x<5. Hàm ngoài là ln, hàm trong 5−x có đạo hàm −1; dùng quy tắc hàm hợp được \\(z'=-1/(5-x)\\).\n\nVới w, xác định trên \\(\\mathbb R\\); hàm ngoài là hàm mũ cơ số e, hàm trong x² có đạo hàm 2x. Do đó \\(w'=2xe^{x^2}\\). Cần nhận diện quy tắc ngoài trước, rồi tính đạo hàm của các thành phần.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -3429,11 +3454,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Nhận diện phép toán ngoài; với hàm hợp nhân thêm đạo hàm hàm trong; đối số ln phải dương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3450,14 +3481,33 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(y'=\\cos2x-(x+1)\\sin2x\\); \\(z'=\\frac1{5-x}\\); \\(w'=e^{x^2}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(y'=-2\\sin2x\\); \\(z'=-\\frac1{5-x}\\), \\(x>5\\); \\(w'=2xe^{x^2}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(y'=\\cos2x-2(x+1)\\sin2x\\) (tích, \\(\\mathbb R\\)); \\(z'=-\\frac1{5-x}\\) (hàm hợp, \\(x<5\\)); \\(w'=2xe^{x^2}\\) (hàm hợp, \\(\\mathbb R\\))."
+      },
+      {
+        "id": "D",
+        "text": "\\(y'=\\cos2x-2(x+1)\\sin2x\\); \\(z'=-\\frac1{5-x}\\), \\(x\\ne5\\); \\(w'=2xe^{x^2}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-B33-KFT01",
-    "content_version": "SOURCE_BLOB_920752c92ab12a97d8e034780907fd2bcaac1308_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho tọa độ của vật trên trục đã chọn \\(s(t)=t^3-6t\\) (cm), với t tính bằng giây, \\(t\\ge0\\). Hãy viết vận tốc, gia tốc và đơn vị. Tại \\(t=1\\), vật đang đi theo chiều nào và gia tốc theo chiều nào?",
-    "answer_key": "v=3t²−6 cm/s; a=6t cm/s². Tại t=1, v=−3 cm/s (chiều âm), a=6 cm/s² (chiều dương).",
-    "worked_solution": "<strong>Đối chiếu sau khi thử:</strong> $v=3t^2-6$ cm/s, $a=6t$ cm/s²; tại t=1, $v=-3$ cm/s (chiều âm), $a=+6$ cm/s² (chiều dương), hai dấu trái nhau nên tốc độ tức thời đang giảm. Không suy một gia tốc dương là vật luôn nhanh dần.",
+    "content_version": "SGK-G11-CHIX-BANK-CANDIDATE-20261127-THPT-G11-B33-KFT01",
+    "stem": "Cho tọa độ của vật trên trục đã chọn \\(s(t)=t^3-6t\\) (cm), với t tính bằng giây, \\(t\\ge0\\). Hãy viết vận tốc, gia tốc và đơn vị. Tại \\(t=1\\), vật đang đi theo chiều nào và gia tốc theo chiều nào? Chọn phương án đúng sau khi tự giải thích.",
+    "answer_key": "\\(v=3t^2-6\\) cm/s; \\(a=6t\\) cm/s²; tại t=1, v=−3 theo chiều âm, a=6 theo chiều dương.",
+    "worked_solution": "Ta có \\(v(t)=s'(t)=3t^2-6\\) cm/s và \\(a(t)=v'(t)=6t\\) cm/s². Tại \\(t=1\\), \\(v=-3\\) cm/s, nên vật chuyển động theo chiều âm; \\(a=6\\) cm/s², theo chiều dương. Hai dấu trái nhau nên tốc độ đang giảm tại thời điểm này.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B33-ACCELERATION",
@@ -3465,11 +3515,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Vận tốc là đạo hàm cấp một, gia tốc là đạo hàm cấp hai; dấu chỉ chiều trên trục đã chọn."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3486,6 +3542,25 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(v=3t^2-6\\) cm/s; \\(a=6t\\) cm/s²; tại t=1, cả hai theo chiều dương."
+      },
+      {
+        "id": "B",
+        "text": "\\(v=t^2-6\\) cm/s; \\(a=2t\\) cm/s²; tại t=1, v=−5, a=2."
+      },
+      {
+        "id": "C",
+        "text": "\\(v=6t\\) cm/s; \\(a=6\\) cm/s²; tại t=1, cả hai theo chiều dương."
+      },
+      {
+        "id": "D",
+        "text": "\\(v=3t^2-6\\) cm/s; \\(a=6t\\) cm/s²; tại t=1, v=−3 theo chiều âm, a=6 theo chiều dương."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
