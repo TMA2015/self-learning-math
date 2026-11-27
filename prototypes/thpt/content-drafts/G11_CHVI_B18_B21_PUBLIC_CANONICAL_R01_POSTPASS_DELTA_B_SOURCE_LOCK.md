@@ -668,99 +668,115 @@ D1–D2 above are *author text*, not verbatim SGK quotations. Independently veri
 
 ### THPT-G11-CHVI-B18-W01 · placement=SGK_WRITTEN · role=WRITTEN · skill_id=G11-B18-POWER_LAWS
 
-**Đề:** Với a>0: (a) rút gọn E=a^(3/2)·a^(−1/2)/a^(1/3); (b) tính 64^(2/3); (c) giải thích tại sao điều kiện a>0 được giữ trong E.
+**Đề bài:** Với \(a>0\): (a) rút gọn \(E=\frac{a^{\frac32}\cdot a^{-\frac12}}{a^{\frac13}}\); (b) tính \(64^{\frac23}\); (c) giải thích tại sao phải giữ \(a>0\).
 
-**Giải thích & lời giải để tự đối chiếu sau khi làm:** (a) E=a^(3/2−1/2−1/3)=a^(2/3); (b) ³√64=4, bình phương là 16; (c) cần a>0 để các lũy thừa có số mũ thực/hữu tỉ được dùng nhất quán và mẫu khác 0.
+**Lời giải:** (a) Với \(a>0\), các lũy thừa và mẫu đều xác định, \(a^{\frac13}>0\). Cộng số mũ ở tử và trừ số mũ ở mẫu: \(E=a^{\frac32-\frac12-\frac13}=a^{\frac23}\). (b) \(64^{\frac23}=(\sqrt[3]{64})^2=4^2=16\). (c) Điều kiện dương bảo đảm áp dụng nhất quán quy tắc lũy thừa thực và mẫu khác 0.
 
 **Rubric 4 điểm:**
-1. Kiểm đúng a>0 và nêu ý nghĩa hợp lệ phép chia — **1 điểm**.
-2. Đưa E về một lũy thừa bằng cách cộng/trừ số mũ đúng — **1 điểm**.
-3. Kết luận E=a^(2/3) không bỏ điều kiện — **1 điểm**.
-4. Tính 64^(2/3)=16 và giải thích qua căn bậc ba — **1 điểm**.
+1. Nêu đúng \(a>0\) và mẫu khác 0. — **1 điểm**.
+2. Cộng/trừ số mũ đúng. — **1 điểm**.
+3. Kết luận \(E=a^{\frac23}\), giữ điều kiện. — **1 điểm**.
+4. Tính \(64^{\frac23}=16\) qua căn bậc ba. — **1 điểm**.
+
+Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo nếu các bước sau nhất quán.
 
 ### THPT-G11-CHVI-B18-W02-ANCHOR · placement=SGK_WRITTEN · role=ANCHOR_TAG · skill_id=G11-B18-GROWTH_MODEL
 
-**Đề:** Vốn 200 triệu đồng gửi lãi gộp 8%/năm, không có phí và rút cuối năm thứ 3. (a) Lập công thức P(n); (b) tính P(3); (c) so với mô hình lãi đơn 8%/năm; (d) giải thích bản chất khác biệt.
+**Đề bài:** Vốn 200 triệu đồng gửi lãi kép 8%/năm, lãi nhập gốc cuối mỗi năm, không phí và rút cuối năm thứ 3. (a) Lập công thức \(P(n)\) với \(n\) nguyên không âm; (b) tính \(P(3)\); (c) so với mô hình lãi đơn 8%/năm; (d) giải thích khác biệt.
 
-**Giải thích & lời giải để tự đối chiếu sau khi làm:** P(n)=200(1,08)^n triệu; P(3)=200·1,259712=251,9424 triệu. Lãi đơn sau 3 năm 200(1+0,08·3)=248 triệu. Chênh 3,9424 triệu. Khác biệt do lãi gộp trên cả phần lãi đã sinh từ các năm trước.
+**Lời giải:** Mỗi năm nhân số dư với \(1{,}08\), nên \(P(n)=200(1{,}08)^n\) triệu đồng. \(P(3)=200\cdot1{,}259712=251{,}9424\) triệu đồng. Lãi đơn sau 3 năm là \(200(1+0{,}08\cdot3)=248\) triệu đồng. Chênh \(251{,}9424-248=3{,}9424\) triệu đồng. Lãi kép tính lãi trên cả số lãi đã nhập gốc; lãi đơn chỉ tính trên vốn ban đầu.
 
 **Rubric 4 điểm:**
-1. Xác định đúng tỉ lệ nhân 1,08 và công thức lãi kép — **1 điểm**.
-2. Tính P(3)=251,9424 triệu kèm đơn vị — **1 điểm**.
-3. Tính đúng vốn lãi đơn 248 triệu, chênh 3,9424 — **1 điểm**.
-4. Giải thích cơ chế nhập lãi, phạm vi mô hình không phí — **1 điểm**.
+1. Xác định hệ số \(1{,}08\) và công thức lãi kép. — **1 điểm**.
+2. Tính \(P(3)=251{,}9424\) triệu đồng. — **1 điểm**.
+3. Tính lãi đơn 248 triệu và chênh \(3{,}9424\) triệu. — **1 điểm**.
+4. Giải thích cơ chế nhập lãi, giữ giả thiết không phí. — **1 điểm**.
+
+Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo nếu các bước sau nhất quán.
 
 ### THPT-G11-CHVI-B19-W01 · placement=SGK_WRITTEN · role=WRITTEN · skill_id=G11-B19-LOG_DOMAIN
 
-**Đề:** Giải phương trình log₂(x−1)+log₂(x+1)=3. Viết rõ miền xác định, vì sao được gộp log, các nghiệm đại số và nghiệm nhận.
+**Đề bài:** Giải \(\log_2(x-1)+\log_2(x+1)=3\). Viết rõ miền xác định, lý do được gộp lôgarit, các nghiệm đại số và nghiệm nhận.
 
-**Giải thích & lời giải để tự đối chiếu sau khi làm:** Điều kiện x−1>0 và x+1>0, tức x>1. Quy tắc tổng cho log₂((x−1)(x+1))=3, suy ra x²−1=8 ⇒ x=±3; chỉ x=3 thỏa x>1.
+**Lời giải:** Điều kiện \(x-1>0,\ x+1>0\), tức \(x>1\). Vì hai đối số dương, \(\log_2[(x-1)(x+1)]=3\iff x^2-1=8\iff x=\pm3\). Chỉ \(x=3\) thỏa miền. Kiểm lại: \(\log_2 2+\log_2 4=1+2=3\). Vậy \(S=\{3\}\).
 
 **Rubric 4 điểm:**
-1. Tìm đúng điều kiện x>1 trước biến đổi — **1 điểm**.
-2. Chỉ ra vì sao phép gộp log hợp lệ khi hai đối số dương — **1 điểm**.
-3. Suy ra x²=9 và xét x=±3 — **1 điểm**.
-4. Loại −3, chốt x=3 và thế kiểm tra — **1 điểm**.
+1. Xác định \(x>1\) trước biến đổi. — **1 điểm**.
+2. Giải thích gộp lôgarit khi hai đối số dương. — **1 điểm**.
+3. Suy ra \(x^2=9\) và tìm \(x=\pm3\). — **1 điểm**.
+4. Loại \(-3\), nhận \(3\) và thử lại. — **1 điểm**.
+
+Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo nếu các bước sau nhất quán.
 
 ### THPT-G11-CHVI-B19-W02-ANCHOR · placement=SGK_WRITTEN · role=ANCHOR_TAG · skill_id=G11-B19-LOG_LAWS
 
-**Đề:** (a) Tính A=log₃81−2log₃3. (b) Tìm miền xác định của log₂((x−2)(x+3)) và giải thích vì sao tách thành log₂(x−2)+log₂(x+3) chỉ đúng trên một phần miền.
+**Đề bài:** (a) Tính \(A=\log_3 81-2\log_3 3\). (b) Tìm miền xác định của \(\log_2[(x-2)(x+3)]\) và giải thích vì sao chỉ được tách thành \(\log_2(x-2)+\log_2(x+3)\) trên một phần miền.
 
-**Giải thích & lời giải để tự đối chiếu sau khi làm:** (a) A=4−2=2. (b) (x−2)(x+3)>0 ⇔ x<−3 hoặc x>2. Trên x>2 cả hai thừa số dương nên tách hợp lệ. Trên x<−3 cả hai thừa số âm, log riêng không xác định dù log tích có nghĩa.
+**Lời giải:** (a) \(A=4-2\cdot1=2\). (b) Đối số dương khi \((x-2)(x+3)>0\iff x<-3\) hoặc \(x>2\). Trên \(x>2\), từng thừa số dương nên quy tắc tích hợp lệ. Trên \(x<-3\), cả hai thừa số âm, tích dương nhưng mỗi lôgarit riêng không xác định.
 
 **Rubric 4 điểm:**
-1. Tính đúng A=2 — **1 điểm**.
-2. Giải đúng bất phương trình tích, được hai khoảng — **1 điểm**.
-3. Chỉ ra trên x>2 tách log hợp lệ — **1 điểm**.
-4. Giải thích trên x<−3 không thể tách log vì đối số âm — **1 điểm**.
+1. Tính đúng \(A=2\). — **1 điểm**.
+2. Giải bất phương trình tích, nhận hai khoảng. — **1 điểm**.
+3. Chỉ ra tách hợp lệ khi \(x>2\). — **1 điểm**.
+4. Giải thích vì sao không tách được khi \(x<-3\). — **1 điểm**.
+
+Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo nếu các bước sau nhất quán.
 
 ### THPT-G11-CHVI-B20-W01 · placement=SGK_WRITTEN · role=WRITTEN · skill_id=G11-B20-INVERSE_GRAPH
 
-**Đề:** Lập bảng ba điểm của f(x)=2^x ứng với x=0,1,2 và ba điểm tương ứng của g(x)=log₂x; nêu TXĐ/TGT, sự đối xứng đồ thị và cách đọc ý nghĩa hai hàm.
+**Đề bài:** Lập bảng ba điểm của \(f(x)=2^x\) ứng với \(x=0,1,2\) và ba điểm tương ứng của \(g(x)=\log_2 x\); nêu tập xác định, tập giá trị, sự đối xứng và ý nghĩa hai hàm.
 
-**Giải thích & lời giải để tự đối chiếu sau khi làm:** f có (0,1),(1,2),(2,4); g có (1,0),(2,1),(4,2). f: TXĐ ℝ, TGT (0,+∞); g: TXĐ (0,+∞), TGT ℝ. Mỗi điểm (x,y) hoán đổi thành (y,x) khi lấy hàm ngược, nên đồ thị đối xứng qua y=x.
+**Lời giải:** Hàm \(f\) có các điểm \((0;1),(1;2),(2;4)\); hàm \(g\) có \((1;0),(2;1),(4;2)\). \(D_f=\mathbb R,\ T_f=(0;+\infty)\), \(D_g=(0;+\infty),\ T_g=\mathbb R\). Hàm mũ biến số mũ thành giá trị dương; lôgarit trả lại số mũ. Mỗi điểm \((x;y)\) của đồ thị \(f\) tương ứng \((y;x)\) của \(g\), nên hai đồ thị đối xứng qua \(y=x\).
 
 **Rubric 4 điểm:**
-1. Lập đúng ba tọa độ của f — **1 điểm**.
-2. Lập đúng ba tọa độ của g — **1 điểm**.
-3. Nêu đủ TXĐ/TGT mỗi hàm — **1 điểm**.
-4. Giải thích ngược nhau/đối xứng qua y=x bằng hoán đổi vai trò — **1 điểm**.
+1. Ba tọa độ của f đúng. — **1 điểm**.
+2. Ba tọa độ của g đúng. — **1 điểm**.
+3. Nêu đủ tập xác định và tập giá trị mỗi hàm. — **1 điểm**.
+4. Giải thích quan hệ hàm ngược và đối xứng qua \(y=x\). — **1 điểm**.
+
+Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo nếu các bước sau nhất quán.
 
 ### THPT-G11-CHVI-B20-W02-ANCHOR · placement=SGK_WRITTEN · role=ANCHOR_TAG · skill_id=G11-B20-INVERSE_GRAPH
 
-**Đề:** Một mẫu giảm còn một nửa sau mỗi kỳ: N(t)=80(1/2)^t với t≥0. (a) Tính N(3); (b) tìm t để N(t)=5; (c) giải thích ý nghĩa logarit và lý do hàm giảm.
+**Đề bài:** Một mẫu giảm còn một nửa sau mỗi kỳ: \(N(t)=80(\frac12)^t\) với \(t\ge0\). (a) Tính \(N(3)\); (b) tìm \(t\) để \(N(t)=5\); (c) giải thích ý nghĩa lôgarit và vì sao hàm giảm.
 
-**Giải thích & lời giải để tự đối chiếu sau khi làm:** N(3)=80/8=10. N(t)=5 ⇒ (1/2)^t=1/16=(1/2)^4 ⇒ t=4; hoặc t=log_(1/2)(1/16)=4. Vì cơ số giữa 0 và 1, mỗi kỳ nhân một số nhỏ hơn 1 nên hàm giảm. Mô hình lý tưởng liên tục nếu t được cho phép thực.
+**Lời giải:** \(N(3)=80(\frac12)^3=10\) (đơn vị của mẫu). Điều kiện \(N(t)=5\) tương đương \((\frac12)^t=\frac1{16}=(\frac12)^4\), nên \(t=4\). Cũng có thể viết \(t=\log_{\frac12}\frac1{16}=4\): lôgarit trả lại số mũ cần tìm. Do \(0<\frac12<1\), hàm giảm trên miền \(t\ge0\); sau mỗi kỳ nguyên, số còn lại nhân với \(\frac12\). Nếu cho phép \(t\) thực, đây là mô hình liên tục lý tưởng.
 
 **Rubric 4 điểm:**
-1. Tính N(3)=10 kèm đơn vị mô hình — **1 điểm**.
-2. Lập đúng phương trình N(t)=5 và tìm t=4 — **1 điểm**.
-3. Giải thích log là số mũ cần tìm — **1 điểm**.
-4. Nêu cơ số 1/2 làm hàm giảm và phạm vi t≥0 — **1 điểm**.
+1. Tính \(N(3)=10\) kèm đơn vị mô hình. — **1 điểm**.
+2. Lập phương trình \(N(t)=5\), tìm \(t=4\). — **1 điểm**.
+3. Giải thích lôgarit là số mũ cần tìm. — **1 điểm**.
+4. Nêu cơ số \(\frac12\) và miền \(t\ge0\), giải thích hàm giảm. — **1 điểm**.
+
+Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo nếu các bước sau nhất quán.
 
 ### THPT-G11-CHVI-B21-W01 · placement=SGK_WRITTEN · role=WRITTEN · skill_id=G11-B21-DOMAIN_CHECK
 
-**Đề:** (a) Giải log₂(x−1)=log₂(7−x); (b) giải log_(1/2)(x+1)≥log_(1/2)4; kiểm điều kiện log ở cả hai ý.
+**Đề bài:** (a) Giải \(\log_2(x-1)=\log_2(7-x)\); (b) giải \(\log_{\frac12}(x+1)\ge\log_{\frac12}4\). Kiểm điều kiện đối số ở cả hai ý.
 
-**Giải thích & lời giải để tự đối chiếu sau khi làm:** (a) Điều kiện x>1, x<7; x−1=7−x ⇒ x=4 hợp lệ. (b) Điều kiện x+1>0 ⇒ x>−1. Do log cơ số 1/2 nghịch biến, x+1≤4 ⇒ x≤3, kết hợp −1<x≤3.
+**Lời giải:** (a) Điều kiện \(1<x<7\). Hàm lôgarit đơn ánh, nên \(x-1=7-x\iff x=4\). Nghiệm thuộc miền và hai đối số đều bằng 3. (b) Điều kiện \(x+1>0\iff x>-1\). Cơ số \(\frac12\) làm hàm nghịch biến, nên \(x+1\le4\iff x\le3\). Giao miền, \(S=(-1;3]\); mốc \(-1\) bị loại, mốc 3 được nhận.
 
 **Rubric 4 điểm:**
-1. Viết đủ miền (1,7) ý a, tìm nghiệm x=4 — **1 điểm**.
-2. Kiểm x=4 hợp lệ và giải thích tính đơn ánh — **1 điểm**.
-3. Viết điều kiện x>−1 và lý do đảo chiều ý b — **1 điểm**.
-4. Kết luận −1<x≤3 không lấy x=−1 — **1 điểm**.
+1. Miền \((1;7)\) và nghiệm \(x=4\) ở (a). — **1 điểm**.
+2. Kiểm nghiệm, giải thích tính đơn ánh. — **1 điểm**.
+3. Điều kiện \(x>-1\) và lý do đảo chiều ở (b). — **1 điểm**.
+4. Kết luận \((-1;3]\), giải thích hai mốc. — **1 điểm**.
+
+Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo nếu các bước sau nhất quán.
 
 ### THPT-G11-CHVI-B21-W02-ANCHOR · placement=SGK_WRITTEN · role=ANCHOR_TAG · skill_id=G11-B21-REAL_CONTEXT
 
-**Đề:** Mô hình P(n)=60(1,2)^n triệu đồng, n nguyên không âm. (a) Năm đầu tiên đạt ít nhất 103,68 triệu? (b) năm đầu tiên **vượt** 103,68 triệu? (c) giải thích sự khác biệt ≥ và > ở mốc n nguyên.
+**Đề bài:** Mô hình \(P(n)=60(1{,}2)^n\) triệu đồng, \(n\in\mathbb Z_{\ge0}\). (a) Năm đầu tiên đạt ít nhất \(103{,}68\) triệu? (b) năm đầu tiên vượt \(103{,}68\) triệu? (c) giải thích sự khác biệt giữa dấu \(\ge\) và \(>\) khi \(n\) nguyên.
 
-**Giải thích & lời giải để tự đối chiếu sau khi làm:** 1,2³=1,728 nên P(3)=103,68. Do cơ số >1, P(n) tăng; lần đầu đạt mức ≥ là n=3, lần đầu vượt nghiêm ngặt là n=4. n chỉ nhận 0,1,2,… nên không chọn số thực tùy ý để làm kết luận thời điểm cuối năm.
+**Lời giải:** \(1{,}2^3=1{,}728\), nên \(P(3)=103{,}68\). Cơ số \(1{,}2>1\) nên \(P(n)\) tăng: \(P(2)<P(3)<P(4)\). Điều kiện \(P(n)\ge103{,}68\iff n\ge3\), năm đầu là 3; \(P(n)>103{,}68\iff n>3\), năm nguyên đầu là 4. Không thay \(n\) nguyên bằng thời điểm thực tùy ý.
 
 **Rubric 4 điểm:**
-1. Thiết lập đúng bất đẳng thức với ngưỡng 103,68 — **1 điểm**.
-2. Tính đúng 1,2³=1,728 và P(3)=103,68 — **1 điểm**.
-3. Kết luận lần đầu ≥ ở n=3 và > ở n=4 — **1 điểm**.
-4. Giải thích cơ số tăng, dấu chặt và n nguyên không âm — **1 điểm**.
+1. Lập đúng hai bất đẳng thức với ngưỡng \(103{,}68\). — **1 điểm**.
+2. Tính \(1{,}2^3=1{,}728\) và \(P(3)=103{,}68\). — **1 điểm**.
+3. Kết luận năm 3 và năm 4 tương ứng. — **1 điểm**.
+4. Giải thích tính tăng, dấu chặt và số năm nguyên. — **1 điểm**.
+
+Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo nếu các bước sau nhất quán.
 
 ## D6 HELP five-step remediation (8; public formative ONLY)
 
