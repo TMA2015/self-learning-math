@@ -1398,19 +1398,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(k\\ne1\\); D=\\mathbb R\\)."
+        "text": "\\(k\\ne1\\); \\(D=\\mathbb R\\)."
       },
       {
         "id": "B",
-        "text": "\\(k=-1\\); D=\\mathbb R\\)."
+        "text": "\\(k=-1\\); \\(D=\\mathbb R\\)."
       },
       {
         "id": "C",
-        "text": "\\(k\\ne-1\\); D=\\mathbb R\\setminus\\{-1\\}\\)."
+        "text": "\\(k\\ne-1\\); \\(D=\\mathbb R\\setminus\\{-1\\}\\)."
       },
       {
         "id": "D",
-        "text": "\\(k\\ne-1\\); D=\\mathbb R\\) với mọi k."
+        "text": "\\(k\\ne-1\\); \\(D=\\mathbb R\\) với mọi k."
       }
     ]
   },
@@ -1626,7 +1626,7 @@
       },
       {
         "id": "D",
-        "text": "\\(0<x<18\\); diện tích \\(162\\,\\mathrm m^2\\), kích thước 9 m và 18 m."
+        "text": "\\(0<x<18\\); diện tích \\(162\\,\\mathrm{m}^2\\), đạt tại chiều rộng x=9 m, chiều dài 18 m."
       }
     ]
   },
