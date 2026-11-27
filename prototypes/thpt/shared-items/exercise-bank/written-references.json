@@ -6372,8 +6372,10 @@
   {
     "item_id": "THPT-G11-SUPP-E01-W01",
     "source": {
-      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
-      "heading_id": "THPT-G11-SUPP-E01-W01"
+      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "heading_id": "THPT-G11-SUPP-E01-W01",
+      "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
+      "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
@@ -6387,15 +6389,17 @@
     "skill_ids": [
       "G11-E01-HALF_LIFE"
     ],
-    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Rubric /4 chung cần phân điểm riêng theo (a)–(d), chấp nhận cách tính tương đương."
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W01.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Rubric /4 chung cần phân điểm riêng theo (a)–(d), chấp nhận cách tính tương đương. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G11-SUPP-E01-W02",
     "source": {
-      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
-      "heading_id": "THPT-G11-SUPP-E01-W02"
+      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "heading_id": "THPT-G11-SUPP-E01-W02",
+      "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
+      "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
@@ -6409,15 +6413,17 @@
     "skill_ids": [
       "G11-E01-DECIBEL_SCALE"
     ],
-    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Rubric /4 chung; câu (d) cần diễn đạt rõ không suy độ to cảm nhận từ tỉ số cường độ vật lý."
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W02.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Rubric /4 chung; câu (d) cần diễn đạt rõ không suy độ to cảm nhận từ tỉ số cường độ vật lý. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G11-SUPP-E01-W03",
     "source": {
-      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
-      "heading_id": "THPT-G11-SUPP-E01-W03"
+      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "heading_id": "THPT-G11-SUPP-E01-W03",
+      "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
+      "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
@@ -6431,15 +6437,17 @@
     "skill_ids": [
       "G11-E01-MODEL_ASSUMPTIONS"
     ],
-    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W03",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Rubric /4 chung; làm rõ N(3)=899,8912 là giá trị mô hình, quy ước làm tròn cá thể."
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W03.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Rubric /4 chung; làm rõ N(3)=899,8912 là giá trị mô hình, quy ước làm tròn cá thể. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G11-SUPP-E02-W01",
     "source": {
-      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
-      "heading_id": "THPT-G11-SUPP-E02-W01"
+      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "heading_id": "THPT-G11-SUPP-E02-W01",
+      "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
+      "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
@@ -6453,15 +6461,17 @@
     "skill_ids": [
       "G11-E02-LINE_PLANE_MEASURE"
     ],
-    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Rubric /4 chung; nêu rõ hình chiếu của tia sáng trên nền là phương/đoạn bóng cọc."
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W01.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Rubric /4 chung; nêu rõ hình chiếu của tia sáng trên nền là phương/đoạn bóng cọc. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G11-SUPP-E02-W02",
     "source": {
-      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
-      "heading_id": "THPT-G11-SUPP-E02-W02"
+      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "heading_id": "THPT-G11-SUPP-E02-W02",
+      "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
+      "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
@@ -6475,15 +6485,17 @@
     "skill_ids": [
       "G11-E02-VOLUME_MODEL"
     ],
-    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Rubric /4 chung; lời giải (d) nhắc lại tỉ số 1/3, chưa giải thích cơ sở công thức."
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W02.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Rubric /4 chung; lời giải (d) nhắc lại tỉ số 1/3, chưa giải thích cơ sở công thức. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G11-SUPP-E02-W03",
     "source": {
-      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
-      "heading_id": "THPT-G11-SUPP-E02-W03"
+      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "heading_id": "THPT-G11-SUPP-E02-W03",
+      "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
+      "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
@@ -6497,15 +6509,17 @@
     "skill_ids": [
       "G11-E02-GEOGEBRA_REPRESENTATION"
     ],
-    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W03",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Rubric /4 chung; cần chấm riêng cấu trúc hai đáy, nối đỉnh, nét khuất và điều kiện lăng trụ đứng."
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W03.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Rubric /4 chung; cần chấm riêng cấu trúc hai đáy, nối đỉnh, nét khuất và điều kiện lăng trụ đứng. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G11-YR-TRIG-W01",
     "source": {
-      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
-      "heading_id": "THPT-G11-YR-TRIG-W01"
+      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "heading_id": "THPT-G11-YR-TRIG-W01",
+      "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
+      "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
@@ -6519,9 +6533,9 @@
     "skill_ids": [
       "G11-YR-TRIG_IDENTITY"
     ],
-    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-TRIG-W01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Rubric 'Hai nghiệm/2 điểm 1đ' mơ hồ; cần phân rõ 1 điểm cho hai nghiệm."
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-TRIG-W01.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Rubric 'Hai nghiệm/2 điểm 1đ' mơ hồ; cần phân rõ 1 điểm cho hai nghiệm. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G11-YR-SEQ-W01",
@@ -6589,8 +6603,10 @@
   {
     "item_id": "THPT-G11-YR-DERIV-W01",
     "source": {
-      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
-      "heading_id": "THPT-G11-YR-DERIV-W01"
+      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "heading_id": "THPT-G11-YR-DERIV-W01",
+      "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
+      "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
@@ -6604,15 +6620,17 @@
     "skill_ids": [
       "G11-YR-DERIVATIVE_RATE"
     ],
-    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-DERIV-W01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Câu (d) nên nói rõ t tính bằng giây."
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-DERIV-W01.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Câu (d) nên nói rõ t tính bằng giây. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G11-YR-SPACE-W01",
     "source": {
-      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
-      "heading_id": "THPT-G11-YR-SPACE-W01"
+      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "heading_id": "THPT-G11-YR-SPACE-W01",
+      "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
+      "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
@@ -6626,9 +6644,9 @@
     "skill_ids": [
       "G11-YR-SPACE_PERP_DISTANCE"
     ],
-    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-SPACE-W01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Gần trùng THPT-G11-YR-SPACE-P02; giữ yêu cầu chứng minh tự luận, kiểm độc lập/độ sâu ở Delta. Lời giải cần nói rõ đoạn xiên không cho khoảng cách."
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-SPACE-W01.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Gần trùng THPT-G11-YR-SPACE-P02; giữ yêu cầu chứng minh tự luận, kiểm độc lập/độ sâu ở Delta. Lời giải cần nói rõ đoạn xiên không cho khoảng cách. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G11-YR-VOLUME-W01",
@@ -6654,8 +6672,10 @@
   {
     "item_id": "THPT-G11-YR-STAT-W01",
     "source": {
-      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
-      "heading_id": "THPT-G11-YR-STAT-W01"
+      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "heading_id": "THPT-G11-YR-STAT-W01",
+      "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
+      "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
@@ -6669,9 +6689,9 @@
     "skill_ids": [
       "G11-YR-GROUPED_STATS"
     ],
-    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-STAT-W01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Tần số lớn nhất đồng hạng; kiểm cách diễn đạt mốt dữ liệu gốc và giả định nội suy."
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-STAT-W01.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Tần số lớn nhất đồng hạng; kiểm cách diễn đạt mốt dữ liệu gốc và giả định nội suy. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G11-YR-PROB-W01",
@@ -6735,7 +6755,7 @@
     ],
     "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-01-W01",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Gần trùng A01; giữ phần kiểm hai cách, đánh giá mức độc lập trong Delta."
+    "author_review_note": "Reviewed against A01: same integrand, but W01 requires independent derivative and definite-integral verification, not just selection of antiderivative. Retain historical R01 PASS (receipt b765e732fa8049482936dbededfafd7b9eb99341), do not count as independent unseen assessment. No source change."
   },
   {
     "item_id": "THPT-G12-EXP01-W02",
@@ -6782,8 +6802,10 @@
   {
     "item_id": "THPT-G12-EXP01-W04",
     "source": {
-      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
-      "heading_id": "THPT-G12-EXP01-W04"
+      "blob": "6f0a17cdc229e4b821f9ca80aef9e9ede0e6cb14",
+      "heading_id": "THPT-G12-EXP01-W04",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_XP_TWO_EXPERIENCES_R01_CANONICAL_20261103.md",
+      "previous_reviewed_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
@@ -6797,15 +6819,17 @@
     "skill_ids": [
       "G12-SGK-EXP01-O04"
     ],
-    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-01-W04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Với chính f(x)=x², sai số hình thang bằng cận 1/(6n²); có thể giải thích trường hợp này bằng công thức tổng bình phương. Không suy ngược từ cận cho hàm bất kỳ."
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-01-W04.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Với chính f(x)=x², sai số hình thang bằng cận 1/(6n²); có thể giải thích trường hợp này bằng công thức tổng bình phương. Không suy ngược từ cận cho hàm bất kỳ. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G12-EXP01-W05",
     "source": {
-      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
-      "heading_id": "THPT-G12-EXP01-W05"
+      "blob": "6f0a17cdc229e4b821f9ca80aef9e9ede0e6cb14",
+      "heading_id": "THPT-G12-EXP01-W05",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_XP_TWO_EXPERIENCES_R01_CANONICAL_20261103.md",
+      "previous_reviewed_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
@@ -6819,9 +6843,9 @@
     "skill_ids": [
       "G12-SGK-EXP01-O05"
     ],
-    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-01-W05",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Đề chưa nêu vận tốc không âm trên cả đoạn; lời giải giả định. Cần nói rõ giả thiết hoặc dùng độ dời/giả định nội suy tuyến tính."
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-01-W05.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Đề chưa nêu vận tốc không âm trên cả đoạn; lời giải giả định. Cần nói rõ giả thiết hoặc dùng độ dời/giả định nội suy tuyến tính. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G12-EXP02-W01",
@@ -6847,8 +6871,10 @@
   {
     "item_id": "THPT-G12-EXP02-W02",
     "source": {
-      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
-      "heading_id": "THPT-G12-EXP02-W02"
+      "blob": "6f0a17cdc229e4b821f9ca80aef9e9ede0e6cb14",
+      "heading_id": "THPT-G12-EXP02-W02",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_XP_TWO_EXPERIENCES_R01_CANONICAL_20261103.md",
+      "previous_reviewed_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
@@ -6862,9 +6888,9 @@
     "skill_ids": [
       "G12-SGK-EXP02-O02"
     ],
-    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Đề phụ thuộc bộ 6 đỉnh ở đoạn trước; khi dùng độc lập phải giữ đủ tọa độ trong ngữ cảnh placement."
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W02.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Đề phụ thuộc bộ 6 đỉnh ở đoạn trước; khi dùng độc lập phải giữ đủ tọa độ trong ngữ cảnh placement. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G12-EXP02-W03",
@@ -6890,8 +6916,10 @@
   {
     "item_id": "THPT-G12-EXP02-W04",
     "source": {
-      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
-      "heading_id": "THPT-G12-EXP02-W04"
+      "blob": "6f0a17cdc229e4b821f9ca80aef9e9ede0e6cb14",
+      "heading_id": "THPT-G12-EXP02-W04",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_XP_TWO_EXPERIENCES_R01_CANONICAL_20261103.md",
+      "previous_reviewed_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
@@ -6905,15 +6933,17 @@
     "skill_ids": [
       "G12-SGK-EXP02-O04"
     ],
-    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Đề tham chiếu công thức M; bảo toàn dữ liệu tham số khi tách bài. Rubric chưa chấm rõ phần giới hạn suy luận từ ảnh."
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W04.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Đề tham chiếu công thức M; bảo toàn dữ liệu tham số khi tách bài. Rubric chưa chấm rõ phần giới hạn suy luận từ ảnh. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G12-EXP02-W05",
     "source": {
-      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
-      "heading_id": "THPT-G12-EXP02-W05"
+      "blob": "6f0a17cdc229e4b821f9ca80aef9e9ede0e6cb14",
+      "heading_id": "THPT-G12-EXP02-W05",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_XP_TWO_EXPERIENCES_R01_CANONICAL_20261103.md",
+      "previous_reviewed_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
@@ -6927,9 +6957,9 @@
     "skill_ids": [
       "G12-SGK-EXP02-O05"
     ],
-    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W05",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Lời giải mẫu và rubric cần làm rõ cách chấp nhận phương án Penrose thay Möbius; chưa thử lệnh GeoGebra thật."
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W05.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Lời giải mẫu và rubric cần làm rõ cách chấp nhận phương án Penrose thay Möbius; chưa thử lệnh GeoGebra thật. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G12-YE-W01",
