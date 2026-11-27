@@ -185,8 +185,8 @@ Xét xúc xắc cân đối, `B={2,4,6}` là “biết ra chẵn”. Khi đã bi
 - **ITEM_ID:** `THPT-G12-B18-W01` · **OUTCOME_ID:** `G12-CHVI-B18-O01` · **SOURCE_ROLE:** `ORIGINAL_AUTHORED` · **PRIMARY_PLACEMENT:** `SGK_WRITTEN` · **DEPTH:** `WRITTEN_REASONED`.
 - **Đề tự biên soạn:** Trong hộp có 4 bi đỏ, 5 bi xanh, 3 bi vàng, các bi cùng khả năng được chọn. Biết bi lấy ra không vàng. Tính xác suất bi đỏ; nêu rõ không gian mẫu mới.
 - **Đáp án để tự đối chiếu sau khi làm:** `4/9`.
-- **Giải/Lập luận:** Không vàng có 4+5=9 bi. Giao với đỏ có 4 bi; do đó P(đỏ|không vàng)=4/9.
-- **Rubric tự luận /5:** 2đ xác định tập điều kiện có 9 bi; 1đ nhận diện 4 bi đỏ thuộc điều kiện; 1đ lập tỷ số 4/9; 1đ giải thích không lấy mẫu số 12.
+- **Giải/Lập luận:** Gọi R là biến cố lấy bi đỏ, N là biến cố lấy bi không vàng. Khi đã biết N xảy ra, chỉ còn 9 bi có thể được chọn (4 đỏ, 5 xanh), đồng khả năng. Trong đó 4 bi đỏ, nên \(P(R\mid N)=\frac49\). Không lấy mẫu số 12 vì 3 bi vàng đã bị loại khỏi không gian mẫu theo điều kiện N.
+- **Rubric tự luận /5:** 2đ xác định đúng tập điều kiện 9 bi; 1đ nhận diện 4 bi đỏ; 1đ tính \(\frac49\); 1đ giải thích không dùng mẫu số 12.
 
 **D6 — Đường khắc phục đúng outcome `G12-CHVI-B18-O01` (5 bước):** (1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Thông tin mới làm thay đổi tập kết quả có thể xảy ra. (2) Rà tiền đề: Biến cố là tập con của không gian mẫu; mỗi kết quả đồng khả năng có cùng xác suất. (3) Nhận diện bẫy: Không dùng toàn bộ Ω sau khi đã biết B. (4) Xem lại `EX-G12-B18-O01` nhưng che bước kết quả, tự làm ra giấy. (5) Thử lại item `THPT-G12-B18-C01` trước, sau đó `THPT-G12-B18-P01`; chỉ mở đáp án khi đã thử, không ghi Mastery.
 
@@ -271,10 +271,10 @@ Xét xúc xắc cân đối, `B={2,4,6}` là “biết ra chẵn”. Khi đã bi
 
 #### THPT-G12-B18-W03 — Tự luận Written — yêu cầu trình bày đầy đủ
 - **ITEM_ID:** `THPT-G12-B18-W03` · **OUTCOME_ID:** `G12-CHVI-B18-O03` · **SOURCE_ROLE:** `ORIGINAL_AUTHORED` · **PRIMARY_PLACEMENT:** `SGK_WRITTEN` · **DEPTH:** `WRITTEN_REASONED`.
-- **Đề tự biên soạn:** Trong 80 học sinh: 28 học tiếng Pháp, 20 học tiếng Đức, 8 học cả hai. Hãy tính P(Pháp|Đức), P(Đức|Pháp) và nhận xét sự khác biệt.
+- **Đề tự biên soạn:** Trong 80 học sinh có 28 học tiếng Pháp, 20 học tiếng Đức, 8 học cả hai. Chọn ngẫu nhiên đều một học sinh. Tính xác suất học tiếng Pháp khi biết học tiếng Đức và xác suất học tiếng Đức khi biết học tiếng Pháp; nhận xét sự khác biệt.
 - **Đáp án để tự đối chiếu sau khi làm:** `2/5 và 2/7`.
-- **Giải/Lập luận:** P(Pháp|Đức)=8/20=2/5; P(Đức|Pháp)=8/28=2/7; không được đổi mẫu số tùy ý.
-- **Rubric tự luận /5:** 1đ lập các biến cố và giao; 1đ xác định mẫu số 20; 1đ được 2/5; 1đ xác định mẫu số 28 và được 2/7; 1đ giải thích khác chiều điều kiện.
+- **Giải/Lập luận:** Gọi F và D lần lượt là biến cố học tiếng Pháp và học tiếng Đức. Có 8 học sinh thuộc giao. Nếu biết D, mẫu điều kiện gồm 20 học sinh, nên \(P(F\mid D)=\frac8{20}=\frac25\). Nếu biết F, mẫu điều kiện gồm 28 học sinh, nên \(P(D\mid F)=\frac8{28}=\frac27\). Cùng một giao nhưng hai tập điều kiện khác nhau; không tự đổi chiều.
+- **Rubric tự luận /5:** 1đ lập biến cố và giao; 1đ mẫu số 20; 1đ tính \(\frac25\); 1đ mẫu số 28 và \(\frac27\); 1đ giải thích chiều điều kiện.
 
 **D6 — Đường khắc phục đúng outcome `G12-CHVI-B18-O03` (5 bước):** (1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Đổi hướng câu hỏi làm thay đổi mẫu số và thường thay đổi đáp án. (2) Rà tiền đề: Định nghĩa xác suất có điều kiện, bảng giao hai nhóm. (3) Nhận diện bẫy: P(A|B) không bằng P(B|A) chỉ vì giao là cùng một biến cố. (4) Xem lại `EX-G12-B18-O03` nhưng che bước kết quả, tự làm ra giấy. (5) Thử lại item `THPT-G12-B18-C03` trước, sau đó `THPT-G12-B18-P03`; chỉ mở đáp án khi đã thử, không ghi Mastery.
 
@@ -359,10 +359,10 @@ Xét xúc xắc cân đối, `B={2,4,6}` là “biết ra chẵn”. Khi đã bi
 
 #### THPT-G12-B18-W05 — Tự luận Written — yêu cầu trình bày đầy đủ
 - **ITEM_ID:** `THPT-G12-B18-W05` · **OUTCOME_ID:** `G12-CHVI-B18-O05` · **SOURCE_ROLE:** `ORIGINAL_AUTHORED` · **PRIMARY_PLACEMENT:** `SGK_WRITTEN` · **DEPTH:** `WRITTEN_REASONED`.
-- **Đề tự biên soạn:** Khảo sát 200 người: dùng ứng dụng 70 hài lòng và 30 không; không dùng ứng dụng 60 hài lòng và 40 không. Tính P(hài lòng|dùng), P(dùng|hài lòng), giải thích sự khác biệt.
+- **Đề tự biên soạn:** Khảo sát 200 người: trong nhóm dùng ứng dụng có 70 người hài lòng, 30 không hài lòng; trong nhóm không dùng có 60 hài lòng, 40 không hài lòng. Chọn ngẫu nhiên đều một người trong 200 người. Tính xác suất hài lòng khi biết người đó dùng ứng dụng và xác suất dùng ứng dụng khi biết người đó hài lòng; giải thích sự khác biệt.
 - **Đáp án để tự đối chiếu sau khi làm:** `7/10 và 7/13`.
-- **Giải/Lập luận:** P(hài lòng|dùng)=70/100=7/10; P(dùng|hài lòng)=70/130=7/13. Mẫu số khác nên không bằng nhau.
-- **Rubric tự luận /5:** 1đ lập đúng bảng/tổng 200; 1đ lấy mẫu số 100; 1đ tính 7/10; 1đ lấy mẫu số 130 và tính 7/13; 1đ giải thích chiều điều kiện khác.
+- **Giải/Lập luận:** Gọi H là hài lòng, U là dùng ứng dụng. Nhóm U có \(70+30=100\) người; nhóm H có \(70+60=130\) người; giao có 70 người. Do đó \(P(H\mid U)=\frac{70}{100}=\frac7{10}\) và \(P(U\mid H)=\frac{70}{130}=\frac7{13}\). Hai tập điều kiện khác kích thước nên hai xác suất khác nhau trong bài này.
+- **Rubric tự luận /5:** 1đ lập đúng bảng hoặc các tổng; 1đ xác định mẫu số 100; 1đ tính \(\frac7{10}\); 1đ mẫu số 130 và \(\frac7{13}\); 1đ giải thích chiều điều kiện.
 
 **D6 — Đường khắc phục đúng outcome `G12-CHVI-B18-O05` (5 bước):** (1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Dữ liệu thống kê thường báo kết quả theo từng nhóm khác kích thước. (2) Rà tiền đề: Đọc tổng hàng, tổng cột, ô giao trên bảng. (3) Nhận diện bẫy: Đổi P(Kết quả|Nhóm) thành P(Nhóm|Kết quả) khi đọc bảng 2×2. (4) Xem lại `EX-G12-B18-O05` nhưng che bước kết quả, tự làm ra giấy. (5) Thử lại item `THPT-G12-B18-C05` trước, sau đó `THPT-G12-B18-P05`; chỉ mở đáp án khi đã thử, không ghi Mastery.
 
@@ -447,10 +447,10 @@ Xét xúc xắc cân đối, `B={2,4,6}` là “biết ra chẵn”. Khi đã bi
 
 #### THPT-G12-B18-W07 — Tự luận Written — yêu cầu trình bày đầy đủ
 - **ITEM_ID:** `THPT-G12-B18-W07` · **OUTCOME_ID:** `G12-CHVI-B18-O07` · **SOURCE_ROLE:** `ORIGINAL_AUTHORED` · **PRIMARY_PLACEMENT:** `SGK_WRITTEN` · **DEPTH:** `WRITTEN_REASONED`.
-- **Đề tự biên soạn:** Túi 3 bi trắng, 2 bi đen. Rút liên tiếp 2 bi không hoàn lại. Tính P(đúng một bi trắng), ghi rõ các nhánh và kiểm kết quả.
+- **Đề tự biên soạn:** Túi có 3 bi trắng, 2 bi đen. Rút ngẫu nhiên hai bi liên tiếp không hoàn lại, mỗi lượt các bi còn lại đồng khả năng được chọn. Tính xác suất đúng một bi trắng, ghi rõ các nhánh và kiểm kết quả.
 - **Đáp án để tự đối chiếu sau khi làm:** `3/5`.
-- **Giải/Lập luận:** Trắng→đen: 3/5×2/4=3/10; đen→trắng:2/5×3/4=3/10. Tổng=3/5.
-- **Rubric tự luận /5:** 1đ phân hai nhánh khác màu; 1đ ghi đúng mẫu không hoàn lại; 1đ tính 3/10 nhánh trắng-đen; 1đ tính 3/10 nhánh đen-trắng; 1đ cộng 3/5 và giải thích xung khắc.
+- **Giải/Lập luận:** Có hai thứ tự loại trừ nhau: trắng rồi đen, hoặc đen rồi trắng. Nhánh trắng–đen có xác suất \(\frac35\cdot\frac24=\frac3{10}\). Nhánh đen–trắng có xác suất \(\frac25\cdot\frac34=\frac3{10}\). Vì hai nhánh xung khắc, cộng được \(\frac35\). Kiểm: cả hai trắng có xác suất \(\frac35\cdot\frac24=\frac3{10}\); cả hai đen có xác suất \(\frac25\cdot\frac14=\frac1{10}\). Tổng ba trường hợp theo số bi trắng bằng 1.
+- **Rubric tự luận /5:** 1đ phân đúng hai nhánh; 1đ ghi đúng mẫu không hoàn lại; 1đ nhánh trắng–đen; 1đ nhánh đen–trắng; 1đ cộng \(\frac35\) và giải thích xung khắc.
 
 **D6 — Đường khắc phục đúng outcome `G12-CHVI-B18-O07` (5 bước):** (1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Kết quả lượt đầu làm thay đổi cơ hội của lượt sau. (2) Rà tiền đề: Tính xác suất theo số lượng và công thức nhân; phân biệt hoàn lại/không hoàn lại. (3) Nhận diện bẫy: Sau rút không hoàn lại, mẫu số lượt sau giảm 1; không bỏ sót thứ tự khác. (4) Xem lại `EX-G12-B18-O07` nhưng che bước kết quả, tự làm ra giấy. (5) Thử lại item `THPT-G12-B18-C07` trước, sau đó `THPT-G12-B18-P07`; chỉ mở đáp án khi đã thử, không ghi Mastery.
 
@@ -619,10 +619,10 @@ B xảy ra theo hai đường không trùng: `A rồi B` hoặc `Ā rồi B`. H
 
 #### THPT-G12-B19-W03 — Tự luận Written — yêu cầu trình bày đầy đủ
 - **ITEM_ID:** `THPT-G12-B19-W03` · **OUTCOME_ID:** `G12-CHVI-B19-O03` · **SOURCE_ROLE:** `ORIGINAL_AUTHORED` · **PRIMARY_PLACEMENT:** `SGK_WRITTEN` · **DEPTH:** `WRITTEN_REASONED`.
-- **Đề tự biên soạn:** Cho P(A)=0,4, P(B|A)=0,8, P(B|Ā)=0,3. Hãy mô tả cây, tính P(B) và P(A|B).
+- **Đề tự biên soạn:** Cho \(P(A)=0{,}4,\ P(B\mid A)=0{,}8,\ P(B\mid\overline A)=0{,}3\). Hãy mô tả cây xác suất, tính \(P(B)\) và \(P(A\mid B)\).
 - **Đáp án để tự đối chiếu sau khi làm:** `1/2 và 16/25`.
-- **Giải/Lập luận:** Lá A∩B=0,32; Ā∩B=0,18; P(B)=0,5. P(A|B)=0,32/0,5=0,64.
-- **Rubric tự luận /5:** 1đ mô tả nhánh gốc và điều kiện; 1đ tính 0,32; 1đ tính 0,18; 1đ cộng P(B)=0,5; 1đ tính P(A|B)=0,64.
+- **Giải/Lập luận:** Cây có nhánh gốc A xác suất \(0{,}4\) và \(\overline A\) xác suất \(0{,}6\). Từ A, nhánh B có xác suất \(0{,}8\), nhánh \(\overline B\) có \(0{,}2\). Từ \(\overline A\), nhánh B có \(0{,}3\), nhánh \(\overline B\) có \(0{,}7\). Nhân dọc từng đường: bốn lá lần lượt là \(0{,}32;\ 0{,}08;\ 0{,}18;\ 0{,}42\), tổng bằng 1. Hai lá chứa B cho \(P(B)=0{,}32+0{,}18=0{,}5\). Do đó \(P(A\mid B)=\frac{0{,}32}{0{,}5}=0{,}64=\frac{16}{25}\).
+- **Rubric tự luận /5:** 1đ mô tả đủ nhánh gốc và nhánh điều kiện; 1đ tính \(0{,}32\); 1đ tính \(0{,}18\); 1đ cộng \(P(B)=0{,}5\); 1đ tính \(P(A\mid B)=0{,}64\). Chấp nhận cây vẽ hoặc mô tả tương đương.
 
 **D6 — Đường khắc phục đúng outcome `G12-CHVI-B19-O03` (5 bước):** (1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Hình cây làm rõ nhân trên nhánh và cộng giữa các đường không trùng. (2) Rà tiền đề: Công thức nhân và biến cố đối. (3) Nhận diện bẫy: Nhân theo đường, cộng các lá phù hợp; các xác suất tại cùng một nút có tổng 1. (4) Xem lại `EX-G12-B19-O03` nhưng che bước kết quả, tự làm ra giấy. (5) Thử lại item `THPT-G12-B19-C03` trước, sau đó `THPT-G12-B19-P03`; chỉ mở đáp án khi đã thử, không ghi Mastery.
 
@@ -663,10 +663,10 @@ B xảy ra theo hai đường không trùng: `A rồi B` hoặc `Ā rồi B`. H
 
 #### THPT-G12-B19-W04 — Tự luận Written — yêu cầu trình bày đầy đủ
 - **ITEM_ID:** `THPT-G12-B19-W04` · **OUTCOME_ID:** `G12-CHVI-B19-O04` · **SOURCE_ROLE:** `ORIGINAL_AUTHORED` · **PRIMARY_PLACEMENT:** `SGK_WRITTEN` · **DEPTH:** `WRITTEN_REASONED`.
-- **Đề tự biên soạn:** Một tổ có 40% học viên loại A, xác suất đạt của A là 70%, nhóm còn lại đạt 20%. Chọn người đã đạt, xác suất người đó thuộc A?
+- **Đề tự biên soạn:** Một tổ có 40% học viên loại A, xác suất đạt của học viên loại A là 70%, nhóm còn lại đạt 20%. Chọn ngẫu nhiên một người; biết người đó đã đạt, tính xác suất người đó thuộc loại A.
 - **Đáp án để tự đối chiếu sau khi làm:** `7/10`.
-- **Giải/Lập luận:** P(A∩Đ)=0,4×0,7=0,28; P(Đ)=0,28+0,6×0,2=0,4; Bayes 0,28/0,4=0,7.
-- **Rubric tự luận /5:** 1đ xác định hai nhóm và điều kiện cần đảo; 1đ tử 0,28; 1đ nhánh còn lại 0,12; 1đ mẫu 0,4; 1đ hậu nghiệm 0,7 và ý nghĩa.
+- **Giải/Lập luận:** Gọi A là loại A và Đ là biến cố đạt. \(P(A\cap Đ)=0{,}4\cdot0{,}7=0{,}28\). Nhánh còn lại có xác suất đạt \(0{,}6\cdot0{,}2=0{,}12\). Vì vậy \(P(Đ)=0{,}28+0{,}12=0{,}4>0\). Theo Bayes, \(P(A\mid Đ)=\frac{0{,}28}{0{,}4}=0{,}7\). Giá trị này tình cờ bằng \(P(Đ\mid A)=0{,}7\) trong dữ liệu đề bài. Hai xác suất có ý nghĩa và điều kiện khác nhau; không được thay thế chúng bằng nhau trong mọi bài.
+- **Rubric tự luận /5:** 1đ xác định nhóm và điều kiện; 1đ tử \(0{,}28\); 1đ nhánh còn lại \(0{,}12\); 1đ mẫu \(0{,}4\); 1đ hậu nghiệm \(0{,}7\) và phân biệt hai chiều điều kiện.
 
 **D6 — Đường khắc phục đúng outcome `G12-CHVI-B19-O04` (5 bước):** (1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Khi thấy kết quả B cần suy xác suất nguyên nhân A, không thể dùng P(B|A) làm đáp án. (2) Rà tiền đề: Công thức xác suất toàn phần và P(B)>0. (3) Nhận diện bẫy: P(A|B) không bằng P(B|A); dữ kiện nhánh còn lại là cần thiết. (4) Xem lại `EX-G12-B19-O04` nhưng che bước kết quả, tự làm ra giấy. (5) Thử lại item `THPT-G12-B19-C04` trước, sau đó `THPT-G12-B19-P04`; chỉ mở đáp án khi đã thử, không ghi Mastery.
 
@@ -707,10 +707,10 @@ B xảy ra theo hai đường không trùng: `A rồi B` hoặc `Ā rồi B`. H
 
 #### THPT-G12-B19-W05 — Tự luận Written — yêu cầu trình bày đầy đủ
 - **ITEM_ID:** `THPT-G12-B19-W05` · **OUTCOME_ID:** `G12-CHVI-B19-O05` · **SOURCE_ROLE:** `ORIGINAL_AUTHORED` · **PRIMARY_PLACEMENT:** `SGK_WRITTEN` · **DEPTH:** `WRITTEN_REASONED`.
-- **Đề tự biên soạn:** Mô hình giả định 10.000 phép thử với tỷ lệ nền 1%, độ nhạy 90%, độ đặc hiệu 95%. Lập bảng dương thật/dương giả; tính xác suất có đặc điểm khi dương, giải thích vì sao không bằng 90%.
+- **Đề tự biên soạn:** Trong một mô hình giả định 10.000 phép thử, tỉ lệ có đặc điểm là 1%. Độ nhạy 90% nghĩa là xác suất dương tính khi có đặc điểm bằng 90%; độ đặc hiệu 95% nghĩa là xác suất âm tính khi không có đặc điểm bằng 95%. Lập bảng dương thật/dương giả; tính xác suất có đặc điểm khi dương tính và giải thích vì sao không bằng 90%.
 - **Đáp án để tự đối chiếu sau khi làm:** `2/13`.
-- **Giải/Lập luận:** 100 người có đặc điểm→90 dương thật; 9.900 không có→495 dương giả. Tổng dương 585, hậu nghiệm 90/585=2/13≈15,38%, khác độ nhạy 90%.
-- **Rubric tự luận /5:** 1đ quy đổi 100 và 9.900 người; 1đ tính 90 dương thật; 1đ tính 495 dương giả; 1đ hậu nghiệm 2/13; 1đ phân biệt hậu nghiệm với độ nhạy.
+- **Giải/Lập luận:** Trong 10.000 trường hợp, có 100 trường hợp mang đặc điểm và 9.900 không mang đặc điểm. Số dương thật là \(100\cdot0{,}9=90\); số dương giả là \(9900\cdot(1-0{,}95)=495\). Bảng hai nhóm: nhóm có đặc điểm gồm 90 dương, 10 âm; nhóm không có đặc điểm gồm 495 dương, 9.405 âm. Tổng số dương là 585. Vì vậy xác suất có đặc điểm khi dương là \(\frac{90}{585}=\frac2{13}\approx15{,}38\%\). Độ nhạy 90% là xác suất ở chiều ngược lại, còn xác suất cần tìm phụ thuộc cả tỉ lệ nền và dương giả. Đây là mô hình toán giả định, không phải nhận định y tế cá nhân.
+- **Rubric tự luận /5:** 1đ quy đổi 100 và 9.900; 1đ tính 90 dương thật; 1đ tính 495 dương giả và lập bảng; 1đ hậu nghiệm \(\frac2{13}\); 1đ phân biệt hậu nghiệm với độ nhạy.
 
 **D6 — Đường khắc phục đúng outcome `G12-CHVI-B19-O05` (5 bước):** (1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Một phép thử tốt vẫn có thể tạo nhiều kết quả dương tính giả nếu hiện tượng hiếm. (2) Rà tiền đề: Tỉ lệ nền, độ nhạy, độ đặc hiệu, xác suất dương tính giả. (3) Nhận diện bẫy: Độ nhạy cao không có nghĩa P(có đặc điểm|dương) cao nếu tỷ lệ nền thấp. (4) Xem lại `EX-G12-B19-O05` nhưng che bước kết quả, tự làm ra giấy. (5) Thử lại item `THPT-G12-B19-C05` trước, sau đó `THPT-G12-B19-P05`; chỉ mở đáp án khi đã thử, không ghi Mastery.
 
