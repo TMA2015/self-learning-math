@@ -6934,8 +6934,10 @@
   {
     "item_id": "THPT-G12-YE-W01",
     "source": {
-      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
-      "heading_id": "THPT-G12-YE-W01"
+      "blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
+      "heading_id": "THPT-G12-YE-W01",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
+      "previous_reviewed_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
@@ -6949,9 +6951,9 @@
     "skill_ids": [
       "G12-SGK-YE-O01"
     ],
-    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Lời giải tính đúng cực trị; cần phân biệt giá trị cực trị với tọa độ điểm cực trị, mô tả nét phác rõ hơn. Gần trùng M01 về đạo hàm, nhưng yêu cầu tự luận bổ sung cực trị và đồ thị."
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W01.DELTA01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Clarified local extrema value vs point and graph sketch; f(-1)=10, f(3)=-22, f(0)=5. No change to answer. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc."
   },
   {
     "item_id": "THPT-G12-YE-W02",
@@ -7040,8 +7042,10 @@
   {
     "item_id": "THPT-G12-YE-W06",
     "source": {
-      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
-      "heading_id": "THPT-G12-YE-W06"
+      "blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
+      "heading_id": "THPT-G12-YE-W06",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
+      "previous_reviewed_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
@@ -7055,9 +7059,9 @@
     "skill_ids": [
       "G12-SGK-YE-O03"
     ],
-    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W06",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Cụm 'hai parabol–đường thẳng' trong đề chưa chuẩn: một parabol và một đường thẳng."
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W06.DELTA01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Fixed parabol–line wording; S=9/2; clarified upper-minus-lower. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc."
   },
   {
     "item_id": "THPT-G12-YE-W07",
@@ -7083,8 +7087,10 @@
   {
     "item_id": "THPT-G12-YE-W08",
     "source": {
-      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
-      "heading_id": "THPT-G12-YE-W08"
+      "blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
+      "heading_id": "THPT-G12-YE-W08",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
+      "previous_reviewed_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
@@ -7098,9 +7104,9 @@
     "skill_ids": [
       "G12-SGK-YE-O04"
     ],
-    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W08",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Lời giải/rubric bắt buộc định thức hoặc vectơ; ưu tiên cách SGK: đáy ABC vuông tại A có S=3, AD vuông góc đáy dài 4, V=4. Chấp nhận cách đúng khác, không bắt buộc định thức ngoài lộ trình."
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W08.DELTA01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Replaced determinant requirement by elementary perpendicular-height solution, V=4, d=12/sqrt(61); alternative methods accepted. Heron for sides sqrt(13), sqrt(20), 5 gives area sqrt(61). Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc."
   },
   {
     "item_id": "THPT-G12-YE-W09",
@@ -7210,8 +7216,10 @@
   {
     "item_id": "THPT-G12-YE-W14",
     "source": {
-      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
-      "heading_id": "THPT-G12-YE-W14"
+      "blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
+      "heading_id": "THPT-G12-YE-W14",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
+      "previous_reviewed_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
@@ -7225,9 +7233,9 @@
     "skill_ids": [
       "G12-SGK-YE-O05"
     ],
-    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W14",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Các số tính đúng theo đại diện lớp; phân biệt giá trị thống kê của mẫu ghép nhóm với ước lượng đại lượng của mẫu gốc. Chuẩn hóa dấu phẩy thập phân."
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W14.DELTA01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Grouped statistics 4.4, 22.6, 3.24, 1.8 verified; distinguish grouped from original data. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc."
   },
   {
     "item_id": "THPT-G12-YE-W15",
@@ -7253,8 +7261,10 @@
   {
     "item_id": "THPT-G12-YE-W16",
     "source": {
-      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
-      "heading_id": "THPT-G12-YE-W16"
+      "blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
+      "heading_id": "THPT-G12-YE-W16",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
+      "previous_reviewed_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
@@ -7268,8 +7278,8 @@
     "skill_ids": [
       "G12-SGK-YE-O06"
     ],
-    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W16",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "author_review_note": "Nêu rõ lấy ngẫu nhiên đều ở mỗi lượt; xác suất hiện tại dựa trên giả thiết này."
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W16.DELTA01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Explicit uniform draw assumption; conditional 2/3, marginal 4/7, not independent. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc."
   }
 ]
