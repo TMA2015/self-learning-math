@@ -1,8 +1,8 @@
 [
   {
     "item_id": "THPT-TOP01-ADD01",
-    "content_version": "TOP01-BANK-CP77-20261126-ADD01",
-    "stem": "Cho \\(m\\in\\mathbb Z\\). Phát biểu (a) “\\(m+2=7\\)”; (b) “\\(\\forall m\\in\\mathbb Z,\\ m+2=7\\)”; (c) “\\(\\exists m\\in\\mathbb Z,\\ m+2=7\\)”. Phân loại và xét giá trị chân lý khi xác định.",
+    "content_version": "TOP01-BANK-CP120-20261127-ADD01",
+    "stem": "Cho \\(m\\in\\mathbb Z\\). Phát biểu (a) “\\(m+2=7\\)”; (b) “\\(\\forall m\\in\\mathbb Z,\\ m+2=7\\)”; (c) “\\(\\exists m\\in\\mathbb Z,\\ m+2=7\\)”. Phân loại và xét giá trị chân lý khi xác định. Chọn phương án phân loại đúng cả ba câu.",
     "answer_key": "(a) Mệnh đề chứa biến, chưa xác định đúng/sai khi chưa gán m; (b) sai; (c) đúng.",
     "worked_solution": "(a) \\(m=5\\) cho đẳng thức đúng, \\(m=0\\) cho đẳng thức sai; khi chưa gán m, đây là mệnh đề chứa biến. (b) Mệnh đề “mọi” sai vì phản ví dụ \\(m=0\\). (c) Mệnh đề “tồn tại” đúng vì \\(m=5\\) thỏa đẳng thức.",
     "skill_ids": [
@@ -13,14 +13,18 @@
       "TOP01-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Phân biệt thử một giá trị để bác bỏ “mọi” và để chứng minh “tồn tại”."
+      "Thử hai giá trị khác nhau của m; phân biệt yêu cầu mọi giá trị với tồn tại ít nhất một giá trị."
     ],
     "remediation": "Nếu gán đúng/sai cho câu chưa gán m, thử \\(m=0\\) và \\(m=5\\): kết quả khác nhau. Một phản ví dụ đủ bác bỏ mệnh đề “mọi”, còn một ví dụ thỏa đủ chứng minh mệnh đề “tồn tại”. Ôn TOP01-M01, TOP01-M05; luyện THPT-G10-B01-C01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -35,12 +39,31 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(a) đúng; (b) sai; (c) đúng."
+      },
+      {
+        "id": "B",
+        "text": "(a) mệnh đề chứa biến; (b) sai; (c) đúng."
+      },
+      {
+        "id": "C",
+        "text": "(a) mệnh đề chứa biến; (b) đúng; (c) sai."
+      },
+      {
+        "id": "D",
+        "text": "(a) sai; (b) sai; (c) đúng."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP01-ADD02",
-    "content_version": "TOP01-BANK-CP77-20261126-ADD02",
-    "stem": "Với \\(n\\in\\mathbb Z\\), phát biểu “\\(4\\mid n\\iff4\\mid n^2\\)” đúng hay sai? Xác định chiều đúng và nêu phản ví dụ cho chiều sai.",
+    "content_version": "TOP01-BANK-CP120-20261127-ADD02",
+    "stem": "Với \\(n\\in\\mathbb Z\\), xét phát biểu “\\(4\\mid n\\iff4\\mid n^2\\)”. Chọn kết luận đúng về hai chiều; tự chứng minh chiều đúng và nêu phản ví dụ cho chiều sai trước khi xem lời giải.",
     "answer_key": "Sai. Chiều \\(4\\mid n\\Rightarrow4\\mid n^2\\) đúng; chiều đảo sai, phản ví dụ \\(n=2\\).",
     "worked_solution": "Nếu \\(n=4k\\) với \\(k\\in\\mathbb Z\\) thì \\(n^2=16k^2\\) chia hết cho 4. Vậy chiều \\(4\\mid n\\Rightarrow4\\mid n^2\\) đúng. Lấy \\(n=2\\): \\(n^2=4\\) chia hết cho 4 nhưng 2 không chia hết cho 4. Chiều đảo sai, nên mệnh đề tương đương sai.",
     "skill_ids": [
@@ -50,14 +73,18 @@
       "TOP01-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "APPLY",
     "hints": [
-      "Viết riêng hai chiều; thử \\(n=2\\) cho chiều đảo."
+      "Xét riêng hai chiều; ở chiều đảo, tìm một số không chia hết cho 4 nhưng bình phương chia hết cho 4."
     ],
     "remediation": "Nếu kết luận tương đương chỉ vì một chiều đúng, viết hai chiều riêng; tìm số n mà \\(n^2\\) chia hết cho 4 nhưng n không chia hết cho 4. Ôn TOP01-M04; luyện THPT-G10-B01-P04.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -72,12 +99,31 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hai chiều đều đúng."
+      },
+      {
+        "id": "B",
+        "text": "Chiều \\(4\\mid n\\Rightarrow4\\mid n^2\\) sai; chiều đảo đúng."
+      },
+      {
+        "id": "C",
+        "text": "Chiều \\(4\\mid n\\Rightarrow4\\mid n^2\\) đúng; chiều đảo sai, chẳng hạn \\(n=2\\)."
+      },
+      {
+        "id": "D",
+        "text": "Hai chiều đều sai vì \\(n=1\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP01-ADD03",
-    "content_version": "TOP01-BANK-CP77-20261126-ADD03",
-    "stem": "Đặt \\(A=\\{1;2;3;4;5\\}\\), \\(B=\\{1;3;5;7\\}\\). Tìm \\(A\\cap B\\) và \\(A\\cup B\\); giải thích vì sao phần tử 1 chỉ viết một lần trong hợp.",
+    "content_version": "TOP01-BANK-CP120-20261127-ADD03",
+    "stem": "Đặt \\(A=\\{1;2;3;4;5\\}\\), \\(B=\\{1;3;5;7\\}\\). Tìm \\(A\\cap B\\) và \\(A\\cup B\\); giải thích vì sao phần tử 1 chỉ viết một lần trong hợp. Chọn kết luận kèm lập luận phù hợp.",
     "answer_key": "\\(A\\cap B=\\{1;3;5\\}\\), \\(A\\cup B=\\{1;2;3;4;5;7\\}\\).",
     "worked_solution": "Phần chung 1, 3, 5 đi vào giao. Hợp chứa mọi phần tử xuất hiện ở ít nhất một tập; mỗi phần tử chỉ viết một lần. Vì vậy \\(A\\cap B=\\{1;3;5\\}\\), \\(A\\cup B=\\{1;2;3;4;5;7\\}\\).",
     "skill_ids": [
@@ -87,14 +133,18 @@
       "TOP01-O07"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Đánh dấu các phần tử chung, rồi viết mỗi phần tử trong hợp một lần."
+      "Xác định phần tử thuộc cả hai tập và phần tử thuộc ít nhất một tập; tập hợp không đếm lặp phần tử."
     ],
     "remediation": "Nếu loại phần chung khỏi hợp, kiểm xem phần tử 1 có thuộc ít nhất một tập không. Ôn TOP01-M07; luyện THPT-G10-B02-C02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -109,12 +159,31 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A\\cap B=\\{1;3;5\\}\\), \\(A\\cup B=\\{1;2;3;4;5;7\\}\\). Hợp chỉ ghi mỗi phần tử một lần."
+      },
+      {
+        "id": "B",
+        "text": "\\(A\\cap B=\\{1;3;5\\}\\), \\(A\\cup B=\\{2;4;7\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(A\\cap B=\\{1;2;3;4;5;7\\}\\), \\(A\\cup B=\\{1;3;5\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(A\\cap B=\\{1;3;5\\}\\), \\(A\\cup B=\\{1;2;3;4;5;7\\}\\) nhưng hợp có 9 phần tử vì đếm lặp."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP01-ADD04",
-    "content_version": "TOP01-BANK-CP77-20261126-ADD04",
-    "stem": "Cho \\(A=\\{1;2;4;6\\}\\), \\(B=\\{2;3;6;8\\}\\). Tính \\(A\\setminus B\\) và \\(B\\setminus A\\). Có thể kết luận hai hiệu luôn bằng nhau không?",
+    "content_version": "TOP01-BANK-CP120-20261127-ADD04",
+    "stem": "Cho \\(A=\\{1;2;4;6\\}\\), \\(B=\\{2;3;6;8\\}\\). Tính \\(A\\setminus B\\) và \\(B\\setminus A\\). Có thể kết luận hai hiệu luôn bằng nhau không? Chọn kết luận kèm lập luận phù hợp.",
     "answer_key": "\\(A\\setminus B=\\{1;4\\}\\), \\(B\\setminus A=\\{3;8\\}\\); không luôn bằng nhau.",
     "worked_solution": "Giữ những phần tử thuộc A nhưng không thuộc B, được \\(A\\setminus B=\\{1;4\\}\\). Đổi vai A và B, được \\(B\\setminus A=\\{3;8\\}\\). Hai kết quả khác nhau là phản ví dụ cho khẳng định hai hiệu luôn bằng nhau.",
     "skill_ids": [
@@ -124,14 +193,18 @@
       "TOP01-O08"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Gạch phần tử chung của hai tập; giữ các phần tử còn lại theo thứ tự phép hiệu."
+      "Với mỗi hiệu, bắt đầu từ tập đứng trước và loại phần tử thuộc tập đứng sau."
     ],
     "remediation": "Nếu đổi thứ tự hai hiệu, kiểm từng phần tử có thuộc tập đứng trước không. Ôn TOP01-M08; luyện THPT-G10-B02-P01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -146,12 +219,31 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A\\setminus B=\\{3;8\\}\\), \\(B\\setminus A=\\{1;4\\}\\); không luôn bằng nhau."
+      },
+      {
+        "id": "B",
+        "text": "Cả hai hiệu bằng \\(\\{2;6\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "Cả hai hiệu bằng \\(\\{1;3;4;8\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(A\\setminus B=\\{1;4\\}\\), \\(B\\setminus A=\\{3;8\\}\\); không luôn bằng nhau."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP01-ADD05",
-    "content_version": "TOP01-BANK-CP77-20261126-ADD05",
-    "stem": "Cho \\(U=\\{-3;-2;-1;0;1;2;3\\}\\), \\(A=\\{x\\in U\\mid x^2\\le1\\}\\). Xác định \\(U\\setminus A\\).",
+    "content_version": "TOP01-BANK-CP120-20261127-ADD05",
+    "stem": "Cho \\(U=\\{-3;-2;-1;0;1;2;3\\}\\), \\(A=\\{x\\in U\\mid x^2\\le1\\}\\). Xác định \\(U\\setminus A\\). Chọn kết quả đúng.",
     "answer_key": "\\(A=\\{-1;0;1\\}\\), \\(U\\setminus A=\\{-3;-2;2;3\\}\\).",
     "worked_solution": "Do \\(x^2\\le1\\) trên các số nguyên của U đúng khi \\(x\\in\\{-1;0;1\\}\\), ta có \\(A=\\{-1;0;1\\}\\). Loại chính các phần tử ấy ra khỏi U, giữ bốn số còn lại: \\(U\\setminus A=\\{-3;-2;2;3\\}\\).",
     "skill_ids": [
@@ -161,14 +253,18 @@
       "TOP01-O09"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Liệt kê A từ các số trong U, rồi loại A khỏi U."
+      "Tìm A trong đúng tập U, rồi lấy những phần tử của U không thuộc A."
     ],
     "remediation": "Nếu lấy cả số ngoài U hoặc giữ nhầm phần tử của A, liệt kê U và gạch đúng các số có bình phương không vượt 1. Ôn TOP01-M09; luyện THPT-G10-B02-P02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -183,14 +279,33 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\{-1;0;1\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\{-3;-2;2;3\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\{-3;-2;3\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\{x\\in\\mathbb Z\\mid x^2>1\\}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP01-ADD06",
-    "content_version": "TOP01-BANK-CP77-20261126-ADD06",
-    "stem": "Trong 50 học sinh, 31 tham gia CLB Hát, 27 tham gia CLB Robot, 12 tham gia cả hai. Hỏi chỉ Hát, chỉ Robot, ít nhất một CLB, và không tham gia CLB nào.",
+    "content_version": "TOP01-BANK-CP120-20261127-ADD06",
+    "stem": "Trong 50 học sinh, 31 tham gia CLB Hát, 27 tham gia CLB Robot, 12 tham gia cả hai. Hỏi chỉ Hát, chỉ Robot, ít nhất một CLB, và không tham gia CLB nào. Chọn kết quả đúng.",
     "answer_key": "Chỉ Hát 19; chỉ Robot 15; ít nhất một 46; không tham gia 4.",
-    "worked_solution": "Giao 12. Chỉ Hát: \\(31-12=19\\); chỉ Robot: \\(27-12=15\\); hợp: \\(19+12+15=46=31+27-12\\); ngoài: \\(50-46=4\\). Kiểm \\(19+12+15+4=50\\).",
+    "worked_solution": "Có 12 học sinh tham gia cả hai CLB. Chỉ Hát: \\(31-12=19\\); chỉ Robot: \\(27-12=15\\). Ít nhất một CLB: \\(19+12+15=46\\). Không tham gia CLB nào: \\(50-46=4\\).",
     "skill_ids": [
       "G10-B02-VENN_MODEL"
     ],
@@ -198,14 +313,18 @@
       "TOP01-O11"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "APPLY",
     "hints": [
-      "Điền giao trước, tính hai vùng riêng, cuối cùng tính phần ngoài."
+      "Điền miền giao trước; tính hai miền chỉ tham gia một CLB, rồi tính hợp và phần ngoài."
     ],
     "remediation": "Nếu cộng trùng giao hoặc quên miền ngoài, điền bốn miền và kiểm tổng bằng 50. Ôn TOP01-M11; luyện THPT-G10-B02-P05.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -220,6 +339,26 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ Hát 31; chỉ Robot 27; ít nhất một 46; không tham gia 4."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ Hát 19; chỉ Robot 15; ít nhất một 34; không tham gia 16."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ Hát 19; chỉ Robot 15; ít nhất một 46; không tham gia 4."
+      },
+      {
+        "id": "D",
+        "text": "Chỉ Hát 31; chỉ Robot 27; ít nhất một 58; không tham gia 0."
+      }
+    ],
+    "check_again": "Bốn miền rời nhau gồm 19, 12, 15, 4 học sinh; \\(19+12+15+4=50\\)."
   }
 ]
