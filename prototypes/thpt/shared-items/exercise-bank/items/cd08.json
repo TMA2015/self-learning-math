@@ -367,7 +367,7 @@
     "item_id": "THPT-TOP08-P08",
     "content_version": "CD08-BANK-CP128-20261127-TOP08-P08",
     "stem": "Xét \\(f(x)=\\frac{x+1}{x-2}\\). Khi \\(x\\to2^-\\) và \\(x\\to2^+\\), \\(f(x)\\) tiến tới đâu? Có giới hạn hữu hạn hai phía không?",
-    "answer_key": "Giới hạn trái \\(-\\infty\\), phải +∞; không có giới hạn hai phía hữu hạn.",
+    "answer_key": "Giới hạn trái \\(-\\infty\\), phải \\(+\\infty\\); không tồn tại giới hạn hai phía, kể cả vô cực.",
     "worked_solution": "Gần \\(x=2\\), tử \\(x+1\\) tiến tới \\(3>0\\). Khi \\(x\\to2^-\\), mẫu \\(x-2\\) âm và tiến tới 0 nên \\(\\lim_{x\\to2^-}f(x)=-\\infty\\). Khi \\(x\\to2^+\\), mẫu dương và tiến tới 0 nên \\(\\lim_{x\\to2^+}f(x)=+\\infty\\). Hai hướng cho hai kết quả khác dấu, do đó không có giới hạn hai phía, kể cả giới hạn vô cực.",
     "skill_ids": [
       "G11-B16-INFINITE_LIMIT"
@@ -398,7 +398,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Giới hạn trái \\(-\\infty\\), phải +∞; không có giới hạn hai phía hữu hạn."
+        "text": "Giới hạn trái \\(-\\infty\\), phải \\(+\\infty\\); không tồn tại giới hạn hai phía, kể cả vô cực."
       },
       {
         "id": "B",
