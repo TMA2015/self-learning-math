@@ -66,9 +66,9 @@
   {
     "item_id": "THPT-G10-B15-P01",
     "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tìm tập xác định của \\(g(x)=\\frac{x+1}{x^2-9}\\).",
-    "answer_key": "\\(D=\\mathbb R\\setminus\\{-3;3\\}\\).",
-    "worked_solution": "Mẫu số phải khác 0: \\(x^2-9=(x-3)(x+3)\\ne0\\), tức \\(x\\ne3\\) và \\(x\\ne-3\\). Tử số là đa thức nên không có điều kiện bổ sung. Vậy \\(D=\\mathbb R\\setminus\\{-3;3\\}\\).",
+    "stem": "Cho \\(f(x)=\\frac{x^2-9}{x-3}\\) và \\(g(x)=x+3\\), xét trên tập số thực. (a) Tìm tập xác định của từng hàm số. (b) Rút gọn biểu thức f(x) trên tập xác định của nó. (c) Hai hàm số có hoàn toàn giống nhau không? Hãy xét riêng \\(x=3\\).",
+    "answer_key": "\\(D_f=\\mathbb R\\setminus\\{3\\}\\), \\(D_g=\\mathbb R\\). Với \\(x\\ne3\\), \\(f(x)=g(x)=x+3\\). Hai hàm không giống nhau trên toàn bộ tập số thực: f không xác định tại 3, còn \\(g(3)=6\\).",
+    "worked_solution": "Trước khi rút gọn, mẫu số của f phải khác 0, tức \\(x\\ne3\\); g là đa thức nên xác định với mọi số thực. Với \\(x\\ne3\\), phân tích tử số thành tích: \\(f(x)=\\frac{(x-3)(x+3)}{x-3}=x+3\\). Phép khử nhân tử \\(x-3\\) chỉ hợp lệ vì đã có điều kiện \\(x\\ne3\\). Tại \\(x=3\\), biểu thức ban đầu của f có mẫu bằng 0 nên không xác định, còn \\(g(3)=6\\). Vì vậy hai hàm trùng giá trị trên tập xác định của f nhưng không có cùng tập xác định. Không được thêm điểm x=3 vào tập xác định chỉ vì biểu thức sau rút gọn tính được tại đó.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_DOMAIN"
@@ -76,7 +76,8 @@
     "problem_type_id": null,
     "difficulty": 1,
     "hints": [
-      "Mẫu số phải khác 0."
+      "Tìm điều kiện của biểu thức ban đầu trước khi khử nhân tử.",
+      "So sánh tập xác định và giá trị tại x=3."
     ],
     "rubric": null,
     "interaction": {
@@ -93,7 +94,7 @@
     },
     "exposure": "FORMATIVE_ONLY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ loại 3, phân tích \\(x^2-9=(x-3)(x+3)\\) và loại cả −3. Ôn Bài 15 mục 2.1; luyện THPT-G10-CHVI-TRY02."
+    "remediation": "Khi rút gọn phân thức, giữ điều kiện mẫu ban đầu khác 0; biểu thức rút gọn có thể có miền rộng hơn. Ôn Bài 15 mục tập xác định; luyện THPT-G10-CHVI-TRY02."
   },
   {
     "item_id": "THPT-G10-B15-P02",
@@ -450,9 +451,9 @@
   {
     "item_id": "THPT-G10-B18-P01",
     "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Giải \\(\\sqrt{3x+4}=x\\).",
-    "answer_key": "\\(S=\\{4\\}\\).",
-    "worked_solution": "Cần \\(x\\ge0\\), khi đó \\(3x+4>0\\). Hai vế đều không âm nên bình phương tương đương: \\(3x+4=x^2\\iff (x-4)(x+1)=0\\). Loại −1 vì không thỏa điều kiện. Thay \\(x=4\\) được \\(\\sqrt{16}=4\\). Vậy \\(S=\\{4\\}\\).",
+    "stem": "Giải hai phương trình trên \\(\\mathbb R\\): (1) \\(\\sqrt{x+6}=x\\); (2) \\(\\sqrt{x+6}=-x\\). Hai phương trình đều cho cùng một phương trình bậc hai sau khi bình phương. Vì sao tập nghiệm của chúng vẫn khác nhau?",
+    "answer_key": "(1) \\(S_1=\\{3\\}\\); (2) \\(S_2=\\{-2\\}\\). Sau bình phương đều được \\(x^2-x-6=0\\), nhưng điều kiện dấu vế phải của (1) là \\(x\\ge0\\), của (2) là \\(x\\le0\\), bên cạnh \\(x+6\\ge0\\).",
+    "worked_solution": "Cả hai phương trình đều cần \\(x+6\\ge0\\). Căn bậc hai luôn không âm, nên (1) còn cần \\(x\\ge0\\), còn (2) cần \\(-x\\ge0\\), tức \\(x\\le0\\). Trên từng miền điều kiện tương ứng, hai vế đều không âm, nên bình phương là phép biến đổi tương đương. Cả hai cho \\(x+6=x^2\\), hay \\((x-3)(x+2)=0\\), có hai ứng viên \\(x=3\\) và \\(x=-2\\). Với (1), chỉ 3 thỏa \\(x\\ge0\\), kiểm lại \\(\\sqrt9=3\\). Với (2), chỉ −2 thỏa \\(-6\\le x\\le0\\), kiểm lại \\(\\sqrt4=2=-(-2)\\). Do đó \\(S_1=\\{3\\}\\), \\(S_2=\\{-2\\}\\). Bình phương làm mất thông tin về dấu của vế phải; chính điều kiện trước khi bình phương giúp phân biệt nghiệm của hai phương trình.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_FILTER"
@@ -460,7 +461,8 @@
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "Vế phải không âm; thử lại mọi nghiệm ứng viên."
+      "Căn bậc hai không âm; xét riêng dấu của x và −x.",
+      "Giải phương trình bậc hai một lần rồi lọc ứng viên theo từng miền."
     ],
     "rubric": null,
     "interaction": {
@@ -477,7 +479,7 @@
     },
     "exposure": "FORMATIVE_ONLY",
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhận −1, thử trực tiếp hai vế và kiểm \\(x\\ge0\\); giữ \\(x=4\\). Ôn Bài 18 §2.2 / HELP-G10-CHVI-TRY18; luyện THPT-TOP03-ADD13."
+    "remediation": "Không coi hai phương trình có cùng bình phương là tương đương khi chưa kiểm dấu hai vế. Ghi riêng điều kiện của mỗi phương trình. Ôn Bài 18 §2.2; luyện THPT-G10-CHVI-TRY18."
   },
   {
     "item_id": "THPT-G10-B18-P02",
