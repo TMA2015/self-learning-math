@@ -3961,21 +3961,27 @@
   },
   {
     "item_id": "THPT-G12-B14-T01",
-    "content_version": "SOURCE_BLOB_265381a3bcef201aefff38185753a35f706237c1_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tính tích vô hướng u⃗·n⃗ với u⃗=(1;2;0), n⃗=(2;−1;0).",
-    "answer_key": "u⃗·n⃗=0.",
-    "worked_solution": "Tính tích vô hướng bằng tổng các tích tọa độ tương ứng: 1·2+2·(−1)+0·0=0. Vì cả hai vectơ khác vectơ không, chúng vuông góc.",
+    "content_version": "SGK-G12-CHV-BANK-CANDIDATE-20261127-THPT-G12-B14-T01",
+    "stem": "Tính \\(\\vec u\\cdot\\vec n\\) với \\(\\vec u=(1;2;0),\\ \\vec n=(2;-1;0)\\). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "0",
+    "worked_solution": "\\(\\vec u\\cdot\\vec n=1\\cdot2+2\\cdot(-1)+0\\cdot0=0\\). Vì cả hai vectơ khác vectơ không, chúng vuông góc.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B08-O04"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhân từng cặp tọa độ tương ứng rồi cộng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3992,25 +3998,50 @@
       "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "0"
+      },
+      {
+        "id": "C",
+        "text": "−4"
+      },
+      {
+        "id": "D",
+        "text": "1"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-T01",
-    "content_version": "SOURCE_BLOB_05a81b707824146d6829ef385091dd4046bbe8fe_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Đường thẳng qua M₀ có vectơ chỉ phương u⃗ khác vectơ không, viết OM⃗=OM₀⃗+t u⃗. Tại t=0, điểm M là điểm nào?",
-    "answer_key": "M=M₀.",
-    "worked_solution": "Trong phương trình tham số, OM⃗=OM₀⃗+t u⃗. Khi t=0, vectơ dịch chuyển t u⃗ bằng vectơ không, nên OM⃗=OM₀⃗ và M=M₀.",
+    "content_version": "SGK-G12-CHV-BANK-CANDIDATE-20261127-THPT-G12-B15-T01",
+    "stem": "Đường thẳng qua \\(M_0\\) có vectơ chỉ phương \\(\\vec u\\ne\\vec0\\), viết \\(\\overrightarrow{OM}=\\overrightarrow{OM_0}+t\\vec u\\). Khi \\(t=0\\), M là điểm nào? Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(M=M_0\\).",
+    "worked_solution": "Khi \\(t=0\\), \\(t\\vec u=\\vec0\\), nên \\(\\overrightarrow{OM}=\\overrightarrow{OM_0}\\). Vì vậy \\(M=M_0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B15-O01"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Thay t=0 vào biểu thức vectơ vị trí."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -4027,25 +4058,50 @@
       "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(M=O\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{M_0M}=\\vec u\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(M=M_0\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không xác định được M."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-T02",
-    "content_version": "SOURCE_BLOB_05a81b707824146d6829ef385091dd4046bbe8fe_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho đường thẳng d có phương trình tham số x=t, y=1, z=2t (t∈ℝ) và mặt phẳng (P): x+z−6=0. Tìm giao điểm của d và (P).",
-    "answer_key": "Giao điểm duy nhất (2;1;4).",
-    "worked_solution": "Thế x=t, y=1, z=2t vào x+z−6=0: 3t−6=0, suy ra t=2 duy nhất. Thay lại được (2;1;4). Kiểm tra 2+4−6=0.",
+    "content_version": "SGK-G12-CHV-BANK-CANDIDATE-20261127-THPT-G12-B15-T02",
+    "stem": "Cho đường thẳng d có phương trình tham số x=t, y=1, z=2t (t∈ℝ) và mặt phẳng (P): x+z−6=0. Tìm giao điểm của d và (P). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "(2;1;4)",
+    "worked_solution": "Thay \\(x=t,\\ y=1,\\ z=2t\\) vào phương trình mặt phẳng: \\(3t-6=0\\), suy ra \\(t=2\\) duy nhất. Tọa độ giao điểm là (2;1;4), kiểm tra \\(2+4-6=0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B15-O07"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Thế tọa độ tham số vào phương trình mặt phẳng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -4062,25 +4118,50 @@
       "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(4;1;2)"
+      },
+      {
+        "id": "B",
+        "text": "(6;1;12)"
+      },
+      {
+        "id": "C",
+        "text": "(2;0;4)"
+      },
+      {
+        "id": "D",
+        "text": "(2;1;4)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-T01",
-    "content_version": "SOURCE_BLOB_b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d_AUTHOR_KEY_REVIEW_R01",
-    "stem": "|(1,0,0)·(-1,0,0)|=?",
-    "answer_key": "1.",
-    "worked_solution": "Tích vô hướng là 1·(−1)+0·0+0·0=−1, nên giá trị tuyệt đối bằng 1. Dấu âm cho biết hai vectơ khác không ngược hướng trong trường hợp này (hai vectơ đã cho đối nhau).",
+    "content_version": "SGK-G12-CHV-BANK-CANDIDATE-20261127-THPT-G12-B16-T01",
+    "stem": "Tính giá trị tuyệt đối của tích vô hướng hai vectơ \\((1;0;0)\\) và \\((-1;0;0)\\). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "1",
+    "worked_solution": "Tích vô hướng bằng \\(1\\cdot(-1)+0\\cdot0+0\\cdot0=-1\\). Giá trị tuyệt đối bằng 1. Trong trường hợp này hai vectơ đơn vị ngược hướng nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B08-O04"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Tính tích vô hướng trước, sau đó lấy trị tuyệt đối."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -4097,25 +4178,50 @@
       "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "−1"
+      },
+      {
+        "id": "C",
+        "text": "0"
+      },
+      {
+        "id": "D",
+        "text": "2"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-T01",
-    "content_version": "SOURCE_BLOB_29b609be3195efcd341aea39cb604a930dba8468_AUTHOR_KEY_REVIEW_R01",
-    "stem": "R=3 thì R² bằng mấy?",
-    "answer_key": "9.",
-    "worked_solution": "R²=3²=9. Trong phương trình mặt cầu, vế phải là bình phương bán kính, không phải bán kính.",
+    "content_version": "SGK-G12-CHV-BANK-CANDIDATE-20261127-THPT-G12-B17-T01",
+    "stem": "Bán kính mặt cầu \\(R=3\\). Tính \\(R^2\\). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "9",
+    "worked_solution": "\\(R^2=3^2=9\\). Vế phải của phương trình mặt cầu dạng chính tắc là bình phương bán kính, không phải bán kính.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B17-O01"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Bình phương bán kính, không nhân đôi bán kính."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -4136,25 +4242,50 @@
       "distinct_task_reason": "Source asks R² alone, canonical asks full sphere equation with center."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "9"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "27"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-T02",
-    "content_version": "SOURCE_BLOB_29b609be3195efcd341aea39cb604a930dba8468_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho mặt cầu tâm C(1;0;0), bán kính R=2 và mặt phẳng (P): x=3. Xác định vị trí tương đối của mặt cầu và (P).",
-    "answer_key": "Mặt phẳng tiếp xúc mặt cầu tại (3;0;0).",
-    "worked_solution": "Khoảng cách từ tâm C(1;0;0) đến mặt phẳng x=3 là |1−3|=2, đúng bằng R. Do đó mặt phẳng tiếp xúc mặt cầu. Hình chiếu vuông góc của C lên mặt phẳng là (3;0;0), chính là tiếp điểm.",
+    "content_version": "SGK-G12-CHV-BANK-CANDIDATE-20261127-THPT-G12-B17-T02",
+    "stem": "Cho mặt cầu tâm C(1;0;0), bán kính R=2 và mặt phẳng (P): x=3. Xác định vị trí tương đối của mặt cầu và (P). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Tiếp xúc tại (3;0;0).",
+    "worked_solution": "Khoảng cách từ C đến mặt phẳng x=3 bằng \\(|1-3|=2=R\\). Do đó mặt phẳng tiếp xúc mặt cầu. Hình chiếu vuông góc của C lên mặt phẳng là (3;0;0), chính là tiếp điểm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B17-O05"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So khoảng cách từ tâm đến mặt phẳng với bán kính."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -4171,6 +4302,25 @@
       "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cắt theo đường tròn bán kính 2."
+      },
+      {
+        "id": "B",
+        "text": "Không giao nhau."
+      },
+      {
+        "id": "C",
+        "text": "Tiếp xúc tại (3;0;0)."
+      },
+      {
+        "id": "D",
+        "text": "Tiếp xúc tại (1;0;0)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
