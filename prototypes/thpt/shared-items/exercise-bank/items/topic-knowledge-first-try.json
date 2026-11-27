@@ -11071,7 +11071,9 @@
     "answer_key": "\\(x\\le0\\); đổi chiều khi chia hai vế cho \\(-3<0\\).",
     "worked_solution": "Khai triển \\(-3x+6\\ge6\\), suy ra \\(-3x\\ge0\\). Chia cho \\(-3<0\\), ta được \\(x\\le0\\), kể cả \\(x=0\\) vì dấu ban đầu có bằng. Nếu em viết \\(x\\ge0\\), hãy thử \\(x=1\\) trong đề gốc để thấy kết luận sai.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP02-SKILL-LINEAR_INEQUALITY_ONE_VAR"
+    ],
     "original_outcome_ids": [
       "TOP02-O01"
     ],
@@ -12063,7 +12065,9 @@
     "answer_key": "Nếu \\(a\\ne0\\), \\(S=\\{1\\}\\); nếu \\(a=0\\), \\(S=\\mathbb R\\).",
     "worked_solution": "Nếu \\(a\\ne0\\) thì \\(x=1\\); nếu \\(a=0\\) thì mọi \\(x\\in\\mathbb R\\) đều là nghiệm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-LINEAR_PARAMETER"
+    ],
     "original_outcome_ids": [
       "TOP03-O02"
     ],
@@ -12119,7 +12123,9 @@
     "answer_key": "\\(S=\\{-1;5\\}\\).",
     "worked_solution": "\\(x=5\\) hoặc \\(x=-1\\); thử vào từng thừa số.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-ZERO_PRODUCT"
+    ],
     "original_outcome_ids": [
       "TOP03-O03"
     ],
@@ -12175,7 +12181,9 @@
     "answer_key": "\\(x=-2\\) (nghiệm kép).",
     "worked_solution": "\\((x+2)^2=0\\Rightarrow x=-2\\) (nghiệm kép), không phải hai giá trị khác nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-QUADRATIC_EQUATION"
+    ],
     "original_outcome_ids": [
       "TOP03-O04"
     ],
@@ -12231,7 +12239,9 @@
     "answer_key": "\\(S=\\{-3\\}\\).",
     "worked_solution": "Điều kiện \\(x\\ne3\\). Tử số \\((x-3)(x+3)=0\\) cho 3 hoặc \\(-3\\); loại 3, nghiệm duy nhất \\(-3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-RATIONAL_EQUATION"
+    ],
     "original_outcome_ids": [
       "TOP03-O05"
     ],
@@ -12287,7 +12297,9 @@
     "answer_key": "\\(S=[-3;+\\infty)\\).",
     "worked_solution": "Vì \\(\\lvert u\\rvert=u\\) khi và chỉ khi \\(u\\ge0\\), ta có \\(x+3\\ge0\\Rightarrow x\\ge-3\\). Thử \\(x=-4\\) cho \\(\\lvert-1\\rvert=1\\ne-1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-ABSOLUTE_EQUATION"
+    ],
     "original_outcome_ids": [
       "TOP03-O06"
     ],
@@ -12578,7 +12590,9 @@
     "answer_key": "\\(S=\\{-\\sqrt3;\\sqrt3\\}\\).",
     "worked_solution": "\\(t=x^2\\ge0\\); \\(t^2-2t-3=(t-3)(t+1)=0\\). Chỉ \\(t=3\\) hợp lệ, nên \\(x=\\pm\\sqrt3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-BIQUADRATIC_SUBSTITUTION"
+    ],
     "original_outcome_ids": [
       "TOP03-O11"
     ],
@@ -13794,7 +13808,9 @@
     "answer_key": "\\(f(10)=4\\).",
     "worked_solution": "Áp dụng đẳng thức ba lần: \\(f(10)=f(7)=f(4)=f(1)=4\\). Số 3 là một chu kỳ theo giả thiết trên \\(\\mathbb R\\), nhưng chưa đủ để kết luận đó là chu kỳ dương nhỏ nhất.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-PERIODICITY"
+    ],
     "original_outcome_ids": [
       "TOP05-O08"
     ],
@@ -13966,7 +13982,9 @@
     "answer_key": "\\(f(-x)=x^2+2x\\).",
     "worked_solution": "\\(x^2+2x\\), là ảnh qua trục Oy.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-AXIS_REFLECTION"
+    ],
     "original_outcome_ids": [
       "TOP05-O11"
     ],
@@ -14022,7 +14040,9 @@
     "answer_key": "\\(g(4)=2,\\ f(4)=4\\).",
     "worked_solution": "\\(g(4)=2\\), \\(f(4)=4\\), co đứng một nửa.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-VERTICAL_SCALING"
+    ],
     "original_outcome_ids": [
       "TOP05-O12"
     ],
@@ -14136,7 +14156,9 @@
     "answer_key": "\\(|f(0)|=1,\\ f(|0|)=-1\\).",
     "worked_solution": "\\(\\lvert-1\\rvert=1\\), còn \\(f(0)=-1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-ABSOLUTE_TRANSFORM"
+    ],
     "original_outcome_ids": [
       "TOP05-O14"
     ],
@@ -18868,7 +18890,9 @@
     "answer_key": "Đoạn \\([2;2{,}2]\\) thuộc miền; \\(dy=-\\frac1{20}\\), \\(\\Delta y=-\\frac1{22}\\), sai số tuyệt đối \\(\\frac1{220}\\approx0{,}00455\\). Vi phân chỉ giữ phần tuyến tính của độ tăng; sai số nhỏ dần so với độ lớn bước khi \\(dx\\to0\\).",
     "worked_solution": "Vì \\(f(x)=\\frac1x\\) có miền \\(x\\ne0\\), cả đoạn \\([2;2{,}2]\\) đều thuộc miền. Ta có \\(f'(x)=-\\frac1{x^2}\\), nên \\(dy=f'(2)\\,dx=(-\\frac14)(\\frac15)=-\\frac1{20}=-0{,}05\\). Độ tăng thật \\(\\Delta y=f(2{,}2)-f(2)=\\frac5{11}-\\frac12=-\\frac1{22}\\approx-0{,}04545\\). Sai số tuyệt đối \\(|\\Delta y-dy|=|-\\frac1{22}+\\frac1{20}|=\\frac1{220}\\approx0{,}00455\\). Cả hai độ tăng đều âm, nhưng ở bài này không bằng nhau khi bước \\(dx\\) hữu hạn. Đặt \\(h=dx\\), với \\(\\lvert h\\rvert<1\\) để không gặp điểm \\(x=0\\). Khi đó \\(\\Delta y-dy=\\frac{1}{2+h}-\\frac12+\\frac h4=\\frac{h^2}{4(2+h)}\\). Chia sai số cho \\(\\lvert h\\rvert\\) (khi \\(h\\ne0\\)) được \\(\\frac{\\lvert h\\rvert}{4\\lvert2+h\\rvert}\\to0\\) khi \\(h\\to0\\). Đây là lý do vi phân xấp xỉ độ tăng thật ở bậc nhất, chứ không phải một đẳng thức.\n\nNếu em tính \\(dy\\) dương, kiểm dấu \\(f'(2)<0\\); nếu đặt \\(dy=\\Delta y\\), so hai phân số \\(-\\frac1{20}\\) và \\(-\\frac1{22}\\). Với mô hình xấp xỉ phải kiểm tính khả vi tại a và bước đủ nhỏ trong miền.\n\n\n**Kiểm lỗi**\n\nNếu cho rằng vi phân dy luôn bằng chính xác độ tăng Δy hoặc bỏ miền xác định, đọc **Kiến thức 5.8**, làm **Bài 52** (hàm phân thức, điều kiện mẫu) và **Bài 108** (tự tính sai số vi phân). Phân biệt xấp xỉ bậc nhất với độ tăng thật.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP09-SKILL-DIFFERENTIAL_APPROXIMATION"
+    ],
     "original_outcome_ids": [
       "TOP09-O32"
     ],
