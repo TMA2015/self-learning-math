@@ -716,10 +716,10 @@
   },
   {
     "item_id": "THPT-G11-CHVII-B23-P02",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B23-P02",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B23-P02.DELTA05",
     "stem": "Nếu d vuông góc với hai đường song song trong \\((P)\\), có chắc \\(d\\perp(P)\\) không?",
     "answer_key": "Không chắc; hai đường song song chỉ cung cấp một phương.",
-    "worked_solution": "Hai đường song song chỉ cho một phương. Có thể chọn d nằm ngay trong \\((P)\\) và vuông góc với phương chung của hai đường đó. Khi ấy d không vuông góc mặt phẳng. Cần hai đường cắt nhau trong mặt để áp dụng dấu hiệu đủ.",
+    "worked_solution": "Hai đường song song chỉ cho một phương. Hãy tưởng tượng trên nền phẳng có hai vạch song song. Một đường thẳng d nằm ngay trên nền, cắt cả hai vạch dưới góc vuông, cũng vuông góc với hai vạch nhưng không vuông góc với nền. Vì vậy chưa đủ để kết luận \\(d\\perp(P)\\). Dấu hiệu đủ là d vuông góc với hai đường thẳng cắt nhau nằm trong (P).",
     "skill_ids": [
       "G11-B23-TWO_INTERSECT"
     ],
@@ -760,11 +760,11 @@
       },
       {
         "id": "C",
-        "text": "Có; d phải nằm ngoài (P)."
+        "text": "Có; d phải nằm ngoài \\((P)\\)."
       },
       {
         "id": "D",
-        "text": "Không; d luôn song song (P)."
+        "text": "Không; d luôn song song \\((P)\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
