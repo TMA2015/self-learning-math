@@ -7306,7 +7306,7 @@
   },
   {
     "item_id": "THPT-TOP19-T01",
-    "content_version": "TOP19-BANK-CP68-20261126-T01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T01",
     "stem": "Một tủ sách có 5 truyện khác nhau và 4 sách tranh khác nhau, không có cuốn nào trùng hai nhóm. Chọn đúng một cuốn để đọc. Hỏi có mấy cách?",
     "answer_key": "9 cách.",
     "worked_solution": "**9 cách**, vì hai nhóm cuốn sách không trùng nhau và mỗi kết quả chỉ lấy đúng một cuốn: \\(5+4=9\\).\n\n**Kiểm lỗi**\n\nNếu tính \\(5\\cdot4\\), hãy thử viết một kết quả: chỉ tên **một** cuốn sách, không phải một cặp. Quay lại xem điều kiện “hoặc”. Đọc lại **Kiến thức 1.1**, sau đó thử **Bài luyện 1** và **Bài luyện 3** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7318,11 +7318,17 @@
       "TOP19-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Chọn đúng một cuốn trong hai nhóm không trùng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7338,11 +7344,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "20"
+      },
+      {
+        "id": "B",
+        "text": "9"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 1.1; luyện THPT-G10-B23-C01, THPT-TOP19-P01."
   },
   {
     "item_id": "THPT-TOP19-T02",
-    "content_version": "TOP19-BANK-CP68-20261126-T02",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T02",
     "stem": "Có 5 loại áo và 3 kiểu huy hiệu, mỗi loại áo đều có thể ghép với đủ ba kiểu huy hiệu. Mỗi bộ quà gồm đúng một loại áo và một kiểu huy hiệu. Hỏi có bao nhiêu bộ quà khác nhau?",
     "answer_key": "15 bộ.",
     "worked_solution": "**15 bộ.** Với mỗi loại trong 5 loại áo đều có 3 cách chọn huy hiệu, nên theo quy tắc nhân ta có \\(5\\cdot3=15\\) bộ.\n\n**Kiểm lỗi**\n\nNếu được 8, em có thể đã cộng \\(5+3\\). Hãy vẽ bảng gồm 5 hàng cho các loại áo và 3 cột cho các kiểu huy hiệu. Mỗi ô là một bộ quà; đếm đủ 15 ô để kiểm tra phép nhân. Đọc lại **Kiến thức 1.2**, sau đó thử **Bài luyện 4** và **Bài luyện 7** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7354,11 +7380,17 @@
       "TOP19-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Mỗi áo ghép được với cả ba huy hiệu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7374,11 +7406,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "15"
+      },
+      {
+        "id": "B",
+        "text": "8"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "3"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 1.2; luyện THPT-G10-B23-C02, THPT-TOP19-P02."
   },
   {
     "item_id": "THPT-TOP19-T03",
-    "content_version": "TOP19-BANK-CP68-20261126-T03",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T03",
     "stem": "Từ \\(\\{0,1,2,3,4\\}\\) lập số tự nhiên có hai chữ số khác nhau. Có bao nhiêu số?",
     "answer_key": "16 số.",
     "worked_solution": "Hàng chục có 4 cách (1–4); hàng đơn vị còn 4 cách (kể cả 0 nếu chưa dùng): \\(4\\cdot4=16\\) số.\n\n**Kiểm lỗi**\n\nNếu có 20, em đã cho chữ số hàng chục nhận 0. Nếu có 12, em có thể đã loại 0 khỏi cả hàng đơn vị. Đọc lại **Kiến thức 1.3**, sau đó thử **Bài luyện 8** và **Bài luyện 9** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7390,11 +7442,17 @@
       "TOP19-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hàng chục khác 0; hàng đơn vị khác hàng chục."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7410,11 +7468,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "20"
+      },
+      {
+        "id": "B",
+        "text": "12"
+      },
+      {
+        "id": "C",
+        "text": "25"
+      },
+      {
+        "id": "D",
+        "text": "16"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 1.3; luyện THPT-G10-B23-P01, THPT-TOP19-P03."
   },
   {
     "item_id": "THPT-TOP19-T04",
-    "content_version": "TOP19-BANK-CP68-20261126-T04",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T04",
     "stem": "Từ \\(\\{0,1,2,3\\}\\) lập số chẵn có hai chữ số khác nhau. Có bao nhiêu số?",
     "answer_key": "5 số.",
     "worked_solution": "Đơn vị 0: hàng chục có 3 cách; đơn vị 2: hàng chục chỉ 1 hoặc 3, có 2 cách; tổng **\\(3+2=5\\)** số.\n\n**Kiểm lỗi**\n\nNếu em nhân \\(2\\cdot3\\), hãy xét riêng đuôi 0: hàng chục có 3 lựa chọn, còn đuôi 2 chỉ có 2. Đọc lại **Kiến thức 1.4**, sau đó thử **Bài luyện 10** và **Bài luyện 12** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7426,11 +7504,17 @@
       "TOP19-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét riêng đuôi 0 và đuôi 2."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7446,11 +7530,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "6"
+      },
+      {
+        "id": "B",
+        "text": "8"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 1.4; luyện THPT-G10-B23-P05, THPT-TOP19-P04."
   },
   {
     "item_id": "THPT-TOP19-T05",
-    "content_version": "TOP19-BANK-CP68-20261126-T05",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T05",
     "stem": "Có 5 học sinh khác nhau xếp thành một hàng, không ràng buộc. Có bao nhiêu thứ tự?",
     "answer_key": "120 thứ tự.",
     "worked_solution": "Hoán vị cả 5 học sinh, mỗi người một vị trí: \\(5!=120\\).\n\n**Kiểm lỗi**\n\nNếu em dùng tổ hợp, hãy đổi chỗ hai học sinh; thứ tự hàng đổi thành kết quả khác, do đó phải đếm tất cả thứ tự. Đọc lại **Kiến thức 2.1**, sau đó thử **Bài luyện 14** và **Bài luyện 17** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7462,11 +7566,17 @@
       "TOP19-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Mỗi học sinh có một vị trí khác nhau."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7482,11 +7592,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "25"
+      },
+      {
+        "id": "B",
+        "text": "120"
+      },
+      {
+        "id": "C",
+        "text": "20"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 2.1; luyện THPT-G10-B24-C01, THPT-TOP19-P05."
   },
   {
     "item_id": "THPT-TOP19-T06",
-    "content_version": "TOP19-BANK-CP68-20261126-T06",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T06",
     "stem": "Từ 6 bạn chọn một trưởng nhóm và một phó nhóm khác nhau. Có bao nhiêu cách?",
     "answer_key": "30 cách.",
     "worked_solution": "Hai vai phân biệt, lần lượt 6 rồi 5 lựa chọn: \\(A_6^2=30\\).\n\n**Kiểm lỗi**\n\nNếu ra 15, em đang coi A làm trưởng/B làm phó giống B trưởng/A phó; hãy viết hai kết quả để thấy khác. Đọc lại **Kiến thức 2.2**, sau đó thử **Bài luyện 18** và **Bài luyện 20** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7498,11 +7628,17 @@
       "TOP19-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Chọn trưởng trước, rồi phó khác trưởng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7518,11 +7654,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "30"
+      },
+      {
+        "id": "B",
+        "text": "15"
+      },
+      {
+        "id": "C",
+        "text": "36"
+      },
+      {
+        "id": "D",
+        "text": "12"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 2.2; luyện THPT-G10-B24-C02, THPT-TOP19-P06."
   },
   {
     "item_id": "THPT-TOP19-T07",
-    "content_version": "TOP19-BANK-CP68-20261126-T07",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T07",
     "stem": "Chọn một nhóm 3 người từ 6 người khác nhau, không phân vai. Có bao nhiêu nhóm?",
     "answer_key": "20 nhóm.",
     "worked_solution": "\\(C_6^3=\\frac{6\\cdot5\\cdot4}{3\\cdot2\\cdot1}=20\\) nhóm.\n\n**Kiểm lỗi**\n\nNếu em ra 120, đó là số thứ tự của bộ ba; mỗi nhóm bị đếm \\(3!=6\\) lần, phải chia 6. Đọc lại **Kiến thức 2.3**, sau đó thử **Bài luyện 21** và **Bài luyện 22** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7534,11 +7690,17 @@
       "TOP19-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đổi thứ tự không tạo nhóm mới."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7554,11 +7716,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "120"
+      },
+      {
+        "id": "B",
+        "text": "18"
+      },
+      {
+        "id": "C",
+        "text": "36"
+      },
+      {
+        "id": "D",
+        "text": "20"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 2.3; luyện THPT-G10-B24-P01, THPT-TOP19-P07."
   },
   {
     "item_id": "THPT-TOP19-T08",
-    "content_version": "TOP19-BANK-CP68-20261126-T08",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T08",
     "stem": "Từ 4 bạn nữ và 3 bạn nam chọn nhóm 3 người gồm đúng 2 nữ, 1 nam, không phân vai. Bao nhiêu nhóm?",
     "answer_key": "18 nhóm.",
     "worked_solution": "Chọn 2 nữ trong 4: \\(C_4^2=6\\); chọn 1 nam trong 3: 3. Nhân: **18** nhóm.\n\n**Kiểm lỗi**\n\nNếu tính \\(A_4^2\\cdot3\\), em đã phân biệt thứ tự hai nữ; bài này chỉ chọn nhóm nên dùng tổ hợp. Đọc lại **Kiến thức 2.4**, sau đó thử **Bài luyện 23** và **Bài luyện 25** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7570,11 +7752,17 @@
       "TOP19-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Chọn hai nữ và một nam bằng hai tổ hợp."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7590,11 +7778,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "36"
+      },
+      {
+        "id": "B",
+        "text": "12"
+      },
+      {
+        "id": "C",
+        "text": "18"
+      },
+      {
+        "id": "D",
+        "text": "7"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 2.4; luyện THPT-G10-B24-P04, THPT-TOP19-P08."
   },
   {
     "item_id": "THPT-TOP19-T14",
-    "content_version": "TOP19-BANK-CP68-20261126-T14",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T14",
     "stem": "Từ 8 ứng viên khác nhau, chọn 3 bạn giữ ba vai trò phân biệt. Hãy (a) xác định phép tính máy cần dùng, (b) cho số cách và (c) tự kiểm bằng tích không cần máy.",
     "answer_key": "nPr; 336 cách; \\(8\\cdot7\\cdot6=336\\).",
     "worked_solution": "Ba vai khác nhau, nên dùng **nPr** (chỉnh hợp): \\(A_8^3=8\\cdot7\\cdot6=336\\) cách. Trên máy có `nPr`, tính `8 nPr 3`; trên máy không có, nhân ba số giảm dần \\(8\\cdot7\\cdot6\\). Không dùng \\(C_8^3\\) vì đó là chọn **nhóm không phân vai**.\n\n**Kiểm lỗi**\n\nNếu kết quả ra 56, kiểm tra xem em mới nhân 8·7 (hai vai) hay đã dùng \\(C_8^3=56\\) (nhóm không phân vai). Cả hai đều thiếu điều kiện **ba vai phân biệt**; so \\(A_8^3=C_8^3\\cdot3!=56\\cdot6=336\\). Quay lại Kiến thức 2.2–2.3 để phân biệt kết quả có thứ tự và không có thứ tự. Đọc lại **Kiến thức 2.5**, sau đó thử **Bài luyện 20** và **Bài luyện 27** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7606,11 +7814,17 @@
       "TOP19-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Ba chức danh khác nhau nên kết quả có thứ tự."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7626,11 +7840,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "nPr; 336 cách; \\(8\\cdot7\\cdot6=336\\)."
+      },
+      {
+        "id": "B",
+        "text": "nCr; 56 nhóm."
+      },
+      {
+        "id": "C",
+        "text": "nPr; 56 cách."
+      },
+      {
+        "id": "D",
+        "text": "nCr; 336 nhóm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 2.5; luyện THPT-TOP19-P06, THPT-TOP19-P14."
   },
   {
     "item_id": "THPT-TOP19-T09",
-    "content_version": "TOP19-BANK-CP68-20261126-T09",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T09",
     "stem": "Hệ số của \\(x^3\\) trong \\((x+3)^4\\) bằng bao nhiêu? Giải thích số cách chọn ba thừa số chứa x và hệ số của thừa số còn lại.",
     "answer_key": "12.",
     "worked_solution": "Muốn \\(x^3\\) chọn x tại 3 trong 4 vị trí: \\(C_4^3=4\\) cách; vị trí còn lại phải chọn 3, nên hệ số là \\(4\\cdot3=12\\).\n\n**Kiểm lỗi**\n\nNếu em chép số 4 ở hàng \\(n=4\\) của tam giác Pascal thì mới đếm số cách chọn vị trí, chưa nhân hệ số 3 của thừa số không chứa x. Viết rõ ba lần chọn x và một lần chọn 3: \\(C_4^3\\cdot3=12\\). Đọc lại **Kiến thức 3.1**, sau đó thử **Bài luyện 28** và **Bài luyện 30** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7643,11 +7877,17 @@
       "TOP19-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Chọn ba vị trí chứa x và một vị trí chứa 3."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7663,11 +7903,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "12"
+      },
+      {
+        "id": "C",
+        "text": "3"
+      },
+      {
+        "id": "D",
+        "text": "36"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 3.1; luyện THPT-G10-B25-C01, THPT-TOP19-P09."
   },
   {
     "item_id": "THPT-TOP19-T10",
-    "content_version": "TOP19-BANK-CP68-20261126-T10",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T10",
     "stem": "Hệ số \\(x^2\\) trong \\((x-2)^4\\) là bao nhiêu?",
     "answer_key": "24.",
     "worked_solution": "Muốn \\(x^2\\) thì \\(k=2\\) lần chọn −2. Hệ số \\(C_4^2(-2)^2=6\\cdot4=24\\).\n\n**Kiểm lỗi**\n\nNếu ra −24, kiểm lại: chọn −2 hai lần thì tích dương; dấu phụ thuộc k chẵn/lẻ. Đọc lại **Kiến thức 3.2**, sau đó thử **Bài luyện 31** và **Bài luyện 36** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7680,11 +7940,17 @@
       "TOP19-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Chọn −2 hai lần nên tích dương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7700,11 +7966,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "24"
+      },
+      {
+        "id": "B",
+        "text": "−24"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "−12"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 3.2; luyện THPT-G10-B25-P01, THPT-TOP19-P10."
   },
   {
     "item_id": "THPT-TOP19-T13",
-    "content_version": "TOP19-BANK-CP68-20261126-T13",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T13",
     "stem": "Một mô hình dự báo tồn kho bắt đầu với 5 000 bộ dụng cụ, tăng 1% mỗi năm theo cùng tỉ lệ trong 5 năm. Dùng hai số hạng đầu của \\((1+0{,}01)^5\\) để ước tính giá trị mô hình cuối kỳ và giải thích vì sao đây chỉ là ước lượng.",
     "answer_key": "5 250 bộ (ước lượng thấp hơn giá trị mô hình).",
     "worked_solution": "\\(r=0{,}01\\). Hai số hạng đầu là \\(1+5r=1{,}05\\). Do đó \\(5000\\cdot1{,}05=5250\\) bộ (ước tính). Các hạng bậc 2 trở lên đều dương nên số thực tế mô hình \\(5000\\cdot1{,}01^5\\) lớn hơn 5 250 một ít.\n\n**Kiểm lỗi**\n\nNếu tính \\(5000(1+0{,}01)\\) mà bỏ mũ 5, em mới tính tăng một năm. Quay lại Kiến thức 3.1 để viết năm thừa số rồi đọc hệ số của r là \\(C_5^1=5\\). Nếu viết dấu bằng chính xác, hãy chỉ phần \\(r^2\\) còn bị bỏ qua. Đọc lại **Kiến thức 3.3**, sau đó thử **Bài luyện 29** và **Bài luyện 38** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7716,11 +8002,17 @@
       "TOP19-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Giữ hai số hạng đầu 1 và 5r."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7736,11 +8028,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "5 250 bộ; chính xác vì chỉ có hai số hạng."
+      },
+      {
+        "id": "B",
+        "text": "5 250 bộ; thấp hơn giá trị mô hình vì bỏ các số hạng dương bậc cao."
+      },
+      {
+        "id": "C",
+        "text": "5 050 bộ; thấp hơn giá trị mô hình."
+      },
+      {
+        "id": "D",
+        "text": "5 250 bộ; cao hơn giá trị mô hình."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 3.3; luyện THPT-G10-B25-C02, THPT-TOP19-P13."
   },
   {
     "item_id": "THPT-TOP19-T11",
-    "content_version": "TOP19-BANK-CP68-20261126-T11",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T11",
     "stem": "Trong khai triển \\((3x-2)^5\\), số hạng không chứa \\(x\\) là bao nhiêu? Giải thích bằng cách chọn hạng tử từ năm thừa số.",
     "answer_key": "\\(-32\\).",
     "worked_solution": "Chọn \\(-2\\) từ cả năm thừa số, không chọn \\(3x\\) ở vị trí nào, nên có duy nhất \\(C_5^5=1\\) cách cho hạng tử đó. Hệ số tự do là \\((-2)^5=\\mathbf{-32}\\).\n\n**Kiểm lỗi**\n\nNếu được +32, em đã quên số lần chọn thừa số âm là **5 lần (lẻ)**. Nếu tính \\(5\\cdot(-2)\\), em đã nhầm cộng năm lần với **nhân năm thừa số**. Thử \\(n=2\\) trước: \\((x-2)^2=x^2-4x+4\\) có hằng số \\((-2)^2=4\\). Đọc lại **Kiến thức 3.4**, sau đó thử **Bài luyện 35** và **Bài luyện 40** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7752,11 +8064,17 @@
       "TOP19-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Muốn không có x, chọn −2 từ cả năm thừa số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7772,11 +8090,31 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "32"
+      },
+      {
+        "id": "B",
+        "text": "−10"
+      },
+      {
+        "id": "C",
+        "text": "−2"
+      },
+      {
+        "id": "D",
+        "text": "−32"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 3.4; luyện THPT-G10-B25-P07, THPT-TOP19-P11."
   },
   {
     "item_id": "THPT-TOP19-T12",
-    "content_version": "TOP19-BANK-CP68-20261126-T12",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T12",
     "stem": "Tổng hệ số của đa thức \\((x+2)^5\\) bằng bao nhiêu?",
     "answer_key": "243.",
     "worked_solution": "Thay \\(x=1\\): \\((1+2)^5=243\\).\n\n**Kiểm lỗi**\n\nNếu cộng lẻ từng số hạng và sai, nhớ thay \\(x=1\\) vào toàn bộ biểu thức hữu hạn đã khai triển, kể cả các thừa số hằng; không chỉ cộng các hệ số tổ hợp. Đọc lại **Kiến thức 3.5**, sau đó thử **Bài luyện 41** và **Bài luyện 42** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7788,11 +8126,17 @@
       "TOP19-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Thay x=1 vào cả đa thức."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7808,7 +8152,27 @@
       "revision_scope": "CP68_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "32"
+      },
+      {
+        "id": "B",
+        "text": "81"
+      },
+      {
+        "id": "C",
+        "text": "243"
+      },
+      {
+        "id": "D",
+        "text": "3"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn Kiến thức 3.5; luyện THPT-G10-B25-P06, THPT-TOP19-P12."
   },
   {
     "item_id": "THPT-TOP20-T01",
