@@ -21706,6 +21706,46 @@
       "limitations": "Scoped AUTHOR_SELF_VERIFIED three revisions only; no fresh S1 PDF, independent review or full Academic/PED/Written PASS. G11-B04-KFT01 empty skill mapping observed; preserve until source-based reconciliation. No new figure; other topic placements not exhaustively checked in this checkpoint.",
       "next": "Reconcile remaining G11 coverage against CP107–110 and CP116; then targeted empty mappings, Written wording and interaction classification.",
       "release_authorization": false
+    },
+    "coverage_depth_cp117": {
+      "base": "4ac4f6cbdeac882a76bed472fcbc877968a5e29c",
+      "head": "2a8fe5950639cc22a0c78e069df75f53c407ed34",
+      "scope": "G11 ChVII/IX and chapter coverage reconciliation",
+      "review": {
+        "sgk_stems_keys": 118,
+        "written_projections": 21,
+        "chapter_coverage": "G10 353 records CP112–115; G11 404 distinct chapter-shard records across CP108–111, CP116–117, earlier CP107 targeted edits. Counts include first tries, not full Academic/PED PASS."
+      },
+      "shards": [
+        {
+          "path": "items/g11-chvii.json",
+          "sha": "6f4bd8698be480911cecca7ef0e7e14e3843da24"
+        },
+        {
+          "path": "items/g11-chix.json",
+          "sha": "af5dbe8ad399bbad1fb8b8430fe08bd4f8ed7fcd"
+        }
+      ],
+      "changes": [
+        {
+          "id": "THPT-G11-CHVII-B26-P03",
+          "reason": "Square-base box side 6: AA' and BD skew, AO common perpendicular 3sqrt2; AA' parallel BCC'B', distance AB=6. Add existing G11-B26-PARALLEL_LINE_PLANE per original heading and SGK placement; retain SKEW_COMMON_PERP."
+        },
+        {
+          "id": "THPT-G11-CHIX-B32-P14",
+          "reason": "Compare quotient+chain with factoring and product+chain; f=(x²−1)²/(x−1), derivative (x+1)(3x−1) only x≠1; no f'(1) despite polynomial expression evaluating 4."
+        }
+      ],
+      "mapping_followup": {
+        "legacy_written_ids": "README explicitly requires HPT historical IDs preserved; CP114 observation not a rename defect.",
+        "g10_try03": "Exact source ee38fdfeddc78a22a527a6a7449347f86eeee422 and placement confirm B15_OUT_03 original outcome; no verified skill crosswalk; preserve empty skill_ids.",
+        "g10_try12": "Exact source d8491aa03be4d1356fbbbb902d7f97a6e8553e0d and placement confirm G10-B25-COEFFICIENT_SUM original outcome; no verified skill crosswalk; preserve empty skill_ids.",
+        "g11_kft01": "Exact source 0714c5b72389d29dbc8993c2ce9828fc98cf7a92 confirms unkeyed Vận dụng #1 prerequisite equivalence, no original outcome marker. Preserve empty skill_ids pending explicit mapping."
+      },
+      "verification": "2/118 changed, 116 unchanged; old skill tags preserved, one existing tag added; other metadata invariant; delimiters balanced. SGK and relevant CD17/CD09 placements unchanged, both retain Practice/public self-check NO_MASTERY. Sources afc8ec039213b87b4930f2d34d48c28d1fc6277f and 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; Written ef20f074dcd3972877f852c2bb075f6aa5362b9a and 4d2eb7580e1f04360422134d96ba6712a1293d0e; CD17 P05, CD09 P15/P24 read.",
+      "limitations": "Scoped AUTHOR_SELF_VERIFIED only, no fresh S1 PDF or full Academic/PED/Written PASS; no new figure. B26-P03 could benefit from a compact geometry diagram at integration. No interaction conversion or Written projection edits.",
+      "next": "Check missing skill crosswalk evidence across whole bank, Written targeted wording, then interaction classification without enabling grading or altering protected systems.",
+      "release_authorization": false
     }
   }
 }
