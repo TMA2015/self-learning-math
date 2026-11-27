@@ -2806,9 +2806,12 @@
   {
     "item_id": "THPT-G10-CHIV-W08-FORCE-TR01",
     "source": {
-      "blob": "6e581218ff1874d127daa991a1ebcebfa71baf16",
+      "blob": "5362cb9b01259d92ace93455c507f6d026b4f297",
       "heading_id": "THPT-G10-CHIV-W08-FORCE-TR01",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "path": "prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_G10_CHIV_FULL_R04_WITH_TRANSFER_DELTA_C_20261107.md",
+      "previous_reviewed_blob": "6e581218ff1874d127daa991a1ebcebfa71baf16",
+      "intake_source_blob": "d8020a23db8ec8465f5361e3c9834cdb6a55538e"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b07-b08.md",
@@ -2824,16 +2827,19 @@
       "G10-B11-GEOMETRIC_DOT",
       "G10-B11-APPLICATION"
     ],
-    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W08-FORCE-TR01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
-    "review_note": "Historical HTML rubric row malformed by pipe splitting; mathematical step and /4 clear, projection repair pending at cutover."
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W08-FORCE-TR01.DELTA03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "review_note": "Historical HTML rubric row malformed by pipe splitting; mathematical step and /4 clear, projection repair pending at cutover. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending."
   },
   {
     "item_id": "THPT-G10-CHIV-W09",
     "source": {
-      "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
+      "blob": "5362cb9b01259d92ace93455c507f6d026b4f297",
       "heading_id": "THPT-G10-CHIV-W09",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "path": "prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_G10_CHIV_FULL_R04_WITH_TRANSFER_DELTA_C_20261107.md",
+      "previous_reviewed_blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
+      "intake_source_blob": "d8020a23db8ec8465f5361e3c9834cdb6a55538e"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11.md",
@@ -2848,16 +2854,19 @@
       "G10-B09-MIDPOINT_CENTROID",
       "G10-B09-LENGTH_DIRECTION"
     ],
-    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W09",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
-    "review_note": "Answer gives derivation results; separate worked solution is terse. Align midpoint explanation with requested expression and expand at scoped PED/notation review."
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W09.DELTA03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "review_note": "Answer gives derivation results; separate worked solution is terse. Align midpoint explanation with requested expression and expand at scoped PED/notation review. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending."
   },
   {
     "item_id": "THPT-G10-CHIV-W10",
     "source": {
-      "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
+      "blob": "5362cb9b01259d92ace93455c507f6d026b4f297",
       "heading_id": "THPT-G10-CHIV-W10",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "path": "prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_G10_CHIV_FULL_R04_WITH_TRANSFER_DELTA_C_20261107.md",
+      "previous_reviewed_blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
+      "intake_source_blob": "d8020a23db8ec8465f5361e3c9834cdb6a55538e"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11.md",
@@ -2873,16 +2882,19 @@
       "G10-B10-VECTOR_COORDS",
       "G10-B10-NORM_DISTANCE"
     ],
-    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W10",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
-    "review_note": "Answer gives correct component checks; separate solution needs expanded substitutions at scoped PED review."
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W10.DELTA03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "review_note": "Answer gives correct component checks; separate solution needs expanded substitutions at scoped PED review. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending."
   },
   {
     "item_id": "THPT-G10-CHIV-W11-ANCHOR",
     "source": {
-      "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
+      "blob": "5362cb9b01259d92ace93455c507f6d026b4f297",
       "heading_id": "THPT-G10-CHIV-W11-ANCHOR",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "path": "prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_G10_CHIV_FULL_R04_WITH_TRANSFER_DELTA_C_20261107.md",
+      "previous_reviewed_blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
+      "intake_source_blob": "d8020a23db8ec8465f5361e3c9834cdb6a55538e"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11.md",
@@ -2898,9 +2910,9 @@
       "G10-B11-COORDINATE_DOT",
       "G10-B11-GEOMETRIC_DOT"
     ],
-    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W11-ANCHOR",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
-    "review_note": "Answer supplies correct calculation; separate solution needs full step-by-step presentation and notation review."
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W11-ANCHOR.DELTA03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "review_note": "Answer supplies correct calculation; separate solution needs full step-by-step presentation and notation review. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending."
   },
   {
     "item_id": "THPT-G10-CHIV-W10-RIVER-TR01",
@@ -5165,7 +5177,7 @@
     ],
     "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHVIII-W25-01",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
-    "review_note": "Historical shared polynomial (x−2)^4 also used in public CHVIII-RD1-10; avoid claiming independent evidence. Resolve duplicate task at scoped PED/cutover."
+    "review_note": "Compared exact W25-01 with public replay CHVIII-RD1-10: same polynomial and coefficient, but Written additionally requires total coefficient sum via P(1); public replay asks number of negative coefficients. Retain original reviewed Written and public practice replay; never independent unseen assessment. No change of source/score."
   },
   {
     "item_id": "THPT-TOP19-W01",
@@ -5236,9 +5248,11 @@
   {
     "item_id": "THPT-G10-CHIX-W26-01",
     "source": {
-      "blob": "fe0c6486eef27392d116c076d848c372c95ec881",
+      "blob": "3207c7522f220db8068d7b8d037ba49c2a12328c",
       "heading_id": "THPT-G10-CHIX-W26-01",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-ix.md",
+      "previous_reviewed_blob": "fe0c6486eef27392d116c076d848c372c95ec881"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-ix.md",
@@ -5255,9 +5269,9 @@
       "G10-B26-CLASSICAL_RATIO",
       "G10-B26-COMPLEMENT"
     ],
-    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIX-W26-01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
-    "review_note": "CP119 confirmed need to state independent trials; historical source preserved, candidate wording needs scoped Delta before acceptance."
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIX-W26-01.DELTA03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "review_note": "CP119 confirmed need to state independent trials; historical source preserved, candidate wording needs scoped Delta before acceptance. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending."
   },
   {
     "item_id": "THPT-G10-CHIX-W27-ANCHOR-01",
