@@ -2373,7 +2373,7 @@
     }
   ],
   "academic_audit": "AUTHOR_REVIEW_18_DRAFTS_AND_709_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
-  "interaction_conversion": "IN_PROGRESS_CP121_CD01_COMPLETE_33_CHOICE_CANDIDATES_AUTO_GRADE_DISABLED",
+  "interaction_conversion": "IN_PROGRESS_CP122_CD01_CD02_CONTENT_COMPLETE_83_CHOICE_CANDIDATES_AUTO_GRADE_DISABLED",
   "release_authorization": false,
   "import_batches": [
     {
@@ -22691,6 +22691,318 @@
       },
       "handoff": "Use exact item/placement/source blobs above; render same IDs for SGK and Topic. Candidate_use supplies per-question practice and whole-submission selfcheck reveal, raw /11 score only; release must implement and browser-test reveal, MathJax, Golden, preserve protected systems and existing main source/PASS until authorized cutover. No release authorization.",
       "next": "STOP after CD01 per owner. Do not begin CD02 without next instruction."
+    },
+    "exercise_completion_cp122": {
+      "scope": "CD02 only; exercise content AUTHORING complete; two canonical skill-ID mappings and release integration pending",
+      "baseline": "9e369028fe0c186074de1cc819ac659678d6ee64",
+      "head_before_manifest": "b47bb4603e5944c660edea9ad2ca8e307647c791",
+      "standard": "Q01–Q18 v3.2.0 X-G.5/X-G.6 owner approved CP120",
+      "status": "AUTHORING_BANK_CD02_CONTENT_COMPLETE_SKILL_MAPPING_AND_RELEASE_PENDING",
+      "inventory": {
+        "unique": 54,
+        "interactive": 50,
+        "written": 4,
+        "practice_interactive": 34,
+        "vandung": 16,
+        "selfcheck_reuses": 16,
+        "practice_total": 38,
+        "placements": 70,
+        "choices": 200,
+        "shared_interactive": 16,
+        "topic_only_interactive": 34,
+        "shared_written": 2,
+        "topic_only_written": 2,
+        "levels": {
+          "RECOGNIZE": 5,
+          "UNDERSTAND": 21,
+          "APPLY": 19,
+          "SYNTHESIS": 5
+        },
+        "groups": {
+          "Bất phương trình một ẩn và bất đẳng thức": 2,
+          "Dấu tam thức bậc hai": 10,
+          "Tham số và bài toán thực tế một ẩn": 5,
+          "Bất phương trình và hệ bất phương trình hai ẩn": 15,
+          "Tối ưu tuyến tính và mô hình số nguyên": 6
+        }
+      },
+      "outcomes": [
+        {
+          "id": "TOP02-O01",
+          "practice": [
+            "THPT-TOP02-ADD01",
+            "THPT-TOP02-ADD02"
+          ],
+          "selfcheck": [
+            "THPT-TOP02-ADD01"
+          ],
+          "vandung": "THPT-TOP02-KFT01"
+        },
+        {
+          "id": "TOP02-O02",
+          "practice": [
+            "THPT-TOP02-ADD03",
+            "THPT-TOP02-ADD04"
+          ],
+          "selfcheck": [
+            "THPT-TOP02-ADD03"
+          ],
+          "vandung": "THPT-TOP02-KFT02"
+        },
+        {
+          "id": "TOP02-O03",
+          "practice": [
+            "THPT-TOP02-ADD05",
+            "THPT-TOP02-ADD06"
+          ],
+          "selfcheck": [
+            "THPT-TOP02-ADD05"
+          ],
+          "vandung": "THPT-TOP02-KFT03"
+        },
+        {
+          "id": "TOP02-O04",
+          "practice": [
+            "THPT-TOP02-ADD07",
+            "THPT-TOP02-ADD08"
+          ],
+          "selfcheck": [
+            "THPT-TOP02-ADD07"
+          ],
+          "vandung": "THPT-TOP02-KFT04"
+        },
+        {
+          "id": "TOP02-O05",
+          "practice": [
+            "THPT-TOP02-ADD09",
+            "THPT-TOP02-ADD10"
+          ],
+          "selfcheck": [
+            "THPT-TOP02-ADD09"
+          ],
+          "vandung": "THPT-TOP02-KFT05"
+        },
+        {
+          "id": "TOP02-O06",
+          "practice": [
+            "THPT-TOP02-ADD11",
+            "THPT-TOP02-ADD12"
+          ],
+          "selfcheck": [
+            "THPT-TOP02-ADD11"
+          ],
+          "vandung": "THPT-TOP02-KFT06"
+        },
+        {
+          "id": "TOP02-O07",
+          "practice": [
+            "THPT-TOP02-ADD13",
+            "THPT-TOP02-ADD14",
+            "THPT-TOP02-W01"
+          ],
+          "selfcheck": [
+            "THPT-TOP02-ADD13"
+          ],
+          "vandung": "THPT-TOP02-KFT07"
+        },
+        {
+          "id": "TOP02-O08",
+          "practice": [
+            "THPT-TOP02-ADD15",
+            "THPT-TOP02-ADD16"
+          ],
+          "selfcheck": [
+            "THPT-TOP02-ADD15"
+          ],
+          "vandung": "THPT-TOP02-KFT08"
+        },
+        {
+          "id": "TOP02-O09",
+          "practice": [
+            "THPT-G10-B03-C01",
+            "THPT-TOP02-ADD17"
+          ],
+          "selfcheck": [
+            "THPT-G10-B03-C01"
+          ],
+          "vandung": "THPT-TOP02-KFT09"
+        },
+        {
+          "id": "TOP02-O10",
+          "practice": [
+            "THPT-G10-B03-C02",
+            "THPT-G10-B03-P03"
+          ],
+          "selfcheck": [
+            "THPT-G10-B03-C02"
+          ],
+          "vandung": "THPT-TOP02-KFT10"
+        },
+        {
+          "id": "TOP02-O11",
+          "practice": [
+            "THPT-G10-B03-P01",
+            "THPT-G10-B03-P05",
+            "THPT-G10-B03-P02"
+          ],
+          "selfcheck": [
+            "THPT-G10-B03-P01"
+          ],
+          "vandung": "THPT-TOP02-KFT11"
+        },
+        {
+          "id": "TOP02-O12",
+          "practice": [
+            "THPT-G10-B03-P04",
+            "THPT-G10-CHII-W03",
+            "THPT-G10-B03-P06"
+          ],
+          "selfcheck": [
+            "THPT-G10-B03-P04"
+          ],
+          "vandung": "THPT-TOP02-KFT12"
+        },
+        {
+          "id": "TOP02-O13",
+          "practice": [
+            "THPT-G10-B04-C01",
+            "THPT-G10-B04-C02",
+            "THPT-G10-B04-P01"
+          ],
+          "selfcheck": [
+            "THPT-G10-B04-C01"
+          ],
+          "vandung": "THPT-TOP02-KFT13"
+        },
+        {
+          "id": "TOP02-O14",
+          "practice": [
+            "THPT-G10-B04-P04",
+            "THPT-G10-B04-P05"
+          ],
+          "selfcheck": [
+            "THPT-G10-B04-P04"
+          ],
+          "vandung": "THPT-TOP02-KFT14"
+        },
+        {
+          "id": "TOP02-O15",
+          "practice": [
+            "THPT-G10-B04-P02",
+            "THPT-G10-B04-P03",
+            "THPT-G10-CHII-W04-ANCHOR"
+          ],
+          "selfcheck": [
+            "THPT-G10-B04-P02"
+          ],
+          "vandung": "THPT-TOP02-KFT15"
+        },
+        {
+          "id": "TOP02-O16",
+          "practice": [
+            "THPT-G10-B04-P06",
+            "THPT-TOP02-ADD18",
+            "THPT-TOP02-W02"
+          ],
+          "selfcheck": [
+            "THPT-G10-B04-P06"
+          ],
+          "vandung": "THPT-TOP02-KFT16"
+        }
+      ],
+      "files": [
+        {
+          "path": "items/cd02.json",
+          "sha": "bf3f5fcc3cd952ab4bd127e051ec9f083d0b4ff5"
+        },
+        {
+          "path": "items/g10-chii.json",
+          "sha": "53c1d3ad05ff17419d740bcc2f10cd8a4e53757e"
+        },
+        {
+          "path": "items/topic-knowledge-first-try.json",
+          "sha": "a0eefbf5979ad28c70ea489055e16cd6946bf6c2"
+        },
+        {
+          "path": "placements/cd02.json",
+          "sha": "f6b1c44199d0053606daf6a971b84a726451afab"
+        },
+        {
+          "path": "placements/topic-knowledge-first-try.json",
+          "sha": "8fb0e875148d41beabfd7e4c6a061945dcaf5228"
+        },
+        {
+          "path": "written-references.json",
+          "sha": "ad6a87261c398621167544d06197a000e706b385"
+        }
+      ],
+      "written_sources": [
+        {
+          "path": "prototypes/thpt/content-drafts/THPT_G10_CHII_B03_B04_D1D6_AUTHORING_R01_SNAPSHOT.md",
+          "prior_immutable_blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
+          "candidate_blob": "fe94e3394d04616d0c83799b4ac61bf33c35e31a"
+        },
+        {
+          "path": "prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md",
+          "prior_immutable_blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+          "candidate_blob": "278aec1c45c9e661722de3989077f6385d61ef5d"
+        }
+      ],
+      "source_evidence": {
+        "topic_learner": "88446b124096057f98f2742c78d4b93ca73d8883",
+        "original_sgk": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
+        "topic_owned": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+        "s1": "Historical direct SGK KNTT G10 T1 B03 pp22–25/B04 pp26–30; T2 B17 pp19–24; historical scan 53ecd902154118ba7ea9ab2a96e57f523feb8fd4. Original author sources and current topic learner inspected; no fresh PDF direct read claimed."
+      },
+      "author_review": {
+        "scope": "All 50 stems, correct selections, distractors, hints, worked solutions and remediation reviewed; 4 Written original sections revised with 7-point rubrics, alternatives and follow-through. No new item IDs or duplicate selfcheck records. Sign reversal, double root/sign, parameter/degenerate cases, strict bounds, half-plane intersections, feasible integer versus continuous optima checked. ADD18 integer max 11 at (3,1), continuous 35/3; B04-P06 integer max 8 at (2,1), continuous 25/3; W04 max 32 at (4,3); W02 integer 14 at (2,2), real 15 at (9/5,13/5); KFT16 integer max 2. Source notation delimiter check passed, not browser MathJax.",
+        "score_model": {
+          "candidate_only": true,
+          "mode": "COUNT_CORRECT_ITEMS",
+          "maximum": 16,
+          "tests": {
+            "all_correct": 16,
+            "all_wrong": 0,
+            "mixed": 8,
+            "incomplete": null
+          },
+          "production_auto_grade": false
+        },
+        "migration": "Five content groups sorted within group by difficulty; preserve legacy_order; Vận dụng links resolved to current practice IDs/orders. Unaffected records in shared shards unchanged.",
+        "untouched": [
+          {
+            "path": "items/g10-chii.json",
+            "unchanged": true
+          },
+          {
+            "path": "items/topic-knowledge-first-try.json",
+            "unchanged": true
+          },
+          {
+            "path": "placements/topic-knowledge-first-try.json",
+            "unchanged": true
+          },
+          {
+            "path": "written-references.json",
+            "unchanged": true
+          }
+        ],
+        "skill_mapping_pending": [
+          {
+            "item_id": "THPT-TOP02-ADD01",
+            "outcome": "TOP02-O01",
+            "reason": "One-variable inequality sign reversal; no verified matching canonical skill ID found. Do not substitute two-variable inequality tag or invent new skill; resolve at migration."
+          },
+          {
+            "item_id": "THPT-TOP02-KFT01",
+            "outcome": "TOP02-O01",
+            "reason": "One-variable inequality sign reversal; no verified matching canonical skill ID found. Do not substitute two-variable inequality tag or invent new skill; resolve at migration."
+          }
+        ],
+        "limitations": "Scoped author self-verification only; no new independent NotebookLM, full-topic Q18, direct fresh SGK PDF or browser QA. Knowledge narrative/examples outside bank scope; private RD1, Final Submit, Mastery, Firebase, runtime and main unchanged."
+      },
+      "handoff": "Integrate only on owner authorization; candidate reveal and score /16 after whole submission, no pre-submit hints, no mastery. Preserve old PASS snapshot and canonical ID; verify rendering, Golden and protected runtime in RELEASE. Resolve two skill metadata mappings before final cutover.",
+      "next": "STOP after CD02 per owner. Do not begin CD03."
     }
   }
 }
