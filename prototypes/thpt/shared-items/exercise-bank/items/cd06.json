@@ -1,7 +1,7 @@
 [
   {
     "item_id": "THPT-TOP06-P01",
-    "content_version": 1,
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P01",
     "stem": "Một góc quay \\(-450^\\circ\\). Đổi sang radian, xác định tọa độ điểm cuối trên đường tròn lượng giác và số vòng quay có hướng.",
     "answer_key": "\\(-\\frac{5\\pi}{2}\\) rad; điểm cuối \\((0;-1)\\); \\(-\\frac54\\) vòng.",
     "worked_solution": "\\(-450^\\circ\\cdot\\frac{\\pi}{180^\\circ}=-\\frac{5\\pi}{2}\\) rad. Góc quay bằng \\(-\\frac{450}{360}=-\\frac54\\) vòng (theo chiều kim đồng hồ). Cộng \\(2\\pi\\) được góc cùng tia cuối \\(-\\frac\\pi2\\), nên điểm cuối trên đường tròn đơn vị là \\((0;-1)\\). Góc đại diện không thay thế số đo góc quay thực.",
@@ -12,25 +12,48 @@
       "TOP06-O01"
     ],
     "problem_type_id": "TOP06-DIRECTION_TURNS",
-    "difficulty": "UNDERSTAND",
+    "difficulty": "APPLY",
     "hints": [
       "Đổi độ sang radian trước, rồi tìm góc cùng tia cuối trong một vòng."
     ],
     "remediation": "Nếu thay góc thực bằng góc đại diện, kiểm số vòng đã quay; ôn TOP06-M01. Luyện THPT-G11-B01-P02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P01 · TOP06-O01"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{5\\pi}2;(0;1);\\frac54\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(-\\frac{5\\pi}{2}\\) rad; điểm cuối \\((0;-1)\\); \\(-\\frac54\\) vòng."
+      },
+      {
+        "id": "C",
+        "text": "\\(-\\frac{3\\pi}2; (0;1);-\\frac34\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-\\frac{5\\pi}2;(0;1);-\\frac54\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P02",
-    "content_version": 1,
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P02",
     "stem": "\\(\\sin\\alpha=\\frac45\\), \\(\\alpha\\) thuộc góc phần tư II. Tìm \\(\\cos\\alpha\\), \\(\\tan\\alpha\\).",
     "answer_key": "\\(-\\frac35;\\ -\\frac43\\).",
     "worked_solution": "\\(\\cos^2\\alpha=1-\\frac{16}{25}=\\frac9{25}\\); cos âm ở góc II nên \\(\\cos\\alpha=-\\frac35\\); \\(\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}=-\\frac43\\) vì cos khác 0.",
@@ -48,18 +71,41 @@
     "remediation": "Nếu quên dấu cos, vẽ điểm ở góc phần tư II và kiểm hoành độ âm; ôn TOP06-M02. Luyện THPT-G11-B01-P01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P02 · TOP06-O02"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-\\frac35;\\frac43\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(-\\frac45;-\\frac34\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(-\\frac35;\\ -\\frac43\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac35;\\frac43\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P03",
-    "content_version": 1,
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P03",
     "stem": "Một điểm trên vành bánh xe bán kính 6 cm quay đều \\(-420^\\circ\\) theo một chiều. Tính độ dời cung có hướng và quãng đường điểm đi trên vành; có được thay \\(-420^\\circ\\) bằng \\(-60^\\circ\\) khi tính quãng đường không?",
     "answer_key": "\\(-14\\pi\\) cm; \\(14\\pi\\) cm. Không, vì \\(-420^\\circ\\) gồm cả một vòng quay.",
     "worked_solution": "\\(-420^\\circ=-\\frac{7\\pi}{3}\\) rad. Theo quy ước dấu của CĐ06, \\(d=r\\theta=6\\cdot(-\\frac{7\\pi}{3})=-14\\pi\\) cm, còn \\(s=r|\\theta|=14\\pi\\) cm. Góc \\(-60^\\circ\\) chỉ cùng tia cuối, bỏ mất một vòng quay dài \\(12\\pi\\) cm, nên không dùng để tính quãng đường đã đi.",
@@ -70,26 +116,49 @@
       "TOP06-O03"
     ],
     "problem_type_id": "TOP06-SIGNED_ARC",
-    "difficulty": "APPLY",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Tính góc quay thực bằng radian, không rút về một vòng trước khi tính đường đi."
     ],
     "remediation": "Nếu tính quãng đường âm, phân biệt độ dời cung có hướng \\(r\\theta\\) với quãng đường \\(r|\\theta|\\); ôn TOP06-M03. Luyện THPT-G11-B01-P03.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P03 · TOP06-O03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-2\\pi;2\\pi; \\text{được thay}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(14\\pi;14\\pi;\\text{không được thay}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(-14\\pi;-14\\pi;\\text{không được thay}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-14\\pi\\) cm; \\(14\\pi\\) cm. Không, vì \\(-420^\\circ\\) gồm cả một vòng quay."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P04",
-    "content_version": 1,
-    "stem": "\\(F(x)=\\frac{\\sin x}{1+\\cos x}\\). Tìm miền ban đầu và biểu thức rút gọn.",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P04",
+    "stem": "\\(F(x)=\\frac{\\sin x}{1+\\cos x}\\). Tìm miền ban đầu và biểu thức rút gọn. Trong các họ nghiệm hoặc điểm loại, \\(k\\in\\mathbb Z\\).",
     "answer_key": "\\(x\\ne(2k+1)\\pi\\); \\(F=\\tan(\\frac x2)\\) trên miền đó, \\(k\\in\\mathbb Z\\).",
     "worked_solution": "Dùng \\(\\sin x=2\\sin(\\frac x2)\\cos(\\frac x2)\\), \\(1+\\cos x=2\\cos^2(\\frac x2)\\), rút gọn chỉ khi \\(\\cos(\\frac x2)\\ne0\\). Miền ban đầu loại \\(x=(2k+1)\\pi\\).",
     "skill_ids": [
@@ -99,26 +168,49 @@
       "TOP06-O04"
     ],
     "problem_type_id": "TOP06-DOMAIN_SIMPLIFICATION",
-    "difficulty": "TRANSFER",
+    "difficulty": "APPLY",
     "hints": [
       "Ghi miền \\(1+\\cos x\\ne0\\) trước khi dùng công thức nửa góc."
     ],
     "remediation": "Nếu khử \\(\\cos\\left(\\frac x2\\right)\\) trước khi kiểm miền, thử \\(x=\\pi\\) và ghi điểm loại; ôn TOP06-M04. Luyện THPT-G11-B01-P04.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P04 · TOP06-O04"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x\\ne(2k+1)\\pi\\); \\(F=\\tan(\\frac x2)\\) trên miền đó, \\(k\\in\\mathbb Z\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x\\ne2k\\pi;\\tan(x/2)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x\\in\\mathbb R;\\tan(x/2)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x\\ne(2k+1)\\pi;\\cot(x/2)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P05",
-    "content_version": 1,
-    "stem": "\\(\\alpha=\\frac{\\pi}{3}\\). Tìm \\(\\sin(\\pi-\\alpha)\\), \\(\\cos(\\pi-\\alpha)\\) và giải thích dấu.",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P05",
+    "stem": "\\(\\alpha=\\frac{\\pi}{3}\\). Tìm \\(\\sin(\\pi-\\alpha)\\), \\(\\cos(\\pi-\\alpha)\\) và giải thích dấu. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(\\frac{\\sqrt3}{2};\\ -\\frac12\\).",
     "worked_solution": "\\(\\pi-\\alpha=\\frac{2\\pi}{3}\\); đối xứng qua Oy giữ tung độ, đổi dấu hoành độ: \\(\\sin(\\pi-\\alpha)=\\frac{\\sqrt3}{2}\\), \\(\\cos(\\pi-\\alpha)=-\\frac12\\).",
     "skill_ids": [
@@ -128,26 +220,49 @@
       "TOP06-O05"
     ],
     "problem_type_id": "TOP06-RELATED_ANGLES",
-    "difficulty": "BASIC",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng đối xứng của đường tròn qua Oy."
     ],
     "remediation": "Nếu đổi dấu cả sin, kiểm phép phản xạ qua Oy; ôn TOP06-M05. Luyện THPT-G11-B01-P05.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P05 · TOP06-O05"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac12;-\\frac{\\sqrt3}2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{\\sqrt3}{2};\\ -\\frac12\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(-\\frac{\\sqrt3}2;-\\frac12\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{\\sqrt3}2;\\frac12\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P06",
-    "content_version": 1,
-    "stem": "Chứng minh \\(\\sin(u+v)-\\sin(u-v)=2\\cos u\\sin v\\).",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P06",
+    "stem": "Chứng minh \\(\\sin(u+v)-\\sin(u-v)=2\\cos u\\sin v\\). Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(2\\cos u\\sin v\\).",
     "worked_solution": "Khai triển cả hai công thức cộng/trừ: \\(\\sin u\\cos v+\\cos u\\sin v-(\\sin u\\cos v-\\cos u\\sin v)=2\\cos u\\sin v\\).",
     "skill_ids": [
@@ -157,25 +272,48 @@
       "TOP06-O06"
     ],
     "problem_type_id": "TOP06-ADDITION_PROOF",
-    "difficulty": "UNDERSTAND",
+    "difficulty": "APPLY",
     "hints": [
       "Khai triển cả hai công thức cộng và trừ sin."
     ],
     "remediation": "Nếu mất dấu trừ ở ngoặc, khai triển từng sin riêng rồi trừ; ôn TOP06-M06. Luyện THPT-G11-B02-P03.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P06 · TOP06-O06"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-2\\cos u\\sin v\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(2\\cos u\\cos v\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(2\\cos u\\sin v\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(2\\sin u\\cos v\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P07",
-    "content_version": 1,
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P07",
     "stem": "Đưa \\(\\cos(5x)-\\cos x\\) về tích.",
     "answer_key": "\\(-2\\sin(3x)\\sin(2x)\\).",
     "worked_solution": "\\(\\cos A-\\cos B=-2\\sin(\\frac{A+B}{2})\\sin(\\frac{A-B}{2})\\); dùng \\(A=5x,\\ B=x\\) cho nửa tổng \\(3x\\), nửa hiệu \\(2x\\).",
@@ -193,19 +331,42 @@
     "remediation": "Nếu nhầm nửa tổng và nửa hiệu, viết \\(A=5x\\), \\(B=x\\) trước khi thay; ôn TOP06-M07. Luyện THPT-G11-B02-P05.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P07 · TOP06-O07"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(2\\sin3x\\sin2x\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(-2\\cos3x\\cos2x\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(-2\\sin6x\\sin4x\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-2\\sin(3x)\\sin(2x)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P08",
-    "content_version": 1,
-    "stem": "Tìm miền của \\(y=\\frac1{1-2\\sin x}\\).",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P08",
+    "stem": "Tìm miền của \\(y=\\frac1{1-2\\sin x}\\). Trong các họ nghiệm hoặc điểm loại, \\(k\\in\\mathbb Z\\).",
     "answer_key": "\\(\\mathbb R\\) trừ các điểm \\(\\frac\\pi6+2k\\pi\\) và \\(\\frac{5\\pi}{6}+2k\\pi\\), \\(k\\in\\mathbb Z\\).",
     "worked_solution": "Mẫu khác 0 khi và chỉ khi \\(\\sin x\\ne\\frac12\\). Hai họ nghiệm \\(\\sin x=\\frac12\\) bị loại; mọi giá trị khác hợp lệ.",
     "skill_ids": [
@@ -222,18 +383,41 @@
     "remediation": "Nếu chỉ loại một họ nghiệm, vẽ đường ngang \\(y=\\frac12\\) trên đường tròn đơn vị; ôn TOP06-M08. Luyện THPT-G11-B03-P01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P08 · TOP06-O08"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\mathbb R\\) trừ các điểm \\(\\frac\\pi6+2k\\pi\\) và \\(\\frac{5\\pi}{6}+2k\\pi\\), \\(k\\in\\mathbb Z\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\mathbb R\\setminus\\{\\pi/6+k\\pi\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\mathbb R\\setminus\\{\\pi/2+k\\pi\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\mathbb R\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P09",
-    "content_version": 1,
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P09",
     "stem": "Tìm chu kỳ dương cơ bản của \\(f(x)=\\sin(2x)+\\sin(4x)\\).",
     "answer_key": "\\(\\pi\\).",
     "worked_solution": "\\(\\pi\\) là chu kỳ vì \\(\\sin(2(x+\\pi))=\\sin(2x)\\) và \\(\\sin(4(x+\\pi))=\\sin(4x)\\) với mọi x. Để chứng minh nhỏ nhất, giả sử \\(T>0\\) là chu kỳ của f. Khi đó \\(g(x)=f(x)-f(x+\\frac\\pi2)\\) cũng có chu kỳ T. Vì \\(\\sin(2x+\\pi)=-\\sin(2x)\\), \\(\\sin(4x+2\\pi)=\\sin(4x)\\), nên \\(g(x)=2\\sin(2x)\\). Vậy T cũng là chu kỳ của \\(\\sin(2x)\\), có chu kỳ dương nhỏ nhất \\(\\pi\\). Suy ra \\(T\\ge\\pi\\). Do \\(\\pi\\) đã là chu kỳ của f, chu kỳ cơ bản chính là \\(\\pi\\).",
@@ -244,25 +428,48 @@
       "TOP06-O09"
     ],
     "problem_type_id": "TOP06-PERIOD_HARMONICS",
-    "difficulty": "APPLY",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Nếu T là chu kỳ của tổng, xét hiệu với \\(f\\left(x+\\frac\\pi2\\right)\\) để tách hai thành phần."
     ],
     "remediation": "Nếu chỉ tìm được một chu kỳ mà chưa chứng minh nhỏ nhất, tách \\(\\sin(2x)\\) khỏi \\(\\sin(4x)\\) bằng hiệu của hai giá trị cách nhau \\(\\frac\\pi2\\); ôn TOP06-M09. Luyện THPT-G11-B03-P03.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P09 · TOP06-O09"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\pi/4\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\pi\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\pi/2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(2\\pi\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P10",
-    "content_version": 1,
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P10",
     "stem": "\\(h(t)=3-2\\cos(\\frac{\\pi t}{4})\\). Tìm chu kỳ, tập giá trị, \\(h(0)\\), \\(h(4)\\).",
     "answer_key": "8; \\([1;5]\\); 1; 5.",
     "worked_solution": "Hệ số của t trong đối số côsin là \\(\\omega=\\frac\\pi4\\), nên chu kỳ cơ bản \\(T=\\frac{2\\pi}{\\omega}=8\\). Vì \\(\\cos\\left(\\frac{\\pi t}{4}\\right)\\in[-1;1]\\) và nhận mọi giá trị trong đoạn này, \\(h(t)\\) nhận mọi giá trị trong \\([1;5]\\). Thế \\(t=0\\) được \\(h(0)=1\\); thế \\(t=4\\) thì \\(\\cos\\pi=-1\\), nên \\(h(4)=5\\).",
@@ -280,19 +487,42 @@
     "remediation": "Nếu nhầm 3 là biên độ, viết dạng \\(d+A\\cos(\\omega t+\\varphi)\\), biên độ là \\(|A|\\), rồi thử \\(t=0\\) và \\(t=4\\); ôn TOP06-M10. Luyện THPT-G11-B03-P02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P10 · TOP06-O10"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(8;[-2;2];-2;2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(8;[1;5];5;1\\)"
+      },
+      {
+        "id": "C",
+        "text": "8; \\([1;5]\\); 1; 5."
+      },
+      {
+        "id": "D",
+        "text": "\\(4;[1;5];1;5\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P11",
-    "content_version": 1,
-    "stem": "\\(y=\\tan(3x)\\): miền xác định và chu kỳ cơ bản?",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P11",
+    "stem": "\\(y=\\tan(3x)\\): miền xác định và chu kỳ cơ bản? Trong các họ nghiệm hoặc điểm loại, \\(k\\in\\mathbb Z\\).",
     "answer_key": "\\(x\\ne\\frac\\pi6+\\frac{k\\pi}{3}\\); \\(T=\\frac\\pi3\\), \\(k\\in\\mathbb Z\\).",
     "worked_solution": "Không xác định khi \\(\\cos(3x)=0\\Rightarrow 3x=\\frac{\\pi}{2}+k\\pi\\). Chu kỳ theo đối số là \\(\\pi\\) nên theo x là \\(\\frac{\\pi}{3}\\).",
     "skill_ids": [
@@ -302,26 +532,49 @@
       "TOP06-O11"
     ],
     "problem_type_id": "TOP06-TAN_DOMAIN",
-    "difficulty": "UNDERSTAND",
+    "difficulty": "APPLY",
     "hints": [
       "Tìm nghiệm \\(\\cos(3x)=0\\); chu kỳ của hàm tang theo đối số là \\(\\pi\\)."
     ],
     "remediation": "Nếu nhận tang tại tiệm cận đứng, kiểm \\(\\cos(3x)=0\\) và chia cả họ nghiệm cho 3; ôn TOP06-M11. Luyện THPT-G11-B03-P06.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P11 · TOP06-O11"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x\\ne k\\pi/3;T=\\pi/3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x\\ne\\pi/6+k\\pi/3;T=\\pi\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x\\ne\\pi/2+k\\pi;T=3\\pi\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x\\ne\\frac\\pi6+\\frac{k\\pi}{3}\\); \\(T=\\frac\\pi3\\), \\(k\\in\\mathbb Z\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P12",
-    "content_version": 1,
-    "stem": "Giải \\(\\cos(3x)=-\\frac12\\) trên \\(\\mathbb R\\).",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P12",
+    "stem": "Giải \\(\\cos(3x)=-\\frac12\\) trên \\(\\mathbb R\\). Trong các họ nghiệm hoặc điểm loại, \\(k\\in\\mathbb Z\\).",
     "answer_key": "\\(x=\\pm\\frac{2\\pi}{9}+\\frac{2k\\pi}{3}\\), \\(k\\in\\mathbb Z\\).",
     "worked_solution": "Đặt \\(u=3x\\). \\(\\cos u=-\\frac12\\Leftrightarrow u=\\pm\\frac{2\\pi}{3}+2k\\pi\\), \\(k\\in\\mathbb Z\\). Chia toàn bộ hai vế cho 3: \\(x=\\pm\\frac{2\\pi}{9}+\\frac{2k\\pi}{3}\\), \\(k\\in\\mathbb Z\\). Thế lại cho \\(\\cos(\\pm\\frac{2\\pi}{3}+2k\\pi)=-\\frac12\\).",
     "skill_ids": [
@@ -338,19 +591,42 @@
     "remediation": "Nếu quên chia cả \\(2k\\pi\\), thử thế một nghiệm của họ vào \\(3x\\); ôn TOP06-M12. Luyện THPT-G11-B04-P02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P12 · TOP06-O12"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=\\pm\\frac{2\\pi}{9}+\\frac{2k\\pi}{3}\\), \\(k\\in\\mathbb Z\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x=\\pm2\\pi/3+2k\\pi\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x=2\\pi/9+2k\\pi/3\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x=\\pm2\\pi/9+2k\\pi\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P13",
-    "content_version": 1,
-    "stem": "Giải \\(\\cot(2x)=1\\) và kiểm điều kiện.",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P13",
+    "stem": "Giải \\(\\cot(2x)=1\\) và kiểm điều kiện. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu. Trong các họ nghiệm hoặc điểm loại, \\(k\\in\\mathbb Z\\).",
     "answer_key": "\\(x=\\frac\\pi8+\\frac{k\\pi}{2}\\), \\(k\\in\\mathbb Z\\).",
     "worked_solution": "\\(\\cot\\theta=1\\Leftrightarrow\\theta=\\frac{\\pi}{4}+k\\pi\\), nên \\(x=\\frac{\\pi}{8}+\\frac{k\\pi}{2}\\). Tại nghiệm \\(\\sin(2x)=\\pm\\frac{\\sqrt2}{2}\\ne0\\), cot xác định.",
     "skill_ids": [
@@ -360,26 +636,49 @@
       "TOP06-O13"
     ],
     "problem_type_id": "TOP06-COT_EQUATION",
-    "difficulty": "UNDERSTAND",
+    "difficulty": "APPLY",
     "hints": [
       "Giải \\(\\cot u=1\\), nhớ điều kiện \\(\\sin u\\ne0\\)."
     ],
     "remediation": "Nếu dùng chu kỳ \\(2\\pi\\) cho côtang, nhớ chu kỳ cơ bản là \\(\\pi\\) và kiểm \\(\\sin(2x)\\ne0\\); ôn TOP06-M13. Luyện THPT-G11-B04-C04.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P13 · TOP06-O13"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=-\\pi/8+k\\pi/2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x=\\frac\\pi8+\\frac{k\\pi}{2}\\), \\(k\\in\\mathbb Z\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x=\\pi/4+k\\pi\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x=\\pi/8+k\\pi\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P14",
-    "content_version": 1,
-    "stem": "Giải \\(\\frac{\\sin x}{1-\\cos x}=0\\) trên \\(\\mathbb R\\).",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P14",
+    "stem": "Giải \\(\\frac{\\sin x}{1-\\cos x}=0\\) trên \\(\\mathbb R\\). Trong các họ nghiệm hoặc điểm loại, \\(k\\in\\mathbb Z\\).",
     "answer_key": "\\(x=(2k+1)\\pi\\), \\(k\\in\\mathbb Z\\).",
     "worked_solution": "Miền \\(x\\ne2k\\pi\\) vì mẫu bằng 0 ở đó. Tử \\(\\sin x=0\\) tại \\(x=k\\pi\\); giao miền chỉ còn các k lẻ.",
     "skill_ids": [
@@ -389,25 +688,48 @@
       "TOP06-O14"
     ],
     "problem_type_id": "TOP06-LOST_DOMAIN",
-    "difficulty": "TRANSFER",
+    "difficulty": "APPLY",
     "hints": [
       "Tử bằng 0 đồng thời mẫu khác 0."
     ],
     "remediation": "Nếu nhận \\(x=0\\) sau khi cho tử bằng 0, kiểm mẫu ban đầu và loại điểm không xác định; ôn TOP06-M14. Luyện THPT-G11-B04-P08.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P14 · TOP06-O14"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=2k\\pi\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x=\\pi/2+k\\pi\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x=(2k+1)\\pi\\), \\(k\\in\\mathbb Z\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x=k\\pi\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P15",
-    "content_version": 1,
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P15",
     "stem": "Giải \\(\\cos x=-\\frac12\\) trên \\([-\\pi;\\pi)\\).",
     "answer_key": "\\(-\\frac{2\\pi}{3};\\ \\frac{2\\pi}{3}\\).",
     "worked_solution": "Trong một vòng \\(\\cos x=-\\frac12\\) tại \\(x=\\pm\\frac{2\\pi}{3}\\); cả hai thuộc khoảng. \\(\\pm\\pi\\) không thỏa.",
@@ -425,18 +747,41 @@
     "remediation": "Nếu lấy nghiệm ngoài khoảng, thay từng k vào hai bất đẳng thức biên; ôn TOP06-M15. Luyện THPT-G11-B04-P06.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P15 · TOP06-O15"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-\\pi/3;\\pi/3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(2\\pi/3\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(-\\pi;2\\pi/3\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-\\frac{2\\pi}{3};\\ \\frac{2\\pi}{3}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP06-P16",
-    "content_version": 1,
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-P16",
     "stem": "Mô hình giả định \\(h(t)=20+6\\sin(\\frac{\\pi t}{12})\\) (cm), với \\(0\\le t\\le24\\) giờ. Tìm chu kỳ của công thức, GTLN/GTNN trong miền và khoảng \\(h(t)>20\\) cm.",
     "answer_key": "\\(T=24\\) giờ; GTLN 26 cm tại \\(t=6\\) giờ; GTNN 14 cm tại \\(t=18\\) giờ; \\(h>20\\) cm khi \\(0<t<12\\) giờ.",
     "worked_solution": "Hệ số \\(\\omega=\\frac\\pi{12}\\) nên công thức có chu kỳ \\(T=\\frac{2\\pi}{\\omega}=24\\) giờ. Trên miền \\(0\\le t\\le24\\), pha tăng từ 0 đến \\(2\\pi\\). Sin bằng 1 tại pha \\(\\frac\\pi2\\), tức \\(t=6\\) giờ, cho giá trị lớn nhất \\(20+6=26\\) cm; sin bằng \\(-1\\) tại pha \\(\\frac{3\\pi}2\\), tức \\(t=18\\) giờ, cho giá trị nhỏ nhất \\(20-6=14\\) cm. Vì \\(h(t)>20\\iff\\sin\\left(\\frac{\\pi t}{12}\\right)>0\\), trong miền thời gian đã cho ta được \\(0<t<12\\) giờ.",
@@ -447,20 +792,43 @@
       "TOP06-O16"
     ],
     "problem_type_id": "TOP06-WINDOW_MODEL",
-    "difficulty": "TRANSFER",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Tìm pha tại đỉnh, đáy và các khoảng sin dương; chỉ giữ thời gian trong miền."
     ],
     "remediation": "Nếu suy ra thời điểm ngoài miền từ tính tuần hoàn, giao họ nghiệm với miền thời gian; ôn TOP06-M16. Luyện THPT-G11-B04-P09.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
       "heading": "## THPT-TOP06-P16 · TOP06-O16"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(T=24\\) giờ; GTLN 26 cm tại \\(t=6\\) giờ; GTNN 14 cm tại \\(t=18\\) giờ; \\(h>20\\) cm khi \\(0<t<12\\) giờ."
+      },
+      {
+        "id": "B",
+        "text": "\\(T=12;\\max=26;\\min=14;0<t<12\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(T=24;\\max=26;\\min=14;12<t<24\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(T=24;\\max=20;\\min=14;0\\le t\\le12\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
