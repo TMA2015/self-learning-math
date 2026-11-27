@@ -2218,10 +2218,10 @@
   },
   {
     "item_id": "THPT-G11-B18-KFT01",
-    "content_version": "SOURCE_BLOB_fd7d7a33ec276c4e03c95185c5ea49b53643b584_AUTHOR_KEY_REVIEW_R01",
-    "stem": "1. Vì sao `4^{-1}` là `1/4`, không phải `−4`?\n2. `27^{2/3}` bằng bao nhiêu, tại sao?\n3. Trong `P(t)=500(1,06)^t`, yếu tố `1,06` có ý nghĩa gì? Nếu số tiền được cập nhật hằng năm, t nên là số nguyên hay số thực?",
-    "answer_key": "(1) 4⁻¹=1/4. (2) 27^(2/3)=9. (3) Tăng 6% mỗi năm; t nguyên không âm nếu cập nhật hằng năm.",
-    "worked_solution": "**Tự đối chiếu sau khi thử:** (1) \\(4^0=1\\); giảm số mũ một đơn vị tương ứng chia cho 4, nên \\(4^{-1}=4^0/4=1/4\\), không phải đổi dấu thành −4. (2) \\(27^{2/3}=(\\sqrt[3]{27})^2=3^2=9\\). (3) \\(P(t+1)=1{,}06P(t)\\), nghĩa là số tiền sau mỗi năm bằng 106% số tiền trước đó, tức tăng 6% trên số tiền hiện có. Nếu chỉ cập nhật hằng năm thì t là số nguyên không âm, tính từ thời điểm ban đầu; dùng t thực cần mô hình phù hợp.",
+    "content_version": "SGK-G11-CHVI-BANK-CANDIDATE-20261127-THPT-G11-B18-KFT01",
+    "stem": "(1) Tính \\(4^{-1}\\) và giải thích ý nghĩa số mũ âm. (2) Tính \\(27^{2/3}\\). (3) Trong \\(P(t)=500(1{,}06)^t\\), hệ số 1,06 có ý nghĩa gì? Nếu số tiền chỉ được cập nhật hằng năm, t thuộc tập nào? Chọn phương án đúng sau khi tự giải thích.",
+    "answer_key": "\\(\\frac14;\\ 9\\); tăng 6% mỗi năm trên số tiền hiện có; t nguyên không âm.",
+    "worked_solution": "Vì \\(4^0=1\\), nên \\(4^{-1}=\\frac14\\), không phải đổi dấu cơ số. Ta có \\(27^{2/3}=(\\sqrt[3]{27})^2=9\\). Trong mô hình \\(P(t)=500(1{,}06)^t\\), \\(P(t+1)=1{,}06P(t)\\), nghĩa là sau mỗi năm tăng 6% trên số tiền hiện có. Nếu chỉ cập nhật hằng năm thì t là số nguyên không âm tính từ thời điểm ban đầu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B18-POWER_INTEGER",
@@ -2230,11 +2230,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Số mũ âm cho nghịch đảo; số mũ hữu tỉ liên quan căn; xét t theo số lần cập nhật."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2251,14 +2257,33 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-4;\\ 9\\); tăng 6% mỗi năm; t nguyên không âm."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac14;\\ 9\\); tăng 6% mỗi năm trên số tiền hiện có; t nguyên không âm."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac14;\\ 18\\); tăng 6% mỗi năm; t nguyên không âm."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac14;\\ 9\\); tăng 1,06% mỗi năm; t là mọi số thực."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-B19-KFT01",
-    "content_version": "SOURCE_BLOB_f872e9f19e28467e1b6ea11a943e04a2edf3b266_AUTHORING_ANSWER_DRAFT",
-    "stem": "Nếu `log₅125=3`, em phát biểu lại một đẳng thức lũy thừa. Giải thích vì sao `log₄0` vô nghĩa và vì sao `log₂(4+4)` không bằng `log₂4+log₂4` (kiểm `log₂8=3`, vế sau 4).",
-    "answer_key": "5³=125; log₄0 không xác định; log₂(4+4)=3≠4.",
-    "worked_solution": "Theo định nghĩa logarit, log₅125=3 tương đương 5³=125. Với cơ số 4>0, 4^x>0 với mọi x thực nên không có x để 4^x=0. Vì 4+4=8, log₂8=3; còn log₂4+log₂4=2+2=4. Quy tắc cộng logarit áp dụng cho tích hai đối số dương, không áp dụng cho tổng.",
+    "content_version": "SGK-G11-CHVI-BANK-CANDIDATE-20261127-THPT-G11-B19-KFT01",
+    "stem": "Từ \\(\\log_5 125=3\\), viết đẳng thức lũy thừa tương ứng. Xét sự tồn tại của \\(\\log_4 0\\) và so sánh \\(\\log_2(4+4)\\) với \\(\\log_2 4+\\log_2 4\\). Chọn phương án đúng sau khi tự giải thích.",
+    "answer_key": "\\(5^3=125\\); \\(\\log_4 0\\) không xác định; \\(\\log_2(4+4)=3\\ne4\\).",
+    "worked_solution": "Theo định nghĩa, \\(\\log_5 125=3\\iff5^3=125\\). Vì \\(4^x>0\\) với mọi x thực, không có x để \\(4^x=0\\), nên \\(\\log_4 0\\) không xác định. Mặt khác, \\(\\log_2(4+4)=\\log_2 8=3\\), còn \\(\\log_2 4+\\log_2 4=2+2=4\\). Quy tắc cộng logarit áp dụng cho tích các đối số dương, không áp dụng cho tổng.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G11-B19-LOG_DEFINITION",
@@ -2267,11 +2292,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đổi logarit thành lũy thừa; hàm mũ cơ số 4 luôn dương; quy tắc cộng logarit áp dụng cho tích."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2295,14 +2326,33 @@
       "legacy_reveal": "Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(125^3=5\\); \\(\\log_4 0\\) không xác định; hai biểu thức logarit bằng nhau."
+      },
+      {
+        "id": "B",
+        "text": "\\(5^3=125\\); \\(\\log_4 0=0\\); hai biểu thức logarit bằng nhau."
+      },
+      {
+        "id": "C",
+        "text": "\\(5^3=125\\); \\(\\log_4 0\\) không xác định; \\(\\log_2(4+4)=3\\ne4\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(5^3=125\\); \\(\\log_4 0\\) không xác định; \\(\\log_2(4+4)=4\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-B20-KFT01",
-    "content_version": "SOURCE_BLOB_1587f399e7ea9557a9fc490768c589991f25dcb0_AUTHORING_ANSWER_DRAFT_AUTHOR_REVIEW_R01",
-    "stem": "Vì sao y=3^x không thể bằng −5? Nếu log₂8=3, hãy tìm hai điểm tương ứng trên đồ thị y=2^x và y=log₂x. Vì sao log_{1/2}x nghịch biến?",
-    "answer_key": "3^x>0; (3;8) trên y=2^x và (8;3) trên y=log₂x; log₁/₂x nghịch biến trên (0;+∞).",
-    "worked_solution": "Hàm mũ cơ số 3 luôn dương nên không nhận giá trị −5. Từ log₂8=3 suy ra 2³=8, hai đồ thị hàm ngược đổi chỗ tọa độ. Với 0<u<v, đặt a=log_{1/2}u và b=log_{1/2}v. Vì (1/2)^a=u<v=(1/2)^b và hàm mũ cơ số 1/2 nghịch biến, ta có a>b. Vậy log_{1/2}x nghịch biến trên (0;+∞).",
+    "content_version": "SGK-G11-CHVI-BANK-CANDIDATE-20261127-THPT-G11-B20-KFT01",
+    "stem": "Vì sao \\(y=3^x\\) không thể bằng −5? Biết \\(\\log_2 8=3\\), tìm hai điểm tương ứng trên đồ thị \\(y=2^x\\) và \\(y=\\log_2 x\\). Vì sao \\(\\log_{1/2}x\\) nghịch biến? Chọn phương án đúng sau khi tự giải thích.",
+    "answer_key": "\\(3^x>0\\); điểm (3;8) trên đồ thị mũ, (8;3) trên đồ thị logarit; \\(\\log_{1/2}x\\) nghịch biến trên \\((0;+\\infty)\\).",
+    "worked_solution": "Hàm mũ cơ số 3 luôn dương, nên không nhận giá trị −5. Từ \\(\\log_2 8=3\\) suy ra \\(2^3=8\\). Vậy (3;8) thuộc đồ thị hàm mũ và (8;3) thuộc đồ thị hàm logarit. Với \\(0<u<v\\), đặt \\(a=\\log_{1/2}u,\\ b=\\log_{1/2}v\\). Vì \\((1/2)^a=u<v=(1/2)^b\\) và hàm mũ cơ số \\(1/2\\) nghịch biến, nên \\(a>b\\). Vậy hàm logarit cơ số \\(1/2\\) nghịch biến trên \\((0;+\\infty)\\).",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G11-B20-EXP_FUNCTION",
@@ -2311,11 +2361,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Hàm mũ luôn dương; đồ thị hai hàm ngược đổi chỗ tọa độ; xét cơ số nhỏ hơn 1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2334,14 +2390,33 @@
       "legacy_reveal": "Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(3^x>0\\); điểm (8;3) trên đồ thị mũ, (3;8) trên đồ thị logarit; \\(\\log_{1/2}x\\) nghịch biến."
+      },
+      {
+        "id": "B",
+        "text": "\\(3^x>0\\); hai đồ thị có điểm (3;8) chung; \\(\\log_{1/2}x\\) đồng biến."
+      },
+      {
+        "id": "C",
+        "text": "\\(3^x\\) có thể âm; hai đồ thị đổi chỗ tọa độ; \\(\\log_{1/2}x\\) xác định trên \\(\\mathbb R\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(3^x>0\\); điểm (3;8) trên đồ thị mũ, (8;3) trên đồ thị logarit; \\(\\log_{1/2}x\\) nghịch biến trên \\((0;+\\infty)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-B21-KFT01",
-    "content_version": "SOURCE_BLOB_b7fb59866ce1b250e446cb957d975e7c58d037bb_AUTHORING_ANSWER_DRAFT",
-    "stem": "Giải thích vì sao `(1/2)^x> (1/2)^3` cho `x<3`, không phải x>3. Nếu `log₂(x−1)=3`, vì sao trước tiên cần x>1?",
-    "answer_key": "x<3; điều kiện x>1.",
-    "worked_solution": "Hàm (1/2)^x nghịch biến, nên bất đẳng thức giữa hai giá trị đảo chiều khi so sánh số mũ: x<3. Logarit log₂(x−1) có nghĩa khi x−1>0, tức x>1; phải kiểm điều kiện trước khi chuyển sang x−1=2³.",
+    "content_version": "SGK-G11-CHVI-BANK-CANDIDATE-20261127-THPT-G11-B21-KFT01",
+    "stem": "Giải bất phương trình \\((1/2)^x>(1/2)^3\\), giải thích chiều bất đẳng thức. Với phương trình \\(\\log_2(x-1)=3\\), điều kiện xác định là gì? Chọn phương án đúng sau khi tự giải thích.",
+    "answer_key": "\\(x<3\\) vì hàm mũ cơ số \\(1/2\\) nghịch biến; \\(x>1\\) để đối số logarit dương.",
+    "worked_solution": "Hàm \\((1/2)^x\\) nghịch biến, nên \\((1/2)^x>(1/2)^3\\iff x<3\\). Logarit \\(\\log_2(x-1)\\) có nghĩa khi \\(x-1>0\\), tức \\(x>1\\). Phải kiểm điều kiện trước khi chuyển phương trình thành \\(x-1=2^3\\).",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G11-B21-EXP_INEQUALITY",
@@ -2349,11 +2424,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So tính đơn điệu của hàm mũ theo cơ số; kiểm chính biểu thức nằm trong logarit."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2372,6 +2453,25 @@
       "legacy_reveal": "Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x<3\\) vì hàm mũ cơ số \\(1/2\\) nghịch biến; \\(x>1\\) để đối số logarit dương."
+      },
+      {
+        "id": "B",
+        "text": "\\(x>3\\) vì hàm mũ luôn đồng biến; \\(x>1\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x<3\\); \\(x\\ge1\\) vì đối số được bằng 0."
+      },
+      {
+        "id": "D",
+        "text": "\\(x<3\\); \\(x>0\\) vì x là đối số logarit."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
