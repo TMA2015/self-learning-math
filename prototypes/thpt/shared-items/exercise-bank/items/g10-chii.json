@@ -166,7 +166,7 @@
     "content_version": "CD02-BANK-CP122-20261127-B03-P02",
     "stem": "Miền nghiệm của \\(2x-3y\\le6\\) nằm ở đâu so với đường thẳng \\(y=\\frac{2x-6}{3}\\)?",
     "answer_key": "A",
-    "worked_solution": "\\(2x-3y\\le6\\iff -3y\\le6-2x\\iff y\\ge\\frac{2x-6}{3}\\), vì chia cho −3 phải đảo chiều. Với mỗi x, các điểm có tung độ lớn hơn hoặc bằng tung độ trên đường biên thuộc miền nghiệm: phía trên, gồm cả biên (nét liền). Thử \\(O(0;0)\\): \\(0\\le6\\) và \\(0\\ge-2\\), phù hợp.",
+    "worked_solution": "\\(2x-3y\\le6\\iff -3y\\le6-2x\\iff y\\ge\\frac{2x-6}{3}\\), vì chia cho \\(-3\\) phải đảo chiều. Với mỗi x, các điểm có tung độ lớn hơn hoặc bằng tung độ trên đường biên thuộc miền nghiệm: phía trên, gồm cả biên (nét liền). Thử \\(O(0;0)\\): \\(0\\le6\\) và \\(0\\ge-2\\), phù hợp.",
     "options": [
       {
         "id": "A",
