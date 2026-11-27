@@ -8,10 +8,10 @@
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương IX bài 26 Biến cố và định nghĩa cổ điển của xác suất tự luận" data-thpt-written-canonical="THPT-G10-CHIX-W26-01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g10-chix-w26-01">
 <p class="thpt-r4-eyebrow">BÀI TỰ LUẬN · BÀI 26</p>
 <h2>Bài 26 · Biến cố và định nghĩa cổ điển của xác suất</h2>
-<p>Gieo một con xúc xắc 6 mặt cân đối và tung một đồng xu cân đối độc lập với lần gieo xúc xắc, ghi cặp kết quả (mặt đồng xu, số chấm). (a) Mô tả Ω và n(Ω). (b) Gọi A là biến cố “xuất hiện mặt ngửa và số chấm lớn hơn 4”, hãy liệt kê A và tính P(A). (c) Nêu biến cố đối Ā và tính P(Ā).</p>
+<p>Gieo một con xúc xắc 6 mặt cân đối và tung một đồng xu cân đối, ghi cặp kết quả (mặt đồng xu, số chấm). (a) Mô tả Ω và n(Ω). (b) Gọi A là biến cố “xuất hiện mặt ngửa và số chấm lớn hơn 4”, hãy liệt kê A và tính P(A). (c) Nêu biến cố đối Ā và tính P(Ā).</p>
 <details><summary>Xem lời giải, đáp án và rubric sau khi tự làm</summary>
 <p><strong>Đáp án:</strong> Ω={(N,k),(S,k):k=1,…,6}, n(Ω)=12; A={(N,5),(N,6)}, P(A)=2/12=1/6; Ā gồm 10 cặp còn lại, P(Ā)=5/6.</p>
-<p><strong>Giải thích:</strong> Hai phép thử độc lập, từng mặt xu có xác suất \(\frac12\), từng mặt xúc xắc có xác suất \(\frac16\). Vì vậy mỗi cặp kết quả có xác suất \(\frac12\cdot\frac16=\frac1{12}\); cả 12 cặp đồng khả năng. Biến cố A gồm đúng hai cặp (N;5), (N;6), nên \(P(A)=\frac2{12}=\frac16\). Biến cố đối là “sấp hoặc số chấm không quá 4”, kể cả khi cả hai điều kiện cùng xảy ra. Có 10 cặp còn lại, nên \(P(\overline A)=\frac{10}{12}=\frac56\), cũng bằng \(1-P(A)\).</p>
+<p><strong>Giải thích:</strong> Dùng quy tắc nhân 2×6; kết quả A có đúng hai cặp, trong đó cả hai yêu cầu cùng được thỏa; biến cố đối là “sấp hoặc số chấm không quá 4”. Đếm 10 kết quả hoặc lấy 1−1/6.</p>
 <p><strong>Rubric tự đối chiếu:</strong> (1đ) đúng định dạng Ω; (1đ) n(Ω)=12 và lí do; (1đ) liệt kê đúng A; (1đ) tính P(A)=1/6; (1đ) diễn đạt biến cố đối đủ trường hợp; (1đ) P(Ā)=5/6. Có xử lí lỗi kéo theo, tránh trừ cùng một lỗi hai lần.</p>
 <p><strong>Gợi ý khắc phục:</strong> Vẽ bảng 2 hàng, 6 cột để thấy cả A và phần bù.</p></details>
 </section>
