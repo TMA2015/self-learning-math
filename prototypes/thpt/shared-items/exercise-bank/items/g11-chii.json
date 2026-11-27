@@ -715,16 +715,17 @@
   {
     "item_id": "THPT-G11-B06-P08",
     "content_version": "THPT-G11-CHII-B05-B07-R03",
-    "stem": "Một sân vận động có 15 hàng ghế, hàng đầu 20 ghế, mỗi hàng sau nhiều hơn hàng trước 2 ghế. Tính tổng số ghế.",
-    "answer_key": "510 ghế.",
-    "worked_solution": "Số ghế từng hàng tạo cấp số cộng với số đầu 20 và công sai 2. Hàng thứ 15 có \\(u_{15}=20+14\\cdot2=48\\) ghế. Tổng là \\(S_{15}=\\frac{15(20+48)}2=510\\) ghế.",
+    "stem": "Một khán phòng dự kiến có hàng đầu 20 ghế, mỗi hàng sau nhiều hơn hàng trước đúng 2 ghế. (a) Lập công thức tổng số ghế nếu có n hàng, với n là số nguyên dương. (b) Tìm số hàng ít nhất để có ít nhất 500 ghế. (c) Có thể bố trí đúng 500 ghế theo quy luật này mà không bỏ bớt ghế ở bất kì hàng nào không?",
+    "answer_key": "\\(S_n=n(n+19)\\). Cần ít nhất 15 hàng, có 510 ghế. Không thể có đúng 500 ghế theo quy luật đã cho.",
+    "worked_solution": "Số ghế từng hàng lập thành cấp số cộng với \\(u_1=20\\), \\(d=2\\). Hàng thứ n có \\(u_n=20+2(n-1)=2n+18\\) ghế. Tổng n hàng là \\(S_n=\\frac{n(20+2n+18)}2=n(n+19)\\). Vì mỗi hàng được thêm đều có số ghế dương, tổng tăng nghiêm ngặt theo n. Tính \\(S_{14}=14\\cdot33=462\\) và \\(S_{15}=15\\cdot34=510\\). Do \\(462<500<510\\), mọi phương án có không quá 14 hàng đều thiếu chỗ, còn 15 hàng đã đủ; đó là số hàng nhỏ nhất. Cũng vì n chỉ nhận giá trị nguyên dương và tổng tăng nghiêm ngặt, không có số hàng nào cho đúng 500 ghế. Không được làm tròn số hàng tùy ý mà chưa kiểm lại sức chứa.",
     "skill_ids": [
       "G11-B06-AP-APPLICATION"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Xác định số đầu, công sai và số hàng."
+      "Viết số ghế hàng thứ n rồi áp dụng công thức tổng cấp số cộng.",
+      "So tổng của hai số hàng nguyên liên tiếp nằm hai phía ngưỡng 500."
     ],
     "rubric": null,
     "interaction": {
@@ -741,7 +742,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng 15 bước tăng, kiểm từ hàng 1 đến hàng 15 chỉ có 14 bước. Ôn TOP07-M10; luyện THPT-TOP07-P10."
+    "remediation": "Phân biệt yêu cầu ít nhất với đúng bằng. Giữ điều kiện n nguyên dương và kiểm hai tổng liên tiếp để chứng minh tính tối thiểu. Ôn TOP07-M10; luyện THPT-TOP07-P10."
   },
   {
     "item_id": "THPT-G11-B07-C01",
