@@ -338,8 +338,11 @@
   {
     "item_id": "THPT-G10-CHII-W03",
     "source": {
-      "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
-      "heading_id": "THPT-G10-CHII-W03"
+      "blob": "fe94e3394d04616d0c83799b4ac61bf33c35e31a",
+      "heading_id": "THPT-G10-CHII-W03",
+      "previous_source_blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
+      "path": "prototypes/thpt/content-drafts/THPT_G10_CHII_B03_B04_D1D6_AUTHORING_R01_SNAPSHOT.md",
+      "revision_scope": "CP122_CD02_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-ii.md",
@@ -347,13 +350,24 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G10-B03-MODELING",
+      "G10-B04-SYSTEM"
+    ],
+    "content_version": "CD02-BANK-CP122-20261127-CHII-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHII-W04-ANCHOR",
     "source": {
-      "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
-      "heading_id": "THPT-G10-CHII-W04-ANCHOR"
+      "blob": "fe94e3394d04616d0c83799b4ac61bf33c35e31a",
+      "heading_id": "THPT-G10-CHII-W04-ANCHOR",
+      "previous_source_blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
+      "path": "prototypes/thpt/content-drafts/THPT_G10_CHII_B03_B04_D1D6_AUTHORING_R01_SNAPSHOT.md",
+      "revision_scope": "CP122_CD02_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-ii.md",
@@ -361,27 +375,57 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B04-LINEAR_OBJECTIVE",
+      "G10-B04-INTEGER_MODELS"
+    ],
+    "content_version": "CD02-BANK-CP122-20261127-W04-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP02-W01",
     "source": {
-      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
-      "heading_id": "THPT-TOP02-W01"
+      "blob": "278aec1c45c9e661722de3989077f6385d61ef5d",
+      "heading_id": "THPT-TOP02-W01",
+      "previous_source_blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md",
+      "revision_scope": "CP122_CD02_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "QUAD_INEQUALITY",
+      "QUAD_PARAMETER"
+    ],
+    "content_version": "CD02-BANK-CP122-20261127-TOP02-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP02-W02",
     "source": {
-      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
-      "heading_id": "THPT-TOP02-W02"
+      "blob": "278aec1c45c9e661722de3989077f6385d61ef5d",
+      "heading_id": "THPT-TOP02-W02",
+      "previous_source_blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md",
+      "revision_scope": "CP122_CD02_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B04-LINEAR_OBJECTIVE",
+      "G10-B04-INTEGER_MODELS"
+    ],
+    "content_version": "CD02-BANK-CP122-20261127-TOP02-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-W01",
