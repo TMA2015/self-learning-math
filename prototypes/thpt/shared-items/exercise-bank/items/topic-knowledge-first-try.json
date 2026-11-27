@@ -8311,10 +8311,10 @@
   },
   {
     "item_id": "THPT-TOP04-KFT01",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT01",
-    "stem": "Tính \\(5^{-2}\\cdot25\\). Biểu thức \\(0^{-1}\\) có nghĩa không? Vì sao?",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT01",
+    "stem": "Tính \\(5^{-2}\\cdot25\\). Biểu thức \\(0^{-1}\\) có nghĩa không? Vì sao? Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(1\\); \\(0^{-1}\\) không xác định vì không thể chia cho 0.",
-    "worked_solution": "\\(5^{-2}\\cdot25=\\frac1{25}\\cdot25=1\\). \\(0^{-1}\\) không xác định vì dẫn tới phép chia cho 0. Nếu em nhầm dấu âm của số mũ thành dấu âm của giá trị, hãy so \\(-2^2=-4\\) với \\(2^{-2}=\\frac14\\).\n\n\n**Kiểm lỗi**\n\nNếu nghĩ số mũ âm làm kết quả âm, đọc lại **Kiến thức 1.1** rồi giải **Bài 13** và **Bài 11**: viết thành phân số nghịch đảo và kiểm điều kiện cơ số khác 0.",
+    "worked_solution": "\\(5^{-2}\\cdot25=\\frac1{25}\\cdot25=1\\). \\(0^{-1}\\) không xác định vì dẫn tới phép chia cho 0. Nếu em nhầm dấu âm của số mũ thành dấu âm của giá trị, hãy so \\(-2^2=-4\\) với \\(2^{-2}=\\frac14\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B18-POWER_INTEGER"
@@ -8323,11 +8323,17 @@
       "TOP04-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đổi số mũ âm sang nghịch đảo; mẫu số phải khác 0."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8339,14 +8345,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "-1; \\(0^{-1}=0\\)."
+      },
+      {
+        "id": "B",
+        "text": "625; \\(0^{-1}=1\\)."
+      },
+      {
+        "id": "C",
+        "text": "1; \\(0^{-1}=0\\)."
+      },
+      {
+        "id": "D",
+        "text": "1; \\(0^{-1}\\) không xác định vì chia cho 0."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu nghĩ số mũ âm làm kết quả âm, đọc lại **Kiến thức 1.1** rồi giải **Bài 12** và **Bài 11**: viết thành phân số nghịch đảo và kiểm điều kiện cơ số khác 0."
   },
   {
     "item_id": "THPT-TOP04-KFT02",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT02",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT02",
     "stem": "Tính \\(27^{\\frac23}\\) và \\(\\sqrt[3]{-27}\\).",
     "answer_key": "\\(9\\) và \\(-3\\).",
-    "worked_solution": "\\(27^{\\frac23}=3^2=9\\); \\(\\sqrt[3]{-27}=-3\\) vì \\((-3)^3=-27\\).\n\nNếu chỉ nhận nghiệm dương khi giải \\(x^4=16\\), thử số đối; nếu đổi dấu căn bậc chẵn, nhớ căn số học không âm.\n\n\n**Kiểm lỗi**\n\nNếu nhầm căn bậc chẵn số học với cả hai nghiệm của phương trình, đọc **Kiến thức 1.2**, làm **Bài 14** rồi **Bài 5**; luôn kiểm dấu của căn và trường hợp bậc lẻ.",
+    "worked_solution": "\\(27^{\\frac23}=3^2=9\\); \\(\\sqrt[3]{-27}=-3\\) vì \\((-3)^3=-27\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B18-POWER_RATIONAL"
@@ -8355,11 +8381,17 @@
       "TOP04-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính căn bậc ba trước khi bình phương; căn bậc lẻ của số âm vẫn có nghĩa."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8371,14 +8403,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(9;\\ -3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(9;\\ 3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(3;\\ -3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(27;\\ -9\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu chỉ nhận nghiệm dương khi giải \\(x^4=16\\), thử số đối; nếu đổi dấu căn bậc chẵn, nhớ căn số học không âm.\n\nNếu nhầm căn bậc chẵn số học với cả hai nghiệm của phương trình, đọc **Kiến thức 1.2**, làm **Bài 13** rồi **Bài 5**; luôn kiểm dấu của căn và trường hợp bậc lẻ."
   },
   {
     "item_id": "THPT-TOP04-KFT03",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT03",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT03",
     "stem": "So sánh \\(\\left(\\frac13\\right)^{\\sqrt3}\\) với \\(\\left(\\frac13\\right)^2\\).",
     "answer_key": "\\(\\left(\\frac13\\right)^{\\sqrt3}>\\left(\\frac13\\right)^2\\).",
-    "worked_solution": "\\(\\sqrt3<2\\); hàm mũ cơ số \\(\\frac13\\) nghịch biến nên \\(\\left(\\frac13\\right)^{\\sqrt3}>\\left(\\frac13\\right)^2\\).\n\nNếu đảo dấu sai, dùng \\(x=0\\) và \\(x=1\\) để quan sát 1 và cơ số a; xem lại mục Kiến thức 1.3 về chiều tăng/giảm của lũy thừa khi cơ số lớn hơn 1 hoặc nằm giữa 0 và 1.\n\n\n**Kiểm lỗi**\n\nNếu so sánh mũ thực mà giữ chiều như cơ số lớn hơn 1, quay lại **Kiến thức 1.3**, giải **Bài 15** và **Bài 16**, dùng cơ số trong khoảng (0,1) để thử ngược kết luận.",
+    "worked_solution": "\\(\\sqrt3<2\\); hàm mũ cơ số \\(\\frac13\\) nghịch biến nên \\(\\left(\\frac13\\right)^{\\sqrt3}>\\left(\\frac13\\right)^2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B18-POWER_REAL"
@@ -8387,11 +8439,17 @@
       "TOP04-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "So sánh số mũ, rồi xét hàm mũ cơ số nhỏ hơn 1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8403,14 +8461,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không xác định vì số mũ vô tỉ."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\left(\\frac13\\right)^{\\sqrt3}>\\left(\\frac13\\right)^2\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\left(\\frac13\\right)^{\\sqrt3}<\\left(\\frac13\\right)^2\\)."
+      },
+      {
+        "id": "D",
+        "text": "Hai giá trị bằng nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu đảo dấu sai, dùng \\(x=0\\) và \\(x=1\\) để quan sát 1 và cơ số a; xem lại mục Kiến thức 1.3 về chiều tăng/giảm của lũy thừa khi cơ số lớn hơn 1 hoặc nằm giữa 0 và 1.\n\nNếu so sánh mũ thực mà giữ chiều như cơ số lớn hơn 1, quay lại **Kiến thức 1.3**, giải **Bài 14** và **Bài 15**, dùng cơ số trong khoảng (0,1) để thử ngược kết luận."
   },
   {
     "item_id": "THPT-TOP04-KFT06",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT06",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT06",
     "stem": "Tìm miền xác định của \\(\\log_2(x^2-9)\\); có thể tách thành \\(\\log_2(x-3)+\\log_2(x+3)\\) trên toàn miền đó không?",
     "answer_key": "\\(D=(-\\infty;-3)\\cup(3;+\\infty)\\); chỉ tách được trên \\(x>3\\).",
-    "worked_solution": "Điều kiện là \\(x^2-9=(x-3)(x+3)>0\\), nên \\(x<-3\\) hoặc \\(x>3\\). Để tách thành hai lôgarit, phải có \\(x-3>0\\) và \\(x+3>0\\), tức \\(x>3\\). Chẳng hạn \\(x=-4\\) làm tích bằng 7 dương nhưng từng thừa số âm; lôgarit của tích có nghĩa còn hai lôgarit riêng không có nghĩa.\n\nNếu mắc lỗi ‘log của tích’ trên toàn miền, lấy \\(x=-4\\) làm phản ví dụ; làm lại Bài 30, Bài 31 và Bài 28 trong phần Luyện tập.",
+    "worked_solution": "Điều kiện là \\(x^2-9=(x-3)(x+3)>0\\), nên \\(x<-3\\) hoặc \\(x>3\\). Để tách thành hai lôgarit, phải có \\(x-3>0\\) và \\(x+3>0\\), tức \\(x>3\\). Chẳng hạn \\(x=-4\\) làm tích bằng 7 dương nhưng từng thừa số âm; lôgarit của tích có nghĩa còn hai lôgarit riêng không có nghĩa.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B19-LOG_DOMAIN"
@@ -8419,11 +8497,17 @@
       "TOP04-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Lập bảng dấu tích rồi kiểm từng đối số của lôgarit riêng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8435,14 +8519,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(D=(-3;3)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(D=(-\\infty;-3)\\cup(3;+\\infty)\\); tách được trên toàn miền."
+      },
+      {
+        "id": "C",
+        "text": "\\(D=(-\\infty;-3)\\cup(3;+\\infty)\\); chỉ tách được khi \\(x>3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(D=(3;+\\infty)\\); tách được trên toàn miền."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu mắc lỗi ‘log của tích’ trên toàn miền, lấy \\(x=-4\\) làm phản ví dụ; làm lại Bài 31, Bài 34 và Bài 33 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP04-KFT08",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT08",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT08",
     "stem": "Tính \\(\\log_8 2\\) bằng đổi cơ số.",
     "answer_key": "\\(\\log_8 2=\\frac13\\).",
-    "worked_solution": "\\(\\frac{\\ln2}{\\ln8}=\\frac13\\) (hoặc \\(8^{\\frac13}=2\\)).\n\nNếu tính \\(\\log_{\\frac19}3=+\\frac12\\), kiểm cơ số nhỏ hơn 1 và thử lũy thừa.\n\n\n**Kiểm lỗi**\n\nNếu dấu của lôgarit cơ số nhỏ hơn 1 hoặc phép đổi cơ số bị nhầm, đọc **Kiến thức 2.4**, làm **Bài 26** rồi **Bài 33**, so lại với định nghĩa lũy thừa.",
+    "worked_solution": "\\(\\frac{\\ln2}{\\ln8}=\\frac13\\) (hoặc \\(8^{\\frac13}=2\\)).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B19-LOG_BASE_CHANGE"
@@ -8451,11 +8555,17 @@
       "TOP04-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đổi về cơ số 2 hoặc dùng tỉ số hai lôgarit."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8467,14 +8577,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac14\\)."
+      },
+      {
+        "id": "C",
+        "text": "4."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac13\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu tính \\(\\log_{\\frac19}3=+\\frac12\\), kiểm cơ số nhỏ hơn 1 và thử lũy thừa.\n\nNếu dấu của lôgarit cơ số nhỏ hơn 1 hoặc phép đổi cơ số bị nhầm, đọc **Kiến thức 2.4**, làm **Bài 25** rồi **Bài 28**, so lại với định nghĩa lũy thừa."
   },
   {
     "item_id": "THPT-TOP04-KFT10",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT10",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT10",
     "stem": "So \\(\\left(\\frac15\\right)^{-1}\\) và \\(\\left(\\frac15\\right)^2\\).",
     "answer_key": "\\(\\left(\\frac15\\right)^{-1}=5>\\frac1{25}=\\left(\\frac15\\right)^2\\).",
-    "worked_solution": "\\(5>\\frac1{25}\\). Cơ số \\(\\frac15\\) không đổi và thuộc \\((0;1)\\), nên hàm số nghịch biến: số mũ \\(-1\\) nhỏ hơn 2 thì giá trị lũy thừa lớn hơn.\n\nNếu luôn giữ dấu so sánh khi bỏ mũ, vẽ hai điểm 0,1 trên đồ thị để sửa.\n\n\n**Kiểm lỗi**\n\nNếu so sánh hai lũy thừa cơ số \\(0<a<1\\) mà không đảo chiều, đọc **Kiến thức 3.2**, thực hiện **Bài 37** và **Bài 41** với điểm thử 0, 1.",
+    "worked_solution": "\\(5>\\frac1{25}\\). Cơ số \\(\\frac15\\) không đổi và thuộc \\((0;1)\\), nên hàm số nghịch biến: số mũ \\(-1\\) nhỏ hơn 2 thì giá trị lũy thừa lớn hơn.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B20-EXP_MONOTONIC"
@@ -8483,11 +8613,17 @@
       "TOP04-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính từng lũy thừa và nhớ quy luật của cơ số nhỏ hơn 1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8499,14 +8635,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(5>\\frac1{25}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(5<\\frac1{25}\\)."
+      },
+      {
+        "id": "C",
+        "text": "Hai giá trị bằng nhau."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac15>\\frac1{25}\\) là hai giá trị của đề."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu luôn giữ dấu so sánh khi bỏ mũ, vẽ hai điểm 0,1 trên đồ thị để sửa.\n\nNếu so sánh hai lũy thừa cơ số \\(0<a<1\\) mà không đảo chiều, đọc **Kiến thức 3.2**, thực hiện **Bài 37** và **Bài 41** với điểm thử 0, 1."
   },
   {
     "item_id": "THPT-TOP04-KFT11",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT11",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT11",
     "stem": "Với \\(y=\\log_2 x\\), giá trị tại \\(x=\\frac18\\) và \\(x=8\\) là gì?",
     "answer_key": "Lần lượt \\(-3\\) và \\(3\\).",
-    "worked_solution": "\\(\\log_2\\frac18=-3,\\ \\log_2 8=3\\), hàm tăng vì cơ số \\(2>1\\).\n\nNếu đặt điểm \\(x=0\\) lên đồ thị lôgarit, hỏi số mũ nào cho lũy thừa của cơ số hợp lệ bằng 0 (không có).\n\n\n**Kiểm lỗi**\n\nNếu nhận \\(x\\le0\\) vào tập xác định của \\(\\log_a x\\), đọc **Kiến thức 3.3**, thử **Bài 38** và **Bài 40**; kiểm từng tọa độ theo điều kiện đối số dương.",
+    "worked_solution": "\\(\\log_2\\frac18=-3,\\ \\log_2 8=3\\), hàm tăng vì cơ số \\(2>1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B20-LOG_FUNCTION"
@@ -8515,11 +8671,17 @@
       "TOP04-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tìm số mũ cần đặt cho cơ số 2 để được mỗi đối số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8531,14 +8693,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(0;\\ 3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(-3;\\ 3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(3;\\ -3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(-8;\\ 8\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu đặt điểm \\(x=0\\) lên đồ thị lôgarit, hỏi số mũ nào cho lũy thừa của cơ số hợp lệ bằng 0 (không có).\n\nNếu nhận \\(x\\le0\\) vào tập xác định của \\(\\log_a x\\), đọc **Kiến thức 3.3**, thử **Bài 38** và **Bài 40**; kiểm từng tọa độ theo điều kiện đối số dương."
   },
   {
     "item_id": "THPT-TOP04-KFT12",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT12",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT12",
     "stem": "Cho \\(f(x)=3^x\\). Điểm \\((1;3)\\) trên f tương ứng điểm nào trên đồ thị \\(y=\\log_3 x\\)?",
     "answer_key": "\\((3;1)\\).",
-    "worked_solution": "\\((3;1)\\) vì \\(\\log_3 3=1\\).\n\nNếu dùng \\(\\log_3(-3)\\) để đảo hàm, kiểm miền lôgarit phải có đối số dương; làm lại Bài 50 (hàm ngược) và Bài 44 (đối xứng đồ thị hàm mũ–lôgarit) trong phần Luyện tập.",
+    "worked_solution": "\\((3;1)\\) vì \\(\\log_3 3=1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B20-INVERSE_GRAPH"
@@ -8547,11 +8729,17 @@
       "TOP04-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai hàm ngược đổi chỗ hoành độ và tung độ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8563,14 +8751,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((-3;1)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\((3;-1)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\((3;1)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\((1;3)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu dùng \\(\\log_3(-3)\\) để đảo hàm, kiểm miền lôgarit phải có đối số dương; làm lại Bài 46 (hàm ngược) và Bài 49 (đối xứng đồ thị hàm mũ–lôgarit) trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP04-KFT13",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT13",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT13",
     "stem": "Giải phương trình \\(2^{2x}-3\\cdot2^x-4=0\\). Đặt \\(t=2^x\\), xác định điều kiện của \\(t\\) rồi giải.",
     "answer_key": "\\(t>0,\\ S=\\{2\\}\\).",
-    "worked_solution": "Đặt \\(t=2^x>0\\). Phương trình trở thành \\(t^2-3t-4=0\\), hay \\((t-4)(t+1)=0\\). Ta nhận \\(t=4\\) và loại \\(t=-1\\) vì \\(2^x\\) luôn dương. Từ \\(2^x=4\\), suy ra \\(x=2\\). Kiểm lại: \\(16-3\\cdot4-4=0\\).\n\n**Kiểm lỗi**\n\nNếu em nhận cả \\(t=-1\\), hãy nhớ không tồn tại số thực \\(x\\) sao cho \\(2^x=-1\\). Ôn Bài 60 (đặt ẩn dương) và Bài 51 (phương trình mũ) trong Luyện tập.",
+    "worked_solution": "Đặt \\(t=2^x>0\\). Phương trình trở thành \\(t^2-3t-4=0\\), hay \\((t-4)(t+1)=0\\). Ta nhận \\(t=4\\) và loại \\(t=-1\\) vì \\(2^x\\) luôn dương. Từ \\(2^x=4\\), suy ra \\(x=2\\). Kiểm lại: \\(16-3\\cdot4-4=0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B21-EXP_EQUATION"
@@ -8579,11 +8787,17 @@
       "TOP04-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Đặt \\(t=2^x>0\\), giải phương trình bậc hai rồi lọc t."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8595,14 +8809,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(t\\in\\mathbb R,\\ S=\\{2;-1\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(t>0,\\ S=\\{4\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(t>0,\\ S=\\varnothing\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(t>0,\\ S=\\{2\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu em nhận cả \\(t=-1\\), hãy nhớ không tồn tại số thực \\(x\\) sao cho \\(2^x=-1\\). Ôn Bài 59 (đặt ẩn dương) và Bài 51 (phương trình mũ) trong Luyện tập."
   },
   {
     "item_id": "THPT-TOP04-KFT14",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT14",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT14",
     "stem": "Giải \\(\\log_2(x-2)+\\log_2(x+2)=3\\).",
     "answer_key": "\\(D=(2;+\\infty),\\ S=\\{2\\sqrt3\\}\\).",
-    "worked_solution": "Điều kiện \\(x-2>0,\\ x+2>0\\), tức \\(x>2\\). Gộp hai lôgarit trong miền đó rồi chuyển sang dạng lũy thừa: \\((x-2)(x+2)=2^3=8\\). Suy ra \\(x^2-4=8\\), tức \\(x=\\pm2\\sqrt3\\). Chỉ \\(x=2\\sqrt3\\) thỏa \\(x>2\\).\n\n**Kiểm lỗi**\n\nNghiệm âm xuất hiện khi giải phương trình bậc hai thu được từ tích hai đối số, không phải do bình phương hai vế. Nếu em nhận nghiệm âm, thay vào từng đối số để thấy lôgarit không xác định. Ôn Bài 61, Bài 64 và Bài 27 trong Luyện tập.",
+    "worked_solution": "Điều kiện \\(x-2>0,\\ x+2>0\\), tức \\(x>2\\). Gộp hai lôgarit trong miền đó rồi chuyển sang dạng lũy thừa: \\((x-2)(x+2)=2^3=8\\). Suy ra \\(x^2-4=8\\), tức \\(x=\\pm2\\sqrt3\\). Chỉ \\(x=2\\sqrt3\\) thỏa \\(x>2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B21-LOG_EQUATION"
@@ -8611,11 +8845,17 @@
       "TOP04-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Ghi điều kiện từng đối số rồi dùng quy tắc lôgarit tích."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8627,14 +8867,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(D=(2;+\\infty),\\ S=\\{2\\sqrt3\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(D=\\mathbb R,\\ S=\\{-2\\sqrt3;2\\sqrt3\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(D=(2;+\\infty),\\ S=\\{4\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(D=(-2;+\\infty),\\ S=\\{-2\\sqrt3\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nghiệm âm xuất hiện khi giải phương trình bậc hai thu được từ tích hai đối số, không phải do bình phương hai vế. Nếu em nhận nghiệm âm, thay vào từng đối số để thấy lôgarit không xác định. Ôn Bài 60, Bài 64 và Bài 32 trong Luyện tập."
   },
   {
     "item_id": "THPT-TOP04-KFT16",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT16",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT16",
     "stem": "Giải \\(\\log_{\\frac13}(x+1)>\\log_{\\frac13}4\\).",
     "answer_key": "\\(S=(-1;3)\\).",
-    "worked_solution": "Điều kiện \\(x+1>0\\), tức \\(x>-1\\). Vì cơ số \\(\\frac13\\) nằm giữa 0 và 1, hàm lôgarit nghịch biến, nên bất phương trình tương đương \\(x+1<4\\), tức \\(x<3\\). Giao hai điều kiện được \\(S=(-1;3)\\). Tại \\(x=-1\\), lôgarit không xác định; tại \\(x=3\\), hai vế bằng nhau nên không thỏa dấu nghiêm.\n\n**Kiểm lỗi**\n\nNếu quên giao miền đối số dương hoặc không đảo dấu khi cơ số \\(0<a<1\\), đọc **Kiến thức 4.4**, làm **Bài 54** và **Bài 58**; kiểm riêng từng điểm biên.",
+    "worked_solution": "Điều kiện \\(x+1>0\\), tức \\(x>-1\\). Vì cơ số \\(\\frac13\\) nằm giữa 0 và 1, hàm lôgarit nghịch biến, nên bất phương trình tương đương \\(x+1<4\\), tức \\(x<3\\). Giao hai điều kiện được \\(S=(-1;3)\\). Tại \\(x=-1\\), lôgarit không xác định; tại \\(x=3\\), hai vế bằng nhau nên không thỏa dấu nghiêm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B21-LOG_INEQUALITY"
@@ -8643,11 +8903,17 @@
       "TOP04-O16"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Giao miền đối số dương với bất phương trình đảo chiều do cơ số nhỏ hơn 1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8659,14 +8925,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=(-1;3]\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=(-1;3)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=(3;+\\infty)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=[-1;3]\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu quên giao miền đối số dương hoặc không đảo dấu khi cơ số \\(0<a<1\\), đọc **Kiến thức 4.4**, làm **Bài 54** và **Bài 58**; kiểm riêng từng điểm biên."
   },
   {
     "item_id": "THPT-TOP04-KFT17",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT17",
-    "stem": "Một quần thể giả định ban đầu có 640 cá thể và giảm 25% mỗi kỳ theo quy tắc nhân cố định. (a) Tính số lượng theo mô hình sau 2 kỳ; vì sao không trừ 160 cá thể ở mỗi kỳ? (b) Kỳ nguyên đầu tiên mà số lượng theo mô hình nhỏ hơn 300 là kỳ nào?",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT17",
+    "stem": "Một quần thể giả định ban đầu có 640 cá thể và giảm 25% mỗi kỳ theo quy tắc nhân cố định. (a) Tính số lượng theo mô hình sau 2 kỳ; vì sao không trừ 160 cá thể ở mỗi kỳ? (b) Kỳ nguyên đầu tiên mà số lượng theo mô hình nhỏ hơn 300 là kỳ nào? Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Sau 2 kỳ: 360 cá thể; giảm theo số còn lại, không trừ cố định 160; kỳ đầu nhỏ hơn 300 là kỳ 3.",
-    "worked_solution": "(a) Sau 2 kỳ, mô hình cho \\(N(2)=640\\cdot(0{,}75)^2=360\\) cá thể. Mỗi kỳ số còn lại nhân với \\(0{,}75\\): kỳ 1 còn 480, kỳ 2 còn 360. Nếu trừ cố định 160 cá thể mỗi kỳ thì chỉ còn 320, không phải quy tắc giảm 25% của số còn lại. (b) Cần \\(640(0{,}75)^n<300\\), hay \\((0{,}75)^n<\\frac{15}{32}\\). Vì \\(\\ln(0{,}75)<0\\), suy ra \\(n>\\frac{\\ln(\\frac{15}{32})}{\\ln(0{,}75)}\\approx2{,}63\\). Kiểm \\(N(2)=360>300\\), \\(N(3)=270<300\\), vậy kỳ 3 là kỳ đầu. Đây là kết quả của mô hình giả định, không phải dự đoán chắc chắn số lượng ngoài thực tế.\n\nNếu tăng/giảm tuyến tính theo số cộng, kiểm tỷ lệ thực mỗi năm; làm lại Bài 73, Bài 75 (mô hình tăng/giảm theo kỳ) và Bài 65 (lãi kép) trong phần Luyện tập.",
+    "worked_solution": "(a) Sau 2 kỳ, mô hình cho \\(N(2)=640\\cdot(0{,}75)^2=360\\) cá thể. Mỗi kỳ số còn lại nhân với \\(0{,}75\\): kỳ 1 còn 480, kỳ 2 còn 360. Nếu trừ cố định 160 cá thể mỗi kỳ thì chỉ còn 320, không phải quy tắc giảm 25% của số còn lại. (b) Cần \\(640(0{,}75)^n<300\\), hay \\((0{,}75)^n<\\frac{15}{32}\\). Vì \\(\\ln(0{,}75)<0\\), suy ra \\(n>\\frac{\\ln(\\frac{15}{32})}{\\ln(0{,}75)}\\approx2{,}63\\). Kiểm \\(N(2)=360>300\\), \\(N(3)=270<300\\), vậy kỳ 3 là kỳ đầu. Đây là kết quả của mô hình giả định, không phải dự đoán chắc chắn số lượng ngoài thực tế.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B18-GROWTH_MODEL"
@@ -8675,11 +8961,17 @@
       "TOP04-O17"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Mỗi kỳ nhân số còn lại với 0,75; kiểm hai kỳ nguyên liên tiếp."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8691,14 +8983,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "360 cá thể sau 2 kỳ; kỳ 2 lần đầu dưới 300."
+      },
+      {
+        "id": "B",
+        "text": "480 cá thể sau 2 kỳ; kỳ 4 lần đầu dưới 300."
+      },
+      {
+        "id": "C",
+        "text": "360 cá thể sau 2 kỳ; nhân số còn lại với \\(0{,}75\\); kỳ 3 lần đầu dưới 300."
+      },
+      {
+        "id": "D",
+        "text": "320 cá thể sau 2 kỳ; mỗi kỳ trừ 160; kỳ 3."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu tăng/giảm tuyến tính theo số cộng, kiểm tỷ lệ thực mỗi năm; làm lại Bài 67, Bài 75 (mô hình tăng/giảm theo kỳ) và Bài 65 (lãi kép) trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP04-KFT18",
-    "content_version": "TOP04-BANK-CP72-20261126-KFT18",
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-KFT18",
     "stem": "Giải \\(\\log_3(x-1)=1+\\log_3(5-x)\\). Hãy nêu miền trước khi dùng quy tắc logarit.",
     "answer_key": "\\(1<x<5;\\ S=\\{4\\}\\).",
-    "worked_solution": "Điều kiện \\(x-1>0\\), \\(5-x>0\\), tức \\(1<x<5\\). Vì \\(1=\\log_3 3\\), ta có \\(\\log_3(x-1)=\\log_3[3(5-x)]\\). Hai đối số dương và cơ số 3 hợp lệ nên \\(x-1=15-3x\\), suy ra \\(x=4\\). Thử: \\(\\log_3 3=1+\\log_3 1=1\\). Nếu em bỏ điều kiện và nhận nghiệm ngoài \\((1;5)\\), quay lại bước xác định miền trước khi giải.\n\n\n**Kiểm lỗi**\n\nNếu giải phương trình logarit rồi quên lọc nghiệm theo đồng thời hai đối số, đọc **Kiến thức 5.2** rồi thử **Bài 67** và **Bài 69**; chỉ kết luận sau khi thế vào phương trình gốc.",
+    "worked_solution": "Điều kiện \\(x-1>0\\), \\(5-x>0\\), tức \\(1<x<5\\). Vì \\(1=\\log_3 3\\), ta có \\(\\log_3(x-1)=\\log_3[3(5-x)]\\). Hai đối số dương và cơ số 3 hợp lệ nên \\(x-1=15-3x\\), suy ra \\(x=4\\). Thử: \\(\\log_3 3=1+\\log_3 1=1\\). Nếu em bỏ điều kiện và nhận nghiệm ngoài \\((1;5)\\), quay lại bước xác định miền trước khi giải.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B21-LOG_EQUATION"
@@ -8707,11 +9019,17 @@
       "TOP04-O18"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Ghi miền hai đối số; biểu diễn 1 thành lôgarit cơ số 3 rồi gộp."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8723,7 +9041,27 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x>1;\\ S=\\{4\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(1<x<5;\\ S=\\{3\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(1<x<5;\\ S=\\varnothing\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(1<x<5;\\ S=\\{4\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu giải phương trình logarit rồi quên lọc nghiệm theo đồng thời hai đối số, đọc **Kiến thức 5.2** rồi thử **Bài 66** và **Bài 70**; chỉ kết luận sau khi thế vào phương trình gốc."
   },
   {
     "item_id": "THPT-TOP05-KFT01",
