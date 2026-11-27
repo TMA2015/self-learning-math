@@ -483,87 +483,57 @@ Hai loại hoạt động trên chỉ là luyện phản tư, không phải RD1,
 
 ### THPT-G11-CHII-W05-01 · WRITTEN · G11-B05-MONOTONICITY
 
-**Đề:** Cho u_n=(2n+1)/(n+2), n≥1. Tính u_1,u_2, chứng minh dãy tăng và bị chặn.
+**Đề bài:** Cho \(u_n=\frac{2n+1}{n+2}\), \(n\ge1\) nguyên. Tính \(u_1,u_2\), chứng minh dãy tăng và bị chặn.
 
-**Lời giải:** u_1=1,u_2=5/4. u_n=2−3/(n+2), u_{n+1}−u_n=3/[(n+2)(n+3)]>0. Vì 0<3/(n+2)≤1 nên 1≤u_n<2.
+**Lời giải:** \(u_1=1,\ u_2=\frac54\). Viết \(u_n=2-\frac3{n+2}\). Với mọi \(n\ge1\), \(u_{n+1}-u_n=\frac3{(n+2)(n+3)}>0\), nên dãy tăng. Vì \(0<\frac3{n+2}\le1\), ta có \(1\le u_n<2\). Cận dưới 1 đạt tại \(n=1\); cận trên 2 không đạt vì phân số luôn dương.
 
-**Rubric /6:**
-- u_1,u_2 đúng (1 điểm).
-- biến đổi 2−3/(n+2) (1 điểm).
-- tính hiệu dương (1 điểm).
-- kết luận tăng (1 điểm).
-- chứng minh hai cận (1 điểm).
-- giải thích không đạt 2 (1 điểm).
+**Rubric tự đối chiếu:** 6 điểm: hai số hạng đầu (1); biến đổi (1); hiệu dương (1); kết luận tăng (1); hai cận (1); giải thích không đạt 2 (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+
 
 ### THPT-G11-CHII-W05-02-ANCHOR · WRITTEN/ANCHOR · G11-B05-RECURRENCE
 
-**Đề:** Dãy u_1=1 và u_{n+1}=2u_n+1. Tính 5 số hạng đầu và chứng minh công thức u_n=2^n−1.
+**Đề bài:** Dãy \(u_1=1,\ u_{n+1}=2u_n+1\) với \(n\ge1\). Tính 5 số hạng đầu và chứng minh \(u_n=2^n-1\).
 
-**Lời giải:** u_1=1,u_2=3,u_3=7,u_4=15,u_5=31. Quy nạp: n=1 đúng; nếu u_n=2^n−1 thì u_{n+1}=2(2^n−1)+1=2^(n+1)−1.
+**Lời giải:** Tính theo truy hồi: \(u_1=1,u_2=3,u_3=7,u_4=15,u_5=31\). Với \(n=1\), công thức đúng vì \(2^1-1=1\). Giả sử đúng tại n, \(u_n=2^n-1\). Khi đó \(u_{n+1}=2(2^n-1)+1=2^{n+1}-1\). Theo quy nạp, công thức đúng với mọi số nguyên \(n\ge1\).
 
-**Rubric /6:**
-- 5 số hạng đầu đúng (1 điểm).
-- giả thuyết công thức (1 điểm).
-- bước cơ sở (1 điểm).
-- giả thiết quy nạp (1 điểm).
-- bước chuyển n→n+1 (1 điểm).
-- kết luận n≥1 (1 điểm).
+**Rubric tự đối chiếu:** 6 điểm: năm số hạng (1); công thức (1); bước cơ sở (1); giả thiết quy nạp (1); bước chuyển (1); kết luận mọi \(n\ge1\) (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+
 
 ### THPT-G11-CHII-W06-01 · WRITTEN · G11-B06-AP-SUM
 
-**Đề:** Một CSC có u_4=11,u_9=26. Tìm u_1,d,u_{15} và S_{15}.
+**Đề bài:** Một cấp số cộng có \(u_4=11,u_9=26\). Tìm \(u_1,d,u_{15},S_{15}\).
 
-**Lời giải:** 5d=15⇒d=3;u_1=11−9=2;u_15=2+14·3=44;S_15=15(2+44)/2=345.
+**Lời giải:** Có \(u_9-u_4=(9-4)d=15\), suy ra \(d=3\). \(u_1=11-3\cdot3=2\). \(u_{15}=2+14\cdot3=44\). Tổng \(S_{15}=\frac{15(2+44)}2=345\).
 
-**Rubric /6:**
-- thiết lập hiệu hai số hạng (1 điểm).
-- tìm d=3 (1 điểm).
-- tìm u1=2 (1 điểm).
-- tìm u15=44 (1 điểm).
-- công thức tổng đúng (1 điểm).
-- S15=345 và đơn vị nếu có (1 điểm).
+**Rubric tự đối chiếu:** 6 điểm: lập hiệu (1); d (1); \(u_1\) (1); \(u_{15}\) (1); công thức tổng (1); kết quả 345 (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+
 
 ### THPT-G11-CHII-W06-02-ANCHOR · WRITTEN/ANCHOR · G11-B06-AP-APPLICATION
 
-**Đề:** Một rạp chiếu có 18 hàng ghế: hàng đầu 12 chỗ, mỗi hàng sau tăng 3 chỗ. Tính hàng cuối, tổng ghế, và số ghế của 5 hàng cuối.
+**Đề bài:** Một rạp chiếu có 18 hàng ghế; hàng đầu 12 chỗ, mỗi hàng sau tăng 3 chỗ. Tính số ghế hàng cuối, tổng số ghế và số ghế của 5 hàng cuối.
 
-**Lời giải:** u_18=12+17·3=63. S_18=18(12+63)/2=675. Năm hàng cuối (14–18) có u_14=51; tổng 5(51+63)/2=285.
+**Lời giải:** Số ghế tạo cấp số cộng với \(u_1=12,d=3\). \(u_{18}=12+17\cdot3=63\) ghế. Tổng \(S_{18}=\frac{18(12+63)}2=675\) ghế. Năm hàng cuối có chỉ số 14–18; \(u_{14}=12+13\cdot3=51\), tổng \(\frac{5(51+63)}2=285\) ghế.
 
-**Rubric /6:**
-- xác định CSC (1 điểm).
-- u18=63 (1 điểm).
-- S18 công thức (1 điểm).
-- S18=675 (1 điểm).
-- đúng u14=51 (1 điểm).
-- tổng năm hàng cuối 285 (1 điểm).
+**Rubric tự đối chiếu:** 6 điểm: xác định cấp số cộng (1); hàng 18 (1); công thức tổng (1); 675 (1); hàng 14 (1); 285 (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+
 
 ### THPT-G11-CHII-W07-01 · WRITTEN · G11-B07-GP-SUM
 
-**Đề:** CSN có u_1=5,q=−2. Tính u_6, S_6, và chứng minh bằng cộng từng số hạng.
+**Đề bài:** Cấp số nhân có \(u_1=5,q=-2\). Tính \(u_6,S_6\) và đối chiếu kết quả tổng bằng cách cộng từng số hạng.
 
-**Lời giải:** u_6=5(−2)^5=−160. Sáu số hạng 5,−10,20,−40,80,−160, tổng −105. Công thức S6=5[1−(−2)^6]/[1−(−2)]=5(1−64)/3=−105.
+**Lời giải:** \(u_6=5(-2)^5=-160\). Vì \(q\ne1\), \(S_6=\frac{5[1-(-2)^6]}{1-(-2)}=\frac{5(1-64)}3=-105\). Sáu số hạng lần lượt \(5,-10,20,-40,80,-160\); tổng trực tiếp \(5-10+20-40+80-160=-105\), thống nhất với công thức.
 
-**Rubric /6:**
-- công thức un (1 điểm).
-- u6=−160 (1 điểm).
-- liệt kê sáu số hạng (1 điểm).
-- cộng trực tiếp −105 (1 điểm).
-- áp công thức q≠1 (1 điểm).
-- hai cách thống nhất (1 điểm).
+**Rubric tự đối chiếu:** 6 điểm: công thức số hạng (1); \(u_6\) (1); liệt kê (1); tổng trực tiếp (1); công thức tổng với \(q\ne1\) (1); đối chiếu (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+
 
 ### THPT-G11-CHII-W07-02-ANCHOR · WRITTEN/ANCHOR · G11-B07-GP-APPLICATION
 
-**Đề:** Một khoản tiền 80 triệu đồng tăng trưởng 5%/năm theo lãi kép. Tìm công thức vốn sau n năm; tính sau 4 năm và năm nguyên nhỏ nhất để vốn vượt 100 triệu.
+**Đề bài:** Một khoản tiền 80 triệu đồng tăng 5% mỗi năm theo lãi kép, nhập lãi cuối năm, không nộp/rút thêm hay tính phí. Tìm công thức vốn sau n năm, tính sau 4 năm và năm nguyên nhỏ nhất để vốn vượt 100 triệu.
 
-**Lời giải:** V_n=80·1,05^n (triệu), n≥0. V_4=97,2405. Vì V_4<100 và V_5=102,102525>100, năm nguyên đầu tiên là 5.
+**Lời giải:** \(V_0=80\), mỗi năm nhân với \(1{,}05\), nên \(V_n=80(1{,}05)^n\) triệu đồng, \(n\in\mathbb Z_{\ge0}\). \(V_4=97{,}2405\) triệu đồng; \(V_5=102{,}102525\) triệu đồng. Vì \(1{,}05>1\), dãy tăng và \(V_4<100<V_5\). Vậy cuối năm thứ 5 là mốc đầu tiên vượt 100 triệu.
 
-**Rubric /6:**
-- nêu V0, q=1,05 (1 điểm).
-- đúng Vn (1 điểm).
-- V4=97,2405 (1 điểm).
-- chứng minh V4 chưa vượt 100 (1 điểm).
-- V5=102,102525 (1 điểm).
-- kết luận năm 5, làm rõ mốc thời gian (1 điểm).
+**Rubric tự đối chiếu:** 6 điểm: vốn ban đầu và hệ số (1); công thức (1); \(V_4\) (1); kiểm chưa vượt (1); \(V_5\) (1); tính tăng và kết luận mốc năm 5 (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+
 
 ## D5 · Nguồn đồ thị SVG (ba nguồn canonical, không tạo ID trùng)
 
