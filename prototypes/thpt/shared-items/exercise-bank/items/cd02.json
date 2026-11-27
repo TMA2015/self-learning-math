@@ -5,7 +5,9 @@
     "stem": "\\(-2(3x-1)\\le8\\). Giải bất phương trình và giải thích bước đảo chiều. Chọn phương án đầy đủ và tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(x\\ge-1\\).",
     "worked_solution": "\\(-6x+2\\le8\\Rightarrow-6x\\le6\\). Chia cả hai vế cho \\(-6\\) (âm) phải đổi \\(\\le\\) thành \\(\\ge\\), nên \\(x\\ge-1\\); thử \\(x=-1\\) cho bằng, \\(x=0\\) cho \\(2\\le8\\).",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP02-SKILL-LINEAR_INEQUALITY_ONE_VAR"
+    ],
     "original_outcome_ids": [
       "TOP02-O01"
     ],
