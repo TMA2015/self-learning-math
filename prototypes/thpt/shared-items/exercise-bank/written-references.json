@@ -2,8 +2,11 @@
   {
     "item_id": "THPT-G11-CHII-W05-01",
     "source": {
-      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
-      "heading_id": "THPT-G11-CHII-W05-01"
+      "blob": "ac2e861ed6ea9a109169a3f871613a287a8b1a4d",
+      "heading_id": "THPT-G11-CHII-W05-01",
+      "previous_source_blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "path": "prototypes/thpt/content-drafts/G11_CHII_B05_B07_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+      "revision_scope": "CP127_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-ii.md",
@@ -11,13 +14,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B05-MONOTONICITY"
+    ],
+    "content_version": "CD07-BANK-CP127-20261127-W05-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHII-W05-02-ANCHOR",
     "source": {
-      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
-      "heading_id": "THPT-G11-CHII-W05-02-ANCHOR"
+      "blob": "ac2e861ed6ea9a109169a3f871613a287a8b1a4d",
+      "heading_id": "THPT-G11-CHII-W05-02-ANCHOR",
+      "previous_source_blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "path": "prototypes/thpt/content-drafts/G11_CHII_B05_B07_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+      "revision_scope": "CP127_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-ii.md",
@@ -25,13 +38,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B05-RECURRENCE"
+    ],
+    "content_version": "CD07-BANK-CP127-20261127-02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHII-W06-01",
     "source": {
-      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
-      "heading_id": "THPT-G11-CHII-W06-01"
+      "blob": "ac2e861ed6ea9a109169a3f871613a287a8b1a4d",
+      "heading_id": "THPT-G11-CHII-W06-01",
+      "previous_source_blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "path": "prototypes/thpt/content-drafts/G11_CHII_B05_B07_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+      "revision_scope": "CP127_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-ii.md",
@@ -39,13 +62,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B06-AP-SUM"
+    ],
+    "content_version": "CD07-BANK-CP127-20261127-W06-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHII-W06-02-ANCHOR",
     "source": {
-      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
-      "heading_id": "THPT-G11-CHII-W06-02-ANCHOR"
+      "blob": "ac2e861ed6ea9a109169a3f871613a287a8b1a4d",
+      "heading_id": "THPT-G11-CHII-W06-02-ANCHOR",
+      "previous_source_blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "path": "prototypes/thpt/content-drafts/G11_CHII_B05_B07_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+      "revision_scope": "CP127_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-ii.md",
@@ -53,13 +86,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B06-AP-APPLICATION"
+    ],
+    "content_version": "CD07-BANK-CP127-20261127-02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHII-W07-01",
     "source": {
-      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
-      "heading_id": "THPT-G11-CHII-W07-01"
+      "blob": "ac2e861ed6ea9a109169a3f871613a287a8b1a4d",
+      "heading_id": "THPT-G11-CHII-W07-01",
+      "previous_source_blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "path": "prototypes/thpt/content-drafts/G11_CHII_B05_B07_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+      "revision_scope": "CP127_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-ii.md",
@@ -67,13 +110,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B07-GP-SUM"
+    ],
+    "content_version": "CD07-BANK-CP127-20261127-W07-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHII-W07-02-ANCHOR",
     "source": {
-      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
-      "heading_id": "THPT-G11-CHII-W07-02-ANCHOR"
+      "blob": "ac2e861ed6ea9a109169a3f871613a287a8b1a4d",
+      "heading_id": "THPT-G11-CHII-W07-02-ANCHOR",
+      "previous_source_blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "path": "prototypes/thpt/content-drafts/G11_CHII_B05_B07_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+      "revision_scope": "CP127_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-ii.md",
@@ -81,7 +134,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B07-GP-APPLICATION"
+    ],
+    "content_version": "CD07-BANK-CP127-20261127-02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHV-B15-W01",
@@ -100,8 +160,11 @@
   {
     "item_id": "THPT-G11-CHV-B15-W02-ANCHOR",
     "source": {
-      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
-      "heading_id": "THPT-G11-CHV-B15-W02-ANCHOR"
+      "blob": "885b98fff6a8ca2b59b349d662bd843fd5de9935",
+      "heading_id": "THPT-G11-CHV-B15-W02-ANCHOR",
+      "previous_source_blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "path": "prototypes/thpt/content-drafts/G11_CHV_B15_B17_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+      "revision_scope": "CP127_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-v.md",
@@ -109,7 +172,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B15-GEOMETRIC_APPLICATION"
+    ],
+    "content_version": "CD07-BANK-CP127-20261127-W02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHV-B16-W01",
@@ -170,42 +240,82 @@
   {
     "item_id": "THPT-TOP07-W01",
     "source": {
-      "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
-      "heading_id": "THPT-TOP07-W01"
+      "blob": "021521e98424ee81883bd2bcdffa262b586332a3",
+      "heading_id": "THPT-TOP07-W01",
+      "previous_source_blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R06_20261115.md",
+      "revision_scope": "CP127_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B05-RECURRENCE"
+    ],
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP07-W02",
     "source": {
-      "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
-      "heading_id": "THPT-TOP07-W02"
+      "blob": "021521e98424ee81883bd2bcdffa262b586332a3",
+      "heading_id": "THPT-TOP07-W02",
+      "previous_source_blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R06_20261115.md",
+      "revision_scope": "CP127_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B06-AP-SUM"
+    ],
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP07-W03",
     "source": {
-      "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
-      "heading_id": "THPT-TOP07-W03"
+      "blob": "021521e98424ee81883bd2bcdffa262b586332a3",
+      "heading_id": "THPT-TOP07-W03",
+      "previous_source_blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R06_20261115.md",
+      "revision_scope": "CP127_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B15-GEOMETRIC"
+    ],
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP07-W04",
     "source": {
-      "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
-      "heading_id": "THPT-TOP07-W04"
+      "blob": "021521e98424ee81883bd2bcdffa262b586332a3",
+      "heading_id": "THPT-TOP07-W04",
+      "previous_source_blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R06_20261115.md",
+      "revision_scope": "CP127_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B07-GP-APPLICATION"
+    ],
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP05-W01",
