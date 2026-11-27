@@ -1,8 +1,8 @@
 [
   {
     "item_id": "THPT-TOP03-ADD01",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD01",
-    "stem": "Giải \\(2x+6=14\\) và chỉ rõ phép biến đổi tương đương.",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD01",
+    "stem": "Giải \\(2x+6=14\\) và chỉ rõ phép biến đổi tương đương. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S=\\{4\\}\\).",
     "worked_solution": "Trừ 6 ở cả hai vế: \\(2x=8\\). Chia cả hai vế cho 2 (khác 0), được \\(x=4\\). Thay vào đề gốc: \\(2\\cdot4+6=14\\). Cả hai bước đều đảo ngược được nên tập nghiệm giữ nguyên.",
     "skill_ids": [
@@ -12,14 +12,18 @@
       "TOP03-O01"
     ],
     "problem_type_id": "TOP03-TRANSFORM_EQUIVALENCE",
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Thực hiện cùng phép tính ở hai vế; chỉ chia số khác 0."
     ],
     "remediation": "Nếu cộng/trừ không đều hai vế, thế ngược \\(x=4\\) để kiểm lại phép biến đổi. Ôn TOP03-M01; luyện THPT-TOP03-ADD02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -34,12 +38,31 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-4;4\\}\\); hai nghiệm đối nhau."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{4\\}\\); trừ 6 rồi chia hai vế cho 2."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{10\\}\\); cộng 6 rồi chia hai vế cho 2."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{7\\}\\); bỏ số 6 rồi chia 2."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD02",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD02",
-    "stem": "So sánh tập nghiệm của \\(x=3\\) và \\(x^2=9\\). Có được thay kí hiệu kéo theo bằng tương đương khi bình phương không?",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD02",
+    "stem": "So sánh tập nghiệm của \\(x=3\\) và \\(x^2=9\\). Có được thay kí hiệu kéo theo bằng tương đương khi bình phương không? Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(x=3\\) có \\(S_1=\\{3\\}\\); \\(x^2=9\\) có \\(S_2=\\{-3;3\\}\\); không tương đương.",
     "worked_solution": "Từ \\(x=3\\) suy ra \\(x^2=9\\), nhưng từ \\(x^2=9\\) chỉ suy ra \\(x=\\pm3\\). Phép bình phương mất thông tin dấu; muốn biến đổi hai chiều phải thêm điều kiện \\(x\\ge0\\) trong ví dụ này.",
     "skill_ids": [
@@ -56,7 +79,11 @@
     "remediation": "Nếu nghĩ \\(x^2=9\\) chỉ có nghiệm 3, thử \\(x=-3\\). Khi bình phương, cần kiểm điều kiện để không nhận nghiệm ngoại lai. Ôn TOP03-M01; luyện THPT-TOP03-ADD01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -71,12 +98,31 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S_1=S_2=\\{-3;3\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S_1=\\{3\\},S_2=\\{-3\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S_1=\\{3\\},S_2=\\{-3;3\\}\\); chỉ có chiều \\(x=3\\Rightarrow x^2=9\\) trên \\(\\mathbb R\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S_1=S_2=\\{3\\}\\); bình phương luôn tương đương."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD03",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD03",
-    "stem": "Giải \\(3(x-2)=2x+5\\) và thử lại nghiệm.",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD03",
+    "stem": "Giải \\(3(x-2)=2x+5\\) và thử lại nghiệm. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S=\\{11\\}\\).",
     "worked_solution": "Khai triển \\(3x-6=2x+5\\Leftrightarrow x=11\\). Thay: \\(3\\cdot9=27\\) và \\(2\\cdot11+5=27\\). Phép chuyển vế, thu gọn là tương đương trên \\(\\mathbb R\\).",
     "skill_ids": [],
@@ -84,14 +130,18 @@
       "TOP03-O02"
     ],
     "problem_type_id": "TOP03-LINEAR_EQUATION",
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Khai triển \\(3(x-2)\\) rồi thu gọn hai vế."
     ],
     "remediation": "Nếu quên nhân 3 với \\(-2\\), khai triển lại và thử nghiệm bằng cách thay vào cả hai vế. Ôn TOP03-M02; luyện THPT-TOP03-ADD04.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -106,12 +156,31 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-1\\}\\); hai vế cùng bằng 3."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{5\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{1\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{11\\}\\); hai vế cùng bằng 27."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD04",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD04",
-    "stem": "Biện luận phương trình \\((m-1)(m-2)x=2(m-1)\\) trên \\(\\mathbb R\\) theo tham số thực m.",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD04",
+    "stem": "Biện luận phương trình \\((m-1)(m-2)x=2(m-1)\\) trên \\(\\mathbb R\\) theo tham số thực m. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(m=1:\\ S=\\mathbb R;\\ m=2:\\ S=\\varnothing;\\ m\\ne1,\\ m\\ne2:\\ S=\\{\\frac2{m-2}\\}\\).",
     "worked_solution": "Hệ số của x bằng 0 khi \\(m=1\\) hoặc \\(m=2\\). Nếu \\(m=1\\), hai vế đều bằng 0, mọi \\(x\\in\\mathbb R\\) thỏa. Nếu \\(m=2\\), phương trình là \\(0=2\\), vô nghiệm. Nếu \\(m\\ne1\\) và \\(m\\ne2\\), chia hai vế cho \\((m-1)(m-2)\\) được \\(x=\\frac2{m-2}\\). Thay vào phương trình gốc cho \\(2(m-1)\\) ở hai vế. Ba trường hợp loại trừ nhau và bao hết \\(m\\in\\mathbb R\\).",
     "skill_ids": [],
@@ -119,14 +188,18 @@
       "TOP03-O02"
     ],
     "problem_type_id": "TOP03-LINEAR_PARAM_DEGENERATE",
-    "difficulty": "APPLY",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Tách các m làm hệ số của x bằng 0 trước khi chia."
     ],
     "remediation": "Nếu chia cho \\(m-1\\) hoặc \\(m-2\\) ngay, kiểm riêng \\(m=1\\) và \\(m=2\\) để không mất trường hợp vô số nghiệm hoặc vô nghiệm. Ôn TOP03-M02; luyện THPT-TOP03-ADD03.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -141,11 +214,30 @@
         "disposition": "PRESERVE_PRIOR_CANDIDATE_STRONGER_TASK"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(m=1: S=\\mathbb R;\\ m=2:S=\\varnothing;\\ m\\notin\\{1;2\\}: S=\\{\\frac{2}{m-2}\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{\\frac{2}{m-2}\\}\\) với mọi \\(m\\ne2\\); \\(m=2\\) vô nghiệm."
+      },
+      {
+        "id": "C",
+        "text": "\\(m=1\\) vô nghiệm; \\(m=2\\) mọi số thực; các trường hợp khác như công thức."
+      },
+      {
+        "id": "D",
+        "text": "\\(m=1,2\\) đều vô nghiệm; các trường hợp khác như công thức."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD05",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD05",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD05",
     "stem": "Giải \\((x-2)(2x+3)=0\\).",
     "answer_key": "\\(S=\\{2;-\\frac32\\}\\).",
     "worked_solution": "Tích bằng 0 khi ít nhất một thừa số bằng 0. \\(x-2=0\\Rightarrow x=2\\); \\(2x+3=0\\Rightarrow x=-\\frac32\\). Cả hai làm tích bằng 0.",
@@ -154,14 +246,18 @@
       "TOP03-O03"
     ],
     "problem_type_id": "TOP03-ZERO_PRODUCT",
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Dùng quy tắc tích bằng 0, không chia cho một thừa số."
     ],
     "remediation": "Nếu chia cho \\(x-2\\), sẽ mất nghiệm \\(x=2\\); dùng quy tắc tích bằng 0 thay vì khử thừa số. Ôn TOP03-M03; luyện THPT-TOP03-ADD06.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -176,12 +272,31 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-2;-\\frac32\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{2;-\\frac32\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{2;\\frac32\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{2\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD06",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD06",
-    "stem": "Giải \\((x-1)^2(x+4)=0\\); nghiệm kép có đếm là hai nghiệm phân biệt không?",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD06",
+    "stem": "Giải \\((x-1)^2(x+4)=0\\); nghiệm kép có đếm là hai nghiệm phân biệt không? Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S=\\{1;-4\\}\\); chỉ 2 giá trị phân biệt.",
     "worked_solution": "\\((x-1)^2=0\\Leftrightarrow x=1\\); \\(x+4=0\\Leftrightarrow x=-4\\). Bội của nghiệm 1 là 2 nhưng tập nghiệm chỉ ghi mỗi giá trị một lần.",
     "skill_ids": [],
@@ -196,7 +311,11 @@
     "remediation": "Nếu viết \\(\\{1;1;-4\\}\\) như ba nghiệm phân biệt, nhớ tập nghiệm chỉ ghi mỗi giá trị một lần. Bội của nghiệm khác số phần tử tập nghiệm. Ôn TOP03-M03; luyện THPT-TOP03-ADD05.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -211,12 +330,31 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-4;-1;1\\}\\); có 3 nghiệm phân biệt."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{1\\}\\); có 1 nghiệm phân biệt."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{-4;1\\}\\); có 2 nghiệm phân biệt."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-4;1\\}\\); có 3 nghiệm phân biệt."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD07",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD07",
-    "stem": "Giải \\(2x^2-6x-8=0\\) bằng biệt thức thu gọn \\(\\Delta'\\), sau đó kiểm bằng phân tích nhân tử.",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD07",
+    "stem": "Giải \\(2x^2-6x-8=0\\) bằng biệt thức thu gọn \\(\\Delta'\\), sau đó kiểm bằng phân tích nhân tử. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(\\Delta'=25;\\ S=\\{-1;4\\}\\).",
     "worked_solution": "\\(a=2,\\ b'=-3,\\ c=-8\\). \\(\\Delta'=(-3)^2-2\\cdot(-8)=25>0\\). Công thức \\(x=\\frac{-b'\\pm\\sqrt{\\Delta'}}a\\) cho \\(x=\\frac{3\\pm5}2\\), tức 4 và \\(-1\\). Kiểm: \\(2x^2-6x-8=2(x-4)(x+1)\\). Hai nghiệm làm tích bằng 0.",
     "skill_ids": [],
@@ -224,14 +362,18 @@
       "TOP03-O04"
     ],
     "problem_type_id": "TOP03-QUADRATIC_ROOTS",
-    "difficulty": "UNDERSTAND",
+    "difficulty": "APPLY",
     "hints": [
       "Nhận ra b chẵn; tính \\(b'=\\frac b2\\) và \\(\\Delta'\\)."
     ],
     "remediation": "Nếu dùng mẫu \\(2a\\) trong công thức nghiệm theo \\(\\Delta'\\), phân biệt \\(b'=\\frac b2\\) với b và nhớ mẫu của công thức thu gọn là a. Kiểm nghiệm bằng nhân tử. Ôn TOP03-M04; luyện THPT-TOP03-ADD08.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -246,14 +388,33 @@
         "disposition": "PRESERVE_PRIOR_CANDIDATE_STRONGER_TASK"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\Delta'=25;\\ S=\\{-4;1\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\Delta'=100;\\ S=\\{-1;4\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\Delta'=-7;\\ S=\\varnothing\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\Delta'=25;\\ S=\\{-1;4\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD08",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD08",
-    "stem": "So sánh số nghiệm thực phân biệt và tập nghiệm của (A) \\(x^2+2x+5=0\\) và (B) \\(x^2+2x+1=0\\). Giải thích sự khác nhau.",
-    "answer_key": "(A) \\(S=\\varnothing\\) (0 nghiệm); (B) \\(S=\\{-1\\}\\) (1 nghiệm kép).",
-    "worked_solution": "(A) \\(\\Delta=4-20=-16<0\\); viết \\((x+1)^2+4=0\\) cũng thấy vô nghiệm thực. (B) \\(\\Delta=4-4=0\\); \\((x+1)^2=0\\) chỉ cho \\(x=-1\\), là nghiệm kép nhưng chỉ một giá trị phân biệt. \\(\\Delta<0\\) và \\(\\Delta=0\\) không cùng số nghiệm thực.",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD08",
+    "stem": "So sánh số nghiệm thực phân biệt và tập nghiệm của (1) \\(x^2+2x+5=0\\) và (2) \\(x^2+2x+1=0\\). Giải thích sự khác nhau. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
+    "answer_key": "(1) \\(S=\\varnothing\\) (0 nghiệm); (2) \\(S=\\{-1\\}\\) (1 nghiệm kép).",
+    "worked_solution": "(1) \\(\\Delta=4-20=-16<0\\); viết \\((x+1)^2+4=0\\) cũng thấy vô nghiệm thực. (2) \\(\\Delta=4-4=0\\); \\((x+1)^2=0\\) chỉ cho \\(x=-1\\), là nghiệm kép nhưng chỉ một giá trị phân biệt. \\(\\Delta<0\\) và \\(\\Delta=0\\) không cùng số nghiệm thực.",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O04"
@@ -266,7 +427,11 @@
     "remediation": "Nếu nhầm vô nghiệm với nghiệm kép, so \\(\\Delta=0\\) và \\(\\Delta<0\\); đối chiếu bằng hoàn thành bình phương. Ôn TOP03-M04; luyện THPT-TOP03-ADD07.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -281,12 +446,31 @@
         "disposition": "PRESERVE_PRIOR_CANDIDATE_STRONGER_TASK"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(1) vô nghiệm thực; (2) một nghiệm kép \\(x=-1\\)."
+      },
+      {
+        "id": "B",
+        "text": "(1) một nghiệm kép; (2) vô nghiệm."
+      },
+      {
+        "id": "C",
+        "text": "Cả hai vô nghiệm thực."
+      },
+      {
+        "id": "D",
+        "text": "(1) vô nghiệm; (2) hai nghiệm phân biệt \\(x=\\pm1\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD09",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD09",
-    "stem": "Giải \\(\\frac{x^2-4}{x-2}=0\\). Giải thích vì sao \\(x=2\\) bị loại.",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD09",
+    "stem": "Giải \\(\\frac{x^2-4}{x-2}=0\\). Giải thích vì sao \\(x=2\\) bị loại. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S=\\{-2\\}\\).",
     "worked_solution": "Điều kiện \\(x\\ne2\\). Tử \\((x-2)(x+2)=0\\) cho \\(x=2\\) hoặc \\(x=-2\\); chỉ \\(x=-2\\) hợp miền. Rút gọn thành \\(x+2=0\\) chỉ được dùng trên miền \\(x\\ne2\\), không tự bổ sung điểm bị loại.",
     "skill_ids": [],
@@ -301,7 +485,11 @@
     "remediation": "Nếu nhận cả \\(-2\\) và 2, hãy thay \\(x=2\\) vào mẫu và nhận thấy biểu thức không xác định. Ôn TOP03-M05; luyện THPT-TOP03-ADD10.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -316,14 +504,33 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\varnothing\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{-2\\}\\), vì \\(x=2\\) làm mẫu bằng 0."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{-2;2\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{2\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD10",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD10",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD10",
     "stem": "Giải \\(\\frac1{x-1}+\\frac1{x+1}=1\\) trong \\(\\mathbb R\\).",
     "answer_key": "\\(S=\\{1-\\sqrt2;1+\\sqrt2\\}\\).",
-    "worked_solution": "Điều kiện \\(x\\ne\\pm1\\). Quy đồng thành \\(\\frac{2x}{x^2-1}=1\\); nhân với mẫu khác 0 cho \\(2x=x^2-1\\Rightarrow x^2-2x-1=0\\Rightarrow x=1\\pm\\sqrt2\\). Hai nghiệm đều khác ±1 nên được nhận.",
+    "worked_solution": "Điều kiện \\(x\\ne\\pm1\\). Quy đồng thành \\(\\frac{2x}{x^2-1}=1\\); nhân với mẫu khác 0 cho \\(2x=x^2-1\\Rightarrow x^2-2x-1=0\\Rightarrow x=1\\pm\\sqrt2\\). Hai nghiệm đều khác \\(\\pm1\\) nên được nhận.",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O05"
@@ -336,7 +543,11 @@
     "remediation": "Nếu nhân hai vế với mẫu mà quên điều kiện, quay lại bước \\(x\\ne1\\) và \\(x\\ne-1\\) rồi đối chiếu nghiệm. Ôn TOP03-M05; luyện THPT-TOP03-ADD09.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -351,11 +562,30 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-1;1\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{1+\\sqrt2\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{1-\\sqrt2;1+\\sqrt2\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-1-\\sqrt2;-1+\\sqrt2\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD11",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD11",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD11",
     "stem": "Giải \\(\\lvert2x-3\\rvert=5\\).",
     "answer_key": "\\(S=\\{-1;4\\}\\).",
     "worked_solution": "Vì \\(5\\ge0\\), \\(\\lvert2x-3\\rvert=5\\) khi và chỉ khi \\(2x-3=5\\) hoặc \\(2x-3=-5\\). Hai nhánh cho \\(x=4\\) và \\(x=-1\\); thử lại cả hai có giá trị tuyệt đối 5.",
@@ -371,7 +601,11 @@
     "remediation": "Nếu chỉ lấy \\(x=4\\), nhớ \\(|u|=c\\) có hai nhánh \\(u=c\\) hoặc \\(u=-c\\) khi \\(c>0\\). Ôn TOP03-M06; luyện THPT-TOP03-ADD12.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -386,11 +620,30 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{4\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{-4;1\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{-1\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-1;4\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD12",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD12",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD12",
     "stem": "Giải \\(\\lvert x-2\\rvert=x\\).",
     "answer_key": "\\(S=\\{1\\}\\).",
     "worked_solution": "Vế trái không âm nên \\(x\\ge0\\). Nếu \\(x\\ge2\\) thì \\(\\lvert x-2\\rvert=x-2\\), phương trình trở thành \\(x-2=x\\), vô nghiệm. Nếu \\(0\\le x<2\\) thì \\(\\lvert x-2\\rvert=2-x=x\\Rightarrow x=1\\) hợp miền. Thử \\(\\lvert1-2\\rvert=1\\).",
@@ -406,7 +659,11 @@
     "remediation": "Nếu nhận x âm, kiểm dấu vế phải; nếu nhận nghiệm ở miền \\(x\\ge2\\), xét nhánh giá trị tuyệt đối đúng miền. Ôn TOP03-M06; luyện THPT-TOP03-ADD11.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -421,14 +678,33 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{1\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{2\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{0;1\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\varnothing\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD13",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD13",
-    "stem": "Giải \\(\\sqrt{x+2}=x\\); chỉ rõ nghiệm ngoại lai sau bình phương.",
-    "answer_key": "\\(S=\\{2\\}\\). Nghiệm ứng viên −1 bị loại.",
-    "worked_solution": "Vế phải là x nên bắt buộc \\(x\\ge0\\). Bình phương \\(x+2=x^2\\Leftrightarrow (x-2)(x+1)=0\\), suy ra \\(x=2\\) hoặc \\(x=-1\\); chỉ \\(x=2\\) hợp dấu vế phải, thử \\(\\sqrt4=2\\). Với −1, \\(\\sqrt1=1\\ne-1\\).",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD13",
+    "stem": "Giải \\(\\sqrt{x+2}=x\\); chỉ rõ nghiệm ngoại lai sau bình phương. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
+    "answer_key": "\\(S=\\{2\\}\\). Nghiệm ứng viên \\(-1\\) bị loại.",
+    "worked_solution": "Vế phải là x nên bắt buộc \\(x\\ge0\\). Bình phương \\(x+2=x^2\\Leftrightarrow (x-2)(x+1)=0\\), suy ra \\(x=2\\) hoặc \\(x=-1\\); chỉ \\(x=2\\) hợp dấu vế phải, thử \\(\\sqrt4=2\\). Với \\(-1\\), \\(\\sqrt1=1\\ne-1\\).",
     "skill_ids": [
       "RADICAL_CONDITION",
       "RADICAL_FILTER"
@@ -437,14 +713,18 @@
       "TOP03-O07"
     ],
     "problem_type_id": "TOP03-SQUARE_IMPLICATION_FILTER",
-    "difficulty": "UNDERSTAND",
+    "difficulty": "APPLY",
     "hints": [
       "Kiểm dấu vế phải trước bình phương, rồi thử từng ứng viên."
     ],
     "remediation": "Nếu kết luận hai nghiệm, thử \\(x=-1\\) trong phương trình gốc và kiểm dấu. Ôn TOP03-M07; luyện THPT-TOP03-ADD14.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -459,14 +739,33 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\varnothing\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{2\\}\\); loại \\(-1\\) vì vế phải âm."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{-1;2\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-1\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD14",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD14",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD14",
     "stem": "Giải \\(\\sqrt{x^2}=x\\) trong \\(\\mathbb R\\).",
     "answer_key": "\\(S=[0;+\\infty)\\).",
-    "worked_solution": "\\(\\sqrt{x^2}=\\lvert x\\rvert\\), không tự bằng x khi x âm. Điều kiện \\(\\lvert x\\rvert=x\\Leftrightarrow x\\ge0\\). Với \\(x=-2\\), vế trái 2 còn vế phải −2, không bằng.",
+    "worked_solution": "\\(\\sqrt{x^2}=\\lvert x\\rvert\\), không tự bằng x khi x âm. Điều kiện \\(\\lvert x\\rvert=x\\Leftrightarrow x\\ge0\\). Với \\(x=-2\\), vế trái 2 còn vế phải \\(-2\\), không bằng.",
     "skill_ids": [
       "RADICAL_CONDITION"
     ],
@@ -481,7 +780,11 @@
     "remediation": "Nếu triệt căn/bình phương máy móc rồi nhận mọi số thực, thử x âm để phát hiện mất thông tin dấu. Ôn TOP03-M07; luyện THPT-TOP03-ADD13.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -496,11 +799,30 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=(-\\infty;0]\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=(0;+\\infty)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=[0;+\\infty)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\mathbb R\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD15",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD15",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD15",
     "stem": "Giải \\(\\sqrt{3x+1}=\\sqrt{x+7}\\) trong \\(\\mathbb R\\).",
     "answer_key": "\\(S=\\{3\\}\\).",
     "worked_solution": "Điều kiện \\(3x+1\\ge0\\) và \\(x+7\\ge0\\), suy ra \\(x\\ge-\\frac13\\). Hai căn không âm bằng nhau khi và chỉ khi \\(3x+1=x+7\\Rightarrow x=3\\). Thử hai vế \\(\\sqrt{10}\\) bằng nhau.",
@@ -512,14 +834,18 @@
       "TOP03-O08"
     ],
     "problem_type_id": "TOP03-TWO_RADICALS_DOMAIN",
-    "difficulty": "UNDERSTAND",
+    "difficulty": "APPLY",
     "hints": [
       "Ghi điều kiện cho cả hai căn trước khi bình phương."
     ],
     "remediation": "Nếu chỉ bình phương mà quên miền, đặt điều kiện cho cả hai căn trước. Ôn TOP03-M08; luyện THPT-TOP03-ADD17.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -534,11 +860,30 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-3\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{6\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\varnothing\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{3\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD16",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD16",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD16",
     "stem": "Giải \\(\\sqrt{5x+4}=x+2\\). Phương trình có thể có hai nghiệm hay không?",
     "answer_key": "\\(S=\\{0;1\\}\\).",
     "worked_solution": "Điều kiện \\(x+2\\ge0\\) và \\(5x+4\\ge0\\). Bình phương \\(5x+4=(x+2)^2\\Rightarrow x^2-x=0\\), suy ra \\(x=0\\) hoặc \\(x=1\\). Cả hai thỏa: \\(\\sqrt4=2=0+2\\), \\(\\sqrt9=3=1+2\\). Không được mặc định một căn có đúng một nghiệm.",
@@ -557,7 +902,11 @@
     "remediation": "Nếu tự loại mất một nghiệm, thử cả \\(x=0\\) và \\(x=1\\) trong phương trình gốc. Ôn TOP03-M09; luyện THPT-TOP03-ADD13.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -572,12 +921,31 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{0;1\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{1\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{0\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-1;0\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD17",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD17",
-    "stem": "Giải \\(\\sqrt{x+4}=\\sqrt{x^2+5x+2}\\) trong \\(\\mathbb R\\) và xác định nghiệm ứng viên không hợp lệ.",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD17",
+    "stem": "Giải \\(\\sqrt{x+4}=\\sqrt{x^2+5x+2}\\) trong \\(\\mathbb R\\) và xác định nghiệm ứng viên không hợp lệ. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S=\\{-2+\\sqrt6\\}\\); \\(-2-\\sqrt6\\) bị loại.",
     "worked_solution": "Điều kiện \\(x+4\\ge0\\) và \\(x^2+5x+2\\ge0\\). Bình phương \\(x+4=x^2+5x+2\\Leftrightarrow x^2+4x-2=0\\Rightarrow x=-2\\pm\\sqrt6\\). Với \\(-2-\\sqrt6<-4\\), \\(x+4<0\\), không có căn thực. Với \\(-2+\\sqrt6>-4\\), hai biểu thức dưới căn cùng bằng \\(x+4=2+\\sqrt6>0\\) nên nhận.",
     "skill_ids": [
@@ -588,14 +956,18 @@
       "TOP03-O10"
     ],
     "problem_type_id": "TOP03-RADICAL_DOMAIN_FALSE_CANDIDATE",
-    "difficulty": "APPLY",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Kiểm cả hai biểu thức dưới căn ở mỗi ứng viên."
     ],
     "remediation": "Nếu giữ cả hai nghiệm, so \\(-2-\\sqrt6\\) với \\(-4\\) bằng nhận xét \\(\\sqrt6>2\\). Ôn TOP03-M10; luyện THPT-TOP03-ADD15.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -610,14 +982,33 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{2+\\sqrt6\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{-2+\\sqrt6\\}\\); nghiệm còn lại làm \\(x+4<0\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{-2-\\sqrt6;-2+\\sqrt6\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-2-\\sqrt6\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD18",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD18",
-    "stem": "Giải \\(\\sqrt{x^2+9}=x-1\\); vì sao phương trình đại số sau bình phương có nghiệm mà phương trình gốc vô nghiệm?",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD18",
+    "stem": "Giải \\(\\sqrt{x^2+9}=x-1\\); vì sao phương trình đại số sau bình phương có nghiệm mà phương trình gốc vô nghiệm? Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S=\\varnothing\\).",
-    "worked_solution": "Bên phải \\(x-1\\) phải không âm, nên \\(x\\ge1\\). Bình phương \\(x^2+9=(x-1)^2\\Rightarrow 9=-2x+1\\Rightarrow x=-4\\), trái \\(x\\ge1\\). Trực tiếp tại −4: căn \\(\\sqrt{25}=5\\) còn \\(-4-1=-5\\). Không có nghiệm.",
+    "worked_solution": "Bên phải \\(x-1\\) phải không âm, nên \\(x\\ge1\\). Bình phương \\(x^2+9=(x-1)^2\\Rightarrow 9=-2x+1\\Rightarrow x=-4\\), trái \\(x\\ge1\\). Trực tiếp tại \\(-4\\): căn \\(\\sqrt{25}=5\\) còn \\(-4-1=-5\\). Không có nghiệm.",
     "skill_ids": [
       "RADICAL_FILTER"
     ],
@@ -632,7 +1023,11 @@
     "remediation": "Nếu nhận \\(x=-4\\) vì làm đúng bình phương, thử lại dấu hai vế phương trình gốc. Ôn TOP03-M10; luyện THPT-TOP03-ADD17.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -647,11 +1042,30 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{4\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\mathbb R\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\varnothing\\); ứng viên \\(-4\\) không thỏa \\(x\\ge1\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-4\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD19",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD19",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD19",
     "stem": "Giải phương trình \\(x^4-5x^2+4=0\\) trong \\(\\mathbb R\\) bằng ẩn phụ.",
     "answer_key": "\\(S=\\{-2;-1;1;2\\}\\).",
     "worked_solution": "Đặt \\(t=x^2\\ge0\\); khi đó \\(t^2-5t+4=(t-1)(t-4)=0\\Rightarrow t\\in\\{1;4\\}\\), đều không âm. Quay lại \\(x^2=1\\Rightarrow x=\\pm1\\); \\(x^2=4\\Rightarrow x=\\pm2\\). Thử bằng cách thay t vào phương trình.",
@@ -660,14 +1074,18 @@
       "TOP03-O11"
     ],
     "problem_type_id": "TOP03-BIQUADRATIC_SUBSTITUTION",
-    "difficulty": "APPLY_EXTENSION",
+    "difficulty": "APPLY",
     "hints": [
       "Đặt \\(t=x^2\\ge0\\); khi quay về x, xét cả hai dấu."
     ],
     "remediation": "Nếu chỉ lấy x dương, nhớ phương trình \\(x^2=t\\) với \\(t>0\\) có hai nghiệm đối nhau. Ôn TOP03-M11; luyện THPT-TOP03-ADD20.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -682,27 +1100,50 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{1;4\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{1;2\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{-4;-1;1;4\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-2;-1;1;2\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD20",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD20",
-    "stem": "Giải \\(x^4+3x^2-4=0\\) bằng \\(t=x^2\\); giải thích vì sao một giá trị t bị loại.",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD20",
+    "stem": "Giải \\(x^4+3x^2-4=0\\) bằng \\(t=x^2\\); giải thích vì sao một giá trị t bị loại. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S=\\{-1;1\\}\\).",
-    "worked_solution": "Đặt \\(t=x^2\\ge0\\), giải \\(t^2+3t-4=(t+4)(t-1)=0\\) cho \\(t=1\\) hoặc \\(t=-4\\). Vì \\(t\\ge0\\), loại −4; từ \\(x^2=1\\) được \\(x=\\pm1\\).",
+    "worked_solution": "Đặt \\(t=x^2\\ge0\\), giải \\(t^2+3t-4=(t+4)(t-1)=0\\) cho \\(t=1\\) hoặc \\(t=-4\\). Vì \\(t\\ge0\\), loại \\(-4\\); từ \\(x^2=1\\) được \\(x=\\pm1\\).",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O11"
     ],
     "problem_type_id": "TOP03-BIQUADRATIC_NEGATIVE_T",
-    "difficulty": "APPLY_EXTENSION",
+    "difficulty": "APPLY",
     "hints": [
       "Lọc t không âm trước khi giải \\(x^2=t\\)."
     ],
     "remediation": "Nếu nhận nghiệm \\(x^2=-4\\) trong tập số thực, kiểm bình phương số thực không âm. Ôn TOP03-M11; luyện THPT-TOP03-ADD19.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -717,11 +1158,30 @@
         "disposition": "SOURCE_EQUIVALENT_STEM_WITH_PRIOR_PEDAGOGICAL_IMPROVEMENTS"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-1;1\\}\\); loại \\(t=-4\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{-4;1\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{1\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-2;-1;1;2\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP03-ADD21",
-    "content_version": "TOP03-BANK-CP77-20261126-ADD21",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-ADD21",
     "stem": "Một thang dài 10 m tựa vào tường thẳng đứng, mặt đất nằm ngang. Chân thang cách tường \\(x>0\\) m, độ cao đầu thang là \\(x+2\\) m. Tìm x và độ cao.",
     "answer_key": "\\(x=6\\,\\mathrm m\\); độ cao 8 m.",
     "worked_solution": "Theo định lí Pitago, \\(\\sqrt{x^2+(x+2)^2}=10\\), với \\(x>0\\). Bình phương được \\(x^2+(x+2)^2=100\\Rightarrow2x^2+4x-96=0\\Rightarrow(x+8)(x-6)=0\\). Chỉ \\(x=6\\) hợp chiều dài dương; thử \\(\\sqrt{36+64}=10\\). Độ cao 8 m.",
@@ -732,14 +1192,18 @@
       "TOP03-O12"
     ],
     "problem_type_id": "TOP03-GEOMETRIC_RADICAL_MODEL",
-    "difficulty": "APPLY",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Vẽ tam giác vuông, cạnh huyền 10 m; giữ \\(x>0\\)."
     ],
     "remediation": "Nếu nhận \\(x=-8\\), kiểm \\(x>0\\) và \\(x+2>0\\); nếu sai phân tích, chia 2 trước. Ôn TOP03-M12; luyện THPT-G10-B18-P04.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -754,6 +1218,25 @@
         "disposition": "PRESERVE_PRIOR_CANDIDATE_STRONGER_TASK"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=5\\,\\mathrm m\\); độ cao \\(7\\,\\mathrm m\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x=6\\,\\mathrm m\\); độ cao \\(8\\,\\mathrm m\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x=8\\,\\mathrm m\\); độ cao \\(10\\,\\mathrm m\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x=4\\,\\mathrm m\\); độ cao \\(6\\,\\mathrm m\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
