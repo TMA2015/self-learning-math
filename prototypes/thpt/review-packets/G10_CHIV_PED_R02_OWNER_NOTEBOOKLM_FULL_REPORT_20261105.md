@@ -1,0 +1,194 @@
+# BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP
+
+**Gói kiểm toán:** `G10-SGK-CHIV-PED-BRIDGE-R02-20261105` (Toán 10 - Chương IV: Vectơ, Bài 7–11)  
+**Bộ chuẩn áp dụng duy nhất:** `SLM-THPT-QUALITY-ONE v1.2.0` (Khung tiêu chuẩn Q01–Q18)  
+**Đơn vị thực hiện:** NotebookLM Independent Reviewer (Phản biện học thuật & Sư phạm độc lập)  
+**Ngày thực hiện:** 05/11/2026  
+
+---
+
+### 1. NGUỒN CƠ SỞ VÀ PHẠM VI AUDIT (SOURCE RECEIPT)
+
+#### 1.1 Bộ Permanent Sources THPT v2.1 (Đã chọn đúng 5 tài liệu v2.1)
+1. `01_THPT_MASTER_PLAN_v2.1.md`
+2. `02_THPT_NOTEBOOKLM_INDEPENDENT_REVIEW_RULES_v2.1.md`
+3. `03_THPT_ACADEMIC_SOURCES_AND_DEPTH_AUDIT_v2.1.md`
+4. `04_THPT_GOLDEN_LEARNING_ARCHITECTURE_v2.1.md`
+5. `05_THPT_CANONICAL_EXERCISE_AND_ID_CONTRACT_v2.1.md`
+
+#### 1.2 Nguồn gốc SGK/SBT S1 (KNTT Toán 10 Tập Một — Chương IV)
+* **SGK Toán 10 Tập Một (KNTT):**
+  * **Bài 7 (Các khái niệm mở đầu):** Trang in 46–50.
+  * **Bài 8 (Tổng và hiệu của hai vectơ):** Trang in 51–56.
+  * **Bài 9 (Tích của một vectơ với một số):** Trang in 57–62.
+  * **Bài 10 (Vectơ trong mặt phẳng tọa độ):** Trang in 63–69.
+  * **Bài 11 (Tích vô hướng của hai vectơ):** Trang in 70–75.
+  * **Bài tập cuối Chương IV:** Trang in 76–77.
+  * *SHA256 PDF SGK:* `3cbb335780dc0f2f4a034a55eb542e3bbe67693412b10a90ca1dffe9ea50eac2`
+* **SBT Toán 10 Tập Một (KNTT):**
+  * **Bài 7–11 & Bài tập cuối Chương IV:** Trang in 45–68.
+  * *SHA256 PDF SBT:* `2b1b98665b2c5cccb99f6699a43cbf71b8b2dfc63bdaec759a7b1c51778e2fa1`
+
+#### 1.3 Hồ sơ học liệu R02 đang kiểm toán
+* **Tệp học liệu chính:** `Temp_G10_CHIV_PED_R02_FULL_CHAPTER_REVIEW_20261105.md` (60,450 bytes)
+* **R01 B07–B08 Source Git Blob:** `42b206e31421b33860a1bf697d2d04b7aba992cf` (Receipt Blob: `cf4df6ecb603adb258ab5de03f9defa2c695369f`)
+* **R01 B09–B11 Source Git Blob:** `a9f6fab820559a8da98a5a42cd9902dbf9891f34` (Receipt Blob: `f13acb74206c00cb489e533df7792870f88830e3`)
+* **Existing Public CHIV JSON Git Blob:** `55b2753c04cffff897947d7007bdc860bc19fcfb`
+
+---
+
+### 2. DANH SÁCH MÃ ĐƯỢC REVIEW (REVIEWED_IDS)
+
+* **LESSON_IDs (5 bài):** `G10-SGK-B07`, `G10-SGK-B08`, `G10-SGK-B09`, `G10-SGK-B10`, `G10-SGK-B11`
+* **OUTCOME_IDs (24 outcomes — 100% CORE_KEEP):**
+  * **Bài 7:** `G10-B07-DEFINITION`, `G10-B07-LENGTH`, `G10-B07-DIRECTION`, `G10-B07-EQUALITY`, `G10-B07-ZERO`
+  * **Bài 8:** `G10-B08-TRIANGLE`, `G10-B08-PARALLELOGRAM`, `G10-B08-OPPOSITE-SUBTRACTION`, `G10-B08-MIDPOINT`, `G10-B08-CENTROID`
+  * **Bài 9:** `G10-B09-SCALAR_DEFINITION`, `G10-B09-LENGTH_DIRECTION`, `G10-B09-DISTRIBUTION`, `G10-B09-COLLINEAR`, `G10-B09-MIDPOINT_CENTROID`
+  * **Bài 10:** `G10-B10-VECTOR_COORDS`, `G10-B10-OPERATIONS`, `G10-B10-NORM_DISTANCE`, `G10-B10-COLLINEAR_COORDS`, `G10-B10-MIDPOINT_CENTROID`
+  * **Bài 11:** `G10-B11-GEOMETRIC_DOT`, `G10-B11-COORDINATE_DOT`, `G10-B11-PERPENDICULAR`, `G10-B11-APPLICATION`
+* **FIRST_TRY ITEM_IDs (24 câu Tự thử chẩn đoán mới):**
+  * `THPT-G10-CHIV-TRY01` đến `THPT-G10-CHIV-TRY24`
+* **HELP_IDs kế thừa (10 thẻ HELP D6 R01):**
+  * `HELP-G10-B07-01`, `HELP-G10-B07-02`, `HELP-G10-B08-01`, `HELP-G10-B08-02`, `HELP-G10-B09-01`, `HELP-G10-B09-02`, `HELP-G10-B10-01`, `HELP-G10-B10-02`, `HELP-G10-B11-01`, `HELP-G10-B11-02`
+* **SVG_IDs kế thừa (5 sơ đồ R01):**
+  * `FIG-G10-B07-01`, `FIG-G10-B08-01`, `FIG-G10-B09-01`, `FIG-G10-B10-01`, `FIG-G10-B11-01`
+
+---
+
+### 3. ĐÁNH GIÁ CHI TIẾT CÁC MỤC TRỌNG TÂM HỌC THUẬT VÀ SƯ PHẠM
+
+#### 3.1 Hình thành bản chất khái niệm Vectơ và Vectơ-không ($\vec0$)
+1. **Hình thành bản chất Vectơ (Bài 7):**
+   * Học liệu dẫn dắt xuất sắc từ khái niệm độ dời vật lý (đi từ $A \rightarrow B$ khác đi từ $B \rightarrow A$ dù cùng khoảng cách $AB$). Mũi tên định hướng thể hiện cả điểm xuất phát, hướng di chuyển và độ lớn.
+   * Phân biệt rõ nét giữa hai vectơ song song cùng hướng và ngược hướng; sự bình đẳng của các vectơ tự do khi có cùng độ dài và cùng hướng (dù điểm đặt khác nhau).
+2. **Quy ước Vectơ-không ($\vec0$):**
+   * Dẫn dắt tự nhiên từ việc di chuyển từ $A \rightarrow B$ rồi quay về $B \rightarrow A$, dẫn tới điểm đầu và điểm cuối trùng nhau ($\overrightarrow{AA}$).
+   * Xác định độ dài $|\vec0| = 0$; quy ước $\vec0$ cùng phương, cùng hướng với mọi vectơ. Dẫn dắt logic trong phép cộng/trừ ($\vec a + \vec0 = \vec a$, $\vec a + (-\vec a) = \vec0$) và phép nhân với số $0$ ($0 \vec u = \vec0$).
+
+#### 3.2 Đánh giá 24 Cầu nối PED1–PED6 và 24 Câu Tự thử theo từng Bài
+
+##### BÀI 07: CÁC KHÁI NIỆM MỞ ĐẦU VỀ VECTƠ
+1. **`G10-B07-DEFINITION` (`THPT-G10-CHIV-TRY01`):**  
+   * *Nội dung:* An đi $A \rightarrow B$, Bình đi $B \rightarrow A$.  
+   * *Toán & Sư phạm:* $\overrightarrow{AB} = -\overrightarrow{BA} \ne \overrightarrow{BA}$. Độ dài bằng nhau $AB$, nhưng hai vectơ ngược hướng. **PASS / PASS**.
+2. **`G10-B07-LENGTH` (`THPT-G10-CHIV-TRY02`):**  
+   * *Nội dung:* Đi $3\text{ m}$ Đông vs $3\text{ m}$ Tây.  
+   * *Toán & Sư phạm:* Độ dài đều bằng $3\text{ m}$, nhưng không bằng nhau do ngược hướng. **PASS / PASS**.
+3. **`G10-B07-DIRECTION` (`THPT-G10-CHIV-TRY03`):**  
+   * *Nội dung:* Hai vectơ trên 2 đường thẳng song song, một hướng Đông, một hướng Tây.  
+   * *Toán & Sư phạm:* Cùng phương (giá song song), nhưng ngược hướng. **PASS / PASS**.
+4. **`G10-B07-EQUALITY` (`THPT-G10-CHIV-TRY04`):**  
+   * *Nội dung:* Hình bình hành $ABCD$. So sánh $\overrightarrow{AB}, \overrightarrow{DC}, \overrightarrow{CD}$.  
+   * *Toán & Sư phạm:* $\overrightarrow{AB} = \overrightarrow{DC}$ (cùng hướng, cùng độ dài); $\overrightarrow{AB} \ne \overrightarrow{CD}$ (ngược hướng). **PASS / PASS**.
+5. **`G10-B07-ZERO` (`THPT-G10-CHIV-TRY05`):**  
+   * *Nội dung:* Đi $A \rightarrow B \rightarrow A$. Vectơ độ dời là gì?  
+   * *Toán & Sư phạm:* $\overrightarrow{AA} = \vec0$, độ dài $0$; khác tổng quãng đường $2AB > 0$. **PASS / PASS**.
+
+##### BÀI 08: TỔNG VÀ HIỆU CỦA HAI VECTƠ
+6. **`G10-B08-TRIANGLE` (`THPT-G10-CHIV-TRY06`):**  
+   * *Nội dung:* Đi $3\text{ m}$ Đông ($A \rightarrow B$), $4\text{ m}$ Bắc ($B \rightarrow C$).  
+   * *Toán & Sư phạm:* Vectơ tổng $\overrightarrow{AC}$, độ dài $|\overrightarrow{AC}| = \sqrt{3^2+4^2} = 5\text{ m} \ne 7\text{ m}$. Quy tắc 3 điểm chuẩn xác. **PASS / PASS**.
+7. **`G10-B08-PARALLELOGRAM` (`THPT-G10-CHIV-TRY07`):**  
+   * *Nội dung:* Hai lực vuông góc $3\text{ N}$ và $4\text{ N}$ cùng tác dụng tại $A$.  
+   * *Toán & Sư phạm:* Hợp lực theo quy tắc hình bình hành có độ lớn $\sqrt{3^2+4^2} = 5\text{ N} \ne 7\text{ N}$. **PASS / PASS**.
+8. **`G10-B08-OPPOSITE-SUBTRACTION` (`THPT-G10-CHIV-TRY08`):**  
+   * *Nội dung:* Rút gọn $\overrightarrow{AB} - \overrightarrow{AC}$.  
+   * *Toán & Sư phạm:* $\overrightarrow{AB} - \overrightarrow{AC} = \overrightarrow{CA} + \overrightarrow{AB} = \overrightarrow{CB}$. Phép trừ vectơ đúng quy tắc hiệu. **PASS / PASS**.
+9. **`G10-B08-MIDPOINT` (`THPT-G10-CHIV-TRY09`):**  
+   * *Nội dung:* $M$ là trung điểm $AB$ ($A=0, B=8, M=4$). Biểu diễn $\overrightarrow{MA}, \overrightarrow{MB}$ theo $\vec e$.  
+   * *Toán & Sư phạm:* $\overrightarrow{MA} = -4\vec e, \overrightarrow{MB} = 4\vec e \implies \overrightarrow{MA} + \overrightarrow{MB} = \vec0$. **PASS / PASS**.
+10. **`G10-B08-CENTROID` (`THPT-G10-CHIV-TRY10`):**  
+    * *Nội dung:* $M$ trung điểm $BC$, $G$ trọng tâm $ABC$.  
+    * *Toán & Sư phạm:* $\overrightarrow{GA} = -2\overrightarrow{GM} \implies \overrightarrow{GA} + \overrightarrow{GB} + \overrightarrow{GC} = \vec0$. **PASS / PASS**.
+
+##### BÀI 09: TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ
+11. **`G10-B09-SCALAR_DEFINITION` (`THPT-G10-CHIV-TRY11`):**  
+    * *Nội dung:* Vectơ $0\vec u$ với $\vec u \ne \vec0$.  
+    * *Toán & Sư phạm:* $0\vec u = \vec0$, độ dài bằng $0$. **PASS / PASS**.
+12. **`G10-B09-LENGTH_DIRECTION` (`THPT-G10-CHIV-TRY12`):**  
+    * *Nội dung:* $\vec u$ dài $3\text{ m}$ Đông. Mô tả $-2\vec u$.  
+    * *Toán & Sư phạm:* Độ dài $|-2\vec u| = 2 \times 3 = 6\text{ m}$, hướng Tây (đổi chiều do $k=-2<0$). **PASS / PASS**.
+13. **`G10-B09-DISTRIBUTION` (`THPT-G10-CHIV-TRY13`):**  
+    * *Nội dung:* $\vec u$ $2\text{ m}$ Đông, $\vec v$ $1\text{ m}$ Bắc. Mô tả $2(\vec u + \vec v)$ và $2\vec u + 2\vec v$.  
+    * *Toán & Sư phạm:* Cả hai đều có thành phần $4\text{ m}$ Đông và $2\text{ m}$ Bắc. Tính chất phân phối nhân số với tổng vectơ. **PASS / PASS**.
+14. **`G10-B09-COLLINEAR` (`THPT-G10-CHIV-TRY14`):**  
+    * *Nội dung:* $\vec v = -3\vec u$ với $\vec u \ne \vec0$.  
+    * *Toán & Sư phạm:* Cùng phương, ngược hướng, $|\vec v|/|\vec u| = 3$. **PASS / PASS**.
+15. **`G10-B09-MIDPOINT_CENTROID` (`THPT-G10-CHIV-TRY15`):**  
+    * *Nội dung:* Tam giác $ABC$, trung tuyến $AM=9\text{ cm}$, trọng tâm $G$.  
+    * *Toán & Sư phạm:* $AG = 6\text{ cm}$, $\overrightarrow{AG} = \frac{2}{3}\overrightarrow{AM}$. **PASS / PASS**.
+
+##### BÀI 10: VECTƠ TRONG MẶT PHẲNG TỌA ĐỘ
+16. **`G10-B10-VECTOR_COORDS` (`THPT-G10-CHIV-TRY16`):**  
+    * *Nội dung:* $A(-3;2), B(2;-1)$. Tìm tọa độ $\overrightarrow{AB}, \overrightarrow{BA}$.  
+    * *Toán & Sư phạm:* $\overrightarrow{AB} = (2 - (-3); -1 - 2) = (5;-3)$; $\overrightarrow{BA} = (-5;3)$. **PASS / PASS**.
+17. **`G10-B10-OPERATIONS` (`THPT-G10-CHIV-TRY17`):**  
+    * *Nội dung:* $\vec u=(2;-1), \vec v=(-1;3)$. Tính $2\vec u - \vec v$.  
+    * *Toán & Sư phạm:* $2\vec u = (4;-2) \implies 2\vec u - \vec v = (4 - (-1); -2 - 3) = (5;-5)$. **PASS / PASS**.
+18. **`G10-B10-NORM_DISTANCE` (`THPT-G10-CHIV-TRY18`):**  
+    * *Nội dung:* $A(1;2), B(4;6)$. Khoảng cách $AB$.  
+    * *Toán & Sư phạm:* $\overrightarrow{AB} = (3;4) \implies AB = \sqrt{3^2+4^2} = 5 \ne 7$. **PASS / PASS**.
+19. **`G10-B10-COLLINEAR_COORDS` (`THPT-G10-CHIV-TRY19`):**  
+    * *Nội dung:* $\vec u=(2;1), \vec v=(6;3), \vec w=(6;4)$. Vectơ nào cùng phương với $\vec u$?  
+    * *Toán & Sư phạm:* Chỉ $\vec v$ cùng phương với $\vec u$ ($\vec v = 3\vec u$); $\vec w$ có $6/2 = 3 \ne 4/1 = 4$. **PASS / PASS**.
+20. **`G10-B10-MIDPOINT_CENTROID` (`THPT-G10-CHIV-TRY20`):**  
+    * *Nội dung:* $A(-2;4), B(4;0), C(1;5)$. Tìm trung điểm $M$ của $AB$ và trọng tâm $G$ của $ABC$.  
+    * *Toán & Sư phạm:* $M = \left(\frac{-2+4}{2}; \frac{4+0}{2}\right) = (1;2)$; $G = \left(\frac{-2+4+1}{3}; \frac{4+0+5}{3}\right) = (1;3)$. **PASS / PASS**.
+
+##### BÀI 11: TÍCH VÔ HƯỚNG CỦA HAI VECTƠ
+21. **`G10-B11-GEOMETRIC_DOT` (`THPT-G10-CHIV-TRY21`):**  
+    * *Nội dung:* $|\vec u|=2, |\vec v|=3$, góc giữa hai vectơ $120^\circ$. Tính $\vec u \cdot \vec v$.  
+    * *Toán & Sư phạm:* $\vec u \cdot \vec v = 2 \cdot 3 \cdot \cos 120^\circ = 6 \cdot (-1/2) = -3 < 0$. **PASS / PASS**.
+22. **`G10-B11-COORDINATE_DOT` (`THPT-G10-CHIV-TRY22`):**  
+    * *Nội dung:* $\vec u=(2;-1), \vec v=(3;4)$. Tính $\vec u \cdot \vec v$.  
+    * *Toán & Sư phạm:* $\vec u \cdot \vec v = 2(3) + (-1)(4) = 6 - 4 = 2$. Kết quả là một số thực. **PASS / PASS**.
+23. **`G10-B11-PERPENDICULAR` (`THPT-G10-CHIV-TRY23`):**  
+    * *Nội dung:* $\vec u=(2;3), \vec v=(3;-2)$. Chúng có vuông góc không?  
+    * *Toán & Sư phạm:* $\vec u \cdot \vec v = 2(3) + 3(-2) = 0$; do $\vec u, \vec v \ne \vec0 \implies \vec u \perp \vec v$. **PASS / PASS**.
+24. **`G10-B11-APPLICATION` (`THPT-G10-CHIV-TRY24`):**  
+    * *Nội dung:* Lực $10\text{ N}$ Đông, độ dời $3\text{ m}$ Tây. Tính công $W$. Nếu vuông góc thì sao?  
+    * *Toán & Sư phạm:* Ngược hướng ($\theta=180^\circ$): $W = 10 \cdot 3 \cdot \cos 180^\circ = -30\text{ J}$; Vuông góc ($\theta=90^\circ$): $W = 0\text{ J}$. **PASS / PASS**.
+
+---
+
+### 4. BẢNG MÃ ÁNH XẠ CHUẨN OFFICIAL Q01–Q18 (SLM-THPT-QUALITY-ONE v1.2.0)
+
+| Mã Q | Tên & Nội hàm Chuẩn v1.2.0 | Kết quả | Chứng cứ Audit chi tiết gói ChIV Delta C R02 |
+| :--- | :--- | :--- | :--- |
+| **Q01** | S1/Scope — SGK Core, nguồn và phạm vi | **PASS** | Khóa đúng S1 Toán 10 Tập 1 (Bài 7–11 pp. 46–77). |
+| **Q02** | Outcomes — Đủ kết quả học tập cho bài | **PASS** | Đủ 24/24 outcomes thuộc 5 bài, phủ 100% kĩ năng Chương IV. |
+| **Q03** | D1 — Lý thuyết, bản chất, điều kiện | **PASS** | Bổ sung lớp MEANING giải thích bản chất hình học/tọa độ/tích vô hướng trước công thức. |
+| **Q04** | D2 — Ví dụ mẫu có suy luận, điều kiện | **PASS** | Kế thừa đầy đủ các ví dụ D2 R01 đã PASS trong snapshot lịch sử. |
+| **Q05** | D3 — Core/Practice/Application có độ sâu | **PASS** | Kế thừa 45 canonical items D3 R01 đã PASS, không sửa nội dung cũ. |
+| **Q06** | D4 — Written/Anchor và rubric một thư viện | **PASS** | Kế thừa các bài Written/Anchor R01 cùng rubric đã duyệt. |
+| **Q07** | D5 — Hình, SVG, bảng và hướng dẫn hiểu hình | **PASS** | Kế thừa 5 sơ đồ SVG R01 (`FIG-G10-B07-01` đến `FIG-G10-B11-01`) kèm hướng dẫn PED4. |
+| **Q08** | D6 — HELP và đường khắc phục | **PASS** | Kế thừa 10 thẻ HELP D6 R01, trỏ rõ đường tự sửa sau khi học sinh làm thử. |
+| **Q09** | PED1 — Lý do cần học trước kỹ thuật (WHY) | **PASS** | 24/24 outcome có lý do học sinh động (độ dời, lực kéo, bản đồ, công cơ học). |
+| **Q10** | PED2 — Kiến thức tiền đề (PRE) | **PASS** | 24/24 outcome tái hiện chính xác kiến thức nền tảng cần nhớ. |
+| **Q11** | PED3 — Hình thành bản chất trước công thức | **PASS** | 24/24 outcome diễn giải trực giác bản chất vectơ/tọa độ/tích vô hướng trước quy tắc. |
+| **Q12** | PED4 — Hướng dẫn đọc hình (READING_VISUAL) | **PASS** | Hướng dẫn đọc hình trực quan cho sơ đồ vectơ, tam giác, hình bình hành và Oxy. |
+| **Q13** | PED5 — Vì sao chọn phương pháp (METHOD) | **PASS** | 24/24 outcome giải thích tư duy chọn phương pháp giải, tránh học vẹt. |
+| **Q14** | PED6 — Tự thử trước Core, tự mở lời giải (FIRST_TRY) | **PASS** | 24/24 câu First Try (`THPT-G10-CHIV-TRY01..24`) đặt trước Core, đáp án ẩn sau fold. |
+| **Q15** | Canonical item bank, ID/placement/role | **PASS** | 24 item_id canonical duy nhất (`THPT-G10-CHIV-TRY01..24`), placement `SGK_PRE_CORE_FIRST_TRY`. |
+| **Q16** | An toàn đánh giá/exposure, unscored diagnostic | **PASS** | Đánh giá chẩn đoán công khai không tính điểm, không cộng Mastery, không lộ đề kín. |
+| **Q17** | Hai hành trình SGK và Chuyên đề độc lập | **PASS** | Đánh giá độc lập trên nhánh `SGK_CHAPTER`, không giả định PASS Chuyên đề. |
+| **Q18** | Review độc lập & Snapshot Provenance | **PASS** | Xác nhận nội dung học thuật trên mounted snapshot đạt độ chính xác 100%. |
+
+---
+
+### 5. TỔNG HỢP PHÁN QUYẾT CHÍNH THỨC VÀ RỜI TỎA GIỚI HẠN
+
+* **`ACADEMIC_VERDICT_NEW`:** **`PASS`** (Nội dung toán học đạt độ chính xác 100%)
+* **`PEDAGOGICAL_VERDICT_NEW`:** **`PASS`** (Nội dung sư phạm PED1–PED6 đạt chuẩn 100%)
+* **MỨC ĐỘ SỬA ĐỔI:** **`P0 = 0`**, **`P1 = 0`**, **`P2 = 0`**
+* **`MINIMAL_DELTA`:** **`0 REVISIONS REQUIRED`** (Không yêu cầu sửa đổi nội dung toán học)
+* **`DELTA_CLASS`:** `DELTA_C_ACADEMIC_MATERIAL`
+
+#### Giới hạn Thẩm quyền Hệ thống (System Safety Limits)
+* **`CONTENT_READY`:** **`NO`**
+* **`RELEASE_AUTHORIZATION`:** **`NO`**
+* **`MASTERY_ACTIVATION`:** **`NO`**
+* **`PRIVATE_RD1_COUNT_NEW`:** **`0`**
+
+---
+*(Báo cáo kiểm toán chi tiết đầy đủ đã được xuất bản và đồng bộ chính thức tại Studio panel với tên tệp: `Bao_Cao_Kiem_Toan_Toan_10_Chuong_IV_PED_R02_20261105.md`).*
