@@ -4,206 +4,300 @@
     "role": "TOPIC_PRACTICE",
     "order": 1,
     "item_id": "THPT-TOP20-P01",
-    "outcome_id": "TOP20-O01"
+    "outcome_id": "TOP20-O01",
+    "legacy_order": 1,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 2,
     "item_id": "THPT-TOP20-P02",
-    "outcome_id": "TOP20-O02"
+    "outcome_id": "TOP20-O02",
+    "legacy_order": 2,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 3,
     "item_id": "THPT-TOP20-P03",
-    "outcome_id": "TOP20-O03"
+    "outcome_id": "TOP20-O03",
+    "legacy_order": 3,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 4,
     "item_id": "THPT-TOP20-P04",
-    "outcome_id": "TOP20-O04"
+    "outcome_id": "TOP20-O04",
+    "legacy_order": 4,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 5,
     "item_id": "THPT-TOP20-P05",
-    "outcome_id": "TOP20-O05"
+    "outcome_id": "TOP20-O05",
+    "legacy_order": 5,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 6,
     "item_id": "THPT-TOP20-P06",
-    "outcome_id": "TOP20-O06"
+    "outcome_id": "TOP20-O06",
+    "legacy_order": 6,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 7,
     "item_id": "THPT-TOP20-P07",
-    "outcome_id": "TOP20-O07"
+    "outcome_id": "TOP20-O07",
+    "legacy_order": 7,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 8,
     "item_id": "THPT-TOP20-P08",
-    "outcome_id": "TOP20-O08"
+    "outcome_id": "TOP20-O08",
+    "legacy_order": 8,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 9,
     "item_id": "THPT-TOP20-P09",
-    "outcome_id": "TOP20-O09"
+    "outcome_id": "TOP20-O09",
+    "legacy_order": 9,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 10,
     "item_id": "THPT-TOP20-P10",
-    "outcome_id": "TOP20-O10"
+    "outcome_id": "TOP20-O10",
+    "legacy_order": 10,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 11,
     "item_id": "THPT-TOP20-P11",
-    "outcome_id": "TOP20-O11"
+    "outcome_id": "TOP20-O11",
+    "legacy_order": 11,
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 12,
     "item_id": "THPT-TOP20-P12",
-    "outcome_id": "TOP20-O12"
+    "outcome_id": "TOP20-O12",
+    "legacy_order": 12,
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 13,
     "item_id": "THPT-TOP20-P13",
-    "outcome_id": "TOP20-O13"
+    "outcome_id": "TOP20-O13",
+    "legacy_order": 13,
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 14,
     "item_id": "THPT-TOP20-P14",
-    "outcome_id": "TOP20-O14"
+    "outcome_id": "TOP20-O14",
+    "legacy_order": 14,
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 15,
     "item_id": "THPT-TOP20-P15",
-    "outcome_id": "TOP20-O15"
+    "outcome_id": "TOP20-O15",
+    "legacy_order": 15,
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 16,
     "item_id": "THPT-TOP20-P16",
-    "outcome_id": "TOP20-O16"
+    "outcome_id": "TOP20-O16",
+    "legacy_order": 16,
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 17,
     "item_id": "THPT-TOP20-P17",
-    "outcome_id": "TOP20-O17"
+    "outcome_id": "TOP20-O17",
+    "legacy_order": 17,
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 18,
     "item_id": "THPT-TOP20-W01",
-    "outcome_id": "TOP20-O08"
+    "outcome_id": "TOP20-O08",
+    "legacy_order": 18,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 19,
     "item_id": "THPT-TOP20-W02",
-    "outcome_id": "TOP20-O14"
+    "outcome_id": "TOP20-O14",
+    "legacy_order": 19,
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 20,
     "item_id": "THPT-TOP20-W03",
-    "outcome_id": "TOP20-O17"
-  },
-  {
-    "collection": "TOPIC:CD20:SELF_CHECK",
-    "role": "PUBLIC_REPLAY_ONLY",
-    "order": 1,
-    "item_id": "THPT-TOP20-P01"
-  },
-  {
-    "collection": "TOPIC:CD20:SELF_CHECK",
-    "role": "PUBLIC_REPLAY_ONLY",
-    "order": 2,
-    "item_id": "THPT-TOP20-P03"
-  },
-  {
-    "collection": "TOPIC:CD20:SELF_CHECK",
-    "role": "PUBLIC_REPLAY_ONLY",
-    "order": 3,
-    "item_id": "THPT-TOP20-P04"
-  },
-  {
-    "collection": "TOPIC:CD20:SELF_CHECK",
-    "role": "PUBLIC_REPLAY_ONLY",
-    "order": 4,
-    "item_id": "THPT-TOP20-P07"
-  },
-  {
-    "collection": "TOPIC:CD20:SELF_CHECK",
-    "role": "PUBLIC_REPLAY_ONLY",
-    "order": 5,
-    "item_id": "THPT-TOP20-P08"
-  },
-  {
-    "collection": "TOPIC:CD20:SELF_CHECK",
-    "role": "PUBLIC_REPLAY_ONLY",
-    "order": 6,
-    "item_id": "THPT-TOP20-P10"
-  },
-  {
-    "collection": "TOPIC:CD20:SELF_CHECK",
-    "role": "PUBLIC_REPLAY_ONLY",
-    "order": 7,
-    "item_id": "THPT-TOP20-P11"
-  },
-  {
-    "collection": "TOPIC:CD20:SELF_CHECK",
-    "role": "PUBLIC_REPLAY_ONLY",
-    "order": 8,
-    "item_id": "THPT-TOP20-P13"
-  },
-  {
-    "collection": "TOPIC:CD20:SELF_CHECK",
-    "role": "PUBLIC_REPLAY_ONLY",
-    "order": 9,
-    "item_id": "THPT-TOP20-P14"
-  },
-  {
-    "collection": "TOPIC:CD20:SELF_CHECK",
-    "role": "PUBLIC_REPLAY_ONLY",
-    "order": 10,
-    "item_id": "THPT-TOP20-P16"
-  },
-  {
-    "collection": "TOPIC:CD20:SELF_CHECK",
-    "role": "PUBLIC_REPLAY_ONLY",
-    "order": 11,
-    "item_id": "THPT-TOP20-P17"
+    "outcome_id": "TOP20-O17",
+    "legacy_order": 20,
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
@@ -211,7 +305,15 @@
     "order": 21,
     "item_id": "THPT-G10-B26-P05",
     "outcome_id": "TOP20-O03",
-    "optional": true
+    "optional": true,
+    "legacy_order": 21,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
@@ -219,7 +321,15 @@
     "order": 22,
     "item_id": "THPT-G10-B27-P05",
     "outcome_id": "TOP20-O06",
-    "optional": true
+    "optional": true,
+    "legacy_order": 22,
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
@@ -227,7 +337,15 @@
     "order": 23,
     "item_id": "THPT-G11-CHVIII-B29-P02",
     "outcome_id": "TOP20-O15",
-    "optional": true
+    "optional": true,
+    "legacy_order": 23,
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
@@ -235,7 +353,15 @@
     "order": 24,
     "item_id": "THPT-G11-CHVIII-B29-P04",
     "outcome_id": "TOP20-O14",
-    "optional": true
+    "optional": true,
+    "legacy_order": 24,
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD20:PRACTICE",
@@ -243,6 +369,460 @@
     "order": 25,
     "item_id": "THPT-G11-CHVIII-B30-P07",
     "outcome_id": "TOP20-O16",
-    "optional": true
+    "optional": true,
+    "legacy_order": 25,
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 26,
+    "item_id": "THPT-G10-B26-C01",
+    "outcome_id": "TOP20-O01",
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 27,
+    "item_id": "THPT-G11-CHVIII-B28-C02",
+    "outcome_id": "TOP20-O02",
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 28,
+    "item_id": "THPT-G10-B26-P01",
+    "outcome_id": "TOP20-O04",
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 29,
+    "item_id": "THPT-G10-B26-P04",
+    "outcome_id": "TOP20-O05",
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 30,
+    "item_id": "THPT-G10-B27-P01",
+    "outcome_id": "TOP20-O07",
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 31,
+    "item_id": "THPT-G10-B27-P02",
+    "outcome_id": "TOP20-O08",
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 32,
+    "item_id": "THPT-G10-B27-C01",
+    "outcome_id": "TOP20-O09",
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 33,
+    "item_id": "THPT-G10-B27-P03",
+    "outcome_id": "TOP20-O10",
+    "group_id": "TOP20-G1",
+    "group_title": "Xác suất cổ điển",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 34,
+    "item_id": "THPT-G11-CHVIII-B28-P01",
+    "outcome_id": "TOP20-O11",
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 35,
+    "item_id": "THPT-G11-CHVIII-B30-C01",
+    "outcome_id": "TOP20-O12",
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 36,
+    "item_id": "THPT-G11-CHVIII-B28-P04",
+    "outcome_id": "TOP20-O13",
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 37,
+    "item_id": "THPT-G11-CHVIII-CHVIII-P01",
+    "outcome_id": "TOP20-O17",
+    "group_id": "TOP20-G2",
+    "group_title": "Các quy tắc tính xác suất",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 1,
+    "item_id": "THPT-TOP20-P01",
+    "outcome_id": "TOP20-O01",
+    "legacy_order": 1,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 2,
+    "item_id": "THPT-TOP20-P02",
+    "outcome_id": "TOP20-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 3,
+    "item_id": "THPT-TOP20-P03",
+    "outcome_id": "TOP20-O03",
+    "legacy_order": 2,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 4,
+    "item_id": "THPT-TOP20-P04",
+    "outcome_id": "TOP20-O04",
+    "legacy_order": 3,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 5,
+    "item_id": "THPT-TOP20-P05",
+    "outcome_id": "TOP20-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 6,
+    "item_id": "THPT-TOP20-P06",
+    "outcome_id": "TOP20-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 7,
+    "item_id": "THPT-TOP20-P07",
+    "outcome_id": "TOP20-O07",
+    "legacy_order": 4,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 8,
+    "item_id": "THPT-TOP20-P08",
+    "outcome_id": "TOP20-O08",
+    "legacy_order": 5,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 9,
+    "item_id": "THPT-TOP20-P09",
+    "outcome_id": "TOP20-O09",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 10,
+    "item_id": "THPT-TOP20-P10",
+    "outcome_id": "TOP20-O10",
+    "legacy_order": 6,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 11,
+    "item_id": "THPT-TOP20-P11",
+    "outcome_id": "TOP20-O11",
+    "legacy_order": 7,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 12,
+    "item_id": "THPT-TOP20-P12",
+    "outcome_id": "TOP20-O12",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 13,
+    "item_id": "THPT-TOP20-P13",
+    "outcome_id": "TOP20-O13",
+    "legacy_order": 8,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 14,
+    "item_id": "THPT-TOP20-P14",
+    "outcome_id": "TOP20-O14",
+    "legacy_order": 9,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 15,
+    "item_id": "THPT-TOP20-P15",
+    "outcome_id": "TOP20-O15",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 16,
+    "item_id": "THPT-TOP20-P16",
+    "outcome_id": "TOP20-O16",
+    "legacy_order": 10,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 17,
+    "item_id": "THPT-TOP20-P17",
+    "outcome_id": "TOP20-O17",
+    "legacy_order": 11,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   }
 ]
