@@ -960,11 +960,11 @@
     "skill_ids": [
       "FUNCTION_MAPPING",
       "FUNCTION_DOMAIN",
-      "B15_OUT_03"
+      "FUNCTION_GRAPH_MEMBERSHIP"
     ],
     "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-HPT-G10-CHVI-WRI-15-01",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
-    "skill_mapping_status": "EXISTING_PLACEMENT_OUTCOME_ID_PENDING_SKILL_CROSSWALK"
+    "skill_mapping_status": "SOURCE_EQUIVALENT_CANONICAL_SKILL_VERIFIED"
   },
   {
     "item_id": "HPT-G10-CHVI-WRI-15-02",
