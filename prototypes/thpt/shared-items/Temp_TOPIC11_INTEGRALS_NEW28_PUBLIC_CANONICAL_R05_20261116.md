@@ -402,17 +402,19 @@ content_version: 2
 **Đáp án:** \(A(x)=(x+2)^2\) cm²; \(V=\frac{56}{3}\) cm³.
 
 **Lời giải:** Mỗi lát cắt là hình vuông có cạnh \(x+2\), nên diện tích \(A(x)=(x+2)^2=x^2+4x+4\) cm². Thể tích bằng tích phân diện tích theo chiều dài:
+
 \[
-V=\int_0^2(x+2)^2\,dx
+V=\int_0^2(x+2)^2\,\mathrm dx
 =\left[\frac{x^3}{3}+2x^2+4x\right]_0^2
 =\frac83+8+8=\frac{56}{3}\ \mathrm{cm^3}.
 \]
+
 Có thể kiểm bằng nguyên hàm \(\frac{(x+2)^3}{3}\), cho \((64-8)/3=56/3\). Không nhân \(\pi\), vì mặt cắt vuông có diện tích \(s^2\), không phải diện tích hình tròn \(\pi r^2\).
 
 **Rubric /7:**
 1. Xác định cận và đơn vị chiều dài (1 điểm).
-2. Viết đúng diện tích hình vuông (1 điểm).
-3. Biểu diễn chính xác hàm diện tích (1 điểm).
+2. Nêu công thức diện tích hình vuông bằng bình phương độ dài cạnh (1 điểm).
+3. Thay độ dài cạnh đã cho để biểu diễn đúng hàm diện tích theo x (1 điểm).
 4. Lập tích phân đúng cận (1 điểm).
 5. Tìm nguyên hàm đúng (1 điểm).
 6. Tính thể tích và đơn vị (1 điểm).
