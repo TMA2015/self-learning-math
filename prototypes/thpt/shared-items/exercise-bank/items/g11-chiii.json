@@ -1542,21 +1542,27 @@
   },
   {
     "item_id": "THPT-G11-B09-KFT01",
-    "content_version": "SOURCE_BLOB_46aa17f758783330c2b396f9ed36a25ab77a4094_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với các nhóm [0;10), [10;20), [20;30), [30;40) có tần số lần lượt 4, 8, 6, 2, tổng có bao nhiêu quan sát? Quan sát thứ 10 trong dãy số liệu đã sắp xếp tăng dần thuộc nhóm nào?",
-    "answer_key": "20 quan sát; vị trí thứ 10 thuộc nhóm [10;20).",
-    "worked_solution": "Tổng số quan sát là 4+8+6+2=20. Tần số tích lũy lần lượt là 4, 12, 18, 20: nhóm đầu chứa các vị trí 1–4, nhóm thứ hai chứa các vị trí 5–12. Vì 5≤10≤12, quan sát thứ 10 thuộc nhóm [10;20). Chưa thể biết chính xác giá trị quan sát từ bảng ghép nhóm. Nếu chưa chắc, xem lại phần tích lũy và luyện THPT-G11-B09-C03.",
+    "content_version": "SGK-G11-CHIII-BANK-CANDIDATE-20261127-THPT-G11-B09-KFT01",
+    "stem": "Với các nhóm [0;10), [10;20), [20;30), [30;40) có tần số lần lượt 4, 8, 6, 2, tổng có bao nhiêu quan sát? Quan sát thứ 10 trong dãy số liệu đã sắp xếp tăng dần thuộc nhóm nào? Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "20 quan sát; nhóm \\([10;20)\\).",
+    "worked_solution": "Tổng số quan sát là \\(4+8+6+2=20\\). Tần số tích lũy lần lượt là 4, 12, 18, 20. Nhóm thứ hai chứa các vị trí từ 5 đến 12, nên quan sát thứ 10 thuộc nhóm \\([10;20)\\). Chưa thể biết chính xác giá trị của quan sát này.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B09-CUMULATIVE"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Cộng các tần số, sau đó xét khoảng vị trí của từng nhóm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1578,6 +1584,25 @@
       "distinct_task_reason": "C04 same grouped data and median class, source also asks total n and explicit position 10. Linked C03 uses different frequencies."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "20 quan sát; nhóm \\([0;10)\\)."
+      },
+      {
+        "id": "B",
+        "text": "20 quan sát; nhóm \\([10;20)\\)."
+      },
+      {
+        "id": "C",
+        "text": "20 quan sát; nhóm \\([20;30)\\)."
+      },
+      {
+        "id": "D",
+        "text": "18 quan sát; nhóm \\([10;20)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
