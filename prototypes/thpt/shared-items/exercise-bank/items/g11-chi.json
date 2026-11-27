@@ -715,16 +715,17 @@
   {
     "item_id": "THPT-G11-B03-P04",
     "content_version": "THPT-G11-CHI-B03-B04-R01",
-    "stem": "Hàm \\(y=\\sin x\\) đồng biến trên đoạn nào: \\([-\\frac\\pi2;\\frac\\pi2]\\) hay \\([0;\\pi]\\)?",
-    "answer_key": "\\([-\\frac\\pi2;\\frac\\pi2]\\).",
-    "worked_solution": "Theo đồ thị sin, khi x tăng từ \\(-\\frac\\pi2\\) đến \\(\\frac\\pi2\\), giá trị sin tăng từ −1 đến 1. Trên \\([0;\\pi]\\), sin tăng đến 1 tại \\(\\frac\\pi2\\) rồi giảm đến 0. Vậy chọn đoạn thứ nhất.",
+    "stem": "Xét đồ thị hàm số \\(y=\\sin x\\) trên đoạn \\([0;\\frac{5\\pi}{2}]\\). (a) Chia đoạn đã cho thành các đoạn đồng biến hoặc nghịch biến dài nhất. (b) So sánh \\(\\sin\\frac{3\\pi}{4}\\) với \\(\\sin\\frac{5\\pi}{4}\\) dựa vào tính biến thiên. (c) Một bạn nói hàm đồng biến trên cả đoạn \\([0;\\frac{5\\pi}{2}]\\) vì giá trị ở đầu trái bằng 0, ở đầu phải bằng 1. Giải thích sai lầm.",
+    "answer_key": "Đồng biến trên \\([0;\\frac\\pi2]\\), \\([\\frac{3\\pi}{2};\\frac{5\\pi}{2}]\\); nghịch biến trên \\([\\frac\\pi2;\\frac{3\\pi}{2}]\\). \\(\\sin\\frac{3\\pi}{4}>\\sin\\frac{5\\pi}{4}\\). So sánh hai đầu mút không chứng minh đồng biến toàn đoạn.",
+    "worked_solution": "Trên đồ thị sin, nhánh đi lên từ \\(x=-\\frac\\pi2\\) đến \\(x=\\frac\\pi2\\), nhánh đi xuống từ \\(x=\\frac\\pi2\\) đến \\(x=\\frac{3\\pi}{2}\\); nhánh đi lên tiếp theo kéo dài từ \\(\\frac{3\\pi}{2}\\) đến \\(\\frac{5\\pi}{2}\\). Giữ phần nằm trong đoạn đề bài, ta được ba đoạn liên tiếp như đáp án. Không thể kéo dài một đoạn qua điểm đổi chiều mà vẫn giữ tính đơn điệu. Hai góc \\(\\frac{3\\pi}{4}<\\frac{5\\pi}{4}\\) đều thuộc nhánh nghịch biến \\([\\frac\\pi2;\\frac{3\\pi}{2}]\\), nên giá trị sin tại góc thứ nhất lớn hơn. Để bác bỏ nhận xét ở (c), chọn \\(x_1=\\frac\\pi2<x_2=\\pi\\), nhưng \\(\\sin x_1=1>0=\\sin x_2\\). Tính đồng biến đòi hỏi thứ tự giá trị đúng với mọi cặp điểm có thứ tự, không chỉ hai đầu mút.",
     "skill_ids": [
       "G11-B03-SIN_GRAPH"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc một nhánh tăng trọn vẹn của đồ thị sin."
+      "Tìm các điểm đồ thị sin đổi chiều trong đoạn đã cho.",
+      "Để bác bỏ tính đồng biến, chỉ cần một cặp hoành độ tăng mà giá trị giảm."
     ],
     "rubric": null,
     "interaction": {
@@ -741,7 +742,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn \\([0;\\pi]\\), kiểm \\(\\sin\\frac\\pi2=1\\) nhưng \\(\\sin\\pi=0\\). Ôn TOP06-M10; luyện THPT-TOP06-P10."
+    "remediation": "Không suy tính đơn điệu chỉ từ giá trị hai đầu mút. Xác định từng nhánh tăng, giảm của đồ thị sin và giao với miền xét. Ôn TOP06-M10; luyện THPT-TOP06-P10."
   },
   {
     "item_id": "THPT-G11-B03-P05",
