@@ -1,8 +1,8 @@
 [
   {
     "item_id": "THPT-G10-B15-R01",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Bảng có các cặp `(1;4),(2;5),(2;5)`. Đây có phải quan hệ hàm số `y` của `x` không? Tập xác định là gì?",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B15-R01",
+    "stem": "Bảng có các cặp `(1;4),(2;5),(2;5)`. Đây có phải quan hệ hàm số `y` của `x` không? Tập xác định là gì? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "Có; `D={1;2}`.",
     "worked_solution": "Giá trị đầu vào `2` lặp lại nhưng đều có đầu ra `5`, nên mỗi đầu vào có đúng một đầu ra. `D` gồm các giá trị `x` phân biệt.",
     "skill_ids": [
@@ -11,11 +11,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Một đầu vào có thể lặp nếu đầu ra không đổi."
+    ],
     "rubric": "- Xác định đúng việc đầu vào 2 lặp lại nhưng không mâu thuẫn (1đ)\n- Kết luận đây là hàm số y theo x (1đ)\n- Nêu tập các đầu vào phân biệt {1,2} (1đ)\n- Lý giải tiêu chuẩn mỗi x ứng với đúng một y (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -40,12 +46,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; \\(D=\\{1,2\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "Không vì x=2 lặp lại."
+      },
+      {
+        "id": "C",
+        "text": "Có; \\(D=\\{4,5\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "Có; \\(D=\\mathbb R\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B15-R02",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Với hàm `F(x)=7x` trên `0≤x≤2` và `F(x)=14+3(x−2)` khi `x>2`, tính `F(4)` (đơn vị tùy ý).",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B15-R02",
+    "stem": "Với hàm `F(x)=7x` trên `0≤x≤2` và `F(x)=14+3(x−2)` khi `x>2`, tính `F(4)` (đơn vị tùy ý). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`20`.",
     "worked_solution": "`4>2`, nên `F(4)=14+3·2=20`.",
     "skill_ids": [
@@ -53,11 +78,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng nhánh x>2, chỉ tính thêm phần vượt 2."
+    ],
     "rubric": "- Chọn đúng nhánh x>2 vì x=4 (1đ)\n- Thiết lập F(4)=14+3(4−2) (1đ)\n- Tính đúng F(4)=20 (1đ)\n- Nêu kết quả theo đơn vị đề bài hoặc giải thích vì sao không dùng nhánh 0≤x≤2 (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -82,12 +113,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "28"
+      },
+      {
+        "id": "B",
+        "text": "20"
+      },
+      {
+        "id": "C",
+        "text": "26"
+      },
+      {
+        "id": "D",
+        "text": "14"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B15-R03",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Hàm `h(x)=−2x+4` đồng biến hay nghịch biến trên `ℝ`? Vì sao?",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B15-R03",
+    "stem": "Hàm `h(x)=−2x+4` đồng biến hay nghịch biến trên `ℝ`? Vì sao? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "Nghịch biến toàn `ℝ`.",
     "worked_solution": "Khi `x₁<x₂`, `h(x₁)−h(x₂)=−2(x₁−x₂)>0`.",
     "skill_ids": [
@@ -95,11 +145,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "So hiệu h(x2)−h(x1) khi x2>x1."
+    ],
     "rubric": "- Xác định hàm xác định trên ℝ (1đ)\n- Chỉ ra hệ số góc −2<0 hoặc lập so sánh hai điểm (1đ)\n- Kết luận nghịch biến trên toàn ℝ (1đ)\n- Lập luận đúng h(x₁)>h(x₂) khi x₁<x₂ hoặc giải thích ý nghĩa hệ số âm (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -124,22 +180,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đồng biến vì hệ số tự do dương."
+      },
+      {
+        "id": "B",
+        "text": "Nghịch biến chỉ khi x>2."
+      },
+      {
+        "id": "C",
+        "text": "Nghịch biến trên \\(\\mathbb R\\) vì hệ số x âm."
+      },
+      {
+        "id": "D",
+        "text": "Hàm hằng vì hệ số x không đổi."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B15-R04",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Với đồ thị hàm `y=x²−x−6`, hai điểm `P(2;−4)` và `Q(−1;−5)` có thuộc đồ thị không?",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B15-R04",
+    "stem": "Với đồ thị hàm `y=x²−x−6`, hai điểm `P(2;−4)` và `Q(−1;−5)` có thuộc đồ thị không? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`P` thuộc, `Q` không thuộc.",
     "worked_solution": "`f(2)=4−2−6=−4`; `f(−1)=1+1−6=−4≠−5`.",
-    "skill_ids": [],
+    "skill_ids": [
+      "B15_OUT_03"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Thay từng hoành độ, so với tung độ."
+    ],
     "rubric": "- Thế x=2 được f(2)=−4 (1đ)\n- Khẳng định P(2,−4) thuộc đồ thị (1đ)\n- Thế x=−1 được f(−1)=−4 (1đ)\n- So sánh −4≠−5 và kết luận Q(−1,−5) không thuộc (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -164,12 +247,32 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả P và Q thuộc vì hai giá trị f bằng nhau."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ Q thuộc vì f(−1)=−5."
+      },
+      {
+        "id": "C",
+        "text": "Không điểm nào thuộc vì f(2)=−6."
+      },
+      {
+        "id": "D",
+        "text": "Chỉ P thuộc; f(2)=−4, f(−1)=−4 khác −5."
+      }
+    ],
+    "skill_mapping_status": "EXISTING_PLACEMENT_OUTCOME_ID_PENDING_SKILL_CROSSWALK",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B15-R05",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Tìm tập xác định trong số thực của `f(x)=√(9−3x)/(x+1)`.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B15-R05",
+    "stem": "Tìm tập xác định trong số thực của `f(x)=√(9−3x)/(x+1)`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`D=(−∞;3]\\{−1}`.",
     "worked_solution": "Căn đòi `9−3x≥0 ↔ x≤3`; mẫu `x+1≠0 ↔ x≠−1`; lấy giao hai điều kiện.",
     "skill_ids": [
@@ -177,11 +280,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Giao điều kiện dưới căn không âm và mẫu khác 0."
+    ],
     "rubric": "- Viết điều kiện căn 9−3x≥0 (1đ)\n- Rút ra x≤3 (1đ)\n- Viết điều kiện mẫu x+1≠0, tức x≠−1 (1đ)\n- Lấy giao và biểu diễn D=(−∞,3]∖{−1} (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -206,12 +315,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((-\\infty;3]\\setminus\\{-1\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((-\\infty;3]\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-\\infty;3)\\setminus\\{-1\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\([3;+\\infty)\\setminus\\{-1\\}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B16-R01",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Cho `f(x)=2x²−12x+11`. Tìm tọa độ đỉnh, trục đối xứng, GTNN và tập giá trị.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B16-R01",
+    "stem": "Cho `f(x)=2x²−12x+11`. Tìm tọa độ đỉnh, trục đối xứng, GTNN và tập giá trị. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`I(3;−7)`, trục `x=3`, GTNN `−7`, `T=[−7;+∞)`.",
     "worked_solution": "`f(x)=2(x−3)²−7`; hệ số trước bình phương dương.",
     "skill_ids": [
@@ -220,11 +348,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Hoàn thành bình phương hoặc dùng hoành độ đỉnh."
+    ],
     "rubric": "- Biến đổi đúng f(x)=2(x−3)²−7 (1đ)\n- Tìm đúng đỉnh I(3,−7) (1đ)\n- Xác định trục x=3 (1đ)\n- Nêu GTNN=−7 và tập giá trị [−7,+∞) vì a>0 (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -249,12 +383,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "I(-3;-7), trục x=−3, GTNN −7; \\(T=[-7;+\\infty)\\)."
+      },
+      {
+        "id": "B",
+        "text": "I(3;-7), trục x=3, GTNN −7; \\(T=[-7;+\\infty)\\)."
+      },
+      {
+        "id": "C",
+        "text": "I(3;7), trục x=3, GTNN 7; \\(T=[7;+\\infty)\\)."
+      },
+      {
+        "id": "D",
+        "text": "I(3;-7), trục x=3, GTLN −7; \\(T=(-\\infty;-7]\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B16-R02",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Với `y=−x²+4x+5`, xác định đỉnh/trục và các điểm cắt `Ox,Oy`; mô tả chiều mở của parabol.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B16-R02",
+    "stem": "Với `y=−x²+4x+5`, xác định đỉnh/trục và các điểm cắt `Ox,Oy`; mô tả chiều mở của parabol. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`I(2;9)`, trục `x=2`, cắt `Ox` tại `(-1;0)` và `(5;0)`, cắt `Oy` tại `(0;5)`, parabol mở xuống.",
     "worked_solution": "`y=−(x−2)²+9=−(x+1)(x−5)`.",
     "skill_ids": [
@@ -263,11 +416,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm đỉnh, cho y=0 và x=0; xét dấu hệ số bậc hai."
+    ],
     "rubric": "- Tìm đỉnh I(2,9) (1đ)\n- Xác định trục đối xứng x=2 (1đ)\n- Tìm đúng hai giao điểm với Ox: (−1,0),(5,0) (1đ)\n- Giao Oy=(0,5) và parabol mở xuống do a<0 (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -292,12 +451,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "I(-2;9), trục x=−2; Ox (-1;0),(5;0), Oy (0;5); mở xuống."
+      },
+      {
+        "id": "B",
+        "text": "I(2;9), trục x=2; Ox (1;0),(5;0), Oy (0;5); mở lên."
+      },
+      {
+        "id": "C",
+        "text": "I(2;9), trục x=2; Ox (-1;0),(5;0), Oy (0;5); mở xuống."
+      },
+      {
+        "id": "D",
+        "text": "I(2;5), trục x=2; Ox (-1;0),(5;0), Oy (0;9); mở xuống."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B16-R03",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Chuyển động giả định có độ cao `h(t)=−4t²+24t` (m), trong đó t tính bằng giây, tính từ khi bắt đầu `t=0` đến khi chạm đất. Hỏi thời gian đạt độ cao cực đại, độ cao đó và thời gian trở lại mặt đất.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B16-R03",
+    "stem": "Chuyển động giả định có độ cao `h(t)=−4t²+24t` (m), trong đó t tính bằng giây, tính từ khi bắt đầu `t=0` đến khi chạm đất. Hỏi thời gian đạt độ cao cực đại, độ cao đó và thời gian trở lại mặt đất. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`t=3s`, `hmax=36m`, `t_landing=6s`.",
     "worked_solution": "`h(t)=−4(t−3)²+36`; nghiệm `h=0` là `t=0,6`, miền thực tế `[0;6]`.",
     "skill_ids": [
@@ -305,11 +483,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Tìm đỉnh và nghiệm dương của h(t)=0."
+    ],
     "rubric": "- Hoàn thành bình phương h(t)=−4(t−3)²+36 (1đ)\n- Xác định thời gian cực đại t=3 s (1đ)\n- Tính độ cao cực đại 36 m (1đ)\n- Giải h(t)=0, chọn thời gian chạm đất trở lại 6 s và lưu ý t∈[0,6] (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -334,12 +518,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 s; 36 m; 3 s."
+      },
+      {
+        "id": "B",
+        "text": "3 s; 72 m; 6 s."
+      },
+      {
+        "id": "C",
+        "text": "3 s; 36 m; 12 s."
+      },
+      {
+        "id": "D",
+        "text": "3 s; 36 m; 6 s."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B16-R04",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Giá `p` nghìn đồng và nhu cầu dự kiến `n(p)=150−3p` sản phẩm, trên `0≤p≤50`. Tìm giá tối ưu và doanh thu lớn nhất (nghìn đồng), với `R(p)=p·n(p)`.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B16-R04",
+    "stem": "Giá `p` nghìn đồng và nhu cầu dự kiến `n(p)=150−3p` sản phẩm, trên `0≤p≤50`. Tìm giá tối ưu và doanh thu lớn nhất (nghìn đồng), với `R(p)=p·n(p)`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`p=25` nghìn đồng, `Rmax=1875` nghìn đồng (1,875 triệu đồng).",
     "worked_solution": "`R(p)=−3p²+150p=−3(p−25)²+1875`; khi `p=25`, `n=75`. Điều kiện miền thỏa.",
     "skill_ids": [
@@ -347,11 +550,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Lập doanh thu 150p−3p² rồi tìm đỉnh trong đoạn đã cho."
+    ],
     "rubric": "- Lập đúng doanh thu R(p)=−3p²+150p từ giá và nhu cầu (1đ)\n- Dùng dạng đỉnh R(p)=−3(p−25)²+1875 (1đ)\n- Tìm giá tối ưu p=25 nghìn đồng và kiểm miền 0≤p≤50 (1đ)\n- Nêu doanh thu tối đa 1875 nghìn đồng; đơn vị phù hợp (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -376,12 +585,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "25 nghìn đồng; 1.875 nghìn đồng."
+      },
+      {
+        "id": "B",
+        "text": "50 nghìn đồng; 0 đồng."
+      },
+      {
+        "id": "C",
+        "text": "25 nghìn đồng; 3.750 nghìn đồng."
+      },
+      {
+        "id": "D",
+        "text": "15 nghìn đồng; 1.575 nghìn đồng."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B16-R05",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Trong ba biểu thức `f(x)=x²+3x+2`, `g(x)=0x²+5x−7`, `h(x)=−4x+1`, biểu thức nào là hàm số bậc hai? Vì sao?",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B16-R05",
+    "stem": "Trong ba biểu thức `f(x)=x²+3x+2`, `g(x)=0x²+5x−7`, `h(x)=−4x+1`, biểu thức nào là hàm số bậc hai? Vì sao? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "Chỉ `f` là hàm số bậc hai.",
     "worked_solution": "Hệ số trước `x²` phải khác 0. Hai biểu thức còn lại chỉ có bậc nhất (`g` có hệ số `x²` bằng 0).",
     "skill_ids": [
@@ -389,11 +617,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Xét bậc thực sự sau khi bỏ hạng tử có hệ số 0."
+    ],
     "rubric": "- Nêu tiêu chí hàm bậc hai phải có hệ số a của x² khác 0 (1đ)\n- Khẳng định f(x)=x²+3x+2 là hàm bậc hai (1đ)\n- Loại g vì hệ số 0 trước x² (1đ)\n- Loại h vì là biểu thức bậc nhất, không có x² (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -418,12 +652,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "f và g, vì đều có ký hiệu x²."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ f, vì hệ số bậc hai khác 0."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ h, vì hệ số x khác 0."
+      },
+      {
+        "id": "D",
+        "text": "Cả ba vì đều là đa thức."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B17-R01",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Giải `x²−x−6≥0`.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B17-R01",
+    "stem": "Giải `x²−x−6≥0`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`(−∞;−2]∪[3;+∞)`.",
     "worked_solution": "`(x+2)(x−3)≥0` ở ngoài hai nghiệm, lấy cả biên.",
     "skill_ids": [
@@ -431,11 +684,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm nghiệm của tam thức và xét dấu phía ngoài."
+    ],
     "rubric": "- Phân tích x²−x−6=(x+2)(x−3) (1đ)\n- Tìm hai nghiệm −2 và 3 (1đ)\n- Xét đúng tam thức không âm phía ngoài hai nghiệm (1đ)\n- Biểu diễn đủ nghiệm và hai đầu mút đóng (−∞,−2]∪[3,+∞) (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -460,12 +719,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\([-2;3]\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((-\\infty;-2)\\cup(3;+\\infty)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-\\infty;-2]\\cup[3;+\\infty)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((-\\infty;-3]\\cup[2;+\\infty)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B17-R02",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Tìm `m∈ℝ` để `x²−2(m−1)x+m²+1>0` với mọi `x∈ℝ`.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B17-R02",
+    "stem": "Tìm `m∈ℝ` để `x²−2(m−1)x+m²+1>0` với mọi `x∈ℝ`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`m>0`.",
     "worked_solution": "`a=1>0`, `Δ=4(m−1)²−4(m²+1)=−8m<0` khi và chỉ khi `m>0`.",
     "skill_ids": [
@@ -473,11 +751,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Hệ số bậc hai dương; tính biệt thức và yêu cầu âm."
+    ],
     "rubric": "- Nhận biết a=1>0 và điều kiện f_m(x)>0 với mọi x là Δ<0 (1đ)\n- Tính Δ=4(m−1)²−4(m²+1)=−8m (1đ)\n- Giải −8m<0 được m>0 (1đ)\n- Giải thích dấu nghiêm ngặt loại Δ=0 và chỉ giữ m>0 (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -502,12 +786,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(m\\ge0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(m<0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(m\\ne0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(m>0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B17-R03",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Với `f(x)=−(x−1)²`, giải bất phương trình `f(x)<0`.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B17-R03",
+    "stem": "Với `f(x)=−(x−1)²`, giải bất phương trình `f(x)<0`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`ℝ\\{1}`.",
     "worked_solution": "`−(x−1)²<0 ↔ (x−1)²>0`, xảy ra khi `x≠1`. Nghiệm kép không tạo đổi dấu.",
     "skill_ids": [
@@ -516,11 +819,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Bình phương chỉ bằng 0 khi x=1."
+    ],
     "rubric": "- Biến đổi −(x−1)²<0 thành (x−1)²>0 (1đ)\n- Nhận biết bình phương bằng 0 chỉ khi x=1 (1đ)\n- Kết luận tập nghiệm ℝ∖{1} (1đ)\n- Giải thích nghiệm kép không làm tam thức đổi dấu và bất phương trình nghiêm ngặt loại x=1 (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -545,12 +854,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\mathbb R\\setminus\\{1\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\mathbb R\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\{1\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\mathbb R\\setminus\\{-1\\}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B17-R04",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Lợi nhuận giả định của một hoạt động theo lượng `x` có dạng `P(x)=−x²+10x−16` (triệu đồng), với `0≤x≤10`. Xác định miền `x` để `P(x)>0`.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B17-R04",
+    "stem": "Lợi nhuận giả định của một hoạt động theo lượng `x` có dạng `P(x)=−x²+10x−16` (triệu đồng), với `0≤x≤10`. Xác định miền `x` để `P(x)>0`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`2<x<8`.",
     "worked_solution": "`P(x)=−(x−2)(x−8)`, hệ số âm, dương giữa hai nghiệm, thỏa miền vật lý.",
     "skill_ids": [
@@ -558,11 +886,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Phân tích lợi nhuận thành tích và lấy khoảng dương trong miền."
+    ],
     "rubric": "- Thiết lập P(x)>0 trong miền 0≤x≤10 (1đ)\n- Phân tích P(x)=−(x−2)(x−8), nghiệm 2,8 (1đ)\n- Xét đúng dấu P>0 giữa hai nghiệm (1đ)\n- Kết luận 2<x<8, phù hợp miền thực tế; loại hai đầu mút vì P=0 (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -587,12 +921,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(2\\le x\\le8\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(2<x<8\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(0\\le x<2\\) hoặc \\(8<x\\le10\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(0<x<10\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B18-R01",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Giải `√(2x+5)=x+1` trên `ℝ`.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B18-R01",
+    "stem": "Giải `√(2x+5)=x+1` trên `ℝ`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`{2}`.",
     "worked_solution": "`x+1≥0`. Bình phương: `2x+5=(x+1)² ↔ x²=4` cho `±2`, chỉ `2` hợp lệ.",
     "skill_ids": [
@@ -601,11 +954,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Vế phải không âm; bình phương rồi đối chiếu điều kiện."
+    ],
     "rubric": "- Viết điều kiện vế phải x+1≥0 (1đ)\n- Bình phương đúng để được x²−4=0 (1đ)\n- Tìm được hai nghiệm ứng viên x=±2 (1đ)\n- Loại x=−2, kiểm x=2 và kết luận {2} (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -630,12 +989,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\{-2,2\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\{-2\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\{2\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\varnothing\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B18-R02",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Giải `√(x²+3x+2)=√(x+2)` trên `ℝ`.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B18-R02",
+    "stem": "Giải `√(x²+3x+2)=√(x+2)` trên `ℝ`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`{−2;0}`.",
     "worked_solution": "Bình phương: `x²+3x+2=x+2 ↔ x(x+2)=0`; ở cả `−2` và `0`, hai biểu thức dưới căn không âm và bằng nhau.",
     "skill_ids": [
@@ -644,11 +1022,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Hai căn bằng nhau khi hai biểu thức dưới căn bằng nhau và không âm."
+    ],
     "rubric": "- Nêu điều kiện hai biểu thức dưới căn không âm (1đ)\n- Bình phương hai vế dẫn đến x²+2x=0 (1đ)\n- Giải được hai ứng viên x=−2, x=0 (1đ)\n- Thử lại cả hai thỏa căn và kết luận {−2,0} (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -673,12 +1057,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\{0\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\{-2\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\{-1,2\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\{-2,0\\}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B18-R03",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Giải `√(x²+4x+1)=√(2x+3)` trên `ℝ`.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B18-R03",
+    "stem": "Giải `√(x²+4x+1)=√(2x+3)` trên `ℝ`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`{−1+√3}`.",
     "worked_solution": "Bình phương `x²+2x−2=0`, cho `x=−1±√3`. Điều kiện `2x+3≥0` loại `x=−1−√3` (nhỏ hơn `−3/2`); nghiệm `−1+√3` đạt cả hai điều kiện.",
     "skill_ids": [
@@ -688,11 +1091,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Giải phương trình hai biểu thức dưới căn, rồi thử điều kiện của 2x+3."
+    ],
     "rubric": "- Nêu điều kiện ít nhất 2x+3≥0 (1đ)\n- Bình phương và rút gọn x²+2x−2=0 (1đ)\n- Tìm hai nghiệm ứng viên −1±√3 (1đ)\n- Loại −1−√3 theo điều kiện, kiểm −1+√3 và kết luận nghiệm duy nhất (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -717,12 +1126,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\{-1+\\sqrt3\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\{-1-\\sqrt3,-1+\\sqrt3\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\{-1-\\sqrt3\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\{1+\\sqrt3\\}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B18-R04",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Một tam giác vuông có hai cạnh góc vuông dài `x>0` m và `4` m, cạnh huyền dài `x+2` m. Tìm `x`.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B18-R04",
+    "stem": "Một tam giác vuông có hai cạnh góc vuông dài `x>0` m và `4` m, cạnh huyền dài `x+2` m. Tìm `x`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`x=3m`.",
     "worked_solution": "`√(x²+16)=x+2`. Bình phương cho `x²+16=(x+2)²`, tức `4x=12`, nên `x=3`. Thử `5=3+2`, thỏa điều kiện.",
     "skill_ids": [
@@ -730,11 +1158,17 @@
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng định lý Pythagore với cạnh huyền x+2."
+    ],
     "rubric": "- Áp dụng Pitago để có √(x²+16)=x+2 (1đ)\n- Nêu x>0 và x+2>0 trước khi bình phương (1đ)\n- Bình phương, giải x²+16=(x+2)² ⇒ x=3 (1đ)\n- Thử lại cạnh huyền 5=3+2 và ghi đơn vị m (1đ)",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -759,12 +1193,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 m"
+      },
+      {
+        "id": "B",
+        "text": "3 m"
+      },
+      {
+        "id": "C",
+        "text": "6 m"
+      },
+      {
+        "id": "D",
+        "text": "8 m"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B16-R06",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Cho \\(f(x)=-(x-1)^2+9\\), **chỉ xét trên** \\(D=[-2;5]\\).\n\na) Xác định tọa độ đỉnh và trục đối xứng của parabol.\n\nb) Trên những đoạn nào trong D, hàm đồng biến và nghịch biến? Giải thích dựa trên dạng bình phương/khoảng cách tới trục, không chỉ thử hai số.\n\nc) Tính \\(f(-2)\\), \\(f(1)\\), \\(f(5)\\); tìm GTLN, GTNN, **tập giá trị \\(T_D\\)**. Vì sao \\(T_D\\) khác tập giá trị của hàm nếu xét toàn \\(\\mathbb R\\)?",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B16-R06",
+    "stem": "Cho \\(f(x)=-(x-1)^2+9\\), **chỉ xét trên** \\(D=[-2;5]\\).\n\na) Xác định tọa độ đỉnh và trục đối xứng của parabol.\n\nb) Trên những đoạn nào trong D, hàm đồng biến và nghịch biến? Giải thích dựa trên dạng bình phương/khoảng cách tới trục, không chỉ thử hai số.\n\nc) Tính \\(f(-2)\\), \\(f(1)\\), \\(f(5)\\); tìm GTLN, GTNN, **tập giá trị \\(T_D\\)**. Vì sao \\(T_D\\) khác tập giá trị của hàm nếu xét toàn \\(\\mathbb R\\)? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "1. Đỉnh \\(I(1;9)\\), trục \\(x=1\\), parabol mở xuống vì \\(a=-1<0\\).\n2. Trên \\([-2;1]\\), khi x tăng thì khoảng cách \\(|x-1|\\) giảm, nên \\(-(x-1)^2\\) tăng: **đồng biến**. Trên \\([1;5]\\), khi x tăng thì \\(|x-1|\\) tăng: **nghịch biến**. Không được nói hàm cùng một chiều trên toàn D.\n3. \\(f(-2)=-(-3)^2+9=0\\), \\(f(1)=9\\), \\(f(5)=-(4)^2+9=-7\\). Trên D, GTLN \\(=9\\) tại x=1, GTNN \\(=-7\\) tại x=5; **tập giá trị \\(T_D=[-7;9]\\)**. Nếu xét toàn ℝ, tập giá trị là \\((-\\infty;9]\\), khác D đã cho.",
     "worked_solution": "1. Đỉnh \\(I(1;9)\\), trục \\(x=1\\), parabol mở xuống vì \\(a=-1<0\\).\n2. Trên \\([-2;1]\\), khi x tăng thì khoảng cách \\(|x-1|\\) giảm, nên \\(-(x-1)^2\\) tăng: **đồng biến**. Trên \\([1;5]\\), khi x tăng thì \\(|x-1|\\) tăng: **nghịch biến**. Không được nói hàm cùng một chiều trên toàn D.\n3. \\(f(-2)=-(-3)^2+9=0\\), \\(f(1)=9\\), \\(f(5)=-(4)^2+9=-7\\). Trên D, GTLN \\(=9\\) tại x=1, GTNN \\(=-7\\) tại x=5; **tập giá trị \\(T_D=[-7;9]\\)**. Nếu xét toàn ℝ, tập giá trị là \\((-\\infty;9]\\), khác D đã cho.\n4. Kiểm chứng bằng bất đẳng thức: vì \\(x\\in[-2;5]\\) nên \\(0\\le(x-1)^2\\le16\\). Do đó \\(-7\\le f(x)\\le9\\); hàm liên tục trên D nên nhận tất cả các giá trị trong đoạn này.\n\n**Hỗ trợ tự khắc phục sau Final Submit:**\n1. **Nhận diện:** Em có kết luận tăng/giảm cả D, quên đầu x=5 hoặc dùng tập giá trị toàn ℝ?\n2. **Tự chẩn đoán:** Khoanh lỗi đầu tiên trong ba bước: đọc đỉnh x=1, chia miền bởi đỉnh, so hai biên.\n3. **Kiến thức gốc:** Parabol a<0 đi lên bên trái đỉnh, đi xuống bên phải; tập giá trị phải tính trên miền của **đề**, không trên toàn ℝ.\n4. **Tự sửa:** Đánh dấu [-2;1], [1;5], tính lại f(-2), f(1), f(5), ghi khoảng biến thiên rồi tự rút tập giá trị.\n5. **Luyện lại:** Xem SGK B16 §2, R03 B16_OUT_04, FIRST_TRY THPT-G10-CHVI-TRY09 và HELP-G10-CHVI-TRY09. Chỉ luyện tập tự đối chiếu, không tính Mastery từ câu đã xem đáp án.",
     "skill_ids": [
@@ -772,11 +1225,17 @@
     ],
     "original_outcome_text": "B16_OUT_04",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Xét khoảng cách đến trục trên từng đoạn, tính cả hai đầu mút."
+    ],
     "rubric": "**Rubric 8 điểm (chỉ sau Final Submit):** 1đ đỉnh/trục/chiều mở; 2đ hai đoạn tăng/giảm đúng; 2đ giải thích hướng biến thiên chứ không chỉ nêu đáp án; 1đ cả ba giá trị -2,1,5; 2đ GTLN/GTNN, tập giá trị trên D và phân biệt với toàn ℝ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -801,12 +1260,31 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cùng đỉnh, trục và chiều biến thiên; \\(T_D=(-\\infty;9]\\)."
+      },
+      {
+        "id": "B",
+        "text": "I(1;9), trục x=1; giảm trên [-2;1], tăng trên [1;5]; \\(T_D=[-7;9]\\)."
+      },
+      {
+        "id": "C",
+        "text": "I(1;9), trục x=1; tăng trên [-2;1], giảm trên [1;5]; f(-2)=0,f(1)=9,f(5)=-7; \\(T_D=[-7;9]\\)."
+      },
+      {
+        "id": "D",
+        "text": "Cùng đỉnh và chiều biến thiên; f(-2)=0,f(1)=9,f(5)=-7; \\(T_D=[0;9]\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B17-R05",
-    "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Xét trên \\(\\mathbb R\\) ba tam thức:\n\\[\nP(x)=2x^2+4x+5,\\qquad Q(x)=-(x+1)^2,\\qquad R(x)=-2(x-1)(x-4).\n\\]\n\na) Với mỗi tam thức, tính Δ, nêu dấu a và phân loại Δ<0, =0 hay >0.\n\nb) Với mỗi tam thức, xác định **đầy đủ** khoảng có giá trị dương, âm và các điểm bằng 0; giải thích qua vị trí parabol so với Ox.\n\nc) Giải thích 2–3 câu vì sao dấu của Δ **không đủ** nếu chưa xét dấu a.",
+    "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B17-R05",
+    "stem": "Xét trên \\(\\mathbb R\\) ba tam thức:\n\\[\nP(x)=2x^2+4x+5,\\qquad Q(x)=-(x+1)^2,\\qquad R(x)=-2(x-1)(x-4).\n\\]\n\na) Với mỗi tam thức, tính Δ, nêu dấu a và phân loại Δ<0, =0 hay >0.\n\nb) Với mỗi tam thức, xác định **đầy đủ** khoảng có giá trị dương, âm và các điểm bằng 0; giải thích qua vị trí parabol so với Ox.\n\nc) Giải thích 2–3 câu vì sao dấu của Δ **không đủ** nếu chưa xét dấu a. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "- **P:** a=2>0, b=4, c=5, \\(\\Delta=4^2-4\\cdot2\\cdot5=-24<0\\). Không có nghiệm thực, **P(x)>0 mọi x∈ℝ**; không có điểm bằng 0 hoặc miền âm. Cách kiểm: \\(P(x)=2(x+1)^2+3>0\\).\n- **Q:** \\(Q=-x^2-2x-1\\), a=-1<0, \\(\\Delta=(-2)^2-4(-1)(-1)=0\\); nghiệm kép **x=-1**. Q=0 tại -1; **Q<0** trên \\((-\\infty;-1)\\cup(-1;+\\infty)\\); không có miền dương. Đồ thị chạm Ox chứ không đổi dấu.\n- **R:** \\(R=-2x^2+10x-8\\), a=-2<0, \\(\\Delta=100-4(-2)(-8)=36>0\\). Hai nghiệm **1, 4**. R<0 trên \\((-\\infty;1)\\cup(4;+\\infty)\\); R>0 trên \\((1;4)\\); R=0 tại x=1,4.\n- Δ quyết định số nghiệm thực; dấu a quyết định hướng mở và dấu của tam thức ngoài các nghiệm. Phải xét cả a và Δ.",
     "worked_solution": "- **P:** a=2>0, b=4, c=5, \\(\\Delta=4^2-4\\cdot2\\cdot5=-24<0\\). Không có nghiệm thực, **P(x)>0 mọi x∈ℝ**; không có điểm bằng 0 hoặc miền âm. Cách kiểm: \\(P(x)=2(x+1)^2+3>0\\).\n- **Q:** \\(Q=-x^2-2x-1\\), a=-1<0, \\(\\Delta=(-2)^2-4(-1)(-1)=0\\); nghiệm kép **x=-1**. Q=0 tại -1; **Q<0** trên \\((-\\infty;-1)\\cup(-1;+\\infty)\\); không có miền dương. Đồ thị chạm Ox chứ không đổi dấu.\n- **R:** \\(R=-2x^2+10x-8\\), a=-2<0, \\(\\Delta=100-4(-2)(-8)=36>0\\). Hai nghiệm **1, 4**. R<0 trên \\((-\\infty;1)\\cup(4;+\\infty)\\); R>0 trên \\((1;4)\\); R=0 tại x=1,4.\n- **Tổng kết:** Δ quyết định số giao/chạm Ox; a quyết định hướng mở và dấu ở các khoảng ngoài nghiệm. Muốn xét dấu đúng phải dùng **cả a và Δ**, đồng thời điền 0 tại nghiệm.\n\n**Hỗ trợ tự khắc phục sau Final Submit:**\n1. **Nhận diện:** Em có cho Q đổi dấu qua -1 hoặc cho R dương ở hai khoảng ngoài?\n2. **Tự chẩn đoán:** Với P/Q/R, viết rõ a và Δ; khoanh bước đầu tiên em suy dấu nhưng không giải thích được.\n3. **Kiến thức gốc:** Δ<0 giữ dấu a; Δ=0 giữ dấu a trừ nghiệm kép bằng 0; Δ>0 cùng dấu a ngoài hai nghiệm, trái dấu a ở giữa.\n4. **Tự sửa:** Vẽ ba phác họa parabol (mở lên không cắt, mở xuống chạm, mở xuống cắt hai điểm), điền 0 tại nghiệm rồi xét khoảng.\n5. **Luyện lại:** Trở về SGK B17 §2, R03 B17_OUT_01, FIRST_TRY THPT-G10-CHVI-TRY11 và HELP-G10-CHVI-TRY11; có thể làm Core THPT-G10-B17-C01/C02. Không biến bài đã xem lời giải thành điểm Mastery.",
     "skill_ids": [
@@ -815,11 +1293,17 @@
     ],
     "original_outcome_text": "B17_OUT_01",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Tính Δ và xét dấu a cho từng tam thức; nghiệm kép không đổi dấu."
+    ],
     "rubric": "**Rubric 10 điểm (chỉ sau Final Submit):** 3đ P (a, Δ=-24, dấu mọi x); 3đ Q (a âm, Δ=0, nghiệm kép và không đổi dấu); 3đ R (a âm, Δ=36, nghiệm/ba khoảng dấu); 1đ giải thích đúng vai trò kết hợp dấu a với Δ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "OPEN_REVIEW"
     },
@@ -844,6 +1328,25 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "P: \\(\\Delta=-24\\), luôn âm. Q: \\(\\Delta=0\\), đổi dấu qua −1. R: \\(\\Delta=36\\), dương ngoài [1;4]."
+      },
+      {
+        "id": "B",
+        "text": "P: luôn dương. Q: luôn âm kể cả tại −1. R: dương trên [1;4]."
+      },
+      {
+        "id": "C",
+        "text": "P: \\(\\Delta=24\\), hai nghiệm. Q: \\(\\Delta=0\\), không âm. R: \\(\\Delta=36\\), âm trên (1;4)."
+      },
+      {
+        "id": "D",
+        "text": "P: \\(\\Delta=-24,a>0\\), luôn dương. Q: \\(\\Delta=0,a<0\\), âm trừ nghiệm −1. R: \\(\\Delta=36,a<0\\), dương trên (1;4), âm ngoài [1;4], bằng 0 tại 1,4."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
