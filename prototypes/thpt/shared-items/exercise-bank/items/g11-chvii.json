@@ -2810,10 +2810,10 @@
   },
   {
     "item_id": "THPT-G11-B22-KFT01",
-    "content_version": "SOURCE_BLOB_d8a679897dde1d2fa25e12df56772eb54be29ff4_AUTHORING_ANSWER_DRAFT",
-    "stem": "Hình hộp chữ nhật có cạnh AB theo phương ngang và CC′ theo phương thẳng đứng. Chúng không cắt nhau; vì CC′//AA′ và AB⊥AA′, suy ra (AB,CC′)=90°. Vì sao không cần AB gặp CC′?",
-    "answer_key": "Vì góc giữa hai đường thẳng trong không gian được xác định theo phương, không đòi hỏi chúng cắt nhau.",
-    "worked_solution": "Qua A dựng đường song song với CC′, chính là AA′. Góc giữa AB và CC′ bằng góc giữa AB và AA′, tức 90° trong hình hộp chữ nhật. Hai đường có thể chéo nhau mà vẫn vuông góc theo định nghĩa góc giữa hai đường.",
+    "content_version": "SGK-G11-CHVII-BANK-CANDIDATE-20261127-THPT-G11-B22-KFT01",
+    "stem": "Hình hộp chữ nhật có cạnh AB theo phương ngang và CC′ theo phương thẳng đứng. Chúng không cắt nhau; vì CC′//AA′ và AB⊥AA′, suy ra (AB,CC′)=90°. Vì sao không cần AB gặp CC′? Chọn phương án đúng sau khi tự giải thích.",
+    "answer_key": "Góc giữa hai đường thẳng được xác định theo phương; qua A dựng AA′ song song CC′ rồi xét góc giữa AB và AA′.",
+    "worked_solution": "Qua A, đường thẳng song song CC′ là AA′. Vì hình hộp chữ nhật có \\(AB\\perp AA'\\), góc giữa AB và CC′ bằng góc giữa AB và AA′, tức \\(90^\\circ\\). Định nghĩa góc giữa hai đường thẳng không gian dựa vào phương, nên hai đường chéo nhau vẫn có thể vuông góc.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G11-B22-ANGLE_LINES",
@@ -2821,11 +2821,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dựng qua A một đường song song CC′."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2850,14 +2856,33 @@
       "legacy_reveal": "Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hai đường chỉ vuông góc nếu có giao điểm."
+      },
+      {
+        "id": "B",
+        "text": "Góc giữa hai đường thẳng được xác định theo phương; qua A dựng AA′ song song CC′ rồi xét góc giữa AB và AA′."
+      },
+      {
+        "id": "C",
+        "text": "AB và CC′ song song vì không cắt nhau."
+      },
+      {
+        "id": "D",
+        "text": "Góc giữa hai đường chéo nhau không xác định."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-B26-KFT01",
-    "content_version": "SOURCE_BLOB_417ce70fc81b8a656e803855d0594dfa9db945b2_AUTHORING_ANSWER_DRAFT",
-    "stem": "Chóp có SA=5, hình chiếu S trên đáy là H, AH=4: SH=3. Tại sao chiều cao là 3 chứ không phải 5?",
-    "answer_key": "SH=3, vì chiều cao là đoạn vuông góc với đáy.",
-    "worked_solution": "H là hình chiếu vuông góc của S trên đáy nên SH⊥AH. Tam giác SAH vuông tại H, SH=√(SA²−AH²)=√(25−16)=3. SA=5 là cạnh xiên, không phải khoảng cách vuông góc từ S tới đáy.",
+    "content_version": "SGK-G11-CHVII-BANK-CANDIDATE-20261127-THPT-G11-B26-KFT01",
+    "stem": "Cho hình chóp có SA=5, H là hình chiếu vuông góc của S trên mặt phẳng đáy, AH=4. Tính chiều cao của chóp và giải thích vì sao không lấy SA làm chiều cao. Chọn phương án đúng sau khi tự giải thích.",
+    "answer_key": "\\(SH=3\\); SH vuông góc với đáy.",
+    "worked_solution": "H là hình chiếu vuông góc của S trên đáy nên \\(SH\\perp AH\\). Trong tam giác vuông SAH, \\(SH=\\sqrt{SA^2-AH^2}=\\sqrt{25-16}=3\\). Chiều cao là khoảng cách vuông góc từ S tới đáy, không phải cạnh xiên SA.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G11-B26-HEIGHT_APPLICATION",
@@ -2865,11 +2890,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tam giác SAH vuông tại H, SA là cạnh huyền."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2888,6 +2919,25 @@
       "legacy_reveal": "Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(SA=5\\); cạnh bên luôn là chiều cao."
+      },
+      {
+        "id": "B",
+        "text": "\\(AH=4\\); AH nằm trong đáy."
+      },
+      {
+        "id": "C",
+        "text": "\\(SH=3\\); SH vuông góc với đáy."
+      },
+      {
+        "id": "D",
+        "text": "\\(SH=\\sqrt{41}\\); cộng bình phương hai cạnh SA và AH."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
