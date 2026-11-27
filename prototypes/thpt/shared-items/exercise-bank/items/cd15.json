@@ -1,7 +1,7 @@
 [
   {
     "item_id": "THPT-TOP15-P06",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P06",
     "stem": "Cho hai điểm phân biệt A, B thuộc \\((P)\\), \\(M\\in AB\\), C nằm ngoài \\((P)\\). Hỏi \\(M\\in(P)\\) không và \\(AC\\subset(P)\\) có đúng không?",
     "answer_key": "\\(M\\in(P)\\); AC không nằm trong \\((P)\\).",
     "worked_solution": "\\(M\\in(P)\\) vì \\(AB\\subset(P)\\). AC không nằm trọn trong \\((P)\\), do C nằm ngoài \\((P)\\).",
@@ -13,13 +13,17 @@
       "TOP15-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng tính chất hai điểm thuộc mặt phẳng kéo theo đường thẳng qua chúng nằm trong mặt."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -27,12 +31,31 @@
       "heading_id": "THPT-TOP15-P06",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu suy AC thuộc mặt chỉ từ A thuộc, kiểm cả C nằm ngoài. Ôn CĐ15 mục 1.1; luyện THPT-G11-CHIV-B10-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu suy AC thuộc mặt chỉ từ A thuộc, kiểm cả C nằm ngoài. Ôn CĐ15 mục 1.1; luyện THPT-G11-CHIV-B10-C01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "M không thuộc (P); AC nằm trong (P)."
+      },
+      {
+        "id": "B",
+        "text": "M thuộc (P); AC nằm trong (P)."
+      },
+      {
+        "id": "C",
+        "text": "M không thuộc (P); AC không nằm trong (P)."
+      },
+      {
+        "id": "D",
+        "text": "\\(M\\in(P)\\); AC không nằm trong \\((P)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P07",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P07",
     "stem": "Trong hình chóp \\(S.ABC\\), M là trung điểm AB. Ba điểm A,M,B có xác định duy nhất một mặt phẳng không? Ba điểm A,M,S có xác định duy nhất một mặt phẳng không? Nêu mặt phẳng ấy.",
     "answer_key": "A,M,B không xác định duy nhất mặt phẳng; A,M,S xác định duy nhất \\((SAB)\\).",
     "worked_solution": "A,M,B thẳng hàng trên AB, nên vô số mặt phẳng chứa AB đều chứa ba điểm ấy. Vì S không thuộc mặt đáy nên S không thuộc AB; A,M phân biệt và S nằm ngoài AM. Ba điểm A,M,S không thẳng hàng, xác định duy nhất mặt phẳng \\((SAB)\\) vì AM và AB cùng một đường.",
@@ -44,13 +67,17 @@
       "TOP15-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Kiểm ba điểm có thẳng hàng không; hai điểm phân biệt chỉ xác định đường."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -58,12 +85,31 @@
       "heading_id": "THPT-TOP15-P07",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nghĩ ba điểm bất kỳ luôn xác định một mặt, dùng thêm một điểm ngoài đường để xác định duy nhất mặt. Ôn CĐ15 mục 1.2; luyện THPT-G11-CHIV-B10-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nghĩ ba điểm bất kỳ luôn xác định một mặt, dùng thêm một điểm ngoài đường để xác định duy nhất mặt. Ôn CĐ15 mục 1.2; luyện THPT-G11-CHIV-B10-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A,M,B không xác định duy nhất mặt phẳng; A,M,S xác định duy nhất \\((SAB)\\)."
+      },
+      {
+        "id": "B",
+        "text": "Cả hai bộ ba xác định duy nhất một mặt phẳng."
+      },
+      {
+        "id": "C",
+        "text": "A,M,B xác định duy nhất (ABC); A,M,S không xác định duy nhất."
+      },
+      {
+        "id": "D",
+        "text": "Cả hai bộ ba đều không xác định duy nhất."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P08",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P08",
     "stem": "Trong tứ diện \\(S.ABC\\), tìm \\((SAC)\\cap(SBC)\\). Chỉ ra hai điểm chung hợp lệ.",
     "answer_key": "Giao tuyến SC; hai điểm chung S,C.",
     "worked_solution": "Hai mặt phẳng \\((SAC)\\) và \\((SBC)\\) phân biệt, có hai điểm chung S,C phân biệt; giao tuyến là SC.",
@@ -75,13 +121,17 @@
       "TOP15-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tìm hai điểm chung phân biệt của hai mặt, kiểm hai mặt khác nhau."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -89,12 +139,31 @@
       "heading_id": "THPT-TOP15-P08",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ tìm S, chưa đủ xác định giao tuyến; tìm thêm đỉnh chung C. Ôn CĐ15 mục 1.3; luyện THPT-G11-CHIV-B10-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ tìm S, chưa đủ xác định giao tuyến; tìm thêm đỉnh chung C. Ôn CĐ15 mục 1.3; luyện THPT-G11-CHIV-B10-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giao tuyến SA; hai điểm chung S,A."
+      },
+      {
+        "id": "B",
+        "text": "Giao tuyến SC; hai điểm chung S,C."
+      },
+      {
+        "id": "C",
+        "text": "Giao tuyến BC; hai điểm chung B,C."
+      },
+      {
+        "id": "D",
+        "text": "Giao tuyến SB; hai điểm chung S,B."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P09",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P09",
     "stem": "Trong tứ diện \\(S.ABC\\), M là trung điểm SC. Tìm giao điểm của đường AM với mặt \\((SBC)\\). Đường SB có cắt mặt \\((ABC)\\) không? Nêu lý do giao điểm là duy nhất.",
     "answer_key": "AM cắt \\((SBC)\\) tại M; SB cắt \\((ABC)\\) tại B.",
     "worked_solution": "\\(M\\in SC\\subset(SBC)\\), A không thuộc \\((SBC)\\) vì tứ diện không suy biến. Vì AM có điểm M thuộc mặt và A ngoài mặt nên giao duy nhất tại M. Tương tự \\(B\\in(ABC)\\), \\(S\\notin(ABC)\\), do đó SB cắt đáy duy nhất tại B.",
@@ -106,13 +175,17 @@
       "TOP15-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Xác định điểm chung, rồi kiểm đường có nằm trọn trong mặt hay không."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -120,14 +193,33 @@
       "heading_id": "THPT-TOP15-P09",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu cho đường chỉ có một điểm chung mà song song mặt, nhớ song song yêu cầu không có điểm chung. Ôn CĐ15 mục 1.4; luyện THPT-G11-CHIV-B10-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho đường chỉ có một điểm chung mà song song mặt, nhớ song song yêu cầu không có điểm chung. Ôn CĐ15 mục 1.4; luyện THPT-G11-CHIV-B10-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "AM cắt (SBC) tại A; SB cắt (ABC) tại S."
+      },
+      {
+        "id": "B",
+        "text": "AM nằm trong (SBC); SB song song (ABC)."
+      },
+      {
+        "id": "C",
+        "text": "AM cắt \\((SBC)\\) tại M; SB cắt \\((ABC)\\) tại B."
+      },
+      {
+        "id": "D",
+        "text": "AM cắt (SBC) tại M; SB không cắt (ABC)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P10",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P10",
     "stem": "Trong tứ diện \\(S.ABC\\), M,N lần lượt là trung điểm SA,SB; P,Q lần lượt là trung điểm AC,BC. Chứng minh M,N,Q,P đồng phẳng và xác định thiết diện của mặt phẳng ấy với tứ diện.",
-    "answer_key": "M,N,Q,P đồng phẳng; thiết diện là hình bình hành MNQP.",
+    "answer_key": "Bốn điểm đồng phẳng vì MN và PQ là hai đoạn song song, bằng nhau; thiết diện là hình bình hành MNQP.",
     "worked_solution": "Trong tam giác SAB, \\(MN\\parallel AB\\) và \\(MN=\\frac{AB}2\\); trong ABC, \\(PQ\\parallel AB\\) và \\(PQ=\\frac{AB}2\\). Hai đoạn MN,PQ song song và bằng nhau, nằm trên hai đường phân biệt nên bốn đầu mút đồng phẳng. M,N,Q,P theo thứ tự có \\(MN\\parallel PQ\\) và \\(MN=PQ\\), tạo hình bình hành MNQP. Các đoạn MN, NQ, QP, PM lần lượt nằm trên các mặt SAB, SBC, ABC, SAC và nối các điểm trong cạnh. Mặt cắt khối tứ diện vì vậy là hình bình hành MNQP.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -137,13 +229,17 @@
       "TOP15-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Tìm các đoạn giao trên từng mặt của tứ diện."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -151,12 +247,31 @@
       "heading_id": "THPT-TOP15-P10",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ nối các điểm theo hình biểu diễn, kiểm mỗi cạnh thiết diện nằm trên đúng mặt của khối. Ôn CĐ15 mục 1.5; luyện THPT-G11-CHIV-B10-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ nối các điểm theo hình biểu diễn, kiểm mỗi cạnh thiết diện nằm trên đúng mặt của khối. Ôn CĐ15 mục 1.5; luyện THPT-G11-CHIV-B10-P04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bốn điểm không đồng phẳng vì thuộc bốn cạnh khác nhau."
+      },
+      {
+        "id": "B",
+        "text": "Thiết diện là tam giác MNQ, không chứa P."
+      },
+      {
+        "id": "C",
+        "text": "Thiết diện là hình thang MNQP chỉ có một cặp cạnh đối song song."
+      },
+      {
+        "id": "D",
+        "text": "Bốn điểm đồng phẳng vì MN và PQ là hai đoạn song song, bằng nhau; thiết diện là hình bình hành MNQP."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P02",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P02",
     "stem": "Trong hình hộp \\(ABCD.A'B'C'D'\\), phân loại vị trí tương đối của ba cặp đường AB và \\(D'C'\\); AB và \\(CC'\\); AB và AD. Giải thích bằng quan hệ đồng phẳng hoặc điểm chung.",
     "answer_key": "\\(AB\\parallel D'C'\\) (phân biệt); AB và \\(CC'\\) chéo nhau; AB và AD cắt tại A.",
     "worked_solution": "\\(AB\\parallel DC\\) và \\(DC\\parallel D'C'\\), hai đường AB, \\(D'C'\\) phân biệt vì thuộc hai mặt đáy song song, nên chúng song song. AB và \\(CC'\\) không cắt: \\(CC'\\) chỉ gặp mặt đáy tại C, mà C không thuộc AB. Chúng không song song vì \\(CC'\\) không cùng phương AB (nếu cùng phương, \\(CC'\\) phải nằm trong mặt đáy qua C). Do đó chúng chéo nhau. AB,AD cùng qua A và phân biệt trong mặt đáy nên cắt tại A.",
@@ -168,13 +283,17 @@
       "TOP15-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Xét đồng phẳng trước; nếu hai đường đồng phẳng, phân biệt trùng, cắt, song song."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -182,14 +301,33 @@
       "heading_id": "THPT-TOP15-P02",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu không cắt mà kết luận song song, phải chứng minh đồng phẳng; hai cạnh đối tứ diện có thể chéo. Ôn CĐ15 mục 2.1; luyện THPT-G11-CHIV-B11-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu không cắt mà kết luận song song, phải chứng minh đồng phẳng; hai cạnh đối tứ diện có thể chéo. Ôn CĐ15 mục 2.1; luyện THPT-G11-CHIV-B11-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(AB\\parallel D'C'\\) (phân biệt); AB và \\(CC'\\) chéo nhau; AB và AD cắt tại A."
+      },
+      {
+        "id": "B",
+        "text": "AB và D'C' chéo nhau; AB và CC' song song; AB và AD cắt nhau."
+      },
+      {
+        "id": "C",
+        "text": "AB và D'C' song song; AB và CC' cắt nhau; AB và AD chéo nhau."
+      },
+      {
+        "id": "D",
+        "text": "Cả ba cặp đều chéo nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P11",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P11",
     "stem": "Trong tứ diện \\(S.ABC\\), giải thích vì sao SA và BC chéo nhau; nhưng SA và SB không chéo nhau.",
-    "answer_key": "SA và BC chéo nhau; SA và SB cắt nhau tại S.",
+    "answer_key": "SA và BC chéo nhau vì bốn đỉnh không đồng phẳng; SA và SB cắt nhau tại S.",
     "worked_solution": "Nếu SA và BC đồng phẳng thì S,A,B,C đồng phẳng, vô lý. SA và SB có S chung nên cắt nhau, đồng phẳng trong \\((SAB)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -200,13 +338,17 @@
       "TOP15-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Giả sử hai cạnh đối đồng phẳng; suy ra điều gì về bốn đỉnh?"
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -214,14 +356,33 @@
       "heading_id": "THPT-TOP15-P11",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng hình vẽ để kết luận chéo, thay bằng phản chứng bốn đỉnh tứ diện không đồng phẳng. Ôn CĐ15 mục 2.2; luyện THPT-G11-CHIV-B11-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng hình vẽ để kết luận chéo, thay bằng phản chứng bốn đỉnh tứ diện không đồng phẳng. Ôn CĐ15 mục 2.2; luyện THPT-G11-CHIV-B11-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "SA và BC song song; SA và SB chéo nhau."
+      },
+      {
+        "id": "B",
+        "text": "SA và BC chéo nhau vì bốn đỉnh không đồng phẳng; SA và SB cắt nhau tại S."
+      },
+      {
+        "id": "C",
+        "text": "Cả hai cặp chéo nhau."
+      },
+      {
+        "id": "D",
+        "text": "SA và BC cắt nhau tại A; SA và SB cắt tại S."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P12",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P12",
     "stem": "Trong tam giác SAB, \\(M\\in SA,\\ N\\in SB\\) với \\(SM:MA=2:3\\) và \\(SN:NB=2:3\\). Chứng minh \\(MN\\parallel AB\\).",
-    "answer_key": "\\(MN\\parallel AB\\).",
+    "answer_key": "\\(MN\\parallel AB\\) vì \\(SM/SA=SN/SB=2/5\\).",
     "worked_solution": "\\(\\frac{SM}{SA}=\\frac25\\) và \\(\\frac{SN}{SB}=\\frac25\\); hai điểm trên hai cạnh có cùng tỉ số tính từ S, nên \\(MN\\parallel AB\\) theo định lí Thalès đảo.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -231,13 +392,17 @@
       "TOP15-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tính \\(\\frac{SM}{SA}\\) và \\(\\frac{SN}{SB}\\) trước khi dùng định lí Thalès đảo."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -245,12 +410,31 @@
       "heading_id": "THPT-TOP15-P12",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng \\(\\frac{SM}{MA}\\) thay \\(\\frac{SM}{SA}\\), đổi mẫu về toàn cạnh tương ứng. Ôn CĐ15 mục 2.3; luyện THPT-G11-CHIV-B11-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng \\(\\frac{SM}{MA}\\) thay \\(\\frac{SM}{SA}\\), đổi mẫu về toàn cạnh tương ứng. Ôn CĐ15 mục 2.3; luyện THPT-G11-CHIV-B11-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "MN cắt AB vì hai tỉ số bằng nhau."
+      },
+      {
+        "id": "B",
+        "text": "MN song song SA."
+      },
+      {
+        "id": "C",
+        "text": "\\(MN\\parallel AB\\) vì \\(SM/SA=SN/SB=2/5\\)."
+      },
+      {
+        "id": "D",
+        "text": "MN không song song AB vì SM:MA khác 1:1."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P13",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P13",
     "stem": "Hình chóp \\(S.ABCD\\) có đáy hình bình hành. Xác định giao tuyến \\((SAB)\\cap(SCD)\\) bằng điểm và phương. Có được kết luận giao tuyến là AB không?",
     "answer_key": "Đường thẳng qua S, song song AB và CD; không phải AB.",
     "worked_solution": "Hai mặt phẳng phân biệt cùng chứa S, chứa lần lượt hai đường AB,CD song song nhau. Theo định lí giao tuyến của hai mặt phẳng chứa hai đường thẳng song song, giao tuyến qua S và song song AB,CD. Không thể là AB vì S không thuộc mặt đáy.",
@@ -263,13 +447,17 @@
       "TOP15-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Hai mặt phân biệt cùng chứa S và lần lượt chứa hai đường song song."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -277,12 +465,31 @@
       "heading_id": "THPT-TOP15-P13",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu kết luận giao tuyến là AB, kiểm AB không chứa S; giao tuyến phải đi qua S. Ôn CĐ15 mục 2.4; luyện THPT-G11-CHIV-B11-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu kết luận giao tuyến là AB, kiểm AB không chứa S; giao tuyến phải đi qua S. Ôn CĐ15 mục 2.4; luyện THPT-G11-CHIV-B11-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giao tuyến AB."
+      },
+      {
+        "id": "B",
+        "text": "Giao tuyến CD."
+      },
+      {
+        "id": "C",
+        "text": "Đường qua S và song song AD."
+      },
+      {
+        "id": "D",
+        "text": "Đường thẳng qua S, song song AB và CD; không phải AB."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P03",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P03",
     "stem": "Trong hình hộp \\(ABCD.A'B'C'D'\\), xét mặt đáy \\((ABCD)\\). Phân loại vị trí của ba đường \\(AA', A'B', AB\\) với mặt đáy và nêu điểm chung nếu có.",
     "answer_key": "\\(AA'\\) cắt đáy tại A; \\(A'B'\\parallel(ABCD)\\); \\(AB\\subset(ABCD)\\).",
     "worked_solution": "A thuộc đáy, \\(A'\\) nằm ngoài đáy nên \\(AA'\\) chỉ cắt đáy tại A. \\(A'B'\\) nằm trong mặt đáy trên song song mặt đáy dưới nên không có điểm chung với \\((ABCD)\\). Hai điểm A,B thuộc đáy nên toàn bộ AB nằm trong đáy. Ba trường hợp tương ứng một, không có và vô số điểm chung.",
@@ -294,13 +501,17 @@
       "TOP15-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng một đường cắt mặt tại một điểm, một đường nằm trong mặt và một đường không có điểm chung."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -308,12 +519,31 @@
       "heading_id": "THPT-TOP15-P03",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu gọi đường nằm trong mặt là song song với mặt, kiểm số điểm chung (vô số so với không có). Ôn CĐ15 mục 3.1; luyện THPT-G11-CHIV-B12-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu gọi đường nằm trong mặt là song song với mặt, kiểm số điểm chung (vô số so với không có). Ôn CĐ15 mục 3.1; luyện THPT-G11-CHIV-B12-C01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(AA'\\) cắt đáy tại A; \\(A'B'\\parallel(ABCD)\\); \\(AB\\subset(ABCD)\\)."
+      },
+      {
+        "id": "B",
+        "text": "AA' nằm trong đáy; A'B' cắt đáy; AB song song đáy."
+      },
+      {
+        "id": "C",
+        "text": "AA' cắt đáy tại A; A'B' nằm trong đáy; AB song song đáy."
+      },
+      {
+        "id": "D",
+        "text": "AA' song song đáy; A'B' song song đáy; AB cắt đáy tại A."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P14",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P14",
     "stem": "Trong hình chóp \\(S.ABCD\\) có đáy là hình bình hành, M,N lần lượt là trung điểm SA,SD. Chứng minh \\(MN\\parallel(ABCD)\\). Nếu thay M,N bằng A,D, kết luận còn đúng không?",
     "answer_key": "\\(MN\\parallel(ABCD)\\); thay bằng A,D thì AD nằm trong đáy, không song song mặt đáy.",
     "worked_solution": "Trong tam giác SAD, MN là đường trung bình nên \\(MN\\parallel AD\\). \\(AD\\subset(ABCD)\\). M là điểm trong SA, mà SA chỉ cắt mặt đáy tại A, nên M không thuộc đáy, suy ra MN không nằm trong đáy. Theo dấu hiệu đường song song mặt phẳng, \\(MN\\parallel(ABCD)\\). Khi \\(M=A,\\ N=D\\), đường AD nằm trong đáy nên có vô số điểm chung, không thỏa định nghĩa song song mặt phẳng.",
@@ -325,13 +555,17 @@
       "TOP15-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Chứng minh \\(MN\\parallel AD\\), \\(AD\\subset(ABCD)\\); kiểm M nằm ngoài đáy."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -339,12 +573,31 @@
       "heading_id": "THPT-TOP15-P14",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu bỏ điều kiện MN không nằm trong mặt, hai đường cùng nằm trong đáy vẫn có thể song song. Ôn CĐ15 mục 3.2; luyện THPT-G11-CHIV-B12-C02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ điều kiện MN không nằm trong mặt, hai đường cùng nằm trong đáy vẫn có thể song song. Ôn CĐ15 mục 3.2; luyện THPT-G11-CHIV-B12-C02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả MN và AD đều song song mặt đáy."
+      },
+      {
+        "id": "B",
+        "text": "\\(MN\\parallel(ABCD)\\); thay bằng A,D thì AD nằm trong đáy, không song song mặt đáy."
+      },
+      {
+        "id": "C",
+        "text": "MN nằm trong mặt đáy, AD song song mặt đáy."
+      },
+      {
+        "id": "D",
+        "text": "MN cắt mặt đáy tại M; AD nằm trong đáy."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P15",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P15",
     "stem": "Trong tứ diện \\(S.ABC\\), M,N lần lượt nằm trong các cạnh SA,SB và \\(MN\\parallel(ABC)\\). Biết \\((SAB)\\cap(ABC)=g=AB\\). Chứng minh \\(MN\\parallel g\\) bằng quan hệ giữa đường thẳng và mặt phẳng.",
     "answer_key": "\\(g=AB\\) và \\(MN\\parallel g\\).",
     "worked_solution": "Vì M,N nằm trong các cạnh SA,SB nên \\(MN\\subset(SAB)\\). Hai mặt \\((SAB),(ABC)\\) cắt nhau theo \\(g=AB\\). Nếu MN cắt g thì điểm chung thuộc \\((ABC)\\), trái giả thiết \\(MN\\parallel(ABC)\\). Do MN và g đồng phẳng trong \\((SAB)\\), không có điểm chung, chúng song song.",
@@ -356,13 +609,17 @@
       "TOP15-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "MN và AB cùng nằm trong (SAB); xét khả năng cắt nhau."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -370,12 +627,31 @@
       "heading_id": "THPT-TOP15-P15",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu MN gặp AB thì gặp mặt đáy, trái với \\(MN\\parallel(ABC)\\); dùng đồng phẳng và không giao. Ôn CĐ15 mục 3.3; luyện THPT-G11-CHIV-B12-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu MN gặp AB thì gặp mặt đáy, trái với \\(MN\\parallel(ABC)\\); dùng đồng phẳng và không giao. Ôn CĐ15 mục 3.3; luyện THPT-G11-CHIV-B12-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "MN cắt AB tại M."
+      },
+      {
+        "id": "B",
+        "text": "MN chéo AB."
+      },
+      {
+        "id": "C",
+        "text": "\\(g=AB\\) và \\(MN\\parallel g\\)."
+      },
+      {
+        "id": "D",
+        "text": "MN trùng AB."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P16",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P16",
     "stem": "Trong tứ diện \\(S.ABC\\), chọn \\(M\\in SA\\) sao cho \\(\\frac{SM}{SA}=\\frac14\\). Dựng \\(N\\in SB,\\ K\\in SC\\) để mặt phẳng \\((MNK)\\) song song đáy; xác định ba tỉ số và dạng thiết diện.",
     "answer_key": "\\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac14\\); thiết diện tam giác MNK.",
     "worked_solution": "Trong \\((SAB)\\), dựng qua M đường song song AB cắt SB tại N; trong \\((SAC)\\), dựng qua M đường song song AC cắt SC tại K. Theo định lí Thalès, \\(\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac{SM}{SA}=\\frac14\\), nên N,K đều trong các cạnh. Vì \\(MN\\parallel AB,\\ MK\\parallel AC\\), và M ngoài \\((ABC)\\), hai đường MN,MK cùng song song mặt đáy; chúng cắt nhau tại M nên \\((MNK)\\parallel(ABC)\\). Thiết diện gồm MN,NK,KM trên ba mặt bên, là tam giác MNK.",
@@ -388,13 +664,17 @@
       "TOP15-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Dựng qua M hai đường lần lượt song song AB và AC trong hai mặt bên."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -402,12 +682,31 @@
       "heading_id": "THPT-TOP15-P16",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ dựng một đoạn song song đáy, chưa xác định mặt; cần hai đường cắt nhau và kiểm điểm trong cạnh. Ôn CĐ15 mục 3.4; luyện THPT-G11-CHIV-B13-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ dựng một đoạn song song đáy, chưa xác định mặt; cần hai đường cắt nhau và kiểm điểm trong cạnh. Ôn CĐ15 mục 3.4; luyện THPT-G11-CHIV-B13-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(SN/SB=SK/SC=3/4\\); thiết diện tam giác."
+      },
+      {
+        "id": "B",
+        "text": "\\(SN/SB=1/4,\\ SK/SC=3/4\\); thiết diện tam giác."
+      },
+      {
+        "id": "C",
+        "text": "Ba tỉ số bằng \\(1/4\\); thiết diện tứ giác."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac14\\); thiết diện tam giác MNK."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P01",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P01",
     "stem": "Thiết diện có điều kiện. Trong tứ diện \\(S.ABC\\), \\(M\\in SA,\\ N\\in SB,\\ K\\in SC\\), biết \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac25\\) nhưng \\(\\frac{SK}{SC}=\\frac35\\). Có \\((MNK)\\parallel(ABC)\\) không? Nếu thay \\(\\frac{SK}{SC}\\) thành \\(\\frac25\\) và diện tích ABC là \\(100\\,\\mathrm{cm}^2\\), tính diện tích MNK.",
     "answer_key": "Không song song; khi ba tỉ số cùng bằng \\(\\frac25\\) thì diện tích MNK bằng \\(16\\,\\mathrm{cm}^2\\).",
     "worked_solution": "Nếu \\((MNK)\\parallel(ABC)\\), giao tuyến MN và AB trong \\((SAB)\\), MK và AC trong \\((SAC)\\) phải song song tương ứng. Theo định lí Thalès, \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac{SK}{SC}\\), trái với \\(\\frac25\\ne\\frac35\\). Khi ba tỉ số cùng bằng \\(\\frac25\\), \\(MN\\parallel AB\\) và \\(MK\\parallel AC\\); do M nằm trong SA và ngoài đáy, cả MN,MK đều song song \\((ABC)\\). Chúng cắt nhau tại M nên hai mặt phẳng song song. Tam giác MNK đồng dạng ABC với tỉ số cạnh \\(\\frac25\\); diện tích bằng \\((\\frac25)^2\\cdot100=16\\,\\mathrm{cm}^2\\). Không nhân diện tích với \\(\\frac25\\).",
@@ -419,13 +718,17 @@
       "TOP15-O17"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Xét các giao tuyến MN, MK với hai mặt bên; kiểm ba tỉ số."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -433,14 +736,33 @@
       "heading_id": "THPT-TOP15-P01",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ thấy \\(MN\\parallel AB\\) mà kết luận hai mặt song song, cần thêm \\(MK\\parallel AC\\), hai đường cắt nhau và không nằm trong đáy; diện tích dùng bình phương tỉ số. Ôn CĐ15 mục 4.4; luyện THPT-G11-CHIV-B13-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ thấy \\(MN\\parallel AB\\) mà kết luận hai mặt song song, cần thêm \\(MK\\parallel AC\\), hai đường cắt nhau và không nằm trong đáy; diện tích dùng bình phương tỉ số. Ôn CĐ15 mục 4.4; luyện THPT-G11-CHIV-B13-P04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không song song; khi ba tỉ số cùng bằng \\(\\frac25\\) thì diện tích MNK bằng \\(16\\,\\mathrm{cm}^2\\)."
+      },
+      {
+        "id": "B",
+        "text": "Có song song; diện tích mới 40 cm²."
+      },
+      {
+        "id": "C",
+        "text": "Không song song; diện tích mới 40 cm²."
+      },
+      {
+        "id": "D",
+        "text": "Có song song; diện tích mới 16 cm²."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P04",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P04",
     "stem": "Trong tứ diện \\(S.ABC\\), M,N,K lần lượt thuộc phần trong các cạnh SA,SB,SC và \\((MNK)\\parallel(ABC)\\). Biết \\(\\frac{SM}{SA}=\\frac35\\), chu vi ABC là 30 cm và diện tích ABC là \\(75\\,\\mathrm{cm}^2\\). Tính chu vi và diện tích MNK. Giải thích vì sao hai phép tính dùng lũy thừa khác nhau.",
-    "answer_key": "Chu vi 18 cm; diện tích \\(27\\,\\mathrm{cm}^2\\).",
+    "answer_key": "Chu vi 18 cm; diện tích \\(27\\,\\mathrm{cm}^2\\), vì chu vi tỉ lệ với \\(3/5\\), diện tích tỉ lệ với \\((3/5)^2\\).",
     "worked_solution": "Vì hai mặt phẳng song song, các giao tuyến tương ứng \\(MN\\parallel AB,\\ NK\\parallel BC,\\ MK\\parallel AC\\). Tam giác MNK đồng dạng ABC với tỉ số cạnh \\(t=\\frac35\\). Chu vi là tổng các độ dài nên bằng \\(\\frac35\\cdot30=18\\,\\mathrm{cm}\\). Diện tích tỉ lệ với bình phương tỉ số đồng dạng, bằng \\((\\frac35)^2\\cdot75=27\\,\\mathrm{cm}^2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -450,13 +772,17 @@
       "TOP15-O17"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tìm tỉ số cạnh từ ba mặt bên, rồi phân biệt chu vi và diện tích."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -464,12 +790,31 @@
       "heading_id": "THPT-TOP15-P04",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhân cả chu vi và diện tích với t, diện tích phải nhân \\(t^2\\) do hai chiều dài cùng đổi t lần. Ôn CĐ15 mục 4.4; luyện THPT-G11-CHIV-B13-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhân cả chu vi và diện tích với t, diện tích phải nhân \\(t^2\\) do hai chiều dài cùng đổi t lần. Ôn CĐ15 mục 4.4; luyện THPT-G11-CHIV-B13-P04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chu vi 18 cm; diện tích 45 cm²."
+      },
+      {
+        "id": "B",
+        "text": "Chu vi 18 cm; diện tích \\(27\\,\\mathrm{cm}^2\\), vì chu vi tỉ lệ với \\(3/5\\), diện tích tỉ lệ với \\((3/5)^2\\)."
+      },
+      {
+        "id": "C",
+        "text": "Chu vi 10,8 cm; diện tích 27 cm²."
+      },
+      {
+        "id": "D",
+        "text": "Chu vi 18 cm; diện tích 75 cm²."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P17",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P17",
     "stem": "Trong hình hộp \\(ABCD.A'B'C'D'\\), đặt \\((P)=(ABCD)\\). Xét vị trí tương đối của \\((P)\\) với \\((A'B'C'D'),\\ (ABB'A')\\) và \\((ABC)\\).",
     "answer_key": "\\((P)\\) song song phân biệt mặt đáy trên; cắt \\((ABB'A')\\) theo AB; trùng \\((ABC)\\).",
     "worked_solution": "Hai mặt đáy của hình hộp song song phân biệt. Mặt bên \\((ABB'A')\\) khác mặt đáy và cùng chứa hai điểm A,B phân biệt, nên giao tuyến là AB. Ba điểm A,B,C không thẳng hàng cùng nằm trong \\((P)\\), do đó \\((ABC)=(P)\\).",
@@ -481,13 +826,17 @@
       "TOP15-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dựa vào điểm chung của các mặt phẳng trong một hình hộp."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -495,14 +844,33 @@
       "heading_id": "THPT-TOP15-P17",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu hai mặt có tên khác mà kết luận phân biệt, kiểm chúng có cùng chứa ba điểm không thẳng hàng hay không. Ôn CĐ15 mục 4.1; luyện THPT-G11-CHIV-B13-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu hai mặt có tên khác mà kết luận phân biệt, kiểm chúng có cùng chứa ba điểm không thẳng hàng hay không. Ôn CĐ15 mục 4.1; luyện THPT-G11-CHIV-B13-C01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ba mặt phẳng đều song song phân biệt với (P)."
+      },
+      {
+        "id": "B",
+        "text": "Đáy trên trùng (P); mặt bên cắt (P) theo AA'; (ABC) song song (P)."
+      },
+      {
+        "id": "C",
+        "text": "\\((P)\\) song song phân biệt mặt đáy trên; cắt \\((ABB'A')\\) theo AB; trùng \\((ABC)\\)."
+      },
+      {
+        "id": "D",
+        "text": "Đáy trên song song (P); mặt bên cũng song song (P); (ABC) trùng (P)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P18",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P18",
     "stem": "Trong \\((P)\\), hai đường a,b cắt nhau và đều song song \\((Q)\\). Kết luận quan hệ \\((P),(Q)\\). Nếu \\(a\\parallel b\\) thay vì cắt nhau, hãy dùng hình hộp làm phản ví dụ.",
-    "answer_key": "\\((P)\\parallel(Q)\\) nếu a,b cắt nhau; nếu \\(a\\parallel b\\) thì chưa đủ.",
+    "answer_key": "(P) song song (Q) khi a,b cắt nhau. Nếu a,b song song thì chưa đủ: trong hình hộp, hai đường trong đáy cùng song song AB và không trùng AB đều song song mặt bên ABB'A', nhưng hai mặt cắt nhau theo AB.",
     "worked_solution": "Theo dấu hiệu nhận biết, hai đường cắt nhau trong \\((P)\\) cùng song song \\((Q)\\) suy ra \\((P)\\parallel(Q)\\). Phản ví dụ: trong hình hộp, lấy \\((P)=(ABCD),\\ (Q)=(ABB'A')\\), \\(a=CD\\), b là đường qua trung điểm AD và BC. a,b cùng song song AB và nằm trong đáy; cả hai không gặp AB, giao tuyến duy nhất của \\((P),(Q)\\), nên a,b đều song song \\((Q)\\). Nhưng \\((P),(Q)\\) cắt nhau theo AB. Điều kiện a,b cắt nhau là thiết yếu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -512,13 +880,17 @@
       "TOP15-O15"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Cần hai đường cắt nhau nằm trong mặt thứ nhất, đều song song mặt thứ hai."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -526,12 +898,31 @@
       "heading_id": "THPT-TOP15-P18",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu thay bằng hai đường song song, hãy tìm phản ví dụ ở hai mặt kề của hình hộp. Ôn CĐ15 mục 4.2; luyện THPT-G11-CHIV-B13-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu thay bằng hai đường song song, hãy tìm phản ví dụ ở hai mặt kề của hình hộp. Ôn CĐ15 mục 4.2; luyện THPT-G11-CHIV-B13-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Một đường song song (Q) là đủ, không cần b."
+      },
+      {
+        "id": "B",
+        "text": "Hai đường song song nhau và song song (Q) luôn đủ."
+      },
+      {
+        "id": "C",
+        "text": "Hai đường cắt nhau trong (P) và song song (Q) suy ra (P) cắt (Q)."
+      },
+      {
+        "id": "D",
+        "text": "(P) song song (Q) khi a,b cắt nhau. Nếu a,b song song thì chưa đủ: trong hình hộp, hai đường trong đáy cùng song song AB và không trùng AB đều song song mặt bên ABB'A', nhưng hai mặt cắt nhau theo AB."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P19",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P19",
     "stem": "Trong hình hộp \\(ABCD.A'B'C'D'\\), mặt phẳng \\((ACC'A')\\) cắt hai mặt đáy theo những đường nào? Chứng minh hai giao tuyến song song mà không dựa vào hình vẽ.",
     "answer_key": "Giao tuyến AC và \\(A'C'\\); \\(AC\\parallel A'C'\\).",
     "worked_solution": "Mặt \\((ACC'A')\\) và đáy dưới có hai điểm chung phân biệt A,C nên giao theo AC. Với đáy trên, hai điểm chung \\(A',C'\\) xác định giao tuyến \\(A'C'\\). Vì hai đáy song song phân biệt và cùng bị một mặt phẳng thứ ba cắt, hai giao tuyến AC, \\(A'C'\\) song song. Cũng có thể chứng minh chúng đồng phẳng trong \\((ACC'A')\\) và không có điểm chung.",
@@ -543,13 +934,17 @@
       "TOP15-O16"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Hai mặt đáy song song và mặt thứ ba cắt cả hai."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -557,12 +952,31 @@
       "heading_id": "THPT-TOP15-P19",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu hai giao tuyến cắt nhau thì điểm cắt thuộc cả hai đáy, trái giả thiết; cả hai đồng phẳng trong mặt thứ ba. Ôn CĐ15 mục 4.3; luyện THPT-G11-CHIV-B13-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu hai giao tuyến cắt nhau thì điểm cắt thuộc cả hai đáy, trái giả thiết; cả hai đồng phẳng trong mặt thứ ba. Ôn CĐ15 mục 4.3; luyện THPT-G11-CHIV-B13-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giao tuyến AC và \\(A'C'\\); \\(AC\\parallel A'C'\\)."
+      },
+      {
+        "id": "B",
+        "text": "AB và A'B', song song."
+      },
+      {
+        "id": "C",
+        "text": "AC và A'C', cắt nhau."
+      },
+      {
+        "id": "D",
+        "text": "AA' và CC', song song."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P05",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P05",
     "stem": "Bài mở rộng liên hệ tọa độ không gian (đọc sau CĐ13): Ảnh suy biến. Cho \\(T(x;y;z)=(x-z;y;0)\\). Tìm ảnh của \\(U(1;2;3)\\) và \\(V(3;2;5)\\); xác định ảnh của cả đoạn UV; nêu điều kiện phương làm đoạn co thành điểm.",
     "answer_key": "\\(T(U)=T(V)=(-2;2;0)\\); ảnh đoạn UV là một điểm \\((-2;2;0)\\); đoạn khác 0 co thành điểm khi phương UV song song phương chiếu có vectơ chỉ phương \\((1;0;1)\\).",
     "worked_solution": "\\(T(U)=(1-3;2;0)=(-2;2;0)\\), \\(T(V)=(3-5;2;0)=(-2;2;0)\\). Điểm bất kỳ trên UV có tọa độ \\((1+2\\lambda;2;3+2\\lambda)\\), \\(0\\le\\lambda\\le1\\), nên ảnh luôn là \\((-2;2;0)\\). Vì \\(\\overrightarrow{UV}=(2;0;2)=2(1;0;1)\\), đoạn UV song song phương chiếu. Tổng quát, hai điểm phân biệt có cùng ảnh khi và chỉ khi vectơ nối chúng cùng phương với vectơ \\((1;0;1)\\): hiệu hai tọa độ y bằng 0 và hiệu hai tọa độ x bằng hiệu hai tọa độ z. Có thể hiểu hình học: UV song song phương chiếu nên tất cả điểm của UV cùng chiếu đến một điểm.",
@@ -574,13 +988,17 @@
       "TOP15-O19"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Tính ảnh hai đầu mút và xét hiệu tọa độ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -588,12 +1006,31 @@
       "heading_id": "THPT-TOP15-P05",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu hai ảnh trùng, mọi điểm trên đường song song phương chiếu có cùng ảnh; không suy đoạn gốc có độ dài 0. Ôn CĐ15 mục 5.2; luyện THPT-G11-CHIV-B14-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu hai ảnh trùng, mọi điểm trên đường song song phương chiếu có cùng ảnh; không suy đoạn gốc có độ dài 0. Ôn CĐ15 mục 5.2; luyện THPT-G11-CHIV-B14-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(T(U)=T(V)=(-2;2;0)\\); phương co thành điểm là \\((1;0;-1)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(T(U)=T(V)=(-2;2;0)\\); ảnh đoạn UV là một điểm \\((-2;2;0)\\); đoạn khác 0 co thành điểm khi phương UV song song phương chiếu có vectơ chỉ phương \\((1;0;1)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(T(U)=(1;2;0),T(V)=(3;2;0)\\); ảnh là đoạn dài 2."
+      },
+      {
+        "id": "D",
+        "text": "\\(T(U)=(-2;2;0),T(V)=(-2;2;0)\\); ảnh vẫn là một đoạn không suy biến."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P20",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P20",
     "stem": "Trong lăng trụ tam giác \\(ABC.A'B'C'\\), \\(M'\\) là trung điểm \\(A'C'\\). Chiếu song song theo phương \\(AA'\\) lên \\((ABC)\\). Xác định ảnh của \\(C'\\) và \\(M'\\) bằng đường chiếu; có cần giả thiết lăng trụ đứng không?",
     "answer_key": "\\(C'\\) có ảnh C; \\(M'\\) có ảnh trung điểm M của AC; không cần lăng trụ đứng.",
     "worked_solution": "\\(CC'\\parallel AA'\\) và \\(C\\in(ABC)\\), nên đường chiếu qua \\(C'\\) cắt đáy tại C. Gọi M là trung điểm AC. Trong hình bình hành \\(ACC'A'\\), \\(MM'\\parallel AA'\\) (đoạn nối trung điểm hai cạnh đối AC và \\(A'C'\\)). Do \\(M\\in(ABC)\\), ảnh \\(M'\\) là M. Chỉ cần các cạnh bên cùng phương chiếu và không song song mặt đáy, không yêu cầu vuông góc.",
@@ -605,13 +1042,17 @@
       "TOP15-O18"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Qua điểm cần chiếu, dựng đường theo phương chiếu và tìm giao với mặt."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -619,12 +1060,31 @@
       "heading_id": "THPT-TOP15-P20",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chọn hình chiếu vuông góc khi đề cho phương khác, ảnh sẽ sai; kiểm đường chiếu song song phương đã chọn. Ôn CĐ15 mục 5.1; luyện THPT-G11-CHIV-B14-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn hình chiếu vuông góc khi đề cho phương khác, ảnh sẽ sai; kiểm đường chiếu song song phương đã chọn. Ôn CĐ15 mục 5.1; luyện THPT-G11-CHIV-B14-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "C' chiếu thành C; M' chiếu thành A; cần lăng trụ đứng."
+      },
+      {
+        "id": "B",
+        "text": "C' chiếu thành A; M' chiếu thành C."
+      },
+      {
+        "id": "C",
+        "text": "\\(C'\\) có ảnh C; \\(M'\\) có ảnh trung điểm M của AC; không cần lăng trụ đứng."
+      },
+      {
+        "id": "D",
+        "text": "C' chiếu thành C; M' chiếu thành trung điểm AC; bắt buộc lăng trụ đứng."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P21",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P21",
     "stem": "Trong lăng trụ \\(ABC.A'B'C'\\), P,Q phân biệt nằm trên đường thẳng \\(BB'\\). Chiếu theo phương \\(AA'\\) xuống \\((ABC)\\). Ảnh đường \\(BB'\\) và ảnh đoạn PQ là gì? Vì sao?",
     "answer_key": "Cả đường \\(BB'\\) và đoạn PQ có ảnh là một điểm B.",
     "worked_solution": "\\(BB'\\parallel AA'\\). Qua mọi điểm X thuộc \\(BB'\\), đường thẳng theo phương chiếu \\(AA'\\) chính là \\(BB'\\). Đường này gặp mặt đáy duy nhất tại B. Vì vậy tất cả các điểm của \\(BB'\\), kể cả mọi điểm thuộc PQ, có cùng ảnh B.",
@@ -636,13 +1096,17 @@
       "TOP15-O19"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đường song song phương chiếu có mọi điểm cùng một đường chiếu."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -650,12 +1114,31 @@
       "heading_id": "THPT-TOP15-P21",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu cho ảnh vẫn là đường, kiểm mọi điểm trên đường gốc đều chiếu tới cùng giao điểm. Ôn CĐ15 mục 5.2; luyện THPT-G11-CHIV-B14-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho ảnh vẫn là đường, kiểm mọi điểm trên đường gốc đều chiếu tới cùng giao điểm. Ôn CĐ15 mục 5.2; luyện THPT-G11-CHIV-B14-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đường BB' có ảnh là AB; đoạn PQ có ảnh là B."
+      },
+      {
+        "id": "B",
+        "text": "Cả hai có ảnh là đoạn AB."
+      },
+      {
+        "id": "C",
+        "text": "Đường BB' có ảnh là B'; đoạn PQ có ảnh là P."
+      },
+      {
+        "id": "D",
+        "text": "Cả đường \\(BB'\\) và đoạn PQ có ảnh là một điểm B."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-P22",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P22",
     "stem": "Trong lăng trụ \\(ABC.A'B'C'\\), \\(M'\\) là một điểm trên đoạn \\(A'B'\\), chiếu song song theo \\(AA'\\) lên đáy \\((ABC)\\) được M. Biết \\(AB=20\\,\\mathrm{cm},\\ AM=4\\,\\mathrm{cm}\\). Tìm tỉ số \\(A'M':M'B'\\). Nếu đổi sang chiếu theo phương \\(A'B'\\) thì có xác định ảnh lên \\((ABC)\\) cho mọi điểm không?",
     "answer_key": "\\(A'M':M'B'=1:4\\). Không thể dùng phương \\(A'B'\\) để chiếu lên \\((ABC)\\) cho mọi điểm vì phương ấy song song mặt đáy.",
     "worked_solution": "Với phương \\(AA'\\), hai đầu \\(A',B'\\) có ảnh A,B phân biệt; phép chiếu bảo toàn tỉ số trên đoạn không suy biến. \\(MB=20-4=16\\,\\mathrm{cm}\\), nên \\(A'M':M'B'=AM:MB=4:16=1:4\\). Nếu đổi phương chiếu thành \\(A'B'\\) thì phương này song song AB trong mặt đáy. Đường qua một điểm ở mặt đáy trên theo phương đó nằm trong mặt đáy trên và không cắt mặt đáy dưới, nên không xác định được phép chiếu song song lên đáy cho mọi điểm.",
@@ -667,13 +1150,17 @@
       "TOP15-O20"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Từ AB và AM tính MB, rồi dùng tính chất bảo toàn tỉ số; kiểm phương chiếu mới có cắt được mặt đáy không."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -681,7 +1168,26 @@
       "heading_id": "THPT-TOP15-P22",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu lấy tỉ số \\(4:20\\), phải dùng hai đoạn AM và MB, không phải AM và AB. Nếu phương chiếu song song mặt đích, đường chiếu qua điểm ngoài mặt không có giao điểm. Ôn CĐ15 mục 5.1, 5.3; luyện THPT-G11-CHIV-B14-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy tỉ số \\(4:20\\), phải dùng hai đoạn AM và MB, không phải AM và AB. Nếu phương chiếu song song mặt đích, đường chiếu qua điểm ngoài mặt không có giao điểm. Ôn CĐ15 mục 5.1, 5.3; luyện THPT-G11-CHIV-B14-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A'M':M'B'=1:4\\). Không thể dùng phương \\(A'B'\\) để chiếu lên \\((ABC)\\) cho mọi điểm vì phương ấy song song mặt đáy."
+      },
+      {
+        "id": "B",
+        "text": "Tỉ số 1:5; có thể đổi phương chiếu."
+      },
+      {
+        "id": "C",
+        "text": "Tỉ số 4:1; không thể đổi phương chiếu."
+      },
+      {
+        "id": "D",
+        "text": "Tỉ số 1:4; có thể chiếu mọi điểm theo phương A'B'."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
