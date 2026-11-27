@@ -325,10 +325,10 @@
   },
   {
     "item_id": "THPT-G12-YE-M07",
-    "content_version": "G12-YE-XG6-20261127-M07",
+    "content_version": "G12-YE-XG6-20261127-M07.DELTA01",
     "stem": "Tính diện tích hình phẳng giới hạn bởi \\(y=x-1\\), trục \\(Ox\\) và hai đường \\(x=0,\\ x=3\\).",
     "answer_key": "\\(\\frac52\\)",
-    "worked_solution": "Hàm đổi dấu tại \\(x=1\\). Trên \\([0;1]\\) lấy \\(1-x\\), trên \\([1;3]\\) lấy \\(x-1\\). Do đó \\[S=\\int_0^1(1-x)\\,\\mathrm dx+\\int_1^3(x-1)\\,\\mathrm dx=\\frac12+2=\\frac52.\\]",
+    "worked_solution": "Hàm đổi dấu tại \\(x=1\\). Trên \\([0;1]\\) lấy \\(1-x\\), trên \\([1;3]\\) lấy \\(x-1\\). Do đó \n\n\\[\nS=\\int_0^1(1-x)\\,\\mathrm dx+\\int_1^3(x-1)\\,\\mathrm dx=\\frac12+2=\\frac52.\n\\]",
     "skill_ids": [
       "G12-SGK-YE-O02"
     ],
@@ -379,10 +379,10 @@
   },
   {
     "item_id": "THPT-G12-YE-M08",
-    "content_version": "G12-YE-XG6-20261127-M08",
+    "content_version": "G12-YE-XG6-20261127-M08.DELTA01",
     "stem": "Quay miền dưới đồ thị \\(y=\\sqrt{3x}\\), phía trên \\(Ox\\), \\(0\\le x\\le3\\), quanh \\(Ox\\). Tính thể tích khối tròn xoay.",
     "answer_key": "\\(\\frac{27\\pi}2\\)",
-    "worked_solution": "Bán kính tại \\(x\\) là \\(\\sqrt{3x}\\). Diện tích tiết diện là \\(3\\pi x\\). Vậy \\[V=\\pi\\int_0^3 3x\\,\\mathrm dx=3\\pi\\left[\\frac{x^2}{2}\\right]_0^3=\\frac{27\\pi}2.\\]",
+    "worked_solution": "Bán kính tại \\(x\\) là \\(\\sqrt{3x}\\). Diện tích tiết diện là \\(3\\pi x\\). Vậy \n\n\\[\nV=\\pi\\int_0^3 3x\\,\\mathrm dx=3\\pi\\left[\\frac{x^2}{2}\\right]_0^3=\\frac{27\\pi}2.\n\\]",
     "skill_ids": [
       "G12-SGK-YE-O03"
     ],
