@@ -7624,10 +7624,10 @@
   },
   {
     "item_id": "THPT-TOP03-KFT01",
-    "content_version": "TOP03-BANK-CP71-20261126-KFT01",
-    "stem": "Giải \\(3x+2=11\\). Vì sao hai bước chuyển vế và chia cho 3 không làm đổi tập nghiệm?",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-KFT01",
+    "stem": "Giải \\(3x+2=11\\). Vì sao hai bước chuyển vế và chia cho 3 không làm đổi tập nghiệm? Chọn phương án đúng và tự giải thích.",
     "answer_key": "\\(x=3\\); trừ 2 và chia cho 3 là hai phép biến đổi có phép ngược.",
-    "worked_solution": "Trừ 2 ở hai vế được \\(3x=9\\); chia cho \\(3\\ne0\\) được \\(x=3\\). Cả hai bước đều có phép ngược hợp lệ. Thử lại: \\(3\\cdot3+2=11\\). Nếu em dùng dấu tương đương cho phép bình phương mà không kiểm điều kiện, hãy so trường hợp \\(x=3\\) và \\(x=-3\\) khi bình phương hai vế của phương trình \\(x=3\\).\n\n**Kiểm lỗi**\n\nNếu em chỉ tìm một nghiệm sau khi biến đổi hoặc đặt dấu tương đương cho một phép bình phương không có chiều ngược, hãy đọc lại **Kiến thức 1.1**, rồi giải **Bài 1** và **Bài 2** trong Luyện tập. Kiểm từng nghiệm bằng cách thế vào phương trình ban đầu; phân biệt phép trừ/chia hằng số khác 0 với bước có thể sinh nghiệm ngoại lai.",
+    "worked_solution": "Trừ 2 ở hai vế được \\(3x=9\\); chia cho \\(3\\ne0\\) được \\(x=3\\). Cả hai bước đều có phép ngược hợp lệ. Thử lại: \\(3\\cdot3+2=11\\). Nếu em dùng dấu tương đương cho phép bình phương mà không kiểm điều kiện, hãy so trường hợp \\(x=3\\) và \\(x=-3\\) khi bình phương hai vế của phương trình \\(x=3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B01-EQUIVALENCE"
@@ -7636,11 +7636,17 @@
       "TOP03-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Trừ 2 ở cả hai vế rồi chia cho hệ số khác 0."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7652,25 +7658,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=3\\); bình phương luôn tương đương."
+      },
+      {
+        "id": "B",
+        "text": "\\(x=\\frac{13}3\\); cộng 2 rồi chia 3."
+      },
+      {
+        "id": "C",
+        "text": "\\(x=9\\); trừ 2 là đủ."
+      },
+      {
+        "id": "D",
+        "text": "\\(x=3\\); trừ 2 rồi chia cho 3, cả hai bước có phép ngược."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu em chỉ tìm một nghiệm sau khi biến đổi hoặc đặt dấu tương đương cho một phép bình phương không có chiều ngược, hãy đọc lại **Kiến thức 1.1**, rồi giải **Bài 1** và **Bài 4** trong Luyện tập. Kiểm từng nghiệm bằng cách thế vào phương trình ban đầu; phân biệt phép trừ/chia hằng số khác 0 với bước có thể sinh nghiệm ngoại lai."
   },
   {
     "item_id": "THPT-TOP03-KFT02",
-    "content_version": "TOP03-BANK-CP71-20261126-KFT02",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-KFT02",
     "stem": "Giải \\(a(x-1)=0\\) theo tham số a.",
     "answer_key": "Nếu \\(a\\ne0\\), \\(S=\\{1\\}\\); nếu \\(a=0\\), \\(S=\\mathbb R\\).",
-    "worked_solution": "Nếu \\(a\\ne0\\) thì \\(x=1\\); nếu \\(a=0\\) thì mọi \\(x\\in\\mathbb R\\) đều là nghiệm.\n\nNếu quên trường hợp hệ số 0, đặt \\(a=0\\) và thử \\(x=6\\); làm lại Bài 3 và Bài 4 trong phần Luyện tập.",
+    "worked_solution": "Nếu \\(a\\ne0\\) thì \\(x=1\\); nếu \\(a=0\\) thì mọi \\(x\\in\\mathbb R\\) đều là nghiệm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét riêng trường hợp hệ số a bằng 0 trước khi chia."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7682,25 +7714,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(a=0:S=\\mathbb R;\\ a\\ne0:S=\\{1\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{1\\}\\) với mọi \\(a\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(a=0:S=\\varnothing;\\ a\\ne0:S=\\{1\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(a=0:S=\\{0\\};\\ a\\ne0:S=\\mathbb R\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu quên trường hợp hệ số 0, đặt \\(a=0\\) và thử \\(x=6\\); làm lại Bài 2 và Bài 6 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP03-KFT03",
-    "content_version": "TOP03-BANK-CP71-20261126-KFT03",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-KFT03",
     "stem": "Giải \\((x-5)(x+1)=0\\).",
     "answer_key": "\\(S=\\{-1;5\\}\\).",
-    "worked_solution": "\\(x=5\\) hoặc \\(x=-1\\); thử vào từng thừa số.\n\nNếu tìm được một nghiệm mà không xét nhân tử còn lại, quay lại \\(ab=0\\) và làm lại Bài 5 và Bài 6 trong phần Luyện tập.",
+    "worked_solution": "\\(x=5\\) hoặc \\(x=-1\\); thử vào từng thừa số.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Tích bằng 0 khi ít nhất một thừa số bằng 0."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7712,25 +7770,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-5;-1\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{-1;5\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{1;5\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{5\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu tìm được một nghiệm mà không xét nhân tử còn lại, quay lại \\(ab=0\\) và làm lại Bài 3 và Bài 5 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP03-KFT04",
-    "content_version": "TOP03-BANK-CP71-20261126-KFT04",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-KFT04",
     "stem": "Giải \\(x^2+4x+4=0\\).",
     "answer_key": "\\(x=-2\\) (nghiệm kép).",
-    "worked_solution": "\\((x+2)^2=0\\Rightarrow x=-2\\) (nghiệm kép), không phải hai giá trị khác nhau.\n\nNếu \\(\\Delta<0\\) mà em vẫn tìm ra nghiệm thực, hãy thử hoàn thành bình phương. Ví dụ \\(-x^2-1=0\\Leftrightarrow x^2+1=0\\). Vì \\(x^2+1\\ge1>0\\) với mọi số thực x, phương trình vô nghiệm. Nếu hệ số bậc hai âm, đổi dấu cả hai vế trước khi xét tổng dương nghiêm ngặt; chỉ không âm thì chưa đủ để kết luận vô nghiệm. Làm lại Bài 7 và Bài 8 trong phần Luyện tập.",
+    "worked_solution": "\\((x+2)^2=0\\Rightarrow x=-2\\) (nghiệm kép), không phải hai giá trị khác nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Nhận ra bình phương hoàn chỉnh; phân biệt nghiệm kép với hai nghiệm phân biệt."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7742,25 +7826,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{2\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\varnothing\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{-2\\}\\); nghiệm kép."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-2;2\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu \\(\\Delta<0\\) mà em vẫn tìm ra nghiệm thực, hãy thử hoàn thành bình phương. Ví dụ \\(-x^2-1=0\\Leftrightarrow x^2+1=0\\). Vì \\(x^2+1\\ge1>0\\) với mọi số thực x, phương trình vô nghiệm. Nếu hệ số bậc hai âm, đổi dấu cả hai vế trước khi xét tổng dương nghiêm ngặt; chỉ không âm thì chưa đủ để kết luận vô nghiệm. Làm lại Bài 10 và Bài 7 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP03-KFT05",
-    "content_version": "TOP03-BANK-CP71-20261126-KFT05",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-KFT05",
     "stem": "Giải \\(\\frac{x^2-9}{x-3}=0\\).",
     "answer_key": "\\(S=\\{-3\\}\\).",
-    "worked_solution": "Điều kiện \\(x\\ne3\\). Tử số \\((x-3)(x+3)=0\\) cho 3 hoặc −3; loại 3, nghiệm duy nhất −3.\n\nNếu rút gọn rồi kết luận nhận \\(x=3\\), thay \\(x=3\\) vào mẫu để thấy vô nghĩa; làm lại Bài 9 và Bài 10 trong phần Luyện tập.",
+    "worked_solution": "Điều kiện \\(x\\ne3\\). Tử số \\((x-3)(x+3)=0\\) cho 3 hoặc \\(-3\\); loại 3, nghiệm duy nhất \\(-3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Ghi điều kiện mẫu khác 0 rồi mới xét tử số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7772,25 +7882,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-3;3\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{3\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\varnothing\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-3\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu rút gọn rồi kết luận nhận \\(x=3\\), thay \\(x=3\\) vào mẫu để thấy vô nghĩa; làm lại Bài 8 và Bài 11 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP03-KFT06",
-    "content_version": "TOP03-BANK-CP71-20261126-KFT06",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-KFT06",
     "stem": "Giải \\(\\lvert x+3\\rvert=x+3\\).",
     "answer_key": "\\(S=[-3;+\\infty)\\).",
-    "worked_solution": "Vì \\(\\lvert u\\rvert=u\\) khi và chỉ khi \\(u\\ge0\\), ta có \\(x+3\\ge0\\Rightarrow x\\ge-3\\). Thử \\(x=-4\\) cho \\(\\lvert-1\\rvert=1\\ne-1\\).\n\nNếu quên điều kiện \\(B\\ge0\\), thử một x làm B âm; làm lại Bài 11 và Bài 12 trong phần Luyện tập.",
+    "worked_solution": "Vì \\(\\lvert u\\rvert=u\\) khi và chỉ khi \\(u\\ge0\\), ta có \\(x+3\\ge0\\Rightarrow x\\ge-3\\). Thử \\(x=-4\\) cho \\(\\lvert-1\\rvert=1\\ne-1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét dấu của biểu thức bên trong giá trị tuyệt đối."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7802,14 +7938,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=[-3;+\\infty)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=(-\\infty;-3]\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\mathbb R\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=(-3;+\\infty)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu quên điều kiện \\(B\\ge0\\), thử một x làm B âm; làm lại Bài 9 và Bài 12 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP03-KFT07",
-    "content_version": "TOP03-BANK-CP71-20261126-KFT07",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-KFT07",
     "stem": "Giải \\(\\sqrt{x+1}=x\\).",
     "answer_key": "\\(S=\\{\\frac{1+\\sqrt5}{2}\\}\\).",
-    "worked_solution": "Vế trái không âm nên cần \\(x\\ge0\\); điều này cũng bảo đảm \\(x+1\\ge0\\). Trên miền ấy, hai vế không âm nên bình phương là phép tương đương: \\(x+1=x^2\\), suy ra \\(x=\\frac{1\\pm\\sqrt5}{2}\\). Chỉ nghiệm \\(\\frac{1+\\sqrt5}{2}\\ge0\\) thỏa điều kiện. Nghiệm còn lại âm nên không thể bằng căn bậc hai số học.\n\nNếu nhận cả hai nghiệm sau bình phương, kiểm dấu hai vế; làm lại Bài 19 và Bài 20 trong phần Luyện tập.",
+    "worked_solution": "Vế trái không âm nên cần \\(x\\ge0\\); điều này cũng bảo đảm \\(x+1\\ge0\\). Trên miền ấy, hai vế không âm nên bình phương là phép tương đương: \\(x+1=x^2\\), suy ra \\(x=\\frac{1\\pm\\sqrt5}{2}\\). Chỉ nghiệm \\(\\frac{1+\\sqrt5}{2}\\ge0\\) thỏa điều kiện. Nghiệm còn lại âm nên không thể bằng căn bậc hai số học.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_CONDITION",
@@ -7819,11 +7975,17 @@
       "TOP03-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Căn bậc hai không âm; lọc nghiệm theo dấu vế phải."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7835,14 +7997,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{1\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{\\frac{1+\\sqrt5}{2}\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{\\frac{1-\\sqrt5}{2};\\frac{1+\\sqrt5}{2}\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{\\frac{1-\\sqrt5}{2}\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu nhận cả hai nghiệm sau bình phương, kiểm dấu hai vế; làm lại Bài 18 và Bài 14 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP03-KFT08",
-    "content_version": "TOP03-BANK-CP71-20261126-KFT08",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-KFT08",
     "stem": "Giải \\(\\sqrt{x^2+5}=\\sqrt{4x+2}\\).",
     "answer_key": "\\(S=\\{1;3\\}\\).",
-    "worked_solution": "Vì \\(x^2+5>0\\) với mọi x, điều kiện còn lại là \\(4x+2\\ge0\\), tức \\(x\\ge-\\frac12\\). Trên miền đó, bình phương tương đương với \\(x^2+5=4x+2\\), hay \\((x-1)(x-3)=0\\). Hai nghiệm 1 và 3 đều thỏa miền. Thế lại: hai vế lần lượt cùng bằng \\(\\sqrt6\\) khi \\(x=1\\) và \\(\\sqrt{14}\\) khi \\(x=3\\).\n\nNếu quên một miền căn, kiểm riêng từng biểu thức dưới căn trước khi bình phương; làm lại Bài 21, Bài 14 và Bài 18 trong phần Luyện tập.",
+    "worked_solution": "Vì \\(x^2+5>0\\) với mọi x, điều kiện còn lại là \\(4x+2\\ge0\\), tức \\(x\\ge-\\frac12\\). Trên miền đó, bình phương tương đương với \\(x^2+5=4x+2\\), hay \\((x-1)(x-3)=0\\). Hai nghiệm 1 và 3 đều thỏa miền. Thế lại: hai vế lần lượt cùng bằng \\(\\sqrt6\\) khi \\(x=1\\) và \\(\\sqrt{14}\\) khi \\(x=3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_TWO_SIDES",
@@ -7852,11 +8034,17 @@
       "TOP03-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Kiểm cả hai biểu thức dưới căn, sau đó bình phương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7868,14 +8056,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-1;-3\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{1\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{1;3\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{3\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu quên một miền căn, kiểm riêng từng biểu thức dưới căn trước khi bình phương; làm lại Bài 19, Bài 15 và Bài 23 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP03-KFT09",
-    "content_version": "TOP03-BANK-CP71-20261126-KFT09",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-KFT09",
     "stem": "Giải \\(\\sqrt{2x+7}=x+1\\).",
     "answer_key": "\\(S=\\{\\sqrt6\\}\\).",
-    "worked_solution": "Điều kiện gồm \\(2x+7\\ge0\\) và \\(x+1\\ge0\\), tương đương \\(x\\ge-1\\). Bình phương hai vế không âm được \\(2x+7=(x+1)^2\\), tức \\(x^2=6\\). Chỉ \\(x=\\sqrt6\\ge-1\\) được nhận; nghiệm \\(-\\sqrt6\\) làm vế phải âm nên bị loại.\n\nNếu chỉ kiểm biểu thức dưới căn mà quên vế phải không âm, thử nghiệm âm vào đề gốc; làm lại Bài 22, Bài 13, Bài 15 và Bài 16 trong phần Luyện tập.",
+    "worked_solution": "Điều kiện gồm \\(2x+7\\ge0\\) và \\(x+1\\ge0\\), tương đương \\(x\\ge-1\\). Bình phương hai vế không âm được \\(2x+7=(x+1)^2\\), tức \\(x^2=6\\). Chỉ \\(x=\\sqrt6\\ge-1\\) được nhận; nghiệm \\(-\\sqrt6\\) làm vế phải âm nên bị loại.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_CONDITION",
@@ -7885,11 +8093,17 @@
       "TOP03-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Kiểm cả miền căn và điều kiện vế phải không âm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7901,14 +8115,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-\\sqrt6;\\sqrt6\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{-\\sqrt6\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\varnothing\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{\\sqrt6\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu chỉ kiểm biểu thức dưới căn mà quên vế phải không âm, thử nghiệm âm vào đề gốc; làm lại Bài 20, Bài 13, Bài 22 và Bài 16 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP03-KFT10",
-    "content_version": "TOP03-BANK-CP71-20261126-KFT10",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-KFT10",
     "stem": "Giải \\(\\sqrt{x^2+5}=x-2\\) trong \\(\\mathbb R\\).",
     "answer_key": "\\(S=\\varnothing\\).",
-    "worked_solution": "Điều kiện \\(x\\ge2\\). Bình phương được \\(x^2+5=x^2-4x+4\\Rightarrow x=-\\frac14\\), trái miền. Vậy \\(S=\\varnothing\\), không nhận ứng viên.\n\nNếu kết luận nghiệm chỉ bằng giải phương trình sau bình phương, hãy lập bảng ‘ứng viên→miền→dấu→gốc’; làm lại Bài 23, Bài 24 và Bài 25 trong phần Luyện tập.",
+    "worked_solution": "Điều kiện \\(x\\ge2\\). Bình phương được \\(x^2+5=x^2-4x+4\\Rightarrow x=-\\frac14\\), trái miền. Vậy \\(S=\\varnothing\\), không nhận ứng viên.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_FILTER"
@@ -7917,11 +8151,17 @@
       "TOP03-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "So điều kiện dấu với nghiệm của phương trình sau bình phương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7933,25 +8173,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\varnothing\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{-\\frac14\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{\\frac14\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{2\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu kết luận nghiệm chỉ bằng giải phương trình sau bình phương, hãy lập bảng ‘ứng viên→miền→dấu→gốc’; làm lại Bài 24, Bài 21 và Bài 25 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP03-KFT11",
-    "content_version": "TOP03-BANK-CP71-20261126-KFT11",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-KFT11",
     "stem": "Giải \\(x^4-2x^2-3=0\\).",
     "answer_key": "\\(S=\\{-\\sqrt3;\\sqrt3\\}\\).",
-    "worked_solution": "\\(t=x^2\\ge0\\); \\(t^2-2t-3=(t-3)(t+1)=0\\). Chỉ \\(t=3\\) hợp lệ, nên \\(x=\\pm\\sqrt3\\).\n\nNếu suy \\(x^2=-1\\) có nghiệm thực, kiểm tính không âm của bình phương; làm lại Bài 28 và Bài 29 trong phần Luyện tập.",
+    "worked_solution": "\\(t=x^2\\ge0\\); \\(t^2-2t-3=(t-3)(t+1)=0\\). Chỉ \\(t=3\\) hợp lệ, nên \\(x=\\pm\\sqrt3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Đặt \\(t=x^2\\ge0\\), sau đó quay lại biến x."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7963,14 +8229,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-3;3\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{-\\sqrt3;\\sqrt3\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{3\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{\\sqrt3\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu suy \\(x^2=-1\\) có nghiệm thực, kiểm tính không âm của bình phương; làm lại Bài 27 và Bài 28 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP03-KFT12",
-    "content_version": "TOP03-BANK-CP71-20261126-KFT12",
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-KFT12",
     "stem": "Một xe đi 90 km với tốc độ không đổi \\(v>0\\) (km/h). Nếu tăng tốc độ thêm 15 km/h trên cùng quãng đường thì thời gian đi giảm 1 giờ. Tìm v.",
     "answer_key": "\\(v=30\\,\\mathrm{km/h}\\).",
-    "worked_solution": "Gọi v là vận tốc cũ (km/h). Thời gian cũ là \\(\\frac{90}{v}\\) giờ, thời gian mới là \\(\\frac{90}{v+15}\\) giờ. Hiệu thời gian cũ trừ thời gian mới bằng 1 giờ, nên \\(\\frac{90}{v}-\\frac{90}{v+15}=1\\Rightarrow v^2+15v-1350=0\\Rightarrow (v-30)(v+45)=0\\). Lọc \\(v>0\\), nhận \\(v=30\\,\\mathrm{km/h}\\); thời gian lần lượt là 3 giờ và 2 giờ.\n\nNếu quên miền vật lý hoặc điều kiện \\(v(v+15)\\ne0\\), đặt biến và đơn vị lại rồi thử số; làm lại Bài 30, Bài 26, Bài 27 và Bài 31 trong phần Luyện tập.",
+    "worked_solution": "Gọi v là vận tốc cũ (km/h). Thời gian cũ là \\(\\frac{90}{v}\\) giờ, thời gian mới là \\(\\frac{90}{v+15}\\) giờ. Hiệu thời gian cũ trừ thời gian mới bằng 1 giờ, nên \\(\\frac{90}{v}-\\frac{90}{v+15}=1\\Rightarrow v^2+15v-1350=0\\Rightarrow (v-30)(v+45)=0\\). Lọc \\(v>0\\), nhận \\(v=30\\,\\mathrm{km/h}\\); thời gian lần lượt là 3 giờ và 2 giờ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_MODELING"
@@ -7979,11 +8265,17 @@
       "TOP03-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Lập thời gian cũ và mới bằng quãng đường chia vận tốc."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -7995,7 +8287,27 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(v=15\\,\\mathrm{km/h}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(v=60\\,\\mathrm{km/h}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(v=30\\,\\mathrm{km/h}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(v=45\\,\\mathrm{km/h}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu quên miền vật lý hoặc điều kiện \\(v(v+15)\\ne0\\), đặt biến và đơn vị lại rồi thử số; làm lại Bài 30, Bài 26, Bài 29 và Bài 31 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP04-KFT01",
