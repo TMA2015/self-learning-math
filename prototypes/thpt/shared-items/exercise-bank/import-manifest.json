@@ -21510,6 +21510,45 @@
       "limitations": "Scoped AUTHOR_SELF_VERIFIED only; no independent review, fresh original S1 PDF visual or exhaustive Academic/PED/Written PASS. Historical chapter source explicitly records S1 fidelity pending; do not silently upgrade. No new figure or runtime.",
       "next": "G10 ChI–III family review with MCQ options and complete source; then remaining G10/G11, Written CP108 ambiguity and interaction classification.",
       "release_authorization": false
+    },
+    "coverage_depth_cp112": {
+      "base": "3259101c5db00fdae61e4b8d6820e243d1c2138b",
+      "head": "e9d511213433dde55e867b2c91fffe6b658b98eb",
+      "scope": "G10 ChI–III",
+      "review": {
+        "records": 80,
+        "mcq_options": 23,
+        "written_projections": 6,
+        "note": "Read stems, keys, solutions and all options for 16 ChII and 7 ChIII MCQs; no incorrect key found. Reviewed CD01 own items and CD02 relevant linear inequality tasks; no claim of full Topic audit."
+      },
+      "shards": [
+        {
+          "path": "items/g10-chi.json",
+          "sha": "337ed7fb4fd33335433c394444d361b19408bf09"
+        },
+        {
+          "path": "items/g10-chiii.json",
+          "sha": "1836318daa1889abdb0d3f9cc713f5bad026f9af"
+        }
+      ],
+      "changes": [
+        {
+          "id": "THPT-G10-B01-P05",
+          "reason": "Negate universally quantified conjunction on [0;3]; distinguish or from and, counterexample x=3."
+        },
+        {
+          "id": "THPT-G10-B02-P02",
+          "reason": "Reconstruct A from complement in V and compare complement in U; A={2,4,6}, U\\A={1,3,5,7,8}, added elements {1,7,8}."
+        },
+        {
+          "id": "THPT-G10-B06-P06",
+          "reason": "Inverse triangle area, sin A=1/2 gives angles 30 and 150 degrees, cosine gives distinct lengths sqrt(61±30sqrt(3)); both between 1 and 11, obtuse condition selects larger."
+        }
+      ],
+      "verification": "3/80 changed, 77 unchanged; ChII entirely unchanged; preserve options, original metadata, IDs, skills, mode, placements. Math delimiters balanced. All three SGK Practice; B01/B02 CD01 Practice, B02 public replay only. Exact source blobs ChI 95a554e31a613b8e215679fe6790738473d598df, ChII acea9776d1c7534a4cd0cd28e98db26dedf0c122, ChIII 6320aeaa89bd51c514b07461e01fad5e3aca833f.",
+      "limitations": "Scoped author self verification, no fresh S1 PDF scan or independent review, no full bank PASS, no new illustration. Topic placement beyond checked scopes not fully inventoried.",
+      "next": "Review G10 ChIV onward with source and options; resolve Written wording CP108 and interaction classification within authorized scope.",
+      "release_authorization": false
     }
   }
 }
