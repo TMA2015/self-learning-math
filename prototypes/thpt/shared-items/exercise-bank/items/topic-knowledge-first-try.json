@@ -6168,7 +6168,7 @@
     "content_version": "CD01-BANK-CP121-20261127-KFT01",
     "stem": "“\\(2k+1\\) là số lẻ”, với \\(k\\in\\mathbb Z\\), là mệnh đề hay phát biểu chứa biến? Nếu viết “Với mọi \\(k\\in\\mathbb Z\\), \\(2k+1\\) là số lẻ”, em có thể kết luận gì? Chọn phương án đúng; tự giải thích trước khi xem lời giải.",
     "answer_key": "Câu đầu chứa biến chưa được lượng hóa; câu thứ hai là mệnh đề đúng.",
-    "worked_solution": "Câu đầu còn chứa biến \\(k\\) chưa được lượng hóa. Câu thứ hai là một mệnh đề đúng: mọi số nguyên \\(k\\) đều cho biểu thức \\(2k+1\\) có dạng số lẻ. Nếu em vẫn phân vân, thử \\(k=0\\) và \\(k=2\\), rồi phân biệt việc kiểm vài giá trị với một lời khẳng định cho **mọi** số nguyên.\n\n**Kiểm lỗi**\n\nNếu em chỉ thử vài giá trị rồi kết luận cho *mọi* số nguyên, em đã nhầm kiểm tra ví dụ với chứng minh. Hãy đọc lại **Kiến thức 1.1**, rồi làm **Bài 2** trong Luyện tập: phân biệt biến chưa gán, mệnh đề có lượng từ “mọi” và mệnh đề “tồn tại”.",
+    "worked_solution": "Câu đầu còn chứa biến \\(k\\) chưa được lượng hóa. Câu thứ hai là một mệnh đề đúng: mọi số nguyên \\(k\\) đều cho biểu thức \\(2k+1\\) có dạng số lẻ. Nếu em vẫn phân vân, thử \\(k=0\\) và \\(k=2\\), rồi phân biệt việc kiểm vài giá trị với một lời khẳng định cho **mọi** số nguyên.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B01-PROPOSITION",
@@ -6219,14 +6219,15 @@
         "id": "D",
         "text": "Câu đầu chứa biến; câu có lượng từ “mọi” là mệnh đề sai."
       }
-    ]
+    ],
+    "remediation": "Nếu em chỉ thử vài giá trị rồi kết luận cho *mọi* số nguyên, em đã nhầm kiểm tra ví dụ với chứng minh. Hãy đọc lại **Kiến thức 1.1**, rồi làm **Bài 3** trong Luyện tập: phân biệt biến chưa gán, mệnh đề có lượng từ “mọi” và mệnh đề “tồn tại”."
   },
   {
     "item_id": "THPT-TOP01-KFT02",
     "content_version": "CD01-BANK-CP121-20261127-KFT02",
     "stem": "Hãy phủ định hai phát biểu “\\(t\\ge5\\)” và “\\(t<-1\\)”, với \\(t\\in\\mathbb R\\). Chọn phương án đúng; tự giải thích trước khi xem lời giải.",
     "answer_key": "Hai phủ định là \\(t<5\\) và \\(t\\ge-1\\).",
-    "worked_solution": "Hai phủ định lần lượt là \\(t<5\\) và \\(t\\ge-1\\). Nếu em viết \\(t\\le5\\), hãy thử ngay \\(t=5\\): cả phát biểu gốc và câu mới đều đúng, nên đó không thể là phép phủ định.\n\n**Kiểm lỗi**\n\nNếu em viết phủ định của “t lớn hơn hoặc bằng 5” thành “t nhỏ hơn hoặc bằng 5”, hai câu cùng đúng tại \\(t=5\\), nên chưa thực sự phủ định nhau. Hãy xem lại **Kiến thức 1.2**, rồi làm **Bài 3** và **Bài 4** trong Luyện tập để tập đổi đúng giá trị chân lý và dấu bằng.",
+    "worked_solution": "Hai phủ định lần lượt là \\(t<5\\) và \\(t\\ge-1\\). Nếu em viết \\(t\\le5\\), hãy thử ngay \\(t=5\\): cả phát biểu gốc và câu mới đều đúng, nên đó không thể là phép phủ định.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B01-NEGATION"
@@ -6276,14 +6277,15 @@
         "id": "D",
         "text": "\\(t<5\\) và \\(t>-1\\)."
       }
-    ]
+    ],
+    "remediation": "Nếu em viết phủ định của “t lớn hơn hoặc bằng 5” thành “t nhỏ hơn hoặc bằng 5”, hai câu cùng đúng tại \\(t=5\\), nên chưa thực sự phủ định nhau. Hãy xem lại **Kiến thức 1.2**, rồi làm **Bài 2** và **Bài 10** trong Luyện tập để tập đổi đúng giá trị chân lý và dấu bằng."
   },
   {
     "item_id": "THPT-TOP01-KFT04",
     "content_version": "CD01-BANK-CP121-20261127-KFT04",
     "stem": "Với \\(x\\in\\mathbb R\\), bạn An viết: “\\(x^2=9\\) khi và chỉ khi \\(x=3\\)”. Em có đồng ý không? Nếu chỉ xét \\(x\\ge0\\), kết luận thay đổi thế nào? Chọn phương án đúng; tự giải thích trước khi xem lời giải.",
     "answer_key": "Sai trên \\(\\mathbb R\\) (phản ví dụ \\(x=-3\\)); đúng trên miền \\(x\\ge0\\).",
-    "worked_solution": "Trên \\(\\mathbb R\\), phát biểu **sai**. Từ \\(x=3\\) suy ra \\(x^2=9\\), nhưng chiều ngược sai vì \\(x=-3\\) cũng có bình phương bằng 9. Nếu biết thêm \\(x\\ge0\\), phương trình \\(x^2=9\\) chỉ nhận \\(x=3\\), nên hai chiều đều đúng. Khi kiểm tra “khi và chỉ khi”, em cần đọc cả **miền xét** và chứng minh hai hướng.\n\n**Kiểm lỗi**\n\nNếu em bỏ sót nghiệm âm \\(x=-3\\), em đã chứng minh chiều ngược trên miền hẹp hơn đề bài. Hãy đọc lại **Kiến thức 1.4**, rồi làm **Bài 9** trong Luyện tập: viết hai chiều ra riêng và kiểm tra một phản ví dụ nếu một chiều không đúng.",
+    "worked_solution": "Trên \\(\\mathbb R\\), phát biểu **sai**. Từ \\(x=3\\) suy ra \\(x^2=9\\), nhưng chiều ngược sai vì \\(x=-3\\) cũng có bình phương bằng 9. Nếu biết thêm \\(x\\ge0\\), phương trình \\(x^2=9\\) chỉ nhận \\(x=3\\), nên hai chiều đều đúng. Khi kiểm tra “khi và chỉ khi”, em cần đọc cả **miền xét** và chứng minh hai hướng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B01-EQUIVALENCE"
@@ -6333,14 +6335,15 @@
         "id": "D",
         "text": "Sai trên \\(\\mathbb R\\) vì \\(x=-3\\); đúng khi \\(x\\ge0\\)."
       }
-    ]
+    ],
+    "remediation": "Nếu em bỏ sót nghiệm âm \\(x=-3\\), em đã chứng minh chiều ngược trên miền hẹp hơn đề bài. Hãy đọc lại **Kiến thức 1.4**, rồi làm **Bài 8** trong Luyện tập: viết hai chiều ra riêng và kiểm tra một phản ví dụ nếu một chiều không đúng."
   },
   {
     "item_id": "THPT-TOP01-KFT05",
     "content_version": "CD01-BANK-CP121-20261127-KFT05",
     "stem": "Với mọi số nguyên \\(n\\), tích \\(n(n+1)\\) có luôn là số chẵn không? Hãy viết phủ định của phát biểu rồi chứng minh hoặc bác bỏ phủ định. Chọn phương án đúng; tự giải thích trước khi xem lời giải.",
     "answer_key": "Mệnh đề đúng. Phủ định: tồn tại \\(n\\in\\mathbb Z\\) sao cho \\(n(n+1)\\) lẻ; phủ định sai.",
-    "worked_solution": "Phát biểu **đúng**: trong hai số nguyên liên tiếp \\(n\\) và \\(n+1\\) luôn có một số chẵn, nên tích chia hết cho 2. Phủ định phải là “**Tồn tại** số nguyên \\(n\\) sao cho \\(n(n+1)\\) lẻ”, và phủ định này sai. Chỉ thử vài giá trị \\(n\\) chưa phải chứng minh cho **mọi** số nguyên; hãy giải thích vì sao hai số liên tiếp không thể cùng lẻ.\n\n**Kiểm lỗi**\n\nNếu em chỉ kiểm vài số rồi cho rằng đã chứng minh mệnh đề “mọi”, hãy xét vì sao hai số nguyên liên tiếp không thể cùng lẻ. Ôn **Kiến thức 1.5**, rồi làm **Bài 10** và **Bài 11** trong Luyện tập; phân biệt chứng cứ cho “tồn tại” với lập luận cho “mọi”.",
+    "worked_solution": "Phát biểu **đúng**: trong hai số nguyên liên tiếp \\(n\\) và \\(n+1\\) luôn có một số chẵn, nên tích chia hết cho 2. Phủ định phải là “**Tồn tại** số nguyên \\(n\\) sao cho \\(n(n+1)\\) lẻ”, và phủ định này sai. Chỉ thử vài giá trị \\(n\\) chưa phải chứng minh cho **mọi** số nguyên; hãy giải thích vì sao hai số liên tiếp không thể cùng lẻ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B01-QUANTIFIERS",
@@ -6391,14 +6394,15 @@
         "id": "D",
         "text": "Mệnh đề đúng; phủ định “tồn tại số nguyên \\(n\\) sao cho \\(n(n+1)\\) chẵn” là đúng."
       }
-    ]
+    ],
+    "remediation": "Nếu em chỉ kiểm vài số rồi cho rằng đã chứng minh mệnh đề “mọi”, hãy xét vì sao hai số nguyên liên tiếp không thể cùng lẻ. Ôn **Kiến thức 1.5**, rồi làm **Bài 5** và **Bài 9** trong Luyện tập; phân biệt chứng cứ cho “tồn tại” với lập luận cho “mọi”."
   },
   {
     "item_id": "THPT-TOP01-KFT07",
     "content_version": "CD01-BANK-CP121-20261127-KFT07",
     "stem": "Cho \\(A=\\{-1;0;1;2\\}\\) và \\(B=\\{0;2;4\\}\\). Tìm \\(A\\cap B\\) và \\(A\\cup B\\). Chọn phương án đúng; tự giải thích trước khi xem lời giải.",
     "answer_key": "\\(A\\cap B=\\{0;2\\},\\ A\\cup B=\\{-1;0;1;2;4\\}\\).",
-    "worked_solution": "\\(A\\cap B=\\{0;2\\}\\), còn \\(A\\cup B=\\{-1;0;1;2;4\\}\\). Giao gồm các phần tử xuất hiện ở cả hai tập. Hợp gồm tất cả phần tử của hai tập, mỗi phần tử chỉ ghi một lần.\n\n**Kiểm lỗi**\n\nNếu em bỏ các phần tử chung ra khỏi hợp, em đã hiểu nhầm “hoặc” thành “chỉ thuộc một tập”. Đọc lại **Kiến thức 2.2**, rồi luyện **Bài 14** và **Bài 15**; phần chung thuộc cả giao lẫn hợp nhưng chỉ được viết một lần trong hợp.",
+    "worked_solution": "\\(A\\cap B=\\{0;2\\}\\), còn \\(A\\cup B=\\{-1;0;1;2;4\\}\\). Giao gồm các phần tử xuất hiện ở cả hai tập. Hợp gồm tất cả phần tử của hai tập, mỗi phần tử chỉ ghi một lần.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B02-UNION_INTERSECTION"
@@ -6448,14 +6452,15 @@
         "id": "D",
         "text": "\\(A\\cap B=\\{-1;1;4\\}\\), \\(A\\cup B=\\{-1;0;1;2;4\\}\\)."
       }
-    ]
+    ],
+    "remediation": "Nếu em bỏ các phần tử chung ra khỏi hợp, em đã hiểu nhầm “hoặc” thành “chỉ thuộc một tập”. Đọc lại **Kiến thức 2.2**, rồi luyện **Bài 13** và **Bài 14**; phần chung thuộc cả giao lẫn hợp nhưng chỉ được viết một lần trong hợp."
   },
   {
     "item_id": "THPT-TOP01-KFT08",
     "content_version": "CD01-BANK-CP121-20261127-KFT08",
     "stem": "\\(A=\\{1;3;5\\}\\), \\(B=\\{3;4;5\\}\\). Tính \\(A\\setminus B\\) và \\(B\\setminus A\\). Chọn phương án đúng; tự giải thích trước khi xem lời giải.",
     "answer_key": "\\(A\\setminus B=\\{1\\},\\ B\\setminus A=\\{4\\}\\).",
-    "worked_solution": "A chứa 1 mà B không chứa, nên \\(A\\setminus B=\\{1\\}\\). B chứa 4 mà A không chứa, nên \\(B\\setminus A=\\{4\\}\\). Nếu em đổi nhầm kết quả, hãy đọc lại tên tập **đứng trước dấu \\(\\setminus\\)** và xác định phần tử được giữ.\n\n**Kiểm lỗi**\n\nNếu em đổi hai hiệu cho nhau, em đã quên rằng phần tử được giữ phải thuộc **tập đứng trước phép hiệu**. Xem lại **Kiến thức 2.3**, rồi làm **Bài 16** và **Bài 17** trong Luyện tập, lần lượt gạch những phần tử có mặt ở cả hai tập.",
+    "worked_solution": "A chứa 1 mà B không chứa, nên \\(A\\setminus B=\\{1\\}\\). B chứa 4 mà A không chứa, nên \\(B\\setminus A=\\{4\\}\\). Nếu em đổi nhầm kết quả, hãy đọc lại tên tập **đứng trước dấu \\(\\setminus\\)** và xác định phần tử được giữ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B02-DIFFERENCE"
@@ -6505,14 +6510,15 @@
         "id": "D",
         "text": "\\(A\\setminus B=\\{1\\}\\), \\(B\\setminus A=\\{4\\}\\)."
       }
-    ]
+    ],
+    "remediation": "Nếu em đổi hai hiệu cho nhau, em đã quên rằng phần tử được giữ phải thuộc **tập đứng trước phép hiệu**. Xem lại **Kiến thức 2.3**, rồi làm **Bài 15** và **Bài 16** trong Luyện tập, lần lượt gạch những phần tử có mặt ở cả hai tập."
   },
   {
     "item_id": "THPT-TOP01-KFT09",
     "content_version": "CD01-BANK-CP121-20261127-KFT09",
     "stem": "Trong \\(U=\\{1;2;3;4;5;6;7;8\\}\\), lấy \\(A=\\{2;3;5;7\\}\\). Tìm phần bù của A. Chọn phương án đúng; tự giải thích trước khi xem lời giải.",
     "answer_key": "\\(U\\setminus A=\\{1;4;6;8\\}\\).",
-    "worked_solution": "Bỏ các số 2, 3, 5, 7 của A khỏi U, còn \\(U\\setminus A=\\{1;4;6;8\\}\\). Nếu em chỉ viết “phần bù của A” mà không nêu U, hãy tự hỏi đang loại A khỏi **tập nào**.\n\n**Kiểm lỗi**\n\nNếu em đưa một số ngoài U vào phần bù, em chưa xác định đúng **vũ trụ**. Ôn **Kiến thức 2.4**, rồi làm **Bài 18** và **Bài 19** trong Luyện tập: liệt kê U trước, sau đó loại các phần tử của A, không thêm phần tử khác.",
+    "worked_solution": "Bỏ các số 2, 3, 5, 7 của A khỏi U, còn \\(U\\setminus A=\\{1;4;6;8\\}\\). Nếu em chỉ viết “phần bù của A” mà không nêu U, hãy tự hỏi đang loại A khỏi **tập nào**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B02-COMPLEMENT"
@@ -6562,14 +6568,15 @@
         "id": "D",
         "text": "\\(U\\setminus A=\\{0;1;4;6;8\\}\\)."
       }
-    ]
+    ],
+    "remediation": "Nếu em đưa một số ngoài U vào phần bù, em chưa xác định đúng **vũ trụ**. Ôn **Kiến thức 2.4**, rồi làm **Bài 18** và **Bài 17** trong Luyện tập: liệt kê U trước, sau đó loại các phần tử của A, không thêm phần tử khác."
   },
   {
     "item_id": "THPT-TOP01-KFT10",
     "content_version": "CD01-BANK-CP121-20261127-KFT10",
     "stem": "Cho \\(X=[-2;2)\\), \\(Y=(0;4]\\). Tìm hợp và giao, giải thích việc lấy hay bỏ hai đầu 0,2. Chọn phương án đúng; tự giải thích trước khi xem lời giải.",
     "answer_key": "\\(X\\cap Y=(0;2),\\ X\\cup Y=[-2;4]\\). Trong giao, 0 và 2 bị loại; trong hợp, cả hai được nhận.",
-    "worked_solution": "\\(X\\cap Y=(0;2)\\), còn \\(X\\cup Y=[-2;4]\\). Trong giao, 0 bị Y loại và 2 bị X loại; trong hợp, hai điểm ấy vẫn được nhận bởi ít nhất một tập.\n\n**Kiểm lỗi**\n\nNếu em lấy nhầm 0 hoặc 2 trong giao, hãy kiểm riêng hai câu hỏi “0 có thuộc Y không?” và “2 có thuộc X không?”. Đọc lại **Kiến thức 3.1**, rồi làm **Bài 20** và **Bài 21** trong Luyện tập; thử từng điểm mút trước khi đặt dấu ngoặc.",
+    "worked_solution": "\\(X\\cap Y=(0;2)\\), còn \\(X\\cup Y=[-2;4]\\). Trong giao, 0 bị Y loại và 2 bị X loại; trong hợp, hai điểm ấy vẫn được nhận bởi ít nhất một tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B02-INTERVALS"
@@ -6619,14 +6626,15 @@
         "id": "D",
         "text": "\\(X\\cap Y=[0;2)\\), \\(X\\cup Y=[-2;4)\\)."
       }
-    ]
+    ],
+    "remediation": "Nếu em lấy nhầm 0 hoặc 2 trong giao, hãy kiểm riêng hai câu hỏi “0 có thuộc Y không?” và “2 có thuộc X không?”. Đọc lại **Kiến thức 3.1**, rồi làm **Bài 20** và **Bài 21** trong Luyện tập; thử từng điểm mút trước khi đặt dấu ngoặc."
   },
   {
     "item_id": "THPT-TOP01-KFT11",
     "content_version": "CD01-BANK-CP121-20261127-KFT11",
     "stem": "Lớp có 48 học sinh. Có 26 bạn tham gia CLB Toán, 30 bạn tham gia CLB Tiếng Anh và 40 bạn tham gia **ít nhất một** trong hai CLB. Tìm số bạn tham gia cả hai, chỉ từng CLB và không tham gia CLB nào. Chọn phương án đúng; tự giải thích trước khi xem lời giải.",
     "answer_key": "Cả hai 16; chỉ Toán 10; chỉ Tiếng Anh 14; không tham gia 8.",
-    "worked_solution": "Gọi A là tập thành viên CLB Toán và B là tập thành viên CLB Tiếng Anh. Từ \\(40=26+30-n(A\\cap B)\\), suy ra **16** bạn tham gia cả hai. Chỉ Toán: \\(26-16=10\\); chỉ Tiếng Anh: \\(30-16=14\\); không tham gia: \\(48-40=8\\).  Đây là bài **biết hợp, tìm giao**: biến đổi công thức đếm theo chiều ngược với ví dụ, không cộng thẳng 26 và 30.\n\n**Kiểm lỗi**\n\nNếu em cộng 26 và 30 rồi coi ngay đó là số bạn tham gia ít nhất một câu lạc bộ, phần giao đã bị đếm hai lần. Hãy đọc lại **Kiến thức 3.2**, rồi làm **Bài 22** và **Bài 24** trong Luyện tập; mỗi lần kiểm tổng bốn vùng Ven phải bằng sĩ số lớp.",
+    "worked_solution": "Gọi A là tập thành viên CLB Toán và B là tập thành viên CLB Tiếng Anh. Từ \\(40=26+30-n(A\\cap B)\\), suy ra **16** bạn tham gia cả hai. Chỉ Toán: \\(26-16=10\\); chỉ Tiếng Anh: \\(30-16=14\\); không tham gia: \\(48-40=8\\). Đây là bài **biết hợp, tìm giao**: biến đổi công thức đếm theo chiều ngược với ví dụ, không cộng thẳng 26 và 30.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B02-VENN_MODEL"
@@ -6677,7 +6685,8 @@
         "text": "Cả hai 16; chỉ Toán 10; chỉ Tiếng Anh 14; không tham gia 0."
       }
     ],
-    "check_again": "Bốn miền rời nhau: \\(10+16+14+8=48\\), đúng sĩ số lớp."
+    "check_again": "Bốn miền rời nhau: \\(10+16+14+8=48\\), đúng sĩ số lớp.",
+    "remediation": "Nếu em cộng 26 và 30 rồi coi ngay đó là số bạn tham gia ít nhất một câu lạc bộ, phần giao đã bị đếm hai lần. Hãy đọc lại **Kiến thức 3.2**, rồi làm **Bài 22** và **Bài 23** trong Luyện tập; mỗi lần kiểm tổng bốn vùng Ven phải bằng sĩ số lớp."
   },
   {
     "item_id": "THPT-TOP02-KFT01",
