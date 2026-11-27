@@ -492,16 +492,17 @@
   {
     "item_id": "THPT-G10-B08-P05",
     "content_version": "THPT-G10-CHIV-B07-B08-R01",
-    "stem": "Cho G là trọng tâm tam giác ABC. Rút gọn \\(\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}\\).",
-    "answer_key": "\\(\\vec0\\)",
-    "worked_solution": "Gọi M là trung điểm BC. Theo quy tắc ba điểm, \\(\\overrightarrow{GB}+\\overrightarrow{GC}=2\\overrightarrow{GM}+\\overrightarrow{MB}+\\overrightarrow{MC}=2\\overrightarrow{GM}\\), vì \\(\\overrightarrow{MB}+\\overrightarrow{MC}=\\vec0\\). Trọng tâm G nằm giữa A và M, \\(AG=2GM\\), nên \\(\\overrightarrow{GA}=-2\\overrightarrow{GM}\\). Cộng lại được \\(\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec0\\).",
+    "stem": "Cho tam giác ABC, M là trung điểm BC. Điểm X thỏa mãn \\(\\overrightarrow{XA}+\\overrightarrow{XB}+\\overrightarrow{XC}=\\vec0\\). (a) Dùng quy tắc ba điểm và tính chất trung điểm để chứng minh \\(\\overrightarrow{XA}+\\overrightarrow{XM}+\\overrightarrow{XM}=\\vec0\\). (b) Từ đó xác định vị trí của X trên AM và tỉ số AX:XM. X là điểm nào của tam giác?",
+    "answer_key": "X nằm giữa A và M, \\(AX:XM=2:1\\); X là trọng tâm G của tam giác.",
+    "worked_solution": "Vì M là trung điểm BC nên \\(\\overrightarrow{MB}+\\overrightarrow{MC}=\\vec0\\). Theo quy tắc ba điểm, \\(\\overrightarrow{XB}=\\overrightarrow{XM}+\\overrightarrow{MB}\\) và \\(\\overrightarrow{XC}=\\overrightarrow{XM}+\\overrightarrow{MC}\\). Cộng hai đẳng thức được \\(\\overrightarrow{XB}+\\overrightarrow{XC}=\\overrightarrow{XM}+\\overrightarrow{XM}\\). Thay vào giả thiết, suy ra \\(\\overrightarrow{AX}=\\overrightarrow{XM}+\\overrightarrow{XM}\\). X không thể trùng M, vì khi đó vế phải bằng vectơ-không, buộc A=M, trái với giả thiết tam giác. Tổng hai vectơ XM bằng nhau có cùng hướng với XM và độ dài gấp đôi XM (ghép hai mũi tên cùng hướng). Vì vậy AX và XM cùng hướng, X nằm giữa A và M, đồng thời \\(AX=2XM\\). Trên trung tuyến AM chỉ có một điểm chia đoạn theo tỉ số 2:1 tính từ A; đó chính là trọng tâm G.",
     "skill_ids": [
       "G10-B08-CENTROID"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Gọi M là trung điểm BC, dùng quy tắc ba điểm và tỉ lệ trọng tâm trên trung tuyến."
+      "Tách XB và XC thành các vectơ đi qua M.",
+      "Chuyển XA sang vế kia rồi xét hướng và độ dài của hai vectơ AX, XM."
     ],
     "rubric": null,
     "interaction": {
@@ -518,7 +519,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng ba độ dài thay vì ba vectơ, dùng M là trung điểm BC và \\(AG=2GM\\) để viết hai vectơ đối nhau. Ôn Bài 8 mục 2.2.3; luyện THPT-G10-CHIV-TRY10."
+    "remediation": "Tổng ba vectơ bằng không không có nghĩa tổng ba độ dài bằng không. Dùng trung điểm để rút gọn tổng, rồi xác định hướng và tỉ số trên trung tuyến. Ôn Bài 8; luyện THPT-G10-CHIV-TRY10."
   },
   {
     "item_id": "THPT-G10-B08-P06",
@@ -985,16 +986,17 @@
   {
     "item_id": "THPT-G10-B10-P04",
     "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Cho tam giác \\(A(0;0),B(6;0),C(0;3)\\). Tìm trọng tâm G.",
-    "answer_key": "\\(G(2;1)\\)",
-    "worked_solution": "Tọa độ trọng tâm bằng trung bình cộng tọa độ của ba đỉnh: \\(x_G=\\frac{0+6+0}{3}=2\\), \\(y_G=\\frac{0+0+3}{3}=1\\). Vậy \\(G(2;1)\\).",
+    "stem": "Cho \\(A(-2;1)\\), \\(B(4;3)\\) và \\(G(1;2)\\). Tìm tọa độ C sao cho G là trọng tâm của tam giác ABC. Có thực sự tồn tại tam giác không suy biến thỏa mãn không? Nếu thay G bằng \\(G'(1;3)\\), tìm đỉnh C' tương ứng và kiểm tra lại điều kiện tạo thành tam giác.",
+    "answer_key": "Trường hợp G: ứng viên \\(C(1;2)\\) nằm trên AB, nên không tồn tại tam giác không suy biến. Trường hợp G': \\(C'(1;5)\\); A,B,C' không thẳng hàng, nên tạo thành tam giác có trọng tâm G'.",
+    "worked_solution": "Nếu ABC là tam giác có trọng tâm G thì \\(x_C=3x_G-x_A-x_B\\), \\(y_C=3y_G-y_A-y_B\\). Với G(1;2), ta được \\(C(3-(-2)-4;6-1-3)=C(1;2)\\). Điểm này đúng bằng trung điểm của AB, vì trung điểm là \\((1;2)\\). Do A,B,C thẳng hàng, không có tam giác không suy biến thỏa mãn. Với G'(1;3), công thức cho \\(C'(1;9-1-3)=C'(1;5)\\). Ta có \\(\\overrightarrow{AB}=(6;2)\\), \\(\\overrightarrow{AC'}=(3;4)\\). Hai vectơ không cùng phương: nếu AC' bằng một nửa AB thì tung độ phải bằng 1, không phải 4. Vậy A,B,C' không thẳng hàng. Kiểm lại trung bình ba hoành độ là 1, ba tung độ là 3, nên trọng tâm đúng là G'. Công thức tọa độ chỉ cho ứng viên; cần kiểm giả thiết tam giác trước khi kết luận.",
     "skill_ids": [
       "G10-B10-MIDPOINT_CENTROID"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Cộng ba hoành độ, ba tung độ rồi chia 3."
+      "Giải ngược công thức tọa độ trọng tâm để tìm C.",
+      "Sau khi tìm điểm, kiểm xem AB và AC có cùng phương hay không."
     ],
     "rubric": null,
     "interaction": {
@@ -1011,7 +1013,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy trung điểm thay trọng tâm, cộng đủ ba tọa độ rồi chia 3. Ôn Bài 10 mục ví dụ 3.3; luyện THPT-G10-CHIV-TRY20."
+    "remediation": "Tính đúng tọa độ chưa đủ để khẳng định tồn tại tam giác. Kiểm ba đỉnh không thẳng hàng rồi mới áp dụng công thức trọng tâm. Ôn Bài 10; luyện THPT-G10-CHIV-TRY20."
   },
   {
     "item_id": "THPT-G10-B10-P05",
