@@ -541,15 +541,12 @@ Ví dụ f(x)=x³+x−1: f(0)=−1, f(1)=1, và f là đa thức liên tục tr�
 
 ### THPT-G11-CHV-B15-W01 · WRITTEN · skill_id=G11-B15-LIMIT_ARITHMETIC
 
-**Đề:** (a) Tính lim(n→∞)(2n²+3n)/(n²+1). (b) Giải thích vì sao dãy vₙ=(−1)ⁿ không có giới hạn hữu hạn. (c) Tính 4+2+1+1/2+… và nêu điều kiện công bội.
+**Đề bài:** (a) Tính \(\lim_{n\to\infty}\frac{2n^2+3n}{n^2+1}\). (b) Giải thích vì sao dãy \(v_n=(-1)^n\) không có giới hạn hữu hạn. (c) Tính \(4+2+1+\frac12+\cdots\) và nêu điều kiện công bội.
 
-**Lời giải và lí do:** (a) Chia tử mẫu cho n²: (2+3/n)/(1+1/n²)→2. (b) Dãy con ở chỉ số chẵn bằng 1, ở chỉ số lẻ bằng −1, nên không thể tiến về một giá trị chung. (c) a=4, q=1/2 có |q|<1; S=4/(1−1/2)=8.
+**Lời giải:** (a) Chia tử và mẫu cho \(n^2\): \(\frac{2+3/n}{1+1/n^2}\to2\), vì mẫu có giới hạn 1 khác 0. (b) Dãy con chỉ số chẵn luôn bằng 1, còn chỉ số lẻ luôn bằng -1; hai giới hạn khác nhau nên không có giới hạn chung. (c) Số hạng đầu 4, công bội \(\frac12\), thỏa \(|q|<1\). Tổng riêng \(S_n=\frac{4[1-(1/2)^n]}{1-1/2}\); vì \((1/2)^n\to0\), tổng vô hạn bằng \(8\).
 
-**Rubric 4 điểm:**
-1. Chia tử và mẫu đúng theo bậc n², kết luận giới hạn 2. — 1 điểm.
-2. Giải thích hai dãy con chẵn/lẻ có giới hạn khác nhau. — 1 điểm.
-3. Nhận diện a=4, q=1/2, kiểm tra |q|<1. — 1 điểm.
-4. Tính tổng vô hạn 8, giải thích do qⁿ→0. — 1 điểm.
+**Rubric tự đối chiếu:** 4 điểm: chia bậc \(n^2\), giới hạn 2 (1); hai dãy con (1); số hạng đầu, công bội và điều kiện (1); tổng 8 và lý do hội tụ (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+
 
 ### THPT-G11-CHV-B15-W02-ANCHOR · WRITTEN (ANCHOR TAG) · skill_id=G11-B15-GEOMETRIC_APPLICATION
 
@@ -562,51 +559,39 @@ Ví dụ f(x)=x³+x−1: f(0)=−1, f(1)=1, và f là đa thức liên tục tr�
 
 ### THPT-G11-CHV-B16-W01 · WRITTEN · skill_id=G11-B16-LIMIT_AT_POINT
 
-**Đề:** Cho f(x)=(x²−25)/(x−5) khi x≠5, và f(5)=m. (a) Tìm lim(x→5)f(x). (b) Tìm m để f liên tục tại 5. (c) Tính lim(x→−1⁺)1/(x+1) và lim(x→−1⁻)1/(x+1).
+**Đề bài:** Cho \(f(x)=\frac{x^2-25}{x-5}\) khi \(x\ne5\) và \(f(5)=m\). (a) Tìm \(\lim_{x\to5} f(x)\). (b) Tìm m để f liên tục tại 5. (c) Tính \(\lim_{x\to-1^+}\frac1{x+1}\) và \(\lim_{x\to-1^-}\frac1{x+1}\).
 
-**Lời giải và lí do:** (a) Với x≠5, (x²−25)/(x−5)=x+5, nên giới hạn bằng 10. (b) Cần f(5)=10, tức m=10. (c) Mẫu tiến đến 0 từ phía dương bên phải −1 nên giới hạn +∞; từ phía âm bên trái nên −∞.
+**Lời giải:** (a) Với \(x\ne5\), \(f(x)=\frac{(x-5)(x+5)}{x-5}=x+5\), nên \(\lim_{x\to5}f(x)=10\). (b) Liên tục tại 5 khi và chỉ khi \(f(5)=10\), tức \(m=10\). (c) Từ bên phải, \(x+1>0\) và tiến về 0 nên giới hạn là \(+\infty\); từ bên trái, mẫu âm và tiến về 0 nên giới hạn là \(-\infty\).
 
-**Rubric 4 điểm:**
-1. Phân tích nhân tử và rút gọn đúng với x≠5. — 1 điểm.
-2. Tính giới hạn bằng 10, không thay x=5 vào phân thức gốc. — 1 điểm.
-3. Áp điều kiện liên tục, được m=10. — 1 điểm.
-4. Giải thích dấu mẫu và hai giới hạn một phía đúng. — 1 điểm.
+**Rubric tự đối chiếu:** 4 điểm: phân tích, rút gọn với \(x\ne5\) (1); giới hạn 10 (1); điều kiện liên tục, m (1); xét dấu và hai giới hạn một phía (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+
 
 ### THPT-G11-CHV-B16-W02-ANCHOR · WRITTEN (ANCHOR TAG) · skill_id=G11-B16-ALGEBRAIC_TECHNIQUES
 
-**Đề:** (a) Tính L=lim(x→0)(√(x+9)−3)/x; chỉ ra vì sao cách thế trực tiếp chưa cho đáp số. (b) Tính M=lim(x→−∞)(√(x²+1)+x). Giải thích dấu của x khi biến đổi.
+**Đề bài:** (a) Tính \(L=\lim_{x\to0}\frac{\sqrt{x+9}-3}{x}\), chỉ ra vì sao không thể thế trực tiếp. (b) Tính \(M=\lim_{x\to-\infty}(\sqrt{x^2+1}+x)\), giải thích dấu của x khi biến đổi.
 
-**Lời giải và lí do:** (a) Thế trực tiếp cho dạng 0/0 không xác định. Với x≠0, nhân liên hợp: L=lim 1/(√(x+9)+3)=1/6. (b) Nhân liên hợp: √(x²+1)+x = 1/(√(x²+1)−x). Với x→−∞, mẫu = |x|√(1+1/x²)−x = −x(√(1+1/x²)+1)→+∞; do đó M=0 từ phía dương.
+**Lời giải:** (a) Điều kiện \(x\ge-9,x\ne0\); thế trực tiếp dẫn đến dạng \(\frac00\) chưa kết luận. Nhân liên hợp trên lân cận 0 bỏ điểm 0, phân thức bằng \(\frac1{\sqrt{x+9}+3}\), mẫu tiến đến 6 khác 0, nên \(L=\frac16\). (b) Nhân liên hợp: \(\sqrt{x^2+1}+x=\frac1{\sqrt{x^2+1}-x}\). Khi \(x<0\), \(\sqrt{x^2}=|x|=-x\), nên mẫu bằng \(-x(\sqrt{1+\frac1{x^2}}+1)\to+\infty\). Do đó \(M=0\), biểu thức tiến đến 0 từ phía dương.
 
-**Rubric 4 điểm:**
-1. Nêu được 0/0 là dạng chưa kết luận, kiểm tra miền x+9≥0. — 1 điểm.
-2. Nhân liên hợp và tìm L=1/6 chính xác. — 1 điểm.
-3. Biến đổi M bằng liên hợp, không nhầm √(x²)=x khi x<0. — 1 điểm.
-4. Giải thích mẫu →+∞ nên M→0⁺. — 1 điểm.
+**Rubric tự đối chiếu:** 4 điểm: dạng vô định và miền (1); liên hợp và \(L=\frac16\) (1); liên hợp M và dấu của căn (1); giải thích giới hạn 0 từ phía dương (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+
 
 ### THPT-G11-CHV-B17-W01 · WRITTEN · skill_id=G11-B17-CONTINUITY_POINT
 
-**Đề:** Cho f(x)=2x+k nếu x<1, và f(x)=x²+3 nếu x≥1. (a) Tìm k để f liên tục tại 1. (b) Với g(x)=x³−x−1, chứng minh có ít nhất một nghiệm của g(x)=0 trong (1,2); nói rõ điều gì chưa thể kết luận bằng định lí đổi dấu.
+**Đề bài:** Cho \(f(x)=2x+k\) nếu \(x<1\), và \(f(x)=x^2+3\) nếu \(x\ge1\). (a) Tìm k để f liên tục tại 1. (b) Với \(g(x)=x^3-x-1\), chứng minh có ít nhất một nghiệm \(g(x)=0\) trong \((1;2)\); nói rõ điều gì chưa thể kết luận chỉ bằng định lý đổi dấu.
 
-**Lời giải và lí do:** (a) lim trái tại 1 bằng 2+k; lim phải và f(1) bằng 4, nên 2+k=4→k=2. (b) g liên tục trên [1,2] vì là đa thức; g(1)=−1, g(2)=5 trái dấu, nên tồn tại ít nhất một c∈(1,2) có g(c)=0. Chỉ từ đổi dấu chưa suy nghiệm duy nhất.
+**Lời giải:** (a) \(\lim_{x\to1^-}f(x)=2+k\), \(\lim_{x\to1^+}f(x)=f(1)=4\). Điều kiện cần và đủ \(2+k=4\), nên \(k=2\). (b) g là đa thức nên liên tục trên \([1;2]\). \(g(1)=-1<0,\ g(2)=5>0\); theo định lý giá trị trung gian, tồn tại ít nhất một \(c\in(1;2)\) sao cho \(g(c)=0\). Chỉ từ đổi dấu không suy ra nghiệm duy nhất; muốn kết luận duy nhất cần lập luận riêng.
 
-**Rubric 4 điểm:**
-1. Tìm và so sánh giới hạn trái, phải và f(1). — 1 điểm.
-2. Giải phương trình điều kiện liên tục k=2. — 1 điểm.
-3. Kiểm tra tính liên tục của g và dấu tại hai đầu mút. — 1 điểm.
-4. Kết luận tồn tại nghiệm, không tự suy tính duy nhất. — 1 điểm.
+**Rubric tự đối chiếu:** 4 điểm: tính hai giới hạn và giá trị tại 1 (1); k (1); tính liên tục và dấu hai đầu (1); kết luận tồn tại, không tự suy duy nhất (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+
 
 ### THPT-G11-CHV-B17-W02-ANCHOR · WRITTEN (ANCHOR TAG) · skill_id=G11-B17-CONTINUITY_INTERVAL
 
-**Đề:** (a) Xét tính liên tục của f(x)=√(x+1) trên [−1,3], kể cả hai đầu mút. (b) Cho h(x)=x²+1 nếu x<0, và h(x)=3x+1 nếu x≥0. Chứng minh h liên tục tại 0. (c) Nếu đổi nhánh x≥0 thành 3x+2, điều gì thay đổi?
+**Đề bài:** (a) Xét tính liên tục của \(f(x)=\sqrt{x+1}\) trên \([-1;3]\), kể cả hai đầu mút. (b) Cho \(h(x)=x^2+1\) nếu \(x<0\), và \(h(x)=3x+1\) nếu \(x\ge0\). Chứng minh h liên tục tại 0. (c) Nếu đổi nhánh \(x\ge0\) thành \(3x+2\), điều gì thay đổi?
 
-**Lời giải và lí do:** (a) f có miền xác định x≥−1; liên tục trên (−1,3), lim bên phải ở −1 bằng f(−1)=0 và lim bên trái ở 3 bằng f(3)=2, nên liên tục trên [−1,3]. (b) Lim trái h=1, lim phải h=1, h(0)=1, nên liên tục. (c) Lim trái vẫn 1 nhưng lim phải và h(0)=2: hai giới hạn một phía không khớp, nên gián đoạn tại 0.
+**Lời giải:** (a) Tập xác định là \([-1;+\infty)\); hàm liên tục bên trong đoạn. Tại đầu trái, \(\lim_{x\to-1^+}f(x)=0=f(-1)\); tại đầu phải, \(\lim_{x\to3^-}f(x)=2=f(3)\). Vậy f liên tục trên \([-1;3]\) theo nghĩa một phía ở đầu mút. (b) \(\lim_{x\to0^-}h(x)=1=\lim_{x\to0^+}h(x)=h(0)\), nên h liên tục tại 0. (c) Sau thay đổi, giới hạn trái vẫn 1, giới hạn phải và \(h(0)\) bằng 2. Hai giới hạn một phía khác nhau nên không tồn tại giới hạn hai phía, hàm gián đoạn nhảy tại 0.
 
-**Rubric 4 điểm:**
-1. Xác định đúng miền và tính liên tục bên trong đoạn. — 1 điểm.
-2. Kiểm tra giới hạn một phía đúng tại −1 và 3. — 1 điểm.
-3. So sánh hai giới hạn một phía và giá trị h(0), kết luận liên tục. — 1 điểm.
-4. Phân tích nhánh thay đổi và lí giải gián đoạn, không chỉ nói 'không'. — 1 điểm.
+**Rubric tự đối chiếu:** 4 điểm: miền và tính liên tục bên trong (1); kiểm hai đầu mút (1); kiểm h tại 0 (1); phân tích nhánh thay đổi và kết luận gián đoạn (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+
 
 ## D6 — 6 thẻ hỗ trợ khắc phục, mỗi thẻ năm bước
 
