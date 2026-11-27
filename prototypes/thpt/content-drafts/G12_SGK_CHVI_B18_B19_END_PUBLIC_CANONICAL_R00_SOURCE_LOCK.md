@@ -450,7 +450,7 @@ Xét xúc xắc cân đối, `B={2,4,6}` là “biết ra chẵn”. Khi đã bi
 - **Đề tự biên soạn:** Túi có 3 bi trắng, 2 bi đen. Rút ngẫu nhiên hai bi liên tiếp không hoàn lại, mỗi lượt các bi còn lại đồng khả năng được chọn. Tính xác suất đúng một bi trắng, ghi rõ các nhánh và kiểm kết quả.
 - **Đáp án để tự đối chiếu sau khi làm:** `3/5`.
 - **Giải/Lập luận:** Có hai thứ tự loại trừ nhau: trắng rồi đen, hoặc đen rồi trắng. Nhánh trắng–đen có xác suất \(\frac35\cdot\frac24=\frac3{10}\). Nhánh đen–trắng có xác suất \(\frac25\cdot\frac34=\frac3{10}\). Vì hai nhánh xung khắc, cộng được \(\frac35\). Kiểm: cả hai trắng có xác suất \(\frac35\cdot\frac24=\frac3{10}\); cả hai đen có xác suất \(\frac25\cdot\frac14=\frac1{10}\). Tổng ba trường hợp theo số bi trắng bằng 1.
-- **Rubric tự luận /5:** 1đ phân đúng hai nhánh; 1đ ghi đúng mẫu không hoàn lại; 1đ nhánh trắng–đen; 1đ nhánh đen–trắng; 1đ cộng \(\frac35\) và giải thích xung khắc.
+- **Rubric tự luận /5:** 1đ phân đúng hai nhánh; 1đ ghi đúng mẫu không hoàn lại; 1đ nhánh trắng–đen; 1đ nhánh đen–trắng; 0,5đ cộng \(\frac35\) và giải thích xung khắc; 0,5đ kiểm ba trường hợp theo số bi trắng có tổng xác suất bằng 1.
 
 **D6 — Đường khắc phục đúng outcome `G12-CHVI-B18-O07` (5 bước):** (1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Kết quả lượt đầu làm thay đổi cơ hội của lượt sau. (2) Rà tiền đề: Tính xác suất theo số lượng và công thức nhân; phân biệt hoàn lại/không hoàn lại. (3) Nhận diện bẫy: Sau rút không hoàn lại, mẫu số lượt sau giảm 1; không bỏ sót thứ tự khác. (4) Xem lại `EX-G12-B18-O07` nhưng che bước kết quả, tự làm ra giấy. (5) Thử lại item `THPT-G12-B18-C07` trước, sau đó `THPT-G12-B18-P07`; chỉ mở đáp án khi đã thử, không ghi Mastery.
 
@@ -663,7 +663,7 @@ B xảy ra theo hai đường không trùng: `A rồi B` hoặc `Ā rồi B`. H
 
 #### THPT-G12-B19-W04 — Tự luận Written — yêu cầu trình bày đầy đủ
 - **ITEM_ID:** `THPT-G12-B19-W04` · **OUTCOME_ID:** `G12-CHVI-B19-O04` · **SOURCE_ROLE:** `ORIGINAL_AUTHORED` · **PRIMARY_PLACEMENT:** `SGK_WRITTEN` · **DEPTH:** `WRITTEN_REASONED`.
-- **Đề tự biên soạn:** Một tổ có 40% học viên loại A, xác suất đạt của học viên loại A là 70%, nhóm còn lại đạt 20%. Chọn ngẫu nhiên một người; biết người đó đã đạt, tính xác suất người đó thuộc loại A.
+- **Đề tự biên soạn:** Một tổ có 40% học viên loại A, xác suất đạt của học viên loại A là 70%, nhóm còn lại đạt 20%. Chọn ngẫu nhiên một người; biết người đó đã đạt, tính xác suất người đó thuộc loại A. So sánh ý nghĩa xác suất vừa tính với xác suất đạt của học viên loại A.
 - **Đáp án để tự đối chiếu sau khi làm:** `7/10`.
 - **Giải/Lập luận:** Gọi A là loại A và Đ là biến cố đạt. \(P(A\cap Đ)=0{,}4\cdot0{,}7=0{,}28\). Nhánh còn lại có xác suất đạt \(0{,}6\cdot0{,}2=0{,}12\). Vì vậy \(P(Đ)=0{,}28+0{,}12=0{,}4>0\). Theo Bayes, \(P(A\mid Đ)=\frac{0{,}28}{0{,}4}=0{,}7\). Giá trị này tình cờ bằng \(P(Đ\mid A)=0{,}7\) trong dữ liệu đề bài. Hai xác suất có ý nghĩa và điều kiện khác nhau; không được thay thế chúng bằng nhau trong mọi bài.
 - **Rubric tự luận /5:** 1đ xác định nhóm và điều kiện; 1đ tử \(0{,}28\); 1đ nhánh còn lại \(0{,}12\); 1đ mẫu \(0{,}4\); 1đ hậu nghiệm \(0{,}7\) và phân biệt hai chiều điều kiện.
