@@ -4526,105 +4526,195 @@
     "role": "TOPIC_FIRST_TRY",
     "order": 1,
     "item_id": "THPT-TOP10-KFT01",
-    "outcome_id": "TOP10-O01"
+    "outcome_id": "TOP10-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 2,
     "item_id": "THPT-TOP10-KFT02",
-    "outcome_id": "TOP10-O02"
+    "outcome_id": "TOP10-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 3,
     "item_id": "THPT-TOP10-KFT03",
-    "outcome_id": "TOP10-O03"
+    "outcome_id": "TOP10-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 4,
     "item_id": "THPT-TOP10-KFT04",
-    "outcome_id": "TOP10-O04"
+    "outcome_id": "TOP10-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 5,
     "item_id": "THPT-TOP10-KFT05",
-    "outcome_id": "TOP10-O05"
+    "outcome_id": "TOP10-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 6,
     "item_id": "THPT-TOP10-KFT06",
-    "outcome_id": "TOP10-O06"
+    "outcome_id": "TOP10-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 7,
     "item_id": "THPT-TOP10-KFT07",
-    "outcome_id": "TOP10-O07"
+    "outcome_id": "TOP10-O07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 8,
     "item_id": "THPT-TOP10-KFT08",
-    "outcome_id": "TOP10-O08"
+    "outcome_id": "TOP10-O08",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 9,
     "item_id": "THPT-TOP10-KFT09",
-    "outcome_id": "TOP10-O09"
+    "outcome_id": "TOP10-O09",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 10,
     "item_id": "THPT-TOP10-KFT10",
-    "outcome_id": "TOP10-O10"
+    "outcome_id": "TOP10-O10",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 11,
     "item_id": "THPT-TOP10-KFT11",
-    "outcome_id": "TOP10-O11"
+    "outcome_id": "TOP10-O11",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 12,
     "item_id": "THPT-TOP10-KFT12",
-    "outcome_id": "TOP10-O12"
+    "outcome_id": "TOP10-O12",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 13,
     "item_id": "THPT-TOP10-KFT13",
-    "outcome_id": "TOP10-O13"
+    "outcome_id": "TOP10-O13",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 14,
     "item_id": "THPT-TOP10-KFT14",
-    "outcome_id": "TOP10-O14"
+    "outcome_id": "TOP10-O14",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 15,
     "item_id": "THPT-TOP10-KFT15",
-    "outcome_id": "TOP10-O15"
+    "outcome_id": "TOP10-O15",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
@@ -4639,16 +4729,22 @@
       "line": 503,
       "original_item_id": null,
       "mapping": "SAME_MATHEMATICAL_TASK_REUSE_EXISTING_ID",
-      "remediation": "Nếu em xem lỗ khử được như tiệm cận đứng hoặc tự điền điểm bị loại, đọc **Kiến thức 3.4**, làm **Bài 50** và **Bài 52**. Rút gọn chỉ có giá trị trên miền gốc, rồi mới xét giới hạn.",
+      "remediation": "Nếu em xem lỗ khử được như tiệm cận đứng hoặc tự điền điểm bị loại, đọc **Kiến thức 3.4**, làm **Bài 41** và **Bài 43**. Rút gọn chỉ có giá trị trên miền gốc, rồi mới xét giới hạn.",
       "practice_orders": [
-        50,
-        52
+        41,
+        43
       ],
       "original_practice_orders": [
         50,
         52
       ],
       "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
     }
   },
   {
@@ -4664,15 +4760,21 @@
       "line": 533,
       "original_item_id": null,
       "mapping": "SAME_MATHEMATICAL_TASK_REUSE_EXISTING_ID",
-      "remediation": "Nếu em đòi giới hạn từ phía ngoài miền của một hàm có căn ở mẫu, đọc **Kiến thức 3.5**, làm **Bài 54** và **Bài 55**. Chỉ xét hướng đến điểm nằm trong miền xác định thực.",
+      "remediation": "Nếu em đòi giới hạn từ phía ngoài miền của một hàm có căn ở mẫu, đọc **Kiến thức 3.5**, làm **Bài 44** và **Bài 56**. Chỉ xét hướng đến điểm nằm trong miền xác định thực.",
       "practice_orders": [
-        55
+        56
       ],
       "original_practice_orders": [
         54,
         55
       ],
       "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
     }
   },
   {
@@ -4680,14 +4782,26 @@
     "role": "TOPIC_FIRST_TRY",
     "order": 18,
     "item_id": "THPT-TOP10-KFT18",
-    "outcome_id": "TOP10-O18"
+    "outcome_id": "TOP10-O18",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 19,
     "item_id": "THPT-TOP10-KFT19",
-    "outcome_id": "TOP10-O19"
+    "outcome_id": "TOP10-O19",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
@@ -4702,16 +4816,22 @@
       "line": 635,
       "original_item_id": null,
       "mapping": "SAME_MATHEMATICAL_TASK_REUSE_EXISTING_ID",
-      "remediation": "Nếu em vẽ đồ thị bậc ba luôn tăng hoặc bỏ một điểm đổi dấu đạo hàm, đọc **Kiến thức 4.2**, làm **Bài 62** và **Bài 65**. Xét cả giới hạn hai đầu và cực trị trước khi phác đồ thị.",
+      "remediation": "Nếu em vẽ đồ thị bậc ba luôn tăng hoặc bỏ một điểm đổi dấu đạo hàm, đọc **Kiến thức 4.2**, làm **Bài 76** và **Bài 70**. Xét cả giới hạn hai đầu và cực trị trước khi phác đồ thị.",
       "practice_orders": [
-        62,
-        65
+        76,
+        70
       ],
       "original_practice_orders": [
         62,
         65
       ],
       "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
     }
   },
   {
@@ -4719,28 +4839,52 @@
     "role": "TOPIC_FIRST_TRY",
     "order": 21,
     "item_id": "THPT-TOP10-KFT21",
-    "outcome_id": "TOP10-O21"
+    "outcome_id": "TOP10-O21",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 22,
     "item_id": "THPT-TOP10-KFT22",
-    "outcome_id": "TOP10-O22"
+    "outcome_id": "TOP10-O22",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 23,
     "item_id": "THPT-TOP10-KFT23",
-    "outcome_id": "TOP10-O23"
+    "outcome_id": "TOP10-O23",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 24,
     "item_id": "THPT-TOP10-KFT24",
-    "outcome_id": "TOP10-O24"
+    "outcome_id": "TOP10-O24",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
@@ -4755,16 +4899,22 @@
       "line": 810,
       "original_item_id": null,
       "mapping": "SAME_MATHEMATICAL_TASK_REUSE_EXISTING_ID",
-      "remediation": "Nếu em nói một phân thức giảm trên toàn miền rời nhau chỉ vì đạo hàm âm trên mỗi nhánh, đọc **Kiến thức 4.7**, làm **Bài 78** và **Bài 80**. Hãy thử một cặp điểm nằm ở hai nhánh để tự phản biện.",
+      "remediation": "Nếu em nói một phân thức giảm trên toàn miền rời nhau chỉ vì đạo hàm âm trên mỗi nhánh, đọc **Kiến thức 4.7**, làm **Bài 80** và **Bài 66**. Hãy thử một cặp điểm nằm ở hai nhánh để tự phản biện.",
       "practice_orders": [
-        78,
-        80
+        80,
+        66
       ],
       "original_practice_orders": [
         78,
         80
       ],
       "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
     }
   },
   {
@@ -4772,77 +4922,143 @@
     "role": "TOPIC_FIRST_TRY",
     "order": 26,
     "item_id": "THPT-TOP10-KFT26",
-    "outcome_id": "TOP10-O26"
+    "outcome_id": "TOP10-O26",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 27,
     "item_id": "THPT-TOP10-KFT27",
-    "outcome_id": "TOP10-O27"
+    "outcome_id": "TOP10-O27",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 28,
     "item_id": "THPT-TOP10-KFT28",
-    "outcome_id": "TOP10-O28"
+    "outcome_id": "TOP10-O28",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 29,
     "item_id": "THPT-TOP10-KFT29",
-    "outcome_id": "TOP10-O29"
+    "outcome_id": "TOP10-O29",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 30,
     "item_id": "THPT-TOP10-KFT30",
-    "outcome_id": "TOP10-O30"
+    "outcome_id": "TOP10-O30",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 31,
     "item_id": "THPT-TOP10-KFT31",
-    "outcome_id": "TOP10-O31"
+    "outcome_id": "TOP10-O31",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 32,
     "item_id": "THPT-TOP10-KFT32",
-    "outcome_id": "TOP10-O32"
+    "outcome_id": "TOP10-O32",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 33,
     "item_id": "THPT-TOP10-KFT33",
-    "outcome_id": "TOP10-O33"
+    "outcome_id": "TOP10-O33",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 34,
     "item_id": "THPT-TOP10-KFT34",
-    "outcome_id": "TOP10-O34"
+    "outcome_id": "TOP10-O34",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 35,
     "item_id": "THPT-TOP10-KFT35",
-    "outcome_id": "TOP10-O35"
+    "outcome_id": "TOP10-O35",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD10:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 36,
     "item_id": "THPT-TOP10-KFT36",
-    "outcome_id": "TOP10-O36"
+    "outcome_id": "TOP10-O36",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD11:KNOWLEDGE_FIRST_TRY",
