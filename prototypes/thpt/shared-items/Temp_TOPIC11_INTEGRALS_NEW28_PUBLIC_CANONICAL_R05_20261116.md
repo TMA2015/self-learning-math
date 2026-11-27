@@ -396,7 +396,7 @@ role: TOPIC_WRITTEN
 written_role: DEEP_ANCHOR (role label only, never clone an item)
 problem_family_id: TOP11-SQUARE_CROSS_SECTIONS
 difficulty_band: TRANSFER
-content_version: 2
+content_version: 3
 **Đề bài:** Một khối có thiết diện vuông góc với \(Ox\) là hình vuông cạnh \(s(x)=x+2\) cm, với \(0\le x\le2\) cm. (a) Tìm diện tích mặt cắt. (b) Lập tích phân thể tích. (c) Tính thể tích. (d) Giải thích vì sao không nhân \(\pi\).
 
 **Đáp án:** \(A(x)=(x+2)^2\) cm²; \(V=\frac{56}{3}\) cm³.
