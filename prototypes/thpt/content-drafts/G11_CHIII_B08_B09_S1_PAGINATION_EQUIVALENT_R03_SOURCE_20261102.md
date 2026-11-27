@@ -294,10 +294,10 @@ Quy tắc: mỗi mục là một câu học liệu tự biên soạn (không ch�
 **Rubric /4:** (1) Giá trị đại diện — 1đ; (2) Tổng trọng số và n — 1đ; (3) Nội suy Me đúng — 1đ; (4) Nêu tính xấp xỉ — 1đ
 
 ### `THPT-G11-CHIII-W09-02-ANCHOR` · WRITTEN/ANCHOR · `G11-B09-GROUPED-MODE`
-**Đề:** Với mẫu E [100;110)→5 | [110;120)→10 | [120;130)→3 | [130;140)→2, tìm Q1,Q3,Mo và ý nghĩa.
-**Đáp án:** Q1=110; Q3=120; Mo=685/6≈114,17.
-**Lời giải:** n=20; tích lũy [5,15,18,20]. Q1=100+(5-0)·10/5=110; Q3=110+(15-5)·10/10=120 (không phải 117,5). Mốt nhóm [110;120), m=10, trước 5, sau 3: Mo=110+[5/(5+7)]·10=685/6≈114,17. Q1 và Q3 ước lượng các vị trí chia mẫu tại một phần tư và ba phần tư; Mo ước lượng vị trí tập trung theo nhóm có tần số cao. Không khẳng định các giá trị này là quan sát thật của mẫu gốc.
-**Rubric /4:** (1) Chọn nhóm và nội suy đúng Q1 — 1đ; (2) Chọn nhóm và nội suy đúng Q3 — 1đ; (3) Tính đúng mốt — 1đ; (4) Giải thích ý nghĩa và giới hạn ước lượng — 1đ.
+**Đề:** Mẫu E có các nhóm \([100;110),[110;120),[120;130),[130;140)\) với tần số lần lượt 5, 10, 3, 2. Tìm \(Q_1,Q_3,M_o\) và giải thích ý nghĩa.
+**Đáp án:** \(Q_1=110\), \(Q_3=120\), \(M_o=\frac{685}{6}\approx114{,}17\).
+**Lời giải:** Tổng tần số \(n=20\), các tần số tích lũy là 5, 15, 18, 20. Vị trí \(\frac n4=5\) trùng biên trên nhóm đầu, nên \(Q_1=100+\frac{5-0}{5}\cdot10=110\). Vị trí \(\frac{3n}4=15\) trùng biên trên nhóm thứ hai, nên \(Q_3=110+\frac{15-5}{10}\cdot10=120\). Hai nhóm kề nhau có chung cận nên nội suy ở biên cho cùng giá trị. Nhóm mốt \([110;120)\) có tần số 10, nhóm trước 5, nhóm sau 3; \(M_o=110+\frac{10-5}{(10-5)+(10-3)}\cdot10=\frac{685}{6}\approx114{,}17\). \(Q_1,Q_3\) ước lượng các vị trí chia mẫu tại một phần tư và ba phần tư; \(M_o\) ước lượng vị trí tập trung theo nhóm có tần số cao. Không khẳng định các giá trị này là quan sát thật của mẫu gốc.
+**Rubric /4:** (1) Chọn nhóm và nội suy đúng \(Q_1\) — 1đ; (2) Chọn nhóm và nội suy đúng \(Q_3\) — 1đ; (3) Tính đúng mốt — 1đ; (4) Giải thích ý nghĩa và giới hạn ước lượng — 1đ.
 
 ### [R02-NEW] B08-B09-PED4 — Diễn giải ba hình đã review (không sửa SVG)
 
