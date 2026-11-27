@@ -18,21 +18,6 @@
     "collection": "TOPIC:CD08:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 2,
-    "item_id": "THPT-G11-CHV-B15-P05",
-    "outcome_id": "TOP08-O02",
-    "legacy_order": 4,
-    "group_id": "TOP08-G1",
-    "group_title": "Giới hạn của dãy số và tổng cấp số nhân",
-    "candidate_use": {
-      "mode": "INTERACTIVE_PRACTICE",
-      "reveal": "AFTER_EACH_ANSWER",
-      "hints": true
-    }
-  },
-  {
-    "collection": "TOPIC:CD08:PRACTICE",
-    "role": "TOPIC_PRACTICE",
-    "order": 3,
     "item_id": "THPT-G11-CHV-B15-C02",
     "outcome_id": "TOP08-O02",
     "legacy_order": 5,
@@ -47,7 +32,38 @@
   {
     "collection": "TOPIC:CD08:PRACTICE",
     "role": "TOPIC_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-TOP08-KFT03",
+    "outcome_id": "TOP08-O03",
+    "placement_note": "CP128 reuse existing Vận dụng for second distinct practice task; no new canonical item",
+    "legacy_order": null,
+    "group_id": "TOP08-G1",
+    "group_title": "Giới hạn của dãy số và tổng cấp số nhân",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD08:PRACTICE",
+    "role": "TOPIC_PRACTICE",
     "order": 4,
+    "item_id": "THPT-G11-CHV-B15-P05",
+    "outcome_id": "TOP08-O02",
+    "legacy_order": 4,
+    "group_id": "TOP08-G1",
+    "group_title": "Giới hạn của dãy số và tổng cấp số nhân",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
+  },
+  {
+    "collection": "TOPIC:CD08:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 5,
     "item_id": "THPT-TOP08-P03",
     "outcome_id": "TOP08-O03",
     "legacy_order": 7,
@@ -62,26 +78,10 @@
   {
     "collection": "TOPIC:CD08:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 5,
+    "order": 6,
     "item_id": "THPT-G11-CHV-B15-C03",
     "outcome_id": "TOP08-O05",
     "legacy_order": 17,
-    "group_id": "TOP08-G1",
-    "group_title": "Giới hạn của dãy số và tổng cấp số nhân",
-    "candidate_use": {
-      "mode": "INTERACTIVE_PRACTICE",
-      "reveal": "AFTER_EACH_ANSWER",
-      "hints": true
-    }
-  },
-  {
-    "collection": "TOPIC:CD08:PRACTICE",
-    "role": "TOPIC_PRACTICE",
-    "order": 6,
-    "item_id": "THPT-TOP08-KFT03",
-    "outcome_id": "TOP08-O03",
-    "placement_note": "CP128 reuse existing Vận dụng for second distinct practice task; no new canonical item",
-    "legacy_order": null,
     "group_id": "TOP08-G1",
     "group_title": "Giới hạn của dãy số và tổng cấp số nhân",
     "candidate_use": {
