@@ -20,7 +20,7 @@
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
   "academic_audit": "AUTHOR_REVIEW_18_DRAFTS_AND_709_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
-  "interaction_conversion": "CD01–22 and 24/24 SGK chapters content candidates; G11 supplement 52 interactive converted and 16 Written source references reviewed. G12 experience and year-end remain. Scoped Delta and final audit/cutover pending.",
+  "interaction_conversion": "CD01–22 and 24/24 SGK chapters content candidates; G11 supplement and G12 experience candidate conversion and Written reference review complete. G12 year-end remains. Scoped Delta and final audit/cutover pending.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
   "legacy_combined_answer_note": "709 at original import; 709 manually verified and key separated at checkpoints 29–44; 0 remain combined. This closes the legacy combined-answer review group only, not full academic/PED or release certification. Preserve original source history and self-compare, not auto-grade.",
@@ -58,17 +58,17 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "19bdac85a6b4c8d51bb526209ea55d5e362c63a8",
+    "as_of_commit": "72062c81abebd7b966ba72b2295c517ab2f4c821",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
-    "completed_scope": "CD01–22, all 24 SGK chapters, and G11 experience/year-end supplement candidate conversion and Written reference review; G12 supplements pending",
+    "completed_scope": "CD01–22, 24 SGK chapters, G11 supplement and G12 experience candidate conversion and Written reference review; G12 year-end pending",
     "completed_unique_ids": 1885,
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "G12 experience (30 interactive, 10 Written). STOP before G12 year-end (15 interactive,16 Written). Then scoped Delta and full audit/acceptance per owner.",
-    "status": "G11_SUPPLEMENT_CANDIDATE_CONVERSION_COMPLETE_WRITTEN_DELTA_PENDING",
+    "next": "G12 year-end (15 interactive, 16 Written). Then scoped Delta and full audit/acceptance per owner.",
+    "status": "G12_EXPERIENCE_CANDIDATE_CONVERSION_COMPLETE_WRITTEN_DELTA_PENDING",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -102,40 +102,39 @@
     "sgk_chapter_candidate_written": 202,
     "new_sgk_interactive_conversions": 473,
     "partial_sgk_chapter": null,
-    "completed_supplement_groups": 1,
+    "completed_supplement_groups": 2,
     "total_supplement_groups": 3,
-    "supplement_candidate_unique_ids": 68,
-    "supplement_candidate_interactive": 52,
-    "supplement_candidate_written": 16,
-    "supplement_remaining_unique_ids": 71,
-    "supplement_remaining_interactive": 45,
-    "supplement_remaining_written": 26
+    "supplement_candidate_unique_ids": 108,
+    "supplement_candidate_interactive": 82,
+    "supplement_candidate_written": 26,
+    "supplement_remaining_unique_ids": 31,
+    "supplement_remaining_interactive": 15,
+    "supplement_remaining_written": 16
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "exercise_candidate_g11_supplement",
-    "exercise_candidate_g11_supplement": {
-      "owner_scope": "G11 experience and year-end only; 68 IDs. G12 remaining groups separate.",
+    "current_checkpoint_key": "exercise_candidate_g12_experience",
+    "exercise_candidate_g12_experience": {
+      "owner_scope": "G12 experience only; 40 IDs. G12 year-end separate.",
       "counts": {
-        "unique": 68,
-        "interactive": 52,
-        "options": 208,
-        "written": 16,
-        "placements": 90
+        "unique": 40,
+        "interactive": 30,
+        "options": 120,
+        "written": 10,
+        "placements": 50
       },
       "files": {
-        "items/g11-supplement.json": "148d13c2031b1ae87fff41dd5c601b409a23003c",
-        "written-references.json": "2efadf16f01cd72337f0d4f25133f93ad0da91a0",
-        "placements/sgk-g11.json": "ed0461148642c53f6849d943a6f1ffbbe5a11016"
+        "items/g12-experience.json": "705325f6c6e46d81186f075d48a51e0534d96f5d",
+        "written-references.json": "67781d0d64573bc3025cc92bac6d3740d12b22fe",
+        "placements/sgk-g12.json": "8f1f02b762930fe937af785d2f63b00d9f0205ad"
       },
-      "written_source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
-      "historical_source_review": "PR #709, original source-scoped independent PASS; not inherited as new interactive verdict.",
-      "verification": "52/52 single-choice candidates with separate key, four distinct options, hint and explanation; exact key/option correspondence, ID/source/skill parity, auto_grade=false, delimiter counts; 16/16 original Written stem/answer/rubric matched source blob and public projection; 90 placements resolve. No Written body duplicated or altered.",
-      "limitations": "Ten Written source review notes in written-references.json; rubric specificity, wording/assumptions, depth and near-duplicate SPACE-W01/P02 require scoped Delta; old PASS snapshot preserved. Remaining historical notation/full X-G.5 review, original S1 PDF not freshly read, skill/placement crosswalk, scoring/reveal and full math/PED acceptance pending. No new independent review/browser/CI or Academic/PED PASS. No cutover or release."
+      "written_source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "verification": "30 single-choice candidates with separate key, 4 distinct options, hint, solution and difficulty; key/option correspondence, ID/source/skill parity, auto_grade=false; 10 Written refs matched source and projection stem/answer/rubric; 50 placements resolve. No Written body duplicated or changed.",
+      "limitations": "Six Written notes for scoped Delta including distance assumption, bound equality for quadratic, prerequisite context and rubric coverage; source reports historical targeted reviewer PASS with receipt SHA mismatch, not a new independent verdict. Full X-G.5/S1 PDF, scoring/reveal, academic/PED acceptance and cutover pending. No runtime change or release."
     },
     "previous_manifest": {
-      "commit": "96623a58ed6c7297d664d09792f577d177b68741",
-      "blob": "77df15aaaee168f08b90216a515ee33f971b39bd",
-      "key": "exercise_candidate_sgk_g12_chiv_chvi"
+      "commit": "26b06fbf1bbb4dc65c1636e31736c4724a91fdd4",
+      "blob": "78be750695a269472d0e1c6861f7ce87f9fa2a1a",
+      "key": "exercise_candidate_g11_supplement"
     }
   },
   "pending_review": {
@@ -288,6 +287,18 @@
         "THPT-G11-YR-STAT-W01"
       ],
       "note": "Refer to exact per-item author_review_note; preserve source PASS snapshot; Delta review pending."
+    },
+    "g12_experience_written": {
+      "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "ids": [
+        "THPT-G12-EXP01-W01",
+        "THPT-G12-EXP01-W04",
+        "THPT-G12-EXP01-W05",
+        "THPT-G12-EXP02-W02",
+        "THPT-G12-EXP02-W04",
+        "THPT-G12-EXP02-W05"
+      ],
+      "note": "See per-item author_review_note; preserve source; scoped Delta and historical receipt SHA reconciliation pending."
     }
   },
   "checkpoint_policy": "Replace current_progress and current checkpoint, do not append cumulative report trees. Record detailed scoped evidence in existing issue/PR or prior immutable Git snapshot; preserve exact commit/path/blob and relevant key. Carry forward unresolved issues only; retain older history pointer. Never infer PASS, authorize cutover or change protected runtime from compaction."
