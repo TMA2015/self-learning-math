@@ -1,0 +1,1606 @@
+[
+  {
+    "item_id": "THPT-G12-B06-C01",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong hình lập phương cạnh 4 cm, độ dài vectơ đi dọc một cạnh bằng bao nhiêu?",
+    "answer_key": "4 cm",
+    "worked_solution": "Vectơ đi dọc một cạnh có hai đầu là hai đỉnh kề nhau. Độ dài vectơ bằng độ dài đoạn nối hai đầu mút, tức 4 cm; chiều đi không ảnh hưởng đến độ dài.",
+    "skill_ids": [
+      "G12-CHII-B06-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Độ dài vectơ bằng khoảng cách hai đầu mút."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-C01` · `OUTCOME_ID=G12-CHII-B06-O01` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng đường chéo, đề chỉ nói một cạnh; xác định hai đầu mút trước. Ôn CĐ13 mục 3.1; luyện THPT-TOP13-P11."
+  },
+  {
+    "item_id": "THPT-G12-B06-P01",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Hình hộp chữ nhật có các cạnh theo ba phương vuông góc dài 3, 4, 12 cm. Độ dài vectơ nối hai đỉnh đối diện?",
+    "answer_key": "13 cm",
+    "worked_solution": "Ba cạnh đôi một vuông góc. Áp dụng Pitago ở đáy được đường chéo \\(\\sqrt{3^2+4^2}=5\\) cm; áp dụng tiếp trong tam giác vuông chứa cạnh 12 cm được \\(\\sqrt{5^2+12^2}=13\\) cm. Đây là độ dài vectơ nối hai đỉnh đối diện.",
+    "skill_ids": [
+      "G12-CHII-B06-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Tính đường chéo đáy rồi đường chéo không gian."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P01` · `OUTCOME_ID=G12-CHII-B06-O01` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng 3+4+12, áp dụng Pitago hai lần cho ba phương vuông góc. Ôn CĐ13 mục 3.1; luyện THPT-TOP13-P11."
+  },
+  {
+    "item_id": "THPT-G12-B06-P02",
+    "content_version": "G12-SGK-CHII-B06-B08-R00_CP20D_20261126_P02",
+    "stem": "Với hai điểm phân biệt A, B, vectơ \\(\\overrightarrow{AA}\\) có độ dài bao nhiêu? Theo quy ước, nó có cùng hướng và cùng phương với \\(\\overrightarrow{AB}\\) không?",
+    "answer_key": "Độ dài 0; có, cùng hướng và cùng phương theo quy ước.",
+    "worked_solution": "Hai đầu của \\(\\overrightarrow{AA}\\) trùng nhau nên đây là vectơ-không, có độ dài 0. Theo quy ước đã học, vectơ-không cùng hướng và cùng phương với mọi vectơ, kể cả \\(\\overrightarrow{AB}\\). Góc với vectơ-không được quy ước có thể nhận giá trị tùy ý từ \\(0^\\circ\\) đến \\(180^\\circ\\), không có một góc duy nhất; tích vô hướng với vectơ-không bằng 0.",
+    "skill_ids": [
+      "G12-CHII-B06-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Hai đầu A, A trùng nhau; phân biệt quy ước cùng hướng, cùng phương với góc không có giá trị duy nhất."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P02` · `OUTCOME_ID=G12-CHII-B06-O01` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "previous_source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "previous_content_version": "G12-SGK-CHII-B06-B08-R00",
+      "revision_scope": "CP20d_OWNER_APPROVED_DELTA_C; PUBLIC_PROJECTION_HISTORICAL"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nghĩ vectơ-không không cùng phương với vectơ nào, ôn lại quy ước Bài 6: không có hướng dịch chuyển riêng nhưng được quy ước cùng phương, cùng hướng với mọi vectơ. Luyện THPT-TOP18-P01."
+  },
+  {
+    "item_id": "THPT-G12-B06-C02",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong hình bình hành ABCD, vectơ nào bằng \\(\\overrightarrow{AB}\\)?",
+    "answer_key": "\\(\\overrightarrow{DC}\\)",
+    "worked_solution": "Trong hình bình hành, \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{DC}\\) cùng hướng, cùng độ dài nên bằng nhau. \\(\\overrightarrow{CD}\\) thì ngược hướng.",
+    "skill_ids": [
+      "G12-CHII-B06-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "So hai cạnh đối có cùng chiều đi và độ dài."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-C02` · `OUTCOME_ID=G12-CHII-B06-O02` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn CD, đã đảo đầu cuối; DC mới cùng hướng AB. Ôn CĐ18 mục 1.2; luyện THPT-TOP18-P02."
+  },
+  {
+    "item_id": "THPT-G12-B06-P03",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong hình bình hành ABCD, hãy nêu hai vectơ đối của \\(\\overrightarrow{AB}\\) có đầu và cuối là các đỉnh.",
+    "answer_key": "\\(\\overrightarrow{BA}\\) hoặc \\(\\overrightarrow{CD}\\)",
+    "worked_solution": "\\(\\overrightarrow{BA}=-\\overrightarrow{AB}\\) do đảo đầu và cuối. Mặt khác \\(\\overrightarrow{DC}=\\overrightarrow{AB}\\), nên \\(\\overrightarrow{CD}=-\\overrightarrow{AB}\\). Cả BA và CD (theo đúng hướng mũi tên) đều thỏa mãn.",
+    "skill_ids": [
+      "G12-CHII-B06-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Đảo chiều AB, giữ nguyên độ dài."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P03` · `OUTCOME_ID=G12-CHII-B06-O02` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn DC, cùng hướng AB; BA hoặc CD mới đối nhau. Ôn CĐ18 mục 1.2; luyện THPT-TOP18-P02."
+  },
+  {
+    "item_id": "THPT-G12-B06-P04",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Hai vectơ không bằng 0 cùng phương, một vectơ dài 2 cm, vectơ kia dài 5 cm. Chúng có thể bằng nhau không?",
+    "answer_key": "Không",
+    "worked_solution": "Không. Cùng phương chưa đủ để hai vectơ bằng nhau: còn phải cùng hướng và cùng độ dài. Ở đây độ dài 2 cm khác 5 cm.",
+    "skill_ids": [
+      "G12-CHII-B06-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Hai vectơ bằng nhau phải cùng hướng và cùng độ dài."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P04` · `OUTCOME_ID=G12-CHII-B06-O02` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ cùng phương, chưa đủ bằng nhau; kiểm cả độ dài. Ôn CĐ18 mục 1.2; luyện THPT-TOP18-P02."
+  },
+  {
+    "item_id": "THPT-G12-B06-C03",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Với A,B,C bất kì, \\(\\overrightarrow{AB}+\\overrightarrow{BC}\\) bằng gì?",
+    "answer_key": "\\(\\overrightarrow{AC}\\)",
+    "worked_solution": "Theo quy tắc ba điểm, đi từ A đến B rồi từ B đến C có độ dời tổng cộng từ A đến C. Vì vậy \\(\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}\\).",
+    "skill_ids": [
+      "G12-CHII-B06-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Ghép đầu–đuôi A→B→C."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-C03` · `OUTCOME_ID=G12-CHII-B06-O03` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra CA, kiểm điểm xuất phát A và điểm cuối C. Ôn CĐ13 mục 3.2; luyện THPT-TOP13-P12."
+  },
+  {
+    "item_id": "THPT-G12-B06-P05",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong hình bình hành ABCD, \\(\\overrightarrow{AB}+\\overrightarrow{AD}\\) bằng gì?",
+    "answer_key": "\\(\\overrightarrow{AC}\\)",
+    "worked_solution": "Hai vectơ có chung gốc A, nên dùng quy tắc hình bình hành: tổng là vectơ theo đường chéo xuất phát từ A, \\(\\overrightarrow{AB}+\\overrightarrow{AD}=\\overrightarrow{AC}\\).",
+    "skill_ids": [
+      "G12-CHII-B06-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Hai vectơ chung gốc A: dùng đường chéo từ A."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P05` · `OUTCOME_ID=G12-CHII-B06-O03` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn BD, kiểm đường chéo biểu diễn tổng phải xuất phát từ A. Ôn CĐ13 mục 3.2; luyện THPT-TOP13-P12."
+  },
+  {
+    "item_id": "THPT-G12-B06-P06",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong hình hộp \\(ABCD.A\\prime B\\prime C\\prime D\\prime\\), \\(\\overrightarrow{AB}+\\overrightarrow{AD}+\\overrightarrow{AA\\prime}\\) bằng gì?",
+    "answer_key": "\\(\\overrightarrow{AC\\prime}\\)",
+    "worked_solution": "Trước hết \\(\\overrightarrow{AB}+\\overrightarrow{AD}=\\overrightarrow{AC}\\). Trong hình hộp, \\(\\overrightarrow{AA'}=\\overrightarrow{CC'}\\). Theo quy tắc ba điểm, \\(\\overrightarrow{AC}+\\overrightarrow{CC'}=\\overrightarrow{AC'}\\).",
+    "skill_ids": [
+      "G12-CHII-B06-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Ghép \\(\\overrightarrow{AB},\\overrightarrow{BC}=\\overrightarrow{AD},\\overrightarrow{CC'}=\\overrightarrow{AA'}\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P06` · `OUTCOME_ID=G12-CHII-B06-O03` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dừng tại C, còn thiếu độ dời \\(\\overrightarrow{CC'}\\). Ôn CĐ18 mục 1.3; luyện THPT-TOP18-P03."
+  },
+  {
+    "item_id": "THPT-G12-B06-C04",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Nếu \\(|\\vec a|=3\\) và \\(k=-2\\), độ dài \\(k\\vec a\\) bằng bao nhiêu?",
+    "answer_key": "6",
+    "worked_solution": "Độ dài tích của vectơ với số thực là \\(|k\\vec a|=|k|\\,|\\vec a|=|-2|\\cdot3=6\\). Dấu âm chỉ sự đổi hướng, không làm độ dài âm.",
+    "skill_ids": [
+      "G12-CHII-B06-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Dùng |k| nhân độ dài, không dùng dấu của k làm độ dài."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-C04` · `OUTCOME_ID=G12-CHII-B06-O04` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra −6, độ dài không âm; dấu âm chỉ đảo hướng. Ôn CĐ18 mục 1.4; luyện THPT-TOP18-P04."
+  },
+  {
+    "item_id": "THPT-G12-B06-P07",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Điểm M là trung điểm đoạn AB. Biểu diễn \\(\\overrightarrow{AM}\\) qua \\(\\overrightarrow{AB}\\).",
+    "answer_key": "\\(\\tfrac12\\overrightarrow{AB}\\)",
+    "worked_solution": "M ở giữa A và B, nên \\(\\overrightarrow{AM}\\) cùng hướng với \\(\\overrightarrow{AB}\\) và độ dài bằng một nửa. Do đó \\(\\overrightarrow{AM}=\\frac12\\overrightarrow{AB}\\).",
+    "skill_ids": [
+      "G12-CHII-B06-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "M nằm giữa A,B và AM bằng nửa AB."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P07` · `OUTCOME_ID=G12-CHII-B06-O04` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy hệ số −1/2, AM cùng hướng AB vì M nằm trên đoạn AB. Ôn CĐ18 mục 1.4; luyện THPT-TOP18-P04."
+  },
+  {
+    "item_id": "THPT-G12-B06-P08",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Điểm N ở tia đối của AB, AN=3AB. Viết \\(\\overrightarrow{AN}\\) qua \\(\\overrightarrow{AB}\\).",
+    "answer_key": "\\(-3\\overrightarrow{AB}\\)",
+    "worked_solution": "N nằm trên tia đối của tia AB nên hai vectơ ngược hướng. Vì \\(AN=3AB\\), ta có \\(\\overrightarrow{AN}=-3\\overrightarrow{AB}\\).",
+    "skill_ids": [
+      "G12-CHII-B06-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "N thuộc tia đối của AB nên hệ số âm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P08` · `OUTCOME_ID=G12-CHII-B06-O04` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy +3, đã sai hướng dù độ dài đúng. Ôn CĐ18 mục 1.4; luyện THPT-TOP18-P04."
+  },
+  {
+    "item_id": "THPT-G12-B06-C05",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Hai vectơ khác 0 dài 2 và 3, tạo góc 60°. Tính tích vô hướng.",
+    "answer_key": "3",
+    "worked_solution": "Dùng tích hai độ dài nhân côsin góc xen giữa: \\(2\\cdot3\\cdot\\cos60^\\circ=2\\cdot3\\cdot\\frac12=3\\). Góc nhọn nên tích dương.",
+    "skill_ids": [
+      "G12-CHII-B06-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Dùng cos60°=1/2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-C05` · `OUTCOME_ID=G12-CHII-B06-O05` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 6, quên nhân cos. Ôn CĐ18 mục 1.5; luyện THPT-TOP18-P05."
+  },
+  {
+    "item_id": "THPT-G12-B06-P09",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Hai vectơ khác 0 dài 5 và 4 vuông góc. Tích vô hướng bằng bao nhiêu?",
+    "answer_key": "0",
+    "worked_solution": "Hai vectơ khác không vuông góc tạo góc \\(90^\\circ\\), nên tích vô hướng bằng \\(5\\cdot4\\cdot\\cos90^\\circ=0\\).",
+    "skill_ids": [
+      "G12-CHII-B06-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Cos90° bằng 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P09` · `OUTCOME_ID=G12-CHII-B06-O05` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu tích vô hướng 0, không suy một vectơ bằng 0; ở đây cả hai khác 0. Ôn CĐ18 mục 1.5; luyện THPT-TOP18-P05."
+  },
+  {
+    "item_id": "THPT-G12-B06-P10",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Hai vectơ khác 0 dài 3 và 8 tạo góc 120°. Tích vô hướng bằng bao nhiêu?",
+    "answer_key": "-12",
+    "worked_solution": "\\(\\cos120^\\circ=-\\frac12\\). Tích vô hướng bằng \\(3\\cdot8\\cdot(-\\frac12)=-12\\). Góc tù nên kết quả âm.",
+    "skill_ids": [
+      "G12-CHII-B06-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Cos120°=−1/2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P10` · `OUTCOME_ID=G12-CHII-B06-O05` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra +12, góc tù có cos âm. Ôn CĐ18 mục 1.5; luyện THPT-TOP18-P05."
+  },
+  {
+    "item_id": "THPT-G12-B06-C06",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Một lực không đổi 10 N cùng hướng với độ dời 4 m. Công của lực bằng bao nhiêu?",
+    "answer_key": "40 J",
+    "worked_solution": "Giả sử lực không đổi. Công là tích vô hướng giữa lực và độ dời: \\(W=10\\cdot4\\cdot\\cos0^\\circ=40\\) J. Vì cùng hướng nên toàn bộ lực đóng góp vào công.",
+    "skill_ids": [
+      "G12-CHII-B06-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Lực cùng hướng độ dời nên cos0°=1."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-C06` · `OUTCOME_ID=G12-CHII-B06-O06` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 0, nhầm góc 0° với 90°. Ôn CĐ18 mục 1.6; luyện THPT-TOP18-P06."
+  },
+  {
+    "item_id": "THPT-G12-B06-P11",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Một lực không đổi 12 N vuông góc với độ dời 5 m. Tính công của lực.",
+    "answer_key": "0 J",
+    "worked_solution": "Giả sử lực không đổi. Góc giữa lực và độ dời bằng \\(90^\\circ\\), do đó \\(W=12\\cdot5\\cdot\\cos90^\\circ=0\\) J. Lực không có thành phần theo hướng độ dời.",
+    "skill_ids": [
+      "G12-CHII-B06-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Thành phần lực theo độ dời bằng 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P11` · `OUTCOME_ID=G12-CHII-B06-O06` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 60 J, đã nhân độ lớn mà không xét hướng. Ôn CĐ18 mục 1.6; luyện THPT-TOP18-P06."
+  },
+  {
+    "item_id": "THPT-G12-B06-P12",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Một vật dịch chuyển thẳng 3 m. Lực không đổi \\(\\vec F\\) có độ lớn 8 N và tạo góc \\(120^\\circ\\) với độ dời; lực không đổi \\(\\vec G\\) có độ lớn 6 N cùng hướng độ dời. Tính công của từng lực và công của hợp lực \\(\\vec F+\\vec G\\). Giải thích vì sao hợp lực có công dương dù lực \\(\\vec F\\) có công âm.",
+    "answer_key": "\\(W_F=-12\\,\\mathrm J\\), \\(W_G=18\\,\\mathrm J\\), \\(W_{F+G}=6\\,\\mathrm J\\).",
+    "worked_solution": "Gọi \\(\\vec s\\) là vectơ độ dời. Công của lực \\(\\vec F\\) bằng \\(\\vec F\\cdot\\vec s=8\\cdot3\\cos120^\\circ=-12\\,\\mathrm J\\). Công của \\(\\vec G\\) bằng \\(6\\cdot3\\cos0^\\circ=18\\,\\mathrm J\\). Theo tính phân phối của tích vô hướng, \\(W_{F+G}=(\\vec F+\\vec G)\\cdot\\vec s=W_F+W_G=-12+18=6\\,\\mathrm J\\). Lực F có thành phần ngược hướng độ dời bằng -4 N, còn G đóng góp +6 N, nên hợp lực có thành phần dọc độ dời bằng +2 N. Không cộng độ lớn hai lực rồi nhân 3 vì chúng không cùng hướng.",
+    "skill_ids": [
+      "G12-CHII-B06-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Tính từng tích vô hướng với \\(\\vec s\\), rồi dùng tính phân phối của tích vô hướng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P12` · `OUTCOME_ID=G12-CHII-B06-O06` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu tính 42 J từ tổng độ lớn lực, hãy xét góc của từng lực với độ dời và dấu của từng công. Ôn CĐ18 mục 1.6; luyện THPT-TOP18-P06."
+  },
+  {
+    "item_id": "THPT-G12-B07-C01",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong hệ Oxyz, điểm P(4;2;0) nằm trên mặt phẳng tọa độ nào?",
+    "answer_key": "(Oxy)",
+    "worked_solution": "Mặt phẳng \\((Oxy)\\) chứa mọi điểm có tọa độ thứ ba bằng 0. Điểm P có \\(z=0\\), nên thuộc \\((Oxy)\\); hai tọa độ còn lại khác 0 nên không thuộc hai mặt phẳng tọa độ kia.",
+    "skill_ids": [
+      "G12-CHII-B07-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Mặt phẳng Oxy có z=0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-C01` · `OUTCOME_ID=G12-CHII-B07-O01` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn Oxz, kiểm tọa độ bị triệt là z, không phải y. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14."
+  },
+  {
+    "item_id": "THPT-G12-B07-P01",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Một điểm Q thuộc trục Oz. Hai tọa độ nào bắt buộc bằng 0?",
+    "answer_key": "x=0 và y=0",
+    "worked_solution": "Trục Oz gồm các điểm dạng \\((0;0;z)\\), vì chỉ dịch chuyển theo phương Oz. Do đó \\(x=y=0\\), còn z tùy ý.",
+    "skill_ids": [
+      "G12-CHII-B07-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Trên Oz, chỉ thành phần z có thể khác 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P01` · `OUTCOME_ID=G12-CHII-B07-O01` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho z=0, phân biệt điểm trên Oz với điểm trên Oxy. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14."
+  },
+  {
+    "item_id": "THPT-G12-B07-P02",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Điểm M(-1;0;3) thuộc mặt phẳng tọa độ nào?",
+    "answer_key": "(Oxz)",
+    "worked_solution": "Tọa độ y của M bằng 0, nên M thuộc \\((Oxz)\\). Vì x và z đều khác 0, M không thuộc hai mặt phẳng tọa độ còn lại.",
+    "skill_ids": [
+      "G12-CHII-B07-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Tọa độ y bằng 0 nên điểm nằm trong mặt chứa Ox,Oz."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P02` · `OUTCOME_ID=G12-CHII-B07-O01` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn Oyz, hãy xét tọa độ bị thiếu. Ôn CĐ18 mục 2.1; luyện THPT-TOP18-P07."
+  },
+  {
+    "item_id": "THPT-G12-B07-C02",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Cho \\(\\vec a=3\\vec i-2\\vec j+\\vec k\\). Tọa độ \\(\\vec a\\) là gì?",
+    "answer_key": "(3;-2;1)",
+    "worked_solution": "Theo định nghĩa, tọa độ vectơ là ba hệ số trong biểu diễn theo \\(\\vec i,\\vec j,\\vec k\\). Ở đây các hệ số lần lượt 3, -2, 1 nên \\(\\vec a=(3;-2;1)\\).",
+    "skill_ids": [
+      "G12-CHII-B07-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Đọc hệ số của i,j,k lần lượt."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-C02` · `OUTCOME_ID=G12-CHII-B07-O02` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ dấu âm của j, tọa độ y phải là −2. Ôn CĐ18 mục 2.2; luyện THPT-TOP18-P08."
+  },
+  {
+    "item_id": "THPT-G12-B07-P03",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Nếu M(-2;4;1), tọa độ vectơ \\(\\overrightarrow{OM}\\) bằng gì?",
+    "answer_key": "(-2;4;1)",
+    "worked_solution": "Tọa độ điểm M chính là tọa độ vectơ vị trí \\(\\overrightarrow{OM}\\). Vì vậy \\(\\overrightarrow{OM}=(-2;4;1)\\).",
+    "skill_ids": [
+      "G12-CHII-B07-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Vectơ vị trí OM có tọa độ đúng bằng điểm M."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P03` · `OUTCOME_ID=G12-CHII-B07-O02` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đổi dấu, đã tính MO thay OM. Ôn CĐ18 mục 2.2; luyện THPT-TOP18-P08."
+  },
+  {
+    "item_id": "THPT-G12-B07-P04",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Vectơ \\(\\vec u=(0;0;-5)\\) viết dưới dạng i,j,k thế nào?",
+    "answer_key": "\\(-5\\vec k\\)",
+    "worked_solution": "\\(\\vec u=0\\vec i+0\\vec j-5\\vec k=-5\\vec k\\). Vectơ đi theo phương Oz nhưng ngược chiều dương.",
+    "skill_ids": [
+      "G12-CHII-B07-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Chỉ thành phần theo k khác 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P04` · `OUTCOME_ID=G12-CHII-B07-O02` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu viết 5k, quên dấu âm theo chiều Oz. Ôn CĐ18 mục 2.2; luyện THPT-TOP18-P08."
+  },
+  {
+    "item_id": "THPT-G12-B07-C03",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Chọn hệ Oxyz trong phòng: gốc O ở một góc sàn, ba trục theo chiều dài, chiều rộng và chiều cao. Một vật có độ dời từ O theo ba chiều dương lần lượt 2, 3, 4 m. Tìm tọa độ của vật, lấy mét làm đơn vị.",
+    "answer_key": "(2;3;4) m",
+    "worked_solution": "Ba độ dời theo chiều dương các trục Ox, Oy, Oz lần lượt là 2, 3, 4 m. Điểm có tọa độ \\((2;3;4)\\) trong hệ lấy mét làm đơn vị.",
+    "skill_ids": [
+      "G12-CHII-B07-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Đọc các chiều dương của ba trục theo đúng thứ tự x,y,z."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-C03` · `OUTCOME_ID=G12-CHII-B07-O03` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu tráo cao và rộng, ghi nhãn trục trước khi ghép tọa độ. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14."
+  },
+  {
+    "item_id": "THPT-G12-B07-P05",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Một cảm biến ở trần trong phòng cao 3 m, chọn Oz hướng lên từ sàn. Tọa độ z của cảm biến là gì?",
+    "answer_key": "3 m",
+    "worked_solution": "Mặt sàn có \\(z=0\\); cảm biến ở trần cao 3 m theo chiều dương Oz nên \\(z=3\\) m. Chưa biết x, y và không cần để xác định độ cao.",
+    "skill_ids": [
+      "G12-CHII-B07-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Độ cao tính từ mặt sàn theo Oz hướng lên."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P05` · `OUTCOME_ID=G12-CHII-B07-O03` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy −3, kiểm hướng dương và mốc z=0; đề chọn sàn làm mốc. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14."
+  },
+  {
+    "item_id": "THPT-G12-B07-P06",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Khi lấy gốc ở góc trần và Oz hướng xuống, sàn cách gốc 3 m có tọa độ z gì?",
+    "answer_key": "3 m",
+    "worked_solution": "Gốc ở trần và Oz hướng xuống; đi từ trần tới sàn 3 m theo chiều dương. Vì thế \\(z=3\\) m, không phải -3 m.",
+    "skill_ids": [
+      "G12-CHII-B07-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Oz hướng xuống từ gốc trần, nên sàn ở chiều dương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P06` · `OUTCOME_ID=G12-CHII-B07-O03` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra −3, kiểm chiều dương của hệ trục mới. Ôn CĐ18 mục 2.3; luyện THPT-TOP18-P09."
+  },
+  {
+    "item_id": "THPT-G12-B07-C04",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "A(1;2;3), B(5;2;1). Tọa độ \\(\\overrightarrow{AB}\\)?",
+    "answer_key": "(4;0;-2)",
+    "worked_solution": "Lấy tọa độ điểm cuối B trừ điểm đầu A: \\(\\overrightarrow{AB}=(5-1;2-2;1-3)=(4;0;-2)\\).",
+    "skill_ids": [
+      "G12-CHII-B07-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Lấy B−A theo từng tọa độ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-C04` · `OUTCOME_ID=G12-CHII-B07-O04` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra (−4;0;2), đã tính BA. Ôn CĐ18 mục 2.4; luyện THPT-TOP18-P10."
+  },
+  {
+    "item_id": "THPT-G12-B07-P07",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "A(-2;3;4), B(1;-1;2). Tọa độ \\(\\overrightarrow{BA}\\)?",
+    "answer_key": "(-3;4;2)",
+    "worked_solution": "Vectơ BA bắt đầu tại B và kết thúc tại A. Vì thế \\(\\overrightarrow{BA}=(-2-1;3-(-1);4-2)=(-3;4;2)\\).",
+    "skill_ids": [
+      "G12-CHII-B07-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Điểm đầu B, điểm cuối A; lấy A−B."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P07` · `OUTCOME_ID=G12-CHII-B07-O04` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra (3;−4;−2), đã đảo chiều BA. Ôn CĐ18 mục 2.4; luyện THPT-TOP18-P10."
+  },
+  {
+    "item_id": "THPT-G12-B07-P08",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "A(0;0;0), B(-3;2;5). Tọa độ \\(\\overrightarrow{AB}\\)?",
+    "answer_key": "(-3;2;5)",
+    "worked_solution": "\\(\\overrightarrow{AB}=(-3-0;2-0;5-0)=(-3;2;5)\\). Vì A là gốc, kết quả cũng chính là tọa độ điểm B.",
+    "skill_ids": [
+      "G12-CHII-B07-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "A là gốc nên hiệu B−A bằng tọa độ B."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P08` · `OUTCOME_ID=G12-CHII-B07-O04` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra dấu ngược, kiểm điểm đầu và điểm cuối. Ôn CĐ18 mục 2.4; luyện THPT-TOP18-P10."
+  },
+  {
+    "item_id": "THPT-G12-B08-C01",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Với a=(1;2;3), b=(3;-1;2), tính a+b.",
+    "answer_key": "(4;1;5)",
+    "worked_solution": "Cộng các tọa độ tương ứng: \\(\\vec a+\\vec b=(1+3;2+(-1);3+2)=(4;1;5)\\).",
+    "skill_ids": [
+      "G12-CHII-B08-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Cộng từng thành phần tương ứng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-C01` · `OUTCOME_ID=G12-CHII-B08-O01` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra một số thay vì vectơ, giữ ba tọa độ riêng. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P12."
+  },
+  {
+    "item_id": "THPT-G12-B08-P01",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Với a=(2;-3;1), b=(-1;4;0), tính a-b.",
+    "answer_key": "(3;-7;1)",
+    "worked_solution": "Trừ từng tọa độ của vectơ thứ hai khỏi tọa độ tương ứng của vectơ thứ nhất: \\(\\vec a-\\vec b=(2-(-1);-3-4;1-0)=(3;-7;1)\\).",
+    "skill_ids": [
+      "G12-CHII-B08-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Trừ từng tọa độ, giữ dấu của số bị trừ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P01` · `OUTCOME_ID=G12-CHII-B08-O01` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu sai −3−4, dùng ngoặc và kiểm lại tổng hiệu+b=a. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P12."
+  },
+  {
+    "item_id": "THPT-G12-B08-P02",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Với a=(1;-2;4), tính -3a.",
+    "answer_key": "(-3;6;-12)",
+    "worked_solution": "Nhân cả ba tọa độ với -3: \\(-3\\vec a=(-3\\cdot1;-3\\cdot(-2);-3\\cdot4)=(-3;6;-12)\\).",
+    "skill_ids": [
+      "G12-CHII-B08-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Nhân cả ba thành phần với −3."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P02` · `OUTCOME_ID=G12-CHII-B08-O01` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ đổi dấu hoặc chỉ nhân x, phải nhân từng thành phần. Ôn CĐ18 mục 3.1; luyện THPT-TOP18-P11."
+  },
+  {
+    "item_id": "THPT-G12-B08-C02",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "a=(2;4;6) và b=(1;2;3) có cùng phương không?",
+    "answer_key": "Có; a=2b",
+    "worked_solution": "Ta có \\(2\\vec b=(2;4;6)=\\vec a\\). Một hệ số duy nhất thỏa cả ba thành phần nên hai vectơ cùng phương, và vì hệ số dương nên cùng hướng.",
+    "skill_ids": [
+      "G12-CHII-B08-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Tìm một k khớp cả ba tọa độ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-C02` · `OUTCOME_ID=G12-CHII-B08-O02` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ kiểm x, cần kiểm y,z nữa. Ôn CĐ18 mục 3.2; luyện THPT-TOP18-P12."
+  },
+  {
+    "item_id": "THPT-G12-B08-P03",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "u=(3;0;-6) và v=(-1;0;2) có cùng phương không?",
+    "answer_key": "Có; u=-3v",
+    "worked_solution": "Ta có \\(-3\\vec v=(3;0;-6)=\\vec u\\), nên hai vectơ cùng phương, ngược hướng. Tọa độ giữa cùng bằng 0 vẫn thỏa đẳng thức; không được chia cho 0 để lập tỉ số.",
+    "skill_ids": [
+      "G12-CHII-B08-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Dùng u=kv, không chia 0/0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P03` · `OUTCOME_ID=G12-CHII-B08-O02` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho không cùng phương vì y=0, đẳng thức 0=k·0 vẫn đúng. Ôn CĐ18 mục 3.2; luyện THPT-TOP18-P12."
+  },
+  {
+    "item_id": "THPT-G12-B08-P04",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "a=(1;2;3) và b=(2;4;7) có cùng phương không?",
+    "answer_key": "Không",
+    "worked_solution": "Nếu \\(\\vec b=k\\vec a\\), từ tọa độ thứ nhất phải có \\(k=2\\). Tọa độ thứ ba khi đó phải bằng 6 nhưng thực tế bằng 7. Không tồn tại hệ số chung, nên hai vectơ không cùng phương.",
+    "skill_ids": [
+      "G12-CHII-B08-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Từ x,y tìm k rồi thử z."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P04` · `OUTCOME_ID=G12-CHII-B08-O02` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu kết luận cùng phương sau hai tọa độ, z=7 không bằng 6. Ôn CĐ18 mục 3.2; luyện THPT-TOP18-P12."
+  },
+  {
+    "item_id": "THPT-G12-B08-C03",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trung điểm A(1;3;5), B(3;1;7) có tọa độ?",
+    "answer_key": "(2;2;6)",
+    "worked_solution": "Trung điểm M có mỗi tọa độ bằng trung bình cộng của hai tọa độ tương ứng. Tọa độ M là \\((\\frac{1+3}{2};\\frac{3+1}{2};\\frac{5+7}{2})=(2;2;6)\\).",
+    "skill_ids": [
+      "G12-CHII-B08-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Trung điểm lấy trung bình từng tọa độ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-C03` · `OUTCOME_ID=G12-CHII-B08-O03` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thiếu chia 2, kiểm M−A=B−M. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P15."
+  },
+  {
+    "item_id": "THPT-G12-B08-P05",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trọng tâm tam giác A(0;0;0), B(3;0;0), C(0;6;0) là?",
+    "answer_key": "(1;2;0)",
+    "worked_solution": "Tọa độ trọng tâm là trung bình cộng theo từng trục của ba đỉnh. Tọa độ G là \\((\\frac{0+3+0}{3};\\frac{0+0+6}{3};\\frac{0+0+0}{3})=(1;2;0)\\).",
+    "skill_ids": [
+      "G12-CHII-B08-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Trọng tâm lấy trung bình ba đỉnh."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P05` · `OUTCOME_ID=G12-CHII-B08-O03` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia 2 như trung điểm, đếm đủ ba đỉnh; z=0 vì cả ba nằm trong Oxy. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P15."
+  },
+  {
+    "item_id": "THPT-G12-B08-P06",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trung điểm đoạn AB với A(-2;4;0) B(4;-2;6) là?",
+    "answer_key": "(1;1;3)",
+    "worked_solution": "Trung điểm M có tọa độ \\((\\frac{-2+4}{2};\\frac{4+(-2)}{2};\\frac{0+6}{2})=(1;1;3)\\).",
+    "skill_ids": [
+      "G12-CHII-B08-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Trung bình từng cặp tọa độ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P06` · `OUTCOME_ID=G12-CHII-B08-O03` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia 3, trung điểm chỉ có hai điểm. Ôn CĐ18 mục 3.3; luyện THPT-TOP18-P13."
+  },
+  {
+    "item_id": "THPT-G12-B08-C04",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "a=(1;2;3), b=(2;0;-1). Tính tích vô hướng a·b.",
+    "answer_key": "-1",
+    "worked_solution": "Nhân các tọa độ tương ứng rồi cộng: \\(\\vec a\\cdot\\vec b=1\\cdot2+2\\cdot0+3\\cdot(-1)=-1\\). Kết quả là một số, không phải vectơ.",
+    "skill_ids": [
+      "G12-CHII-B08-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Cộng ba tích tương ứng, giữ dấu âm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-C04` · `OUTCOME_ID=G12-CHII-B08-O04` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 5, kiểm tích 3·(−1)=-3. Ôn CĐ18 mục 3.4; luyện THPT-TOP18-P14."
+  },
+  {
+    "item_id": "THPT-G12-B08-P07",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "u=(1;1;0), v=(1;-1;0) có vuông góc không?",
+    "answer_key": "Có",
+    "worked_solution": "\\(\\vec u\\cdot\\vec v=1\\cdot1+1\\cdot(-1)+0\\cdot0=0\\). Vì cả hai vectơ khác không, điều kiện này đủ để kết luận chúng vuông góc.",
+    "skill_ids": [
+      "G12-CHII-B08-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Tính u·v và kiểm cả hai khác 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P07` · `OUTCOME_ID=G12-CHII-B08-O04` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ thấy một cặp thành phần đối nhau, chưa đủ; tổng tích phải bằng 0. Ôn CĐ18 mục 3.4; luyện THPT-TOP18-P14."
+  },
+  {
+    "item_id": "THPT-G12-B08-P08",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "a=(1;0;0), b=(1;1;0). Góc giữa hai vectơ?",
+    "answer_key": "45°",
+    "worked_solution": "Hai vectơ khác không có tích vô hướng bằng 1, độ dài lần lượt là 1 và \\(\\sqrt2\\). Do đó \\(\\cos\\theta=\\frac{1}{\\sqrt2}=\\frac{\\sqrt2}{2}\\). Góc nằm trong \\([0^\\circ;180^\\circ]\\), nên \\(\\theta=45^\\circ\\).",
+    "skill_ids": [
+      "G12-CHII-B08-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Tính tích vô hướng, độ dài 1 và √2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P08` · `OUTCOME_ID=G12-CHII-B08-O04` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 90°, tích vô hướng bằng 1, không bằng 0. Ôn CĐ18 mục 3.4; luyện THPT-TOP18-P14."
+  },
+  {
+    "item_id": "THPT-G12-B08-C05",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Tính độ dài vectơ u=(3;4;0).",
+    "answer_key": "5",
+    "worked_solution": "Bình phương độ dài là tổng bình phương ba tọa độ: \\(|\\vec u|^2=3^2+4^2+0^2=25\\). Lấy căn không âm được \\(|\\vec u|=5\\).",
+    "skill_ids": [
+      "G12-CHII-B08-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Căn tổng bình phương 3,4,0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-C05` · `OUTCOME_ID=G12-CHII-B08-O05` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 7, đã cộng thành phần thay vì độ dài Euclid. Ôn CĐ18 mục 3.5; luyện THPT-TOP18-P15."
+  },
+  {
+    "item_id": "THPT-G12-B08-P09",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Khoảng cách A(1;2;3), B(1;2;7) bằng?",
+    "answer_key": "4",
+    "worked_solution": "\\(\\overrightarrow{AB}=(1-1;2-2;7-3)=(0;0;4)\\). Khoảng cách \\(AB=\\sqrt{0^2+0^2+4^2}=4\\).",
+    "skill_ids": [
+      "G12-CHII-B08-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Hiệu B−A chỉ khác 0 ở z."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P09` · `OUTCOME_ID=G12-CHII-B08-O05` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 7, khoảng cách là chênh lệch 7−3. Ôn CĐ18 mục 3.5; luyện THPT-TOP18-P15."
+  },
+  {
+    "item_id": "THPT-G12-B08-P10",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Độ dài vectơ v=(-2;3;6) bằng?",
+    "answer_key": "7",
+    "worked_solution": "Độ dài \\(|\\vec v|=\\sqrt{(-2)^2+3^2+6^2}=\\sqrt{49}=7\\). Tọa độ âm vẫn đóng góp bình phương dương.",
+    "skill_ids": [
+      "G12-CHII-B08-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Bình phương cả ba thành phần rồi lấy căn."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P10` · `OUTCOME_ID=G12-CHII-B08-O05` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ tọa độ âm hoặc tính bình phương âm, nhớ \\((-2)^2=4\\). Ôn CĐ18 mục 3.5; luyện THPT-TOP18-P15."
+  },
+  {
+    "item_id": "THPT-G12-B08-C06",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Robot đi thẳng từ A(0;0;0) tới B(3;4;0), tọa độ mét. Quãng đường đi thẳng là bao nhiêu?",
+    "answer_key": "5 m",
+    "worked_solution": "\\(\\overrightarrow{AB}=(3;4;0)\\). Robot đi thẳng từ A đến B, nên quãng đường bằng \\(AB=\\sqrt{3^2+4^2}=5\\) m.",
+    "skill_ids": [
+      "G12-CHII-B08-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Độ dời thẳng AB có thành phần 3,4,0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-C06` · `OUTCOME_ID=G12-CHII-B08-O06` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 7 m, đó là hành trình đi theo hai trục, không phải đi thẳng. Ôn CĐ18 mục 3.6; luyện THPT-TOP18-P16."
+  },
+  {
+    "item_id": "THPT-G12-B08-P11",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Drone đi thẳng 10 m trong 2 giây với tốc độ không đổi. Tính tốc độ.",
+    "answer_key": "5 m/s",
+    "worked_solution": "Vì tốc độ không đổi, lấy quãng đường chia thời gian: \\(v=\\frac{10}{2}=5\\) m/s. Nếu không có giả thiết tốc độ không đổi, chỉ tính được tốc độ trung bình.",
+    "skill_ids": [
+      "G12-CHII-B08-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Tốc độ bằng quãng đường chia thời gian."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P11` · `OUTCOME_ID=G12-CHII-B08-O06` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra 20, cần chia 10 m cho 2 s. Ôn CĐ18 mục 3.6; luyện THPT-TOP18-P16."
+  },
+  {
+    "item_id": "THPT-G12-B08-P12",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Một thiết bị bay từ \\(A(1;2;3)\\) đến \\(M(4;6;3)\\), rồi bay thẳng đến \\(B(4;6;15)\\); mỗi chặng là đoạn thẳng, tọa độ tính bằng mét. Tổng thời gian là 4 giây. Tính vectơ độ dời tổng hợp, độ lớn độ dời, quãng đường, vectơ vận tốc trung bình và tốc độ trung bình.",
+    "answer_key": "Độ dời \\((3;4;12)\\) m, độ lớn 13 m; quãng đường 17 m; vận tốc trung bình \\((\\frac34;1;3)\\) m/s; tốc độ trung bình \\(\\frac{17}{4}\\) m/s.",
+    "worked_solution": "Hai chặng có độ dời \\(\\overrightarrow{AM}=(3;4;0)\\), \\(\\overrightarrow{MB}=(0;0;12)\\). Tổng là \\(\\overrightarrow{AB}=(3;4;12)\\), độ lớn \\(\\sqrt{9+16+144}=13\\) m. Vì đi theo hai đoạn thẳng, quãng đường là \\(AM+MB=5+12=17\\) m. Vận tốc trung bình là \\(\\frac14\\overrightarrow{AB}=(\\frac34;1;3)\\) m/s. Tốc độ trung bình là \\(\\frac{17}{4}\\) m/s, không phải \\(\\frac{13}{4}\\) m/s: số sau là độ lớn vận tốc trung bình. Hai đại lượng khác nhau vì đường đi gấp khúc.",
+    "skill_ids": [
+      "G12-CHII-B08-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Cộng hai vectơ để tìm độ dời; cộng hai độ dài để tìm quãng đường. Chia từng đại lượng đúng loại cho 4 giây."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P12` · `OUTCOME_ID=G12-CHII-B08-O06` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho tốc độ trung bình bằng \\(\\frac{13}{4}\\) m/s, em đã chia độ lớn độ dời thay vì quãng đường. Ôn CĐ18 mục 3.6; luyện THPT-TOP18-P16."
+  },
+  {
+    "item_id": "THPT-G12-B06-T01",
+    "content_version": "SOURCE_BLOB_8991c8a30487fdf1db65cf31a19b0ed68ef52518_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong hình hộp $ABCD.A'B'C'D'$, hãy viết $\\overrightarrow{AB}+\\overrightarrow{AD}+\\overrightarrow{AA'}$ thành một vectơ; giải thích bằng hành trình từ $A$. Sau đó, nếu $\\vec a$ và $\\vec b$ lần lượt dài 2 và 5 với góc $60^\\circ$, dự đoán dấu và giá trị $\\vec a\\cdot\\vec b$.",
+    "answer_key": "AC′⃗; tích vô hướng bằng 5, dương.",
+    "worked_solution": "Đi từ A đến B, rồi từ B đến C (BC⃗=AD⃗), rồi từ C đến C′ (CC′⃗=AA′⃗). Theo quy tắc ba điểm, tổng bằng AC′⃗. Hai vectơ có góc 60° là góc nhọn nên tích vô hướng dương: 2·5·cos60°=5. Nếu nhầm đường chéo, hãy vẽ từng vectơ nối đầu–đuôi.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B06-O03",
+      "G12-CHII-B06-O05"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8991c8a30487fdf1db65cf31a19b0ed68ef52518",
+      "heading_id": "B06-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md",
+        "blob": "8991c8a30487fdf1db65cf31a19b0ed68ef52518",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B06-T01",
+      "line": 96,
+      "original_local_id": "B06-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID",
+      "related_item_ids": [
+        "THPT-G12-B06-P06",
+        "THPT-G12-B06-C05"
+      ],
+      "distinct_task_reason": "Vector sum exact subtask only; second dot product uses lengths 2,5, not candidate 2,3."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B07-T01",
+    "content_version": "SOURCE_BLOB_4bfbed222d552f3ccb9c965616245015930ab1cd_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho $A(2;-1;3)$ và $B(5;2;1)$. Không học thuộc công thức, hãy giải thích bằng thay đổi từng chiều vì sao $\\overrightarrow{AB}$ có tọa độ $(3;3;-2)$. Nếu điểm $N$ thuộc mặt phẳng $(Oyz)$ thì tọa độ nào của $N$ phải bằng 0?",
+    "answer_key": "AB⃗=(3;3;−2); x_N=0.",
+    "worked_solution": "Từ $A$ tới $B$, theo $x$ tăng $5-2=3$, theo $y$ tăng $2-(-1)=3$, theo $z$ giảm $1-3=-2$. Điểm nằm trên $(Oyz)$ có $x=0$. Nếu làm sai dấu $y$, hãy đặt hai số vào trục số và tính “cuối trừ đầu” một lần nữa.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B07-O04",
+      "G12-CHII-B07-O01"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4bfbed222d552f3ccb9c965616245015930ab1cd",
+      "heading_id": "B07-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md",
+        "blob": "4bfbed222d552f3ccb9c965616245015930ab1cd",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B07-T01",
+      "line": 74,
+      "original_local_id": "B07-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B08-T01",
+    "content_version": "SOURCE_BLOB_c85922428c85ddeb48cec5e2bd5953faa44207c8_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho $\\vec u=(2;-1;3)$ và $\\vec v=(1;4;-2)$. Trước khi tính, hãy dự đoán dấu của $\\vec u\\cdot\\vec v$ từ dấu từng tích; rồi tính $2\\vec u-\\vec v$. Nêu khác biệt giữa việc trừ hai vectơ và trừ độ dài của chúng.",
+    "answer_key": "Tích vô hướng −8, âm; 2u⃗−v⃗=(3;−6;8). Hiệu vectơ là vectơ, hiệu độ dài là số.",
+    "worked_solution": "Ba tích thành phần là 2, −4, −6; phần âm có tổng độ lớn 10 lớn hơn 2 nên tích vô hướng bằng −8, âm. Vì hai vectơ khác 0, góc giữa chúng là góc tù. Nhân từng tọa độ của u⃗ với 2 rồi trừ từng tọa độ tương ứng của v⃗: (4;−2;6)−(1;4;−2)=(3;−6;8). Hiệu hai vectơ vẫn là vectơ, có tọa độ xác định; hiệu hai độ dài chỉ là một số, không biểu diễn hướng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B08-O04",
+      "G12-CHII-B08-O01"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "c85922428c85ddeb48cec5e2bd5953faa44207c8",
+      "heading_id": "B08-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md",
+        "blob": "c85922428c85ddeb48cec5e2bd5953faa44207c8",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B08-T01",
+      "line": 106,
+      "original_local_id": "B08-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  }
+]

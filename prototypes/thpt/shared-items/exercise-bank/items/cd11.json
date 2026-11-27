@@ -1,0 +1,640 @@
+[
+  {
+    "item_id": "THPT-TOP11-P01",
+    "content_version": 2,
+    "stem": "Tìm họ nguyên hàm \\(f(x)=6x-4\\).",
+    "answer_key": "\\(F(x)=3x^2-4x+C\\) trên \\(\\mathbb R\\).",
+    "worked_solution": "Muốn \\(F'=6x-4\\), chọn \\(F=3x^2-4x+C\\) vì \\((3x^2)'=6x\\) và \\((-4x)'=-4\\). Hai nguyên hàm trên khoảng \\(\\mathbb R\\) khác nhau hằng số C; kiểm ngược \\(F'=6x-4\\).",
+    "skill_ids": [
+      "G12-CHIV-B11-O01"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O01"
+    ],
+    "problem_type_id": "TOP11-PRIMITIVE",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [
+      "Đạo hàm một đa thức bậc hai và một hạng tử bậc nhất để nhận ra hệ số."
+    ],
+    "remediation": "Nếu thiếu hằng số C, lấy đạo hàm hai hàm chỉ khác nhau 1; chúng có cùng đạo hàm. Ôn CĐ11 mục 1.1; luyện THPT-G12-B11-P01.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P01 · TOP11-O01"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P02",
+    "content_version": 2,
+    "stem": "\\(F'=3x^2\\), \\(F(2)=9\\); tìm F.",
+    "answer_key": "\\(F=x^3+C\\), \\(C=9-8=1\\); \\(F=x^3+1\\).",
+    "worked_solution": "Từ \\(F'=3x^2\\) suy \\(F=x^3+C\\). Điều kiện \\(F(2)=9\\) cho \\(8+C=9\\Rightarrow C=1\\); vậy \\(F=x^3+1\\). Kiểm \\(F'=3x^2\\) và \\(F(2)=9\\).",
+    "skill_ids": [
+      "G12-CHIV-B11-O02"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O02"
+    ],
+    "problem_type_id": "TOP11-INITIAL",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [
+      "Viết họ \\(F(x)=x^3+C\\) rồi mới thay \\(x=2\\) vào F."
+    ],
+    "remediation": "Nếu nhầm điều kiện vào đạo hàm, kiểm cả \\(F'(x)\\) và \\(F(2)\\) sau khi tìm C. Ôn CĐ11 mục 1.2; luyện THPT-G12-B11-P02.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P02 · TOP11-O02"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P03",
+    "content_version": 2,
+    "stem": "Tính \\(\\int (3x^{2}+4x-2)\\,\\mathrm dx\\).",
+    "answer_key": "\\(x^3+2x^2-2x+C\\).",
+    "worked_solution": "Chọn nguyên hàm lần lượt của \\(3x^2,4x,-2\\) là \\(x^3,2x^2,-2x\\). Cộng lại được \\(x^3+2x^2-2x+C\\); đạo hàm ngược trả đúng \\(3x^2+4x-2\\).",
+    "skill_ids": [
+      "G12-CHIV-B11-O03"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O03"
+    ],
+    "problem_type_id": "TOP11-POWER",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [
+      "Tách ba hạng tử, tăng số mũ rồi chia số mũ mới."
+    ],
+    "remediation": "Nếu mất hạng tử hằng \\(-2\\), nhớ một nguyên hàm của nó là \\(-2x\\); đạo hàm ngược từng hạng. Ôn CĐ11 mục 1.3; luyện THPT-G12-B11-P03.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P03 · TOP11-O03"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P04",
+    "content_version": 2,
+    "stem": "Tìm nguyên hàm \\(\\frac2x\\) trên \\((-\\infty;0)\\) biết \\(F(-1)=3\\).",
+    "answer_key": "\\(F=2\\ln(-x)+3\\) trên \\(x<0\\).",
+    "worked_solution": "Trên \\(x<0\\), \\(\\ln|x|=\\ln(-x)\\) hợp lệ. Họ nguyên hàm \\(F=2\\ln(-x)+C\\), và \\(F(-1)=2\\ln1+C=C=3\\). Vậy \\(F=2\\ln(-x)+3\\). Kiểm \\(F'=\\frac2x\\) trên nhánh âm.",
+    "skill_ids": [
+      "G12-CHIV-B11-O04"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O04"
+    ],
+    "problem_type_id": "TOP11-LOG_ABS",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [
+      "Trên \\(x<0\\), \\(|x|=-x\\); dùng điều kiện \\(F(-1)=3\\)."
+    ],
+    "remediation": "Nếu viết \\(\\ln x\\) trên miền âm, thử \\(x=-1\\): lôgarit không xác định thực. Dùng \\(\\ln(-x)\\) và kiểm đạo hàm. Ôn CĐ11 mục 1.4; luyện THPT-G12-B11-P04.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P04 · TOP11-O04"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P05",
+    "content_version": 2,
+    "stem": "Tính \\(\\int (2e^{2x}+3^x)\\,\\mathrm dx\\).",
+    "answer_key": "\\(e^{2x}+\\frac{3^x}{\\ln3}+C\\).",
+    "worked_solution": "Một nguyên hàm của \\(2e^{2x}\\) là \\(e^{2x}\\) vì đạo hàm của \\(e^{2x}\\) là \\(2e^{2x}\\). Một nguyên hàm của \\(3^x\\) là \\(\\frac{3^x}{\\ln3}\\) vì đạo hàm \\(3^x\\) bằng \\(3^x\\ln3\\). Cộng được \\(F=e^{2x}+\\frac{3^x}{\\ln3}+C\\).",
+    "skill_ids": [
+      "G12-CHIV-B11-O05"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O05"
+    ],
+    "problem_type_id": "TOP11-EXP",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [
+      "Đạo hàm \\(e^{2x}\\) và \\(3^x\\) để nhận diện hệ số bù."
+    ],
+    "remediation": "Nếu quên chia cho \\(\\ln3\\) hoặc nhân thừa 2, đạo hàm từng hạng để so với đề. Ôn CĐ11 mục 1.5; luyện THPT-G12-B11-P05.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P05 · TOP11-O05"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P06",
+    "content_version": 2,
+    "stem": "Tính \\(\\int (2\\cos  x-3\\sin  x)\\,\\mathrm dx\\).",
+    "answer_key": "\\(2\\sin x+3\\cos x+C\\) (x radian).",
+    "worked_solution": "Với \\(x\\) đo radian, một nguyên hàm của \\(2\\cos x\\) là \\(2\\sin x\\); một nguyên hàm của \\(-3\\sin x\\) là \\(3\\cos x\\) do \\((\\cos x)'=-\\sin x\\). Họ nguyên hàm là \\(2\\sin x+3\\cos x+C\\); kiểm ngược cả hai dấu.",
+    "skill_ids": [
+      "G12-CHIV-B11-O06"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O06"
+    ],
+    "problem_type_id": "TOP11-TRIG",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [
+      "Viết hai công thức đạo hàm sin và cos trước khi lấy nguyên hàm."
+    ],
+    "remediation": "Nếu sai dấu, đạo hàm \\(3\\cos x\\) để kiểm \\(-3\\sin x\\). Ôn CĐ11 mục 1.6; luyện THPT-G12-B11-P06.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P06 · TOP11-O06"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P07",
+    "content_version": 2,
+    "stem": "Một vật có vận tốc \\(v(t)=6t-4\\) (m/s), t tính bằng giây, vị trí \\(s(0)=3\\) m. Tìm \\(s(2)\\).",
+    "answer_key": "\\(s(2)=12-8+3=7\\) m.",
+    "worked_solution": "Vì \\(s'=v=6t-4\\), tích phân được \\(s=3t^2-4t+C\\). Dùng \\(s(0)=3\\Rightarrow C=3\\); thế \\(t=2\\) cho \\(s(2)=12-8+3=7\\) m. Đây là vị trí, không phải quãng đường.",
+    "skill_ids": [
+      "G12-CHIV-B11-O07"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O07"
+    ],
+    "problem_type_id": "TOP11-RECOVERY",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [
+      "Viết \\(s'(t)=v(t)\\), lấy nguyên hàm và dùng \\(s(0)\\)."
+    ],
+    "remediation": "Nếu chỉ tính độ dời, cộng lại vị trí đầu; nếu cần quãng đường phải xét dấu v. Ôn CĐ11 mục 1.7; luyện THPT-G12-B11-P07.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P07 · TOP11-O07"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P08",
+    "content_version": 2,
+    "stem": "Tính \\(\\int_{0}^{2} (3x^{2}+1)\\,\\mathrm dx\\).",
+    "answer_key": "\\([x^3+x]_0^2=8+2=10\\).",
+    "worked_solution": "Lấy \\(F=x^3+x\\) vì \\(F'=3x^2+1\\). Theo Newton–Leibniz, \\(\\int_0^2(3x^2+1)\\,\\mathrm dx=F(2)-F(0)=(8+2)-0=10\\). Tích phân xác định là số, không cộng \\(+C\\).",
+    "skill_ids": [
+      "G12-CHIV-B12-O01"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O08"
+    ],
+    "problem_type_id": "TOP11-FTC",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [
+      "Chọn F sao cho \\(F'(x)=3x^2+1\\), rồi lấy \\(F(2)-F(0)\\)."
+    ],
+    "remediation": "Nếu cộng hằng số C vào tích phân xác định, viết \\([F(b)+C]-[F(a)+C]\\) để thấy C triệt tiêu. Ôn CĐ11 mục 2.1; luyện THPT-G12-B12-P01.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P08 · TOP11-O08"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P09",
+    "content_version": 2,
+    "stem": "Tính \\(\\int_1^3(2x+1)\\,\\mathrm dx-\\int_1^3 x\\,\\mathrm dx\\).",
+    "answer_key": "\\(\\int_1^3(x+1)\\,\\mathrm dx=\\left[\\frac{x^2}2+x\\right]_1^3=(\\frac92+3)-(\\frac12+1)=6\\).",
+    "worked_solution": "Hai tích phân cùng cận, nên gộp \\(\\int_1^3[(2x+1)-x]\\,\\mathrm dx=\\int_1^3(x+1)\\,\\mathrm dx\\). Nguyên hàm \\(F=\\frac{x^2}2+x\\), hiệu \\(F(3)-F(1)=(\\frac92+3)-(\\frac12+1)=6\\).",
+    "skill_ids": [
+      "G12-CHIV-B12-O02"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O09"
+    ],
+    "problem_type_id": "TOP11-LINEAR",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [
+      "Hai tích phân cùng cận: gộp hiệu hai hàm dưới dấu tích phân."
+    ],
+    "remediation": "Nếu đổi dấu cả hai hạng tử, viết \\((2x+1)-x\\) trong ngoặc trước khi rút gọn. Ôn CĐ11 mục 2.2; luyện THPT-G12-B12-P02.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P09 · TOP11-O09"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P10",
+    "content_version": 2,
+    "stem": "Tính \\(\\int_{3}^{1} x^{2}\\,\\mathrm dx\\).",
+    "answer_key": "\\(-\\frac{26}3\\).",
+    "worked_solution": "Dùng đảo cận: \\(\\int_3^1 x^2\\,\\mathrm dx=-\\int_1^3 x^2\\,\\mathrm dx=-\\left[\\frac{x^3}3\\right]_1^3=-\\frac{27-1}3=-\\frac{26}3\\). Giá trị âm do chiều lấy tích phân, không phải diện tích âm.",
+    "skill_ids": [
+      "G12-CHIV-B12-O03"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O10"
+    ],
+    "problem_type_id": "TOP11-ORIENTED",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [
+      "Đảo hai cận và đặt một dấu trừ."
+    ],
+    "remediation": "Nếu kết quả dương, kiểm chiều tích phân; diện tích hình học và tích phân định hướng là hai khái niệm khác nhau. Ôn CĐ11 mục 2.3; luyện THPT-G12-B12-P03.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P10 · TOP11-O10"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P11",
+    "content_version": 2,
+    "stem": "Tính diện tích hình phẳng giới hạn bởi \\(y=x^2+1\\), trục Ox, \\(x=0\\) và \\(x=2\\).",
+    "answer_key": "\\(S=\\frac{14}3\\) đơn vị diện tích.",
+    "worked_solution": "Vì \\(x^2+1>0\\) trên \\([0;2]\\), \\(S=\\int_0^2(x^2+1)\\,\\mathrm dx=\\left[\\frac{x^3}3+x\\right]_0^2=\\frac83+2=\\frac{14}3\\) đơn vị diện tích. Phần +1 tạo một dải chữ nhật diện tích 2, không được bỏ.",
+    "skill_ids": [
+      "G12-CHIV-B12-O04"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O11"
+    ],
+    "problem_type_id": "TOP11-POS_AREA",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [
+      "Kiểm hàm không âm trên cả đoạn rồi tìm nguyên hàm."
+    ],
+    "remediation": "Nếu bỏ hạng tử 1, hình có thêm một dải chữ nhật cao 1; tính đủ cả hai hạng tử. Ôn CĐ11 mục 2.4; luyện THPT-G12-B12-P04.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P11 · TOP11-O11"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P12",
+    "content_version": 2,
+    "stem": "Một vật có vận tốc \\(v(t)=t-2\\) (m/s), với \\(0\\le t\\le3\\) (s). Tính độ dời và tổng quãng đường.",
+    "answer_key": "Độ dời \\(-\\frac32\\) m; quãng đường \\(\\frac52\\) m.",
+    "worked_solution": "Độ dời \\(I=\\int_0^3(t-2)\\,\\mathrm dt=\\left[\\frac{t^2}2-2t\\right]_0^3=\\frac92-6=-\\frac32\\) m. Vận tốc đổi dấu tại \\(t=2\\): âm trước 2, dương sau 2. Quãng đường \\(S=\\int_0^2(2-t)\\,\\mathrm dt+\\int_2^3(t-2)\\,\\mathrm dt=2+\\frac12=\\frac52\\) m. \\(|I|=\\frac32\\) m khác S; hai đoạn chuyển động ngược chiều nên độ dời có triệt tiêu.",
+    "skill_ids": [
+      "G12-CHIV-B12-O05"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O12"
+    ],
+    "problem_type_id": "TOP11-SIGNED",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [
+      "Tìm lúc \\(v(t)=0\\), xét dấu v trước và sau thời điểm đó."
+    ],
+    "remediation": "Nếu dùng trị tuyệt đối của độ dời làm quãng đường, chia tại \\(t=2\\), tính \\(\\int_0^3|v(t)|\\,\\mathrm dt\\) rồi so hai kết quả. Ôn CĐ11 mục 2.5; luyện THPT-G12-B12-P05.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P12 · TOP11-O12"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P13",
+    "content_version": 2,
+    "stem": "Tính \\(\\int_{0}^{\\pi} 2\\sin  x\\,\\mathrm dx\\).",
+    "answer_key": "\\([-2\\cos x]_0^\\pi=2-(-2)=4\\).",
+    "worked_solution": "Góc đo radian; \\(F=-2\\cos x\\) vì \\(F'=2\\sin x\\). Thế cận: \\(\\int_0^\\pi 2\\sin x\\,\\mathrm dx=-2\\cos\\pi-(-2\\cos0)=2-(-2)=4\\). Vì \\(\\sin x\\ge0\\) trên \\([0;\\pi]\\), giá trị này cũng là diện tích dưới đồ thị.",
+    "skill_ids": [
+      "G12-CHIV-B12-O06"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O13"
+    ],
+    "problem_type_id": "TOP11-TRIG_EXP_DEFINITE",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [
+      "Dùng nguyên hàm \\(-2\\cos x\\); ghi cả hai giá trị cận."
+    ],
+    "remediation": "Nếu ra 0, viết \\(\\cos\\pi=-1\\) và \\(\\cos0=1\\), giữ dấu trừ của \\(F(0)\\). Ôn CĐ11 mục 2.6; luyện THPT-G12-B12-P06.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P13 · TOP11-O13"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P14",
+    "content_version": 2,
+    "stem": "Một vật có vận tốc \\(v(t)=3t^2\\) (m/s), t tính bằng giây, \\(s(0)=5\\) m. Tính vị trí \\(s(2)\\).",
+    "answer_key": "\\(s(2)=5+8=13\\) m.",
+    "worked_solution": "Vì \\(v(t)=s'(t)=3t^2\\), độ dời từ 0 tới 2 là \\(\\int_0^2 3t^2\\,\\mathrm dt=[t^3]_0^2=8\\). Vị trí cuối \\(s(2)=s(0)+8=5+8=13\\) m. Không dùng \\(v(2)\\cdot2\\) vì vận tốc không hằng.",
+    "skill_ids": [
+      "G12-CHIV-B12-O07"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O14"
+    ],
+    "problem_type_id": "TOP11-ACCUMULATE",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [
+      "Tích phân v để được độ dời, cộng \\(s(0)\\) để ra vị trí."
+    ],
+    "remediation": "Nếu nhân \\(v(2)\\) với 2, nhớ vận tốc thay đổi theo t; tích phân có dấu của v mới cho độ dời. Ôn CĐ11 mục 2.7; luyện THPT-G12-B12-P07.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P14 · TOP11-O14"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P15",
+    "content_version": 2,
+    "stem": "Tính diện tích hình phẳng dưới \\(y=\\sqrt x\\) và trên Ox từ \\(x=1\\) đến \\(x=9\\).",
+    "answer_key": "\\(\\frac{52}3\\) đơn vị diện tích.",
+    "worked_solution": "\\(\\sqrt x\\ge0\\) và liên tục trên \\([1;9]\\). \\(S=\\int_1^9 x^{1/2}\\,\\mathrm dx=\\left[\\frac23x^{3/2}\\right]_1^9=\\frac23(27-1)=\\frac{52}3\\) đơn vị diện tích.",
+    "skill_ids": [
+      "G12-CHIV-B13-O01"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O15"
+    ],
+    "problem_type_id": "TOP11-CURVE_AREA",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [
+      "Đổi \\(\\sqrt x\\) thành \\(x^{\\frac12}\\); cả hai cận đều dương."
+    ],
+    "remediation": "Nếu chỉ tính \\(F(9)\\), còn phải trừ \\(F(1)\\); kiểm \\(9^{\\frac32}=27\\). Ôn CĐ11 mục 3.1; luyện THPT-G12-B13-P01.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P15 · TOP11-O15"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P16",
+    "content_version": 2,
+    "stem": "Tính diện tích hình phẳng giới hạn bởi \\(y=x^2-1\\), Ox, \\(x=-2\\) và \\(x=1\\).",
+    "answer_key": "\\(\\frac83\\) đơn vị diện tích.",
+    "worked_solution": "Các nghiệm \\(x=-1,1\\). Trên \\([-2;-1]\\), \\(x^2-1\\ge0\\); trên \\([-1;1]\\), \\(x^2-1\\le0\\). \\(S=\\int_{-2}^{-1}(x^2-1)\\,\\mathrm dx+\\int_{-1}^{1}(1-x^2)\\,\\mathrm dx\\). Phần đầu \\(\\left[\\frac{x^3}3-x\\right]_{-2}^{-1}=\\frac43\\); phần sau \\(\\left[x-\\frac{x^3}3\\right]_{-1}^1=\\frac43\\). Tổng \\(S=\\frac83\\) đơn vị diện tích.",
+    "skill_ids": [
+      "G12-CHIV-B13-O02"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O16"
+    ],
+    "problem_type_id": "TOP11-SPLIT_AXIS",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [
+      "Tìm nghiệm \\(x^2-1=0\\) trong đoạn rồi chia các phần âm và dương."
+    ],
+    "remediation": "Nếu tích phân có dấu cho kết quả nhỏ hơn diện tích, xét dấu \\(x^2-1\\) trên từng khoảng và đổi dấu phần dưới Ox. Ôn CĐ11 mục 3.2; luyện THPT-G12-B13-P02.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P16 · TOP11-O16"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P17",
+    "content_version": 2,
+    "stem": "Tính diện tích giữa \\(y=2x+3\\) và \\(y=x^2+1\\) trên \\([0;2]\\).",
+    "answer_key": "\\(\\frac{16}3\\) đơn vị diện tích.",
+    "worked_solution": "Hiệu \\((2x+3)-(x^2+1)=3-(x-1)^2\\ge2\\) trên \\([0;2]\\), nên đường thẳng luôn ở trên. \\(S=\\int_0^2(-x^2+2x+2)\\,\\mathrm dx=\\left[-\\frac{x^3}3+x^2+2x\\right]_0^2=-\\frac83+4+4=\\frac{16}3\\) đơn vị diện tích.",
+    "skill_ids": [
+      "G12-CHIV-B13-O03"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O17"
+    ],
+    "problem_type_id": "TOP11-BETWEEN_UNCROSSED",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [
+      "Lập hiệu hai hàm rồi chứng minh hiệu không âm bằng bình phương hoàn chỉnh."
+    ],
+    "remediation": "Nếu chỉ thử một điểm rồi kết luận đường luôn ở trên, xét \\(3-(x-1)^2\\) trên đoạn \\([0;2]\\). Ôn CĐ11 mục 3.3; luyện THPT-G12-B13-P03.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P17 · TOP11-O17"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P18",
+    "content_version": 2,
+    "stem": "Tính diện tích giữa \\(y=x\\) và \\(y=x^2\\) trên \\([-1;2]\\).",
+    "answer_key": "\\(\\frac{11}6\\) đơn vị diện tích.",
+    "worked_solution": "Hai đường giao tại \\(x=0\\) và \\(x=1\\). Hiệu \\(x^2-x=x(x-1)\\) dương trên \\((-1;0)\\) và \\((1;2)\\), âm trên \\((0;1)\\). Do đó \\(S=\\int_{-1}^0(x^2-x)\\,\\mathrm dx+\\int_0^1(x-x^2)\\,\\mathrm dx+\\int_1^2(x^2-x)\\,\\mathrm dx\\). Dùng nguyên hàm \\(F(x)=\\frac{x^3}3-\\frac{x^2}2\\) cho hiệu \\(x^2-x\\), ba diện tích lần lượt là \\(\\frac56\\), \\(\\frac16\\), \\(\\frac56\\). Tổng \\(S=\\frac{11}6\\) đơn vị diện tích. Không gộp hiệu có dấu trên cả đoạn.",
+    "skill_ids": [
+      "G12-CHIV-B13-O04"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O18"
+    ],
+    "problem_type_id": "TOP11-BETWEEN_CROSSED",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [
+      "Giải \\(x=x^2\\); chia đoạn ở cả 0 và 1."
+    ],
+    "remediation": "Nếu quên vùng bên trái 0, xét dấu \\(x(x-1)\\) trên ba khoảng và cộng ba diện tích dương. Ôn CĐ11 mục 3.4; luyện THPT-G12-B13-P04.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P18 · TOP11-O18"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P19",
+    "content_version": 2,
+    "stem": "Hai đường \\(y=3x\\) và \\(y=x^2\\) tạo thành một miền kín. Tự xác định cận tích phân rồi tính diện tích miền đó.",
+    "answer_key": "\\(\\frac92\\) đơn vị diện tích.",
+    "worked_solution": "Giải \\(3x=x^2\\Leftrightarrow x(x-3)=0\\), nên hai giao điểm có hoành độ 0 và 3. Trên \\([0;3]\\), \\(3x-x^2=x(3-x)\\ge0\\). \\(S=\\int_0^3(3x-x^2)\\,\\mathrm dx=\\left[\\frac{3x^2}2-\\frac{x^3}3\\right]_0^3=\\frac{27}2-9=\\frac92\\) đơn vị diện tích.",
+    "skill_ids": [
+      "G12-CHIV-B13-O05"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O19"
+    ],
+    "problem_type_id": "TOP11-MODEL_INTERSECTIONS",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [
+      "Giải \\(3x=x^2\\) để tự xác định hai cận của miền kín."
+    ],
+    "remediation": "Nếu đoán cận từ hình, giải giao điểm trước rồi kiểm hiệu hai hàm giữa chúng. Ôn CĐ11 mục 3.5; luyện THPT-G12-B13-P05.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P19 · TOP11-O19"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P20",
+    "content_version": 2,
+    "stem": "Cho thiết diện hình vuông cạnh \\(x+1\\) trên \\([0;1]\\), tính V.",
+    "answer_key": "\\(V=\\frac73\\) đơn vị thể tích.",
+    "worked_solution": "Tiết diện vuông cạnh \\(x+1\\) có diện tích \\(A(x)=(x+1)^2=x^2+2x+1\\). Thể tích \\(V=\\int_0^1 A(x)\\,\\mathrm dx=\\left[\\frac{x^3}3+x^2+x\\right]_0^1=\\frac13+1+1=\\frac73\\) đơn vị thể tích. Không nhân \\(\\pi\\) vì tiết diện không phải hình tròn.",
+    "skill_ids": [
+      "G12-CHIV-B13-O06"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O20"
+    ],
+    "problem_type_id": "TOP11-SQUARE_SLICES",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [
+      "Từ cạnh \\(x+1\\) suy ra diện tích lát cắt \\(A(x)=(x+1)^2\\)."
+    ],
+    "remediation": "Nếu nhân π, hãy xác định lại hình vuông hay hình tròn; nếu thiếu bình phương, kiểm thứ nguyên diện tích. Ôn CĐ11 mục 4.1; luyện THPT-G12-B13-P06.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P20 · TOP11-O20"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P21",
+    "content_version": 2,
+    "stem": "Một khối có thiết diện vuông góc với Ox là hình tròn bán kính \\(r(x)=3-x\\), \\(0\\le x\\le2\\). Tính thể tích khối.",
+    "answer_key": "\\(\\frac{26\\pi}3\\) đơn vị thể tích.",
+    "worked_solution": "Trên \\([0;2]\\), \\(r(x)=3-x\\ge1\\). Thiết diện tròn có \\(A(x)=\\pi(3-x)^2\\). \\(V=\\pi\\int_0^2(9-6x+x^2)\\,\\mathrm dx=\\pi\\left[9x-3x^2+\\frac{x^3}3\\right]_0^2=\\pi(18-12+\\frac83)=\\frac{26\\pi}3\\) đơn vị thể tích.",
+    "skill_ids": [
+      "G12-CHIV-B13-O07"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O21"
+    ],
+    "problem_type_id": "TOP11-CIRCULAR_SLICES",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [
+      "Bán kính \\(r(x)=3-x\\) không âm; diện tích tiết diện bằng \\(\\pi r(x)^2\\)."
+    ],
+    "remediation": "Nếu dùng \\(\\pi r\\) hoặc \\(2\\pi r\\), kiểm đó không phải diện tích; khai triển \\((3-x)^2\\) trước khi tích phân. Ôn CĐ11 mục 4.2; luyện THPT-G12-B13-P07.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P21 · TOP11-O21"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P22",
+    "content_version": 3,
+    "stem": "Cho miền \\(0\\le x\\le2\\), \\(0\\le y\\le\\sqrt x\\) quay quanh Ox, V?",
+    "answer_key": "\\(V=2\\pi\\) đơn vị thể tích.",
+    "worked_solution": "Quay vùng \\(0\\le y\\le\\sqrt x\\), \\(0\\le x\\le2\\) quanh Ox, tiết diện vuông góc Ox là đĩa bán kính \\(\\sqrt x\\). Diện tích \\(A(x)=\\pi(\\sqrt x)^2=\\pi x\\). Thể tích \\(V=\\pi\\int_0^2 x\\,\\mathrm dx=\\pi\\left[\\frac{x^2}2\\right]_0^2=2\\pi\\) đơn vị thể tích.",
+    "skill_ids": [
+      "G12-CHIV-B13-O08"
+    ],
+    "original_outcome_ids": [
+      "TOP11-O22"
+    ],
+    "problem_type_id": "TOP11-WASHERS",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [
+      "Mỗi tiết diện vuông góc Ox là đĩa bán kính \\(\\sqrt x\\)."
+    ],
+    "remediation": "Nếu bình phương sai \\(\\sqrt x\\), viết \\(A(x)=\\pi(\\sqrt x)^2=\\pi x\\) và thế đúng hai cận. Ôn CĐ11 mục 4.3; luyện THPT-G12-B13-P08.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P22 · TOP11-O22"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

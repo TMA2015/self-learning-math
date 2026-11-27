@@ -1,0 +1,248 @@
+[
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-TOP20-P01",
+    "outcome_id": "TOP20-O01"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-TOP20-P02",
+    "outcome_id": "TOP20-O02"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-TOP20-P03",
+    "outcome_id": "TOP20-O03"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-TOP20-P04",
+    "outcome_id": "TOP20-O04"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-TOP20-P05",
+    "outcome_id": "TOP20-O05"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-TOP20-P06",
+    "outcome_id": "TOP20-O06"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-TOP20-P07",
+    "outcome_id": "TOP20-O07"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 8,
+    "item_id": "THPT-TOP20-P08",
+    "outcome_id": "TOP20-O08"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 9,
+    "item_id": "THPT-TOP20-P09",
+    "outcome_id": "TOP20-O09"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 10,
+    "item_id": "THPT-TOP20-P10",
+    "outcome_id": "TOP20-O10"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 11,
+    "item_id": "THPT-TOP20-P11",
+    "outcome_id": "TOP20-O11"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 12,
+    "item_id": "THPT-TOP20-P12",
+    "outcome_id": "TOP20-O12"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 13,
+    "item_id": "THPT-TOP20-P13",
+    "outcome_id": "TOP20-O13"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 14,
+    "item_id": "THPT-TOP20-P14",
+    "outcome_id": "TOP20-O14"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 15,
+    "item_id": "THPT-TOP20-P15",
+    "outcome_id": "TOP20-O15"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 16,
+    "item_id": "THPT-TOP20-P16",
+    "outcome_id": "TOP20-O16"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 17,
+    "item_id": "THPT-TOP20-P17",
+    "outcome_id": "TOP20-O17"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 18,
+    "item_id": "THPT-TOP20-W01",
+    "outcome_id": "TOP20-O08"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 19,
+    "item_id": "THPT-TOP20-W02",
+    "outcome_id": "TOP20-O14"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 20,
+    "item_id": "THPT-TOP20-W03",
+    "outcome_id": "TOP20-O17"
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 1,
+    "item_id": "THPT-TOP20-P01"
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 2,
+    "item_id": "THPT-TOP20-P03"
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 3,
+    "item_id": "THPT-TOP20-P04"
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 4,
+    "item_id": "THPT-TOP20-P07"
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 5,
+    "item_id": "THPT-TOP20-P08"
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 6,
+    "item_id": "THPT-TOP20-P10"
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 7,
+    "item_id": "THPT-TOP20-P11"
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 8,
+    "item_id": "THPT-TOP20-P13"
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 9,
+    "item_id": "THPT-TOP20-P14"
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 10,
+    "item_id": "THPT-TOP20-P16"
+  },
+  {
+    "collection": "TOPIC:CD20:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 11,
+    "item_id": "THPT-TOP20-P17"
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 21,
+    "item_id": "THPT-G10-B26-P05",
+    "outcome_id": "TOP20-O03",
+    "optional": true
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 22,
+    "item_id": "THPT-G10-B27-P05",
+    "outcome_id": "TOP20-O06",
+    "optional": true
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 23,
+    "item_id": "THPT-G11-CHVIII-B29-P02",
+    "outcome_id": "TOP20-O15",
+    "optional": true
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 24,
+    "item_id": "THPT-G11-CHVIII-B29-P04",
+    "outcome_id": "TOP20-O14",
+    "optional": true
+  },
+  {
+    "collection": "TOPIC:CD20:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 25,
+    "item_id": "THPT-G11-CHVIII-B30-P07",
+    "outcome_id": "TOP20-O16",
+    "optional": true
+  }
+]

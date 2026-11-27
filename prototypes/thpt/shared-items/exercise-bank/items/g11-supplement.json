@@ -1,0 +1,1510 @@
+[
+  {
+    "item_id": "THPT-G11-SUPP-E01-C01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một mô hình có số lượng ban đầu 200, tăng 5% so với năm trước vào mỗi năm. Tính giá trị mô hình sau hai năm.",
+    "answer_key": "220,5 (giá trị mô hình).",
+    "worked_solution": "Mô hình tăng theo tỉ lệ cố định mỗi năm có hệ số 1+0,05=1,05. Sau hai năm, giá trị là 200·1,05²=220,5. Nếu đại lượng là số cá thể thực, cần quy ước làm tròn và kiểm giả định mô hình.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E01-EXPONENTIAL_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Với A₀>0, r>−1 và t là số năm không âm, hai mô hình A₀(1+r)^t và A₀e^(rt) có luôn bằng nhau khi cùng r không? Nếu thay r trong số mũ của mô hình liên tục bằng k, chọn k thế nào để hai mô hình khớp?",
+    "answer_key": "Không; để hai mô hình khớp tại các năm nguyên, chọn k=ln(1+r) trong A₀e^(kt).",
+    "worked_solution": "Với A₀>0 và r>−1, mô hình tăng theo từng năm là A₀(1+r)^t. Mô hình tăng liên tục là A₀e^(kt). Vì (1+r)^t=e^(t ln(1+r)), chọn k=ln(1+r) để hai công thức khớp. Nếu đặt k=r thì nói chung không bằng nhau.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E01-EXPONENTIAL_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-C02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Sau mấy chu kì bán rã vật còn 1/8 khối lượng đầu?",
+    "answer_key": "3 chu kì.",
+    "worked_solution": "3 chu kì do (1/2)^3=1/8.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E01-HALF_LIFE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-C02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-P02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chu kì bán rã 10 năm; sau 15 năm còn tỉ lệ khối lượng nào?",
+    "answer_key": "1/(2√2)≈0,3536 (khoảng 35,36% khối lượng ban đầu).",
+    "worked_solution": "Theo mô hình bán rã, tỉ lệ khối lượng còn lại sau t năm là 2^(−t/T), trong đó T=10 năm. Tại t=15, tỉ lệ là 2^(−1,5)=1/(2√2)≈0,3536. Thời gian không nhất thiết là số nguyên chu kì.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E01-HALF_LIFE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-C03",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "[H+]=10^(-6) mol/L, theo công thức pH=-log10[H+] có pH bao nhiêu?",
+    "answer_key": "pH=6.",
+    "worked_solution": "6, giả thiết nồng độ dương.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E01-PH_SCALE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-C03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-P03",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Theo mô hình pH=−log₁₀[H⁺] (nồng độ tính bằng mol/L), pH tăng từ 4 lên 6 thì nồng độ ion H⁺ giảm bao nhiêu lần?",
+    "answer_key": "Nồng độ mới bằng 1/100 nồng độ ban đầu; giảm 100 lần.",
+    "worked_solution": "Theo mô hình pH=−log₁₀[H⁺], nồng độ ban đầu là 10⁻⁴ mol/L, nồng độ sau là 10⁻⁶ mol/L. Tỉ số cũ/mới bằng 10²=100.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E01-PH_SCALE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-P03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-C04",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Mô hình M=log10(I/S), tỉ số I/S=10^5. Tìm M.",
+    "answer_key": "M=5.",
+    "worked_solution": "5.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E01-RICHTER_SCALE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-C04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-P04",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Theo mô hình M=log₁₀(I/S), hai biên độ dương I₁,I₂ được so với cùng chuẩn S>0, biết I₂/I₁=10^0,7. Tính M₂−M₁.",
+    "answer_key": "Chênh lệch 0,7.",
+    "worked_solution": "Với cùng biên độ chuẩn S>0, M₂−M₁=log₁₀(I₂/S)−log₁₀(I₁/S)=log₁₀(I₂/I₁)=log₁₀(10^0,7)=0,7. Đây là chênh lệch số đo theo mô hình biên độ, không suy trực tiếp tỉ số năng lượng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E01-RICHTER_SCALE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-P04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-C05",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "I/I0=100, mức L=10log10(I/I0) bằng bao nhiêu?",
+    "answer_key": "20 dB.",
+    "worked_solution": "20 dB vì 10·2=20.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E01-DECIBEL_SCALE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-C05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-P05",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Theo mô hình L=10log₁₀(I/I₀) với cùng cường độ chuẩn I₀, mức âm tăng 30 dB. Tìm tỉ số cường độ mới/cũ.",
+    "answer_key": "1000.",
+    "worked_solution": "Với cùng cường độ chuẩn I₀>0, L₂−L₁=10log₁₀(I₂/I₁)=30. Suy ra log₁₀(I₂/I₁)=3 và I₂/I₁=10³=1000.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E01-DECIBEL_SCALE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-P05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-P06",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Ngoại suy quần thể tăng 2% mỗi năm suốt 100 năm: nêu 2 giả định cần kiểm.",
+    "answer_key": "Ví dụ: tỉ lệ tăng hằng năm ổn định; nguồn lực và môi trường cho phép mô hình tiếp tục tăng trong thời gian dài. Chấp nhận hai giả định hợp lí khác có giải thích.",
+    "worked_solution": "Tốc độ tăng bất biến và môi trường/nguồn lực không ràng buộc; thời gian, di cư, dịch bệnh và sai số có thể làm kết quả thực tế khác mô hình.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E01-MODEL_ASSUMPTIONS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-P06",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-C01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Lăng trụ tam giác có bao nhiêu mặt đáy và bao nhiêu mặt bên?",
+    "answer_key": "2 mặt đáy tam giác; 3 mặt bên.",
+    "worked_solution": "2 đáy tam giác bằng nhau và 3 mặt bên hình bình hành.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E02-NET_CONSTRUCTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Làm thùng không nắp từ bìa, điều kiện nào cần kiểm trước khi cắt/dán?",
+    "answer_key": "Ví dụ: bỏ mặt nắp, kiểm kích thước và vị trí cạnh ghép, kiểm các mặt gấp thành thùng không chồng lên nhau.",
+    "worked_solution": "Không tạo nắp, cặp cạnh ghép đúng chiều dài/vị trí, các mặt có thể khép mà không chồng sai.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E02-NET_CONSTRUCTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-C02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cọc cao 2 m vuông góc nền ngang, bóng cọc dài 2 m. Giả sử tia sáng thẳng, tính góc giữa tia sáng và mặt nền.",
+    "answer_key": "45°.",
+    "worked_solution": "Cọc vuông góc nền ngang nên chiều cao và bóng tạo hai cạnh góc vuông dài 2 m. Góc nhọn θ giữa tia sáng và nền có tan θ=2/2=1, suy ra θ=45°.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E02-LINE_PLANE_MEASURE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-C02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-P02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cọc cao 1 m vuông góc nền ngang, bóng dài 3 m. Với θ là góc giữa tia sáng và nền, học sinh ghi sin θ=1/3. Sửa và giải thích.",
+    "answer_key": "tan θ=1/3; sin θ=1/√10.",
+    "worked_solution": "Cọc và bóng tạo tam giác vuông; cạnh đối dài 1 m, cạnh kề 3 m, cạnh huyền √(1²+3²)=√10 m. Do đó tan θ=1/3, sin θ=1/√10. Sai lầm là dùng cạnh kề thay cho cạnh huyền.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E02-LINE_PLANE_MEASURE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-C03",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hai tia đo góc phẳng nhị diện phải quan hệ với giao tuyến d thế nào?",
+    "answer_key": "Hai tia nằm trong hai nửa mặt phẳng của nhị diện, cùng gốc H∈d và vuông góc d.",
+    "worked_solution": "Chọn H trên cạnh nhị diện d. Trong mỗi nửa mặt phẳng của nhị diện, dựng một tia gốc H vuông góc d. Góc giữa hai tia đó là góc phẳng nhị diện.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E02-DIHEDRAL_MEASURE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-C03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-P03",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Có thể lấy góc giữa hai đường chéo nhìn thấy trên hình phối cảnh để gọi là góc nhị diện?",
+    "answer_key": "Không; cần hai tia đúng điều kiện xác định góc phẳng nhị diện.",
+    "worked_solution": "Không. Chúng có thể không vuông góc giao tuyến, góc phối cảnh cũng không bảo toàn.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E02-DIHEDRAL_MEASURE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-P03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-C04",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chóp có diện tích đáy 18cm², chiều cao 4cm; thể tích?",
+    "answer_key": "24 cm³.",
+    "worked_solution": "(1/3)·18·4=24cm³.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E02-VOLUME_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-C04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-P04",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Lăng trụ có Sđáy=12cm², V=60cm³ thì chiều cao?",
+    "answer_key": "5 cm.",
+    "worked_solution": "h=V/Sđáy=5cm; không lấy 1/3.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E02-VOLUME_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-P04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-C05",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Vì sao nối A với A', B với B', C với C' khi dựng lăng trụ ABC.A'B'C'?",
+    "answer_key": "Vì đó là các cặp đỉnh tương ứng, tạo ba cạnh bên song song và bằng nhau.",
+    "worked_solution": "Đó là các đỉnh tương ứng của hai đáy và tạo các cạnh bên song song.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E02-GEOGEBRA_REPRESENTATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-C05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-P05",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Khi vẽ lăng trụ trên giấy, cạnh bị che khuất thường nên dùng nét nào?",
+    "answer_key": "Nét đứt.",
+    "worked_solution": "Nét đứt, kết hợp nhãn rõ. Đừng kết luận vuông góc chỉ từ phối cảnh.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-E02-GEOGEBRA_REPRESENTATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-P05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-TRIG-C01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Viết đúng công thức cos(a+b).",
+    "answer_key": "cos(a+b)=cos a cos b−sin a sin b.",
+    "worked_solution": "cos a cos b−sin a sin b; dấu trừ không phải cộng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-TRIG_IDENTITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-TRIG-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-TRIG-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chu kì cơ bản của hàm y=sin(3x) là?",
+    "answer_key": "2π/3.",
+    "worked_solution": "Chu kì cơ bản của sin x là 2π. Với y=sin(3x), chu kì dương nhỏ nhất T thỏa 3T=2π, nên T=2π/3.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-TRIG_IDENTITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-TRIG-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-TRIG-P02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Giải sin x=0 với x thuộc [0,2π].",
+    "answer_key": "x∈{0,π,2π}.",
+    "worked_solution": "x=0,π,2π. Nếu khoảng có cả hai đầu mút thì tính cả 0 và 2π.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-TRIG_IDENTITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-TRIG-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-SEQ-C01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "u1=5 và d=2 cấp số cộng, tìm u6.",
+    "answer_key": "u₆=15.",
+    "worked_solution": "u6=5+5·2=15.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-SEQUENCE_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-SEQ-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-SEQ-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cấp số nhân v1=3, q=2, tìm tổng 4 số hạng đầu.",
+    "answer_key": "S₄=45.",
+    "worked_solution": "S4=3(1+2+4+8)=45.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-SEQUENCE_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-SEQ-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-SEQ-P02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tiền công năm đầu 50 triệu đồng, mỗi năm sau tăng thêm đúng 5 triệu đồng so với năm trước. Tính tổng tiền công trong 3 năm.",
+    "answer_key": "165 triệu đồng.",
+    "worked_solution": "Tiền công mỗi năm tạo cấp số cộng có số hạng đầu 50 và công sai 5 (triệu đồng). Ba năm lần lượt nhận 50,55,60 triệu đồng; tổng bằng 165 triệu đồng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-SEQUENCE_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-SEQ-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-LIMIT-C01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tính lim(x→2)(x²−4)/(x−2).",
+    "answer_key": "4.",
+    "worked_solution": "Với x≠2, (x²−4)/(x−2)=x+2. Khi x tiến đến 2, x+2 tiến đến 4. Không thay x=2 trực tiếp vào phân thức ban đầu.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-LIMIT_CONTINUITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-LIMIT-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-LIMIT-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Với f(x)=x+2 khi x≠1, f(1)=a, tìm a để liên tục tại1.",
+    "answer_key": "a=3.",
+    "worked_solution": "a=3, bằng giới hạn hai phía 3.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-LIMIT_CONTINUITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-LIMIT-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-LIMIT-P02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "lim(x→+∞)(3x²+2)/(x²−1) bằng?",
+    "answer_key": "3.",
+    "worked_solution": "3, chia cả tử và mẫu cho x².",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-LIMIT_CONTINUITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-LIMIT-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-EXPL-C01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Giải log2(x−1)=3 và ghi miền.",
+    "answer_key": "Điều kiện x>1; nghiệm x=9.",
+    "worked_solution": "x>1, x−1=8 ⇒ x=9.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-EXP_LOG_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-EXPL-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-EXPL-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Giải 3^(x−2)=27.",
+    "answer_key": "x=5.",
+    "worked_solution": "x−2=3 ⇒ x=5.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-EXP_LOG_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-EXPL-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-EXPL-P02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Giải bất phương trình (1/2)^x ≥ (1/2)^3.",
+    "answer_key": "x≤3.",
+    "worked_solution": "x≤3 vì hàm cơ số 1/2 nghịch biến.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-EXP_LOG_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-EXPL-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-DERIV-C01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hàm f(x)=x³−2x có đạo hàm tại x=1 bằng?",
+    "answer_key": "f′(1)=1.",
+    "worked_solution": "f'=3x²−2 nên f'(1)=1.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-DERIVATIVE_RATE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-DERIV-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-DERIV-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tính đạo hàm (x²+1)sin x.",
+    "answer_key": "2x sin x+(x²+1)cos x.",
+    "worked_solution": "2x sin x+(x²+1)cos x; chọn quy tắc tích.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-DERIVATIVE_RATE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-DERIV-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-DERIV-P02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Vật chuyển động trên một trục có tọa độ s(t)=t²−4t (m), với t tính bằng giây và t≥0. Tại t=1, vật đang đi theo chiều dương hay chiều âm?",
+    "answer_key": "Đi theo chiều âm; vận tốc −2 m/s, tốc độ 2 m/s.",
+    "worked_solution": "Vận tốc v(t)=s′(t)=2t−4 (m/s). Tại t=1, v(1)=−2 m/s. Dấu âm cho biết vật đang chuyển động theo chiều âm; tốc độ là |v(1)|=2 m/s.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-DERIVATIVE_RATE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-DERIV-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-SPACE-C01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "d vuông góc hai đường a,b cắt nhau và cùng thuộc (P). Kết luận?",
+    "answer_key": "d⊥(P).",
+    "worked_solution": "d vuông góc mặt phẳng (P); điều kiện a,b cắt nhau là quan trọng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-SPACE_PERP_DISTANCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-SPACE-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-SPACE-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cọc cao 1 m vuông góc nền ngang, bóng dài 2 m. Tính tan θ, với θ là góc giữa tia sáng và nền.",
+    "answer_key": "tan θ=1/2.",
+    "worked_solution": "1/2, vì góc đo với hình chiếu bóng, cạnh đối là độ cao cọc.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-SPACE_PERP_DISTANCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-SPACE-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-SPACE-P02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong hình lập phương ABCD.A′B′C′D′ cạnh a>0, tính khoảng cách giữa hai đường thẳng AB và CC′.",
+    "answer_key": "a.",
+    "worked_solution": "Trong hình lập phương ABCD.A′B′C′D′, BC nối B∈AB và C∈CC′. Vì đáy là hình vuông, BC⊥AB; vì CC′ vuông góc đáy, BC⊥CC′. Hai đường AB và CC′ chéo nhau, nên BC là đoạn vuông góc chung và khoảng cách bằng BC=a.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-SPACE_PERP_DISTANCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-SPACE-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-VOL-C01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chóp có diện tích đáy 12cm², cao 6cm, thể tích?",
+    "answer_key": "24 cm³.",
+    "worked_solution": "24cm³ vì V=12·6/3.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-SPACE_VOLUME"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-VOL-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-VOL-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Lăng trụ có đáy là tam giác vuông với hai cạnh góc vuông 6 cm và 8 cm, chiều cao lăng trụ 3 cm. Tính thể tích.",
+    "answer_key": "72 cm³.",
+    "worked_solution": "Diện tích đáy tam giác vuông là 6·8/2=24 cm². Chiều cao lăng trụ bằng 3 cm, nên V=Sđáy·h=24·3=72 cm³.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-SPACE_VOLUME"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-VOL-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-VOL-P02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chóp và lăng trụ cùng diện tích đáy và cao; nếu Vchóp=15cm³ thì Vlăng trụ?",
+    "answer_key": "45 cm³.",
+    "worked_solution": "45cm³, tỉ số 1:3.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-SPACE_VOLUME"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-VOL-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-STAT-C01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Dữ liệu nhóm [0,10):2, [10,20):5, [20,30):3, nhóm chứa trung vị?",
+    "answer_key": "[10,20).",
+    "worked_solution": "[10,20), vì n=10 và tích lũy nhóm đầu2, nhóm thứ hai7.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-GROUPED_STATS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-STAT-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-STAT-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Mẫu ghép nhóm [0,10):2, [10,20):5, [20,30):3. Nhóm nào có tần số lớn nhất?",
+    "answer_key": "[10,20), tần số 5.",
+    "worked_solution": "So sánh các tần số 2,5,3, lớn nhất là 5 thuộc nhóm [10,20). Đây là nhóm chứa mốt theo bảng ghép nhóm, không khẳng định mốt của dữ liệu gốc bằng trung điểm 15.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-GROUPED_STATS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-STAT-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-STAT-P02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Bảng ghép nhóm [0,10):4, [10,20):8, [20,30):8 (n=20). Ước lượng Q1 và Q3 bằng nội suy trong lớp; nói rõ giả định.",
+    "answer_key": "Q₁≈11,25; Q₃≈23,75; nội suy giả định số liệu phân bố đều trong từng lớp.",
+    "worked_solution": "Tích lũy 4,12,20; Q1 vị trí 5 thuộc [10,20) ⇒ Q1≈10+(5−4)/8·10=11,25. Q3 vị trí 15 thuộc [20,30) ⇒ Q3≈20+(15−12)/8·10=23,75. Các số là ước lượng do giả định dữ liệu phân bố đều trong mỗi lớp.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-GROUPED_STATS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-STAT-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-PROB-C01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "P(A)=0,6, P(B)=0,5, P(A∩B)=0,3. Tính P(A∪B).",
+    "answer_key": "0,8.",
+    "worked_solution": "0,6+0,5−0,3=0,8.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-PROBABILITY_COMBINE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-PROB-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-PROB-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "A,B xung khắc với xác suất 0,2 và 0,4. P(A∪B)?",
+    "answer_key": "0,6.",
+    "worked_solution": "0,6 vì giao rỗng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-PROBABILITY_COMBINE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-PROB-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-PROB-P02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "P(A)=0,7. Xác suất biến cố đối Ā?",
+    "answer_key": "0,3.",
+    "worked_solution": "0,3, vì P(A)+P(Ā)=1.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-PROBABILITY_COMBINE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-PROB-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-IND-C01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "A,B độc lập với P(A)=0,2, P(B)=0,3. Tìm P(A∩B).",
+    "answer_key": "0,06.",
+    "worked_solution": "0,06 do tích 0,2·0,3.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-PROBABILITY_INDEP"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-IND-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-IND-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hai phép thử độc lập, xác suất thành công mỗi lần là 0,2. Xác suất ít nhất một thành công?",
+    "answer_key": "0,36.",
+    "worked_solution": "1−0,8²=0,36.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-PROBABILITY_INDEP"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-IND-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-IND-P02",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hai biến cố có P(A)=1/2, P(B)=1/3, P(A∩B)=1/5. Có độc lập?",
+    "answer_key": "Không độc lập.",
+    "worked_solution": "Không vì tích riêng=1/6 khác 1/5.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR-PROBABILITY_INDEP"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-IND-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-YR-INT-P01",
+    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một bạn tìm giới hạn 0/0 bằng 0, bạn khác giải log mà bỏ x>0. Hai bạn cần quay lại kết quả học nào?",
+    "answer_key": "Bạn thứ nhất: giới hạn dạng vô định (G11-YR-LIMIT_CONTINUITY); bạn thứ hai: điều kiện xác định logarit (G11-YR-EXP_LOG_DOMAIN).",
+    "worked_solution": "Dạng 0/0 không tự xác định giới hạn bằng 0; cần biến đổi hoặc phương pháp thích hợp. Với logarit logₐx, điều kiện là x>0 (với a>0, a≠1). Vì đây là hai lỗi khác nhau, cần quay lại hai kỹ năng tương ứng, không dùng một tổng điểm để chẩn đoán cả hai.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-YR_CROSS_CHAPTER_REMEDIATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-INT-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+        "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  }
+]

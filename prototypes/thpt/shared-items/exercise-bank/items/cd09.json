@@ -1,0 +1,928 @@
+[
+  {
+    "item_id": "THPT-TOP09-P01",
+    "content_version": 1,
+    "stem": "Vật có tọa độ \\(s(t)=t^2-4t\\) (m), \\(t\\ge0\\) (s). Tính vận tốc trung bình trên \\([1;3]\\) và giải thích vì sao kết quả bằng 0 không có nghĩa vật đứng yên suốt khoảng đó.",
+    "answer_key": "0 m/s; vật không đứng yên suốt khoảng.",
+    "worked_solution": "\\(s(1)=-3\\) m, \\(s(3)=-3\\) m nên vận tốc trung bình \\(\\frac{s(3)-s(1)}{3-1}=0\\) m/s. Nhưng \\(s(2)=-4\\) m khác \\(s(1)\\), nên tọa độ có thay đổi trong khoảng. Vận tốc trung bình bằng 0 chỉ cho biết độ dời tổng cộng bằng 0.",
+    "skill_ids": [
+      "G11-B31-AVERAGE_RATE"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O01"
+    ],
+    "problem_type_id": "TOP09-AVERAGE_RATE",
+    "difficulty": "BASIC",
+    "hints": [
+      "Tính độ dời giữa hai đầu, rồi kiểm thêm tọa độ tại một thời điểm ở giữa."
+    ],
+    "remediation": "Nếu chia cho thời điểm cuối, dùng khoảng thời gian \\(\\Delta t=t_2-t_1\\). Ôn TOP09-M01; luyện THPT-G11-CHIX-B31-P01.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P01 · TOP09-O01"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P02",
+    "content_version": 1,
+    "stem": "Trên \\(y=x^2\\), cát tuyến qua \\(P(2;4)\\) và \\(Q(2+h;(2+h)^2)\\), \\(h\\ne0\\), có hệ số góc gì? Khi \\(h\\to0\\) được gì?",
+    "answer_key": "\\(m_{\\text{cát}}=4+h\\); \\(m_{\\text{tiếp}}=4\\).",
+    "worked_solution": "Với \\(h\\ne0\\), hệ số góc cát tuyến là \\(m=\\frac{(2+h)^2-2^2}h=\\frac{4h+h^2}h=4+h\\). Khi \\(h\\to0\\) từ hai phía, \\(m\\to4\\). Do đó hệ số góc tiếp tuyến tại P bằng 4. Phải rút gọn trước khi lấy giới hạn, không cho \\(h=0\\) vào thương cát tuyến ban đầu.",
+    "skill_ids": [
+      "G11-B31-LIMIT_QUOTIENT"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O02"
+    ],
+    "problem_type_id": "TOP09-LIMIT_QUOTIENT",
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Viết thương sai phân với \\(h\\ne0\\), khai triển rồi lấy giới hạn."
+    ],
+    "remediation": "Nếu thế \\(h=0\\) ngay, giữ \\(h\\ne0\\) đến khi đã rút gọn thương. Ôn TOP09-M02; luyện THPT-G11-CHIX-B31-P02.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P02 · TOP09-O02"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P03",
+    "content_version": 1,
+    "stem": "Dùng định nghĩa để tính \\(f'(-1)\\) cho \\(f(x)=x^3\\), không chỉ dẫn quy tắc \\(x^3\\).",
+    "answer_key": "3.",
+    "worked_solution": "\\(f(-1)=-1\\); \\(f(-1+h)=-1+3h-3h^2+h^3\\). Thương sai phân \\(\\frac{f(-1+h)-f(-1)}h=3-3h+h^2\\) với \\(h\\ne0\\), giới hạn \\(h\\to0\\) bằng 3. Đạo hàm tại −1 là 3.",
+    "skill_ids": [
+      "G11-B31-DERIVATIVE_AT_POINT"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O03"
+    ],
+    "problem_type_id": "TOP09-DEFINITION_CUBIC",
+    "difficulty": "APPLY",
+    "hints": [
+      "Khai triển \\((-1+h)^3\\) trước khi chia cho h."
+    ],
+    "remediation": "Nếu chỉ ghi công thức đạo hàm, khai triển thương và lấy giới hạn. Ôn TOP09-M03; luyện THPT-G11-CHIX-B31-P03.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P03 · TOP09-O03"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P04",
+    "content_version": 1,
+    "stem": "Cho \\(f(x)=x\\) nếu \\(x<0\\), \\(f(x)=x^2\\) nếu \\(x\\ge0\\). Hàm có đạo hàm tại 0 không? Có liên tục không?",
+    "answer_key": "Liên tục tại 0 nhưng không có đạo hàm hai phía tại 0.",
+    "worked_solution": "Ta có \\(f(0)=0\\), \\(\\lim_{x\\to0^-}f(x)=0\\) và \\(\\lim_{x\\to0^+}f(x)=0\\), nên hàm liên tục tại 0. Với \\(h<0\\), thương sai phân \\(\\frac{f(h)-f(0)}h=\\frac hh=1\\); với \\(h>0\\), thương ấy bằng \\(\\frac{h^2}h=h\\). Hai giới hạn khi h tiến tới 0 lần lượt bằng 1 và 0, khác nhau. Vì vậy \\(f'(0)\\) không tồn tại.",
+    "skill_ids": [
+      "G11-B31-DIFFERENTIABILITY"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O04"
+    ],
+    "problem_type_id": "TOP09-DIFFERENTIABILITY_PIECEWISE",
+    "difficulty": "TRANSFER",
+    "hints": [
+      "Tính giới hạn hàm và thương sai phân riêng ở từng phía."
+    ],
+    "remediation": "Nếu dùng liên tục để suy khả vi, kiểm hai thương sai phân. Ôn TOP09-M04; luyện THPT-G11-CHIX-B31-P04.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P04 · TOP09-O04"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P05",
+    "content_version": 1,
+    "stem": "\\(f(x)=|x|\\) tại \\(x=0\\): liên tục? Có đạo hàm? Dùng ví dụ bác bỏ chiều ngược của mệnh đề 'có đạo hàm ⇒ liên tục'.",
+    "answer_key": "Liên tục nhưng không khả vi tại 0.",
+    "worked_solution": "\\(|x|\\to0=|0|\\) khi \\(x\\to0\\), nên liên tục. Thương \\(\\frac{|h|-0}h=-1\\) khi \\(h<0\\) và +1 khi \\(h>0\\), không có giới hạn hai phía. Đây là phản ví dụ cho 'liên tục ⇒ có đạo hàm'.",
+    "skill_ids": [
+      "G11-B31-CONTINUITY_NECESSARY"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O05"
+    ],
+    "problem_type_id": "TOP09-DERIVATIVE_IMPLIES_CONTINUITY",
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng một ví dụ liên tục nhưng hai độ dốc một phía khác nhau."
+    ],
+    "remediation": "Nếu đảo chiều mệnh đề, kiểm hai độ dốc tại điểm góc nhọn. Ôn TOP09-M05; luyện THPT-G11-CHIX-B31-P05.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P05 · TOP09-O05"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P06",
+    "content_version": 1,
+    "stem": "Cho \\(f(x)=2(x-2)\\) nếu \\(x<2\\), \\(f(x)=-3(x-2)\\) nếu \\(x\\ge2\\). Tính đạo hàm trái, phải tại 2; có đạo hàm hai phía không?",
+    "answer_key": "Trái 2, phải −3; không có đạo hàm tại 2.",
+    "worked_solution": "\\(f(2)=0\\). Với \\(h<0\\), \\(f(2+h)=2h\\) nên thương sai phân bằng 2. Với \\(h>0\\), \\(f(2+h)=-3h\\) nên thương bằng −3. Hai giới hạn khác nhau, vì vậy không có đạo hàm hai phía tại 2.",
+    "skill_ids": [
+      "G11-B31-CORNER_CUSP"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O06"
+    ],
+    "problem_type_id": "TOP09-CORNER_SLOPES",
+    "difficulty": "APPLY",
+    "hints": [
+      "Chọn nhánh theo dấu của h, rồi tính \\(\\frac{f(2+h)-f(2)}h\\)."
+    ],
+    "remediation": "Nếu dùng cùng nhánh cho cả hai phía, thử \\(h=-0{,}1\\) và \\(h=0{,}1\\) rồi lập hai thương. Ôn TOP09-M06; luyện THPT-G11-CHIX-B31-P06.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P06 · TOP09-O06"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P07",
+    "content_version": 1,
+    "stem": "Với \\(f(x)=x^2-2x\\), tại \\(x=2\\) tung độ điểm tiếp xúc và độ dốc tiếp tuyến bằng bao nhiêu?",
+    "answer_key": "\\(f(2)=0\\) và \\(f'(2)=2\\).",
+    "worked_solution": "\\(f(2)=4-4=0\\); \\(f'(x)=2x-2\\) ⇒ \\(f'(2)=2\\). Tung độ là 0, độ dốc là 2; không được hoán đổi hai đại lượng.",
+    "skill_ids": [
+      "G11-B31-TANGENT_SLOPE"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O07"
+    ],
+    "problem_type_id": "TOP09-TANGENT_SLOPE",
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính giá trị hàm và đạo hàm tại 2 riêng."
+    ],
+    "remediation": "Nếu lấy tung độ làm độ dốc, viết \\(f(2)\\) và \\(f'(2)\\) ở hai dòng. Ôn TOP09-M07; luyện THPT-G11-CHIX-B31-P07.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P07 · TOP09-O07"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P08",
+    "content_version": 1,
+    "stem": "Viết tiếp tuyến của \\(y=x^3\\) tại \\(x=1\\).",
+    "answer_key": "\\(y=3x-2\\).",
+    "worked_solution": "Điểm tiếp xúc là \\(P(1;1)\\). Đạo hàm \\(f'(x)=3x^2\\) nên hệ số góc \\(f'(1)=3\\). Phương trình tiếp tuyến \\(y-1=3(x-1)\\), tức \\(y=3x-2\\). Thay \\(x=1\\) được \\(y=1\\), kiểm đường thẳng đi qua điểm tiếp xúc.",
+    "skill_ids": [
+      "G11-B31-TANGENT_EQUATION"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O08"
+    ],
+    "problem_type_id": "TOP09-TANGENT_EQUATION",
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm điểm tiếp xúc và hệ số góc, dùng dạng điểm–hệ số góc."
+    ],
+    "remediation": "Nếu viết tiếp tuyến qua gốc mặc định, thế tọa độ tiếp điểm để kiểm. Ôn TOP09-M08; luyện THPT-G11-CHIX-B31-P08.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P08 · TOP09-O08"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P09",
+    "content_version": 1,
+    "stem": "Tọa độ \\(s(t)=t^3-6t^2+9t\\) (m), \\(t\\ge0\\) (s). Tại \\(t=2\\), vận tốc có hướng và tốc độ bằng bao nhiêu?",
+    "answer_key": "\\(v(2)=-3\\) m/s; tốc độ=3 m/s.",
+    "worked_solution": "\\(v(t)=s'(t)=3t^2-12t+9\\); \\(v(2)=12-24+9=-3\\). Âm báo chuyển động ngược chiều tọa độ dương, còn tốc độ là \\(|v|=3\\), không mang dấu.",
+    "skill_ids": [
+      "G11-B31-INSTANT_VELOCITY"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O09"
+    ],
+    "problem_type_id": "TOP09-INSTANT_VELOCITY",
+    "difficulty": "APPLY",
+    "hints": [
+      "Lấy đạo hàm tọa độ rồi xét dấu và trị tuyệt đối."
+    ],
+    "remediation": "Nếu ghi tốc độ âm, lấy \\(|v|\\); dấu v chỉ hướng. Ôn TOP09-M09; luyện THPT-G11-CHIX-B31-P09.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P09 · TOP09-O09"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P10",
+    "content_version": 1,
+    "stem": "Nhiệt độ \\(T(t)=20+3t-0{,}5t^2\\) (°C), t tính theo phút. \\(T'(2)\\) bằng bao nhiêu, ý nghĩa và đơn vị?",
+    "answer_key": "\\(T'(2)=1\\) °C/phút, nhiệt độ đang tăng tức thời.",
+    "worked_solution": "\\(T'(t)=3-t\\); tại \\(t=2\\) tốc độ thay đổi +1 °C trên mỗi phút. Đó không phải nhiệt độ \\(T(2)=24\\) °C. Đơn vị đạo hàm là đơn vị giá trị chia đơn vị biến.",
+    "skill_ids": [
+      "G11-B31-RATE_UNITS"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O10"
+    ],
+    "problem_type_id": "TOP09-RATE_UNITS",
+    "difficulty": "APPLY",
+    "hints": [
+      "Đơn vị đạo hàm bằng đơn vị nhiệt độ chia đơn vị thời gian."
+    ],
+    "remediation": "Nếu ghi đơn vị nhiệt độ thay vì nhiệt độ trên phút, kiểm đơn vị của thương \\(\\frac{\\Delta T}{\\Delta t}\\). Ôn TOP09-M10; luyện THPT-G11-CHIX-B31-P10.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P10 · TOP09-O10"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P11",
+    "content_version": 1,
+    "stem": "Tính đạo hàm \\(y=2x^5-3x^2+7\\).",
+    "answer_key": "\\(y'=10x^4-6x\\).",
+    "worked_solution": "Dùng \\((x^n)'=nx^{n-1}\\), hệ số nhân giữ nguyên, hằng 7 có đạo hàm 0. \\(2\\cdot5x^4-3\\cdot2x=10x^4-6x\\).",
+    "skill_ids": [
+      "G11-B32-POWER_INTEGER"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O11"
+    ],
+    "problem_type_id": "TOP09-POWER_RULE",
+    "difficulty": "BASIC",
+    "hints": [
+      "Áp dụng quy tắc lũy thừa cho từng hạng."
+    ],
+    "remediation": "Nếu giữ hằng số sau đạo hàm, nhớ đạo hàm hằng bằng 0. Ôn TOP09-M11; luyện THPT-G11-CHIX-B32-P01.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P11 · TOP09-O11"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P12",
+    "content_version": 1,
+    "stem": "\\(f(x)=\\sqrt{x+1}\\). Tìm miền xác định và công thức \\(f'(x)\\) tại các điểm trong miền; có \\(f'(-1)\\) hữu hạn hai phía không?",
+    "answer_key": "\\(D=[-1;+\\infty)\\), \\(f'(x)=\\frac1{2\\sqrt{x+1}}\\) khi \\(x>-1\\); không có đạo hàm hai phía tại −1.",
+    "worked_solution": "Điều kiện căn \\(x+1\\ge0\\). Trên \\(x>-1\\), quy tắc đạo hàm hàm hợp cho \\(\\frac1{2\\sqrt{x+1}}\\). Tại đầu mút \\(x=-1\\), thương phải \\(\\frac{\\sqrt h}h=\\frac1{\\sqrt h}\\to+\\infty\\) khi \\(h\\to0^+\\); bên trái không thuộc miền, không có đạo hàm hữu hạn hai phía.",
+    "skill_ids": [
+      "G11-B32-SQRT_DOMAIN"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O12"
+    ],
+    "problem_type_id": "TOP09-SQRT_DOMAIN",
+    "difficulty": "APPLY",
+    "hints": [
+      "Kiểm miền căn; ở biên xét thương sai phân từ phía trong miền."
+    ],
+    "remediation": "Nếu đưa \\(x=-1\\) vào mẫu căn, xét thương phải và miền gốc. Ôn TOP09-M12; luyện THPT-G11-CHIX-B32-P02.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P12 · TOP09-O12"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P13",
+    "content_version": 1,
+    "stem": "Tính \\(y'\\) nếu \\(y=5-4x+7x^2\\), chỉ ra từng hạng đóng góp.",
+    "answer_key": "\\(y'=-4+14x\\).",
+    "worked_solution": "\\((5)'=0\\), \\((-4x)'=-4\\), \\((7x^2)'=14x\\). Tính tuyến tính cho tổng và hiệu giúp chia bài thành ba hạng.",
+    "skill_ids": [
+      "G11-B32-CONSTANT_SUM"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O13"
+    ],
+    "problem_type_id": "TOP09-SUM_CONSTANT",
+    "difficulty": "BASIC",
+    "hints": [
+      "Tách hằng số và các hạng chứa x."
+    ],
+    "remediation": "Nếu đạo hàm tổng bằng tích, tách từng số hạng rồi cộng. Ôn TOP09-M13; luyện THPT-G11-CHIX-B32-P03.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P13 · TOP09-O13"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P14",
+    "content_version": 1,
+    "stem": "Tính đạo hàm \\(y=x^2\\sin x\\) (x đo radian). Giải thích vì sao không lấy \\(2x\\cos x\\).",
+    "answer_key": "\\(y'=2x\\sin x+x^2\\cos x\\).",
+    "worked_solution": "\\(u=x^2\\), \\(v=\\sin x\\); \\(u'=2x\\), \\(v'=\\cos x\\) (radian). \\((uv)'=u'v+uv'=2x\\sin x+x^2\\cos x\\). Tích hai đạo hàm \\(2x\\cos x\\) bỏ sót hai biến thiên tương ứng.",
+    "skill_ids": [
+      "G11-B32-PRODUCT"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O14"
+    ],
+    "problem_type_id": "TOP09-PRODUCT",
+    "difficulty": "APPLY",
+    "hints": [
+      "Nhận diện hai nhân tử, lấy đạo hàm tích."
+    ],
+    "remediation": "Nếu lấy \\(u'v'\\), viết hai hạng \\(u'v+uv'\\). Ôn TOP09-M14; luyện THPT-G11-CHIX-B32-P04.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P14 · TOP09-O14"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P15",
+    "content_version": 1,
+    "stem": "Cho \\(f(x)=\\frac{x^2+1}{x-1}\\). Viết miền xác định và \\(f'(x)\\); tính \\(f'(0)\\).",
+    "answer_key": "\\(D=\\mathbb R\\setminus\\{1\\}\\), \\(f'=\\frac{x^2-2x-1}{(x-1)^2}\\), \\(f'(0)=-1\\).",
+    "worked_solution": "\\(u=x^2+1\\),\\(u'=2x\\); \\(v=x-1\\),\\(v'=1\\). \\((\\frac uv)'=\\frac{2x(x-1)-(x^2+1)}{(x-1)^2}=\\frac{x^2-2x-1}{(x-1)^2}\\), \\(x\\ne1\\). Thế \\(x=0\\) được −1.",
+    "skill_ids": [
+      "G11-B32-QUOTIENT"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O15"
+    ],
+    "problem_type_id": "TOP09-QUOTIENT",
+    "difficulty": "APPLY",
+    "hints": [
+      "Ghi miền mẫu rồi viết tử của đạo hàm thương \\(u'v-uv'\\)."
+    ],
+    "remediation": "Nếu đảo dấu tử, viết \\(u'v\\) trước rồi trừ \\(uv'\\). Ôn TOP09-M15; luyện THPT-G11-CHIX-B32-P05.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P15 · TOP09-O15"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P16",
+    "content_version": 1,
+    "stem": "Tính đạo hàm \\(y=(3x-1)^4\\).",
+    "answer_key": "\\(y'=12(3x-1)^3\\).",
+    "worked_solution": "Đặt \\(u=3x-1\\), đạo hàm ngoài \\(4u^3\\), đạo hàm trong \\(u'=3\\); dây chuyền cho \\(y'=4u^3\\cdot3=12(3x-1)^3\\).",
+    "skill_ids": [
+      "G11-B32-COMPOSITION_CHAIN"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O16"
+    ],
+    "problem_type_id": "TOP09-CHAIN_POWER",
+    "difficulty": "APPLY",
+    "hints": [
+      "Đặt \\(u=3x-1\\), nhân đạo hàm ngoài với \\(u'\\)."
+    ],
+    "remediation": "Nếu thiếu hệ số 3, tính \\(u'\\) riêng. Ôn TOP09-M16; luyện THPT-G11-CHIX-B32-P06.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P16 · TOP09-O16"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P17",
+    "content_version": 1,
+    "stem": "Tính đạo hàm \\(y=-4\\sin x+5\\cos x\\), với x đo bằng radian. Tính \\(y'(0)\\).",
+    "answer_key": "\\(y'=-4\\cos x-5\\sin x\\); \\(y'(0)=-4\\).",
+    "worked_solution": "Dùng \\((\\sin x)'=\\cos x\\), \\((\\cos x)'=-\\sin x\\). Đạo hàm từng hạng là \\(-4\\cos x\\) và \\(-5\\sin x\\). Tại \\(x=0\\), \\(\\cos0=1\\), \\(\\sin0=0\\) nên \\(y'(0)=-4\\).",
+    "skill_ids": [
+      "G11-B32-TRIG_SIN_COS"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O17"
+    ],
+    "problem_type_id": "TOP09-SIN_COS",
+    "difficulty": "BASIC",
+    "hints": [
+      "Giữ hệ số −4 của sin; đổi dấu hạng cos khi lấy đạo hàm."
+    ],
+    "remediation": "Nếu mất dấu âm của đạo hàm côsin, viết \\((\\cos x)'=-\\sin x\\) trước. Ôn TOP09-M17; luyện THPT-G11-CHIX-B32-P07.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P17 · TOP09-O17"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P18",
+    "content_version": 1,
+    "stem": "Tính đạo hàm \\(f(x)=\\tan x+\\cot x\\) và nêu miền xác định.",
+    "answer_key": "\\(f'=\\frac1{\\cos^2 x}-\\frac1{\\sin^2 x}\\); \\(D=\\{x:\\sin x\\ne0,\\ \\cos x\\ne0\\}\\).",
+    "worked_solution": "\\(\\tan x\\) xác định khi \\(\\cos x\\ne0\\), \\(\\cot x\\) khi \\(\\sin x\\ne0\\); miền là \\(\\mathbb R\\setminus\\{\\frac{k\\pi}{2}:k\\in\\mathbb Z\\}\\). Với x thuộc miền, \\((\\tan x)'=\\frac1{\\cos^2 x}\\) và \\((\\cot x)'=-\\frac1{\\sin^2 x}\\) (góc radian). Vậy \\(f'=\\frac1{\\cos^2 x}-\\frac1{\\sin^2 x}\\).",
+    "skill_ids": [
+      "G11-B32-TRIG_TAN_COT"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O18"
+    ],
+    "problem_type_id": "TOP09-TAN_COT",
+    "difficulty": "APPLY",
+    "hints": [
+      "Giao miền của tan và cot; dùng công thức tương ứng."
+    ],
+    "remediation": "Nếu áp công thức ở điểm sin hoặc cos bằng 0, kiểm miền gốc. Ôn TOP09-M18; luyện THPT-G11-CHIX-B32-P08.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P18 · TOP09-O18"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P19",
+    "content_version": 1,
+    "stem": "Tính \\(y'\\) nếu \\(y=\\sin(2x^2)\\), x đo radian.",
+    "answer_key": "\\(y'=4x\\cos(2x^2)\\).",
+    "worked_solution": "Hàm ngoài sin u có đạo hàm cos u; \\(u=2x^2\\) có \\(u'=4x\\). Theo dây chuyền \\(y'=\\cos(2x^2)\\cdot4x\\).",
+    "skill_ids": [
+      "G11-B32-TRIG_CHAIN"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O19"
+    ],
+    "problem_type_id": "TOP09-TRIG_CHAIN",
+    "difficulty": "APPLY",
+    "hints": [
+      "Đặt \\(u=2x^2\\), nhân \\(\\cos u\\) với \\(u'\\)."
+    ],
+    "remediation": "Nếu thiếu 4x, tính đạo hàm đối số trước. Ôn TOP09-M19; luyện THPT-G11-CHIX-B32-P09.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P19 · TOP09-O19"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P20",
+    "content_version": 1,
+    "stem": "Tính đạo hàm \\(y=2^x+e^x\\) và nêu điều kiện cho cơ số.",
+    "answer_key": "\\(y'=2^x\\ln2+e^x\\).",
+    "worked_solution": "Với cơ số \\(a>0\\), \\(a\\ne1\\), công thức đạo hàm hàm mũ là \\((a^x)'=a^x\\ln a\\). Cơ số 2 và e đều thỏa điều kiện, và \\(\\ln e=1\\). Vì vậy \\(y'=2^x\\ln2+e^x\\) trên \\(\\mathbb R\\). Trường hợp \\(a=1\\) là hàm hằng, đạo hàm bằng 0.",
+    "skill_ids": [
+      "G11-B32-EXP_DERIV"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O20"
+    ],
+    "problem_type_id": "TOP09-EXP_DERIV",
+    "difficulty": "BASIC",
+    "hints": [
+      "Với \\(a^x\\), giữ hệ số \\(\\ln a\\); \\(\\ln e=1\\)."
+    ],
+    "remediation": "Nếu quên \\(\\ln 2\\), đối chiếu cơ số e với cơ số 2. Ôn TOP09-M20; luyện THPT-G11-CHIX-B32-P10.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P20 · TOP09-O20"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P21",
+    "content_version": 1,
+    "stem": "Tính \\(y'\\) nếu \\(y=\\ln x+\\log_3 x\\), nêu miền xác định.",
+    "answer_key": "\\(D=(0;+\\infty)\\), \\(y'=\\frac1x+\\frac1{x\\ln3}\\).",
+    "worked_solution": "Cả \\(\\ln x\\) và \\(\\log_3 x\\) chỉ xác định khi \\(x>0\\), nên \\(D=(0;+\\infty)\\). Ta dùng \\((\\ln x)'=\\frac1x\\) và \\((\\log_a x)'=\\frac1{x\\ln a}\\) với \\(a>0\\), \\(a\\ne1\\). Thay \\(a=3\\) rồi cộng hai đạo hàm: \\(y'=\\frac1x+\\frac1{x\\ln3}\\).",
+    "skill_ids": [
+      "G11-B32-LOG_DERIV"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O21"
+    ],
+    "problem_type_id": "TOP09-LOG_DERIV",
+    "difficulty": "APPLY",
+    "hints": [
+      "Kiểm \\(x>0\\), dùng công thức lôgarit cơ số a."
+    ],
+    "remediation": "Nếu nhận x âm vì công thức \\(\\frac1x\\) có nghĩa, kiểm miền lôgarit gốc. Ôn TOP09-M21; luyện THPT-G11-CHIX-B32-P11.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P21 · TOP09-O21"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P22",
+    "content_version": 1,
+    "stem": "Tính \\(y'\\) và miền xác định của \\(y=\\ln(2x+1)+3^{x^2}\\).",
+    "answer_key": "\\(D=(-\\frac12;+\\infty)\\), \\(y'=\\frac2{2x+1}+2x\\cdot3^{x^2}\\ln3\\).",
+    "worked_solution": "Điều kiện log là \\(2x+1>0\\), tức \\(x>-\\frac12\\); hàm mũ cơ số 3 xác định với mọi x. Quy tắc đạo hàm hàm hợp cho \\([\\ln(2x+1)]'=\\frac2{2x+1}\\) và \\([3^{x^2}]'=2x\\cdot3^{x^2}\\ln3\\). Cộng hai hạng trên miền đã tìm.",
+    "skill_ids": [
+      "G11-B32-EXP_LOG_CHAIN"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O22"
+    ],
+    "problem_type_id": "TOP09-EXP_LOG_CHAIN",
+    "difficulty": "TRANSFER",
+    "hints": [
+      "Ghi điều kiện log, sau đó lấy đạo hàm hai hàm hợp."
+    ],
+    "remediation": "Nếu thiếu 2x hoặc 2, tính đạo hàm từng đối số. Ôn TOP09-M22; luyện THPT-G11-CHIX-B32-P12.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P22 · TOP09-O22"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P23",
+    "content_version": 2,
+    "stem": "Với \\(y=\\frac{\\sqrt{x-2}}{\\ln x}\\), xác định tập xác định và khoảng có thể tính đạo hàm bằng quy tắc thương.",
+    "answer_key": "\\(D=[2;+\\infty)\\), có công thức đạo hàm theo quy tắc trên \\((2;+\\infty)\\); không có đạo hàm hữu hạn hai phía tại \\(x=2\\).",
+    "worked_solution": "Điều kiện căn \\(x\\ge2\\), \\(\\ln x\\) xác định và khác 0 vì \\(x\\ge2\\). Với \\(x>2\\), \\(y'=\\frac{\\frac{\\ln x}{2\\sqrt{x-2}}-\\frac{\\sqrt{x-2}}x}{(\\ln x)^2}\\). Tại \\(x=2\\), \\(y(2)=0\\); thương phải với \\(h>0\\) là \\(\\frac{\\sqrt h}{h\\ln(2+h)}=\\frac1{\\sqrt h\\ln(2+h)}\\to+\\infty\\) khi \\(h\\to0^+\\). Bên trái ngoài miền, nên không có đạo hàm hữu hạn hai phía tại 2.",
+    "skill_ids": [
+      "G11-B32-DOMAIN_VALIDATION"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O23"
+    ],
+    "problem_type_id": "TOP09-DOMAIN_VALIDATE",
+    "difficulty": "TRANSFER",
+    "hints": [
+      "Giao điều kiện căn, log và mẫu; xét biên bằng thương sai phân."
+    ],
+    "remediation": "Nếu chỉ dùng miền căn mà bỏ mẫu, kiểm \\(\\ln x\\ne0\\) và biên. Ôn TOP09-M23; luyện THPT-G11-CHIX-B32-P13.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P23 · TOP09-O23"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P24",
+    "content_version": 1,
+    "stem": "Tính đạo hàm \\(y=x^2e^{3x}\\). Chỉ ra thứ tự quy tắc tối ưu.",
+    "answer_key": "\\(y'=e^{3x}(2x+3x^2)\\).",
+    "worked_solution": "Nhận diện tích \\(u=x^2\\) và \\(v=e^{3x}\\). Đạo hàm \\(u'=2x\\); \\(v'=3e^{3x}\\) theo dây chuyền. Tích: \\(y'=2xe^{3x}+x^2\\cdot3e^{3x}=e^{3x}(2x+3x^2)\\).",
+    "skill_ids": [
+      "G11-B32-RULE_SELECTION"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O24"
+    ],
+    "problem_type_id": "TOP09-RULE_SELECTION",
+    "difficulty": "TRANSFER",
+    "hints": [
+      "Chọn quy tắc tích ngoài, hàm hợp trong \\(e^{3x}\\)."
+    ],
+    "remediation": "Nếu lấy đạo hàm từng nhân tử rồi nhân, viết hai hạng của quy tắc tích. Ôn TOP09-M24; luyện THPT-G11-CHIX-B32-P14.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P24 · TOP09-O24"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P25",
+    "content_version": 1,
+    "stem": "Tọa độ \\(s(t)=t^3-3t^2+2t\\) (m), \\(t\\ge0\\) s. Tính vận tốc và tốc độ tại \\(t=0{,}5\\) và \\(t=1\\); vật đi theo chiều nào tại mỗi thời điểm?",
+    "answer_key": "\\(v(0{,}5)=-0{,}25\\) m/s, tốc độ \\(0{,}25\\) m/s; \\(v(1)=-1\\) m/s, tốc độ 1 m/s; đều theo chiều âm.",
+    "worked_solution": "\\(v(t)=3t^2-6t+2\\). Tại \\(t=0{,}5\\): \\(3\\cdot0{,}25-3+2=-0{,}25\\); tại \\(t=1\\): \\(3-6+2=-1\\). Hai vận tốc đều âm nên vật đang đi theo chiều âm tại hai thời điểm. Tốc độ tương ứng là trị tuyệt đối \\(0{,}25\\) và 1 m/s.",
+    "skill_ids": [
+      "G11-B32-APPLIED_VELOCITY"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O25"
+    ],
+    "problem_type_id": "TOP09-APPLIED_VELOCITY",
+    "difficulty": "APPLY",
+    "hints": [
+      "Lấy đạo hàm tọa độ, kiểm dấu và đơn vị."
+    ],
+    "remediation": "Nếu nhầm tọa độ với quãng đường, kiểm v có hướng và tốc độ |v|. Ôn TOP09-M25; luyện THPT-G11-CHIX-B32-P15.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P25 · TOP09-O25"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P26",
+    "content_version": 1,
+    "stem": "\\(f(x)=x^3\\). Tính \\(f'\\), \\(f''\\) và \\(f''(2)\\); \\(f''\\) có phải \\((f')^2\\) không?",
+    "answer_key": "\\(f'=3x^2\\), \\(f''=6x\\), \\(f''(2)=12\\); không phải \\((3x^2)^2\\).",
+    "worked_solution": "Lấy đạo hàm f một lần được \\(3x^2\\), lấy đạo hàm của hàm mới thêm lần nữa được 6x. Ký hiệu \\(f''=(f')'\\) yêu cầu \\(f'\\) khả vi; không bình phương \\(f'\\).",
+    "skill_ids": [
+      "G11-B33-SECOND_DEF"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O26"
+    ],
+    "problem_type_id": "TOP09-SECOND_DERIVATIVE_DEF",
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Lấy đạo hàm lần thứ hai của \\(f'\\), không bình phương."
+    ],
+    "remediation": "Nếu bình phương \\(f'\\), lấy đạo hàm lại biểu thức \\(f'\\) theo x. Ôn TOP09-M26; luyện THPT-G11-CHIX-B33-P01.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P26 · TOP09-O26"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P27",
+    "content_version": 1,
+    "stem": "Tính \\(f'(x)\\), \\(f''(x)\\) cho \\(f(x)=2x^4-x^3+5\\).",
+    "answer_key": "\\(f'=8x^3-3x^2\\); \\(f''=24x^2-6x\\).",
+    "worked_solution": "Từng hạng: \\(f'=8x^3-3x^2\\); đạo hàm lại cho \\(24x^2-6x\\). Hằng 5 mất ở lần đầu, không xuất hiện lại.",
+    "skill_ids": [
+      "G11-B33-POLYNOMIAL"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O27"
+    ],
+    "problem_type_id": "TOP09-SECOND_POLYNOMIAL",
+    "difficulty": "APPLY",
+    "hints": [
+      "Viết \\(f'\\) trước khi lấy \\(f''\\)."
+    ],
+    "remediation": "Nếu thế x vào \\(f'\\) trước, giữ biến đến sau lượt thứ hai. Ôn TOP09-M27; luyện THPT-G11-CHIX-B33-P02.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P27 · TOP09-O27"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P28",
+    "content_version": 1,
+    "stem": "Với \\(f(x)=e^{2x}+\\sin(3x)\\), tính \\(f''(x)\\).",
+    "answer_key": "\\(f''=4e^{2x}-9\\sin(3x)\\).",
+    "worked_solution": "Lần đầu \\(f'=2e^{2x}+3\\cos(3x)\\). Lần hai lấy đạo hàm của \\(2e^{2x}\\) được \\(4e^{2x}\\), của \\(3\\cos(3x)\\) được \\(-9\\sin(3x)\\); dùng dây chuyền ở cả hai lần.",
+    "skill_ids": [
+      "G11-B33-TRIG_EXP"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O28"
+    ],
+    "problem_type_id": "TOP09-SECOND_TRIG_EXP",
+    "difficulty": "TRANSFER",
+    "hints": [
+      "Nhân đạo hàm hàm trong ở cả hai lượt."
+    ],
+    "remediation": "Nếu thiếu hệ số 3 ở lần hai, áp quy tắc hàm hợp lần nữa. Ôn TOP09-M28; luyện THPT-G11-CHIX-B33-P03.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P28 · TOP09-O28"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P29",
+    "content_version": 1,
+    "stem": "\\(s(t)=t^3-6t^2+9t\\) (m), \\(t\\ge0\\) s. Tính gia tốc \\(a(1)\\) từ \\(s''\\).",
+    "answer_key": "\\(a(1)=-6\\,\\mathrm{m/s^2}\\).",
+    "worked_solution": "\\(v(t)=s'(t)=3t^2-12t+9\\) (m/s). \\(a(t)=v'(t)=6t-12\\), đơn vị \\(\\mathrm{m/s^2}\\). Tại \\(t=1\\), \\(a(1)=6-12=-6\\,\\mathrm{m/s^2}\\). Gia tốc là đạo hàm vận tốc, không phải tọa độ \\(s(t)\\) hoặc \\((s')^2\\).",
+    "skill_ids": [
+      "G11-B33-ACCELERATION"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O29"
+    ],
+    "problem_type_id": "TOP09-ACCELERATION",
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính \\(v=s'\\), rồi \\(a=v'\\)."
+    ],
+    "remediation": "Nếu lấy \\(s'\\) làm gia tốc, kiểm đơn vị \\(\\mathrm{m/s}\\) và \\(\\mathrm{m/s^2}\\). Ôn TOP09-M29; luyện THPT-G11-CHIX-B33-P04.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P29 · TOP09-O29"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P30",
+    "content_version": 1,
+    "stem": "Chuyển động \\(s(t)=t^2-4t\\) (m), \\(t\\ge0\\). Ở \\(t=1\\) và \\(t=3\\), vật tăng tốc hay giảm tốc theo nghĩa tốc độ \\(|v|\\)?",
+    "answer_key": "\\(t=1\\) tốc độ giảm, \\(t=3\\) tốc độ tăng (ở lân cận các thời điểm này).",
+    "worked_solution": "\\(v(t)=2t-4\\), \\(a(t)=2\\). Khi \\(t=1\\), \\(v(1)=-2\\) và \\(a(1)=2\\) ngược dấu, nên trong lân cận thời điểm này vận tốc âm đang tăng về 0, còn tốc độ \\(|v|\\) giảm. Khi \\(t=3\\), \\(v(3)=2\\) và \\(a(3)=2\\) cùng dấu, nên tốc độ tăng. Tại \\(t=2\\), \\(v(2)=0\\) và vật đổi chiều; không suy gia tốc dương luôn làm vật nhanh dần.",
+    "skill_ids": [
+      "G11-B33-SIGN_INTERPRET"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O30"
+    ],
+    "problem_type_id": "TOP09-VELOCITY_ACCEL_SIGNS",
+    "difficulty": "TRANSFER",
+    "hints": [
+      "So dấu v và a khi \\(v\\ne0\\); kiểm thời điểm đổi chiều."
+    ],
+    "remediation": "Nếu kết luận \\(a>0\\) luôn nhanh dần, so dấu v với a. Ôn TOP09-M30; luyện THPT-G11-CHIX-B33-P05.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P30 · TOP09-O30"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P31",
+    "content_version": 1,
+    "stem": "Cho \\(f(x)=(x^2+1)e^x\\). Tính \\(f(0)\\), \\(f'(0)\\), \\(f''(0)\\) và tiếp tuyến tại \\(x=0\\).",
+    "answer_key": "\\(f(0)=1\\); \\(f'(0)=1\\); \\(f''(0)=3\\); tiếp tuyến \\(y=x+1\\).",
+    "worked_solution": "Theo quy tắc tích, \\(f'(x)=e^x(2x+x^2+1)\\). Lấy đạo hàm lần hai: \\(f''(x)=e^x(2x+x^2+1)+e^x(2+2x)=e^x(x^2+4x+3)\\). Tại \\(x=0\\), \\(f(0)=1\\), \\(f'(0)=1\\), \\(f''(0)=3\\). Tiếp tuyến \\(y-1=1(x-0)\\) hay \\(y=x+1\\). Không lấy \\(f''\\) làm độ dốc tiếp tuyến.",
+    "skill_ids": [
+      "G11-CHIX-INTEGRATED"
+    ],
+    "original_outcome_ids": [
+      "TOP09-O31"
+    ],
+    "problem_type_id": "TOP09-INTEGRATED_TANGENT_SECOND",
+    "difficulty": "TRANSFER",
+    "hints": [
+      "Tính \\(f'\\), \\(f''\\) trước khi thế \\(x=0\\); tiếp tuyến dùng \\(f'\\)."
+    ],
+    "remediation": "Nếu dùng \\(f''\\) làm hệ số góc, kiểm tiếp tuyến dùng \\(f'\\) và đi qua điểm tiếp xúc. Ôn TOP09-M31; luyện THPT-G11-CHIX-CHIX-P01.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P31 · TOP09-O31"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP09-P32",
+    "content_version": 1,
+    "stem": "\\(f(x)=x^2\\), x ban đầu \\(a=2\\) và tăng \\(\\Delta x=0{,}1\\). Tính vi phân tuyến tính \\(dy=f'(a)\\Delta x\\), độ tăng thật \\(\\Delta y=f(2{,}1)-f(2)\\), sai lệch \\(|\\Delta y-dy|\\); phát biểu điều kiện khi dùng xấp xỉ.",
+    "answer_key": "\\(dy=0{,}4\\); \\(\\Delta y=0{,}41\\); sai lệch \\(0{,}01\\). Vi phân cho xấp xỉ bậc nhất khi hàm khả vi tại \\(a\\) và bước \\(\\Delta x\\) đủ nhỏ trong miền xác định; không coi \\(dy=\\Delta y\\) là đẳng thức tổng quát.",
+    "worked_solution": "\\(f'(x)=2x\\) nên \\(f'(2)=4\\). Vi phân tại \\(a=2\\) với \\(dx=\\Delta x=0{,}1\\) là \\(dy=4\\cdot0{,}1=0{,}4\\). Độ tăng thực là \\(\\Delta y=(2{,}1)^2-2^2=4{,}41-4=0{,}41\\). Với \\(f(x)=x^2\\), \\(\\Delta y=2a\\Delta x+(\\Delta x)^2\\) nên \\(|\\Delta y-dy|=(\\Delta x)^2=0{,}01\\). Vì hàm khả vi tại a, khi \\(\\Delta x\\) tiến tới 0, vi phân dy cho xấp xỉ bậc nhất của độ tăng; phần dư chia cho \\(\\Delta x\\) tiến tới 0. Không đồng nhất \\(\\Delta y\\) và dy, nhất là khi bước thay đổi lớn.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP09-O32"
+    ],
+    "problem_type_id": "TOP09-DIFFERENTIAL_LINEAR_APPROX",
+    "difficulty": "TRANSFER",
+    "hints": [
+      "So \\(f(a+\\Delta x)-f(a)\\) với \\(f'(a)\\Delta x\\)."
+    ],
+    "remediation": "Nếu đồng nhất dy và \\(\\Delta y\\), tính trực tiếp độ tăng thật rồi so phần dư. Ôn TOP09-M32; luyện THPT-TOP09-P31.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f249949be3b254a29c8859301b6c4904e636c505",
+      "heading": "## THPT-TOP09-P32 · TOP09-O32"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

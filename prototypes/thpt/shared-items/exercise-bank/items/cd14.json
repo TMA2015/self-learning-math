@@ -1,0 +1,719 @@
+[
+  {
+    "item_id": "THPT-TOP14-P01",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Đường thẳng \\(d:-2x+5y+4=0\\). Nêu một vectơ pháp tuyến và một vectơ chỉ phương, rồi kiểm chúng vuông góc.",
+    "answer_key": "Một pháp tuyến \\(\\vec n=(-2;5)\\), một chỉ phương \\(\\vec u=(5;2)\\); \\(\\vec n\\cdot\\vec u=0\\).",
+    "worked_solution": "Các hệ số của x,y cho pháp tuyến \\(\\vec n=(-2;5)\\). Chọn \\(\\vec u=(5;2)\\) vì \\(\\vec n\\cdot\\vec u=-2\\cdot5+5\\cdot2=0\\), cả hai vectơ đều khác 0. Vectơ vuông góc với pháp tuyến là một vectơ chỉ phương.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-NORMAL_DIRECTION"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Lấy hệ số x,y làm pháp tuyến rồi tìm một vectơ vuông góc."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P01",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chọn cùng vectơ làm chỉ phương và pháp tuyến, kiểm tích vô hướng bằng 0 và hai vectơ khác 0. Ôn CĐ14 mục 1.1; luyện THPT-G10-B19-C01."
+  },
+  {
+    "item_id": "THPT-TOP14-P02",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Viết đường thẳng qua \\(P(-1;2)\\), có vectơ pháp tuyến \\(\\vec n=(3;-2)\\).",
+    "answer_key": "\\(3x-2y+7=0\\).",
+    "worked_solution": "\\(3(x+1)-2(y-2)=0\\Rightarrow3x-2y+7=0\\). Kiểm P: \\(-3-4+7=0\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-GENERAL_POINT"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Dùng \\(\\vec n\\cdot\\overrightarrow{PM}=0\\), với \\(M(x;y)\\) là điểm bất kỳ trên đường."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P02",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu sai hằng số, thay P vào phương trình; vế trái phải bằng 0. Ôn CĐ14 mục 1.2; luyện THPT-G10-B19-C02."
+  },
+  {
+    "item_id": "THPT-TOP14-P03",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Đường qua \\(A(2;-3)\\), chỉ phương \\(\\vec u=(-1;4)\\). Viết phương trình tham số và tìm điểm ứng với \\(t=-2\\).",
+    "answer_key": "\\(x=2-t,\\ y=-3+4t\\) (\\(t\\in\\mathbb R\\)); \\(M(4;-11)\\) khi \\(t=-2\\).",
+    "worked_solution": "Phương trình tham số là \\(x=2-t,\\ y=-3+4t\\), \\(t\\in\\mathbb R\\). Tại \\(t=-2\\) có \\(x=4,\\ y=-11\\), tức \\(M(4;-11)\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-PARAMETRIC"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Cộng vào tọa độ A cùng một tham số t nhân từng tọa độ của \\(\\vec u\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P03",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu thế hai giá trị t khác nhau, điểm nhận được có thể không thuộc đường; dùng \\(t=-2\\) đồng thời. Ôn CĐ14 mục 1.3; luyện THPT-G10-B19-P01."
+  },
+  {
+    "item_id": "THPT-TOP14-P04",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Dựng phương trình tổng quát đường thẳng qua \\(A(-2;1),\\ B(2;3)\\).",
+    "answer_key": "\\(x-2y+4=0\\).",
+    "worked_solution": "Vectơ \\(\\overrightarrow{AB}=(4;2)\\) là chỉ phương. Chọn pháp tuyến \\(\\vec n=(1;-2)\\) vì tích vô hướng \\(4-4=0\\). Qua A, phương trình là \\((x+2)-2(y-1)=0\\), tức \\(x-2y+4=0\\). Kiểm A: \\(-2-2+4=0\\); B: \\(2-6+4=0\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-TWO_POINTS"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Tính \\(\\overrightarrow{AB}\\) rồi tìm pháp tuyến vuông góc với vectơ đó."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P04",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm \\(\\overrightarrow{AB}\\) thành pháp tuyến, kiểm tích vô hướng và thay cả hai điểm vào phương trình. Ôn CĐ14 mục 1.4; luyện THPT-G10-B19-P02."
+  },
+  {
+    "item_id": "THPT-TOP14-P05",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Đường \\(d:x-3y-7=0\\). Điểm \\(M(4;-1)\\) và \\(N(3;0)\\) có thuộc d không?",
+    "answer_key": "M thuộc d; N không thuộc d.",
+    "worked_solution": "Thay M: \\(4+3-7=0\\) nên thuộc d; thay N: \\(3-0-7=-4\\ne0\\) nên không thuộc d.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-MEMBERSHIP"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Thay từng cặp tọa độ vào vế trái."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P05",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ nhìn một tọa độ hoặc hình vẽ, chưa đủ; một điểm thuộc khi cả cặp thỏa phương trình. Ôn CĐ14 mục 1.5; luyện THPT-G10-B19-P03."
+  },
+  {
+    "item_id": "THPT-TOP14-P06",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tìm đường thẳng qua giao của \\(2x+y=7\\) và \\(x-y=2\\), song song \\(3x-y+2=0\\).",
+    "answer_key": "\\(3x-y-8=0\\).",
+    "worked_solution": "Cộng hai phương trình \\(2x+y=7\\) và \\(x-y=2\\), được \\(3x=9\\) nên \\(x=3,\\ y=1\\). Đường song song đường đã cho có dạng \\(3x-y+c=0\\). Thay giao điểm \\((3;1)\\), được \\(c=-8\\). Vì \\(-8\\ne2\\), hai đường song song phân biệt.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-MULTISTEP",
+      "G10-B20-INTERSECTION",
+      "G10-B20-RELATIVE_POSITION"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Tìm giao điểm trước; đường cần dựng có cùng pháp tuyến với đường đã cho."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P06",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu giữ nguyên hằng số, kiểm đường mới đi qua giao điểm và phân biệt với đường cũ. Ôn CĐ14 mục 1.6; luyện THPT-G10-B19-P06."
+  },
+  {
+    "item_id": "THPT-TOP14-P07",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Bể có 10 lít lúc \\(t=0\\) và 26 lít lúc \\(t=4\\) phút. Nước được đổ với lưu lượng không đổi, không chảy ra. Viết \\(V(t)\\) trong thời gian đổ đều và chưa tràn; tính \\(V(6)\\) nếu điều kiện này còn đúng.",
+    "answer_key": "\\(V(t)=10+4t\\) (lít), t tính bằng phút; \\(V(6)=34\\) lít nếu vẫn đổ đều và chưa tràn.",
+    "worked_solution": "Độ tăng \\(\\frac{26-10}4=4\\) lít/phút; \\(V(t)=10+4t,\\ V(6)=34\\) lít. Mô hình chỉ đúng trong thời gian đổ đều và chưa tràn.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-LINEAR_MODEL"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Tính lượng tăng mỗi phút, sau đó cộng lượng ban đầu."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P07",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu ra \\(4t\\), đã bỏ 10 lít ban đầu; chỉ ngoại suy khi bể chưa tràn và còn đổ đều. Ôn CĐ14 mục 1.7; luyện THPT-G10-B19-P04."
+  },
+  {
+    "item_id": "THPT-TOP14-P08",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho \\(d_1:x-2y+1=0\\) và \\(d_2:2x-4y+m=0\\). Với \\(m=2\\) và \\(m=3\\), phân loại vị trí tương đối của hai đường; giải thích vì sao không có giá trị m để chúng cắt nhau tại đúng một điểm.",
+    "answer_key": "\\(m=2\\): trùng nhau; \\(m=3\\): song song phân biệt; không có m cho giao điểm duy nhất.",
+    "worked_solution": "Hai pháp tuyến \\((1;-2)\\) và \\((2;-4)\\) cùng phương với hệ số 2, đều khác 0. Nhân toàn bộ phương trình \\(d_1\\) với 2 được \\(2x-4y+2=0\\). Khi \\(m=2\\) hai phương trình tương đương nên hai đường trùng nhau. Khi \\(m=3\\) hệ số tự do khác 2 nên hai đường song song phân biệt. Với mọi m, hai pháp tuyến luôn cùng phương, do đó không có giao điểm duy nhất.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B20-RELATIVE_POSITION"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "So tỉ lệ cả ba hệ số, không chỉ hai hệ số của x,y."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P08",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu pháp tuyến cùng phương, đường có thể trùng hoặc song song phân biệt; kiểm hằng số. Ôn CĐ14 mục 2.1; luyện THPT-G10-B20-P05."
+  },
+  {
+    "item_id": "THPT-TOP14-P09",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Qua \\(P(-2;3)\\), dựng đường vuông góc \\(d:2x-3y+1=0\\).",
+    "answer_key": "\\(3x+2y=0\\).",
+    "worked_solution": "Đường d có pháp tuyến \\((2;-3)\\), nên đường vuông góc với d nhận \\((2;-3)\\) làm chỉ phương. Chọn pháp tuyến \\((3;2)\\) vì \\(3\\cdot2+2\\cdot(-3)=0\\). Qua \\(P(-2;3)\\): \\(3(x+2)+2(y-3)=0\\), hay \\(3x+2y=0\\). Thay P, vế trái bằng 0.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B20-PERPENDICULAR",
+      "G10-B19-GENERAL_POINT"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O09"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Pháp tuyến của đường cũ có thể làm chỉ phương đường mới."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P09",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu hai pháp tuyến cùng phương thì hai đường không vuông góc; kiểm tích vô hướng bằng 0. Ôn CĐ14 mục 2.2; luyện THPT-G10-B20-P04."
+  },
+  {
+    "item_id": "THPT-TOP14-P10",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tìm giao điểm hai đường \\(2x+3y=12\\) và \\(x-2y=-1\\). Kiểm kết quả bằng hai phương trình.",
+    "answer_key": "Giao điểm \\((3;2)\\).",
+    "worked_solution": "Từ \\(x-2y=-1\\) suy ra \\(x=2y-1\\). Thế vào phương trình đầu: \\(2(2y-1)+3y=12\\), tức \\(7y=14\\) nên \\(y=2,\\ x=3\\). Kiểm \\(2\\cdot3+3\\cdot2=12\\) và \\(3-2\\cdot2=-1\\). Hệ có nghiệm duy nhất vì phép thế dẫn đến \\(7y=14\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B20-INTERSECTION"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O10"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Giải hệ hai phương trình bằng thế hoặc cộng đại số."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P10",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu điểm chỉ thỏa một phương trình, chưa phải giao điểm; thử lại cả hai. Ôn CĐ14 mục 2.3; luyện THPT-G10-B20-P01."
+  },
+  {
+    "item_id": "THPT-TOP14-P11",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho \\(P(-1;2)\\) và \\(d:5x+12y-6=0\\). Tính \\(d(P,d)\\).",
+    "answer_key": "Khoảng cách bằng 1.",
+    "worked_solution": "Áp dụng công thức khoảng cách từ điểm đến đường thẳng \\(ax+by+c=0\\): \\(\\frac{|ax_P+by_P+c|}{\\sqrt{a^2+b^2}}\\). Thay \\(P(-1;2)\\), được \\(\\frac{|-5+24-6|}{\\sqrt{25+144}}=\\frac{13}{13}=1\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B20-DISTANCE"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O11"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Chia trị tuyệt đối của vế trái tại P cho độ dài pháp tuyến."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P11",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu bỏ trị tuyệt đối hoặc căn ở mẫu, kiểm khoảng cách không âm và bất biến khi đổi dấu phương trình. Ôn CĐ14 mục 2.4; luyện THPT-G10-B20-P02."
+  },
+  {
+    "item_id": "THPT-TOP14-P12",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tính góc nhỏ giữa \\(d_1:x=0\\) và \\(d_2:x+\\sqrt3\\,y=0\\).",
+    "answer_key": "60°.",
+    "worked_solution": "Hai pháp tuyến \\(\\vec n_1=(1;0)\\) và \\(\\vec n_2=(1;\\sqrt3)\\). Góc giữa hai đường thẳng lấy trong \\([0^\\circ;90^\\circ]\\), nên \\(\\cos\\theta=\\frac{|\\vec n_1\\cdot\\vec n_2|}{|\\vec n_1||\\vec n_2|}=\\frac1{1\\cdot2}=\\frac12\\). Suy ra \\(\\theta=60^\\circ\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B20-ANGLE"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O12"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Lấy trị tuyệt đối tích vô hướng hai pháp tuyến chia tích độ dài."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P12",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy góc tù giữa hai vectơ, nhớ góc giữa đường nằm trong \\([0^\\circ;90^\\circ]\\). Ôn CĐ14 mục 2.5; luyện THPT-G10-B20-P03."
+  },
+  {
+    "item_id": "THPT-TOP14-P13",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Viết phương trình đường tròn tâm \\(I(-2;1),\\ R=4\\). Kiểm \\(P(2;1)\\) có nằm trên đường tròn không.",
+    "answer_key": "\\((x+2)^2+(y-1)^2=16\\); P thuộc đường tròn.",
+    "worked_solution": "\\((x+2)^2+(y-1)^2=16\\); tại P có \\((2+2)^2+(1-1)^2=16\\) nên P thuộc đường tròn.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B21-CIRCLE_STANDARD"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O13"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Viết \\(IP^2=R^2\\) cho điểm P trên đường tròn, rồi dùng tọa độ để lập phương trình."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P13",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu sai dấu tâm hoặc quên bình phương R, thay P vào phương trình để kiểm. Ôn CĐ14 mục 3.1; luyện THPT-G10-B21-P01."
+  },
+  {
+    "item_id": "THPT-TOP14-P14",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Xét phương trình \\(x^2+y^2-6x+2y+k=0\\). Với \\(k=1,\\ k=10\\) và \\(k=12\\), phương trình nào biểu diễn đường tròn? Nếu có, tìm tâm và bán kính.",
+    "answer_key": "\\(k=1\\): đường tròn tâm \\((3;-1)\\), \\(R=3\\); \\(k=10\\): chỉ một điểm \\((3;-1)\\), không là đường tròn; \\(k=12\\): không có điểm thực.",
+    "worked_solution": "Hoàn thành bình phương được \\((x-3)^2+(y+1)^2=10-k\\). Vế trái luôn không âm. Nếu \\(k=1\\), \\(R^2=9>0\\) nên tâm \\((3;-1)\\), \\(R=3\\). Nếu \\(k=10\\), tổng bình phương bằng 0 chỉ tại \\((3;-1)\\); bán kính 0 không phải đường tròn theo định nghĩa đã học. Nếu \\(k=12\\), vế phải \\(-2<0\\) nên không có nghiệm thực.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B21-CIRCLE_GENERAL"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O14"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Hoàn thành bình phương riêng cho x và y."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P14",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu đọc trực tiếp hệ số x,y là tâm hoặc \\(R^2\\le0\\), hoàn thành bình phương và kiểm điều kiện \\(R>0\\). Ôn CĐ14 mục 3.2; luyện THPT-G10-B21-P05."
+  },
+  {
+    "item_id": "THPT-TOP14-P15",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Đường tròn tâm \\(I(-1;2)\\) đi qua \\(P(1;6)\\). Viết phương trình tiếp tuyến tại P.",
+    "answer_key": "\\(x+2y-13=0\\).",
+    "worked_solution": "Vectơ bán kính \\(\\overrightarrow{IP}=(2;4)\\) vuông góc với tiếp tuyến tại P. Do \\(IP=\\sqrt{20}>0\\), chọn \\(\\overrightarrow{IP}\\) làm pháp tuyến. Qua \\(P(1;6)\\): \\(2(x-1)+4(y-6)=0\\). Chia hai vế cho 2, được \\(x+2y-13=0\\). Kiểm P: \\(1+12-13=0\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B21-CIRCLE_TANGENT"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O15"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Bán kính IP vuông góc tiếp tuyến tại P."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P15",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu dùng \\(\\overrightarrow{IP}\\) làm chỉ phương, đổi sang pháp tuyến và thử P thuộc tiếp tuyến. Ôn CĐ14 mục 3.3; luyện THPT-G10-B21-P02."
+  },
+  {
+    "item_id": "THPT-TOP14-P16",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho \\(A(0;0),\\ B(6;0),\\ C(2;4)\\). Tìm tâm và bán kính đường tròn ngoại tiếp tam giác ABC bằng cách lập điều kiện ba khoảng cách bằng nhau.",
+    "answer_key": "\\(I(3;1)\\); \\(R=\\sqrt{10}\\).",
+    "worked_solution": "A,B thuộc Ox nhưng C không thuộc Ox, nên ba điểm không thẳng hàng. Đặt \\(I(h;k)\\). Điều kiện \\(IA^2=IB^2\\) cho \\(h^2+k^2=(h-6)^2+k^2\\), suy ra \\(h=3\\). Điều kiện \\(IA^2=IC^2\\) cho \\(9+k^2=1+(k-4)^2\\), tức \\(9+k^2=17-8k+k^2\\), suy ra \\(k=1\\). Vậy \\(R^2=9+1=10\\). Kiểm \\(IB^2=9+1=10,\\ IC^2=1+9=10\\). Tâm duy nhất vì hai điều kiện lần lượt xác định h,k.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B21-CIRCLE_THROUGH_POINTS"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O16"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Đặt tâm \\(I(h;k)\\), dùng \\(IA^2=IB^2=IC^2\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P16",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy trung điểm cạnh làm tâm tùy ý, chỉ đúng cho cạnh huyền tam giác vuông; kiểm cả ba khoảng cách. Ôn CĐ14 mục 3.4; luyện THPT-G10-B21-P04."
+  },
+  {
+    "item_id": "THPT-TOP14-P17",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Đường tròn \\((x-1)^2+(y+2)^2=9\\) và đường \\(y=-2\\) có bao nhiêu giao điểm? Nếu thay đường bằng \\(y=1\\) hoặc \\(y=2\\) thì sao? Tìm tọa độ các giao điểm nếu có.",
+    "answer_key": "\\(y=-2\\): hai giao điểm \\((-2;-2),(4;-2)\\); \\(y=1\\): tiếp điểm \\((1;1)\\); \\(y=2\\): không giao.",
+    "worked_solution": "Tâm \\(I(1;-2)\\), \\(R=3\\). Với \\(y=-2\\), khoảng cách bằng \\(0<R\\); thế \\(y=-2\\) được \\((x-1)^2=9\\), \\(x=-2\\) hoặc 4. Với \\(y=1\\), khoảng cách bằng \\(3=R\\); thế vào được \\((x-1)^2=0\\), tiếp điểm \\((1;1)\\). Với \\(y=2\\), khoảng cách bằng \\(4>R\\) nên không có giao điểm (thế vào cho \\((x-1)^2=-7\\)).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B21-LINE_CIRCLE_POSITION"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O17"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "So khoảng cách tâm–đường với R rồi thế phương trình để tìm giao."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P17",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy luôn hình chiếu tâm làm tiếp điểm khi khoảng cách nhỏ hơn R, giải phương trình để tìm đủ hai giao điểm. Ôn CĐ14 mục 3.5; luyện THPT-G10-B21-P03."
+  },
+  {
+    "item_id": "THPT-TOP14-P18",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Elip \\(\\frac{x^2}{36}+\\frac{y^2}{20}=1\\) có hai tiêu điểm nào?",
+    "answer_key": "\\(F_1(-4;0),\\ F_2(4;0)\\).",
+    "worked_solution": "\\(a^2=36,\\ b^2=20,\\ c^2=36-20=16\\Rightarrow c=4\\); \\(F_1(-4;0),\\ F_2(4;0)\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-ELLIPSE_PARAMETERS"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O18"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Đọc \\(a^2,b^2\\) với \\(a>b>0\\), dùng \\(c^2=a^2-b^2\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P18",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu dùng dấu cộng hoặc lấy \\(c=a^2-b^2\\), kiểm \\(c<a\\) và lấy căn dương. Ôn CĐ14 mục 4.1; luyện THPT-G10-B22-P01."
+  },
+  {
+    "item_id": "THPT-TOP14-P19",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hypebol \\(\\frac{x^2}{25}-\\frac{y^2}{24}=1\\) có tiêu điểm nào?",
+    "answer_key": "\\(F_1(-7;0),\\ F_2(7;0)\\).",
+    "worked_solution": "\\(a^2=25,\\ b^2=24,\\ c^2=25+24=49\\Rightarrow c=7\\); \\(F_1(-7;0),\\ F_2(7;0)\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-HYPERBOLA_PARAMETERS"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O19"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Dùng \\(c^2=a^2+b^2\\); trục thực nằm trên Ox."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P19",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy dấu trừ như elip, kiểm \\(c>a\\) và tọa độ tiêu điểm trên trục thực. Ôn CĐ14 mục 4.2; luyện THPT-G10-B22-P02."
+  },
+  {
+    "item_id": "THPT-TOP14-P20",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tìm hai tiệm cận của \\(\\frac{x^2}{16}-\\frac{y^2}{25}=1\\).",
+    "answer_key": "\\(y=\\frac54x\\) và \\(y=-\\frac54x\\).",
+    "worked_solution": "\\(a=4,\\ b=5\\Rightarrow y=\\pm\\frac54x\\). Hai đường \\(x=\\pm4\\) là các đường qua đỉnh vuông góc trục thực, không phải tiệm cận.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-HYPERBOLA_ASYMPTOTES"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O20"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Từ mẫu tìm a,b; tiệm cận có hệ số góc \\(\\pm\\frac ba\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P20",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm \\(x=\\pm a\\) là tiệm cận, đó là hoành độ đỉnh; hai tiệm cận đi qua tâm. Ôn CĐ14 mục 4.3; luyện THPT-G10-B22-C02."
+  },
+  {
+    "item_id": "THPT-TOP14-P21",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Parabol \\(y^2=10x\\) có tiêu điểm và đường chuẩn nào theo \\(y^2=2px\\) (\\(p>0\\))?",
+    "answer_key": "\\(F(\\frac52;0)\\); đường chuẩn \\(x=-\\frac52\\).",
+    "worked_solution": "So sánh với \\(y^2=2px\\) (\\(p>0\\)), được \\(p=5\\). Tiêu điểm có tọa độ \\((\\frac p2;0)\\) và đường chuẩn \\(x=-\\frac p2\\). Vậy \\(F(\\frac52;0)\\), đường chuẩn \\(x=-\\frac52\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-PARABOLA_FOCUS"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O21"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "So hệ số x với \\(2p\\) rồi xác định \\(\\frac p2\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P21",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm p với khoảng cách từ đỉnh đến tiêu điểm, kiểm \\(F(\\frac p2;0)\\), đường chuẩn \\(x=-\\frac p2\\). Ôn CĐ14 mục 4.4; luyện THPT-G10-B22-P06."
+  },
+  {
+    "item_id": "THPT-TOP14-P22",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho elip \\(\\frac{x^2}{16}+\\frac{y^2}9=1\\) và đường \\(y=k\\). Xác định số giao điểm theo k; tìm tọa độ khi \\(k=\\frac32\\).",
+    "answer_key": "\\(|k|<3\\): hai giao điểm; \\(|k|=3\\): một giao điểm; \\(|k|>3\\): không giao. Với \\(k=\\frac32\\), hai điểm \\((-2\\sqrt3;\\frac32),(2\\sqrt3;\\frac32)\\).",
+    "worked_solution": "Thế \\(y=k\\), được \\(x^2=16(1-\\frac{k^2}9)\\). Nếu \\(|k|<3\\) vế phải dương nên có hai nghiệm đối nhau. Nếu \\(|k|=3\\) vế phải 0 nên có một giao điểm \\((0;k)\\). Nếu \\(|k|>3\\) vế phải âm nên không có nghiệm thực. Với \\(k=\\frac32\\), \\(x^2=16(1-\\frac14)=12\\), \\(x=\\pm2\\sqrt3\\), cho hai điểm \\((-2\\sqrt3;\\frac32),(2\\sqrt3;\\frac32)\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-CONIC_INTERSECTION"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O22"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Thế \\(y=k\\) rồi xét dấu của biểu thức cho \\(x^2\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P22",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu luôn lấy hai nghiệm, kiểm trường hợp \\(x^2=0\\) và \\(x^2<0\\) trước. Ôn CĐ14 mục 4.5; luyện THPT-G10-B22-P05."
+  },
+  {
+    "item_id": "THPT-TOP14-P23",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Mặt cắt ăng-ten có dạng parabol, trục Ox, đỉnh O, tiêu điểm F nằm trên nửa trục Ox dương và cách đỉnh 4 cm. Viết phương trình với tọa độ tính bằng cm; tại độ sâu \\(x=9\\) cm, khoảng cách giữa hai mép theo phương y là bao nhiêu?",
+    "answer_key": "\\(y^2=16x\\) (tọa độ tính bằng cm); bề rộng 24 cm.",
+    "worked_solution": "Vì đỉnh O và tiêu điểm \\(F(4;0)\\), khoảng cách từ đỉnh đến tiêu điểm là \\(f=4\\) cm, nên phương trình chính tắc là \\(y^2=4fx=16x\\) (x,y tính bằng cm). Tại \\(x=9\\), \\(y^2=144\\), hai mép có tung độ −12 và 12. Bề rộng là \\(12-(-12)=24\\) cm. Không nhầm \\(|y|\\) là toàn bộ bề rộng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-PARABOLA_FOCUS",
+      "G10-B22-CONIC_MODEL"
+    ],
+    "original_outcome_ids": [
+      "TOP14-O23"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Với tiêu điểm \\(F(f;0)\\), viết \\(y^2=4fx\\); tìm cả hai mép tại x đã cho."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "heading_id": "THPT-TOP14-P23",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ lấy \\(|y|\\), đó là nửa bề rộng; lấy hiệu tung độ trên và dưới, giữ đơn vị cm. Ôn CĐ14 mục 4.6; luyện THPT-G10-B22-P04."
+  }
+]

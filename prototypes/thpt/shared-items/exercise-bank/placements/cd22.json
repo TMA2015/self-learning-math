@@ -1,0 +1,949 @@
+[
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B12-C01",
+    "skill_id": "G10-B12-ABS_ERROR",
+    "outcome_id": "G10-B12-ABS_ERROR"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B12-C02",
+    "skill_id": "G10-B12-ABS_ERROR",
+    "outcome_id": "G10-B12-ABS_ERROR"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B12-P01",
+    "skill_id": "G10-B12-REL_ERROR",
+    "outcome_id": "G10-B12-REL_ERROR"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B12-P02",
+    "skill_id": "G10-B12-ROUNDING",
+    "outcome_id": "G10-B12-ROUNDING"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B12-P03",
+    "skill_id": "G10-B12-REL_ERROR",
+    "outcome_id": "G10-B12-REL_ERROR"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B12-P04",
+    "skill_id": "G10-B12-APPROX_CONCEPT",
+    "outcome_id": "G10-B12-APPROX_CONCEPT"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G10-B12-P05",
+    "skill_id": "G10-B12-ROUNDING",
+    "outcome_id": "G10-B12-ROUNDING"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 8,
+    "item_id": "THPT-G10-B12-P06",
+    "skill_id": "G10-B12-REL_ERROR",
+    "outcome_id": "G10-B12-REL_ERROR"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 9,
+    "item_id": "THPT-G10-B13-C01",
+    "skill_id": "G10-B13-MEAN",
+    "outcome_id": "G10-B13-MEAN"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 10,
+    "item_id": "THPT-G10-B13-C02",
+    "skill_id": "G10-B13-MEDIAN",
+    "outcome_id": "G10-B13-MEDIAN"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 11,
+    "item_id": "THPT-G10-B13-P01",
+    "skill_id": "G10-B13-MEAN",
+    "outcome_id": "G10-B13-MEAN"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 12,
+    "item_id": "THPT-G10-B13-P02",
+    "skill_id": "G10-B13-QUARTILES",
+    "outcome_id": "G10-B13-QUARTILES"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 13,
+    "item_id": "THPT-G10-B13-P03",
+    "skill_id": "G10-B13-MODE",
+    "outcome_id": "G10-B13-MODE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 14,
+    "item_id": "THPT-G10-B13-P04",
+    "skill_id": "G10-B13-INTERPRETATION",
+    "outcome_id": "G10-B13-INTERPRETATION"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 15,
+    "item_id": "THPT-G10-B13-P05",
+    "skill_id": "G10-B13-QUARTILES",
+    "outcome_id": "G10-B13-QUARTILES"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 16,
+    "item_id": "THPT-G10-B13-P06",
+    "skill_id": "G10-B13-INTERPRETATION",
+    "outcome_id": "G10-B13-INTERPRETATION"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 17,
+    "item_id": "THPT-G10-B14-C01",
+    "skill_id": "G10-B14-RANGE_IQR",
+    "outcome_id": "G10-B14-RANGE_IQR"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 18,
+    "item_id": "THPT-G10-B14-C02",
+    "skill_id": "G10-B14-VARIANCE",
+    "outcome_id": "G10-B14-VARIANCE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 19,
+    "item_id": "THPT-G10-B14-P01",
+    "skill_id": "G10-B14-RANGE_IQR",
+    "outcome_id": "G10-B14-RANGE_IQR"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 20,
+    "item_id": "THPT-G10-B14-P02",
+    "skill_id": "G10-B14-STDDEV",
+    "outcome_id": "G10-B14-STDDEV"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 21,
+    "item_id": "THPT-G10-B14-P03",
+    "skill_id": "G10-B14-OUTLIERS",
+    "outcome_id": "G10-B14-OUTLIERS"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 22,
+    "item_id": "THPT-G10-B14-P04",
+    "skill_id": "G10-B14-COMPARISON",
+    "outcome_id": "G10-B14-COMPARISON"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 23,
+    "item_id": "THPT-G10-B14-P05",
+    "skill_id": "G10-B14-STDDEV",
+    "outcome_id": "G10-B14-STDDEV"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 24,
+    "item_id": "THPT-G10-B14-P06",
+    "skill_id": "G10-B14-VARIANCE",
+    "outcome_id": "G10-B14-VARIANCE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 25,
+    "item_id": "THPT-G10-CHV-W12",
+    "outcome_id": "G10-B12-ABS_ERROR"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 26,
+    "item_id": "THPT-G10-CHV-W13",
+    "outcome_id": "G10-B13-MEAN"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 27,
+    "item_id": "THPT-G10-CHV-W14-ANCHOR",
+    "outcome_id": "G10-B14-VARIANCE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 28,
+    "item_id": "THPT-G10-TOPSTAT-ADD01",
+    "skill_id": "G10-B12-APPROX_CONCEPT",
+    "outcome_id": "G10-B12-APPROX_CONCEPT"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 29,
+    "item_id": "THPT-G10-TOPSTAT-ADD02",
+    "skill_id": "G10-B13-MODE",
+    "outcome_id": "G10-B13-MODE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 30,
+    "item_id": "THPT-G10-TOPSTAT-ADD03",
+    "skill_id": "G10-B13-MEDIAN",
+    "outcome_id": "G10-B13-MEDIAN"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 31,
+    "item_id": "THPT-G10-TOPSTAT-ADD04",
+    "skill_id": "G10-B14-OUTLIERS",
+    "outcome_id": "G10-B14-OUTLIERS"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 32,
+    "item_id": "THPT-G10-TOPSTAT-ADD05",
+    "skill_id": "G10-B14-COMPARISON",
+    "outcome_id": "G10-B14-COMPARISON"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 33,
+    "item_id": "THPT-G11-B08-C01",
+    "skill_id": "G11-B08-GROUPED-DEFINITION",
+    "outcome_id": "G11-B08-GROUPED-DEFINITION"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 34,
+    "item_id": "THPT-G11-B08-C02",
+    "skill_id": "G11-B08-CLASS-BOUNDARIES",
+    "outcome_id": "G11-B08-CLASS-BOUNDARIES"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 35,
+    "item_id": "THPT-G11-B08-C03",
+    "skill_id": "G11-B08-GROUP-WIDTH",
+    "outcome_id": "G11-B08-GROUP-WIDTH"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 36,
+    "item_id": "THPT-G11-B08-C04",
+    "skill_id": "G11-B08-FREQUENCY-TABLE",
+    "outcome_id": "G11-B08-FREQUENCY-TABLE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 37,
+    "item_id": "THPT-G11-B08-C05",
+    "skill_id": "G11-B08-INTERPRETATION",
+    "outcome_id": "G11-B08-INTERPRETATION"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 38,
+    "item_id": "THPT-G11-B08-P01",
+    "skill_id": "G11-B08-CLASS-BOUNDARIES",
+    "outcome_id": "G11-B08-CLASS-BOUNDARIES"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 39,
+    "item_id": "THPT-G11-B08-P02",
+    "skill_id": "G11-B08-GROUP-WIDTH",
+    "outcome_id": "G11-B08-GROUP-WIDTH"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 40,
+    "item_id": "THPT-G11-B08-P03",
+    "skill_id": "G11-B08-FREQUENCY-TABLE",
+    "outcome_id": "G11-B08-FREQUENCY-TABLE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 41,
+    "item_id": "THPT-G11-B08-P04",
+    "skill_id": "G11-B08-INTERPRETATION",
+    "outcome_id": "G11-B08-INTERPRETATION"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 42,
+    "item_id": "THPT-G11-B08-P05",
+    "skill_id": "G11-B08-FREQUENCY-TABLE",
+    "outcome_id": "G11-B08-FREQUENCY-TABLE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 43,
+    "item_id": "THPT-G11-B08-P06",
+    "skill_id": "G11-B08-INTERPRETATION",
+    "outcome_id": "G11-B08-INTERPRETATION"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 44,
+    "item_id": "THPT-G11-B08-P07",
+    "skill_id": "G11-B08-INTERPRETATION",
+    "outcome_id": "G11-B08-INTERPRETATION"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 45,
+    "item_id": "THPT-G11-B08-P08",
+    "skill_id": "G11-B08-GROUPED-DEFINITION",
+    "outcome_id": "G11-B08-GROUPED-DEFINITION"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 46,
+    "item_id": "THPT-G11-B09-C01",
+    "skill_id": "G11-B09-REPRESENTATIVE",
+    "outcome_id": "G11-B09-REPRESENTATIVE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 47,
+    "item_id": "THPT-G11-B09-C02",
+    "skill_id": "G11-B09-GROUPED-MEAN",
+    "outcome_id": "G11-B09-GROUPED-MEAN"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 48,
+    "item_id": "THPT-G11-B09-C03",
+    "skill_id": "G11-B09-CUMULATIVE",
+    "outcome_id": "G11-B09-CUMULATIVE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 49,
+    "item_id": "THPT-G11-B09-C04",
+    "skill_id": "G11-B09-GROUPED-MEDIAN",
+    "outcome_id": "G11-B09-GROUPED-MEDIAN"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 50,
+    "item_id": "THPT-G11-B09-C05",
+    "skill_id": "G11-B09-MODE-CONDITIONS",
+    "outcome_id": "G11-B09-MODE-CONDITIONS"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 51,
+    "item_id": "THPT-G11-B09-P01",
+    "skill_id": "G11-B09-GROUPED-MEAN",
+    "outcome_id": "G11-B09-GROUPED-MEAN"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 52,
+    "item_id": "THPT-G11-B09-P02",
+    "skill_id": "G11-B09-GROUPED-MEDIAN",
+    "outcome_id": "G11-B09-GROUPED-MEDIAN"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 53,
+    "item_id": "THPT-G11-B09-P03",
+    "skill_id": "G11-B09-GROUPED-QUARTILES",
+    "outcome_id": "G11-B09-GROUPED-QUARTILES"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 54,
+    "item_id": "THPT-G11-B09-P04",
+    "skill_id": "G11-B09-GROUPED-MODE",
+    "outcome_id": "G11-B09-GROUPED-MODE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 55,
+    "item_id": "THPT-G11-B09-P05",
+    "skill_id": "G11-B09-GROUPED-MEAN",
+    "outcome_id": "G11-B09-GROUPED-MEAN"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 56,
+    "item_id": "THPT-G11-B09-P06",
+    "skill_id": "G11-B09-CUMULATIVE",
+    "outcome_id": "G11-B09-CUMULATIVE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 57,
+    "item_id": "THPT-G11-B09-P07",
+    "skill_id": "G11-B09-GROUPED-MEDIAN",
+    "outcome_id": "G11-B09-GROUPED-MEDIAN"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 58,
+    "item_id": "THPT-G11-B09-P08",
+    "skill_id": "G11-B09-GROUPED-QUARTILES",
+    "outcome_id": "G11-B09-GROUPED-QUARTILES"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 59,
+    "item_id": "THPT-G11-B09-P09",
+    "skill_id": "G11-B09-MODE-CONDITIONS",
+    "outcome_id": "G11-B09-MODE-CONDITIONS"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 60,
+    "item_id": "THPT-G11-B09-P10",
+    "skill_id": "G11-B09-INTERPRETATION",
+    "outcome_id": "G11-B09-INTERPRETATION"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 61,
+    "item_id": "THPT-G11-CHIII-W08-01",
+    "outcome_id": "G11-B08-FREQUENCY-TABLE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 62,
+    "item_id": "THPT-G11-CHIII-W08-02-ANCHOR",
+    "outcome_id": "G11-B08-INTERPRETATION"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 63,
+    "item_id": "THPT-G11-CHIII-W09-01",
+    "outcome_id": "G11-B09-GROUPED-MEDIAN"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 64,
+    "item_id": "THPT-G11-CHIII-W09-02-ANCHOR",
+    "outcome_id": "G11-B09-GROUPED-MODE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 65,
+    "item_id": "THPT-G11-TOPSTAT-ADD06",
+    "skill_id": "G11-B09-REPRESENTATIVE",
+    "outcome_id": "G11-B09-REPRESENTATIVE"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 66,
+    "item_id": "THPT-G11-TOPSTAT-ADD07",
+    "skill_id": "G11-B09-INTERPRETATION",
+    "outcome_id": "G11-B09-INTERPRETATION"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 67,
+    "item_id": "THPT-G12-B09-C01",
+    "skill_id": "G12-CHIII-B09-O01",
+    "outcome_id": "G12-CHIII-B09-O01"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 68,
+    "item_id": "THPT-G12-B09-P01",
+    "skill_id": "G12-CHIII-B09-O01",
+    "outcome_id": "G12-CHIII-B09-O01"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 69,
+    "item_id": "THPT-G12-B09-P02",
+    "skill_id": "G12-CHIII-B09-O01",
+    "outcome_id": "G12-CHIII-B09-O01"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 70,
+    "item_id": "THPT-G12-B09-W01",
+    "outcome_id": "G12-CHIII-B09-O01"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 71,
+    "item_id": "THPT-G12-B09-C02",
+    "skill_id": "G12-CHIII-B09-O02",
+    "outcome_id": "G12-CHIII-B09-O02"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 72,
+    "item_id": "THPT-G12-B09-P03",
+    "skill_id": "G12-CHIII-B09-O02",
+    "outcome_id": "G12-CHIII-B09-O02"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 73,
+    "item_id": "THPT-G12-B09-P04",
+    "skill_id": "G12-CHIII-B09-O02",
+    "outcome_id": "G12-CHIII-B09-O02"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 74,
+    "item_id": "THPT-G12-B09-W02",
+    "outcome_id": "G12-CHIII-B09-O02"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 75,
+    "item_id": "THPT-G12-B09-C03",
+    "skill_id": "G12-CHIII-B09-O03",
+    "outcome_id": "G12-CHIII-B09-O03"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 76,
+    "item_id": "THPT-G12-B09-P05",
+    "skill_id": "G12-CHIII-B09-O03",
+    "outcome_id": "G12-CHIII-B09-O03"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 77,
+    "item_id": "THPT-G12-B09-P06",
+    "skill_id": "G12-CHIII-B09-O03",
+    "outcome_id": "G12-CHIII-B09-O03"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 78,
+    "item_id": "THPT-G12-B09-W03",
+    "outcome_id": "G12-CHIII-B09-O03"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 79,
+    "item_id": "THPT-G12-B09-C04",
+    "skill_id": "G12-CHIII-B09-O04",
+    "outcome_id": "G12-CHIII-B09-O04"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 80,
+    "item_id": "THPT-G12-B09-P07",
+    "skill_id": "G12-CHIII-B09-O04",
+    "outcome_id": "G12-CHIII-B09-O04"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 81,
+    "item_id": "THPT-G12-B09-P08",
+    "skill_id": "G12-CHIII-B09-O04",
+    "outcome_id": "G12-CHIII-B09-O04"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 82,
+    "item_id": "THPT-G12-B09-W04",
+    "outcome_id": "G12-CHIII-B09-O04"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 83,
+    "item_id": "THPT-G12-B09-C05",
+    "skill_id": "G12-CHIII-B09-O05",
+    "outcome_id": "G12-CHIII-B09-O05"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 84,
+    "item_id": "THPT-G12-B09-P09",
+    "skill_id": "G12-CHIII-B09-O05",
+    "outcome_id": "G12-CHIII-B09-O05"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 85,
+    "item_id": "THPT-G12-B09-P10",
+    "skill_id": "G12-CHIII-B09-O05",
+    "outcome_id": "G12-CHIII-B09-O05"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 86,
+    "item_id": "THPT-G12-B09-W05",
+    "outcome_id": "G12-CHIII-B09-O05"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 87,
+    "item_id": "THPT-G12-B09-C06",
+    "skill_id": "G12-CHIII-B09-O06",
+    "outcome_id": "G12-CHIII-B09-O06"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 88,
+    "item_id": "THPT-G12-B09-P11",
+    "skill_id": "G12-CHIII-B09-O06",
+    "outcome_id": "G12-CHIII-B09-O06"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 89,
+    "item_id": "THPT-G12-B09-P12",
+    "skill_id": "G12-CHIII-B09-O06",
+    "outcome_id": "G12-CHIII-B09-O06"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 90,
+    "item_id": "THPT-G12-B09-W06",
+    "outcome_id": "G12-CHIII-B09-O06"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 91,
+    "item_id": "THPT-G12-B10-C01",
+    "skill_id": "G12-CHIII-B10-O01",
+    "outcome_id": "G12-CHIII-B10-O01"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 92,
+    "item_id": "THPT-G12-B10-P01",
+    "skill_id": "G12-CHIII-B10-O01",
+    "outcome_id": "G12-CHIII-B10-O01"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 93,
+    "item_id": "THPT-G12-B10-P02",
+    "skill_id": "G12-CHIII-B10-O01",
+    "outcome_id": "G12-CHIII-B10-O01"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 94,
+    "item_id": "THPT-G12-B10-W01",
+    "outcome_id": "G12-CHIII-B10-O01"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 95,
+    "item_id": "THPT-G12-B10-C02",
+    "skill_id": "G12-CHIII-B10-O02",
+    "outcome_id": "G12-CHIII-B10-O02"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 96,
+    "item_id": "THPT-G12-B10-P03",
+    "skill_id": "G12-CHIII-B10-O02",
+    "outcome_id": "G12-CHIII-B10-O02"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 97,
+    "item_id": "THPT-G12-B10-P04",
+    "skill_id": "G12-CHIII-B10-O02",
+    "outcome_id": "G12-CHIII-B10-O02"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 98,
+    "item_id": "THPT-G12-B10-W02",
+    "outcome_id": "G12-CHIII-B10-O02"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 99,
+    "item_id": "THPT-G12-B10-C03",
+    "skill_id": "G12-CHIII-B10-O03",
+    "outcome_id": "G12-CHIII-B10-O03"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 100,
+    "item_id": "THPT-G12-B10-P05",
+    "skill_id": "G12-CHIII-B10-O03",
+    "outcome_id": "G12-CHIII-B10-O03"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 101,
+    "item_id": "THPT-G12-B10-P06",
+    "skill_id": "G12-CHIII-B10-O03",
+    "outcome_id": "G12-CHIII-B10-O03"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 102,
+    "item_id": "THPT-G12-B10-W03",
+    "outcome_id": "G12-CHIII-B10-O03"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 103,
+    "item_id": "THPT-G12-B10-C04",
+    "skill_id": "G12-CHIII-B10-O04",
+    "outcome_id": "G12-CHIII-B10-O04"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 104,
+    "item_id": "THPT-G12-B10-P07",
+    "skill_id": "G12-CHIII-B10-O04",
+    "outcome_id": "G12-CHIII-B10-O04"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 105,
+    "item_id": "THPT-G12-B10-P08",
+    "skill_id": "G12-CHIII-B10-O04",
+    "outcome_id": "G12-CHIII-B10-O04"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 106,
+    "item_id": "THPT-G12-B10-W04",
+    "outcome_id": "G12-CHIII-B10-O04"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 107,
+    "item_id": "THPT-G12-B10-C05",
+    "skill_id": "G12-CHIII-B10-O05",
+    "outcome_id": "G12-CHIII-B10-O05"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 108,
+    "item_id": "THPT-G12-B10-P09",
+    "skill_id": "G12-CHIII-B10-O05",
+    "outcome_id": "G12-CHIII-B10-O05"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 109,
+    "item_id": "THPT-G12-B10-P10",
+    "skill_id": "G12-CHIII-B10-O05",
+    "outcome_id": "G12-CHIII-B10-O05"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 110,
+    "item_id": "THPT-G12-B10-W05",
+    "outcome_id": "G12-CHIII-B10-O05"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 111,
+    "item_id": "THPT-G12-B10-C06",
+    "skill_id": "G12-CHIII-B10-O06",
+    "outcome_id": "G12-CHIII-B10-O06"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 112,
+    "item_id": "THPT-G12-B10-P11",
+    "skill_id": "G12-CHIII-B10-O06",
+    "outcome_id": "G12-CHIII-B10-O06"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 113,
+    "item_id": "THPT-G12-B10-P12",
+    "skill_id": "G12-CHIII-B10-O06",
+    "outcome_id": "G12-CHIII-B10-O06"
+  },
+  {
+    "collection": "TOPIC:CD22:PRACTICE",
+    "role": "TOPIC_WRITTEN",
+    "order": 114,
+    "item_id": "THPT-G12-B10-W06",
+    "outcome_id": "G12-CHIII-B10-O06"
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 1,
+    "item_id": "THPT-G10-B12-P01"
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 2,
+    "item_id": "THPT-G10-B13-P03"
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 3,
+    "item_id": "THPT-G10-B14-P05"
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 4,
+    "item_id": "THPT-G11-B08-P03"
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 5,
+    "item_id": "THPT-G11-B09-P02"
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 6,
+    "item_id": "THPT-G11-B09-P04"
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 7,
+    "item_id": "THPT-G12-B09-P04"
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 8,
+    "item_id": "THPT-G12-B10-P04"
+  },
+  {
+    "collection": "TOPIC:CD22:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 9,
+    "item_id": "THPT-G12-B10-P08"
+  }
+]

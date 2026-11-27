@@ -1,0 +1,1093 @@
+[
+  {
+    "item_id": "THPT-G11-CHIV-B10-C01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Hai điểm phân biệt A, B thuộc \\((P)\\). Đường thẳng AB có nằm trong \\((P)\\) không?",
+    "answer_key": "Có, \\(AB\\subset(P)\\).",
+    "worked_solution": "Theo tính chất cơ bản của hình học không gian, nếu hai điểm phân biệt của một đường thẳng thuộc một mặt phẳng thì mọi điểm của đường thẳng đó thuộc mặt phẳng. Vì A, B phân biệt và cùng thuộc \\((P)\\), suy ra \\(AB\\subset(P)\\).",
+    "skill_ids": [
+      "G11-B10-INCIDENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Tìm hai điểm phân biệt cùng thuộc mặt phẳng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B10-C01 · SGK_CORE · `skill_id=G11-B10-INCIDENCE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ có một điểm thuộc mặt, chưa thể kết luận cả đường nằm trong mặt; ở đây đã có A và B phân biệt. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P06."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B10-C02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Ba điểm phân biệt A, B, C thẳng hàng có xác định duy nhất một mặt phẳng không?",
+    "answer_key": "Không.",
+    "worked_solution": "Ba điểm cùng thuộc đường thẳng AB. Có vô số mặt phẳng chứa AB, nên cũng chứa cả C. Để xác định duy nhất một mặt phẳng bằng ba điểm, ba điểm phải không thẳng hàng.",
+    "skill_ids": [
+      "G11-B10-PLANE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xét các mặt phẳng chứa đường AB."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B10-C02 · SGK_CORE · `skill_id=G11-B10-PLANE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Ba điểm thẳng hàng chưa đủ; chọn thêm một điểm ngoài AB để xác định mặt. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P07."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B10-P01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tứ diện S.ABC, tìm giao tuyến của \\((SAB)\\) và \\((SAC)\\).",
+    "answer_key": "Đường thẳng SA.",
+    "worked_solution": "Hai mặt phẳng cùng chứa hai điểm phân biệt S, A nên cùng chứa đường SA. Chúng phân biệt vì nếu trùng nhau thì cả bốn đỉnh tứ diện đồng phẳng. Vậy giao tuyến duy nhất là SA.",
+    "skill_ids": [
+      "G11-B10-PLANE_INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Tìm hai điểm chung phân biệt của hai mặt."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B10-P01 · SGK_PRACTICE · `skill_id=G11-B10-PLANE_INTERSECTION`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hai điểm chung là S và A, không phải C; kiểm hai mặt phân biệt vì tứ diện không đồng phẳng. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P08."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B10-P02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tứ diện \\(S.ABC\\), M là trung điểm SA, N nằm trên cạnh SB sao cho \\(\\frac{SN}{SB}=\\frac13\\). Hãy dựng giao điểm I của đường thẳng MN với mặt phẳng \\((ABC)\\). Nêu lý do giao điểm tồn tại và duy nhất. Có nhất thiết I thuộc đoạn AB không?",
+    "answer_key": "Kéo dài MN và AB, lấy \\(I=MN\\cap AB\\). I tồn tại duy nhất và nằm ngoài đoạn AB.",
+    "worked_solution": "Vì MN nằm trong mặt phẳng \\((SAB)\\), chọn mặt phẳng này làm mặt phẳng phụ. Hai mặt phẳng \\((SAB)\\) và \\((ABC)\\) cắt nhau theo AB. Trong tam giác SAB, \\(\\frac{SM}{SA}=\\frac12\\ne\\frac{SN}{SB}=\\frac13\\), nên MN không song song AB theo định lý Thalès. Hai đường MN và AB cùng thuộc \\((SAB)\\), không song song và không trùng nhau, nên cắt nhau tại đúng một điểm I. Vì \\(I\\in AB\\subset(ABC)\\), I là giao điểm cần tìm; MN không nằm trong mặt đáy vì M không thuộc mặt đáy. Đoạn MN nằm trong tam giác SAB và không gặp cạnh AB vì M,N thuộc phần trong hai cạnh SA, SB. Đường MN đi qua tam giác từ M đến N, nên giao điểm với đường AB không thể nằm trên đoạn AB. Khi dựng phải kéo dài các đường, không chỉ xét các đoạn.",
+    "skill_ids": [
+      "G11-B10-LINE_PLANE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Chọn mặt phẳng phụ \\((SAB)\\) chứa MN và tìm giao tuyến với mặt đáy.",
+      "So sánh hai tỉ số trên các cạnh bên để biết MN và AB có song song không."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B10-P02 · SGK_PRACTICE · `skill_id=G11-B10-LINE_PLANE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Phân biệt đường thẳng với đoạn thẳng; giao điểm có thể nằm ngoài cạnh của hình. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P09."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B10-P03",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Cho đường thẳng a và điểm A không thuộc a. Có bao nhiêu mặt phẳng chứa cả a và A?",
+    "answer_key": "Đúng một.",
+    "worked_solution": "Chọn hai điểm phân biệt B, C trên a. A nằm ngoài a nên A, B, C không thẳng hàng, xác định duy nhất một mặt phẳng. Mặt phẳng đó chứa a và A; mọi mặt phẳng khác chứa a và A cũng phải chứa ba điểm này.",
+    "skill_ids": [
+      "G11-B10-PLANE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Chọn hai điểm phân biệt trên a, ghép với A."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B10-P03 · SGK_PRACTICE · `skill_id=G11-B10-PLANE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Dùng ba điểm không thẳng hàng để chứng minh tồn tại và duy nhất. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P07."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B10-P04",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tứ diện S.ABC, M, N, K lần lượt nằm trong các cạnh SA, SB, SC. Thiết diện bởi \\((MNK)\\) là đa giác nào?",
+    "answer_key": "Tam giác MNK.",
+    "worked_solution": "M, N, K không thẳng hàng: đường MN nằm trong \\((SAB)\\) còn K không thuộc mặt phẳng đó. Mặt phẳng \\((MNK)\\) cắt các mặt tam giác SAB, SBC, SCA theo các đoạn MN, NK, KM. Vì S và ba đỉnh A, B, C nằm ở hai phía đối nhau của mặt cắt (mỗi cạnh bên cắt mặt tại điểm trong cạnh), mặt đáy không bị cắt. Thiết diện là tam giác MNK.",
+    "skill_ids": [
+      "G11-B10-SECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xét đoạn giao trên từng mặt tam giác bên."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B10-P04 · SGK_PRACTICE · `skill_id=G11-B10-SECTION`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Kiểm ba điểm thuộc ba cạnh bên và mặt cắt không gặp đáy; không chỉ dựa vào hình biểu diễn. Ôn Toán 11 Bài 10; luyện THPT-TOP15-P10."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B11-C01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Hai đường thẳng phân biệt không cắt nhau trong không gian có chắc chắn song song không?",
+    "answer_key": "Không.",
+    "worked_solution": "Hai đường thẳng song song phải đồng phẳng và không có điểm chung. Hai đường không cắt nhau nhưng không đồng phẳng là hai đường chéo nhau. Vì vậy cần kiểm tra điều kiện đồng phẳng.",
+    "skill_ids": [
+      "G11-B11-RELATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Hai đường không cắt có nhất thiết đồng phẳng không?"
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B11-C01 · SGK_CORE · `skill_id=G11-B11-RELATIVE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Kiểm đồng phẳng trước khi kết luận song song; hai cạnh đối tứ diện là phản ví dụ. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P02."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B11-C02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong hình bình hành ABCD không suy biến, AB và CD có quan hệ nào?",
+    "answer_key": "\\(AB\\parallel CD\\).",
+    "worked_solution": "Hai cạnh đối AB và CD thuộc cùng mặt phẳng của hình bình hành, là hai đường phân biệt và không có điểm chung. Do đó chúng song song.",
+    "skill_ids": [
+      "G11-B11-COPLANAR"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Dùng tính chất hai cạnh đối của hình bình hành."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B11-C02 · SGK_CORE · `skill_id=G11-B11-COPLANAR`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "AB và CD đồng phẳng, phân biệt và không cắt nhau. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P02."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B11-P01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tứ diện S.ABC, SA và BC có quan hệ nào?",
+    "answer_key": "Chéo nhau.",
+    "worked_solution": "Giả sử SA và BC cùng nằm trong một mặt phẳng. Khi đó cả S, A, B, C đều thuộc mặt phẳng ấy, trái với giả thiết tứ diện. Vậy hai đường không đồng phẳng, nên chéo nhau.",
+    "skill_ids": [
+      "G11-B11-RELATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Giả sử SA và BC cùng thuộc một mặt phẳng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B11-P01 · SGK_PRACTICE · `skill_id=G11-B11-RELATIVE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đồng phẳng, cả bốn đỉnh thuộc mặt đó, trái với giả thiết tứ diện. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P11."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B11-P02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tam giác SAB, M, N lần lượt là trung điểm SA, SB. Chứng minh MN song song AB.",
+    "answer_key": "\\(MN\\parallel AB\\).",
+    "worked_solution": "Trong mặt phẳng \\((SAB)\\), MN nối trung điểm hai cạnh SA và SB của tam giác. Theo định lí đường trung bình, \\(MN\\parallel AB\\) và hai đường phân biệt. Đây là kết luận trong một tam giác phẳng.",
+    "skill_ids": [
+      "G11-B11-PARALLEL_PROOF"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xét tam giác SAB và hai trung điểm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B11-P02 · SGK_PRACTICE · `skill_id=G11-B11-PARALLEL_PROOF`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Áp dụng định lí đường trung bình trong tam giác SAB, không suy chỉ từ hình biểu diễn. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P12."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B11-P03",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tứ diện \\(S.ABC\\), M,N lần lượt là trung điểm SA,SB. (a) Xét vị trí tương đối của MN và BC. (b) Xác định giao tuyến của hai mặt phẳng \\((CMN)\\) và \\((ABC)\\) bằng một điểm và một phương. Giải thích vì sao giao tuyến không phải AB.",
+    "answer_key": "(a) MN và BC chéo nhau. (b) Giao tuyến là đường thẳng qua C song song AB (và MN), không phải AB.",
+    "worked_solution": "(a) Giả sử MN và BC đồng phẳng. Mặt phẳng chứa hai đường này chứa B,C,N. Vì B,N phân biệt thuộc SB nên nó chứa S; do đó là \\((SBC)\\). Nhưng M thuộc phần trong SA và không thuộc \\((SBC)\\), mâu thuẫn. Vậy MN và BC chéo nhau. (b) Trong tam giác SAB, MN là đường trung bình nên \\(MN\\parallel AB\\). Hai mặt phẳng \\((CMN)\\) và \\((ABC)\\) phân biệt vì M không thuộc đáy, cùng chứa C. Trong \\((CMN)\\), qua C kẻ đường d song song MN; trong \\((ABC)\\), qua C cũng có đường song song AB. Do MN và AB cùng phương, hai đường qua C vừa dựng trùng nhau theo tính duy nhất của đường song song qua một điểm. Vì vậy d nằm trong cả hai mặt phẳng và là giao tuyến. C không thuộc AB nên d khác AB.",
+    "skill_ids": [
+      "G11-B11-RELATIVE",
+      "G11-B11-INTERSECT_PLANES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Muốn bác bỏ đồng phẳng, thử xác định mặt phẳng qua B,C,N.",
+      "Tìm quan hệ MN với AB, rồi dựng đường qua điểm chung C theo phương ấy."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B11-P03 · SGK_PRACTICE · `skill_id=G11-B11-RELATIVE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không suy giao tuyến từ nét vẽ. Tìm điểm chung rồi chứng minh đường cùng phương nằm trong cả hai mặt phẳng. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P13."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B11-P04",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Nếu \\(a\\parallel b\\) và \\(b\\parallel c\\), có thể kết luận \\(a\\parallel c\\) ngay khi chưa biết \\(a\\ne c\\) không?",
+    "answer_key": "Chưa; cần thêm \\(a\\ne c\\).",
+    "worked_solution": "Hai đường a, c cùng phương vì cùng song song với b. Nhưng có thể a và c trùng nhau, chẳng hạn lấy c chính là a. Nếu a và c phân biệt thì hai đường cùng phương là song song. Vì vậy cần thêm điều kiện phân biệt.",
+    "skill_ids": [
+      "G11-B11-PARALLEL_PROOF"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Thử trường hợp c chính là a."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B11-P04 · SGK_PRACTICE · `skill_id=G11-B11-PARALLEL_PROOF`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu a và c trùng nhau thì không phải hai đường song song phân biệt. Ôn Toán 11 Bài 11; luyện THPT-TOP15-P02."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B12-C01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Đường thẳng a nằm trong \\((P)\\) có được gọi là \\(a\\parallel(P)\\) theo định nghĩa không?",
+    "answer_key": "Không.",
+    "worked_solution": "Đường thẳng nằm trong mặt phẳng có vô số điểm chung với mặt phẳng. Đường thẳng song song mặt phẳng phải không có điểm chung. Hai vị trí tương đối này khác nhau.",
+    "skill_ids": [
+      "G11-B12-POSITIONS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "So số điểm chung của hai vị trí tương đối."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B12-C01 · SGK_CORE · `skill_id=G11-B12-POSITIONS`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Đường nằm trong mặt có vô số điểm chung, đường song song mặt không có điểm chung. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P03."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B12-C02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Điền điều kiện còn thiếu trong dấu hiệu: \\(a\\parallel b\\), \\(b\\subset(P)\\), và ... thì \\(a\\parallel(P)\\).",
+    "answer_key": "\\(a\\not\\subset(P)\\).",
+    "worked_solution": "Một đường thẳng song song với đường nằm trong mặt phẳng có thể nằm ngay trong mặt phẳng đó. Nếu thêm điều kiện a không nằm trong \\((P)\\), dấu hiệu đường thẳng song song mặt phẳng cho \\(a\\parallel(P)\\). Không được bỏ điều kiện này.",
+    "skill_ids": [
+      "G11-B12-PARALLEL_TEST"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xét khả năng a cũng nằm trong mặt phẳng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B12-C02 · SGK_CORE · `skill_id=G11-B12-PARALLEL_TEST`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Cần thêm điều kiện a không nằm trong mặt; nếu không, dấu hiệu không áp dụng. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P14."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B12-P01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong hình chóp S.ABC, M, N là trung điểm SA, SB. Chứng minh \\(MN\\parallel(ABC)\\).",
+    "answer_key": "\\(MN\\parallel(ABC)\\).",
+    "worked_solution": "Trong tam giác SAB, định lí đường trung bình cho \\(MN\\parallel AB\\). Đường AB nằm trong \\((ABC)\\). Vì SA chỉ cắt mặt đáy tại A và M nằm trong SA, M không thuộc mặt đáy; do đó MN không nằm trong mặt đáy. Áp dụng dấu hiệu đường thẳng song song mặt phẳng, được \\(MN\\parallel(ABC)\\).",
+    "skill_ids": [
+      "G11-B12-PARALLEL_TEST"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Dùng đường trung bình rồi kiểm M có thuộc đáy không."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B12-P01 · SGK_PRACTICE · `skill_id=G11-B12-PARALLEL_TEST`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Chứng minh MN song song AB và MN không nằm trong đáy trước khi dùng dấu hiệu. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P14."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B12-P02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tứ diện S.ABC, đường thẳng SA và mặt phẳng \\((ABC)\\) có vị trí tương đối nào?",
+    "answer_key": "Cắt nhau tại A.",
+    "worked_solution": "A thuộc mặt đáy nhưng S không thuộc mặt đáy. SA không nằm trong mặt đáy và chứa A, nên giao điểm duy nhất là A.",
+    "skill_ids": [
+      "G11-B12-POSITIONS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "A thuộc đáy, S có thuộc đáy không?"
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B12-P02 · SGK_PRACTICE · `skill_id=G11-B12-POSITIONS`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "SA chứa A nhưng không nằm trong đáy, nên cắt đáy duy nhất tại A. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P03."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B12-P03",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Cho \\(d\\parallel(P)\\), \\(d\\subset(Q)\\) và \\((Q)\\cap(P)=e\\). Tìm quan hệ giữa d và e.",
+    "answer_key": "\\(d\\parallel e\\).",
+    "worked_solution": "Hai đường d và e cùng nằm trong \\((Q)\\). Nếu có điểm chung thì d sẽ gặp \\((P)\\), trái với giả thiết. Vì vậy chúng đồng phẳng, phân biệt và không có điểm chung, tức song song.",
+    "skill_ids": [
+      "G11-B12-PLANE_INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Cả d và e nằm trong mặt phẳng nào?"
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B12-P03 · SGK_PRACTICE · `skill_id=G11-B12-PLANE_INTERSECTION`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu d gặp e, d gặp mặt phẳng P, trái với giả thiết; dùng đồng phẳng và không giao. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P15."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B12-P04",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong hình chóp \\(S.ABCD\\) có đáy ABCD là hình bình hành không suy biến, M nằm trong cạnh SA và \\(SM:MA=2:3\\). Hãy dựng điểm N thuộc cạnh SD sao cho \\(MN\\parallel(ABCD)\\). Tính tỉ số SN:ND và chứng minh N là điểm duy nhất thỏa mãn.",
+    "answer_key": "Trong \\((SAD)\\), qua M kẻ đường thẳng song song AD, cắt SD tại N. \\(SN:ND=2:3\\). N duy nhất.",
+    "worked_solution": "Muốn dựng MN song song mặt đáy, ta tìm một đường trong đáy cùng phương với MN. Vì \\(M,N\\in(SAD)\\) và \\((SAD)\\cap(ABCD)=AD\\), nếu \\(MN\\parallel(ABCD)\\) thì \\(MN\\parallel AD\\). Do đó trong tam giác SAD, qua M kẻ đường thẳng song song AD; đường này cắt SD tại N nằm trong cạnh. Theo định lý Thalès, \\(\\frac{SN}{SD}=\\frac{SM}{SA}=\\frac25\\), suy ra \\(SN:ND=2:3\\). Kiểm lại: \\(MN\\parallel AD\\), \\(AD\\subset(ABCD)\\) và M không thuộc đáy, nên \\(MN\\parallel(ABCD)\\) theo dấu hiệu đường thẳng song song mặt phẳng. Trong mặt phẳng \\((SAD)\\), qua M chỉ có một đường thẳng song song AD; giao điểm của đường ấy với SD là duy nhất. Vì vậy N vừa tồn tại vừa duy nhất.",
+    "skill_ids": [
+      "G11-B12-CONSTRUCTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Tìm giao tuyến của mặt bên \\((SAD)\\) với đáy rồi xác định phương của MN.",
+      "Dùng định lý Thalès trong tam giác SAD để tính tỉ số."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B12-P04 · SGK_PRACTICE · `skill_id=G11-B12-CONSTRUCTION`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không tự chọn trung điểm khi đề cho tỉ số khác. Phải tìm đúng phương của đường cần dựng, kiểm điều kiện không nằm trong đáy và chứng minh duy nhất. Ôn Toán 11 Bài 12; luyện THPT-TOP15-P14."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B13-C01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Hai mặt phẳng phân biệt không có điểm chung gọi là gì?",
+    "answer_key": "Hai mặt phẳng song song.",
+    "worked_solution": "Theo định nghĩa, hai mặt phẳng không có điểm chung là hai mặt phẳng song song. Không nhầm với hai mặt phẳng trùng nhau, vốn có mọi điểm chung.",
+    "skill_ids": [
+      "G11-B13-PLANE_POSITIONS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Dùng định nghĩa hai mặt phẳng không giao nhau."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B13-C01 · SGK_CORE · `skill_id=G11-B13-PLANE_POSITIONS`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hai mặt phẳng song song không có điểm chung; hai mặt trùng nhau có mọi điểm chung. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P17."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B13-C02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong \\((P)\\), hai đường thẳng a, b cắt nhau và cả hai đều song song với \\((Q)\\). Có thể suy ra gì?",
+    "answer_key": "\\((P)\\parallel(Q)\\).",
+    "worked_solution": "Hai đường a, b cắt nhau trong \\((P)\\) và đều không gặp \\((Q)\\). Theo dấu hiệu hai mặt phẳng song song, \\((P)\\parallel(Q)\\). Điều kiện hai đường cắt nhau là thiết yếu.",
+    "skill_ids": [
+      "G11-B13-PLANE_TEST"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Dùng dấu hiệu qua hai đường cắt nhau."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B13-C02 · SGK_CORE · `skill_id=G11-B13-PLANE_TEST`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Cần hai đường cắt nhau trong cùng một mặt phẳng, không thay bằng hai đường song song. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P18."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B13-P01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Cho \\((P)\\parallel(Q)\\). Mặt phẳng \\((R)\\) cắt chúng lần lượt theo d, e. Tìm quan hệ d, e.",
+    "answer_key": "\\(d\\parallel e\\).",
+    "worked_solution": "Cả d và e nằm trong \\((R)\\). Nếu chúng có điểm chung thì điểm đó thuộc cả \\((P)\\) và \\((Q)\\), trái với giả thiết hai mặt phẳng song song. Vì vậy d, e phân biệt, đồng phẳng và không cắt nhau.",
+    "skill_ids": [
+      "G11-B13-TRANSVERSAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xét hai giao tuyến trong mặt phẳng R."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B13-P01 · SGK_PRACTICE · `skill_id=G11-B13-TRANSVERSAL`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chúng cắt nhau, điểm chung thuộc cả P và Q, trái giả thiết. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P19."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B13-P02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Biết \\((P)\\) chứa một đường thẳng \\(a\\parallel(Q)\\). Chỉ từ dữ kiện đó có đủ để kết luận \\((P)\\parallel(Q)\\) không?",
+    "answer_key": "Không.",
+    "worked_solution": "Hai mặt phẳng \\((P)\\) và \\((Q)\\) có thể cắt nhau theo e. Trong \\((P)\\), lấy đường a song song và phân biệt với e. Khi đó a không gặp \\((Q)\\), dù hai mặt phẳng cắt nhau. Dấu hiệu cần hai đường cắt nhau trong \\((P)\\) cùng song song với \\((Q)\\).",
+    "skill_ids": [
+      "G11-B13-PLANE_TEST"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Thử hai mặt phẳng cắt nhau theo e; chọn a song song e trong P."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B13-P02 · SGK_PRACTICE · `skill_id=G11-B13-PLANE_TEST`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Một đường song song mặt chưa đủ; cần hai đường cắt nhau trong mặt P. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P18."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B13-P03",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong hình chóp S.ABC, M, N, K lần lượt thuộc SA, SB, SC và \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac13\\). Chứng minh \\((MNK)\\parallel(ABC)\\).",
+    "answer_key": "\\((MNK)\\parallel(ABC)\\).",
+    "worked_solution": "Theo định lí Thalès đảo trong SAB và SAC, \\(MN\\parallel AB\\) và \\(MK\\parallel AC\\). Vì M không thuộc mặt đáy nên MN, MK không nằm trong mặt đáy. Do đó cả MN và MK song song \\((ABC)\\). Chúng cắt nhau tại M trong \\((MNK)\\); áp dụng dấu hiệu hai mặt phẳng song song.",
+    "skill_ids": [
+      "G11-B13-PRISM_RATIO"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Dùng Thalès đảo trong hai tam giác bên có chung cạnh SA."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B13-P03 · SGK_PRACTICE · `skill_id=G11-B13-PRISM_RATIO`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Chứng minh MN và MK đều song song đáy, rồi dùng hai đường cắt nhau tại M. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P16."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B13-P04",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong hình chóp tam giác, mặt cắt song song với đáy có tỉ số độ dài cạnh tương ứng so với đáy bằng \\(\\frac23\\). Tính tỉ số diện tích thiết diện so với diện tích đáy.",
+    "answer_key": "\\(\\frac49\\).",
+    "worked_solution": "Thiết diện và đáy là hai tam giác đồng dạng với tỉ số đồng dạng \\(\\frac23\\). Các độ dài tương ứng cùng nhân với \\(\\frac23\\), nên diện tích nhân với bình phương tỉ số: \\(\\left(\\frac23\\right)^2=\\frac49\\).",
+    "skill_ids": [
+      "G11-B13-PRISM_RATIO"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Diện tích thay đổi theo bình phương tỉ số độ dài."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B13-P04 · SGK_PRACTICE · `skill_id=G11-B13-PRISM_RATIO`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không nhân diện tích chỉ với \\(\\frac23\\); bình phương tỉ số đồng dạng. Ôn Toán 11 Bài 13; luyện THPT-TOP15-P04."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B14-C01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Phương chiếu có thể là phương song song với mặt phẳng chiếu \\((P)\\) không?",
+    "answer_key": "Không.",
+    "worked_solution": "Để ảnh của mỗi điểm được xác định duy nhất, đường qua điểm đó theo phương chiếu phải gặp \\((P)\\) tại đúng một điểm. Nếu phương chiếu song song mặt phẳng chiếu, đường qua điểm ngoài \\((P)\\) không gặp \\((P)\\). Do đó phương chiếu phải có hướng không song song với mặt phẳng chiếu.",
+    "skill_ids": [
+      "G11-B14-PROJECTION_DEF"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Một đường chiếu qua điểm ngoài mặt có gặp mặt không?"
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B14-C01 · SGK_CORE · `skill_id=G11-B14-PROJECTION_DEF`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Phương song song mặt chiếu làm ảnh của điểm ngoài mặt không xác định. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P20."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B14-C02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Phép chiếu song song có bảo toàn mọi số đo góc không?",
+    "answer_key": "Không.",
+    "worked_solution": "Phép chiếu song song bảo toàn tính thẳng hàng và tỉ số độ dài của hai đoạn thẳng cùng nằm trên một đường hoặc trên hai đường song song, nếu ảnh của chúng không suy biến. Số đo góc nói chung không được bảo toàn; chẳng hạn ảnh của hình vuông có thể là hình bình hành không có góc vuông.",
+    "skill_ids": [
+      "G11-B14-AFFINE_INVARIANTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Nghĩ đến ảnh của hình vuông khi chiếu xiên."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B14-C02 · SGK_CORE · `skill_id=G11-B14-AFFINE_INVARIANTS`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Phép chiếu không bảo toàn góc; hình vuông có thể thành hình bình hành không vuông. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P22."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B14-P01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong lăng trụ ABC.A′B′C′, chiếu lên \\((ABC)\\) theo phương AA′. Ảnh của B′ là điểm nào?",
+    "answer_key": "B.",
+    "worked_solution": "Cạnh bên BB′ cùng phương AA′. Đường chiếu qua B′ chính là BB′; đường này gặp \\((ABC)\\) duy nhất tại B. Vì vậy ảnh của B′ là B.",
+    "skill_ids": [
+      "G11-B14-PROJECTION_DEF"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Dùng quan hệ giữa BB′ và AA′."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B14-P01 · SGK_PRACTICE · `skill_id=G11-B14-PROJECTION_DEF`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Đường chiếu qua B′ theo phương AA′ chính là BB′. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P20."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B14-P02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "M′ là trung điểm B′C′ của lăng trụ tam giác ABC.A′B′C′. Chiếu theo phương AA′ lên \\((ABC)\\). Ảnh M′ là điểm nào?",
+    "answer_key": "Trung điểm M của BC.",
+    "worked_solution": "B′ và C′ lần lượt có ảnh là B và C, hai điểm phân biệt. Do ảnh của B′C′ không suy biến, phép chiếu bảo toàn tỉ số hai đoạn trên đường này. Vì M′ chia B′C′ thành hai đoạn bằng nhau, ảnh M là trung điểm BC.",
+    "skill_ids": [
+      "G11-B14-AFFINE_INVARIANTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xác định ảnh hai đầu mút rồi xét tỉ số."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B14-P02 · SGK_PRACTICE · `skill_id=G11-B14-AFFINE_INVARIANTS`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hai đầu mút có ảnh phân biệt; tỉ số trên đoạn được bảo toàn. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P22."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B14-P03",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Một đường thẳng a có cùng phương với phương chiếu \\(\\Delta\\) có ảnh là đường thẳng hay điểm?",
+    "answer_key": "Một điểm.",
+    "worked_solution": "Mọi đường chiếu qua các điểm thuộc a đều trùng với a. Vì phương chiếu không song song mặt phẳng chiếu, a gặp mặt phẳng chiếu tại đúng một điểm. Mọi điểm của a đều có cùng ảnh là điểm đó.",
+    "skill_ids": [
+      "G11-B14-DEGENERACY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xét đường chiếu qua hai điểm bất kì thuộc a."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B14-P03 · SGK_PRACTICE · `skill_id=G11-B14-DEGENERACY`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Tất cả đường chiếu trùng với a; giao điểm với mặt chiếu là ảnh chung. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P21."
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B14-P04",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Cho hình hộp chữ nhật \\(ABCD.A'B'C'D'\\). Chiếu song song toàn bộ hình chữ nhật \\(ABB'A'\\) (gồm cả phần trong) xuống mặt phẳng đáy \\((ABCD)\\). (a) Theo phương \\(AA'\\), ảnh là hình gì? (b) Theo phương \\(AC'\\), gọi E,F lần lượt là ảnh của A',B'. Hãy xác định vị trí E,F trên mặt phẳng đáy (có thể ngoài hình chữ nhật ABCD) và chứng minh ảnh là hình bình hành không có góc vuông. (c) Nêu điều kiện để ảnh của một hình bình hành không suy biến vẫn là hình bình hành không suy biến.",
+    "answer_key": "(a) Đoạn AB. (b) E đối xứng với C qua A; qua B kẻ đường song song AE, lấy F sao cho \\(BF\\) cùng hướng và bằng \\(AE\\). Ảnh là hình bình hành ABFE, không phải hình chữ nhật. (c) Phương chiếu không song song mặt phẳng chứa hình bình hành.",
+    "worked_solution": "(a) A,B nằm trên mặt chiếu nên bất biến. Các đường chiếu qua A',B' lần lượt là AA',BB', nên A' có ảnh A, B' có ảnh B. Mọi điểm của mặt bên nằm trên một đoạn song song AA' đi từ AB lên A'B', vì vậy ảnh của cả hình là đoạn AB. (b) Phương AC' không song song mặt phẳng đáy. Lấy E đối xứng C qua A. Tứ giác EAC'A' là hình bình hành: EA song song và bằng A'C', đồng thời EA và A'C' cùng hướng. Vì vậy A'E song song AC', nên E là ảnh của A'. Từ B dựng F sao cho đoạn có hướng BF bằng đoạn có hướng AE. Khi đó ABFE là hình bình hành không suy biến vì AE cùng đường AC, không song song AB. Tứ giác A'B'FE là hình bình hành vì A'B' và EF cùng hướng, bằng nhau; do đó B'F song song A'E, tức song song phương chiếu. F là ảnh của B'. Phương AC' không song song mặt bên (ABB'A') vì C' không thuộc mặt bên và A thuộc mặt bên. Bởi vậy hình chiếu không suy biến, các cạnh đối vẫn song song và ảnh của cả hình là hình bình hành ABFE. Đường chéo AC của hình chữ nhật đáy không vuông góc AB, nên AE cũng không vuông góc AB. Vì vậy ảnh không phải hình chữ nhật. (c) Nếu phương chiếu không song song mặt phẳng chứa hình bình hành ban đầu, mỗi đường chiếu gặp mặt ấy nhiều nhất một điểm, nên không có hai điểm phân biệt cùng ảnh và hình bình hành không suy biến. Nếu phương chiếu song song mặt ấy, toàn bộ hình có ảnh trên một đường thẳng, nên suy biến thành đoạn.",
+    "skill_ids": [
+      "G11-B14-PARALLEL_AND_SHAPES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Điểm nằm trên mặt chiếu có ảnh là chính nó.",
+      "Với phương AC', kéo dài đường qua A' song song AC' đến mặt đáy; dùng hình bình hành để xác định E.",
+      "So sánh hai phương chiếu với mặt phẳng chứa mặt bên."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B14-P04 · SGK_PRACTICE · `skill_id=G11-B14-PARALLEL_AND_SHAPES`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Phân biệt mặt phẳng chiếu với mặt phẳng chứa hình cần chiếu; không mặc định phép chiếu giữ góc vuông. Ôn Toán 11 Bài 14; luyện THPT-TOP15-P20."
+  },
+  {
+    "item_id": "THPT-G11-B10-KFT01",
+    "content_version": "SOURCE_BLOB_b55bf3c5122dd967b3b56fe9085eff19e58d509e_AUTHOR_KEY_REVIEW_R01",
+    "stem": "A, B là hai điểm phân biệt thuộc mặt phẳng (P). Nếu C nằm trên đường thẳng AB thì C có thuộc (P) không?",
+    "answer_key": "Có, C∈(P) vì đường thẳng AB nằm trong (P).",
+    "worked_solution": "Có. Theo tính chất cơ bản, nếu hai điểm phân biệt A và B thuộc một mặt phẳng thì toàn bộ đường thẳng AB nằm trong mặt phẳng đó. Vì C∈AB nên C∈(P), kể cả khi C nằm ngoài đoạn AB. Trở về D1 B10 và câu Core THPT-G11-CHIV-B10-C01.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B10-INCIDENCE"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b55bf3c5122dd967b3b56fe9085eff19e58d509e",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-10.md",
+        "blob": "b55bf3c5122dd967b3b56fe9085eff19e58d509e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 40,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-CHIV-B10-C01"
+      ],
+      "distinct_task_reason": "Source asks whether C on AB belongs to (P); existing asks whether whole AB is contained. Same theorem but different requested conclusion."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-B12-KFT01",
+    "content_version": "SOURCE_BLOB_6dc44484c9e12d7dcbf49c40157645ddae577390_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho hình bình hành ABCD nằm trong mặt phẳng đáy (P). Biết AB∥CD và CD⊂(P), có thể kết luận AB song song với (P) không?",
+    "answer_key": "Không; AB nằm trong mặt phẳng đáy, không song song mặt phẳng đó.",
+    "worked_solution": "Không. AB nằm ngay trong (P), vì A và B thuộc (P). Đường thẳng song song với mặt phẳng phải không có điểm chung với mặt phẳng đó. Để suy ra một đường thẳng song song với mặt phẳng từ một đường thẳng song song nằm trong mặt phẳng, phải có thêm điều kiện đường thẳng cần xét không nằm trong mặt phẳng. Trở lại D1 B12 và THPT-G11-CHIV-B12-C01.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B12-POSITIONS",
+      "G11-B12-PARALLEL_TEST"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6dc44484c9e12d7dcbf49c40157645ddae577390",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-12.md",
+        "blob": "6dc44484c9e12d7dcbf49c40157645ddae577390",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 40,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-CHIV-B12-C01",
+        "THPT-G11-CHIV-B12-C02"
+      ],
+      "distinct_task_reason": "Source tests invalid inference from AB∥CD in same base; C01 asks definition only, C02 asks condition without configuration."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-B13-KFT01",
+    "content_version": "SOURCE_BLOB_619162cbe9854188c5873e03a69c3fb5afc95b43_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong tứ diện S.ABC, M,N,K là trung điểm SA,SB,SC. Vì sao (MNK) song song (ABC)?",
+    "answer_key": "(MNK)∥(ABC), vì MN và MK cắt nhau tại M và cùng song song với (ABC).",
+    "worked_solution": "Trong tam giác SAB, M và N là trung điểm SA, SB nên MN∥AB. Trong tam giác SAC, M và K là trung điểm SA, SC nên MK∥AC. Vì (SAB)∩(ABC)=AB và MN∥AB, MN không cắt (ABC), do đó MN∥(ABC). Tương tự, (SAC)∩(ABC)=AC và MK∥AC nên MK∥(ABC). Hai đường thẳng MN, MK phân biệt, cắt nhau tại M và nằm trong (MNK). Theo dấu hiệu nhận biết hai mặt phẳng song song, (MNK)∥(ABC). Trở về D1 B13 và THPT-G11-CHIV-B13-C01.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B13-PLANE_TEST"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "619162cbe9854188c5873e03a69c3fb5afc95b43",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-13.md",
+        "blob": "619162cbe9854188c5873e03a69c3fb5afc95b43",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 40,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-B14-KFT01",
+    "content_version": "SOURCE_BLOB_121b165f6bd95cdfa4c33d4a4def678d9121e81c_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chiếu cạnh AA' của lăng trụ lên mặt đáy (ABC) theo phương AA': ảnh là đoạn hay điểm?",
+    "answer_key": "Ảnh là điểm A.",
+    "worked_solution": "Ảnh là điểm A. Qua mọi điểm X trên cạnh AA′, đường thẳng chiếu theo phương AA′ chính là đường thẳng AA′. Đường này cắt mặt phẳng đáy (ABC) tại A, nên mọi điểm X đều có ảnh là A. Vì vậy cả đoạn AA′ thu về một điểm, không phải một đoạn thẳng. Trở về D1 B14 và THPT-G11-CHIV-B14-C01.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B14-DEGENERACY"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "121b165f6bd95cdfa4c33d4a4def678d9121e81c",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-14.md",
+        "blob": "121b165f6bd95cdfa4c33d4a4def678d9121e81c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 40,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-CHIV-B14-P01",
+        "THPT-G11-CHIV-B14-P03"
+      ],
+      "distinct_task_reason": "Source asks image of entire AA′ and specific point A; existing asks B′ image or generic parallel line collapse."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  }
+]

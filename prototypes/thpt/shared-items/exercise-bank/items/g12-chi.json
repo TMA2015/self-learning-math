@@ -1,0 +1,2303 @@
+[
+  {
+    "item_id": "THPT-G12-CHI-B01-C01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hàm số \\(f(x)=x^2\\) nghịch biến trên khoảng nào trong hai khoảng \\((-\\infty;0)\\), \\((0;+\\infty)\\)?",
+    "answer_key": "Nghịch biến trên \\((-\\infty;0)\\).",
+    "worked_solution": "Nếu \\(x_1<x_2<0\\), thì \\(|x_1|>|x_2|\\), do đó \\(x_1^2>x_2^2\\). Khi biến tăng, giá trị hàm giảm. Trên \\((0;+\\infty)\\), bình phương tăng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B01-MONOTONICITY_MEANING"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "So sánh bình phương của hai số âm, hoặc xét \\(f'=2x\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-C01 | skill_id=G12-B01-MONOTONICITY_MEANING | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nói \\(x^2\\) luôn tăng, thử −2<−1 nhưng 4>1. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-P01."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-C02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho \\(f(x)=x^2-4x+1\\). Xác định dấu \\(f'\\) và khoảng tăng/giảm.",
+    "answer_key": "\\(f'(x)=2x-4\\); \\(f'<0\\) khi \\(x<2\\), \\(f'=0\\) khi \\(x=2\\), \\(f'>0\\) khi \\(x>2\\); nghịch biến (−∞;2), đồng biến (2;+∞).",
+    "worked_solution": "\\(f'(x)=2x-4=2(x-2)\\). Dấu của đạo hàm là dấu của \\(x-2\\): âm trên \\((-\\infty;2)\\), bằng 0 tại 2, dương trên \\((2;+\\infty)\\). Vì vậy hàm nghịch biến trên khoảng thứ nhất và đồng biến trên khoảng thứ hai.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B01-DERIVATIVE_SIGN"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Tách 2(x−2), lập dấu hai phía x=2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-C02 | skill_id=G12-B01-DERIVATIVE_SIGN | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ giải \\(f'=0\\), thử dấu ở x=1 và 3. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-P02."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-C03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(f'\\) đổi dấu + sang − tại x=−1 và − sang + tại x=1. Xác định loại cực trị tại mỗi điểm nếu f liên tục và khả vi quanh chúng.",
+    "answer_key": "Cực đại tại x=−1; cực tiểu tại x=1.",
+    "worked_solution": "Tại \\(x=-1\\), hàm tăng ở bên trái và giảm ở bên phải; vì hàm liên tục tại mốc nên đạt cực đại tại đó. Tại \\(x=1\\), hàm giảm rồi tăng nên đạt cực tiểu. Chưa có dữ kiện để tính giá trị hai cực trị.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B01-EXTREMA_SIGN_CHANGE"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Đọc dấu trước và sau từng mốc."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-C03 | skill_id=G12-B01-EXTREMA_SIGN_CHANGE | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm loại cực trị, vẽ mũi tên tăng rồi giảm hoặc giảm rồi tăng. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-P03."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-C04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(f(x)=x^3\\) có \\(f'(0)=0\\). x=0 có là điểm cực trị không, vì sao?",
+    "answer_key": "Không có cực trị tại x=0.",
+    "worked_solution": "\\(f'(x)=3x^2\\) dương trên cả hai khoảng hai bên 0. Hàm vẫn đồng biến qua 0; cũng có thể kiểm tra \\(f(-h)<f(0)<f(h)\\) với mọi \\(h>0\\). Vậy không có cực trị tại 0.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Xét \\(f'\\) ở hai phía 0, không chỉ tại 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-C04 | skill_id=G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nghĩ \\(f'=0\\) luôn có cực trị, kiểm \\(x^3\\) tăng qua 0. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-P04."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-P01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Với \\(f(x)=\\frac1{x-2}\\), nêu miền xác định và tất cả khoảng nghịch biến, giải thích tại sao phải tách.",
+    "answer_key": "\\(D=\\mathbb R\\setminus\\{2\\}\\); nghịch biến trên (−∞;2) và (2;+∞).",
+    "worked_solution": "Tập xác định \\(D=\\mathbb R\\setminus\\{2\\}\\). Đạo hàm \\(f'(x)=-\\frac1{(x-2)^2}<0\\) trên từng khoảng xác định. Không ghép hai khoảng \\((-\\infty;2)\\), \\((2;+\\infty)\\) qua điểm 2: chẳng hạn \\(1<3\\) nhưng \\(f(1)=-1<1=f(3)\\), trái với điều kiện nghịch biến trên toàn D.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B01-DOMAIN_INTERVALS"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Ghi miền rồi xét dấu riêng hai khoảng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-P01 | skill_id=G12-B01-DOMAIN_INTERVALS | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nối qua 2, thử f(1) và f(3). Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-C02."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-P02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho \\(f'(x)=(x+1)(x-2)\\) trên ℝ. Hãy nêu các khoảng tăng/giảm của f.",
+    "answer_key": "Đồng biến trên (−∞;−1), (2;+∞); nghịch biến trên (−1;2).",
+    "worked_solution": "Các mốc là \\(-1\\) và 2. Hai thừa số cùng dấu ngoài hai mốc nên tích dương; trái dấu giữa hai mốc nên tích âm. Vì vậy hàm đồng biến trên \\((-\\infty;-1)\\), \\((2;+\\infty)\\) và nghịch biến trên \\((-1;2)\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B01-DERIVATIVE_SIGN"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Hai nghiệm của tích chia trục số thành ba khoảng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-P02 | skill_id=G12-B01-DERIVATIVE_SIGN | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm dấu tích, chọn x=0 ở khoảng giữa. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-C02."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-P03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(f(x)=x^3-3x\\). Tìm hoành độ và giá trị của các cực trị.",
+    "answer_key": "Cực đại tại x=−1, giá trị 2; cực tiểu tại x=1, giá trị −2.",
+    "worked_solution": "\\(f'(x)=3x^2-3=3(x+1)(x-1)\\). Dấu đạo hàm lần lượt là +, −, + trên ba khoảng ngăn bởi -1 và 1. Hàm tăng rồi giảm tại -1 nên cực đại \\(f(-1)=2\\); giảm rồi tăng tại 1 nên cực tiểu \\(f(1)=-2\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B01-EXTREMA_SIGN_CHANGE"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Tìm nghiệm \\(f'\\), xét đổi dấu, tính f tại nghiệm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-P03 | skill_id=G12-B01-EXTREMA_SIGN_CHANGE | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ nêu hoành độ, tính cả giá trị cực trị. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-C03."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-P04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hàm \\(f(x)=|x|\\) có cực tiểu tại 0 không, mặc dù \\(f'(0)\\) không tồn tại?",
+    "answer_key": "Có cực tiểu tại x=0, giá trị 0.",
+    "worked_solution": "Với mọi \\(x\\ne0\\), \\(f(x)=|x|>0=f(0)\\), nên 0 là điểm cực tiểu. Đạo hàm tại 0 không tồn tại vì hai đạo hàm một phía là -1 và 1. Điều kiện đạo hàm bằng 0 tại cực trị chỉ bắt buộc khi hàm có đạo hàm tại điểm trong miền, không áp dụng cho mọi cực trị.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "So |x| với |0|; đạo hàm không phải cách duy nhất."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-P04 | skill_id=G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu loại mọi điểm không khả vi, dùng định nghĩa cực tiểu. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-C04."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-A01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Vật có vị trí \\(s(t)=t^3-6t^2+9t\\) m, t≥0 s. Xác định các khoảng thời gian vật chuyển động theo chiều dương và âm.",
+    "answer_key": "Chiều dương khi 0≤t<1 hoặc t>3; chiều âm khi 1<t<3; v=0 tại t=1,3.",
+    "worked_solution": "Vận tốc \\(v(t)=s'(t)=3t^2-12t+9=3(t-1)(t-3)\\) m/s. Trên miền \\(t\\ge0\\), vận tốc dương khi \\(0\\le t<1\\) hoặc \\(t>3\\), âm khi \\(1<t<3\\). Vật chuyển động theo chiều dương hoặc âm tương ứng; tại \\(t=1,3\\) vận tốc bằng 0, vật dừng tức thời.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B01-MOTION_CONTEXT"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Phân tích \\(v(t)=s'(t)\\) thành tích rồi giới hạn t≥0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-A01 | skill_id=G12-B01-MOTION_CONTEXT | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu dùng dấu tọa độ, xem lại dấu vận tốc; phân biệt dừng tức thời với đứng yên. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-P02."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-C01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "f(x)=x trên (0,1) có GTLN bằng 1 không? Giải thích.",
+    "answer_key": "Không có GTLN trên (0;1); 1 không đạt được.",
+    "worked_solution": "Không. Với mỗi \\(x\\in(0;1)\\), đặt \\(y=\\frac{x+1}{2}\\) thì \\(x<y<1\\) và \\(f(y)>f(x)\\). Không có điểm nào cho giá trị lớn nhất. Số 1 là cận trên nhỏ nhất nhưng không được đạt tới.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B02-EXTREMA_GLOBAL_MEANING"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Tìm một số lớn hơn x nhưng vẫn nhỏ hơn 1."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-C01 | skill_id=G12-B02-EXTREMA_GLOBAL_MEANING | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy 1 là GTLN, kiểm 1 không thuộc (0;1). Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-P02."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-C02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hàm liên tục trên [−1,3] có chắc đạt GTNN và GTLN không?",
+    "answer_key": "Có, đạt cả GTLN và GTNN.",
+    "worked_solution": "Định lí về hàm liên tục trên đoạn đóng hữu hạn bảo đảm có ít nhất một điểm đạt GTLN và ít nhất một điểm đạt GTNN. Không nhất thiết đạt ở hai đầu mút; muốn biết vị trí phải có thêm thông tin.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B02-CLOSED_INTERVAL_EXISTENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Kiểm đủ liên tục, đoạn đóng và hữu hạn."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-C02 | skill_id=G12-B02-CLOSED_INTERVAL_EXISTENCE | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu bỏ một giả thiết, đối chiếu phản ví dụ 1/x trên đoạn khuyết. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-P05."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-C03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tìm GTLN/GTNN \\(f(x)=x^2-2x\\) trên [0,4].",
+    "answer_key": "GTLN 8 tại x=4; GTNN −1 tại x=1.",
+    "worked_solution": "Hàm liên tục trên \\([0;4]\\). \\(f'(x)=2x-2=0\\) tại \\(x=1\\). So sánh \\(f(0)=0,\\ f(1)=-1,\\ f(4)=8\\). GTNN bằng -1 tại 1; GTLN bằng 8 tại 4.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B02-CRITICAL_END_POINTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "So f tại hai đầu và nghiệm \\(f'\\) trong đoạn."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-C03 | skill_id=G12-B02-CRITICAL_END_POINTS | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ xét x=1, thêm x=0,4. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-P01."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-C04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trên miền (0,+∞), \\(f(x)=\\frac1x\\) có giá trị nhỏ nhất bằng 0 không?",
+    "answer_key": "Không có GTNN; cũng không có GTLN trên (0;+∞).",
+    "worked_solution": "Mọi \\(x>0\\) đều cho \\(f(x)>0\\), nhưng \\(\\lim_{x\\to+\\infty}f(x)=0\\). Với bất cứ \\(x>0\\), \\(f(2x)<f(x)\\), nên không có GTNN. Tương tự \\(f(x/2)>f(x)\\), nên cũng không có GTLN.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Xét giới hạn khi x tiến tới 0⁺ và +∞."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-C04 | skill_id=G12-B02-OPEN_DOMAIN_NONATTAINMENT | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gọi 0 là GTNN, kiểm 1/x không bao giờ bằng 0. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-P02."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-P01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tìm max/min \\(g(x)=-x^2+4x+2\\) trên [0,5], ghi cả điểm đạt.",
+    "answer_key": "GTLN 6 tại x=2; GTNN −3 tại x=5.",
+    "worked_solution": "Hàm liên tục trên đoạn. \\(g'(x)=-2x+4\\), bằng 0 tại \\(x=2\\). So sánh \\(g(0)=2,\\ g(2)=6,\\ g(5)=-3\\). Vậy GTLN bằng 6 tại 2, GTNN bằng -3 tại 5.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B02-CRITICAL_END_POINTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Tính g tại 0,5 và nghiệm \\(g'=0\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-P01 | skill_id=G12-B02-CRITICAL_END_POINTS | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm GTNN là giá trị tại đỉnh, so các đầu mút. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-C03."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-P02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(f(x)=x^2\\) trên (−1,1) có GTNN? GTLN? Chứng minh.",
+    "answer_key": "GTNN 0 tại x=0; không có GTLN.",
+    "worked_solution": "Với \\(x\\in(-1;1)\\), \\(x^2\\ge0\\) và dấu bằng tại 0 nên GTNN bằng 0. Với bất kì x trong khoảng, chọn \\(y=\\frac{|x|+1}{2}\\); khi đó \\(|x|<y<1\\), suy ra \\(f(y)>f(x)\\). Vì thế không có GTLN, dù giá trị có thể tiến sát 1.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Kiểm x=0 thuộc miền, còn ±1 thì không."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-P02 | skill_id=G12-B02-OPEN_DOMAIN_NONATTAINMENT | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho miền mở không có GTNN, kiểm f(0)=0. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-C01."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-P03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Xét \\(f(x)=\\frac{x}{x^2+1}\\), x≥0. Tìm GTLN, GTNN.",
+    "answer_key": "GTLN 1/2 tại x=1; GTNN 0 tại x=0.",
+    "worked_solution": "\\(f'(x)=\\frac{1-x^2}{(x^2+1)^2}\\). Trên \\((0;1)\\) đạo hàm dương; trên \\((1;+\\infty)\\) đạo hàm âm. Hàm đạt GTLN \\(f(1)=\\frac12\\). Mặt khác, \\(f(x)\\ge0\\) với \\(x\\ge0\\) và \\(f(0)=0\\), nên GTNN bằng 0. Không được suy ra GTNN chỉ từ giới hạn ở vô cực.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B02-CONSTRAINED_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Xét dấu đạo hàm và điều kiện x≥0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-P03 | skill_id=G12-B02-CONSTRAINED_DOMAIN | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ dùng lim f=0, cần chỉ ra x=0 thực sự đạt 0. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-C04."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-P04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trên đoạn [−2;2], \\(f(x)=x^3\\) có GTLN, GTNN và cực trị tại điểm nằm trong khoảng (−2;2) không?",
+    "answer_key": "GTLN 8 tại x=2; GTNN −8 tại x=−2; không có cực trị trong (−2;2).",
+    "worked_solution": "Hàm \\(x^3\\) đồng biến nghiêm ngặt trên toàn đoạn, dù \\(f'(0)=0\\). Vì vậy GTLN là \\(f(2)=8\\), GTNN là \\(f(-2)=-8\\). Không có cực trị trong \\((-2;2)\\), vì hàm không đổi chiều biến thiên. Giá trị lớn nhất, nhỏ nhất trên đoạn khác với cực trị địa phương ở bên trong.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B02-EXTREMA_GLOBAL_MEANING"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Dùng tính tăng của \\(x^3\\) trên đoạn và kiểm x=0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-P04 | skill_id=G12-B02-EXTREMA_GLOBAL_MEANING | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu đồng nhất GTLN với cực đại nội miền, phân biệt hai khái niệm. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-C03."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-P05",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Vì sao \\(f(x)=\\frac1x\\) trên \\([-1;1]\\setminus\\{0\\}\\) không được áp dụng định lý liên tục trên đoạn [−1,1]?",
+    "answer_key": "Không áp dụng được vì hàm không xác định tại 0, không liên tục trên toàn đoạn [−1;1].",
+    "worked_solution": "Định lí cần hàm xác định và liên tục trên toàn đoạn đóng. Điểm 0 không thuộc tập xác định, nên giả thiết không thỏa. Hơn nữa, \\(\\lim_{x\\to0^+}1/x=+\\infty\\) và \\(\\lim_{x\\to0^-}1/x=-\\infty\\), nên không có GTLN hoặc GTNN trên tập đã cho.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B02-CLOSED_INTERVAL_EXISTENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Kiểm hàm tại x=0 trước khi dùng định lý."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-P05 | skill_id=G12-B02-CLOSED_INTERVAL_EXISTENCE | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho tập khuyết một điểm là đoạn đóng đầy đủ, xét 1/x gần 0. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-C02."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-A01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Mảnh vườn chữ nhật chu vi 24 m, hai cạnh dương. Diện tích lớn nhất và có GTNN dương không?",
+    "answer_key": "Diện tích lớn nhất 36 m² khi hai cạnh đều dài 6 m; không có GTNN.",
+    "worked_solution": "Gọi x (m) là một cạnh, cạnh kia dài \\(12-x\\) (m), với \\(0<x<12\\). Diện tích \\(A(x)=x(12-x)=36-(x-6)^2\\le36\\) m². Dấu bằng khi \\(x=6\\), tức vườn là hình vuông cạnh 6 m. Mọi diện tích hợp lệ đều dương nhưng \\(A(x)\\to0\\) khi \\(x\\to0^+\\), nên không có GTNN.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B02-OPTIMIZATION_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Đặt hai cạnh dương, viết tổng bằng 12 rồi hoàn thành bình phương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-A01 | skill_id=G12-B02-OPTIMIZATION_MODEL | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy diện tích 0 ở biên làm GTNN, biên không tạo mảnh vườn hợp lệ. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-P03."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-C01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(\\lim_{x\\to+\\infty}(5+\\frac2{x-1})\\) và phương trình tiệm cận ngang?",
+    "answer_key": "Giới hạn 5; tiệm cận ngang y=5.",
+    "worked_solution": "Khi \\(x\\to+\\infty\\), \\(\\frac2{x-1}\\to0\\). Do đó \\(\\lim_{x\\to+\\infty}(5+\\frac2{x-1})=5\\). Theo định nghĩa, \\(y=5\\) là tiệm cận ngang về phía \\(+\\infty\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B03-HORIZONTAL_LIMIT"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Tách số hạng hằng và phần tiến về 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-C01 | skill_id=G12-B03-HORIZONTAL_LIMIT | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy cả biểu thức làm đường tiệm cận, tính giới hạn của phần phân thức riêng. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P13."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-C02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(f(x)=\\frac1{x+3}\\). Điểm x=−3 có là tiệm cận đứng? Nêu giới hạn hai phía.",
+    "answer_key": "\\(\\lim_{x\\to-3^-} f(x)=-\\infty,\\ \\lim_{x\\to-3^+}f(x)=+\\infty\\); tiệm cận đứng x=−3.",
+    "worked_solution": "Tử số bằng 1, mẫu \\(x+3\\) tiến về 0. Khi \\(x\\to-3^-\\), mẫu âm nên giới hạn bằng \\(-\\infty\\); khi \\(x\\to-3^+\\), mẫu dương nên giới hạn bằng \\(+\\infty\\). Chỉ cần một giới hạn một phía vô cực đã đủ kết luận tiệm cận đứng \\(x=-3\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B03-VERTICAL_ONE_SIDED"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Xét dấu mẫu ở hai phía −3."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-C02 | skill_id=G12-B03-VERTICAL_ONE_SIDED | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu ghi một giới hạn hai phía vô cực không dấu, thử x=−3,1 và −2,9 rồi xét dấu từng bên. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P14."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-C03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(g(x)=x-2+\\frac3{x+1}\\). Tiệm cận xiên khi x→∞?",
+    "answer_key": "Tiệm cận xiên y=x−2.",
+    "worked_solution": "Hiệu giữa hàm và đường thẳng là \\(g(x)-(x-2)=\\frac3{x+1}\\). Hiệu tiến về 0 khi \\(x\\to+\\infty\\), nên \\(y=x-2\\) là tiệm cận xiên. Mẫu số bằng 0 chỉ gợi ý kiểm tra tiệm cận đứng, không xác định đường xiên.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B03-OBLIQUE_REMAINDER"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Tính hiệu g(x)−(x−2)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-C03 | skill_id=G12-B03-OBLIQUE_REMAINDER | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm mẫu với đường xiên, chỉ đường thẳng có hiệu với hàm tiến về 0 mới là tiệm cận xiên. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P15."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-C04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(f(x)=\\frac{x^2-9}{x-3}\\) có tiệm cận đứng x=3 không?",
+    "answer_key": "Không; giới hạn bằng 6, đồ thị thiếu điểm (3;6).",
+    "worked_solution": "Với \\(x\\ne3\\), phân tích tử và rút gọn được \\(f(x)=x+3\\). Vì \\(\\lim_{x\\to3}f(x)=6\\) hữu hạn, không có tiệm cận đứng ở 3. Đồ thị là đường thẳng \\(y=x+3\\) bỏ điểm \\((3;6)\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B03-REMOVABLE_DISCONTINUITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Phân tích tử thành nhân tử và rút gọn với x≠3."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-C04 | skill_id=G12-B03-REMOVABLE_DISCONTINUITY | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu mẫu bằng 0 mà kết luận đứng ngay, tính giới hạn sau rút gọn; hữu hạn nghĩa là lỗ trong trường hợp này. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P16."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(f(x)=\\frac{2x-1}{x+2}\\). Tìm tiệm cận ngang.",
+    "answer_key": "Tiệm cận ngang y=2.",
+    "worked_solution": "Chia tử cho mẫu: \\(f(x)=2-\\frac5{x+2}\\) với \\(x\\ne-2\\). Khi \\(x\\to\\pm\\infty\\), phân số tiến về 0. Vậy \\(y=2\\) là tiệm cận ngang ở cả hai phía.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B03-HORIZONTAL_LIMIT"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Chia tử cho mẫu hoặc chia cả tử và mẫu cho x."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P01 | skill_id=G12-B03-HORIZONTAL_LIMIT | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy hệ số tự do thay hệ số bậc cao nhất, viết f=2−5/(x+2) rồi lấy giới hạn. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P13."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(g(x)=\\frac{x+1}{x-2}\\). Tính giới hạn một bên khi x→2±.",
+    "answer_key": "\\(\\lim_{x\\to2^-}g(x)=-\\infty,\\ \\lim_{x\\to2^+}g(x)=+\\infty\\).",
+    "worked_solution": "Khi \\(x\\to2\\), tử tiến tới 3 dương. Mẫu \\(x-2\\) âm và tiến về 0 từ trái nên giới hạn là \\(-\\infty\\); từ phải mẫu dương nên giới hạn là \\(+\\infty\\). Do đó \\(x=2\\) là tiệm cận đứng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B03-VERTICAL_ONE_SIDED"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Tử tiến về 3 dương; kiểm dấu mẫu ở trái và phải 2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P02 | skill_id=G12-B03-VERTICAL_ONE_SIDED | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu hai phía cùng dấu, thử x=1,9 và 2,1 để thấy mẫu đổi dấu. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P14."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(h(x)=\\frac{x^2+2x+3}{x+1}\\). Tìm tiệm cận xiên và đứng.",
+    "answer_key": "Tiệm cận xiên y=x+1; tiệm cận đứng x=−1.",
+    "worked_solution": "Chia đa thức: \\(h(x)=x+1+\\frac2{x+1}\\) với \\(x\\ne-1\\). Khi \\(x\\to\\pm\\infty\\), hiệu \\(h(x)-(x+1)\\to0\\), nên \\(y=x+1\\) là tiệm cận xiên. Khi \\(x\\to-1^-\\), phân số tiến tới \\(-\\infty\\); từ phải tiến tới \\(+\\infty\\), trong khi \\(x+1\\to0\\). Vì vậy \\(x=-1\\) là tiệm cận đứng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B03-OBLIQUE_REMAINDER"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Chia đa thức, xét phần dư ở vô cực và quanh −1."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P03 | skill_id=G12-B03-OBLIQUE_REMAINDER | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ tìm đường xiên, xét thêm giới hạn vô cực một phía ở nghiệm mẫu. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P15."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(f(x)=\\frac1{\\sqrt{x-1}}\\), D=(1,+∞). x=1 có là tiệm cận đứng dù không thể xét từ bên trái?",
+    "answer_key": "Có, x=1 là tiệm cận đứng vì giới hạn bên phải bằng +∞.",
+    "worked_solution": "Miền xác định chỉ có \\(x>1\\). Khi \\(x\\to1^+\\), \\(\\sqrt{x-1}\\) dương và tiến về 0, nên \\(f(x)\\to+\\infty\\). Một giới hạn một phía vô cực là đủ; không cần xét phía nằm ngoài miền xác định.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B03-DOMAIN_SIDED_LIMITS"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Xác định phía nào thuộc miền trước khi lấy giới hạn."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P04 | skill_id=G12-B03-DOMAIN_SIDED_LIMITS | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu đòi hai giới hạn, nhớ chỉ một giới hạn một phía vô cực trong tập xác định đã đủ. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P17."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P05",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(k(x)=\\frac{x^2-4}{x-2}\\), x≠2. Vẽ mô tả đồ thị có nên vẽ chấm đặc tại (2,4)?",
+    "answer_key": "Không vẽ chấm đặc; đồ thị là đường y=x+2 bỏ điểm (2;4).",
+    "worked_solution": "Với \\(x\\ne2\\), \\(k(x)=x+2\\). Tuy nhiên biểu thức ban đầu không xác định tại 2, nên điểm \\((2;4)\\) phải được bỏ khỏi đồ thị, không vẽ chấm đặc.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B03-REMOVABLE_DISCONTINUITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Rút gọn biểu thức nhưng giữ x≠2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P05 | skill_id=G12-B03-REMOVABLE_DISCONTINUITY | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu vẽ chấm đặc, thay x=2 vào biểu thức gốc: không xác định, chỉ có điểm khuyết. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P16."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P06",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho \\(f(x)=3-\\frac7{x-2}\\). Xác định hai tiệm cận của đồ thị, vị trí mỗi nhánh so với tiệm cận ngang và chiều đi của mỗi nhánh khi tiến sát tiệm cận đứng.",
+    "answer_key": "Tiệm cận đứng \\(x=2\\), ngang \\(y=3\\). Nhánh trái ở trên \\(y=3\\) và tiến tới \\(+\\infty\\) khi \\(x\\to2^-\\); nhánh phải ở dưới \\(y=3\\) và tiến tới \\(-\\infty\\) khi \\(x\\to2^+\\).",
+    "worked_solution": "Miền xác định là \\(\\mathbb R\\setminus\\{2\\}\\). Khi \\(x\\to\\pm\\infty\\), phần dư \\(-\\frac7{x-2}\\to0\\), nên \\(y=3\\) là tiệm cận ngang. Khi \\(x<2\\), phần dư dương nên nhánh trái nằm trên đường ngang; khi \\(x>2\\), phần dư âm nên nhánh phải nằm dưới. Gần \\(x=2\\), mẫu tiến về 0 từ phía âm hoặc dương: \\(\\lim_{x\\to2^-} f(x)=+\\infty\\), \\(\\lim_{x\\to2^+} f(x)=-\\infty\\). Do đó \\(x=2\\) là tiệm cận đứng. Hai nhánh tách rời; không sao chép vị trí nhánh của trường hợp phần dư dương trong ví dụ bài giảng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B03-GRAPH_INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Xét dấu của \\(f(x)-3=-\\frac7{x-2}\\) trên hai khoảng, rồi xét giới hạn ở xa và gần x=2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P06 | skill_id=G12-B03-GRAPH_INTERPRETATION | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu đảo hai nhánh, thử \\(f(1)=10\\) và \\(f(3)=-4\\), so với 3 rồi xét mẫu tiến về 0. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P18."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P07",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(f(x)=\\frac{x}{\\sqrt{x^2+1}}\\) có bao nhiêu đường tiệm cận ngang? Phía nào?",
+    "answer_key": "Hai tiệm cận ngang: y=1 về phía +∞, y=−1 về phía −∞.",
+    "worked_solution": "Với \\(x\\ne0\\), viết \\(f(x)=\\frac{x/|x|}{\\sqrt{1+1/x^2}}\\). Khi \\(x\\to+\\infty\\), tử bằng 1 và mẫu tiến tới 1; khi \\(x\\to-\\infty\\), tử bằng -1. Do đó hai tiệm cận ngang lần lượt là \\(y=1\\) ở phía phải và \\(y=-1\\) ở phía trái. Nhớ \\(\\sqrt{x^2}=|x|\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B03-HORIZONTAL_LIMIT"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Tách \\(\\sqrt{x^2}\\) thành |x| ở cả hai phía."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P07 | skill_id=G12-B03-HORIZONTAL_LIMIT | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho hai giới hạn bằng 1, viết x/|x| tại x âm và x dương. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P13."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-A01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chi phí trung bình đơn vị \\(C(q)=20+\\frac{120}{q}\\) (nghìn đồng/sp), q>0. Phân tích q→+∞ và q→0+, chỉ ra tiệm cận; ý nghĩa mô hình.",
+    "answer_key": "C(q)→20 khi q→+∞, C(q)→+∞ khi q→0⁺; tiệm cận ngang C=20, đứng q=0; q=0 không có chi phí trung bình xác định.",
+    "worked_solution": "Trong mô hình liên tục \\(q>0\\), \\(\\lim_{q\\to+\\infty}C(q)=20\\) nghìn đồng/sản phẩm, nên đường \\(C=20\\) là tiệm cận ngang. Khi \\(q\\to0^+\\), phần \\(120/q\\to+\\infty\\), nên \\(q=0\\) là tiệm cận đứng. Với q hữu hạn dương, chi phí trung bình luôn lớn hơn 20. Sản lượng 0 không có chi phí trung bình xác định; nếu q là số sản phẩm nguyên, giới hạn tại 0 chỉ thuộc phần mở rộng liên tục của mô hình.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B03-DOMAIN_SIDED_LIMITS"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Xét q lớn và q dương rất nhỏ; phân biệt mô hình liên tục với sản lượng nguyên."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-A01 | skill_id=G12-B03-DOMAIN_SIDED_LIMITS | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho chi phí đạt 20 hoặc q=0 hợp lệ, xét 120/q>0 ở q hữu hạn dương và mẫu ở 0. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P17."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-C01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Khi khảo sát \\(f(x)=\\frac{x+1}{x-2}\\), cần xác định D trước hay giao Ox trước, vì sao?",
+    "answer_key": "Xác định tập xác định trước: \\(D=\\mathbb R\\setminus\\{2\\}\\).",
+    "worked_solution": "Mẫu bằng 0 tại 2 nên phải loại điểm này. Sau đó mới tìm giao với các trục, cực trị và giới hạn trên từng khoảng của miền. Một nghiệm của phương trình tìm giao điểm chỉ được nhận nếu thuộc miền xác định.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B04-SURVEY_WORKFLOW"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Tìm điều kiện mẫu khác 0 trước mọi thao tác."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-C01 | skill_id=G12-B04-SURVEY_WORKFLOW | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu vẽ điểm tại 2, kiểm tập xác định trước cả đạo hàm và giao trục. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P19."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-C02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(f(x)=x^3-3x^2\\) có mấy cực trị và ở đâu?",
+    "answer_key": "Hai cực trị: cực đại tại x=0, giá trị 0; cực tiểu tại x=2, giá trị −4.",
+    "worked_solution": "\\(f'(x)=3x(x-2)\\), bằng 0 tại 0 và 2. Dấu lần lượt +, −, + trên \\((-\\infty;0)\\), \\((0;2)\\), \\((2;+\\infty)\\). Hàm đạt cực đại \\(f(0)=0\\), cực tiểu \\(f(2)=-4\\); hai điểm trên đồ thị là \\((0;0)\\) và \\((2;-4)\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B04-CUBIC_VARIATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Phân tích đạo hàm thành 3x(x−2)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-C02 | skill_id=G12-B04-CUBIC_VARIATION | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gọi mọi nghiệm đạo hàm là cực trị, lập dấu +,−,+ rồi tính riêng f ở hai nghiệm. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P20."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-C03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(g(x)=\\frac{x+2}{x-1}\\), xác định các khoảng giảm.",
+    "answer_key": "Nghịch biến trên (−∞;1) và (1;+∞).",
+    "worked_solution": "\\(g'(x)=-\\frac3{(x-1)^2}<0\\) với \\(x\\ne1\\). Theo dấu đạo hàm, hàm nghịch biến riêng trên \\((-\\infty;1)\\) và \\((1;+\\infty)\\); không ghép qua điểm bị loại.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B04-RATIONAL_VARIATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Tìm miền và đạo hàm của phân thức."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-C03 | skill_id=G12-B04-RATIONAL_VARIATION | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gộp hai khoảng qua 1, kiểm rằng 1 không thuộc miền và thử hai điểm ở hai phía. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P21."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-C04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(f(x)=\\frac{x+2}{x-1}\\) cắt trục Ox và Oy ở đâu?",
+    "answer_key": "Giao Ox tại (−2;0); giao Oy tại (0;−2).",
+    "worked_solution": "Tập xác định \\(D=\\mathbb R\\setminus\\{1\\}\\). Giao Ox: đặt \\(y=0\\), suy ra \\(x+2=0\\), tức \\(x=-2\\) hợp lệ, được \\((-2;0)\\). Giao Oy: đặt \\(x=0\\), được \\(y=-2\\), tức \\((0;-2)\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B04-INTERCEPTS_LIMITS"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Giao Ox đặt y=0; giao Oy đặt x=0, kiểm miền."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-C04 | skill_id=G12-B04-INTERCEPTS_LIMITS | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu đổi hoành/tung, ghi tọa độ (x;y) sau khi thay đúng biến. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P22."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-P01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tâm đối xứng của \\(y=2+\\frac5{x-4}\\)?",
+    "answer_key": "Tâm đối xứng I(4;2).",
+    "worked_solution": "Hai tiệm cận là \\(x=4,\\ y=2\\). Đặt \\(X=x-4,\\ Y=y-2\\), phương trình trở thành \\(Y=5/X\\) với \\(X\\ne0\\). Nếu \\((X;Y)\\) thuộc đồ thị mới thì \\((-X;-Y)\\) cũng thuộc, nên đồ thị đối xứng qua gốc mới, tức tâm \\(I(4;2)\\) trong hệ ban đầu.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B04-CENTER_SYMMETRY"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Đặt X=x−4, Y=y−2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-P01 | skill_id=G12-B04-CENTER_SYMMETRY | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ đoán từ hình, chứng minh Y=5/X bất biến khi đổi (X,Y) thành (−X,−Y). Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P23."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-P02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một hàm số liên tục, khả vi trên \\(\\mathbb R\\) có bảng biến thiên sau (mũi tên biểu thị chiều biến thiên):\n\\[\\begin{array}{c|ccccc}x&-\\infty&-1&&3&+\\infty\\\\\\hline f'&+&0&-&0&+\\\\\\hline f&-\\infty\\nearrow&4&\\searrow&-2&\\nearrow+\\infty\\end{array}\\]\n(a) Đọc các khoảng đồng biến, nghịch biến và các điểm cực trị. (b) Trên đoạn [-1;3], xác định GTLN, GTNN. Các giá trị này có phải GTLN, GTNN trên toàn \\(\\mathbb R\\) không?",
+    "answer_key": "Đồng biến trên \\((-\\infty;-1)\\) và \\((3;+\\infty)\\), nghịch biến trên \\((-1;3)\\). Cực đại \\((-1;4)\\), cực tiểu \\((3;-2)\\) trên đồ thị. Trên [-1;3], GTLN 4 và GTNN -2; trên \\(\\mathbb R\\) không có GTLN, GTNN.",
+    "worked_solution": "Đọc hàng dấu đạo hàm và hàng mũi tên: hàm tăng đến x=-1, giảm từ -1 tới 3, rồi tăng tiếp. Tại x=-1, dấu đổi từ + sang -, nên hàm đạt cực đại, giá trị 4; tại x=3, dấu đổi từ - sang +, nên đạt cực tiểu, giá trị -2. Trên đoạn [-1;3], hàm liên tục và giảm, vì vậy mọi giá trị nằm giữa -2 và 4, hai đầu mút đạt các giá trị đó. Nhưng hàng cuối còn cho \\(\\lim_{x\\to-\\infty}f(x)=-\\infty\\) và \\(\\lim_{x\\to+\\infty}f(x)=+\\infty\\); vì vậy trên toàn miền không có GTLN hoặc GTNN. Cực trị địa phương không mặc nhiên là cực trị toàn miền.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B04-READ_VARIATION_TABLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Đọc cả hàng dấu và hàng giá trị hàm; khi tìm GTLN, GTNN, chú ý miền đang xét."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-P02 | skill_id=G12-B04-READ_VARIATION_TABLE | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gọi 4 là GTLN trên toàn miền, xem mũi tên cuối về dương vô cực; nếu gọi -2 là GTNN toàn miền, xem đầu trái. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P24."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-P03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Với \\(y=1+\\frac2{x+1}\\), có nên nối hai nhánh qua x=−1?",
+    "answer_key": "Không; x=−1 không thuộc tập xác định và là tiệm cận đứng.",
+    "worked_solution": "Tập xác định \\(D=\\mathbb R\\setminus\\{-1\\}\\). Khi \\(x\\to-1^-\\), \\(y\\to-\\infty\\); khi \\(x\\to-1^+\\), \\(y\\to+\\infty\\). Đường \\(x=-1\\) là tiệm cận đứng, không có điểm đồ thị tại đó, nên phải vẽ hai nhánh riêng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B04-DOMAIN_NONCONNECT"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Kiểm miền và giới hạn khi x→−1 từ từng phía."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-P03 | skill_id=G12-B04-DOMAIN_NONCONNECT | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nối hai nhánh, chỉ ra không có điểm đồ thị nào có hoành độ −1. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P25."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-P04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(h(x)=-x^3+3x\\), tìm các khoảng tăng/giảm và cực trị.",
+    "answer_key": "Đồng biến trên (−1;1); nghịch biến trên (−∞;−1), (1;+∞); cực tiểu tại x=−1, giá trị −2; cực đại tại x=1, giá trị 2.",
+    "worked_solution": "\\(h'(x)=3(1-x^2)\\), bằng 0 tại -1 và 1. Dấu lần lượt âm, dương, âm. Hàm nghịch biến trên \\((-\\infty;-1)\\), \\((1;+\\infty)\\), đồng biến trên \\((-1;1)\\). Cực tiểu \\(h(-1)=-2\\), cực đại \\(h(1)=2\\). Hai cực trị không phải GTNN và GTLN trên toàn \\(\\mathbb R\\), vì hàm không bị chặn.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B04-CUBIC_VARIATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Giải \\(h'=0\\), lập dấu trên ba khoảng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-P04 | skill_id=G12-B04-CUBIC_VARIATION | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gọi cực trị địa phương là GTLN/GTNN toàn ℝ, kiểm giới hạn ở ±∞. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P20."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-P05",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(y=x^3-3x^2\\) cắt hay tiếp xúc Ox tại x=0 và tại x=3?",
+    "answer_key": "Tiếp xúc Ox tại (0;0); cắt Ox tại (3;0).",
+    "worked_solution": "\\(y=x^2(x-3)\\). Gần 0, \\(x-3<0\\), còn \\(x^2>0\\) khi \\(x\\ne0\\), nên đồ thị ở dưới Ox cả hai phía. Do \\(y(0)=0\\), \\(y'(0)=0\\), đồ thị tiếp xúc Ox tại \\((0;0)\\). Gần 3, \\(x^2>0\\) còn \\(x-3\\) đổi dấu, nên đồ thị cắt Ox tại \\((3;0)\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B04-INTERCEPTS_LIMITS"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Phân tích \\(x^2(x-3)\\), kiểm dấu trước và sau mỗi nghiệm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-P05 | skill_id=G12-B04-INTERCEPTS_LIMITS | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nghĩ mọi giao điểm đều cắt trục, xét dấu ở hai phía của nghiệm bội chẵn x=0. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P22."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-P06",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tâm đối xứng đồ thị \\(y=x^3-3x^2\\)?",
+    "answer_key": "Tâm đối xứng I(1;−2).",
+    "worked_solution": "Đặt \\(x=1+u\\), ta có \\(f(1+u)=u^3-3u-2\\). Vì \\(f(1+u)+f(1-u)=-4\\), hai điểm có hoành độ \\(1+u\\) và \\(1-u\\) luôn có trung điểm \\(I(1;-2)\\). Vậy I là tâm đối xứng, không phải điểm cực đại.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B04-CENTER_SYMMETRY"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Đặt x=1+u rồi kiểm f(1+u)+f(1−u)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-P06 | skill_id=G12-B04-CENTER_SYMMETRY | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm tâm với cực đại, lấy trung điểm hai điểm đối xứng để chứng minh tâm (1;−2). Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P23."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-A01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chi phí bình quân \\(f(q)=4+\\frac{200}{q-10}\\) cho q>10 đơn vị. Tính giới hạn q→10+, q→∞ và nhận định chi phí theo q.",
+    "answer_key": "Giới hạn +∞ khi q→10⁺, giới hạn 4 khi q→+∞; chi phí giảm trên (10;+∞), luôn lớn hơn 4.",
+    "worked_solution": "Với \\(q>10\\), \\(f'(q)=-\\frac{200}{(q-10)^2}<0\\) nên chi phí bình quân giảm. Khi \\(q\\to10^+\\), mẫu dương tiến về 0 nên \\(f(q)\\to+\\infty\\); khi \\(q\\to+\\infty\\), \\(f(q)\\to4\\). Chi phí luôn lớn hơn 4 trên miền hợp lệ, không đạt giới hạn đó. Nếu q nguyên, giới hạn tại \\(10^+\\) chỉ mô tả phần mở rộng liên tục.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B04-RATIONAL_VARIATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Đạo hàm trên q>10 và xét hai giới hạn."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-A01 | skill_id=G12-B04-RATIONAL_VARIATION | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gọi 4 là giá trị nhỏ nhất đạt được, kiểm phần 200/(q−10) luôn dương. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P21."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-A02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Người học vẽ \\(y=x^3-3x^2\\) đi từ +∞ ở x→−∞ và tăng liên tục tới +∞. Chỉ ra hai lỗi từ dữ liệu khảo sát.",
+    "answer_key": "Khi x→−∞, y→−∞; hàm nghịch biến trên (0;2), không đồng biến toàn ℝ.",
+    "worked_solution": "Hệ số bậc ba dương nên \\(\\lim_{x\\to-\\infty}(x^3-3x^2)=-\\infty\\), không phải \\(+\\infty\\). Đạo hàm \\(y'=3x(x-2)\\) âm trên \\((0;2)\\), nên đồ thị đi xuống từ cực đại đến cực tiểu; không tăng liên tục.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B04-SURVEY_WORKFLOW"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Kiểm hệ số bậc ba và dấu đạo hàm giữa 0 và 2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-A02 | skill_id=G12-B04-SURVEY_WORKFLOW | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu vẽ đường tăng liên tục, thử f(0)=0 và f(2)=−4 để thấy một đoạn giảm. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P19."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-C01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Đại lượng \\(f(x)=2x^2+3\\) đo bằng mét, biến x đo bằng giây. Tính \\(f'(2)\\) và đơn vị.",
+    "answer_key": "\\(f'(2)=8\\) m/s.",
+    "worked_solution": "\\(f'(x)=4x\\), nên \\(f'(2)=8\\) m/s. Đạo hàm đo tốc độ thay đổi tức thời của đại lượng theo thời gian. Nếu đại lượng là tọa độ của vật thì đây là vận tốc, không phải gia tốc.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-RATE_INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Lấy đạo hàm rồi chia đơn vị đại lượng cho đơn vị biến."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-C01 | skill_id=G12-B05-RATE_INTERPRETATION | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu ghi m/s², nhớ đây là đạo hàm bậc nhất của đại lượng đo bằng mét theo giây. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P26."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-C02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "\\(s(t)=t^2-4t+5\\) m, t≥0 s. Vận tốc/tốc độ tại t=1?",
+    "answer_key": "Vận tốc −2 m/s (chiều âm); tốc độ 2 m/s.",
+    "worked_solution": "\\(v(t)=s'(t)=2t-4\\), do đó \\(v(1)=-2\\) m/s. Dấu âm chỉ chiều chuyển động ngược chiều dương; tốc độ là độ lớn của vận tốc, bằng 2 m/s.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-MOTION_SPEED_ACCELERATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Tính \\(v=s'\\), tốc độ là |v|."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-C02 | skill_id=G12-B05-MOTION_SPEED_ACCELERATION | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu ghi tốc độ âm, tách dấu vận tốc chỉ hướng và trị tuyệt đối là tốc độ. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P27."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-C03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tổng chi phí sản xuất q sản phẩm được mô tả bởi \\(C(q)=q^2+10q+100\\) (nghìn đồng). Tính chi phí cận biên tại q=5.",
+    "answer_key": "\\(C'(5)=20\\) nghìn đồng/sản phẩm.",
+    "worked_solution": "\\(C'(q)=2q+10\\), nên \\(C'(5)=20\\) nghìn đồng/sản phẩm. Đó là tốc độ thay đổi tức thời của tổng chi phí theo sản lượng trong mô hình liên tục, xấp xỉ mức tăng chi phí cho một sản phẩm bổ sung, không phải tổng chi phí tại 5.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-MARGINAL_COST"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [
+      "Lấy \\(C'\\) tại q=5 và kiểm đơn vị."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-C03 | skill_id=G12-B05-MARGINAL_COST | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu thay trực tiếp vào C, nhớ đề hỏi tốc độ biến thiên chi phí, không phải tổng chi phí. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P28."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-C04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tấm bìa hình chữ nhật kích thước 30 cm × 20 cm. Cắt bỏ ở mỗi góc một hình vuông cạnh x cm, rồi gấp thành hộp không nắp. Tìm miền x để hộp không suy biến.",
+    "answer_key": "0<x<10 cm.",
+    "worked_solution": "Chiều cao hộp là x, hai cạnh đáy là \\(30-2x\\) và \\(20-2x\\) (cm). Cả ba kích thước phải dương: \\(x>0,\\ x<15,\\ x<10\\). Giao các điều kiện cho \\(0<x<10\\) cm. Hai đầu miền cho hình suy biến.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-MODEL_VARIABLE_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Cả chiều cao và hai cạnh đáy phải dương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-C04 | skill_id=G12-B05-MODEL_VARIABLE_DOMAIN | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho x=10, chiều rộng đáy bằng 0, hộp suy biến; lấy giao ba điều kiện. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P29."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-P01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Từ \\(f(x)=x^3\\) cm với x phút, f'(2) và ý nghĩa x tăng rất nhỏ?",
+    "answer_key": "\\(f'(2)=12\\) cm/phút; khi x tăng một lượng nhỏ Δx, \\(\\Delta f\\approx12\\Delta x\\) cm (Δx tính bằng phút).",
+    "worked_solution": "\\(f'(x)=3x^2\\), do đó \\(f'(2)=12\\) cm/phút. Khi x tăng từ 2 thêm lượng nhỏ \\(\\Delta x\\) phút, \\(\\Delta f\\approx12\\Delta x\\) cm. Đây là xấp xỉ tại một thời điểm, không phải mức tăng chính xác trong mọi khoảng một phút.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-RATE_INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Tính \\(f'(2)\\), dùng \\(\\Delta f\\approx f'(2)\\Delta x\\) với Δx nhỏ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-P01 | skill_id=G12-B05-RATE_INTERPRETATION | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu hiểu 12 là mức tăng chính xác mỗi phút, phân biệt tốc độ tức thời và sai phân hữu hạn. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P26."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-P02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Vật có v(t)=t−3 m/s, a=1 m/s². Ở t=2 tốc độ đang tăng hay giảm? Tại t=3 có thể kết luận chỉ bằng dấu a?",
+    "answer_key": "Tại t=2 tốc độ đang giảm; tại t=3 tốc độ bằng 0, không suy chiều biến thiên chỉ từ dấu gia tốc.",
+    "worked_solution": "Tại \\(t=2\\), \\(v(2)=-1\\) m/s còn \\(a=1\\) m/s². Vận tốc âm đang tiến về 0, nên tốc độ giảm. Cụ thể tốc độ \\(|t-3|\\) giảm trước 3, bằng 0 tại 3 rồi tăng sau 3. Tại 3, tốc độ không có đạo hàm hai phía; dấu dương của gia tốc không đủ để khẳng định tốc độ tăng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-MOTION_SPEED_ACCELERATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "So dấu v và a, rồi xét riêng lúc v=0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-P02 | skill_id=G12-B05-MOTION_SPEED_ACCELERATION | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu a dương mà kết luận tốc độ luôn tăng, viết tốc độ |t−3| trước và sau t=3. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P27."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-P03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tổng chi phí \\(C(q)=0{,}02q^2+5q+1200\\) (nghìn đồng), với q là số sản phẩm. Tính và so sánh \\(C'(100)\\) với chi phí tăng thêm C(101)−C(100), ghi rõ đơn vị.",
+    "answer_key": "\\(C'(100)=9\\) nghìn đồng/sản phẩm; C(101)−C(100)=9,02 nghìn đồng.",
+    "worked_solution": "\\(C'(q)=0{,}04q+5\\), nên \\(C'(100)=9\\) nghìn đồng/sản phẩm. Chi phí tăng thêm thực tế theo mô hình là \\(C(101)-C(100)=0{,}02(101^2-100^2)+5=9{,}02\\) nghìn đồng. Đạo hàm chỉ xấp xỉ mức tăng với bước một sản phẩm; hai đại lượng có đơn vị khác nhau.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-MARGINAL_COST"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Tính riêng \\(C'(100)\\) và C(101)−C(100)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-P03 | skill_id=G12-B05-MARGINAL_COST | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho hai giá trị bằng nhau, dùng hiệu \\(101^2-100^2=201\\); kiểm đơn vị của mỗi đại lượng. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P28."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-P04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tối đa hóa \\(f(x)=-x^2+8x-3\\), 0≤x≤6.",
+    "answer_key": "GTLN 13 tại x=4.",
+    "worked_solution": "Hàm liên tục trên \\([0;6]\\). Hoàn thành bình phương: \\(f(x)=13-(x-4)^2\\le13\\). Dấu bằng khi \\(x=4\\), thuộc đoạn đã cho. Vậy GTLN bằng 13.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-OPTIMIZATION_DERIVATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "So giá trị tại nghiệm đạo hàm và hai đầu đoạn."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-P04 | skill_id=G12-B05-OPTIMIZATION_DERIVATIVE | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ giải \\(f'=0\\), lập bảng ba giá trị để xác nhận GTLN trên đoạn đóng. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P30."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-P05",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Thể tích hộp không nắp gấp từ tấm bìa 30 cm × 20 cm bằng \\(V(x)=x(30-2x)(20-2x)\\) cm³, trong đó x (cm) là cạnh hình vuông cắt ở mỗi góc. Tại x=10 có thể gọi V=0 là thể tích nhỏ nhất của một hộp không suy biến tạo được không?",
+    "answer_key": "Không; miền hộp không suy biến là 0<x<10, thể tích tiến về 0 nhưng không đạt 0; không có GTNN.",
+    "worked_solution": "Hộp không suy biến cần \\(x>0,\\ 30-2x>0,\\ 20-2x>0\\), tức \\(0<x<10\\). Tại 10, chiều rộng đáy bằng 0 nên không còn hộp. Trên miền hợp lệ \\(V(x)>0\\), nhưng thể tích tiến về 0 khi \\(x\\to10^-\\) hoặc \\(x\\to0^+\\). Vậy không có GTNN; 0 không đạt được.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-BOUNDARY_FEASIBILITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Xác định miền hộp không suy biến và xét giới hạn biên."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-P05 | skill_id=G12-B05-BOUNDARY_FEASIBILITY | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy 0 là GTNN, hỏi có x nào trong (0,10) cho V=0 không. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P31."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-P06",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Nếu diện tích A(x) đo bằng m² và x bằng m, đơn vị A'(x) là gì? Có được gọi A' là vận tốc không?",
+    "answer_key": "Đơn vị m; không phải vận tốc vì x không phải thời gian.",
+    "worked_solution": "Đạo hàm theo độ dài có đơn vị \\(\\mathrm{m}^2/\\mathrm m=\\mathrm m\\). Nó đo mức thay đổi diện tích khi độ dài thay đổi, không phải vận tốc vì biến độc lập không phải thời gian.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-UNIT_ASSUMPTION_CHECK"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Đơn vị đạo hàm là đơn vị tử chia đơn vị biến."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-P06 | skill_id=G12-B05-UNIT_ASSUMPTION_CHECK | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gọi \\(A'\\) là vận tốc, kiểm biến độc lập x đo độ dài chứ không đo thời gian. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P32."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-A01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Quây một mảnh vườn hình chữ nhật sát bức tường thẳng bằng 40 m hàng rào cho đúng ba cạnh, không rào cạnh sát tường. Tìm hai kích thước để diện tích vườn lớn nhất.",
+    "answer_key": "Hai cạnh vuông góc tường dài 10 m mỗi cạnh, cạnh song song tường dài 20 m; diện tích lớn nhất 200 m².",
+    "worked_solution": "Gọi x là độ dài mỗi cạnh vuông góc tường, y là cạnh song song tường (m). Chỉ rào ba cạnh nên \\(2x+y=40\\), tức \\(y=40-2x\\) và \\(0<x<20\\). Diện tích \\(A(x)=40x-2x^2=200-2(x-10)^2\\le200\\) m². Dấu bằng khi \\(x=10\\), suy ra \\(y=20\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-OPTIMIZATION_DERIVATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [
+      "Ràng buộc ba cạnh 2x+y=40, rồi lập A(x)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-A01 | skill_id=G12-B05-OPTIMIZATION_DERIVATIVE | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu dùng 2x+2y, vẽ cạnh sát tường không cần rào; kiểm miền dương trước tối ưu. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P30."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-A02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Mô hình giá \\(p(q)=30-0{,}1q\\), q≥0 và không cho giá âm. Miền q nào hợp lệ?",
+    "answer_key": "0≤q≤300; nếu q là số sản phẩm nguyên, q∈{0,1,…,300}.",
+    "worked_solution": "Điều kiện \\(q\\ge0\\) và \\(30-0{,}1q\\ge0\\) cho \\(0\\le q\\le300\\). Nếu q biểu thị số sản phẩm nguyên thì lấy các số nguyên từ 0 đến 300. Điểm 300 được phép vì đề chỉ loại giá âm, không loại giá bằng 0.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-MODEL_VARIABLE_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Kết hợp q≥0 và p(q)≥0; xét q nguyên nếu là sản phẩm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-A02 | skill_id=G12-B05-MODEL_VARIABLE_DOMAIN | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu loại 300, đề cho phép giá bằng 0; nếu q nguyên, chuyển đoạn thành tập các số nguyên. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P29."
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-A03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Lợi nhuận \\(P(q)=20q-0{,}1q^2-400\\) (nghìn đồng), 0≤q≤300. Nếu tính được q=100, lợi nhuận tối đa là bao nhiêu và với đơn vị nào?",
+    "answer_key": "Lợi nhuận lớn nhất 600 nghìn đồng tại q=100 sản phẩm.",
+    "worked_solution": "\\(P'(q)=20-0{,}2q\\), bằng 0 tại 100. Đạo hàm dương trước 100, âm sau 100 trên miền \\([0;300]\\), nên lợi nhuận đạt GTLN tại 100. \\(P(100)=2000-1000-400=600\\) nghìn đồng. Sản lượng 100 là số nguyên hợp lệ nếu bài toán yêu cầu sản lượng nguyên.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-B05-UNIT_ASSUMPTION_CHECK"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [
+      "Tìm nghiệm \\(P'\\) và kiểm miền, phân biệt q với P(q)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-A03 | skill_id=G12-B05-UNIT_ASSUMPTION_CHECK | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu trả 100 nghìn đồng, 100 là sản lượng; thay vào P để tìm lợi nhuận. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P32."
+  },
+  {
+    "item_id": "THPT-G12-B01-KFT01",
+    "content_version": "SOURCE_BLOB_64f6a142a88e8c4dd63dff3f7d2220787fcdec5c_AUTHORING_ANSWER_DRAFT",
+    "stem": "Với f′(x) dương trước x0 và âm sau x0, hàm sẽ chuyển hướng như thế nào? Trả lời bằng lời trước khi đọc phần Core; không có điểm chính thức.",
+    "answer_key": "Tăng trước x₀, giảm sau x₀; nếu liên tục tại x₀ thì đạt cực đại tại đó.",
+    "worked_solution": "Dấu f′ dương cho biết f tăng trên khoảng bên trái, dấu âm cho biết f giảm trên khoảng bên phải. Nếu x₀ thuộc miền xác định và f liên tục tại đó, f(x₀) lớn hơn các giá trị đủ gần ở hai bên, nên là giá trị cực đại. Chỉ dấu đạo hàm hai phía mà thiếu điều kiện tại x₀ chưa đủ kết luận cực trị.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B01-EXTREMA_SIGN_CHANGE",
+      "G12-B01-DERIVATIVE_SIGN"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+      "heading_id": "Tự thử A",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md",
+        "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử A",
+      "line": 72,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B01-C03",
+        "THPT-G12-CHI-B04-P02"
+      ],
+      "distinct_task_reason": "General sign change at x0 versus two fixed critical points and explicit continuity assumptions."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B01-KFT03",
+    "content_version": "SOURCE_BLOB_64f6a142a88e8c4dd63dff3f7d2220787fcdec5c_AUTHORING_ANSWER_DRAFT_AUTHOR_REVIEW_R01",
+    "stem": "Xét f(x)=1/(x−1) với x≠1. Từ f′(x)<0, có thể kết luận f nghịch biến trên cả miền xác định không? Hãy tính và so sánh f(0), f(2).",
+    "answer_key": "Không. f(0)=−1<f(2)=1 dù 0<2; f chỉ nghịch biến trên từng khoảng (−∞;1) và (1;+∞).",
+    "worked_solution": "f′(x)=−1/(x−1)²<0 với x≠1, nên f nghịch biến trên mỗi khoảng (−∞;1) và (1;+∞). Nhưng f(0)=−1, f(2)=1 và 0<2. Điều này trái với yêu cầu f(0)>f(2) nếu f nghịch biến trên cả miền xác định. Vì vậy không được ghép hai khoảng qua điểm x=1 bị loại; dấu đạo hàm chỉ bảo đảm tính đơn điệu trên từng khoảng.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B01-DOMAIN_INTERVALS"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+      "heading_id": "Tự thử C",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md",
+        "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử C",
+      "line": 76,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B01-P01"
+      ],
+      "distinct_task_reason": "Same disconnected-domain principle, existing pole x=2; source pole x=1 and no specific formula to evaluate at 0 and 2."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B02-KFT01",
+    "content_version": "SOURCE_BLOB_d6e517a980ec9259345285964f4c42767faa6122_AUTHORING_ANSWER_DRAFT",
+    "stem": "Hàm có cực đại tại x=2 nhưng liên tục trên [0,5], giá trị ở x=5 cao hơn: GTLN ở đâu? Nêu lý do.",
+    "answer_key": "Chưa đủ dữ kiện xác định nơi đạt GTLN.",
+    "worked_solution": "Liên tục trên [0;5] bảo đảm có GTLN. Vì f(5)>f(2), x=2 không thể đạt GTLN. Tuy nhiên có thể còn một điểm khác có giá trị lớn hơn f(5); cần so sánh các điểm biên và mọi điểm có thể đạt cực trị.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B02-EXTREMA_GLOBAL_MEANING",
+      "G12-B02-CLOSED_INTERVAL_EXISTENCE"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d6e517a980ec9259345285964f4c42767faa6122",
+      "heading_id": "Tự thử A",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md",
+        "blob": "d6e517a980ec9259345285964f4c42767faa6122",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử A",
+      "line": 51,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B02-KFT03",
+    "content_version": "SOURCE_BLOB_d6e517a980ec9259345285964f4c42767faa6122_AUTHORING_ANSWER_DRAFT_AUTHOR_REVIEW_R01",
+    "stem": "Một khu vườn hình chữ nhật có chu vi 24 m, chiều rộng x m và chiều dài 12−x m. Khi tối ưu diện tích, vì sao phải đặt điều kiện 0<x<12 trước khi đạo hàm?",
+    "answer_key": "Để giới hạn bài toán trong miền kích thước có nghĩa.",
+    "worked_solution": "Trong ví dụ vườn chu vi 24 m, hai cạnh là x và 12−x; cả hai phải dương, nên 0<x<12. Chỉ xét nghiệm đạo hàm và giới hạn biên trên miền này; x=0 hoặc x=12 tạo hình suy biến.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B02-CONSTRAINED_DOMAIN"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d6e517a980ec9259345285964f4c42767faa6122",
+      "heading_id": "Tự thử C",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md",
+        "blob": "d6e517a980ec9259345285964f4c42767faa6122",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử C",
+      "line": 53,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B02-A01"
+      ],
+      "distinct_task_reason": "Same possible positive lengths for perimeter 24, existing asks optimization rather than why domain is necessary."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B03-KFT01",
+    "content_version": "SOURCE_BLOB_02f4b8a446e89d824b7b08c833fc306ca9db02c6_AUTHORING_ANSWER_DRAFT",
+    "stem": "Với f=2+1/(x−4), đoán đường nào là tiệm cận đứng/ngang, vì sao phải nói giới hạn?",
+    "answer_key": "Tiệm cận đứng x=4; tiệm cận ngang y=2.",
+    "worked_solution": "Khi x→4⁻, 1/(x−4)→−∞; khi x→4⁺, 1/(x−4)→+∞, nên x=4 là tiệm cận đứng. Khi x→±∞, 1/(x−4)→0, nên f(x)→2 và y=2 là tiệm cận ngang. Giới hạn là căn cứ xác định, không chỉ nhìn mẫu bằng 0.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B03-VERTICAL_ONE_SIDED",
+      "G12-B03-HORIZONTAL_LIMIT"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+      "heading_id": "Tự thử A",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md",
+        "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử A",
+      "line": 49,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B03-KFT03",
+    "content_version": "SOURCE_BLOB_02f4b8a446e89d824b7b08c833fc306ca9db02c6_AUTHORING_ANSWER_DRAFT",
+    "stem": "Nếu f(x)−(2x+3)→0 khi x→∞, dạng tiệm cận nào phù hợp?",
+    "answer_key": "Tiệm cận xiên y=2x+3 khi x→+∞.",
+    "worked_solution": "Hiệu f(x)−(2x+3)→0 khi x→+∞, đúng định nghĩa tiệm cận xiên; hệ số góc 2 khác 0.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B03-OBLIQUE_REMAINDER"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+      "heading_id": "Tự thử C",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md",
+        "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử C",
+      "line": 51,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B03-C03"
+      ],
+      "distinct_task_reason": "Source gives limiting difference to 2x+3, asks type; existing computes a specific different oblique asymptote."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B04-KFT01",
+    "content_version": "SOURCE_BLOB_a9a9a8f823ee85fe53014150b5cda31201867a4d_AUTHORING_ANSWER_DRAFT_AUTHOR_REVIEW_R01",
+    "stem": "Xét g(x)=(x+2)/(x−1) với x≠1, có g′(x)=−3/(x−1)². Liệu có thể vẽ một nét giảm liên tục băng qua x=1? Giải thích.",
+    "answer_key": "Không thể nối liên tục qua x=1.",
+    "worked_solution": "g(x)=1+3/(x−1), nên g′(x)=−3/(x−1)²<0 với x≠1. Hai nhánh giảm riêng trên (−∞;1) và (1;+∞), nhưng g(x)→−∞ khi x→1⁻ và g(x)→+∞ khi x→1⁺. x=1 không thuộc miền xác định và là tiệm cận đứng. Vì thế không nối hai nhánh thành một nét qua x=1.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B04-DOMAIN_NONCONNECT",
+      "G12-B04-RATIONAL_VARIATION"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+      "heading_id": "Tự thử A",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md",
+        "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử A",
+      "line": 53,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B04-C03",
+        "THPT-G12-CHI-B04-P03"
+      ],
+      "distinct_task_reason": "Similar separate branches but existing formula/pole or requested task differs."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B04-KFT02",
+    "content_version": "SOURCE_BLOB_a9a9a8f823ee85fe53014150b5cda31201867a4d_AUTHORING_ANSWER_DRAFT",
+    "stem": "Nghiệm bội hai x=0 của y=x³−3x² khiến đường cong tiếp xúc hay cắt trục Ox?",
+    "answer_key": "Tiếp xúc trục Ox tại (0;0), không cắt xuyên qua.",
+    "worked_solution": "y=x²(x−3). Gần x=0, x−3<0 và x²>0 khi x≠0, nên y âm ở cả hai phía; y(0)=0 và y′(0)=0. Đồ thị chạm trục hoành nhưng không đổi dấu qua nghiệm bội hai.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B04-INTERCEPTS_LIMITS"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+      "heading_id": "Tự thử B",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md",
+        "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử B",
+      "line": 54,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B04-P05"
+      ],
+      "distinct_task_reason": "Same cubic, existing additionally asks at x=3; source only x=0, do not conflate."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B04-KFT03",
+    "content_version": "SOURCE_BLOB_a9a9a8f823ee85fe53014150b5cda31201867a4d_AUTHORING_ANSWER_DRAFT",
+    "stem": "Với g=2+11/(x−3), dự đoán tâm đối xứng trước khi xem ví dụ.",
+    "answer_key": "I(3;2).",
+    "worked_solution": "Viết g(x)=2+11/(x−3). Hai đường tiệm cận là x=3 và y=2. Với h≠0, g(3+h)−2=11/h và g(3−h)−2=−11/h; hai điểm tương ứng đối xứng qua I(3;2).",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B04-CENTER_SYMMETRY"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+      "heading_id": "Tự thử C",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md",
+        "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử C",
+      "line": 55,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B05-KFT01",
+    "content_version": "SOURCE_BLOB_54c9c90323f7b1d9077270d90627864f5a468c03_AUTHORING_ANSWER_DRAFT",
+    "stem": "s(t)=5−2t có vị trí dương lúc t=1, vật đi theo chiều nào? Tốc độ bao nhiêu?",
+    "answer_key": "Đi theo chiều âm; tốc độ bằng 2 đơn vị độ dài trên đơn vị thời gian.",
+    "worked_solution": "s(1)=3>0 chỉ cho biết vị trí. v(t)=s′(t)=−2 nên vật đi theo chiều âm; tốc độ |v|=2. Nếu s đo bằng m, t bằng s thì tốc độ là 2 m/s.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B05-MOTION_SPEED_ACCELERATION"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+      "heading_id": "Tự thử A",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
+        "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử A",
+      "line": 51,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B05-KFT02",
+    "content_version": "SOURCE_BLOB_54c9c90323f7b1d9077270d90627864f5a468c03_AUTHORING_ANSWER_DRAFT",
+    "stem": "Chi phí C(q) có đơn vị triệu đồng, q sản phẩm. Đơn vị C'(q) là gì?",
+    "answer_key": "Triệu đồng/sản phẩm.",
+    "worked_solution": "Đạo hàm C′(q) là tốc độ biến đổi của chi phí theo sản lượng. Lấy đơn vị triệu đồng chia cho đơn vị sản phẩm.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B05-MARGINAL_COST",
+      "G12-B05-UNIT_ASSUMPTION_CHECK"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+      "heading_id": "Tự thử B",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
+        "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử B",
+      "line": 52,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B05-KFT03",
+    "content_version": "SOURCE_BLOB_54c9c90323f7b1d9077270d90627864f5a468c03_AUTHORING_ANSWER_DRAFT_AUTHOR_REVIEW_R01",
+    "stem": "Một mảnh vườn hình chữ nhật có hai cạnh dài x (vuông góc tường) và hai cạnh dài y (song song tường). Gọi L là tổng chiều dài hàng rào. Hãy lập ràng buộc nếu rào cả bốn cạnh và nếu bỏ cạnh y sát tường. Vì sao cần phân biệt hai trường hợp trước khi tối ưu?",
+    "answer_key": "Bốn cạnh: 2x+2y=L; ba cạnh sát tường: 2x+y=L.",
+    "worked_solution": "Với x là chiều vuông góc tường, y là chiều song song tường, bốn cạnh hình chữ nhật dài tổng cộng 2x+2y, tương đương x+y=L/2. Nếu một cạnh y sát tường không cần rào, chỉ dùng hai cạnh x và một cạnh y, nên 2x+y=L. Phải chọn ràng buộc đúng số cạnh trước khi tối ưu.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B05-MODEL_VARIABLE_DOMAIN"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+      "heading_id": "Tự thử C",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
+        "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử C",
+      "line": 53,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B05-A01"
+      ],
+      "distinct_task_reason": "Source compares fencing constraint for four versus three sides; existing optimizes three-sided fence only. Requires context."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G12-B05-KFT04",
+    "content_version": "SOURCE_BLOB_54c9c90323f7b1d9077270d90627864f5a468c03_AUTHORING_ANSWER_DRAFT_AUTHOR_REVIEW_R01",
+    "stem": "Từ tấm bìa hình chữ nhật 30 cm × 20 cm, cắt ở mỗi góc một hình vuông cạnh x cm rồi gấp thành hộp không nắp. Vì sao x=12 cm không hợp lệ?",
+    "answer_key": "Không hợp lệ vì 20−2·12=−4<0.",
+    "worked_solution": "Cắt bốn hình vuông cạnh x từ tấm bìa 30×20 tạo đáy có kích thước 30−2x và 20−2x. Hộp không suy biến đòi hỏi x>0 và cả hai kích thước dương, tức 0<x<10. x=12 vi phạm.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [
+      "G12-B05-BOUNDARY_FEASIBILITY",
+      "G12-B05-MODEL_VARIABLE_DOMAIN"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+      "heading_id": "Tự thử D",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
+        "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử D",
+      "line": 54,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B05-C04",
+        "THPT-G12-CHI-B05-P05"
+      ],
+      "distinct_task_reason": "Same cardboard dimensions but source asks why x=12 invalid; existing asks full domain or degenerate x=10."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  }
+]

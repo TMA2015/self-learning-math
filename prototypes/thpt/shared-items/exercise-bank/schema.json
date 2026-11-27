@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "description": "Data contract only; Q01–Q18 unchanged",
+  "item_required": [
+    "item_id",
+    "content_version",
+    "stem",
+    "answer_key",
+    "worked_solution",
+    "source",
+    "interaction",
+    "status"
+  ],
+  "item_id_rule": "Preserve original ID; unique across shards and written references",
+  "placement_required": [
+    "collection",
+    "role",
+    "order",
+    "item_id"
+  ],
+  "interaction_types_initial": [
+    "SELF_COMPARE"
+  ],
+  "auto_grade_initial": false,
+  "nullable_unverified_fields": [
+    "problem_type_id",
+    "rubric",
+    "answer_key"
+  ],
+  "private_rd1_allowed": false,
+  "public_selfcheck_mastery": false,
+  "answer_key_null_rule": "Allowed only for a legacy source with combined answer and solution; answer_representation=COMBINED_ANSWER_AND_SOLUTION, nonempty worked_solution, auto_grade=false. Split only during academic audit."
+}

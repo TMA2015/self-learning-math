@@ -1,0 +1,767 @@
+[
+  {
+    "item_id": "THPT-G10-B26-C01",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Tung đồng thời một đồng xu cân đối (N: ngửa, S: sấp) và một xúc xắc 6 mặt cân đối; hai phép thử độc lập. Ghi cả hai kết quả. Hãy viết dạng chung của các phần tử không gian mẫu \\(\\Omega\\) và xác định số phần tử của \\(\\Omega\\).",
+    "answer_key": "\\(\\Omega=\\{(N;k),(S;k)\\mid k\\in\\{1;2;3;4;5;6\\}\\}\\), \\(n(\\Omega)=12\\).",
+    "worked_solution": "Mỗi kết quả là một cặp gồm mặt đồng xu và số chấm của xúc xắc. Với mỗi mặt N hoặc S có 6 số chấm có thể xuất hiện. Do đó \\(\\Omega=\\{(N;k),(S;k)\\mid k\\in\\{1;2;3;4;5;6\\}\\}\\), \\(n(\\Omega)=2\\cdot6=12\\). Hai cặp \\((N;3)\\) và \\((S;3)\\) là hai kết quả khác nhau. Vì đồng xu và xúc xắc cân đối, hai phép thử độc lập, 12 cặp này đồng khả năng.",
+    "skill_ids": [
+      "G10-B26-EXPERIMENT_SAMPLE_SPACE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Một kết quả cần đủ *hai* thành phần, không chỉ một số chấm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B26-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng \\(2+6\\), viết mỗi kết quả dưới dạng cặp và đếm mọi cặp. Ôn Bài 26 §1.1; luyện THPT-G10-CHIX-TRY01."
+  },
+  {
+    "item_id": "THPT-G10-B26-C02",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Một vòng quay có 8 ô bằng nhau, các ô được chọn đều nhau. Có 3 ô vàng, 2 ô xanh và 3 ô hồng. Tính xác suất dừng ở ô vàng; xác suất không dừng ở ô vàng.",
+    "answer_key": "Xác suất dừng ở ô vàng là \\(\\frac38\\); xác suất không dừng ở ô vàng là \\(\\frac58\\).",
+    "worked_solution": "Không gian mẫu gồm 8 ô riêng biệt đồng khả năng, không phải 3 tên màu. Gọi A là biến cố dừng ở ô vàng. Có \\(n(\\Omega)=8\\), \\(n(A)=3\\), nên \\(P(A)=\\frac38\\). Biến cố đối \\(\\overline A\\) gồm 5 ô không vàng, do đó \\(P(\\overline A)=\\frac58=1-\\frac38\\).",
+    "skill_ids": [
+      "G10-B26-CLASSICAL_RATIO"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đếm ô, đừng coi mỗi tên màu là một kết quả đồng khả năng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B26-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia cho 3 màu, đếm 8 ô vật lí đồng khả năng, không phải nhãn. Ôn Bài 26 §2.2; luyện THPT-G10-CHIX-TRY03."
+  },
+  {
+    "item_id": "THPT-G10-B26-P01",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Hộp chứa 3 thẻ đỏ, 4 thẻ xanh lá, 2 thẻ xanh dương, mỗi thẻ phân biệt được khi đánh số. Lấy đều ngẫu nhiên một thẻ. Tìm xác suất không phải thẻ xanh dương.",
+    "answer_key": "\\(\\frac79\\).",
+    "worked_solution": "Có \\(3+4+2=9\\) thẻ phân biệt đồng khả năng. Gọi A là biến cố rút được thẻ xanh dương, có \\(n(A)=2\\). Biến cố cần tìm là \\(\\overline A\\), gồm 7 thẻ còn lại. Vậy \\(P(\\overline A)=1-P(A)=1-\\frac29=\\frac79\\).",
+    "skill_ids": [
+      "G10-B26-COMPLEMENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Tính biến cố đối sẽ ngắn hơn."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B26-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu tính phần xanh dương thay vì phần đối, lấy 1 trừ xác suất xanh dương. Ôn Bài 26 §1.4; luyện THPT-G10-CHIX-TRY04."
+  },
+  {
+    "item_id": "THPT-G10-B26-P02",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Tung một đồng xu cân đối 2 lần độc lập, ghi kết quả theo thứ tự lần 1 rồi lần 2. Kí hiệu N là mặt ngửa, S là mặt sấp. Hãy viết không gian mẫu \\(\\Omega\\), biến cố A: “đúng một lần xuất hiện mặt sấp”, và tính \\(P(A)\\).",
+    "answer_key": "\\(\\Omega=\\{NN;NS;SN;SS\\}\\), \\(A=\\{NS;SN\\}\\), \\(P(A)=\\frac12\\).",
+    "worked_solution": "Mỗi kết quả là chuỗi hai mặt theo thứ tự. Có \\(\\Omega=\\{NN;NS;SN;SS\\}\\); vì hai lần tung độc lập và xu cân đối, cả 4 chuỗi đồng khả năng. Đúng một lần sấp nghĩa là S xuất hiện ở lần thứ nhất hoặc lần thứ hai, nên \\(A=\\{SN;NS\\}\\). Vậy \\(P(A)=\\frac24=\\frac12\\).",
+    "skill_ids": [
+      "G10-B26-EVENT_SUBSET"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "NS và SN là hai kết quả khác nhau vì có thứ tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B26-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu gộp NS và SN, ghi thứ tự hai lần tung và kiểm bốn chuỗi. Ôn Bài 26 §2.1; luyện THPT-G10-CHIX-TRY02."
+  },
+  {
+    "item_id": "THPT-G10-B26-P03",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Chọn đều một số nguyên từ 1 đến 10. Tính xác suất số được chọn chia hết cho 2 hoặc chia hết cho 5.",
+    "answer_key": "\\(\\frac35\\).",
+    "worked_solution": "Có 10 số nguyên đồng khả năng. Các số chia hết cho 2 là 2, 4, 6, 8, 10; các số chia hết cho 5 là 5, 10. Biến cố A gồm hợp hai tập trên: \\(A=\\{2;4;5;6;8;10\\}\\). Số 10 thỏa cả hai điều kiện nhưng chỉ được đếm một lần. Vậy \\(P(A)=\\frac6{10}=\\frac35\\).",
+    "skill_ids": [
+      "G10-B26-CLASSICAL_RATIO"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "“Hoặc” cho phép cả hai điều kiện đồng thời; tránh đếm 10 hai lần."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B26-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đếm 10 hai lần, viết tập hợp các số thuận lợi rồi đếm mỗi phần tử một lần. Ôn Bài 26 §3.3; luyện THPT-G10-CHIX-TRY02."
+  },
+  {
+    "item_id": "THPT-G10-B26-P04",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Trong 1 000 phiếu đánh số phân biệt có đúng 1 phiếu may mắn. Một người rút đều ngẫu nhiên 1 phiếu. Tính xác suất trúng và đánh giá đúng hay sai phát biểu: “Vì xác suất rất nhỏ nên không thể trúng.”",
+    "answer_key": "\\(\\frac1{1000}=0{,}001\\); phát biểu sai.",
+    "worked_solution": "Có 1 000 kết quả sơ cấp đồng khả năng và đúng 1 kết quả thuận lợi, nên xác suất trúng là \\(\\frac1{1000}=0{,}001\\). Xác suất này dương, không bằng 0. Trong mô hình hữu hạn đồng khả năng này, biến cố không thể không có kết quả thuận lợi và có xác suất 0. Vì vậy trúng thưởng rất hiếm, nhưng không phải không thể xảy ra.",
+    "skill_ids": [
+      "G10-B26-SCOPE_SMALL_PROBABILITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "So sánh xác suất của biến cố không thể với một biến cố hiếm có xác suất dương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B26-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đồng nhất xác suất rất nhỏ với xác suất 0, kiểm tra vẫn có đúng một kết quả thuận lợi trong 1 000 kết quả đồng khả năng. Ôn Bài 26 §2.3; luyện THPT-G10-CHIX-TRY05."
+  },
+  {
+    "item_id": "THPT-G10-B26-P05",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Một vòng quay được chia thành ba vùng đỏ, vàng, xanh có diện tích khác nhau; đề chỉ nói kim quay ngẫu nhiên, không cho thêm mô hình xác suất hoặc tần suất thực nghiệm. Có đủ căn cứ để khẳng định xác suất kim dừng ở vùng đỏ bằng \\(\\frac13\\) không? Giải thích.",
+    "answer_key": "Không đủ căn cứ.",
+    "worked_solution": "Không. Công thức cổ điển \\(P(A)=\\frac{n(A)}{n(\\Omega)}\\) áp dụng khi không gian mẫu hữu hạn, không rỗng và các kết quả sơ cấp đồng khả năng. Chỉ có ba tên màu không có nghĩa ba biến cố dừng ở ba vùng có xác suất bằng nhau. Ngay cả diện tích khác nhau cũng chưa đủ để tính xác suất nếu không biết cơ chế kim dừng. Vì vậy không thể khẳng định xác suất vùng đỏ bằng \\(\\frac13\\) từ dữ kiện đã cho.",
+    "skill_ids": [
+      "G10-B26-SCOPE_SMALL_PROBABILITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Phân biệt “ngẫu nhiên” với “đều nhau trên các kết quả sơ cấp”."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B26-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia đều theo màu, kiểm giả thiết đồng khả năng của kết quả sơ cấp. Ôn Bài 26 §2.2; luyện THPT-G10-CHIX-TRY05."
+  },
+  {
+    "item_id": "THPT-G10-B27-C01",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Một túi có 3 thẻ phân biệt: hai thẻ đỏ \\(R_1,R_2\\) và một thẻ xanh B. Rút lần lượt 2 thẻ không hoàn lại, mỗi thẻ còn trong túi có cùng khả năng được rút. Dùng sơ đồ cây hai tầng để tính xác suất hai thẻ rút ra khác màu.",
+    "answer_key": "\\(\\frac23\\).",
+    "worked_solution": "Ở tầng thứ nhất có 3 nhánh; sau mỗi nhánh chỉ còn 2 thẻ. Cây hai tầng có các nhánh sau:\n- \\(R_1\\) dẫn đến \\(R_2\\) hoặc B.\n- \\(R_2\\) dẫn đến \\(R_1\\) hoặc B.\n- B dẫn đến \\(R_1\\) hoặc \\(R_2\\).\nMỗi đường đi từ gốc đến lá là một cặp thẻ có thứ tự. Vì mỗi lần chọn đều trong số thẻ còn lại, mỗi lá có cùng xác suất \\(\\frac13\\cdot\\frac12=\\frac16\\). Có \\(3\\cdot2=6\\) lá; các lá thuận lợi là \\((R_1;B),(R_2;B),(B;R_1),(B;R_2)\\). Vậy xác suất hai thẻ khác màu là \\(\\frac46=\\frac23\\).",
+    "skill_ids": [
+      "G10-B27-TREE_SEQUENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Khi đã rút một thẻ, chỉ còn hai thẻ; đếm hai thứ tự đỏ–xanh và xanh–đỏ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B27-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu vẽ hai nhánh màu như thể chúng đồng khả năng, vẽ riêng 3 thẻ ở tầng đầu và 2 thẻ còn lại ở tầng sau. Ôn Bài 27 §2.2; luyện THPT-G10-CHIX-TRY07."
+  },
+  {
+    "item_id": "THPT-G10-B27-C02",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Một học sinh chọn đều ngẫu nhiên một bộ gồm một trong hai áo \\(A_1,A_2\\) và một trong ba mũ \\(M_1,M_2,M_3\\). Tính xác suất bộ được chọn có áo \\(A_1\\) và một trong hai mũ \\(M_1,M_2\\).",
+    "answer_key": "\\(\\frac13\\).",
+    "worked_solution": "Mỗi kết quả là một cặp áo và mũ. Có \\(2\\cdot3=6\\) bộ đồng khả năng. Chỉ hai bộ \\((A_1;M_1)\\) và \\((A_1;M_2)\\) thỏa mãn cả hai điều kiện. Vậy xác suất cần tìm là \\(\\frac26=\\frac13\\).",
+    "skill_ids": [
+      "G10-B27-COUNTING_OUTCOMES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Liệt kê đủ cặp áo–mũ, mỗi cặp xuất hiện đúng một lần."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B27-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ đếm mũ, lập đủ cặp áo–mũ và giữ mẫu sáu bộ. Ôn Bài 27 §2.1; luyện THPT-G10-CHIX-TRY06."
+  },
+  {
+    "item_id": "THPT-G10-B27-P01",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Một nhóm có 4 học sinh nữ và 2 học sinh nam, tất cả phân biệt. (a) Chọn đều ngẫu nhiên một nhóm 2 học sinh, không phân vai. Tính xác suất nhóm gồm một nữ và một nam. (b) Thay bằng cách chọn đều ngẫu nhiên một đội trưởng và một đội phó là hai người khác nhau. Tính xác suất hai chức vụ do một nữ và một nam đảm nhiệm, không giới hạn ai giữ chức vụ nào. (c) Trong mô hình (b), tính xác suất đội trưởng là nữ và đội phó là nam. Giải thích vì sao kết quả (c) khác (b).",
+    "answer_key": "(a) \\(\\frac8{15}\\). (b) \\(\\frac8{15}\\). (c) \\(\\frac4{15}\\).",
+    "worked_solution": "(a) Mỗi nhóm hai người là một kết quả đồng khả năng, nên \\(n(\\Omega)=C_6^2=15\\). Có \\(4\\cdot2=8\\) nhóm gồm một nữ và một nam, nên xác suất bằng \\(\\frac8{15}\\). (b) Mỗi kết quả là một cặp có thứ tự (đội trưởng; đội phó). Có \\(6\\cdot5=30\\) cách phân vai đồng khả năng. Mỗi nhóm gồm một nữ và một nam ở (a) tạo đúng hai cách phân vai, nên có \\(8\\cdot2=16\\) kết quả thuận lợi. Xác suất là \\(\\frac{16}{30}=\\frac8{15}\\). Tử số và mẫu số cùng tăng gấp đôi vì mỗi nhóm hai người đều có hai cách phân vai. (c) Khi yêu cầu đội trưởng là nữ, đội phó là nam, chỉ có \\(4\\cdot2=8\\) kết quả thuận lợi trong 30 cặp có thứ tự. Do đó xác suất là \\(\\frac8{30}=\\frac4{15}\\). Mô hình chọn vẫn như (b), nhưng biến cố ở (c) chỉ lấy một trong hai kiểu phân vai, nên số kết quả thuận lợi giảm một nửa.",
+    "skill_ids": [
+      "G10-B27-COUNTING_OUTCOMES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Trong (a) dùng nhóm không thứ tự; trong (b), (c) dùng cặp chức vụ có thứ tự.",
+      "Một nhóm gồm một nữ và một nam tạo bao nhiêu cách phân vai trong từng biến cố?"
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B27-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Chọn một cách mô tả kết quả đồng khả năng cho cả tử và mẫu. Phân biệt biến cố không giới hạn vai với biến cố quy định từng vai. Ôn Bài 27 §2.1; luyện THPT-G10-CHIX-TRY06."
+  },
+  {
+    "item_id": "THPT-G10-B27-P02",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Có 7 thẻ phân biệt: 5 đỏ và 2 xanh. Chọn đều ngẫu nhiên một nhóm 3 thẻ, không xét thứ tự. Tính xác suất trong nhóm có ít nhất 1 thẻ xanh.",
+    "answer_key": "\\(\\frac57\\).",
+    "worked_solution": "Có \\(n(\\Omega)=C_7^3=35\\) nhóm 3 thẻ đồng khả năng. Gọi A là biến cố có ít nhất một thẻ xanh. Biến cố đối \\(\\overline A\\) là không có thẻ xanh, tức cả 3 thẻ đều đỏ; có \\(n(\\overline A)=C_5^3=10\\). Vậy \\(P(A)=1-\\frac{10}{35}=\\frac{25}{35}=\\frac57\\). Biến cố A bao gồm cả trường hợp có 1 hoặc 2 thẻ xanh.",
+    "skill_ids": [
+      "G10-B27-COMPLEMENT_PROBABILITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Phủ định của “ít nhất một thẻ xanh” là “không có thẻ xanh”, tức cả ba thẻ đều đỏ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B27-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu biến cố đối là đúng một thẻ đỏ, viết phủ định của ít nhất một xanh là không có xanh. Ôn Bài 27 §2.3; luyện THPT-G10-CHIX-TRY08."
+  },
+  {
+    "item_id": "THPT-G10-B27-P03",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Hộp có 3 thẻ đỏ và 2 thẻ xanh, các thẻ phân biệt. Rút lần lượt 2 thẻ, mỗi lần chọn đều trong các thẻ đang có trong hộp. Tính xác suất đỏ trước, xanh sau trong hai trường hợp: (a) không hoàn lại; (b) hoàn lại thẻ thứ nhất và trộn đều trước lần hai.",
+    "answer_key": "(a) \\(\\frac3{10}\\); (b) \\(\\frac6{25}\\).",
+    "worked_solution": "(a) Không hoàn lại: mỗi kết quả là một cặp thẻ phân biệt có thứ tự. Có \\(5\\cdot4=20\\) cặp đồng khả năng. Đỏ trước có 3 cách; sau đó vẫn còn 2 thẻ xanh, nên có \\(3\\cdot2=6\\) cặp thuận lợi. Xác suất là \\(\\frac6{20}=\\frac3{10}\\).\n(b) Hoàn lại và trộn đều: mỗi lần có 5 thẻ để chọn, kể cả thẻ đã rút. Có \\(5\\cdot5=25\\) cặp đồng khả năng; vẫn có 6 cặp đỏ trước, xanh sau. Xác suất là \\(\\frac6{25}\\).\nHai cơ chế có cùng số kết quả thuận lợi nhưng số phần tử không gian mẫu khác nhau.",
+    "skill_ids": [
+      "G10-B27-MULTISTEP_CONTEXT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Lập mẫu có thứ tự riêng cho từng cơ chế rút; đếm số thẻ còn lại ở lần hai."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B27-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu giữ 5 lựa chọn lần hai khi không hoàn lại, kiểm số thẻ còn lại sau lần đầu. Ôn Bài 27 §1.4; luyện THPT-G10-CHIX-TRY09."
+  },
+  {
+    "item_id": "THPT-G10-B27-P04",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Tung hai đồng xu cân đối phân biệt, đồng thời gieo một xúc xắc 6 mặt cân đối; ba phép thử độc lập. Tính xác suất có đúng một mặt ngửa trong hai đồng xu và xúc xắc ra số chẵn.",
+    "answer_key": "\\(\\frac14\\).",
+    "worked_solution": "Đánh dấu hai đồng xu để phân biệt kết quả của từng đồng. Mỗi kết quả gồm hai mặt xu theo thứ tự và một số chấm; có \\(2\\cdot2\\cdot6=24\\) bộ đồng khả năng vì ba phép thử độc lập và cân đối. Đúng một mặt ngửa có 2 cách (NS hoặc SN); số chấm chẵn có 3 cách (2, 4, 6). Có \\(2\\cdot3=6\\) bộ thuận lợi. Vậy xác suất là \\(\\frac6{24}=\\frac14\\).",
+    "skill_ids": [
+      "G10-B27-TREE_SEQUENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Đếm từng nhóm điều kiện độc lập, rồi nhân số kết quả thuận lợi."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B27-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu gộp hai mặt xu khác thứ tự, đánh dấu hai đồng xu và đếm đủ hai cách. Ôn Bài 27 §2.2; luyện THPT-G10-CHIX-TRY07."
+  },
+  {
+    "item_id": "THPT-G10-B27-P05",
+    "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
+    "stem": "Gieo độc lập hai xúc xắc 6 mặt cân đối phân biệt. Một bạn gộp hai thứ tự của mỗi cặp số chấm thành một loại, biểu diễn bằng cặp \\((i;j)\\) đã sắp với \\(1\\le i\\le j\\le6\\). Bạn đếm 21 loại cặp và kết luận xác suất tổng bằng 3 là \\(\\frac1{21}\\). Cách tính đó có đúng không? Tính xác suất chính xác.",
+    "answer_key": "Cách tính sai; xác suất đúng là \\(\\frac1{18}\\).",
+    "worked_solution": "21 loại cặp đã gộp không đồng khả năng. Chẳng hạn loại \\((1;2)\\) đại diện cho hai kết quả có thứ tự \\((1;2),(2;1)\\), còn loại \\((1;1)\\) chỉ đại diện cho một kết quả. Với hai xúc xắc phân biệt, cân đối và độc lập, không gian mẫu gồm \\(6\\cdot6=36\\) cặp có thứ tự đồng khả năng. Tổng bằng 3 chỉ có hai kết quả \\((1;2),(2;1)\\), nên xác suất đúng là \\(\\frac2{36}=\\frac1{18}\\). Không thể chia cho 21 khi các loại cặp có xác suất khác nhau.",
+    "skill_ids": [
+      "G10-B27-EQUIPROBABLE_MODELLING"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "So số kết quả có thứ tự đại diện cho loại \\((1;1)\\) và loại \\((1;2)\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+      "heading_id": "THPT-G10-B27-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js",
+        "blob": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng 21 loại cặp như các kết quả đồng khả năng, so loại \\((1;1)\\) với loại \\((1;2)\\), rồi đếm lại 36 cặp có thứ tự. Ôn Bài 27 §1.5; luyện THPT-G10-CHIX-TRY10."
+  },
+  {
+    "item_id": "THPT-G10-CHIX-TRY01",
+    "content_version": "SOURCE_BLOB_6b695c41cff31490630b380522752636fc57f8b7_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một vòng quay có **3 ô bằng nhau** mang số 1,2,3, dừng đều trên từng ô; đồng thời tung một đồng xu cân đối, độc lập với vòng quay, ghi N (ngửa) hoặc S (sấp). Kết quả được ghi dưới dạng (số ô, mặt xu). Hãy viết Ω và n(Ω).",
+    "answer_key": "Ω={(1,N),(1,S),(2,N),(2,S),(3,N),(3,S)}; n(Ω)=6.",
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> <span class=\"arithmatex\">\\(\\Omega=\\{(1,N),(1,S),(2,N),(2,S),(3,N),(3,S)\\}\\)</span>, <span class=\"arithmatex\">\\(n(\\Omega)=6\\)</span>. Vì có ba lựa chọn ô và hai mặt xu độc lập, số cặp là <span class=\"arithmatex\">\\(3\\cdot2=6\\)</span>; mỗi ô kết hợp đủ hai mặt xu.</p>",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B26-EXPERIMENT_SAMPLE_SPACE"
+    ],
+    "original_outcome_ids": [
+      "G10-B26-EXPERIMENT_SAMPLE_SPACE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6b695c41cff31490630b380522752636fc57f8b7",
+      "heading_id": "THPT-G10-CHIX-TRY01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-ix/bai-26.md",
+        "blob": "6b695c41cff31490630b380522752636fc57f8b7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIX-TRY02",
+    "content_version": "SOURCE_BLOB_6b695c41cff31490630b380522752636fc57f8b7_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Rút đều ngẫu nhiên một thẻ trong **7 thẻ phân biệt** được ghi số 1,2,3,4,5,6,7. Gọi A là biến cố “rút được thẻ mang số nguyên tố”. Hãy viết Ω, A và tính P(A).",
+    "answer_key": "Ω={1,2,3,4,5,6,7}; A={2,3,5,7}; P(A)=4/7.",
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> <span class=\"arithmatex\">\\(\\Omega=\\{1,2,3,4,5,6,7\\}\\)</span>, <span class=\"arithmatex\">\\(A=\\{2,3,5,7\\}\\)</span> nên <span class=\"arithmatex\">\\(P(A)=4/7\\)</span>. Số 1 không phải số nguyên tố; bảy thẻ phân biệt được rút đều nên các kết quả đồng khả năng.</p>",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B26-EVENT_SUBSET"
+    ],
+    "original_outcome_ids": [
+      "G10-B26-EVENT_SUBSET"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6b695c41cff31490630b380522752636fc57f8b7",
+      "heading_id": "THPT-G10-CHIX-TRY02",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-ix/bai-26.md",
+        "blob": "6b695c41cff31490630b380522752636fc57f8b7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIX-TRY03",
+    "content_version": "SOURCE_BLOB_6b695c41cff31490630b380522752636fc57f8b7_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Có 10 thẻ **phân biệt được khi đánh số**, trong đó đúng **4 thẻ ghi X** và 6 thẻ ghi Y. Chọn đều ngẫu nhiên một thẻ. Tính P(đọc được nhãn X) và giải thích vì sao không phải 1/2.",
+    "answer_key": "P(X)=2/5; hai nhãn không đồng khả năng.",
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> <span class=\"arithmatex\">\\(P(X)=4/10=2/5\\)</span>. Mỗi thẻ vật lí là một kết quả sơ cấp đồng khả năng; bốn thẻ mang X. Hai nhãn X,Y không đồng khả năng vì xuất hiện trên số thẻ khác nhau.</p>",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B26-CLASSICAL_RATIO"
+    ],
+    "original_outcome_ids": [
+      "G10-B26-CLASSICAL_RATIO"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6b695c41cff31490630b380522752636fc57f8b7",
+      "heading_id": "THPT-G10-CHIX-TRY03",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-ix/bai-26.md",
+        "blob": "6b695c41cff31490630b380522752636fc57f8b7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIX-TRY04",
+    "content_version": "SOURCE_BLOB_6b695c41cff31490630b380522752636fc57f8b7_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chọn đều một số nguyên từ 1 đến 12. Tính xác suất số được chọn **không chia hết cho 3** bằng biến cố đối.",
+    "answer_key": "2/3.",
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Các bội của 3 là 3,6,9,12, có 4 trong 12 số. Do đó <span class=\"arithmatex\">\\(P(\\text{không chia hết cho 3})=1-4/12=8/12=2/3\\)</span>.</p>",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B26-COMPLEMENT"
+    ],
+    "original_outcome_ids": [
+      "G10-B26-COMPLEMENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6b695c41cff31490630b380522752636fc57f8b7",
+      "heading_id": "THPT-G10-CHIX-TRY04",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-ix/bai-26.md",
+        "blob": "6b695c41cff31490630b380522752636fc57f8b7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIX-TRY05",
+    "content_version": "SOURCE_BLOB_6b695c41cff31490630b380522752636fc57f8b7_AUTHOR_KEY_REVIEW_R01",
+    "stem": "(a) Một ứng dụng phát ngẫu nhiên một trong ba thông báo A, B, C theo một **thuật toán không được mô tả**. Bạn Minh nói: “Vì có ba thông báo nên P(hiện A)=1/3”. Minh đã đủ căn cứ chưa? Giải thích. (b) Trong một hộp có **200 vé phân biệt**, chỉ một vé đặc biệt; rút đều một vé. Hãy tính xác suất rút được vé đặc biệt và đánh giá lời khẳng định “Xác suất rất nhỏ nghĩa là không thể trúng”.",
+    "answer_key": "(a) Chưa đủ căn cứ vì chưa biết ba thông báo đồng khả năng. (b) P=1/200=0,005>0; vẫn có thể trúng.",
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> **(a) Chưa đủ căn cứ.** Từ “ngẫu nhiên” không cho biết thuật toán chọn A,B,C có đồng khả năng hay không. Chỉ khi ba kết quả được chọn đều mới suy ra <span class=\"arithmatex\">\\(P(A)=1/3\\)</span>; đề bài hiện tại không cho điều đó. **(b)** Vì 200 vé được rút đều và chỉ 1 vé trúng, <span class=\"arithmatex\">\\(P(\\text{trúng})=1/200=0{,}005&gt;0\\)</span>. Trúng rất hiếm trong một lần rút nhưng không phải biến cố không thể.</p>",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B26-SCOPE_SMALL_PROBABILITY"
+    ],
+    "original_outcome_ids": [
+      "G10-B26-SCOPE_SMALL_PROBABILITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6b695c41cff31490630b380522752636fc57f8b7",
+      "heading_id": "THPT-G10-CHIX-TRY05",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-ix/bai-26.md",
+        "blob": "6b695c41cff31490630b380522752636fc57f8b7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIX-TRY06",
+    "content_version": "SOURCE_BLOB_209de8ae01c8654e55e07648c76b7d98396f7393_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chọn đều ngẫu nhiên **một nhóm hai thẻ** từ năm thẻ phân biệt ghi số 1,2,3,4,5; không xét thứ tự. Tính xác suất tổng hai số trên thẻ là **số lẻ**.",
+    "answer_key": "3/5.",
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Có <span class=\"arithmatex\">\\(\\binom52=10\\)</span> nhóm đồng khả năng. Có 3 số lẻ (1,3,5) và 2 số chẵn (2,4); tổng lẻ cần đúng một số mỗi loại nên có <span class=\"arithmatex\">\\(3\\cdot2=6\\)</span> nhóm. Xác suất <span class=\"arithmatex\">\\(6/10=3/5\\)</span>.</p>",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B27-COUNTING_OUTCOMES"
+    ],
+    "original_outcome_ids": [
+      "G10-B27-COUNTING_OUTCOMES"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+      "heading_id": "THPT-G10-CHIX-TRY06",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-ix/bai-27.md",
+        "blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIX-TRY07",
+    "content_version": "SOURCE_BLOB_209de8ae01c8654e55e07648c76b7d98396f7393_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một túi có **5 thẻ phân biệt**, gồm ba thẻ đỏ R₁,R₂,R₃ và hai thẻ xanh B₁,B₂. Rút lần lượt **hai thẻ không hoàn lại**, mỗi lượt chọn đều trong các thẻ còn lại. Tính xác suất hai thẻ được rút ra **khác màu**.",
+    "answer_key": "3/5.",
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Tổng <span class=\"arithmatex\">\\(n(\\Omega)=5\\cdot4=20\\)</span> cặp có thứ tự đồng khả năng. Khác màu gồm đỏ→xanh <span class=\"arithmatex\">\\(3\\cdot2=6\\)</span> cặp hoặc xanh→đỏ <span class=\"arithmatex\">\\(2\\cdot3=6\\)</span> cặp; hai trường hợp rời nhau nên <span class=\"arithmatex\">\\(P=12/20=3/5\\)</span>.</p>",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B27-TREE_SEQUENCE"
+    ],
+    "original_outcome_ids": [
+      "G10-B27-TREE_SEQUENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+      "heading_id": "THPT-G10-CHIX-TRY07",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-ix/bai-27.md",
+        "blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIX-TRY08",
+    "content_version": "SOURCE_BLOB_209de8ae01c8654e55e07648c76b7d98396f7393_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tung một đồng xu cân đối **ba lần độc lập**, ghi kết quả theo thứ tự. Tính xác suất có **ít nhất một lần xuất hiện mặt ngửa N** bằng biến cố đối.",
+    "answer_key": "7/8.",
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Ω có <span class=\"arithmatex\">\\(2^3=8\\)</span> chuỗi đồng khả năng. Biến cố đối của “ít nhất một N” là “cả ba lần đều S”, chỉ có SSS. Do đó <span class=\"arithmatex\">\\(P=1-1/8=7/8\\)</span>.</p>",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B27-COMPLEMENT_PROBABILITY"
+    ],
+    "original_outcome_ids": [
+      "G10-B27-COMPLEMENT_PROBABILITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+      "heading_id": "THPT-G10-CHIX-TRY08",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-ix/bai-27.md",
+        "blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIX-TRY09",
+    "content_version": "SOURCE_BLOB_209de8ae01c8654e55e07648c76b7d98396f7393_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một hộp có năm thẻ phân biệt ghi số 1,2,3,4,5. Rút đều một thẻ, **ghi số rồi bỏ lại hộp**, trộn đều và rút lần hai. Tính xác suất **cả hai lần đều ra số chẵn**.",
+    "answer_key": "4/25.",
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Có 25 cặp có thứ tự đồng khả năng vì mỗi lần rút có 5 lựa chọn và có hoàn lại. Số chẵn là 2,4; hai lượt đều chẵn có 4 cặp (2,2),(2,4),(4,2),(4,4). Vậy <span class=\"arithmatex\">\\(P=4/25\\)</span>.</p>",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B27-MULTISTEP_CONTEXT"
+    ],
+    "original_outcome_ids": [
+      "G10-B27-MULTISTEP_CONTEXT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+      "heading_id": "THPT-G10-CHIX-TRY09",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-ix/bai-27.md",
+        "blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIX-TRY10",
+    "content_version": "SOURCE_BLOB_209de8ae01c8654e55e07648c76b7d98396f7393_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Gieo độc lập hai xúc xắc **cân đối và phân biệt**. Một bạn cho rằng có 21 cặp không thứ tự và tính xác suất “hai xúc xắc ra cùng số” bằng \\(6/21\\). Cách tính đó đúng hay sai? Hãy xác định xác suất đúng.",
+    "answer_key": "Sai; xác suất đúng 1/6.",
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> **Sai** vì 21 cặp không thứ tự không đồng khả năng: {1,2} có hai thứ tự (1,2),(2,1), còn {1,1} chỉ một thứ tự. Có 36 cặp có thứ tự đồng khả năng và sáu cặp (1,1),…,(6,6) thuận lợi; <span class=\"arithmatex\">\\(P=6/36=1/6\\)</span>.</p>",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B27-EQUIPROBABLE_MODELLING"
+    ],
+    "original_outcome_ids": [
+      "G10-B27-EQUIPROBABLE_MODELLING"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+      "heading_id": "THPT-G10-CHIX-TRY10",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-ix/bai-27.md",
+        "blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  }
+]

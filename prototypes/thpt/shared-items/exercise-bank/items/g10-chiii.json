@@ -1,0 +1,894 @@
+[
+  {
+    "item_id": "THPT-G10-B05-C01",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Trên nửa đường tròn đơn vị, điểm M ứng với góc \\(\\alpha\\) có tọa độ \\(\\left(-\\frac45;\\frac35\\right)\\). Giá trị \\(\\cos\\alpha\\) bằng bao nhiêu?",
+    "answer_key": "B",
+    "worked_solution": "Trên nửa đường tròn đơn vị, điểm M có tọa độ \\((\\cos\\alpha;\\sin\\alpha)\\). Côsin là hoành độ, nên \\(\\cos\\alpha=-\\frac45\\); tung độ là \\(\\sin\\alpha=\\frac35\\). Dấu âm của côsin phù hợp với vị trí M bên trái trục Oy, ứng với góc tù.",
+    "options": [
+      "A. \\(\\frac45\\)",
+      "B. \\(-\\frac45\\)",
+      "C. \\(\\frac35\\)",
+      "D. \\(-\\frac35\\)"
+    ],
+    "skill_ids": [
+      "G10-B05-UNIT_SEMICIRCLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Phân biệt hoành độ và tung độ của M."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B05-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn tung độ thay hoành độ, chỉ hình chiếu M trên Ox và Oy; ôn Bài 5 §2.1.1 / HELP-G10-B05-01; luyện THPT-G10-CHIII-TRY01."
+  },
+  {
+    "item_id": "THPT-G10-B05-C02",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Trong đoạn từ 0° đến 180°, biểu thức nào sau đây **không xác định**?",
+    "answer_key": "C",
+    "worked_solution": "Theo định nghĩa, \\(\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}\\) khi \\(\\cos\\alpha\\ne0\\). Tại \\(90^\\circ\\), \\(\\cos90^\\circ=0\\), nên \\(\\tan90^\\circ\\) không xác định. Các phương án còn lại đều xác định: \\(\\sin90^\\circ=1\\), \\(\\cos180^\\circ=-1\\), \\(\\tan180^\\circ=0\\).",
+    "options": [
+      "A. \\(\\sin90^\\circ\\)",
+      "B. \\(\\cos180^\\circ\\)",
+      "C. \\(\\tan90^\\circ\\)",
+      "D. \\(\\tan180^\\circ\\)"
+    ],
+    "skill_ids": [
+      "G10-B05-SIGN_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Dựa vào \\(\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}\\), kiểm tra khi nào mẫu bằng 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B05-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu coi \\(\\tan90^\\circ=0\\), viết tỉ số \\(\\frac{\\sin90^\\circ}{\\cos90^\\circ}\\) rồi kiểm mẫu trước. Ôn Bài 5 §2.1.3 / HELP-G10-B05-02; luyện THPT-G10-CHIII-TRY03."
+  },
+  {
+    "item_id": "THPT-G10-B05-P01",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Cặp giá trị \\((\\sin150^\\circ;\\cos150^\\circ)\\) bằng bao nhiêu?",
+    "answer_key": "B",
+    "worked_solution": "Hai góc \\(150^\\circ\\) và \\(30^\\circ\\) bù nhau. Hai điểm tương ứng trên nửa đường tròn đối xứng qua Oy: tung độ giữ nguyên, hoành độ đổi dấu. Do đó \\(\\sin150^\\circ=\\sin30^\\circ=\\frac12\\), \\(\\cos150^\\circ=-\\cos30^\\circ=-\\frac{\\sqrt3}{2}\\).",
+    "options": [
+      "A. \\(\\left(\\frac12;\\frac{\\sqrt3}{2}\\right)\\)",
+      "B. \\(\\left(\\frac12;-\\frac{\\sqrt3}{2}\\right)\\)",
+      "C. \\(\\left(-\\frac12;-\\frac{\\sqrt3}{2}\\right)\\)",
+      "D. \\(\\left(\\frac{\\sqrt3}{2};-\\frac12\\right)\\)"
+    ],
+    "skill_ids": [
+      "G10-B05-SUPPLEMENTARY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Hai góc 150° và 30° bù nhau."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B05-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn \\(\\cos150^\\circ>0\\), đặt hai điểm ứng với \\(30^\\circ\\) và \\(150^\\circ\\) đối xứng qua Oy; hoành độ đổi dấu. Ôn Bài 5 §2.2.1 / HELP-G10-B05-01; luyện THPT-G10-CHIII-TRY04."
+  },
+  {
+    "item_id": "THPT-G10-B05-P02",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Cho góc tù \\(\\alpha\\) với \\(\\cos\\alpha=-\\frac35\\). Tính \\(\\sin\\alpha\\) và \\(\\tan\\alpha\\).",
+    "answer_key": "\\(\\sin\\alpha=\\frac45,\\ \\tan\\alpha=-\\frac43\\).",
+    "worked_solution": "Từ hệ thức cơ bản, \\(\\sin^2\\alpha=1-\\cos^2\\alpha=1-\\frac9{25}=\\frac{16}{25}\\). Vì \\(90^\\circ<\\alpha<180^\\circ\\), sin dương nên \\(\\sin\\alpha=\\frac45\\). Côsin khác 0, do đó \\(\\tan\\alpha=\\frac{4/5}{-3/5}=-\\frac43\\).",
+    "skill_ids": [
+      "G10-B05-IDENTITIES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Từ \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\), chọn dấu sin theo miền \\(90^\\circ<\\alpha<180^\\circ\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B05-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn sin âm, xác định vị trí góc tù trên nửa đường tròn và kiểm \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\). Ôn Bài 5 §2.2.2 / HELP-G10-B05-02; luyện THPT-G10-CHIII-TRY05."
+  },
+  {
+    "item_id": "THPT-G10-B05-P03",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Tính chính xác \\(T=\\sin(180^\\circ-45^\\circ)+\\cos(90^\\circ-30^\\circ)\\). Dùng hệ thức góc bù và góc phụ.",
+    "answer_key": "\\(T=\\frac{\\sqrt2+1}{2}\\).",
+    "worked_solution": "Hai góc bù có cùng sin: \\(\\sin(180^\\circ-45^\\circ)=\\sin45^\\circ=\\frac{\\sqrt2}{2}\\). Hai góc phụ có sin góc này bằng cos góc kia: \\(\\cos(90^\\circ-30^\\circ)=\\sin30^\\circ=\\frac12\\). Cộng hai giá trị được \\(T=\\frac{\\sqrt2+1}{2}\\).",
+    "skill_ids": [
+      "G10-B05-SPECIAL_ANGLES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Áp dụng riêng hệ thức góc bù và góc phụ trước khi thay giá trị đặc biệt."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B05-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm góc phụ với góc bù, kiểm tổng 90° hay 180° trước khi áp dụng công thức. Ôn Bài 5 §2.2.3 và ví dụ 3.1; luyện THPT-G10-CHIII-TRY04."
+  },
+  {
+    "item_id": "THPT-G10-B05-P04",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Phát biểu nào đúng với **mọi** \\(0^\\circ\\le\\alpha\\le180^\\circ\\)?",
+    "answer_key": "B",
+    "worked_solution": "Trên nửa đường tròn đơn vị, \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\) luôn đúng vì điểm tương ứng cách gốc tọa độ đúng một đơn vị. A không xác định tại \\(0^\\circ,90^\\circ,180^\\circ\\); C sai vì côsin âm với góc tù; D sai vì \\(\\cot0^\\circ\\) và \\(\\cot180^\\circ\\) không xác định.",
+    "options": [
+      "A. \\(\\tan\\alpha\\cdot\\cot\\alpha=1\\)",
+      "B. \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\)",
+      "C. \\(\\cos\\alpha\\ge0\\)",
+      "D. \\(\\cot\\alpha\\) xác định với mọi \\(\\alpha\\)"
+    ],
+    "skill_ids": [
+      "G10-B05-IDENTITIES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Tìm công thức nào không có điều kiện mẫu khác 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B05-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận \\(\\tan\\alpha\\cdot\\cot\\alpha=1\\) với mọi góc, thử \\(\\alpha=0^\\circ,90^\\circ,180^\\circ\\) và kiểm mẫu của từng tỉ số. Ôn Bài 5 §2.1.3 / HELP-G10-B05-02; luyện THPT-G10-CHIII-TRY03."
+  },
+  {
+    "item_id": "THPT-G10-B05-P05",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Dùng máy tính ở chế độ DEG. Trong \\([0^\\circ;180^\\circ]\\), tất cả các góc \\(\\alpha\\) thỏa \\(\\sin\\alpha=0{,}7\\) là những góc nào? Làm tròn đến \\(0{,}1^\\circ\\).",
+    "answer_key": "C",
+    "worked_solution": "Dùng chức năng SIN⁻¹ ở chế độ DEG, được góc chính \\(\\alpha_1\\approx44{,}4270^\\circ\\). Trên nửa đường tròn đơn vị, đường ngang có tung độ \\(0{,}7\\) cắt đúng hai điểm đối xứng qua Oy. Góc còn lại là \\(\\alpha_2=180^\\circ-\\alpha_1\\approx135{,}5730^\\circ\\). Làm tròn ở cuối: \\(44{,}4^\\circ\\) và \\(135{,}6^\\circ\\).",
+    "options": [
+      "A. Chỉ \\(44{,}4^\\circ\\)",
+      "B. Chỉ \\(135{,}6^\\circ\\)",
+      "C. \\(44{,}4^\\circ\\) và \\(135{,}6^\\circ\\)",
+      "D. \\(44{,}4^\\circ\\) và \\(45{,}6^\\circ\\)"
+    ],
+    "skill_ids": [
+      "G10-B05-SUPPLEMENTARY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Kiểm DEG, tìm góc chính rồi góc bù; chỉ làm tròn cuối cùng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B05-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ lấy một góc hoặc sai DEG, kiểm chế độ máy, xét góc bù và tính sin của cả hai góc trước khi làm tròn. Ôn Bài 5 §2.1.4 / HELP-G10-B05-03; luyện THPT-G10-CHIII-TRY11."
+  },
+  {
+    "item_id": "THPT-G10-B05-P06",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Góc tù \\(\\alpha\\) thỏa \\(\\tan\\alpha=-2\\). Tính \\(\\sin\\alpha,\\cos\\alpha,\\cot\\alpha\\).",
+    "answer_key": "\\(\\sin\\alpha=\\frac2{\\sqrt5},\\ \\cos\\alpha=-\\frac1{\\sqrt5},\\ \\cot\\alpha=-\\frac12\\).",
+    "worked_solution": "Vì góc tù nên \\(\\cos\\alpha<0\\), \\(\\sin\\alpha>0\\). Từ \\(1+\\tan^2\\alpha=\\frac1{\\cos^2\\alpha}\\), suy ra \\(\\cos^2\\alpha=\\frac15\\), do đó \\(\\cos\\alpha=-\\frac1{\\sqrt5}\\). Suy ra \\(\\sin\\alpha=\\tan\\alpha\\cdot\\cos\\alpha=\\frac2{\\sqrt5}\\). Vì \\(\\tan\\alpha\\ne0\\), \\(\\cot\\alpha=\\frac1{\\tan\\alpha}=-\\frac12\\).",
+    "skill_ids": [
+      "G10-B05-SIGN_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Dùng \\(1+\\tan^2\\alpha=\\frac1{\\cos^2\\alpha}\\); xác định dấu côsin của góc tù."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B05-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cos dương, phác nửa đường tròn góc tù; kiểm dấu và \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\), \\(\\tan\\alpha\\cdot\\cot\\alpha=1\\) khi cả hai tỉ số xác định. Ôn Bài 5 §2.2.2; luyện THPT-G10-B05-P02."
+  },
+  {
+    "item_id": "THPT-G10-B06-C01",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Trong tam giác ABC có \\(b=5,c=7,A=60^\\circ\\). Tính \\(a\\).",
+    "answer_key": "A",
+    "worked_solution": "Biết hai cạnh b, c và góc A xen giữa, dùng định lí côsin: \\(a^2=b^2+c^2-2bc\\cos A=25+49-2\\cdot5\\cdot7\\cdot\\frac12=39\\). Vì a là độ dài cạnh, lấy \\(a=\\sqrt{39}\\).",
+    "options": [
+      "A. \\(\\sqrt{39}\\)",
+      "B. \\(\\sqrt{74}\\)",
+      "C. \\(\\sqrt{109}\\)",
+      "D. \\(\\sqrt{14}\\)"
+    ],
+    "skill_ids": [
+      "G10-B06-COSINE_RULE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "a đối diện A; dùng \\(a^2=b^2+c^2-2bc\\cos A\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B06-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ số hạng \\(-2bc\\cos A\\) hoặc ghép nhầm cạnh, chỉ cạnh \\(a=BC\\) đối diện A trên hình. Ôn Bài 6 §2.1.1 / HELP-G10-B06-01; luyện THPT-G10-CHIII-TRY06."
+  },
+  {
+    "item_id": "THPT-G10-B06-C02",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Tam giác có \\(b=8,c=5,A=30^\\circ\\). Diện tích \\(S\\) bằng bao nhiêu?",
+    "answer_key": "B",
+    "worked_solution": "Lấy c làm đáy; chiều cao tương ứng là \\(b\\sin A\\). Do đó \\(S=\\frac12bc\\sin A=\\frac12\\cdot8\\cdot5\\cdot\\sin30^\\circ=10\\).",
+    "options": [
+      "A. 20",
+      "B. 10",
+      "C. 40",
+      "D. 5"
+    ],
+    "skill_ids": [
+      "G10-B06-AREA_SIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Diện tích qua hai cạnh b,c và góc A xen giữa."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B06-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng cos thay sin, dựng chiều cao \\(b\\sin A\\) tương ứng với đáy c. Ôn Bài 6 §2.4.2; luyện THPT-G10-CHIII-TRY08."
+  },
+  {
+    "item_id": "THPT-G10-B06-P01",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Cho tam giác ABC có \\(A=45^\\circ,\\ B=30^\\circ,\\ a=8\\). Tính b và bán kính đường tròn ngoại tiếp R.",
+    "answer_key": "\\(b=4\\sqrt2;\\ R=4\\sqrt2\\).",
+    "worked_solution": "Biết cạnh a và góc đối diện A, áp dụng định lí sin: \\(\\frac{b}{\\sin B}=\\frac{a}{\\sin A}=2R\\). Suy ra \\(b=\\frac{8\\sin30^\\circ}{\\sin45^\\circ}=4\\sqrt2\\) và \\(2R=\\frac8{\\sin45^\\circ}=8\\sqrt2\\), nên \\(R=4\\sqrt2\\). Vì \\(B<A\\) nên \\(b<a\\), phù hợp với kết quả.",
+    "skill_ids": [
+      "G10-B06-SINE_RULE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Dùng \\(\\frac b{\\sin B}=\\frac a{\\sin A}=2R\\); phân biệt R với 2R."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B06-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm R với 2R, viết cả chuỗi \\(\\frac a{\\sin A}=\\frac b{\\sin B}=2R\\) trước khi thay. Ôn Bài 6 §2.2.1; luyện THPT-G10-CHIII-TRY07."
+  },
+  {
+    "item_id": "THPT-G10-B06-P02",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Tam giác cân có các cạnh 5,5,6. Tính S, bán kính nội tiếp r và bán kính ngoại tiếp R.",
+    "answer_key": "\\(S=12;\\ r=\\frac32;\\ R=\\frac{25}{8}\\).",
+    "worked_solution": "Ba cạnh dương, cạnh lớn nhất bằng 6 và \\(5+5>6\\), nên tạo thành tam giác. Nửa chu vi \\(p=\\frac{5+5+6}{2}=8\\). Theo công thức Heron, \\(S=\\sqrt{8\\cdot3\\cdot3\\cdot2}=12\\). Từ \\(S=pr\\), suy ra \\(r=\\frac{12}{8}=\\frac32\\). Từ \\(S=\\frac{abc}{4R}\\), suy ra \\(R=\\frac{5\\cdot5\\cdot6}{4\\cdot12}=\\frac{25}{8}\\). Chú ý r là bán kính nội tiếp, R là bán kính ngoại tiếp.",
+    "skill_ids": [
+      "G10-B06-HERON"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Kiểm bất đẳng thức tam giác; dùng Heron rồi hai hệ thức diện tích theo r và R."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B06-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng chu vi thay nửa chu vi hoặc lẫn r và R, viết \\(p=\\frac{a+b+c}{2}\\), \\(S=pr\\) và \\(S=\\frac{abc}{4R}\\). Ôn Bài 6 §2.4.1–2.4.4 / HELP-G10-B06-02; luyện THPT-G10-CHIII-TRY09."
+  },
+  {
+    "item_id": "THPT-G10-B06-P03",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Cho tam giác ABC có \\(A=30^\\circ,\\ a=5,\\ b=5\\sqrt3\\). Tìm tất cả các số đo B, C và độ dài c có thể có. Giải thích vì sao có thể có nhiều tam giác.",
+    "answer_key": "Hai trường hợp: \\(B=60^\\circ,\\ C=90^\\circ,\\ c=10\\); hoặc \\(B=120^\\circ,\\ C=30^\\circ,\\ c=5\\).",
+    "worked_solution": "Định lí sin cho \\(\\sin B=\\frac{b\\sin A}{a}=\\frac{\\sqrt3}{2}\\). Vì \\(0^\\circ<B<180^\\circ\\), có hai khả năng \\(B=60^\\circ\\) hoặc \\(B=120^\\circ\\). Cả hai đều thỏa \\(A+B<180^\\circ\\), nên đều tạo được tam giác với các góc dương. Trường hợp 1: \\(C=90^\\circ\\), \\(c=\\frac{a\\sin C}{\\sin A}=10\\). Trường hợp 2: \\(C=30^\\circ\\), \\(c=10\\sin30^\\circ=5\\). Kiểm lại bằng định lí côsin: \\(b^2+c^2-2bc\\cos A=25=a^2\\) ở cả hai trường hợp. Không chỉ chọn góc nhọn do máy tính trả về.",
+    "skill_ids": [
+      "G10-B06-SINE_RULE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Tìm \\(\\sin B\\) từ định lí sin; xét cả góc bù và kiểm \\(A+B<180^\\circ\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B06-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ lấy \\(B=60^\\circ\\), xét góc bù \\(120^\\circ\\) và kiểm \\(A+B<180^\\circ\\). Ôn Bài 6 §2.2.2; luyện THPT-G10-CHIII-TRY07 và THPT-G10-B05-P05."
+  },
+  {
+    "item_id": "THPT-G10-B06-P04",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Tam giác có ba cạnh \\(a=7,b=8,c=9\\). Tính \\(\\cos C\\) và diện tích \\(S\\).",
+    "answer_key": "\\(\\cos C=\\frac27,\\ S=12\\sqrt5\\).",
+    "worked_solution": "Các cạnh dương và \\(7+8>9\\) nên tạo thành tam giác. Theo định lí côsin, \\(\\cos C=\\frac{a^2+b^2-c^2}{2ab}=\\frac{49+64-81}{112}=\\frac27\\). Nửa chu vi \\(p=\\frac{7+8+9}{2}=12\\). Theo Heron, \\(S=\\sqrt{12\\cdot5\\cdot4\\cdot3}=12\\sqrt5\\).",
+    "skill_ids": [
+      "G10-B06-HERON"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Định lí côsin cho góc C; dùng Heron với \\(p=12\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B06-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ghép sai góc C hoặc tính Heron sai, đánh dấu cạnh c đối diện C, kiểm ba cạnh rồi tính p. Ôn Bài 6 §2.1.2, §2.4.4; luyện THPT-G10-B06-P02."
+  },
+  {
+    "item_id": "THPT-G10-B06-P05",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Hai người khảo sát đứng tại A, B cách nhau 100 m, ngắm điểm C bên kia khu vực khó tiếp cận. Trong tam giác ABC, \\(A=40^\\circ,\\ B=65^\\circ\\). Tính BC và AC, làm tròn đến 0,1 m.",
+    "answer_key": "\\(BC\\approx66{,}5\\,\\mathrm m;\\ AC\\approx93{,}8\\,\\mathrm m\\).",
+    "worked_solution": "Tính góc còn lại: \\(C=180^\\circ-40^\\circ-65^\\circ=75^\\circ\\). Vì AB đối diện góc C, định lí sin cho \\(\\frac{BC}{\\sin A}=\\frac{AC}{\\sin B}=\\frac{AB}{\\sin C}\\). Suy ra \\(BC=\\frac{100\\sin40^\\circ}{\\sin75^\\circ}\\approx66{,}5\\,\\mathrm m\\) và \\(AC=\\frac{100\\sin65^\\circ}{\\sin75^\\circ}\\approx93{,}8\\,\\mathrm m\\) (máy DEG, làm tròn cuối bước). Vì \\(A<B<C\\), ta có \\(BC<AC<AB\\), phù hợp với thứ tự cạnh đối diện góc.",
+    "skill_ids": [
+      "G10-B06-APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Tính C, ghép đúng cạnh đối diện góc, dùng DEG và chỉ làm tròn ở cuối."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B06-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu xem AB là cạnh huyền khi C không vuông, tính góc C và dùng tỉ số sin đúng cặp cạnh–góc; kiểm thứ tự cạnh. Ôn Bài 6 §2.3.2 và ví dụ 3.4; luyện THPT-G10-CHIII-TRY10."
+  },
+  {
+    "item_id": "THPT-G10-B06-P06",
+    "content_version": "THPT-G10-CHIII-R01",
+    "stem": "Hai tam giác có cùng hai cạnh kề góc A là \\(b=5\\), \\(c=6\\), cùng diện tích \\(S=\\frac{15}{2}\\). (a) Tìm tất cả giá trị có thể của góc A và cạnh đối diện a. (b) Một người cho rằng cùng hai cạnh và cùng diện tích thì hai tam giác phải bằng nhau. Dùng kết quả ở (a) để nhận xét. (c) Nếu biết thêm A là góc tù, xác định duy nhất cạnh a.",
+    "answer_key": "\\(A=30^\\circ,\\ a=\\sqrt{61-30\\sqrt3}\\) hoặc \\(A=150^\\circ,\\ a=\\sqrt{61+30\\sqrt3}\\). Hai cạnh a khác nhau nên hai tam giác không bằng nhau; nếu A tù thì \\(a=\\sqrt{61+30\\sqrt3}\\).",
+    "worked_solution": "Vì diện tích tam giác là \\(S=\\frac12bc\\sin A\\), ta có \\(\\frac{15}{2}=15\\sin A\\), suy ra \\(\\sin A=\\frac12\\). Với góc trong tam giác, \\(0^\\circ<A<180^\\circ\\), nên có đúng hai khả năng \\(A=30^\\circ\\) hoặc \\(A=150^\\circ\\). Cả hai góc đều tạo được tam giác không suy biến với hai cạnh kề 5 và 6. Theo định lí côsin, \\(a^2=b^2+c^2-2bc\\cos A=61-60\\cos A\\). Với \\(A=30^\\circ\\), côsin bằng \\(\\frac{\\sqrt3}{2}\\), nên \\(a=\\sqrt{61-30\\sqrt3}\\). Với \\(A=150^\\circ\\), côsin bằng \\(-\\frac{\\sqrt3}{2}\\), nên \\(a=\\sqrt{61+30\\sqrt3}\\). Hai độ dài khác nhau dù diện tích bằng nhau: hai góc bù có cùng sin nhưng côsin trái dấu. Vì vậy hai tam giác không bằng nhau. Nếu biết A tù thì chỉ còn trường hợp \\(150^\\circ\\), xác định duy nhất cạnh a lớn hơn.",
+    "skill_ids": [
+      "G10-B06-COSINE_RULE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Dùng công thức diện tích để tìm sin A trước.",
+      "Xét đủ hai góc bù trong khoảng \\((0^\\circ;180^\\circ)\\), sau đó dùng định lí côsin."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+      "heading": "### THPT-G10-B06-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chiii-reviewed-formative-v1.js",
+        "blob": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Cùng diện tích không đồng nghĩa cùng góc xen giữa. Phải xét đủ góc nhọn và góc tù có cùng sin, rồi dùng côsin để xác định cạnh còn lại. Ôn Bài 6; luyện THPT-G10-CHIII-TRY08."
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY01",
+    "content_version": "SOURCE_BLOB_79f8101d34430bc0d672558115191a95875014a6_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trên nửa đường tròn đơn vị, với \\(\\alpha=180^\\circ\\), điểm \\(M\\) có tọa độ gì? Từ đó tìm \\(\\sin180^\\circ\\) và \\(\\cos180^\\circ\\).",
+    "answer_key": "M=(−1,0); sin180°=0; cos180°=−1.",
+    "worked_solution": "\\(M=(-1,0)\\) nên \\(\\sin180^\\circ=0\\), \\(\\cos180^\\circ=-1\\). Điểm nằm trên trục \\(Ox\\) âm: tung độ bằng 0, hoành độ bằng \\(-1\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B05-UNIT_SEMICIRCLE"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "79f8101d34430bc0d672558115191a95875014a6",
+      "heading_id": "THPT-G10-CHIII-TRY01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+        "blob": "79f8101d34430bc0d672558115191a95875014a6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY02",
+    "content_version": "SOURCE_BLOB_79f8101d34430bc0d672558115191a95875014a6_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Không dùng máy tính, tính \\(\\sin135^\\circ,\\cos135^\\circ\\). So với \\(45^\\circ\\), giá trị nào giữ nguyên, giá trị nào đổi dấu?",
+    "answer_key": "sin135°=√2/2; cos135°=−√2/2; sin giữ nguyên, cos đổi dấu so với 45°.",
+    "worked_solution": "\\(\\sin135^\\circ=\\frac{\\sqrt2}{2}\\), \\(\\cos135^\\circ=-\\frac{\\sqrt2}{2}\\). Sin giữ nguyên, cos đổi dấu do hai điểm trên nửa đường tròn đối xứng qua trục \\(Oy\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B05-SUPPLEMENTARY",
+      "G10-B05-SPECIAL_ANGLES"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "79f8101d34430bc0d672558115191a95875014a6",
+      "heading_id": "THPT-G10-CHIII-TRY02",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+        "blob": "79f8101d34430bc0d672558115191a95875014a6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY03",
+    "content_version": "SOURCE_BLOB_79f8101d34430bc0d672558115191a95875014a6_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong bốn giá trị \\(\\tan0^\\circ,\\cot0^\\circ,\\tan90^\\circ,\\cot90^\\circ\\), giá trị nào bằng 0 và giá trị nào không xác định? Giải thích bằng mẫu số.",
+    "answer_key": "tan0°=0; cot90°=0; cot0° và tan90° không xác định.",
+    "worked_solution": "\\(\\tan0^\\circ=0\\), \\(\\cot90^\\circ=0\\). \\(\\cot0^\\circ\\) và \\(\\tan90^\\circ\\) **không xác định** vì mẫu số bằng 0.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B05-SIGN_DOMAIN"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "79f8101d34430bc0d672558115191a95875014a6",
+      "heading_id": "THPT-G10-CHIII-TRY03",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+        "blob": "79f8101d34430bc0d672558115191a95875014a6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY04",
+    "content_version": "SOURCE_BLOB_79f8101d34430bc0d672558115191a95875014a6_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hai góc \\(40^\\circ\\) và \\(140^\\circ\\) có quan hệ nào giữa sin, cos, tan và cot? Có phải dùng máy tính tìm số thập phân không?",
+    "answer_key": "sin140°=sin40°; cos140°=−cos40°; tan140°=−tan40°; cot140°=−cot40°; không cần máy tính.",
+    "worked_solution": "\\(\\sin140^\\circ=\\sin40^\\circ\\), \\(\\cos140^\\circ=-\\cos40^\\circ\\), \\(\\tan140^\\circ=-\\tan40^\\circ\\), \\(\\cot140^\\circ=-\\cot40^\\circ\\). Cả tan và cot đều xác định ở 40° và 140°, không cần tính số thập phân.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B05-SUPPLEMENTARY"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "79f8101d34430bc0d672558115191a95875014a6",
+      "heading_id": "THPT-G10-CHIII-TRY04",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+        "blob": "79f8101d34430bc0d672558115191a95875014a6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY05",
+    "content_version": "SOURCE_BLOB_79f8101d34430bc0d672558115191a95875014a6_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Góc tù \\(\\alpha\\) có \\(\\cos\\alpha=-\\frac5{13}\\). Tìm \\(\\sin\\alpha\\), \\(\\tan\\alpha\\) và giải thích cách chọn dấu.",
+    "answer_key": "sinα=12/13; tanα=−12/5; sin dương vì α tù.",
+    "worked_solution": "\\(\\sin^2\\alpha=1-\\frac{25}{169}=\\frac{144}{169}\\). Vì \\(\\alpha\\) tù, \\(\\sin\\alpha>0\\), nên \\(\\sin\\alpha=\\frac{12}{13}\\). Do đó \\(\\tan\\alpha=(12/13)/(-5/13)=-\\frac{12}{5}\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B05-IDENTITIES",
+      "G10-B05-SIGN_DOMAIN"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "79f8101d34430bc0d672558115191a95875014a6",
+      "heading_id": "THPT-G10-CHIII-TRY05",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+        "blob": "79f8101d34430bc0d672558115191a95875014a6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY11",
+    "content_version": "SOURCE_BLOB_79f8101d34430bc0d672558115191a95875014a6_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Dùng máy ở DEG: (a) tính \\(\\cos127^\\circ\\), làm tròn đến bốn chữ số thập phân; (b) tìm **tất cả** góc \\(\\alpha\\in[0^\\circ,180^\\circ]\\) thỏa \\(\\sin\\alpha=0{,}4\\), làm tròn đến \\(0{,}1^\\circ\\). Vì sao \\(\\sin^{-1}\\) chỉ hiển thị một góc?",
+    "answer_key": "cos127°≈−0,6018; α≈23,6° hoặc 156,4°; máy cho góc chính, phải xét góc bù.",
+    "worked_solution": "(a) \\(\\cos127^\\circ\\approx-0{,}6018\\); dấu âm đúng vì góc tù. (b) \\(\\sin^{-1}(0{,}4)\\approx23{,}5782^\\circ\\), nên \\(\\alpha\\approx23{,}6^\\circ\\) hoặc \\(180^\\circ-23{,}5782^\\circ\\approx156{,}4^\\circ\\). Cả hai góc trong đoạn và có sin bằng \\(0{,}4\\). Máy chỉ hiện **góc chính**, còn góc bù phải xét bằng đối xứng. Nếu kết quả khác, kiểm lại DEG/RAD và quy tắc làm tròn.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B05-SUPPLEMENTARY"
+    ],
+    "original_outcome_ids": [
+      "G10-B05-CALCULATOR_ANGLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "79f8101d34430bc0d672558115191a95875014a6",
+      "heading_id": "THPT-G10-CHIII-TRY11",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+        "blob": "79f8101d34430bc0d672558115191a95875014a6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "help_ref": "HELP-G10-B05-03"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY06",
+    "content_version": "SOURCE_BLOB_2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Với \\(b=c=5\\) và \\(A=120^\\circ\\), hãy tính \\(a\\). Vì sao \\(a\\) dài hơn từng cạnh kề?",
+    "answer_key": "a=5√3, lớn hơn mỗi cạnh kề 5.",
+    "worked_solution": "\\(a^2=5^2+5^2-2\\cdot5\\cdot5\\cos120^\\circ=50+25=75\\), nên \\(a=5\\sqrt3\\). Vì \\(\\cos120^\\circ=-\\frac12<0\\), phần điều chỉnh được cộng thêm vào tổng hai bình phương, cho cạnh đối diện lớn hơn 5.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B06-COSINE_RULE"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+      "heading_id": "THPT-G10-CHIII-TRY06",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-6.md",
+        "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY07",
+    "content_version": "SOURCE_BLOB_2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho \\(A=30^\\circ\\), \\(a=5\\). Tìm bán kính ngoại tiếp \\(R\\). Chỉ từ hai dữ kiện này, có biết duy nhất \\(B,C\\) không?",
+    "answer_key": "R=5; không xác định duy nhất B,C (B+C=150°).",
+    "worked_solution": "\\(\\frac{a}{\\sin A}=2R=\\frac5{1/2}=10\\), nên \\(R=5\\). **Không xác định duy nhất** \\(B,C\\), vì mới biết \\(B+C=150^\\circ\\), vẫn có nhiều cách chọn hai góc dương có tổng này.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B06-SINE_RULE"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+      "heading_id": "THPT-G10-CHIII-TRY07",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-6.md",
+        "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY10",
+    "content_version": "SOURCE_BLOB_2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Với \\(AB=20\\sqrt2\\) m, hai góc tại \\(A,B\\) đều \\(45^\\circ\\), hãy tính \\(AC,BC\\) và khoảng cách vuông góc \\(CH\\) từ \\(C\\) đến đường thẳng \\(AB\\).",
+    "answer_key": "AC=BC=20 m; CH=10√2 m.",
+    "worked_solution": "\\(C=180^\\circ-45^\\circ-45^\\circ=90^\\circ\\), nên tam giác vuông cân tại C. \\(AC=BC=\\frac{AB}{\\sqrt2}=20\\) m. Diện tích \\(S=\\frac12\\cdot20\\cdot20=200\\) m², mặt khác \\(S=\\frac12 AB\\cdot CH\\). Vì vậy \\(CH=\\frac{400}{20\\sqrt2}=10\\sqrt2\\) m.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B06-APPLICATION"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+      "heading_id": "THPT-G10-CHIII-TRY10",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-6.md",
+        "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY08",
+    "content_version": "SOURCE_BLOB_2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hai tam giác có cùng hai cạnh kề \\(b=6,c=8\\), nhưng góc xen giữa lần lượt \\(A=30^\\circ\\) và \\(A=150^\\circ\\). Tính diện tích của mỗi tam giác, giải thích vì sao bằng nhau.",
+    "answer_key": "Cả hai diện tích bằng 12 vì sin30°=sin150°=1/2.",
+    "worked_solution": "Mỗi tam giác có diện tích \\(S=\\frac12\\cdot6\\cdot8\\cdot\\sin30^\\circ=12\\), vì \\(\\sin150^\\circ=\\sin30^\\circ=\\frac12\\). Hai tam giác không nhất thiết có cùng cạnh thứ ba.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B06-AREA_SIN"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+      "heading_id": "THPT-G10-CHIII-TRY08",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-6.md",
+        "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY09",
+    "content_version": "SOURCE_BLOB_2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Với ba cạnh \\((3,4,5)\\), hãy tính \\(S,r\\). Bộ ba \\((2,3,6)\\) có dùng Heron như một tam giác được không?",
+    "answer_key": "S=6, r=1; (2,3,6) không tạo thành tam giác.",
+    "worked_solution": "Với \\(3,4,5\\): \\(p=6\\), \\(S=\\sqrt{6\\cdot3\\cdot2\\cdot1}=6\\), \\(r=S/p=1\\). Bộ ba \\(2,3,6\\) **không tạo tam giác** vì \\(2+3\\le6\\), nên không dùng như một bài toán diện tích tam giác thực.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B06-HERON"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+      "heading_id": "THPT-G10-CHIII-TRY09",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-6.md",
+        "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  }
+]

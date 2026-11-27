@@ -1,0 +1,1226 @@
+[
+  {
+    "item_id": "THPT-G11-B05-C01",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Viết dãy hữu hạn gồm 5 số chính phương dương đầu tiên.",
+    "answer_key": "1; 4; 9; 16; 25.",
+    "worked_solution": "Số chính phương dương đầu tiên là bình phương của 1, rồi lần lượt của 2, 3, 4, 5. Công thức \\(u_n=n^2\\) với \\(n\\in\\{1;2;3;4;5\\}\\) cho dãy 1; 4; 9; 16; 25.",
+    "skill_ids": [
+      "G11-B05-SEQUENCE-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Bình phương từng số nguyên từ 1 đến 5."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-C01 · SGK_CORE · G11-B05-SEQUENCE-DEFINITION · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bắt đầu từ 0, nhớ đề chỉ lấy số chính phương dương. Ôn TOP07-M01; luyện THPT-TOP07-P01."
+  },
+  {
+    "item_id": "THPT-G11-B05-C02",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cho \\(u_n=4n-3\\) với \\(n\\ge1\\). Tìm \\(u_1\\) và \\(u_6\\).",
+    "answer_key": "\\(u_1=1;\\ u_6=21\\).",
+    "worked_solution": "Chỉ số n cho biết vị trí của số hạng. Thay \\(n=1\\) được \\(u_1=4\\cdot1-3=1\\); thay \\(n=6\\) được \\(u_6=4\\cdot6-3=21\\).",
+    "skill_ids": [
+      "G11-B05-EXPLICIT-TERM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Thay từng chỉ số vào công thức."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-C02 · SGK_CORE · G11-B05-EXPLICIT-TERM · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm số hạng thứ sáu với sáu lần số hạng đầu, thay n bằng 6 độc lập. Ôn TOP07-M02; luyện THPT-TOP07-P02."
+  },
+  {
+    "item_id": "THPT-G11-B05-C03",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cho \\(u_1=2,\\ u_{n+1}=u_n+5\\) với \\(n\\ge1\\). Viết 4 số hạng đầu.",
+    "answer_key": "2; 7; 12; 17.",
+    "worked_solution": "Bắt đầu từ 2, mỗi số hạng sau bằng số hạng ngay trước cộng 5. Lần lượt \\(u_2=2+5=7\\), \\(u_3=7+5=12\\), \\(u_4=12+5=17\\).",
+    "skill_ids": [
+      "G11-B05-RECURRENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Bắt đầu từ số hạng đầu, cộng 5 từng bước."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-C03 · SGK_CORE · G11-B05-RECURRENCE · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng thừa một lần, đếm ba bước từ số hạng đầu đến số hạng thứ tư. Ôn TOP07-M03; luyện THPT-TOP07-P03."
+  },
+  {
+    "item_id": "THPT-G11-B05-C04",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy \\(u_n=5-2n\\) với \\(n\\ge1\\) tăng hay giảm?",
+    "answer_key": "Giảm nghiêm ngặt.",
+    "worked_solution": "Với mọi \\(n\\ge1\\), \\(u_{n+1}-u_n=5-2(n+1)-(5-2n)=-2<0\\). Vì số hạng sau luôn nhỏ hơn số hạng trước, dãy giảm.",
+    "skill_ids": [
+      "G11-B05-MONOTONICITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Tính hiệu \\(u_{n+1}-u_n\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-C04 · SGK_CORE · G11-B05-MONOTONICITY · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ nhìn vài số đầu, chứng minh hiệu âm với mọi chỉ số nguyên dương. Ôn TOP07-M04; luyện THPT-TOP07-P04."
+  },
+  {
+    "item_id": "THPT-G11-B05-P01",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy \\(u_n=5n+2\\) với \\(n\\ge1\\) có số hạng bằng 87 không? Nếu có, đó là số hạng thứ mấy?",
+    "answer_key": "Có, số hạng thứ 17.",
+    "worked_solution": "Giải \\(5n+2=87\\), được \\(n=17\\). Vì 17 là số nguyên dương, chỉ số hợp lệ. Thay lại \\(u_{17}=87\\).",
+    "skill_ids": [
+      "G11-B05-EXPLICIT-TERM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Giải phương trình theo n rồi kiểm chỉ số nguyên dương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P01 · SGK_PRACTICE · G11-B05-EXPLICIT-TERM · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận chỉ số không nguyên, số đó không phải vị trí của một số hạng. Ôn TOP07-M02; luyện THPT-TOP07-P02."
+  },
+  {
+    "item_id": "THPT-G11-B05-P02",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cho \\(u_1=1,\\ u_{n+1}=2u_n+1\\) với \\(n\\ge1\\). Tìm \\(u_4\\).",
+    "answer_key": "\\(u_4=15\\).",
+    "worked_solution": "Từ số hạng đầu, tính \\(u_2=2\\cdot1+1=3\\), \\(u_3=2\\cdot3+1=7\\), \\(u_4=2\\cdot7+1=15\\). Mỗi bước nhân số hạng trước với 2 rồi cộng 1.",
+    "skill_ids": [
+      "G11-B05-RECURRENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Viết ba bước truy hồi liên tiếp."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P02 · SGK_PRACTICE · G11-B05-RECURRENCE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm \\(2u_n+1\\) thành \\(2(u_n+1)\\), khai triển và kiểm số hạng thứ hai. Ôn TOP07-M03; luyện THPT-TOP07-P03."
+  },
+  {
+    "item_id": "THPT-G11-B05-P03",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Chứng minh dãy \\(u_n=\\frac3{n+2}\\) giảm với mọi \\(n\\ge1\\).",
+    "answer_key": "Dãy giảm nghiêm ngặt.",
+    "worked_solution": "Với mọi \\(n\\ge1\\), hai mẫu đều dương và \\(u_{n+1}-u_n=\\frac3{n+3}-\\frac3{n+2}=\\frac{-3}{(n+2)(n+3)}<0\\). Vậy dãy giảm.",
+    "skill_ids": [
+      "G11-B05-MONOTONICITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Quy đồng hiệu hai số hạng liên tiếp."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P03 · SGK_PRACTICE · G11-B05-MONOTONICITY · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đảo hiệu, viết số hạng sau trừ số hạng trước rồi kiểm mẫu dương. Ôn TOP07-M04; luyện THPT-TOP07-P04."
+  },
+  {
+    "item_id": "THPT-G11-B05-P04",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Xác định một cận trên và một cận dưới của \\(u_n=2-\\frac1n\\) với \\(n\\ge1\\).",
+    "answer_key": "\\(1\\le u_n<2\\); cận dưới 1, cận trên 2.",
+    "worked_solution": "Với mọi \\(n\\ge1\\), \\(0<\\frac1n\\le1\\). Đổi dấu rồi cộng 2 được \\(1\\le2-\\frac1n<2\\). Số 1 đạt tại n bằng 1; số 2 là một cận trên dù không có số hạng nào bằng 2.",
+    "skill_ids": [
+      "G11-B05-BOUNDS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Dùng \\(0<\\frac1n\\le1\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P04 · SGK_PRACTICE · G11-B05-BOUNDS · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận 2 là số hạng, kiểm phân số \\(\\frac1n\\) luôn dương. Ôn TOP07-M05; luyện THPT-TOP07-P05."
+  },
+  {
+    "item_id": "THPT-G11-B05-P05",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy \\(u_n=(-1)^n\\) với \\(n\\ge1\\) có tăng, giảm hay bị chặn không?",
+    "answer_key": "Không tăng, không giảm; bị chặn bởi −1 và 1.",
+    "worked_solution": "Các số hạng luân phiên −1, 1, −1, 1, ... . Vì \\(u_1<u_2\\) nhưng \\(u_2>u_3\\), dãy không tăng và không giảm. Mọi số hạng thỏa \\(-1\\le u_n\\le1\\), nên dãy bị chặn.",
+    "skill_ids": [
+      "G11-B05-SEQUENCE-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xét n chẵn, n lẻ rồi so các số hạng liên tiếp."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P05 · SGK_PRACTICE · G11-B05-SEQUENCE-DEFINITION · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho rằng bị chặn thì phải đơn điệu, chỉ ra hai cặp liên tiếp ngược chiều. Ôn TOP07-M05; luyện THPT-TOP07-P05."
+  },
+  {
+    "item_id": "THPT-G11-B05-P06",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Một khán phòng có hàng ghế thứ n gồm \\(10+2(n-1)\\) ghế; có 12 hàng. Hỏi hàng cuối có bao nhiêu ghế?",
+    "answer_key": "32 ghế.",
+    "worked_solution": "Hàng cuối có chỉ số 12. Thay vào công thức được \\(10+2(12-1)=10+22=32\\) ghế. Đề chỉ hỏi một hàng, không hỏi tổng.",
+    "skill_ids": [
+      "G11-B05-EXPLICIT-TERM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Thay n bằng 12, không tính tổng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P06 · SGK_PRACTICE · G11-B05-EXPLICIT-TERM · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhân số ghế hàng cuối với 12, đọc lại câu hỏi chỉ yêu cầu một hàng. Ôn TOP07-M02; luyện THPT-TOP07-P02."
+  },
+  {
+    "item_id": "THPT-G11-B05-P07",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cho \\(u_1=4,\\ u_{n+1}=3u_n-2\\) với \\(n\\ge1\\). Tính \\(u_3\\).",
+    "answer_key": "\\(u_3=28\\).",
+    "worked_solution": "Tính theo thứ tự \\(u_2=3\\cdot4-2=10\\), rồi \\(u_3=3\\cdot10-2=28\\).",
+    "skill_ids": [
+      "G11-B05-RECURRENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Tính số hạng thứ hai trước."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P07 · SGK_PRACTICE · G11-B05-RECURRENCE · ADVANCED",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thay chỉ số vào công thức truy hồi thay cho giá trị số hạng, kiểm \\(u_2=10\\). Ôn TOP07-M03; luyện THPT-TOP07-P03."
+  },
+  {
+    "item_id": "THPT-G11-B05-P08",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Chứng minh \\(u_n=\\frac n{n+1}\\) với \\(n\\ge1\\) bị chặn và tìm một khoảng chứa mọi số hạng.",
+    "answer_key": "\\([\\frac12;1)\\).",
+    "worked_solution": "Viết \\(u_n=1-\\frac1{n+1}\\). Vì \\(n\\ge1\\), có \\(0<\\frac1{n+1}\\le\\frac12\\). Suy ra \\(\\frac12\\le u_n<1\\). Mọi số hạng nằm trong \\([\\frac12;1)\\), nên dãy bị chặn.",
+    "skill_ids": [
+      "G11-B05-BOUNDS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Viết \\(u_n=1-\\frac1{n+1}\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P08 · SGK_PRACTICE · G11-B05-BOUNDS · ADVANCED",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho cận trên 1 được đạt, kiểm phân số bị trừ luôn dương. Ôn TOP07-M05; luyện THPT-TOP07-P05."
+  },
+  {
+    "item_id": "THPT-G11-B06-C01",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cho \\(u_n=15-4n\\), \\(n\\ge1\\). Chứng minh đây là cấp số cộng và tìm công sai.",
+    "answer_key": "Là cấp số cộng, \\(d=-4\\).",
+    "worked_solution": "Với mọi \\(n\\ge1\\), \\(u_{n+1}-u_n=15-4(n+1)-(15-4n)=-4\\). Hiệu cố định nên dãy là cấp số cộng có công sai −4 và \\(u_1=11\\). Chỉ liệt kê vài số đầu chưa đủ để chứng minh quy luật cho toàn dãy.",
+    "skill_ids": [
+      "G11-B06-AP-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Kiểm hiệu hai số hạng liên tiếp với n bất kì."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-C01 · SGK_CORE · G11-B06-AP-DEFINITION · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ biết vài số đầu, cần chứng minh quy luật chung cho mọi n. Ôn TOP07-M06; luyện THPT-TOP07-P06."
+  },
+  {
+    "item_id": "THPT-G11-B06-C02",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cấp số cộng có \\(u_1=6,\\ d=3\\). Tìm \\(u_9\\).",
+    "answer_key": "\\(u_9=30\\).",
+    "worked_solution": "Từ số hạng đầu đến số hạng thứ chín có 8 bước cộng công sai. Theo công thức \\(u_n=u_1+(n-1)d\\), ta có \\(u_9=6+8\\cdot3=30\\).",
+    "skill_ids": [
+      "G11-B06-AP-NTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đếm số bước từ vị trí đầu đến vị trí thứ chín."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-C02 · SGK_CORE · G11-B06-AP-NTH · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng chín lần công sai, kiểm \\(u_2=u_1+d\\). Ôn TOP07-M07; luyện THPT-TOP07-P07."
+  },
+  {
+    "item_id": "THPT-G11-B06-C03",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cấp số cộng có \\(u_1=2,\\ d=2\\). Tính \\(S_5\\) là tổng 5 số hạng đầu.",
+    "answer_key": "\\(S_5=30\\).",
+    "worked_solution": "Năm số hạng là 2, 4, 6, 8, 10. Dùng công thức tổng \\(S_5=\\frac{5(2+10)}2=30\\), cũng đúng bằng tổng trực tiếp.",
+    "skill_ids": [
+      "G11-B06-AP-SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Tìm số hạng cuối rồi dùng công thức tổng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-C03 · SGK_CORE · G11-B06-AP-SUM · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy số hạng thứ năm làm tổng, phân biệt một số hạng và tổng năm số hạng. Ôn TOP07-M09; luyện THPT-TOP07-P09."
+  },
+  {
+    "item_id": "THPT-G11-B06-C04",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Tìm x để 6, x, 14 theo thứ tự là ba số hạng liên tiếp của một cấp số cộng.",
+    "answer_key": "\\(x=10\\).",
+    "worked_solution": "Hai hiệu liên tiếp phải bằng nhau: \\(x-6=14-x\\). Suy ra \\(2x=20\\), tức \\(x=10\\). Kiểm tra hai hiệu đều bằng 4.",
+    "skill_ids": [
+      "G11-B06-AP-THREE-TERMS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Cho hai hiệu liên tiếp bằng nhau."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-C04 · SGK_CORE · G11-B06-AP-THREE-TERMS · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy trung bình của cả ba số, viết \\(x-6=14-x\\). Ôn TOP07-M08; luyện THPT-TOP07-P08."
+  },
+  {
+    "item_id": "THPT-G11-B06-P01",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cấp số cộng có \\(u_3=10,\\ u_8=30\\). Tìm công sai và \\(u_1\\).",
+    "answer_key": "\\(d=4,\\ u_1=2\\).",
+    "worked_solution": "Từ số hạng thứ ba đến thứ tám có 5 bước, nên \\(u_8-u_3=5d=20\\). Suy ra \\(d=4\\). Vì \\(u_3=u_1+2d\\), có \\(u_1=10-8=2\\).",
+    "skill_ids": [
+      "G11-B06-AP-NTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Lấy hiệu hai số hạng đã biết, chia số bước giữa hai chỉ số."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P01 · SGK_PRACTICE · G11-B06-AP-NTH · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng bảy bước, kiểm chênh lệch chỉ số là 5. Ôn TOP07-M08; luyện THPT-TOP07-P08."
+  },
+  {
+    "item_id": "THPT-G11-B06-P02",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy \\(u_n=3n^2+1\\) với \\(n\\ge1\\) có phải cấp số cộng không?",
+    "answer_key": "Không.",
+    "worked_solution": "Ta có \\(u_{n+1}-u_n=3(n+1)^2+1-(3n^2+1)=6n+3\\). Hiệu thay đổi theo n, chẳng hạn bằng 9 khi n bằng 1 và bằng 15 khi n bằng 2. Vì hiệu không cố định, dãy không phải cấp số cộng.",
+    "skill_ids": [
+      "G11-B06-AP-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Tính hiệu tổng quát, không chỉ xét dãy có tăng không."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P02 · SGK_PRACTICE · G11-B06-AP-DEFINITION · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho dãy tăng là cấp số cộng, kiểm hiệu phụ thuộc n. Ôn TOP07-M06; luyện THPT-TOP07-P06."
+  },
+  {
+    "item_id": "THPT-G11-B06-P03",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cấp số cộng có \\(u_1=9,\\ d=-2\\). Tính \\(S_8\\).",
+    "answer_key": "\\(S_8=16\\).",
+    "worked_solution": "Số hạng thứ tám là \\(u_8=9+7(-2)=-5\\). Tổng tám số hạng đầu là \\(S_8=\\frac{8(9+(-5))}{2}=16\\). Các số hạng âm vẫn được cộng theo dấu của chúng.",
+    "skill_ids": [
+      "G11-B06-AP-SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Tìm số hạng thứ tám rồi dùng công thức tổng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P03 · SGK_PRACTICE · G11-B06-AP-SUM · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ số hạng âm, nhớ tổng đại số bao gồm cả các số đó. Ôn TOP07-M09; luyện THPT-TOP07-P09."
+  },
+  {
+    "item_id": "THPT-G11-B06-P04",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cấp số cộng có \\(u_1=-5,\\ d=4\\) có số hạng nào bằng 39 không?",
+    "answer_key": "Có, số hạng thứ 12.",
+    "worked_solution": "Giải \\(-5+4(n-1)=39\\), được \\(4(n-1)=44\\), nên \\(n=12\\). Chỉ số nguyên dương và thay lại cho 39.",
+    "skill_ids": [
+      "G11-B06-AP-NTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Giải phương trình theo chỉ số rồi kiểm tính hợp lệ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P04 · SGK_PRACTICE · G11-B06-AP-NTH · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên cộng lại 1, thay chỉ số tìm được vào công thức. Ôn TOP07-M07; luyện THPT-TOP07-P07."
+  },
+  {
+    "item_id": "THPT-G11-B06-P05",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Ba số \\(2x-1,\\ x+5,\\ 3x+1\\) theo thứ tự là ba số hạng liên tiếp của cấp số cộng. Tìm x.",
+    "answer_key": "\\(x=\\frac{10}{3}\\).",
+    "worked_solution": "Số giữa bằng trung bình cộng của hai đầu. Do đó \\(2(x+5)=(2x-1)+(3x+1)=5x\\). Giải \\(2x+10=5x\\) được \\(x=\\frac{10}{3}\\).",
+    "skill_ids": [
+      "G11-B06-AP-THREE-TERMS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Viết hai lần số giữa bằng tổng hai đầu."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P05 · SGK_PRACTICE · G11-B06-AP-THREE-TERMS · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ dấu trừ của hạng tử đầu, khai triển từng biểu thức. Ôn TOP07-M08; luyện THPT-TOP07-P08."
+  },
+  {
+    "item_id": "THPT-G11-B06-P06",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Tiền thưởng tháng đầu là 1,2 triệu đồng; mỗi tháng sau tăng 0,1 triệu đồng so với tháng trước. Tính tổng thưởng 10 tháng.",
+    "answer_key": "16,5 triệu đồng.",
+    "worked_solution": "Tiền thưởng từng tháng tạo cấp số cộng với \\(u_1=1{,}2,\\ d=0{,}1\\) (triệu đồng). Tháng thứ mười nhận \\(u_{10}=1{,}2+9\\cdot0{,}1=2{,}1\\). Tổng là \\(S_{10}=\\frac{10(1{,}2+2{,}1)}2=16{,}5\\) triệu đồng.",
+    "skill_ids": [
+      "G11-B06-AP-APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Tính tháng thứ mười rồi tổng mười tháng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P06 · SGK_PRACTICE · G11-B06-AP-APPLICATION · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm tiền tháng cuối với tổng, ghi rõ từng đại lượng và đơn vị. Ôn TOP07-M10; luyện THPT-TOP07-P10."
+  },
+  {
+    "item_id": "THPT-G11-B06-P07",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cấp số cộng có \\(d=-3,\\ u_5=13\\). Tính \\(S_{12}\\).",
+    "answer_key": "\\(S_{12}=102\\).",
+    "worked_solution": "Từ \\(u_5=u_1+4d\\), suy ra \\(u_1=13-4(-3)=25\\). Số hạng cuối là \\(u_{12}=25+11(-3)=-8\\). Vậy \\(S_{12}=\\frac{12(25-8)}2=102\\).",
+    "skill_ids": [
+      "G11-B06-AP-SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Tìm số hạng đầu và cuối rồi tính tổng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P07 · SGK_PRACTICE · G11-B06-AP-SUM · ADVANCED",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm dấu của công sai −3, thế ngược để kiểm số hạng thứ năm. Ôn TOP07-M09; luyện THPT-TOP07-P09."
+  },
+  {
+    "item_id": "THPT-G11-B06-P08",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Một khán phòng dự kiến có hàng đầu 20 ghế, mỗi hàng sau nhiều hơn hàng trước đúng 2 ghế. (a) Lập công thức tổng số ghế nếu có n hàng, với n là số nguyên dương. (b) Tìm số hàng ít nhất để có ít nhất 500 ghế. (c) Có thể bố trí đúng 500 ghế theo quy luật này mà không bỏ bớt ghế ở bất kì hàng nào không?",
+    "answer_key": "\\(S_n=n(n+19)\\). Cần ít nhất 15 hàng, có 510 ghế. Không thể có đúng 500 ghế theo quy luật đã cho.",
+    "worked_solution": "Số ghế từng hàng lập thành cấp số cộng với \\(u_1=20\\), \\(d=2\\). Hàng thứ n có \\(u_n=20+2(n-1)=2n+18\\) ghế. Tổng n hàng là \\(S_n=\\frac{n(20+2n+18)}2=n(n+19)\\). Vì mỗi hàng được thêm đều có số ghế dương, tổng tăng nghiêm ngặt theo n. Tính \\(S_{14}=14\\cdot33=462\\) và \\(S_{15}=15\\cdot34=510\\). Do \\(462<500<510\\), mọi phương án có không quá 14 hàng đều thiếu chỗ, còn 15 hàng đã đủ; đó là số hàng nhỏ nhất. Cũng vì n chỉ nhận giá trị nguyên dương và tổng tăng nghiêm ngặt, không có số hàng nào cho đúng 500 ghế. Không được làm tròn số hàng tùy ý mà chưa kiểm lại sức chứa.",
+    "skill_ids": [
+      "G11-B06-AP-APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Viết số ghế hàng thứ n rồi áp dụng công thức tổng cấp số cộng.",
+      "So tổng của hai số hàng nguyên liên tiếp nằm hai phía ngưỡng 500."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P08 · SGK_PRACTICE · G11-B06-AP-APPLICATION · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Phân biệt yêu cầu ít nhất với đúng bằng. Giữ điều kiện n nguyên dương và kiểm hai tổng liên tiếp để chứng minh tính tối thiểu. Ôn TOP07-M10; luyện THPT-TOP07-P10."
+  },
+  {
+    "item_id": "THPT-G11-B07-C01",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cho \\(u_n=5\\cdot3^{n-1}\\) với \\(n\\ge1\\). Chứng minh đây là cấp số nhân và tìm công bội.",
+    "answer_key": "Là cấp số nhân, \\(q=3\\).",
+    "worked_solution": "Với mọi \\(n\\ge1\\), \\(u_{n+1}=5\\cdot3^n=3(5\\cdot3^{n-1})=3u_n\\). Theo định nghĩa, dãy là cấp số nhân với công bội 3. Chỉ liệt kê vài số đầu chưa đủ chứng minh quy luật của cả dãy.",
+    "skill_ids": [
+      "G11-B07-GP-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Kiểm hệ thức nhân cùng một công bội với mọi n."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-C01 · SGK_CORE · G11-B07-GP-DEFINITION · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ nhìn vài số đầu, chứng minh hệ thức chung. Ôn TOP07-M11; luyện THPT-TOP07-P11."
+  },
+  {
+    "item_id": "THPT-G11-B07-C02",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cấp số nhân có \\(u_1=4,\\ q=2\\). Tìm \\(u_6\\).",
+    "answer_key": "\\(u_6=128\\).",
+    "worked_solution": "Từ số đầu đến số hạng thứ sáu có 5 lần nhân công bội. Dùng \\(u_n=u_1q^{n-1}\\), được \\(u_6=4\\cdot2^5=128\\).",
+    "skill_ids": [
+      "G11-B07-GP-NTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đếm số lần nhân từ vị trí đầu đến vị trí thứ sáu."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-C02 · SGK_CORE · G11-B07-GP-NTH · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng số mũ 6, kiểm có năm lần nhân. Ôn TOP07-M12; luyện THPT-TOP07-P12."
+  },
+  {
+    "item_id": "THPT-G11-B07-C03",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cấp số nhân có \\(u_1=3,\\ q=2\\). Tính \\(S_4\\).",
+    "answer_key": "\\(S_4=45\\).",
+    "worked_solution": "Bốn số hạng đầu là 3, 6, 12, 24, tổng 45. Dùng công thức tổng hữu hạn khi \\(q\\ne1\\) cũng được \\(S_4=\\frac{3(1-2^4)}{1-2}=45\\).",
+    "skill_ids": [
+      "G11-B07-GP-SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Liệt kê bốn số hoặc dùng công thức tổng hữu hạn."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-C03 · SGK_CORE · G11-B07-GP-SUM · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng công thức tổng vô hạn, nhớ bài chỉ hỏi bốn số hạng. Ôn TOP07-M14; luyện THPT-TOP07-P14."
+  },
+  {
+    "item_id": "THPT-G11-B07-C04",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Một cấp số nhân có ba số hạng dương liên tiếp 2, x, 18. Tìm x.",
+    "answer_key": "\\(x=6\\).",
+    "worked_solution": "Vì ba số dương, số giữa khác 0. Hai công bội liên tiếp bằng nhau: \\(\\frac x2=\\frac{18}{x}\\), suy ra \\(x^2=36\\). Do x dương, chỉ nhận 6. Kiểm công bội bằng 3.",
+    "skill_ids": [
+      "G11-B07-GP-THREE-TERMS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Dùng bình phương số giữa bằng tích hai đầu, rồi kiểm điều kiện dương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-C04 · SGK_CORE · G11-B07-GP-THREE-TERMS · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận −6, đọc lại điều kiện ba số hạng đều dương. Ôn TOP07-M13; luyện THPT-TOP07-P13."
+  },
+  {
+    "item_id": "THPT-G11-B07-P01",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy \\(u_n=7(-2)^{n-1}\\) với \\(n\\ge1\\) có phải cấp số nhân không? Tìm q và \\(u_4\\).",
+    "answer_key": "Là cấp số nhân, \\(q=-2,\\ u_4=-56\\).",
+    "worked_solution": "Với mọi \\(n\\ge1\\), \\(u_{n+1}=7(-2)^n=-2u_n\\), nên công bội bằng −2. Số hạng thứ tư là \\(u_4=7(-2)^3=-56\\).",
+    "skill_ids": [
+      "G11-B07-GP-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "So số hạng sau với số hạng trước bằng công thức."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P01 · SGK_PRACTICE · G11-B07-GP-DEFINITION · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ dấu âm của công bội, kiểm số hạng thứ hai và thứ tư. Ôn TOP07-M11; luyện THPT-TOP07-P11."
+  },
+  {
+    "item_id": "THPT-G11-B07-P02",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cấp số nhân có \\(u_2=6,\\ u_5=162\\). Tìm công bội và số hạng đầu.",
+    "answer_key": "\\(q=3,\\ u_1=2\\).",
+    "worked_solution": "Vì \\(u_2=6\\ne0\\), có \\(u_5=u_2q^3\\). Suy ra \\(q^3=\\frac{162}{6}=27\\), nên q bằng 3 là nghiệm thực duy nhất. Từ \\(u_2=u_1q\\), suy ra \\(u_1=\\frac63=2\\).",
+    "skill_ids": [
+      "G11-B07-GP-NTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "So hai số hạng cách nhau ba vị trí."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P02 · SGK_PRACTICE · G11-B07-GP-NTH · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận thêm q bằng −3, kiểm lập phương của số âm. Ôn TOP07-M13; luyện THPT-TOP07-P13."
+  },
+  {
+    "item_id": "THPT-G11-B07-P03",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cấp số nhân có \\(u_1=2,\\ q=-2\\). Tính \\(S_5\\).",
+    "answer_key": "\\(S_5=22\\).",
+    "worked_solution": "Vì \\(q\\ne1\\), dùng tổng hữu hạn: \\(S_5=\\frac{2(1-(-2)^5)}{1-(-2)}=\\frac{2\\cdot33}3=22\\). Kiểm trực tiếp \\(2-4+8-16+32=22\\).",
+    "skill_ids": [
+      "G11-B07-GP-SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Giữ ngoặc quanh công bội âm khi tính lũy thừa."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P03 · SGK_PRACTICE · G11-B07-GP-SUM · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu mất dấu lũy thừa bậc lẻ của −2, liệt kê năm số để kiểm. Ôn TOP07-M14; luyện THPT-TOP07-P14."
+  },
+  {
+    "item_id": "THPT-G11-B07-P04",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cấp số nhân có \\(u_1=8,\\ q=1\\). Tính \\(S_9\\).",
+    "answer_key": "\\(S_9=72\\).",
+    "worked_solution": "Khi q bằng 1, mọi số hạng đều bằng 8. Tổng chín số hạng là \\(9\\cdot8=72\\). Không áp dụng công thức có mẫu \\(1-q\\) vì mẫu bằng 0.",
+    "skill_ids": [
+      "G11-B07-GP-SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Với công bội 1, tất cả số hạng bằng số đầu."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P04 · SGK_PRACTICE · G11-B07-GP-SUM · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu mẫu bằng 0, không chia; cộng các số hạng bằng nhau. Ôn TOP07-M14; luyện THPT-TOP07-P14."
+  },
+  {
+    "item_id": "THPT-G11-B07-P05",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Ba số 9, x, 1 theo thứ tự là ba số hạng liên tiếp của một cấp số nhân thực. Tìm tất cả x và công bội tương ứng.",
+    "answer_key": "\\(x=3,\\ q=\\frac13\\) hoặc \\(x=-3,\\ q=-\\frac13\\).",
+    "worked_solution": "Theo định nghĩa, \\(9q=x\\) và \\(xq=1\\). Vì x khác 0, thay \\(q=\\frac x9\\) vào hệ thức sau, được \\(x^2=9\\). Hai nghiệm là 3 và −3, tương ứng công bội \\(\\frac13\\) và \\(-\\frac13\\). Cả hai cặp thỏa hai hệ thức ban đầu.",
+    "skill_ids": [
+      "G11-B07-GP-THREE-TERMS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Không có điều kiện dương; xét đủ hai dấu rồi tìm công bội."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P05 · SGK_PRACTICE · G11-B07-GP-THREE-TERMS · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ lấy căn dương, kiểm giả thiết và cả công bội âm. Ôn TOP07-M13; luyện THPT-TOP07-P13."
+  },
+  {
+    "item_id": "THPT-G11-B07-P06",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Một quần thể vi khuẩn ban đầu có 200 cá thể, số lượng gấp đôi sau mỗi giờ. Theo mô hình này, sau 5 giờ có bao nhiêu cá thể?",
+    "answer_key": "6 400 cá thể.",
+    "worked_solution": "Ban đầu là thời điểm 0 với 200 cá thể. Sau 5 giờ có 5 lần nhân 2, nên \\(N_5=200\\cdot2^5=6400\\) cá thể.",
+    "skill_ids": [
+      "G11-B07-GP-APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Tính từ mốc thời gian 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P06 · SGK_PRACTICE · G11-B07-GP-APPLICATION · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng số mũ 4, kiểm đúng năm lần tăng từ giờ 0 đến giờ 5. Ôn TOP07-M16; luyện THPT-TOP07-P16."
+  },
+  {
+    "item_id": "THPT-G11-B07-P07",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy 3, 0, 0, 0, ... có phải cấp số nhân không?",
+    "answer_key": "Có, \\(q=0\\).",
+    "worked_solution": "Với công bội 0, số hạng thứ hai bằng \\(0\\cdot3=0\\) và mọi số hạng sau đều bằng \\(0\\cdot0=0\\). Vậy \\(u_{n+1}=0\\cdot u_n\\) với mọi \\(n\\ge1\\), nên dãy là cấp số nhân. Không cần chia hai số hạng liên tiếp khi số trước bằng 0.",
+    "skill_ids": [
+      "G11-B07-GP-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Dùng định nghĩa truy hồi, không dùng tỉ số có mẫu 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P07 · SGK_PRACTICE · G11-B07-GP-DEFINITION · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu gặp phép chia 0 cho 0, quay lại định nghĩa cấp số nhân. Ôn TOP07-M11; luyện THPT-TOP07-P11."
+  },
+  {
+    "item_id": "THPT-G11-B07-P08",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Gửi 50 triệu đồng với lãi kép 4% mỗi năm, lãi nhập gốc cuối mỗi năm, không nạp hoặc rút thêm. Tính số tiền sau 3 năm.",
+    "answer_key": "\\(50\\cdot1{,}04^3=56{,}2432\\) triệu đồng.",
+    "worked_solution": "Mỗi năm, số tiền bằng số dư đầu năm nhân \\(1+\\frac4{100}=1{,}04\\). Từ mốc ban đầu đến cuối năm thứ ba có ba lần nhân. Vậy \\(V_3=50\\cdot1{,}04^3=56{,}2432\\) triệu đồng.",
+    "skill_ids": [
+      "G11-B07-GP-APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Lập hệ thức nhân số dư với 1,04 từ mốc 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P08 · SGK_PRACTICE · G11-B07-GP-APPLICATION · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng lãi cố định mỗi năm, tính lãi trên số dư đã nhập lãi của năm trước. Ôn TOP07-M17; luyện THPT-TOP07-P17."
+  },
+  {
+    "item_id": "THPT-G11-B05-KFT01",
+    "content_version": "SOURCE_BLOB_8634196e27b5bac8cb3089f433779b592809d955_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Dãy u_n=2n−1 bắt đầu từ n=1: em dự đoán u_4 và giải thích vì sao n=4, không phải n=0.",
+    "answer_key": "u₄=7; số hạng thứ tư có chỉ số n=4, dãy bắt đầu n=1.",
+    "worked_solution": "Dãy bắt đầu từ u₁: chỉ số n cho biết vị trí số hạng, không phải số bước kể từ số 0. Bốn số hạng đầu là u₁=1, u₂=3, u₃=5, u₄=7. Thay trực tiếp n=4 vào công thức uₙ=2n−1 được u₄=2·4−1=7; n=0 không thuộc miền chỉ số đã cho. Trở về mục chỉ số và VD-G11-B05-01 nếu chưa chắc, sau đó làm `THPT-G11-B05-C01`.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B05-EXPLICIT-TERM",
+      "G11-B05-SEQUENCE-DEFINITION"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8634196e27b5bac8cb3089f433779b592809d955",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-5.md",
+        "blob": "8634196e27b5bac8cb3089f433779b592809d955",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 19,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-B06-KFT01",
+    "content_version": "SOURCE_BLOB_43b285b679941e0748ad78f377ab9bbdd73ec3d3_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hàng đầu có 12 ghế, mỗi hàng sau thêm 3 ghế. Hàng thứ 4 có mấy ghế?",
+    "answer_key": "21 ghế.",
+    "worked_solution": "Từ hàng 1 đến hàng 4 có ba lần thêm ghế: 12 → 15 → 18 → 21. Vì thế u₄=12+(4−1)·3=21 ghế. Công sai 3 được cộng ba lần, không phải bốn lần. Làm `THPT-G11-B06-C01` sau khi giải thích.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B06-AP-NTH"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "43b285b679941e0748ad78f377ab9bbdd73ec3d3",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-6.md",
+        "blob": "43b285b679941e0748ad78f377ab9bbdd73ec3d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 19,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-B07-KFT01",
+    "content_version": "SOURCE_BLOB_3d0886889e383cd76963e1fa3a5eef175a389080_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Từ vốn 100, nhân 1,1 mỗi kỳ. Sau 2 kỳ là 120 hay 121?",
+    "answer_key": "121.",
+    "worked_solution": "Sau kỳ đầu: 100·1,1=110. Sau kỳ thứ hai: 110·1,1=121. Viết gọn 100·1,1²=121. Số 120 là kết quả nếu mỗi kỳ chỉ cộng 10 trên vốn ban đầu; ở đây vốn kỳ sau được nhân từ vốn mới. Làm `THPT-G11-B07-C01`.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B07-GP-NTH",
+      "G11-B07-GP-APPLICATION"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "3d0886889e383cd76963e1fa3a5eef175a389080",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md",
+        "blob": "3d0886889e383cd76963e1fa3a5eef175a389080",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 19,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  }
+]

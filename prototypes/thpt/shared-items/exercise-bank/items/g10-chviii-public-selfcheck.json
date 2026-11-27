@@ -1,0 +1,562 @@
+[
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-01",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Một sơ đồ giao thông cho phép đi từ A đến D theo **đúng một** trong hai nhánh, không có đường nối giữa B và C:\n\n- Nhánh qua B: từ A đến B có 2 đường phân biệt; từ B đến D có 3 đường phân biệt.\n- Nhánh qua C: từ A đến C có 4 đường phân biệt; từ C đến D có 2 đường phân biệt.\n\nMỗi hành trình gồm một đường của mỗi chặng trong cùng nhánh. Có bao nhiêu hành trình A→D khác nhau?\n\nA. 10    B. 14    C. 20    D. 24",
+    "answer_key": "B (14 hành trình)",
+    "worked_solution": "Hai nhánh loại trừ nhau. Qua B có $2\\cdot3=6$ hành trình, qua C có $4\\cdot2=8$ hành trình. Quy tắc cộng cho hai tập hành trình rời nhau: $6+8=14$.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B23-ADDITION`, `G10-B23-MULTIPLICATION`, `G10-B23-CASE_SPLIT`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "Chọn B. Tự đối chiếu: hai nhánh rời nhau, dùng quy tắc nhân trong mỗi nhánh.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-02",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Một xưởng cho phép chọn **một trong 4 mẫu áo** và **một trong 3 màu in**. Tuy nhiên hai cặp (mẫu M1, màu đỏ) và (mẫu M2, màu xanh) không thể sản xuất; mọi cặp còn lại đều hợp lệ. Có bao nhiêu phương án sản xuất hợp lệ? Trình bày cách kiểm đếm không sót, không trùng.",
+    "answer_key": "10 phương án",
+    "worked_solution": "Không có ràng buộc thì có $4\\cdot3=12$ cặp phân biệt. Hai cặp bị loại là hai kết quả khác nhau, nên còn $12-2=10$. Có thể kiểm bằng bảng $4\\times3$ và gạch đúng hai ô cấm.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B23-MULTIPLICATION`, `G10-B23-CASE_SPLIT`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "1 điểm cho 4×3=12; 1 điểm cho loại đúng hai cặp, không trừ trùng; kết quả 10.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "SHORT_EXPLANATION"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-03",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Từ các chữ số $0,1,2,3,4$, lập các số tự nhiên **có đúng ba chữ số đôi một khác nhau và lớn hơn $320$**. Tính số cách lập, nêu rõ các trường hợp và chứng minh không đếm trùng.",
+    "answer_key": "17 số",
+    "worked_solution": "- Chữ số hàng trăm là 4: hàng chục có 4 lựa chọn trong $\\{0,1,2,3\\}$, hàng đơn vị còn 3 lựa chọn: $4\\cdot3=12$ số.\n- Chữ số hàng trăm là 3: để số lớn hơn 320, hàng chục chỉ có thể là 4 (hàng đơn vị $0,1,2$: 3 số) hoặc là 2 (hàng đơn vị $1,4$: 2 số; 320 bị loại vì không lớn hơn 320). Có $3+2=5$ số.\n- Các trường hợp hàng trăm 4 hoặc 3 rời nhau; các hàng trăm nhỏ hơn 3 không thể vượt 320. Tổng $12+5=17$.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B23-DIGIT_COUNT`, `G10-B23-CASE_SPLIT`, `G10-B23-ADDITION`, `G10-B23-MULTIPLICATION`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "4 điểm: tách đúng chữ số hàng trăm (1); nhánh 4xx cho 12 (1); nhánh 3xx cho 3+2 (1); điều kiện >320 và kết luận 17 không trùng (1).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-04",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Xét tập ký tự $\\{0,1,2\\}$. Hãy ghi Đúng/Sai cho từng phát biểu (mỗi phát biểu độc lập):\n\n(a) Số **mã** dài đúng 3 ký tự, được lặp và cho phép ký tự đầu là 0, bằng 27.\n(b) Số **tự nhiên có đúng 3 chữ số** tạo từ tập trên, được lặp, bằng 27.\n(c) Số **mã** dài đúng 3 ký tự, các ký tự không lặp, bằng 6.\n(d) Số **tự nhiên có đúng 3 chữ số**, không lặp chữ số, bằng 6.",
+    "answer_key": "(a) Đúng; (b) Sai; (c) Đúng; (d) Sai",
+    "worked_solution": "(a) $3^3=27$; (b) chữ số đầu chỉ có 2 cách (1 hoặc 2), hai vị trí sau 3 cách mỗi vị trí nên $2\\cdot3\\cdot3=18$; (c) $3!=6$; (d) chữ số đầu 2 cách, chữ số thứ hai 2 cách, cuối 1 cách nên $2\\cdot2\\cdot1=4$.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B23-DIGIT_COUNT`, `G10-B23-MULTIPLICATION`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "Mỗi ý đúng/sai đúng 1 điểm; không phản hồi trong quá trình làm trước Final Submit.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "TRUE_FALSE_GROUP"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-05",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Có 6 tấm bưu thiếp phân biệt, trong đó hai tấm A và B. Xếp cả 6 tấm thành một hàng sao cho **hai đầu hàng được chiếm bởi A và B** (theo thứ tự bất kỳ). Có bao nhiêu cách xếp?\n\nA. 24    B. 36    C. 48    D. 120",
+    "answer_key": "C (48 cách)",
+    "worked_solution": "Hai đầu có $2!$ cách hoán đổi A,B. Bốn tấm còn lại xếp vào bốn vị trí giữa có $4!$ cách. Tổng $2!\\cdot4!=2\\cdot24=48$.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B24-PERMUTATION`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "Chọn C. Tự đối chiếu: cố định hai vị trí đầu/cuối và nhân 2!×4!.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-06",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Từ 8 học sinh phân biệt, bầu đúng **1 lớp trưởng** và **2 lớp phó có quyền hạn bằng nhau**, không ai giữ hai chức danh. Hỏi có bao nhiêu ban cán sự khác nhau? Trình bày cách đếm và giải thích vì sao không phải chỉnh hợp chập 3 của 8.",
+    "answer_key": "168 ban cán sự",
+    "worked_solution": "Chọn lớp trưởng có 8 cách. Trong 7 người còn lại chọn nhóm 2 lớp phó không phân biệt thứ tự có $\\binom72=21$ cách. Suy ra $8\\binom72=168$. Tương đương: chọn 3 người rồi xác định 1 người là lớp trưởng: $\\binom83\\cdot3=56\\cdot3=168$. Dùng $A_8^3$ sẽ nhân đôi vì hai lớp phó hoán đổi không tạo phương án mới.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B24-ARRANGEMENT`, `G10-B24-COMBINATION`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "3 điểm: phân biệt đúng hai lớp phó bình đẳng (1); đếm 8×C(7,2) (1); kết quả 168 và giải thích không dùng A(8,3) (1).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "SHORT_EXPLANATION"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-07",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Có 9 điểm phân biệt nằm trên một đường tròn, trong đó có điểm P đã đánh dấu. Chọn 3 điểm làm đỉnh một tam giác **bắt buộc chứa P**. Có bao nhiêu tam giác?\n\nA. 21    B. 28    C. 56    D. 84",
+    "answer_key": "B (28 tam giác)",
+    "worked_solution": "Trên đường tròn, không có ba điểm phân biệt nào thẳng hàng. Chọn P cố định, sau đó chọn 2 điểm bất kỳ trong 8 điểm còn lại, không phân biệt thứ tự: $\\binom82=28$.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B24-COMBINATION`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "Chọn B. Tự đối chiếu: cố định một đỉnh và chọn hai đỉnh còn lại không xét thứ tự.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-08",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Một đội có 5 bạn nữ và 4 bạn nam, tất cả phân biệt. Chọn một nhóm 4 người **có cả nam lẫn nữ** và **số nữ không ít hơn số nam**. Hỏi có bao nhiêu nhóm? Giải bằng các trường hợp rời nhau, không dùng việc sắp thứ tự thành viên.",
+    "answer_key": "100 nhóm",
+    "worked_solution": "Vì nhóm có 4 người, có cả nam và nữ, nữ $\\ge$ nam, các khả năng duy nhất là (2 nữ, 2 nam) và (3 nữ, 1 nam). Nhánh (2,2): $\\binom52\\binom42=10\\cdot6=60$. Nhánh (3,1): $\\binom53\\binom41=10\\cdot4=40$. Hai trường hợp loại trừ nhau; tổng $60+40=100$.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B24-CONSTRAINTS`, `G10-B24-COMBINATION`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "4 điểm: nêu đủ đúng hai trường hợp (1); 60 nhóm (1); 40 nhóm (1); kết luận 100 và không đếm trùng (1).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-09",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Với các đối tượng phân biệt, ghi Đúng/Sai cho từng phát biểu:\n\n(a) $A_6^2=6\\binom51$.\n(b) Chọn 2 người từ 6 người để lập một nhóm không phân vai thì có $A_6^2$ nhóm.\n(c) Chọn 3 người trong 7 người rồi chỉ định đúng một trưởng nhóm có $3\\binom73$ phương án.\n(d) Hoán vị 5 vật phân biệt có $\\binom54$ phương án.",
+    "answer_key": "(a) Đúng; (b) Sai; (c) Đúng; (d) Sai",
+    "worked_solution": "(a) $A_6^2=6\\cdot5=30=6\\binom51$; (b) nhóm 2 người không xét thứ tự có $\\binom62=15$, không phải 30; (c) $\\binom73\\cdot3=35\\cdot3=105$; (d) xếp toàn bộ 5 vật là $5!=120$, còn $\\binom54=5$.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B24-PERMUTATION`, `G10-B24-ARRANGEMENT`, `G10-B24-COMBINATION`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "Mỗi ý 1 điểm, xét riêng; kết quả chỉ được tiết lộ sau Final Submit.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "TRUE_FALSE_GROUP"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-10",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Không dùng máy tính đại số, hãy khai triển đầy đủ $P(x)=(x-2)^4$ theo Nhị thức Newton; sau đó xác định (i) hệ số của $x^2$ và (ii) có bao nhiêu hệ số âm trong các số hạng của đa thức đã thu gọn.",
+    "answer_key": "$P(x)=x^4-8x^3+24x^2-32x+16$; hệ số $x^2$ là 24; có 2 hệ số âm",
+    "worked_solution": "$P(x)=\\sum_{k=0}^4\\binom4k x^{4-k}(-2)^k=x^4-8x^3+24x^2-32x+16$. Hệ số $x^2=24$. Hai hệ số âm tương ứng $x^3$ và $x$. Hệ số hạng bậc chẵn dương, bậc lẻ âm trong ví dụ này.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B25-NEWTON_EXPANSION`, `G10-B25-COEFFICIENT_SIGN`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "4 điểm: công thức tổng quát phù hợp (1); khai triển đúng 5 hạng (2); hai yêu cầu hệ số và dấu đúng (1).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-11",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Cho $t\\in\\mathbb R$. Trong khai triển $(x+t)^4$, hệ số của $x^3$ bằng $-12$. Giá trị của $t$ là:\n\nA. $-12$    B. $-3$    C. $3$    D. $12$",
+    "answer_key": "B ($t=-3$)",
+    "worked_solution": "Số hạng chứa $x^3$ xuất hiện khi chọn đúng một $t$ trong 4 thừa số: hệ số $\\binom41t=4t$. Từ $4t=-12$ suy ra $t=-3$.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B25-NEWTON_EXPANSION`, `G10-B25-COEFFICIENT_SIGN`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "Chọn B. Tự đối chiếu: từ hệ số đã biết lập phương trình tìm tham số.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-12",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Đặt $F(x)=(2x-1)^4-(x+2)^4$. Không cần viết toàn bộ đa thức $F(x)$, hãy xác định **số hạng không chứa $x$** và **hệ số của $x^2$** trong $F(x)$. Giải thích vì sao các đóng góp hệ số có thể triệt tiêu.",
+    "answer_key": "Số hạng không chứa $x$ là $-15$; hệ số $x^2$ là $0$",
+    "worked_solution": "Số hạng tự do của $(2x-1)^4$ là $(-1)^4=1$, của $(x+2)^4$ là $2^4=16$, nên của $F$ là $1-16=-15$. Hệ số $x^2$ của biểu thức đầu là $\\binom42(2)^2(-1)^2=24$, của biểu thức sau là $\\binom42(2)^2=24$; hiệu là $24-24=0$. Không có lũy thừa âm, không có điều kiện $x\\ne0$.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B25-CONSTANT_TERM`, `G10-B25-NEWTON_EXPANSION`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "3 điểm: hằng số mỗi nhị thức 1/16 và kết quả -15 (1); hai hệ số bậc 2 đều 24 (1); triệt tiêu được 0, không khai triển thừa (1).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "SHORT_EXPLANATION"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-13",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "Đặt $Q(x)=(1-3x)^5$. Ghi Đúng/Sai cho từng khẳng định:\n\n(a) Số hạng không chứa $x$ của $Q$ bằng $1$.\n(b) Hệ số của $x^2$ bằng $90$.\n(c) Hệ số của $x^3$ bằng $270$.\n(d) Hệ số của $x^4$ bằng $-405$.",
+    "answer_key": "(a) Đúng; (b) Đúng; (c) Sai; (d) Sai",
+    "worked_solution": "Số hạng tổng quát là $\\binom5k(-3)^k x^k$. Với $k=0$ được 1; $k=2$ được $10\\cdot9=90$; $k=3$ được $10\\cdot(-27)=-270$, không phải 270; $k=4$ được $5\\cdot81=405$, không phải -405.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B25-COEFFICIENT_SIGN`, `G10-B25-CONSTANT_TERM`, `G10-B25-NEWTON_EXPANSION`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "Bốn ý, mỗi ý 1 điểm; không tính câu này như một phép chứng minh thành thạo khi chưa có cơ chế chấm thực.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "TRUE_FALSE_GROUP"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVIII-RD1-14",
+    "content_version": "c33e116b51c6da274e9ecce64f9885f820cf3e4aaa49cac61e80b554b268d601",
+    "stem": "**Bài tự chọn nâng cao, KHÔNG tính điểm Core.** Với $m\\in\\mathbb R$, xét $R(x)=(1+mx)^4$. Biết tổng các hệ số của các số hạng có **số mũ chẵn** của $x$ bằng $41$. Hãy tìm tất cả giá trị $m$. Giải thích cách lọc nghiệm.",
+    "answer_key": "$m=2$ hoặc $m=-2$",
+    "worked_solution": "Tổng hệ số bậc chẵn là $\\binom40+\\binom42m^2+\\binom44m^4=1+6m^2+m^4$. Do đó $m^4+6m^2-40=0$. Đặt $u=m^2\\ge0$, ta có $u^2+6u-40=(u-4)(u+10)=0$. Chỉ $u=4$ phù hợp, nên $m=\\pm2$.",
+    "skill_ids": [],
+    "original_outcome_text": "`G10-B25-COEFFICIENT_SUM`",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "Tự chọn 4 điểm tách riêng, KHÔNG cộng vào CORE: lập biểu thức tổng chẵn (2); đặt u và lọc u≥0 (1); m=±2 (1).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+        "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+        "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+        "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_READINESS"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

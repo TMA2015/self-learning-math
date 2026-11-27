@@ -1,0 +1,1325 @@
+[
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một túi chứa ba thẻ đánh số 1, 2, 3. Lấy đúng một thẻ. Viết không gian mẫu \\(\\Omega\\).",
+    "answer_key": "\\(\\Omega=\\{1;2;3\\}\\).",
+    "worked_solution": "Mỗi kết quả là số ghi trên một thẻ, nên có đúng ba kết quả có thể xảy ra: 1, 2, 3. Không liệt kê các cặp vì chỉ rút một thẻ.",
+    "skill_ids": [
+      "G11-B28-SAMPLE_SPACE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Liệt kê các thẻ có thể được rút."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Một lần chỉ lấy một thẻ; không liệt kê cặp. Ôn CĐ20 mục 1.1; luyện THPT-TOP20-P01."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C02",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Với \\(\\Omega=\\{1;2;3;4;5\\}\\), viết biến cố A: “chọn được số nguyên tố”.",
+    "answer_key": "\\(A=\\{2;3;5\\}\\).",
+    "worked_solution": "Số nguyên tố là số nguyên dương lớn hơn 1 có đúng hai ước dương. Trong không gian mẫu, 2, 3, 5 thỏa điều kiện; 1 và 4 không thỏa. Vậy biến cố gồm ba kết quả trên.",
+    "skill_ids": [
+      "G11-B28-EVENT_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Số nguyên tố có đúng hai ước dương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Số 1 không phải nguyên tố. Ôn CĐ20 mục 1.1; luyện THPT-TOP20-P02."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C03",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Cho \\(\\Omega=\\{1;2;3;4;5\\}\\), \\(A=\\{1;3\\}\\), \\(B=\\{3;5\\}\\). Tìm \\(A\\cup B\\).",
+    "answer_key": "\\(\\{1;3;5\\}\\).",
+    "worked_solution": "Biến cố hợp gồm mọi kết quả thuộc A hoặc B, kể cả thuộc cả hai. Số 3 có trong cả hai tập nhưng chỉ ghi một lần, nên \\(A\\cup B=\\{1;3;5\\}\\).",
+    "skill_ids": [
+      "G11-B28-UNION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Lấy mọi phần tử xuất hiện trong ít nhất một tập."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Phần tử 3 chung chỉ ghi một lần. Ôn CĐ20 mục 2.1; luyện THPT-TOP20-P11."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C04",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Cho \\(\\Omega=\\{1;2;3;4;5\\}\\), \\(A=\\{2;3;4\\}\\), \\(B=\\{1;3;5\\}\\). Tìm \\(A\\cap B\\).",
+    "answer_key": "\\(\\{3\\}\\).",
+    "worked_solution": "Biến cố giao gồm những kết quả đồng thời thuộc A và B. Chỉ có 3 xuất hiện trong cả hai tập, nên \\(A\\cap B=\\{3\\}\\).",
+    "skill_ids": [
+      "G11-B28-INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Tìm phần tử xuất hiện đồng thời ở cả hai tập."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy mọi phần tử thuộc một trong hai tập. Ôn CĐ20 mục 2.1; luyện THPT-TOP20-P11."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C05",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Cho \\(\\Omega=\\{0;1;2;3;4\\}\\), \\(A=\\{0;2;4\\}\\). Tìm \\(\\overline A\\).",
+    "answer_key": "\\(\\{1;3\\}\\).",
+    "worked_solution": "Biến cố đối gồm tất cả kết quả trong không gian mẫu không thuộc A. Loại 0, 2, 4 khỏi \\(\\Omega\\), còn \\(\\overline A=\\{1;3\\}\\).",
+    "skill_ids": [
+      "G11-B28-COMPLEMENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Lấy các phần tử trong không gian mẫu chưa thuộc A."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Phần bù luôn xét trong không gian mẫu đã cho. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C06",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Gieo một xúc xắc sáu mặt một lần. A là biến cố “ra số nhỏ hơn 3”, B là biến cố “ra số lớn hơn 4”. A và B có xung khắc không?",
+    "answer_key": "Có.",
+    "worked_solution": "Ta có \\(A=\\{1;2\\}\\) và \\(B=\\{5;6\\}\\). Không có kết quả nào thuộc cả hai, tức \\(A\\cap B=\\varnothing\\). Hai biến cố không thể cùng xảy ra nên xung khắc.",
+    "skill_ids": [
+      "G11-B28-DISJOINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Liệt kê hai tập rồi kiểm giao."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Xung khắc nghĩa là giao rỗng, không phải chỉ khác tập. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C07",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai biến cố có \\(P(A)=\\frac12\\), \\(P(B)=\\frac13\\) và \\(P(A\\cap B)=\\frac16\\). Chúng có độc lập không?",
+    "answer_key": "Có.",
+    "worked_solution": "Tiêu chuẩn độc lập là \\(P(A\\cap B)=P(A)P(B)\\). Tích hai xác suất riêng bằng \\(\\frac12\\cdot\\frac13=\\frac16\\), đúng bằng xác suất giao. Vậy A và B độc lập.",
+    "skill_ids": [
+      "G11-B28-INDEPENDENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "So \\(P(A\\cap B)\\) với \\(P(A)P(B)\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C07",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không suy độc lập chỉ từ hai biến cố có giao. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-P01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Chọn đều ngẫu nhiên một thẻ đánh số từ 1 đến 8. A: “bội của 2”, B: “bội của 3”. Viết \\(A\\cup B\\).",
+    "answer_key": "\\(\\{2;3;4;6;8\\}\\).",
+    "worked_solution": "Liệt kê \\(A=\\{2;4;6;8\\}\\), \\(B=\\{3;6\\}\\). Hợp gồm mọi phần tử thuộc ít nhất một tập; 6 chỉ xuất hiện một lần. Vậy \\(A\\cup B=\\{2;3;4;6;8\\}\\).",
+    "skill_ids": [
+      "G11-B28-UNION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Liệt kê bội của 2 và 3 trong 1–8."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Số 6 chỉ đếm một lần trong hợp. Ôn CĐ20 mục 2.1; luyện THPT-TOP20-P11."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-P02",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Chọn một thẻ trong tám thẻ đánh số từ 1 đến 8. A: “số chẵn”, B: “số lớn hơn 5”. Tìm \\(A\\cap B\\).",
+    "answer_key": "\\(\\{6;8\\}\\).",
+    "worked_solution": "Ta có \\(A=\\{2;4;6;8\\}\\) và \\(B=\\{6;7;8\\}\\). Chỉ 6 và 8 vừa chẵn vừa lớn hơn 5. Vậy giao gồm hai kết quả này.",
+    "skill_ids": [
+      "G11-B28-INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Lọc các số vừa chẵn vừa lớn hơn 5."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không nhầm lớn hơn 5 với lớn hơn hoặc bằng 5. Ôn CĐ20 mục 2.1; luyện THPT-TOP20-P11."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-P03",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một hộp có ba thẻ đỏ và một thẻ xanh. Vì sao khi chọn đều ngẫu nhiên một thẻ, không thể gộp không gian mẫu thành hai màu rồi kết luận xác suất đỏ bằng \\(\\frac12\\)?",
+    "answer_key": "Hai màu không đồng khả năng; xác suất đỏ bằng \\(\\frac34\\).",
+    "worked_solution": "Bốn thẻ phân biệt có cùng khả năng được chọn. Ba thẻ đỏ tạo ba kết quả thuận lợi, nên xác suất đỏ bằng \\(\\frac34\\). Có thể mô tả kết quả bằng màu, nhưng hai màu khi đó có xác suất \\(\\frac34\\) và \\(\\frac14\\), không thể chia đều cho hai màu.",
+    "skill_ids": [
+      "G11-B28-EVENT_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đếm bốn thẻ vật lý đồng khả năng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hai nhãn màu có số thẻ khác nhau nên không đồng khả năng. Ôn CĐ20 mục 1.2; luyện THPT-TOP20-P03."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-P04",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "A và B xung khắc, \\(P(A)=\\frac14\\) và \\(P(B)=\\frac25\\). Chúng có thể độc lập không?",
+    "answer_key": "Không.",
+    "worked_solution": "Xung khắc nghĩa là \\(A\\cap B=\\varnothing\\), nên \\(P(A\\cap B)=0\\). Trong khi đó \\(P(A)P(B)=\\frac14\\cdot\\frac25=\\frac1{10}>0\\). Hai giá trị khác nhau nên không độc lập.",
+    "skill_ids": [
+      "G11-B28-DISJOINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xung khắc cho P(giao)=0; so với tích."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hai xác suất dương có tích dương, không bằng 0. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-P05",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Biết \\(P(A)=\\frac12\\), \\(P(B)=\\frac35\\), \\(P(A\\cap B)=\\frac15\\). Kiểm tra tính độc lập.",
+    "answer_key": "Không độc lập.",
+    "worked_solution": "Tính \\(P(A)P(B)=\\frac12\\cdot\\frac35=\\frac3{10}\\). Xác suất giao bằng \\(\\frac15=\\frac2{10}\\), khác tích. Vậy A và B không độc lập.",
+    "skill_ids": [
+      "G11-B28-INDEPENDENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Tính tích hai xác suất riêng rồi so với giao."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu hai giá trị khác nhau thì không độc lập. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-P06",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Cho \\(\\Omega=\\{a;b;c;d;e;f\\}\\), \\(A=\\{b;e\\}\\). Viết \\(\\overline A\\) và số phần tử của nó.",
+    "answer_key": "\\(\\overline A=\\{a;c;d;f\\}\\), có 4 phần tử.",
+    "worked_solution": "Lấy các kết quả trong \\(\\Omega\\) không thuộc A, tức bỏ b và e. Còn a, c, d, f, nên số phần tử của biến cố đối bằng \\(6-2=4\\).",
+    "skill_ids": [
+      "G11-B28-COMPLEMENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Bỏ b và e khỏi không gian mẫu rồi đếm phần còn lại."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy phần bù ngoài không gian mẫu. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-C01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Cho \\(P(A)=\\frac25\\), \\(P(B)=\\frac12\\), \\(P(A\\cap B)=\\frac15\\). Tính \\(P(A\\cup B)\\).",
+    "answer_key": "\\(\\frac7{10}\\).",
+    "worked_solution": "Khi cộng hai xác suất riêng, phần giao bị tính hai lần. Dùng quy tắc cộng \\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)=\\frac25+\\frac12-\\frac15=\\frac7{10}\\).",
+    "skill_ids": [
+      "G11-B29-ADDITION_OVERLAP"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Dùng quy tắc cộng có trừ phần giao."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng trực tiếp, phần giao bị đếm hai lần. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-C02",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "A, B xung khắc, \\(P(A)=\\frac18\\), \\(P(B)=\\frac38\\). Tính \\(P(A\\cup B)\\).",
+    "answer_key": "\\(\\frac12\\).",
+    "worked_solution": "Vì A, B xung khắc nên giao rỗng và xác suất giao bằng 0. Quy tắc cộng cho \\(P(A\\cup B)=\\frac18+\\frac38=\\frac48=\\frac12\\).",
+    "skill_ids": [
+      "G11-B29-ADDITION_DISJOINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xung khắc cho giao rỗng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Chỉ cộng trực tiếp vì đã có giả thiết xung khắc. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P15."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-C03",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Cho \\(P(K)=\\frac9{25}\\). Tính \\(P(\\overline K)\\).",
+    "answer_key": "\\(\\frac{16}{25}\\).",
+    "worked_solution": "K và biến cố đối không thể cùng xảy ra, hợp của chúng là toàn bộ không gian mẫu. Do đó \\(P(\\overline K)=1-P(K)=1-\\frac9{25}=\\frac{16}{25}\\).",
+    "skill_ids": [
+      "G11-B29-COMPLEMENT_PROB"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Hai biến cố đối có tổng xác suất 1."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-C03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Lấy 1 trừ xác suất đã cho, không giữ nguyên xác suất của K. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-C04",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một lớp 25 học sinh: chỉ thích trà có 6, thích cả trà và cà phê có 4, chỉ thích cà phê có 5. Chọn đều ngẫu nhiên một bạn. Tính xác suất bạn đó thích ít nhất một loại.",
+    "answer_key": "\\(\\frac35\\).",
+    "worked_solution": "Ba nhóm được nêu không chồng lấn, nên số bạn thích ít nhất một loại là \\(6+4+5=15\\). Vì mọi học sinh có cùng khả năng được chọn, xác suất bằng \\(\\frac{15}{25}=\\frac35\\). Không trừ 4 lần nữa.",
+    "skill_ids": [
+      "G11-B29-VENN_COUNTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Cộng ba vùng chỉ trà, cả hai, chỉ cà phê."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-C04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Ba vùng đã rời nhau; không trừ phần cả hai lần nữa. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-C05",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Nếu \\(P(A)=0{,}3\\) mà \\(P(A\\cap B)=0{,}4\\), dữ liệu có thể đúng không?",
+    "answer_key": "Không.",
+    "worked_solution": "Mọi kết quả thuộc giao cũng thuộc A, tức \\(A\\cap B\\subset A\\). Do đó \\(P(A\\cap B)\\le P(A)=0{,}3\\). Giá trị 0,4 lớn hơn 0,3, nên dữ liệu mâu thuẫn.",
+    "skill_ids": [
+      "G11-B29-PROBABILITY_BOUNDS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Giao là tập con của A."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-C05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Xác suất giao không thể lớn hơn xác suất A. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-C06",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Trong 60 phiếu, 26 chọn kênh A, 24 chọn kênh B, 10 chọn cả hai. Chọn đều ngẫu nhiên một phiếu. Tính xác suất chọn A hoặc B (kể cả cả hai).",
+    "answer_key": "\\(\\frac23\\).",
+    "worked_solution": "Khi cộng 26 và 24, mười phiếu chọn cả hai bị tính hai lần. Số phiếu thuộc hợp là \\(26+24-10=40\\). Xác suất bằng \\(\\frac{40}{60}=\\frac23\\).",
+    "skill_ids": [
+      "G11-B29-REAL_APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Cộng số phiếu A,B rồi trừ 10 phiếu chung."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-C06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đếm 50 phiếu thuận lợi, đã đếm phần giao hai lần. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-P01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Cho \\(P(A\\cup B)=\\frac34\\), \\(P(A)=\\frac12\\), \\(P(B)=\\frac35\\). Tìm \\(P(A\\cap B)\\).",
+    "answer_key": "\\(\\frac7{20}\\).",
+    "worked_solution": "Từ quy tắc cộng, chuyển vế được \\(P(A\\cap B)=P(A)+P(B)-P(A\\cup B)\\). Thay số: \\(\\frac12+\\frac35-\\frac34=\\frac{10+12-15}{20}=\\frac7{20}\\).",
+    "skill_ids": [
+      "G11-B29-ADDITION_OVERLAP"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Biến đổi quy tắc cộng để tìm giao."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Dùng \\(P(A)+P(B)-P(A\\cup B)\\), không trừ sai dấu. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-P02",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "A, B xung khắc với \\(P(A)=0{,}45\\), \\(P(B)=0{,}65\\). Dữ liệu có hợp lí không?",
+    "answer_key": "Không.",
+    "worked_solution": "Xung khắc cho xác suất giao bằng 0, nên \\(P(A\\cup B)=0{,}45+0{,}65=1{,}10\\). Xác suất phải thuộc \\([0;1]\\), vì vậy dữ liệu không thể đồng thời đúng.",
+    "skill_ids": [
+      "G11-B29-ADDITION_DISJOINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xung khắc thì xác suất hợp bằng tổng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Tổng lớn hơn 1 cho thấy dữ liệu mâu thuẫn. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P15."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-P03",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một phép thử có xác suất lỗi bằng \\(\\frac1{20}\\). Tính xác suất không lỗi.",
+    "answer_key": "\\(\\frac{19}{20}\\).",
+    "worked_solution": "Lỗi và không lỗi là hai biến cố đối nhau. Do đó xác suất không lỗi là \\(1-\\frac1{20}=\\frac{19}{20}\\). Không cần giả thiết độc lập.",
+    "skill_ids": [
+      "G11-B29-COMPLEMENT_PROB"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Lấy 1 trừ xác suất lỗi."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lỗi là biến cố đối, không cần giả thiết độc lập. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-P04",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Trong 100 người, 40 thích A, 35 thích B và 15 thích cả hai. Có bao nhiêu người không thích loại nào trong hai loại A, B?",
+    "answer_key": "40 người.",
+    "worked_solution": "Số người thích ít nhất một loại là \\(40+35-15=60\\). Người không thích loại nào nằm ngoài hợp, nên có \\(100-60=40\\) người. Không nhầm với người không thích đồng thời cả hai.",
+    "skill_ids": [
+      "G11-B29-VENN_COUNTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Tính số người thuộc hợp, rồi lấy tổng trừ hợp."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không thích loại nào nghĩa là ở ngoài hợp, không phải chỉ ở ngoài giao. Ôn CĐ20 mục 2.3 (quy tắc cộng) và mục 1.3 (biến cố đối); luyện THPT-TOP20-P14."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-P05",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Trong một lớp 10 bạn, có 8 bạn tham gia câu lạc bộ A và 5 bạn tham gia câu lạc bộ B. (a) Có thể chỉ có 2 bạn tham gia cả hai không? (b) Tìm số bạn ít nhất và nhiều nhất có thể tham gia cả hai; mô tả cách phân nhóm đạt mỗi giới hạn. (c) Nếu chọn đều một bạn trong lớp, xác suất bạn đó tham gia cả hai thuộc khoảng giới hạn nào?",
+    "answer_key": "(a) Không thể. (b) Ít nhất 3 bạn; nhiều nhất 5 bạn. Cả hai giới hạn đều đạt được. (c) Từ \\(\\frac{3}{10}\\) đến \\(\\frac12\\), kể cả hai đầu mút.",
+    "worked_solution": "Gọi \\(k\\) là số bạn tham gia cả hai. Số bạn tham gia ít nhất một câu lạc bộ là \\(8+5-k=13-k\\). (a) Nếu \\(k=2\\), số này bằng 11, vượt sĩ số 10. (b) Từ \\(13-k\\le 10\\) suy ra \\(k\\ge 3\\); nhóm tham gia cả hai nằm trong nhóm B nên \\(k\\le 5\\). Với \\(k=3\\), số bạn chỉ A, chỉ B, cả hai, không nhóm nào lần lượt là 5, 2, 3, 0; với \\(k=5\\), các số đó là 3, 0, 5, 2. Mỗi cách chia đều có tổng 10 và đúng số lượng của A, B. Vậy hai giới hạn đều đạt được. (c) Chọn đều một bạn nên \\(P(A\\cap B)=\\frac{k}{10}\\). Từ \\(3\\le k\\le5\\), suy ra \\(\\frac{3}{10}\\le P(A\\cap B)\\le\\frac12\\). Trong lớp 10 bạn, xác suất giao chỉ có thể là \\(\\frac{3}{10},\\frac{4}{10},\\frac{5}{10}\\).",
+    "skill_ids": [
+      "G11-B29-PROBABILITY_BOUNDS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đếm số bạn thuộc ít nhất một câu lạc bộ theo số bạn thuộc cả hai; kết quả không được vượt sĩ số.",
+      "Nhóm tham gia cả hai không thể lớn hơn nhóm B."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Đừng chỉ kiểm giới hạn trên của phần giao. Hai nhóm lớn có thể bắt buộc phải có một số phần tử chung tối thiểu. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-P06",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một nhóm 48 bạn có 21 bạn học vẽ, 18 bạn học nhạc, 8 bạn học cả hai. Chọn đều ngẫu nhiên một bạn. Tính xác suất không học môn nào trong hai môn.",
+    "answer_key": "\\(\\frac{17}{48}\\).",
+    "worked_solution": "Số bạn học ít nhất một môn là \\(21+18-8=31\\). Có \\(48-31=17\\) bạn không học môn nào. Vì chọn đều trong 48 bạn, xác suất bằng \\(\\frac{17}{48}\\).",
+    "skill_ids": [
+      "G11-B29-REAL_APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Tính số bạn học ít nhất một môn rồi lấy 48 trừ đi."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không cộng 21+18 mà quên 8 bạn học cả hai. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-C01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "A, B độc lập, \\(P(A)=\\frac3{10}\\), \\(P(B)=\\frac25\\). Tính \\(P(A\\cap B)\\).",
+    "answer_key": "\\(\\frac3{25}\\).",
+    "worked_solution": "Vì hai biến cố độc lập nên quy tắc nhân cho \\(P(A\\cap B)=P(A)P(B)=\\frac3{10}\\cdot\\frac25=\\frac6{50}=\\frac3{25}\\).",
+    "skill_ids": [
+      "G11-B30-MULTIPLY_INDEPENDENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đã có giả thiết độc lập; nhân hai xác suất."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không cộng khi hỏi cả hai xảy ra. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-C02",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Cho \\(P(A)=\\frac34\\), \\(P(B)=\\frac13\\), \\(P(A\\cap B)=\\frac14\\). A và B có độc lập không?",
+    "answer_key": "Có.",
+    "worked_solution": "Tính tích hai xác suất riêng: \\(\\frac34\\cdot\\frac13=\\frac14\\), đúng bằng \\(P(A\\cap B)\\). Theo tiêu chuẩn độc lập, A và B độc lập.",
+    "skill_ids": [
+      "G11-B30-VERIFY_INDEPENDENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Tính tích hai xác suất riêng rồi so với xác suất giao."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Kiểm đẳng thức xác suất, không dựa vào giao rỗng. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-C03",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Ba lần thử độc lập đồng thời, mỗi lần có xác suất đạt \\(\\frac12\\). Tính xác suất cả ba lần đều đạt.",
+    "answer_key": "\\(\\frac18\\).",
+    "worked_solution": "Gọi ba biến cố đạt tương ứng là A, B, C. Vì ba phép thử độc lập đồng thời, xác suất cả ba đạt bằng tích ba xác suất: \\((\\frac12)^3=\\frac18\\). Cùng xác suất riêng không đủ nếu thiếu độc lập.",
+    "skill_ids": [
+      "G11-B30-REPEATED_TRIALS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Ba phép thử độc lập nên nhân ba xác suất."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-C03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Cùng xác suất chưa đủ để nhân nếu không độc lập. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-C04",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai cảm biến hoạt động độc lập, mỗi cảm biến có xác suất thất bại \\(\\frac15\\). Tính xác suất ít nhất một cảm biến hoạt động thành công.",
+    "answer_key": "\\(\\frac{24}{25}\\).",
+    "worked_solution": "Biến cố đối của ít nhất một thành công là cả hai thất bại. Do độc lập, xác suất cả hai thất bại là \\((\\frac15)^2=\\frac1{25}\\). Lấy phần bù, được \\(1-\\frac1{25}=\\frac{24}{25}\\).",
+    "skill_ids": [
+      "G11-B30-AT_LEAST_ONE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Bù của ít nhất một hoạt động là cả hai thất bại."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-C04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Bình phương xác suất thất bại của một cảm biến rồi trừ khỏi 1. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-C05",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai biến cố xung khắc có \\(P(A)=\\frac13\\), \\(P(B)=\\frac14\\). Chúng có độc lập không?",
+    "answer_key": "Không.",
+    "worked_solution": "Xung khắc cho \\(P(A\\cap B)=0\\). Nhưng \\(P(A)P(B)=\\frac13\\cdot\\frac14=\\frac1{12}>0\\). Vì không bằng nhau, hai biến cố không độc lập.",
+    "skill_ids": [
+      "G11-B30-INDEPENDENT_VS_DISJOINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Giao rỗng nhưng tích hai xác suất riêng dương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-C05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Xung khắc không phải độc lập khi hai xác suất đều dương. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-C06",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai máy in hoạt động độc lập, xác suất in thành công lần lượt \\(\\frac45\\) và \\(\\frac56\\). Tính xác suất cả hai thành công.",
+    "answer_key": "\\(\\frac23\\).",
+    "worked_solution": "Do độc lập, biến cố cả hai máy in thành công có xác suất bằng tích hai xác suất riêng: \\(\\frac45\\cdot\\frac56=\\frac46=\\frac23\\).",
+    "skill_ids": [
+      "G11-B30-REAL_CONTEXT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Hai máy in độc lập, hỏi cả hai thành công."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-C06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nhân hai xác suất; không cộng. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai biến cố A và B độc lập. Biết \\(P(A)=\\frac{7}{10}\\) và \\(P(A\\cap B)=\\frac{3}{10}\\). (a) Tìm \\(P(B)\\). (b) Nếu một phép thử khác vẫn có \\(P(A)=\\frac{7}{10}\\) nhưng \\(P(A\\cap B)=\\frac45\\), liệu dữ kiện đó có thể xảy ra không, kể cả khi bỏ giả thiết độc lập?",
+    "answer_key": "(a) \\(P(B)=\\frac37\\). (b) Không thể vì \\(P(A\\cap B)>P(A)\\).",
+    "worked_solution": "(a) Do độc lập, \\(P(A\\cap B)=P(A)P(B)\\). Vì \\(P(A)=\\frac{7}{10}>0\\), chia hai vế cho xác suất này: \\(P(B)=\\frac{3}{10}:\\frac{7}{10}=\\frac37\\). Giá trị thuộc đoạn \\([0;1]\\); nhân lại được \\(\\frac{3}{10}\\). (b) Trong mọi phép thử, \\(A\\cap B\\subseteq A\\) nên \\(P(A\\cap B)\\le P(A)\\), không cần độc lập. Nhưng \\(\\frac45>\\frac{7}{10}\\), nên dữ kiện thứ hai không thể đúng.",
+    "skill_ids": [
+      "G11-B30-MULTIPLY_INDEPENDENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Viết công thức nhân rồi tìm thừa số chưa biết.",
+      "Phần giao không thể có xác suất lớn hơn xác suất của A."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Chỉ chia từ công thức nhân nếu có giả thiết độc lập và mẫu khác 0. Giới hạn xác suất giao vẫn đúng khi không độc lập. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P02",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Cho \\(P(A)=0{,}6\\), \\(P(B)=0{,}5\\), \\(P(A\\cap B)=0{,}2\\). Chúng có độc lập không?",
+    "answer_key": "Không.",
+    "worked_solution": "Tích xác suất riêng bằng \\(0{,}6\\cdot0{,}5=0{,}3\\), khác xác suất giao 0,2. Do không thỏa tiêu chuẩn độc lập, hai biến cố không độc lập.",
+    "skill_ids": [
+      "G11-B30-VERIFY_INDEPENDENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "So 0,6·0,5 với 0,2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Tích khác giao nên không độc lập. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P03",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Ba công tắc độc lập đồng thời, xác suất bật lần lượt \\(\\frac12,\\frac23,\\frac34\\). Tính xác suất cả ba bật.",
+    "answer_key": "\\(\\frac14\\).",
+    "worked_solution": "Theo giả thiết độc lập đồng thời, xác suất giao của ba biến cố bật là tích \\(\\frac12\\cdot\\frac23\\cdot\\frac34=\\frac14\\). Chỉ có độc lập từng cặp thì chưa đủ để kết luận tích ba xác suất.",
+    "skill_ids": [
+      "G11-B30-REPEATED_TRIALS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Nhân xác suất bật của cả ba công tắc."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không cộng ba xác suất; cần độc lập đồng thời. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P04",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai lời nhắc độc lập có xác suất được nhận lần lượt \\(\\frac35\\) và \\(\\frac12\\). Tính xác suất ít nhất một lời nhắc được nhận.",
+    "answer_key": "\\(\\frac45\\).",
+    "worked_solution": "Biến cố đối là cả hai lời nhắc đều không được nhận. Các xác suất không nhận lần lượt là \\(\\frac25\\) và \\(\\frac12\\); hai biến cố đối vẫn độc lập. Xác suất không nhận lời nào bằng \\(\\frac25\\cdot\\frac12=\\frac15\\). Vậy xác suất cần tìm là \\(1-\\frac15=\\frac45\\).",
+    "skill_ids": [
+      "G11-B30-AT_LEAST_ONE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Tính xác suất cả hai lời nhắc đều không được nhận."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Bù của ít nhất một là không nhận cả hai, không phải đúng một. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P05",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "A, B độc lập với \\(P(A)=P(B)=\\frac12\\). Có thể \\(A\\cap B=\\varnothing\\) không?",
+    "answer_key": "Không.",
+    "worked_solution": "Độc lập cho \\(P(A\\cap B)=\\frac12\\cdot\\frac12=\\frac14>0\\). Nếu giao rỗng, xác suất giao phải bằng 0, mâu thuẫn. Do đó giao không rỗng.",
+    "skill_ids": [
+      "G11-B30-INDEPENDENT_VS_DISJOINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Tính xác suất giao theo quy tắc nhân."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu giao rỗng thì P(giao)=0, mâu thuẫn. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P06",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một thiết bị có hai môđun phát hiện lỗi. Trong 100 trường hợp có lỗi, môđun A phát hiện 80 trường hợp, môđun B phát hiện 70 trường hợp và cả hai cùng phát hiện 70 trường hợp. Chọn đều một trong 100 trường hợp này. (a) Tính xác suất cả hai phát hiện. Hai biến cố phát hiện có độc lập trong mô hình này không? (b) Tính xác suất ít nhất một môđun phát hiện. Giải thích vì sao không thể lấy tích hai xác suất riêng để trả lời (a).",
+    "answer_key": "(a) \\(0{,}7\\); không độc lập. (b) \\(0{,}8\\).",
+    "worked_solution": "Gọi A, B lần lượt là biến cố môđun A, B phát hiện lỗi. (a) Theo dữ liệu, \\(P(A)=\\frac{80}{100}=0{,}8\\), \\(P(B)=\\frac{70}{100}=0{,}7\\), \\(P(A\\cap B)=\\frac{70}{100}=0{,}7\\). Nếu độc lập, xác suất giao phải bằng \\(0{,}8\\cdot0{,}7=0{,}56\\), khác \\(0{,}7\\); hai biến cố không độc lập. (b) Quy tắc cộng không đòi hỏi độc lập: \\(P(A\\cup B)=0{,}8+0{,}7-0{,}7=0{,}8\\). Kiểm lại: 70 trường hợp cả hai phát hiện, 10 chỉ A, 0 chỉ B, 20 không môđun nào phát hiện. Tổng đúng 100. Hai môđun khác nhau không tự bảo đảm hai biến cố độc lập.",
+    "skill_ids": [
+      "G11-B30-REAL_CONTEXT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Tính xác suất giao từ số trường hợp cả hai phát hiện rồi so với tích hai xác suất riêng.",
+      "Dùng quy tắc cộng có trừ phần giao."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không nhầm hai môđun riêng biệt với hai biến cố độc lập. Đối chiếu xác suất giao với tích; dùng số liệu giao đã cho khi không độc lập. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P13."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P07",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Ba phép thử độc lập đồng thời có xác suất lỗi lần lượt \\(\\frac12,\\frac13,\\frac14\\). Tính xác suất ít nhất một lần không lỗi.",
+    "answer_key": "\\(\\frac{23}{24}\\).",
+    "worked_solution": "Biến cố đối là cả ba lần đều lỗi. Vì độc lập đồng thời, xác suất đó bằng \\(\\frac12\\cdot\\frac13\\cdot\\frac14=\\frac1{24}\\). Vậy xác suất có ít nhất một lần không lỗi là \\(1-\\frac1{24}=\\frac{23}{24}\\).",
+    "skill_ids": [
+      "G11-B30-AT_LEAST_ONE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Bù là cả ba phép thử đều lỗi."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P07",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nhân ba xác suất lỗi rồi trừ khỏi 1. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-CHVIII-P01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai biến cố độc lập có \\(P(A)=\\frac25\\), \\(P(B)=\\frac14\\). Tính \\(P(A\\cap B)\\), \\(P(A\\cup B)\\) và chỉ ra công thức nào dùng trước.",
+    "answer_key": "\\(P(A\\cap B)=\\frac1{10}\\); \\(P(A\\cup B)=\\frac{11}{20}\\).",
+    "worked_solution": "Trước hết dùng quy tắc nhân vì A, B độc lập: \\(P(A\\cap B)=\\frac25\\cdot\\frac14=\\frac1{10}\\). Sau đó dùng quy tắc cộng có trừ giao: \\(P(A\\cup B)=\\frac25+\\frac14-\\frac1{10}=\\frac{8+5-2}{20}=\\frac{11}{20}\\). Kết quả hợp không nhỏ hơn từng xác suất riêng.",
+    "skill_ids": [
+      "G11-CHVIII-INTEGRATED"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Dùng nhân tính giao trước, rồi cộng trừ giao."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-CHVIII-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không nhầm giao với hợp; xác suất hợp không nhỏ hơn từng xác suất riêng. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P17."
+  },
+  {
+    "item_id": "THPT-G11-B28-KFT01",
+    "content_version": "SOURCE_BLOB_86018a916315d313249f958ff2c66acdb52612be_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Với Ω={1,2,3,4,5,6}, A={2,4,6}, B={4,5,6}, em hãy viết A∪B, A∩B và Ā; hỏi hai biến cố này xung khắc không và giải thích.",
+    "answer_key": "A∪B={2,4,5,6}; A∩B={4,6}; Ā={1,3,5}; không xung khắc.",
+    "worked_solution": "**Tự đối chiếu sau khi làm:** A∪B={2,4,5,6}, gồm các kết quả thuộc ít nhất một trong hai tập; A∩B={4,6}, gồm các kết quả chung; Ā=Ω\\A={1,3,5}, gồm các kết quả không thuộc A. A và B không xung khắc vì A∩B≠∅: kết quả 4 hoặc 6 làm cả hai biến cố cùng xảy ra.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B28-UNION",
+      "G11-B28-INTERSECTION",
+      "G11-B28-COMPLEMENT",
+      "G11-B28-DISJOINT"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "86018a916315d313249f958ff2c66acdb52612be",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/bai-28.md",
+        "blob": "86018a916315d313249f958ff2c66acdb52612be",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 26,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-B29-KFT01",
+    "content_version": "SOURCE_BLOB_51b686118c52605d8c8ab64b2e05d3fea419c1f8_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một lớp có 30 bạn. Có 14 bạn tham gia CLB A, 12 bạn tham gia CLB B, trong đó 5 bạn tham gia cả hai CLB. Tính số bạn tham gia ít nhất một CLB và số bạn không tham gia CLB nào trong hai CLB A, B.",
+    "answer_key": "21 bạn thuộc ít nhất một CLB; 9 bạn không thuộc CLB nào.",
+    "worked_solution": "**Đối chiếu sau thử:** Khi cộng 14+12, năm bạn tham gia cả hai CLB bị đếm hai lần. Vì vậy số bạn tham gia ít nhất một CLB là 14+12−5=21. Số bạn không tham gia CLB A lẫn CLB B là 30−21=9. Tự kiểm bốn vùng: chỉ A có 9, cả hai có 5, chỉ B có 7, ngoài cả hai có 9; tổng 9+5+7+9=30.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B29-VENN_COUNTS",
+      "G11-B29-ADDITION_OVERLAP"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "51b686118c52605d8c8ab64b2e05d3fea419c1f8",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/bai-29.md",
+        "blob": "51b686118c52605d8c8ab64b2e05d3fea419c1f8",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 30,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "audit_note": "Clarify source wording 'không thuộc cả hai' versus neither membership; preserved source pending audit."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  },
+  {
+    "item_id": "THPT-G11-B30-KFT01",
+    "content_version": "SOURCE_BLOB_7ef2e8be4bca6c64f7ab190ed5d1cde921998373_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hai cảm biến có biến cố phát hiện cùng một sự kiện độc lập với nhau, xác suất phát hiện lần lượt là 4/5 và 3/4. Tính (i) xác suất cả hai cùng phát hiện, (ii) xác suất ít nhất một cảm biến phát hiện.",
+    "answer_key": "(i) 3/5; (ii) 19/20.",
+    "worked_solution": "**Đối chiếu sau thử:** Gọi A, B là biến cố từng cảm biến phát hiện sự kiện. (i) Vì A và B độc lập, P(A∩B)=(4/5)(3/4)=3/5. (ii) Biến cố đối của ít nhất một cảm biến phát hiện là cả hai đều không phát hiện. Hai biến cố đối cũng độc lập, nên xác suất này bằng (1−4/5)(1−3/4)=1/20. Do đó P(A∪B)=1−1/20=19/20.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B30-MULTIPLY_INDEPENDENT",
+      "G11-B30-AT_LEAST_ONE"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7ef2e8be4bca6c64f7ab190ed5d1cde921998373",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/bai-30.md",
+        "blob": "7ef2e8be4bca6c64f7ab190ed5d1cde921998373",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 26,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+  }
+]
