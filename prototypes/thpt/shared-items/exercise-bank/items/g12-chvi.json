@@ -311,7 +311,7 @@
   },
   {
     "item_id": "THPT-G12-B18-P04",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-G12-B18-P04",
     "stem": "Cho \\(P(A)=P(B)=\\frac12\\) nhưng \\(P(A\\cap B)=0\\). Hai biến cố có độc lập không?",
     "answer_key": "Không.",
     "worked_solution": "Nếu độc lập thì xác suất giao phải bằng \\(P(A)P(B)=\\frac14\\), nhưng dữ kiện cho 0. Do đó không độc lập. Hai biến cố xung khắc có xác suất dương không thể độc lập.",
@@ -319,13 +319,17 @@
       "G12-CHVI-B18-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So 0 với tích \\(\\frac12\\cdot\\frac12\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -335,10 +339,30 @@
         "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
         "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHVI-B18-B19-END-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Xung khắc có xác suất dương không độc lập. Ôn CĐ21 mục 1.4; luyện THPT-TOP21-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Xung khắc có xác suất dương không độc lập. Ôn CĐ21 mục 1.4; luyện THPT-TOP21-P04.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, vì P(A)=P(B)"
+      },
+      {
+        "id": "B",
+        "text": "Có, vì giao có xác suất 0"
+      },
+      {
+        "id": "C",
+        "text": "Không, vì 0 khác \\(\\frac{1}{4}\\)"
+      },
+      {
+        "id": "D",
+        "text": "Không, vì xác suất mỗi biến cố nhỏ hơn 1"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B18-A04",
@@ -404,7 +428,7 @@
   },
   {
     "item_id": "THPT-G12-B18-P05",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-G12-B18-P05",
     "stem": "Nhóm X có 30 người chọn A, 20 không chọn; nhóm Y có 15 người chọn A, 35 không chọn. Chọn đồng khả năng một người. Biết người đó chọn A, tính xác suất thuộc X.",
     "answer_key": "\\(\\frac23\\).",
     "worked_solution": "Nhóm điều kiện gồm 30+15=45 người chọn A. Trong đó 30 người thuộc X. Xác suất bằng \\(\\frac{30}{45}=\\frac23\\); không chia cho tổng số người trong X.",
@@ -412,13 +436,17 @@
       "G12-CHVI-B18-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
       "Đếm tổng người chọn A ở cả hai nhóm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -428,10 +456,30 @@
         "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
         "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHVI-B18-B19-END-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Mẫu 45, không phải tổng nhóm X=50. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Mẫu 45, không phải tổng nhóm X=50. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{2}{3}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{3}{5}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{3}{10}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{1}{2}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B18-A05",
@@ -466,7 +514,7 @@
   },
   {
     "item_id": "THPT-G12-B18-C06",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-G12-B18-C06",
     "stem": "Cho \\(P(A)=0{,}3\\), \\(P(B\\mid A)=0{,}6\\). Tính \\(P(A\\cap B)\\).",
     "answer_key": "\\(\\frac9{50}=0{,}18\\).",
     "worked_solution": "Dùng công thức nhân xác suất: \\(P(A\\cap B)=P(A)P(B\\mid A)=0{,}3\\cdot0{,}6=0{,}18\\). Không cần giả thiết hai biến cố độc lập.",
@@ -474,13 +522,17 @@
       "G12-CHVI-B18-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Dùng \\(P(A\\cap B)=P(A)P(B\\mid A)\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -490,10 +542,30 @@
         "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
         "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHVI-B18-B19-END-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không đòi độc lập khi đã có xác suất có điều kiện. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không đòi độc lập khi đã có xác suất có điều kiện. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0,9"
+      },
+      {
+        "id": "B",
+        "text": "0,6"
+      },
+      {
+        "id": "C",
+        "text": "0,3"
+      },
+      {
+        "id": "D",
+        "text": "0,18"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B18-P06",
@@ -714,7 +786,7 @@
   },
   {
     "item_id": "THPT-G12-B19-A01",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-G12-B19-A01",
     "stem": "Cho \\(P(B)=0{,}32\\), \\(P(A)=0{,}4\\), \\(P(B\\mid A)=0{,}5\\). Tìm \\(P(B\\mid\\overline A)\\).",
     "answer_key": "\\(\\frac15=0{,}2\\).",
     "worked_solution": "Đặt x là xác suất cần tìm. Dùng toàn phần theo A và biến cố đối: \\(0{,}32=0{,}4\\cdot0{,}5+0{,}6x\\). Suy ra \\(0{,}12=0{,}6x\\) nên x=0,2. Giá trị nằm trong [0;1].",
@@ -722,13 +794,17 @@
       "G12-CHVI-B19-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Đặt x là xác suất cần tìm, lập \\(0{,}32=0{,}4\\cdot0{,}5+0{,}6x\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -738,10 +814,30 @@
         "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
         "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHVI-B18-B19-END-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Chia phần xác suất còn lại cho trọng số 0,6. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Chia phần xác suất còn lại cho trọng số 0,6. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0,12"
+      },
+      {
+        "id": "B",
+        "text": "0,2"
+      },
+      {
+        "id": "C",
+        "text": "0,32"
+      },
+      {
+        "id": "D",
+        "text": "0,5"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B19-C02",
@@ -1148,7 +1244,7 @@
   },
   {
     "item_id": "THPT-G12-B19-P06",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-G12-B19-P06",
     "stem": "Ba nhà máy đóng góp lần lượt 20%, 30%, 50% sản phẩm; tỉ lệ lỗi tương ứng 1%, 2%, 3%. Tính xác suất sản phẩm chọn ngẫu nhiên bị lỗi.",
     "answer_key": "\\(\\frac{23}{1000}=0{,}023\\).",
     "worked_solution": "Cộng ba nhánh lỗi có trọng số: \\(0{,}2\\cdot0{,}01+0{,}3\\cdot0{,}02+0{,}5\\cdot0{,}03=0{,}002+0{,}006+0{,}015=0{,}023\\) (2,3%).",
@@ -1156,13 +1252,17 @@
       "G12-CHVI-B19-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
       "Đổi các phần trăm ra số thập phân, cộng ba tích."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1172,10 +1272,30 @@
         "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
         "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHVI-B18-B19-END-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không cộng tỉ lệ lỗi đơn thuần. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không cộng tỉ lệ lỗi đơn thuần. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0,06"
+      },
+      {
+        "id": "B",
+        "text": "0,02"
+      },
+      {
+        "id": "C",
+        "text": "0,023"
+      },
+      {
+        "id": "D",
+        "text": "0,015"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B19-A06",
@@ -1272,7 +1392,7 @@
   },
   {
     "item_id": "THPT-G12-B19-A07",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-G12-B19-A07",
     "stem": "Trong các đơn giao hàng, 45% thuộc ca sáng với tỉ lệ giao đúng 90%, 55% thuộc ca tối với tỉ lệ giao đúng 80%. Chọn ngẫu nhiên một đơn. Tính xác suất giao đúng rồi tính xác suất thuộc ca tối khi biết giao đúng.",
     "answer_key": "\\(\\frac{169}{200}\\) và \\(\\frac{88}{169}\\).",
     "worked_solution": "Nhánh sáng giao đúng: \\(0{,}45\\cdot0{,}9=0{,}405\\); nhánh tối giao đúng: \\(0{,}55\\cdot0{,}8=0{,}44\\). Tổng đúng \\(0{,}845=\\frac{169}{200}\\). Bayes cho xác suất ca tối \\(\\frac{0{,}44}{0{,}845}=\\frac{88}{169}\\).",
@@ -1280,13 +1400,17 @@
       "G12-CHVI-B19-O07"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Tính hai đường giao đúng và dùng đường tối–đúng làm tử."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1296,10 +1420,30 @@
         "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
         "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "G12-SGK-CHVI-B18-B19-END-R00"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không dùng 55% làm hậu nghiệm khi đã biết giao đúng. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không dùng 55% làm hậu nghiệm khi đã biết giao đúng. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{169}{200}\\); \\(\\frac{88}{169}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{169}{200}\\); \\(\\frac{11}{20}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{17}{20}\\); \\(\\frac{4}{5}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{88}{200}\\); \\(\\frac{88}{169}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B18-KFT01",
