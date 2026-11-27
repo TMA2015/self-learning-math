@@ -16385,7 +16385,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT01",
     "stem": "Tìm họ nguyên hàm của \\(f(x)=8x^3-2\\). Em kiểm lại được bằng đạo hàm không?",
     "answer_key": "\\(2x^4-2x+C\\), vì đạo hàm bằng \\(8x^3-2\\).",
-    "worked_solution": "\\(F(x)=2x^4-2x+C\\). Đạo hàm của biểu thức này là \\(8x^3-2\\), đúng bằng \\(f\\). Nếu em quên \\(+C\\), hãy thử cộng thêm 5 vào nguyên hàm của mình rồi lấy đạo hàm: kết quả vẫn không đổi.\n\n\n**Kiểm lỗi**\n\nNếu em chỉ thấy một nguyên hàm mà bỏ \\(+C\\), hoặc kết luận bằng cách nhìn dạng hàm, đọc **Kiến thức 1.1**, giải **Bài 3** (đạo hàm để kiểm) và **Bài 5** (tìm cả họ). Cứ lấy đạo hàm kết quả để đối chiếu với \\(f\\).",
+    "worked_solution": "\\(F(x)=2x^4-2x+C\\). Đạo hàm của biểu thức này là \\(8x^3-2\\), đúng bằng \\(f\\). Nếu em quên \\(+C\\), hãy thử cộng thêm 5 vào nguyên hàm của mình rồi lấy đạo hàm: kết quả vẫn không đổi.\n\n\n**Kiểm lỗi**\n\nNếu em chỉ thấy một nguyên hàm mà bỏ \\(+C\\), hoặc kết luận bằng cách nhìn dạng hàm, đọc **Kiến thức 1.1**, giải **Bài 1** (đạo hàm để kiểm) và **Bài 3** (tìm cả họ). Cứ lấy đạo hàm kết quả để đối chiếu với \\(f\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B11-O01"
@@ -16442,7 +16442,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT02",
     "stem": "\\(F'(x)=2x+1\\) và \\(F(0)=7\\): tìm \\(F\\).",
     "answer_key": "\\(F(x)=x^2+x+7\\).",
-    "worked_solution": "Từ \\(F'(x)=2x+1\\), ta có \\(F(x)=x^2+x+C\\). Thay \\(F(0)=7\\) suy ra \\(C=7\\), vậy \\(F(x)=x^2+x+7\\).\n\nNếu dùng \\(F'(0)=7\\), em đã dùng sai loại dữ kiện; \\(F(0)\\) mới là giá trị ban đầu.\n\n\n**Kiểm lỗi**\n\nNếu em thay điều kiện \\(F(a)\\) thành \\(F'(a)\\) hoặc không tìm hằng \\(C\\), đọc **Kiến thức 1.2**, giải **Bài 8** rồi **Bài 10**. Phải thỏa đồng thời đạo hàm và giá trị ban đầu.",
+    "worked_solution": "Từ \\(F'(x)=2x+1\\), ta có \\(F(x)=x^2+x+C\\). Thay \\(F(0)=7\\) suy ra \\(C=7\\), vậy \\(F(x)=x^2+x+7\\).\n\nNếu dùng \\(F'(0)=7\\), em đã dùng sai loại dữ kiện; \\(F(0)\\) mới là giá trị ban đầu.\n\n\n**Kiểm lỗi**\n\nNếu em thay điều kiện \\(F(a)\\) thành \\(F'(a)\\) hoặc không tìm hằng \\(C\\), đọc **Kiến thức 1.2**, giải **Bài 14** rồi **Bài 15**. Phải thỏa đồng thời đạo hàm và giá trị ban đầu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B11-O02"
@@ -16499,7 +16499,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT03",
     "stem": "\\(\\int (5x^4+2x)\\,\\mathrm dx\\)?",
     "answer_key": "\\(x^5+x^2+C\\).",
-    "worked_solution": "Lấy nguyên hàm từng hạng: \\(\\int(5x^4+2x)\\,\\mathrm dx=x^5+x^2+C\\). Đạo hàm ngược đúng bằng \\(5x^4+2x\\).\n\nNếu không chia hệ số mũ mới, kiểm đạo hàm ngược sẽ phát hiện hệ số dư.\n\n\n**Kiểm lỗi**\n\nNếu em quên chia hệ số theo mũ mới khi tính nguyên hàm lũy thừa, đọc **Kiến thức 1.3**, làm **Bài 14** rồi **Bài 16**. Lấy đạo hàm ngược để phát hiện hệ số thiếu.",
+    "worked_solution": "Lấy nguyên hàm từng hạng: \\(\\int(5x^4+2x)\\,\\mathrm dx=x^5+x^2+C\\). Đạo hàm ngược đúng bằng \\(5x^4+2x\\).\n\nNếu không chia hệ số mũ mới, kiểm đạo hàm ngược sẽ phát hiện hệ số dư.\n\n\n**Kiểm lỗi**\n\nNếu em quên chia hệ số theo mũ mới khi tính nguyên hàm lũy thừa, đọc **Kiến thức 1.3**, làm **Bài 17** rồi **Bài 6**. Lấy đạo hàm ngược để phát hiện hệ số thiếu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B11-O03"
@@ -16556,7 +16556,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT04",
     "stem": "\\(F'(x)=\\frac1x\\) trên \\(x<0\\), \\(F(-1)=2\\). Tìm \\(F(x)\\).",
     "answer_key": "\\(F(x)=\\ln(-x)+2\\), \\(x<0\\).",
-    "worked_solution": "Trên \\(x<0\\), \\((\\ln(-x))'=1/x\\), nên \\(F(x)=\\ln(-x)+C\\). Từ \\(F(-1)=\\ln 1+C=2\\), suy ra \\(C=2\\).\n\nKhông viết \\(\\ln x\\) khi \\(x<0\\); sau đó kiểm đạo hàm trước khi kết luận.\n\n\n**Kiểm lỗi**\n\nNếu em dùng \\(\\ln x\\) cho \\(x<0\\) hoặc ghép hằng số xuyên qua điểm \\(x=0\\) bị loại, đọc **Kiến thức 1.4**, làm **Bài 17** và **Bài 21**. Luôn chọn một khoảng xác định không qua 0.",
+    "worked_solution": "Trên \\(x<0\\), \\((\\ln(-x))'=1/x\\), nên \\(F(x)=\\ln(-x)+C\\). Từ \\(F(-1)=\\ln 1+C=2\\), suy ra \\(C=2\\).\n\nKhông viết \\(\\ln x\\) khi \\(x<0\\); sau đó kiểm đạo hàm trước khi kết luận.\n\n\n**Kiểm lỗi**\n\nNếu em dùng \\(\\ln x\\) cho \\(x<0\\) hoặc ghép hằng số xuyên qua điểm \\(x=0\\) bị loại, đọc **Kiến thức 1.4**, làm **Bài 32** và **Bài 20**. Luôn chọn một khoảng xác định không qua 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B11-O04"
@@ -16613,7 +16613,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT05",
     "stem": "Tìm \\(\\int 5e^{5x}\\,\\mathrm dx\\).",
     "answer_key": "\\(e^{5x}+C\\).",
-    "worked_solution": "Vì \\((e^{5x})'=5e^{5x}\\), nên \\(\\int5e^{5x}\\,\\mathrm dx=e^{5x}+C\\).\n\nNếu kết quả là \\(5e^{5x}\\), lấy đạo hàm sẽ được \\(25e^{5x}\\), gấp năm lần hàm đã cho. Em cần chia hệ số cho \\(5\\).\n\n\n**Kiểm lỗi**\n\nNếu em đạo hàm ngược \\(e^{kx}\\) hay \\(a^x\\) mà thiếu hệ số bù, đọc **Kiến thức 1.5**, làm **Bài 25** và **Bài 27**; phải dùng \\(\\ln a\\) khi cơ số là \\(a>0,a\\ne1\\).",
+    "worked_solution": "Vì \\((e^{5x})'=5e^{5x}\\), nên \\(\\int5e^{5x}\\,\\mathrm dx=e^{5x}+C\\).\n\nNếu kết quả là \\(5e^{5x}\\), lấy đạo hàm sẽ được \\(25e^{5x}\\), gấp năm lần hàm đã cho. Em cần chia hệ số cho \\(5\\).\n\n\n**Kiểm lỗi**\n\nNếu em đạo hàm ngược \\(e^{kx}\\) hay \\(a^x\\) mà thiếu hệ số bù, đọc **Kiến thức 1.5**, làm **Bài 22** và **Bài 9**; phải dùng \\(\\ln a\\) khi cơ số là \\(a>0,a\\ne1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B11-O05"
@@ -16670,7 +16670,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT06",
     "stem": "\\(\\int 2\\sin (2x)\\,\\mathrm dx\\)?",
     "answer_key": "\\(-\\cos(2x)+C\\).",
-    "worked_solution": "Vì \\((-\\cos(2x))'=2\\sin(2x)\\), nên \\(\\int2\\sin(2x)\\,\\mathrm dx=-\\cos(2x)+C\\).\n\nNếu thiếu dấu âm, em hãy lấy đạo hàm của \\(\\cos(2x)\\): kết quả là \\(-2\\sin(2x)\\), trái dấu với hàm đề bài.\n\n\n**Kiểm lỗi**\n\nNếu em mất dấu khi nguyên hàm \\(\\sin\\) hoặc quên nhân hệ số góc theo radian, đọc **Kiến thức 1.6**, làm **Bài 30** rồi **Bài 32**. Lấy đạo hàm kết quả theo quy tắc dây chuyền.",
+    "worked_solution": "Vì \\((-\\cos(2x))'=2\\sin(2x)\\), nên \\(\\int2\\sin(2x)\\,\\mathrm dx=-\\cos(2x)+C\\).\n\nNếu thiếu dấu âm, em hãy lấy đạo hàm của \\(\\cos(2x)\\): kết quả là \\(-2\\sin(2x)\\), trái dấu với hàm đề bài.\n\n\n**Kiểm lỗi**\n\nNếu em mất dấu khi nguyên hàm \\(\\sin\\) hoặc quên nhân hệ số góc theo radian, đọc **Kiến thức 1.6**, làm **Bài 24** rồi **Bài 11**. Lấy đạo hàm kết quả theo quy tắc dây chuyền.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B11-O06"
@@ -16727,7 +16727,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT07",
     "stem": "Vật chuyển động thẳng có vận tốc \\(v(t)=6t\\) (m/s), thời gian \\(t\\) tính bằng giây, vị trí ban đầu \\(s(0)=1\\) m. Tính vị trí \\(s(1)\\).",
     "answer_key": "\\(s(1)=4\\) m.",
-    "worked_solution": "Vì \\(s'(t)=v(t)\\), ta có \\(s(t)=3t^2+C\\). Thế \\(s(0)=1\\) được \\(C=1\\); do đó \\(s(1)=4\\) m.\n\nNếu không biết \\(s(0)\\), ta chưa xác định được vị trí tuyệt đối cụ thể.\n\n\n**Kiểm lỗi**\n\nNếu em tích phân vận tốc để ra độ dời nhưng ghi ngay vị trí tuyệt đối không có dữ kiện đầu, đọc **Kiến thức 1.7**, làm **Bài 35** và **Bài 37**. Viết \\(s'=v\\), tìm hằng \\(C\\) từ vị trí đã biết rồi mới tính.",
+    "worked_solution": "Vì \\(s'(t)=v(t)\\), ta có \\(s(t)=3t^2+C\\). Thế \\(s(0)=1\\) được \\(C=1\\); do đó \\(s(1)=4\\) m.\n\nNếu không biết \\(s(0)\\), ta chưa xác định được vị trí tuyệt đối cụ thể.\n\n\n**Kiểm lỗi**\n\nNếu em tích phân vận tốc để ra độ dời nhưng ghi ngay vị trí tuyệt đối không có dữ kiện đầu, đọc **Kiến thức 1.7**, làm **Bài 25** và **Bài 27**. Viết \\(s'=v\\), tìm hằng \\(C\\) từ vị trí đã biết rồi mới tính.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B11-O07"
@@ -16784,7 +16784,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT08",
     "stem": "Tính \\(\\displaystyle\\int_1^3 2x\\,dx\\). Viết rõ giá trị nguyên hàm ở cả hai cận.",
     "answer_key": "\\(F(3)-F(1)=9-1=8\\) với \\(F(x)=x^2\\).",
-    "worked_solution": "\\(\\left[x^2\\right]_1^3=3^2-1^2=8\\). Nếu em ra 9, em mới thế cận trên mà quên trừ giá trị tại cận dưới.\n\nNếu chỉ thế cận trên, hãy nhớ công thức là hiệu \\(F(b)-F(a)\\).\n\n\n**Kiểm lỗi**\n\nNếu em thêm \\(+C\\) vào tích phân có cận hoặc chỉ thế cận trên, đọc **Kiến thức 2.1**, làm **Bài 40** và **Bài 42**. Kiểm hàm liên tục trên đoạn và tính đúng \\(F(b)-F(a)\\).",
+    "worked_solution": "\\(\\left[x^2\\right]_1^3=3^2-1^2=8\\). Nếu em ra 9, em mới thế cận trên mà quên trừ giá trị tại cận dưới.\n\nNếu chỉ thế cận trên, hãy nhớ công thức là hiệu \\(F(b)-F(a)\\).\n\n\n**Kiểm lỗi**\n\nNếu em thêm \\(+C\\) vào tích phân có cận hoặc chỉ thế cận trên, đọc **Kiến thức 2.1**, làm **Bài 47** và **Bài 48**. Kiểm hàm liên tục trên đoạn và tính đúng \\(F(b)-F(a)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B12-O01"
@@ -16841,7 +16841,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT09",
     "stem": "\\(\\int_{0}^{2} (2x+3)\\,\\mathrm dx\\)?",
     "answer_key": "10.",
-    "worked_solution": "\\(\\left[x^2+3x\\right]_0^2=4+6=10\\).\n\nNếu ghép các tích phân khác cận mà không đổi cận, đó không phải quy tắc tuyến tính.\n\n\n**Kiểm lỗi**\n\nNếu em tách biểu thức nhưng đổi nhầm cận hoặc không nhân hệ số, đọc **Kiến thức 2.2**, làm **Bài 45** và **Bài 47**. Quy tắc tuyến tính giữ nguyên cận cho các tích phân thành phần.",
+    "worked_solution": "\\(\\left[x^2+3x\\right]_0^2=4+6=10\\).\n\nNếu ghép các tích phân khác cận mà không đổi cận, đó không phải quy tắc tuyến tính.\n\n\n**Kiểm lỗi**\n\nNếu em tách biểu thức nhưng đổi nhầm cận hoặc không nhân hệ số, đọc **Kiến thức 2.2**, làm **Bài 50** và **Bài 51**. Quy tắc tuyến tính giữ nguyên cận cho các tích phân thành phần.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B12-O02"
@@ -16898,7 +16898,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT10",
     "stem": "Biết \\(\\int_1^3 f(x)\\,dx=5\\) và \\(\\int_3^5 f(x)\\,dx=-2\\), trong đó \\(f\\) liên tục trên \\([1;5]\\). Tính \\(\\int_1^5 f(x)\\,dx\\), \\(\\int_5^1 f(x)\\,dx\\) và \\(\\int_3^3 f(x)\\,dx\\).",
     "answer_key": "3; \\(-3\\); 0 (theo thứ tự).",
-    "worked_solution": "Ghép tại \\(3\\): \\(\\int_1^5 f(x)\\,dx=5+(-2)=3\\). Đảo cận cho \\(\\int_5^1 f(x)\\,dx=-3\\); hai cận bằng nhau cho \\(\\int_3^3 f(x)\\,dx=0\\). Nếu em cộng thành 7, em đã thay số hạng âm bằng trị tuyệt đối, trong khi đề hỏi tích phân có dấu.\n\n\n**Kiểm lỗi**\n\nNếu em quên dấu khi đảo cận hoặc ghép sai khoảng, đọc **Kiến thức 2.3**, làm **Bài 48** và **Bài 52**. Xác định đúng chiều cận và điểm nối trước khi cộng.",
+    "worked_solution": "Ghép tại \\(3\\): \\(\\int_1^5 f(x)\\,dx=5+(-2)=3\\). Đảo cận cho \\(\\int_5^1 f(x)\\,dx=-3\\); hai cận bằng nhau cho \\(\\int_3^3 f(x)\\,dx=0\\). Nếu em cộng thành 7, em đã thay số hạng âm bằng trị tuyệt đối, trong khi đề hỏi tích phân có dấu.\n\n\n**Kiểm lỗi**\n\nNếu em quên dấu khi đảo cận hoặc ghép sai khoảng, đọc **Kiến thức 2.3**, làm **Bài 66** và **Bài 41**. Xác định đúng chiều cận và điểm nối trước khi cộng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B12-O03"
@@ -16955,7 +16955,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT11",
     "stem": "Tính diện tích dưới đồ thị \\(y=x^2\\), phía trên trục \\(Ox\\), từ \\(x=0\\) đến \\(x=1\\).",
     "answer_key": "\\(\\frac13\\) đơn vị diện tích.",
-    "worked_solution": "Vì \\(x^2\\ge0\\) trên đoạn, diện tích là \\(\\int_0^1x^2\\,\\mathrm dx=[x^3/3]_0^1=\\frac13\\) đơn vị diện tích.\n\nNếu trả diện tích âm, kiểm f có âm trên đoạn hay không.\n\n\n**Kiểm lỗi**\n\nNếu em coi tích phân âm là diện tích âm, hoặc bỏ kiểm dấu \\(f\\), đọc **Kiến thức 2.4**, làm **Bài 55** và **Bài 57**. Diện tích hình học yêu cầu hàm không âm trên đoạn, hoặc phải tách theo dấu.",
+    "worked_solution": "Vì \\(x^2\\ge0\\) trên đoạn, diện tích là \\(\\int_0^1x^2\\,\\mathrm dx=[x^3/3]_0^1=\\frac13\\) đơn vị diện tích.\n\nNếu trả diện tích âm, kiểm f có âm trên đoạn hay không.\n\n\n**Kiểm lỗi**\n\nNếu em coi tích phân âm là diện tích âm, hoặc bỏ kiểm dấu \\(f\\), đọc **Kiến thức 2.4**, làm **Bài 55** và **Bài 56**. Diện tích hình học yêu cầu hàm không âm trên đoạn, hoặc phải tách theo dấu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B12-O04"
@@ -17012,7 +17012,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT12",
     "stem": "Một vật chuyển động thẳng với vận tốc có hướng \\(v(t)=2-t\\) (m/s), \\(0\\le t\\le5\\) giây. Tìm thời điểm đổi chiều, độ dời và tổng quãng đường của vật.",
     "answer_key": "Đổi chiều tại \\(t=2\\) s; độ dời \\(-\\frac52\\) m; quãng đường \\(\\frac{13}2\\) m.",
-    "worked_solution": "Vận tốc bằng 0 tại \\(t=2\\), dương trước 2 và âm sau 2 nên vật đổi chiều tại đó. Độ dời là\n\n\\[\n\\int_0^5(2-t)\\,dt=\\left[2t-\\frac{t^2}2\\right]_0^5=-\\frac52\\ \\text{m}.\n\\]\n\nHai phần quãng đường là \\(\\int_0^2(2-t)\\,dt=2\\) m và \\(\\int_2^5(t-2)\\,dt=\\frac92\\) m. Tổng quãng đường \\(\\frac{13}2\\) m. Nếu lấy \\(\\frac52\\) m, em mới lấy trị tuyệt đối của độ dời, chưa cộng quãng đường ở cả hai chiều.\n\n\n**Kiểm lỗi**\n\nNếu em lấy trị tuyệt đối của **một** tích phân có dấu làm quãng đường/diện tích khi hàm đổi dấu, đọc **Kiến thức 2.5**, làm **Bài 58** và **Bài 62**. Tách các khoảng tại điểm đổi dấu, tích phân \\(|f|\\) hoặc \\(|v|\\).",
+    "worked_solution": "Vận tốc bằng 0 tại \\(t=2\\), dương trước 2 và âm sau 2 nên vật đổi chiều tại đó. Độ dời là\n\n\\[\n\\int_0^5(2-t)\\,dt=\\left[2t-\\frac{t^2}2\\right]_0^5=-\\frac52\\ \\text{m}.\n\\]\n\nHai phần quãng đường là \\(\\int_0^2(2-t)\\,dt=2\\) m và \\(\\int_2^5(t-2)\\,dt=\\frac92\\) m. Tổng quãng đường \\(\\frac{13}2\\) m. Nếu lấy \\(\\frac52\\) m, em mới lấy trị tuyệt đối của độ dời, chưa cộng quãng đường ở cả hai chiều.\n\n\n**Kiểm lỗi**\n\nNếu em lấy trị tuyệt đối của **một** tích phân có dấu làm quãng đường/diện tích khi hàm đổi dấu, đọc **Kiến thức 2.5**, làm **Bài 68** và **Bài 70**. Tách các khoảng tại điểm đổi dấu, tích phân \\(|f|\\) hoặc \\(|v|\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B12-O05"
@@ -17069,7 +17069,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT13",
     "stem": "\\(\\int_{0}^{\\frac{\\pi}{2}} \\sin  x\\,\\mathrm dx\\)?",
     "answer_key": "1.",
-    "worked_solution": "\\(\\left[-\\cos x\\right]_0^{\\frac{\\pi}{2}}=0-(-1)=1\\).\n\nNếu thay cận góc độ mà không quy đổi, xem lại giả thiết radian.\n\n\n**Kiểm lỗi**\n\nNếu em quên đạo hàm \\(-\\cos x\\) bằng \\(\\sin x\\) hoặc thế cận góc độ vào công thức radian, đọc **Kiến thức 2.6**, giải **Bài 64** và **Bài 68**. Chọn nguyên hàm đúng trước khi tính hiệu giá trị tại cận.",
+    "worked_solution": "\\(\\left[-\\cos x\\right]_0^{\\frac{\\pi}{2}}=0-(-1)=1\\).\n\nNếu thay cận góc độ mà không quy đổi, xem lại giả thiết radian.\n\n\n**Kiểm lỗi**\n\nNếu em quên đạo hàm \\(-\\cos x\\) bằng \\(\\sin x\\) hoặc thế cận góc độ vào công thức radian, đọc **Kiến thức 2.6**, giải **Bài 72** và **Bài 60**. Chọn nguyên hàm đúng trước khi tính hiệu giá trị tại cận.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B12-O06"
@@ -17126,7 +17126,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT14",
     "stem": "Một vật có vận tốc có hướng \\(v(t)=3t^2\\) (m/s) trong \\(0\\le t\\le1\\) giây. Độ dời là bao nhiêu?",
     "answer_key": "1 m.",
-    "worked_solution": "Độ dời bằng \\(\\int_0^1 3t^2\\,\\mathrm dt=1\\) m.\n\nNếu kết quả còn đơn vị m/s, em chưa tích phân theo thời gian (giây).\n\n\n**Kiểm lỗi**\n\nNếu em lấy giá trị vận tốc cuối nhân tổng thời gian, hoặc không đổi đơn vị m/s theo giây thành mét, đọc **Kiến thức 2.7**, làm **Bài 71** và **Bài 73**. Độ dời là \\(\\int_a^b v(t)\\,\\mathrm dt\\); quãng đường mới cần \\(\\int_a^b|v(t)|\\,\\mathrm dt\\).",
+    "worked_solution": "Độ dời bằng \\(\\int_0^1 3t^2\\,\\mathrm dt=1\\) m.\n\nNếu kết quả còn đơn vị m/s, em chưa tích phân theo thời gian (giây).\n\n\n**Kiểm lỗi**\n\nNếu em lấy giá trị vận tốc cuối nhân tổng thời gian, hoặc không đổi đơn vị m/s theo giây thành mét, đọc **Kiến thức 2.7**, làm **Bài 62** và **Bài 63**. Độ dời là \\(\\int_a^b v(t)\\,\\mathrm dt\\); quãng đường mới cần \\(\\int_a^b|v(t)|\\,\\mathrm dt\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B12-O07"
@@ -17183,7 +17183,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT15",
     "stem": "Tính diện tích dưới \\(y=\\sqrt{x}\\) và trên \\(Ox\\), từ \\(x=0\\) đến \\(x=9\\).",
     "answer_key": "18 đơn vị diện tích.",
-    "worked_solution": "Vì \\(\\sqrt x\\ge0\\) trên \\([0;9]\\), \\(S=\\int_0^9\\sqrt x\\,\\mathrm dx=[\\frac23x^{3/2}]_0^9=\\frac23\\cdot27=18\\) đơn vị diện tích.\n\nNếu em nhầm \\(\\sqrt{x}\\) với \\(x^2\\), hãy viết lại \\(\\sqrt{x}=x^{\\frac12}\\) trước khi tìm nguyên hàm.\n\n\n**Kiểm lỗi**\n\nNếu em áp dụng công thức nguyên hàm \\(x^2\\) cho \\(\\sqrt{x}\\) hoặc bỏ miền \\(x\\ge0\\), đọc **Kiến thức 3.1**, làm **Bài 74** và **Bài 78**. Đổi \\(\\sqrt{x}=x^{\\frac12}\\) rồi kiểm cận và đơn vị diện tích.",
+    "worked_solution": "Vì \\(\\sqrt x\\ge0\\) trên \\([0;9]\\), \\(S=\\int_0^9\\sqrt x\\,\\mathrm dx=[\\frac23x^{3/2}]_0^9=\\frac23\\cdot27=18\\) đơn vị diện tích.\n\nNếu em nhầm \\(\\sqrt{x}\\) với \\(x^2\\), hãy viết lại \\(\\sqrt{x}=x^{\\frac12}\\) trước khi tìm nguyên hàm.\n\n\n**Kiểm lỗi**\n\nNếu em áp dụng công thức nguyên hàm \\(x^2\\) cho \\(\\sqrt{x}\\) hoặc bỏ miền \\(x\\ge0\\), đọc **Kiến thức 3.1**, làm **Bài 89** và **Bài 80**. Đổi \\(\\sqrt{x}=x^{\\frac12}\\) rồi kiểm cận và đơn vị diện tích.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B13-O01"
@@ -17240,7 +17240,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT16",
     "stem": "Tính diện tích hình phẳng giữa \\(y=2x-2\\) và trục hoành trên \\([0;3]\\). Tự tìm mốc chia đoạn.",
     "answer_key": "5 đơn vị diện tích; chia tại x=1.",
-    "worked_solution": "Hàm bằng 0 tại \\(x=1\\), âm trên \\([0;1)\\) và dương trên \\((1;3]\\). Diện tích là \\(\\int_0^1(2-2x)\\,dx+\\int_1^3(2x-2)\\,dx=1+4=5\\) đơn vị diện tích. Tích phân có dấu chỉ bằng \\(-1+4=3\\); hai mảnh diện tích không triệt tiêu nhau.\n\n\n**Kiểm lỗi**\n\nNếu em cho phép hai phần hình nằm trên/dưới Ox triệt tiêu thành diện tích 0, đọc **Kiến thức 3.2**, làm **Bài 79** và **Bài 83**. Tìm mọi nghiệm \\(f(x)=0\\), tách đoạn và tích phân \\(|f|\\).",
+    "worked_solution": "Hàm bằng 0 tại \\(x=1\\), âm trên \\([0;1)\\) và dương trên \\((1;3]\\). Diện tích là \\(\\int_0^1(2-2x)\\,dx+\\int_1^3(2x-2)\\,dx=1+4=5\\) đơn vị diện tích. Tích phân có dấu chỉ bằng \\(-1+4=3\\); hai mảnh diện tích không triệt tiêu nhau.\n\n\n**Kiểm lỗi**\n\nNếu em cho phép hai phần hình nằm trên/dưới Ox triệt tiêu thành diện tích 0, đọc **Kiến thức 3.2**, làm **Bài 90** và **Bài 92**. Tìm mọi nghiệm \\(f(x)=0\\), tách đoạn và tích phân \\(|f|\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B13-O02"
@@ -17297,7 +17297,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT17",
     "stem": "Tính diện tích giữa \\(y=3\\) và \\(y=x\\) trên \\([0;2]\\).",
     "answer_key": "4 đơn vị diện tích.",
-    "worked_solution": "Trên \\([0;2]\\), đường \\(y=3\\) nằm trên \\(y=x\\). \\(S=\\int_0^2(3-x)\\,\\mathrm dx=[3x-x^2/2]_0^2=4\\) đơn vị diện tích.\n\nNếu hiệu âm, hãy kiểm đã trừ đúng 'trên−dưới'.\n\n\n**Kiểm lỗi**\n\nNếu em lấy đường dưới trừ đường trên hoặc bỏ kiểm vị trí đường cong, đọc **Kiến thức 3.3**, làm **Bài 84** và **Bài 88**. Kiểm dấu hiệu hai hàm trên từng khoảng để chọn \\(\\int(\\text{trên}-\\text{dưới})dx\\).",
+    "worked_solution": "Trên \\([0;2]\\), đường \\(y=3\\) nằm trên \\(y=x\\). \\(S=\\int_0^2(3-x)\\,\\mathrm dx=[3x-x^2/2]_0^2=4\\) đơn vị diện tích.\n\nNếu hiệu âm, hãy kiểm đã trừ đúng 'trên−dưới'.\n\n\n**Kiểm lỗi**\n\nNếu em lấy đường dưới trừ đường trên hoặc bỏ kiểm vị trí đường cong, đọc **Kiến thức 3.3**, làm **Bài 93** và **Bài 85**. Kiểm dấu hiệu hai hàm trên từng khoảng để chọn \\(\\int(\\text{trên}-\\text{dưới})dx\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B13-O03"
@@ -17354,7 +17354,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT18",
     "stem": "Tính diện tích giữa \\(y=2x\\) và \\(y=x^2\\) trên đoạn \\([0;3]\\). Vì sao phải chia miền tại một giao điểm ở trong đoạn?",
     "answer_key": "\\(\\frac83\\) đơn vị diện tích; chia tại \\(x=2\\).",
-    "worked_solution": "Giải \\(2x=x^2\\) được \\(x=0\\) và \\(x=2\\). Trên \\([0;2]\\), \\(2x\\ge x^2\\); trên \\([2;3]\\), \\(x^2\\ge2x\\). Vì thế \\(S=\\int_0^2(2x-x^2)\\,\\mathrm dx+\\int_2^3(x^2-2x)\\,\\mathrm dx=\\frac43+\\frac43=\\frac83\\). Nếu em lấy ngay \\(\\left|\\int_0^3(2x-x^2)dx\\right|\\), hai phần trái dấu sẽ bị triệt và không cho diện tích thực.\n\n\n**Kiểm lỗi**\n\nNếu em dùng một hiệu có dấu xuyên qua giao điểm đổi thứ tự của hai đường, đọc **Kiến thức 3.4**, làm **Bài 89** và **Bài 93**; thử thêm **Bài 94** để lập hai tích phân đúng chiều. Diện tích phải cộng trị dương từng mảnh.",
+    "worked_solution": "Giải \\(2x=x^2\\) được \\(x=0\\) và \\(x=2\\). Trên \\([0;2]\\), \\(2x\\ge x^2\\); trên \\([2;3]\\), \\(x^2\\ge2x\\). Vì thế \\(S=\\int_0^2(2x-x^2)\\,\\mathrm dx+\\int_2^3(x^2-2x)\\,\\mathrm dx=\\frac43+\\frac43=\\frac83\\). Nếu em lấy ngay \\(\\left|\\int_0^3(2x-x^2)dx\\right|\\), hai phần trái dấu sẽ bị triệt và không cho diện tích thực.\n\n\n**Kiểm lỗi**\n\nNếu em dùng một hiệu có dấu xuyên qua giao điểm đổi thứ tự của hai đường, đọc **Kiến thức 3.4**, làm **Bài 94** và **Bài 96**; thử thêm **Bài 97** để lập hai tích phân đúng chiều. Diện tích phải cộng trị dương từng mảnh.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B13-O04"
@@ -17411,7 +17411,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT19",
     "stem": "Hai đồ thị \\(y=4-x^2\\) và \\(y=0\\) tạo thành một hình phẳng bị chặn. Tự tìm hai giao điểm, xác định đường nằm trên giữa chúng rồi tính diện tích.",
     "answer_key": "Hai giao điểm tại \\(x=-2,2\\); parabol nằm trên Ox; \\(S=\\frac{32}3\\) đơn vị diện tích.",
-    "worked_solution": "Giải \\(4-x^2=0\\), được \\(x=-2\\) hoặc \\(x=2\\). Trên \\((-2;2)\\), \\(4-x^2>0\\), nên parabol nằm trên trục hoành. Vậy \\(S=\\int_{-2}^{2}(4-x^2)\\,dx=\\left[4x-\\dfrac{x^3}{3}\\right]_{-2}^{2}=\\dfrac{32}{3}\\) đơn vị diện tích. Hai cận phải đến từ giao điểm; không lấy lại cận của ví dụ đã học.\n\n\n**Kiểm lỗi**\n\nNếu em lấy cận theo cảm tính thay vì giải giao điểm, hoặc quên miền của mô hình, đọc **Kiến thức 3.5**, làm **Bài 95** và **Bài 99**. Giao điểm cùng điều kiện đề mới xác định cận và miền diện tích.",
+    "worked_solution": "Giải \\(4-x^2=0\\), được \\(x=-2\\) hoặc \\(x=2\\). Trên \\((-2;2)\\), \\(4-x^2>0\\), nên parabol nằm trên trục hoành. Vậy \\(S=\\int_{-2}^{2}(4-x^2)\\,dx=\\left[4x-\\dfrac{x^3}{3}\\right]_{-2}^{2}=\\dfrac{32}{3}\\) đơn vị diện tích. Hai cận phải đến từ giao điểm; không lấy lại cận của ví dụ đã học.\n\n\n**Kiểm lỗi**\n\nNếu em lấy cận theo cảm tính thay vì giải giao điểm, hoặc quên miền của mô hình, đọc **Kiến thức 3.5**, làm **Bài 98** và **Bài 99**. Giao điểm cùng điều kiện đề mới xác định cận và miền diện tích.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B13-O05"
@@ -17468,7 +17468,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT20",
     "stem": "Một khối có thiết diện vuông cạnh 3 không đổi trên đoạn dài 2 (cùng đơn vị độ dài). Tính thể tích.",
     "answer_key": "18 đơn vị thể tích.",
-    "worked_solution": "Diện tích thiết diện vuông là \\(3^2=9\\). Thể tích \\(V=\\int_0^2 9\\,\\mathrm dx=18\\) đơn vị thể tích.\n\nNếu dùng 3 thay cho9, bạn lấy cạnh làm diện tích.\n\n\n**Kiểm lỗi**\n\nNếu em lấy chiều dài cạnh hình vuông làm diện tích, hoặc nhân thêm \\(\\pi\\) dù thiết diện là vuông, đọc **Kiến thức 4.1**, làm **Bài 100** và **Bài 104**. Phải lập \\(A(x)=s(x)^2\\) rồi tích phân theo chiều dài.",
+    "worked_solution": "Diện tích thiết diện vuông là \\(3^2=9\\). Thể tích \\(V=\\int_0^2 9\\,\\mathrm dx=18\\) đơn vị thể tích.\n\nNếu dùng 3 thay cho9, bạn lấy cạnh làm diện tích.\n\n\n**Kiểm lỗi**\n\nNếu em lấy chiều dài cạnh hình vuông làm diện tích, hoặc nhân thêm \\(\\pi\\) dù thiết diện là vuông, đọc **Kiến thức 4.1**, làm **Bài 108** và **Bài 109**. Phải lập \\(A(x)=s(x)^2\\) rồi tích phân theo chiều dài.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B13-O06"
@@ -17525,7 +17525,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT21",
     "stem": "Một khối có thiết diện tròn bán kính \\(r(x)=1+x\\) trên \\([0;1]\\). Tính thể tích.",
     "answer_key": "\\(\\frac{7\\pi}3\\) đơn vị thể tích.",
-    "worked_solution": "\\(V=\\pi\\int_0^1(1+x)^2\\,\\mathrm dx=\\frac{7\\pi}3\\).\n\nNếu ra \\(\\frac{3\\pi}2\\), em đã tính \\(\\pi\\int_0^1(1+x)\\,dx\\), tức tích phân bán kính thay vì diện tích tiết diện. Phải bình phương bán kính trước: \\(\\pi(1+x)^2\\).\n\n\n**Kiểm lỗi**\n\nNếu em quên bình phương bán kính hoặc nhầm đường kính với bán kính, đọc **Kiến thức 4.2**, làm **Bài 106** và **Bài 110**. Với tiết diện tròn, \\(A(x)=\\pi r(x)^2\\); kiểm đơn vị cm³.",
+    "worked_solution": "\\(V=\\pi\\int_0^1(1+x)^2\\,\\mathrm dx=\\frac{7\\pi}3\\).\n\nNếu ra \\(\\frac{3\\pi}2\\), em đã tính \\(\\pi\\int_0^1(1+x)\\,dx\\), tức tích phân bán kính thay vì diện tích tiết diện. Phải bình phương bán kính trước: \\(\\pi(1+x)^2\\).\n\n\n**Kiểm lỗi**\n\nNếu em quên bình phương bán kính hoặc nhầm đường kính với bán kính, đọc **Kiến thức 4.2**, làm **Bài 111** và **Bài 112**. Với tiết diện tròn, \\(A(x)=\\pi r(x)^2\\); kiểm đơn vị cm³.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B13-O07"
@@ -17582,7 +17582,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT22",
     "stem": "Quay miền \\(0\\le x\\le2,\\ 1\\le y\\le3\\) quanh trục \\(Ox\\). Tính thể tích và giải thích vì sao không dùng đĩa đặc.",
     "answer_key": "\\(16\\pi\\) đơn vị thể tích; thiết diện vành khăn.",
-    "worked_solution": "Miền không chạm trục \\(Ox\\), nên mỗi thiết diện là vành khăn có bán kính ngoài \\(R=3\\), trong \\(r=1\\). Diện tích là \\(\\pi(3^2-1^2)=8\\pi\\). Thể tích \\(V=\\int_0^2 8\\pi\\,dx=16\\pi\\) đơn vị thể tích. Nếu ra \\(18\\pi\\), em đã tính cả phần lỗ; nếu ra \\(8\\pi\\), em đã dùng \\(\\pi(R-r)^2\\) thay hiệu hai diện tích.\n\n\n**Kiểm lỗi**\n\nNếu em dùng công thức đĩa đặc cho một miền quay có lỗ hoặc lấy \\((R-r)^2\\) thay \\(R^2-r^2\\), đọc **Kiến thức 4.3**, làm **Bài 111** và **Bài 115**; giải **Bài 116** về vành khăn trước khi kết luận. Chỉ áp dụng công thức sau khi xác định vùng và bán kính thật.",
+    "worked_solution": "Miền không chạm trục \\(Ox\\), nên mỗi thiết diện là vành khăn có bán kính ngoài \\(R=3\\), trong \\(r=1\\). Diện tích là \\(\\pi(3^2-1^2)=8\\pi\\). Thể tích \\(V=\\int_0^2 8\\pi\\,dx=16\\pi\\) đơn vị thể tích. Nếu ra \\(18\\pi\\), em đã tính cả phần lỗ; nếu ra \\(8\\pi\\), em đã dùng \\(\\pi(R-r)^2\\) thay hiệu hai diện tích.\n\n\n**Kiểm lỗi**\n\nNếu em dùng công thức đĩa đặc cho một miền quay có lỗ hoặc lấy \\((R-r)^2\\) thay \\(R^2-r^2\\), đọc **Kiến thức 4.3**, làm **Bài 113** và **Bài 115**; giải **Bài 116** về vành khăn trước khi kết luận. Chỉ áp dụng công thức sau khi xác định vùng và bán kính thật.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B13-O08"
