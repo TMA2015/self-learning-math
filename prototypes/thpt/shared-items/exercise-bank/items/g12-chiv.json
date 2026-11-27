@@ -1,21 +1,25 @@
 [
   {
     "item_id": "THPT-G12-B11-C01",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-C01",
     "stem": "Hàm \\(F(x)=2x^3-5x+7\\) có là nguyên hàm của \\(f(x)=6x^2-5\\) trên \\(\\mathbb R\\) không?",
-    "answer_key": "Có.",
+    "answer_key": "Có, vì \\(F'(x)=6x^2-5=f(x)\\) với mọi \\(x\\in\\mathbb R\\).",
     "worked_solution": "Lấy đạo hàm của hàm ứng viên: \\(F'(x)=6x^2-5=f(x)\\) với mọi x thực. Theo định nghĩa, F là nguyên hàm của f. Kiểm tại một điểm riêng lẻ không đủ.",
     "skill_ids": [
       "G12-CHIV-B11-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đạo hàm F rồi so với f trên ℝ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -27,26 +31,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ thế x=0, cần chứng minh đạo hàm bằng f với mọi x trong khoảng. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ thế x=0, cần chứng minh đạo hàm bằng f với mọi x trong khoảng. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, vì \\(F'(x)=2x^2-5\\)."
+      },
+      {
+        "id": "B",
+        "text": "Có, vì \\(F'(x)=6x^2-5=f(x)\\) với mọi \\(x\\in\\mathbb R\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không, vì \\(F'(x)=6x^2-5+7\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì nguyên hàm không được có hằng số 7."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-P01",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-P01",
     "stem": "Kiểm tra \\(G(x)=\\frac{x^3}{3}+x\\) có là nguyên hàm của \\(g(x)=x^2+1\\) trên \\(\\mathbb R\\) không.",
-    "answer_key": "Có.",
+    "answer_key": "Có, vì \\(G'(x)=x^2+1=g(x)\\) với mọi \\(x\\in\\mathbb R\\).",
     "worked_solution": "Ta có \\(G'(x)=\\frac{3x^2}{3}+1=x^2+1=g(x)\\) trên toàn bộ miền. Do đó G là nguyên hàm của g.",
     "skill_ids": [
       "G12-CHIV-B11-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Lấy đạo hàm của từng hạng trong \\(\\frac{x^3}{3}+x\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -58,12 +85,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên đạo hàm của x bằng 1, hãy tính lại \\(G'(x)\\) trước khi so sánh. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên đạo hàm của x bằng 1, hãy tính lại \\(G'(x)\\) trước khi so sánh. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, vì \\(G'(x)=x^2+1=g(x)\\) với mọi \\(x\\in\\mathbb R\\)."
+      },
+      {
+        "id": "B",
+        "text": "Không, vì \\(G'(x)=x^2\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không, vì \\(G'(x)=3x^2+1\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì \\(G'(x)=x^3+1\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-A01",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-A01",
     "stem": "Vị trí của vật là \\(s(t)=t^3+2t\\) (m), t tính bằng giây, \\(t\\ge0\\). Tìm vận tốc.",
     "answer_key": "\\(v(t)=3t^2+2\\) m/s.",
     "worked_solution": "Vận tốc là đạo hàm của vị trí theo thời gian, nên \\(v(t)=s'(t)=3t^2+2\\) m/s. Đây là vận tốc, không phải vị trí; tại t=0 lấy đạo hàm một phía theo miền thời gian.",
@@ -71,13 +117,17 @@
       "G12-CHIV-B11-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Lấy đạo hàm s(t) theo thời gian."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -89,12 +139,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy nguyên hàm vị trí, nhớ vận tốc là \\(v=s'\\), đơn vị m/s. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy nguyên hàm vị trí, nhớ vận tốc là \\(v=s'\\), đơn vị m/s. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(v(t)=t^2+2\\) m/s"
+      },
+      {
+        "id": "B",
+        "text": "\\(v(t)=3t^2+2t\\) m/s"
+      },
+      {
+        "id": "C",
+        "text": "\\(v(t)=t^3+2t\\) m/s"
+      },
+      {
+        "id": "D",
+        "text": "\\(v(t)=3t^2+2\\) m/s."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-C02",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-C02",
     "stem": "Viết họ nguyên hàm của \\(4x\\) trên \\(\\mathbb R\\).",
     "answer_key": "\\(2x^2+C,\\ C\\in\\mathbb R\\).",
     "worked_solution": "Vì \\((2x^2)'=4x\\) và đạo hàm của hằng số bằng 0, họ nguyên hàm là \\(2x^2+C\\). Mọi nguyên hàm trên khoảng đang xét chỉ khác nhau một hằng số.",
@@ -102,13 +171,17 @@
       "G12-CHIV-B11-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tìm hàm có đạo hàm 4x."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -120,12 +193,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thiếu +C, đạo hàm của mọi hằng số đều bằng 0. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu thiếu +C, đạo hàm của mọi hằng số đều bằng 0. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(4x^2+C\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(2x+C\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(2x^2+C,\\ C\\in\\mathbb R\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(2x^2\\) (chỉ một hàm, không có hằng số tùy ý)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-P02",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-P02",
     "stem": "Biết \\(F'(x)=2x\\), \\(F(2)=9\\). Tìm F trên \\(\\mathbb R\\).",
     "answer_key": "\\(F(x)=x^2+5\\).",
     "worked_solution": "Tìm họ nguyên hàm \\(F(x)=x^2+C\\). Điều kiện \\(F(2)=4+C=9\\) cho \\(C=5\\). Kiểm lại: đạo hàm bằng 2x và F(2)=9.",
@@ -133,13 +225,17 @@
       "G12-CHIV-B11-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Viết \\(F(x)=x^2+C\\), rồi dùng F(2)=9."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -151,12 +247,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra C=9, phải trừ giá trị \\(2^2\\); kiểm điều kiện F(2)=9. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra C=9, phải trừ giá trị \\(2^2\\); kiểm điều kiện F(2)=9. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(F=x^2+9\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(F=x^2-5\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(F(x)=x^2+5\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(F=2x+5\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-A02",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-A02",
     "stem": "Một vật có vận tốc \\(v(t)=4t\\) (m/s), vị trí ban đầu 6 m. Tìm vị trí \\(s(t)\\) với \\(t\\ge0\\) (giây).",
     "answer_key": "\\(s(t)=2t^2+6\\) m.",
     "worked_solution": "Từ \\(s'(t)=v(t)=4t\\), lấy nguyên hàm \\(s(t)=2t^2+C\\). Vì s(0)=6 nên C=6. Kiểm đạo hàm và vị trí ban đầu.",
@@ -164,13 +279,17 @@
       "G12-CHIV-B11-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Lấy nguyên hàm 4t rồi dùng s(0)=6."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -182,12 +301,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ tính độ dời, cộng vị trí đầu để được tọa độ. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ tính độ dời, cộng vị trí đầu để được tọa độ. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(s(t)=4t^2+6\\) m"
+      },
+      {
+        "id": "B",
+        "text": "\\(s(t)=2t^2+6\\) m."
+      },
+      {
+        "id": "C",
+        "text": "\\(s(t)=2t^2\\) m"
+      },
+      {
+        "id": "D",
+        "text": "\\(s(t)=4t+6\\) m"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-C03",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-C03",
     "stem": "Tính \\(\\int 6x^2\\,\\mathrm dx\\).",
     "answer_key": "\\(2x^3+C\\).",
     "worked_solution": "Quy tắc lũy thừa cho \\(\\int 6x^2\\,\\mathrm dx=6\\frac{x^3}{3}+C=2x^3+C\\). Lấy đạo hàm kết quả được \\(6x^2\\); C là hằng số thực tùy ý.",
@@ -195,13 +333,17 @@
       "G12-CHIV-B11-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Nâng số mũ 2 lên 3 và chia cho 3."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -213,12 +355,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chia cho số mũ cũ, lấy đạo hàm ngược để phát hiện sai. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chia cho số mũ cũ, lấy đạo hàm ngược để phát hiện sai. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(2x^3+C\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(6x^3+C\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(3x^3+C\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(12x+C\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-P03",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-P03",
     "stem": "Tính \\(\\int(5x^4-4x+3)\\,\\mathrm dx\\).",
     "answer_key": "\\(x^5-2x^2+3x+C\\).",
     "worked_solution": "Dùng tính tuyến tính: nguyên hàm từng hạng là \\(x^5\\), \\(-2x^2\\) và \\(3x\\). Cộng rồi gộp hằng số thành \\(x^5-2x^2+3x+C\\). Đạo hàm lại được đúng đa thức ban đầu.",
@@ -226,13 +387,17 @@
       "G12-CHIV-B11-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Tách ba hạng tử trước khi lấy nguyên hàm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -244,12 +409,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ 3x, nhớ nguyên hàm của hằng số 3 là 3x. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ 3x, nhớ nguyên hàm của hằng số 3 là 3x. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(5x^5-2x^2+3x+C\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x^5-4x^2+3x+C\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x^5-2x^2+3+C\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x^5-2x^2+3x+C\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-A03",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-A03",
     "stem": "Đại lượng q có \\(q'(t)=3t^2+2\\), \\(q(0)=4\\). Tìm q(t).",
     "answer_key": "\\(q(t)=t^3+2t+4\\).",
     "worked_solution": "Lấy nguyên hàm của tốc độ thay đổi: \\(q(t)=t^3+2t+C\\). Thay t=0 được C=4. Kiểm lại đạo hàm và giá trị đầu.",
@@ -257,13 +441,17 @@
       "G12-CHIV-B11-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Lấy nguyên hàm từng hạng của \\(q'(t)\\), rồi dùng q(0)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -275,12 +463,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Thay điều kiện đầu vào q vừa tìm, không thay vào đạo hàm \\(q'\\). Ôn Toán 12 Bài 11; luyện THPT-TOP11-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Thay điều kiện đầu vào q vừa tìm, không thay vào đạo hàm \\(q'\\). Ôn Toán 12 Bài 11; luyện THPT-TOP11-P03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(q=t^3+2t\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(q=3t^3+2t+4\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(q=t^3+2+4t\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(q(t)=t^3+2t+4\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-C04",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-C04",
     "stem": "Tính \\(\\int\\frac2x\\,\\mathrm dx\\) trên khoảng \\(x<0\\).",
     "answer_key": "\\(2\\ln|x|+C\\).",
     "worked_solution": "Với x âm, \\(|x|=-x>0\\), nên \\(\\ln|x|=\\ln(-x)\\) có đạo hàm \\(1/x\\). Vì vậy nguyên hàm là \\(2\\ln|x|+C\\). Không viết \\(\\ln x\\) trên khoảng âm.",
@@ -288,13 +495,17 @@
       "G12-CHIV-B11-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Trên khoảng âm, \\(\\ln|x|=\\ln(-x)\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -306,12 +517,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng ln x, x<0 làm biểu thức không có nghĩa thực. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng ln x, x<0 làm biểu thức không có nghĩa thực. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P04.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(2\\ln x+C\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(2/x^2+C\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(2\\ln|x|+C\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(2x\\ln|x|+C\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-P04",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-P04",
     "stem": "Tính \\(\\int(\\frac1x+2x)\\,\\mathrm dx\\) trên \\(x>0\\).",
     "answer_key": "\\(\\ln x+x^2+C\\).",
     "worked_solution": "Trên khoảng dương, nguyên hàm của 1/x là \\(\\ln x\\); nguyên hàm của 2x là \\(x^2\\). Theo tính tuyến tính, kết quả là \\(\\ln x+x^2+C\\). Đạo hàm lại được \\(\\frac1x+2x\\).",
@@ -319,13 +549,17 @@
       "G12-CHIV-B11-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Tách \\(\\frac1x\\) và 2x; trên khoảng dương dùng logarit của x."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -337,12 +571,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thêm hai hằng C riêng, gộp thành một hằng tùy ý. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu thêm hai hằng C riêng, gộp thành một hằng tùy ý. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P04.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(1/x+x^2+C\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\ln x+x^2+C\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\ln x+2x^2+C\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x\\ln x+x^2+C\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-A04",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-A04",
     "stem": "Biết \\(F'(x)=\\frac3x\\) trên \\(x>0\\), \\(F(1)=2\\). Tìm F(x).",
     "answer_key": "\\(F(x)=3\\ln x+2\\).",
     "worked_solution": "Trên khoảng dương, \\(F(x)=3\\ln x+C\\). Vì \\(\\ln1=0\\), điều kiện F(1)=2 cho C=2. Kiểm lại đạo hàm bằng 3/x.",
@@ -350,13 +603,17 @@
       "G12-CHIV-B11-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Tìm họ \\(3\\ln x+C\\), rồi dùng \\(\\ln1=0\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -368,12 +625,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm ln1=1, kiểm lại điều kiện F(1)=2. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm ln1=1, kiểm lại điều kiện F(1)=2. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P04.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(F(x)=3\\ln x+2\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(3\\ln x\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(3\\ln x-2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(3/x+2\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-C05",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-C05",
     "stem": "Tính \\(\\int e^x\\,\\mathrm dx\\).",
     "answer_key": "\\(e^x+C\\).",
     "worked_solution": "Đạo hàm của \\(e^x\\) chính là \\(e^x\\), nên họ nguyên hàm là \\(e^x+C\\). Không cần chia thêm hệ số logarit vì \\(\\ln e=1\\).",
@@ -381,13 +657,17 @@
       "G12-CHIV-B11-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đạo hàm của \\(e^x\\) bằng chính nó."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -399,12 +679,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chia cho x, quy tắc lũy thừa không áp dụng cho hàm mũ. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chia cho x, quy tắc lũy thừa không áp dụng cho hàm mũ. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(e^x+C\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(xe^x+C\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(e^{x+1}+C\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(e^x/x+C\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-P05",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-P05",
     "stem": "Tính \\(\\int 2^x\\,\\mathrm dx\\).",
     "answer_key": "\\(\\frac{2^x}{\\ln2}+C\\).",
     "worked_solution": "Vì \\((2^x)'=2^x\\ln2\\), phải chia cho hằng số \\(\\ln2\\) khác 0. Đạo hàm của \\(\\frac{2^x}{\\ln2}+C\\) bằng đúng \\(2^x\\).",
@@ -412,13 +711,17 @@
       "G12-CHIV-B11-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Đạo hàm của \\(2^x\\) có hệ số \\(\\ln2\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -430,12 +733,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thiếu hệ số \\(1/\\ln2\\), lấy đạo hàm đáp án để thấy hệ số thừa. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu thiếu hệ số \\(1/\\ln2\\), lấy đạo hàm đáp án để thấy hệ số thừa. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(2^x+C\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(2^x\\ln2+C\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x2^{x-1}+C\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{2^x}{\\ln2}+C\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-A05",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-A05",
     "stem": "Lượng chất q có \\(q'(t)=3e^t\\), \\(q(0)=5\\). Tìm q(t).",
     "answer_key": "\\(q(t)=3e^t+2\\).",
     "worked_solution": "Lấy nguyên hàm được \\(q(t)=3e^t+C\\). Tại t=0, \\(3e^0+C=3+C=5\\), nên C=2. Kiểm lại đạo hàm và giá trị ban đầu.",
@@ -443,13 +765,17 @@
       "G12-CHIV-B11-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Lấy nguyên hàm \\(3e^t\\) rồi dùng q(0)=5."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -461,12 +787,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra C=5, nhớ \\(e^0=1\\) nên phải giải 3+C=5. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra C=5, nhớ \\(e^0=1\\) nên phải giải 3+C=5. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(q=3e^t+5\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(q=3e^t-2\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(q(t)=3e^t+2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(q=e^{3t}+4\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-C06",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-C06",
     "stem": "Tính \\(\\int 2\\cos x\\,\\mathrm dx\\).",
     "answer_key": "\\(2\\sin x+C\\).",
     "worked_solution": "Vì \\((\\sin x)'=\\cos x\\), nguyên hàm là \\(2\\sin x+C\\). Kiểm đạo hàm cho đúng dấu dương của 2 cos x.",
@@ -474,13 +819,17 @@
       "G12-CHIV-B11-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đạo hàm sin x là cos x."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -492,12 +841,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy −sin x, kiểm dấu bằng đạo hàm. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy −sin x, kiểm dấu bằng đạo hàm. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-2\\sin x+C\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(2\\sin x+C\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(2\\cos x+C\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(2x\\cos x+C\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-P06",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-P06",
     "stem": "Tính \\(\\int(3\\sin x-2\\cos x)\\,\\mathrm dx\\).",
     "answer_key": "\\(-3\\cos x-2\\sin x+C\\).",
     "worked_solution": "Nguyên hàm của sin x là âm cos x, của cos x là sin x. Tách hai hạng rồi cộng được \\(-3\\cos x-2\\sin x+C\\). Đạo hàm lại cho \\(3\\sin x-2\\cos x\\).",
@@ -505,13 +873,17 @@
       "G12-CHIV-B11-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Dùng \\((\\cos x)'=-\\sin x\\), \\((\\sin x)'=\\cos x\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -523,12 +895,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm dấu của 3sin x, lấy đạo hàm −3cos x để kiểm. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm dấu của 3sin x, lấy đạo hàm −3cos x để kiểm. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(3\\cos x-2\\sin x+C\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(-3\\cos x-2\\sin x+C\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(-3\\cos x+2\\sin x+C\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(3\\sin x-2\\cos x+C\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-A06",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-A06",
     "stem": "Vật có vận tốc \\(v(t)=2\\cos t\\) trên \\(0\\le t\\le\\frac\\pi2\\), vị trí s(0)=0. Tìm s(t).",
     "answer_key": "\\(s(t)=2\\sin t\\).",
     "worked_solution": "Từ s'=v, lấy nguyên hàm \\(s(t)=2\\sin t+C\\). Vì \\(\\sin0=0\\) và s(0)=0, suy ra C=0. Đạo hàm của kết quả đúng bằng vận tốc đã cho.",
@@ -536,13 +927,17 @@
       "G12-CHIV-B11-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Tích phân 2cos t rồi dùng s(0)=0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -554,12 +949,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho s=−2cos t, kiểm đạo hàm của đáp án. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho s=−2cos t, kiểm đạo hàm của đáp án. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(s(t)=2\\sin t\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(s(t)=-2\\sin t\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(s(t)=2\\cos t-2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(s(t)=2t\\cos t\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-C07",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-C07",
     "stem": "Cho \\(s'(t)=6t\\), s(0)=3. Tìm s(t).",
     "answer_key": "\\(s(t)=3t^2+3\\).",
     "worked_solution": "Họ nguyên hàm là \\(s(t)=3t^2+C\\). Thay t=0, C=3. Kiểm lại \\(s'(t)=6t\\) và s(0)=3.",
@@ -567,13 +981,17 @@
       "G12-CHIV-B11-O07"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "APPLY",
     "hints": [
       "Tích phân 6t và dùng s(0)=3."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -585,12 +1003,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ +3, chưa dùng điều kiện ban đầu. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ +3, chưa dùng điều kiện ban đầu. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P07.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(s=6t^2+3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(s=3t^2\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(s=6t+3\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(s(t)=3t^2+3\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-P07",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-P07",
     "stem": "Cho vận tốc \\(v(t)=4t^3\\) và vị trí s(1)=5. Tìm s(t).",
     "answer_key": "\\(s(t)=t^4+4\\).",
     "worked_solution": "Vì s'=v, ta có \\(s(t)=t^4+C\\). Thay t=1: 1+C=5, nên C=4. Giá trị ban đầu ở t=1, không phải t=0.",
@@ -598,13 +1035,17 @@
       "G12-CHIV-B11-O07"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Tìm \\(s(t)=t^4+C\\), rồi thay t=1."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -616,12 +1057,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra C=5, phải trừ \\(1^4\\). Ôn Toán 12 Bài 11; luyện THPT-TOP11-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra C=5, phải trừ \\(1^4\\). Ôn Toán 12 Bài 11; luyện THPT-TOP11-P07.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(s=t^4+5\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(s=t^4-4\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(s(t)=t^4+4\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(s=4t^4+1\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-A07",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-A07",
     "stem": "Một vật có gia tốc \\(a(t)=6t\\), v(0)=2 và s(0)=1. Tìm v(t), s(t).",
     "answer_key": "\\(v(t)=3t^2+2\\); \\(s(t)=t^3+2t+1\\).",
     "worked_solution": "Từ v'=a, lấy nguyên hàm \\(v(t)=3t^2+C_1\\). Điều kiện v(0)=2 cho \\(C_1=2\\). Tiếp tục lấy nguyên hàm của v: \\(s(t)=t^3+2t+C_2\\); s(0)=1 cho \\(C_2=1\\). Kiểm cả hai đạo hàm và hai điều kiện.",
@@ -629,13 +1089,17 @@
       "G12-CHIV-B11-O07"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Từ a tìm v, từ v tìm s, mỗi lần một điều kiện đầu."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -647,12 +1111,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng cùng một hằng số, hai dữ kiện đầu xác định hai hằng riêng. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng cùng một hằng số, hai dữ kiện đầu xác định hai hằng riêng. Ôn Toán 12 Bài 11; luyện THPT-TOP11-P07.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(v=3t^2+2,\\ s=t^3+1\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(v=6t^2+2,\\ s=2t^3+2t+1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(v(t)=3t^2+2\\); \\(s(t)=t^3+2t+1\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(v=3t^2+2,\\ s=t^3+2t+2\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-C01",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-C01",
     "stem": "Tính \\(\\int_0^2 2x\\,\\mathrm dx\\).",
     "answer_key": "4.",
     "worked_solution": "Nguyên hàm của 2x là \\(x^2\\). Thế cận trên trừ cận dưới: \\(\\left.x^2\\right|_0^2=4-0=4\\). Tích phân xác định là một số, không thêm C.",
@@ -660,13 +1143,17 @@
       "G12-CHIV-B12-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tìm nguyên hàm \\(F(x)=x^2\\) rồi thế hai cận."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -678,12 +1165,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng +C, hằng số triệt tiêu trong hiệu F(2)−F(0). Ôn Toán 12 Bài 12; luyện THPT-TOP11-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng +C, hằng số triệt tiêu trong hiệu F(2)−F(0). Ôn Toán 12 Bài 12; luyện THPT-TOP11-P08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "4."
+      },
+      {
+        "id": "C",
+        "text": "4+C"
+      },
+      {
+        "id": "D",
+        "text": "8"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-P01",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-P01",
     "stem": "Tính \\(\\int_1^3 x^2\\,\\mathrm dx\\).",
     "answer_key": "\\(\\frac{26}{3}\\).",
     "worked_solution": "Chọn nguyên hàm \\(F(x)=\\frac{x^3}3\\). Tích phân bằng \\(F(3)-F(1)=\\frac{27}3-\\frac13=\\frac{26}3\\). Kết quả dương phù hợp vì hàm dương trên đoạn.",
@@ -691,13 +1197,17 @@
       "G12-CHIV-B12-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Dùng \\(F(x)=\\frac{x^3}{3}\\); trừ cả giá trị tại cận 1."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -709,12 +1219,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra 9, đã quên trừ \\(F(1)=\\frac13\\). Ôn Toán 12 Bài 12; luyện THPT-TOP11-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra 9, đã quên trừ \\(F(1)=\\frac13\\). Ôn Toán 12 Bài 12; luyện THPT-TOP11-P08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{26}{3}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{27}3\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac83\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-\\frac{26}3\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-A01",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-A01",
     "stem": "Vận tốc \\(v(t)=3t^2\\) m/s trong khoảng từ 0 đến 2 giây. Tính độ dời.",
     "answer_key": "8 m.",
     "worked_solution": "Độ dời là tích phân của vận tốc: \\(\\int_0^2 3t^2\\,\\mathrm dt=\\left.t^3\\right|_0^2=8\\) m. Vận tốc không âm trên đoạn, nên ở đây quãng đường cũng bằng 8 m.",
@@ -722,13 +1251,17 @@
       "G12-CHIV-B12-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Tích phân vận tốc trên [0,2]."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -740,12 +1273,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhân vận tốc cuối với thời gian, vận tốc không hằng; dùng tích phân. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhân vận tốc cuối với thời gian, vận tốc không hằng; dùng tích phân. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 m"
+      },
+      {
+        "id": "B",
+        "text": "12 m"
+      },
+      {
+        "id": "C",
+        "text": "24 m"
+      },
+      {
+        "id": "D",
+        "text": "8 m."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-C02",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-C02",
     "stem": "Tính \\(\\int_0^1(2x+3)\\,\\mathrm dx\\).",
     "answer_key": "4.",
     "worked_solution": "Một nguyên hàm là \\(F(x)=x^2+3x\\). Vậy \\(F(1)-F(0)=1+3-0=4\\). Có thể tách hai hạng rồi cộng tích phân.",
@@ -753,13 +1305,17 @@
       "G12-CHIV-B12-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tích phân từng hạng 2x và 3."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -771,12 +1327,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ 3x, kiểm đạo hàm của nguyên hàm. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ 3x, kiểm đạo hàm của nguyên hàm. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P09.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "4+C"
+      },
+      {
+        "id": "D",
+        "text": "4."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-P02",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-P02",
     "stem": "Tính \\(\\int_0^2(3x^2-2)\\,\\mathrm dx\\).",
     "answer_key": "4.",
     "worked_solution": "Nguyên hàm là \\(F(x)=x^3-2x\\). Tích phân bằng \\(F(2)-F(0)=(8-4)-0=4\\). Đây là tích phân có dấu, không phải yêu cầu tính diện tích.",
@@ -784,13 +1359,17 @@
       "G12-CHIV-B12-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Dùng \\(F(x)=x^3-2x\\) rồi thế cận."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -802,12 +1381,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy nguyên hàm của -2 thành \\(-2x^2\\), kiểm lại bằng đạo hàm. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy nguyên hàm của -2 thành \\(-2x^2\\), kiểm lại bằng đạo hàm. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P09.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "8"
+      },
+      {
+        "id": "B",
+        "text": "−4"
+      },
+      {
+        "id": "C",
+        "text": "4."
+      },
+      {
+        "id": "D",
+        "text": "2"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-A02",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-A02",
     "stem": "Tốc độ nhu cầu \\(r(t)=4+2t\\) đơn vị/giờ trong 0 đến 1 giờ. Tính lượng nhu cầu tích lũy.",
     "answer_key": "5 đơn vị.",
     "worked_solution": "Cộng dồn tốc độ theo thời gian: \\(\\int_0^1(4+2t)\\,\\mathrm dt=\\left.(4t+t^2)\\right|_0^1=5\\). Đơn vị/giờ nhân với giờ cho đơn vị lượng.",
@@ -815,13 +1413,17 @@
       "G12-CHIV-B12-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Tích phân tốc độ nhu cầu trên đúng một giờ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -833,12 +1435,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ lấy r(1), đó là tốc độ cuối chứ không phải lượng tích lũy. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ lấy r(1), đó là tốc độ cuối chứ không phải lượng tích lũy. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P09.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 đơn vị"
+      },
+      {
+        "id": "B",
+        "text": "5 đơn vị."
+      },
+      {
+        "id": "C",
+        "text": "6 đơn vị"
+      },
+      {
+        "id": "D",
+        "text": "5 đơn vị/giờ"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-C03",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-C03",
     "stem": "Biết \\(\\int_1^3 f(x)\\,\\mathrm dx=5\\) và \\(\\int_3^5 f(x)\\,\\mathrm dx=-2\\). Tính \\(\\int_1^5 f(x)\\,\\mathrm dx\\).",
     "answer_key": "3.",
     "worked_solution": "Hai đoạn liền nhau tại 3. Theo tính cộng theo đoạn, tích phân cần tìm là \\(5+(-2)=3\\). Giữ dấu âm của tích phân thứ hai.",
@@ -846,13 +1467,17 @@
       "G12-CHIV-B12-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Hai đoạn liền nhau tại 3, cộng tích phân có dấu."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -864,12 +1489,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra 7, giữ dấu âm của tích phân đoạn sau. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra 7, giữ dấu âm của tích phân đoạn sau. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P10.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3."
+      },
+      {
+        "id": "B",
+        "text": "7"
+      },
+      {
+        "id": "C",
+        "text": "−3"
+      },
+      {
+        "id": "D",
+        "text": "−7"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-P03",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-P03",
     "stem": "Biết \\(\\int_0^2 f(x)\\,\\mathrm dx=7\\) và \\(\\int_0^5 f(x)\\,\\mathrm dx=9\\). Tính \\(\\int_2^5 f(x)\\,\\mathrm dx\\).",
     "answer_key": "2.",
     "worked_solution": "Từ tính cộng theo đoạn, tích phân trên [0;5] bằng tổng hai tích phân trên [0;2] và [2;5]. Vậy phần cần tìm là \\(9-7=2\\).",
@@ -877,13 +1521,17 @@
       "G12-CHIV-B12-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Tách đoạn [0,5] thành [0,2] và [2,5]."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -895,12 +1543,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng 9+7, chuyển vế từ đẳng thức ghép cận. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng 9+7, chuyển vế từ đẳng thức ghép cận. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P10.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "2."
+      },
+      {
+        "id": "B",
+        "text": "16"
+      },
+      {
+        "id": "C",
+        "text": "−2"
+      },
+      {
+        "id": "D",
+        "text": "9"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-A03",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-A03",
     "stem": "Độ dời từ 0 đến 2 giây là 4 m, từ 2 đến 4 giây là -6 m. Tính độ dời tổng và giải thích dấu.",
     "answer_key": "-2 m; vị trí cuối nằm về phía âm so với vị trí đầu 2 m.",
     "worked_solution": "Cộng đại số các độ dời: \\(4+(-6)=-2\\) m. Dấu âm nghĩa là vị trí cuối nằm về phía âm so với vị trí đầu 2 m; không có nghĩa quãng đường âm.",
@@ -908,13 +1575,17 @@
       "G12-CHIV-B12-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Cộng hai độ dời có dấu."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -926,12 +1597,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra 10 m, đó là tổng độ lớn từng độ dời, không phải độ dời tổng. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra 10 m, đó là tổng độ lớn từng độ dời, không phải độ dời tổng. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P10.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 m; cuối về phía dương."
+      },
+      {
+        "id": "B",
+        "text": "10 m; cuối về phía dương."
+      },
+      {
+        "id": "C",
+        "text": "−10 m; cuối về phía âm."
+      },
+      {
+        "id": "D",
+        "text": "-2 m; vị trí cuối nằm về phía âm so với vị trí đầu 2 m."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-C04",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-C04",
     "stem": "Tính diện tích hình phẳng giới hạn bởi \\(y=x\\), Ox và hai đường x=0, x=2.",
     "answer_key": "2 đơn vị diện tích.",
     "worked_solution": "Hàm x không âm trên [0;2], nên \\(S=\\int_0^2 x\\,\\mathrm dx=\\left.\\frac{x^2}{2}\\right|_0^2=2\\). Kiểm bằng tam giác có đáy và chiều cao đều bằng 2.",
@@ -939,13 +1629,17 @@
       "G12-CHIV-B12-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Kiểm x≥0 trên [0,2] rồi lấy tích phân."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -957,12 +1651,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu gọi mọi tích phân là diện tích, chỉ đúng ở đây vì hàm không âm. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu gọi mọi tích phân là diện tích, chỉ đúng ở đây vì hàm không âm. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P11.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "2 đơn vị diện tích."
+      },
+      {
+        "id": "D",
+        "text": "−2"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-P04",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-P04",
     "stem": "Tính diện tích hình phẳng giữa \\(y=2-x\\), Ox và hai đường x=0, x=2.",
     "answer_key": "2 đơn vị diện tích.",
     "worked_solution": "Vì \\(2-x\\ge0\\) trên đoạn, \\(S=\\int_0^2(2-x)\\,\\mathrm dx=\\left.(2x-\\frac{x^2}{2})\\right|_0^2=4-2=2\\). Có thể kiểm bằng diện tích tam giác.",
@@ -970,13 +1683,17 @@
       "G12-CHIV-B12-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Kiểm 2−x≥0 đến cận 2."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -988,12 +1705,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra diện tích âm, xem lại thứ tự cận và dấu. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra diện tích âm, xem lại thứ tự cận và dấu. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P11.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "2 đơn vị diện tích."
+      },
+      {
+        "id": "C",
+        "text": "−2"
+      },
+      {
+        "id": "D",
+        "text": "1"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-A04",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-A04",
     "stem": "Độ cao \\(y=1+x\\) (m), x tính bằng mét trên [0;2]. Tính diện tích giữa đồ thị và Ox trên đoạn này.",
     "answer_key": "4 m².",
     "worked_solution": "Độ cao luôn dương. Diện tích \\(S=\\int_0^2(1+x)\\,\\mathrm dx=\\left.(x+\\frac{x^2}2)\\right|_0^2=4\\) m². Đơn vị là bình phương đơn vị độ dài.",
@@ -1001,13 +1737,17 @@
       "G12-CHIV-B12-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Tích phân độ cao 1+x theo bề rộng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1019,12 +1759,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thiếu phần 1, bỏ mất dải diện tích hình chữ nhật. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu thiếu phần 1, bỏ mất dải diện tích hình chữ nhật. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P11.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 m²"
+      },
+      {
+        "id": "B",
+        "text": "4 m²."
+      },
+      {
+        "id": "C",
+        "text": "6 m²"
+      },
+      {
+        "id": "D",
+        "text": "4 m"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-C05",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-C05",
     "stem": "Tính diện tích giữa \\(y=x\\) và Ox trên [-2;2].",
     "answer_key": "4 đơn vị diện tích.",
     "worked_solution": "Hàm đổi dấu tại 0. \\(S=\\int_{-2}^0(-x)\\,\\mathrm dx+\\int_0^2x\\,\\mathrm dx=2+2=4\\). Tích phân có dấu trên cả đoạn bằng 0, nhưng diện tích không triệt tiêu.",
@@ -1032,13 +1791,17 @@
       "G12-CHIV-B12-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Chia tại x=0, lấy diện tích hai tam giác."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1050,12 +1813,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu tích phân bằng 0, hai phần có dấu triệt tiêu chứ diện tích không mất. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu tích phân bằng 0, hai phần có dấu triệt tiêu chứ diện tích không mất. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P12.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 đơn vị diện tích."
+      },
+      {
+        "id": "B",
+        "text": "0"
+      },
+      {
+        "id": "C",
+        "text": "2"
+      },
+      {
+        "id": "D",
+        "text": "−4"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-P05",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-P05",
     "stem": "Tính diện tích giữa \\(y=x-1\\) và Ox trên [0;2].",
     "answer_key": "1 đơn vị diện tích.",
     "worked_solution": "Đồ thị cắt Ox tại x=1. Hai phần là tam giác, mỗi phần có đáy 1, chiều cao 1, diện tích \\(\\frac12\\). Cộng hai phần được 1; tương đương tích phân của |x-1|.",
@@ -1063,13 +1845,17 @@
       "G12-CHIV-B12-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Nghiệm x=1 chia hai vùng âm và dương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1081,12 +1867,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra 0, đổi dấu phần âm trước khi cộng diện tích. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra 0, đổi dấu phần âm trước khi cộng diện tích. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P12.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "1/2"
+      },
+      {
+        "id": "D",
+        "text": "1 đơn vị diện tích."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-A05",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-A05",
     "stem": "Vật có \\(v(t)=t-2\\) m/s trong 0 đến 4 giây. Tính độ dời và quãng đường.",
     "answer_key": "Độ dời 0 m; quãng đường 4 m.",
     "worked_solution": "Độ dời \\(\\int_0^4(t-2)\\,\\mathrm dt=0\\). Vận tốc đổi dấu tại t=2; quãng đường \\(\\int_0^2(2-t)\\,\\mathrm dt+\\int_2^4(t-2)\\,\\mathrm dt=2+2=4\\) m. Hai đại lượng khác nhau.",
@@ -1094,13 +1899,17 @@
       "G12-CHIV-B12-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Vận tốc đổi dấu tại t=2; độ dời dùng \\(\\int_0^4v(t)\\,\\mathrm dt\\), quãng đường dùng tích phân của độ lớn vận tốc."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1112,12 +1921,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ độ dời bằng 0 thì quãng đường cũng bằng 0, xét hai chặng đi và quay lại; tổng quãng đường vẫn dương. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nghĩ độ dời bằng 0 thì quãng đường cũng bằng 0, xét hai chặng đi và quay lại; tổng quãng đường vẫn dương. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P12.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Độ dời 0 m; quãng đường 0 m."
+      },
+      {
+        "id": "B",
+        "text": "Độ dời 4 m; quãng đường 4 m."
+      },
+      {
+        "id": "C",
+        "text": "Độ dời 0 m; quãng đường 4 m."
+      },
+      {
+        "id": "D",
+        "text": "Độ dời −4 m; quãng đường 4 m."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-C06",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-C06",
     "stem": "Tính \\(\\int_0^{\\ln2} e^x\\,\\mathrm dx\\).",
     "answer_key": "1.",
     "worked_solution": "Nguyên hàm là \\(e^x\\). Thế cận: \\(e^{\\ln2}-e^0=2-1=1\\). Giữ ln 2 ở dạng chính xác để không sai số làm tròn.",
@@ -1125,13 +1953,17 @@
       "G12-CHIV-B12-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng nguyên hàm \\(e^x\\) và hệ thức \\(e^{\\ln2}=2\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1143,12 +1975,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không thay ln 2 bằng 2; chỉ \\(e^{\\ln2}=2\\) theo quan hệ hàm ngược. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P13."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không thay ln 2 bằng 2; chỉ \\(e^{\\ln2}=2\\) theo quan hệ hàm ngược. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P13.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "ln 2"
+      },
+      {
+        "id": "C",
+        "text": "1."
+      },
+      {
+        "id": "D",
+        "text": "1+C"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-P06",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-P06",
     "stem": "Tính \\(\\int_0^\\pi\\cos x\\,\\mathrm dx\\).",
     "answer_key": "0.",
     "worked_solution": "Nguyên hàm là sin x. Tích phân bằng \\(\\sin\\pi-\\sin0=0\\). Hai phần dương và âm của hàm cos trên đoạn triệt tiêu nhau; không suy diện tích bằng 0.",
@@ -1156,13 +2007,17 @@
       "G12-CHIV-B12-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Dùng nguyên hàm sin x, thế 0 và π."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1174,12 +2029,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ diện tích bằng 0, cos x đổi dấu; đây là tích phân có dấu. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P13."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nghĩ diện tích bằng 0, cos x đổi dấu; đây là tích phân có dấu. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P13.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "0."
+      },
+      {
+        "id": "C",
+        "text": "1"
+      },
+      {
+        "id": "D",
+        "text": "−2"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-A06",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-A06",
     "stem": "Tốc độ tăng \\(r(t)=2e^t\\) đơn vị/giờ trong khoảng từ 0 đến ln 2 giờ. Tính lượng tăng.",
     "answer_key": "2 đơn vị.",
     "worked_solution": "Lượng tăng \\(\\int_0^{\\ln2}2e^t\\,\\mathrm dt=2(e^{\\ln2}-1)=2(2-1)=2\\). Tích phân tốc độ theo thời gian cho lượng tăng.",
@@ -1187,13 +2061,17 @@
       "G12-CHIV-B12-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Tích phân \\(2e^t\\) và giữ cận ln 2."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1205,12 +2083,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên giá trị tại cận 0, nhớ \\(e^0=1\\). Ôn Toán 12 Bài 12; luyện THPT-TOP11-P13."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên giá trị tại cận 0, nhớ \\(e^0=1\\). Ôn Toán 12 Bài 12; luyện THPT-TOP11-P13.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 đơn vị."
+      },
+      {
+        "id": "B",
+        "text": "1 đơn vị"
+      },
+      {
+        "id": "C",
+        "text": "4 đơn vị"
+      },
+      {
+        "id": "D",
+        "text": "2 đơn vị/giờ"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-C07",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-C07",
     "stem": "Vận tốc \\(v(t)=2t+1\\) m/s trong 0 đến 3 giây. Tính độ dời.",
     "answer_key": "12 m.",
     "worked_solution": "\\(\\int_0^3(2t+1)\\,\\mathrm dt=\\left.(t^2+t)\\right|_0^3=9+3=12\\) m. Vận tốc dương nên ở đây độ dời bằng quãng đường.",
@@ -1218,13 +2115,17 @@
       "G12-CHIV-B12-O07"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tích phân 2t+1 trên [0,3]."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1236,12 +2137,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy v(3)·3, vận tốc thay đổi; lấy nguyên hàm. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P14."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy v(3)·3, vận tốc thay đổi; lấy nguyên hàm. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P14.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 m"
+      },
+      {
+        "id": "B",
+        "text": "9 m"
+      },
+      {
+        "id": "C",
+        "text": "21 m"
+      },
+      {
+        "id": "D",
+        "text": "12 m."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-P07",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-P07",
     "stem": "Một vật có vận tốc \\(v(t)=t^2\\) m/s trong 1 đến 2 giây. Tính quãng đường.",
     "answer_key": "\\(\\frac73\\) m.",
     "worked_solution": "Vận tốc không âm trên [1;2]. Quãng đường \\(\\int_1^2|v(t)|\\,\\mathrm dt=\\int_1^2t^2\\,\\mathrm dt=\\frac{8-1}{3}=\\frac73\\) m.",
@@ -1249,13 +2169,17 @@
       "G12-CHIV-B12-O07"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Vận tốc \\(v(t)=t^2\\) không âm trên đoạn, nên tích phân cũng cho quãng đường."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1267,12 +2191,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên cận dưới 1, phải trừ 1/3. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P14."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên cận dưới 1, phải trừ 1/3. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P14.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac83\\) m"
+      },
+      {
+        "id": "B",
+        "text": "\\(4\\) m"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac13\\) m"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac73\\) m."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B12-A07",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-A07",
     "stem": "Tốc độ tăng sản lượng \\(q'(t)=4+3t^2\\) sản phẩm/giờ, từ 0 đến 2 giờ. Tính lượng sản phẩm tăng theo mô hình.",
     "answer_key": "16 sản phẩm.",
     "worked_solution": "Lượng tăng là \\(q(2)-q(0)=\\int_0^2(4+3t^2)\\,\\mathrm dt=\\left.(4t+t^3)\\right|_0^2=8+8=16\\) sản phẩm.",
@@ -1280,13 +2223,17 @@
       "G12-CHIV-B12-O07"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Tích phân tốc độ sản lượng theo giờ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1298,12 +2245,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho đơn vị sản phẩm/giờ, tích phân theo giờ cho sản phẩm. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P14."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho đơn vị sản phẩm/giờ, tích phân theo giờ cho sản phẩm. Ôn Toán 12 Bài 12; luyện THPT-TOP11-P14.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "8 sản phẩm"
+      },
+      {
+        "id": "B",
+        "text": "12 sản phẩm"
+      },
+      {
+        "id": "C",
+        "text": "16 sản phẩm."
+      },
+      {
+        "id": "D",
+        "text": "20 sản phẩm"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-C01",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-C01",
     "stem": "Tính diện tích giữa \\(y=x^2\\), Ox và hai đường x=0, x=2.",
     "answer_key": "\\(\\frac83\\) đơn vị diện tích.",
     "worked_solution": "Hàm không âm trên đoạn. \\(S=\\int_0^2x^2\\,\\mathrm dx=\\left.\\frac{x^3}3\\right|_0^2=\\frac83\\). Không cần tách khoảng.",
@@ -1311,13 +2277,17 @@
       "G12-CHIV-B13-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Kiểm \\(x^2\\ge0\\), rồi dùng nguyên hàm \\(\\frac{x^3}{3}\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1329,12 +2299,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm diện tích với tích phân bất định, kết quả cần là một số. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm diện tích với tích phân bất định, kết quả cần là một số. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P15.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac43\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac83\\) đơn vị diện tích."
+      },
+      {
+        "id": "C",
+        "text": "\\(4\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(8\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-P01",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-P01",
     "stem": "Tính diện tích giữa \\(y=3x\\), Ox và hai đường x=0, x=2.",
     "answer_key": "6 đơn vị diện tích.",
     "worked_solution": "Hàm không âm trên đoạn. \\(S=\\int_0^2 3x\\,\\mathrm dx=\\left.\\frac{3x^2}2\\right|_0^2=6\\). Kiểm bằng tam giác đáy 2, chiều cao 6.",
@@ -1342,13 +2331,17 @@
       "G12-CHIV-B13-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Đồ thị 3x không âm trên [0,2]."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1360,12 +2353,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên hệ số 3, giữ hệ số ngoài tích phân. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên hệ số 3, giữ hệ số ngoài tích phân. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P15.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 đơn vị diện tích."
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "12"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-A01",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-A01",
     "stem": "Mép đất có độ cao \\(y=2+x\\) (m), x từ 0 đến 3 m. Tính diện tích mặt cắt giữa đồ thị và Ox.",
     "answer_key": "\\(\\frac{21}{2}\\) m².",
     "worked_solution": "Độ cao dương. \\(S=\\int_0^3(2+x)\\,\\mathrm dx=\\left.(2x+\\frac{x^2}2)\\right|_0^3=6+\\frac92=\\frac{21}2\\) m².",
@@ -1373,13 +2385,17 @@
       "G12-CHIV-B13-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Tích phân chiều cao 2+x theo x từ 0 đến 3."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1391,12 +2407,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ tính phần x, thiếu phần hình chữ nhật cao 2 m. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ tính phần x, thiếu phần hình chữ nhật cao 2 m. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P15.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{21}{2}\\) m²."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac92\\) m²"
+      },
+      {
+        "id": "C",
+        "text": "\\(15\\) m²"
+      },
+      {
+        "id": "D",
+        "text": "\\(9\\) m²"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-C02",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-C02",
     "stem": "Tính diện tích hình phẳng giới hạn bởi \\(y=x^2-4\\), trục Ox và hai đường \\(x=0,\\ x=3\\).",
     "answer_key": "\\(\\frac{23}{3}\\) đơn vị diện tích.",
     "worked_solution": "Trên đoạn [0;3], đồ thị cắt Ox tại x=2. Khi \\(0\\le x<2\\), \\(x^2-4<0\\); khi \\(2<x\\le3\\), \\(x^2-4>0\\). Vì vậy \\(S=\\int_0^2(4-x^2)\\,\\mathrm dx+\\int_2^3(x^2-4)\\,\\mathrm dx\\). Phần thứ nhất bằng \\(8-\\frac83=\\frac{16}{3}\\); phần thứ hai bằng \\((9-12)-(\\frac83-8)=\\frac73\\). Cộng lại được \\(S=\\frac{23}{3}\\). Không lấy trị tuyệt đối sau khi cộng hai tích phân có dấu.",
@@ -1404,13 +2439,17 @@
       "G12-CHIV-B13-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Tìm nghiệm của \\(x^2-4=0\\) thuộc [0;3], xét dấu rồi tách diện tích."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1422,12 +2461,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ tích phân trên [0;3] rồi lấy trị tuyệt đối, phần âm và dương đã bù trừ nhau. Tách tại x=2 và cộng diện tích dương. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P16."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ tích phân trên [0;3] rồi lấy trị tuyệt đối, phần âm và dương đã bù trừ nhau. Tách tại x=2 và cộng diện tích dương. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P16.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{16}3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(3\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac73\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{23}{3}\\) đơn vị diện tích."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-P02",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-P02",
     "stem": "Tính diện tích giữa \\(y=x-2\\) và Ox trên [0;4].",
     "answer_key": "4 đơn vị diện tích.",
     "worked_solution": "Đổi dấu tại x=2. \\(S=\\int_0^2(2-x)\\,\\mathrm dx+\\int_2^4(x-2)\\,\\mathrm dx=2+2=4\\). Cộng diện tích hai miền, không cộng tung độ có dấu.",
@@ -1435,13 +2493,17 @@
       "G12-CHIV-B13-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Tìm nghiệm x=2 rồi chia [0,4]."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1453,12 +2515,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra 0, hai tam giác đều có diện tích dương. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P16."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra 0, hai tam giác đều có diện tích dương. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P16.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "4 đơn vị diện tích."
+      },
+      {
+        "id": "D",
+        "text": "8"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-A02",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-A02",
     "stem": "Tính diện tích giữa \\(y=2x-2\\) và Ox trên [0;2].",
     "answer_key": "2 đơn vị diện tích.",
     "worked_solution": "Đồ thị cắt Ox tại x=1. Hai miền tam giác có đáy 1, chiều cao 2, mỗi diện tích là 1. Do đó S=2, tương đương tích phân giá trị tuyệt đối.",
@@ -1466,13 +2547,17 @@
       "G12-CHIV-B13-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Tìm giao Ox tại x=1 rồi chia hai khoảng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1484,12 +2569,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu không đổi dấu phần âm, tổng có dấu bằng 0. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P16."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu không đổi dấu phần âm, tổng có dấu bằng 0. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P16.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0"
+      },
+      {
+        "id": "B",
+        "text": "2 đơn vị diện tích."
+      },
+      {
+        "id": "C",
+        "text": "1"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-C03",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-C03",
     "stem": "Tính diện tích giữa \\(y=2x\\) và \\(y=x\\) trên [0;2].",
     "answer_key": "2 đơn vị diện tích.",
     "worked_solution": "Trên đoạn, \\(2x\\ge x\\). Chiều cao lát đứng là \\(2x-x=x\\), nên \\(S=\\int_0^2 x\\,\\mathrm dx=2\\).",
@@ -1497,13 +2601,17 @@
       "G12-CHIV-B13-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đường trên là 2x vì x≥0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1515,12 +2623,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy tổng hai hàm, diện tích giữa đường là hiệu độ cao. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P17."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy tổng hai hàm, diện tích giữa đường là hiệu độ cao. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P17.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "6"
+      },
+      {
+        "id": "B",
+        "text": "2 đơn vị diện tích."
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "1"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-P03",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-P03",
     "stem": "Tính diện tích giữa \\(y=4\\) và \\(y=x^2\\) trên [-2;2].",
     "answer_key": "\\(\\frac{32}3\\) đơn vị diện tích.",
     "worked_solution": "Trên đoạn, \\(x^2\\le4\\) nên đường y=4 ở trên. \\(S=\\int_{-2}^2(4-x^2)\\,\\mathrm dx=16-\\frac{16}3=\\frac{32}3\\).",
@@ -1528,13 +2655,17 @@
       "G12-CHIV-B13-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Trên [-2;2], \\(4-x^2\\ge0\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1546,12 +2677,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đảo thứ tự hai hàm, kết quả âm là tín hiệu kiểm lại. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P17."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đảo thứ tự hai hàm, kết quả âm là tín hiệu kiểm lại. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P17.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{32}3\\) đơn vị diện tích."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{16}3\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(16\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(8\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-A03",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-A03",
     "stem": "Hai biên \\(y=3x+1\\) và \\(y=x+1\\) trên [0;3]. Tính diện tích giữa chúng.",
     "answer_key": "9 đơn vị diện tích.",
     "worked_solution": "Hiệu tung độ là \\(2x\\ge0\\). Vì vậy \\(S=\\int_0^3 2x\\,\\mathrm dx=\\left.x^2\\right|_0^3=9\\). Không cộng hai hàm vì lát đứng chỉ nằm giữa chúng.",
@@ -1559,13 +2709,17 @@
       "G12-CHIV-B13-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Tính hiệu (3x+1)−(x+1)=2x."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1577,12 +2731,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng cả hai số hạng 1, không phải hiệu độ cao. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P17."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng cả hai số hạng 1, không phải hiệu độ cao. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P17.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "18"
+      },
+      {
+        "id": "B",
+        "text": "12"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "9 đơn vị diện tích."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-C04",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-C04",
     "stem": "Tính diện tích giữa \\(y=x\\) và \\(y=x^2\\) trên [0;1].",
     "answer_key": "\\(\\frac16\\) đơn vị diện tích.",
     "worked_solution": "Trên đoạn, \\(x-x^2=x(1-x)\\ge0\\). \\(S=\\int_0^1(x-x^2)\\,\\mathrm dx=\\frac12-\\frac13=\\frac16\\).",
@@ -1590,13 +2763,17 @@
       "G12-CHIV-B13-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Giải \\(x=x^2\\) và kiểm đường trên giữa 0 và 1."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1608,12 +2785,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hiệu \\(x^2-x\\) âm trên (0;1), đổi thứ tự để được chiều cao dương. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P18."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu hiệu \\(x^2-x\\) âm trên (0;1), đổi thứ tự để được chiều cao dương. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P18.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac12\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac13\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac16\\) đơn vị diện tích."
+      },
+      {
+        "id": "D",
+        "text": "\\(-\\frac16\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-P04",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-P04",
     "stem": "Tính diện tích giữa \\(y=2x\\) và \\(y=x^2\\) trên [0;2].",
     "answer_key": "\\(\\frac43\\) đơn vị diện tích.",
     "worked_solution": "Hai đồ thị giao tại x=0 và x=2. Trên đoạn, \\(x(2-x)\\ge0\\), nên \\(S=\\int_0^2(2x-x^2)\\,\\mathrm dx=4-\\frac83=\\frac43\\).",
@@ -1621,13 +2817,17 @@
       "G12-CHIV-B13-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Giải \\(2x=x^2\\), rồi kiểm \\(2x-x^2\\ge0\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1639,12 +2839,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm đường trên với \\(y=x^2\\), thử x=1. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P18."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm đường trên với \\(y=x^2\\), thử x=1. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P18.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac83\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(4\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac43\\) đơn vị diện tích."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac23\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-A04",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-A04",
     "stem": "Tính diện tích giữa \\(y=x^2\\) và \\(y=2-x^2\\) trên [-1;1].",
     "answer_key": "\\(\\frac83\\) đơn vị diện tích.",
     "worked_solution": "Hai đường gặp nhau tại x=-1 và x=1. Hiệu \\(2-2x^2\\ge0\\) trên đoạn. \\(S=\\int_{-1}^1(2-2x^2)\\,\\mathrm dx=4-\\frac43=\\frac83\\).",
@@ -1652,13 +2871,17 @@
       "G12-CHIV-B13-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Giải \\(x^2=2-x^2\\) tại -1 và 1; lấy đường trên trừ dưới."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1670,12 +2893,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng chỉ một parabol, thiếu đường biên thứ hai. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P18."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng chỉ một parabol, thiếu đường biên thứ hai. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P18.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac43\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac83\\) đơn vị diện tích."
+      },
+      {
+        "id": "C",
+        "text": "\\(4\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{16}3\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-C05",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-C05",
     "stem": "Độ cao \\(y=x+1\\) (cm), x từ 0 đến 2 cm. Tính diện tích giữa đồ thị và Ox.",
     "answer_key": "4 cm².",
     "worked_solution": "Độ cao dương trên đoạn. \\(S=\\int_0^2(x+1)\\,\\mathrm dx=\\left.(\\frac{x^2}2+x)\\right|_0^2=4\\) cm².",
@@ -1683,13 +2925,17 @@
       "G12-CHIV-B13-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tích phân độ cao x+1 theo chiều dài."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1701,12 +2947,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ghi cm thay cm², nhân hai đơn vị chiều dài. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P19."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ghi cm thay cm², nhân hai đơn vị chiều dài. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P19.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 cm²."
+      },
+      {
+        "id": "B",
+        "text": "2 cm²"
+      },
+      {
+        "id": "C",
+        "text": "6 cm²"
+      },
+      {
+        "id": "D",
+        "text": "4 cm"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-P05",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-P05",
     "stem": "Hình phẳng giới hạn bởi \\(y=2x-1\\), Ox, x=0 và x=1; x và y đều tính bằng mét. Tính diện tích hình học.",
     "answer_key": "\\(\\frac12\\) m².",
     "worked_solution": "Đồ thị cắt Ox tại \\(x=\\frac12\\). \\(S=\\int_0^{1/2}(1-2x)\\,\\mathrm dx+\\int_{1/2}^1(2x-1)\\,\\mathrm dx=\\frac14+\\frac14=\\frac12\\) m². Tung độ âm không phải chiều cao âm của hình.",
@@ -1714,13 +2979,17 @@
       "G12-CHIV-B13-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Chia tại x=1/2 và lấy trị tuyệt đối từng vùng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1732,12 +3001,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu gọi phần dưới Ox là độ cao âm của hình, đó là tung độ; diện tích vẫn dương. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P19."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu gọi phần dưới Ox là độ cao âm của hình, đó là tung độ; diện tích vẫn dương. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P19.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0 m²"
+      },
+      {
+        "id": "B",
+        "text": "1 m²"
+      },
+      {
+        "id": "C",
+        "text": "1/4 m²"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac12\\) m²."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-A05",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-A05",
     "stem": "Độ cao bờ đất \\(h(x)=100-10x\\) (m), x từ 0 đến 5 m. Tính diện tích mặt cắt giữa đồ thị và Ox.",
     "answer_key": "375 m².",
     "worked_solution": "Độ cao giảm từ 100 đến 50 m, luôn dương. \\(S=\\int_0^5(100-10x)\\,\\mathrm dx=\\left.(100x-5x^2)\\right|_0^5=500-125=375\\) m².",
@@ -1745,13 +3033,17 @@
       "G12-CHIV-B13-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Kiểm h≥0 từ 0 đến 5 và tích phân h."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1763,12 +3055,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ lấy chiều cao đầu nhân bề rộng, mô hình có chiều cao giảm. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P19."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ lấy chiều cao đầu nhân bề rộng, mô hình có chiều cao giảm. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P19.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "500 m²"
+      },
+      {
+        "id": "B",
+        "text": "250 m²"
+      },
+      {
+        "id": "C",
+        "text": "125 m²"
+      },
+      {
+        "id": "D",
+        "text": "375 m²."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-C06",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-C06",
     "stem": "Vật thể có diện tích mặt cắt vuông góc Ox là \\(S(x)=x^2\\) cm², x từ 0 đến 3 cm. Tính thể tích.",
     "answer_key": "9 cm³.",
     "worked_solution": "Tích phân diện tích mặt cắt theo chiều dài: \\(V=\\int_0^3x^2\\,\\mathrm dx=\\left.\\frac{x^3}3\\right|_0^3=9\\) cm³. Đơn vị diện tích nhân chiều dài cho thể tích.",
@@ -1776,13 +3087,17 @@
       "G12-CHIV-B13-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tích phân diện tích mặt cắt theo chiều dài."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1794,12 +3109,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bình phương S lần nữa, S đã có đơn vị cm². Ôn Toán 12 Bài 13; luyện THPT-TOP11-P20."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bình phương S lần nữa, S đã có đơn vị cm². Ôn Toán 12 Bài 13; luyện THPT-TOP11-P20.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "27 cm³"
+      },
+      {
+        "id": "B",
+        "text": "3 cm³"
+      },
+      {
+        "id": "C",
+        "text": "9 cm³."
+      },
+      {
+        "id": "D",
+        "text": "9 cm²"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-P06",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-P06",
     "stem": "Vật thể có diện tích mặt cắt vuông góc Ox là \\(S(x)=2+x\\) m², x từ 0 đến 2 m. Tính thể tích.",
     "answer_key": "6 m³.",
     "worked_solution": "Diện tích mặt cắt luôn dương. \\(V=\\int_0^2(2+x)\\,\\mathrm dx=\\left.(2x+\\frac{x^2}2)\\right|_0^2=4+2=6\\) m³.",
@@ -1807,13 +3141,17 @@
       "G12-CHIV-B13-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "S(x)=2+x là diện tích mặt cắt đã cho."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1825,12 +3163,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhân π, đề không yêu cầu tìm bán kính. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P20."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhân π, đề không yêu cầu tìm bán kính. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P20.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 m³"
+      },
+      {
+        "id": "B",
+        "text": "6 m³."
+      },
+      {
+        "id": "C",
+        "text": "8 m³"
+      },
+      {
+        "id": "D",
+        "text": "6 m²"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-A06",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-A06",
     "stem": "Vật thể có diện tích mặt cắt vuông góc Ox là \\(S(x)=4-x^2\\) cm², x từ 0 đến 2 cm. Tính thể tích.",
     "answer_key": "\\(\\frac{16}3\\) cm³.",
     "worked_solution": "Trên đoạn, S không âm. \\(V=\\int_0^2(4-x^2)\\,\\mathrm dx=8-\\frac83=\\frac{16}3\\) cm³. Không bình phương S lần nữa vì đề đã cho diện tích mặt cắt.",
@@ -1838,13 +3195,17 @@
       "G12-CHIV-B13-O06"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Kiểm diện tích mặt cắt không âm rồi tích phân."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1856,12 +3217,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy tích phân của bình phương S, sai thứ nguyên. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P20."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy tích phân của bình phương S, sai thứ nguyên. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P20.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{16}3\\) cm³."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac83\\) cm³"
+      },
+      {
+        "id": "C",
+        "text": "\\(8\\) cm³"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{16}3\\) cm²"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-C07",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-C07",
     "stem": "Vật thể có mặt cắt tròn vuông góc Ox bán kính \\(r(x)=x\\) cm, x từ 0 đến 1 cm. Tính thể tích.",
     "answer_key": "\\(\\frac\\pi3\\) cm³.",
     "worked_solution": "Diện tích mặt cắt là \\(S(x)=\\pi x^2\\). \\(V=\\pi\\int_0^1x^2\\,\\mathrm dx=\\frac\\pi3\\) cm³. Phải bình phương bán kính trước khi tích phân.",
@@ -1869,13 +3249,17 @@
       "G12-CHIV-B13-O07"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Từ bán kính x suy ra diện tích mặt cắt \\(S=\\pi x^2\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1887,12 +3271,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy chu vi 2πx, không phải diện tích mặt cắt. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P21."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy chu vi 2πx, không phải diện tích mặt cắt. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P21.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac\\pi3\\) cm³."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\pi/2\\) cm³"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\pi\\) cm³"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac13\\) cm³"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-P07",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-P07",
     "stem": "Vật thể có mặt cắt tròn vuông góc Ox bán kính \\(r(x)=2x\\) cm, x từ 0 đến 2 cm. Tính thể tích.",
     "answer_key": "\\(\\frac{32\\pi}3\\) cm³.",
     "worked_solution": "Diện tích mặt cắt \\(S(x)=\\pi(2x)^2=4\\pi x^2\\). \\(V=4\\pi\\int_0^2x^2\\,\\mathrm dx=\\frac{32\\pi}3\\) cm³. Hệ số 2 của bán kính trở thành 4 trong diện tích.",
@@ -1900,13 +3303,17 @@
       "G12-CHIV-B13-O07"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Bình phương bán kính 2x thành \\(4x^2\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1918,12 +3325,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ nhân 2, nhớ bình phương cả hệ số 2. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P21."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ nhân 2, nhớ bình phương cả hệ số 2. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P21.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{16\\pi}3\\) cm³"
+      },
+      {
+        "id": "B",
+        "text": "\\(4\\pi\\) cm³"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{32}3\\) cm³"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{32\\pi}3\\) cm³."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-A07",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-A07",
     "stem": "Vật thể có mặt cắt tròn vuông góc Ox bán kính \\(r(x)=\\sqrt{x}\\) cm, x từ 0 đến 4 cm. Tính thể tích.",
     "answer_key": "\\(8\\pi\\) cm³.",
     "worked_solution": "Diện tích mặt cắt \\(S(x)=\\pi(\\sqrt{x})^2=\\pi x\\). \\(V=\\pi\\int_0^4x\\,\\mathrm dx=8\\pi\\) cm³. Không tích phân trực tiếp bán kính.",
@@ -1931,13 +3357,17 @@
       "G12-CHIV-B13-O07"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "APPLY",
     "hints": [
       "Bình phương \\(\\sqrt x\\) được x; tích phân \\(\\pi x\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1949,12 +3379,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng \\(\\pi\\sqrt x\\), đã thiếu bình phương bán kính. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P21."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng \\(\\pi\\sqrt x\\), đã thiếu bình phương bán kính. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P21.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(4\\pi\\) cm³"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{16\\pi}3\\) cm³"
+      },
+      {
+        "id": "C",
+        "text": "\\(8\\pi\\) cm³."
+      },
+      {
+        "id": "D",
+        "text": "\\(8\\) cm³"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-C08",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-C08",
     "stem": "Quay miền giới hạn bởi \\(y=x\\), Ox, x=0 và x=2 quanh Ox. Tính thể tích.",
     "answer_key": "\\(\\frac{8\\pi}3\\) đơn vị thể tích.",
     "worked_solution": "Mặt cắt vuông góc Ox là đĩa bán kính x vì miền chạm trục quay. \\(V=\\pi\\int_0^2x^2\\,\\mathrm dx=\\frac{8\\pi}3\\). Nếu miền có lỗ thì phải trừ diện tích đĩa trong.",
@@ -1962,13 +3411,17 @@
       "G12-CHIV-B13-O08"
     ],
     "problem_type_id": null,
-    "difficulty": "1",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Miền chạm trục Ox nên lát cắt là đĩa bán kính x."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1980,12 +3433,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng diện tích hình phẳng, cần bình phương bán kính và nhân π. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P22."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng diện tích hình phẳng, cần bình phương bán kính và nhân π. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P22.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{4\\pi}3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{8\\pi}3\\) đơn vị thể tích."
+      },
+      {
+        "id": "C",
+        "text": "\\(2\\pi\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(8\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-P08",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-P08",
     "stem": "Quay miền giới hạn bởi \\(y=\\sqrt{x}\\), Ox, x=0 và x=4 quanh Ox. Tính thể tích.",
     "answer_key": "\\(8\\pi\\) đơn vị thể tích.",
     "worked_solution": "Đĩa có bán kính \\(\\sqrt{x}\\), diện tích \\(\\pi x\\). \\(V=\\pi\\int_0^4x\\,\\mathrm dx=8\\pi\\). Không dùng công thức đĩa nguyên dạng cho miền không chạm trục.",
@@ -1993,13 +3465,17 @@
       "G12-CHIV-B13-O08"
     ],
     "problem_type_id": null,
-    "difficulty": "2",
+    "difficulty": "APPLY",
     "hints": [
       "Lát cắt là đĩa bán kính \\(\\sqrt x\\), diện tích \\(\\pi x\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2011,12 +3487,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng \\(\\pi x^2\\), kiểm lại bán kính là căn x. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P22."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng \\(\\pi x^2\\), kiểm lại bán kính là căn x. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P22.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(4\\pi\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(8\\pi\\) đơn vị thể tích."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{16\\pi}3\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(8\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B13-A08",
-    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-A08",
     "stem": "Quay miền giới hạn bởi \\(y=2x\\), Ox, x=0 và x=1 quanh Ox. Tính thể tích.",
     "answer_key": "\\(\\frac{4\\pi}3\\) đơn vị thể tích.",
     "worked_solution": "Đĩa có bán kính 2x và diện tích \\(4\\pi x^2\\). \\(V=4\\pi\\int_0^1x^2\\,\\mathrm dx=\\frac{4\\pi}3\\). Kiểm bằng thể tích nón bán kính đáy 2, chiều cao 1.",
@@ -2024,13 +3519,17 @@
       "G12-CHIV-B13-O08"
     ],
     "problem_type_id": null,
-    "difficulty": "3",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Bán kính 2x, diện tích \\(\\pi(2x)^2\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2042,8 +3541,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng π(2x), không đúng diện tích; cận trên 1. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P22."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng π(2x), không đúng diện tích; cận trên 1. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P22.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{4\\pi}3\\) đơn vị thể tích."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{2\\pi}3\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(2\\pi\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac43\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-B11-T01",
