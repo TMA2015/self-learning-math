@@ -1730,17 +1730,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY01",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY01",
-    "stem": "Cho n=(2,3) là pháp tuyến của d. Vectơ u=(-3,2) có phải một chỉ phương của d không? Nêu phép kiểm.",
-    "answer_key": "Có, vì n·u=2(-3)+3(2)=0 và u≠(0,0).",
-    "worked_solution": "Tích vô hướng bằng 0 chứng minh u vuông góc với pháp tuyến n, tức song song với đường thẳng d; u không phải vectơ không.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY01.DELTA05",
+    "stem": "Cho \\(\\vec n=(2;3)\\) là một vectơ pháp tuyến của đường thẳng d. Vectơ \\(\\vec u=(-3;2)\\) có phải là vectơ chỉ phương của d không? Hãy tính tích vô hướng và kiểm \\(\\vec u\\ne\\vec0\\).",
+    "answer_key": "Có, vì \\(\\vec n\\cdot\\vec u=2(-3)+3\\cdot2=0\\) và \\(\\vec u\\ne\\vec0\\).",
+    "worked_solution": "Hai vectơ khác không có tích vô hướng bằng 0 nên vuông góc. Vì \\(\\vec n\\) là pháp tuyến của d, \\(\\vec u\\) là chỉ phương của d.",
     "skill_ids": [
       "G10-B19-NORMAL_DIRECTION"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Lấy hệ số x,y làm pháp tuyến rồi tìm một vectơ vuông góc."
+      "Tính tích vô hướng của hai vectơ đã cho và kiểm vectơ chỉ phương khác vectơ không."
     ],
     "remediation": "Nếu chọn cùng vectơ làm chỉ phương và pháp tuyến, kiểm tích vô hướng bằng 0 và hai vectơ khác 0. Ôn CĐ14 mục 1.1; luyện THPT-G10-B19-C01.",
     "rubric": null,
@@ -1761,7 +1761,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Có, vì n·u=2(-3)+3(2)=0 và u≠(0,0)."
+        "text": "Có, vì \\(\\vec n\\cdot\\vec u=2(-3)+3\\cdot2=0\\) và \\(\\vec u\\ne\\vec0\\)."
       },
       {
         "id": "B",
@@ -1780,19 +1780,19 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY02",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY02",
-    "stem": "Đường thẳng qua A(1,3), pháp tuyến n=(2,-1) có phương trình tổng quát nào?",
-    "answer_key": "2(x-1)-(y-3)=0 hay 2x-y+1=0.",
-    "worked_solution": "AM=(x-1,y-3), n·AM=2(x-1)-(y-3); thế A được 0. Không tự đảo vai trò n với vectơ chỉ phương.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY02.DELTA05",
+    "stem": "Lập phương trình tổng quát của đường thẳng đi qua \\(A(1;3)\\) và có pháp tuyến \\(\\vec n=(2;-1)\\). Em hãy viết từ tích vô hướng rồi kiểm lại tọa độ A.",
+    "answer_key": "\\(2(x-1)-(y-3)=0\\), hay \\(2x-y+1=0\\).",
+    "worked_solution": "Với \\(M(x;y)\\), \\(\\overrightarrow{AM}=(x-1;y-3)\\). Điều kiện \\(\\vec n\\cdot\\overrightarrow{AM}=0\\) cho \\(2(x-1)-(y-3)=0\\). Khai triển được \\(2x-y+1=0\\). Thay A: \\(2-3+1=0\\).",
     "skill_ids": [
       "G10-B19-GENERAL_POINT"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Dùng n·PM=0, M(x;y) là điểm bất kỳ trên đường."
+      "Dùng \\(\\vec n\\cdot\\overrightarrow{AM}=0\\), M là điểm bất kỳ trên đường."
     ],
-    "remediation": "Nếu sai hằng số, thay P vào phương trình; vế trái phải bằng 0. Ôn CĐ14 mục 1.2; luyện THPT-G10-B19-C02.",
+    "remediation": "Nếu sai hệ số tự do, thay tọa độ A vào phương trình; vế trái phải bằng 0. Ôn CĐ14 mục 1.2; luyện THPT-G10-B19-C02.",
     "rubric": null,
     "interaction": {
       "type": "SINGLE_CHOICE",
@@ -1815,7 +1815,7 @@
       },
       {
         "id": "B",
-        "text": "2(x-1)-(y-3)=0 hay 2x-y+1=0."
+        "text": "\\(2(x-1)-(y-3)=0\\), hay \\(2x-y+1=0\\)."
       },
       {
         "id": "C",
@@ -1830,17 +1830,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY03",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY03",
-    "stem": "Viết phương trình tham số đường thẳng qua A(1,-1), chỉ phương u=(-2,3).",
-    "answer_key": "x=1-2t, y=-1+3t (t∈ℝ).",
-    "worked_solution": "Khi t=0 thu A; khi t=1 thu A+u=(-1,2). Mọi điểm thuộc đường có độ dời t·u.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY03.DELTA05",
+    "stem": "Viết phương trình tham số của đường thẳng qua \\(A(1;-1)\\), nhận \\(\\vec u=(-2;3)\\) làm vectơ chỉ phương. Em hãy thử \\(t=0\\) và \\(t=1\\) để kiểm lại.",
+    "answer_key": "\\(\\begin{cases}x=1-2t\\\\y=-1+3t\\end{cases}\\), \\(t\\in\\mathbb R\\).",
+    "worked_solution": "Viết \\(M=A+t\\vec u\\), hai tọa độ dùng cùng t. Với \\(t=0\\) thu được A, với \\(t=1\\) thu được \\((-1;2)\\); vectơ từ A đến điểm này đúng là \\(\\vec u=(-2;3)\\).",
     "skill_ids": [
       "G10-B19-PARAMETRIC"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Cộng vào tọa độ A cùng một tham số t nhân từng tọa độ u."
+      "Cộng vào tọa độ A cùng một tham số t nhân từng tọa độ của vectơ chỉ phương."
     ],
     "remediation": "Nếu thế hai t khác nhau, điểm nhận được có thể không thuộc đường; dùng t=−2 đồng thời. Ôn CĐ14 mục 1.3; luyện THPT-G10-B19-P01.",
     "rubric": null,
@@ -1869,7 +1869,7 @@
       },
       {
         "id": "C",
-        "text": "x=1-2t, y=-1+3t (t∈ℝ)."
+        "text": "\\(\\begin{cases}x=1-2t\\\\y=-1+3t\\end{cases}\\), \\(t\\in\\mathbb R\\)."
       },
       {
         "id": "D",
@@ -1880,17 +1880,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY04",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY04",
-    "stem": "Cho A(-1,2), B(2,5). Viết một phương trình tổng quát của đường AB.",
-    "answer_key": "x-y+3=0.",
-    "worked_solution": "AB=(3,3)≠0, chọn n=(1,-1). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY04.DELTA05",
+    "stem": "Cho \\(A(-1;2)\\), \\(B(2;5)\\). Hãy lập một phương trình tổng quát của đường AB bằng vectơ \\(\\overrightarrow{AB}\\) và thử lại cả hai điểm.",
+    "answer_key": "\\(x-y+3=0\\).",
+    "worked_solution": "\\(\\overrightarrow{AB}=(3;3)\\ne\\vec0\\), chọn pháp tuyến \\(\\vec n=(1;-1)\\). Qua A: \\((x+1)-(y-2)=0\\), tức \\(x-y+3=0\\). Thử A: \\(-1-2+3=0\\); thử B: \\(2-5+3=0\\).",
     "skill_ids": [
       "G10-B19-TWO_POINTS"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Tính AB rồi tìm pháp tuyến vuông góc với AB."
+      "Tính \\(\\overrightarrow{AB}\\) rồi tìm pháp tuyến vuông góc với vectơ này."
     ],
     "remediation": "Nếu nhầm AB thành pháp tuyến, kiểm tích vô hướng và thay cả hai điểm vào phương trình. Ôn CĐ14 mục 1.4; luyện THPT-G10-B19-P02.",
     "rubric": null,
@@ -1923,17 +1923,17 @@
       },
       {
         "id": "D",
-        "text": "x-y+3=0."
+        "text": "\\(x-y+3=0\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHVII-TRY05",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY05",
-    "stem": "Với d: 2x-3y+1=0, M(1,1) và N(2,1) điểm nào thuộc d?",
-    "answer_key": "M thuộc d vì 2-3+1=0; N không thuộc vì 4-3+1=2.",
-    "worked_solution": "Điểm thuộc là nghiệm của phương trình theo cặp tọa độ. Đây là phép thử hai lần độc lập.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY05.DELTA05",
+    "stem": "Cho \\(d:2x-3y+1=0\\), \\(M(1;1)\\) và \\(N(2;1)\\). Điểm nào thuộc d? Hãy thế từng cặp tọa độ vào phương trình.",
+    "answer_key": "M thuộc d vì \\(2-3+1=0\\); N không thuộc vì \\(4-3+1=2\\ne0\\).",
+    "worked_solution": "Điểm thuộc đường thẳng khi cặp tọa độ là nghiệm của phương trình. Thay riêng từng cặp như ở đáp án, không suy từ điểm này sang điểm kia.",
     "skill_ids": [
       "G10-B19-MEMBERSHIP"
     ],
@@ -1961,7 +1961,7 @@
     "options": [
       {
         "id": "A",
-        "text": "M thuộc d vì 2-3+1=0; N không thuộc vì 4-3+1=2."
+        "text": "M thuộc d vì \\(2-3+1=0\\); N không thuộc vì \\(4-3+1=2\\ne0\\)."
       },
       {
         "id": "B",
@@ -1980,19 +1980,19 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY06",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY06",
-    "stem": "Hai đường d1: x+y=4, d2: x-y=2 gặp nhau ở đâu và có vuông góc không?",
-    "answer_key": "Giao I(3,1); hai đường vuông góc.",
-    "worked_solution": "Cộng hai phương trình được 2x=6 ⇒ x=3, y=1. Pháp tuyến (1,1) và (1,-1) có tích vô hướng 1-1=0.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY06.DELTA05",
+    "stem": "Hai đường \\(d_1:x+y=4\\) và \\(d_2:x-y=2\\) gặp nhau ở đâu? Chúng có vuông góc không? Hãy giải hệ trước, sau đó kiểm hướng bằng hai pháp tuyến.",
+    "answer_key": "Giao điểm \\(I(3;1)\\); hai đường vuông góc.",
+    "worked_solution": "Cộng hai phương trình được \\(2x=6\\), suy ra \\(x=3,y=1\\). Thử \\(3+1=4\\) và \\(3-1=2\\). Hai pháp tuyến \\((1;1),(1;-1)\\) có tích vô hướng \\(1-1=0\\), nên hai đường vuông góc.",
     "skill_ids": [
       "G10-B19-MULTISTEP"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Tìm giao điểm trước; đường cần dựng có cùng pháp tuyến với đường đã cho."
+      "Giải hệ tìm giao điểm, rồi kiểm tích vô hướng của hai pháp tuyến."
     ],
-    "remediation": "Nếu giữ nguyên hằng số, kiểm đường mới đi qua giao điểm và phân biệt với đường cũ. Ôn CĐ14 mục 1.6; luyện THPT-G10-B19-P06.",
+    "remediation": "Nếu tìm được giao điểm nhưng chưa biết góc, hãy kiểm tích vô hướng của hai pháp tuyến. Hai đường cắt nhau chưa chắc vuông góc. Ôn CĐ14 mục 1.6; luyện THPT-G10-B19-P06.",
     "rubric": null,
     "interaction": {
       "type": "SINGLE_CHOICE",
@@ -2015,7 +2015,7 @@
       },
       {
         "id": "B",
-        "text": "Giao I(3,1); hai đường vuông góc."
+        "text": "Giao điểm \\(I(3;1)\\); hai đường vuông góc."
       },
       {
         "id": "C",
@@ -2030,19 +2030,19 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY07",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY07",
-    "stem": "Giá trị V theo thời gian t (t≥0) đi qua (0,5) và (2,9), giả sử tuyến tính. Lập V(t) và tính V(3).",
-    "answer_key": "V(t)=2t+5, V(3)=11.",
-    "worked_solution": "Hệ số góc (9-5)/(2-0)=2, giá trị tại t=0 là 5. Đây là phép ngoại suy t=3, chỉ hợp lý nếu giả thiết tăng đều vẫn đúng.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY07.DELTA05",
+    "stem": "Giá trị V theo thời gian t (\\(t\\ge0\\)) nhận \\(V(0)=5\\) và \\(V(2)=9\\). Giả sử V thay đổi tuyến tính theo t. Hãy lập \\(V(t)\\), tính \\(V(3)\\) và nêu giả thiết cần có khi dự đoán ở \\(t=3\\).",
+    "answer_key": "\\(V(t)=2t+5,\\ V(3)=11\\).",
+    "worked_solution": "Hệ số góc là \\(\\frac{9-5}{2-0}=2\\); giá trị ban đầu là 5. Do đó \\(V(t)=2t+5\\) và \\(V(3)=11\\). Kiểm \\(V(0)=5,V(2)=9\\). Dự đoán tại \\(t=3\\) chỉ hợp lý nếu giả thiết thay đổi tuyến tính vẫn đúng.",
     "skill_ids": [
       "G10-B19-LINEAR_MODEL"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Tính lượng tăng mỗi phút, sau đó cộng lượng ban đầu."
+      "Tính tốc độ thay đổi từ hai mốc đã cho và xác định giá trị ban đầu."
     ],
-    "remediation": "Nếu ra 4t, đã bỏ 10 lít ban đầu; chỉ ngoại suy khi bể chưa tràn và còn đổ đều. Ôn CĐ14 mục 1.7; luyện THPT-G10-B19-P04.",
+    "remediation": "Nếu bỏ giá trị ban đầu, kiểm lại \\(V(0)=5\\). Dự đoán ngoài hai mốc chỉ hợp lý nếu giả thiết tuyến tính còn phù hợp. Ôn CĐ14 mục 1.7; luyện THPT-G10-B19-P04.",
     "rubric": null,
     "interaction": {
       "type": "SINGLE_CHOICE",
@@ -2069,7 +2069,7 @@
       },
       {
         "id": "C",
-        "text": "V(t)=2t+5, V(3)=11."
+        "text": "\\(V(t)=2t+5,\\ V(3)=11\\)."
       },
       {
         "id": "D",
@@ -2080,17 +2080,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY08",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY08",
-    "stem": "d1: 2x-y+1=0, d2: 4x-2y+3=0 là song song phân biệt hay trùng nhau?",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY08.DELTA05",
+    "stem": "Cho \\(d_1:2x-y+1=0\\), \\(d_2:4x-2y+3=0\\). Hai đường này song song phân biệt hay trùng nhau? Hãy kiểm cả ba hệ số, không kết luận chỉ từ pháp tuyến.",
     "answer_key": "Song song phân biệt.",
-    "worked_solution": "Hai pháp tuyến (2,-1) và (4,-2) tỉ lệ 2 lần, nhưng nhân toàn phương trình d1 với 2 cho hằng số 2, không phải 3 của d2.",
+    "worked_solution": "Hai pháp tuyến \\((2;-1),(4;-2)\\) tỉ lệ 2 lần. Nhân toàn phương trình \\(d_1\\) với 2 cho hằng số 2, không phải 3 của \\(d_2\\); hệ vô nghiệm, nên hai đường song song phân biệt.",
     "skill_ids": [
       "G10-B20-RELATIVE_POSITION"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "So tỉ lệ cả ba hệ số, không chỉ hai hệ số của x,y."
+      "So tỉ lệ cả ba hệ số, không chỉ hai hệ số của x và y."
     ],
     "remediation": "Nếu pháp tuyến cùng phương, đường có thể trùng hoặc song song phân biệt; kiểm hằng số. Ôn CĐ14 mục 2.1; luyện THPT-G10-B20-C01.",
     "rubric": null,
@@ -2130,17 +2130,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY09",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY09",
-    "stem": "Qua P(1,-2) viết đường vuông góc với d: x+2y-5=0.",
-    "answer_key": "2x-y-4=0.",
-    "worked_solution": "n=(1,2) của d, chọn n'=(2,-1) có tích vô hướng 0. Qua P: 2(x-1)-(y+2)=0 ⇒ 2x-y-4=0.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY09.DELTA05",
+    "stem": "Viết phương trình đường thẳng đi qua \\(P(1;-2)\\) và vuông góc với \\(d:x+2y-5=0\\). Em hãy xác định pháp tuyến mới trước rồi mới lập phương trình qua P.",
+    "answer_key": "\\(2x-y-4=0\\).",
+    "worked_solution": "Pháp tuyến của d là \\((1;2)\\); chọn pháp tuyến mới \\((2;-1)\\) có tích vô hướng bằng 0 với nó. Qua P: \\(2(x-1)-(y+2)=0\\), tức \\(2x-y-4=0\\). Thử P: \\(2-(-2)-4=0\\).",
     "skill_ids": [
       "G10-B20-PERPENDICULAR"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Pháp tuyến của đường cũ có thể làm chỉ phương đường mới."
+      "Pháp tuyến đường cũ có thể làm chỉ phương đường mới."
     ],
     "remediation": "Nếu hai pháp tuyến cùng phương thì hai đường không vuông góc; kiểm tích vô hướng bằng 0. Ôn CĐ14 mục 2.2; luyện THPT-G10-B20-P04.",
     "rubric": null,
@@ -2161,7 +2161,7 @@
     "options": [
       {
         "id": "A",
-        "text": "2x-y-4=0."
+        "text": "\\(2x-y-4=0\\)."
       },
       {
         "id": "B",
@@ -2180,17 +2180,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY10",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY10",
-    "stem": "Tìm giao điểm của x+2y=8 và 2x-y=1.",
-    "answer_key": "I(2,3).",
-    "worked_solution": "Từ 2x-y=1 ⇒ y=2x-1. Thế vào x+2(2x-1)=8 ⇒ x=2, y=3; kiểm 2+6=8, 4-3=1.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY10.DELTA05",
+    "stem": "Tìm giao điểm của hai đường \\(x+2y=8\\) và \\(2x-y=1\\). Sau khi giải hệ, thế cặp tọa độ vào cả hai phương trình để tự kiểm.",
+    "answer_key": "\\(I(2;3)\\).",
+    "worked_solution": "Từ \\(2x-y=1\\) suy ra \\(y=2x-1\\). Thế vào \\(x+2(2x-1)=8\\) được \\(x=2,y=3\\). Kiểm \\(2+6=8\\), \\(4-3=1\\).",
     "skill_ids": [
       "G10-B20-INTERSECTION"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Giải hệ hai phương trình bằng thế hoặc cộng đại số."
+      "Giải hệ bằng thế hoặc cộng đại số."
     ],
     "remediation": "Nếu điểm chỉ thỏa một phương trình, chưa phải giao điểm; thử lại cả hai. Ôn CĐ14 mục 2.3; luyện THPT-G10-B20-P01.",
     "rubric": null,
@@ -2215,7 +2215,7 @@
       },
       {
         "id": "B",
-        "text": "I(2,3)."
+        "text": "\\(I(2;3)\\)."
       },
       {
         "id": "C",
@@ -2230,17 +2230,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY11",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY11",
-    "stem": "Tính khoảng cách từ M(1,2) đến d: 3x+4y-1=0.",
-    "answer_key": "d(M,d)=2.",
-    "worked_solution": "Tử |3·1+4·2−1|=10, mẫu √(3²+4²)=5, nên khoảng cách bằng 10/5=2.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY11.DELTA05",
+    "stem": "Tính khoảng cách từ \\(M(1;2)\\) đến \\(d:3x+4y-1=0\\). Hãy xác định tử số có trị tuyệt đối và mẫu số là độ dài pháp tuyến rồi mới tính.",
+    "answer_key": "\\(d(M,d)=2\\).",
+    "worked_solution": "Tử số \\(\\lvert3\\cdot1+4\\cdot2-1\\rvert=10\\), mẫu số \\(\\sqrt{3^2+4^2}=5\\). Khoảng cách là \\(\\frac{10}{5}=2\\).",
     "skill_ids": [
       "G10-B20-DISTANCE"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Chia trị tuyệt đối của vế trái tại P cho độ dài pháp tuyến."
+      "Chia trị tuyệt đối của vế trái tại M cho độ dài pháp tuyến."
     ],
     "remediation": "Nếu bỏ trị tuyệt đối hoặc căn ở mẫu, kiểm khoảng cách không âm và bất biến khi đổi dấu phương trình. Ôn CĐ14 mục 2.4; luyện THPT-G10-B20-P02.",
     "rubric": null,
@@ -2269,7 +2269,7 @@
       },
       {
         "id": "C",
-        "text": "d(M,d)=2."
+        "text": "\\(d(M,d)=2\\)."
       },
       {
         "id": "D",
@@ -2280,17 +2280,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY12",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY12",
-    "stem": "Góc nhỏ giữa d1: x=0 và d2: x-y=0 bằng bao nhiêu?",
-    "answer_key": "45°.",
-    "worked_solution": "Pháp tuyến n1=(1,0), n2=(1,-1). cosφ=|1|/(1·√2)=1/√2 nên φ=45°.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY12.DELTA05",
+    "stem": "Tính góc nhỏ giữa \\(d_1:x=0\\) và \\(d_2:x-y=0\\). Hãy tìm hai pháp tuyến khác 0 rồi dùng công thức cosin.",
+    "answer_key": "\\(45^\\circ\\).",
+    "worked_solution": "Hai pháp tuyến là \\(\\vec n_1=(1;0),\\vec n_2=(1;-1)\\). Do đó \\(\\cos\\varphi=\\frac{\\lvert1\\rvert}{1\\cdot\\sqrt2}=\\frac1{\\sqrt2}\\), nên góc nhỏ là \\(45^\\circ\\).",
     "skill_ids": [
       "G10-B20-ANGLE"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Lấy trị tuyệt đối tích vô hướng hai pháp tuyến chia tích độ dài."
+      "Lấy trị tuyệt đối tích vô hướng hai pháp tuyến rồi chia tích độ dài."
     ],
     "remediation": "Nếu lấy góc tù giữa hai vectơ, nhớ góc giữa đường nằm trong [0°,90°]. Ôn CĐ14 mục 2.5; luyện THPT-G10-B20-P03.",
     "rubric": null,
@@ -2323,24 +2323,24 @@
       },
       {
         "id": "D",
-        "text": "45°."
+        "text": "\\(45^\\circ\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHVII-TRY13",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY13",
-    "stem": "Đường tròn có tâm I(-2,1) và bán kính 3 có phương trình nào?",
-    "answer_key": "(x+2)²+(y-1)²=9.",
-    "worked_solution": "IM²=(x+2)²+(y-1)², và R²=3²=9. Cần R=3>0.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY13.DELTA05",
+    "stem": "Lập phương trình đường tròn có tâm \\(I(-2;1)\\) và bán kính 3. Hãy tự kiểm dấu của tọa độ tâm, rồi chọn một điểm cách tâm 3 đơn vị để thử phương trình.",
+    "answer_key": "\\((x+2)^2+(y-1)^2=9\\).",
+    "worked_solution": "Điểm M thuộc đường tròn khi \\(IM^2=(x+2)^2+(y-1)^2=R^2=9\\). Bán kính 3 dương. Kiểm bằng \\(P(1;1)\\): điểm này cách \\(I(-2;1)\\) đúng 3 đơn vị và \\((1+2)^2+(1-1)^2=9\\).",
     "skill_ids": [
       "G10-B21-CIRCLE_STANDARD"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Viết bình phương khoảng cách IP bằng R²."
+      "Viết bình phương khoảng cách \\(IM^2\\) bằng \\(R^2\\)."
     ],
     "remediation": "Nếu sai dấu tâm hoặc quên bình phương R, thay P vào phương trình để kiểm. Ôn CĐ14 mục 3.1; luyện THPT-G10-B21-C01.",
     "rubric": null,
@@ -2361,7 +2361,7 @@
     "options": [
       {
         "id": "A",
-        "text": "(x+2)²+(y-1)²=9."
+        "text": "\\((x+2)^2+(y-1)^2=9\\)."
       },
       {
         "id": "B",
@@ -2380,10 +2380,10 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY14",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY14",
-    "stem": "Phương trình x²+y²−6x+4y+8=0 biểu diễn đường tròn nào?",
-    "answer_key": "(x−3)²+(y+2)²=5, tâm I(3,−2), bán kính √5.",
-    "worked_solution": "x²−6x=(x−3)²−9, y²+4y=(y+2)²−4. Suy ra tổng hai bình phương bằng −8+9+4=5>0.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY14.DELTA05",
+    "stem": "Xét \\(x^2+y^2-6x+4y+8=0\\). Hãy hoàn thành bình phương, tìm tâm, tính bán kính và xác nhận đây thực sự là một đường tròn.",
+    "answer_key": "\\((x-3)^2+(y+2)^2=5\\), tâm \\(I(3;-2)\\), bán kính \\(\\sqrt5\\).",
+    "worked_solution": "Hoàn thành bình phương: \\(x^2-6x=(x-3)^2-9\\), \\(y^2+4y=(y+2)^2-4\\). Tổng hai bình phương bằng \\(-8+9+4=5>0\\), do đó đọc tâm và bán kính như đáp án.",
     "skill_ids": [
       "G10-B21-CIRCLE_GENERAL"
     ],
@@ -2415,7 +2415,7 @@
       },
       {
         "id": "B",
-        "text": "(x−3)²+(y+2)²=5, tâm I(3,−2), bán kính √5."
+        "text": "\\((x-3)^2+(y+2)^2=5\\), tâm \\(I(3;-2)\\), bán kính \\(\\sqrt5\\)."
       },
       {
         "id": "C",
@@ -2430,19 +2430,19 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY15",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY15",
-    "stem": "Đường tròn tâm I(1,−1), bán kính 5; M(4,3). Viết tiếp tuyến tại M.",
-    "answer_key": "3x+4y−24=0.",
-    "worked_solution": "IM=(3,4), IM²=9+16=25=R² nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY15.DELTA05",
+    "stem": "Đường tròn tâm \\(I(1;-1)\\), bán kính 5 có điểm \\(M(4;3)\\). Hãy kiểm điều kiện M nằm trên đường, xác định pháp tuyến IM rồi lập phương trình tiếp tuyến tại M.",
+    "answer_key": "\\(3x+4y-24=0\\).",
+    "worked_solution": "\\(\\overrightarrow{IM}=(3;4)\\), \\(IM^2=9+16=25=R^2\\), nên M thuộc đường tròn. Bán kính là pháp tuyến của tiếp tuyến tại M: \\(3(x-4)+4(y-3)=0\\), tức \\(3x+4y-24=0\\). Thử M: \\(12+12-24=0\\).",
     "skill_ids": [
       "G10-B21-CIRCLE_TANGENT"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Bán kính IP vuông góc tiếp tuyến tại P."
+      "Bán kính IM vuông góc tiếp tuyến tại M."
     ],
-    "remediation": "Nếu dùng IP làm chỉ phương, đổi sang pháp tuyến và thử P thuộc tiếp tuyến. Ôn CĐ14 mục 3.3; luyện THPT-G10-B21-P02.",
+    "remediation": "Nếu dùng vectơ IM làm chỉ phương, hãy đổi sang pháp tuyến và thử M thuộc tiếp tuyến. Ôn CĐ14 mục 3.3; luyện THPT-G10-B21-P02.",
     "rubric": null,
     "interaction": {
       "type": "SINGLE_CHOICE",
@@ -2469,7 +2469,7 @@
       },
       {
         "id": "C",
-        "text": "3x+4y−24=0."
+        "text": "\\(3x+4y-24=0\\)."
       },
       {
         "id": "D",
@@ -2480,17 +2480,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY16",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY16",
-    "stem": "Đường tròn qua A(0,0), B(2,0), C(0,2) có tâm, bán kính và phương trình gì?",
-    "answer_key": "Tâm I(1,1), bán kính √2, phương trình (x−1)²+(y−1)²=2.",
-    "worked_solution": "Trung trực AB là x=1; trung trực AC là y=1. IA²=1²+1²=2; thử B và C đều cho tổng bình phương bằng 2.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY16.DELTA05",
+    "stem": "Tìm tâm, bán kính và phương trình đường tròn qua \\(A(0;0)\\), \\(B(2;0)\\), \\(C(0;2)\\). Hãy kiểm lại ba khoảng cách từ tâm bằng nhau.",
+    "answer_key": "Tâm \\(I(1;1)\\), bán kính \\(\\sqrt2\\), phương trình \\((x-1)^2+(y-1)^2=2\\).",
+    "worked_solution": "Trung trực AB là \\(x=1\\), trung trực AC là \\(y=1\\). Giao là \\(I(1;1)\\). Tính \\(IA^2=1^2+1^2=2\\); thử B và C cũng cho bình phương khoảng cách bằng 2. Ba điểm không thẳng hàng nên xác định duy nhất đường tròn.",
     "skill_ids": [
       "G10-B21-CIRCLE_THROUGH_POINTS"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Đặt tâm I(h;k), dùng IA²=IB²=IC²."
+      "Đặt tâm \\(I(h;k)\\), dùng \\(IA^2=IB^2=IC^2\\)."
     ],
     "remediation": "Nếu lấy trung điểm cạnh làm tâm tùy ý, chỉ đúng cho cạnh huyền tam giác vuông; kiểm cả ba khoảng cách. Ôn CĐ14 mục 3.4; luyện THPT-G10-B21-P04.",
     "rubric": null,
@@ -2523,24 +2523,24 @@
       },
       {
         "id": "D",
-        "text": "Tâm I(1,1), bán kính √2, phương trình (x−1)²+(y−1)²=2."
+        "text": "Tâm \\(I(1;1)\\), bán kính \\(\\sqrt2\\), phương trình \\((x-1)^2+(y-1)^2=2\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHVII-TRY17",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY17",
-    "stem": "Đường tròn tâm I(1,2), R=3 và đường d: y=−1 có quan hệ nào?",
-    "answer_key": "Tiếp xúc; tiếp điểm T(1,−1).",
-    "worked_solution": "Khoảng cách từ I(1,2) đến y=−1 là |2−(−1)|=3=R. Chân đường vuông góc từ I xuống d là T(1,−1).",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY17.DELTA05",
+    "stem": "Đường tròn tâm \\(I(1;2)\\), bán kính \\(R=3\\) và đường thẳng \\(d:y=-1\\) có bao nhiêu điểm chung? Nếu tiếp xúc, hãy tìm tiếp điểm bằng chân vuông góc.",
+    "answer_key": "Tiếp xúc tại \\(T(1;-1)\\).",
+    "worked_solution": "Khoảng cách từ \\(I(1;2)\\) đến \\(y=-1\\) là \\(\\lvert2-(-1)\\rvert=3=R\\). Chân đường vuông góc là \\(T(1;-1)\\); đó là tiếp điểm.",
     "skill_ids": [
       "G10-B21-LINE_CIRCLE_POSITION"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "So khoảng cách tâm–đường với R rồi thế phương trình để tìm giao."
+      "So khoảng cách tâm–đường với bán kính rồi xác định giao điểm nếu có."
     ],
     "remediation": "Nếu lấy luôn hình chiếu tâm làm tiếp điểm khi khoảng cách nhỏ hơn R, giải phương trình để tìm đủ hai giao điểm. Ôn CĐ14 mục 3.5; luyện THPT-G10-B21-P03.",
     "rubric": null,
@@ -2561,7 +2561,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Tiếp xúc; tiếp điểm T(1,−1)."
+        "text": "Tiếp xúc tại \\(T(1;-1)\\)."
       },
       {
         "id": "B",
@@ -2580,17 +2580,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY18",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY18",
-    "stem": "Với elip x²/25+y²/16=1, tìm a, b, c và hai tiêu điểm.",
-    "answer_key": "a=5, b=4, c=3; F1(−3,0), F2(3,0).",
-    "worked_solution": "a²=25>b²=16, c²=25−16=9 ⇒ c=3; elip có trục lớn Ox.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY18.DELTA05",
+    "stem": "Elip x²/25+y²/16=1 có hai tiêu điểm nào? Trước khi tính c, hãy xác định rõ a, b và trục lớn.",
+    "answer_key": "\\(a=5,b=4,c=3\\); \\(F_1(-3;0),F_2(3;0)\\).",
+    "worked_solution": "\\(a^2=25>b^2=16\\), \\(c^2=25-16=9\\), suy ra \\(c=3\\). Trục lớn là Ox và \\(c<a\\), nên hai tiêu điểm nằm trên Ox, phía trong hai đỉnh.",
     "skill_ids": [
       "G10-B22-ELLIPSE_PARAMETERS"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Đọc a²,b² với a>b>0, dùng c²=a²−b²."
+      "Đọc \\(a^2,b^2\\) với \\(a>b>0\\), dùng \\(c^2=a^2-b^2\\)."
     ],
     "remediation": "Nếu dùng dấu cộng hoặc lấy c=a²−b², kiểm c<a và lấy căn dương. Ôn CĐ14 mục 4.1; luyện THPT-G10-B22-P01.",
     "rubric": null,
@@ -2615,7 +2615,7 @@
       },
       {
         "id": "B",
-        "text": "a=5, b=4, c=3; F1(−3,0), F2(3,0)."
+        "text": "\\(a=5,b=4,c=3\\); \\(F_1(-3;0),F_2(3;0)\\)."
       },
       {
         "id": "C",
@@ -2630,17 +2630,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY19",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY19",
-    "stem": "Hypebol x²/16−y²/9=1 có các đỉnh và hai tiêu điểm tọa độ nào?",
-    "answer_key": "Đỉnh A1(−4,0), A2(4,0); tiêu điểm F1(−5,0), F2(5,0).",
-    "worked_solution": "a=4, b=3, c²=a²+b²=16+9=25 ⇒ c=5; trục thực Ox.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY19.DELTA05",
+    "stem": "Từ x²/16−y²/9=1, hãy tìm hai đỉnh và hai tiêu điểm. Kết quả c phải lớn hơn a hay nhỏ hơn a?",
+    "answer_key": "Đỉnh \\(A_1(-4;0),A_2(4;0)\\); tiêu điểm \\(F_1(-5;0),F_2(5;0)\\).",
+    "worked_solution": "\\(a=4,b=3\\), \\(c^2=a^2+b^2=16+9=25\\), suy ra \\(c=5\\). Trục thực Ox, hai tiêu điểm ở ngoài hai đỉnh vì \\(c>a\\).",
     "skill_ids": [
       "G10-B22-HYPERBOLA_PARAMETERS"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Dùng c²=a²+b²; trục thực nằm trên Ox."
+      "Dùng \\(c^2=a^2+b^2\\); trục thực nằm trên Ox."
     ],
     "remediation": "Nếu lấy dấu trừ như elip, kiểm c>a và tọa độ tiêu điểm trên trục thực. Ôn CĐ14 mục 4.2; luyện THPT-G10-B22-P02.",
     "rubric": null,
@@ -2669,7 +2669,7 @@
       },
       {
         "id": "C",
-        "text": "Đỉnh A1(−4,0), A2(4,0); tiêu điểm F1(−5,0), F2(5,0)."
+        "text": "Đỉnh \\(A_1(-4;0),A_2(4;0)\\); tiêu điểm \\(F_1(-5;0),F_2(5;0)\\)."
       },
       {
         "id": "D",
@@ -2680,17 +2680,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY20",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY20",
-    "stem": "Hypebol x²/25−y²/4=1 có hai đường tiệm cận nào?",
-    "answer_key": "y=(2/5)x và y=−(2/5)x.",
-    "worked_solution": "a²=25 ⇒ a=5; b²=4 ⇒ b=2. Hệ số góc tiệm cận là ±b/a=±2/5.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY20.DELTA05",
+    "stem": "Hypebol x²/25−y²/4=1 có hai tiệm cận nào? Hãy nhận a,b từ mẫu số trước khi viết hệ số góc.",
+    "answer_key": "\\(y=\\frac25x\\) và \\(y=-\\frac25x\\).",
+    "worked_solution": "\\(a^2=25,b^2=4\\), nên \\(a=5,b=2\\). Hai đường tiệm cận có hệ số góc \\(\\pm\\frac ba=\\pm\\frac25\\), đi qua tâm O.",
     "skill_ids": [
       "G10-B22-HYPERBOLA_ASYMPTOTES"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Từ mẫu tìm a,b; tiệm cận có hệ số góc ±b/a."
+      "Từ mẫu tìm a, b; hệ số góc tiệm cận là \\(\\pm\\frac ba\\)."
     ],
     "remediation": "Nếu nhầm đường x=±a là tiệm cận, đó là hoành độ đỉnh; hai tiệm cận đi qua tâm. Ôn CĐ14 mục 4.3; luyện THPT-G10-B22-C02.",
     "rubric": null,
@@ -2723,24 +2723,24 @@
       },
       {
         "id": "D",
-        "text": "y=(2/5)x và y=−(2/5)x."
+        "text": "\\(y=\\frac25x\\) và \\(y=-\\frac25x\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHVII-TRY21",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY21",
-    "stem": "Cho parabol y²=8x với x≥0. Xác định tiêu điểm, đường chuẩn; M(2,4) có thuộc parabol không?",
-    "answer_key": "p=4; F(2,0), đường chuẩn x=−2; M(2,4) thuộc vì 4²=8·2.",
-    "worked_solution": "2p=8 ⇒ p=4, F=(p/2,0)=(2,0), đường chuẩn x=−p/2=−2. M có MF=4 và khoảng cách đến x=−2 là 4.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY21.DELTA05",
+    "stem": "Cho parabol y²=8x với x≥0. Hãy đọc p từ 2p=8, xác định tiêu điểm, đường chuẩn và kiểm M(2;4) có thuộc đường cong không.",
+    "answer_key": "\\(p=4\\); tiêu điểm \\(F(2;0)\\), đường chuẩn \\(x=-2\\); M thuộc parabol vì \\(4^2=8\\cdot2\\).",
+    "worked_solution": "So \\(y^2=8x\\) với \\(y^2=2px\\), ta có \\(p=4\\), \\(F(2;0)\\) và đường chuẩn \\(x=-2\\). Với \\(M(2;4)\\), \\(4^2=8\\cdot2\\); đồng thời \\(MF=4\\) và khoảng cách đến đường chuẩn là 4.",
     "skill_ids": [
       "G10-B22-PARABOLA_FOCUS"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "So hệ số x với 2p rồi xác định p/2."
+      "So hệ số của x với \\(2p\\), rồi xác định \\(\\frac p2\\)."
     ],
     "remediation": "Nếu nhầm p là tiêu cự, kiểm F(p/2;0), đường chuẩn x=−p/2. Ôn CĐ14 mục 4.4; luyện THPT-G10-B22-P06.",
     "rubric": null,
@@ -2761,7 +2761,7 @@
     "options": [
       {
         "id": "A",
-        "text": "p=4; F(2,0), đường chuẩn x=−2; M(2,4) thuộc vì 4²=8·2."
+        "text": "\\(p=4\\); tiêu điểm \\(F(2;0)\\), đường chuẩn \\(x=-2\\); M thuộc parabol vì \\(4^2=8\\cdot2\\)."
       },
       {
         "id": "B",
@@ -2780,19 +2780,19 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY22",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY22",
-    "stem": "Đường x=0 cắt elip x²/9+y²/4=1 tại những điểm nào?",
-    "answer_key": "(0,2) và (0,−2).",
-    "worked_solution": "Thế x=0 được y²/4=1 ⇒ y²=4 ⇒ y=±2; cả hai tọa độ thỏa phương trình gốc.",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY22.DELTA05",
+    "stem": "Đường x=0 cắt elip x²/9+y²/4=1 ở đâu? Tự kiểm cả hai tọa độ thu được bằng cách thế vào phương trình elip.",
+    "answer_key": "\\((0;2)\\) và \\((0;-2)\\).",
+    "worked_solution": "Thế \\(x=0\\) được \\(\\frac{y^2}{4}=1\\), nên \\(y^2=4\\) và \\(y=\\pm2\\). Thử cả hai tọa độ vào phương trình gốc.",
     "skill_ids": [
       "G10-B22-CONIC_INTERSECTION"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Thế y=k rồi xét dấu của biểu thức cho x²."
+      "Thế \\(x=0\\) rồi giải phương trình theo y."
     ],
-    "remediation": "Nếu luôn lấy hai nghiệm, kiểm trường hợp x²=0 và x²<0 trước. Ôn CĐ14 mục 4.5; luyện THPT-G10-B22-P05.",
+    "remediation": "Nếu bỏ nghiệm \\(y=-2\\), nhớ phương trình bình phương bằng số dương có hai nghiệm đối nhau. Kiểm cả hai điểm. Ôn CĐ14 mục 4.5; luyện THPT-G10-B22-P05.",
     "rubric": null,
     "interaction": {
       "type": "SINGLE_CHOICE",
@@ -2815,7 +2815,7 @@
       },
       {
         "id": "B",
-        "text": "(0,2) và (0,−2)."
+        "text": "\\((0;2)\\) và \\((0;-2)\\)."
       },
       {
         "id": "C",
@@ -2830,17 +2830,17 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY23",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY23",
-    "stem": "Mặt cắt một máng giả sử có dạng y²=20x (x,y tính bằng cm). Bề rộng của máng tại x=5 cm là bao nhiêu?",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY23.DELTA05",
+    "stem": "Với mặt cắt y²=20x (x,y tính bằng cm), hãy tự tìm bề rộng tại x=5 cm và giải thích vì sao phải dùng cả hai dấu của y.",
     "answer_key": "20 cm.",
-    "worked_solution": "Thế x=5 được y²=100 ⇒ y=±10 cm. Độ rộng là 10−(−10)=20 cm.",
+    "worked_solution": "Thế \\(x=5\\) được \\(y^2=100\\), nên \\(y=\\pm10\\,\\mathrm{cm}\\). Hai mép ở cùng hoành độ; bề rộng là \\(10-(-10)=20\\,\\mathrm{cm}\\).",
     "skill_ids": [
       "G10-B22-CONIC_MODEL"
     ],
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Với tiêu điểm F(f;0), viết y²=4fx; tìm cả hai mép tại x đã cho."
+      "Thế \\(x=5\\) vào phương trình để tìm tung độ của cả hai mép."
     ],
     "remediation": "Nếu chỉ lấy |y|, đó là nửa bề rộng; lấy hiệu tung độ trên và dưới, giữ đơn vị cm. Ôn CĐ14 mục 4.6; luyện THPT-G10-B22-P04.",
     "rubric": null,
