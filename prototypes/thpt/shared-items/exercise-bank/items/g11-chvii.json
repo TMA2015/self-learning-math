@@ -1817,7 +1817,7 @@
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C01",
     "stem": "Cho M ngoài đường thẳng a, H là hình chiếu vuông góc của M trên a. Với \\(K\\in a\\), \\(K\\ne H\\), so sánh MH và MK.",
     "answer_key": "\\(MH<MK\\).",
     "worked_solution": "Tam giác MHK vuông tại H vì \\(MH\\perp a\\) và HK nằm trên a. Theo Pitago, \\(MK^2=MH^2+HK^2\\). Vì \\(HK>0\\), suy ra \\(MK^2>MH^2\\), hay \\(MK>MH\\). Đoạn vuông góc là đoạn ngắn nhất từ M đến a.",
@@ -1825,13 +1825,17 @@
       "G11-B26-POINT_LINE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng Pitago trong tam giác MHK vuông tại H."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1844,12 +1848,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Vì K khác H, bình phương độ dài MK lớn hơn bình phương MH. Ôn CĐ17 mục 1.1; luyện THPT-TOP17-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Vì K khác H, bình phương độ dài MK lớn hơn bình phương MH. Ôn CĐ17 mục 1.1; luyện THPT-TOP17-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(MH=MK\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(MH>MK\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(MH<MK\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không đủ dữ kiện để so sánh."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C02",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C02",
     "stem": "Nếu \\(M\\in(P)\\), khoảng cách \\(d(M,(P))\\) bằng bao nhiêu?",
     "answer_key": "0.",
     "worked_solution": "Hình chiếu vuông góc của M lên \\((P)\\) chính là M, nên khoảng cách bằng độ dài đoạn MM, tức 0.",
@@ -1857,13 +1880,17 @@
       "G11-B26-POINT_PLANE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Điểm đã nằm trong mặt phẳng tự là hình chiếu của nó."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1876,12 +1903,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho khoảng cách dương, đoạn từ M đến chính M có độ dài 0. Ôn CĐ17 mục 1.2; luyện THPT-TOP17-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho khoảng cách dương, đoạn từ M đến chính M có độ dài 0. Ôn CĐ17 mục 1.2; luyện THPT-TOP17-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Luôn lớn hơn 0."
+      },
+      {
+        "id": "B",
+        "text": "0."
+      },
+      {
+        "id": "C",
+        "text": "Luôn nhỏ hơn 0."
+      },
+      {
+        "id": "D",
+        "text": "Không xác định."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C03",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C03",
     "stem": "Cho \\(a\\parallel(P)\\). Khoảng cách từ hai điểm \\(M,N\\in a\\) tới \\((P)\\) có bằng nhau không?",
     "answer_key": "Bằng nhau.",
     "worked_solution": "Nếu M và N khác nhau, gọi H, K lần lượt là hình chiếu vuông góc của chúng trên \\((P)\\). Xét mặt phẳng chứa a và MH. Mặt phẳng này cắt \\((P)\\) theo đường qua H song song a vì \\(a\\parallel(P)\\). Đường qua N song song MH cũng nằm trong mặt phẳng này và vuông góc \\((P)\\), nên đi qua K trên giao tuyến đó. Tứ giác MNKH là hình chữ nhật: \\(MN\\parallel HK\\), \\(MH\\parallel NK\\), \\(MH\\perp HK\\). Suy ra \\(MH=NK\\). Nếu M trùng N, kết luận hiển nhiên.",
@@ -1889,13 +1935,17 @@
       "G11-B26-PARALLEL_LINE_PLANE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đường song song mặt có mọi điểm ở cùng độ cao vuông góc."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1908,12 +1958,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho khoảng cách thay đổi, kiểm giả thiết đường không cắt mặt và cùng phương với đường nằm trong mặt. Ôn CĐ17 mục 1.3; luyện THPT-TOP17-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho khoảng cách thay đổi, kiểm giả thiết đường không cắt mặt và cùng phương với đường nằm trong mặt. Ôn CĐ17 mục 1.3; luyện THPT-TOP17-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bằng nhau, vì đường thẳng song song với mặt phẳng."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ bằng nhau khi M và N trùng nhau."
+      },
+      {
+        "id": "C",
+        "text": "Không bằng nhau nếu M và N khác nhau."
+      },
+      {
+        "id": "D",
+        "text": "Phụ thuộc vào độ dài MN."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C04",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C04",
     "stem": "Hai mặt phẳng song song cách nhau 4,5 m. M thuộc mặt thứ nhất. Khoảng cách từ M đến mặt thứ hai bằng bao nhiêu?",
     "answer_key": "4,5 m.",
     "worked_solution": "Khoảng cách giữa hai mặt phẳng song song là khoảng cách từ một điểm bất kì trên mặt thứ nhất đến mặt thứ hai. Dựng đường vuông góc từ M xuống mặt kia, độ dài đoạn đó bằng 4,5 m.",
@@ -1921,13 +1990,17 @@
       "G11-B26-PARALLEL_PLANES"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Khoảng cách giữa hai mặt song song đo theo phương vuông góc."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1940,12 +2013,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đo từ M theo đường xiên, phải dựng chân vuông góc xuống mặt thứ hai. Ôn CĐ17 mục 1.4; luyện THPT-TOP17-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đo từ M theo đường xiên, phải dựng chân vuông góc xuống mặt thứ hai. Ôn CĐ17 mục 1.4; luyện THPT-TOP17-P04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "0 m."
+      },
+      {
+        "id": "B",
+        "text": "9 m."
+      },
+      {
+        "id": "C",
+        "text": "2,25 m."
+      },
+      {
+        "id": "D",
+        "text": "4,5 m."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C05",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C05",
     "stem": "Đoạn nối hai đường chéo nhau chỉ vuông góc với đường đầu, không vuông góc đường thứ hai. Có phải đoạn vuông góc chung không?",
     "answer_key": "Không.",
     "worked_solution": "Đoạn vuông góc chung phải có hai đầu lần lượt thuộc hai đường và đồng thời vuông góc với cả hai đường. Thiếu điều kiện vuông góc thứ hai nên đoạn đã cho không phải đoạn vuông góc chung.",
@@ -1953,13 +2045,17 @@
       "G11-B26-SKEW_COMMON_PERP"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đoạn vuông góc chung phải vuông góc cả hai đường."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1972,12 +2068,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ kiểm một đầu, kiểm thêm vuông góc với đường thứ hai và hai đầu thuộc đúng hai đường. Ôn CĐ17 mục 1.5; luyện THPT-TOP17-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ kiểm một đầu, kiểm thêm vuông góc với đường thứ hai và hai đầu thuộc đúng hai đường. Ôn CĐ17 mục 1.5; luyện THPT-TOP17-P05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, chỉ cần vuông góc với một đường."
+      },
+      {
+        "id": "B",
+        "text": "Có, chỉ cần hai đầu thuộc hai đường."
+      },
+      {
+        "id": "C",
+        "text": "Không, phải vuông góc với cả hai đường."
+      },
+      {
+        "id": "D",
+        "text": "Có, miễn đoạn nối không nằm trong mặt phẳng nào."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C06",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C06",
     "stem": "Trong hình chóp S.ABC, \\(SA=10\\), \\(SH=8\\), H là hình chiếu vuông góc của S lên đáy. Tính chiều cao hình chóp.",
     "answer_key": "8 (cùng đơn vị độ dài).",
     "worked_solution": "Chiều cao là khoảng cách vuông góc từ đỉnh đến mặt đáy. Vì H là hình chiếu của S, chiều cao bằng SH, tức 8. SA là cạnh bên, không phải chiều cao.",
@@ -1985,13 +2100,17 @@
       "G11-B26-HEIGHT_APPLICATION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "H là hình chiếu của S lên đáy."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2004,12 +2123,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy 10, đó là cạnh bên; chiều cao là SH. Ôn CĐ17 mục 1.6; luyện THPT-TOP17-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy 10, đó là cạnh bên; chiều cao là SH. Ôn CĐ17 mục 1.6; luyện THPT-TOP17-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 (cùng đơn vị độ dài)."
+      },
+      {
+        "id": "B",
+        "text": "8 (cùng đơn vị độ dài)."
+      },
+      {
+        "id": "C",
+        "text": "6 (cùng đơn vị độ dài)."
+      },
+      {
+        "id": "D",
+        "text": "18 (cùng đơn vị độ dài)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B26-P01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-P01",
     "stem": "Hình chóp có cạnh xiên từ đỉnh đến một đỉnh đáy dài 17 cm, hình chiếu vuông góc của cạnh xiên lên đáy dài 15 cm. Tính chiều cao.",
     "answer_key": "8 cm.",
     "worked_solution": "Cạnh xiên là cạnh huyền của tam giác vuông tạo bởi chiều cao và hình chiếu. Theo Pitago, \\(h=\\sqrt{17^2-15^2}=\\sqrt{64}=8\\) (cm).",
@@ -2017,13 +2155,17 @@
       "G11-B26-HEIGHT_APPLICATION"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Cạnh xiên 17 là cạnh huyền, hình chiếu 15 là một cạnh góc vuông."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2036,12 +2178,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Theo Pitago, lấy bình phương cạnh huyền trừ bình phương hình chiếu. Ôn CĐ17 mục 1.6; luyện THPT-TOP17-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Theo Pitago, lấy bình phương cạnh huyền trừ bình phương hình chiếu. Ôn CĐ17 mục 1.6; luyện THPT-TOP17-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "8 cm."
+      },
+      {
+        "id": "B",
+        "text": "15 cm."
+      },
+      {
+        "id": "C",
+        "text": "17 cm."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\sqrt{514}\\,\\mathrm{cm}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B26-P02",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-P02",
     "stem": "Vì sao khoảng cách \\(d(M,(P))\\) không thể âm?",
     "answer_key": "Vì đó là độ dài đoạn vuông góc, luôn không âm.",
     "worked_solution": "Gọi H là hình chiếu của M lên \\((P)\\). Theo định nghĩa, \\(d(M,(P))=MH\\ge0\\). Đẳng thức xảy ra khi M thuộc \\((P)\\) và H trùng M.",
@@ -2049,13 +2210,17 @@
       "G11-B26-POINT_PLANE"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Khoảng cách là độ dài của đoạn vuông góc."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2068,12 +2233,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho khoảng cách âm, độ dài luôn không âm; bằng 0 khi điểm thuộc mặt. Ôn CĐ17 mục 1.2; luyện THPT-TOP17-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho khoảng cách âm, độ dài luôn không âm; bằng 0 khi điểm thuộc mặt. Ôn CĐ17 mục 1.2; luyện THPT-TOP17-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vì M luôn thuộc mặt phẳng nên khoảng cách bằng 0."
+      },
+      {
+        "id": "B",
+        "text": "Vì mọi đường nối M với mặt phẳng đều có độ dài bằng nhau."
+      },
+      {
+        "id": "C",
+        "text": "Vì khoảng cách có dấu tùy vị trí của M."
+      },
+      {
+        "id": "D",
+        "text": "Vì đó là độ dài đoạn vuông góc, luôn không âm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B26-P03",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-P03",
     "stem": "Cho hình hộp chữ nhật \\(ABCD.A'B'C'D'\\) có đáy ABCD là hình vuông cạnh 6 cm. Gọi O là giao điểm hai đường chéo đáy. (a) Chứng minh \\(AA'\\) và BD chéo nhau, xác định đoạn vuông góc chung và tính khoảng cách giữa hai đường. (b) Chứng minh \\(AA'\\parallel(BCC'B')\\) và tính khoảng cách từ \\(AA'\\) đến mặt phẳng đó. (c) Vì sao hai khoảng cách không bằng nhau?",
     "answer_key": "(a) AO là đoạn vuông góc chung, \\(d(AA',BD)=3\\sqrt2\\) cm. (b) \\(d(AA',(BCC'B'))=6\\) cm. (c) Hai đối tượng đích khác nhau: BD và mặt bên \\(BCC'B'\\).",
     "worked_solution": "(a) Đường \\(AA'\\) vuông góc với mặt đáy, cắt đáy duy nhất tại A. Vì A không thuộc BD nên hai đường không cắt nhau. Chúng không song song vì \\(AA'\\) vuông góc với BD; do đó chéo nhau. O thuộc BD, A thuộc \\(AA'\\). Đường chéo AC vuông góc BD trong hình vuông nên \\(AO\\perp BD\\); đồng thời AO nằm trong đáy nên \\(AO\\perp AA'\\). Vậy AO là đoạn vuông góc chung. Độ dài \\(AO=AC/2=6\\sqrt2/2=3\\sqrt2\\) cm. (b) \\(AA'\\parallel BB'\\), mà \\(BB'\\) nằm trong mặt bên \\(BCC'B'\\). Hai mặt bên đối diện của hình hộp \\(ADD'A'\\) và \\(BCC'B'\\) song song phân biệt, nên \\(AA'\\) không có điểm chung với \\(BCC'B'\\). Suy ra \\(AA'\\parallel(BCC'B')\\). Vì \\(AB\\perp BC\\) và \\(AB\\perp BB'\\), hai đường BC và BB' cắt nhau tại B trong mặt bên, nên \\(AB\\perp(BCC'B')\\). Vậy B là hình chiếu của A lên mặt bên; khoảng cách từ đường \\(AA'\\) song song với mặt bên bằng khoảng cách từ A đến mặt bên, tức \\(AB=6\\) cm. (c) AO đo khoảng cách đến BD, còn AB đo khoảng cách đến mặt bên. Không được dùng cùng một đoạn chỉ vì cả hai phép đo đều xuất phát từ \\(AA'\\).",
@@ -2082,14 +2266,18 @@
       "G11-B26-PARALLEL_LINE_PLANE"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Tìm điểm trên BD sao cho đoạn nối từ A vuông góc BD, rồi kiểm cả hai đường.",
       "Dùng BB' để xác định quan hệ song song và AB để kiểm vuông góc mặt bên."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2102,12 +2290,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Đoạn vuông góc chung phải nối hai đường và vuông góc với cả hai; khoảng cách đường song song mặt phẳng dùng hình chiếu của một điểm trên đường lên mặt phẳng. Ôn Bài 26; luyện THPT-TOP17-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Đoạn vuông góc chung phải nối hai đường và vuông góc với cả hai; khoảng cách đường song song mặt phẳng dùng hình chiếu của một điểm trên đường lên mặt phẳng. Ôn Bài 26; luyện THPT-TOP17-P05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "AB là đoạn vuông góc chung, cả hai khoảng cách đều bằng 6 cm."
+      },
+      {
+        "id": "B",
+        "text": "AO là đoạn vuông góc chung, cả hai khoảng cách đều bằng \\(3\\sqrt2\\,\\mathrm{cm}\\)."
+      },
+      {
+        "id": "C",
+        "text": "AO là đoạn vuông góc chung, \\(d(AA',BD)=3\\sqrt2\\,\\mathrm{cm}\\); \\(d(AA',(BCC'B'))=6\\,\\mathrm{cm}\\); hai đối tượng đích khác nhau."
+      },
+      {
+        "id": "D",
+        "text": "AC là đoạn vuông góc chung, \\(d(AA',BD)=6\\sqrt2\\,\\mathrm{cm}\\); khoảng cách đến mặt bên bằng 6 cm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B27-C01",
     "stem": "Lăng trụ có diện tích đáy \\(15\\,\\mathrm{cm}^2\\), chiều cao vuông góc 7 cm. Tính thể tích.",
     "answer_key": "\\(105\\,\\mathrm{cm}^3\\).",
     "worked_solution": "Thể tích lăng trụ bằng diện tích đáy nhân chiều cao vuông góc: \\(V=Sh=15\\cdot7=105\\) \\(\\mathrm{cm}^3\\). Không chia 3 như công thức hình chóp.",
@@ -2115,13 +2322,17 @@
       "G11-B27-PRISM_VOLUME"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Nhân diện tích đáy với chiều cao vuông góc."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2134,12 +2345,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chia cho 3, đã dùng công thức chóp cho lăng trụ. Ôn CĐ17 mục 2.1; luyện THPT-TOP17-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chia cho 3, đã dùng công thức chóp cho lăng trụ. Ôn CĐ17 mục 2.1; luyện THPT-TOP17-P07.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(35\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(105\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(22\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(210\\,\\mathrm{cm}^3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C02",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B27-C02",
     "stem": "Hình chóp có diện tích đáy \\(21\\,\\mathrm{cm}^2\\), chiều cao 6 cm. Tính thể tích.",
     "answer_key": "\\(42\\,\\mathrm{cm}^3\\).",
     "worked_solution": "Thể tích hình chóp bằng một phần ba tích diện tích đáy và chiều cao: \\(V=\\frac13Sh=\\frac13\\cdot21\\cdot6=42\\) \\(\\mathrm{cm}^3\\).",
@@ -2147,13 +2377,17 @@
       "G11-B27-PYRAMID_VOLUME"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Thể tích chóp bằng một phần ba tích S và h."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2166,12 +2400,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng \\(V=Sh\\), đã thiếu hệ số \\(\\frac13\\). Ôn CĐ17 mục 2.2; luyện THPT-TOP17-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng \\(V=Sh\\), đã thiếu hệ số \\(\\frac13\\). Ôn CĐ17 mục 2.2; luyện THPT-TOP17-P08.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(42\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(126\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(63\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(27\\,\\mathrm{cm}^3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C03",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B27-C03",
     "stem": "Một hộp chữ nhật có kích thước trong lòng hộp 2 m, 3 m, 4 m. Thể tích tối đa chứa được là bao nhiêu?",
     "answer_key": "\\(24\\,\\mathrm{m}^3\\).",
     "worked_solution": "Diện tích đáy là \\(2\\cdot3=6\\) \\(\\mathrm{m}^2\\), chiều cao 4 m. Thể tích trong lòng hộp là \\(6\\cdot4=24\\) \\(\\mathrm{m}^3\\). Ba kích thước cùng đơn vị mét nên thể tích tính bằng mét khối.",
@@ -2179,13 +2432,17 @@
       "G11-B27-BOX_VOLUME"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Nhân ba kích thước cùng đơn vị."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2198,12 +2455,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Thể tích phải tính bằng mét khối, không phải mét vuông. Ôn CĐ17 mục 2.3; luyện THPT-TOP17-P09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Thể tích phải tính bằng mét khối, không phải mét vuông. Ôn CĐ17 mục 2.3; luyện THPT-TOP17-P09.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(9\\,\\mathrm{m}^3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(26\\,\\mathrm{m}^3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(52\\,\\mathrm{m}^3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(24\\,\\mathrm{m}^3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C04",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B27-C04",
     "stem": "Chóp cụt đều có diện tích hai đáy \\(S=25\\,\\mathrm{cm}^2\\), \\(S'=4\\,\\mathrm{cm}^2\\), chiều cao 3 cm. Tính thể tích.",
     "answer_key": "\\(39\\,\\mathrm{cm}^3\\).",
     "worked_solution": "Dùng công thức \\(V=\\frac h3(S+S'+\\sqrt{SS'})\\). Ta có \\(\\sqrt{25\\cdot4}=10\\) \\(\\mathrm{cm}^2\\). Thay vào được \\(V=\\frac33(25+4+10)=39\\) \\(\\mathrm{cm}^3\\).",
@@ -2211,13 +2487,17 @@
       "G11-B27-FRUSTUM_VOLUME"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng \\(V=\\frac h3(S+S'+\\sqrt{SS'})\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2230,12 +2510,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng trung bình cộng hai diện tích, còn thiếu số hạng căn tích. Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng trung bình cộng hai diện tích, còn thiếu số hạng căn tích. Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(29\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(117\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(39\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(43{,}5\\,\\mathrm{cm}^3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C05",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B27-C05",
     "stem": "Thể tích khối là \\(0{,}36\\,\\mathrm{m}^3\\). Đổi ra lít.",
     "answer_key": "360 lít.",
     "worked_solution": "Vì 1 m bằng 10 dm nên \\(1\\,\\mathrm{m}^3=1000\\,\\mathrm{dm}^3\\), và một đề-xi-mét khối bằng một lít. Do đó \\(0{,}36\\cdot1000=360\\) lít.",
@@ -2243,13 +2542,17 @@
       "G11-B27-VOLUME_APPLICATION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Một mét khối bằng 1 000 đề-xi-mét khối; mỗi đề-xi-mét khối bằng một lít."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2262,12 +2565,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhân 100 hay 10, đổi theo ba chiều, không theo một chiều. Ôn CĐ17 mục 2.5; luyện THPT-TOP17-P11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhân 100 hay 10, đổi theo ba chiều, không theo một chiều. Ôn CĐ17 mục 2.5; luyện THPT-TOP17-P11.",
+    "options": [
+      {
+        "id": "A",
+        "text": "36 lít."
+      },
+      {
+        "id": "B",
+        "text": "360 lít."
+      },
+      {
+        "id": "C",
+        "text": "3 600 lít."
+      },
+      {
+        "id": "D",
+        "text": "0,36 lít."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B27-P01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B27-P01",
     "stem": "Một khối chóp có diện tích đáy \\(12\\,\\mathrm{dm}^2\\), thể tích \\(36\\,\\mathrm{dm}^3\\). Một khối lăng trụ có cùng diện tích đáy và cùng chiều cao với khối chóp. Tính chiều cao và thể tích lăng trụ. Nếu muốn lăng trụ có thể tích bằng khối chóp mà giữ nguyên diện tích đáy, chiều cao lăng trụ phải bằng bao nhiêu?",
     "answer_key": "Chiều cao chung 9 dm; thể tích lăng trụ \\(108\\,\\mathrm{dm}^3\\). Với cùng thể tích \\(36\\,\\mathrm{dm}^3\\), chiều cao lăng trụ là 3 dm.",
     "worked_solution": "Từ công thức thể tích chóp \\(V=\\frac13Sh\\), suy ra \\(h=\\frac{3V}{S}=\\frac{3\\cdot36}{12}=9\\) dm. Với cùng đáy và chiều cao, thể tích lăng trụ là \\(Sh=12\\cdot9=108\\,\\mathrm{dm}^3\\), gấp ba lần thể tích chóp. Nếu giữ nguyên diện tích đáy và yêu cầu thể tích bằng 36 dm³, chiều cao lăng trụ phải thỏa \\(12h'=36\\), nên \\(h'=3\\) dm. Hai công thức khác nhau ở hệ số một phần ba, không phải ở cách đo chiều cao.",
@@ -2276,13 +2598,17 @@
       "G11-B27-PRISM_VOLUME"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Tìm h từ công thức thể tích chóp trước; sau đó dùng V=Sh cho lăng trụ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2295,12 +2621,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng cùng công thức cho cả hai khối, đối chiếu hệ số 1/3 của hình chóp với lăng trụ. Ôn CĐ17 mục 2.1 và 2.2; luyện THPT-TOP17-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng cùng công thức cho cả hai khối, đối chiếu hệ số 1/3 của hình chóp với lăng trụ. Ôn CĐ17 mục 2.1 và 2.2; luyện THPT-TOP17-P08.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chiều cao chung 9 dm, thể tích lăng trụ \\(108\\,\\mathrm{dm}^3\\); để cùng thể tích, chiều cao lăng trụ là 3 dm."
+      },
+      {
+        "id": "B",
+        "text": "Chiều cao chung 3 dm, thể tích lăng trụ \\(36\\,\\mathrm{dm}^3\\); chiều cao lăng trụ vẫn là 3 dm."
+      },
+      {
+        "id": "C",
+        "text": "Chiều cao chung 9 dm, thể tích lăng trụ \\(36\\,\\mathrm{dm}^3\\); chiều cao lăng trụ vẫn là 9 dm."
+      },
+      {
+        "id": "D",
+        "text": "Chiều cao chung 9 dm, thể tích lăng trụ \\(108\\,\\mathrm{dm}^3\\); để cùng thể tích, chiều cao lăng trụ là 27 dm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B27-P02",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B27-P02",
     "stem": "Chóp cụt đều có diện tích hai đáy \\(S=16\\,\\mathrm{cm}^2\\), \\(S'=9\\,\\mathrm{cm}^2\\) và chiều cao vuông góc 6 cm. Tính thể tích.",
     "answer_key": "\\(74\\,\\mathrm{cm}^3\\).",
     "worked_solution": "Theo công thức \\(V=\\frac h3(S+S'+\\sqrt{SS'})\\), tính \\(\\sqrt{16\\cdot9}=12\\) \\(\\mathrm{cm}^2\\). Suy ra \\(V=\\frac63(16+9+12)=2\\cdot37=74\\) \\(\\mathrm{cm}^3\\).",
@@ -2308,13 +2653,17 @@
       "G11-B27-FRUSTUM_VOLUME"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Tính căn bậc hai của tích hai diện tích đáy, rồi cộng ba số hạng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2327,12 +2676,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên căn tích, kiểm công thức chóp cụt trước khi thay số. Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên căn tích, kiểm công thức chóp cụt trước khi thay số. Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(50\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(75\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(222\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(74\\,\\mathrm{cm}^3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B27-P03",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B27-P03",
     "stem": "Một bạn dùng cạnh bên xiên của chóp cụt đều không suy biến làm chiều cao trong công thức thể tích. Nhận xét và nêu cách xác định đúng chiều cao.",
     "answer_key": "Sai; chiều cao là khoảng cách vuông góc giữa hai mặt đáy song song.",
     "worked_solution": "Dựng đường vuông góc từ một điểm của đáy trên đến mặt phẳng đáy dưới; độ dài đoạn vuông góc là h. Cạnh bên xiên nối hai đáy nhưng có thành phần ngang khác 0, nên dài hơn h theo định lí Pitago. Không dùng cạnh xiên thay chiều cao.",
@@ -2340,13 +2708,17 @@
       "G11-B27-FRUSTUM_VOLUME"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Chiều cao phải vuông góc hai mặt đáy."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2359,12 +2731,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy cạnh xiên, đoạn đó dài hơn khoảng cách vuông góc. Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy cạnh xiên, đoạn đó dài hơn khoảng cách vuông góc. Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đúng; chiều cao luôn là độ dài cạnh bên."
+      },
+      {
+        "id": "B",
+        "text": "Sai; chiều cao là trung bình cộng hai cạnh đáy."
+      },
+      {
+        "id": "C",
+        "text": "Sai; chiều cao là khoảng cách vuông góc giữa hai mặt đáy song song."
+      },
+      {
+        "id": "D",
+        "text": "Đúng; bất cứ đoạn nối hai đáy đều có độ dài bằng chiều cao."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-CHVII-C01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-CHVII-C01",
     "stem": "Đỉnh S của hình chóp cao 6 cm so với đáy có diện tích \\(24\\,\\mathrm{cm}^2\\). Một bạn dùng cạnh xiên 10 cm tính thể tích. Chọn chiều cao và tính đúng thể tích.",
     "answer_key": "\\(h=6\\,\\mathrm{cm}\\), \\(V=48\\,\\mathrm{cm}^3\\).",
     "worked_solution": "Chiều cao là khoảng cách vuông góc từ S tới mặt đáy, bằng 6 cm, không phải cạnh xiên 10 cm. Dùng \\(V=\\frac13Sh=\\frac13\\cdot24\\cdot6=48\\) \\(\\mathrm{cm}^3\\).",
@@ -2372,13 +2763,17 @@
       "G11-CHVII-INTEGRATED"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Độ cao vuông góc đã cho là 6 cm; chọn công thức khối chóp."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2391,8 +2786,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Cạnh 10 cm là đoạn xiên; dùng chiều cao 6 cm trong công thức thể tích chóp. Ôn CĐ17 mục 2.6; luyện THPT-TOP17-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Cạnh 10 cm là đoạn xiên; dùng chiều cao 6 cm trong công thức thể tích chóp. Ôn CĐ17 mục 2.6; luyện THPT-TOP17-P12.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(h=10\\,\\mathrm{cm},\\ V=80\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(h=6\\,\\mathrm{cm},\\ V=48\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(h=6\\,\\mathrm{cm},\\ V=144\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(h=10\\,\\mathrm{cm},\\ V=240\\,\\mathrm{cm}^3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-B22-KFT01",
