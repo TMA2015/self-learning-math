@@ -3688,8 +3688,8 @@
         "THPT-TOP08-P02"
       ],
       "practice_orders": [
+        4,
         2,
-        3,
         16
       ]
     }
@@ -3710,8 +3710,8 @@
         "THPT-G11-CHV-B15-P05"
       ],
       "practice_orders": [
-        4,
-        2
+        5,
+        4
       ]
     }
   },
