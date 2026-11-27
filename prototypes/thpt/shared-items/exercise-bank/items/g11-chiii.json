@@ -1,7 +1,7 @@
 [
   {
     "item_id": "THPT-G11-B08-C01",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-C01",
     "stem": "Trong bảng ghép nhóm, các nhóm \\([0;5),[5;10),[10;15)\\) có tần số lần lượt 3, 7, 5. Cỡ mẫu n là bao nhiêu?",
     "answer_key": "\\(n=15\\).",
     "worked_solution": "Mỗi tần số là số quan sát thuộc nhóm đó. Các nhóm không giao nhau và chứa toàn bộ mẫu, nên \\(n=3+7+5=15\\). Cỡ mẫu là số quan sát, không phải số nhóm.",
@@ -9,13 +9,17 @@
       "G11-B08-GROUPED-DEFINITION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Cộng tất cả tần số."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -25,14 +29,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy 3 làm cỡ mẫu, phân biệt số nhóm với số quan sát. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy 3 làm cỡ mẫu, phân biệt số nhóm với số quan sát. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "7"
+      },
+      {
+        "id": "B",
+        "text": "12"
+      },
+      {
+        "id": "C",
+        "text": "15"
+      },
+      {
+        "id": "D",
+        "text": "3"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B08-C02",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-C02",
     "stem": "Trong cách chia hai nhóm \\([0;10),[10;20)\\), số liệu đúng bằng 10 thuộc nhóm nào?",
     "answer_key": "\\([10;20)\\).",
     "worked_solution": "Nhóm thứ nhất nhận các số từ 0 đến dưới 10, không nhận 10. Nhóm thứ hai nhận đầu mút trái 10, nên số liệu thuộc \\([10;20)\\).",
@@ -40,13 +64,17 @@
       "G11-B08-CLASS-BOUNDARIES"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Xét đầu trái đóng và đầu phải mở."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -56,14 +84,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu xếp 10 vào nhóm trước, kiểm dấu ngoặc ở hai đầu. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu xếp 10 vào nhóm trước, kiểm dấu ngoặc ở hai đầu. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "[0;10)"
+      },
+      {
+        "id": "B",
+        "text": "[10;20)"
+      },
+      {
+        "id": "C",
+        "text": "Cả hai nhóm"
+      },
+      {
+        "id": "D",
+        "text": "Không thuộc nhóm nào"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B08-C03",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-C03",
     "stem": "Độ dài nhóm \\([12;18)\\) là bao nhiêu?",
     "answer_key": "6.",
     "worked_solution": "Độ dài nhóm bằng đầu mút phải trừ đầu mút trái: \\(18-12=6\\). Đây là độ rộng khoảng, không phải số quan sát.",
@@ -71,13 +119,17 @@
       "G11-B08-GROUP-WIDTH"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Lấy cận phải trừ cận trái."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -87,14 +139,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Độ rộng khác tần số và phải dương. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Độ rộng khác tần số và phải dương. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "15"
+      },
+      {
+        "id": "B",
+        "text": "18"
+      },
+      {
+        "id": "C",
+        "text": "12"
+      },
+      {
+        "id": "D",
+        "text": "6"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B08-C04",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-C04",
     "stem": "Các nhóm có tần số lần lượt 2, 4, 5, 3. Tìm tần số nhóm thứ ba và cỡ mẫu.",
     "answer_key": "Tần số 5; \\(n=14\\).",
     "worked_solution": "Tần số nhóm thứ ba là 5. Cỡ mẫu bằng tổng bốn tần số: \\(n=2+4+5+3=14\\).",
@@ -102,13 +174,17 @@
       "G11-B08-FREQUENCY-TABLE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Đọc tần số thứ ba rồi cộng tất cả tần số."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -118,14 +194,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Đừng lấy số nhóm làm cỡ mẫu. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Đừng lấy số nhóm làm cỡ mẫu. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "5; 14"
+      },
+      {
+        "id": "B",
+        "text": "5; 11"
+      },
+      {
+        "id": "C",
+        "text": "3; 14"
+      },
+      {
+        "id": "D",
+        "text": "5; 5"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B08-C05",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-C05",
     "stem": "Từ bảng ghép nhóm \\([0;10),[10;20)\\) có tần số lần lượt 4 và 6, có biết chính xác 10 giá trị ban đầu không?",
     "answer_key": "Không.",
     "worked_solution": "Bảng cho biết có 4 giá trị trong nhóm đầu và 6 giá trị trong nhóm sau, nhưng không cho biết từng giá trị cụ thể. Chẳng hạn, trong nhóm đầu, số 2 có thể thay bằng số 3 mà tần số nhóm không đổi. Vì vậy không thể khôi phục chính xác mẫu gốc chỉ từ bảng.",
@@ -133,13 +229,17 @@
       "G11-B08-INTERPRETATION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Bảng chỉ giữ khoảng và số lượng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -149,14 +249,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu gán một giá trị cụ thể cho mọi quan sát cùng nhóm, kiểm xem giá trị đó có được cung cấp không. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu gán một giá trị cụ thể cho mọi quan sát cùng nhóm, kiểm xem giá trị đó có được cung cấp không. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P07.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, tất cả là các trung điểm"
+      },
+      {
+        "id": "B",
+        "text": "Có, nếu biết cỡ mẫu"
+      },
+      {
+        "id": "C",
+        "text": "Không, bảng chỉ cho biết số lượng theo nhóm"
+      },
+      {
+        "id": "D",
+        "text": "Không, vì tổng tần số không thể tính được"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B08-P01",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-P01",
     "stem": "Ghép các số 5, 10, 10, 19, 20, 29 vào các nhóm \\([0;10),[10;20),[20;30)\\). Lập bảng tần số.",
     "answer_key": "Tần số lần lượt 1; 3; 2.",
     "worked_solution": "Nhóm \\([0;10)\\) chứa 5 (1 quan sát). Nhóm \\([10;20)\\) chứa 10, 10, 19 (3 quan sát; hai số 10 đều được tính). Nhóm \\([20;30)\\) chứa 20, 29 (2 quan sát). Tần số lần lượt là 1, 3, 2; kiểm tổng bằng 6.",
@@ -164,13 +284,17 @@
       "G11-B08-CLASS-BOUNDARIES"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Xếp từng số vào khoảng nửa kín, kể cả các giá trị lặp."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -180,14 +304,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Số 10 và 20 thuộc nhóm bắt đầu tại chúng; kiểm tổng bằng 6. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Số 10 và 20 thuộc nhóm bắt đầu tại chúng; kiểm tổng bằng 6. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "2; 2; 2"
+      },
+      {
+        "id": "B",
+        "text": "1; 3; 2"
+      },
+      {
+        "id": "C",
+        "text": "1; 2; 3"
+      },
+      {
+        "id": "D",
+        "text": "3; 1; 2"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B08-P02",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-P02",
     "stem": "Bốn nhóm \\([7;11),[11;15),[15;19),[19;23)\\) có cùng độ rộng không? Có chồng lấn không?",
     "answer_key": "Đều rộng 4, liền nhau và không chồng lấn.",
     "worked_solution": "Độ rộng lần lượt là \\(11-7=15-11=19-15=23-19=4\\). Hai nhóm kề nhau chung mốc biên, nhưng nhóm trước không nhận mốc ở đầu phải và nhóm sau nhận mốc ở đầu trái. Vì thế không có số liệu thuộc đồng thời hai nhóm.",
@@ -195,13 +339,17 @@
       "G11-B08-GROUP-WIDTH"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính độ rộng và kiểm các biên chung."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -211,14 +359,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đếm một mốc biên vào cả hai nhóm, kiểm đầu mút đóng và mở. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đếm một mốc biên vào cả hai nhóm, kiểm đầu mút đóng và mở. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đều rộng 4 nhưng chồng lấn tại biên"
+      },
+      {
+        "id": "B",
+        "text": "Đều rộng 3 và không chồng lấn"
+      },
+      {
+        "id": "C",
+        "text": "Không cùng độ rộng"
+      },
+      {
+        "id": "D",
+        "text": "Đều rộng 4, liền nhau, không chồng lấn"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B08-P03",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-P03",
     "stem": "Các điểm 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 được ghép vào các nhóm \\([1;4),[4;7),[7;11)\\). Lập bảng tần số.",
     "answer_key": "Tần số lần lượt 3; 3; 4.",
     "worked_solution": "Nhóm đầu chứa 1, 2, 3; nhóm thứ hai chứa 4, 5, 6; nhóm cuối chứa 7, 8, 9, 10. Tần số tương ứng là 3, 3, 4. Tổng bằng 10, không bỏ sót hay đếm trùng quan sát.",
@@ -226,13 +394,17 @@
       "G11-B08-FREQUENCY-TABLE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Đếm theo ba khoảng, chú ý số 4 và 7."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -242,14 +414,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Hai giá trị ở biên trái thuộc nhóm mới; tổng phải bằng 10. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Hai giá trị ở biên trái thuộc nhóm mới; tổng phải bằng 10. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3; 3; 4"
+      },
+      {
+        "id": "B",
+        "text": "4; 3; 3"
+      },
+      {
+        "id": "C",
+        "text": "3; 4; 3"
+      },
+      {
+        "id": "D",
+        "text": "4; 4; 2"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B08-P04",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-P04",
     "stem": "Tần số các khoảng điểm \\([0;4),[4;8),[8;12)\\) lần lượt là 6, 9, 5. Tính tỉ lệ quan sát thuộc nhóm \\([4;8)\\).",
     "answer_key": "\\(\\frac9{20}=45\\%\\).",
     "worked_solution": "Cỡ mẫu \\(n=6+9+5=20\\). Có 9 quan sát thuộc nhóm thứ hai, nên tỉ lệ là \\(\\frac9{20}=0{,}45=45\\%\\). Tỉ lệ này chỉ nói về toàn khoảng, không cho biết từng điểm cụ thể.",
@@ -257,13 +449,17 @@
       "G11-B08-INTERPRETATION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Chia tần số nhóm thứ hai cho tổng tần số."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -273,14 +469,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chia 9 cho 3, nhớ mẫu số là số quan sát chứ không phải số nhóm. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chia 9 cho 3, nhớ mẫu số là số quan sát chứ không phải số nhóm. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C04.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "9%"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{9}{11}\\)"
+      },
+      {
+        "id": "C",
+        "text": "45%"
+      },
+      {
+        "id": "D",
+        "text": "55%"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B08-P05",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-P05",
     "stem": "Có 20 quan sát và bốn nhóm có tần số lần lượt 4, 8, 6 và một tần số chưa biết. Tìm tần số cuối.",
     "answer_key": "2.",
     "worked_solution": "Tổng tần số phải bằng 20. Ba nhóm đầu có \\(4+8+6=18\\) quan sát, nên nhóm cuối có \\(20-18=2\\) quan sát. Kiểm tổng bằng 20.",
@@ -288,13 +504,17 @@
       "G11-B08-FREQUENCY-TABLE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Lấy cỡ mẫu trừ tổng ba tần số đã biết."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -304,14 +524,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Kiểm tổng sau khi điền bằng 20. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Kiểm tổng sau khi điền bằng 20. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "18"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B08-P06",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-P06",
     "stem": "Một mẫu gồm 5 số nguyên không âm được ghép vào ba nhóm \\([0;3),[3;6),[6;9)\\), có tần số lần lượt 1, 2, 2. (a) Có bao nhiêu quan sát chắc chắn không nhỏ hơn 6? (b) Số quan sát không nhỏ hơn 4 có thể ít nhất và nhiều nhất là bao nhiêu? (c) Hãy dựng hai mẫu có cùng bảng tần số đã cho nhưng lần lượt đạt hai số lượng ở (b).",
     "answer_key": "(a) 2. (b) Ít nhất 2, nhiều nhất 4. (c) Ví dụ hai mẫu \\(1,3,3,6,7\\) và \\(1,4,5,6,7\\).",
     "worked_solution": "Nhóm \\([6;9)\\) chứa đúng 2 quan sát và cả hai đều không nhỏ hơn 6; hai nhóm trước chỉ chứa giá trị nhỏ hơn 6. Vậy (a) có đúng 2 quan sát. Với ngưỡng 4, cả hai quan sát của nhóm \\([6;9)\\) chắc chắn đạt ngưỡng, còn quan sát của nhóm \\([0;3)\\) chắc chắn không đạt. Hai quan sát ở nhóm \\([3;6)\\) có thể bằng 3 (không đạt) hoặc bằng 4, 5 (đạt); bảng ghép nhóm không cho biết cụ thể. Do đó ít nhất 2 và nhiều nhất 4 quan sát đạt ngưỡng. Mẫu \\(1,3,3,6,7\\) có tần số 1, 2, 2 và đúng 2 quan sát không nhỏ hơn 4. Mẫu \\(1,4,5,6,7\\) cũng có tần số 1, 2, 2 nhưng có 4 quan sát không nhỏ hơn 4. Hai ví dụ chứng minh cả hai giới hạn đều có thể đạt. Khi ngưỡng nằm bên trong một nhóm thay vì đúng biên nhóm, thường không thể xác định chính xác số quan sát đạt ngưỡng chỉ từ bảng ghép nhóm.",
@@ -319,14 +559,18 @@
       "G11-B08-INTERPRETATION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Xem từng nhóm: mọi giá trị đạt ngưỡng, không giá trị nào đạt, hay chỉ một phần có thể đạt?",
       "Để đạt hai giới hạn, chọn các số của nhóm giữa lần lượt dưới 4 và không dưới 4."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -336,14 +580,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Bảng ghép nhóm giữ số lượng trong từng khoảng nhưng không giữ từng giá trị. Kiểm ngưỡng trùng biên nhóm hay nằm trong nhóm trước khi kết luận số lượng. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Bảng ghép nhóm giữ số lượng trong từng khoảng nhưng không giữ từng giá trị. Kiểm ngưỡng trùng biên nhóm hay nằm trong nhóm trước khi kết luận số lượng. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(a) 2; (b) 2–4; (c) (1,3,3,6,7) và (1,4,5,6,7)"
+      },
+      {
+        "id": "B",
+        "text": "(a) 2; (b) 2–4; (c) (1,3,3,6,7) và (1,3,4,6,7)"
+      },
+      {
+        "id": "C",
+        "text": "(a) 2; (b) 0–4; (c) (1,3,3,6,7) và (1,4,5,6,7)"
+      },
+      {
+        "id": "D",
+        "text": "(a) 4; (b) 2–4; (c) (1,3,3,6,7) và (1,4,5,6,7)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B08-P07",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-P07",
     "stem": "Bảng chiều cao (cm) có các nhóm \\([150;155),[155;160),[160;165)\\) với tần số 6, 10, 4. Có thể kết luận đúng 10 người cao 157,5 cm không?",
     "answer_key": "Không.",
     "worked_solution": "Tần số 10 cho biết có 10 người cao từ 155 cm đến dưới 160 cm. Giá trị đại diện của nhóm là \\(\\frac{155+160}{2}=157{,}5\\) cm, nhưng từng người có thể có chiều cao khác trung điểm. Không có đủ dữ kiện để biết bao nhiêu người cao đúng 157,5 cm.",
@@ -351,13 +615,17 @@
       "G11-B08-INTERPRETATION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Trung điểm chỉ đại diện nhóm, không phải giá trị thô."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -367,14 +635,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không gán tất cả người trong khoảng chiều cao bằng trung điểm. Ôn CĐ22 mục 2.2; luyện THPT-G11-TOPSTAT-ADD06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không gán tất cả người trong khoảng chiều cao bằng trung điểm. Ôn CĐ22 mục 2.2; luyện THPT-G11-TOPSTAT-ADD06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, vì 157,5 là trung điểm"
+      },
+      {
+        "id": "B",
+        "text": "Có, vì tần số nhóm là 10"
+      },
+      {
+        "id": "C",
+        "text": "Không, chỉ biết 10 người thuộc nhóm [155;160)"
+      },
+      {
+        "id": "D",
+        "text": "Không, vì không thể biết tần số nhóm"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B08-P08",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-P08",
     "stem": "Một bảng khảo sát thu nhập có nhóm “dưới 15 triệu đồng”, không quy định cận dưới hữu hạn của thu nhập trong mô hình. Có đủ dữ kiện tính trung điểm nhóm theo công thức \\(\\frac{a+b}{2}\\) không?",
     "answer_key": "Không, thiếu cận dưới hữu hạn được quy định.",
     "worked_solution": "Công thức \\(\\frac{a+b}{2}\\) cần biết hai cận hữu hạn a, b. Đề chỉ cho cận trên 15 triệu đồng. Không tự đặt cận dưới bằng 0 khi mô hình chưa nêu, chẳng hạn thu nhập ròng có thể âm. Có thể biết tần số nhóm nếu bảng cung cấp, nhưng chưa đủ dữ kiện xác định giá trị đại diện theo trung điểm.",
@@ -382,13 +670,17 @@
       "G11-B08-GROUPED-DEFINITION"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Kiểm đã biết cả hai cận hữu hạn chưa."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -398,14 +690,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không tự đặt cận còn thiếu khi đề chưa quy định. Ôn CĐ22 mục 2.1; luyện THPT-G11-B09-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không tự đặt cận còn thiếu khi đề chưa quy định. Ôn CĐ22 mục 2.1; luyện THPT-G11-B09-C01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, trung điểm là 7,5 triệu"
+      },
+      {
+        "id": "B",
+        "text": "Không, vì chưa có cận dưới hữu hạn được quy định"
+      },
+      {
+        "id": "C",
+        "text": "Có, trung điểm là 15 triệu"
+      },
+      {
+        "id": "D",
+        "text": "Không, vì không có tần số nhóm"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-C01",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-C01",
     "stem": "Nhóm \\([20;30)\\) có giá trị đại diện bằng bao nhiêu?",
     "answer_key": "25.",
     "worked_solution": "Giá trị đại diện là trung điểm của nhóm: \\(\\frac{20+30}{2}=25\\). Giá trị này không nhất thiết xuất hiện trong mẫu gốc.",
@@ -413,13 +725,17 @@
       "G11-B09-REPRESENTATIVE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Lấy trung bình cộng hai đầu mút."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -429,14 +745,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Trung điểm không nhất thiết là một quan sát thực tế. Ôn CĐ22 mục 2.2; luyện THPT-G11-TOPSTAT-ADD06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Trung điểm không nhất thiết là một quan sát thực tế. Ôn CĐ22 mục 2.2; luyện THPT-G11-TOPSTAT-ADD06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "20"
+      },
+      {
+        "id": "B",
+        "text": "30"
+      },
+      {
+        "id": "C",
+        "text": "10"
+      },
+      {
+        "id": "D",
+        "text": "25"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-C02",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-C02",
     "stem": "Bảng ghép nhóm \\([0;10),[10;20)\\) có tần số lần lượt 2, 6. Tính số trung bình ghép nhóm.",
     "answer_key": "\\(12{,}5\\).",
     "worked_solution": "Giá trị đại diện hai nhóm là 5 và 15, với tần số 2 và 6. Cỡ mẫu là \\(2+6=8\\). Số trung bình ghép nhóm là \\(\\bar x=\\frac{2\\cdot5+6\\cdot15}{8}=\\frac{100}{8}=12{,}5\\). Đây là giá trị tính từ bảng ghép nhóm, không khẳng định trung bình chính xác của dữ liệu gốc.",
@@ -444,13 +780,17 @@
       "G11-B09-GROUPED-MEAN"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Nhân mỗi trung điểm với tần số, chia tổng tần số."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -460,14 +800,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy trung bình đơn giản của hai trung điểm khi tần số khác nhau. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không lấy trung bình đơn giản của hai trung điểm khi tần số khác nhau. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "12,5"
+      },
+      {
+        "id": "B",
+        "text": "10"
+      },
+      {
+        "id": "C",
+        "text": "15"
+      },
+      {
+        "id": "D",
+        "text": "7,5"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-C03",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-C03",
     "stem": "Bốn nhóm có tần số lần lượt 3, 5, 2, 4. Tìm các tần số tích lũy.",
     "answer_key": "3; 8; 10; 14.",
     "worked_solution": "Tần số tích lũy đến một nhóm bằng tổng tần số từ nhóm đầu đến nhóm đó. Lần lượt được 3, \\(3+5=8\\), \\(8+2=10\\), \\(10+4=14\\). Giá trị cuối bằng cỡ mẫu.",
@@ -475,13 +835,17 @@
       "G11-B09-CUMULATIVE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Cộng dồn từ trái sang phải."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -491,14 +855,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tần số tích lũy cuối phải bằng cỡ mẫu 14. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Tần số tích lũy cuối phải bằng cỡ mẫu 14. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3; 5; 2; 4"
+      },
+      {
+        "id": "B",
+        "text": "3; 8; 10; 14"
+      },
+      {
+        "id": "C",
+        "text": "3; 8; 2; 6"
+      },
+      {
+        "id": "D",
+        "text": "3; 8; 13; 17"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-C04",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-C04",
     "stem": "Mẫu A có các nhóm \\([0;10),[10;20),[20;30),[30;40)\\), tần số lần lượt 4, 8, 6, 2. Nhóm dùng để nội suy trung vị là nhóm nào?",
     "answer_key": "\\([10;20)\\).",
     "worked_solution": "Cỡ mẫu \\(n=20\\), vị trí nội suy trung vị là \\(\\frac n2=10\\). Tần số tích lũy là 4, 12, 18, 20. Nhóm đầu chỉ chứa 4 vị trí đầu; đến hết nhóm hai đã có 12 vị trí. Vì vậy dùng nhóm \\([10;20)\\).",
@@ -506,13 +890,17 @@
       "G11-B09-GROUPED-MEDIAN"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tìm vị trí \\(\\frac n2\\) rồi đọc tần số tích lũy."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -522,14 +910,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không chọn nhóm có tần số lớn nhất chỉ vì nhóm đó đông nhất. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không chọn nhóm có tần số lớn nhất chỉ vì nhóm đó đông nhất. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "[0;10)"
+      },
+      {
+        "id": "B",
+        "text": "[20;30)"
+      },
+      {
+        "id": "C",
+        "text": "[10;20)"
+      },
+      {
+        "id": "D",
+        "text": "[30;40)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-C05",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-C05",
     "stem": "Nếu các nhóm không cùng độ rộng, có được áp dụng trực tiếp công thức mốt theo hiệu tần số trong SGK Toán 11 không?",
     "answer_key": "Không.",
     "worked_solution": "Công thức mốt dựa trên tần số của nhóm mốt và hai nhóm kề trong nguồn đang xét áp dụng cho các nhóm cùng độ rộng. Khi độ rộng khác nhau, tần số lớn có thể do khoảng rộng hơn, không thể dùng trực tiếp công thức đó. Cần kiểm điều kiện áp dụng trước khi tính.",
@@ -537,13 +945,17 @@
       "G11-B09-MODE-CONDITIONS"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Kiểm độ rộng nhóm trước khi dùng công thức."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -553,14 +965,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không áp dụng máy móc công thức hiệu tần số cho độ rộng khác nhau. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không áp dụng máy móc công thức hiệu tần số cho độ rộng khác nhau. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-P04.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, luôn áp dụng trực tiếp"
+      },
+      {
+        "id": "B",
+        "text": "Có, chỉ cần biết tần số lớn nhất"
+      },
+      {
+        "id": "C",
+        "text": "Có, nếu cỡ mẫu chẵn"
+      },
+      {
+        "id": "D",
+        "text": "Không, công thức đang xét cần các nhóm cùng độ rộng"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-P01",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P01",
     "stem": "Mẫu A có các nhóm \\([0;10),[10;20),[20;30),[30;40)\\), tần số lần lượt 4, 8, 6, 2. Tính số trung bình ghép nhóm.",
     "answer_key": "18.",
     "worked_solution": "Các giá trị đại diện là 5, 15, 25, 35. Cỡ mẫu là \\(4+8+6+2=20\\). Tổng có trọng số là \\(4\\cdot5+8\\cdot15+6\\cdot25+2\\cdot35=360\\). Vậy \\(\\bar x=\\frac{360}{20}=18\\).",
@@ -568,13 +1000,17 @@
       "G11-B09-GROUPED-MEAN"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Tính bốn trung điểm và tổng có trọng số."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -584,14 +1020,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Chia cho cỡ mẫu 20, không chia 4 nhóm. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Chia cho cỡ mẫu 20, không chia 4 nhóm. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "18"
+      },
+      {
+        "id": "B",
+        "text": "20"
+      },
+      {
+        "id": "C",
+        "text": "15"
+      },
+      {
+        "id": "D",
+        "text": "16"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-P02",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P02",
     "stem": "Mẫu A có các nhóm \\([0;10),[10;20),[20;30),[30;40)\\), tần số lần lượt 4, 8, 6, 2. Ước lượng trung vị bằng nội suy.",
     "answer_key": "\\(17{,}5\\).",
     "worked_solution": "Cỡ mẫu \\(n=20\\), vị trí nội suy \\(\\frac n2=10\\). Tích lũy là 4, 12, 18, 20 nên dùng nhóm \\([10;20)\\). Trước nhóm có 4 quan sát, nhóm có 8 quan sát và độ rộng 10. Theo công thức nội suy, \\(M_e=10+\\frac{10-4}{8}\\cdot10=17{,}5\\). Đây là trung vị ghép nhóm, không nhất thiết bằng trung vị dữ liệu gốc.",
@@ -599,13 +1055,17 @@
       "G11-B09-GROUPED-MEDIAN"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Xác định vị trí thứ 10, tần số trước nhóm và độ rộng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -615,14 +1075,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy trung điểm 15 thay cho kết quả nội suy. Ôn CĐ22 mục 2.3; luyện THPT-G11-TOPSTAT-ADD07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không lấy trung điểm 15 thay cho kết quả nội suy. Ôn CĐ22 mục 2.3; luyện THPT-G11-TOPSTAT-ADD07.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "15"
+      },
+      {
+        "id": "B",
+        "text": "17,5"
+      },
+      {
+        "id": "C",
+        "text": "20"
+      },
+      {
+        "id": "D",
+        "text": "22,5"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-P03",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P03",
     "stem": "Mẫu A có các nhóm \\([0;10),[10;20),[20;30),[30;40)\\), tần số lần lượt 4, 8, 6, 2. Tính \\(Q_1,Q_3\\) theo nội suy SGK.",
     "answer_key": "\\(Q_1=11{,}25;\\ Q_3=25\\).",
     "worked_solution": "Cỡ mẫu 20; tích lũy 4, 12, 18, 20. Vị trí \\(\\frac n4=5\\) nằm trong nhóm \\([10;20)\\), nên \\(Q_1=10+\\frac{5-4}{8}\\cdot10=11{,}25\\). Vị trí \\(\\frac{3n}{4}=15\\) nằm trong nhóm \\([20;30)\\), nên \\(Q_3=20+\\frac{15-12}{6}\\cdot10=25\\).",
@@ -630,13 +1110,17 @@
       "G11-B09-GROUPED-QUARTILES"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Định vị \\(\\frac n4\\) và \\(\\frac{3n}{4}\\) trước khi nội suy."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -646,14 +1130,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không dùng cùng nhóm nếu hai vị trí thuộc hai nhóm khác nhau. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không dùng cùng nhóm nếu hai vị trí thuộc hai nhóm khác nhau. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "10; 25"
+      },
+      {
+        "id": "B",
+        "text": "11,25; 30"
+      },
+      {
+        "id": "C",
+        "text": "11,25; 25"
+      },
+      {
+        "id": "D",
+        "text": "15; 25"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-P04",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P04",
     "stem": "Mẫu A có các nhóm \\([0;10),[10;20),[20;30),[30;40)\\), tần số lần lượt 4, 8, 6, 2. Tìm mốt ghép nhóm.",
     "answer_key": "\\(M_o=\\frac{50}{3}\\approx16{,}67\\).",
     "worked_solution": "Các nhóm cùng độ rộng 10. Nhóm mốt \\([10;20)\\) có tần số 8, nhóm kề trái 4, nhóm kề phải 6. Mức chênh lệch lần lượt là 4 và 2. Nội suy \\(M_o=10+\\frac{8-4}{(8-4)+(8-6)}\\cdot10=\\frac{50}{3}\\approx16{,}67\\). Đây là mốt ước lượng từ bảng, không khẳng định mốt của dữ liệu thô.",
@@ -661,13 +1165,17 @@
       "G11-B09-GROUPED-MODE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Dùng hiệu giữa tần số nhóm mốt và từng nhóm kề."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -677,14 +1185,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không mặc định mốt bằng trung điểm; kiểm nhóm cùng độ rộng. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-C05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không mặc định mốt bằng trung điểm; kiểm nhóm cùng độ rộng. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-C05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "15"
+      },
+      {
+        "id": "B",
+        "text": "20"
+      },
+      {
+        "id": "C",
+        "text": "18"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{50}{3}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-P05",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P05",
     "stem": "Mẫu B có các nhóm \\([10;15),[15;20),[20;25),[25;30)\\), tần số lần lượt 3, 6, 9, 2. Tính số trung bình ghép nhóm.",
     "answer_key": "20.",
     "worked_solution": "Các trung điểm lần lượt là 12,5; 17,5; 22,5; 27,5. Tổng có trọng số \\(3\\cdot12{,}5+6\\cdot17{,}5+9\\cdot22{,}5+2\\cdot27{,}5=400\\). Cỡ mẫu 20 nên \\(\\bar x=\\frac{400}{20}=20\\).",
@@ -692,13 +1220,17 @@
       "G11-B09-GROUPED-MEAN"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Tính trung điểm và nhân với tần số tương ứng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -708,14 +1240,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tổng trọng số chia 20, không chia 4. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Tổng trọng số chia 20, không chia 4. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "20"
+      },
+      {
+        "id": "B",
+        "text": "22,5"
+      },
+      {
+        "id": "C",
+        "text": "17,5"
+      },
+      {
+        "id": "D",
+        "text": "21"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-P06",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P06",
     "stem": "Mẫu B có các nhóm \\([10;15),[15;20),[20;25),[25;30)\\), tần số lần lượt 3, 6, 9, 2. Lập bảng tần số tích lũy và xác định nhóm dùng để tính \\(Q_3\\).",
     "answer_key": "Tích lũy 3; 9; 18; 20; nhóm \\([20;25)\\).",
     "worked_solution": "Cộng dồn tần số được 3, \\(3+6=9\\), \\(9+9=18\\), \\(18+2=20\\). Vị trí \\(\\frac{3n}{4}=\\frac{3\\cdot20}{4}=15\\) lớn hơn 9 và không vượt 18, nên dùng nhóm thứ ba \\([20;25)\\).",
@@ -723,13 +1275,17 @@
       "G11-B09-CUMULATIVE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Cộng dồn rồi tìm vị trí \\(\\frac{3n}{4}\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -739,14 +1295,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Vị trí nội suy tính theo số quan sát, không theo số nhóm. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Vị trí nội suy tính theo số quan sát, không theo số nhóm. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3; 9; 18; 20; nhóm [15;20)"
+      },
+      {
+        "id": "B",
+        "text": "3; 9; 18; 20; nhóm [20;25)"
+      },
+      {
+        "id": "C",
+        "text": "3; 6; 9; 2; nhóm [20;25)"
+      },
+      {
+        "id": "D",
+        "text": "3; 9; 18; 20; nhóm [25;30)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-P07",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P07",
     "stem": "Mẫu B có các nhóm \\([10;15),[15;20),[20;25),[25;30)\\), tần số lần lượt 3, 6, 9, 2. Tính trung vị ghép nhóm.",
     "answer_key": "\\(M_e=\\frac{185}{9}\\approx20{,}56\\).",
     "worked_solution": "Cỡ mẫu 20, vị trí \\(\\frac n2=10\\). Tích lũy 3, 9, 18, 20 nên dùng nhóm \\([20;25)\\), có tần số 9, độ rộng 5, trước nhóm có 9 quan sát. Nội suy \\(M_e=20+\\frac{10-9}{9}\\cdot5=\\frac{185}{9}\\approx20{,}56\\).",
@@ -754,13 +1330,17 @@
       "G11-B09-GROUPED-MEDIAN"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Xác định nhóm chứa vị trí thứ 10 và tần số trước nhóm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -770,14 +1350,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Dùng độ rộng 5 và tần số 9; không mặc định lấy trung điểm. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Dùng độ rộng 5 và tần số 9; không mặc định lấy trung điểm. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "22,5"
+      },
+      {
+        "id": "B",
+        "text": "20"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{185}{9}\\)"
+      },
+      {
+        "id": "D",
+        "text": "25"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-P08",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P08",
     "stem": "Mẫu C có các nhóm \\([40;50),[50;60),[60;70),[70;80)\\), tần số lần lượt 2, 5, 8, 5. Tìm \\(Q_1,Q_3\\) theo nội suy SGK.",
     "answer_key": "\\(Q_1=56;\\ Q_3=70\\).",
     "worked_solution": "Cỡ mẫu 20; tích lũy 2, 7, 15, 20. Vị trí thứ 5 dùng nhóm \\([50;60)\\), nên \\(Q_1=50+\\frac{5-2}{5}\\cdot10=56\\). Vị trí thứ 15 đúng bằng tần số tích lũy nhóm thứ ba. Nội suy từ nhóm \\([60;70)\\) cho \\(Q_3=60+\\frac{15-7}{8}\\cdot10=70\\). Nếu tính từ đầu nhóm liền sau với tần số trước bằng 15, cũng được 70. Đây là biên chung.",
@@ -785,13 +1385,17 @@
       "G11-B09-GROUPED-QUARTILES"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Tính tích lũy và xét trường hợp vị trí đúng mốc tích lũy."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -801,14 +1405,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Khi vị trí đúng mốc tích lũy và hai nhóm liền nhau, nội suy cho biên chung. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Khi vị trí đúng mốc tích lũy và hai nhóm liền nhau, nội suy cho biên chung. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "50; 70"
+      },
+      {
+        "id": "B",
+        "text": "56; 75"
+      },
+      {
+        "id": "C",
+        "text": "55; 65"
+      },
+      {
+        "id": "D",
+        "text": "56; 70"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-P09",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P09",
     "stem": "Bốn nhóm \\([0;2),[2;4),[4;6),[6;8)\\) đều có tần số 7. Mẫu ghép nhóm có mốt theo quy ước SGK đang xét không?",
     "answer_key": "Không.",
     "worked_solution": "Tất cả các nhóm có cùng độ rộng và cùng tần số 7. Theo quy ước của nguồn học liệu, mẫu ghép nhóm này không có mốt. Không chọn tùy ý một nhóm làm nhóm mốt hoặc dùng công thức có mẫu bằng 0.",
@@ -816,13 +1440,17 @@
       "G11-B09-MODE-CONDITIONS"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So các tần số; tất cả bằng nhau."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -832,14 +1460,34 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Theo quy ước nguồn, trường hợp này không có mốt; không thực hiện phép chia cho 0. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-C05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Theo quy ước nguồn, trường hợp này không có mốt; không thực hiện phép chia cho 0. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-C05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, theo quy ước SGK đang xét"
+      },
+      {
+        "id": "B",
+        "text": "Có, mốt bằng 7"
+      },
+      {
+        "id": "C",
+        "text": "Có, mốt bằng 4"
+      },
+      {
+        "id": "D",
+        "text": "Có, mốt là trung điểm nhóm đầu"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-P10",
-    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P10",
     "stem": "Hai bộ số liệu gốc khác nhau cho cùng một bảng ghép nhóm. Số trung bình chính xác của hai mẫu gốc có bắt buộc bằng nhau không?",
     "answer_key": "Không.",
     "worked_solution": "Ví dụ, với hai nhóm \\([0;10),[10;20)\\), mẫu gồm 1 và 11, mẫu gồm 9 và 19 đều có tần số 1 và 1. Trung bình gốc lần lượt là \\(\\frac{1+11}{2}=6\\) và \\(\\frac{9+19}{2}=14\\), khác nhau. Trung bình ghép nhóm của cả hai là \\(\\frac{5+15}{2}=10\\). Vậy cùng bảng ghép nhóm không bảo đảm cùng trung bình gốc.",
@@ -847,13 +1495,17 @@
       "G11-B09-INTERPRETATION"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dựng hai mẫu khác nhau nhưng giữ nguyên số quan sát trong từng khoảng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -863,10 +1515,30 @@
         "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
         "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-      }
+      },
+      "previous_content_version": "THPT-G11-CHIII-B08-B09-R03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Trung bình ghép nhóm giống nhau không kéo theo trung bình thô giống nhau. Ôn CĐ22 mục 2.4; luyện THPT-G11-TOPSTAT-ADD06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Trung bình ghép nhóm giống nhau không kéo theo trung bình thô giống nhau. Ôn CĐ22 mục 2.4; luyện THPT-G11-TOPSTAT-ADD06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, vì cùng tần số"
+      },
+      {
+        "id": "B",
+        "text": "Không, các giá trị trong mỗi nhóm có thể khác nhau"
+      },
+      {
+        "id": "C",
+        "text": "Có, vì cùng trung điểm nhóm"
+      },
+      {
+        "id": "D",
+        "text": "Không, vì cỡ mẫu nhất thiết khác nhau"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-B09-KFT01",
