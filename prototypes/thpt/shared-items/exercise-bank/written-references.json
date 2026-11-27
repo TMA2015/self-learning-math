@@ -4490,13 +4490,15 @@
   {
     "item_id": "THPT-G12-B14-W07",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "24e463e61c6cc4f78dca45c1f19661ffed6786eb",
       "heading_id": "THPT-G12-B14-W07",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
       "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
-      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+      "previous_reviewed_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "previous_candidate_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
@@ -4510,8 +4512,9 @@
     "skill_ids": [
       "G12-CHV-B14-O07"
     ],
-    "content_version": "CD18-BANK-20261127-THPT-G12-B14-W07",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
+    "content_version": "CD18-BANK-20261127-THPT-G12-B14-W07.DELTA02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "author_review_note": "Reconciled prior corrected stem (sphere versus solid sphere), explicitly h>=0, R>0, three intersection cases; revised rubric /5 to match the requested distinction instead of unrelated physical interpretation. Scoped PED/Q18 and projection regeneration pending."
   },
   {
     "item_id": "THPT-G12-B15-W01",
