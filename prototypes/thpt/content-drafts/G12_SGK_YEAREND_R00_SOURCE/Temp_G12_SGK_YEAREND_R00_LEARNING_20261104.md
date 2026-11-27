@@ -567,23 +567,23 @@ PLACEMENT: YEAR_END_REVIEW_WRITTEN
 RUBRIC_TOTAL: 5
 ASSESSMENT: SELF_CHECK_NO_MASTERY
 
-**Đề:** Khảo sát chiều biến thiên của $f(x)=x^3-3x^2-9x+5$, xác định và phân biệt hai điểm cực trị. Vẽ phác đồ thị dựa trên kết quả.
+**Đề:** Khảo sát chiều biến thiên của \(f(x)=x^3-3x^2-9x+5\), xác định và phân biệt hai điểm cực trị của đồ thị. Vẽ phác đồ thị dựa trên kết quả.
 
 **WORKED_SOLUTION (SELF_REVEAL_AFTER_ATTEMPT):**
 
-1. Miền xác định là $\mathbb R$; $f\prime(x)=3x^2-6x-9=3(x+1)(x-3)$.
-2. Đạo hàm dương khi $x<-1$ hoặc $x>3$, âm khi $-1<x<3$.
-3. Do đó $f$ tăng trên $(-\infty,-1)$, giảm trên $(-1,3)$ rồi tăng trên $(3,+\infty)$.
-4. $f(-1)=10$ là cực đại, $f(3)=-22$ là cực tiểu (không đồng nghĩa lớn/nhỏ nhất toàn trục).
-5. Phác đồ thị bậc ba từ trái xuống phải lên qua $(-1,10)$ và $(3,-22)$; kiểm định hình dáng bằng đạo hàm.
+1. Tập xác định là \(\mathbb R\); \(f'(x)=3x^2-6x-9=3(x+1)(x-3)\).
+2. Đạo hàm dương khi \(x<-1\) hoặc \(x>3\), âm khi \(-1<x<3\).
+3. Hàm đồng biến trên \((-\infty;-1)\), nghịch biến trên \((-1;3)\), đồng biến trên \((3;+\infty)\).
+4. Qua \(x=-1\), đạo hàm đổi dấu từ dương sang âm: giá trị cực đại \(f(-1)=10\), điểm cực đại \((-1;10)\). Qua \(x=3\), đạo hàm đổi dấu từ âm sang dương: giá trị cực tiểu \(f(3)=-22\), điểm cực tiểu \((3;-22)\). Đây là cực trị địa phương, không phải GTLN/GTNN trên toàn trục số.
+5. Khi vẽ, đánh dấu hai điểm cực trị và điểm \((0;5)\). Nhánh trái đi từ phía dưới lên đến \((-1;10)\), sau đó đi xuống qua \((0;5)\) đến \((3;-22)\); nhánh phải đi lên. Kiểm lại hình phác theo ba khoảng biến thiên. Không cần tìm chính xác giao điểm với trục hoành.
 
 **RUBRIC /5 (SELF_REVEAL_ONLY):**
 
 - **1 điểm:** Tìm đúng miền và đạo hàm.
 - **1 điểm:** Giải đúng hai điểm dừng.
 - **1 điểm:** Suy ra đúng ba khoảng biến thiên.
-- **1 điểm:** Tính và phân loại hai cực trị.
-- **1 điểm:** Phác đồ thị phù hợp với bảng dấu và tọa độ.
+- **1 điểm:** Tính và phân loại hai cực trị, phân biệt giá trị với tọa độ điểm cực trị.
+- **1 điểm:** Phác đồ thị phù hợp với chiều biến thiên và tọa độ hai điểm cực trị; chấp nhận hình phác tương đương đúng.
 
 
 ### THPT-G12-YE-W02 — giá trị tối ưu có điều kiện
@@ -702,23 +702,23 @@ PLACEMENT: YEAR_END_REVIEW_WRITTEN
 RUBRIC_TOTAL: 5
 ASSESSMENT: SELF_CHECK_NO_MASTERY
 
-**Đề:** Tìm diện tích hình phẳng kẹp giữa hai parabol–đường thẳng $y=x^2$ và $y=3x$ trên $0\le x\le3$.
+**Đề:** Tính diện tích hình phẳng giới hạn bởi parabol \(y=x^2\) và đường thẳng \(y=3x\) trên đoạn \([0;3]\).
 
 **WORKED_SOLUTION (SELF_REVEAL_AFTER_ATTEMPT):**
 
-1. Giải phương trình giao $x^2=3x$, có nghiệm $x=0$ và $x=3$.
-2. Trên $(0,3)$ có $3x>x^2$, vì $x(3-x)>0$.
-3. Diện tích $S=\int_0^3(3x-x^2)dx$.
-4. Nguyên hàm là $3x^2/2-x^3/3$.
-5. Suy ra $S=27/2-9=9/2$ đơn vị diện tích; phải lấy đồ thị trên trừ dưới.
+1. Giải \(x^2=3x\), được \(x=0\) hoặc \(x=3\).
+2. Trên \((0;3)\), \(3x-x^2=x(3-x)>0\), nên đường thẳng nằm trên parabol.
+3. Diện tích là \(S=\int_0^3(3x-x^2)\,\mathrm dx\).
+4. Một nguyên hàm của hiệu là \(\frac{3x^2}{2}-\frac{x^3}{3}\).
+5. Thế hai cận: \(S=\frac{27}{2}-9=\frac92\) đơn vị diện tích. Kiểm lại: hiệu hai hàm không âm trên cả đoạn, nên tích phân đúng là diện tích cần tìm.
 
 **RUBRIC /5 (SELF_REVEAL_ONLY):**
 
 - **1 điểm:** Tìm đúng giao điểm.
 - **1 điểm:** Xác định đồ thị trên/dưới.
 - **1 điểm:** Viết đúng công thức diện tích.
-- **1 điểm:** Tích phân chính xác.
-- **1 điểm:** Kết luận $9/2$ cùng điều kiện.
+- **1 điểm:** Tính tích phân chính xác.
+- **1 điểm:** Kết luận \(\frac92\) và giải thích lấy đồ thị trên trừ dưới.
 
 
 ### THPT-G12-YE-W07 — khối tròn xoay đĩa
@@ -756,23 +756,23 @@ PLACEMENT: YEAR_END_REVIEW_WRITTEN
 RUBRIC_TOTAL: 5
 ASSESSMENT: SELF_CHECK_NO_MASTERY
 
-**Đề:** Cho tứ diện $ABCD$ với $A(0,0,0)$, $B(2,0,0)$, $C(0,3,0)$, $D(0,0,4)$. Viết phương trình mặt phẳng $(BCD)$, khoảng cách $d(A,(BCD))$ và thể tích tứ diện.
+**Đề:** Cho tứ diện \(ABCD\) với \(A(0;0;0)\), \(B(2;0;0)\), \(C(0;3;0)\), \(D(0;0;4)\). Viết phương trình mặt phẳng \((BCD)\), tính khoảng cách từ \(A\) đến \((BCD)\) và thể tích tứ diện.
 
 **WORKED_SOLUTION (SELF_REVEAL_AFTER_ATTEMPT):**
 
-1. Vì $B,C,D$ là ba giao điểm trục, $(BCD):x/2+y/3+z/4=1$, tương đương $6x+4y+3z-12=0$.
-2. Pháp tuyến là $(6,4,3)$, có độ dài $\sqrt{61}$.
-3. Khoảng cách từ $A$ đến mặt phẳng là $|{-12}|/\sqrt{61}=12/\sqrt{61}$.
-4. $\vec{AB}=(2,0,0)$, $\vec{AC}=(0,3,0)$, $\vec{AD}=(0,0,4)$ nên $|\det|=24$.
-5. Thể tích $V=|\det(\vec{AB},\vec{AC},\vec{AD})|/6=4$; thay vào $V=\frac13S_{BCD}h$ với $S_{BCD}=\sqrt{61}$ để kiểm.
+1. Ba điểm \(B,C,D\) thuộc ba trục tọa độ, có tọa độ khác 0 lần lượt là 2, 3, 4. Mặt phẳng qua chúng có phương trình \(\frac x2+\frac y3+\frac z4=1\), hay \(6x+4y+3z-12=0\). Thế từng điểm để kiểm tra.
+2. Một vectơ pháp tuyến là \(\vec n=(6;4;3)\), có độ dài \(\sqrt{6^2+4^2+3^2}=\sqrt{61}\).
+3. Dùng công thức khoảng cách điểm đến mặt phẳng: \(d(A,(BCD))=\frac{|-12|}{\sqrt{61}}=\frac{12}{\sqrt{61}}\).
+4. Chọn đáy \(ABC\) thay vì \(BCD\) để tính thể tích dễ hơn. Tam giác \(ABC\) vuông tại \(A\), \(AB=2,\ AC=3\), nên \(S_{ABC}=\frac12\cdot2\cdot3=3\). Vì \(AD\) vuông góc với cả \(AB\) và \(AC\), \(AD\perp(ABC)\); chiều cao bằng 4.
+5. Thể tích là \(V=\frac13\cdot3\cdot4=4\) đơn vị thể tích. Kiểm lại: lấy \(BCD\) làm đáy thì diện tích đáy bằng \(\sqrt{61}\) (từ công thức Heron với các cạnh \(\sqrt{13},\sqrt{20},5\)), chiều cao bằng \(\frac{12}{\sqrt{61}}\); thể tích vẫn bằng 4.
 
 **RUBRIC /5 (SELF_REVEAL_ONLY):**
 
 - **1 điểm:** Dựng đúng mặt phẳng và hệ số.
-- **1 điểm:** Lấy đúng pháp tuyến/norm.
+- **1 điểm:** Xác định đúng vectơ pháp tuyến và độ dài.
 - **1 điểm:** Tính đúng khoảng cách.
-- **1 điểm:** Tính đúng định thức/vectơ.
-- **1 điểm:** Kết luận $V=4$ và đối chiếu thể tích.
+- **1 điểm:** Xác định đúng diện tích đáy và chiều cao, hoặc thiết lập cách tính thể tích tương đương hợp lệ.
+- **1 điểm:** Kết luận \(V=4\). Chấp nhận các cách giải đúng khác; không bắt buộc dùng định thức.
 
 
 ### THPT-G12-YE-W09 — giao điểm đường thẳng–mặt phẳng
@@ -918,23 +918,23 @@ PLACEMENT: YEAR_END_REVIEW_WRITTEN
 RUBRIC_TOTAL: 5
 ASSESSMENT: SELF_CHECK_NO_MASTERY
 
-**Đề:** Mẫu số liệu ghép nhóm có các lớp $[0,2)$, $[2,4)$, $[4,6)$, $[6,8)$ với tần số lần lượt $2,6,8,4$. Tính trung bình, phương sai chia $N$ và độ lệch chuẩn xấp xỉ của mẫu theo giá trị đại diện lớp.
+**Đề:** Mẫu số liệu ghép nhóm có các lớp \([0;2)\), \([2;4)\), \([4;6)\), \([6;8)\) với tần số lần lượt 2, 6, 8, 4. Tính số trung bình, phương sai chia \(N\) và độ lệch chuẩn của mẫu ghép nhóm theo giá trị đại diện lớp.
 
 **WORKED_SOLUTION (SELF_REVEAL_AFTER_ATTEMPT):**
 
-1. Các giá trị đại diện lớp là $1,3,5,7$ và tổng tần số $N=2+6+8+4=20$.
-2. Trung bình xấp xỉ $\bar x=(2\cdot1+6\cdot3+8\cdot5+4\cdot7)/20=88/20=4.4$.
-3. Trung bình bình phương xấp xỉ $\overline{x^2}=(2\cdot1^2+6\cdot3^2+8\cdot5^2+4\cdot7^2)/20=452/20=22.6$.
-4. Phương sai theo quy ước mẫu SGK: $s^2=\overline{x^2}-\bar x^2=22.6-4.4^2=3.24$.
-5. Độ lệch chuẩn $s=\sqrt{3.24}=1.8$. Các giá trị là **ước lượng theo điểm giữa lớp**, không phải thống kê chính xác từ dữ liệu gốc.
+1. Giá trị đại diện các lớp là 1, 3, 5, 7; tổng tần số \(N=2+6+8+4=20\).
+2. Số trung bình \(\bar x=\frac{2\cdot1+6\cdot3+8\cdot5+4\cdot7}{20}=\frac{88}{20}=4{,}4\).
+3. Trung bình bình phương \(\overline{x^2}=\frac{2\cdot1^2+6\cdot3^2+8\cdot5^2+4\cdot7^2}{20}=\frac{452}{20}=22{,}6\).
+4. Phương sai của mẫu ghép nhóm theo quy ước chia \(N\): \(s^2=\overline{x^2}-\bar x^2=22{,}6-4{,}4^2=3{,}24\).
+5. Độ lệch chuẩn \(s=\sqrt{3{,}24}=1{,}8\). Đây là các đại lượng tính theo giá trị đại diện lớp của mẫu ghép nhóm. Nếu dùng để mô tả mẫu gốc trước khi ghép nhóm, chúng chỉ là xấp xỉ vì không biết từng giá trị gốc.
 
 **RUBRIC /5 (SELF_REVEAL_ONLY):**
 
-- **1 điểm:** Chọn đúng điểm giữa và $N$.
-- **1 điểm:** Tính đúng trung bình 4.4.
-- **1 điểm:** Tính đúng trung bình bình phương 22.6.
-- **1 điểm:** Tính đúng phương sai 3.24 với mẫu số $N$.
-- **1 điểm:** Tính $s=1.8$ và ghi giới hạn phép xấp xỉ.
+- **1 điểm:** Chọn đúng điểm giữa và \(N\).
+- **1 điểm:** Tính đúng số trung bình \(4{,}4\).
+- **1 điểm:** Tính đúng trung bình bình phương \(22{,}6\).
+- **1 điểm:** Tính đúng phương sai \(3{,}24\) với mẫu số \(N\).
+- **1 điểm:** Tính \(s=1{,}8\) và giải thích giới hạn khi suy về mẫu gốc.
 
 
 ### THPT-G12-YE-W15 — cập nhật xác suất sau một phép thử
@@ -972,23 +972,23 @@ PLACEMENT: YEAR_END_REVIEW_WRITTEN
 RUBRIC_TOTAL: 5
 ASSESSMENT: SELF_CHECK_NO_MASTERY
 
-**Đề:** Hộp có $4$ thẻ đỏ và $3$ thẻ xanh. Lấy liên tiếp hai thẻ không hoàn lại. Tính $P(\text{thẻ 2 đỏ}|\text{thẻ 1 xanh})$ và $P(\text{thẻ 2 đỏ})$; cho biết hai biến cố tương ứng có độc lập không.
+**Đề:** Hộp có 4 thẻ đỏ và 3 thẻ xanh. Lấy ngẫu nhiên liên tiếp hai thẻ không hoàn lại, mỗi lần các thẻ còn trong hộp có cùng khả năng được lấy. Tính \(P(\text{thẻ 2 đỏ}\mid\text{thẻ 1 xanh})\) và \(P(\text{thẻ 2 đỏ})\); cho biết hai biến cố “thẻ 1 xanh” và “thẻ 2 đỏ” có độc lập không.
 
 **WORKED_SOLUTION (SELF_REVEAL_AFTER_ATTEMPT):**
 
-1. Biết thẻ đầu xanh, còn 6 thẻ với 4 thẻ đỏ, nên $P(R_2|B_1)=4/6=2/3$.
-2. Không điều kiện, tính $P(R_2)$ bằng tính đối xứng hoặc xác suất toàn phần.
-3. $P(R_2)=(4/7)(3/6)+(3/7)(4/6)=12/42+12/42=4/7$.
-4. So sánh $P(R_2|B_1)=2/3$ với $P(R_2)=4/7$, hai số không bằng nhau.
-5. Hai biến cố không độc lập: rút không hoàn lại làm mẫu số và cơ cấu màu thay đổi sau thẻ thứ nhất.
+1. Gọi \(B_1\) là biến cố thẻ đầu xanh, \(R_1\) là thẻ đầu đỏ, \(R_2\) là thẻ thứ hai đỏ. Biết \(B_1\) xảy ra, còn 6 thẻ với 4 thẻ đỏ, nên \(P(R_2\mid B_1)=\frac46=\frac23\).
+2. Để tính \(P(R_2)\) khi chưa biết màu thẻ đầu, chia thành hai trường hợp \(R_1\) và \(B_1\).
+3. Áp dụng công thức xác suất toàn phần: \(P(R_2)=\frac47\cdot\frac36+\frac37\cdot\frac46=\frac{24}{42}=\frac47\).
+4. So sánh \(P(R_2\mid B_1)=\frac23\) với \(P(R_2)=\frac47\): hai giá trị khác nhau.
+5. Vì \(P(B_1)>0\) và hai xác suất trên khác nhau, \(B_1\) và \(R_2\) không độc lập. Việc lấy không hoàn lại làm cơ cấu màu thay đổi sau lượt đầu.
 
 **RUBRIC /5 (SELF_REVEAL_ONLY):**
 
-- **1 điểm:** Tính đúng xác suất có điều kiện $2/3$.
+- **1 điểm:** Tính đúng xác suất có điều kiện \(\frac23\).
 - **1 điểm:** Nhận dạng không hoàn lại/phân hoạch theo màu đầu.
-- **1 điểm:** Dựng đúng xác suất toàn phần.
-- **1 điểm:** Tính đúng $P(R_2)=4/7$.
-- **1 điểm:** So sánh hai giá trị và kết luận không độc lập.
+- **1 điểm:** Dựng đúng xác suất toàn phần hoặc cách đối xứng có giải thích.
+- **1 điểm:** Tính đúng \(P(R_2)=\frac47\).
+- **1 điểm:** So sánh hai xác suất và kết luận không độc lập.
 
 
 ## D6 — SÁU TUYẾN KHẮC PHỤC THEO OUTCOME
