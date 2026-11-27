@@ -1,21 +1,26 @@
 [
   {
     "item_id": "THPT-G12-YE-M01",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Cho $f(x)=x^3-3x^2-9x+4$. Trên khoảng nào $f$ nghịch biến?",
-    "answer_key": "B.",
-    "worked_solution": "$f\\prime(x)=3x^2-6x-9=3(x+1)(x-3)$. Đạo hàm âm đúng khi $-1<x<3$; do đó đáp án B.",
+    "content_version": "G12-YE-XG6-20261127-M01",
+    "stem": "Cho \\(f(x)=x^3-3x^2-9x+4\\). Trên khoảng nào hàm số nghịch biến?",
+    "answer_key": "\\((-1;3)\\)",
+    "worked_solution": "Ta có \\(f'(x)=3x^2-6x-9=3(x+1)(x-3)\\). Hai nhân tử trái dấu khi \\(-1<x<3\\), nên \\(f'(x)<0\\) trên khoảng \\((-1;3)\\). Hàm số nghịch biến trên khoảng này.",
     "skill_ids": [
       "G12-SGK-YE-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính đạo hàm, phân tích thành nhân tử và xét dấu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -26,44 +31,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$(-\\infty,-1)$"
+        "id": "A",
+        "text": "\\((-\\infty;-1)\\)"
       },
       {
-        "letter": "B",
-        "text": "$(-1,3)$"
+        "id": "B",
+        "text": "\\((-1;3)\\)"
       },
       {
-        "letter": "C",
-        "text": "$(3,+\\infty)$"
+        "id": "C",
+        "text": "\\((3;+\\infty)\\)"
       },
       {
-        "letter": "D",
-        "text": "$(-\\infty,3)$"
+        "id": "D",
+        "text": "\\((-\\infty;3)\\)"
       }
     ],
-    "remediation": "Không bỏ dấu ở khoảng giữa hai nghiệm đạo hàm."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Vẽ bảng dấu theo hai nghiệm của đạo hàm; dấu âm nằm giữa hai nghiệm."
   },
   {
     "item_id": "THPT-G12-YE-M02",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Tìm giá trị lớn nhất của $g(x)=x^2-6x+12$ trên $[1,5]$.",
-    "answer_key": "C.",
-    "worked_solution": "$g\\prime(x)=2(x-3)$. So sánh $g(1)=7$, $g(3)=3$, $g(5)=7$ nên giá trị lớn nhất là $7$ tại hai đầu mút.",
+    "content_version": "G12-YE-XG6-20261127-M02",
+    "stem": "Tìm giá trị lớn nhất của \\(g(x)=x^2-6x+12\\) trên đoạn \\([1;5]\\).",
+    "answer_key": "\\(7\\)",
+    "worked_solution": "Hàm liên tục trên đoạn. \\(g'(x)=2(x-3)\\), bằng 0 tại \\(x=3\\). Tính \\(g(1)=7,\\ g(3)=3,\\ g(5)=7\\). Giá trị lớn nhất là 7, đạt tại cả hai đầu mút.",
     "skill_ids": [
       "G12-SGK-YE-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "So sánh giá trị tại điểm dừng trong đoạn và hai đầu mút."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -74,44 +85,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$3$"
+        "id": "A",
+        "text": "\\(3\\)"
       },
       {
-        "letter": "B",
-        "text": "$5$"
+        "id": "B",
+        "text": "\\(5\\)"
       },
       {
-        "letter": "C",
-        "text": "$7$"
+        "id": "C",
+        "text": "\\(7\\)"
       },
       {
-        "letter": "D",
-        "text": "$9$"
+        "id": "D",
+        "text": "\\(9\\)"
       }
     ],
-    "remediation": "Điểm cực tiểu $x=3$ không cho GTLN trên đoạn."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Không chỉ xét điểm đạo hàm bằng 0; cần kiểm cả hai đầu đoạn."
   },
   {
     "item_id": "THPT-G12-YE-M03",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Đồ thị $y=(2x^2+1)/(x^2-4)$ có bao nhiêu đường tiệm cận phân biệt?",
-    "answer_key": "C.",
-    "worked_solution": "Mẫu bằng $0$ tại $x=\\pm2$, tử đều bằng $9\\ne0$: hai tiệm cận đứng $x=2$ và $x=-2$. Bậc tử và mẫu bằng nhau, tỉ số hệ số cao nhất bằng $2$: tiệm cận ngang $y=2$. Tổng là $3$.",
+    "content_version": "G12-YE-XG6-20261127-M03",
+    "stem": "Đồ thị \\(y=\\frac{2x^2+1}{x^2-4}\\) có bao nhiêu đường tiệm cận phân biệt?",
+    "answer_key": "\\(3\\)",
+    "worked_solution": "Tại \\(x=\\pm2\\), mẫu bằng 0 còn tử bằng 9. Giới hạn một phía là vô cực, nên có hai tiệm cận đứng \\(x=-2\\) và \\(x=2\\). Vì tử và mẫu cùng bậc 2, giới hạn tại vô cực bằng 2, cho tiệm cận ngang \\(y=2\\). Tổng cộng 3 đường.",
     "skill_ids": [
       "G12-SGK-YE-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Xét nghiệm của mẫu rồi so sánh bậc của tử và mẫu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -122,44 +139,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$1$"
+        "id": "A",
+        "text": "\\(1\\)"
       },
       {
-        "letter": "B",
-        "text": "$2$"
+        "id": "B",
+        "text": "\\(2\\)"
       },
       {
-        "letter": "C",
-        "text": "$3$"
+        "id": "C",
+        "text": "\\(3\\)"
       },
       {
-        "letter": "D",
-        "text": "$4$"
+        "id": "D",
+        "text": "\\(4\\)"
       }
     ],
-    "remediation": "Không đếm hai nhánh của cùng một tiệm cận thành hai đường."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nghiệm mẫu phải kiểm tử; tiệm cận ngang cần xét giới hạn tại vô cực."
   },
   {
     "item_id": "THPT-G12-YE-M04",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Một hàm khả vi có bảng dấu $f\\prime>0$ trên $(-\\infty,0)$ và $(2,+\\infty)$, $f\\prime<0$ trên $(0,2)$, với $f(0)=3$, $f(2)=-1$. Điểm cực tiểu là điểm nào?",
-    "answer_key": "B.",
-    "worked_solution": "Tại $x=2$ đạo hàm đổi dấu âm sang dương, nên $x=2$ là cực tiểu và tọa độ điểm là $(2,-1)$.",
+    "content_version": "G12-YE-XG6-20261127-M04",
+    "stem": "Một hàm khả vi có \\(f'(x)>0\\) trên \\((-\\infty;0)\\) và \\((2;+\\infty)\\), \\(f'(x)<0\\) trên \\((0;2)\\), với \\(f(0)=3\\), \\(f(2)=-1\\). Điểm cực tiểu của đồ thị là điểm nào?",
+    "answer_key": "\\((2;-1)\\)",
+    "worked_solution": "Qua \\(x=2\\), đạo hàm đổi dấu từ âm sang dương, nên hàm đạt cực tiểu tại \\(x=2\\). Vì \\(f(2)=-1\\), điểm cực tiểu của đồ thị là \\((2;-1)\\).",
     "skill_ids": [
       "G12-SGK-YE-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tìm nơi đạo hàm đổi dấu từ âm sang dương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -170,44 +193,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$(0,3)$"
+        "id": "A",
+        "text": "\\((0;3)\\)"
       },
       {
-        "letter": "B",
-        "text": "$(2,-1)$"
+        "id": "B",
+        "text": "\\((2;-1)\\)"
       },
       {
-        "letter": "C",
-        "text": "$(0,-1)$"
+        "id": "C",
+        "text": "\\((0;-1)\\)"
       },
       {
-        "letter": "D",
-        "text": "$(2,3)$"
+        "id": "D",
+        "text": "\\((2;3)\\)"
       }
     ],
-    "remediation": "Xét đổi dấu của đạo hàm, không đoán theo độ lớn của hai giá trị."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Phân biệt hoành độ cực tiểu với tọa độ điểm cực tiểu của đồ thị."
   },
   {
     "item_id": "THPT-G12-YE-M05",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Với $x>0$, họ nguyên hàm của $3x^2-4/x$ là",
-    "answer_key": "B.",
-    "worked_solution": "Vì $(x^3)\\prime=3x^2$ và $(\\ln x)\\prime=1/x$ khi $x>0$, họ nguyên hàm là $x^3-4\\ln x+C$.",
+    "content_version": "G12-YE-XG6-20261127-M05",
+    "stem": "Trên khoảng \\((0;+\\infty)\\), tìm họ nguyên hàm của \\(3x^2-\\frac4x\\).",
+    "answer_key": "\\(x^3-4\\ln x+C\\)",
+    "worked_solution": "Vì \\((x^3)'=3x^2\\) và \\((\\ln x)'=\\frac1x\\) khi \\(x>0\\), họ nguyên hàm là \\(x^3-4\\ln x+C\\), với \\(C\\in\\mathbb R\\).",
     "skill_ids": [
       "G12-SGK-YE-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Nhớ nguyên hàm của 1/x trên miền dương; kiểm lại dấu của hệ số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -218,44 +247,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$x^3-4x+C$"
+        "id": "A",
+        "text": "\\(x^3-4x+C\\)"
       },
       {
-        "letter": "B",
-        "text": "$x^3-4\\ln x+C$"
+        "id": "B",
+        "text": "\\(x^3-4\\ln x+C\\)"
       },
       {
-        "letter": "C",
-        "text": "$6x-4\\ln x+C$"
+        "id": "C",
+        "text": "\\(6x-4\\ln x+C\\)"
       },
       {
-        "letter": "D",
-        "text": "$x^3+4\\ln x+C$"
+        "id": "D",
+        "text": "\\(x^3+4\\ln x+C\\)"
       }
     ],
-    "remediation": "Điều kiện $x>0$ cho phép dùng $\\ln x$ thay vì $\\ln|x|$."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Đạo hàm của logarit phải đúng dấu và hệ số."
   },
   {
     "item_id": "THPT-G12-YE-M06",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Giá trị $\\int_0^2(3x^2-2x)\\,dx$ là",
-    "answer_key": "C.",
-    "worked_solution": "Nguyên hàm $x^3-x^2$. Tích phân bằng $(8-4)-0=4$.",
+    "content_version": "G12-YE-XG6-20261127-M06",
+    "stem": "Tính \\(\\int_0^2(3x^2-2x)\\,\\mathrm dx\\).",
+    "answer_key": "\\(4\\)",
+    "worked_solution": "Một nguyên hàm là \\(F(x)=x^3-x^2\\). Áp dụng Newton–Leibniz: \\(\\int_0^2(3x^2-2x)\\,\\mathrm dx=[x^3-x^2]_0^2=8-4=4\\).",
     "skill_ids": [
       "G12-SGK-YE-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tìm nguyên hàm từng số hạng rồi thế cận trên và dưới."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -266,44 +301,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$0$"
+        "id": "A",
+        "text": "\\(0\\)"
       },
       {
-        "letter": "B",
-        "text": "$2$"
+        "id": "B",
+        "text": "\\(2\\)"
       },
       {
-        "letter": "C",
-        "text": "$4$"
+        "id": "C",
+        "text": "\\(4\\)"
       },
       {
-        "letter": "D",
-        "text": "$8$"
+        "id": "D",
+        "text": "\\(8\\)"
       }
     ],
-    "remediation": "Tích phân có dấu, không thay bằng diện tích tuyệt đối nếu hàm đổi dấu."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Lấy giá trị nguyên hàm ở cận trên trừ cận dưới."
   },
   {
     "item_id": "THPT-G12-YE-M07",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Diện tích giữa $y=x-1$, trục $Ox$ và hai đường $x=0$, $x=3$ là",
-    "answer_key": "D.",
-    "worked_solution": "Hàm đổi dấu tại $x=1$. Diện tích $S=\\int_0^1(1-x)dx+\\int_1^3(x-1)dx=1/2+2=5/2$.",
+    "content_version": "G12-YE-XG6-20261127-M07",
+    "stem": "Tính diện tích hình phẳng giới hạn bởi \\(y=x-1\\), trục \\(Ox\\) và hai đường \\(x=0,\\ x=3\\).",
+    "answer_key": "\\(\\frac52\\)",
+    "worked_solution": "Hàm đổi dấu tại \\(x=1\\). Trên \\([0;1]\\) lấy \\(1-x\\), trên \\([1;3]\\) lấy \\(x-1\\). Do đó \\[S=\\int_0^1(1-x)\\,\\mathrm dx+\\int_1^3(x-1)\\,\\mathrm dx=\\frac12+2=\\frac52.\\]",
     "skill_ids": [
       "G12-SGK-YE-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm điểm cắt trục hoành và chia miền tại điểm đó."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -314,44 +355,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$3/2$"
+        "id": "A",
+        "text": "\\(\\frac32\\)"
       },
       {
-        "letter": "B",
-        "text": "$2$"
+        "id": "B",
+        "text": "\\(2\\)"
       },
       {
-        "letter": "C",
-        "text": "$7/2$"
+        "id": "C",
+        "text": "\\(\\frac72\\)"
       },
       {
-        "letter": "D",
-        "text": "$5/2$"
+        "id": "D",
+        "text": "\\(\\frac52\\)"
       }
     ],
-    "remediation": "Không được lấy giá trị tích phân có dấu $\\int_0^3(x-1)dx$ làm diện tích."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Diện tích không âm; chia tại nghiệm của hàm."
   },
   {
     "item_id": "THPT-G12-YE-M08",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Quay miền dưới đồ thị $y=\\sqrt{3x}$, phía trên $Ox$, $0\\le x\\le3$ quanh $Ox$; thể tích bằng",
-    "answer_key": "B.",
-    "worked_solution": "Bán kính đĩa tại $x$ là $\\sqrt{3x}$, nên $V=\\pi\\int_0^3(\\sqrt{3x})^2dx=3\\pi(9/2)=27\\pi/2$.",
+    "content_version": "G12-YE-XG6-20261127-M08",
+    "stem": "Quay miền dưới đồ thị \\(y=\\sqrt{3x}\\), phía trên \\(Ox\\), \\(0\\le x\\le3\\), quanh \\(Ox\\). Tính thể tích khối tròn xoay.",
+    "answer_key": "\\(\\frac{27\\pi}2\\)",
+    "worked_solution": "Bán kính tại \\(x\\) là \\(\\sqrt{3x}\\). Diện tích tiết diện là \\(3\\pi x\\). Vậy \\[V=\\pi\\int_0^3 3x\\,\\mathrm dx=3\\pi\\left[\\frac{x^2}{2}\\right]_0^3=\\frac{27\\pi}2.\\]",
     "skill_ids": [
       "G12-SGK-YE-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Mỗi lát cắt vuông góc Ox là hình tròn; diện tích phụ thuộc bình phương bán kính."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -362,44 +409,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$9\\pi$"
+        "id": "A",
+        "text": "\\(9\\pi\\)"
       },
       {
-        "letter": "B",
-        "text": "$27\\pi/2$"
+        "id": "B",
+        "text": "\\(\\frac{27\\pi}2\\)"
       },
       {
-        "letter": "C",
-        "text": "$27\\pi$"
+        "id": "C",
+        "text": "\\(27\\pi\\)"
       },
       {
-        "letter": "D",
-        "text": "$9\\pi/2$"
+        "id": "D",
+        "text": "\\(\\frac{9\\pi}2\\)"
       }
     ],
-    "remediation": "Dùng bình phương bán kính khi quay quanh $Ox$."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Dùng diện tích đĩa, không tích phân bán kính trực tiếp."
   },
   {
     "item_id": "THPT-G12-YE-M09",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Cho năm điểm $A_1,\\dots,A_5$ trong không gian và $G$ thỏa $\\sum_{i=1}^5\\overrightarrow{GA_i}=\\vec0$. Với điểm $M$ bất kì, tổng $\\sum_{i=1}^5\\overrightarrow{MA_i}$ bằng",
-    "answer_key": "D.",
-    "worked_solution": "Vì $\\overrightarrow{MA_i}=\\overrightarrow{MG}+\\overrightarrow{GA_i}$ và $\\sum_i\\overrightarrow{GA_i}=0$, tổng là $5\\overrightarrow{MG}$.",
+    "content_version": "G12-YE-XG6-20261127-M09",
+    "stem": "Cho năm điểm \\(A_1,\\ldots,A_5\\) trong không gian và \\(G\\) thỏa \\(\\sum_{i=1}^5\\overrightarrow{GA_i}=\\vec 0\\). Với điểm \\(M\\) bất kì, tổng \\(\\sum_{i=1}^5\\overrightarrow{MA_i}\\) bằng bao nhiêu?",
+    "answer_key": "\\(5\\overrightarrow{MG}\\)",
+    "worked_solution": "Với mọi \\(i\\), \\(\\overrightarrow{MA_i}=\\overrightarrow{MG}+\\overrightarrow{GA_i}\\). Cộng năm đẳng thức: \\(\\sum_{i=1}^5\\overrightarrow{MA_i}=5\\overrightarrow{MG}+\\vec 0=5\\overrightarrow{MG}\\).",
     "skill_ids": [
       "G12-SGK-YE-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tách mỗi vectơ qua điểm G rồi cộng năm đẳng thức."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -410,44 +463,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$\\overrightarrow{MG}$"
+        "id": "A",
+        "text": "\\(\\overrightarrow{MG}\\)"
       },
       {
-        "letter": "B",
-        "text": "$2\\overrightarrow{MG}$"
+        "id": "B",
+        "text": "\\(2\\overrightarrow{MG}\\)"
       },
       {
-        "letter": "C",
-        "text": "$4\\overrightarrow{MG}$"
+        "id": "C",
+        "text": "\\(4\\overrightarrow{MG}\\)"
       },
       {
-        "letter": "D",
-        "text": "$5\\overrightarrow{MG}$"
+        "id": "D",
+        "text": "\\(5\\overrightarrow{MG}\\)"
       }
     ],
-    "remediation": "Vẫn phải cộng vectơ, không cộng độ dài."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Mỗi số hạng đều góp một vectơ MG."
   },
   {
     "item_id": "THPT-G12-YE-M10",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Cho $\\vec a=(2,-1,3)$ và $\\vec b=(-1,4,2)$. Kết luận nào đúng?",
-    "answer_key": "A.",
-    "worked_solution": "Tích vô hướng $\\vec a\\cdot\\vec b=2(-1)+(-1)4+3(2)=0$. Hai vectơ đều khác $0$, nên vuông góc.",
+    "content_version": "G12-YE-XG6-20261127-M10",
+    "stem": "Cho \\(\\vec a=(2;-1;3)\\) và \\(\\vec b=(-1;4;2)\\). Kết luận nào đúng?",
+    "answer_key": "\\(\\vec a\\perp\\vec b\\)",
+    "worked_solution": "\\(\\vec a\\cdot\\vec b=2(-1)+(-1)\\cdot4+3\\cdot2=0\\). Hai vectơ đều khác vectơ không, nên chúng vuông góc.",
     "skill_ids": [
       "G12-SGK-YE-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính tích vô hướng rồi dùng tiêu chuẩn vuông góc."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -458,44 +517,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$\\vec a\\perp\\vec b$"
+        "id": "A",
+        "text": "\\(\\vec a\\perp\\vec b\\)"
       },
       {
-        "letter": "B",
-        "text": "$\\vec a$ cùng phương $\\vec b$"
+        "id": "B",
+        "text": "\\(\\vec a\\) cùng phương \\(\\vec b\\)"
       },
       {
-        "letter": "C",
+        "id": "C",
         "text": "Góc giữa hai vectơ tù"
       },
       {
-        "letter": "D",
+        "id": "D",
         "text": "Hai vectơ bằng nhau"
       }
     ],
-    "remediation": "Tính tích vô hướng từ ba cặp tọa độ tương ứng, không xét từng dấu riêng."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Tích vô hướng bằng 0 cho hai vectơ khác không là tiêu chuẩn vuông góc."
   },
   {
     "item_id": "THPT-G12-YE-M11",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Đường thẳng có vectơ chỉ phương $(1,2,2)$; mặt phẳng có vectơ pháp tuyến $(2,-1,2)$. Nếu $\\alpha$ là góc nhọn giữa đường và mặt phẳng thì $\\sin\\alpha$ bằng",
-    "answer_key": "A.",
-    "worked_solution": "$|\\vec u\\cdot\\vec n|=|2-2+4|=4$, $\\|\\vec u\\|=3$, $\\|\\vec n\\|=3$. Do đó $\\sin\\alpha=4/9$; góc đường–mặt phẳng không dùng công thức cos giữa đường và pháp tuyến.",
+    "content_version": "G12-YE-XG6-20261127-M11",
+    "stem": "Đường thẳng có vectơ chỉ phương \\(\\vec u=(1;2;2)\\); mặt phẳng có vectơ pháp tuyến \\(\\vec n=(2;-1;2)\\). Nếu \\(\\alpha\\) là góc nhọn giữa đường thẳng và mặt phẳng, tính \\(\\sin\\alpha\\).",
+    "answer_key": "\\(\\frac49\\)",
+    "worked_solution": "Ta có \\(|\\vec u\\cdot\\vec n|=|2-2+4|=4\\) và \\(\\|\\vec u\\|=\\|\\vec n\\|=3\\). Vậy \\(\\sin\\alpha=\\frac{|\\vec u\\cdot\\vec n|}{\\|\\vec u\\|\\|\\vec n\\|}=\\frac49\\).",
     "skill_ids": [
       "G12-SGK-YE-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Góc đường–mặt phẳng phụ với góc nhọn giữa đường và pháp tuyến."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -506,44 +571,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$4/9$"
+        "id": "A",
+        "text": "\\(\\frac49\\)"
       },
       {
-        "letter": "B",
-        "text": "$2/3$"
+        "id": "B",
+        "text": "\\(\\frac23\\)"
       },
       {
-        "letter": "C",
-        "text": "$\\sqrt5/9$"
+        "id": "C",
+        "text": "\\(\\frac{\\sqrt5}9\\)"
       },
       {
-        "letter": "D",
-        "text": "$8/9$"
+        "id": "D",
+        "text": "\\(\\frac89\\)"
       }
     ],
-    "remediation": "Góc đường với pháp tuyến là góc phụ của góc đường–mặt phẳng."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Dùng sin của góc đường–mặt phẳng, không phải cos của góc đó."
   },
   {
     "item_id": "THPT-G12-YE-M12",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Mặt phẳng đi qua $A(1,0,-2)$ và có pháp tuyến $(2,-1,3)$ có phương trình nào?",
-    "answer_key": "C.",
-    "worked_solution": "$2(x-1)-y+3(z+2)=0$ rút gọn thành $2x-y+3z+4=0$. Thử thế tọa độ $A$ để kiểm.",
+    "content_version": "G12-YE-XG6-20261127-M12",
+    "stem": "Mặt phẳng đi qua \\(A(1;0;-2)\\) và có vectơ pháp tuyến \\((2;-1;3)\\) có phương trình nào?",
+    "answer_key": "\\(2x-y+3z+4=0\\)",
+    "worked_solution": "Phương trình là \\(2(x-1)-(y-0)+3(z+2)=0\\), tức \\(2x-y+3z+4=0\\). Thế tọa độ A được \\(2-6+4=0\\), đồng thời hệ số đúng vectơ pháp tuyến.",
     "skill_ids": [
       "G12-SGK-YE-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng phương trình điểm–pháp tuyến; chú ý dấu của tọa độ z của A."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -554,44 +625,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$2x-y+3z-4=0$"
+        "id": "A",
+        "text": "\\(2x-y+3z-4=0\\)"
       },
       {
-        "letter": "B",
-        "text": "$2x+y+3z+4=0$"
+        "id": "B",
+        "text": "\\(2x+y+3z+4=0\\)"
       },
       {
-        "letter": "C",
-        "text": "$2x-y+3z+4=0$"
+        "id": "C",
+        "text": "\\(2x-y+3z+4=0\\)"
       },
       {
-        "letter": "D",
-        "text": "$x-2y+3z+4=0$"
+        "id": "D",
+        "text": "\\(x-2y+3z+4=0\\)"
       }
     ],
-    "remediation": "Hằng số phải được xác định bằng tọa độ điểm, không sao chép pháp tuyến tùy ý."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Thế điểm đã cho và so sánh hệ số pháp tuyến."
   },
   {
     "item_id": "THPT-G12-YE-M13",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Một bảng tần số ghép nhóm có các khoảng $[4,8)$, $[8,12)$, $[12,16)$. Khoảng biến thiên theo biên lớp của mẫu này là",
-    "answer_key": "B.",
-    "worked_solution": "Khoảng biến thiên xấp xỉ theo biên lớp là biên trên lớp cuối trừ biên dưới lớp đầu: $16-4=12$.",
+    "content_version": "G12-YE-XG6-20261127-M13",
+    "stem": "Một mẫu số liệu ghép nhóm có các lớp \\([4;8)\\), \\([8;12)\\), \\([12;16)\\), mỗi lớp có tần số dương. Tính khoảng biến thiên của mẫu số liệu ghép nhóm.",
+    "answer_key": "\\(12\\)",
+    "worked_solution": "Khoảng biến thiên của mẫu ghép nhóm là \\(R=16-4=12\\). Không cần biết từng số liệu gốc; đây là đại lượng theo biên lớp.",
     "skill_ids": [
       "G12-SGK-YE-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Lấy đầu mút phải lớp cuối trừ đầu mút trái lớp đầu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -602,44 +679,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$8$"
+        "id": "A",
+        "text": "\\(8\\)"
       },
       {
-        "letter": "B",
-        "text": "$12$"
+        "id": "B",
+        "text": "\\(12\\)"
       },
       {
-        "letter": "C",
-        "text": "$16$"
+        "id": "C",
+        "text": "\\(16\\)"
       },
       {
-        "letter": "D",
-        "text": "$3$"
+        "id": "D",
+        "text": "\\(3\\)"
       }
     ],
-    "remediation": "Không lấy số nhóm hay tổng tần số làm khoảng biến thiên."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Không lấy số lớp hay khoảng cách hai tâm lớp thay khoảng biến thiên."
   },
   {
     "item_id": "THPT-G12-YE-M14",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Tung hai xúc xắc cân đối, phân biệt xúc xắc thứ nhất/thứ hai. Biết tổng hai mặt lớn hơn $9$, xác suất cả hai mặt đều chẵn là",
-    "answer_key": "C.",
-    "worked_solution": "Có 6 kết quả có thứ tự với tổng $10,11,12$: $(4,6),(5,5),(6,4),(5,6),(6,5),(6,6)$. Chỉ $(4,6),(6,4),(6,6)$ có hai mặt chẵn: $P(\\text{cả hai chẵn}|\\text{tổng}>9)=3/6=1/2$.",
+    "content_version": "G12-YE-XG6-20261127-M14",
+    "stem": "Tung độc lập hai xúc xắc cân đối, phân biệt xúc xắc thứ nhất và thứ hai. Biết tổng hai mặt lớn hơn 9, tính xác suất cả hai mặt đều chẵn.",
+    "answer_key": "\\(\\frac12\\)",
+    "worked_solution": "Có 6 kết quả đồng khả năng với tổng 10, 11 hoặc 12: \\((4;6),(5;5),(6;4),(5;6),(6;5),(6;6)\\). Trong đó \\((4;6),(6;4),(6;6)\\) có cả hai mặt chẵn. Xác suất có điều kiện là \\(\\frac36=\\frac12\\).",
     "skill_ids": [
       "G12-SGK-YE-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Liệt kê các cặp có thứ tự thỏa điều kiện tổng lớn hơn 9."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -650,44 +733,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$1/4$"
+        "id": "A",
+        "text": "\\(\\frac14\\)"
       },
       {
-        "letter": "B",
-        "text": "$1/3$"
+        "id": "B",
+        "text": "\\(\\frac13\\)"
       },
       {
-        "letter": "C",
-        "text": "$1/2$"
+        "id": "C",
+        "text": "\\(\\frac12\\)"
       },
       {
-        "letter": "D",
-        "text": "$2/3$"
+        "id": "D",
+        "text": "\\(\\frac23\\)"
       }
     ],
-    "remediation": "Điều kiện tổng lớn hơn $9$ thu hẹp mẫu còn 6 cặp có thứ tự; không chia cho 36."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Chỉ đếm trong không gian mẫu thỏa điều kiện."
   },
   {
     "item_id": "THPT-G12-YE-M15",
-    "content_version": "G12-SGK-YEAREND-REVIEW-R00",
-    "stem": "Chọn hộp $A$ với xác suất $2/5$, hộp $B$ với xác suất $3/5$. Xác suất lấy bi đỏ tương ứng là $3/4$ từ $A$ và $1/2$ từ $B$. Biết đã lấy bi đỏ, xác suất hộp được chọn là $A$ bằng",
-    "answer_key": "A.",
-    "worked_solution": "$P(A|R)=\\frac{(2/5)(3/4)}{(2/5)(3/4)+(3/5)(1/2)}=\\frac{3/10}{3/10+3/10}=1/2$.",
+    "content_version": "G12-YE-XG6-20261127-M15",
+    "stem": "Chọn hộp \\(A\\) với xác suất \\(\\frac25\\), hộp \\(B\\) với xác suất \\(\\frac35\\). Xác suất lấy bi đỏ tương ứng là \\(\\frac34\\) từ A và \\(\\frac12\\) từ B. Biết đã lấy bi đỏ, tính xác suất hộp được chọn là A.",
+    "answer_key": "\\(\\frac12\\)",
+    "worked_solution": "Gọi R là biến cố lấy bi đỏ. Ta có \\(P(A\\cap R)=\\frac25\\cdot\\frac34=\\frac3{10}\\), \\(P(B\\cap R)=\\frac35\\cdot\\frac12=\\frac3{10}\\). Hai hộp tạo phân hoạch, nên \\(P(R)=\\frac6{10}\\). Suy ra \\(P(A\\mid R)=\\frac{3/10}{6/10}=\\frac12\\).",
     "skill_ids": [
       "G12-SGK-YE-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính xác suất lấy bi đỏ từ mỗi nhánh rồi dùng công thức Bayes."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -698,25 +787,26 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
     "options": [
       {
-        "letter": "A",
-        "text": "$1/2$"
+        "id": "A",
+        "text": "\\(\\frac12\\)"
       },
       {
-        "letter": "B",
-        "text": "$2/5$"
+        "id": "B",
+        "text": "\\(\\frac25\\)"
       },
       {
-        "letter": "C",
-        "text": "$3/4$"
+        "id": "C",
+        "text": "\\(\\frac34\\)"
       },
       {
-        "letter": "D",
-        "text": "$3/5$"
+        "id": "D",
+        "text": "\\(\\frac35\\)"
       }
     ],
-    "remediation": "Phải đảo điều kiện bằng Bayes, không lấy $P(R|A)=3/4$."
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Phân biệt xác suất lấy đỏ nếu biết hộp với xác suất biết hộp khi đã lấy đỏ."
   }
 ]
