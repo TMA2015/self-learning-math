@@ -1189,5 +1189,229 @@
       }
     ],
     "exercise_type": "INTERACTIVE"
+  },
+  {
+    "item_id": "THPT-TOP15-P23",
+    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P23",
+    "stem": "Hình chóp \\(S.ABCD\\) có đáy là tứ giác lồi, các đường thẳng AB và CD cắt nhau tại E (ngoài đoạn AB và CD). Tìm giao tuyến của \\((SAB)\\) và \\((SCD)\\).",
+    "answer_key": "Đường thẳng SE.",
+    "worked_solution": "E thuộc AB nên thuộc \\((SAB)\\); E thuộc CD nên thuộc \\((SCD)\\). S cũng thuộc cả hai mặt và S khác E. Hai mặt phân biệt vì S ngoài đáy và AB, CD là hai đường phân biệt trong đáy. Vậy giao tuyến là SE. Không dùng định lí giao tuyến song song khi AB và CD cắt nhau.",
+    "skill_ids": [
+      "G11-B10-PLANE_INTERSECTION",
+      "G11-B11-PARALLEL_PROOF"
+    ],
+    "original_outcome_ids": [
+      "TOP15-O09"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm điểm chung thứ hai của hai mặt ngoài S."
+    ],
+    "remediation": "Nếu chỉ tìm phương mà quên giao điểm E, đọc Kiến thức 2.4; luyện THPT-TOP15-P13 để phân biệt trường hợp AB song song CD.",
+    "rubric": null,
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đường qua S song song AB."
+      },
+      {
+        "id": "B",
+        "text": "Đường thẳng AC."
+      },
+      {
+        "id": "C",
+        "text": "Đường thẳng SE."
+      },
+      {
+        "id": "D",
+        "text": "Đường thẳng CD."
+      }
+    ],
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "type": "AUTHOR_ORIGINAL_BANK_CANDIDATE",
+      "basis_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "basis_heading_id": "TOP15-M09",
+      "scope": "NEW_DISTINCT_COVERAGE_VARIANT_NOT_IMPORTED_SGK_ITEM"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE"
+  },
+  {
+    "item_id": "THPT-TOP15-P24",
+    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P24",
+    "stem": "Trong tứ diện \\(S.ABC\\), M,N,K lần lượt thuộc phần trong của SA,SB,SC. Biết \\(MN\\parallel AB\\), \\(NK\\parallel BC\\), \\(MN=6\\) cm và \\(AB=10\\) cm. Tìm quan hệ hai mặt \\((MNK),(ABC)\\) và tỉ số \\(SK:KC\\).",
+    "answer_key": "\\((MNK)\\parallel(ABC)\\); \\(SK:KC=3:2\\).",
+    "worked_solution": "MN và NK lần lượt song song AB và BC, nằm ngoài mặt đáy vì M,N,K thuộc phần trong các cạnh bên. Chúng cắt nhau tại N nên \\((MNK)\\parallel(ABC)\\). Tam giác SMN đồng dạng SAB, \\(SN/SB=MN/AB=3/5\\). Tam giác SNK đồng dạng SBC, \\(SK/SC=SN/SB=3/5\\). Vậy \\(KC/SC=2/5\\), \\(SK:KC=3:2\\).",
+    "skill_ids": [
+      "G11-B13-PRISM_RATIO",
+      "G11-B13-PLANE_TEST"
+    ],
+    "original_outcome_ids": [
+      "TOP15-O13"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng hai đường cắt nhau để chứng minh song song mặt, rồi dùng hai tam giác đồng dạng."
+    ],
+    "remediation": "Nếu viết SK:KC bằng SK:SC, vẽ cạnh SC thành 5 phần và thử THPT-TOP15-P16.",
+    "rubric": null,
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((MNK)\\parallel(ABC)\\); \\(SK:KC=2:3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\((MNK)\\) cắt \\((ABC)\\); \\(SK:KC=3:2\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\((MNK)\\parallel(ABC)\\); \\(SK:KC=3:5\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\((MNK)\\parallel(ABC)\\); \\(SK:KC=3:2\\)."
+      }
+    ],
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "type": "AUTHOR_ORIGINAL_BANK_CANDIDATE",
+      "basis_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "basis_heading_id": "TOP15-M13",
+      "scope": "NEW_DISTINCT_COVERAGE_VARIANT_NOT_IMPORTED_SGK_ITEM"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE"
+  },
+  {
+    "item_id": "THPT-TOP15-P25",
+    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P25",
+    "stem": "Trong tứ diện \\(S.ABC\\), mặt cắt tam giác MNK song song đáy ABC có tỉ số \\(SM/SA=3/4\\). Biết diện tích ABC bằng \\(64\\,\\mathrm{cm}^2\\). Chiếu vuông góc MNK xuống mặt phẳng đáy. Tính diện tích MNK và diện tích tam giác ảnh.",
+    "answer_key": "Cả hai diện tích đều bằng \\(36\\,\\mathrm{cm}^2\\).",
+    "worked_solution": "Hai tam giác MNK và ABC đồng dạng với tỉ số cạnh \\(3/4\\). Do đó \\(S_{MNK}=(3/4)^2\\cdot64=36\\,\\mathrm{cm}^2\\). Hai mặt phẳng song song, nên khi chiếu vuông góc xuống đáy, mỗi điểm của MNK được dịch theo cùng một vectơ vuông góc đáy. Ảnh tam giác bằng tam giác MNK, nên diện tích ảnh cũng bằng \\(36\\,\\mathrm{cm}^2\\).",
+    "skill_ids": [
+      "G11-B13-PRISM_RATIO",
+      "G11-B14-AFFINE_INVARIANTS"
+    ],
+    "original_outcome_ids": [
+      "TOP15-O22"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLY",
+    "hints": [
+      "Tách bài toán thành diện tích mặt cắt và diện tích ảnh."
+    ],
+    "remediation": "Nếu lấy 3/4 nhân diện tích, ôn Kiến thức 4.4 và 5.5; thử THPT-TOP15-P04.",
+    "rubric": null,
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả hai diện tích đều bằng \\(36\\,\\mathrm{cm}^2\\)."
+      },
+      {
+        "id": "B",
+        "text": "Cả hai diện tích bằng 48 cm²."
+      },
+      {
+        "id": "C",
+        "text": "Thiết diện 36 cm², ảnh 64 cm²."
+      },
+      {
+        "id": "D",
+        "text": "Thiết diện 48 cm², ảnh 36 cm²."
+      }
+    ],
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "type": "AUTHOR_ORIGINAL_BANK_CANDIDATE",
+      "basis_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "basis_heading_id": "TOP15-M22",
+      "scope": "NEW_DISTINCT_COVERAGE_VARIANT_NOT_IMPORTED_SGK_ITEM"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE"
+  },
+  {
+    "item_id": "THPT-TOP15-P26",
+    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P26",
+    "stem": "Trong hình hộp chữ nhật \\(ABCD.A'B'C'D'\\), \\(AB=6\\) cm, \\(AA'=4\\) cm. Chiếu vuông góc mặt bên \\(ABB'A'\\) (cả phần trong) lên đáy \\((ABCD)\\). So sánh diện tích mặt bên và diện tích ảnh trong mặt đáy.",
+    "answer_key": "Mặt bên có diện tích \\(24\\,\\mathrm{cm}^2\\); ảnh là đoạn AB, có diện tích bằng 0.",
+    "worked_solution": "Mặt bên là hình chữ nhật có diện tích \\(AB\\cdot AA'=6\\cdot4=24\\,\\mathrm{cm}^2\\). Vì các cạnh bên vuông góc đáy, A' chiếu thành A, B' chiếu thành B; mọi điểm trên mặt bên có ảnh trên đoạn AB. Ảnh là đoạn AB chứ không phải một miền hai chiều, nên diện tích bằng 0. Phép chiếu không bảo toàn diện tích trong mọi cấu hình.",
+    "skill_ids": [
+      "G11-B14-DEGENERACY",
+      "G11-B14-PARALLEL_AND_SHAPES"
+    ],
+    "original_outcome_ids": [
+      "TOP15-O22"
+    ],
+    "problem_type_id": null,
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xác định ảnh bốn đỉnh và các đoạn nối trong mặt bên."
+    ],
+    "remediation": "Nếu cho rằng mọi phép chiếu giữ diện tích, ôn Kiến thức 5.2 và 5.5; thử THPT-TOP15-P21.",
+    "rubric": null,
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả hai diện tích bằng 24 cm²."
+      },
+      {
+        "id": "B",
+        "text": "Mặt bên có diện tích \\(24\\,\\mathrm{cm}^2\\); ảnh là đoạn AB, có diện tích bằng 0."
+      },
+      {
+        "id": "C",
+        "text": "Mặt bên 24 cm²; ảnh là đoạn AA', diện tích 0."
+      },
+      {
+        "id": "D",
+        "text": "Mặt bên 10 cm²; ảnh là hình chữ nhật diện tích 24 cm²."
+      }
+    ],
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "type": "AUTHOR_ORIGINAL_BANK_CANDIDATE",
+      "basis_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "basis_heading_id": "TOP15-M22",
+      "scope": "NEW_DISTINCT_COVERAGE_VARIANT_NOT_IMPORTED_SGK_ITEM"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE"
   }
 ]
