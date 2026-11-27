@@ -2586,10 +2586,10 @@
   },
   {
     "item_id": "THPT-G12-B16-A02",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-A02",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-A02.DELTA05",
     "stem": "Đường dốc có chỉ phương \\((3;0;4)\\). Tính góc với nền ngang z=0, làm tròn đến hai chữ số thập phân theo độ.",
     "answer_key": "\\(\\arcsin\\frac45\\approx53{,}13^\\circ\\).",
-    "worked_solution": "Pháp tuyến nền là \\((0;0;1)\\), độ dài chỉ phương là 5. \\(\\sin\\theta=\\frac{|4|}{5\\cdot1}=\\frac45\\). Góc trong [0°;90°], nên máy tính ở chế độ độ cho khoảng 53,13°.",
+    "worked_solution": "Pháp tuyến nền \\(z=0\\) là \\(\\vec n=(0;0;1)\\); vectơ chỉ phương \\(\\vec u=(3;0;4)\\) có độ dài 5. Vì góc \\(\\theta\\) giữa đường và mặt là góc phụ với góc nhọn giữa chỉ phương và pháp tuyến, \\(\\sin\\theta=\\frac{\\lvert\\vec u\\cdot\\vec n\\rvert}{\\lVert\\vec u\\rVert\\lVert\\vec n\\rVert}=\\frac45\\). Với \\(0^\\circ\\le\\theta\\le90^\\circ\\), tính theo độ được \\(\\theta\\approx53{,}13^\\circ\\).",
     "skill_ids": [
       "G12-CHV-B16-O02"
     ],
