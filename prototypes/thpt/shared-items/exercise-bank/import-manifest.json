@@ -2373,7 +2373,7 @@
     }
   ],
   "academic_audit": "AUTHOR_REVIEW_18_DRAFTS_AND_709_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
-  "interaction_conversion": "IN_PROGRESS_CP122_CD01_CD02_CONTENT_COMPLETE_83_CHOICE_CANDIDATES_AUTO_GRADE_DISABLED",
+  "interaction_conversion": "IN_PROGRESS_CP125_CD01_CD05_CONTENT_COMPLETE_248_CHOICE_CANDIDATES_AUTO_GRADE_DISABLED",
   "release_authorization": false,
   "import_batches": [
     {
@@ -23003,6 +23003,1061 @@
       },
       "handoff": "Integrate only on owner authorization; candidate reveal and score /16 after whole submission, no pre-submit hints, no mastery. Preserve old PASS snapshot and canonical ID; verify rendering, Golden and protected runtime in RELEASE. Resolve two skill metadata mappings before final cutover.",
       "next": "STOP after CD02 per owner. Do not begin CD03."
+    },
+    "exercise_completion_cp123_cp125": {
+      "scope": "Owner approved grouped authoring, CD03–CD05; completed content within this candidate scope, not release readiness",
+      "baseline": "2a20bcaef182b2d32e3e5fb40ed0d4982e180bd1",
+      "head_before_manifest": "9bf02b7907d61ea54e1c45444ea2ab4095ac056e",
+      "standard": "Q01–Q18 v3.2.0 X-G.5/X-G.6 owner-approved candidate #1091",
+      "status": "AUTHORING_BANK_CD03_CD05_CONTENT_COMPLETE_SKILL_METADATA_AND_RELEASE_PENDING",
+      "group_inventory": {
+        "unique": 185,
+        "interactive": 165,
+        "written": 20,
+        "practice_total": 144,
+        "practice_interactive": 124,
+        "vandung_placements": 47,
+        "vandung_reuses": 6,
+        "selfcheck_reuses": 47,
+        "placements": 238,
+        "choices": 660,
+        "outcomes": 47,
+        "shared_sgk_interactive": 47,
+        "shared_sgk_written": 10
+      },
+      "reports": [
+        {
+          "topic": "CD03",
+          "title": "Phương trình đại số và kỹ thuật chuyển đổi dạng",
+          "scope": "Existing exercise content candidate; no release activation; verified against current bank source records and original Written sources",
+          "status": "AUTHORING_BANK_CONTENT_COMPLETE_SKILL_MAPPING_PENDING_RELEASE_PENDING",
+          "inventory": {
+            "unique": 43,
+            "interactive": 39,
+            "written": 4,
+            "practice_interactive": 27,
+            "practice_total": 31,
+            "vandung": 12,
+            "vandung_reuses": 0,
+            "selfcheck_reuses": 12,
+            "placements": 55,
+            "choices": 156,
+            "levels": {
+              "RECOGNIZE": 4,
+              "UNDERSTAND": 12,
+              "SYNTHESIS": 5,
+              "APPLY": 18
+            },
+            "groups": {
+              "Biến đổi tương đương, phương trình bậc nhất và tích": 6,
+              "Phương trình bậc hai, phân thức và giá trị tuyệt đối": 6,
+              "Phương trình chứa căn và lọc nghiệm": 13,
+              "Đặt ẩn phụ và mô hình thực tế": 6
+            }
+          },
+          "outcomes": [
+            {
+              "id": "TOP03-O01",
+              "practice": [
+                "THPT-TOP03-ADD01",
+                "THPT-TOP03-ADD02"
+              ],
+              "selfcheck": [
+                "THPT-TOP03-ADD01"
+              ],
+              "vandung": "THPT-TOP03-KFT01"
+            },
+            {
+              "id": "TOP03-O02",
+              "practice": [
+                "THPT-TOP03-ADD03",
+                "THPT-TOP03-ADD04"
+              ],
+              "selfcheck": [
+                "THPT-TOP03-ADD03"
+              ],
+              "vandung": "THPT-TOP03-KFT02"
+            },
+            {
+              "id": "TOP03-O03",
+              "practice": [
+                "THPT-TOP03-ADD05",
+                "THPT-TOP03-ADD06"
+              ],
+              "selfcheck": [
+                "THPT-TOP03-ADD05"
+              ],
+              "vandung": "THPT-TOP03-KFT03"
+            },
+            {
+              "id": "TOP03-O04",
+              "practice": [
+                "THPT-TOP03-ADD08",
+                "THPT-TOP03-ADD07"
+              ],
+              "selfcheck": [
+                "THPT-TOP03-ADD07"
+              ],
+              "vandung": "THPT-TOP03-KFT04"
+            },
+            {
+              "id": "TOP03-O05",
+              "practice": [
+                "THPT-TOP03-ADD09",
+                "THPT-TOP03-ADD10"
+              ],
+              "selfcheck": [
+                "THPT-TOP03-ADD09"
+              ],
+              "vandung": "THPT-TOP03-KFT05"
+            },
+            {
+              "id": "TOP03-O06",
+              "practice": [
+                "THPT-TOP03-ADD11",
+                "THPT-TOP03-ADD12"
+              ],
+              "selfcheck": [
+                "THPT-TOP03-ADD11"
+              ],
+              "vandung": "THPT-TOP03-KFT06"
+            },
+            {
+              "id": "TOP03-O07",
+              "practice": [
+                "THPT-TOP03-ADD14",
+                "THPT-TOP03-ADD13"
+              ],
+              "selfcheck": [
+                "THPT-TOP03-ADD13"
+              ],
+              "vandung": "THPT-TOP03-KFT07"
+            },
+            {
+              "id": "TOP03-O08",
+              "practice": [
+                "THPT-G10-B18-C02",
+                "THPT-TOP03-ADD15",
+                "HPT-G10-CHVI-WRI-18-01"
+              ],
+              "selfcheck": [
+                "THPT-G10-B18-C02"
+              ],
+              "vandung": "THPT-TOP03-KFT08"
+            },
+            {
+              "id": "TOP03-O09",
+              "practice": [
+                "THPT-G10-B18-C01",
+                "THPT-G10-B18-P02",
+                "THPT-TOP03-ADD16",
+                "THPT-G10-B18-P01"
+              ],
+              "selfcheck": [
+                "THPT-G10-B18-C01"
+              ],
+              "vandung": "THPT-TOP03-KFT09"
+            },
+            {
+              "id": "TOP03-O10",
+              "practice": [
+                "THPT-G10-B18-P03",
+                "THPT-TOP03-ADD18",
+                "THPT-TOP03-ADD17",
+                "THPT-TOP03-W01"
+              ],
+              "selfcheck": [
+                "THPT-G10-B18-P03"
+              ],
+              "vandung": "THPT-TOP03-KFT10"
+            },
+            {
+              "id": "TOP03-O11",
+              "practice": [
+                "THPT-TOP03-ADD19",
+                "THPT-TOP03-ADD20"
+              ],
+              "selfcheck": [
+                "THPT-TOP03-ADD19"
+              ],
+              "vandung": "THPT-TOP03-KFT11"
+            },
+            {
+              "id": "TOP03-O12",
+              "practice": [
+                "THPT-G10-B18-P04",
+                "HPT-G10-CHVI-WRI-18-02",
+                "THPT-TOP03-ADD21",
+                "THPT-TOP03-W02"
+              ],
+              "selfcheck": [
+                "THPT-G10-B18-P04"
+              ],
+              "vandung": "THPT-TOP03-KFT12"
+            }
+          ],
+          "files": [
+            {
+              "path": "items/cd03.json",
+              "sha": "d9070bb33df13c4ca2dac756d0172180283a1d12"
+            },
+            {
+              "path": "items/topic-knowledge-first-try.json",
+              "sha": "8834f4f9a4d819d3fccfcd20445e7d8665988e72"
+            },
+            {
+              "path": "placements/cd03.json",
+              "sha": "e6c7efdf430ee3b9388039e76033325f1b115f6c"
+            },
+            {
+              "path": "placements/topic-knowledge-first-try.json",
+              "sha": "741b8b770812bc627cb532f8a51f0b1d25b15dfd"
+            },
+            {
+              "path": "written-references.json",
+              "sha": "59e261f2357a31ab357ffc1a0c70c40e0a9281f2"
+            },
+            {
+              "path": "items/g10-chvi.json",
+              "sha": "de20ba619f6d3891fef8b382b34f55909392ee2b"
+            }
+          ],
+          "written_sources": [
+            {
+              "item_id": "HPT-G10-CHVI-WRI-18-01",
+              "path": "docs/thpt-preview/thu-vien/tu-luan.md",
+              "blob": "4da918f36d30c9b7110099e81fc88943e5b7705b",
+              "previous_blob": null
+            },
+            {
+              "item_id": "HPT-G10-CHVI-WRI-18-02",
+              "path": "docs/thpt-preview/thu-vien/tu-luan.md",
+              "blob": "4da918f36d30c9b7110099e81fc88943e5b7705b",
+              "previous_blob": null
+            },
+            {
+              "item_id": "THPT-TOP03-W01",
+              "path": "prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md",
+              "blob": "dca39a5cd38b03885dccd3876acf4a41273522b8",
+              "previous_blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65"
+            },
+            {
+              "item_id": "THPT-TOP03-W02",
+              "path": "prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md",
+              "blob": "dca39a5cd38b03885dccd3876acf4a41273522b8",
+              "previous_blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65"
+            }
+          ],
+          "rubric_totals": [
+            5,
+            6,
+            7,
+            7
+          ],
+          "source_evidence": {
+            "original": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+            "learner": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+            "sgk": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+            "s1": "Historical SGK G10 T2 B18 pp25–27; source and public original written read; no fresh SGK PDF."
+          },
+          "author_review": {
+            "math": "Reversible operations, parameter zero cases m=1/2, product-zero, discriminant, excluded denominator roots, absolute-value sign cases, all radical domains and signs, quartic substitution, ladder 6/8/10, rate model v=30/40. Written W01 roots (3±√33)/2, only plus root for x−1 and both for absolute value; W02 40/60 km/h, times 3/2 h. SGK original 5-/6-point rubrics reviewed; historical HTML source preserved, its raw notation projection must be normalized at release intake, no edits to docs.",
+            "all_stems_keys_choices_hints_and_solutions_author_reviewed": true,
+            "notation": "delimiter and raw symbol targeted scan passed on interactive fields, no browser/MathJax claim",
+            "skill_mapping_pending": [
+              "THPT-TOP03-ADD04",
+              "THPT-TOP03-ADD05",
+              "THPT-TOP03-ADD06",
+              "THPT-TOP03-ADD07",
+              "THPT-TOP03-ADD08",
+              "THPT-TOP03-ADD09",
+              "THPT-TOP03-ADD10",
+              "THPT-TOP03-ADD11",
+              "THPT-TOP03-ADD12",
+              "THPT-TOP03-ADD19",
+              "THPT-TOP03-ADD20",
+              "THPT-TOP03-KFT02",
+              "THPT-TOP03-KFT03",
+              "THPT-TOP03-KFT04",
+              "THPT-TOP03-KFT05",
+              "THPT-TOP03-KFT06",
+              "THPT-TOP03-KFT11"
+            ],
+            "score_model": {
+              "candidate_only": true,
+              "mode": "COUNT_CORRECT_ITEMS",
+              "maximum": 12,
+              "tests": {
+                "all_correct": 12,
+                "all_wrong": 0,
+                "mixed": 6,
+                "incomplete": null
+              },
+              "production_auto_grade": false
+            },
+            "limitations": "No new independent NotebookLM or fresh direct SGK PDF review, no release QA. Skill IDs without verified precise crosswalk remain pending; existing overlapping parabola vertex/root skills added only where those outcomes tested. CD03 original two shared Written public HTML sections preserved unchanged; typography adaptation at RELEASE, no copied rubric."
+          }
+        },
+        {
+          "topic": "CD04",
+          "title": "Lũy thừa, hàm mũ và lôgarit",
+          "scope": "Existing exercise content candidate; no release activation; verified against current bank source records and original Written sources",
+          "status": "AUTHORING_BANK_CONTENT_COMPLETE_RELEASE_PENDING",
+          "inventory": {
+            "unique": 88,
+            "interactive": 76,
+            "written": 12,
+            "practice_interactive": 63,
+            "practice_total": 75,
+            "vandung": 18,
+            "vandung_reuses": 5,
+            "selfcheck_reuses": 18,
+            "placements": 111,
+            "choices": 304,
+            "levels": {
+              "UNDERSTAND": 30,
+              "APPLY": 25,
+              "SYNTHESIS": 10,
+              "RECOGNIZE": 11
+            },
+            "groups": {
+              "Lũy thừa và điều kiện": 18,
+              "Lôgarit và các quy tắc": 17,
+              "Hàm số mũ, lôgarit và đồ thị": 15,
+              "Phương trình, bất phương trình mũ và lôgarit": 14,
+              "Mô hình tăng giảm và tổng hợp": 11
+            }
+          },
+          "outcomes": [
+            {
+              "id": "TOP04-O01",
+              "practice": [
+                "THPT-G11-CHVI-B18-C01",
+                "THPT-G11-CHVI-B18-C03",
+                "THPT-G11-CHVI-B18-P07",
+                "THPT-TOP04-P01"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B18-C01"
+              ],
+              "vandung": "THPT-TOP04-KFT01"
+            },
+            {
+              "id": "TOP04-O02",
+              "practice": [
+                "THPT-G11-CHVI-B18-C02",
+                "THPT-G11-CHVI-B18-C05",
+                "THPT-G11-CHVI-B18-P02",
+                "THPT-G11-CHVI-B18-P03",
+                "THPT-TOP04-P02"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B18-C02"
+              ],
+              "vandung": "THPT-TOP04-KFT02"
+            },
+            {
+              "id": "TOP04-O03",
+              "practice": [
+                "THPT-G11-CHVI-B18-C04",
+                "THPT-TOP04-P03",
+                "THPT-TOP04-P04"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B18-C04"
+              ],
+              "vandung": "THPT-TOP04-KFT03"
+            },
+            {
+              "id": "TOP04-O04",
+              "practice": [
+                "THPT-G11-CHVI-B18-P01",
+                "THPT-G11-CHVI-B18-P04",
+                "THPT-G11-CHVI-B18-P06",
+                "THPT-TOP04-P05",
+                "THPT-G11-CHVI-B18-W01",
+                "THPT-TOP04-W01"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B18-P01"
+              ],
+              "vandung": "THPT-TOP04-P05"
+            },
+            {
+              "id": "TOP04-O05",
+              "practice": [
+                "THPT-G11-CHVI-B19-C01",
+                "THPT-G11-CHVI-B19-C02",
+                "THPT-G11-CHVI-B19-P03",
+                "THPT-TOP04-P06"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B19-C01"
+              ],
+              "vandung": "THPT-TOP04-P06"
+            },
+            {
+              "id": "TOP04-O06",
+              "practice": [
+                "THPT-G11-CHVI-B19-C03",
+                "THPT-G11-CHVI-B19-P04",
+                "THPT-TOP04-P07",
+                "THPT-G11-CHVI-B19-W01",
+                "THPT-TOP04-P08"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B19-C03"
+              ],
+              "vandung": "THPT-TOP04-KFT06"
+            },
+            {
+              "id": "TOP04-O07",
+              "practice": [
+                "THPT-G11-CHVI-B19-P01",
+                "THPT-G11-CHVI-B19-P02",
+                "THPT-TOP04-P09",
+                "THPT-G11-CHVI-B19-W02-ANCHOR"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B19-P01"
+              ],
+              "vandung": "THPT-TOP04-P09"
+            },
+            {
+              "id": "TOP04-O08",
+              "practice": [
+                "THPT-G11-CHVI-B19-P05",
+                "THPT-TOP04-P10",
+                "THPT-TOP04-P11",
+                "THPT-TOP04-W02"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B19-P05"
+              ],
+              "vandung": "THPT-TOP04-KFT08"
+            },
+            {
+              "id": "TOP04-O09",
+              "practice": [
+                "THPT-G11-CHVI-B20-C01",
+                "THPT-TOP04-P12",
+                "THPT-TOP04-P13"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B20-C01"
+              ],
+              "vandung": "THPT-TOP04-P13"
+            },
+            {
+              "id": "TOP04-O10",
+              "practice": [
+                "THPT-G11-CHVI-B20-C02",
+                "THPT-G11-CHVI-B20-P02",
+                "THPT-TOP04-P14"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B20-C02"
+              ],
+              "vandung": "THPT-TOP04-KFT10"
+            },
+            {
+              "id": "TOP04-O11",
+              "practice": [
+                "THPT-G11-CHVI-B20-C03",
+                "THPT-G11-CHVI-B20-P01",
+                "THPT-TOP04-P15",
+                "THPT-G11-CHVI-B20-P03"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B20-C03"
+              ],
+              "vandung": "THPT-TOP04-KFT11"
+            },
+            {
+              "id": "TOP04-O12",
+              "practice": [
+                "THPT-G11-CHVI-B20-C04",
+                "THPT-TOP04-P16",
+                "THPT-G11-CHVI-B20-P04",
+                "THPT-G11-CHVI-B20-W01",
+                "THPT-G11-CHVI-B20-W02-ANCHOR"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B20-C04"
+              ],
+              "vandung": "THPT-TOP04-KFT12"
+            },
+            {
+              "id": "TOP04-O13",
+              "practice": [
+                "THPT-G11-CHVI-B21-C01",
+                "THPT-G11-CHVI-B21-P01",
+                "THPT-TOP04-P17",
+                "THPT-G11-CHVI-B21-P07"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B21-C01"
+              ],
+              "vandung": "THPT-TOP04-KFT13"
+            },
+            {
+              "id": "TOP04-O14",
+              "practice": [
+                "THPT-G11-CHVI-B21-C02",
+                "THPT-G11-CHVI-B21-P02",
+                "THPT-TOP04-P18",
+                "THPT-TOP04-W03"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B21-C02"
+              ],
+              "vandung": "THPT-TOP04-KFT14"
+            },
+            {
+              "id": "TOP04-O15",
+              "practice": [
+                "THPT-G11-CHVI-B21-C03",
+                "THPT-G11-CHVI-B21-P03",
+                "THPT-TOP04-P19"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B21-C03"
+              ],
+              "vandung": "THPT-TOP04-P19"
+            },
+            {
+              "id": "TOP04-O16",
+              "practice": [
+                "THPT-G11-CHVI-B21-C04",
+                "THPT-G11-CHVI-B21-P04",
+                "THPT-TOP04-P20"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B21-C04"
+              ],
+              "vandung": "THPT-TOP04-KFT16"
+            },
+            {
+              "id": "TOP04-O17",
+              "practice": [
+                "THPT-G11-CHVI-B18-P05",
+                "THPT-TOP04-P21",
+                "THPT-G11-CHVI-B19-P06",
+                "THPT-G11-CHVI-B21-P06",
+                "THPT-G11-CHVI-B18-W02-ANCHOR",
+                "THPT-G11-CHVI-B21-W02-ANCHOR",
+                "THPT-TOP04-W04"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B18-P05"
+              ],
+              "vandung": "THPT-TOP04-KFT17"
+            },
+            {
+              "id": "TOP04-O18",
+              "practice": [
+                "THPT-G11-CHVI-B21-P05",
+                "THPT-G11-CHVI-B21-P08",
+                "THPT-G11-CHVI-B21-W01",
+                "THPT-TOP04-P22"
+              ],
+              "selfcheck": [
+                "THPT-G11-CHVI-B21-P05"
+              ],
+              "vandung": "THPT-TOP04-KFT18"
+            }
+          ],
+          "files": [
+            {
+              "path": "items/cd04.json",
+              "sha": "6cd1692883c0659272de0be2880120058fc7ac27"
+            },
+            {
+              "path": "items/topic-knowledge-first-try.json",
+              "sha": "8834f4f9a4d819d3fccfcd20445e7d8665988e72"
+            },
+            {
+              "path": "placements/cd04.json",
+              "sha": "5ac7184c4082abfcb9291d53f2956849f3269c15"
+            },
+            {
+              "path": "placements/topic-knowledge-first-try.json",
+              "sha": "741b8b770812bc627cb532f8a51f0b1d25b15dfd"
+            },
+            {
+              "path": "written-references.json",
+              "sha": "59e261f2357a31ab357ffc1a0c70c40e0a9281f2"
+            },
+            {
+              "path": "items/g11-chvi.json",
+              "sha": "c0cfbf1e2b69bb1b8816707197cbc0a1afff43e7"
+            }
+          ],
+          "written_sources": [
+            {
+              "item_id": "THPT-G11-CHVI-B18-W01",
+              "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+              "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+              "previous_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872"
+            },
+            {
+              "item_id": "THPT-G11-CHVI-B18-W02-ANCHOR",
+              "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+              "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+              "previous_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872"
+            },
+            {
+              "item_id": "THPT-G11-CHVI-B19-W01",
+              "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+              "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+              "previous_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872"
+            },
+            {
+              "item_id": "THPT-G11-CHVI-B19-W02-ANCHOR",
+              "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+              "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+              "previous_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872"
+            },
+            {
+              "item_id": "THPT-G11-CHVI-B20-W01",
+              "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+              "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+              "previous_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872"
+            },
+            {
+              "item_id": "THPT-G11-CHVI-B20-W02-ANCHOR",
+              "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+              "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+              "previous_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872"
+            },
+            {
+              "item_id": "THPT-G11-CHVI-B21-W01",
+              "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+              "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+              "previous_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872"
+            },
+            {
+              "item_id": "THPT-G11-CHVI-B21-W02-ANCHOR",
+              "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+              "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+              "previous_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872"
+            },
+            {
+              "item_id": "THPT-TOP04-W01",
+              "path": "prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md",
+              "blob": "7825a8676a067128f553bfa291a444c965ffb47a",
+              "previous_blob": "377de2e2e9fb6771f02270e8d85e950559669895"
+            },
+            {
+              "item_id": "THPT-TOP04-W02",
+              "path": "prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md",
+              "blob": "7825a8676a067128f553bfa291a444c965ffb47a",
+              "previous_blob": "377de2e2e9fb6771f02270e8d85e950559669895"
+            },
+            {
+              "item_id": "THPT-TOP04-W03",
+              "path": "prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md",
+              "blob": "7825a8676a067128f553bfa291a444c965ffb47a",
+              "previous_blob": "377de2e2e9fb6771f02270e8d85e950559669895"
+            },
+            {
+              "item_id": "THPT-TOP04-W04",
+              "path": "prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md",
+              "blob": "7825a8676a067128f553bfa291a444c965ffb47a",
+              "previous_blob": "377de2e2e9fb6771f02270e8d85e950559669895"
+            }
+          ],
+          "rubric_totals": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            7,
+            7,
+            7,
+            7
+          ],
+          "source_evidence": {
+            "original": "377de2e2e9fb6771f02270e8d85e950559669895",
+            "learner": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+            "sgk": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+            "s1": "Historical SGK G11 ChVI B18–21 reviewed public source; no fresh SGK PDF."
+          },
+          "author_review": {
+            "math": "Negative powers and positive base, odd/even roots, real powers, domain of product logs versus separate logs, log inverse and asymptote, monotonicity and reversed inequalities, parameter existence and uniqueness, discrete threshold vs continuous. Verified 640×.75²=360 and third period 270; 200×1.08³=251.9424 vs simple 248; 100×1.08²=116.64 and ×1.08³=125.9712 >125; 60×1.2³=103.68, first ≥ year3, first > year4.",
+            "all_stems_keys_choices_hints_and_solutions_author_reviewed": true,
+            "notation": "delimiter and raw symbol targeted scan passed on interactive fields, no browser/MathJax claim",
+            "skill_mapping_pending": [],
+            "score_model": {
+              "candidate_only": true,
+              "mode": "COUNT_CORRECT_ITEMS",
+              "maximum": 18,
+              "tests": {
+                "all_correct": 18,
+                "all_wrong": 0,
+                "mixed": 9,
+                "incomplete": null
+              },
+              "production_auto_grade": false
+            },
+            "limitations": "No new independent NotebookLM or fresh direct SGK PDF review, no release QA. Skill IDs without verified precise crosswalk remain pending; existing overlapping parabola vertex/root skills added only where those outcomes tested. CD03 original two shared Written public HTML sections preserved unchanged; typography adaptation at RELEASE, no copied rubric."
+          }
+        },
+        {
+          "topic": "CD05",
+          "title": "Hàm số, đồ thị và phép biến đổi đồ thị",
+          "scope": "Existing exercise content candidate; no release activation; verified against current bank source records and original Written sources",
+          "status": "AUTHORING_BANK_CONTENT_COMPLETE_SKILL_MAPPING_PENDING_RELEASE_PENDING",
+          "inventory": {
+            "unique": 54,
+            "interactive": 50,
+            "written": 4,
+            "practice_interactive": 34,
+            "practice_total": 38,
+            "vandung": 17,
+            "vandung_reuses": 1,
+            "selfcheck_reuses": 17,
+            "placements": 72,
+            "choices": 200,
+            "levels": {
+              "RECOGNIZE": 5,
+              "UNDERSTAND": 21,
+              "APPLY": 19,
+              "SYNTHESIS": 5
+            },
+            "groups": {
+              "Khái niệm hàm số, tập xác định, tập giá trị và đồ thị": 9,
+              "Tính chất hàm số": 8,
+              "Biến đổi đồ thị": 15,
+              "Hàm từng khoảng và mô hình thực tế": 6
+            }
+          },
+          "outcomes": [
+            {
+              "id": "TOP05-O01",
+              "practice": [
+                "THPT-TOP05-P01",
+                "THPT-TOP05-P02"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P01"
+              ],
+              "vandung": "THPT-TOP05-KFT01"
+            },
+            {
+              "id": "TOP05-O02",
+              "practice": [
+                "THPT-TOP05-P03",
+                "THPT-TOP05-P04"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P03"
+              ],
+              "vandung": "THPT-TOP05-KFT02"
+            },
+            {
+              "id": "TOP05-O03",
+              "practice": [
+                "THPT-TOP05-P06",
+                "THPT-TOP05-P05",
+                "THPT-TOP05-W01"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P05"
+              ],
+              "vandung": "THPT-TOP05-KFT03"
+            },
+            {
+              "id": "TOP05-O04",
+              "practice": [
+                "THPT-TOP05-P07",
+                "THPT-TOP05-P08"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P07"
+              ],
+              "vandung": "THPT-TOP05-KFT04"
+            },
+            {
+              "id": "TOP05-O05",
+              "practice": [
+                "THPT-TOP05-P09",
+                "THPT-TOP05-P10"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P09"
+              ],
+              "vandung": "THPT-TOP05-KFT05"
+            },
+            {
+              "id": "TOP05-O06",
+              "practice": [
+                "THPT-TOP05-P11",
+                "THPT-TOP05-P12"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P11"
+              ],
+              "vandung": "THPT-TOP05-KFT06"
+            },
+            {
+              "id": "TOP05-O07",
+              "practice": [
+                "THPT-TOP05-P14",
+                "THPT-TOP05-P13"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P13"
+              ],
+              "vandung": "THPT-TOP05-P14"
+            },
+            {
+              "id": "TOP05-O08",
+              "practice": [
+                "THPT-TOP05-P15",
+                "THPT-TOP05-P16"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P15"
+              ],
+              "vandung": "THPT-TOP05-KFT08"
+            },
+            {
+              "id": "TOP05-O09",
+              "practice": [
+                "THPT-TOP05-P17",
+                "THPT-TOP05-P18"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P17"
+              ],
+              "vandung": "THPT-TOP05-KFT09"
+            },
+            {
+              "id": "TOP05-O10",
+              "practice": [
+                "THPT-TOP05-P19",
+                "THPT-TOP05-P20"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P19"
+              ],
+              "vandung": "THPT-TOP05-KFT10"
+            },
+            {
+              "id": "TOP05-O11",
+              "practice": [
+                "THPT-TOP05-P21",
+                "THPT-TOP05-P22"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P21"
+              ],
+              "vandung": "THPT-TOP05-KFT11"
+            },
+            {
+              "id": "TOP05-O12",
+              "practice": [
+                "THPT-TOP05-P23",
+                "THPT-TOP05-P24"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P23"
+              ],
+              "vandung": "THPT-TOP05-KFT12"
+            },
+            {
+              "id": "TOP05-O13",
+              "practice": [
+                "THPT-TOP05-P25",
+                "THPT-TOP05-P26"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P25"
+              ],
+              "vandung": "THPT-TOP05-KFT13"
+            },
+            {
+              "id": "TOP05-O14",
+              "practice": [
+                "THPT-TOP05-P28",
+                "THPT-TOP05-P27"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P27"
+              ],
+              "vandung": "THPT-TOP05-KFT14"
+            },
+            {
+              "id": "TOP05-O15",
+              "practice": [
+                "THPT-TOP05-P29",
+                "THPT-TOP05-P30",
+                "THPT-TOP05-W02"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P29"
+              ],
+              "vandung": "THPT-TOP05-KFT15"
+            },
+            {
+              "id": "TOP05-O16",
+              "practice": [
+                "THPT-TOP05-P31",
+                "THPT-TOP05-P32",
+                "THPT-TOP05-W03"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P31"
+              ],
+              "vandung": "THPT-TOP05-KFT16"
+            },
+            {
+              "id": "TOP05-O17",
+              "practice": [
+                "THPT-TOP05-P34",
+                "THPT-TOP05-P33",
+                "THPT-TOP05-W04"
+              ],
+              "selfcheck": [
+                "THPT-TOP05-P33"
+              ],
+              "vandung": "THPT-TOP05-KFT17"
+            }
+          ],
+          "files": [
+            {
+              "path": "items/cd05.json",
+              "sha": "ee2ef70e222a76aff03e78b5463274a8f157c0dd"
+            },
+            {
+              "path": "items/topic-knowledge-first-try.json",
+              "sha": "8834f4f9a4d819d3fccfcd20445e7d8665988e72"
+            },
+            {
+              "path": "placements/cd05.json",
+              "sha": "7c055d57469e3224c2d8f8ae0d6a579579b6dff1"
+            },
+            {
+              "path": "placements/topic-knowledge-first-try.json",
+              "sha": "741b8b770812bc627cb532f8a51f0b1d25b15dfd"
+            },
+            {
+              "path": "written-references.json",
+              "sha": "59e261f2357a31ab357ffc1a0c70c40e0a9281f2"
+            }
+          ],
+          "written_sources": [
+            {
+              "item_id": "THPT-TOP05-W01",
+              "path": "prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md",
+              "blob": "5b979a7eac643cd1afed0a09527316892e1a6db2",
+              "previous_blob": "ab878f1a18dea87872449a79c27b75a612d81b39"
+            },
+            {
+              "item_id": "THPT-TOP05-W02",
+              "path": "prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md",
+              "blob": "5b979a7eac643cd1afed0a09527316892e1a6db2",
+              "previous_blob": "ab878f1a18dea87872449a79c27b75a612d81b39"
+            },
+            {
+              "item_id": "THPT-TOP05-W03",
+              "path": "prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md",
+              "blob": "5b979a7eac643cd1afed0a09527316892e1a6db2",
+              "previous_blob": "ab878f1a18dea87872449a79c27b75a612d81b39"
+            },
+            {
+              "item_id": "THPT-TOP05-W04",
+              "path": "prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md",
+              "blob": "5b979a7eac643cd1afed0a09527316892e1a6db2",
+              "previous_blob": "ab878f1a18dea87872449a79c27b75a612d81b39"
+            }
+          ],
+          "rubric_totals": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "source_evidence": {
+            "original": "ab878f1a18dea87872449a79c27b75a612d81b39",
+            "learner": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+            "sgk": null,
+            "s1": "Historical Topic source and SGK outcome crosswalk (G10 B15/B16, extended graph transforms); no fresh SGK PDF."
+          },
+          "author_review": {
+            "math": "Single-valuedness including repeated equal pairs; domain intersections; discrete vs interval image; exact range via inverse witness; negative-side monotonicity; vertex outside feasible set; parity requires symmetric domain; finite samples do not prove periodicity; shifts, reflections, co/giãn and absolute value; piecewise open/closed endpoints, fee threshold; tied integer maximizers 5 and 6 (24.75); W01 semicircle range [0,2] with witness, W02 vertex (−3,4), intercept −14, roots −3±√2, W03 jump up 3, W04 feasible restricted optimal q=5, 15 vs 12.",
+            "all_stems_keys_choices_hints_and_solutions_author_reviewed": true,
+            "notation": "delimiter and raw symbol targeted scan passed on interactive fields, no browser/MathJax claim",
+            "skill_mapping_pending": [
+              "THPT-TOP05-P07",
+              "THPT-TOP05-P13",
+              "THPT-TOP05-P14",
+              "THPT-TOP05-P15",
+              "THPT-TOP05-P16",
+              "THPT-TOP05-P18",
+              "THPT-TOP05-P21",
+              "THPT-TOP05-P22",
+              "THPT-TOP05-P23",
+              "THPT-TOP05-P24",
+              "THPT-TOP05-P25",
+              "THPT-TOP05-P26",
+              "THPT-TOP05-P27",
+              "THPT-TOP05-KFT08",
+              "THPT-TOP05-KFT11",
+              "THPT-TOP05-KFT12",
+              "THPT-TOP05-KFT14"
+            ],
+            "score_model": {
+              "candidate_only": true,
+              "mode": "COUNT_CORRECT_ITEMS",
+              "maximum": 17,
+              "tests": {
+                "all_correct": 17,
+                "all_wrong": 0,
+                "mixed": 8,
+                "incomplete": null
+              },
+              "production_auto_grade": false
+            },
+            "limitations": "No new independent NotebookLM or fresh direct SGK PDF review, no release QA. Skill IDs without verified precise crosswalk remain pending; existing overlapping parabola vertex/root skills added only where those outcomes tested. CD03 original two shared Written public HTML sections preserved unchanged; typography adaptation at RELEASE, no copied rubric."
+          }
+        }
+      ],
+      "untouched": [
+        {
+          "path": "items/g10-chvi.json",
+          "unchanged": true,
+          "outside_count": 42
+        },
+        {
+          "path": "items/g11-chvi.json",
+          "unchanged": true,
+          "outside_count": 4
+        },
+        {
+          "path": "items/topic-knowledge-first-try.json",
+          "unchanged": true,
+          "outside_count": 352
+        },
+        {
+          "path": "placements/topic-knowledge-first-try.json",
+          "unchanged": true,
+          "outside_count": 367
+        },
+        {
+          "path": "written-references.json",
+          "unchanged": true,
+          "outside_count": 305
+        }
+      ],
+      "source_section_scope": "Exact comparison excluding revised Written sections confirmed non-Written content unchanged in 4 original source files; 18 revised sections and 2 preserved original SGK B18 HTML source sections.",
+      "handoff": "Keep original ID/role and historical snapshots. Reuse same item across SGK/Topic, reveal/score only after whole submission for public selfcheck; all candidate auto_grade=false; no official mastery. Resolve skill metadata and two historic HTML typography deltas at intake, no runtime or public source modifications before release authorization. No fresh PDF direct audit or new independent review claimed.",
+      "next": "STOP after CD05 for this group; next group CD06 onward on owner direction."
     }
   }
 }
