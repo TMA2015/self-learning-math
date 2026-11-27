@@ -6381,7 +6381,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-E01-HALF_LIFE"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Rubric /4 chung cần phân điểm riêng theo (a)–(d), chấp nhận cách tính tương đương."
   },
   {
     "item_id": "THPT-G11-SUPP-E01-W02",
@@ -6395,7 +6403,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-E01-DECIBEL_SCALE"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Rubric /4 chung; câu (d) cần diễn đạt rõ không suy độ to cảm nhận từ tỉ số cường độ vật lý."
   },
   {
     "item_id": "THPT-G11-SUPP-E01-W03",
@@ -6409,7 +6425,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-E01-MODEL_ASSUMPTIONS"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Rubric /4 chung; làm rõ N(3)=899,8912 là giá trị mô hình, quy ước làm tròn cá thể."
   },
   {
     "item_id": "THPT-G11-SUPP-E02-W01",
@@ -6423,7 +6447,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-E02-LINE_PLANE_MEASURE"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Rubric /4 chung; nêu rõ hình chiếu của tia sáng trên nền là phương/đoạn bóng cọc."
   },
   {
     "item_id": "THPT-G11-SUPP-E02-W02",
@@ -6437,7 +6469,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-E02-VOLUME_MODEL"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Rubric /4 chung; lời giải (d) nhắc lại tỉ số 1/3, chưa giải thích cơ sở công thức."
   },
   {
     "item_id": "THPT-G11-SUPP-E02-W03",
@@ -6451,7 +6491,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-E02-GEOGEBRA_REPRESENTATION"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Rubric /4 chung; cần chấm riêng cấu trúc hai đáy, nối đỉnh, nét khuất và điều kiện lăng trụ đứng."
   },
   {
     "item_id": "THPT-G11-YR-TRIG-W01",
@@ -6465,7 +6513,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-YR-TRIG_IDENTITY"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-TRIG-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Rubric 'Hai nghiệm/2 điểm 1đ' mơ hồ; cần phân rõ 1 điểm cho hai nghiệm."
   },
   {
     "item_id": "THPT-G11-YR-SEQ-W01",
@@ -6479,7 +6535,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-YR-SEQUENCE_MODEL"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-SEQ-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-YR-LIMIT-W01",
@@ -6493,7 +6556,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-YR-LIMIT_CONTINUITY"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-LIMIT-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-YR-EXPL-W01",
@@ -6507,7 +6577,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-YR-EXP_LOG_DOMAIN"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-EXPL-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-YR-DERIV-W01",
@@ -6521,7 +6598,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-YR-DERIVATIVE_RATE"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-DERIV-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Câu (d) nên nói rõ t tính bằng giây."
   },
   {
     "item_id": "THPT-G11-YR-SPACE-W01",
@@ -6535,7 +6620,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-YR-SPACE_PERP_DISTANCE"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-SPACE-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Gần trùng THPT-G11-YR-SPACE-P02; giữ yêu cầu chứng minh tự luận, kiểm độc lập/độ sâu ở Delta. Lời giải cần nói rõ đoạn xiên không cho khoảng cách."
   },
   {
     "item_id": "THPT-G11-YR-VOLUME-W01",
@@ -6549,7 +6642,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-YR-SPACE_VOLUME"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-VOLUME-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-YR-STAT-W01",
@@ -6563,7 +6663,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G11-YR-GROUPED_STATS"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-STAT-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Tần số lớn nhất đồng hạng; kiểm cách diễn đạt mốt dữ liệu gốc và giả định nội suy."
   },
   {
     "item_id": "THPT-G11-YR-PROB-W01",
@@ -6577,7 +6685,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-YR-PROBABILITY_COMBINE"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-PROB-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-YR-IND-W01",
@@ -6591,7 +6706,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-YR-PROBABILITY_INDEP"
+    ],
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-IND-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-EXP01-W01",
