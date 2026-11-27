@@ -24364,6 +24364,140 @@
         "limitations": "No fresh direct SGK PDF audit, independent NotebookLM verdict, browser or runtime QA; 2 skill mappings unresolved; no full Q18/RELEASE clearance."
       },
       "handoff": "Continue CD10–11; no merge/deploy or edits to runtime, RD1, Final Submit, Mastery, Firebase or Golden UI."
+    },
+    "exercise_completion_cp130_cp131": {
+      "scope": "Owner-directed CD10–11 authoring candidate, completed content and candidate placement",
+      "baseline": "7f0ab943d8cce34e917cd24378f8d68b7c5e39b9",
+      "head_before_manifest": "045a75ff3a6c468a6761eb878e177892aa7bc40b",
+      "standard": "Q01–Q18 v3.2.0 X-G.5/X-G.6 #1091",
+      "status": "AUTHORING_BANK_CD10_CD11_CONTENT_COMPLETE_SCOPED_DELTA_AND_RELEASE_PENDING",
+      "group_inventory": {
+        "unique": 291,
+        "interactive": 245,
+        "written": 46,
+        "choices": 980,
+        "practice_total": 236,
+        "practice_interactive": 190,
+        "vandung_placements": 58,
+        "vandung_reuses": 3,
+        "selfcheck_reuses": 58,
+        "placements": 352,
+        "outcomes": 58,
+        "skill_mapping_pending": 0,
+        "overlap_with_cd01_cd09": 0,
+        "cumulative_unique_cd01_cd11": 940,
+        "cumulative_interactive": 826,
+        "cumulative_written": 114
+      },
+      "reports": [
+        {
+          "topic": "CD10",
+          "title": "Ứng dụng đạo hàm",
+          "unique": 153,
+          "interactive": 135,
+          "written": 18,
+          "practice": 120,
+          "practice_interactive": 102,
+          "vandung": 36,
+          "vandung_reuses": 3,
+          "replay": 36,
+          "placements": 192,
+          "choices": 540,
+          "outcomes": 36,
+          "levels": {
+            "RECOGNIZE": 14,
+            "UNDERSTAND": 44,
+            "APPLY": 54,
+            "SYNTHESIS": 23
+          },
+          "groups": [
+            18,
+            19,
+            21,
+            22,
+            23,
+            17
+          ],
+          "rubrics": {
+            "/4": 12,
+            "/7": 6
+          },
+          "math": "Monotonicity across disconnected domain, critical/end points including nondifferentiable, attained vs unattained extrema, one-sided asymptotes and removable points, full graph survey, speed vs velocity, marginal cost vs finite change, feasible continuous/integer optimization. Reviewed existing Written and preserved active B01-W01/W02 approved solution delta. W01 and W03 distinct variants replacing overlap with SGK: cubic on [-4;3] and rational (2x²+3)/(x+1). KFT18 exact SVG source copied into candidate branch; no runtime rendering QA."
+        },
+        {
+          "topic": "CD11",
+          "title": "Nguyên hàm và tích phân",
+          "unique": 138,
+          "interactive": 110,
+          "written": 28,
+          "practice": 116,
+          "practice_interactive": 88,
+          "vandung": 22,
+          "vandung_reuses": 0,
+          "replay": 22,
+          "placements": 160,
+          "choices": 440,
+          "outcomes": 22,
+          "levels": {
+            "RECOGNIZE": 3,
+            "UNDERSTAND": 30,
+            "APPLY": 60,
+            "SYNTHESIS": 17
+          },
+          "groups": [
+            37,
+            36,
+            26,
+            17
+          ],
+          "rubrics": {
+            "/5": 22,
+            "/7": 6
+          },
+          "math": "Antiderivative families on intervals, initial conditions, logarithm absolute domain, exponent and trigonometric signs, Newton–Leibniz and reversed bounds, signed displacement vs path length, split integrals for area, cross-section areas, disk/washer. W05 changed square side to x+2, V=56/3 cm³, distinct from SGK original W06; same ID and 7-point rubric."
+        }
+      ],
+      "files": {
+        "placements/cd10.json": "c642d1c540981b6d14b6bcf068930184eed0b62a",
+        "placements/cd11.json": "f32ed0bdb3634a98a4bad0ef3d4d030441c6e0ef",
+        "placements/topic-knowledge-first-try.json": "ef4caa6d94bf570617e0511d641a6f745986d11c",
+        "items/topic-knowledge-first-try.json": "cec134c5f2838afd8d3667ffa4b626f338bdc4be",
+        "items/g12-chi.json": "099191ac36acb00af2ec356339b65be2e0cfaeb4",
+        "items/g12-chi-public-selfcheck.json": "36b14af5eab21ce09edeacd15d428a4b835ae05f",
+        "items/g12-chiv.json": "e7e654e60f4e67755f3e74116ed06557ea527208",
+        "items/cd10.json": "af48992ef87c7577ff034b9ccf324f5a760e187d",
+        "items/cd11.json": "bca96fca75014c0343af1ffce911eade3ace8976",
+        "written-references.json": "c036aaa4eb11378aa884d6162cfe90090c6f3d23"
+      },
+      "sources": [
+        {
+          "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
+          "prior": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+          "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+          "sections": 2,
+          "outside_unchanged": true
+        },
+        {
+          "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
+          "prior": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+          "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+          "sections": 1,
+          "outside_unchanged": true
+        },
+        {
+          "path": "prototypes/thpt/visuals/THPT_TOPIC10_ASYMPTOTE_READING_R01.svg",
+          "blob": "fd95665e72fb029bf5182643ea3888f19bb9732b",
+          "exact_copy": true
+        }
+      ],
+      "qa": {
+        "choice_schema": "245/245 choices have four distinct texts, correct option resolves to key, skill/hint/solution present, auto_grade=false",
+        "outcome_coverage": "58/58 ≥2 practice, 1 Vận dụng, 1 public replay; all 352 placements resolve",
+        "selfcheck": "58 replay placements reuse canonical IDs, AFTER_WHOLE_SUBMISSION, hints_before_submission=false, mastery=false",
+        "outside_scope": "Shared KFT, placements, Written refs, G12 Ch I, Ch I public selfcheck and Ch IV records outside scope structurally unchanged against CP129; source markdown outside changed W sections byte-equal",
+        "limitations": "No fresh direct SGK PDF audit, independent NotebookLM verdict, browser/renderer or runtime QA. 3 materially distinct Written variants require scoped delta review; all original historical receipts remain immutable. Existing CD09 and earlier mapping gaps unchanged."
+      },
+      "handoff": "Stop after CD11. Next CD12 onward only as owner directs. No merge/deploy, no edits to docs/runtime, RD1, Final Submit, Mastery, Firebase or Golden UI."
     }
   }
 }
