@@ -1,10 +1,10 @@
 [
   {
     "item_id": "THPT-TOP07-P01",
-    "content_version": 2,
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P01",
     "stem": "Cho dãy hữu hạn \\(a_n=(-1)^n(2n+1)\\), \\(n\\in\\{0;1;2;3\\}\\). Liệt kê các số hạng; có \\(a_4\\) trong dãy không?",
     "answer_key": "\\(a_0=1,\\ a_1=-3,\\ a_2=5,\\ a_3=-7\\); không có \\(a_4\\).",
-    "worked_solution": "Thế lần lượt \\(n=0,1,2,3\\) cho 1, −3, 5, −7. Miền chỉ số của dãy có 0 nhưng không có 4; tính biểu thức tại \\(n=4\\) được 9 không khiến 9 trở thành số hạng thuộc dãy đã cho.",
+    "worked_solution": "Thế lần lượt \\(n=0,1,2,3\\) cho 1, \\(-3\\), 5, \\(-7\\). Miền chỉ số của dãy có 0 nhưng không có 4; tính biểu thức tại \\(n=4\\) được 9 không khiến 9 trở thành số hạng thuộc dãy đã cho.",
     "skill_ids": [
       "G11-B05-SEQUENCE-DEFINITION"
     ],
@@ -12,25 +12,48 @@
       "TOP07-O01"
     ],
     "problem_type_id": "TOP07-FINITE_INDEX",
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Thế đúng từng chỉ số trong tập \\(\\{0;1;2;3\\}\\)."
     ],
     "remediation": "Nếu ghi \\(a_4\\), kiểm miền chỉ số. Tính được giá trị biểu thức tại một chỉ số ngoài miền không có nghĩa giá trị ấy thuộc dãy. Ôn TOP07-M01; luyện THPT-G11-B05-C01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P01 · TOP07-O01"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(1;-3;5;-7;\\text{có }a_4=9\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(a_0=1,\\ a_1=-3,\\ a_2=5,\\ a_3=-7\\); không có \\(a_4\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(0;3;5;7;\\text{có }a_4\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(1;3;5;7;\\text{không có }a_4\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P02",
-    "content_version": 1,
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P02",
     "stem": "Dãy vô hạn \\(u_n=\\frac{n+1}{2n+1}\\), \\(n\\ge1\\). Tính \\(u_4\\) và xét \\(\\frac12\\) có phải một số hạng hay không.",
     "answer_key": "\\(u_4=\\frac59\\); \\(\\frac12\\) không là số hạng.",
     "worked_solution": "Thế \\(n=4\\) được \\(\\frac59\\). Nếu \\(\\frac{n+1}{2n+1}=\\frac12\\) thì \\(2n+2=2n+1\\), vô lý; không có chỉ số nguyên dương nào thỏa.",
@@ -48,19 +71,42 @@
     "remediation": "Nếu nhận \\(\\frac12\\) vì gần giới hạn, giải phương trình chính xác rồi kiểm n nguyên dương. Ôn TOP07-M02; luyện THPT-G11-B05-P01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P02 · TOP07-O02"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(u_4=5/9;\\text{có }u_n=1/2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(u_4=5/8;\\text{không}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(u_4=\\frac59\\); \\(\\frac12\\) không là số hạng."
+      },
+      {
+        "id": "D",
+        "text": "\\(u_4=4/9;\\text{không}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P03",
-    "content_version": 1,
-    "stem": "Dãy \\(u_1=4,\\ u_{n+1}=2u_n-1\\). Tìm \\(u_2,u_3,u_4\\) và chứng minh công thức \\(u_n=3\\cdot2^{n-1}+1\\).",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P03",
+    "stem": "Dãy \\(u_1=4,\\ u_{n+1}=2u_n-1\\). Tìm \\(u_2,u_3,u_4\\) và chứng minh công thức \\(u_n=3\\cdot2^{n-1}+1\\). Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(u_2=7,\\ u_3=13,\\ u_4=25;\\ u_n=3\\cdot2^{n-1}+1\\).",
     "worked_solution": "Từ truy hồi, \\(u_2=2\\cdot4-1=7\\), \\(u_3=2\\cdot7-1=13\\), \\(u_4=2\\cdot13-1=25\\). Để tìm công thức tổng quát, đặt \\(v_n=u_n-1\\). Khi đó \\(v_{n+1}=u_{n+1}-1=2u_n-2=2v_n\\) và \\(v_1=3\\). Vậy v là cấp số nhân công bội 2, có \\(v_n=3\\cdot2^{n-1}\\). Suy ra \\(u_n=3\\cdot2^{n-1}+1\\) với mọi n nguyên dương.",
     "skill_ids": [
@@ -70,25 +116,48 @@
       "TOP07-O03"
     ],
     "problem_type_id": "TOP07-RECURRENCE_CLOSED",
-    "difficulty": "APPLY",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Đặt \\(v_n=u_n-1\\) để triệt tiêu hằng số truy hồi."
     ],
     "remediation": "Nếu nhầm \\(2u_n-1\\) thành \\(2(u_n-1)\\), khai triển và kiểm \\(v_{n+1}=2v_n\\). Ôn TOP07-M03; luyện THPT-G11-B05-P02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P03 · TOP07-O03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(u_2=8,u_3=16,u_4=32;\\ u_n=4\\cdot2^{n-1}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(u_2=7,u_3=13,u_4=25;\\ u_n=3\\cdot2^n+1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(u_2=7,u_3=13,u_4=25;\\ u_n=4\\cdot2^{n-1}-1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(u_2=7,\\ u_3=13,\\ u_4=25;\\ u_n=3\\cdot2^{n-1}+1\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P04",
-    "content_version": 1,
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P04",
     "stem": "Với \\(u_n=3-\\frac2n\\) (\\(n\\ge1\\)), xét dãy tăng hay giảm bằng hiệu hai số hạng liên tiếp.",
     "answer_key": "Tăng nghiêm ngặt.",
     "worked_solution": "\\(u_{n+1}-u_n=(3-\\frac2{n+1})-(3-\\frac2n)=\\frac2{n(n+1)}>0\\) vì \\(n\\ge1\\). Kết luận tăng với mọi chỉ số thuộc miền.",
@@ -106,19 +175,42 @@
     "remediation": "Nếu chỉ xét vài số đầu, chứng minh hiệu dương với mọi \\(n\\ge1\\). Ôn TOP07-M04; luyện THPT-G11-B05-P03.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P04 · TOP07-O04"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tăng nghiêm ngặt."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{giảm nghiêm ngặt}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\text{hằng}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\text{không tăng không giảm}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P05",
-    "content_version": 1,
-    "stem": "Cho \\(u_n=\\frac{2n+1}{n+2}\\), \\(n\\ge1\\). Chứng minh \\(1\\le u_n<2\\) và cho biết số hạng nào nhận cận dưới 1.",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P05",
+    "stem": "Cho \\(u_n=\\frac{2n+1}{n+2}\\), \\(n\\ge1\\). Chứng minh \\(1\\le u_n<2\\) và cho biết số hạng nào nhận cận dưới 1. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(1\\le u_n<2;\\ u_1=1\\).",
     "worked_solution": "Biến đổi \\(u_n=2-\\frac3{n+2}\\). Vì \\(n\\ge1\\) nên \\(0<\\frac3{n+2}\\le1\\); do đó \\(1\\le u_n<2\\); dấu bằng trái tại \\(n=1\\).",
     "skill_ids": [
@@ -135,21 +227,44 @@
     "remediation": "Nếu cho \\(u_n=2\\) tại một n hữu hạn, kiểm \\(\\frac3{n+2}>0\\). Ôn TOP07-M05; luyện THPT-G11-B05-P08.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P05 · TOP07-O05"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(1\\le u_n<2;\\text{đạt }1\\text{ tại }n=2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(1\\le u_n<2;\\ u_1=1\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(1<u_n\\le2;\\text{không đạt }1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(0<u_n<1\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P06",
-    "content_version": 1,
-    "stem": "Dãy \\(u_n=10-3n\\) (\\(n\\ge1\\)) có là cấp số cộng không? Chứng minh và tìm công sai. Nếu chỉ biết bốn số đầu 7; 4; 1; −2 thì có chắc mọi số tiếp theo theo quy luật này không?",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P06",
+    "stem": "Dãy \\(u_n=10-3n\\) (\\(n\\ge1\\)) có là cấp số cộng không? Chứng minh và tìm công sai. Nếu chỉ biết bốn số đầu 7; 4; 1; \\(-2\\) thì có chắc mọi số tiếp theo theo quy luật này không? Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Có, \\(d=-3\\). Chỉ biết bốn số đầu thì chưa đủ kết luận cả dãy là cấp số cộng.",
-    "worked_solution": "\\(u_{n+1}-u_n=[10-3(n+1)]-(10-3n)=-3\\) với mọi \\(n\\ge1\\), nên là CSC. Nếu chỉ biết bốn số đầu, có thể chọn số thứ năm bằng 0 thay vì −5; khi đó bốn số đầu vẫn đúng nhưng hiệu tiếp theo không bằng −3. Do vậy cần công thức hoặc quy luật cho mọi bước.",
+    "worked_solution": "\\(u_{n+1}-u_n=[10-3(n+1)]-(10-3n)=-3\\) với mọi \\(n\\ge1\\), nên là CSC. Nếu chỉ biết bốn số đầu, có thể chọn số thứ năm bằng 0 thay vì \\(-5\\); khi đó bốn số đầu vẫn đúng nhưng hiệu tiếp theo không bằng \\(-3\\). Do vậy cần công thức hoặc quy luật cho mọi bước.",
     "skill_ids": [
       "G11-B06-AP-DEFINITION"
     ],
@@ -157,25 +272,48 @@
       "TOP07-O06"
     ],
     "problem_type_id": "TOP07-AP_CONSTANT_DIFF",
-    "difficulty": "BASIC",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính \\(u_{n+1}-u_n\\) với n bất kỳ, không chỉ bốn số đầu."
     ],
     "remediation": "Nếu kết luận chỉ từ vài số đầu, kiểm hiệu tổng quát hoặc tìm một cách nối tiếp khác. Ôn TOP07-M06; luyện THPT-G11-B06-P02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P06 · TOP07-O06"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(d=-3;\\text{chỉ bốn số đầu đủ kết luận}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{không là CSC}\\)"
+      },
+      {
+        "id": "C",
+        "text": "Có, \\(d=-3\\). Chỉ biết bốn số đầu thì chưa đủ kết luận cả dãy là cấp số cộng."
+      },
+      {
+        "id": "D",
+        "text": "\\(d=3;\\text{chỉ bốn số đầu đủ kết luận}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P07",
-    "content_version": 1,
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P07",
     "stem": "CSC có \\(u_1=-4\\) và \\(d=3\\). Tính \\(u_{20}\\).",
     "answer_key": "53.",
     "worked_solution": "Từ số hạng thứ nhất đến thứ 20 có 19 bước cộng d. \\(u_{20}=-4+19\\cdot3=53\\).",
@@ -193,18 +331,41 @@
     "remediation": "Nếu dùng 20 bước, viết \\(u_1\\) rồi \\(u_2=u_1+d\\), suy ra 19 bước từ số hạng thứ nhất đến số hạng thứ 20. Ôn TOP07-M07; luyện THPT-G11-B06-C02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P07 · TOP07-O07"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(56\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(60\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(19\\)"
+      },
+      {
+        "id": "D",
+        "text": "53."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P08",
-    "content_version": 1,
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P08",
     "stem": "CSC có \\(u_5=14\\) và \\(u_{11}=32\\). Tìm công sai d và \\(u_1\\).",
     "answer_key": "\\(d=3,\\ u_1=2\\).",
     "worked_solution": "Khoảng cách chỉ số là \\(11-5=6\\) bước; \\(d=\\frac{32-14}6=3\\), suy ra \\(u_1=u_5-4d=14-12=2\\).",
@@ -222,18 +383,41 @@
     "remediation": "Nếu chia 18 cho 11 hoặc 5, đếm \\(11-5=6\\) bước. Ôn TOP07-M08; luyện THPT-G11-B06-P01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P08 · TOP07-O08"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(d=3,\\ u_1=2\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(d=18;u_1=-58\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(d=3;u_1=-1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(d=2;u_1=6\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P09",
-    "content_version": 1,
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P09",
     "stem": "CSC có \\(u_1=3,\\ d=4\\). Tính tổng 15 số hạng đầu.",
     "answer_key": "465.",
     "worked_solution": "\\(u_{15}=3+14\\cdot4=59\\). Ghép số hạng đầu và cuối: \\(S_{15}=\\frac{15(3+59)}2=465\\).",
@@ -251,18 +435,41 @@
     "remediation": "Nếu lấy \\(15d\\) thay \\(14d\\), đếm lại số bước, tính \\(u_{15}\\) rồi kiểm \\(S_{15}\\). Ôn TOP07-M09; luyện THPT-G11-B06-P07.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P09 · TOP07-O09"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(885\\)"
+      },
+      {
+        "id": "B",
+        "text": "465."
+      },
+      {
+        "id": "C",
+        "text": "\\(450\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(495\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P10",
-    "content_version": 1,
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P10",
     "stem": "Một khán đài có hàng đầu 12 ghế, mỗi hàng sau thêm 3 ghế. Nếu chỉ có 260 ghế, có thể bố trí tối đa bao nhiêu hàng hoàn chỉnh theo quy luật này? Còn dư bao nhiêu ghế?",
     "answer_key": "10 hàng hoàn chỉnh, dư 5 ghế.",
     "worked_solution": "Tổng n hàng là \\(S_n=\\frac{n[2\\cdot12+(n-1)\\cdot3]}2\\). Vì số ghế mỗi hàng dương, \\(S_n\\) tăng theo n nguyên dương. \\(S_{10}=\\frac{10(12+39)}2=255\\le260\\); \\(S_{11}=255+42=297>260\\). Vậy tối đa 10 hàng hoàn chỉnh, dư \\(260-255=5\\) ghế.",
@@ -273,26 +480,49 @@
       "TOP07-O10"
     ],
     "problem_type_id": "TOP07-AP_REAL_MODEL",
-    "difficulty": "TRANSFER",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Tính số ghế theo hàng, rồi xét tổng tích lũy và giới hạn nguyên."
     ],
     "remediation": "Nếu chọn số hàng không nguyên, kiểm tổng tại hai số hàng liền nhau. Ôn TOP07-M10; luyện THPT-G11-B06-P08.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P10 · TOP07-O10"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(11\\text{ hàng, dư }0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(10\\text{ hàng, dư }20\\)"
+      },
+      {
+        "id": "C",
+        "text": "10 hàng hoàn chỉnh, dư 5 ghế."
+      },
+      {
+        "id": "D",
+        "text": "\\(9\\text{ hàng, dư }44\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P11",
-    "content_version": 1,
-    "stem": "Cho \\(u_n=-3(-2)^{n-1}\\), \\(n\\ge1\\). Chứng minh đây là cấp số nhân, tìm q và \\(u_5\\). Giải thích tại sao dấu luân phiên không làm mất tính cấp số nhân.",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P11",
+    "stem": "Cho \\(u_n=-3(-2)^{n-1}\\), \\(n\\ge1\\). Chứng minh đây là cấp số nhân, tìm q và \\(u_5\\). Giải thích tại sao dấu luân phiên không làm mất tính cấp số nhân. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "CSN \\(q=-2\\); \\(u_5=-48\\).",
     "worked_solution": "Với mọi \\(n\\ge1\\), \\(u_{n+1}=-3(-2)^n=(-2)u_n\\). Do đó CSN có \\(q=-2\\); \\(u_5=-3\\cdot(-2)^4=-48\\). Nhân số âm với số âm cho số dương và ngược lại, nên dấu luân phiên, nhưng hệ số nhân vẫn cố định.",
     "skill_ids": [
@@ -309,20 +539,43 @@
     "remediation": "Nếu bỏ dấu âm của q, kiểm tích với số hạng trước. Ôn TOP07-M11; luyện THPT-G11-B07-P07.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P11 · TOP07-O11"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(q=2;u_5=-48\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(q=-2;u_5=48\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\text{không là CSN do dấu luân phiên}\\)"
+      },
+      {
+        "id": "D",
+        "text": "CSN \\(q=-2\\); \\(u_5=-48\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P12",
-    "content_version": 1,
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P12",
     "stem": "CSN \\(u_1=3,\\ q=-2\\). Tính \\(u_6\\).",
-    "answer_key": "−96.",
+    "answer_key": "\\(-96\\).",
     "worked_solution": "\\(u_6=3(-2)^{6-1}=3(-32)=-96\\). Lũy thừa bậc lẻ của số âm là âm.",
     "skill_ids": [
       "G11-B07-GP-NTH"
@@ -338,18 +591,41 @@
     "remediation": "Nếu tính \\((-2)^6\\), kiểm số mũ \\(n-1=5\\). Ôn TOP07-M12; luyện THPT-G11-B07-P01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P12 · TOP07-O12"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-96\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(96\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(192\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-48\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P13",
-    "content_version": 1,
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P13",
     "stem": "CSN có \\(u_2=6,\\ u_4=54\\), các số hạng liên quan khác 0. Có bao nhiêu cặp \\((u_1;q)\\) thực thỏa điều kiện?",
     "answer_key": "Hai cặp: \\((2;3)\\) và \\((-2;-3)\\).",
     "worked_solution": "\\(\\frac{u_4}{u_2}=q^2=\\frac{54}6=9\\Rightarrow q=3\\) hoặc \\(q=-3\\). Với \\(u_2=u_1q=6\\), suy ra \\(u_1=2\\) khi \\(q=3\\) và \\(u_1=-2\\) khi \\(q=-3\\). Kiểm lại \\(u_4=u_1q^3=54\\) trong cả hai trường hợp.",
@@ -360,26 +636,49 @@
       "TOP07-O13"
     ],
     "problem_type_id": "TOP07-GP_REVERSE",
-    "difficulty": "TRANSFER",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Chia hai số hạng khác 0; giải \\(q^2=9\\) đủ hai nghiệm."
     ],
     "remediation": "Nếu chỉ lấy \\(q=3\\), nhớ phương trình \\(q^2=9\\) còn nghiệm \\(q=-3\\); kiểm cả hai cặp. Ôn TOP07-M13; luyện THPT-G11-B07-P05.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P13 · TOP07-O13"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((6;3),(6;-3)\\)"
+      },
+      {
+        "id": "B",
+        "text": "Hai cặp: \\((2;3)\\) và \\((-2;-3)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\((2;3)\\text{ duy nhất}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((-2;-3)\\text{ duy nhất}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P14",
-    "content_version": 1,
-    "stem": "Hai cấp số nhân cùng \\(u_1=5\\): A có \\(q=2\\), B có \\(q=1\\). Tính tổng sáu số hạng đầu mỗi dãy và giải thích vì sao không dùng chung công thức thương.",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P14",
+    "stem": "Hai cấp số nhân cùng \\(u_1=5\\): A có \\(q=2\\), B có \\(q=1\\). Tính tổng sáu số hạng đầu mỗi dãy và giải thích vì sao không dùng chung công thức thương. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S_6(A)=315\\); \\(S_6(B)=30\\).",
     "worked_solution": "A có \\(q\\ne1\\), \\(S_6=\\frac{5(2^6-1)}{2-1}=315\\). B có \\(q=1\\), sáu số hạng đều bằng 5, \\(S_6=6\\cdot5=30\\). Công thức \\(\\frac{u_1(1-q^n)}{1-q}\\) không xác định tại \\(q=1\\), nên cần xét trường hợp này riêng.",
     "skill_ids": [
@@ -396,21 +695,44 @@
     "remediation": "Nếu chia cho \\(1-q\\) khi \\(q=1\\), dùng tổng n số hạng bằng nhau. Ôn TOP07-M14; luyện THPT-G11-B07-P04.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P14 · TOP07-O14"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S_6(A)=315;S_6(B)=0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(S_6(A)=160;S_6(B)=5\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(S_6(A)=315\\); \\(S_6(B)=30\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S_6(A)=320;S_6(B)=30\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P15",
-    "content_version": 1,
-    "stem": "CSN vô hạn có \\(a_1=9\\), \\(q=-\\frac13\\). Tính \\(S_\\infty\\), tổng ba số hạng đầu \\(S_3\\) và phần dư có dấu \\(S_\\infty-S_3\\); giải thích vì sao phần dư âm.",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P15",
+    "stem": "CSN vô hạn có \\(a_1=9\\), \\(q=-\\frac13\\). Tính \\(S_\\infty\\), tổng ba số hạng đầu \\(S_3\\) và phần dư có dấu \\(S_\\infty-S_3\\); giải thích vì sao phần dư âm. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S_\\infty=\\frac{27}4\\); \\(S_3=7\\); \\(S_\\infty-S_3=-\\frac14\\).",
-    "worked_solution": "\\(|q|=\\frac13<1\\) nên \\(S_\\infty=\\frac9{1+\\frac13}=\\frac{27}4\\). Ba số hạng đầu 9; −3; 1 cho \\(S_3=7\\). Phần dư \\(S_\\infty-S_3=\\frac{27}4-7=-\\frac14\\). Tổng riêng \\(S_3\\) lớn hơn tổng vô hạn vì đuôi bắt đầu bằng số âm \\(-\\frac13\\) và có tổng \\(-\\frac14\\); sai số tuyệt đối là \\(\\frac14\\), không âm.",
+    "worked_solution": "\\(|q|=\\frac13<1\\) nên \\(S_\\infty=\\frac9{1+\\frac13}=\\frac{27}4\\). Ba số hạng đầu 9; \\(-3\\); 1 cho \\(S_3=7\\). Phần dư \\(S_\\infty-S_3=\\frac{27}4-7=-\\frac14\\). Tổng riêng \\(S_3\\) lớn hơn tổng vô hạn vì đuôi bắt đầu bằng số âm \\(-\\frac13\\) và có tổng \\(-\\frac14\\); sai số tuyệt đối là \\(\\frac14\\), không âm.",
     "skill_ids": [
       "G11-B15-GEOMETRIC"
     ],
@@ -418,25 +740,48 @@
       "TOP07-O15"
     ],
     "problem_type_id": "TOP07-GP_INFINITE_REMAINDER",
-    "difficulty": "TRANSFER",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Tính tổng riêng bằng công thức hữu hạn; công thức tổng vô hạn dùng khi \\(|q|<1\\)."
     ],
     "remediation": "Nếu coi tổng riêng là tổng vô hạn, kiểm \\(q^n\\) và dấu của phần dư. Ôn TOP07-M15; luyện THPT-G11-CHV-B15-P06.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P15 · TOP07-O15"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S_\\infty=27/2;S_3=7;S_\\infty-S_3=13/2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(S_\\infty=27/4;S_3=7;S_\\infty-S_3=1/4\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(S_\\infty=7;S_3=7;S_\\infty-S_3=0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(S_\\infty=\\frac{27}4\\); \\(S_3=7\\); \\(S_\\infty-S_3=-\\frac14\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P16",
-    "content_version": 2,
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P16",
     "stem": "Hai mô hình bắt đầu ở kỳ 0 với 50 đơn vị. A tăng 5 đơn vị mỗi kỳ; B tăng 10% so với kỳ trước. Tính \\(A_3,B_3\\) và xác định kỳ nguyên \\(k\\ge0\\) đầu tiên có \\(B_k-A_k\\ge1\\).",
     "answer_key": "\\(A_3=65;\\ B_3=66{,}55\\); \\(k=3\\) là kỳ đầu tiên hiệu ít nhất 1.",
     "worked_solution": "\\(A_k=50+5k;\\ B_k=50(1{,}1)^k\\). Theo \\(k=0,1,2,3\\), A lần lượt 50; 55; 60; 65 và B lần lượt 50; 55; 60,5; 66,55. Hiệu \\(B_k-A_k\\) lần lượt 0; 0; 0,5; 1,55; do đó \\(k=3\\) là chỉ số đầu tiên thỏa điều kiện. Dãy bắt đầu ở kỳ 0, không phải số hạng đầu ở kỳ 1.",
@@ -447,25 +792,48 @@
       "TOP07-O16"
     ],
     "problem_type_id": "TOP07-LINEAR_VS_MULTIPLICATIVE",
-    "difficulty": "UNDERSTAND",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Lập hai công thức tại kỳ 0, so hiệu ở từng kỳ trước ngưỡng."
     ],
     "remediation": "Nếu nhầm tăng 10% trên vốn ban đầu, lập lại từng kỳ theo số dư hiện có. Ôn TOP07-M16; luyện THPT-G11-B07-P06.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P16 · TOP07-O16"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A_3=65;\\ B_3=66{,}55\\); \\(k=3\\) là kỳ đầu tiên hiệu ít nhất 1."
+      },
+      {
+        "id": "B",
+        "text": "\\(A_3=65;B_3=65;k=3\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(A_3=65;B_3=66{,}55;k=2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(A_3=60;B_3=60{,}5;k=3\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P17",
-    "content_version": 1,
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P17",
     "stem": "Gửi 8 triệu đồng theo mô hình lãi kép 5%/năm, không nộp/rút giữa kỳ, chỉ cập nhật cuối mỗi năm. Tìm năm nguyên đầu tiên số dư đạt ít nhất \\(8{,}82\\) triệu và năm đầu tiên vượt \\(8{,}82\\) triệu.",
     "answer_key": "Đạt ít nhất: năm 2; vượt: năm 3.",
     "worked_solution": "\\(V_n=8\\cdot1{,}05^n\\) triệu, n nguyên không âm. \\(V_1=8{,}4<8{,}82\\); \\(V_2=8{,}82\\); \\(V_3=9{,}261>8{,}82\\). Dãy tăng vì \\(1{,}05>1\\) nên lần đầu đạt ngưỡng là năm 2, lần đầu vượt nghiêm là năm 3. Đây là mô hình giả định không tính phí.",
@@ -483,18 +851,41 @@
     "remediation": "Nếu chọn năm 2 khi ngưỡng là 8,82 và yêu cầu vượt, kiểm năm liền sau. Ôn TOP07-M17; luyện THPT-G11-B07-P08.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P17 · TOP07-O17"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\text{đạt năm 1, vượt năm 2}\\)"
+      },
+      {
+        "id": "B",
+        "text": "Đạt ít nhất: năm 2; vượt: năm 3."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\text{đạt năm 2, vượt năm 2}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\text{đạt năm 3, vượt năm 3}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP07-P18",
-    "content_version": 2,
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-P18",
     "stem": "Gửi 40 đơn vị vào CUỐI mỗi kỳ của 3 kỳ, lãi cố định 5%/kỳ, không phí. (a) Số dư ngay sau khoản gửi cuối kỳ 3? (b) Nếu gửi 40 vào ĐẦU mỗi kỳ 1,2,3 thì số dư cuối kỳ 3 lớn hơn bao nhiêu?",
     "answer_key": "(a) 126,1; (b) gửi đầu kỳ được 132,405, nhiều hơn 6,305 đơn vị.",
     "worked_solution": "Gửi cuối kỳ 1, 2, 3 được hưởng tương ứng 2, 1, 0 kỳ lãi: \\(FV_{\\text{cuối}}=40[(1{,}05)^2+1{,}05+1]=126{,}1\\). Gửi đầu kỳ 1, 2, 3 tương ứng thời điểm 0, 1, 2 nên mỗi khoản sinh lãi thêm một kỳ: \\(FV_{\\text{đầu}}=126{,}1\\cdot1{,}05=132{,}405\\). Chênh lệch bằng 6,305. Các mốc thời gian quan trọng hơn tên công thức.",
@@ -505,20 +896,43 @@
       "TOP07-O18"
     ],
     "problem_type_id": "TOP07-ANNUITY_END_PERIOD",
-    "difficulty": "TRANSFER",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Vẽ trục kỳ 0–3, đếm số kỳ lãi của từng khoản gửi."
     ],
     "remediation": "Nếu tính lãi cho khoản vừa gửi cuối kỳ, đếm kỳ thực sự được hưởng lãi. Ôn TOP07-M18; luyện THPT-TOP07-P16.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "f70e2c961dfcf31825d135b61e301cbb4c322767",
       "heading": "## THPT-TOP07-P18 · TOP07-O18"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(132{,}405;126{,}1;\\text{gửi đầu kỳ ít hơn}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(126{,}1;126{,}1;\\text{chênh }0\\)"
+      },
+      {
+        "id": "C",
+        "text": "(a) 126,1; (b) gửi đầu kỳ được 132,405, nhiều hơn 6,305 đơn vị."
+      },
+      {
+        "id": "D",
+        "text": "\\(120;126{,}1;\\text{chênh }6{,}1\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
