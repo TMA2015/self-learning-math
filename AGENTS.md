@@ -53,6 +53,8 @@ Chủ dự án nghiệm thu trực tiếp [HTML CĐ01](https://github.com/TMA201
 
 **Quy cách toán thống nhất — owner 25/11/2026:** trước AUTHORING/RELEASE phần học liệu THPT mới hoặc đang nâng cấp, đọc mục **X-G.5** của [chuẩn gốc Q01–Q18](prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md). AUTHORING chuẩn hóa notation ngay trong nguồn được giao; RELEASE tái sử dụng renderer tương thích cũ và QA công thức đúng scope. Giữ writer-first, không checklist/receipt/NotebookLM riêng, không mở lại PASS lịch sử. Không cấp quyền sửa ngoài scope hoặc merge/deploy.
 
+**Quy cách hình minh họa — owner 27/11/2026:** trước AUTHORING/RELEASE học liệu THPT mới hoặc đang nâng cấp, áp dụng **X-G.6** của [chuẩn gốc Q01–Q18](prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md). Hình gọn, chữ gần normal text Golden tại kích thước thực, nét thanh mảnh vừa phải; tính viewBox/scale và kiểm render responsive. AUTHORING thiết kế đúng nguồn, RELEASE kiểm AP3/AP5; không thêm checklist/chuẩn/gate, không mở lại PASS lịch sử hoặc tự merge/deploy.
+
 **Nguồn quy phạm duy nhất:** [SLM-THPT-QUALITY-ONE v3.2.0](prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md). Phần dưới là lịch sử/quy định còn tương thích; chỗ nào nói chuẩn v3.0.1 đang chờ merge, #763/#807 đang HOLD, hoặc cấm AI Tutor trên Practice thì quyết định hiện hành này và chuẩn v3.2.0 được ưu tiên.
 
 ---
