@@ -1,4 +1,6 @@
 # G12 SGK KNTT Tập Một — Chương III B09–B10 & cuối chương · PUBLIC CANONICAL R00 SOURCE LOCK
+
+**AUTHORING #1090 · 27/11/2026 · scoped Written Delta C candidate:** only `THPT-G12-B09-W03`, `THPT-G12-B09-W04`, `THPT-G12-B10-W03` prompt/rubric alignment and cross-check explanation updated. Original immutable wrapper blob `4e8e462a5c2243583be8c71625a9be3095e48c7b`; original component parity and verdict below apply to that snapshot, not these three edited blocks. All other source content preserved. No new independent verdict or release authorization.
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.0.0
 LEARNING_PATH: SGK_CHAPTER
@@ -239,7 +241,7 @@ Có f=(6,14,12,8) trên bốn lớp liền nhau. n bằng bao nhiêu, n/4 và 3n
 
 #### Item THPT-G12-B09-W03
 - `ITEM_ID`: `THPT-G12-B09-W03` · `OUTCOME_ID`: `G12-CHIII-B09-O03` · `ROLE`: `WRITTEN; ANCHOR_TAG` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Một bảng ban đầu có lớp đầu [0;10), lớp cuối [20;30), tần số dương. Sau thêm 1 quan sát trong [50;60), tính R trước/sau và giải thích điều chưa thể kết luận về IQR.
+- **Đề gốc (tự viết):** Một bảng ban đầu có lớp đầu [0;10), lớp cuối [20;30), tần số dương. Sau thêm 1 quan sát trong [50;60), tính R trước/sau, mức tăng của R và giải thích điều chưa thể kết luận về IQR.
 - **Đáp án canonical:** R trước=30, sau=60; chưa thể xác định IQR từ các cận
 - **Lời giải và lý do:** Cùng đầu 0; biên cuối đổi 30→60; IQR cần toàn bộ tần số tích lũy chứ không chỉ hai lớp biên.
 - **Điều kiện/giới hạn:** Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.
@@ -294,7 +296,7 @@ Có f=(6,14,12,8) trên bốn lớp liền nhau. n bằng bao nhiêu, n/4 và 3n
 
 #### Item THPT-G12-B09-W04
 - `ITEM_ID`: `THPT-G12-B09-W04` · `OUTCOME_ID`: `G12-CHIII-B09-O04` · `ROLE`: `WRITTEN` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Bảng tần số 4 nhóm liên tiếp f=(4,8,12,8): lập tần số cộng dồn, tìm vị trí n/4,3n/4 và hai nhóm chứa Q.
+- **Đề gốc (tự viết):** Bảng tần số 4 nhóm liên tiếp f=(4,8,12,8): lập tần số cộng dồn, tìm vị trí n/4,3n/4 và hai nhóm dùng để nội suy Q1, Q3; giải thích trường hợp vị trí đúng biên chung.
 - **Đáp án canonical:** n=32; cộng dồn 4,12,24,32; Q₁ lớp 2; Q₃ lớp 3 (biên trên)
 - **Lời giải và lý do:** Lập n=32; hai vị trí 8 và 24; dùng cộng dồn nhận đúng lớp. Ở mốc biên trên, nội suy lớp kề cho cùng giá trị nếu lớp liền nhau.
 - **Điều kiện/giới hạn:** Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.
@@ -605,9 +607,9 @@ Một mẫu có phương sai 9 cm². Độ lệch chuẩn mang giá trị và đ
 
 #### Item THPT-G12-B10-W03
 - `ITEM_ID`: `THPT-G12-B10-W03` · `OUTCOME_ID`: `G12-CHIII-B10-O03` · `ROLE`: `WRITTEN; ANCHOR_TAG` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Cho c=(1,3,5,7), f=(1,3,3,1). Tính Σfc², x̄, s² bằng công thức rút gọn và giải thích kiểm bằng công thức gốc.
+- **Đề gốc (tự viết):** Cho c=(1,3,5,7), f=(1,3,3,1). Tính Σfc², x̄, s² bằng công thức rút gọn rồi kiểm lại phương sai bằng công thức gốc.
 - **Đáp án canonical:** Σfc²=152; x̄=4; s²=152/8−16=3
-- **Lời giải và lý do:** n=8; Σfc=32, x̄=4; Σfc²=1+27+75+49=152; s²=19−16=3; khớp tổng f(c−4)²/8=3.
+- **Lời giải và lý do:** n=8; Σfc=32, x̄=4; Σfc²=1+27+75+49=152; s²=19−16=3; kiểm lại bằng công thức gốc: tổng f(c−4)²=9+3+3+9=24; chia 8 được 3, khớp kết quả rút gọn.
 - **Điều kiện/giới hạn:** Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.
 - **Rubric Written /5 (tự đối chiếu, không tự động ghi Mastery):**
   - 1 điểm — Tính n,Σfc
