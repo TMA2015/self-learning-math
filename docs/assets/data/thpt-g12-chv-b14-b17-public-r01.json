@@ -676,7 +676,7 @@
       "level": 3,
       "stem": "Chứng minh u=(1,2,-1) vuông góc v=(2,-1,0) và song song w=(3,6,-3).",
       "answer": "u·v=0 và w=3u",
-      "solution": "u·v=2−2+0=0; w=3u. Cần thêm giao điểm để gọi hai đường thẳng vuông góc hình học.",
+      "solution": "u·v=2−2+0=0; w=3u. Hai đường thẳng có các vectơ chỉ phương này vuông góc với nhau; chưa thể kết luận chúng cắt nhau nếu chưa kiểm tra vị trí.",
       "rubric": [
         "2đ tính dot và kiểm cùng phương đúng; 1đ kết luận hướng vuông góc; 1đ kết luận hướng song song; 1đ phân biệt hướng với quan hệ giao nhau hình học."
       ],

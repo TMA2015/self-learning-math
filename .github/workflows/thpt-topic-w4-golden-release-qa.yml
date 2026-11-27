@@ -39,31 +39,33 @@ jobs:
           if [[ -n "$BASE_SHA" ]]; then
             git diff --no-renames --name-only "$BASE_SHA" HEAD > "$RUNNER_TEMP/rw3-paths.txt"
             node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/rw3-paths.txt"
-            if grep -Fxq 'reason=OWNER_1055_RW3_TAB_LABELS' "$GITHUB_OUTPUT"; then
+            if grep -Fxq 'reason=OWNER_TOPIC_W4_REFRESH' "$GITHUB_OUTPUT"; then
+              node scripts/test-thpt-release-impact.cjs --prove-w4-refresh
+            elif grep -Fxq 'reason=OWNER_1055_RW3_TAB_LABELS' "$GITHUB_OUTPUT"; then
               node scripts/test-thpt-release-impact.cjs --prove-rw3-tabs
             fi
           fi
       - name: Verify exact signed AUTHORING source/Q18 and public projection
-        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS'
+        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.scope.outputs.reason != 'OWNER_TOPIC_W4_REFRESH'
         shell: bash
         run: |
           node --check docs/assets/javascripts/thpt-topic-w4-golden-v1.js
           git fetch --no-tags origin 805feb8080396f7f39ee3b04e3230c5a2bbd135b 97458512ce9343077a4fa350247e3152a6833ce2 25f892c43ad03ed002d61bdb1d5f274cf81c1227
           python3 scripts/test-thpt-topic-w4-source-locked.py
       - uses: actions/setup-python@v5
-        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS'
+        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.scope.outputs.reason != 'OWNER_TOPIC_W4_REFRESH'
         with:
           python-version: '3.12'
       - name: Install MkDocs and scoped browser engines
-        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS'
+        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.scope.outputs.reason != 'OWNER_TOPIC_W4_REFRESH'
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
           python -m playwright install --with-deps chromium webkit
       - name: Build both navigations strictly (no global test)
-        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS'
+        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.scope.outputs.reason != 'OWNER_TOPIC_W4_REFRESH'
         run: |
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: Verify Golden CĐ01 computed styles, 9 W4 pages, SVG/MathJax and public Q16
-        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS'
+        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && steps.scope.outputs.reason != 'OWNER_TOPIC_W4_REFRESH'
         run: python scripts/test-thpt-topic-w4-golden-browser.py

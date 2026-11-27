@@ -28,7 +28,8 @@ hide:
 <span data-topic-w1-source-start="kien-thuc" hidden></span>
 
 <!-- TOPIC17_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 0ef0ad696e97d2549f29c5a22ba675970572a089; Q18_RECEIPT_BLOB bb941ea3563034e0aa779c69118f8ac02355a21e; AUTHORING_PR #853; PUBLIC_PROJECTION_ONLY -->
+
+<!-- Q18 SOURCE_LEARNER_BLOB 03b6b27adbeaf854d3db1d8fc9e830a0294a08aa; Q18_RECEIPT_BLOB 87f927cbcbd9ff4f26ba2a3b2c411a9a9770f82e; AUTHORING_PR #853; PUBLIC_PROJECTION_ONLY -->
 
 # Kiến thức
 
@@ -43,27 +44,27 @@ hide:
 
 **Đọc hình B26 — vì sao đoạn vuông góc ngắn nhất?**
 
-Trong hình, hãy chỉ rõ **M** ở ngoài (P), **H** là chân MH⊥(P) và **K** là điểm khác ở mặt phẳng. Đọc đẳng thức **MK²=MH²+HK²** để thấy MK dài hơn MH nếu K≠H. Hình này **minh họa khoảng cách điểm–mặt**, không phải một hình dựng hai đường chéo nhau. Với hai đường chéo nhau ở mục 1.5, tự vẽ hình mới và kiểm tra hai đầu của đoạn vuông góc chung đều thuộc hai đường, đồng thời đoạn ấy vuông góc với cả hai phương.
+Trong hình, hãy chỉ rõ M ở ngoài \((P)\), H là chân của \(MH\perp(P)\) và K là điểm khác H ở mặt phẳng. Đọc đẳng thức \(MK^2=MH^2+HK^2\) để thấy MK dài hơn MH nếu \(K\ne H\). Hình này **minh họa khoảng cách điểm–mặt**, không phải một hình dựng hai đường chéo nhau. Với hai đường chéo nhau ở mục 1.5, tự vẽ hình mới và kiểm tra hai đầu của đoạn vuông góc chung đều thuộc hai đường, đồng thời đoạn ấy vuông góc với cả hai phương.
 
 ### 1.1. Khoảng cách từ điểm đến đường thẳng
 
-**Ý nghĩa trước công thức.** Hãy tưởng tượng tìm con đường ngắn nhất từ một điểm A đến một thanh thẳng d. Nếu chọn một điểm X bất kì trên d thì AX là một đường xiên. Chỉ khi hạ AH vuông góc d mới có tam giác AHX vuông ở H, từ đó \(AX^2=AH^2+HX^2\). Vì \(HX^2\ge0\), đoạn thẳng ngắn nhất là **AH** và chỉ bằng AX khi X=H. Đây là lí do định nghĩa khoảng cách gắn với phép chiếu vuông góc, không phải một quy ước tùy ý.
+**Ý nghĩa trước công thức.** Hãy tưởng tượng tìm con đường ngắn nhất từ một điểm A đến một thanh thẳng d. Với A nằm ngoài d, hạ AH vuông góc d tại H. Nếu \(X\in d\) và \(X\ne H\), tam giác AHX vuông ở H nên \(AX^2=AH^2+HX^2>AH^2\). Do đó đoạn ngắn nhất là AH; đẳng thức \(AX=AH\) chỉ xảy ra khi \(X=H\). Nếu A thuộc d, khoảng cách bằng 0.
 
 <!-- LESSON_ID: TOP17-M01; OUTCOME_ID: TOP17-O01; S1_ORIGINAL_OUTCOME: G11-B26-POINT_LINE -->
 
 > **ĐỊNH NGHĨA**
 >
-> Khoảng cách từ điểm A đến đường d là độ dài AH với H là chân vuông góc trên d; mọi đoạn AX đến X∈d đều dài không nhỏ hơn AH.
+> Khoảng cách từ điểm A đến đường d là độ dài AH với H là hình chiếu vuông góc của A trên d; mọi đoạn AX đến \(X\in d\) đều dài không nhỏ hơn AH. Nếu A thuộc d thì khoảng cách bằng 0.
 
 **Ví dụ**
 
-**Đề bài:** Cho điểm A nằm ngoài đường thẳng d và H là chân đường vuông góc kẻ từ A đến d. Biết AH=3 cm, X∈d với HX=4 cm. Hãy tính AX và khoảng cách từ A đến d, giải thích tại sao hai độ dài khác nhau.
+**Đề bài:** Cho điểm A nằm ngoài đường thẳng d và H là chân đường vuông góc kẻ từ A đến d. Biết \(AH=3\,\mathrm{cm}\), \(X\in d\) với \(HX=4\,\mathrm{cm}\). Hãy tính AX và khoảng cách từ A đến d, giải thích tại sao hai độ dài khác nhau.
 
-**Lời giải:** Vì H,X∈d nên tam giác AHX vuông ở H, AX=√(3²+4²)=5 cm. Với mọi X∈d, AX²=AH²+HX²≥AH², dấu bằng khi X=H; vì vậy d(A,d)=AH=3 cm, không lấy đường xiên AX làm khoảng cách.
+**Lời giải:** Vì \(H,X\in d\) nên tam giác AHX vuông ở H, \(AX=\sqrt{3^2+4^2}=5\,\mathrm{cm}\). Với mọi \(X\in d\), \(AX^2=AH^2+HX^2\ge AH^2\), dấu bằng khi \(X=H\); vì vậy \(d(A,d)=AH=3\,\mathrm{cm}\), không lấy đường xiên AX làm khoảng cách.
 
 **Vận dụng**
 
-H∈d, AH⊥d, AH=3 cm. d(A,d) bằng bao nhiêu?
+\(H\in d,\ AH\perp d,\ AH=3\,\mathrm{cm}\). Khoảng cách \(d(A,d)\) bằng bao nhiêu?
 
 <!-- ITEM_ID: THPT-TOP17-T01; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O01 -->
 
@@ -73,7 +74,7 @@ H∈d, AH⊥d, AH=3 cm. d(A,d) bằng bao nhiêu?
 
 **Kiểm lỗi**
 
-Nếu lấy đoạn xiên AX làm khoảng cách từ A đến d, trở lại **Kiến thức 1.1**: AH⊥d mới ngắn nhất, với X khác H thì AX²=AH²+HX². Tự thử **Bài luyện 1** và **Bài luyện 12**, tìm chân H trước khi tính.
+Nếu lấy đoạn xiên AX làm khoảng cách từ A đến d, trở lại **Kiến thức 1.1**: \(AH\perp d\) mới cho đoạn ngắn nhất, với X khác H thì \(AX^2=AH^2+HX^2\). Tự thử **Bài luyện 1** và **Bài luyện 12**, tìm chân H trước khi tính.
 
 </details>
 
@@ -85,17 +86,17 @@ Nếu lấy đoạn xiên AX làm khoảng cách từ A đến d, trở lại **
 
 > **ĐỊNH NGHĨA**
 >
-> Khoảng cách từ A đến (P) là độ dài AH của đường vuông góc mặt (P) tại H, và bằng 0 nếu A thuộc (P).
+> Khoảng cách từ A đến \((P)\) là độ dài AH, với H là hình chiếu vuông góc của A lên \((P)\). Nếu A thuộc \((P)\), H trùng A và khoảng cách bằng 0.
 
 **Ví dụ**
 
-**Đề bài:** Cho điểm A(2,−1,4) và (P):z=0. Tìm chân vuông góc H, rồi chứng minh khoảng cách ngắn nhất.
+**Đề bài:** Cho điểm \(A(2;-1;4)\) và \((P):z=0\). Tìm chân vuông góc H, rồi chứng minh khoảng cách ngắn nhất.
 
-**Lời giải:** H=(2,−1,0) vì AH theo phương (0,0,1) vuông góc (P). Với mọi X(x,y,0) trên mặt, AX²=(x−2)²+(y+1)²+16≥16, dấu bằng khi X=H. Do đó d(A,(P))=4, nhỏ hơn mọi đoạn xiên khác.
+**Lời giải:** \(H(2;-1;0)\) vì AH theo phương \((0;0;1)\) vuông góc \((P)\). Với mọi \(X(x;y;0)\) trên mặt, \(AX^2=(x-2)^2+(y+1)^2+16\ge16\), dấu bằng khi \(X=H\). Do đó \(d(A,(P))=4\), nhỏ hơn mọi đoạn xiên khác.
 
 **Vận dụng**
 
-A∈(P). d(A,(P)) bằng bao nhiêu?
+\(A\in(P)\). Khoảng cách \(d(A,(P))\) bằng bao nhiêu?
 
 <!-- ITEM_ID: THPT-TOP17-T02; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O02 -->
 
@@ -111,13 +112,13 @@ Nếu điểm A đã thuộc (P) mà em vẫn cho khoảng cách dương, đọc
 
 ### 1.3. Khoảng cách đường thẳng song song mặt phẳng
 
-**Một đường ở cùng độ cao.** Thanh xà ngang song song sàn: khi ta đi dọc thanh, độ cao không đổi. Không phải vì mọi đoạn nối đến sàn bằng nhau; chỉ **các đoạn vuông góc** mới bằng nhau. Điều kiện d∥(P) rất quan trọng: nếu d nghiêng và cắt sàn, điểm ở gần chân giao có thể có độ cao khác. Kiểm tra điều kiện trước rồi mới lấy một điểm bất kì trên d.
+**Một đường ở cùng độ cao.** Thanh xà ngang song song sàn: khi ta đi dọc thanh, độ cao không đổi. Không phải vì mọi đoạn nối đến sàn bằng nhau; chỉ **các đoạn vuông góc** mới bằng nhau. Điều kiện \(d\parallel(P)\) rất quan trọng: nếu d nghiêng và cắt sàn, điểm ở gần chân giao có thể có độ cao khác. Kiểm tra điều kiện trước rồi mới lấy một điểm bất kì trên d.
 
 <!-- LESSON_ID: TOP17-M03; OUTCOME_ID: TOP17-O03; S1_ORIGINAL_OUTCOME: G11-B26-PARALLEL_LINE_PLANE -->
 
 > **PHƯƠNG PHÁP**
 >
-> Với d∥(P), mọi điểm A của d có cùng khoảng cách đến (P), vì hình chiếu của hai điểm trên d nằm trên một đường song song với d trong (P).
+> Với \(d\parallel(P)\), mọi điểm A của d có cùng khoảng cách đến \((P)\). Thật vậy, với hai điểm A, B trên d và hai hình chiếu H, K trên \((P)\), tứ giác ABKH là hình chữ nhật khi A khác B: \(AB\parallel HK\), \(AH\parallel BK\) và \(AH\perp HK\). Vì vậy \(AH=BK\).
 
 Hai đường thẳng **song song** cũng có khoảng cách không đổi. Giữ nguyên đường \(b\), di chuyển một điểm \(A\) dọc theo đường song song \(a\): các đoạn vuông góc từ \(A\) xuống \(b\) có cùng độ dài. Vì thế ta không cần tìm mọi cặp điểm trên hai đường; chỉ cần chọn một điểm thuận tiện ở \(a\) và hạ vuông góc xuống \(b\).
 
@@ -127,13 +128,13 @@ Chẳng hạn, trong mặt phẳng Oxy, \(a:y=0\) và \(b:y=3\) song song. Chọ
 
 **Ví dụ**
 
-**Đề bài:** Cho d={(t,1,3):t∈ℝ} và (P):z=0. Chứng minh d∥(P) rồi tính khoảng cách.
+**Đề bài:** Cho \(d=\{(t;1;3):t\in\mathbb R\}\) và \((P):z=0\). Chứng minh \(d\parallel(P)\) rồi tính khoảng cách.
 
-**Lời giải:** Mọi điểm của d có z=3 nên không gặp (P), và phương (1,0,0) song song mặt z=0. Lấy A=(0,1,3)∈d, chân H=(0,1,0)∈(P), AH=3. Mọi điểm khác trên d vẫn có độ cao vuông góc 3 nên d(d,(P))=3.
+**Lời giải:** Mọi điểm của d có \(z=3\) nên không gặp \((P)\), và phương \((1;0;0)\) song song mặt \(z=0\). Lấy \(A(0;1;3)\in d\), chân \(H(0;1;0)\in(P)\), \(AH=3\). Mọi điểm khác trên d vẫn có độ cao vuông góc 3 nên \(d(d,(P))=3\).
 
 **Vận dụng**
 
-Đường d∥(P); hai điểm A,B thuộc d. Có d(A,(P))=d(B,(P)) không?
+Đường \(d\parallel(P)\); hai điểm A, B thuộc d. Có \(d(A,(P))=d(B,(P))\) không?
 
 <!-- ITEM_ID: THPT-TOP17-T03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O03 -->
 
@@ -143,7 +144,7 @@ Có, vì khoảng cách đường song song mặt phẳng không đổi theo đi
 
 **Kiểm lỗi**
 
-Nếu dùng bất kì điểm trên d mà chưa chứng minh d∥(P), đọc **Kiến thức 1.3**: khi đường song song phân biệt mặt, độ cao từ mọi điểm trên đường không đổi. Thử **Bài luyện 3** và **Bài luyện 14**.
+Nếu dùng bất kì điểm trên d mà chưa chứng minh \(d\parallel(P)\), đọc **Kiến thức 1.3**: khi đường song song phân biệt mặt, độ cao từ mọi điểm trên đường không đổi. Thử **Bài luyện 3** và **Bài luyện 14**.
 
 </details>
 
@@ -159,9 +160,9 @@ Nếu dùng bất kì điểm trên d mà chưa chứng minh d∥(P), đọc **K
 
 **Ví dụ**
 
-**Đề bài:** Cho hai mặt (P):z=0 và (Q):z=5. Tính khoảng cách giữa hai mặt và chứng minh ngắn nhất.
+**Đề bài:** Cho hai mặt \((P):z=0\) và \((Q):z=5\). Tính khoảng cách giữa hai mặt và chứng minh ngắn nhất.
 
-**Lời giải:** Hai mặt phân biệt có cùng phương pháp tuyến (0,0,1), do đó song song. Với A=(1,2,5)∈Q, H=(1,2,0)∈P, AH=5. Với mọi B=(x,y,0)∈P, AB²=(x−1)²+(y−2)²+25≥25, nên đoạn AH vuông góc chung cho khoảng cách 5.
+**Lời giải:** Hai mặt phân biệt có cùng phương pháp tuyến \((0;0;1)\), do đó song song. Với \(A(1;2;5)\in(Q)\), \(H(1;2;0)\in(P)\), \(AH=5\). Với mọi \(B(x;y;0)\in(P)\), \(AB^2=(x-1)^2+(y-2)^2+25\ge25\), nên đoạn AH vuông góc chung cho khoảng cách 5. Mọi điểm của mặt \((Q)\) đều có độ cao 5 so với \((P)\).
 
 **Vận dụng**
 
@@ -181,7 +182,7 @@ Nếu dùng đoạn xiên nối hai điểm bất kì làm khoảng cách hai m�
 
 ### 1.5. Khoảng cách giữa hai đường chéo nhau
 
-**Khi hai đường chéo nhau, khoảng cách đo ở đâu?** Một cặp đường thẳng trong không gian không song song nhưng không giao nhau: không thể đo khoảng cách bằng cách chọn đại hai đầu mút rồi nối chúng. Phải tìm đoạn MN với M trên đường thứ nhất, N trên đường thứ hai, sao cho MN vuông góc **cả hai**. Trong lập phương, đoạn AD nối A∈AB và D∈DD′ vừa vuông góc AB vừa vuông góc DD′. Dùng phương pháp hình học dựng hai chân, không cần hệ tọa độ Oxyz của lớp 12.
+**Khi hai đường chéo nhau, khoảng cách đo ở đâu?** Một cặp đường thẳng trong không gian không song song nhưng không giao nhau: không thể đo khoảng cách bằng cách chọn đại hai đầu mút rồi nối chúng. Phải tìm đoạn MN với M trên đường thứ nhất, N trên đường thứ hai, sao cho MN vuông góc **cả hai**. Trong lập phương, đoạn AD nối \(A\in AB\) và \(D\in DD'\), vừa vuông góc AB vừa vuông góc \(DD'\). Dùng phương pháp hình học dựng hai chân, không cần hệ tọa độ Oxyz của lớp 12.
 
 <!-- LESSON_ID: TOP17-M05; OUTCOME_ID: TOP17-O05; S1_ORIGINAL_OUTCOME: G11-B26-SKEW_COMMON_PERP -->
 
@@ -191,29 +192,29 @@ Nếu dùng đoạn xiên nối hai điểm bất kì làm khoảng cách hai m�
 
 Có hai cách khác để tính **cùng một khoảng cách** khi dựng trực tiếp đoạn vuông góc chung khó. Ta có thể dựng một mặt phẳng \((Q)\) **chứa \(b\) và song song với \(a\)**; khi ấy \(d(a,b)=d(a,(Q))\). Hoặc dựng hai mặt phẳng \((P)\parallel(Q)\) lần lượt chứa \(a\) và \(b\); khi ấy \(d(a,b)=d((P),(Q))\). Các mặt phẳng phải thỏa **cả điều kiện chứa đường và song song**; không lấy bất kỳ mặt nào gần hai đường rồi áp dụng.
 
-Vì sao hai cách đó hợp lý? Hãy tưởng tượng tịnh tiến đường \(a\) theo phương vuông góc cho đến khi nằm trong mặt \((Q)\). Độ dời ngắn nhất chính là độ dài đoạn vuông góc chung. Trong Ví dụ dưới đây, có thể chọn \((P):z=0\) chứa \(a\) và \((Q):z=4\) chứa \(b\): hai mặt cách nhau \(4\) nên hai đường cũng cách nhau \(4\).
+Vì sao hai cách đó hợp lý? Tịnh tiến đường a theo phương vuông góc với \((Q)\) cho đến khi ảnh của a nằm trong \((Q)\). Ảnh này cắt b vì hai đường có phương khác nhau. Giao điểm N là chân của đoạn vuông góc chung; lấy M là điểm trên a chiếu thành N. Độ dài MN đúng bằng khoảng cách từ a tới \((Q)\). Trong Ví dụ dưới đây, có thể chọn \((P):z=0\) chứa a và \((Q):z=4\) chứa b: hai mặt cách nhau 4 nên hai đường cũng cách nhau 4.
 
 **Vì sao đoạn vuông góc chung là ngắn nhất?** Lấy hai đường chéo nhau \(a,b\). Một đoạn \(MN\) với \(M\in a,N\in b\) chỉ dùng để đo khoảng cách khi \(MN\perp a\) **và** \(MN\perp b\). Nếu nó chỉ vuông góc một trong hai đường, ta còn có thể dịch đầu kia dọc đường thứ hai và rút ngắn đoạn. Khi không dễ dựng trực tiếp \(MN\), chọn mặt phẳng \((Q)\) chứa \(b\) và song song \(a\); đường vuông góc từ \(a\) tới \((Q)\) cho đúng khoảng cách tối thiểu. Điều kiện **\(a\parallel(Q)\), \(b\subset(Q)\)** là bắt buộc.
 
 > **TÍNH CHẤT — Hai đường chéo nhau.** Nếu \(a,b\) chéo nhau thì tồn tại đoạn vuông góc chung duy nhất, và \(d(a,b)=MN=d(a,(Q))\), trong đó \(M\in a,N\in b\), \(MN\perp a,MN\perp b\), còn \((Q)\) chứa \(b\) và song song \(a\). Để dựng trực tiếp, phải kiểm đủ **hai chân nằm đúng hai đường** và đủ **hai vuông góc**.
 
-**Ví dụ minh họa.** Trong Oxyz (dùng tọa độ chỉ để tự kiểm), xét \(a:\{(t,0,0):t\in\mathbb R\}\) và \(b:\{(0,s,3+s):s\in\mathbb R\}\). Hai đường chéo nhau vì hướng \((1,0,0)\) và \((0,1,1)\) không song song và không có điểm chung. Chọn \(M(0,0,0)\in a\), \(N(0,-3/2,3/2)\in b\), khi đó \(\overrightarrow{MN}=(0,-3/2,3/2)\) vuông góc cả hai vectơ chỉ phương (tích vô hướng lần lượt là \(0\) và \(-3/2+3/2=0\)). Do đó \(d(a,b)=MN=\frac{3}{\sqrt2}\), **không phải** \(3\) chỉ vì ở \(s=0\) điểm trên đường \(b\) cao \(3\). Không bắt buộc dùng công thức tọa độ khi giải hình không gian lớp 11; ví dụ cho thấy phải chọn đúng đoạn ngắn nhất.
+**Ví dụ minh họa.** Trong Oxyz (dùng tọa độ chỉ để tự kiểm), xét \(a=\{(t;0;0):t\in\mathbb R\}\) và \(b=\{(0;s;3+s):s\in\mathbb R\}\). Hai đường chéo nhau vì hướng \((1;0;0)\) và \((0;1;1)\) không song song và không có điểm chung. Chọn \(M(0;0;0)\in a\), \(N(0;-\frac32;\frac32)\in b\), khi đó \(\overrightarrow{MN}=(0;-\frac32;\frac32)\) vuông góc cả hai vectơ chỉ phương (tích vô hướng lần lượt là 0 và \(-\frac32+\frac32=0\)). Do đó \(d(a,b)=MN=\frac3{\sqrt2}\), **không phải** 3 chỉ vì ở \(s=0\) điểm trên đường b cao 3. Không bắt buộc dùng công thức tọa độ khi giải hình không gian lớp 11; ví dụ cho thấy phải chọn đúng đoạn ngắn nhất.
 
 **Ví dụ**
 
-**Đề bài:** Hai đường a={(t,0,0)}, b={(0,s,4)}, t,s thực. Chứng minh chéo nhau và tìm khoảng cách.
+**Đề bài:** Hai đường \(a=\{(t;0;0)\}\), \(b=\{(0;s;4)\}\), t, s thực. Chứng minh chéo nhau và tìm khoảng cách.
 
-**Lời giải:** Phương a=(1,0,0), b=(0,1,0) không song song, trong khi z trên a luôn 0, trên b luôn 4, nên không cắt; vậy chúng chéo nhau. A=(0,0,0)∈a, B=(0,0,4)∈b; AB theo Oz vuông góc cả Ox,Oy, là đoạn vuông góc chung dài 4. Hai đầu phải nằm trên từng đường.
+**Lời giải:** Phương của a là \((1;0;0)\), của b là \((0;1;0)\), không song song, trong khi z trên a luôn bằng 0, trên b luôn bằng 4, nên không cắt; vậy chúng chéo nhau. \(A(0;0;0)\in a\), \(B(0;0;4)\in b\); AB theo Oz vuông góc cả Ox, Oy, là đoạn vuông góc chung dài 4. Hai đầu phải nằm trên từng đường.
 
 **Vận dụng**
 
-Trong lập phương cạnh 5, khoảng cách giữa AB và DD′ là bao nhiêu?
+Trong hình lập phương ABCD.A′B′C′D′ cạnh 5, hãy xác định đoạn vuông góc chung và khoảng cách giữa hai đường thẳng AB và CC′.
 
 <!-- ITEM_ID: THPT-TOP17-T05; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O05 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-5, bằng AD là đoạn vuông góc chung; AB và DD′ chéo nhau.
+BC là đoạn vuông góc chung: \(B\in AB,\ C\in CC'\); \(BC\perp AB\) trong đáy hình vuông và \(BC\perp CC'\) vì \(CC'\perp(ABCD)\). Hai đường AB và \(CC'\) chéo nhau, nên khoảng cách bằng \(BC=5\).
 
 **Kiểm lỗi**
 
@@ -241,11 +242,11 @@ Nếu chỉ kiểm đoạn nối vuông góc một đường, đọc **Kiến th
 
 **Đề bài:** Chóp tứ giác đều đáy vuông cạnh 6 cm, đường cao mặt bên 5 cm. Tính chiều cao khối.
 
-**Lời giải:** Gọi O là tâm đáy, M trung điểm cạnh. Vì chóp đều, SO⊥đáy và OM=3 cm; tam giác SOM vuông tại O. SO=√(SM²−OM²)=√(25−9)=4 cm. Chỉ SO là chiều cao khối, SM=5 cm là đường cao mặt bên.
+**Lời giải:** Gọi O là tâm đáy, M là trung điểm cạnh. Vì chóp đều, \(SO\perp(ABCD)\) và \(OM=3\,\mathrm{cm}\); tam giác SOM vuông tại O. \(SO=\sqrt{SM^2-OM^2}=\sqrt{25-9}=4\,\mathrm{cm}\). Chỉ SO là chiều cao khối, \(SM=5\,\mathrm{cm}\) là đường cao mặt bên.
 
 **Vận dụng**
 
-Chóp có chiều cao 4 và cạnh bên 5. Giá trị h trong V=(1/3)Sđáy h?
+Chóp có chiều cao 4 và cạnh bên 5. Giá trị h trong công thức \(V=\frac13S_{\text{đáy}}h\) là bao nhiêu?
 
 <!-- ITEM_ID: THPT-TOP17-T06; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O06 -->
 
@@ -265,121 +266,122 @@ Nếu nhầm cạnh bên hoặc đường cao mặt bên với chiều cao chóp
 
 **Đọc hình B27 — so sánh công thức qua cùng chiều cao.**
 
-Hãy tìm cùng một **diện tích đáy S** và **chiều cao vuông góc h** trước khi so sánh: lăng trụ giữ nguyên diện tích lát cắt nên V=Sh; chóp có lát cắt nhỏ dần nên V=Sh/3; chóp cụt có hai đáy song song với diện tích S và S′ và cần thêm căn \(\sqrt{SS'}\). Nét vẽ phối cảnh không chứng minh tỉ lệ 1/3; câu chuyện về các lát cắt giải thích vì sao công thức khác nhau.
+Hãy tìm cùng một **diện tích đáy S** và **chiều cao vuông góc h** trước khi so sánh: lăng trụ giữ nguyên diện tích lát cắt nên \(V=Sh\); chóp có lát cắt nhỏ dần nên \(V=\frac13Sh\); chóp cụt có hai đáy song song với diện tích S và S' và cần thêm căn \(\sqrt{SS'}\). Nét vẽ phối cảnh không chứng minh tỉ lệ \(\frac13\); câu chuyện về các lát cắt giải thích vì sao công thức khác nhau.
 
 ### 2.1. Thể tích lăng trụ
 
-**Vì sao lăng trụ nhân diện tích đáy với chiều cao?** Hãy tưởng tượng chồng nhiều tờ bìa có cùng hình và diện tích S lên nhau. Mỗi lớp dày thêm một chút làm thể tích tăng tương ứng; tổng chiều dày h cho V=Sh. Nếu chồng các tờ bìa lệch nhau để tạo lăng trụ xiên, diện tích mỗi lát cắt song song đáy vẫn S và chiều cao vuông góc vẫn h: thể tích không thay đổi chỉ vì cạnh bên nghiêng. Vì vậy, **h** không thể thay bằng độ dài cạnh bên nếu không biết nó vuông góc đáy.
+**Vì sao lăng trụ nhân diện tích đáy với chiều cao?** Hãy tưởng tượng chồng nhiều tờ bìa có cùng hình và diện tích S lên nhau. Mỗi lớp dày thêm một chút làm thể tích tăng tương ứng; tổng chiều dày h cho \(V=Sh\). Nếu chồng các tờ bìa lệch nhau để tạo lăng trụ xiên, diện tích mỗi lát cắt song song đáy vẫn S và chiều cao vuông góc vẫn h: thể tích không thay đổi chỉ vì cạnh bên nghiêng. Vì vậy, h không thể thay bằng độ dài cạnh bên nếu không biết nó vuông góc đáy.
 
 <!-- LESSON_ID: TOP17-M07; OUTCOME_ID: TOP17-O07; S1_ORIGINAL_OUTCOME: G11-B27-PRISM_VOLUME -->
 
 > **CÔNG THỨC — Thể tích lăng trụ**
 >
-> Thể tích lăng trụ bằng diện tích đáy nhân chiều cao vuông góc V=Sđáy·h. Hộp có các lát cắt bằng nhau theo chiều cao nên thể tích tỉ lệ tuyến tính với h.
+> Thể tích lăng trụ bằng diện tích đáy nhân chiều cao vuông góc \(V=S_{\text{đáy}}h\). Hộp có các lát cắt bằng nhau theo chiều cao nên thể tích tỉ lệ tuyến tính với h.
 
-**Từ định nghĩa hình lăng trụ đến đơn vị thể tích.** Khi cắt lăng trụ bởi các mặt phẳng **song song đáy**, thiết diện của mỗi lát có đúng diện tích đáy \(S\), kể cả lăng trụ xiên. Độ cao \(h\) là độ dời **vuông góc giữa hai đáy**, không phải độ dài cạnh nối hai đỉnh. Vì vậy, hình trụ lăng trụ trong phạm vi bài này dùng \(V=Sh\); \(S\) có đơn vị diện tích và \(h\) có đơn vị độ dài.
+**Từ định nghĩa hình lăng trụ đến đơn vị thể tích.** Khi cắt lăng trụ bởi các mặt phẳng song song đáy, thiết diện của mỗi lát có đúng diện tích đáy S, kể cả lăng trụ xiên. Độ cao h là khoảng cách vuông góc giữa hai đáy, không phải độ dài cạnh nối hai đỉnh. Vì vậy, thể tích lăng trụ là \(V=Sh\); S có đơn vị diện tích và h có đơn vị độ dài.
 
 **Ví dụ minh họa.** Hai lăng trụ có cùng đáy diện tích \(12\text{ cm}^2\), cùng khoảng cách giữa hai mặt phẳng đáy \(5\text{ cm}\), nhưng một lăng trụ đứng và một lăng trụ xiên có cạnh bên \(13\text{ cm}\). Cả hai có thể tích \(60\text{ cm}^3\). Nếu lấy \(12\cdot13\) cho lăng trụ xiên, ta đã đo chiều cao theo **đường xiên** và làm sai công thức. Diện tích thiết diện song song đáy giải thích vì sao độ nghiêng không tự làm tăng thể tích.
 
 **Ví dụ**
 
-**Đề bài:** Lăng trụ xiên có diện tích đáy 18 cm², chiều cao vuông góc 7 cm và cạnh bên 10 cm. Tính thể tích.
+**Đề bài:** Lăng trụ xiên có diện tích đáy \(18\,\mathrm{cm}^2\), chiều cao vuông góc 7 cm và cạnh bên 10 cm. Tính thể tích.
 
-**Lời giải:** Lăng trụ xiên vẫn có tiết diện song song đáy bằng nhau, nên V=Sh với h vuông góc hai đáy. Ta được V=18×7=126 cm³; cạnh bên 10 cm nghiêng và không được thay vào h.
+**Lời giải:** Lăng trụ xiên vẫn có tiết diện song song đáy bằng nhau, nên \(V=Sh\) với h là chiều cao vuông góc hai đáy. Ta được \(V=18\cdot7=126\,\mathrm{cm}^3\); cạnh bên 10 cm nghiêng và không được thay vào h.
 
 **Vận dụng**
 
-Lăng trụ Sđáy=12 cm², h=5 cm; thể tích?
+Lăng trụ có \(S_{\text{đáy}}=12\,\mathrm{cm}^2\), \(h=5\,\mathrm{cm}\); thể tích?
 
 <!-- ITEM_ID: THPT-TOP17-T07; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O07 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-60 cm³, vì V=Sđáyh.
+\(60\,\mathrm{cm}^3\), vì \(V=S_{\text{đáy}}h\).
 
 **Kiểm lỗi**
 
-Nếu lấy cạnh bên của lăng trụ xiên làm h, đọc **Kiến thức 2.1**: V=Sđáy·h với h là khoảng cách vuông góc giữa hai đáy. Thử **Bài luyện 19** và **Bài luyện 29**, kiểm đơn vị khối.
+Nếu lấy cạnh bên của lăng trụ xiên làm h, đọc **Kiến thức 2.1**: \(V=S_{\text{đáy}}h\) với h là khoảng cách vuông góc giữa hai đáy. Thử **Bài luyện 19** và **Bài luyện 29**, kiểm đơn vị khối.
 
 </details>
 
 ### 2.2. Thể tích khối chóp
 
-**Vì sao khối chóp có hệ số 1/3?** Khác lăng trụ, các lát cắt song song đáy của chóp càng lên gần đỉnh càng nhỏ. Có thể tưởng tượng chia một lăng trụ thành ba khối chóp bằng thể tích (trong trường hợp ghép thích hợp), hoặc suy bằng nguyên lí thể tích từ những thiết diện tương ứng. Kết luận cho khối chóp là \(V=\frac13Sh\). Nếu thay bằng Sh, ta đã tính như lăng trụ và kết quả gấp ba thể tích thực. Không cần học tích phân mới hiểu được sự khác biệt về các lát cắt.
+**Vì sao khối chóp có hệ số \(\frac13\)?** Khác lăng trụ, các lát cắt song song đáy của chóp càng lên gần đỉnh càng nhỏ. Có thể tưởng tượng chia một lăng trụ tam giác thành ba khối tứ diện bằng thể tích, hoặc suy bằng nguyên lí thể tích từ những thiết diện tương ứng. Kết luận cho khối chóp là \(V=\frac13Sh\). Nếu thay bằng \(Sh\), ta đã tính như lăng trụ và kết quả gấp ba thể tích thực. Không cần học tích phân mới hiểu được sự khác biệt về các lát cắt.
 
 <!-- LESSON_ID: TOP17-M08; OUTCOME_ID: TOP17-O08; S1_ORIGINAL_OUTCOME: G11-B27-PYRAMID_VOLUME -->
 
 > **CÔNG THỨC — Thể tích khối chóp**
 >
-> Chóp cùng đáy và chiều cao với lăng trụ tương ứng chỉ có thể tích bằng một phần ba lăng trụ: V=(1/3)Sđáy·h. Hệ số 1/3 không xuất hiện với lăng trụ.
+> Chóp cùng đáy và chiều cao với lăng trụ tương ứng chỉ có thể tích bằng một phần ba lăng trụ: \(V=\frac13S_{\text{đáy}}h\). Hệ số \(\frac13\) không xuất hiện với lăng trụ.
 
 **Ví dụ**
 
-**Đề bài:** Khối chóp có diện tích đáy 18 cm² và chiều cao vuông góc 7 cm. Tính thể tích, so với lăng trụ cùng đáy/cao.
+**Đề bài:** Khối chóp có diện tích đáy \(18\,\mathrm{cm}^2\) và chiều cao vuông góc 7 cm. Tính thể tích, so với lăng trụ cùng đáy và chiều cao.
 
-**Lời giải:** Lăng trụ có V=18×7=126 cm³. Khối chóp có lát cắt thu nhỏ tới đỉnh, áp dụng hệ số 1/3: V=(1/3)×18×7=42 cm³, bằng đúng một phần ba lăng trụ. Không dùng Sh cho chóp.
+**Lời giải:** Lăng trụ có \(V=18\cdot7=126\,\mathrm{cm}^3\). Khối chóp có lát cắt thu nhỏ tới đỉnh, áp dụng công thức \(V=\frac13\cdot18\cdot7=42\,\mathrm{cm}^3\), bằng đúng một phần ba lăng trụ. Không dùng Sh cho chóp.
 
 **Vận dụng**
 
-Chóp Sđáy=12 cm², h=5 cm; thể tích?
+Chóp có \(S_{\text{đáy}}=12\,\mathrm{cm}^2\), \(h=5\,\mathrm{cm}\); thể tích?
 
 <!-- ITEM_ID: THPT-TOP17-T08; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O08 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-20 cm³; phải có hệ số 1/3.
+\(20\,\mathrm{cm}^3\); phải có hệ số \(\frac13\).
 
 **Kiểm lỗi**
 
-Nếu tính thể tích chóp bằng công thức lăng trụ, đọc **Kiến thức 2.2**: chóp có cùng đáy và chiều cao chỉ bằng **một phần ba** thể tích lăng trụ. Thử **Bài luyện 20** và **Bài luyện 30**, ghi rõ 1/3.
+Nếu tính thể tích chóp bằng công thức lăng trụ, đọc **Kiến thức 2.2**: chóp có cùng đáy và chiều cao chỉ bằng **một phần ba** thể tích lăng trụ. Thử **Bài luyện 20** và **Bài luyện 30**, ghi rõ hệ số \(\frac13\).
 
 </details>
 
 ### 2.3. Thể tích hình hộp và lập phương
 
-**Hình hộp chỉ là một lăng trụ dễ nhìn.** Ba kích thước a,b,c của hộp chữ nhật lần lượt tạo diện tích đáy ab và chiều cao c; do đó V=abc. Khi cả ba cạnh bằng nhau, V=a³. Lúc tính một bể chứa, luôn thống nhất đơn vị độ dài; nhân m² với m mới thu được m³, không phải m².
+**Hình hộp chữ nhật chỉ là một lăng trụ dễ nhìn.** Ba kích thước a, b, c của hộp chữ nhật lần lượt tạo diện tích đáy ab và chiều cao c; do đó \(V=abc\). Khi cả ba cạnh bằng nhau, \(V=a^3\). Lúc tính một bể chứa, luôn thống nhất đơn vị độ dài; nhân mét vuông với mét mới thu được mét khối, không phải mét vuông.
 
 <!-- LESSON_ID: TOP17-M09; OUTCOME_ID: TOP17-O09; S1_ORIGINAL_OUTCOME: G11-B27-BOX_VOLUME -->
 
 > **CÔNG THỨC — Thể tích hình hộp và lập phương**
 >
-> Hộp chữ nhật là lăng trụ đứng có đáy chữ nhật, nên V=abc; lập phương cạnh a có V=a³. Đơn vị diện tích đáy nhân độ dài thành đơn vị khối.
+> Hộp chữ nhật là lăng trụ đứng có đáy chữ nhật, nên \(V=abc\); lập phương cạnh a có \(V=a^3\). Đơn vị diện tích đáy nhân độ dài thành đơn vị khối.
 
 **Ví dụ**
 
 **Đề bài:** Hộp chữ nhật kích thước 2,3,4 cm và lập phương cạnh 3 cm. Tính thể tích từng khối.
 
-**Lời giải:** Hộp chọn đáy 2×3=6 cm², cao 4 cm nên V=6×4=24 cm³. Lập phương có Sđáy=9 cm², cao 3 cm nên V=3³=27 cm³. Kết quả phải là đơn vị khối cm³.
+**Lời giải:** Hộp chọn đáy \(2\cdot3=6\,\mathrm{cm}^2\), cao 4 cm nên \(V=6\cdot4=24\,\mathrm{cm}^3\). Lập phương có \(S_{\text{đáy}}=9\,\mathrm{cm}^2\), cao 3 cm nên \(V=3^3=27\,\mathrm{cm}^3\). Kết quả phải là đơn vị khối.
 
 **Vận dụng**
 
-Hộp có kích thước 2,3,4 cm, thể tích?
+Hộp chữ nhật có ba kích thước 2 cm, 5 cm và 0,3 dm. Đổi về cùng đơn vị rồi tính thể tích.
 
 <!-- ITEM_ID: THPT-TOP17-T09; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O09 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-24 cm³.
+\(0{,}3\,\mathrm{dm}=3\,\mathrm{cm}\), nên thể tích bằng \(2\cdot5\cdot3=30\,\mathrm{cm}^3\).
 
 **Kiểm lỗi**
 
-Nếu lẫn diện tích bề mặt với thể tích hình hộp, đọc **Kiến thức 2.3**: thể tích bằng tích ba kích thước vuông góc. Thử **Bài luyện 21** và **Bài luyện 31**, ghi cm³ hoặc m³.
+Nếu lẫn diện tích bề mặt với thể tích hình hộp, đọc **Kiến thức 2.3**: thể tích bằng tích ba kích thước vuông góc. Thử **Bài luyện 21** và **Bài luyện 31**, ghi đơn vị \(\mathrm{cm}^3\) hoặc \(\mathrm m^3\).
 
 </details>
 
 ### 2.4. Thể tích chóp cụt
 
-**Chóp cụt: vì sao có căn \(\sqrt{SS'}\)?** *Ở đây “chóp cụt” là phần còn lại khi cắt một hình chóp bằng mặt phẳng **song song đáy**; hai đáy vì thế đồng dạng. Không áp dụng công thức này cho một khối bất kỳ chỉ vì nó có hai mặt song song.* Chóp cụt đều được tạo khi cắt một chóp bởi mặt phẳng song song đáy; hai đáy đồng dạng chứ không bằng nhau. Nếu tỉ số độ dài là k, tỉ số diện tích là k², nên một đại lượng kích thước “trung gian” tự nhiên phải gắn với \(\sqrt{SS'}\). Công thức \(V=\frac h3(S+\sqrt{SS'}+S')\) có thể tự kiểm bằng hai giới hạn: S′ tiến về S cho V→Sh (lăng trụ); S′ tiến về 0 cho V→Sh/3 (chóp). Đó là **kiểm tra hợp lí**, không thay cho giả thiết hai đáy đồng dạng/song song của chóp cụt.
+**Chóp cụt: vì sao có căn \(\sqrt{SS'}\)?** Ở đây “chóp cụt” là phần còn lại khi cắt một hình chóp bằng mặt phẳng song song đáy; hai đáy vì thế đồng dạng. Không áp dụng công thức này cho một khối bất kỳ chỉ vì nó có hai mặt song song. Nếu tỉ số độ dài là k, tỉ số diện tích là \(k^2\). Khi suy công thức bằng hai chóp đồng dạng, ta sẽ gặp tích \(Sk\), chính là \(\sqrt{SS'}\). Công thức \(V=\frac h3(S+\sqrt{SS'}+S')\) có thể tự kiểm bằng hai giới hạn: \(S'\to S\) cho \(V\to Sh\) (lăng trụ); \(S'\to0\) cho \(V\to\frac13Sh\) (chóp). Đó là kiểm tra hợp lí, không thay cho giả thiết hai đáy đồng dạng/song song của chóp cụt.
 
 <!-- LESSON_ID: TOP17-M10; OUTCOME_ID: TOP17-O10; S1_ORIGINAL_OUTCOME: G11-B27-FRUSTUM_VOLUME -->
 
 > **CÔNG THỨC — Thể tích chóp cụt**
 >
-> Với chóp cụt có hai đáy song song diện tích S,S′ và chiều cao h, V=(h/3)(S+S′+√(SS′)). Công thức có cả h và trung bình nhân diện tích, không phải S·h đơn giản.
+> Với chóp cụt có hai đáy song song diện tích S, S' và chiều cao h, \(V=\frac h3(S+S'+\sqrt{SS'})\). Công thức có cả h và trung bình nhân diện tích, không phải Sh đơn giản.
 
-**Tự suy công thức bằng hai hình chóp đồng dạng.** Xét chóp cụt có đáy lớn diện tích \(S>0\), đáy nhỏ diện tích \(S'>0\), chiều cao vuông góc \(h>0\), và giả thiết mặt cắt **song song đáy** nên hai đáy đồng dạng. Gọi \(H\) là chiều cao chóp lớn trước khi cắt, \(H'\) là chiều cao chóp nhỏ bị cắt. Nếu tỉ số chiều dài hai đáy là \(k=\sqrt{S'/S}\) với \(0&lt;k&lt;1\), thì \(H'=kH\) và \(h=H-H'=(1-k)H\).
+**Tự suy công thức bằng hai hình chóp đồng dạng.** Xét chóp cụt có đáy lớn diện tích \(S>0\), đáy nhỏ diện tích \(S'>0\), chiều cao vuông góc \(h>0\), và giả thiết mặt cắt song song đáy nên hai đáy đồng dạng. Gọi H là chiều cao chóp lớn trước khi cắt, H' là chiều cao chóp nhỏ bị cắt. Nếu tỉ số chiều dài hai đáy là \(k=\sqrt{\frac{S'}S}\) với \(0&lt;k&lt;1\), thì \(H'=kH\) và \(h=H-H'=(1-k)H\).
 
 Thể tích phần còn lại bằng **thể tích chóp lớn trừ chóp nhỏ**, chứ không phải lấy trung bình cộng diện tích hai đáy rồi nhân chiều cao:
+
 \[
 V=\frac{SH}{3}-\frac{S'H'}{3}
  =\frac{SH}{3}(1-k^3)
@@ -387,40 +389,41 @@ V=\frac{SH}{3}-\frac{S'H'}{3}
  =\frac{Sh}{3}(1+k+k^2)
  =\frac h3\bigl(S+\sqrt{SS'}+S'\bigr).
 \]
+
 Ở bước cuối, dùng \(Sk=\sqrt{SS'}\), \(Sk^2=S'\). **Giới hạn áp dụng:** đây là khối chóp cụt tạo bằng **một mặt phẳng song song đáy**, không phải mọi khối có hai mặt đáy song song. Nếu hai diện tích bằng nhau thì công thức cho \(Sh\) của lăng trụ như trường hợp giới hạn; nếu một đáy co về 0 thì cho \(\frac13Sh\) của khối chóp.
 
-**Ví dụ minh họa.** Chóp cụt đều có hai đáy vuông cạnh \(8\) cm và \(4\) cm, chiều cao \(6\) cm. Tỉ số chiều dài \(k=1/2\), diện tích \(S=64\), \(S'=16\) cm², \(\sqrt{SS'}=32\) cm². Suy \(V=\frac63(64+32+16)=224\text{ cm}^3\). Kiểm ngược bằng phép trừ chóp: chóp lớn cao \(H=6/(1-1/2)=12\), chóp nhỏ cao \(6\); hiệu \(\frac13(64\cdot12-16\cdot6)=224\) cm³. Hai cách phải bằng nhau nếu đặt đúng \(k\).
+**Ví dụ minh họa.** Chóp cụt đều có hai đáy vuông cạnh 8 cm và 4 cm, chiều cao 6 cm. Tỉ số chiều dài \(k=\frac12\), diện tích \(S=64\,\mathrm{cm}^2,\ S'=16\,\mathrm{cm}^2\), \(\sqrt{SS'}=32\,\mathrm{cm}^2\). Suy \(V=\frac63(64+32+16)=224\,\mathrm{cm}^3\). Kiểm ngược bằng phép trừ chóp: chóp lớn cao \(H=\frac6{1-\frac12}=12\,\mathrm{cm}\), chóp nhỏ cao 6 cm; hiệu \(\frac13(64\cdot12-16\cdot6)=224\,\mathrm{cm}^3\). Hai cách phải bằng nhau nếu đặt đúng k.
 
 **Ví dụ**
 
 **Đề bài:** Chóp cụt đều hai đáy vuông cạnh 6 cm,3 cm, chiều cao vuông góc 4 cm. Tính thể tích.
 
-**Lời giải:** Do cắt chóp đều song song đáy, hai đáy đồng dạng: S=36,S′=9 cm², √(SS′)=18 cm². V=h(S+S′+√(SS′))/3=(4/3)(36+9+18)=84 cm³. Không được dùng Sh của lăng trụ vì diện tích hai đáy khác nhau.
+**Lời giải:** Do cắt chóp đều song song đáy, hai đáy đồng dạng: \(S=36\,\mathrm{cm}^2,\ S'=9\,\mathrm{cm}^2,\ \sqrt{SS'}=18\,\mathrm{cm}^2\). \(V=\frac h3(S+S'+\sqrt{SS'})=\frac43(36+9+18)=84\,\mathrm{cm}^3\). Không được dùng Sh của lăng trụ vì diện tích hai đáy khác nhau.
 
 **Vận dụng**
 
-Chóp cụt S=16,S′=4,h=6. Giá trị √(SS′)?
+Chóp cụt có \(S=16,\ S'=4,\ h=6\). Giá trị \(\sqrt{SS'}\) bằng bao nhiêu?
 
 <!-- ITEM_ID: THPT-TOP17-T10; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O10 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-8, vì √(16×4)=8.
+8, vì \(\sqrt{16\cdot4}=8\).
 
 **Kiểm lỗi**
 
-Nếu thiếu √(SS′), nhầm diện tích đáy với tỉ số cạnh hoặc dùng cạnh xiên làm h, đọc **Kiến thức 2.4**: chóp cụt là mặt cắt song song tạo hai đáy đồng dạng, V=h(S+S′+√SS′)/3. Thử **Bài luyện 22** và **Bài luyện 32**, kiểm giới hạn chóp/lăng trụ.
+Nếu thiếu \(\sqrt{SS'}\), nhầm diện tích đáy với tỉ số cạnh hoặc dùng cạnh xiên làm h, đọc **Kiến thức 2.4**: chóp cụt là mặt cắt song song tạo hai đáy đồng dạng, \(V=\frac h3(S+S'+\sqrt{SS'})\). Thử **Bài luyện 22** và **Bài luyện 32**, kiểm giới hạn chóp/lăng trụ.
 
 </details>
 
 
-Để tự quan sát thể tích chóp cụt thay đổi thế nào, em giữ cạnh đáy lớn \(a=6\) cm và chiều cao vuông góc \(h=4\) cm. Cạnh đáy nhỏ bằng \(6k\) với \(0\le k\le1\), do đó \(S=36\), \(S'=36k^2\) và \(\sqrt{SS'}=36k\) (cm²). Công thức thể tích cho \(V=\frac43(36+36k+36k^2)=48(1+k+k^2)\) cm³.
+Để tự quan sát thể tích chóp cụt thay đổi thế nào, em giữ cạnh đáy lớn \(a=6\,\mathrm{cm}\) và chiều cao vuông góc \(h=4\,\mathrm{cm}\). Cạnh đáy nhỏ bằng \(6k\,\mathrm{cm}\) với \(0\le k\le1\), do đó \(S=36,\ S'=36k^2,\ \sqrt{SS'}=36k\) (đơn vị: xăng-ti-mét vuông). Công thức thể tích cho \(V=\frac43(36+36k+36k^2)=48(1+k+k^2)\) (đơn vị: xăng-ti-mét khối).
 
 **Vận dụng** Em hãy tự tính \(V\) khi \(k=0\), \(k=\frac12\) và \(k=1\). Kết quả thay đổi theo chiều nào khi \(k\) tăng? Thử làm trước rồi tự mở Đối chiếu.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Khi \(k=0\), \(V=48\) cm³ (giới hạn hình chóp); khi \(k=\frac12\), \(V=84\) cm³ (chóp cụt); khi \(k=1\), \(V=144\) cm³ (giới hạn lăng trụ). Kết quả tăng khi cạnh đáy nhỏ tăng trong điều kiện đáy lớn và chiều cao cố định.
+Khi \(k=0\), \(V=48\,\mathrm{cm}^3\) (giới hạn hình chóp); khi \(k=\frac12\), \(V=84\,\mathrm{cm}^3\) (chóp cụt); khi \(k=1\), \(V=144\,\mathrm{cm}^3\) (giới hạn lăng trụ). Kết quả tăng khi cạnh đáy nhỏ tăng trong điều kiện đáy lớn và chiều cao cố định.
 
 **Nếu làm sai:** Kiểm lại diện tích đáy nhỏ \(36k^2\) và căn tích hai diện tích \(36k\); đừng lấy \(S'=36k\).
 
@@ -430,7 +433,7 @@ Khi \(k=0\), \(V=48\) cm³ (giới hạn hình chóp); khi \(k=\frac12\), \(V=84
 
 ### 2.5. Thể tích trong tình huống thực tế
 
-**Bài toán thực tế bắt đầu từ phân loại khối.** Một thùng hàng hình hộp, một mái chóp hay một phễu chóp cụt không cùng công thức. Hãy làm theo thứ tự: nhận dạng hình, xác định đáy, vẽ chiều cao vuông góc, đổi đơn vị, rồi thay số. Một đáp án “60 m²” cho thể tích là dấu hiệu sai ngay cả khi phép nhân đúng; và lấy cạnh xiên làm h có thể khiến đáp án quá lớn.
+**Bài toán thực tế bắt đầu từ phân loại khối.** Một thùng hàng hình hộp, một mái chóp hay một phễu chóp cụt không cùng công thức. Hãy làm theo thứ tự: nhận dạng hình, xác định đáy, vẽ chiều cao vuông góc, đổi đơn vị, rồi thay số. Một đáp án “\(60\,\mathrm m^2\)” cho thể tích là dấu hiệu sai ngay cả khi phép nhân đúng; và lấy cạnh xiên làm h có thể khiến đáp án quá lớn.
 
 <!-- LESSON_ID: TOP17-M11; OUTCOME_ID: TOP17-O11; S1_ORIGINAL_OUTCOME: G11-B27-VOLUME_APPLICATION -->
 
@@ -442,27 +445,27 @@ Khi \(k=0\), \(V=48\) cm³ (giới hạn hình chóp); khi \(k=\frac12\), \(V=84
 
 **Đề bài:** Lăng trụ đứng có đáy là tam giác vuông với hai cạnh góc vuông dài 6 cm và 8 cm; chiều cao lăng trụ là 7 cm. Tính thể tích và đổi sang lít.
 
-**Lời giải:** Sđáy=(1/2)×6×8=24 cm²; lăng trụ đứng nên cạnh bên 7 cm là chiều cao vuông góc. V=24×7=168 cm³=0,168 lít vì 1000 cm³=1 lít. Kiểm tra cả công thức và đơn vị.
+**Lời giải:** \(S_{\text{đáy}}=\frac12\cdot6\cdot8=24\,\mathrm{cm}^2\); lăng trụ đứng nên cạnh bên 7 cm là chiều cao vuông góc. \(V=24\cdot7=168\,\mathrm{cm}^3=0{,}168\,\mathrm L\) vì \(1000\,\mathrm{cm}^3=1\,\mathrm L\). Kiểm tra cả công thức và đơn vị.
 
 **Vận dụng**
 
-Khối lăng trụ có diện tích đáy 6 m², cao 10 m. Thể tích?
+Khối lăng trụ có diện tích đáy \(6\,\mathrm m^2\), cao 10 m. Thể tích?
 
 <!-- ITEM_ID: THPT-TOP17-T11; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O11 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-60 m³, không phải 60 m².
+\(60\,\mathrm m^3\), không phải \(60\,\mathrm m^2\).
 
 **Kiểm lỗi**
 
-Nếu quên hệ số 1/2 cho đáy tam giác vuông hoặc đổi cm³ sang lít sai, đọc **Kiến thức 2.5**: tính diện tích đáy trước, nhân chiều cao vuông góc rồi mới đổi đơn vị. Thử **Bài luyện 23** và **Bài luyện 33**.
+Nếu quên hệ số \(\frac12\) cho đáy tam giác vuông hoặc đổi xăng-ti-mét khối sang lít sai, đọc **Kiến thức 2.5**: tính diện tích đáy trước, nhân chiều cao vuông góc rồi mới đổi đơn vị. Thử **Bài luyện 23** và **Bài luyện 33**.
 
 </details>
 
 ### 2.6. Tổng hợp hình học và thể tích
 
-**Đi từ đáp số ngược về hình.** Với chóp đều đáy vuông cạnh 8 và đường cao mặt bên 5, nếu vội lấy h=5 thì thể tích sai. Hãy tìm trung điểm M của cạnh đáy và tâm O; OM=4, SM=5 nên chiều cao SO=3, rồi mới tính \(V=\frac13\cdot64\cdot3=64\). Tư duy kiểm tra theo chuỗi “hình → đoạn vuông góc → chiều cao → thể tích → đơn vị” giúp phát hiện sai ngay từ bước chọn dữ kiện.
+**Đi từ đáp số ngược về hình.** Với chóp đều đáy vuông cạnh 8 và đường cao mặt bên 5, nếu vội lấy \(h=5\) thì thể tích sai. Hãy tìm trung điểm M của cạnh đáy và tâm O; \(OM=4,\ SM=5\) nên chiều cao \(SO=3\), rồi mới tính \(V=\frac13\cdot64\cdot3=64\). Tư duy kiểm tra theo chuỗi “hình → đoạn vuông góc → chiều cao → thể tích → đơn vị” giúp phát hiện sai ngay từ bước chọn dữ kiện.
 
 <!-- LESSON_ID: TOP17-M12; OUTCOME_ID: TOP17-O12; S1_ORIGINAL_OUTCOME: G11-CHVII-INTEGRATED -->
 
@@ -472,23 +475,23 @@ Nếu quên hệ số 1/2 cho đáy tam giác vuông hoặc đổi cm³ sang lí
 
 **Khối đồng dạng: vì sao thể tích đổi theo lũy thừa ba?** Nếu mọi độ dài tương ứng của hai khối đồng dạng biến đổi theo hệ số \(k>0\), diện tích đáy biến đổi \(k^2\), chiều cao vuông góc biến đổi \(k\). Do đó thể tích khối lăng trụ hoặc hình chóp cùng kiểu biến đổi **\(k^3\)**. Không nhầm với quy tắc \(k^2\) dành cho diện tích thiết diện. Đây là công cụ kiểm đáp số trong bài về khối thu nhỏ, phóng lớn; nó không cho phép dùng \(k^3\) khi hai khối **không đồng dạng**.
 
-**Ví dụ minh họa.** Hai chóp tứ giác đều đồng dạng có tỉ số cạnh tương ứng \(2/3\), chóp lớn thể tích \(81\text{ cm}^3\). Chóp nhỏ có thể tích \(81\cdot(2/3)^3=24\text{ cm}^3\). Nếu tính \(81\cdot(2/3)^2=36\text{ cm}^3\) là mới đổi **diện tích**, còn thiếu tỉ số chiều cao \(2/3\). Luôn viết “độ dài \(k\) → diện tích \(k^2\) → thể tích \(k^3\)” và kiểm khối thật sự đồng dạng.
+**Ví dụ minh họa.** Hai chóp tứ giác đều đồng dạng có tỉ số cạnh tương ứng \(\frac23\), chóp lớn thể tích \(81\,\mathrm{cm}^3\). Chóp nhỏ có thể tích \(81\cdot(\frac23)^3=24\,\mathrm{cm}^3\). Nếu tính \(81\cdot(\frac23)^2=36\,\mathrm{cm}^3\) là mới đổi diện tích, còn thiếu tỉ số chiều cao \(\frac23\). Luôn viết “độ dài k → diện tích \(k^2\) → thể tích \(k^3\)” và kiểm khối thật sự đồng dạng.
 
 **Ví dụ**
 
 **Đề bài:** Chóp tứ giác đều đáy vuông cạnh 8 cm, đường cao mặt bên 5 cm. Tính thể tích mà không biết sẵn chiều cao khối.
 
-**Lời giải:** Gọi O là tâm đáy, M trung điểm cạnh; OM=4 cm. Vì SO⊥đáy, tam giác SOM vuông O, SO=√(SM²−OM²)=√(25−16)=3 cm. Sđáy=8²=64 cm², nên V=(1/3)×64×3=64 cm³. Không thay SM=5 vào h.
+**Lời giải:** Gọi O là tâm đáy, M là trung điểm cạnh; \(OM=4\,\mathrm{cm}\). Vì \(SO\perp(ABCD)\), tam giác SOM vuông tại O, \(SO=\sqrt{SM^2-OM^2}=\sqrt{25-16}=3\,\mathrm{cm}\). \(S_{\text{đáy}}=8^2=64\,\mathrm{cm}^2\), nên \(V=\frac13\cdot64\cdot3=64\,\mathrm{cm}^3\). Không thay \(SM=5\) vào h.
 
 **Vận dụng**
 
-Chóp đều đáy vuông cạnh 6 và đường cao mặt bên 5. Chiều cao khối?
+Chóp đều đáy vuông cạnh 6 và đường cao mặt bên 5. Tính chiều cao và thể tích của khối chóp.
 
 <!-- ITEM_ID: THPT-TOP17-T12; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O12 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-4, từ tam giác vuông nối đỉnh, tâm đáy, trung điểm cạnh: 5²−3²=4².
+Chiều cao là 4, từ tam giác vuông nối đỉnh, tâm đáy, trung điểm cạnh: \(5^2-3^2=4^2\). Diện tích đáy bằng 36, nên thể tích bằng \(\frac13\cdot36\cdot4=48\) đơn vị khối.
 
 **Kiểm lỗi**
 

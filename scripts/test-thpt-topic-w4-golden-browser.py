@@ -5,18 +5,27 @@ import functools
 import http.server
 import pathlib
 import threading
+import sys
+import html
+import re
 
 from playwright.sync_api import sync_playwright, expect
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-BUILD = ROOT / "site-thpt-preview"
+REFRESH = "--w4-refresh" in sys.argv
+BUILD = ROOT / ("site" if REFRESH else "site-thpt-preview")
+class ProjectHandler(http.server.SimpleHTTPRequestHandler):
+    def translate_path(self,p):
+        prefix="/self-learning-math"
+        if REFRESH and p.startswith(prefix+"/"): p=p[len(prefix):]
+        return super().translate_path(p)
 assert BUILD.is_dir(), "THPT MkDocs compiled tree required"
 server = http.server.ThreadingHTTPServer(
     ("127.0.0.1", 0),
-    functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(BUILD))
+    functools.partial(ProjectHandler, directory=str(BUILD))
 )
 threading.Thread(target=server.serve_forever, daemon=True).start()
-BASE = f"http://127.0.0.1:{server.server_address[1]}/thpt-preview/chuyen-de/"
+BASE = f"http://127.0.0.1:{server.server_address[1]}"+("/self-learning-math" if REFRESH else "")+"/thpt-preview/chuyen-de/"
 SIZES = {
     "16": (4, 4, 21, 65, 8, 4),
     "17": (2, 3, 12, 37, 8, 2),
@@ -29,10 +38,53 @@ PALETTE = {
     "formula": "rgba(0, 0, 0, 0)",
 }
 
+def source_math(topic,part,marker):
+    raw=(ROOT/f"docs/thpt-preview/chuyen-de/cd{topic}/{part}.md").read_text(encoding="utf-8")
+    raw=raw.split(f"<!-- TOPIC{topic}_APPROVED_SOURCE_END -->",1)[0]
+    blocks=re.split(r"<!-- "+marker+r":\s*",raw)[1:]
+    result={}
+    def formulas(t):
+        return [re.sub(r"\s+","",html.unescape(m[0] or m[1])) for m in re.findall(r"\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]",t)]
+    for block in blocks:
+        item=block.split(";",1)[0]
+        stem,_,solution=block.partition("<details")
+        solution=solution.split("</details>",1)[0]
+        result[item]=(formulas(stem),formulas(solution) if marker=="DISPLAY_ONLY_CANONICAL" else [],"**Các phương án:**" in stem)
+    if topic=="18" and marker=="DISPLAY_ONLY_CANONICAL":
+        context=raw.split("**Vận dụng tổng hợp — radar và hành trình bay**",1)[1].split("<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP18-W07;",1)[0]
+        assert "**Bối cảnh liên thông.**" in context
+        stem,solution,options=result["THPT-TOP18-W07"]
+        result["THPT-TOP18-W07"]=(formulas(context)+stem,solution,options)
+    return result
+
+def assert_math(page,root,expected,label,stem_only=False):
+ # Do not invoke typeset in a test: require actual learner runtime.
+ page.wait_for_function("""({selector,stemOnly,count})=>{
+  const root=document.querySelector(selector),m=window.MathJax?.startup?.document?.math;
+  if(!root||!m)return false;
+  const visible=e=>root.contains(e)&&!e.closest('[hidden],details:not([open])')&&(!stemOnly||!e.closest('details,.g10sc-review'));
+  return [...m].filter(i=>i.typesetRoot&&visible(i.typesetRoot)).length>=count;
+ }""",arg={"selector":root,"stemOnly":stem_only,"count":len(expected)},timeout=20000)
+ got=page.locator(root).evaluate(r"""(root,stemOnly)=>{
+  const visible=e=>root.contains(e)&&!e.closest('[hidden],details:not([open])')&&(!stemOnly||!e.closest('details,.g10sc-review'));
+  const math=[...MathJax.startup.document.math].filter(i=>i.typesetRoot&&visible(i.typesetRoot)).sort((a,b)=>a.typesetRoot===b.typesetRoot?0:a.typesetRoot.compareDocumentPosition(b.typesetRoot)&Node.DOCUMENT_POSITION_FOLLOWING?-1:1).map(i=>i.math.replace(/\s+/g,''));
+  const errors=[...root.querySelectorAll('mjx-merror,mjx-container mjx-container')].filter(visible).length;
+  const missing=[...root.querySelectorAll('.arithmatex')].filter(visible).filter(e=>e.querySelectorAll('mjx-container').length!==1).length;
+  const raw=[];const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+  while(walker.nextNode()){const n=walker.currentNode,e=n.parentElement;if(e&&visible(e)&&!e.closest('mjx-container,.arithmatex,script,style,svg,code,pre')&&/\\(?:\(|\)|\[|\]|mathbb\b|setminus\b|cup\b|cap\b|frac\b|sqrt\b|ge\b|le\b|ne\b|mid\b)/.test(n.nodeValue))raw.push(n.nodeValue.trim().slice(0,120));}
+  return {math,errors,missing,raw};
+ }""",stem_only)
+ assert got["math"]==expected and got["errors"]==got["missing"]==0 and not got["raw"],(label,expected,got)
+
+
 with sync_playwright() as pw:
     for engine in ("chromium", "webkit"):
         browser = getattr(pw, engine).launch(headless=True)
         for topic, (groups, practice_groups, outcomes, item_count, replays, svg_count) in SIZES.items():
+            if REFRESH:
+                practice_math=source_math(topic,"luyen-tap","DISPLAY_ONLY_CANONICAL")
+                replay_math=source_math(topic,"tu-kiem-tra","PUBLIC_REPLAY_ONLY")
+                assert len(practice_math)==item_count and len(replay_math)==replays
             for width in (390, 820, 1440):
                 ctx = browser.new_context(viewport={"width": width, "height": 850}, device_scale_factor=1)
                 page = ctx.new_page()
@@ -111,7 +163,8 @@ with sync_playwright() as pw:
                       const label=[...base.querySelectorAll('.thpt-r4-knowledge-content-panel > p')]
                        .find(p=>/^Vận dụng[:.]?$/.test(p.querySelector(':scope > strong')?.textContent.trim()||''));
                       if(!label)throw Error('Golden Vận dụng label missing');
-                      const stem=label.nextElementSibling,details=stem?.nextElementSibling;
+                      const stem=label.nextElementSibling,after=stem?.nextElementSibling;
+                      const details=after?.matches('details.question')?after:after?.querySelector('details.question');
                       if(stem?.tagName!=='P'||!details?.matches('details.question'))
                        throw Error('Golden label → stem → details contract broken');
                       const tab=base.querySelector('.thpt-r4-knowledge-module-tab');
@@ -204,7 +257,7 @@ with sync_playwright() as pw:
                 # be siblings on the white panel, never combined in a framed card.
                 assert knowledge.locator(".topic-w1-application").count() == 0, (topic,"unapproved Vận dụng outer card")
                 labels = knowledge.locator(".thpt-r4-knowledge-content-panel > p").filter(
-                    has=page.locator(":scope > strong", has_text="Vận dụng")
+                    has=page.locator(":scope > strong", has_text=re.compile(r"^\s*Vận dụng\s*[:.]?\s*$"))
                 )
                 # CĐ17's signed Q18 explicitly includes one additional voluntary
                 # 2.4 frustum k=0/1/2/1 exploration with its own Đối chiếu.
@@ -215,16 +268,18 @@ with sync_playwright() as pw:
                     extra = page.locator("#w1-17-content-2-4")
                     assert extra.evaluate("""panel => {
                       const ps=[...panel.children].filter(p=>p.tagName==='P'&&
-                        (p.querySelector(':scope > strong')?.textContent||'').trim()==='Vận dụng');
-                      return ps.length===2 &&
-                        [...panel.querySelectorAll(':scope > details.question')].length===2;
+                        /^Vận dụng[:.]?$/.test((p.querySelector(':scope > strong')?.textContent||'').trim()));
+                      const answers=[...panel.querySelectorAll(':scope > details.question, :scope > .topic-sgk-disclosure-pair > details.question')]
+                        .filter(d=>d.querySelector(':scope > summary')?.textContent.trim()==='Đối chiếu');
+                      return ps.length===2 && answers.length===2;
                     }"""), (topic, "signed O10 extra exploratory Vận dụng + two voluntary comparisons")
                 application_issues = knowledge.evaluate("""root=>[...root.querySelectorAll('.thpt-r4-knowledge-content-panel')]
                   .flatMap(panel=>[...panel.children].filter(e=>e.tagName==='P'&&/^Vận dụng[:.]?$/.test(e.querySelector(':scope > strong')?.textContent.trim()||''))
                     .map(label=>{let n=label.nextElementSibling,stem=0,details=0;
                       while(n&&n.tagName!=='H3'&&!n.matches('.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula')){
                         if(n.matches('p'))stem++;
-                        if(n.matches('details.question')){details++;break}
+                        const answers=n.matches('details.question')?[n]:n.matches('.topic-sgk-disclosure-pair')?[...n.querySelectorAll(':scope > details.question')]:[];
+                        if(answers.length){details+=answers.filter(d=>d.querySelector(':scope > summary')?.textContent.trim()==='Đối chiếu').length;break}
                         n=n.nextElementSibling
                       }
                       return {stem,details,wrapped:!!label.closest('.topic-w1-application')}
@@ -264,6 +319,9 @@ with sync_playwright() as pw:
                 cards = page.locator("[data-topic-w1-practice-card]")
                 expect(cards).to_have_count(practice_groups)
                 expect(page.locator(".topic-w1-source-shelf")).to_be_hidden()
+                if REFRESH:
+                    expect(page.locator(".topic-w1-source-shelf > template")).to_have_count(1)
+                    assert page.locator(".topic-w1-source-shelf mjx-container").count()==0
                 grid = page.locator(".topic01-golden-grid")
                 assert len(grid.evaluate("(e)=>getComputedStyle(e).gridTemplateColumns").split()) == (1 if width <= 640 else 2)
                 modal = page.locator("[data-topic-w1-dialog]")
@@ -274,7 +332,7 @@ with sync_playwright() as pw:
                     chooser = modal.locator(".thpt-r4-modal-question-nav button")
                     group_count = chooser.count()
                     assert group_count > 0
-                    checks = list(range(group_count)) if (engine == "chromium" and width == 820) else sorted({0,group_count-1})
+                    checks = list(range(group_count)) if REFRESH or (engine == "chromium" and width == 820) else sorted({0,group_count-1})
                     for j in checks:
                         chooser.nth(j).click()
                         card = modal.locator("[data-thpt-canonical-item]")
@@ -285,14 +343,33 @@ with sync_playwright() as pw:
                         expect(details).to_have_count(1)
                         assert not details.evaluate("(e)=>e.open"), (topic,i,j,"early reveal")
                         expect(details.locator("summary")).to_have_text("📖 Đáp án / Lời giải")
+                        if REFRESH:
+                            item=card.get_attribute("data-thpt-canonical-item")
+                            stem,sol,options=practice_math[item]
+                            assert_math(page,".topic-w1-question-body",stem,(topic,engine,width,item,"Practice stem"),True)
+                            if topic=="18" and item in ("THPT-TOP18-P40","THPT-TOP18-W07"):
+                                context=card.locator(":scope > p > strong",has_text=re.compile(r"^Bối cảnh liên thông\.$"))
+                                expect(context).to_have_count(1 if item=="THPT-TOP18-W07" else 0)
+                                expect(card.locator(":scope > p > strong",has_text="Vận dụng tổng hợp — radar và hành trình bay")).to_have_count(1 if item=="THPT-TOP18-W07" else 0)
                         details.locator("summary").click()
                         expect(details.locator(".thpt-r4-formative-reveal")).to_be_visible()
+                        if REFRESH:
+                            assert_math(page,".topic-w1-question-body .thpt-r4-formative-reveal",sol,(topic,engine,width,item,"Practice solution"))
+                            if j==0:
+                                details.locator("summary").click()
+                                expect(details.locator(".thpt-r4-formative-reveal")).to_be_hidden()
+                                details.locator("summary").click()
+                                expect(details.locator(".thpt-r4-formative-reveal")).to_be_visible()
+                                assert_math(page,".topic-w1-question-body .thpt-r4-formative-reveal",sol,(topic,engine,width,item,"Practice reopen"))
                         # Signed CĐ18 SVG manifest has 10 originals in TWO pages:
                         # 9 Knowledge figures + radar timeline only in Written Bài 202.
-                        if topic == "18" and engine == "chromium" and width == 820 and card.get_attribute("data-thpt-canonical-item") == "THPT-TOP18-W07":
+                        if topic == "18" and card.get_attribute("data-thpt-canonical-item") == "THPT-TOP18-W07":
                             radar = details.locator('img[src*="FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg"]')
                             expect(radar).to_have_count(1)
+                            expect(radar).to_be_visible()
+                            assert radar.get_attribute("alt") and "Radar tâm O" in radar.get_attribute("alt")
                             assert page.request.get(radar.first.evaluate("(e)=>e.src")).ok, (topic, "Bài 202 radar SVG failed to load")
+                            assert radar.evaluate("(e)=>e.complete && e.naturalWidth>0"), (topic,engine,width,"radar SVG not rendered")
                     total_seen += group_count
                     modal.locator(".topic-w1-close").click()
                     expect(modal).to_be_hidden()
@@ -300,9 +377,12 @@ with sync_playwright() as pw:
                 load("tu-kiem-tra")
                 selfcheck = page.locator("[data-topic-w1-selfcheck]")
                 expect(selfcheck).to_be_visible()
+                if REFRESH:
+                    expect(page.locator(".topic-w1-selfcheck-source-shelf > template")).to_have_count(1)
+                    assert page.locator(".topic-w1-selfcheck-source-shelf mjx-container").count()==0
                 jump = selfcheck.locator(".g10sc-jump-button")
                 expect(jump).to_have_count(replays)
-                questions = list(range(replays)) if (engine == "chromium" and width == 820) else sorted({0,replays-1})
+                questions = list(range(replays)) if REFRESH or (engine == "chromium" and width == 820) else sorted({0,replays-1})
                 for j in questions:
                     jump.nth(j).click()
                     body = selfcheck.locator(".g10sc-body")
@@ -311,10 +391,22 @@ with sync_playwright() as pw:
                     expect(body.locator(":scope > .topic-w1-stem-label strong")).to_have_text("Đề bài")
                     solution = body.locator("[data-topic-w1-solution]")
                     expect(solution).to_be_hidden()
+                    if REFRESH:
+                        item=body.get_attribute("data-thpt-canonical-item")
+                        stem,_,options=replay_math[item]
+                        assert_math(page,"[data-topic-w1-selfcheck] .g10sc-rich",stem,(topic,engine,width,item,"Replay stem"))
                     body.get_by_role("button",name="Đối chiếu",exact=True).click()
                     expect(solution).to_be_visible()
                     assert solution.get_attribute("data-thpt-canonical-solution") == body.get_attribute("data-thpt-canonical-item"), (topic,j,"wrong canonical answer")
                     assert solution.locator(".g10sc-error").count()==0, (topic,j,"public solution retrieval failed")
+                    if REFRESH:
+                        assert_math(page,"[data-topic-w1-solution]",practice_math[item][1],(topic,engine,width,item,"Replay solution"))
+                        if j==0:
+                            body.get_by_role("button",name="Ẩn đối chiếu",exact=True).click()
+                            expect(solution).to_be_hidden()
+                            body.get_by_role("button",name="Đối chiếu",exact=True).click()
+                            expect(solution).to_be_visible()
+                            assert_math(page,"[data-topic-w1-solution]",practice_math[item][1],(topic,engine,width,item,"Replay reopen"))
                 assert not errors, (engine,topic,width,"uncaught JS",errors)
                 print(f"PASS {engine} CĐ{topic} {width}px: {outcomes} outcomes, {groups} groups/{item_count} items, {replays} replay, 3+1 + MathJax/SVG/Golden hydration")
                 ctx.close()

@@ -27,7 +27,8 @@ hide:
 <span data-topic-w1-source-start="luyen-tap" hidden></span>
 
 <!-- TOPIC17_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 0ef0ad696e97d2549f29c5a22ba675970572a089; Q18_RECEIPT_BLOB bb941ea3563034e0aa779c69118f8ac02355a21e; AUTHORING_PR #853; PUBLIC_PROJECTION_ONLY -->
+
+<!-- Q18 SOURCE_LEARNER_BLOB 03b6b27adbeaf854d3db1d8fc9e830a0294a08aa; Q18_RECEIPT_BLOB 87f927cbcbd9ff4f26ba2a3b2c411a9a9770f82e; AUTHORING_PR #853; PUBLIC_PROJECTION_ONLY -->
 
 # Luyện tập
 
@@ -38,13 +39,13 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 **Bài tập từ nguồn SGK**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 1.** Nếu H là hình chiếu M trên a, với K∈a khác H thì MH và MK so sánh thế nào?
+**Bài 1.** Nếu H là hình chiếu M trên a, với \(K\in a\) khác H thì MH và MK so sánh thế nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** MH&lt;MK
+**Đáp án:** \(MH&lt;MK\)
 
-**Lời giải và vì sao:** Tam giác MHK vuông tại H cho MK²=MH²+HK².
+**Lời giải và vì sao:** Tam giác MHK vuông tại H cho \(MK^2=MH^2+HK^2\).
 
 </details>
 
@@ -60,7 +61,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C03; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 3.** a//(P). Khoảng cách từ hai điểm M,N∈a tới (P) có bằng nhau?
+**Bài 3.** \(a\parallel(P)\). Khoảng cách từ hai điểm \(M,N\in a\) tới \((P)\) có bằng nhau?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -71,7 +72,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C04; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 4.** Hai mặt phẳng song song cách nhau h=4,5m. M trên mặt thứ nhất, d(M,mặt thứ hai)?
+**Bài 4.** Hai mặt phẳng song song cách nhau \(h=4{,}5\,\mathrm m\). M trên mặt thứ nhất, khoảng cách từ M đến mặt thứ hai bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -93,7 +94,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C06; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 6.** Trong chóp S.ABC, SA=10, SH=8 với H là hình chiếu S lên đáy. Chiều cao chóp?
+**Bài 6.** Trong chóp S.ABC, \(SA=10,\ SH=8\) với H là hình chiếu S lên đáy. Chiều cao chóp?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -110,7 +111,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 **Đáp án:** 8cm.
 
-**Lời giải và vì sao:** h=√(17²−15²)=8cm.
+**Lời giải và vì sao:** \(h=\sqrt{17^2-15^2}=8\,\mathrm{cm}\).
 
 </details>
 
@@ -119,9 +120,9 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Vì là độ dài đoạn vuông góc MH≥0.
+**Đáp án:** Vì là độ dài đoạn vuông góc \(MH\ge0\).
 
-**Lời giải và vì sao:** Độ dài đoạn thẳng không âm; =0 khi M∈(P).
+**Lời giải và vì sao:** Độ dài đoạn thẳng không âm; bằng 0 khi \(M\in(P)\).
 
 </details>
 
@@ -137,32 +138,32 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-W01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 10.** Điểm M ngoài (P), H là hình chiếu, MH=5cm; K∈(P), HK=12cm. Tính MK và chứng minh MH là khoảng cách ngắn nhất từ M tới (P).
+**Bài 10.** Điểm M ngoài \((P)\), H là hình chiếu, \(MH=5\,\mathrm{cm}\); \(K\in(P)\), \(HK=12\,\mathrm{cm}\). Tính MK và chứng minh MH là khoảng cách ngắn nhất từ M tới \((P)\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Bài giải tự đối chiếu sau khi tự làm:** MK=13cm; với mọi K trong P, MK²=MH²+HK²≥MH²; MH ngắn nhất.
+**Bài giải tự đối chiếu sau khi tự làm:** \(MK=13\,\mathrm{cm}\); với mọi K trong \((P)\), \(MK^2=MH^2+HK^2\ge MH^2\); MH ngắn nhất.
 
 **Rubric 4 điểm:**
-1. Nêu MH⊥(P) (1) — **1 điểm**.
+1. Nêu \(MH\perp(P)\) (1) — **1 điểm**.
 2. Dựng tam giác MHK vuông tại H (1) — **1 điểm**.
-3. Tính MK=13 (1) — **1 điểm**.
-4. Chứng minh bất đẳng thức cho mọi K∈(P) (1) — **1 điểm**.
+3. Tính \(MK=13\) (1) — **1 điểm**.
+4. Chứng minh bất đẳng thức cho mọi \(K\in(P)\) (1) — **1 điểm**.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 11.** a={(t,0,0)}, b={(5,s,4)} (t,s thực) là hai đường chéo nhau. Chỉ ra hai chân nối, chứng minh đoạn nối vuông góc chung và tính khoảng cách.
+**Bài 11.** \(a=\{(t;0;0)\}\), \(b=\{(5;s;4)\}\) (t, s thực) là hai đường chéo nhau. Chỉ ra hai chân nối, chứng minh đoạn nối vuông góc chung và tính khoảng cách.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Bài giải tự đối chiếu sau khi tự làm:** A=(5,0,0)∈a, B=(5,0,4)∈b; AB phương Oz vuông góc cả Ox và Oy; d=4.
+**Bài giải tự đối chiếu sau khi tự làm:** \(A(5;0;0)\in a\), \(B(5;0;4)\in b\); AB theo phương Oz vuông góc cả Ox và Oy; khoảng cách bằng 4.
 
 **Rubric 4 điểm:**
-1. Chọn đúng A∈a (1) — **1 điểm**.
-2. Chọn đúng B∈b (1) — **1 điểm**.
-3. Chứng minh AB⊥a và ⊥b (1) — **1 điểm**.
-4. Tính AB=4 (1) — **1 điểm**.
+1. Chọn đúng \(A\in a\) (1) — **1 điểm**.
+2. Chọn đúng \(B\in b\) (1) — **1 điểm**.
+3. Chứng minh \(AB\perp a\) và \(AB\perp b\) (1) — **1 điểm**.
+4. Tính \(AB=4\) (1) — **1 điểm**.
 
 </details>
 
@@ -170,11 +171,11 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP17-P01; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP17-P01; OUTCOME_ID: TOP17-O01; ROLE: TOPIC_PRACTICE; ORIGINAL_KEY_UNCHANGED -->
-**Bài 12.** H,X∈d, AH⊥d tại H, AH=5, HX=12. Tính AX và d(A,d).
+**Bài 12.** \(H,X\in d\), \(AH\perp d\) tại H, \(AH=5,\ HX=12\). Tính AX và \(d(A,d)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-AX=13 theo Pitago, còn d(A,d)=AH=5. Không nhầm đoạn xiên AX với khoảng cách.
+\(AX=13\) theo Pitago, còn \(d(A,d)=AH=5\). Không nhầm đoạn xiên AX với khoảng cách.
 
 **D6 nếu sai:** Muốn chứng minh ngắn nhất phải xác định chân vuông góc. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
 
@@ -182,11 +183,11 @@ AX=13 theo Pitago, còn d(A,d)=AH=5. Không nhầm đoạn xiên AX với khoả
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP17-P02; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP17-P02; OUTCOME_ID: TOP17-O02; ROLE: TOPIC_PRACTICE; ORIGINAL_KEY_UNCHANGED -->
-**Bài 13.** H∈(P) là chân vuông góc, AH⊥(P), AH=8 cm. Một đoạn xiên AM=10 cm (M∈(P)). Tính khoảng cách từ A đến (P).
+**Bài 13.** \(H\in(P)\) là chân vuông góc, \(AH\perp(P)\), \(AH=8\,\mathrm{cm}\). Một đoạn xiên \(AM=10\,\mathrm{cm}\) (\(M\in(P)\)). Tính khoảng cách từ A đến \((P)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-8 cm, vì AH là đoạn vuông góc ngắn nhất. Độ dài AM=10 cm không phải khoảng cách.
+8 cm, vì AH là đoạn vuông góc ngắn nhất. Độ dài \(AM=10\,\mathrm{cm}\) không phải khoảng cách.
 
 **D6 nếu sai:** Không coi cạnh chéo là khoảng cách vuông góc. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
 
@@ -194,11 +195,11 @@ AX=13 theo Pitago, còn d(A,d)=AH=5. Không nhầm đoạn xiên AX với khoả
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP17-P03; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP17-P03; OUTCOME_ID: TOP17-O03; ROLE: TOPIC_PRACTICE; ORIGINAL_KEY_UNCHANGED -->
-**Bài 14.** Đường d∥nền (P), A∈d có hình chiếu AH=7 cm. Tìm d(d,(P)).
+**Bài 14.** Đường \(d\parallel(P)\), A thuộc d có độ dài đoạn chiếu \(AH=7\,\mathrm{cm}\). Tìm \(d(d,(P))\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-7 cm = d(A,(P)). Nếu d cắt hoặc nằm trong mặt, phải xét trường hợp riêng, không áp dụng máy móc.
+\(d(A,(P))=7\,\mathrm{cm}\). Nếu d cắt hoặc nằm trong mặt, phải xét trường hợp riêng, không áp dụng máy móc.
 
 **D6 nếu sai:** Điều kiện d song song mặt phẳng phải được kiểm tra trước khi lấy một điểm đại diện. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
 
@@ -206,7 +207,7 @@ AX=13 theo Pitago, còn d(A,d)=AH=5. Không nhầm đoạn xiên AX với khoả
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP17-P04; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP17-P04; OUTCOME_ID: TOP17-O04; ROLE: TOPIC_PRACTICE; ORIGINAL_KEY_UNCHANGED -->
-**Bài 15.** (P)∥(Q), A∈(P), H∈(Q), AH⊥(Q) tại H, AH=6 cm. Tính d((P),(Q)).
+**Bài 15.** \((P)\parallel(Q)\), \(A\in(P)\), \(H\in(Q)\), \(AH\perp(Q)\) tại H, \(AH=6\,\mathrm{cm}\). Tính \(d((P),(Q))\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -222,7 +223,7 @@ AX=13 theo Pitago, còn d(A,d)=AH=5. Không nhầm đoạn xiên AX với khoả
 
 <details markdown="1"><summary>Lời giải</summary>
 
-BC nối B∈AB tới C∈CC′, vuông góc AB và CC′; độ dài BC=7. Không dùng AC là đường xiên.
+BC nối \(B\in AB\) tới \(C\in CC'\), vuông góc AB và CC'; độ dài \(BC=7\). Không dùng AC là đường xiên.
 
 **D6 nếu sai:** Kiểm tra cả hai đầu mút thuộc hai đường và vuông góc cả hai phương. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
 
@@ -234,7 +235,7 @@ BC nối B∈AB tới C∈CC′, vuông góc AB và CC′; độ dài BC=7. Khô
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Từ tâm O đến trung điểm cạnh đáy dài 3; h=√(5²−3²)=4. Điều kiện đường cao mặt bên đi qua trung điểm cạnh trong chóp đều.
+Từ tâm O đến trung điểm cạnh đáy dài 3; \(h=\sqrt{5^2-3^2}=4\). Điều kiện đường cao mặt bên đi qua trung điểm cạnh trong chóp đều.
 
 **D6 nếu sai:** Đừng dùng đường cao mặt bên thay cho đường cao vuông góc với đáy. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
 
@@ -246,13 +247,13 @@ Từ tâm O đến trung điểm cạnh đáy dài 3; h=√(5²−3²)=4. Điề
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và SM=5 cm. Tam giác SOM vuông tại O nên SO=√(5²−3²)=4 cm. Diện tích đáy 36 cm²; V=(1/3)·36·4=48 cm³.
+Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, \(OM=3\,\mathrm{cm}\) và \(SM=5\,\mathrm{cm}\). Tam giác SOM vuông tại O nên \(SO=\sqrt{5^2-3^2}=4\,\mathrm{cm}\). Diện tích đáy \(36\,\mathrm{cm}^2\); \(V=\frac13\cdot36\cdot4=48\,\mathrm{cm}^3\).
 
 **Rubric 4 điểm:**
 - Xác định O tâm đáy và M trung điểm cạnh — **1 điểm**.
-- Tính OM=3 và dùng Pitago SO=4 — **1 điểm**.
-- Tính đúng diện tích đáy 36 cm² — **1 điểm**.
-- Tính thể tích 48 cm³ và phân biệt h — **1 điểm**.
+- Tính \(OM=3\) và dùng Pitago \(SO=4\) — **1 điểm**.
+- Tính đúng diện tích đáy \(36\,\mathrm{cm}^2\) — **1 điểm**.
+- Tính thể tích \(48\,\mathrm{cm}^3\) và phân biệt h — **1 điểm**.
 
 </details>
 
@@ -261,79 +262,79 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 **Bài tập từ nguồn SGK**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 19.** Lăng trụ có diện tích đáy 15cm², chiều cao vuông góc 7cm. Thể tích?
+**Bài 19.** Lăng trụ có diện tích đáy \(15\,\mathrm{cm}^2\), chiều cao vuông góc 7 cm. Thể tích?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 105cm³
+**Đáp án:** \(105\,\mathrm{cm}^3\)
 
-**Lời giải và vì sao:** V=S·h=15×7=105cm³.
+**Lời giải và vì sao:** \(V=Sh=15\cdot7=105\,\mathrm{cm}^3\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C02; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 20.** Chóp có S_đáy=21cm², chiều cao 6cm. Thể tích?
+**Bài 20.** Chóp có \(S_{\text{đáy}}=21\,\mathrm{cm}^2\), chiều cao 6 cm. Thể tích?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 42cm³
+**Đáp án:** \(42\,\mathrm{cm}^3\)
 
-**Lời giải và vì sao:** V=S·h/3=21×6/3=42cm³.
+**Lời giải và vì sao:** \(V=\frac{Sh}3=\frac{21\cdot6}3=42\,\mathrm{cm}^3\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C03; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 21.** Hộp chữ nhật 2m×3m×4m chứa tối đa bao nhiêu m³?
+**Bài 21.** Hộp chữ nhật kích thước 2 m, 3 m, 4 m chứa tối đa bao nhiêu mét khối?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 24m³
+**Đáp án:** \(24\,\mathrm m^3\)
 
-**Lời giải và vì sao:** V=dài×rộng×cao=24m³ nếu hộp trống hoàn toàn.
+**Lời giải và vì sao:** Thể tích bằng chiều dài nhân chiều rộng nhân chiều cao, \(V=2\cdot3\cdot4=24\,\mathrm m^3\) nếu hộp trống hoàn toàn.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C04; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 22.** Chóp cụt đều có S=25cm²,S′=4cm²,h=3cm. Thể tích?
+**Bài 22.** Chóp cụt đều có \(S=25\,\mathrm{cm}^2,\ S'=4\,\mathrm{cm}^2,\ h=3\,\mathrm{cm}\). Thể tích?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 39cm³
+**Đáp án:** \(39\,\mathrm{cm}^3\)
 
-**Lời giải và vì sao:** V=3(25+4+√100)/3=39cm³.
+**Lời giải và vì sao:** \(V=\frac33(25+4+\sqrt{100})=39\,\mathrm{cm}^3\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C05; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 23.** Thể tích khối là 0,36m³. Đổi ra lít?
+**Bài 23.** Thể tích khối là \(0{,}36\,\mathrm m^3\). Đổi ra lít?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 360 lít
 
-**Lời giải và vì sao:** 1m³=1000L nên 0,36m³=360L.
+**Lời giải và vì sao:** \(1\,\mathrm m^3=1000\,\mathrm L\), nên \(0{,}36\,\mathrm m^3=360\,\mathrm L\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-P01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 24.** Chóp S.ABC có S đáy 12dm², cao 9dm. Tính V theo dm³.
+**Bài 24.** Chóp S.ABC có diện tích đáy \(12\,\mathrm{dm}^2\), cao 9 dm. Tính V theo đề-xi-mét khối.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 36dm³.
+**Đáp án:** \(36\,\mathrm{dm}^3\).
 
-**Lời giải và vì sao:** 12×9/3=36dm³.
+**Lời giải và vì sao:** \(\frac{12\cdot9}3=36\,\mathrm{dm}^3\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-P02; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 25.** Chóp cụt đều S=16,S′=9,h=6 (cm). Tính V.
+**Bài 25.** Chóp cụt đều có \(S=16,\ S'=9,\ h=6\) (cm). Tính V.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 74cm³.
+**Đáp án:** \(74\,\mathrm{cm}^3\).
 
-**Lời giải và vì sao:** 6(16+9+√144)/3=2(25+12)=74cm³.
+**Lời giải và vì sao:** \(\frac63(16+9+\sqrt{144})=2(25+12)=74\,\mathrm{cm}^3\).
 
 </details>
 
@@ -349,31 +350,31 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-W01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 27.** Lăng trụ và chóp có cùng đáy diện tích 18cm² và cùng chiều cao vuông góc 12cm. Tính hai thể tích, so sánh và giải thích hệ số 1/3.
+**Bài 27.** Lăng trụ và chóp có cùng đáy diện tích \(18\,\mathrm{cm}^2\) và cùng chiều cao vuông góc 12 cm. Tính hai thể tích, so sánh và giải thích hệ số \(\frac13\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Bài giải tự đối chiếu sau khi tự làm:** Lăng trụ 216cm³, chóp 72cm³; chóp bằng 1/3 vì tiết diện thu nhỏ dần về đỉnh.
+**Bài giải tự đối chiếu sau khi tự làm:** Lăng trụ \(216\,\mathrm{cm}^3\), chóp \(72\,\mathrm{cm}^3\); chóp bằng một phần ba lăng trụ vì tiết diện thu nhỏ dần về đỉnh.
 
 **Rubric 4 điểm:**
 1. Nêu đúng chiều cao vuông góc (1) — **1 điểm**.
 2. Tính lăng trụ 216 (1) — **1 điểm**.
 3. Tính chóp 72 (1) — **1 điểm**.
-4. Giải thích tỷ lệ 1/3 theo hình học (1) — **1 điểm**.
+4. Giải thích tỉ lệ \(\frac13\) theo hình học (1) — **1 điểm**.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 28.** Chóp cụt đều có đáy lớn 49cm², đáy bé 16cm², cao 6cm. Tính V, thử thay đáy bé bằng 0 và giải thích ý nghĩa giới hạn công thức.
+**Bài 28.** Chóp cụt đều có đáy lớn \(49\,\mathrm{cm}^2\), đáy bé \(16\,\mathrm{cm}^2\), cao 6 cm. Tính V, thử thay đáy bé bằng 0 và giải thích ý nghĩa giới hạn công thức.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Bài giải tự đối chiếu sau khi tự làm:** V=6(49+16+√784)/3=2(49+16+28)=186cm³. Khi đáy bé 0 còn V=49·6/3=98cm³ là chóp.
+**Bài giải tự đối chiếu sau khi tự làm:** \(V=\frac63(49+16+\sqrt{784})=2(49+16+28)=186\,\mathrm{cm}^3\). Khi đáy bé bằng 0 còn \(V=\frac{49\cdot6}3=98\,\mathrm{cm}^3\) là chóp.
 
 **Rubric 4 điểm:**
 1. Nêu đúng công thức chóp cụt đều (1) — **1 điểm**.
-2. Tính √(49·16)=28 (1) — **1 điểm**.
-3. Tính V=186cm³ (1) — **1 điểm**.
+2. Tính \(\sqrt{49\cdot16}=28\) (1) — **1 điểm**.
+3. Tính \(V=186\,\mathrm{cm}^3\) (1) — **1 điểm**.
 4. Kiểm trường hợp đáy bé 0 và giải thích (1) — **1 điểm**.
 
 
@@ -386,11 +387,11 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP17-P07; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP17-P07; OUTCOME_ID: TOP17-O07; ROLE: TOPIC_PRACTICE; ORIGINAL_KEY_UNCHANGED -->
-**Bài 29.** Lăng trụ có đáy hình tam giác diện tích 18 m², khoảng cách hai mặt đáy 4 m. Tính V.
+**Bài 29.** Lăng trụ có đáy hình tam giác diện tích \(18\,\mathrm m^2\), khoảng cách hai mặt đáy 4 m. Tính V.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-72 m³ =18×4. Khoảng cách vuông góc hai đáy là chiều cao, không nhất thiết cạnh bên.
+\(V=18\cdot4=72\,\mathrm m^3\). Khoảng cách vuông góc hai đáy là chiều cao, không nhất thiết là cạnh bên.
 
 **D6 nếu sai:** Đơn vị thể tích phải là đơn vị khối, và h phải vuông góc đáy. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
 
@@ -402,7 +403,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Sđáy=36 cm², V=36×4/3=48 cm³. Không dùng độ dài đường cao mặt bên.
+\(S_{\text{đáy}}=36\,\mathrm{cm}^2,\ V=\frac{36\cdot4}3=48\,\mathrm{cm}^3\). Không dùng độ dài đường cao mặt bên.
 
 **D6 nếu sai:** Phân biệt dạng chóp với lăng trụ trước khi chọn công thức. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
 
@@ -414,7 +415,7 @@ Sđáy=36 cm², V=36×4/3=48 cm³. Không dùng độ dài đường cao mặt b
 
 <details markdown="1"><summary>Lời giải</summary>
 
-5³=125 cm³; thể tích dùng ba chiều.
+\(5^3=125\,\mathrm{cm}^3\); thể tích dùng ba chiều.
 
 **D6 nếu sai:** Không nhầm diện tích toàn phần với thể tích và không bỏ đơn vị khối. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
 
@@ -426,9 +427,9 @@ Sđáy=36 cm², V=36×4/3=48 cm³. Không dùng độ dài đường cao mặt b
 
 <details markdown="1"><summary>Lời giải</summary>
 
-S=36,S′=9, √(SS′)=18, V=(4/3)(36+9+18)=84 đơn vị khối.
+\(S=36,\ S'=9,\ \sqrt{SS'}=18,\ V=\frac43(36+9+18)=84\) đơn vị khối.
 
-**D6 nếu sai:** Nếu hai đáy bằng nhau thì công thức trở về lăng trụ V=Sh; nếu đáy nhỏ thu về 0 thì về chóp V=Sh/3. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
+**D6 nếu sai:** Nếu hai đáy bằng nhau thì công thức trở về lăng trụ \(V=Sh\); nếu đáy nhỏ thu về 0 thì về chóp \(V=\frac13Sh\). Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
 
 </details>
 
@@ -438,9 +439,9 @@ S=36,S′=9, √(SS′)=18, V=(4/3)(36+9+18)=84 đơn vị khối.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Sđáy=(1/2)×6×8=24 cm², V=24×7=168 cm³.
+\(S_{\text{đáy}}=\frac12\cdot6\cdot8=24\,\mathrm{cm}^2,\ V=24\cdot7=168\,\mathrm{cm}^3\).
 
-**D6 nếu sai:** Không dùng cạnh xiên hoặc quên nhân hệ số 1/2 cho diện tích tam giác vuông. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
+**D6 nếu sai:** Không dùng cạnh xiên hoặc quên nhân hệ số \(\frac12\) cho diện tích tam giác vuông. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
 
 </details>
 
@@ -450,7 +451,7 @@ Sđáy=(1/2)×6×8=24 cm², V=24×7=168 cm³.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Hình chiếu đỉnh là tâm đáy, nửa cạnh=4; h=√(25−16)=3; Sđáy=64; V=64×3/3=64 đơn vị khối.
+Hình chiếu đỉnh là tâm đáy, nửa cạnh bằng 4; \(h=\sqrt{25-16}=3\); \(S_{\text{đáy}}=64;\ V=\frac{64\cdot3}3=64\) đơn vị khối.
 
 **D6 nếu sai:** Khi kết quả sai, dò ngược: loại khối → đáy → đường vuông góc → h → công thức → đơn vị. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.
 
@@ -462,13 +463,13 @@ Hình chiếu đỉnh là tâm đáy, nửa cạnh=4; h=√(25−16)=3; Sđáy=6
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Sđáy=(1/2)·6·8=24 cm². Lăng trụ đứng nên chiều cao bằng cạnh bên 7 cm. V=24·7=168 cm³; kết quả là đơn vị khối.
+\(S_{\text{đáy}}=\frac12\cdot6\cdot8=24\,\mathrm{cm}^2\). Lăng trụ đứng nên chiều cao bằng cạnh bên 7 cm. \(V=24\cdot7=168\,\mathrm{cm}^3\); kết quả là đơn vị khối.
 
 **Rubric 4 điểm:**
-- Tính diện tích tam giác vuông 24 cm² — **1 điểm**.
-- Giải thích h=7 vì lăng trụ đứng — **1 điểm**.
-- Áp dụng V=Sđáy·h — **1 điểm**.
-- Kết luận 168 cm³ đúng đơn vị — **1 điểm**.
+- Tính diện tích tam giác vuông \(24\,\mathrm{cm}^2\) — **1 điểm**.
+- Giải thích \(h=7\) vì lăng trụ đứng — **1 điểm**.
+- Áp dụng \(V=S_{\text{đáy}}h\) — **1 điểm**.
+- Kết luận \(168\,\mathrm{cm}^3\) đúng đơn vị — **1 điểm**.
 
 </details>
 
@@ -478,12 +479,12 @@ Sđáy=(1/2)·6·8=24 cm². Lăng trụ đứng nên chiều cao bằng cạnh b
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Hai diện tích S=36,S′=9, √(SS′)=18. V=(4/3)·(36+9+18)=84 cm³. Nếu S′ tiến về 0 thì V→(4/3)·36=48 cm³, phù hợp công thức của chóp cùng đáy và chiều cao.
+Hai diện tích \(S=36,\ S'=9,\ \sqrt{SS'}=18\). \(V=\frac43(36+9+18)=84\,\mathrm{cm}^3\). Nếu \(S'\to0\) thì \(V\to\frac43\cdot36=48\,\mathrm{cm}^3\), phù hợp công thức của chóp cùng đáy và chiều cao.
 
 **Rubric 4 điểm:**
-- Tính đúng S=36, S′=9 — **1 điểm**.
+- Tính đúng \(S=36,\ S'=9\) — **1 điểm**.
 - Tính trung bình nhân diện tích bằng 18 — **1 điểm**.
-- V=(4/3)×63=84 cm³ — **1 điểm**.
+- \(V=\frac43\cdot63=84\,\mathrm{cm}^3\) — **1 điểm**.
 - Nêu giới hạn S′→0 cho thể tích chóp — **1 điểm**.
 
 </details>
@@ -491,13 +492,13 @@ Hai diện tích S=36,S′=9, √(SS′)=18. V=(4/3)·(36+9+18)=84 cm³. Nếu S
 ## 3. Bài tổng hợp: chọn đúng chiều cao
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-CHVII-C01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
-**Bài 37.** Đỉnh S cao 6cm trên đáy có diện tích 24cm². Một bạn dùng cạnh xiên 10cm tính V chóp. Chọn chiều cao và kết quả đúng.
+**Bài 37.** Đỉnh S cao 6 cm trên đáy có diện tích \(24\,\mathrm{cm}^2\). Một bạn dùng cạnh xiên 10 cm tính V chóp. Chọn chiều cao và kết quả đúng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** h=6cm, V=48cm³
+**Đáp án:** \(h=6\,\mathrm{cm},\ V=48\,\mathrm{cm}^3\)
 
-**Lời giải và vì sao:** Độ cao là khoảng cách vuông góc S tới mặt đáy; V=24×6/3=48, không dùng cạnh xiên.
+**Lời giải và vì sao:** Độ cao là khoảng cách vuông góc S tới mặt đáy; \(V=\frac{24\cdot6}3=48\,\mathrm{cm}^3\), không dùng cạnh xiên.
 
 </details>
 

@@ -77,6 +77,13 @@ for topic, d in data["topics"].items():
     assert blob_sha(source) == d["sourceBlob"], (topic, "SOURCE_BLOB_MISMATCH")
     receipt = subprocess.check_output(["git", "show", f'{d["authorHead"]}:{d["receiptPath"]}'], cwd=ROOT)
     assert blob_sha(receipt) == d["q18ReceiptBlob"], (topic, "Q18_RECEIPT_MISMATCH")
+    if "v2Blob" in d:
+        assert d["sourceBlob"].encode() in receipt, (topic,"Q18 source binding")
+        v2 = subprocess.check_output(["git","show",f'{d["authorHead"]}:{d["v2Path"]}'],cwd=ROOT)
+        ready = subprocess.check_output(["git","show",f'{d["authorHead"]}:{d["readyPath"]}'],cwd=ROOT)
+        assert blob_sha(v2)==d["v2Blob"] and blob_sha(ready)==d["readyBlob"], (topic,"custody SHA")
+        assert all(d[k].encode() in v2 and d[k].encode() in ready for k in ("sourceBlob","q18ReceiptBlob")), (topic,"source/Q18 binding")
+        assert d["v2Blob"].encode() in ready and b"STATE: CONTENT_READY" in ready, (topic,"READY binding")
     preface, parts = source_sections(source.decode("utf-8"))
     ids = re.findall(r"<!-- DISPLAY_ONLY_CANONICAL:\s*([A-Z0-9-]+)", parts[1])
     replay = re.findall(r"<!-- PUBLIC_REPLAY_ONLY:\s*([A-Z0-9-]+)", parts[2])
@@ -112,6 +119,8 @@ for topic, d in data["topics"].items():
     for svg in d["svg"]:
         path = ROOT / "docs/assets/images/thpt" / svg
         assert path.is_file() and "<svg" in path.read_text(encoding="utf-8"), (topic,"broken SVG",svg)
+        if "svgBlobs" in d:
+            assert blob_sha(path.read_bytes()) == d["svgBlobs"][svg], (topic,svg,"pinned SVG bytes")
         if svg.startswith("FIG-TOP18-"):
             origin = subprocess.check_output(
                 ["git", "show", f'{d["authorHead"]}:docs/assets/images/thpt/{svg}'],cwd=ROOT)

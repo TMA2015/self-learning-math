@@ -178,6 +178,8 @@ jobs:
             node scripts/test-thpt-release-impact.cjs --prove-menu-6-plus-1
           elif grep -Fxq 'reason=OWNER_W1_DEPLOY_RECOVERY_EXACT' "$RUNNER_TEMP/safety-pr-impact.txt"; then
             node scripts/test-thpt-release-impact.cjs --prove-w1-recovery
+          elif grep -Fxq 'reason=OWNER_TOPIC_W4_REFRESH' "$RUNNER_TEMP/safety-pr-impact.txt"; then
+            node scripts/test-thpt-release-impact.cjs --prove-w4-refresh
           elif grep -Fxq 'reason=OWNER_TOPIC_W3B_REFRESH' "$RUNNER_TEMP/safety-pr-impact.txt"; then
             node scripts/test-thpt-release-impact.cjs --prove-w3b-refresh
           elif grep -Fxq 'reason=OWNER_TOPIC_W3A_REFRESH' "$RUNNER_TEMP/safety-pr-impact.txt"; then

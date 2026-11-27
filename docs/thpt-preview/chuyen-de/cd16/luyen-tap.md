@@ -27,7 +27,8 @@ hide:
 <span data-topic-w1-source-start="luyen-tap" hidden></span>
 
 <!-- TOPIC16_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84; Q18_RECEIPT_BLOB 19a2ed6ebfd7898da5f186350ea6042e2134fa7e; AUTHORING_PR #848; PUBLIC_PROJECTION_ONLY -->
+
+<!-- Q18 SOURCE_LEARNER_BLOB 3e6f97091a814d7cee7096fd92cd448dd8900435; Q18_RECEIPT_BLOB 18ce1cba1049ec7435ef7cfffc1a27804c1fd394; AUTHORING_PR #848; PUBLIC_PROJECTION_ONLY -->
 
 # Luyện tập
 
@@ -38,18 +39,18 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 **Chọn phương thích hợp để xác định góc và vuông góc**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-C01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 1.** Hai đường có góc giữa hai tia cùng phương được chọn là 145°. Góc giữa hai đường thẳng là bao nhiêu?
+**Bài 1.** Hai đường có góc giữa hai tia cùng phương được chọn là \(145^\circ\). Góc giữa hai đường thẳng là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 35°
+**Đáp án:** \(35^\circ\)
 
-**Lời giải và vì sao:** Góc giữa hai đường thẳng là góc không tù: 180°−145°=35°.
+**Lời giải và vì sao:** Góc giữa hai đường thẳng là góc không tù: \(180^\circ-145^\circ=35^\circ\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-C02; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 2.** Có thể có a⊥b nhưng a và b không có điểm chung không?
+**Bài 2.** Có thể có \(a\perp b\) nhưng a và b không có điểm chung không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -60,11 +61,11 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-C03; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 3.** Nếu a//a′ và a⊥b thì góc giữa a′ và b bằng bao nhiêu?
+**Bài 3.** Nếu \(a\parallel a'\) và \(a\perp b\) thì góc giữa a′ và b bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 90°
+**Đáp án:** \(90^\circ\)
 
 **Lời giải và vì sao:** Đường song song giữ phương nên giữ góc với b.
 
@@ -75,7 +76,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Có, góc giữa hai phương bằng 90°
+**Đáp án:** Có, góc giữa hai phương bằng \(90^\circ\)
 
 **Lời giải và vì sao:** Chuyển một thanh bằng đường song song đến cùng điểm; không cần chúng cắt nhau.
 
@@ -97,9 +98,9 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 0°
+**Đáp án:** \(0^\circ\)
 
-**Lời giải và vì sao:** AB//D′C′, hai đường song song trong không gian.
+**Lời giải và vì sao:** \(AB\parallel D'C'\), hai đường song song trong không gian.
 
 </details>
 
@@ -108,38 +109,38 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Trong hộp chữ nhật AB⊥CC′ dù không cắt nhau.
+**Đáp án:** Trong hộp chữ nhật \(AB\perp CC'\) dù không cắt nhau.
 
-**Lời giải và vì sao:** Vì CC′//AA′ và AA′⊥AB.
+**Lời giải và vì sao:** Vì \(CC'\parallel AA'\) và \(AA'\perp AB\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-W01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 8.** Hình hộp chữ nhật ABCD.A′B′C′D′: chứng minh AB⊥DD′ và nêu tại sao không cần giao điểm.
+**Bài 8.** Hình hộp chữ nhật ABCD.A′B′C′D′: chứng minh \(AB\perp DD'\) và nêu tại sao không cần giao điểm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Bài giải tự đối chiếu sau khi tự làm:** DD′//AA′, AA′⊥(ABCD) nên AA′⊥AB; thay phương song song suy góc (AB,DD′)=90°.
+**Bài giải tự đối chiếu sau khi tự làm:** \(DD'\parallel AA', AA'\perp (ABCD)\) nên \(AA'\perp AB\); thay phương song song suy góc \((AB;DD')=90^\circ\).
 
 **Rubric 4 điểm:**
-1. Nêu đúng AA′⊥(ABCD) (1) — **1 điểm**.
-2. Suy AA′⊥AB (1) — **1 điểm**.
-3. Dùng DD′//AA′ (1) — **1 điểm**.
+1. Nêu đúng \(AA'\perp (ABCD)\) (1) — **1 điểm**.
+2. Suy \(AA'\perp AB\) (1) — **1 điểm**.
+3. Dùng \(DD'\parallel AA'\) (1) — **1 điểm**.
 4. Kết luận góc theo phương dù không cắt (1) — **1 điểm**.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 9.** Hai đường a,b chéo nhau; qua O dựng a′//a,b′//b và biết góc giữa hai tia đã chọn là 135°. Tính góc giữa a,b, nêu vì sao độc lập O.
+**Bài 9.** Hai đường a,b chéo nhau; qua O dựng \(a'\parallel a,b'\parallel b\) và biết góc giữa hai tia đã chọn là \(135^\circ\). Tính góc giữa a,b, nêu vì sao độc lập O.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Bài giải tự đối chiếu sau khi tự làm:** Góc giữa hai đường là 45°. Phép chọn O khác chỉ tịnh tiến phương của hai đường nên góc không đổi.
+**Bài giải tự đối chiếu sau khi tự làm:** Góc giữa hai đường là \(45^\circ\). Phép chọn O khác chỉ tịnh tiến phương của hai đường nên góc không đổi.
 
 **Rubric 4 điểm:**
 1. Dựng/nhận đúng a′,b′ và phương (1) — **1 điểm**.
 2. Hiểu góc đường lấy góc không tù (1) — **1 điểm**.
-3. Tính 45° từ 180°−135° (1) — **1 điểm**.
+3. Tính \(45^\circ\) từ \(180^\circ-135^\circ\) (1) — **1 điểm**.
 4. Giải thích độc lập O (1) — **1 điểm**.
 
 </details>
@@ -152,7 +153,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-0°: AD và B′C′ song song, nên cùng phương. Không lấy khoảng cách giữa hai cạnh để xác định góc.
+\(0^\circ\): AD và B′C′ song song, nên cùng phương. Không lấy khoảng cách giữa hai cạnh để xác định góc.
 
 **D6 nếu sai:** Đừng dùng góc tù hoặc kết luận không có góc chỉ vì hai đường không gặp nhau. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -164,7 +165,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Vì AA′⊥(ABCD) nên AA′ vuông góc mọi đường của đáy, trong đó có BC; hoặc BB′∥AA′ và BC⊥BB′.
+Vì \(AA'\perp (ABCD)\) nên AA′ vuông góc mọi đường của đáy, trong đó có BC; hoặc \(BB'\parallel AA'\) và \(BC\perp BB'\).
 
 **D6 nếu sai:** Phân biệt “vuông góc theo phương” với “hai đường cắt nhau tại góc vuông”. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -172,11 +173,11 @@ Vì AA′⊥(ABCD) nên AA′ vuông góc mọi đường của đáy, trong đ�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P03; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P03; OUTCOME_ID: TOP16-O03; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 12.** Trong hình hộp, từ BC⊥BB′ và DD′∥BB′ chứng minh BC⊥DD′.
+**Bài 12.** Trong hình hộp, từ \(BC\perp BB'\) và \(DD'\parallel BB'\) chứng minh \(BC\perp DD'\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Thay DD′ bằng BB′ cùng phương. Vì BC⊥BB′ nên BC⊥DD′; không yêu cầu BC gặp DD′.
+Thay DD′ bằng BB′ cùng phương. Vì \(BC\perp BB'\) nên \(BC\perp DD'\); không yêu cầu BC gặp DD′.
 
 **D6 nếu sai:** Không suy hai đường cùng vuông góc một đường thứ ba thì chúng song song trong không gian. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -184,11 +185,11 @@ Thay DD′ bằng BB′ cùng phương. Vì BC⊥BB′ nên BC⊥DD′; không y
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P04; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P04; OUTCOME_ID: TOP16-O04; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 13.** Nêu một chứng cứ chắc chắn để kết luận AB⊥CC′ trong hộp chữ nhật.
+**Bài 13.** Nêu một chứng cứ chắc chắn để kết luận \(AB\perp CC'\) trong hộp chữ nhật.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Từ AB thuộc đáy và CC′ vuông góc mặt đáy, CC′⊥AB; kết luận không dựa nét vẽ.
+Từ AB thuộc đáy và CC′ vuông góc mặt đáy, \(CC'\perp AB\); kết luận không dựa nét vẽ.
 
 **D6 nếu sai:** Khi lời giải viết “nhìn hình thấy”, hãy thay bằng quan hệ song song/vuông góc có giả thiết. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -200,13 +201,13 @@ Từ AB thuộc đáy và CC′ vuông góc mặt đáy, CC′⊥AB; kết luậ
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D không thuộc AB. Nếu có mặt phẳng nào chứa cả AB và DD′ thì nó phải chứa A, B, D, tức chính là mặt đáy (ABCD); điều này không thể xảy ra vì D′ không nằm ở đáy. Vậy AB và DD′ không đồng phẳng (và không song song), nên chéo nhau. Qua A, đường AA′ song song DD′; vì AB⊥AA′, góc giữa AB và DD′ bằng góc BAA′ = 90°. Đó là cách dời *phương* về cùng điểm để đo góc, không dựa trên hình phối cảnh.
+Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D không thuộc AB. Nếu có mặt phẳng nào chứa cả AB và DD′ thì nó phải chứa A, B, D, tức chính là mặt đáy (ABCD); điều này không thể xảy ra vì D′ không nằm ở đáy. Vậy AB và DD′ không đồng phẳng (và không song song), nên chéo nhau. Qua A, đường AA′ song song DD′; vì \(AB\perp AA'\), góc giữa AB và DD′ bằng góc \(\widehat{BAA'}=90^\circ\). Đó là cách dời *phương* về cùng điểm để đo góc, không dựa trên hình phối cảnh.
 
 **Rubric 4 điểm:**
 - Nêu đúng hai phương vuông góc — **1 điểm**.
 - Chứng minh hai đường chéo nhau, không cắt — **1 điểm**.
 - Dựng được AA′ qua A song song DD′ — **1 điểm**.
-- Xác định góc BAA′ = 90° và lý do bất biến phương — **1 điểm**.
+- Xác định góc \(\widehat{BAA'}=90^\circ\) và lý do bất biến phương — **1 điểm**.
 
 </details>
 
@@ -226,18 +227,18 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-C02; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 16.** Trong mặt (P), a,b cắt nhau. d⊥a và d⊥b thì d quan hệ gì với (P)?
+**Bài 16.** Trong mặt (P), a,b cắt nhau. \(d\perp a\) và \(d\perp b\) thì d quan hệ gì với (P)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** d⊥(P)
+**Đáp án:** \(d\perp (P)\)
 
 **Lời giải và vì sao:** Hai phương cắt nhau đủ theo điều kiện xác định đường vuông góc mặt phẳng.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-C03; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 17.** d⊥(P) và e//d. e có vuông góc (P)?
+**Bài 17.** \(d\perp (P)\) và \(e\parallel d\). e có vuông góc (P)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -252,7 +253,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Không; d//e hoặc d=e
+**Đáp án:** Không; \(d\parallel e\) hoặc \(d=e\)
 
 **Lời giải và vì sao:** Hai đường cùng phương pháp tuyến. Nếu cùng đi qua một điểm thì chúng trùng, nếu khác đường thì song song.
 
@@ -270,7 +271,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-P01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 20.** d⊥(P) và (P)//(Q). d có vuông góc (Q)?
+**Bài 20.** \(d\perp (P)\) và \((P)\parallel (Q)\). d có vuông góc (Q)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -281,7 +282,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-P02; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 21.** Nếu một đường d vuông góc hai đường song song trong (P), kết luận d⊥(P) có chắc đúng?
+**Bài 21.** Nếu một đường d vuông góc hai đường song song trong (P), kết luận \(d\perp (P)\) có chắc đúng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -307,13 +308,13 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Bài giải tự đối chiếu sau khi tự làm:** AB,AC cắt nhau tại A nên d⊥(ABC); suy d⊥BC và mọi đường trong đáy.
+**Bài giải tự đối chiếu sau khi tự làm:** AB,AC cắt nhau tại A nên \(d\perp (ABC)\); suy \(d\perp BC\) và mọi đường trong đáy.
 
 **Rubric 4 điểm:**
 1. Nêu AB,AC cùng nằm đáy (1) — **1 điểm**.
 2. Nêu AB,AC cắt nhau tại A (1) — **1 điểm**.
-3. Áp dụng tiêu chí đủ d⊥(ABC) (1) — **1 điểm**.
-4. Suy đúng d⊥BC và mọi đường trong mặt (1) — **1 điểm**.
+3. Áp dụng tiêu chí đủ \(d\perp (ABC)\) (1) — **1 điểm**.
+4. Suy đúng \(d\perp BC\) và mọi đường trong mặt (1) — **1 điểm**.
 
 </details>
 
@@ -326,7 +327,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 **Rubric 4 điểm:**
 1. Giải thích hai cột là phương pháp tuyến (1) — **1 điểm**.
-2. Suy k//m hoặc trùng (1) — **1 điểm**.
+2. Suy \(k\parallel m\) hoặc trùng (1) — **1 điểm**.
 3. Loại tình huống góc nhọn (1) — **1 điểm**.
 4. Nêu phân biệt với hai đường chỉ vuông góc một vạch sàn (1) — **1 điểm**.
 
@@ -340,7 +341,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 <details markdown="1"><summary>Lời giải</summary>
 
-d⊥(P) theo dấu hiệu hai phương cắt nhau trong cùng mặt phẳng; a,b cho đủ hai hướng độc lập.
+\(d\perp (P)\) theo dấu hiệu hai phương cắt nhau trong cùng mặt phẳng; a,b cho đủ hai hướng độc lập.
 
 **D6 nếu sai:** Một đường không đại diện cho tất cả các phương trong một mặt phẳng. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -348,11 +349,11 @@ d⊥(P) theo dấu hiệu hai phương cắt nhau trong cùng mặt phẳng; a,b
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P06; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P06; OUTCOME_ID: TOP16-O06; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 26.** Trong mặt phẳng (P), a,b cắt tại O. Biết d⊥a và d⊥b. Chứng minh d⊥(P).
+**Bài 26.** Trong mặt phẳng (P), a,b cắt tại O. Biết \(d\perp a\) và \(d\perp b\). Chứng minh \(d\perp (P)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Áp dụng định lí đường thẳng vuông góc hai đường cắt nhau của một mặt phẳng, suy d⊥(P).
+Áp dụng định lí đường thẳng vuông góc hai đường cắt nhau của một mặt phẳng, suy \(d\perp (P)\).
 
 **D6 nếu sai:** Dừng lại khi hai đường kiểm tra song song, trùng nhau hoặc không cùng mặt phẳng. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -360,11 +361,11 @@ d⊥(P) theo dấu hiệu hai phương cắt nhau trong cùng mặt phẳng; a,b
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P07; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P07; OUTCOME_ID: TOP16-O07; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 27.** Đường a⊥(P), hai mặt phẳng (P)∥(Q). Quan hệ a và (Q)?
+**Bài 27.** Đường \(a\perp (P)\), hai mặt phẳng \((P)\parallel (Q)\). Quan hệ a và (Q)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-a⊥(Q) vì hai mặt phẳng song song có cùng phương pháp tuyến; kiểm tra (P),(Q) thực sự song song.
+\(a\perp (Q)\) vì hai mặt phẳng song song có cùng phương pháp tuyến; kiểm tra (P),(Q) thực sự song song.
 
 **D6 nếu sai:** Không lấy việc hai mặt phẳng nhìn cùng hướng trên giấy làm chứng cứ song song. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -372,7 +373,7 @@ a⊥(Q) vì hai mặt phẳng song song có cùng phương pháp tuyến; kiểm
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P08; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P08; OUTCOME_ID: TOP16-O08; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 28.** d⊥(P), e⊥(P) và d≠e. Chứng minh d∥e.
+**Bài 28.** \(d\perp (P), e\perp (P)\) và \(d\ne e\). Chứng minh \(d\parallel e\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -384,11 +385,11 @@ Cả d và e cùng hướng pháp tuyến của (P); hai đường phân biệt 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P09; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P09; OUTCOME_ID: TOP16-O09; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 29.** Trong nền chữ nhật, kiểm tra cột d⊥AB và d⊥AD với AB cắt AD. Kết luận?
+**Bài 29.** Trong nền chữ nhật, kiểm tra cột \(d\perp AB\) và \(d\perp AD\) với AB cắt AD. Kết luận?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ các đường thuộc nền.
+\(d\perp (ABCD)\) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ các đường thuộc nền.
 
 **D6 nếu sai:** Không bỏ điều kiện hai phương kiểm tra phải độc lập. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -399,7 +400,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 **Xác định chân chiếu, đoạn chiếu và góc dốc**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-C01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 30.** M nằm cách (P) 7cm qua đường MH⊥(P). H là gì?
+**Bài 30.** M nằm cách (P) 7cm qua đường \(MH\perp (P)\). H là gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -416,16 +417,16 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 **Đáp án:** Một điểm
 
-**Lời giải và vì sao:** Mọi điểm trên l chiếu đến cùng chân l∩(P).
+**Lời giải và vì sao:** Mọi điểm trên l chiếu đến cùng chân \(l\cap (P)\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-C03; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 32.** a nằm trong (P), b là đường xiên có hình chiếu b′ trên (P). Biết a⊥b′; suy gì?
+**Bài 32.** a nằm trong (P), b là đường xiên có hình chiếu b′ trên (P). Biết \(a\perp b'\); suy gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** a⊥b
+**Đáp án:** \(a\perp b\)
 
 **Lời giải và vì sao:** Định lí ba đường vuông góc cho phép chuyển góc với hình chiếu sang góc với đường xiên.
 
@@ -447,18 +448,18 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 5/13
+**Đáp án:** \(\frac{5}{13}\)
 
-**Lời giải và vì sao:** sinθ=h/độ dài xiên=5/13, không lấy h/độ dài hình chiếu.
+**Lời giải và vì sao:** \(\sin\theta=\frac5{13}\), lấy chiều cao chia độ dài đoạn xiên, không chia độ dài hình chiếu.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-P01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 35.** Một tia tạo góc 35° với mặt nền. Góc tia đó với phương thẳng đứng bằng bao nhiêu (cùng mặt phẳng đứng chứa tia)?
+**Bài 35.** Một tia tạo góc \(35^\circ\) với mặt nền. Góc tia đó với phương thẳng đứng bằng bao nhiêu (cùng mặt phẳng đứng chứa tia)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 55°.
+**Đáp án:** \(55^\circ\).
 
 **Lời giải và vì sao:** Hai góc phụ nhau do phương thẳng đứng vuông góc mặt nền.
 
@@ -471,7 +472,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 **Đáp án:** 4m.
 
-**Lời giải và vì sao:** Tam giác vuông, cạnh hình chiếu bằng √(25−9)=4m.
+**Lời giải và vì sao:** Tam giác vuông, cạnh hình chiếu dài \(\sqrt{25-9}=4\,\mathrm m\).
 
 </details>
 
@@ -487,30 +488,30 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-W01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 38.** Trong tam giác vuông AHB tại H, AH=9m vuông góc nền và HB=12m. Chứng minh HB là hình chiếu AB, tính góc AB–nền.
+**Bài 38.** Trong tam giác vuông AHB tại \(H, AH=9\,\mathrm{m}\) vuông góc nền và \(HB=12\,\mathrm{m}\). Chứng minh HB là hình chiếu AB, tính góc AB–nền.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Bài giải tự đối chiếu sau khi tự làm:** AB=15m, HB là hình chiếu vì H là chân A và B nằm nền; sinθ=9/15=3/5, θ≈36,87°.
+**Bài giải tự đối chiếu sau khi tự làm:** \(AB=15\,\mathrm m\), HB là hình chiếu vì H là chân A và B nằm nền; \(\sin\theta=\frac9{15}=\frac35\), \(\theta\approx36{,}87^\circ\).
 
 **Rubric 4 điểm:**
 1. Xác định H là hình chiếu của A (1) — **1 điểm**.
 2. Nêu HB là hình chiếu đoạn AB (1) — **1 điểm**.
-3. Tính AB=15m (1) — **1 điểm**.
-4. Tính sinθ=3/5 và θ≈36,87° (1) — **1 điểm**.
+3. Tính \(AB=15\,\mathrm{m}\) (1) — **1 điểm**.
+4. Tính \(\sin\theta=\frac35\) và \(\theta\approx36{,}87^\circ\) (1) — **1 điểm**.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 39.** b là đường xiên với hình chiếu b′ trên (P); a thuộc (P), a⊥b′. Một bạn cho rằng kết luận a⊥b chỉ đúng nếu a,b cắt nhau. Hãy phân tích theo định nghĩa góc hai đường trong không gian.
+**Bài 39.** b là đường xiên với hình chiếu b′ trên (P); a thuộc \((P), a\perp b'\). Một bạn cho rằng kết luận \(a\perp b\) chỉ đúng nếu a,b cắt nhau. Hãy phân tích theo định nghĩa góc hai đường trong không gian.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Bài giải tự đối chiếu sau khi tự làm:** Định lí ba đường vuông góc dùng quan hệ giữa phương: a⊥b khi a⊥b′, miễn b′ là hình chiếu đúng. Hai đường trong không gian có thể chéo nhau; hình chiếu về cùng phương.
+**Bài giải tự đối chiếu sau khi tự làm:** Định lí ba đường vuông góc dùng quan hệ giữa phương: \(a\perp b\) khi \(a\perp b'\), miễn b′ là hình chiếu đúng. Hai đường trong không gian có thể chéo nhau; hình chiếu về cùng phương.
 
 **Rubric 4 điểm:**
 1. Xác định đúng b′ là hình chiếu b (1) — **1 điểm**.
-2. Nêu a⊥b′ là giả thiết (1) — **1 điểm**.
+2. Nêu \(a\perp b'\) là giả thiết (1) — **1 điểm**.
 3. Áp dụng ba đường vuông góc (1) — **1 điểm**.
 4. Giải thích quan hệ góc theo phương, không cần giao thực (1) — **1 điểm**.
 
@@ -520,11 +521,11 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P10; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P10; OUTCOME_ID: TOP16-O10; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 40.** Cho AH⊥(P), AH=7 cm; tìm hình chiếu của A và khoảng cách từ A đến (P).
+**Bài 40.** Cho \(AH\perp (P), AH=7\,\mathrm{cm}\); tìm hình chiếu của A và khoảng cách từ A đến (P).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-H là hình chiếu; d(A,(P))=AH=7 cm. Không dùng độ dài một đoạn xiên khác.
+H là hình chiếu; \(d(A,(P))=AH=7\,\mathrm{cm}\). Không dùng độ dài một đoạn xiên khác.
 
 **D6 nếu sai:** Không lấy điểm gần nhất theo hình phối cảnh thay cho chân vuông góc. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -544,11 +545,11 @@ H là hình chiếu; d(A,(P))=AH=7 cm. Không dùng độ dài một đoạn xi�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P12; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P12; OUTCOME_ID: TOP16-O12; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 42.** AH⊥(P), B,H∈(P), B≠H, c⊂(P) và c⊥AB. Hỏi c⊥BH không?
+**Bài 42.** \(AH\perp (P), B,H\in (P), B\ne H, c\subset (P)\) và \(c\perp AB\). Hỏi \(c\perp BH\) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Có. Vì AH⊥(P) nên c⊥AH. Mặt khác, theo giả thiết c⊥AB. Hình chiếu của đường xiên AB lên (P) là đường BH **không suy biến vì B≠H**; theo định lí ba đường vuông góc suy c⊥BH. Nếu bỏ điều kiện B≠H, BH chỉ là một điểm nên không thể viết c⊥BH.
+Có. Vì \(AH\perp (P)\) nên \(c\perp AH\). Mặt khác, theo giả thiết \(c\perp AB\). Hình chiếu của đường xiên AB lên (P) là đường BH **không suy biến vì \(B\ne H\)**; theo định lí ba đường vuông góc suy \(c\perp BH\). Nếu bỏ điều kiện \(B\ne H\), BH chỉ là một điểm nên không thể viết \(c\perp BH\).
 
 **D6 nếu sai:** Trước khi dùng định lí, xác định chân H và đảm bảo BH thật sự là hình chiếu AB. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -556,11 +557,11 @@ Có. Vì AH⊥(P) nên c⊥AH. Mặt khác, theo giả thiết c⊥AB. Hình chi
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P13; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P13; OUTCOME_ID: TOP16-O13; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 43.** AH⊥(P), AH=5 m, BH=12 m. Tính sin góc của AB với (P).
+**Bài 43.** \(AH\perp (P), AH=5\,\mathrm{m}, BH=12\,\mathrm{m}\). Tính sin góc của AB với (P).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-AB=√(5²+12²)=13 m; sinθ=AH/AB=5/13. Góc là giữa đường AB và hình chiếu BH.
+\(AB=\sqrt{5^2+12^2}=13\,\mathrm m\); \(\sin\theta=\frac{AH}{AB}=\frac5{13}\). Góc là giữa đường AB và hình chiếu BH.
 
 **D6 nếu sai:** Không lấy góc giữa đường xiên và pháp tuyến làm góc đường–mặt; đó là góc phụ. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -572,7 +573,7 @@ AB=√(5²+12²)=13 m; sinθ=AH/AB=5/13. Góc là giữa đường AB và hình 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Độ dài 13 m; tanθ=5/12. Kiểm tra các số đều là độ dài cùng đơn vị.
+Độ dài \(13\,\mathrm{m}; \tan \theta =\frac{5}{12}\). Kiểm tra các số đều là độ dài cùng đơn vị.
 
 **D6 nếu sai:** Chỉ áp dụng tỉ số lượng giác cho tam giác vuông sau khi dựng hình chiếu đúng. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -580,17 +581,17 @@ AB=√(5²+12²)=13 m; sinθ=AH/AB=5/13. Góc là giữa đường AB và hình 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-W02; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-W02; OUTCOME_ID: TOP16-O12; ROLE: TOPIC_WRITTEN; ORIGINAL_R01_RUBRIC_UNCHANGED -->
-**Bài 45.** Trong tứ diện S.ABC biết SA⊥(ABC), H thuộc BC, AH⊥BC. Chứng minh SH⊥BC.
+**Bài 45.** Trong tứ diện S.ABC biết \(SA\perp (ABC), H\) thuộc \(BC, AH\perp BC\). Chứng minh \(SH\perp BC\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, thuộc (SAH), suy BC⊥(SAH), do đó BC⊥SH. Đây cũng là định lí ba đường vuông góc với AH là hình chiếu của SH.
+\(SA\perp (ABC)\) nên \(SA\perp BC; AH\perp BC\) đã cho. Hai đường SA, AH cắt tại A, thuộc (SAH), suy \(BC\perp (SAH)\), do đó \(BC\perp SH\). Đây cũng là định lí ba đường vuông góc với AH là hình chiếu của SH.
 
 **Rubric 4 điểm:**
 - Xác định chân chiếu A của S lên (ABC) — **1 điểm**.
-- Nêu SA⊥BC từ SA⊥(ABC) — **1 điểm**.
-- Dùng SA,AH cắt tại A để suy BC⊥(SAH) — **1 điểm**.
-- Kết luận SH⊥BC — **1 điểm**.
+- Nêu \(SA\perp BC\) từ \(SA\perp (ABC)\) — **1 điểm**.
+- Dùng SA,AH cắt tại A để suy \(BC\perp (SAH)\) — **1 điểm**.
+- Kết luận \(SH\perp BC\) — **1 điểm**.
 
 </details>
 
@@ -599,29 +600,29 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 **Đo góc hai mặt, xét nhị diện và hình khối**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-C01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 46.** Góc giữa hai đường pháp tuyến của hai mặt phẳng là 75°. Góc hai mặt là bao nhiêu?
+**Bài 46.** Góc giữa hai đường pháp tuyến của hai mặt phẳng là \(75^\circ\). Góc hai mặt là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 75°
+**Đáp án:** \(75^\circ\)
 
 **Lời giải và vì sao:** Góc hai mặt là góc không tù giữa các pháp tuyến.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-C02; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 47.** Góc phẳng của một góc nhị diện bằng 125°. Góc giữa hai mặt phẳng chứa nó?
+**Bài 47.** Góc phẳng của một góc nhị diện bằng \(125^\circ\). Góc giữa hai mặt phẳng chứa nó?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 55°
+**Đáp án:** \(55^\circ\)
 
-**Lời giải và vì sao:** Hai mặt chứa hai nửa mặt tạo góc không tù bằng 180°−125°.
+**Lời giải và vì sao:** Hai mặt chứa hai nửa mặt tạo góc không tù bằng \(180^\circ-125^\circ\).
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-C03; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 48.** a⊂(P), a⊥(Q) thì (P) và (Q) có vuông góc?
+**Bài 48.** \(a\subset (P), a\perp (Q)\) thì (P) và (Q) có vuông góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -632,7 +633,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-C04; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 49.** (P)⊥(Q) theo giao tuyến Δ; a⊂(P), a⊥Δ. Có suy a⊥(Q)?
+**Bài 49.** \((P)\perp (Q)\) theo giao tuyến \(\Delta ; a\subset (P), a\perp \Delta \). Có suy \(a\perp (Q)\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -676,13 +677,13 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-P01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 53.** Có thể khẳng định góc giữa hai mặt phẳng là 130°?
+**Bài 53.** Có thể khẳng định góc giữa hai mặt phẳng là \(130^\circ\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Không.
 
-**Lời giải và vì sao:** Góc hai mặt phẳng theo định nghĩa nằm trong [0°,90°]; 130° có thể là góc phẳng của góc nhị diện.
+**Lời giải và vì sao:** Góc hai mặt phẳng theo định nghĩa nằm trong \([0^\circ;90^\circ]; 130^\circ\) có thể là góc phẳng của góc nhị diện.
 
 </details>
 
@@ -709,31 +710,31 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-W01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 56.** Góc phẳng một góc nhị diện là 112°. Tính góc giữa hai mặt phẳng chứa hai nửa mặt và giải thích vì sao khác 112°.
+**Bài 56.** Góc phẳng một góc nhị diện là \(112^\circ\). Tính góc giữa hai mặt phẳng chứa hai nửa mặt và giải thích vì sao khác \(112^\circ\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Bài giải tự đối chiếu sau khi tự làm:** Góc hai mặt =68°, vì lấy góc không tù giữa hai mặt, trong khi góc nhị diện 112° đo hai nửa mặt có hướng.
+**Bài giải tự đối chiếu sau khi tự làm:** Góc hai mặt bằng \(68^\circ\), vì lấy góc không tù giữa hai mặt, trong khi góc nhị diện \(112^\circ\) đo hai nửa mặt có hướng.
 
 **Rubric 4 điểm:**
 1. Phân biệt nhị diện với góc hai mặt (1) — **1 điểm**.
-2. Nêu góc giữa hai mặt ≤90° (1) — **1 điểm**.
-3. Tính 180°−112°=68° (1) — **1 điểm**.
+2. Nêu góc giữa hai mặt không vượt quá \(90^\circ\) (1) — **1 điểm**.
+3. Tính \(180^\circ-112^\circ=68^\circ\) (1) — **1 điểm**.
 4. Giải thích cơ sở chọn góc nhọn (1) — **1 điểm**.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài 57.** Chóp đều S.ABCD đáy vuông cạnh 8, chân đường cao O tâm đáy, SO=6. Tính AO, SA và giải thích tại sao SA không phải chiều cao.
+**Bài 57.** Chóp đều S.ABCD đáy vuông cạnh 8, chân đường cao O tâm đáy, \(SO=6\). Tính AO, SA và giải thích tại sao SA không phải chiều cao.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Bài giải tự đối chiếu sau khi tự làm:** AO=4√2, SA=√(36+32)=2√17; SO=6 là đường cao vì SO⊥đáy, SA xiên.
+**Bài giải tự đối chiếu sau khi tự làm:** \(AO=4\sqrt2\), \(SA=\sqrt{36+32}=2\sqrt{17}\); \(SO=6\) là đường cao vì SO vuông góc đáy, SA xiên.
 
 **Rubric 4 điểm:**
 1. Nêu O là tâm và chân đường cao (1) — **1 điểm**.
-2. Tính AO=4√2 (1) — **1 điểm**.
-3. Tính SA=2√17 (1) — **1 điểm**.
+2. Tính \(AO=4\sqrt{2}\) (1) — **1 điểm**.
+3. Tính \(SA=2\sqrt{17}\) (1) — **1 điểm**.
 4. Phân biệt SO với SA theo phương vuông góc (1) — **1 điểm**.
 
 </details>
@@ -742,11 +743,11 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P15; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P15; OUTCOME_ID: TOP16-O15; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 58.** Hai mặt phẳng cắt nhau theo d; trong mỗi mặt chọn một đường vuông góc d và góc giữa chúng là 70°. Góc hai mặt?
+**Bài 58.** Hai mặt phẳng cắt nhau theo d; trong mỗi mặt chọn một đường vuông góc d và góc giữa chúng là \(70^\circ\). Góc hai mặt?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-70°. Nếu có góc bù 110° trên thiết diện, góc giữa hai mặt không định hướng vẫn là 70°.
+\(70^\circ\). Nếu có góc bù \(110^\circ\) trên thiết diện, góc giữa hai mặt không định hướng vẫn là \(70^\circ\).
 
 **D6 nếu sai:** Không đồng nhất góc giữa hai mặt với bất kì góc của hai đường tùy chọn ở hai mặt. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -754,11 +755,11 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P16; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P16; OUTCOME_ID: TOP16-O16; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 59.** Góc phẳng của nhị diện 135°. Tìm góc giữa hai mặt phẳng chứa hai nửa mặt phẳng.
+**Bài 59.** Góc phẳng của nhị diện \(135^\circ\). Tìm góc giữa hai mặt phẳng chứa hai nửa mặt phẳng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-45° = min(135°, 180°−135°). Góc nhị diện vẫn 135° theo hai nửa mặt được chọn.
+\(180^\circ-135^\circ=45^\circ\), là góc không tù. Góc nhị diện vẫn \(135^\circ\) theo hai nửa mặt được chọn.
 
 **D6 nếu sai:** Phải nêu đang nói nhị diện hay góc giữa hai mặt phẳng; khác nhau ở định hướng. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -766,11 +767,11 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P17; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P17; OUTCOME_ID: TOP16-O17; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 60.** Một mặt đứng (P) chứa cột d vuông góc sàn (Q). Chứng minh (P)⊥(Q).
+**Bài 60.** Một mặt đứng (P) chứa cột d vuông góc sàn (Q). Chứng minh \((P)\perp (Q)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Vì d⊂(P) và d⊥(Q), áp dụng dấu hiệu hai mặt phẳng vuông góc.
+Vì \(d\subset (P)\) và \(d\perp (Q)\), áp dụng dấu hiệu hai mặt phẳng vuông góc.
 
 **D6 nếu sai:** Chỉ “có hai đường vuông góc” chưa đủ nếu không có đường vuông góc toàn bộ mặt. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -778,11 +779,11 @@ Vì d⊂(P) và d⊥(Q), áp dụng dấu hiệu hai mặt phẳng vuông góc.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P18; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P18; OUTCOME_ID: TOP16-O18; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài 61.** Trong tường vuông góc nền, đường xiên a trong tường không vuông góc chân tường d. Có kết luận a⊥nền được không?
+**Bài 61.** Trong tường vuông góc nền, đường xiên a trong tường không vuông góc chân tường d. Có kết luận a vuông góc với nền được không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Không; thiếu điều kiện a⊥d. Đổi thành đường trong tường vuông góc d mới suy được.
+Không; thiếu điều kiện \(a\perp d\). Đổi thành đường trong tường vuông góc d mới suy được.
 
 **D6 nếu sai:** Nhớ cả điều kiện a nằm trong mặt và a vuông góc giao tuyến. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -806,7 +807,7 @@ Không phải lăng trụ đều vì đáy không phải đa giác đều. Tuy n
 
 <details markdown="1"><summary>Lời giải</summary>
 
-√(3²+4²)=5, vì khoảng cách từ tâm đáy tới trung điểm cạnh là 4.
+\(\sqrt{3^2+4^2}=5\), vì khoảng cách từ tâm đáy tới trung điểm cạnh là 4.
 
 **D6 nếu sai:** Không lấy cạnh bên hay đường cao mặt bên làm chiều cao vuông góc của chóp. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -818,7 +819,7 @@ Không phải lăng trụ đều vì đáy không phải đa giác đều. Tuy n
 
 <details markdown="1"><summary>Lời giải</summary>
 
-16:4=4:1 vì diện tích các hình đồng dạng tỉ lệ bình phương độ dài tương ứng.
+\(16:4=4:1\) vì diện tích các hình đồng dạng tỉ lệ bình phương độ dài tương ứng.
 
 **D6 nếu sai:** Không nhân tỉ số cạnh trực tiếp để suy tỉ số diện tích. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -826,17 +827,17 @@ Không phải lăng trụ đều vì đáy không phải đa giác đều. Tuy n
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-W03; SOURCE_CANONICAL_UNCHANGED -->
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-W03; OUTCOME_ID: TOP16-O18; ROLE: TOPIC_WRITTEN; ORIGINAL_R01_RUBRIC_UNCHANGED -->
-**Bài 65.** Hai mặt phẳng (P),(Q) vuông góc, cắt theo d. a⊂(P) và a⊥d. Chứng minh a⊥(Q) và giải thích vì sao phải có điều kiện a⊥d.
+**Bài 65.** Hai mặt phẳng (P),(Q) vuông góc, cắt theo d. \(a\subset (P)\) và \(a\perp d\). Chứng minh \(a\perp (Q)\) và giải thích vì sao phải có điều kiện \(a\perp d\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Theo định lí hai mặt phẳng vuông góc, một đường của (P) vuông góc giao tuyến d sẽ vuông góc (Q). Nếu a là một đường xiên trong (P) không vuông góc d, không suy được a⊥(Q).
+Theo định lí hai mặt phẳng vuông góc, một đường của (P) vuông góc giao tuyến d sẽ vuông góc (Q). Nếu a là một đường xiên trong (P) không vuông góc d, không suy được \(a\perp (Q)\).
 
 **Rubric 4 điểm:**
 - Ghi đúng giả thiết hai mặt vuông góc — **1 điểm**.
 - Xác định d là giao tuyến — **1 điểm**.
-- Áp dụng dấu hiệu a⊂(P),a⊥d — **1 điểm**.
-- Giải thích giới hạn khi bỏ a⊥d — **1 điểm**.
+- Áp dụng dấu hiệu \(a\subset (P),a\perp d\) — **1 điểm**.
+- Giải thích giới hạn khi bỏ \(a\perp d\) — **1 điểm**.
 
 </details>
 

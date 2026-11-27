@@ -27,7 +27,8 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC16_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84; Q18_RECEIPT_BLOB 19a2ed6ebfd7898da5f186350ea6042e2134fa7e; AUTHORING_PR #848; PUBLIC_PROJECTION_ONLY -->
+
+<!-- Q18 SOURCE_LEARNER_BLOB 3e6f97091a814d7cee7096fd92cd448dd8900435; Q18_RECEIPT_BLOB 18ce1cba1049ec7435ef7cfffc1a27804c1fd394; AUTHORING_PR #848; PUBLIC_PROJECTION_ONLY -->
 
 # Tự kiểm tra
 
@@ -41,15 +42,15 @@ Tám câu dưới đây là những câu tự ôn công khai từ Luyện tập.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP16-P06; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P06; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEYS_HINTS -->
-**Câu 2.** Trong mặt phẳng (P), a,b cắt tại O. Biết d⊥a và d⊥b. Chứng minh d⊥(P).
+**Câu 2.** Trong mặt phẳng (P), a,b cắt tại O. Biết \(d\perp a\) và \(d\perp b\). Chứng minh \(d\perp (P)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP16-P09; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P09; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEYS_HINTS -->
-**Câu 3.** Trong nền chữ nhật, kiểm tra cột d⊥AB và d⊥AD với AB cắt AD. Kết luận?
+**Câu 3.** Trong nền chữ nhật, kiểm tra cột \(d\perp AB\) và \(d\perp AD\) với AB cắt AD. Kết luận?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP16-P12; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P12; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEYS_HINTS -->
-**Câu 4.** AH⊥(P), B,H∈(P), B≠H, c⊂(P) và c⊥AB. Hỏi c⊥BH không?
+**Câu 4.** \(AH\perp (P), B,H\in (P), B\ne H, c\subset (P)\) và \(c\perp AB\). Hỏi \(c\perp BH\) không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP16-P14; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P14; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEYS_HINTS -->
@@ -57,11 +58,11 @@ Tám câu dưới đây là những câu tự ôn công khai từ Luyện tập.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP16-P16; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P16; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEYS_HINTS -->
-**Câu 6.** Góc phẳng của nhị diện 135°. Tìm góc giữa hai mặt phẳng chứa hai nửa mặt phẳng.
+**Câu 6.** Góc phẳng của nhị diện \(135^\circ\). Tìm góc giữa hai mặt phẳng chứa hai nửa mặt phẳng.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP16-P18; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P18; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEYS_HINTS -->
-**Câu 7.** Trong tường vuông góc nền, đường xiên a trong tường không vuông góc chân tường d. Có kết luận a⊥nền được không?
+**Câu 7.** Trong tường vuông góc nền, đường xiên a trong tường không vuông góc chân tường d. Có kết luận a vuông góc với nền được không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP16-P21; NO_RD1; NO_MASTERY -->
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P21; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEYS_HINTS -->
