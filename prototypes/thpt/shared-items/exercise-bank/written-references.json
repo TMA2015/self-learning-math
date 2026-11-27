@@ -3842,9 +3842,12 @@
   {
     "item_id": "THPT-G11-CHVII-B26-W01",
     "source": {
-      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "blob": "0dac60b05d670a74a670e0e423e11ffbbc2d2303",
       "heading_id": "THPT-G11-CHVII-B26-W01",
-      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0",
+      "previous_source_blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "path": "prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+      "revision_scope": "CD17_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
@@ -3852,14 +3855,24 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B26-POINT_PLANE"
+    ],
+    "content_version": "CD17-BANK-CP137-20261127-THPT-G11-CHVII-B26-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVII-B26-W02-ANCHOR",
     "source": {
-      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "blob": "0dac60b05d670a74a670e0e423e11ffbbc2d2303",
       "heading_id": "THPT-G11-CHVII-B26-W02-ANCHOR",
-      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0",
+      "previous_source_blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "path": "prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+      "revision_scope": "CD17_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
@@ -3867,14 +3880,24 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B26-SKEW_COMMON_PERP"
+    ],
+    "content_version": "CD17-BANK-CP137-20261127-THPT-G11-CHVII-B26-W02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVII-B27-W01",
     "source": {
-      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "blob": "0dac60b05d670a74a670e0e423e11ffbbc2d2303",
       "heading_id": "THPT-G11-CHVII-B27-W01",
-      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0",
+      "previous_source_blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "path": "prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+      "revision_scope": "CD17_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
@@ -3882,14 +3905,24 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B27-PYRAMID_VOLUME"
+    ],
+    "content_version": "CD17-BANK-CP137-20261127-THPT-G11-CHVII-B27-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVII-B27-W02-ANCHOR",
     "source": {
-      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "blob": "0dac60b05d670a74a670e0e423e11ffbbc2d2303",
       "heading_id": "THPT-G11-CHVII-B27-W02-ANCHOR",
-      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0",
+      "previous_source_blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "path": "prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+      "revision_scope": "CD17_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
@@ -3897,7 +3930,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B27-FRUSTUM_VOLUME"
+    ],
+    "content_version": "CD17-BANK-CP137-20261127-THPT-G11-CHVII-B27-W02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP16-W01",
@@ -3954,32 +3994,68 @@
   {
     "item_id": "THPT-TOP17-W01",
     "source": {
-      "blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
-      "heading_id": "THPT-TOP17-W01"
+      "blob": "9562830ec226b5612309bdd97197e97fa726d88d",
+      "heading_id": "THPT-TOP17-W01",
+      "previous_source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+      "path": "prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md",
+      "revision_scope": "CD17_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED",
+      "donor_commit": "5acb11da0c0f30c32088b0a5d6be795fa16a9268",
+      "donor_blob": "03b6b27adbeaf854d3db1d8fc9e830a0294a08aa"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B26-HEIGHT_APPLICATION"
+    ],
+    "content_version": "CD17-BANK-CP137-20261127-THPT-TOP17-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP17-W02",
     "source": {
-      "blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
-      "heading_id": "THPT-TOP17-W02"
+      "blob": "9562830ec226b5612309bdd97197e97fa726d88d",
+      "heading_id": "THPT-TOP17-W02",
+      "previous_source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+      "path": "prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md",
+      "revision_scope": "CD17_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED",
+      "donor_commit": "5acb11da0c0f30c32088b0a5d6be795fa16a9268",
+      "donor_blob": "03b6b27adbeaf854d3db1d8fc9e830a0294a08aa"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B27-VOLUME_APPLICATION"
+    ],
+    "content_version": "CD17-BANK-CP137-20261127-THPT-TOP17-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP17-W03",
     "source": {
-      "blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
-      "heading_id": "THPT-TOP17-W03"
+      "blob": "9562830ec226b5612309bdd97197e97fa726d88d",
+      "heading_id": "THPT-TOP17-W03",
+      "previous_source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+      "path": "prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md",
+      "revision_scope": "CD17_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED",
+      "donor_commit": "5acb11da0c0f30c32088b0a5d6be795fa16a9268",
+      "donor_blob": "03b6b27adbeaf854d3db1d8fc9e830a0294a08aa"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B27-FRUSTUM_VOLUME"
+    ],
+    "content_version": "CD17-BANK-CP137-20261127-THPT-TOP17-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B14-W01",
