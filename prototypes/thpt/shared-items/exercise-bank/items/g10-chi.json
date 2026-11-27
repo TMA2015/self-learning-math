@@ -1,8 +1,8 @@
 [
   {
     "item_id": "THPT-G10-B01-C01",
-    "content_version": "G10-CHI-BANK-CP120-20261127-B01-C01",
-    "stem": "Xét hai câu: (a) “9 là số chính phương”; (b) “\\(x+1=3\\)”. Câu nào là mệnh đề? Câu nào chưa xác định được giá trị đúng/sai? Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
+    "content_version": "G10-CHI-BANK-CP121-20261127-B01-C01",
+    "stem": "Xét hai câu: (a) “9 là số chính phương”; (b) “\\(x+1=3\\)” với \\(x\\in\\mathbb R\\). Câu nào là mệnh đề? Câu nào chưa xác định được giá trị đúng/sai? Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "(a) Mệnh đề đúng; (b) mệnh đề chứa biến, chưa có giá trị chân lý xác định khi chưa quy định x.",
     "worked_solution": "Vì \\(9=3^2\\) nên câu (a) là mệnh đề đúng. Câu (b) đúng khi \\(x=2\\) và sai với \\(x\\ne2\\). Khi chưa gán giá trị cho x, câu (b) là mệnh đề chứa biến, không thể gán một giá trị đúng/sai cố định.",
     "skill_ids": [
@@ -649,8 +649,8 @@
   },
   {
     "item_id": "THPT-G10-B02-P03",
-    "content_version": "G10-CHI-BANK-CP120-20261127-B02-P03",
-    "stem": "Cho \\(X=(-\\infty;2]\\), \\(Y=[2;+\\infty)\\). Tìm \\(X\\cap Y\\) và giải thích vì sao giao này không rỗng dù hai tập chỉ gặp nhau tại đầu mút. Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
+    "content_version": "G10-CHI-BANK-CP121-20261127-B02-P03",
+    "stem": "Cho \\(X=(-\\infty;2]\\), \\(Y=[2;+\\infty)\\). Tìm \\(X\\cap Y\\) và giải thích kết quả dựa vào điều kiện ở đầu mút. Chọn phương án đúng; tự giải thích trước khi xem lời giải.",
     "answer_key": "\\(X\\cap Y=\\{2\\}\\).",
     "worked_solution": "\\(x\\in X\\cap Y\\) khi đồng thời \\(x\\le2\\) và \\(x\\ge2\\), tức \\(x=2\\). Cả hai đầu mút 2 đều được lấy (ngoặc vuông), nên giao chỉ gồm một phần tử, không phải tập rỗng.",
     "skill_ids": [
@@ -703,7 +703,7 @@
   },
   {
     "item_id": "THPT-G10-B02-P04",
-    "content_version": "G10-CHI-BANK-CP120-20261127-B02-P04",
+    "content_version": "G10-CHI-BANK-CP121-20261127-B02-P04",
     "stem": "Cho \\(X=(-\\infty;-1]\\), \\(Y=(2;+\\infty)\\). Tìm \\(X\\cup Y\\). Giải thích các số \\(-1\\), 0, 2 có thuộc hợp không. Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "\\(X\\cup Y=(-\\infty;-1]\\cup(2;+\\infty)\\). Số \\(-1\\) thuộc hợp; 0 và 2 không thuộc hợp.",
     "worked_solution": "Thuộc hợp nghĩa là \\(x\\le-1\\) hoặc \\(x>2\\). Giữa hai tập có khoảng trống \\((-1;2]\\), nên không thể nối thành một khoảng liên tục. Số \\(-1\\) thuộc X; 0 không thuộc tập nào; 2 không thuộc X và bị loại khỏi Y bởi ngoặc tròn.",
@@ -739,7 +739,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(X\\cup Y=(-\\infty;-1]\\cup(2;+\\infty)\\); chỉ số \\(-1\\) trong ba số đã cho thuộc hợp."
+        "text": "\\(X\\cup Y=(-\\infty;-1]\\cup(2;+\\infty)\\); trong ba số đã cho, chỉ có \\(-1\\) thuộc hợp."
       },
       {
         "id": "B",
