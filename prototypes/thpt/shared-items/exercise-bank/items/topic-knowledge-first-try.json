@@ -10397,19 +10397,19 @@
     "options": [
       {
         "id": "A",
-        "text": "11; \\(\\frac{65}{3}\\); \\(\\frac{32}{3}\\); A tập trung hơn; cùng R=30"
+        "text": "\\(11;\\frac{65}{3};\\frac{32}{3}\\); A tập trung hơn; cùng khoảng biến thiên 30."
       },
       {
         "id": "B",
-        "text": "10; 20; 10; B tập trung hơn; cùng R=30"
+        "text": "10; 20; 10; B tập trung hơn; cùng khoảng biến thiên 30."
       },
       {
         "id": "C",
-        "text": "11; \\(\\frac{65}{3}\\); \\(\\frac{32}{3}\\); B tập trung hơn; cùng R=30"
+        "text": "\\(11;\\frac{65}{3};\\frac{32}{3}\\); B tập trung hơn; cùng khoảng biến thiên 30."
       },
       {
         "id": "D",
-        "text": "11; \\(\\frac{65}{3}\\); \\(\\frac{32}{3}\\); B tập trung hơn; R_B nhỏ hơn R_A"
+        "text": "\\(11;\\frac{65}{3};\\frac{32}{3}\\); B tập trung hơn; khoảng biến thiên B nhỏ hơn A."
       }
     ]
   },
@@ -10472,7 +10472,7 @@
       },
       {
         "id": "D",
-        "text": "50; 5 \\(\\sqrt{2}\\)"
+        "text": "\\(50; 5\\sqrt{2}\\)"
       }
     ]
   },
