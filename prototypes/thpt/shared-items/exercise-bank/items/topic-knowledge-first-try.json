@@ -6751,7 +6751,9 @@
     "answer_key": "\\(\\Delta=0\\); nghiệm kép \\(x=-1\\).",
     "worked_solution": "\\(\\Delta=0\\), nghiệm kép \\(x=-1\\) vì \\(x^2+2x+1=(x+1)^2\\).\n\nQuên 2a hoặc sai dấu b thì thử nhân tích để kiểm nghiệm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "QUAD_DOUBLE_ROOT_SIGN"
+    ],
     "original_outcome_ids": [
       "TOP02-O02"
     ],
@@ -7332,7 +7334,7 @@
     "content_version": "CD02-BANK-CP122-20261127-TOP02-KFT12",
     "stem": "Mỗi sản phẩm loại A được 2 điểm thưởng, loại B được 3 điểm. Gọi \\(x,y\\) lần lượt là số sản phẩm hai loại (số nguyên không âm). Cần ít nhất 12 điểm. Phương án \\((x;y)=(3;2)\\) có đạt yêu cầu không?",
     "answer_key": "Có, đạt đúng 12 điểm.",
-    "worked_solution": "Điều kiện là \\(2x+3y\\ge12\\), với \\(x,y\\) là số nguyên không âm. Phương án đã cho đạt đúng \\(2\\cdot3+3\\cdot2=12\\) điểm, nên được nhận.\n\nNhầm ít nhất với ≤ thì thử phương án bằng và thấp hơn ngưỡng để sửa.",
+    "worked_solution": "Điều kiện là \\(2x+3y\\ge12\\), với \\(x,y\\) là số nguyên không âm. Phương án đã cho đạt đúng \\(2\\cdot3+3\\cdot2=12\\) điểm, nên được nhận.\n\nNhầm ít nhất với \\(\\le\\) thì thử phương án bằng và thấp hơn ngưỡng để sửa.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B03-MODELING"
