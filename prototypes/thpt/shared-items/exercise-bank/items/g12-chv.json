@@ -1,7 +1,7 @@
 [
   {
     "item_id": "THPT-G12-B14-C01",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-C01",
     "stem": "Cho mặt phẳng \\(x-2y+3z-4=0\\). Tìm một vectơ pháp tuyến.",
     "answer_key": "\\((1;-2;3)\\).",
     "worked_solution": "Hệ số của x, y, z tạo thành vectơ pháp tuyến \\(\\vec n=(1;-2;3)\\ne\\vec0\\). Hằng số -4 chỉ xác định vị trí mặt phẳng.",
@@ -9,13 +9,17 @@
       "G12-CHV-B14-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đọc ba hệ số x,y,z."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -28,12 +32,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không đưa hằng số tự do vào pháp tuyến. Ôn CĐ18 mục 4.1; luyện THPT-TOP18-P17."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không đưa hằng số tự do vào pháp tuyến. Ôn CĐ18 mục 4.1; luyện THPT-TOP18-P17.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((1;2;3)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((1;-2;-3)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((1;-2;3)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((1;3;-2)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-P01",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-P01",
     "stem": "Tìm một vectơ khác không vuông góc với cả \\(\\vec u=(1;2;0)\\), \\(\\vec v=(0;1;2)\\).",
     "answer_key": "\\((4;-2;1)\\) hoặc bội khác 0.",
     "worked_solution": "Hai vectơ không cùng phương. Tích có hướng \\([\\vec u,\\vec v]=(2\\cdot2-0\\cdot1;0\\cdot0-1\\cdot2;1\\cdot1-2\\cdot0)=(4;-2;1)\\). Kiểm hai tích vô hướng lần lượt bằng 0.",
@@ -41,13 +64,17 @@
       "G12-CHV-B14-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính tích có hướng \\([\\vec u,\\vec v]\\) và kiểm tích vô hướng với cả hai vectơ bằng 0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -60,12 +87,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đảo thứ tự tích có hướng, dấu đổi nhưng vẫn là pháp tuyến. Ôn CĐ18 mục 4.1; luyện THPT-TOP18-P17."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đảo thứ tự tích có hướng, dấu đổi nhưng vẫn là pháp tuyến. Ôn CĐ18 mục 4.1; luyện THPT-TOP18-P17.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((4;2;1)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((4;-2;1)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((1;2;0)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((0;1;2)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-A01",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-A01",
     "stem": "Hai mép mái phẳng có vectơ chỉ phương \\((1;0;1)\\) và \\((0;2;1)\\). Tìm một vectơ pháp tuyến của mái.",
     "answer_key": "\\((-2;-1;2)\\) hoặc bội khác 0.",
     "worked_solution": "Hai hướng không cùng phương nên tích có hướng là pháp tuyến: \\((-2;-1;2)\\). Kiểm: \\(-2+2=0\\) và \\(-2+2=0\\) khi lấy tích vô hướng với từng hướng.",
@@ -73,13 +119,17 @@
       "G12-CHV-B14-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Hai mép mái cho hai hướng khác phương; tính tích có hướng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -92,12 +142,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu tìm được vectơ 0, kiểm phép tính và hai hướng. Ôn CĐ18 mục 4.1; luyện THPT-TOP18-P17."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu tìm được vectơ 0, kiểm phép tính và hai hướng. Ôn CĐ18 mục 4.1; luyện THPT-TOP18-P17.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((-2;-1;2)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((2;1;2)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((1;0;1)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((0;2;1)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-C02",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-C02",
     "stem": "Viết phương trình mặt phẳng qua \\(M(0;1;-1)\\) và có pháp tuyến \\(\\vec n=(1;2;3)\\).",
     "answer_key": "\\(x+2y+3z+1=0\\).",
     "worked_solution": "Dùng dạng điểm–pháp tuyến: \\(x+2(y-1)+3(z+1)=0\\). Thu gọn được phương trình cần tìm; thay M vào vế trái cho 0.",
@@ -105,13 +174,17 @@
       "G12-CHV-B14-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng điều kiện \\(\\vec n\\cdot\\overrightarrow{MX}=0\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -124,12 +197,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Thử M vào phương trình để phát hiện sai hằng số. Ôn CĐ18 mục 4.2; luyện THPT-TOP18-P18."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Thử M vào phương trình để phát hiện sai hằng số. Ôn CĐ18 mục 4.2; luyện THPT-TOP18-P18.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x+2y+3z-1=0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x-2y+3z+1=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x+2y+3z=0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x+2y+3z+1=0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-P02",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-P02",
     "stem": "Viết phương trình mặt phẳng (P) qua \\(M(2;0;1)\\), pháp tuyến \\(\\vec n=(1;-2;2)\\).",
     "answer_key": "\\(x-2y+2z-4=0\\).",
     "worked_solution": "Vì \\(\\vec n\\cdot\\overrightarrow{MX}=0\\), phương trình là \\((x-2)-2y+2(z-1)=0\\). Thu gọn và thử M: \\(2+2-4=0\\).",
@@ -137,13 +229,17 @@
       "G12-CHV-B14-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Thế điểm (2;0;1) vào dạng điểm–pháp tuyến."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -156,12 +252,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ mất tọa độ gốc trong (x-2) hoặc (z-1), thay M vào phương trình để kiểm lại. Ôn CĐ18 mục 4.2; luyện THPT-TOP18-P18."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ mất tọa độ gốc trong (x-2) hoặc (z-1), thay M vào phương trình để kiểm lại. Ôn CĐ18 mục 4.2; luyện THPT-TOP18-P18.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x-2y+2z+4=0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x-2y+2z-2=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x-2y+2z-4=0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x+2y+2z=0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-A02",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-A02",
     "stem": "Trong Oxyz với Oz thẳng đứng, mặt sàn nằm ngang qua \\(A(1;2;4)\\). Viết phương trình mặt sàn.",
     "answer_key": "\\(z=4\\).",
     "worked_solution": "Sàn nằm ngang có pháp tuyến \\((0;0;1)\\). Qua A, ta được \\(z-4=0\\). Tất cả điểm trên sàn có cùng cao độ 4.",
@@ -169,13 +284,17 @@
       "G12-CHV-B14-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Mặt ngang song song Oxy, tọa độ z cố định."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -188,12 +307,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy x hay y làm hằng của sàn. Ôn CĐ18 mục 4.2; luyện THPT-TOP18-P18."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không lấy x hay y làm hằng của sàn. Ôn CĐ18 mục 4.2; luyện THPT-TOP18-P18.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(z=-4\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(z=4\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x=1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(y=2\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-C03",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-C03",
     "stem": "Viết phương trình mặt phẳng qua \\(A(1;0;0), B(1;1;0), C(1;0;1)\\).",
     "answer_key": "\\(x=1\\).",
     "worked_solution": "\\(\\overrightarrow{AB}=(0;1;0),\\overrightarrow{AC}=(0;0;1)\\) không cùng phương. Tích có hướng là \\((1;0;0)\\). Mặt phẳng qua A có phương trình \\(x-1=0\\); B và C cũng thỏa.",
@@ -201,13 +339,17 @@
       "G12-CHV-B14-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Lấy \\(\\overrightarrow{AB},\\overrightarrow{AC}\\), kiểm không cùng phương, rồi tìm tích có hướng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -220,12 +362,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Ba điểm có x=1; kiểm mặt x=1 đi qua cả ba. Ôn CĐ18 mục 4.3; luyện THPT-TOP18-P19."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Ba điểm có x=1; kiểm mặt x=1 đi qua cả ba. Ôn CĐ18 mục 4.3; luyện THPT-TOP18-P19.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=1\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(y=1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(z=1\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-P03",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-P03",
     "stem": "Viết phương trình mặt phẳng qua \\(A(0;0;0),B(1;1;0),C(0;0;1)\\).",
     "answer_key": "\\(x-y=0\\).",
     "worked_solution": "Hai vectơ \\(\\overrightarrow{AB}=(1;1;0),\\overrightarrow{AC}=(0;0;1)\\) không cùng phương. Tích có hướng là \\((1;-1;0)\\). Qua O nên hằng số bằng 0, cho \\(x-y=0\\).",
@@ -233,13 +394,17 @@
       "G12-CHV-B14-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng \\(\\overrightarrow{AB},\\overrightarrow{AC}\\) không cùng phương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -252,12 +417,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn \\(\\vec n=(1;1;0)\\), tích vô hướng với \\(\\overrightarrow{AB}\\) không bằng 0. Ôn CĐ18 mục 4.3; luyện THPT-TOP18-P19."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn \\(\\vec n=(1;1;0)\\), tích vô hướng với \\(\\overrightarrow{AB}\\) không bằng 0. Ôn CĐ18 mục 4.3; luyện THPT-TOP18-P19.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x+y=0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(z=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x-y=1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x-y=0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-A03",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-A03",
     "stem": "Ba điểm trên một mặt tường phẳng có tọa độ \\((4;0;0),(0;4;0),(4;0;2)\\). Tìm phương trình mặt tường.",
     "answer_key": "\\(x+y-4=0\\).",
     "worked_solution": "Từ điểm đầu tới hai điểm kia có hai hướng \\((-4;4;0),(0;0;2)\\) không cùng phương. Tích có hướng là \\((8;8;0)\\), chọn pháp tuyến \\((1;1;0)\\). Thế điểm đầu được \\(x+y-4=0\\).",
@@ -265,13 +449,17 @@
       "G12-CHV-B14-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Dùng hai hiệu tọa độ giữa ba đỉnh."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -284,12 +472,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm x+y=0, thử đỉnh (4;0;0). Ôn CĐ18 mục 4.3; luyện THPT-TOP18-P19."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm x+y=0, thử đỉnh (4;0;0). Ôn CĐ18 mục 4.3; luyện THPT-TOP18-P19.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x+y+4=0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x-y-4=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x+y-4=0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x+y=0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-C04",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-C04",
     "stem": "Mặt phẳng đi qua \\((2;1;0)\\) và song song với hai phương Ox, Oz. Viết phương trình.",
     "answer_key": "\\(y=1\\).",
     "worked_solution": "Hai hướng độc lập \\((1;0;0),(0;0;1)\\) có pháp tuyến \\((0;1;0)\\). Mặt phẳng qua điểm có y=1, vì vậy mọi điểm của mặt phẳng có y=1.",
@@ -297,13 +504,17 @@
       "G12-CHV-B14-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Hai hướng Ox,Oz cho pháp tuyến dọc Oy."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -316,12 +527,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Mặt qua điểm y=1, không phải y=0. Ôn CĐ18 mục 4.4; luyện THPT-TOP18-P20."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Mặt qua điểm y=1, không phải y=0. Ôn CĐ18 mục 4.4; luyện THPT-TOP18-P20.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(y=0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(y=1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x=2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(z=0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-P04",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-P04",
     "stem": "Mặt phẳng chứa trục Oy và điểm \\((1;0;2)\\). Viết phương trình.",
     "answer_key": "\\(2x-z=0\\).",
     "worked_solution": "Mặt phẳng chứa O và hai hướng \\((0;1;0),(1;0;2)\\) không cùng phương. Tích có hướng là \\((2;0;-1)\\). Vì qua O nên phương trình là \\(2x-z=0\\).",
@@ -329,13 +559,17 @@
       "G12-CHV-B14-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng hướng Oy và OA."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -348,12 +582,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hệ số tự do khác 0, mặt không chứa O. Ôn CĐ18 mục 4.4; luyện THPT-TOP18-P20."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu hệ số tự do khác 0, mặt không chứa O. Ôn CĐ18 mục 4.4; luyện THPT-TOP18-P20.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(2x-z=0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x-2z=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(2x-z=1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(y-z=0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-A04",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-A04",
     "stem": "Mặt mái đi qua \\(P(0;0;2)\\), song song hai phương \\((1;1;0),(0;1;1)\\). Viết phương trình mặt mái.",
     "answer_key": "\\(x-y+z-2=0\\).",
     "worked_solution": "Tích có hướng của hai vectơ là \\((1;-1;1)\\), khác vectơ-không. Dùng điểm P: \\(x-y+(z-2)=0\\). Thử lại P và hai hướng đều phù hợp.",
@@ -361,13 +614,17 @@
       "G12-CHV-B14-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Tính pháp tuyến từ hai hướng mái rồi dùng P."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -380,12 +637,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu phương trình không qua P(0;0;2), kiểm hằng số. Ôn CĐ18 mục 4.4; luyện THPT-TOP18-P20."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu phương trình không qua P(0;0;2), kiểm hằng số. Ôn CĐ18 mục 4.4; luyện THPT-TOP18-P20.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x+y+z-2=0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x-y+z+2=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x-y-z-2=0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x-y+z-2=0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-C05",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-C05",
     "stem": "Xét vị trí tương đối của hai mặt phẳng \\(x-2y+z=1\\) và \\(2x-4y+2z=5\\).",
     "answer_key": "Song song và phân biệt.",
     "worked_solution": "Hai pháp tuyến tỉ lệ 2. Nếu hai mặt phẳng trùng, nhân toàn bộ phương trình thứ nhất với 2 phải cho phương trình thứ hai. Nhưng vế phải khi đó bằng 2, không bằng 5, nên hai mặt phẳng song song phân biệt.",
@@ -393,13 +669,17 @@
       "G12-CHV-B14-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So tỷ lệ các hệ số, kể cả vế phải."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -412,12 +692,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Hai pháp tuyến tỉ lệ 2 nhưng vế phải 2 khác 5. Ôn CĐ18 mục 4.5; luyện THPT-TOP18-P21."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Hai pháp tuyến tỉ lệ 2 nhưng vế phải 2 khác 5. Ôn CĐ18 mục 4.5; luyện THPT-TOP18-P21.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trùng nhau."
+      },
+      {
+        "id": "B",
+        "text": "Vuông góc."
+      },
+      {
+        "id": "C",
+        "text": "Song song phân biệt."
+      },
+      {
+        "id": "D",
+        "text": "Cắt nhau theo một đường thẳng."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-P05",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-P05",
     "stem": "Hai mặt phẳng \\(2x+y-z=0\\) và \\(x-2y=0\\) có vuông góc không?",
     "answer_key": "Có.",
     "worked_solution": "Hai pháp tuyến là \\((2;1;-1)\\) và \\((1;-2;0)\\). Tích vô hướng \\(2-2+0=0\\). Vì cả hai khác không, hai mặt phẳng vuông góc.",
@@ -425,13 +724,17 @@
       "G12-CHV-B14-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính tích vô hướng của hai pháp tuyến."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -444,12 +747,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thấy hai hệ số không tỉ lệ rồi kết luận vuông góc, phải kiểm tích bằng 0. Ôn CĐ18 mục 4.5; luyện THPT-TOP18-P21."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu thấy hai hệ số không tỉ lệ rồi kết luận vuông góc, phải kiểm tích bằng 0. Ôn CĐ18 mục 4.5; luyện THPT-TOP18-P21.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, vì hai pháp tuyến không cùng phương."
+      },
+      {
+        "id": "B",
+        "text": "Có, vì tích vô hướng của hai pháp tuyến bằng 0."
+      },
+      {
+        "id": "C",
+        "text": "Không, vì tích vô hướng bằng 4."
+      },
+      {
+        "id": "D",
+        "text": "Có, vì hai pháp tuyến cùng phương."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-A05",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-A05",
     "stem": "Mặt sàn \\(z=0\\) và mặt tường \\(x=0\\) có vuông góc không?",
     "answer_key": "Có.",
     "worked_solution": "Pháp tuyến tương ứng \\((0;0;1)\\) và \\((1;0;0)\\) có tích vô hướng bằng 0. Do đó hai mặt phẳng vuông góc.",
@@ -457,13 +779,17 @@
       "G12-CHV-B14-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Pháp tuyến sàn theo Oz, tường theo Ox."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -476,12 +802,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Hai phương trực giao; không dựa vào hình phối cảnh. Ôn CĐ18 mục 4.5; luyện THPT-TOP18-P21."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Hai phương trực giao; không dựa vào hình phối cảnh. Ôn CĐ18 mục 4.5; luyện THPT-TOP18-P21.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, hai pháp tuyến vuông góc."
+      },
+      {
+        "id": "B",
+        "text": "Không, hai pháp tuyến cùng phương."
+      },
+      {
+        "id": "C",
+        "text": "Không, hai mặt song song phân biệt."
+      },
+      {
+        "id": "D",
+        "text": "Không, hai mặt trùng nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-C06",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-C06",
     "stem": "Tính khoảng cách từ O đến mặt phẳng \\(x+2y+2z-3=0\\).",
     "answer_key": "1.",
     "worked_solution": "Áp dụng công thức khoảng cách điểm–mặt: \\(d=\\frac{|0+0+0-3|}{\\sqrt{1^2+2^2+2^2}}=\\frac33=1\\). Trị tuyệt đối bảo đảm khoảng cách không âm.",
@@ -489,13 +834,17 @@
       "G12-CHV-B14-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tại O, tử là |−3|; mẫu là độ dài n."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -508,12 +857,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra 3, quên chia độ dài pháp tuyến. Ôn CĐ18 mục 4.6; luyện THPT-TOP18-P22."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra 3, quên chia độ dài pháp tuyến. Ôn CĐ18 mục 4.6; luyện THPT-TOP18-P22.",
+    "options": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "−1"
+      },
+      {
+        "id": "C",
+        "text": "9"
+      },
+      {
+        "id": "D",
+        "text": "1"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-P06",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-P06",
     "stem": "Tính khoảng cách từ \\(M(2;-1;1)\\) đến mặt phẳng \\(2x+y+2z-1=0\\).",
     "answer_key": "\\(\\frac43\\).",
     "worked_solution": "Thay tọa độ M vào tử số và dùng độ dài pháp tuyến ở mẫu: \\(d=\\frac{|4-1+2-1|}{\\sqrt{4+1+4}}=\\frac43\\).",
@@ -521,13 +889,17 @@
       "G12-CHV-B14-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Thay M vào vế trái rồi chia cho \\(\\sqrt{4+1+4}\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -540,12 +912,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ dấu hoặc căn, kiểm công thức khoảng cách. Ôn CĐ18 mục 4.6; luyện THPT-TOP18-P22."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ dấu hoặc căn, kiểm công thức khoảng cách. Ôn CĐ18 mục 4.6; luyện THPT-TOP18-P22.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(4\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac49\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac43\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-\\frac43\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-A06",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-A06",
     "stem": "Hai mặt phẳng sàn \\(z=0\\) và trần \\(z=3\\). Tọa độ tính bằng mét. Tính khoảng cách giữa chúng.",
     "answer_key": "3 m.",
     "worked_solution": "Hai mặt phẳng song song. Chọn O trên sàn; khoảng cách tới trần là \\(\\frac{|0-3|}{1}=3\\) m. Do song song, chọn bất kì điểm nào trên sàn cũng cho cùng kết quả.",
@@ -553,13 +944,17 @@
       "G12-CHV-B14-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Chọn một điểm trên sàn, chẳng hạn O."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -572,12 +967,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không chọn hai điểm tùy ý trên sàn và trần rồi lấy đoạn xiên. Ôn CĐ18 mục 4.6; luyện THPT-TOP18-P22."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không chọn hai điểm tùy ý trên sàn và trần rồi lấy đoạn xiên. Ôn CĐ18 mục 4.6; luyện THPT-TOP18-P22.",
+    "options": [
+      {
+        "id": "A",
+        "text": "0 m"
+      },
+      {
+        "id": "B",
+        "text": "3 m"
+      },
+      {
+        "id": "C",
+        "text": "6 m"
+      },
+      {
+        "id": "D",
+        "text": "9 m"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-C07",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-C07",
     "stem": "Bài tích hợp sau B17: Mặt cầu tâm \\(C(0;0;2)\\), bán kính R=3, cắt mặt phẳng z=0. Tính bán kính đường tròn giao tuyến.",
     "answer_key": "\\(\\sqrt5\\).",
     "worked_solution": "Khoảng cách từ C tới mặt phẳng bằng 2, nhỏ hơn R=3. Bán kính đường tròn giao tuyến và khoảng cách này là hai cạnh góc vuông của tam giác có cạnh huyền R. Do đó \\(r=\\sqrt{3^2-2^2}=\\sqrt5\\).",
@@ -585,13 +999,17 @@
       "G12-CHV-B14-O07"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Bài tích hợp sau B17: so khoảng cách tâm–mặt với R."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -604,12 +1022,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu d<R, dùng bán kính đường tròn \\(r=\\sqrt{R^2-d^2}\\), không lấy R-d. Ôn CĐ18 mục 8.1; luyện THPT-TOP18-P23."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu d<R, dùng bán kính đường tròn \\(r=\\sqrt{R^2-d^2}\\), không lấy R-d. Ôn CĐ18 mục 8.1; luyện THPT-TOP18-P23.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\sqrt5\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(3\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-P07",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-P07",
     "stem": "Bài tích hợp sau B17: Mặt cầu tâm \\(C(1;2;1)\\), R=2, cắt mặt phẳng z=0. Tính bán kính giao tuyến.",
     "answer_key": "\\(\\sqrt3\\).",
     "worked_solution": "Khoảng cách từ tâm đến mặt phẳng là 1, nhỏ hơn 2. Áp dụng Pitago trong mặt phẳng qua tâm và một điểm giao tuyến: \\(r=\\sqrt{2^2-1^2}=\\sqrt3\\).",
@@ -617,13 +1054,17 @@
       "G12-CHV-B14-O07"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Bài tích hợp sau B17: hình chiếu tâm lên z=0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -636,12 +1077,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra 1, đó là khoảng cách tâm–mặt, không phải bán kính giao. Ôn CĐ18 mục 8.1; luyện THPT-TOP18-P23."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra 1, đó là khoảng cách tâm–mặt, không phải bán kính giao. Ôn CĐ18 mục 8.1; luyện THPT-TOP18-P23.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(1\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(2\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(3\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\sqrt3\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-A07",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-A07",
     "stem": "Bài tích hợp sau B17: Vùng phủ lý tưởng là khối cầu bán kính 10 m, tâm cao 6 m trên nền ngang. Tính bán kính vùng phủ trên nền.",
     "answer_key": "8 m.",
     "worked_solution": "Khoảng cách từ tâm đến nền là 6 m, nhỏ hơn bán kính 10 m. Giao khối cầu với nền là hình tròn; đường biên có bán kính \\(r=\\sqrt{10^2-6^2}=8\\) m.",
@@ -649,13 +1109,17 @@
       "G12-CHV-B14-O07"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Bài tích hợp sau B17: độ cao nguồn là khoảng cách tâm–nền."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -668,12 +1132,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy 10-6, hãy dùng Pitago: \\(r^2=R^2-h^2\\). Ôn CĐ18 mục 8.1; luyện THPT-TOP18-P23."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy 10-6, hãy dùng Pitago: \\(r^2=R^2-h^2\\). Ôn CĐ18 mục 8.1; luyện THPT-TOP18-P23.",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 m"
+      },
+      {
+        "id": "B",
+        "text": "6 m"
+      },
+      {
+        "id": "C",
+        "text": "8 m"
+      },
+      {
+        "id": "D",
+        "text": "10 m"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-C01",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-C01",
     "stem": "Viết phương trình tham số của đường thẳng qua O có vectơ chỉ phương \\((1;0;2)\\).",
     "answer_key": "\\((x;y;z)=(t;0;2t),\\ t\\in\\mathbb R\\).",
     "worked_solution": "Mọi điểm X trên đường thỏa \\(\\overrightarrow{OX}=t(1;0;2)\\). Vì vậy x=t, y=0, z=2t; tham số chạy trên toàn bộ số thực.",
@@ -681,13 +1164,17 @@
       "G12-CHV-B15-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng O+t u với t thực."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -700,12 +1187,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tọa độ y giữ 0; không bỏ phương trình y=0. Ôn CĐ18 mục 5.1; luyện THPT-TOP18-P24."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Tọa độ y giữ 0; không bỏ phương trình y=0. Ôn CĐ18 mục 5.1; luyện THPT-TOP18-P24.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((x;y;z)=(t;t;2t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((x;y;z)=(t;0;2t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((x;y;z)=(t;0;-2t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((x;y;z)=(0;t;2t),\\ t\\in\\mathbb R\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-P01",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-P01",
     "stem": "Viết phương trình tham số của đường thẳng qua \\((-1;0;4)\\), có chỉ phương \\((3;2;-1)\\).",
     "answer_key": "\\((x;y;z)=(-1+3t;2t;4-t),\\ t\\in\\mathbb R\\).",
     "worked_solution": "Cộng tọa độ điểm đã biết với t lần vectơ chỉ phương. Dùng cùng một tham số t trong cả ba tọa độ; t=0 cho điểm ban đầu.",
@@ -713,13 +1219,17 @@
       "G12-CHV-B15-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Cộng điểm đầu với t nhân từng thành phần hướng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -732,12 +1242,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu t=0 không cho điểm đầu, kiểm dấu hằng. Ôn CĐ18 mục 5.1; luyện THPT-TOP18-P24."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu t=0 không cho điểm đầu, kiểm dấu hằng. Ôn CĐ18 mục 5.1; luyện THPT-TOP18-P24.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((x;y;z)=(-1+3t;2t;4-t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((x;y;z)=(1+3t;2t;4-t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((x;y;z)=(-1+3t;2t;4+t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((x;y;z)=(-1+3t;2+2t;4-t),\\ t\\in\\mathbb R\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-A01",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-A01",
     "stem": "Drone xuất phát từ \\((0;2;1)\\) m, vận tốc không đổi \\((1;-1;2)\\) m/s. Tìm tọa độ sau t giây trong thời gian chuyển động đều, \\(t\\ge0\\).",
     "answer_key": "\\((t;2-t;1+2t)\\) m, \\(t\\ge0\\) trong thời gian chuyển động đều.",
     "worked_solution": "Vị trí bằng vị trí đầu cộng độ dời: \\((0;2;1)+t(1;-1;2)=(t;2-t;1+2t)\\). Chỉ nhận thời gian thuộc mô hình; đường thẳng hình học kéo dài với t thực.",
@@ -745,13 +1274,17 @@
       "G12-CHV-B15-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Dùng vị trí ban đầu cộng vận tốc nhân thời gian."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -764,12 +1297,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Phân biệt t≥0 của chuyển động với t∈ℝ của đường hình học. Ôn CĐ18 mục 5.1; luyện THPT-TOP18-P24."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Phân biệt t≥0 của chuyển động với t∈ℝ của đường hình học. Ôn CĐ18 mục 5.1; luyện THPT-TOP18-P24.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((t;2+t;1+2t),\\ t\\ge0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((t;2-t;1-2t),\\ t\\ge0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((1+t;2-t;2t),\\ t\\ge0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((t;2-t;1+2t),\\ t\\ge0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-C02",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-C02",
     "stem": "Viết phương trình tham số của đường thẳng qua \\(A(0;0;0),B(2;0;1)\\).",
     "answer_key": "\\((x;y;z)=(2t;0;t),\\ t\\in\\mathbb R\\).",
     "worked_solution": "\\(\\overrightarrow{AB}=(2;0;1)\\) khác không, là một chỉ phương. Dùng A làm điểm gốc được phương trình trên; t=0 cho A, t=1 cho B.",
@@ -777,13 +1329,17 @@
       "G12-CHV-B15-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Lấy B−A, chọn điểm A."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -796,12 +1352,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Thử t=0,1 để thu A,B. Ôn CĐ18 mục 5.2; luyện THPT-TOP18-P25."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Thử t=0,1 để thu A,B. Ôn CĐ18 mục 5.2; luyện THPT-TOP18-P25.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((x;y;z)=(t;0;2t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((x;y;z)=(2t;0;-t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((x;y;z)=(2t;0;t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((x;y;z)=(2t;t;t),\\ t\\in\\mathbb R\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-P02",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-P02",
     "stem": "Viết phương trình tham số của đường thẳng qua \\(A(1;2;0),B(1;5;3)\\).",
     "answer_key": "\\((x;y;z)=(1;2+3t;3t),\\ t\\in\\mathbb R\\).",
     "worked_solution": "Chỉ phương \\(\\overrightarrow{AB}=(0;3;3)\\ne\\vec0\\). Dùng A làm điểm gốc; x luôn bằng 1. Thay t=1 thu được B.",
@@ -809,13 +1384,17 @@
       "G12-CHV-B15-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "\\(\\overrightarrow{AB}=(0;3;3)\\), tọa độ x giữ nguyên."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -828,12 +1407,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ x=1 thì không xác định đúng đường trong không gian. Ôn CĐ18 mục 5.2; luyện THPT-TOP18-P25."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ x=1 thì không xác định đúng đường trong không gian. Ôn CĐ18 mục 5.2; luyện THPT-TOP18-P25.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((x;y;z)=(1+t;2+3t;3t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((x;y;z)=(1;2+3t;3t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((x;y;z)=(1;2+3t;-3t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((x;y;z)=(1;2+t;3t),\\ t\\in\\mathbb R\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-A02",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-A02",
     "stem": "Dây cáp thẳng nối \\(A(0;0;4)\\) với \\(B(4;2;0)\\). Viết tọa độ điểm trên đoạn cáp theo tham số t và nêu miền t, chọn t=0 tại A và t=1 tại B.",
     "answer_key": "\\((4t;2t;4-4t),\\ 0\\le t\\le1\\).",
     "worked_solution": "\\(\\overrightarrow{AB}=(4;2;-4)\\). Điểm trên đoạn có vị trí A+tAB với \\(0\\le t\\le1\\); ngoài khoảng đó là phần kéo dài của đường thẳng, không thuộc dây cáp.",
@@ -841,13 +1439,17 @@
       "G12-CHV-B15-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Dùng vị trí điểm A cộng \\(t\\overrightarrow{AB}\\), với \\(0\\le t\\le1\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -860,12 +1462,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu t ngoài đoạn [0,1], điểm nằm trên đường kéo dài, không trên dây cáp. Ôn CĐ18 mục 5.2; luyện THPT-TOP18-P25."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu t ngoài đoạn [0,1], điểm nằm trên đường kéo dài, không trên dây cáp. Ôn CĐ18 mục 5.2; luyện THPT-TOP18-P25.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((4t;2t;4-4t),\\ 0\\le t\\le1\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((4t;2t;4-4t),\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((4t;2t;4+4t),\\ 0\\le t\\le1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((4t;2t;4-4t),\\ 0\\le t\\le4\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-C03",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-C03",
     "stem": "Viết phương trình chính tắc của đường thẳng qua O, chỉ phương \\((1;2;3)\\).",
     "answer_key": "\\(\\frac x1=\\frac y2=\\frac z3\\).",
     "worked_solution": "Từ tham số \\((t;2t;3t)\\), giải t theo từng tọa độ được ba phân số bằng nhau. Các mẫu đều khác 0 nên dùng được dạng chính tắc.",
@@ -873,13 +1494,17 @@
       "G12-CHV-B15-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Khử t giữa ba phương trình."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -892,12 +1517,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Chỉ dùng dạng tỉ số khi các mẫu khác 0. Ôn CĐ18 mục 5.3; luyện THPT-TOP18-P26."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Chỉ dùng dạng tỉ số khi các mẫu khác 0. Ôn CĐ18 mục 5.3; luyện THPT-TOP18-P26.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac x2=\\frac y1=\\frac z3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac x1=\\frac y2=\\frac z{-3}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{x-1}1=\\frac y2=\\frac z3\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac x1=\\frac y2=\\frac z3\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-P03",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-P03",
     "stem": "Đường thẳng qua \\((1;2;0)\\), chỉ phương \\((0;1;-2)\\). Viết hệ phương trình không chứa phép chia cho 0.",
     "answer_key": "\\(x=1;\\quad y-2=\\frac z{-2}\\).",
     "worked_solution": "Phương trình tham số là \\((1;2+t;-2t)\\). Do x không đổi, giữ x=1; khử t từ y và z được hệ trên. Không có phân số với mẫu 0.",
@@ -905,13 +1549,17 @@
       "G12-CHV-B15-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Giữ x=1 rồi khử t ở y,z."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -924,12 +1572,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không viết (x−1)/0. Ôn CĐ18 mục 5.3; luyện THPT-TOP18-P26."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không viết (x−1)/0. Ôn CĐ18 mục 5.3; luyện THPT-TOP18-P26.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=1,\\ y-2=\\frac z2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x=0,\\ y-2=\\frac z{-2}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x=1,\\ y-2=\\frac z{-2}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x=1,\\ y+2=\\frac z{-2}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-A03",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-A03",
     "stem": "Đường trục thẳng đứng qua \\((2;3;0)\\) theo phương Oz có phương trình tham số nào?",
     "answer_key": "\\(x=2,\\ y=3,\\ z=t,\\ t\\in\\mathbb R\\).",
     "worked_solution": "Chỉ phương \\((0;0;1)\\). Hai tọa độ ngang giữ nguyên; z thay đổi theo t. Không viết x/0 hoặc y/0.",
@@ -937,13 +1604,17 @@
       "G12-CHV-B15-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Hướng Oz nên x,y giữ hằng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -956,12 +1627,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không bỏ hai tọa độ hằng hoặc viết mẫu bằng 0. Ôn CĐ18 mục 5.3; luyện THPT-TOP18-P26."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không bỏ hai tọa độ hằng hoặc viết mẫu bằng 0. Ôn CĐ18 mục 5.3; luyện THPT-TOP18-P26.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=2+t,\\ y=3,\\ z=0,\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x=2,\\ y=3,\\ z=t,\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x=2,\\ y=3+t,\\ z=t,\\ t\\in\\mathbb R\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x=3,\\ y=2,\\ z=t,\\ t\\in\\mathbb R\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-C04",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-C04",
     "stem": "Cho đường thẳng \\(d:(x;y;z)=(t;2t;3)\\), t thực. Điểm \\(M(2;4;3)\\) có thuộc d không?",
     "answer_key": "Có.",
     "worked_solution": "Từ x=2 suy ra t=2. Cùng tham số này cho y=4 và z=3, đều đúng. Vì cả ba tọa độ cùng thỏa nên M thuộc d.",
@@ -969,13 +1659,17 @@
       "G12-CHV-B15-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tìm t từ x=2, kiểm y,z."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -988,12 +1682,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Một tham số chung phải thỏa cả ba tọa độ. Ôn CĐ18 mục 5.4; luyện THPT-TOP18-P27."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Một tham số chung phải thỏa cả ba tọa độ. Ôn CĐ18 mục 5.4; luyện THPT-TOP18-P27.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, ứng với t=2."
+      },
+      {
+        "id": "B",
+        "text": "Có, ứng với t=4."
+      },
+      {
+        "id": "C",
+        "text": "Không, vì z khác 0."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì x khác y."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-P04",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-P04",
     "stem": "Cho đường thẳng \\(d:(x;y;z)=(1+2t;3-t;0)\\), t thực. Điểm \\(M(5;1;0)\\) có thuộc d không?",
     "answer_key": "Có.",
     "worked_solution": "Từ 1+2t=5 suy ra t=2. Khi đó 3-t=1, z=0 đúng với M. Phải dùng cùng một t cho cả ba tọa độ.",
@@ -1001,13 +1714,17 @@
       "G12-CHV-B15-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tìm t từ 1+2t=5, kiểm 3−t và z."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1020,12 +1737,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ thỏa x chưa đủ. Ôn CĐ18 mục 5.4; luyện THPT-TOP18-P27."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ thỏa x chưa đủ. Ôn CĐ18 mục 5.4; luyện THPT-TOP18-P27.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, ứng với t=1."
+      },
+      {
+        "id": "B",
+        "text": "Không, vì z=0."
+      },
+      {
+        "id": "C",
+        "text": "Không, vì x khác y."
+      },
+      {
+        "id": "D",
+        "text": "Có, ứng với t=2."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-A04",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-A04",
     "stem": "Vị trí drone là \\(p(t)=(1+t;2+t;3-t)\\). Tìm tọa độ tại t=3.",
     "answer_key": "\\((4;5;0)\\).",
     "worked_solution": "Thay t=3 vào cả ba thành phần: \\((1+3;2+3;3-3)=(4;5;0)\\).",
@@ -1033,13 +1769,17 @@
       "G12-CHV-B15-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Thế t=3 vào cả ba thành phần."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1052,12 +1792,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu z âm hay bằng 0, kiểm mốc cao độ và giới hạn mô hình. Ôn CĐ18 mục 5.4; luyện THPT-TOP18-P27."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu z âm hay bằng 0, kiểm mốc cao độ và giới hạn mô hình. Ôn CĐ18 mục 5.4; luyện THPT-TOP18-P27.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((4;5;6)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((3;3;3)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((4;5;0)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((4;2;0)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-C05",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-C05",
     "stem": "Hai vectơ \\(\\vec u=(1;2;0),\\vec v=(2;4;0)\\) có cùng phương không?",
     "answer_key": "Có, \\(\\vec v=2\\vec u\\).",
     "worked_solution": "Cả ba tọa độ thỏa cùng một hệ số 2; hai vectơ khác không nên cùng phương, đồng thời cùng hướng. Nếu là chỉ phương của hai đường, chỉ biết vậy chưa phân biệt song song với trùng.",
@@ -1065,13 +1824,17 @@
       "G12-CHV-B15-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tìm hệ số nhân liên hệ u,v."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1084,12 +1847,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Cùng phương không có nghĩa hai đường trùng, cần điểm gốc. Ôn CĐ18 mục 5.5; luyện THPT-TOP18-P28."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Cùng phương không có nghĩa hai đường trùng, cần điểm gốc. Ôn CĐ18 mục 5.5; luyện THPT-TOP18-P28.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; \\(\\vec v=-2\\vec u\\)."
+      },
+      {
+        "id": "B",
+        "text": "Có; \\(\\vec v=2\\vec u\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không, vì độ dài khác nhau."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì tọa độ z bằng 0."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-P05",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-P05",
     "stem": "Hai đường có chỉ phương \\(\\vec u=(1;0;1),\\vec v=(1;0;-1)\\). Chúng có cùng phương không? Góc giữa hai đường bằng bao nhiêu?",
     "answer_key": "Không cùng phương; góc 90°.",
     "worked_solution": "\\(\\vec u\\cdot\\vec v=1+0-1=0\\). Hai vectơ khác không nên vuông góc, không cùng phương. Hai đường có góc 90°, dù chưa biết chúng cắt nhau hay chéo nhau.",
@@ -1097,13 +1879,17 @@
       "G12-CHV-B15-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính tích vô hướng hai hướng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1116,12 +1902,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Hai hướng vuông góc không đòi hai đường cắt nhau. Ôn CĐ18 mục 5.5; luyện THPT-TOP18-P28."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Hai hướng vuông góc không đòi hai đường cắt nhau. Ôn CĐ18 mục 5.5; luyện THPT-TOP18-P28.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không cùng phương; góc 90°."
+      },
+      {
+        "id": "B",
+        "text": "Cùng phương; góc 0°."
+      },
+      {
+        "id": "C",
+        "text": "Không cùng phương; góc 45°."
+      },
+      {
+        "id": "D",
+        "text": "Cùng phương; góc 180°."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-A05",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-A05",
     "stem": "Hai hành lang thẳng có vectơ chỉ phương \\((2;1;0)\\) và \\((-1;2;0)\\). Hai phương có vuông góc không?",
     "answer_key": "Có.",
     "worked_solution": "Tích vô hướng \\(2(-1)+1\\cdot2+0=0\\). Hai hướng khác không nên vuông góc; chưa đủ dữ kiện kết luận hai hành lang giao nhau.",
@@ -1129,13 +1934,17 @@
       "G12-CHV-B15-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Nhân các thành phần tương ứng rồi cộng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1148,12 +1957,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu tích bằng 0 và hai hướng khác 0, hai hướng vuông góc. Ôn CĐ18 mục 5.5; luyện THPT-TOP18-P28."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu tích bằng 0 và hai hướng khác 0, hai hướng vuông góc. Ôn CĐ18 mục 5.5; luyện THPT-TOP18-P28.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, vì tích vô hướng bằng 4."
+      },
+      {
+        "id": "B",
+        "text": "Có, vì hai vectơ cùng phương."
+      },
+      {
+        "id": "C",
+        "text": "Không, vì độ dài hai vectơ bằng nhau."
+      },
+      {
+        "id": "D",
+        "text": "Có, vì tích vô hướng bằng 0."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-C06",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-C06",
     "stem": "Xét giao điểm của hai đường \\(d_1:(t;0;0),\\ d_2:(0;s;0)\\), với t, s thực.",
     "answer_key": "Cắt tại O.",
     "worked_solution": "Đồng nhất ba tọa độ cho t=0 và s=0; tọa độ z tự thỏa. Hai chỉ phương không cùng phương nên có đúng một giao điểm O.",
@@ -1161,13 +1989,17 @@
       "G12-CHV-B15-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Lập hệ theo t,s, kiểm cả ba tọa độ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1180,12 +2012,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không chỉ dựa vào hai hình chiếu. Ôn CĐ18 mục 5.6; luyện THPT-TOP18-P29."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không chỉ dựa vào hai hình chiếu. Ôn CĐ18 mục 5.6; luyện THPT-TOP18-P29.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Song song phân biệt."
+      },
+      {
+        "id": "B",
+        "text": "Trùng nhau."
+      },
+      {
+        "id": "C",
+        "text": "Cắt tại O."
+      },
+      {
+        "id": "D",
+        "text": "Chéo nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-P06",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-P06",
     "stem": "Xét vị trí tương đối của \\(d_1:(t;1;0),\\ d_2:(0;s;1)\\), với t, s thực.",
     "answer_key": "Chéo nhau.",
     "worked_solution": "Hai chỉ phương \\((1;0;0),(0;1;0)\\) không cùng phương. Không thể có giao điểm vì z của đường đầu luôn 0, của đường sau luôn 1. Hai đường không song song, không cắt nên chéo nhau.",
@@ -1193,13 +2044,17 @@
       "G12-CHV-B15-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So cao độ z và hai chỉ phương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1212,12 +2067,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Hai đường không giao và không cùng phương là chéo nhau. Ôn CĐ18 mục 5.6; luyện THPT-TOP18-P29."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Hai đường không giao và không cùng phương là chéo nhau. Ôn CĐ18 mục 5.6; luyện THPT-TOP18-P29.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cắt nhau tại (0;1;0)."
+      },
+      {
+        "id": "B",
+        "text": "Chéo nhau."
+      },
+      {
+        "id": "C",
+        "text": "Song song phân biệt."
+      },
+      {
+        "id": "D",
+        "text": "Trùng nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-A06",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-A06",
     "stem": "Hai đường cáp được mô hình bởi \\(d_1:(t;0;2),\\ d_2:(0;s;2)\\), với t,s thực. Tìm giao điểm của hai đường.",
     "answer_key": "\\((0;0;2)\\).",
     "worked_solution": "Đồng nhất tọa độ x và y cho t=s=0, còn z cùng bằng 2. Hai hướng độc lập nên có đúng một giao điểm \\((0;0;2)\\).",
@@ -1225,13 +2099,17 @@
       "G12-CHV-B15-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Giải x,y để tìm t,s, kiểm cùng cao độ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1244,12 +2122,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ z=2, điểm giao có thể sai. Ôn CĐ18 mục 5.6; luyện THPT-TOP18-P29."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ z=2, điểm giao có thể sai. Ôn CĐ18 mục 5.6; luyện THPT-TOP18-P29.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((0;0;2)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((0;0;0)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((2;2;2)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((0;2;0)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-C07",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-C07",
     "stem": "Tìm giao điểm của đường \\(d:(1+t;0;1)\\), t thực, với mặt phẳng \\(x=3\\).",
     "answer_key": "\\((3;0;1)\\).",
     "worked_solution": "Thay tọa độ đường vào phương trình mặt: 1+t=3 nên t=2. Thế lại vào cả ba tọa độ được giao điểm duy nhất.",
@@ -1257,13 +2154,17 @@
       "G12-CHV-B15-O07"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Thế tọa độ x của d vào x=3."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1276,12 +2177,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Kiểm giao điểm thỏa cả d và P. Ôn CĐ18 mục 5.7; luyện THPT-TOP18-P30."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Kiểm giao điểm thỏa cả d và P. Ôn CĐ18 mục 5.7; luyện THPT-TOP18-P30.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((2;0;1)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((3;0;0)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((3;1;1)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((3;0;1)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-P07",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-P07",
     "stem": "Tìm giao điểm của đường \\(d:(1+2t;t;3-t)\\), t thực, với mặt phẳng \\(x+y+z=8\\).",
     "answer_key": "\\((5;2;1)\\).",
     "worked_solution": "Thay tọa độ: \\((1+2t)+t+(3-t)=8\\), tức \\(4+2t=8\\). Suy ra t=2; giao điểm \\((5;2;1)\\). Kiểm tổng ba tọa độ bằng 8.",
@@ -1289,13 +2209,17 @@
       "G12-CHV-B15-O07"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Thế cả ba biểu thức vào x+y+z=8."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1308,12 +2232,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hệ số t bằng 0, xét hằng số, không chia 0. Ôn CĐ18 mục 5.7; luyện THPT-TOP18-P30."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu hệ số t bằng 0, xét hằng số, không chia 0. Ôn CĐ18 mục 5.7; luyện THPT-TOP18-P30.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((3;1;2)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((5;2;3)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((5;2;1)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((8;0;0)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B15-A07",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B15-A07",
     "stem": "Drone di chuyển theo quỹ đạo \\((2t;0;5-t)\\), \\(t\\ge0\\). Tìm thời điểm và tọa độ khi chạm nền z=0, nếu mô hình còn hiệu lực đến lúc đó.",
     "answer_key": "\\(t=5\\), điểm \\((10;0;0)\\).",
     "worked_solution": "Điều kiện chạm nền là 5-t=0, cho t=5 thuộc miền thời gian. Thay t=5 vào tọa độ x, y, z được \\((10;0;0)\\).",
@@ -1321,13 +2264,17 @@
       "G12-CHV-B15-O07"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Giải z(t)=0 trong miền t≥0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1340,12 +2287,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Sau thời điểm chạm nền, không mặc định drone tiếp tục xuyên xuống đất. Ôn CĐ18 mục 5.7; luyện THPT-TOP18-P30."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Sau thời điểm chạm nền, không mặc định drone tiếp tục xuyên xuống đất. Ôn CĐ18 mục 5.7; luyện THPT-TOP18-P30.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(t=5\\), điểm \\((5;0;0)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(t=5\\), điểm \\((10;0;0)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(t=2\\), điểm \\((4;0;3)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(t=0\\), điểm \\((0;0;5)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-C01",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-C01",
     "stem": "Hai đường có chỉ phương \\((1;0;0)\\) và \\((0;1;0)\\). Tính góc giữa hai đường.",
     "answer_key": "90°.",
     "worked_solution": "Tích vô hướng bằng 0, hai độ dài đều bằng 1. Cosin góc giữa hai đường bằng trị tuyệt đối của tích vô hướng chia tích độ dài, tức 0. Góc là 90°.",
@@ -1353,13 +2319,17 @@
       "G12-CHV-B16-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính u·v và hai độ dài."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1372,12 +2342,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tích vô hướng bằng 0 với hai vectơ khác 0 cho góc 90°. Ôn CĐ18 mục 6.1; luyện THPT-TOP18-P31."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Tích vô hướng bằng 0 với hai vectơ khác 0 cho góc 90°. Ôn CĐ18 mục 6.1; luyện THPT-TOP18-P31.",
+    "options": [
+      {
+        "id": "A",
+        "text": "90°"
+      },
+      {
+        "id": "B",
+        "text": "0°"
+      },
+      {
+        "id": "C",
+        "text": "45°"
+      },
+      {
+        "id": "D",
+        "text": "60°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-P01",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-P01",
     "stem": "Hai đường có chỉ phương \\((1;1;0)\\) và \\((1;-1;0)\\). Tính góc giữa hai đường.",
     "answer_key": "90°.",
     "worked_solution": "Tích vô hướng \\(1-1=0\\), hai chỉ phương khác không. Cosin góc giữa hai đường bằng 0, nên góc 90°.",
@@ -1385,13 +2374,17 @@
       "G12-CHV-B16-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính 1·1+1·(−1)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1404,12 +2397,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không dùng tổng thành phần thay tích vô hướng. Ôn CĐ18 mục 6.1; luyện THPT-TOP18-P31."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không dùng tổng thành phần thay tích vô hướng. Ôn CĐ18 mục 6.1; luyện THPT-TOP18-P31.",
+    "options": [
+      {
+        "id": "A",
+        "text": "0°"
+      },
+      {
+        "id": "B",
+        "text": "45°"
+      },
+      {
+        "id": "C",
+        "text": "60°"
+      },
+      {
+        "id": "D",
+        "text": "90°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-A01",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-A01",
     "stem": "Hai đường có chỉ phương \\((1;0;0)\\) và \\((1;1;0)\\). Tính góc giữa chúng.",
     "answer_key": "45°.",
     "worked_solution": "Tích vô hướng bằng 1; độ dài hai vectơ là 1 và \\(\\sqrt2\\). Vì vậy \\(\\cos\\theta=\\frac1{\\sqrt2}\\), suy ra góc giữa hai đường là 45°.",
@@ -1417,13 +2429,17 @@
       "G12-CHV-B16-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Tính cos từ tích vô hướng và chuẩn."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1436,12 +2452,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Góc đường lấy trị tuyệt đối; góc vectơ thì không. Ôn CĐ18 mục 6.1; luyện THPT-TOP18-P31."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Góc đường lấy trị tuyệt đối; góc vectơ thì không. Ôn CĐ18 mục 6.1; luyện THPT-TOP18-P31.",
+    "options": [
+      {
+        "id": "A",
+        "text": "0°"
+      },
+      {
+        "id": "B",
+        "text": "90°"
+      },
+      {
+        "id": "C",
+        "text": "45°"
+      },
+      {
+        "id": "D",
+        "text": "60°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-C02",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-C02",
     "stem": "Đường có chỉ phương \\((1;0;0)\\) tạo với mặt phẳng \\(z=0\\) góc bao nhiêu?",
     "answer_key": "0°.",
     "worked_solution": "Pháp tuyến mặt phẳng là \\((0;0;1)\\). Tích vô hướng với chỉ phương bằng 0; theo công thức góc đường–mặt, sin góc bằng 0. Góc bằng 0°, nhưng chưa biết đường nằm trong hay song song mặt.",
@@ -1449,13 +2484,17 @@
       "G12-CHV-B16-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Pháp tuyến của z=0 là (0;0;1)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1468,12 +2507,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "\\(\\vec u\\cdot\\vec n=0\\) cho góc đường–mặt 0°, không phải 90°. Ôn CĐ18 mục 6.2; luyện THPT-TOP18-P32."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "\\(\\vec u\\cdot\\vec n=0\\) cho góc đường–mặt 0°, không phải 90°. Ôn CĐ18 mục 6.2; luyện THPT-TOP18-P32.",
+    "options": [
+      {
+        "id": "A",
+        "text": "45°"
+      },
+      {
+        "id": "B",
+        "text": "0°"
+      },
+      {
+        "id": "C",
+        "text": "90°"
+      },
+      {
+        "id": "D",
+        "text": "60°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-P02",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-P02",
     "stem": "Đường có chỉ phương \\((0;0;1)\\) tạo với mặt phẳng z=0 góc bao nhiêu?",
     "answer_key": "90°.",
     "worked_solution": "Chỉ phương cùng phương với pháp tuyến \\((0;0;1)\\). Sin góc đường–mặt bằng \\(\\frac{|1|}{1\\cdot1}=1\\), nên góc 90°.",
@@ -1481,13 +2539,17 @@
       "G12-CHV-B16-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Hướng u cùng phương pháp tuyến."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1500,12 +2562,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Đường vuông góc mặt tạo góc 90°, không phải 0°. Ôn CĐ18 mục 6.2; luyện THPT-TOP18-P32."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Đường vuông góc mặt tạo góc 90°, không phải 0°. Ôn CĐ18 mục 6.2; luyện THPT-TOP18-P32.",
+    "options": [
+      {
+        "id": "A",
+        "text": "90°"
+      },
+      {
+        "id": "B",
+        "text": "0°"
+      },
+      {
+        "id": "C",
+        "text": "45°"
+      },
+      {
+        "id": "D",
+        "text": "60°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-A02",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-A02",
     "stem": "Đường dốc có chỉ phương \\((3;0;4)\\). Tính góc với nền ngang z=0, làm tròn đến hai chữ số thập phân theo độ.",
     "answer_key": "\\(\\arcsin\\frac45\\approx53{,}13^\\circ\\).",
     "worked_solution": "Pháp tuyến nền là \\((0;0;1)\\), độ dài chỉ phương là 5. \\(\\sin\\theta=\\frac{|4|}{5\\cdot1}=\\frac45\\). Góc trong [0°;90°], nên máy tính ở chế độ độ cho khoảng 53,13°.",
@@ -1513,13 +2594,17 @@
       "G12-CHV-B16-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Dùng sin của góc đường–mặt, bằng trị tuyệt đối thành phần z chia độ dài chỉ phương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1532,12 +2617,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng cos để gọi góc đường–mặt, nhầm với góc pháp tuyến. Ôn CĐ18 mục 6.2; luyện THPT-TOP18-P32."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng cos để gọi góc đường–mặt, nhầm với góc pháp tuyến. Ôn CĐ18 mục 6.2; luyện THPT-TOP18-P32.",
+    "options": [
+      {
+        "id": "A",
+        "text": "36,87°"
+      },
+      {
+        "id": "B",
+        "text": "45,00°"
+      },
+      {
+        "id": "C",
+        "text": "90,00°"
+      },
+      {
+        "id": "D",
+        "text": "53,13°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-C03",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-C03",
     "stem": "Tính góc giữa hai mặt phẳng z=0 và x=0.",
     "answer_key": "90°.",
     "worked_solution": "Hai pháp tuyến \\((0;0;1),(1;0;0)\\) có tích vô hướng 0, nên cosin góc giữa hai mặt bằng 0. Góc là 90°.",
@@ -1545,13 +2649,17 @@
       "G12-CHV-B16-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So hai pháp tuyến theo Oz,Ox."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1564,12 +2672,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Pháp tuyến vuông góc cho hai mặt vuông góc. Ôn CĐ18 mục 6.3; luyện THPT-TOP18-P33."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Pháp tuyến vuông góc cho hai mặt vuông góc. Ôn CĐ18 mục 6.3; luyện THPT-TOP18-P33.",
+    "options": [
+      {
+        "id": "A",
+        "text": "0°"
+      },
+      {
+        "id": "B",
+        "text": "45°"
+      },
+      {
+        "id": "C",
+        "text": "90°"
+      },
+      {
+        "id": "D",
+        "text": "60°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-P03",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-P03",
     "stem": "Tính góc giữa hai mặt phẳng \\(x+y=0\\) và \\(x-y=0\\).",
     "answer_key": "90°.",
     "worked_solution": "Pháp tuyến \\((1;1;0),(1;-1;0)\\) có tích vô hướng \\(1-1=0\\). Do đó hai mặt phẳng vuông góc.",
@@ -1577,13 +2704,17 @@
       "G12-CHV-B16-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính tích vô hướng (1;1;0)·(1;−1;0)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1596,12 +2727,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Dùng cos giữa hai pháp tuyến, không dùng sin. Ôn CĐ18 mục 6.3; luyện THPT-TOP18-P33."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Dùng cos giữa hai pháp tuyến, không dùng sin. Ôn CĐ18 mục 6.3; luyện THPT-TOP18-P33.",
+    "options": [
+      {
+        "id": "A",
+        "text": "0°"
+      },
+      {
+        "id": "B",
+        "text": "90°"
+      },
+      {
+        "id": "C",
+        "text": "45°"
+      },
+      {
+        "id": "D",
+        "text": "60°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-A03",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-A03",
     "stem": "Tính góc giữa mái phẳng \\(z=x\\) và nền z=0.",
     "answer_key": "45°.",
     "worked_solution": "Viết mái dưới dạng \\(-x+z=0\\), pháp tuyến \\((-1;0;1)\\); nền có pháp tuyến \\((0;0;1)\\). \\(\\cos\\theta=\\frac{|1|}{\\sqrt2}=\\frac1{\\sqrt2}\\), suy ra 45°.",
@@ -1609,13 +2759,17 @@
       "G12-CHV-B16-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Viết z−x=0 và đọc pháp tuyến mái."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1628,12 +2782,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy trực tiếp hệ số z làm cos nếu chưa chuẩn hóa. Ôn CĐ18 mục 6.3; luyện THPT-TOP18-P33."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không lấy trực tiếp hệ số z làm cos nếu chưa chuẩn hóa. Ôn CĐ18 mục 6.3; luyện THPT-TOP18-P33.",
+    "options": [
+      {
+        "id": "A",
+        "text": "45°"
+      },
+      {
+        "id": "B",
+        "text": "0°"
+      },
+      {
+        "id": "C",
+        "text": "90°"
+      },
+      {
+        "id": "D",
+        "text": "60°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-C04",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-C04",
     "stem": "Đường có chỉ phương \\((0;0;1)\\) có quan hệ gì với mặt phẳng z=0?",
     "answer_key": "Đường thẳng vuông góc mặt phẳng.",
     "worked_solution": "Chỉ phương khác không cùng phương với pháp tuyến của mặt. Do đó đường thẳng vuông góc mặt phẳng, góc 90°.",
@@ -1641,13 +2814,17 @@
       "G12-CHV-B16-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So hướng u và pháp tuyến n."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1660,12 +2837,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ phương khác không cùng phương pháp tuyến, đường thẳng vuông góc mặt phẳng. Ôn CĐ18 mục 6.4; luyện THPT-TOP18-P34."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ phương khác không cùng phương pháp tuyến, đường thẳng vuông góc mặt phẳng. Ôn CĐ18 mục 6.4; luyện THPT-TOP18-P34.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nằm trong mặt phẳng."
+      },
+      {
+        "id": "B",
+        "text": "Song song phân biệt với mặt phẳng."
+      },
+      {
+        "id": "C",
+        "text": "Tạo góc 45° với mặt phẳng."
+      },
+      {
+        "id": "D",
+        "text": "Vuông góc mặt phẳng."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-P04",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-P04",
     "stem": "Cho đường thẳng \\(d:(x;y;z)=(1+t;2t;3)\\), \\(t\\in\\mathbb R\\), và mặt phẳng \\((P):z=0\\). Tính góc giữa d và (P). Đường thẳng nằm trong (P) hay song song phân biệt với (P)?",
     "answer_key": "0°; đường thẳng song song phân biệt với mặt phẳng.",
     "worked_solution": "Chỉ phương của d là \\(\\vec u=(1;2;0)\\), pháp tuyến của (P) là \\(\\vec n=(0;0;1)\\). Vì \\(\\vec u\\cdot\\vec n=0\\), sin của góc đường–mặt bằng 0, nên góc bằng 0°. Để phân biệt vị trí, xét điểm \\(A(1;0;3)\\) trên d. Điểm A không thuộc (P) vì \\(z=3\\ne0\\). Mọi điểm trên d đều có z=3, nên d không có điểm chung với (P), tức d song song phân biệt với (P).",
@@ -1673,13 +2869,17 @@
       "G12-CHV-B16-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính tích vô hướng của chỉ phương và pháp tuyến, rồi kiểm tọa độ z của điểm ứng với t=0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1692,12 +2892,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Góc 0° chỉ cho biết hướng. Muốn phân biệt nằm trong hay song song phân biệt, phải kiểm một điểm của đường có thuộc mặt phẳng không. Ôn CĐ18 mục 6.4; luyện THPT-TOP18-P34."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Góc 0° chỉ cho biết hướng. Muốn phân biệt nằm trong hay song song phân biệt, phải kiểm một điểm của đường có thuộc mặt phẳng không. Ôn CĐ18 mục 6.4; luyện THPT-TOP18-P34.",
+    "options": [
+      {
+        "id": "A",
+        "text": "0°; nằm trong mặt phẳng."
+      },
+      {
+        "id": "B",
+        "text": "90°; vuông góc mặt phẳng."
+      },
+      {
+        "id": "C",
+        "text": "0°; song song phân biệt."
+      },
+      {
+        "id": "D",
+        "text": "45°; cắt mặt phẳng."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-A04",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-A04",
     "stem": "Thang máy đi theo phương Oz, sàn phẳng có phương trình z=2. Tính góc giữa đường chuyển động và sàn.",
     "answer_key": "90°.",
     "worked_solution": "Phương Oz có chỉ phương \\((0;0;1)\\), cùng phương với pháp tuyến sàn. Vì vậy đường chuyển động vuông góc sàn.",
@@ -1705,13 +2924,17 @@
       "G12-CHV-B16-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Hướng Oz cùng phương pháp tuyến sàn z=2."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1724,12 +2947,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Độ cao sàn không đổi góc. Ôn CĐ18 mục 6.4; luyện THPT-TOP18-P34."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Độ cao sàn không đổi góc. Ôn CĐ18 mục 6.4; luyện THPT-TOP18-P34.",
+    "options": [
+      {
+        "id": "A",
+        "text": "0°"
+      },
+      {
+        "id": "B",
+        "text": "90°"
+      },
+      {
+        "id": "C",
+        "text": "45°"
+      },
+      {
+        "id": "D",
+        "text": "60°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-C05",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-C05",
     "stem": "Đường có chỉ phương \\((1;0;1)\\) tạo góc bao nhiêu với nền ngang z=0?",
     "answer_key": "45°.",
     "worked_solution": "Độ dài chỉ phương là \\(\\sqrt2\\), thành phần theo pháp tuyến đơn vị của nền bằng 1. \\(\\sin\\theta=\\frac1{\\sqrt2}\\), nên góc 45°.",
@@ -1737,13 +2979,17 @@
       "G12-CHV-B16-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Độ dài chỉ phương là \\(\\sqrt2\\), thành phần đứng bằng 1."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1756,12 +3002,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Dùng sin cho góc dốc với nền. Ôn CĐ18 mục 6.5; luyện THPT-TOP18-P35."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Dùng sin cho góc dốc với nền. Ôn CĐ18 mục 6.5; luyện THPT-TOP18-P35.",
+    "options": [
+      {
+        "id": "A",
+        "text": "45°"
+      },
+      {
+        "id": "B",
+        "text": "0°"
+      },
+      {
+        "id": "C",
+        "text": "90°"
+      },
+      {
+        "id": "D",
+        "text": "60°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-P05",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-P05",
     "stem": "Mái có pháp tuyến \\((0;3;4)\\), mặt đất có pháp tuyến \\((0;0;1)\\). Tính góc giữa hai mặt, làm tròn đến hai chữ số thập phân theo độ.",
     "answer_key": "\\(\\arccos\\frac45\\approx36{,}87^\\circ\\).",
     "worked_solution": "Hai độ dài là 5 và 1, tích vô hướng bằng 4. Công thức góc hai mặt cho \\(\\cos\\theta=\\frac{|4|}{5}=\\frac45\\). Góc nhọn xấp xỉ 36,87°.",
@@ -1769,13 +3034,17 @@
       "G12-CHV-B16-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính cos giữa n và n0, lấy trị tuyệt đối."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1788,12 +3057,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy sin góc giữa hai mặt. Ôn CĐ18 mục 6.5; luyện THPT-TOP18-P35."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không lấy sin góc giữa hai mặt. Ôn CĐ18 mục 6.5; luyện THPT-TOP18-P35.",
+    "options": [
+      {
+        "id": "A",
+        "text": "53,13°"
+      },
+      {
+        "id": "B",
+        "text": "45,00°"
+      },
+      {
+        "id": "C",
+        "text": "90,00°"
+      },
+      {
+        "id": "D",
+        "text": "36,87°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B16-A05",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-A05",
     "stem": "Mái phẳng \\(3y+4z-12=0\\), nền z=0. Tính độ nghiêng của mái, làm tròn hai chữ số thập phân theo độ; giải thích vai trò của -12.",
     "answer_key": "\\(\\arccos\\frac45\\approx36{,}87^\\circ\\).",
     "worked_solution": "Pháp tuyến mái \\((0;3;4)\\), nền \\((0;0;1)\\). \\(\\cos\\theta=\\frac{|4|}{5\\cdot1}=\\frac45\\) nên góc khoảng 36,87°. Hằng số -12 tịnh tiến vị trí mặt nhưng không đổi pháp tuyến hay góc nghiêng.",
@@ -1801,13 +3089,17 @@
       "G12-CHV-B16-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Lập pháp tuyến nền \\(\\vec n_0=(0;0;1)\\), dùng công thức cosin góc giữa hai mặt phẳng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1820,12 +3112,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Độ nghiêng mặt mái khác góc đường có chỉ phương n với nền. Ôn CĐ18 mục 6.5; luyện THPT-TOP18-P35."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Độ nghiêng mặt mái khác góc đường có chỉ phương n với nền. Ôn CĐ18 mục 6.5; luyện THPT-TOP18-P35.",
+    "options": [
+      {
+        "id": "A",
+        "text": "53,13°; −12 không đổi góc."
+      },
+      {
+        "id": "B",
+        "text": "36,87°; −12 quyết định góc."
+      },
+      {
+        "id": "C",
+        "text": "36,87°; −12 chỉ ảnh hưởng vị trí, không đổi góc."
+      },
+      {
+        "id": "D",
+        "text": "45,00°; −12 quyết định góc."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-C01",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-C01",
     "stem": "Viết phương trình mặt cầu tâm O, bán kính 2.",
     "answer_key": "\\(x^2+y^2+z^2=4\\).",
     "worked_solution": "M thuộc mặt cầu khi và chỉ khi OM=2. Bình phương công thức khoảng cách từ O được \\(x^2+y^2+z^2=2^2=4\\).",
@@ -1833,13 +3144,17 @@
       "G12-CHV-B17-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng \\(OM^2=R^2\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1852,12 +3167,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Vế phải là \\(R^2=4\\), không phải 2. Ôn CĐ18 mục 7.1; luyện THPT-TOP18-P36."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Vế phải là \\(R^2=4\\), không phải 2. Ôn CĐ18 mục 7.1; luyện THPT-TOP18-P36.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x^2+y^2+z^2=2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x^2+y^2+z^2=4\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x^2+y^2+z^2=8\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x^2+y^2+z^2=16\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-P01",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-P01",
     "stem": "Viết phương trình mặt cầu tâm \\(C(2;0;-1)\\), bán kính 3.",
     "answer_key": "\\((x-2)^2+y^2+(z+1)^2=9\\).",
     "worked_solution": "Dùng điều kiện CM=3 và bình phương khoảng cách. Trừ từng tọa độ của tâm: \\(z-(-1)=z+1\\); vế phải là \\(3^2=9\\).",
@@ -1865,13 +3199,17 @@
       "G12-CHV-B17-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Trừ tọa độ tâm trong mỗi bình phương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1884,12 +3222,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu z−1 thay vì z+1, kiểm tâm C(2;0;−1). Ôn CĐ18 mục 7.1; luyện THPT-TOP18-P36."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu z−1 thay vì z+1, kiểm tâm C(2;0;−1). Ôn CĐ18 mục 7.1; luyện THPT-TOP18-P36.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((x-2)^2+y^2+(z+1)^2=9\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((x+2)^2+y^2+(z-1)^2=9\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((x-2)^2+y^2+(z-1)^2=9\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((x-2)^2+y^2+(z+1)^2=3\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-A01",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-A01",
     "stem": "Bộ phát sóng có tâm \\((0;0;5)\\), bán kính phủ 10 m trong mô hình đẳng hướng. Tọa độ tính bằng mét. Viết phương trình bề mặt biên của vùng phủ.",
     "answer_key": "\\(x^2+y^2+(z-5)^2=100\\).",
     "worked_solution": "Điểm trên biên cách tâm đúng 10 m, nên bình phương khoảng cách bằng 100. Vùng phủ đầy đủ là khối cầu với vế trái nhỏ hơn hoặc bằng 100, khác với bề mặt biên.",
@@ -1897,13 +3254,17 @@
       "G12-CHV-B17-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Biên phủ gồm điểm cách tâm đúng 10 m."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1916,12 +3277,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hỏi vùng phủ, dùng ≤100, còn biên dùng =100. Ôn CĐ18 mục 7.1; luyện THPT-TOP18-P36."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu hỏi vùng phủ, dùng ≤100, còn biên dùng =100. Ôn CĐ18 mục 7.1; luyện THPT-TOP18-P36.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x^2+y^2+(z+5)^2=100\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x^2+y^2+(z-5)^2=10\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x^2+y^2+(z-5)^2\\le100\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x^2+y^2+(z-5)^2=100\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-C02",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-C02",
     "stem": "Tìm tâm và bán kính của mặt cầu \\(x^2+y^2+z^2-2x=0\\).",
     "answer_key": "\\(C(1;0;0),\\ R=1\\).",
     "worked_solution": "Hoàn thành bình phương: \\(x^2-2x=(x-1)^2-1\\). Suy ra \\((x-1)^2+y^2+z^2=1\\). Đọc tâm và lấy căn dương của vế phải.",
@@ -1929,13 +3309,17 @@
       "G12-CHV-B17-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Hoàn thành bình phương theo x."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1948,12 +3332,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Sau khi cộng 1, phải chuyển vế tương ứng. Ôn CĐ18 mục 7.2; luyện THPT-TOP18-P37."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Sau khi cộng 1, phải chuyển vế tương ứng. Ôn CĐ18 mục 7.2; luyện THPT-TOP18-P37.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(C(-1;0;0),\\ R=1\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(C(2;0;0),\\ R=1\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(C(1;0;0),\\ R=1\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(C(1;0;0),\\ R=2\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-P02",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-P02",
     "stem": "Tìm tâm và bán kính của mặt cầu \\(x^2+y^2+z^2+2x-4y+6z+5=0\\).",
     "answer_key": "\\(C(-1;2;-3),\\ R=3\\).",
     "worked_solution": "Hoàn thành bình phương từng biến: \\((x+1)^2+(y-2)^2+(z+3)^2=1+4+9-5=9\\). Vế phải dương, nên là mặt cầu bán kính 3 với tâm đã nêu.",
@@ -1961,13 +3364,17 @@
       "G12-CHV-B17-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Hoàn thành ba bình phương rồi tính \\(R^2\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1980,12 +3387,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên một số hạng cộng bù, tính lại 1+4+9−5. Ôn CĐ18 mục 7.2; luyện THPT-TOP18-P37."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên một số hạng cộng bù, tính lại 1+4+9−5. Ôn CĐ18 mục 7.2; luyện THPT-TOP18-P37.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(C(1;-2;3),\\ R=3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(C(-1;2;-3),\\ R=3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(C(-1;2;-3),\\ R=9\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(C(-1;2;3),\\ R=3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-A02",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-A02",
     "stem": "Phương trình \\(x^2+y^2+z^2+4=0\\) có xác định một mặt cầu thực không?",
     "answer_key": "Không.",
     "worked_solution": "Chuyển vế được tổng ba bình phương bằng -4, bất khả thi vì tổng này không âm. Không có điểm thực nào thỏa, nên không xác định mặt cầu.",
@@ -1993,13 +3419,17 @@
       "G12-CHV-B17-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Tổng ba bình phương không âm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2012,12 +3442,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu \\(R^2<0\\), không có mặt cầu thực; nếu bằng 0, chỉ có một điểm. Ôn CĐ18 mục 7.2; luyện THPT-TOP18-P37."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu \\(R^2<0\\), không có mặt cầu thực; nếu bằng 0, chỉ có một điểm. Ôn CĐ18 mục 7.2; luyện THPT-TOP18-P37.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, vì tổng ba bình phương không thể bằng −4."
+      },
+      {
+        "id": "B",
+        "text": "Có, tâm O, bán kính 2."
+      },
+      {
+        "id": "C",
+        "text": "Có, tâm O, bán kính 4."
+      },
+      {
+        "id": "D",
+        "text": "Có, chỉ gồm điểm O."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-C03",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-C03",
     "stem": "Khối cầu tâm O, bán kính 3. Điểm \\(P(1;1;1)\\) ở trong, trên biên hay ngoài khối cầu?",
     "answer_key": "Trong khối cầu.",
     "worked_solution": "\\(OP^2=1+1+1=3<9=R^2\\). Vì khoảng cách từ P đến tâm nhỏ hơn bán kính, P ở phía trong, không nằm trên biên.",
@@ -2025,13 +3474,17 @@
       "G12-CHV-B17-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So \\(OP^2\\) với \\(R^2=9\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2044,12 +3497,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Điểm trong khối không nằm trên mặt cầu. Ôn CĐ18 mục 7.3; luyện THPT-TOP18-P38."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Điểm trong khối không nằm trên mặt cầu. Ôn CĐ18 mục 7.3; luyện THPT-TOP18-P38.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trên mặt cầu."
+      },
+      {
+        "id": "B",
+        "text": "Ngoài khối cầu."
+      },
+      {
+        "id": "C",
+        "text": "Không xác định được."
+      },
+      {
+        "id": "D",
+        "text": "Trong khối cầu, không trên biên."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-P03",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-P03",
     "stem": "Khối cầu tâm \\(C(1;0;0)\\), bán kính 2. Điểm \\(P(4;0;0)\\) ở vị trí nào so với khối cầu?",
     "answer_key": "Ngoài khối cầu.",
     "worked_solution": "\\(CP=|4-1|=3>2\\). Tương đương \\(CP^2=9>R^2=4\\), nên P nằm ngoài.",
@@ -2057,13 +3529,17 @@
       "G12-CHV-B17-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính \\(CP^2\\) và so với 4."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2076,12 +3552,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu tính OP thay CP, sai tâm. Ôn CĐ18 mục 7.3; luyện THPT-TOP18-P38."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu tính OP thay CP, sai tâm. Ôn CĐ18 mục 7.3; luyện THPT-TOP18-P38.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trong khối cầu."
+      },
+      {
+        "id": "B",
+        "text": "Trên mặt cầu."
+      },
+      {
+        "id": "C",
+        "text": "Ngoài khối cầu."
+      },
+      {
+        "id": "D",
+        "text": "Trùng tâm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-A03",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-A03",
     "stem": "Mặt cầu tâm \\((0;0;3)\\), bán kính 5 m, cắt nền z=0. Tọa độ tính bằng mét. Tính bán kính đường tròn giao tuyến.",
     "answer_key": "4 m.",
     "worked_solution": "Hình chiếu của tâm xuống nền là \\((0;0;0)\\), khoảng cách 3 m nhỏ hơn 5 m. Dùng Pitago, bán kính giao tuyến là \\(\\sqrt{5^2-3^2}=4\\) m.",
@@ -2089,13 +3584,17 @@
       "G12-CHV-B17-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Tính khoảng cách tâm đến nền, rồi so với R."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2108,12 +3607,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Đây là giao tuyến mặt cầu–mặt, không chỉ phân loại điểm. Ôn CĐ18 mục 7.5; luyện THPT-TOP18-P40."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Đây là giao tuyến mặt cầu–mặt, không chỉ phân loại điểm. Ôn CĐ18 mục 7.5; luyện THPT-TOP18-P40.",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 m"
+      },
+      {
+        "id": "B",
+        "text": "4 m"
+      },
+      {
+        "id": "C",
+        "text": "3 m"
+      },
+      {
+        "id": "D",
+        "text": "5 m"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-C04",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-C04",
     "stem": "Viết phương trình mặt cầu đường kính AB với \\(A(0;0;0),B(2;0;0)\\).",
     "answer_key": "\\((x-1)^2+y^2+z^2=1\\).",
     "worked_solution": "Tâm là trung điểm AB, tọa độ \\((1;0;0)\\). Độ dài AB=2 nên bán kính bằng 1, không phải 2. Thay tâm và bán kính vào phương trình.",
@@ -2121,13 +3639,17 @@
       "G12-CHV-B17-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Hai đầu đường kính xác định tâm trung điểm và nửa độ dài."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2140,12 +3662,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu AB chỉ là hai điểm trên mặt cầu thì chưa đủ; cần giả thiết đường kính. Ôn CĐ18 mục 7.4; luyện THPT-TOP18-P39."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu AB chỉ là hai điểm trên mặt cầu thì chưa đủ; cần giả thiết đường kính. Ôn CĐ18 mục 7.4; luyện THPT-TOP18-P39.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((x-1)^2+y^2+z^2=1\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((x+1)^2+y^2+z^2=1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((x-1)^2+y^2+z^2=4\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x^2+y^2+z^2=1\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-P04",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-P04",
     "stem": "Viết phương trình mặt cầu đường kính AB với \\(A(1;1;1),B(3;1;1)\\).",
     "answer_key": "\\((x-2)^2+(y-1)^2+(z-1)^2=1\\).",
     "worked_solution": "Trung điểm AB là \\((2;1;1)\\). Độ dài AB=2, do đó R=1. Phương trình nhận được bằng cách lấy bình phương khoảng cách tới tâm bằng 1.",
@@ -2153,13 +3694,17 @@
       "G12-CHV-B17-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính trung điểm AB, R=AB/2."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2172,12 +3717,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không dùng cả đường kính làm R. Ôn CĐ18 mục 7.4; luyện THPT-TOP18-P39."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không dùng cả đường kính làm R. Ôn CĐ18 mục 7.4; luyện THPT-TOP18-P39.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((x-2)^2+(y-1)^2+(z-1)^2=4\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((x+2)^2+(y+1)^2+(z+1)^2=1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((x-1)^2+(y-1)^2+(z-1)^2=1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((x-2)^2+(y-1)^2+(z-1)^2=1\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-A04",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-A04",
     "stem": "Hai đầu mút đường kính của mặt cầu là \\(A(0;0;0),B(0;6;8)\\). Tìm tâm và bán kính.",
     "answer_key": "\\(C(0;3;4),\\ R=5\\).",
     "worked_solution": "Tâm là trung điểm AB: \\((0;3;4)\\). Độ dài đường kính \\(AB=\\sqrt{6^2+8^2}=10\\). Bán kính bằng nửa đường kính, tức 5.",
@@ -2185,13 +3749,17 @@
       "G12-CHV-B17-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Tính AB bằng Pitago rồi chia 2."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2204,12 +3772,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy \\(\\sqrt{6^2+8^2}=10\\) làm R, đó là đường kính; chia đôi để được bán kính. Ôn CĐ18 mục 7.4; luyện THPT-TOP18-P39."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy \\(\\sqrt{6^2+8^2}=10\\) làm R, đó là đường kính; chia đôi để được bán kính. Ôn CĐ18 mục 7.4; luyện THPT-TOP18-P39.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(C(0;3;4), R=10\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(C(0;6;8), R=5\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(C(0;3;4), R=5\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(C(0;3;4), R=7\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-C05",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-C05",
     "stem": "Xét vị trí tương đối của mặt cầu tâm O, R=3, và mặt phẳng z=3.",
     "answer_key": "Tiếp xúc tại \\((0;0;3)\\).",
     "worked_solution": "Khoảng cách tâm đến mặt phẳng bằng 3, bằng R. Chỉ hình chiếu vuông góc của tâm lên mặt phẳng nằm trên mặt cầu; hai mặt tiếp xúc tại điểm đó.",
@@ -2217,13 +3804,17 @@
       "G12-CHV-B17-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Khoảng cách từ O đến z=3 bằng 3."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2236,12 +3827,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Khi d=R, chỉ một tiếp điểm, không đường tròn bán kính dương. Ôn CĐ18 mục 7.5; luyện THPT-TOP18-P40."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Khi d=R, chỉ một tiếp điểm, không đường tròn bán kính dương. Ôn CĐ18 mục 7.5; luyện THPT-TOP18-P40.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giao là đường tròn bán kính 3."
+      },
+      {
+        "id": "B",
+        "text": "Tiếp xúc tại \\((0;0;3)\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không có điểm chung."
+      },
+      {
+        "id": "D",
+        "text": "Tiếp xúc tại \\((0;0;-3)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-P05",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-P05",
     "stem": "Mặt cầu tâm \\(C(0;0;1)\\), R=5, cắt mặt phẳng z=0. Tính bán kính đường tròn giao tuyến.",
     "answer_key": "\\(2\\sqrt6\\).",
     "worked_solution": "Khoảng cách tâm đến mặt phẳng là 1, nhỏ hơn R. \\(r=\\sqrt{5^2-1^2}=\\sqrt{24}=2\\sqrt6\\).",
@@ -2249,13 +3859,17 @@
       "G12-CHV-B17-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Khoảng cách từ C đến z=0 bằng 1."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2268,12 +3882,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Dùng \\(\\sqrt{R^2-d^2}\\), không lấy R-d. Ôn CĐ18 mục 7.5; luyện THPT-TOP18-P40."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Dùng \\(\\sqrt{R^2-d^2}\\), không lấy R-d. Ôn CĐ18 mục 7.5; luyện THPT-TOP18-P40.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(2\\sqrt6\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(4\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(5\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(24\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B17-A05",
-    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B17-A05",
     "stem": "Vùng phát sóng lý tưởng là khối cầu tâm \\((0;0;10)\\), bán kính 6 m. Tọa độ tính bằng mét. Vùng phủ có chạm nền z=0 không?",
     "answer_key": "Không.",
     "worked_solution": "Khoảng cách nhỏ nhất từ tâm đến nền là 10 m, lớn hơn R=6 m. Vì mọi điểm nền cách tâm ít nhất 10 m, không điểm nào thuộc khối cầu.",
@@ -2281,13 +3914,17 @@
       "G12-CHV-B17-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "So độ cao nguồn với bán kính."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2300,8 +3937,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu d>R, vùng cầu không chạm mặt nền. Ôn CĐ18 mục 7.5; luyện THPT-TOP18-P40."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu d>R, vùng cầu không chạm mặt nền. Ôn CĐ18 mục 7.5; luyện THPT-TOP18-P40.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, vì 10 m lớn hơn 6 m."
+      },
+      {
+        "id": "B",
+        "text": "Có, vùng phủ có bán kính 4 m trên nền."
+      },
+      {
+        "id": "C",
+        "text": "Có, tiếp xúc tại O."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì khoảng cách từ tâm đến nền là 10 m lớn hơn 6 m."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B14-T01",
