@@ -386,22 +386,26 @@
   },
   {
     "item_id": "THPT-G10-B18-C01",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD03-BANK-CP123-20261127-B18-C01",
     "stem": "Giải \\(\\sqrt{x+5}=x-1\\) trong \\(\\mathbb R\\).",
     "answer_key": "\\(S=\\{4\\}\\).",
-    "worked_solution": "Vế trái không âm, nên cần \\(x-1\\ge0\\), tức \\(x\\ge1\\); điều kiện này cũng bảo đảm \\(x+5\\ge0\\). Trên miền đó bình phương hai vế là tương đương: \\(x+5=(x-1)^2\\iff (x-4)(x+1)=0\\). Loại −1 vì không thỏa điều kiện; thay \\(x=4\\) được \\(\\sqrt9=3\\). Vậy \\(S=\\{4\\}\\).",
+    "worked_solution": "Vế trái không âm, nên cần \\(x-1\\ge0\\), tức \\(x\\ge1\\); điều kiện này cũng bảo đảm \\(x+5\\ge0\\). Trên miền đó bình phương hai vế là tương đương: \\(x+5=(x-1)^2\\iff (x-4)(x+1)=0\\). Loại \\(-1\\) vì không thỏa điều kiện; thay \\(x=4\\) được \\(\\sqrt9=3\\). Vậy \\(S=\\{4\\}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_CONDITION"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Vế phải cần không âm trước khi bình phương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -413,12 +417,31 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhận \\(x=-1\\) sau bình phương, kiểm \\(x-1\\ge0\\) trước; tại −1, vế trái bằng 2 còn vế phải −2. Ôn Bài 18 §2.2 / HELP-G10-CHVI-TRY17; luyện THPT-G10-B18-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhận \\(x=-1\\) sau bình phương, kiểm \\(x-1\\ge0\\) trước; tại \\(-1\\), vế trái bằng 2 còn vế phải \\(-2\\). Ôn Bài 18 §2.2 / HELP-G10-CHVI-TRY17; luyện THPT-G10-B18-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-1\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\varnothing\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{4\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-1;4\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B18-C02",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD03-BANK-CP123-20261127-B18-C02",
     "stem": "Giải \\(\\sqrt{(x+4)^2}=\\sqrt{x+4}\\) trong \\(\\mathbb R\\).",
     "answer_key": "\\(S=\\{-4;-3\\}\\).",
     "worked_solution": "Điều kiện \\(x+4\\ge0\\). Đặt \\(u=x+4\\ge0\\). Hai vế đều không âm nên \\(\\sqrt{u^2}=\\sqrt u\\iff u^2=u\\iff u(u-1)=0\\). Suy ra \\(u=0\\) hoặc \\(u=1\\). Thay lại: \\(x=-4\\) cho hai vế bằng 0, \\(x=-3\\) cho hai vế bằng 1. Vậy \\(S=\\{-4;-3\\}\\).",
@@ -427,13 +450,17 @@
       "RADICAL_TWO_SIDES"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
       "Xem miền của căn thứ hai trước khi bình phương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -445,28 +472,51 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu bỏ \\(x=-4\\) vì cho rằng căn phải dương, kiểm cả hai căn được phép bằng 0; đặt \\(u=x+4\\ge0\\) rồi xét \\(u=0\\) và \\(u=1\\). Ôn Bài 18 §2.1 / HELP-G10-CHVI-TRY16; luyện THPT-TOP03-ADD15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ \\(x=-4\\) vì cho rằng căn phải dương, kiểm cả hai căn được phép bằng 0; đặt \\(u=x+4\\ge0\\) rồi xét \\(u=0\\) và \\(u=1\\). Ôn Bài 18 §2.1 / HELP-G10-CHVI-TRY16; luyện THPT-TOP03-ADD15.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-3\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{-4;3\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{-4\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-4;-3\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B18-P01",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Giải hai phương trình trên \\(\\mathbb R\\): (1) \\(\\sqrt{x+6}=x\\); (2) \\(\\sqrt{x+6}=-x\\). Hai phương trình đều cho cùng một phương trình bậc hai sau khi bình phương. Vì sao tập nghiệm của chúng vẫn khác nhau?",
+    "content_version": "CD03-BANK-CP123-20261127-B18-P01",
+    "stem": "Giải hai phương trình trên \\(\\mathbb R\\): (1) \\(\\sqrt{x+6}=x\\); (2) \\(\\sqrt{x+6}=-x\\). Hai phương trình đều cho cùng một phương trình bậc hai sau khi bình phương. Vì sao tập nghiệm của chúng vẫn khác nhau? Chọn kết luận đúng và giải thích điều kiện dấu.",
     "answer_key": "(1) \\(S_1=\\{3\\}\\); (2) \\(S_2=\\{-2\\}\\). Sau bình phương đều được \\(x^2-x-6=0\\), nhưng điều kiện dấu vế phải của (1) là \\(x\\ge0\\), của (2) là \\(x\\le0\\), bên cạnh \\(x+6\\ge0\\).",
-    "worked_solution": "Cả hai phương trình đều cần \\(x+6\\ge0\\). Căn bậc hai luôn không âm, nên (1) còn cần \\(x\\ge0\\), còn (2) cần \\(-x\\ge0\\), tức \\(x\\le0\\). Trên từng miền điều kiện tương ứng, hai vế đều không âm, nên bình phương là phép biến đổi tương đương. Cả hai cho \\(x+6=x^2\\), hay \\((x-3)(x+2)=0\\), có hai ứng viên \\(x=3\\) và \\(x=-2\\). Với (1), chỉ 3 thỏa \\(x\\ge0\\), kiểm lại \\(\\sqrt9=3\\). Với (2), chỉ −2 thỏa \\(-6\\le x\\le0\\), kiểm lại \\(\\sqrt4=2=-(-2)\\). Do đó \\(S_1=\\{3\\}\\), \\(S_2=\\{-2\\}\\). Bình phương làm mất thông tin về dấu của vế phải; chính điều kiện trước khi bình phương giúp phân biệt nghiệm của hai phương trình.",
+    "worked_solution": "Cả hai phương trình đều cần \\(x+6\\ge0\\). Căn bậc hai luôn không âm, nên (1) còn cần \\(x\\ge0\\), còn (2) cần \\(-x\\ge0\\), tức \\(x\\le0\\). Trên từng miền điều kiện tương ứng, hai vế đều không âm, nên bình phương là phép biến đổi tương đương. Cả hai cho \\(x+6=x^2\\), hay \\((x-3)(x+2)=0\\), có hai ứng viên \\(x=3\\) và \\(x=-2\\). Với (1), chỉ 3 thỏa \\(x\\ge0\\), kiểm lại \\(\\sqrt9=3\\). Với (2), chỉ \\(-2\\) thỏa \\(-6\\le x\\le0\\), kiểm lại \\(\\sqrt4=2=-(-2)\\). Do đó \\(S_1=\\{3\\}\\), \\(S_2=\\{-2\\}\\). Bình phương làm mất thông tin về dấu của vế phải; chính điều kiện trước khi bình phương giúp phân biệt nghiệm của hai phương trình.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_FILTER"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "SYNTHESIS",
     "hints": [
-      "Căn bậc hai không âm; xét riêng dấu của x và −x.",
+      "Căn bậc hai không âm; xét riêng dấu của \\(x\\) và \\(-x\\).",
       "Giải phương trình bậc hai một lần rồi lọc ứng viên theo từng miền."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -478,12 +528,31 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Không coi hai phương trình có cùng bình phương là tương đương khi chưa kiểm dấu hai vế. Ghi riêng điều kiện của mỗi phương trình. Ôn Bài 18 §2.2; luyện THPT-G10-CHVI-TRY18."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không coi hai phương trình có cùng bình phương là tương đương khi chưa kiểm dấu hai vế. Ghi riêng điều kiện của mỗi phương trình. Ôn Bài 18 §2.2; luyện THPT-G10-CHVI-TRY18.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S_1=\\{3\\},S_2=\\{-2\\}\\); hai vế phải có điều kiện dấu khác nhau."
+      },
+      {
+        "id": "B",
+        "text": "\\(S_1=S_2=\\{-2;3\\}\\); bình phương luôn tương đương."
+      },
+      {
+        "id": "C",
+        "text": "\\(S_1=\\{-2\\},S_2=\\{3\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S_1=S_2=\\{3\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B18-P02",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD03-BANK-CP123-20261127-B18-P02",
     "stem": "Giải \\(\\sqrt{2x^2+9}=x+3\\).",
     "answer_key": "\\(S=\\{0;6\\}\\).",
     "worked_solution": "Biểu thức \\(2x^2+9>0\\) với mọi x; cần \\(x+3\\ge0\\), tức \\(x\\ge-3\\). Bình phương trên miền này: \\(2x^2+9=(x+3)^2\\iff x^2-6x=0\\iff x(x-6)=0\\). Hai ứng viên 0 và 6 đều thỏa điều kiện. Thay lại được \\(\\sqrt9=3\\) và \\(\\sqrt{81}=9\\). Vậy \\(S=\\{0;6\\}\\).",
@@ -492,13 +561,17 @@
       "RADICAL_FILTER"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
       "Không mặc định phương trình chỉ có một nghiệm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -510,27 +583,50 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ ghi một nghiệm, kiểm cả 0 và 6 trong phương trình gốc; điều kiện \\(x\\ge-3\\) không loại nghiệm nào. Ôn Bài 18 §2.2 / HELP-G10-CHVI-TRY17; luyện THPT-TOP03-ADD16."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ ghi một nghiệm, kiểm cả 0 và 6 trong phương trình gốc; điều kiện \\(x\\ge-3\\) không loại nghiệm nào. Ôn Bài 18 §2.2 / HELP-G10-CHVI-TRY17; luyện THPT-TOP03-ADD16.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{0\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{0;6\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{6\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-6;0\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B18-P03",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD03-BANK-CP123-20261127-B18-P03",
     "stem": "Giải trên \\(\\mathbb R\\): \\(\\sqrt{x^2+7x+11}=\\sqrt{x+3}\\).",
     "answer_key": "\\(S=\\{-2\\}\\).",
-    "worked_solution": "Điều kiện đồng thời: \\(x^2+7x+11\\ge0\\) và \\(x+3\\ge0\\). Trên miền này hai vế đều không âm, nên bình phương tương đương: \\(x^2+7x+11=x+3\\iff (x+2)(x+4)=0\\). Ứng viên −4 làm \\(x+3=-1\\), không thỏa điều kiện. Với \\(x=-2\\), cả hai biểu thức dưới căn bằng 1, hai vế bằng 1. Vậy \\(S=\\{-2\\}\\).",
+    "worked_solution": "Điều kiện đồng thời: \\(x^2+7x+11\\ge0\\) và \\(x+3\\ge0\\). Trên miền này hai vế đều không âm, nên bình phương tương đương: \\(x^2+7x+11=x+3\\iff (x+2)(x+4)=0\\). Ứng viên \\(-4\\) làm \\(x+3=-1\\), không thỏa điều kiện. Với \\(x=-2\\), cả hai biểu thức dưới căn bằng 1, hai vế bằng 1. Vậy \\(S=\\{-2\\}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
       "Kiểm điều kiện thực của cả hai biểu thức dưới căn."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -542,12 +638,31 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhận −4, thay vào \\(x+3\\) và nhận ra căn không xác định trong \\(\\mathbb R\\). Kiểm đồng thời hai biểu thức dưới căn trước khi bình phương. Ôn Bài 18 §2.1 / HELP-G10-CHVI-TRY16; luyện THPT-TOP03-ADD17."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhận \\(-4\\), thay vào \\(x+3\\) và nhận ra căn không xác định trong \\(\\mathbb R\\). Kiểm đồng thời hai biểu thức dưới căn trước khi bình phương. Ôn Bài 18 §2.1 / HELP-G10-CHVI-TRY16; luyện THPT-TOP03-ADD17.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{-4\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\varnothing\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{-2\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{-4;-2\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B18-P04",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD03-BANK-CP123-20261127-B18-P04",
     "stem": "Tam giác vuông có hai cạnh góc vuông dài \\(x>0\\) mét và 3 mét; cạnh huyền dài \\(x+1\\) mét. Tìm x.",
     "answer_key": "\\(x=4\\) (m).",
     "worked_solution": "Theo định lí Pitago, \\(\\sqrt{x^2+9}=x+1\\). Vì \\(x>0\\), hai vế đều dương; bình phương tương đương \\(x^2+9=x^2+2x+1\\iff x=4\\). Kiểm tra: hai cạnh góc vuông dài 3 m, 4 m, cạnh huyền 5 m, thỏa \\(3^2+4^2=5^2\\). Vậy \\(x=4\\) m.",
@@ -556,13 +671,17 @@
       "RADICAL_MODELING"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Dùng định lí Pitago và giữ điều kiện \\(x>0\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -574,8 +693,27 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhầm cạnh huyền hoặc quên độ dài dương, phác tam giác vuông, đánh dấu \\(x+1\\) là cạnh huyền rồi kiểm \\(x>0\\) và hệ thức Pitago. Ôn Bài 18 mục ứng dụng độ dài / HELP-G10-CHVI-TRY19; luyện THPT-TOP03-ADD21."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm cạnh huyền hoặc quên độ dài dương, phác tam giác vuông, đánh dấu \\(x+1\\) là cạnh huyền rồi kiểm \\(x>0\\) và hệ thức Pitago. Ôn Bài 18 mục ứng dụng độ dài / HELP-G10-CHVI-TRY19; luyện THPT-TOP03-ADD21.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=3\\,\\mathrm m\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x=5\\,\\mathrm m\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x=8\\,\\mathrm m\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x=4\\,\\mathrm m\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-CORE-QF01",
