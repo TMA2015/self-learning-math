@@ -9,7 +9,7 @@
       "G11-B15-FINITE_SEQUENCE"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Tính khoảng cách \\(|u_n-7|\\)."
     ],
@@ -63,7 +63,7 @@
       "G11-B15-INFINITE_SEQUENCE"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Với \\(M>0\\), tìm n để \\(-2n<-M\\)."
     ],
