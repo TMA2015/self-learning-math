@@ -516,16 +516,17 @@
   {
     "item_id": "THPT-G10-B06-P06",
     "content_version": "THPT-G10-CHIII-R01",
-    "stem": "Tam giác ABC có \\(a=\\sqrt{61},b=5,c=6\\). Hãy xác định góc A và diện tích \\(S\\).",
-    "answer_key": "\\(A=90^\\circ,\\ S=15\\).",
-    "worked_solution": "Theo định lí côsin, \\(\\cos A=\\frac{b^2+c^2-a^2}{2bc}=\\frac{25+36-61}{60}=0\\). Vì A là góc trong tam giác nên \\(A=90^\\circ\\). Hai cạnh b và c vuông góc, do đó \\(S=\\frac12bc=\\frac12\\cdot5\\cdot6=15\\).",
+    "stem": "Hai tam giác có cùng hai cạnh kề góc A là \\(b=5\\), \\(c=6\\), cùng diện tích \\(S=\\frac{15}{2}\\). (a) Tìm tất cả giá trị có thể của góc A và cạnh đối diện a. (b) Một người cho rằng cùng hai cạnh và cùng diện tích thì hai tam giác phải bằng nhau. Dùng kết quả ở (a) để nhận xét. (c) Nếu biết thêm A là góc tù, xác định duy nhất cạnh a.",
+    "answer_key": "\\(A=30^\\circ,\\ a=\\sqrt{61-30\\sqrt3}\\) hoặc \\(A=150^\\circ,\\ a=\\sqrt{61+30\\sqrt3}\\). Hai cạnh a khác nhau nên hai tam giác không bằng nhau; nếu A tù thì \\(a=\\sqrt{61+30\\sqrt3}\\).",
+    "worked_solution": "Vì diện tích tam giác là \\(S=\\frac12bc\\sin A\\), ta có \\(\\frac{15}{2}=15\\sin A\\), suy ra \\(\\sin A=\\frac12\\). Với góc trong tam giác, \\(0^\\circ<A<180^\\circ\\), nên có đúng hai khả năng \\(A=30^\\circ\\) hoặc \\(A=150^\\circ\\). Cả hai góc đều tạo được tam giác không suy biến với hai cạnh kề 5 và 6. Theo định lí côsin, \\(a^2=b^2+c^2-2bc\\cos A=61-60\\cos A\\). Với \\(A=30^\\circ\\), côsin bằng \\(\\frac{\\sqrt3}{2}\\), nên \\(a=\\sqrt{61-30\\sqrt3}\\). Với \\(A=150^\\circ\\), côsin bằng \\(-\\frac{\\sqrt3}{2}\\), nên \\(a=\\sqrt{61+30\\sqrt3}\\). Hai độ dài khác nhau dù diện tích bằng nhau: hai góc bù có cùng sin nhưng côsin trái dấu. Vì vậy hai tam giác không bằng nhau. Nếu biết A tù thì chỉ còn trường hợp \\(150^\\circ\\), xác định duy nhất cạnh a lớn hơn.",
     "skill_ids": [
       "G10-B06-COSINE_RULE"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "So sánh \\(a^2\\) với \\(b^2+c^2\\)."
+      "Dùng công thức diện tích để tìm sin A trước.",
+      "Xét đủ hai góc bù trong khoảng \\((0^\\circ;180^\\circ)\\), sau đó dùng định lí côsin."
     ],
     "rubric": null,
     "interaction": {
@@ -542,7 +543,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu kết luận A vuông mà chưa kiểm cạnh, dùng định lí côsin để tính \\(\\cos A\\), rồi \\(S=\\frac12bc\\sin A\\). Ôn Bài 6 §2.1.2, §2.4.2; luyện THPT-G10-B06-P04."
+    "remediation": "Cùng diện tích không đồng nghĩa cùng góc xen giữa. Phải xét đủ góc nhọn và góc tù có cùng sin, rồi dùng côsin để xác định cạnh còn lại. Ôn Bài 6; luyện THPT-G10-CHIII-TRY08."
   },
   {
     "item_id": "THPT-G10-CHIII-TRY01",
