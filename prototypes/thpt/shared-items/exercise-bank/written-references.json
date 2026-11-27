@@ -430,8 +430,11 @@
   {
     "item_id": "THPT-G11-CHVI-B18-W01",
     "source": {
-      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
-      "heading_id": "THPT-G11-CHVI-B18-W01"
+      "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+      "heading_id": "THPT-G11-CHVI-B18-W01",
+      "previous_source_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+      "revision_scope": "CP124_CD04_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vi.md",
@@ -439,13 +442,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B18-POWER_LAWS"
+    ],
+    "content_version": "CD04-BANK-CP124-20261127-B18-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-W02-ANCHOR",
     "source": {
-      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
-      "heading_id": "THPT-G11-CHVI-B18-W02-ANCHOR"
+      "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+      "heading_id": "THPT-G11-CHVI-B18-W02-ANCHOR",
+      "previous_source_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+      "revision_scope": "CP124_CD04_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vi.md",
@@ -453,13 +466,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B18-GROWTH_MODEL"
+    ],
+    "content_version": "CD04-BANK-CP124-20261127-W02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVI-B19-W01",
     "source": {
-      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
-      "heading_id": "THPT-G11-CHVI-B19-W01"
+      "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+      "heading_id": "THPT-G11-CHVI-B19-W01",
+      "previous_source_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+      "revision_scope": "CP124_CD04_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vi.md",
@@ -467,13 +490,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B19-LOG_DOMAIN"
+    ],
+    "content_version": "CD04-BANK-CP124-20261127-B19-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVI-B19-W02-ANCHOR",
     "source": {
-      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
-      "heading_id": "THPT-G11-CHVI-B19-W02-ANCHOR"
+      "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+      "heading_id": "THPT-G11-CHVI-B19-W02-ANCHOR",
+      "previous_source_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+      "revision_scope": "CP124_CD04_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vi.md",
@@ -481,13 +514,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B19-LOG_LAWS"
+    ],
+    "content_version": "CD04-BANK-CP124-20261127-W02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVI-B20-W01",
     "source": {
-      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
-      "heading_id": "THPT-G11-CHVI-B20-W01"
+      "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+      "heading_id": "THPT-G11-CHVI-B20-W01",
+      "previous_source_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+      "revision_scope": "CP124_CD04_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vi.md",
@@ -495,13 +538,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B20-INVERSE_GRAPH"
+    ],
+    "content_version": "CD04-BANK-CP124-20261127-B20-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVI-B20-W02-ANCHOR",
     "source": {
-      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
-      "heading_id": "THPT-G11-CHVI-B20-W02-ANCHOR"
+      "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+      "heading_id": "THPT-G11-CHVI-B20-W02-ANCHOR",
+      "previous_source_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+      "revision_scope": "CP124_CD04_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vi.md",
@@ -509,13 +562,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B20-INVERSE_GRAPH"
+    ],
+    "content_version": "CD04-BANK-CP124-20261127-W02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-W01",
     "source": {
-      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
-      "heading_id": "THPT-G11-CHVI-B21-W01"
+      "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+      "heading_id": "THPT-G11-CHVI-B21-W01",
+      "previous_source_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+      "revision_scope": "CP124_CD04_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vi.md",
@@ -523,13 +586,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B21-DOMAIN_CHECK"
+    ],
+    "content_version": "CD04-BANK-CP124-20261127-B21-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-W02-ANCHOR",
     "source": {
-      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
-      "heading_id": "THPT-G11-CHVI-B21-W02-ANCHOR"
+      "blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+      "heading_id": "THPT-G11-CHVI-B21-W02-ANCHOR",
+      "previous_source_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+      "revision_scope": "CP124_CD04_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vi.md",
@@ -537,47 +610,94 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B21-REAL_CONTEXT"
+    ],
+    "content_version": "CD04-BANK-CP124-20261127-W02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP04-W01",
     "source": {
-      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
-      "heading_id": "THPT-TOP04-W01"
+      "blob": "7825a8676a067128f553bfa291a444c965ffb47a",
+      "heading_id": "THPT-TOP04-W01",
+      "previous_source_blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md",
+      "revision_scope": "CP124_CD04_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B18-POWER_LAWS"
+    ],
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP04-W02",
     "source": {
-      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
-      "heading_id": "THPT-TOP04-W02"
+      "blob": "7825a8676a067128f553bfa291a444c965ffb47a",
+      "heading_id": "THPT-TOP04-W02",
+      "previous_source_blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md",
+      "revision_scope": "CP124_CD04_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B19-LOG_BASE_CHANGE"
+    ],
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP04-W03",
     "source": {
-      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
-      "heading_id": "THPT-TOP04-W03"
+      "blob": "7825a8676a067128f553bfa291a444c965ffb47a",
+      "heading_id": "THPT-TOP04-W03",
+      "previous_source_blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md",
+      "revision_scope": "CP124_CD04_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B21-LOG_EQUATION"
+    ],
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP04-W04",
     "source": {
-      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
-      "heading_id": "THPT-TOP04-W04"
+      "blob": "7825a8676a067128f553bfa291a444c965ffb47a",
+      "heading_id": "THPT-TOP04-W04",
+      "previous_source_blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md",
+      "revision_scope": "CP124_CD04_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B21-REAL_CONTEXT"
+    ],
+    "content_version": "CD04-BANK-CP124-20261127-TOP04-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "HPT-G10-CHVI-WRI-15-01",
