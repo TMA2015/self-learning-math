@@ -10757,14 +10757,14 @@
     "item_id": "THPT-TOP09-KFT32",
     "content_version": "TOP09-BANK-CP75-20261126-KFT32",
     "stem": "Với \\(f(x)=\\frac1x\\), \\(a=2\\), \\(dx=0{,}2\\): (a) kiểm miền từ \\(a\\) tới \\(a+dx\\); (b) tính vi phân \\(dy\\) và độ tăng thật \\(\\Delta y\\); (c) tìm \\(|\\Delta y-dy|\\) và giải thích vì sao vi phân chỉ là xấp xỉ.",
-    "answer_key": "Đoạn \\([2;2{,}2]\\) thuộc miền; \\(dy=-\\frac1{20}\\), \\(\\Delta y=-\\frac1{22}\\), sai số tuyệt đối \\(\\frac1{220}\\approx0{,}00455\\).",
-    "worked_solution": "Vì \\(f(x)=\\frac1x\\) có miền \\(x\\ne0\\), cả đoạn \\([2;2{,}2]\\) đều thuộc miền. Ta có \\(f'(x)=-\\frac1{x^2}\\), nên \\(dy=f'(2)\\,dx=(-\\frac14)(\\frac15)=-\\frac1{20}=-0{,}05\\). Độ tăng thật \\(\\Delta y=f(2{,}2)-f(2)=\\frac5{11}-\\frac12=-\\frac1{22}\\approx-0{,}04545\\). Sai số tuyệt đối \\(|\\Delta y-dy|=|-\\frac1{22}+\\frac1{20}|=\\frac1{220}\\approx0{,}00455\\). Cả hai độ tăng đều âm, nhưng ở bài này không bằng nhau khi bước \\(dx\\) hữu hạn.\n\nNếu em tính \\(dy\\) dương, kiểm dấu \\(f'(2)<0\\); nếu đặt \\(dy=\\Delta y\\), so hai phân số \\(-\\frac1{20}\\) và \\(-\\frac1{22}\\). Với mô hình xấp xỉ phải kiểm tính khả vi tại a và bước đủ nhỏ trong miền.\n\n\n**Kiểm lỗi**\n\nNếu cho rằng vi phân dy luôn bằng chính xác độ tăng Δy hoặc bỏ miền xác định, đọc **Kiến thức 5.8**, làm **Bài 50** (hàm phân thức, điều kiện mẫu) và **Bài 108** (tự tính sai số vi phân). Phân biệt xấp xỉ bậc nhất với độ tăng thật.",
+    "answer_key": "Đoạn \\([2;2{,}2]\\) thuộc miền; \\(dy=-\\frac1{20}\\), \\(\\Delta y=-\\frac1{22}\\), sai số tuyệt đối \\(\\frac1{220}\\approx0{,}00455\\). Vi phân chỉ giữ phần tuyến tính của độ tăng; sai số nhỏ dần so với độ lớn bước khi \\(dx\\to0\\).",
+    "worked_solution": "Vì \\(f(x)=\\frac1x\\) có miền \\(x\\ne0\\), cả đoạn \\([2;2{,}2]\\) đều thuộc miền. Ta có \\(f'(x)=-\\frac1{x^2}\\), nên \\(dy=f'(2)\\,dx=(-\\frac14)(\\frac15)=-\\frac1{20}=-0{,}05\\). Độ tăng thật \\(\\Delta y=f(2{,}2)-f(2)=\\frac5{11}-\\frac12=-\\frac1{22}\\approx-0{,}04545\\). Sai số tuyệt đối \\(|\\Delta y-dy|=|-\\frac1{22}+\\frac1{20}|=\\frac1{220}\\approx0{,}00455\\). Cả hai độ tăng đều âm, nhưng ở bài này không bằng nhau khi bước \\(dx\\) hữu hạn. Đặt \\(h=dx\\), với \\(\\lvert h\\rvert<1\\) để không gặp điểm \\(x=0\\). Khi đó \\(\\Delta y-dy=\\frac{1}{2+h}-\\frac12+\\frac h4=\\frac{h^2}{4(2+h)}\\). Chia sai số cho \\(\\lvert h\\rvert\\) (khi \\(h\\ne0\\)) được \\(\\frac{\\lvert h\\rvert}{4\\lvert2+h\\rvert}\\to0\\) khi \\(h\\to0\\). Đây là lý do vi phân xấp xỉ độ tăng thật ở bậc nhất, chứ không phải một đẳng thức.\n\nNếu em tính \\(dy\\) dương, kiểm dấu \\(f'(2)<0\\); nếu đặt \\(dy=\\Delta y\\), so hai phân số \\(-\\frac1{20}\\) và \\(-\\frac1{22}\\). Với mô hình xấp xỉ phải kiểm tính khả vi tại a và bước đủ nhỏ trong miền.\n\n\n**Kiểm lỗi**\n\nNếu cho rằng vi phân dy luôn bằng chính xác độ tăng Δy hoặc bỏ miền xác định, đọc **Kiến thức 5.8**, làm **Bài 50** (hàm phân thức, điều kiện mẫu) và **Bài 108** (tự tính sai số vi phân). Phân biệt xấp xỉ bậc nhất với độ tăng thật.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP09-O32"
     ],
-    "problem_type_id": null,
+    "problem_type_id": "TOP09-DIFFERENTIAL_LINEAR_APPROX",
     "difficulty": null,
     "hints": [],
     "rubric": null,
