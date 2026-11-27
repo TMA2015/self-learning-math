@@ -12016,7 +12016,7 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Nếu viết '\\(+\\infty\\)' cho \\(w_n=(-1)^n n\\), hãy liệt kê các số hạng chẵn và lẻ rồi xét giới hạn từng dãy con.\n\n\nNếu em cho rằng mọi dãy không hội tụ hữu hạn đều tiến ra vô cực có dấu, đọc lại **Kiến thức 1.2**, làm **Bài 2** (dao động chẵn/lẻ), **Bài 3** (tiến \\(-\\infty\\)) rồi **Bài 16** (dãy con có hai giới hạn khác nhau)."
+    "remediation": "Nếu viết '\\(+\\infty\\)' cho \\(w_n=(-1)^n n\\), hãy liệt kê các số hạng chẵn và lẻ rồi xét giới hạn từng dãy con.\n\n\nNếu em cho rằng mọi dãy không hội tụ hữu hạn đều tiến ra vô cực có dấu, đọc lại **Kiến thức 1.2**, làm **Bài 4** (dao động chẵn/lẻ), **Bài 2** (tiến \\(-\\infty\\)) rồi **Bài 16** (dãy con có hai giới hạn khác nhau)."
   },
   {
     "item_id": "THPT-TOP08-KFT03",
@@ -12032,7 +12032,7 @@
       "TOP08-O03"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "So cơ số với 1."
     ],
@@ -12074,7 +12074,7 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Nếu nhầm \\(q\\) âm với không hội tụ, so \\((-\\frac14)^n\\) và \\((-1)^n\\) qua \\(|q|\\).\n\n\nNếu nhầm lũy thừa cơ số âm có độ lớn nhỏ hơn 1 với dãy dao động không hội tụ, đọc **Kiến thức 1.3** rồi giải **Bài 4** và so sánh **Bài 2**. Hãy xét \\(|q|^n\\) trước, sau đó mới xét dấu."
+    "remediation": "Nếu nhầm \\(q\\) âm với không hội tụ, so \\((-\\frac14)^n\\) và \\((-1)^n\\) qua \\(|q|\\).\n\n\nNếu nhầm lũy thừa cơ số âm có độ lớn nhỏ hơn 1 với dãy dao động không hội tụ, đọc **Kiến thức 1.3** rồi giải **Bài 5** và so sánh **Bài 4**. Hãy xét \\(|q|^n\\) trước, sau đó mới xét dấu."
   },
   {
     "item_id": "THPT-TOP08-KFT04",
