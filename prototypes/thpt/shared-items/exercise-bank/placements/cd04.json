@@ -4,632 +4,1376 @@
     "role": "TOPIC_PRACTICE",
     "order": 1,
     "item_id": "THPT-G11-CHVI-B18-C01",
-    "outcome_id": "TOP04-O01"
+    "outcome_id": "TOP04-O01",
+    "legacy_order": 1,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 2,
     "item_id": "THPT-G11-CHVI-B18-C02",
-    "outcome_id": "TOP04-O02"
+    "outcome_id": "TOP04-O02",
+    "legacy_order": 2,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 3,
     "item_id": "THPT-G11-CHVI-B18-C03",
-    "outcome_id": "TOP04-O01"
+    "outcome_id": "TOP04-O01",
+    "legacy_order": 3,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 4,
     "item_id": "THPT-G11-CHVI-B18-C04",
-    "outcome_id": "TOP04-O03"
+    "outcome_id": "TOP04-O03",
+    "legacy_order": 4,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 5,
     "item_id": "THPT-G11-CHVI-B18-C05",
-    "outcome_id": "TOP04-O02"
+    "outcome_id": "TOP04-O02",
+    "legacy_order": 5,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 6,
     "item_id": "THPT-G11-CHVI-B18-P01",
-    "outcome_id": "TOP04-O04"
+    "outcome_id": "TOP04-O04",
+    "legacy_order": 6,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 7,
     "item_id": "THPT-G11-CHVI-B18-P02",
-    "outcome_id": "TOP04-O02"
+    "outcome_id": "TOP04-O02",
+    "legacy_order": 7,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 8,
     "item_id": "THPT-G11-CHVI-B18-P03",
-    "outcome_id": "TOP04-O02"
+    "outcome_id": "TOP04-O02",
+    "legacy_order": 8,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 9,
     "item_id": "THPT-G11-CHVI-B18-P04",
-    "outcome_id": "TOP04-O04"
+    "outcome_id": "TOP04-O04",
+    "legacy_order": 9,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 10,
     "item_id": "THPT-G11-CHVI-B18-P06",
-    "outcome_id": "TOP04-O04"
+    "outcome_id": "TOP04-O04",
+    "legacy_order": 10,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 11,
     "item_id": "THPT-G11-CHVI-B18-P07",
-    "outcome_id": "TOP04-O01"
+    "outcome_id": "TOP04-O01",
+    "legacy_order": 11,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
-    "role": "TOPIC_WRITTEN",
+    "role": "TOPIC_PRACTICE",
     "order": 12,
-    "item_id": "THPT-G11-CHVI-B18-W01",
-    "outcome_id": "TOP04-O04"
+    "item_id": "THPT-TOP04-P01",
+    "outcome_id": "TOP04-O01",
+    "legacy_order": 13,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 13,
-    "item_id": "THPT-TOP04-P01",
-    "outcome_id": "TOP04-O01"
+    "item_id": "THPT-TOP04-P02",
+    "outcome_id": "TOP04-O02",
+    "legacy_order": 14,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 14,
-    "item_id": "THPT-TOP04-P02",
-    "outcome_id": "TOP04-O02"
+    "item_id": "THPT-TOP04-P03",
+    "outcome_id": "TOP04-O03",
+    "legacy_order": 15,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 15,
-    "item_id": "THPT-TOP04-P03",
-    "outcome_id": "TOP04-O03"
+    "item_id": "THPT-TOP04-P04",
+    "outcome_id": "TOP04-O03",
+    "legacy_order": 16,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 16,
-    "item_id": "THPT-TOP04-P04",
-    "outcome_id": "TOP04-O03"
+    "item_id": "THPT-TOP04-P05",
+    "outcome_id": "TOP04-O04",
+    "legacy_order": 17,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
-    "role": "TOPIC_PRACTICE",
+    "role": "TOPIC_WRITTEN",
     "order": 17,
-    "item_id": "THPT-TOP04-P05",
-    "outcome_id": "TOP04-O04"
+    "item_id": "THPT-G11-CHVI-B18-W01",
+    "outcome_id": "TOP04-O04",
+    "legacy_order": 12,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 18,
     "item_id": "THPT-TOP04-W01",
-    "outcome_id": "TOP04-O04"
+    "outcome_id": "TOP04-O04",
+    "legacy_order": 18,
+    "group_id": "TOP04-G1",
+    "group_title": "Lũy thừa và điều kiện",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 19,
     "item_id": "THPT-G11-CHVI-B19-C01",
-    "outcome_id": "TOP04-O05"
+    "outcome_id": "TOP04-O05",
+    "legacy_order": 19,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 20,
     "item_id": "THPT-G11-CHVI-B19-C02",
-    "outcome_id": "TOP04-O05"
+    "outcome_id": "TOP04-O05",
+    "legacy_order": 20,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 21,
     "item_id": "THPT-G11-CHVI-B19-C03",
-    "outcome_id": "TOP04-O06"
+    "outcome_id": "TOP04-O06",
+    "legacy_order": 21,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 22,
     "item_id": "THPT-G11-CHVI-B19-P01",
-    "outcome_id": "TOP04-O07"
+    "outcome_id": "TOP04-O07",
+    "legacy_order": 22,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 23,
     "item_id": "THPT-G11-CHVI-B19-P02",
-    "outcome_id": "TOP04-O07"
+    "outcome_id": "TOP04-O07",
+    "legacy_order": 23,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 24,
     "item_id": "THPT-G11-CHVI-B19-P03",
-    "outcome_id": "TOP04-O05"
+    "outcome_id": "TOP04-O05",
+    "legacy_order": 24,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 25,
-    "item_id": "THPT-G11-CHVI-B19-P04",
-    "outcome_id": "TOP04-O06"
+    "item_id": "THPT-G11-CHVI-B19-P05",
+    "outcome_id": "TOP04-O08",
+    "legacy_order": 26,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 26,
-    "item_id": "THPT-G11-CHVI-B19-P05",
-    "outcome_id": "TOP04-O08"
+    "item_id": "THPT-TOP04-P06",
+    "outcome_id": "TOP04-O05",
+    "legacy_order": 29,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
-    "role": "TOPIC_WRITTEN",
+    "role": "TOPIC_PRACTICE",
     "order": 27,
-    "item_id": "THPT-G11-CHVI-B19-W01",
-    "outcome_id": "TOP04-O06"
+    "item_id": "THPT-TOP04-P09",
+    "outcome_id": "TOP04-O07",
+    "legacy_order": 32,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
-    "role": "TOPIC_WRITTEN",
+    "role": "TOPIC_PRACTICE",
     "order": 28,
-    "item_id": "THPT-G11-CHVI-B19-W02-ANCHOR",
-    "outcome_id": "TOP04-O07"
+    "item_id": "THPT-TOP04-P10",
+    "outcome_id": "TOP04-O08",
+    "legacy_order": 33,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 29,
-    "item_id": "THPT-TOP04-P06",
-    "outcome_id": "TOP04-O05"
+    "item_id": "THPT-TOP04-P11",
+    "outcome_id": "TOP04-O08",
+    "legacy_order": 34,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 30,
-    "item_id": "THPT-TOP04-P07",
-    "outcome_id": "TOP04-O06"
+    "item_id": "THPT-G11-CHVI-B19-P04",
+    "outcome_id": "TOP04-O06",
+    "legacy_order": 25,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 31,
-    "item_id": "THPT-TOP04-P08",
-    "outcome_id": "TOP04-O06"
+    "item_id": "THPT-TOP04-P07",
+    "outcome_id": "TOP04-O06",
+    "legacy_order": 30,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
-    "role": "TOPIC_PRACTICE",
+    "role": "TOPIC_WRITTEN",
     "order": 32,
-    "item_id": "THPT-TOP04-P09",
-    "outcome_id": "TOP04-O07"
+    "item_id": "THPT-G11-CHVI-B19-W01",
+    "outcome_id": "TOP04-O06",
+    "legacy_order": 27,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
-    "role": "TOPIC_PRACTICE",
+    "role": "TOPIC_WRITTEN",
     "order": 33,
-    "item_id": "THPT-TOP04-P10",
-    "outcome_id": "TOP04-O08"
+    "item_id": "THPT-G11-CHVI-B19-W02-ANCHOR",
+    "outcome_id": "TOP04-O07",
+    "legacy_order": 28,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 34,
-    "item_id": "THPT-TOP04-P11",
-    "outcome_id": "TOP04-O08"
+    "item_id": "THPT-TOP04-P08",
+    "outcome_id": "TOP04-O06",
+    "legacy_order": 31,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 35,
     "item_id": "THPT-TOP04-W02",
-    "outcome_id": "TOP04-O08"
+    "outcome_id": "TOP04-O08",
+    "legacy_order": 35,
+    "group_id": "TOP04-G2",
+    "group_title": "Lôgarit và các quy tắc",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 36,
     "item_id": "THPT-G11-CHVI-B20-C01",
-    "outcome_id": "TOP04-O09"
+    "outcome_id": "TOP04-O09",
+    "legacy_order": 36,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 37,
     "item_id": "THPT-G11-CHVI-B20-C02",
-    "outcome_id": "TOP04-O10"
+    "outcome_id": "TOP04-O10",
+    "legacy_order": 37,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 38,
     "item_id": "THPT-G11-CHVI-B20-C03",
-    "outcome_id": "TOP04-O11"
+    "outcome_id": "TOP04-O11",
+    "legacy_order": 38,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 39,
     "item_id": "THPT-G11-CHVI-B20-C04",
-    "outcome_id": "TOP04-O12"
+    "outcome_id": "TOP04-O12",
+    "legacy_order": 39,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 40,
     "item_id": "THPT-G11-CHVI-B20-P01",
-    "outcome_id": "TOP04-O11"
+    "outcome_id": "TOP04-O11",
+    "legacy_order": 40,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 41,
     "item_id": "THPT-G11-CHVI-B20-P02",
-    "outcome_id": "TOP04-O10"
+    "outcome_id": "TOP04-O10",
+    "legacy_order": 41,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 42,
-    "item_id": "THPT-G11-CHVI-B20-P03",
-    "outcome_id": "TOP04-O11"
+    "item_id": "THPT-TOP04-P12",
+    "outcome_id": "TOP04-O09",
+    "legacy_order": 46,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 43,
-    "item_id": "THPT-G11-CHVI-B20-P04",
-    "outcome_id": "TOP04-O12"
+    "item_id": "THPT-TOP04-P13",
+    "outcome_id": "TOP04-O09",
+    "legacy_order": 47,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
-    "role": "TOPIC_WRITTEN",
+    "role": "TOPIC_PRACTICE",
     "order": 44,
-    "item_id": "THPT-G11-CHVI-B20-W01",
-    "outcome_id": "TOP04-O12"
+    "item_id": "THPT-TOP04-P14",
+    "outcome_id": "TOP04-O10",
+    "legacy_order": 48,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
-    "role": "TOPIC_WRITTEN",
+    "role": "TOPIC_PRACTICE",
     "order": 45,
-    "item_id": "THPT-G11-CHVI-B20-W02-ANCHOR",
-    "outcome_id": "TOP04-O12"
+    "item_id": "THPT-TOP04-P15",
+    "outcome_id": "TOP04-O11",
+    "legacy_order": 49,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 46,
-    "item_id": "THPT-TOP04-P12",
-    "outcome_id": "TOP04-O09"
+    "item_id": "THPT-TOP04-P16",
+    "outcome_id": "TOP04-O12",
+    "legacy_order": 50,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 47,
-    "item_id": "THPT-TOP04-P13",
-    "outcome_id": "TOP04-O09"
+    "item_id": "THPT-G11-CHVI-B20-P03",
+    "outcome_id": "TOP04-O11",
+    "legacy_order": 42,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 48,
-    "item_id": "THPT-TOP04-P14",
-    "outcome_id": "TOP04-O10"
+    "item_id": "THPT-G11-CHVI-B20-P04",
+    "outcome_id": "TOP04-O12",
+    "legacy_order": 43,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
-    "role": "TOPIC_PRACTICE",
+    "role": "TOPIC_WRITTEN",
     "order": 49,
-    "item_id": "THPT-TOP04-P15",
-    "outcome_id": "TOP04-O11"
+    "item_id": "THPT-G11-CHVI-B20-W01",
+    "outcome_id": "TOP04-O12",
+    "legacy_order": 44,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
-    "role": "TOPIC_PRACTICE",
+    "role": "TOPIC_WRITTEN",
     "order": 50,
-    "item_id": "THPT-TOP04-P16",
-    "outcome_id": "TOP04-O12"
+    "item_id": "THPT-G11-CHVI-B20-W02-ANCHOR",
+    "outcome_id": "TOP04-O12",
+    "legacy_order": 45,
+    "group_id": "TOP04-G3",
+    "group_title": "Hàm số mũ, lôgarit và đồ thị",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 51,
     "item_id": "THPT-G11-CHVI-B21-C01",
-    "outcome_id": "TOP04-O13"
+    "outcome_id": "TOP04-O13",
+    "legacy_order": 51,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 52,
     "item_id": "THPT-G11-CHVI-B21-C02",
-    "outcome_id": "TOP04-O14"
+    "outcome_id": "TOP04-O14",
+    "legacy_order": 52,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 53,
     "item_id": "THPT-G11-CHVI-B21-C03",
-    "outcome_id": "TOP04-O15"
+    "outcome_id": "TOP04-O15",
+    "legacy_order": 53,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 54,
     "item_id": "THPT-G11-CHVI-B21-C04",
-    "outcome_id": "TOP04-O16"
+    "outcome_id": "TOP04-O16",
+    "legacy_order": 54,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 55,
     "item_id": "THPT-G11-CHVI-B21-P01",
-    "outcome_id": "TOP04-O13"
+    "outcome_id": "TOP04-O13",
+    "legacy_order": 55,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 56,
     "item_id": "THPT-G11-CHVI-B21-P02",
-    "outcome_id": "TOP04-O14"
+    "outcome_id": "TOP04-O14",
+    "legacy_order": 56,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 57,
     "item_id": "THPT-G11-CHVI-B21-P03",
-    "outcome_id": "TOP04-O15"
+    "outcome_id": "TOP04-O15",
+    "legacy_order": 57,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 58,
     "item_id": "THPT-G11-CHVI-B21-P04",
-    "outcome_id": "TOP04-O16"
+    "outcome_id": "TOP04-O16",
+    "legacy_order": 58,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 59,
-    "item_id": "THPT-G11-CHVI-B21-P07",
-    "outcome_id": "TOP04-O13"
+    "item_id": "THPT-TOP04-P17",
+    "outcome_id": "TOP04-O13",
+    "legacy_order": 60,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 60,
-    "item_id": "THPT-TOP04-P17",
-    "outcome_id": "TOP04-O13"
+    "item_id": "THPT-TOP04-P18",
+    "outcome_id": "TOP04-O14",
+    "legacy_order": 61,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 61,
-    "item_id": "THPT-TOP04-P18",
-    "outcome_id": "TOP04-O14"
+    "item_id": "THPT-TOP04-P19",
+    "outcome_id": "TOP04-O15",
+    "legacy_order": 62,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 62,
-    "item_id": "THPT-TOP04-P19",
-    "outcome_id": "TOP04-O15"
+    "item_id": "THPT-TOP04-P20",
+    "outcome_id": "TOP04-O16",
+    "legacy_order": 63,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 63,
-    "item_id": "THPT-TOP04-P20",
-    "outcome_id": "TOP04-O16"
+    "item_id": "THPT-G11-CHVI-B21-P07",
+    "outcome_id": "TOP04-O13",
+    "legacy_order": 59,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 64,
     "item_id": "THPT-TOP04-W03",
-    "outcome_id": "TOP04-O14"
+    "outcome_id": "TOP04-O14",
+    "legacy_order": 64,
+    "group_id": "TOP04-G4",
+    "group_title": "Phương trình, bất phương trình mũ và lôgarit",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 65,
     "item_id": "THPT-G11-CHVI-B18-P05",
-    "outcome_id": "TOP04-O17"
+    "outcome_id": "TOP04-O17",
+    "legacy_order": 65,
+    "group_id": "TOP04-G5",
+    "group_title": "Mô hình tăng giảm và tổng hợp",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 66,
-    "item_id": "THPT-G11-CHVI-B19-P06",
-    "outcome_id": "TOP04-O17"
+    "item_id": "THPT-G11-CHVI-B21-P05",
+    "outcome_id": "TOP04-O18",
+    "legacy_order": 67,
+    "group_id": "TOP04-G5",
+    "group_title": "Mô hình tăng giảm và tổng hợp",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 67,
-    "item_id": "THPT-G11-CHVI-B21-P05",
-    "outcome_id": "TOP04-O18"
+    "item_id": "THPT-TOP04-P21",
+    "outcome_id": "TOP04-O17",
+    "legacy_order": 73,
+    "group_id": "TOP04-G5",
+    "group_title": "Mô hình tăng giảm và tổng hợp",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 68,
-    "item_id": "THPT-G11-CHVI-B21-P06",
-    "outcome_id": "TOP04-O17"
+    "item_id": "THPT-G11-CHVI-B19-P06",
+    "outcome_id": "TOP04-O17",
+    "legacy_order": 66,
+    "group_id": "TOP04-G5",
+    "group_title": "Mô hình tăng giảm và tổng hợp",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 69,
-    "item_id": "THPT-G11-CHVI-B21-P08",
-    "outcome_id": "TOP04-O18"
+    "item_id": "THPT-G11-CHVI-B21-P06",
+    "outcome_id": "TOP04-O17",
+    "legacy_order": 68,
+    "group_id": "TOP04-G5",
+    "group_title": "Mô hình tăng giảm và tổng hợp",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
-    "role": "TOPIC_WRITTEN",
+    "role": "TOPIC_PRACTICE",
     "order": 70,
-    "item_id": "THPT-G11-CHVI-B18-W02-ANCHOR",
-    "outcome_id": "TOP04-O17"
+    "item_id": "THPT-G11-CHVI-B21-P08",
+    "outcome_id": "TOP04-O18",
+    "legacy_order": 69,
+    "group_id": "TOP04-G5",
+    "group_title": "Mô hình tăng giảm và tổng hợp",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 71,
-    "item_id": "THPT-G11-CHVI-B21-W01",
-    "outcome_id": "TOP04-O18"
+    "item_id": "THPT-G11-CHVI-B18-W02-ANCHOR",
+    "outcome_id": "TOP04-O17",
+    "legacy_order": 70,
+    "group_id": "TOP04-G5",
+    "group_title": "Mô hình tăng giảm và tổng hợp",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 72,
-    "item_id": "THPT-G11-CHVI-B21-W02-ANCHOR",
-    "outcome_id": "TOP04-O17"
+    "item_id": "THPT-G11-CHVI-B21-W01",
+    "outcome_id": "TOP04-O18",
+    "legacy_order": 71,
+    "group_id": "TOP04-G5",
+    "group_title": "Mô hình tăng giảm và tổng hợp",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
-    "role": "TOPIC_PRACTICE",
+    "role": "TOPIC_WRITTEN",
     "order": 73,
-    "item_id": "THPT-TOP04-P21",
-    "outcome_id": "TOP04-O17"
+    "item_id": "THPT-G11-CHVI-B21-W02-ANCHOR",
+    "outcome_id": "TOP04-O17",
+    "legacy_order": 72,
+    "group_id": "TOP04-G5",
+    "group_title": "Mô hình tăng giảm và tổng hợp",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 74,
     "item_id": "THPT-TOP04-P22",
-    "outcome_id": "TOP04-O18"
+    "outcome_id": "TOP04-O18",
+    "legacy_order": 74,
+    "group_id": "TOP04-G5",
+    "group_title": "Mô hình tăng giảm và tổng hợp",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD04:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 75,
     "item_id": "THPT-TOP04-W04",
-    "outcome_id": "TOP04-O17"
+    "outcome_id": "TOP04-O17",
+    "legacy_order": 75,
+    "group_id": "TOP04-G5",
+    "group_title": "Mô hình tăng giảm và tổng hợp",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 1,
-    "item_id": "THPT-G11-CHVI-B18-C01"
+    "item_id": "THPT-G11-CHVI-B18-C01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 2,
-    "item_id": "THPT-G11-CHVI-B18-C02"
+    "item_id": "THPT-G11-CHVI-B18-C02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 3,
-    "item_id": "THPT-G11-CHVI-B18-C04"
+    "item_id": "THPT-G11-CHVI-B18-C04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 4,
-    "item_id": "THPT-G11-CHVI-B18-P01"
+    "item_id": "THPT-G11-CHVI-B18-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 5,
-    "item_id": "THPT-G11-CHVI-B19-C01"
+    "item_id": "THPT-G11-CHVI-B19-C01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 6,
-    "item_id": "THPT-G11-CHVI-B19-C03"
+    "item_id": "THPT-G11-CHVI-B19-C03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 7,
-    "item_id": "THPT-G11-CHVI-B19-P01"
+    "item_id": "THPT-G11-CHVI-B19-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 8,
-    "item_id": "THPT-G11-CHVI-B19-P05"
+    "item_id": "THPT-G11-CHVI-B19-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 9,
-    "item_id": "THPT-G11-CHVI-B20-C01"
+    "item_id": "THPT-G11-CHVI-B20-C01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 10,
-    "item_id": "THPT-G11-CHVI-B20-C02"
+    "item_id": "THPT-G11-CHVI-B20-C02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 11,
-    "item_id": "THPT-G11-CHVI-B20-C03"
+    "item_id": "THPT-G11-CHVI-B20-C03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 12,
-    "item_id": "THPT-G11-CHVI-B20-C04"
+    "item_id": "THPT-G11-CHVI-B20-C04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 13,
-    "item_id": "THPT-G11-CHVI-B21-C01"
+    "item_id": "THPT-G11-CHVI-B21-C01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 14,
-    "item_id": "THPT-G11-CHVI-B21-C02"
+    "item_id": "THPT-G11-CHVI-B21-C02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 15,
-    "item_id": "THPT-G11-CHVI-B21-C03"
+    "item_id": "THPT-G11-CHVI-B21-C03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 16,
-    "item_id": "THPT-G11-CHVI-B21-C04"
+    "item_id": "THPT-G11-CHVI-B21-C04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 17,
-    "item_id": "THPT-G11-CHVI-B18-P05"
+    "item_id": "THPT-G11-CHVI-B18-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD04:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 18,
-    "item_id": "THPT-G11-CHVI-B21-P05"
+    "item_id": "THPT-G11-CHVI-B21-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   }
 ]
