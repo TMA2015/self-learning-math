@@ -280,7 +280,7 @@ with sync_playwright() as pw:
                         expect(active).to_have_count(1)
                         if width == 820 and engine == "chromium":
                             audit_visible_math(active, f"CĐ{topic} Knowledge {i+1}.{j+1}")
-                            if topic == "19" and i == 2 and j in (0, 1):
+                            if not REFRESH and topic == "19" and i == 2 and j in (0, 1):
                                 repaired = active.locator('sup[data-topic-rw1-original]')
                                 assert repaired.count() >= 3, ("CĐ19_SIGNED_NEWTON_INLINE_TEX", i, j)
                                 expect(repaired.first).to_be_visible(timeout=15000)
@@ -367,7 +367,11 @@ with sync_playwright() as pw:
                     "21": [("2", "2-1", "[P(L)=")],
                     "22": [("3", "3-1", "[R_g="), ("3", "3-2", "[IQR_g=")],
                 }
-                for module_id, subtab_id, literal in reported_display_formulas[topic]:
+                # Signed refreshed inline TeX must be verified in its actual source mode.
+                targets = reported_display_formulas[topic]
+                if REFRESH and topic == "19":
+                    targets = [("3", "3-1", "[(a+b)^n=")] + targets
+                for module_id, subtab_id, literal in targets:
                     page.locator('[data-topic-w1-module-tab="' + module_id + '"]').click()
                     page.locator('[data-topic-w1-subtab="' + subtab_id + '"]').click()
                     current_panel = page.locator(".thpt-r4-knowledge-content-panel:visible")
@@ -378,11 +382,34 @@ with sync_playwright() as pw:
                       .map(n => n.nodeValue.slice(0, 220))""", literal)
                     assert not orphan_literals, (engine, topic, width, subtab_id,
                                                  "OWNER_P1_RAW_DISPLAY_MATH", orphan_literals)
-                    recovered = current_panel.locator('[data-topic-rw1-display="1"][data-topic-rw1-original^="["]')
-                    assert recovered.count() >= 1, (engine, topic, width, subtab_id,
-                                                     "DISPLAY_MATH_WRAPPER_MISSING", literal)
-                    expect(recovered.first.locator("mjx-container")).to_have_count(1, timeout=12000)
-                    expect(recovered.first.locator("mjx-container").first).to_be_visible(timeout=12000)
+                    if REFRESH:
+                        source = (ROOT/f"docs/thpt-preview/chuyen-de/cd{topic}/kien-thuc.md").read_text(encoding="utf-8")
+                        heading = "### " + subtab_id.replace("-", ".") + "."
+                        section = source.split(heading, 1)[1].split("\n### ", 1)[0]
+                        normalize = lambda value: re.sub(r"\s+", "", html.unescape(value))
+                        signed = [(normalize(x or y), bool(y))
+                                  for line in section.splitlines() if line.startswith(">")
+                                  for x, y in re.findall(r"\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]", line)
+                                  if normalize(x or y).startswith(normalize(literal[1:]))]
+                        assert len(signed) == 1, (topic, subtab_id, "SIGNED_FORMULA_TARGET", signed)
+                        tex, display = signed[0]
+                        page.wait_for_function(r"""({tex, display}) => {
+                          const panel = [...document.querySelectorAll('.thpt-r4-knowledge-content-panel')]
+                            .find(e => e.getClientRects().length && !e.closest('[hidden]'));
+                          const math = window.MathJax?.startup?.document?.math;
+                          return !!panel && !!math && [...math].some(i =>
+                            i.typesetRoot && panel.contains(i.typesetRoot) &&
+                            i.typesetRoot.getClientRects().length &&
+                            !i.typesetRoot.closest('[hidden],details:not([open])') &&
+                            !i.typesetRoot.querySelector('mjx-merror') &&
+                            i.math.replace(/\s+/g,'') === tex && !!i.display === display);
+                        }""", arg={"tex": tex, "display": display}, timeout=12000)
+                    else:
+                        recovered = current_panel.locator('[data-topic-rw1-display="1"][data-topic-rw1-original^="["]')
+                        assert recovered.count() >= 1, (engine, topic, width, subtab_id,
+                                                         "DISPLAY_MATH_WRAPPER_MISSING", literal)
+                        expect(recovered.first.locator("mjx-container")).to_have_count(1, timeout=12000)
+                        expect(recovered.first.locator("mjx-container").first).to_be_visible(timeout=12000)
                 load("luyen-tap")
                 cards = page.locator("[data-topic-w1-practice-card]")
                 expect(cards).to_have_count(practice_groups)
