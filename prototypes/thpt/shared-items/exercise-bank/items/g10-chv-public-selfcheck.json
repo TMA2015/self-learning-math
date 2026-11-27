@@ -1,18 +1,28 @@
 [
   {
     "item_id": "THPT-G10-CHV-RD1-01",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Một phép đo được ghi bằng số gần đúng `a=80` (đơn vị thích hợp) với độ chính xác `d=2`; chưa biết số đúng `\\bar a`. Kết luận nào sau đây **chắc chắn đúng**?\nA. Sai số tuyệt đối bằng 2.\nB. Số đúng nằm trong đoạn [78;82] và sai số tương đối không vượt quá 2,5%.\nC. Sai số tương đối bằng 2,5%.\nD. Sai số tương đối bằng `2/|\\bar a|`.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-01",
+    "stem": "Một phép đo được ghi bằng số gần đúng `a=80` (đơn vị thích hợp) với độ chính xác `d=2`; chưa biết số đúng `\\bar a`. Kết luận nào sau đây **chắc chắn đúng**? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "B.",
     "worked_solution": "`\\Delta_a≤2` nên `78≤\\bar a≤82`; vì `a=80≠0`, `\\delta_a=\\Delta_a/80≤2/80=2,5%`. Bất đẳng thức không cho phép kết luận bằng 2 hoặc 2,5%.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B12-APPROX_CONCEPT",
+      "G10-B12-ABS_ERROR",
+      "G10-B12-REL_ERROR"
+    ],
     "original_outcome_text": "APPROX_CONCEPT, ABS_ERROR, REL_ERROR.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng độ chính xác làm cận trên, không thay sai số thực bằng cận."
+    ],
     "rubric": "1 điểm MCQ; chỉ chọn B.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -36,22 +46,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Số đúng thuộc [78;82], sai số tương đối không vượt quá 2,5%."
+      },
+      {
+        "id": "B",
+        "text": "Sai số tuyệt đối bằng 2."
+      },
+      {
+        "id": "C",
+        "text": "Sai số tương đối bằng 2,5%."
+      },
+      {
+        "id": "D",
+        "text": "Sai số tương đối bằng \\(\\frac2{|\\bar a|}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-02",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Hai thiết bị cùng đo một chiều dài chưa biết `\\bar a`. Thiết bị I ghi `40,0 ± 0,3 cm`; thiết bị II ghi `40,5 ± 0,4 cm`. Hai kết quả có **thể cùng đúng** về số thật hay không? Xác định toàn bộ đoạn các giá trị của số đúng thỏa cả hai phép đo.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-02",
+    "stem": "Hai thiết bị cùng đo một chiều dài chưa biết `\\bar a`. Thiết bị I ghi `40,0 ± 0,3 cm`; thiết bị II ghi `40,5 ± 0,4 cm`. Hai kết quả có **thể cùng đúng** về số thật hay không? Xác định toàn bộ đoạn các giá trị của số đúng thỏa cả hai phép đo. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "Có thể; `\\bar a∈[40,1;40,3] cm`.",
     "worked_solution": "I cho `[39,7;40,3]`, II cho `[40,1;40,9]`. Giao hai đoạn là `[40,1;40,3]`, không rỗng, nên có thể là hai đo đạc của cùng một độ dài.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B12-APPROX_CONCEPT",
+      "G10-B12-ABS_ERROR"
+    ],
     "original_outcome_text": "APPROX_CONCEPT, ABS_ERROR.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm giao hai đoạn sai số."
+    ],
     "rubric": "2đ: hai khoảng đúng (1); giao đúng và diễn giải (1).",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -75,22 +113,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có thể; \\([39{,}7;40{,}9]\\) cm."
+      },
+      {
+        "id": "B",
+        "text": "Có thể; \\([40{,}1;40{,}3]\\) cm."
+      },
+      {
+        "id": "C",
+        "text": "Có thể; \\([40{,}3;40{,}5]\\) cm."
+      },
+      {
+        "id": "D",
+        "text": "Không thể vì hai số gần đúng khác nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-03",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Hai phép đo chiều dài của **cùng** một vật cho `a_1=50,3 cm, d_1=0,2 cm` và `a_2=50,1 cm, d_2=0,15 cm`. (a) Hãy tìm đoạn chung mà số đúng có thể thuộc. (b) Xét **cận trên sai số tương đối** `d_i/|a_i|`, phép đo nào cho cận nhỏ hơn? Giải thích vì sao không thể suy ra sai số tương đối thực của mỗi phép đo chỉ từ `d_i`.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-03",
+    "stem": "Hai phép đo chiều dài của **cùng** một vật cho `a_1=50,3 cm, d_1=0,2 cm` và `a_2=50,1 cm, d_2=0,15 cm`. (a) Hãy tìm đoạn chung mà số đúng có thể thuộc. (b) Xét **cận trên sai số tương đối** `d_i/|a_i|`, phép đo nào cho cận nhỏ hơn? Giải thích vì sao không thể suy ra sai số tương đối thực của mỗi phép đo chỉ từ `d_i`. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "(a) `[50,1;50,25] cm`. (b) Phép II: `0,15/50,1 < 0,2/50,3`; thực tế chỉ có cận.",
     "worked_solution": "Khoảng I `[50,1;50,5]`, khoảng II `[49,95;50,25]`; giao `[50,1;50,25]`. So sánh `0,15×50,3=7,545` với `0,2×50,1=10,02` suy ra cận II nhỏ hơn. `\\Delta_{a_i}≤d_i` không khẳng định dấu bằng.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B12-ABS_ERROR",
+      "G10-B12-REL_ERROR"
+    ],
     "original_outcome_text": "ABS_ERROR, REL_ERROR.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Lấy giao hai đoạn và so hai tỉ số độ chính xác trên số gần đúng."
+    ],
     "rubric": "4đ: hai khoảng (1); giao (1); bất đẳng thức cận (1); phân biệt cận và sai số thực (1).",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -114,22 +180,51 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\([49{,}95;50{,}5]\\) cm; II có cận nhỏ hơn."
+      },
+      {
+        "id": "B",
+        "text": "\\([50{,}1;50{,}25]\\) cm; I có cận nhỏ hơn."
+      },
+      {
+        "id": "C",
+        "text": "\\([50{,}1;50{,}25]\\) cm; II có cận nhỏ hơn, chưa biết sai số thực."
+      },
+      {
+        "id": "D",
+        "text": "\\([50{,}1;50{,}25]\\) cm; sai số thực của II chắc chắn nhỏ hơn."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-04",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Biết số đúng `\\bar a=23,746`. Xét các khẳng định:\n(a) Làm tròn đến hàng phần trăm nhận số gần đúng `a=23,75`.\n(b) Sai số tuyệt đối của phép làm tròn ở (a) là `0,004`.\n(c) Sai số tương đối của phép làm tròn ở (a) bằng `0,004/23,746`.\n(d) Làm tròn đến hàng phần mười được `23,7`, sai số tuyệt đối không vượt `0,05`.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-04",
+    "stem": "Biết số đúng `\\bar a=23,746`. Xét các khẳng định:\n(a) Làm tròn đến hàng phần trăm nhận số gần đúng `a=23,75`.\n(b) Sai số tuyệt đối của phép làm tròn ở (a) là `0,004`.\n(c) Sai số tương đối của phép làm tròn ở (a) bằng `0,004/23,746`.\n(d) Làm tròn đến hàng phần mười được `23,7`, sai số tuyệt đối không vượt `0,05`. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "(a) Đ; (b) Đ; (c) S; (d) Đ.",
     "worked_solution": "`|23,75-23,746|=0,004`; mẫu số tính sai số tương đối là `|a|=23,75` theo SGK, không phải số đúng. Làm tròn đến 0,1 được 23,7, sai số `0,046≤0,05`.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B12-ROUNDING",
+      "G10-B12-ABS_ERROR",
+      "G10-B12-REL_ERROR"
+    ],
     "original_outcome_text": "ROUNDING, ABS_ERROR, REL_ERROR.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính sai số tuyệt đối từ số đúng; mẫu số của sai số tương đối theo SGK là số gần đúng."
+    ],
     "rubric": "4 ý, mỗi ý 1đ, không phản hồi trước Final Submit.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "TRUE_FALSE_GROUP"
     },
@@ -153,22 +248,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đ, Đ, Đ, S"
+      },
+      {
+        "id": "B",
+        "text": "Đ, S, S, Đ"
+      },
+      {
+        "id": "C",
+        "text": "S, Đ, S, Đ"
+      },
+      {
+        "id": "D",
+        "text": "Đ, Đ, S, Đ"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-05",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Một số gần đúng `a=240` khác 0. Cần bảo đảm cận sai số tương đối `d/|a|` **không vượt quá 0,5%**. Độ chính xác `d` phải thỏa bất đẳng thức nào? Tìm giá trị `d` lớn nhất có thể chọn theo điều kiện này.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-05",
+    "stem": "Một số gần đúng `a=240` khác 0. Cần bảo đảm cận sai số tương đối `d/|a|` **không vượt quá 0,5%**. Độ chính xác `d` phải thỏa bất đẳng thức nào? Tìm giá trị `d` lớn nhất có thể chọn theo điều kiện này. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "`0≤d≤1,2`; tối đa `d=1,2`.",
     "worked_solution": "`d≥0`; `d/240≤0,005` suy ra `d≤1,2`. Đây là ràng buộc lên độ chính xác, không có nghĩa sai số tuyệt đối thực bằng 1,2.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B12-REL_ERROR"
+    ],
     "original_outcome_text": "REL_ERROR.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Đổi 0,5% thành số thập phân rồi nhân với 240."
+    ],
     "rubric": "2đ: lập bất đẳng thức đúng (1), giải và diễn giải (1).",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -192,22 +314,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(0\\le d\\le1{,}2\\); lớn nhất 1,2."
+      },
+      {
+        "id": "B",
+        "text": "\\(0\\le d\\le12\\); lớn nhất 12."
+      },
+      {
+        "id": "C",
+        "text": "\\(d\\ge1{,}2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(0\\le d\\le0{,}12\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-06",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Hai phép đo thuộc những đại lượng có cùng đơn vị: I `a_1=50`, `d_1=0,2`; II `a_2=75`, `d_2=0,25`. Phép đo nào có **cận sai số tương đối** nhỏ hơn?\nA. I, vì d_1 nhỏ hơn d_2.\nB. Hai phép đo bằng nhau.\nC. II, vì 0,25/75 < 0,2/50.\nD. Không thể so cận vì chưa biết số đúng.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-06",
+    "stem": "Hai phép đo thuộc những đại lượng có cùng đơn vị: I `a_1=50`, `d_1=0,2`; II `a_2=75`, `d_2=0,25`. Phép đo nào có **cận sai số tương đối** nhỏ hơn? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "C.",
     "worked_solution": "I `0,2/50=0,4%`, II `0,25/75=1/300≈0,3333%`. Dù d_2 lớn hơn, cận tỷ lệ II nhỏ hơn. So cận được mà không cần biết sai số thực.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B12-REL_ERROR"
+    ],
     "original_outcome_text": "REL_ERROR.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So hai tỉ số, không chỉ so tử số."
+    ],
     "rubric": "MCQ 1đ, chọn C.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -231,22 +380,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, vì độ chính xác I nhỏ hơn."
+      },
+      {
+        "id": "B",
+        "text": "II, vì \\(\\frac{0{,}25}{75}<\\frac{0{,}2}{50}\\)."
+      },
+      {
+        "id": "C",
+        "text": "Hai phép đo có cùng cận."
+      },
+      {
+        "id": "D",
+        "text": "Không thể so cận khi chưa biết số đúng."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-07",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Năm phép đo có các giá trị `4,7,8,k,11` và trung bình bằng `8`. Giá trị k là bao nhiêu?\nA. 8. B. 9. C. 10. D. 12.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-07",
+    "stem": "Năm phép đo có các giá trị `4,7,8,k,11` và trung bình bằng `8`. Giá trị k là bao nhiêu? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "C.",
     "worked_solution": "Tổng phải là `5×8=40`. Tổng bốn số đã biết `4+7+8+11=30`; `k=40-30=10`.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B13-MEAN"
+    ],
     "original_outcome_text": "MEAN.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính tổng cần đạt rồi trừ tổng các số đã biết."
+    ],
     "rubric": "MCQ 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -270,22 +446,52 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "8"
+      },
+      {
+        "id": "B",
+        "text": "9"
+      },
+      {
+        "id": "C",
+        "text": "10"
+      },
+      {
+        "id": "D",
+        "text": "12"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-08",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Bảng tần số ghi giá trị `2` xuất hiện 3 lần, giá trị `4` xuất hiện 2 lần và giá trị `8` xuất hiện 1 lần. Hãy (a) tìm số trung bình, (b) tìm trung vị `Q_2`, (c) tìm `Q_1,Q_3` theo cách chia nửa của KNTT, và (d) chỉ ra mốt.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-08",
+    "stem": "Bảng tần số ghi giá trị `2` xuất hiện 3 lần, giá trị `4` xuất hiện 2 lần và giá trị `8` xuất hiện 1 lần. Hãy (a) tìm số trung bình, (b) tìm trung vị `Q_2`, (c) tìm `Q_1,Q_3` theo cách chia nửa của KNTT, và (d) chỉ ra mốt. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "Số trung bình `11/3`, `Q_2=3`, `Q_1=2`, `Q_3=4`, mốt `2`.",
     "worked_solution": "Dãy tăng `2,2,2,4,4,8`, n=6, tổng 22; số trung bình `22/6=11/3`; Q2=(2+4)/2=3; nửa dưới `2,2,2` cho Q1=2, nửa trên `4,4,8` cho Q3=4; 2 có tần số 3 lớn nhất.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B13-MEAN",
+      "G10-B13-MEDIAN",
+      "G10-B13-QUARTILES",
+      "G10-B13-MODE"
+    ],
     "original_outcome_text": "MEAN, MEDIAN, QUARTILES, MODE.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Viết đủ sáu quan sát rồi tính trung bình, trung vị và trung vị hai nửa."
+    ],
     "rubric": "4đ: dựng dãy/tần số (1), trung bình (1), trung vị/tứ phân vị (1), mốt (1).",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -309,22 +515,51 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\bar x=\\frac{14}{3}, Q_2=3,Q_1=2,Q_3=4\\); mốt 2."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\bar x=\\frac{11}{3},Q_2=4,Q_1=2,Q_3=4\\); mốt 4."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\bar x=\\frac{11}{3},Q_2=3,Q_1=2,Q_3=8\\); mốt 8."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\bar x=\\frac{11}{3}, Q_2=3,Q_1=2,Q_3=4\\); mốt 2."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-09",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Với mẫu đã sắp `1,2,4,6,8,10,12`, thay **duy nhất** số 6 ở chính giữa bằng số 7. Hãy so sánh `Q_1,Q_2,Q_3` trước/sau thay đổi theo quy tắc KNTT. Giải thích vì sao không phải cả ba tứ phân vị đều đổi.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-09",
+    "stem": "Với mẫu đã sắp `1,2,4,6,8,10,12`, thay **duy nhất** số 6 ở chính giữa bằng số 7. Hãy so sánh `Q_1,Q_2,Q_3` trước/sau thay đổi theo quy tắc KNTT. Giải thích vì sao không phải cả ba tứ phân vị đều đổi. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "Ban đầu `(Q1,Q2,Q3)=(2,6,10)`; sau `(2,7,10)`.",
     "worked_solution": "n=7, tách nửa dưới `1,2,4` và trên `8,10,12`, không dùng giá trị giữa; Q1=2 Q3=10 bất biến, chỉ Q2 từ 6 thành 7.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B13-MEDIAN",
+      "G10-B13-QUARTILES",
+      "G10-B13-INTERPRETATION"
+    ],
     "original_outcome_text": "MEDIAN, QUARTILES, INTERPRETATION.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Xét vị trí giữa và hai nửa sau khi thay số."
+    ],
     "rubric": "3đ: phân nửa đúng (1); cả hai bộ số đúng (1); diễn giải biến động (1).",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -348,22 +583,52 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(2;6;10) → (2;7;10); chỉ trung vị đổi."
+      },
+      {
+        "id": "B",
+        "text": "(2;6;10) → (3;7;11); cả ba đổi."
+      },
+      {
+        "id": "C",
+        "text": "(2;6;10) → (2;6;10); không đổi."
+      },
+      {
+        "id": "D",
+        "text": "(2;6;10) → (2;7;11); hai giá trị đổi."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-10",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Mẫu `2,2,3,5,8,10,30` (đã sắp). Đánh giá:\n(a) Trung vị là 5.\n(b) Số trung bình là `60/7`.\n(c) Mốt duy nhất là 30.\n(d) Thay duy nhất 30 bằng 9 (rồi sắp lại) làm trung vị thay đổi.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-10",
+    "stem": "Mẫu `2,2,3,5,8,10,30` (đã sắp). Đánh giá:\n(a) Trung vị là 5.\n(b) Số trung bình là `60/7`.\n(c) Mốt duy nhất là 30.\n(d) Thay duy nhất 30 bằng 9 (rồi sắp lại) làm trung vị thay đổi. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "(a) Đ; (b) Đ; (c) S; (d) S.",
     "worked_solution": "Tổng 60, n=7; phần tử thứ tư là 5; mốt là 2 vì xuất hiện hai lần. Sau thay đổi dãy `2,2,3,5,8,9,10` vẫn có trung vị là 5.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B13-MEAN",
+      "G10-B13-MEDIAN",
+      "G10-B13-MODE",
+      "G10-B13-INTERPRETATION"
+    ],
     "original_outcome_text": "MEAN, MEDIAN, MODE, INTERPRETATION.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính tổng và xem vị trí giữa của mẫu đã sắp."
+    ],
     "rubric": "4 ý, mỗi ý 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "TRUE_FALSE_GROUP"
     },
@@ -387,22 +652,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đ, S, S, Đ"
+      },
+      {
+        "id": "B",
+        "text": "Đ, Đ, S, S"
+      },
+      {
+        "id": "C",
+        "text": "Đ, Đ, Đ, S"
+      },
+      {
+        "id": "D",
+        "text": "S, Đ, S, Đ"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-11",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Trong bảng tần số có giá trị `1` xuất hiện 2 lần, `3` xuất hiện k lần, `5` xuất hiện 4 lần. Biết tổng số quan sát bằng 11. Hãy tìm k, mốt duy nhất và số trung bình.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-11",
+    "stem": "Trong bảng tần số có giá trị `1` xuất hiện 2 lần, `3` xuất hiện k lần, `5` xuất hiện 4 lần. Biết tổng số quan sát bằng 11. Hãy tìm k, mốt duy nhất và số trung bình. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "`k=5`, mốt `3`, số trung bình `37/11`.",
     "worked_solution": "`2+k+4=11` nên `k=5`; vì 5 lớn hơn 4 và 2, mốt duy nhất là 3. Tổng có trọng số `1×2+3×5+5×4=37`; số trung bình `37/11`.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B13-MEAN",
+      "G10-B13-MODE"
+    ],
     "original_outcome_text": "MEAN, MODE.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng tổng tần số, rồi tính trung bình có trọng số."
+    ],
     "rubric": "3đ: k (1); mốt (1); trung bình (1).",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -426,22 +719,52 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(k=5\\); mốt 5; trung bình \\(\\frac{37}{11}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(k=7\\); mốt 3; trung bình \\(\\frac{43}{13}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(k=5\\); mốt 3; trung bình \\(\\frac{37}{11}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(k=5\\); mốt 3; trung bình 3."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-12",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Mẫu A đã sắp `2,4,6,8,10,12,14`; mẫu B thay **duy nhất** giá trị lớn nhất của A là 14 bằng 70. So sánh trung bình, trung vị, `Q1`, `Q3` hai mẫu và giải thích tại sao một số đặc trưng bị ảnh hưởng mạnh còn các đặc trưng khác giữ nguyên.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-12",
+    "stem": "Mẫu A đã sắp `2,4,6,8,10,12,14`; mẫu B thay **duy nhất** giá trị lớn nhất của A là 14 bằng 70. So sánh trung bình, trung vị, `Q1`, `Q3` hai mẫu và giải thích tại sao một số đặc trưng bị ảnh hưởng mạnh còn các đặc trưng khác giữ nguyên. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "Số trung bình A: 8; B: 16; cả hai có Q1=4, Q2=8, Q3=12.",
     "worked_solution": "Tổng A=56; tổng B=56−14+70=112 nên số trung bình lần lượt là 8 và 16. Hai mẫu đều có n=7, nửa dưới `2,4,6` và nửa trên `10,12,14` hoặc `10,12,70`; do đó Q1=4, Q2=8, Q3=12 không đổi. Số trung bình chịu ảnh hưởng mạnh bởi giá trị lớn bất thường.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B13-MEAN",
+      "G10-B13-MEDIAN",
+      "G10-B13-QUARTILES",
+      "G10-B13-INTERPRETATION"
+    ],
     "original_outcome_text": "MEAN, MEDIAN, QUARTILES, INTERPRETATION.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Xem tổng thay đổi bao nhiêu và các vị trí trung vị có thay đổi không."
+    ],
     "rubric": "4đ: hai số trung bình (1); trung vị (1); Q1/Q3 (1); giải thích (1).",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -465,22 +788,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trung bình 8 và 16; cả ba tứ phân vị tăng."
+      },
+      {
+        "id": "B",
+        "text": "Trung bình cả hai bằng 8; Q3 của B là 70."
+      },
+      {
+        "id": "C",
+        "text": "Trung bình 8 và 14; cả hai có Q1=4, Q2=8, Q3=12."
+      },
+      {
+        "id": "D",
+        "text": "Trung bình 8 và 16; cả hai có Q1=4, Q2=8, Q3=12."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-13",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Với `t≥0`, mẫu gồm ba số `5−t,5,5+t` có phương sai (chia n theo SGK) bằng 6. Giá trị t là bao nhiêu?\nA. 1. B. 2. C. 3. D. 6.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-13",
+    "stem": "Với `t≥0`, mẫu gồm ba số `5−t,5,5+t` có phương sai (chia n theo SGK) bằng 6. Giá trị t là bao nhiêu? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "C.",
     "worked_solution": "Số trung bình bằng 5; phương sai `(t²+0+t²)/3=2t²/3=6` nên `t²=9`. Vì t≥0, `t=3`.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B14-VARIANCE"
+    ],
     "original_outcome_text": "VARIANCE.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính phương sai bằng hai bình phương độ lệch chia 3; lấy t không âm."
+    ],
     "rubric": "MCQ 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -504,22 +854,52 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "2"
+      },
+      {
+        "id": "D",
+        "text": "6"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-14",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Mẫu A đo bằng cm là `1,3,5,7`; mẫu B được tạo bằng cách **cộng 3 cm vào từng giá trị của A**. Xác định số trung bình, khoảng biến thiên, IQR, phương sai và độ lệch chuẩn của A, B; chỉ ra đại lượng nào không đổi khi cộng cùng một hằng số.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-14",
+    "stem": "Mẫu A đo bằng cm là `1,3,5,7`; mẫu B được tạo bằng cách **cộng 3 cm vào từng giá trị của A**. Xác định số trung bình, khoảng biến thiên, IQR, phương sai và độ lệch chuẩn của A, B; chỉ ra đại lượng nào không đổi khi cộng cùng một hằng số. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "Số trung bình A: 4 cm, B: 7 cm; cả hai có khoảng biến thiên 6 cm, khoảng tứ phân vị 4 cm, phương sai 5 cm², độ lệch chuẩn `√5 cm`.",
     "worked_solution": "B là `4,6,8,10`. A có Q1=(1+3)/2=2, Q3=(5+7)/2=6; B có Q1=5, Q3=9, khoảng tứ phân vị bằng 4 cm ở cả hai. Độ lệch của các giá trị A so với số trung bình 4 là `−3,−1,1,3`, nên phương sai `(9+1+1+9)/4=5 cm²`. Cộng 3 cm vào từng giá trị đồng thời làm số trung bình tăng 3 cm, vì vậy độ lệch không đổi; phương sai B cũng bằng 5 cm², độ lệch chuẩn bằng √5 cm. Khoảng biến thiên của cả hai mẫu đều bằng 6 cm.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B14-RANGE_IQR",
+      "G10-B14-VARIANCE",
+      "G10-B14-STDDEV",
+      "G10-B14-COMPARISON"
+    ],
     "original_outcome_text": "RANGE_IQR, VARIANCE, STDDEV, COMPARISON.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Cộng hằng số làm dịch trung bình nhưng không đổi các độ lệch khỏi trung bình."
+    ],
     "rubric": "4đ: hai số trung bình (1); khoảng biến thiên và khoảng tứ phân vị (1); phương sai và độ lệch chuẩn (1); giải thích tính bất biến (1).",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -543,22 +923,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trung bình 4 và 7 cm; phương sai B bằng 8, còn A bằng 5."
+      },
+      {
+        "id": "B",
+        "text": "Trung bình 4 và 7 cm; cả hai có \\(R=6\\,\\mathrm{cm},\\Delta_Q=4\\,\\mathrm{cm},s^2=5\\,\\mathrm{cm}^2,s=\\sqrt5\\,\\mathrm{cm}\\)."
+      },
+      {
+        "id": "C",
+        "text": "Trung bình cả hai bằng 4; R và IQR tăng 3 cm."
+      },
+      {
+        "id": "D",
+        "text": "Trung bình 4 và 7 cm; phương sai cả hai bằng 20."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-15",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Với **mẫu tham chiếu cố định** `2,4,4,6,6,8,8,10`, hãy tính Q1, Q3, IQR và xác định ngưỡng bất thường theo hàng rào `1,5 IQR`. Bốn giá trị mới `14,15,−2,−3` được **đánh giá theo hàng rào của mẫu tham chiếu**, KHÔNG bổ sung vào mẫu để tính lại tứ phân vị. Trong bốn giá trị đó, giá trị nào là bất thường? Giải thích trường hợp đúng bằng ngưỡng.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-15",
+    "stem": "Với **mẫu tham chiếu cố định** `2,4,4,6,6,8,8,10`, hãy tính Q1, Q3, IQR và xác định ngưỡng bất thường theo hàng rào `1,5 IQR`. Bốn giá trị mới `14,15,−2,−3` được **đánh giá theo hàng rào của mẫu tham chiếu**, KHÔNG bổ sung vào mẫu để tính lại tứ phân vị. Trong bốn giá trị đó, giá trị nào là bất thường? Giải thích trường hợp đúng bằng ngưỡng. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "Q1=4, Q3=8, IQR=4, hai ngưỡng `−2` và `14`; bất thường `15,−3`, không bất thường `14,−2`.",
     "worked_solution": "n=8, nửa dưới `2,4,4,6` ⇒ Q1=4; nửa trên `6,8,8,10` ⇒ Q3=8. IQR=4; ngưỡng dưới = 4−1,5×4=−2, ngưỡng trên = 8+1,5×4=14. Theo bất đẳng thức **nghiêm ngặt** (`x<−2` hoặc `x>14`), chỉ −3 và 15 bất thường so với mẫu tham chiếu.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B14-RANGE_IQR",
+      "G10-B14-OUTLIERS"
+    ],
     "original_outcome_text": "RANGE_IQR, OUTLIERS.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Giữ nguyên mẫu tham chiếu; giá trị đúng bằng hàng rào không nằm ngoài hàng rào."
+    ],
     "rubric": "4đ: Q1/Q3 (1); IQR/ngưỡng (1); phân loại 4 giá trị (1); giải thích dấu nghiêm ngặt (1).",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -582,22 +990,51 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Q1=4, Q3=8, IQR=4; hàng rào −2,14; cả bốn bất thường."
+      },
+      {
+        "id": "B",
+        "text": "Q1=4, Q3=8, IQR=4; hàng rào 4,8; cả bốn bất thường."
+      },
+      {
+        "id": "C",
+        "text": "Q1=4, Q3=8, IQR=4; hàng rào −2,14; chỉ 15 và −3 bất thường."
+      },
+      {
+        "id": "D",
+        "text": "Q1=4, Q3=8, IQR=4; hàng rào −4,16; không có giá trị bất thường."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-16",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Mẫu A (đơn vị cm) là `2,4,6,8`, mẫu B nhân đôi từng giá trị trong A. Ghi Đúng/Sai:\n(a) Phương sai A là `5 cm²`.\n(b) Phương sai B bằng `10 cm²`.\n(c) Độ lệch chuẩn B gấp hai lần độ lệch chuẩn A.\n(d) IQR của hai mẫu bằng nhau.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-16",
+    "stem": "Mẫu A (đơn vị cm) là `2,4,6,8`, mẫu B nhân đôi từng giá trị trong A. Ghi Đúng/Sai:\n(a) Phương sai A là `5 cm²`.\n(b) Phương sai B bằng `10 cm²`.\n(c) Độ lệch chuẩn B gấp hai lần độ lệch chuẩn A.\n(d) IQR của hai mẫu bằng nhau. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "(a) Đ; (b) S; (c) Đ; (d) S.",
     "worked_solution": "Số trung bình của A bằng 5 cm, s²_A=(9+1+1+9)/4=5 cm²; B=(4,8,12,16) nên s²_B=4s²_A=20 cm²; s_B=2s_A. A Q1=3,Q3=7,IQR=4; B Q1=6,Q3=14,IQR=8.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B14-RANGE_IQR",
+      "G10-B14-VARIANCE",
+      "G10-B14-STDDEV"
+    ],
     "original_outcome_text": "RANGE_IQR, VARIANCE, STDDEV.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Nhân đôi độ lệch thì bình phương độ lệch tăng bốn lần."
+    ],
     "rubric": "4 ý, mỗi ý 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "TRUE_FALSE_GROUP"
     },
@@ -621,22 +1058,52 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đ, Đ, Đ, S"
+      },
+      {
+        "id": "B",
+        "text": "Đ, S, S, Đ"
+      },
+      {
+        "id": "C",
+        "text": "S, Đ, Đ, Đ"
+      },
+      {
+        "id": "D",
+        "text": "Đ, S, Đ, S"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-17",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Cho mẫu A `4,6,8,10,12` (cm); tạo mẫu B bằng quy tắc `b_i=8+2(a_i−8)` cho từng quan sát tương ứng. Hãy tìm (a) mẫu B, (b) số trung bình và phương sai của A và B, (c) tỷ số hai độ lệch chuẩn và hai khoảng biến thiên; giải thích bằng biến đổi dữ liệu.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-17",
+    "stem": "Cho mẫu A `4,6,8,10,12` (cm); tạo mẫu B bằng quy tắc `b_i=8+2(a_i−8)` cho từng quan sát tương ứng. Hãy tìm (a) mẫu B, (b) số trung bình và phương sai của A và B, (c) tỷ số hai độ lệch chuẩn và hai khoảng biến thiên; giải thích bằng biến đổi dữ liệu. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "B=`0,4,8,12,16`; cả hai có số trung bình 8 cm; s²_A=8 cm², s²_B=32 cm²; s_B/s_A=2, R_B/R_A=2.",
     "worked_solution": "Các độ lệch của A so với số trung bình 8 là `−4,−2,0,2,4`; s²_A=(16+4+0+4+16)/5=8 cm². Theo công thức biến đổi, B có các giá trị `0,4,8,12,16` và số trung bình vẫn bằng 8 cm. Các độ lệch của B gấp đôi nên s²_B=4×8=32 cm² và s_B=2s_A. Khoảng biến thiên A là 12−4=8 cm; B là 16−0=16 cm; tỷ số R_B/R_A=2.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B14-RANGE_IQR",
+      "G10-B14-VARIANCE",
+      "G10-B14-STDDEV",
+      "G10-B14-COMPARISON"
+    ],
     "original_outcome_text": "RANGE_IQR, VARIANCE, STDDEV, COMPARISON.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Biến đổi từng độ lệch khỏi 8, rồi xét bình phương và khoảng biến thiên."
+    ],
     "rubric": "4đ: mẫu B (1); hai số trung bình (1); hai phương sai (1); hai tỷ số và giải thích (1).",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -660,22 +1127,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "B=(0;4;8;12;16); hai trung bình 8; \\(s_A^2=8,s_B^2=32\\); hai tỉ số đều 2."
+      },
+      {
+        "id": "B",
+        "text": "Cùng mẫu B; hai trung bình 8; \\(s_B^2=16\\); hai tỉ số đều 2."
+      },
+      {
+        "id": "C",
+        "text": "B=(8;12;16;20;24); trung bình B là 16; hai tỉ số đều 2."
+      },
+      {
+        "id": "D",
+        "text": "B=(0;4;8;12;16); hai phương sai bằng nhau; hai tỉ số bằng 1."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHV-RD1-18",
-    "content_version": "efc16a92ac7c168d34b2353276137d13a25478008e4e5e42817135e153eb111e",
-    "stem": "Mẫu A gồm `1,3,5` có số trung bình bằng 3. Thêm **một quan sát mới bằng đúng số trung bình là 3** để nhận mẫu B có 4 số. Tính phương sai theo SGK của A và B, giải thích vì sao thêm một quan sát đúng bằng trung bình lại làm phương sai giảm.",
+    "content_version": "SGK-G10-CHV-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHV-RD1-18",
+    "stem": "Mẫu A gồm `1,3,5` có số trung bình bằng 3. Thêm **một quan sát mới bằng đúng số trung bình là 3** để nhận mẫu B có 4 số. Tính phương sai theo SGK của A và B, giải thích vì sao thêm một quan sát đúng bằng trung bình lại làm phương sai giảm. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "`s²_A=8/3`, `s²_B=2`.",
     "worked_solution": "Cả hai mẫu có số trung bình bằng 3. Tổng bình phương độ lệch `4+0+4=8` không đổi do quan sát mới 3 có độ lệch bằng 0. Nhưng số quan sát n tăng từ 3 lên 4 nên phương sai giảm từ 8/3 xuống 8/4=2. Theo công thức SGK, mẫu số là n, không phải n−1.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B14-VARIANCE"
+    ],
     "original_outcome_text": "VARIANCE.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Trung bình không đổi; quan sát thêm có độ lệch bằng 0."
+    ],
     "rubric": "3đ: số trung bình của hai mẫu và tổng bình phương độ lệch (1); s²_A (1); s²_B và giải thích số quan sát tăng (1).",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -699,6 +1193,25 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(s_A^2=\\frac83,s_B^2=\\frac83\\); thêm trung bình không đổi phương sai."
+      },
+      {
+        "id": "B",
+        "text": "\\(s_A^2=\\frac83,s_B^2=2\\); tổng bình phương độ lệch không đổi, số quan sát tăng."
+      },
+      {
+        "id": "C",
+        "text": "\\(s_A^2=2,s_B^2=\\frac83\\); phương sai tăng."
+      },
+      {
+        "id": "D",
+        "text": "\\(s_A^2=\\frac83,s_B^2=0\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
