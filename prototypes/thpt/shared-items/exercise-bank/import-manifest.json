@@ -21664,6 +21664,48 @@
       "limitations": "Scoped AUTHOR_SELF_VERIFIED; no fresh S1 PDF, no full Academic/PED/Written PASS; no new figure. G10 CHVIII-TRY12 empty skill tag observed; do not guess linkage. Written B26 independence implicit rather than stated; targeted follow-up without editing published projection.",
       "next": "G11 ChI–III, remaining chapters, then empty skill mappings and Written/interaction follow-up.",
       "release_authorization": false
+    },
+    "coverage_depth_cp116": {
+      "base": "faecb74273aeac2441805ec529172b827b29e96c",
+      "head": "98f8a725b1c2646c79ac3b5ff686c864a7152163",
+      "scope": "G11 ChI–III",
+      "review": {
+        "sgk_stems_keys": 133,
+        "written_projections": 14,
+        "note": "Read stems/keys and targeted solutions, chapter source snapshots, actual Written projections; not full academic verdict."
+      },
+      "shards": [
+        {
+          "path": "items/g11-chi.json",
+          "sha": "700e0c33cf6328cf1702445883a03981a71ff8d2"
+        },
+        {
+          "path": "items/g11-chii.json",
+          "sha": "ebc5303387b1b1908ed4ff991b64e33c0525173e"
+        },
+        {
+          "path": "items/g11-chiii.json",
+          "sha": "428950806abc7b17f789c81cfbec0e31d70a6051"
+        }
+      ],
+      "changes": [
+        {
+          "id": "THPT-G11-B03-P04",
+          "reason": "Partition [0,5pi/2] into three maximal monotone branches; compare sin(3pi/4)>sin(5pi/4); counterexample to endpoint inference x=pi/2,pi."
+        },
+        {
+          "id": "THPT-G11-B06-P08",
+          "reason": "Inverse capacity S_n=n(n+19), S14=462,S15=510; strictly increasing integer sequence gives minimum 15 and no exact 500."
+        },
+        {
+          "id": "THPT-G11-B08-P06",
+          "reason": "Threshold on group boundary gives exact count 2; internal threshold 4 gives attainable bounds 2,4, demonstrated by two explicit integer samples."
+        }
+      ],
+      "verification": "3/133 changed, 130 unchanged; all non-content fields, skill IDs and placements preserved, math delimiters balanced. SGK Practice and CD06 O10, CD07 O10, CD22 G11-B08-INTERPRETATION respectively; relevant placement blobs unchanged. Historical chapter blobs 256ceb5edc5e02aec320e83e99c8e08e035654f3, 2101e2a248e0cf53ee11847b913b937cebcd0806, 4ea8df2ca2682d9fac8b1556852334af336930a5; Written 61ccb1d3c6242bd96c8db1948d100906b90d5afc, 2ddde229be6ee78855a244b08f63b6b9f5184220, 7642de8c885faaff932a58233bf812a141efcbfc.",
+      "limitations": "Scoped AUTHOR_SELF_VERIFIED three revisions only; no fresh S1 PDF, independent review or full Academic/PED/Written PASS. G11-B04-KFT01 empty skill mapping observed; preserve until source-based reconciliation. No new figure; other topic placements not exhaustively checked in this checkpoint.",
+      "next": "Reconcile remaining G11 coverage against CP107–110 and CP116; then targeted empty mappings, Written wording and interaction classification.",
+      "release_authorization": false
     }
   }
 }
