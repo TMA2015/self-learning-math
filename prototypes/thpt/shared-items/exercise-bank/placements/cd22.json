@@ -896,54 +896,63 @@
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 1,
-    "item_id": "THPT-G10-B12-P01"
+    "item_id": "THPT-G10-B12-P01",
+    "outcome_id": "G10-B12-REL_ERROR"
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 2,
-    "item_id": "THPT-G10-B13-P03"
+    "item_id": "THPT-G10-B13-P03",
+    "outcome_id": "G10-B13-MODE"
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 3,
-    "item_id": "THPT-G10-B14-P05"
+    "item_id": "THPT-G10-B14-P05",
+    "outcome_id": "G10-B14-STDDEV"
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 4,
-    "item_id": "THPT-G11-B08-P03"
+    "item_id": "THPT-G11-B08-P03",
+    "outcome_id": "G11-B08-FREQUENCY-TABLE"
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 5,
-    "item_id": "THPT-G11-B09-P02"
+    "item_id": "THPT-G11-B09-P02",
+    "outcome_id": "G11-B09-GROUPED-MEDIAN"
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 6,
-    "item_id": "THPT-G11-B09-P04"
+    "item_id": "THPT-G11-B09-P04",
+    "outcome_id": "G11-B09-GROUPED-MODE"
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 7,
-    "item_id": "THPT-G12-B09-P04"
+    "item_id": "THPT-G12-B09-P04",
+    "outcome_id": "G12-CHIII-B09-O02"
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 8,
-    "item_id": "THPT-G12-B10-P04"
+    "item_id": "THPT-G12-B10-P04",
+    "outcome_id": "G12-CHIII-B10-O02"
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 9,
-    "item_id": "THPT-G12-B10-P08"
+    "item_id": "THPT-G12-B10-P08",
+    "outcome_id": "G12-CHIII-B10-O04"
   }
 ]
