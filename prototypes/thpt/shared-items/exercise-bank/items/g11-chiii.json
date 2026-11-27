@@ -312,16 +312,17 @@
   {
     "item_id": "THPT-G11-B08-P06",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Hai mẫu gồm 2, 3, 4 và 2, 2, 4 đều được ghép vào hai nhóm \\([0;3),[3;6)\\). Hai mẫu có cùng bảng tần số ghép nhóm không?",
-    "answer_key": "Không: tần số mẫu thứ nhất 1; 2, mẫu thứ hai 2; 1.",
-    "worked_solution": "Mẫu thứ nhất: chỉ số 2 ở nhóm đầu, số 3 và 4 ở nhóm sau, nên tần số là 1, 2. Mẫu thứ hai: hai số 2 ở nhóm đầu, số 4 ở nhóm sau, nên tần số là 2, 1. Dùng cùng khoảng nhóm không bảo đảm cùng bảng tần số.",
+    "stem": "Một mẫu gồm 5 số nguyên không âm được ghép vào ba nhóm \\([0;3),[3;6),[6;9)\\), có tần số lần lượt 1, 2, 2. (a) Có bao nhiêu quan sát chắc chắn không nhỏ hơn 6? (b) Số quan sát không nhỏ hơn 4 có thể ít nhất và nhiều nhất là bao nhiêu? (c) Hãy dựng hai mẫu có cùng bảng tần số đã cho nhưng lần lượt đạt hai số lượng ở (b).",
+    "answer_key": "(a) 2. (b) Ít nhất 2, nhiều nhất 4. (c) Ví dụ hai mẫu \\(1,3,3,6,7\\) và \\(1,4,5,6,7\\).",
+    "worked_solution": "Nhóm \\([6;9)\\) chứa đúng 2 quan sát và cả hai đều không nhỏ hơn 6; hai nhóm trước chỉ chứa giá trị nhỏ hơn 6. Vậy (a) có đúng 2 quan sát. Với ngưỡng 4, cả hai quan sát của nhóm \\([6;9)\\) chắc chắn đạt ngưỡng, còn quan sát của nhóm \\([0;3)\\) chắc chắn không đạt. Hai quan sát ở nhóm \\([3;6)\\) có thể bằng 3 (không đạt) hoặc bằng 4, 5 (đạt); bảng ghép nhóm không cho biết cụ thể. Do đó ít nhất 2 và nhiều nhất 4 quan sát đạt ngưỡng. Mẫu \\(1,3,3,6,7\\) có tần số 1, 2, 2 và đúng 2 quan sát không nhỏ hơn 4. Mẫu \\(1,4,5,6,7\\) cũng có tần số 1, 2, 2 nhưng có 4 quan sát không nhỏ hơn 4. Hai ví dụ chứng minh cả hai giới hạn đều có thể đạt. Khi ngưỡng nằm bên trong một nhóm thay vì đúng biên nhóm, thường không thể xác định chính xác số quan sát đạt ngưỡng chỉ từ bảng ghép nhóm.",
     "skill_ids": [
       "G11-B08-INTERPRETATION"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đếm riêng số quan sát dưới 3 và từ 3 đến dưới 6."
+      "Xem từng nhóm: mọi giá trị đạt ngưỡng, không giá trị nào đạt, hay chỉ một phần có thể đạt?",
+      "Để đạt hai giới hạn, chọn các số của nhóm giữa lần lượt dưới 4 và không dưới 4."
     ],
     "rubric": null,
     "interaction": {
@@ -338,7 +339,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu kết luận hai mẫu giống nhau do cùng miền, đếm từng nhóm. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
+    "remediation": "Bảng ghép nhóm giữ số lượng trong từng khoảng nhưng không giữ từng giá trị. Kiểm ngưỡng trùng biên nhóm hay nằm trong nhóm trước khi kết luận số lượng. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
   },
   {
     "item_id": "THPT-G11-B08-P07",
