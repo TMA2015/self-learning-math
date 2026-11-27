@@ -253,7 +253,7 @@ Original human-readable solutions below are for learner-controlled self-compare 
 **Rubric /4:** (a) 1 điểm mô hình rời rạc; (b) 1 điểm k và lí do; (c) 1 điểm tính và làm tròn hợp lí; (d) 1 điểm nêu giới hạn. Chấp nhận cách giải tương đương.
 
 ### THPT-G11-SUPP-E02-W01 | skill_id=G11-E02-LINE_PLANE_MEASURE | placement=SGK_WRITTEN | role=WRITTEN
-**Đề tự luận:** Cọc thẳng đứng cao \(1{,}8\,\mathrm m\), bóng trên nền phẳng dài \(2{,}4\,\mathrm m\). (a) Vẽ tam giác vuông, gắn nhãn. (b) Nêu hình chiếu của đoạn tia sáng từ đỉnh cọc đến đầu bóng trên nền. (c) Tính góc giữa tia sáng và nền. (d) Nêu điều kiện đo.
+**Đề tự luận:** Cọc thẳng đứng cao \(1{,}8\,\mathrm m\), bóng trên nền phẳng nằm ngang dài \(2{,}4\,\mathrm m\). (a) Vẽ tam giác vuông, gắn nhãn. (b) Nêu hình chiếu của đoạn tia sáng từ đỉnh cọc đến đầu bóng trên nền. (c) Tính góc giữa tia sáng và nền. (d) Nêu điều kiện đo.
 **Lời giải chuẩn để mở sau tự thử:** (a) Gọi A là chân cọc, B là đỉnh cọc, C là đầu bóng. Tam giác ABC vuông tại A, \(AB=1{,}8\,\mathrm m\), \(AC=2{,}4\,\mathrm m\). (b) B chiếu xuống A, C nằm trên nền; đoạn BC chiếu thành AC, chính là đoạn bóng. (c) Góc giữa tia và nền là \(\theta=\widehat{BCA}\). Ta có \(\tan\theta=\frac{1{,}8}{2{,}4}=0{,}75\), suy ra \(\theta\approx36{,}87^\circ\). (d) Nền phẳng nằm ngang, cọc vuông góc nền, bóng và chiều cao đo đúng cùng điều kiện chiếu sáng.
 **Rubric /4:** (a) 1 điểm tam giác và nhãn đúng; (b) 1 điểm hình chiếu AC; (c) 1 điểm góc và tính toán; (d) 1 điểm điều kiện. Chấp nhận hình vẽ và cách tính tương đương.
 
