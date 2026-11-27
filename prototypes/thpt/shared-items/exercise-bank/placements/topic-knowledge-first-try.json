@@ -2913,35 +2913,105 @@
     "role": "TOPIC_FIRST_TRY",
     "order": 1,
     "item_id": "THPT-TOP06-KFT01",
-    "outcome_id": "TOP06-O01"
+    "outcome_id": "TOP06-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B01-C01",
+        "THPT-TOP06-P01"
+      ],
+      "practice_orders": [
+        1,
+        8
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 2,
     "item_id": "THPT-TOP06-KFT02",
-    "outcome_id": "TOP06-O02"
+    "outcome_id": "TOP06-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B01-C02",
+        "THPT-TOP06-P02"
+      ],
+      "practice_orders": [
+        2,
+        9
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 3,
     "item_id": "THPT-TOP06-KFT03",
-    "outcome_id": "TOP06-O03"
+    "outcome_id": "TOP06-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B01-P03",
+        "THPT-TOP06-P03"
+      ],
+      "practice_orders": [
+        4,
+        12
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 4,
     "item_id": "THPT-TOP06-KFT04",
-    "outcome_id": "TOP06-O04"
+    "outcome_id": "TOP06-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B01-P01",
+        "THPT-TOP06-P04"
+      ],
+      "practice_orders": [
+        5,
+        10
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 5,
     "item_id": "THPT-TOP06-KFT05",
-    "outcome_id": "TOP06-O05"
+    "outcome_id": "TOP06-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B01-P05",
+        "THPT-TOP06-P05"
+      ],
+      "practice_orders": [
+        6,
+        7
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
@@ -2956,16 +3026,30 @@
       "line": 242,
       "original_item_id": null,
       "mapping": "SAME_MATHEMATICAL_TASK_REUSE_SGK_PRACTICE_ID",
-      "remediation": "Không cộng trực tiếp sin của hai góc; khai triển đủ hai tích của công thức cộng. Làm Bài 12 và Bài 25.",
+      "remediation": "Không cộng trực tiếp sin của hai góc; khai triển đủ hai tích của công thức cộng. Làm Bài 15 và Bài 23.",
       "practice_orders": [
-        12,
-        25
+        15,
+        23
       ],
       "original_practice_orders": [
         12,
         25
       ],
       "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B02-C01",
+        "THPT-TOP06-P06"
+      ],
+      "practice_orders": [
+        15,
+        23
+      ]
     }
   },
   {
@@ -2973,70 +3057,220 @@
     "role": "TOPIC_FIRST_TRY",
     "order": 7,
     "item_id": "THPT-TOP06-KFT07",
-    "outcome_id": "TOP06-O07"
+    "outcome_id": "TOP06-O07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B02-C02",
+        "THPT-G11-B02-P04"
+      ],
+      "practice_orders": [
+        16,
+        20
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 8,
     "item_id": "THPT-TOP06-KFT08",
-    "outcome_id": "TOP06-O08"
+    "outcome_id": "TOP06-O08",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B03-C01",
+        "THPT-TOP06-P08"
+      ],
+      "practice_orders": [
+        28,
+        39
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 9,
     "item_id": "THPT-TOP06-KFT09",
-    "outcome_id": "TOP06-O09"
+    "outcome_id": "TOP06-O09",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B03-C03",
+        "THPT-TOP06-P09"
+      ],
+      "practice_orders": [
+        30,
+        42
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 10,
     "item_id": "THPT-TOP06-KFT10",
-    "outcome_id": "TOP06-O10"
+    "outcome_id": "TOP06-O10",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B03-P02",
+        "THPT-TOP06-P10",
+        "THPT-G11-B03-P03"
+      ],
+      "practice_orders": [
+        33,
+        40,
+        34
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 11,
     "item_id": "THPT-TOP06-KFT11",
-    "outcome_id": "TOP06-O11"
+    "outcome_id": "TOP06-O11",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B03-P06",
+        "THPT-G11-B03-P07",
+        "THPT-TOP06-P11"
+      ],
+      "practice_orders": [
+        37,
+        38,
+        41
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 12,
     "item_id": "THPT-TOP06-KFT12",
-    "outcome_id": "TOP06-O12"
+    "outcome_id": "TOP06-O12",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B04-C01",
+        "THPT-G11-B04-C02",
+        "THPT-TOP06-P12"
+      ],
+      "practice_orders": [
+        43,
+        44,
+        53
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 13,
     "item_id": "THPT-TOP06-KFT13",
-    "outcome_id": "TOP06-O13"
+    "outcome_id": "TOP06-O13",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B04-C03",
+        "THPT-G11-B04-C04",
+        "THPT-TOP06-P13"
+      ],
+      "practice_orders": [
+        45,
+        46,
+        54
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 14,
     "item_id": "THPT-TOP06-KFT14",
-    "outcome_id": "TOP06-O14"
+    "outcome_id": "TOP06-O14",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-TOP06-P14",
+        "THPT-G11-B04-P08"
+      ],
+      "practice_orders": [
+        55,
+        60
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 15,
     "item_id": "THPT-TOP06-KFT15",
-    "outcome_id": "TOP06-O15"
+    "outcome_id": "TOP06-O15",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-G11-B04-P06",
+        "THPT-G11-B04-P07",
+        "THPT-TOP06-P15"
+      ],
+      "practice_orders": [
+        50,
+        51,
+        56
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD06:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 16,
     "item_id": "THPT-TOP06-KFT16",
-    "outcome_id": "TOP06-O16"
+    "outcome_id": "TOP06-O16",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "related_practice_item_ids": [
+        "THPT-TOP06-P16",
+        "THPT-G11-B04-P09"
+      ],
+      "practice_orders": [
+        64,
+        61
+      ]
+    }
   },
   {
     "collection": "TOPIC:CD07:KNOWLEDGE_FIRST_TRY",
