@@ -541,7 +541,7 @@ role: TOPIC_WRITTEN
 written_role: DEEP_ANCHOR (role tag only, not cloned canonical)
 problem_family_id: TOP10-ASYMPTOTE_FULL_RATIONAL
 difficulty_band: TRANSFER
-content_version: 2
+content_version: 3
 **Đề bài:** Cho \(f(x)=\frac{2x^2+3}{x+1}\). (a) Tìm tập xác định. (b) Chia đa thức thành đường xiên và phần dư. (c) Tính giới hạn một phía tại điểm loại và chứng minh tiệm cận đứng. (d) Chứng minh tiệm cận xiên và giải thích vì sao điểm loại không phải điểm khuyết có thể khử.
 
 **Đáp án:** \(D=\mathbb R\setminus\{-1\}\); \(f(x)=2x-2+\frac5{x+1}\); đứng \(x=-1\), xiên \(y=2x-2\).
