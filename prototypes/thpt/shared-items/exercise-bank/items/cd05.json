@@ -1109,7 +1109,7 @@
     "hints": [
       "Thay \\(-x\\) vào toàn bộ biểu thức."
     ],
-    "remediation": "Nếu nhầm −f(x), thay −x vào mọi chỗ của x. Ôn TOP05-M11; luyện THPT-TOP05-P21.",
+    "remediation": "Nếu nhầm \\(-f(x)\\), thay \\(-x\\) vào mọi chỗ của \\(x\\). Ôn TOP05-M11; luyện THPT-TOP05-P21.",
     "rubric": null,
     "interaction": {
       "type": "SINGLE_CHOICE",
