@@ -1202,57 +1202,64 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 ### THPT-G11-CHVII-B26-W01 | skill_id=`G11-B26-POINT_PLANE` | placement=`SGK_WRITTEN` | role=`WRITTEN`
 
-**Đề:** Điểm M ngoài (P), H là hình chiếu, MH=5cm; K∈(P), HK=12cm. Tính MK và chứng minh MH là khoảng cách ngắn nhất từ M tới (P).
+**Đề:** Cho điểm M nằm ngoài mặt phẳng \((P)\), H là hình chiếu vuông góc của M lên \((P)\), \(MH=5\,\mathrm{cm}\). Điểm K thuộc \((P)\) thỏa mãn \(HK=12\,\mathrm{cm}\). Tính MK và chứng minh MH là khoảng cách ngắn nhất từ M đến \((P)\).
 
-**Bài giải tự đối chiếu sau khi tự làm:** MK=13cm; với mọi K trong P, MK²=MH²+HK²≥MH²; MH ngắn nhất.
+**Bài giải tự đối chiếu sau khi tự làm:** Vì \(MH\perp(P)\), nên \(MH\perp HK\). Tam giác MHK vuông tại H, do đó \(MK=\sqrt{5^2+12^2}=13\,\mathrm{cm}\). Với điểm N bất kì thuộc \((P)\) và khác H, tam giác MHN vuông tại H nên \(MN^2=MH^2+HN^2>MH^2\), suy ra \(MN>MH\). Khi \(N=H\), đoạn nối có độ dài MH. Vậy \(d(M,(P))=MH=5\,\mathrm{cm}\), đạt duy nhất tại H.
 
 **Rubric 4 điểm:**
-1. Nêu MH⊥(P) (1) — **1 điểm**.
-2. Dựng tam giác MHK vuông tại H (1) — **1 điểm**.
-3. Tính MK=13 (1) — **1 điểm**.
-4. Chứng minh bất đẳng thức cho mọi K∈(P) (1) — **1 điểm**.
+1. Nêu đúng \(MH\perp(P)\) — **1 điểm**.
+2. Xác định tam giác MHK vuông tại H — **1 điểm**.
+3. Tính \(MK=13\,\mathrm{cm}\) — **1 điểm**.
+4. So sánh với mọi điểm N thuộc \((P)\), kết luận MH ngắn nhất — **1 điểm**.
 
 
 
 ### THPT-G11-CHVII-B26-W02-ANCHOR | skill_id=`G11-B26-SKEW_COMMON_PERP` | placement=`SGK_WRITTEN` | role=`ANCHOR_TAG`
 
-**Đề:** a={(t,0,0)}, b={(5,s,4)} (t,s thực) là hai đường chéo nhau. Chỉ ra hai chân nối, chứng minh đoạn nối vuông góc chung và tính khoảng cách.
+**Đề:** Trong hệ trục tọa độ vuông góc Oxyz, hai đường thẳng \(a=\{(t;0;0)\mid t\in\mathbb R\}\) và \(b=\{(5;s;4)\mid s\in\mathbb R\}\) chéo nhau. Xác định hai đầu mút của đoạn vuông góc chung, chứng minh và tính khoảng cách giữa a và b. Có thể hình dung a theo phương Ox và b theo phương Oy.
 
-**Bài giải tự đối chiếu sau khi tự làm:** A=(5,0,0)∈a, B=(5,0,4)∈b; AB phương Oz vuông góc cả Ox và Oy; d=4.
+**Bài giải tự đối chiếu sau khi tự làm:** Chọn \(A=(5;0;0)\in a\) (ứng với \(t=5\)) và \(B=(5;0;4)\in b\) (ứng với \(s=0\)). Vì A và B có cùng hoành độ, tung độ, đoạn AB song song trục Oz. Ba trục tọa độ vuông góc từng đôi một nên \(AB\perp a\) và \(AB\perp b\). Vậy AB là đoạn vuông góc chung. Hai điểm chỉ khác cao độ nên \(d(a,b)=AB=4\) (đơn vị độ dài).
 
 **Rubric 4 điểm:**
-1. Chọn đúng A∈a (1) — **1 điểm**.
-2. Chọn đúng B∈b (1) — **1 điểm**.
-3. Chứng minh AB⊥a và ⊥b (1) — **1 điểm**.
-4. Tính AB=4 (1) — **1 điểm**.
+1. Chọn đúng \(A=(5;0;0)\in a\) — **1 điểm**.
+2. Chọn đúng \(B=(5;0;4)\in b\) — **1 điểm**.
+3. Giải thích AB song song Oz và vuông góc cả a, b — **1 điểm**.
+4. Tính \(AB=4\), kết luận khoảng cách — **1 điểm**.
 
 
 
 ### THPT-G11-CHVII-B27-W01 | skill_id=`G11-B27-PYRAMID_VOLUME` | placement=`SGK_WRITTEN` | role=`WRITTEN`
 
-**Đề:** Lăng trụ và chóp có cùng đáy diện tích 18cm² và cùng chiều cao vuông góc 12cm. Tính hai thể tích, so sánh và giải thích hệ số 1/3.
+**Đề:** Khối lăng trụ và khối chóp có cùng diện tích đáy \(18\,\mathrm{cm}^2\) và chiều cao vuông góc \(12\,\mathrm{cm}\). Tính hai thể tích, so sánh và giải thích hệ số \(\frac13\) trong công thức thể tích khối chóp.
 
-**Bài giải tự đối chiếu sau khi tự làm:** Lăng trụ 216cm³, chóp 72cm³; chóp bằng 1/3 vì tiết diện thu nhỏ dần về đỉnh.
+**Bài giải tự đối chiếu sau khi tự làm:** Gọi S là diện tích đáy, h là chiều cao vuông góc. Ta có \(V_{\text{lăng trụ}}=Sh=18\cdot12=216\,\mathrm{cm}^3\) và \(V_{\text{chóp}}=\frac13Sh=\frac13\cdot18\cdot12=72\,\mathrm{cm}^3\). Vậy \(V_{\text{chóp}}=\frac13 V_{\text{lăng trụ}}\).
+
+Giải thích theo hình học: một lăng trụ tam giác \(ABC.A'B'C'\) có thể chia thành ba tứ diện \(ABCC'\), \(ABB'C'\), \(AA'B'C'\). Tứ diện thứ nhất và thứ ba có hai đáy là hai tam giác đáy bằng nhau của lăng trụ và cùng chiều cao. Tứ diện thứ nhất và thứ hai cũng có cùng thể tích vì cùng đỉnh A, hai đáy \(BCC'\) và \(BB'C'\) là hai nửa bằng nhau của mặt bên hình bình hành. Dùng tính chất hai khối chóp có cùng diện tích đáy và chiều cao thì có cùng thể tích (các tiết diện ở cùng tỉ lệ độ cao có cùng diện tích), ba tứ diện có thể tích bằng nhau. Do đó mỗi khối chóp chiếm một phần ba thể tích lăng trụ; với đáy đa giác, chia đáy thành các tam giác và cộng thể tích. Đây là cách giải thích hệ số \(\frac13\); chỉ nói tiết diện thu nhỏ dần chưa đủ để xác định hệ số.
 
 **Rubric 4 điểm:**
-1. Nêu đúng chiều cao vuông góc (1) — **1 điểm**.
-2. Tính lăng trụ 216 (1) — **1 điểm**.
-3. Tính chóp 72 (1) — **1 điểm**.
-4. Giải thích tỷ lệ 1/3 theo hình học (1) — **1 điểm**.
+1. Nêu đúng S và chiều cao vuông góc h — **1 điểm**.
+2. Tính thể tích lăng trụ \(216\,\mathrm{cm}^3\) — **1 điểm**.
+3. Tính thể tích chóp \(72\,\mathrm{cm}^3\) — **1 điểm**.
+4. So sánh tỉ số và giải thích hợp lí bằng phân chia khối hoặc lập luận hình học tương đương — **1 điểm**.
 
 
 
 ### THPT-G11-CHVII-B27-W02-ANCHOR | skill_id=`G11-B27-FRUSTUM_VOLUME` | placement=`SGK_WRITTEN` | role=`ANCHOR_TAG`
 
-**Đề:** Chóp cụt đều có đáy lớn 49cm², đáy bé 16cm², cao 6cm. Tính V, thử thay đáy bé bằng 0 và giải thích ý nghĩa giới hạn công thức.
+**Đề:** Khối chóp cụt đều có diện tích đáy lớn \(49\,\mathrm{cm}^2\), đáy bé \(16\,\mathrm{cm}^2\), chiều cao vuông góc 6 cm. Tính thể tích. Giữ diện tích đáy lớn và chiều cao cố định, xét giới hạn khi diện tích đáy bé tiến về 0 và giải thích ý nghĩa.
 
-**Bài giải tự đối chiếu sau khi tự làm:** V=6(49+16+√784)/3=2(49+16+28)=186cm³. Khi đáy bé 0 còn V=49·6/3=98cm³ là chóp.
+**Bài giải tự đối chiếu sau khi tự làm:** Gọi S và S' là diện tích hai đáy, h là chiều cao vuông góc. Vì hai đáy là các tiết diện song song của cùng khối chóp đều, áp dụng công thức
+\[
+V=\frac h3\left(S+S'+\sqrt{SS'}\right)
+=\frac63(49+16+28)=186\,\mathrm{cm}^3.
+\]
+Ở đây \(\sqrt{49\cdot16}=28\). Khi \(S'\to0^+\), ta có \(\sqrt{SS'}\to0\) nên \(V\to\frac13\cdot49\cdot6=98\,\mathrm{cm}^3\). Đây là thể tích khối chóp có cùng đáy lớn và chiều cao; đáy bé bằng 0 chỉ là trường hợp giới hạn, không phải một chóp cụt không suy biến.
 
 **Rubric 4 điểm:**
-1. Nêu đúng công thức chóp cụt đều (1) — **1 điểm**.
-2. Tính √(49·16)=28 (1) — **1 điểm**.
-3. Tính V=186cm³ (1) — **1 điểm**.
-4. Kiểm trường hợp đáy bé 0 và giải thích (1) — **1 điểm**.
+1. Nêu đúng công thức chóp cụt đều — **1 điểm**.
+2. Tính \(\sqrt{49\cdot16}=28\) — **1 điểm**.
+3. Tính \(V=186\,\mathrm{cm}^3\) — **1 điểm**.
+4. Tính giới hạn 98 cm³ và giải thích ý nghĩa khối chóp — **1 điểm**.
 
 
 
