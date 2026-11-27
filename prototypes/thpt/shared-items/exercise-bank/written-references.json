@@ -6727,7 +6727,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-SGK-EXP01-O01"
+    ],
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-01-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Gần trùng A01; giữ phần kiểm hai cách, đánh giá mức độc lập trong Delta."
   },
   {
     "item_id": "THPT-G12-EXP01-W02",
@@ -6741,7 +6749,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-EXP01-O02"
+    ],
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-01-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-EXP01-W03",
@@ -6755,7 +6770,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-EXP01-O03"
+    ],
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-01-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-EXP01-W04",
@@ -6769,7 +6791,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-SGK-EXP01-O04"
+    ],
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-01-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Với chính f(x)=x², sai số hình thang bằng cận 1/(6n²); có thể giải thích trường hợp này bằng công thức tổng bình phương. Không suy ngược từ cận cho hàm bất kỳ."
   },
   {
     "item_id": "THPT-G12-EXP01-W05",
@@ -6783,7 +6813,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-SGK-EXP01-O05"
+    ],
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-01-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Đề chưa nêu vận tốc không âm trên cả đoạn; lời giải giả định. Cần nói rõ giả thiết hoặc dùng độ dời/giả định nội suy tuyến tính."
   },
   {
     "item_id": "THPT-G12-EXP02-W01",
@@ -6797,7 +6835,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-EXP02-O01"
+    ],
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-EXP02-W02",
@@ -6811,7 +6856,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-SGK-EXP02-O02"
+    ],
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Đề phụ thuộc bộ 6 đỉnh ở đoạn trước; khi dùng độc lập phải giữ đủ tọa độ trong ngữ cảnh placement."
   },
   {
     "item_id": "THPT-G12-EXP02-W03",
@@ -6825,7 +6878,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-SGK-EXP02-O03"
+    ],
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-EXP02-W04",
@@ -6839,7 +6899,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-SGK-EXP02-O04"
+    ],
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Đề tham chiếu công thức M; bảo toàn dữ liệu tham số khi tách bài. Rubric chưa chấm rõ phần giới hạn suy luận từ ảnh."
   },
   {
     "item_id": "THPT-G12-EXP02-W05",
@@ -6853,7 +6921,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-SGK-EXP02-O05"
+    ],
+    "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "author_review_note": "Lời giải mẫu và rubric cần làm rõ cách chấp nhận phương án Penrose thay Möbius; chưa thử lệnh GeoGebra thật."
   },
   {
     "item_id": "THPT-G12-YE-W01",
