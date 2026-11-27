@@ -1,18 +1,27 @@
 [
   {
     "item_id": "THPT-G10-CHIII-RD1-01",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Một góc α thuộc (90°,180°). Cặp dấu nào luôn đúng? A. sin α>0, cos α<0; B. cả hai âm; C. sin α<0, cos α>0; D. cả hai dương.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-01",
+    "stem": "Một góc α thuộc (90°,180°). Cặp dấu nào luôn đúng? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
     "worked_solution": "Trên nửa đường tròn đơn vị, góc phần tư II có tung độ (sin) dương, hoành độ (cos) âm.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B05-UNIT_SEMICIRCLE",
+      "G10-B05-SIGN_DOMAIN"
+    ],
     "original_outcome_text": "`G10-B05-UNIT_SEMICIRCLE`, `G10-B05-SIGN_DOMAIN`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Xét hoành độ và tung độ của điểm trên nửa đường tròn đơn vị."
+    ],
     "rubric": "1đ đáp án A.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -37,22 +46,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\sin\\alpha>0,\\ \\cos\\alpha<0\\)."
+      },
+      {
+        "id": "B",
+        "text": "Cả hai âm."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\sin\\alpha<0,\\ \\cos\\alpha>0\\)."
+      },
+      {
+        "id": "D",
+        "text": "Cả hai dương."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-02",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Đánh giá Đ/S: (a) sin 90°=1. (b) tan 90°=0. (c) cot 180° không xác định. (d) cos 180°=−1.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-02",
+    "stem": "Đánh giá Đ/S: (a) sin 90°=1. (b) tan 90°=0. (c) cot 180° không xác định. (d) cos 180°=−1. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "(Đ,S,Đ,Đ)",
     "worked_solution": "a đúng; b sai vì cos 90°=0 nên tan không xác định; c đúng vì sin 180°=0; d đúng do điểm cuối ở (−1,0).",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B05-SIGN_DOMAIN",
+      "G10-B05-UNIT_SEMICIRCLE"
+    ],
     "original_outcome_text": "`G10-B05-SIGN_DOMAIN`, `G10-B05-UNIT_SEMICIRCLE`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét giá trị sin, cos tại 90° và 180°, rồi kiểm mẫu của tan, cot."
+    ],
     "rubric": "Mỗi ý 1đ; nhấn mạnh mẫu số khác 0.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "TRUE_FALSE_GROUP"
     },
@@ -77,22 +114,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đ, Đ, Đ, S"
+      },
+      {
+        "id": "B",
+        "text": "Đ, S, Đ, Đ"
+      },
+      {
+        "id": "C",
+        "text": "Đ, S, S, Đ"
+      },
+      {
+        "id": "D",
+        "text": "S, Đ, S, Đ"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-03",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Biết α là góc tù và cos α=−5/13. Tìm sin α, tan α và giải thích cách chọn dấu.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-03",
+    "stem": "Biết α là góc tù và cos α=−5/13. Tìm sin α, tan α và giải thích cách chọn dấu. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "sin α=12/13; tan α=−12/5",
     "worked_solution": "sin² α=1−25/169=144/169; sin α=12/13>0 vì α tù. tan α=(12/13)/(−5/13)=−12/5.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B05-IDENTITIES",
+      "G10-B05-SIGN_DOMAIN"
+    ],
     "original_outcome_text": "`G10-B05-IDENTITIES`, `G10-B05-SIGN_DOMAIN`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng hệ thức bình phương và xét dấu của sin, cos."
+    ],
     "rubric": "1đ hệ thức cơ bản; 1đ chọn dấu sin; 1đ tan đúng.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -117,22 +182,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\sin\\alpha=-\\frac{12}{13},\\ \\tan\\alpha=\\frac{12}{5}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\sin\\alpha=\\frac{12}{13},\\ \\tan\\alpha=\\frac{12}{5}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\sin\\alpha=\\frac{12}{13},\\ \\tan\\alpha=-\\frac{12}{5}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\sin\\alpha=\\frac5{13},\\ \\tan\\alpha=-1\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-04",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Trong đoạn 0°≤α≤180°, tất cả góc thỏa sin α=√2/2 là? A. 45°,135°; B. chỉ 45°; C. 135°,180°; D. 45°,90°.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-04",
+    "stem": "Trong đoạn 0°≤α≤180°, tất cả góc thỏa sin α=√2/2 là? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
     "worked_solution": "sin 45°=√2/2 và sin(180°−45°)=sin135°=√2/2; trên [0°,180°] có đúng hai nghiệm.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B05-SUPPLEMENTARY",
+      "G10-B05-SPECIAL_ANGLES"
+    ],
     "original_outcome_text": "`G10-B05-SUPPLEMENTARY`, `G10-B05-SPECIAL_ANGLES`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét hai góc bù có cùng sin."
+    ],
     "rubric": "1đ chọn A.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -157,22 +250,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(45^\\circ,135^\\circ\\)"
+      },
+      {
+        "id": "B",
+        "text": "Chỉ \\(45^\\circ\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(135^\\circ,180^\\circ\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(45^\\circ,90^\\circ\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-05",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Biết α là góc tù và sin α=5/13. a) Xác định cos α, tan α, cot α. b) Với β=180°−α, tìm sin β, cos β.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-05",
+    "stem": "Biết α là góc tù và sin α=5/13. a) Xác định cos α, tan α, cot α. b) Với β=180°−α, tìm sin β, cos β. Chọn bộ năm kết quả theo thứ tự cos α, tan α, cot α, sin β, cos β.",
     "answer_key": "cos α=−12/13, tan α=−5/12, cot α=−12/5; sin β=5/13, cos β=12/13",
     "worked_solution": "cos² α=1−25/169=144/169; α tù nên cos α=−12/13. Chia các tỉ số được tan α=−5/12, cot α=−12/5. Góc bù: sin β=sin α, cos β=−cos α.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B05-IDENTITIES",
+      "G10-B05-SUPPLEMENTARY"
+    ],
     "original_outcome_text": "`G10-B05-IDENTITIES`, `G10-B05-SUPPLEMENTARY`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm cos theo góc tù, lập tan và cot rồi áp dụng hệ thức góc bù."
+    ],
     "rubric": "4đ: dấu và cos 1đ; tan/cot 1đ; sin β 1đ; cos β 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -197,22 +318,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-\\frac{12}{13},-\\frac5{12},-\\frac{12}5;\\ \\frac5{13},\\frac{12}{13}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{12}{13},\\frac5{12},\\frac{12}5;\\ \\frac5{13},-\\frac{12}{13}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(-\\frac{12}{13},-\\frac{12}5,-\\frac5{12};\\ \\frac5{13},\\frac{12}{13}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-\\frac{12}{13},-\\frac5{12},-\\frac{12}5;\\ -\\frac5{13},-\\frac{12}{13}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-06",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Giá trị chính xác của sin120°+cos135° bằng? A. (√3−√2)/2; B. (√3+√2)/2; C. (√2−√3)/2; D. −(√3+√2)/2.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-06",
+    "stem": "Giá trị chính xác của sin120°+cos135° bằng? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
     "worked_solution": "sin120°=√3/2; cos135°=−√2/2, tổng = (√3−√2)/2.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B05-SPECIAL_ANGLES"
+    ],
     "original_outcome_text": "`G10-B05-SPECIAL_ANGLES`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Đổi về hai góc nhọn 60° và 45°, giữ đúng dấu."
+    ],
     "rubric": "1đ chọn A.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -237,22 +385,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{\\sqrt3-\\sqrt2}{2}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{\\sqrt3+\\sqrt2}{2}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{\\sqrt2-\\sqrt3}{2}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-\\frac{\\sqrt3+\\sqrt2}{2}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-07",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Với α∈(90°,180°) và cot α=−3/4, tìm sin α, cos α, tan α. Nêu điều kiện để cot α xác định.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-07",
+    "stem": "Với α∈(90°,180°) và cot α=−3/4, tìm sin α, cos α, tan α. Nêu điều kiện để cot α xác định. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "sin α=4/5; cos α=−3/5; tan α=−4/3; sin α≠0",
     "worked_solution": "cot α=cos α/sin α; vì α tù, cos<0 và sin>0. Tỉ lệ |cos|:sin=3:4 và sin²+cos²=1 suy ra (sin,cos)=(4/5,−3/5); tan=sin/cos=−4/3; cot chỉ xác định khi sin≠0.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B05-SIGN_DOMAIN",
+      "G10-B05-IDENTITIES"
+    ],
     "original_outcome_text": "`G10-B05-SIGN_DOMAIN`, `G10-B05-IDENTITIES`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Lập tỉ lệ cos trên sin, dùng hệ thức bình phương và chọn dấu theo góc tù."
+    ],
     "rubric": "1đ dấu; 1đ bộ sin/cos; 1đ tan và điều kiện cot.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -277,22 +453,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\sin\\alpha=\\frac35,\\ \\cos\\alpha=-\\frac45,\\ \\tan\\alpha=-\\frac34\\); cot xác định khi cos khác 0."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\sin\\alpha=-\\frac45,\\ \\cos\\alpha=\\frac35,\\ \\tan\\alpha=-\\frac43\\); cot xác định khi sin khác 0."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\sin\\alpha=\\frac45,\\ \\cos\\alpha=-\\frac35,\\ \\tan\\alpha=-\\frac43\\); cot xác định khi \\(\\sin\\alpha\\ne0\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\sin\\alpha=\\frac45,\\ \\cos\\alpha=-\\frac35,\\ \\tan\\alpha=-\\frac34\\); cot xác định khi sin khác 0."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-08",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Trong tam giác ABC, AB=9, AC=7 và góc A=60°. Độ dài BC là? A. √67; B. 8; C. 2√13; D. √130.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-08",
+    "stem": "Trong tam giác ABC, AB=9, AC=7 và góc A=60°. Độ dài BC là? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
     "worked_solution": "BC²=AB²+AC²−2·AB·AC·cos60°=81+49−63=67, nên BC=√67.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B06-COSINE_RULE"
+    ],
     "original_outcome_text": "`G10-B06-COSINE_RULE`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng định lý cosin với hai cạnh kề và góc xen giữa."
+    ],
     "rubric": "1đ chọn A.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -317,22 +520,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\sqrt{67}\\)"
+      },
+      {
+        "id": "B",
+        "text": "8"
+      },
+      {
+        "id": "C",
+        "text": "\\(2\\sqrt{13}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\sqrt{130}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-09",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Cho tam giác ABC có A=30°, B=45°, BC=a=6. Tìm C, độ dài AC=b và bán kính đường tròn ngoại tiếp R.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-09",
+    "stem": "Cho tam giác ABC có A=30°, B=45°, BC=a=6. Tìm C, độ dài AC=b và bán kính đường tròn ngoại tiếp R. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "C=105°; b=6√2; R=6",
     "worked_solution": "C=180°−30°−45°=105°. Theo định lý sin, b/a=sin45°/sin30°=√2, nên b=6√2. Lại a/sinA=2R ⇒ 6/(1/2)=12 ⇒ R=6.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B06-SINE_RULE"
+    ],
     "original_outcome_text": "`G10-B06-SINE_RULE`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tổng ba góc bằng 180°; dùng định lý sin mở rộng."
+    ],
     "rubric": "1đ C; 1đ b; 1đ R.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -357,22 +587,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(C=105^\\circ,\\ b=6\\sqrt2,\\ R=6\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(C=105^\\circ,\\ b=3\\sqrt2,\\ R=6\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(C=75^\\circ,\\ b=6\\sqrt2,\\ R=12\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(C=105^\\circ,\\ b=6\\sqrt2,\\ R=12\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-10",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Tam giác có độ dài ba cạnh 10,10,12. Tính nửa chu vi, diện tích bằng công thức Heron, bán kính đường tròn nội tiếp và chiều cao ứng với cạnh 12.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-10",
+    "stem": "Tam giác có độ dài ba cạnh 10,10,12. Tính nửa chu vi, diện tích bằng công thức Heron, bán kính đường tròn nội tiếp và chiều cao ứng với cạnh 12. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "p=16; S=48; r=3; h=8",
     "worked_solution": "p=(10+10+12)/2=16. S=√[16(16−10)(16−10)(16−12)]=√(16·6·6·4)=48. r=S/p=3; h=2S/12=8.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B06-HERON",
+      "G10-B06-AREA_SIN"
+    ],
     "original_outcome_text": "`G10-B06-HERON`, `G10-B06-AREA_SIN`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Tính nửa chu vi; dùng Heron, sau đó dùng công thức diện tích theo r và h."
+    ],
     "rubric": "4đ: nửa chu vi 1đ; Heron 1đ; bán kính nội tiếp 1đ; chiều cao 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -397,22 +655,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(p=32,\\ S=48,\\ r=\\frac32,\\ h=8\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(p=16,\\ S=48,\\ r=3,\\ h=8\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(p=16,\\ S=96,\\ r=6,\\ h=16\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(p=16,\\ S=48,\\ r=3,\\ h=4\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-11",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Trong tam giác ABC, hai cạnh kề góc A dài 6 và 10, góc A=150°. Diện tích bằng? A. 15; B. 30; C. 15√3; D. 60.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-11",
+    "stem": "Trong tam giác ABC, hai cạnh kề góc A dài 6 và 10, góc A=150°. Diện tích bằng? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
     "worked_solution": "S=1/2·6·10·sin150°=30·(1/2)=15.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B06-AREA_SIN"
+    ],
     "original_outcome_text": "`G10-B06-AREA_SIN`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Diện tích bằng nửa tích hai cạnh kề nhân sin góc xen giữa."
+    ],
     "rubric": "1đ chọn A.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -437,22 +722,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "15"
+      },
+      {
+        "id": "B",
+        "text": "30"
+      },
+      {
+        "id": "C",
+        "text": "\\(15\\sqrt3\\)"
+      },
+      {
+        "id": "D",
+        "text": "60"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-12",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Tam giác có cạnh a=7 đối diện góc A, còn hai cạnh kề góc A là b=5,c=8. Tìm cos A và suy ra A.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-12",
+    "stem": "Tam giác có cạnh a=7 đối diện góc A, còn hai cạnh kề góc A là b=5,c=8. Tìm cos A và suy ra A. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "cos A=1/2; A=60°",
     "worked_solution": "cos A=(b²+c²−a²)/(2bc)=(25+64−49)/80=40/80=1/2. Vì 0°<A<180°, A=60°.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B06-COSINE_RULE"
+    ],
     "original_outcome_text": "`G10-B06-COSINE_RULE`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Giải định lý cosin theo cos A rồi chọn góc trong tam giác."
+    ],
     "rubric": "1đ áp dụng quy tắc; 1đ tính 1/2; 1đ suy góc.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -477,22 +789,51 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\cos A=-\\frac12,\\ A=120^\\circ\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\cos A=\\frac{\\sqrt2}{2},\\ A=45^\\circ\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\cos A=0,\\ A=90^\\circ\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\cos A=\\frac12,\\ A=60^\\circ\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-13",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Tam giác có ba cạnh 3,4,5. Đánh giá Đ/S: (a) Tam giác vuông. (b) Diện tích bằng 6. (c) Bán kính đường tròn nội tiếp bằng 2. (d) Bán kính đường tròn ngoại tiếp bằng 5/2.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-13",
+    "stem": "Tam giác có ba cạnh 3,4,5. Đánh giá Đ/S: (a) Tam giác vuông. (b) Diện tích bằng 6. (c) Bán kính đường tròn nội tiếp bằng 2. (d) Bán kính đường tròn ngoại tiếp bằng 5/2. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "(Đ,Đ,S,Đ)",
     "worked_solution": "3²+4²=5², góc đối diện cạnh 5 vuông. S=3·4/2=6, p=6 nên r=S/p=1, không phải 2; với tam giác vuông R=5/2.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B06-APPLICATION",
+      "G10-B06-HERON",
+      "G10-B06-COSINE_RULE"
+    ],
     "original_outcome_text": "`G10-B06-APPLICATION`, `G10-B06-HERON`, `G10-B06-COSINE_RULE`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Kiểm định lý Pythagore, diện tích, bán kính nội tiếp và ngoại tiếp."
+    ],
     "rubric": "4 ý 1đ/ý; có thể suy bằng công thức S=abc/(4R) hoặc định lý sin.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "TRUE_FALSE_GROUP"
     },
@@ -517,22 +858,52 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đ, Đ, S, Đ"
+      },
+      {
+        "id": "B",
+        "text": "Đ, Đ, Đ, S"
+      },
+      {
+        "id": "C",
+        "text": "S, Đ, S, Đ"
+      },
+      {
+        "id": "D",
+        "text": "Đ, S, S, Đ"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-14",
-    "content_version": "1f4e6eb5af786d8d0502d9d71a8d84290d364fd9c25be28adadf32bd05adaa1e",
-    "stem": "Trong tam giác ABC có AB=7, AC=5, góc BAC=60°. a) Tính BC. b) Tính diện tích S. c) Tính bán kính R đường tròn ngoại tiếp.",
+    "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-14",
+    "stem": "Trong tam giác ABC có AB=7, AC=5, góc BAC=60°. a) Tính BC. b) Tính diện tích S. c) Tính bán kính R đường tròn ngoại tiếp. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "BC=√39; S=35√3/4; R=√13",
     "worked_solution": "BC²=7²+5²−2·7·5·(1/2)=39. Diện tích S=1/2·7·5·sin60°=35√3/4. Định lý sin 2R=BC/sin60°=√39/(√3/2), suy ra R=√39/√3=√13.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B06-COSINE_RULE",
+      "G10-B06-AREA_SIN",
+      "G10-B06-SINE_RULE",
+      "G10-B06-APPLICATION"
+    ],
     "original_outcome_text": "`G10-B06-COSINE_RULE`, `G10-B06-AREA_SIN`, `G10-B06-SINE_RULE`, `G10-B06-APPLICATION`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Dùng định lý cosin, diện tích theo góc xen giữa và định lý sin mở rộng."
+    ],
     "rubric": "4đ: quy tắc cos và BC 2đ; công thức diện tích 1đ; định lý sin và R 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -557,6 +928,25 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(BC=\\sqrt{39},\\ S=\\frac{35\\sqrt3}{2},\\ R=\\sqrt{13}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(BC=\\sqrt{39},\\ S=\\frac{35\\sqrt3}{4},\\ R=\\sqrt{13}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(BC=\\sqrt{74},\\ S=\\frac{35\\sqrt3}{4},\\ R=\\sqrt{13}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(BC=\\sqrt{39},\\ S=\\frac{35\\sqrt3}{4},\\ R=2\\sqrt{13}\\)."
+      }
+    ]
   }
 ]
