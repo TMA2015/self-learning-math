@@ -188,16 +188,17 @@
   {
     "item_id": "THPT-G10-B01-P05",
     "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Phủ định của Q: “Với mọi \\(x\\in\\mathbb R\\), \\(x^2\\ge0\\)” là gì? Mệnh đề phủ định đúng hay sai?",
-    "answer_key": "“Tồn tại \\(x\\in\\mathbb R\\) sao cho \\(x^2<0\\)”; mệnh đề phủ định sai.",
-    "worked_solution": "Với mọi x thực, \\(x^2\\ge0\\). Phủ định của “mọi” là “tồn tại”, và phủ định của \\(x^2\\ge0\\) là \\(x^2<0\\). Không có số thực có bình phương âm, nên mệnh đề phủ định sai.",
+    "stem": "Xét mệnh đề P: “Với mọi số thực x thuộc đoạn \\([0;3]\\), ta có \\(x^2\\le4\\) và \\(x+1\\ge1\\)”. (a) Viết phủ định của P bằng lượng từ, giữ nguyên miền xét. (b) Xét đúng/sai của P và phủ định, chỉ ra một chứng cứ. (c) Một bạn viết phủ định là “Tồn tại \\(x\\in[0;3]\\) sao cho \\(x^2>4\\) và \\(x+1<1\\)”. Giải thích vì sao cách viết này sai.",
+    "answer_key": "Phủ định: “Tồn tại \\(x\\in[0;3]\\) sao cho \\(x^2>4\\) hoặc \\(x+1<1\\)”. P sai, phủ định đúng, chứng cứ \\(x=3\\). Bạn đã nhầm “hoặc” thành “và”.",
+    "worked_solution": "Để P sai, chỉ cần có một x trong đoạn đã cho không thỏa đồng thời hai điều kiện. Điều đó có nghĩa là ít nhất một điều kiện bị vi phạm: hoặc \\(x^2>4\\), hoặc \\(x+1<1\\) (cũng có thể cả hai). Vì vậy phải đổi “với mọi” thành “tồn tại”, đổi từng bất đẳng thức sang phủ định của nó và thay “và” bằng “hoặc”. Với \\(x=3\\), ta có \\(x^2=9>4\\) nhưng \\(x+1=4\\ge1\\). Như vậy P sai và phủ định đúng. Phát biểu của bạn đòi cả hai điều kiện cùng bị vi phạm; thực tế \\(x+1\\ge1\\) với mọi \\(x\\in[0;3]\\), nên phát biểu của bạn sai, mặc dù phủ định đúng.",
     "skill_ids": [
       "G10-B01-NEGATION"
     ],
     "problem_type_id": null,
     "difficulty": "INTERMEDIATE",
     "hints": [
-      "Giữ miền số thực; đổi “mọi” thành “tồn tại”, và phủ định bất đẳng thức."
+      "Một yêu cầu gồm hai điều kiện đồng thời không đạt nếu ít nhất một điều kiện bị vi phạm.",
+      "Giữ miền xét, đổi lượng từ rồi thử một đầu mút của đoạn."
     ],
     "rubric": null,
     "interaction": {
@@ -214,7 +215,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu vẫn dùng “mọi” hoặc dùng \\(x^2\\le0\\), thử \\(x=0\\) và kiểm nguyên tắc đúng một trong hai mệnh đề. Ôn Bài 1 §2.2, §2.5 / HELP-G10-B01-02; luyện THPT-G10-CHI-TRY05."
+    "remediation": "Không phủ định đồng thời bằng cách đòi cả hai điều kiện sai. Chỉ cần một điều kiện không thỏa là đủ bác bỏ yêu cầu đồng thời. Ôn Bài 1 phần phủ định/lượng từ; luyện THPT-G10-CHI-TRY05."
   },
   {
     "item_id": "THPT-G10-B01-P06",
@@ -343,16 +344,17 @@
   {
     "item_id": "THPT-G10-B02-P02",
     "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Trong tập vũ trụ \\(U=\\{1;2;3;4;5;6\\}\\), cho \\(A=\\{2;4;6\\}\\). Tìm phần bù của A trong U.",
-    "answer_key": "\\(U\\setminus A=\\{1;3;5\\}\\).",
-    "worked_solution": "Vì \\(A\\subseteq U\\), phần bù của A trong U là các phần tử thuộc U nhưng không thuộc A. Loại 2, 4, 6 khỏi U, còn 1, 3, 5.",
+    "stem": "Cho \\(U=\\{1;2;3;4;5;6;7;8\\}\\) và \\(V=\\{2;3;4;5;6\\}\\). Biết \\(A\\subseteq V\\) và phần bù của A trong V là \\(\\{3;5\\}\\). (a) Tìm A và phần bù của A trong U. (b) Một bạn nói hai phần bù phải giống nhau vì cùng lấy phần bù của A. Hãy giải thích. (c) Tìm những phần tử có trong phần bù của A trong U nhưng không có trong phần bù của A trong V.",
+    "answer_key": "\\(A=\\{2;4;6\\}\\); \\(U\\setminus A=\\{1;3;5;7;8\\}\\). Hai phần bù khác nhau do tập đang xét khác nhau. Các phần tử thêm là \\(\\{1;7;8\\}=U\\setminus V\\).",
+    "worked_solution": "Vì A là tập con của V, mỗi phần tử của V hoặc thuộc A, hoặc thuộc phần bù của A trong V, không thể thuộc cả hai. Loại 3 và 5 khỏi V, được \\(A=\\{2;4;6\\}\\). Do \\(V\\subseteq U\\), A cũng là tập con của U. Loại 2, 4, 6 khỏi U, được \\(U\\setminus A=\\{1;3;5;7;8\\}\\). Hai phần bù không giống nhau vì phần bù luôn phụ thuộc tập chứa đang xét. Các phần tử 1, 7, 8 nằm trong U nhưng ngoài V, nên không thuộc A và chỉ có trong phần bù tính theo U. Do đó \\((U\\setminus A)\\setminus(V\\setminus A)=\\{1;7;8\\}=U\\setminus V\\).",
     "skill_ids": [
       "G10-B02-COMPLEMENT"
     ],
     "problem_type_id": null,
     "difficulty": "INTERMEDIATE",
     "hints": [
-      "Phần bù luôn cần chỉ rõ tập vũ trụ U."
+      "Tập V được chia thành A và phần bù của A trong V.",
+      "Tìm A trước, rồi tính riêng từng phần bù từ đúng tập chứa."
     ],
     "rubric": null,
     "interaction": {
@@ -369,7 +371,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thêm số ngoài U vào phần bù, liệt kê U trước rồi gạch phần tử thuộc A. Ôn Bài 2 §2.3.1 / HELP-G10-B02-02; luyện THPT-TOP01-ADD05."
+    "remediation": "Phần bù không phải một tập xác định nếu chưa biết tập chứa. Không chỉ giữ phần tử ngoài A mà còn phải kiểm chúng nằm trong tập đang xét. Ôn Bài 2 phần phần bù; luyện THPT-G10-CHI-TRY09."
   },
   {
     "item_id": "THPT-G10-B02-P03",
