@@ -208,7 +208,7 @@
     "answer_key": "`P` thuộc, `Q` không thuộc.",
     "worked_solution": "`f(2)=4−2−6=−4`; `f(−1)=1+1−6=−4≠−5`.",
     "skill_ids": [
-      "B15_OUT_03"
+      "FUNCTION_GRAPH_MEMBERSHIP"
     ],
     "original_outcome_text": "",
     "problem_type_id": null,
