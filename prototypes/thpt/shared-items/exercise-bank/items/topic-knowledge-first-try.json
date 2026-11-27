@@ -8176,7 +8176,7 @@
   },
   {
     "item_id": "THPT-TOP20-T01",
-    "content_version": "TOP20-BANK-CP66-20261126-T01",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T01",
     "stem": "Gieo một xúc xắc 8 mặt đồng khả năng ghi các số 1–8. Viết Ω và biến cố “ra số chẵn”.",
     "answer_key": "\\(\\Omega=\\{1,2,3,4,5,6,7,8\\}\\); \\(A=\\{2,4,6,8\\}\\).",
     "worked_solution": "\\(\\Omega=\\{1,2,3,4,5,6,7,8\\}\\); \\(A=\\{2,4,6,8\\}\\).\n\n**Kiểm lỗi**\n\nNếu chỉ viết xác suất \\(\\frac{1}{2}\\), em chưa mô tả biến cố; hãy ghi kết quả sơ cấp vào tập. Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 1 tại Luyện tập 1.1. Không gian mẫu và tập kết quả của biến cố.",
@@ -8189,11 +8189,17 @@
       "TOP20-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Viết mọi mặt có thể ra rồi chọn số chia hết cho 2."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8209,11 +8215,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\Omega=\\{1,2,3,4,5,6,7,8\\}, A=\\{1,3,5,7\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\Omega=\\{1,2,3,4,5,6,7,8\\}, A=\\{2,4,6,8\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\Omega=\\{2,4,6,8\\}, A=\\{2,4,6,8\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\Omega=\\{0,1,2,3,4,5,6,7\\}, A=\\{0,2,4,6\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O01; luyện THPT-TOP20-P01."
   },
   {
     "item_id": "THPT-TOP20-T10",
-    "content_version": "TOP20-BANK-CP66-20261126-T10",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T10",
     "stem": "Một vòng quay cân đối có các kết quả ghi 1 đến 6. Biến cố A là “kết quả không lớn hơn 2”. Hãy viết A và nói khi nào A xảy ra.",
     "answer_key": "\\(A=\\{1,2\\}\\); xảy ra khi quay được 1 hoặc 2.",
     "worked_solution": "**Lời giải:** \\(A=\\{1,2\\}\\); A xảy ra nếu lượt quay cho kết quả 1 hoặc 2.\n\n**Kiểm lỗi**\n\nNếu viết \\(A=\\{2\\}\\), em đã bỏ kết quả 1 cũng không lớn hơn 2. Xem từng phần tử \\(\\Omega=\\{1,\\ldots,6\\}\\). Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 2 tại Luyện tập 1.2. Mô tả biến cố từ một điều kiện.",
@@ -8225,11 +8251,17 @@
       "TOP20-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Không lớn hơn 2 nghĩa là nhỏ hơn hoặc bằng 2."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8245,11 +8277,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A=\\{1,2\\}\\); khi quay được 1 hoặc 2."
+      },
+      {
+        "id": "B",
+        "text": "\\(A=\\{2\\}\\); khi quay được 2."
+      },
+      {
+        "id": "C",
+        "text": "\\(A=\\{1\\}\\); khi quay được 1."
+      },
+      {
+        "id": "D",
+        "text": "\\(A=\\{3,4,5,6\\}\\); khi quay được số lớn hơn 2."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O02; luyện THPT-TOP20-P02."
   },
   {
     "item_id": "THPT-TOP20-T02",
-    "content_version": "TOP20-BANK-CP66-20261126-T02",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T02",
     "stem": "Hộp có 2 phiếu đỏ và 4 phiếu xanh khác nhau, rút đều một phiếu. \\(P(\\text{đỏ})\\) có phải \\(\\frac{1}{2}\\) vì có hai màu không?",
     "answer_key": "Không; \\(P(\\text{đỏ})=\\frac13\\).",
     "worked_solution": "Không. Sáu phiếu vật lí đồng khả năng, \\(P(\\text{đỏ})=\\frac26=\\frac13\\).\n\n**Kiểm lỗi**\n\nNếu dùng \\(\\frac{1}{2}\\), em đếm màu thay vì từng phiếu; hãy đặt tên cho sáu phiếu. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 3 tại Luyện tập 1.3. Xác suất cổ điển từ phiếu đồng khả năng.",
@@ -8261,11 +8313,17 @@
       "TOP20-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đếm từng phiếu, không đếm hai màu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8281,11 +8339,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; \\(P(\\text{đỏ})=\\frac13\\)."
+      },
+      {
+        "id": "B",
+        "text": "Có; \\(P(\\text{đỏ})=\\frac12\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không; \\(P(\\text{đỏ})=\\frac23\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không; \\(P(\\text{đỏ})=\\frac14\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O03; luyện THPT-TOP20-P03."
   },
   {
     "item_id": "THPT-TOP20-T11",
-    "content_version": "TOP20-BANK-CP66-20261126-T11",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T11",
     "stem": "Tung hai đồng xu cân đối và độc lập. Nếu chỉ ghi số mặt ngửa 0, 1, 2 thì ba giá trị ấy có đồng khả năng không? Hãy viết các chuỗi sơ cấp và tính xác suất có đúng một mặt ngửa.",
     "answer_key": "Không đồng khả năng; \\(\\Omega=\\{NN,NS,SN,SS\\}\\); \\(P(\\text{đúng một ngửa})=\\frac12\\).",
     "worked_solution": "**Lời giải:** Quy ước N là ngửa, S là sấp. Không. Không gian mẫu gồm NN, NS, SN, SS, mỗi chuỗi có xác suất \\(\\frac{1}{4}\\). Số ngửa 0 ứng với SS, số ngửa 1 ứng với NS và SN, số ngửa 2 ứng với NN. Vì vậy ba giá trị **không** đồng khả năng; xác suất đúng một ngửa là \\(\\frac{2}{4}=\\frac{1}{2}\\).\n\n**Kiểm lỗi**\n\nNếu ra \\(\\frac{1}{3}\\), em đã đếm ba **nhãn** thay vì bốn chuỗi sơ cấp. Liệt kê đủ NN, NS, SN, SS rồi ghép mỗi chuỗi với số mặt ngửa tương ứng. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 6 tại Luyện tập 1.6. Gộp kết quả không đồng khả năng.",
@@ -8297,11 +8375,17 @@
       "TOP20-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Phân biệt hai đồng xu, liệt kê bốn chuỗi đồng khả năng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8317,11 +8401,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; ba số mặt ngửa đồng khả năng; \\(\\frac13\\)."
+      },
+      {
+        "id": "B",
+        "text": "Không; chỉ có NN, NS, SS; \\(\\frac13\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không; bốn chuỗi NN, NS, SN, SS; \\(\\frac14\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không; các chuỗi NN, NS, SN, SS (N: ngửa, S: sấp); \\(\\frac12\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O06; luyện THPT-TOP20-P06."
   },
   {
     "item_id": "THPT-TOP20-T03",
-    "content_version": "TOP20-BANK-CP66-20261126-T03",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T03",
     "stem": "Có 20 thẻ đồng khả năng, đúng 1 thẻ màu đen. Tính \\(P(\\text{không đen})\\). Biến cố đen có phải không thể?",
     "answer_key": "\\(P(\\text{không đen})=\\frac{19}{20}\\); đen hiếm nhưng không phải không thể.",
     "worked_solution": "\\(P(\\text{không đen})=\\frac{19}{20}\\); \\(P(\\text{đen})=\\frac1{20}>0\\) nên đen là hiếm, không phải không thể.\n\n**Kiểm lỗi**\n\nNếu nói xác suất 0, em đã nhầm ít xảy ra với biến cố rỗng. Ôn lại mục Kiến thức 1.3. Biến cố đối và xác suất bé và Bài luyện 4 tại Luyện tập 1.4. Tính xác suất bằng biến cố đối.",
@@ -8333,11 +8437,17 @@
       "TOP20-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Không đen là biến cố đối của đen."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8353,11 +8463,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{19}{20}\\); đen không thể."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac1{20}\\); đen hiếm."
+      },
+      {
+        "id": "C",
+        "text": "\\(1\\); đen không thể."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{19}{20}\\); đen hiếm nhưng không phải không thể."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O04; luyện THPT-TOP20-P04."
   },
   {
     "item_id": "THPT-TOP20-T12",
-    "content_version": "TOP20-BANK-CP66-20261126-T12",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T12",
     "stem": "Trong 100 vé đồng khả năng chỉ có một vé trúng. Biến cố trúng vé là không thể hay hiếm? Viết xác suất.",
     "answer_key": "Hiếm, không phải không thể; \\(P(\\text{trúng})=\\frac1{100}\\).",
     "worked_solution": "**Lời giải:** \\(P(\\text{trúng})=\\frac1{100}>0\\); hiếm chứ không phải biến cố không thể.\n\n**Kiểm lỗi**\n\nNếu \\(P=0\\), em đã bỏ một vé trúng còn có mặt trong Ω. Đếm \\(n(A)=1\\) và \\(n(\\Omega)=100\\). Ôn lại mục Kiến thức 1.3. Biến cố đối và xác suất bé và Bài luyện 5 tại Luyện tập 1.5. Biến cố hiếm và biến cố không thể.",
@@ -8369,11 +8499,17 @@
       "TOP20-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Có một vé trúng trong 100 vé đồng khả năng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8389,11 +8525,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không thể; \\(0\\)."
+      },
+      {
+        "id": "B",
+        "text": "Hiếm, vẫn có thể; \\(\\frac1{99}\\)."
+      },
+      {
+        "id": "C",
+        "text": "Hiếm, vẫn có thể; \\(\\frac1{100}\\)."
+      },
+      {
+        "id": "D",
+        "text": "Chắc chắn; \\(1\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O05; luyện THPT-TOP20-P05."
   },
   {
     "item_id": "THPT-TOP20-T04",
-    "content_version": "TOP20-BANK-CP66-20261126-T04",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T04",
     "stem": "Từ 6 học sinh chọn một nhóm 2 người không phân vai; so với chọn trưởng rồi phó, có bao nhiêu kết quả mỗi loại?",
     "answer_key": "15 nhóm; 30 cặp phân vai.",
     "worked_solution": "Không phân vai có \\(\\binom62=15\\) nhóm; phân hai vai có 6×5=30 cặp có thứ tự.\n\n**Kiểm lỗi**\n\nNếu có cả hai bằng 30, nhóm AB và BA đã bị đếm hai lần ở trường hợp không phân vai. Ôn lại mục Kiến thức 1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây và Bài luyện 7 tại Luyện tập 1.7. Chọn nhóm không xét thứ tự.",
@@ -8406,11 +8562,17 @@
       "TOP20-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai vai khác nhau; nhóm không phân vai không xét thứ tự."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8426,11 +8588,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 nhóm; 15 cặp phân vai."
+      },
+      {
+        "id": "B",
+        "text": "30 nhóm; 30 cặp phân vai."
+      },
+      {
+        "id": "C",
+        "text": "15 nhóm; 30 cặp phân vai."
+      },
+      {
+        "id": "D",
+        "text": "12 nhóm; 36 cặp phân vai."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O07; luyện THPT-TOP20-P07."
   },
   {
     "item_id": "THPT-TOP20-T13",
-    "content_version": "TOP20-BANK-CP66-20261126-T13",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T13",
     "stem": "Từ 5 phiếu khác nhau (1 đỏ, 4 xanh), chọn đều **hai phiếu không xét thứ tự**. Xác suất ít nhất một phiếu đỏ?",
     "answer_key": "\\(\\frac25\\).",
     "worked_solution": "**Lời giải:** \\(P=1-P(\\text{cả hai xanh})=1-\\frac{\\binom42}{\\binom52}=1-\\frac6{10}=\\frac25\\).\n\n**Kiểm lỗi**\n\nNếu dùng \\(1-\\frac45\\) thì em đang xét một phiếu. Mẫu này là **nhóm hai phiếu**, phải đếm \\(\\binom{5}{2}\\). Ôn lại mục Kiến thức 1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây và Bài luyện 8 tại Luyện tập 1.8. Ít nhất một và biến cố đối.",
@@ -8442,11 +8624,17 @@
       "TOP20-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đếm nhóm hai phiếu; lấy 1 trừ xác suất cả hai xanh."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8462,11 +8650,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac15\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac25\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac35\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac45\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O08; luyện THPT-TOP20-P08."
   },
   {
     "item_id": "THPT-TOP20-T05",
-    "content_version": "TOP20-BANK-CP66-20261126-T05",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T05",
     "stem": "Gieo độc lập hai xúc xắc sáu mặt phân biệt, cân đối. Có bao nhiêu cặp sơ cấp đồng khả năng và \\(P(\\text{tổng số chấm bằng 12})\\)?",
     "answer_key": "36 cặp; \\(P(\\text{tổng}=12)=\\frac1{36}\\).",
     "worked_solution": "Có 36 cặp có thứ tự; chỉ (6,6) có tổng 12 nên \\(P=\\frac1{36}\\).\n\n**Kiểm lỗi**\n\nKhông coi 11 tổng số chấm từ 2 đến 12 là đồng khả năng; tổng 12 chỉ có một cặp. Ôn lại Kiến thức 1.5, rồi làm Bài luyện 6 (Luyện tập 1.6) để lập các cặp sơ cấp đồng khả năng trước khi đếm mỗi giá trị tổng. Nếu vẫn nhầm thứ tự rút, luyện thêm Bài luyện 10 (Luyện tập 1.10).",
@@ -8478,11 +8686,17 @@
       "TOP20-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Mỗi xúc xắc có 6 kết quả; tổng 12 chỉ khi cả hai ra 6."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8498,11 +8712,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "11 cặp; \\(\\frac1{11}\\)."
+      },
+      {
+        "id": "B",
+        "text": "36 cặp; \\(\\frac1{36}\\)."
+      },
+      {
+        "id": "C",
+        "text": "21 cặp; \\(\\frac1{21}\\)."
+      },
+      {
+        "id": "D",
+        "text": "36 cặp; \\(\\frac2{36}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O10; luyện THPT-TOP20-P10."
   },
   {
     "item_id": "THPT-TOP20-T14",
-    "content_version": "TOP20-BANK-CP66-20261126-T14",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T14",
     "stem": "Tung một đồng xu cân đối ba lần độc lập, ghi chuỗi kết quả có thứ tự. Có bao nhiêu kết quả đồng khả năng và xác suất đúng hai mặt ngửa?",
     "answer_key": "8 chuỗi; \\(P(\\text{đúng hai ngửa})=\\frac38\\).",
     "worked_solution": "**Lời giải:** Quy ước N là ngửa, S là sấp. Có \\(2^3=8\\) chuỗi; đúng hai ngửa là NNS, NSN, SNN (3 chuỗi), \\(P=\\frac38\\).\n\n**Kiểm lỗi**\n\nNếu coi bốn nhóm “0, 1, 2 hoặc 3 lần ngửa” là bốn kết quả đồng khả năng, em đã gộp các chuỗi khác nhau. Bốn nhóm lần lượt chứa 1, 3, 3 và 1 chuỗi, nên phải đếm trên tám chuỗi đồng khả năng. Vẽ cây ba tầng. Ôn lại mục Kiến thức 1.5. Chọn đúng mô hình trước khi tính và Bài luyện 9 tại Luyện tập 1.9. Chuỗi có thứ tự trên sơ đồ cây.",
@@ -8514,11 +8748,17 @@
       "TOP20-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Ba lần tung có 2 lựa chọn mỗi lần; chọn vị trí của mặt sấp."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8534,11 +8774,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "8 chuỗi; \\(\\frac38\\)."
+      },
+      {
+        "id": "B",
+        "text": "4 chuỗi; \\(\\frac14\\)."
+      },
+      {
+        "id": "C",
+        "text": "8 chuỗi; \\(\\frac18\\)."
+      },
+      {
+        "id": "D",
+        "text": "6 chuỗi; \\(\\frac12\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O09; luyện THPT-TOP20-P09."
   },
   {
     "item_id": "THPT-TOP20-T06",
-    "content_version": "TOP20-BANK-CP66-20261126-T06",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T06",
     "stem": "Gieo một xúc xắc sáu mặt cân đối. A=ra số chẵn, B=ra số không lớn hơn 2. Viết \\(A\\cap B\\) và \\(A\\cup B\\).",
     "answer_key": "\\(A\\cap B=\\{2\\}\\); \\(A\\cup B=\\{1,2,4,6\\}\\).",
     "worked_solution": "\\(A=\\{2,4,6\\}\\), \\(B=\\{1,2\\}\\); giao=\\(\\{2\\}\\), hợp=\\(\\{1,2,4,6\\}\\).\n\n**Kiểm lỗi**\n\nNếu lấy \\(B=\\{4,5,6\\}\\) thì em đã chép điều kiện “lớn hơn 3” của hình minh họa, không phải điều kiện “không lớn hơn 2” trong đề này. Viết \\(B=\\{1,2\\}\\) trước; giao chỉ lấy phần chung \\(\\{2\\}\\), còn hợp chứa \\(\\{1,2,4,6\\}\\) và mỗi số được ghi đúng một lần. Ôn lại Kiến thức 2.1 và giải lại Bài luyện 11.",
@@ -8551,11 +8811,17 @@
       "TOP20-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Viết hai tập trước; giao là phần chung, hợp là tất cả phần tử."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8571,11 +8837,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A\\cap B=\\{2\\}, A\\cup B=\\{1,2,4,6\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(A\\cap B=\\{1,2\\}, A\\cup B=\\{2,4,6\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(A\\cap B=\\varnothing, A\\cup B=\\{1,2,4,6\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(A\\cap B=\\{1,2,4,6\\}, A\\cup B=\\{2\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O11; luyện THPT-TOP20-P11."
   },
   {
     "item_id": "THPT-TOP20-T07",
-    "content_version": "TOP20-BANK-CP66-20261126-T07",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T07",
     "stem": "Tung một đồng xu cân đối và gieo một xúc xắc sáu mặt cân đối độc lập. Xác suất đồng xu ngửa và xúc xắc chẵn là bao nhiêu?",
     "answer_key": "\\(\\frac14\\).",
     "worked_solution": "\\(P=\\frac12\\cdot\\frac36=\\frac14\\). Hai phép thử độc lập nên số cặp thuận lợi=1×3 trong 12 cặp.\n\n**Kiểm lỗi**\n\nNếu tính \\(\\frac12+\\frac12\\), em đang cộng xác suất mà đề yêu cầu cùng xảy ra. Ôn lại mục Kiến thức 2.2. Độc lập không phải xung khắc và Bài luyện 12 tại Luyện tập 2.2. Xác suất giao của hai biến cố độc lập.",
@@ -8587,11 +8873,17 @@
       "TOP20-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng tích xác suất vì hai phép thử độc lập."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8607,11 +8899,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac12\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(1\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac1{12}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac14\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O12; luyện THPT-TOP20-P12."
   },
   {
     "item_id": "THPT-TOP20-T15",
-    "content_version": "TOP20-BANK-CP66-20261126-T15",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T15",
     "stem": "Gieo một xúc xắc sáu mặt cân đối một lần. A=ra 1 và B=ra 6. A,B có xung khắc không? Có độc lập không?",
     "answer_key": "Xung khắc; không độc lập.",
     "worked_solution": "**Lời giải:** \\(A\\cap B=\\varnothing\\) nên xung khắc; \\(P(A)P(B)=\\frac1{36}>0\\) nhưng \\(P(A\\cap B)=0\\) nên **không độc lập**.\n\n**Kiểm lỗi**\n\nNếu viết “vì không xảy ra cùng nên độc lập”, em đã đảo khái niệm. Xung khắc là giao rỗng, độc lập cần kiểm tích xác suất. Ôn lại mục Kiến thức 2.2. Độc lập không phải xung khắc và Bài luyện 13 tại Luyện tập 2.3. Phân biệt xung khắc và độc lập.",
@@ -8623,11 +8935,17 @@
       "TOP20-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So xác suất giao với tích hai xác suất."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8643,11 +8961,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Xung khắc; độc lập."
+      },
+      {
+        "id": "B",
+        "text": "Không xung khắc; độc lập."
+      },
+      {
+        "id": "C",
+        "text": "Không xung khắc; không độc lập."
+      },
+      {
+        "id": "D",
+        "text": "Xung khắc; không độc lập."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O13; luyện THPT-TOP20-P13."
   },
   {
     "item_id": "THPT-TOP20-T08",
-    "content_version": "TOP20-BANK-CP66-20261126-T08",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T08",
     "stem": "Gieo một xúc xắc sáu mặt cân đối. A là biến cố ra số lẻ, B là biến cố ra số lớn hơn 3. Tính \\(P(A\\cup B)\\) bằng quy tắc cộng.",
     "answer_key": "\\(\\frac56\\).",
     "worked_solution": "\\(A=\\{1,3,5\\}\\), \\(B=\\{4,5,6\\}\\), giao=\\(\\{5\\}\\); \\(P(A\\cup B)=\\frac36+\\frac36-\\frac16=\\frac56\\).\n\n**Kiểm lỗi**\n\nNếu ra 1, em đã cộng mà quên trừ kết quả 5 được đếm hai lần. Ôn lại mục Kiến thức 2.3. Quy tắc cộng xác suất và Bài luyện 14 tại Luyện tập 2.4. Áp dụng quy tắc cộng xác suất.",
@@ -8659,11 +8997,17 @@
       "TOP20-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Số 5 thuộc cả hai biến cố, phải trừ phần giao."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8679,11 +9023,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(1\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac16\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac56\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac12\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O14; luyện THPT-TOP20-P14."
   },
   {
     "item_id": "THPT-TOP20-T16",
-    "content_version": "TOP20-BANK-CP66-20261126-T16",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T16",
     "stem": "Gieo một xúc xắc sáu mặt cân đối. \\(A=\\{1,2\\}\\), \\(B=\\{5,6\\}\\). Tính \\(P(A\\cup B)\\) và nêu vì sao cộng trực tiếp.",
     "answer_key": "\\(\\frac23\\).",
     "worked_solution": "**Lời giải:** Hai tập rời nhau nên \\(P(A\\cap B)=0\\), \\(P(A\\cup B)=\\frac26+\\frac26=\\frac46=\\frac23\\).\n\n**Kiểm lỗi**\n\nNếu tính \\(\\dfrac26\\cdot\\dfrac26=\\dfrac19\\), em đã dùng điều kiện độc lập khi chưa kiểm tra. Ở đây A, B xung khắc và đều có xác suất dương: giao có xác suất 0, không phải \\(\\dfrac19\\). Đề hỏi hợp nên cộng trực tiếp hai xác suất. Ôn lại mục Kiến thức 2.3. Quy tắc cộng xác suất và Bài luyện 15 tại Luyện tập 2.5. Quy tắc cộng khi hai biến cố xung khắc.",
@@ -8695,11 +9059,17 @@
       "TOP20-O15"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai tập không có phần tử chung."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8715,11 +9085,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac19\\); hai biến cố độc lập."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac13\\); chỉ lấy một biến cố."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac23\\); hai biến cố xung khắc."
+      },
+      {
+        "id": "D",
+        "text": "\\(0\\); giao rỗng nên hợp rỗng."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O15; luyện THPT-TOP20-P15."
   },
   {
     "item_id": "THPT-TOP20-T09",
-    "content_version": "TOP20-BANK-CP66-20261126-T09",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T09",
     "stem": "Hai thiết bị hoạt động độc lập, xác suất hỏng lần lượt \\(\\frac{1}{5}\\) và \\(\\frac{1}{4}\\). Xác suất có ít nhất một thiết bị hoạt động là bao nhiêu?",
     "answer_key": "\\(\\frac{19}{20}\\).",
     "worked_solution": "\\(P=1-P(\\text{cả hai hỏng})=1-\\frac15\\cdot\\frac14=\\frac{19}{20}\\).\n\n**Kiểm lỗi**\n\nNếu nhân hai xác suất hoạt động \\(\\frac45\\cdot\\frac34\\), em đang tính cả hai hoạt động, không phải ít nhất một. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 16 tại Luyện tập 2.6. Quy tắc nhân cho hai phép thử độc lập.",
@@ -8731,11 +9121,17 @@
       "TOP20-O16"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Biến cố đối là cả hai thiết bị hỏng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8751,11 +9147,31 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac1{20}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{19}{20}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac35\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac9{20}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O16; luyện THPT-TOP20-P16."
   },
   {
     "item_id": "THPT-TOP20-T17",
-    "content_version": "TOP20-BANK-CP66-20261126-T17",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T17",
     "stem": "Tung đồng xu cân đối và gieo một xúc xắc sáu mặt cân đối độc lập. A=đồng xu ngửa, B=xúc xắc chẵn. Tính \\(P(A\\cup B)\\).",
     "answer_key": "\\(\\frac34\\).",
     "worked_solution": "**Lời giải:** \\(P(A)=\\frac12\\), \\(P(B)=\\frac12\\), \\(P(A\\cap B)=\\frac14\\). Vậy \\(P(A\\cup B)=\\frac12+\\frac12-\\frac14=\\frac34\\).\n\n**Kiểm lỗi**\n\nNếu được 1, em đã cộng mà chưa trừ phần **cả hai cùng xảy ra**; nếu được \\(\\frac{1}{4}\\) đó là giao, không phải hợp. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 17 tại Luyện tập 2.7. Tính xác suất hợp bằng cộng và trừ giao.",
@@ -8767,11 +9183,17 @@
       "TOP20-O17"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính giao bằng quy tắc nhân rồi cộng hai xác suất và trừ giao."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -8787,7 +9209,27 @@
       "revision_scope": "CP66_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac14\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac34\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(1\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac12\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ôn phần Kiến thức của TOP20-O17; luyện THPT-TOP20-P17."
   },
   {
     "item_id": "THPT-TOP21-T01",
