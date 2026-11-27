@@ -56,10 +56,10 @@
   },
   {
     "item_id": "THPT-G11-B08-C02",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-C02",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B08-C02.DELTA05",
     "stem": "Trong cách chia hai nhóm \\([0;10),[10;20)\\), số liệu đúng bằng 10 thuộc nhóm nào?",
     "answer_key": "\\([10;20)\\).",
-    "worked_solution": "Nhóm thứ nhất nhận các số từ 0 đến dưới 10, không nhận 10. Nhóm thứ hai nhận đầu mút trái 10, nên số liệu thuộc \\([10;20)\\).",
+    "worked_solution": "Khoảng \\([0;10)\\) nhận đầu mút trái 0 nhưng không nhận đầu mút phải 10. Khoảng \\([10;20)\\) nhận 10. Vì vậy số liệu thuộc đúng một nhóm: \\([10;20)\\). Nếu có nhóm kế tiếp \\([20;30)\\), kết luận vẫn không đổi.",
     "skill_ids": [
       "G11-B08-CLASS-BOUNDARIES"
     ],
@@ -93,11 +93,11 @@
     "options": [
       {
         "id": "A",
-        "text": "[0;10)"
+        "text": "\\([0;10)\\)"
       },
       {
         "id": "B",
-        "text": "[10;20)"
+        "text": "\\([10;20)\\)"
       },
       {
         "id": "C",
