@@ -27,7 +27,7 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC20_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9; Q18_RECEIPT_BLOB 00cfd99a633e993090bd1759437d975389c42c15; AUTHORING_PR #884; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB d6c34cdf81594ec9d3ce3275ac3d736444aa710c; Q18_RECEIPT_BLOB 3177419e51fb406324a6ce5c8b27a01d68cf5f45; AUTHORING_PR #884; PUBLIC_PROJECTION_ONLY -->
 <!-- W5_LINK_EQUIVALENT: NONE; canonical source immutable -->
 
 # Tự kiểm tra
@@ -40,34 +40,34 @@ hide:
 **Câu 1.** Rút đều một thẻ trong 10 thẻ đánh số 0 đến 9. Viết Ω và biến cố A “số chẵn”.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P03; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 2.** Túi chứa 10 phiếu khác nhau, đúng 3 phiếu có thưởng, rút đều một phiếu. Tính P(trúng).
+**Câu 2.** Túi chứa 10 phiếu khác nhau, đúng 3 phiếu có thưởng, rút đều một phiếu. Tính \(P(\text{trúng})\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P04; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 3.** Trong 12 thẻ khác nhau, có 4 thẻ bị lỗi. Rút đều một thẻ. Tính P(không lỗi) bằng biến cố đối.
+**Câu 3.** Trong 12 thẻ khác nhau, có 4 thẻ bị lỗi. Rút đều một thẻ. Tính \(P(\text{không lỗi})\) bằng biến cố đối.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P07; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 4.** Từ 7 thẻ khác nhau, trong đó có 3 thẻ ghi sao, lấy đều 2 thẻ cùng lúc (không xét thứ tự). Tính P(cả hai sao).
+**Câu 4.** Từ 7 thẻ khác nhau, trong đó có 3 thẻ ghi sao, lấy đều 2 thẻ cùng lúc (không xét thứ tự). Tính \(P(\text{cả hai sao})\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P08; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 5.** Túi có 2 bóng đỏ và 4 bóng xanh khác nhau. Chọn đều 2 bóng cùng lúc. Tính P(ít nhất một bóng đỏ).
+**Câu 5.** Túi có 2 bóng đỏ và 4 bóng xanh khác nhau. Chọn đều 2 bóng cùng lúc. Tính \(P(\text{ít nhất một bóng đỏ})\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P10; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 6.** Hộp 5 thẻ khác nhau (2 đỏ, 3 xanh), rút đều liên tiếp 2 thẻ không hoàn lại. Tính P(cả hai đỏ) bằng đếm chuỗi.
+**Câu 6.** Hộp 5 thẻ khác nhau (2 đỏ, 3 xanh), rút đều liên tiếp 2 thẻ không hoàn lại. Tính \(P(\text{cả hai đỏ})\) bằng đếm chuỗi.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P11; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 7.** Gieo xúc xắc: A=ra số lẻ, B=ra số không nhỏ hơn 5. Viết A∩B và A∪B.
+**Câu 7.** Gieo xúc xắc: A=ra số lẻ, B=ra số không nhỏ hơn 5. Viết \(A\cap B\) và \(A\cup B\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P13; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 8.** Một xúc xắc: A={1,2}, B={3,4}. Chúng có xung khắc và độc lập không?
+**Câu 8.** Một xúc xắc: \(A=\{1,2\}\), \(B=\{3,4\}\). Chúng có xung khắc và độc lập không?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P14; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 9.** Gieo xúc xắc. A={1,2,3,4}, B={2,4,6}. Tính P(A∪B) theo quy tắc cộng.
+**Câu 9.** Gieo xúc xắc. \(A=\{1,2,3,4\}\), \(B=\{2,4,6\}\). Tính \(P(A\cup B)\) theo quy tắc cộng.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P16; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 10.** Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. P(ngửa và mặt xúc xắc chia hết cho 3)?
+**Câu 10.** Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. \(P(\text{ngửa và mặt xúc xắc chia hết cho 3})\)?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P17; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 11.** Gieo hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lẻ, B: con thứ hai không lớn hơn 2. Tính P(A∪B).
+**Câu 11.** Gieo hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lẻ, B: con thứ hai không lớn hơn 2. Tính \(P(A\cup B)\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 

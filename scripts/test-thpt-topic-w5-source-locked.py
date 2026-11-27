@@ -53,6 +53,10 @@ for n,t in M["topics"].items():
     assert (blob(original),blob(receipt),blob(ready))==(t["sourceBlob"],t["q18ReceiptBlob"],t["readyBlob"]),(n,"signed SOURCE/Q18/ready mismatch")
     assert t["sourceBlob"].encode() in receipt and t["sourceBlob"].encode() in ready
     assert t["q18ReceiptBlob"].encode() in ready
+    if "v2Blob" in t:
+        v2=git("show",f'{t["authorHead"]}:{t["v2Path"]}')
+        assert blob(v2)==t["v2Blob"] and t["v2Blob"].encode() in ready,(n,"V2 custody")
+        assert all(t[k].encode() in v2 for k in ("sourceBlob","q18ReceiptBlob")) and b"STATE: CONTENT_READY" in ready,(n,"V2/READY binding")
     parts=sections(original.decode("utf-8"),n)
     k,p,q=parts
     h3=re.findall(r"(?m)^### \d+\.\d+\.",k)

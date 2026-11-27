@@ -27,7 +27,7 @@ hide:
 <span data-topic-w1-source-start="tu-kiem-tra" hidden></span>
 
 <!-- TOPIC21_APPROVED_SOURCE_START -->
-<!-- Q18 SOURCE_LEARNER_BLOB e526468f2452221e08070fc96e3a64d42ad5c8f9; Q18_RECEIPT_BLOB b0ba354f6edd5c2477aa121457570119928ccef1; AUTHORING_PR #885; PUBLIC_PROJECTION_ONLY -->
+<!-- Q18 SOURCE_LEARNER_BLOB 755472b2c90471f33ebcbe3ce3a55372348546f3; Q18_RECEIPT_BLOB 3ff0b7c83b870d73e4769444cb3ee473cd2a7665; AUTHORING_PR #885; PUBLIC_PROJECTION_ONLY -->
 <!-- W5_LINK_EQUIVALENT: NONE; canonical source immutable -->
 
 # Tự kiểm tra
@@ -40,7 +40,7 @@ Tám câu dưới đây dùng lại bài đã xuất hiện trong Luyện tập,
 **Câu 1.** Trong 40 thẻ vật lí khác nhau được chọn đều có 12 thẻ hình tam giác, trong đó đúng 5 thẻ đỏ. Biết đã chọn thẻ tam giác, tính xác suất thẻ đỏ và giải thích mẫu số.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P02; PRIMARY_OUTCOME: TOP21-O02; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
-**Câu 2.** Chọn đều một số trong 1,…,12. A: chia hết cho 4. B: lớn hơn 6. Tính P(A|B).
+**Câu 2.** Chọn đều một số trong 1,…,12. A: chia hết cho 4. B: lớn hơn 6. Tính \(P(A\mid B)\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P03; PRIMARY_OUTCOME: TOP21-O03; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
 **Câu 3.** Hộp có 5 thẻ đỏ, 2 thẻ vàng. Rút đều ba thẻ liên tiếp không hoàn lại. Tính xác suất màu theo đúng thứ tự đỏ–vàng–đỏ.
@@ -49,13 +49,13 @@ Tám câu dưới đây dùng lại bài đã xuất hiện trong Luyện tập,
 **Câu 4.** Gieo một xúc xắc cân đối. A: mặt chẵn; B: mặt lớn hơn 3. Hai biến cố độc lập không?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P05; PRIMARY_OUTCOME: TOP21-O05; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
-**Câu 5.** Kho hàng nhập 2/5 kiện từ X với tỉ lệ hỏng 1/20 và 3/5 từ Y với tỉ lệ hỏng 1/10. Lấy ngẫu nhiên một kiện. Tính tỉ lệ hỏng chung.
+**Câu 5.** Kho hàng nhập \(\frac{2}{5}\) kiện từ X với tỉ lệ hỏng \(\frac{1}{20}\) và \(\frac{3}{5}\) từ Y với tỉ lệ hỏng \(\frac{1}{10}\). Lấy ngẫu nhiên một kiện. Tính tỉ lệ hỏng chung.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P06; PRIMARY_OUTCOME: TOP21-O06; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
-**Câu 6.** Một lô gồm 1/4 sản phẩm từ H, 3/4 từ K. Xác suất mang nhãn xanh là 3/5 nếu từ H, 1/5 nếu từ K. Biết đã thấy nhãn xanh, tính xác suất sản phẩm thuộc H.
+**Câu 6.** Một lô gồm \(\frac{1}{4}\) sản phẩm từ H, \(\frac{3}{4}\) từ K. Xác suất mang nhãn xanh là \(\frac{3}{5}\) nếu từ H, \(\frac{1}{5}\) nếu từ K. Biết đã thấy nhãn xanh, tính xác suất sản phẩm thuộc H.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P07; PRIMARY_OUTCOME: TOP21-O07; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
-**Câu 7.** Chọn tuyến R xác suất 2/5, xác suất thành công khi đi R là 3/4. Chọn tuyến S xác suất 3/5, xác suất thành công khi đi S là 1/2. Tính P(S và thất bại) và P(thành công).
+**Câu 7.** Chọn tuyến R xác suất \(\frac{2}{5}\), xác suất thành công khi đi R là \(\frac{3}{4}\). Chọn tuyến S xác suất \(\frac{3}{5}\), xác suất thành công khi đi S là \(\frac{1}{2}\). Tính \(P(S\cap\text{thất bại})\) và \(P(\text{thành công})\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P08; PRIMARY_OUTCOME: TOP21-O08; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
 **Câu 8.** Trong mô hình kiểm tra 1.000 sản phẩm có đúng 20 sản phẩm lỗi. Thiết bị phát hiện 80% sản phẩm lỗi và báo nhầm 5% của 980 sản phẩm tốt. Nếu máy báo lỗi, xác suất sản phẩm thực sự lỗi là bao nhiêu?

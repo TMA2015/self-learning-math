@@ -11,13 +11,13 @@
   "topics": {
     "19": {
       "authorPR": 897,
-      "authorHead": "1bffa9555e5c549dbac11e47a3d24799d90d7e64",
+      "authorHead": "e60200c43dc1f38c83cbf4ec47e90dc96391eef8",
       "sourcePath": "prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md",
-      "sourceBlob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "sourceBlob": "ba549932e8a56bb46ec2951171e999cc70d6f34f",
       "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md",
-      "q18ReceiptBlob": "019254781e99ba857019ee662ab49056d298d18e",
+      "q18ReceiptBlob": "3d83c951f5e4df94162271b107b079451f6cc544",
       "readyPath": "prototypes/thpt/release-queue/ready/TOP19-COMBINATORICS-BINOMIAL-R11-20261117.md",
-      "readyBlob": "e6e6db32e5adb2ca981c63c3652ba8fa3c7dba9d",
+      "readyBlob": "db7922dc678e65ca5434e53d77d7a0dd034db980",
       "outcomes": 14,
       "knowledgeSections": 14,
       "practice": 42,
@@ -26,17 +26,19 @@
       "sourceSVGCount": 4,
       "optionalModel": "slm-top19-combinatorics-pascal-r00",
       "knowledgeGroups": 3,
-      "practiceGroups": 3
+      "practiceGroups": 3,
+      "v2Path": "prototypes/thpt/release-handoffs/TOP19-COMBINATORICS-BINOMIAL-R11-20261117_HANDOFF_V2.md",
+      "v2Blob": "43c0f12eb4ff79e2ff121943bd605f3ae5c45ecb"
     },
     "20": {
       "authorPR": 884,
-      "authorHead": "b576b7f542f04cb7d600e1ce0ceed3d31fcd49e2",
+      "authorHead": "6e6b89ff37f9493bef2fa951ea094110a1c7e28c",
       "sourcePath": "prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md",
-      "sourceBlob": "b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9",
+      "sourceBlob": "d6c34cdf81594ec9d3ce3275ac3d736444aa710c",
       "receiptPath": "prototypes/thpt/review-packets/TOP20_R12_Q18_AUTHOR_SELF_QA_COMPOSITE_20261118.md",
-      "q18ReceiptBlob": "00cfd99a633e993090bd1759437d975389c42c15",
+      "q18ReceiptBlob": "3177419e51fb406324a6ce5c8b27a01d68cf5f45",
       "readyPath": "prototypes/thpt/release-queue/ready/TOP20-PROBABILITY-R12-20261118.md",
-      "readyBlob": "82ab2e00f34e83b25799895793f90511e13d8360",
+      "readyBlob": "a280287b0c1177b7c651a57f5629accfc0b926dd",
       "outcomes": 17,
       "knowledgeSections": 9,
       "practice": 20,
@@ -45,17 +47,19 @@
       "sourceSVGCount": 2,
       "optionalModel": "slm-top20-prob-events-r00",
       "knowledgeGroups": 2,
-      "practiceGroups": 3
+      "practiceGroups": 3,
+      "v2Path": "prototypes/thpt/release-handoffs/TOP20-PROBABILITY-R11-20261116_HANDOFF_V2.md",
+      "v2Blob": "793beaace0a83ff9a46a02976e2741c96a234ec6"
     },
     "21": {
       "authorPR": 885,
-      "authorHead": "17182ddb33ee9ad2103e9d00c7b1ac644cbbf336",
+      "authorHead": "5fef4c1007d8e3d3737a5fa0483b276b2e67f457",
       "sourcePath": "prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md",
-      "sourceBlob": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
+      "sourceBlob": "755472b2c90471f33ebcbe3ce3a55372348546f3",
       "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md",
-      "q18ReceiptBlob": "b0ba354f6edd5c2477aa121457570119928ccef1",
+      "q18ReceiptBlob": "3ff0b7c83b870d73e4769444cb3ee473cd2a7665",
       "readyPath": "prototypes/thpt/release-queue/ready/TOP21-CONDITIONAL-BAYES-R06-20261118.md",
-      "readyBlob": "a961241abbdba1ccc0bede8d8d5f679c72f87fe8",
+      "readyBlob": "991e5e24c0fb23797209ebeca5048dbe62bcc3e8",
       "outcomes": 8,
       "knowledgeSections": 8,
       "practice": 11,
@@ -64,31 +68,36 @@
       "sourceSVGCount": 2,
       "optionalModel": "slm-top21-bayes-tree-r01",
       "knowledgeGroups": 3,
-      "practiceGroups": 3
+      "practiceGroups": 3,
+      "v2Path": "prototypes/thpt/release-handoffs/TOP21-CONDITIONAL-BAYES-R05-20261116_HANDOFF_V2.md",
+      "v2Blob": "ffa35d47a5d2c8c9e8cf23eb33a96c27ee91d17e"
     },
     "22": {
       "authorPR": 812,
-      "authorHead": "5ac65e9e4a2fa6290f73b15fa73a9e08ca0216d7",
+      "authorHead": "d53155ef922d5f5f43f9f6b4c37729a7040e013f",
       "sourcePath": "prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md",
-      "sourceBlob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
+      "sourceBlob": "f1a059fc6366d2e4bb044edd696154a0b6799d4d",
       "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC22_R09_15_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md",
-      "q18ReceiptBlob": "2e35a06020768e5a6db2e9f2fe65a46f577960c2",
+      "q18ReceiptBlob": "0969b1ff6acbf10f4b922e82fc722620d022d506",
       "readyPath": "prototypes/thpt/release-queue/ready/THPT-TOPIC-STATISTICS-G10-G12-FULL-R09.md",
-      "readyBlob": "f2d8c2d443af72eaa79c5ffc10bd8759d9d71b40",
+      "readyBlob": "afb6f691e6893464d50189916bca7e0b1751e14b",
       "outcomes": 39,
       "knowledgeSections": 13,
       "practice": 114,
       "q15Canonical": 127,
       "replay": 9,
-      "sourceSVGCount": 2,
+      "sourceSVGCount": 3,
       "optionalModel": "slm-top22-distribution-r01",
       "knowledgeGroups": 3,
       "practiceGroups": 3,
       "sourceSVGPaths": [
         "prototypes/thpt/content-drafts/topic-statistics/assets/Temp_STATISTICS_BOX_OUTLIER_R00_20261111.svg",
-        "prototypes/thpt/content-drafts/topic-statistics/assets/Temp_STATISTICS_GROUPED_FREQ_R00_20261111.svg"
+        "prototypes/thpt/content-drafts/topic-statistics/assets/Temp_STATISTICS_GROUPED_FREQ_R00_20261111.svg",
+        "prototypes/thpt/content-drafts/topic-statistics/assets/Temp_STATISTICS_HISTOGRAM_DENSITY_WORK_20261126.svg"
       ],
-      "presentationNote": "39 outcomes map to 13 Knowledge H3 tabs; original 114 SGK-owned Q15 Practice IDs and 9 same-ID replays. Two learner SVGs are under canonical topic-statistics/assets; project both unchanged to public assets. Original PDF page-index provenance P2 remains nonblocking."
+      "presentationNote": "39 outcomes map to 13 Knowledge H3 tabs; original 114 SGK-owned Q15 Practice IDs and 9 same-ID replays. Three learner SVGs are under canonical topic-statistics/assets; project all unchanged to public assets. Original PDF page-index provenance P2 remains nonblocking.",
+      "v2Path": "prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R09_HANDOFF_V2_20261116.md",
+      "v2Blob": "daf4b8091a43cbdc9f72d43f86fb3579abcf463e"
     }
   },
   "totals": {
@@ -99,7 +108,7 @@
     "practice": 187,
     "q15Canonical": 239,
     "replay": 35,
-    "sourceSVGCount": 10,
+    "sourceSVGCount": 11,
     "optionalModels": 4
   },
   "sourceCustody": "AUTHOR_SELF_VERIFIED signed receipts only, not independent NotebookLM verdict",
@@ -119,5 +128,5 @@
     "Mutually exclusive fail-closed scoped W5 deploy lane, preserving full site and prior waves",
     "final merged HEAD/P1 Pages actual HTML+assets readback, separate owner P2"
   ],
-  "sourceImagesClarification": "10 original source learner SVG assets: CĐ19 4, CĐ20 2, CĐ21 2, CĐ22 2. CĐ22 original paths are assets/Temp_STATISTICS_* and are not FIG-* filenames."
+  "sourceImagesClarification": "11 source learner SVG assets: CĐ19 4, CĐ20 2, CĐ21 2, CĐ22 3 (new signed histogram). CĐ22 uses canonical topic-statistics/assets paths."
 }
