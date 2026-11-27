@@ -1,21 +1,25 @@
 [
   {
     "item_id": "THPT-G10-B01-C01",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Xét hai câu: (a) “9 là số chính phương”; (b) “\\(x+1=3\\)”. Câu nào là mệnh đề? Câu nào chưa xác định được giá trị đúng/sai?",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B01-C01",
+    "stem": "Xét hai câu: (a) “9 là số chính phương”; (b) “\\(x+1=3\\)”. Câu nào là mệnh đề? Câu nào chưa xác định được giá trị đúng/sai? Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "(a) Mệnh đề đúng; (b) mệnh đề chứa biến, chưa có giá trị chân lý xác định khi chưa quy định x.",
     "worked_solution": "Vì \\(9=3^2\\) nên câu (a) là mệnh đề đúng. Câu (b) đúng khi \\(x=2\\) và sai với \\(x\\ne2\\). Khi chưa gán giá trị cho x, câu (b) là mệnh đề chứa biến, không thể gán một giá trị đúng/sai cố định.",
     "skill_ids": [
       "G10-B01-PROPOSITION"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Xét xem mỗi câu đã có giá trị đúng/sai xác định hay còn phụ thuộc vào biến."
+      "Xét mỗi câu có giá trị chân lý xác định hay còn phụ thuộc vào giá trị của biến."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -27,26 +31,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu kết luận câu chứa x luôn đúng hoặc luôn sai, thử \\(x=2\\) rồi \\(x=3\\) để thấy cần gán biến. Ôn Bài 1 §2.1 / HELP-G10-B01-01, sau đó tự làm THPT-TOP01-ADD01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu kết luận câu chứa x luôn đúng hoặc luôn sai, thử \\(x=2\\) rồi \\(x=3\\) để thấy cần gán biến. Ôn Bài 1 §2.1 / HELP-G10-B01-01, sau đó tự làm THPT-TOP01-ADD01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(a) mệnh đề đúng; (b) mệnh đề chứa biến."
+      },
+      {
+        "id": "B",
+        "text": "Cả hai là mệnh đề đúng."
+      },
+      {
+        "id": "C",
+        "text": "(a) mệnh đề sai; (b) mệnh đề đúng."
+      },
+      {
+        "id": "D",
+        "text": "Cả hai chưa xác định đúng/sai."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B01-C02",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Phủ định của P: “15 chia hết cho 4” là gì? Xét giá trị đúng/sai của P và phủ định.",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B01-C02",
+    "stem": "Phủ định của P: “15 chia hết cho 4” là gì? Xét giá trị đúng/sai của P và phủ định. Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "“15 không chia hết cho 4”; P sai, phủ định đúng.",
     "worked_solution": "15 chia cho 4 dư 3 nên P sai. Phủ định của P là “15 không chia hết cho 4”, một mệnh đề đúng. Phủ định giữ nguyên đối tượng và đảo giá trị chân lý của mệnh đề.",
     "skill_ids": [
       "G10-B01-NEGATION"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Phủ định thay bằng “không”, không thay 15 bằng số khác."
+      "Giữ nguyên số 15 và số 4 khi phủ định; kiểm phép chia có dư không."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -58,26 +85,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu phủ định bằng cách đổi số 15, giữ nguyên đối tượng và hỏi hai phát biểu có đúng một câu đúng không. Ôn Bài 1 §2.2; luyện THPT-G10-CHI-TRY02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu phủ định bằng cách đổi số 15, giữ nguyên đối tượng và hỏi hai phát biểu có đúng một câu đúng không. Ôn Bài 1 §2.2; luyện THPT-G10-CHI-TRY02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "P đúng; phủ định là “15 không chia hết cho 4” và sai."
+      },
+      {
+        "id": "B",
+        "text": "P sai; phủ định là “15 chia hết cho 5” và đúng."
+      },
+      {
+        "id": "C",
+        "text": "P sai; phủ định là “15 không chia hết cho 4” và đúng."
+      },
+      {
+        "id": "D",
+        "text": "P sai; phủ định là “15 không chia hết cho 4” và sai."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B01-P01",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Xác định đúng/sai của mệnh đề “Với mọi số thực x, \\(x^2+1>0\\)”.",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B01-P01",
+    "stem": "Xác định đúng/sai của mệnh đề “Với mọi số thực x, \\(x^2+1>0\\)”. Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "Đúng.",
     "worked_solution": "Với mọi \\(x\\in\\mathbb R\\), \\(x^2\\ge0\\), nên \\(x^2+1\\ge1>0\\). Lập luận đúng với mọi số thực x, vì vậy mệnh đề đúng.",
     "skill_ids": [
       "G10-B01-QUANTIFIERS"
     ],
     "problem_type_id": null,
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Với số thực, bình phương luôn không âm."
+      "Xét dấu của bình phương một số thực."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -89,26 +139,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ thử vài giá trị rồi kết luận cho mọi x, viết bất đẳng thức \\(x^2\\ge0\\) với x thực bất kỳ. Ôn Bài 1 §2.5; tự làm THPT-G10-CHI-TRY05 để phân biệt chứng minh và phản ví dụ."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ thử vài giá trị rồi kết luận cho mọi x, viết bất đẳng thức \\(x^2\\ge0\\) với x thực bất kỳ. Ôn Bài 1 §2.5; tự làm THPT-G10-CHI-TRY05 để phân biệt chứng minh và phản ví dụ.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sai vì \\(x=0\\)."
+      },
+      {
+        "id": "B",
+        "text": "Đúng vì \\(x^2\\ge0\\) với mọi số thực \\(x\\)."
+      },
+      {
+        "id": "C",
+        "text": "Sai vì bình phương của số âm luôn âm."
+      },
+      {
+        "id": "D",
+        "text": "Chưa xác định vì chưa gán một giá trị cho \\(x\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B01-P02",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Xác định đúng/sai của mệnh đề “Tồn tại số nguyên n sao cho \\(n^2=2\\)”. Viết phủ định bằng lượng từ.",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B01-P02",
+    "stem": "Xác định đúng/sai của mệnh đề “Tồn tại số nguyên n sao cho \\(n^2=2\\)”. Viết phủ định bằng lượng từ. Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "Sai; phủ định đúng: “Với mọi số nguyên n, \\(n^2\\ne2\\)”.",
     "worked_solution": "Nếu \\(n\\in\\mathbb Z\\) thì hoặc \\(|n|\\le1\\), khi đó \\(n^2\\le1\\), hoặc \\(|n|\\ge2\\), khi đó \\(n^2\\ge4\\). Không trường hợp nào cho \\(n^2=2\\). Mệnh đề tồn tại sai. Giữ nguyên miền số nguyên, đổi lượng từ \\(\\exists\\) thành \\(\\forall\\) và phủ định đẳng thức, được “Với mọi \\(n\\in\\mathbb Z\\), \\(n^2\\ne2\\)”, là mệnh đề đúng.",
     "skill_ids": [
       "G10-B01-QUANTIFIERS"
     ],
     "problem_type_id": null,
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "APPLY",
     "hints": [
-      "Xét hai trường hợp \\(|n|\\le1\\) và \\(|n|\\ge2\\); sau đó giữ nguyên miền số nguyên khi phủ định."
+      "So sánh bình phương của các số nguyên với 2, rồi đổi lượng từ và phủ định đẳng thức mà không đổi miền."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -120,26 +193,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhận \\(n=\\sqrt2\\), kiểm n có thuộc \\(\\mathbb Z\\) không. Hai trường hợp \\(|n|\\le1\\) và \\(|n|\\ge2\\) bao hết số nguyên. Ôn Bài 1 §2.5 / HELP-G10-B01-02; luyện THPT-TOP01-ADD01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhận \\(n=\\sqrt2\\), kiểm n có thuộc \\(\\mathbb Z\\) không. Hai trường hợp \\(|n|\\le1\\) và \\(|n|\\ge2\\) bao hết số nguyên. Ôn Bài 1 §2.5 / HELP-G10-B01-02; luyện THPT-TOP01-ADD01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đúng; phủ định là \\(\\forall n\\in\\mathbb Z,\\ n^2=2\\)."
+      },
+      {
+        "id": "B",
+        "text": "Sai; phủ định là \\(\\exists n\\in\\mathbb Z,\\ n^2\\ne2\\)."
+      },
+      {
+        "id": "C",
+        "text": "Sai; phủ định là \\(\\forall n\\in\\mathbb R,\\ n^2\\ne2\\)."
+      },
+      {
+        "id": "D",
+        "text": "Sai; phủ định là \\(\\forall n\\in\\mathbb Z,\\ n^2\\ne2\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B01-P03",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Với \\(n\\in\\mathbb Z\\), đặt P: “n chia hết cho 10”, Q: “n chia hết cho 5”. (a) Xét đúng/sai của \\(P\\Rightarrow Q\\) và \\(Q\\Rightarrow P\\); chứng minh hoặc nêu phản ví dụ. (b) Trong hai điều kiện P, Q, điều kiện nào đủ cho điều kiện kia, điều kiện nào cần cho điều kiện kia?",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B01-P03",
+    "stem": "Với \\(n\\in\\mathbb Z\\), đặt P: “n chia hết cho 10”, Q: “n chia hết cho 5”. (a) Xét đúng/sai của \\(P\\Rightarrow Q\\) và \\(Q\\Rightarrow P\\); chứng minh hoặc nêu phản ví dụ. (b) Trong hai điều kiện P, Q, điều kiện nào đủ cho điều kiện kia, điều kiện nào cần cho điều kiện kia? Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "\\(P\\Rightarrow Q\\) đúng; \\(Q\\Rightarrow P\\) sai (phản ví dụ \\(n=5\\)). P đủ để có Q; Q cần để có P.",
     "worked_solution": "Nếu P đúng thì \\(n=10k=5(2k)\\) với \\(k\\in\\mathbb Z\\), nên Q đúng. Với \\(n=5\\), Q đúng nhưng P sai, do đó \\(Q\\Rightarrow P\\) sai. Vì \\(P\\Rightarrow Q\\) đúng, P bảo đảm có Q (đủ); muốn có P thì nhất thiết phải có Q (cần). Phản ví dụ trên cho thấy Q không đủ cho P và P không cần cho Q.",
     "skill_ids": [
       "G10-B01-IMPLICATION"
     ],
     "problem_type_id": null,
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "APPLY",
     "hints": [
-      "Viết \\(n=10k\\) với k nguyên; xét riêng \\(n=5\\) cho chiều đảo. Điều kiện đứng trước mũi tên của mệnh đề kéo theo đúng là điều kiện đủ."
+      "Viết một bội của 10 dưới dạng tích, rồi thử một bội của 5 không chia hết cho 10. Phân biệt điều kiện đứng trước và sau mũi tên."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -151,26 +247,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đảo mũi tên hoặc nhầm cần/đủ, viết P và Q riêng, tìm một số thỏa Q nhưng không thỏa P. Ôn Bài 1 §2.3 / HELP-G10-B01-02; luyện THPT-G10-CHI-TRY03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đảo mũi tên hoặc nhầm cần/đủ, viết P và Q riêng, tìm một số thỏa Q nhưng không thỏa P. Ôn Bài 1 §2.3 / HELP-G10-B01-02; luyện THPT-G10-CHI-TRY03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(P\\Rightarrow Q\\) đúng, \\(Q\\Rightarrow P\\) sai; \\(n=5\\) là phản ví dụ. P đủ cho Q, Q cần cho P."
+      },
+      {
+        "id": "B",
+        "text": "Hai chiều đúng; P và Q là điều kiện cần và đủ của nhau."
+      },
+      {
+        "id": "C",
+        "text": "\\(P\\Rightarrow Q\\) đúng, \\(Q\\Rightarrow P\\) sai; Q đủ cho P, P cần cho Q."
+      },
+      {
+        "id": "D",
+        "text": "\\(P\\Rightarrow Q\\) sai, \\(Q\\Rightarrow P\\) đúng; P cần cho Q, Q đủ cho P."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B01-P04",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Với \\(n\\in\\mathbb Z\\), xét mệnh đề “n chẵn khi và chỉ khi \\(n^2\\) chẵn”. Đúng hay sai?",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B01-P04",
+    "stem": "Với \\(n\\in\\mathbb Z\\), xét mệnh đề “n chẵn khi và chỉ khi \\(n^2\\) chẵn”. Đúng hay sai? Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "Đúng.",
     "worked_solution": "Chiều thuận: nếu \\(n=2k\\), \\(k\\in\\mathbb Z\\), thì \\(n^2=4k^2=2(2k^2)\\) chẵn. Chiều đảo: nếu n lẻ, viết \\(n=2k+1\\) với k nguyên, suy ra \\(n^2=4k^2+4k+1=2(2k^2+2k)+1\\) lẻ. Vì thế nếu \\(n^2\\) chẵn thì n không thể lẻ, tức n chẵn. Cả hai chiều đều đúng.",
     "skill_ids": [
       "G10-B01-EQUIVALENCE"
     ],
     "problem_type_id": null,
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "APPLY",
     "hints": [
-      "Kiểm cả chiều thuận và chiều đảo. Ở chiều đảo, giả sử n lẻ rồi xét tính chẵn lẻ của bình phương."
+      "Kiểm tra cả hai chiều. Thử biểu diễn một số nguyên lẻ dưới dạng tích và tổng với 2."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -182,27 +301,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu mới chứng minh một chiều, viết hai mũi tên và xét n lẻ ở chiều đảo. Ôn Bài 1 §2.4; luyện THPT-TOP01-ADD02 để thử nhận diện chiều sai."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu mới chứng minh một chiều, viết hai mũi tên và xét n lẻ ở chiều đảo. Ôn Bài 1 §2.4; luyện THPT-TOP01-ADD02 để thử nhận diện chiều sai.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sai vì \\(n=-2\\) không chẵn."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ chiều từ n chẵn đến bình phương chẵn đúng."
+      },
+      {
+        "id": "C",
+        "text": "Đúng: n chẵn thì bình phương chẵn; n lẻ thì bình phương lẻ, nên chiều đảo cũng đúng."
+      },
+      {
+        "id": "D",
+        "text": "Đúng vì chỉ cần chứng minh chiều từ n chẵn đến bình phương chẵn."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B01-P05",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Xét mệnh đề P: “Với mọi số thực x thuộc đoạn \\([0;3]\\), ta có \\(x^2\\le4\\) và \\(x+1\\ge1\\)”. (a) Viết phủ định của P bằng lượng từ, giữ nguyên miền xét. (b) Xét đúng/sai của P và phủ định, chỉ ra một chứng cứ. (c) Một bạn viết phủ định là “Tồn tại \\(x\\in[0;3]\\) sao cho \\(x^2>4\\) và \\(x+1<1\\)”. Giải thích vì sao cách viết này sai.",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B01-P05",
+    "stem": "Xét mệnh đề P: “Với mọi số thực x thuộc đoạn \\([0;3]\\), ta có \\(x^2\\le4\\) và \\(x+1\\ge1\\)”. (a) Viết phủ định của P bằng lượng từ, giữ nguyên miền xét. (b) Xét đúng/sai của P và phủ định, chỉ ra một chứng cứ. (c) Một bạn viết phủ định là “Tồn tại \\(x\\in[0;3]\\) sao cho \\(x^2>4\\) và \\(x+1<1\\)”. Giải thích vì sao cách viết này sai. Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "Phủ định: “Tồn tại \\(x\\in[0;3]\\) sao cho \\(x^2>4\\) hoặc \\(x+1<1\\)”. P sai, phủ định đúng, chứng cứ \\(x=3\\). Bạn đã nhầm “hoặc” thành “và”.",
     "worked_solution": "Để P sai, chỉ cần có một x trong đoạn đã cho không thỏa đồng thời hai điều kiện. Điều đó có nghĩa là ít nhất một điều kiện bị vi phạm: hoặc \\(x^2>4\\), hoặc \\(x+1<1\\) (cũng có thể cả hai). Vì vậy phải đổi “với mọi” thành “tồn tại”, đổi từng bất đẳng thức sang phủ định của nó và thay “và” bằng “hoặc”. Với \\(x=3\\), ta có \\(x^2=9>4\\) nhưng \\(x+1=4\\ge1\\). Như vậy P sai và phủ định đúng. Phát biểu của bạn đòi cả hai điều kiện cùng bị vi phạm; thực tế \\(x+1\\ge1\\) với mọi \\(x\\in[0;3]\\), nên phát biểu của bạn sai, mặc dù phủ định đúng.",
     "skill_ids": [
       "G10-B01-NEGATION"
     ],
     "problem_type_id": null,
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "SYNTHESIS",
     "hints": [
-      "Một yêu cầu gồm hai điều kiện đồng thời không đạt nếu ít nhất một điều kiện bị vi phạm.",
-      "Giữ miền xét, đổi lượng từ rồi thử một đầu mút của đoạn."
+      "Giữ nguyên miền. Một yêu cầu gồm hai điều kiện đồng thời không đạt khi ít nhất một điều kiện không đạt."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -214,26 +355,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không phủ định đồng thời bằng cách đòi cả hai điều kiện sai. Chỉ cần một điều kiện không thỏa là đủ bác bỏ yêu cầu đồng thời. Ôn Bài 1 phần phủ định/lượng từ; luyện THPT-G10-CHI-TRY05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không phủ định đồng thời bằng cách đòi cả hai điều kiện sai. Chỉ cần một điều kiện không thỏa là đủ bác bỏ yêu cầu đồng thời. Ôn Bài 1 phần phủ định/lượng từ; luyện THPT-G10-CHI-TRY05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Phủ định: \\(\\exists x\\in[0;3]\\) sao cho \\(x^2>4\\) và \\(x+1<1\\). P sai, phủ định sai."
+      },
+      {
+        "id": "B",
+        "text": "Phủ định: \\(\\exists x\\in[0;3]\\) sao cho \\(x^2>4\\) hoặc \\(x+1<1\\). P sai, phủ định đúng (chọn \\(x=3\\)); bạn nhầm “hoặc” thành “và”."
+      },
+      {
+        "id": "C",
+        "text": "Phủ định: \\(\\forall x\\in[0;3]\\) sao cho \\(x^2>4\\) hoặc \\(x+1<1\\). P sai, phủ định đúng."
+      },
+      {
+        "id": "D",
+        "text": "Phủ định: \\(\\exists x\\in\\mathbb R\\) sao cho \\(x^2>4\\) hoặc \\(x+1<1\\). P đúng."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B01-P06",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Gọi P: “\\(2>3\\)”, Q: “\\(5<4\\)”. Xác định giá trị đúng/sai của \\(P\\Rightarrow Q\\) và giải thích theo quy ước mệnh đề kéo theo.",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B01-P06",
+    "stem": "Gọi P: “\\(2>3\\)”, Q: “\\(5<4\\)”. Xác định giá trị đúng/sai của \\(P\\Rightarrow Q\\) và giải thích theo quy ước mệnh đề kéo theo. Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "\\(P\\Rightarrow Q\\) đúng theo bảng giá trị chân lý (P sai, Q sai).",
     "worked_solution": "P sai vì \\(2<3\\), Q sai vì \\(5>4\\). Mệnh đề kéo theo chỉ sai khi P đúng và Q sai; khi P sai thì \\(P\\Rightarrow Q\\) đúng theo quy ước logic. Đây là giá trị chân lý của mệnh đề kéo theo, không khẳng định P hay Q đúng.",
     "skill_ids": [
       "G10-B01-IMPLICATION"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "\\(P\\Rightarrow Q\\) chỉ sai khi P đúng và Q sai."
+      "Nhớ trường hợp duy nhất làm mệnh đề kéo theo sai."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -245,26 +409,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho rằng tiền đề sai buộc kéo theo sai, xét trường hợp duy nhất \\(P\\Rightarrow Q\\) sai: P đúng, Q sai. Ôn Bài 1 §2.3, rồi tự kiểm bốn cặp đúng/sai của P, Q; luyện THPT-G10-CHI-TRY03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho rằng tiền đề sai buộc kéo theo sai, xét trường hợp duy nhất \\(P\\Rightarrow Q\\) sai: P đúng, Q sai. Ôn Bài 1 §2.3, rồi tự kiểm bốn cặp đúng/sai của P, Q; luyện THPT-G10-CHI-TRY03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sai vì P sai."
+      },
+      {
+        "id": "B",
+        "text": "Sai vì cả P và Q đều sai."
+      },
+      {
+        "id": "C",
+        "text": "Chưa xác định vì Q sai."
+      },
+      {
+        "id": "D",
+        "text": "Đúng vì mệnh đề kéo theo chỉ sai khi P đúng và Q sai."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B02-C01",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Cho \\(A=\\{1;2\\}\\), \\(B=\\{1;2;3\\}\\). Xét đúng/sai: (a) \\(2\\in A\\); (b) \\(A\\subseteq B\\); (c) \\(\\varnothing\\subseteq A\\); (d) \\(\\varnothing\\in A\\). Giải thích sự khác nhau giữa ký hiệu thuộc và ký hiệu tập con.",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B02-C01",
+    "stem": "Cho \\(A=\\{1;2\\}\\), \\(B=\\{1;2;3\\}\\). Xét đúng/sai: (a) \\(2\\in A\\); (b) \\(A\\subseteq B\\); (c) \\(\\varnothing\\subseteq A\\); (d) \\(\\varnothing\\in A\\). Giải thích sự khác nhau giữa ký hiệu thuộc và ký hiệu tập con. Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "(a) Đúng; (b) đúng; (c) đúng; (d) sai. Ký hiệu \\(\\in\\) nói về một phần tử của tập; \\(\\subseteq\\) nói về quan hệ bao hàm giữa hai tập.",
     "worked_solution": "2 là một phần tử của A. Cả 1 và 2 đều thuộc B, nên \\(A\\subseteq B\\). Tập rỗng không có phần tử nào nằm ngoài A, nên \\(\\varnothing\\subseteq A\\) (tập rỗng là tập con của mọi tập). Tuy nhiên A chỉ chứa hai số 1, 2, không chứa tập rỗng như một phần tử, nên \\(\\varnothing\\in A\\) sai.",
     "skill_ids": [
       "G10-B02-MEMBERSHIP_SUBSET"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Kiểm đối tượng ở bên trái mỗi kí hiệu: một phần tử hay một tập hợp? Tập rỗng không có phần tử."
+      "Phân biệt đối tượng bên trái là một phần tử hay một tập; tập rỗng có phần tử nào không?"
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -276,26 +463,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu viết \\(\\varnothing\\in A\\) vì \\(\\varnothing\\subseteq A\\), liệt kê chính xác phần tử A rồi kiểm định nghĩa tập con. Ôn Bài 2 §2.1 / HELP-G10-B02-01; luyện THPT-G10-CHI-TRY06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu viết \\(\\varnothing\\in A\\) vì \\(\\varnothing\\subseteq A\\), liệt kê chính xác phần tử A rồi kiểm định nghĩa tập con. Ôn Bài 2 §2.1 / HELP-G10-B02-01; luyện THPT-G10-CHI-TRY06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(a) đúng; (b) đúng; (c) sai; (d) sai."
+      },
+      {
+        "id": "B",
+        "text": "(a) đúng; (b) đúng; (c) đúng; (d) sai."
+      },
+      {
+        "id": "C",
+        "text": "(a) đúng; (b) sai; (c) đúng; (d) đúng."
+      },
+      {
+        "id": "D",
+        "text": "(a) đúng; (b) đúng; (c) đúng; (d) đúng."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B02-C02",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Với \\(A=\\{1;2;3;4\\}\\), \\(B=\\{3;4;5\\}\\), tìm \\(A\\cap B\\) và \\(A\\cup B\\).",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B02-C02",
+    "stem": "Với \\(A=\\{1;2;3;4\\}\\), \\(B=\\{3;4;5\\}\\), tìm \\(A\\cap B\\) và \\(A\\cup B\\). Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "\\(A\\cap B=\\{3;4\\}\\); \\(A\\cup B=\\{1;2;3;4;5\\}\\).",
     "worked_solution": "Giao chứa các phần tử thuộc cả hai tập, là 3 và 4. Hợp chứa các phần tử thuộc ít nhất một tập, là 1, 2, 3, 4, 5; mỗi phần tử chỉ ghi một lần.",
     "skill_ids": [
       "G10-B02-UNION_INTERSECTION"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Giao là cùng nằm trong hai tập; hợp là nằm trong ít nhất một tập."
+      "Tách phần tử thuộc cả hai tập với phần tử thuộc ít nhất một tập."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -307,26 +517,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ phần chung khỏi hợp, đánh dấu từng phần tử ở cả hai danh sách; giao cần cả hai, hợp cần ít nhất một. Ôn Bài 2 §2.3.1 / HELP-G10-B02-02; luyện THPT-TOP01-ADD03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ phần chung khỏi hợp, đánh dấu từng phần tử ở cả hai danh sách; giao cần cả hai, hợp cần ít nhất một. Ôn Bài 2 §2.3.1 / HELP-G10-B02-02; luyện THPT-TOP01-ADD03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A\\cap B=\\{3;4\\}\\), \\(A\\cup B=\\{1;2;3;4;5\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(A\\cap B=\\{1;2;3;4;5\\}\\), \\(A\\cup B=\\{3;4\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(A\\cap B=\\{3;4\\}\\), \\(A\\cup B=\\{1;2;5\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(A\\cap B=\\{1;2;5\\}\\), \\(A\\cup B=\\{1;2;3;4;5\\}\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B02-P01",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Với \\(A=\\{1;2;3;4\\}\\), \\(B=\\{3;4;5\\}\\), tìm \\(A\\setminus B\\) và \\(B\\setminus A\\).",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B02-P01",
+    "stem": "Với \\(A=\\{1;2;3;4\\}\\), \\(B=\\{3;4;5\\}\\), tìm \\(A\\setminus B\\) và \\(B\\setminus A\\). Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "\\(A\\setminus B=\\{1;2\\}\\); \\(B\\setminus A=\\{5\\}\\).",
     "worked_solution": "\\(A\\setminus B\\) lấy các phần tử thuộc A nhưng không thuộc B, là 1 và 2. \\(B\\setminus A\\) lấy các phần tử thuộc B nhưng không thuộc A, chỉ có 5. Đổi thứ tự hai tập làm thay đổi kết quả.",
     "skill_ids": [
       "G10-B02-DIFFERENCE"
     ],
     "problem_type_id": null,
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Hiệu phụ thuộc thứ tự A trừ B hay B trừ A."
+      "Mỗi hiệu chỉ lấy phần tử của tập đứng trước không có trong tập đứng sau."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -338,27 +571,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho hai hiệu giống nhau, viết hai danh sách riêng, gạch phần chung rồi giữ phần tử của tập đứng trước. Ôn Bài 2 §2.3.1; luyện THPT-G10-CHI-TRY08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho hai hiệu giống nhau, viết hai danh sách riêng, gạch phần chung rồi giữ phần tử của tập đứng trước. Ôn Bài 2 §2.3.1; luyện THPT-G10-CHI-TRY08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A\\setminus B=\\{5\\}\\), \\(B\\setminus A=\\{1;2\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(A\\setminus B=B\\setminus A=\\{3;4\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(A\\setminus B=\\{1;2\\}\\), \\(B\\setminus A=\\{5\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(A\\setminus B=B\\setminus A=\\{1;2;5\\}\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B02-P02",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Cho \\(U=\\{1;2;3;4;5;6;7;8\\}\\) và \\(V=\\{2;3;4;5;6\\}\\). Biết \\(A\\subseteq V\\) và phần bù của A trong V là \\(\\{3;5\\}\\). (a) Tìm A và phần bù của A trong U. (b) Một bạn nói hai phần bù phải giống nhau vì cùng lấy phần bù của A. Hãy giải thích. (c) Tìm những phần tử có trong phần bù của A trong U nhưng không có trong phần bù của A trong V.",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B02-P02",
+    "stem": "Cho \\(U=\\{1;2;3;4;5;6;7;8\\}\\) và \\(V=\\{2;3;4;5;6\\}\\). Biết \\(A\\subseteq V\\) và phần bù của A trong V là \\(\\{3;5\\}\\). (a) Tìm A và phần bù của A trong U. (b) Một bạn nói hai phần bù phải giống nhau vì cùng lấy phần bù của A. Hãy giải thích. (c) Tìm những phần tử có trong phần bù của A trong U nhưng không có trong phần bù của A trong V. Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "\\(A=\\{2;4;6\\}\\); \\(U\\setminus A=\\{1;3;5;7;8\\}\\). Hai phần bù khác nhau do tập đang xét khác nhau. Các phần tử thêm là \\(\\{1;7;8\\}=U\\setminus V\\).",
     "worked_solution": "Vì A là tập con của V, mỗi phần tử của V hoặc thuộc A, hoặc thuộc phần bù của A trong V, không thể thuộc cả hai. Loại 3 và 5 khỏi V, được \\(A=\\{2;4;6\\}\\). Do \\(V\\subseteq U\\), A cũng là tập con của U. Loại 2, 4, 6 khỏi U, được \\(U\\setminus A=\\{1;3;5;7;8\\}\\). Hai phần bù không giống nhau vì phần bù luôn phụ thuộc tập chứa đang xét. Các phần tử 1, 7, 8 nằm trong U nhưng ngoài V, nên không thuộc A và chỉ có trong phần bù tính theo U. Do đó \\((U\\setminus A)\\setminus(V\\setminus A)=\\{1;7;8\\}=U\\setminus V\\).",
     "skill_ids": [
       "G10-B02-COMPLEMENT"
     ],
     "problem_type_id": null,
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "APPLY",
     "hints": [
-      "Tập V được chia thành A và phần bù của A trong V.",
-      "Tìm A trước, rồi tính riêng từng phần bù từ đúng tập chứa."
+      "Tìm A trong V trước, rồi lần lượt lấy phần bù trong hai tập chứa."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -370,26 +625,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Phần bù không phải một tập xác định nếu chưa biết tập chứa. Không chỉ giữ phần tử ngoài A mà còn phải kiểm chúng nằm trong tập đang xét. Ôn Bài 2 phần phần bù; luyện THPT-G10-CHI-TRY09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Phần bù không phải một tập xác định nếu chưa biết tập chứa. Không chỉ giữ phần tử ngoài A mà còn phải kiểm chúng nằm trong tập đang xét. Ôn Bài 2 phần phần bù; luyện THPT-G10-CHI-TRY09.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A=\\{3;5\\}\\), \\(U\\setminus A=\\{1;2;4;6;7;8\\}\\); phần thêm là \\(\\{1;7;8\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(A=\\{2;4;6\\}\\), \\(U\\setminus A=\\{1;3;5;7;8\\}\\); phần thêm là \\(\\{1;7;8\\}\\), vì tập chứa thay đổi."
+      },
+      {
+        "id": "C",
+        "text": "\\(A=\\{2;4;6\\}\\), \\(U\\setminus A=\\{3;5\\}\\); không có phần thêm."
+      },
+      {
+        "id": "D",
+        "text": "\\(A=\\{2;4;6\\}\\), \\(U\\setminus A=\\{1;7;8\\}\\); phần thêm là \\(\\{1;7;8\\}\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B02-P03",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Cho \\(X=(-\\infty;2]\\), \\(Y=[2;+\\infty)\\). Tìm \\(X\\cap Y\\) và giải thích vì sao giao này không rỗng dù hai tập chỉ gặp nhau tại đầu mút.",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B02-P03",
+    "stem": "Cho \\(X=(-\\infty;2]\\), \\(Y=[2;+\\infty)\\). Tìm \\(X\\cap Y\\) và giải thích vì sao giao này không rỗng dù hai tập chỉ gặp nhau tại đầu mút. Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "\\(X\\cap Y=\\{2\\}\\).",
     "worked_solution": "\\(x\\in X\\cap Y\\) khi đồng thời \\(x\\le2\\) và \\(x\\ge2\\), tức \\(x=2\\). Cả hai đầu mút 2 đều được lấy (ngoặc vuông), nên giao chỉ gồm một phần tử, không phải tập rỗng.",
     "skill_ids": [
       "G10-B02-INTERVALS"
     ],
     "problem_type_id": null,
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Chuyển mỗi khoảng thành một bất đẳng thức; kiểm riêng \\(x=2\\)."
+      "Viết hai điều kiện bất đẳng thức và kiểm tra điểm đầu mút."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -401,26 +679,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ hai nửa khoảng chỉ chạm nhau nên giao rỗng, kiểm riêng dấu bằng ở cả hai tập. Ôn Bài 2 §2.2.2 / HELP-G10-B02-03; luyện THPT-G10-CHI-TRY10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nghĩ hai nửa khoảng chỉ chạm nhau nên giao rỗng, kiểm riêng dấu bằng ở cả hai tập. Ôn Bài 2 §2.2.2 / HELP-G10-B02-03; luyện THPT-G10-CHI-TRY10.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(X\\cap Y=\\varnothing\\) vì hai tập chỉ gặp tại đầu mút."
+      },
+      {
+        "id": "B",
+        "text": "\\(X\\cap Y=[2;+\\infty)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(X\\cap Y=(-\\infty;2]\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(X\\cap Y=\\{2\\}\\) vì cả hai đầu mút đều được lấy."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B02-P04",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Cho \\(X=(-\\infty;-1]\\), \\(Y=(2;+\\infty)\\). Tìm \\(X\\cup Y\\). Giải thích các số \\(-1\\), 0, 2 có thuộc hợp không.",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B02-P04",
+    "stem": "Cho \\(X=(-\\infty;-1]\\), \\(Y=(2;+\\infty)\\). Tìm \\(X\\cup Y\\). Giải thích các số \\(-1\\), 0, 2 có thuộc hợp không. Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "\\(X\\cup Y=(-\\infty;-1]\\cup(2;+\\infty)\\). Số \\(-1\\) thuộc hợp; 0 và 2 không thuộc hợp.",
     "worked_solution": "Thuộc hợp nghĩa là \\(x\\le-1\\) hoặc \\(x>2\\). Giữa hai tập có khoảng trống \\((-1;2]\\), nên không thể nối thành một khoảng liên tục. Số \\(-1\\) thuộc X; 0 không thuộc tập nào; 2 không thuộc X và bị loại khỏi Y bởi ngoặc tròn.",
     "skill_ids": [
       "G10-B02-INTERVALS"
     ],
     "problem_type_id": null,
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Dùng “hoặc”, không dùng “và”. Kiểm xem có khoảng trống giữa hai nửa khoảng hay không."
+      "Kiểm tra từng đầu mút và khoảng trống giữa hai nửa khoảng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -432,26 +733,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nối hợp qua khoảng trống, thử một số giữa hai đầu mút và kiểm nó có thuộc ít nhất một tập không. Ôn Bài 2 §2.2.2 / HELP-G10-B02-03; luyện THPT-G10-CHI-TRY10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nối hợp qua khoảng trống, thử một số giữa hai đầu mút và kiểm nó có thuộc ít nhất một tập không. Ôn Bài 2 §2.2.2 / HELP-G10-B02-03; luyện THPT-G10-CHI-TRY10.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(X\\cup Y=(-\\infty;-1]\\cup(2;+\\infty)\\); chỉ số \\(-1\\) trong ba số đã cho thuộc hợp."
+      },
+      {
+        "id": "B",
+        "text": "\\(X\\cup Y=\\mathbb R\\); cả ba số đều thuộc hợp."
+      },
+      {
+        "id": "C",
+        "text": "\\(X\\cup Y=(-\\infty;-1]\\cup[2;+\\infty)\\); \\(-1\\) và 2 thuộc hợp."
+      },
+      {
+        "id": "D",
+        "text": "\\(X\\cup Y=(-\\infty;-1)\\cup(2;+\\infty)\\); cả ba số không thuộc hợp."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B02-P05",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Lớp có 40 học sinh, 23 học câu lạc bộ Anh, 25 học câu lạc bộ Toán, 12 học cả hai. Hỏi bao nhiêu học sinh không học câu lạc bộ nào?",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B02-P05",
+    "stem": "Lớp có 40 học sinh, 23 học câu lạc bộ Anh, 25 học câu lạc bộ Toán, 12 học cả hai. Hỏi bao nhiêu học sinh không học câu lạc bộ nào? Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "4 học sinh.",
-    "worked_solution": "Gọi A là tập học sinh tham gia CLB Anh, B là tập tham gia CLB Toán, U là toàn bộ 40 học sinh. Vì 12 học sinh chung được tính hai lần trong tổng \\(23+25\\), phải trừ 12 một lần: \\(n(A\\cup B)=23+25-12=36\\). Số học sinh ngoài cả hai là \\(40-36=4\\). Kiểm bốn miền: chỉ Anh 11, cả hai 12, chỉ Toán 13, ngoài 4; tổng \\(11+12+13+4=40\\).",
+    "worked_solution": "Gọi A là tập học sinh tham gia CLB Anh, B là tập tham gia CLB Toán, U là toàn bộ 40 học sinh. Vì 12 học sinh chung được tính hai lần trong tổng \\(23+25\\), phải trừ 12 một lần: \\(n(A\\cup B)=23+25-12=36\\). Số học sinh ngoài cả hai là \\(40-36=4\\).",
     "skill_ids": [
       "G10-B02-VENN_MODEL"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "APPLY",
     "hints": [
-      "Tính số học ít nhất một CLB bằng công thức cộng trừ giao."
+      "Tính số học sinh thuộc ít nhất một CLB; không đếm hai lần phần giao."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -463,26 +787,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng \\(23+25\\) hoặc trừ giao hai lần, điền vùng chung trước, tính hai vùng riêng rồi lấy sĩ số trừ hợp. Ôn Bài 2 §2.3.2 / HELP-G10-B02-02; luyện THPT-TOP01-ADD06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng \\(23+25\\) hoặc trừ giao hai lần, điền vùng chung trước, tính hai vùng riêng rồi lấy sĩ số trừ hợp. Ôn Bài 2 §2.3.2 / HELP-G10-B02-02; luyện THPT-TOP01-ADD06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "12 học sinh."
+      },
+      {
+        "id": "B",
+        "text": "36 học sinh."
+      },
+      {
+        "id": "C",
+        "text": "4 học sinh."
+      },
+      {
+        "id": "D",
+        "text": "8 học sinh."
+      }
+    ],
+    "check_again": "Chỉ Anh 11, cả hai 12, chỉ Toán 13, ngoài 4; \\(11+12+13+4=40\\)."
   },
   {
     "item_id": "THPT-G10-B02-P06",
-    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Cho \\(A=\\{x\\in\\mathbb Z\\mid x^2=4\\}\\), \\(B=\\{-2;2\\}\\). (a) Hai tập A và B có bằng nhau không? (b) Trong \\(\\mathbb N,\\mathbb Z,\\mathbb Q,\\mathbb R\\), A là tập con của những tập nào? (c) Với \\(C=\\{-2;2;\\frac12;\\sqrt2\\}\\), C là tập con của những tập nào trong bốn tập số trên? Giải thích.",
+    "content_version": "G10-CHI-BANK-CP120-20261127-B02-P06",
+    "stem": "Cho \\(A=\\{x\\in\\mathbb Z\\mid x^2=4\\}\\), \\(B=\\{-2;2\\}\\). (a) Hai tập A và B có bằng nhau không? (b) Trong \\(\\mathbb N,\\mathbb Z,\\mathbb Q,\\mathbb R\\), A là tập con của những tập nào? (c) Với \\(C=\\{-2;2;\\frac12;\\sqrt2\\}\\), C là tập con của những tập nào trong bốn tập số trên? Giải thích. Chọn phương án đúng; tự giải thích kết quả trước khi xem lời giải.",
     "answer_key": "(a) \\(A=B=\\{-2;2\\}\\). (b) \\(A\\subseteq\\mathbb Z\\), \\(A\\subseteq\\mathbb Q\\), \\(A\\subseteq\\mathbb R\\); A không là tập con của \\(\\mathbb N\\). (c) C chỉ là tập con của \\(\\mathbb R\\) trong bốn tập đã cho.",
     "worked_solution": "(a) \\(x^2=4\\iff x=-2\\) hoặc \\(x=2\\); cả hai đều nguyên, nên A và B có cùng phần tử. (b) Vì \\(\\mathbb Z\\subseteq\\mathbb Q\\subseteq\\mathbb R\\), A là tập con của ba tập này; \\(-2\\notin\\mathbb N\\). (c) \\(\\frac12\\) không nguyên, \\(\\sqrt2\\) vô tỉ nên không thuộc \\(\\mathbb Q\\); mọi phần tử C đều thực. Vậy \\(C\\subseteq\\mathbb R\\), nhưng C không là tập con của \\(\\mathbb N,\\mathbb Z,\\mathbb Q\\).",
     "skill_ids": [
       "G10-B02-SET_EQUALITY"
     ],
     "problem_type_id": null,
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "SYNTHESIS",
     "hints": [
-      "Giải \\(x^2=4\\) trên đúng miền \\(\\mathbb Z\\). Để bác bỏ quan hệ tập con, tìm một phần tử không thuộc tập đang xét."
+      "Giải phương trình trong tập số nguyên; với mỗi quan hệ tập con, kiểm tra mọi phần tử thuộc tập số đang xét."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -494,8 +842,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ tìm \\(x=2\\), thử \\(x=-2\\). Khi kiểm tập con của tập số, tìm phần tử phản ví dụ như \\(-2\\) hoặc \\(\\sqrt2\\). Ôn Bài 2 §2.1, §2.2.1 / HELP-G10-B02-01 và ví dụ 3.2; luyện THPT-G10-B02-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ tìm \\(x=2\\), thử \\(x=-2\\). Khi kiểm tập con của tập số, tìm phần tử phản ví dụ như \\(-2\\) hoặc \\(\\sqrt2\\). Ôn Bài 2 §2.1, §2.2.1 / HELP-G10-B02-01 và ví dụ 3.2; luyện THPT-G10-B02-C01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A=B\\); A là tập con của cả bốn tập số; C chỉ là tập con của \\(\\mathbb R\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(A=B\\); A là tập con của \\(\\mathbb Z,\\mathbb Q,\\mathbb R\\); C chỉ là tập con của \\(\\mathbb R\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(A\\ne B\\); A là tập con của \\(\\mathbb Z,\\mathbb Q,\\mathbb R\\); C là tập con của \\(\\mathbb Q,\\mathbb R\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(A=B\\); A chỉ là tập con của \\(\\mathbb Z\\); C là tập con của \\(\\mathbb Q,\\mathbb R\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-TRY01",
