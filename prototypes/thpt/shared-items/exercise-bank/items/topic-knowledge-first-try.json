@@ -15435,11 +15435,12 @@
         "commit": "92eaf00e64b4bae1a35165926279407dc192759e",
         "author_pr": 886,
         "alt": "Hai đồ thị để đọc tiệm cận từ đường nét đứt và trục tọa độ",
-        "integration": "SOURCE_BLOB_VERIFIED_AUTHOR_BRANCH_ONLY"
+        "integration": "SOURCE_BLOB_VERIFIED_CANDIDATE_BRANCH",
+        "candidate_commit": "450e29a1c9520dcb6a7a2401f7c1bdaa18e17cc6"
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_INTERACTION_CANDIDATE_REQUIRED_VISUAL_INTEGRATION_PENDING",
+    "status": "AUTHOR_INTERACTION_CANDIDATE_REQUIRED_VISUAL_SOURCE_VERIFIED",
     "exercise_type": "INTERACTIVE",
     "options": [
       {
