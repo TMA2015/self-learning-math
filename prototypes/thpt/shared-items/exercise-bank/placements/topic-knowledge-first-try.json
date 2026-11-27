@@ -1757,98 +1757,183 @@
     "role": "TOPIC_FIRST_TRY",
     "order": 1,
     "item_id": "THPT-TOP19-T01",
-    "outcome_id": "TOP19-O01"
+    "outcome_id": "TOP19-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 2,
     "item_id": "THPT-TOP19-T02",
-    "outcome_id": "TOP19-O02"
+    "outcome_id": "TOP19-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 3,
     "item_id": "THPT-TOP19-T03",
-    "outcome_id": "TOP19-O03"
+    "outcome_id": "TOP19-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 4,
     "item_id": "THPT-TOP19-T04",
-    "outcome_id": "TOP19-O04"
+    "outcome_id": "TOP19-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 5,
     "item_id": "THPT-TOP19-T05",
-    "outcome_id": "TOP19-O05"
+    "outcome_id": "TOP19-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 6,
     "item_id": "THPT-TOP19-T06",
-    "outcome_id": "TOP19-O06"
+    "outcome_id": "TOP19-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 7,
     "item_id": "THPT-TOP19-T07",
-    "outcome_id": "TOP19-O07"
+    "outcome_id": "TOP19-O07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 8,
     "item_id": "THPT-TOP19-T08",
-    "outcome_id": "TOP19-O08"
+    "outcome_id": "TOP19-O08",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 9,
     "item_id": "THPT-TOP19-T14",
-    "outcome_id": "TOP19-O14"
+    "outcome_id": "TOP19-O14",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 10,
     "item_id": "THPT-TOP19-T09",
-    "outcome_id": "TOP19-O09"
+    "outcome_id": "TOP19-O09",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 11,
     "item_id": "THPT-TOP19-T10",
-    "outcome_id": "TOP19-O10"
+    "outcome_id": "TOP19-O10",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 12,
     "item_id": "THPT-TOP19-T13",
-    "outcome_id": "TOP19-O13"
+    "outcome_id": "TOP19-O13",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 13,
     "item_id": "THPT-TOP19-T11",
-    "outcome_id": "TOP19-O11"
+    "outcome_id": "TOP19-O11",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 14,
     "item_id": "THPT-TOP19-T12",
-    "outcome_id": "TOP19-O12"
+    "outcome_id": "TOP19-O12",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
