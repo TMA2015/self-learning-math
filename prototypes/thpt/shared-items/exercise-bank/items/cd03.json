@@ -5,7 +5,9 @@
     "stem": "Giải \\(2x+6=14\\) và chỉ rõ phép biến đổi tương đương.",
     "answer_key": "\\(S=\\{4\\}\\).",
     "worked_solution": "Trừ 6 ở cả hai vế: \\(2x=8\\). Chia cả hai vế cho 2 (khác 0), được \\(x=4\\). Thay vào đề gốc: \\(2\\cdot4+6=14\\). Cả hai bước đều đảo ngược được nên tập nghiệm giữ nguyên.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-EQUIVALENCE"
+    ],
     "original_outcome_ids": [
       "TOP03-O01"
     ],
@@ -40,7 +42,9 @@
     "stem": "So sánh tập nghiệm của \\(x=3\\) và \\(x^2=9\\). Có được thay kí hiệu kéo theo bằng tương đương khi bình phương không?",
     "answer_key": "\\(x=3\\) có \\(S_1=\\{3\\}\\); \\(x^2=9\\) có \\(S_2=\\{-3;3\\}\\); không tương đương.",
     "worked_solution": "Từ \\(x=3\\) suy ra \\(x^2=9\\), nhưng từ \\(x^2=9\\) chỉ suy ra \\(x=\\pm3\\). Phép bình phương mất thông tin dấu; muốn biến đổi hai chiều phải thêm điều kiện \\(x\\ge0\\) trong ví dụ này.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-EQUIVALENCE"
+    ],
     "original_outcome_ids": [
       "TOP03-O01"
     ],
