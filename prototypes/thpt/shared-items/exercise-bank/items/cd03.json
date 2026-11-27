@@ -185,7 +185,9 @@
     "stem": "Biện luận phương trình \\((m-1)(m-2)x=2(m-1)\\) trên \\(\\mathbb R\\) theo tham số thực m. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(m=1:\\ S=\\mathbb R;\\ m=2:\\ S=\\varnothing;\\ m\\ne1,\\ m\\ne2:\\ S=\\{\\frac2{m-2}\\}\\).",
     "worked_solution": "Hệ số của x bằng 0 khi \\(m=1\\) hoặc \\(m=2\\). Nếu \\(m=1\\), hai vế đều bằng 0, mọi \\(x\\in\\mathbb R\\) thỏa. Nếu \\(m=2\\), phương trình là \\(0=2\\), vô nghiệm. Nếu \\(m\\ne1\\) và \\(m\\ne2\\), chia hai vế cho \\((m-1)(m-2)\\) được \\(x=\\frac2{m-2}\\). Thay vào phương trình gốc cho \\(2(m-1)\\) ở hai vế. Ba trường hợp loại trừ nhau và bao hết \\(m\\in\\mathbb R\\).",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-LINEAR_PARAMETER"
+    ],
     "original_outcome_ids": [
       "TOP03-O02"
     ],
@@ -243,7 +245,9 @@
     "stem": "Giải \\((x-2)(2x+3)=0\\).",
     "answer_key": "\\(S=\\{2;-\\frac32\\}\\).",
     "worked_solution": "Tích bằng 0 khi ít nhất một thừa số bằng 0. \\(x-2=0\\Rightarrow x=2\\); \\(2x+3=0\\Rightarrow x=-\\frac32\\). Cả hai làm tích bằng 0.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-ZERO_PRODUCT"
+    ],
     "original_outcome_ids": [
       "TOP03-O03"
     ],
@@ -301,7 +305,9 @@
     "stem": "Giải \\((x-1)^2(x+4)=0\\); nghiệm kép có đếm là hai nghiệm phân biệt không? Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S=\\{1;-4\\}\\); chỉ 2 giá trị phân biệt.",
     "worked_solution": "\\((x-1)^2=0\\Leftrightarrow x=1\\); \\(x+4=0\\Leftrightarrow x=-4\\). Bội của nghiệm 1 là 2 nhưng tập nghiệm chỉ ghi mỗi giá trị một lần.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-ZERO_PRODUCT"
+    ],
     "original_outcome_ids": [
       "TOP03-O03"
     ],
@@ -359,7 +365,9 @@
     "stem": "Giải \\(2x^2-6x-8=0\\) bằng biệt thức thu gọn \\(\\Delta'\\), sau đó kiểm bằng phân tích nhân tử. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(\\Delta'=25;\\ S=\\{-1;4\\}\\).",
     "worked_solution": "\\(a=2,\\ b'=-3,\\ c=-8\\). \\(\\Delta'=(-3)^2-2\\cdot(-8)=25>0\\). Công thức \\(x=\\frac{-b'\\pm\\sqrt{\\Delta'}}a\\) cho \\(x=\\frac{3\\pm5}2\\), tức 4 và \\(-1\\). Kiểm: \\(2x^2-6x-8=2(x-4)(x+1)\\). Hai nghiệm làm tích bằng 0.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-QUADRATIC_EQUATION"
+    ],
     "original_outcome_ids": [
       "TOP03-O04"
     ],
@@ -417,7 +425,9 @@
     "stem": "So sánh số nghiệm thực phân biệt và tập nghiệm của (1) \\(x^2+2x+5=0\\) và (2) \\(x^2+2x+1=0\\). Giải thích sự khác nhau. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "(1) \\(S=\\varnothing\\) (0 nghiệm); (2) \\(S=\\{-1\\}\\) (1 nghiệm kép).",
     "worked_solution": "(1) \\(\\Delta=4-20=-16<0\\); viết \\((x+1)^2+4=0\\) cũng thấy vô nghiệm thực. (2) \\(\\Delta=4-4=0\\); \\((x+1)^2=0\\) chỉ cho \\(x=-1\\), là nghiệm kép nhưng chỉ một giá trị phân biệt. \\(\\Delta<0\\) và \\(\\Delta=0\\) không cùng số nghiệm thực.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-QUADRATIC_EQUATION"
+    ],
     "original_outcome_ids": [
       "TOP03-O04"
     ],
@@ -475,7 +485,9 @@
     "stem": "Giải \\(\\frac{x^2-4}{x-2}=0\\). Giải thích vì sao \\(x=2\\) bị loại. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S=\\{-2\\}\\).",
     "worked_solution": "Điều kiện \\(x\\ne2\\). Tử \\((x-2)(x+2)=0\\) cho \\(x=2\\) hoặc \\(x=-2\\); chỉ \\(x=-2\\) hợp miền. Rút gọn thành \\(x+2=0\\) chỉ được dùng trên miền \\(x\\ne2\\), không tự bổ sung điểm bị loại.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-RATIONAL_EQUATION"
+    ],
     "original_outcome_ids": [
       "TOP03-O05"
     ],
@@ -533,7 +545,9 @@
     "stem": "Giải \\(\\frac1{x-1}+\\frac1{x+1}=1\\) trong \\(\\mathbb R\\).",
     "answer_key": "\\(S=\\{1-\\sqrt2;1+\\sqrt2\\}\\).",
     "worked_solution": "Điều kiện \\(x\\ne\\pm1\\). Quy đồng thành \\(\\frac{2x}{x^2-1}=1\\); nhân với mẫu khác 0 cho \\(2x=x^2-1\\Rightarrow x^2-2x-1=0\\Rightarrow x=1\\pm\\sqrt2\\). Hai nghiệm đều khác \\(\\pm1\\) nên được nhận.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-RATIONAL_EQUATION"
+    ],
     "original_outcome_ids": [
       "TOP03-O05"
     ],
@@ -591,7 +605,9 @@
     "stem": "Giải \\(\\lvert2x-3\\rvert=5\\).",
     "answer_key": "\\(S=\\{-1;4\\}\\).",
     "worked_solution": "Vì \\(5\\ge0\\), \\(\\lvert2x-3\\rvert=5\\) khi và chỉ khi \\(2x-3=5\\) hoặc \\(2x-3=-5\\). Hai nhánh cho \\(x=4\\) và \\(x=-1\\); thử lại cả hai có giá trị tuyệt đối 5.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-ABSOLUTE_EQUATION"
+    ],
     "original_outcome_ids": [
       "TOP03-O06"
     ],
@@ -649,7 +665,9 @@
     "stem": "Giải \\(\\lvert x-2\\rvert=x\\).",
     "answer_key": "\\(S=\\{1\\}\\).",
     "worked_solution": "Vế trái không âm nên \\(x\\ge0\\). Nếu \\(x\\ge2\\) thì \\(\\lvert x-2\\rvert=x-2\\), phương trình trở thành \\(x-2=x\\), vô nghiệm. Nếu \\(0\\le x<2\\) thì \\(\\lvert x-2\\rvert=2-x=x\\Rightarrow x=1\\) hợp miền. Thử \\(\\lvert1-2\\rvert=1\\).",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-ABSOLUTE_EQUATION"
+    ],
     "original_outcome_ids": [
       "TOP03-O06"
     ],
@@ -1071,7 +1089,9 @@
     "stem": "Giải phương trình \\(x^4-5x^2+4=0\\) trong \\(\\mathbb R\\) bằng ẩn phụ.",
     "answer_key": "\\(S=\\{-2;-1;1;2\\}\\).",
     "worked_solution": "Đặt \\(t=x^2\\ge0\\); khi đó \\(t^2-5t+4=(t-1)(t-4)=0\\Rightarrow t\\in\\{1;4\\}\\), đều không âm. Quay lại \\(x^2=1\\Rightarrow x=\\pm1\\); \\(x^2=4\\Rightarrow x=\\pm2\\). Thử bằng cách thay t vào phương trình.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-BIQUADRATIC_SUBSTITUTION"
+    ],
     "original_outcome_ids": [
       "TOP03-O11"
     ],
@@ -1129,7 +1149,9 @@
     "stem": "Giải \\(x^4+3x^2-4=0\\) bằng \\(t=x^2\\); giải thích vì sao một giá trị t bị loại. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S=\\{-1;1\\}\\).",
     "worked_solution": "Đặt \\(t=x^2\\ge0\\), giải \\(t^2+3t-4=(t+4)(t-1)=0\\) cho \\(t=1\\) hoặc \\(t=-4\\). Vì \\(t\\ge0\\), loại \\(-4\\); từ \\(x^2=1\\) được \\(x=\\pm1\\).",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP03-SKILL-BIQUADRATIC_SUBSTITUTION"
+    ],
     "original_outcome_ids": [
       "TOP03-O11"
     ],
