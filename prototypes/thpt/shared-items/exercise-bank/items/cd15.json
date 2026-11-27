@@ -1304,10 +1304,10 @@
   },
   {
     "item_id": "THPT-TOP15-P25",
-    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P25",
-    "stem": "Trong tứ diện \\(S.ABC\\), mặt cắt tam giác MNK song song đáy ABC có tỉ số \\(SM/SA=3/4\\). Biết diện tích ABC bằng \\(64\\,\\mathrm{cm}^2\\). Chiếu vuông góc MNK xuống mặt phẳng đáy. Tính diện tích MNK và diện tích tam giác ảnh.",
+    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P25.DELTA01",
+    "stem": "Trong tứ diện \\(S.ABC\\), lấy \\(M,N,K\\) lần lượt thuộc phần trong các cạnh \\(SA,SB,SC\\) sao cho mặt phẳng \\((MNK)\\) song song với \\((ABC)\\). Biết \\(\\frac{SM}{SA}=\\frac34\\) và diện tích tam giác \\(ABC\\) bằng \\(64\\,\\mathrm{cm}^2\\). Chiếu vuông góc tam giác \\(MNK\\) lên mặt phẳng \\((ABC)\\). Tính diện tích tam giác \\(MNK\\) và diện tích tam giác ảnh.",
     "answer_key": "Cả hai diện tích đều bằng \\(36\\,\\mathrm{cm}^2\\).",
-    "worked_solution": "Hai tam giác MNK và ABC đồng dạng với tỉ số cạnh \\(3/4\\). Do đó \\(S_{MNK}=(3/4)^2\\cdot64=36\\,\\mathrm{cm}^2\\). Hai mặt phẳng song song, nên khi chiếu vuông góc xuống đáy, mỗi điểm của MNK được dịch theo cùng một vectơ vuông góc đáy. Ảnh tam giác bằng tam giác MNK, nên diện tích ảnh cũng bằng \\(36\\,\\mathrm{cm}^2\\).",
+    "worked_solution": "Vì hai mặt phẳng song song, các cạnh tương ứng của hai tam giác song song. Tỉ số đồng dạng của \\(MNK\\) và \\(ABC\\) là \\(\\frac{SM}{SA}=\\frac34\\). Tỉ số diện tích bằng bình phương tỉ số đồng dạng, nên \\(S_{MNK}=\\left(\\frac34\\right)^2\\cdot64=36\\,\\mathrm{cm}^2\\). Khi chiếu vuông góc từ mặt phẳng \\((MNK)\\) xuống mặt phẳng \\((ABC)\\), mọi điểm được dịch chuyển theo cùng một vectơ vuông góc với đáy. Tam giác ảnh bằng tam giác \\(MNK\\), nên diện tích ảnh cũng bằng \\(36\\,\\mathrm{cm}^2\\).",
     "skill_ids": [
       "G11-B13-PRISM_RATIO",
       "G11-B14-AFFINE_INVARIANTS"
@@ -1356,7 +1356,8 @@
       "scope": "NEW_DISTINCT_COVERAGE_VARIANT_NOT_IMPORTED_SGK_ITEM"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_INTERACTION_CANDIDATE"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "author_review_note": "Clarified vertex-edge correspondence required to use SM/SA as similarity ratio; checked same key and no placement or skill change. Targeted author review; independent acceptance pending."
   },
   {
     "item_id": "THPT-TOP15-P26",
