@@ -928,21 +928,27 @@
   },
   {
     "item_id": "THPT-G10-CHI-TRY03",
-    "content_version": "SOURCE_BLOB_dba6430cd79b17dee0591fb2dcd075ea5200b126_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(n\\in\\mathbb Z\\): \\(P\\): “\\(n\\) chia hết cho 8”, \\(Q\\): “\\(n\\) chia hết cho 4”. \\(P\\Rightarrow Q\\) đúng hay sai? Mệnh đề đảo \\(Q\\Rightarrow P\\) đúng hay sai? Hãy chỉ ra một phản ví dụ nếu có.",
-    "answer_key": "P⇒Q đúng; Q⇒P sai, phản ví dụ n=4.",
-    "worked_solution": "\\(P\\Rightarrow Q\\) **đúng**, vì \\(n=8t=4(2t)\\). \\(Q\\Rightarrow P\\) **sai**: \\(n=4\\) chia hết cho 4 nhưng không chia hết cho 8.",
+    "content_version": "CD01-BANK-CP121-20261127-TRY03",
+    "stem": "Với \\(n\\in\\mathbb Z\\): \\(P\\): “\\(n\\) chia hết cho 8”, \\(Q\\): “\\(n\\) chia hết cho 4”. \\(P\\Rightarrow Q\\) đúng hay sai? Mệnh đề đảo \\(Q\\Rightarrow P\\) đúng hay sai? Hãy chỉ ra một phản ví dụ nếu có. Chọn phương án đúng; tự giải thích trước khi xem lời giải.",
+    "answer_key": "\\(P\\Rightarrow Q\\) đúng; \\(Q\\Rightarrow P\\) sai, phản ví dụ \\(n=4\\).",
+    "worked_solution": "\\(P\\Rightarrow Q\\) đúng: nếu \\(n=8t\\) với \\(t\\in\\mathbb Z\\) thì \\(n=4(2t)\\). Chiều đảo sai: \\(n=4\\) chia hết cho 4 nhưng không chia hết cho 8.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B01-IMPLICATION"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Biểu diễn bội của 8; xét một bội của 4 không phải bội của 8."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -955,7 +961,26 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(P\\Rightarrow Q\\) đúng; \\(Q\\Rightarrow P\\) sai, phản ví dụ \\(n=4\\)."
+      },
+      {
+        "id": "B",
+        "text": "Hai chiều đều đúng."
+      },
+      {
+        "id": "C",
+        "text": "\\(P\\Rightarrow Q\\) sai; \\(Q\\Rightarrow P\\) đúng."
+      },
+      {
+        "id": "D",
+        "text": "Hai chiều đều sai."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-TRY04",
@@ -1022,8 +1047,8 @@
   },
   {
     "item_id": "THPT-G10-CHI-TRY06",
-    "content_version": "SOURCE_BLOB_3002487e974f2693528a39b2b2055fad8724d698_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(A=\\{2,4\\}\\), hãy tự xét ba phát biểu: (a) \\(2\\in A\\); (b) \\(\\{2\\}\\subseteq A\\); (c) \\(\\{2\\}\\in A\\). Nghĩ xem hai vế của ký hiệu đang nói về *số* hay *tập* trước khi mở đối chiếu.",
+    "content_version": "CD01-BANK-CP121-20261127-TRY06",
+    "stem": "Với \\(A=\\{2;4\\}\\), hãy tự xét ba phát biểu: (a) \\(2\\in A\\); (b) \\(\\{2\\}\\subseteq A\\); (c) \\(\\{2\\}\\in A\\). Nghĩ xem hai vế của ký hiệu đang nói về *số* hay *tập* trước khi mở đối chiếu. Chọn phương án đúng; tự giải thích trước khi xem lời giải.",
     "answer_key": "(a) Đúng; (b) đúng; (c) sai.",
     "worked_solution": "(a) **Đúng** vì 2 là phần tử của A. (b) **Đúng** vì phần tử duy nhất 2 của \\(\\{2\\}\\) nằm trong A. (c) **Sai** vì A chỉ có hai phần tử là các **số** 2 và 4, không chứa tập \\(\\{2\\}\\) như một phần tử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1032,11 +1057,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Phân biệt số 2 với tập chỉ chứa số 2; liệt kê đúng những phần tử của A."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1049,7 +1080,26 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(a) đúng; (b) sai; (c) đúng."
+      },
+      {
+        "id": "B",
+        "text": "(a) sai; (b) đúng; (c) sai."
+      },
+      {
+        "id": "C",
+        "text": "(a) đúng; (b) đúng; (c) sai."
+      },
+      {
+        "id": "D",
+        "text": "Cả ba đều đúng."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-TRY10",
