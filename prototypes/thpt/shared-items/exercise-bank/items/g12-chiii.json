@@ -1513,10 +1513,10 @@
   },
   {
     "item_id": "THPT-G12-B10-C04",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-C04",
-    "stem": "Nếu \\(s^2=9\\) cm², độ lệch chuẩn s là bao nhiêu?",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-C04.DELTA05",
+    "stem": "Một mẫu có phương sai \\(s^2=9\\,\\mathrm{cm}^2\\). Độ lệch chuẩn s có giá trị và đơn vị nào?",
     "answer_key": "3 cm",
-    "worked_solution": "Độ lệch chuẩn là căn không âm của phương sai: \\(s=\\sqrt9=3\\) cm. Đơn vị trở lại cùng đơn vị dữ liệu.",
+    "worked_solution": "Độ lệch chuẩn là căn bậc hai không âm của phương sai: \\(s=\\sqrt9\\,\\mathrm{cm}=3\\,\\mathrm{cm}\\). Phương sai có đơn vị bình phương, lấy căn trả về đơn vị dữ liệu. Nếu nhầm đơn vị, xem lại mục 4 của Bài 10.",
     "skill_ids": [
       "G12-CHIII-B10-O04"
     ],
