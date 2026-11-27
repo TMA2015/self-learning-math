@@ -1617,7 +1617,8 @@
       "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
       "heading_id": "THPT-G12-CHI-B01-W01",
       "active_solution_delta_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
-      "delta_review_blob": "9f0466b7ded7d2a7441fdc55768949536f7a680e"
+      "delta_review_blob": "9f0466b7ded7d2a7441fdc55768949536f7a680e",
+      "effective_solution_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1625,7 +1626,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B01-EXTREMA_SIGN_CHANGE"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B01-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-CHI-B01-W02",
@@ -1633,7 +1641,8 @@
       "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
       "heading_id": "THPT-G12-CHI-B01-W02",
       "active_solution_delta_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
-      "delta_review_blob": "9f0466b7ded7d2a7441fdc55768949536f7a680e"
+      "delta_review_blob": "9f0466b7ded7d2a7441fdc55768949536f7a680e",
+      "effective_solution_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1641,7 +1650,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B01-DOMAIN_INTERVALS"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B01-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-CHI-B02-W01",
@@ -1655,7 +1671,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B02-CRITICAL_END_POINTS"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B02-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-CHI-B02-W02",
@@ -1669,7 +1692,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B02-OPTIMIZATION_MODEL"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B02-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-CHI-B03-W01",
@@ -1683,7 +1713,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B03-GRAPH_INTERPRETATION"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B03-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-CHI-B03-W02",
@@ -1697,7 +1734,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B03-OBLIQUE_REMAINDER"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B03-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-CHI-B04-W01",
@@ -1711,7 +1755,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B04-CUBIC_VARIATION"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B04-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-CHI-B04-W02",
@@ -1725,7 +1776,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B04-DOMAIN_NONCONNECT"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B04-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-CHI-B05-W01",
@@ -1739,7 +1797,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B05-BOUNDARY_FEASIBILITY"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B05-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-CHI-B05-W02",
@@ -1753,7 +1818,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B05-MARGINAL_COST"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B05-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-CHI-END-W01",
@@ -1767,7 +1839,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-END-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-CHI-END-W02",
@@ -1781,7 +1860,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-END-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP10-W01",
@@ -1791,7 +1877,14 @@
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B01-EXTREMA_SIGN_CHANGE"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP10-W02",
@@ -1801,7 +1894,14 @@
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B02-CRITICAL_END_POINTS"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP10-W03",
@@ -1811,7 +1911,14 @@
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B03-OBLIQUE_REMAINDER"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP10-W04",
@@ -1821,7 +1928,14 @@
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B04-CUBIC_VARIATION"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP10-W05",
@@ -1831,7 +1945,14 @@
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B05-OPTIMIZATION_DERIVATIVE"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP10-W06",
@@ -1841,7 +1962,14 @@
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-B05-UNIT_ASSUMPTION_CHECK"
+    ],
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B11-W01",
