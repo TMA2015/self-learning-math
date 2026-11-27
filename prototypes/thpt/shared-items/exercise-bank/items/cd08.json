@@ -1,7 +1,7 @@
 [
   {
     "item_id": "THPT-TOP08-P01",
-    "content_version": 1,
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P01",
     "stem": "Dãy \\(u_n=5+\\frac4n\\), n nguyên dương. Tìm giới hạn, cho biết có số hạng nào bằng 5 không và tìm chỉ số nhỏ nhất để \\(|u_n-5|<0{,}1\\).",
     "answer_key": "Giới hạn 5; không đạt 5; n nhỏ nhất là 41.",
     "worked_solution": "Vì \\(\\frac4n\\to0\\) nên \\(u_n\\to5\\). Với mọi \\(n\\ge1\\), \\(u_n-5=\\frac4n>0\\) nên không số hạng nào bằng 5. Điều kiện \\(\\frac4n<0{,}1\\) tương đương \\(n>40\\) vì n dương; chỉ số nguyên nhỏ nhất là 41. Tại \\(n=40\\), khoảng cách đúng bằng \\(0{,}1\\) nên không thỏa dấu nghiêm.",
@@ -12,27 +12,50 @@
       "TOP08-O01"
     ],
     "problem_type_id": "TOP08-FINITE_LIMIT",
-    "difficulty": "BASIC",
+    "difficulty": "APPLY",
     "hints": [
       "Tìm khoảng cách \\(|u_n-5|\\) và điều kiện chỉ số."
     ],
     "remediation": "Nếu coi giới hạn phải là số hạng, giải \\(\\frac4n=0\\) rồi kiểm n hữu hạn. Khi tìm chỉ số nhỏ nhất, phân biệt nhỏ hơn và nhỏ hơn hoặc bằng. Ôn TOP08-M01; luyện THPT-G11-CHV-B15-C01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P01 · TOP08-O01"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(5;\\text{không đạt }5;\\ n=40\\)"
+      },
+      {
+        "id": "B",
+        "text": "Giới hạn 5; không đạt 5; n nhỏ nhất là 41."
+      },
+      {
+        "id": "C",
+        "text": "\\(5;\\text{đạt tại }n=40;\\ n=40\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(9;\\text{không đạt }9;\\ n=41\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P02",
-    "content_version": 1,
-    "stem": "Xét \\(v_n=(-1)^n+\\frac1n\\), \\(n\\ge1\\). Dãy có giới hạn hữu hạn hay giới hạn ±∞ không? Giải thích bằng hai dãy chỉ số chẵn/lẻ.",
-    "answer_key": "Không có giới hạn hữu hạn hay ±∞.",
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P02",
+    "stem": "Xét \\(v_n=(-1)^n+\\frac1n\\), \\(n\\ge1\\). Dãy có giới hạn hữu hạn hay giới hạn \\(\\pm\\infty\\) không? Giải thích bằng hai dãy chỉ số chẵn/lẻ. Chọn kết luận đúng và tự trình bày lập luận trước khi đối chiếu.",
+    "answer_key": "Không có giới hạn hữu hạn hay \\(\\pm\\infty\\).",
     "worked_solution": "Với \\(n=2k\\), \\(v_{2k}=1+\\frac1{2k}\\to1\\). Với \\(n=2k+1\\), \\(v_{2k+1}=-1+\\frac1{2k+1}\\to-1\\). Hai dãy con tiến tới hai số khác nhau; không thể có giới hạn chung, và cũng không tiến tới vô cực cùng dấu.",
     "skill_ids": [
       "G11-B15-INFINITE_SEQUENCE"
@@ -41,25 +64,48 @@
       "TOP08-O02"
     ],
     "problem_type_id": "TOP08-OSCILLATION_DIVERGENCE",
-    "difficulty": "UNDERSTAND",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Tách n chẵn, lẻ; so hai giới hạn."
     ],
     "remediation": "Nếu cho số hạng luân phiên vẫn hội tụ, tách chỉ số chẵn/lẻ và so kết quả. Ôn TOP08-M02; luyện THPT-G11-CHV-B15-P05.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P02 · TOP08-O02"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-1\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(1\\)"
+      },
+      {
+        "id": "C",
+        "text": "Không có giới hạn hữu hạn hay \\(\\pm\\infty\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(+\\infty\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P03",
-    "content_version": 1,
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P03",
     "stem": "Tính \\(\\lim_{n\\to\\infty}\\left(-\\frac25\\right)^n\\) và cho biết việc luân phiên dấu có ngăn dãy hội tụ không.",
     "answer_key": "Giới hạn bằng 0; luân phiên dấu không ngăn hội tụ.",
     "worked_solution": "Do \\(\\left|-\\frac25\\right|=\\frac25<1\\), trị tuyệt đối \\(\\left|(-\\frac25)^n\\right|=(\\frac25)^n\\to0\\). Suy ra chính dãy tiến về 0 theo định lí kẹp; dấu có thể luân phiên nhưng độ lớn giảm về 0.",
@@ -70,25 +116,48 @@
       "TOP08-O03"
     ],
     "problem_type_id": "TOP08-GEOMETRIC_QN",
-    "difficulty": "APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So \\(|q|\\) với 1, không chỉ xét dấu q."
     ],
     "remediation": "Nếu q âm khiến em kết luận không hội tụ, xét \\(|q|\\) và độ lớn từng số hạng. Ôn TOP08-M03; luyện THPT-TOP08-P02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P03 · TOP08-O03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\text{không hội tụ do luân phiên dấu}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(-\\infty\\)"
+      },
+      {
+        "id": "D",
+        "text": "Giới hạn bằng 0; luân phiên dấu không ngăn hội tụ."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P04",
-    "content_version": 1,
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P04",
     "stem": "Tính \\(\\lim_{n\\to\\infty}\\frac{7n^2-3n+1}{2n^2+n}\\) với \\(n\\ge1\\).",
     "answer_key": "\\(\\frac{7}{2}\\).",
     "worked_solution": "Chia cả tử/mẫu cho \\(n^2\\): \\(\\frac{7-\\frac3n+\\frac1{n^2}}{2+\\frac1n}\\to\\frac72\\). Mẫu giới hạn bằng 2 khác 0 nên luật thương hợp lệ.",
@@ -106,18 +175,41 @@
     "remediation": "Nếu chia cho n thay \\(n^2\\), viết từng số hạng sau khi chia; kiểm mẫu tiến về số khác 0. Ôn TOP08-M04; luyện THPT-G11-CHV-B15-P01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P04 · TOP08-O04"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{7}{2}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(7\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(2/7\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P05",
-    "content_version": 1,
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P05",
     "stem": "Tính tổng vô hạn \\(12+3+\\frac34+\\frac3{16}+\\cdots\\), và nêu điều kiện dùng công thức.",
     "answer_key": "16; công bội \\(q=\\frac14\\) thỏa \\(|q|<1\\).",
     "worked_solution": "Đây là CSN \\(a=12\\), \\(q=\\frac3{12}=\\frac14\\). \\(S_n=\\frac{12(1-(\\frac14)^n)}{1-\\frac14}\\); khi \\(n\\to\\infty\\) thì \\((\\frac14)^n\\to0\\) nên tổng vô hạn bằng \\(\\frac{12}{\\frac34}=16\\).",
@@ -135,20 +227,43 @@
     "remediation": "Nếu dùng công thức tổng cấp số nhân vô hạn khi \\(|q|\\ge1\\), kiểm \\(q^n\\) có tiến về 0 không. Với số hạng đầu khác 0, điều này là điều kiện cần để có tổng hữu hạn. Ôn TOP08-M05; luyện THPT-G11-CHV-B15-P06.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P05 · TOP08-O05"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(15;\\ q=1/4\\)"
+      },
+      {
+        "id": "B",
+        "text": "16; công bội \\(q=\\frac14\\) thỏa \\(|q|<1\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(12;\\ q=1/4\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(16;\\ q=4\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P06",
-    "content_version": 1,
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P06",
     "stem": "Với \\(f(x)=\\frac{x^2-6x+8}{x-2}\\), \\(x\\ne2\\), tính \\(\\lim_{x\\to2}f(x)\\). Hàm có cần định nghĩa tại \\(x=2\\) để có giới hạn không?",
-    "answer_key": "Giới hạn −2; \\(f(2)\\) không cần được định nghĩa.",
+    "answer_key": "Giới hạn \\(-2\\); \\(f(2)\\) không cần được định nghĩa.",
     "worked_solution": "Tử \\((x-2)(x-4)\\). Với \\(x\\ne2\\), \\(f(x)=x-4\\), nên khi \\(x\\to2\\) thì \\(f(x)\\to-2\\). Phép rút gọn chỉ đúng trong lân cận loại điểm; giới hạn không xác nhận \\(f(2)\\).",
     "skill_ids": [
       "G11-B16-LIMIT_AT_POINT"
@@ -164,18 +279,41 @@
     "remediation": "Nếu thế \\(x=2\\) sau khi khử và ghi \\(f(2)\\), phân biệt biểu thức rút gọn trong lân cận với giá trị hàm ban đầu. Ôn TOP08-M06; luyện THPT-G11-CHV-B16-C01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P06 · TOP08-O06"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(2;\\ f(2)\\text{ không cần xác định}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{không có giới hạn vì }f(2)\\text{ không xác định}\\)"
+      },
+      {
+        "id": "C",
+        "text": "Giới hạn \\(-2\\); \\(f(2)\\) không cần được định nghĩa."
+      },
+      {
+        "id": "D",
+        "text": "\\(0;\\ f(2)\\text{ phải xác định}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P07",
-    "content_version": 1,
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P07",
     "stem": "Cho \\(f(x)=x+1\\) nếu \\(x<1\\), và \\(f(x)=x^2+3\\) nếu \\(x\\ge1\\). Tính hai giới hạn một phía tại 1 và quyết định có \\(\\lim_{x\\to1}f(x)\\) không.",
     "answer_key": "Trái 2, phải 4; không tồn tại giới hạn hai phía hữu hạn.",
     "worked_solution": "Khi \\(x\\to1^-\\) dùng nhánh \\(x+1\\) nên được 2. Khi \\(x\\to1^+\\) dùng nhánh \\(x^2+3\\) nên được 4. Hai giới hạn một phía khác nhau thì giới hạn hai phía không tồn tại dù \\(f(1)=4\\) xác định.",
@@ -186,27 +324,50 @@
       "TOP08-O07"
     ],
     "problem_type_id": "TOP08-ONE_SIDED_JUMP",
-    "difficulty": "UNDERSTAND",
+    "difficulty": "APPLY",
     "hints": [
       "Đọc công thức riêng ở mỗi phía điểm nối."
     ],
     "remediation": "Nếu chỉ dùng nhánh chứa điểm nối, tính hai giới hạn riêng, không dùng \\(f(1)\\) thay giới hạn trái. Ôn TOP08-M07; luyện THPT-G11-CHV-B16-P03.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P07 · TOP08-O07"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\text{trái }2,\\text{ phải }2;\\text{giới hạn }2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{trái }4,\\text{ phải }4;\\text{giới hạn }4\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\text{trái }2,\\text{ phải }4;\\text{giới hạn }4\\)"
+      },
+      {
+        "id": "D",
+        "text": "Trái 2, phải 4; không tồn tại giới hạn hai phía hữu hạn."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P08",
-    "content_version": 1,
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P08",
     "stem": "Xét \\(f(x)=\\frac{x+1}{x-2}\\). Khi \\(x\\to2^-\\) và \\(x\\to2^+\\), \\(f(x)\\) tiến tới đâu? Có giới hạn hữu hạn hai phía không?",
-    "answer_key": "Giới hạn trái −∞, phải +∞; không có giới hạn hai phía hữu hạn.",
+    "answer_key": "Giới hạn trái \\(-\\infty\\), phải +∞; không có giới hạn hai phía hữu hạn.",
     "worked_solution": "Gần \\(x=2\\), tử \\(x+1\\) tiến tới \\(3>0\\). Khi \\(x\\to2^-\\), mẫu \\(x-2\\) âm và tiến tới 0 nên \\(\\lim_{x\\to2^-}f(x)=-\\infty\\). Khi \\(x\\to2^+\\), mẫu dương và tiến tới 0 nên \\(\\lim_{x\\to2^+}f(x)=+\\infty\\). Hai hướng cho hai kết quả khác dấu, do đó không có giới hạn hai phía, kể cả giới hạn vô cực.",
     "skill_ids": [
       "G11-B16-INFINITE_LIMIT"
@@ -222,19 +383,42 @@
     "remediation": "Nếu bỏ dấu của mẫu, thử \\(x=1{,}99\\) và \\(x=2{,}01\\) để nhận biết dấu, sau đó xét mẫu tiến về 0 từ mỗi phía. Ôn TOP08-M08; luyện THPT-G11-CHV-B16-P06.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P08 · TOP08-O08"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giới hạn trái \\(-\\infty\\), phải +∞; không có giới hạn hai phía hữu hạn."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{trái }+\\infty,\\text{ phải }-\\infty\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\text{hai phía đều }+\\infty\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\text{hai phía đều }0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P09",
-    "content_version": 1,
-    "stem": "Tính \\(\\lim_{x\\to-\\infty}\\frac{4x^3-3}{2x^2+x}\\) và giải thích dấu vô cực.",
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P09",
+    "stem": "Tính \\(\\lim_{x\\to-\\infty}\\frac{4x^3-3}{2x^2+x}\\) và giải thích dấu vô cực. Chọn kết luận đúng và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(-\\infty\\).",
     "worked_solution": "Chia cả tử và mẫu cho \\(x^2\\): \\(\\frac{4x-\\frac3{x^2}}{2+\\frac1x}\\). Khi \\(x\\to-\\infty\\), tử tiến tới \\(-\\infty\\), mẫu tiến tới \\(2>0\\). Vì mẫu dương và tiến tới số khác 0 nên thương tiến tới \\(-\\infty\\). Không lấy tỉ số \\(\\frac42\\) vì bậc tử lớn hơn bậc mẫu.",
     "skill_ids": [
@@ -251,19 +435,42 @@
     "remediation": "Nếu lấy \\(\\frac42\\), kiểm bậc tử 3 lớn hơn bậc mẫu 2. Chia cả hai cho \\(x^2\\), giữ số hạng \\(4x\\) và xét dấu khi \\(x\\to-\\infty\\). Ôn TOP08-M09; luyện THPT-G11-CHV-B16-P05.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P09 · TOP08-O09"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(-\\infty\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(+\\infty\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(2\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P10",
-    "content_version": 1,
-    "stem": "Tính \\(\\lim_{x\\to3}\\frac{x^2-x-6}{x-3}\\). Vì sao phép thế ban đầu chưa có giá trị?",
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P10",
+    "stem": "Tính \\(\\lim_{x\\to3}\\frac{x^2-x-6}{x-3}\\). Vì sao phép thế ban đầu chưa có giá trị? Chọn kết luận đúng và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "5.",
     "worked_solution": "\\(x^2-x-6=(x-3)(x+2)\\). Biểu thức không xác định tại \\(x=3\\) và thế trực tiếp cho \\(\\frac{0}{0}\\), nhưng với \\(x\\ne3\\) ta khử nhân tử \\(x-3\\), lấy \\(\\lim_{x\\to3}(x+2)=5\\). Giới hạn khác việc định nghĩa \\(f(3)\\).",
     "skill_ids": [
@@ -273,25 +480,48 @@
       "TOP08-O10"
     ],
     "problem_type_id": "TOP08-INDETERMINATE_FACTOR",
-    "difficulty": "APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Thế thử để nhận dạng vô định \\(\\frac00\\), phân tích nhân tử."
     ],
     "remediation": "Nếu coi \\(\\frac00\\) là 0, khử nhân tử ở \\(x\\ne3\\) rồi lấy giới hạn. Ôn TOP08-M10; luyện THPT-G11-CHV-B16-P02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P10 · TOP08-O10"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(6\\)"
+      },
+      {
+        "id": "C",
+        "text": "5."
+      },
+      {
+        "id": "D",
+        "text": "\\(0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P11",
-    "content_version": 1,
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P11",
     "stem": "Tính \\(\\lim_{x\\to4}\\frac{\\sqrt{x+5}-3}{x-4}\\).",
     "answer_key": "\\(\\frac{1}{6}\\).",
     "worked_solution": "Nhân liên hợp tử: \\(\\frac{(\\sqrt{x+5}-3)(\\sqrt{x+5}+3)}{(x-4)(\\sqrt{x+5}+3)}=\\frac{x-4}{(x-4)(\\sqrt{x+5}+3)}=\\frac1{\\sqrt{x+5}+3}\\), \\(x\\ne4\\) trong miền. Khi \\(x\\to4\\), mẫu tiến tới 6, \\(\\lim_{x\\to4}\\frac{\\sqrt{x+5}-3}{x-4}=\\frac16\\).",
@@ -309,19 +539,42 @@
     "remediation": "Nếu nhân liên hợp chỉ ở tử, nhân cả tử và mẫu với cùng biểu thức. Ôn TOP08-M11; luyện THPT-G11-CHV-B16-P01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P11 · TOP08-O11"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(1/3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(1/8\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{1}{6}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P12",
-    "content_version": 1,
-    "stem": "Tính hai giới hạn của \\(\\sqrt{x^2+2x}-x\\) khi \\(x\\to+\\infty\\) và khi \\(x\\to-\\infty\\). Giải thích vì sao kết quả khác nhau.",
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P12",
+    "stem": "Tính hai giới hạn của \\(\\sqrt{x^2+2x}-x\\) khi \\(x\\to+\\infty\\) và khi \\(x\\to-\\infty\\). Giải thích vì sao kết quả khác nhau. Chọn kết luận đúng và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Khi \\(x\\to+\\infty\\): 1; khi \\(x\\to-\\infty\\): \\(+\\infty\\).",
     "worked_solution": "Khi \\(x\\to+\\infty\\), \\(x>0\\), nhân liên hợp rồi chia cho x: \\(\\frac2{\\sqrt{1+\\frac2x}+1}\\to1\\). Khi \\(x\\to-\\infty\\), \\(x\\le-2\\) thuộc miền căn, \\(-x\\to+\\infty\\) và \\(\\sqrt{x^2+2x}\\ge0\\); do đó \\(\\sqrt{x^2+2x}-x\\ge-x\\to+\\infty\\). Không dùng \\(\\sqrt{x^2}=x\\) khi \\(x<0\\); đúng là \\(\\sqrt{x^2}=|x|\\).",
     "skill_ids": [
@@ -331,25 +584,48 @@
       "TOP08-O12"
     ],
     "problem_type_id": "TOP08-ASYMPTOTIC_RADICAL",
-    "difficulty": "TRANSFER",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Nhân liên hợp khi thích hợp; dùng \\(\\sqrt{x^2}=|x|\\) và xét dấu x theo từng hướng."
     ],
     "remediation": "Nếu cho \\(\\sqrt{x^2}=x\\) ở cả hai hướng, viết \\(|x|\\) rồi xét từng trường hợp. Ôn TOP08-M12; luyện THPT-G11-CHV-B16-P04.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P12 · TOP08-O12"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Khi \\(x\\to+\\infty\\): 1; khi \\(x\\to-\\infty\\): \\(+\\infty\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{hai hướng đều }1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\text{dương vô cực: }1,\\text{ âm vô cực: }-1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\text{dương vô cực: }+\\infty,\\text{ âm vô cực: }1\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P13",
-    "content_version": 1,
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P13",
     "stem": "\\(f(x)=\\frac{x^2-4}{x-2}\\) với \\(x\\ne2\\), \\(f(2)=k\\). Tìm k để f liên tục tại 2.",
     "answer_key": "\\(k=4\\).",
     "worked_solution": "Với \\(x\\ne2\\), phân tích tử cho \\(f(x)=\\frac{(x-2)(x+2)}{x-2}=x+2\\). Suy ra \\(\\lim_{x\\to2}f(x)=4\\). Điều kiện liên tục tại 2 là \\(f(2)=\\lim_{x\\to2}f(x)\\), tức \\(k=4\\). Nếu chọn k khác 4, chỉ cần sửa giá trị tại điểm 2 để khử gián đoạn.",
@@ -367,21 +643,44 @@
     "remediation": "Nếu chọn k trước khi tính giới hạn, rút gọn ngoài điểm rồi đối chiếu \\(f(2)\\). Ôn TOP08-M13; luyện THPT-G11-CHV-B17-P02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P13 · TOP08-O13"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(k=8\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(k=4\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(k=0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(k=2\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P14",
-    "content_version": 1,
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P14",
     "stem": "Xét hai hàm tại \\(x=1\\): \\(f(x)=\\frac{x^2-4x+3}{x-1}\\) nếu \\(x\\ne1\\), \\(f(1)=9\\); \\(g(x)=x-3\\) nếu \\(x<1\\), \\(g(x)=x+1\\) nếu \\(x\\ge1\\). Phân loại gián đoạn và cho biết có thể sửa chỉ bằng đổi giá trị tại 1 không.",
     "answer_key": "f gián đoạn có thể khử, sửa \\(f(1)=-2\\); g gián đoạn nhảy, không thể sửa chỉ tại 1.",
-    "worked_solution": "Với \\(x\\ne1\\), \\(f(x)=x-3\\), hai giới hạn một phía đều bằng −2 nhưng \\(f(1)=9\\); đổi \\(f(1)\\) thành −2 làm liên tục. Với g, giới hạn trái bằng −2, giới hạn phải bằng 2, khác nhau. Đổi \\(g(1)\\) không làm thay đổi hai giới hạn nên không thể khử bước nhảy bằng việc sửa một điểm.",
+    "worked_solution": "Với \\(x\\ne1\\), \\(f(x)=x-3\\), hai giới hạn một phía đều bằng \\(-2\\) nhưng \\(f(1)=9\\); đổi \\(f(1)\\) thành \\(-2\\) làm liên tục. Với g, giới hạn trái bằng \\(-2\\), giới hạn phải bằng 2, khác nhau. Đổi \\(g(1)\\) không làm thay đổi hai giới hạn nên không thể khử bước nhảy bằng việc sửa một điểm.",
     "skill_ids": [
       "G11-B17-CONTINUITY_POINT"
     ],
@@ -389,25 +688,48 @@
       "TOP08-O14"
     ],
     "problem_type_id": "TOP08-DISCONTINUITY_TYPES",
-    "difficulty": "UNDERSTAND",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Kiểm giá trị tại điểm so với giới hạn hữu hạn."
     ],
     "remediation": "Nếu gọi mọi gián đoạn là nhảy, so hai giới hạn một phía và giá trị tại điểm. Ôn TOP08-M14; luyện THPT-G11-CHV-B17-C02.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P14 · TOP08-O14"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(f(1)=2\\text{ sửa được},g(1)=0\\text{ sửa được}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{cả hai khử được bằng đổi giá trị tại }1\\)"
+      },
+      {
+        "id": "C",
+        "text": "f gián đoạn có thể khử, sửa \\(f(1)=-2\\); g gián đoạn nhảy, không thể sửa chỉ tại 1."
+      },
+      {
+        "id": "D",
+        "text": "\\(f\\text{ gián đoạn nhảy, }g\\text{ khử được}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P15",
-    "content_version": 1,
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P15",
     "stem": "Xét \\(f(x)=\\sqrt{x(4-x)}\\) trên miền \\([0;4]\\). Hàm có liên tục trên đoạn \\([0;4]\\) theo nghĩa tương đối không? Giá trị ở hai đầu là gì?",
     "answer_key": "Có; \\(f(0)=f(4)=0\\).",
     "worked_solution": "Biểu thức \\(x(4-x)\\ge0\\) đúng trên \\([0;4]\\); đa thức và căn bậc hai liên tục trên miền thích hợp, nên hàm liên tục bên trong. Tại 0 dùng giới hạn phải bằng \\(f(0)=0\\); tại 4 dùng giới hạn trái bằng \\(f(4)=0\\). Không cần giới hạn từ ngoài miền.",
@@ -425,18 +747,41 @@
     "remediation": "Nếu yêu cầu giới hạn ngoài miền tại đầu mút, chỉ dùng hướng nằm trong đoạn. Ôn TOP08-M15; luyện THPT-G11-CHV-B17-P05.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P15 · TOP08-O15"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\text{không, vì thiếu giới hạn từ ngoài miền}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{có, }f(0)=f(4)=2\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\text{chỉ liên tục trên }(0;4),\\text{ vì căn tại }0\\text{ không xác định}\\)"
+      },
+      {
+        "id": "D",
+        "text": "Có; \\(f(0)=f(4)=0\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P16",
-    "content_version": 1,
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P16",
     "stem": "Tìm miền xác định và các khoảng/đoạn liên tục theo miền cho \\(f(x)=\\frac{\\sqrt{x-1}}{x-3}\\).",
     "answer_key": "\\(D=[1;3)\\cup(3;+\\infty)\\); liên tục trên mỗi thành phần theo nghĩa tương đối, tại \\(x=1\\) liên tục phải.",
     "worked_solution": "Điều kiện căn \\(x-1\\ge0\\) tương đương \\(x\\ge1\\); điều kiện mẫu \\(x-3\\ne0\\) tương đương \\(x\\ne3\\). Giao hai điều kiện cho \\(D=[1;3)\\cup(3;+\\infty)\\). Căn và phép chia liên tục tại những điểm trong miền mà mẫu khác 0. Tại \\(x=1\\), \\(f(1)=0\\) và \\(\\lim_{x\\to1^+}f(x)=0\\), nên hàm liên tục phải. Không nói f liên tục qua điểm bị loại 3.",
@@ -454,19 +799,42 @@
     "remediation": "Nếu bỏ điểm mẫu bằng 0, thử thế \\(x=3\\) vào mẫu và tách các khoảng. Ôn TOP08-M16; luyện THPT-G11-CHV-B17-P01.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P16 · TOP08-O16"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(D=[1;3)\\cup(3;+\\infty)\\); liên tục trên mỗi thành phần theo nghĩa tương đối, tại \\(x=1\\) liên tục phải."
+      },
+      {
+        "id": "B",
+        "text": "\\(D=[1;+\\infty);\\text{liên tục trên toàn }D\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(D=(1;3)\\cup(3;+\\infty)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(D=\\mathbb R\\setminus\\{3\\}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P17",
-    "content_version": 1,
-    "stem": "Chứng minh \\(x^3+x-1=0\\) có ít nhất một nghiệm trong \\((0;1)\\). Sau đó xét tính duy nhất bằng một lập luận riêng, không dùng đạo hàm.",
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P17",
+    "stem": "Chứng minh \\(x^3+x-1=0\\) có ít nhất một nghiệm trong \\((0;1)\\). Sau đó xét tính duy nhất bằng một lập luận riêng, không dùng đạo hàm. Chọn kết luận đúng và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Có đúng một nghiệm trong \\((0;1)\\).",
     "worked_solution": "\\(g(x)=x^3+x-1\\) liên tục trên \\([0;1]\\), \\(g(0)=-1<0\\), \\(g(1)=1>0\\). Theo định lí giá trị trung gian có nghiệm \\(c\\in(0;1)\\). Nếu \\(0<x<y<1\\) thì \\(x^3<y^3\\) và \\(x<y\\), nên \\(g(x)<g(y)\\). Vì g tăng nghiêm ngặt, không thể có hai nghiệm trong \\((0;1)\\). Định lí đổi dấu chỉ cho tồn tại; tính duy nhất cần lập luận đơn điệu.",
     "skill_ids": [
@@ -476,26 +844,49 @@
       "TOP08-O17"
     ],
     "problem_type_id": "TOP08-IVT_EXISTENCE",
-    "difficulty": "TRANSFER",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Kiểm liên tục trên đoạn và dấu hai đầu; phân biệt tồn tại với duy nhất."
     ],
     "remediation": "Nếu suy duy nhất chỉ từ đổi dấu, cần thêm tính đơn điệu hoặc phản ví dụ. Ôn TOP08-M17; luyện THPT-G11-CHV-B17-P07.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P17 · TOP08-O17"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\text{có hai nghiệm trong }(0;1)\\)"
+      },
+      {
+        "id": "B",
+        "text": "Có đúng một nghiệm trong \\((0;1)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\text{vô nghiệm trên }(0;1)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\text{có đúng một nghiệm chỉ vì hai đầu trái dấu}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP08-P18",
-    "content_version": 1,
-    "stem": "Mô hình giả định \\(g(t)=t^2+t-3\\), \\(t\\in[1;2]\\). Chứng minh có thời điểm \\(g(t)=0\\); sau hai bước chia đôi nêu một khoảng dài \\(\\frac{1}{4}\\) chứa nghiệm.",
+    "content_version": "CD08-BANK-CP128-20261127-TOP08-P18",
+    "stem": "Mô hình giả định \\(g(t)=t^2+t-3\\), \\(t\\in[1;2]\\). Chứng minh có thời điểm \\(g(t)=0\\); sau hai bước chia đôi nêu một khoảng dài \\(\\frac{1}{4}\\) chứa nghiệm. Chọn kết luận đúng và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Có nghiệm; khoảng \\([\\frac54;\\frac32]\\) sau 2 bước chia đôi.",
     "worked_solution": "g là đa thức nên liên tục; \\(g(1)=-1<0,\\ g(2)=3>0\\). Giữa \\([1;2]\\) tại \\(\\frac{3}{2}\\): \\(g(\\frac32)=\\frac34>0\\) nên giữ \\([1;\\frac32]\\); giữa khoảng đó tại \\(\\frac{5}{4}\\): \\(g(\\frac54)=\\frac{25}{16}+\\frac54-3=-\\frac3{16}<0\\) nên giữ \\([\\frac54;\\frac32]\\) dài \\(\\frac14\\). Đây là một mô hình toán giả định, không tự suy diễn dữ liệu thực tế.",
     "skill_ids": [
@@ -505,20 +896,43 @@
       "TOP08-O18"
     ],
     "problem_type_id": "TOP08-BISECTION_MODEL",
-    "difficulty": "TRANSFER",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Tính giá trị tại trung điểm, giữ đoạn hai đầu trái dấu."
     ],
     "remediation": "Nếu giữ đoạn có cùng dấu hai đầu, lập bảng dấu tại từng trung điểm. Ôn TOP08-M18; luyện THPT-TOP08-P17.",
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
       "heading": "## THPT-TOP08-P18 · TOP08-O18"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\([3/2;7/4]\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\([1;3/2]\\)"
+      },
+      {
+        "id": "C",
+        "text": "Có nghiệm; khoảng \\([\\frac54;\\frac32]\\) sau 2 bước chia đôi."
+      },
+      {
+        "id": "D",
+        "text": "\\([1;5/4]\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
