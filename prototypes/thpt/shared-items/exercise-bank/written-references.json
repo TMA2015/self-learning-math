@@ -916,8 +916,11 @@
   {
     "item_id": "THPT-G11-CHI-W01",
     "source": {
-      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
-      "heading_id": "THPT-G11-CHI-W01"
+      "blob": "8267b297bb90da68552b5722515063d8eb7c4d66",
+      "heading_id": "THPT-G11-CHI-W01",
+      "previous_source_blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "path": "prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md",
+      "revision_scope": "CP126_WRITTEN_CANONICAL_DELTA_ONLY"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-i-b01-b02.md",
@@ -925,13 +928,24 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B01-ARC_LENGTH",
+      "G11-B01-TRIG_UNIT_CIRCLE"
+    ],
+    "content_version": "CD06-BANK-CP126-20261127-CHI-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHI-W02-ANCHOR",
     "source": {
-      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
-      "heading_id": "THPT-G11-CHI-W02-ANCHOR"
+      "blob": "8267b297bb90da68552b5722515063d8eb7c4d66",
+      "heading_id": "THPT-G11-CHI-W02-ANCHOR",
+      "previous_source_blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "path": "prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md",
+      "revision_scope": "CP126_WRITTEN_CANONICAL_DELTA_ONLY"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-i-b01-b02.md",
@@ -939,13 +953,24 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B02-PRODUCT_TO_SUM",
+      "G11-B02-DOUBLE_ANGLE"
+    ],
+    "content_version": "CD06-BANK-CP126-20261127-W02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHI-W03",
     "source": {
-      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
-      "heading_id": "THPT-G11-CHI-W03"
+      "blob": "8267b297bb90da68552b5722515063d8eb7c4d66",
+      "heading_id": "THPT-G11-CHI-W03",
+      "previous_source_blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "path": "prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md",
+      "revision_scope": "CP126_WRITTEN_CANONICAL_DELTA_ONLY"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-i-b01-b02.md",
@@ -953,13 +978,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B03-MODELING"
+    ],
+    "content_version": "CD06-BANK-CP126-20261127-CHI-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHI-W04-ANCHOR",
     "source": {
-      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
-      "heading_id": "THPT-G11-CHI-W04-ANCHOR"
+      "blob": "8267b297bb90da68552b5722515063d8eb7c4d66",
+      "heading_id": "THPT-G11-CHI-W04-ANCHOR",
+      "previous_source_blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "path": "prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md",
+      "revision_scope": "CP126_WRITTEN_CANONICAL_DELTA_ONLY"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-i-b01-b02.md",
@@ -967,47 +1002,98 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B04-TRANSFORM"
+    ],
+    "content_version": "CD06-BANK-CP126-20261127-W04-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP06-W01",
     "source": {
-      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
-      "heading_id": "THPT-TOP06-W01"
+      "blob": "10cdc4eff8f6996371312922f21e78e3ef4f2a22",
+      "heading_id": "THPT-TOP06-W01",
+      "previous_source_blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_NEW20_PUBLIC_CANONICAL_R01_20261112.md",
+      "revision_scope": "CP126_WRITTEN_CANONICAL_DELTA_ONLY"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B01-TRIG_IDENTITIES",
+      "G11-B01-RELATED_ANGLES"
+    ],
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP06-W02",
     "source": {
-      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
-      "heading_id": "THPT-TOP06-W02"
+      "blob": "10cdc4eff8f6996371312922f21e78e3ef4f2a22",
+      "heading_id": "THPT-TOP06-W02",
+      "previous_source_blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_NEW20_PUBLIC_CANONICAL_R01_20261112.md",
+      "revision_scope": "CP126_WRITTEN_CANONICAL_DELTA_ONLY"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B02-SUM_TO_PRODUCT",
+      "G11-B04-INTERVAL"
+    ],
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP06-W03",
     "source": {
-      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
-      "heading_id": "THPT-TOP06-W03"
+      "blob": "10cdc4eff8f6996371312922f21e78e3ef4f2a22",
+      "heading_id": "THPT-TOP06-W03",
+      "previous_source_blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_NEW20_PUBLIC_CANONICAL_R01_20261112.md",
+      "revision_scope": "CP126_DISTINCT_TASK_FROM_SGK_W04_PRESERVE_ID_OUTCOME_HISTORICAL_BLOB"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B04-TRANSFORM",
+      "G11-B04-INTERVAL"
+    ],
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP06-W04",
     "source": {
-      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
-      "heading_id": "THPT-TOP06-W04"
+      "blob": "10cdc4eff8f6996371312922f21e78e3ef4f2a22",
+      "heading_id": "THPT-TOP06-W04",
+      "previous_source_blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_NEW20_PUBLIC_CANONICAL_R01_20261112.md",
+      "revision_scope": "CP126_WRITTEN_CANONICAL_DELTA_ONLY"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B03-MODELING",
+      "G11-B04-APPLICATION"
+    ],
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHIX-B31-W01",
