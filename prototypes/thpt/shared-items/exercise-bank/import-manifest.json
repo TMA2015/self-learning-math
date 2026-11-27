@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "DELTA_WAVE_03_SKILL_MAPPING_COMPLETE_WRITTEN_AND_Q18_ACCEPTANCE_PENDING",
+  "academic_audit": "DELTA_WAVE04_WRITTEN_SCOPED_RECHECK_COMPLETE_FINAL_ACCEPTANCE_PENDING",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "e7342e757337f889e530f3ade5c6a5f98f647f69",
+    "as_of_commit": "cde99d30922cfb79b5028884e8dc8e1679a3d069",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Verify remaining scoped Written source/PED/Q18 deltas, source ownership and projection custody; full X-G.5 notation, substantive Q01–Q18 audit and acceptance before cutover. Preserve all previous PASS snapshots.",
-    "status": "DELTA_WAVE03_SKILL_MAPPING_COMPLETE_SCOPED_ACCEPTANCE_PENDING",
+    "next": "Resolve W26 canonical/projection custody; complete remaining scoped X-G.5 notation and substantive Q01–Q18 acceptance (including interactive conversion/PED, source evidence, projection/reveal parity). Handoff RELEASE only when applicable gates pass.",
+    "status": "DELTA_WAVE04_WRITTEN_SCOPED_RECHECK_COMPLETE_FINAL_ACCEPTANCE_PENDING",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,7 +112,7 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "delta_audit_wave03",
+    "current_checkpoint_key": "delta_audit_wave04",
     "delta_audit_wave03": {
       "baseline": "6759f764b52678592ce5c60f9441cd2664f242d5",
       "verified_head": "e7342e757337f889e530f3ade5c6a5f98f647f69",
@@ -306,6 +306,116 @@
       "commit": "6759f764b52678592ce5c60f9441cd2664f242d5",
       "blob": "ed10d89dbc7c393d85291f76038e903cc0298c27",
       "key": "delta_audit_wave02"
+    },
+    "delta_audit_wave04": {
+      "baseline": "a755616c824fa97d5ed93b26d2275c091615538f",
+      "verified_head": "cde99d30922cfb79b5028884e8dc8e1679a3d069",
+      "inventory": {
+        "interactive_shards": 61,
+        "interactive_unique": 2214,
+        "written_unique": 325,
+        "total_unique": 2539,
+        "placement_shards": 26,
+        "placement_rows": 4301,
+        "global_duplicate_ids": 0,
+        "unresolved_placement_ids": 0,
+        "unplaced_items": 0,
+        "evidence": "Exact snapshot shard ID sets emitted as lossless prefix/suffix ranges; reconstructed full set with counts, checked both placement groups (1079/3222 rows, 830/2229 distinct IDs; first covers all 310 absent from second); no orphan, union=2539. All ID sets preserved by subsequent Written-only changes."
+      },
+      "skill_mapping": {
+        "mapped": 38,
+        "groups": 16,
+        "pending": 0,
+        "evidence": "delta_audit_wave03; unchanged by Written-only edits"
+      },
+      "written_delta": {
+        "reviewed": 47,
+        "revised": 19,
+        "unchanged_reviewed": 28,
+        "source_paths": [
+          {
+            "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
+            "blob": "a8c7185ccda5daeae8cef1cff71bf3ef9a588107",
+            "prior_blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd"
+          },
+          {
+            "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
+            "blob": "2e9e2378e9aaa14f889782743fa4b2a08575e287",
+            "prior_blob": "331b37b0ce28e8826940016f37326edf97efa139"
+          },
+          {
+            "path": "prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_G10_CHIV_FULL_R04_WITH_TRANSFER_DELTA_C_20261107.md",
+            "blob": "42071d49bd1009136fcf1f5bbf59e70be6807d4a",
+            "prior_blob": "5362cb9b01259d92ace93455c507f6d026b4f297"
+          },
+          {
+            "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+            "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
+            "prior_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
+          },
+          {
+            "path": "prototypes/thpt/content-drafts/G11_CHIII_B08_B09_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+            "blob": "d79ea3c061515bf5ee609df8133e13894d86752f",
+            "prior_blob": "c4f4f654a95209ca46a6e03b61cc8f5222ec2816"
+          },
+          {
+            "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+            "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+            "prior_blob": "ef83141c2f4d864f6334e266d01173a00791ef68"
+          },
+          {
+            "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
+            "blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
+            "prior_blob": "e4ea892c21ffd036c846fb7f5702e033187c410a"
+          },
+          {
+            "path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
+            "blob": "0c56221669c632c5d1c80a9782eced156c585b5f",
+            "prior_blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9"
+          }
+        ],
+        "reference_blob": "7ceef1d6fe945c467f10166fdc0e52f9983141c1",
+        "reference_rows": 325,
+        "unique_ids": 325,
+        "auto_grade_enabled": 0,
+        "revised_ids": [
+          "THPT-TOP10-W03",
+          "THPT-TOP11-W05",
+          "THPT-G10-CHIV-W08-FORCE-TR01",
+          "THPT-G10-CHIV-W09",
+          "THPT-G10-CHIV-W10",
+          "THPT-G10-CHIV-W11-ANCHOR",
+          "THPT-G12-B18-W01",
+          "THPT-G12-B18-W03",
+          "THPT-G12-B18-W05",
+          "THPT-G12-B18-W07",
+          "THPT-G12-B19-W03",
+          "THPT-G12-B19-W04",
+          "THPT-G12-B19-W05",
+          "THPT-G11-CHIII-W09-02-ANCHOR",
+          "THPT-G12-B09-W03",
+          "THPT-G12-B09-W04",
+          "THPT-G12-B10-W03",
+          "THPT-G11-SUPP-E02-W01",
+          "THPT-G12-YE-W14"
+        ],
+        "outside_target_blocks_exact": true,
+        "all_non_source_non_version_non_note_reference_fields_exact": true,
+        "notes": "Rechecked source stem/key/solution/rubric of flagged Written scope. Corrections cover mathematical wording, assumptions, proof/solution alignment, rubric and selected notation. Historical PASS not reopened. No blanket academic/PED/Q18 verdict; not a fresh SGK S1 scan."
+      },
+      "gate_status": {
+        "Q06": "SCOPED_WRITTEN_RECHECK_EVIDENCE",
+        "Q15": "STRUCTURAL_ID_AND_REFERENCE_PARITY_EVIDENCE",
+        "Q16": "WRITTEN_AUTO_GRADE_DISABLED; FULL ASSESSMENT_GATE_PENDING",
+        "Q18": "SOURCE_VERSION_AND_SCOPED_EVIDENCE_RECORDED; FINAL_ACCEPTANCE_PENDING",
+        "other_Q": "SUBSTANTIVE_ACCEPTANCE_PENDING"
+      },
+      "blockers": [
+        "G10 W26 source/projection custody; prior draft library edit requires ownership resolution",
+        "Two stale Written projections and 33 context/scaffold placements remain for authorized cutover",
+        "Full applicable X-G.5, S1/PED, Q01–Q18 acceptance; no full PASS or release authorization"
+      ],
+      "protected_scope": "No new runtime, private RD1, Final Submit, Mastery, Firebase, website projection, merge or deploy changes in wave04."
     }
   },
   "pending_review": {
@@ -324,7 +434,8 @@
         "ids": [
           "THPT-TOP06-W03"
         ],
-        "history_key": "exercise_completion_cp126_cp128"
+        "history_key": "exercise_completion_cp126_cp128",
+        "wave04_note": "Written members rechecked in scoped source pass; final acceptance pending. Interactive members unchanged."
       },
       {
         "ids": [
@@ -332,13 +443,15 @@
           "THPT-TOP10-W03",
           "THPT-TOP11-W05"
         ],
-        "history_key": "exercise_completion_cp130_cp131"
+        "history_key": "exercise_completion_cp130_cp131",
+        "wave04_note": "Written members rechecked in scoped source pass; final acceptance pending. Interactive members unchanged."
       },
       {
         "ids": [
           "THPT-TOP14-W03"
         ],
-        "history_key": "exercise_completion_cp132_cp134"
+        "history_key": "exercise_completion_cp132_cp134",
+        "wave04_note": "Written members rechecked in scoped source pass; final acceptance pending. Interactive members unchanged."
       },
       {
         "ids": [
@@ -349,7 +462,8 @@
           "THPT-G11-CHVII-B23-W02-ANCHOR"
         ],
         "history_key": "exercise_completion_cp135_cp136",
-        "note": "P23/P24/P26 reviewed mathematically at wave01; P25 vertex-edge correspondence clarified, targeted acceptance remains; W02-ANCHOR not yet reviewed."
+        "note": "P23/P24/P26 reviewed mathematically at wave01; P25 vertex-edge correspondence clarified, targeted acceptance remains; W02-ANCHOR not yet reviewed.",
+        "wave04_note": "Written members rechecked in scoped source pass; final acceptance pending. Interactive members unchanged."
       },
       {
         "ids": [
@@ -358,7 +472,8 @@
           "THPT-G12-B09-W04",
           "THPT-G12-B10-W03"
         ],
-        "history_key": "exercise_candidate_cd21_cd22"
+        "history_key": "exercise_candidate_cd21_cd22",
+        "wave04_note": "Written members rechecked in scoped source pass; final acceptance pending. Interactive members unchanged."
       }
     ],
     "older_written_findings": {
@@ -449,7 +564,7 @@
     "sgk_g11_vii_ix_written_delta": "G11 ChVIII B28-W01/B29-W01/B29-W03 corrected in exact public source; candidate 6637d7661bcc2ac982c19e352d7acc3ba11748c9, historical reviewed blob preserved; targeted PED/Q18 and projection pending.",
     "sgk_g12_chvi_written_delta": "Seven B18/B19 Written notes addressed in existing canonical source c2e57e310fbc5253a0657b1b04c840890eaa29a5; targeted PED/Q18 and projection pending. B19-W05 repeats same example, practice only.",
     "g12_b14_w07_delta": "Prior corrected stem verified in 4891b4b2; further aligned rubric and reasoning on 24e463e61c6cc4f78dca45c1f19661ffed6786eb; targeted PED/Q18 and projection pending.",
-    "remaining_written_source_custody": "Wave03: G10 CHIV W09/W10/W11 and FORCE source path now restored and references revised; W26 independence wording amended in existing library source on Draft branch (projection/source boundary must be reviewed before handoff). W25/public replay overlap classified practice-only; preserve independent assessment boundary. Verify actual source and targeted Q18 for all affected Written items, reconcile stale projections at authorized cutover. Other carried scoped delta items remain."
+    "remaining_written_source_custody": "Wave04 rechecked 47 flagged Written blocks, revised 19 across 8 canonical source paths, exact parity outside target blocks; 325 Written references preserved. W26 source/projection custody remains unresolved; W25 shared replay practice-only; final Q18 and stale projections pending. See delta_audit_wave04. Earlier pending entries remain historical evidence, not automatically open defects."
   },
   "checkpoint_policy": "Replace current_progress and current checkpoint, do not append cumulative report trees. Record detailed scoped evidence in existing issue/PR or prior immutable Git snapshot; preserve exact commit/path/blob and relevant key. Carry forward unresolved issues only; retain older history pointer. Never infer PASS, authorize cutover or change protected runtime from compaction."
 }
