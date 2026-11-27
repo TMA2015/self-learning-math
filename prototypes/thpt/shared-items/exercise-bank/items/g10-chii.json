@@ -1,29 +1,44 @@
 [
   {
     "item_id": "THPT-G10-B03-C01",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B03-C01",
     "stem": "Biểu thức nào sau đây là bất phương trình bậc nhất hai ẩn?",
     "answer_key": "B",
     "worked_solution": "B đúng: \\(4x+0y\\ge8\\) có hai hệ số \\(a=4,\\ b=0\\), không đồng thời bằng 0. Bất phương trình tương đương \\(x\\ge2\\), với y tùy ý. A chứa \\(x^2\\), C chứa \\(xy\\), D có cả hai hệ số bằng 0.",
     "options": [
-      "A. \\(2x^2+y\\le3\\)",
-      "B. \\(4x+0y\\ge8\\)",
-      "C. \\(xy<2\\)",
-      "D. \\(0x+0y\\le2\\)"
+      {
+        "id": "A",
+        "text": "\\(2x^2+y\\le3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(4x+0y\\ge8\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(xy<2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(0x+0y\\le2\\)"
+      }
     ],
     "skill_ids": [
       "G10-B03-LINEAR_INEQUALITY"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Kiểm tra bậc và điều kiện hai hệ số của x và y không đồng thời bằng 0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -34,34 +49,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu loại trường hợp một hệ số bằng 0, kiểm lại điều kiện \\((a;b)\\ne(0;0)\\); phân biệt bậc nhất với \\(x^2\\) và \\(xy\\). Ôn Bài 3 §2.1.1; luyện THPT-G10-CHII-TRY01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu loại trường hợp một hệ số bằng 0, kiểm lại điều kiện \\((a;b)\\ne(0;0)\\); phân biệt bậc nhất với \\(x^2\\) và \\(xy\\). Ôn Bài 3 §2.1.1; luyện THPT-G10-CHII-TRY01.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B03-C02",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B03-C02",
     "stem": "Cặp \\((2;-1)\\) có là nghiệm của \\(2x-y\\le5\\) hay không?",
     "answer_key": "A",
     "worked_solution": "Thay \\(x=2,\\ y=-1\\): \\(2\\cdot2-(-1)=5\\). Vì \\(5\\le5\\), cặp đã cho là nghiệm. Dấu bằng được lấy.",
     "options": [
-      "A. Có, vì vế trái bằng 5",
-      "B. Không, vì vế trái bằng 5",
-      "C. Có, vì vế trái bằng 3",
-      "D. Không, vì y âm"
+      {
+        "id": "A",
+        "text": "Có, vì vế trái bằng 5"
+      },
+      {
+        "id": "B",
+        "text": "Không, vì vế trái bằng 5"
+      },
+      {
+        "id": "C",
+        "text": "Có, vì vế trái bằng 3"
+      },
+      {
+        "id": "D",
+        "text": "Không, vì y âm"
+      }
     ],
     "skill_ids": [
       "G10-B03-POINT_TEST"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Thay nguyên cặp có dấu âm vào vế trái."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -72,34 +103,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thay y âm sai dấu hoặc bỏ điểm biên, viết \\(-(-1)\\) trong ngoặc rồi so giá trị vế trái với 5, chú ý dấu \\(\\le\\). Ôn Bài 3 §2.1.2; luyện THPT-G10-CHII-TRY02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu thay y âm sai dấu hoặc bỏ điểm biên, viết \\(-(-1)\\) trong ngoặc rồi so giá trị vế trái với 5, chú ý dấu \\(\\le\\). Ôn Bài 3 §2.1.2; luyện THPT-G10-CHII-TRY02.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B03-P01",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B03-P01",
     "stem": "Khi biểu diễn miền nghiệm của \\(x+3y\\ge6\\), đường biên có thuộc miền nghiệm không?",
     "answer_key": "B",
     "worked_solution": "Mỗi điểm trên đường thẳng \\(x+3y=6\\) làm hai vế bằng nhau, nên thỏa \\(x+3y\\ge6\\). Vì vậy lấy cả đường biên, vẽ nét liền.",
     "options": [
-      "A. Không lấy đường thẳng \\(x+3y=6\\)",
-      "B. Lấy đường thẳng \\(x+3y=6\\)",
-      "C. Chỉ lấy hai giao điểm với trục",
-      "D. Lấy toàn mặt phẳng"
+      {
+        "id": "A",
+        "text": "Không lấy đường thẳng \\(x+3y=6\\)"
+      },
+      {
+        "id": "B",
+        "text": "Lấy đường thẳng \\(x+3y=6\\)"
+      },
+      {
+        "id": "C",
+        "text": "Chỉ lấy hai giao điểm với trục"
+      },
+      {
+        "id": "D",
+        "text": "Lấy toàn mặt phẳng"
+      }
     ],
     "skill_ids": [
       "G10-B03-BOUNDARY"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Dấu ≥ có nhận dấu bằng."
+      "Xét xem dấu \\(\\ge\\) có nhận dấu bằng hay không."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -110,34 +157,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ đường biên vì thấy dấu bất phương trình, thay tọa độ một điểm trên biên vào vế trái và kiểm dấu bằng. Ôn Bài 3 §2.2.1; luyện THPT-G10-CHII-TRY03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ đường biên vì thấy dấu bất phương trình, thay tọa độ một điểm trên biên vào vế trái và kiểm dấu bằng. Ôn Bài 3 §2.2.1; luyện THPT-G10-CHII-TRY03.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B03-P02",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B03-P02",
     "stem": "Miền nghiệm của \\(2x-3y\\le6\\) nằm ở đâu so với đường thẳng \\(y=\\frac{2x-6}{3}\\)?",
     "answer_key": "A",
     "worked_solution": "\\(2x-3y\\le6\\iff -3y\\le6-2x\\iff y\\ge\\frac{2x-6}{3}\\), vì chia cho −3 phải đảo chiều. Với mỗi x, các điểm có tung độ lớn hơn hoặc bằng tung độ trên đường biên thuộc miền nghiệm: phía trên, gồm cả biên (nét liền). Thử \\(O(0;0)\\): \\(0\\le6\\) và \\(0\\ge-2\\), phù hợp.",
     "options": [
-      "A. Phía trên, gồm đường biên",
-      "B. Phía dưới, gồm đường biên",
-      "C. Phía trên, không gồm đường biên",
-      "D. Phía dưới, không gồm đường biên"
+      {
+        "id": "A",
+        "text": "Phía trên, gồm đường biên"
+      },
+      {
+        "id": "B",
+        "text": "Phía dưới, gồm đường biên"
+      },
+      {
+        "id": "C",
+        "text": "Phía trên, không gồm đường biên"
+      },
+      {
+        "id": "D",
+        "text": "Phía dưới, không gồm đường biên"
+      }
     ],
     "skill_ids": [
       "G10-B03-HALFPLANE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
-      "Cô lập \\(-3y\\) rồi chia cho −3; kiểm dấu bằng và thử một điểm không nằm trên biên."
+      "Cô lập \\(-3y\\) rồi chia cho \\(-3\\); kiểm dấu bằng và thử một điểm không nằm trên biên."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -148,34 +211,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đổi chiều sai, cô lập \\(-3y\\) rồi chia số âm; kiểm O và dấu bằng. Ôn Bài 3 §2.2.2 / HELP-G10-B03-02; luyện THPT-G10-CHII-TRY04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đổi chiều sai, cô lập \\(-3y\\) rồi chia số âm; kiểm O và dấu bằng. Ôn Bài 3 §2.2.2 / HELP-G10-B03-02; luyện THPT-G10-CHII-TRY04.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B03-P03",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B03-P03",
     "stem": "Khi vẽ miền nghiệm \\(3x-2y>0\\), kết luận nào đúng về điểm thử \\(O(0;0)\\)?",
     "answer_key": "B",
     "worked_solution": "O nằm trên biên \\(3x-2y=0\\); tuy không thỏa dấu \\(>\\), O không nằm trong nửa mặt phẳng mở nào, nên không giúp chọn phía. Thử \\((1;0)\\): \\(3>0\\) đúng. Chọn nửa mặt phẳng chứa điểm này, không lấy đường biên.",
     "options": [
-      "A. O xác định được phía cần tô vì không thỏa bất phương trình",
-      "B. O không dùng để chọn phía vì nằm trên đường biên",
-      "C. O không dùng được vì \\(y=0\\)",
-      "D. Không cần vẽ đường biên"
+      {
+        "id": "A",
+        "text": "O xác định được phía cần tô vì không thỏa bất phương trình"
+      },
+      {
+        "id": "B",
+        "text": "O không dùng để chọn phía vì nằm trên đường biên"
+      },
+      {
+        "id": "C",
+        "text": "O không dùng được vì \\(y=0\\)"
+      },
+      {
+        "id": "D",
+        "text": "Không cần vẽ đường biên"
+      }
     ],
     "skill_ids": [
       "G10-B03-POINT_TEST"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Điểm thử phải không nằm trên đường biên; hãy thay tọa độ O vào phương trình biên."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -186,34 +265,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng O trên biên để tô miền, chọn một điểm khác biên và thay vào bất phương trình. Ôn Bài 3 §2.2.2 / HELP-G10-B03-01; luyện THPT-G10-B03-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng O trên biên để tô miền, chọn một điểm khác biên và thay vào bất phương trình. Ôn Bài 3 §2.2.2 / HELP-G10-B03-01; luyện THPT-G10-B03-P05.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B03-P04",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B03-P04",
     "stem": "Rạp bán vé loại A giá 60 nghìn đồng/vé (x vé), loại B giá 90 nghìn đồng/vé (y vé). Để thu ít nhất 18 triệu đồng, điều kiện nào đúng?",
     "answer_key": "A",
     "worked_solution": "Đổi 18 triệu đồng thành 18 000 nghìn đồng. Doanh thu tính theo nghìn đồng là \\(60x+90y\\ge18\\,000\\iff2x+3y\\ge600\\). Vì x, y là số vé, cần \\(x,y\\in\\mathbb Z_{\\ge0}\\). B sai chiều, C đổi hệ số và bỏ điều kiện nguyên, D không biểu diễn đúng doanh thu.",
     "options": [
-      "A. \\(2x+3y\\ge600\\), x và y là số nguyên không âm",
-      "B. \\(2x+3y\\le600\\), x và y là số nguyên không âm",
-      "C. \\(3x+2y\\ge600\\), x và y là số thực bất kỳ",
-      "D. \\(x+y\\ge200\\), không cần điều kiện nguyên"
+      {
+        "id": "A",
+        "text": "\\(2x+3y\\ge600\\), x và y là số nguyên không âm"
+      },
+      {
+        "id": "B",
+        "text": "\\(2x+3y\\le600\\), x và y là số nguyên không âm"
+      },
+      {
+        "id": "C",
+        "text": "\\(3x+2y\\ge600\\), x và y là số thực bất kỳ"
+      },
+      {
+        "id": "D",
+        "text": "\\(x+y\\ge200\\), không cần điều kiện nguyên"
+      }
     ],
     "skill_ids": [
       "G10-B03-MODELING"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "APPLY",
     "hints": [
       "Đổi 18 triệu thành 18 000 nghìn đồng và nhớ số vé là số nguyên không âm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -224,34 +319,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đổi nhầm đơn vị hoặc dấu ít nhất, quy mọi số tiền về nghìn, kiểm một phương án vừa đạt và điều kiện đếm vé. Ôn Bài 3 §2.2.3; luyện THPT-G10-CHII-TRY05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đổi nhầm đơn vị hoặc dấu ít nhất, quy mọi số tiền về nghìn, kiểm một phương án vừa đạt và điều kiện đếm vé. Ôn Bài 3 §2.2.3; luyện THPT-G10-CHII-TRY05.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B03-P05",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B03-P05",
     "stem": "Điểm nào chắc chắn nằm trong miền nghiệm \\(2x+3y>0\\)?",
     "answer_key": "C",
     "worked_solution": "Tại \\((0;1)\\), vế trái bằng \\(2\\cdot0+3\\cdot1=3>0\\). Tại \\((0;0),\\ (-3;2),\\ (3;-2)\\), vế trái bằng 0 nên đều nằm trên biên và không thỏa dấu \\(>\\).",
     "options": [
-      "A. \\((0;0)\\)",
-      "B. \\((-3;2)\\)",
-      "C. \\((0;1)\\)",
-      "D. \\((3;-2)\\)"
+      {
+        "id": "A",
+        "text": "\\((0;0)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((-3;2)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((0;1)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((3;-2)\\)"
+      }
     ],
     "skill_ids": [
       "G10-B03-HALFPLANE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Thay từng cặp vào \\(2x+3y\\); giá trị phải lớn hơn 0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -262,34 +373,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhận điểm có vế trái bằng 0, đối chiếu dấu > với =; thử từng điểm. Ôn Bài 3 §2.2.1 / HELP-G10-B03-02; luyện THPT-G10-CHII-TRY03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhận điểm có vế trái bằng 0, đối chiếu dấu > với =; thử từng điểm. Ôn Bài 3 §2.2.1 / HELP-G10-B03-02; luyện THPT-G10-CHII-TRY03.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B03-P06",
-    "content_version": "THPT-G10-CHII-R01",
-    "stem": "Trộn x kg hàng A giá 80 nghìn đồng/kg và y kg hàng B giá 120 nghìn đồng/kg. Muốn giá trung bình không quá 95 nghìn đồng/kg, điều kiện nào tương đương với yêu cầu thực tế?",
+    "content_version": "CD02-BANK-CP122-20261127-B03-P06",
+    "stem": "Trộn \\(x\\) kg hàng A giá 80 nghìn đồng/kg và \\(y\\) kg hàng B giá 120 nghìn đồng/kg. Muốn giá trung bình không quá 95 nghìn đồng/kg, điều kiện nào tương đương với yêu cầu thực tế?",
     "answer_key": "A",
     "worked_solution": "Khối lượng x, y không âm và \\(x+y>0\\) thì giá trung bình \\(\\frac{80x+120y}{x+y}\\) (nghìn đồng/kg) mới xác định. Vì mẫu dương, yêu cầu tương đương \\(80x+120y\\le95(x+y)\\iff25y\\le15x\\iff5y\\le3x\\). Cặp \\((0;0)\\) thỏa bất phương trình sau biến đổi nhưng không có giá trung bình; vì vậy B sai. C sai chiều, D sai hệ số.",
     "options": [
-      "A. \\(5y\\le3x,\\ x,y\\ge0,\\ x+y>0\\)",
-      "B. \\(5y\\le3x,\\ x,y\\ge0\\), kể cả \\(x=y=0\\)",
-      "C. \\(5y\\ge3x,\\ x,y\\ge0,\\ x+y>0\\)",
-      "D. \\(3y\\le5x,\\ x,y\\ge0,\\ x+y>0\\)"
+      {
+        "id": "A",
+        "text": "\\(5y\\le3x,\\ x,y\\ge0,\\ x+y>0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(5y\\le3x,\\ x,y\\ge0\\), kể cả \\(x=y=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(5y\\ge3x,\\ x,y\\ge0,\\ x+y>0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(3y\\le5x,\\ x,y\\ge0,\\ x+y>0\\)"
+      }
     ],
     "skill_ids": [
       "G10-B03-MODELING"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Viết tổng tiền chia tổng khối lượng; trước khi nhân chéo, kiểm mẫu số dương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -300,34 +427,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhận \\((0;0)\\) sau nhân chéo, kiểm lại điều kiện mẫu \\(x+y>0\\) trước khi biến đổi. Ôn Bài 3 §3.3 / HELP-G10-B03-01; tự kiểm phương án \\((5;3)\\) và \\((5;4)\\)."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhận \\((0;0)\\) sau nhân chéo, kiểm lại điều kiện mẫu \\(x+y>0\\) trước khi biến đổi. Ôn Bài 3 §3.3 / HELP-G10-B03-01; tự kiểm phương án \\((5;3)\\) và \\((5;4)\\).",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B04-C01",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B04-C01",
     "stem": "Cặp nào thỏa đồng thời \\(x\\ge0,\\ y\\ge0\\) và \\(x+y\\le5\\)?",
     "answer_key": "A",
     "worked_solution": "Cặp \\((2;3)\\) có hai tọa độ không âm và tổng \\(2+3=5\\le5\\). B và D có tổng \\(6>5\\); C có \\(x<0\\). Chỉ A thỏa cả ba điều kiện.",
     "options": [
-      "A. \\((2;3)\\)",
-      "B. \\((4;2)\\)",
-      "C. \\((-1;4)\\)",
-      "D. \\((3;3)\\)"
+      {
+        "id": "A",
+        "text": "\\((2;3)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((4;2)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-1;4)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((3;3)\\)"
+      }
     ],
     "skill_ids": [
       "G10-B04-SYSTEM"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Một nghiệm hệ phải qua mọi bất phương trình, không chỉ một."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -338,34 +481,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ kiểm tổng, lập bảng ba điều kiện và loại cặp sai bất kỳ một dòng. Ôn Bài 4 §2.1.1 / HELP-G10-B04-01; luyện THPT-G10-CHII-TRY06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ kiểm tổng, lập bảng ba điều kiện và loại cặp sai bất kỳ một dòng. Ôn Bài 4 §2.1.1 / HELP-G10-B04-01; luyện THPT-G10-CHII-TRY06.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B04-C02",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B04-C02",
     "stem": "Miền nghiệm của hệ \\(x\\ge0,\\ y\\ge0,\\ x+y\\le4\\) là hình nào?",
     "answer_key": "A",
     "worked_solution": "Hai điều kiện \\(x\\ge0,\\ y\\ge0\\) giới hạn miền trong góc phần tư thứ nhất và hai nửa trục không âm. Điều kiện \\(x+y\\le4\\) cắt miền đó thành tam giác có đỉnh \\((0;0),\\ (4;0),\\ (0;4)\\). Lấy cả ba cạnh vì các dấu đều có dấu bằng.",
     "options": [
-      "A. Tam giác kín có đỉnh \\((0;0),\\ (4;0),\\ (0;4)\\)",
-      "B. Nửa mặt phẳng \\(x+y\\le4\\)",
-      "C. Mọi điểm góc phần tư thứ nhất",
-      "D. Tam giác mở không lấy ba cạnh"
+      {
+        "id": "A",
+        "text": "Tam giác kín có đỉnh \\((0;0),\\ (4;0),\\ (0;4)\\)"
+      },
+      {
+        "id": "B",
+        "text": "Nửa mặt phẳng \\(x+y\\le4\\)"
+      },
+      {
+        "id": "C",
+        "text": "Mọi điểm góc phần tư thứ nhất"
+      },
+      {
+        "id": "D",
+        "text": "Tam giác mở không lấy ba cạnh"
+      }
     ],
     "skill_ids": [
       "G10-B04-REGION_INTERSECTION"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Lấy giao cả ba điều kiện, không chỉ một điều kiện."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -376,34 +535,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu tô toàn nửa mặt phẳng, lấy giao với cả \\(x\\ge0\\) và \\(y\\ge0\\); xác định giao trục và cạnh lấy dấu bằng. Ôn Bài 4 §2.2.1; luyện THPT-G10-CHII-TRY07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu tô toàn nửa mặt phẳng, lấy giao với cả \\(x\\ge0\\) và \\(y\\ge0\\); xác định giao trục và cạnh lấy dấu bằng. Ôn Bài 4 §2.2.1; luyện THPT-G10-CHII-TRY07.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B04-P01",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B04-P01",
     "stem": "Cho hệ \\(x\\ge0,\\ y\\ge0,\\ x+y\\le7,\\ 2x+y\\le10\\). Trong các điểm sau, điểm nào thuộc miền nghiệm?",
     "answer_key": "A",
     "worked_solution": "Cặp \\((3;4)\\) có tọa độ không âm, \\(3+4=7\\le7\\) và \\(2\\cdot3+4=10\\le10\\). Cặp \\((5;3)\\) có tổng \\(8>7\\); C có \\(x<0\\); tại \\((6;0)\\), \\(2x+y=12>10\\). Chỉ A thỏa cả bốn điều kiện.",
     "options": [
-      "A. \\((3;4)\\)",
-      "B. \\((5;3)\\)",
-      "C. \\((-1;3)\\)",
-      "D. \\((6;0)\\)"
+      {
+        "id": "A",
+        "text": "\\((3;4)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((5;3)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-1;3)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((6;0)\\)"
+      }
     ],
     "skill_ids": [
       "G10-B04-REGION_INTERSECTION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Kiểm hai ràng buộc đường chéo và x,y không âm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -414,34 +589,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn điểm thỏa một đường chéo mà quên đường kia, lập bảng kiểm bốn điều kiện. Ôn Bài 4 §2.2.1 / HELP-G10-B04-01; luyện THPT-G10-CHII-TRY06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn điểm thỏa một đường chéo mà quên đường kia, lập bảng kiểm bốn điều kiện. Ôn Bài 4 §2.2.1 / HELP-G10-B04-01; luyện THPT-G10-CHII-TRY06.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B04-P02",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B04-P02",
     "stem": "Trên miền \\(x\\ge0,\\ y\\ge0,\\ x+y\\le7,\\ 2x+y\\le10\\), giá trị lớn nhất của \\(F=4x+3y\\) là bao nhiêu?",
     "answer_key": "C",
     "worked_solution": "Trên trục Ox, \\(0\\le x\\le5\\); trên Oy, \\(0\\le y\\le7\\). Giải hệ \\(x+y=7,\\ 2x+y=10\\) được \\((3;4)\\). Miền là đa giác kín, bị chặn, có bốn đỉnh \\((0;0),\\ (5;0),\\ (3;4),\\ (0;7)\\). Hàm tuyến tính đạt giá trị lớn nhất tại ít nhất một đỉnh; F tại bốn đỉnh lần lượt là 0, 20, 24, 21. Vậy GTLN là 24 tại \\((3;4)\\). Điểm này thỏa cả hai ràng buộc đường chéo với dấu bằng.",
     "options": [
-      "A. 20",
-      "B. 21",
-      "C. 24",
-      "D. 28"
+      {
+        "id": "A",
+        "text": "20"
+      },
+      {
+        "id": "B",
+        "text": "21"
+      },
+      {
+        "id": "C",
+        "text": "24"
+      },
+      {
+        "id": "D",
+        "text": "28"
+      }
     ],
     "skill_ids": [
       "G10-B04-LINEAR_OBJECTIVE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Xác định các đỉnh và tính F tại từng đỉnh."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -452,34 +643,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ giao hai biên hoặc chọn đỉnh không hợp lệ, giải hệ hai đường biên, kiểm ràng buộc rồi lập bảng F. Ôn Bài 4 §2.3.1 / HELP-G10-B04-02; luyện THPT-G10-CHII-TRY09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ giao hai biên hoặc chọn đỉnh không hợp lệ, giải hệ hai đường biên, kiểm ràng buộc rồi lập bảng F. Ôn Bài 4 §2.3.1 / HELP-G10-B04-02; luyện THPT-G10-CHII-TRY09.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B04-P03",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B04-P03",
     "stem": "Cho \\(x\\ge0,\\ y\\ge0,\\ x+y\\le8\\); tìm giá trị lớn nhất của \\(F=x+y\\). Mệnh đề nào đúng?",
     "answer_key": "C",
     "worked_solution": "Do \\(F=x+y\\le8\\), giá trị lớn nhất không thể vượt 8. Mọi điểm trên đoạn nối \\((8;0)\\) và \\((0;8)\\), kể cả hai đầu mút, đều thỏa hệ và cho \\(F=8\\). Vậy có vô số điểm đạt GTLN.",
     "options": [
-      "A. Chỉ \\((8;0)\\) tối ưu",
-      "B. Chỉ \\((0;8)\\) tối ưu",
-      "C. Mọi điểm trên đoạn nối \\((8;0)\\) và \\((0;8)\\), kể cả hai đầu mút, đều tối ưu",
-      "D. Không tồn tại giá trị lớn nhất"
+      {
+        "id": "A",
+        "text": "Chỉ \\((8;0)\\) tối ưu"
+      },
+      {
+        "id": "B",
+        "text": "Chỉ \\((0;8)\\) tối ưu"
+      },
+      {
+        "id": "C",
+        "text": "Mọi điểm trên đoạn nối \\((8;0)\\) và \\((0;8)\\), kể cả hai đầu mút, đều tối ưu"
+      },
+      {
+        "id": "D",
+        "text": "Không tồn tại giá trị lớn nhất"
+      }
     ],
     "skill_ids": [
       "G10-B04-LINEAR_OBJECTIVE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "So sánh hàm mục tiêu với ràng buộc \\(x+y\\le8\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -490,34 +697,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn duy nhất một đầu cạnh, kiểm F tại trung điểm \\((4;4)\\) của cạnh \\(x+y=8\\). Ôn Bài 4 §2.3.1 / HELP-G10-B04-02; luyện THPT-G10-B04-P02 để so với trường hợp tối ưu duy nhất."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn duy nhất một đầu cạnh, kiểm F tại trung điểm \\((4;4)\\) của cạnh \\(x+y=8\\). Ôn Bài 4 §2.3.1 / HELP-G10-B04-02; luyện THPT-G10-B04-P02 để so với trường hợp tối ưu duy nhất.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B04-P04",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B04-P04",
     "stem": "Hệ \\(x+y\\le2\\) và \\(x+y\\ge5\\) có miền nghiệm như thế nào?",
     "answer_key": "B",
     "worked_solution": "Đặt \\(t=x+y\\). Không có số thực t vừa thỏa \\(t\\le2\\) vừa thỏa \\(t\\ge5\\), nên hệ vô nghiệm; miền nghiệm là tập rỗng.",
     "options": [
-      "A. Miền nghiệm là giao của hai đường thẳng",
-      "B. Vô nghiệm",
-      "C. Có nghiệm \\((0;0)\\)",
-      "D. Miền nghiệm là toàn mặt phẳng"
+      {
+        "id": "A",
+        "text": "Miền nghiệm là giao của hai đường thẳng"
+      },
+      {
+        "id": "B",
+        "text": "Vô nghiệm"
+      },
+      {
+        "id": "C",
+        "text": "Có nghiệm \\((0;0)\\)"
+      },
+      {
+        "id": "D",
+        "text": "Miền nghiệm là toàn mặt phẳng"
+      }
     ],
     "skill_ids": [
       "G10-B04-FEASIBILITY"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đặt \\(t=x+y\\) và xét đồng thời hai bất đẳng thức."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -528,34 +751,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cố tìm giao điểm của hai miền mâu thuẫn, đặt \\(t=x+y\\) và kiểm xem có số nào đồng thời không quá 2 và ít nhất bằng 5 không. Ôn Bài 4 §2.2.2 / HELP-G10-B04-01; luyện THPT-G10-CHII-TRY08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cố tìm giao điểm của hai miền mâu thuẫn, đặt \\(t=x+y\\) và kiểm xem có số nào đồng thời không quá 2 và ít nhất bằng 5 không. Ôn Bài 4 §2.2.2 / HELP-G10-B04-01; luyện THPT-G10-CHII-TRY08.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B04-P05",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B04-P05",
     "stem": "Với miền \\(x\\ge0,\\ y\\ge0\\) không bị chặn, \\(F=-x-y\\) có đặc điểm nào?",
     "answer_key": "B",
     "worked_solution": "Vì \\(x,y\\ge0\\), ta có \\(F=-x-y\\le0\\) và \\(F(0;0)=0\\), nên GTLN là 0, chỉ đạt tại O. Khi \\(y=0\\) và x tăng tùy ý, \\(F=-x\\) giảm không bị chặn dưới; không tồn tại GTNN. Miền không bị chặn không đồng nghĩa cả hai cực trị đều không tồn tại.",
     "options": [
-      "A. Không có GTLN vì miền không bị chặn",
-      "B. GTLN bằng 0 tại \\((0;0)\\), không có GTNN",
-      "C. GTNN bằng 0 tại \\((0;0)\\)",
-      "D. GTLN và GTNN đều bằng 0"
+      {
+        "id": "A",
+        "text": "Không có GTLN vì miền không bị chặn"
+      },
+      {
+        "id": "B",
+        "text": "GTLN bằng 0 tại \\((0;0)\\), không có GTNN"
+      },
+      {
+        "id": "C",
+        "text": "GTNN bằng 0 tại \\((0;0)\\)"
+      },
+      {
+        "id": "D",
+        "text": "GTLN và GTNN đều bằng 0"
+      }
     ],
     "skill_ids": [
       "G10-B04-FEASIBILITY"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Tìm một cận trên của \\(F=-x-y\\); cho x tăng không hạn chế để xét GTNN."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -566,34 +805,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu kết luận không có GTLN chỉ vì miền không bị chặn, tìm cận \\(F\\le0\\) rồi kiểm điểm đạt cận; thử \\(y=0\\), x tăng để xét GTNN. Ôn Bài 4 §2.3.1 và TOP02-M14; tự kiểm \\(F=x+y\\) trên cùng miền."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu kết luận không có GTLN chỉ vì miền không bị chặn, tìm cận \\(F\\le0\\) rồi kiểm điểm đạt cận; thử \\(y=0\\), x tăng để xét GTNN. Ôn Bài 4 §2.3.1 và TOP02-M14; tự kiểm \\(F=x+y\\) trên cùng miền.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B04-P06",
-    "content_version": "THPT-G10-CHII-R01",
+    "content_version": "CD02-BANK-CP122-20261127-B04-P06",
     "stem": "Với x, y là số nguyên không âm, \\(x+2y\\le5,\\ 2x+y\\le5\\), giá trị lớn nhất của \\(F=3x+2y\\) là bao nhiêu?",
     "answer_key": "B",
     "worked_solution": "Từ \\(2x+y\\le5\\) và \\(y\\ge0\\), x chỉ có thể là 0, 1, 2. Xét cả hai ràng buộc: nếu \\(x=0\\) thì \\(y\\le2\\), \\(F\\le4\\); nếu \\(x=1\\) thì \\(y\\le2\\), \\(F\\le7\\); nếu \\(x=2\\) thì \\(y\\le1\\), \\(F\\le8\\). Vì hệ số của y trong F dương, chọn y nguyên lớn nhất ứng với mỗi x. GTLN là 8 tại \\((2;1)\\), thỏa \\(2+2=4\\le5\\) và \\(4+1=5\\le5\\). Bài toán liên tục đạt GTLN \\(\\frac{25}{3}\\) tại giao hai biên \\(x=y=\\frac53\\), nhưng cặp này không nguyên.",
     "options": [
-      "A. 7",
-      "B. 8",
-      "C. \\(\\frac{25}{3}\\)",
-      "D. 9"
+      {
+        "id": "A",
+        "text": "7"
+      },
+      {
+        "id": "B",
+        "text": "8"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{25}{3}\\)"
+      },
+      {
+        "id": "D",
+        "text": "9"
+      }
     ],
     "skill_ids": [
       "G10-B04-INTEGER_MODELS"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Đỉnh tối ưu của bài toán liên tục có thể có tọa độ phân số. Xét \\(x=0,1,2\\) và chọn y nguyên lớn nhất thỏa cả hai ràng buộc."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
@@ -604,8 +859,9 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn \\(\\frac{25}{3}\\) cho số lượng nguyên, liệt kê \\(x=0,1,2\\) và y nguyên tối đa theo cả hai ràng buộc. Ôn Bài 4 §2.3.2 / HELP-G10-B04-02; luyện THPT-TOP02-ADD18."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn \\(\\frac{25}{3}\\) cho số lượng nguyên, liệt kê \\(x=0,1,2\\) và y nguyên tối đa theo cả hai ràng buộc. Ôn Bài 4 §2.3.2 / HELP-G10-B04-02; luyện THPT-TOP02-ADD18.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHII-TRY01",
