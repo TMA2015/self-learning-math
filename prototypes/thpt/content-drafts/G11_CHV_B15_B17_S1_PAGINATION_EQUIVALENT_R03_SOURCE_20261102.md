@@ -553,15 +553,12 @@ Ví dụ f(x)=x³+x−1: f(0)=−1, f(1)=1, và f là đa thức liên tục tr�
 
 ### THPT-G11-CHV-B15-W02-ANCHOR · WRITTEN (ANCHOR TAG) · skill_id=G11-B15-GEOMETRIC_APPLICATION
 
-**Đề:** Một thiết bị trong lần thử đầu tiêu thụ 1,2 đơn vị năng lượng. Mỗi lần thử tiếp theo tiêu thụ 3/4 lần liền trước. (a) Viết ba mức tiêu thụ đầu. (b) Thiết lập tổng n lần thử. (c) Tính tổng lý thuyết vô hạn. (d) Giải thích vì sao công thức không áp dụng với q=1.
+**Đề bài:** Một thiết bị lần thử đầu tiêu thụ \(1{,}2\) đơn vị năng lượng. Mỗi lần tiếp theo tiêu thụ \(\frac34\) lần ngay trước. (a) Viết ba mức đầu. (b) Thiết lập tổng n lần thử. (c) Tính tổng lý thuyết vô hạn. (d) Giải thích vì sao công thức không áp dụng với \(q=1\).
 
-**Lời giải và lí do:** (a) 1,2; 0,9; 0,675. (b) Sₙ=1,2(1−(3/4)ⁿ)/(1−3/4). (c) Vì |3/4|<1 nên (3/4)ⁿ→0, S=1,2/(1/4)=4,8. (d) Nếu q=1, mỗi số hạng bằng 1,2, tổng n lần là 1,2n tăng không bị chặn; không có tổng hữu hạn.
+**Lời giải:** (a) Ba mức đầu là \(1{,}2;0{,}9;0{,}675\) với \(q=\frac34\). (b) Vì \(q\ne1\), \(S_n=\frac{1{,}2[1-(\frac34)^n]}{1-\frac34}\). (c) Do \(\left|\frac34\right|<1\), \((\frac34)^n\to0\), nên \(\lim_{n\to\infty}S_n=\frac{1{,}2}{1-\frac34}=4{,}8\) đơn vị. (d) Nếu \(q=1\), mọi mức bằng \(1{,}2\), tổng riêng \(1{,}2n\to+\infty\), nên không có tổng hữu hạn.
 
-**Rubric 4 điểm:**
-1. Tính đúng ba mức đầu và công bội. — 1 điểm.
-2. Thiết lập đúng tổng riêng Sₙ, ghi điều kiện. — 1 điểm.
-3. Lấy giới hạn và kết luận 4,8 đơn vị. — 1 điểm.
-4. Lí giải đúng q=1 làm tổng không hội tụ hữu hạn. — 1 điểm.
+**Rubric tự đối chiếu:** 4 điểm: ba mức đầu và công bội (1); tổng riêng và điều kiện (1); lấy giới hạn và kết quả (1); giải thích trường hợp \(q=1\) (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+
 
 ### THPT-G11-CHV-B16-W01 · WRITTEN · skill_id=G11-B16-LIMIT_AT_POINT
 
