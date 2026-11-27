@@ -318,27 +318,29 @@ Hai Tự thử này không có canonical `item_id` mới, không thuộc 20 RD1 
 
 ### THPT-G11-CHI-W01 — Bài 1 · Written
 
-**Đề tự luận:** Một điểm M xuất phát tại A=(20;0) trên đường tròn tâm O bán kính 20 cm, chuyển động ngược chiều kim đồng hồ một góc 5π/3 rad. (a) Tính độ dài cung đã đi. (b) Tìm tọa độ M và giải thích dấu tung độ. (c) Tính khoảng cách thẳng AM để so sánh với độ dài đường đi.
+**Đề bài:** Một điểm M xuất phát tại \(A(20;0)\) trên đường tròn tâm O, bán kính 20 cm, quay ngược chiều kim đồng hồ một góc \(\frac{5\pi}{3}\) rad. (a) Tính độ dài cung đã đi. (b) Tìm tọa độ M và giải thích dấu tung độ. (c) Tính khoảng cách thẳng AM và so sánh với độ dài đường đi.
 
-**Đáp án:** s=100π/3 cm; M=(10;−10√3) cm; AM=20 cm.
+**Gợi ý:** Dùng \(s=R\theta\) với góc dương tính bằng radian, tọa độ \((R\cos\theta;R\sin\theta)\) và công thức khoảng cách.
 
-**Gợi ý không giải hộ:** Tọa độ trên đường tròn R: (Rcos α,Rsin α); AM là dây, không phải độ dài cung.
+**Đáp án:** \(s=\frac{100\pi}{3}\) cm; \(M(10;-10\sqrt3)\) (cm); \(AM=20\) cm.
 
-**Lời giải từng bước:** s=Rα=20·5π/3=100π/3 cm. cos5π/3=1/2; sin5π/3=−√3/2 nên M=(10;−10√3). AM=√[(10−20)²+(−10√3)²]=20 cm. Độ dài cung lớn hơn dây.
+**Lời giải:** (a) Góc đã tính bằng radian, nên \(s=20\cdot\frac{5\pi}{3}=\frac{100\pi}{3}\) cm. (b) Tia cuối ở góc phần tư IV: \(\cos\frac{5\pi}{3}=\frac12\), \(\sin\frac{5\pi}{3}=-\frac{\sqrt3}{2}\). Vì vậy \(M(10;-10\sqrt3)\); tung độ âm vì điểm dưới trục Ox. (c) \(AM=\sqrt{(10-20)^2+(-10\sqrt3)^2}=20\) cm. Đường đi theo cung dài hơn đoạn thẳng AM.
 
-**Rubric tự đối chiếu:** 7 điểm: góc và đơn vị rad 1; công thức cung 1; tính s đúng 1; hoành độ 1; tung độ và dấu 1; AM=20 đúng 1; giải thích cung vs dây 1.
+**Rubric tự đối chiếu:** 7 điểm: góc và đơn vị radian (1); công thức cung (1); độ dài cung (1); hoành độ (1); tung độ và dấu (1); khoảng cách AM (1); phân biệt cung và dây (1). Chấp nhận cách giải đúng khác; không trừ lặp lỗi kéo theo.
+
 
 ### THPT-G11-CHI-W02-ANCHOR — Bài 2 · Written/Anchor label
 
-**Đề tự luận:** Với các góc u,v bất kỳ, chứng minh sin(u+v)sin(u−v)=sin²u−sin²v. Sau đó áp dụng u=π/4, v=π/12 để tính sin(π/3)sin(π/6) bằng hai cách và giải thích vì sao hai cách trùng nhau.
+**Đề bài:** Với \(u,v\in\mathbb R\), chứng minh \(\sin(u+v)\sin(u-v)=\sin^2u-\sin^2v\). Sau đó dùng \(u=\frac\pi4,\ v=\frac\pi{12}\) tính \(\sin\frac\pi3\sin\frac\pi6\) bằng hai cách và giải thích vì sao kết quả bằng nhau.
 
-**Đáp án:** Đẳng thức đúng; sin(π/3)sin(π/6)=√3/4.
+**Gợi ý:** Dùng tích thành tổng, rồi công thức nhân đôi \(\cos2u=1-2\sin^2u\).
 
-**Gợi ý không giải hộ:** Áp dụng công thức sinA sinB=[cos(A−B)−cos(A+B)]/2; hoặc khai triển sin(u±v).
+**Đáp án:** Đẳng thức đúng; tích bằng \(\frac{\sqrt3}{4}\).
 
-**Lời giải từng bước:** Theo biến đổi tích thành tổng: sin(u+v)sin(u−v)=[cos(2v)−cos(2u)]/2=(1−2sin²v−1+2sin²u)/2=sin²u−sin²v. Với u=π/4, v=π/12, vế trái=sinπ/3·sinπ/6=√3/4. Vế phải=sin²π/4−sin²π/12=1/2−(2−√3)/4=√3/4. Hai cách bằng nhau do đẳng thức tổng quát.
+**Lời giải:** Đặt \(A=u+v,B=u-v\). Khi đó \(\sin A\sin B=\frac12[\cos(A-B)-\cos(A+B)]=\frac12(\cos2v-\cos2u)=\sin^2u-\sin^2v\). Thay góc: cách 1, \(\sin\frac\pi3\sin\frac\pi6=\frac{\sqrt3}{2}\cdot\frac12=\frac{\sqrt3}4\). Cách 2, \(\sin^2\frac\pi4=\frac12\) và \(\sin^2\frac\pi{12}=\frac{1-\cos(\pi/6)}2=\frac{2-\sqrt3}4\). Hiệu bằng \(\frac{\sqrt3}4\). Hai cách bằng nhau vì đẳng thức đã chứng minh đúng với mọi u,v.
 
-**Rubric tự đối chiếu:** 7 điểm: đổi A=u+v B=u−v đúng 1; áp dụng công thức đúng 2; rút gọn đẳng thức 1; tính trực tiếp √3/4 1; tính sin²π/12 đúng 1; giải thích nhất quán 1.
+**Rubric tự đối chiếu:** 7 điểm: đặt A,B đúng (1); tích thành tổng (2); rút gọn (1); tính trực tiếp (1); tính bình phương sin của góc \(\pi/12\) (1); giải thích hai kết quả bằng nhau (1). Chấp nhận cách giải đúng khác; không trừ lặp lỗi kéo theo.
+
 
 ### [R03-NEW] B01/B02-PED4 — Đọc hai hình nguồn thay vì coi là trang trí
 
@@ -785,19 +787,29 @@ Giữ nguyên sáu ví dụ, đáp án và lời giải gốc; đây là lời d
 
 ### THPT-G11-CHI-W03 — WRITTEN · G11-B03-MODELING · Rubric /7
 
-**Đề:** Với y=2sin(3x+π/6)-1, xác định chu kỳ cơ bản, tập giá trị, mọi điểm đạt cực đại và cực tiểu trên ℝ.
+**Đề bài:** Với \(y=2\sin(3x+\frac\pi6)-1\), tìm chu kỳ cơ bản, tập giá trị và tất cả điểm đạt giá trị lớn nhất, nhỏ nhất trên \(\mathbb R\).
 
-**Đáp án/lời giải:** Biên độ 2, đường trung bình -1. Chu kỳ T=2π/3, giá trị từ -3 đến 1. Cực đại y=1 khi 3x+π/6=π/2+2kπ, tức x=π/9+2kπ/3; cực tiểu y=-3 khi 3x+π/6=3π/2+2kπ, tức x=4π/9+2kπ/3; k∈ℤ.
+**Gợi ý:** Xét hệ số của x trong đối số và các góc tại đó sin bằng 1 hoặc -1.
 
-**Rubric /7:** đúng chu kỳ (1đ); biên độ/đường trung bình (1đ); tập giá trị (1đ); đặt phương trình cho cực đại (1đ); nghiệm cực đại đủ họ (1đ); đặt phương trình cực tiểu (1đ); nghiệm cực tiểu đủ họ (1đ).
+**Đáp án:** \(T=\frac{2\pi}3,\ T_y=[-3;1]\); GTLN tại \(x=\frac\pi9+\frac{2k\pi}3\), GTNN tại \(x=\frac{4\pi}9+\frac{2k\pi}3,\ k\in\mathbb Z\).
+
+**Lời giải:** Biên độ bằng 2, đường trung bình \(y=-1\). Đối số tăng thêm \(2\pi\) khi x tăng \(\frac{2\pi}3\), nên đây là chu kỳ cơ bản (do sin có chu kỳ cơ bản \(2\pi\)). Vì sin nhận mọi giá trị từ -1 đến 1, hàm nhận mọi giá trị trong \([-3;1]\). GTLN 1 khi \(3x+\frac\pi6=\frac\pi2+2k\pi\iff x=\frac\pi9+\frac{2k\pi}3\). GTNN -3 khi \(3x+\frac\pi6=\frac{3\pi}2+2k\pi\iff x=\frac{4\pi}9+\frac{2k\pi}3\). Trong cả hai họ \(k\in\mathbb Z\).
+
+**Rubric tự đối chiếu:** 7 điểm: chu kỳ (1); biên độ/đường trung bình (1); tập giá trị (1); lập phương trình đạt GTLN (1); họ nghiệm GTLN (1); lập phương trình đạt GTNN (1); họ nghiệm GTNN (1). Chấp nhận cách giải đúng khác; không trừ lặp lỗi kéo theo.
+
 
 ### THPT-G11-CHI-W04-ANCHOR — WRITTEN/ANCHOR · G11-B04-TRANSFORM · Rubric /7
 
-**Đề:** Giải cos(2x)=sin x trên đoạn [0,2π) bằng công thức cos(2x) và kiểm tra tất cả nghiệm.
+**Đề bài:** Giải \(\cos(2x)=\sin x\) trên \([0;2\pi)\) bằng công thức nhân đôi của côsin và kiểm tra tất cả nghiệm.
 
-**Đáp án/lời giải:** Đặt s=sin x. 1-2s²=s ⇔ 2s²+s-1=0 ⇔ s=1/2 hoặc s=-1. Với s=1/2 được x=π/6,5π/6; với s=-1 được x=3π/2, tất cả trong [0,2π) và đều thỏa phương trình ban đầu.
+**Gợi ý:** Đặt \(t=\sin x\in[-1;1]\), dùng \(\cos2x=1-2\sin^2x\).
 
-**Rubric /7:** biến đổi cos2x đúng (1đ), lập phương trình theo s (1đ), phân tích & tìm s=1/2 (1đ), tìm s=-1 (1đ), hai nghiệm sinx=1/2 trên đoạn (1đ), nghiệm sinx=-1 (1đ), thử lại & kết luận tập ba nghiệm (1đ). Anchor chỉ là nhãn của Written này, không tạo ngân hàng Anchor riêng.
+**Đáp án:** \(S=\{\frac\pi6;\frac{5\pi}6;\frac{3\pi}2\}\).
+
+**Lời giải:** Đặt \(t=\sin x\), ta có \(1-2t^2=t\iff (2t-1)(t+1)=0\). Cả \(t=\frac12\) và \(t=-1\) đều nằm trong \([-1;1]\). Trên \([0;2\pi)\), trường hợp đầu cho \(x=\frac\pi6,\frac{5\pi}6\), trường hợp sau cho \(x=\frac{3\pi}2\). Với hai nghiệm đầu, \(\cos2x=\frac12=\sin x\); với nghiệm cuối, \(\cos3\pi=-1=\sin\frac{3\pi}2\).
+
+**Rubric tự đối chiếu:** 7 điểm: công thức nhân đôi (1); đặt ẩn và lập phương trình (1); tìm \(t=\frac12\) (1); tìm \(t=-1\) (1); hai nghiệm của trường hợp đầu (1); nghiệm trường hợp sau (1); kiểm tra và kết luận (1). Anchor chỉ là nhãn của bài Written. Chấp nhận cách giải đúng khác; không trừ lặp lỗi kéo theo.
+
 
 ## D5 — Đồ thị, hình minh họa canonical
 
