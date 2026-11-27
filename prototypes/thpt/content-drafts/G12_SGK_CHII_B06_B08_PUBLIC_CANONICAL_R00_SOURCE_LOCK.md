@@ -624,9 +624,9 @@ Từ $A$ tới $B$, theo $x$ tăng $5-2=3$, theo $y$ tăng $2-(-1)=3$, theo $z$ 
 
 **`ITEM_ID=THPT-G12-B07-W04` · `OUTCOME_ID=G12-CHII-B07-O04` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Cho A(2;-3;1), B(-4;5;0). Tính AB và BA theo tọa độ, rồi giải thích quan hệ.
+- **Đề mới:** Cho A(2;-3;1), B(-4;5;0). Tính $\overrightarrow{AB}$ và $\overrightarrow{BA}$ theo tọa độ, rồi giải thích quan hệ.
 - **Đáp án:** $\overrightarrow{AB}=(-6;8;-1)$ và $\overrightarrow{BA}=(6;-8;1)$; đối nhau.
-- **Lời giải/suy luận:** B-A và A-B có dấu ngược nhau ở cả 3 thành phần.
+- **Lời giải/suy luận:** Lấy tọa độ điểm cuối trừ tọa độ điểm đầu: $\overrightarrow{AB}=(-4-2;5-(-3);0-1)=(-6;8;-1)$. Đổi thứ tự hai điểm được $\overrightarrow{BA}=-\overrightarrow{AB}$.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm AB; 2 điểm BA; 1 điểm quan hệ vectơ đối.
 
@@ -956,9 +956,9 @@ $\vec u\cdot\vec v=2-4-6=-8<0$, nên góc giữa chúng là góc tù (cả hai k
 
 **`ITEM_ID=THPT-G12-B08-W06` · `OUTCOME_ID=G12-CHII-B08-O06` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Một thiết bị chuyển động thẳng từ A(2;0;5) đến B(8;-8;11) trong 4 s (tọa độ mét). Tìm vectơ độ dời, độ dài và tốc độ. Khi nào độ dài độ dời khác quãng đường?
-- **Đáp án:** Độ dời (6;-8;6) m, độ dài $\sqrt{136}=2\sqrt{34}$ m, tốc độ $\sqrt{34}/2$ m/s.
-- **Lời giải/suy luận:** 4 s>0; nếu đường đi cong hoặc vòng lại thì độ dài độ dời nhỏ hơn hoặc bằng quãng đường thực.
+- **Đề mới:** Một thiết bị đi dọc đoạn thẳng từ A(2;0;5) đến B(8;-8;11), không quay đầu, trong 4 s (tọa độ tính bằng mét). Tìm vectơ độ dời, độ dài độ dời và tốc độ trung bình. Khi nào độ dài độ dời khác quãng đường?
+- **Đáp án:** Độ dời $(6;-8;6)$ m, độ dài $2\sqrt{34}$ m, tốc độ trung bình $\frac{\sqrt{34}}2$ m/s.
+- **Lời giải/suy luận:** Lấy tọa độ B trừ A, được $(6;-8;6)$. Độ dài là $\sqrt{36+64+36}=2\sqrt{34}$ m. Vì đi theo đoạn AB không quay đầu, quãng đường bằng độ dài độ dời. Chia quãng đường cho 4 s được tốc độ trung bình $\frac{\sqrt{34}}2$ m/s. Nếu đường đi dài hơn đoạn nối điểm đầu và cuối (chẳng hạn đi vòng hoặc quay đầu), quãng đường lớn hơn độ dài độ dời.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm độ dời; 1 điểm độ dài; 1 điểm tốc độ; 1 điểm điều kiện đường thẳng.
 
