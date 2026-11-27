@@ -1,21 +1,25 @@
 [
   {
     "item_id": "THPT-G12-B18-C01",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn ngẫu nhiên, đồng khả năng một số từ 1 đến 6. Biết số đã chọn là số lẻ, tính xác suất số đó lớn hơn 3.",
-    "answer_key": "\\(\\frac13\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-C01",
+    "stem": "Chọn ngẫu nhiên, đồng khả năng một số từ 1 đến 6. Biết số đã chọn là số lẻ, tính xác suất số đó lớn hơn 3. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{1}{3}\\)",
     "worked_solution": "Gọi B là biến cố chọn số lẻ, A là chọn số lớn hơn 3. Khi biết B, chỉ còn ba số đồng khả năng \\(\\{1;3;5\\}\\), trong đó chỉ 5 thỏa A. Do đó \\(P(A\\mid B)=\\frac13\\).",
     "skill_ids": [
       "G12-CHVI-B18-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Liệt kê ba số lẻ và lọc số lớn hơn 3."
+      "Thu hẹp nhóm điều kiện còn các số lẻ; đếm số lớn hơn 3."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -27,26 +31,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không chia cho 6 khi đã biết số lẻ. Ôn CĐ21 mục 1.1; luyện THPT-TOP21-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không chia cho 6 khi đã biết số lẻ. Ôn CĐ21 mục 1.1; luyện THPT-TOP21-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{1}{6}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{1}{2}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{1}{3}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{2}{3}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-P01",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn ngẫu nhiên, đồng khả năng một thẻ từ 1 đến 12. Biết thẻ chia hết cho 3, tính xác suất thẻ là số chẵn.",
-    "answer_key": "\\(\\frac12\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-P01",
+    "stem": "Chọn ngẫu nhiên, đồng khả năng một thẻ từ 1 đến 12. Biết thẻ chia hết cho 3, tính xác suất thẻ là số chẵn. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{1}{2}\\)",
     "worked_solution": "Nhóm điều kiện B gồm \\(\\{3;6;9;12\\}\\). Hai thẻ 6 và 12 là số chẵn. Vì các thẻ đồng khả năng, \\(P(A\\mid B)=\\frac24=\\frac12\\).",
     "skill_ids": [
       "G12-CHVI-B18-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Tìm các bội của 3 rồi lọc số chẵn."
+      "Liệt kê các bội của 3 rồi đếm các số chẵn trong đó."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -58,26 +85,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Mẫu là bốn bội của 3, không phải 12 thẻ. Ôn CĐ21 mục 1.1; luyện THPT-TOP21-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Mẫu là bốn bội của 3, không phải 12 thẻ. Ôn CĐ21 mục 1.1; luyện THPT-TOP21-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{1}{6}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{1}{3}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{2}{3}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{1}{2}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-A01",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Thư viện có 5 sách khoa học (3 bìa cứng) và 7 sách văn học (2 bìa cứng). Chọn đồng khả năng một cuốn trong nhóm bìa cứng. Tính xác suất đó là sách khoa học.",
-    "answer_key": "\\(\\frac35\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-A01",
+    "stem": "Thư viện có 5 sách khoa học (3 bìa cứng) và 7 sách văn học (2 bìa cứng). Chọn đồng khả năng một cuốn trong nhóm bìa cứng. Tính xác suất đó là sách khoa học. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{3}{5}\\)",
     "worked_solution": "Nhóm bìa cứng gồm 3+2=5 cuốn, trong đó 3 cuốn khoa học. Xác suất là \\(\\frac35\\). Mẫu số là số sách trong nhóm điều kiện, không phải toàn bộ 12 cuốn.",
     "skill_ids": [
       "G12-CHVI-B18-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
-      "Đếm số sách bìa cứng ở cả hai loại."
+      "Chỉ xét nhóm sách bìa cứng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -89,26 +139,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Chỉ xét năm sách bìa cứng. Ôn CĐ21 mục 1.1; luyện THPT-TOP21-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Chỉ xét năm sách bìa cứng. Ôn CĐ21 mục 1.1; luyện THPT-TOP21-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{3}{5}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{1}{4}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{5}{12}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{2}{5}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-C02",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho \\(P(B)=\\frac35\\), \\(P(A\\cap B)=\\frac15\\). Tính \\(P(A\\mid B)\\).",
-    "answer_key": "\\(\\frac13\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-C02",
+    "stem": "Cho \\(P(B)=\\frac35\\), \\(P(A\\cap B)=\\frac15\\). Tính \\(P(A\\mid B)\\). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{1}{3}\\)",
     "worked_solution": "Vì P(B)>0, dùng định nghĩa \\(P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{1/5}{3/5}=\\frac13\\).",
     "skill_ids": [
       "G12-CHVI-B18-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Lấy xác suất giao chia cho \\(P(B)>0\\)."
+      "Chia xác suất giao cho xác suất của biến cố điều kiện B."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -120,26 +193,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không nhân hai xác suất khi đề hỏi điều kiện. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không nhân hai xác suất khi đề hỏi điều kiện. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{1}{5}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{1}{3}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{3}{5}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{3}{25}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-P02",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn đồng khả năng một thẻ trong 8 thẻ đánh số từ 1 đến 8. B là biến cố thẻ chẵn, A là thẻ chia hết cho 4. Tính \\(P(A\\mid B)\\) bằng công thức.",
-    "answer_key": "\\(\\frac12\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-P02",
+    "stem": "Chọn đồng khả năng một thẻ trong 8 thẻ đánh số từ 1 đến 8. B là biến cố thẻ chẵn, A là thẻ chia hết cho 4. Tính \\(P(A\\mid B)\\) bằng công thức. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{1}{2}\\)",
     "worked_solution": "Có 4 thẻ chẵn; giao A và B gồm hai thẻ 4, 8. \\(P(B)=\\frac48\\), \\(P(A\\cap B)=\\frac28\\). Vì P(B)>0, \\(P(A\\mid B)=\\frac{2/8}{4/8}=\\frac12\\).",
     "skill_ids": [
       "G12-CHVI-B18-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Liệt kê B và \\(A\\cap B\\)."
+      "Đếm số thẻ chẵn và số thẻ chia hết cho 4 trong nhóm đó."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -151,26 +247,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng \\(\\frac28\\), đó là xác suất giao, chưa phải xác suất có điều kiện. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng \\(\\frac28\\), đó là xác suất giao, chưa phải xác suất có điều kiện. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{1}{4}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{1}{8}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{1}{2}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{3}{4}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-A02",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Trong 60 thí sinh, 30 người tham gia CLB tiếng Anh, trong đó 18 người đạt điểm giỏi. Chọn đồng khả năng một người. Biết người đó thuộc CLB, tính xác suất đạt giỏi.",
-    "answer_key": "\\(\\frac35\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-A02",
+    "stem": "Trong 60 thí sinh, 30 người tham gia CLB tiếng Anh, trong đó 18 người đạt điểm giỏi. Chọn đồng khả năng một người. Biết người đó thuộc CLB, tính xác suất đạt giỏi. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{3}{5}\\)",
     "worked_solution": "Gọi B là thuộc CLB, A là đạt giỏi. Nhóm điều kiện có 30 người và giao có 18 người. \\(P(A\\mid B)=\\frac{18/60}{30/60}=\\frac{18}{30}=\\frac35\\).",
     "skill_ids": [
       "G12-CHVI-B18-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
-      "Điều kiện là thuộc CLB, giao có 18 người."
+      "Mẫu số là 30 người thuộc CLB."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -182,26 +301,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không chia 18 cho tổng 60. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không chia 18 cho tổng 60. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{3}{10}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{1}{2}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{2}{5}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{3}{5}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-C03",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn đồng khả năng một học sinh trong lớp. Có 20 học sinh đi xe buýt, trong đó 8 là nữ; toàn lớp có 25 nữ. Tính xác suất học sinh là nữ khi biết em đó đi xe buýt.",
-    "answer_key": "\\(\\frac25\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-C03",
+    "stem": "Chọn đồng khả năng một học sinh trong lớp. Có 20 học sinh đi xe buýt, trong đó 8 là nữ; toàn lớp có 25 nữ. Tính xác suất học sinh là nữ khi biết em đó đi xe buýt. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{2}{5}\\)",
     "worked_solution": "Điều kiện là đi xe buýt, nên xét đúng 20 học sinh đi xe buýt. Có 8 nữ trong nhóm này; xác suất bằng \\(\\frac8{20}=\\frac25\\). Không dùng mẫu số 25 vì đó là nhóm nữ.",
     "skill_ids": [
       "G12-CHVI-B18-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Điều kiện đi xe buýt nên xét 20 người."
+      "Nhóm điều kiện là những học sinh đi xe buýt."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -213,26 +355,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không dùng 25 nữ làm mẫu cho chiều hỏi này. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không dùng 25 nữ làm mẫu cho chiều hỏi này. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{2}{5}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{8}{25}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{4}{25}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{3}{5}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-P03",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn đồng khả năng một học sinh trong lớp. Có 20 em đi xe buýt, trong đó 8 là nữ; toàn lớp có 25 nữ. Tính xác suất đi xe buýt khi biết học sinh là nữ.",
-    "answer_key": "\\(\\frac8{25}\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-P03",
+    "stem": "Chọn đồng khả năng một học sinh trong lớp. Có 20 em đi xe buýt, trong đó 8 là nữ; toàn lớp có 25 nữ. Tính xác suất đi xe buýt khi biết học sinh là nữ. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{8}{25}\\)",
     "worked_solution": "Nhóm điều kiện là 25 học sinh nữ. Trong nhóm này, 8 em đi xe buýt, nên xác suất bằng \\(\\frac8{25}\\). Đảo điều kiện làm thay đổi mẫu số.",
     "skill_ids": [
       "G12-CHVI-B18-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Điều kiện nữ nên xét 25 người."
+      "Nhóm điều kiện là 25 học sinh nữ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -244,26 +409,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Đảo điều kiện đổi mẫu, tử vẫn 8. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Đảo điều kiện đổi mẫu, tử vẫn 8. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{2}{5}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{8}{25}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{17}{25}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{4}{5}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-A03",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn đồng khả năng một người trong đội. Có 15 người chơi bóng rổ, 12 người chơi bóng đá, 6 chơi cả hai. Tính xác suất chơi bóng rổ khi biết chơi bóng đá và xác suất ngược lại; giải thích sự khác nhau.",
-    "answer_key": "Lần lượt \\(\\frac12\\) và \\(\\frac25\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-A03",
+    "stem": "Chọn đồng khả năng một người trong đội. Có 15 người chơi bóng rổ, 12 người chơi bóng đá, 6 chơi cả hai. Tính xác suất chơi bóng rổ khi biết chơi bóng đá và xác suất ngược lại; giải thích sự khác nhau. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac12;\\frac25\\)",
     "worked_solution": "Gọi R là chơi rổ, D là chơi đá. Giao có 6 người. \\(P(R\\mid D)=\\frac6{12}=\\frac12\\), còn \\(P(D\\mid R)=\\frac6{15}=\\frac25\\). Hai xác suất có cùng số người ở giao nhưng điều kiện khác nhau.",
     "skill_ids": [
       "G12-CHVI-B18-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
-      "Hai xác suất cùng tử 6 nhưng mẫu khác nhau."
+      "Giữ nguyên tử số giao 6, thay mẫu số theo điều kiện."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -275,26 +463,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "\\(P(R\\mid D)\\) dùng mẫu 12; \\(P(D\\mid R)\\) dùng mẫu 15 (R là bóng rổ, D là bóng đá). Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "\\(P(R\\mid D)\\) dùng mẫu 12; \\(P(D\\mid R)\\) dùng mẫu 15 (R là bóng rổ, D là bóng đá). Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac25;\\frac12\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac6{27};\\frac6{27}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac12;\\frac25\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac12;\\frac12\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-C04",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho \\(P(A)=\\frac25\\), \\(P(B)=\\frac14\\), \\(P(A\\cap B)=\\frac1{10}\\). Hai biến cố có độc lập không?",
-    "answer_key": "Có.",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-C04",
+    "stem": "Cho \\(P(A)=\\frac25\\), \\(P(B)=\\frac14\\), \\(P(A\\cap B)=\\frac1{10}\\). Hai biến cố có độc lập không? Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Có; \\(P(A)P(B)=\\frac1{10}=P(A\\cap B)\\).",
     "worked_solution": "Tính \\(P(A)P(B)=\\frac25\\cdot\\frac14=\\frac1{10}=P(A\\cap B)\\). Theo tiêu chuẩn độc lập, A và B độc lập.",
     "skill_ids": [
       "G12-CHVI-B18-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Tính \\(P(A)P(B)\\), rồi so với xác suất giao."
+      "Kiểm tiêu chuẩn độc lập bằng tích hai xác suất riêng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -306,8 +517,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không kết luận độc lập chỉ vì giao khác rỗng. Ôn CĐ21 mục 1.4; luyện THPT-TOP21-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không kết luận độc lập chỉ vì giao khác rỗng. Ôn CĐ21 mục 1.4; luyện THPT-TOP21-P04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; vì \\(P(A)\\ne P(B)\\)."
+      },
+      {
+        "id": "B",
+        "text": "Không; vì giao khác rỗng."
+      },
+      {
+        "id": "C",
+        "text": "Có; vì \\(P(A)+P(B)=1\\)."
+      },
+      {
+        "id": "D",
+        "text": "Có; \\(P(A)P(B)=\\frac1{10}=P(A\\cap B)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-P04",
@@ -366,21 +596,25 @@
   },
   {
     "item_id": "THPT-G12-B18-A04",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Trong lớp, xác suất chơi cờ là 0,3; chơi nhạc là 0,6; chơi cả hai là 0,18. Tính xác suất chơi cờ khi biết chơi nhạc và xét độc lập.",
-    "answer_key": "0,3; hai biến cố độc lập.",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-A04",
+    "stem": "Trong lớp, xác suất chơi cờ là 0,3; chơi nhạc là 0,6; chơi cả hai là 0,18. Tính xác suất chơi cờ khi biết chơi nhạc và xét độc lập. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "0,3; độc lập.",
     "worked_solution": "Gọi C là chơi cờ, N là chơi nhạc. \\(P(C\\mid N)=\\frac{0{,}18}{0{,}6}=0{,}3=P(C)\\). Vì P(N)>0, đẳng thức này cho biết C và N độc lập theo dữ kiện.",
     "skill_ids": [
       "G12-CHVI-B18-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
-      "Tính 0,18/0,6 và so với 0,3."
+      "Tính xác suất chơi cờ khi biết chơi nhạc, rồi so với xác suất chơi cờ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -392,26 +626,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu điều kiện có xác suất dương, độc lập tương đương xác suất không đổi. Ôn CĐ21 mục 1.4; luyện THPT-TOP21-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu điều kiện có xác suất dương, độc lập tương đương xác suất không đổi. Ôn CĐ21 mục 1.4; luyện THPT-TOP21-P04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "0,3; độc lập."
+      },
+      {
+        "id": "B",
+        "text": "0,18; độc lập."
+      },
+      {
+        "id": "C",
+        "text": "0,6; không độc lập."
+      },
+      {
+        "id": "D",
+        "text": "0,3; không độc lập."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-C05",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Trong khảo sát, nhóm tham gia CLB có 8 người đạt, 2 chưa đạt; nhóm không tham gia có 12 đạt, 8 chưa đạt. Chọn đồng khả năng một người. Biết thuộc CLB, tính xác suất đạt.",
-    "answer_key": "\\(\\frac45\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-C05",
+    "stem": "Trong khảo sát, nhóm tham gia CLB có 8 người đạt, 2 chưa đạt; nhóm không tham gia có 12 đạt, 8 chưa đạt. Chọn đồng khả năng một người. Biết thuộc CLB, tính xác suất đạt. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{4}{5}\\)",
     "worked_solution": "Trong nhóm điều kiện CLB có 8+2=10 người, trong đó 8 đạt. Xác suất cần tìm là \\(\\frac8{10}=\\frac45\\).",
     "skill_ids": [
       "G12-CHVI-B18-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Lấy số đạt trong nhóm CLB chia tổng nhóm."
+      "Cộng hai số trong nhóm CLB để tìm mẫu số."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -423,8 +680,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không dùng tổng người đạt ở cả hai nhóm làm mẫu. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không dùng tổng người đạt ở cả hai nhóm làm mẫu. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{2}{5}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{4}{5}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{8}{30}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{3}{5}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-P05",
@@ -483,21 +759,25 @@
   },
   {
     "item_id": "THPT-G12-B18-A05",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Nhóm I có 18 câu trả lời đúng, 12 sai; nhóm II có 24 đúng, 6 sai. Chọn đồng khả năng một lượt trả lời trong từng nhóm. So sánh xác suất trả lời đúng.",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-A05",
+    "stem": "Nhóm I có 18 câu trả lời đúng, 12 sai; nhóm II có 24 đúng, 6 sai. Chọn đồng khả năng một lượt trả lời trong từng nhóm. So sánh xác suất trả lời đúng. Chọn phương án đúng sau khi tự giải.",
     "answer_key": "Nhóm I: \\(\\frac35\\); nhóm II: \\(\\frac45\\); nhóm II cao hơn.",
     "worked_solution": "Mỗi nhóm có 30 lượt. \\(P(\\text{đúng}\\mid I)=\\frac{18}{30}=\\frac35\\) và \\(P(\\text{đúng}\\mid II)=\\frac{24}{30}=\\frac45\\). Nhóm II cao hơn \\(\\frac15\\) (20 điểm phần trăm).",
     "skill_ids": [
       "G12-CHVI-B18-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
-      "Tính tỉ lệ đúng riêng trong từng nhóm."
+      "Mỗi nhóm có 30 lượt; tính riêng xác suất đúng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -509,8 +789,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "So tỉ lệ, không chỉ so số người đúng khi cỡ nhóm khác. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "So tỉ lệ, không chỉ so số người đúng khi cỡ nhóm khác. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nhóm I: \\(\\frac35\\); nhóm II: \\(\\frac45\\); nhóm I cao hơn."
+      },
+      {
+        "id": "B",
+        "text": "Nhóm I: \\(\\frac3{10}\\); nhóm II: \\(\\frac25\\); nhóm II cao hơn."
+      },
+      {
+        "id": "C",
+        "text": "Nhóm I: \\(\\frac35\\); nhóm II: \\(\\frac45\\); nhóm II cao hơn."
+      },
+      {
+        "id": "D",
+        "text": "Hai nhóm đều có xác suất \\(\\frac7{10}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-C06",
@@ -569,21 +868,25 @@
   },
   {
     "item_id": "THPT-G12-B18-P06",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho \\(P(B)=\\frac25\\), \\(P(A\\mid B)=\\frac14\\). Tính \\(P(A\\cap B)\\).",
-    "answer_key": "\\(\\frac1{10}\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-P06",
+    "stem": "Cho \\(P(B)=\\frac25\\), \\(P(A\\mid B)=\\frac14\\). Tính \\(P(A\\cap B)\\). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{1}{10}\\)",
     "worked_solution": "Vì B là điều kiện, lấy xác suất B nhân xác suất A khi B xảy ra: \\(P(A\\cap B)=\\frac25\\cdot\\frac14=\\frac1{10}\\).",
     "skill_ids": [
       "G12-CHVI-B18-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Dùng \\(P(A\\cap B)=P(B)P(A\\mid B)\\)."
+      "Nhân xác suất B với xác suất A khi B xảy ra."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -595,26 +898,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chia thay vì nhân, đang đảo công thức. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chia thay vì nhân, đang đảo công thức. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{5}{8}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{1}{4}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{13}{20}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{1}{10}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-A06",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Trong khảo sát lượt hành khách, 80% đi chuyến tàu đúng giờ; trong nhóm này, 90% kết nối chuyến tiếp theo thành công. Chọn ngẫu nhiên một lượt hành khách. Tính xác suất đồng thời đi chuyến đúng giờ và kết nối thành công.",
-    "answer_key": "\\(\\frac{18}{25}=0{,}72\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-A06",
+    "stem": "Trong khảo sát lượt hành khách, 80% đi chuyến tàu đúng giờ; trong nhóm này, 90% kết nối chuyến tiếp theo thành công. Chọn ngẫu nhiên một lượt hành khách. Tính xác suất đồng thời đi chuyến đúng giờ và kết nối thành công. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{18}{25}\\)",
     "worked_solution": "Gọi A là lượt đi chuyến đúng giờ, B là kết nối thành công. \\(P(A\\cap B)=P(A)P(B\\mid A)=0{,}8\\cdot0{,}9=0{,}72\\). Cả hai xác suất được hiểu trên cùng đơn vị khảo sát là lượt hành khách.",
     "skill_ids": [
       "G12-CHVI-B18-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
-      "Dùng cùng đơn vị kết quả là lượt hành khách, nhân xác suất đúng giờ và kết nối có điều kiện."
+      "Nhân xác suất đúng giờ với xác suất kết nối thành công có điều kiện."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -626,26 +952,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không trộn tỉ lệ chuyến tàu với tỉ lệ hành khách nếu khác trọng số. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không trộn tỉ lệ chuyến tàu với tỉ lệ hành khách nếu khác trọng số. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{18}{25}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{17}{20}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{9}{10}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{7}{10}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-C07",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Túi có 4 bi vàng và 2 bi đen. Rút ngẫu nhiên lần lượt 2 bi, mỗi lần các bi còn lại đồng khả năng, không hoàn lại. Tính xác suất cả hai vàng.",
-    "answer_key": "\\(\\frac25\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-C07",
+    "stem": "Túi có 4 bi vàng và 2 bi đen. Rút ngẫu nhiên lần lượt 2 bi, mỗi lần các bi còn lại đồng khả năng, không hoàn lại. Tính xác suất cả hai vàng. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{2}{5}\\)",
     "worked_solution": "Lần đầu vàng có xác suất 4/6. Khi đó còn 3 vàng trong 5 bi, nên lần hai vàng với điều kiện lần đầu vàng có xác suất 3/5. Xác suất giao là \\(\\frac46\\cdot\\frac35=\\frac25\\).",
     "skill_ids": [
       "G12-CHVI-B18-O07"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Sau một bi vàng, còn ba bi vàng trong năm bi."
+      "Sau khi lấy một bi vàng, còn 3 vàng trong 5 bi."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -657,26 +1006,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không dùng \\(\\left(\\frac46\\right)^2\\) khi không hoàn lại; sau lần đầu số bi còn lại thay đổi. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không dùng \\(\\left(\\frac46\\right)^2\\) khi không hoàn lại; sau lần đầu số bi còn lại thay đổi. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{4}{9}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{2}{5}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{3}{5}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{1}{3}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-P07",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Túi có 3 bi đỏ, 2 bi xanh. Rút ngẫu nhiên lần lượt 2 bi, không hoàn lại, các bi còn lại đồng khả năng. Tính xác suất hai bi khác màu.",
-    "answer_key": "\\(\\frac35\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-P07",
+    "stem": "Túi có 3 bi đỏ, 2 bi xanh. Rút ngẫu nhiên lần lượt 2 bi, không hoàn lại, các bi còn lại đồng khả năng. Tính xác suất hai bi khác màu. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{3}{5}\\)",
     "worked_solution": "Hai trường hợp rời nhau: đỏ rồi xanh hoặc xanh rồi đỏ. Xác suất tương ứng \\(\\frac35\\cdot\\frac24=\\frac3{10}\\) và \\(\\frac25\\cdot\\frac34=\\frac3{10}\\). Cộng được \\(\\frac35\\).",
     "skill_ids": [
       "G12-CHVI-B18-O07"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
-      "Tách đỏ–xanh và xanh–đỏ."
+      "Xét cả hai thứ tự đỏ–xanh và xanh–đỏ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -688,26 +1060,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Hai thứ tự rời nhau, cộng xác suất hai đường. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Hai thứ tự rời nhau, cộng xác suất hai đường. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{3}{10}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{12}{25}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{3}{5}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{2}{5}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-A07",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Túi có 4 bi đỏ, 2 bi xanh. Rút ngẫu nhiên lần lượt 3 bi không hoàn lại, các bi còn lại đồng khả năng. Tính xác suất đúng 2 đỏ, 1 xanh.",
-    "answer_key": "\\(\\frac35\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-A07",
+    "stem": "Túi có 4 bi đỏ, 2 bi xanh. Rút ngẫu nhiên lần lượt 3 bi không hoàn lại, các bi còn lại đồng khả năng. Tính xác suất đúng 2 đỏ, 1 xanh. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{3}{5}\\)",
     "worked_solution": "Có ba thứ tự màu rời nhau: đỏ–đỏ–xanh, đỏ–xanh–đỏ, xanh–đỏ–đỏ. Mỗi thứ tự có tích xác suất bằng \\(\\frac{4\\cdot3\\cdot2}{6\\cdot5\\cdot4}=\\frac15\\). Cộng ba nhánh được \\(\\frac35\\).",
     "skill_ids": [
       "G12-CHVI-B18-O07"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
-      "Tách ba thứ tự có hai đỏ và một xanh."
+      "Xét ba thứ tự màu có đúng hai đỏ và một xanh."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -719,26 +1114,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không chỉ tính một thứ tự; cập nhật số bi còn lại. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không chỉ tính một thứ tự; cập nhật số bi còn lại. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{1}{5}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{2}{5}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{4}{5}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{3}{5}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-C01",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho \\(P(A)=0{,}35\\). Tính xác suất biến cố đối của A.",
-    "answer_key": "\\(\\frac{13}{20}=0{,}65\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-C01",
+    "stem": "Cho \\(P(A)=0{,}35\\). Tính xác suất biến cố đối của A. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{13}{20}\\)",
     "worked_solution": "A và biến cố đối không giao nhau và phủ hết không gian mẫu. Vì vậy \\(P(\\overline A)=1-P(A)=1-0{,}35=0{,}65\\).",
     "skill_ids": [
       "G12-CHVI-B19-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Dùng \\(P(\\overline A)=1-P(A)\\)."
+      "Lấy 1 trừ xác suất của A."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -750,26 +1168,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Hai biến cố đối phủ hết Ω và không giao. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Hai biến cố đối phủ hết Ω và không giao. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{13}{20}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{7}{20}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{7}{10}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{3}{20}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-P01",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho \\(P(A)=\\frac25\\). Tính \\(P(\\overline A)\\) và giải thích vì sao tổng xác suất hai biến cố bằng 1.",
-    "answer_key": "\\(\\frac35\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-P01",
+    "stem": "Cho \\(P(A)=\\frac25\\). Tính \\(P(\\overline A)\\) và giải thích vì sao tổng xác suất hai biến cố bằng 1. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{3}{5}\\)",
     "worked_solution": "\\(P(\\overline A)=1-\\frac25=\\frac35\\). Hai biến cố rời nhau, hợp là toàn bộ không gian mẫu, nên tổng xác suất bằng 1.",
     "skill_ids": [
       "G12-CHVI-B19-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Lấy \\(1-\\frac25\\), rồi kiểm tổng."
+      "A và biến cố đối rời nhau và phủ hết không gian mẫu."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -781,8 +1222,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không nhầm \\(\\overline A\\) với một biến cố tùy ý khác A. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không nhầm \\(\\overline A\\) với một biến cố tùy ý khác A. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{2}{5}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{3}{5}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{1}{5}\\)"
+      },
+      {
+        "id": "D",
+        "text": "1"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-A01",
@@ -841,21 +1301,25 @@
   },
   {
     "item_id": "THPT-G12-B19-C02",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Nhóm A chiếm 40%, tỉ lệ đạt trong nhóm là 80%; nhóm còn lại chiếm 60%, tỉ lệ đạt 60%. Chọn ngẫu nhiên một người. Tính xác suất đạt.",
-    "answer_key": "\\(\\frac{17}{25}=0{,}68\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-C02",
+    "stem": "Nhóm A chiếm 40%, tỉ lệ đạt trong nhóm là 80%; nhóm còn lại chiếm 60%, tỉ lệ đạt 60%. Chọn ngẫu nhiên một người. Tính xác suất đạt. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{17}{25}\\)",
     "worked_solution": "Hai nhóm phân hoạch tập người. Xác suất đạt là tổng hai nhánh: \\(0{,}4\\cdot0{,}8+0{,}6\\cdot0{,}6=0{,}32+0{,}36=0{,}68\\). Không lấy trung bình cộng 80% và 60%.",
     "skill_ids": [
       "G12-CHVI-B19-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Nhân tỉ trọng từng nhóm với tỉ lệ đạt."
+      "Nhân tỉ lệ mỗi nhóm với tỉ lệ đạt trong nhóm đó, rồi cộng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -867,26 +1331,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Hai nguồn không bằng nhau, không lấy trung bình cộng đơn giản. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Hai nguồn không bằng nhau, không lấy trung bình cộng đơn giản. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{7}{10}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{4}{5}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{17}{25}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{16}{25}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-P02",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Hai nguồn cung A, B chiếm lần lượt 30% và 70% sản phẩm. Tỉ lệ lỗi tương ứng là 10% và 20%. Chọn ngẫu nhiên một sản phẩm. Tính xác suất lỗi.",
-    "answer_key": "\\(\\frac{17}{100}=0{,}17\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-P02",
+    "stem": "Hai nguồn cung A, B chiếm lần lượt 30% và 70% sản phẩm. Tỉ lệ lỗi tương ứng là 10% và 20%. Chọn ngẫu nhiên một sản phẩm. Tính xác suất lỗi. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{17}{100}\\)",
     "worked_solution": "Lỗi có thể đến từ A hoặc B, hai nhánh rời nhau. Theo toàn phần, \\(P(L)=0{,}3\\cdot0{,}1+0{,}7\\cdot0{,}2=0{,}03+0{,}14=0{,}17\\).",
     "skill_ids": [
       "G12-CHVI-B19-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Cộng hai đường nguồn–lỗi."
+      "Tính xác suất lỗi theo từng nguồn với trọng số sản lượng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -898,26 +1385,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không bỏ trọng số 30% và 70%. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không bỏ trọng số 30% và 70%. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{3}{20}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{7}{50}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{3}{10}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{17}{100}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-A02",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Trong các lượt khảo sát di chuyển, 60% diễn ra ngày nghỉ và 40% ngày thường. Tỉ lệ dùng xe công cộng trong hai nhóm lần lượt 80% và 50%. Chọn ngẫu nhiên một lượt. Tính xác suất dùng xe công cộng.",
-    "answer_key": "\\(\\frac{17}{25}=0{,}68\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-A02",
+    "stem": "Trong các lượt khảo sát di chuyển, 60% diễn ra ngày nghỉ và 40% ngày thường. Tỉ lệ dùng xe công cộng trong hai nhóm lần lượt 80% và 50%. Chọn ngẫu nhiên một lượt. Tính xác suất dùng xe công cộng. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{17}{25}\\)",
     "worked_solution": "Hai loại ngày tạo hai nhánh rời nhau của lượt khảo sát. \\(P(\\text{xe công cộng})=0{,}6\\cdot0{,}8+0{,}4\\cdot0{,}5=0{,}48+0{,}20=0{,}68\\).",
     "skill_ids": [
       "G12-CHVI-B19-O02"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
-      "Cộng hai xác suất ngày nghỉ/Ngày thường và dùng xe."
+      "Nhân dọc từng nhánh ngày nghỉ/ngày thường rồi cộng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -929,26 +1439,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Đảm bảo cùng đơn vị là một lượt khảo sát. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Đảm bảo cùng đơn vị là một lượt khảo sát. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{17}{25}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{13}{20}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{12}{25}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{4}{5}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-C03",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cây xác suất có \\(P(A)=0{,}2\\), \\(P(B\\mid A)=0{,}7\\), \\(P(B\\mid\\overline A)=0{,}4\\). Tính P(B).",
-    "answer_key": "\\(\\frac{23}{50}=0{,}46\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-C03",
+    "stem": "Cây xác suất có \\(P(A)=0{,}2\\), \\(P(B\\mid A)=0{,}7\\), \\(P(B\\mid\\overline A)=0{,}4\\). Tính P(B). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{23}{50}\\)",
     "worked_solution": "Nhánh đối có xác suất 0,8. Nhân dọc từng nhánh kết thúc ở B rồi cộng hai lá: \\(P(B)=0{,}2\\cdot0{,}7+0{,}8\\cdot0{,}4=0{,}14+0{,}32=0{,}46\\).",
     "skill_ids": [
       "G12-CHVI-B19-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Nhánh \\(\\overline A\\) có xác suất 1-0,2."
+      "Tính xác suất nhánh đối A là 0,8; cộng hai nhánh dẫn tới B."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -960,26 +1493,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nhân trên từng đường đến B, rồi cộng. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nhân trên từng đường đến B, rồi cộng. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{11}{20}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{23}{50}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{7}{50}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{8}{25}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-P03",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho \\(P(A)=0{,}7\\), \\(P(E\\mid A)=0{,}2\\), \\(P(E\\mid\\overline A)=0{,}5\\). Tính P(E).",
-    "answer_key": "\\(\\frac{29}{100}=0{,}29\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-P03",
+    "stem": "Cho \\(P(A)=0{,}7\\), \\(P(E\\mid A)=0{,}2\\), \\(P(E\\mid\\overline A)=0{,}5\\). Tính P(E). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{29}{100}\\)",
     "worked_solution": "Vì \\(P(\\overline A)=0{,}3\\), hai nhánh dẫn đến E có xác suất 0,14 và 0,15. Tổng \\(P(E)=0{,}7\\cdot0{,}2+0{,}3\\cdot0{,}5=0{,}29\\).",
     "skill_ids": [
       "G12-CHVI-B19-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
-      "Nhánh \\(\\overline A\\) có xác suất 0,3."
+      "Tính cả nhánh A và nhánh đối A dẫn tới E."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -991,26 +1547,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không cộng trực tiếp 0,2+0,5. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không cộng trực tiếp 0,2+0,5. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{7}{20}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{7}{50}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{29}{100}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{3}{20}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-A03",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho \\(P(A)=0{,}7\\), \\(P(E\\mid A)=0{,}2\\), \\(P(E\\mid\\overline A)=0{,}5\\). Tính \\(P(A\\mid E)\\).",
-    "answer_key": "\\(\\frac{14}{29}\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-A03",
+    "stem": "Cho \\(P(A)=0{,}7\\), \\(P(E\\mid A)=0{,}2\\), \\(P(E\\mid\\overline A)=0{,}5\\). Tính \\(P(A\\mid E)\\). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{14}{29}\\)",
     "worked_solution": "Nhánh A và E có xác suất \\(0{,}7\\cdot0{,}2=0{,}14\\). Tổng xác suất E là \\(0{,}14+0{,}3\\cdot0{,}5=0{,}29>0\\). Theo Bayes, \\(P(A\\mid E)=\\frac{0{,}14}{0{,}29}=\\frac{14}{29}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
-      "Tử là đường A–E; mẫu gồm cả hai đường E."
+      "Tử là nhánh A và E; mẫu là toàn bộ xác suất E."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1022,26 +1601,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không đảo \\(P(E\\mid A)\\) thành \\(P(A\\mid E)\\). Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không đảo \\(P(E\\mid A)\\) thành \\(P(A\\mid E)\\). Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{1}{5}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{7}{10}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{15}{29}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{14}{29}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-C04",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho \\(P(A)=0{,}3\\), \\(P(B\\mid A)=0{,}1\\), \\(P(B\\mid\\overline A)=0{,}2\\). Tính \\(P(A\\mid B)\\).",
-    "answer_key": "\\(\\frac3{17}\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-C04",
+    "stem": "Cho \\(P(A)=0{,}3\\), \\(P(B\\mid A)=0{,}1\\), \\(P(B\\mid\\overline A)=0{,}2\\). Tính \\(P(A\\mid B)\\). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{3}{17}\\)",
     "worked_solution": "Tử số là nhánh A và B: \\(0{,}3\\cdot0{,}1=0{,}03\\). Mẫu là tất cả nhánh B: \\(0{,}03+0{,}7\\cdot0{,}2=0{,}17>0\\). Tỉ số bằng \\(\\frac3{17}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Tính đường A–B và tổng mọi đường B."
+      "Tính xác suất giao A,B rồi chia cho tổng hai nhánh B."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1053,26 +1655,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ chia cho 0,1, mẫu chưa gồm cả nhánh \\(\\overline A\\). Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ chia cho 0,1, mẫu chưa gồm cả nhánh \\(\\overline A\\). Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{3}{17}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{1}{10}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{3}{10}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{3}{20}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-P04",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Cho \\(P(A)=\\frac14\\), \\(P(B\\mid A)=\\frac45\\), \\(P(B\\mid\\overline A)=\\frac35\\). Tính \\(P(A\\mid B)\\).",
-    "answer_key": "\\(\\frac4{13}\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-P04",
+    "stem": "Cho \\(P(A)=\\frac14\\), \\(P(B\\mid A)=\\frac45\\), \\(P(B\\mid\\overline A)=\\frac35\\). Tính \\(P(A\\mid B)\\). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{4}{13}\\)",
     "worked_solution": "Tử số \\(P(A\\cap B)=\\frac14\\cdot\\frac45=\\frac15\\). Toàn phần cho \\(P(B)=\\frac15+\\frac34\\cdot\\frac35=\\frac{13}{20}>0\\). Bayes: \\(\\frac{1/5}{13/20}=\\frac4{13}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
-      "Tính nhánh \\(\\frac14\\cdot\\frac45\\) và nhánh từ biến cố đối đến B."
+      "Dùng công thức toàn phần cho mẫu và giao A,B cho tử."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1084,26 +1709,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Mẫu là xác suất B chung. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Mẫu là xác suất B chung. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{4}{5}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{4}{13}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{1}{4}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{9}{13}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-A04",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Trong mô hình giả định, 2% đối tượng có một đặc điểm. Phép thử cho kết quả dương ở 90% đối tượng có đặc điểm và 10% đối tượng không có đặc điểm. Biết kết quả dương, tính xác suất đối tượng có đặc điểm.",
-    "answer_key": "\\(\\frac9{58}\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-A04",
+    "stem": "Trong mô hình giả định, 2% đối tượng có một đặc điểm. Phép thử cho kết quả dương ở 90% đối tượng có đặc điểm và 10% đối tượng không có đặc điểm. Biết kết quả dương, tính xác suất đối tượng có đặc điểm. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{9}{58}\\)",
     "worked_solution": "Xét 1000 đối tượng theo tỉ lệ mô hình: 20 có đặc điểm, 18 dương; 980 không có, 98 dương. Trong 116 kết quả dương, 18 thuộc nhóm có đặc điểm. Bayes cho \\(\\frac{18}{116}=\\frac9{58}\\). Đây là mô hình toán giả định.",
     "skill_ids": [
       "G12-CHVI-B19-O04"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
-      "Lập hai đường dương đúng và dương giả."
+      "Xét số dương thật và dương giả trong 1000 đối tượng giả định."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1115,26 +1763,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Độ nhạy không phải xác suất có đặc điểm khi dương. Ôn CĐ21 mục 3.2; luyện THPT-TOP21-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Độ nhạy không phải xác suất có đặc điểm khi dương. Ôn CĐ21 mục 3.2; luyện THPT-TOP21-P08.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{9}{10}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{1}{50}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{9}{58}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{49}{58}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-C05",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Trong mô hình giả định, 2% đối tượng có đặc điểm; 90% nhóm có đặc điểm và 5% nhóm không có đặc điểm cho kết quả dương. Biết kết quả dương, tính xác suất có đặc điểm.",
-    "answer_key": "\\(\\frac{18}{67}\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-C05",
+    "stem": "Trong mô hình giả định, 2% đối tượng có đặc điểm; 90% nhóm có đặc điểm và 5% nhóm không có đặc điểm cho kết quả dương. Biết kết quả dương, tính xác suất có đặc điểm. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{18}{67}\\)",
     "worked_solution": "Nhánh có đặc điểm và dương: \\(0{,}02\\cdot0{,}9=0{,}018\\). Nhánh không có và dương: \\(0{,}98\\cdot0{,}05=0{,}049\\). Tổng dương 0,067; xác suất cần tìm \\(\\frac{0{,}018}{0{,}067}=\\frac{18}{67}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Tính 0,02·0,9 và 0,98·0,05."
+      "Tính xác suất dương của cả hai nhóm, rồi lấy tỉ lệ nhánh có đặc điểm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1146,26 +1817,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Mẫu gồm cả dương tính đúng và giả. Ôn CĐ21 mục 3.2; luyện THPT-TOP21-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Mẫu gồm cả dương tính đúng và giả. Ôn CĐ21 mục 3.2; luyện THPT-TOP21-P08.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{9}{10}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{1}{50}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{49}{67}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{18}{67}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-P05",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Trong mô hình giả định, 1% đối tượng có đặc điểm; 80% nhóm có đặc điểm và 10% nhóm không có đặc điểm cho kết quả dương. Biết dương, tính xác suất có đặc điểm.",
-    "answer_key": "\\(\\frac8{107}\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-P05",
+    "stem": "Trong mô hình giả định, 1% đối tượng có đặc điểm; 80% nhóm có đặc điểm và 10% nhóm không có đặc điểm cho kết quả dương. Biết dương, tính xác suất có đặc điểm. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{8}{107}\\)",
     "worked_solution": "Hai nhánh dương có xác suất \\(0{,}01\\cdot0{,}8=0{,}008\\) và \\(0{,}99\\cdot0{,}1=0{,}099\\). Tổng 0,107. Bayes cho \\(\\frac{0{,}008}{0{,}107}=\\frac8{107}\\); không nhầm với độ nhạy 80%.",
     "skill_ids": [
       "G12-CHVI-B19-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
-      "Tính trọng số 1% và 99%."
+      "Đừng nhầm xác suất có đặc điểm khi dương với độ nhạy."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1177,26 +1871,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tỉ lệ nền nhỏ có thể khiến báo giả nhiều hơn báo đúng. Ôn CĐ21 mục 3.2; luyện THPT-TOP21-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Tỉ lệ nền nhỏ có thể khiến báo giả nhiều hơn báo đúng. Ôn CĐ21 mục 3.2; luyện THPT-TOP21-P08.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{8}{107}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{4}{5}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{1}{100}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{99}{107}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-A05",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Bộ lọc thư: 5% thư là rác, 90% thư rác bị gắn nhãn rác, 4% thư thường bị gắn nhầm rác. Biết thư bị gắn nhãn rác, tính xác suất thực sự là thư rác.",
-    "answer_key": "\\(\\frac{45}{83}\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-A05",
+    "stem": "Bộ lọc thư: 5% thư là rác, 90% thư rác bị gắn nhãn rác, 4% thư thường bị gắn nhầm rác. Biết thư bị gắn nhãn rác, tính xác suất thực sự là thư rác. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{45}{83}\\)",
     "worked_solution": "Nhánh thư rác và bị gắn nhãn có xác suất \\(0{,}05\\cdot0{,}9=0{,}045\\). Nhánh thư thường bị gắn nhầm là \\(0{,}95\\cdot0{,}04=0{,}038\\). Tổng bị gắn nhãn là 0,083. Bayes cho \\(\\frac{0{,}045}{0{,}083}=\\frac{45}{83}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O05"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
-      "Tính xác suất thư rác bị gắn và thư thường bị gắn."
+      "Tổng nhãn rác gồm thư rác gắn đúng và thư thường gắn nhầm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1208,26 +1925,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy 90% làm xác suất thư thật sự rác khi bị gắn. Ôn CĐ21 mục 3.2; luyện THPT-TOP21-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không lấy 90% làm xác suất thư thật sự rác khi bị gắn. Ôn CĐ21 mục 3.2; luyện THPT-TOP21-P08.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{9}{10}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{45}{83}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{1}{20}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{38}{83}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-C06",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Chọn ngẫu nhiên một lượt khảo sát từ ba vùng A, B, C chiếm lần lượt 25%, 50%, 25% lượt. Tỉ lệ ghi nhận mưa trong từng vùng là 60%, 20%, 40%. Tính xác suất lượt ghi nhận mưa.",
-    "answer_key": "\\(\\frac7{20}=0{,}35\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-C06",
+    "stem": "Chọn ngẫu nhiên một lượt khảo sát từ ba vùng A, B, C chiếm lần lượt 25%, 50%, 25% lượt. Tỉ lệ ghi nhận mưa trong từng vùng là 60%, 20%, 40%. Tính xác suất lượt ghi nhận mưa. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{7}{20}\\)",
     "worked_solution": "Ba vùng phân hoạch lượt khảo sát. Theo toàn phần, \\(0{,}25\\cdot0{,}6+0{,}5\\cdot0{,}2+0{,}25\\cdot0{,}4=0{,}15+0{,}10+0{,}10=0{,}35\\).",
     "skill_ids": [
       "G12-CHVI-B19-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Nhân ba trọng số với xác suất mưa từng vùng."
+      "Tính trung bình có trọng số của ba tỉ lệ mưa."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1239,8 +1979,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Ba vùng phải rời nhau và phủ toàn bộ mô hình lấy mẫu. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Ba vùng phải rời nhau và phủ toàn bộ mô hình lấy mẫu. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{2}{5}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{3}{20}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{7}{20}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{1}{3}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-P06",
@@ -1299,21 +2058,25 @@
   },
   {
     "item_id": "THPT-G12-B19-A06",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Ba nguồn cung chiếm lần lượt 40%, 35%, 25% sản phẩm, tỉ lệ lỗi tương ứng 2%, 4%, 8%. Tính xác suất lỗi của sản phẩm chọn ngẫu nhiên.",
-    "answer_key": "\\(\\frac{21}{500}=0{,}042\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-A06",
+    "stem": "Ba nguồn cung chiếm lần lượt 40%, 35%, 25% sản phẩm, tỉ lệ lỗi tương ứng 2%, 4%, 8%. Tính xác suất lỗi của sản phẩm chọn ngẫu nhiên. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{21}{500}\\)",
     "worked_solution": "Ba nguồn tạo phân hoạch. Xác suất lỗi là \\(0{,}4\\cdot0{,}02+0{,}35\\cdot0{,}04+0{,}25\\cdot0{,}08=0{,}008+0{,}014+0{,}02=0{,}042\\) (4,2%).",
     "skill_ids": [
       "G12-CHVI-B19-O06"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
-      "Nhân tỉ trọng và tỉ lệ lỗi từng nguồn."
+      "Nhân tỉ trọng mỗi nguồn với tỉ lệ lỗi tương ứng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1325,26 +2088,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Kiểm các trọng số cộng bằng 1. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Kiểm các trọng số cộng bằng 1. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{7}{150}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{1}{25}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{1}{50}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{21}{500}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-C07",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "70% đơn thuộc ca sáng, tỉ lệ thành công 80%; 30% thuộc ca tối, tỉ lệ thành công 50%. Chọn ngẫu nhiên một đơn. Tính xác suất thành công và xác suất thuộc ca sáng khi biết thành công.",
-    "answer_key": "\\(\\frac{71}{100}\\) và \\(\\frac{56}{71}\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-C07",
+    "stem": "70% đơn thuộc ca sáng, tỉ lệ thành công 80%; 30% thuộc ca tối, tỉ lệ thành công 50%. Chọn ngẫu nhiên một đơn. Tính xác suất thành công và xác suất thuộc ca sáng khi biết thành công. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{71}{100};\\frac{56}{71}\\)",
     "worked_solution": "Hai nhánh thành công có xác suất 0,56 và 0,15. Toàn phần cho \\(P(S)=0{,}56+0{,}15=0{,}71\\). Trong tất cả đơn thành công, phần từ ca sáng theo Bayes là \\(\\frac{0{,}56}{0{,}71}=\\frac{56}{71}\\).",
     "skill_ids": [
       "G12-CHVI-B19-O07"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
-      "Tính P(thành công) trước, sau đó chia đường sáng–thành công."
+      "Tính tổng hai nhánh thành công rồi lấy tỉ lệ nhánh ca sáng trong tổng đó."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1356,26 +2142,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không nhầm xác suất thành công khi biết ca sáng với xác suất thuộc ca sáng khi biết thành công. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không nhầm xác suất thành công khi biết ca sáng với xác suất thuộc ca sáng khi biết thành công. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{71}{100};\\frac{56}{71}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{71}{100};\\frac45\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{13}{20};\\frac7{10}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{56}{100};\\frac{56}{71}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-P07",
-    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Nguồn A cung cấp 60% sản phẩm, tỉ lệ hỏng 10%; nguồn B cung cấp 40%, tỉ lệ hỏng 5%. Chọn ngẫu nhiên một sản phẩm. Tính xác suất hỏng và xác suất thuộc A khi biết hỏng.",
-    "answer_key": "\\(\\frac2{25}\\) và \\(\\frac34\\).",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-P07",
+    "stem": "Nguồn A cung cấp 60% sản phẩm, tỉ lệ hỏng 10%; nguồn B cung cấp 40%, tỉ lệ hỏng 5%. Chọn ngẫu nhiên một sản phẩm. Tính xác suất hỏng và xác suất thuộc A khi biết hỏng. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac2{25};\\frac34\\)",
     "worked_solution": "Nhánh A và hỏng có xác suất 0,06; nhánh B và hỏng là 0,02. Tổng hỏng \\(P(H)=0{,}08=\\frac2{25}\\). Bayes cho \\(P(A\\mid H)=\\frac{0{,}06}{0{,}08}=\\frac34\\).",
     "skill_ids": [
       "G12-CHVI-B19-O07"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
-      "Cộng hai đường hỏng, rồi tính tỉ số đường A–hỏng."
+      "Tổng hỏng gồm hai nguồn; tử của hậu nghiệm là nhánh A và hỏng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1387,8 +2196,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Mẫu Bayes là tổng xác suất hỏng. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Mẫu Bayes là tổng xác suất hỏng. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac2{25};\\frac1{10}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac2{25};\\frac34\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac3{20};\\frac35\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac3{50};\\frac34\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-A07",
@@ -1447,21 +2275,27 @@
   },
   {
     "item_id": "THPT-G12-B18-KFT01",
-    "content_version": "SOURCE_BLOB_c5e96be714ed2b3d440c37c5507ddc79314bf087_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Chọn ngẫu nhiên đều một số nguyên từ 1 đến 10. Biết số được chọn là số chẵn, tính xác suất số đó lớn hơn 6.",
-    "answer_key": "2/5.",
-    "worked_solution": "Khi biết số được chọn chẵn, không gian điều kiện là {2,4,6,8,10}, gồm 5 số đồng khả năng. Trong đó {8,10} lớn hơn 6, có 2 số, nên xác suất là 2/5. Nếu lấy mẫu số 10, hãy xem lại việc thu hẹp không gian mẫu (B18-O01), rồi thử C01.",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-KFT01",
+    "stem": "Chọn ngẫu nhiên đều một số nguyên từ 1 đến 10. Biết số được chọn là số chẵn, tính xác suất số đó lớn hơn 6. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{2}{5}\\)",
+    "worked_solution": "Khi biết số được chọn chẵn, nhóm điều kiện là \\(\\{2;4;6;8;10\\}\\), gồm 5 số đồng khả năng. Hai số 8 và 10 lớn hơn 6, nên xác suất bằng \\(\\frac25\\). Không lấy mẫu số 10 vì thông tin điều kiện đã thu hẹp nhóm kết quả.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHVI-B18-O01"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Trong nhóm số chẵn, chỉ đếm các số lớn hơn 6."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1478,25 +2312,50 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{1}{5}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{3}{5}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{2}{5}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{1}{2}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B18-KFT02",
-    "content_version": "SOURCE_BLOB_c5e96be714ed2b3d440c37c5507ddc79314bf087_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một túi có 3 bi đỏ và 2 bi xanh. Rút ngẫu nhiên từng bi hai lần, không hoàn lại. Biết lần đầu rút được bi đỏ, tính xác suất lần hai rút được bi đỏ.",
-    "answer_key": "1/2.",
-    "worked_solution": "Biết lần đầu đã rút bi đỏ, túi còn 2 bi đỏ và 2 bi xanh. Lần thứ hai chọn ngẫu nhiên đều trong 4 bi còn lại nên xác suất đỏ là 2/4=1/2. Không dùng 3/5 vì không hoàn lại. Nếu nhầm, xem lại B18-O07 và sơ đồ cây.",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-KFT02",
+    "stem": "Một túi có 3 bi đỏ và 2 bi xanh. Rút ngẫu nhiên từng bi hai lần, không hoàn lại. Biết lần đầu rút được bi đỏ, tính xác suất lần hai rút được bi đỏ. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{1}{2}\\)",
+    "worked_solution": "Sau khi biết lượt đầu lấy bi đỏ, còn 2 đỏ và 2 xanh. Lượt thứ hai chọn đều trong 4 bi còn lại, nên xác suất đỏ là \\(\\frac24=\\frac12\\). Không dùng \\(\\frac35\\) vì không hoàn lại.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHVI-B18-O07"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Sau lượt đầu đỏ, còn 2 đỏ và 2 xanh."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1517,25 +2376,50 @@
       "distinct_task_reason": "Same 3 red/2 green without replacement, canonical asks different colors rather than conditional second red."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{3}{5}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{2}{5}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{1}{4}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{1}{2}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-KFT01",
-    "content_version": "SOURCE_BLOB_e9588ca5fcdb107aa62990dc2e36635ef01085c0_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Xưởng A sản xuất 25% số sản phẩm, tỉ lệ lỗi 4%; xưởng B sản xuất 75%, tỉ lệ lỗi 2%. Chọn ngẫu nhiên một sản phẩm từ toàn bộ sản phẩm của hai xưởng. Tính xác suất sản phẩm bị lỗi.",
-    "answer_key": "0,025=1/40=2,5%.",
-    "worked_solution": "Gọi D là biến cố sản phẩm được chọn bị lỗi. Hai nguồn A và B rời nhau và bao hết sản phẩm, nên P(D)=P(A)P(D|A)+P(B)P(D|B)=0,25·0,04+0,75·0,02=0,025. Không lấy trung bình cộng hai tỉ lệ lỗi vì sản lượng hai xưởng khác nhau.",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-KFT01",
+    "stem": "Xưởng A sản xuất 25% số sản phẩm, tỉ lệ lỗi 4%; xưởng B sản xuất 75%, tỉ lệ lỗi 2%. Chọn ngẫu nhiên một sản phẩm từ toàn bộ sản phẩm của hai xưởng. Tính xác suất sản phẩm bị lỗi. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{1}{40}\\)",
+    "worked_solution": "Gọi D là biến cố sản phẩm bị lỗi. Hai nguồn A, B phân hoạch toàn bộ sản phẩm. Theo xác suất toàn phần, \\(P(D)=0{,}25\\cdot0{,}04+0{,}75\\cdot0{,}02=0{,}025=\\frac1{40}\\). Không lấy trung bình cộng tỉ lệ lỗi vì tỉ trọng hai nguồn khác nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHVI-B19-O02"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính hai nhánh lỗi theo tỉ lệ sản lượng khác nhau."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1552,25 +2436,50 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{1}{40}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{3}{100}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{1}{100}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{3}{200}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B19-KFT02",
-    "content_version": "SOURCE_BLOB_e9588ca5fcdb107aa62990dc2e36635ef01085c0_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Xưởng A sản xuất 25% số sản phẩm, tỉ lệ lỗi 4%; xưởng B sản xuất 75%, tỉ lệ lỗi 2%. Chọn ngẫu nhiên một sản phẩm từ toàn bộ sản phẩm của hai xưởng. Biết sản phẩm bị lỗi, tính xác suất nó do xưởng A sản xuất.",
-    "answer_key": "0,4=2/5=40%.",
-    "worked_solution": "Gọi D là biến cố sản phẩm bị lỗi. P(A∩D)=0,25·0,04=0,01. Theo công thức xác suất toàn phần, P(D)=0,01+0,75·0,02=0,025>0. Theo Bayes, P(A|D)=0,01/0,025=0,4. Không nhầm P(D|A)=4% với P(A|D)=40%.",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-KFT02",
+    "stem": "Xưởng A sản xuất 25% số sản phẩm, tỉ lệ lỗi 4%; xưởng B sản xuất 75%, tỉ lệ lỗi 2%. Chọn ngẫu nhiên một sản phẩm từ toàn bộ sản phẩm của hai xưởng. Biết sản phẩm bị lỗi, tính xác suất nó do xưởng A sản xuất. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\(\\frac{2}{5}\\)",
+    "worked_solution": "Gọi D là biến cố sản phẩm bị lỗi. Ta có \\(P(A\\cap D)=0{,}25\\cdot0{,}04=0{,}01\\), \\(P(D)=0{,}01+0{,}75\\cdot0{,}02=0{,}025>0\\). Theo Bayes, \\(P(A\\mid D)=\\frac{0{,}01}{0{,}025}=0{,}4=\\frac25\\). Không nhầm với \\(P(D\\mid A)=0{,}04\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHVI-B19-O04"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Chia xác suất nhánh A và lỗi cho xác suất lỗi toàn phần."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1590,6 +2499,25 @@
       "THPT-G12-B19-KFT01"
     ],
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{1}{25}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{2}{5}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{1}{4}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{3}{5}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
