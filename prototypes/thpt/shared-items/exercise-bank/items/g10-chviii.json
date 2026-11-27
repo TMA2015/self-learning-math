@@ -1,7 +1,7 @@
 [
   {
     "item_id": "THPT-G10-B23-C01",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B23-C01",
     "stem": "Một cửa hàng có 4 mẫu bút mực và 3 mẫu bút chì khác nhau. Khách chọn mua đúng một cây bút, chỉ phân biệt theo mẫu. Có bao nhiêu cách chọn?",
     "answer_key": "7 cách",
     "worked_solution": "Mỗi cách chọn thuộc đúng một trong hai nhóm: bút mực (4 cách) hoặc bút chì (3 cách). Hai nhóm không trùng nhau, nên theo quy tắc cộng có \\(4+3=7\\) cách.",
@@ -9,13 +9,17 @@
       "COUNT_ADDITION"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Chọn một trong hai nhóm, không chọn cả hai."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -27,12 +31,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhân 4 với 3, phân biệt chọn đúng một cây bút với chọn một cây từ mỗi nhóm. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhân 4 với 3, phân biệt chọn đúng một cây bút với chọn một cây từ mỗi nhóm. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "7"
+      },
+      {
+        "id": "B",
+        "text": "12"
+      },
+      {
+        "id": "C",
+        "text": "1"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B23-C02",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B23-C02",
     "stem": "Có 3 áo khác màu và 2 quần khác màu. Mỗi bộ gồm đúng một áo và một quần; áo nào cũng có thể ghép với quần nào. Có bao nhiêu bộ khác nhau?",
     "answer_key": "6 bộ",
     "worked_solution": "Chọn áo có 3 cách. Với mỗi áo, có 2 cách chọn quần. Mỗi cặp áo và quần tạo đúng một bộ khác nhau. Theo quy tắc nhân, có \\(3\\cdot2=6\\) bộ.",
@@ -40,13 +63,17 @@
       "COUNT_MULTIPLICATION"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Hai bước lựa chọn diễn ra liên tiếp."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -58,12 +85,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng số áo và quần, lập các cặp (áo;quần) để thấy mỗi áo ghép với mọi quần. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng số áo và quần, lập các cặp (áo;quần) để thấy mỗi áo ghép với mọi quần. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "5"
+      },
+      {
+        "id": "B",
+        "text": "6"
+      },
+      {
+        "id": "C",
+        "text": "9"
+      },
+      {
+        "id": "D",
+        "text": "8"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B23-P01",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B23-P01",
     "stem": "Một mã gồm hai chữ cái lấy từ tập \\(\\{A;B;C\\}\\), được phép lặp, tiếp theo là một chữ số từ 0 đến 9. Có bao nhiêu mã khác nhau?",
     "answer_key": "90 mã",
     "worked_solution": "Vị trí chữ cái thứ nhất có 3 cách chọn; vị trí thứ hai vẫn có 3 cách vì được lặp. Vị trí chữ số có 10 cách, kể cả 0. Mỗi bộ ba lựa chọn theo thứ tự tạo một mã duy nhất, nên có \\(3\\cdot3\\cdot10=90\\) mã.",
@@ -71,13 +117,17 @@
       "COUNT_REPETITION"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Chú ý điều kiện được lặp."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -89,12 +139,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu loại chữ lặp, đọc lại điều kiện được lặp; số 0 được phép ở vị trí mã. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu loại chữ lặp, đọc lại điều kiện được lặp; số 0 được phép ở vị trí mã. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "60"
+      },
+      {
+        "id": "B",
+        "text": "30"
+      },
+      {
+        "id": "C",
+        "text": "90"
+      },
+      {
+        "id": "D",
+        "text": "900"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B23-P02",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B23-P02",
     "stem": "Từ A đến B có 3 tuyến, từ B đến C có 4 tuyến, từ C đến D có 2 tuyến. Hành trình từ A đến D phải qua B rồi C, chọn đúng một tuyến ở mỗi chặng; mọi cách ghép tuyến đều đi được. Có bao nhiêu hành trình khác nhau?",
     "answer_key": "24 hành trình.",
     "worked_solution": "Mỗi tuyến từ A đến B ghép được với 4 tuyến từ B đến C, tạo \\(3\\cdot4=12\\) hành trình đến C. Mỗi hành trình đó ghép tiếp được với 2 tuyến từ C đến D. Mỗi hành trình hoàn chỉnh được xác định bởi ba tuyến theo thứ tự, nên theo quy tắc nhân có \\(3\\cdot4\\cdot2=24\\) hành trình.",
@@ -102,13 +171,17 @@
       "COUNT_PRODUCT_PATH"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Vẽ ba tầng của sơ đồ cây; mỗi nhánh ở tầng trước có bao nhiêu lựa chọn tiếp theo?"
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -120,12 +193,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng \\(3+4+2\\), vẽ cây ba chặng và kiểm mỗi hành trình hoàn chỉnh phải chọn đủ ba tuyến. Ôn Bài 23 §2.2; luyện THPT-G10-CHVIII-TRY02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng \\(3+4+2\\), vẽ cây ba chặng và kiểm mỗi hành trình hoàn chỉnh phải chọn đủ ba tuyến. Ôn Bài 23 §2.2; luyện THPT-G10-CHVIII-TRY02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "9"
+      },
+      {
+        "id": "B",
+        "text": "12"
+      },
+      {
+        "id": "C",
+        "text": "36"
+      },
+      {
+        "id": "D",
+        "text": "24"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B23-P03",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B23-P03",
     "stem": "Học sinh chọn tham gia đúng một câu lạc bộ: 5 CLB khoa học hoặc 4 CLB thể thao, danh sách hai nhóm không trùng nhau. Có bao nhiêu cách?",
     "answer_key": "9 cách",
     "worked_solution": "Có 5 cách chọn CLB khoa học và 4 cách chọn CLB thể thao. Vì hai danh sách không trùng và học sinh chỉ chọn một CLB, mỗi lựa chọn được tính đúng một lần. Theo quy tắc cộng có \\(5+4=9\\) cách.",
@@ -133,13 +225,17 @@
       "COUNT_DISJOINT_OPTIONS"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Không nhân vì chỉ tham gia một CLB."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -151,12 +247,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng cả nhóm giao nhau, kiểm hai danh sách rời nhau trước khi cộng. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng cả nhóm giao nhau, kiểm hai danh sách rời nhau trước khi cộng. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "9"
+      },
+      {
+        "id": "B",
+        "text": "20"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B23-P04",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B23-P04",
     "stem": "Một thực đơn có 2 món khai vị, 3 món chính, 2 món tráng miệng. Mỗi suất ăn gồm đúng một món mỗi nhóm và mọi cách kết hợp đều được phép. Có bao nhiêu suất ăn khác nhau?",
     "answer_key": "12 suất ăn",
     "worked_solution": "Chọn món khai vị có 2 cách, sau mỗi lựa chọn có 3 cách chọn món chính, rồi 2 cách chọn món tráng miệng. Theo quy tắc nhân, có \\(2\\cdot3\\cdot2=12\\) suất ăn khác nhau.",
@@ -164,13 +279,17 @@
       "COUNT_MENU"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Xác định rõ mỗi bước là chọn một món thuộc một nhóm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -182,12 +301,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ tính hai nhóm món, lập đủ ba bước chọn. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ tính hai nhóm món, lập đủ ba bước chọn. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "7"
+      },
+      {
+        "id": "B",
+        "text": "12"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "18"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B24-C01",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B24-C01",
     "stem": "Có 5 người khác nhau đứng thành một hàng. Có bao nhiêu thứ tự xếp?",
     "answer_key": "120 cách",
     "worked_solution": "Xếp người thứ nhất có 5 cách, người thứ hai còn 4 cách, tiếp theo lần lượt còn 3, 2 và 1 cách. Vì sắp xếp tất cả 5 người phân biệt và thứ tự quan trọng, số hoán vị là \\(P_5=5!=5\\cdot4\\cdot3\\cdot2\\cdot1=120\\).",
@@ -195,13 +333,17 @@
       "PERMUTATION"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Sắp xếp tất cả phần tử, xét thứ tự."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -213,12 +355,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng tổ hợp, lưu ý đổi thứ tự người tạo cách xếp khác. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng tổ hợp, lưu ý đổi thứ tự người tạo cách xếp khác. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "25"
+      },
+      {
+        "id": "B",
+        "text": "20"
+      },
+      {
+        "id": "C",
+        "text": "120"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B24-C02",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B24-C02",
     "stem": "Từ 7 học sinh khác nhau, chọn 3 học sinh khác nhau, mỗi người giữ một trong ba vị trí có tên A, B, C. Có bao nhiêu cách phân công?",
     "answer_key": "210 cách",
     "worked_solution": "Vị trí A có 7 cách chọn; vị trí B còn 6; vị trí C còn 5. Đổi người giữa hai vị trí tạo một cách phân công mới. Đây là chỉnh hợp chập 3 của 7: \\(A_7^3=7\\cdot6\\cdot5=210\\).",
@@ -226,13 +387,17 @@
       "ARRANGEMENT"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Ba vị trí A, B, C khác nhau; đổi người giữa các vị trí tạo cách phân công mới."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -244,12 +409,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chia cho \\(3!\\), kiểm ba vị trí có tên khác nhau: đổi vai tạo kết quả mới. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chia cho \\(3!\\), kiểm ba vị trí có tên khác nhau: đổi vai tạo kết quả mới. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "35"
+      },
+      {
+        "id": "B",
+        "text": "343"
+      },
+      {
+        "id": "C",
+        "text": "42"
+      },
+      {
+        "id": "D",
+        "text": "210"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B24-P01",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B24-P01",
     "stem": "Chọn một nhóm gồm 3 học sinh từ 8 học sinh khác nhau, không phân vai. Có bao nhiêu nhóm?",
     "answer_key": "56 nhóm",
     "worked_solution": "Chọn 3 trong 8 học sinh mà không phân vai, nên thứ tự chọn không tạo nhóm mới. Có \\(8\\cdot7\\cdot6\\) cách chọn theo thứ tự, nhưng mỗi nhóm được tính \\(3!\\) lần. Vậy \\(C_8^3=\\frac{8\\cdot7\\cdot6}{3\\cdot2\\cdot1}=56\\) nhóm.",
@@ -257,13 +441,17 @@
       "COMBINATION"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Nhóm không phân biệt thứ tự."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -275,12 +463,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đếm \\(8\\cdot7\\cdot6\\), mỗi nhóm bị đếm \\(3!\\) lần; chia đúng số lần trùng. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đếm \\(8\\cdot7\\cdot6\\), mỗi nhóm bị đếm \\(3!\\) lần; chia đúng số lần trùng. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY07.",
+    "options": [
+      {
+        "id": "A",
+        "text": "56"
+      },
+      {
+        "id": "B",
+        "text": "336"
+      },
+      {
+        "id": "C",
+        "text": "24"
+      },
+      {
+        "id": "D",
+        "text": "48"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B24-P02",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B24-P02",
     "stem": "Một lớp có 6 ứng viên, chọn một lớp trưởng và một lớp phó (hai người khác nhau). Có bao nhiêu cách?",
     "answer_key": "30 cách",
     "worked_solution": "Chọn lớp trưởng có 6 cách; vì lớp phó phải là người khác, còn 5 cách chọn lớp phó. Hai chức danh khác nhau, nên đổi vai tạo một cách mới. Có \\(6\\cdot5=A_6^2=30\\) cách.",
@@ -288,13 +495,17 @@
       "ARRANGEMENT_WITH_ROLES"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Hai chức danh phân biệt nên không dùng tổ hợp."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -306,12 +517,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho một người giữ hai vai, loại người đã chọn ở bước hai. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho một người giữ hai vai, loại người đã chọn ở bước hai. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "15"
+      },
+      {
+        "id": "B",
+        "text": "30"
+      },
+      {
+        "id": "C",
+        "text": "36"
+      },
+      {
+        "id": "D",
+        "text": "12"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B24-P03",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B24-P03",
     "stem": "Dùng mỗi chữ T, O, A, N đúng một lần để lập dãy bốn chữ. Có bao nhiêu dãy mà T không đứng đầu?",
     "answer_key": "18 dãy.",
     "worked_solution": "Có \\(4!=24\\) dãy khi sắp cả bốn chữ khác nhau. Nếu T đứng đầu, ba vị trí còn lại có \\(3!=6\\) cách xếp. Vậy số dãy T không đứng đầu là \\(24-6=18\\). Cũng có thể chọn chữ đầu trong O, A, N (3 cách), rồi xếp ba chữ còn lại, được \\(3\\cdot3!=18\\).",
@@ -319,13 +549,17 @@
       "PERMUTATION_LETTERS"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Đếm tất cả rồi trừ các dãy có T đứng đầu, hoặc chọn chữ đầu trước."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -337,12 +571,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng \\(4^4\\) hoặc quên điều kiện T không đứng đầu, đếm hoán vị rồi trừ các dãy T đứng đầu; mỗi chữ chỉ xuất hiện một lần. Ôn Bài 24 §2.1; luyện THPT-G10-CHVIII-TRY05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng \\(4^4\\) hoặc quên điều kiện T không đứng đầu, đếm hoán vị rồi trừ các dãy T đứng đầu; mỗi chữ chỉ xuất hiện một lần. Ôn Bài 24 §2.1; luyện THPT-G10-CHVIII-TRY05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "24"
+      },
+      {
+        "id": "B",
+        "text": "6"
+      },
+      {
+        "id": "C",
+        "text": "18"
+      },
+      {
+        "id": "D",
+        "text": "12"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B24-P04",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B24-P04",
     "stem": "Chọn đội gồm 2 bạn nữ từ 5 nữ và 3 bạn nam từ 7 nam, không phân vai. Có bao nhiêu đội?",
     "answer_key": "350 đội",
     "worked_solution": "Chọn 2 trong 5 bạn nữ có \\(C_5^2=10\\) cách; chọn 3 trong 7 bạn nam có \\(C_7^3=35\\) cách. Trong mỗi nhóm không phân vai; mỗi cách chọn nữ ghép được với mọi cách chọn nam. Theo quy tắc nhân, có \\(10\\cdot35=350\\) đội.",
@@ -350,13 +603,17 @@
       "COMBINATION_TWO_GROUPS"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Trong mỗi nhóm chọn không thứ tự; giữa hai nhóm dùng nhân."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -368,12 +625,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng hai tổ hợp, mỗi đội cần đồng thời đủ cả nam và nữ. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng hai tổ hợp, mỗi đội cần đồng thời đủ cả nam và nữ. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY08.",
+    "options": [
+      {
+        "id": "A",
+        "text": "45"
+      },
+      {
+        "id": "B",
+        "text": "70"
+      },
+      {
+        "id": "C",
+        "text": "700"
+      },
+      {
+        "id": "D",
+        "text": "350"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B25-C01",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B25-C01",
     "stem": "Hệ số của \\(a^2b^2\\) trong \\((a+b)^4\\) là bao nhiêu?",
     "answer_key": "6",
     "worked_solution": "Trong tích \\((a+b)^4\\), để được \\(a^2b^2\\), cần chọn b từ đúng 2 trong 4 nhân tử, hai nhân tử còn lại chọn a. Có \\(C_4^2=6\\) cách chọn, mỗi cách góp một \\(a^2b^2\\). Do đó hệ số bằng 6.",
@@ -381,13 +657,17 @@
       "BINOMIAL_COEFFICIENT"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Xác định số lần chọn b bằng 2."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -399,12 +679,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy \\(4^2\\), chọn đúng hai trong bốn nhân tử lấy b; phần còn lại lấy a. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy \\(4^2\\), chọn đúng hai trong bốn nhân tử lấy b; phần còn lại lấy a. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY09.",
+    "options": [
+      {
+        "id": "A",
+        "text": "6"
+      },
+      {
+        "id": "B",
+        "text": "4"
+      },
+      {
+        "id": "C",
+        "text": "12"
+      },
+      {
+        "id": "D",
+        "text": "16"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B25-C02",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B25-C02",
     "stem": "Hệ số của \\(x^2\\) trong \\((1+x)^5\\) bằng bao nhiêu?",
     "answer_key": "10",
     "worked_solution": "Để có \\(x^2\\) trong \\((1+x)^5\\), phải chọn x từ đúng 2 trong 5 nhân tử, các nhân tử còn lại chọn 1. Có \\(C_5^2=10\\) cách, nên hệ số bằng 10.",
@@ -412,13 +711,17 @@
       "BINOMIAL_X_POWER"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Dùng hệ số ở số hạng bậc hai."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -430,12 +733,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm hệ số với số hạng, chọn hai trong năm nhân tử lấy x. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm hệ số với số hạng, chọn hai trong năm nhân tử lấy x. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY09.",
+    "options": [
+      {
+        "id": "A",
+        "text": "5"
+      },
+      {
+        "id": "B",
+        "text": "10"
+      },
+      {
+        "id": "C",
+        "text": "20"
+      },
+      {
+        "id": "D",
+        "text": "25"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B25-P01",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B25-P01",
     "stem": "Tìm hệ số của \\(x^3\\) trong \\((2x-1)^4\\).",
     "answer_key": "\\(-32\\).",
     "worked_solution": "Để có \\(x^3\\), chọn \\(2x\\) từ 3 trong 4 nhân tử, nhân tử còn lại chọn \\(-1\\). Số hạng tương ứng là \\(C_4^3(2x)^3(-1)=-32x^3\\). Vậy hệ số cần tìm là \\(-32\\), không phải cả số hạng.",
@@ -443,13 +765,17 @@
       "BINOMIAL_NEGATIVE_COEFF"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Giữ dấu trừ của số hạng không chứa x."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -461,12 +787,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu kết quả dương, giữ dấu của \\(-1\\) trong nhân tử còn lại. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu kết quả dương, giữ dấu của \\(-1\\) trong nhân tử còn lại. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY10.",
+    "options": [
+      {
+        "id": "A",
+        "text": "32"
+      },
+      {
+        "id": "B",
+        "text": "−8"
+      },
+      {
+        "id": "C",
+        "text": "−32"
+      },
+      {
+        "id": "D",
+        "text": "−16"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B25-P02",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B25-P02",
     "stem": "Tìm số hạng không chứa x trong khai triển \\(\\left(x+\\frac1x\\right)^6\\), với \\(x\\ne0\\).",
     "answer_key": "20",
     "worked_solution": "Chọn \\(\\frac1x\\) từ k trong 6 nhân tử, chọn x từ các nhân tử còn lại. Số hạng tương ứng là \\(C_6^k x^{6-k}x^{-k}=C_6^k x^{6-2k}\\), với k nguyên và \\(0\\le k\\le6\\). Số hạng không chứa x khi \\(6-2k=0\\iff k=3\\). Giá trị này duy nhất và hợp lệ. Số hạng cần tìm là \\(C_6^3=20\\).",
@@ -474,13 +819,17 @@
       "BINOMIAL_CONSTANT_TERM"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Chọn k để số mũ x bằng 0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -492,12 +841,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ xét số mũ dương, viết số mũ tổng \\(6-2k\\), cho bằng 0 và kiểm k thuộc phạm vi chỉ số. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ xét số mũ dương, viết số mũ tổng \\(6-2k\\), cho bằng 0 và kiểm k thuộc phạm vi chỉ số. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY11.",
+    "options": [
+      {
+        "id": "A",
+        "text": "15"
+      },
+      {
+        "id": "B",
+        "text": "6"
+      },
+      {
+        "id": "C",
+        "text": "0"
+      },
+      {
+        "id": "D",
+        "text": "20"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B25-P03",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B25-P03",
     "stem": "Tìm hệ số của \\(x^3\\) trong \\((1+3x)^4-(1-3x)^4\\). Giải thích dấu của từng hệ số trước khi trừ.",
     "answer_key": "\\(216\\).",
     "worked_solution": "Hệ số của \\(x^3\\) trong \\((1+3x)^4\\) là \\(C_4^3\\cdot3^3=108\\). Trong \\((1-3x)^4\\), hệ số tương ứng là \\(C_4^3\\cdot(-3)^3=-108\\) vì số mũ 3 lẻ. Khi trừ hai khai triển, hệ số cần tìm là \\(108-(-108)=216\\). Không cần khai triển các bậc khác.",
@@ -505,13 +873,17 @@
       "BINOMIAL_COMPOSITE_COEFF"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Tính hệ số của \\(x^3\\) ở từng nhị thức; giữ dấu của \\((-3)^3\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -523,12 +895,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho hai hệ số triệt tiêu, kiểm \\((-3)^3<0\\); trừ số âm thành cộng. Ôn Bài 25 §2.4; luyện THPT-G10-CHVIII-TRY10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho hai hệ số triệt tiêu, kiểm \\((-3)^3<0\\); trừ số âm thành cộng. Ôn Bài 25 §2.4; luyện THPT-G10-CHVIII-TRY10.",
+    "options": [
+      {
+        "id": "A",
+        "text": "216"
+      },
+      {
+        "id": "B",
+        "text": "108"
+      },
+      {
+        "id": "C",
+        "text": "0"
+      },
+      {
+        "id": "D",
+        "text": "−216"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B25-P04",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B25-P04",
     "stem": "Cho \\(P(x)=(x-a)^5\\), với a là số thực. Biết hệ số của \\(x^4\\) trong khai triển bằng \\(-15\\). (a) Tìm a mà không khai triển toàn bộ. (b) Với a vừa tìm, tính hệ số của \\(x^3\\).",
     "answer_key": "\\(a=3\\); hệ số của \\(x^3\\) là \\(90\\).",
     "worked_solution": "Để tạo số hạng chứa \\(x^4\\) từ năm nhân tử \\(x-a\\), chọn x từ bốn nhân tử và \\(-a\\) từ một nhân tử. Có \\(C_5^1=5\\) cách chọn vị trí của \\(-a\\); vì vậy hệ số của \\(x^4\\) là \\(-5a\\). Theo đề, \\(-5a=-15\\), suy ra \\(a=3\\). Để tạo \\(x^3\\), phải chọn x từ ba nhân tử và \\(-3\\) từ hai nhân tử; có \\(C_5^2=10\\) cách. Hệ số là \\(10\\cdot(-3)^2=90\\). Dấu của hệ số thứ hai dương vì số lần chọn \\(-3\\) là hai. Không cần khai triển các số hạng khác.",
@@ -536,14 +927,18 @@
       "BINOMIAL_SECOND_HIGHEST"
     ],
     "problem_type_id": null,
-    "difficulty": "BASE",
+    "difficulty": "APPLY",
     "hints": [
       "Bậc 4 nghĩa là chọn hằng số từ đúng một nhân tử.",
       "Sau khi tìm a, đếm số cách chọn đúng hai nhân tử cho hằng số."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -555,12 +950,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Xác định số lần chọn x để tạo đúng bậc, rồi tính hệ số kèm dấu của hằng số; không nhầm hệ số với toàn bộ số hạng. Ôn Bài 25; luyện THPT-G10-CHVIII-TRY10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Xác định số lần chọn x để tạo đúng bậc, rồi tính hệ số kèm dấu của hằng số; không nhầm hệ số với toàn bộ số hạng. Ôn Bài 25; luyện THPT-G10-CHVIII-TRY10.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(a=-3\\); hệ số 90."
+      },
+      {
+        "id": "B",
+        "text": "\\(a=3\\); hệ số 90."
+      },
+      {
+        "id": "C",
+        "text": "\\(a=3\\); hệ số -90."
+      },
+      {
+        "id": "D",
+        "text": "\\(a=15\\); hệ số 2250."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B23-P05",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B23-P05",
     "stem": "Từ các chữ số \\(0,1,2,3,4\\), lập số tự nhiên có ba chữ số khác nhau và là số chẵn. Có bao nhiêu số?",
     "answer_key": "\\(30\\) số.",
     "worked_solution": "Số có ba chữ số khác nhau phải có hàng trăm khác 0; số chẵn có hàng đơn vị là 0, 2 hoặc 4. Chia hai trường hợp không trùng nhau. Nếu hàng đơn vị bằng 0, hàng trăm có 4 cách chọn và hàng chục còn 3 cách, được \\(4\\cdot3=12\\) số. Nếu hàng đơn vị là 2 hoặc 4, có 2 cách chọn hàng đơn vị; hàng trăm còn 3 chữ số khác 0 và khác chữ số đã chọn; hàng chục còn 3 chữ số, có thể là 0. Được \\(2\\cdot3\\cdot3=18\\) số. Theo quy tắc cộng, tổng là \\(12+18=30\\) số.",
@@ -568,13 +982,17 @@
       "COUNT_CASES_NO_REPEAT"
     ],
     "problem_type_id": null,
-    "difficulty": "ADVANCED",
+    "difficulty": "APPLY",
     "hints": [
       "Tách trường hợp chữ số hàng đơn vị bằng 0 và khác 0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -586,12 +1004,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho hàng trăm bằng 0, tách hàng đơn vị 0 và khác 0; đếm lại từng trường hợp. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho hàng trăm bằng 0, tách hàng đơn vị 0 và khác 0; đếm lại từng trường hợp. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "36"
+      },
+      {
+        "id": "B",
+        "text": "24"
+      },
+      {
+        "id": "C",
+        "text": "30"
+      },
+      {
+        "id": "D",
+        "text": "48"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B23-P06",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B23-P06",
     "stem": "Một khách có thể chọn đúng một cách đi lại: 3 tuyến xe đạp khác nhau hoặc 2 tuyến xe buýt khác nhau. Nếu đi xe buýt, mỗi tuyến có 2 loại vé. Nếu đi xe đạp thì không chọn vé. Có bao nhiêu phương án hoàn chỉnh?",
     "answer_key": "\\(7\\) phương án.",
     "worked_solution": "Nếu đi xe đạp, có 3 cách chọn tuyến và không cần chọn vé. Nếu đi xe buýt, có 2 cách chọn tuyến, mỗi tuyến có 2 loại vé, nên có \\(2\\cdot2=4\\) phương án. Hai nhóm phương án loại trừ nhau vì khách chỉ chọn một cách đi. Theo quy tắc cộng, có \\(3+4=7\\) phương án hoàn chỉnh.",
@@ -599,13 +1036,17 @@
       "COUNT_MIXED_SUM_PRODUCT"
     ],
     "problem_type_id": null,
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "APPLY",
     "hints": [
       "Nhân trong từng nhánh nhiều bước, cộng giữa các nhánh loại trừ nhau."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -617,12 +1058,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhân vé vào cả phương án xe đạp, tách hai nhánh trước khi áp dụng quy tắc nhân. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhân vé vào cả phương án xe đạp, tách hai nhánh trước khi áp dụng quy tắc nhân. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "5"
+      },
+      {
+        "id": "B",
+        "text": "12"
+      },
+      {
+        "id": "C",
+        "text": "10"
+      },
+      {
+        "id": "D",
+        "text": "7"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B24-P05",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B24-P05",
     "stem": "Chọn nhóm 3 người từ 6 người khác nhau, trong đó có A và B. (a) Tính số nhóm chứa đúng một trong hai người A, B và số nhóm chứa cả hai. (b) Từ đó tính số nhóm chứa ít nhất một trong hai người. Kiểm lại bằng cách đếm phần bù. (c) Một bạn cộng số nhóm chứa A với số nhóm chứa B. Kết quả bạn ấy lớn hơn kết quả đúng bao nhiêu? Giải thích.",
     "answer_key": "(a) Đúng một: 12 nhóm; cả hai: 4 nhóm. (b) Ít nhất một: 16 nhóm. (c) Lớn hơn 4 nhóm, do đếm mỗi nhóm chứa cả A và B hai lần.",
     "worked_solution": "Nếu nhóm chứa đúng một trong A, B, có 2 cách chọn người được lấy và \\(C_4^2=6\\) cách chọn hai người còn lại từ 4 người khác A, B. Vậy có \\(2\\cdot6=12\\) nhóm. Nếu chứa cả hai, chỉ cần chọn thêm một trong 4 người còn lại, có 4 nhóm. Hai trường hợp không trùng nhau và bao quát mọi nhóm chứa ít nhất một trong A, B, nên số cần tìm là \\(12+4=16\\). Kiểm bằng phần bù: tổng số nhóm là \\(C_6^3=20\\); không chứa A cũng không chứa B có \\(C_4^3=4\\) nhóm, nên \\(20-4=16\\). Nếu đếm nhóm chứa A riêng, được \\(C_5^2=10\\); đếm nhóm chứa B riêng cũng được 10. Cộng thành 20, nhưng mỗi nhóm chứa cả hai đã được đếm hai lần. Có 4 nhóm như vậy, nên phải trừ 4 để được 16.",
@@ -630,14 +1090,18 @@
       "COMBINATION_AT_LEAST_ONE"
     ],
     "problem_type_id": null,
-    "difficulty": "ADVANCED",
+    "difficulty": "APPLY",
     "hints": [
       "Tách ít nhất một thành đúng một và cả hai; hai trường hợp không trùng nhau.",
       "Thử đếm tất cả nhóm rồi bỏ nhóm không chứa A cũng không chứa B."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -649,12 +1113,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Phân biệt đúng một, ít nhất một và cả hai. Chỉ cộng trực tiếp khi các trường hợp rời nhau; nhóm chứa cả hai có thể bị đếm lặp. Ôn Bài 24 phần kiểm lỗi; luyện THPT-G10-CHVIII-TRY07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Phân biệt đúng một, ít nhất một và cả hai. Chỉ cộng trực tiếp khi các trường hợp rời nhau; nhóm chứa cả hai có thể bị đếm lặp. Ôn Bài 24 phần kiểm lỗi; luyện THPT-G10-CHVIII-TRY07.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đúng một: 12; cả hai: 4; ít nhất một: 16; đếm trùng 4."
+      },
+      {
+        "id": "B",
+        "text": "Đúng một: 16; cả hai: 4; ít nhất một: 20; đếm trùng 4."
+      },
+      {
+        "id": "C",
+        "text": "Đúng một: 12; cả hai: 4; ít nhất một: 12; không đếm trùng."
+      },
+      {
+        "id": "D",
+        "text": "Đúng một: 8; cả hai: 4; ít nhất một: 12; đếm trùng 8."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B24-P06",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B24-P06",
     "stem": "Xếp 5 học sinh khác nhau thành một hàng, biết hai bạn A và B phải đứng cạnh nhau. Có bao nhiêu cách?",
     "answer_key": "\\(48\\) cách.",
     "worked_solution": "Vì A và B đứng cạnh nhau, gộp hai người thành một khối. Khối này cùng 3 học sinh còn lại tạo 4 đối tượng phân biệt, xếp được \\(4!=24\\) thứ tự. Trong khối có 2 thứ tự AB và BA. Mỗi hàng thỏa điều kiện tương ứng duy nhất với một cách xếp khối và một thứ tự bên trong, nên có \\(24\\cdot2=48\\) cách.",
@@ -662,13 +1145,17 @@
       "PERMUTATION_ADJACENT"
     ],
     "problem_type_id": null,
-    "difficulty": "ADVANCED",
+    "difficulty": "APPLY",
     "hints": [
       "Gộp cặp phải đứng cạnh nhau thành một khối, rồi tính thứ tự trong khối."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -680,12 +1167,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên thứ tự trong khối, tính cả hai thứ tự A trước B và B trước A. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên thứ tự trong khối, tính cả hai thứ tự A trước B và B trước A. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "24"
+      },
+      {
+        "id": "B",
+        "text": "48"
+      },
+      {
+        "id": "C",
+        "text": "120"
+      },
+      {
+        "id": "D",
+        "text": "60"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B25-P05",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B25-P05",
     "stem": "Tìm hệ số của \\(x^3\\) trong \\((2-x)^6\\).",
     "answer_key": "\\(-160\\).",
     "worked_solution": "Để có \\(x^3\\), chọn \\(-x\\) từ 3 trong 6 nhân tử và 2 từ 3 nhân tử còn lại. Hệ số là \\(C_6^3(-1)^3 2^3=20\\cdot(-1)\\cdot8=-160\\). Dấu âm xuất hiện vì chọn \\(-x\\) một số lẻ lần.",
@@ -693,13 +1199,17 @@
       "BINOMIAL_COEFF_NEGATIVE"
     ],
     "problem_type_id": null,
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "APPLY",
     "hints": [
       "Giữ dấu của \\((-x)^3=-x^3\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -711,12 +1221,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ dấu âm, viết \\((-x)^3\\) trước khi lấy hệ số. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ dấu âm, viết \\((-x)^3\\) trước khi lấy hệ số. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY10.",
+    "options": [
+      {
+        "id": "A",
+        "text": "160"
+      },
+      {
+        "id": "B",
+        "text": "−20"
+      },
+      {
+        "id": "C",
+        "text": "−160"
+      },
+      {
+        "id": "D",
+        "text": "−80"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B25-P06",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B25-P06",
     "stem": "Tính tổng các hệ số của những số hạng có số mũ lẻ của \\(x\\) trong khai triển \\((1+x)^7\\).",
     "answer_key": "\\(64\\).",
     "worked_solution": "Đặt \\(f(x)=(1+x)^7\\). Gọi E là tổng hệ số bậc chẵn (kể cả bậc 0), O là tổng hệ số bậc lẻ. Khi thay \\(x=1\\), mọi lũy thừa đều bằng 1 nên \\(E+O=f(1)=2^7=128\\). Khi thay \\(x=-1\\), các lũy thừa bậc chẵn bằng 1, các lũy thừa bậc lẻ bằng −1, nên \\(E-O=f(-1)=0\\). Trừ hai đẳng thức, được \\(2O=128\\), suy ra \\(O=64\\).",
@@ -724,13 +1253,17 @@
       "BINOMIAL_ODD_COEFF_SUM"
     ],
     "problem_type_id": null,
-    "difficulty": "ADVANCED",
+    "difficulty": "APPLY",
     "hints": [
       "Thay \\(x=1\\) và \\(x=-1\\) để lập hai đẳng thức về tổng hệ số bậc chẵn và bậc lẻ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -742,12 +1275,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chia tổng hệ số cho 2 mà chưa giải thích, tính cả \\(f(1)\\) và \\(f(-1)\\) để tách tổng hệ số chẵn và lẻ. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chia tổng hệ số cho 2 mà chưa giải thích, tính cả \\(f(1)\\) và \\(f(-1)\\) để tách tổng hệ số chẵn và lẻ. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY12.",
+    "options": [
+      {
+        "id": "A",
+        "text": "128"
+      },
+      {
+        "id": "B",
+        "text": "63"
+      },
+      {
+        "id": "C",
+        "text": "32"
+      },
+      {
+        "id": "D",
+        "text": "64"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B25-P07",
-    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "content_version": "CD19-BANK-20261127-THPT-G10-B25-P07",
     "stem": "Trong khai triển nhị thức \\((4x-3)^5\\), hãy tìm số hạng không chứa \\(x\\) mà không cần khai triển toàn bộ. Giải thích vì sao chỉ có đúng một số hạng như vậy.",
     "answer_key": "Số hạng tự do bằng \\(-243\\).",
     "worked_solution": "Trong tích \\((4x-3)^5\\), chọn \\(4x\\) từ k nhân tử và \\(-3\\) từ các nhân tử còn lại. Theo nhị thức Newton, số hạng tương ứng là\n\\[\nT_k=C_5^k(4x)^k(-3)^{5-k},\\qquad k\\in\\{0;1;2;3;4;5\\}.\n\\]\nSố mũ của x bằng k. Để không chứa x, cần \\(k=0\\), đây là chỉ số duy nhất thỏa mãn. Khi đó cả 5 nhân tử đều chọn \\(-3\\), nên\n\\[\nT_0=C_5^0(-3)^5=-243.\n\\]\nVậy số hạng tự do bằng \\(-243\\).",
@@ -755,13 +1307,17 @@
       "G10-B25-CONSTANT_TERM"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_LEVEL",
+    "difficulty": "APPLY",
     "hints": [
       "Trong \\((4x-3)^5\\), số hạng không có \\(x\\) xuất hiện khi không chọn thừa số nào chứa \\(x\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -773,8 +1329,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy hệ số của x, đặt số mũ của x bằng 0, kiểm chỉ có một chỉ số và tính số hạng tương ứng. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy hệ số của x, đặt số mũ của x bằng 0, kiểm chỉ có một chỉ số và tính số hạng tương ứng. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY11.",
+    "options": [
+      {
+        "id": "A",
+        "text": "−243"
+      },
+      {
+        "id": "B",
+        "text": "243"
+      },
+      {
+        "id": "C",
+        "text": "−15"
+      },
+      {
+        "id": "D",
+        "text": "−81"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHVIII-TRY01",
