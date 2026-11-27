@@ -1,7 +1,7 @@
 [
   {
     "item_id": "THPT-TOP12-P01",
-    "content_version": 2,
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P01",
     "stem": "Góc tù \\(\\alpha\\) có \\(\\cos\\alpha=-\\frac5{13}\\). Tính \\(\\sin\\alpha\\) và \\(\\tan\\alpha\\); giải thích việc chọn dấu.",
     "answer_key": "\\(\\sin\\alpha=\\frac{12}{13};\\ \\tan\\alpha=-\\frac{12}5\\).",
     "worked_solution": "Từ \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\), suy ra \\(\\sin^2\\alpha=1-\\frac{25}{169}=\\frac{144}{169}\\). Vì \\(90^\\circ<\\alpha<180^\\circ\\), \\(\\sin\\alpha>0\\) nên \\(\\sin\\alpha=\\frac{12}{13}\\) (không lấy nghiệm âm). Do \\(\\cos\\alpha\\ne0\\), \\(\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}=-\\frac{12}5\\). Nếu sai dấu, đọc lại mục 1,3,4 và thử một góc tù khác.",
@@ -14,27 +14,50 @@
       "TOP12-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\) rồi xét góc tù trên nửa đường tròn."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P01 · TOP12-O04"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu sin âm, nhớ tung độ dương ở góc tù; côsin âm. Kiểm \\(\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}\\) với côsin khác 0. Ôn CĐ12 mục 1.4; luyện THPT-G10-B05-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu sin âm, nhớ tung độ dương ở góc tù; côsin âm. Kiểm \\(\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}\\) với côsin khác 0. Ôn CĐ12 mục 1.4; luyện THPT-G10-B05-P02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\sin\\alpha=\\frac{12}{13};\\ \\tan\\alpha=-\\frac{12}5\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\sin\\alpha=-\\frac{12}{13};\\tan\\alpha=\\frac{12}5\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\sin\\alpha=\\frac{12}{13};\\tan\\alpha=\\frac{12}5\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\sin\\alpha=\\frac5{13};\\tan\\alpha=-1\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP12-P02",
-    "content_version": 2,
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P02",
     "stem": "Tính chính xác \\(\\sin 150^{\\circ}+\\cos 120^{\\circ}\\) và giải thích quy luật được dùng.",
-    "answer_key": "0.",
+    "answer_key": "\\(0\\); sin của hai góc bù bằng nhau, cos của hai góc bù đối nhau.",
     "worked_solution": "Vì \\(150^\\circ=180^\\circ-30^\\circ\\), \\(\\sin150^\\circ=\\sin30^\\circ=\\frac12\\); \\(120^\\circ=180^\\circ-60^\\circ\\) nên \\(\\cos120^\\circ=-\\cos60^\\circ=-\\frac12\\). Tổng bằng 0. Nếu nhầm dấu, xem lại mục 2 về hai góc bù.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -45,25 +68,48 @@
       "TOP12-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đổi 150° và 120° thành góc bù tương ứng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P02 · TOP12-O02"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu cộng sai dấu, vẽ hai điểm đối xứng qua Oy; sin giữ dấu còn cos đổi dấu. Ôn CĐ12 mục 1.2; luyện THPT-G10-B05-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng sai dấu, vẽ hai điểm đối xứng qua Oy; sin giữ dấu còn cos đổi dấu. Ôn CĐ12 mục 1.2; luyện THPT-G10-B05-P03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(1\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(0\\); sin của hai góc bù bằng nhau, cos của hai góc bù đối nhau."
+      },
+      {
+        "id": "C",
+        "text": "\\(-1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{\\sqrt3-1}2\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP12-P03",
-    "content_version": 2,
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P03",
     "stem": "Trong tam giác ABC có \\(b=4, c=7, A=120^{\\circ}\\). Tính a.",
     "answer_key": "\\(a=\\sqrt{93}\\).",
     "worked_solution": "Theo định lí côsin, \\(a^2=b^2+c^2-2bc\\cos A\\). Vì \\(\\cos120^\\circ=-\\frac12\\), ta được \\(a^2=16+49-2\\cdot4\\cdot7\\cdot(-\\frac12)=93\\). Độ dài cạnh dương nên \\(a=\\sqrt{93}\\). Góc A tù, lớn nhất trong tam giác, nên a lớn hơn cả b và c.",
@@ -75,25 +121,48 @@
       "TOP12-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Chọn cạnh đối diện góc xen giữa, rồi viết định lí côsin."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P03 · TOP12-O05"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu ra \\(\\sqrt{37}\\), kiểm \\(\\cos120^\\circ=-\\frac12\\) làm số hạng \\(-2bc\\cos A\\) dương. Ôn CĐ12 mục 2.1; luyện THPT-G10-B06-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra \\(\\sqrt{37}\\), kiểm \\(\\cos120^\\circ=-\\frac12\\) làm số hạng \\(-2bc\\cos A\\) dương. Ôn CĐ12 mục 2.1; luyện THPT-G10-B06-C01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\sqrt{37}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\sqrt{65}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(a=\\sqrt{93}\\)."
+      },
+      {
+        "id": "D",
+        "text": "11"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP12-P04",
-    "content_version": 2,
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P04",
     "stem": "Trong tam giác ABC có \\(A=30^\\circ,\\ B=60^\\circ,\\ a=6\\). Tính b, c và kiểm thứ tự độ dài ba cạnh.",
     "answer_key": "\\(b=6\\sqrt3;\\ c=12\\).",
     "worked_solution": "\\(C=180^\\circ-30^\\circ-60^\\circ=90^\\circ\\). Theo định lí sin, \\(\\frac a{\\sin A}=\\frac6{\\frac12}=12\\). Do đó \\(b=12\\sin60^\\circ=6\\sqrt3\\) và \\(c=12\\sin90^\\circ=12\\). Kiểm \\(6<6\\sqrt3<12\\), phù hợp thứ tự \\(A<B<C\\).",
@@ -105,25 +174,48 @@
       "TOP12-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tìm góc C trước, rồi ghép từng cạnh với sin góc đối diện."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P04 · TOP12-O06"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu đảo tỉ số, viết \\(\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}\\); kiểm cạnh đối diện góc \\(90^\\circ\\) dài nhất. Ôn CĐ12 mục 2.2; luyện THPT-G10-B06-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đảo tỉ số, viết \\(\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}\\); kiểm cạnh đối diện góc \\(90^\\circ\\) dài nhất. Ôn CĐ12 mục 2.2; luyện THPT-G10-B06-P01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(b=12;c=6\\sqrt3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(b=3\\sqrt3;c=6\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(b=6;c=12\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(b=6\\sqrt3;\\ c=12\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP12-P05",
-    "content_version": 2,
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P05",
     "stem": "Một tam giác có ba cạnh 5, 7, 8. Chọn phương pháp xác định góc lớn nhất là nhọn, vuông hay tù; tính diện tích và hai bán kính r, R.",
     "answer_key": "Góc lớn nhất nhọn; \\(S=10\\sqrt3;\\ r=\\sqrt3;\\ R=\\frac{7\\sqrt3}3\\).",
     "worked_solution": "Vì \\(5+7>8\\), tam giác tồn tại. Góc lớn nhất đối diện cạnh 8, có cosin bằng \\(\\frac{25+49-64}{2\\cdot5\\cdot7}=\\frac17>0\\), nên nhọn. Biết ba cạnh, chọn Heron: \\(p=10,\\ S=\\sqrt{10\\cdot5\\cdot3\\cdot2}=10\\sqrt3\\). Từ \\(S=pr\\) suy \\(r=\\sqrt3\\); từ \\(S=\\frac{abc}{4R}\\) suy \\(R=\\frac{280}{40\\sqrt3}=\\frac{7\\sqrt3}3\\). Không dùng công thức nửa tích hai cạnh nếu chưa biết góc xen giữa hoặc chiều cao.",
@@ -136,25 +228,48 @@
       "TOP12-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Với ba cạnh, kiểm tồn tại và dùng côsin xác định loại góc; Heron tính diện tích."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P05 · TOP12-O07"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng công thức tam giác vuông cho mọi bộ ba cạnh, kiểm góc lớn nhất bằng côsin trước. Ôn CĐ12 mục 2.3; luyện THPT-G10-B06-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng công thức tam giác vuông cho mọi bộ ba cạnh, kiểm góc lớn nhất bằng côsin trước. Ôn CĐ12 mục 2.3; luyện THPT-G10-B06-P06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Góc lớn nhất nhọn; \\(S=10\\sqrt3;\\ r=\\sqrt3;\\ R=\\frac{7\\sqrt3}3\\)."
+      },
+      {
+        "id": "B",
+        "text": "Góc lớn nhất tù; \\(S=10\\sqrt3;r=\\sqrt3;R=\\frac{7\\sqrt3}3\\)"
+      },
+      {
+        "id": "C",
+        "text": "Góc lớn nhất nhọn; \\(S=20\\sqrt3;r=2\\sqrt3;R=\\frac{7\\sqrt3}6\\)"
+      },
+      {
+        "id": "D",
+        "text": "Góc lớn nhất vuông; \\(S=\\frac{35}2;r=\\frac74;R=4\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP12-P06",
-    "content_version": 2,
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P06",
     "stem": "Biết \\(A=30^\\circ,\\ a=6,\\ b=10\\) trong tam giác ABC (a,b là cạnh đối diện A,B). Có bao nhiêu tam giác không bằng nhau thỏa dữ kiện? Nêu hai giá trị khả dĩ của B theo biểu thức arcsin, tính theo độ.",
     "answer_key": "Có hai tam giác (không kể các bản bằng nhau); \\(B=\\arcsin\\frac56\\) hoặc \\(180^\\circ-\\arcsin\\frac56\\).",
     "worked_solution": "Theo định lí sin, \\(\\sin B=\\frac{b\\sin A}a=\\frac{10\\cdot\\frac12}6=\\frac56\\). Gọi \\(\\beta=\\arcsin\\frac56\\), tính theo độ; \\(30^\\circ<\\beta<90^\\circ\\) vì \\(\\sin30^\\circ<\\frac56<1\\). Hai khả năng \\(B=\\beta\\) và \\(B=180^\\circ-\\beta\\) đều thuộc \\((0^\\circ;180^\\circ)\\). Trường hợp đầu cho \\(C=150^\\circ-\\beta>0\\); trường hợp sau cho \\(C=\\beta-30^\\circ>0\\). Mỗi bộ A,B,C và cạnh \\(a=6\\) xác định một tam giác đến phép bằng nhau. Vì hai giá trị B khác nhau nên có đúng hai tam giác. Nếu chỉ lấy B nhọn, quay lại mục 8 về hai nghiệm của phương trình sin.",
@@ -166,27 +281,50 @@
       "TOP12-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Tính sin B, xét cả góc nhọn và góc bù."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P06 · TOP12-O08"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ lấy một góc từ máy, kiểm cả hai giá trị B bằng điều kiện \\(A+B<180^\\circ\\). Ôn CĐ12 mục 2.4; luyện THPT-G10-B06-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ lấy một góc từ máy, kiểm cả hai giá trị B bằng điều kiện \\(A+B<180^\\circ\\). Ôn CĐ12 mục 2.4; luyện THPT-G10-B06-P03.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Một tam giác; \\(B=\\arcsin\\frac56\\)"
+      },
+      {
+        "id": "B",
+        "text": "Có hai tam giác (không kể các bản bằng nhau); \\(B=\\arcsin\\frac56\\) hoặc \\(180^\\circ-\\arcsin\\frac56\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không có tam giác vì \\(b>a\\)"
+      },
+      {
+        "id": "D",
+        "text": "Một tam giác; \\(B=180^\\circ-\\arcsin\\frac56\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP12-P07",
-    "content_version": 2,
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P07",
     "stem": "\\(A=30^{\\circ}, a=3, b=7\\). Hãy kiểm chứng có tồn tại tam giác ABC hay không.",
-    "answer_key": "Không tồn tại tam giác.",
+    "answer_key": "Không tồn tại tam giác vì \\(\\sin B=\\frac{7}{6}>1\\).",
     "worked_solution": "\\(\\sin B=\\frac{7\\sin30^\\circ}3=\\frac76>1\\), vô lý. **Không tồn tại tam giác**. Nếu bấm arcsin trực tiếp và bị lỗi: mục 8 kiểm điều kiện trước.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -196,25 +334,48 @@
       "TOP12-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Kiểm giá trị sin B trước khi tìm góc."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P07 · TOP12-O08"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu máy báo lỗi, so \\(\\frac76\\) với 1; sin vượt 1 nên dữ kiện không thể tạo tam giác. Ôn CĐ12 mục 2.4; luyện THPT-TOP12-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu máy báo lỗi, so \\(\\frac76\\) với 1; sin vượt 1 nên dữ kiện không thể tạo tam giác. Ôn CĐ12 mục 2.4; luyện THPT-TOP12-P06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có đúng một tam giác vuông."
+      },
+      {
+        "id": "B",
+        "text": "Có hai tam giác không bằng nhau."
+      },
+      {
+        "id": "C",
+        "text": "Không tồn tại tam giác vì \\(\\sin B=\\frac{7}{6}>1\\)."
+      },
+      {
+        "id": "D",
+        "text": "Có đúng một tam giác tù."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP12-P08",
-    "content_version": 2,
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P08",
     "stem": "Trong tam giác ABC có \\(b=6,\\ c=10,\\ A=150^\\circ\\). Tính diện tích S, nêu vì sao S dương.",
     "answer_key": "\\(S=15\\); \\(\\sin150^\\circ>0\\) nên diện tích dương.",
     "worked_solution": "\\(S=\\frac12\\cdot6\\cdot10\\cdot\\sin150^\\circ=15\\). Góc tù trong tam giác vẫn có sin dương; độ cao đến phần kéo dài của đáy vẫn là độ dài dương. Nếu sai: mục 9 → bài luyện cùng dạng.",
@@ -226,25 +387,48 @@
       "TOP12-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Diện tích bằng nửa tích hai cạnh và sin góc xen giữa."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P08 · TOP12-O09"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng cos hoặc diện tích âm với góc tù, dựng chiều cao xuống đường thẳng chứa đáy. Ôn CĐ12 mục 3.1; luyện THPT-G10-B06-C02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng cos hoặc diện tích âm với góc tù, dựng chiều cao xuống đường thẳng chứa đáy. Ôn CĐ12 mục 3.1; luyện THPT-G10-B06-C02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "30; diện tích dương."
+      },
+      {
+        "id": "B",
+        "text": "−15; vì góc A tù."
+      },
+      {
+        "id": "C",
+        "text": "\\(15\\sqrt3\\); vì sin góc tù bằng sin góc 60°."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=15\\); \\(\\sin150^\\circ>0\\) nên diện tích dương."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP12-P09",
-    "content_version": 2,
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P09",
     "stem": "Tam giác có ba cạnh 5, 6, 7. Tính diện tích S, bán kính nội tiếp r và bán kính ngoại tiếp R.",
     "answer_key": "\\(S=6\\sqrt6;\\ r=\\frac{2\\sqrt6}3;\\ R=\\frac{35\\sqrt6}{24}\\).",
     "worked_solution": "Vì \\(5+6>7\\), ba cạnh lập thành tam giác. Nửa chu vi \\(p=9\\). Heron cho \\(S=\\sqrt{9\\cdot4\\cdot3\\cdot2}=6\\sqrt6\\). Từ \\(S=pr\\) suy \\(r=\\frac{6\\sqrt6}9=\\frac{2\\sqrt6}3\\). Từ \\(S=\\frac{abc}{4R}\\) suy \\(R=\\frac{210}{24\\sqrt6}=\\frac{35\\sqrt6}{24}\\).",
@@ -257,25 +441,48 @@
       "TOP12-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tính nửa chu vi p; dùng Heron rồi \\(S=pr\\) và \\(S=\\frac{abc}{4R}\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P09 · TOP12-O10"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhầm r với R, kiểm ý nghĩa nội tiếp và ngoại tiếp rồi viết hai công thức riêng; không dùng chu vi thay p. Ôn CĐ12 mục 3.2; luyện THPT-G10-B06-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm r với R, kiểm ý nghĩa nội tiếp và ngoại tiếp rồi viết hai công thức riêng; không dùng chu vi thay p. Ôn CĐ12 mục 3.2; luyện THPT-G10-B06-P02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=6\\sqrt6;\\ r=\\frac{2\\sqrt6}3;\\ R=\\frac{35\\sqrt6}{24}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=6\\sqrt6;r=\\frac{2\\sqrt6}3;R=\\frac{35\\sqrt6}{12}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(S=12\\sqrt6;r=\\frac{4\\sqrt6}3;R=\\frac{35\\sqrt6}{48}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(S=6\\sqrt6;r=\\frac{2\\sqrt6}3;R=\\frac{35\\sqrt6}{6}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP12-P10",
-    "content_version": 2,
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P10",
     "stem": "Hai điểm A,B cách nhau 80 m, cùng nhìn điểm C sao cho các góc trong tam giác ABC là \\(A=35^\\circ,\\ B=65^\\circ\\). Tính BC và AC, làm tròn đến \\(0{,}1\\) m (máy tính DEG).",
     "answer_key": "\\(BC\\approx46{,}6\\) m; \\(AC\\approx73{,}6\\) m.",
     "worked_solution": "\\(C=180^\\circ-35^\\circ-65^\\circ=80^\\circ\\). Vì tam giác không vuông và đã biết hai góc, một cạnh, dùng định lí sin: \\(BC=\\frac{80\\sin35^\\circ}{\\sin80^\\circ}\\approx46{,}6\\) m; \\(AC=\\frac{80\\sin65^\\circ}{\\sin80^\\circ}\\approx73{,}6\\) m. Chọn chế độ DEG và chỉ làm tròn ở cuối. Kiểm \\(B>A\\) nên \\(AC>BC\\); C lớn nhất nên AB dài nhất.",
@@ -288,25 +495,48 @@
       "TOP12-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tính góc C từ tổng 180°, sau đó dùng định lí sin."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P10 · TOP12-O11"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhầm BC với AC, ghi cạnh đối diện A là BC, đối diện B là AC; kiểm cạnh đối diện góc lớn hơn dài hơn. Ôn CĐ12 mục 3.3; luyện THPT-G10-B06-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm BC với AC, ghi cạnh đối diện A là BC, đối diện B là AC; kiểm cạnh đối diện góc lớn hơn dài hơn. Ôn CĐ12 mục 3.3; luyện THPT-G10-B06-P05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "BC ≈ 73,6 m; AC ≈ 46,6 m."
+      },
+      {
+        "id": "B",
+        "text": "\\(BC\\approx46{,}6\\) m; \\(AC\\approx73{,}6\\) m."
+      },
+      {
+        "id": "C",
+        "text": "BC ≈ 45,9 m; AC ≈ 72,5 m."
+      },
+      {
+        "id": "D",
+        "text": "BC ≈ 80,0 m; AC ≈ 80,0 m."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP12-P11",
-    "content_version": 2,
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P11",
     "stem": "Ba thanh dài 2 cm, 3 cm, 6 cm có ghép thành tam giác không? Giải thích vì sao chưa được dùng Heron.",
     "answer_key": "Không; \\(2+3=5<6\\), nên không tồn tại tam giác.",
     "worked_solution": "Không, vì \\(2+3=5<6\\). Heron chỉ được áp dụng cho tam giác không suy biến; mục 12 → xem lại điều kiện đầu mục 5.",
@@ -318,25 +548,48 @@
       "TOP12-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So tổng hai cạnh ngắn nhất với cạnh dài nhất."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P11 · TOP12-O12"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu áp dụng Heron ngay, kiểm điều kiện tam giác không suy biến trước; trường hợp bằng cũng không hợp lệ. Ôn CĐ12 mục 3.4; luyện THPT-TOP12-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu áp dụng Heron ngay, kiểm điều kiện tam giác không suy biến trước; trường hợp bằng cũng không hợp lệ. Ôn CĐ12 mục 3.4; luyện THPT-TOP12-P12.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; vì cả ba độ dài đều dương."
+      },
+      {
+        "id": "B",
+        "text": "Có; dùng Heron với nửa chu vi 5,5 cm."
+      },
+      {
+        "id": "C",
+        "text": "Không; \\(2+3=5<6\\), nên không tồn tại tam giác."
+      },
+      {
+        "id": "D",
+        "text": "Không; vì 2 + 6 < 3."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP12-P12",
-    "content_version": 2,
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P12",
     "stem": "Một người đặt \\(A=0^{\\circ}, b=5, c=7\\) và gọi đó là tam giác ABC không suy biến. Chỉ ra sự mâu thuẫn với điều kiện áp dụng định lí sin/côsin trong tam giác.",
     "answer_key": "Không có tam giác không suy biến vì \\(A=0^\\circ\\); không áp dụng định lí sin/côsin như cho tam giác không suy biến.",
     "worked_solution": "Mọi góc trong tam giác không suy biến phải thuộc \\((0^\\circ;180^\\circ)\\); \\(A=0^\\circ\\) tạo cấu hình suy biến, dù có thể tính đại số \\(a=|7-5|=2\\) bằng biểu thức côsin. Không có tam giác không suy biến để dùng định lí sin hoặc Heron. Nếu sai: mục 5,6,12.",
@@ -349,20 +602,43 @@
       "TOP12-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Một góc trong tam giác không suy biến phải lớn hơn 0° và nhỏ hơn 180°."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P12 · TOP12-O12"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ thấy \\(a=2\\) từ biểu thức đại số rồi chấp nhận, kiểm \\(2+5=7\\) nên ba điểm thẳng hàng. Ôn CĐ12 mục 3.4; luyện THPT-TOP12-P11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ thấy \\(a=2\\) từ biểu thức đại số rồi chấp nhận, kiểm \\(2+5=7\\) nên ba điểm thẳng hàng. Ôn CĐ12 mục 3.4; luyện THPT-TOP12-P11.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có tam giác vuông vì góc A bằng 0°."
+      },
+      {
+        "id": "B",
+        "text": "Có tam giác cân vì b và c khác nhau."
+      },
+      {
+        "id": "C",
+        "text": "Có tam giác không suy biến và diện tích dương vì b,c đều dương."
+      },
+      {
+        "id": "D",
+        "text": "Không có tam giác không suy biến vì \\(A=0^\\circ\\); không áp dụng định lí sin/côsin như cho tam giác không suy biến."
+      }
+    ]
   }
 ]
