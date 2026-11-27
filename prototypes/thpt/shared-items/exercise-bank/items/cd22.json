@@ -183,19 +183,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Q1=3; Q3=6; IQR=3; rào −1,5 và 10,5; 20 ngoại lệ, cần kiểm chứng trước khi xóa"
+        "text": "\\(Q_1=3, Q_3=6, \\Delta_Q=3\\); hàng rào −1,5 và 10,5; 20 ngoại lệ, cần kiểm chứng trước khi xóa."
       },
       {
         "id": "B",
-        "text": "Q1=3; Q3=6; IQR=3; rào −1,5 và 10,5; phải xóa 20"
+        "text": "\\(Q_1=3, Q_3=6, \\Delta_Q=3\\); hàng rào −1,5 và 10,5; phải xóa 20."
       },
       {
         "id": "C",
-        "text": "Q1=3; Q3=6; IQR=3; rào 0 và 9; phải xóa 20"
+        "text": "\\(Q_1=3, Q_3=6, \\Delta_Q=3\\); hàng rào 0 và 9; phải xóa 20."
       },
       {
         "id": "D",
-        "text": "Q1=2; Q3=20; IQR=18; không có ngoại lệ"
+        "text": "\\(Q_1=2, Q_3=20, \\Delta_Q=18\\); không có ngoại lệ."
       }
     ]
   },
