@@ -21746,6 +21746,78 @@
       "limitations": "Scoped AUTHOR_SELF_VERIFIED only, no fresh S1 PDF or full Academic/PED/Written PASS; no new figure. B26-P03 could benefit from a compact geometry diagram at integration. No interaction conversion or Written projection edits.",
       "next": "Check missing skill crosswalk evidence across whole bank, Written targeted wording, then interaction classification without enabling grading or altering protected systems.",
       "release_authorization": false
+    },
+    "coverage_depth_cp118": {
+      "base": "bf0b6dad87f08c80741a94b8fa08fa3e72f65df6",
+      "head": "d188c1b90a20abee2021535c5aec9aae709db805",
+      "scope": "Skill coverage inventory across all 61 public item shards; CĐ09 differential approximation answer completeness",
+      "review": {
+        "counts": {
+          "sgk_formative": 1209,
+          "topic_owned": 435,
+          "topic_kft": 393,
+          "public_selfcheck": 173,
+          "empty_sgk": 3,
+          "empty_topic_owned": 39,
+          "empty_topic_kft": 19,
+          "empty_public_selfcheck": 144
+        },
+        "total": 2210,
+        "empty_total": 205,
+        "interaction_mode": "All inspected rows SELF_COMPARE, auto_grade=false",
+        "note": "Counts inventory only; not skill validity or full academic review."
+      },
+      "changes": [
+        {
+          "file": "items/cd09.json",
+          "before": "6d57f0ac118cd705e972dae1ac41ee1cb279ae91",
+          "after": "f738076ec307672f36ca2413f61970fb6c959713",
+          "count": 32,
+          "diff": [
+            {
+              "id": "THPT-TOP09-P32",
+              "fields": [
+                "answer_key"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "items/topic-knowledge-first-try.json",
+          "before": "710866c0763beeb847251da6791deec7c559ba16",
+          "after": "f549772faa7977b510bc1cd1b9c923e3d92ae255",
+          "count": 393,
+          "diff": [
+            {
+              "id": "THPT-TOP09-KFT32",
+              "fields": [
+                "answer_key",
+                "worked_solution",
+                "problem_type_id"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "placements/cd09.json",
+          "before": "cf15dad3c0749780420e036d8cead61344e03e6a",
+          "after": "cf15dad3c0749780420e036d8cead61344e03e6a",
+          "count": 140,
+          "diff": []
+        },
+        {
+          "file": "placements/topic-knowledge-first-try.json",
+          "before": "72cddbdddad65f2f3af6f5d14349036948d33c6b",
+          "after": "72cddbdddad65f2f3af6f5d14349036948d33c6b",
+          "count": 414,
+          "diff": []
+        }
+      ],
+      "math_verification": "P32: 2.1²−4=0.41, dy=0.4, remainder=0.01. KFT32: dy=−1/20, Δy=−1/22, difference=1/220; exact remainder h²/[4(2+h)], remainder/|h|→0 for h→0. Both answer keys now cover approximation explanation; KFT32 uses existing problem_type_id TOP09-DIFFERENTIAL_LINEAR_APPROX (same TOP09-O32, not a new skill).",
+      "mapping_followup": "3 SGK formative empty tags (CP117), 39 Topic-owned (CD02 4/CD03 14/CD05 20/CD09 1), 19 Topic Knowledge first tries (CD02 2/CD03 7/CD05 9/CD09 1), 144 public self-check (including G10 B15-R04). Preserve empty skills where no source-confirmed semantic crosswalk; original outcomes and placements kept; no broad inference of correctness from populated tags. Public legacy IDs are not private RD1; no access to private bank.",
+      "limitations": "Scoped author math check only; original source and placement metadata preserved; no fresh S1 PDF review, full Academic/PED PASS, Written source edit, or interaction conversion. No merge/deploy/cutover.",
+      "next": "Resolve remaining source-confirmed skill crosswalks (prioritize formative over replay), targeted Written ambiguities CP108/115, then interaction classification without enabling auto-grade.",
+      "release_authorization": false
     }
   }
 }
