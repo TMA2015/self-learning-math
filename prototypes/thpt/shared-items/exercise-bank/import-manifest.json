@@ -58,28 +58,17 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "4bc21c7aa029bc4726c16ccbc2d29a112ffaa97e",
+    "as_of_commit": "84ef1eb6d93d7719cdff409e8422190d32582f8d",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
-    "completed_candidate_topics": 17,
+    "completed_candidate_topics": 18,
     "total_topics": 22,
-    "completed_scope": "CD01–17 content candidates; scoped Delta and release pending",
-    "completed_unique_ids": 1389,
-    "completed_interactive": 1223,
-    "completed_written": 166,
-    "partial_topic": "CD18",
-    "partial_inventory": {
-      "unique_scoped": 247,
-      "interactive": 200,
-      "written": 47,
-      "practice": 207,
-      "first_try": 40,
-      "public_replay": 40,
-      "placements": 287,
-      "outcomes": 40,
-      "overlap_prior": 13
-    },
-    "next": "Complete CD18 Written corrections and reference reconciliation before counting CD18 as completed; stop after CD18.",
-    "status": "CD17_CONTENT_CANDIDATE_CD18_INTERACTIVE_CANDIDATE_WRITTEN_PENDING"
+    "completed_scope": "CD01–18 content candidates; scoped Delta and RELEASE pending",
+    "completed_unique_ids": 1623,
+    "completed_interactive": 1410,
+    "completed_written": 213,
+    "partial_topic": null,
+    "next": "Stopped after CD18 per owner scope; resume CD19 when instructed. Scoped Delta and final verification remain.",
+    "status": "CD17_CD18_CONTENT_CANDIDATES_COMPLETE_SCOPED_DELTA_PENDING"
   },
   "global_reconciliation": {
     "current_checkpoint_key": "exercise_candidate_cd17_cd18",
@@ -103,16 +92,36 @@
         "outcomes": 40,
         "replay": 40,
         "written": 47,
-        "head": "4bc21c7aa029bc4726c16ccbc2d29a112ffaa97e",
+        "head": "84ef1eb6d93d7719cdff409e8422190d32582f8d",
         "files": {
           "items/cd18.json": "be27a158dadb9bd0bbcfd6066584aa97d3e1c3b9",
           "items/g12-chii.json": "1679cb66e86e0d27741fd0c5b7f54868440fd246",
           "items/g12-chv.json": "e587e279f710bc50de756477d55264658b71f223",
           "items/topic-knowledge-first-try.json": "4a7e7fed2614ae3c2577b2d8b6ec88d0b0781734",
           "placements/cd18.json": "5b42b4007549b0f74f3d413e66b010d1304cbd66",
-          "placements/topic-knowledge-first-try.json": "28e28890b2ea1de0f7ad753444d687c342ec9862"
+          "placements/topic-knowledge-first-try.json": "28e28890b2ea1de0f7ad753444d687c342ec9862",
+          "written-references.json": "cf1155d98cf1b8817b997972ea1fbb191999feb7"
         },
-        "written_findings": "B08-W06 average speed and path; B07-W04 vector notation; B14-W07 sphere/ball; B15-W05 skew perpendicular lines; B15-W01/02/06/07, B16-W01/02/03/05, B17-W01/02 rubric alignment; TOP18-W02 duplicate, W03 domain, W04 angle limits, W07 standalone model. Source donor provenance must be retained."
+        "written_findings": "Corrected scoped findings including average speed, vector notation, sphere/ball, perpendicular skew lines, parameter domains, rubric alignment, duplicate TOP18-W02 variant and W07 self-contained radar model. Changed stems/solutions/rubrics require scoped Delta. Topic source carried at original path on bank branch, not a second bank.",
+        "written_status": "47 reference records reconciled; 16 SGK chII /5, 24 SGK chV /5, 7 topic /4; targeted corrections, original totals retained.",
+        "written_sources": [
+          {
+            "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+            "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+            "donor": "43d93a7d0d070a288251c34ff411c7de3206dc85"
+          },
+          {
+            "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+            "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+            "donor": "a24abd682932e11761f7c85fa3a3d3cdd77b600e"
+          },
+          {
+            "path": "prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md",
+            "blob": "21904191544d9a8a30c43699c485bad08cf86fc7",
+            "donor": "41daf40a3b639a3ef35e129099525137a05b1848"
+          }
+        ],
+        "final_verification": "247 unique IDs, 200 interactive, 47 Written, 287 placements, 40 outcomes; no missing references or structural option/key/hint/skill defects in exact readback. 13 interactive IDs reused from CD13; net 234 IDs added. SGK Written sections outside 2 chII and 12 chV targeted fixes identical to donor."
       },
       "limitations": "No fresh S1 PDF verification, independent Q18, browser/runtime or CI claim. No merge/deploy."
     },
@@ -234,7 +243,8 @@
         "status": "VERIFIED_STALE_TOPIC_PROJECTION_REGENERATE_FROM_ACTIVE_SOURCE_AT_CUTOVER"
       }
     ],
-    "other": "Full S1/PED/Q18, actual source-field equivalence outside flagged scopes, Written source/rubric, metadata, notation, interaction renderer/runtime and browser QA remain subject to applicable gates. Historical records include any earlier findings and source/receipt evidence."
+    "other": "Full S1/PED/Q18, actual source-field equivalence outside flagged scopes, Written source/rubric, metadata, notation, interaction renderer/runtime and browser QA remain subject to applicable gates. Historical records include any earlier findings and source/receipt evidence.",
+    "cd18": "Content candidate complete; targeted mathematical/PED Delta and notation/render QA pending. No fresh S1 PDF or independent reviewer claim."
   },
   "checkpoint_policy": "Replace current_progress and current checkpoint, do not append cumulative report trees. Record detailed scoped evidence in existing issue/PR or prior immutable Git snapshot; preserve exact commit/path/blob and relevant key. Carry forward unresolved issues only; retain older history pointer. Never infer PASS, authorize cutover or change protected runtime from compaction."
 }
