@@ -1872,8 +1872,11 @@
   {
     "item_id": "THPT-TOP10-W01",
     "source": {
-      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
-      "heading_id": "THPT-TOP10-W01"
+      "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+      "heading_id": "THPT-TOP10-W01",
+      "previous_source_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
+      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
@@ -1889,8 +1892,11 @@
   {
     "item_id": "THPT-TOP10-W02",
     "source": {
-      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
-      "heading_id": "THPT-TOP10-W02"
+      "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+      "heading_id": "THPT-TOP10-W02",
+      "previous_source_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
+      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
@@ -1906,8 +1912,11 @@
   {
     "item_id": "THPT-TOP10-W03",
     "source": {
-      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
-      "heading_id": "THPT-TOP10-W03"
+      "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+      "heading_id": "THPT-TOP10-W03",
+      "previous_source_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
+      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
@@ -1923,8 +1932,11 @@
   {
     "item_id": "THPT-TOP10-W04",
     "source": {
-      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
-      "heading_id": "THPT-TOP10-W04"
+      "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+      "heading_id": "THPT-TOP10-W04",
+      "previous_source_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
+      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
@@ -1940,8 +1952,11 @@
   {
     "item_id": "THPT-TOP10-W05",
     "source": {
-      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
-      "heading_id": "THPT-TOP10-W05"
+      "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+      "heading_id": "THPT-TOP10-W05",
+      "previous_source_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
+      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
@@ -1957,8 +1972,11 @@
   {
     "item_id": "THPT-TOP10-W06",
     "source": {
-      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
-      "heading_id": "THPT-TOP10-W06"
+      "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+      "heading_id": "THPT-TOP10-W06",
+      "previous_source_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
+      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
@@ -1983,7 +2001,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B11-O01"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B11-W02",
@@ -1997,7 +2022,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B11-O02"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B11-W03",
@@ -2011,7 +2043,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B11-O03"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B11-W04",
@@ -2025,7 +2064,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B11-O04"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B11-W05",
@@ -2039,7 +2085,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B11-O05"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B11-W06",
@@ -2053,7 +2106,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B11-O06"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B11-W07",
@@ -2067,7 +2127,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B11-O07"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-W07",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B12-W01",
@@ -2081,7 +2148,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B12-O01"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B12-W02",
@@ -2095,7 +2169,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B12-O02"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B12-W03",
@@ -2109,7 +2190,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B12-O03"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B12-W04",
@@ -2123,7 +2211,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B12-O04"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B12-W05",
@@ -2137,7 +2232,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B12-O05"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B12-W06",
@@ -2151,7 +2253,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B12-O06"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B12-W07",
@@ -2165,7 +2274,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B12-O07"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-W07",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B13-W01",
@@ -2179,7 +2295,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B13-O01"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B13-W02",
@@ -2193,7 +2316,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B13-O02"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B13-W03",
@@ -2207,7 +2337,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B13-O03"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B13-W04",
@@ -2221,7 +2358,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B13-O04"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B13-W05",
@@ -2235,7 +2379,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B13-O05"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B13-W06",
@@ -2249,7 +2400,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B13-O06"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B13-W07",
@@ -2263,7 +2421,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B13-O07"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-W07",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B13-W08",
@@ -2277,67 +2442,134 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B13-O08"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-W08",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP11-W01",
     "source": {
-      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
-      "heading_id": "THPT-TOP11-W01"
+      "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+      "heading_id": "THPT-TOP11-W01",
+      "previous_source_blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
+      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B11-O02"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP11-W02",
     "source": {
-      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
-      "heading_id": "THPT-TOP11-W02"
+      "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+      "heading_id": "THPT-TOP11-W02",
+      "previous_source_blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
+      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B11-O04"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP11-W03",
     "source": {
-      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
-      "heading_id": "THPT-TOP11-W03"
+      "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+      "heading_id": "THPT-TOP11-W03",
+      "previous_source_blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
+      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B12-O05"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP11-W04",
     "source": {
-      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
-      "heading_id": "THPT-TOP11-W04"
+      "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+      "heading_id": "THPT-TOP11-W04",
+      "previous_source_blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
+      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B13-O04"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP11-W05",
     "source": {
-      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
-      "heading_id": "THPT-TOP11-W05"
+      "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+      "heading_id": "THPT-TOP11-W05",
+      "previous_source_blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
+      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B13-O06"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP11-W06",
     "source": {
-      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
-      "heading_id": "THPT-TOP11-W06"
+      "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+      "heading_id": "THPT-TOP11-W06",
+      "previous_source_blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
+      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHIV-B13-O08"
+    ],
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHIII-W05",
