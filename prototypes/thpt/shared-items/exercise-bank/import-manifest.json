@@ -21549,6 +21549,45 @@
       "limitations": "Scoped author self verification, no fresh S1 PDF scan or independent review, no full bank PASS, no new illustration. Topic placement beyond checked scopes not fully inventoried.",
       "next": "Review G10 ChIV onward with source and options; resolve Written wording CP108 and interaction classification within authorized scope.",
       "release_authorization": false
+    },
+    "coverage_depth_cp113": {
+      "base": "87e2cba3f35b0add101cb9f998649209dfa043b5",
+      "head": "56db6c3ba2824e22e60e4e708aa3f253f142ff55",
+      "scope": "G10 ChIV Vectors and ChV statistics",
+      "review": {
+        "records": 107,
+        "mcq_options": 20,
+        "written_projections": 10,
+        "note": "Read all stems and keys, options and selected solutions; inspected canonical chapter source and Written projections; not exhaustive academic verdict."
+      },
+      "shards": [
+        {
+          "path": "items/g10-chiv.json",
+          "sha": "6a7a1a5ef247cc52e734421651a373f8dc3a7be0"
+        },
+        {
+          "path": "items/g10-chv.json",
+          "sha": "5466bd10705175be887c6e0bdeefdc902ab2b110"
+        }
+      ],
+      "changes": [
+        {
+          "id": "THPT-G10-B08-P05",
+          "reason": "Converse centroid property using three-point rule and midpoint cancellation, no scalar-multiplication prerequisite; X on AM, AX:XM=2:1."
+        },
+        {
+          "id": "THPT-G10-B10-P04",
+          "reason": "Inverse centroid formula with degeneracy check; G(1;2) gives C midpoint AB, impossible nondegenerate triangle; G'(1;3) gives C'(1;5), AB=(6;2), AC'=(3;4), nonparallel."
+        },
+        {
+          "id": "THPT-G10-B13-P06",
+          "reason": "Recover missing count x=26 from equal means 8, medians 8 vs 4; distinguish typical day from total sales 40 each."
+        }
+      ],
+      "verification": "3/107 changed, 104 unchanged; original IDs, tags, options, source, rubric, mode, order and other fields preserved; delimiters balanced. SGK placement blob unchanged; all 22 Topic placements checked for these IDs: B08-P05 reused CD13 O06; B13-P06 reused CD22; B10-P04 SGK only. No placement edits. Source ChIV 18c29d7f60448a0a52d5b9f5aa5002e0f331defd, ChV 49502fe39cf0a67f6a3e973a77f94164150637a7; Written 6e581218ff1874d127daa991a1ebcebfa71baf16, cedf2a952624095d9135e04a84dc469e22ec53e5, 8a1fbabe62d749177d2986e3d59ddb979a9d0267.",
+      "limitations": "Scoped AUTHOR_SELF_VERIFIED three new tasks only; no fresh direct S1 PDF visual review, full Academic/PED/Written PASS or new figures. Topic linkage checked, not full Topic family review.",
+      "next": "G10 ChVI onward, then remaining G11 and Written wording CP108, interaction classification.",
+      "release_authorization": false
     }
   }
 }
