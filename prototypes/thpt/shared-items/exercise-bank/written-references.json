@@ -5540,7 +5540,8 @@
     "item_id": "THPT-G12-B18-W01",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B18-W01"
+      "heading_id": "THPT-G12-B18-W01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5548,13 +5549,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHVI-B18-O01"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Source rubric requires explicit explanation why denominator is not 12; solution implies it but should state it directly at scoped PED review."
   },
   {
     "item_id": "THPT-G12-B18-W02",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B18-W02"
+      "heading_id": "THPT-G12-B18-W02",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5562,13 +5572,21 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHVI-B18-O02"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B18-W03",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B18-W03"
+      "heading_id": "THPT-G12-B18-W03",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5576,13 +5594,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHVI-B18-O03"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Selection model not explicit: specify uniform random selection of one student."
   },
   {
     "item_id": "THPT-G12-B18-W04",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B18-W04"
+      "heading_id": "THPT-G12-B18-W04",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5590,13 +5617,21 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHVI-B18-O04"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B18-W05",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B18-W05"
+      "heading_id": "THPT-G12-B18-W05",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5604,13 +5639,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHVI-B18-O05"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Selection model not explicit: specify uniform random selection of one respondent."
   },
   {
     "item_id": "THPT-G12-B18-W06",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B18-W06"
+      "heading_id": "THPT-G12-B18-W06",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5618,13 +5662,21 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHVI-B18-O06"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B18-W07",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B18-W07"
+      "heading_id": "THPT-G12-B18-W07",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5632,13 +5684,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHVI-B18-O07"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W07",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "State uniform selection among remaining balls each draw; near-identical structure and counts to P07 (different colors), no independent assessment claim."
   },
   {
     "item_id": "THPT-G12-B19-W01",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B19-W01"
+      "heading_id": "THPT-G12-B19-W01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5646,13 +5707,21 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHVI-B19-O01"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B19-W02",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B19-W02"
+      "heading_id": "THPT-G12-B19-W02",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5660,13 +5729,21 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHVI-B19-O02"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B19-W03",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B19-W03"
+      "heading_id": "THPT-G12-B19-W03",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5674,13 +5751,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G12-CHVI-B19-O03"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Solution omits full tree description required by stem/rubric; expand branches including complementary leaves."
   },
   {
     "item_id": "THPT-G12-B19-W04",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B19-W04"
+      "heading_id": "THPT-G12-B19-W04",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5688,13 +5774,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHVI-B19-O04"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Posterior happens to equal given likelihood 0.7; retain calculation but distinguish directions and avoid treating inequality as universal."
   },
   {
     "item_id": "THPT-G12-B19-W05",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B19-W05"
+      "heading_id": "THPT-G12-B19-W05",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5702,13 +5797,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHVI-B19-O05"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W05",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Define sensitivity and specificity in learner-facing prompt or link prior definitions; preserve hypothetical model."
   },
   {
     "item_id": "THPT-G12-B19-W06",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B19-W06"
+      "heading_id": "THPT-G12-B19-W06",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5716,13 +5820,21 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHVI-B19-O06"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W06",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B19-W07",
     "source": {
       "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "heading_id": "THPT-G12-B19-W07"
+      "heading_id": "THPT-G12-B19-W07",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5730,7 +5842,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHVI-B19-O07"
+    ],
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W07",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP21-W01",
