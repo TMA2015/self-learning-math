@@ -2373,7 +2373,7 @@
     }
   ],
   "academic_audit": "AUTHOR_REVIEW_18_DRAFTS_AND_709_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
-  "interaction_conversion": "IN_PROGRESS_CP120_22_CHOICE_CANDIDATES_CD01_PRACTICE_AUTO_GRADE_DISABLED",
+  "interaction_conversion": "IN_PROGRESS_CP121_CD01_COMPLETE_33_CHOICE_CANDIDATES_AUTO_GRADE_DISABLED",
   "release_authorization": false,
   "import_batches": [
     {
@@ -22430,6 +22430,267 @@
       ],
       "limitations": "Not all CĐ01 complete: 11 Knowledge Vận dụng placements (including two reused SGK IDs) and two Written reference canonical fixes remain; review placement grouping/order by level without disrupting prerequisite order; no independent fresh S1 PDF, full X-G.5 whole-bank audit or browser grading. Schema migration legacy remains. No auto-grade activation, no runtime/website/private RD1/Final Submit/Mastery/Firebase changes; no merge/deploy.",
       "next": "Finish CĐ01 Vận dụng + Written canonical scope/notation + groups, then CĐ02 Practice and follow agreed 6-step plan; prioritize useful student content over metadata."
+    },
+    "exercise_completion_cp121": {
+      "scope": "CD01 only; bank AUTHORING complete for 35 existing exercise IDs; release integration pending",
+      "baseline": "e8d4e8ae48b90949a2a3b719312e21b5e0261714",
+      "head_before_manifest": "6bb5d399b4c93edf64f0f636fd3305ced1e706f3",
+      "standard": "Q01–Q18 v3.2.0 X-G.5/X-G.6 owner approved in CP120",
+      "status": "AUTHORING_BANK_CD01_COMPLETE_RELEASE_INTEGRATION_PENDING",
+      "inventory": {
+        "unique": 35,
+        "interactive": 33,
+        "written": 2,
+        "practice_interactive": 22,
+        "vandung": 11,
+        "selfcheck_reuses": 11,
+        "practice_total": 24,
+        "placements": 46,
+        "choices": 132,
+        "shared_interactive": 18,
+        "topic_only_interactive": 15,
+        "shared_written": 2,
+        "levels": {
+          "RECOGNIZE": 6,
+          "UNDERSTAND": 14,
+          "APPLY": 11,
+          "SYNTHESIS": 2
+        },
+        "groups": [
+          {
+            "name": "Lập luận với mệnh đề",
+            "count": 11
+          },
+          {
+            "name": "Các phép toán tập hợp",
+            "count": 8
+          },
+          {
+            "name": "Khoảng và sơ đồ Venn",
+            "count": 5
+          }
+        ]
+      },
+      "outcomes": [
+        {
+          "id": "TOP01-O01",
+          "practice": [
+            "THPT-G10-B01-C01",
+            "THPT-TOP01-ADD01"
+          ],
+          "selfcheck": [
+            "THPT-G10-B01-C01"
+          ],
+          "vandung": "THPT-TOP01-KFT01"
+        },
+        {
+          "id": "TOP01-O02",
+          "practice": [
+            "THPT-G10-B01-C02",
+            "THPT-G10-B01-P05"
+          ],
+          "selfcheck": [
+            "THPT-G10-B01-C02"
+          ],
+          "vandung": "THPT-TOP01-KFT02"
+        },
+        {
+          "id": "TOP01-O03",
+          "practice": [
+            "THPT-G10-B01-P06",
+            "THPT-G10-B01-P03",
+            "THPT-G10-CHI-W01"
+          ],
+          "selfcheck": [
+            "THPT-G10-B01-P03"
+          ],
+          "vandung": "THPT-G10-CHI-TRY03"
+        },
+        {
+          "id": "TOP01-O04",
+          "practice": [
+            "THPT-G10-B01-P04",
+            "THPT-TOP01-ADD02"
+          ],
+          "selfcheck": [
+            "THPT-G10-B01-P04"
+          ],
+          "vandung": "THPT-TOP01-KFT04"
+        },
+        {
+          "id": "TOP01-O05",
+          "practice": [
+            "THPT-G10-B01-P01",
+            "THPT-G10-B01-P02"
+          ],
+          "selfcheck": [
+            "THPT-G10-B01-P01"
+          ],
+          "vandung": "THPT-TOP01-KFT05"
+        },
+        {
+          "id": "TOP01-O06",
+          "practice": [
+            "THPT-G10-B02-C01",
+            "THPT-G10-B02-P06"
+          ],
+          "selfcheck": [
+            "THPT-G10-B02-C01"
+          ],
+          "vandung": "THPT-G10-CHI-TRY06"
+        },
+        {
+          "id": "TOP01-O07",
+          "practice": [
+            "THPT-G10-B02-C02",
+            "THPT-TOP01-ADD03"
+          ],
+          "selfcheck": [
+            "THPT-G10-B02-C02"
+          ],
+          "vandung": "THPT-TOP01-KFT07"
+        },
+        {
+          "id": "TOP01-O08",
+          "practice": [
+            "THPT-G10-B02-P01",
+            "THPT-TOP01-ADD04"
+          ],
+          "selfcheck": [
+            "THPT-G10-B02-P01"
+          ],
+          "vandung": "THPT-TOP01-KFT08"
+        },
+        {
+          "id": "TOP01-O09",
+          "practice": [
+            "THPT-TOP01-ADD05",
+            "THPT-G10-B02-P02"
+          ],
+          "selfcheck": [
+            "THPT-G10-B02-P02"
+          ],
+          "vandung": "THPT-TOP01-KFT09"
+        },
+        {
+          "id": "TOP01-O10",
+          "practice": [
+            "THPT-G10-B02-P03",
+            "THPT-G10-B02-P04"
+          ],
+          "selfcheck": [
+            "THPT-G10-B02-P03"
+          ],
+          "vandung": "THPT-TOP01-KFT10"
+        },
+        {
+          "id": "TOP01-O11",
+          "practice": [
+            "THPT-G10-B02-P05",
+            "THPT-TOP01-ADD06",
+            "THPT-G10-CHI-W02-ANCHOR"
+          ],
+          "selfcheck": [
+            "THPT-G10-B02-P05"
+          ],
+          "vandung": "THPT-TOP01-KFT11"
+        }
+      ],
+      "files": [
+        {
+          "path": "items/cd01.json",
+          "sha": "9a0a0888ccecfa0116edfba5ef9d9cb5914d4ce4"
+        },
+        {
+          "path": "items/g10-chi.json",
+          "sha": "3432e702739f771899fbb2908b30513fcec33333"
+        },
+        {
+          "path": "items/topic-knowledge-first-try.json",
+          "sha": "28776a148040f69829716a44f4fdeef9b253633e"
+        },
+        {
+          "path": "placements/cd01.json",
+          "sha": "c13ee9ce4f1afc7428bb49b7c6e916ec9524cdf2"
+        },
+        {
+          "path": "placements/topic-knowledge-first-try.json",
+          "sha": "fea899572181c0cf6898045c60947e4d0fd3d50d"
+        },
+        {
+          "path": "written-references.json",
+          "sha": "98233163ee9b9707313c14a8a2b9398bfb6bf71b"
+        },
+        {
+          "path": "placements/sgk-g10.json",
+          "sha": "240d485678b3182add1fb3acd7035e6fc9994e08"
+        }
+      ],
+      "written_source": {
+        "path": "prototypes/thpt/content-drafts/THPT_G10_CHI_B01_B02_D1D6_AUTHORING_R01_SNAPSHOT.md",
+        "prior_immutable_blob": "95a554e31a613b8e215679fe6790738473d598df",
+        "candidate_blob": "983c1d16b08bfd16e17e405614d31f378ae65413",
+        "scope": "two sections only; historical main/projection and review receipt unchanged; two existing references now point to candidate blob, no cloned exercises",
+        "rubric_totals": [
+          7,
+          7
+        ],
+        "math": "W01 n=12k=4(3k), k integer; inverse false n=4, negation existential true. W02 A/B defined, four regions 15,9,12,6 sum 42; union 36, outside 6; 7-point rubrics complete."
+      },
+      "source_evidence": {
+        "topic_learner": "e93f1253ac0acb3e19547665a67d64344527e601",
+        "original_sgk": "95a554e31a613b8e215679fe6790738473d598df",
+        "topic_owned": "89ae1cd2338f2c5c48b9af874a8b52b1306c8acd",
+        "sgk_vandung": [
+          "dba6430cd79b17dee0591fb2dcd075ea5200b126",
+          "3002487e974f2693528a39b2b2055fad8724d698"
+        ],
+        "prior_written_projection": "1e9d93509213bffd3a8437ee209bd55383abec7e",
+        "s1": "Historical exact source S1 DIRECT RECEIPT SGK G10 KNTT T1 pp5–11,12–19,20–21; SBT pp5–15; original source inspected. Fresh PDF in Drive folder KNTT TOAN 10 located but scan text unavailable; public PDF retrieval failed. No new direct PDF-read claim."
+      },
+      "author_review": {
+        "scope": "All 33 stems, key and choices, worked solutions, hints and notation reviewed across CP120/121. All 11 outcomes represented, 2+ practice items plus one Vận dụng and one selfcheck per outcome, 2 Written. Logic/negation: truth table, preserve domain, counterexamples 2/4/5, parity, x=3 and -3; sets: finite membership/union/intersection/difference/complement, real intervals open/closed endpoints, number sets, inclusion-exclusion and four-region counts. Correct keys match stated answer; distractors model errors, reasoning remains requested, no automatic grading of written proof. B02-P03 removed answer cue in stem, B02-P04 phrasing corrected, B01-C01 domain explicit.",
+        "notation": "X-G.5 source review of learner-visible exercise fields; delimiter nesting/readback passed; raw structured notation scan targeted, not MathJax rendering; Written canonical corrected from raw formulas.",
+        "score_model": {
+          "candidate_only": true,
+          "mode": "COUNT_CORRECT_ITEMS, 1 per correct selection, maximum 11; no hints/correctness/answers/score until complete submission",
+          "tests": {
+            "all_correct": 11,
+            "all_wrong": 0,
+            "mixed": 5,
+            "incomplete": null
+          },
+          "production_auto_grade": false
+        },
+        "migration": "Practice group order ascending band; legacy_order retained. 11 Vận dụng links remapped to actual IDs/new orders; 2 shared SGK tasks keep topic-specific context on placement; unrelated Topic Vận dụng placements and SGK placement files unchanged.",
+        "delta": {
+          "sgk": [
+            "THPT-G10-B01-C01",
+            "THPT-G10-B02-P03",
+            "THPT-G10-B02-P04",
+            "THPT-G10-CHI-TRY03",
+            "THPT-G10-CHI-TRY06"
+          ],
+          "topic_vandung": [
+            "THPT-TOP01-KFT01",
+            "THPT-TOP01-KFT02",
+            "THPT-TOP01-KFT04",
+            "THPT-TOP01-KFT05",
+            "THPT-TOP01-KFT07",
+            "THPT-TOP01-KFT08",
+            "THPT-TOP01-KFT09",
+            "THPT-TOP01-KFT10",
+            "THPT-TOP01-KFT11"
+          ],
+          "written": [
+            "THPT-G10-CHI-W01",
+            "THPT-G10-CHI-W02-ANCHOR"
+          ]
+        },
+        "limitations": "Scoped author self-verification, not fresh independent NotebookLM/full Topic Q18 receipt or browser QA; no fresh S1 PDF direct access in this turn. Examples/Knowledge narrative excluded from bank scope; historical site unchanged; no Q16/private RD1/Final Submit/Mastery/Firebase/runtime modification."
+      },
+      "handoff": "Use exact item/placement/source blobs above; render same IDs for SGK and Topic. Candidate_use supplies per-question practice and whole-submission selfcheck reveal, raw /11 score only; release must implement and browser-test reveal, MathJax, Golden, preserve protected systems and existing main source/PASS until authorized cutover. No release authorization.",
+      "next": "STOP after CD01 per owner. Do not begin CD02 without next instruction."
     }
   }
 }
