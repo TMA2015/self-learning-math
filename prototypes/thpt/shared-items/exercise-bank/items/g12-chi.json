@@ -166,9 +166,9 @@
   },
   {
     "item_id": "THPT-G12-CHI-B01-C04",
-    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B01-C04",
-    "stem": "\\(f(x)=x^3\\) có \\(f'(0)=0\\). x=0 có là điểm cực trị không, vì sao?",
-    "answer_key": "Không; f′ dương ở hai phía 0, hàm vẫn tăng qua 0.",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B01-C04.DELTA05",
+    "stem": "Hàm số \\(f(x)=x^3\\) có \\(f'(0)=0\\). Điểm \\(x=0\\) có phải điểm cực trị không? Vì sao?",
+    "answer_key": "Không; \\(f'\\) dương ở hai phía 0, hàm vẫn tăng qua 0.",
     "worked_solution": "\\(f'(x)=3x^2\\) dương trên cả hai khoảng hai bên 0. Hàm vẫn đồng biến qua 0; cũng có thể kiểm tra \\(f(-h)<f(0)<f(h)\\) với mọi \\(h>0\\). Vậy không có cực trị tại 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -203,15 +203,15 @@
     "options": [
       {
         "id": "A",
-        "text": "Có cực tiểu vì f′(0)=0."
+        "text": "Có cực tiểu vì \\(f'(0)=0\\)."
       },
       {
         "id": "B",
-        "text": "Có cực đại vì f′(0)=0."
+        "text": "Có cực đại vì \\(f'(0)=0\\)."
       },
       {
         "id": "C",
-        "text": "Không; f′ dương ở hai phía 0, hàm vẫn tăng qua 0."
+        "text": "Không; \\(f'\\) dương ở hai phía 0, hàm vẫn tăng qua 0."
       },
       {
         "id": "D",
@@ -496,10 +496,10 @@
   },
   {
     "item_id": "THPT-G12-CHI-B02-C01",
-    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B02-C01",
-    "stem": "f(x)=x trên (0,1) có GTLN bằng 1 không? Giải thích.",
-    "answer_key": "Không có GTLN trên (0;1); 1 không đạt được.",
-    "worked_solution": "Không. Với mỗi \\(x\\in(0;1)\\), đặt \\(y=\\frac{x+1}{2}\\) thì \\(x<y<1\\) và \\(f(y)>f(x)\\). Không có điểm nào cho giá trị lớn nhất. Số 1 là cận trên nhỏ nhất nhưng không được đạt tới.",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B02-C01.DELTA05",
+    "stem": "Hàm \\(f(x)=x\\) trên \\((0;1)\\) có giá trị lớn nhất bằng 1 không? Giải thích sự khác nhau giữa tiến gần 1 và đạt 1.",
+    "answer_key": "Không có GTLN trên \\((0;1)\\); 1 không đạt được.",
+    "worked_solution": "Không. Với mỗi \\(x\\in(0;1)\\), số \\(y=\\frac{x+1}{2}\\) thỏa \\(x<y<1\\), nên \\(f(y)>f(x)\\). Vì thế không có điểm nào trong khoảng cho giá trị lớn nhất. Hàm có thể nhận giá trị gần 1 tùy ý nhưng không bao giờ nhận đúng 1. Số 1 là cận trên nhỏ nhất (không phải giá trị lớn nhất).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-EXTREMA_GLOBAL_MEANING"
@@ -528,7 +528,7 @@
       }
     },
     "status": "AUTHOR_INTERACTION_CANDIDATE",
-    "remediation": "Nếu lấy 1 là GTLN, kiểm 1 không thuộc (0;1). Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-P02.",
+    "remediation": "Nếu lấy 1 là GTLN, kiểm \\(1\\notin(0;1)\\). Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-P02.",
     "exercise_type": "INTERACTIVE",
     "options": [
       {
@@ -541,11 +541,11 @@
       },
       {
         "id": "C",
-        "text": "Không có GTLN trên (0;1); 1 không đạt được."
+        "text": "Không có GTLN trên \\((0;1)\\); 1 không đạt được."
       },
       {
         "id": "D",
-        "text": "Có GTLN 1/2 tại trung điểm."
+        "text": "Có GTLN \\(\\frac12\\) tại trung điểm."
       }
     ]
   },
