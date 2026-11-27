@@ -9065,10 +9065,10 @@
   },
   {
     "item_id": "THPT-TOP05-KFT01",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT01",
-    "stem": "Các cặp \\((1;3),(2;3),(3;5)\\) có thể là dữ liệu của một hàm số không? Điều gì quyết định?",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT01",
+    "stem": "Các cặp \\((1;3),(2;3),(3;5)\\) có thể là dữ liệu của một hàm số không? Điều gì quyết định? Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Có; mỗi đầu vào có đúng một đầu ra.",
-    "worked_solution": "Có. Ba đầu vào 1, 2, 3 khác nhau và mỗi đầu vào chỉ có một đầu ra. Việc hai đầu vào cùng cho giá trị 3 không vi phạm định nghĩa. Nếu em nhầm với yêu cầu “mỗi y chỉ đến từ một x”, hãy nhớ đó là tính một-một, không phải điều kiện cơ bản của hàm số.\n\n**Kiểm lỗi**\n\nNếu em nhầm “nhiều đầu vào có cùng một đầu ra” với “một đầu vào có nhiều đầu ra”, đọc lại **Kiến thức 1.1** rồi làm **Bài 1** và **Bài 2** trong Luyện tập. Ở Bài 1, cặp \\((1;4)\\) lặp lại nhưng vẫn là hàm; ở Bài 2, một đầu vào 0 cho hai giá trị 1 và 3 nên không là hàm.",
+    "worked_solution": "Có. Ba đầu vào 1, 2, 3 khác nhau và mỗi đầu vào chỉ có một đầu ra. Việc hai đầu vào cùng cho giá trị 3 không vi phạm định nghĩa. Nếu em nhầm với yêu cầu “mỗi y chỉ đến từ một x”, hãy nhớ đó là tính một-một, không phải điều kiện cơ bản của hàm số.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_MAPPING"
@@ -9077,11 +9077,17 @@
       "TOP05-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm mỗi đầu vào có đúng một đầu ra; đừng nhầm với tính một-một."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9093,14 +9099,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; phải có đầu ra khác nhau cho mỗi đầu vào."
+      },
+      {
+        "id": "B",
+        "text": "Có, vì một đầu vào được phép có nhiều đầu ra."
+      },
+      {
+        "id": "C",
+        "text": "Có; mỗi đầu vào đúng một đầu ra, có thể nhiều đầu vào cùng đầu ra."
+      },
+      {
+        "id": "D",
+        "text": "Không; đầu ra 3 lặp lại."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu em nhầm “nhiều đầu vào có cùng một đầu ra” với “một đầu vào có nhiều đầu ra”, đọc lại **Kiến thức 1.1** rồi làm **Bài 1** và **Bài 4** trong Luyện tập. Ở Bài 1, cặp \\((1;4)\\) lặp lại nhưng vẫn là hàm; ở Bài 4, một đầu vào 0 cho hai giá trị 1 và 3 nên không là hàm."
   },
   {
     "item_id": "THPT-TOP05-KFT02",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT02",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT02",
     "stem": "Tìm tập xác định D của hàm số \\(\\frac{\\sqrt{9-x^2}}{x-1}\\) trên \\(\\mathbb R\\).",
     "answer_key": "\\(D=[-3;1)\\cup(1;3]\\).",
-    "worked_solution": "\\(D=[-3;1)\\cup(1;3]\\), vì \\(-3\\le x\\le3\\) và \\(x\\ne1\\).\n\nNếu bỏ điều kiện mẫu, thử \\(x=1\\); nếu loại căn bằng 0, thử \\(x=\\pm3\\); làm lại Bài 3 và Bài 4 trong phần Luyện tập.",
+    "worked_solution": "\\(D=[-3;1)\\cup(1;3]\\), vì \\(-3\\le x\\le3\\) và \\(x\\ne1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_DOMAIN"
@@ -9109,11 +9135,17 @@
       "TOP05-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Giải điều kiện căn và mẫu khác 0 rồi lấy giao."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9125,14 +9157,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(D=[-3;3]\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(D=(-3;1)\\cup(1;3)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(D=\\mathbb R\\setminus\\{1\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(D=[-3;1)\\cup(1;3]\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu bỏ điều kiện mẫu, thử \\(x=1\\); nếu loại căn bằng 0, thử \\(x=\\pm3\\); làm lại Bài 6 và Bài 7 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT03",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT03",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT03",
     "stem": "\\(f(q)=3q-1\\) với \\(q\\in\\{0;1;2\\}\\) có tập giá trị T nào?",
     "answer_key": "\\(T=\\{-1;2;5\\}\\).",
-    "worked_solution": "Thay lần lượt các đầu vào cho phép: \\(f(0)=-1,\\ f(1)=2,\\ f(2)=5\\). Do đó \\(T=\\{-1;2;5\\}\\). Không phải toàn đoạn \\([-1;5]\\), vì các đầu vào khác không thuộc miền đã cho.\n\nNếu lầm T với đoạn từ min đến max, liệt kê đầu vào thực sự cho phép; làm lại Bài 5 và Bài 6 trong phần Luyện tập.",
+    "worked_solution": "Thay lần lượt các đầu vào cho phép: \\(f(0)=-1,\\ f(1)=2,\\ f(2)=5\\). Do đó \\(T=\\{-1;2;5\\}\\). Không phải toàn đoạn \\([-1;5]\\), vì các đầu vào khác không thuộc miền đã cho.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_MODELING"
@@ -9141,11 +9193,17 @@
       "TOP05-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Thế đúng ba đầu vào cho phép, không lấp khoảng trống."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9157,14 +9215,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(T=\\{-1;2;5\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(T=[-1;5]\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(T=\\{0;3;6\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(T=\\{2;5\\}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu lầm T với đoạn từ min đến max, liệt kê đầu vào thực sự cho phép; làm lại Bài 8 và Bài 2 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT04",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT04",
-    "stem": "Vì sao đường tròn \\(x^2+y^2=9\\) không biểu diễn hàm \\(y=f(x)\\) trên \\([-3;3]\\)?",
-    "answer_key": "Không, vì tại x=0 có hai giá trị y=3 và y=−3.",
-    "worked_solution": "\\(x=0\\) cho hai giá trị \\(y=3\\) và \\(y=-3\\), vi phạm một đầu vào một đầu ra.\n\nNếu chỉ nhìn đường cong mượt và gọi hàm, kẻ đường thẳng đứng qua \\(x=0\\); làm lại Bài 8 và Bài 9 trong phần Luyện tập.",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT04",
+    "stem": "Vì sao đường tròn \\(x^2+y^2=9\\) không biểu diễn hàm \\(y=f(x)\\) trên \\([-3;3]\\)? Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
+    "answer_key": "Không, vì tại x=0 có hai giá trị y=3 và y=\\(-3\\).",
+    "worked_solution": "\\(x=0\\) cho hai giá trị \\(y=3\\) và \\(y=-3\\), vi phạm một đầu vào một đầu ra.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_MAPPING"
@@ -9173,11 +9251,17 @@
       "TOP05-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tìm đường thẳng đứng cắt đường tròn tại hai điểm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9189,14 +9273,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vì mọi hoành độ đều có đúng một tung độ."
+      },
+      {
+        "id": "B",
+        "text": "Tại \\(x=0\\) có \\(y=3\\) và \\(y=-3\\)."
+      },
+      {
+        "id": "C",
+        "text": "Vì đường tròn có bán kính 3."
+      },
+      {
+        "id": "D",
+        "text": "Vì đường tròn chứa giá trị âm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu chỉ nhìn đường cong mượt và gọi hàm, kẻ đường thẳng đứng qua \\(x=0\\); làm lại Bài 3 và Bài 5 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT05",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT05",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT05",
     "stem": "Hàm \\(f(x)=x^2\\) đồng biến hay nghịch biến trên \\([-5;-2]\\)?",
     "answer_key": "Nghịch biến trên đoạn đã cho.",
-    "worked_solution": "Hàm nghịch biến trên \\([-5;-2]\\). Thật vậy, nếu \\(-5\\le x_1<x_2\\le-2\\), thì \\(f(x_2)-f(x_1)=(x_2-x_1)(x_2+x_1)<0\\). Giá trị lớn nhất là 25 tại \\(x=-5\\); giá trị nhỏ nhất là 4 tại \\(x=-2\\).\n\nNếu em kết luận đồng biến vì số mũ chẵn, hãy so \\(f(-5)=25\\) với \\(f(-2)=4\\), rồi kiểm dấu của \\(x_2+x_1\\) với hai điểm bất kỳ trong khoảng đã cho. Làm lại Bài 10 và Bài 11 trong phần Luyện tập.",
+    "worked_solution": "Hàm nghịch biến trên \\([-5;-2]\\). Thật vậy, nếu \\(-5\\le x_1<x_2\\le-2\\), thì \\(f(x_2)-f(x_1)=(x_2-x_1)(x_2+x_1)<0\\). Giá trị lớn nhất là 25 tại \\(x=-5\\); giá trị nhỏ nhất là 4 tại \\(x=-2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_MONOTONICITY"
@@ -9205,11 +9309,17 @@
       "TOP05-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So sánh bình phương của hai số âm có thứ tự."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9221,14 +9331,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hằng trên đoạn đã cho."
+      },
+      {
+        "id": "B",
+        "text": "Không đơn điệu trên đoạn đã cho."
+      },
+      {
+        "id": "C",
+        "text": "Nghịch biến trên đoạn đã cho."
+      },
+      {
+        "id": "D",
+        "text": "Đồng biến trên đoạn đã cho."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu em kết luận đồng biến vì số mũ chẵn, hãy so \\(f(-5)=25\\) với \\(f(-2)=4\\), rồi kiểm dấu của \\(x_2+x_1\\) với hai điểm bất kỳ trong khoảng đã cho. Làm lại Bài 10 và Bài 11 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT06",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT06",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT06",
     "stem": "\\(f(x)=(x+2)^2-1\\) trên \\([-1;3]\\) có giá trị nhỏ nhất và lớn nhất là bao nhiêu?",
     "answer_key": "GTNN \\(0\\) tại \\(x=-1\\); GTLN \\(24\\) tại \\(x=3\\).",
-    "worked_solution": "Đỉnh có hoành độ \\(-2\\), nằm ngoài miền \\([-1;3]\\). Trên miền đã cho, \\(x+2\\) tăng từ 1 đến 5 và luôn dương; bình phương giữ thứ tự, nên f đồng biến. GTNN \\(f(-1)=1^2-1=0\\); GTLN \\(f(3)=5^2-1=24\\).\n\nNếu lấy đỉnh vô điều kiện, khoanh D trước khi chọn; làm lại Bài 12 và Bài 13 trong phần Luyện tập.",
+    "worked_solution": "Đỉnh có hoành độ \\(-2\\), nằm ngoài miền \\([-1;3]\\). Trên miền đã cho, \\(x+2\\) tăng từ 1 đến 5 và luôn dương; bình phương giữ thứ tự, nên f đồng biến. GTNN \\(f(-1)=1^2-1=0\\); GTLN \\(f(3)=5^2-1=24\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "B16_OUT_04"
@@ -9237,11 +9367,17 @@
       "TOP05-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Kiểm đỉnh có thuộc đoạn không rồi xét hai đầu mút."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9253,25 +9389,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "GTNN \\(-1\\) tại \\(-2\\); GTLN 24 tại 3."
+      },
+      {
+        "id": "B",
+        "text": "GTNN 24; GTLN 0."
+      },
+      {
+        "id": "C",
+        "text": "GTNN 0; GTLN 8."
+      },
+      {
+        "id": "D",
+        "text": "GTNN 0 tại \\(-1\\); GTLN 24 tại 3."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu lấy đỉnh vô điều kiện, khoanh D trước khi chọn; làm lại Bài 14 và Bài 15 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT08",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT08",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT08",
     "stem": "Hàm f xác định trên \\(\\mathbb R\\) và thỏa \\(f(x+3)=f(x)\\) với mọi x. Biết \\(f(1)=4\\); tính \\(f(10)\\).",
     "answer_key": "\\(f(10)=4\\).",
-    "worked_solution": "Áp dụng đẳng thức ba lần: \\(f(10)=f(7)=f(4)=f(1)=4\\). Số 3 là một chu kỳ theo giả thiết trên \\(\\mathbb R\\), nhưng chưa đủ để kết luận đó là chu kỳ dương nhỏ nhất.\n\nNếu từ bốn điểm suy toàn miền tuần hoàn, hãy tách quan sát và định nghĩa; làm lại Bài 16 và Bài 17 trong phần Luyện tập.",
+    "worked_solution": "Áp dụng đẳng thức ba lần: \\(f(10)=f(7)=f(4)=f(1)=4\\). Số 3 là một chu kỳ theo giả thiết trên \\(\\mathbb R\\), nhưng chưa đủ để kết luận đó là chu kỳ dương nhỏ nhất.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP05-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Trừ 3 ở đối số nhiều lần và dùng hệ thức đã cho."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9283,25 +9445,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(f(10)=4\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(f(10)=12\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(f(10)=40\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không tính được."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu từ bốn điểm suy toàn miền tuần hoàn, hãy tách quan sát và định nghĩa; làm lại Bài 13 và Bài 17 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT09",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT09",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT09",
     "stem": "Từ \\(f(x)=x^2\\), cho \\(g(x)=f(x)-2\\). Đỉnh g ở đâu?",
     "answer_key": "Đỉnh \\((0;-2)\\).",
-    "worked_solution": "\\((0;-2)\\), và điểm \\((1;1)\\) thành \\((1;-1)\\).\n\nNếu nói dịch ngang, hãy xem x có bị thay trong f không; làm lại Bài 18 và Bài 19 trong phần Luyện tập.",
+    "worked_solution": "\\((0;-2)\\), và điểm \\((1;1)\\) thành \\((1;-1)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP05-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Số trừ ngoài hàm thay đổi tung độ của đỉnh."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9313,25 +9501,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((0;2)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\((0;-2)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\((-2;0)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\((2;0)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu nói dịch ngang, hãy xem x có bị thay trong f không; làm lại Bài 18 và Bài 20 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT10",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT10",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT10",
     "stem": "\\(g(x)=(x+2)^2\\) dịch parabol \\(y=x^2\\) thế nào?",
     "answer_key": "Dịch sang trái 2 đơn vị, đỉnh \\((-2;0)\\).",
-    "worked_solution": "Dịch trái 2, đỉnh \\((-2;0)\\), vì \\(x+2=0\\) tại \\(x=-2\\).\n\nNếu dịch phải vì dấu+, tìm x để đối số bằng0; làm lại Bài 20 và Bài 21 trong phần Luyện tập.",
+    "worked_solution": "Dịch trái 2, đỉnh \\((-2;0)\\), vì \\(x+2=0\\) tại \\(x=-2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP05-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tìm hoành độ làm đối số bằng 0."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9343,25 +9557,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dịch lên 2; đỉnh \\((0;2)\\)."
+      },
+      {
+        "id": "B",
+        "text": "Dịch xuống 2; đỉnh \\((0;-2)\\)."
+      },
+      {
+        "id": "C",
+        "text": "Dịch trái 2; đỉnh \\((-2;0)\\)."
+      },
+      {
+        "id": "D",
+        "text": "Dịch phải 2; đỉnh \\((2;0)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu dịch phải vì dấu+, tìm x để đối số bằng0; làm lại Bài 19 và Bài 24 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT11",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT11",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT11",
     "stem": "Với \\(f(x)=x^2-2x\\), tính \\(f(-x)\\).",
     "answer_key": "\\(f(-x)=x^2+2x\\).",
-    "worked_solution": "\\(x^2+2x\\), là ảnh qua trục Oy.\n\nNếu đổi dấu toàn biểu thức, đó là phản xạ Ox; làm lại Bài 22 và Bài 23 trong phần Luyện tập.",
+    "worked_solution": "\\(x^2+2x\\), là ảnh qua trục Oy.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP05-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Thay \\(-x\\) vào toàn bộ biểu thức, kể cả số hạng bậc hai."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9373,25 +9613,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-x^2+2x\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x^2-2x\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(-x^2-2x\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x^2+2x\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu đổi dấu toàn biểu thức, đó là phản xạ Ox; làm lại Bài 21 và Bài 22 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT12",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT12",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT12",
     "stem": "So sánh \\(g(x)=\\frac12\\lvert x\\rvert\\) với \\(f(x)=\\lvert x\\rvert\\) tại \\(x=4\\).",
     "answer_key": "\\(g(4)=2,\\ f(4)=4\\).",
-    "worked_solution": "\\(g(4)=2\\), \\(f(4)=4\\), co đứng một nửa.\n\nNếu kết luận co ngang, giữ \\(x=4\\) và so hai tung độ; làm lại Bài 24 và Bài 25 trong phần Luyện tập.",
+    "worked_solution": "\\(g(4)=2\\), \\(f(4)=4\\), co đứng một nửa.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP05-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Giữ nguyên đầu vào, so tung độ trước và sau nhân hệ số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9403,14 +9669,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(g(4)=2,\\ f(4)=4\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(g(4)=8,\\ f(4)=4\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(g(4)=4,\\ f(4)=2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(g(4)=-2,\\ f(4)=4\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu kết luận co ngang, giữ \\(x=4\\) và so hai tung độ; làm lại Bài 23 và Bài 25 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT13",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT13",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT13",
     "stem": "Cho \\(f(x)=\\sqrt x\\), \\(g(x)=f(3x)\\). Tìm miền D của g và x khi \\(g(x)=2\\).",
     "answer_key": "\\(D=[0;+\\infty),\\ x=\\frac43\\).",
-    "worked_solution": "Ta có \\(g(x)=\\sqrt{3x}\\), xác định khi \\(3x\\ge0\\), tức \\(D=[0;+\\infty)\\). Vì hai vế không âm, \\(\\sqrt{3x}=2\\Leftrightarrow3x=4\\), nên \\(x=\\frac43\\). So với f đạt tung độ 2 ở \\(x=4\\), hoành độ tương ứng của g bằng một phần ba.\n\nNếu nhận giãn ngang 3, dùng \\(u=3x\\Rightarrow x=\\frac u3\\); làm lại Bài 26 và Bài 27 trong phần Luyện tập.",
+    "worked_solution": "Ta có \\(g(x)=\\sqrt{3x}\\), xác định khi \\(3x\\ge0\\), tức \\(D=[0;+\\infty)\\). Vì hai vế không âm, \\(\\sqrt{3x}=2\\Leftrightarrow3x=4\\), nên \\(x=\\frac43\\). So với f đạt tung độ 2 ở \\(x=4\\), hoành độ tương ứng của g bằng một phần ba.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_DOMAIN"
@@ -9419,11 +9705,17 @@
       "TOP05-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Ghi \\(3x\\ge0\\), rồi giải \\(\\sqrt{3x}=2\\)."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9435,25 +9727,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(D=\\mathbb R,\\ x=\\frac23\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(D=[0;+\\infty),\\ x=\\frac43\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(D=[0;+\\infty),\\ x=12\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(D=(0;+\\infty),\\ x=\\frac43\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu nhận giãn ngang 3, dùng \\(u=3x\\Rightarrow x=\\frac u3\\); làm lại Bài 26 và Bài 27 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT14",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT14",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT14",
     "stem": "Cho \\(f(x)=x^2-1\\), tính \\(\\lvert f(0)\\rvert\\) và \\(f(\\lvert0\\rvert)\\).",
     "answer_key": "\\(|f(0)|=1,\\ f(|0|)=-1\\).",
-    "worked_solution": "\\(\\lvert-1\\rvert=1\\), còn \\(f(0)=-1\\).\n\nNếu gán hai hàm bằng nhau với mọi x, dùng \\(x=0\\) làm phản ví dụ; làm lại Bài 28 và Bài 29 trong phần Luyện tập.",
+    "worked_solution": "\\(\\lvert-1\\rvert=1\\), còn \\(f(0)=-1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP05-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính f tại 0 trước, phân biệt vị trí dấu giá trị tuyệt đối."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9465,25 +9783,51 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(|f(0)|=-1,\\ f(|0|)=-1\\)."
+      },
+      {
+        "id": "B",
+        "text": "Cả hai bằng 0."
+      },
+      {
+        "id": "C",
+        "text": "\\(|f(0)|=1,\\ f(|0|)=-1\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(|f(0)|=1,\\ f(|0|)=1\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu gán hai hàm bằng nhau với mọi x, dùng \\(x=0\\) làm phản ví dụ; làm lại Bài 30 và Bài 28 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT15",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT15",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT15",
     "stem": "\\(g(x)=-f(x+2)+1\\) với \\(f(x)=x^2\\) có đỉnh và hướng mở thế nào?",
     "answer_key": "Đỉnh \\((-2;1)\\), mở xuống.",
-    "worked_solution": "\\(g(x)=-(x+2)^2+1\\), đỉnh \\((-2;1)\\), mở xuống.\n\nNếu đọc \\(x+2\\) là dịch phải, tìm x làm \\(x+2=0\\); làm lại Bài 30, Bài 31 và Bài 36 trong phần Luyện tập.",
+    "worked_solution": "\\(g(x)=-(x+2)^2+1\\), đỉnh \\((-2;1)\\), mở xuống.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP05-O15"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm hoành độ làm đối số của f bằng 0 rồi xét hệ số ngoài."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9495,14 +9839,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đỉnh \\((2;1)\\), mở xuống."
+      },
+      {
+        "id": "B",
+        "text": "Đỉnh \\((-2;-1)\\), mở lên."
+      },
+      {
+        "id": "C",
+        "text": "Đỉnh \\((0;1)\\), mở xuống."
+      },
+      {
+        "id": "D",
+        "text": "Đỉnh \\((-2;1)\\), mở xuống."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu đọc \\(x+2\\) là dịch phải, tìm x làm \\(x+2=0\\); làm lại Bài 29, Bài 31 và Bài 32 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT16",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT16",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT16",
     "stem": "Cho \\(f(x)=0\\) nếu \\(x\\le0\\) và \\(f(x)=x+2\\) nếu \\(x>0\\). Có bước nhảy tại 0 không?",
     "answer_key": "Có, bước nhảy hướng lên 2 đơn vị; \\(f(0)=0\\).",
-    "worked_solution": "Có. Chấm đặc \\((0;0)\\) thuộc đồ thị vì nhánh trái nhận \\(x=0\\), nên \\(f(0)=0\\). Chấm rỗng \\((0;2)\\) chỉ đánh dấu vị trí nhánh phải tiến tới khi x tiến đến 0 từ bên phải; nó **không thuộc đồ thị**, vì nhánh phải chỉ nhận \\(x>0\\). Hai độ cao khác nhau; bước nhảy hướng lên có độ lớn \\(2-0=2\\) đơn vị.\n\nNếu tính \\(f(0)=2\\), em đã dùng nhầm nhánh \\(x>0\\). Hãy kiểm xem 0 thỏa điều kiện của nhánh nào, rồi đặt chấm đặc tại đúng giá trị \\(f(0)\\). Làm lại Bài 32, Bài 33 và Bài 37 trong phần Luyện tập.",
+    "worked_solution": "Có. Chấm đặc \\((0;0)\\) thuộc đồ thị vì nhánh trái nhận \\(x=0\\), nên \\(f(0)=0\\). Chấm rỗng \\((0;2)\\) chỉ đánh dấu vị trí nhánh phải tiến tới khi x tiến đến 0 từ bên phải; nó **không thuộc đồ thị**, vì nhánh phải chỉ nhận \\(x>0\\). Hai độ cao khác nhau; bước nhảy hướng lên có độ lớn \\(2-0=2\\) đơn vị.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_PIECEWISE"
@@ -9511,11 +9875,17 @@
       "TOP05-O16"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Xác định nhánh nhận 0, so với giá trị mà nhánh phải tiến tới."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9527,14 +9897,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, bước nhảy lên 2 đơn vị; \\(f(0)=0\\)."
+      },
+      {
+        "id": "B",
+        "text": "Có, bước nhảy lên 2 đơn vị; \\(f(0)=2\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không, vì \\(f(0)=0\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không xác định tại 0."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu tính \\(f(0)=2\\), em đã dùng nhầm nhánh \\(x>0\\). Hãy kiểm xem 0 thỏa điều kiện của nhánh nào, rồi đặt chấm đặc tại đúng giá trị \\(f(0)\\). Làm lại Bài 33, Bài 34 và Bài 37 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT17",
-    "content_version": "TOP05-BANK-CP72-20261126-KFT17",
+    "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT17",
     "stem": "\\(Q(t)=(t-3)^2+2\\) trên \\(t\\in[5;7]\\); giá trị nhỏ nhất là bao nhiêu?",
     "answer_key": "GTNN \\(6\\) tại \\(t=5\\).",
-    "worked_solution": "Trên miền \\(5\\le t\\le7\\), hiệu \\(t-3\\) luôn dương và tăng từ 2 đến 4. Do đó \\((t-3)^2+2\\) tăng trên đoạn, nhỏ nhất tại \\(t=5\\), bằng \\(2^2+2=6\\). Không chọn \\(Q(3)=2\\) vì \\(3\\notin[5;7]\\).\n\nNếu vẫn chọn đỉnh không hợp lệ, viết lại tập khả thi và thử các biên; làm lại Bài 34, Bài 35 và Bài 38 trong phần Luyện tập.",
+    "worked_solution": "Trên miền \\(5\\le t\\le7\\), hiệu \\(t-3\\) luôn dương và tăng từ 2 đến 4. Do đó \\((t-3)^2+2\\) tăng trên đoạn, nhỏ nhất tại \\(t=5\\), bằng \\(2^2+2=6\\). Không chọn \\(Q(3)=2\\) vì \\(3\\notin[5;7]\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "B16_OUT_04"
@@ -9543,11 +9933,17 @@
       "TOP05-O17"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Xét khoảng cách đến hoành độ đỉnh trong miền đã cho."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9559,7 +9955,27 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không có GTNN."
+      },
+      {
+        "id": "B",
+        "text": "GTNN 6 tại \\(t=5\\)."
+      },
+      {
+        "id": "C",
+        "text": "GTNN 2 tại \\(t=3\\)."
+      },
+      {
+        "id": "D",
+        "text": "GTNN 18 tại \\(t=7\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu vẫn chọn đỉnh không hợp lệ, viết lại tập khả thi và thử các biên; làm lại Bài 36, Bài 35 và Bài 38 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP06-KFT01",
