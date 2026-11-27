@@ -128,7 +128,7 @@
     "options": [
       {
         "id": "A",
-        "text": "x=0 và z=0"
+        "text": "−7 cm"
       },
       {
         "id": "B",
@@ -136,11 +136,11 @@
       },
       {
         "id": "C",
-        "text": "y=0 và z=0"
+        "text": "14 cm"
       },
       {
         "id": "D",
-        "text": "Chỉ z=0"
+        "text": "0 cm"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -482,7 +482,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\((1;1;1)\\)"
+        "text": "\\(\\overrightarrow{AB}\\)"
       },
       {
         "id": "B",
@@ -490,11 +490,11 @@
       },
       {
         "id": "C",
-        "text": "\\((-3;7;-1)\\)"
+        "text": "\\(\\overrightarrow{BA}\\)"
       },
       {
         "id": "D",
-        "text": "\\((3;1;1)\\)"
+        "text": "\\(2\\overrightarrow{AB}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -660,15 +660,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\((\\frac32;3;0)\\)"
+        "text": "X là trung điểm AM, AX:XM=1:1."
       },
       {
         "id": "B",
-        "text": "\\((3;6;0)\\)"
+        "text": "X nằm giữa A và M, AX:XM=1:2."
       },
       {
         "id": "C",
-        "text": "\\((2;1;0)\\)"
+        "text": "X nằm ngoài đoạn AM về phía A, AX:XM=2:1."
       },
       {
         "id": "D",
