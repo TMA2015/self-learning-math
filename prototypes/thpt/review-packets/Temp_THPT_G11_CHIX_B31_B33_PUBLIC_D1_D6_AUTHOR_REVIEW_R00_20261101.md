@@ -920,112 +920,146 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B31-W01 · role=`ANCHOR_TAG` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** $f(x)=x^2-2x+3$: (a) lập thương sai phân tại x=2; (b) tính f'(2) theo định nghĩa; (c) lập tiếp tuyến; (d) giải thích hình học.
+**Đề bài:** Cho \(f(x)=x^2-2x+3\). (a) Lập thương sai phân tại \(x=2\). (b) Tính \(f'(2)\) theo định nghĩa. (c) Viết tiếp tuyến tại điểm có hoành độ \(2\). (d) Giải thích ý nghĩa hình học.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Thương $[f(2+h)-f(2)]/h=2+h$, $f'(2)=2$, $f(2)=3$, tiếp tuyến $y-3=2(x-2)$, độ dốc 2.
+**Lời giải:** \(f(2)=3\) và \(f(2+h)=3+2h+h^2\). Với \(h\ne0\), thương sai phân bằng \(\frac{2h+h^2}{h}=2+h\). Lấy giới hạn khi \(h\to0\), được \(f'(2)=2\). Tiếp tuyến qua \(P(2;3)\), hệ số góc \(2\), nên \(y-3=2(x-2)\). Đạo hàm là giới hạn hệ số góc của cát tuyến khi điểm thứ hai tiến về điểm tiếp xúc.
 
-**Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
-1. Viết f(2+h) và f(2) đúng — **1 điểm**.
-2. Rút gọn thương 2+h, tìm giới hạn 2 — **1 điểm**.
-3. Xác định P(2,3), viết phương trình tiếp tuyến — **1 điểm**.
-4. Giải thích đạo hàm là độ dốc cát tuyến giới hạn — **1 điểm**.
+**Rubric /4:**
+1. Tính hai giá trị hàm chính xác (1 điểm).
+2. Rút gọn thương với \(h\ne0\) và lấy giới hạn đúng (1 điểm).
+3. Xác định điểm và viết tiếp tuyến (1 điểm).
+4. Giải thích ý nghĩa hình học (1 điểm).
+
+Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
 
 #### THPT-G11-CHIX-B31-W02 · role=`WRITTEN` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** Cho $g(x)=|x+1|$. Chứng minh g liên tục tại -1 nhưng không có đạo hàm tại -1; giải thích điều kiện hai phía.
+**Đề bài:** Cho \(g(x)=|x+1|\). Chứng minh \(g\) liên tục tại \(-1\) nhưng không có đạo hàm tại đó; giải thích điều kiện hai phía.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** $g(-1)=0$ và hai giới hạn g(x)→0; thương tại -1 bằng $|h|/h$, giới hạn trái -1, phải +1; không khả vi.
+**Lời giải:** \(g(-1)=0\) và \(\lim_{x\to-1}|x+1|=0\), nên hàm liên tục tại \(-1\). Với \(h\ne0\), thương sai phân là \(\frac{|h|}{h}\), bằng \(-1\) khi \(h<0\) và bằng \(1\) khi \(h>0\). Hai giới hạn một phía khác nhau nên không có đạo hàm tại \(-1\). Liên tục không đủ để suy ra có đạo hàm.
 
-**Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
-1. Khẳng định và chứng minh liên tục — **1 điểm**.
-2. Tạo đúng thương sai phân |h|/h — **1 điểm**.
-3. Tìm hai giới hạn một bên -1 và +1 — **1 điểm**.
-4. Kết luận không đạo hàm dù liên tục — **1 điểm**.
+**Rubric /4:**
+1. Chứng minh liên tục (1 điểm).
+2. Lập đúng thương sai phân (1 điểm).
+3. Tìm hai giới hạn một phía (1 điểm).
+4. Kết luận và giải thích (1 điểm).
+
+Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
 
 #### THPT-G11-CHIX-B31-W03 · role=`WRITTEN` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** Tọa độ $s(t)=t^3-6t^2+8t$ m, $0\le t\le4$: (a) tính vận tốc; (b) tính v(1), v(3); (c) so sánh dấu/tốc độ; (d) đơn vị.
+**Đề bài:** Vật có tọa độ \(s(t)=t^3-6t^2+8t\) (m), \(0\le t\le4\), thời gian tính bằng giây. (a) Tìm vận tốc. (b) Tính \(v(1),v(3)\). (c) So sánh chiều chuyển động và tốc độ tại hai thời điểm. (d) Ghi đơn vị.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** $v=3t²-12t+8$ m/s, $v(1)=-1$ m/s, $v(3)=-1$ m/s, cùng chuyển theo chiều âm tại hai thời điểm với tốc độ 1 m/s; mô hình t∈[0,4].
+**Lời giải:** \(v(t)=s'(t)=3t^2-12t+8\) (m/s) tại các điểm trong khoảng thời gian xét. Thay \(t=1\) được \(3-12+8=-1\) m/s; thay \(t=3\) được \(27-36+8=-1\) m/s. Tại hai thời điểm đó, vật đều chuyển động theo chiều âm của trục và có tốc độ \(1\) m/s.
 
-**Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
-1. Tìm đúng đạo hàm v(t) — **1 điểm**.
-2. Tính chính xác v(1)=-1 — **1 điểm**.
-3. Tính chính xác v(3)=-1, phân biệt dấu/tốc độ — **1 điểm**.
-4. Viết đúng đơn vị và miền thời gian — **1 điểm**.
+**Rubric /4:**
+1. Tìm đúng vận tốc (1 điểm).
+2. Tính \(v(1)\) đúng (1 điểm).
+3. Tính \(v(3)\) và phân biệt dấu vận tốc với tốc độ (1 điểm).
+4. Ghi đúng đơn vị và phạm vi thời gian (1 điểm).
+
+Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
 
 #### THPT-G11-CHIX-B32-W01 · role=`ANCHOR_TAG` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** Tính đạo hàm $F(x)=(x^2+3)\sin(2x)$. (a) nêu quy tắc ngoài; (b) đạo hàm hàm trong; (c) kết quả; (d) phát hiện lời giải sai chỉ lấy tích hai đạo hàm.
+**Đề bài:** Tính đạo hàm \(F(x)=(x^2+3)\sin(2x)\), với góc tính bằng radian. (a) Nêu quy tắc ngoài cùng. (b) Tính đạo hàm các nhân tử. (c) Tìm kết quả. (d) Giải thích lỗi chỉ lấy tích hai đạo hàm.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** $F'=2x\sin(2x)+2(x²+3)\cos(2x)$. Nếu chỉ nhân đạo hàm từng thừa số thì thiếu hai thành phần biến thiên của hình chữ nhật.
+**Lời giải:** Đây là tích của \(u=x^2+3\) và \(v=\sin(2x)\). Ta có \(u'=2x\), \(v'=2\cos(2x)\) theo quy tắc hàm hợp. Do đó
+\[
+F'(x)=2x\sin(2x)+2(x^2+3)\cos(2x).
+\]
+Hai nhân tử cùng biến thiên nên đạo hàm tích gồm cả hai đóng góp \(u'v\) và \(uv'\), không phải \(u'v'\).
 
-**Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
-1. Chọn quy tắc tích ngoài — **1 điểm**.
-2. Lấy đạo hàm sin(2x)=2cos(2x) — **1 điểm**.
-3. Tính F' gồm đủ hai hạng — **1 điểm**.
-4. Giải thích vì sao tích hai đạo hàm là sai — **1 điểm**.
+**Rubric /4:**
+1. Chọn quy tắc tích (1 điểm).
+2. Tính đúng đạo hàm của \(\sin(2x)\) (1 điểm).
+3. Tính \(F'\) đúng (1 điểm).
+4. Giải thích lỗi nhân hai đạo hàm (1 điểm).
+
+Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
 
 #### THPT-G11-CHIX-B32-W02 · role=`WRITTEN` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** Với $F(x)=\ln(9-x^2)$: (a) tìm miền; (b) tính đạo hàm; (c) tính F'(0); (d) giải thích tại sao không thể dùng công thức tại x=4.
+**Đề bài:** Cho \(F(x)=\ln(9-x^2)\). (a) Tìm tập xác định. (b) Tính đạo hàm. (c) Tính \(F'(0)\). (d) Giải thích vì sao không thể tính đạo hàm tại \(x=4\).
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Miền (-3,3); $F'=-2x/(9-x²)$; F'(0)=0; tại x=4 log đối số âm nên hàm gốc vô nghĩa.
+**Lời giải:** Điều kiện \(9-x^2>0\) tương đương \(-3<x<3\). Dùng quy tắc hàm hợp cho logarit:
+\[
+F'(x)=\frac{-2x}{9-x^2},\qquad -3<x<3.
+\]
+Suy ra \(F'(0)=0\). Tại \(x=4\), đối số logarit là \(-7<0\), nên hàm không xác định trong tập số thực, dù phân thức của công thức đạo hàm có giá trị đại số tại đó.
 
-**Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
-1. Giải 9-x²>0 đúng — **1 điểm**.
-2. Dùng chain cho -2x/(9-x²) — **1 điểm**.
-3. Tính đạo hàm tại 0 — **1 điểm**.
-4. Chỉ rõ tại x=4 hàm không xác định — **1 điểm**.
+**Rubric /4:**
+1. Giải đúng điều kiện logarit (1 điểm).
+2. Tính đạo hàm hàm hợp chính xác (1 điểm).
+3. Tính \(F'(0)\) (1 điểm).
+4. Giải thích vì sao không có \(F'(4)\) (1 điểm).
+
+Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
 
 #### THPT-G11-CHIX-B32-W03 · role=`WRITTEN` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** Hàm $y=(3x+1)/(x^2+1)$: (a) miền; (b) đạo hàm; (c) tính y'(0); (d) giải thích tử của thương.
+**Đề bài:** Cho \(y=\frac{3x+1}{x^2+1}\). (a) Tìm tập xác định. (b) Tính đạo hàm. (c) Tính \(y'(0)\). (d) Giải thích thứ tự hai hạng tử trong tử của công thức đạo hàm thương.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Miền ℝ; $y'=[3(x²+1)-(3x+1)2x]/(x²+1)^2=(-3x²-2x+3)/(x²+1)^2$; y'(0)=3.
+**Lời giải:** Vì \(x^2+1>0\) với mọi \(x\in\mathbb R\), tập xác định là \(\mathbb R\). Với \(u=3x+1\), \(v=x^2+1\), ta có \(u'=3,\ v'=2x\). Áp dụng quy tắc thương:
+\[
+y'=\frac{3(x^2+1)-(3x+1)2x}{(x^2+1)^2}
+=\frac{-3x^2-2x+3}{(x^2+1)^2}.
+\]
+Vậy \(y'(0)=3\). Tử số phải là \(u'v-uv'\), không được đảo thứ tự vì mẫu nằm trong nghịch đảo \(v^{-1}\), có đạo hàm \(-v'/v^2\).
 
-**Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
-1. Miền ℝ do x²+1>0 — **1 điểm**.
-2. Quy tắc thương đúng tử và mẫu — **1 điểm**.
-3. Rút gọn tử -3x²-2x+3 — **1 điểm**.
-4. Tính y'(0)=3 và diễn giải quy tắc — **1 điểm**.
+**Rubric /4:**
+1. Xác định miền đúng (1 điểm).
+2. Lập đúng quy tắc thương (1 điểm).
+3. Rút gọn tử đúng (1 điểm).
+4. Tính \(y'(0)\) và giải thích dấu trừ (1 điểm).
+
+Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
 
 #### THPT-G11-CHIX-B33-W01 · role=`ANCHOR_TAG` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** Vật có $s(t)=12t-3t^2$ m với $0\le t\le4$: (a) v(t); (b) a(t); (c) thời điểm v=0; (d) giải thích a âm không buộc luôn chậm dần.
+**Đề bài:** Vật có tọa độ \(s(t)=12t-3t^2\) (m), \(0\le t\le4\), thời gian tính bằng giây. (a) Tính vận tốc. (b) Tính gia tốc. (c) Tìm thời điểm vận tốc bằng \(0\). (d) Giải thích vì sao gia tốc âm không có nghĩa vật luôn chậm dần.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** $v=12-6t$ m/s, $a=-6$ m/s², v=0 tại t=2; khi 0<t<2 v>0 và a<0 nên chậm; khi 2<t<4 v<0 và a<0 nên nhanh theo chiều âm.
+**Lời giải:** \(v(t)=s'(t)=12-6t\) (m/s), \(a(t)=v'(t)=-6\) (m/s²). Giải \(12-6t=0\) được \(t=2\). Trên \((0;2)\), \(v>0\) nên tốc độ bằng \(v\) và giảm vì \(a<0\). Trên \((2;4)\), \(v<0\), tốc độ bằng \(-v\) và tăng vì \(-a>0\). Tại \(2\) vật đổi chiều, tốc độ bằng \(0\). Phải xét cả dấu của vận tốc và gia tốc.
 
-**Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
-1. Tính v=12-6t — **1 điểm**.
-2. Tính gia tốc -6 đúng đơn vị — **1 điểm**.
-3. Giải v=0 được t=2 — **1 điểm**.
-4. Phân tích vận tốc/gia tốc cùng-trái dấu hai phía t=2 — **1 điểm**.
+**Rubric /4:**
+1. Tính vận tốc (1 điểm).
+2. Tính gia tốc và đơn vị (1 điểm).
+3. Tìm \(t=2\) (1 điểm).
+4. Phân tích đúng hai khoảng và giải thích (1 điểm).
+
+Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
 
 #### THPT-G11-CHIX-B33-W02 · role=`WRITTEN` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** $f(x)=2\sin(3x)+e^x$: (a) f'; (b) f''; (c) f''(0); (d) lưu ý công thức chain.
+**Đề bài:** Cho \(f(x)=2\sin(3x)+e^x\), góc tính bằng radian. (a) Tính \(f'\). (b) Tính \(f''\). (c) Tính \(f''(0)\). (d) Giải thích cách áp dụng quy tắc hàm hợp.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** $f'=6\cos(3x)+e^x$, $f''=-18\sin(3x)+e^x$, f''(0)=1. Hàm trong 3x góp hệ số 3 mỗi lần.
+**Lời giải:** Lấy đạo hàm lần một:
+\[
+f'(x)=6\cos(3x)+e^x.
+\]
+Lần hai, đạo hàm của \(\cos(3x)\) là \(-3\sin(3x)\), nên \(f''(x)=-18\sin(3x)+e^x\). Thay \(x=0\), được \(f''(0)=1\). Ở mỗi lần đạo hàm lượng giác, hàm trong \(3x\) góp thêm hệ số \(3\).
 
-**Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
-1. Đạo hàm lần 1 gồm 6cos 3x — **1 điểm**.
-2. Đạo hàm lần 2 gồm -18sin 3x — **1 điểm**.
-3. Tính f''(0)=1 — **1 điểm**.
-4. Giải thích các hệ số chain và dấu âm — **1 điểm**.
+**Rubric /4:**
+1. Tính đúng \(f'\) (1 điểm).
+2. Tính đúng \(f''\) (1 điểm).
+3. Tính \(f''(0)\) (1 điểm).
+4. Giải thích hệ số và dấu theo quy tắc hàm hợp (1 điểm).
+
+Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
 
 #### THPT-G11-CHIX-B33-W03 · role=`WRITTEN` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** Cho vị trí $s(t)=t^3-9t^2+24t$ cm, t giây: (a) v; (b) a; (c) tính tại t=1; (d) nhận xét vận tốc dương hay âm cùng gia tốc.
+**Đề bài:** Vật có tọa độ \(s(t)=t^3-9t^2+24t\) (cm), thời gian \(t\) tính bằng giây. (a) Tìm vận tốc. (b) Tìm gia tốc. (c) Tính chúng tại \(t=1\). (d) Nhận xét chiều chuyển động và sự thay đổi tốc độ tại thời điểm đó.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** $v=3t²-18t+24$, $a=6t-18$; v(1)=9 cm/s, a(1)=-12 cm/s², tức đang đi theo chiều dương nhưng chậm dần ở thời điểm đó.
+**Lời giải:** \(v(t)=3t^2-18t+24\) (cm/s), \(a(t)=6t-18\) (cm/s²). Tại \(t=1\), \(v(1)=3-18+24=9\) cm/s, \(a(1)=6-18=-12\) cm/s². Vận tốc dương nên vật chuyển động theo chiều dương; vì tốc độ bằng \(v\) trong lân cận đủ nhỏ của \(1\), đạo hàm tốc độ tại đó là \(a(1)<0\). Vật đang chậm dần tại thời điểm xét.
 
-**Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
-1. Tính v(t) đúng — **1 điểm**.
-2. Tính a(t) đúng — **1 điểm**.
-3. v(1)=9, a(1)=-12 đúng đơn vị — **1 điểm**.
-4. Dấu ngược nhau => tốc độ giảm cục bộ — **1 điểm**.
+**Rubric /4:**
+1. Tính đúng \(v(t)\) (1 điểm).
+2. Tính đúng \(a(t)\) (1 điểm).
+3. Tính hai giá trị tại \(1\) và đúng đơn vị (1 điểm).
+4. Giải thích chiều và tốc độ giảm (1 điểm).
 
+Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
 
 ---
 
