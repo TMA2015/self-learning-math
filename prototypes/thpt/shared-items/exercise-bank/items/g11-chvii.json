@@ -1315,16 +1315,18 @@
   {
     "item_id": "THPT-G11-CHVII-B26-P03",
     "content_version": "THPT-G11-CHVII-B22-B27-R01",
-    "stem": "Hai đường chéo nhau cố định có thể có khoảng cách bằng 0 không?",
-    "answer_key": "Không.",
-    "worked_solution": "Hai đường chéo nhau có đoạn vuông góc chung nối hai điểm phân biệt trên chúng. Khoảng cách là độ dài đoạn này. Nếu bằng 0, hai đầu trùng nhau, tức hai đường có điểm chung, trái với giả thiết chéo nhau.",
+    "stem": "Cho hình hộp chữ nhật \\(ABCD.A'B'C'D'\\) có đáy ABCD là hình vuông cạnh 6 cm. Gọi O là giao điểm hai đường chéo đáy. (a) Chứng minh \\(AA'\\) và BD chéo nhau, xác định đoạn vuông góc chung và tính khoảng cách giữa hai đường. (b) Chứng minh \\(AA'\\parallel(BCC'B')\\) và tính khoảng cách từ \\(AA'\\) đến mặt phẳng đó. (c) Vì sao hai khoảng cách không bằng nhau?",
+    "answer_key": "(a) AO là đoạn vuông góc chung, \\(d(AA',BD)=3\\sqrt2\\) cm. (b) \\(d(AA',(BCC'B'))=6\\) cm. (c) Hai đối tượng đích khác nhau: BD và mặt bên \\(BCC'B'\\).",
+    "worked_solution": "(a) Đường \\(AA'\\) vuông góc với mặt đáy, cắt đáy duy nhất tại A. Vì A không thuộc BD nên hai đường không cắt nhau. Chúng không song song vì \\(AA'\\) vuông góc với BD; do đó chéo nhau. O thuộc BD, A thuộc \\(AA'\\). Đường chéo AC vuông góc BD trong hình vuông nên \\(AO\\perp BD\\); đồng thời AO nằm trong đáy nên \\(AO\\perp AA'\\). Vậy AO là đoạn vuông góc chung. Độ dài \\(AO=AC/2=6\\sqrt2/2=3\\sqrt2\\) cm. (b) \\(AA'\\parallel BB'\\), mà \\(BB'\\) nằm trong mặt bên \\(BCC'B'\\). Hai mặt bên đối diện của hình hộp \\(ADD'A'\\) và \\(BCC'B'\\) song song phân biệt, nên \\(AA'\\) không có điểm chung với \\(BCC'B'\\). Suy ra \\(AA'\\parallel(BCC'B')\\). Vì \\(AB\\perp BC\\) và \\(AB\\perp BB'\\), hai đường BC và BB' cắt nhau tại B trong mặt bên, nên \\(AB\\perp(BCC'B')\\). Vậy B là hình chiếu của A lên mặt bên; khoảng cách từ đường \\(AA'\\) song song với mặt bên bằng khoảng cách từ A đến mặt bên, tức \\(AB=6\\) cm. (c) AO đo khoảng cách đến BD, còn AB đo khoảng cách đến mặt bên. Không được dùng cùng một đoạn chỉ vì cả hai phép đo đều xuất phát từ \\(AA'\\).",
     "skill_ids": [
-      "G11-B26-SKEW_COMMON_PERP"
+      "G11-B26-SKEW_COMMON_PERP",
+      "G11-B26-PARALLEL_LINE_PLANE"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Hai đường chéo nhau không cắt và có đoạn vuông góc chung."
+      "Tìm điểm trên BD sao cho đoạn nối từ A vuông góc BD, rồi kiểm cả hai đường.",
+      "Dùng BB' để xác định quan hệ song song và AB để kiểm vuông góc mặt bên."
     ],
     "rubric": null,
     "interaction": {
@@ -1342,7 +1344,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đoạn chung dài 0, hai đầu trùng, tức hai đường gặp nhau, trái giả thiết. Ôn CĐ17 mục 1.5; luyện THPT-TOP17-P05."
+    "remediation": "Đoạn vuông góc chung phải nối hai đường và vuông góc với cả hai; khoảng cách đường song song mặt phẳng dùng hình chiếu của một điểm trên đường lên mặt phẳng. Ôn Bài 26; luyện THPT-TOP17-P05."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C01",
