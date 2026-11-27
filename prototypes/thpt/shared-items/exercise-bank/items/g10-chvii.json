@@ -498,16 +498,17 @@
   {
     "item_id": "THPT-G10-B21-P03",
     "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
-    "stem": "Xét \\((C):(x-1)^2+(y+1)^2=4\\) và đường thẳng \\(d:x=3\\). \\(d\\) có tiếp xúc với \\((C)\\) không? Nêu tiếp điểm.",
-    "answer_key": "Có, tiếp xúc tại \\(H(3;-1)\\).",
-    "worked_solution": "Tâm \\(I(1;-1)\\), bán kính \\(R=2\\). Khoảng cách từ I đến đường thẳng \\(x=3\\) là \\(|1-3|=2=R\\), nên d tiếp xúc đường tròn. Hình chiếu vuông góc của I lên đường thẳng đứng d là \\(H(3;-1)\\), chính là tiếp điểm.",
+    "stem": "Cho đường tròn \\((C):(x-1)^2+(y+1)^2=25\\) và họ đường thẳng \\(d_m:3x+4y+m=0\\). (a) Tìm tất cả giá trị m để \\(d_m\\) tiếp xúc với (C). (b) Xác định tiếp điểm của mỗi tiếp tuyến. Giải thích vì sao không được bỏ một trong hai trường hợp.",
+    "answer_key": "\\(m=26\\), tiếp điểm \\((-2;-5)\\); hoặc \\(m=-24\\), tiếp điểm \\((4;3)\\). Hai tiếp tuyến nằm ở hai phía của tâm đường tròn.",
+    "worked_solution": "Đường tròn có tâm \\(I(1;-1)\\), bán kính \\(R=5\\). Đường thẳng \\(d_m\\) tiếp xúc khi và chỉ khi khoảng cách từ I đến \\(d_m\\) bằng R. Ta có \\(\\frac{|3-4+m|}{\\sqrt{3^2+4^2}}=5\\), hay \\(|m-1|=25\\). Do đó \\(m=26\\) hoặc \\(m=-24\\). Để tìm tiếp điểm H, dùng tính chất bán kính IH vuông góc tiếp tuyến: \\(\\overrightarrow{IH}\\) cùng phương với vectơ pháp tuyến \\((3;4)\\), và độ dài IH bằng 5. Vì \\((3;4)\\) cũng có độ dài 5, chỉ có hai ứng viên \\(\\overrightarrow{IH}=(3;4)\\) hoặc \\((-3;-4)\\). Từ I được hai điểm \\((4;3)\\) và \\((-2;-5)\\). Thế vào phương trình đường thẳng: \\((4;3)\\) thuộc \\(d_{-24}\\) vì \\(12+12-24=0\\); \\((-2;-5)\\) thuộc \\(d_{26}\\) vì \\(-6-20+26=0\\). Cả hai điểm đều nằm trên đường tròn và bán kính vuông góc đường thẳng tương ứng. Vì có hai phía cách tâm đúng một bán kính theo phương pháp tuyến, không được bỏ trường hợp âm khi giải phương trình trị tuyệt đối.",
     "skill_ids": [
       "G10-B21-CIRCLE_TANGENT"
     ],
     "problem_type_id": null,
     "difficulty": 2,
     "hints": [
-      "So sánh khoảng cách từ tâm đến đường với bán kính."
+      "Tiếp xúc khi khoảng cách từ tâm đến đường thẳng bằng bán kính.",
+      "Tìm hai vectơ bán kính có cùng phương với pháp tuyến và độ dài bằng 5."
     ],
     "rubric": null,
     "interaction": {
@@ -524,7 +525,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ thế một điểm, tính khoảng cách tâm đến đường rồi xác định hình chiếu. Ôn Bài 21 phần khám phá tương ứng; luyện THPT-G10-CHVII-TRY17."
+    "remediation": "Giữ trị tuyệt đối trong công thức khoảng cách; một phương đường thẳng xác định hai tiếp tuyến song song ở hai phía tâm. Ôn Bài 21; luyện THPT-G10-CHVII-TRY17."
   },
   {
     "item_id": "THPT-G10-B21-P04",
