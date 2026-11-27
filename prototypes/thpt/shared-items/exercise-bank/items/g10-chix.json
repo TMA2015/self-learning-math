@@ -281,16 +281,17 @@
   {
     "item_id": "THPT-G10-B27-P01",
     "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
-    "stem": "Trong nhóm 6 học sinh gồm 4 nữ và 2 nam, chọn đều ngẫu nhiên 2 học sinh không xét thứ tự. Tính xác suất nhóm chọn có đúng 1 nữ, 1 nam.",
-    "answer_key": "\\(\\frac8{15}\\).",
-    "worked_solution": "Mỗi kết quả là một nhóm 2 học sinh không xét thứ tự. Có \\(n(\\Omega)=C_6^2=15\\) nhóm đồng khả năng. Gọi A là biến cố chọn đúng 1 nữ và 1 nam. Chọn một trong 4 nữ và một trong 2 nam, được \\(n(A)=C_4^1C_2^1=4\\cdot2=8\\). Vậy \\(P(A)=\\frac8{15}\\). Tử và mẫu đều đếm nhóm không thứ tự.",
+    "stem": "Một nhóm có 4 học sinh nữ và 2 học sinh nam, tất cả phân biệt. (a) Chọn đều ngẫu nhiên một nhóm 2 học sinh, không phân vai. Tính xác suất nhóm gồm một nữ và một nam. (b) Thay bằng cách chọn đều ngẫu nhiên một đội trưởng và một đội phó là hai người khác nhau. Tính xác suất hai chức vụ do một nữ và một nam đảm nhiệm, không giới hạn ai giữ chức vụ nào. (c) Trong mô hình (b), tính xác suất đội trưởng là nữ và đội phó là nam. Giải thích vì sao kết quả (c) khác (b).",
+    "answer_key": "(a) \\(\\frac8{15}\\). (b) \\(\\frac8{15}\\). (c) \\(\\frac4{15}\\).",
+    "worked_solution": "(a) Mỗi nhóm hai người là một kết quả đồng khả năng, nên \\(n(\\Omega)=C_6^2=15\\). Có \\(4\\cdot2=8\\) nhóm gồm một nữ và một nam, nên xác suất bằng \\(\\frac8{15}\\). (b) Mỗi kết quả là một cặp có thứ tự (đội trưởng; đội phó). Có \\(6\\cdot5=30\\) cách phân vai đồng khả năng. Mỗi nhóm gồm một nữ và một nam ở (a) tạo đúng hai cách phân vai, nên có \\(8\\cdot2=16\\) kết quả thuận lợi. Xác suất là \\(\\frac{16}{30}=\\frac8{15}\\). Tử số và mẫu số cùng tăng gấp đôi vì mỗi nhóm hai người đều có hai cách phân vai. (c) Khi yêu cầu đội trưởng là nữ, đội phó là nam, chỉ có \\(4\\cdot2=8\\) kết quả thuận lợi trong 30 cặp có thứ tự. Do đó xác suất là \\(\\frac8{30}=\\frac4{15}\\). Mô hình chọn vẫn như (b), nhưng biến cố ở (c) chỉ lấy một trong hai kiểu phân vai, nên số kết quả thuận lợi giảm một nửa.",
     "skill_ids": [
       "G10-B27-COUNTING_OUTCOMES"
     ],
     "problem_type_id": null,
     "difficulty": "INTERMEDIATE",
     "hints": [
-      "Tử số phân biệt chọn một từ mỗi nhóm, mẫu số chọn hai từ tất cả học sinh."
+      "Trong (a) dùng nhóm không thứ tự; trong (b), (c) dùng cặp chức vụ có thứ tự.",
+      "Một nhóm gồm một nữ và một nam tạo bao nhiêu cách phân vai trong từng biến cố?"
     ],
     "rubric": null,
     "interaction": {
@@ -307,7 +308,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng chỉnh hợp cho tử nhưng tổ hợp cho mẫu, chọn một quy ước không thứ tự cho cả hai. Ôn Bài 27 §2.1; luyện THPT-G10-CHIX-TRY06."
+    "remediation": "Chọn một cách mô tả kết quả đồng khả năng cho cả tử và mẫu. Phân biệt biến cố không giới hạn vai với biến cố quy định từng vai. Ôn Bài 27 §2.1; luyện THPT-G10-CHIX-TRY06."
   },
   {
     "item_id": "THPT-G10-B27-P02",
