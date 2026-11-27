@@ -4,1414 +4,3030 @@
     "role": "TOPIC_PRACTICE",
     "order": 1,
     "item_id": "THPT-G12-B06-C01",
-    "outcome_id": "TOP18-O01"
+    "outcome_id": "TOP18-O01",
+    "legacy_order": 1,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 2,
     "item_id": "THPT-G12-B06-P01",
-    "outcome_id": "TOP18-O01"
+    "outcome_id": "TOP18-O01",
+    "legacy_order": 2,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 3,
     "item_id": "THPT-G12-B06-P02",
-    "outcome_id": "TOP18-O01"
+    "outcome_id": "TOP18-O01",
+    "legacy_order": 3,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 4,
     "item_id": "THPT-G12-B06-W01",
-    "outcome_id": "TOP18-O01"
+    "outcome_id": "TOP18-O01",
+    "legacy_order": 4,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 5,
     "item_id": "THPT-TOP18-P01",
-    "outcome_id": "TOP18-O01"
+    "outcome_id": "TOP18-O01",
+    "legacy_order": 5,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 6,
     "item_id": "THPT-G12-B06-C02",
-    "outcome_id": "TOP18-O02"
+    "outcome_id": "TOP18-O02",
+    "legacy_order": 6,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 7,
     "item_id": "THPT-G12-B06-P03",
-    "outcome_id": "TOP18-O02"
+    "outcome_id": "TOP18-O02",
+    "legacy_order": 7,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 8,
     "item_id": "THPT-G12-B06-P04",
-    "outcome_id": "TOP18-O02"
+    "outcome_id": "TOP18-O02",
+    "legacy_order": 8,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 9,
     "item_id": "THPT-G12-B06-W02",
-    "outcome_id": "TOP18-O02"
+    "outcome_id": "TOP18-O02",
+    "legacy_order": 9,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 10,
     "item_id": "THPT-TOP18-P02",
-    "outcome_id": "TOP18-O02"
+    "outcome_id": "TOP18-O02",
+    "legacy_order": 10,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 11,
     "item_id": "THPT-G12-B06-C03",
-    "outcome_id": "TOP18-O03"
+    "outcome_id": "TOP18-O03",
+    "legacy_order": 11,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 12,
     "item_id": "THPT-G12-B06-P05",
-    "outcome_id": "TOP18-O03"
+    "outcome_id": "TOP18-O03",
+    "legacy_order": 12,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 13,
     "item_id": "THPT-G12-B06-P06",
-    "outcome_id": "TOP18-O03"
+    "outcome_id": "TOP18-O03",
+    "legacy_order": 13,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 14,
     "item_id": "THPT-G12-B06-W03",
-    "outcome_id": "TOP18-O03"
+    "outcome_id": "TOP18-O03",
+    "legacy_order": 14,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 15,
     "item_id": "THPT-TOP18-P03",
-    "outcome_id": "TOP18-O03"
+    "outcome_id": "TOP18-O03",
+    "legacy_order": 15,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 16,
     "item_id": "THPT-G12-B06-C04",
-    "outcome_id": "TOP18-O04"
+    "outcome_id": "TOP18-O04",
+    "legacy_order": 16,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 17,
     "item_id": "THPT-G12-B06-P07",
-    "outcome_id": "TOP18-O04"
+    "outcome_id": "TOP18-O04",
+    "legacy_order": 17,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 18,
     "item_id": "THPT-G12-B06-P08",
-    "outcome_id": "TOP18-O04"
+    "outcome_id": "TOP18-O04",
+    "legacy_order": 18,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 19,
     "item_id": "THPT-G12-B06-W04",
-    "outcome_id": "TOP18-O04"
+    "outcome_id": "TOP18-O04",
+    "legacy_order": 19,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 20,
     "item_id": "THPT-TOP18-P04",
-    "outcome_id": "TOP18-O04"
+    "outcome_id": "TOP18-O04",
+    "legacy_order": 20,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 21,
     "item_id": "THPT-G12-B06-C05",
-    "outcome_id": "TOP18-O05"
+    "outcome_id": "TOP18-O05",
+    "legacy_order": 21,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 22,
     "item_id": "THPT-G12-B06-P09",
-    "outcome_id": "TOP18-O05"
+    "outcome_id": "TOP18-O05",
+    "legacy_order": 22,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 23,
     "item_id": "THPT-G12-B06-P10",
-    "outcome_id": "TOP18-O05"
+    "outcome_id": "TOP18-O05",
+    "legacy_order": 23,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 24,
     "item_id": "THPT-G12-B06-W05",
-    "outcome_id": "TOP18-O05"
+    "outcome_id": "TOP18-O05",
+    "legacy_order": 24,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 25,
     "item_id": "THPT-TOP18-P05",
-    "outcome_id": "TOP18-O05"
+    "outcome_id": "TOP18-O05",
+    "legacy_order": 25,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 26,
     "item_id": "THPT-G12-B06-C06",
-    "outcome_id": "TOP18-O06"
+    "outcome_id": "TOP18-O06",
+    "legacy_order": 26,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 27,
     "item_id": "THPT-G12-B06-P11",
-    "outcome_id": "TOP18-O06"
+    "outcome_id": "TOP18-O06",
+    "legacy_order": 27,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 28,
     "item_id": "THPT-G12-B06-P12",
-    "outcome_id": "TOP18-O06"
+    "outcome_id": "TOP18-O06",
+    "legacy_order": 28,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 29,
     "item_id": "THPT-G12-B06-W06",
-    "outcome_id": "TOP18-O06"
+    "outcome_id": "TOP18-O06",
+    "legacy_order": 29,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 30,
     "item_id": "THPT-TOP18-P06",
-    "outcome_id": "TOP18-O06"
+    "outcome_id": "TOP18-O06",
+    "legacy_order": 30,
+    "group_id": "TOP18-G1",
+    "group_title": "Vectơ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 31,
     "item_id": "THPT-G12-B07-C01",
-    "outcome_id": "TOP18-O07"
+    "outcome_id": "TOP18-O07",
+    "legacy_order": 31,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 32,
     "item_id": "THPT-G12-B07-P01",
-    "outcome_id": "TOP18-O07"
+    "outcome_id": "TOP18-O07",
+    "legacy_order": 32,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 33,
     "item_id": "THPT-G12-B07-P02",
-    "outcome_id": "TOP18-O07"
+    "outcome_id": "TOP18-O07",
+    "legacy_order": 33,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 34,
     "item_id": "THPT-G12-B07-W01",
-    "outcome_id": "TOP18-O07"
+    "outcome_id": "TOP18-O07",
+    "legacy_order": 34,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 35,
     "item_id": "THPT-TOP18-P07",
-    "outcome_id": "TOP18-O07"
+    "outcome_id": "TOP18-O07",
+    "legacy_order": 35,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 36,
     "item_id": "THPT-G12-B07-C02",
-    "outcome_id": "TOP18-O08"
+    "outcome_id": "TOP18-O08",
+    "legacy_order": 36,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 37,
     "item_id": "THPT-G12-B07-P03",
-    "outcome_id": "TOP18-O08"
+    "outcome_id": "TOP18-O08",
+    "legacy_order": 37,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 38,
     "item_id": "THPT-G12-B07-P04",
-    "outcome_id": "TOP18-O08"
+    "outcome_id": "TOP18-O08",
+    "legacy_order": 38,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 39,
     "item_id": "THPT-G12-B07-W02",
-    "outcome_id": "TOP18-O08"
+    "outcome_id": "TOP18-O08",
+    "legacy_order": 39,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 40,
     "item_id": "THPT-TOP18-P08",
-    "outcome_id": "TOP18-O08"
+    "outcome_id": "TOP18-O08",
+    "legacy_order": 40,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 41,
     "item_id": "THPT-G12-B07-C03",
-    "outcome_id": "TOP18-O09"
+    "outcome_id": "TOP18-O09",
+    "legacy_order": 41,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 42,
     "item_id": "THPT-G12-B07-P05",
-    "outcome_id": "TOP18-O09"
+    "outcome_id": "TOP18-O09",
+    "legacy_order": 42,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 43,
     "item_id": "THPT-G12-B07-P06",
-    "outcome_id": "TOP18-O09"
+    "outcome_id": "TOP18-O09",
+    "legacy_order": 43,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 44,
     "item_id": "THPT-G12-B07-W03",
-    "outcome_id": "TOP18-O09"
+    "outcome_id": "TOP18-O09",
+    "legacy_order": 44,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 45,
     "item_id": "THPT-TOP18-P09",
-    "outcome_id": "TOP18-O09"
+    "outcome_id": "TOP18-O09",
+    "legacy_order": 45,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 46,
     "item_id": "THPT-G12-B07-C04",
-    "outcome_id": "TOP18-O10"
+    "outcome_id": "TOP18-O10",
+    "legacy_order": 46,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 47,
     "item_id": "THPT-G12-B07-P07",
-    "outcome_id": "TOP18-O10"
+    "outcome_id": "TOP18-O10",
+    "legacy_order": 47,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 48,
     "item_id": "THPT-G12-B07-P08",
-    "outcome_id": "TOP18-O10"
+    "outcome_id": "TOP18-O10",
+    "legacy_order": 48,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 49,
     "item_id": "THPT-G12-B07-W04",
-    "outcome_id": "TOP18-O10"
+    "outcome_id": "TOP18-O10",
+    "legacy_order": 49,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 50,
     "item_id": "THPT-TOP18-P10",
-    "outcome_id": "TOP18-O10"
+    "outcome_id": "TOP18-O10",
+    "legacy_order": 50,
+    "group_id": "TOP18-G2",
+    "group_title": "Hệ tọa độ trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 51,
     "item_id": "THPT-G12-B08-C01",
-    "outcome_id": "TOP18-O11"
+    "outcome_id": "TOP18-O11",
+    "legacy_order": 51,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 52,
     "item_id": "THPT-G12-B08-P01",
-    "outcome_id": "TOP18-O11"
+    "outcome_id": "TOP18-O11",
+    "legacy_order": 52,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 53,
     "item_id": "THPT-G12-B08-P02",
-    "outcome_id": "TOP18-O11"
+    "outcome_id": "TOP18-O11",
+    "legacy_order": 53,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 54,
     "item_id": "THPT-G12-B08-W01",
-    "outcome_id": "TOP18-O11"
+    "outcome_id": "TOP18-O11",
+    "legacy_order": 54,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 55,
     "item_id": "THPT-TOP18-P11",
-    "outcome_id": "TOP18-O11"
+    "outcome_id": "TOP18-O11",
+    "legacy_order": 55,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 56,
     "item_id": "THPT-G12-B08-C02",
-    "outcome_id": "TOP18-O12"
+    "outcome_id": "TOP18-O12",
+    "legacy_order": 56,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 57,
     "item_id": "THPT-G12-B08-P03",
-    "outcome_id": "TOP18-O12"
+    "outcome_id": "TOP18-O12",
+    "legacy_order": 57,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 58,
     "item_id": "THPT-G12-B08-P04",
-    "outcome_id": "TOP18-O12"
+    "outcome_id": "TOP18-O12",
+    "legacy_order": 58,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 59,
     "item_id": "THPT-G12-B08-W02",
-    "outcome_id": "TOP18-O12"
+    "outcome_id": "TOP18-O12",
+    "legacy_order": 59,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 60,
     "item_id": "THPT-TOP18-P12",
-    "outcome_id": "TOP18-O12"
+    "outcome_id": "TOP18-O12",
+    "legacy_order": 60,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 61,
     "item_id": "THPT-G12-B08-C03",
-    "outcome_id": "TOP18-O13"
+    "outcome_id": "TOP18-O13",
+    "legacy_order": 61,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 62,
     "item_id": "THPT-G12-B08-P05",
-    "outcome_id": "TOP18-O13"
+    "outcome_id": "TOP18-O13",
+    "legacy_order": 62,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 63,
     "item_id": "THPT-G12-B08-P06",
-    "outcome_id": "TOP18-O13"
+    "outcome_id": "TOP18-O13",
+    "legacy_order": 63,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 64,
     "item_id": "THPT-G12-B08-W03",
-    "outcome_id": "TOP18-O13"
+    "outcome_id": "TOP18-O13",
+    "legacy_order": 64,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 65,
     "item_id": "THPT-TOP18-P13",
-    "outcome_id": "TOP18-O13"
+    "outcome_id": "TOP18-O13",
+    "legacy_order": 65,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 66,
     "item_id": "THPT-G12-B08-C04",
-    "outcome_id": "TOP18-O14"
+    "outcome_id": "TOP18-O14",
+    "legacy_order": 66,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 67,
     "item_id": "THPT-G12-B08-P07",
-    "outcome_id": "TOP18-O14"
+    "outcome_id": "TOP18-O14",
+    "legacy_order": 67,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 68,
     "item_id": "THPT-G12-B08-P08",
-    "outcome_id": "TOP18-O14"
+    "outcome_id": "TOP18-O14",
+    "legacy_order": 68,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 69,
     "item_id": "THPT-G12-B08-W04",
-    "outcome_id": "TOP18-O14"
+    "outcome_id": "TOP18-O14",
+    "legacy_order": 69,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 70,
     "item_id": "THPT-TOP18-P14",
-    "outcome_id": "TOP18-O14"
+    "outcome_id": "TOP18-O14",
+    "legacy_order": 70,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 71,
     "item_id": "THPT-G12-B08-C05",
-    "outcome_id": "TOP18-O15"
+    "outcome_id": "TOP18-O15",
+    "legacy_order": 71,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 72,
     "item_id": "THPT-G12-B08-P09",
-    "outcome_id": "TOP18-O15"
+    "outcome_id": "TOP18-O15",
+    "legacy_order": 72,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 73,
     "item_id": "THPT-G12-B08-P10",
-    "outcome_id": "TOP18-O15"
+    "outcome_id": "TOP18-O15",
+    "legacy_order": 73,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 74,
     "item_id": "THPT-G12-B08-W05",
-    "outcome_id": "TOP18-O15"
+    "outcome_id": "TOP18-O15",
+    "legacy_order": 74,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 75,
     "item_id": "THPT-TOP18-P15",
-    "outcome_id": "TOP18-O15"
+    "outcome_id": "TOP18-O15",
+    "legacy_order": 75,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 76,
     "item_id": "THPT-TOP18-W01",
-    "outcome_id": "TOP18-O15"
+    "outcome_id": "TOP18-O15",
+    "legacy_order": 76,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 77,
     "item_id": "THPT-G12-B08-C06",
-    "outcome_id": "TOP18-O16"
+    "outcome_id": "TOP18-O16",
+    "legacy_order": 77,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 78,
     "item_id": "THPT-G12-B08-P11",
-    "outcome_id": "TOP18-O16"
+    "outcome_id": "TOP18-O16",
+    "legacy_order": 78,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 79,
     "item_id": "THPT-G12-B08-P12",
-    "outcome_id": "TOP18-O16"
+    "outcome_id": "TOP18-O16",
+    "legacy_order": 79,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 80,
     "item_id": "THPT-G12-B08-W06",
-    "outcome_id": "TOP18-O16"
+    "outcome_id": "TOP18-O16",
+    "legacy_order": 80,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 81,
     "item_id": "THPT-TOP18-P16",
-    "outcome_id": "TOP18-O16"
+    "outcome_id": "TOP18-O16",
+    "legacy_order": 81,
+    "group_id": "TOP18-G3",
+    "group_title": "Biểu thức tọa độ của vectơ",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 82,
     "item_id": "THPT-G12-B14-C01",
-    "outcome_id": "TOP18-O17"
+    "outcome_id": "TOP18-O17",
+    "legacy_order": 82,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 83,
     "item_id": "THPT-G12-B14-P01",
-    "outcome_id": "TOP18-O17"
+    "outcome_id": "TOP18-O17",
+    "legacy_order": 83,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 84,
     "item_id": "THPT-G12-B14-A01",
-    "outcome_id": "TOP18-O17"
+    "outcome_id": "TOP18-O17",
+    "legacy_order": 84,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 85,
     "item_id": "THPT-G12-B14-W01",
-    "outcome_id": "TOP18-O17"
+    "outcome_id": "TOP18-O17",
+    "legacy_order": 85,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 86,
     "item_id": "THPT-TOP18-P17",
-    "outcome_id": "TOP18-O17"
+    "outcome_id": "TOP18-O17",
+    "legacy_order": 86,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 87,
     "item_id": "THPT-G12-B14-C02",
-    "outcome_id": "TOP18-O18"
+    "outcome_id": "TOP18-O18",
+    "legacy_order": 87,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 88,
     "item_id": "THPT-G12-B14-P02",
-    "outcome_id": "TOP18-O18"
+    "outcome_id": "TOP18-O18",
+    "legacy_order": 88,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 89,
     "item_id": "THPT-G12-B14-A02",
-    "outcome_id": "TOP18-O18"
+    "outcome_id": "TOP18-O18",
+    "legacy_order": 89,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 90,
     "item_id": "THPT-G12-B14-W02",
-    "outcome_id": "TOP18-O18"
+    "outcome_id": "TOP18-O18",
+    "legacy_order": 90,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 91,
     "item_id": "THPT-TOP18-P18",
-    "outcome_id": "TOP18-O18"
+    "outcome_id": "TOP18-O18",
+    "legacy_order": 91,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 92,
     "item_id": "THPT-G12-B14-C03",
-    "outcome_id": "TOP18-O19"
+    "outcome_id": "TOP18-O19",
+    "legacy_order": 92,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 93,
     "item_id": "THPT-G12-B14-P03",
-    "outcome_id": "TOP18-O19"
+    "outcome_id": "TOP18-O19",
+    "legacy_order": 93,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 94,
     "item_id": "THPT-G12-B14-A03",
-    "outcome_id": "TOP18-O19"
+    "outcome_id": "TOP18-O19",
+    "legacy_order": 94,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 95,
     "item_id": "THPT-G12-B14-W03",
-    "outcome_id": "TOP18-O19"
+    "outcome_id": "TOP18-O19",
+    "legacy_order": 95,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 96,
     "item_id": "THPT-TOP18-P19",
-    "outcome_id": "TOP18-O19"
+    "outcome_id": "TOP18-O19",
+    "legacy_order": 96,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 97,
     "item_id": "THPT-TOP18-W02",
-    "outcome_id": "TOP18-O19"
+    "outcome_id": "TOP18-O19",
+    "legacy_order": 97,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 98,
     "item_id": "THPT-G12-B14-C04",
-    "outcome_id": "TOP18-O20"
+    "outcome_id": "TOP18-O20",
+    "legacy_order": 98,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 99,
     "item_id": "THPT-G12-B14-P04",
-    "outcome_id": "TOP18-O20"
+    "outcome_id": "TOP18-O20",
+    "legacy_order": 99,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 100,
     "item_id": "THPT-G12-B14-A04",
-    "outcome_id": "TOP18-O20"
+    "outcome_id": "TOP18-O20",
+    "legacy_order": 100,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 101,
     "item_id": "THPT-G12-B14-W04",
-    "outcome_id": "TOP18-O20"
+    "outcome_id": "TOP18-O20",
+    "legacy_order": 101,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 102,
     "item_id": "THPT-TOP18-P20",
-    "outcome_id": "TOP18-O20"
+    "outcome_id": "TOP18-O20",
+    "legacy_order": 102,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 103,
     "item_id": "THPT-G12-B14-C05",
-    "outcome_id": "TOP18-O21"
+    "outcome_id": "TOP18-O21",
+    "legacy_order": 103,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 104,
     "item_id": "THPT-G12-B14-P05",
-    "outcome_id": "TOP18-O21"
+    "outcome_id": "TOP18-O21",
+    "legacy_order": 104,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 105,
     "item_id": "THPT-G12-B14-A05",
-    "outcome_id": "TOP18-O21"
+    "outcome_id": "TOP18-O21",
+    "legacy_order": 105,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 106,
     "item_id": "THPT-G12-B14-W05",
-    "outcome_id": "TOP18-O21"
+    "outcome_id": "TOP18-O21",
+    "legacy_order": 106,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 107,
     "item_id": "THPT-TOP18-P21",
-    "outcome_id": "TOP18-O21"
+    "outcome_id": "TOP18-O21",
+    "legacy_order": 107,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 108,
     "item_id": "THPT-G12-B14-C06",
-    "outcome_id": "TOP18-O22"
+    "outcome_id": "TOP18-O22",
+    "legacy_order": 108,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 109,
     "item_id": "THPT-G12-B14-P06",
-    "outcome_id": "TOP18-O22"
+    "outcome_id": "TOP18-O22",
+    "legacy_order": 109,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 110,
     "item_id": "THPT-G12-B14-A06",
-    "outcome_id": "TOP18-O22"
+    "outcome_id": "TOP18-O22",
+    "legacy_order": 110,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 111,
     "item_id": "THPT-G12-B14-W06",
-    "outcome_id": "TOP18-O22"
+    "outcome_id": "TOP18-O22",
+    "legacy_order": 111,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 112,
     "item_id": "THPT-TOP18-P22",
-    "outcome_id": "TOP18-O22"
+    "outcome_id": "TOP18-O22",
+    "legacy_order": 112,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 113,
     "item_id": "THPT-TOP18-W06",
-    "outcome_id": "TOP18-O22"
+    "outcome_id": "TOP18-O22",
+    "legacy_order": 113,
+    "group_id": "TOP18-G4",
+    "group_title": "Phương trình mặt phẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 114,
     "item_id": "THPT-G12-B15-C01",
-    "outcome_id": "TOP18-O24"
+    "outcome_id": "TOP18-O24",
+    "legacy_order": 114,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 115,
     "item_id": "THPT-G12-B15-P01",
-    "outcome_id": "TOP18-O24"
+    "outcome_id": "TOP18-O24",
+    "legacy_order": 115,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 116,
     "item_id": "THPT-G12-B15-A01",
-    "outcome_id": "TOP18-O24"
+    "outcome_id": "TOP18-O24",
+    "legacy_order": 116,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 117,
     "item_id": "THPT-G12-B15-W01",
-    "outcome_id": "TOP18-O24"
+    "outcome_id": "TOP18-O24",
+    "legacy_order": 117,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 118,
     "item_id": "THPT-TOP18-P24",
-    "outcome_id": "TOP18-O24"
+    "outcome_id": "TOP18-O24",
+    "legacy_order": 118,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 119,
     "item_id": "THPT-G12-B15-C02",
-    "outcome_id": "TOP18-O25"
+    "outcome_id": "TOP18-O25",
+    "legacy_order": 119,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 120,
     "item_id": "THPT-G12-B15-P02",
-    "outcome_id": "TOP18-O25"
+    "outcome_id": "TOP18-O25",
+    "legacy_order": 120,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 121,
     "item_id": "THPT-G12-B15-A02",
-    "outcome_id": "TOP18-O25"
+    "outcome_id": "TOP18-O25",
+    "legacy_order": 121,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 122,
     "item_id": "THPT-G12-B15-W02",
-    "outcome_id": "TOP18-O25"
+    "outcome_id": "TOP18-O25",
+    "legacy_order": 122,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 123,
     "item_id": "THPT-TOP18-P25",
-    "outcome_id": "TOP18-O25"
+    "outcome_id": "TOP18-O25",
+    "legacy_order": 123,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 124,
     "item_id": "THPT-G12-B15-C03",
-    "outcome_id": "TOP18-O26"
+    "outcome_id": "TOP18-O26",
+    "legacy_order": 124,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 125,
     "item_id": "THPT-G12-B15-P03",
-    "outcome_id": "TOP18-O26"
+    "outcome_id": "TOP18-O26",
+    "legacy_order": 125,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 126,
     "item_id": "THPT-G12-B15-A03",
-    "outcome_id": "TOP18-O26"
+    "outcome_id": "TOP18-O26",
+    "legacy_order": 126,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 127,
     "item_id": "THPT-G12-B15-W03",
-    "outcome_id": "TOP18-O26"
+    "outcome_id": "TOP18-O26",
+    "legacy_order": 127,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 128,
     "item_id": "THPT-TOP18-P26",
-    "outcome_id": "TOP18-O26"
+    "outcome_id": "TOP18-O26",
+    "legacy_order": 128,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 129,
     "item_id": "THPT-G12-B15-C04",
-    "outcome_id": "TOP18-O27"
+    "outcome_id": "TOP18-O27",
+    "legacy_order": 129,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 130,
     "item_id": "THPT-G12-B15-P04",
-    "outcome_id": "TOP18-O27"
+    "outcome_id": "TOP18-O27",
+    "legacy_order": 130,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 131,
     "item_id": "THPT-G12-B15-A04",
-    "outcome_id": "TOP18-O27"
+    "outcome_id": "TOP18-O27",
+    "legacy_order": 131,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 132,
     "item_id": "THPT-G12-B15-W04",
-    "outcome_id": "TOP18-O27"
+    "outcome_id": "TOP18-O27",
+    "legacy_order": 132,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 133,
     "item_id": "THPT-TOP18-P27",
-    "outcome_id": "TOP18-O27"
+    "outcome_id": "TOP18-O27",
+    "legacy_order": 133,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 134,
     "item_id": "THPT-G12-B15-C05",
-    "outcome_id": "TOP18-O28"
+    "outcome_id": "TOP18-O28",
+    "legacy_order": 134,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 135,
     "item_id": "THPT-G12-B15-P05",
-    "outcome_id": "TOP18-O28"
+    "outcome_id": "TOP18-O28",
+    "legacy_order": 135,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 136,
     "item_id": "THPT-G12-B15-A05",
-    "outcome_id": "TOP18-O28"
+    "outcome_id": "TOP18-O28",
+    "legacy_order": 136,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 137,
     "item_id": "THPT-G12-B15-W05",
-    "outcome_id": "TOP18-O28"
+    "outcome_id": "TOP18-O28",
+    "legacy_order": 137,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 138,
     "item_id": "THPT-TOP18-P28",
-    "outcome_id": "TOP18-O28"
+    "outcome_id": "TOP18-O28",
+    "legacy_order": 138,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 139,
     "item_id": "THPT-G12-B15-C06",
-    "outcome_id": "TOP18-O29"
+    "outcome_id": "TOP18-O29",
+    "legacy_order": 139,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 140,
     "item_id": "THPT-G12-B15-P06",
-    "outcome_id": "TOP18-O29"
+    "outcome_id": "TOP18-O29",
+    "legacy_order": 140,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 141,
     "item_id": "THPT-G12-B15-A06",
-    "outcome_id": "TOP18-O29"
+    "outcome_id": "TOP18-O29",
+    "legacy_order": 141,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 142,
     "item_id": "THPT-G12-B15-W06",
-    "outcome_id": "TOP18-O29"
+    "outcome_id": "TOP18-O29",
+    "legacy_order": 142,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 143,
     "item_id": "THPT-TOP18-P29",
-    "outcome_id": "TOP18-O29"
+    "outcome_id": "TOP18-O29",
+    "legacy_order": 143,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 144,
     "item_id": "THPT-G12-B15-C07",
-    "outcome_id": "TOP18-O30"
+    "outcome_id": "TOP18-O30",
+    "legacy_order": 144,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 145,
     "item_id": "THPT-G12-B15-P07",
-    "outcome_id": "TOP18-O30"
+    "outcome_id": "TOP18-O30",
+    "legacy_order": 145,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 146,
     "item_id": "THPT-G12-B15-A07",
-    "outcome_id": "TOP18-O30"
+    "outcome_id": "TOP18-O30",
+    "legacy_order": 146,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 147,
     "item_id": "THPT-G12-B15-W07",
-    "outcome_id": "TOP18-O30"
+    "outcome_id": "TOP18-O30",
+    "legacy_order": 147,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 148,
     "item_id": "THPT-TOP18-P30",
-    "outcome_id": "TOP18-O30"
+    "outcome_id": "TOP18-O30",
+    "legacy_order": 148,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 149,
     "item_id": "THPT-TOP18-W03",
-    "outcome_id": "TOP18-O30"
+    "outcome_id": "TOP18-O30",
+    "legacy_order": 149,
+    "group_id": "TOP18-G5",
+    "group_title": "Phương trình đường thẳng",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 150,
     "item_id": "THPT-G12-B16-C01",
-    "outcome_id": "TOP18-O31"
+    "outcome_id": "TOP18-O31",
+    "legacy_order": 150,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 151,
     "item_id": "THPT-G12-B16-P01",
-    "outcome_id": "TOP18-O31"
+    "outcome_id": "TOP18-O31",
+    "legacy_order": 151,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 152,
     "item_id": "THPT-G12-B16-A01",
-    "outcome_id": "TOP18-O31"
+    "outcome_id": "TOP18-O31",
+    "legacy_order": 152,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 153,
     "item_id": "THPT-G12-B16-W01",
-    "outcome_id": "TOP18-O31"
+    "outcome_id": "TOP18-O31",
+    "legacy_order": 153,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 154,
     "item_id": "THPT-TOP18-P31",
-    "outcome_id": "TOP18-O31"
+    "outcome_id": "TOP18-O31",
+    "legacy_order": 154,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 155,
     "item_id": "THPT-G12-B16-C02",
-    "outcome_id": "TOP18-O32"
+    "outcome_id": "TOP18-O32",
+    "legacy_order": 155,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 156,
     "item_id": "THPT-G12-B16-P02",
-    "outcome_id": "TOP18-O32"
+    "outcome_id": "TOP18-O32",
+    "legacy_order": 156,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 157,
     "item_id": "THPT-G12-B16-A02",
-    "outcome_id": "TOP18-O32"
+    "outcome_id": "TOP18-O32",
+    "legacy_order": 157,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 158,
     "item_id": "THPT-G12-B16-W02",
-    "outcome_id": "TOP18-O32"
+    "outcome_id": "TOP18-O32",
+    "legacy_order": 158,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 159,
     "item_id": "THPT-TOP18-P32",
-    "outcome_id": "TOP18-O32"
+    "outcome_id": "TOP18-O32",
+    "legacy_order": 159,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 160,
     "item_id": "THPT-TOP18-W04",
-    "outcome_id": "TOP18-O32"
+    "outcome_id": "TOP18-O32",
+    "legacy_order": 160,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 161,
     "item_id": "THPT-G12-B16-C03",
-    "outcome_id": "TOP18-O33"
+    "outcome_id": "TOP18-O33",
+    "legacy_order": 161,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 162,
     "item_id": "THPT-G12-B16-P03",
-    "outcome_id": "TOP18-O33"
+    "outcome_id": "TOP18-O33",
+    "legacy_order": 162,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 163,
     "item_id": "THPT-G12-B16-A03",
-    "outcome_id": "TOP18-O33"
+    "outcome_id": "TOP18-O33",
+    "legacy_order": 163,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 164,
     "item_id": "THPT-G12-B16-W03",
-    "outcome_id": "TOP18-O33"
+    "outcome_id": "TOP18-O33",
+    "legacy_order": 164,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 165,
     "item_id": "THPT-TOP18-P33",
-    "outcome_id": "TOP18-O33"
+    "outcome_id": "TOP18-O33",
+    "legacy_order": 165,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 166,
     "item_id": "THPT-G12-B16-C04",
-    "outcome_id": "TOP18-O34"
+    "outcome_id": "TOP18-O34",
+    "legacy_order": 166,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 167,
     "item_id": "THPT-G12-B16-P04",
-    "outcome_id": "TOP18-O34"
+    "outcome_id": "TOP18-O34",
+    "legacy_order": 167,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 168,
     "item_id": "THPT-G12-B16-A04",
-    "outcome_id": "TOP18-O34"
+    "outcome_id": "TOP18-O34",
+    "legacy_order": 168,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 169,
     "item_id": "THPT-G12-B16-W04",
-    "outcome_id": "TOP18-O34"
+    "outcome_id": "TOP18-O34",
+    "legacy_order": 169,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 170,
     "item_id": "THPT-TOP18-P34",
-    "outcome_id": "TOP18-O34"
+    "outcome_id": "TOP18-O34",
+    "legacy_order": 170,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 171,
     "item_id": "THPT-G12-B16-C05",
-    "outcome_id": "TOP18-O35"
+    "outcome_id": "TOP18-O35",
+    "legacy_order": 171,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 172,
     "item_id": "THPT-G12-B16-P05",
-    "outcome_id": "TOP18-O35"
+    "outcome_id": "TOP18-O35",
+    "legacy_order": 172,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 173,
     "item_id": "THPT-G12-B16-A05",
-    "outcome_id": "TOP18-O35"
+    "outcome_id": "TOP18-O35",
+    "legacy_order": 173,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 174,
     "item_id": "THPT-G12-B16-W05",
-    "outcome_id": "TOP18-O35"
+    "outcome_id": "TOP18-O35",
+    "legacy_order": 174,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 175,
     "item_id": "THPT-TOP18-P35",
-    "outcome_id": "TOP18-O35"
+    "outcome_id": "TOP18-O35",
+    "legacy_order": 175,
+    "group_id": "TOP18-G6",
+    "group_title": "Góc trong không gian",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 176,
     "item_id": "THPT-G12-B17-C01",
-    "outcome_id": "TOP18-O36"
+    "outcome_id": "TOP18-O36",
+    "legacy_order": 176,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 177,
     "item_id": "THPT-G12-B17-P01",
-    "outcome_id": "TOP18-O36"
+    "outcome_id": "TOP18-O36",
+    "legacy_order": 177,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 178,
     "item_id": "THPT-G12-B17-A01",
-    "outcome_id": "TOP18-O36"
+    "outcome_id": "TOP18-O36",
+    "legacy_order": 178,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 179,
     "item_id": "THPT-G12-B17-W01",
-    "outcome_id": "TOP18-O36"
+    "outcome_id": "TOP18-O36",
+    "legacy_order": 179,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 180,
     "item_id": "THPT-TOP18-P36",
-    "outcome_id": "TOP18-O36"
+    "outcome_id": "TOP18-O36",
+    "legacy_order": 180,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 181,
     "item_id": "THPT-G12-B17-C02",
-    "outcome_id": "TOP18-O37"
+    "outcome_id": "TOP18-O37",
+    "legacy_order": 181,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 182,
     "item_id": "THPT-G12-B17-P02",
-    "outcome_id": "TOP18-O37"
+    "outcome_id": "TOP18-O37",
+    "legacy_order": 182,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 183,
     "item_id": "THPT-G12-B17-A02",
-    "outcome_id": "TOP18-O37"
+    "outcome_id": "TOP18-O37",
+    "legacy_order": 183,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 184,
     "item_id": "THPT-G12-B17-W02",
-    "outcome_id": "TOP18-O37"
+    "outcome_id": "TOP18-O37",
+    "legacy_order": 184,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 185,
     "item_id": "THPT-TOP18-P37",
-    "outcome_id": "TOP18-O37"
+    "outcome_id": "TOP18-O37",
+    "legacy_order": 185,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 186,
     "item_id": "THPT-G12-B17-C03",
-    "outcome_id": "TOP18-O38"
+    "outcome_id": "TOP18-O38",
+    "legacy_order": 186,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 187,
     "item_id": "THPT-G12-B17-P03",
-    "outcome_id": "TOP18-O38"
+    "outcome_id": "TOP18-O38",
+    "legacy_order": 187,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 188,
     "item_id": "THPT-G12-B17-A03",
-    "outcome_id": "TOP18-O40"
+    "outcome_id": "TOP18-O40",
+    "legacy_order": 188,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 189,
     "item_id": "THPT-G12-B17-W03",
-    "outcome_id": "TOP18-O38"
+    "outcome_id": "TOP18-O38",
+    "legacy_order": 189,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 190,
     "item_id": "THPT-TOP18-P38",
-    "outcome_id": "TOP18-O38"
+    "outcome_id": "TOP18-O38",
+    "legacy_order": 190,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 191,
     "item_id": "THPT-G12-B17-C04",
-    "outcome_id": "TOP18-O39"
+    "outcome_id": "TOP18-O39",
+    "legacy_order": 191,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 192,
     "item_id": "THPT-G12-B17-P04",
-    "outcome_id": "TOP18-O39"
+    "outcome_id": "TOP18-O39",
+    "legacy_order": 192,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 193,
     "item_id": "THPT-G12-B17-A04",
-    "outcome_id": "TOP18-O39"
+    "outcome_id": "TOP18-O39",
+    "legacy_order": 193,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 194,
     "item_id": "THPT-G12-B17-W04",
-    "outcome_id": "TOP18-O39"
+    "outcome_id": "TOP18-O39",
+    "legacy_order": 194,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 195,
     "item_id": "THPT-TOP18-P39",
-    "outcome_id": "TOP18-O39"
+    "outcome_id": "TOP18-O39",
+    "legacy_order": 195,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 196,
     "item_id": "THPT-TOP18-W05",
-    "outcome_id": "TOP18-O39"
+    "outcome_id": "TOP18-O39",
+    "legacy_order": 196,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 197,
     "item_id": "THPT-G12-B17-C05",
-    "outcome_id": "TOP18-O40"
+    "outcome_id": "TOP18-O40",
+    "legacy_order": 197,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 198,
     "item_id": "THPT-G12-B17-P05",
-    "outcome_id": "TOP18-O40"
+    "outcome_id": "TOP18-O40",
+    "legacy_order": 198,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 199,
     "item_id": "THPT-G12-B17-A05",
-    "outcome_id": "TOP18-O40"
+    "outcome_id": "TOP18-O40",
+    "legacy_order": 199,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 200,
     "item_id": "THPT-G12-B17-W05",
-    "outcome_id": "TOP18-O40"
+    "outcome_id": "TOP18-O40",
+    "legacy_order": 200,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 201,
     "item_id": "THPT-TOP18-P40",
-    "outcome_id": "TOP18-O40"
+    "outcome_id": "TOP18-O40",
+    "legacy_order": 201,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 202,
     "item_id": "THPT-TOP18-W07",
-    "outcome_id": "TOP18-O38"
+    "outcome_id": "TOP18-O38",
+    "legacy_order": 202,
+    "group_id": "TOP18-G7",
+    "group_title": "Mặt cầu",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
@@ -1419,7 +3035,15 @@
     "order": 203,
     "item_id": "THPT-G12-B14-C07",
     "optional": true,
-    "outcome_id": "TOP18-O23"
+    "outcome_id": "TOP18-O23",
+    "legacy_order": 203,
+    "group_id": "TOP18-G8",
+    "group_title": "Tích hợp mặt phẳng và mặt cầu (sau B17)",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
@@ -1427,7 +3051,15 @@
     "order": 204,
     "item_id": "THPT-G12-B14-P07",
     "optional": true,
-    "outcome_id": "TOP18-O23"
+    "outcome_id": "TOP18-O23",
+    "legacy_order": 204,
+    "group_id": "TOP18-G8",
+    "group_title": "Tích hợp mặt phẳng và mặt cầu (sau B17)",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
@@ -1435,7 +3067,15 @@
     "order": 205,
     "item_id": "THPT-G12-B14-A07",
     "optional": true,
-    "outcome_id": "TOP18-O23"
+    "outcome_id": "TOP18-O23",
+    "legacy_order": 205,
+    "group_id": "TOP18-G8",
+    "group_title": "Tích hợp mặt phẳng và mặt cầu (sau B17)",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
@@ -1443,85 +3083,643 @@
     "order": 206,
     "item_id": "THPT-G12-B14-W07",
     "optional": true,
-    "outcome_id": "TOP18-O23"
+    "outcome_id": "TOP18-O23",
+    "legacy_order": 206,
+    "group_id": "TOP18-G8",
+    "group_title": "Tích hợp mặt phẳng và mặt cầu (sau B17)",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_ATTEMPT",
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 207,
     "item_id": "THPT-TOP18-P23",
-    "outcome_id": "TOP18-O23"
+    "outcome_id": "TOP18-O23",
+    "legacy_order": 207,
+    "group_id": "TOP18-G8",
+    "group_title": "Tích hợp mặt phẳng và mặt cầu (sau B17)",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD18:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 1,
-    "item_id": "THPT-TOP18-P03"
+    "item_id": "THPT-TOP18-P01",
+    "outcome_id": "TOP18-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 2,
-    "item_id": "THPT-TOP18-P07"
+    "item_id": "THPT-TOP18-P02",
+    "outcome_id": "TOP18-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 3,
-    "item_id": "THPT-TOP18-P10"
+    "item_id": "THPT-TOP18-P03",
+    "outcome_id": "TOP18-O03",
+    "legacy_order": 1,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 4,
-    "item_id": "THPT-TOP18-P14"
+    "item_id": "THPT-TOP18-P04",
+    "outcome_id": "TOP18-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 5,
-    "item_id": "THPT-TOP18-P16"
+    "item_id": "THPT-TOP18-P05",
+    "outcome_id": "TOP18-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 6,
-    "item_id": "THPT-TOP18-P17"
+    "item_id": "THPT-TOP18-P06",
+    "outcome_id": "TOP18-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 7,
-    "item_id": "THPT-TOP18-P19"
+    "item_id": "THPT-TOP18-P07",
+    "outcome_id": "TOP18-O07",
+    "legacy_order": 2,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 8,
-    "item_id": "THPT-TOP18-P22"
+    "item_id": "THPT-TOP18-P08",
+    "outcome_id": "TOP18-O08",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 9,
-    "item_id": "THPT-TOP18-P24"
+    "item_id": "THPT-TOP18-P09",
+    "outcome_id": "TOP18-O09",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 10,
-    "item_id": "THPT-TOP18-P29"
+    "item_id": "THPT-TOP18-P10",
+    "outcome_id": "TOP18-O10",
+    "legacy_order": 3,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 11,
-    "item_id": "THPT-TOP18-P35"
+    "item_id": "THPT-TOP18-P11",
+    "outcome_id": "TOP18-O11",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 12,
-    "item_id": "THPT-TOP18-P40"
+    "item_id": "THPT-TOP18-P12",
+    "outcome_id": "TOP18-O12",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 13,
+    "item_id": "THPT-TOP18-P13",
+    "outcome_id": "TOP18-O13",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 14,
+    "item_id": "THPT-TOP18-P14",
+    "outcome_id": "TOP18-O14",
+    "legacy_order": 4,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 15,
+    "item_id": "THPT-TOP18-P15",
+    "outcome_id": "TOP18-O15",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 16,
+    "item_id": "THPT-TOP18-P16",
+    "outcome_id": "TOP18-O16",
+    "legacy_order": 5,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 17,
+    "item_id": "THPT-TOP18-P17",
+    "outcome_id": "TOP18-O17",
+    "legacy_order": 6,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 18,
+    "item_id": "THPT-TOP18-P18",
+    "outcome_id": "TOP18-O18",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 19,
+    "item_id": "THPT-TOP18-P19",
+    "outcome_id": "TOP18-O19",
+    "legacy_order": 7,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 20,
+    "item_id": "THPT-TOP18-P20",
+    "outcome_id": "TOP18-O20",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 21,
+    "item_id": "THPT-TOP18-P21",
+    "outcome_id": "TOP18-O21",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 22,
+    "item_id": "THPT-TOP18-P22",
+    "outcome_id": "TOP18-O22",
+    "legacy_order": 8,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 23,
+    "item_id": "THPT-TOP18-P24",
+    "outcome_id": "TOP18-O24",
+    "legacy_order": 9,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 24,
+    "item_id": "THPT-TOP18-P25",
+    "outcome_id": "TOP18-O25",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 25,
+    "item_id": "THPT-TOP18-P26",
+    "outcome_id": "TOP18-O26",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 26,
+    "item_id": "THPT-TOP18-P27",
+    "outcome_id": "TOP18-O27",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 27,
+    "item_id": "THPT-TOP18-P28",
+    "outcome_id": "TOP18-O28",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 28,
+    "item_id": "THPT-TOP18-P29",
+    "outcome_id": "TOP18-O29",
+    "legacy_order": 10,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 29,
+    "item_id": "THPT-TOP18-P30",
+    "outcome_id": "TOP18-O30",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 30,
+    "item_id": "THPT-TOP18-P31",
+    "outcome_id": "TOP18-O31",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 31,
+    "item_id": "THPT-TOP18-P32",
+    "outcome_id": "TOP18-O32",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 32,
+    "item_id": "THPT-TOP18-P33",
+    "outcome_id": "TOP18-O33",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 33,
+    "item_id": "THPT-TOP18-P34",
+    "outcome_id": "TOP18-O34",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 34,
+    "item_id": "THPT-TOP18-P35",
+    "outcome_id": "TOP18-O35",
+    "legacy_order": 11,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 35,
+    "item_id": "THPT-TOP18-P36",
+    "outcome_id": "TOP18-O36",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 36,
+    "item_id": "THPT-TOP18-P37",
+    "outcome_id": "TOP18-O37",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 37,
+    "item_id": "THPT-TOP18-P38",
+    "outcome_id": "TOP18-O38",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 38,
+    "item_id": "THPT-TOP18-P39",
+    "outcome_id": "TOP18-O39",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 39,
+    "item_id": "THPT-TOP18-P40",
+    "outcome_id": "TOP18-O40",
+    "legacy_order": 12,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "TOPIC:CD18:SELF_CHECK",
+    "role": "PUBLIC_REPLAY_ONLY",
+    "order": 40,
+    "item_id": "THPT-TOP18-P23",
+    "outcome_id": "TOP18-O23",
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   }
 ]
