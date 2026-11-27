@@ -918,7 +918,7 @@ PLACEMENT: YEAR_END_REVIEW_WRITTEN
 RUBRIC_TOTAL: 5
 ASSESSMENT: SELF_CHECK_NO_MASTERY
 
-**Đề:** Mẫu số liệu ghép nhóm có các lớp \([0;2)\), \([2;4)\), \([4;6)\), \([6;8)\) với tần số lần lượt 2, 6, 8, 4. Tính số trung bình, phương sai chia \(N\) và độ lệch chuẩn của mẫu ghép nhóm theo giá trị đại diện lớp.
+**Đề:** Mẫu số liệu ghép nhóm có các lớp \([0;2)\), \([2;4)\), \([4;6)\), \([6;8)\) với tần số lần lượt 2, 6, 8, 4. Tính số trung bình, phương sai chia \(N\) và độ lệch chuẩn của mẫu ghép nhóm theo giá trị đại diện lớp; giải thích giới hạn khi dùng các kết quả này để mô tả mẫu gốc.
 
 **WORKED_SOLUTION (SELF_REVEAL_AFTER_ATTEMPT):**
 
