@@ -1881,44 +1881,44 @@ Hai lực bằng nhau, mỗi lực 4 N, tạo góc 60°. Muốn vật cân bằn
 
 **ĐỀ CHO HỌC SINH (chỉ phần này hiển thị khi chưa tự hoàn thành):**
 
-Tại một vòng móc O, lực `F₁` có độ lớn **8 N**, hướng dọc chiều dương trục Ox; lực `F₂` có độ lớn **15 N**, hợp với Ox một góc **120°** đo ngược chiều kim đồng hồ. Một lực thứ ba `F₃` được bố trí để vòng móc cân bằng. Chọn hệ trục Oxy có các trục vuông góc và cùng đơn vị N.
+Tại một vòng móc O, lực \(\vec F_1\) có độ lớn **8 N**, hướng dọc chiều dương trục Ox; lực \(\vec F_2\) có độ lớn **15 N**, hợp với Ox một góc **120°** đo ngược chiều kim đồng hồ. Một lực thứ ba \(\vec F_3\) được bố trí để vòng móc cân bằng. Chọn hệ trục Oxy có các trục vuông góc và cùng đơn vị N.
 
-(a) Viết điều kiện cân bằng bằng **vectơ**, cho biết vì sao không được cộng `8+15` để có độ lớn hợp lực.  
-(b) Tính chính xác độ lớn `|F₁+F₂|` và `|F₃|`.  
+(a) Viết điều kiện cân bằng bằng **vectơ**, cho biết vì sao không được cộng \(8+15\) để có độ lớn hợp lực.  
+(b) Tính chính xác độ lớn \(\lVert\vec F_1+\vec F_2\rVert\) và \(\lVert\vec F_3\rVert\).  
 (c) Tìm tọa độ từng lực và mô tả **chiều** của F₃.  
-(d) Một bạn viết “F₃ có độ lớn 23 N và cùng chiều F₁+F₂”. Hãy nêu **hai lỗi độc lập** của lời giải này.
+(d) Một bạn viết “F₃ có độ lớn 23 N và cùng chiều \(\vec F_1+\vec F_2\)”. Hãy nêu **hai lỗi độc lập** của lời giải này.
 
 **HINT (chỉ mở sau khi đã tự làm, không hiển thị trước Final Submit nếu item đặt trong đánh giá):**
 <details><summary>Gợi ý từng bước</summary>
 
-1. Góc giữa F₁ và F₂ là 120°, không phải 90°. 2. Dùng `cos120°=−1/2`. 3. `F₃=−(F₁+F₂)`; tọa độ F₂ từ cos và sin góc đã cho.
+1. Góc giữa F₁ và F₂ là 120°, không phải 90°. 2. Dùng \(\cos120^\circ=-\frac12\). 3. \(\vec F_3=-(\vec F_1+\vec F_2)\); tọa độ F₂ từ cos và sin góc đã cho.
 
 </details>
 
 **ĐÁP ÁN VÀ LỜI GIẢI CHUẨN — Chỉ đối chiếu sau khi học sinh đã hoàn thành:**
 
-(a) Điều kiện đúng `F₁+F₂+F₃=0`. Tổng độ lớn bằng độ lớn hợp lực chỉ khi hai lực cùng chiều; ở đây góc 120° nên phép cộng 8+15 không có cơ sở.  
-(b) `|F₁+F₂|²=8²+15²+2·8·15·cos120°=64+225−120=169`. Do đó **`|F₃|=|F₁+F₂|=13 N`**.  
-(c) `F₁=(8;0)`, `F₂=(15cos120°;15sin120°)=(-15/2;15√3/2)` N; hợp lực `R=(1/2;15√3/2)` N, nên **`F₃=(-1/2;-15√3/2)` N**, hướng ngược R. Đối chiếu độ dài `sqrt((1/2)²+(15√3/2)²)=sqrt(676/4)=13`.  
+(a) Điều kiện đúng \(\vec F_1+\vec F_2+\vec F_3=\vec0\). Tổng độ lớn bằng độ lớn hợp lực chỉ khi hai lực cùng chiều; ở đây góc 120° nên phép cộng 8+15 không có cơ sở.  
+(b) \(\lVert\vec F_1+\vec F_2\rVert^2=8^2+15^2+2\cdot8\cdot15\cos120^\circ=169\). Do đó **\(\lVert\vec F_3\rVert=\lVert\vec F_1+\vec F_2\rVert=13\,\mathrm N\)**.  
+(c) \(\vec F_1=(8;0)\), \(\vec F_2=(15\cos120^\circ;15\sin120^\circ)=\left(-\frac{15}2;\frac{15\sqrt3}2\right)\) N; hợp lực \(\vec R=\left(\frac12;\frac{15\sqrt3}2\right)\) N, nên **\(\vec F_3=\left(-\frac12;-\frac{15\sqrt3}2\right)\) N**, hướng ngược \(\vec R\). Đối chiếu độ dài \(\sqrt{\left(\frac12\right)^2+\left(\frac{15\sqrt3}2\right)^2}=\sqrt{\frac{676}4}=13\).  
 (d) Lỗi 1: xem độ lớn của tổng vectơ bằng tổng độ lớn trong khi góc 120°. Lỗi 2: cho lực giữ cân bằng **cùng chiều** hợp lực, khiến tổng lực khác 0; thực tế phải ngược chiều.
 
 **RUBRIC 4 ĐIỂM (tự đối chiếu, không chấm Mastery):**
 
 | Bằng chứng cần có | Điểm |
 |---|---:|
-| Lập đúng `F₁+F₂+F₃=0` và giải thích vì sao không được cộng thẳng độ lớn | 1,0 |
+| Lập đúng \(\vec F_1+\vec F_2+\vec F_3=\vec0\) và giải thích vì sao không được cộng thẳng độ lớn | 1,0 |
 | Dùng đúng \(\cos120^\circ\); tính đúng độ lớn hợp lực và \(\lVert\vec F_3\rVert=13\,\mathrm N\) | 1,0 |
-| Tọa độ đúng F₁/F₂ và `F₃=(-1/2;-15√3/2)`; nêu đúng chiều | 1,0 |
+| Tọa độ đúng \(\vec F_1,\vec F_2\) và \(\vec F_3=\left(-\frac12;-\frac{15\sqrt3}2\right)\); nêu đúng chiều | 1,0 |
 | Chỉ ra **hai lỗi khác nhau** của đáp án 23 N cùng chiều, bằng lập luận vectơ | 1,0 |
 
-**Lỗi điển hình:** thay `cos120°` bằng `cos60°`; áp Pythagoras ở góc 120°; ra đúng 13 N nhưng quên mô tả chiều; viết độ lớn F₃ là `−13 N` (độ lớn không âm).  
+**Lỗi điển hình:** thay \(\cos120^\circ\) bằng \(\cos60^\circ\); áp Pythagoras ở góc 120°; ra đúng 13 N nhưng quên mô tả chiều; viết độ lớn F₃ là \(-13\,\mathrm N\) (độ lớn không âm).  
 **Đường khắc phục:** `HELP-G10-CHIV-FORCE-TR01` → xem lại B08 `THPT-G10-B08-P06` (góc vuông chỉ là trường hợp riêng), B11 `THPT-G10-B11-P01` (tích vô hướng góc 60°), D2 mới `EX-G10-B08-FORCE-TR01`. Không dùng câu đã mở lời giải làm kiểm tra độc lập.
 
 #### D6 — `HELP-G10-CHIV-FORCE-TR01`
-1. **Nhận diện:** em đã cộng `8+15`, dùng Pythagoras ở góc 120°, hay lấy F₃ cùng chiều hợp lực?  
+1. **Nhận diện:** em đã cộng \(8+15\), dùng Pythagoras ở góc 120°, hay lấy F₃ cùng chiều hợp lực?  
 2. **Chẩn đoán:** vẽ lại hai vectơ xuất phát O và đánh dấu góc **120°**; thử hướng F₃ xem ba mũi tên có khép thành đường gấp khúc không.  
-3. **Lấp nền:** B08 quy tắc hình bình hành và vectơ đối; B11 `u·v=|u||v|cosθ`.  
-4. **Tự sửa:** tính `R²` trước, kiểm `|R|≤23`, rồi đặt `F₃=−R`; kiểm tổng thành phần Ox/Oy bằng 0.  
+3. **Lấp nền:** B08 quy tắc hình bình hành và vectơ đối; B11 \(\vec u\cdot\vec v=\lVert\vec u\rVert\lVert\vec v\rVert\cos\theta\).  
+4. **Tự sửa:** tính \(\lVert\vec R\rVert^2\) trước, kiểm \(\lVert\vec R\rVert\le23\), rồi đặt \(\vec F_3=-\vec R\); kiểm tổng thành phần Ox/Oy bằng 0.  
 5. **Luyện lại đúng nguồn:** B08-P06 → B11-P01 → D2 mới; nếu đã xem đáp án D4, **không** tái dùng D4 làm chứng cứ RD1.
 
 ## 3. Mô-đun B — Ca nô, vận tốc tương đối và điều kiện cập bờ
