@@ -268,7 +268,7 @@ item_id: THPT-TOP06-W03
 outcome_id: TOP06-O14
 role: TOPIC_WRITTEN
 written_role: DEEP_ANCHOR (label only)
-content_version: 1
+content_version: 2
 problem_family_id: TOP06-COS2X_SINX
 difficulty_band: TRANSFER
 **Đề bài:** Giải \(\cos(2x)=1-\sin x\) trên \([0;2\pi)\). Đặt \(t=\sin x\), tìm miền của t, giải phương trình đại số và lọc đủ nghiệm, đặc biệt tại hai đầu mút.
