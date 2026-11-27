@@ -1390,7 +1390,7 @@ Khi một vectơ bằng $\vec0$, tích vô hướng **bằng 0 theo quy ước**
 
 **Tách biệt hệ quả đánh giá:** Written là tài nguyên tự luận chung có lời giải, rubric một bản; tự đối chiếu không ghi Skill Mastery. Một item `-ANCHOR` là nhãn kiểm tra sâu, không sinh bank hoặc item thứ hai. Ba tự luận dưới đây chưa phải nội dung Readiness giữ kín.
 
-### `THPT-G10-CHIV-W09` · B09 | `WRITTEN` | `G10-B09-MIDPOINT_CENTROID` | `APPLICATION` | `content_version=1`
+### `THPT-G10-CHIV-W09` · B09 | `WRITTEN` | `G10-B09-MIDPOINT_CENTROID` | `APPLICATION` | `content_version=2`
 **Đề:** Cho đoạn thẳng \(AB=12\) cm và điểm \(M\) nằm giữa \(A,B\) sao cho \(AM:MB=1:2\). a) Tính \(AM,MB\). b) Biểu thị \(\overrightarrow{AM},\overrightarrow{BM}\) theo \(\overrightarrow{AB}\). c) Chứng minh \(\overrightarrow{AM}+\overrightarrow{BM}=\vec0\) là **sai**, rồi viết đúng biểu thức bằng \(\vec0\) trong trường hợp \(M\) ở trung điểm (không phải điểm đang cho).  
 **Đáp án/kết quả cần đạt:** a) AM=4 cm, MB=8 cm. b) \(\overrightarrow{AM}=\tfrac13\overrightarrow{AB}\); \(\overrightarrow{BM}=-\tfrac23\overrightarrow{AB}\). c) Tổng đang xét \(=-\tfrac13\overrightarrow{AB}\ne\vec0\) vì AB>0; nếu M là trung điểm thì \(\overrightarrow{AM}+\overrightarrow{BM}=\vec0\), tương đương \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\).  
 **Gợi ý tự học:** Tỉ số 1:2 chia AB thành 3 phần; hướng BM ngược AB.  
@@ -1403,7 +1403,7 @@ Khi một vectơ bằng $\vec0$, tích vô hướng **bằng 0 theo quy ước**
 - 1 điểm — Nêu đúng công thức trung điểm với hai vectơ AM, BM hoặc biểu thức tương đương từ M.
 **Tự kiểm:** Bài tự luận là formative public; không ghi điểm chính thức hoặc bằng chứng thành thạo khi học sinh tự chấm.
 
-### `THPT-G10-CHIV-W10` · B10 | `WRITTEN` | `G10-B10-MIDPOINT_CENTROID` | `APPLICATION` | `content_version=1`
+### `THPT-G10-CHIV-W10` · B10 | `WRITTEN` | `G10-B10-MIDPOINT_CENTROID` | `APPLICATION` | `content_version=2`
 **Đề:** Cho tam giác \(A(-2;1), B(4;5), C(1;-3)\). a) Tính \(\overrightarrow{AB}\) và \(AB\). b) Tìm trung điểm M của AB. c) Tìm trọng tâm G và kiểm tra bằng tổng các vectơ \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}\).  
 **Đáp án/kết quả cần đạt:** a) \(\overrightarrow{AB}=(6;4)\), \(AB=\sqrt{52}=2\sqrt{13}\). b) \(M(1;3)\). c) \(G(1;1)\) và ba vectơ \(\overrightarrow{GA}=(-3;0),\ \overrightarrow{GB}=(3;4),\ \overrightarrow{GC}=(0;-4)\) có tổng bằng \((0;0)\).  
 **Gợi ý tự học:** Dùng B−A, trung bình 2 tọa độ và trung bình 3 tọa độ.  
@@ -1415,7 +1415,7 @@ Khi một vectơ bằng $\vec0$, tích vô hướng **bằng 0 theo quy ước**
 - 1 điểm — Kiểm đúng \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\).
 **Tự kiểm:** Bài tự luận là formative public; không ghi điểm chính thức hoặc bằng chứng thành thạo khi học sinh tự chấm.
 
-### `THPT-G10-CHIV-W11-ANCHOR` · B11 | `WRITTEN_ANCHOR` | `G10-B11-APPLICATION` | `APPLICATION` | `content_version=1`
+### `THPT-G10-CHIV-W11-ANCHOR` · B11 | `WRITTEN_ANCHOR` | `G10-B11-APPLICATION` | `APPLICATION` | `content_version=2`
 **Đề:** Một lực không đổi trên mặt phẳng có thành phần \(\vec F=(8;6)\) N. Vật dịch chuyển \(\vec s=(3;4)\) m. a) Tính độ lớn lực và độ dời. b) Tính công \(W\). c) Tính \(\cos\theta\) giữa lực và độ dời, giải thích dấu của công.  
 **Đáp án/kết quả cần đạt:** a) \(\lVert\vec F\rVert=10\) N và \(\lVert\vec s\rVert=5\) m. b) \(W=8\cdot3+6\cdot4=48\) J. c) \(\cos\theta=\frac{48}{10\cdot5}=\frac{24}{25}>0\), \(\theta\) nhọn nên công dương.  
 **Gợi ý tự học:** Nhớ \(W=\vec F\cdot\vec s\) là tích vô hướng, không phải lúc nào là tích hai độ lớn.  
