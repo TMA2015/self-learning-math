@@ -5200,32 +5200,71 @@
   {
     "item_id": "THPT-TOP20-W01",
     "source": {
-      "blob": "b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9",
-      "heading_id": "THPT-TOP20-W01"
+      "blob": "d6c34cdf81594ec9d3ce3275ac3d736444aa710c",
+      "heading_id": "THPT-TOP20-W01",
+      "previous_source_blob": "b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9",
+      "path": "prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md",
+      "source_commit": "6e6b89ff37f9493bef2fa951ea094110a1c7e28c",
+      "revision_scope": "CURRENT_CANONICAL_WRITTEN_MATH_RUBRIC_CHECKED_UNCHANGED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B27-COMPLEMENT_PROBABILITY",
+      "COMBINATION"
+    ],
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP20-W02",
     "source": {
-      "blob": "b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9",
-      "heading_id": "THPT-TOP20-W02"
+      "blob": "d6c34cdf81594ec9d3ce3275ac3d736444aa710c",
+      "heading_id": "THPT-TOP20-W02",
+      "previous_source_blob": "b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9",
+      "path": "prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md",
+      "source_commit": "6e6b89ff37f9493bef2fa951ea094110a1c7e28c",
+      "revision_scope": "CURRENT_CANONICAL_WRITTEN_MATH_RUBRIC_CHECKED_UNCHANGED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-B28-UNION",
+      "G11-B28-INTERSECTION",
+      "G11-B29-ADDITION_OVERLAP",
+      "G11-B30-VERIFY_INDEPENDENCE"
+    ],
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP20-W03",
     "source": {
-      "blob": "b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9",
-      "heading_id": "THPT-TOP20-W03"
+      "blob": "d6c34cdf81594ec9d3ce3275ac3d736444aa710c",
+      "heading_id": "THPT-TOP20-W03",
+      "previous_source_blob": "b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9",
+      "path": "prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md",
+      "source_commit": "6e6b89ff37f9493bef2fa951ea094110a1c7e28c",
+      "revision_scope": "CURRENT_CANONICAL_WRITTEN_MATH_RUBRIC_CHECKED_UNCHANGED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G11-CHVIII-INTEGRATED",
+      "G11-B30-MULTIPLY_INDEPENDENT",
+      "G10-B26-COMPLEMENT"
+    ],
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B18-W01",
