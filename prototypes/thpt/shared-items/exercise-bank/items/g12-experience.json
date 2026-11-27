@@ -1,20 +1,26 @@
 [
   {
     "item_id": "THPT-G12-EXP01-C01",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Đạo hàm của x³−2x²+5x+7 bằng gì?",
-    "answer_key": "3x²−4x+5.",
-    "worked_solution": "3x²−4x+5, bất kể C=7.",
+    "content_version": "G12-EXP-XG6-20261127-01-C01",
+    "stem": "Tính đạo hàm của \\(x^3-2x^2+5x+7\\).",
+    "answer_key": "\\(3x^2-4x+5\\)",
+    "worked_solution": "\\((x^3-2x^2+5x+7)'=3x^2-4x+5\\). Hằng số 7 có đạo hàm bằng 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Lấy đạo hàm từng số hạng, chú ý hằng số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -26,24 +32,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(3x^2-4x+12\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x^2-4x+5\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(3x^2-4x+5\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(3x^2-2x+5\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-P01",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trên ℝ, phần mềm CAS cho một nguyên hàm F(x)=x³−2x²+5x của f(x)=3x²−4x+5. Vì sao khi viết họ nguyên hàm phải bổ sung +C?",
-    "answer_key": "F(x)+C=x³−2x²+5x+C, C∈ℝ; các hàm này cùng đạo hàm.",
-    "worked_solution": "CAS cho một nguyên hàm F. Trên ℝ, mọi nguyên hàm của f khác F một hằng số C; (F+C)′=F′=3x²−4x+5. Vì vậy cần thêm +C để biểu diễn cả họ nguyên hàm.",
+    "content_version": "G12-EXP-XG6-20261127-01-P01",
+    "stem": "Trên \\(\\mathbb R\\), CAS cho một nguyên hàm \\(F(x)=x^3-2x^2+5x\\) của \\(f(x)=3x^2-4x+5\\). Vì sao cần thêm C khi viết họ nguyên hàm?",
+    "answer_key": "Mọi hàm \\(F(x)+C,\\ C\\in\\mathbb R\\) đều có đạo hàm f; mọi nguyên hàm trên miền này khác F một hằng số.",
+    "worked_solution": "Vì \\((F+C)'=F'=f\\), mọi F+C là nguyên hàm. Ngược lại, hiệu hai nguyên hàm trên \\(\\mathbb R\\) có đạo hàm bằng 0 nên là hằng số.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét đạo hàm của F+C khi C là hằng số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -55,24 +86,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "CAS luôn tính thiếu một số hạng phụ thuộc x."
+      },
+      {
+        "id": "B",
+        "text": "Mọi hàm \\(F(x)+C,\\ C\\in\\mathbb R\\) đều có đạo hàm f; mọi nguyên hàm trên miền này khác F một hằng số."
+      },
+      {
+        "id": "C",
+        "text": "C phải bằng 0 vì F đã là nguyên hàm."
+      },
+      {
+        "id": "D",
+        "text": "C là một hàm tùy ý của x."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-A01",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tìm họ nguyên hàm của 2cos(2x)+6x trên ℝ.",
-    "answer_key": "sin(2x)+3x²+C, C∈ℝ.",
-    "worked_solution": "sin(2x)+3x²+C; kiểm đạo hàm 2cos(2x)+6x.",
+    "content_version": "G12-EXP-XG6-20261127-01-A01",
+    "stem": "Tìm họ nguyên hàm của \\(2\\cos(2x)+6x\\) trên \\(\\mathbb R\\).",
+    "answer_key": "\\(\\sin(2x)+3x^2+C,\\ C\\in\\mathbb R\\)",
+    "worked_solution": "Đạo hàm của \\(\\sin(2x)\\) là \\(2\\cos(2x)\\), của \\(3x^2\\) là 6x. Vậy họ nguyên hàm là \\(\\sin(2x)+3x^2+C,\\ C\\in\\mathbb R\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Kiểm hệ số khi lấy đạo hàm của sin(2x)."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -84,24 +140,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\sin(2x)+3x^2+C,\\ C\\in\\mathbb R\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(2\\sin(2x)+3x^2+C\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\sin(2x)+6x^2+C\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-\\sin(2x)+3x^2+C\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-C02",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tính ∫₀¹ 2x dx.",
+    "content_version": "G12-EXP-XG6-20261127-01-C02",
+    "stem": "Tính \\(\\int_0^1 2x\\,\\mathrm dx\\).",
     "answer_key": "1.",
-    "worked_solution": "1; nguyên hàm x².",
+    "worked_solution": "\\(\\int_0^1 2x\\,\\mathrm dx=[x^2]_0^1=1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Tìm nguyên hàm rồi lấy giá trị tại cận trên trừ cận dưới."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -113,24 +194,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "2."
+      },
+      {
+        "id": "B",
+        "text": "0."
+      },
+      {
+        "id": "C",
+        "text": "−1."
+      },
+      {
+        "id": "D",
+        "text": "1."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-P02",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Vì sao ∫₁⁰ 2x dx =−1 thay vì 1?",
-    "answer_key": "Đổi cận đổi dấu: ∫₁⁰ 2x dx=−1.",
-    "worked_solution": "Vì ∫₀¹ 2x dx=[x²]₀¹=1, đổi thứ tự hai cận cho ∫₁⁰ 2x dx=−∫₀¹ 2x dx=−1. Tích phân xác định có dấu, không phải lúc nào cũng là diện tích không âm.",
+    "content_version": "G12-EXP-XG6-20261127-01-P02",
+    "stem": "Vì sao \\(\\int_1^0 2x\\,\\mathrm dx=-1\\) thay vì 1?",
+    "answer_key": "Đổi thứ tự hai cận làm tích phân đổi dấu.",
+    "worked_solution": "\\(\\int_0^1 2x\\,\\mathrm dx=1\\). Vì \\(\\int_b^a f(x)\\,\\mathrm dx=-\\int_a^b f(x)\\,\\mathrm dx\\), kết quả là −1. Tích phân có dấu, khác diện tích hình phẳng không âm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So sánh với tích phân từ 0 đến 1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -142,24 +248,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tích phân luôn âm khi cận dưới bằng 1."
+      },
+      {
+        "id": "B",
+        "text": "Diện tích hình phẳng luôn âm khi đổi cận."
+      },
+      {
+        "id": "C",
+        "text": "Đổi thứ tự hai cận làm tích phân đổi dấu."
+      },
+      {
+        "id": "D",
+        "text": "Đạo hàm của 2x đổi dấu khi đổi cận."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-A02",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tính ∫₋₁¹ x³ dx và giải thích nhanh nhờ đối xứng.",
-    "answer_key": "0; hàm lẻ trên đoạn đối xứng.",
-    "worked_solution": "0 vì x³ là hàm lẻ trên đoạn đối xứng.",
+    "content_version": "G12-EXP-XG6-20261127-01-A02",
+    "stem": "Tính \\(\\int_{-1}^1 x^3\\,\\mathrm dx\\) và chọn lý do đúng.",
+    "answer_key": "0, vì hàm lẻ trên đoạn đối xứng qua 0.",
+    "worked_solution": "Hàm \\(f(x)=x^3\\) lẻ vì \\(f(-x)=-f(x)\\). Hai phần tích phân trên [−1;0] và [0;1] triệt tiêu, nên tích phân bằng 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "So sánh giá trị hàm tại x và −x."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -171,24 +302,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0, vì mọi hàm trên đoạn đối xứng đều có tích phân bằng 0."
+      },
+      {
+        "id": "B",
+        "text": "0, vì hàm lẻ trên đoạn đối xứng qua 0."
+      },
+      {
+        "id": "C",
+        "text": "1/2, vì cộng độ lớn diện tích hai phía."
+      },
+      {
+        "id": "D",
+        "text": "1/4, vì chỉ tính tích phân từ 0 đến 1."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-C03",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Dùng quy tắc hình thang ghép với 2 khoảng đều để tính T₂ xấp xỉ ∫₀² x dx.",
-    "answer_key": "T₂=2.",
-    "worked_solution": "Chia [0,2] thành 2 khoảng đều, h=1, các giá trị f tại nút 0,1,2 lần lượt là 0,1,2. Công thức hình thang T₂=h[f(0)/2+f(1)+f(2)/2]=1(0+1+1)=2.",
+    "content_version": "G12-EXP-XG6-20261127-01-C03",
+    "stem": "Dùng quy tắc hình thang ghép với hai khoảng đều để xấp xỉ \\(\\int_0^2 x\\,\\mathrm dx\\). Tìm \\(T_2\\).",
+    "answer_key": "2.",
+    "worked_solution": "Bước h=1; các giá trị hàm là 0, 1, 2. \\(T_2=1\\left(\\frac02+1+\\frac22\\right)=2\\). Đồ thị là đường thẳng nên xấp xỉ bằng đúng tích phân.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Các nút là 0, 1, 2; hai giá trị đầu và cuối có trọng số một nửa."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -200,24 +356,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "2."
+      },
+      {
+        "id": "B",
+        "text": "1."
+      },
+      {
+        "id": "C",
+        "text": "3."
+      },
+      {
+        "id": "D",
+        "text": "4."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-P03",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong quy tắc hình thang ghép trên [a,b] chia đều, vì sao f(a), f(b) có hệ số 1/2 trong ngoặc, còn các giá trị ở nút giữa có hệ số 1?",
-    "answer_key": "Hai nút đầu/cuối chỉ thuộc một hình thang; các nút giữa thuộc hai hình thang.",
-    "worked_solution": "Hai đầu mỗi đầu tham gia đúng một hình thang, các nút giữa tham gia hai.",
+    "content_version": "G12-EXP-XG6-20261127-01-P03",
+    "stem": "Trong quy tắc hình thang ghép trên [a;b] chia đều, vì sao f(a), f(b) có trọng số \\(\\frac12\\), còn các nút giữa có trọng số 1?",
+    "answer_key": "Mỗi nút đầu/cuối chỉ thuộc một hình thang; mỗi nút giữa thuộc hai hình thang.",
+    "worked_solution": "Trong mỗi hình thang, hai đầu đều có trọng số một nửa. Khi cộng, mỗi nút trong xuất hiện hai lần, thành trọng số 1; mỗi nút ngoài chỉ xuất hiện một lần.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Cộng công thức của hai hình thang kề nhau."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -229,24 +410,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Các nút đầu/cuối luôn có giá trị nhỏ hơn nút giữa."
+      },
+      {
+        "id": "B",
+        "text": "Mỗi nút giữa chỉ thuộc một hình thang; nút đầu/cuối thuộc hai."
+      },
+      {
+        "id": "C",
+        "text": "Trọng số được chọn tùy ý."
+      },
+      {
+        "id": "D",
+        "text": "Mỗi nút đầu/cuối chỉ thuộc một hình thang; mỗi nút giữa thuộc hai hình thang."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-A03",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Dùng quy tắc hình thang ghép với 2 khoảng đều để xấp xỉ ∫₀¹ x² dx.",
-    "answer_key": "T₂=3/8.",
-    "worked_solution": "h=1/2; f(0)=0,f(1/2)=1/4,f(1)=1; T₂=(1/2)(0+1/4+1/2)=3/8.",
+    "content_version": "G12-EXP-XG6-20261127-01-A03",
+    "stem": "Dùng quy tắc hình thang ghép với hai khoảng đều để xấp xỉ \\(\\int_0^1 x^2\\,\\mathrm dx\\).",
+    "answer_key": "\\(T_2=\\frac38\\)",
+    "worked_solution": "\\(h=\\frac12,\\ f(0)=0,\\ f(1/2)=\\frac14,\\ f(1)=1\\). Vậy \\(T_2=\\frac12\\left(0+\\frac14+\\frac12\\right)=\\frac38\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính giá trị hàm tại 0, 1/2 và 1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -258,24 +464,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(T_2=\\frac13\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(T_2=\\frac14\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(T_2=\\frac38\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(T_2=\\frac34\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-C04",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho f có đạo hàm cấp hai liên tục trên [a,b], |f″|≤M=2, b−a=1. Dùng quy tắc hình thang ghép với n=5 khoảng đều. Tính cận trên sai số M(b−a)³/(12n²).",
-    "answer_key": "Cận trên sai số 1/150≈0,0066667.",
-    "worked_solution": "Áp dụng cận sai số quy tắc hình thang |I−Tₙ|≤M(b−a)³/(12n²), được 2·1³/(12·5²)=1/150≈0,0066667. Đây là cận trên, không khẳng định sai số thực bằng cận.",
+    "content_version": "G12-EXP-XG6-20261127-01-C04",
+    "stem": "Cho f có đạo hàm cấp hai liên tục trên [a;b], \\(|f''(x)|\\le M=2\\), b−a=1. Với n=5 khoảng đều, tính cận trên sai số \\(\\frac{M(b-a)^3}{12n^2}\\).",
+    "answer_key": "\\(\\frac1{150}\\approx0{,}0066667\\)",
+    "worked_solution": "\\(|I-T_5|\\le\\frac{2\\cdot1^3}{12\\cdot5^2}=\\frac1{150}\\approx0{,}0066667\\). Đây là cận trên, không khẳng định sai số thực bằng cận.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Thay đúng n² vào mẫu số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -287,24 +518,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac1{30}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac1{150}\\approx0{,}0066667\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac1{300}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac16\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-P04",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Có thể kết luận sai số <0,01 chỉ bằng cách phần mềm hiển thị ba chữ số thập phân không?",
-    "answer_key": "Không; số chữ số hiển thị không chứng nhận sai số.",
-    "worked_solution": "Không; độ dài hiển thị không là chứng nhận sai số.",
+    "content_version": "G12-EXP-XG6-20261127-01-P04",
+    "stem": "Có thể kết luận sai số nhỏ hơn 0,01 chỉ vì phần mềm hiển thị ba chữ số sau dấu phẩy không?",
+    "answer_key": "Không; số chữ số hiển thị không chứng nhận sai số so với giá trị đúng.",
+    "worked_solution": "Số chữ số hiển thị chỉ cho biết cách trình bày kết quả. Cần cận sai số có điều kiện áp dụng hoặc phương pháp kiểm chứng đáng tin cậy.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Phân biệt sai số làm tròn hiển thị và sai số của phương pháp tính."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -316,24 +572,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; số chữ số hiển thị không chứng nhận sai số so với giá trị đúng."
+      },
+      {
+        "id": "B",
+        "text": "Có; ba chữ số luôn bảo đảm sai số nhỏ hơn 0,001."
+      },
+      {
+        "id": "C",
+        "text": "Có; hiển thị đủ ba chữ số thì kết quả chính xác."
+      },
+      {
+        "id": "D",
+        "text": "Không; mọi kết quả số đều có sai số lớn hơn 0,01."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-A04",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho f có đạo hàm cấp hai liên tục trên [0,1] và |f″|≤2. Với quy tắc hình thang ghép n khoảng đều, chọn n nguyên dương nhỏ nhất để cận sai số M(b−a)³/(12n²) nhỏ hơn 0,01.",
-    "answer_key": "n nhỏ nhất bằng 5.",
-    "worked_solution": "Theo cận sai số hình thang, M(b−a)³/(12n²)=1/(6n²). Cần 1/(6n²)<0,01, tức n²>100/6. Vì 4²=16<100/6 và 5²=25>100/6, số nguyên dương nhỏ nhất là n=5.",
+    "content_version": "G12-EXP-XG6-20261127-01-A04",
+    "stem": "Cho f có đạo hàm cấp hai liên tục trên [0;1] và \\(|f''(x)|\\le2\\). Chọn n nguyên dương nhỏ nhất để cận sai số hình thang ghép \\(\\frac{M(b-a)^3}{12n^2}\\) nhỏ hơn 0,01.",
+    "answer_key": "5.",
+    "worked_solution": "\\(\\frac1{6n^2}<0{,}01\\iff n^2>\\frac{100}{6}\\). Vì \\(4^2<\\frac{100}{6}<5^2\\), n nhỏ nhất là 5.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Giải bất đẳng thức theo n² rồi kiểm hai số nguyên gần ngưỡng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -345,24 +626,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4."
+      },
+      {
+        "id": "B",
+        "text": "3."
+      },
+      {
+        "id": "C",
+        "text": "6."
+      },
+      {
+        "id": "D",
+        "text": "5."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-C05",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Vận tốc v tại các thời điểm t=0,1,2 giây lần lượt là 1,3,5 m/s. Dùng quy tắc hình thang ghép với hai khoảng để xấp xỉ độ dời.",
-    "answer_key": "T₂=6 m.",
-    "worked_solution": "Dữ liệu tại t=0,1,2 giây cho h=1 s. Theo hình thang ghép, T₂=1·(1/2+3+5/2)=6 m. Đây là xấp xỉ độ dời trên [0,2].",
+    "content_version": "G12-EXP-XG6-20261127-01-C05",
+    "stem": "Vận tốc tại t=0, 1, 2 giây lần lượt là 1, 3, 5 m/s. Dùng quy tắc hình thang ghép với hai khoảng để xấp xỉ độ dời.",
+    "answer_key": "6 m.",
+    "worked_solution": "\\(T_2=1\\left(\\frac12+3+\\frac52\\right)=6\\) m. Đây là xấp xỉ độ dời từ dữ liệu, không khẳng định giá trị đúng nếu chưa biết vận tốc giữa các nút.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Khoảng thời gian giữa hai nút là 1 giây."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -374,24 +680,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "9 m."
+      },
+      {
+        "id": "B",
+        "text": "4 m."
+      },
+      {
+        "id": "C",
+        "text": "6 m."
+      },
+      {
+        "id": "D",
+        "text": "8 m."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-P05",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Lấy diện tích mặt cắt (cm²) tích phân theo chiều dài (cm) thu được đơn vị nào?",
+    "content_version": "G12-EXP-XG6-20261127-01-P05",
+    "stem": "Tích phân diện tích mặt cắt (cm²) theo chiều dài (cm) cho đơn vị nào?",
     "answer_key": "cm³.",
-    "worked_solution": "cm³.",
+    "worked_solution": "Diện tích mặt cắt có đơn vị cm², chiều dài có đơn vị cm; tích cho cm³, là đơn vị thể tích.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Xét đơn vị của diện tích nhân với một đoạn chiều dài nhỏ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -403,24 +734,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "cm²."
+      },
+      {
+        "id": "B",
+        "text": "cm³."
+      },
+      {
+        "id": "C",
+        "text": "cm."
+      },
+      {
+        "id": "D",
+        "text": "cm⁴."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP01-A05",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Diện tích mặt cắt S tại x=0,1,3 cm lần lượt là 2,4,5 cm². Dùng quy tắc hình thang trên từng khoảng để xấp xỉ thể tích.",
+    "content_version": "G12-EXP-XG6-20261127-01-A05",
+    "stem": "Diện tích mặt cắt tại x=0, 1, 3 cm lần lượt là 2, 4, 5 cm². Dùng quy tắc hình thang trên từng khoảng để xấp xỉ thể tích.",
     "answer_key": "12 cm³.",
-    "worked_solution": "Dữ liệu có hai khoảng dài 1 cm và 2 cm, không chia đều. Áp dụng hình thang riêng trên từng khoảng: V≈1·(2+4)/2+2·(4+5)/2=3+9=12 cm³.",
+    "worked_solution": "\\(V\\approx1\\cdot\\frac{2+4}{2}+2\\cdot\\frac{4+5}{2}=3+9=12\\) cm³. Không dùng bước h chung khi các khoảng không đều.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP01-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Hai khoảng có độ dài khác nhau: 1 cm và 2 cm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -432,24 +788,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "12 cm³."
+      },
+      {
+        "id": "B",
+        "text": "11,25 cm³."
+      },
+      {
+        "id": "C",
+        "text": "7,5 cm³."
+      },
+      {
+        "id": "D",
+        "text": "9 cm³."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-C01",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai điểm P(1;2;0), Q(1;2;3) có hình chiếu vuông góc lên mặt phẳng Oxy giống nhau không?",
-    "answer_key": "Có; cùng điểm (1;2;0) trên Oxy.",
-    "worked_solution": "Hình chiếu vuông góc lên Oxy giữ nguyên x,y và đặt z=0. Cả P và Q đều chiếu thành (1;2;0), hay tọa độ phẳng (1;2).",
+    "content_version": "G12-EXP-XG6-20261127-02-C01",
+    "stem": "Hai điểm \\(P(1;2;0),\\ Q(1;2;3)\\) có hình chiếu vuông góc lên Oxy như thế nào?",
+    "answer_key": "Cùng là \\((1;2;0)\\).",
+    "worked_solution": "Phép chiếu vuông góc lên Oxy giữ x, y và đặt z=0. Cả hai điểm đều chiếu thành \\((1;2;0)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Chiếu lên Oxy giữ lại những tọa độ nào?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -461,24 +842,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cùng là \\((0;2;3)\\)."
+      },
+      {
+        "id": "B",
+        "text": "Khác nhau vì tọa độ z khác nhau."
+      },
+      {
+        "id": "C",
+        "text": "Cùng là \\((1;0;0)\\)."
+      },
+      {
+        "id": "D",
+        "text": "Cùng là \\((1;2;0)\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-P01",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Vì sao một hình tam giác Penrose trông khép kín ở một góc không chứng minh mô hình 3D đó thực sự khép kín?",
-    "answer_key": "Không; hình chiếu có thể che khuất độ sâu và chỗ nối không khớp.",
-    "worked_solution": "Vì ảnh chiếu bỏ mất độ sâu và có thể che khuất các chỗ nối không khớp.",
+    "content_version": "G12-EXP-XG6-20261127-02-P01",
+    "stem": "Vì sao hình tam giác Penrose trông khép kín ở một góc nhìn không chứng minh mô hình 3D thực sự khép kín?",
+    "answer_key": "Hình chiếu có thể che khuất độ sâu và các chỗ nối không khớp.",
+    "worked_solution": "Ảnh chiếu 2D làm mất thông tin theo phương chiếu. Hai điểm có cùng hình chiếu vẫn có thể khác tọa độ 3D, nên ảnh khép kín không đủ kết luận các thanh nối thật.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hình ảnh phẳng có giữ đủ thông tin về tọa độ không gian không?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -490,24 +896,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vì mọi hình chiếu đều bảo toàn độ dài."
+      },
+      {
+        "id": "B",
+        "text": "Vì một vật thể 3D không thể có hình chiếu tam giác."
+      },
+      {
+        "id": "C",
+        "text": "Hình chiếu có thể che khuất độ sâu và các chỗ nối không khớp."
+      },
+      {
+        "id": "D",
+        "text": "Vì mọi đoạn thẳng trong hình chiếu đều là đường cong."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-A01",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Sau khi xoay một mô hình Penrose 3D, thấy khe hở. Phát biểu nhận xét toán học.",
-    "answer_key": "Mô hình có vẻ khép kín trong hình chiếu ban đầu nhưng các phần không nối thật trong 3D.",
-    "worked_solution": "Mô hình chỉ khép kín trong hình chiếu được chọn, không khép kín về tọa độ không gian.",
+    "content_version": "G12-EXP-XG6-20261127-02-A01",
+    "stem": "Sau khi xoay một mô hình Penrose 3D, ta thấy khe hở tại chỗ nối tưởng như kín ở góc nhìn ban đầu. Kết luận nào phù hợp?",
+    "answer_key": "Mô hình có vẻ khép kín ở hình chiếu ban đầu nhưng chỗ nối đó không khép kín trong không gian.",
+    "worked_solution": "Đổi góc nhìn không làm thay đổi tọa độ tương đối của mô hình. Khe hở cho thấy ảnh ban đầu che mất độ sâu; kiểm lại chỗ nối bằng tọa độ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Đổi góc nhìn có thay đổi quan hệ giao nhau thực của vật thể không?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -519,24 +950,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mô hình luôn khép kín; phép xoay tạo ra khe hở thật."
+      },
+      {
+        "id": "B",
+        "text": "Mô hình có vẻ khép kín ở hình chiếu ban đầu nhưng chỗ nối đó không khép kín trong không gian."
+      },
+      {
+        "id": "C",
+        "text": "Hai ảnh khác nhau chứng minh mô hình đã biến dạng."
+      },
+      {
+        "id": "D",
+        "text": "Hình chiếu ban đầu đủ chứng minh mọi chỗ nối trong 3D."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-C02",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "G12-EXP-XG6-20261127-02-C02",
     "stem": "Lăng trụ tam giác có bao nhiêu đỉnh?",
     "answer_key": "6 đỉnh.",
-    "worked_solution": "6.",
+    "worked_solution": "Mỗi đáy có 3 đỉnh, hai đáy nằm trên hai mặt phẳng song song phân biệt, nên có 6 đỉnh.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Đếm đỉnh của hai đáy tam giác."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -548,24 +1004,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 đỉnh."
+      },
+      {
+        "id": "B",
+        "text": "3 đỉnh."
+      },
+      {
+        "id": "C",
+        "text": "5 đỉnh."
+      },
+      {
+        "id": "D",
+        "text": "9 đỉnh."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-P02",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Vì sao A,B,C không được thẳng hàng khi tạo lăng trụ tam giác?",
-    "answer_key": "Vì đáy thẳng hàng có diện tích 0, làm khối lăng trụ suy biến.",
-    "worked_solution": "Đáy sẽ suy biến có diện tích bằng 0, không tạo khối lăng trụ thực.",
+    "content_version": "G12-EXP-XG6-20261127-02-P02",
+    "stem": "Vì sao ba điểm A, B, C của đáy lăng trụ tam giác không được thẳng hàng?",
+    "answer_key": "Nếu thẳng hàng, đáy có diện tích 0, làm khối lăng trụ suy biến.",
+    "worked_solution": "Ba điểm thẳng hàng không tạo tam giác có diện tích dương. Diện tích đáy bằng 0 nên khối lăng trụ suy biến.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét diện tích tam giác khi ba đỉnh nằm trên một đường thẳng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -577,24 +1058,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nếu thẳng hàng, chiều cao luôn bằng 0 dù hai đáy ở hai mặt phẳng khác nhau."
+      },
+      {
+        "id": "B",
+        "text": "Nếu thẳng hàng, lăng trụ vẫn có thể tích dương nhờ cạnh bên dài."
+      },
+      {
+        "id": "C",
+        "text": "Vì ba điểm bất kỳ trong không gian luôn không thẳng hàng."
+      },
+      {
+        "id": "D",
+        "text": "Nếu thẳng hàng, đáy có diện tích 0, làm khối lăng trụ suy biến."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-A02",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Lăng trụ đứng có đáy tam giác A(0;0;0), B(2;0;0), C(0;2;0), chiều cao h=4. Tính thể tích.",
+    "content_version": "G12-EXP-XG6-20261127-02-A02",
+    "stem": "Lăng trụ đứng có đáy tam giác \\(A(0;0;0),\\ B(2;0;0),\\ C(0;2;0)\\) và chiều cao h=4. Tính thể tích.",
     "answer_key": "8 đơn vị khối.",
-    "worked_solution": "Tam giác đáy có AB=AC=2 và AB⊥AC, nên diện tích bằng 2·2/2=2. Chiều cao h=4; V=2·4=8 đơn vị khối.",
+    "worked_solution": "\\(AB=AC=2,\\ AB\\perp AC\\), nên \\(S_{ABC}=\\frac12\\cdot2\\cdot2=2\\). Vậy \\(V=2\\cdot4=8\\) đơn vị khối.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính diện tích tam giác vuông đáy trước."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -606,24 +1112,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "16 đơn vị khối."
+      },
+      {
+        "id": "B",
+        "text": "4 đơn vị khối."
+      },
+      {
+        "id": "C",
+        "text": "8 đơn vị khối."
+      },
+      {
+        "id": "D",
+        "text": "8/3 đơn vị khối."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-C03",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Độ dài MN của M(1,0,0),N(1,0,3) là bao nhiêu?",
+    "content_version": "G12-EXP-XG6-20261127-02-C03",
+    "stem": "Tính độ dài MN với \\(M(1;0;0),\\ N(1;0;3)\\).",
     "answer_key": "3.",
-    "worked_solution": "3.",
+    "worked_solution": "\\(MN=\\sqrt{(1-1)^2+(0-0)^2+(3-0)^2}=3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Hai điểm chỉ khác nhau ở tọa độ z."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -635,24 +1166,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "1."
+      },
+      {
+        "id": "B",
+        "text": "3."
+      },
+      {
+        "id": "C",
+        "text": "4."
+      },
+      {
+        "id": "D",
+        "text": "9."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-P03",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Ảnh chụp màn hình tại một góc cho thấy hai đoạn dính nhau. Đó có đủ để khẳng định chúng cắt nhau không?",
-    "answer_key": "Không; cần xác nhận giao điểm thực bằng tọa độ hoặc quan hệ hình học 3D.",
-    "worked_solution": "Hai đoạn có thể có chung điểm ảnh chiếu nhưng khác độ sâu. Xoay góc nhìn giúp phát hiện khe hở; tuy nhiên, chỉ việc quan sát nhiều ảnh không đủ làm chứng minh. Để kết luận hai đoạn cắt nhau, cần xác nhận có một điểm chung thuộc cả hai đoạn trong không gian.",
+    "content_version": "G12-EXP-XG6-20261127-02-P03",
+    "stem": "Ảnh chụp màn hình ở một góc nhìn cho thấy hai đoạn thẳng có điểm chung. Điều đó đủ để kết luận chúng cắt nhau trong không gian không?",
+    "answer_key": "Không; cần xác nhận tồn tại một điểm thuộc cả hai đoạn trong 3D.",
+    "worked_solution": "Hai đoạn có thể chung điểm ảnh chiếu nhưng khác độ sâu. Đổi góc nhìn giúp phát hiện sai lệch; để chứng minh giao nhau cần xác nhận một điểm chung thực bằng tọa độ hoặc quan hệ hình học.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai điểm khác độ sâu có thể trùng trên một ảnh chiếu không?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -664,24 +1220,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; cần xác nhận tồn tại một điểm thuộc cả hai đoạn trong 3D."
+      },
+      {
+        "id": "B",
+        "text": "Có; hai đoạn có chung điểm ảnh thì luôn có chung điểm thật."
+      },
+      {
+        "id": "C",
+        "text": "Có; miễn ảnh có độ phân giải cao."
+      },
+      {
+        "id": "D",
+        "text": "Không; hai đoạn trong không gian luôn chéo nhau."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-A03",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai điểm có cùng tọa độ x,y nhưng khác tọa độ z. Nên dùng hình chiếu lên mặt phẳng nào để thấy chênh lệch z?",
-    "answer_key": "Nhìn bên theo phương để thấy trục Oz, chẳng hạn chiếu lên xOz hoặc yOz.",
-    "worked_solution": "Nhìn bên, mặt đứng xOz hoặc yOz để thấy chênh lệch z.",
+    "content_version": "G12-EXP-XG6-20261127-02-A03",
+    "stem": "Hai điểm có cùng x, y nhưng khác z. Cặp mặt phẳng chiếu vuông góc nào đều cho thấy sự khác biệt về z?",
+    "answer_key": "xOz và yOz.",
+    "worked_solution": "Chiếu lên xOz giữ x và z; chiếu lên yOz giữ y và z. Cả hai đều phân biệt được hai tọa độ z khác nhau. Chiếu lên Oxy làm mất z.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Chọn các mặt phẳng chứa trục Oz."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -693,24 +1274,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Oxy và xOz."
+      },
+      {
+        "id": "B",
+        "text": "Oxy và yOz."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ Oxy."
+      },
+      {
+        "id": "D",
+        "text": "xOz và yOz."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-C04",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho dải Möbius tham số M(u,v)=((1+(v/2)cos(u/2))cos u, (1+(v/2)cos(u/2))sin u, (v/2)sin(u/2)), với 0≤u≤2π, −1≤v≤1. Tính M(0,0).",
-    "answer_key": "M(0,0)=(1;0;0).",
-    "worked_solution": "Thay u=0, v=0 vào công thức: cos0=1, sin0=0, nên M(0,0)=(1;0;0).",
+    "content_version": "G12-EXP-XG6-20261127-02-C04",
+    "stem": "Cho dải Möbius \\(M(u,v)=\\left(\\left(1+\\frac v2\\cos\\frac u2\\right)\\cos u;\\left(1+\\frac v2\\cos\\frac u2\\right)\\sin u;\\frac v2\\sin\\frac u2\\right)\\), với \\(0\\le u\\le2\\pi,\\ -1\\le v\\le1\\). Tính \\(M(0,0)\\).",
+    "answer_key": "\\((1;0;0)\\)",
+    "worked_solution": "Thay u=0, v=0 vào ba tọa độ: \\(M(0,0)=(1;0;0)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Thay u=0, v=0; dùng cos 0=1 và sin 0=0."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -722,24 +1328,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((0;0;0)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((0;1;0)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((1;0;0)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((1;0;1)\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-P04",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho dải Möbius M(u,v)=((1+(v/2)cos(u/2))cos u, (1+(v/2)cos(u/2))sin u, (v/2)sin(u/2)), với 0≤u≤2π, −1≤v≤1. Giải thích bằng công thức vì sao M(0,v)=M(2π,−v).",
-    "answer_key": "Sau một vòng, chiều ngang bị đảo: M(0,v)=M(2π,−v).",
-    "worked_solution": "Từ công thức tham số, tại u=0 có M(0,v)=(1+v/2,0,0). Tại u=2π có cosπ=−1, sinπ=0, nên M(2π,−v)=(1+v/2,0,0). Hai điểm trùng nhau: khi khép dải, tham số ngang v ở đầu này ghép với −v ở đầu kia.",
+    "content_version": "G12-EXP-XG6-20261127-02-P04",
+    "stem": "Cho dải Möbius \\(M(u,v)=\\left(\\left(1+\\frac v2\\cos\\frac u2\\right)\\cos u;\\left(1+\\frac v2\\cos\\frac u2\\right)\\sin u;\\frac v2\\sin\\frac u2\\right)\\), với \\(0\\le u\\le2\\pi,\\ -1\\le v\\le1\\). Chọn phép tính giải thích đúng quy tắc ghép hai đầu dải.",
+    "answer_key": "\\(M(0,v)=M(2\\pi,-v)=\\left(1+\\frac v2;0;0\\right)\\)",
+    "worked_solution": "Tại u=0, \\(M(0,v)=(1+v/2;0;0)\\). Tại u=2π, \\(\\cos\\pi=-1,\\ \\sin\\pi=0\\), nên \\(M(2\\pi,-v)=(1+v/2;0;0)\\). Hai đầu ghép với tham số ngang đảo dấu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tại u=2π, cos(u/2) bằng −1; hãy thay tham số −v."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -751,24 +1382,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(M(0,v)=M(2\\pi,v)=\\left(1+\\frac v2;0;0\\right)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(M(0,v)=M(2\\pi,-v)=\\left(1+\\frac v2;0;0\\right)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(M(0,v)=M(2\\pi,-v)=\\left(1-\\frac v2;0;0\\right)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(M(0,v)=M(2\\pi,-v)=\\left(0;1+\\frac v2;0\\right)\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-A04",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho dải Möbius M(u,v)=((1+(v/2)cos(u/2))cos u, (1+(v/2)cos(u/2))sin u, (v/2)sin(u/2)), với 0≤u≤2π, −1≤v≤1. Tính M(0,−1) và M(2π,1).",
-    "answer_key": "M(0,−1)=M(2π,1)=(1/2;0;0).",
-    "worked_solution": "Tại u=0, cos0=1, sin0=0, v=−1, nên M=(1−1/2;0;0). Tại u=2π, cos2π=1, sin2π=0, cosπ=−1, sinπ=0, v=1, nên M=(1−1/2;0;0). Hai đầu dải ghép tại cùng một điểm.",
+    "content_version": "G12-EXP-XG6-20261127-02-A04",
+    "stem": "Cho dải Möbius \\(M(u,v)=\\left(\\left(1+\\frac v2\\cos\\frac u2\\right)\\cos u;\\left(1+\\frac v2\\cos\\frac u2\\right)\\sin u;\\frac v2\\sin\\frac u2\\right)\\), với \\(0\\le u\\le2\\pi,\\ -1\\le v\\le1\\). Tính \\(M(0,-1)\\) và \\(M(2\\pi,1)\\).",
+    "answer_key": "\\(M(0,-1)=M(2\\pi,1)=\\left(\\frac12;0;0\\right)\\)",
+    "worked_solution": "Tại u=0, v=−1, tọa độ thứ nhất bằng \\(1-\\frac12=\\frac12\\); hai tọa độ còn lại bằng 0. Tại u=2π, v=1, \\(\\cos\\pi=-1\\), nên cũng nhận \\((\\frac12;0;0)\\). Hai đầu ghép tại cùng điểm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính riêng các giá trị cos và sin tại u=0 và u=2π."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -780,24 +1436,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(M(0,-1)=M(2\\pi,1)=\\left(\\frac12;0;0\\right)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(M(0,-1)=M(2\\pi,1)=\\left(\\frac32;0;0\\right)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(M(0,-1)=\\left(\\frac12;0;0\\right),\\ M(2\\pi,1)=\\left(\\frac32;0;0\\right)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(M(0,-1)=M(2\\pi,1)=\\left(0;\\frac12;0\\right)\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-C05",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Báo cáo mô hình tái lập tối thiểu có nên lưu thông số tọa độ không?",
-    "answer_key": "Có; lưu tọa độ và tham số.",
-    "worked_solution": "Có; tọa độ/tham số là chứng cứ có thể kiểm độc lập.",
+    "content_version": "G12-EXP-XG6-20261127-02-C05",
+    "stem": "Một báo cáo mô hình có thể tái lập cần lưu dữ liệu nào ngoài ảnh minh họa?",
+    "answer_key": "Tọa độ và tham số dùng để dựng mô hình.",
+    "worked_solution": "Tọa độ và tham số xác định dữ liệu dựng. Nhờ chúng người khác có thể kiểm tra độc lập, thay vì chỉ so sánh hình ảnh.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Người khác cần gì để dựng lại đúng các điểm và đường của mô hình?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -809,24 +1490,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ màu sắc và độ sáng của ảnh."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ tên người chụp ảnh."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ kích thước cửa sổ phần mềm."
+      },
+      {
+        "id": "D",
+        "text": "Tọa độ và tham số dùng để dựng mô hình."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-P05",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Nếu phần mềm đổi giao diện hoặc ngôn ngữ menu, cách nào giữ báo cáo tái lập?",
+    "content_version": "G12-EXP-XG6-20261127-02-P05",
+    "stem": "Nếu phần mềm đổi giao diện hoặc ngôn ngữ menu, cách nào giữ báo cáo có thể tái lập?",
     "answer_key": "Lưu dữ liệu, lệnh và quy tắc dựng, không chỉ tên nút.",
-    "worked_solution": "Lưu lệnh, dữ liệu và quy tắc dựng, không chỉ nhãn nút trên giao diện.",
+    "worked_solution": "Dữ liệu, lệnh và quy tắc dựng mô tả bản chất của mô hình. Tên nút có thể đổi; người khác vẫn có thể dựng lại từ thông tin toán học đã lưu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Phân biệt thao tác giao diện với quy tắc toán học tạo mô hình."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -838,24 +1544,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ chụp ảnh các nút bấm ở phiên bản hiện tại."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ ghi tên phần mềm."
+      },
+      {
+        "id": "C",
+        "text": "Lưu dữ liệu, lệnh và quy tắc dựng, không chỉ tên nút."
+      },
+      {
+        "id": "D",
+        "text": "Ghi màu sắc mô hình và bỏ thông số dựng."
+      }
+    ]
   },
   {
     "item_id": "THPT-G12-EXP02-A05",
-    "content_version": "G12-SGK-EXP01-EXP02-R01_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một mô hình có 1 ảnh duy nhất ở góc nhìn đẹp. Cần thêm gì để kiểm tra 3D?",
-    "answer_key": "Thêm góc nhìn khác và dữ liệu tọa độ, tham số, quan hệ hình học để kiểm tra độc lập.",
-    "worked_solution": "Thêm góc nhìn khác và dữ liệu tọa độ/quan hệ giao–song song.",
+    "content_version": "G12-EXP-XG6-20261127-02-A05",
+    "stem": "Một báo cáo mô hình 3D chỉ có một ảnh ở góc nhìn đẹp. Cần bổ sung gì để kiểm chứng quan hệ hình học của mô hình?",
+    "answer_key": "Thêm góc nhìn khác, tọa độ, tham số và kiểm quan hệ hình học bằng dữ liệu.",
+    "worked_solution": "Các góc nhìn khác giúp phát hiện chỗ bị che khuất. Tọa độ và tham số cho phép kiểm các quan hệ như giao nhau, song song bằng suy luận; ảnh riêng lẻ không đủ chứng minh.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-SGK-EXP02-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Một ảnh chỉ là hình chiếu; cần gì để kiểm tra giao điểm thật?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -867,6 +1598,25 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ tăng độ phân giải của ảnh."
+      },
+      {
+        "id": "B",
+        "text": "Thêm góc nhìn khác, tọa độ, tham số và kiểm quan hệ hình học bằng dữ liệu."
+      },
+      {
+        "id": "C",
+        "text": "Thêm nhiều ảnh cùng góc nhìn với các màu khác nhau."
+      },
+      {
+        "id": "D",
+        "text": "Chỉ mô tả rằng mô hình nhìn có vẻ đúng."
+      }
+    ]
   }
 ]
