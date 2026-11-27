@@ -1,21 +1,25 @@
 [
   {
     "item_id": "THPT-G11-CHVI-B18-C01",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tại sao \\((\\frac25)^{-2}\\) không phải số âm? Tính giá trị.",
+    "content_version": "CD04-BANK-CP124-20261127-B18-C01",
+    "stem": "Tại sao \\((\\frac25)^{-2}\\) không phải số âm? Tính giá trị. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(\\frac{25}4\\).",
     "worked_solution": "Số mũ âm cho biết phải lấy nghịch đảo của lũy thừa, không phải đặt dấu âm trước nó. Vì cơ số dương và khác 0, \\((\\frac25)^{-2}=\\frac1{(\\frac25)^2}=(\\frac52)^2=\\frac{25}4\\).",
     "skill_ids": [
       "G11-B18-POWER_INTEGER"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Viết số mũ âm thành nghịch đảo."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -27,26 +31,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Số mũ âm không làm lũy thừa cơ số dương thành số âm. Ôn TOP04-M01; luyện THPT-G11-CHVI-B18-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Số mũ âm không làm lũy thừa cơ số dương thành số âm. Ôn TOP04-M01; luyện THPT-G11-CHVI-B18-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac4{25}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(-\\frac{25}4\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{25}4\\), do lấy nghịch đảo của \\((\\frac25)^2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(-\\frac4{25}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-C02",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải thích ý nghĩa của \\(81^{\\frac34}\\) và tính giá trị.",
+    "content_version": "CD04-BANK-CP124-20261127-B18-C02",
+    "stem": "Giải thích ý nghĩa của \\(81^{\\frac34}\\) và tính giá trị. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "27.",
     "worked_solution": "Với cơ số dương, số mũ hữu tỉ \\(\\frac34\\) nghĩa là lấy căn bậc bốn rồi nâng lên lũy thừa bậc ba. Vậy \\(81^{\\frac34}=(\\sqrt[4]{81})^3=3^3=27\\).",
     "skill_ids": [
       "G11-B18-POWER_RATIONAL"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Lấy căn bậc bốn rồi lập phương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -58,26 +85,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Kiểm \\(3^4=81\\) rồi tính \\(3^3\\). Ôn TOP04-M02; luyện THPT-G11-CHVI-B18-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Kiểm \\(3^4=81\\) rồi tính \\(3^3\\). Ôn TOP04-M02; luyện THPT-G11-CHVI-B18-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "9."
+      },
+      {
+        "id": "B",
+        "text": "\\(243\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(27\\), vì \\((\\sqrt[4]{81})^3=3^3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-C03",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "\\(0^{-2}\\) có nghĩa trong tập số thực không? Vì sao?",
+    "content_version": "CD04-BANK-CP124-20261127-B18-C03",
+    "stem": "\\(0^{-2}\\) có nghĩa trong tập số thực không? Vì sao? Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Không.",
     "worked_solution": "Quy tắc \\(a^{-2}=\\frac1{a^2}\\) chỉ có nghĩa khi a khác 0. Nếu lấy a bằng 0, mẫu bằng 0, phép chia không xác định. Do đó \\(0^{-2}\\) không có nghĩa.",
     "skill_ids": [
       "G11-B18-POWER_INTEGER"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Mũ âm cần cơ số khác 0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -89,26 +139,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không thể chia cho 0 khi lấy nghịch đảo. Ôn TOP04-M01; luyện THPT-G11-CHVI-B18-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không thể chia cho 0 khi lấy nghịch đảo. Ôn TOP04-M01; luyện THPT-G11-CHVI-B18-C01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; \\(0^{-2}=\\frac1{0^2}\\) là phép chia cho 0."
+      },
+      {
+        "id": "B",
+        "text": "Có, bằng 0."
+      },
+      {
+        "id": "C",
+        "text": "Có, bằng 1."
+      },
+      {
+        "id": "D",
+        "text": "Có, bằng \\(-2\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-C04",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Một bạn nói: “\\(2^{\\sqrt2}\\) không có nghĩa, vì \\(\\sqrt2\\) không thể đếm số lần nhân 2”. Giải thích sai lầm và mô tả cách số này được hình thành.",
+    "content_version": "CD04-BANK-CP124-20261127-B18-C04",
+    "stem": "Một bạn nói: “\\(2^{\\sqrt2}\\) không có nghĩa, vì \\(\\sqrt2\\) không thể đếm số lần nhân 2”. Giải thích sai lầm và mô tả cách số này được hình thành. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(2^{\\sqrt2}\\) có nghĩa vì cơ số 2 dương; lũy thừa với số mũ thực được mở rộng bằng giới hạn của lũy thừa với số mũ hữu tỉ.",
     "worked_solution": "Với số mũ nguyên dương, lũy thừa mô tả số lần nhân; với số mũ hữu tỉ đã mở rộng bằng căn và lũy thừa. Chọn một dãy số hữu tỉ tiến đến \\(\\sqrt2\\), chẳng hạn 1,4; 1,41; 1,414; ... . Các lũy thừa tương ứng của 2 tiến đến một giới hạn xác định, không phụ thuộc vào dãy xấp xỉ. Giới hạn ấy là \\(2^{\\sqrt2}\\), không phải phép nhân 2 một số lần vô tỉ.",
     "skill_ids": [
       "G11-B18-POWER_REAL"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Nghĩ đến các số mũ hữu tỉ xấp xỉ \\(\\sqrt2\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -120,26 +193,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Số mũ thực được mở rộng qua giới hạn, không phải số lần nhân nguyên. Ôn TOP04-M03; luyện THPT-TOP04-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Số mũ thực được mở rộng qua giới hạn, không phải số lần nhân nguyên. Ôn TOP04-M03; luyện THPT-TOP04-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ xác định nếu làm tròn số mũ thành 1."
+      },
+      {
+        "id": "B",
+        "text": "Có nghĩa; dùng giới hạn các lũy thừa cơ số 2 với số mũ hữu tỉ tiến đến \\(\\sqrt2\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không có nghĩa vì số mũ không nguyên."
+      },
+      {
+        "id": "D",
+        "text": "Bằng \\(2\\sqrt2\\), tức nhân cơ số với số mũ."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-C05",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Phân biệt yêu cầu tính \\(\\sqrt{25}\\) và giải \\(x^2=25\\). Tính thêm \\(\\sqrt[3]{-27}\\) và giải thích vai trò của căn bậc chẵn, lẻ.",
+    "content_version": "CD04-BANK-CP124-20261127-B18-C05",
+    "stem": "Phân biệt yêu cầu tính \\(\\sqrt{25}\\) và giải \\(x^2=25\\). Tính thêm \\(\\sqrt[3]{-27}\\) và giải thích vai trò của căn bậc chẵn, lẻ. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(\\sqrt{25}=5\\); phương trình có hai nghiệm \\(x=\\pm5\\); \\(\\sqrt[3]{-27}=-3\\).",
-    "worked_solution": "Căn bậc hai số học là giá trị không âm có bình phương bằng 25, nên \\(\\sqrt{25}=5\\). Phương trình \\(x^2=25\\) yêu cầu mọi số có bình phương bằng 25, gồm 5 và −5. Căn bậc ba của số âm tồn tại vì \\((-3)^3=-27\\), nên \\(\\sqrt[3]{-27}=-3\\). Không từ đó suy rộng lũy thừa cơ số âm cho mọi số mũ thực.",
+    "worked_solution": "Căn bậc hai số học là giá trị không âm có bình phương bằng 25, nên \\(\\sqrt{25}=5\\). Phương trình \\(x^2=25\\) yêu cầu mọi số có bình phương bằng 25, gồm 5 và \\(-5\\). Căn bậc ba của số âm tồn tại vì \\((-3)^3=-27\\), nên \\(\\sqrt[3]{-27}=-3\\). Không từ đó suy rộng lũy thừa cơ số âm cho mọi số mũ thực.",
     "skill_ids": [
       "G11-B18-POWER_RATIONAL"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Phân biệt căn số học và tập nghiệm phương trình."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -151,12 +247,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Thử −5 trong phương trình; với căn bậc ba, lập phương −3. Ôn TOP04-M02; luyện THPT-TOP04-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Thử \\(-5\\) trong phương trình; với căn bậc ba, lập phương \\(-3\\). Ôn TOP04-M02; luyện THPT-TOP04-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(5;\\ x=\\pm5;\\ 3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(5;\\ x=5;\\) căn bậc ba không xác định."
+      },
+      {
+        "id": "C",
+        "text": "\\(5;\\ x=\\pm5;\\ -3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\pm5;\\ x=5;\\ -3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P01",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B18-P01",
     "stem": "Với \\(a>0\\), rút gọn \\(a^{-\\frac12}\\cdot a^{\\frac32}\\).",
     "answer_key": "a.",
     "worked_solution": "Hai lũy thừa cùng cơ số dương, nên khi nhân ta cộng số mũ: \\(a^{-\\frac12}\\cdot a^{\\frac32}=a^{-\\frac12+\\frac32}=a^1=a\\).",
@@ -164,13 +279,17 @@
       "G11-B18-POWER_LAWS"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Cộng hai số mũ khi nhân cùng cơ số dương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -182,12 +301,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Phân biệt tích hai lũy thừa với lũy thừa của lũy thừa. Ôn TOP04-M04; luyện THPT-G11-CHVI-B18-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Phân biệt tích hai lũy thừa với lũy thừa của lũy thừa. Ôn TOP04-M04; luyện THPT-G11-CHVI-B18-P04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(a^{-2}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(a^{-\\frac34}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(a^2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(a\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P02",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B18-P02",
     "stem": "Tính \\(64^{-\\frac13}\\).",
     "answer_key": "\\(\\frac14\\).",
     "worked_solution": "Do \\(64>0\\), dùng quy tắc số mũ âm và hữu tỉ: \\(64^{-\\frac13}=\\frac1{\\sqrt[3]{64}}=\\frac14\\).",
@@ -195,13 +333,17 @@
       "G11-B18-POWER_RATIONAL"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Lấy căn bậc ba rồi lấy nghịch đảo."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -213,12 +355,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Kiểm \\(4^3=64\\) rồi lấy \\(\\frac14\\), không đổi dấu. Ôn TOP04-M02; luyện THPT-G11-CHVI-B18-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Kiểm \\(4^3=64\\) rồi lấy \\(\\frac14\\), không đổi dấu. Ôn TOP04-M02; luyện THPT-G11-CHVI-B18-C01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac14\\)."
+      },
+      {
+        "id": "B",
+        "text": "4."
+      },
+      {
+        "id": "C",
+        "text": "\\(-4\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac1{64}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P03",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B18-P03",
     "stem": "Tính \\(16^{\\frac34}\\) theo căn bậc bốn.",
     "answer_key": "8.",
     "worked_solution": "Cơ số dương nên \\(16^{\\frac34}=(\\sqrt[4]{16})^3=2^3=8\\). Căn bậc bốn là 2, không lấy cả hai dấu.",
@@ -226,13 +387,17 @@
       "G11-B18-POWER_RATIONAL"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tìm căn bậc bốn của 16."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -244,12 +409,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Kiểm \\(2^4=16\\), sau đó lập phương. Ôn TOP04-M02; luyện THPT-G11-CHVI-B18-C02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Kiểm \\(2^4=16\\), sau đó lập phương. Ôn TOP04-M02; luyện THPT-G11-CHVI-B18-C02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "64."
+      },
+      {
+        "id": "B",
+        "text": "8."
+      },
+      {
+        "id": "C",
+        "text": "2."
+      },
+      {
+        "id": "D",
+        "text": "4."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P04",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B18-P04",
     "stem": "Với \\(a>0\\), rút gọn \\((a^{\\frac23})^{\\frac32}\\).",
     "answer_key": "a.",
     "worked_solution": "Vì a dương, áp dụng quy tắc lũy thừa của lũy thừa: \\((a^{\\frac23})^{\\frac32}=a^{\\frac23\\cdot\\frac32}=a\\). Giả thiết dương bảo đảm các lũy thừa thực có nghĩa.",
@@ -257,13 +441,17 @@
       "G11-B18-POWER_LAWS"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Nhân hai số mũ khi lấy lũy thừa của lũy thừa."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -275,12 +463,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Với a dương, dùng \\((a^p)^q=a^{pq}\\). Ôn TOP04-M04; luyện THPT-G11-CHVI-B18-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Với a dương, dùng \\((a^p)^q=a^{pq}\\). Ôn TOP04-M04; luyện THPT-G11-CHVI-B18-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(a^{\\frac49}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(a^{\\frac94}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(a\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(a^{\\frac{13}6}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P05",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B18-P05",
     "stem": "Vốn 400 triệu đồng tăng 5% mỗi năm, lãi nhập gốc cuối mỗi năm. Sau 2 năm có bao nhiêu triệu đồng (bỏ qua phí)?",
     "answer_key": "441 triệu đồng.",
     "worked_solution": "Mỗi năm, số dư được nhân với \\(1+\\frac5{100}=1{,}05\\). Sau năm đầu có \\(400\\cdot1{,}05=420\\) triệu đồng. Năm thứ hai tính lãi trên 420 triệu, nên số dư là \\(400\\cdot1{,}05^2=441\\) triệu đồng.",
@@ -288,13 +495,17 @@
       "G11-B18-GROWTH_MODEL"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "APPLY",
     "hints": [
       "Mỗi năm nhân số dư hiện có với 1,05."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -306,26 +517,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Lập số dư sau năm thứ nhất rồi tính năm thứ hai trên số dư mới. Ôn TOP04-M17; luyện THPT-TOP04-P21."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Lập số dư sau năm thứ nhất rồi tính năm thứ hai trên số dư mới. Ôn TOP04-M17; luyện THPT-TOP04-P21.",
+    "options": [
+      {
+        "id": "A",
+        "text": "440 triệu đồng."
+      },
+      {
+        "id": "B",
+        "text": "420 triệu đồng."
+      },
+      {
+        "id": "C",
+        "text": "484 triệu đồng."
+      },
+      {
+        "id": "D",
+        "text": "441 triệu đồng."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P06",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Một bạn viết \\(2^2+2^3=2^5\\). Nêu lỗi và tính kết quả đúng.",
+    "content_version": "CD04-BANK-CP124-20261127-B18-P06",
+    "stem": "Một bạn viết \\(2^2+2^3=2^5\\). Nêu lỗi và tính kết quả đúng. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "12; quy tắc cộng số mũ không áp dụng cho phép cộng hai lũy thừa.",
     "worked_solution": "Tính từng lũy thừa: \\(2^2+2^3=4+8=12\\). Quy tắc cộng số mũ chỉ dùng cho tích cùng cơ số: \\(2^2\\cdot2^3=2^5=32\\). Hai phép toán khác nhau.",
     "skill_ids": [
       "G11-B18-POWER_LAWS"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính từng lũy thừa trước."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -337,26 +571,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "So phép cộng 4 và 8 với phép nhân 4 và 8. Ôn TOP04-M04; luyện THPT-G11-CHVI-B18-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "So phép cộng 4 và 8 với phép nhân 4 và 8. Ôn TOP04-M04; luyện THPT-G11-CHVI-B18-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(12\\); cộng số mũ chỉ đúng khi nhân cùng cơ số."
+      },
+      {
+        "id": "B",
+        "text": "\\(32\\); cộng số mũ cho phép cộng."
+      },
+      {
+        "id": "C",
+        "text": "\\(16\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(64\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P07",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Viết 0,0000075 dưới dạng kí hiệu khoa học. Giải thích dấu của số mũ và vì sao \\(75\\cdot10^{-7}\\) không phải dạng chuẩn dù giá trị bằng nhau.",
+    "content_version": "CD04-BANK-CP124-20261127-B18-P07",
+    "stem": "Viết 0,0000075 dưới dạng kí hiệu khoa học. Giải thích dấu của số mũ và vì sao \\(75\\cdot10^{-7}\\) không phải dạng chuẩn dù giá trị bằng nhau. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(7{,}5\\cdot10^{-6}\\). Biểu thức \\(75\\cdot10^{-7}\\) có cùng giá trị nhưng hệ số 75 không thuộc \\([1;10)\\).",
     "worked_solution": "Dời dấu phẩy sang phải sáu vị trí để được 7,5. Để giữ giá trị ban đầu, nhân với \\(10^{-6}\\); số mũ âm phù hợp với số dương nhỏ hơn 1. Hệ số 7,5 thuộc \\([1;10)\\), còn 75 không thuộc đoạn này. Do đó \\(75\\cdot10^{-7}\\) đúng về giá trị nhưng không chuẩn.",
     "skill_ids": [
       "G11-B18-POWER_INTEGER"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đưa hệ số về \\([1;10)\\) rồi đếm số vị trí dịch dấu phẩy."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -368,26 +625,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Kiểm lại giá trị và điều kiện hệ số; số mũ âm phù hợp số dương nhỏ hơn 1. Ôn TOP04-M01; luyện THPT-G11-CHVI-B18-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Kiểm lại giá trị và điều kiện hệ số; số mũ âm phù hợp số dương nhỏ hơn 1. Ôn TOP04-M01; luyện THPT-G11-CHVI-B18-C01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(7{,}5\\cdot10^{-5}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(7{,}5\\cdot10^{-6}\\); hệ số 75 không thuộc \\([1;10)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(75\\cdot10^{-7}\\) là dạng chuẩn."
+      },
+      {
+        "id": "D",
+        "text": "\\(7{,}5\\cdot10^6\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B19-C01",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tính \\(\\log_5 125\\) và giải thích.",
+    "content_version": "CD04-BANK-CP124-20261127-B19-C01",
+    "stem": "Tính \\(\\log_5 125\\) và giải thích. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "3.",
     "worked_solution": "Lôgarit cơ số 5 của 125 là số mũ cần đặt cho 5 để được 125. Vì \\(5^3=125\\) và cơ số 5 hợp lệ, \\(\\log_5 125=3\\).",
     "skill_ids": [
       "G11-B19-LOG_DEFINITION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Tìm t để \\(5^t=125\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -399,26 +679,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Lôgarit tìm số mũ, không phải chia 125 cho 5. Ôn TOP04-M05; luyện THPT-G11-CHVI-B19-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Lôgarit tìm số mũ, không phải chia 125 cho 5. Ôn TOP04-M05; luyện THPT-G11-CHVI-B19-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "5."
+      },
+      {
+        "id": "B",
+        "text": "2."
+      },
+      {
+        "id": "C",
+        "text": "3, vì \\(5^3=125\\)."
+      },
+      {
+        "id": "D",
+        "text": "25."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B19-C02",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Giải thích \\(\\log_2\\frac18=-3\\) bằng lũy thừa.",
+    "content_version": "CD04-BANK-CP124-20261127-B19-C02",
+    "stem": "Giải thích \\(\\log_2\\frac18=-3\\) bằng lũy thừa. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(-3\\).",
     "worked_solution": "Ta có \\(2^{-3}=\\frac1{2^3}=\\frac18\\). Theo định nghĩa, \\(\\log_2\\frac18=-3\\). Giá trị lôgarit có thể âm, dù đối số luôn phải dương.",
     "skill_ids": [
       "G11-B19-LOG_DEFINITION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Đổi lôgarit thành lũy thừa."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -430,12 +733,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Đối số phải dương, nhưng giá trị lôgarit có thể âm. Ôn TOP04-M05; luyện THPT-TOP04-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Đối số phải dương, nhưng giá trị lôgarit có thể âm. Ôn TOP04-M05; luyện THPT-TOP04-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(2^3=\\frac18\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(2^{-8}=\\frac13\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(2^{-3}=-8\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(2^{-3}=\\frac18\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B19-C03",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B19-C03",
     "stem": "\\(\\log_2(-4)\\) có nghĩa trong tập số thực không?",
     "answer_key": "Không.",
     "worked_solution": "Nếu có một giá trị thực x, theo định nghĩa phải có \\(2^x=-4\\). Nhưng \\(2^x>0\\) với mọi x thực. Vì vậy không tồn tại giá trị như thế.",
@@ -443,13 +765,17 @@
       "G11-B19-LOG_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Xét tập giá trị của \\(2^x\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -461,26 +787,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không có số mũ thực nào làm lũy thừa cơ số 2 âm. Ôn TOP04-M06; luyện THPT-G11-CHVI-B19-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không có số mũ thực nào làm lũy thừa cơ số 2 âm. Ôn TOP04-M06; luyện THPT-G11-CHVI-B19-P04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, vì \\(2^x>0\\) với mọi số thực \\(x\\)."
+      },
+      {
+        "id": "B",
+        "text": "Có, bằng 2."
+      },
+      {
+        "id": "C",
+        "text": "Có, bằng \\(-2\\)."
+      },
+      {
+        "id": "D",
+        "text": "Có, bằng 0."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B19-P01",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tính \\(\\log_3\\frac{81}3\\), chỉ rõ điều kiện dùng quy tắc thương.",
+    "content_version": "CD04-BANK-CP124-20261127-B19-P01",
+    "stem": "Tính \\(\\log_3\\frac{81}3\\), chỉ rõ điều kiện dùng quy tắc thương. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "3.",
     "worked_solution": "Cơ số 3 dương và khác 1, hai đối số 81 và 3 đều dương. Áp dụng quy tắc thương: \\(\\log_3\\frac{81}3=\\log_3 81-\\log_3 3=4-1=3\\). Kiểm lại bằng \\(\\frac{81}3=27=3^3\\).",
     "skill_ids": [
       "G11-B19-LOG_LAWS"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Quy tắc thương cần hai đối số dương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -492,26 +841,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Dùng hiệu hai lôgarit, không lấy lôgarit của hiệu hai đối số. Ôn TOP04-M07; luyện THPT-TOP04-P09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Dùng hiệu hai lôgarit, không lấy lôgarit của hiệu hai đối số. Ôn TOP04-M07; luyện THPT-TOP04-P09.",
+    "options": [
+      {
+        "id": "A",
+        "text": "1; chia hai lôgarit."
+      },
+      {
+        "id": "B",
+        "text": "3; cơ số hợp lệ, cả 81 và 3 đều dương."
+      },
+      {
+        "id": "C",
+        "text": "4; bỏ mẫu."
+      },
+      {
+        "id": "D",
+        "text": "\\( \\log_3 78\\); trừ hai đối số."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B19-P02",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Tính \\(\\log_2 8+\\log_2 4\\) và diễn giải bằng quy tắc tích.",
+    "content_version": "CD04-BANK-CP124-20261127-B19-P02",
+    "stem": "Tính \\(\\log_2 8+\\log_2 4\\) và diễn giải bằng quy tắc tích. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "5.",
     "worked_solution": "Cơ số 2 hợp lệ và cả 8, 4 đều dương. Theo quy tắc tích, \\(\\log_2 8+\\log_2 4=\\log_2(8\\cdot4)=\\log_2 32=5\\). Cũng có thể cộng hai số mũ 3 và 2.",
     "skill_ids": [
       "G11-B19-LOG_LAWS"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Gộp tổng hai lôgarit thành lôgarit của tích."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -523,12 +895,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không cộng hai đối số; kiểm \\(2^5=32\\). Ôn TOP04-M07; luyện THPT-G11-CHVI-B19-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không cộng hai đối số; kiểm \\(2^5=32\\). Ôn TOP04-M07; luyện THPT-G11-CHVI-B19-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(6=3\\cdot2\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\log_2 12\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(5=\\log_2(8\\cdot4)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(12=8+4\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B19-P03",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B19-P03",
     "stem": "Tính \\(\\log_4 64\\) và \\(\\log_4\\sqrt4\\).",
     "answer_key": "Lần lượt 3 và \\(\\frac12\\).",
     "worked_solution": "Vì \\(4^3=64\\), \\(\\log_4 64=3\\). Vì \\(4^{\\frac12}=\\sqrt4=2\\), \\(\\log_4\\sqrt4=\\frac12\\). Lôgarit trả lại số mũ.",
@@ -536,13 +927,17 @@
       "G11-B19-LOG_DEFINITION"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Viết 64 và \\(\\sqrt4\\) dưới dạng lũy thừa cơ số 4."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -554,12 +949,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Lôgarit của căn trả số mũ hữu tỉ, không phải căn của lôgarit. Ôn TOP04-M05; luyện THPT-TOP04-P10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Lôgarit của căn trả số mũ hữu tỉ, không phải căn của lôgarit. Ôn TOP04-M05; luyện THPT-TOP04-P10.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(3;\\ 2\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(4;\\ \\frac12\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(16;\\ 2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(3;\\ \\frac12\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B19-P04",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B19-P04",
     "stem": "Tìm điều kiện xác định của \\(\\log_2((x-1)(x+2))\\). Có luôn tách thành tổng hai lôgarit riêng không?",
     "answer_key": "\\(x<-2\\) hoặc \\(x>1\\); không tách được trên toàn miền.",
     "worked_solution": "Đối số phải dương: \\((x-1)(x+2)>0\\). Hai thừa số cùng dấu khi \\(x<-2\\) hoặc \\(x>1\\). Chỉ trên \\(x>1\\) cả hai thừa số dương, mới dùng được \\(\\log_2(x-1)+\\log_2(x+2)\\). Trên \\(x<-2\\) tích vẫn dương nhưng hai lôgarit riêng không xác định.",
@@ -567,13 +981,17 @@
       "G11-B19-LOG_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Xét dấu tích rồi kiểm điều kiện từng lôgarit riêng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -585,12 +1003,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Thử x bằng −3: tích dương nhưng hai thừa số âm. Ôn TOP04-M06; luyện THPT-TOP04-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Thử x bằng \\(-3\\): tích dương nhưng hai thừa số âm. Ôn TOP04-M06; luyện THPT-TOP04-P07.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x<-2\\) hoặc \\(x>1\\); chỉ tách được khi \\(x>1\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x>1\\); đó là toàn miền."
+      },
+      {
+        "id": "C",
+        "text": "\\(-2<x<1\\); tách được toàn miền."
+      },
+      {
+        "id": "D",
+        "text": "\\(x<-2\\) hoặc \\(x>1\\); tách được toàn miền."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B19-P05",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B19-P05",
     "stem": "Viết \\(\\log_2 7\\) theo lôgarit tự nhiên và nêu điều kiện cơ số.",
     "answer_key": "\\(\\frac{\\ln7}{\\ln2}\\).",
     "worked_solution": "Cơ số của lôgarit phải dương, khác 1; đối số phải dương. Ở đây 2 và 7 thỏa điều kiện, cơ số e của ln cũng hợp lệ. Theo công thức đổi cơ số, \\(\\log_2 7=\\frac{\\ln7}{\\ln2}\\), với \\(\\ln2\\ne0\\).",
@@ -598,13 +1035,17 @@
       "G11-B19-LOG_BASE_CHANGE"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Dùng công thức đổi cơ số."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -616,12 +1057,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Đặt \\(t=\\log_2 7\\), lấy ln hai vế của \\(2^t=7\\) để kiểm thứ tự. Ôn TOP04-M08; luyện THPT-TOP04-P10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Đặt \\(t=\\log_2 7\\), lấy ln hai vế của \\(2^t=7\\) để kiểm thứ tự. Ôn TOP04-M08; luyện THPT-TOP04-P10.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\ln(7-2)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{\\ln7}{\\ln2}\\); cơ số 2 dương, khác 1."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{\\ln2}{\\ln7}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\ln7-\\ln2\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B19-P06",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B19-P06",
     "stem": "Một đại lượng ban đầu bằng 50 đơn vị, tăng theo mô hình \\(N(t)=50\\cdot2^t\\), trong đó t là thời gian tính theo kỳ, \\(t\\ge0\\) và t có thể nhận giá trị thực. (a) Tìm thời điểm đạt đúng 600 đơn vị, biểu diễn kết quả bằng lôgarit. (b) Không dùng máy tính, xác định thời điểm đó nằm giữa hai kỳ nguyên liên tiếp nào. (c) Nếu chỉ kiểm tra đại lượng vào cuối mỗi kỳ nguyên, cuối kỳ nào lần đầu ghi nhận ít nhất 600 đơn vị?",
     "answer_key": "(a) \\(t=\\log_2 12\\) kỳ. (b) \\(3<t<4\\). (c) Cuối kỳ thứ 4.",
     "worked_solution": "(a) Đạt đúng 600 đơn vị nghĩa là \\(50\\cdot2^t=600\\), hay \\(2^t=12\\). Không thể tìm số mũ nguyên cho 12 vì 12 không phải lũy thừa nguyên của 2. Theo định nghĩa lôgarit, số mũ cần tìm là \\(t=\\log_2 12\\). Đối số 12 dương, cơ số 2 hợp lệ và nghiệm thuộc miền thời gian vì \\(12>1\\). (b) Ta có \\(2^3=8<12<16=2^4\\). Hàm mũ cơ số 2 đồng biến, nên \\(3<\\log_2 12<4\\). (c) Ở cuối kỳ thứ 3, \\(N(3)=400\\); cuối kỳ thứ 4, \\(N(4)=800\\). Vì N tăng, kỳ thứ 4 là kỳ nguyên đầu tiên ghi nhận ít nhất 600 đơn vị. Thời điểm đạt đúng ngưỡng trong mô hình liên tục và thời điểm ghi nhận theo kỳ nguyên là hai kết quả khác nhau.",
@@ -629,14 +1089,18 @@
       "G11-B19-LOG_APPLICATION"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Chia cả hai vế cho 50 để tìm số mũ chưa biết.",
       "Kẹp 12 giữa hai lũy thừa nguyên liên tiếp của 2."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -648,12 +1112,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Lôgarit cho số mũ cần tìm ngay cả khi số mũ không nguyên. Phân biệt thời gian thực với thời điểm quan sát theo kỳ nguyên. Ôn Toán 11 Bài 19; xem TOP04-M17."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Lôgarit cho số mũ cần tìm ngay cả khi số mũ không nguyên. Phân biệt thời gian thực với thời điểm quan sát theo kỳ nguyên. Ôn Toán 11 Bài 19; xem TOP04-M17.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(t=\\log_2 12\\), \\(3<t<4\\), cuối kỳ 3."
+      },
+      {
+        "id": "B",
+        "text": "\\(t=4\\), đạt đúng 600 ở cuối kỳ 4."
+      },
+      {
+        "id": "C",
+        "text": "\\(t=\\log_2 12\\), \\(3<t<4\\), cuối kỳ 4."
+      },
+      {
+        "id": "D",
+        "text": "\\(t=12\\), cuối kỳ 12."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B20-C01",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B20-C01",
     "stem": "Hàm \\(f(x)=5^x\\) có tập xác định, tập giá trị và giao điểm với trục tung là gì?",
     "answer_key": "Tập xác định \\(\\mathbb R\\); tập giá trị \\((0;+\\infty)\\); giao điểm \\((0;1)\\).",
     "worked_solution": "Mọi số mũ thực đều hợp lệ vì cơ số 5 dương. Lũy thừa luôn dương; ngược lại với mỗi \\(y>0\\), chọn \\(x=\\log_5 y\\) thì \\(5^x=y\\). Vậy tập giá trị là \\((0;+\\infty)\\). Tại x bằng 0, \\(f(0)=1\\), nên giao Oy tại \\((0;1)\\).",
@@ -661,13 +1144,17 @@
       "G11-B20-EXP_FUNCTION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Kiểm miền số mũ, tập giá trị và giá trị tại 0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -679,26 +1166,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không nhận 0 vào tập giá trị; mỗi đầu ra dương đều có số mũ tương ứng. Ôn TOP04-M09; luyện THPT-TOP04-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không nhận 0 vào tập giá trị; mỗi đầu ra dương đều có số mũ tương ứng. Ôn TOP04-M09; luyện THPT-TOP04-P12.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(D=(0;+\\infty),\\ T=\\mathbb R\\), giao \\((0;1)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(D=\\mathbb R,\\ T=[0;+\\infty)\\), giao \\((0;0)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(D=\\mathbb R,\\ T=\\mathbb R\\), giao \\((0;5)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(D=\\mathbb R,\\ T=(0;+\\infty)\\), giao Oy tại \\((0;1)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B20-C02",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Hàm \\(f(x)=(\\frac15)^x\\) đồng biến hay nghịch biến? Giải thích.",
+    "content_version": "CD04-BANK-CP124-20261127-B20-C02",
+    "stem": "Hàm \\(f(x)=(\\frac15)^x\\) đồng biến hay nghịch biến? Giải thích. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Nghịch biến trên \\(\\mathbb R\\).",
     "worked_solution": "Với \\(x_1<x_2\\), đặt \\(d=x_2-x_1>0\\). Vì \\(0<\\frac15<1\\), có \\(0<(\\frac15)^d<1\\). Do \\(f(x_1)>0\\), suy ra \\(f(x_2)=f(x_1)(\\frac15)^d<f(x_1)\\). Vậy hàm nghịch biến trên toàn tập số thực, không chỉ trên các số nguyên.",
     "skill_ids": [
       "G11-B20-EXP_MONOTONIC"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "So hai số mũ bất kì bằng tỉ số hai lũy thừa."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -710,12 +1220,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không chỉ thử số mũ nguyên; dùng tính chất lũy thừa cơ số giữa 0 và 1. Ôn TOP04-M10; luyện THPT-TOP04-P14."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không chỉ thử số mũ nguyên; dùng tính chất lũy thừa cơ số giữa 0 và 1. Ôn TOP04-M10; luyện THPT-TOP04-P14.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nghịch biến trên \\(\\mathbb R\\), vì \\(0<\\frac15<1\\)."
+      },
+      {
+        "id": "B",
+        "text": "Đồng biến trên \\(\\mathbb R\\)."
+      },
+      {
+        "id": "C",
+        "text": "Nghịch biến chỉ với \\(x>0\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không đổi trên \\(\\mathbb R\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B20-C03",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B20-C03",
     "stem": "Tìm tập xác định của \\(g(x)=\\log_3(x-2)\\).",
     "answer_key": "\\((2;+\\infty)\\).",
     "worked_solution": "Cơ số 3 hợp lệ. Đối số phải dương: \\(x-2>0\\), tương đương \\(x>2\\). Mốc 2 không được nhận vì lôgarit của 0 không xác định.",
@@ -723,13 +1252,17 @@
       "G11-B20-LOG_FUNCTION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Đối số của lôgarit phải dương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -741,12 +1274,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không nhận x bằng 2 vì lôgarit của 0 không xác định. Ôn TOP04-M11; luyện THPT-TOP04-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không nhận x bằng 2 vì lôgarit của 0 không xác định. Ôn TOP04-M11; luyện THPT-TOP04-P15.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\mathbb R\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\((2;+\\infty)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\([2;+\\infty)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\((-\\infty;2)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B20-C04",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B20-C04",
     "stem": "Đồ thị \\(y=3^x\\) đi qua \\((3;27)\\). Đồ thị \\(y=\\log_3 x\\) có điểm nào tương ứng?",
     "answer_key": "\\((27;3)\\).",
     "worked_solution": "Hai hàm là hàm ngược: \\(3^3=27\\) tương đương \\(\\log_3 27=3\\). Vì vậy hoán đổi hoành độ và tung độ được điểm \\((27;3)\\) trên đồ thị lôgarit.",
@@ -754,13 +1306,17 @@
       "G11-B20-INVERSE_GRAPH"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Đổi chỗ hoành độ và tung độ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -772,12 +1328,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Kiểm \\(\\log_3 27=3\\). Ôn TOP04-M12; luyện THPT-TOP04-P16."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Kiểm \\(\\log_3 27=3\\). Ôn TOP04-M12; luyện THPT-TOP04-P16.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((-3;27)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\((27;-3)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\((27;3)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\((3;27)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B20-P01",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B20-P01",
     "stem": "Tìm \\(x>0\\) sao cho \\(\\log_2 x=-1\\).",
     "answer_key": "\\(x=\\frac12\\).",
     "worked_solution": "Đối số dương, cơ số 2 hợp lệ. Theo định nghĩa, \\(\\log_2 x=-1\\) tương đương \\(x=2^{-1}=\\frac12\\). Giá trị này dương nên nhận.",
@@ -785,13 +1360,17 @@
       "G11-B20-LOG_FUNCTION"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
-      "Đổi lôgarit bằng −1 thành lũy thừa."
+      "Đổi lôgarit bằng \\(-1\\) thành lũy thừa."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -803,12 +1382,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Kiểm \\(2^{-1}=\\frac12>0\\). Ôn TOP04-M11; luyện THPT-TOP04-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Kiểm \\(2^{-1}=\\frac12>0\\). Ôn TOP04-M11; luyện THPT-TOP04-P15.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=-2\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x=2\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x=-1\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x=\\frac12\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B20-P02",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B20-P02",
     "stem": "So sánh \\(3^{\\frac12}\\) và \\(3^1\\) mà không dùng máy tính.",
     "answer_key": "\\(3^{\\frac12}<3^1\\).",
     "worked_solution": "Vì cơ số 3 lớn hơn 1, hàm \\(y=3^x\\) đồng biến trên tập số thực. Từ \\(\\frac12<1\\), suy ra \\(3^{\\frac12}<3^1=3\\).",
@@ -816,13 +1414,17 @@
       "G11-B20-EXP_MONOTONIC"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So sánh hai số mũ với cơ số lớn hơn 1."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -834,27 +1436,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Cơ số 3 làm hàm đồng biến, không đảo chiều. Ôn TOP04-M10; luyện THPT-TOP04-P14."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Cơ số 3 làm hàm đồng biến, không đảo chiều. Ôn TOP04-M10; luyện THPT-TOP04-P14.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(3^{\\frac12}<3^1\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(3^{\\frac12}>3^1\\)."
+      },
+      {
+        "id": "C",
+        "text": "Hai giá trị bằng nhau."
+      },
+      {
+        "id": "D",
+        "text": "Không xác định được vì số mũ phân số."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B20-P03",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Cho \\(g(x)=\\log_{\\frac12}x\\). Không dùng máy tính. (a) Sắp xếp \\(g(\\frac13),g(1),g(3)\\) theo thứ tự tăng dần và xác định dấu của từng giá trị. (b) Tìm hai số nguyên liên tiếp kẹp \\(g(3)\\). (c) Một bạn cho rằng vì \\(3>1\\) nên \\(g(3)>0\\). Hãy giải thích lỗi của bạn bằng tính biến thiên.",
+    "content_version": "CD04-BANK-CP124-20261127-B20-P03",
+    "stem": "Cho \\(g(x)=\\log_{\\frac12}x\\). Không dùng máy tính. (a) Sắp xếp \\(g(\\frac13),g(1),g(3)\\) theo thứ tự tăng dần và xác định dấu của từng giá trị. (b) Tìm hai số nguyên liên tiếp kẹp \\(g(3)\\). (c) Một bạn cho rằng vì \\(3>1\\) nên \\(g(3)>0\\). Hãy giải thích lỗi của bạn bằng tính biến thiên. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(g(3)<g(1)=0<g(\\frac13)\\); \\(-2<g(3)<-1\\). Hàm nghịch biến nên đối số lớn hơn 1 cho giá trị âm.",
     "worked_solution": "Cơ số \\(\\frac12\\) thuộc khoảng \\((0;1)\\), nên g nghịch biến trên \\((0;+\\infty)\\). Vì \\(\\frac13<1<3\\), thứ tự giá trị bị đảo: \\(g(\\frac13)>g(1)>g(3)\\). Lại có \\(g(1)=0\\), nên giá trị ở \\(\\frac13\\) dương, giá trị ở 3 âm. Để kẹp \\(g(3)\\), nhận thấy \\(2<3<4\\). Do g nghịch biến, \\(g(4)<g(3)<g(2)\\). Từ \\((\\frac12)^{-2}=4\\) và \\((\\frac12)^{-1}=2\\), suy ra \\(-2<g(3)<-1\\). Bạn đã dùng nhầm quy luật của lôgarit có cơ số lớn hơn 1: khi cơ số nhỏ hơn 1, đối số tăng thì giá trị lôgarit giảm.",
     "skill_ids": [
       "G11-B20-LOG_MONOTONIC"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "So sánh các đối số với 1 và nhớ \\(g(1)=0\\).",
       "Kẹp 3 giữa hai lũy thừa của 2 rồi chú ý chiều so sánh."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -866,26 +1491,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không suy dấu lôgarit chỉ từ đối số lớn hơn hay nhỏ hơn 1; phải xét cơ số. Ôn TOP04-M11; luyện THPT-TOP04-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không suy dấu lôgarit chỉ từ đối số lớn hơn hay nhỏ hơn 1; phải xét cơ số. Ôn TOP04-M11; luyện THPT-TOP04-P15.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(g(3)=g(\\frac13)>0\\); \\(g(1)=0\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(g(3)<g(1)=0<g(\\frac13)\\); \\(-2<g(3)<-1\\), vì g nghịch biến."
+      },
+      {
+        "id": "C",
+        "text": "\\(g(\\frac13)<g(1)<g(3)\\); \\(1<g(3)<2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(g(3)<g(1)<g(\\frac13)\\); \\(-1<g(3)<0\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B20-P04",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Mô hình \\(N(t)=20(\\frac32)^t\\) với \\(t\\ge0\\) (kỳ, xét t thực). (a) Tính \\(N(2)\\) và giải thích tính tăng. (b) Viết hàm ngược t theo N và nêu miền của hàm ngược.",
+    "content_version": "CD04-BANK-CP124-20261127-B20-P04",
+    "stem": "Mô hình \\(N(t)=20(\\frac32)^t\\) với \\(t\\ge0\\) (kỳ, xét t thực). (a) Tính \\(N(2)\\) và giải thích tính tăng. (b) Viết hàm ngược t theo N và nêu miền của hàm ngược. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(N(2)=45\\), N tăng; \\(t=\\log_{\\frac32}\\frac N{20}\\) với \\(N\\ge20\\).",
     "worked_solution": "(a) \\(N(2)=20(\\frac32)^2=45\\). Cơ số lớn hơn 1 và hệ số 20 dương nên N tăng theo t. (b) Từ \\(\\frac N{20}=(\\frac32)^t\\), suy ra \\(t=\\log_{\\frac32}\\frac N{20}\\). Vì \\(t\\ge0\\), N nhận mọi giá trị trong \\([20;+\\infty)\\), là miền của hàm ngược. Thử N bằng 45 cho t bằng 2. Nếu chỉ xét kỳ nguyên, miền hàm ngược chỉ gồm các giá trị N tương ứng kỳ nguyên.",
     "skill_ids": [
       "G11-B20-INVERSE_GRAPH"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Tính N tại 2 rồi giải phương trình theo t."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -897,12 +1545,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Miền hàm ngược phải là tập giá trị của mô hình với t không âm. Ôn TOP04-M12; luyện THPT-TOP04-P16."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Miền hàm ngược phải là tập giá trị của mô hình với t không âm. Ôn TOP04-M12; luyện THPT-TOP04-P16.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(N(2)=45\\), N giảm; \\(t=\\log_{\\frac32}\\frac N{20}\\) với \\(N>0\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(N(2)=45\\), N tăng; \\(t=\\frac N{20}\\), \\(N\\ge20\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(N(2)=45\\), N tăng; \\(t=\\log_{\\frac32}\\frac N{20}\\) với \\(N\\ge20\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(N(2)=60\\), N tăng; \\(t=\\log_{\\frac32}N\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-C01",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B21-C01",
     "stem": "Giải \\(2^{x+1}=16\\).",
     "answer_key": "\\(x=3\\).",
     "worked_solution": "Vì \\(16=2^4\\) và hàm mũ cơ số 2 đồng biến, phương trình tương đương \\(x+1=4\\). Suy ra \\(x=3\\); thay lại được 16.",
@@ -910,13 +1577,17 @@
       "G11-B21-EXP_EQUATION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Viết \\(16=2^4\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -928,12 +1599,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Giữ toàn bộ số mũ \\(x+1\\) khi so sánh. Ôn TOP04-M13; luyện THPT-G11-CHVI-B21-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Giữ toàn bộ số mũ \\(x+1\\) khi so sánh. Ôn TOP04-M13; luyện THPT-G11-CHVI-B21-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=4\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x=7\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x=15\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x=3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-C02",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B21-C02",
     "stem": "Giải \\(\\log_3(x-2)=2\\), kèm điều kiện xác định.",
     "answer_key": "\\(x=11\\).",
     "worked_solution": "Điều kiện \\(x-2>0\\), tức \\(x>2\\). Trên miền này, phương trình tương đương \\(x-2=3^2=9\\), cho \\(x=11\\). Nghiệm thỏa điều kiện.",
@@ -941,13 +1631,17 @@
       "G11-B21-LOG_EQUATION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Ghi điều kiện đối số dương rồi đổi sang lũy thừa."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -959,12 +1653,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Kiểm nghiệm tìm được trong phương trình ban đầu. Ôn TOP04-M14; luyện THPT-G11-CHVI-B21-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Kiểm nghiệm tìm được trong phương trình ban đầu. Ôn TOP04-M14; luyện THPT-G11-CHVI-B21-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=11\\), thỏa \\(x>2\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x=9\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x=4\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x=0\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-C03",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B21-C03",
     "stem": "Giải \\((\\frac12)^x>(\\frac12)^2\\).",
     "answer_key": "\\(x<2\\).",
     "worked_solution": "Hàm mũ cơ số \\(\\frac12\\) nghịch biến vì cơ số nằm giữa 0 và 1. Vì thế so sánh hai giá trị mũ phải đảo chiều khi chuyển sang so sánh số mũ. Bất phương trình tương đương \\(x<2\\).",
@@ -972,13 +1685,17 @@
       "G11-B21-EXP_INEQUALITY"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Cơ số \\(\\frac12\\) nhỏ hơn 1."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -990,12 +1707,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Đảo chiều khi so sánh số mũ; thử x bằng 1 và 3. Ôn TOP04-M15; luyện THPT-G11-CHVI-B21-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Đảo chiều khi so sánh số mũ; thử x bằng 1 và 3. Ôn TOP04-M15; luyện THPT-G11-CHVI-B21-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x\\ge2\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x<2\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x>2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x\\le2\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-C04",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B21-C04",
     "stem": "Giải \\(\\log_2(x-1)\\ge\\log_2 3\\).",
     "answer_key": "\\(x\\ge4\\).",
     "worked_solution": "Điều kiện \\(x>1\\). Vì lôgarit cơ số 2 đồng biến, bất phương trình tương đương \\(x-1\\ge3\\), tức \\(x\\ge4\\). Giao với điều kiện xác định vẫn là \\([4;+\\infty)\\).",
@@ -1003,13 +1739,17 @@
       "G11-B21-LOG_INEQUALITY"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Ghi điều kiện \\(x>1\\), cơ số 2 đồng biến."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1021,26 +1761,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Giao kết quả với miền xác định; không nhận x bằng 1. Ôn TOP04-M16; luyện THPT-G11-CHVI-B21-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Giao kết quả với miền xác định; không nhận x bằng 1. Ôn TOP04-M16; luyện THPT-G11-CHVI-B21-P04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(1<x\\le4\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x\\ge3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x\\ge4\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x>4\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P01",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B21-P01",
     "stem": "Giải \\(5^{2x-1}=\\frac1{25}\\).",
     "answer_key": "\\(x=-\\frac12\\).",
-    "worked_solution": "Viết \\(\\frac1{25}=5^{-2}\\). Vì hàm mũ cơ số 5 đơn ánh, \\(2x-1=-2\\), suy ra \\(x=-\\frac12\\). Thay lại, số mũ bằng −2, đúng.",
+    "worked_solution": "Viết \\(\\frac1{25}=5^{-2}\\). Vì hàm mũ cơ số 5 đơn ánh, \\(2x-1=-2\\), suy ra \\(x=-\\frac12\\). Thay lại, số mũ bằng \\(-2\\), đúng.",
     "skill_ids": [
       "G11-B21-EXP_EQUATION"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Viết \\(\\frac1{25}=5^{-2}\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1052,12 +1815,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Giữ dấu âm của số mũ khi giải. Ôn TOP04-M13; luyện THPT-G11-CHVI-B21-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Giữ dấu âm của số mũ khi giải. Ôn TOP04-M13; luyện THPT-G11-CHVI-B21-C01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=\\frac32\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x=-2\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x=\\frac12\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x=-\\frac12\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P02",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B21-P02",
     "stem": "Giải \\(\\log_{\\frac12}(x+2)=-2\\).",
     "answer_key": "\\(x=2\\).",
     "worked_solution": "Điều kiện \\(x>-2\\). Theo định nghĩa, \\(x+2=(\\frac12)^{-2}=4\\), nên \\(x=2\\). Nghiệm thỏa điều kiện và đối số bằng 4.",
@@ -1065,13 +1847,17 @@
       "G11-B21-LOG_EQUATION"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Kiểm \\(x+2>0\\) rồi đổi sang lũy thừa."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1083,12 +1869,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tính nghịch đảo của \\((\\frac12)^2\\), không lấy chính bình phương. Ôn TOP04-M14; luyện THPT-G11-CHVI-B21-C02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Tính nghịch đảo của \\((\\frac12)^2\\), không lấy chính bình phương. Ôn TOP04-M14; luyện THPT-G11-CHVI-B21-C02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=2\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x=-\\frac74\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x=4\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x=-4\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P03",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B21-P03",
     "stem": "Giải \\((\\frac13)^{2x-1}\\le(\\frac13)^3\\).",
     "answer_key": "\\(x\\ge2\\).",
     "worked_solution": "Vì \\(0<\\frac13<1\\), hàm mũ nghịch biến. Bất phương trình tương đương \\(2x-1\\ge3\\), tức \\(x\\ge2\\). Dấu bằng được giữ, nên nhận x bằng 2.",
@@ -1096,13 +1901,17 @@
       "G11-B21-EXP_INEQUALITY"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Cơ số nhỏ hơn 1 nên đảo chiều khi so sánh mũ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1114,12 +1923,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Giữ dấu bằng; kiểm x bằng 2 và 3. Ôn TOP04-M15; luyện THPT-G11-CHVI-B21-C03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Giữ dấu bằng; kiểm x bằng 2 và 3. Ôn TOP04-M15; luyện THPT-G11-CHVI-B21-C03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x\\ge3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x\\ge2\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x\\le2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x>2\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P04",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B21-P04",
     "stem": "Giải \\(\\log_{\\frac14}(x-1)>\\log_{\\frac14}4\\).",
     "answer_key": "\\(1<x<5\\).",
     "worked_solution": "Điều kiện \\(x-1>0\\). Hàm lôgarit cơ số \\(\\frac14\\) nghịch biến nên bất phương trình tương đương \\(x-1<4\\). Kết hợp điều kiện, \\(0<x-1<4\\), tức \\(1<x<5\\). Không nhận hai đầu mút.",
@@ -1127,13 +1955,17 @@
       "G11-B21-LOG_INEQUALITY"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Ghi miền xác định trước khi đảo chiều."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1145,12 +1977,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không quên cận dưới x lớn hơn 1. Ôn TOP04-M16; luyện THPT-TOP04-P20."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không quên cận dưới x lớn hơn 1. Ôn TOP04-M16; luyện THPT-TOP04-P20.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(1<x\\le5\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x<5\\), không cần điều kiện."
+      },
+      {
+        "id": "C",
+        "text": "\\(1<x<5\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x>5\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P05",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B21-P05",
     "stem": "Giải \\(\\log_3(x-4)=\\log_3(2-x)\\) trên \\(\\mathbb R\\).",
     "answer_key": "Vô nghiệm.",
     "worked_solution": "Hai đối số phải đồng thời dương: \\(x-4>0\\) và \\(2-x>0\\), tức \\(x>4\\) và \\(x<2\\). Không có số thực nào thỏa cả hai điều kiện. Vì vậy phương trình vô nghiệm ngay từ miền xác định; không nhận x bằng 3 từ việc đặt hai đối số bằng nhau.",
@@ -1158,13 +2009,17 @@
       "G11-B21-DOMAIN_CHECK"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Giao hai điều kiện đối số dương trước khi giải."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1176,12 +2031,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhận x bằng 3, hai đối số đều âm nên loại. Ôn TOP04-M18; luyện THPT-TOP04-P22."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhận x bằng 3, hai đối số đều âm nên loại. Ôn TOP04-M18; luyện THPT-TOP04-P22.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x=4\\)."
+      },
+      {
+        "id": "C",
+        "text": "Mọi \\(2<x<4\\)."
+      },
+      {
+        "id": "D",
+        "text": "Vô nghiệm, vì không thể đồng thời \\(x>4\\) và \\(x<2\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P06",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "content_version": "CD04-BANK-CP124-20261127-B21-P06",
     "stem": "Vốn 100 triệu đồng tăng 10% cuối mỗi năm, lãi nhập gốc, n nguyên không âm. Cuối năm nào vốn lần đầu tiên vượt 121 triệu đồng?",
     "answer_key": "Cuối năm thứ 3.",
     "worked_solution": "Sau n năm, vốn là \\(100\\cdot1{,}1^n\\) triệu đồng. Điều kiện vượt 121 tương đương \\(1{,}1^n>1{,}21=1{,}1^2\\). Vì cơ số lớn hơn 1, suy ra \\(n>2\\). Chỉ số nguyên nhỏ nhất thỏa là 3. Cuối năm thứ hai mới bằng 121, chưa vượt.",
@@ -1189,13 +2063,17 @@
       "G11-B21-REAL_CONTEXT"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Phân biệt vượt với bằng; n là số nguyên."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1207,27 +2085,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Cuối năm hai mới bằng 121; cần năm đầu tiên lớn hơn 121. Ôn TOP04-M17; luyện THPT-TOP04-P21."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Cuối năm hai mới bằng 121; cần năm đầu tiên lớn hơn 121. Ôn TOP04-M17; luyện THPT-TOP04-P21.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuối năm thứ 3."
+      },
+      {
+        "id": "B",
+        "text": "Cuối năm thứ 2."
+      },
+      {
+        "id": "C",
+        "text": "Cuối năm thứ 1."
+      },
+      {
+        "id": "D",
+        "text": "Cuối năm thứ 4."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P07",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Xét phương trình \\(2^{x+1}=m-3\\), với m là số thực cho trước. (a) Tìm điều kiện của m để phương trình có nghiệm thực và giải thích vì sao nghiệm là duy nhất khi tồn tại. (b) Viết nghiệm theo m. (c) Với \\(m=7\\), \\(m=3\\) và \\(m=2\\), hãy kết luận riêng từng trường hợp.",
+    "content_version": "CD04-BANK-CP124-20261127-B21-P07",
+    "stem": "Xét phương trình \\(2^{x+1}=m-3\\), với m là số thực cho trước. (a) Tìm điều kiện của m để phương trình có nghiệm thực và giải thích vì sao nghiệm là duy nhất khi tồn tại. (b) Viết nghiệm theo m. (c) Với \\(m=7\\), \\(m=3\\) và \\(m=2\\), hãy kết luận riêng từng trường hợp. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Có đúng một nghiệm khi \\(m>3\\), khi đó \\(x=\\log_2(m-3)-1\\). Với \\(m=7\\), \\(x=1\\); với \\(m=3\\) hoặc \\(m=2\\), vô nghiệm.",
-    "worked_solution": "Vế trái \\(2^{x+1}\\) luôn dương với mọi x thực, nên nếu \\(m-3\\le0\\), phương trình không có nghiệm. Nếu \\(m-3>0\\), hàm mũ cơ số 2 nhận mọi giá trị dương và đồng biến nghiêm ngặt, vì vậy phương trình có đúng một nghiệm. Theo định nghĩa lôgarit, \\(x+1=\\log_2(m-3)\\), suy ra \\(x=\\log_2(m-3)-1\\). Công thức chỉ có nghĩa khi \\(m>3\\). Với \\(m=7\\), phương trình là \\(2^{x+1}=4=2^2\\), nên \\(x=1\\). Với \\(m=3\\), vế phải bằng 0; với \\(m=2\\), vế phải bằng −1. Cả hai đều nằm ngoài tập giá trị của vế trái, nên vô nghiệm.",
+    "worked_solution": "Vế trái \\(2^{x+1}\\) luôn dương với mọi x thực, nên nếu \\(m-3\\le0\\), phương trình không có nghiệm. Nếu \\(m-3>0\\), hàm mũ cơ số 2 nhận mọi giá trị dương và đồng biến nghiêm ngặt, vì vậy phương trình có đúng một nghiệm. Theo định nghĩa lôgarit, \\(x+1=\\log_2(m-3)\\), suy ra \\(x=\\log_2(m-3)-1\\). Công thức chỉ có nghĩa khi \\(m>3\\). Với \\(m=7\\), phương trình là \\(2^{x+1}=4=2^2\\), nên \\(x=1\\). Với \\(m=3\\), vế phải bằng 0; với \\(m=2\\), vế phải bằng \\(-1\\). Cả hai đều nằm ngoài tập giá trị của vế trái, nên vô nghiệm.",
     "skill_ids": [
       "G11-B21-EXP_EQUATION"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Xét tập giá trị của hàm mũ trước khi lấy lôgarit.",
       "Nếu vế phải dương, dùng định nghĩa lôgarit và tính đơn ánh của hàm mũ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1239,26 +2140,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không lấy lôgarit trước khi kiểm đối số dương. Tách trường hợp vế phải bằng 0, âm hoặc dương. Ôn TOP04-M13; luyện THPT-TOP04-P17."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không lấy lôgarit trước khi kiểm đối số dương. Tách trường hợp vế phải bằng 0, âm hoặc dương. Ôn TOP04-M13; luyện THPT-TOP04-P17.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(m>3\\): \\(x=\\log_2(m-3)+1\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(m>3\\): duy nhất \\(x=\\log_2(m-3)-1\\); \\(m=7:x=1\\); \\(m=3,2\\): vô nghiệm."
+      },
+      {
+        "id": "C",
+        "text": "Mọi \\(m\\in\\mathbb R\\) có đúng một nghiệm."
+      },
+      {
+        "id": "D",
+        "text": "\\(m\\ge3\\): duy nhất \\(x=\\log_2(m-3)-1\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P08",
-    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Một bạn nói: “\\(\\log_2(2^x)=2x\\) và \\(y=\\log_2 x\\) xác định với mọi x thực vì \\(y=2^x\\) có tập xác định \\(\\mathbb R\\)”. Sửa hai lỗi khái niệm và giải thích quan hệ hàm ngược.",
+    "content_version": "CD04-BANK-CP124-20261127-B21-P08",
+    "stem": "Một bạn nói: “\\(\\log_2(2^x)=2x\\) và \\(y=\\log_2 x\\) xác định với mọi x thực vì \\(y=2^x\\) có tập xác định \\(\\mathbb R\\)”. Sửa hai lỗi khái niệm và giải thích quan hệ hàm ngược. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(\\log_2(2^x)=x\\) với mọi x thực; \\(y=\\log_2 x\\) chỉ xác định khi \\(x>0\\). Hai hàm là hàm ngược.",
     "worked_solution": "Lôgarit trả lại số mũ, không nhân cơ số với số mũ: \\(\\log_2(2^x)=x\\) vì \\(2^x>0\\). Ngược lại, \\(2^{\\log_2 x}=x\\) chỉ với \\(x>0\\). Tập xác định của hàm mũ là \\(\\mathbb R\\), tập giá trị là \\((0;+\\infty)\\); hai tập đổi vai khi lấy hàm ngược. Vì vậy lôgarit chỉ nhận đầu vào dương.",
     "skill_ids": [
       "G11-CHVI-INTEGRATED"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Lôgarit trả số mũ; phân biệt miền và tập giá trị của hàm ngược."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1270,8 +2194,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Thử x bằng −1 ở hàm lôgarit; kiểm \\(\\log_2(2^3)=3\\). Ôn TOP04-M18; luyện THPT-TOP04-P16."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Thử x bằng \\(-1\\) ở hàm lôgarit; kiểm \\(\\log_2(2^3)=3\\). Ôn TOP04-M18; luyện THPT-TOP04-P16.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\log_2(2^x)=x\\) chỉ khi \\(x>0\\); logarit xác định trên \\(\\mathbb R\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\log_2(2^x)=2^x\\); logarit xác định khi \\(x\\ge0\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\log_2(2^x)=x\\) với mọi \\(x\\in\\mathbb R\\); \\(\\log_2 x\\) chỉ xác định khi \\(x>0\\), hai hàm ngược nhau."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\log_2(2^x)=2x\\); logarit xác định trên \\(\\mathbb R\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-B18-KFT01",
