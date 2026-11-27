@@ -945,7 +945,8 @@
     "item_id": "HPT-G10-CHVI-WRI-15-01",
     "source": {
       "blob": "4da918f36d30c9b7110099e81fc88943e5b7705b",
-      "heading_id": "HPT-G10-CHVI-WRI-15-01"
+      "heading_id": "HPT-G10-CHVI-WRI-15-01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan.md",
@@ -953,13 +954,24 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "FUNCTION_MAPPING",
+      "FUNCTION_DOMAIN",
+      "B15_OUT_03"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-HPT-G10-CHVI-WRI-15-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "skill_mapping_status": "EXISTING_PLACEMENT_OUTCOME_ID_PENDING_SKILL_CROSSWALK"
   },
   {
     "item_id": "HPT-G10-CHVI-WRI-15-02",
     "source": {
       "blob": "4da918f36d30c9b7110099e81fc88943e5b7705b",
-      "heading_id": "HPT-G10-CHVI-WRI-15-02"
+      "heading_id": "HPT-G10-CHVI-WRI-15-02",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan.md",
@@ -967,13 +979,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "FUNCTION_PIECEWISE",
+      "FUNCTION_MODELING"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-HPT-G10-CHVI-WRI-15-02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "HPT-G10-CHVI-WRI-16-01",
     "source": {
       "blob": "d96deee9b440076954d6f44b3007ea083fdd6eb0",
-      "heading_id": "HPT-G10-CHVI-WRI-16-01"
+      "heading_id": "HPT-G10-CHVI-WRI-16-01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan.md",
@@ -981,13 +1002,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "B16_OUT_02",
+      "B16_OUT_03",
+      "B16_OUT_04"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-HPT-G10-CHVI-WRI-16-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "HPT-G10-CHVI-WRI-16-02",
     "source": {
       "blob": "d96deee9b440076954d6f44b3007ea083fdd6eb0",
-      "heading_id": "HPT-G10-CHVI-WRI-16-02"
+      "heading_id": "HPT-G10-CHVI-WRI-16-02",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan.md",
@@ -995,13 +1026,21 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "B16_OUT_05"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-HPT-G10-CHVI-WRI-16-02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "HPT-G10-CHVI-WRI-17-01",
     "source": {
       "blob": "4da918f36d30c9b7110099e81fc88943e5b7705b",
-      "heading_id": "HPT-G10-CHVI-WRI-17-01"
+      "heading_id": "HPT-G10-CHVI-WRI-17-01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan.md",
@@ -1009,13 +1048,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "QUAD_SIGN",
+      "QUAD_INEQUALITY"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-HPT-G10-CHVI-WRI-17-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "HPT-G10-CHVI-WRI-17-02",
     "source": {
       "blob": "4da918f36d30c9b7110099e81fc88943e5b7705b",
-      "heading_id": "HPT-G10-CHVI-WRI-17-02"
+      "heading_id": "HPT-G10-CHVI-WRI-17-02",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan.md",
@@ -1023,7 +1071,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "QUAD_MODELING",
+      "QUAD_INEQUALITY"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-HPT-G10-CHVI-WRI-17-02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "HPT-G10-CHVI-WRI-18-01",
@@ -2703,7 +2759,8 @@
     "item_id": "THPT-G10-CHIV-W07",
     "source": {
       "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
-      "heading_id": "THPT-G10-CHIV-W07"
+      "heading_id": "THPT-G10-CHIV-W07",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b07-b08.md",
@@ -2711,13 +2768,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G10-B07-EQUALITY",
+      "G10-B07-DIRECTION",
+      "G10-B07-LENGTH"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W07",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHIV-W08-ANCHOR",
     "source": {
       "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
-      "heading_id": "THPT-G10-CHIV-W08-ANCHOR"
+      "heading_id": "THPT-G10-CHIV-W08-ANCHOR",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b07-b08.md",
@@ -2725,13 +2792,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B08-MIDPOINT",
+      "G10-B08-CENTROID",
+      "G10-B08-TRIANGLE"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W08-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHIV-W08-FORCE-TR01",
     "source": {
       "blob": "6e581218ff1874d127daa991a1ebcebfa71baf16",
-      "heading_id": "THPT-G10-CHIV-W08-FORCE-TR01"
+      "heading_id": "THPT-G10-CHIV-W08-FORCE-TR01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b07-b08.md",
@@ -2739,13 +2816,24 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B08-PARALLELOGRAM",
+      "G10-B11-GEOMETRIC_DOT",
+      "G10-B11-APPLICATION"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W08-FORCE-TR01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Historical HTML rubric row malformed by pipe splitting; mathematical step and /4 clear, projection repair pending at cutover."
   },
   {
     "item_id": "THPT-G10-CHIV-W09",
     "source": {
       "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
-      "heading_id": "THPT-G10-CHIV-W09"
+      "heading_id": "THPT-G10-CHIV-W09",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11.md",
@@ -2753,13 +2841,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G10-B09-MIDPOINT_CENTROID",
+      "G10-B09-LENGTH_DIRECTION"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W09",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Answer gives derivation results; separate worked solution is terse. Align midpoint explanation with requested expression and expand at scoped PED/notation review."
   },
   {
     "item_id": "THPT-G10-CHIV-W10",
     "source": {
       "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
-      "heading_id": "THPT-G10-CHIV-W10"
+      "heading_id": "THPT-G10-CHIV-W10",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11.md",
@@ -2767,13 +2865,24 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G10-B10-MIDPOINT_CENTROID",
+      "G10-B10-VECTOR_COORDS",
+      "G10-B10-NORM_DISTANCE"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W10",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Answer gives correct component checks; separate solution needs expanded substitutions at scoped PED review."
   },
   {
     "item_id": "THPT-G10-CHIV-W11-ANCHOR",
     "source": {
       "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
-      "heading_id": "THPT-G10-CHIV-W11-ANCHOR"
+      "heading_id": "THPT-G10-CHIV-W11-ANCHOR",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11.md",
@@ -2781,13 +2890,24 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G10-B11-APPLICATION",
+      "G10-B11-COORDINATE_DOT",
+      "G10-B11-GEOMETRIC_DOT"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W11-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Answer supplies correct calculation; separate solution needs full step-by-step presentation and notation review."
   },
   {
     "item_id": "THPT-G10-CHIV-W10-RIVER-TR01",
     "source": {
       "blob": "cedf2a952624095d9135e04a84dc469e22ec53e5",
-      "heading_id": "THPT-G10-CHIV-W10-RIVER-TR01"
+      "heading_id": "THPT-G10-CHIV-W10-RIVER-TR01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11.md",
@@ -2795,7 +2915,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B10-OPERATIONS",
+      "G10-B10-NORM_DISTANCE"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W10-RIVER-TR01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G12-B06-W01",
