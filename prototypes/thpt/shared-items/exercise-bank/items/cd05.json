@@ -323,7 +323,9 @@
     "stem": "Trên đồ thị \\(y=\\lvert x-1\\rvert+2\\), điểm \\(A(0;3)\\) và \\(B(2;4)\\) có thuộc đồ thị không?",
     "answer_key": "A thuộc, B không thuộc.",
     "worked_solution": "Tính \\(f(0)=\\lvert-1\\rvert+2=3\\) nên A thuộc; \\(f(2)=\\lvert1\\rvert+2=3\\) khác 4 nên B không thuộc.",
-    "skill_ids": [],
+    "skill_ids": [
+      "FUNCTION_GRAPH_MEMBERSHIP"
+    ],
     "original_outcome_ids": [
       "TOP05-O04"
     ],
@@ -639,7 +641,9 @@
     "stem": "Xét \\(f(x)=x^3-x\\) trên \\(\\mathbb R\\) và \\(g(x)=x^3-x\\) trên \\([-1;2]\\). Hàm nào lẻ? Nêu vai trò của tập xác định. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "f lẻ; g không chẵn cũng không lẻ vì miền không đối xứng qua 0.",
     "worked_solution": "Trên \\(\\mathbb R\\), \\(f(-x)=-x^3+x=-f(x)\\), miền đối xứng qua 0 nên f lẻ và đồ thị đối xứng qua gốc O. Với g, 2 thuộc miền nhưng \\(-2\\) không thuộc miền; điều kiện miền đối xứng không thỏa, dù công thức giống f. Vì vậy g không chẵn và không lẻ.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-EVEN_ODD"
+    ],
     "original_outcome_ids": [
       "TOP05-O07"
     ],
@@ -690,7 +694,9 @@
     "stem": "Xét \\(g(x)=x^2+x\\) trên \\(\\mathbb R\\). Hàm g chẵn hay lẻ?",
     "answer_key": "Không chẵn cũng không lẻ.",
     "worked_solution": "\\(g(-x)=x^2-x\\), khác \\(g(x)=x^2+x\\) và khác \\(-g(x)=-x^2-x\\) (chọn \\(x=1\\)). Miền đối xứng nhưng tính chất công thức không đạt.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-EVEN_ODD"
+    ],
     "original_outcome_ids": [
       "TOP05-O07"
     ],
@@ -741,7 +747,9 @@
     "stem": "Hàm f xác định trên \\(\\mathbb R\\) thỏa \\(f(x+4)=f(x)\\) với mọi x. Nếu \\(f(1)=2\\), tính \\(f(-7)\\). Có thể khẳng định 4 là chu kỳ nhỏ nhất không?",
     "answer_key": "\\(f(-7)=2\\). Không đủ dữ kiện để khẳng định 4 là chu kỳ nhỏ nhất.",
     "worked_solution": "Từ \\(-7+4=-3\\) và \\(-3+4=1\\), \\(f(-7)=f(-3)=f(1)=2\\). Số 4 là một chu kỳ dương theo giả thiết; có thể hàm có chu kỳ nhỏ hơn, chẳng hạn hàm hằng \\(f(x)=2\\) cũng thỏa hệ thức với mọi độ dịch dương và không có chu kỳ dương nhỏ nhất.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-PERIODICITY"
+    ],
     "original_outcome_ids": [
       "TOP05-O08"
     ],
@@ -792,7 +800,9 @@
     "stem": "Bốn giá trị \\(f(0)=1,\\ f(1)=0,\\ f(2)=1,\\ f(3)=0\\) có đủ chứng minh f có chu kỳ 2 trên \\(\\mathbb R\\) không? Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Không đủ.",
     "worked_solution": "Chưa đủ: cần \\(f(x+2)=f(x)\\) với mọi x thực. Phản ví dụ cụ thể: đặt \\(f(x)=1\\) khi \\(x\\in\\{0;2\\}\\), \\(f(x)=0\\) ở mọi x thực khác. Bốn giá trị đã cho đều đúng, nhưng \\(f(2)=1\\) và \\(f(4)=0\\) nên 2 không phải chu kỳ của hàm này.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-PERIODICITY"
+    ],
     "original_outcome_ids": [
       "TOP05-O08"
     ],
@@ -896,7 +906,9 @@
     "stem": "Từ \\(f(x)=\\lvert x\\rvert\\), cho \\(g(x)=f(x)+2\\). Giá trị nhỏ nhất và vị trí đạt được?",
     "answer_key": "Giá trị nhỏ nhất 2 tại \\(x=0\\); đồ thị dịch lên 2.",
     "worked_solution": "\\(\\lvert x\\rvert\\ge0\\) với dấu bằng tại \\(x=0\\); cộng 2 vào giá trị y nên giá trị nhỏ nhất tăng từ 0 lên 2.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-VERTICAL_TRANSLATION"
+    ],
     "original_outcome_ids": [
       "TOP05-O09"
     ],
@@ -1053,7 +1065,9 @@
     "stem": "Với \\(f(x)=x^2+x\\), \\(h(x)=-f(x)\\). Đối xứng qua trục nào? Tính \\(h(1)\\).",
     "answer_key": "Qua Ox, \\(h(1)=-2\\).",
     "worked_solution": "Phép \\(y\\mapsto-y\\) giữ x, đổi dấu tung độ; \\(f(1)=2\\) nên \\(h(1)=-2\\).",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-AXIS_REFLECTION"
+    ],
     "original_outcome_ids": [
       "TOP05-O11"
     ],
@@ -1104,7 +1118,9 @@
     "stem": "Với \\(f(x)=x^2+x\\), \\(k(x)=f(-x)\\). Viết k và tính \\(k(1)\\).",
     "answer_key": "\\(k(x)=x^2-x\\), \\(k(1)=0\\); đối xứng qua Oy.",
     "worked_solution": "Thay \\(-x\\) ở đối số: \\((-x)^2+(-x)=x^2-x\\). Đổi dấu x giữ tung độ tạo đối xứng qua Oy.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-AXIS_REFLECTION"
+    ],
     "original_outcome_ids": [
       "TOP05-O11"
     ],
@@ -1155,7 +1171,9 @@
     "stem": "Cho \\(f(x)=\\lvert x\\rvert\\), \\(g(x)=3f(x)\\). Tính \\(g(-2)\\), xét giá trị nhỏ nhất và mô tả biến đổi. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(g(-2)=6\\); giá trị nhỏ nhất 0; kéo dãn đứng hệ số 3.",
     "worked_solution": "Mọi tung độ y nhân 3, nên ở \\(x=-2\\) từ 2 lên 6; giá trị nhỏ nhất 0 vẫn ở \\(x=0\\).",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-VERTICAL_SCALING"
+    ],
     "original_outcome_ids": [
       "TOP05-O12"
     ],
@@ -1206,7 +1224,9 @@
     "stem": "\\(f(x)=x^2\\), \\(g(x)=-\\frac12 f(x)\\). Mô tả phép biến đổi và tính \\(g(2)\\). Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Đối xứng qua Ox và co chiều đứng hệ số \\(\\frac12\\); \\(g(2)=-2\\).",
     "worked_solution": "Từ \\(f(2)=4\\), nhân \\(-\\frac12\\) được \\(-2\\). Hệ số âm phản xạ qua Ox; độ lớn \\(\\frac12\\) thu nhỏ mọi tung độ.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-VERTICAL_SCALING"
+    ],
     "original_outcome_ids": [
       "TOP05-O12"
     ],
@@ -1257,7 +1277,9 @@
     "stem": "\\(f(x)=x^2\\) và \\(g(x)=f(2x)=4x^2\\). So độ rộng hai đồ thị và tìm \\(g(1)\\).",
     "answer_key": "g co ngang hệ số \\(\\frac12\\); \\(g(1)=4\\).",
     "worked_solution": "Cùng mức \\(y=4\\), đồ thị f có hai điểm với \\(x=\\pm2\\), còn đồ thị g có hai điểm với \\(x=\\pm1\\). Mỗi điểm \\((a;f(a))\\) của f tương ứng với điểm \\(\\left(\\frac a2;f(a)\\right)\\) của g, vì vậy đồ thị g co ngang theo hệ số \\(\\frac12\\). Tính \\(g(1)=f(2)=4\\).",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-HORIZONTAL_SCALING"
+    ],
     "original_outcome_ids": [
       "TOP05-O13"
     ],
@@ -1308,7 +1330,9 @@
     "stem": "\\(f(x)=\\lvert x\\rvert\\) và \\(h(x)=f(\\frac x3)\\). Đây là co hay giãn ngang? Tính \\(h(-6)\\).",
     "answer_key": "Giãn ngang hệ số 3; \\(h(-6)=2\\).",
     "worked_solution": "Để đạt mức \\(y=2\\), f cần \\(\\lvert x\\rvert=2\\) còn h cần \\(\\left|\\frac x3\\right|=2\\), tức \\(\\lvert x\\rvert=6\\). \\(h(-6)=\\lvert-2\\rvert=2\\).",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-HORIZONTAL_SCALING"
+    ],
     "original_outcome_ids": [
       "TOP05-O13"
     ],
@@ -1359,7 +1383,9 @@
     "stem": "Cho \\(f(x)=x-2\\). Đặt \\(g(x)=|f(x)|\\) và \\(h(x)=f(|x|)\\). Tính \\(g(-3),h(-3)\\); tìm đỉnh hai đồ thị và mô tả phép biến đổi. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(g(-3)=5,\\ h(-3)=1\\); g có đỉnh \\((2;0)\\), h có đỉnh \\((0;-2)\\). g phản xạ phần dưới Ox, h lấy nửa đồ thị \\(x\\ge0\\) và phản xạ qua Oy.",
     "worked_solution": "\\(g(x)=|x-2|\\) nên \\(g(-3)=|-5|=5\\), đỉnh \\((2;0)\\). Lấy trị tuyệt đối tung độ giữ phần \\(y\\ge0\\), phản xạ phần \\(y<0\\) qua Ox. \\(h(x)=|x|-2\\) nên \\(h(-3)=3-2=1\\), đỉnh \\((0;-2)\\). Với \\(x\\ge0\\), \\(h(x)=f(x)\\); với \\(x<0\\), \\(h(x)=f(-x)\\), do đó sao chép nửa phải sang trái qua Oy.",
-    "skill_ids": [],
+    "skill_ids": [
+      "TOP05-SKILL-ABSOLUTE_TRANSFORM"
+    ],
     "original_outcome_ids": [
       "TOP05-O14"
     ],
