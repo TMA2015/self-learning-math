@@ -63,7 +63,7 @@
   },
   {
     "item_id": "THPT-G11-CHV-B15-C03",
-    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "content_version": "CD07-BANK-CP127-20261127-B15-C03",
     "stem": "Tổng vô hạn \\(3+\\frac35+\\frac3{25}+\\cdots\\) có thể dùng công thức cấp số nhân lùi vô hạn không?",
     "answer_key": "Có; tổng bằng \\(\\frac{15}4\\).",
     "worked_solution": "Các số hạng tạo cấp số nhân có \\(u_1=3\\) và \\(q=\\frac15\\). Vì \\(|q|<1\\), tổng riêng tiến đến \\(\\frac{u_1}{1-q}=\\frac3{1-\\frac15}=\\frac{15}4\\). Tổng vô hạn được hiểu là giới hạn của tổng riêng.",
@@ -71,13 +71,17 @@
       "G11-B15-GEOMETRIC"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tìm công bội và kiểm \\(|q|<1\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -89,8 +93,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không dùng tổng vô hạn cho mọi q; kiểm điều kiện \\(|q|<1\\). Ôn TOP07-M15; luyện THPT-TOP07-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không dùng tổng vô hạn cho mọi q; kiểm điều kiện \\(|q|<1\\). Ôn TOP07-M15; luyện THPT-TOP07-P15.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(12/5\\)"
+      },
+      {
+        "id": "B",
+        "text": "Có; tổng bằng \\(\\frac{15}4\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(3\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(15\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHV-B15-P01",
@@ -218,21 +241,25 @@
   },
   {
     "item_id": "THPT-G11-CHV-B15-P05",
-    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "content_version": "CD07-BANK-CP127-20261127-B15-P05",
     "stem": "Dãy \\(v_n=(-1)^n\\) có giới hạn hữu hạn, \\(+\\infty\\) hoặc \\(-\\infty\\) không?",
     "answer_key": "Không có giới hạn theo các loại đã học.",
-    "worked_solution": "Với n chẵn, số hạng luôn bằng 1; với n lẻ, luôn bằng −1. Hai dãy con tiến đến hai giá trị khác nhau nên dãy không có giới hạn hữu hạn. Hơn nữa mọi số hạng nằm trong \\([-1;1]\\), nên không tiến đến vô cực có dấu.",
+    "worked_solution": "Với n chẵn, số hạng luôn bằng 1; với n lẻ, luôn bằng \\(-1\\). Hai dãy con tiến đến hai giá trị khác nhau nên dãy không có giới hạn hữu hạn. Hơn nữa mọi số hạng nằm trong \\([-1;1]\\), nên không tiến đến vô cực có dấu.",
     "skill_ids": [
       "G11-B15-INFINITE_SEQUENCE"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So riêng các chỉ số chẵn và lẻ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -244,26 +271,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Bị chặn không bảo đảm hội tụ; hai dãy con có giới hạn 1 và −1. Ôn TOP07-M15; luyện THPT-TOP07-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Bị chặn không bảo đảm hội tụ; hai dãy con có giới hạn 1 và \\(-1\\). Ôn TOP07-M15; luyện THPT-TOP07-P15.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-1\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(+\\infty\\)"
+      },
+      {
+        "id": "C",
+        "text": "Không có giới hạn theo các loại đã học."
+      },
+      {
+        "id": "D",
+        "text": "\\(1\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHV-B15-P06",
-    "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Tính tổng lý thuyết \\(8-4+2-1+\\cdots\\). Vì sao tổng vẫn hữu hạn dù có vô hạn số hạng?",
+    "content_version": "CD07-BANK-CP127-20261127-B15-P06",
+    "stem": "Tính tổng lý thuyết \\(8-4+2-1+\\cdots\\). Vì sao tổng vẫn hữu hạn dù có vô hạn số hạng? Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(\\frac{16}3\\).",
     "worked_solution": "Đây là cấp số nhân có \\(u_1=8,\\ q=-\\frac12\\), thỏa \\(|q|<1\\). Tổng n số hạng là \\(S_n=\\frac{8(1-(-\\frac12)^n)}{1+\\frac12}=\\frac{16}3(1-(-\\frac12)^n)\\). Vì \\((-\\frac12)^n\\to0\\), nên \\(S_n\\to\\frac{16}3\\). Tổng vô hạn hữu hạn vì tổng riêng hội tụ, không chỉ vì từng số hạng tiến về 0.",
     "skill_ids": [
       "G11-B15-GEOMETRIC_APPLICATION"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "APPLY",
     "hints": [
       "Tìm công bội âm rồi lập tổng riêng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -275,12 +325,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Giữ dấu của \\(q=-\\frac12\\) trong công thức và kiểm \\(|q|<1\\). Ôn TOP07-M15; luyện THPT-TOP07-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Giữ dấu của \\(q=-\\frac12\\) trong công thức và kiểm \\(|q|<1\\). Ôn TOP07-M15; luyện THPT-TOP07-P15.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(4\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(16\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(8/3\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{16}3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHV-B15-P07",
-    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "content_version": "CD07-BANK-CP127-20261127-B15-P07",
     "stem": "Bóng rơi từ độ cao 3 m, mỗi lần bật lên cao bằng một nửa độ cao lần trước, rồi lại rơi xuống. Theo mô hình vô hạn lý tưởng, tổng quãng đường theo phương thẳng đứng là bao nhiêu?",
     "answer_key": "9 m.",
     "worked_solution": "Lần đầu bóng đi xuống 3 m. Sau đó mỗi lần bật lên và rơi xuống đi hai lần độ cao tương ứng. Các độ cao tạo cấp số nhân \\(\\frac32,\\frac34,\\ldots\\) có công bội \\(\\frac12\\). Tổng quãng đường là \\(3+2\\cdot\\frac{\\frac32}{1-\\frac12}=9\\) (m). Đây là mô hình lý tưởng, không tính hao hụt khác ngoài giả thiết.",
@@ -288,13 +357,17 @@
       "G11-B15-GEOMETRIC_APPLICATION"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "APPLY",
     "hints": [
       "Tách lần rơi đầu và mỗi lần bật lên rồi rơi xuống."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -306,8 +379,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tính hai lần mỗi độ cao bật lên, không tính một lần. Ôn TOP07-M15; luyện THPT-G11-CHV-B15-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Tính hai lần mỗi độ cao bật lên, không tính một lần. Ôn TOP07-M15; luyện THPT-G11-CHV-B15-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "9 m."
+      },
+      {
+        "id": "B",
+        "text": "\\(6\\text{ m}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(12\\text{ m}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(3\\text{ m}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHV-B16-C01",
