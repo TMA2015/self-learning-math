@@ -240,7 +240,7 @@ Có f=(6,14,12,8) trên bốn lớp liền nhau. n bằng bao nhiêu, n/4 và 3n
 - **Điều kiện/giới hạn:** Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.
 
 #### Item THPT-G12-B09-W03
-- `ITEM_ID`: `THPT-G12-B09-W03` · `OUTCOME_ID`: `G12-CHIII-B09-O03` · `ROLE`: `WRITTEN; ANCHOR_TAG` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
+- `ITEM_ID`: `THPT-G12-B09-W03` · `OUTCOME_ID`: `G12-CHIII-B09-O03` · `ROLE`: `WRITTEN; ANCHOR_TAG` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00.DELTA04` · `EXPOSURE`: `RD0_PUBLIC`
 - **Đề gốc (tự viết):** Một bảng ban đầu có lớp đầu [0;10), lớp cuối [20;30), tần số dương. Sau thêm 1 quan sát trong [50;60), tính R trước/sau, mức tăng của R và giải thích điều chưa thể kết luận về IQR.
 - **Đáp án canonical:** \(R_{\mathrm{trước}}=30\), \(R_{\mathrm{sau}}=60\), tăng 30; chưa thể xác định IQR từ các cận.
 - **Lời giải và lý do:** Khoảng biến thiên của mẫu ghép nhóm bằng cận trên nhóm cuối trừ cận dưới nhóm đầu. Ban đầu \(R=30-0=30\); sau khi thêm quan sát, \(R=60-0=60\), tăng \(60-30=30\). Khoảng tứ phân vị IQR cần các tần số tích lũy để định vị \(Q_1,Q_3\); không thể suy ra mức thay đổi IQR chỉ từ hai cận ngoài.
@@ -295,7 +295,7 @@ Có f=(6,14,12,8) trên bốn lớp liền nhau. n bằng bao nhiêu, n/4 và 3n
 - **Điều kiện/giới hạn:** Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.
 
 #### Item THPT-G12-B09-W04
-- `ITEM_ID`: `THPT-G12-B09-W04` · `OUTCOME_ID`: `G12-CHIII-B09-O04` · `ROLE`: `WRITTEN` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
+- `ITEM_ID`: `THPT-G12-B09-W04` · `OUTCOME_ID`: `G12-CHIII-B09-O04` · `ROLE`: `WRITTEN` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00.DELTA04` · `EXPOSURE`: `RD0_PUBLIC`
 - **Đề gốc (tự viết):** Bảng tần số 4 nhóm liên tiếp \(f=(4;8;12;8)\): lập tần số cộng dồn, tìm vị trí \(\frac n4,\frac{3n}4\) và hai nhóm dùng để nội suy \(Q_1,Q_3\); giải thích trường hợp vị trí đúng biên chung.
 - **Đáp án canonical:** \(n=32\); cộng dồn 4, 12, 24, 32; \(Q_1\) thuộc nhóm 2; \(Q_3\) nằm ở biên trên của nhóm 3.
 - **Lời giải và lý do:** Tổng tần số \(n=4+8+12+8=32\). Vị trí \(\frac n4=8\) nằm sau mốc cộng dồn 4 và trước mốc 12, nên dùng nhóm 2. Vị trí \(\frac{3n}4=24\) trùng mốc cộng dồn cuối nhóm 3. Nội suy đến hết nhóm 3 cho cận trên của nhóm này, cũng là cận dưới nhóm 4 vì các nhóm liền nhau. Hai cách tính tại biên cho cùng kết quả.
@@ -606,7 +606,7 @@ Một mẫu có phương sai 9 cm². Độ lệch chuẩn mang giá trị và đ
 - **Điều kiện/giới hạn:** Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.
 
 #### Item THPT-G12-B10-W03
-- `ITEM_ID`: `THPT-G12-B10-W03` · `OUTCOME_ID`: `G12-CHIII-B10-O03` · `ROLE`: `WRITTEN; ANCHOR_TAG` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
+- `ITEM_ID`: `THPT-G12-B10-W03` · `OUTCOME_ID`: `G12-CHIII-B10-O03` · `ROLE`: `WRITTEN; ANCHOR_TAG` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00.DELTA04` · `EXPOSURE`: `RD0_PUBLIC`
 - **Đề gốc (tự viết):** Cho mẫu ghép nhóm với các giá trị đại diện \(c_i\) lần lượt là 1, 3, 5, 7 và tần số \(f_i\) tương ứng là 1, 3, 3, 1. Tính \(\sum_{i=1}^4 f_i c_i^2\), \(\bar x\), \(s^2\) bằng công thức rút gọn rồi kiểm lại phương sai bằng công thức gốc.
 - **Đáp án canonical:** \(\sum_{i=1}^4 f_i c_i^2=152\), \(\bar x=4\), \(s^2=3\).
 - **Lời giải và lý do:** Tổng tần số \(n=8\); \(\sum_{i=1}^4 f_i c_i=1+9+15+7=32\), nên \(\bar x=\frac{32}{8}=4\). Tính \(\sum_{i=1}^4 f_i c_i^2=1+27+75+49=152\). Công thức rút gọn cho \(s^2=\frac{152}{8}-4^2=3\). Kiểm bằng công thức gốc: \(\sum_{i=1}^4 f_i(c_i-4)^2=9+3+3+9=24\), chia 8 được 3, khớp kết quả rút gọn.
