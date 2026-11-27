@@ -547,9 +547,11 @@ content_version: 2
 **Đáp án:** \(D=\mathbb R\setminus\{-1\}\); \(f(x)=2x-2+\frac5{x+1}\); đứng \(x=-1\), xiên \(y=2x-2\).
 
 **Lời giải:** Mẫu khác \(0\) nên \(x\ne-1\). Vì \(2x^2+3=(x+1)(2x-2)+5\), ta có
+
 \[
 f(x)=2x-2+\frac5{x+1}.
 \]
+
 Khi \(x\to-1^-\), phần phân thức tiến tới \(-\infty\); khi \(x\to-1^+\), tiến tới \(+\infty\). Phần \(2x-2\) hữu hạn tại mốc này, nên \(x=-1\) là tiệm cận đứng. Khi \(x\to\pm\infty\), \(f(x)-(2x-2)=\frac5{x+1}\to0\); vậy \(y=2x-2\) là tiệm cận xiên ở cả hai phía. Tử tại \(-1\) bằng \(5\ne0\), không thể khử nhân tử mẫu; các giới hạn vô cực cũng loại khả năng điểm khuyết có thể khử.
 
 **Rubric /7:**
