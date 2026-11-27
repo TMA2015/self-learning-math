@@ -24746,6 +24746,35 @@
         "limitations": "No fresh direct SGK/SBT PDF audit, independent NotebookLM verdict, browser/renderer/runtime QA or whole-bank semantic equivalence certificate. Four new distinct questions and B23-W02-ANCHOR scope require academic delta review; existing historic source receipts unchanged. Candidate interaction does not establish written-proof competence. No assertion of CI PASS or RELEASE clearance."
       },
       "handoff": "Stop at CD16. Next CD17 only when directed by owner; no merge/deploy, no docs/runtime, RD1, Final Submit, Mastery, Firebase or Golden UI changes."
+    },
+    "exercise_candidate_cd17_partial": {
+      "scope": "CD17 distance and polyhedron volume; practice/first-try/replay candidate, Written completion pending",
+      "baseline": "7e5349f73b410c90994157b69fd8fefae7a3fc68",
+      "head_before_manifest": "703132691fa1950e0d451f03231b6a11e8a93596",
+      "status": "PARTIAL_CD17_INTERACTIVE_CANDIDATE_WRITTEN_PENDING",
+      "counts": {
+        "unique_scoped": 49,
+        "interactive": 42,
+        "choices": 168,
+        "written_reference_only": 7,
+        "practice": 37,
+        "practice_interactive": 30,
+        "first_try": 12,
+        "public_replay": 12,
+        "placements": 61,
+        "outcomes": 12
+      },
+      "files": {
+        "items/cd17.json": "521aa5f25b45da9a0265b29a3dbe3171fcb6ff32",
+        "items/g11-chvii.json": "ee13a8b955db56ba07d3b77d150a8d94bb9f6f26",
+        "items/topic-knowledge-first-try.json": "ed67661e72f4ab1d53c8c5aceefe9b2294cf2d8b",
+        "placements/cd17.json": "b59e7c957aa53c12d331d4d3888597300a03a978",
+        "placements/topic-knowledge-first-try.json": "e10661fc8b8331f416eda0d61732c4f4bc063def",
+        "written-references.json": "e4ea2145098ab644485f83bdd9501ffaab5d26fd"
+      },
+      "verified": "Exact readback after each change; 42/42 schema, four distinct options, one key, hint, skill, solution/source, auto_grade=false; 61/61 references resolve; 12/12 outcomes ≥2 interactive practice plus 1 first try and 1 replay. 35 non-CD17 G11 ChVII items, 381 other first-try items and 402 other first-try placements unchanged by parsed record comparison/readback; all stems/keys/solutions/source and IDs preserved. Legacy outcome suffix removed only for 12 CD17 first-try placements. Replay expands 8→12 by existing ID reuse; no pre-submit hint/key; no Mastery. Practice order retained for D6.",
+      "written_remaining": "7 existing references remain unchanged. CP61 already flags coordinate-system context for B26-W02 and inadequate explanation of 1/3 in B27-W01; confirmed in source blob 5178686510902c4c24a2b2aface4e9476eba9e0f. Need finish all seven Written source sections, source custody and rubrics before CD17 completion. Proof-based interactive choices do not prove written-proof competence.",
+      "limitations": "No fresh SGK/SBT PDF, NotebookLM, browser/runtime QA, full cross-topic overlap reconciliation or CI claim. Cumulative completed candidate remains 16/22, 1340 IDs; do not add partial CD17 to completed count. No merge/deploy or protected changes."
     }
   }
 }
