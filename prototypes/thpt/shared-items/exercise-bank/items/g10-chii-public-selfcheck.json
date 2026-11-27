@@ -1,18 +1,27 @@
 [
   {
     "item_id": "THPT-G10-CHII-RD1-01",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Trong các điểm A(0;4), B(2;2), C(6;0), D(-1;3), chỉ có điểm nào thỏa bất phương trình x+2y>6?",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-01",
+    "stem": "Điểm nào trong bốn điểm dưới đây thỏa bất phương trình \\(x+2y>6\\)?",
     "answer_key": "A",
     "worked_solution": "Giá trị vế trái tại A là 8>6; tại B và C đều bằng 6 (không thỏa dấu >); tại D là 5<6.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B03-POINT_TEST",
+      "G10-B03-LINEAR_INEQUALITY"
+    ],
     "original_outcome_text": "`G10-B03-POINT_TEST`, `G10-B03-LINEAR_INEQUALITY`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Thay tọa độ mỗi điểm, chú ý dấu lớn hơn nghiêm ngặt."
+    ],
     "rubric": "1đ chọn A, không hiện kết quả trước Final Submit.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -37,22 +46,51 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "A(0;4)"
+      },
+      {
+        "id": "B",
+        "text": "B(2;2)"
+      },
+      {
+        "id": "C",
+        "text": "C(6;0)"
+      },
+      {
+        "id": "D",
+        "text": "D(-1;3)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-02",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Xét miền nghiệm H: x−2y≤4. Đánh giá Đ/S: (a) O(0;0) thuộc H. (b) P(4;0) không thuộc H. (c) Q(0;−2) nằm trên đường biên và thuộc H. (d) H tương đương y≥(x−4)/2.",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-02",
+    "stem": "Xét miền nghiệm H: x−2y≤4. Đánh giá Đ/S: (a) O(0;0) thuộc H. (b) P(4;0) không thuộc H. (c) Q(0;−2) nằm trên đường biên và thuộc H. (d) H tương đương y≥(x−4)/2. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "(Đ, S, Đ, Đ)",
     "worked_solution": "a: 0≤4 đúng; b: 4≤4 nên P thuộc H, mệnh đề sai; c: 0−2(−2)=4; d: chuyển vế −2y≤4−x, chia −2 đổi chiều, y≥(x−4)/2.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B03-BOUNDARY",
+      "G10-B03-HALFPLANE",
+      "G10-B03-POINT_TEST"
+    ],
     "original_outcome_text": "`G10-B03-BOUNDARY`, `G10-B03-HALFPLANE`, `G10-B03-POINT_TEST`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Thay tọa độ; khi chia cho −2 phải đổi chiều bất đẳng thức."
+    ],
     "rubric": "Mỗi ý đúng/sai đúng 1đ (tối đa 4đ). Tự đối chiếu: dấu đổi chiều khi chia số âm và việc lấy đường biên; không tính điểm giải thích riêng.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "TRUE_FALSE_GROUP"
     },
@@ -77,22 +115,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đ, Đ, Đ, S"
+      },
+      {
+        "id": "B",
+        "text": "Đ, S, Đ, Đ"
+      },
+      {
+        "id": "C",
+        "text": "S, S, Đ, Đ"
+      },
+      {
+        "id": "D",
+        "text": "Đ, S, S, S"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-03",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Một nửa mặt phẳng có đường biên đi qua A(6;0), B(0;3), chứa O(0;0) nhưng không chứa đường biên. Hãy viết bất phương trình và giải thích cách xác định phía.",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-03",
+    "stem": "Một nửa mặt phẳng có đường biên đi qua A(6;0), B(0;3), chứa O(0;0) nhưng không chứa đường biên. Hãy viết bất phương trình và giải thích cách xác định phía. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "x+2y<6",
     "worked_solution": "Đường AB có phương trình x+2y=6; thế O được 0<6, vậy nửa mặt phẳng chứa O là x+2y<6; dấu < vì không lấy biên.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B03-BOUNDARY",
+      "G10-B03-HALFPLANE"
+    ],
     "original_outcome_text": "`G10-B03-BOUNDARY`, `G10-B03-HALFPLANE`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm phương trình biên từ hai giao điểm với trục; thử O."
+    ],
     "rubric": "1đ tìm đường biên, 1đ chọn điểm thử, 1đ chọn dấu và loại biên.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -117,22 +183,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x+2y\\le6\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x+2y>6\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x+2y<6\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(2x+y<6\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-04",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Xe tải chở tối đa 1 200 kg, trong đó khung giá đỡ chiếm 200 kg. Mỗi kiện A nặng 40 kg, mỗi kiện B nặng 60 kg. Gọi x,y lần lượt là số kiện A,B. Viết ràng buộc đầy đủ và xét (x,y)=(10,10) có hợp lệ không.",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-04",
+    "stem": "Xe tải chở tối đa 1 200 kg, trong đó khung giá đỡ chiếm 200 kg. Mỗi kiện A nặng 40 kg, mỗi kiện B nặng 60 kg. Gọi x,y lần lượt là số kiện A,B. Viết ràng buộc đầy đủ và xét (x,y)=(10,10) có hợp lệ không. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "2x+3y≤50; x,y∈Z≥0; (10,10) hợp lệ",
     "worked_solution": "200+40x+60y≤1200, rút gọn 2x+3y≤50, x,y là số nguyên không âm. Với (10,10), vế trái 20+30=50 nên hợp lệ, vừa đủ tải.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B03-MODELING",
+      "G10-B03-POINT_TEST"
+    ],
     "original_outcome_text": "`G10-B03-MODELING`, `G10-B03-POINT_TEST`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Trừ khối lượng giá đỡ khỏi tải tối đa trước khi lập ràng buộc."
+    ],
     "rubric": "1đ lập tổng tải; 1đ rút gọn; 1đ điều kiện nguyên không âm; 1đ điểm xét dấu bằng.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -157,22 +251,51 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(2x+3y\\le60\\), x,y nguyên không âm; (10;10) dư tải."
+      },
+      {
+        "id": "B",
+        "text": "\\(3x+2y\\le50\\), x,y nguyên không âm; (10;10) vừa đủ tải."
+      },
+      {
+        "id": "C",
+        "text": "\\(2x+3y<50\\), x,y nguyên không âm; (10;10) không hợp lệ."
+      },
+      {
+        "id": "D",
+        "text": "\\(2x+3y\\le50\\), x,y nguyên không âm; (10;10) vừa đủ tải."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-05",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Cho miền nghiệm K: x−3y≥−6 và các điểm A(0;2), B(−3;0), C(0;3). Xác định điểm thuộc K, điểm nằm trên đường biên; rồi viết K dưới dạng y≤f(x), giải thích tại sao dấu đổi chiều.",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-05",
+    "stem": "Cho miền nghiệm K: x−3y≥−6 và các điểm A(0;2), B(−3;0), C(0;3). Xác định điểm thuộc K, điểm nằm trên đường biên; rồi viết K dưới dạng y≤f(x), giải thích tại sao dấu đổi chiều. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A,B∈K; A trên biên; C∉K; y≤(x+6)/3",
     "worked_solution": "A: 0−6=−6, nên thuộc K và nằm biên. B: −3≥−6, nên thuộc trong. C: −9<−6 nên ngoài. Từ x−3y≥−6 ⇔ −3y≥−x−6 ⇔ y≤(x+6)/3 (chia −3 đổi chiều).",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B03-HALFPLANE",
+      "G10-B03-POINT_TEST",
+      "G10-B03-BOUNDARY"
+    ],
     "original_outcome_text": "`G10-B03-HALFPLANE`, `G10-B03-POINT_TEST`, `G10-B03-BOUNDARY`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính x−3y tại từng điểm rồi giải bất đẳng thức theo y."
+    ],
     "rubric": "4đ: A 1đ; B và C 1đ; biểu thức 1đ; lý do đổi dấu 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -197,22 +320,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "A,B thuộc K; A trên biên; C ngoài; \\(y\\le\\frac{x+6}{3}\\) vì chia cho −3 đổi chiều."
+      },
+      {
+        "id": "B",
+        "text": "A,B thuộc K; A trên biên; C ngoài; \\(y\\ge\\frac{x+6}{3}\\)."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ B thuộc K; A trên biên nhưng không thuộc K; \\(y\\le\\frac{x+6}{3}\\)."
+      },
+      {
+        "id": "D",
+        "text": "A,C thuộc K; A trên biên; \\(y\\le\\frac{x+6}{3}\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-06",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Điểm M(t;2t−1) phụ thuộc t∈R. Xác định t để M thuộc miền 3x−2y≤5. Tìm riêng t khi M nằm trên biên.",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-06",
+    "stem": "Điểm M(t;2t−1) phụ thuộc t∈R. Xác định t để M thuộc miền 3x−2y≤5. Tìm riêng t khi M nằm trên biên. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "t≥−3; t=−3 trên biên",
     "worked_solution": "3t−2(2t−1)=2−t. Điều kiện 2−t≤5 ⇔ −t≤3 ⇔ t≥−3. Dấu bằng khi t=−3.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B03-POINT_TEST",
+      "G10-B03-BOUNDARY"
+    ],
     "original_outcome_text": "`G10-B03-POINT_TEST`, `G10-B03-BOUNDARY`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Thế tọa độ M vào bất phương trình và giải theo t."
+    ],
     "rubric": "1đ thay tọa độ, 1đ biến đổi đúng chiều, 1đ xét dấu bằng.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -237,22 +388,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(t\\le-3\\); trên biên khi \\(t=-3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(t\\ge-3\\); trên biên khi \\(t=-3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(t\\ge3\\); trên biên khi \\(t=3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(t>-3\\); không có giá trị nào trên biên."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-07",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Với m thực, (m−2)x+(m²−4)y≤4 là bất phương trình bậc nhất hai ẩn khi nào? A. m≠2; B. m≠±2; C. mọi m; D. chỉ m=2.",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-07",
+    "stem": "Với m thực, (m−2)x+(m²−4)y≤4 là bất phương trình bậc nhất hai ẩn khi nào? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
     "worked_solution": "Chỉ khi hệ số x và y đồng thời bằng 0 thì không còn BPT bậc nhất hai ẩn. m−2=0 ⇒ m=2; lúc này m²−4=0. Với m=−2 hệ số x=−4 khác 0, vẫn hợp lệ. Vậy m≠2.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B03-LINEAR_INEQUALITY"
+    ],
     "original_outcome_text": "`G10-B03-LINEAR_INEQUALITY`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai hệ số không được đồng thời bằng 0."
+    ],
     "rubric": "1đ chọn A. Tự đối chiếu: (a,b)≠(0,0) là điều kiện của bất phương trình bậc nhất hai ẩn; không tính điểm giải thích riêng.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -277,22 +455,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(m\\ne2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(m\\ne\\pm2\\)"
+      },
+      {
+        "id": "C",
+        "text": "Mọi m."
+      },
+      {
+        "id": "D",
+        "text": "Chỉ \\(m=2\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-08",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Miền nghiệm của hệ x≥0, y≥0, x+y≤5, y≤2 có các đỉnh nào? A. (0;0),(5;0),(3;2),(0;2); B. (0;0),(5;0),(5;2),(0;2); C. (0;0),(2;0),(0;5); D. (0;0),(5;0),(0;5).",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-08",
+    "stem": "Miền nghiệm của hệ x≥0, y≥0, x+y≤5, y≤2 có các đỉnh nào? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
     "worked_solution": "Trên trục Ox: (5,0); trên trục Oy: (0,2); giao x+y=5 và y=2 là (3,2), thêm O(0,0). B chứa (5,2) sai x+y; C và D sai biên.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B04-REGION_INTERSECTION",
+      "G10-B04-SYSTEM"
+    ],
     "original_outcome_text": "`G10-B04-REGION_INTERSECTION`, `G10-B04-SYSTEM`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm giao các đường biên và kiểm từng đỉnh với cả hệ."
+    ],
     "rubric": "1đ chọn A. Tự đối chiếu: có thể phác miền nghiệm để kiểm tra các đỉnh; không tính điểm phác hình riêng.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -317,22 +523,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(0;0), (5;0), (3;2), (0;2)."
+      },
+      {
+        "id": "B",
+        "text": "(0;0), (5;0), (5;2), (0;2)."
+      },
+      {
+        "id": "C",
+        "text": "(0;0), (2;0), (0;5)."
+      },
+      {
+        "id": "D",
+        "text": "(0;0), (5;0), (0;5)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-09",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Trên cùng miền x≥0, y≥0, x+y≤5, y≤2, tìm giá trị lớn nhất của F=3x+2y và mọi đỉnh đạt giá trị đó.",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-09",
+    "stem": "Trên cùng miền x≥0, y≥0, x+y≤5, y≤2, tìm giá trị lớn nhất của F=3x+2y và mọi đỉnh đạt giá trị đó. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "Fmax=15 tại (5;0)",
     "worked_solution": "Bốn đỉnh (0,0),(5,0),(3,2),(0,2). F lần lượt 0,15,13,4. Hàm tuyến tính cực trị tại một đỉnh nên tối đa 15 tại (5,0).",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B04-LINEAR_OBJECTIVE",
+      "G10-B04-FEASIBILITY"
+    ],
     "original_outcome_text": "`G10-B04-LINEAR_OBJECTIVE`, `G10-B04-FEASIBILITY`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính hàm mục tiêu tại tất cả các đỉnh của miền."
+    ],
     "rubric": "1đ đỉnh; 1đ tính các giá trị; 1đ kết luận đúng.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -357,22 +591,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "15 tại (5;0) duy nhất."
+      },
+      {
+        "id": "B",
+        "text": "13 tại (3;2) duy nhất."
+      },
+      {
+        "id": "C",
+        "text": "19 tại (5;2) duy nhất."
+      },
+      {
+        "id": "D",
+        "text": "15 tại cả (5;0) và (3;2)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-10",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Xét hệ x≥0, y≥0, x+2y≤8, 2x+y≤8. Cho biết Đ/S: (a) (2;3) là nghiệm. (b) (3;3) là nghiệm. (c) (0;4) là nghiệm. (d) (5;0) là nghiệm.",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-10",
+    "stem": "Xét hệ x≥0, y≥0, x+2y≤8, 2x+y≤8. Cho biết Đ/S: (a) (2;3) là nghiệm. (b) (3;3) là nghiệm. (c) (0;4) là nghiệm. (d) (5;0) là nghiệm. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "(Đ, S, Đ, S)",
     "worked_solution": "a: 2+6=8, 4+3=7 hợp lệ; b: 3+6=9 và 6+3=9 đều vượt 8; c: 0+8=8, 0+4=4 hợp lệ; d: 10>8, không hợp lệ.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B04-FEASIBILITY",
+      "G10-B04-SYSTEM"
+    ],
     "original_outcome_text": "`G10-B04-FEASIBILITY`, `G10-B04-SYSTEM`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Thay từng cặp vào đồng thời hai bất phương trình."
+    ],
     "rubric": "4 ý, mỗi ý 1đ; không phản hồi đúng/sai từng câu trước Final Submit.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "TRUE_FALSE_GROUP"
     },
@@ -397,22 +659,51 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đ, Đ, Đ, S"
+      },
+      {
+        "id": "B",
+        "text": "Đ, S, Đ, S"
+      },
+      {
+        "id": "C",
+        "text": "S, S, Đ, Đ"
+      },
+      {
+        "id": "D",
+        "text": "Đ, S, S, Đ"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-11",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Một xưởng làm x sản phẩm A và y sản phẩm B, x,y nguyên không âm. Mỗi A dùng (1;2) đơn vị hai loại vật liệu; mỗi B dùng (2;1). Mỗi vật liệu có tối đa 8 đơn vị. Lợi nhuận lần lượt 3 và 5 đơn vị. Viết hệ ràng buộc và tìm lợi nhuận nguyên lớn nhất, giải thích vì sao không được làm tròn tùy ý nghiệm tối ưu thực.",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-11",
+    "stem": "Một xưởng làm x sản phẩm A và y sản phẩm B, x,y nguyên không âm. Mỗi A dùng (1;2) đơn vị hai loại vật liệu; mỗi B dùng (2;1). Mỗi vật liệu có tối đa 8 đơn vị. Lợi nhuận lần lượt 3 và 5 đơn vị. Viết hệ ràng buộc và tìm lợi nhuận nguyên lớn nhất, giải thích vì sao không được làm tròn tùy ý nghiệm tối ưu thực. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "x+2y≤8; 2x+y≤8; x,y∈ℤ≥0. F=3x+5y; lợi nhuận lớn nhất 21 tại (x,y)=(2,3).",
     "worked_solution": "Ràng buộc x+2y≤8, 2x+y≤8, x,y∈ℤ≥0; F=3x+5y. Với miền nghiệm thực, các đỉnh (0,0), (4,0), (8/3,8/3), (0,4) cho F lần lượt 0, 12, 64/3, 20. Do đó F≤64/3. Vì x,y nguyên nên F nguyên và F≤21. Điểm (2,3) thỏa cả hai bất phương trình (8≤8 và 7≤8), cho F=21, đạt cận. Không được làm tròn tùy ý nghiệm thực: chẳng hạn làm tròn (8/3,8/3) thành (3,3) vi phạm cả hai ràng buộc.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B04-INTEGER_MODELS",
+      "G10-B04-LINEAR_OBJECTIVE",
+      "G10-B04-SYSTEM"
+    ],
     "original_outcome_text": "`G10-B04-INTEGER_MODELS`, `G10-B04-LINEAR_OBJECTIVE`, `G10-B04-SYSTEM`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Tìm cận trên của hàm mục tiêu trên miền thực, rồi kiểm phương án nguyên đạt cận nguyên."
+    ],
     "rubric": "4đ: lập hệ và miền nguyên 1đ; hàm mục tiêu 1đ; xét miền nghiệm nguyên có lý lẽ đủ 1đ; cực đại 21 và cặp (2,3) 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -437,22 +728,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cùng hệ và F; lớn nhất 24 tại (3;3), do làm tròn đỉnh thực."
+      },
+      {
+        "id": "B",
+        "text": "Cùng hệ và F; lớn nhất 20 tại (0;4), vì chỉ xét các đỉnh nguyên của miền thực."
+      },
+      {
+        "id": "C",
+        "text": "\\(x+2y\\le8,\\ 2x+y\\le8\\); x,y nguyên không âm; \\(F=3x+5y\\) lớn nhất 21 tại (2;3), đạt cận nguyên từ \\(\\frac{64}{3}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x+y\\le8\\); x,y nguyên không âm; F lớn nhất 40 tại (0;8)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-12",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Miền nghiệm x≥0, y≥0, x+2y≤10, 2x+y≤10 là một tứ giác. Hãy xác định đủ bốn đỉnh và tính diện tích tứ giác.",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-12",
+    "stem": "Miền nghiệm x≥0, y≥0, x+2y≤10, 2x+y≤10 là một tứ giác. Hãy xác định đủ bốn đỉnh và tính diện tích tứ giác. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "Đỉnh (0,0),(5,0),(10/3,10/3),(0,5); S=50/3",
     "worked_solution": "Hai giao trục là (5,0),(0,5); giao hai đường chéo: x+2y=10 và 2x+y=10 ⇒ x=y=10/3. Dùng công thức dây giày hoặc chia tam giác: S=1/2(5·10/3+10/3·5)=50/3.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B04-REGION_INTERSECTION",
+      "G10-B04-FEASIBILITY"
+    ],
     "original_outcome_text": "`G10-B04-REGION_INTERSECTION`, `G10-B04-FEASIBILITY`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Giải giao hai đường xiên và chia tứ giác thành hai tam giác."
+    ],
     "rubric": "1đ giao trục; 1đ giao hai đường; 1đ diện tích; 1đ lý giải hình/đơn vị diện tích.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -477,22 +796,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cùng bốn đỉnh; diện tích 25."
+      },
+      {
+        "id": "B",
+        "text": "\\((0;0),(10;0),(5;5),(0;10)\\); diện tích 50."
+      },
+      {
+        "id": "C",
+        "text": "\\((0;0),(5;0),(0;5)\\); diện tích \\(\\frac{25}{2}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\((0;0),(5;0),(\\frac{10}{3};\\frac{10}{3}),(0;5)\\); diện tích \\(\\frac{50}{3}\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-13",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Cho miền đa giác lồi có các đỉnh (0;0), (5;0), (3;2), (0;4). Giá trị lớn nhất của F=5x+3y là bao nhiêu? A. 25; B. 21; C. 12; D. 0.",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-13",
+    "stem": "Cho miền đa giác lồi có các đỉnh (0;0), (5;0), (3;2), (0;4). Giá trị lớn nhất của F=5x+3y là bao nhiêu? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
     "worked_solution": "Giá trị tại các đỉnh lần lượt 0,25,21,12; max 25 tại (5,0). Bài cho đa giác thay vì yêu cầu đọc nghiệm từ hình.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B04-LINEAR_OBJECTIVE"
+    ],
     "original_outcome_text": "`G10-B04-LINEAR_OBJECTIVE`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính F tại từng đỉnh đã cho."
+    ],
     "rubric": "1đ chọn A.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -517,22 +863,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "25"
+      },
+      {
+        "id": "B",
+        "text": "21"
+      },
+      {
+        "id": "C",
+        "text": "12"
+      },
+      {
+        "id": "D",
+        "text": "0"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHII-RD1-14",
-    "content_version": "679dbdb7ee293b7879c63dc391edce0c36097cc7522eaddc0daffae3623309b3",
-    "stem": "Tìm tất cả cặp số nguyên không âm (x,y) thỏa x+y=5, 2x+y≤7, x+2y≤8.",
+    "content_version": "SGK-G10-CHII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHII-RD1-14",
+    "stem": "Tìm tất cả cặp số nguyên không âm (x,y) thỏa x+y=5, 2x+y≤7, x+2y≤8. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "(x,y)=(2,3) duy nhất",
     "worked_solution": "Đặt y=5−x: từ 2x+y≤7 suy ra x≤2; từ x+2y≤8 suy ra 10−x≤8 ⇒ x≥2. Vậy x=2,y=3 thỏa mọi điều kiện và duy nhất.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B04-INTEGER_MODELS",
+      "G10-B04-SYSTEM"
+    ],
     "original_outcome_text": "`G10-B04-INTEGER_MODELS`, `G10-B04-SYSTEM`.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Thế y=5−x vào hai bất phương trình để tìm cận trên và dưới của x."
+    ],
     "rubric": "1đ thay y; 1đ nhận cận trên; 1đ nhận cận dưới; 1đ kết luận nghiệm duy nhất.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -557,6 +931,25 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ (3;2)."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ (2;3)."
+      },
+      {
+        "id": "C",
+        "text": "(2;3) và (3;2)."
+      },
+      {
+        "id": "D",
+        "text": "Không có cặp nào."
+      }
+    ]
   }
 ]
