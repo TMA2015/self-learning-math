@@ -1622,21 +1622,27 @@
   },
   {
     "item_id": "THPT-G11-B15-KFT01",
-    "content_version": "SOURCE_BLOB_95bbe5ecdd73b92f88176ae0245e11b1098d8e6e_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Dãy 2+1/n tiến gần số nào? Tại sao không cần có số hạng nào đúng bằng số đó?",
-    "answer_key": "Giới hạn bằng 2; mỗi số hạng lớn hơn 2 nhưng khoảng cách 1/n tiến về 0.",
-    "worked_solution": "Khi n là số nguyên dương và n tăng không giới hạn, 1/n→0. Vì vậy 2+1/n→2. Mọi số hạng đều lớn hơn 2 vì 1/n>0, nhưng khoảng cách từ số hạng đến 2 là 1/n, có thể nhỏ tùy ý khi n đủ lớn. Giới hạn mô tả giá trị mà dãy tiến gần, không bắt buộc một số hạng phải bằng giá trị đó. Đây là formative tự học, không ghi Skill Mastery.",
+    "content_version": "SGK-G11-CHV-BANK-CANDIDATE-20261127-THPT-G11-B15-KFT01",
+    "stem": "Dãy \\(2+\\frac1n\\), với n nguyên dương, tiến gần số nào? Tại sao không cần có số hạng nào đúng bằng số đó? Chọn phương án đúng sau khi tự giải thích.",
+    "answer_key": "Giới hạn bằng 2; mọi số hạng lớn hơn 2 nhưng khoảng cách \\(1/n\\) tiến về 0.",
+    "worked_solution": "Với n nguyên dương, khi n tăng không giới hạn thì \\(\\frac1n\\to0\\). Do đó \\(2+\\frac1n\\to2\\). Mỗi số hạng lớn hơn 2, nhưng khoảng cách \\(\\frac1n\\) có thể nhỏ tùy ý khi n đủ lớn. Giới hạn không đòi hỏi có số hạng bằng giá trị giới hạn.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B15-FINITE_SEQUENCE"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét khoảng cách giữa số hạng và 2 khi n tăng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1653,25 +1659,50 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giới hạn bằng 3 vì số hạng đầu bằng 3."
+      },
+      {
+        "id": "B",
+        "text": "Giới hạn bằng 2; mọi số hạng lớn hơn 2 nhưng khoảng cách \\(1/n\\) tiến về 0."
+      },
+      {
+        "id": "C",
+        "text": "Không có giới hạn vì không số hạng nào bằng 2."
+      },
+      {
+        "id": "D",
+        "text": "Giới hạn bằng 0 vì \\(1/n\\) tiến về 0."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-B17-KFT01",
-    "content_version": "SOURCE_BLOB_36a7c21f3ae2474318c1e857acbcb640680e1326_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Giả sử f có giới hạn tại a bằng 3 nhưng f(a)=5. Hàm có liên tục tại a không? Vì sao? Sau đó chuyển sang Core/Practice để luyện độc lập, không tính điểm mastery từ câu tự thử.",
-    "answer_key": "Không liên tục tại a vì lim f(x)=3≠f(a)=5 khi x→a.",
-    "worked_solution": "Không. Hàm liên tục tại a khi có giá trị f(a), có giới hạn khi x→a và giới hạn đó bằng f(a). Ở đây hai giá trị tồn tại nhưng lim f(x)=3 khi x→a, trong khi f(a)=5. Vì 3≠5 nên điều kiện liên tục không thỏa.",
+    "content_version": "SGK-G11-CHV-BANK-CANDIDATE-20261127-THPT-G11-B17-KFT01",
+    "stem": "Giả sử \\(\\lim_{x\\to a}f(x)=3\\) nhưng \\(f(a)=5\\). Hàm có liên tục tại a không? Vì sao? Chọn phương án đúng sau khi tự giải thích.",
+    "answer_key": "Không; \\(\\lim_{x\\to a}f(x)=3\\ne f(a)=5\\).",
+    "worked_solution": "Hàm liên tục tại a nếu f(a) xác định, giới hạn tại a tồn tại và \\(\\lim_{x\\to a}f(x)=f(a)\\). Ở đây giới hạn bằng 3 còn giá trị tại a bằng 5. Vì \\(3\\ne5\\), hàm không liên tục tại a.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B17-CONTINUITY_POINT"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So giới hạn tại a với giá trị của hàm tại chính a."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1688,6 +1719,25 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, vì giới hạn tại a tồn tại."
+      },
+      {
+        "id": "B",
+        "text": "Có, vì f(a) xác định."
+      },
+      {
+        "id": "C",
+        "text": "Không; \\(\\lim_{x\\to a}f(x)=3\\ne f(a)=5\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì hàm không xác định tại a."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
