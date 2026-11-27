@@ -1473,16 +1473,17 @@
   {
     "item_id": "THPT-G11-CHIX-B32-P14",
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
-    "stem": "Cho \\(f(x)=\\frac{(x+1)^2}{x-1}\\). Nêu chuỗi quy tắc cần dùng để tính đạo hàm và miền xác định.",
-    "answer_key": "Quy tắc thương ở ngoài, quy tắc hàm hợp cho tử; \\(x\\ne1\\).",
-    "worked_solution": "Mẫu khác 0 nên x khác 1. Dùng quy tắc thương; trong tử, đạo hàm của \\((x+1)^2\\) dùng quy tắc hàm hợp, bằng \\(2(x+1)\\). Mẫu có đạo hàm 1. Nếu tính tiếp, \\(f'(x)=\\frac{2(x+1)(x-1)-(x+1)^2}{(x-1)^2}\\).",
+    "stem": "Cho \\(f(x)=\\frac{(x^2-1)^2}{x-1}\\). (a) Tìm tập xác định và tính đạo hàm bằng quy tắc thương kết hợp quy tắc hàm hợp. (b) Rút gọn hàm số trên tập xác định rồi tính đạo hàm bằng quy tắc tích; kiểm tra hai kết quả có bằng nhau không. (c) Có thể kết luận \\(f'(1)=4\\) từ biểu thức đạo hàm rút gọn không? Giải thích.",
+    "answer_key": "\\(D=\\mathbb R\\setminus\\{1\\}\\); cả hai cách cho \\(f'(x)=(x+1)(3x-1)\\) với \\(x\\ne1\\). Không có \\(f'(1)\\) vì f không xác định tại 1.",
+    "worked_solution": "Mẫu số phải khác 0 nên \\(D=\\mathbb R\\setminus\\{1\\}\\). (a) Tử là bình phương của \\(x^2-1\\); dùng quy tắc hàm hợp được đạo hàm \\(4x(x^2-1)\\). Quy tắc thương cho \\(f'(x)=\\frac{4x(x^2-1)(x-1)-(x^2-1)^2}{(x-1)^2}\\). Với \\(x\\ne1\\), thay \\(x^2-1=(x-1)(x+1)\\), khử nhân tử \\((x-1)^2\\), được \\(4x(x+1)-(x+1)^2=(x+1)(3x-1)\\). (b) Trên D, \\(f(x)=(x-1)(x+1)^2\\). Quy tắc tích và hàm hợp cho \\(f'(x)=(x+1)^2+2(x-1)(x+1)=(x+1)(3x-1)\\), đúng như cách (a). Cách (b) ít bước hơn vì đã rút gọn biểu thức trước khi tính. (c) Biểu thức đa thức cuối cùng nhận giá trị 4 tại x=1, nhưng f không có giá trị tại 1. Định nghĩa đạo hàm tại một điểm đòi hỏi hàm xác định ở điểm đó. Vì vậy không tồn tại \\(f'(1)\\); điều kiện x khác 1 vẫn phải giữ ở cả hai cách.",
     "skill_ids": [
       "G11-B32-RULE_SELECTION"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Chọn thương ngoài và hàm hợp ở tử."
+      "Giữ điều kiện mẫu khác 0 trước khi rút gọn.",
+      "Phân tích hiệu hai bình phương rồi chọn quy tắc đạo hàm đơn giản hơn."
     ],
     "rubric": null,
     "interaction": {
@@ -1499,7 +1500,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ quy tắc thương, viết tử u′v−uv′. Ôn TOP09-M24; luyện THPT-TOP09-P24."
+    "remediation": "Chọn quy tắc theo cấu trúc biểu thức; phép rút gọn không mở rộng miền xác định của hàm gốc. Ôn TOP09-M24; luyện THPT-TOP09-P24."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C15",
