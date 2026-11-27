@@ -1,7 +1,7 @@
 [
   {
     "item_id": "THPT-TOP17-P01",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-P01",
     "stem": "\\(H,X\\in d,\\ AH\\perp d\\) tại H, \\(AH=5,\\ HX=12\\). Tính AX và \\(d(A,d)\\).",
     "answer_key": "\\(AX=13;\\ d(A,d)=5\\).",
     "worked_solution": "Tam giác AHX vuông tại H nên \\(AX=\\sqrt{5^2+12^2}=13\\). Còn \\(d(A,d)=AH=5\\). Không nhầm đoạn xiên AX với khoảng cách.",
@@ -13,13 +13,17 @@
       "TOP17-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Dựng tam giác vuông có cạnh AH vuông góc d."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -27,12 +31,31 @@
       "heading_id": "THPT-TOP17-P01",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chọn AX làm khoảng cách, so \\(AX^2=AH^2+HX^2\\) và kiểm chân H. Ôn CĐ17 mục 1.1; luyện THPT-G11-CHVII-B26-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn AX làm khoảng cách, so \\(AX^2=AH^2+HX^2\\) và kiểm chân H. Ôn CĐ17 mục 1.1; luyện THPT-G11-CHVII-B26-C01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(AX=13,\\ d(A,d)=13\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(AX=13,\\ d(A,d)=5\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(AX=17,\\ d(A,d)=5\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(AX=\\sqrt{119},\\ d(A,d)=12\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP17-P02",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-P02",
     "stem": "Cho H là hình chiếu vuông góc của A lên mặt phẳng \\((P)\\), \\(M\\in(P),\\ AM=10\\,\\mathrm{cm},\\ HM=6\\,\\mathrm{cm}\\). Tính khoảng cách từ A đến \\((P)\\) và chứng minh H là điểm duy nhất trong \\((P)\\) gần A nhất.",
     "answer_key": "\\(d(A,(P))=8\\,\\mathrm{cm}\\); H là điểm duy nhất đạt khoảng cách nhỏ nhất.",
     "worked_solution": "\\(AH\\perp(P)\\) nên \\(AH\\perp HM\\). Tam giác AHM vuông tại H, \\(AH=\\sqrt{10^2-6^2}=8\\,\\mathrm{cm}\\). Với mọi \\(N\\in(P)\\) khác H, \\(AH\\perp HN\\), nên \\(AN^2=AH^2+HN^2>AH^2\\). Do đó \\(AN>AH\\). Khi \\(N=H\\), khoảng cách bằng \\(AH=8\\,\\mathrm{cm}\\). Vậy H là điểm duy nhất trong mặt phẳng gần A nhất.",
@@ -44,13 +67,17 @@
       "TOP17-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Xác định chân chiếu H rồi xét tam giác AHM."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -58,12 +85,31 @@
       "heading_id": "THPT-TOP17-P02",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu lấy AM làm khoảng cách, AM là đoạn xiên; cạnh vuông góc ngắn hơn. Ôn CĐ17 mục 1.2; luyện THPT-G11-CHVII-B26-W01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy AM làm khoảng cách, AM là đoạn xiên; cạnh vuông góc ngắn hơn. Ôn CĐ17 mục 1.2; luyện THPT-G11-CHVII-B26-W01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(d(A,(P))=10\\,\\mathrm{cm}\\); M gần A nhất."
+      },
+      {
+        "id": "B",
+        "text": "\\(d(A,(P))=6\\,\\mathrm{cm}\\); H gần A nhất vì HM vuông góc mặt phẳng."
+      },
+      {
+        "id": "C",
+        "text": "\\(d(A,(P))=8\\,\\mathrm{cm}\\); mọi điểm trong mặt phẳng cách A bằng nhau."
+      },
+      {
+        "id": "D",
+        "text": "\\(d(A,(P))=8\\,\\mathrm{cm}\\); với \\(N\\ne H\\) trong mặt phẳng, \\(AN^2=AH^2+HN^2>AH^2\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP17-P03",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-P03",
     "stem": "Trong hình hộp chữ nhật \\(ABCD.A'B'C'D'\\), \\(AA'=7\\,\\mathrm{cm}\\) và \\(AB=10\\,\\mathrm{cm}\\). Tính khoảng cách từ đường \\(A'B'\\) đến \\((ABCD)\\), giải thích vì sao không lấy \\(A'B\\) làm khoảng cách.",
     "answer_key": "7 cm.",
     "worked_solution": "\\(A'B'\\) thuộc mặt đáy trên song song \\((ABCD)\\), nên \\(A'B'\\parallel(ABCD)\\). Chọn \\(A'\\in A'B'\\). Vì \\(AA'\\perp(ABCD)\\), A là chân chiếu của \\(A'\\), suy ra \\(d(A'B',(ABCD))=A'A=7\\,\\mathrm{cm}\\). \\(A'B\\) là đoạn xiên, có độ dài \\(\\sqrt{7^2+10^2}>7\\) cm.",
@@ -75,13 +121,17 @@
       "TOP17-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Chọn một điểm bất kỳ trên đường đã biết song song mặt."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -89,12 +139,31 @@
       "heading_id": "THPT-TOP17-P03",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu d không song song mặt, không thể lấy tùy ý một điểm đại diện cho khoảng cách. Ôn CĐ17 mục 1.3; luyện THPT-G11-CHVII-B26-C03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu d không song song mặt, không thể lấy tùy ý một điểm đại diện cho khoảng cách. Ôn CĐ17 mục 1.3; luyện THPT-G11-CHVII-B26-C03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "7 cm, vì \\(AA'\\perp(ABCD)\\) còn \\(A'B\\) là đoạn xiên dài hơn."
+      },
+      {
+        "id": "B",
+        "text": "10 cm, vì AB là cạnh đáy."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\sqrt{149}\\,\\mathrm{cm}\\), vì \\(A'B\\) nối hai đối tượng."
+      },
+      {
+        "id": "D",
+        "text": "0 cm, vì hai đáy có các cạnh song song."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP17-P04",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-P04",
     "stem": "Một lăng trụ xiên có hai đáy song song, cạnh bên dài 10 cm tạo góc 30° với mặt đáy. Tính khoảng cách giữa hai mặt đáy.",
     "answer_key": "5 cm.",
     "worked_solution": "Gọi A và \\(A'\\) là hai đầu một cạnh bên, H là hình chiếu vuông góc của \\(A'\\) xuống mặt đáy dưới. \\(A'H\\) là đoạn vuông góc nối hai mặt đáy, nên bằng khoảng cách giữa hai mặt. Góc giữa cạnh bên \\(A'A\\) và đáy là \\(\\widehat{A'AH}=30^\\circ\\). Tam giác \\(A'AH\\) vuông tại H, \\(A'H=A'A\\cdot\\sin30^\\circ=10\\cdot\\frac12=5\\,\\mathrm{cm}\\).",
@@ -106,13 +175,17 @@
       "TOP17-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Dựng đoạn vuông góc nối hai mặt đáy song song."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -120,12 +193,31 @@
       "heading_id": "THPT-TOP17-P04",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng đường xiên nối hai mặt, chiếu vuông góc để xác định độ dài ngắn nhất. Ôn CĐ17 mục 1.4; luyện THPT-G11-CHVII-B26-C04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng đường xiên nối hai mặt, chiếu vuông góc để xác định độ dài ngắn nhất. Ôn CĐ17 mục 1.4; luyện THPT-G11-CHVII-B26-C04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 cm."
+      },
+      {
+        "id": "B",
+        "text": "\\(5\\sqrt3\\,\\mathrm{cm}\\)."
+      },
+      {
+        "id": "C",
+        "text": "5 cm."
+      },
+      {
+        "id": "D",
+        "text": "20 cm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP17-P05",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-P05",
     "stem": "Trong hình hộp chữ nhật \\(ABCD.A'B'C'D'\\), \\(AB=4\\,\\mathrm{cm},\\ BC=3\\,\\mathrm{cm},\\ AA'=6\\,\\mathrm{cm}\\). Chứng minh AB và \\(CC'\\) chéo nhau, xác định đoạn vuông góc chung và khoảng cách. Nếu thay \\(CC'\\) bằng \\(C'D'\\), hai đường còn chéo nhau không?",
     "answer_key": "AB và \\(CC'\\) chéo nhau; BC là đoạn vuông góc chung, khoảng cách 3 cm. AB và \\(C'D'\\) song song, không chéo nhau.",
     "worked_solution": "\\(CC'\\) chỉ gặp đáy tại C, không thuộc AB, nên AB và \\(CC'\\) không cắt. \\(CC'\\perp(ABCD)\\), nên \\(CC'\\) không cùng phương AB; hai đường chéo nhau. \\(B\\in AB,\\ C\\in CC'\\), \\(BC\\perp AB\\) vì đáy là hình chữ nhật, \\(BC\\perp CC'\\) vì \\(CC'\\perp(ABCD)\\). Vậy BC là đoạn vuông góc chung, khoảng cách bằng 3 cm. Nếu thay \\(CC'\\) bằng \\(C'D'\\) thì \\(C'D'\\parallel AB\\); hai đường song song phân biệt, không chéo nhau.",
@@ -137,13 +229,17 @@
       "TOP17-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tìm hai đầu mút thuộc đúng hai đường, đoạn nối vuông góc cả hai."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -151,12 +247,31 @@
       "heading_id": "THPT-TOP17-P05",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ vuông góc một đường, chưa phải đoạn vuông góc chung; kiểm phương thứ hai. Ôn CĐ17 mục 1.5; luyện THPT-G11-CHVII-B26-C05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ vuông góc một đường, chưa phải đoạn vuông góc chung; kiểm phương thứ hai. Ôn CĐ17 mục 1.5; luyện THPT-G11-CHVII-B26-C05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "AB và \\(CC'\\) chéo nhau; AC vuông góc chung, khoảng cách 5 cm. AB và \\(C'D'\\) song song."
+      },
+      {
+        "id": "B",
+        "text": "AB và \\(CC'\\) chéo nhau; BC vuông góc chung, khoảng cách 3 cm. AB và \\(C'D'\\) song song."
+      },
+      {
+        "id": "C",
+        "text": "AB và \\(CC'\\) chéo nhau; \\(CC'\\) vuông góc chung, khoảng cách 6 cm. AB và \\(C'D'\\) chéo nhau."
+      },
+      {
+        "id": "D",
+        "text": "AB và \\(CC'\\) cắt nhau tại C; AB và \\(C'D'\\) song song."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP17-P06",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-P06",
     "stem": "Chóp đều đáy vuông cạnh 12 cm, đường cao mặt bên 10 cm. Tính chiều cao chóp và giải thích vị trí chân đường cao.",
     "answer_key": "8 cm; chân đường cao là tâm đáy.",
     "worked_solution": "Gọi S là đỉnh, O là tâm đáy, M là trung điểm một cạnh đáy. Theo tính chất chóp đều, SO vuông góc đáy; SM là đường cao mặt bên, \\(OM=\\frac{12}2=6\\,\\mathrm{cm}\\). Tam giác SOM vuông tại O, \\(SO=\\sqrt{10^2-6^2}=8\\,\\mathrm{cm}\\). Vậy chiều cao chóp là SO, không phải SM.",
@@ -168,13 +283,17 @@
       "TOP17-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tìm chân đường cao của chóp, xét tam giác vuông từ tâm đáy đến trung điểm cạnh."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -182,12 +301,31 @@
       "heading_id": "THPT-TOP17-P06",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng đường cao mặt bên làm chiều cao, phải tìm cạnh SO vuông góc đáy. Ôn CĐ17 mục 1.6; luyện THPT-G11-CHVII-B26-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng đường cao mặt bên làm chiều cao, phải tìm cạnh SO vuông góc đáy. Ôn CĐ17 mục 1.6; luyện THPT-G11-CHVII-B26-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "8 cm; chân đường cao là tâm đáy."
+      },
+      {
+        "id": "B",
+        "text": "10 cm; chân đường cao là trung điểm một cạnh đáy."
+      },
+      {
+        "id": "C",
+        "text": "6 cm; chân đường cao là tâm đáy."
+      },
+      {
+        "id": "D",
+        "text": "12 cm; chân đường cao là một đỉnh đáy."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP17-P07",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-P07",
     "stem": "Lăng trụ có đáy hình tam giác diện tích \\(18\\,\\mathrm m^2\\), khoảng cách hai mặt đáy 4 m. Tính V.",
     "answer_key": "\\(72\\,\\mathrm m^3\\).",
     "worked_solution": "\\(V=18\\cdot4=72\\,\\mathrm m^3\\). Khoảng cách vuông góc hai đáy là chiều cao, không nhất thiết là cạnh bên.",
@@ -199,13 +337,17 @@
       "TOP17-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Thể tích lăng trụ bằng diện tích đáy nhân khoảng cách hai mặt đáy."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -213,12 +355,31 @@
       "heading_id": "THPT-TOP17-P07",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng cạnh xiên làm h, h là khoảng cách vuông góc giữa hai đáy. Ôn CĐ17 mục 2.1; luyện THPT-G11-CHVII-B27-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng cạnh xiên làm h, h là khoảng cách vuông góc giữa hai đáy. Ôn CĐ17 mục 2.1; luyện THPT-G11-CHVII-B27-C01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(24\\,\\mathrm{m}^3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(36\\,\\mathrm{m}^3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(22\\,\\mathrm{m}^3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(72\\,\\mathrm{m}^3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP17-P08",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-P08",
     "stem": "Chóp tứ giác đáy vuông cạnh 6 cm và cao 4 cm. Tính thể tích.",
     "answer_key": "\\(48\\,\\mathrm{cm}^3\\).",
     "worked_solution": "\\(S_{\\text{đáy}}=36\\,\\mathrm{cm}^2,\\ V=\\frac13\\cdot36\\cdot4=48\\,\\mathrm{cm}^3\\). Không dùng độ dài đường cao mặt bên.",
@@ -230,13 +391,17 @@
       "TOP17-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính diện tích đáy vuông rồi dùng hệ số \\(\\frac13\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -244,12 +409,31 @@
       "heading_id": "THPT-TOP17-P08",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng \\(V=Sh\\), đó là công thức lăng trụ; chóp có hệ số \\(\\frac13\\). Ôn CĐ17 mục 2.2; luyện THPT-G11-CHVII-B27-C02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng \\(V=Sh\\), đó là công thức lăng trụ; chóp có hệ số \\(\\frac13\\). Ôn CĐ17 mục 2.2; luyện THPT-G11-CHVII-B27-C02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(144\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(24\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(48\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(16\\,\\mathrm{cm}^3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP17-P09",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-P09",
     "stem": "Một hình hộp chữ nhật dài 20 cm, rộng 15 cm, cao 1 dm. Tính thể tích theo \\(\\mathrm{cm}^3\\) và \\(\\mathrm{dm}^3\\).",
     "answer_key": "\\(3000\\,\\mathrm{cm}^3=3\\,\\mathrm{dm}^3\\).",
     "worked_solution": "Đổi \\(1\\,\\mathrm{dm}=10\\,\\mathrm{cm}\\). Thể tích là \\(20\\cdot15\\cdot10=3000\\,\\mathrm{cm}^3\\). Vì \\(1\\,\\mathrm{dm}^3=(10\\,\\mathrm{cm})^3=1000\\,\\mathrm{cm}^3\\), nên \\(3000\\,\\mathrm{cm}^3=3\\,\\mathrm{dm}^3\\).",
@@ -261,13 +445,17 @@
       "TOP17-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tính ba chiều của hình hộp; đổi về cùng đơn vị trước."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -275,12 +463,31 @@
       "heading_id": "THPT-TOP17-P09",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu lấy diện tích toàn phần làm thể tích hoặc trộn cm và dm, đổi đơn vị rồi nhân ba chiều. Ôn CĐ17 mục 2.3; luyện THPT-G11-CHVII-B27-C03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy diện tích toàn phần làm thể tích hoặc trộn cm và dm, đổi đơn vị rồi nhân ba chiều. Ôn CĐ17 mục 2.3; luyện THPT-G11-CHVII-B27-C03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(3000\\,\\mathrm{cm}^3=3\\,\\mathrm{dm}^3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(300\\,\\mathrm{cm}^3=0{,}3\\,\\mathrm{dm}^3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(3000\\,\\mathrm{cm}^3=30\\,\\mathrm{dm}^3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(3000\\,\\mathrm{cm}^3=0{,}003\\,\\mathrm{dm}^3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP17-P10",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-P10",
     "stem": "Chóp cụt đều có hai đáy hình vuông cạnh 10 cm và 4 cm, chiều cao vuông góc 6 cm. Tính thể tích; kiểm công thức bằng cách tính hiệu hai chóp đồng dạng.",
     "answer_key": "\\(312\\,\\mathrm{cm}^3\\).",
     "worked_solution": "Hai diện tích đáy \\(S=100\\,\\mathrm{cm}^2,\\ S'=16\\,\\mathrm{cm}^2\\). \\(V=\\frac{6(100+16+\\sqrt{1600})}3=2\\cdot156=312\\,\\mathrm{cm}^3\\). Kiểm bằng hai chóp đồng dạng: gọi H là chiều cao chóp lớn, h là chiều cao chóp nhỏ bị cắt. Tỉ số \\(\\frac hH=\\frac4{10}=\\frac25\\), \\(H-h=6\\) nên \\(H=10\\,\\mathrm{cm},\\ h=4\\,\\mathrm{cm}\\). Hiệu thể tích là \\(\\frac{100\\cdot10-16\\cdot4}3=\\frac{1000-64}3=312\\,\\mathrm{cm}^3\\).",
@@ -292,13 +499,17 @@
       "TOP17-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tính hai diện tích đáy, căn tích hai diện tích và chiều cao vuông góc."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -306,12 +517,31 @@
       "heading_id": "THPT-TOP17-P10",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng trung bình cộng hai đáy hoặc cạnh xiên, viết đủ ba số hạng \\(S,S',\\sqrt{SS'}\\). Ôn CĐ17 mục 2.4; luyện THPT-G11-CHVII-B27-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng trung bình cộng hai đáy hoặc cạnh xiên, viết đủ ba số hạng \\(S,S',\\sqrt{SS'}\\). Ôn CĐ17 mục 2.4; luyện THPT-G11-CHVII-B27-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(348\\,\\mathrm{cm}^3\\); lấy trung bình cộng hai diện tích đáy nhân chiều cao."
+      },
+      {
+        "id": "B",
+        "text": "\\(312\\,\\mathrm{cm}^3\\); chiều cao chóp lớn 10 cm, chóp nhỏ 4 cm; lấy hiệu thể tích hai chóp."
+      },
+      {
+        "id": "C",
+        "text": "\\(232\\,\\mathrm{cm}^3\\); bỏ số hạng căn tích hai diện tích."
+      },
+      {
+        "id": "D",
+        "text": "\\(936\\,\\mathrm{cm}^3\\); nhân tổng ba số hạng với chiều cao, không chia 3."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP17-P11",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-P11",
     "stem": "Một bể dạng lăng trụ đứng có đáy là tam giác vuông với hai cạnh góc vuông 1,2 m và 0,8 m; chiều cao bể 0,5 m. Bể chỉ được chứa 75% dung tích. Tính lượng nước tối đa theo lít, bỏ qua bề dày thành bể.",
     "answer_key": "180 lít.",
     "worked_solution": "Diện tích đáy là \\(\\frac12\\cdot1{,}2\\cdot0{,}8=0{,}48\\,\\mathrm m^2\\). Dung tích bể \\(V=0{,}48\\cdot0{,}5=0{,}24\\,\\mathrm m^3\\), tức 240 lít. Phần được chứa tối đa bằng \\(75\\%\\cdot240=180\\) lít. Giả thiết bỏ qua bề dày thành bể cho phép dùng toàn bộ kích thước đã cho.",
@@ -323,13 +553,17 @@
       "TOP17-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tính thể tích phần chứa được, rồi đổi từ \\(\\mathrm m^3\\) ra lít nếu cần."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -337,12 +571,31 @@
       "heading_id": "THPT-TOP17-P11",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhầm \\(1\\,\\mathrm m^3=100\\,\\mathrm L\\), nhớ \\(1\\,\\mathrm m^3=1000\\,\\mathrm{dm}^3=1000\\,\\mathrm L\\); kiểm phần dung tích được dùng. Ôn CĐ17 mục 2.5; luyện THPT-G11-CHVII-B27-C05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm \\(1\\,\\mathrm m^3=100\\,\\mathrm L\\), nhớ \\(1\\,\\mathrm m^3=1000\\,\\mathrm{dm}^3=1000\\,\\mathrm L\\); kiểm phần dung tích được dùng. Ôn CĐ17 mục 2.5; luyện THPT-G11-CHVII-B27-C05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "240 lít."
+      },
+      {
+        "id": "B",
+        "text": "360 lít."
+      },
+      {
+        "id": "C",
+        "text": "18 lít."
+      },
+      {
+        "id": "D",
+        "text": "180 lít."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP17-P12",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-P12",
     "stem": "Chóp tứ giác đều đáy vuông cạnh 6 cm, cạnh bên \\(5\\sqrt2\\,\\mathrm{cm}\\). Tính thể tích khối chóp.",
     "answer_key": "\\(48\\sqrt2\\,\\mathrm{cm}^3\\).",
     "worked_solution": "Gọi S là đỉnh, O tâm đáy, A một đỉnh đáy. SO vuông góc đáy, \\(OA=\\frac{6\\sqrt2}2=3\\sqrt2\\,\\mathrm{cm}\\). Tam giác SOA vuông tại O, \\(SO=\\sqrt{(5\\sqrt2)^2-(3\\sqrt2)^2}=\\sqrt{32}=4\\sqrt2\\,\\mathrm{cm}\\). Diện tích đáy \\(36\\,\\mathrm{cm}^2\\). \\(V=\\frac13\\cdot36\\cdot4\\sqrt2=48\\sqrt2\\,\\mathrm{cm}^3\\). Cạnh bên SA không phải chiều cao.",
@@ -354,13 +607,17 @@
       "TOP17-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tìm chiều cao vuông góc từ dữ kiện cạnh bên và tâm đáy trước khi tính V."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -368,7 +625,26 @@
       "heading_id": "THPT-TOP17-P12",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu lấy cạnh bên làm h, dựng tam giác vuông với bán kính đường tròn ngoại tiếp đáy. Ôn CĐ17 mục 2.6; luyện THPT-G11-CHVII-CHVII-C01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy cạnh bên làm h, dựng tam giác vuông với bán kính đường tròn ngoại tiếp đáy. Ôn CĐ17 mục 2.6; luyện THPT-G11-CHVII-CHVII-C01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(60\\sqrt2\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(144\\sqrt2\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(48\\sqrt2\\,\\mathrm{cm}^3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(36\\sqrt2\\,\\mathrm{cm}^3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
