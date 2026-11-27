@@ -9999,7 +9999,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Đổi độ sang radian bằng hệ số π/180, giữ dấu quay."
+      "Đổi độ sang radian bằng hệ số \\(\\frac{\\pi}{180}\\), giữ dấu quay."
     ],
     "rubric": null,
     "interaction": {
@@ -10757,7 +10757,7 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Lọc các bội của π trong khoảng nửa kín đã cho."
+      "Lọc các bội của \\(\\pi\\) trong khoảng nửa kín đã cho."
     ],
     "rubric": null,
     "interaction": {
