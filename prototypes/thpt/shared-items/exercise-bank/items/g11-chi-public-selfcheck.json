@@ -609,7 +609,9 @@
     "answer_key": "\\([-3;5]\\); \\(T=\\pi\\); GTLN 5 tại \\(x=\\pi/2+k\\pi\\).",
     "worked_solution": "Vì \\(-1\\le\\cos2x\\le1\\), nên \\(-3\\le f(x)\\le5\\), và mọi giá trị trong đoạn đều đạt được. Chu kì cơ bản \\(\\pi\\). GTLN 5 đạt khi \\(\\cos2x=-1\\), tức \\(2x=\\pi+2k\\pi\\), hay \\(x=\\pi/2+k\\pi\\).",
     "skill_ids": [
-      "G11-B03-SIN_GRAPH"
+      "G11-B03-COS_GRAPH",
+      "G11-B03-DOMAIN_RANGE",
+      "G11-B03-PERIOD"
     ],
     "original_outcome_text": "G11-B03-SIN_GRAPH",
     "problem_type_id": null,
@@ -667,7 +669,8 @@
         "text": "\\([-3;5]\\); \\(T=\\pi\\); GTLN 5 tại \\(x=k\\pi\\)."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "skill_mapping_note": "Original outcome label SIN_GRAPH retained in source metadata; task explicitly concerns cosine, range and period; candidate uses existing relevant skill IDs."
   },
   {
     "item_id": "THPT-G11-CHI-RD1-11",
