@@ -1328,7 +1328,8 @@
       "G11-B04-INTERVAL"
     ],
     "content_version": "CD06-BANK-CP126-20261127-TOP06-W03",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-TOP06-W04",
@@ -1928,7 +1929,7 @@
   {
     "item_id": "THPT-TOP10-W01",
     "source": {
-      "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+      "blob": "a8c7185ccda5daeae8cef1cff71bf3ef9a588107",
       "heading_id": "THPT-TOP10-W01",
       "previous_source_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
       "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
@@ -1943,12 +1944,13 @@
       "G12-B01-EXTREMA_SIGN_CHANGE"
     ],
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-W01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-TOP10-W02",
     "source": {
-      "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+      "blob": "a8c7185ccda5daeae8cef1cff71bf3ef9a588107",
       "heading_id": "THPT-TOP10-W02",
       "previous_source_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
       "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
@@ -1968,11 +1970,12 @@
   {
     "item_id": "THPT-TOP10-W03",
     "source": {
-      "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+      "blob": "a8c7185ccda5daeae8cef1cff71bf3ef9a588107",
       "heading_id": "THPT-TOP10-W03",
       "previous_source_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
       "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
-      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "prior_candidate_blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
@@ -1982,13 +1985,14 @@
     "skill_ids": [
       "G12-B03-OBLIQUE_REMAINDER"
     ],
-    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-W03",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-W03.DELTA04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-TOP10-W04",
     "source": {
-      "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+      "blob": "a8c7185ccda5daeae8cef1cff71bf3ef9a588107",
       "heading_id": "THPT-TOP10-W04",
       "previous_source_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
       "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
@@ -2008,7 +2012,7 @@
   {
     "item_id": "THPT-TOP10-W05",
     "source": {
-      "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+      "blob": "a8c7185ccda5daeae8cef1cff71bf3ef9a588107",
       "heading_id": "THPT-TOP10-W05",
       "previous_source_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
       "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
@@ -2028,7 +2032,7 @@
   {
     "item_id": "THPT-TOP10-W06",
     "source": {
-      "blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd",
+      "blob": "a8c7185ccda5daeae8cef1cff71bf3ef9a588107",
       "heading_id": "THPT-TOP10-W06",
       "previous_source_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
       "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
@@ -2510,7 +2514,7 @@
   {
     "item_id": "THPT-TOP11-W01",
     "source": {
-      "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+      "blob": "2e9e2378e9aaa14f889782743fa4b2a08575e287",
       "heading_id": "THPT-TOP11-W01",
       "previous_source_blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
       "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
@@ -2530,7 +2534,7 @@
   {
     "item_id": "THPT-TOP11-W02",
     "source": {
-      "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+      "blob": "2e9e2378e9aaa14f889782743fa4b2a08575e287",
       "heading_id": "THPT-TOP11-W02",
       "previous_source_blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
       "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
@@ -2550,7 +2554,7 @@
   {
     "item_id": "THPT-TOP11-W03",
     "source": {
-      "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+      "blob": "2e9e2378e9aaa14f889782743fa4b2a08575e287",
       "heading_id": "THPT-TOP11-W03",
       "previous_source_blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
       "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
@@ -2570,7 +2574,7 @@
   {
     "item_id": "THPT-TOP11-W04",
     "source": {
-      "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+      "blob": "2e9e2378e9aaa14f889782743fa4b2a08575e287",
       "heading_id": "THPT-TOP11-W04",
       "previous_source_blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
       "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
@@ -2590,11 +2594,12 @@
   {
     "item_id": "THPT-TOP11-W05",
     "source": {
-      "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+      "blob": "2e9e2378e9aaa14f889782743fa4b2a08575e287",
       "heading_id": "THPT-TOP11-W05",
       "previous_source_blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
       "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
-      "revision_scope": "WRITTEN_VARIANT_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "prior_candidate_blob": "331b37b0ce28e8826940016f37326edf97efa139"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
@@ -2604,13 +2609,14 @@
     "skill_ids": [
       "G12-CHIV-B13-O06"
     ],
-    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-W05",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-W05.DELTA04",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-TOP11-W06",
     "source": {
-      "blob": "331b37b0ce28e8826940016f37326edf97efa139",
+      "blob": "2e9e2378e9aaa14f889782743fa4b2a08575e287",
       "heading_id": "THPT-TOP11-W06",
       "previous_source_blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
       "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
@@ -2806,12 +2812,13 @@
   {
     "item_id": "THPT-G10-CHIV-W08-FORCE-TR01",
     "source": {
-      "blob": "5362cb9b01259d92ace93455c507f6d026b4f297",
+      "blob": "42071d49bd1009136fcf1f5bbf59e70be6807d4a",
       "heading_id": "THPT-G10-CHIV-W08-FORCE-TR01",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_G10_CHIV_FULL_R04_WITH_TRANSFER_DELTA_C_20261107.md",
       "previous_reviewed_blob": "6e581218ff1874d127daa991a1ebcebfa71baf16",
-      "intake_source_blob": "d8020a23db8ec8465f5361e3c9834cdb6a55538e"
+      "intake_source_blob": "d8020a23db8ec8465f5361e3c9834cdb6a55538e",
+      "prior_candidate_blob": "5362cb9b01259d92ace93455c507f6d026b4f297"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b07-b08.md",
@@ -2827,19 +2834,20 @@
       "G10-B11-GEOMETRIC_DOT",
       "G10-B11-APPLICATION"
     ],
-    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W08-FORCE-TR01.DELTA03",
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W08-FORCE-TR01.DELTA03.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Historical HTML rubric row malformed by pipe splitting; mathematical step and /4 clear, projection repair pending at cutover. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending."
+    "review_note": "Historical HTML rubric row malformed by pipe splitting; mathematical step and /4 clear, projection repair pending at cutover. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G10-CHIV-W09",
     "source": {
-      "blob": "5362cb9b01259d92ace93455c507f6d026b4f297",
+      "blob": "42071d49bd1009136fcf1f5bbf59e70be6807d4a",
       "heading_id": "THPT-G10-CHIV-W09",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_G10_CHIV_FULL_R04_WITH_TRANSFER_DELTA_C_20261107.md",
       "previous_reviewed_blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
-      "intake_source_blob": "d8020a23db8ec8465f5361e3c9834cdb6a55538e"
+      "intake_source_blob": "d8020a23db8ec8465f5361e3c9834cdb6a55538e",
+      "prior_candidate_blob": "5362cb9b01259d92ace93455c507f6d026b4f297"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11.md",
@@ -2854,19 +2862,20 @@
       "G10-B09-MIDPOINT_CENTROID",
       "G10-B09-LENGTH_DIRECTION"
     ],
-    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W09.DELTA03",
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W09.DELTA03.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Answer gives derivation results; separate worked solution is terse. Align midpoint explanation with requested expression and expand at scoped PED/notation review. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending."
+    "review_note": "Answer gives derivation results; separate worked solution is terse. Align midpoint explanation with requested expression and expand at scoped PED/notation review. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G10-CHIV-W10",
     "source": {
-      "blob": "5362cb9b01259d92ace93455c507f6d026b4f297",
+      "blob": "42071d49bd1009136fcf1f5bbf59e70be6807d4a",
       "heading_id": "THPT-G10-CHIV-W10",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_G10_CHIV_FULL_R04_WITH_TRANSFER_DELTA_C_20261107.md",
       "previous_reviewed_blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
-      "intake_source_blob": "d8020a23db8ec8465f5361e3c9834cdb6a55538e"
+      "intake_source_blob": "d8020a23db8ec8465f5361e3c9834cdb6a55538e",
+      "prior_candidate_blob": "5362cb9b01259d92ace93455c507f6d026b4f297"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11.md",
@@ -2882,19 +2891,20 @@
       "G10-B10-VECTOR_COORDS",
       "G10-B10-NORM_DISTANCE"
     ],
-    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W10.DELTA03",
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W10.DELTA03.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Answer gives correct component checks; separate solution needs expanded substitutions at scoped PED review. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending."
+    "review_note": "Answer gives correct component checks; separate solution needs expanded substitutions at scoped PED review. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G10-CHIV-W11-ANCHOR",
     "source": {
-      "blob": "5362cb9b01259d92ace93455c507f6d026b4f297",
+      "blob": "42071d49bd1009136fcf1f5bbf59e70be6807d4a",
       "heading_id": "THPT-G10-CHIV-W11-ANCHOR",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_G10_CHIV_FULL_R04_WITH_TRANSFER_DELTA_C_20261107.md",
       "previous_reviewed_blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
-      "intake_source_blob": "d8020a23db8ec8465f5361e3c9834cdb6a55538e"
+      "intake_source_blob": "d8020a23db8ec8465f5361e3c9834cdb6a55538e",
+      "prior_candidate_blob": "5362cb9b01259d92ace93455c507f6d026b4f297"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11.md",
@@ -2910,9 +2920,9 @@
       "G10-B11-COORDINATE_DOT",
       "G10-B11-GEOMETRIC_DOT"
     ],
-    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W11-ANCHOR.DELTA03",
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W11-ANCHOR.DELTA03.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Answer supplies correct calculation; separate solution needs full step-by-step presentation and notation review. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending."
+    "review_note": "Answer supplies correct calculation; separate solution needs full step-by-step presentation and notation review. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G10-CHIV-W10-RIVER-TR01",
@@ -3598,7 +3608,8 @@
       "G10-B21-CIRCLE_THROUGH_POINTS"
     ],
     "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-W03",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-TOP14-W04",
@@ -4035,7 +4046,8 @@
       "G11-B23-TWO_INTERSECT"
     ],
     "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B23-W02-ANCHOR",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-W01",
@@ -4526,7 +4538,8 @@
     ],
     "content_version": "CD18-BANK-20261127-THPT-G12-B14-W07.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Reconciled prior corrected stem (sphere versus solid sphere), explicitly h>=0, R>0, three intersection cases; revised rubric /5 to match the requested distinction instead of unrelated physical interpretation. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Reconciled prior corrected stem (sphere versus solid sphere), explicitly h>=0, R>0, three intersection cases; revised rubric /5 to match the requested distinction instead of unrelated physical interpretation. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-B15-W01",
@@ -5177,7 +5190,7 @@
     ],
     "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHVIII-W25-01",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
-    "review_note": "Compared exact W25-01 with public replay CHVIII-RD1-10: same polynomial and coefficient, but Written additionally requires total coefficient sum via P(1); public replay asks number of negative coefficients. Retain original reviewed Written and public practice replay; never independent unseen assessment. No change of source/score."
+    "review_note": "Compared exact W25-01 with public replay CHVIII-RD1-10: same polynomial and coefficient, but Written additionally requires total coefficient sum via P(1); public replay asks number of negative coefficients. Retain original reviewed Written and public practice replay; never independent unseen assessment. No change of source/score. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-TOP19-W01",
@@ -5271,7 +5284,7 @@
     ],
     "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIX-W26-01.DELTA03",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "CP119 confirmed need to state independent trials; historical source preserved, candidate wording needs scoped Delta before acceptance. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending."
+    "review_note": "CP119 confirmed need to state independent trials; historical source preserved, candidate wording needs scoped Delta before acceptance. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G10-CHIX-W27-ANCHOR-01",
@@ -5320,7 +5333,7 @@
     ],
     "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B28-W01.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Source solution lists correct sets but does not explicitly explain why 6 belongs to both; expand at scoped PED review. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending."
+    "review_note": "Source solution lists correct sets but does not explicitly explain why 6 belongs to both; expand at scoped PED review. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-W02-ANCHOR",
@@ -5369,7 +5382,7 @@
     ],
     "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B29-W01.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Source solution omits explicit double-count explanation demanded by prompt/rubric. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending."
+    "review_note": "Source solution omits explicit double-count explanation demanded by prompt/rubric. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-W02-ANCHOR",
@@ -5418,7 +5431,7 @@
     ],
     "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B29-W03.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Wording 'không chọn cả hai' ambiguous between neither and not both; solution uses neither; scoped wording Delta required. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending."
+    "review_note": "Wording 'không chọn cả hai' ambiguous between neither and not both; solution uses neither; scoped wording Delta required. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-W01",
@@ -5562,11 +5575,12 @@
   {
     "item_id": "THPT-G12-B18-W01",
     "source": {
-      "blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5",
+      "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
       "heading_id": "THPT-G12-B18-W01",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8"
+      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "prior_candidate_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5580,9 +5594,9 @@
     "skill_ids": [
       "G12-CHVI-B18-O01"
     ],
-    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W01.DELTA02",
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W01.DELTA02.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Source rubric requires explicit explanation why denominator is not 12; solution implies it but should state it directly at scoped PED review. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending."
+    "review_note": "Source rubric requires explicit explanation why denominator is not 12; solution implies it but should state it directly at scoped PED review. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-B18-W02",
@@ -5609,11 +5623,12 @@
   {
     "item_id": "THPT-G12-B18-W03",
     "source": {
-      "blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5",
+      "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
       "heading_id": "THPT-G12-B18-W03",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8"
+      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "prior_candidate_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5627,9 +5642,9 @@
     "skill_ids": [
       "G12-CHVI-B18-O03"
     ],
-    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W03.DELTA02",
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W03.DELTA02.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Selection model not explicit: specify uniform random selection of one student. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending."
+    "review_note": "Selection model not explicit: specify uniform random selection of one student. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-B18-W04",
@@ -5656,11 +5671,12 @@
   {
     "item_id": "THPT-G12-B18-W05",
     "source": {
-      "blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5",
+      "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
       "heading_id": "THPT-G12-B18-W05",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8"
+      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "prior_candidate_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5674,9 +5690,9 @@
     "skill_ids": [
       "G12-CHVI-B18-O05"
     ],
-    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W05.DELTA02",
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W05.DELTA02.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Selection model not explicit: specify uniform random selection of one respondent. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending."
+    "review_note": "Selection model not explicit: specify uniform random selection of one respondent. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-B18-W06",
@@ -5703,11 +5719,12 @@
   {
     "item_id": "THPT-G12-B18-W07",
     "source": {
-      "blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5",
+      "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
       "heading_id": "THPT-G12-B18-W07",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8"
+      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "prior_candidate_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5721,9 +5738,9 @@
     "skill_ids": [
       "G12-CHVI-B18-O07"
     ],
-    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W07.DELTA02",
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W07.DELTA02.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "State uniform selection among remaining balls each draw; near-identical structure and counts to P07 (different colors), no independent assessment claim. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending."
+    "review_note": "State uniform selection among remaining balls each draw; near-identical structure and counts to P07 (different colors), no independent assessment claim. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-B19-W01",
@@ -5772,11 +5789,12 @@
   {
     "item_id": "THPT-G12-B19-W03",
     "source": {
-      "blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5",
+      "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
       "heading_id": "THPT-G12-B19-W03",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8"
+      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "prior_candidate_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5790,18 +5808,19 @@
     "skill_ids": [
       "G12-CHVI-B19-O03"
     ],
-    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W03.DELTA02",
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W03.DELTA02.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Solution omits full tree description required by stem/rubric; expand branches including complementary leaves. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending."
+    "review_note": "Solution omits full tree description required by stem/rubric; expand branches including complementary leaves. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-B19-W04",
     "source": {
-      "blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5",
+      "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
       "heading_id": "THPT-G12-B19-W04",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8"
+      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "prior_candidate_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5815,18 +5834,19 @@
     "skill_ids": [
       "G12-CHVI-B19-O04"
     ],
-    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W04.DELTA02",
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W04.DELTA02.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Posterior happens to equal given likelihood 0.7; retain calculation but distinguish directions and avoid treating inequality as universal. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending."
+    "review_note": "Posterior happens to equal given likelihood 0.7; retain calculation but distinguish directions and avoid treating inequality as universal. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-B19-W05",
     "source": {
-      "blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5",
+      "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
       "heading_id": "THPT-G12-B19-W05",
-      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8"
+      "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "prior_candidate_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5840,9 +5860,9 @@
     "skill_ids": [
       "G12-CHVI-B19-O05"
     ],
-    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W05.DELTA02",
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W05.DELTA02.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Define sensitivity and specificity in learner-facing prompt or link prior definitions; preserve hypothetical model. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. Same numerical example EX-G12-B19-O05; use as practice, not independent evidence."
+    "review_note": "Define sensitivity and specificity in learner-facing prompt or link prior definitions; preserve hypothetical model. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. Same numerical example EX-G12-B19-O05; use as practice, not independent evidence. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-B19-W06",
@@ -6019,7 +6039,7 @@
   {
     "item_id": "THPT-G11-CHIII-W08-01",
     "source": {
-      "blob": "c4f4f654a95209ca46a6e03b61cc8f5222ec2816",
+      "blob": "d79ea3c061515bf5ee609df8133e13894d86752f",
       "heading_id": "THPT-G11-CHIII-W08-01",
       "previous_source_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
       "path": "prototypes/thpt/content-drafts/G11_CHIII_B08_B09_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
@@ -6043,7 +6063,7 @@
   {
     "item_id": "THPT-G11-CHIII-W08-02-ANCHOR",
     "source": {
-      "blob": "c4f4f654a95209ca46a6e03b61cc8f5222ec2816",
+      "blob": "d79ea3c061515bf5ee609df8133e13894d86752f",
       "heading_id": "THPT-G11-CHIII-W08-02-ANCHOR",
       "previous_source_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
       "path": "prototypes/thpt/content-drafts/G11_CHIII_B08_B09_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
@@ -6067,7 +6087,7 @@
   {
     "item_id": "THPT-G11-CHIII-W09-01",
     "source": {
-      "blob": "c4f4f654a95209ca46a6e03b61cc8f5222ec2816",
+      "blob": "d79ea3c061515bf5ee609df8133e13894d86752f",
       "heading_id": "THPT-G11-CHIII-W09-01",
       "previous_source_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
       "path": "prototypes/thpt/content-drafts/G11_CHIII_B08_B09_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
@@ -6092,11 +6112,12 @@
   {
     "item_id": "THPT-G11-CHIII-W09-02-ANCHOR",
     "source": {
-      "blob": "c4f4f654a95209ca46a6e03b61cc8f5222ec2816",
+      "blob": "d79ea3c061515bf5ee609df8133e13894d86752f",
       "heading_id": "THPT-G11-CHIII-W09-02-ANCHOR",
       "previous_source_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
       "path": "prototypes/thpt/content-drafts/G11_CHIII_B08_B09_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "prior_candidate_blob": "c4f4f654a95209ca46a6e03b61cc8f5222ec2816"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-iii.md",
@@ -6111,14 +6132,14 @@
       "G11-B09-GROUPED-QUARTILES",
       "G11-B09-GROUPED-MODE"
     ],
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-CHIII-W09-02-ANCHOR",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-CHIII-W09-02-ANCHOR.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Scoped correction applied in current canonical source; prior snapshot preserved. Targeted Delta C academic/PED verification remains before handoff."
+    "review_note": "Scoped correction applied in current canonical source; prior snapshot preserved. Targeted Delta C academic/PED verification remains before handoff. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-B09-W01",
     "source": {
-      "blob": "ef83141c2f4d864f6334e266d01173a00791ef68",
+      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "heading_id": "THPT-G12-B09-W01",
       "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
@@ -6142,7 +6163,7 @@
   {
     "item_id": "THPT-G12-B09-W02",
     "source": {
-      "blob": "ef83141c2f4d864f6334e266d01173a00791ef68",
+      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "heading_id": "THPT-G12-B09-W02",
       "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
@@ -6166,11 +6187,12 @@
   {
     "item_id": "THPT-G12-B09-W03",
     "source": {
-      "blob": "ef83141c2f4d864f6334e266d01173a00791ef68",
+      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "heading_id": "THPT-G12-B09-W03",
       "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "prior_candidate_blob": "ef83141c2f4d864f6334e266d01173a00791ef68"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
@@ -6184,18 +6206,19 @@
     "skill_ids": [
       "G12-CHIII-B09-O03"
     ],
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-W03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-W03.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Scoped correction applied in current canonical source; prior snapshot preserved. Targeted Delta C academic/PED verification remains before handoff."
+    "review_note": "Scoped correction applied in current canonical source; prior snapshot preserved. Targeted Delta C academic/PED verification remains before handoff. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-B09-W04",
     "source": {
-      "blob": "ef83141c2f4d864f6334e266d01173a00791ef68",
+      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "heading_id": "THPT-G12-B09-W04",
       "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "prior_candidate_blob": "ef83141c2f4d864f6334e266d01173a00791ef68"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
@@ -6209,14 +6232,14 @@
     "skill_ids": [
       "G12-CHIII-B09-O04"
     ],
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-W04",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-W04.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Scoped correction applied in current canonical source; prior snapshot preserved. Targeted Delta C academic/PED verification remains before handoff."
+    "review_note": "Scoped correction applied in current canonical source; prior snapshot preserved. Targeted Delta C academic/PED verification remains before handoff. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-B09-W05",
     "source": {
-      "blob": "ef83141c2f4d864f6334e266d01173a00791ef68",
+      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "heading_id": "THPT-G12-B09-W05",
       "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
@@ -6240,7 +6263,7 @@
   {
     "item_id": "THPT-G12-B09-W06",
     "source": {
-      "blob": "ef83141c2f4d864f6334e266d01173a00791ef68",
+      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "heading_id": "THPT-G12-B09-W06",
       "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
@@ -6264,7 +6287,7 @@
   {
     "item_id": "THPT-G12-B10-W01",
     "source": {
-      "blob": "ef83141c2f4d864f6334e266d01173a00791ef68",
+      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "heading_id": "THPT-G12-B10-W01",
       "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
@@ -6288,7 +6311,7 @@
   {
     "item_id": "THPT-G12-B10-W02",
     "source": {
-      "blob": "ef83141c2f4d864f6334e266d01173a00791ef68",
+      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "heading_id": "THPT-G12-B10-W02",
       "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
@@ -6312,11 +6335,12 @@
   {
     "item_id": "THPT-G12-B10-W03",
     "source": {
-      "blob": "ef83141c2f4d864f6334e266d01173a00791ef68",
+      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "heading_id": "THPT-G12-B10-W03",
       "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "prior_candidate_blob": "ef83141c2f4d864f6334e266d01173a00791ef68"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
@@ -6330,14 +6354,14 @@
     "skill_ids": [
       "G12-CHIII-B10-O03"
     ],
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-W03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-W03.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Scoped correction applied in current canonical source; prior snapshot preserved. Targeted Delta C academic/PED verification remains before handoff."
+    "review_note": "Scoped correction applied in current canonical source; prior snapshot preserved. Targeted Delta C academic/PED verification remains before handoff. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-B10-W04",
     "source": {
-      "blob": "ef83141c2f4d864f6334e266d01173a00791ef68",
+      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "heading_id": "THPT-G12-B10-W04",
       "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
@@ -6361,7 +6385,7 @@
   {
     "item_id": "THPT-G12-B10-W05",
     "source": {
-      "blob": "ef83141c2f4d864f6334e266d01173a00791ef68",
+      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "heading_id": "THPT-G12-B10-W05",
       "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
@@ -6385,7 +6409,7 @@
   {
     "item_id": "THPT-G12-B10-W06",
     "source": {
-      "blob": "ef83141c2f4d864f6334e266d01173a00791ef68",
+      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "heading_id": "THPT-G12-B10-W06",
       "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
@@ -6409,7 +6433,7 @@
   {
     "item_id": "THPT-G11-SUPP-E01-W01",
     "source": {
-      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
       "heading_id": "THPT-G11-SUPP-E01-W01",
       "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
@@ -6428,12 +6452,13 @@
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W01.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Rubric /4 chung cần phân điểm riêng theo (a)–(d), chấp nhận cách tính tương đương. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Rubric /4 chung cần phân điểm riêng theo (a)–(d), chấp nhận cách tính tương đương. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-SUPP-E01-W02",
     "source": {
-      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
       "heading_id": "THPT-G11-SUPP-E01-W02",
       "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
@@ -6452,12 +6477,13 @@
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W02.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Rubric /4 chung; câu (d) cần diễn đạt rõ không suy độ to cảm nhận từ tỉ số cường độ vật lý. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Rubric /4 chung; câu (d) cần diễn đạt rõ không suy độ to cảm nhận từ tỉ số cường độ vật lý. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-SUPP-E01-W03",
     "source": {
-      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
       "heading_id": "THPT-G11-SUPP-E01-W03",
       "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
@@ -6476,15 +6502,18 @@
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W03.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Rubric /4 chung; làm rõ N(3)=899,8912 là giá trị mô hình, quy ước làm tròn cá thể. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Rubric /4 chung; làm rõ N(3)=899,8912 là giá trị mô hình, quy ước làm tròn cá thể. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-SUPP-E02-W01",
     "source": {
-      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
       "heading_id": "THPT-G11-SUPP-E02-W01",
       "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
-      "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
+      "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "prior_candidate_blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
@@ -6498,14 +6527,15 @@
     "skill_ids": [
       "G11-E02-LINE_PLANE_MEASURE"
     ],
-    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W01.DELTA02",
+    "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W01.DELTA02.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Rubric /4 chung; nêu rõ hình chiếu của tia sáng trên nền là phương/đoạn bóng cọc. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Rubric /4 chung; nêu rõ hình chiếu của tia sáng trên nền là phương/đoạn bóng cọc. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-SUPP-E02-W02",
     "source": {
-      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
       "heading_id": "THPT-G11-SUPP-E02-W02",
       "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
@@ -6524,12 +6554,13 @@
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W02.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Rubric /4 chung; lời giải (d) nhắc lại tỉ số 1/3, chưa giải thích cơ sở công thức. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Rubric /4 chung; lời giải (d) nhắc lại tỉ số 1/3, chưa giải thích cơ sở công thức. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-SUPP-E02-W03",
     "source": {
-      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
       "heading_id": "THPT-G11-SUPP-E02-W03",
       "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
@@ -6548,12 +6579,13 @@
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W03.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Rubric /4 chung; cần chấm riêng cấu trúc hai đáy, nối đỉnh, nét khuất và điều kiện lăng trụ đứng. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Rubric /4 chung; cần chấm riêng cấu trúc hai đáy, nối đỉnh, nét khuất và điều kiện lăng trụ đứng. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-YR-TRIG-W01",
     "source": {
-      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
       "heading_id": "THPT-G11-YR-TRIG-W01",
       "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
@@ -6572,7 +6604,8 @@
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-TRIG-W01.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Rubric 'Hai nghiệm/2 điểm 1đ' mơ hồ; cần phân rõ 1 điểm cho hai nghiệm. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Rubric 'Hai nghiệm/2 điểm 1đ' mơ hồ; cần phân rõ 1 điểm cho hai nghiệm. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-YR-SEQ-W01",
@@ -6640,7 +6673,7 @@
   {
     "item_id": "THPT-G11-YR-DERIV-W01",
     "source": {
-      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
       "heading_id": "THPT-G11-YR-DERIV-W01",
       "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
@@ -6659,12 +6692,13 @@
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-DERIV-W01.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Câu (d) nên nói rõ t tính bằng giây. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Câu (d) nên nói rõ t tính bằng giây. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-YR-SPACE-W01",
     "source": {
-      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
       "heading_id": "THPT-G11-YR-SPACE-W01",
       "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
@@ -6683,7 +6717,8 @@
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-SPACE-W01.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Gần trùng THPT-G11-YR-SPACE-P02; giữ yêu cầu chứng minh tự luận, kiểm độc lập/độ sâu ở Delta. Lời giải cần nói rõ đoạn xiên không cho khoảng cách. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Gần trùng THPT-G11-YR-SPACE-P02; giữ yêu cầu chứng minh tự luận, kiểm độc lập/độ sâu ở Delta. Lời giải cần nói rõ đoạn xiên không cho khoảng cách. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-YR-VOLUME-W01",
@@ -6709,7 +6744,7 @@
   {
     "item_id": "THPT-G11-YR-STAT-W01",
     "source": {
-      "blob": "e4ea892c21ffd036c846fb7f5702e033187c410a",
+      "blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
       "heading_id": "THPT-G11-YR-STAT-W01",
       "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "b848436621c17c89919e3d3f93519d12612fe039"
@@ -6728,7 +6763,8 @@
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-STAT-W01.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Tần số lớn nhất đồng hạng; kiểm cách diễn đạt mốt dữ liệu gốc và giả định nội suy. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Tần số lớn nhất đồng hạng; kiểm cách diễn đạt mốt dữ liệu gốc và giả định nội suy. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G11-YR-PROB-W01",
@@ -6858,7 +6894,8 @@
     ],
     "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-01-W04.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Với chính f(x)=x², sai số hình thang bằng cận 1/(6n²); có thể giải thích trường hợp này bằng công thức tổng bình phương. Không suy ngược từ cận cho hàm bất kỳ. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Với chính f(x)=x², sai số hình thang bằng cận 1/(6n²); có thể giải thích trường hợp này bằng công thức tổng bình phương. Không suy ngược từ cận cho hàm bất kỳ. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-EXP01-W05",
@@ -6882,7 +6919,8 @@
     ],
     "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-01-W05.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Đề chưa nêu vận tốc không âm trên cả đoạn; lời giải giả định. Cần nói rõ giả thiết hoặc dùng độ dời/giả định nội suy tuyến tính. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Đề chưa nêu vận tốc không âm trên cả đoạn; lời giải giả định. Cần nói rõ giả thiết hoặc dùng độ dời/giả định nội suy tuyến tính. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-EXP02-W01",
@@ -6927,7 +6965,8 @@
     ],
     "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W02.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Đề phụ thuộc bộ 6 đỉnh ở đoạn trước; khi dùng độc lập phải giữ đủ tọa độ trong ngữ cảnh placement. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Đề phụ thuộc bộ 6 đỉnh ở đoạn trước; khi dùng độc lập phải giữ đủ tọa độ trong ngữ cảnh placement. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-EXP02-W03",
@@ -6972,7 +7011,8 @@
     ],
     "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W04.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Đề tham chiếu công thức M; bảo toàn dữ liệu tham số khi tách bài. Rubric chưa chấm rõ phần giới hạn suy luận từ ảnh. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Đề tham chiếu công thức M; bảo toàn dữ liệu tham số khi tách bài. Rubric chưa chấm rõ phần giới hạn suy luận từ ảnh. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-EXP02-W05",
@@ -6996,12 +7036,13 @@
     ],
     "content_version": "G12-EXP-XG6-WRITTEN-REF-20261127-02-W05.DELTA02",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Lời giải mẫu và rubric cần làm rõ cách chấp nhận phương án Penrose thay Möbius; chưa thử lệnh GeoGebra thật. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending."
+    "author_review_note": "Lời giải mẫu và rubric cần làm rõ cách chấp nhận phương án Penrose thay Möbius; chưa thử lệnh GeoGebra thật. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-YE-W01",
     "source": {
-      "blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
+      "blob": "0c56221669c632c5d1c80a9782eced156c585b5f",
       "heading_id": "THPT-G12-YE-W01",
       "path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
       "previous_reviewed_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a"
@@ -7020,7 +7061,8 @@
     ],
     "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W01.DELTA01",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Clarified local extrema value vs point and graph sketch; f(-1)=10, f(3)=-22, f(0)=5. No change to answer. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc."
+    "author_review_note": "Clarified local extrema value vs point and graph sketch; f(-1)=10, f(3)=-22, f(0)=5. No change to answer. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-YE-W02",
@@ -7109,7 +7151,7 @@
   {
     "item_id": "THPT-G12-YE-W06",
     "source": {
-      "blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
+      "blob": "0c56221669c632c5d1c80a9782eced156c585b5f",
       "heading_id": "THPT-G12-YE-W06",
       "path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
       "previous_reviewed_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a"
@@ -7128,7 +7170,8 @@
     ],
     "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W06.DELTA01",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Fixed parabol–line wording; S=9/2; clarified upper-minus-lower. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc."
+    "author_review_note": "Fixed parabol–line wording; S=9/2; clarified upper-minus-lower. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-YE-W07",
@@ -7154,7 +7197,7 @@
   {
     "item_id": "THPT-G12-YE-W08",
     "source": {
-      "blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
+      "blob": "0c56221669c632c5d1c80a9782eced156c585b5f",
       "heading_id": "THPT-G12-YE-W08",
       "path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
       "previous_reviewed_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a"
@@ -7173,7 +7216,8 @@
     ],
     "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W08.DELTA01",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Replaced determinant requirement by elementary perpendicular-height solution, V=4, d=12/sqrt(61); alternative methods accepted. Heron for sides sqrt(13), sqrt(20), 5 gives area sqrt(61). Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc."
+    "author_review_note": "Replaced determinant requirement by elementary perpendicular-height solution, V=4, d=12/sqrt(61); alternative methods accepted. Heron for sides sqrt(13), sqrt(20), 5 gives area sqrt(61). Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-YE-W09",
@@ -7283,10 +7327,12 @@
   {
     "item_id": "THPT-G12-YE-W14",
     "source": {
-      "blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
+      "blob": "0c56221669c632c5d1c80a9782eced156c585b5f",
       "heading_id": "THPT-G12-YE-W14",
       "path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
-      "previous_reviewed_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a"
+      "previous_reviewed_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "prior_candidate_blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
+      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
@@ -7300,9 +7346,10 @@
     "skill_ids": [
       "G12-SGK-YE-O05"
     ],
-    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W14.DELTA01",
+    "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W14.DELTA01.DELTA04",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Grouped statistics 4.4, 22.6, 3.24, 1.8 verified; distinguish grouped from original data. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc."
+    "author_review_note": "Grouped statistics 4.4, 22.6, 3.24, 1.8 verified; distinguish grouped from original data. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   },
   {
     "item_id": "THPT-G12-YE-W15",
@@ -7328,7 +7375,7 @@
   {
     "item_id": "THPT-G12-YE-W16",
     "source": {
-      "blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
+      "blob": "0c56221669c632c5d1c80a9782eced156c585b5f",
       "heading_id": "THPT-G12-YE-W16",
       "path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
       "previous_reviewed_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a"
@@ -7347,6 +7394,7 @@
     ],
     "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W16.DELTA01",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "author_review_note": "Explicit uniform draw assumption; conditional 2/3, marginal 4/7, not independent. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc."
+    "author_review_note": "Explicit uniform draw assumption; conditional 2/3, marginal 4/7, not independent. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc.",
+    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
   }
 ]
