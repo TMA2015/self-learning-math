@@ -1940,119 +1940,221 @@
     "role": "TOPIC_FIRST_TRY",
     "order": 1,
     "item_id": "THPT-TOP20-T01",
-    "outcome_id": "TOP20-O01"
+    "outcome_id": "TOP20-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 2,
     "item_id": "THPT-TOP20-T10",
-    "outcome_id": "TOP20-O02"
+    "outcome_id": "TOP20-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 3,
     "item_id": "THPT-TOP20-T02",
-    "outcome_id": "TOP20-O03"
+    "outcome_id": "TOP20-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 4,
     "item_id": "THPT-TOP20-T11",
-    "outcome_id": "TOP20-O06"
+    "outcome_id": "TOP20-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 5,
     "item_id": "THPT-TOP20-T03",
-    "outcome_id": "TOP20-O04"
+    "outcome_id": "TOP20-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 6,
     "item_id": "THPT-TOP20-T12",
-    "outcome_id": "TOP20-O05"
+    "outcome_id": "TOP20-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 7,
     "item_id": "THPT-TOP20-T04",
-    "outcome_id": "TOP20-O07"
+    "outcome_id": "TOP20-O07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 8,
     "item_id": "THPT-TOP20-T13",
-    "outcome_id": "TOP20-O08"
+    "outcome_id": "TOP20-O08",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 9,
     "item_id": "THPT-TOP20-T05",
-    "outcome_id": "TOP20-O10"
+    "outcome_id": "TOP20-O10",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 10,
     "item_id": "THPT-TOP20-T14",
-    "outcome_id": "TOP20-O09"
+    "outcome_id": "TOP20-O09",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 11,
     "item_id": "THPT-TOP20-T06",
-    "outcome_id": "TOP20-O11"
+    "outcome_id": "TOP20-O11",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 12,
     "item_id": "THPT-TOP20-T07",
-    "outcome_id": "TOP20-O12"
+    "outcome_id": "TOP20-O12",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 13,
     "item_id": "THPT-TOP20-T15",
-    "outcome_id": "TOP20-O13"
+    "outcome_id": "TOP20-O13",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 14,
     "item_id": "THPT-TOP20-T08",
-    "outcome_id": "TOP20-O14"
+    "outcome_id": "TOP20-O14",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 15,
     "item_id": "THPT-TOP20-T16",
-    "outcome_id": "TOP20-O15"
+    "outcome_id": "TOP20-O15",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 16,
     "item_id": "THPT-TOP20-T09",
-    "outcome_id": "TOP20-O16"
+    "outcome_id": "TOP20-O16",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD20:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 17,
     "item_id": "THPT-TOP20-T17",
-    "outcome_id": "TOP20-O17"
+    "outcome_id": "TOP20-O17",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD21:KNOWLEDGE_FIRST_TRY",
