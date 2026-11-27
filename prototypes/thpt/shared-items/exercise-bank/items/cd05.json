@@ -213,7 +213,9 @@
     "stem": "Vì sao đường tròn \\(x^2+y^2=4\\) không biểu diễn một hàm số \\(y=f(x)\\) trên toàn đoạn \\([-2;2]\\)?",
     "answer_key": "Vì \\(x=0\\) cho \\(y=2\\) và \\(y=-2\\), vi phạm điều kiện một x chỉ có một y.",
     "worked_solution": "Thay \\(x=0\\) được \\(y^2=4\\). Hai giao điểm trên đường \\(x=0\\) chứng minh quan hệ không đơn trị.",
-    "skill_ids": [],
+    "skill_ids": [
+      "FUNCTION_MAPPING"
+    ],
     "original_outcome_ids": [
       "TOP05-O04"
     ],
@@ -557,7 +559,9 @@
     "stem": "Từ \\(f(x)=\\sqrt x\\) (\\(D=[0;+\\infty)\\)), cho \\(g(x)=\\sqrt{x-4}\\). Tìm \\(D_g\\) và chiều dịch.",
     "answer_key": "\\(D_g=[4;+\\infty)\\), dịch phải 4.",
     "worked_solution": "Điều kiện \\(x-4\\ge0\\Rightarrow x\\ge4\\); hình g được từ hình f bằng cách dịch mỗi điểm sang phải 4.",
-    "skill_ids": [],
+    "skill_ids": [
+      "FUNCTION_DOMAIN"
+    ],
     "original_outcome_ids": [
       "TOP05-O10"
     ],
