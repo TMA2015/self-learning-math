@@ -583,15 +583,15 @@ Hai cảm biến **hoạt động độc lập**, có xác suất phát hiện l
 
 ### THPT-G11-CHVIII-B28-W01 · skill_id=`G11-B28-UNION` · placement=`SGK_WRITTEN` · role=`WRITTEN`
 
-**Đề tự luận:** Một phép thử chọn đều một số trong Ω={1,2,3,4,5,6,7,8,9}. Đặt A="bội của 3", B="số lớn hơn 5". Liệt kê A, B, A∪B, A∩B; giải thích một kết quả thuộc giao.
+**Đề tự luận:** Một phép thử chọn đều một số trong \(\Omega=\{1;2;3;4;5;6;7;8;9\}\). Đặt A là biến cố “bội của 3”, B là biến cố “số lớn hơn 5”. Liệt kê \(A,B,A\cup B,A\cap B\); giải thích vì sao 6 thuộc giao.
 
-**Hướng giải tự đối chiếu SAU KHI tự làm:** A={3,6,9}; B={6,7,8,9}; A∪B={3,6,7,8,9}; A∩B={6,9}.
+**Hướng giải tự đối chiếu SAU KHI tự làm:** \(A=\{3;6;9\}\), \(B=\{6;7;8;9\}\). Hợp chứa mọi phần tử của ít nhất một tập, không đếm lặp: \(A\cup B=\{3;6;7;8;9\}\). Giao gồm các phần tử thuộc cả hai: \(A\cap B=\{6;9\}\). Chẳng hạn 6 chia hết cho 3 và lớn hơn 5, nên 6 thuộc cả A và B.
 
 **Rubric — 4 tiêu chí, mỗi tiêu chí 1 điểm:**
-1. Xác định Ω và viết đúng A — 1 điểm.
-2. Viết B đúng — 1 điểm.
-3. Viết A∪B không lặp phần tử — 1 điểm.
-4. Viết A∩B và nói vì sao 6 thuộc cả hai — 1 điểm.
+1. Xác định đúng không gian mẫu và A — 1 điểm.
+2. Viết đúng B — 1 điểm.
+3. Viết hợp không lặp phần tử — 1 điểm.
+4. Viết giao và giải thích vì sao 6 thuộc cả hai — 1 điểm.
 
 ### THPT-G11-CHVIII-B28-W02-ANCHOR · skill_id=`G11-B28-INDEPENDENCE` · placement=`SGK_WRITTEN` · role=`ANCHOR_TAG`
 
@@ -607,15 +607,15 @@ Hai cảm biến **hoạt động độc lập**, có xác suất phát hiện l
 
 ### THPT-G11-CHVIII-B29-W01 · skill_id=`G11-B29-ADDITION_OVERLAP` · placement=`SGK_WRITTEN` · role=`WRITTEN`
 
-**Đề tự luận:** Khảo sát 80 phiếu chọn đồng đều: 38 phiếu chọn sách A, 31 chọn sách B, 12 chọn cả hai. Tính hợp và phần bù; giải thích vì sao không cộng thẳng 38+31.
+**Đề tự luận:** Trong 80 phiếu khảo sát, 38 phiếu chọn sách A, 31 chọn sách B, 12 chọn cả hai. Chọn ngẫu nhiên đều một phiếu. Tính xác suất chọn ít nhất một trong hai sách và xác suất không chọn sách nào trong hai sách; giải thích vì sao không cộng thẳng 38+31.
 
-**Hướng giải tự đối chiếu SAU KHI tự làm:** Hợp=38+31−12=57; không chọn A/B=23; xác suất 57/80,23/80.
+**Hướng giải tự đối chiếu SAU KHI tự làm:** Gọi A, B là hai biến cố tương ứng. Khi cộng 38 và 31, mỗi phiếu chọn cả hai được tính hai lần, nên cần trừ một lần 12. Có \(38+31-12=57\) phiếu chọn ít nhất một sách; còn \(80-57=23\) phiếu không chọn sách nào. Xác suất lần lượt là \(\frac{57}{80}\) và \(\frac{23}{80}\). Hai biến cố bổ sung nhau nên tổng hai xác suất bằng 1.
 
 **Rubric — 4 tiêu chí, mỗi tiêu chí 1 điểm:**
-1. Ghi nhận đúng phần giao 12 — 1 điểm.
-2. Tính hợp 57 — 1 điểm.
-3. Tính bù 23 và xác suất có mẫu số 80 — 1 điểm.
-4. Giải thích vùng giao bị đếm hai lần khi cộng — 1 điểm.
+1. Xác định đúng phần giao 12 — 1 điểm.
+2. Tính đúng số phiếu hợp 57 — 1 điểm.
+3. Tính số phiếu bù 23 và hai xác suất — 1 điểm.
+4. Giải thích phần giao bị đếm hai lần — 1 điểm.
 
 ### THPT-G11-CHVIII-B29-W02-ANCHOR · skill_id=`G11-B29-PROBABILITY_BOUNDS` · placement=`SGK_WRITTEN` · role=`ANCHOR_TAG`
 
@@ -631,14 +631,14 @@ Hai cảm biến **hoạt động độc lập**, có xác suất phát hiện l
 
 ### THPT-G11-CHVIII-B29-W03 · skill_id=`G11-B29-REAL_APPLICATION` · placement=`SGK_WRITTEN` · role=`WRITTEN`
 
-**Đề tự luận:** Trong 36 người, có 17 người chọn kênh C, 14 người chọn D, 6 người chọn cả hai. Chọn đều một người, tính xác suất chọn chỉ C, chỉ D, cả hai hoặc không chọn cả hai.
+**Đề tự luận:** Trong 36 người, có 17 người chọn kênh C, 14 người chọn kênh D, 6 người chọn cả hai. Chọn ngẫu nhiên đều một người. Tính xác suất của bốn trường hợp riêng biệt: chỉ chọn C; chỉ chọn D; chọn cả hai; không chọn kênh nào trong hai kênh.
 
-**Hướng giải tự đối chiếu SAU KHI tự làm:** Chỉ C=11/36; chỉ D=8/36; cả hai=6/36; ngoài cả hai=(36−(17+14−6))/36=11/36; tổng=1.
+**Hướng giải tự đối chiếu SAU KHI tự làm:** Chỉ C có \(17-6=11\) người; chỉ D có \(14-6=8\) người; cả hai có 6 người. Số người không chọn kênh nào là \(36-(17+14-6)=11\). Vì chọn đều, bốn xác suất lần lượt là \(\frac{11}{36},\frac8{36},\frac6{36},\frac{11}{36}\). Kiểm: \(11+8+6+11=36\), nên tổng xác suất bằng 1.
 
 **Rubric — 4 tiêu chí, mỗi tiêu chí 1 điểm:**
-1. Phân tách miền chỉ C =11 — 1 điểm.
-2. Phân tách miền chỉ D =8 và giao =6 — 1 điểm.
-3. Tính ngoài cả hai =11 — 1 điểm.
+1. Tách đúng miền chỉ C có 11 người — 1 điểm.
+2. Tách đúng miền chỉ D có 8 người và giao có 6 người — 1 điểm.
+3. Tính đúng số người không chọn kênh nào bằng 11 — 1 điểm.
 4. Chia đúng cho 36 và kiểm bốn xác suất cộng bằng 1 — 1 điểm.
 
 ### THPT-G11-CHVIII-B30-W01 · skill_id=`G11-B30-MULTIPLY_INDEPENDENT` · placement=`SGK_WRITTEN` · role=`WRITTEN`
