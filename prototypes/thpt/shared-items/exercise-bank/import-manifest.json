@@ -20,7 +20,7 @@
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
   "academic_audit": "AUTHOR_REVIEW_18_DRAFTS_AND_709_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
-  "interaction_conversion": "CD01–16 content candidates recorded; CD17 partial interaction candidate, Written pending; CD18–22 not completed under current authoring wave. Full Academic/PED audit, source cutover and RELEASE remain pending.",
+  "interaction_conversion": "CD01–22 content candidates completed for Topic practice/FirstTry/public replay and Written references; full S1/Academic/PED, scoped Delta, notation/render, source cutover, remaining SGK-only conversion and RELEASE remain pending.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
   "legacy_combined_answer_note": "709 at original import; 709 manually verified and key separated at checkpoints 29–44; 0 remain combined. This closes the legacy combined-answer review group only, not full academic/PED or release certification. Preserve original source history and self-compare, not auto-grade.",
@@ -58,72 +58,72 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "89d00186637c7c0aeb2919d4d5ab700b53220157",
+    "as_of_commit": "8f51e241bfd90ed0cb2fb99654c1ff3bab535a0b",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
-    "completed_candidate_topics": 20,
+    "completed_candidate_topics": 22,
     "total_topics": 22,
-    "completed_scope": "CD01–20 content candidates; scoped Delta and RELEASE pending",
-    "completed_unique_ids": 1733,
-    "completed_interactive": 1514,
-    "completed_written": 219,
+    "completed_scope": "CD01–22 content candidates; scoped Delta and final academic/PED verification pending",
+    "completed_unique_ids": 1885,
+    "completed_interactive": 1644,
+    "completed_written": 241,
     "partial_topic": null,
-    "next": "Stop after CD20 per owner scope. Resume CD21–22 when instructed; scoped Delta and final verification remain.",
-    "status": "CD19_CD20_CONTENT_CANDIDATES_COMPLETE_SCOPED_DELTA_PENDING"
+    "next": "Topic candidate wave complete. Resolve carried-forward scoped Delta and skill mapping, verify exact S1/notation/PED and source equivalence; continue SGK-only conversion as authorized; no cutover or release without applicable gates.",
+    "status": "CD01_CD22_CONTENT_CANDIDATES_COMPLETE_SCOPED_DELTA_PENDING"
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "exercise_candidate_cd19_cd20",
-    "exercise_candidate_cd19_cd20": {
-      "scope": "CD19–20 bank content candidates; no RELEASE",
-      "status": "CD19_CD20_CONTENT_CANDIDATES_COMPLETE_SCOPED_DELTA_PENDING",
-      "head": "89d00186637c7c0aeb2919d4d5ab700b53220157",
-      "cd19": {
-        "unique": 56,
-        "interactive": 53,
+    "current_checkpoint_key": "exercise_candidate_cd21_cd22",
+    "exercise_candidate_cd21_cd22": {
+      "cd21": {
+        "unique": 25,
+        "interactive": 22,
         "written": 3,
-        "practice_interactive": 39,
-        "first_try": 14,
-        "replay": 15,
-        "placements": 71,
-        "outcomes": 14,
-        "shared_sgk": 25,
-        "source_blob": "6bc1c9faf00f530d60d8e93256e436263898c524",
-        "donor_blob": "ba549932e8a56bb46ec2951171e999cc70d6f34f",
-        "written_notes": "W01 disambiguated odd three-digit number; explicit disjoint cases and 18, rubric /4 retained. W03 explains P(1) coefficient sum. O13 and O14 each retain one practice, one FirstTry and replay; no artificial new IDs merely for quota. O12 and reciprocal-power extension optional."
+        "practice_interactive": 14,
+        "first_try": 8,
+        "replay": 8,
+        "placements": 33,
+        "outcomes": 8,
+        "shared_sgk": 6,
+        "source_blob": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
+        "notes": "Retain three source Written /4. P06 historical replay used different parameters; candidate references canonical practice stem/key (3/7); preserve historical projection and verify at cutover."
       },
-      "cd20": {
-        "unique": 54,
-        "interactive": 51,
-        "written": 3,
-        "practice_interactive": 34,
-        "first_try": 17,
-        "replay": 17,
-        "placements": 71,
-        "outcomes": 17,
-        "shared_sgk": 17,
-        "new_shared_placement_links": 12,
-        "source_blob": "d6c34cdf81594ec9d3ce3275ac3d736444aa710c",
-        "source_commit": "6e6b89ff37f9493bef2fa951ea094110a1c7e28c",
-        "written_notes": "Three current canonical Written problems independently recalculated, original wording/rubric /4 preserved. Each outcome has two practice items, one FirstTry and one public replay. Additional shared SGK placements optional."
+      "cd22": {
+        "unique": 127,
+        "interactive": 108,
+        "written": 19,
+        "practice_interactive": 95,
+        "first_try": 13,
+        "replay": 39,
+        "placements": 166,
+        "outcomes": 39,
+        "shared_sgk_interactive": 88,
+        "new_replay_placements": 30,
+        "notes": "All 39 practice primary outcomes represented in candidate public replay by existing IDs. 13 existing FirstTry placements cover grouped knowledge sections, not forced one per outcome. Written 3 G10 /7, 4 G11 /4, 12 G12 /5. Four targeted corrections to existing sources; unchanged source blocks retained and historical receipts immutable.",
+        "written_source_blobs": [
+          "49502fe39cf0a67f6a3e973a77f94164150637a7",
+          "c4f4f654a95209ca46a6e03b61cc8f5222ec2816",
+          "ef83141c2f4d864f6334e266d01173a00791ef68"
+        ]
       },
       "files": {
-        "items/cd19.json": "3744f680748df5cd8c5bfd85d21989ae5d8484f5",
-        "items/cd20.json": "c2d9324e79a59b9cc2ac070e34c41afe51b6da7e",
-        "items/g10-chviii.json": "c1414025c5645bc5017377d12eb63cebf5fe2222",
-        "items/g10-chix.json": "56fe18bbaa9cbc61d549ef9e92865f21f866aee7",
-        "items/g11-chviii.json": "3cfdc77a4a6b5699080c90c2f9bafd4015ea3769",
-        "items/topic-knowledge-first-try.json": "28bc3efec7f949bcd003461363f09abc13c597d5",
-        "placements/cd19.json": "cbfc95709e24b979ff14d9d420415efd339fc71d",
-        "placements/cd20.json": "6ed23958724b244ff771a1f7b5bd7bc8db5517c8",
+        "items/cd21.json": "7e9121e81495de9f89d9ccc6a8eed01435349143",
+        "items/cd22.json": "22f87f071fa3eb910c7eeb8d4a61a1bec452b2ca",
+        "items/g12-chvi.json": "e94d076678dac2baf8085de38e9e5cb35ab449eb",
+        "items/g10-chv.json": "bb9e8527cf57b129d9d083ca5664c176a9ef6659",
+        "items/g11-chiii.json": "8f9d9ffa376ca6e20cc448fe2c8291c6d88afce4",
+        "items/g12-chiii.json": "a5fa1b7c2049ccfda1c635f24c53e52c8d51cc8e",
+        "items/topic-knowledge-first-try.json": "71d9a0309d54f2a80d2ef0cf8fc6744d4a45614a",
+        "placements/cd21.json": "b74b5a92ba906a5df67644d8d89b02643f5ca35c",
+        "placements/cd22.json": "7d909131971a5a51bb4509c440478af26fae86cb",
         "placements/topic-knowledge-first-try.json": "d9d3597767221269e26df7ac98dc04f0f0ef272e",
-        "written-references.json": "90ff21fdf51670cdc332eface14779431a4b178f"
+        "written-references.json": "aa9b332a4fd4c45bdbee4852be3af63d32c93b5b"
       },
-      "verification": "142 placements; 110 unique IDs; 104 interactive, six Written; no unresolved references, invalid option/key/hint/skill structure, duplicate collection order, or overlap with CD01–18 or between CD19/20. Targeted recomputations: CD19-P04=52, W01=18, P13=2208.1616064; CD20-P08=46/56, P17=6/36,24/36,18/36. No claim of complete math/PED or rendering validation.",
-      "limitations": "No new direct S1 SGK/SBT PDF reading, independent reviewer, notation/browser or CI verdict. Scoped academic/PED and display verification remain before final handoff. Public replay only, no protected RD1, runtime, Final Submit, Mastery, Firebase, merge/deploy. CD21–22 untouched."
+      "verification": "199 placements, 152 unique IDs, 130 interactive with 520 options and 22 Written. Exact readback checked affected shards; zero missing refs, structural option/key/hint/skill defects, duplicate collection order, overlap with CD01–20 or between CD21/CD22. Source lock verified four Written edits. Counts inherited for CD01–20 from prior checkpoint; net +152. Scoped arithmetic checks: CD21 P03=4/21,4/7; P08=16/65,80/129; CD22 B09 W06 IQR_A=14.44,IQR_B=8.89; B10 W03=24/8=3. No whole-bank audit claimed.",
+      "limitations": "No fresh S1 PDF, independent reviewer, full X-G.5 notation/render or CI verdict. Scoped Delta C review remains, especially choice conversion of multi-part constructions, four Written edits, and CD21 P06 replay discrepancy. Candidate only. No runtime or protected RD1 changes, no merge/deploy."
     },
     "previous_manifest": {
-      "commit": "b9682fa9d205b81680a2a6ef28b25e3c634f4b2d",
-      "blob": "f2037a4822129386302af96bb857bb35a821f454",
-      "key": "exercise_candidate_cd17_cd18"
+      "commit": "cd978b984275952048f741c7d99b889663b55b10",
+      "blob": "2e2fc56d2c2d4ffc28bc07427541f6eb8096791f",
+      "key": "exercise_candidate_cd19_cd20"
     }
   },
   "pending_review": {
@@ -208,6 +208,15 @@
           "THPT-G11-CHVII-B23-W02-ANCHOR"
         ],
         "history_key": "exercise_completion_cp135_cp136"
+      },
+      {
+        "ids": [
+          "THPT-G11-CHIII-W09-02-ANCHOR",
+          "THPT-G12-B09-W03",
+          "THPT-G12-B09-W04",
+          "THPT-G12-B10-W03"
+        ],
+        "history_key": "exercise_candidate_cd21_cd22"
       }
     ],
     "older_written_findings": {
@@ -241,7 +250,9 @@
     "other": "Full S1/PED/Q18, actual source-field equivalence outside flagged scopes, Written source/rubric, metadata, notation, interaction renderer/runtime and browser QA remain subject to applicable gates. Historical records include any earlier findings and source/receipt evidence.",
     "cd18": "Content candidate complete; targeted mathematical/PED Delta and notation/render QA pending. No fresh S1 PDF or independent reviewer claim.",
     "cd19": "Candidate complete; W01/W03 scoped Delta and optional scope review; no new S1 or independent verdict.",
-    "cd20": "Candidate complete; scoped interaction/PED and render review of 12 extra shared placements; original three Written retained."
+    "cd20": "Candidate complete; scoped interaction/PED and render review of 12 extra shared placements; original three Written retained.",
+    "cd21": "Candidate complete; P06 historical replay parameters differ from canonical practice, use canonical candidate and verify projection at cutover. Scoped interaction/PED and S1/notation verification pending.",
+    "cd22": "Candidate complete; four Written corrections applied in source, targeted Delta C verification pending. 30 added replay placements use existing IDs. Review multi-part choice conversion and X-G.5 notation/render before handoff."
   },
   "checkpoint_policy": "Replace current_progress and current checkpoint, do not append cumulative report trees. Record detailed scoped evidence in existing issue/PR or prior immutable Git snapshot; preserve exact commit/path/blob and relevant key. Carry forward unresolved issues only; retain older history pointer. Never infer PASS, authorize cutover or change protected runtime from compaction."
 }
