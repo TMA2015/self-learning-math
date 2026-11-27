@@ -1,18 +1,27 @@
 [
   {
     "item_id": "THPT-G10-CHI-RD1-01",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Cho P(n): “n(n+1) chẵn”, với n là số nguyên. Phát biểu nào là mệnh đề ĐÚNG? A. Với mọi n∈ℤ, P(n); B. Tồn tại n∈ℤ sao cho ¬P(n); C. Với mọi n∈ℤ, n² lẻ; D. Với mọi n∈ℤ, n>0.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-01",
+    "stem": "Cho P(n): “n(n+1) chẵn”, với n là số nguyên. Phát biểu nào là mệnh đề ĐÚNG? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
     "worked_solution": "Trong hai số nguyên liên tiếp n,n+1 luôn có một số chẵn nên n(n+1) chẵn với mọi n. B sai vì không tồn tại phản ví dụ; C sai với n=2; D sai với n=0.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-PROPOSITION",
+      "G10-B01-QUANTIFIERS"
+    ],
     "original_outcome_text": "G10-B01-PROPOSITION, G10-B01-QUANTIFIERS.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét tính chẵn lẻ của hai số nguyên liên tiếp."
+    ],
     "rubric": "1đ chọn A. Tự đối chiếu: nhận diện mệnh đề có lượng từ, không tính điểm giải thích riêng.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -37,22 +46,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Với mọi \\(n\\in\\mathbb Z,\\ P(n)\\)."
+      },
+      {
+        "id": "B",
+        "text": "Tồn tại \\(n\\in\\mathbb Z\\) sao cho \\(\\neg P(n)\\)."
+      },
+      {
+        "id": "C",
+        "text": "Với mọi \\(n\\in\\mathbb Z,\\ n^2\\) lẻ."
+      },
+      {
+        "id": "D",
+        "text": "Với mọi \\(n\\in\\mathbb Z,\\ n>0\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-02",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Cho n∈ℤ, xét các điều kiện A: “n chia hết cho 12”, B: “n chia hết cho 4”, C: “n chia hết cho 3”. Đánh giá Đ/S: (a) A⇒B; (b) A⇒C; (c) B⇒A; (d) (B và C)⇒A.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-02",
+    "stem": "Cho n∈ℤ, xét các điều kiện A: “n chia hết cho 12”, B: “n chia hết cho 4”, C: “n chia hết cho 3”. Đánh giá Đ/S: (a) A⇒B; (b) A⇒C; (c) B⇒A; (d) (B và C)⇒A. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "(Đ, Đ, S, Đ)",
     "worked_solution": "12 là bội của 4 và 3 nên (a),(b) đúng; n=4 là phản ví dụ cho (c). Vì 4 và 3 nguyên tố cùng nhau nên n chia hết cả 4 và 3 thì chia hết 12, (d) đúng.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-IMPLICATION"
+    ],
     "original_outcome_text": "G10-B01-IMPLICATION.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Kiểm quan hệ chia hết và bội chung nhỏ nhất của 3, 4."
+    ],
     "rubric": "Mỗi ý đúng/sai đúng 1đ (tối đa 4đ). Tự đối chiếu: phản ví dụ cho (c) và điều kiện kết hợp ở (d); không tính điểm giải thích riêng.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "TRUE_FALSE_GROUP"
     },
@@ -77,22 +113,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đ, Đ, Đ, S"
+      },
+      {
+        "id": "B",
+        "text": "Đ, Đ, S, Đ"
+      },
+      {
+        "id": "C",
+        "text": "Đ, S, S, Đ"
+      },
+      {
+        "id": "D",
+        "text": "S, Đ, S, S"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-03",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Với D=[−1;2], hãy viết phủ định của câu “∀x∈D, x²−x≥0” rồi xác định tính đúng/sai của câu ban đầu bằng một giá trị x cụ thể.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-03",
+    "stem": "Với D=[−1;2], hãy viết phủ định của câu “∀x∈D, x²−x≥0” rồi xác định tính đúng/sai của câu ban đầu bằng một giá trị x cụ thể. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "Phủ định: ∃x∈D: x²−x<0; câu ban đầu sai.",
     "worked_solution": "Chọn x=1/2 thuộc D; x²−x=1/4−1/2=−1/4<0, bác bỏ lượng từ ∀.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-NEGATION",
+      "G10-B01-QUANTIFIERS"
+    ],
     "original_outcome_text": "G10-B01-NEGATION, G10-B01-QUANTIFIERS.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Đổi lượng từ và phủ định dấu không âm; thử một số giữa 0 và 1."
+    ],
     "rubric": "3đ: phủ định ∀↔∃ 1đ; đảo ≥ thành < 1đ; phản ví dụ đúng 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -117,22 +181,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\exists x\\in D:x^2-x\\le0\\); câu ban đầu sai, \\(x=0\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\forall x\\in D:x^2-x<0\\); câu ban đầu sai."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\exists x\\in D:x^2-x<0\\); câu ban đầu sai, \\(x=\\frac12\\) là phản ví dụ."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\exists x\\in D:x^2-x<0\\); câu ban đầu đúng."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-04",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Với n∈ℤ, chứng minh n chia hết cho 6 khi và chỉ khi n chia hết cho cả 2 và 3. Nêu rõ hai chiều và vì sao n chia hết cho 2 và 3 là đủ.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-04",
+    "stem": "Với n∈ℤ, chứng minh n chia hết cho 6 khi và chỉ khi n chia hết cho cả 2 và 3. Nêu rõ hai chiều và vì sao n chia hết cho 2 và 3 là đủ. Chọn lập luận đúng cho cả hai chiều.",
     "answer_key": "n chia hết cho 6 ⇔ (2|n và 3|n).",
     "worked_solution": "Chiều thuận hiển nhiên vì 6=2·3. Chiều đảo: nếu 2|n và 3|n, do gcd(2,3)=1 nên n chia hết cho BCNN(2,3)=6. Có thể viết n=2k; từ 3|2k và gcd(2,3)=1 suy 3|k, vậy n=6h.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-IMPLICATION",
+      "G10-B01-EQUIVALENCE"
+    ],
     "original_outcome_text": "G10-B01-IMPLICATION, G10-B01-EQUIVALENCE.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Chứng minh riêng hai chiều; xét bội chung nhỏ nhất."
+    ],
     "rubric": "4đ: phát biểu hai chiều 1đ; chiều thuận 1đ; chứng minh chiều đảo 2đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -157,22 +249,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Thuận đúng; đảo sai vì n có thể chỉ chia hết cho 2."
+      },
+      {
+        "id": "B",
+        "text": "Cả hai chiều đúng vì 6 là tổng của 2 và 3."
+      },
+      {
+        "id": "C",
+        "text": "Đảo đúng vì số chia hết cho 2 hoặc 3 đều chia hết cho 6."
+      },
+      {
+        "id": "D",
+        "text": "Thuận: 6 chia hết cho 2,3. Đảo: \\(\\operatorname{BCNN}(2,3)=6\\), nên n chia hết cho cả hai thì chia hết cho 6."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-05",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Xét phương trình x²−5x+6=0 trên ℝ. Phát biểu nào đúng? A. Mọi x thực đều là nghiệm; B. Tồn tại ít nhất một x thực thỏa phương trình; C. Không tồn tại nghiệm thực; D. Mọi số nguyên x đều là nghiệm.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-05",
+    "stem": "Xét phương trình x²−5x+6=0 trên ℝ. Phát biểu nào đúng? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "B",
     "worked_solution": "x²−5x+6=(x−2)(x−3), nên có nghiệm thực x=2 hoặc x=3, nhưng không đúng với mọi x.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-QUANTIFIERS"
+    ],
     "original_outcome_text": "G10-B01-QUANTIFIERS.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Phân tích đa thức thành nhân tử và kiểm lượng từ."
+    ],
     "rubric": "1đ chọn B.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -197,22 +316,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mọi x thực đều là nghiệm."
+      },
+      {
+        "id": "B",
+        "text": "Tồn tại ít nhất một x thực thỏa phương trình."
+      },
+      {
+        "id": "C",
+        "text": "Không tồn tại nghiệm thực."
+      },
+      {
+        "id": "D",
+        "text": "Mọi số nguyên x đều là nghiệm."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-06",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Cho n thuộc D={0,1,2,3,4,5}. Xét P(n): “n²≤9”. P(n) có phải một mệnh đề hoàn chỉnh khi chưa gán n không? Hãy tìm tập các n làm P(n) đúng và phát biểu một mệnh đề có lượng từ ∃ đúng.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-06",
+    "stem": "Cho n thuộc D={0,1,2,3,4,5}. Xét P(n): “n²≤9”. P(n) có phải một mệnh đề hoàn chỉnh khi chưa gán n không? Hãy tìm tập các n làm P(n) đúng và phát biểu một mệnh đề có lượng từ ∃ đúng. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "P(n) là mệnh đề chứa biến; tập nghiệm {0,1,2,3}; ví dụ ∃n∈D: n²≤9 đúng.",
     "worked_solution": "Chưa cố định n thì P(n) chưa có giá trị chân lý duy nhất; xét từng n trong D cho 0,1,2,3 thỏa.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-PROPOSITION",
+      "G10-B01-QUANTIFIERS"
+    ],
     "original_outcome_text": "G10-B01-PROPOSITION, G10-B01-QUANTIFIERS.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Thử từng số trong D; lưu ý trường hợp bằng 9."
+    ],
     "rubric": "3đ: nhận biết mệnh đề chứa biến 1đ; tập đúng 1đ; lượng từ đúng 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -237,22 +384,51 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mệnh đề đúng; tập nghiệm \\(\\{0,1,2,3\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "Chứa biến; \\(\\{0,1,2,3\\}\\); \\(\\exists n\\in D:n^2\\le9\\) đúng."
+      },
+      {
+        "id": "C",
+        "text": "Chứa biến; tập nghiệm \\(\\{0,1,2\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "Chứa biến; \\(\\{0,1,2,3,4,5\\}\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-07",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Cho P: “9 chia hết cho 3” và Q: “9 chia hết cho 2”. Đánh giá Đ/S: (a) P⇒Q; (b) Q⇒P; (c) P⇔Q; (d) ¬(P hoặc Q).",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-07",
+    "stem": "Cho P: “9 chia hết cho 3” và Q: “9 chia hết cho 2”. Đánh giá Đ/S: (a) P⇒Q; (b) Q⇒P; (c) P⇔Q; (d) ¬(P hoặc Q). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "(S, Đ, S, S)",
     "worked_solution": "P đúng, Q sai. Do vậy P⇒Q sai; Q⇒P đúng vì tiền đề Q sai; P⇔Q sai vì khác giá trị chân lý; P∨Q đúng nên phủ định sai.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-NEGATION",
+      "G10-B01-IMPLICATION",
+      "G10-B01-EQUIVALENCE"
+    ],
     "original_outcome_text": "G10-B01-NEGATION, G10-B01-IMPLICATION, G10-B01-EQUIVALENCE.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xác định giá trị chân lý P,Q rồi dùng quy tắc kéo theo, tương đương, phủ định."
+    ],
     "rubric": "Mỗi ý đúng/sai đúng 1đ (tối đa 4đ). Tự đối chiếu: phép kéo theo chỉ sai khi tiền đề đúng và kết luận sai; không tính điểm giải thích riêng.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "TRUE_FALSE_GROUP"
     },
@@ -277,22 +453,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "S, S, S, Đ"
+      },
+      {
+        "id": "B",
+        "text": "Đ, Đ, S, S"
+      },
+      {
+        "id": "C",
+        "text": "S, Đ, S, S"
+      },
+      {
+        "id": "D",
+        "text": "S, Đ, Đ, Đ"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-08",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Cho A={−2,0,2} và B={x∈ℤ | x²=4}. Phát biểu nào đúng? A. B⊆A và B≠A; B. A⊆B; C. 0∈B; D. B=A.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-08",
+    "stem": "Cho A={−2,0,2} và B={x∈ℤ | x²=4}. Phát biểu nào đúng? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
     "worked_solution": "B={−2,2}, nên mọi phần tử B đều thuộc A nhưng 0 thuộc A và không thuộc B.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B02-MEMBERSHIP_SUBSET"
+    ],
     "original_outcome_text": "G10-B02-MEMBERSHIP_SUBSET.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Liệt kê nghiệm nguyên của bình phương bằng 4."
+    ],
     "rubric": "1đ chọn A. Tự đối chiếu: phân biệt tập con thực sự và hai tập bằng nhau; không tính điểm giải thích riêng.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -317,22 +520,51 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(B\\subseteq A,\\ B\\ne A\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(A\\subseteq B\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(0\\in B\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(B=A\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-09",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Cho X=(−∞,2] và Y=[−1,5). Tìm X∩Y, X∪Y và X∖Y, giải thích đầu mút −1 và 2.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-09",
+    "stem": "Cho X=(−∞,2] và Y=[−1,5). Tìm X∩Y, X∪Y và X∖Y, giải thích đầu mút −1 và 2. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "X∩Y=[−1,2]; X∪Y=(−∞,5); X∖Y=(−∞,−1).",
     "worked_solution": "−1 thuộc cả X,Y; 2 thuộc cả X,Y. Các số nhỏ hơn −1 chỉ thuộc X. X và Y giao nhau nên hợp phủ mọi x<5.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B02-INTERVALS",
+      "G10-B02-UNION_INTERSECTION",
+      "G10-B02-DIFFERENCE"
+    ],
     "original_outcome_text": "G10-B02-INTERVALS, G10-B02-UNION_INTERSECTION, G10-B02-DIFFERENCE.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Vẽ hai khoảng trên trục số, xét giao, hợp và hiệu theo thứ tự."
+    ],
     "rubric": "4đ: mỗi tập 1đ, giải thích ngoặc 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -357,22 +589,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\([-1;2]\\); \\((-\\infty;5)\\); \\((-\\infty;-1)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\((-1;2)\\); \\((-\\infty;5]\\); \\((-\\infty;-1]\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\([-1;2]\\); \\((-\\infty;5)\\); \\((-\\infty;2]\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\((-\\infty;5)\\); \\([-1;2]\\); \\((-\\infty;-1)\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-10",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Lớp có 38 học sinh; 22 em tham gia bơi, 19 em tham gia cầu lông, 6 em không tham gia môn nào trong hai môn. Tìm số em tham gia cả hai, chỉ bơi, chỉ cầu lông, rồi kiểm tra tổng bốn vùng sơ đồ Venn.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-10",
+    "stem": "Lớp có 38 học sinh; 22 em tham gia bơi, 19 em tham gia cầu lông, 6 em không tham gia môn nào trong hai môn. Tìm số em tham gia cả hai, chỉ bơi, chỉ cầu lông, rồi kiểm tra tổng bốn vùng sơ đồ Venn. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "Cả hai 9; chỉ bơi 13; chỉ cầu lông 10; ngoài hai 6.",
     "worked_solution": "|A∪B|=38−6=32; |A∩B|=22+19−32=9; chỉ A=22−9=13; chỉ B=19−9=10; 13+9+10+6=38.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B02-VENN_MODEL",
+      "G10-B02-UNION_INTERSECTION"
+    ],
     "original_outcome_text": "G10-B02-VENN_MODEL, G10-B02-UNION_INTERSECTION.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Số tham gia ít nhất một môn là tổng lớp trừ số ngoài hai môn."
+    ],
     "rubric": "4đ: tính hợp 1đ; giao 1đ; hai vùng chỉ 1đ; kiểm tra tổng 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -397,22 +657,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3; 19; 16; 6, tổng 44."
+      },
+      {
+        "id": "B",
+        "text": "9; 13; 10; 6, tổng 38."
+      },
+      {
+        "id": "C",
+        "text": "9; 22; 19; 6, tổng 56."
+      },
+      {
+        "id": "D",
+        "text": "15; 7; 4; 6, tổng 32."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-11",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Với X=[−2,3) và Y=(1,5], cho biết Đ/S: (a) 3∈X; (b) −2∈X; (c) 1∈X∩Y; (d) 5∈X∪Y.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-11",
+    "stem": "Với X=[−2,3) và Y=(1,5], cho biết Đ/S: (a) 3∈X; (b) −2∈X; (c) 1∈X∩Y; (d) 5∈X∪Y. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "(S, Đ, S, Đ)",
     "worked_solution": "X không chứa 3; có −2; Y không chứa 1 nên 1 không thuộc giao; Y chứa 5 nên 5 thuộc hợp.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B02-INTERVALS",
+      "G10-B02-UNION_INTERSECTION"
+    ],
     "original_outcome_text": "G10-B02-INTERVALS, G10-B02-UNION_INTERSECTION.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm các đầu mút mở/đóng và định nghĩa giao, hợp."
+    ],
     "rubric": "4 ý, mỗi ý 1đ; dấu ngoặc là căn cứ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "TRUE_FALSE_GROUP"
     },
@@ -437,22 +725,50 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đ, Đ, S, Đ"
+      },
+      {
+        "id": "B",
+        "text": "S, Đ, Đ, S"
+      },
+      {
+        "id": "C",
+        "text": "S, Đ, S, Đ"
+      },
+      {
+        "id": "D",
+        "text": "S, S, S, Đ"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-12",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Cho A={x∈ℤ | −2≤x≤2}, B={x∈ℤ | x²≤1}. Liệt kê A,B và xác định B⊆A có đúng không; tính A∖B.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-12",
+    "stem": "Cho A={x∈ℤ | −2≤x≤2}, B={x∈ℤ | x²≤1}. Liệt kê A,B và xác định B⊆A có đúng không; tính A∖B. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A={−2,−1,0,1,2}, B={−1,0,1}; B⊆A, A∖B={−2,2}.",
     "worked_solution": "Giải điều kiện bình phương trong số nguyên, so từng phần tử, rồi loại ba phần tử B khỏi A.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B02-MEMBERSHIP_SUBSET",
+      "G10-B02-DIFFERENCE"
+    ],
     "original_outcome_text": "G10-B02-MEMBERSHIP_SUBSET, G10-B02-DIFFERENCE.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Giải điều kiện bình phương, liệt kê các số nguyên rồi loại phần tử chung."
+    ],
     "rubric": "3đ: liệt kê 1đ; quan hệ tập con 1đ; hiệu 1đ.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "SHORT_EXPLANATION"
     },
@@ -477,22 +793,49 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A=\\{-2,-1,0,1,2\\}, B=\\{-1,1\\}; A\\setminus B=\\{-2,0,2\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(A=\\{-2,-1,0,1,2\\}, B=\\{-1,0,1\\}; A\\setminus B=\\{-1,0,1\\}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(A=\\{-2,0,2\\},B=\\{-1,0,1\\}; B\\not\\subseteq A\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(A=\\{-2,-1,0,1,2\\},B=\\{-1,0,1\\}; B\\subseteq A,\\ A\\setminus B=\\{-2,2\\}\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-13",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Với U={−2,−1,0,1,2,3,4,5} và A={x∈U | x chẵn}, U∖A bằng tập nào? A. {−2,0,2,4}; B. {−1,1,3,5}; C. {−1,0,1,3,5}; D. {1,3,5}.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-13",
+    "stem": "Với U={−2,−1,0,1,2,3,4,5} và A={x∈U | x chẵn}, U∖A bằng tập nào? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "B",
     "worked_solution": "Các phần tử chẵn trong U là −2,0,2,4; phần bù trong U chứa các phần tử còn lại −1,1,3,5.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B02-COMPLEMENT"
+    ],
     "original_outcome_text": "G10-B02-COMPLEMENT.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Lấy phần tử thuộc U không chẵn; chú ý cả số âm."
+    ],
     "rubric": "1đ chọn B; lưu ý −1 là phần tử của U.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "MCQ_SINGLE"
     },
@@ -517,22 +860,52 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\{-2,0,2,4\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\{-1,1,3,5\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\{-1,0,1,3,5\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\{1,3,5\\}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-14",
-    "content_version": "a3c3410555b86b2186bcfe342f3cb084475a37c4777d2fb9b1c8562433d40d32",
-    "stem": "Lấy U=ℝ, A=[−1,4], B=(2,6). Hãy xác định A∩B, A∪B, A∖B và phần bù U∖A. Giải thích vì sao 2 thuộc A∖B còn 4 thuộc A∩B.",
+    "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-14",
+    "stem": "Lấy U=ℝ, A=[−1,4], B=(2,6). Hãy xác định A∩B, A∪B, A∖B và phần bù U∖A. Giải thích vì sao 2 thuộc A∖B còn 4 thuộc A∩B. Chọn bộ kết quả theo thứ tự giao, hợp, hiệu và phần bù; tự giải thích hai đầu mút.",
     "answer_key": "A∩B=(2,4]; A∪B=[−1,6); A∖B=[−1,2]; U∖A=(−∞,−1)∪(4,+∞).",
     "worked_solution": "B không chứa đầu mút 2 nên 2 thuộc A nhưng không thuộc B; B chứa 4 và A chứa 4, nên 4 ở giao. Chú ý phần bù lấy trong U=ℝ.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B02-INTERVALS",
+      "G10-B02-UNION_INTERSECTION",
+      "G10-B02-DIFFERENCE",
+      "G10-B02-COMPLEMENT"
+    ],
     "original_outcome_text": "G10-B02-INTERVALS, G10-B02-UNION_INTERSECTION, G10-B02-DIFFERENCE, G10-B02-COMPLEMENT.",
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Vẽ hai khoảng, xét riêng các điểm biên và phần bù trong toàn bộ tập số thực."
+    ],
     "rubric": "4đ: giao/hợp 1đ mỗi phần; hiệu/phần bù 1đ mỗi phần; điều kiện giải thích dùng chấm theo từng ý.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
       "original_type": "WRITTEN_RUBRIC"
     },
@@ -557,6 +930,25 @@
       "legacy_scope_label": "SGK_CHAPTER_READINESS"
     },
     "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\([2;4];[-1;6];[-1;2);(-\\infty;-1)\\cup(4;+\\infty)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((2;4];[-1;6);[-1;2];(-\\infty;-1)\\cup(4;+\\infty)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((2;4);[-1;6);[-1;2];(-\\infty;-1]\\cup[4;+\\infty)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((2;4];[-1;6);[-1;4];(2;6)\\)"
+      }
+    ]
   }
 ]
