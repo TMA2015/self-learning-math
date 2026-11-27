@@ -1831,7 +1831,9 @@
     "answer_key": "Cặp thứ nhất tương đương, cùng tập nghiệm {3}; cặp thứ hai không tương đương, tập nghiệm {1} và {−1;1}.",
     "worked_solution": "**Lời giải:** Hai phương trình thứ nhất đều có tập nghiệm \\(\\{3\\}\\), nên tương đương. Phương trình phân thức có điều kiện \\(x\\ne-1\\) và nghiệm \\(x=1\\), còn \\(x^2-1=0\\) có nghiệm \\(x=\\pm1\\); hai phương trình sau không tương đương.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-EQUIVALENCE"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
