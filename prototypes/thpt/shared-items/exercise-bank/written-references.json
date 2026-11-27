@@ -3485,7 +3485,8 @@
     "item_id": "THPT-G10-CHVII-W22-ELLIPSE-TR01",
     "source": {
       "blob": "ccad1c7885094ebccf29236d6a89aa7c86c1f5ea",
-      "heading_id": "THPT-G10-CHVII-W22-ELLIPSE-TR01"
+      "heading_id": "THPT-G10-CHVII-W22-ELLIPSE-TR01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-vii.md",
@@ -3493,13 +3494,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B22-ELLIPSE_PARAMETERS",
+      "G10-B22-CONIC_MODEL"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHVII-W22-ELLIPSE-TR01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHVII-W22-HYPERBOLA-TR01",
     "source": {
       "blob": "ccad1c7885094ebccf29236d6a89aa7c86c1f5ea",
-      "heading_id": "THPT-G10-CHVII-W22-HYPERBOLA-TR01"
+      "heading_id": "THPT-G10-CHVII-W22-HYPERBOLA-TR01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-vii.md",
@@ -3507,7 +3517,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B22-HYPERBOLA_PARAMETERS",
+      "G10-B22-CONIC_MODEL"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHVII-W22-HYPERBOLA-TR01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP14-W01",
@@ -5081,7 +5099,8 @@
     "item_id": "THPT-G10-CHVIII-W23-01",
     "source": {
       "blob": "e78c43ab7b2f6d3ab1b135d1ad09c7030df2c44e",
-      "heading_id": "THPT-G10-CHVIII-W23-01"
+      "heading_id": "THPT-G10-CHVIII-W23-01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-viii.md",
@@ -5089,13 +5108,21 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "COUNT_MULTIPLICATION"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHVIII-W23-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHVIII-W24-ANCHOR-01",
     "source": {
       "blob": "e78c43ab7b2f6d3ab1b135d1ad09c7030df2c44e",
-      "heading_id": "THPT-G10-CHVIII-W24-ANCHOR-01"
+      "heading_id": "THPT-G10-CHVIII-W24-ANCHOR-01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-viii.md",
@@ -5103,13 +5130,22 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "COMBINATION_TWO_GROUPS",
+      "ARRANGEMENT_WITH_ROLES"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHVIII-W24-ANCHOR-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHVIII-W25-01",
     "source": {
       "blob": "e78c43ab7b2f6d3ab1b135d1ad09c7030df2c44e",
-      "heading_id": "THPT-G10-CHVIII-W25-01"
+      "heading_id": "THPT-G10-CHVIII-W25-01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-viii.md",
@@ -5117,7 +5153,16 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "BINOMIAL_COEFFICIENT",
+      "BINOMIAL_NEGATIVE_COEFF"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHVIII-W25-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "Historical shared polynomial (x−2)^4 also used in public CHVIII-RD1-10; avoid claiming independent evidence. Resolve duplicate task at scoped PED/cutover."
   },
   {
     "item_id": "THPT-TOP19-W01",
@@ -5189,7 +5234,8 @@
     "item_id": "THPT-G10-CHIX-W26-01",
     "source": {
       "blob": "fe0c6486eef27392d116c076d848c372c95ec881",
-      "heading_id": "THPT-G10-CHIX-W26-01"
+      "heading_id": "THPT-G10-CHIX-W26-01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-ix.md",
@@ -5197,13 +5243,25 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "APPLY",
+    "skill_ids": [
+      "G10-B26-EXPERIMENT_SAMPLE_SPACE",
+      "G10-B26-EVENT_SUBSET",
+      "G10-B26-CLASSICAL_RATIO",
+      "G10-B26-COMPLEMENT"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIX-W26-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
+    "review_note": "CP119 confirmed need to state independent trials; historical source preserved, candidate wording needs scoped Delta before acceptance."
   },
   {
     "item_id": "THPT-G10-CHIX-W27-ANCHOR-01",
     "source": {
       "blob": "fe0c6486eef27392d116c076d848c372c95ec881",
-      "heading_id": "THPT-G10-CHIX-W27-ANCHOR-01"
+      "heading_id": "THPT-G10-CHIX-W27-ANCHOR-01",
+      "revision_scope": "HISTORICAL_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_NOTATION_AND_CUTOVER_PENDING"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-ix.md",
@@ -5211,7 +5269,15 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B27-COUNTING_OUTCOMES",
+      "G10-B27-COMPLEMENT_PROBABILITY"
+    ],
+    "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIX-W27-ANCHOR-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-W01",
