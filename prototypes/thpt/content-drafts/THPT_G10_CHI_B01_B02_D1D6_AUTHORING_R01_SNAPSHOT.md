@@ -222,26 +222,53 @@
 ### THPT-G10-CHI-W01 — Bài 01
 
 **item_id:** `THPT-G10-CHI-W01` · **skill_id:** `G10-B01-IMPLICATION` · **written=true** · **anchor_tag:** `false`.
+**Cấp độ:** Tổng hợp (SYNTHESIS).
 
-**Đề tự luận:** Tự luận: Xét các số nguyên n. (a) Chứng minh “n chia hết cho 12 ⇒ n chia hết cho 4”. (b) Viết mệnh đề đảo và cho biết đúng/sai. (c) Viết phủ định của mệnh đề “Mọi n chia hết cho 4 đều chia hết cho 12”.
+**Đề bài:** Xét các số nguyên \(n\). (a) Chứng minh mệnh đề “Nếu \(n\) chia hết cho 12 thì \(n\) chia hết cho 4”. (b) Viết mệnh đề đảo và cho biết đúng hay sai. (c) Viết phủ định của mệnh đề “Mọi số nguyên \(n\) chia hết cho 4 đều chia hết cho 12”.
 
-**Lời giải:** (a) n=12k=4·3k. (b) “n chia hết cho 4 ⇒ n chia hết cho 12” là sai, phản ví dụ n=4. (c) “Tồn tại n nguyên chia hết cho 4 nhưng không chia hết cho 12”, đúng, ví dụ n=4.
+**Lời giải:**
 
-**Rubric tự đối chiếu:** Rubric 7 điểm: (a) biểu diễn n=12k 2đ, suy ra n=4(3k) 1đ; (b) phát biểu đảo 1đ, phản ví dụ n=4 1đ; (c) đổi đúng ∀→∃ 1đ, nêu đồng thời chia hết 4 và không chia hết 12 1đ.
+(a) Nếu \(n\) chia hết cho 12, tồn tại \(k\in\mathbb Z\) sao cho \(n=12k=4(3k)\). Vì \(3k\in\mathbb Z\), \(n\) chia hết cho 4.
 
-**Không** tự động ghi điểm/Skill Mastery dựa trên rubrics tự đối chiếu.
+(b) Mệnh đề đảo: “Nếu \(n\) chia hết cho 4 thì \(n\) chia hết cho 12”. Mệnh đề sai: \(n=4\) chia hết cho 4 nhưng không chia hết cho 12.
+
+(c) Phủ định: “Tồn tại số nguyên \(n\) chia hết cho 4 nhưng không chia hết cho 12”. Phủ định đúng, chẳng hạn \(n=4\).
+
+**Rubric (7 điểm):**
+
+- (a) Biểu diễn \(n=12k\) với \(k\in\mathbb Z\): 2 điểm; suy ra \(n=4(3k)\) với \(3k\in\mathbb Z\): 1 điểm.
+- (b) Viết đúng mệnh đề đảo: 1 điểm; nêu đúng phản ví dụ: 1 điểm.
+- (c) Đổi đúng lượng từ \(\forall\) thành \(\exists\): 1 điểm; giữ miền số nguyên và nêu đồng thời chia hết cho 4, không chia hết cho 12: 1 điểm.
+
+Chấp nhận mọi lập luận tương đương đúng. Không trừ lặp lỗi kéo theo. Không tự động ghi điểm/Skill Mastery từ Rubric tự đối chiếu.
 
 ### THPT-G10-CHI-W02-ANCHOR — Bài 02
 
 **item_id:** `THPT-G10-CHI-W02-ANCHOR` · **skill_id:** `G10-B02-VENN_MODEL` · **written=true** · **anchor_tag:** `true`.
+**Cấp độ:** Tổng hợp (SYNTHESIS).
 
-**Đề tự luận:** Tự luận/Anchor: Khối lớp có 42 học sinh. Có 24 bạn đăng kí CLB Tiếng Anh, 21 bạn đăng kí CLB Âm nhạc, 9 bạn đăng kí cả hai. (a) Vẽ sơ đồ Venn kèm đủ bốn miền; (b) tính số bạn chỉ học Tiếng Anh; (c) số bạn không vào CLB nào; (d) giải thích ý nghĩa hiệu A\B.
+**Đề bài:** Khối lớp có 42 học sinh. Có 24 bạn đăng kí CLB Tiếng Anh, 21 bạn đăng kí CLB Âm nhạc, 9 bạn đăng kí cả hai. Gọi \(A\) là tập học sinh đăng kí CLB Tiếng Anh, \(B\) là tập học sinh đăng kí CLB Âm nhạc. (a) Vẽ sơ đồ Venn và điền số học sinh vào đủ bốn miền. (b) Tính số bạn chỉ đăng kí CLB Tiếng Anh. (c) Tính số bạn không đăng kí CLB nào. (d) Giải thích ý nghĩa của \(A\setminus B\).
 
-**Lời giải:** Giao =9; chỉ Anh 24−9=15; chỉ Nhạc 21−9=12; hợp =24+21−9=36; ngoài =42−36=6; A\B là tập 15 bạn chỉ học Anh.
+**Lời giải:**
 
-**Rubric tự đối chiếu:** Rubric 7 điểm: sơ đồ đúng hai tập và giao 2đ; chỉ Anh 1đ; chỉ Nhạc 1đ; hợp và ngoài 2đ; giải thích A\B 1đ.
+(a) Vẽ hai vòng tròn giao nhau trong hình chữ nhật biểu diễn toàn bộ 42 học sinh. Điền miền chung trước: \(n(A\cap B)=9\). Miền chỉ Anh có \(24-9=15\) bạn; miền chỉ Âm nhạc có \(21-9=12\) bạn. Hợp có \(n(A\cup B)=24+21-9=36\) bạn, vì 9 bạn chung bị đếm hai lần khi cộng 24 và 21. Miền ngoài hai vòng tròn có \(42-36=6\) bạn.
 
-**Không** tự động ghi điểm/Skill Mastery dựa trên rubrics tự đối chiếu.
+(b) Có 15 bạn chỉ đăng kí CLB Tiếng Anh.
+
+(c) Có 6 bạn không đăng kí CLB nào.
+
+(d) \(A\setminus B\) là tập những học sinh thuộc \(A\) nhưng không thuộc \(B\), tức 15 bạn chỉ đăng kí CLB Tiếng Anh.
+
+**Kiểm lại:** Bốn miền rời nhau có tổng \(15+9+12+6=42\), đúng sĩ số khối lớp.
+
+**Rubric (7 điểm):**
+
+- Vẽ hai tập trong tập vũ trụ và điền đúng miền giao: 2 điểm.
+- Tính đúng miền chỉ Anh: 1 điểm; miền chỉ Âm nhạc: 1 điểm.
+- Tính đúng hợp: 1 điểm; miền ngoài cả hai: 1 điểm.
+- Giải thích đúng ý nghĩa của \(A\setminus B\): 1 điểm.
+
+Chấp nhận mọi lập luận tương đương đúng. Không trừ lặp lỗi kéo theo. Không tự động ghi điểm/Skill Mastery từ Rubric tự đối chiếu.
 
 ## 7. D5 — Hai SVG nguồn thật, accessible, xuất xứ tự dựng
 
