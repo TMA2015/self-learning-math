@@ -1724,8 +1724,8 @@
   },
   {
     "item_id": "THPT-TOP10-P34",
-    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-P34",
-    "stem": "\\(f=\\frac{x^2-4}{x-2}\\), TCD ở \\(x=2\\)?",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-P34.DELTA05",
+    "stem": "Cho hàm \\(f(x)=\\frac{x^2-4}{x-2}\\). Đường \\(x=2\\) có phải tiệm cận đứng của đồ thị không? Hãy rút gọn trên miền xác định và giải thích.",
     "answer_key": "Không có tiệm cận đứng \\(x=2\\); giới hạn tại 2 bằng 4, đồ thị khuyết điểm \\((2;4)\\).",
     "worked_solution": "Tập xác định \\(D=\\mathbb R\\setminus\\{2\\}\\). Trên D, \\(f(x)=\\frac{(x-2)(x+2)}{x-2}=x+2\\). Do đó \\(\\lim_{x\\to2^-}f(x)=\\lim_{x\\to2^+}f(x)=4\\), hữu hạn; \\(x=2\\) không là tiệm cận đứng. Đồ thị là đường \\(y=x+2\\) bỏ điểm \\((2;4)\\).",
     "skill_ids": [
