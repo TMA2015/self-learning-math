@@ -83,49 +83,58 @@
     "collection": "TOPIC:CD21:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 1,
-    "item_id": "THPT-TOP21-P01"
+    "item_id": "THPT-TOP21-P01",
+    "outcome_id": "TOP21-O01"
   },
   {
     "collection": "TOPIC:CD21:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 2,
-    "item_id": "THPT-TOP21-P02"
+    "item_id": "THPT-TOP21-P02",
+    "outcome_id": "TOP21-O02"
   },
   {
     "collection": "TOPIC:CD21:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 3,
-    "item_id": "THPT-TOP21-P03"
+    "item_id": "THPT-TOP21-P03",
+    "outcome_id": "TOP21-O03"
   },
   {
     "collection": "TOPIC:CD21:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 4,
-    "item_id": "THPT-TOP21-P04"
+    "item_id": "THPT-TOP21-P04",
+    "outcome_id": "TOP21-O04"
   },
   {
     "collection": "TOPIC:CD21:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 5,
-    "item_id": "THPT-TOP21-P05"
+    "item_id": "THPT-TOP21-P05",
+    "outcome_id": "TOP21-O05"
   },
   {
     "collection": "TOPIC:CD21:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 6,
-    "item_id": "THPT-TOP21-P06"
+    "item_id": "THPT-TOP21-P06",
+    "outcome_id": "TOP21-O06",
+    "migration_note": "Historical replay uses different parameters; candidate uses canonical practice stem/key only. Preserve historical snapshot; verify at cutover."
   },
   {
     "collection": "TOPIC:CD21:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 7,
-    "item_id": "THPT-TOP21-P07"
+    "item_id": "THPT-TOP21-P07",
+    "outcome_id": "TOP21-O07"
   },
   {
     "collection": "TOPIC:CD21:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 8,
-    "item_id": "THPT-TOP21-P08"
+    "item_id": "THPT-TOP21-P08",
+    "outcome_id": "TOP21-O08"
   },
   {
     "collection": "TOPIC:CD21:PRACTICE",
