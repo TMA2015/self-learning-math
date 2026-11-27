@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "DELTA_WAVE04_WRITTEN_SCOPED_RECHECK_COMPLETE_FINAL_ACCEPTANCE_PENDING",
+  "academic_audit": "DELTA05_SCOPED_WRITTEN_CUSTODY_AND_FIRST_TRY_CONTEXT_REVIEWED_FULL_ACCEPTANCE_PENDING",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "cde99d30922cfb79b5028884e8dc8e1679a3d069",
+    "as_of_commit": "dd0ab58115ac3b8f76315d4f098248c802e569d8",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Resolve W26 canonical/projection custody; complete remaining scoped X-G.5 notation and substantive Q01–Q18 acceptance (including interactive conversion/PED, source evidence, projection/reveal parity). Handoff RELEASE only when applicable gates pass.",
-    "status": "DELTA_WAVE04_WRITTEN_SCOPED_RECHECK_COMPLETE_FINAL_ACCEPTANCE_PENDING",
+    "next": "Finish substantive applicable Q01–Q18 for remaining affected candidate items (X-G.5 all learner fields, X-G.6 cognitive demand, distractor quality and difficulty, source/coverage/exposure), preserving historical receipts. 33 scoped placement bindings and 2 Written projections are specified for RELEASE cutover; actual generation/browser verification is not AUTHORING.",
+    "status": "DELTA05_SCOPED_WRITTEN_CUSTODY_AND_FIRST_TRY_CONTEXT_REVIEWED_FULL_ACCEPTANCE_PENDING",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,10 +112,10 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "delta_audit_wave04",
-    "delta_audit_wave03": {
-      "baseline": "6759f764b52678592ce5c60f9441cd2664f242d5",
-      "verified_head": "e7342e757337f889e530f3ade5c6a5f98f647f69",
+    "current_checkpoint_key": "delta_audit_wave05",
+    "delta_audit_wave05": {
+      "baseline": "478be1fbbcc14fb7d59ea815ed243ad19100b830",
+      "verified_head": "dd0ab58115ac3b8f76315d4f098248c802e569d8",
       "inventory": {
         "interactive_shards": 61,
         "interactive_unique": 2214,
@@ -129,293 +129,526 @@
         "evidence": "Exact snapshot shard ID sets emitted as lossless prefix/suffix ranges; reconstructed full set with counts, checked both placement groups (1079/3222 rows, 830/2229 distinct IDs; first covers all 310 absent from second); no orphan, union=2539. All ID sets preserved by subsequent Written-only changes."
       },
       "skill_mapping": {
-        "owner_authorization": "2026-11-27 chat: extend existing skills for 16 outcome groups, no parallel system",
         "mapped": 38,
         "groups": 16,
         "pending": 0,
-        "definitions_by_existing_outcome": {
-          "TOP02-O01": {
-            "skill_id": "TOP02-SKILL-LINEAR_INEQUALITY_ONE_VAR",
-            "label": "Đổi chiều bất phương trình một ẩn",
-            "item_count": 2
-          },
-          "TOP03-O02": {
-            "skill_id": "TOP03-SKILL-LINEAR_PARAMETER",
-            "label": "Biện luận phương trình bậc nhất theo tham số",
-            "item_count": 2
-          },
-          "TOP03-O03": {
-            "skill_id": "TOP03-SKILL-ZERO_PRODUCT",
-            "label": "Phương trình tích và nghiệm phân biệt",
-            "item_count": 3
-          },
-          "TOP03-O04": {
-            "skill_id": "TOP03-SKILL-QUADRATIC_EQUATION",
-            "label": "Phương trình bậc hai/biệt thức",
-            "item_count": 3
-          },
-          "TOP03-O05": {
-            "skill_id": "TOP03-SKILL-RATIONAL_EQUATION",
-            "label": "Phương trình phân thức và điều kiện",
-            "item_count": 3
-          },
-          "TOP03-O06": {
-            "skill_id": "TOP03-SKILL-ABSOLUTE_EQUATION",
-            "label": "Phương trình giá trị tuyệt đối",
-            "item_count": 3
-          },
-          "TOP03-O11": {
-            "skill_id": "TOP03-SKILL-BIQUADRATIC_SUBSTITUTION",
-            "label": "Đặt ẩn phụ x² và lọc nghiệm",
-            "item_count": 3
-          },
-          "TOP05-O04": {
-            "skill_id": "FUNCTION_GRAPH_MEMBERSHIP",
-            "label": "Điểm thuộc đồ thị",
-            "item_count": 1
-          },
-          "TOP05-O07": {
-            "skill_id": "TOP05-SKILL-EVEN_ODD",
-            "label": "Chẵn lẻ và miền đối xứng",
-            "item_count": 2
-          },
-          "TOP05-O08": {
-            "skill_id": "TOP05-SKILL-PERIODICITY",
-            "label": "Chu kỳ hàm số và giới hạn suy từ mẫu",
-            "item_count": 3
-          },
-          "TOP05-O09": {
-            "skill_id": "TOP05-SKILL-VERTICAL_TRANSLATION",
-            "label": "Dịch đứng và cực trị",
-            "item_count": 1
-          },
-          "TOP05-O11": {
-            "skill_id": "TOP05-SKILL-AXIS_REFLECTION",
-            "label": "Phản xạ qua trục",
-            "item_count": 3
-          },
-          "TOP05-O12": {
-            "skill_id": "TOP05-SKILL-VERTICAL_SCALING",
-            "label": "Co giãn đứng",
-            "item_count": 3
-          },
-          "TOP05-O13": {
-            "skill_id": "TOP05-SKILL-HORIZONTAL_SCALING",
-            "label": "Co giãn ngang",
-            "item_count": 2
-          },
-          "TOP05-O14": {
-            "skill_id": "TOP05-SKILL-ABSOLUTE_TRANSFORM",
-            "label": "Giá trị tuyệt đối trong/ngoài hàm",
-            "item_count": 2
-          },
-          "TOP09-O32": {
-            "skill_id": "TOP09-SKILL-DIFFERENTIAL_APPROXIMATION",
-            "label": "Vi phân xấp xỉ tuyến tính",
-            "item_count": 2
-          }
+        "evidence": "wave03 at prior exact manifest; no skill changes in wave05"
+      },
+      "written": {
+        "total": 325,
+        "unique": 325,
+        "auto_grade_enabled": 0,
+        "w26": {
+          "item_id": "THPT-G10-CHIX-W26-01",
+          "canonical_path": "prototypes/thpt/shared-items/exercise-bank/written/THPT-G10-CHIX-W26-01.md",
+          "canonical_blob": "efe4521854ede2a43628f058f81ce4566ce80049",
+          "legacy_projection_restored_blob": "fe0c6486eef27392d116c076d848c372c95ec881",
+          "receipt_blob": "05c3dd40a094b4b34c28b48cc72d1752c21190fe",
+          "source_check": "Independent/equiprobable stated in stem, classical count 12/2/10; 1/6,5/6; /6 rubric unchanged, explicit inclusive complement and D6, not reliant on future-grade multiplication formula.",
+          "status": "CANONICAL_CUSTODY_RESOLVED_SCOPED_AUTHOR_SOURCE_CHECK"
         },
-        "source": "Existing THPT item skill_ids; no separate registry, no THCS taxonomy change",
-        "proof": "38 original target item records changed only skill_ids versus wave02; original outcome IDs/contents unchanged. 3 B15_OUT_03 aliases reconciled to FUNCTION_GRAPH_MEMBERSHIP (two interactive, one Written); four directly related CĐ05 items carry both prior skill and new transformation skill.",
-        "sgk_alias_ids": [
-          "THPT-G10-CHVI-TRY03",
-          "THPT-G10-B15-R04",
-          "HPT-G10-CHVI-WRI-15-01"
-        ],
-        "related_items": [
+        "stale_projection_bindings": [
           {
-            "id": "THPT-TOP05-P17",
-            "skill_ids": [
-              "B16_OUT_02",
-              "TOP05-SKILL-VERTICAL_TRANSLATION"
-            ]
+            "item_id": "THPT-G12-CHI-B01-W02",
+            "collection": "TOPIC:CD10:PRACTICE",
+            "role": "TOPIC_WRITTEN",
+            "order": 15,
+            "legacy_order": 6,
+            "canonical_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
+            "receipt_blob": "9f0466b7ded7d2a7441fdc55768949536f7a680e",
+            "stale_projection_blob": "2462e007e3ec6f22ce20a7de82170d6d0b64ec16",
+            "source_locator": "### THPT-G12-CHI-B01-W02",
+            "action": "GENERATE_STEM_ANSWER_FULL_FIVE_STEP_SOLUTION_ORIGINAL_RUBRIC_D6_FROM_CANONICAL; NO SECOND ITEM",
+            "reveal": "AFTER_SELF_ATTEMPT",
+            "mastery": false,
+            "authoring_binding": "VERIFIED",
+            "release_projection": "PENDING_AUTHORIZED_CUTOVER"
           },
           {
-            "id": "THPT-TOP05-P28",
-            "skill_ids": [
-              "B16_OUT_03",
-              "TOP05-SKILL-ABSOLUTE_TRANSFORM"
-            ]
-          },
-          {
-            "id": "THPT-TOP05-KFT09",
-            "skill_ids": [
-              "B16_OUT_02",
-              "TOP05-SKILL-VERTICAL_TRANSLATION"
-            ]
-          },
-          {
-            "id": "THPT-TOP05-KFT13",
-            "skill_ids": [
-              "FUNCTION_DOMAIN",
-              "TOP05-SKILL-HORIZONTAL_SCALING"
-            ]
+            "item_id": "THPT-G12-CHI-B01-W01",
+            "collection": "TOPIC:CD10:PRACTICE",
+            "role": "TOPIC_WRITTEN",
+            "order": 16,
+            "legacy_order": 9,
+            "canonical_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
+            "receipt_blob": "9f0466b7ded7d2a7441fdc55768949536f7a680e",
+            "stale_projection_blob": "2462e007e3ec6f22ce20a7de82170d6d0b64ec16",
+            "source_locator": "### THPT-G12-CHI-B01-W01",
+            "action": "GENERATE_STEM_ANSWER_FULL_FIVE_STEP_SOLUTION_ORIGINAL_RUBRIC_D6_FROM_CANONICAL; NO SECOND ITEM",
+            "reveal": "AFTER_SELF_ATTEMPT",
+            "mastery": false,
+            "authoring_binding": "VERIFIED",
+            "release_projection": "PENDING_AUTHORIZED_CUTOVER"
           }
         ],
-        "shard_blobs": {
-          "items/cd02.json": "6fbb61d6f7e82c0d52ddd6ad33b194bc4e7dc0f3",
-          "items/cd03.json": "e7e68e4d37281f045e23fad6197a014727f52eab",
-          "items/cd05.json": "73c56bf1c64ffbd08d56862402880e2b0c446952",
-          "items/cd09.json": "5589ecbc51e6ea3e5821e336ac9bfee7cdb3b95a",
-          "items/topic-knowledge-first-try.json": "20720233afc83051450c49c67350ea50e92fc4b9",
-          "items/g10-chvi.json": "ed1dd7a0f8201db3beb56de191ec7ce5f71e831b",
-          "items/g10-chvi-public-selfcheck.json": "b46cfa0c14849f920a6cfa9b44347242292342c1",
-          "written-references.json": "6f0ff8848994d107b94866e669eeb183f386599e"
+        "reference_blob": "336172066ed63a402adf264df0cb37eae6d0653f"
+      },
+      "first_try_context": {
+        "total": 33,
+        "rich_prompt_in_candidate": 23,
+        "shared_context_preserved_by_reference": 10,
+        "canonical_items_revised": 31,
+        "placement_rows_unchanged": true,
+        "bindings": [
+          {
+            "item_id": "THPT-G10-B18-C01",
+            "collection": "SGK:G10:CHVI:B18:KNOWLEDGE_FIRST_TRY",
+            "order": 2,
+            "role": "SGK_FIRST_TRY",
+            "legacy_projection_blob": "3d8b0ed45b606f608db4b2a55ecfa8a273a8c802",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-B18-C01\"",
+            "disposition": "RETAIN_CONTEXT_AT_CUTOVER",
+            "context": "Preserve prompt to inspect sign of RHS before squaring, reject -1 and check original equation; keep current full reasoning.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY01",
+            "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+            "order": 1,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY01\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY02",
+            "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+            "order": 2,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY02\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY03",
+            "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+            "order": 3,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY03\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY04",
+            "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+            "order": 4,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY04\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY05",
+            "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+            "order": 5,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY05\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY06",
+            "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+            "order": 6,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY06\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY07",
+            "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+            "order": 7,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY07\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY08",
+            "collection": "SGK:G10:CHVII:B20:FIRST_TRY",
+            "order": 1,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY08\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY09",
+            "collection": "SGK:G10:CHVII:B20:FIRST_TRY",
+            "order": 2,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY09\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY10",
+            "collection": "SGK:G10:CHVII:B20:FIRST_TRY",
+            "order": 3,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY10\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY11",
+            "collection": "SGK:G10:CHVII:B20:FIRST_TRY",
+            "order": 4,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY11\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY12",
+            "collection": "SGK:G10:CHVII:B20:FIRST_TRY",
+            "order": 5,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY12\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY13",
+            "collection": "SGK:G10:CHVII:B21:FIRST_TRY",
+            "order": 1,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY13\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY14",
+            "collection": "SGK:G10:CHVII:B21:FIRST_TRY",
+            "order": 2,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY14\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY15",
+            "collection": "SGK:G10:CHVII:B21:FIRST_TRY",
+            "order": 3,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY15\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY16",
+            "collection": "SGK:G10:CHVII:B21:FIRST_TRY",
+            "order": 4,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY16\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY17",
+            "collection": "SGK:G10:CHVII:B21:FIRST_TRY",
+            "order": 5,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY17\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY18",
+            "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+            "order": 1,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY18\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY19",
+            "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+            "order": 2,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY19\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY20",
+            "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+            "order": 3,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY20\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY21",
+            "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+            "order": 4,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY21\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY22",
+            "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+            "order": 5,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY22\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G10-CHVII-TRY23",
+            "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+            "order": 6,
+            "role": "SGK_PRE_CORE_FIRST_TRY",
+            "legacy_projection_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+            "source_locator": "data-thpt-first-try-id=\"THPT-G10-CHVII-TRY23\"",
+            "disposition": "RICHER_PROMPT_RETAINED_IN_CANONICAL_CANDIDATE",
+            "context": "Retain richer checked prompt and corresponding after-answer explanation; candidate stem includes original scaffold; keep learning position and remediation link.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G12-B10-C04",
+            "collection": "SGK:G12:CHIII:B10:KNOWLEDGE_FIRST_TRY",
+            "order": 2,
+            "role": "SGK_FIRST_TRY",
+            "legacy_projection_blob": "32f4eda1cfd151592eef5a35921ad872c1f644c4",
+            "source_locator": "B10-T02",
+            "disposition": "RETAIN_CONTEXT_AT_CUTOVER",
+            "context": "Preserve question about both numerical value and unit; if learner keeps cm², point to lesson section 4; canonical solution now explicit.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G12-B16-A02",
+            "collection": "SGK:G12:CHV:B16:KNOWLEDGE_FIRST_TRY",
+            "order": 2,
+            "role": "SGK_FIRST_TRY",
+            "legacy_projection_blob": "b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d",
+            "source_locator": "B16-T02",
+            "disposition": "RETAIN_CONTEXT_AT_CUTOVER",
+            "context": "Retain context of 5 m ramp and direction (3;0;4), ask angle with horizontal; 5 m is actual contextual length, direction norm 5; use canonical ratio solution.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G11-B08-C02",
+            "collection": "SGK:G11:CHIII:B08:KNOWLEDGE_FIRST_TRY",
+            "order": 1,
+            "role": "SGK_FIRST_TRY",
+            "legacy_projection_blob": "4f3d1af635dd548700ad3514aff283ebe29aa9a2",
+            "source_locator": "details[data-ped-first-try] #1",
+            "disposition": "RETAIN_CONTEXT_AT_CUTOVER",
+            "context": "Retain third group [20;30) and request to explain half-open boundary convention. No second item.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G11-CHIV-B11-P01",
+            "collection": "SGK:G11:CHIV:B11:KNOWLEDGE_FIRST_TRY",
+            "order": 1,
+            "role": "SGK_FIRST_TRY",
+            "legacy_projection_blob": "7dccb87d44c1734cf7b5f3c77df209b75db6e63b",
+            "source_locator": "details[data-ped-first-try] #1",
+            "disposition": "RETAIN_CONTEXT_AT_CUTOVER",
+            "context": "Retain two questions: intersection and coplanarity of SA and BC; canonical answer now explicitly explains both.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G11-CHV-B16-C01",
+            "collection": "SGK:G11:CHV:B16:KNOWLEDGE_FIRST_TRY",
+            "order": 1,
+            "role": "SGK_FIRST_TRY",
+            "legacy_projection_blob": "a2242eeb50ae0f02643182bf10c315c41ce05c3b",
+            "source_locator": "details[data-ped-first-try] #1",
+            "disposition": "RETAIN_CONTEXT_AT_CUTOVER",
+            "context": "Use function name k consistently in placement prompt and answer if needed; ask why cancellation only for x≠3; reveal full canonical solution, not just 6.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G11-CHVII-B23-P02",
+            "collection": "SGK:G11:CHVII:B23:KNOWLEDGE_FIRST_TRY",
+            "order": 1,
+            "role": "SGK_FIRST_TRY",
+            "legacy_projection_blob": "ad1ce1335b2c4dcef36edff8f8ad5378b8f63cad",
+            "source_locator": "details[data-ped-first-try] #1",
+            "disposition": "RETAIN_CONTEXT_AT_CUTOVER",
+            "context": "Context: straight line k perpendicular to two parallel floor markings, ask whether k must be perpendicular to floor; do not imply upright by wording 'cột'. Remove legacy inline answer 'Chưa'; show explanation only after response.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G12-CHI-B01-C04",
+            "collection": "SGK:G12:CHI:B01:KNOWLEDGE_FIRST_TRY",
+            "order": 2,
+            "role": "SGK_FIRST_TRY",
+            "legacy_projection_blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+            "source_locator": "Tự thử B",
+            "disposition": "RETAIN_CONTEXT_AT_CUTOVER",
+            "context": "Preserve discovery question whether derivative zero suffices, example x³, use canonical sign/counterexample after response.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-G12-CHI-B02-C01",
+            "collection": "SGK:G12:CHI:B02:KNOWLEDGE_FIRST_TRY",
+            "order": 2,
+            "role": "SGK_FIRST_TRY",
+            "legacy_projection_blob": "d6e517a980ec9259345285964f4c42767faa6122",
+            "source_locator": "Tự thử B",
+            "disposition": "RETAIN_CONTEXT_AT_CUTOVER",
+            "context": "Preserve 'gần 1' versus 'đạt 1' discovery; full proof after response, no requirement to know term supremum.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          },
+          {
+            "item_id": "THPT-TOP10-P34",
+            "collection": "SGK:G12:CHI:B03:KNOWLEDGE_FIRST_TRY",
+            "order": 2,
+            "role": "SGK_FIRST_TRY",
+            "legacy_projection_blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+            "source_locator": "Tự thử B",
+            "disposition": "RETAIN_CONTEXT_AT_CUTOVER",
+            "context": "Preserve cancellation request and distinction between vertical asymptote and hole; full canonical explanation after response, additional oblique-asymptote discussion optional only if appropriate.",
+            "reveal": "AFTER_EACH_ANSWER",
+            "hints_allowed": true,
+            "mastery": false
+          }
+        ],
+        "source_scope": "Archived exact field flags and historical projection blobs reopened; current rows resolved 33/33. 23 G10 geometry stems restored from approved richer prompts; normalized notation and repaired wrong-task hints/remediation TRY06/07/22, checked TRY13 example. Other 8 items corrected; 2 retained unchanged. Full item source equivalence beyond this scope and actual browser reveal not certified.",
+        "item_shards": {
+          "items/g10-chvii.json": "3b9b74aa3a241f749db8ed5e9e25203a3c899fa0",
+          "items/g12-chiii.json": "fac49e7dd5eeac3ad0859196b7635007b92cf98d",
+          "items/g12-chv.json": "acfa643d61349973aadd95627689896c0dc1872d",
+          "items/g11-chiii.json": "2a948af98ec848273e70cf590d4ca1cce6857604",
+          "items/g11-chiv.json": "035ebbc867878dc0e59ba4902dcbd18831759a38",
+          "items/g11-chvii.json": "41ed006749093012e6c9840febb5dd3c8ffc1c3e",
+          "items/g12-chi.json": "6bc2444612701a64726efda6c585c40d54970a06",
+          "items/cd10.json": "b5b2e5fde81d7abdca47cf9c7410ddb6be41d380"
         }
       },
-      "written_delta": {
-        "prior_wave02_revised": 26,
-        "wave03_recorded_source_custody": [
-          {
-            "id": "THPT-G10-CHIV-W08-FORCE-TR01",
-            "blob": "5362cb9b01259d92ace93455c507f6d026b4f297",
-            "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING"
-          },
-          {
-            "id": "THPT-G10-CHIV-W09",
-            "blob": "5362cb9b01259d92ace93455c507f6d026b4f297",
-            "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING"
-          },
-          {
-            "id": "THPT-G10-CHIV-W10",
-            "blob": "5362cb9b01259d92ace93455c507f6d026b4f297",
-            "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING"
-          },
-          {
-            "id": "THPT-G10-CHIV-W11-ANCHOR",
-            "blob": "5362cb9b01259d92ace93455c507f6d026b4f297",
-            "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING"
-          },
-          {
-            "id": "THPT-G10-CHVIII-W25-01",
-            "blob": "e78c43ab7b2f6d3ab1b135d1ad09c7030df2c44e",
-            "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING"
-          },
-          {
-            "id": "THPT-G10-CHIX-W26-01",
-            "blob": "3207c7522f220db8068d7b8d037ba49c2a12328c",
-            "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING"
-          }
-        ],
-        "limitations": "Earlier wave03 commits restored historical source path and amended five Written items; W25 overlap classified practice only. Source/PED/Q18 verification and projection custody remain; W26 currently edits existing library Markdown on Draft branch; do not publish or infer permission to edit production projection. No independent verdict."
+      "q_audit_scope": {
+        "standard_blob": "dec6908a3488a5013849e9b768dac55911552bed",
+        "Q01_Q02": "Existing historical source/outcome scope preserved; affected item mathematical tasks rechecked; no fresh SGK S1 reading asserted",
+        "Q03_Q04_Q07_Q08_Q09_Q10_Q11_Q12_Q13_Q17": "Knowledge and journey evidence not reopened in this scoped delta; D6 reviewed only for affected items; full applicable acceptance outstanding",
+        "Q05_Q14": "33 first-try mathematics/context checked; 31 changed; source and solution alignment and selected notation corrected. Remaining bank-wide cognitive demand/notation/level review outstanding.",
+        "Q06": "W26 corrected single source /6; W01/W02 exact reviewed full solution and /4 bindings; earlier wave04 scoped 47 review evidence preserved; no global Written Q18 certification.",
+        "Q15": "ID order same in all 9 affected JSON shards, 34 records changed, no duplicate/new IDs, unchanged placements/keys/skills/exposure; written references 325, all auto_grade=false.",
+        "Q16": "No private RD1, new scoring or Mastery; 33 first tries public unscored, after-answer reveal requirement; actual public selfcheck whole-submit/reveal browser tests belong to RELEASE.",
+        "Q18": "Historical receipt preserved and source bindings verified; final scoped acceptance remaining; no full PASS or CONTENT_READY"
       },
-      "other_delta": "Four previously committed public G10 ChIV selfcheck answer-label corrections at 420551351caa58c91e59d5a08980597f0fe353d2; targeted source verification/Q18 pending.",
-      "protected_scope": "No Mastery, private RD1, Final Submit, runtime, Firebase or merge/deploy."
+      "protected_scope": "Restored prior Draft website edit byte-exactly; no net W26 website changes, no runtime/private RD1/Final Submit/Mastery/Firebase changes, no merge/deploy."
     },
     "previous_manifest": {
-      "commit": "6759f764b52678592ce5c60f9441cd2664f242d5",
-      "blob": "ed10d89dbc7c393d85291f76038e903cc0298c27",
-      "key": "delta_audit_wave02"
-    },
-    "delta_audit_wave04": {
-      "baseline": "a755616c824fa97d5ed93b26d2275c091615538f",
-      "verified_head": "cde99d30922cfb79b5028884e8dc8e1679a3d069",
-      "inventory": {
-        "interactive_shards": 61,
-        "interactive_unique": 2214,
-        "written_unique": 325,
-        "total_unique": 2539,
-        "placement_shards": 26,
-        "placement_rows": 4301,
-        "global_duplicate_ids": 0,
-        "unresolved_placement_ids": 0,
-        "unplaced_items": 0,
-        "evidence": "Exact snapshot shard ID sets emitted as lossless prefix/suffix ranges; reconstructed full set with counts, checked both placement groups (1079/3222 rows, 830/2229 distinct IDs; first covers all 310 absent from second); no orphan, union=2539. All ID sets preserved by subsequent Written-only changes."
-      },
-      "skill_mapping": {
-        "mapped": 38,
-        "groups": 16,
-        "pending": 0,
-        "evidence": "delta_audit_wave03; unchanged by Written-only edits"
-      },
-      "written_delta": {
-        "reviewed": 47,
-        "revised": 19,
-        "unchanged_reviewed": 28,
-        "source_paths": [
-          {
-            "path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
-            "blob": "a8c7185ccda5daeae8cef1cff71bf3ef9a588107",
-            "prior_blob": "fe1016b245a2c08c534a1a1cca65924eabf5a7fd"
-          },
-          {
-            "path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
-            "blob": "2e9e2378e9aaa14f889782743fa4b2a08575e287",
-            "prior_blob": "331b37b0ce28e8826940016f37326edf97efa139"
-          },
-          {
-            "path": "prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_G10_CHIV_FULL_R04_WITH_TRANSFER_DELTA_C_20261107.md",
-            "blob": "42071d49bd1009136fcf1f5bbf59e70be6807d4a",
-            "prior_blob": "5362cb9b01259d92ace93455c507f6d026b4f297"
-          },
-          {
-            "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-            "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
-            "prior_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
-          },
-          {
-            "path": "prototypes/thpt/content-drafts/G11_CHIII_B08_B09_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
-            "blob": "d79ea3c061515bf5ee609df8133e13894d86752f",
-            "prior_blob": "c4f4f654a95209ca46a6e03b61cc8f5222ec2816"
-          },
-          {
-            "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-            "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
-            "prior_blob": "ef83141c2f4d864f6334e266d01173a00791ef68"
-          },
-          {
-            "path": "prototypes/thpt/content-drafts/G11_SGK_SUPPLEMENT_P99_P109_CANONICAL_R00_SOURCE_LOCK.md",
-            "blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
-            "prior_blob": "e4ea892c21ffd036c846fb7f5702e033187c410a"
-          },
-          {
-            "path": "prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_SOURCE/Temp_G12_SGK_YEAREND_R00_LEARNING_20261104.md",
-            "blob": "0c56221669c632c5d1c80a9782eced156c585b5f",
-            "prior_blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9"
-          }
-        ],
-        "reference_blob": "7ceef1d6fe945c467f10166fdc0e52f9983141c1",
-        "reference_rows": 325,
-        "unique_ids": 325,
-        "auto_grade_enabled": 0,
-        "revised_ids": [
-          "THPT-TOP10-W03",
-          "THPT-TOP11-W05",
-          "THPT-G10-CHIV-W08-FORCE-TR01",
-          "THPT-G10-CHIV-W09",
-          "THPT-G10-CHIV-W10",
-          "THPT-G10-CHIV-W11-ANCHOR",
-          "THPT-G12-B18-W01",
-          "THPT-G12-B18-W03",
-          "THPT-G12-B18-W05",
-          "THPT-G12-B18-W07",
-          "THPT-G12-B19-W03",
-          "THPT-G12-B19-W04",
-          "THPT-G12-B19-W05",
-          "THPT-G11-CHIII-W09-02-ANCHOR",
-          "THPT-G12-B09-W03",
-          "THPT-G12-B09-W04",
-          "THPT-G12-B10-W03",
-          "THPT-G11-SUPP-E02-W01",
-          "THPT-G12-YE-W14"
-        ],
-        "outside_target_blocks_exact": true,
-        "all_non_source_non_version_non_note_reference_fields_exact": true,
-        "notes": "Rechecked source stem/key/solution/rubric of flagged Written scope. Corrections cover mathematical wording, assumptions, proof/solution alignment, rubric and selected notation. Historical PASS not reopened. No blanket academic/PED/Q18 verdict; not a fresh SGK S1 scan."
-      },
-      "gate_status": {
-        "Q06": "SCOPED_WRITTEN_RECHECK_EVIDENCE",
-        "Q15": "STRUCTURAL_ID_AND_REFERENCE_PARITY_EVIDENCE",
-        "Q16": "WRITTEN_AUTO_GRADE_DISABLED; FULL ASSESSMENT_GATE_PENDING",
-        "Q18": "SOURCE_VERSION_AND_SCOPED_EVIDENCE_RECORDED; FINAL_ACCEPTANCE_PENDING",
-        "other_Q": "SUBSTANTIVE_ACCEPTANCE_PENDING"
-      },
-      "blockers": [
-        "G10 W26 source/projection custody; prior draft library edit requires ownership resolution",
-        "Two stale Written projections and 33 context/scaffold placements remain for authorized cutover",
-        "Full applicable X-G.5, S1/PED, Q01–Q18 acceptance; no full PASS or release authorization"
-      ],
-      "protected_scope": "No new runtime, private RD1, Final Submit, Mastery, Firebase, website projection, merge or deploy changes in wave04."
+      "commit": "478be1fbbcc14fb7d59ea815ed243ad19100b830",
+      "blob": "c5c4dfbe5a0b0043ec72dd750dbf6b64fbc150cc",
+      "key": "delta_audit_wave04",
+      "note": "Wave04 Written 47/19 evidence and previous wave03 skill mapping accessible via exact snapshot."
     }
   },
   "pending_review": {
@@ -486,22 +719,26 @@
       "note": "Review current source and later receipts for unresolved Written source/wording/rubric/custody issues; preserve already-fixed dispositions. CP119 records B29-W03, G10-CHIX-W26-01, G12-B14-W07."
     },
     "projection_flags": {
-      "status": "ALL_80_RECORDED_FLAGS_TRIAGED_NOT_ALL_CORRECTIONS_COMPLETE",
+      "status": "ALL_80_TRIAGED_35_CUTOVER_BINDINGS_SPECIFIED",
       "total_flags": 80,
       "verified_equivalent_content": 45,
       "same_task_with_context_or_scaffold_preservation": 33,
       "verified_stale_written_projection": 2,
       "unreviewed_flags": 0,
-      "scope": "All recorded migration flags classified; 2 stale Written projections and 33 same-task placements require preserving context/scaffolding/reveal semantics at authorized cutover. No assertion of global source equivalence outside flagged rows or full academic/PED audit. Legacy counts retained."
+      "scope": "45 verified equivalent; 23 richer geometry prompts retained in canonical candidate, 10 shared contexts explicitly bound to legacy projection + placement, 2 Written active-source bindings. Actual site regeneration/reveal and browser verification pending authorized RELEASE. No global source equivalence claim."
     },
     "written_projection_items": [
       {
         "item_id": "THPT-G12-CHI-B01-W02",
-        "status": "VERIFIED_STALE_TOPIC_PROJECTION_REGENERATE_FROM_ACTIVE_SOURCE_AT_CUTOVER"
+        "status": "AUTHORING_ACTIVE_SOURCE_BINDING_VERIFIED_RELEASE_GENERATION_PENDING",
+        "canonical_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
+        "collection": "TOPIC:CD10:PRACTICE"
       },
       {
         "item_id": "THPT-G12-CHI-B01-W01",
-        "status": "VERIFIED_STALE_TOPIC_PROJECTION_REGENERATE_FROM_ACTIVE_SOURCE_AT_CUTOVER"
+        "status": "AUTHORING_ACTIVE_SOURCE_BINDING_VERIFIED_RELEASE_GENERATION_PENDING",
+        "canonical_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
+        "collection": "TOPIC:CD10:PRACTICE"
       }
     ],
     "other": "Full S1/PED/Q18, actual source-field equivalence outside flagged scopes, Written source/rubric, metadata, notation, interaction renderer/runtime and browser QA remain subject to applicable gates. Historical records include any earlier findings and source/receipt evidence.",
@@ -564,7 +801,7 @@
     "sgk_g11_vii_ix_written_delta": "G11 ChVIII B28-W01/B29-W01/B29-W03 corrected in exact public source; candidate 6637d7661bcc2ac982c19e352d7acc3ba11748c9, historical reviewed blob preserved; targeted PED/Q18 and projection pending.",
     "sgk_g12_chvi_written_delta": "Seven B18/B19 Written notes addressed in existing canonical source c2e57e310fbc5253a0657b1b04c840890eaa29a5; targeted PED/Q18 and projection pending. B19-W05 repeats same example, practice only.",
     "g12_b14_w07_delta": "Prior corrected stem verified in 4891b4b2; further aligned rubric and reasoning on 24e463e61c6cc4f78dca45c1f19661ffed6786eb; targeted PED/Q18 and projection pending.",
-    "remaining_written_source_custody": "Wave04 rechecked 47 flagged Written blocks, revised 19 across 8 canonical source paths, exact parity outside target blocks; 325 Written references preserved. W26 source/projection custody remains unresolved; W25 shared replay practice-only; final Q18 and stale projections pending. See delta_audit_wave04. Earlier pending entries remain historical evidence, not automatically open defects."
+    "remaining_written_source_custody": "W26 canonical custody RESOLVED; active source blob efe4521854ede2a43628f058f81ce4566ce80049; legacy website projection restored. W25 practice-only; 2 CĐ10 stale projections now have exact canonical binding and cutover instructions. Remaining applicable Q18/PED/X-G.5 and authorized projection generation/reveal QA."
   },
   "checkpoint_policy": "Replace current_progress and current checkpoint, do not append cumulative report trees. Record detailed scoped evidence in existing issue/PR or prior immutable Git snapshot; preserve exact commit/path/blob and relevant key. Carry forward unresolved issues only; retain older history pointer. Never infer PASS, authorize cutover or change protected runtime from compaction."
 }
