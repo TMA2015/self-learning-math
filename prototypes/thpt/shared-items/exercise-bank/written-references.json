@@ -667,7 +667,9 @@
     "item_id": "HPT-G10-CHVI-WRI-18-01",
     "source": {
       "blob": "4da918f36d30c9b7110099e81fc88943e5b7705b",
-      "heading_id": "HPT-G10-CHVI-WRI-18-01"
+      "heading_id": "HPT-G10-CHVI-WRI-18-01",
+      "path": "docs/thpt-preview/thu-vien/tu-luan.md",
+      "revision_scope": "HISTORICAL_PUBLIC_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_TEX_PROJECTION_NORMALIZATION_PENDING_RELEASE"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan.md",
@@ -675,13 +677,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "RADICAL_TWO_SIDES",
+      "RADICAL_DOMAIN"
+    ],
+    "content_version": "CD03-BANK-CP123-20261127-18-01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "HPT-G10-CHVI-WRI-18-02",
     "source": {
       "blob": "4da918f36d30c9b7110099e81fc88943e5b7705b",
-      "heading_id": "HPT-G10-CHVI-WRI-18-02"
+      "heading_id": "HPT-G10-CHVI-WRI-18-02",
+      "path": "docs/thpt-preview/thu-vien/tu-luan.md",
+      "revision_scope": "HISTORICAL_PUBLIC_CANONICAL_PRESERVED_MATH_RUBRIC_REVIEWED_TEX_PROJECTION_NORMALIZATION_PENDING_RELEASE"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan.md",
@@ -689,27 +701,55 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "RADICAL_MODELING"
+    ],
+    "content_version": "CD03-BANK-CP123-20261127-18-02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP03-W01",
     "source": {
-      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
-      "heading_id": "THPT-TOP03-W01"
+      "blob": "dca39a5cd38b03885dccd3876acf4a41273522b8",
+      "heading_id": "THPT-TOP03-W01",
+      "previous_source_blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md",
+      "revision_scope": "CP123_CD03_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "RADICAL_CONDITION",
+      "RADICAL_FILTER"
+    ],
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP03-W02",
     "source": {
-      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
-      "heading_id": "THPT-TOP03-W02"
+      "blob": "dca39a5cd38b03885dccd3876acf4a41273522b8",
+      "heading_id": "THPT-TOP03-W02",
+      "previous_source_blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "path": "prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md",
+      "revision_scope": "CP123_CD03_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "RADICAL_MODELING"
+    ],
+    "content_version": "CD03-BANK-CP123-20261127-TOP03-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G11-CHI-W01",
