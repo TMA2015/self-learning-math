@@ -440,19 +440,6 @@ content_version: 2
 
 Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
 
-
-**Đáp án:** Liên tục mọi c; f'_-(0)=c, f'_+(0)=0; khả vi iff c=0, f'(0)=0, tiếp tuyến y=0.
-**Lời giải đầy đủ:** f(0)=0. Khi x→0⁺, f=x²→0; khi x→0⁻, f=x²+c x→0 nên liên tục. Với h>0, [f(h)−f(0)]/h=h→0. Với h<0, thương=(h²+c h)/h=h+c→c. Hai đạo hàm một phía bằng nhau khi c=0; khi đó f'(0)=0 và P(0,0), tiếp tuyến y=0.
-**Rubric /7:**
-1. Tính f(0) đúng (1đ)
-2. Giới hạn f từ phải 0 (1đ)
-3. Giới hạn f từ trái 0 (1đ)
-4. Viết thương sai phân phía phải (1đ)
-5. Viết thương sai phân phía trái (1đ)
-6. Điều kiện c=0 và kết luận khả vi (1đ)
-7. Tiếp tuyến y=0 khi c=0 (1đ)
-**D6:** Không dùng chỉ tính liên tục để suy khả vi; bắt buộc xét cả hai thương sai phân.
-
 ## THPT-TOP09-W02 · TOP09-O09
 
 item_id: THPT-TOP09-W02
@@ -478,19 +465,6 @@ content_version: 2
 **D6:** Phân biệt độ dời với quãng đường; vận tốc có hướng còn tốc độ không âm.
 
 Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
-
-
-**Đáp án:** s(2)=2 m,s(3)=0 m; v_tb=−2 m/s; v(2)=−3 m/s; tốc độ3 m/s; tiếp tuyến y−2=−3(t−2).
-**Lời giải đầy đủ:** s(2)=8−24+18=2; s(3)=27−54+27=0. Vận tốc trung bình (0−2)/(3−2)=−2 m/s. v=s'=3t²−12t+9 nên v(2)=−3 m/s, tốc độ |v(2)|=3. Độ dốc tiếp tuyến tại (2,2) là −3; y−2=−3(t−2). V_tb tính trên cả khoảng 1s, v(2) là giới hạn khi khoảng co lại.
-**Rubric /7:**
-1. Tính s(2)=2 (1đ)
-2. Tính s(3)=0 (1đ)
-3. Tính vận tốc trung bình −2 (1đ)
-4. Lập v=s' đúng (1đ)
-5. Tính v(2)=−3 và tốc độ3 (1đ)
-6. Lập đúng tiếp tuyến qua (2,2) (1đ)
-7. Giải thích ý nghĩa và đơn vị vận tốc (1đ)
-**D6:** Nếu trộn y=s(t) với t hoặc lẫn quãng đường với tọa độ, đặt trục t và ký hiệu độ dốc (m/s).
 
 ## THPT-TOP09-W03 · TOP09-O15
 
@@ -521,19 +495,6 @@ Tại \(x=0\), \(f(0)=-1,\ f'(0)=-1\); tiếp tuyến là \(y+1=-x\), hay \(y=-x
 **D6:** Ghi điều kiện mẫu trước khi đạo hàm; nếu đảo dấu tử, ôn quy tắc thương và làm lại THPT-TOP09-P15.
 
 Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
-
-
-**Đáp án:** D=ℝ\{1}; f'=(x²−2x−1)/(x−1)²; f(0)=−1; f'(0)=−1; tiếp tuyến y=−x−1.
-**Lời giải đầy đủ:** D=ℝ\{1}. u=x²+1, v=x−1. f'=[2x(x−1)−(x²+1)]/(x−1)²=(x²−2x−1)/(x−1)², x≠1. Tại0, f(0)=1/(−1)=−1, f'(0)=−1. Tiếp tuyến y+1=−1(x−0), tức y=−x−1. x=1 bị loại vì mẫu gốc bằng0; biểu thức đạo hàm cũng không có nghĩa.
-**Rubric /7:**
-1. Miền loại x=1 (1đ)
-2. Xác định u,v và đạo hàm của chúng (1đ)
-3. Lập công thức thương với đúng dấu (1đ)
-4. Rút gọn tử chính xác (1đ)
-5. Tính f(0)=−1 (1đ)
-6. Tính f'(0)=−1 và tiếp tuyến (1đ)
-7. Khẳng định điều kiện x≠1 (1đ)
-**D6:** Chỉ áp (u/v)' khi v khác0; dùng P15 để sửa dấu âm quy tắc thương.
 
 ## THPT-TOP09-W04 · TOP09-O22
 
@@ -570,19 +531,6 @@ Thay \(x=0\), được \(f(0)=1,\ f'(0)=2,\ f''(0)=6\). Chúng lần lượt là
 
 Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
 
-
-**Đáp án:** D=ℝ; f'=2x/(1+x²)+2e^{2x}; f''=2(1−x²)/(1+x²)²+4e^{2x}; tại0 lần lượt 1,2,6.
-**Lời giải đầy đủ:** 1+x²≥1>0 nên f xác định toàn ℝ. Chain log cho 2x/(1+x²), chain mũ cho 2e^{2x}. Đạo hàm tiếp của 2x/(1+x²) theo thương là [2(1+x²)−4x²]/(1+x²)²=2(1−x²)/(1+x²)², mũ tiếp cho 4e^{2x}. Tại x=0, f(0)=ln1+e^0=1, f'(0)=2, f''(0)=2+4=6. f là giá trị, f' là độ dốc, f'' biến thiên độ dốc.
-**Rubric /7:**
-1. Kiểm miền ln(1+x²) (1đ)
-2. Chain của ln chính xác (1đ)
-3. Chain của e^{2x} chính xác (1đ)
-4. Lập đạo hàm lần hai của phân thức (1đ)
-5. Tính đạo hàm lần hai của mũ (1đ)
-6. Tính ba số 1,2,6 (1đ)
-7. Giải thích ba ý nghĩa không hoán đổi (1đ)
-**D6:** Khi đạo hàm 2x/(1+x²), dùng thương; f'' là đạo hàm f', không phải bình phương.
-
 ## THPT-TOP09-W05 · TOP09-O30
 
 item_id: THPT-TOP09-W05
@@ -608,19 +556,6 @@ content_version: 2
 **D6:** Gia tốc âm không đồng nghĩa vật chậm dần; xét dấu vận tốc cùng với gia tốc.
 
 Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho lỗi kéo theo.
-
-
-**Đáp án:** v=3(t−1)(t−3), a=6(t−2); v đổi dấu ở t=1,3; tốc độ giảm (0,1),(2,3), tăng (1,2),(3,4).
-**Lời giải đầy đủ:** v=s'=3t²−12t+9=3(t−1)(t−3), a=v'=6t−12=6(t−2). v>0 (0,1), v<0 (1,3), v>0 (3,4): đổi chiều tại t=1,3. a<0 (0,2), a>0 (2,4). Khi v·a<0 tốc độ |v| giảm: (0,1) và (2,3); khi v·a>0 tốc độ tăng: (1,2) và (3,4). Điểm t=2 có a=0 và t=1,3 có v=0 được xét riêng; không gọi mọi a<0 là chậm dần.
-**Rubric /7:**
-1. Tính v=s' (1đ)
-2. Phân tích v=3(t−1)(t−3) (1đ)
-3. Tính a=6(t−2) (1đ)
-4. Bảng dấu v đúng và đổi chiều (1đ)
-5. Bảng dấu a đúng (1đ)
-6. Khoảng tăng tốc độ đúng (1đ)
-7. Khoảng giảm tốc độ và lưu ý điểm biên đúng (1đ)
-**D6:** Tăng tốc là |v| tăng, không đồng nghĩa a>0; v/a cùng dấu mới tăng tốc độ khi v≠0.
 
 ## THPT-TOP09-P32 · TOP09-O32
 
