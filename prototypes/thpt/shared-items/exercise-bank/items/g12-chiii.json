@@ -2017,21 +2017,27 @@
   },
   {
     "item_id": "THPT-G12-B09-T01",
-    "content_version": "SOURCE_BLOB_4571bac678c36c4fb06d6a7fde45b86703f8ebce_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trên các nhóm [0;5), [5;10), [10;15) có f=(0,3,4), hãy chỉ ra lớp đầu có dữ liệu và R. Hãy thử trước khi mở lời giải.",
-    "answer_key": "Lớp đầu có dữ liệu [5;10); R=10.",
-    "worked_solution": "Lớp [0;5) có tần số 0, nên bỏ qua khi tìm hai nhóm ngoài cùng có dữ liệu. Cận dưới nhóm đầu là 5, cận trên nhóm cuối [10;15) là 15. Khoảng biến thiên của mẫu ghép nhóm R=15−5=10. Đây là khoảng theo cận nhóm, không khẳng định khoảng biến thiên chính xác của mẫu gốc.",
+    "content_version": "SGK-G12-CHIII-BANK-CANDIDATE-20261127-THPT-G12-B09-T01",
+    "stem": "Mẫu ghép nhóm có các lớp \\([0;5),[5;10),[10;15)\\) với tần số lần lượt 0, 3, 4. Xác định lớp đầu có dữ liệu và khoảng biến thiên R của mẫu ghép nhóm. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Lớp \\([5;10)\\); \\(R=10\\).",
+    "worked_solution": "Nhóm \\([0;5)\\) có tần số 0 nên không chứa dữ liệu. Nhóm đầu có dữ liệu là \\([5;10)\\), nhóm cuối là \\([10;15)\\). Khoảng biến thiên của mẫu ghép nhóm bằng \\(R=15-5=10\\). Không khẳng định đây là khoảng biến thiên chính xác của mẫu gốc.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIII-B09-O02"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Bỏ lớp có tần số bằng 0 ở đầu, lấy cận trên lớp cuối trừ cận dưới lớp đầu có dữ liệu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2048,25 +2054,50 @@
       "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lớp \\([0;5)\\); \\(R=15\\)."
+      },
+      {
+        "id": "B",
+        "text": "Lớp \\([5;10)\\); \\(R=10\\)."
+      },
+      {
+        "id": "C",
+        "text": "Lớp \\([5;10)\\); \\(R=5\\)."
+      },
+      {
+        "id": "D",
+        "text": "Lớp \\([10;15)\\); \\(R=5\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B09-T02",
-    "content_version": "SOURCE_BLOB_4571bac678c36c4fb06d6a7fde45b86703f8ebce_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Có f=(6,14,12,8) trên bốn lớp liền nhau. n bằng bao nhiêu, n/4 và 3n/4 rơi vào lớp nào?",
-    "answer_key": "n=40; n/4=10 thuộc lớp 2; 3n/4=30 thuộc lớp 3.",
-    "worked_solution": "Cộng các tần số: n=6+14+12+8=40. Tần số tích lũy lần lượt 6,20,32,40. Vì 6<10≤20, mốc n/4=10 thuộc lớp 2; vì 20<30≤32, mốc 3n/4=30 thuộc lớp 3. Chưa biết cận lớp nên chưa tính được giá trị Q₁,Q₃.",
+    "content_version": "SGK-G12-CHIII-BANK-CANDIDATE-20261127-THPT-G12-B09-T02",
+    "stem": "Bốn lớp liên tiếp có tần số lần lượt 6, 14, 12, 8. Tính tổng tần số n và xác định lớp chứa mỗi mốc \\(n/4,\\ 3n/4\\). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "n=40; mốc n/4 ở lớp 2; mốc 3n/4 ở lớp 3.",
+    "worked_solution": "Tổng \\(n=6+14+12+8=40\\). Tần số tích lũy lần lượt là 6, 20, 32, 40. Vì \\(6<10\\le20\\), mốc \\(n/4=10\\) thuộc lớp 2. Vì \\(20<30\\le32\\), mốc \\(3n/4=30\\) thuộc lớp 3. Chưa có cận lớp nên chưa tính được giá trị cụ thể của \\(Q_1,Q_3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIII-B09-O04"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính tổng tần số và tần số tích lũy để xác định lớp chứa mỗi mốc."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2088,25 +2119,50 @@
       "distinct_task_reason": "Same frequencies but separate Q1/Q3 items; source asks n and both positions in one block."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "n=40; cả hai mốc ở lớp 2."
+      },
+      {
+        "id": "B",
+        "text": "n=40; mốc n/4 ở lớp 1; mốc 3n/4 ở lớp 4."
+      },
+      {
+        "id": "C",
+        "text": "n=40; mốc n/4 ở lớp 2; mốc 3n/4 ở lớp 3."
+      },
+      {
+        "id": "D",
+        "text": "n=32; mốc n/4 ở lớp 2; mốc 3n/4 ở lớp 3."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B10-T01",
-    "content_version": "SOURCE_BLOB_32f4eda1cfd151592eef5a35921ad872c1f644c4_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai số cách trung bình lần lượt −3 và +3. Nếu cộng hai độ lệch trực tiếp, có thể thấy biến động không? Thử bình phương trước khi mở lời giải.",
-    "answer_key": "Không; tổng độ lệch bằng 0, tổng bình phương độ lệch bằng 18.",
-    "worked_solution": "Hai độ lệch trái dấu −3 và +3 triệt tiêu khi cộng, dù cả hai điểm đều cách trung bình 3 đơn vị. Bình phương trước khi cộng: (−3)²+3²=18. Kết quả 18 là tổng bình phương, chưa phải phương sai; nếu chỉ có hai quan sát này thì phương sai bằng 18/2=9.",
+    "content_version": "SGK-G12-CHIII-BANK-CANDIDATE-20261127-THPT-G12-B10-T01",
+    "stem": "Hai quan sát có độ lệch so với trung bình lần lượt −3 và +3. Tổng độ lệch có phản ánh mức phân tán không? Tính tổng bình phương độ lệch. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Không; tổng độ lệch bằng 0 nhưng tổng bình phương độ lệch bằng 18.",
+    "worked_solution": "Hai độ lệch \\(-3\\) và \\(+3\\) có tổng bằng 0, dù mỗi số cách trung bình 3 đơn vị. Tổng bình phương độ lệch là \\((-3)^2+3^2=18\\). Đây là tổng bình phương, chưa phải phương sai. Nếu mẫu chỉ có hai quan sát này thì phương sai bằng \\(18/2=9\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIII-B10-O02"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai độ lệch trái dấu triệt tiêu khi cộng; bình phương trước khi cộng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2123,6 +2179,25 @@
       "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; tổng độ lệch bằng 6."
+      },
+      {
+        "id": "B",
+        "text": "Không; tổng bình phương độ lệch bằng 0."
+      },
+      {
+        "id": "C",
+        "text": "Có; tổng độ lệch bằng 0 chứng tỏ hai số bằng trung bình."
+      },
+      {
+        "id": "D",
+        "text": "Không; tổng độ lệch bằng 0 nhưng tổng bình phương độ lệch bằng 18."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
