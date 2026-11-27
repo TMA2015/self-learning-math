@@ -9985,10 +9985,10 @@
   },
   {
     "item_id": "THPT-TOP06-KFT01",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT01",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT01",
     "stem": "Đổi \\(-150^\\circ\\) sang radian, rồi cho biết góc quay mang dấu gì.",
     "answer_key": "\\(-\\frac{5\\pi}{6}\\) radian; góc quay âm, thuận chiều kim đồng hồ.",
-    "worked_solution": "\\(-150\\cdot\\frac{\\pi}{180}=-\\frac{5\\pi}{6}\\) radian. Dấu âm cho biết chiều quay thuận kim đồng hồ. Nếu em làm mất dấu, hãy so vị trí cuối của \\(+90^\\circ\\) và \\(-90^\\circ\\) trên đường tròn.\n\n**Kiểm lỗi**\n\nNếu em đổi độ sang radian nhưng bỏ dấu quay hoặc thay góc ban đầu bằng góc đại diện mà quên số vòng, đọc lại **Kiến thức 1.1** rồi làm **Bài 1** (đổi độ sang radian, xác định góc phần tư) và **Bài 6** (góc âm và tia cuối) trong Luyện tập. Giữ nguyên góc quay gốc khi đề hỏi chuyển động đã thực hiện.",
+    "worked_solution": "\\(-150\\cdot\\frac{\\pi}{180}=-\\frac{5\\pi}{6}\\) radian. Dấu âm cho biết chiều quay thuận kim đồng hồ. Nếu em làm mất dấu, hãy so vị trí cuối của \\(+90^\\circ\\) và \\(-90^\\circ\\) trên đường tròn.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B01-DEG_RAD"
@@ -9997,11 +9997,17 @@
       "TOP06-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đổi độ sang radian bằng hệ số π/180, giữ dấu quay."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10013,14 +10019,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(5\\pi/6;\\text{góc dương}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(-5\\pi/3;\\text{góc âm}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(-5\\pi/6;\\text{ngược kim đồng hồ}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-\\frac{5\\pi}{6}\\) radian; góc quay âm, thuận chiều kim đồng hồ."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu em đổi độ sang radian nhưng bỏ dấu quay hoặc thay góc ban đầu bằng góc đại diện mà quên số vòng, đọc lại **Kiến thức 1.1** rồi làm **Bài 1** (đổi độ sang radian, xác định góc phần tư) và **Bài 8** (góc âm và tia cuối) trong Luyện tập. Giữ nguyên góc quay gốc khi đề hỏi chuyển động đã thực hiện."
   },
   {
     "item_id": "THPT-TOP06-KFT02",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT02",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT02",
     "stem": "\\(\\sin\\alpha=-\\frac35\\), \\(\\alpha\\) thuộc góc phần tư IV; \\(\\cos\\alpha\\) bằng bao nhiêu?",
     "answer_key": "\\(\\frac45\\).",
-    "worked_solution": "Dùng \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\), được \\(\\cos^2\\alpha=1-\\frac9{25}=\\frac{16}{25}\\). Góc phần tư IV có cos dương, nên \\(\\cos\\alpha=\\frac45\\).\n\nNếu ra \\(-\\frac45\\), xem lại trục hoành phía phải; làm lại Bài 2 và Bài 7 trong phần Luyện tập.",
+    "worked_solution": "Dùng \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\), được \\(\\cos^2\\alpha=1-\\frac9{25}=\\frac{16}{25}\\). Góc phần tư IV có cos dương, nên \\(\\cos\\alpha=\\frac45\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B01-TRIG_IDENTITIES",
@@ -10030,11 +10056,17 @@
       "TOP06-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng hệ thức bình phương và dấu côsin ở phần tư IV."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10046,14 +10078,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac45\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(-4/5\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(3/5\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-3/5\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu ra \\(-\\frac45\\), xem lại trục hoành phía phải; làm lại Bài 2 và Bài 9 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP06-KFT03",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT03",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT03",
     "stem": "Một điểm trên đường tròn bán kính 3 đơn vị độ dài quay một chiều qua góc \\(\\frac{3\\pi}{2}\\) radian. Tính độ dài cung điểm đã đi.",
     "answer_key": "\\(\\frac{9\\pi}{2}\\) đơn vị độ dài.",
-    "worked_solution": "Độ dài cung \\(s=r|\\theta|\\) với góc tính bằng radian. Thay \\(r=3,\\ \\theta=\\frac{3\\pi}{2}\\), được \\(s=\\frac{9\\pi}{2}\\) đơn vị độ dài.\n\nNếu nhân bán kính với số đo góc bằng độ trực tiếp, đổi \\(270^\\circ=\\frac{3\\pi}{2}\\) radian rồi tính lại. Hãy làm lại Bài 4 và Bài 8 trong phần Luyện tập.",
+    "worked_solution": "Độ dài cung \\(s=r|\\theta|\\) với góc tính bằng radian. Thay \\(r=3,\\ \\theta=\\frac{3\\pi}{2}\\), được \\(s=\\frac{9\\pi}{2}\\) đơn vị độ dài.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B01-ARC_LENGTH"
@@ -10062,11 +10114,17 @@
       "TOP06-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Nhân bán kính với trị tuyệt đối góc tính bằng radian."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10078,14 +10136,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(6\\pi\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{9\\pi}{2}\\) đơn vị độ dài."
+      },
+      {
+        "id": "C",
+        "text": "\\(3\\pi/2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(3\\pi\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu nhân bán kính với số đo góc bằng độ trực tiếp, đổi \\(270^\\circ=\\frac{3\\pi}{2}\\) radian rồi tính lại. Hãy làm lại Bài 4 và Bài 12 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP06-KFT04",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT04",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT04",
     "stem": "Với \\(x=\\frac{\\pi}{2}\\), \\(\\tan x\\) tồn tại không?",
     "answer_key": "Không xác định vì \\(\\cos\\frac\\pi2=0\\).",
-    "worked_solution": "Không, \\(\\cos\\left(\\frac{\\pi}{2}\\right)=0\\).\n\nGhi điều kiện trước khi áp dụng đẳng thức phân thức; làm lại Bài 10 và Bài 23 trong phần Luyện tập.",
+    "worked_solution": "Không, \\(\\cos\\left(\\frac{\\pi}{2}\\right)=0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B01-TRIG_IDENTITIES"
@@ -10094,11 +10172,17 @@
       "TOP06-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm mẫu côsin trước khi chia."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10110,14 +10194,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\text{có, bằng }1\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{có, bằng }-1\\)"
+      },
+      {
+        "id": "C",
+        "text": "Không xác định vì \\(\\cos\\frac\\pi2=0\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\text{có, bằng }0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ghi điều kiện trước khi áp dụng đẳng thức phân thức; làm lại Bài 5 và Bài 10 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP06-KFT05",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT05",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT05",
     "stem": "Tính và so sánh \\(\\sin(-\\frac\\pi3)\\) với \\(\\sin(\\frac\\pi3)\\).",
     "answer_key": "\\(\\sin(-\\frac\\pi3)=-\\frac{\\sqrt3}{2}<\\sin(\\frac\\pi3)=\\frac{\\sqrt3}{2}\\).",
-    "worked_solution": "Vì sin là hàm lẻ, \\(\\sin(-\\frac\\pi3)=-\\sin(\\frac\\pi3)=-\\frac{\\sqrt3}{2}\\), còn \\(\\sin(\\frac\\pi3)=\\frac{\\sqrt3}{2}>0\\). Do đó giá trị thứ nhất nhỏ hơn giá trị thứ hai.\n\nVẽ trục Ox và phản xạ trên đường tròn; làm lại Bài 20 và Bài 24 trong phần Luyện tập.",
+    "worked_solution": "Vì sin là hàm lẻ, \\(\\sin(-\\frac\\pi3)=-\\sin(\\frac\\pi3)=-\\frac{\\sqrt3}{2}\\), còn \\(\\sin(\\frac\\pi3)=\\frac{\\sqrt3}{2}>0\\). Do đó giá trị thứ nhất nhỏ hơn giá trị thứ hai.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B01-RELATED_ANGLES"
@@ -10126,11 +10230,17 @@
       "TOP06-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng tính lẻ của sin."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10142,11 +10252,31 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\sin(-\\pi/3)=\\sin(\\pi/3)=\\sqrt3/2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\sin(-\\pi/3)=\\sqrt3/2>\\sin(\\pi/3)=-\\sqrt3/2\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\sin(-\\pi/3)=-1/2<\\sin(\\pi/3)=1/2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\sin(-\\frac\\pi3)=-\\frac{\\sqrt3}{2}<\\sin(\\frac\\pi3)=\\frac{\\sqrt3}{2}\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Vẽ trục Ox và phản xạ trên đường tròn; làm lại Bài 6 và Bài 7 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP06-KFT07",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT07",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT07",
     "stem": "Không dùng máy tính, viết \\(\\sin^2 x-\\cos^2 x\\) thành một hàm của \\(2x\\). Sau đó dùng công thức tích thành tổng để viết \\(\\sin(3x)\\cos(2x)\\) thành tổng.",
     "answer_key": "\\(-\\cos(2x)\\); \\(\\frac12[\\sin(5x)+\\sin x]\\).",
     "worked_solution": "Từ \\(\\cos(2x)=\\cos^2 x-\\sin^2 x\\), đổi thứ tự hai số hạng cho \\(\\sin^2 x-\\cos^2 x=-\\cos(2x)\\). Kiểm tại \\(x=0\\): hai vế cùng bằng \\(-1\\).\n\nÁp dụng tích thành tổng với \\(a=3x,\\ b=2x\\), được \\(\\sin(3x)\\cos(2x)=\\frac12[\\sin(5x)+\\sin x]\\). Có thể nhân ngược công thức cộng của sin để tự kiểm. Nếu quên hệ số \\(\\frac12\\), hãy thử \\(x=\\frac{\\pi}{2}\\) để thấy vế trái bằng 1 nhưng tổng chưa chia bằng 2. Hãy làm lại Bài 17, Bài 18 và Bài 26 trong phần Luyện tập.",
@@ -10159,11 +10289,17 @@
       "TOP06-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng công thức nhân đôi và tích thành tổng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10175,14 +10311,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-\\cos(2x)\\); \\(\\frac12[\\sin(5x)+\\sin x]\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\cos2x;\\sin5x+\\sin x\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(-\\cos2x;\\sin5x+\\sin x\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(-\\cos2x;(\\sin5x-\\sin x)/2\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": ""
   },
   {
     "item_id": "THPT-TOP06-KFT08",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT08",
-    "stem": "Tìm miền xác định của \\(g(x)=\\frac{\\sqrt{2\\sin x-1}}{\\cos x}\\).",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT08",
+    "stem": "Tìm miền xác định của \\(g(x)=\\frac{\\sqrt{2\\sin x-1}}{\\cos x}\\). Trong các họ nghiệm hoặc điểm loại, \\(k\\in\\mathbb Z\\).",
     "answer_key": "\\(D=\\bigcup_{k\\in\\mathbb Z}([\\frac\\pi6+2k\\pi;\\frac\\pi2+2k\\pi)\\cup(\\frac\\pi2+2k\\pi;\\frac{5\\pi}6+2k\\pi])\\).",
-    "worked_solution": "Căn có nghĩa khi \\(\\sin x\\ge\\frac12\\), tức \\(x\\in[\\frac{\\pi}{6}+2k\\pi;\\frac{5\\pi}{6}+2k\\pi]\\) với \\(k\\in\\mathbb Z\\). Mẫu phải khác 0, nên trong mỗi khoảng trên phải loại \\(x=\\frac{\\pi}{2}+2k\\pi\\). Vì thế miền xác định là\n\n\\[\nD=\\bigcup_{k\\in\\mathbb Z}\\left([\\tfrac{\\pi}{6}+2k\\pi;\\tfrac{\\pi}{2}+2k\\pi)\\cup(\\tfrac{\\pi}{2}+2k\\pi;\\tfrac{5\\pi}{6}+2k\\pi]\\right).\n\\]\n\nHai đầu mút ngoài được nhận vì tử bằng 0 và mẫu khác 0.\n\nNếu chỉ kiểm điều kiện dưới căn, thử \\(x=\\frac{\\pi}{2}\\): căn có giá trị 1 nhưng mẫu bằng 0, nên phải loại. Nếu loại luôn hai đầu mút ngoài, thử \\(x=\\frac{\\pi}{6}\\): tử bằng 0 và mẫu khác 0, nên vẫn nhận. Hãy làm lại Bài 28 và Bài 39 trong phần Luyện tập.",
+    "worked_solution": "Căn có nghĩa khi \\(\\sin x\\ge\\frac12\\), tức \\(x\\in[\\frac{\\pi}{6}+2k\\pi;\\frac{5\\pi}{6}+2k\\pi]\\) với \\(k\\in\\mathbb Z\\). Mẫu phải khác 0, nên trong mỗi khoảng trên phải loại \\(x=\\frac{\\pi}{2}+2k\\pi\\). Vì thế miền xác định là\n\n\\[\nD=\\bigcup_{k\\in\\mathbb Z}\\left([\\tfrac{\\pi}{6}+2k\\pi;\\tfrac{\\pi}{2}+2k\\pi)\\cup(\\tfrac{\\pi}{2}+2k\\pi;\\tfrac{5\\pi}{6}+2k\\pi]\\right).\n\\]\n\nHai đầu mút ngoài được nhận vì tử bằng 0 và mẫu khác 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B03-DOMAIN_RANGE"
@@ -10191,11 +10347,17 @@
       "TOP06-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Lấy giao điều kiện dưới căn không âm với điều kiện mẫu khác 0."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10207,14 +10369,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(D=\\bigcup_{k\\in\\mathbb Z}((\\pi/6+2k\\pi;\\pi/2+2k\\pi)\\cup(\\pi/2+2k\\pi;5\\pi/6+2k\\pi))\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(D=\\bigcup_{k\\in\\mathbb Z}([\\frac\\pi6+2k\\pi;\\frac\\pi2+2k\\pi)\\cup(\\frac\\pi2+2k\\pi;\\frac{5\\pi}6+2k\\pi])\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(D=\\bigcup_{k\\in\\mathbb Z}[\\pi/6+2k\\pi;5\\pi/6+2k\\pi]\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(D=\\mathbb R\\setminus\\{\\pi/2+k\\pi\\mid k\\in\\mathbb Z\\}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu chỉ kiểm điều kiện dưới căn, thử \\(x=\\frac{\\pi}{2}\\): căn có giá trị 1 nhưng mẫu bằng 0, nên phải loại. Nếu loại luôn hai đầu mút ngoài, thử \\(x=\\frac{\\pi}{6}\\): tử bằng 0 và mẫu khác 0, nên vẫn nhận. Hãy làm lại Bài 28 và Bài 39 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP06-KFT09",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT09",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT09",
     "stem": "Chu kỳ cơ bản của \\(y=\\cos(4x)\\) là gì?",
     "answer_key": "\\(T=\\frac\\pi2\\).",
-    "worked_solution": "Chu kỳ dương cơ bản của \\(\\cos(ax)\\) với \\(a\\ne0\\) là \\(\\frac{2\\pi}{|a|}\\). Vì \\(a=4\\), ta có \\(T=\\frac\\pi2\\).\n\nNếu đo chu kỳ bằng cách nhìn một đỉnh, kiểm đỉnh tiếp theo và điều kiện trên mọi x. Hãy làm lại Bài 30 và Bài 40 trong phần Luyện tập.",
+    "worked_solution": "Chu kỳ dương cơ bản của \\(\\cos(ax)\\) với \\(a\\ne0\\) là \\(\\frac{2\\pi}{|a|}\\). Vì \\(a=4\\), ta có \\(T=\\frac\\pi2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B03-PERIOD"
@@ -10223,11 +10405,17 @@
       "TOP06-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Chia chu kỳ cơ bản của cos cho trị tuyệt đối hệ số của x."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10239,14 +10427,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\pi/4\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(4\\pi\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(T=\\frac\\pi2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(2\\pi\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu đo chu kỳ bằng cách nhìn một đỉnh, kiểm đỉnh tiếp theo và điều kiện trên mọi x. Hãy làm lại Bài 30 và Bài 42 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP06-KFT10",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT10",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT10",
     "stem": "\\(y=3\\cos(2x)+4\\) có giá trị lớn nhất, nhỏ nhất là bao nhiêu?",
     "answer_key": "GTLN 7; GTNN 1.",
-    "worked_solution": "Vì \\(-1\\le\\cos(2x)\\le1\\), suy ra \\(1\\le3\\cos(2x)+4\\le7\\). Hai cận đều đạt được: tại \\(x=0\\) hàm bằng 7; tại \\(x=\\frac\\pi2\\) hàm bằng 1. Vậy GTLN là 7 và GTNN là 1.\n\nNếu tính sai cận, kiểm hai giá trị của cos bằng 1 và −1. Làm lại Bài 33 (tập giá trị), Bài 41 (trục giữa, biên độ và chu kỳ) và Bài 34 (chu kỳ có pha) trong phần Luyện tập.",
+    "worked_solution": "Vì \\(-1\\le\\cos(2x)\\le1\\), suy ra \\(1\\le3\\cos(2x)+4\\le7\\). Hai cận đều đạt được: tại \\(x=0\\) hàm bằng 7; tại \\(x=\\frac\\pi2\\) hàm bằng 1. Vậy GTLN là 7 và GTNN là 1.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B03-COS_GRAPH",
@@ -10256,11 +10464,17 @@
       "TOP06-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét hai cận của côsin và các điểm đạt cận."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10272,14 +10486,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\max=4;\\min=-3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\max=7;\\min=-1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\max=3;\\min=-3\\)"
+      },
+      {
+        "id": "D",
+        "text": "GTLN 7; GTNN 1."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu tính sai cận, kiểm hai giá trị của cos bằng 1 và \\(-1\\). Làm lại Bài 33 (tập giá trị), Bài 40 (trục giữa, biên độ và chu kỳ) và Bài 34 (chu kỳ có pha) trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP06-KFT11",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT11",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT11",
     "stem": "\\(\\tan x\\) xác định tại \\(x=\\pi\\) không?",
     "answer_key": "Có, \\(\\tan\\pi=0\\).",
-    "worked_solution": "Có, \\(\\tan\\pi=0\\); \\(\\cot\\pi\\) mới không xác định.\n\nGhi bảng điểm loại trước khi nối hình; làm lại Bài 37, Bài 38 và Bài 42 trong phần Luyện tập.",
+    "worked_solution": "Có, \\(\\tan\\pi=0\\); \\(\\cot\\pi\\) mới không xác định.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B03-TAN_GRAPH"
@@ -10288,11 +10522,17 @@
       "TOP06-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm côsin tại góc đã cho."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10304,14 +10544,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, \\(\\tan\\pi=0\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{không, vì }\\sin\\pi=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\text{có, bằng }1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\text{không, vì }\\cos\\pi=0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Ghi bảng điểm loại trước khi nối hình; làm lại Bài 37, Bài 38 và Bài 41 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP06-KFT12",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT12",
-    "stem": "Giải \\(\\cos x=0\\) trên \\(\\mathbb R\\).",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT12",
+    "stem": "Giải \\(\\cos x=0\\) trên \\(\\mathbb R\\). Trong các họ nghiệm hoặc điểm loại, \\(k\\in\\mathbb Z\\).",
     "answer_key": "\\(x=\\frac\\pi2+k\\pi,\\ k\\in\\mathbb Z\\).",
-    "worked_solution": "Từ \\(\\cos x=0\\), ta có \\(x=\\frac{\\pi}{2}+2m\\pi\\) hoặc \\(x=-\\frac{\\pi}{2}+2m\\pi\\), với \\(m\\in\\mathbb Z\\). Họ thứ nhất ứng với \\(k=2m\\), họ thứ hai ứng với \\(k=2m-1\\) trong công thức \\(x=\\frac{\\pi}{2}+k\\pi\\). Mọi số nguyên \\(k\\) đều chẵn hoặc lẻ, nên hai họ gộp thành đúng một họ \\(x=\\frac{\\pi}{2}+k\\pi\\), \\(k\\in\\mathbb Z\\).\n\nNếu chỉ viết một nghiệm, quay thêm chu kỳ; nếu \\(\\lvert a\\rvert>1\\) thì vô nghiệm. Hãy làm lại Bài 44, Bài 45 và Bài 60 trong phần Luyện tập.",
+    "worked_solution": "Từ \\(\\cos x=0\\), ta có \\(x=\\frac{\\pi}{2}+2m\\pi\\) hoặc \\(x=-\\frac{\\pi}{2}+2m\\pi\\), với \\(m\\in\\mathbb Z\\). Họ thứ nhất ứng với \\(k=2m\\), họ thứ hai ứng với \\(k=2m-1\\) trong công thức \\(x=\\frac{\\pi}{2}+k\\pi\\). Mọi số nguyên \\(k\\) đều chẵn hoặc lẻ, nên hai họ gộp thành đúng một họ \\(x=\\frac{\\pi}{2}+k\\pi\\), \\(k\\in\\mathbb Z\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B04-COS_EQ"
@@ -10320,11 +10580,17 @@
       "TOP06-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm các góc có hoành độ bằng 0 trên đường tròn lượng giác."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10336,14 +10602,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=\\pi/4+k\\pi\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x=\\frac\\pi2+k\\pi,\\ k\\in\\mathbb Z\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x=k\\pi\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x=\\pi/2+2k\\pi\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu chỉ viết một nghiệm, quay thêm chu kỳ; nếu \\(\\lvert a\\rvert>1\\) thì vô nghiệm. Hãy làm lại Bài 43, Bài 44 và Bài 53 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP06-KFT13",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT13",
-    "stem": "Giải \\(\\tan(2x)=0\\) và \\(\\cot(2x)=0\\). Vì sao hai phương trình không có nghiệm chung?",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT13",
+    "stem": "Giải \\(\\tan(2x)=0\\) và \\(\\cot(2x)=0\\). Vì sao hai phương trình không có nghiệm chung? Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu. Trong các họ nghiệm hoặc điểm loại, \\(k\\in\\mathbb Z\\).",
     "answer_key": "Tang: \\(x=\\frac{k\\pi}{2}\\); côtang: \\(x=\\frac\\pi4+\\frac{k\\pi}{2}\\), \\(k\\in\\mathbb Z\\); không có nghiệm chung vì hai điều kiện xác định loại trừ nhau tại các nghiệm.",
-    "worked_solution": "Với tang, cần \\(\\cos(2x)\\ne0\\); tử số bằng 0 khi \\(2x=k\\pi\\), nên \\(x=\\frac{k\\pi}{2}\\). Với côtang, cần \\(\\sin(2x)\\ne0\\); tử số bằng 0 khi \\(2x=\\frac{\\pi}{2}+k\\pi\\), nên \\(x=\\frac{\\pi}{4}+\\frac{k\\pi}{2}\\), với \\(k\\in\\mathbb Z\\) trong cả hai họ. Mỗi họ đều thỏa điều kiện riêng, nhưng ở nghiệm của tang thì côtang không xác định và ngược lại.\n\nNếu viết cùng một họ cho cả hai phương trình, hãy đối chiếu hai mẫu số và hai đồ thị ở mục 3.4; làm lại Bài 46, Bài 47 và Bài 61 trong phần Luyện tập.",
+    "worked_solution": "Với tang, cần \\(\\cos(2x)\\ne0\\); tử số bằng 0 khi \\(2x=k\\pi\\), nên \\(x=\\frac{k\\pi}{2}\\). Với côtang, cần \\(\\sin(2x)\\ne0\\); tử số bằng 0 khi \\(2x=\\frac{\\pi}{2}+k\\pi\\), nên \\(x=\\frac{\\pi}{4}+\\frac{k\\pi}{2}\\), với \\(k\\in\\mathbb Z\\) trong cả hai họ. Mỗi họ đều thỏa điều kiện riêng, nhưng ở nghiệm của tang thì côtang không xác định và ngược lại.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B04-TAN_EQ",
@@ -10353,11 +10639,17 @@
       "TOP06-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Xét tử bằng 0 và mẫu khác 0 cho từng hàm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10369,14 +10661,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\text{tang: }x=\\pi/4+k\\pi/2;\\ \\text{cotang: }x=k\\pi/2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{tang: }x=k\\pi;\\ \\text{cotang: }x=\\pi/4+k\\pi\\)"
+      },
+      {
+        "id": "C",
+        "text": "Tang: \\(x=\\frac{k\\pi}{2}\\); côtang: \\(x=\\frac\\pi4+\\frac{k\\pi}{2}\\), \\(k\\in\\mathbb Z\\); không có nghiệm chung vì hai điều kiện xác định loại trừ nhau tại các nghiệm."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\text{tang: }x=k\\pi/2;\\ \\text{cotang: }x=k\\pi/2\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu viết cùng một họ cho cả hai phương trình, hãy đối chiếu hai mẫu số và hai đồ thị ở mục 3.4; làm lại Bài 45, Bài 46 và Bài 54 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP06-KFT14",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT14",
-    "stem": "Giải \\(2\\sin x\\cos x=0\\).",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT14",
+    "stem": "Giải \\(2\\sin x\\cos x=0\\). Trong các họ nghiệm hoặc điểm loại, \\(k\\in\\mathbb Z\\).",
     "answer_key": "\\(x=\\frac{k\\pi}{2},\\ k\\in\\mathbb Z\\).",
-    "worked_solution": "\\(x=\\frac{k\\pi}{2}\\), \\(k\\in\\mathbb Z\\); hoặc xét \\(\\sin x=0\\) cho \\(x=k\\pi\\), hoặc \\(\\cos x=0\\) cho \\(x=\\frac{\\pi}{2}+k\\pi\\).\n\nNếu định chia hai vế cho \\(\\sin x\\), hãy xét riêng trường hợp \\(\\sin x=0\\) trước để không mất nghiệm. Làm lại Bài 62 (phương trình phân thức cần lọc điểm mẫu bằng 0), rồi Bài 55 (điều kiện xác định của hai biểu thức tang) trong phần Luyện tập; không chia hoặc nhân với biểu thức có thể bằng 0 khi chưa xét điều kiện.",
+    "worked_solution": "\\(x=\\frac{k\\pi}{2}\\), \\(k\\in\\mathbb Z\\); hoặc xét \\(\\sin x=0\\) cho \\(x=k\\pi\\), hoặc \\(\\cos x=0\\) cho \\(x=\\frac{\\pi}{2}+k\\pi\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B04-TRANSFORM"
@@ -10385,11 +10697,17 @@
       "TOP06-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tách hai trường hợp tích bằng 0, không chia cho một thừa số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10401,14 +10719,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=k\\pi\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x=\\pi/2+k\\pi\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x=k\\pi/4\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x=\\frac{k\\pi}{2},\\ k\\in\\mathbb Z\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu định chia hai vế cho \\(\\sin x\\), hãy xét riêng trường hợp \\(\\sin x=0\\) trước để không mất nghiệm. Làm lại Bài 55 (phương trình phân thức cần lọc điểm mẫu bằng 0), rồi Bài 60 (điều kiện xác định của hai biểu thức tang) trong phần Luyện tập; không chia hoặc nhân với biểu thức có thể bằng 0 khi chưa xét điều kiện."
   },
   {
     "item_id": "THPT-TOP06-KFT15",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT15",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT15",
     "stem": "Giải \\(\\sin x=0\\) trên \\([0;2\\pi)\\).",
     "answer_key": "\\(S=\\{0;\\pi\\}\\).",
-    "worked_solution": "\\(x=0\\) hoặc \\(x=\\pi\\); loại \\(2\\pi\\).\n\nVẽ dãy nghiệm trên trục số và đánh dấu đầu mút; làm lại Bài 53, Bài 54 và Bài 63 trong phần Luyện tập.",
+    "worked_solution": "\\(x=0\\) hoặc \\(x=\\pi\\); loại \\(2\\pi\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B04-INTERVAL"
@@ -10417,11 +10755,17 @@
       "TOP06-O15"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Lọc các bội của π trong khoảng nửa kín đã cho."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10433,14 +10777,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\{0;\\pi\\}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{0;\\pi;2\\pi\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\{\\pi\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\{\\pi/2;3\\pi/2\\}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Vẽ dãy nghiệm trên trục số và đánh dấu đầu mút; làm lại Bài 50, Bài 51 và Bài 56 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP06-KFT16",
-    "content_version": "TOP06-BANK-CP73-20261126-KFT16",
+    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT16",
     "stem": "Một mô hình giả định mô tả độ cao \\(h(t)=4+0{,}8\\sin(\\frac{\\pi t}{8})\\) mét trong khoảng \\(0\\le t\\le16\\) giờ. Tìm chu kỳ của hàm theo công thức, tính \\(h(4)\\), và cho biết có được dùng mô hình này để khẳng định độ cao tại \\(t=20\\) giờ không.",
     "answer_key": "Chu kỳ của công thức 16 giờ; \\(h(4)=4{,}8\\) m; không được khẳng định độ cao tại giờ 20 ngoài miền mô hình.",
-    "worked_solution": "Với \\(\\omega=\\frac{\\pi}{8}\\ne0\\), chu kỳ của hàm sin là \\(T=\\frac{2\\pi}{\\frac{\\pi}{8}}=16\\) giờ. Tại \\(t=4\\), góc bằng \\(\\frac{\\pi}{2}\\), do đó \\(h(4)=4+0{,}8\\sin(\\frac{\\pi}{2})=4{,}8\\) m. Vì mô hình chỉ được giả thiết trên \\([0;16]\\), thời điểm \\(t=20\\) **ngoài miền đã cho**: không thể khẳng định độ cao thực tế lúc ấy từ công thức này, dù phép tính đại số vẫn thực hiện được.\n\n**Kiểm lỗi**\n\nNếu em quên hệ số \\(\\omega\\) khi tính chu kỳ, viết \\(\\omega T=2\\pi\\); nếu em áp dụng công thức ở mọi thời điểm chỉ vì hàm sin tuần hoàn, kiểm lại miền thời gian của **mô hình**, khác miền xác định của hàm sin. Đọc lại **Kiến thức 4.5**, làm **Bài 64** (giới hạn thời gian và chu kỳ) và **Bài 56** (lọc điều kiện trong bài toán lượng giác) ở Luyện tập.",
+    "worked_solution": "Với \\(\\omega=\\frac{\\pi}{8}\\ne0\\), chu kỳ của hàm sin là \\(T=\\frac{2\\pi}{\\frac{\\pi}{8}}=16\\) giờ. Tại \\(t=4\\), góc bằng \\(\\frac{\\pi}{2}\\), do đó \\(h(4)=4+0{,}8\\sin(\\frac{\\pi}{2})=4{,}8\\) m. Vì mô hình chỉ được giả thiết trên \\([0;16]\\), thời điểm \\(t=20\\) **ngoài miền đã cho**: không thể khẳng định độ cao thực tế lúc ấy từ công thức này, dù phép tính đại số vẫn thực hiện được.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B04-APPLICATION",
@@ -10450,11 +10814,17 @@
       "TOP06-O16"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Tìm chu kỳ theo hệ số của t rồi kiểm miền thời gian của mô hình."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10466,7 +10836,27 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(T=16;\\ h(4)=4{,}8;\\text{chắc chắn dùng được tại }20\\text{ giờ}\\)"
+      },
+      {
+        "id": "B",
+        "text": "Chu kỳ của công thức 16 giờ; \\(h(4)=4{,}8\\) m; không được khẳng định độ cao tại giờ 20 ngoài miền mô hình."
+      },
+      {
+        "id": "C",
+        "text": "\\(T=8;\\ h(4)=4{,}8;\\text{ngoài miền không khẳng định}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(T=16;\\ h(4)=4;\\text{ngoài miền không khẳng định}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu em quên hệ số \\(\\omega\\) khi tính chu kỳ, viết \\(\\omega T=2\\pi\\); nếu em áp dụng công thức ở mọi thời điểm chỉ vì hàm sin tuần hoàn, kiểm lại miền thời gian của **mô hình**, khác miền xác định của hàm sin. Đọc lại **Kiến thức 4.5**, làm **Bài 64** (giới hạn thời gian và chu kỳ) và **Bài 61** (lọc điều kiện trong bài toán lượng giác) ở Luyện tập."
   },
   {
     "item_id": "THPT-TOP07-KFT01",
