@@ -32,7 +32,7 @@
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-C02",
-    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "content_version": "CD20-BANK-20261127-THPT-G11-CHVIII-B28-C02",
     "stem": "Với \\(\\Omega=\\{1;2;3;4;5\\}\\), viết biến cố A: “chọn được số nguyên tố”.",
     "answer_key": "\\(A=\\{2;3;5\\}\\).",
     "worked_solution": "Số nguyên tố là số nguyên dương lớn hơn 1 có đúng hai ước dương. Trong không gian mẫu, 2, 3, 5 thỏa điều kiện; 1 và 4 không thỏa. Vậy biến cố gồm ba kết quả trên.",
@@ -40,13 +40,17 @@
       "G11-B28-EVENT_MODEL"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Số nguyên tố có đúng hai ước dương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -58,8 +62,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Số 1 không phải nguyên tố. Ôn CĐ20 mục 1.1; luyện THPT-TOP20-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Số 1 không phải nguyên tố. Ôn CĐ20 mục 1.1; luyện THPT-TOP20-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\{2;3;5\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\{1;2;3;5\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\{1;3;5\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\{2;4\\}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-C03",
@@ -218,7 +241,7 @@
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-P01",
-    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "content_version": "CD20-BANK-20261127-THPT-G11-CHVIII-B28-P01",
     "stem": "Chọn đều ngẫu nhiên một thẻ đánh số từ 1 đến 8. A: “bội của 2”, B: “bội của 3”. Viết \\(A\\cup B\\).",
     "answer_key": "\\(\\{2;3;4;6;8\\}\\).",
     "worked_solution": "Liệt kê \\(A=\\{2;4;6;8\\}\\), \\(B=\\{3;6\\}\\). Hợp gồm mọi phần tử thuộc ít nhất một tập; 6 chỉ xuất hiện một lần. Vậy \\(A\\cup B=\\{2;3;4;6;8\\}\\).",
@@ -226,13 +249,17 @@
       "G11-B28-UNION"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Liệt kê bội của 2 và 3 trong 1–8."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -244,8 +271,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Số 6 chỉ đếm một lần trong hợp. Ôn CĐ20 mục 2.1; luyện THPT-TOP20-P11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Số 6 chỉ đếm một lần trong hợp. Ôn CĐ20 mục 2.1; luyện THPT-TOP20-P11.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\{6\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\{2;3;4;6;8\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\{2;4;6;8\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\{3;6\\}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-P02",
@@ -311,7 +357,7 @@
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-P04",
-    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "content_version": "CD20-BANK-20261127-THPT-G11-CHVIII-B28-P04",
     "stem": "A và B xung khắc, \\(P(A)=\\frac14\\) và \\(P(B)=\\frac25\\). Chúng có thể độc lập không?",
     "answer_key": "Không.",
     "worked_solution": "Xung khắc nghĩa là \\(A\\cap B=\\varnothing\\), nên \\(P(A\\cap B)=0\\). Trong khi đó \\(P(A)P(B)=\\frac14\\cdot\\frac25=\\frac1{10}>0\\). Hai giá trị khác nhau nên không độc lập.",
@@ -319,13 +365,17 @@
       "G11-B28-DISJOINT"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Xung khắc cho P(giao)=0; so với tích."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -337,8 +387,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Hai xác suất dương có tích dương, không bằng 0. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Hai xác suất dương có tích dương, không bằng 0. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, vì xung khắc nghĩa là độc lập."
+      },
+      {
+        "id": "B",
+        "text": "Có, vì tổng xác suất nhỏ hơn 1."
+      },
+      {
+        "id": "C",
+        "text": "Không, vì \\(P(A\\cap B)=0\\) còn \\(P(A)P(B)>0\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì \\(P(A)+P(B)>1\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-P05",
@@ -621,7 +690,7 @@
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P02",
-    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "content_version": "CD20-BANK-20261127-THPT-G11-CHVIII-B29-P02",
     "stem": "A, B xung khắc với \\(P(A)=0{,}45\\), \\(P(B)=0{,}65\\). Dữ liệu có hợp lí không?",
     "answer_key": "Không.",
     "worked_solution": "Xung khắc cho xác suất giao bằng 0, nên \\(P(A\\cup B)=0{,}45+0{,}65=1{,}10\\). Xác suất phải thuộc \\([0;1]\\), vì vậy dữ liệu không thể đồng thời đúng.",
@@ -629,13 +698,17 @@
       "G11-B29-ADDITION_DISJOINT"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Xung khắc thì xác suất hợp bằng tổng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -647,8 +720,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tổng lớn hơn 1 cho thấy dữ liệu mâu thuẫn. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Tổng lớn hơn 1 cho thấy dữ liệu mâu thuẫn. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P15.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; từng xác suất đều nhỏ hơn 1."
+      },
+      {
+        "id": "B",
+        "text": "Có; hai biến cố xung khắc nên tổng có thể lớn hơn 1."
+      },
+      {
+        "id": "C",
+        "text": "Không; hai xác suất phải bằng nhau."
+      },
+      {
+        "id": "D",
+        "text": "Không; tổng hai xác suất xung khắc vượt 1."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P03",
@@ -683,7 +775,7 @@
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P04",
-    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "content_version": "CD20-BANK-20261127-THPT-G11-CHVIII-B29-P04",
     "stem": "Trong 100 người, 40 thích A, 35 thích B và 15 thích cả hai. Có bao nhiêu người không thích loại nào trong hai loại A, B?",
     "answer_key": "40 người.",
     "worked_solution": "Số người thích ít nhất một loại là \\(40+35-15=60\\). Người không thích loại nào nằm ngoài hợp, nên có \\(100-60=40\\) người. Không nhầm với người không thích đồng thời cả hai.",
@@ -691,13 +783,17 @@
       "G11-B29-VENN_COUNTS"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Tính số người thuộc hợp, rồi lấy tổng trừ hợp."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -709,8 +805,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không thích loại nào nghĩa là ở ngoài hợp, không phải chỉ ở ngoài giao. Ôn CĐ20 mục 2.3 (quy tắc cộng) và mục 1.3 (biến cố đối); luyện THPT-TOP20-P14."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không thích loại nào nghĩa là ở ngoài hợp, không phải chỉ ở ngoài giao. Ôn CĐ20 mục 2.3 (quy tắc cộng) và mục 1.3 (biến cố đối); luyện THPT-TOP20-P14.",
+    "options": [
+      {
+        "id": "A",
+        "text": "40 người."
+      },
+      {
+        "id": "B",
+        "text": "60 người."
+      },
+      {
+        "id": "C",
+        "text": "25 người."
+      },
+      {
+        "id": "D",
+        "text": "15 người."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P05",
@@ -777,7 +892,7 @@
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-C01",
-    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "content_version": "CD20-BANK-20261127-THPT-G11-CHVIII-B30-C01",
     "stem": "A, B độc lập, \\(P(A)=\\frac3{10}\\), \\(P(B)=\\frac25\\). Tính \\(P(A\\cap B)\\).",
     "answer_key": "\\(\\frac3{25}\\).",
     "worked_solution": "Vì hai biến cố độc lập nên quy tắc nhân cho \\(P(A\\cap B)=P(A)P(B)=\\frac3{10}\\cdot\\frac25=\\frac6{50}=\\frac3{25}\\).",
@@ -785,13 +900,17 @@
       "G11-B30-MULTIPLY_INDEPENDENT"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Đã có giả thiết độc lập; nhân hai xác suất."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -803,8 +922,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không cộng khi hỏi cả hai xảy ra. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không cộng khi hỏi cả hai xảy ra. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac7{10}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac3{25}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac3{10}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac25\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-C02",
@@ -1151,7 +1289,7 @@
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-P07",
-    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "content_version": "CD20-BANK-20261127-THPT-G11-CHVIII-B30-P07",
     "stem": "Ba phép thử độc lập đồng thời có xác suất lỗi lần lượt \\(\\frac12,\\frac13,\\frac14\\). Tính xác suất ít nhất một lần không lỗi.",
     "answer_key": "\\(\\frac{23}{24}\\).",
     "worked_solution": "Biến cố đối là cả ba lần đều lỗi. Vì độc lập đồng thời, xác suất đó bằng \\(\\frac12\\cdot\\frac13\\cdot\\frac14=\\frac1{24}\\). Vậy xác suất có ít nhất một lần không lỗi là \\(1-\\frac1{24}=\\frac{23}{24}\\).",
@@ -1159,13 +1297,17 @@
       "G11-B30-AT_LEAST_ONE"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Bù là cả ba phép thử đều lỗi."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1177,12 +1319,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nhân ba xác suất lỗi rồi trừ khỏi 1. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nhân ba xác suất lỗi rồi trừ khỏi 1. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac1{24}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac34\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{23}{24}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac18\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVIII-CHVIII-P01",
-    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "content_version": "CD20-BANK-20261127-THPT-G11-CHVIII-CHVIII-P01",
     "stem": "Hai biến cố độc lập có \\(P(A)=\\frac25\\), \\(P(B)=\\frac14\\). Tính \\(P(A\\cap B)\\), \\(P(A\\cup B)\\) và chỉ ra công thức nào dùng trước.",
     "answer_key": "\\(P(A\\cap B)=\\frac1{10}\\); \\(P(A\\cup B)=\\frac{11}{20}\\).",
     "worked_solution": "Trước hết dùng quy tắc nhân vì A, B độc lập: \\(P(A\\cap B)=\\frac25\\cdot\\frac14=\\frac1{10}\\). Sau đó dùng quy tắc cộng có trừ giao: \\(P(A\\cup B)=\\frac25+\\frac14-\\frac1{10}=\\frac{8+5-2}{20}=\\frac{11}{20}\\). Kết quả hợp không nhỏ hơn từng xác suất riêng.",
@@ -1190,13 +1351,17 @@
       "G11-CHVIII-INTEGRATED"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Dùng nhân tính giao trước, rồi cộng trừ giao."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1208,8 +1373,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Không nhầm giao với hợp; xác suất hợp không nhỏ hơn từng xác suất riêng. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P17."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Không nhầm giao với hợp; xác suất hợp không nhỏ hơn từng xác suất riêng. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P17.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giao \\(\\frac{11}{20}\\); hợp \\(\\frac1{10}\\)."
+      },
+      {
+        "id": "B",
+        "text": "Giao \\(\\frac1{10}\\); hợp \\(\\frac{13}{20}\\)."
+      },
+      {
+        "id": "C",
+        "text": "Giao \\(0\\); hợp \\(\\frac{13}{20}\\)."
+      },
+      {
+        "id": "D",
+        "text": "Giao \\(\\frac1{10}\\); hợp \\(\\frac{11}{20}\\). Dùng quy tắc nhân trước."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-B28-KFT01",
