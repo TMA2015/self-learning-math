@@ -529,16 +529,17 @@
   {
     "item_id": "THPT-G10-B25-P04",
     "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
-    "stem": "Tìm hệ số của \\(x^4\\) trong \\((x-2)^5\\).",
-    "answer_key": "\\(-10\\).",
-    "worked_solution": "Để có \\(x^4\\) trong \\((x-2)^5\\), chọn x từ đúng 4 nhân tử và \\(-2\\) từ nhân tử còn lại. Có \\(C_5^1=5\\) cách chọn vị trí lấy \\(-2\\). Số hạng là \\(5\\cdot(-2)x^4=-10x^4\\), nên hệ số bằng \\(-10\\).",
+    "stem": "Cho \\(P(x)=(x-a)^5\\), với a là số thực. Biết hệ số của \\(x^4\\) trong khai triển bằng \\(-15\\). (a) Tìm a mà không khai triển toàn bộ. (b) Với a vừa tìm, tính hệ số của \\(x^3\\).",
+    "answer_key": "\\(a=3\\); hệ số của \\(x^3\\) là \\(90\\).",
+    "worked_solution": "Để tạo số hạng chứa \\(x^4\\) từ năm nhân tử \\(x-a\\), chọn x từ bốn nhân tử và \\(-a\\) từ một nhân tử. Có \\(C_5^1=5\\) cách chọn vị trí của \\(-a\\); vì vậy hệ số của \\(x^4\\) là \\(-5a\\). Theo đề, \\(-5a=-15\\), suy ra \\(a=3\\). Để tạo \\(x^3\\), phải chọn x từ ba nhân tử và \\(-3\\) từ hai nhân tử; có \\(C_5^2=10\\) cách. Hệ số là \\(10\\cdot(-3)^2=90\\). Dấu của hệ số thứ hai dương vì số lần chọn \\(-3\\) là hai. Không cần khai triển các số hạng khác.",
     "skill_ids": [
       "BINOMIAL_SECOND_HIGHEST"
     ],
     "problem_type_id": null,
     "difficulty": "BASE",
     "hints": [
-      "Bậc 4 chỉ thiếu một thừa số x."
+      "Bậc 4 nghĩa là chọn hằng số từ đúng một nhân tử.",
+      "Sau khi tìm a, đếm số cách chọn đúng hai nhân tử cho hằng số."
     ],
     "rubric": null,
     "interaction": {
@@ -555,7 +556,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn bốn lần \\(-2\\), đếm số lần chọn x để có đúng \\(x^4\\). Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY10."
+    "remediation": "Xác định số lần chọn x để tạo đúng bậc, rồi tính hệ số kèm dấu của hằng số; không nhầm hệ số với toàn bộ số hạng. Ôn Bài 25; luyện THPT-G10-CHVIII-TRY10."
   },
   {
     "item_id": "THPT-G10-B23-P05",
@@ -622,16 +623,17 @@
   {
     "item_id": "THPT-G10-B24-P05",
     "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
-    "stem": "Chọn nhóm 3 người từ 6 người khác nhau, trong đó có hai người được chỉ định A và B. Có bao nhiêu nhóm chứa ít nhất một trong hai người A, B?",
-    "answer_key": "\\(16\\) nhóm.",
-    "worked_solution": "Tổng số nhóm 3 người là \\(C_6^3=20\\). Nhóm không chứa A và cũng không chứa B được chọn từ 4 người còn lại, có \\(C_4^3=4\\) nhóm. Bỏ đúng những nhóm đó thì còn tất cả nhóm chứa A hoặc B hoặc cả hai. Vậy có \\(20-4=16\\) nhóm.",
+    "stem": "Chọn nhóm 3 người từ 6 người khác nhau, trong đó có A và B. (a) Tính số nhóm chứa đúng một trong hai người A, B và số nhóm chứa cả hai. (b) Từ đó tính số nhóm chứa ít nhất một trong hai người. Kiểm lại bằng cách đếm phần bù. (c) Một bạn cộng số nhóm chứa A với số nhóm chứa B. Kết quả bạn ấy lớn hơn kết quả đúng bao nhiêu? Giải thích.",
+    "answer_key": "(a) Đúng một: 12 nhóm; cả hai: 4 nhóm. (b) Ít nhất một: 16 nhóm. (c) Lớn hơn 4 nhóm, do đếm mỗi nhóm chứa cả A và B hai lần.",
+    "worked_solution": "Nếu nhóm chứa đúng một trong A, B, có 2 cách chọn người được lấy và \\(C_4^2=6\\) cách chọn hai người còn lại từ 4 người khác A, B. Vậy có \\(2\\cdot6=12\\) nhóm. Nếu chứa cả hai, chỉ cần chọn thêm một trong 4 người còn lại, có 4 nhóm. Hai trường hợp không trùng nhau và bao quát mọi nhóm chứa ít nhất một trong A, B, nên số cần tìm là \\(12+4=16\\). Kiểm bằng phần bù: tổng số nhóm là \\(C_6^3=20\\); không chứa A cũng không chứa B có \\(C_4^3=4\\) nhóm, nên \\(20-4=16\\). Nếu đếm nhóm chứa A riêng, được \\(C_5^2=10\\); đếm nhóm chứa B riêng cũng được 10. Cộng thành 20, nhưng mỗi nhóm chứa cả hai đã được đếm hai lần. Có 4 nhóm như vậy, nên phải trừ 4 để được 16.",
     "skill_ids": [
       "COMBINATION_AT_LEAST_ONE"
     ],
     "problem_type_id": null,
     "difficulty": "ADVANCED",
     "hints": [
-      "Đếm bằng phần bù: lấy tất cả nhóm trừ các nhóm không chứa A và cũng không chứa B."
+      "Tách ít nhất một thành đúng một và cả hai; hai trường hợp không trùng nhau.",
+      "Thử đếm tất cả nhóm rồi bỏ nhóm không chứa A cũng không chứa B."
     ],
     "rubric": null,
     "interaction": {
@@ -648,7 +650,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng số nhóm chứa A và chứa B, nhóm chứa cả hai bị đếm hai lần; dùng phần bù. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY07."
+    "remediation": "Phân biệt đúng một, ít nhất một và cả hai. Chỉ cộng trực tiếp khi các trường hợp rời nhau; nhóm chứa cả hai có thể bị đếm lặp. Ôn Bài 24 phần kiểm lỗi; luyện THPT-G10-CHVIII-TRY07."
   },
   {
     "item_id": "THPT-G10-B24-P06",
