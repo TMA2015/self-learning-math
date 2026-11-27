@@ -9723,7 +9723,7 @@
   },
   {
     "item_id": "THPT-TOP22-T01",
-    "content_version": "TOP22-BANK-CP69-20261126-T01",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T01",
     "stem": "Giá trị thật 9,68 mm ghi 9,7 mm: tìm sai số tuyệt đối và phần trăm tương đối.",
     "answer_key": "Sai số tuyệt đối \\(0{,}02\\) mm; sai số tương đối \\(\\approx0{,}206\\%\\).",
     "worked_solution": "Sai số tuyệt đối \\(\\Delta=|9{,}68-9{,}7|=0{,}02\\) mm. Theo quy ước SGK đang dùng, sai số tương đối của số gần đúng \\(a=9{,}7\\ne0\\) là \\(\\delta_a=\\frac{\\Delta}{|a|}\\). Đổi sang phần trăm: \\(\\frac{0{,}02}{9{,}7}\\cdot100\\%\\approx0{,}206\\%\\).\n\n**Kiểm lỗi**\n\nĐừng lấy độ chính xác làm sai số thật; kiểm đơn vị và việc nhân 100 để ra phần trăm. Đọc lại **Kiến thức 1.1**, rồi tự làm **Bài luyện 2**, **Bài luyện 3**, **Bài luyện 4** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -9737,11 +9737,17 @@
       "G10-B12-REL_ERROR"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính hiệu tuyệt đối trước, chia cho trị tuyệt đối của số gần đúng rồi đổi ra phần trăm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9753,15 +9759,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT01_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T01",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0,02 mm; khoảng 0,206%"
+      },
+      {
+        "id": "B",
+        "text": "0,02 mm; 2%"
+      },
+      {
+        "id": "C",
+        "text": "0,2 mm; khoảng 2,06%"
+      },
+      {
+        "id": "D",
+        "text": "0,02 mm; khoảng 0,00206%"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP22-T02",
-    "content_version": "TOP22-BANK-CP69-20261126-T02",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T02",
     "stem": "Mẫu 1,1,4,6,8 có trung bình và mốt nào?",
     "answer_key": "Trung bình 4; mốt 1.",
     "worked_solution": "Trung bình bằng \\(\\frac{20}{5}=4\\). Mốt bằng 1 vì 1 xuất hiện hai lần, nhiều nhất. Trung vị bằng 4, khác mốt.\n\n**Kiểm lỗi**\n\nNếu nhầm mốt với trung vị, lập bảng số lần xuất hiện trước khi kết luận. Đọc lại **Kiến thức 1.2**, rồi tự làm **Bài luyện 11**, **Bài luyện 13** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -9775,11 +9800,17 @@
       "G10-B13-MODE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính tổng chia cho số quan sát; đếm số lần xuất hiện."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9791,15 +9822,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT02_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T02",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trung bình 4; mốt 4"
+      },
+      {
+        "id": "B",
+        "text": "Trung bình 4; mốt 1"
+      },
+      {
+        "id": "C",
+        "text": "Trung bình 5; mốt 1"
+      },
+      {
+        "id": "D",
+        "text": "Trung bình 1; mốt 4"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP22-T03",
-    "content_version": "TOP22-BANK-CP69-20261126-T03",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T03",
     "stem": "Tìm \\(M_e,Q_1,Q_3\\) của mẫu \\(8,2,12,4,10,6\\). Hãy sắp xếp mẫu trước khi tính.",
     "answer_key": "\\(M_e=7,Q_1=4,Q_3=10\\).",
     "worked_solution": "Sắp tăng dần: \\(2,4,6,8,10,12\\). Có 6 số: \\(M_e=\\frac{6+8}{2}=7\\); nửa dưới \\(2,4,6\\) có \\(Q_1=4\\), nửa trên \\(8,10,12\\) có \\(Q_3=10\\).\n\n**Kiểm lỗi**\n\nĐánh dấu vị trí giữa và chia hai nửa sau khi đã sắp; không đoán từ thứ tự đề liệt kê. Đọc lại **Kiến thức 1.3**, rồi tự làm **Bài luyện 12**, **Bài luyện 15** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -9813,11 +9863,17 @@
       "G10-B13-QUARTILES"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Sắp tăng dần, chia thành hai nửa bằng nhau rồi lấy trung vị mỗi nửa."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9829,15 +9885,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT03_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T03",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "7; 2; 12"
+      },
+      {
+        "id": "B",
+        "text": "6; 4; 10"
+      },
+      {
+        "id": "C",
+        "text": "7; 4; 10"
+      },
+      {
+        "id": "D",
+        "text": "7; 6; 8"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP22-T04",
-    "content_version": "TOP22-BANK-CP69-20261126-T04",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T04",
     "stem": "Mẫu 2,3,4,5,6,7,25 có IQR và hàng rào trên bao nhiêu?",
     "answer_key": "\\(\\mathrm{IQR}=4\\); hàng rào trên 13.",
     "worked_solution": "Mẫu đã sắp tăng dần có 7 số, trung vị là 5. Bỏ trung vị khi chia hai nửa: nửa dưới \\((2;3;4)\\) có \\(Q_1=3\\), nửa trên \\((6;7;25)\\) có \\(Q_3=7\\). Do đó \\(\\mathrm{IQR}=7-3=4\\). Hàng rào trên là \\(Q_3+1{,}5\\cdot\\mathrm{IQR}=13\\); giá trị 25 vượt hàng rào.\n\n**Kiểm lỗi**\n\nĐọc đúng \\(Q_1,Q_3\\) trước khi gán nhãn ngoại lệ; đừng loại bỏ điểm dữ liệu chỉ vì trông khác. Đọc lại **Kiến thức 1.4**, rồi tự làm **Bài luyện 21**, **Bài luyện 31** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -9851,11 +9926,17 @@
       "G10-B14-OUTLIERS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Với cỡ mẫu lẻ, bỏ trung vị khi chia hai nửa; cộng 1,5 lần IQR vào Q3."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9867,15 +9948,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT04_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T04",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4; 11"
+      },
+      {
+        "id": "B",
+        "text": "6; 16"
+      },
+      {
+        "id": "C",
+        "text": "4; 25"
+      },
+      {
+        "id": "D",
+        "text": "4; 13"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP22-T05",
-    "content_version": "TOP22-BANK-CP69-20261126-T05",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T05",
     "stem": "So sánh phương sai của hai mẫu \\(A=(4;5;6)\\) và \\(B=(2;5;8)\\). So với hai mẫu ban đầu \\(A_0=(3;4;5)\\), \\(B_0=(1;4;7)\\), vì sao phương sai của mỗi mẫu không đổi?",
     "answer_key": "\\(s_A^2=\\frac23,s_B^2=6\\); A ít phân tán hơn. Phương sai không đổi khi cộng cùng một hằng số vào mọi giá trị.",
     "worked_solution": "Hai mẫu cùng trung bình 5. Theo phương sai mô tả chia cho n, \\(s_A^2=\\frac{(4-5)^2+0^2+(6-5)^2}{3}=\\frac23\\); \\(s_B^2=\\frac{(2-5)^2+0^2+(8-5)^2}{3}=6\\). Vì \\(\\frac23<6\\), A ít phân tán quanh trung bình hơn. So với \\(A_0,B_0\\), mọi giá trị và trung bình đều tăng 1, nên từng độ lệch so với trung bình giữ nguyên. Vì vậy phương sai không đổi.\n\n**Kiểm lỗi**\n\nLập bảng x−x̄ rồi bình phương và chia đúng n; kiểm phương sai không âm. Đọc lại **Kiến thức 1.5**, rồi tự làm **Bài luyện 22**, **Bài luyện 23**, **Bài luyện 32** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -9889,11 +9989,17 @@
       "G10-B14-COMPARISON"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính độ lệch từng giá trị khỏi trung bình; khi cộng 1, trung bình cũng tăng 1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9905,15 +10011,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT05_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T05",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "A: \\(\\frac{2}{3}\\), B: 6; A ít phân tán hơn; cộng hằng số không đổi độ lệch khỏi trung bình"
+      },
+      {
+        "id": "B",
+        "text": "A: \\(\\frac{2}{3}\\), B: 6; A ít phân tán hơn; cộng hằng số làm tăng phương sai"
+      },
+      {
+        "id": "C",
+        "text": "A: 1, B: 9; A ít phân tán hơn; phương sai không đổi"
+      },
+      {
+        "id": "D",
+        "text": "A: 6, B: \\(\\frac{2}{3}\\); B ít phân tán hơn; phương sai không đổi"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP22-T06",
-    "content_version": "TOP22-BANK-CP69-20261126-T06",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T06",
     "stem": "Tần số của các nhóm \\([0;10)\\), \\([10;20)\\), \\([20;30)\\) với dữ liệu 3,10,10,20,29?",
     "answer_key": "Tần số lần lượt 1, 2, 2.",
     "worked_solution": "1,2,2; tổng 5. Hai số 10 thuộc nhóm thứ hai.\n\n**Kiểm lỗi**\n\nKhoanh từng quan sát theo biên trái đóng–phải mở, rồi đối chiếu tổng tần số với n. Đọc lại **Kiến thức 2.1**, rồi tự làm **Bài luyện 38**, **Bài luyện 40**, **Bài luyện 44** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -9927,11 +10052,17 @@
       "G11-B08-CLASS-BOUNDARIES"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Số nằm ở cận phải thuộc nhóm kế tiếp."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9943,15 +10074,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT06_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T06",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3; 1; 1"
+      },
+      {
+        "id": "B",
+        "text": "1; 2; 2"
+      },
+      {
+        "id": "C",
+        "text": "1; 3; 1"
+      },
+      {
+        "id": "D",
+        "text": "2; 2; 1"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP22-T07",
-    "content_version": "TOP22-BANK-CP69-20261126-T07",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T07",
     "stem": "Cho bảng ghép nhóm sau. Ước lượng trung bình và tính tần số tích lũy.\n\n| Khoảng | Tần số |\n|---|---:|\n| [0;10) | 1 |\n| [10;20) | 1 |\n| [20;30) | 2 |",
     "answer_key": "Trung bình ghép nhóm ước lượng \\(17{,}5\\); tần số tích lũy 1, 2, 4.",
     "worked_solution": "| Khoảng | Trung điểm | Tần số | Tần số tích lũy |\n|---|---:|---:|---:|\n| [0;10) | 5 | 1 | 1 |\n| [10;20) | 15 | 1 | 2 |\n| [20;30) | 25 | 2 | 4 |\n\nTrung bình ước lượng là \\(\\frac{5+15+2\\cdot25}{4}=17{,}5\\). Nếu bỏ trọng số và lấy trung bình ba trung điểm thì được 15, không đúng với bảng này.\n\n**Kiểm lỗi**\n\nKhông lấy trung bình ba trung điểm nếu nhóm có tần số khác nhau. Đọc lại **Kiến thức 2.2**, rồi tự làm **Bài luyện 47**, **Bài luyện 48**, **Bài luyện 51** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -9965,11 +10115,17 @@
       "G11-B09-CUMULATIVE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng trung điểm 5, 15, 25; tích lũy là tổng tần số từ nhóm đầu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -9981,15 +10137,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT07_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T07",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "15; 1, 1, 2"
+      },
+      {
+        "id": "B",
+        "text": "17,5; 1, 1, 2"
+      },
+      {
+        "id": "C",
+        "text": "17,5; 1, 2, 4"
+      },
+      {
+        "id": "D",
+        "text": "20; 1, 2, 4"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP22-T08",
-    "content_version": "TOP22-BANK-CP69-20261126-T08",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T08",
     "stem": "Nhóm \\([0;10):5\\), \\([10;20):5\\), \\([20;30):10\\): ước lượng \\(M_e,Q_1,Q_3\\).",
     "answer_key": "Ước lượng \\(M_e=20,Q_1=10,Q_3=25\\).",
     "worked_solution": "Cỡ mẫu \\(n=20\\), tần số tích lũy là 5,10,20. Các vị trí nội suy \\(Q_1,M_e,Q_3\\) lần lượt là \\(\\frac n4=5,\\frac n2=10,\\frac{3n}4=15\\). \\(Q_1\\) ở ranh giới 10, \\(M_e\\) ở ranh giới 20; \\(Q_3\\) thuộc nhóm \\([20;30)\\), nội suy \\(Q_3=20+\\frac{15-10}{10}\\cdot10=25\\). Đây là các giá trị ước lượng ghép nhóm.\n\n**Kiểm lỗi**\n\nNếu chọn nhầm nhóm, tô cột tích lũy đến \\(\\frac n4,\\frac n2,\\frac{3n}4\\) trước khi nội suy. Đọc lại **Kiến thức 2.3**, rồi tự làm **Bài luyện 52**, **Bài luyện 53**, **Bài luyện 58** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -10003,11 +10178,17 @@
       "G11-B09-GROUPED-QUARTILES"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Xác định các mốc n/4, n/2, 3n/4 bằng tần số tích lũy."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10019,15 +10200,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT08_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T08",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "15; 5; 25"
+      },
+      {
+        "id": "B",
+        "text": "20; 5; 25"
+      },
+      {
+        "id": "C",
+        "text": "20; 10; 30"
+      },
+      {
+        "id": "D",
+        "text": "20; 10; 25"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP22-T09",
-    "content_version": "TOP22-BANK-CP69-20261126-T09",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T09",
     "stem": "Nhóm \\([0;10):4\\),\\([10;20):10\\),\\([20;30):6\\), cùng độ rộng: ước lượng mốt.",
     "answer_key": "Mốt ghép nhóm ước lượng 16.",
     "worked_solution": "Nhóm có tần số cao nhất là \\([10;20)\\), tần số 10. Các nhóm cùng độ rộng \\(h=10\\). Chênh lệch với nhóm trước là \\(10-4=6\\), với nhóm sau là \\(10-6=4\\). Mốt ước lượng \\(M_o=10+\\frac6{6+4}\\cdot10=16\\).\n\n**Kiểm lỗi**\n\nKiểm mẫu số dương, tần số các nhóm kề và điều kiện cùng độ rộng. Đọc lại **Kiến thức 2.4**, rồi tự làm **Bài luyện 50**, **Bài luyện 54**, **Bài luyện 59** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -10040,11 +10240,17 @@
       "G11-B09-MODE-CONDITIONS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm nhóm tần số lớn nhất và hai hiệu tần số với nhóm kề."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10056,15 +10262,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT09_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T09",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "16"
+      },
+      {
+        "id": "B",
+        "text": "15"
+      },
+      {
+        "id": "C",
+        "text": "20"
+      },
+      {
+        "id": "D",
+        "text": "14"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP22-T10",
-    "content_version": "TOP22-BANK-CP69-20261126-T10",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T10",
     "stem": "Bảng gồm bốn nhóm \\([0;10),[10;20),[20;30),[30;40)\\) có tần số lần lượt \\(0,3,4,1\\). Tính khoảng biến thiên ghép nhóm và phân biệt với khoảng biến thiên của mẫu gốc.",
     "answer_key": "Khoảng biến thiên ghép nhóm 30 đơn vị; không khẳng định khoảng biến thiên mẫu gốc bằng 30.",
     "worked_solution": "Nhóm đầu có quan sát là \\([10;20)\\), nhóm cuối có quan sát là \\([30;40)\\). Do đó \\(R_g=40-10=30\\). Không lấy cận 0 của nhóm rỗng, cũng không kết luận khoảng biến thiên của dữ liệu gốc chắc chắn bằng 30.\n\n**Kiểm lỗi**\n\nNếu nhầm đầu mút nhóm với quan sát thực, thử đặt hai bộ số liệu khác nhau vào cùng nhóm. Đọc lại **Kiến thức 3.1**, rồi tự làm **Bài luyện 71**, **Bài luyện 73**, **Bài luyện 74** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -10077,11 +10302,17 @@
       "G12-CHIII-B09-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Bỏ nhóm biên tần số 0 trước khi chọn cận."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10093,15 +10324,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT10_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T10",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "40; mẫu gốc chắc chắn có R=40"
+      },
+      {
+        "id": "B",
+        "text": "30; không khẳng định mẫu gốc có R=30"
+      },
+      {
+        "id": "C",
+        "text": "30; mẫu gốc chắc chắn có R=30"
+      },
+      {
+        "id": "D",
+        "text": "20; mẫu gốc chắc chắn có R=20"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP22-T11",
-    "content_version": "TOP22-BANK-CP69-20261126-T11",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T11",
     "stem": "Hai mẫu cùng có các nhóm \\([0;10),[10;20),[20;30)\\). Mẫu A có tần số \\(4,8,8\\), với IQR ghép nhóm đã ước lượng là \\(12{,}5\\). Mẫu B có tần số \\(4,10,6\\). Ước lượng \\(Q_1,Q_3,\\mathrm{IQR}_g\\) của B. Mẫu nào tập trung hơn ở nửa giữa? Vì sao khoảng biến thiên ghép nhóm chưa phân biệt được hai mẫu?",
     "answer_key": "\\(Q_1\\approx11,Q_3\\approx\\frac{65}{3},\\mathrm{IQR}_g\\approx\\frac{32}{3}\\approx10{,}67\\); B tập trung hơn ở nửa giữa; cả hai có \\(R_g=30\\).",
     "worked_solution": "Mẫu B có \\(n=20\\), tần số tích lũy 4,14,20. Vị trí \\(Q_1\\) là 5, thuộc nhóm \\([10;20)\\): \\(Q_1\\approx10+\\frac{5-4}{10}\\cdot10=11\\). Vị trí \\(Q_3\\) là 15, thuộc nhóm \\([20;30)\\): \\(Q_3\\approx20+\\frac{15-14}{6}\\cdot10=\\frac{65}{3}\\). Do đó \\(\\mathrm{IQR}_g\\approx\\frac{65}{3}-11=\\frac{32}{3}\\approx10{,}67\\). Vì nhỏ hơn \\(12{,}5\\) của A, nửa giữa B tập trung hơn theo ước lượng. Cả hai có nhóm đầu và cuối không rỗng giống nhau, nên \\(R_g=30-0=30\\) ở cả hai; chỉ dùng khoảng biến thiên ghép nhóm chưa phân biệt được sự tập trung của phần giữa.\n\n**Kiểm lỗi**\n\nNếu sai \\(Q_1,Q_3\\), tự kiểm nhóm chứa vị trí \\(\\frac n4\\) và \\(\\frac{3n}4\\), luôn kiểm \\(Q_1\\le Q_3\\). Đọc lại **Kiến thức 3.2**, rồi tự làm **Bài luyện 83**, **Bài luyện 84**, **Bài luyện 85** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -10116,11 +10366,17 @@
       "G12-CHIII-B09-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Nội suy tại các vị trí 5 và 15 của B, sau đó trừ và so với IQR của A."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10132,15 +10388,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT11_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T11",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "11; \\(\\frac{65}{3}\\); \\(\\frac{32}{3}\\); A tập trung hơn; cùng R=30"
+      },
+      {
+        "id": "B",
+        "text": "10; 20; 10; B tập trung hơn; cùng R=30"
+      },
+      {
+        "id": "C",
+        "text": "11; \\(\\frac{65}{3}\\); \\(\\frac{32}{3}\\); B tập trung hơn; cùng R=30"
+      },
+      {
+        "id": "D",
+        "text": "11; \\(\\frac{65}{3}\\); \\(\\frac{32}{3}\\); B tập trung hơn; R_B nhỏ hơn R_A"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP22-T12",
-    "content_version": "TOP22-BANK-CP69-20261126-T12",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T12",
     "stem": "Cho ba nhóm \\([0;10)\\), \\([10;20)\\), \\([20;30)\\) có tần số lần lượt là 1, 2, 1. Tính phương sai và độ lệch chuẩn ước lượng.",
     "answer_key": "Phương sai ước lượng 50; độ lệch chuẩn ước lượng \\(5\\sqrt2\\approx7{,}071\\).",
     "worked_solution": "Các trung điểm 5,15,25; \\(\\bar x_g=15\\); \\(s_g^2=\\frac{1\\cdot100+2\\cdot0+1\\cdot100}4=50\\), \\(s_g=5\\sqrt2\\approx7{,}071\\).\n\n**Kiểm lỗi**\n\nĐừng chia n−1 hoặc bỏ trọng số f; dùng hai công thức kiểm chéo để tránh phương sai âm. Đọc lại **Kiến thức 3.3**, rồi tự làm **Bài luyện 95**, **Bài luyện 98**, **Bài luyện 106** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -10154,11 +10429,17 @@
       "G12-CHIII-B10-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính trung bình từ các trung điểm, rồi bình phương độ lệch và chia cỡ mẫu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10170,15 +10451,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT12_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T12",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "25; 5"
+      },
+      {
+        "id": "B",
+        "text": "50; 50"
+      },
+      {
+        "id": "C",
+        "text": "100; 10"
+      },
+      {
+        "id": "D",
+        "text": "50; 5 \\(\\sqrt{2}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP22-T13",
-    "content_version": "TOP22-BANK-CP69-20261126-T13",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T13",
     "stem": "Hai mẫu ghép nhóm A,B cùng sử dụng ba khoảng \\([0;10),[10;20),[20;30)\\). Tần số A lần lượt \\(1,4,1\\); tần số B lần lượt \\(2,2,2\\). So sánh phương sai ghép nhóm. Viết một nhận xét được phép kết luận và một thông tin còn thiếu nếu muốn khuyến nghị chọn A hay B.",
     "answer_key": "\\(s_A^2\\approx\\frac{100}{3},s_B^2\\approx\\frac{200}{3}\\); A ít phân tán hơn theo bảng ghép nhóm. Chưa đủ thông tin khuyến nghị chọn A hay B (ví dụ thiếu mục tiêu lựa chọn).",
     "worked_solution": "Hai mẫu có cỡ mẫu 6, trung điểm nhóm 5,15,25 và cùng trung bình ghép nhóm 15. Phương sai ước lượng \\(s_A^2=\\frac{1\\cdot100+4\\cdot0+1\\cdot100}{6}=\\frac{100}{3}\\); \\(s_B^2=\\frac{2\\cdot100+2\\cdot0+2\\cdot100}{6}=\\frac{200}{3}\\). A ít phân tán hơn quanh trung bình theo bảng ghép nhóm. Chưa thể nói A tốt hơn B: cần biết mục tiêu lựa chọn, đại lượng đo hoặc tính đại diện của mẫu.\n\n**Kiểm lỗi**\n\nKhông suy nhân quả từ các số mô tả; kiểm cỡ mẫu, đơn vị và cách ghép nhóm. Đọc lại **Kiến thức 3.4**, rồi tự làm **Bài luyện 108**, **Bài luyện 110**, **Bài luyện 114** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
@@ -10192,11 +10492,17 @@
       "G12-CHIII-B10-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Cả hai trung bình bằng 15; dùng tần số trọng số khi tính phương sai. Phân biệt độ phân tán và mục tiêu chọn mẫu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10208,11 +10514,30 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
-      "previous_content_version": "TOP22-R09-20261121-FT13_AUTHOR_KEY_REVIEW_R01",
+      "previous_content_version": "TOP22-BANK-CP69-20261126-T13",
       "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "A: \\(\\frac{100}{3}\\), B: \\(\\frac{200}{3}\\); A ít phân tán hơn; cần mục tiêu để chọn"
+      },
+      {
+        "id": "B",
+        "text": "A: \\(\\frac{100}{3}\\), B: \\(\\frac{200}{3}\\); A luôn tốt hơn không cần dữ kiện khác"
+      },
+      {
+        "id": "C",
+        "text": "A: \\(\\frac{200}{3}\\), B: \\(\\frac{100}{3}\\); B ít phân tán hơn; cần mục tiêu"
+      },
+      {
+        "id": "D",
+        "text": "A: \\(\\frac{100}{3}\\), B: \\(\\frac{200}{3}\\); hai mẫu có cùng độ phân tán"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP01-KFT01",
