@@ -21626,6 +21626,44 @@
       "limitations": "Scoped AUTHOR_SELF_VERIFIED for revised tasks; no fresh direct S1 PDF visual, no full academic/PED/Written PASS, no new figures. CHVI TRY03 has no skill tag and legacy HPT-prefixed Written IDs observed; preserve pending targeted reconciliation rather than rename or guess mapping. Topic placement checked, not exhaustive topic family audit.",
       "next": "G10 ChVIII–IX, then remaining G11, skill mapping/legacy IDs and Written ambiguity CP108, interaction classification.",
       "release_authorization": false
+    },
+    "coverage_depth_cp115": {
+      "base": "3eb48c5a568b1b3f500c44c14c14932b7af76221",
+      "head": "c9a6af5fc2f2a2d04a3b46e5af05a030d30524bd",
+      "scope": "G10 ChVIII–IX",
+      "review": {
+        "sgk_stems_keys": 61,
+        "topic_own_stems_keys": 31,
+        "written_projections": 5
+      },
+      "shards": [
+        {
+          "path": "items/g10-chviii.json",
+          "sha": "3cbdd385f2217d6bbafff39bbebdc41d1a8f68a8"
+        },
+        {
+          "path": "items/g10-chix.json",
+          "sha": "f391c35b6206816c16f4eeb45f9f1f1f58e45e2d"
+        }
+      ],
+      "changes": [
+        {
+          "id": "THPT-G10-B24-P05",
+          "reason": "Count exactly one (12), both (4), at least one (16); cross-check complement and overcount by 4."
+        },
+        {
+          "id": "THPT-G10-B25-P04",
+          "reason": "Inverse coefficient -5a=-15 gives a=3, coefficient x^3=10a^2=90."
+        },
+        {
+          "id": "THPT-G10-B27-P01",
+          "reason": "Compare 8/15 unordered groups, 16/30 ordered mixed roles, 8/30 specified roles."
+        }
+      ],
+      "verification": "3/61 changed, 58 unchanged; original metadata, skills, mode and placements preserved; balanced math delimiters. B24/B25 reused CD19, B27 SGK Practice; checked CD19/CD20 and SGK placements. Public sources 2ae62fada28913ec336b3507684408a1e05a3232 and caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0; Written e78c43ab7b2f6d3ab1b135d1ad09c7030df2c44e and fe0c6486eef27392d116c076d848c372c95ec881.",
+      "limitations": "Scoped AUTHOR_SELF_VERIFIED; no fresh S1 PDF, no full Academic/PED/Written PASS; no new figure. G10 CHVIII-TRY12 empty skill tag observed; do not guess linkage. Written B26 independence implicit rather than stated; targeted follow-up without editing published projection.",
+      "next": "G11 ChI–III, remaining chapters, then empty skill mappings and Written/interaction follow-up.",
+      "release_authorization": false
     }
   }
 }
