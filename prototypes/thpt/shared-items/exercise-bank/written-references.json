@@ -5470,7 +5470,15 @@
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHVI-B18-O01",
+      "G12-CHVI-B18-O02"
+    ],
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-W01"
   },
   {
     "item_id": "THPT-TOP21-W02",
@@ -5480,7 +5488,16 @@
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHVI-B19-O02",
+      "G12-CHVI-B19-O04",
+      "G12-CHVI-B19-O05"
+    ],
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-W02"
   },
   {
     "item_id": "THPT-TOP21-W03",
@@ -5490,7 +5507,16 @@
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G12-CHVI-B19-O02",
+      "G12-CHVI-B19-O04",
+      "G12-CHVI-B19-O05"
+    ],
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-W03"
   },
   {
     "item_id": "THPT-G10-CHV-W12",
