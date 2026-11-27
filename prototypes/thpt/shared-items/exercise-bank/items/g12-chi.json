@@ -3081,10 +3081,10 @@
   },
   {
     "item_id": "THPT-G12-B01-KFT01",
-    "content_version": "SOURCE_BLOB_64f6a142a88e8c4dd63dff3f7d2220787fcdec5c_AUTHORING_ANSWER_DRAFT",
-    "stem": "Với f′(x) dương trước x0 và âm sau x0, hàm sẽ chuyển hướng như thế nào? Trả lời bằng lời trước khi đọc phần Core; không có điểm chính thức.",
-    "answer_key": "Tăng trước x₀, giảm sau x₀; nếu liên tục tại x₀ thì đạt cực đại tại đó.",
-    "worked_solution": "Dấu f′ dương cho biết f tăng trên khoảng bên trái, dấu âm cho biết f giảm trên khoảng bên phải. Nếu x₀ thuộc miền xác định và f liên tục tại đó, f(x₀) lớn hơn các giá trị đủ gần ở hai bên, nên là giá trị cực đại. Chỉ dấu đạo hàm hai phía mà thiếu điều kiện tại x₀ chưa đủ kết luận cực trị.",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B01-KFT01",
+    "stem": "Giả sử \\(f'(x)>0\\) trên một khoảng ngay bên trái \\(x_0\\) và \\(f'(x)<0\\) trên một khoảng ngay bên phải \\(x_0\\). Hàm chuyển hướng như thế nào? Cần điều kiện gì tại \\(x_0\\) để kết luận cực đại theo dấu hiệu đổi dấu đạo hàm? Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Hàm tăng trước, giảm sau; nếu liên tục tại điểm chuyển dấu thì đạt cực đại tại đó.",
+    "worked_solution": "Dấu \\(f'(x)>0\\) bên trái cho biết hàm tăng trên khoảng ấy, dấu \\(f'(x)<0\\) bên phải cho biết hàm giảm trên khoảng ấy. Nếu \\(x_0\\) thuộc miền xác định và f liên tục tại đó thì \\(f(x_0)\\) lớn hơn các giá trị đủ gần ở hai bên, nên đạt cực đại tại \\(x_0\\). Thiếu điều kiện tại điểm chuyển dấu thì chưa thể kết luận.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B01-EXTREMA_SIGN_CHANGE",
@@ -3092,11 +3092,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét dấu đạo hàm từng phía và điều kiện liên tục tại điểm chuyển dấu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3119,7 +3125,26 @@
       "distinct_task_reason": "General sign change at x0 versus two fixed critical points and explicit continuity assumptions."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hàm giảm trước, tăng sau; đạt cực tiểu."
+      },
+      {
+        "id": "B",
+        "text": "Hàm tăng trước, giảm sau; nếu liên tục tại điểm chuyển dấu thì đạt cực đại tại đó."
+      },
+      {
+        "id": "C",
+        "text": "Hàm luôn tăng vì đạo hàm có lúc dương."
+      },
+      {
+        "id": "D",
+        "text": "Chắc chắn đạt cực đại ngay cả khi điểm chuyển dấu không thuộc miền xác định."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B01-KFT03",
@@ -3188,10 +3213,10 @@
   },
   {
     "item_id": "THPT-G12-B02-KFT01",
-    "content_version": "SOURCE_BLOB_d6e517a980ec9259345285964f4c42767faa6122_AUTHORING_ANSWER_DRAFT",
-    "stem": "Hàm có cực đại tại x=2 nhưng liên tục trên [0,5], giá trị ở x=5 cao hơn: GTLN ở đâu? Nêu lý do.",
-    "answer_key": "Chưa đủ dữ kiện xác định nơi đạt GTLN.",
-    "worked_solution": "Liên tục trên [0;5] bảo đảm có GTLN. Vì f(5)>f(2), x=2 không thể đạt GTLN. Tuy nhiên có thể còn một điểm khác có giá trị lớn hơn f(5); cần so sánh các điểm biên và mọi điểm có thể đạt cực trị.",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B02-KFT01",
+    "stem": "Hàm có cực đại tại x=2 nhưng liên tục trên [0,5], giá trị ở x=5 cao hơn: GTLN ở đâu? Nêu lý do. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Chưa đủ dữ kiện xác định nơi đạt GTLN; x=2 không thể đạt GTLN.",
+    "worked_solution": "Hàm liên tục trên \\([0;5]\\) nên có GTLN. Vì \\(f(5)>f(2)\\), điểm \\(x=2\\) không thể đạt GTLN. Tuy nhiên còn có thể có một điểm khác với giá trị lớn hơn \\(f(5)\\). Cần so sánh giá trị tại các điểm biên và mọi điểm có khả năng đạt GTLN.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B02-EXTREMA_GLOBAL_MEANING",
@@ -3199,11 +3224,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Phân biệt cực đại địa phương và GTLN trên cả đoạn."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3221,25 +3252,50 @@
       "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chắc chắn đạt GTLN tại x=2 vì đó là cực đại."
+      },
+      {
+        "id": "B",
+        "text": "Chắc chắn đạt GTLN tại x=5 vì f(5)>f(2)."
+      },
+      {
+        "id": "C",
+        "text": "Chưa đủ dữ kiện xác định nơi đạt GTLN; x=2 không thể đạt GTLN."
+      },
+      {
+        "id": "D",
+        "text": "Hàm không có GTLN vì cực đại thấp hơn giá trị ở biên."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B02-KFT03",
-    "content_version": "SOURCE_BLOB_d6e517a980ec9259345285964f4c42767faa6122_AUTHORING_ANSWER_DRAFT_AUTHOR_REVIEW_R01",
-    "stem": "Một khu vườn hình chữ nhật có chu vi 24 m, chiều rộng x m và chiều dài 12−x m. Khi tối ưu diện tích, vì sao phải đặt điều kiện 0<x<12 trước khi đạo hàm?",
-    "answer_key": "Để giới hạn bài toán trong miền kích thước có nghĩa.",
-    "worked_solution": "Trong ví dụ vườn chu vi 24 m, hai cạnh là x và 12−x; cả hai phải dương, nên 0<x<12. Chỉ xét nghiệm đạo hàm và giới hạn biên trên miền này; x=0 hoặc x=12 tạo hình suy biến.",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B02-KFT03",
+    "stem": "Một khu vườn hình chữ nhật có chu vi 24 m, chiều rộng x m và chiều dài 12−x m. Khi tối ưu diện tích, vì sao phải đặt điều kiện 0<x<12 trước khi đạo hàm? Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Cả hai kích thước phải dương: \\(x>0,\\ 12-x>0\\), tức \\(0<x<12\\).",
+    "worked_solution": "Hai kích thước là \\(x\\) và \\(12-x\\). Điều kiện hình chữ nhật không suy biến là \\(x>0,\\ 12-x>0\\), tức \\(0<x<12\\). Chỉ xét nghiệm đạo hàm trong miền này và giới hạn khi tiến đến biên; hai đầu mút tạo hình suy biến.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B02-CONSTRAINED_DOMAIN"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Cả chiều rộng lẫn chiều dài phải dương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3261,14 +3317,33 @@
       "distinct_task_reason": "Same possible positive lengths for perimeter 24, existing asks optimization rather than why domain is necessary."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ cần \\(x>0\\), không cần điều kiện cho chiều dài."
+      },
+      {
+        "id": "B",
+        "text": "\\(0\\le x\\le12\\), kể cả khi một cạnh bằng 0."
+      },
+      {
+        "id": "C",
+        "text": "\\(0<x<24\\), vì chu vi bằng 24."
+      },
+      {
+        "id": "D",
+        "text": "Cả hai kích thước phải dương: \\(x>0,\\ 12-x>0\\), tức \\(0<x<12\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B03-KFT01",
-    "content_version": "SOURCE_BLOB_02f4b8a446e89d824b7b08c833fc306ca9db02c6_AUTHORING_ANSWER_DRAFT",
-    "stem": "Với f=2+1/(x−4), đoán đường nào là tiệm cận đứng/ngang, vì sao phải nói giới hạn?",
-    "answer_key": "Tiệm cận đứng x=4; tiệm cận ngang y=2.",
-    "worked_solution": "Khi x→4⁻, 1/(x−4)→−∞; khi x→4⁺, 1/(x−4)→+∞, nên x=4 là tiệm cận đứng. Khi x→±∞, 1/(x−4)→0, nên f(x)→2 và y=2 là tiệm cận ngang. Giới hạn là căn cứ xác định, không chỉ nhìn mẫu bằng 0.",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B03-KFT01",
+    "stem": "Cho \\(f(x)=2+\\frac1{x-4}\\). Xác định tiệm cận đứng, tiệm cận ngang và giải thích bằng giới hạn. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Tiệm cận đứng \\(x=4\\); tiệm cận ngang \\(y=2\\), căn cứ vào giới hạn vô cực và giới hạn hữu hạn tương ứng.",
+    "worked_solution": "Khi \\(x\\to4^-\\), \\(\\frac1{x-4}\\to-\\infty\\); khi \\(x\\to4^+\\), \\(\\frac1{x-4}\\to+\\infty\\). Do đó \\(x=4\\) là tiệm cận đứng. Khi \\(x\\to\\pm\\infty\\), \\(\\frac1{x-4}\\to0\\) nên \\(f(x)\\to2\\). Vậy \\(y=2\\) là tiệm cận ngang. Mẫu bằng 0 chưa đủ để kết luận tiệm cận đứng nếu không xét giới hạn.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B03-VERTICAL_ONE_SIDED",
@@ -3276,11 +3351,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét giới hạn khi x tiến đến 4 từ mỗi phía và khi x ra vô cực."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3298,25 +3379,50 @@
       "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tiệm cận đứng \\(x=4\\); tiệm cận ngang \\(y=2\\), căn cứ vào giới hạn vô cực và giới hạn hữu hạn tương ứng."
+      },
+      {
+        "id": "B",
+        "text": "Tiệm cận đứng \\(x=2\\); tiệm cận ngang \\(y=4\\)."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ có tiệm cận đứng \\(x=4\\), không có tiệm cận ngang."
+      },
+      {
+        "id": "D",
+        "text": "Tiệm cận đứng \\(x=4\\); tiệm cận ngang \\(y=0\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B03-KFT03",
-    "content_version": "SOURCE_BLOB_02f4b8a446e89d824b7b08c833fc306ca9db02c6_AUTHORING_ANSWER_DRAFT",
-    "stem": "Nếu f(x)−(2x+3)→0 khi x→∞, dạng tiệm cận nào phù hợp?",
-    "answer_key": "Tiệm cận xiên y=2x+3 khi x→+∞.",
-    "worked_solution": "Hiệu f(x)−(2x+3)→0 khi x→+∞, đúng định nghĩa tiệm cận xiên; hệ số góc 2 khác 0.",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B03-KFT03",
+    "stem": "Nếu \\(f(x)-(2x+3)\\to0\\) khi \\(x\\to+\\infty\\), đường thẳng nào là tiệm cận của đồ thị ở phía đó? Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Tiệm cận xiên \\(y=2x+3\\) khi \\(x\\to+\\infty\\).",
+    "worked_solution": "Vì \\(\\lim_{x\\to+\\infty}[f(x)-(2x+3)]=0\\) và hệ số góc 2 khác 0, đường thẳng \\(y=2x+3\\) là tiệm cận xiên khi \\(x\\to+\\infty\\). Chưa có dữ kiện để kết luận về phía \\(-\\infty\\).",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B03-OBLIQUE_REMAINDER"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So sánh với định nghĩa giới hạn của hiệu giữa hàm và đường thẳng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3338,14 +3444,33 @@
       "distinct_task_reason": "Source gives limiting difference to 2x+3, asks type; existing computes a specific different oblique asymptote."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tiệm cận ngang \\(y=3\\) khi \\(x\\to+\\infty\\)."
+      },
+      {
+        "id": "B",
+        "text": "Tiệm cận xiên \\(y=2x+3\\) khi \\(x\\to+\\infty\\)."
+      },
+      {
+        "id": "C",
+        "text": "Tiệm cận đứng \\(x=-\\frac32\\)."
+      },
+      {
+        "id": "D",
+        "text": "Tiệm cận xiên \\(y=2x\\) khi \\(x\\to+\\infty\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B04-KFT01",
-    "content_version": "SOURCE_BLOB_a9a9a8f823ee85fe53014150b5cda31201867a4d_AUTHORING_ANSWER_DRAFT_AUTHOR_REVIEW_R01",
-    "stem": "Xét g(x)=(x+2)/(x−1) với x≠1, có g′(x)=−3/(x−1)². Liệu có thể vẽ một nét giảm liên tục băng qua x=1? Giải thích.",
-    "answer_key": "Không thể nối liên tục qua x=1.",
-    "worked_solution": "g(x)=1+3/(x−1), nên g′(x)=−3/(x−1)²<0 với x≠1. Hai nhánh giảm riêng trên (−∞;1) và (1;+∞), nhưng g(x)→−∞ khi x→1⁻ và g(x)→+∞ khi x→1⁺. x=1 không thuộc miền xác định và là tiệm cận đứng. Vì thế không nối hai nhánh thành một nét qua x=1.",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B04-KFT01",
+    "stem": "Xét \\(g(x)=\\frac{x+2}{x-1}\\) với \\(x\\ne1\\), có \\(g'(x)=-\\frac3{(x-1)^2}\\). Có thể vẽ một nét giảm liên tục qua \\(x=1\\) không? Vì sao? Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Không; hàm giảm trên từng khoảng xác định nhưng x=1 không thuộc miền xác định và là tiệm cận đứng.",
+    "worked_solution": "Viết \\(g(x)=1+\\frac3{x-1}\\). Đạo hàm âm trên mỗi khoảng \\((-\\infty;1)\\), \\((1;+\\infty)\\), nên hai nhánh giảm riêng. Khi \\(x\\to1^-\\), \\(g(x)\\to-\\infty\\); khi \\(x\\to1^+\\), \\(g(x)\\to+\\infty\\). Vì \\(x=1\\) không thuộc miền xác định và là tiệm cận đứng, không được nối hai nhánh qua đó.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B04-DOMAIN_NONCONNECT",
@@ -3353,11 +3478,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tách miền xác định thành hai khoảng và xét giới hạn tại x=1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3380,25 +3511,50 @@
       "distinct_task_reason": "Similar separate branches but existing formula/pole or requested task differs."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; đạo hàm âm tại mọi điểm xác định nên vẽ một nét giảm qua x=1."
+      },
+      {
+        "id": "B",
+        "text": "Không; hàm tăng trên cả hai nhánh."
+      },
+      {
+        "id": "C",
+        "text": "Không; hàm giảm trên từng khoảng xác định nhưng x=1 không thuộc miền xác định và là tiệm cận đứng."
+      },
+      {
+        "id": "D",
+        "text": "Có; chỉ cần nối hai nhánh tại điểm (1;0)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B04-KFT02",
-    "content_version": "SOURCE_BLOB_a9a9a8f823ee85fe53014150b5cda31201867a4d_AUTHORING_ANSWER_DRAFT",
-    "stem": "Nghiệm bội hai x=0 của y=x³−3x² khiến đường cong tiếp xúc hay cắt trục Ox?",
-    "answer_key": "Tiếp xúc trục Ox tại (0;0), không cắt xuyên qua.",
-    "worked_solution": "y=x²(x−3). Gần x=0, x−3<0 và x²>0 khi x≠0, nên y âm ở cả hai phía; y(0)=0 và y′(0)=0. Đồ thị chạm trục hoành nhưng không đổi dấu qua nghiệm bội hai.",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B04-KFT02",
+    "stem": "Nghiệm bội hai \\(x=0\\) của \\(y=x^3-3x^2\\) khiến đồ thị tiếp xúc hay cắt xuyên qua trục Ox? Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Tiếp xúc trục Ox tại (0;0), không đổi dấu qua điểm đó.",
+    "worked_solution": "Ta có \\(y=x^2(x-3)\\). Khi x đủ gần 0 nhưng khác 0, \\(x^2>0\\), \\(x-3<0\\), nên y âm ở cả hai phía. Vì \\(y(0)=0\\) và \\(y'(0)=0\\), đồ thị tiếp xúc trục Ox tại (0;0) mà không đổi dấu qua nghiệm này.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B04-INTERCEPTS_LIMITS"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Phân tích nhân tử x²(x−3) rồi xét dấu hai phía của 0."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3420,25 +3576,50 @@
       "distinct_task_reason": "Same cubic, existing additionally asks at x=3; source only x=0, do not conflate."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cắt xuyên qua Ox tại (0;0), đổi dấu."
+      },
+      {
+        "id": "B",
+        "text": "Không có giao điểm với Ox tại x=0."
+      },
+      {
+        "id": "C",
+        "text": "Tiếp xúc tại (3;0), không tiếp xúc tại (0;0)."
+      },
+      {
+        "id": "D",
+        "text": "Tiếp xúc trục Ox tại (0;0), không đổi dấu qua điểm đó."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B04-KFT03",
-    "content_version": "SOURCE_BLOB_a9a9a8f823ee85fe53014150b5cda31201867a4d_AUTHORING_ANSWER_DRAFT",
-    "stem": "Với g=2+11/(x−3), dự đoán tâm đối xứng trước khi xem ví dụ.",
-    "answer_key": "I(3;2).",
-    "worked_solution": "Viết g(x)=2+11/(x−3). Hai đường tiệm cận là x=3 và y=2. Với h≠0, g(3+h)−2=11/h và g(3−h)−2=−11/h; hai điểm tương ứng đối xứng qua I(3;2).",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B04-KFT03",
+    "stem": "Cho \\(g(x)=2+\\frac{11}{x-3}\\). Xác định tâm đối xứng của đồ thị. Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "I(3;2)",
+    "worked_solution": "Hai tiệm cận là \\(x=3,\\ y=2\\). Với \\(h\\ne0\\), \\(g(3+h)-2=\\frac{11}{h}\\) và \\(g(3-h)-2=-\\frac{11}{h}\\). Hai điểm tương ứng đối xứng qua \\(I(3;2)\\), nên đây là tâm đối xứng.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B04-CENTER_SYMMETRY"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tìm giao điểm hai tiệm cận hoặc so các giá trị cách đều x=3."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3456,25 +3637,50 @@
       "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "I(3;2)"
+      },
+      {
+        "id": "B",
+        "text": "I(2;3)"
+      },
+      {
+        "id": "C",
+        "text": "I(−3;2)"
+      },
+      {
+        "id": "D",
+        "text": "I(3;11)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B05-KFT01",
-    "content_version": "SOURCE_BLOB_54c9c90323f7b1d9077270d90627864f5a468c03_AUTHORING_ANSWER_DRAFT",
-    "stem": "s(t)=5−2t có vị trí dương lúc t=1, vật đi theo chiều nào? Tốc độ bao nhiêu?",
-    "answer_key": "Đi theo chiều âm; tốc độ bằng 2 đơn vị độ dài trên đơn vị thời gian.",
-    "worked_solution": "s(1)=3>0 chỉ cho biết vị trí. v(t)=s′(t)=−2 nên vật đi theo chiều âm; tốc độ |v|=2. Nếu s đo bằng m, t bằng s thì tốc độ là 2 m/s.",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B05-KFT01",
+    "stem": "Vật chuyển động trên một trục với tọa độ \\(s(t)=5-2t\\). Tại \\(t=1\\), vật chuyển động theo chiều nào và có tốc độ bao nhiêu? Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Đi theo chiều âm; tốc độ bằng 2.",
+    "worked_solution": "\\(s(1)=3>0\\) cho biết vị trí, không cho biết chiều chuyển động. Vận tốc \\(v(t)=s'(t)=-2\\), nên vật đi theo chiều âm. Tốc độ \\(|v|=2\\) đơn vị độ dài trên đơn vị thời gian.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B05-MOTION_SPEED_ACCELERATION"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Chiều chuyển động phụ thuộc dấu vận tốc, không phụ thuộc dấu tọa độ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3492,14 +3698,33 @@
       "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đi theo chiều dương; tốc độ bằng 3."
+      },
+      {
+        "id": "B",
+        "text": "Đi theo chiều âm; tốc độ bằng 2."
+      },
+      {
+        "id": "C",
+        "text": "Đi theo chiều âm; tốc độ bằng −2."
+      },
+      {
+        "id": "D",
+        "text": "Đứng yên vì vị trí tại t=1 dương."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B05-KFT02",
-    "content_version": "SOURCE_BLOB_54c9c90323f7b1d9077270d90627864f5a468c03_AUTHORING_ANSWER_DRAFT",
-    "stem": "Chi phí C(q) có đơn vị triệu đồng, q sản phẩm. Đơn vị C'(q) là gì?",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B05-KFT02",
+    "stem": "Chi phí C(q) có đơn vị triệu đồng, q sản phẩm. Đơn vị C'(q) là gì? Chọn phương án đúng sau khi tự giải.",
     "answer_key": "Triệu đồng/sản phẩm.",
-    "worked_solution": "Đạo hàm C′(q) là tốc độ biến đổi của chi phí theo sản lượng. Lấy đơn vị triệu đồng chia cho đơn vị sản phẩm.",
+    "worked_solution": "\\(C'(q)\\) là tốc độ biến đổi chi phí theo sản lượng. Chi phí đo bằng triệu đồng và sản lượng đo bằng sản phẩm, nên đơn vị của đạo hàm là triệu đồng/sản phẩm.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B05-MARGINAL_COST",
@@ -3507,11 +3732,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đơn vị đạo hàm là đơn vị của đại lượng phụ thuộc chia cho đơn vị biến độc lập."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3529,25 +3760,50 @@
       "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Triệu đồng."
+      },
+      {
+        "id": "B",
+        "text": "Sản phẩm/triệu đồng."
+      },
+      {
+        "id": "C",
+        "text": "Triệu đồng/sản phẩm."
+      },
+      {
+        "id": "D",
+        "text": "Triệu đồng × sản phẩm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B05-KFT03",
-    "content_version": "SOURCE_BLOB_54c9c90323f7b1d9077270d90627864f5a468c03_AUTHORING_ANSWER_DRAFT_AUTHOR_REVIEW_R01",
-    "stem": "Một mảnh vườn hình chữ nhật có hai cạnh dài x (vuông góc tường) và hai cạnh dài y (song song tường). Gọi L là tổng chiều dài hàng rào. Hãy lập ràng buộc nếu rào cả bốn cạnh và nếu bỏ cạnh y sát tường. Vì sao cần phân biệt hai trường hợp trước khi tối ưu?",
-    "answer_key": "Bốn cạnh: 2x+2y=L; ba cạnh sát tường: 2x+y=L.",
-    "worked_solution": "Với x là chiều vuông góc tường, y là chiều song song tường, bốn cạnh hình chữ nhật dài tổng cộng 2x+2y, tương đương x+y=L/2. Nếu một cạnh y sát tường không cần rào, chỉ dùng hai cạnh x và một cạnh y, nên 2x+y=L. Phải chọn ràng buộc đúng số cạnh trước khi tối ưu.",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B05-KFT03",
+    "stem": "Một mảnh vườn hình chữ nhật có hai cạnh dài x (vuông góc tường) và hai cạnh dài y (song song tường). Gọi L là tổng chiều dài hàng rào. Hãy lập ràng buộc nếu rào cả bốn cạnh và nếu bỏ cạnh y sát tường. Vì sao cần phân biệt hai trường hợp trước khi tối ưu? Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Bốn cạnh: \\(2x+2y=L\\); bỏ cạnh sát tường: \\(2x+y=L\\).",
+    "worked_solution": "Rào đủ bốn cạnh cần hai cạnh x và hai cạnh y, tức \\(2x+2y=L\\). Bỏ cạnh y sát tường thì chỉ cần hai cạnh x và một cạnh y, tức \\(2x+y=L\\). Phải chọn đúng ràng buộc vì nó quyết định miền kích thước và hàm diện tích cần tối ưu.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B05-MODEL_VARIABLE_DOMAIN"
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Đếm số cạnh theo hai phương còn phải rào."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3569,14 +3825,33 @@
       "distinct_task_reason": "Source compares fencing constraint for four versus three sides; existing optimizes three-sided fence only. Requires context."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bốn cạnh: \\(x+y=L\\); bỏ cạnh sát tường: \\(2x+y=L\\)."
+      },
+      {
+        "id": "B",
+        "text": "Bốn cạnh: \\(2x+2y=L\\); bỏ cạnh sát tường: \\(x+2y=L\\)."
+      },
+      {
+        "id": "C",
+        "text": "Cả hai trường hợp đều có \\(2x+2y=L\\)."
+      },
+      {
+        "id": "D",
+        "text": "Bốn cạnh: \\(2x+2y=L\\); bỏ cạnh sát tường: \\(2x+y=L\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B05-KFT04",
-    "content_version": "SOURCE_BLOB_54c9c90323f7b1d9077270d90627864f5a468c03_AUTHORING_ANSWER_DRAFT_AUTHOR_REVIEW_R01",
-    "stem": "Từ tấm bìa hình chữ nhật 30 cm × 20 cm, cắt ở mỗi góc một hình vuông cạnh x cm rồi gấp thành hộp không nắp. Vì sao x=12 cm không hợp lệ?",
-    "answer_key": "Không hợp lệ vì 20−2·12=−4<0.",
-    "worked_solution": "Cắt bốn hình vuông cạnh x từ tấm bìa 30×20 tạo đáy có kích thước 30−2x và 20−2x. Hộp không suy biến đòi hỏi x>0 và cả hai kích thước dương, tức 0<x<10. x=12 vi phạm.",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B05-KFT04",
+    "stem": "Từ tấm bìa hình chữ nhật 30 cm × 20 cm, cắt ở mỗi góc một hình vuông cạnh x cm rồi gấp thành hộp không nắp. Vì sao x=12 cm không hợp lệ? Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Không; \\(20-2\\cdot12=-4<0\\); miền hợp lệ là \\(0<x<10\\).",
+    "worked_solution": "Đáy hộp có hai kích thước \\(30-2x,\\ 20-2x\\), chiều cao x. Để hộp không suy biến, cả ba đều dương, nên \\(0<x<10\\). Với x=12, kích thước thứ hai bằng \\(-4\\) cm, không có ý nghĩa hình học.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B05-BOUNDARY_FEASIBILITY",
@@ -3584,11 +3859,17 @@
     ],
     "original_outcome_ids": [],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Sau khi cắt ở cả hai đầu, mỗi kích thước đáy giảm 2x."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -3611,6 +3892,25 @@
       "distinct_task_reason": "Same cardboard dimensions but source asks why x=12 invalid; existing asks full domain or degenerate x=10."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; \\(20-2\\cdot12=-4<0\\); miền hợp lệ là \\(0<x<10\\)."
+      },
+      {
+        "id": "B",
+        "text": "Có; \\(12<20\\) và \\(12<30\\)."
+      },
+      {
+        "id": "C",
+        "text": "Có; chỉ cần \\(0<x<15\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không; miền hợp lệ là \\(0<x<5\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
