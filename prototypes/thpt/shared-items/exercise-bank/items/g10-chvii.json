@@ -2880,10 +2880,10 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY-ELLIPSE-TR01",
-    "content_version": "SOURCE_BLOB_0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Mái nửa elip rộng **12 m**, cao **4 m** tại tâm. Đặt O ở giữa nền, Ox dọc nền, Oy hướng thẳng đứng lên trên. (a) Viết phương trình elip đầy đủ và điều kiện miền mái. (b) Tại x=3 m, mái cao bao nhiêu?",
-    "answer_key": "x²/36+y²/16=1; y≥0, |x|≤6; tại x=3, y=2√3 m≈3,464 m.",
-    "worked_solution": "Bán trục ngang 6, bán trục đứng 4: `x²/36+y²/16=1`, **y≥0**, |x|≤6. Tại x=3, `y=4√(1−9/36)=2√3≈3,464 m`. Không lấy y âm hoặc dùng a=12. Nếu sai, xem `HELP-G10-CHVII-ELLIPSE-TR01`.",
+    "content_version": "SGK-G10-CHVII-BANK-CANDIDATE-20261127-THPT-G10-CHVII-TRY-ELLIPSE-TR01",
+    "stem": "Mái nửa elip rộng **12 m**, cao **4 m** tại tâm. Đặt O ở giữa nền, Ox dọc nền, Oy hướng thẳng đứng lên trên. (a) Viết phương trình elip đầy đủ và điều kiện miền mái. (b) Tại x=3 m, mái cao bao nhiêu? Chọn phương án đúng sau khi tự tính.",
+    "answer_key": "\\(\\frac{x^2}{36}+\\frac{y^2}{16}=1,\\ y\\ge0,\\ |x|\\le6\\); tại x=3, \\(y=2\\sqrt3\\) m.",
+    "worked_solution": "Bán trục ngang \\(a=6\\), bán trục đứng \\(b=4\\). Mái thỏa \\(\\frac{x^2}{36}+\\frac{y^2}{16}=1,\\ y\\ge0,\\ |x|\\le6\\). Tại \\(x=3\\), \\(y=4\\sqrt{1-\\frac9{36}}=2\\sqrt3\\approx3{,}464\\) m. Không lấy nghiệm âm vì mái nằm phía trên nền.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B22-ELLIPSE_PARAMETERS"
@@ -2892,11 +2892,17 @@
       "G10-B22-ELLIPSE_PARAMETERS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Bề rộng là hai lần bán trục ngang; mái chỉ lấy tung độ không âm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2910,14 +2916,33 @@
       "help_ref": "HELP-G10-CHVII-ELLIPSE-TR01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{x^2}{144}+\\frac{y^2}{16}=1\\); tại x=3, \\(y=\\sqrt{15}\\) m."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac{x^2}{36}+\\frac{y^2}{16}=1,\\ y\\ge0,\\ |x|\\le6\\); tại x=3, \\(y=2\\sqrt3\\) m."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{x^2}{36}+\\frac{y^2}{16}=1\\); mái gồm cả hai nửa, \\(y=\\pm2\\sqrt3\\) m."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{x^2}{16}+\\frac{y^2}{36}=1\\); tại x=3, \\(y=\\frac{3\\sqrt7}{2}\\) m."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-CHVII-TRY-HYPERBOLA-TR01",
-    "content_version": "SOURCE_BLOB_0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai trạm A và B cách nhau **60 km**, phát tín hiệu đồng thời với cùng tốc độ **100.000 km/s**. Tại máy thu P, độ lớn chênh lệch thời gian nhận hai tín hiệu là **0,0002 s**. Hãy tính 2a, c, b² và kiểm điều kiện có hypebol không suy biến. Chưa biết tín hiệu của trạm nào đến P trước: có thể chọn nhánh không?",
-    "answer_key": "2a=20 km; c=30 km; b²=800 km²; 0<20<60 nên hypebol không suy biến; chưa chọn được nhánh.",
-    "worked_solution": "Vì hai trạm phát đồng thời và tín hiệu truyền cùng tốc độ, |PA−PB|=vΔt=100000·0,0002=20 km. Do đó 2a=20 km, a=10 km; 2c=60 km, c=30 km; b²=c²−a²=900−100=800 km². Vì 0<20<60 nên quỹ tích là hypebol không suy biến. Chỉ biết độ lớn chênh lệch thời gian, chưa biết tín hiệu của trạm nào đến P trước nên không thể chọn nhánh. Nếu biết tín hiệu B đến trước, P gần B hơn và thuộc nhánh phía B; tương tự với A. Nếu quên điều kiện này, xem `HELP-G10-CHVII-HYPERBOLA-TR01`.",
+    "content_version": "SGK-G10-CHVII-BANK-CANDIDATE-20261127-THPT-G10-CHVII-TRY-HYPERBOLA-TR01",
+    "stem": "Hai trạm A và B cách nhau **60 km**, phát tín hiệu đồng thời với cùng tốc độ **100.000 km/s**. Tại máy thu P, độ lớn chênh lệch thời gian nhận hai tín hiệu là **0,0002 s**. Hãy tính 2a, c, b² và kiểm điều kiện có hypebol không suy biến. Chưa biết tín hiệu của trạm nào đến P trước: có thể chọn nhánh không? Chọn phương án đúng sau khi tự tính.",
+    "answer_key": "\\(2a=20\\,\\mathrm{km},c=30\\,\\mathrm{km},b^2=800\\,\\mathrm{km}^2\\); không suy biến, chưa chọn được nhánh.",
+    "worked_solution": "Hai tín hiệu phát đồng thời, cùng tốc độ nên \\(|PA-PB|=100000\\cdot0{,}0002=20\\) km. Do đó \\(2a=20,\\ a=10,\\ 2c=60,\\ c=30\\) (km) và \\(b^2=c^2-a^2=900-100=800\\,\\mathrm{km}^2\\). Vì \\(0<20<60\\), hypebol không suy biến. Chỉ biết độ lớn hiệu khoảng cách nên chưa xác định nhánh; tín hiệu của trạm nào đến trước thì P gần trạm đó hơn.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B22-HYPERBOLA_PARAMETERS"
@@ -2926,11 +2951,17 @@
       "G10-B22-HYPERBOLA_PARAMETERS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Nhân tốc độ với độ lớn chênh thời gian để tìm hiệu khoảng cách tuyệt đối. So hiệu với khoảng cách giữa hai tiêu điểm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2944,6 +2975,25 @@
       "help_ref": "HELP-G10-CHVII-HYPERBOLA-TR01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(a=20\\,\\mathrm{km},c=30\\,\\mathrm{km},b^2=500\\,\\mathrm{km}^2\\); chưa chọn được nhánh."
+      },
+      {
+        "id": "B",
+        "text": "\\(2a=20\\,\\mathrm{km},c=60\\,\\mathrm{km},b^2=3500\\,\\mathrm{km}^2\\); chưa chọn được nhánh."
+      },
+      {
+        "id": "C",
+        "text": "\\(2a=20\\,\\mathrm{km},c=30\\,\\mathrm{km},b^2=800\\,\\mathrm{km}^2\\); không suy biến, chưa chọn được nhánh."
+      },
+      {
+        "id": "D",
+        "text": "\\(2a=20\\,\\mathrm{km},c=30\\,\\mathrm{km},b^2=800\\,\\mathrm{km}^2\\); luôn chọn nhánh phải."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
