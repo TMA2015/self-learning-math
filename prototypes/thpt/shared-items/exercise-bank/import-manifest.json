@@ -21818,6 +21818,185 @@
       "limitations": "Scoped author math check only; original source and placement metadata preserved; no fresh S1 PDF review, full Academic/PED PASS, Written source edit, or interaction conversion. No merge/deploy/cutover.",
       "next": "Resolve remaining source-confirmed skill crosswalks (prioritize formative over replay), targeted Written ambiguities CP108/115, then interaction classification without enabling auto-grade.",
       "release_authorization": false
+    },
+    "coverage_depth_cp119": {
+      "base": "d8c30da465ed68338855949a67c861b309fdeccc",
+      "head": "c0ea8522b1b1022478a83bb4026a746a47fe81d7",
+      "scope": "Reuse existing skill IDs with explicit semantic crosswalk; targeted Written wording verification",
+      "changes": [
+        {
+          "file": "items/g11-chi.json",
+          "before": "700e0c33cf6328cf1702445883a03981a71ff8d2",
+          "after": "bd0edbe6e4dd04ed822a689efd63d425fe6cbaac",
+          "count": 65,
+          "diff": [
+            {
+              "id": "THPT-G11-B04-KFT01",
+              "fields": [
+                "skill_ids",
+                "status"
+              ],
+              "skill": "G10-B01-EQUIVALENCE"
+            }
+          ]
+        },
+        {
+          "file": "items/g10-chviii.json",
+          "before": "3cbdd385f2217d6bbafff39bbebdc41d1a8f68a8",
+          "after": "2b413a699023a55571eac4644928a7a51a45612b",
+          "count": 37,
+          "diff": [
+            {
+              "id": "THPT-G10-CHVIII-TRY12",
+              "fields": [
+                "skill_ids",
+                "status"
+              ],
+              "skill": "BINOMIAL_COEFFICIENT"
+            }
+          ]
+        },
+        {
+          "file": "items/cd03.json",
+          "before": "2ecb25e3019e29850cd90c22a2d07a94f8b16ce8",
+          "after": "9dfa8115c4a7fad0c33f3efd75585b3bcc861552",
+          "count": 21,
+          "diff": [
+            {
+              "id": "THPT-TOP03-ADD01",
+              "fields": [
+                "skill_ids"
+              ],
+              "skill": "G10-B01-EQUIVALENCE"
+            },
+            {
+              "id": "THPT-TOP03-ADD02",
+              "fields": [
+                "skill_ids"
+              ],
+              "skill": "G10-B01-EQUIVALENCE"
+            }
+          ]
+        },
+        {
+          "file": "items/cd05.json",
+          "before": "b01ea96da2877e68f9a509c09bc2cd0c3a7acc14",
+          "after": "34a877a40a387c8f5688e14b1f31c6b6d2edffd5",
+          "count": 34,
+          "diff": [
+            {
+              "id": "THPT-TOP05-P08",
+              "fields": [
+                "skill_ids"
+              ],
+              "skill": "FUNCTION_MAPPING"
+            },
+            {
+              "id": "THPT-TOP05-P20",
+              "fields": [
+                "skill_ids"
+              ],
+              "skill": "FUNCTION_DOMAIN"
+            }
+          ]
+        },
+        {
+          "file": "items/topic-knowledge-first-try.json",
+          "before": "f549772faa7977b510bc1cd1b9c923e3d92ae255",
+          "after": "7a725f6d10aa9848d1bc59981369bc4b5be20ff1",
+          "count": 393,
+          "diff": [
+            {
+              "id": "THPT-TOP03-KFT01",
+              "fields": [
+                "skill_ids"
+              ],
+              "skill": "G10-B01-EQUIVALENCE"
+            },
+            {
+              "id": "THPT-TOP05-KFT04",
+              "fields": [
+                "skill_ids"
+              ],
+              "skill": "FUNCTION_MAPPING"
+            },
+            {
+              "id": "THPT-TOP05-KFT13",
+              "fields": [
+                "skill_ids"
+              ],
+              "skill": "FUNCTION_DOMAIN"
+            }
+          ]
+        }
+      ],
+      "verification": "550 items in affected shards; exactly 9 changed, 541 unchanged; only skill_ids and two existing status fields changed. CP118 counts 205 empty -> 196 (1 SGK formative,35 Topic-owned,16 Topic Vận dụng,144 public selfcheck); no new skill ID, no change to stem/key/solution/rubric/source/exposure/auto_grade. Existing status AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING reused on two SGK items with earlier math review. Five affected placement blobs and Written references unchanged; crosswalk records explicit existing skills, not exhaustive skill coverage for a whole outcome.",
+      "crosswalk": [
+        {
+          "skill": "G10-B01-EQUIVALENCE",
+          "reference": "THPT-TOP01-KFT04 (source e93f1253ac0acb3e19547665a67d64344527e601); THPT-TOP01-ADD02",
+          "targets": [
+            "THPT-G11-B04-KFT01",
+            "THPT-TOP03-ADD01",
+            "THPT-TOP03-ADD02",
+            "THPT-TOP03-KFT01"
+          ],
+          "reason": "Compare same solution sets and justify two-way reversible transformations; actual CD03 M01 source bd3b88b635b203872a9afa5893cc1e3af3e7d7c6 and SGK B04 source 0714c5b72389d29dbc8993c2ce9828fc98cf7a92 read."
+        },
+        {
+          "skill": "BINOMIAL_COEFFICIENT",
+          "reference": "THPT-TOP19-T12 (source ba549932e8a56bb46ec2951171e999cc70d6f34f) and THPT-TOP19-P12",
+          "targets": [
+            "THPT-G10-CHVIII-TRY12"
+          ],
+          "reason": "Same evaluation P(1) for sum of coefficients; original outcome G10-B25-COEFFICIENT_SUM and source d8491aa03be4d1356fbbbb902d7f97a6e8553e0d preserved."
+        },
+        {
+          "skill": "FUNCTION_MAPPING",
+          "reference": "THPT-TOP05-P01/P02",
+          "targets": [
+            "THPT-TOP05-P08",
+            "THPT-TOP05-KFT04"
+          ],
+          "reason": "Unique output per input; x=0 gives y=±2 or ±3 respectively, so not a function. Source ab878f1a18dea87872449a79c27b75a612d81b39 and 277e8738c6cb7cce7f7f11c666382446f69be8e9 read."
+        },
+        {
+          "skill": "FUNCTION_DOMAIN",
+          "reference": "THPT-TOP05-P03/P04 and THPT-G10-B15-C02",
+          "targets": [
+            "THPT-TOP05-P20",
+            "THPT-TOP05-KFT13"
+          ],
+          "reason": "Both explicitly ask domain from nonnegative radicand; existing domain skill is valid but not a substitute for missing transform-specific tag."
+        }
+      ],
+      "written_followup": [
+        {
+          "id": "THPT-G11-CHVIII-B29-W03",
+          "source": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+          "projection": "378b118788e3cd7ab92ef6bc91ef8cac83063f3a",
+          "finding": "Both source and published projection use ambiguous 'không chọn cả hai'. Existing answer 11/36 means neither, not 'not both'=30/36.",
+          "proposed_minimal_delta": "Replace 'không chọn cả hai' by 'không chọn kênh C lẫn kênh D (không chọn kênh nào trong hai kênh)'; rubric/solution/ID unchanged. 11+8+6+11=36.",
+          "status": "VERIFIED_WORDING_DEFECT_PENDING_CANONICAL_SOURCE_OWNER_SCOPE"
+        },
+        {
+          "id": "THPT-G10-CHIX-W26-01",
+          "source": "fe0c6486eef27392d116c076d848c372c95ec881",
+          "finding": "Fair coin and die marginal uniformity alone does not guarantee 12 equiprobable pairs; model intended independent trials.",
+          "proposed_minimal_delta": "Add 'hai phép thử độc lập' to first sentence; answer/rubric preserved: P(A)=1/6, complement=5/6.",
+          "status": "VERIFIED_ASSUMPTION_CLARIFICATION_PENDING_CANONICAL_SOURCE_OWNER_SCOPE"
+        },
+        {
+          "id": "THPT-G12-B14-W07",
+          "source": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+          "finding": "h<R answer 'hình tròn' corresponds to solid ball, not sphere surface; 'cầu' ambiguous.",
+          "proposed_minimal_delta": "Specify 'khối cầu bán kính R>0, tâm cách mặt phẳng h≥0' and h<R intersection is disk of radius sqrt(R²−h²), h=R a single point, h>R empty. If author intended surface instead, use circle (đường tròn); do not silently switch semantics.",
+          "status": "VERIFIED_AMBIGUITY_PENDING_CANONICAL_SOURCE_OWNER_SCOPE"
+        }
+      ],
+      "limitations": "Semantic mapping based on actual prior source and known tagged task; no fresh S1 PDF review, full Academic/PED PASS, Written canonical edit, interaction conversion, cutover or release.",
+      "next": "Remaining skill crosswalk only when credible; do not invent skill IDs. Prepare interaction eligibility classification with no grading/runtime activation. Written fixes need source owner scope, not duplicate item.",
+      "release_authorization": false
     }
   }
 }
