@@ -125,7 +125,9 @@
     "stem": "Giải \\(3(x-2)=2x+5\\) và thử lại nghiệm. Chọn phương án đầy đủ, tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S=\\{11\\}\\).",
     "worked_solution": "Khai triển \\(3x-6=2x+5\\Leftrightarrow x=11\\). Thay: \\(3\\cdot9=27\\) và \\(2\\cdot11+5=27\\). Phép chuyển vế, thu gọn là tương đương trên \\(\\mathbb R\\).",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-EQUIVALENCE"
+    ],
     "original_outcome_ids": [
       "TOP03-O02"
     ],
