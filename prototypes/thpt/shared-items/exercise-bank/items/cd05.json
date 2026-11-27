@@ -854,7 +854,8 @@
     "answer_key": "Dịch xuống 3; đỉnh \\((0;-3)\\).",
     "worked_solution": "Trừ 3 khỏi mọi tung độ giữ hoành độ không đổi, \\((0;0)\\mapsto(0;-3)\\).",
     "skill_ids": [
-      "B16_OUT_02"
+      "B16_OUT_02",
+      "TOP05-SKILL-VERTICAL_TRANSLATION"
     ],
     "original_outcome_ids": [
       "TOP05-O09"
@@ -1437,7 +1438,8 @@
     "answer_key": "\\(x=-2\\) hoặc \\(x=2\\); \\(g(0)=4\\).",
     "worked_solution": "\\(\\lvert u\\rvert=0\\Leftrightarrow u=0\\Rightarrow x^2=4\\) trong bài này. \\(f(0)=-4\\) được phản xạ thành \\(g(0)=4\\). Không được kết luận \\(g(x)=x^2-4\\) với mọi x.",
     "skill_ids": [
-      "B16_OUT_03"
+      "B16_OUT_03",
+      "TOP05-SKILL-ABSOLUTE_TRANSFORM"
     ],
     "original_outcome_ids": [
       "TOP05-O14"
