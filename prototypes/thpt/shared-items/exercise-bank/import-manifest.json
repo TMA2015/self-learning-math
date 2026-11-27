@@ -20,7 +20,7 @@
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
   "academic_audit": "AUTHOR_REVIEW_18_DRAFTS_AND_709_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
-  "interaction_conversion": "CD01–22 and G10 ChI–III SGK content candidates completed; remaining SGK chapters/supplements, scoped Delta, full S1/Academic/PED, notation/render and source cutover remain pending.",
+  "interaction_conversion": "CD01–22 and SGK G10 ChI–VI content candidates completed; remaining SGK chapters/supplements, scoped Delta, full S1/Academic/PED, notation/render and source cutover pending.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
   "legacy_combined_answer_note": "709 at original import; 709 manually verified and key separated at checkpoints 29–44; 0 remain combined. This closes the legacy combined-answer review group only, not full academic/PED or release certification. Preserve original source history and self-compare, not auto-grade.",
@@ -58,95 +58,100 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "3368d5992016d1e14c7f6f9b6c99ef386a247a3b",
+    "as_of_commit": "0d9531e824bbe72a3a1058be22e3c7f96a1b9ba7",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
-    "completed_scope": "CD01–22 and SGK G10 ChI–III content candidates; scoped Delta and final academic/PED verification pending",
+    "completed_scope": "CD01–22 and SGK G10 ChI–VI content candidates; scoped Delta and final academic/PED verification pending",
     "completed_unique_ids": 1885,
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Next owner-authorized batch: G10 ChIV–VI. Continue exactly three chapters per turn; reuse already converted shared IDs. Supplements tracked separately. Resolve scoped Delta, source/PED/notation checks and cutover only at applicable gates.",
-    "status": "CD01_CD22_AND_SGK_G10_CHI_CHIII_CONTENT_CANDIDATES_COMPLETE_SCOPED_DELTA_PENDING",
-    "completed_candidate_sgk_chapters": 3,
+    "next": "Next owner-authorized batch G10 ChVII–IX, exactly three chapters per turn; reuse converted shared IDs. Track supplements separately. Resolve scoped Delta, source/PED/notation and cutover at applicable gates.",
+    "status": "CD01_CD22_AND_SGK_G10_CHI_CHVI_CONTENT_CANDIDATES_COMPLETE_SCOPED_DELTA_PENDING",
+    "completed_candidate_sgk_chapters": 6,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
       "G10-CHI",
       "G10-CHII",
-      "G10-CHIII"
+      "G10-CHIII",
+      "G10-CHIV",
+      "G10-CHV",
+      "G10-CHVI"
     ],
-    "sgk_chapter_candidate_unique_ids": 128,
-    "sgk_chapter_candidate_interactive": 122,
-    "sgk_chapter_candidate_written": 6,
-    "new_sgk_interactive_conversions": 72,
+    "sgk_chapter_candidate_unique_ids": 360,
+    "sgk_chapter_candidate_interactive": 336,
+    "sgk_chapter_candidate_written": 24,
+    "new_sgk_interactive_conversions": 236,
     "partial_sgk_chapter": null
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "exercise_candidate_sgk_g10_chi_chiii",
-    "exercise_candidate_sgk_g10_chi_chiii": {
-      "owner_scope": "Three SGK chapters per turn, starting G10 ChI–III; stop after ChIII.",
+    "current_checkpoint_key": "exercise_candidate_sgk_g10_chiv_chvi",
+    "exercise_candidate_sgk_g10_chiv_chvi": {
+      "owner_scope": "G10 ChIV–VI only; stop after ChVI.",
       "chapters": [
         {
-          "id": "G10-CHI",
-          "unique": 43,
-          "interactive": 41,
-          "written": 2,
-          "core": 4,
-          "practice": 12,
-          "first_try": 11,
-          "public_selfcheck": 14,
-          "new_conversions": 23
+          "id": "G10-CHIV",
+          "unique": 95,
+          "interactive": 88,
+          "written": 7,
+          "placements": 95,
+          "new_conversions": 68,
+          "core": 10,
+          "practice": 31,
+          "first_try": 26,
+          "public_selfcheck": 21
         },
         {
-          "id": "G10-CHII",
-          "unique": 42,
-          "interactive": 40,
-          "written": 2,
-          "core": 4,
-          "practice": 12,
-          "first_try": 10,
-          "public_selfcheck": 14,
-          "new_conversions": 24
+          "id": "G10-CHV",
+          "unique": 61,
+          "interactive": 58,
+          "written": 3,
+          "placements": 61,
+          "new_conversions": 34,
+          "core": 6,
+          "practice": 19,
+          "first_try": 15,
+          "public_selfcheck": 18
         },
         {
-          "id": "G10-CHIII",
-          "unique": 43,
-          "interactive": 41,
-          "written": 2,
-          "core": 4,
-          "practice": 12,
-          "first_try": 11,
-          "public_selfcheck": 14,
-          "new_conversions": 25
+          "id": "G10-CHVI",
+          "unique": 76,
+          "interactive": 68,
+          "written": 8,
+          "placements": 77,
+          "new_conversions": 62,
+          "core": 12,
+          "practice": 15,
+          "application": 3,
+          "first_try": 19,
+          "public_selfcheck": 20
         }
       ],
       "files": {
-        "items/g10-chi.json": "6e257e9a74c239bdb6598301792a04f4fcd64a8f",
-        "items/g10-chii.json": "f7d03a8458126874c9d5ef0f8ab9948e90706ffa",
-        "items/g10-chiii.json": "d8c93545e86d254f17346ca28654cadf94a31456",
-        "items/g10-chi-public-selfcheck.json": "c59a8f4e7f93ae9b9da760d6bc59b184024eae4e",
-        "items/g10-chii-public-selfcheck.json": "4d7b8060c21fca48334f52ac318c566fc456235c",
-        "items/g10-chiii-public-selfcheck.json": "d289587b0696fafc946addc03cf4b90d7bc7d440"
+        "items/g10-chiv.json": "4e8351a48e03102ef352cac2f40eef832aee36d3",
+        "items/g10-chiv-public-selfcheck.json": "d6574ae88e61ebc7a564897ae5fd89b7816d093f",
+        "items/g10-chv.json": "e83bc423ae1bdfff5bdb054f241399384e457da4",
+        "items/g10-chv-public-selfcheck.json": "41dbafbeb6a56ab235a84299bd19b72e82da44fc",
+        "items/g10-chvi.json": "c8c4dde0afac19f086a4a398b963ba5b93c90676",
+        "items/g10-chvi-public-selfcheck.json": "67bd03da496825c7db7e52f90efab09c8a313592",
+        "written-references.json": "88a33b565783bb34a8a165340399723120e6dbc7"
       },
-      "source_public_blobs": [
-        "bef97279707fa1bdfc00db4e0421cee6df0572a9",
-        "7f35aa93193f886490754237bf0f3f6209eabe86",
-        "f9c35b7afa6e45a3937bd55c7a41bc7e3c647c2d"
-      ],
       "written_source_blobs": [
-        "983c1d16b08bfd16e17e405614d31f378ae65413",
-        "fe94e3394d04616d0c83799b4ac61bf33c35e31a",
-        "569466519ee9a653fa3bcdf874e06619424fbf7b",
-        "6320aeaa89bd51c514b07461e01fad5e3aca833f"
+        "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
+        "6e581218ff1874d127daa991a1ebcebfa71baf16",
+        "cedf2a952624095d9135e04a84dc469e22ec53e5",
+        "4da918f36d30c9b7110099e81fc88943e5b7705b",
+        "d96deee9b440076954d6f44b3007ea083fdd6eb0",
+        "49502fe39cf0a67f6a3e973a77f94164150637a7"
       ],
-      "verification": "Exact readback of 122 interactive records / 488 choices + 6 previously reviewed Written references; all 128 SGK placements resolve and all IDs unique. 50 preconverted interactive records reused unchanged, 30 FirstTry and 42 already-public self-check records converted, 288 new options. No missing skills/key/solution/hints, duplicate option IDs/text, delimiter pair mismatch, or auto_grade true. No new IDs; SGK placement and Written references unchanged. Outcome IDs sourced from original metadata, no new skill IDs. Public selfcheck source blobs inspected; no private RD1 accessed. Counts are SGK scope, not an additive total to topic inventory.",
-      "limitations": "Candidate conversion only. Historical public selfcheck rubrics and original types preserved for migration; option-only checks do not establish proof/constructed-response mastery. Scoped Delta/PED review of changed assessment formats, historic duplicate/near-duplicate task (G10 CHIII TRY05 and public RD1-03), exact notation (legacy prose/key/solution may still contain untypeset expressions), legacy rubric vs choice scoring and Q16 reveal verification at cutover pending. No fresh S1 PDF/independent review/browser/CI or full Academic/PED PASS. No runtime/Golden/RD1/Final Submit/Mastery/Firebase/merge/deploy changes."
+      "verification": "232 unique IDs/233 placements; 214 interactive/854 options +18 Written; 50 preconverted shared interactive records reused, 164 converted (105 formative/FirstTry and 59 public selfcheck), 654 newly formatted choices (2 original three-option items). 13 previously unclassified Written refs checked against source and rubric; 5 previously reviewed unchanged. B18-C01 retains two historical placements (Core and Vận dụng), same ID. Exact readback confirms all 233 resolve, no duplicate order/ID/options, missing required candidate fields or unmatched inline delimiter counts. Corrected B16-P01 delimiters and B16-P05 dimension answer clarity. No new IDs/placements, no source body copies or website edits. Cumulative chapters G10 I–VI = 360 distinct, 336 interactive +24 Written (361 placements); separate from topic inventory.",
+      "limitations": "Candidate only. Full X-G.5 normalization still pending in historical raw math/backticks/HTML and Written sources, scoped Delta/PED for proof/constructed-response conversions and historic same-task duplicates (e.g. B17-P01 and ChVI-TRY13), rubric/reveal parity at cutover. Existing placement B15_OUT_03 temporarily used as outcome identifier for TRY03, B15-R04, WRI-15-01, skill crosswalk pending. W09/W10/W11 correct answer contains computations but separate worked solution terse; improve at scoped PED review. W08-FORCE-TR01 historical HTML rubric table split by pipe, math and /4 identifiable, projection repair pending. No fresh direct S1, independent review, browser/CI or full Academic/PED PASS; no private RD1, runtime, Golden, Final Submit, Mastery, Firebase, merge or deploy."
     },
     "previous_manifest": {
-      "commit": "6ca653175eeb6e0f329caea6a5fc6a5872c0ec12",
-      "blob": "f1eae12111cf4e2304238f2dc2ddbd5af7af1dc3",
-      "key": "exercise_candidate_cd21_cd22"
+      "commit": "65e56e4346683e5b2a2b88e95fda00f5d051e176",
+      "blob": "f72edb2830b354ffdd4ed13fef2ef75eeeebaeaa",
+      "key": "exercise_candidate_sgk_g10_chi_chiii"
     }
   },
   "pending_review": {
@@ -276,7 +281,8 @@
     "cd20": "Candidate complete; scoped interaction/PED and render review of 12 extra shared placements; original three Written retained.",
     "cd21": "Candidate complete; P06 historical replay parameters differ from canonical practice, use canonical candidate and verify projection at cutover. Scoped interaction/PED and S1/notation verification pending.",
     "cd22": "Candidate complete; four Written corrections applied in source, targeted Delta C verification pending. 30 added replay placements use existing IDs. Review multi-part choice conversion and X-G.5 notation/render before handoff.",
-    "sgk_g10_chi_chiii": "72 converted interaction candidates; scoped PED/Delta, legacy public assessment rubric/notation and duplicate/near-duplicate task review pending. No public reveal or scoring changes in production. 6 previously reviewed Written refs unchanged."
+    "sgk_g10_chi_chiii": "72 converted interaction candidates; scoped PED/Delta, legacy public assessment rubric/notation and duplicate/near-duplicate task review pending. No public reveal or scoring changes in production. 6 previously reviewed Written refs unchanged.",
+    "sgk_g10_chiv_chvi": "164 interaction conversions; legacy rubric/notation/assessment Delta and 3 Written worked-solution PED improvements + force rubric projection issue pending. B15_OUT_03 placement outcome-to-skill crosswalk pending on three records. No final acceptance. Historical candidate snapshots preserved."
   },
   "checkpoint_policy": "Replace current_progress and current checkpoint, do not append cumulative report trees. Record detailed scoped evidence in existing issue/PR or prior immutable Git snapshot; preserve exact commit/path/blob and relevant key. Carry forward unresolved issues only; retain older history pointer. Never infer PASS, authorize cutover or change protected runtime from compaction."
 }
