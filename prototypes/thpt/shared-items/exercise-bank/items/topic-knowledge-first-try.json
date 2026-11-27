@@ -1,9 +1,9 @@
 [
   {
     "item_id": "THPT-TOP14-T01",
-    "content_version": "TOP14-BANK-CP67-20261126-T01",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T01",
     "stem": "Đường \\(3x+2y-1=0\\) có một vectơ chỉ phương nào?",
-    "answer_key": "Một vectơ chỉ phương là \\((-2;3)\\) (hoặc mọi bội khác 0 của nó).",
+    "answer_key": "Một vectơ chỉ phương là \\((-2;3)\\).",
     "worked_solution": "Có thể chọn \\(\\vec u=(-2;3)\\), vì \\((3;2)\\cdot(-2;3)=0\\).\n\n**Nếu làm sai:** Nếu lấy \\((3;2)\\) làm chỉ phương, em đã nhầm với pháp tuyến; kiểm tích vô hướng.\n\n\n**Kiểm lỗi**\n\nNếu em lấy \\((3;2)\\) làm chỉ phương cho đường \\(3x+2y-1=0\\), đọc **Kiến thức 1.1** để tách vai trò pháp tuyến/chỉ phương. Làm **Bài luyện 1** và **Bài luyện 17**, kiểm tích vô hướng bằng 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -13,11 +13,17 @@
       "TOP14-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Lấy vectơ vuông góc với pháp tuyến (3;2)."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -33,11 +39,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((3;2)\\)"
+      },
+      {
+        "id": "B",
+        "text": "Một vectơ chỉ phương là \\((-2;3)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\((2;3)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((-3;2)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T02",
-    "content_version": "TOP14-BANK-CP67-20261126-T02",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T02",
     "stem": "Qua \\(P(2;3)\\), có pháp tuyến \\(\\vec n=(1;-2)\\). Viết phương trình đường thẳng.",
     "answer_key": "\\(x-2y+4=0\\).",
     "worked_solution": "\\(x-2-2(y-3)=0\\), tức \\(x-2y+4=0\\).\n\n**Nếu làm sai:** Nếu phương trình không đi qua P, thay tọa độ P để tìm sai dấu trước.\n\n\n**Kiểm lỗi**\n\nNếu phương trình không qua \\(P(2;3)\\), đọc **Kiến thức 1.2** về \\(\\vec n\\cdot\\overrightarrow{PM}=0\\). Làm **Bài luyện 2** rồi **Bài luyện 18**, thay tọa độ điểm vào phương trình để phát hiện sai dấu.",
@@ -49,11 +74,17 @@
       "TOP14-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng phương trình điểm–pháp tuyến rồi kiểm P."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -69,11 +100,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x-2y-4=0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x+2y-8=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x-2y+4=0\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(2x+y-7=0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T03",
-    "content_version": "TOP14-BANK-CP67-20261126-T03",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T03",
     "stem": "Đường thẳng qua \\(A(1;-1)\\), có vectơ chỉ phương \\(\\vec u=(2;3)\\), viết theo tham số \\(\\overrightarrow{AM}=t\\vec u\\). Tìm tọa độ M khi \\(t=2\\).",
     "answer_key": "\\(M(5;5)\\).",
     "worked_solution": "Phương trình tham số của đường là \\(x=1+2t,\\ y=-1+3t\\). Cùng thay \\(t=2\\) vào cả hai biểu thức, được \\(M(5;5)\\).\n\n**Nếu làm sai:** Nếu thay t khác nhau cho x và y, bạn đã bỏ mất điều kiện một tham số chung.\n\n\n**Kiểm lỗi**\n\nNếu dùng hai giá trị t khác nhau cho x,y, đọc **Kiến thức 1.3**: một điểm trên đường tương ứng một tham số chung. Làm **Bài luyện 3** và **Bài luyện 19**, thế t vào cả hai tọa độ.",
@@ -85,11 +135,17 @@
       "TOP14-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Cộng tọa độ A với hai lần vectơ chỉ phương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -105,11 +161,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(M(3;2)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(M(5;7)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(M(-3;-7)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(M(5;5)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T04",
-    "content_version": "TOP14-BANK-CP67-20261126-T04",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T04",
     "stem": "Qua \\(A(0;2),\\ B(2;0)\\), viết phương trình đường.",
     "answer_key": "\\(x+y-2=0\\).",
     "worked_solution": "\\(\\overrightarrow{AB}=(2;-2)\\) là chỉ phương; chọn pháp tuyến \\((1;1)\\) vì \\(2-2=0\\). Qua \\(A(0;2)\\), phương trình \\(x+y-2=0\\). Thay A và B đều cho vế trái bằng 0.\n\n**Nếu làm sai:** Nếu ra \\(x-y-2=0\\), em chưa kiểm cả hai điểm thuộc đường.\n\n\n**Kiểm lỗi**\n\nNếu đường vừa lập không chứa cả hai điểm, đọc **Kiến thức 1.4** để dùng vectơ \\(\\overrightarrow{AB}\\) làm chỉ phương. Làm **Bài luyện 4** và **Bài luyện 20**, kiểm trực tiếp hai điểm.",
@@ -121,11 +196,17 @@
       "TOP14-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tìm vectơ AB, chọn pháp tuyến rồi thế tọa độ một điểm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -141,13 +222,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x+y-2=0\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x+y+2=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x-y+2=0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x-y-2=0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T05",
-    "content_version": "TOP14-BANK-CP67-20261126-T05",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T05",
     "stem": "Điểm \\((-1;3)\\) có thuộc \\(x+2y-5=0\\) không?",
-    "answer_key": "Có, điểm thuộc đường thẳng.",
+    "answer_key": "Có, vì \\(-1+2\\cdot3-5=0\\).",
     "worked_solution": "Có, vì \\(-1+6-5=0\\).\n\n**Nếu làm sai:** Nếu chỉ nhìn hình hoặc kiểm một tọa độ, hãy viết đầy đủ biểu thức bên trái.\n\n\n**Kiểm lỗi**\n\nNếu chỉ so một tọa độ hoặc nhìn hình để xác định điểm thuộc đường, đọc **Kiến thức 1.5**. Làm **Bài luyện 5** và **Bài luyện 21**, thay đầy đủ x,y vào vế trái.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -157,11 +257,17 @@
       "TOP14-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Thay tọa độ điểm vào vế trái phương trình."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -177,11 +283,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, vế trái bằng −2."
+      },
+      {
+        "id": "B",
+        "text": "Có, vì \\(-1+2\\cdot3-5=0\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không, vế trái bằng 5."
+      },
+      {
+        "id": "D",
+        "text": "Không, điểm có hoành độ âm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T06",
-    "content_version": "TOP14-BANK-CP67-20261126-T06",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T06",
     "stem": "Qua giao của \\(x+y=6\\) và \\(x-y=2\\), song song \\(3x+y-1=0\\). Tìm phương trình.",
     "answer_key": "\\(3x+y-14=0\\).",
     "worked_solution": "Cộng \\(x+y=6\\) và \\(x-y=2\\) được \\(2x=8\\), nên \\(x=4,y=2\\). Đường cần tìm có dạng \\(3x+y+c=0\\). Thay \\((4;2)\\) được \\(c=-14\\). Hệ số tự do \\(-14\\ne-1\\) nên hai đường phân biệt; kết quả \\(3x+y-14=0\\).\n\n**Nếu làm sai:** Nếu thế điểm giao không thỏa, quay lại giải hệ trước khi đặt hằng số.\n\n\n**Kiểm lỗi**\n\nNếu đặt đường qua giao điểm mà không giải hệ trước, đọc **Kiến thức 1.6**. Làm **Bài luyện 8** và **Bài luyện 22**, kiểm nghiệm giao thuộc cả hai đường rồi thế vào đường cần tìm.",
@@ -195,11 +320,17 @@
       "TOP14-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Giải hệ tìm giao điểm rồi giữ pháp tuyến của đường song song."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -215,11 +346,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(3x+y+14=0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(3x+y-1=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(3x+y-14=0\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x-3y+2=0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T07",
-    "content_version": "TOP14-BANK-CP67-20261126-T07",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T07",
     "stem": "Ban đầu bể có 5 lít, sau 3 phút có 11 lít khi đổ nước với lưu lượng không đổi, không có nước chảy ra. Sau 4 phút có bao nhiêu lít nếu vẫn đổ đều và bể chưa tràn?",
     "answer_key": "13 lít, nếu vẫn đổ đều và chưa tràn.",
     "worked_solution": "Lượng nước tăng \\(11-5=6\\) lít trong 3 phút, nên lưu lượng là 2 lít/phút. \\(V(t)=5+2t\\), với t tính bằng phút, trong thời gian đổ đều, không có nước chảy ra và chưa tràn. \\(V(4)=5+2\\cdot4=13\\) lít.\n\n**Nếu làm sai:** Nếu chỉ lấy \\(\\frac{11}3\\), em đã nhầm lượng tổng với lượng **tăng thêm**.\n\n\n**Kiểm lỗi**\n\nNếu lấy \\(\\frac{11}3\\) làm lượng tăng mỗi phút, đọc **Kiến thức 1.7**: hệ số góc là hiệu lượng chia hiệu thời gian, có giá trị ban đầu. Làm **Bài luyện 6** và **Bài luyện 23**, chú ý miền thời gian mô hình có ý nghĩa.",
@@ -231,11 +381,17 @@
       "TOP14-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính số lít tăng trong một phút, rồi cộng với thể tích ban đầu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -251,11 +407,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "8 lít."
+      },
+      {
+        "id": "B",
+        "text": "16 lít."
+      },
+      {
+        "id": "C",
+        "text": "17 lít."
+      },
+      {
+        "id": "D",
+        "text": "13 lít, nếu vẫn đổ đều và chưa tràn."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T08",
-    "content_version": "TOP14-BANK-CP67-20261126-T08",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T08",
     "stem": "Hai đường \\(x+2y=3\\) và \\(2x+4y=6\\) có trùng không?",
     "answer_key": "Hai đường trùng nhau.",
     "worked_solution": "Trùng nhau: toàn bộ phương trình thứ hai bằng 2 lần thứ nhất.\n\n**Nếu làm sai:** Nếu chỉ xét sự tỉ lệ của các hệ số a, b mà bỏ c, em sẽ nhầm trùng và song song.\n\n\n**Kiểm lỗi**\n\nNếu chỉ thấy pháp tuyến tỉ lệ mà kết luận hai đường trùng, đọc **Kiến thức 2.1**. Làm **Bài luyện 25** và **Bài luyện 39**: kiểm cả hệ số tự do để phân biệt trùng với song song phân biệt.",
@@ -267,11 +442,17 @@
       "TOP14-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So tỉ lệ cả ba hệ số của phương trình tổng quát."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -287,11 +468,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hai đường trùng nhau."
+      },
+      {
+        "id": "B",
+        "text": "Song song phân biệt."
+      },
+      {
+        "id": "C",
+        "text": "Cắt nhau tại đúng một điểm."
+      },
+      {
+        "id": "D",
+        "text": "Vuông góc."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T09",
-    "content_version": "TOP14-BANK-CP67-20261126-T09",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T09",
     "stem": "Qua \\(P(1;2)\\), vuông góc \\(x-3y+1=0\\). Viết đường thẳng.",
     "answer_key": "\\(3x+y-5=0\\).",
     "worked_solution": "Đường đã cho có pháp tuyến \\((1;-3)\\); đường vuông góc nhận vectơ này làm chỉ phương. Chọn pháp tuyến \\((3;1)\\) vì \\(3\\cdot1+1\\cdot(-3)=0\\). Qua \\(P(1;2)\\), ta có \\(3(x-1)+(y-2)=0\\), tức \\(3x+y-5=0\\).\n\n**Nếu làm sai:** Nếu chỉ sao chép a,b của đường cũ, bạn đang dựng đường song song chứ không phải vuông góc.\n\n\n**Kiểm lỗi**\n\nNếu dùng lại pháp tuyến của đường cũ khi dựng đường vuông góc, đọc **Kiến thức 2.2**. Làm **Bài luyện 30** và **Bài luyện 40**, kiểm tích vô hướng hai hướng và điểm đã cho.",
@@ -304,11 +504,17 @@
       "TOP14-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đường mới có pháp tuyến song song với chỉ phương của đường cũ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -324,11 +530,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(3x+y+5=0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(3x+y-5=0\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x-3y+5=0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(3x-y-1=0\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T10",
-    "content_version": "TOP14-BANK-CP67-20261126-T10",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T10",
     "stem": "Tìm giao của \\(x+2y=7\\) và \\(x-y=1\\).",
     "answer_key": "Giao điểm \\((3;2)\\).",
     "worked_solution": "Từ \\(x=y+1\\), thế được \\(3y=6,\\ y=2,\\ x=3\\). Giao điểm \\((3;2)\\).\n\n**Nếu làm sai:** Nếu chỉ thế được một đường, hãy kiểm điều kiện thứ hai.\n\n\n**Kiểm lỗi**\n\nNếu nghiệm chỉ thỏa một đường, đọc **Kiến thức 2.3** rồi làm **Bài luyện 27** và **Bài luyện 41**. Giải cùng một hệ và thay nghiệm vào cả hai phương trình.",
@@ -340,11 +565,17 @@
       "TOP14-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Giải hệ hai phương trình bậc nhất."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -360,11 +591,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((2;3)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((3;-2)\\)"
+      },
+      {
+        "id": "C",
+        "text": "Giao điểm \\((3;2)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\((1;3)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T11",
-    "content_version": "TOP14-BANK-CP67-20261126-T11",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T11",
     "stem": "\\(P(2;1),\\ d:3x+4y-20=0\\). Tính khoảng cách.",
     "answer_key": "2 đơn vị độ dài.",
     "worked_solution": "\\(\\frac{|6+4-20|}5=2\\) đơn vị.\n\n**Nếu làm sai:** Nếu ra \\(-2\\), em quên trị tuyệt đối; nếu ra 10, em quên chia độ dài pháp tuyến.\n\n\n**Kiểm lỗi**\n\nNếu khoảng cách có dấu âm hay quên chia độ dài pháp tuyến, đọc **Kiến thức 2.4**. Làm **Bài luyện 28** và **Bài luyện 42**, kiểm trị tuyệt đối và mẫu \\(\\sqrt{a^2+b^2}\\).",
@@ -376,11 +626,17 @@
       "TOP14-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Lấy trị tuyệt đối vế trái tại P, chia cho độ dài pháp tuyến."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -396,11 +652,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 đơn vị độ dài."
+      },
+      {
+        "id": "B",
+        "text": "4 đơn vị độ dài."
+      },
+      {
+        "id": "C",
+        "text": "−2 đơn vị độ dài."
+      },
+      {
+        "id": "D",
+        "text": "2 đơn vị độ dài."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T12",
-    "content_version": "TOP14-BANK-CP67-20261126-T12",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T12",
     "stem": "Góc nhỏ giữa trục Oy (\\(x=0\\)) và đường \\(y=x\\) là bao nhiêu?",
     "answer_key": "\\(45^\\circ\\).",
     "worked_solution": "\\(45^\\circ\\), vì pháp tuyến \\((1;0)\\) và \\((1;-1)\\) cho cos góc nhỏ bằng \\(\\frac1{\\sqrt2}\\).\n\n**Nếu làm sai:** Nếu dùng góc 135° do đổi chiều vectơ, hãy nhớ đường thẳng không có chiều cố định.\n\n\n**Kiểm lỗi**\n\nNếu góc nhọn ra 135° vì chọn hướng pháp tuyến khác, đọc **Kiến thức 2.5**. Làm **Bài luyện 29** và **Bài luyện 43**, dùng trị tuyệt đối trong công thức cos góc nhỏ giữa hai đường.",
@@ -412,11 +687,17 @@
       "TOP14-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Có thể dùng hai vectơ chỉ phương và tích vô hướng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -432,11 +713,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(45^\\circ\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(0^\\circ\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(90^\\circ\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(135^\\circ\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T13",
-    "content_version": "TOP14-BANK-CP67-20261126-T13",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T13",
     "stem": "Viết đường tròn tâm \\((-1;3)\\), bán kính 2.",
     "answer_key": "\\((x+1)^2+(y-3)^2=4\\).",
     "worked_solution": "\\((x+1)^2+(y-3)^2=4\\).\n\n**Nếu làm sai:** Nếu dấu trước hoành độ tâm nhầm, thay trực tiếp điểm cách tâm đúng R vào phương trình.\n\n\n**Kiểm lỗi**\n\nNếu khai triển sai dấu của tâm \\(I(-1;3)\\), đọc **Kiến thức 3.1**. Làm **Bài luyện 45** và **Bài luyện 59**, thế điểm cách tâm đúng R để kiểm.",
@@ -448,11 +748,17 @@
       "TOP14-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Thế tâm và bình phương bán kính vào dạng chuẩn."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -468,11 +774,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((x-1)^2+(y+3)^2=4\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((x+1)^2+(y-3)^2=4\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\((x+1)^2+(y-3)^2=2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((x+1)^2+(y+3)^2=4\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T14",
-    "content_version": "TOP14-BANK-CP67-20261126-T14",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T14",
     "stem": "\\(x^2+y^2+2x-4y+1=0\\) là đường tròn tâm nào, bán kính bao nhiêu?",
     "answer_key": "Tâm \\(I(-1;2),R=2\\).",
     "worked_solution": "Viết \\(x^2+2x=(x+1)^2-1\\) và \\(y^2-4y=(y-2)^2-4\\). Thế vào phương trình, được \\((x+1)^2+(y-2)^2=4\\). Tâm \\(I(-1;2)\\), bán kính \\(R=\\sqrt4=2\\).\n\n**Nếu làm sai:** Nếu đọc \\(R=4\\), em đã nhầm bán kính với **bình phương** bán kính.\n\n\n**Kiểm lỗi**\n\nNếu đọc \\(R=4\\) khi hoàn thành bình phương cho \\(R^2=4\\), đọc **Kiến thức 3.2**. Làm **Bài luyện 46** và **Bài luyện 60**, kiểm \\(R>0\\) và tâm đúng dấu.",
@@ -484,11 +809,17 @@
       "TOP14-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hoàn thành bình phương theo x và y."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -504,11 +835,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(I(1;-2),R=2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(I(-1;2),R=4\\)"
+      },
+      {
+        "id": "C",
+        "text": "Tâm \\(I(-1;2),R=2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(I(-2;4),R=2\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T15",
-    "content_version": "TOP14-BANK-CP67-20261126-T15",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T15",
     "stem": "Đường tròn tâm \\(O(0;0)\\), \\(R=5\\), \\(P(3;4)\\). Viết tiếp tuyến tại P.",
     "answer_key": "\\(3x+4y=25\\).",
     "worked_solution": "Kiểm \\(OP=\\sqrt{3^2+4^2}=5=R\\) nên P thuộc đường tròn. Tiếp tuyến tại P vuông góc với bán kính OP, nên nhận \\(\\overrightarrow{OP}=(3;4)\\) làm pháp tuyến. Phương trình \\(3(x-3)+4(y-4)=0\\), hay \\(3x+4y=25\\).\n\n**Nếu làm sai:** Nếu dùng vectơ tiếp tuyến làm pháp tuyến, hãy vẽ IP vuông góc với tiếp tuyến rồi kiểm P thực sự thuộc đường tròn.\n\n\n**Kiểm lỗi**\n\nNếu chọn vectơ tiếp tuyến làm pháp tuyến hoặc chưa kiểm P nằm trên đường tròn, đọc **Kiến thức 3.3**. Làm **Bài luyện 48** và **Bài luyện 61**, dùng bán kính IP vuông góc tiếp tuyến.",
@@ -520,11 +870,17 @@
       "TOP14-O15"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tiếp tuyến tại P vuông góc với bán kính OP."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -540,11 +896,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(3x+4y=5\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(4x-3y=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(3x+4y=-25\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(3x+4y=25\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T16",
-    "content_version": "TOP14-BANK-CP67-20261126-T16",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T16",
     "stem": "Tìm tâm và bán kính đường tròn đi qua ba điểm \\(A(0;0), B(6;0), C(0;8)\\).",
     "answer_key": "Tâm \\(I(3;4),R=5\\).",
     "worked_solution": "A,B,C tạo thành tam giác vuông tại A vì AB nằm trên Ox và AC nằm trên Oy. Tâm đường tròn ngoại tiếp là trung điểm BC: \\(I(3;4)\\). \\(R=IA=\\sqrt{3^2+4^2}=5\\).\n\n**Nếu làm sai:** Nếu một điểm không cách tâm đúng R, kiểm lại dấu ở tọa độ trung điểm.\n\n\n**Kiểm lỗi**\n\nNếu tâm tìm được không cách đều A,B,C, đọc **Kiến thức 3.4**. Làm **Bài luyện 50** và **Bài luyện 62**, kiểm ba bán kính bằng nhau; ba điểm không thẳng hàng.",
@@ -556,11 +931,17 @@
       "TOP14-O16"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tam giác vuông tại A; tâm ngoại tiếp là trung điểm cạnh huyền."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -576,11 +957,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tâm \\(I(3;4),R=5\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(I(3;4),R=10\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(I(0;0),R=5\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(I(2;\\frac83),R=5\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T17",
-    "content_version": "TOP14-BANK-CP67-20261126-T17",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T17",
     "stem": "Đường tròn \\(x^2+y^2=25\\) và \\(x=5\\) có mấy điểm chung? Điểm nào?",
     "answer_key": "Một điểm chung \\((5;0)\\), tiếp xúc.",
     "worked_solution": "Thế \\(x=5\\) vào \\(x^2+y^2=25\\), được \\(y^2=0\\) nên \\(y=0\\). Có đúng một điểm chung \\((5;0)\\). Đường thẳng \\(x=5\\) tiếp xúc với đường tròn vì khoảng cách từ tâm O đến đường thẳng bằng bán kính 5.\n\n**Nếu làm sai:** Nếu đếm hai nghiệm bằng nhau là hai tiếp điểm, nhớ nghiệm bội chỉ cho **một** điểm.\n\n\n**Kiểm lỗi**\n\nNếu tính hai giao điểm khi đường chỉ tiếp xúc, đọc **Kiến thức 3.5**. Làm **Bài luyện 49** và **Bài luyện 63**, so \\(d(I,d)\\) với R; tiếp xúc chỉ có một điểm.",
@@ -592,11 +992,17 @@
       "TOP14-O17"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Thay x=5 vào phương trình đường tròn rồi giải y."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -612,11 +1018,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không có điểm chung."
+      },
+      {
+        "id": "B",
+        "text": "Một điểm chung \\((5;0)\\), tiếp xúc."
+      },
+      {
+        "id": "C",
+        "text": "Hai điểm chung \\((5;5),(5;-5)\\)."
+      },
+      {
+        "id": "D",
+        "text": "Một điểm chung \\((0;5)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T18",
-    "content_version": "TOP14-BANK-CP67-20261126-T18",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T18",
     "stem": "Với elip \\(\\frac{x^2}{25}+\\frac{y^2}{16}=1\\), tìm hai tiêu điểm.",
     "answer_key": "\\(F_1(-3;0),F_2(3;0)\\).",
     "worked_solution": "\\(c^2=25-16=9\\Rightarrow c=3\\), \\(F_1(-3;0),F_2(3;0)\\).\n\n**Nếu làm sai:** Nếu lấy \\(c^2=a^2+b^2\\), em đang dùng công thức của **hypebol** chứ không phải elip.\n\n\n**Kiểm lỗi**\n\nNếu dùng \\(c^2=a^2+b^2\\) cho elip, đọc **Kiến thức 4.1**. Làm **Bài luyện 65** và **Bài luyện 80**: trên elip chính tắc \\(a^2>b^2>0,\\ c^2=a^2-b^2\\).",
@@ -628,11 +1053,17 @@
       "TOP14-O18"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính c từ c²=a²−b², tiêu điểm nằm trên trục lớn."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -648,11 +1079,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((-5;0),(5;0)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((0;-3),(0;3)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(F_1(-3;0),F_2(3;0)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\((-\\sqrt{41};0),(\\sqrt{41};0)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T19",
-    "content_version": "TOP14-BANK-CP67-20261126-T19",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T19",
     "stem": "Với hypebol \\(\\frac{x^2}{16}-\\frac{y^2}{9}=1\\), hai tiêu điểm ở đâu?",
     "answer_key": "\\(F_1(-5;0),F_2(5;0)\\).",
     "worked_solution": "\\(c^2=16+9=25,\\ c=5\\), tiêu điểm \\((-5;0),(5;0)\\).\n\n**Nếu làm sai:** Nếu tính \\(c=\\sqrt7\\), em đã dùng nhầm phép trừ của elip.\n\n\n**Kiểm lỗi**\n\nNếu lấy \\(c^2=a^2-b^2\\) cho hypebol, đọc **Kiến thức 4.2**. Làm **Bài luyện 66** và **Bài luyện 81**, kiểm dấu trừ trong phương trình và \\(c^2=a^2+b^2\\).",
@@ -664,11 +1114,17 @@
       "TOP14-O19"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Với hypebol dạng này, c²=a²+b²."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -684,11 +1140,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((-\\sqrt7;0),(\\sqrt7;0)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((-4;0),(4;0)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((0;-5),(0;5)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(F_1(-5;0),F_2(5;0)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T20",
-    "content_version": "TOP14-BANK-CP67-20261126-T20",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T20",
     "stem": "Với \\(\\frac{x^2}{25}-\\frac{y^2}{9}=1\\), viết phương trình hai tiệm cận.",
     "answer_key": "\\(y=\\pm\\frac35 x\\).",
     "worked_solution": "Với hypebol \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\), hai tiệm cận có phương trình \\(y=\\pm\\frac ba x\\). Ở đây \\(a=5,b=3\\), nên \\(y=\\pm\\frac35 x\\).\n\n**Nếu làm sai:** Nếu ra \\(x=\\pm5\\), em đã nhầm tọa độ đỉnh với tiệm cận.\n\n\n**Kiểm lỗi**\n\nNếu nhầm tọa độ đỉnh \\((\\pm a;0)\\) với hai tiệm cận, đọc **Kiến thức 4.3**. Làm **Bài luyện 75** và **Bài luyện 82**; đường tiệm cận qua tâm có hệ số góc \\(\\pm\\frac ba\\).",
@@ -700,11 +1175,17 @@
       "TOP14-O20"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Với dạng chuẩn, tiệm cận có hệ số góc ±b/a."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -720,11 +1201,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(y=\\pm\\frac35 x\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(y=\\pm\\frac53x\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(y=\\pm\\frac9{25}x\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(y=\\pm3\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T21",
-    "content_version": "TOP14-BANK-CP67-20261126-T21",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T21",
     "stem": "\\(y^2=6x\\) có tiêu điểm và đường chuẩn nào?",
     "answer_key": "\\(F(\\frac32;0)\\); đường chuẩn \\(x=-\\frac32\\).",
     "worked_solution": "\\(p=3,\\ F(\\frac32;0)\\), đường chuẩn \\(x=-\\frac32\\).\n\n**Nếu làm sai:** Nếu lấy \\(F(3;0)\\), em đã nhầm p với \\(\\frac p2\\).\n\n\n**Kiểm lỗi**\n\nNếu đồng nhất p với hoành độ tiêu điểm, đọc **Kiến thức 4.4**. Làm **Bài luyện 69** và **Bài luyện 83**, xác định \\(F(\\frac p2;0)\\), đường chuẩn \\(x=-\\frac p2\\) trong \\(y^2=2px\\).",
@@ -736,11 +1236,17 @@
       "TOP14-O21"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So với y²=2px rồi dùng tiêu điểm (p/2;0)."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -756,11 +1262,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(F(3;0)\\); đường chuẩn \\(x=-3\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(F(\\frac32;0)\\); đường chuẩn \\(x=-\\frac32\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(F(0;\\frac32)\\); đường chuẩn \\(y=-\\frac32\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(F(-\\frac32;0)\\); đường chuẩn \\(x=\\frac32\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T22",
-    "content_version": "TOP14-BANK-CP67-20261126-T22",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T22",
     "stem": "Parabol \\(y^2=4x\\) và đường \\(x=1\\) có bao nhiêu giao điểm?",
     "answer_key": "Hai giao điểm \\((1;2),(1;-2)\\).",
     "worked_solution": "Thay \\(x=1\\) vào \\(y^2=4x\\) được \\(y^2=4\\), nên \\(y=2\\) hoặc \\(y=-2\\). Hai điểm \\((1;2),(1;-2)\\) đều thỏa mãn hai phương trình.\n\n**Nếu làm sai:** Nếu chỉ lấy \\(y=2\\), em đã bỏ nghiệm âm khi giải \\(y^2=4\\). Thay \\(x=1\\) vào parabol \\(y^2=4x\\), ta được \\(y=\\pm2\\); cả \\((1;2)\\) và \\((1;-2)\\) đều thuộc parabol và đối xứng qua trục \\(Ox\\).\n\n\n**Kiểm lỗi**\n\nNếu chỉ giữ nghiệm y dương khi giao parabol với đường thẳng hoặc nhầm parabol và elip, đọc **Kiến thức 4.5**. Làm **Bài luyện 84** (cắt elip) và **Bài luyện 87** (cắt parabol), thế nghiệm trở lại cả hai phương trình.",
@@ -772,11 +1297,17 @@
       "TOP14-O22"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Thay x=1 vào y²=4x."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -792,11 +1323,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Một điểm \\((1;2)\\)."
+      },
+      {
+        "id": "B",
+        "text": "Hai điểm \\((2;1),(-2;1)\\)."
+      },
+      {
+        "id": "C",
+        "text": "Hai giao điểm \\((1;2),(1;-2)\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không có giao điểm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP14-T23",
-    "content_version": "TOP14-BANK-CP67-20261126-T23",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T23",
     "stem": "Mặt cắt ăng-ten là parabol có đỉnh \\(O\\), trục đối xứng \\(Ox\\), mở về phía \\(x>0\\). Nguồn thu ở tiêu điểm cách đỉnh 3 cm. Viết phương trình mặt cắt trong đơn vị cm.",
     "answer_key": "\\(y^2=12x\\), tọa độ tính bằng cm.",
     "worked_solution": "Mặt cắt là parabol đỉnh O, tiêu điểm \\(F(3;0)\\), nên \\(f=3\\) cm và \\(y^2=4fx=12x\\), với tọa độ tính bằng cm. Đường chuẩn là \\(x=-3\\). So với \\(y^2=2px\\), ta có \\(p=6\\), không phải 3.\n\n**Nếu làm sai:** Nếu viết \\(y^2=6x\\), em đã quên rằng \\(f=\\frac p2\\).\n\n\n**Kiểm lỗi**\n\nNếu viết \\(y^2=2fx\\) thay cho \\(y^2=4fx\\) khi f là khoảng cách từ đỉnh đến tiêu điểm, đọc **Kiến thức 4.6**. Làm **Bài luyện 78** và **Bài luyện 85**; độ rộng mặt cắt bằng hai lần \\(|y|\\) tại cùng x.",
@@ -809,11 +1359,17 @@
       "TOP14-O23"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Với tiêu điểm (f;0), phương trình y²=4fx."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -829,7 +1385,26 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(y^2=6x\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x^2=12y\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(y^2=-12x\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(y^2=12x\\), tọa độ tính bằng cm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T01",
@@ -17637,7 +18212,7 @@
   },
   {
     "item_id": "THPT-TOP12-KFT01",
-    "content_version": "TOP12-BANK-CP76-20261126-KFT01",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-KFT01",
     "stem": "Không nhìn bảng, dự đoán dấu của \\(\\sin  150^{\\circ}\\) và \\(\\cos  150^{\\circ}\\) trước khi tính.",
     "answer_key": "\\(\\sin150^\\circ=\\frac12>0,\\ \\cos150^\\circ=-\\frac{\\sqrt3}2<0\\).",
     "worked_solution": "\\(150^\\circ\\) là góc tù: điểm trên nửa đường tròn phía trên bên trái, do đó sin dương và cos âm. Cụ thể \\(\\sin150^\\circ=\\frac12,\\ \\cos150^\\circ=-\\frac{\\sqrt3}2\\). Nếu viết cos dương, hãy quay lại hình chiếu M trên trục hoành rồi làm bài luyện về côsin góc tù.\n\n**Kiểm lỗi**\n\nNếu em chọn \\(\\cos150^\\circ\\) dương, đọc hình nửa đường tròn ở **Kiến thức 1.1**: hoành độ bên trái trục Oy phải âm. Tự làm **Bài luyện 1** và **Bài luyện 3**.",
@@ -17650,11 +18225,17 @@
       "TOP12-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét vị trí điểm trên nửa đường tròn và góc bù 30° trước khi tính."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -17666,11 +18247,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\sin150^\\circ=\\frac12>0,\\ \\cos150^\\circ=-\\frac{\\sqrt3}2<0\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\sin150^\\circ=-\\frac12,\\cos150^\\circ=\\frac{\\sqrt3}2\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\sin150^\\circ=\\frac12,\\cos150^\\circ=\\frac{\\sqrt3}2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\sin150^\\circ=\\frac{\\sqrt3}2,\\cos150^\\circ=-\\frac12\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP12-KFT03",
-    "content_version": "TOP12-BANK-CP76-20261126-KFT03",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-KFT03",
     "stem": "Tại \\(\\alpha=90^{\\circ}\\), đại lượng nào không xác định: \\(\\sin \\alpha\\), \\(\\cos \\alpha\\), \\(\\tan \\alpha\\), hay cả ba?",
     "answer_key": "Chỉ \\(\\tan90^\\circ\\) không xác định.",
     "worked_solution": "Chỉ \\(\\tan\\alpha\\) không xác định vì mẫu \\(\\cos90^\\circ=0\\). Nếu nghĩ \\(\\cos90^\\circ\\) không xác định, quay lại định nghĩa hoành độ ở Kiến thức 1.1 và làm bài luyện về điều kiện của tang.\n\n**Kiểm lỗi**\n\nNếu em nghĩ \\(\\tan90^\\circ\\) có giá trị, xem điều kiện mẫu cos khác 0 ở **Kiến thức 1.3**. Làm **Bài luyện 2** và **Bài luyện 8** trước khi dùng phép chia.",
@@ -17682,11 +18282,17 @@
       "TOP12-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Viết tang dưới dạng thương của sin và cos; kiểm tra mẫu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -17698,11 +18304,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ sin."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ \\(\\tan90^\\circ\\) không xác định."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ cos."
+      },
+      {
+        "id": "D",
+        "text": "Cả ba."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP12-KFT05",
-    "content_version": "TOP12-BANK-CP76-20261126-KFT05",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-KFT05",
     "stem": "Trong tam giác ABC, cho \\(b=5,\\ c=7,\\ A=60^\\circ\\). Tìm a và giải thích vì sao không dùng định lí Pitago trực tiếp.",
     "answer_key": "\\(a=\\sqrt{39}\\); góc xen giữa không vuông.",
     "worked_solution": "\\(a^2=25+49-2\\cdot5\\cdot7\\cdot\\frac12=39\\), nên \\(a=\\sqrt{39}\\). Pitago chỉ dùng trực tiếp khi góc xen giữa \\(90^\\circ\\). Nếu đặt nhầm cạnh đối diện, quay lại sơ đồ \\(a=BC,\\ b=CA,\\ c=AB\\) rồi làm bài luyện về định lí côsin.\n\n**Kiểm lỗi**\n\nNếu em dùng Pitago khi góc kẹp 120° hoặc gán sai cạnh đối diện, đọc **Kiến thức 2.1**, làm **Bài luyện 10** và **Bài luyện 21** bằng định lí côsin.",
@@ -17714,11 +18339,17 @@
       "TOP12-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Biết hai cạnh và góc xen giữa, viết định lí côsin."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -17730,11 +18361,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(a=\\sqrt{74}\\); dùng Pitago cho mọi tam giác."
+      },
+      {
+        "id": "B",
+        "text": "\\(a=\\sqrt{109}\\); vì cos 60° âm."
+      },
+      {
+        "id": "C",
+        "text": "\\(a=\\sqrt{39}\\); góc xen giữa không vuông."
+      },
+      {
+        "id": "D",
+        "text": "\\(a=\\sqrt{39}\\); vì góc xen giữa vuông."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP12-KFT06",
-    "content_version": "TOP12-BANK-CP76-20261126-KFT06",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-KFT06",
     "stem": "Trong tam giác ABC có \\(A=30^\\circ,\\ B=60^\\circ,\\ a=4\\). Tìm b và bán kính ngoại tiếp R.",
     "answer_key": "\\(b=4\\sqrt3,\\ R=4\\).",
     "worked_solution": "\\(b=\\frac{4\\sin60^\\circ}{\\sin30^\\circ}=4\\sqrt3,\\ 2R=\\frac4{\\sin30^\\circ}=8\\), nên \\(R=4\\). Nếu lấy \\(\\frac ba=\\frac{\\sin A}{\\sin B}\\), xem lại thứ tự đối diện rồi làm bài luyện về định lí sin.\n\n**Kiểm lỗi**\n\nNếu em đảo cạnh và góc đối diện trong định lí sin, đọc **Kiến thức 2.2**, tự tìm góc thứ ba trong **Bài luyện 12** và **Bài luyện 14**, kiểm lại từng cặp cạnh–góc.",
@@ -17746,11 +18396,17 @@
       "TOP12-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Ghép cạnh a với sin A; dùng tỉ số chung bằng 2R."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -17762,11 +18418,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(b=4\\sqrt3,R=8\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(b=2\\sqrt3,R=4\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(b=4,R=2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(b=4\\sqrt3,\\ R=4\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP12-KFT07",
-    "content_version": "TOP12-BANK-CP76-20261126-KFT07",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-KFT07",
     "stem": "Tam giác có ba cạnh 6,8,10: góc đối diện cạnh 10 bằng bao nhiêu? Diện tích bao nhiêu?",
     "answer_key": "Góc \\(90^\\circ\\); diện tích 24.",
     "worked_solution": "\\(6^2+8^2=10^2\\), nên góc đối diện cạnh 10 là \\(90^\\circ\\). Diện tích bằng \\(\\frac12\\cdot6\\cdot8=24\\) đơn vị vuông. Nếu chỉ biết ba cạnh mà áp dụng ngay định lí sin, quay lại bảng SSS rồi làm bài luyện về góc vuông từ ba cạnh.\n\n**Kiểm lỗi**\n\nNếu em biết ba cạnh mà bắt đầu từ định lí sin, đọc bảng chọn phương pháp ở **Kiến thức 2.3**. Làm **Bài luyện 17** và **Bài luyện 23**, kiểm SSS và Pitago đảo/côsin.",
@@ -17779,11 +18454,17 @@
       "TOP12-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So bình phương cạnh lớn nhất với tổng hai bình phương còn lại."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -17795,13 +18476,32 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Góc \\(90^\\circ\\); diện tích 24."
+      },
+      {
+        "id": "B",
+        "text": "\\(60^\\circ;S=24\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(90^\\circ;S=48\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(120^\\circ;S=24\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP12-KFT08",
-    "content_version": "TOP12-BANK-CP76-20261126-KFT08",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-KFT08",
     "stem": "Có tồn tại tam giác ABC thỏa \\(A=30^\\circ,\\ a=4,\\ b=10\\) không?",
-    "answer_key": "Không tồn tại tam giác.",
+    "answer_key": "Không tồn tại tam giác vì \\(\\sin B=\\frac54>1\\).",
     "worked_solution": "\\(\\sin B=\\frac{10\\sin30^\\circ}4=\\frac54>1\\) là vô lý, nên **không tồn tại tam giác**. Không dùng máy tính \\(\\arcsin(1{,}25)\\); hãy kiểm điều kiện đầu vào. Ôn Định lí sin ở Kiến thức 2.2, đọc lại Kiến thức 2.4 rồi làm Bài luyện 25 về dữ kiện vô nghiệm.\n\n**Kiểm lỗi**\n\nNếu em dừng ở một góc do arcsin trả về hoặc bỏ kiểm điều kiện, đọc **Kiến thức 2.4**. Làm **Bài luyện 24** (hai nghiệm) và **Bài luyện 25** (vô nghiệm), xét cả góc bù và tổng A+B nhỏ hơn 180°.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -17811,11 +18511,17 @@
       "TOP12-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng định lí sin để tìm sin B, rồi kiểm tra miền giá trị."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -17827,14 +18533,33 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có đúng một tam giác vuông."
+      },
+      {
+        "id": "B",
+        "text": "Không tồn tại tam giác vì \\(\\sin B=\\frac54>1\\)."
+      },
+      {
+        "id": "C",
+        "text": "Có hai tam giác."
+      },
+      {
+        "id": "D",
+        "text": "Có đúng một tam giác nhọn."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP12-KFT09",
-    "content_version": "TOP12-BANK-CP76-20261126-KFT09",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-KFT09",
     "stem": "Trong tam giác ABC có \\(b=6,\\ c=8,\\ A=60^\\circ\\). Tính diện tích; xác định hai cạnh kề góc A.",
-    "answer_key": "\\(S=12\\sqrt3\\).",
-    "worked_solution": "\\(S=\\frac12\\cdot6\\cdot8\\sin60^\\circ=12\\sqrt3\\) đơn vị diện tích. Nếu ra \\(24\\sqrt3\\), em đã quên hệ số \\(\\frac12\\). Luyện bài luyện cùng dạng.\n\n**Kiểm lỗi**\n\nNếu em quên hệ số một phần hai hoặc cho rằng sin của góc tù âm, đọc **Kiến thức 3.1**. Giải **Bài luyện 11** và **Bài luyện 26**, chọn đúng góc xen giữa hai cạnh.",
+    "answer_key": "\\(S=12\\sqrt3\\); hai cạnh kề góc A là b,c.",
+    "worked_solution": "\\(S=\\frac12\\cdot6\\cdot8\\sin60^\\circ=12\\sqrt3\\) đơn vị diện tích. Hai cạnh kề góc A là b=CA và c=AB. Nếu ra \\(24\\sqrt3\\), em đã quên hệ số \\(\\frac12\\). Luyện bài luyện cùng dạng.\n\n**Kiểm lỗi**\n\nNếu em quên hệ số một phần hai hoặc cho rằng sin của góc tù âm, đọc **Kiến thức 3.1**. Giải **Bài luyện 11** và **Bài luyện 26**, chọn đúng góc xen giữa hai cạnh.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-AREA_SIN"
@@ -17843,11 +18568,17 @@
       "TOP12-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai cạnh kề góc A là b và c; dùng nửa tích hai cạnh nhân sin góc xen giữa."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -17859,11 +18590,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=24\\sqrt3\\); cạnh kề là b,c."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=12\\); cạnh kề là b,c."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=12\\sqrt3\\); hai cạnh kề góc A là b,c."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=12\\sqrt3\\); cạnh kề là a,b."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP12-KFT10",
-    "content_version": "TOP12-BANK-CP76-20261126-KFT10",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-KFT10",
     "stem": "Tam giác có ba cạnh 5, 5, 6. Tính diện tích S và bán kính nội tiếp r.",
     "answer_key": "\\(S=12,\\ r=\\frac32\\).",
     "worked_solution": "\\(p=8;\\ S=\\sqrt{8\\cdot3\\cdot3\\cdot2}=12;\\ r=\\frac Sp=\\frac32\\). Nếu dùng \\(\\frac{abc}{4S}\\) sẽ tìm **R**, không phải r. Luyện bài luyện về Heron.\n\n**Kiểm lỗi**\n\nNếu em nhầm r nội tiếp với R ngoại tiếp, đọc **Kiến thức 3.2**. Làm **Bài luyện 13** và **Bài luyện 27** bằng Heron rồi đối chiếu \\(r=\\frac Sp\\) và \\(R=\\frac{abc}{4S}\\).",
@@ -17875,11 +18625,17 @@
       "TOP12-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính nửa chu vi p rồi dùng Heron và S=pr."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -17891,11 +18647,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=12,r=3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(S=24,r=3\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(S=12,r=\\frac{25}8\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(S=12,\\ r=\\frac32\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP12-KFT11",
-    "content_version": "TOP12-BANK-CP76-20261126-KFT11",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-KFT11",
     "stem": "Nếu \\(AB=80\\,\\mathrm m\\), góc \\(A=B=45^\\circ\\), độ dài BC và AC có bằng nhau không? Bằng bao nhiêu?",
     "answer_key": "\\(BC=AC=40\\sqrt2\\) m.",
     "worked_solution": "\\(C=90^\\circ,\\ BC=\\frac{80\\sin45^\\circ}{\\sin90^\\circ}=40\\sqrt2\\,\\mathrm m,\\ AC=40\\sqrt2\\,\\mathrm m\\). Bằng nhau vì \\(A=B\\). Nếu ra một cạnh khác, kiểm lại quan hệ đối diện trước khi bấm máy. Luyện bài luyện về đo đạc.\n\n**Kiểm lỗi**\n\nNếu em ghép AB với góc A thay vì góc đối diện C, đọc **Kiến thức 3.3**. Vẽ lại vị trí quan sát rồi làm **Bài luyện 16** và **Bài luyện 28**, luôn ghi đơn vị chiều dài.",
@@ -17908,11 +18683,17 @@
       "TOP12-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm góc C, ghép AB với sin C."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -17924,11 +18705,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(BC=AC=40\\sqrt2\\) m."
+      },
+      {
+        "id": "B",
+        "text": "\\(BC=AC=80\\sqrt2\\) m."
+      },
+      {
+        "id": "C",
+        "text": "\\(BC=AC=40\\) m."
+      },
+      {
+        "id": "D",
+        "text": "\\(BC=40\\sqrt2\\) m, \\(AC=80\\) m."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT01",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT01",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT01",
     "stem": "Hai vectơ được biểu diễn bằng hai mũi tên dài 4 ô, một hướng trái, một hướng phải. Hai vectơ có bằng nhau không?",
     "answer_key": "Không, cùng độ dài nhưng ngược hướng.",
     "worked_solution": "Không: cùng độ dài nhưng ngược hướng.\n\n**Khi làm sai:** Nếu chỉ so số 4, vẽ đuôi và đầu mũi tên rồi so **chiều**, không so mỗi độ dài.\n\n\n**Kiểm lỗi**\n\nNếu em chỉ so độ dài mà quên hướng, đọc **Kiến thức 1.1** rồi làm **Bài luyện 33** (cùng hướng) và **Bài luyện 9** (nhân số âm đổi chiều). Mũi tên ngược chiều không phải vectơ bằng nhau.",
@@ -17941,11 +18741,17 @@
       "TOP13-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm tra đồng thời độ dài và hướng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -17957,11 +18763,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, vì cùng độ dài."
+      },
+      {
+        "id": "B",
+        "text": "Không, cùng độ dài nhưng ngược hướng."
+      },
+      {
+        "id": "C",
+        "text": "Có, vì cùng phương."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì độ dài khác nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT02",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT02",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT02",
     "stem": "Cho hình bình hành ABCD (các đỉnh theo thứ tự). Vectơ nào bằng \\(\\overrightarrow{AD}\\): \\(\\overrightarrow{BC}\\) hay \\(\\overrightarrow{CB}\\)?",
     "answer_key": "\\(\\overrightarrow{BC}\\).",
     "worked_solution": "\\(\\overrightarrow{BC}\\), vì cùng hướng và độ dài với \\(\\overrightarrow{AD}\\); \\(\\overrightarrow{CB}\\) là vectơ đối.\n\n**Khi làm sai:** Nếu nhầm \\(\\overrightarrow{BC}\\) với \\(\\overrightarrow{CB}\\), đọc mũi tên từ điểm đầu đến điểm cuối trước khi dùng tính chất hình bình hành.\n\n\n**Kiểm lỗi**\n\nNếu em đọc \\(\\overrightarrow{CB}\\) như \\(\\overrightarrow{BC}\\), đọc **Kiến thức 1.2**, làm **Bài luyện 3** và **Bài luyện 33**. Kiểm riêng điểm đầu, điểm cuối, phương, chiều và độ dài.",
@@ -17973,11 +18798,17 @@
       "TOP13-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Theo thứ tự đỉnh, so hai cạnh đối cả về độ dài lẫn chiều mũi tên."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -17989,11 +18820,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{CB}\\)"
+      },
+      {
+        "id": "B",
+        "text": "Cả hai."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{BC}\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không vectơ nào."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT03",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT03",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT03",
     "stem": "Đi 6 m đông rồi 8 m bắc, độ dài độ dời bằng mấy mét?",
     "answer_key": "10 m.",
     "worked_solution": "Hai hướng đông và bắc vuông góc. Độ dài độ dời là \\(\\sqrt{6^2+8^2}=10\\) m, còn quãng đường là \\(6+8=14\\) m.\n\n**Khi làm sai:** Nếu chọn 14 m, vẽ đường thẳng nối điểm xuất phát với đích: đó mới là độ dời.\n\n\n**Kiểm lỗi**\n\nNếu em cộng quãng đường thay cho độ dài độ dời, đọc **Kiến thức 1.3**, làm **Bài luyện 5** (Chasles) và **Bài luyện 35** (đi hai chặng). Độ dời nối điểm đầu với điểm cuối, không phải tổng mọi đoạn đã đi.",
@@ -18006,11 +18856,17 @@
       "TOP13-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Vẽ hai chặng vuông góc và đường nối đầu cuối; dùng Pitago."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18022,11 +18878,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "14 m."
+      },
+      {
+        "id": "B",
+        "text": "2 m."
+      },
+      {
+        "id": "C",
+        "text": "48 m."
+      },
+      {
+        "id": "D",
+        "text": "10 m."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT04",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT04",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT04",
     "stem": "Rút gọn \\(\\overrightarrow{PQ}-\\overrightarrow{PR}\\) thành vectơ nối R và Q.",
     "answer_key": "\\(\\overrightarrow{RQ}\\).",
     "worked_solution": "\\(\\overrightarrow{RQ}\\). Vì \\(\\overrightarrow{PQ}-\\overrightarrow{PR}=\\overrightarrow{RP}+\\overrightarrow{PQ}=\\overrightarrow{RQ}\\).\n\n**Khi làm sai:** Nếu ra \\(\\overrightarrow{QR}\\), vẽ đường đi từ R qua P đến Q và kiểm lại điểm đầu, điểm cuối.\n\n\n**Kiểm lỗi**\n\nNếu em đổi chiều \\(\\overrightarrow{RQ}\\) thành \\(\\overrightarrow{QR}\\), đọc **Kiến thức 1.4**, làm **Bài luyện 7** và **Bài luyện 36**. Viết phép trừ thành cộng vectơ đối rồi đối chiếu tọa độ cuối trừ đầu.",
@@ -18038,11 +18913,17 @@
       "TOP13-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng quy tắc hiệu hai vectơ chung điểm đầu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18054,11 +18935,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{RQ}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{QR}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{PQ}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{PR}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT05",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT05",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT05",
     "stem": "\\(\\vec v=-3\\vec u,\\ |\\vec u|=2\\). Tìm \\(|\\vec v|\\) và quan hệ hướng.",
     "answer_key": "\\(|\\vec v|=6\\); ngược hướng \\(\\vec u\\).",
     "worked_solution": "\\(|\\vec v|=6\\); \\(\\vec v\\) ngược hướng \\(\\vec u\\).\n\n**Khi làm sai:** Nếu ghi \\(-6\\), nhớ độ dài không thể âm; lấy \\(|k|\\) trước.\n\n\n**Kiểm lỗi**\n\nNếu em ghi độ dài \\(|-3\\vec u|=-6\\) hoặc nói vectơ cùng chiều, đọc **Kiến thức 1.5**, làm **Bài luyện 9** và **Bài luyện 37**. Độ dài nhân \\(|k|\\), dấu âm chỉ làm ngược hướng vectơ khác không.",
@@ -18070,11 +18970,17 @@
       "TOP13-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Độ dài nhân với trị tuyệt đối của hệ số; hướng xét dấu hệ số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18086,11 +18992,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(|\\vec v|=6\\); cùng hướng."
+      },
+      {
+        "id": "B",
+        "text": "\\(|\\vec v|=6\\); ngược hướng \\(\\vec u\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(|\\vec v|=-6\\); ngược hướng."
+      },
+      {
+        "id": "D",
+        "text": "\\(|\\vec v|=2\\); ngược hướng."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT06",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT06",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT06",
     "stem": "Tam giác \\(A(0;0),\\ B(3;0),\\ C(0;6)\\) có trọng tâm ở đâu?",
     "answer_key": "\\(G(1;2)\\).",
     "worked_solution": "Tọa độ trọng tâm là trung bình từng tọa độ của ba đỉnh: \\(G(\\frac{0+3+0}3;\\frac{0+0+6}3)=(1;2)\\).\n\n**Khi làm sai:** Nếu lấy trung bình ba độ dài cạnh, hãy nhớ mỗi tọa độ của G là trung bình ba tọa độ tương ứng.\n\n\n**Kiểm lỗi**\n\nNếu em lấy trung bình độ dài thay vì tọa độ đỉnh, đọc **Kiến thức 1.6**, làm **Bài luyện 8** và **Bài luyện 38**. Trung điểm và trọng tâm là các tổ hợp vectơ của vị trí các đỉnh.",
@@ -18102,11 +19027,17 @@
       "TOP13-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Lấy trung bình cộng tọa độ ba đỉnh."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18118,11 +19049,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(G(\\frac32;3)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(G(3;6)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(G(1;2)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(G(2;1)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT07",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT07",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT07",
     "stem": "\\(A(4;-1),\\ B(-2;3)\\); tọa độ \\(\\overrightarrow{AB}\\) bằng bao nhiêu?",
     "answer_key": "\\(\\overrightarrow{AB}=(-6;4)\\).",
     "worked_solution": "Lấy tọa độ điểm cuối trừ điểm đầu: \\(\\overrightarrow{AB}=(-2-4;3-(-1))=(-6;4)\\).\n\n**Khi làm sai:** Nếu ra \\((6;-4)\\), em đã tính \\(\\overrightarrow{BA}\\); hãy viết “cuối trừ đầu” bên cạnh phép tính.\n\n\n**Kiểm lỗi**\n\nNếu em lấy tọa độ đầu trừ tọa độ cuối, đọc **Kiến thức 2.1**, làm **Bài luyện 13** và **Bài luyện 39**. Viết rõ tọa độ điểm cuối trừ điểm đầu rồi mới tính độ dài.",
@@ -18134,11 +19084,17 @@
       "TOP13-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Lấy tọa độ điểm cuối trừ tọa độ điểm đầu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18150,11 +19106,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((6;-4)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((2;2)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-6;-4)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{AB}=(-6;4)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT08",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT08",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT08",
     "stem": "\\(\\vec u=(2;4),\\ \\vec v=(-1;-2)\\): chúng cùng phương, cùng hướng không?",
     "answer_key": "Cùng phương, ngược hướng.",
     "worked_solution": "Cùng phương nhưng ngược hướng vì \\(\\vec v=-\\frac12\\vec u\\).\n\n**Khi làm sai:** Nếu dựa vào định thức bằng 0 để chọn cùng hướng, cần kiểm tiếp dấu của hệ số tỉ lệ.\n\n\n**Kiểm lỗi**\n\nNếu em suy cùng hướng chỉ từ định thức bằng 0, đọc **Kiến thức 2.2**, làm **Bài luyện 16** và **Bài luyện 40**. Cùng phương vẫn có thể ngược hướng khi hệ số tỉ lệ âm.",
@@ -18167,11 +19142,17 @@
       "TOP13-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tìm hệ số k sao cho v=ku và xét dấu k."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18183,11 +19164,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cùng phương, ngược hướng."
+      },
+      {
+        "id": "B",
+        "text": "Cùng phương, cùng hướng."
+      },
+      {
+        "id": "C",
+        "text": "Không cùng phương."
+      },
+      {
+        "id": "D",
+        "text": "Vuông góc."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT09",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT09",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT09",
     "stem": "Một lực không đổi có độ lớn 5 N, vuông góc với độ dời dài 2 m của vật. Tính công của lực.",
     "answer_key": "0 J.",
     "worked_solution": "Vì lực không đổi và vuông góc độ dời, \\(W=5\\cdot2\\cos90^\\circ=0\\) J.\n\n**Khi làm sai:** Nếu nhân thành 10 J, còn thiếu cos của góc giữa hai vectơ.\n\n\n**Kiểm lỗi**\n\nNếu em nhân \\(5\\cdot2\\) mà quên góc lực–độ dời, đọc **Kiến thức 2.3**, làm **Bài luyện 18** và **Bài luyện 41**. Công bằng tích vô hướng, cần hệ số \\(\\cos\\theta\\).",
@@ -18199,11 +19199,17 @@
       "TOP13-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Công bằng độ lớn lực nhân độ dời nhân cos góc giữa chúng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18215,11 +19221,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 J."
+      },
+      {
+        "id": "B",
+        "text": "0 J."
+      },
+      {
+        "id": "C",
+        "text": "5 J."
+      },
+      {
+        "id": "D",
+        "text": "−10 J."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT10",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT10",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT10",
     "stem": "\\(\\vec u=(1;2),\\ \\vec v=(4;-2)\\) có vuông góc không?",
     "answer_key": "Có, hai vectơ khác không và tích vô hướng bằng 0.",
     "worked_solution": "Có, \\(\\vec u\\cdot\\vec v=1\\cdot4+2(-2)=0\\) và cả hai vectơ khác không.\n\n**Khi làm sai:** Nếu cộng thành phần thay vì nhân từng cặp, xem lại hai trục tọa độ vuông góc.\n\n\n**Kiểm lỗi**\n\nNếu em cộng các thành phần thay vì nhân từng cặp tọa độ khi kiểm vuông góc, đọc **Kiến thức 2.4**, làm **Bài luyện 19** và **Bài luyện 42**. Chỉ khi cả hai vectơ khác không mới suy góc 90° từ tích vô hướng bằng 0.",
@@ -18232,11 +19257,17 @@
       "TOP13-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính tích vô hướng theo tọa độ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18248,11 +19279,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, tích vô hướng bằng 8."
+      },
+      {
+        "id": "B",
+        "text": "Không, tích vô hướng bằng −8."
+      },
+      {
+        "id": "C",
+        "text": "Có, hai vectơ khác không và tích vô hướng bằng 0."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì hai độ dài khác nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT12",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT12",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT12",
     "stem": "\\(\\overrightarrow{AB}=(2;-1;3)\\), \\(\\overrightarrow{BC}=(-4;2;0)\\): tọa độ \\(\\overrightarrow{AC}\\) là gì?",
     "answer_key": "\\(\\overrightarrow{AC}=(-2;1;3)\\).",
     "worked_solution": "Theo quy tắc ba điểm, \\(\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{BC}=(2-4;-1+2;3+0)=(-2;1;3)\\).\n\n**Khi làm sai:** Nếu trừ vì nghĩ chiều BC ngược AB, nhớ quy tắc đường đi là cộng nối tiếp.\n\n\n**Kiểm lỗi**\n\nNếu em trừ \\(\\overrightarrow{BC}\\) vì nhìn hai mũi tên khác chiều trên hình, đọc **Kiến thức 3.2**, làm **Bài luyện 23** và **Bài luyện 44**. Quy tắc ba điểm vẫn là \\(\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}\\).",
@@ -18266,11 +19316,17 @@
       "TOP13-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng quy tắc ba điểm rồi cộng từng tọa độ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18282,11 +19338,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((6;-3;3)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((-2;1;0)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-6;3;-3)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{AC}=(-2;1;3)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT13",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT13",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT13",
     "stem": "\\(\\vec u=(1;1;0),\\ \\vec v=(1;-1;5)\\) có vuông góc không?",
     "answer_key": "Có, hai vectơ khác không và tích vô hướng bằng 0.",
     "worked_solution": "Có: tích vô hướng \\(\\vec u\\cdot\\vec v=1\\cdot1+1\\cdot(-1)+0\\cdot5=0\\). Cả hai vectơ khác không, nên góc giữa chúng bằng \\(90^\\circ\\).\n\n**Khi làm sai:** Nếu hình xiên đánh lừa thị giác, dùng phép tích vô hướng.\n\n\n**Kiểm lỗi**\n\nNếu em tin trực giác hình xiên mà không kiểm tích vô hướng, đọc **Kiến thức 3.3**, làm **Bài luyện 42** và **Bài luyện 45**. Tính tổng ba tích thành phần; dùng góc chỉ khi hai vectơ khác không.",
@@ -18298,11 +19373,17 @@
       "TOP13-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính tổng ba tích tọa độ tương ứng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18314,11 +19395,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, hai vectơ khác không và tích vô hướng bằng 0."
+      },
+      {
+        "id": "B",
+        "text": "Không, tích vô hướng bằng 2."
+      },
+      {
+        "id": "C",
+        "text": "Không, tích vô hướng bằng 5."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì tọa độ thứ ba khác nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT14",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT14",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT14",
     "stem": "\\(A(2;0;-1),\\ B(-1;5;3)\\): tọa độ \\(\\overrightarrow{AB}\\) là gì?",
     "answer_key": "\\(\\overrightarrow{AB}=(-3;5;4)\\).",
     "worked_solution": "Tọa độ điểm cuối trừ điểm đầu: \\(\\overrightarrow{AB}=(-1-2;5-0;3-(-1))=(-3;5;4)\\).\n\n**Khi làm sai:** Nếu đổi dấu tất cả, em đã lấy tọa độ điểm đầu trừ điểm cuối.\n\n\n**Kiểm lỗi**\n\nNếu em viết tọa độ điểm B thay vì tọa độ \\(\\overrightarrow{AB}\\), đọc **Kiến thức 3.4**, làm **Bài luyện 25** và **Bài luyện 46**. Phân biệt vị trí so với O với độ dời từ A tới B.",
@@ -18330,11 +19430,17 @@
       "TOP13-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Lấy từng tọa độ của B trừ tọa độ tương ứng của A."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18346,11 +19452,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((3;-5;-4)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{AB}=(-3;5;4)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\((1;5;2)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((-3;5;2)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT15",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT15",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT15",
     "stem": "\\(A(0;0;0),\\ B(6;0;0),\\ C(0;3;9)\\): trọng tâm?",
     "answer_key": "\\(G(2;1;3)\\).",
     "worked_solution": "Trọng tâm là trung bình từng tọa độ của ba đỉnh: \\(G(\\frac{0+6+0}3;\\frac{0+0+3}3;\\frac{0+0+9}3)=(2;1;3)\\).\n\n**Khi làm sai:** Nếu \\(z=9\\), em đã quên chia tổng cao độ ba đỉnh cho 3.\n\n\n**Kiểm lỗi**\n\nNếu em chia tọa độ trọng tâm sai hoặc nhầm khoảng cách với vectơ, đọc **Kiến thức 3.5**, làm **Bài luyện 31** và **Bài luyện 47**. Trung điểm lấy trung bình từng tọa độ, độ dài luôn là một số không âm.",
@@ -18362,11 +19487,17 @@
       "TOP13-O15"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tọa độ trọng tâm là trung bình cộng của từng tọa độ ba đỉnh."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18378,11 +19509,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(G(3;\\frac32;\\frac92)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(G(6;3;9)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(G(2;1;3)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(G(2;3;1)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP13-KFT16",
-    "content_version": "TOP13-BANK-CP76-20261126-KFT16",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT16",
     "stem": "Vật đi thẳng theo vectơ dịch chuyển \\((1;0;0)\\) m rồi đi thẳng theo \\((-1;0;0)\\) m. Tìm vectơ độ dời, độ dài độ dời và tổng quãng đường.",
     "answer_key": "Vectơ độ dời bằng vectơ-không, độ dài 0 m; quãng đường 2 m.",
     "worked_solution": "Cộng hai vectơ dịch chuyển được \\((1;0;0)+(-1;0;0)=(0;0;0)\\), nên độ dài độ dời 0 m. Tổng quãng đường hai chặng thẳng là \\(1+1=2\\) m.\n\n**Khi làm sai:** Nếu trả lời cả hai bằng 0, bạn đang triệt tiêu cả quãng đường; chỉ vectơ mới triệt tiêu.\n\n\n**Kiểm lỗi**\n\nNếu em cho quãng đường bằng 0 khi hai chặng triệt tiêu vectơ, đọc **Kiến thức 3.6**, làm **Bài luyện 48** và **Bài luyện 52**. Cộng vectơ cho độ dời; cộng **độ dài** mỗi chặng mới là quãng đường.",
@@ -18396,11 +19546,17 @@
       "TOP13-O16"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Cộng hai vectơ để tính độ dời; cộng hai độ dài để tính quãng đường."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -18412,6 +19568,25 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vectơ độ dời bằng vectơ-không; độ dài 0 m; quãng đường 0 m."
+      },
+      {
+        "id": "B",
+        "text": "Độ dời \\((2;0;0)\\) m; độ dài 2 m; quãng đường 2 m."
+      },
+      {
+        "id": "C",
+        "text": "Độ dời \\((-1;0;0)\\) m; độ dài 1 m; quãng đường 2 m."
+      },
+      {
+        "id": "D",
+        "text": "Vectơ độ dời bằng vectơ-không, độ dài 0 m; quãng đường 2 m."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
