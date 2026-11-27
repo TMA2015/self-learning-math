@@ -1132,15 +1132,15 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 ### THPT-G11-CHVII-B23-W02-ANCHOR | skill_id=`G11-B23-PLANE_PROPERTY` | placement=`SGK_WRITTEN` | role=`ANCHOR_TAG`
 
-**Đề:** Hai cột k,m khác nhau đều vuông góc nền phẳng (P); một bạn nói chúng có thể cắt nhau tạo góc nhọn. Hãy phản biện và mô tả phương của chúng.
+**Đề:** Hai cột k,m khác nhau đều vuông góc nền phẳng (P); một bạn nói chúng có thể cắt nhau tạo góc nhọn. Hãy phản biện và mô tả phương của chúng. Nếu chỉ biết hai đường cùng vuông góc một vạch thẳng trên nền, còn kết luận song song được không? Nêu một phản ví dụ.
 
-**Bài giải tự đối chiếu sau khi tự làm:** k và m cùng phương pháp tuyến (P), nên song song nếu khác nhau; không thể cắt tạo góc nhọn.
+**Bài giải tự đối chiếu sau khi tự làm:** Hai đường \(k,m\) cùng vuông góc \((P)\) nên cùng phương pháp tuyến. Vì \(k\ne m\), chúng song song phân biệt; không thể cắt nhau tạo góc nhọn. Nếu chỉ vuông góc một vạch thẳng, kết luận không còn chắc chắn: trong hình hộp chữ nhật \(ABCD.A'B'C'D'\), hai đường \(AD\) và \(AA'\) đều vuông góc \(AB\) nhưng cắt nhau tại A, không song song. Một hướng vuông góc không đủ để xác định phương pháp tuyến của cả mặt phẳng.
 
 **Rubric 4 điểm:**
 1. Giải thích hai cột là phương pháp tuyến (1) — **1 điểm**.
-2. Suy k//m hoặc trùng (1) — **1 điểm**.
+2. Suy k//m và phân biệt từ giả thiết k≠m (1) — **1 điểm**.
 3. Loại tình huống góc nhọn (1) — **1 điểm**.
-4. Nêu phân biệt với hai đường chỉ vuông góc một vạch sàn (1) — **1 điểm**.
+4. Nêu phản ví dụ đúng khi hai đường chỉ cùng vuông góc một vạch sàn (1) — **1 điểm**.
 
 
 
