@@ -1391,39 +1391,39 @@ Khi một vectơ bằng $\vec0$, tích vô hướng **bằng 0 theo quy ước**
 **Tách biệt hệ quả đánh giá:** Written là tài nguyên tự luận chung có lời giải, rubric một bản; tự đối chiếu không ghi Skill Mastery. Một item `-ANCHOR` là nhãn kiểm tra sâu, không sinh bank hoặc item thứ hai. Ba tự luận dưới đây chưa phải nội dung Readiness giữ kín.
 
 ### `THPT-G10-CHIV-W09` · B09 | `WRITTEN` | `G10-B09-MIDPOINT_CENTROID` | `APPLICATION` | `content_version=1`
-**Đề:** Cho đoạn thẳng $AB=12$ cm và điểm $M$ nằm giữa $A,B$ sao cho $AM:MB=1:2$. a) Tính $AM,MB$. b) Biểu thị $\overrightarrow{AM},\overrightarrow{BM}$ theo $\overrightarrow{AB}$. c) Chứng minh $\overrightarrow{AM}+\overrightarrow{BM}=\vec0$ là **sai**, rồi viết đúng biểu thức bằng $\vec0$ trong trường hợp $M$ ở trung điểm (không phải điểm đang cho).  
-**Đáp án/kết quả cần đạt:** a) AM=4 cm, MB=8 cm. b) $\overrightarrow{AM}=\tfrac13\overrightarrow{AB}$; $\overrightarrow{BM}=-\tfrac23\overrightarrow{AB}$. c) Tổng đang xét $=-\tfrac13\overrightarrow{AB}\ne\vec0$ vì AB>0; nếu M là trung điểm thì \(\overrightarrow{AM}+\overrightarrow{BM}=\vec0\), tương đương \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\).  
+**Đề:** Cho đoạn thẳng \(AB=12\) cm và điểm \(M\) nằm giữa \(A,B\) sao cho \(AM:MB=1:2\). a) Tính \(AM,MB\). b) Biểu thị \(\overrightarrow{AM},\overrightarrow{BM}\) theo \(\overrightarrow{AB}\). c) Chứng minh \(\overrightarrow{AM}+\overrightarrow{BM}=\vec0\) là **sai**, rồi viết đúng biểu thức bằng \(\vec0\) trong trường hợp \(M\) ở trung điểm (không phải điểm đang cho).  
+**Đáp án/kết quả cần đạt:** a) AM=4 cm, MB=8 cm. b) \(\overrightarrow{AM}=\tfrac13\overrightarrow{AB}\); \(\overrightarrow{BM}=-\tfrac23\overrightarrow{AB}\). c) Tổng đang xét \(=-\tfrac13\overrightarrow{AB}\ne\vec0\) vì AB>0; nếu M là trung điểm thì \(\overrightarrow{AM}+\overrightarrow{BM}=\vec0\), tương đương \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\).  
 **Gợi ý tự học:** Tỉ số 1:2 chia AB thành 3 phần; hướng BM ngược AB.  
 **Lời giải/luận chứng:** Vì M nằm giữa A và B, \(AM+MB=12\,\mathrm{cm}\). Tỉ số \(AM:MB=1:2\) chia đoạn AB thành ba phần bằng nhau; mỗi phần dài 4 cm, nên \(AM=4\,\mathrm{cm}\), \(MB=8\,\mathrm{cm}\). Vectơ AM cùng hướng AB và có độ dài bằng một phần ba AB, nên \(\overrightarrow{AM}=\frac13\overrightarrow{AB}\). Vectơ BM ngược hướng AB và có độ dài bằng hai phần ba AB, nên \(\overrightarrow{BM}=-\frac23\overrightarrow{AB}\). Cộng hai vectơ được \(-\frac13\overrightarrow{AB}\ne\vec0\) vì A và B phân biệt. Nếu M là trung điểm thì hai vectơ AM và BM ngược hướng, cùng độ dài, do đó \(\overrightarrow{AM}+\overrightarrow{BM}=\vec0\); tương đương \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\).
 **Rubric 7 điểm (chấm theo lập luận, không chỉ kết quả):**
-- 2 điểm — Tính đúng $AM=4$, $MB=8$ và nêu $M$ nằm trên AB.
-- 2 điểm — Lập đúng $\overrightarrow{AM}=\frac13\overrightarrow{AB}$. 
-- 1 điểm — Lập đúng $\overrightarrow{BM}=-\frac23\overrightarrow{AB}$.
-- 1 điểm — Chỉ ra tổng khác $\vec0$, vì $AB>0$.
+- 2 điểm — Tính đúng \(AM=4\), \(MB=8\) và nêu M nằm giữa A và B.
+- 2 điểm — Lập đúng \(\overrightarrow{AM}=\frac13\overrightarrow{AB}\). 
+- 1 điểm — Lập đúng \(\overrightarrow{BM}=-\frac23\overrightarrow{AB}\).
+- 1 điểm — Chỉ ra tổng khác \(\vec0\), vì \(AB>0\).
 - 1 điểm — Nêu đúng công thức trung điểm với hai vectơ AM, BM hoặc biểu thức tương đương từ M.
 **Tự kiểm:** Bài tự luận là formative public; không ghi điểm chính thức hoặc bằng chứng thành thạo khi học sinh tự chấm.
 
 ### `THPT-G10-CHIV-W10` · B10 | `WRITTEN` | `G10-B10-MIDPOINT_CENTROID` | `APPLICATION` | `content_version=1`
-**Đề:** Cho tam giác $A(-2;1), B(4;5), C(1;-3)$. a) Tính $\overrightarrow{AB}$ và $AB$. b) Tìm trung điểm M của AB. c) Tìm trọng tâm G và kiểm tra bằng tổng các vectơ $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}$.  
-**Đáp án/kết quả cần đạt:** a) $\overrightarrow{AB}=(6;4)$, $AB=\sqrt{52}=2\sqrt{13}$. b) $M(1;3)$. c) $G(1;1)$ và ba vectơ GA=(-3;0), GB=(3;4), GC=(0;-4) có tổng bằng (0;0).  
+**Đề:** Cho tam giác \(A(-2;1), B(4;5), C(1;-3)\). a) Tính \(\overrightarrow{AB}\) và \(AB\). b) Tìm trung điểm M của AB. c) Tìm trọng tâm G và kiểm tra bằng tổng các vectơ \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}\).  
+**Đáp án/kết quả cần đạt:** a) \(\overrightarrow{AB}=(6;4)\), \(AB=\sqrt{52}=2\sqrt{13}\). b) \(M(1;3)\). c) \(G(1;1)\) và ba vectơ \(\overrightarrow{GA}=(-3;0),\ \overrightarrow{GB}=(3;4),\ \overrightarrow{GC}=(0;-4)\) có tổng bằng \((0;0)\).  
 **Gợi ý tự học:** Dùng B−A, trung bình 2 tọa độ và trung bình 3 tọa độ.  
 **Lời giải/luận chứng:** Lấy tọa độ điểm cuối trừ điểm đầu: \(\overrightarrow{AB}=(4-(-2);5-1)=(6;4)\). Độ dài \(AB=\sqrt{6^2+4^2}=2\sqrt{13}\). Trung điểm \(M\left(\frac{-2+4}{2};\frac{1+5}{2}\right)=(1;3)\). Trọng tâm \(G\left(\frac{-2+4+1}{3};\frac{1+5-3}{3}\right)=(1;1)\). Kiểm lại bằng tính trực tiếp: \(\overrightarrow{GA}=(-3;0)\), \(\overrightarrow{GB}=(3;4)\), \(\overrightarrow{GC}=(0;-4)\). Tổng bằng \((0;0)\), phù hợp tính chất trọng tâm.
 **Rubric 7 điểm (chấm theo lập luận, không chỉ kết quả):**
-- 2 điểm — Tính đúng vectơ AB=(6;4) và độ dài $2\sqrt{13}$.
+- 2 điểm — Tính đúng \(\overrightarrow{AB}=(6;4)\) và độ dài \(2\sqrt{13}\).
 - 2 điểm — Tính đúng trung điểm M(1;3) và công thức.
 - 2 điểm — Tính đúng trọng tâm G(1;1).
-- 1 điểm — Kiểm đúng tổng GA+GB+GC bằng vectơ không.
+- 1 điểm — Kiểm đúng \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\).
 **Tự kiểm:** Bài tự luận là formative public; không ghi điểm chính thức hoặc bằng chứng thành thạo khi học sinh tự chấm.
 
 ### `THPT-G10-CHIV-W11-ANCHOR` · B11 | `WRITTEN_ANCHOR` | `G10-B11-APPLICATION` | `APPLICATION` | `content_version=1`
-**Đề:** Một lực không đổi trên mặt phẳng có thành phần $\vec F=(8;6)$ N. Vật dịch chuyển $\vec s=(3;4)$ m. a) Tính độ lớn lực và độ dời. b) Tính công $W$. c) Tính $\cos\theta$ giữa lực và độ dời, giải thích dấu của công.  
-**Đáp án/kết quả cần đạt:** a) $|F|=10$ N và $|s|=5$ m. b) $W=8\cdot3+6\cdot4=48$ J. c) $\cos\theta=48/(10\cdot5)=24/25>0$, $\theta$ nhọn nên công dương.  
-**Gợi ý tự học:** Nhớ $W=F\cdot s$ là tích vô hướng, không phải lúc nào là tích hai độ lớn.  
+**Đề:** Một lực không đổi trên mặt phẳng có thành phần \(\vec F=(8;6)\) N. Vật dịch chuyển \(\vec s=(3;4)\) m. a) Tính độ lớn lực và độ dời. b) Tính công \(W\). c) Tính \(\cos\theta\) giữa lực và độ dời, giải thích dấu của công.  
+**Đáp án/kết quả cần đạt:** a) \(\lVert\vec F\rVert=10\) N và \(\lVert\vec s\rVert=5\) m. b) \(W=8\cdot3+6\cdot4=48\) J. c) \(\cos\theta=\frac{48}{10\cdot5}=\frac{24}{25}>0\), \(\theta\) nhọn nên công dương.  
+**Gợi ý tự học:** Nhớ \(W=\vec F\cdot\vec s\) là tích vô hướng, không phải lúc nào là tích hai độ lớn.  
 **Lời giải/luận chứng:** Từ tọa độ, \(\lVert\vec F\rVert=\sqrt{8^2+6^2}=10\,\mathrm N\) và \(\lVert\vec s\rVert=\sqrt{3^2+4^2}=5\,\mathrm m\). Công của lực không đổi là tích vô hướng: \(W=\vec F\cdot\vec s=8\cdot3+6\cdot4=48\,\mathrm J\). Cả hai vectơ đều khác không, nên góc giữa chúng xác định và \(\cos\theta=\frac{\vec F\cdot\vec s}{\lVert\vec F\rVert\lVert\vec s\rVert}=\frac{48}{10\cdot5}=\frac{24}{25}\). Vì cos dương, góc nhọn và công dương. Không dùng tích độ lớn \(10\cdot5=50\) làm công vì hai vectơ không cùng hướng. Kiểm tra \(0<48<50\) phù hợp với hệ thức tích vô hướng.
 **Rubric 7 điểm (chấm theo lập luận, không chỉ kết quả):**
-- 2 điểm — Tính đúng $|F|=10$ N và $|s|=5$ m.
+- 2 điểm — Tính đúng \(\lVert\vec F\rVert=10\) N và \(\lVert\vec s\rVert=5\) m.
 - 2 điểm — Tính công đúng 48 J, đầy đủ đơn vị.
-- 2 điểm — Tính $\cos\theta=24/25$ với điều kiện độ dài khác 0.
+- 2 điểm — Tính \(\cos\theta=\frac{24}{25}\) với điều kiện độ dài khác 0.
 - 1 điểm — Giải thích công dương và góc nhọn.
 **Tự kiểm:** Bài tự luận là formative public; không ghi điểm chính thức hoặc bằng chứng thành thạo khi học sinh tự chấm.
 
