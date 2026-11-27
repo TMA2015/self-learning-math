@@ -290,8 +290,11 @@
   {
     "item_id": "THPT-G10-CHI-W01",
     "source": {
-      "blob": "95a554e31a613b8e215679fe6790738473d598df",
-      "heading_id": "THPT-G10-CHI-W01"
+      "blob": "983c1d16b08bfd16e17e405614d31f378ae65413",
+      "heading_id": "THPT-G10-CHI-W01",
+      "previous_source_blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "path": "prototypes/thpt/content-drafts/THPT_G10_CHI_B01_B02_D1D6_AUTHORING_R01_SNAPSHOT.md",
+      "revision_scope": "CP121_CD01_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-i.md",
@@ -299,13 +302,23 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B01-IMPLICATION"
+    ],
+    "content_version": "G10-CHI-BANK-CP121-20261127-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHI-W02-ANCHOR",
     "source": {
-      "blob": "95a554e31a613b8e215679fe6790738473d598df",
-      "heading_id": "THPT-G10-CHI-W02-ANCHOR"
+      "blob": "983c1d16b08bfd16e17e405614d31f378ae65413",
+      "heading_id": "THPT-G10-CHI-W02-ANCHOR",
+      "previous_source_blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "path": "prototypes/thpt/content-drafts/THPT_G10_CHI_B01_B02_D1D6_AUTHORING_R01_SNAPSHOT.md",
+      "revision_scope": "CP121_CD01_WRITTEN_CANONICAL_DELTA_ONLY_HISTORICAL_RECEIPT_UNCHANGED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-i.md",
@@ -313,7 +326,14 @@
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "G10-B02-VENN_MODEL"
+    ],
+    "content_version": "G10-CHI-BANK-CP121-20261127-W02-ANCHOR",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHII-W03",
