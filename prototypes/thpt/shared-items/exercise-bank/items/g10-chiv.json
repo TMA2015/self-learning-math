@@ -55,29 +55,44 @@
   },
   {
     "item_id": "THPT-G10-B07-C02",
-    "content_version": "THPT-G10-CHIV-B07-B08-R01",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B07-C02",
     "stem": "Hai vectơ khác không bằng nhau khi nào?",
     "answer_key": "C",
     "worked_solution": "Hai vectơ khác không bằng nhau khi cùng hướng và có cùng độ dài. Không nhất thiết chung điểm đầu: có thể tịnh tiến mũi tên này đến vị trí mũi tên kia mà không đổi vectơ.",
     "options": [
-      "A. Chỉ cần cùng giá",
-      "B. Chỉ cần cùng độ dài",
-      "C. Cùng hướng và cùng độ dài",
-      "D. Có chung điểm đầu"
+      {
+        "id": "A",
+        "text": "Chỉ cần cùng giá"
+      },
+      {
+        "id": "B",
+        "text": "Chỉ cần cùng độ dài"
+      },
+      {
+        "id": "C",
+        "text": "Cùng hướng và cùng độ dài"
+      },
+      {
+        "id": "D",
+        "text": "Có chung điểm đầu"
+      }
     ],
     "skill_ids": [
       "G10-B07-EQUALITY"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Phân biệt cùng phương với cùng hướng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
@@ -88,8 +103,9 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ so độ dài, kiểm thêm chiều hai mũi tên. Ôn Bài 7 mục 2.2.2; luyện THPT-G10-CHIV-TRY02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ so độ dài, kiểm thêm chiều hai mũi tên. Ôn Bài 7 mục 2.2.2; luyện THPT-G10-CHIV-TRY02.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B07-P01",
@@ -201,21 +217,25 @@
   },
   {
     "item_id": "THPT-G10-B07-P03",
-    "content_version": "THPT-G10-CHIV-B07-B08-R01",
-    "stem": "Trong hình bình hành \\(ABCD\\), hãy chỉ ra vectơ có cùng độ dài nhưng ngược hướng với \\(\\overrightarrow{AB}\\), dùng hai đỉnh C,D.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B07-P03",
+    "stem": "Trong hình bình hành \\(ABCD\\), hãy chỉ ra vectơ có cùng độ dài nhưng ngược hướng với \\(\\overrightarrow{AB}\\), dùng hai đỉnh C,D. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(\\overrightarrow{CD}\\)",
     "worked_solution": "\\(\\overrightarrow{CD}\\) cùng độ dài với \\(\\overrightarrow{AB}\\) nhưng ngược hướng; vì vậy \\(\\overrightarrow{CD}=-\\overrightarrow{AB}\\).",
     "skill_ids": [
       "G10-B07-DIRECTION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Đừng nhầm \\(\\overrightarrow{DC}\\) với \\(\\overrightarrow{CD}\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -227,8 +247,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn \\(\\overrightarrow{DC}\\), so chiều của mũi tên đó với \\(\\overrightarrow{AB}\\). Ôn Bài 7 mục 2.2.1; luyện THPT-G10-CHIV-TRY02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn \\(\\overrightarrow{DC}\\), so chiều của mũi tên đó với \\(\\overrightarrow{AB}\\). Ôn Bài 7 mục 2.2.1; luyện THPT-G10-CHIV-TRY02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{DC}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{CD}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{AB}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{AC}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B07-P04",
@@ -286,29 +325,44 @@
   },
   {
     "item_id": "THPT-G10-B07-P05",
-    "content_version": "THPT-G10-CHIV-B07-B08-R01",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B07-P05",
     "stem": "Ba điểm phân biệt A, C, B thẳng hàng **theo thứ tự đó**, \\(AC=3\\,\\mathrm{cm}\\), \\(CB=2\\,\\mathrm{cm}\\). So sánh \\(\\overrightarrow{AC}\\) và \\(\\overrightarrow{CB}\\).",
     "answer_key": "B",
     "worked_solution": "Vì ba điểm A, C, B thẳng hàng theo thứ tự đó, \\(\\overrightarrow{AC}\\) và \\(\\overrightarrow{CB}\\) có cùng giá và cùng hướng về phía B. Tuy nhiên độ dài lần lượt là \\(3\\,\\mathrm{cm}\\) và \\(2\\,\\mathrm{cm}\\), nên hai vectơ không bằng nhau.",
     "options": [
-      "A. Bằng nhau",
-      "B. Cùng hướng nhưng không bằng nhau",
-      "C. Ngược hướng",
-      "D. Cả hai đều là vectơ-không"
+      {
+        "id": "A",
+        "text": "Bằng nhau"
+      },
+      {
+        "id": "B",
+        "text": "Cùng hướng nhưng không bằng nhau"
+      },
+      {
+        "id": "C",
+        "text": "Ngược hướng"
+      },
+      {
+        "id": "D",
+        "text": "Cả hai đều là vectơ-không"
+      }
     ],
     "skill_ids": [
       "G10-B07-DIRECTION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Cùng hướng chưa đủ để hai vectơ bằng nhau."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
@@ -319,26 +373,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu kết luận bằng nhau chỉ vì cùng hướng, kiểm cả hai độ dài. Ôn Bài 7 mục 2.2.2; luyện THPT-G10-CHIV-TRY02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu kết luận bằng nhau chỉ vì cùng hướng, kiểm cả hai độ dài. Ôn Bài 7 mục 2.2.2; luyện THPT-G10-CHIV-TRY02.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B07-P06",
-    "content_version": "THPT-G10-CHIV-B07-B08-R01",
-    "stem": "Một tàu đi từ A theo hướng Đông 4 km rồi hướng Bắc 3 km đến B. Độ dài vectơ độ dời \\(\\overrightarrow{AB}\\) bằng bao nhiêu?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B07-P06",
+    "stem": "Một tàu đi từ A theo hướng Đông 4 km rồi hướng Bắc 3 km đến B. Độ dài vectơ độ dời \\(\\overrightarrow{AB}\\) bằng bao nhiêu? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(5\\,\\mathrm{km}\\)",
     "worked_solution": "Hai chặng theo hướng Đông và Bắc vuông góc, nên \\(AB=\\sqrt{4^2+3^2}=5\\,\\mathrm{km}\\). Độ dài vectơ độ dời là khoảng cách thẳng từ A đến B, không phải quãng đường \\(4+3=7\\,\\mathrm{km}\\).",
     "skill_ids": [
       "G10-B07-LENGTH"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "APPLY",
     "hints": [
       "Phân biệt độ dài quãng đường thực đi với đoạn thẳng AB."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -350,8 +409,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng quãng đường thành độ dời, nối thẳng điểm đầu với điểm cuối và dùng định lí Pitago. Ôn Bài 7 mục 2.2.3; luyện THPT-G10-CHIV-TRY06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng quãng đường thành độ dời, nối thẳng điểm đầu với điểm cuối và dùng định lí Pitago. Ôn Bài 7 mục 2.2.3; luyện THPT-G10-CHIV-TRY06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "7 km"
+      },
+      {
+        "id": "B",
+        "text": "1 km"
+      },
+      {
+        "id": "C",
+        "text": "25 km"
+      },
+      {
+        "id": "D",
+        "text": "5 km"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B08-C01",
@@ -409,29 +487,44 @@
   },
   {
     "item_id": "THPT-G10-B08-C02",
-    "content_version": "THPT-G10-CHIV-B07-B08-R01",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B08-C02",
     "stem": "Trong hình bình hành \\(ABCD\\), \\(\\overrightarrow{AB}+\\overrightarrow{AD}\\) bằng vectơ nào?",
     "answer_key": "B",
     "worked_solution": "Hai vectơ \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{AD}\\) cùng xuất phát từ A. Theo quy tắc hình bình hành, tổng của chúng là vectơ đường chéo xuất phát từ A, tức \\(\\overrightarrow{AC}\\).",
     "options": [
-      "A. \\(\\overrightarrow{BD}\\)",
-      "B. \\(\\overrightarrow{AC}\\)",
-      "C. \\(\\overrightarrow{CA}\\)",
-      "D. \\(\\overrightarrow{CD}\\)"
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{BD}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{AC}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{CA}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{CD}\\)"
+      }
     ],
     "skill_ids": [
       "G10-B08-PARALLELOGRAM"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Quy tắc hình bình hành dùng hai vectơ chung điểm đầu."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
@@ -442,8 +535,9 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn BD, kiểm đường chéo xuất phát từ gốc chung A. Ôn Bài 8 mục 2.1.2; luyện THPT-G10-CHIV-TRY07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn BD, kiểm đường chéo xuất phát từ gốc chung A. Ôn Bài 8 mục 2.1.2; luyện THPT-G10-CHIV-TRY07.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B08-P01",
@@ -555,21 +649,25 @@
   },
   {
     "item_id": "THPT-G10-B08-P03",
-    "content_version": "THPT-G10-CHIV-B07-B08-R01",
-    "stem": "Với bốn điểm A, B, C, D, rút gọn \\(\\overrightarrow{AB}+\\overrightarrow{BC}+\\overrightarrow{CD}+\\overrightarrow{DA}\\).",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B08-P03",
+    "stem": "Với bốn điểm A, B, C, D, rút gọn \\(\\overrightarrow{AB}+\\overrightarrow{BC}+\\overrightarrow{CD}+\\overrightarrow{DA}\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(\\vec0\\)",
     "worked_solution": "\\(\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}\\), tiếp tục \\(\\overrightarrow{AC}+\\overrightarrow{CD}=\\overrightarrow{AD}\\), cuối cùng \\(\\overrightarrow{AD}+\\overrightarrow{DA}=\\vec0\\).",
     "skill_ids": [
       "G10-B08-TRIANGLE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Ghép các vectơ thành đường gấp khúc kín."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -581,34 +679,68 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu còn AD, kiểm chặng DA cuối. Ôn Bài 8 mục 2.1.1; luyện THPT-G10-CHIV-TRY04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu còn AD, kiểm chặng DA cuối. Ôn Bài 8 mục 2.1.1; luyện THPT-G10-CHIV-TRY04.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{AD}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\vec 0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{DA}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{AC}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B08-P04",
-    "content_version": "THPT-G10-CHIV-B07-B08-R01",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B08-P04",
     "stem": "Cho M là trung điểm đoạn AB, với A và B phân biệt. Chọn hệ thức vectơ đúng.",
     "answer_key": "C",
     "worked_solution": "Vì M là trung điểm nên \\(\\overrightarrow{MA}\\) và \\(\\overrightarrow{MB}\\) cùng độ dài, ngược hướng, tức \\(\\overrightarrow{MA}=-\\overrightarrow{MB}\\). Do đó \\(\\overrightarrow{MA}+\\overrightarrow{MB}=\\vec0\\).",
     "options": [
-      "A. \\(\\overrightarrow{MA}=\\overrightarrow{MB}\\)",
-      "B. \\(\\overrightarrow{AM}+\\overrightarrow{MB}=\\vec0\\)",
-      "C. \\(\\overrightarrow{MA}+\\overrightarrow{MB}=\\vec0\\)",
-      "D. \\(\\overrightarrow{MA}+\\overrightarrow{MB}=\\overrightarrow{AB}\\)"
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{MA}=\\overrightarrow{MB}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{AM}+\\overrightarrow{MB}=\\vec0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{MA}+\\overrightarrow{MB}=\\vec0\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{MA}+\\overrightarrow{MB}=\\overrightarrow{AB}\\)"
+      }
     ],
     "skill_ids": [
       "G10-B08-MIDPOINT"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Hai vectơ xuất phát từ M có cùng độ dài và ngược hướng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
@@ -619,8 +751,9 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho \\(\\overrightarrow{MA}=\\overrightarrow{MB}\\), vẽ hai mũi tên đối nhau xuất phát từ M. Ôn Bài 8 mục 2.2.3; luyện THPT-G10-CHIV-TRY09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho \\(\\overrightarrow{MA}=\\overrightarrow{MB}\\), vẽ hai mũi tên đối nhau xuất phát từ M. Ôn Bài 8 mục 2.2.3; luyện THPT-G10-CHIV-TRY09.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B08-P05",
@@ -679,21 +812,25 @@
   },
   {
     "item_id": "THPT-G10-B08-P06",
-    "content_version": "THPT-G10-CHIV-B07-B08-R01",
-    "stem": "Hai lực có độ lớn 6 N và 8 N cùng tác dụng tại một điểm, tạo góc 60°. Tính độ lớn hợp lực.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B08-P06",
+    "stem": "Hai lực có độ lớn 6 N và 8 N cùng tác dụng tại một điểm, tạo góc 60°. Tính độ lớn hợp lực. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(2\\sqrt{37}\\,\\mathrm N\\)",
     "worked_solution": "Hợp lực là vectơ đường chéo xuất phát từ điểm đặt chung. Khi ghép hai vectơ lực nối đuôi–đầu, góc trong của tam giác là \\(180^\\circ-60^\\circ=120^\\circ\\). Gọi R là độ lớn hợp lực. Theo định lí côsin, \\(R^2=6^2+8^2-2\\cdot6\\cdot8\\cos120^\\circ=148\\). Vì \\(R\\ge0\\), suy ra \\(R=2\\sqrt{37}\\,\\mathrm N\\), không phải \\(14\\,\\mathrm N\\).",
     "skill_ids": [
       "G10-B08-PARALLELOGRAM"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "APPLY",
     "hints": [
       "Góc trong tam giác nối đuôi–đầu bù với góc giữa hai lực; dùng định lí côsin."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -705,8 +842,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng độ lớn hai lực, dựng hình bình hành và kiểm góc giữa hai lực. Ôn Bài 8 mục 2.1.2; luyện THPT-G10-CHIV-TRY07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng độ lớn hai lực, dựng hình bình hành và kiểm góc giữa hai lực. Ôn Bài 8 mục 2.1.2; luyện THPT-G10-CHIV-TRY07.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "14 N"
+      },
+      {
+        "id": "B",
+        "text": "10 N"
+      },
+      {
+        "id": "C",
+        "text": "2 N"
+      },
+      {
+        "id": "D",
+        "text": "\\(2\\sqrt{37}\\,\\mathrm N\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B09-C01",
@@ -764,29 +920,44 @@
   },
   {
     "item_id": "THPT-G10-B09-C02",
-    "content_version": "THPT-G10-CHIV-B09-B11-R01",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B09-C02",
     "stem": "Với mọi vectơ \\(\\vec a\\), \\(0\\vec a\\) bằng gì?",
     "answer_key": "C",
     "worked_solution": "Theo quy tắc nhân vectơ với một số, \\(\\lVert0\\vec a\\rVert=0\\cdot\\lVert\\vec a\\rVert=0\\). Vectơ duy nhất có độ dài 0 là vectơ-không, nên \\(0\\vec a=\\vec0\\) với mọi \\(\\vec a\\).",
     "options": [
-      "A. \\(\\vec a\\)",
-      "B. Vectơ có độ dài 1",
-      "C. \\(\\vec0\\)",
-      "D. Không xác định."
+      {
+        "id": "A",
+        "text": "\\(\\vec a\\)"
+      },
+      {
+        "id": "B",
+        "text": "Vectơ có độ dài 1"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\vec0\\)"
+      },
+      {
+        "id": "D",
+        "text": "Không xác định."
+      }
     ],
     "skill_ids": [
       "G10-B09-SCALAR_DEFINITION"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Nhân với số 0 làm độ dài còn bao nhiêu?"
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
@@ -797,8 +968,9 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu giữ nguyên vectơ khi nhân 0, tính \\(|0|\\cdot\\lVert\\vec a\\rVert=0\\). Ôn Bài 9 mục 2.1; luyện THPT-G10-CHIV-TRY11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu giữ nguyên vectơ khi nhân 0, tính \\(|0|\\cdot\\lVert\\vec a\\rVert=0\\). Ôn Bài 9 mục 2.1; luyện THPT-G10-CHIV-TRY11.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B09-P01",
@@ -856,21 +1028,25 @@
   },
   {
     "item_id": "THPT-G10-B09-P02",
-    "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Rút gọn \\(3(\\vec a+\\vec b)-2\\vec a\\).",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B09-P02",
+    "stem": "Rút gọn \\(3(\\vec a+\\vec b)-2\\vec a\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(\\vec a+3\\vec b\\)",
     "worked_solution": "\\(3\\vec a+3\\vec b-2\\vec a=(3-2)\\vec a+3\\vec b=\\vec a+3\\vec b\\).",
     "skill_ids": [
       "G10-B09-DISTRIBUTION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Phân phối hệ số 3 lên cả hai vectơ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -882,8 +1058,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên phân phối, khai triển rồi gom riêng từng vectơ. Ôn Bài 9 mục 2.2; luyện THPT-G10-CHIV-TRY13."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên phân phối, khai triển rồi gom riêng từng vectơ. Ôn Bài 9 mục 2.2; luyện THPT-G10-CHIV-TRY13.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(5\\vec a+3\\vec b\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\vec a+3\\vec b\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\vec a+\\vec b\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\vec a-3\\vec b\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B09-P03",
@@ -941,29 +1136,44 @@
   },
   {
     "item_id": "THPT-G10-B09-P04",
-    "content_version": "THPT-G10-CHIV-B09-B11-R01",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B09-P04",
     "stem": "G là trọng tâm tam giác ABC. Công thức nào đúng?",
     "answer_key": "C",
     "worked_solution": "Gọi M là trung điểm BC. Ta có \\(\\overrightarrow{AM}=\\frac12(\\overrightarrow{AB}+\\overrightarrow{AC})\\) và \\(\\overrightarrow{AG}=\\frac23\\overrightarrow{AM}\\). Thế vào được \\(\\overrightarrow{AG}=\\frac13(\\overrightarrow{AB}+\\overrightarrow{AC})\\).",
     "options": [
-      "A. \\(\\overrightarrow{AG}=\\overrightarrow{AB}+\\overrightarrow{AC}\\)",
-      "B. \\(\\overrightarrow{AG}=\\frac12(\\overrightarrow{AB}+\\overrightarrow{AC})\\)",
-      "C. \\(\\overrightarrow{AG}=\\frac13(\\overrightarrow{AB}+\\overrightarrow{AC})\\)",
-      "D. \\(\\overrightarrow{AG}=3(\\overrightarrow{AB}+\\overrightarrow{AC})\\)."
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{AG}=\\overrightarrow{AB}+\\overrightarrow{AC}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{AG}=\\frac12(\\overrightarrow{AB}+\\overrightarrow{AC})\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{AG}=\\frac13(\\overrightarrow{AB}+\\overrightarrow{AC})\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{AG}=3(\\overrightarrow{AB}+\\overrightarrow{AC})\\)."
+      }
     ],
     "skill_ids": [
       "G10-B09-MIDPOINT_CENTROID"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "G nằm trên trung tuyến AM và \\(AG=\\frac23AM\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
@@ -974,8 +1184,9 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng hệ số \\(\\frac23\\) cho tổng hai vectơ \\(\\overrightarrow{AB}+\\overrightarrow{AC}\\), tách hai bước trung điểm và trọng tâm. Ôn Bài 9 mục 2.2; luyện THPT-G10-CHIV-TRY15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng hệ số \\(\\frac23\\) cho tổng hai vectơ \\(\\overrightarrow{AB}+\\overrightarrow{AC}\\), tách hai bước trung điểm và trọng tâm. Ôn Bài 9 mục 2.2; luyện THPT-G10-CHIV-TRY15.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B09-P05",
@@ -1033,21 +1244,25 @@
   },
   {
     "item_id": "THPT-G10-B09-P06",
-    "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Vectơ \\(\\vec u\\) biểu diễn độ dời 3 km về phía Đông. Sau hai chặng có độ dời \\(\\vec u\\) rồi \\(-2\\vec u\\), độ dời tổng là bao nhiêu và theo hướng nào?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B09-P06",
+    "stem": "Vectơ \\(\\vec u\\) biểu diễn độ dời 3 km về phía Đông. Sau hai chặng có độ dời \\(\\vec u\\) rồi \\(-2\\vec u\\), độ dời tổng là bao nhiêu và theo hướng nào? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "3 km về Tây",
     "worked_solution": "Vectơ tổng là \\(\\vec u+(-2\\vec u)=-\\vec u\\), nên độ dời có độ dài \\(3\\,\\mathrm{km}\\) và hướng Tây. Nếu hai chặng đi thẳng theo các vectơ đã cho, quãng đường là \\(3+6=9\\,\\mathrm{km}\\), không phải độ dài độ dời.",
     "skill_ids": [
       "G10-B09-DISTRIBUTION"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "APPLY",
     "hints": [
       "Cộng hai vectơ trước khi tìm độ dài."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1059,8 +1274,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy 9 km làm độ dời, cộng hệ số có dấu trước. Ôn Bài 9 mục 2.2; luyện THPT-G10-CHIV-TRY06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy 9 km làm độ dời, cộng hệ số có dấu trước. Ôn Bài 9 mục 2.2; luyện THPT-G10-CHIV-TRY06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 km về Đông"
+      },
+      {
+        "id": "B",
+        "text": "9 km về Tây"
+      },
+      {
+        "id": "C",
+        "text": "9 km về Đông"
+      },
+      {
+        "id": "D",
+        "text": "3 km về Tây"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B10-C01",
@@ -1118,21 +1352,25 @@
   },
   {
     "item_id": "THPT-G10-B10-C02",
-    "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Tính độ dài vectơ \\(\\vec u=(5;12)\\).",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B10-C02",
+    "stem": "Tính độ dài vectơ \\(\\vec u=(5;12)\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "13",
     "worked_solution": "\\(|\\vec u|=\\sqrt{5^2+12^2}=\\sqrt{169}=13\\).",
     "skill_ids": [
       "G10-B10-NORM_DISTANCE"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Bình phương hai tọa độ rồi lấy căn."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1144,8 +1382,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng 5+12, dùng Pitago cho hai thành phần. Ôn Bài 10 mục 2.1; luyện THPT-G10-CHIV-TRY18."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng 5+12, dùng Pitago cho hai thành phần. Ôn Bài 10 mục 2.1; luyện THPT-G10-CHIV-TRY18.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "13"
+      },
+      {
+        "id": "B",
+        "text": "17"
+      },
+      {
+        "id": "C",
+        "text": "119"
+      },
+      {
+        "id": "D",
+        "text": "169"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B10-P01",
@@ -1203,21 +1460,25 @@
   },
   {
     "item_id": "THPT-G10-B10-P02",
-    "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Cho \\(A(2;-1)\\) và \\(\\overrightarrow{AB}=(4;3)\\). Tìm tọa độ B.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B10-P02",
+    "stem": "Cho \\(A(2;-1)\\) và \\(\\overrightarrow{AB}=(4;3)\\). Tìm tọa độ B. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(B(6;2)\\)",
     "worked_solution": "Từ \\(\\overrightarrow{AB}=(x_B-2;y_B+1)=(4;3)\\), suy ra \\(x_B=6\\), \\(y_B=2\\). Vậy \\(B(6;2)\\).",
     "skill_ids": [
       "G10-B10-VECTOR_COORDS"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Lấy tọa độ điểm A cộng với tọa độ \\(\\overrightarrow{AB}\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1229,8 +1490,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy tọa độ A trừ tọa độ vectơ, giải \\(x_B-x_A=4\\) và \\(y_B-y_A=3\\). Ôn Bài 10 mục 2.1; luyện THPT-G10-CHIV-TRY16."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy tọa độ A trừ tọa độ vectơ, giải \\(x_B-x_A=4\\) và \\(y_B-y_A=3\\). Ôn Bài 10 mục 2.1; luyện THPT-G10-CHIV-TRY16.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "B(2;4)"
+      },
+      {
+        "id": "B",
+        "text": "B(6;2)"
+      },
+      {
+        "id": "C",
+        "text": "B(-2;-4)"
+      },
+      {
+        "id": "D",
+        "text": "B(6;-4)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B10-P03",
@@ -1288,22 +1568,26 @@
   },
   {
     "item_id": "THPT-G10-B10-P04",
-    "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Cho \\(A(-2;1)\\), \\(B(4;3)\\) và \\(G(1;2)\\). Tìm tọa độ C sao cho G là trọng tâm của tam giác ABC. Có thực sự tồn tại tam giác không suy biến thỏa mãn không? Nếu thay G bằng \\(G'(1;3)\\), tìm đỉnh C' tương ứng và kiểm tra lại điều kiện tạo thành tam giác.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B10-P04",
+    "stem": "Cho \\(A(-2;1)\\), \\(B(4;3)\\) và \\(G(1;2)\\). Tìm tọa độ C sao cho G là trọng tâm của tam giác ABC. Có thực sự tồn tại tam giác không suy biến thỏa mãn không? Nếu thay G bằng \\(G'(1;3)\\), tìm đỉnh C' tương ứng và kiểm tra lại điều kiện tạo thành tam giác. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Trường hợp G: ứng viên \\(C(1;2)\\) nằm trên AB, nên không tồn tại tam giác không suy biến. Trường hợp G': \\(C'(1;5)\\); A,B,C' không thẳng hàng, nên tạo thành tam giác có trọng tâm G'.",
     "worked_solution": "Nếu ABC là tam giác có trọng tâm G thì \\(x_C=3x_G-x_A-x_B\\), \\(y_C=3y_G-y_A-y_B\\). Với G(1;2), ta được \\(C(3-(-2)-4;6-1-3)=C(1;2)\\). Điểm này đúng bằng trung điểm của AB, vì trung điểm là \\((1;2)\\). Do A,B,C thẳng hàng, không có tam giác không suy biến thỏa mãn. Với G'(1;3), công thức cho \\(C'(1;9-1-3)=C'(1;5)\\). Ta có \\(\\overrightarrow{AB}=(6;2)\\), \\(\\overrightarrow{AC'}=(3;4)\\). Hai vectơ không cùng phương: nếu AC' bằng một nửa AB thì tung độ phải bằng 1, không phải 4. Vậy A,B,C' không thẳng hàng. Kiểm lại trung bình ba hoành độ là 1, ba tung độ là 3, nên trọng tâm đúng là G'. Công thức tọa độ chỉ cho ứng viên; cần kiểm giả thiết tam giác trước khi kết luận.",
     "skill_ids": [
       "G10-B10-MIDPOINT_CENTROID"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Giải ngược công thức tọa độ trọng tâm để tìm C.",
       "Sau khi tìm điểm, kiểm xem AB và AC có cùng phương hay không."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1315,8 +1599,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Tính đúng tọa độ chưa đủ để khẳng định tồn tại tam giác. Kiểm ba đỉnh không thẳng hàng rồi mới áp dụng công thức trọng tâm. Ôn Bài 10; luyện THPT-G10-CHIV-TRY20."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Tính đúng tọa độ chưa đủ để khẳng định tồn tại tam giác. Kiểm ba đỉnh không thẳng hàng rồi mới áp dụng công thức trọng tâm. Ôn Bài 10; luyện THPT-G10-CHIV-TRY20.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "C(1;2), C'(1;5), cả hai đều tạo tam giác."
+      },
+      {
+        "id": "B",
+        "text": "C(1;2), C'(1;3), chỉ trường hợp đầu tạo tam giác."
+      },
+      {
+        "id": "C",
+        "text": "C(1;2) nằm trên AB, không có tam giác; C'(1;5) tạo tam giác."
+      },
+      {
+        "id": "D",
+        "text": "C(-1;-2), C'(-1;1), cả hai tạo tam giác."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B10-P05",
@@ -1374,21 +1677,25 @@
   },
   {
     "item_id": "THPT-G10-B10-P06",
-    "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Trên bản đồ Oxy, mỗi đơn vị ứng với 1 km. Hai điểm \\(A(-1;2)\\) và \\(B(5;-6)\\). Tính khoảng cách thẳng AB.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B10-P06",
+    "stem": "Trên bản đồ Oxy, mỗi đơn vị ứng với 1 km. Hai điểm \\(A(-1;2)\\) và \\(B(5;-6)\\). Tính khoảng cách thẳng AB. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(10\\,\\mathrm{km}\\)",
     "worked_solution": "\\(\\overrightarrow{AB}=(5-(-1);-6-2)=(6;-8)\\). Do mỗi đơn vị ứng với 1 km, khoảng cách thẳng là \\(AB=\\sqrt{6^2+(-8)^2}=10\\,\\mathrm{km}\\). Đây không nhất thiết là quãng đường theo các tuyến đường.",
     "skill_ids": [
       "G10-B10-NORM_DISTANCE"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "APPLY",
     "hints": [
       "Lấy hiệu tọa độ rồi dùng định lí Pitago."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1400,8 +1707,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng khoảng cách theo hai trục, lấy hiệu tọa độ rồi dùng Pitago. Ôn Bài 10 mục ví dụ 3.1; luyện THPT-G10-CHIV-TRY18."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng khoảng cách theo hai trục, lấy hiệu tọa độ rồi dùng Pitago. Ôn Bài 10 mục ví dụ 3.1; luyện THPT-G10-CHIV-TRY18.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "14 km"
+      },
+      {
+        "id": "B",
+        "text": "2 km"
+      },
+      {
+        "id": "C",
+        "text": "100 km"
+      },
+      {
+        "id": "D",
+        "text": "10 km"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B11-C01",
@@ -1459,29 +1785,44 @@
   },
   {
     "item_id": "THPT-G10-B11-C02",
-    "content_version": "THPT-G10-CHIV-B09-B11-R01",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B11-C02",
     "stem": "Chọn cặp vectơ **khác không** vuông góc.",
     "answer_key": "A",
     "worked_solution": "Mỗi vectơ trong bốn phương án đều khác không. Tích vô hướng của cặp A bằng \\(1\\cdot2+2\\cdot(-1)=0\\). Với B, C, D, tích lần lượt bằng 2, 2, 4, đều khác 0. Vậy chỉ cặp A vuông góc.",
     "options": [
-      "A. \\((1;2)\\) và \\((2;-1)\\)",
-      "B. \\((1;1)\\) và \\((1;1)\\)",
-      "C. \\((2;0)\\) và \\((1;0)\\)",
-      "D. \\((1;-1)\\) và \\((2;-2)\\)."
+      {
+        "id": "A",
+        "text": "\\((1;2)\\) và \\((2;-1)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((1;1)\\) và \\((1;1)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((2;0)\\) và \\((1;0)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((1;-1)\\) và \\((2;-2)\\)."
+      }
     ],
     "skill_ids": [
       "G10-B11-PERPENDICULAR"
     ],
     "problem_type_id": null,
-    "difficulty": "BASIC",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Hai vectơ khác không vuông góc nếu tích vô hướng bằng 0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
@@ -1492,8 +1833,9 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu kết luận vuông góc chỉ vì tích bằng 0, kiểm hai vectơ khác không. Ôn Bài 11 mục 2.3; luyện THPT-G10-CHIV-TRY23."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu kết luận vuông góc chỉ vì tích bằng 0, kiểm hai vectơ khác không. Ôn Bài 11 mục 2.3; luyện THPT-G10-CHIV-TRY23.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B11-P01",
@@ -1551,21 +1893,25 @@
   },
   {
     "item_id": "THPT-G10-B11-P02",
-    "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Với \\(\\vec u=(k;2)\\), \\(\\vec v=(3;-6)\\), tìm \\(k\\) để \\(\\vec u\\perp\\vec v\\).",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B11-P02",
+    "stem": "Với \\(\\vec u=(k;2)\\), \\(\\vec v=(3;-6)\\), tìm \\(k\\) để \\(\\vec u\\perp\\vec v\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(k=4\\)",
     "worked_solution": "\\(\\vec v\\ne\\vec0\\) và \\(\\vec u\\ne\\vec0\\) vì tung độ của \\(\\vec u\\) bằng 2. Do đó hai vectơ vuông góc khi và chỉ khi tích vô hướng bằng 0: \\(3k+2(-6)=0\\iff k=4\\).",
     "skill_ids": [
       "G10-B11-COORDINATE_DOT"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Giải phương trình tích vô hướng bằng 0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1577,8 +1923,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên điều kiện khác 0, kiểm tung độ u và tọa độ v trước. Ôn Bài 11 mục 2.3; luyện THPT-G10-CHIV-TRY23."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên điều kiện khác 0, kiểm tung độ u và tọa độ v trước. Ôn Bài 11 mục 2.3; luyện THPT-G10-CHIV-TRY23.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "-4"
+      },
+      {
+        "id": "B",
+        "text": "4"
+      },
+      {
+        "id": "C",
+        "text": "2"
+      },
+      {
+        "id": "D",
+        "text": "-2"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B11-P03",
@@ -1636,21 +2001,25 @@
   },
   {
     "item_id": "THPT-G10-B11-P04",
-    "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Cho \\(A(1;-2),B(5;-1),C(3;1)\\). Tính \\(\\overrightarrow{AB}\\cdot\\overrightarrow{AC}\\).",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B11-P04",
+    "stem": "Cho \\(A(1;-2),B(5;-1),C(3;1)\\). Tính \\(\\overrightarrow{AB}\\cdot\\overrightarrow{AC}\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "11",
     "worked_solution": "\\(\\overrightarrow{AB}=(5-1;-1-(-2))=(4;1)\\), \\(\\overrightarrow{AC}=(3-1;1-(-2))=(2;3)\\). Tích bằng \\(4\\cdot2+1\\cdot3=11\\).",
     "skill_ids": [
       "G10-B11-COORDINATE_DOT"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Hai vectơ cùng xuất phát từ A."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1662,8 +2031,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy tọa độ điểm thay tọa độ vectơ, tính \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{AC}\\) từ hiệu tọa độ trước. Ôn Bài 11 mục 2.3; luyện THPT-G10-CHIV-TRY22."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy tọa độ điểm thay tọa độ vectơ, tính \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{AC}\\) từ hiệu tọa độ trước. Ôn Bài 11 mục 2.3; luyện THPT-G10-CHIV-TRY22.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "5"
+      },
+      {
+        "id": "B",
+        "text": "14"
+      },
+      {
+        "id": "C",
+        "text": "11"
+      },
+      {
+        "id": "D",
+        "text": "-11"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B11-P05",
@@ -1721,21 +2109,25 @@
   },
   {
     "item_id": "THPT-G10-B11-P06",
-    "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Cho \\(A(0;0),B(3;1),C(-1;3)\\). Chứng minh tam giác ABC vuông ở A và tính diện tích.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B11-P06",
+    "stem": "Cho \\(A(0;0),B(3;1),C(-1;3)\\). Chứng minh tam giác ABC vuông ở A và tính diện tích. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Vuông ở A; diện tích \\(5\\) đơn vị diện tích.",
     "worked_solution": "\\(\\overrightarrow{AB}=(3;1)\\), \\(\\overrightarrow{AC}=(-1;3)\\). Hai vectơ khác không, có tích vô hướng \\(-3+3=0\\); vậy hai cạnh AB và AC vuông góc. Ta có \\(AB=AC=\\sqrt{10}\\), nên diện tích tam giác vuông là \\(S=\\frac12\\cdot\\sqrt{10}\\cdot\\sqrt{10}=5\\) đơn vị diện tích.",
     "skill_ids": [
       "G10-B11-PERPENDICULAR"
     ],
     "problem_type_id": null,
-    "difficulty": "APPLICATION",
+    "difficulty": "APPLY",
     "hints": [
       "Tính \\(\\overrightarrow{AB}\\cdot\\overrightarrow{AC}\\) và độ dài hai cạnh."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1747,27 +2139,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu quên điều kiện hai cạnh khác 0, kiểm AB,AC và tích vô hướng trước khi tính diện tích. Ôn Bài 11 mục ví dụ 3.3; luyện THPT-G10-CHIV-TRY23."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên điều kiện hai cạnh khác 0, kiểm AB,AC và tích vô hướng trước khi tính diện tích. Ôn Bài 11 mục ví dụ 3.3; luyện THPT-G10-CHIV-TRY23.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vuông tại A; diện tích 10."
+      },
+      {
+        "id": "B",
+        "text": "Vuông tại B; diện tích 5."
+      },
+      {
+        "id": "C",
+        "text": "Không vuông vì hai cạnh có độ dài bằng nhau."
+      },
+      {
+        "id": "D",
+        "text": "Vuông tại A vì tích vô hướng bằng 0; diện tích 5."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B09-P07",
-    "content_version": 1,
-    "stem": "Cho tam giác ABC. Gọi M là trung điểm của BC; điểm N nằm trên đoạn AB sao cho \\(AN=\\frac13 AB\\). Đặt \\(\\vec a=\\overrightarrow{AB}\\), \\(\\vec b=\\overrightarrow{AC}\\). Hãy biểu thị \\(\\overrightarrow{MN}\\) theo hai vectơ \\(\\vec a,\\vec b\\) và giải thích vì sao cặp hệ số tìm được là duy nhất.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B09-P07",
+    "stem": "Cho tam giác ABC. Gọi M là trung điểm của BC; điểm N nằm trên đoạn AB sao cho \\(AN=\\frac13 AB\\). Đặt \\(\\vec a=\\overrightarrow{AB}\\), \\(\\vec b=\\overrightarrow{AC}\\). Hãy biểu thị \\(\\overrightarrow{MN}\\) theo hai vectơ \\(\\vec a,\\vec b\\) và giải thích vì sao cặp hệ số tìm được là duy nhất. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(\\overrightarrow{MN}=-\\frac16\\vec a-\\frac12\\vec b\\).",
     "worked_solution": "1. Vì M là trung điểm của BC, \\(\\overrightarrow{AM}=\\frac12(\\overrightarrow{AB}+\\overrightarrow{AC})=\\frac12\\vec a+\\frac12\\vec b\\).\n2. N nằm trên đoạn AB và \\(AN=\\frac13 AB\\), nên \\(\\overrightarrow{AN}\\) cùng hướng với \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{AN}=\\frac13\\vec a\\).\n3. Theo quy tắc ba điểm, \\(\\overrightarrow{MN}=\\overrightarrow{MA}+\\overrightarrow{AN}=-\\overrightarrow{AM}+\\overrightarrow{AN}=-\\frac16\\vec a-\\frac12\\vec b\\).\n4. Vì ABC là tam giác, hai vectơ \\(\\vec a,\\vec b\\) không cùng phương. Theo tính chất phân tích vectơ theo hai vectơ không cùng phương, cặp hệ số \\(\\left(-\\frac16;-\\frac12\\right)\\) là duy nhất.",
     "skill_ids": [
       "G10-B09-DECOMP_S1"
     ],
     "problem_type_id": "G10-B09-VECTOR_TWO_NONCOLLINEAR_MIDPOINT_RATIO",
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Viết \\(\\overrightarrow{AM}\\) theo \\(\\vec a,\\vec b\\), rồi dùng \\(\\overrightarrow{MN}=\\overrightarrow{MA}+\\overrightarrow{AN}\\); để ý dấu của \\(\\overrightarrow{MA}\\)."
     ],
     "remediation": "Nếu kết quả mất dấu âm, quay lại Bài 8 về vectơ đối và quy tắc ba điểm. Nếu chỉ có một trong hai vectơ cơ sở, dùng hệ thức trung điểm tại Bài 9 rồi tách thành \\(\\vec a,\\vec b\\). Nếu quên tính duy nhất, kiểm tra điều kiện \\(\\vec a,\\vec b\\) không cùng phương.",
     "rubric": "2 điểm xác lập đúng \\(\\overrightarrow{AM}\\); 1 điểm xác lập đúng \\(\\overrightarrow{AN}\\) và hướng; 2 điểm suy ra đúng \\(\\overrightarrow{MN}\\); 1 điểm giải thích cặp hệ số duy nhất nhờ \\(\\overrightarrow{AB},\\overrightarrow{AC}\\) không cùng phương. Tổng 6 điểm. Rubric hỗ trợ lập luận tự luận **trong cùng một item**, không tạo item Written hoặc Anchor thứ hai.",
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1779,12 +2194,31 @@
       },
       "heading": "B. One new original canonical PUBLIC practice item"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-\\frac16\\vec a-\\frac12\\vec b\\); duy nhất vì hai vectơ không cùng phương."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac16\\vec a+\\frac12\\vec b\\); duy nhất."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac13\\vec a-\\frac12\\vec b\\); duy nhất."
+      },
+      {
+        "id": "D",
+        "text": "\\(-\\frac16\\vec a-\\frac12\\vec b\\); không duy nhất."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY01",
-    "content_version": "SOURCE_BLOB_e76a0ae4f9628ffd1d183b44eaae1c35e454bf13_AUTHOR_KEY_REVIEW_R01",
-    "stem": "An đi từ A đến B; Bình đi từ B về A, với A khác B. Hai vectơ độ dời có bằng nhau không, và độ dài của chúng thế nào?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY01",
+    "stem": "An đi từ A đến B; Bình đi từ B về A, với A khác B. Hai vectơ độ dời có bằng nhau không, và độ dài của chúng thế nào? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Không bằng nhau; AB⃗=−BA⃗; cả hai có độ dài AB.",
     "worked_solution": "**Kết quả:** Không bằng nhau: \\(\\overrightarrow{AB}=-\\overrightarrow{BA}\\); cả hai có độ dài AB.\n\n**Vì sao:** Khi đảo điểm đầu/cuối mũi tên quay ngược, trong khi khoảng cách giữa hai đầu không đổi. Độ dài bằng nhau chưa đủ để vectơ bằng nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1795,11 +2229,17 @@
       "G10-B07-DEFINITION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So sánh chiều từ điểm đầu đến điểm cuối."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1813,12 +2253,31 @@
       "help_ref": "HELP-G10-B07-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bằng nhau vì cùng độ dài."
+      },
+      {
+        "id": "B",
+        "text": "Không bằng nhau; \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{BA}\\) đối nhau, độ dài đều bằng AB."
+      },
+      {
+        "id": "C",
+        "text": "Không bằng nhau, độ dài khác nhau."
+      },
+      {
+        "id": "D",
+        "text": "Bằng nhau vì cùng giá."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY02",
-    "content_version": "SOURCE_BLOB_e76a0ae4f9628ffd1d183b44eaae1c35e454bf13_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một vectơ đi 3 m sang Đông, vectơ khác đi 3 m sang Tây. Hai độ dài bằng bao nhiêu và các vectơ có bằng nhau không?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY02",
+    "stem": "Một vectơ đi 3 m sang Đông, vectơ khác đi 3 m sang Tây. Hai độ dài bằng bao nhiêu và các vectơ có bằng nhau không? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Cả hai dài 3 m; không bằng nhau vì ngược hướng.",
     "worked_solution": "**Kết quả:** Đều có độ dài 3 m, nhưng hai vectơ không bằng nhau.\n\n**Vì sao:** Hai vectơ đều dài 3 m, một hướng Đông và một hướng Tây nên cùng phương nhưng ngược hướng, dù đặt trên cùng một đường thẳng hay hai đường thẳng song song. Hai vectơ bằng nhau phải cùng hướng và cùng độ dài.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1829,11 +2288,17 @@
       "G10-B07-LENGTH"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Độ dài không âm, bằng nhau còn cần cùng hướng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1847,12 +2312,31 @@
       "help_ref": "HELP-G10-B07-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả hai 3 m, bằng nhau."
+      },
+      {
+        "id": "B",
+        "text": "Một dài 3 m, một dài −3 m."
+      },
+      {
+        "id": "C",
+        "text": "Cả hai 3 m, không bằng nhau vì ngược hướng."
+      },
+      {
+        "id": "D",
+        "text": "Cả hai dài 6 m."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY03",
-    "content_version": "SOURCE_BLOB_e76a0ae4f9628ffd1d183b44eaae1c35e454bf13_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai vectơ khác không nằm trên hai đường thẳng song song; một mũi tên hướng Đông, một hướng Tây. Chúng cùng phương không? Có cùng hướng không?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY03",
+    "stem": "Hai vectơ khác không nằm trên hai đường thẳng song song; một mũi tên hướng Đông, một hướng Tây. Chúng cùng phương không? Có cùng hướng không? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Cùng phương, ngược hướng, không cùng hướng.",
     "worked_solution": "**Kết quả:** Cùng phương, nhưng ngược hướng; không cùng hướng.\n\n**Vì sao:** Đường thẳng song song chứng minh cùng phương; chiều Đông/Tây trái nhau làm hai vectơ ngược hướng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1863,11 +2347,17 @@
       "G10-B07-DIRECTION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai giá song song xác định quan hệ cùng phương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1881,12 +2371,31 @@
       "help_ref": "HELP-G10-B07-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không cùng phương, ngược hướng."
+      },
+      {
+        "id": "B",
+        "text": "Cùng phương, cùng hướng."
+      },
+      {
+        "id": "C",
+        "text": "Không cùng phương, cùng hướng."
+      },
+      {
+        "id": "D",
+        "text": "Cùng phương, ngược hướng."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY04",
-    "content_version": "SOURCE_BLOB_e76a0ae4f9628ffd1d183b44eaae1c35e454bf13_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hình bình hành ABCD theo thứ tự các đỉnh. \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{DC}\\) có bằng nhau không? \\(\\overrightarrow{CD}\\) thì sao?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY04",
+    "stem": "Hình bình hành ABCD theo thứ tự các đỉnh. \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{DC}\\) có bằng nhau không? \\(\\overrightarrow{CD}\\) thì sao? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "AB⃗=DC⃗; AB⃗≠CD⃗.",
     "worked_solution": "**Kết quả:** \\(\\overrightarrow{AB}=\\overrightarrow{DC}\\), còn \\(\\overrightarrow{AB}\\ne\\overrightarrow{CD}\\).\n\n**Vì sao:** AB và DC song song, cùng hướng, cùng dài; CD ngược hướng với AB. Cùng độ dài vẫn không đủ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1897,11 +2406,17 @@
       "G10-B07-EQUALITY"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Theo thứ tự các đỉnh trên hình bình hành."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1915,12 +2430,31 @@
       "help_ref": "HELP-G10-B07-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{AB}\\) = \\(\\overrightarrow{DC}\\); \\(\\overrightarrow{CD}\\) ngược hướng \\(\\overrightarrow{AB}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{AB}\\) = \\(\\overrightarrow{CD}\\); \\(\\overrightarrow{DC}\\) ngược hướng \\(\\overrightarrow{AB}\\)."
+      },
+      {
+        "id": "C",
+        "text": "Cả ba vectơ bằng nhau."
+      },
+      {
+        "id": "D",
+        "text": "Không có hai vectơ nào cùng hướng."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY05",
-    "content_version": "SOURCE_BLOB_e76a0ae4f9628ffd1d183b44eaae1c35e454bf13_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Bạn đi từ A đến B rồi trở về A. Vectơ độ dời từ điểm đầu đến điểm cuối là gì? Độ dài của vectơ độ dời có bằng tổng quãng đường hai chặng không?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY05",
+    "stem": "Bạn đi từ A đến B rồi trở về A. Vectơ độ dời từ điểm đầu đến điểm cuối là gì? Độ dài của vectơ độ dời có bằng tổng quãng đường hai chặng không? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "AA⃗=0⃗, độ dài 0; không bằng quãng đường hai chặng nếu có di chuyển.",
     "worked_solution": "**Kết quả:** Vectơ độ dời \\(\\overrightarrow{AA}=\\vec0\\), độ dài 0; không bằng tổng quãng đường hai chặng (trừ trường hợp không hề đi).\n\n**Vì sao:** Độ dời chỉ quan tâm vị trí đầu/cuối; đi rồi quay lại cho vectơ-không. Quãng đường vẫn là số dương nếu có di chuyển.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1931,11 +2465,17 @@
       "G10-B07-ZERO"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Điểm đầu và điểm cuối trùng nhau."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1949,12 +2489,31 @@
       "help_ref": "HELP-G10-B07-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{AB}\\), độ dài AB."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\vec 0\\), độ dài 0; không bằng quãng đường nếu đã di chuyển."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{BA}\\), độ dài AB."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\vec 0\\), độ dài bằng hai lần AB."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY06",
-    "content_version": "SOURCE_BLOB_9e5c9227417484e3bbea4f0ba085ff844100f321_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Đi từ A 3 m sang Đông đến B, rồi 4 m lên Bắc đến C. Vectơ tổng đi từ đâu tới đâu? Độ dài của nó bằng 7 m không?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY06",
+    "stem": "Đi từ A 3 m sang Đông đến B, rồi 4 m lên Bắc đến C. Vectơ tổng đi từ đâu tới đâu? Độ dài của nó bằng 7 m không? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "AC⃗; độ dài 5 m, không phải 7 m.",
     "worked_solution": "**Kết quả:** Vectơ tổng là \\(\\overrightarrow{AC}\\); độ dài 5 m, không phải 7 m.\n\n**Vì sao:** Hai chặng vuông góc nên hình học Pitago cho AC = √(3²+4²)=5; 7 m là quãng đường, không phải độ dời.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1965,11 +2524,17 @@
       "G10-B08-TRIANGLE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng quy tắc ba điểm và định lý Pythagore."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1983,12 +2548,31 @@
       "help_ref": "HELP-G10-B08-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{AC}\\), dài 7 m."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{CA}\\), dài 5 m."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{AC}\\), dài 5 m."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{BC}\\), dài 4 m."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY07",
-    "content_version": "SOURCE_BLOB_9e5c9227417484e3bbea4f0ba085ff844100f321_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Ở A có hai lực vuông góc, độ lớn lần lượt 3 N và 4 N. Hợp lực theo đường chéo có độ lớn là 7 N hay 5 N?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY07",
+    "stem": "Ở A có hai lực vuông góc, độ lớn lần lượt 3 N và 4 N. Hợp lực theo đường chéo có độ lớn là 7 N hay 5 N? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Hợp lực 5 N, theo đường chéo hình bình hành.",
     "worked_solution": "**Kết quả:** 5 N, theo đường chéo hình bình hành dựng từ A.\n\n**Vì sao:** Hai lực vuông góc là hai cạnh góc vuông dài 3,4 nên đường chéo có độ lớn √(9+16)=5. Không cộng 3+4.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1999,11 +2583,17 @@
       "G10-B08-PARALLELOGRAM"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai cạnh vuông góc tạo đường chéo."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2017,12 +2607,31 @@
       "help_ref": "HELP-G10-B08-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "7 N theo đường chéo"
+      },
+      {
+        "id": "B",
+        "text": "1 N theo đường chéo"
+      },
+      {
+        "id": "C",
+        "text": "5 N theo một trong hai lực"
+      },
+      {
+        "id": "D",
+        "text": "5 N theo đường chéo"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY08",
-    "content_version": "SOURCE_BLOB_9e5c9227417484e3bbea4f0ba085ff844100f321_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho ba điểm A,B,C bất kỳ. Rút gọn \\(\\overrightarrow{AB}-\\overrightarrow{AC}\\) thành vectơ có hai chữ cái.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY08",
+    "stem": "Cho ba điểm A,B,C bất kỳ. Rút gọn \\(\\overrightarrow{AB}-\\overrightarrow{AC}\\) thành vectơ có hai chữ cái. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "CB⃗.",
     "worked_solution": "**Kết quả:** \\(\\overrightarrow{CB}\\).\n\n**Vì sao:** Đổi trừ thành cộng \\(\\overrightarrow{CA}\\): CA+AB=CB theo quy tắc ba điểm; CB và BC là hai vectơ đối.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2033,11 +2642,17 @@
       "G10-B08-OPPOSITE-SUBTRACTION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đổi phép trừ thành cộng vectơ đối."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2051,12 +2666,31 @@
       "help_ref": "HELP-G10-B08-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{CB}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{BC}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{AC}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{CA}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY09",
-    "content_version": "SOURCE_BLOB_9e5c9227417484e3bbea4f0ba085ff844100f321_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trên đường thẳng chọn A=0 m, B=8 m và M là trung điểm. Lấy \\(\\vec e\\) là vectơ đơn vị dài 1 m hướng từ A đến B. Viết hai vectơ \\(\\overrightarrow{MA}\\), \\(\\overrightarrow{MB}\\) theo \\(\\vec e\\) và tính tổng.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY09",
+    "stem": "Trên đường thẳng chọn A=0 m, B=8 m và M là trung điểm. Lấy \\(\\vec e\\) là vectơ đơn vị dài 1 m hướng từ A đến B. Viết hai vectơ \\(\\overrightarrow{MA}\\), \\(\\overrightarrow{MB}\\) theo \\(\\vec e\\) và tính tổng. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "MA⃗=−4e⃗; MB⃗=4e⃗; tổng bằng 0⃗.",
     "worked_solution": "**Kết quả:** \\(\\overrightarrow{MA}=-4\\vec e\\), \\(\\overrightarrow{MB}=4\\vec e\\), nên tổng bằng \\(\\vec0\\). Mỗi vectơ có độ dài 4 m.\n\n**Vì sao:** Đặt M ở tọa độ 4 m. Hai độ dời là các bội đối nhau của vectơ đơn vị \\(\\vec e\\), do đó tổng triệt tiêu. Không đồng nhất vectơ với một số đo độ dài.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2067,11 +2701,17 @@
       "G10-B08-MIDPOINT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Trung điểm cách đều hai đầu; xét hướng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2085,12 +2725,31 @@
       "help_ref": "HELP-G10-B08-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả hai bằng \\(4\\vec e\\), tổng \\(8\\vec e\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{MA}=-4\\vec e,\\ \\overrightarrow{MB}=4\\vec e\\); tổng \\(\\vec 0\\)."
+      },
+      {
+        "id": "C",
+        "text": "MA cùng chiều e, MB ngược chiều e; tổng \\(\\vec 0\\)."
+      },
+      {
+        "id": "D",
+        "text": "MA và MB đều bằng \\(-4\\vec e\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY10",
-    "content_version": "SOURCE_BLOB_9e5c9227417484e3bbea4f0ba085ff844100f321_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với M trung điểm BC và G trọng tâm ABC, biết \\(\\overrightarrow{GB}+\\overrightarrow{GC}=2\\overrightarrow{GM}\\). Viết \\(\\overrightarrow{GA}\\) theo \\(\\overrightarrow{GM}\\) và tìm tổng ba vectơ từ G.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY10",
+    "stem": "Với M trung điểm BC và G trọng tâm ABC, biết \\(\\overrightarrow{GB}+\\overrightarrow{GC}=2\\overrightarrow{GM}\\). Viết \\(\\overrightarrow{GA}\\) theo \\(\\overrightarrow{GM}\\) và tìm tổng ba vectơ từ G. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "GA⃗=−2GM⃗; GA⃗+GB⃗+GC⃗=0⃗.",
     "worked_solution": "**Kết quả:** \\(\\overrightarrow{GA}=-2\\overrightarrow{GM}\\), do đó \\(\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec0\\).\n\n**Vì sao:** AG=2GM trên cùng trung tuyến, hai vectơ G→A và G→M ngược chiều. Đây là cân bằng vectơ, không phải cộng ba khoảng cách.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2101,11 +2760,17 @@
       "G10-B08-CENTROID"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Trọng tâm chia trung tuyến theo tỉ số 2:1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2119,12 +2784,31 @@
       "help_ref": "HELP-G10-B08-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{GA}=2\\overrightarrow{GM}\\); tổng khác \\(\\vec 0\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{GA}=-\\overrightarrow{GM}\\); tổng \\(\\vec 0\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{GA}=-2\\overrightarrow{GM}\\); tổng \\(\\vec 0\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{GA}=\\frac12\\overrightarrow{GM}\\); tổng \\(\\vec 0\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY11",
-    "content_version": "SOURCE_BLOB_f589e9a61841b12dfbf427c1a92dd5105612d584_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(\\vec u\\ne\\vec0\\), vectơ \\(0\\vec u\\) là gì? Nó có độ dài bằng bao nhiêu?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY11",
+    "stem": "Với \\(\\vec u\\ne\\vec0\\), vectơ \\(0\\vec u\\) là gì? Nó có độ dài bằng bao nhiêu? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "0u⃗=0⃗; độ dài 0.",
     "worked_solution": "**Kết quả:** \\(0\\vec u=\\vec0\\), độ dài bằng 0.\n\n**Vì sao:** Vì \\(|0\\vec u|=|0|\\,|\\vec u|=0\\); không cố gán hướng vật lý riêng cho vectơ-không.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2135,11 +2819,17 @@
       "G10-B09-SCALAR_DEFINITION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Nhân độ dài với trị tuyệt đối hệ số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2153,12 +2843,31 @@
       "help_ref": "HELP-G10-B09-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\vec u\\), độ dài không đổi."
+      },
+      {
+        "id": "B",
+        "text": "Vectơ đơn vị dài 1."
+      },
+      {
+        "id": "C",
+        "text": "Không xác định."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\vec 0\\), độ dài 0."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY12",
-    "content_version": "SOURCE_BLOB_f589e9a61841b12dfbf427c1a92dd5105612d584_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một vectơ \\(\\vec u\\) dài 3 m hướng Đông. Mô tả \\(-2\\vec u\\): độ dài và hướng.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY12",
+    "stem": "Một vectơ \\(\\vec u\\) dài 3 m hướng Đông. Mô tả \\(-2\\vec u\\): độ dài và hướng. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "6 m, hướng Tây.",
     "worked_solution": "**Kết quả:** \\(-2\\vec u\\) dài 6 m và hướng Tây.\n\n**Vì sao:** Độ dài là 2×3=6, dấu âm khiến nó ngược hướng với \\(\\vec u\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2169,11 +2878,17 @@
       "G10-B09-LENGTH_DIRECTION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hệ số âm đổi hướng, trị tuyệt đối nhân độ dài."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2187,12 +2902,31 @@
       "help_ref": "HELP-G10-B09-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 m về Tây"
+      },
+      {
+        "id": "B",
+        "text": "6 m về Đông"
+      },
+      {
+        "id": "C",
+        "text": "3 m về Tây"
+      },
+      {
+        "id": "D",
+        "text": "2 m về Đông"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY13",
-    "content_version": "SOURCE_BLOB_f589e9a61841b12dfbf427c1a92dd5105612d584_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho \\(\\vec u\\) dài 2 đơn vị về Đông và \\(\\vec v\\) dài 1 đơn vị về Bắc. Hãy mô tả \\(2(\\vec u+\\vec v)\\) và \\(2\\vec u+2\\vec v\\).",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY13",
+    "stem": "Cho \\(\\vec u\\) dài 2 đơn vị về Đông và \\(\\vec v\\) dài 1 đơn vị về Bắc. Hãy mô tả \\(2(\\vec u+\\vec v)\\) và \\(2\\vec u+2\\vec v\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Cả hai vectơ có thành phần 4 đơn vị về Đông và 2 đơn vị về Bắc.",
     "worked_solution": "**Kết quả:** Cả hai là vectơ có thành phần 4 đơn vị về Đông và 2 đơn vị về Bắc.\n\n**Vì sao:** Phóng đôi tổng hai chặng hoặc phóng đôi từng chặng dẫn đến cùng điểm cuối. Đây là đẳng thức vectơ, không có nghĩa độ dài bằng 4+2.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2203,11 +2937,17 @@
       "G10-B09-DISTRIBUTION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Phân phối hệ số 2 cho từng thành phần."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2221,12 +2961,31 @@
       "help_ref": "HELP-G10-B09-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả hai có 2 Đông, 1 Bắc."
+      },
+      {
+        "id": "B",
+        "text": "Cả hai có 4 đơn vị Đông, 2 Bắc."
+      },
+      {
+        "id": "C",
+        "text": "Vectơ thứ nhất 4 Đông, 1 Bắc; thứ hai 4 Đông, 2 Bắc."
+      },
+      {
+        "id": "D",
+        "text": "Cả hai có 2 Đông, 4 Bắc."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY14",
-    "content_version": "SOURCE_BLOB_f589e9a61841b12dfbf427c1a92dd5105612d584_AUTHOR_KEY_REVIEW_R01",
-    "stem": "\\(\\vec v=-3\\vec u\\) và \\(\\vec u\\ne\\vec0\\). Hai vectơ có cùng phương không? Cùng hướng không? Tỉ số độ dài bằng bao nhiêu?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY14",
+    "stem": "\\(\\vec v=-3\\vec u\\) và \\(\\vec u\\ne\\vec0\\). Hai vectơ có cùng phương không? Cùng hướng không? Tỉ số độ dài bằng bao nhiêu? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Cùng phương, ngược hướng; |v⃗|/|u⃗|=3.",
     "worked_solution": "**Kết quả:** Cùng phương, ngược hướng, \\(|\\vec v|/|\\vec u|=3\\).\n\n**Vì sao:** Bội âm đổi chiều, độ lớn nhân với 3. Đây là phép mô tả phương/hướng, không phải hai vectơ bằng nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2237,11 +2996,17 @@
       "G10-B09-COLLINEAR"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dấu hệ số xác định hướng; độ dài không âm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2255,12 +3020,31 @@
       "help_ref": "HELP-G10-B09-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cùng phương, cùng hướng; tỉ số 3."
+      },
+      {
+        "id": "B",
+        "text": "Không cùng phương; tỉ số 3."
+      },
+      {
+        "id": "C",
+        "text": "Cùng phương, ngược hướng; tỉ số 3."
+      },
+      {
+        "id": "D",
+        "text": "Cùng phương, ngược hướng; tỉ số −3."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY15",
-    "content_version": "SOURCE_BLOB_f589e9a61841b12dfbf427c1a92dd5105612d584_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong tam giác ABC, M là trung điểm BC, G là trọng tâm; nếu AM=9 cm thì AG bằng bao nhiêu? Viết \\(\\overrightarrow{AG}\\) theo \\(\\overrightarrow{AM}\\).",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY15",
+    "stem": "Trong tam giác ABC, M là trung điểm BC, G là trọng tâm; nếu AM=9 cm thì AG bằng bao nhiêu? Viết \\(\\overrightarrow{AG}\\) theo \\(\\overrightarrow{AM}\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "AG=6 cm; AG⃗=(2/3)AM⃗.",
     "worked_solution": "**Kết quả:** AG=6 cm và \\(\\overrightarrow{AG}=\\frac23\\overrightarrow{AM}\\).\n\n**Vì sao:** G nằm giữa A và M, AG:GM=2:1 nên AM gồm 3 phần, AG chiếm 2 phần. Hai vectơ A→G, A→M cùng hướng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2271,11 +3055,17 @@
       "G10-B09-MIDPOINT_CENTROID"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng tỉ số chia trung tuyến từ đỉnh."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2289,12 +3079,31 @@
       "help_ref": "HELP-G10-B09-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 cm; \\(\\overrightarrow{AG}=\\frac13\\overrightarrow{AM}\\)."
+      },
+      {
+        "id": "B",
+        "text": "6 cm; \\(\\overrightarrow{AG}=-\\frac23\\overrightarrow{AM}\\)."
+      },
+      {
+        "id": "C",
+        "text": "9 cm; \\(\\overrightarrow{AG}=\\overrightarrow{AM}\\)."
+      },
+      {
+        "id": "D",
+        "text": "6 cm; \\(\\overrightarrow{AG}=\\frac23\\overrightarrow{AM}\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY16",
-    "content_version": "SOURCE_BLOB_7b0428899b64a9986689dc5723d119b4356eb06b_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho A(-3;2), B(2;-1). Tìm tọa độ \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{BA}\\).",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY16",
+    "stem": "Cho A(-3;2), B(2;-1). Tìm tọa độ \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{BA}\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "AB⃗=(5;−3), BA⃗=(−5;3).",
     "worked_solution": "**Kết quả:** \\(\\overrightarrow{AB}=(5;-3)\\), \\(\\overrightarrow{BA}=(-5;3)\\).\n\n**Vì sao:** 2−(−3)=5 và −1−2=−3. Đảo điểm đầu/cuối làm vectơ đối.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2305,11 +3114,17 @@
       "G10-B10-VECTOR_COORDS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Lấy tọa độ điểm cuối trừ điểm đầu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2323,12 +3138,31 @@
       "help_ref": "HELP-G10-B10-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(5;-3) và (-5;3)."
+      },
+      {
+        "id": "B",
+        "text": "(-5;3) và (5;-3)."
+      },
+      {
+        "id": "C",
+        "text": "(-1;1) và (1;-1)."
+      },
+      {
+        "id": "D",
+        "text": "(5;3) và (-5;-3)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY17",
-    "content_version": "SOURCE_BLOB_7b0428899b64a9986689dc5723d119b4356eb06b_AUTHOR_KEY_REVIEW_R01",
-    "stem": "\\(\\vec u=(2;-1)\\), \\(\\vec v=(-1;3)\\). Tính \\(2\\vec u-\\vec v\\).",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY17",
+    "stem": "\\(\\vec u=(2;-1)\\), \\(\\vec v=(-1;3)\\). Tính \\(2\\vec u-\\vec v\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "2u⃗−v⃗=(5;−5).",
     "worked_solution": "**Kết quả:** \\((5;-5)\\).\n\n**Vì sao:** 2u=(4;−2); trừ v=(-1;3) nghĩa là (4−(−1);−2−3)=(5;−5).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2339,11 +3173,17 @@
       "G10-B10-OPERATIONS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Nhân từng tọa độ của u với 2 rồi trừ v."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2357,12 +3197,31 @@
       "help_ref": "HELP-G10-B10-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(3;1)"
+      },
+      {
+        "id": "B",
+        "text": "(5;-5)"
+      },
+      {
+        "id": "C",
+        "text": "(5;1)"
+      },
+      {
+        "id": "D",
+        "text": "(3;-5)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY18",
-    "content_version": "SOURCE_BLOB_7b0428899b64a9986689dc5723d119b4356eb06b_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho A(1;2), B(4;6). Khoảng cách AB là 7 hay 5 đơn vị?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY18",
+    "stem": "Cho A(1;2), B(4;6). Khoảng cách AB là 7 hay 5 đơn vị? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "5 đơn vị.",
     "worked_solution": "**Kết quả:** 5 đơn vị.\n\n**Vì sao:** \\(\\overrightarrow{AB}=(3;4)\\), nên \\(AB=|\\overrightarrow{AB}|=\\sqrt{3^2+4^2}=5\\). 7 là tổng độ dài hai chặng theo hai trục, không phải khoảng cách thẳng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2373,11 +3232,17 @@
       "G10-B10-NORM_DISTANCE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng căn tổng bình phương hai hiệu tọa độ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2391,12 +3256,31 @@
       "help_ref": "HELP-G10-B10-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "7"
+      },
+      {
+        "id": "B",
+        "text": "25"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "1"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY19",
-    "content_version": "SOURCE_BLOB_7b0428899b64a9986689dc5723d119b4356eb06b_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(\\vec u=(2;1)\\), \\(\\vec v=(6;3)\\), \\(\\vec w=(6;4)\\). Vectơ nào cùng phương với u (biết cả ba đều khác 0)?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY19",
+    "stem": "Với \\(\\vec u=(2;1)\\), \\(\\vec v=(6;3)\\), \\(\\vec w=(6;4)\\). Vectơ nào cùng phương với u (biết cả ba đều khác 0)? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Chỉ v⃗ cùng phương với u⃗ (v⃗=3u⃗).",
     "worked_solution": "**Kết quả:** Chỉ \\(\\vec v\\) cùng phương với \\(\\vec u\\), vì \\(\\vec v=3\\vec u\\); \\(\\vec w\\) không cùng phương.\n\n**Vì sao:** Cặp (6,4) có tỉ số x=3 nhưng y=4, không thể tìm cùng k cho hai tọa độ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2407,11 +3291,17 @@
       "G10-B10-COLLINEAR_COORDS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm cùng một hệ số ở cả hai tọa độ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2425,12 +3315,31 @@
       "help_ref": "HELP-G10-B10-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ \\(\\vec w\\), vì hoành độ gấp ba."
+      },
+      {
+        "id": "B",
+        "text": "Cả \\(\\vec v\\) và \\(\\vec w\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không vectơ nào."
+      },
+      {
+        "id": "D",
+        "text": "Chỉ \\(\\vec v\\), vì \\(\\vec v\\) = \\(3\\vec u\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY20",
-    "content_version": "SOURCE_BLOB_7b0428899b64a9986689dc5723d119b4356eb06b_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho A(-2;4), B(4;0), C(1;5). Tính trung điểm M của AB và trọng tâm G của ABC.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY20",
+    "stem": "Cho A(-2;4), B(4;0), C(1;5). Tính trung điểm M của AB và trọng tâm G của ABC. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "M(1;2), G(1;3).",
     "worked_solution": "**Kết quả:** \\(M=(1;2)\\), \\(G=(1;3)\\).\n\n**Vì sao:** M: ((−2+4)/2;(4+0)/2)=(1;2); G: ((−2+4+1)/3;(4+0+5)/3)=(1;3).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2441,11 +3350,17 @@
       "G10-B10-MIDPOINT_CENTROID"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Trung bình hai tọa độ cho M, ba tọa độ cho G."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2459,12 +3374,31 @@
       "help_ref": "HELP-G10-B10-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "M(1;2), G(1;3)."
+      },
+      {
+        "id": "B",
+        "text": "M(1;3), G(1;2)."
+      },
+      {
+        "id": "C",
+        "text": "M(2;4), G(3;9)."
+      },
+      {
+        "id": "D",
+        "text": "M(1;2), G(1;5)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY-RIVER-TR01",
-    "content_version": "SOURCE_BLOB_7b0428899b64a9986689dc5723d119b4356eb06b_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Sông có hai bờ song song theo hướng Đông–Tây, rộng \\(60\\,\\mathrm m\\) theo hướng Bắc–Nam. Dòng chảy đều \\(3\\,\\mathrm{m/s}\\) về Đông. Ca nô chạy \\(5\\,\\mathrm{m/s}\\) so với nước, lái thẳng Bắc. Ca nô trôi bao nhiêu mét về Đông khi tới bờ bên kia? Đặt hai thành phần theo trục trước khi tính.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY-RIVER-TR01",
+    "stem": "Sông có hai bờ song song theo hướng Đông–Tây, rộng \\(60\\,\\mathrm m\\) theo hướng Bắc–Nam. Dòng chảy đều \\(3\\,\\mathrm{m/s}\\) về Đông. Ca nô chạy \\(5\\,\\mathrm{m/s}\\) so với nước, lái thẳng Bắc. Ca nô trôi bao nhiêu mét về Đông khi tới bờ bên kia? Đặt hai thành phần theo trục trước khi tính. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Trôi 36 m về Đông (thời gian qua sông 12 s).",
     "worked_solution": "**Kết quả:** Trôi \\(36\\,\\mathrm m\\) về Đông.\n\n**Vì sao:** vận tốc theo bờ \\(\\vec v_{\\mathrm{bờ}}=(3;5)\\,\\mathrm{m/s}\\). Thành phần hướng Bắc \\(5\\,\\mathrm{m/s}\\) quyết định thời gian \\(t=60/5=12\\,\\mathrm s\\); do đó độ trôi ngang \\(3\\cdot12=36\\,\\mathrm m\\). Độ lớn vận tốc thực \\(\\sqrt{34}\\,\\mathrm{m/s}\\) **không phải** thành phần qua sông; không lấy \\(60/\\sqrt{34}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2475,11 +3409,17 @@
       "G10-B10-OPERATIONS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Thời gian qua sông phụ thuộc thành phần Bắc, độ trôi phụ thuộc thành phần Đông."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2493,12 +3433,31 @@
       "help_ref": "HELP-G10-CHIV-RIVER-TR01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "60 m Đông; 20 s."
+      },
+      {
+        "id": "B",
+        "text": "36 m Đông; 12 s."
+      },
+      {
+        "id": "C",
+        "text": "48 m Đông; 16 s."
+      },
+      {
+        "id": "D",
+        "text": "100 m Đông; 12 s."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY21",
-    "content_version": "SOURCE_BLOB_313a27573cd679234c62f5041587ea86de684733_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho \\(|\\vec u|=2\\), \\(|\\vec v|=3\\), góc giữa hai vectơ là 120°. Tích vô hướng âm hay dương, bằng bao nhiêu?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY21",
+    "stem": "Cho \\(|\\vec u|=2\\), \\(|\\vec v|=3\\), góc giữa hai vectơ là 120°. Tích vô hướng âm hay dương, bằng bao nhiêu? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "u⃗·v⃗=−3, tích âm.",
     "worked_solution": "**Kết quả:** \\(\\vec u\\cdot\\vec v=2\\cdot3\\cdot\\cos120^\\circ=-3\\).\n\n**Vì sao:** Cos120°=−1/2 nên tích âm; không thể dùng cos60° vì đây là góc giữa hai vectơ đang hướng xa nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2509,11 +3468,17 @@
       "G10-B11-GEOMETRIC_DOT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Nhân hai độ dài với cos 120°."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2527,12 +3492,31 @@
       "help_ref": "HELP-G10-B11-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "3, dương"
+      },
+      {
+        "id": "B",
+        "text": "−6, âm"
+      },
+      {
+        "id": "C",
+        "text": "−3, âm"
+      },
+      {
+        "id": "D",
+        "text": "0"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY22",
-    "content_version": "SOURCE_BLOB_313a27573cd679234c62f5041587ea86de684733_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho \\(\\vec u=(2;-1)\\), \\(\\vec v=(3;4)\\). Tính \\(\\vec u\\cdot\\vec v\\).",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY22",
+    "stem": "Cho \\(\\vec u=(2;-1)\\), \\(\\vec v=(3;4)\\). Tính \\(\\vec u\\cdot\\vec v\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "u⃗·v⃗=2.",
     "worked_solution": "**Kết quả:** \\(2\\cdot3+(-1)\\cdot4=2\\).\n\n**Vì sao:** Thành phần theo Ox cho 6, theo Oy cho −4, cộng là 2. Tích vô hướng là một số, không phải vectơ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2543,11 +3527,17 @@
       "G10-B11-COORDINATE_DOT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Nhân từng tọa độ tương ứng rồi cộng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2561,12 +3551,31 @@
       "help_ref": "HELP-G10-B11-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "10"
+      },
+      {
+        "id": "B",
+        "text": "-2"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "2"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY23",
-    "content_version": "SOURCE_BLOB_313a27573cd679234c62f5041587ea86de684733_AUTHOR_KEY_REVIEW_R01",
-    "stem": "\\(\\vec u=(2;3)\\), \\(\\vec v=(3;-2)\\). Chúng có vuông góc không? Vì sao điều kiện khác 0 quan trọng?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY23",
+    "stem": "\\(\\vec u=(2;3)\\), \\(\\vec v=(3;-2)\\). Chúng có vuông góc không? Vì sao điều kiện khác 0 quan trọng? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Có; tích vô hướng bằng 0 và cả hai vectơ khác 0.",
     "worked_solution": "**Kết quả:** Có, vì \\(\\vec u\\cdot\\vec v=2\\cdot3+3\\cdot(-2)=0\\), và cả hai khác \\(\\vec0\\).\n\n**Vì sao:** Nếu một vectơ bằng 0 thì tích vẫn bằng 0 nhưng góc giữa hai vectơ không xác định theo định nghĩa dùng ở đây.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2577,11 +3586,17 @@
       "G10-B11-PERPENDICULAR"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính tích vô hướng và kiểm độ dài khác 0."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2595,12 +3610,31 @@
       "help_ref": "HELP-G10-B11-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, tích vô hướng bằng 0 và cả hai khác không."
+      },
+      {
+        "id": "B",
+        "text": "Không, vì tọa độ khác nhau."
+      },
+      {
+        "id": "C",
+        "text": "Có, vì hai vectơ bằng nhau."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì tích vô hướng bằng 12."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY24",
-    "content_version": "SOURCE_BLOB_313a27573cd679234c62f5041587ea86de684733_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một lực 10 N hướng Đông, vật dịch chuyển 3 m hướng Tây. Công của lực là bao nhiêu J? Nếu dịch chuyển vuông góc lực thì sao?",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY24",
+    "stem": "Một lực 10 N hướng Đông, vật dịch chuyển 3 m hướng Tây. Công của lực là bao nhiêu J? Nếu dịch chuyển vuông góc lực thì sao? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Công −30 J khi ngược hướng; 0 J khi vuông góc.",
     "worked_solution": "**Kết quả:** Cùng phương ngược hướng: \\(W=10\\cdot3\\cos180^\\circ=-30\\) J; vuông góc: \\(W=0\\) J.\n\n**Vì sao:** Cos180°=−1, cos90°=0. Công là vô hướng có dấu, khác với độ lớn lực hay quãng đường.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2611,11 +3645,17 @@
       "G10-B11-APPLICATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng cos 180° và cos 90°."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2629,12 +3669,31 @@
       "help_ref": "HELP-G10-B11-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 J; 0 J."
+      },
+      {
+        "id": "B",
+        "text": "−30 J; 0 J."
+      },
+      {
+        "id": "C",
+        "text": "0 J; 30 J."
+      },
+      {
+        "id": "D",
+        "text": "−30 J; −30 J."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHIV-TRY-FORCE-TR01",
-    "content_version": "SOURCE_BLOB_313a27573cd679234c62f5041587ea86de684733_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai lực bằng nhau, mỗi lực \\(4\\,\\mathrm N\\), tạo góc \\(60^\\circ\\). Muốn vòng móc cân bằng, lực thứ ba phải có **độ lớn và chiều** như thế nào? Hãy dự đoán hướng trước khi tính.",
+    "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY-FORCE-TR01",
+    "stem": "Hai lực bằng nhau, mỗi lực \\(4\\,\\mathrm N\\), tạo góc \\(60^\\circ\\). Muốn vòng móc cân bằng, lực thứ ba phải có **độ lớn và chiều** như thế nào? Hãy dự đoán hướng trước khi tính. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Lực thứ ba có độ lớn 4√3 N, ngược hướng hợp lực F₁+F₂.",
     "worked_solution": "**Kết quả:** Đặt \\(\\vec R=\\vec F_1+\\vec F_2\\), ta có \\(|\\vec R|^2=4^2+4^2+2\\cdot4\\cdot4\\cos60^\\circ=48\\). Vì vậy \\(|\\vec F_3|=4\\sqrt3\\,\\mathrm N\\), và \\(\\vec F_3=-\\vec R\\), tức lực thứ ba **ngược chiều hợp lực**.\n\n**Vì sao:** Góc \\(60^\\circ\\) không phải góc vuông; dùng tổng vectơ và tính chất tích vô hướng, không cộng \\(4+4\\) thành độ lớn hợp lực. Nếu nhầm, tự mở khung Kiểm lỗi ngay dưới câu Vận dụng này.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2645,11 +3704,17 @@
       "G10-B11-GEOMETRIC_DOT"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính hợp lực bằng quy tắc hình bình hành; cân bằng cần vectơ đối."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2663,6 +3728,25 @@
       "help_ref": "HELP-G10-CHIV-FORCE-TR01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "8 N, ngược hướng hợp lực."
+      },
+      {
+        "id": "B",
+        "text": "\\(4\\sqrt3\\,\\mathrm N\\), cùng hướng hợp lực."
+      },
+      {
+        "id": "C",
+        "text": "\\(4\\sqrt3\\,\\mathrm N\\), ngược hướng hợp lực."
+      },
+      {
+        "id": "D",
+        "text": "4 N, vuông góc hợp lực."
+      }
+    ]
   }
 ]
