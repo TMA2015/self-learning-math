@@ -14542,9 +14542,9 @@
   },
   {
     "item_id": "THPT-TOP10-KFT01",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT01",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT01",
     "stem": "\\(f(x)=3x-1\\) đồng biến hay nghịch biến trên \\(\\mathbb R\\)? Hãy giải thích bằng hai giá trị \\(x_1<x_2\\).",
-    "answer_key": "Đồng biến trên \\(\\mathbb R\\).",
+    "answer_key": "Đồng biến trên \\(\\mathbb R\\) vì \\(f(x_2)-f(x_1)=3(x_2-x_1)>0\\) với mọi \\(x_1<x_2\\).",
     "worked_solution": "\\(f(x_2)-f(x_1)=3(x_2-x_1)>0\\), nên hàm đồng biến trên \\(\\mathbb R\\). Nếu em chỉ thế hai giá trị cụ thể, hãy quay lại điều kiện **với mọi** cặp \\(x_1<x_2\\) trong khoảng.\n\n\n**Kiểm lỗi**\n\nNếu em kết luận chiều biến thiên từ hai điểm mẫu, đọc lại **Kiến thức 1.1** và giải **Bài 1** rồi **Bài 2**. Với mọi \\(x_1<x_2\\) trong cùng khoảng, phải kiểm dấu hiệu hai giá trị hoặc dấu đạo hàm, không chỉ quan sát hình.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -14554,11 +14554,17 @@
       "TOP10-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét hiệu hai giá trị hàm theo thứ tự."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14570,11 +14576,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nghịch biến vì hệ số tự do âm."
+      },
+      {
+        "id": "B",
+        "text": "Không đơn điệu vì hàm đổi dấu."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ đồng biến khi x>0."
+      },
+      {
+        "id": "D",
+        "text": "Đồng biến trên \\(\\mathbb R\\) vì \\(f(x_2)-f(x_1)=3(x_2-x_1)>0\\) với mọi \\(x_1<x_2\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT02",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT02",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT02",
     "stem": "\\(f(x)=x^3\\) có tăng nghiêm ngặt trên \\(\\mathbb R\\) không? Vì sao \\(f'(0)=0\\) không bác bỏ điều đó?",
     "answer_key": "Có; đạo hàm chỉ bằng 0 tại một điểm.",
     "worked_solution": "Có. Với \\(x_1<x_2\\), \\(x_2^3-x_1^3=(x_2-x_1)(x_2^2+x_1x_2+x_1^2)>0\\), vì thừa số thứ nhất dương và thừa số thứ hai chỉ bằng 0 khi cả hai bằng 0 (không thể với hai số khác nhau); đạo hàm \\(3x^2\\ge0\\) và chỉ bằng 0 tại một điểm, không tạo ra đoạn hằng. Nếu em gán mọi nghiệm \\(f'=0\\) thành cực trị, hãy lập dấu đạo hàm **hai phía** điểm ấy.\n\n\n**Kiểm lỗi**\n\nNếu em gán mọi nghiệm \\(f'=0\\) thành cực trị hoặc quên các khoảng đổi dấu, đọc **Kiến thức 1.2**, làm **Bài 3** và **Bài 5**. Lập trục dấu \\(f'\\), phân biệt một điểm dừng với khoảng tăng/giảm.",
@@ -14586,11 +14611,17 @@
       "TOP10-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét dấu đạo hàm hoặc so hai giá trị bất kỳ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14602,11 +14633,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, vì đạo hàm bằng 0 tại 0."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ đồng biến trên nửa trục dương."
+      },
+      {
+        "id": "C",
+        "text": "Có; đạo hàm chỉ bằng 0 tại một điểm."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì tại 0 có cực tiểu."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT03",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT03",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT03",
     "stem": "\\(g(x)=\\sqrt{x-1}\\) có miền xác định nào? Có thể nói hàm tăng trên miền đó không?",
     "answer_key": "\\(D=[1;+\\infty)\\); đồng biến trên miền đó.",
     "worked_solution": "Điều kiện \\(x-1\\ge0\\) cho miền \\([1;+\\infty)\\). Trên \\((1;+\\infty)\\), \\(g'(x)=\\dfrac1{2\\sqrt{x-1}}>0\\); từ giá trị ở biên \\(x=1\\), ta vẫn có thể nói hàm tăng trên \\([1;+\\infty)\\). Nếu em ghi miền \\(\\mathbb R\\), hãy kiểm điều kiện tồn tại của căn trước.\n\n\n**Kiểm lỗi**\n\nNếu em kết luận nghịch biến trên toàn tập rời nhau hoặc dùng đạo hàm tại điểm cấm, đọc **Kiến thức 1.3**, làm **Bài 6** rồi **Bài 8**. Trước tiên tách miền thành các khoảng hợp lệ.",
@@ -14618,11 +14668,17 @@
       "TOP10-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm điều kiện căn, rồi so các giá trị."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14634,11 +14690,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(D=(1;+\\infty)\\); đồng biến."
+      },
+      {
+        "id": "B",
+        "text": "\\(D=[1;+\\infty)\\); đồng biến trên miền đó."
+      },
+      {
+        "id": "C",
+        "text": "\\(D=\\mathbb R\\); đồng biến."
+      },
+      {
+        "id": "D",
+        "text": "\\(D=[1;+\\infty)\\); nghịch biến."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT04",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT04",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT04",
     "stem": "\\(f=x^2\\) có cực tiểu ở đâu?",
     "answer_key": "Cực tiểu tại \\(x=0\\), giá trị 0.",
     "worked_solution": "\\(f'(x)=2x\\), âm khi \\(x<0\\), dương khi \\(x>0\\). Hàm giảm rồi tăng qua 0, nên đạt cực tiểu tại \\(x=0\\) với \\(f(0)=0\\).\n\nNếu chỉ giải \\(f'=0\\), lập bảng dấu qua nghiệm.\n\n\n**Kiểm lỗi**\n\nNếu em chỉ giải \\(f'=0\\) mà không xét dấu trái/phải điểm tới hạn, đọc **Kiến thức 1.4**, làm **Bài 9** và **Bài 12**. Dấu \\(+\\to-\\) cho cực đại, \\(-\\to+\\) cho cực tiểu.",
@@ -14650,11 +14725,17 @@
       "TOP10-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Xét dấu đạo hàm hai phía của nghiệm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14666,11 +14747,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cực đại tại 0, giá trị 0."
+      },
+      {
+        "id": "B",
+        "text": "Cực tiểu tại \\(x=0\\), giá trị 0."
+      },
+      {
+        "id": "C",
+        "text": "Cực tiểu tại 1, giá trị 1."
+      },
+      {
+        "id": "D",
+        "text": "Không có cực tiểu."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT05",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT05",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT05",
     "stem": "\\(f=x^4\\) có cực tiểu tại0 không?",
     "answer_key": "Có, cực tiểu tại \\(x=0\\), giá trị 0.",
     "worked_solution": "\\(f'(x)=4x^3\\) đổi dấu từ âm sang dương qua 0. Vì vậy hàm có cực tiểu tại \\(x=0\\), giá trị \\(f(0)=0\\).\n\nNếu bỏ điểm gấp khúc |x|, bổ sung điểm f không khả vi nhưng có giá trị.\n\n\n**Kiểm lỗi**\n\nNếu em nghĩ có \\(f'=0\\) chắc chắn có cực trị hoặc bỏ điểm không khả vi, đọc **Kiến thức 1.5**, làm **Bài 14** và **Bài 16**. Đối chiếu \\(|x|\\) với \\(x^5\\) quanh 0.",
@@ -14682,11 +14782,17 @@
       "TOP10-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét sự đổi dấu đạo hàm qua 0."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14698,11 +14804,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, cực tiểu tại \\(x=0\\), giá trị 0."
+      },
+      {
+        "id": "B",
+        "text": "Không, vì đạo hàm bằng 0 tại 0."
+      },
+      {
+        "id": "C",
+        "text": "Có cực đại tại 0, giá trị 0."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì hàm luôn tăng."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT06",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT06",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT06",
     "stem": "\\(s(t)=t^2\\), t>0, tọa độ tăng hay giảm?",
     "answer_key": "Tọa độ tăng khi \\(t>0\\).",
     "worked_solution": "\\(v=2t>0\\) nên tăng.\n\nNếu nhìn s âm hay dương để đo chiều, thay bằng dấu s'.\n\n\n**Kiểm lỗi**\n\nNếu em dùng dấu tọa độ \\(s(t)\\) để kết luận chiều chuyển động, đọc **Kiến thức 1.6**, làm **Bài 17** và **Bài 18**. Xét vận tốc có hướng \\(v=s'\\), còn tốc độ là \\(|v|\\).",
@@ -14714,11 +14839,17 @@
       "TOP10-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Dấu đạo hàm tọa độ xác định chiều biến thiên."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14730,11 +14861,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tọa độ giảm khi t>0."
+      },
+      {
+        "id": "B",
+        "text": "Tọa độ không đổi."
+      },
+      {
+        "id": "C",
+        "text": "Tọa độ giảm rồi tăng trên t>0."
+      },
+      {
+        "id": "D",
+        "text": "Tọa độ tăng khi \\(t>0\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT07",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT07",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT07",
     "stem": "Hàm \\(f=x^2\\) trên ℝ có GTNN không, GTLN không?",
     "answer_key": "GTNN 0 tại \\(x=0\\); không có GTLN.",
     "worked_solution": "Vì \\(x^2\\ge0\\) với mọi x và \\(f(0)=0\\), GTNN bằng 0. Khi \\(x\\to+\\infty\\), \\(x^2\\to+\\infty\\), nên không có GTLN.\n\nNếu nói cực đại 2 là GTLN của hàm bậc ba, thử x=10.\n\n\n**Kiểm lỗi**\n\nNếu em lấy cực đại địa phương làm GTLN trên toàn miền vô hạn, đọc **Kiến thức 2.1**, làm **Bài 19** và **Bài 21**. So cả biên và hành vi ở xa; muốn có GTLN phải có điểm thực sự đạt.",
@@ -14746,11 +14896,17 @@
       "TOP10-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm giá trị tại 0 và khi x tăng không giới hạn."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14762,11 +14918,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "GTLN 0, không có GTNN."
+      },
+      {
+        "id": "B",
+        "text": "Có GTNN 0 và GTLN 1."
+      },
+      {
+        "id": "C",
+        "text": "GTNN 0 tại \\(x=0\\); không có GTLN."
+      },
+      {
+        "id": "D",
+        "text": "Không có cả hai vì miền không bị chặn."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT08",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT08",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT08",
     "stem": "\\(f=x^2\\) trên \\([-1;2]\\) có GTLN?",
     "answer_key": "GTLN 4 tại \\(x=2\\).",
     "worked_solution": "Hàm liên tục trên đoạn. \\(f'(x)=2x=0\\) tại 0. So \\(f(-1)=1,\\ f(0)=0,\\ f(2)=4\\); GTLN 4 tại 2 (GTNN 0 tại 0).\n\nNếu miền mở, thử xét f=x trên \\((0;1)\\) không đạt cận1.\n\n\n**Kiểm lỗi**\n\nNếu em áp dụng định lí GTLN/GTNN cho miền hở hoặc không liên tục, đọc **Kiến thức 2.2**, làm **Bài 22** và **Bài 24**. Điều kiện đủ quen thuộc là **liên tục trên đoạn đóng hữu hạn**.",
@@ -14778,11 +14953,17 @@
       "TOP10-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "So giá trị ở hai đầu đoạn và điểm dừng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14794,11 +14975,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "GTLN 1 tại −1."
+      },
+      {
+        "id": "B",
+        "text": "GTLN 0 tại 0."
+      },
+      {
+        "id": "C",
+        "text": "GTLN 4 tại \\(x=2\\)."
+      },
+      {
+        "id": "D",
+        "text": "GTLN 4 tại −2."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT09",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT09",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT09",
     "stem": "\\(f=x^2-4x\\) trên \\([0;3]\\), GTNN?",
     "answer_key": "GTNN \\(-4\\) tại \\(x=2\\).",
     "worked_solution": "\\(f'=2x-4=0\\) tại2: \\(f(0)=0,\\ f(2)=-4,\\ f(3)=-3\\)⇒GTNN−4 tại2.\n\nNếu thấy nghiệm đạo hàm nằm ngoài đoạn, bỏ ứng viên ấy.\n\n\n**Kiểm lỗi**\n\nNếu em chỉ kiểm nghiệm \\(f'=0\\) mà bỏ hai đầu đoạn hoặc điểm không khả vi, đọc **Kiến thức 2.3**, làm **Bài 28** và **Bài 29**. Ghi đủ các giá trị ứng viên rồi so sánh.",
@@ -14810,11 +15010,17 @@
       "TOP10-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm nghiệm đạo hàm rồi so các ứng viên."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14826,11 +15032,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "GTNN 0 tại 0."
+      },
+      {
+        "id": "B",
+        "text": "GTNN \\(-4\\) tại \\(x=2\\)."
+      },
+      {
+        "id": "C",
+        "text": "GTNN −3 tại 3."
+      },
+      {
+        "id": "D",
+        "text": "GTNN −4 tại −2."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT10",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT10",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT10",
     "stem": "\\(g(x)=-x\\) trên \\((0;1)\\) có GTLN bằng 0 không?",
     "answer_key": "Không đạt GTLN.",
     "worked_solution": "Không, vì \\(g\\to0\\) khi \\(x\\to0^+\\) nhưng \\(x=0\\) bị loại.\n\nNếu ghi GTLN là cận không đạt, hãy hỏi có \\(x\\in D\\) sao cho f(x)=cận không.\n\n\n**Kiểm lỗi**\n\nNếu em gọi một cận tiến tới nhưng không đạt là GTLN/GTNN, đọc **Kiến thức 2.4**, làm **Bài 30** và **Bài 32**. Hỏi rõ có tồn tại \\(x\\) trong miền để \\(f(x)\\) bằng cận không.",
@@ -14842,11 +15067,17 @@
       "TOP10-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm xem điểm tạo giá trị giới hạn có thuộc miền."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14858,11 +15089,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không đạt GTLN."
+      },
+      {
+        "id": "B",
+        "text": "Có, bằng 0 tại 0."
+      },
+      {
+        "id": "C",
+        "text": "Có, bằng −1 tại 1."
+      },
+      {
+        "id": "D",
+        "text": "Có, bằng −0,5 tại 0,5."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT11",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT11",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT11",
     "stem": "Tìm giá trị lớn nhất của \\(f(x)=-(x-5)^2\\) trên \\([0;2]\\) và điểm đạt.",
     "answer_key": "GTLN \\(-9\\) tại \\(x=2\\).",
     "worked_solution": "\\(f'(x)=-2(x-5)>0\\) trên \\((0;2)\\), nên hàm tăng trên đoạn. GTLN tại đầu mút \\(x=2\\), bằng \\(-(2-5)^2=-9\\). Nghiệm \\(x=5\\) không thuộc miền.\n\nNếu nghiệm \\(f'=0\\) ngoài miền, kiểm đầu mút hợp lệ.\n\n\n**Kiểm lỗi**\n\nNếu nghiệm tối ưu không thuộc miền ràng buộc nhưng vẫn được chọn, đọc **Kiến thức 2.5**, làm **Bài 33** và **Bài 34**. Trước khi đạo hàm cần chốt miền; nghiệm ngoài miền bị loại.",
@@ -14874,11 +15124,17 @@
       "TOP10-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "So vị trí đỉnh với miền khả thi."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14890,13 +15146,32 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "GTLN 0 tại 5."
+      },
+      {
+        "id": "B",
+        "text": "GTLN −25 tại 0."
+      },
+      {
+        "id": "C",
+        "text": "GTLN −4 tại 2."
+      },
+      {
+        "id": "D",
+        "text": "GTLN \\(-9\\) tại \\(x=2\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT12",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT12",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT12",
     "stem": "Có 32 m hàng rào để rào ba cạnh của một mảnh vườn hình chữ nhật dựa vào tường thẳng (cạnh sát tường không cần rào). Hãy đặt biến là chiều dài cạnh song song tường, lập miền khả thi và tìm diện tích lớn nhất.",
-    "answer_key": "\\(y=16\\) m, \\(x=8\\) m; diện tích lớn nhất \\(128\\,\\mathrm{m}^2\\).",
+    "answer_key": "\\(0<y<32;\\ y=16\\) m, \\(x=8\\) m; diện tích lớn nhất \\(128\\,\\mathrm{m^2}\\).",
     "worked_solution": "Gọi \\(y\\) (m) là chiều dài cạnh song song tường, \\(x\\) (m) là mỗi cạnh vuông góc. Vì chỉ rào ba cạnh, \\(y+2x=32\\), nên \\(x=\\frac{32-y}{2}\\). Điều kiện \\(x,y>0\\) cho \\(0<y<32\\). Diện tích \\(A(y)=\\frac{y(32-y)}2=128-\\frac12(y-16)^2\\le128\\). Dấu bằng xảy ra tại \\(y=16\\), \\(x=8\\), đều khả thi. Diện tích lớn nhất là \\(128\\ \\text{m}^2\\). Nếu viết \\(2x+2y=32\\), em đã tính thêm cạnh sát tường không cần rào.\n\n\n**Kiểm lỗi**\n\nNếu em viết ràng buộc cho hình chữ nhật sát tường như phải rào đủ bốn cạnh, đọc **Kiến thức 2.6**, làm **Bài 35** và **Bài 37**. Vẽ rõ những cạnh dùng vật liệu, sau đó đưa diện tích về một biến.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -14906,11 +15181,17 @@
       "TOP10-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Viết tổng chiều dài đúng ba cạnh và diện tích theo cạnh song song tường."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14922,11 +15203,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(0<y<16;\\ y=8,\\ x=8\\); diện tích 64 m²."
+      },
+      {
+        "id": "B",
+        "text": "\\(0<y<32;\\ y=8,\\ x=12\\); diện tích 96 m²."
+      },
+      {
+        "id": "C",
+        "text": "\\(0<y<32;\\ y=32,\\ x=0\\); diện tích 0 m²."
+      },
+      {
+        "id": "D",
+        "text": "\\(0<y<32;\\ y=16\\) m, \\(x=8\\) m; diện tích lớn nhất \\(128\\,\\mathrm{m^2}\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT13",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT13",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT13",
     "stem": "\\(f=\\frac{3x-2}{x+4}\\) có TCN?",
     "answer_key": "\\(y=3\\).",
     "worked_solution": "Chia tử và mẫu cho x: \\(\\frac{3-2/x}{1+4/x}\\to3\\) khi \\(x\\to\\pm\\infty\\). Do đó tiệm cận ngang là \\(y=3\\).\n\nNếu lấy hệ số hằng ở tử làm tiệm cận, chia cho x bậc cao nhất.\n\n\n**Kiểm lỗi**\n\nNếu em nhầm hệ số tự do với tỉ số bậc cao nhất của phân thức, đọc **Kiến thức 3.1**, làm **Bài 39** và **Bài 41**. Tính giới hạn khi \\(x\\to\\pm\\infty\\), rồi viết tiệm cận ngang \\(y=L\\).",
@@ -14938,11 +15238,17 @@
       "TOP10-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính giới hạn tại vô cực."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14954,11 +15260,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(y=-2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(y=4\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(y=3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(y=0\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT14",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT14",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT14",
     "stem": "\\(f=\\frac1{x+1}\\) có TCD ở đâu và hai phía?",
     "answer_key": "\\(x=-1\\); giới hạn trái \\(-\\infty\\), phải \\(+\\infty\\).",
     "worked_solution": "Mẫu \\(x+1\\) tiến về 0 âm khi \\(x\\to-1^-\\) và về 0 dương khi \\(x\\to-1^+\\). Vì vậy các giới hạn lần lượt là \\(-\\infty\\) và \\(+\\infty\\); tiệm cận đứng \\(x=-1\\).\n\nNếu viết \\(\\frac00\\) rồi gọi đứng, thử phân tích và rút gọn.\n\n\n**Kiểm lỗi**\n\nNếu em chỉ thấy mẫu bằng 0 mà không xét giới hạn một phía và dấu, đọc **Kiến thức 3.2**, làm **Bài 42** và **Bài 44**. Điểm tiệm cận đứng đòi giá trị hàm tiến vô cực từ ít nhất một phía trong miền.",
@@ -14970,11 +15295,17 @@
       "TOP10-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Xét dấu mẫu ở hai phía."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -14986,11 +15317,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=-1\\); trái \\(+\\infty\\), phải \\(-\\infty\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x=-1\\); giới hạn trái \\(-\\infty\\), phải \\(+\\infty\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x=1\\); trái \\(-\\infty\\), phải \\(+\\infty\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(x=-1\\); hai phía đều \\(+\\infty\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT15",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT15",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT15",
     "stem": "\\(f=\\frac{x^2-x+2}{x}\\), \\(x\\ne0\\), TC xiên?",
     "answer_key": "\\(y=x-1\\).",
     "worked_solution": "\\(f=x-1+\\frac2x\\Rightarrow y=x-1\\).\n\nNếu chỉ tính a mà quên b, tiệm cận sẽ dịch sai.\n\n\n**Kiểm lỗi**\n\nNếu em ghi \\(y=ax\\) nhưng bỏ hệ số dịch \\(b\\), đọc **Kiến thức 3.3**, làm **Bài 46** và **Bài 48**. Chia đa thức, chứng minh phần dư tiến về 0 tại vô cực.",
@@ -15002,11 +15352,17 @@
       "TOP10-O15"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Chia đa thức rồi xét phần dư."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15018,11 +15374,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(y=x-1\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(y=x+1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(y=x-2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(y=2x-1\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT18",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT18",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT18",
     "stem": "Quan sát hai hình sau (không cần biết trước biểu thức của hàm). Đọc phương trình đường tiệm cận đứng và đường tiệm cận ngang hoặc xiên của mỗi hình. Mô tả nhánh trái và nhánh phải khi tiến gần tiệm cận đứng.\n\n*Đọc hình:* Nét liền xanh lam là đồ thị; nét đứt biểu thị đường tiệm cận. Dùng vạch chia trên trục để đọc phương trình đường đứt. Hãy phân biệt nhánh đi lên hay xuống khi tiến sát đường đứng; không nối hai nhánh qua đường đó.",
     "answer_key": "Cả hai: \\(x=0\\); A: \\(y=1\\); B: \\(y=x\\). Trái \\(-\\infty\\), phải \\(+\\infty\\) khi tiến sát \\(x=0\\).",
     "worked_solution": "Cả hai hình có tiệm cận đứng \\(x=0\\). Khi \\(x\\to0^-\\), nhánh trái đi xuống phía \\(-\\infty\\); khi \\(x\\to0^+\\), nhánh phải đi lên phía \\(+\\infty\\). Ở hình A, đường đứt xanh lá nằm ngang, cắt trục tung ở 1, nên tiệm cận ngang \\(y=1\\). Hình B có đường đứt đi qua gốc và qua \\((2;2)\\), nên tiệm cận xiên \\(y=x\\). Kiểm bằng hai hàm dùng để vẽ: hình A là \\(1+\\frac1x\\), hình B là \\(x+\\frac1x\\), sai khác với đường ngang/xiên tương ứng đều bằng \\(\\frac1x\\to0\\) ở hai phía vô cực.\n\n\n**Kiểm lỗi**\n\nNếu em nhầm đường xiên với đường ngang hoặc đọc hai nhánh liền nhau qua điểm cấm, đọc **Kiến thức 3.6**, làm **Bài 56** và **Bài 58**. Viết phương trình từng tiệm cận và kiểm giới hạn sai khác.",
@@ -15034,11 +15409,17 @@
       "TOP10-O18"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Đọc đường đứt theo vạch chia; theo dõi hai nhánh sát đường đứng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15058,13 +15439,32 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_REVIEWED_REQUIRED_VISUAL_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE_REQUIRED_VISUAL_INTEGRATION_PENDING",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả hai: \\(x=0\\); A: \\(y=1\\); B: \\(y=x\\). Trái \\(-\\infty\\), phải \\(+\\infty\\) khi tiến sát \\(x=0\\)."
+      },
+      {
+        "id": "B",
+        "text": "Cả hai \\(x=0\\); A: \\(y=x\\); B: \\(y=1\\). Trái \\(-\\infty\\), phải \\(+\\infty\\)."
+      },
+      {
+        "id": "C",
+        "text": "Cả hai \\(x=0\\); A: \\(y=1\\); B: \\(y=x\\). Trái \\(+\\infty\\), phải \\(-\\infty\\)."
+      },
+      {
+        "id": "D",
+        "text": "Cả hai \\(x=1\\); A: \\(y=0\\); B: \\(y=x\\). Trái \\(-\\infty\\), phải \\(+\\infty\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT19",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT19",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT19",
     "stem": "Khảo sát \\(f(x)=x^2\\) trên \\(\\mathbb R\\): tìm miền, đạo hàm, khoảng tăng giảm, cực trị và mô tả hình dạng đồ thị theo đúng thứ tự.",
-    "answer_key": "\\(D=\\mathbb R\\); nghịch biến trên \\((-\\infty;0)\\), đồng biến trên \\((0;+\\infty)\\); cực tiểu 0 tại 0, parabol mở lên.",
+    "answer_key": "\\(D=\\mathbb R,\\ f'(x)=2x\\); nghịch biến trên \\((-\\infty;0)\\), đồng biến trên \\((0;+\\infty)\\); cực tiểu 0 tại 0, parabol mở lên.",
     "worked_solution": "Miền \\(D=\\mathbb R\\), đạo hàm \\(f'(x)=2x\\). Hàm nghịch biến trên \\((-\\infty;0)\\), đồng biến trên \\((0;+\\infty)\\), đạt cực tiểu 0 tại 0. Khi \\(x\\to\\pm\\infty\\), \\(f(x)\\to+\\infty\\). Đồ thị là parabol mở lên, đỉnh \\(O(0;0)\\), trục đối xứng Oy, không có tiệm cận đứng, ngang hoặc xiên.\n\nNếu thiếu nhánh phía trái, bảng dấu f' là nơi tìm lại.\n\n\n**Kiểm lỗi**\n\nNếu em bắt đầu phác hình trước khi kiểm miền xác định, đạo hàm và giao trục, đọc **Kiến thức 4.1**, làm **Bài 59** và **Bài 61**. Bảng biến thiên phải xuất phát từ miền và dấu \\(f'\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -15076,11 +15476,17 @@
       "TOP10-O19"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Xác định miền, dấu đạo hàm và hình dạng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15092,28 +15498,53 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(D=\\mathbb R,\\ f'=2x\\); tăng trước 0, giảm sau 0; cực đại 0; parabol mở xuống."
+      },
+      {
+        "id": "B",
+        "text": "\\(D=[0;+\\infty),\\ f'=2x\\); chỉ đồng biến; parabol mở lên."
+      },
+      {
+        "id": "C",
+        "text": "\\(D=\\mathbb R,\\ f'=x\\); giảm trước 0, tăng sau 0; cực tiểu 0; parabol mở lên."
+      },
+      {
+        "id": "D",
+        "text": "\\(D=\\mathbb R,\\ f'(x)=2x\\); nghịch biến trên \\((-\\infty;0)\\), đồng biến trên \\((0;+\\infty)\\); cực tiểu 0 tại 0, parabol mở lên."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT21",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT21",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT21",
     "stem": "\\(f=\\frac{x+3}{x-2}\\), dấu đạo hàm?",
     "answer_key": "\\(f'(x)<0\\) với \\(x\\ne2\\).",
     "worked_solution": "Với \\(x\\ne2\\), \\(f'(x)=\\frac{(x-2)-(x+3)}{(x-2)^2}=-\\frac5{(x-2)^2}<0\\). Hàm nghịch biến trên từng khoảng \\((-\\infty;2)\\) và \\((2;+\\infty)\\). Từ \\(f(x)=1+\\frac5{x-2}\\), còn thấy tiệm cận đứng \\(x=2\\), ngang \\(y=1\\).\n\nNếu đọc 'giảm trên toàn ℝ\\{2}' theo mọi cặp, lưu ý hai nhánh không tạo một khoảng.\n\n\n**Kiểm lỗi**\n\nNếu em gộp hai khoảng bị ngăn bởi tiệm cận đứng thành một khoảng giảm/tăng, đọc **Kiến thức 4.3**, làm **Bài 68** và **Bài 69**. Tách nhánh theo từng thành phần liên thông của miền.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
-      "G12-B03-VERTICAL_ONE_SIDED",
-      "G12-B03-HORIZONTAL_LIMIT"
+      "G12-B01-DERIVATIVE_SIGN",
+      "G12-B04-DOMAIN_NONCONNECT"
     ],
     "original_outcome_ids": [
       "TOP10-O21"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng quy tắc thương, giữ miền gốc."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15125,11 +15556,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(f'(x)>0\\) với \\(x\\ne2\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(f'(x)=0\\) với \\(x\\ne2\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(f'(x)<0\\) với \\(x\\ne2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(f'(x)<0\\) với mọi \\(x\\in\\mathbb R\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT22",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT22",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT22",
     "stem": "\\(f=\\frac{x-1}{x-1}\\), \\(x\\ne1\\) có giao Ox không?",
     "answer_key": "Không có giao điểm với \\(Ox\\).",
     "worked_solution": "Không; f=1 trên D nên không có nghiệm f=0, \\(x=1\\) bị loại.\n\nNếu rút gọn rồi tự điền điểm bị loại, đã đổi đồ thị.\n\n\n**Kiểm lỗi**\n\nNếu em giải tử bằng 0 nhưng quên mẫu cũng bằng 0 tại nghiệm đó, đọc **Kiến thức 4.4**, làm **Bài 70** và **Bài 72**. Điểm giao trục chỉ hợp lệ khi tọa độ thuộc miền.",
@@ -15141,11 +15591,17 @@
       "TOP10-O22"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Rút gọn trên miền rồi giải phương trình bằng 0."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15157,11 +15613,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có giao tại (1;0)."
+      },
+      {
+        "id": "B",
+        "text": "Không có giao điểm với \\(Ox\\)."
+      },
+      {
+        "id": "C",
+        "text": "Có giao tại (0;0)."
+      },
+      {
+        "id": "D",
+        "text": "Có giao tại mọi điểm vì tử bằng mẫu."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT23",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT23",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT23",
     "stem": "\\(f=\\frac{x+1}{x-2}\\) có tâm đối xứng nào?",
     "answer_key": "\\(I(2;1)\\).",
     "worked_solution": "\\(f=1+\\frac3{x-2}\\) nên \\(I(2;1)\\).\n\nNếu lấy tâm tại giao trục, nhầm với giao tiệm cận.\n\n\n**Kiểm lỗi**\n\nNếu em đặt tâm đối xứng tại giao trục thay vì giao hai tiệm cận của phân thức dạng phù hợp, đọc **Kiến thức 4.5**, làm **Bài 74** và **Bài 75**. Kiểm lại bằng cặp điểm đối xứng qua tâm.",
@@ -15173,11 +15648,17 @@
       "TOP10-O23"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Đưa về dạng hằng số cộng phân thức tử hằng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15189,11 +15670,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(I(-2;1)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(I(2;1)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(I(1;2)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(I(2;3)\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT24",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT24",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT24",
     "stem": "Cho \\(f\\) liên tục tại \\(x=2\\), khả vi ở hai phía gần 2, \\(f'(x)>0\\) khi \\(x<2\\) và \\(f'(x)<0\\) khi \\(x>2\\), \\(f(2)=5\\). Điểm \\((2;5)\\) là cực trị nào?",
     "answer_key": "Cực đại tại \\(x=2\\), giá trị 5.",
     "worked_solution": "Do f liên tục tại 2 và tăng trước2, giảm sau2 theo dấu đạo hàm, f đạt cực đại địa phương ở \\((2;5)\\). Điều kiện liên tục tại 2 rất quan trọng; chỉ biết dấu đạo hàm hai phía và f(2) thì chưa đủ.\n\nNếu tưởng min, nhớ +→− là đi lên rồi đi xuống.\n\n\n**Kiểm lỗi**\n\nNếu em kết luận cực trị chỉ từ dấu hai phía mà quên tính liên tục tại điểm, đọc **Kiến thức 4.6**, làm **Bài 76** và **Bài 77**. Với hàm liên tục ở mốc, dấu đạo hàm \\(+\\to-\\) cho cực đại, \\(-\\to+\\) cho cực tiểu.",
@@ -15205,11 +15705,17 @@
       "TOP10-O24"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét chiều biến thiên trước và sau 2."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15221,11 +15727,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cực đại tại \\(x=2\\), giá trị 5."
+      },
+      {
+        "id": "B",
+        "text": "Cực tiểu tại x=2, giá trị 5."
+      },
+      {
+        "id": "C",
+        "text": "Không có cực trị vì chưa biết f'(2)."
+      },
+      {
+        "id": "D",
+        "text": "GTLN toàn miền chắc chắn bằng 5."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT26",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT26",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT26",
     "stem": "Tổng chi phí \\(C(q)=50+3q\\) (nghìn đồng), q là số sản phẩm được mô hình hóa liên tục. Tính \\(C'(q)\\) và nêu đơn vị.",
     "answer_key": "3 nghìn đồng/sản phẩm.",
     "worked_solution": "\\(C'(q)=3\\) nghìn đồng/sản phẩm tại các điểm trong miền liên tục của mô hình. Đây là tốc độ thay đổi tức thời của tổng chi phí theo số sản phẩm.\n\nNếu trả 50+3q, bạn đang nêu mức chi phí chứ không tốc độ.\n\n\n**Kiểm lỗi**\n\nNếu em trả tổng chi phí thay vì chi phí cận biên hoặc bỏ đơn vị, đọc **Kiến thức 5.1**, làm **Bài 81** và **Bài 83**. Đơn vị \\(C'\\) là đơn vị tiền trên một sản phẩm.",
@@ -15238,11 +15763,17 @@
       "TOP10-O26"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Đạo hàm theo sản lượng và chia đơn vị."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15254,11 +15785,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "50 nghìn đồng/sản phẩm."
+      },
+      {
+        "id": "B",
+        "text": "3 nghìn đồng."
+      },
+      {
+        "id": "C",
+        "text": "53 nghìn đồng/sản phẩm."
+      },
+      {
+        "id": "D",
+        "text": "3 nghìn đồng/sản phẩm."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT27",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT27",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT27",
     "stem": "Tại một thời điểm, vật có vận tốc \\(v=-4\\) m/s, gia tốc \\(a=-1\\) m/s². Tốc độ đang tăng hay giảm?",
     "answer_key": "Tốc độ đang tăng tại thời điểm xét.",
     "worked_solution": "Tại thời điểm xét, v âm nên tốc độ là \\(-v\\) trong lân cận đủ nhỏ (v liên tục). Đạo hàm tốc độ bằng \\(-a=1>0\\) m/s²; do đó tốc độ đang tăng.\n\nNếu viết 'a âm nên chậm', kiểm chiều v.\n\n\n**Kiểm lỗi**\n\nNếu em kết luận gia tốc âm luôn làm tốc độ giảm, đọc **Kiến thức 5.2**, làm **Bài 84** và **Bài 86**. Khi \\(v\\ne0\\), tốc độ tăng/giảm tùy dấu của \\(v\\cdot a\\).",
@@ -15270,11 +15820,17 @@
       "TOP10-O27"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Khi vận tốc âm, tốc độ bằng đối của vận tốc."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15286,11 +15842,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tốc độ giảm vì gia tốc âm."
+      },
+      {
+        "id": "B",
+        "text": "Tốc độ giảm vì vận tốc âm."
+      },
+      {
+        "id": "C",
+        "text": "Tốc độ đang tăng tại thời điểm xét."
+      },
+      {
+        "id": "D",
+        "text": "Tốc độ không đổi vì hai đại lượng cùng dấu."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT28",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT28",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT28",
     "stem": "Cho mô hình chi phí liên tục \\(C(q)=q^2+2q\\). Tính \\(C'(3)\\) và \\(C(4)-C(3)\\). Hai đại lượng có bằng nhau không?",
     "answer_key": "\\(C'(3)=8,\\ C(4)-C(3)=9\\).",
     "worked_solution": "\\(C'(q)=2q+2\\), nên \\(C'(3)=8\\). Mức tăng thực khi thêm một sản phẩm là \\(C(4)-C(3)=24-15=9\\). Hai giá trị không bằng nhau: đạo hàm chỉ mô tả tốc độ biến thiên tức thời.\n\nKhông tuyên bố đạo hàm luôn bằng tăng một sản phẩm.\n\n\n**Kiểm lỗi**\n\nNếu em cho rằng đạo hàm đúng bằng chênh lệch khi tăng nguyên một sản phẩm, đọc **Kiến thức 5.3**, làm **Bài 87** và **Bài 90**. Tính riêng \\(C'(q)\\) và \\(C(q+1)-C(q)\\) để thấy sai khác.",
@@ -15302,11 +15877,17 @@
       "TOP10-O28"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính đạo hàm và hiệu hai giá trị hàm riêng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15318,11 +15899,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(C'(3)=8,\\ C(4)-C(3)=8\\); bằng nhau."
+      },
+      {
+        "id": "B",
+        "text": "\\(C'(3)=9,\\ C(4)-C(3)=8\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(C'(3)=8,\\ C(4)-C(3)=9\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(C'(3)=6,\\ C(4)-C(3)=9\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT29",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT29",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT29",
     "stem": "Với hộp không nắp gấp từ tấm bìa vuông cạnh 8 cm, mô hình \\(V=x(8-2x)^2\\), chiều cao và cạnh đáy phải dương. \\(x\\) nằm trong khoảng nào?",
     "answer_key": "\\(0<x<4\\).",
     "worked_solution": "\\(0<x<4\\) để cạnh \\(8-2x>0\\).\n\nNếu xét \\(x=5\\), đáy có cạnh âm, không có hộp.\n\n\n**Kiểm lỗi**\n\nNếu em đạo hàm mô hình hộp trước khi đặt điều kiện chiều dài dương, đọc **Kiến thức 5.4**, làm **Bài 92** và **Bài 93**. Chiều cao và mọi cạnh đáy đều phải dương.",
@@ -15334,11 +15934,17 @@
       "TOP10-O29"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Chiều cao và cạnh đáy đều dương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15350,11 +15956,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(0<x<8\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(0<x<4\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(0\\le x\\le4\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(4<x<8\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT30",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT30",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT30",
     "stem": "Với diện tích \\(A(x)=x(8-x)\\), \\(0<x<8\\), tìm x làm diện tích lớn nhất và giá trị đó.",
     "answer_key": "\\(x=4,\\ A_{\\max}=16\\).",
     "worked_solution": "\\(A(x)=16-(x-4)^2\\le16\\). Dấu bằng xảy ra tại \\(x=4\\), thuộc miền \\((0;8)\\). Vậy diện tích lớn nhất bằng 16.\n\nNếu \\(x>0\\) nhưng nghiệm ngoài miền, phải loại.\n\n\n**Kiểm lỗi**\n\nNếu em chỉ giữ nghiệm \\(f'=0\\) mà không so biên hoặc khả đạt, đọc **Kiến thức 5.5**, làm **Bài 94** và **Bài 96**. Kết luận tối ưu phải thuộc miền hợp lệ và đạt được.",
@@ -15366,11 +15991,17 @@
       "TOP10-O30"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Hoàn thành bình phương hoặc tìm đỉnh."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15382,11 +16013,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=4,\\ A_{\\max}=16\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(x=8,\\ A_{\\max}=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x=2,\\ A_{\\max}=12\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x=4,\\ A_{\\max}=32\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT31",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT31",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT31",
     "stem": "Tìm GTLN và GTNN của \\(g(x)=3-|x-1|\\) trên \\([-1;4]\\). Chỉ rõ điểm cần kiểm dù đạo hàm không tồn tại ở đó.",
     "answer_key": "GTLN 3 tại 1; GTNN 0 tại 4; phải xét điểm gãy \\(x=1\\).",
     "worked_solution": "Hàm liên tục trên đoạn. Với \\(x<1\\), \\(g(x)=2+x\\) tăng; với \\(x>1\\), \\(g(x)=4-x\\) giảm. Tại \\(1\\) có điểm gãy với độ dốc trái 1 và phải \\(-1\\), nên phải đưa vào danh sách ứng viên. So \\(g(-1)=1\\), \\(g(1)=3\\), \\(g(4)=0\\). GTLN bằng 3 tại \\(1\\), GTNN bằng 0 tại \\(4\\). Nếu chỉ xét hai đầu đoạn, em sẽ bỏ mất GTLN ở điểm không khả vi.\n\n\n**Kiểm lỗi**\n\nNếu em bỏ điểm không khả vi hoặc bỏ đầu đoạn trong bài GTLN/GTNN, đọc **Kiến thức 5.6**, làm **Bài 98** và **Bài 100**. Liệt kê cả điểm gãy, điểm tới hạn và biên.",
@@ -15399,11 +16049,17 @@
       "TOP10-O31"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Xét hai đầu đoạn và điểm gãy."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15415,11 +16071,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "GTLN 1 tại −1; GTNN 0 tại 4; bỏ điểm gãy."
+      },
+      {
+        "id": "B",
+        "text": "GTLN 3 tại 1; GTNN 1 tại −1."
+      },
+      {
+        "id": "C",
+        "text": "GTLN 0 tại 4; GTNN 3 tại 1."
+      },
+      {
+        "id": "D",
+        "text": "GTLN 3 tại 1; GTNN 0 tại 4; phải xét điểm gãy \\(x=1\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT32",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT32",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT32",
     "stem": "Nếu \\(P(q)=-(q-3{,}6)^2+20\\), \\(q\\) là số nguyên từ 0 đến 8, hãy giải thích vì sao chỉ cần so hai số nguyên nào và chọn số sản phẩm tối ưu.",
     "answer_key": "So \\(q=3,4\\); tối ưu \\(q=4\\), \\(P(4)=19{,}84\\).",
     "worked_solution": "Vì \\(P'(q)=-2(q-3{,}6)\\), hàm tăng trước \\(3{,}6\\) và giảm sau đó. Hai ứng viên gần nhất ở hai phía là 3 và 4. So \\(P(3)=19{,}64\\), \\(P(4)=19{,}84\\), nên chọn \\(q=4\\).\n\nĐừng dùng \\(q=3{,}6\\) sản phẩm trong câu trả lời số nguyên.\n\n\n**Kiểm lỗi**\n\nNếu em làm tròn kích thước liên tục vô cớ hoặc chọn nghiệm sản lượng phân số, đọc **Kiến thức 5.7**, làm **Bài 101** và **Bài 103**. Chỉ yêu cầu số nguyên khi biến thực sự đếm số sản phẩm.",
@@ -15433,11 +16108,17 @@
       "TOP10-O32"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Hàm tăng trước đỉnh, giảm sau đỉnh; so hai số nguyên gần đỉnh."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15449,11 +16130,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "So \\(q=3,4\\); chọn \\(q=3,\\ P=19{,}64\\)."
+      },
+      {
+        "id": "B",
+        "text": "Chọn \\(q=3{,}6,\\ P=20\\)."
+      },
+      {
+        "id": "C",
+        "text": "So \\(q=4,5\\); chọn \\(q=5,\\ P=18{,}04\\)."
+      },
+      {
+        "id": "D",
+        "text": "So \\(q=3,4\\); tối ưu \\(q=4\\), \\(P(4)=19{,}84\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT33",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT33",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT33",
     "stem": "\\(f=x^2-4x\\) trên ℝ có GTNN gì, GTLN?",
     "answer_key": "GTNN \\(-4\\) tại 2; không có GTLN.",
     "worked_solution": "\\(f(x)=(x-2)^2-4\\ge-4\\), dấu bằng tại \\(x=2\\); GTNN \\(-4\\). Khi \\(x\\to+\\infty\\), \\(f(x)\\to+\\infty\\), nên không có GTLN.\n\nNếu nhầm cực đại địa phương với toàn cục, so f khi x rất lớn.\n\n\n**Kiểm lỗi**\n\nNếu em nhầm cực đại địa phương của đa thức với GTLN trên \\(\\mathbb R\\), đọc **Kiến thức 6.1**, làm **Bài 104** và **Bài 107**. Kiểm miền và hành vi khi \\(x\\to\\pm\\infty\\).",
@@ -15465,11 +16165,17 @@
       "TOP10-O33"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Hoàn thành bình phương và xét vô cực."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15481,27 +16187,53 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "GTNN 0 tại 0; không có GTLN."
+      },
+      {
+        "id": "B",
+        "text": "GTLN −4 tại 2; không có GTNN."
+      },
+      {
+        "id": "C",
+        "text": "GTNN \\(-4\\) tại 2; không có GTLN."
+      },
+      {
+        "id": "D",
+        "text": "GTNN −4 tại −2; GTLN 0."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT34",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT34",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT34",
     "stem": "\\(f=\\frac{x+2}{x-1}\\), TCD và TCN?",
     "answer_key": "Tiệm cận đứng \\(x=1\\); ngang \\(y=1\\).",
     "worked_solution": "\\(f(x)=1+\\frac3{x-1}\\) với \\(x\\ne1\\). Khi \\(x\\to1^\\pm\\), các giới hạn là vô cực tương ứng; khi \\(x\\to\\pm\\infty\\), \\(f(x)\\to1\\). Tiệm cận đứng \\(x=1\\), ngang \\(y=1\\).\n\nNếu nói \\(y=x\\), kiểm bậc tử/mẫu trước.\n\n\n**Kiểm lỗi**\n\nNếu tử và mẫu cùng bậc, thương đa thức là hằng số (tỉ số hệ số đầu), cho tiệm cận ngang; nếu bậc tử lớn hơn bậc mẫu đúng 1, thương là đa thức bậc nhất, cho tiệm cận xiên. Ví dụ trên thuộc trường hợp thứ hai. Để xác định tiệm cận đứng, còn phải kiểm phần dư và giới hạn gần điểm cấm. Đọc **Kiến thức 6.2**, làm **Bài 108** và **Bài 111**; lập dấu đạo hàm riêng qua từng khoảng của miền.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
-      "G12-B03-REMOVABLE_DISCONTINUITY"
+      "G12-B03-VERTICAL_ONE_SIDED",
+      "G12-B03-HORIZONTAL_LIMIT"
     ],
     "original_outcome_ids": [
       "TOP10-O34"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm nghiệm mẫu, kiểm tử và giới hạn tại vô cực."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15513,11 +16245,30 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x=-1,\\ y=1\\)"
+      },
+      {
+        "id": "B",
+        "text": "Tiệm cận đứng \\(x=1\\); ngang \\(y=1\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(x=1,\\ y=2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x=-2,\\ y=1\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT35",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT35",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT35",
     "stem": "Với doanh thu \\(R(q)=10q\\), chi phí \\(C(q)=q^2+2q+1\\), \\(q\\in[0;6]\\), tìm q làm lợi nhuận lớn nhất.",
     "answer_key": "\\(q=4\\); lợi nhuận lớn nhất 15.",
     "worked_solution": "\\(P=-q^2+8q-1\\); \\(P'=-2q+8=0\\Rightarrow q=4\\); \\(P(4)=15,\\ P(0)=-1,\\ P(6)=11\\). So ba giá trị, lợi nhuận lớn nhất là 15 tại \\(q=4\\).\n\nPhải thiết lập P=R−C thay vì tối ưu trực tiếp C.\n\n\n**Kiểm lỗi**\n\nNếu em tối ưu chi phí thay vì lợi nhuận, đọc **Kiến thức 6.3**, làm **Bài 112**, **Bài 115** và **Bài 116**. Viết mục tiêu \\(P=R-C\\), kiểm ràng buộc sản lượng và so biên.",
@@ -15529,11 +16280,17 @@
       "TOP10-O35"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Lợi nhuận bằng doanh thu trừ chi phí; tìm đỉnh."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15545,28 +16302,52 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(q=4\\); lợi nhuận lớn nhất 15."
+      },
+      {
+        "id": "B",
+        "text": "\\(q=5,\\ P_{\\max}=14\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(q=4,\\ P_{\\max}=16\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(q=6,\\ P_{\\max}=11\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP10-KFT36",
-    "content_version": "TOP10-BANK-CP76-20261126-KFT36",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT36",
     "stem": "\\(f=\\frac{x^2-1}{x-1}\\), \\(x\\ne1\\), có TCD tại \\(x=1\\) không?",
     "answer_key": "Không; giới hạn bằng 2 hữu hạn.",
     "worked_solution": "Với \\(x\\ne1\\), \\(\\frac{x^2-1}{x-1}=x+1\\). Vì \\(\\lim_{x\\to1}f(x)=2\\) hữu hạn nên \\(x=1\\) không phải tiệm cận đứng; đồ thị thiếu điểm \\((1;2)\\).\n\nNếu chỉ nhìn mẫu bằng0, cần rút nhân tử trên miền bỏ điểm.\n\n\n**Kiểm lỗi**\n\nNếu em nghĩ mẫu bằng 0 chắc chắn có TCD hoặc \\(f'(a)=0\\) chắc chắn có cực tiểu, đọc **Kiến thức 6.4**, làm **Bài 117**, **Bài 118** và **Bài 120**. Phân biệt lỗ, tiệm cận đứng, điểm dừng và cực trị bằng giới hạn/dấu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
-      "G12-B02-OPEN_DOMAIN_NONATTAINMENT",
-      "G12-B02-EXTREMA_GLOBAL_MEANING"
+      "G12-B03-REMOVABLE_DISCONTINUITY"
     ],
     "original_outcome_ids": [
       "TOP10-O36"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Phân tích tử, rút gọn nhưng giữ điều kiện."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -15578,7 +16359,26 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; giới hạn bằng 2 hữu hạn."
+      },
+      {
+        "id": "B",
+        "text": "Có, vì mẫu bằng 0 tại \\(x=1\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không, vì hàm gốc xác định tại \\(x=1\\)."
+      },
+      {
+        "id": "D",
+        "text": "Có, vì giới hạn tại \\(x=1\\) bằng \\(+\\infty\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-TOP11-KFT01",
