@@ -1,21 +1,25 @@
 [
   {
     "item_id": "THPT-G11-CHVII-B22-C01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B22-C01",
     "stem": "Hai đường có góc giữa hai tia cùng phương được chọn là \\(145^\\circ\\). Góc giữa hai đường thẳng là bao nhiêu?",
-    "answer_key": "\\(35^\\circ\\).",
+    "answer_key": "35°",
     "worked_solution": "Góc giữa hai đường thẳng là góc không tù giữa hai phương. Hai góc kề bù có số đo \\(145^\\circ\\) và \\(180^\\circ-145^\\circ=35^\\circ\\), nên chọn \\(35^\\circ\\).",
     "skill_ids": [
       "G11-B22-ANGLE_LINES"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Chọn góc nhỏ hơn giữa 145° và góc bù."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -28,26 +32,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy 145°, góc giữa hai đường không vượt 90°; lấy 180°−145°. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy 145°, góc giữa hai đường không vượt 90°; lấy 180°−145°. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "35°"
+      },
+      {
+        "id": "B",
+        "text": "145°"
+      },
+      {
+        "id": "C",
+        "text": "55°"
+      },
+      {
+        "id": "D",
+        "text": "90°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B22-C02",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B22-C02",
     "stem": "Có thể có \\(a\\perp b\\) nhưng a và b không có điểm chung không?",
-    "answer_key": "Có.",
+    "answer_key": "Có; hai đường chéo nhau vẫn có thể tạo góc 90°.",
     "worked_solution": "Trong không gian, hai đường vuông góc khi góc giữa hai phương bằng \\(90^\\circ\\). Chúng không bắt buộc cắt nhau; chẳng hạn hai cạnh AB và CC′ của hình hộp chữ nhật ABCD.A′B′C′ vuông góc và chéo nhau.",
     "skill_ids": [
       "G11-B22-PERP_SKEW"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Xét góc giữa hai phương sau khi đưa về cùng điểm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -60,26 +87,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ phải giao nhau, dùng hai cạnh chéo nhau của hình hộp chữ nhật. Ôn CĐ16 mục 1.2; luyện THPT-TOP16-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nghĩ phải giao nhau, dùng hai cạnh chéo nhau của hình hộp chữ nhật. Ôn CĐ16 mục 1.2; luyện THPT-TOP16-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; phải cắt nhau mới vuông góc."
+      },
+      {
+        "id": "B",
+        "text": "Có; hai đường chéo nhau vẫn có thể tạo góc 90°."
+      },
+      {
+        "id": "C",
+        "text": "Có; mọi đường chéo nhau đều vuông góc."
+      },
+      {
+        "id": "D",
+        "text": "Không; không gặp nhau thì bắt buộc song song."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B22-C03",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B22-C03",
     "stem": "Nếu \\(a\\parallel a'\\) và \\(a\\perp b\\), góc giữa a′ và b bằng bao nhiêu?",
-    "answer_key": "\\(90^\\circ\\).",
+    "answer_key": "90°",
     "worked_solution": "Hai đường song song có cùng phương. Khi dựng các đường cùng phương qua một điểm để xác định góc, a và a′ cho cùng một phương, nên góc với b vẫn bằng \\(90^\\circ\\).",
     "skill_ids": [
       "G11-B22-PARALLEL_DIRECTION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Đường song song có cùng phương; thay a′ bằng a khi xét góc với b."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -92,26 +142,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ góc thay đổi, kiểm hai đường a và a′ cùng phương nên góc với b giữ nguyên. Ôn CĐ16 mục 1.3; luyện THPT-TOP16-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nghĩ góc thay đổi, kiểm hai đường a và a′ cùng phương nên góc với b giữ nguyên. Ôn CĐ16 mục 1.3; luyện THPT-TOP16-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "0°"
+      },
+      {
+        "id": "B",
+        "text": "45°"
+      },
+      {
+        "id": "C",
+        "text": "90°"
+      },
+      {
+        "id": "D",
+        "text": "180°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B22-C04",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B22-C04",
     "stem": "Hai thanh thép cách nhau, một nằm theo phương Đông–Tây, một thẳng đứng. Hai đường chứa chúng có vuông góc theo định nghĩa không?",
-    "answer_key": "Có, góc giữa hai phương bằng \\(90^\\circ\\).",
+    "answer_key": "Có; góc giữa phương ngang Đông–Tây và phương thẳng đứng là 90°.",
     "worked_solution": "Phương Đông–Tây nằm ngang, phương thẳng đứng vuông góc với mọi phương ngang. Dựng hai đường theo hai phương đó qua một điểm, chúng tạo góc vuông. Vị trí hai thanh không ảnh hưởng đến góc giữa hai phương.",
     "skill_ids": [
       "G11-B22-PROOF_CONTEXT"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Qua một điểm dựng hai hướng ngang và thẳng đứng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -124,26 +197,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ nhìn hai thanh trên hình, chứng minh phương thẳng đứng vuông góc phương Đông–Tây. Ôn CĐ16 mục 1.4; luyện THPT-TOP16-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ nhìn hai thanh trên hình, chứng minh phương thẳng đứng vuông góc phương Đông–Tây. Ôn CĐ16 mục 1.4; luyện THPT-TOP16-P04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; hai thanh không gặp nhau."
+      },
+      {
+        "id": "B",
+        "text": "Không; chỉ hai thanh trong cùng mặt phẳng mới vuông góc."
+      },
+      {
+        "id": "C",
+        "text": "Có; mọi thanh cách nhau đều vuông góc."
+      },
+      {
+        "id": "D",
+        "text": "Có; góc giữa phương ngang Đông–Tây và phương thẳng đứng là 90°."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B22-P01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B22-P01",
     "stem": "Nêu cách xác định góc của hai đường chéo nhau mà không cần chúng gặp nhau.",
-    "answer_key": "Qua một điểm dựng hai đường lần lượt cùng phương với hai đường ban đầu, chọn góc không tù giữa chúng.",
+    "answer_key": "Qua một điểm dựng hai đường lần lượt cùng phương với hai đường đã cho; lấy góc không tù.",
     "worked_solution": "Chọn một điểm O, dựng hai đường qua O lần lượt cùng phương với hai đường đã cho. Góc giữa hai đường ban đầu là góc không tù giữa hai đường mới. Đây chỉ là cách chuyển phương để đo góc; hai đường ban đầu vẫn chéo nhau.",
     "skill_ids": [
       "G11-B22-ANGLE_LINES"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Qua O dựng hai đường cùng phương với hai đường ban đầu."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -156,26 +252,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho phải kéo dài đến giao điểm, hai đường chéo không gặp; chỉ chuyển phương về O. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho phải kéo dài đến giao điểm, hai đường chéo không gặp; chỉ chuyển phương về O. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Qua một điểm dựng hai đường lần lượt cùng phương với hai đường đã cho; lấy góc không tù."
+      },
+      {
+        "id": "B",
+        "text": "Nối hai đầu mút gần nhất và lấy góc với một đường."
+      },
+      {
+        "id": "C",
+        "text": "Kéo dài hai đường đến khi chúng cắt nhau."
+      },
+      {
+        "id": "D",
+        "text": "Lấy góc trên hình vẽ phối cảnh, không cần chuyển phương."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B22-P02",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B22-P02",
     "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′, góc giữa AB và D′C′ là bao nhiêu?",
-    "answer_key": "\\(0^\\circ\\).",
+    "answer_key": "0°",
     "worked_solution": "Trong đáy, AB song song DC. Hai cạnh tương ứng DC và D′C′ cũng song song. Vì AB và D′C′ cùng phương, góc giữa chúng bằng \\(0^\\circ\\).",
     "skill_ids": [
       "G11-B22-ANGLE_LINES"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "So phương AB với D′C′ trong hai đáy."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -188,26 +307,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra 90°, hai cạnh này song song, không phải hai phương vuông góc. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra 90°, hai cạnh này song song, không phải hai phương vuông góc. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "45°"
+      },
+      {
+        "id": "B",
+        "text": "0°"
+      },
+      {
+        "id": "C",
+        "text": "90°"
+      },
+      {
+        "id": "D",
+        "text": "180°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B22-P03",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B22-P03",
     "stem": "Một bạn nói hai đường vuông góc phải gặp nhau. Nêu một phản ví dụ chính xác.",
-    "answer_key": "Trong hình hộp chữ nhật ABCD.A′B′C′, \\(AB\\perp CC'\\) dù chúng không cắt nhau.",
+    "answer_key": "Trong hình hộp chữ nhật, AB vuông góc CC' dù không gặp nhau.",
     "worked_solution": "Cạnh AA′ vuông góc mặt đáy nên vuông góc AB. Vì CC′ song song AA′, suy ra \\(AB\\perp CC'\\). Mặt khác CC′ chỉ gặp mặt đáy tại C, mà C không thuộc AB, nên AB và CC′ không cắt nhau.",
     "skill_ids": [
       "G11-B22-PERP_SKEW"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Chọn hai cạnh không gặp nhau nhưng cùng phương với hai cạnh vuông góc."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -220,26 +362,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn hai cạnh có chung đỉnh thì chưa phải phản ví dụ; kiểm chúng không cắt. Ôn CĐ16 mục 1.2; luyện THPT-TOP16-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn hai cạnh có chung đỉnh thì chưa phải phản ví dụ; kiểm chúng không cắt. Ôn CĐ16 mục 1.2; luyện THPT-TOP16-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trong hình hộp chữ nhật, AB và DC vuông góc dù không gặp nhau."
+      },
+      {
+        "id": "B",
+        "text": "Trong hình hộp chữ nhật, AB và AD không gặp nhau."
+      },
+      {
+        "id": "C",
+        "text": "Trong hình hộp chữ nhật, AB vuông góc CC' dù không gặp nhau."
+      },
+      {
+        "id": "D",
+        "text": "Trong hình hộp chữ nhật, AA' và BB' vuông góc dù không gặp nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B23-C01",
     "stem": "Một cột chỉ vuông góc với một đường thẳng trong mặt sân. Có đủ kết luận cột vuông góc với mặt sân không?",
-    "answer_key": "Chưa đủ.",
+    "answer_key": "Chưa đủ; cần kiểm thêm một phương khác trong sân, cắt phương đã biết.",
     "worked_solution": "Một đường vuông góc mặt phẳng phải vuông góc với mọi đường trong mặt. Chẳng hạn một cột nghiêng trong mặt phẳng đứng có thể vuông góc một đường ngang theo phương khác, nhưng không thẳng đứng. Dấu hiệu đủ cần hai đường cắt nhau trong mặt sân.",
     "skill_ids": [
       "G11-B23-PERP_PLANE_DEF"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Một đường trong nền không đại diện cho mọi phương của nền."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -252,26 +417,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu kết luận ngay, tìm đường khác hướng trong nền cần kiểm thêm. Ôn CĐ16 mục 2.1; luyện THPT-TOP16-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu kết luận ngay, tìm đường khác hướng trong nền cần kiểm thêm. Ôn CĐ16 mục 2.1; luyện THPT-TOP16-P05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đủ vì sân là mặt phẳng."
+      },
+      {
+        "id": "B",
+        "text": "Đủ nếu cột không nằm trong sân."
+      },
+      {
+        "id": "C",
+        "text": "Chưa đủ; phải đo mọi đường trên sân."
+      },
+      {
+        "id": "D",
+        "text": "Chưa đủ; cần kiểm thêm một phương khác trong sân, cắt phương đã biết."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C02",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B23-C02",
     "stem": "Trong \\((P)\\), a và b cắt nhau. Nếu \\(d\\perp a\\) và \\(d\\perp b\\) thì d có quan hệ gì với \\((P)\\)?",
-    "answer_key": "\\(d\\perp(P)\\).",
+    "answer_key": "d vuông góc (P).",
     "worked_solution": "Hai đường a, b nằm trong \\((P)\\) và cắt nhau. Theo dấu hiệu đường thẳng vuông góc mặt phẳng, d vuông góc với cả hai đường ấy thì d vuông góc với \\((P)\\).",
     "skill_ids": [
       "G11-B23-TWO_INTERSECT"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Hai đường a,b phải cùng mặt phẳng và cắt nhau."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -284,26 +472,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thiếu một điều kiện, không thể dùng dấu hiệu đủ. Ôn CĐ16 mục 2.2; luyện THPT-TOP16-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu thiếu một điều kiện, không thể dùng dấu hiệu đủ. Ôn CĐ16 mục 2.2; luyện THPT-TOP16-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "d vuông góc (P)."
+      },
+      {
+        "id": "B",
+        "text": "d song song (P)."
+      },
+      {
+        "id": "C",
+        "text": "d nằm trong (P)."
+      },
+      {
+        "id": "D",
+        "text": "Chưa đủ, dù a và b cắt nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C03",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B23-C03",
     "stem": "Cho \\(d\\perp(P)\\) và \\(e\\parallel d\\). Đường e có vuông góc với \\((P)\\) không?",
-    "answer_key": "Có.",
+    "answer_key": "Có; hai đường cùng phương nên e cũng vuông góc (P).",
     "worked_solution": "Vì e cùng phương với d nên e cũng vuông góc với mọi đường thẳng trong \\((P)\\). Theo định nghĩa, \\(e\\perp(P)\\). Không cần e đi qua chân đường vuông góc của d.",
     "skill_ids": [
       "G11-B23-PARALLEL_TRANSFER"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "e giữ cùng phương với d."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -316,26 +527,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho e phải đi qua chân của d, không cần; vuông góc mặt là quan hệ theo phương. Ôn CĐ16 mục 2.3; luyện THPT-TOP16-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho e phải đi qua chân của d, không cần; vuông góc mặt là quan hệ theo phương. Ôn CĐ16 mục 2.3; luyện THPT-TOP16-P07.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; e phải trùng d."
+      },
+      {
+        "id": "B",
+        "text": "Có; hai đường cùng phương nên e cũng vuông góc (P)."
+      },
+      {
+        "id": "C",
+        "text": "Không; e song song (P)."
+      },
+      {
+        "id": "D",
+        "text": "Chỉ đúng nếu e cắt d."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C04",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B23-C04",
     "stem": "Hai đường d, e cùng vuông góc với một mặt phẳng. Chúng có thể cắt nhau mà không trùng nhau không?",
-    "answer_key": "Không; chúng song song hoặc trùng nhau.",
+    "answer_key": "Không; chúng cùng phương, nên song song hoặc trùng nhau.",
     "worked_solution": "Hai đường cùng vuông góc với một mặt phẳng có cùng phương. Nếu chúng có một điểm chung thì chúng trùng nhau; nếu phân biệt thì chúng song song.",
     "skill_ids": [
       "G11-B23-PLANE_PROPERTY"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Hai đường vuông góc cùng một mặt có cùng phương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -348,26 +582,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho chúng cắt nhau mà phân biệt, qua một điểm chỉ có một đường vuông góc mặt. Ôn CĐ16 mục 2.4; luyện THPT-TOP16-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho chúng cắt nhau mà phân biệt, qua một điểm chỉ có một đường vuông góc mặt. Ôn CĐ16 mục 2.4; luyện THPT-TOP16-P08.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; chúng luôn cắt nhau tại một điểm."
+      },
+      {
+        "id": "B",
+        "text": "Có; chúng có thể chéo nhau."
+      },
+      {
+        "id": "C",
+        "text": "Không; chúng cùng phương, nên song song hoặc trùng nhau."
+      },
+      {
+        "id": "D",
+        "text": "Có; hai đường cùng vuông góc một mặt phẳng luôn vuông góc nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C05",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B23-C05",
     "stem": "Hai thanh nằm trên nền phẳng và cắt nhau. Một cột vuông góc với cả hai thanh. Kết luận gì về cột và nền?",
-    "answer_key": "Cột vuông góc với mặt phẳng nền.",
+    "answer_key": "Cột vuông góc nền vì vuông góc hai đường cắt nhau trong nền.",
     "worked_solution": "Hai đường chứa hai thanh cắt nhau trong mặt nền. Vì đường chứa cột vuông góc với cả hai, dấu hiệu đường thẳng vuông góc mặt phẳng cho kết luận. Nếu hai thanh song song thì không đủ.",
     "skill_ids": [
       "G11-B23-PRACTICAL_POST"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Hai thanh cắt nhau và đều thuộc nền."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -380,26 +637,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ kiểm hai thanh song song, chưa đủ hai phương; kiểm lại giả thiết. Ôn CĐ16 mục 2.5; luyện THPT-TOP16-P09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ kiểm hai thanh song song, chưa đủ hai phương; kiểm lại giả thiết. Ôn CĐ16 mục 2.5; luyện THPT-TOP16-P09.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cột song song nền."
+      },
+      {
+        "id": "B",
+        "text": "Cột nằm trong nền."
+      },
+      {
+        "id": "C",
+        "text": "Chưa đủ, vì hai thanh không song song."
+      },
+      {
+        "id": "D",
+        "text": "Cột vuông góc nền vì vuông góc hai đường cắt nhau trong nền."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B23-P01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B23-P01",
     "stem": "Cho \\(d\\perp(P)\\) và \\((P)\\parallel(Q)\\). Đường d có vuông góc với \\((Q)\\) không?",
-    "answer_key": "Có.",
+    "answer_key": "Có; các mặt phẳng song song có cùng phương pháp tuyến.",
     "worked_solution": "Hai mặt phẳng song song có cùng phương mặt phẳng. Chọn hai đường cắt nhau trong \\((Q)\\), dựng hai đường cùng phương với chúng trong \\((P)\\). Vì d vuông góc với cả hai đường trong \\((P)\\), d cũng vuông góc với hai đường đã chọn trong \\((Q)\\). Suy ra \\(d\\perp(Q)\\).",
     "skill_ids": [
       "G11-B23-PARALLEL_TRANSFER"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Chuyển hai hướng cắt nhau từ (Q) về (P)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -412,26 +692,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu không dùng giả thiết hai mặt song song, chưa có căn cứ chuyển phương. Ôn CĐ16 mục 2.3; luyện THPT-TOP16-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu không dùng giả thiết hai mặt song song, chưa có căn cứ chuyển phương. Ôn CĐ16 mục 2.3; luyện THPT-TOP16-P07.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; các mặt phẳng song song có cùng phương pháp tuyến."
+      },
+      {
+        "id": "B",
+        "text": "Không; d chỉ vuông góc (P)."
+      },
+      {
+        "id": "C",
+        "text": "Không; d song song (Q)."
+      },
+      {
+        "id": "D",
+        "text": "Chỉ đúng nếu (P) và (Q) trùng nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B23-P02",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B23-P02",
     "stem": "Nếu d vuông góc với hai đường song song trong \\((P)\\), có chắc \\(d\\perp(P)\\) không?",
-    "answer_key": "Không chắc.",
+    "answer_key": "Không chắc; hai đường song song chỉ cung cấp một phương.",
     "worked_solution": "Hai đường song song chỉ cho một phương. Có thể chọn d nằm ngay trong \\((P)\\) và vuông góc với phương chung của hai đường đó. Khi ấy d không vuông góc mặt phẳng. Cần hai đường cắt nhau trong mặt để áp dụng dấu hiệu đủ.",
     "skill_ids": [
       "G11-B23-TWO_INTERSECT"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Hai đường song song chỉ cho một phương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -444,27 +747,50 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu kết luận d vuông góc mặt, xét một đường trong mặt vuông góc cả hai đường song song. Ôn CĐ16 mục 2.2; luyện THPT-TOP16-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu kết luận d vuông góc mặt, xét một đường trong mặt vuông góc cả hai đường song song. Ôn CĐ16 mục 2.2; luyện THPT-TOP16-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; hai đường phân biệt là đủ."
+      },
+      {
+        "id": "B",
+        "text": "Không chắc; hai đường song song chỉ cung cấp một phương."
+      },
+      {
+        "id": "C",
+        "text": "Có; d phải nằm ngoài (P)."
+      },
+      {
+        "id": "D",
+        "text": "Không; d luôn song song (P)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B23-P03",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B23-P03",
     "stem": "Hai mặt phẳng \\((P)\\parallel(Q)\\). Đường thẳng \\(a\\perp(P)\\) tại A; đường thẳng b đi qua điểm B khác A của (P) và vuông góc với (Q). Chứng minh a và b song song phân biệt. Nếu chỉ biết b vuông góc với một đường thẳng nằm trong (Q), kết luận còn chắc chắn không?",
-    "answer_key": "\\(a\\parallel b\\) và a, b phân biệt. Nếu chỉ biết b vuông góc với một đường trong (Q), không đủ kết luận.",
+    "answer_key": "b vuông góc (P), nên a,b cùng vuông góc (P) và phân biệt vì A khác B; chỉ vuông góc một đường trong (Q) thì chưa đủ.",
     "worked_solution": "Vì \\((P)\\parallel(Q)\\), đường b vuông góc với (Q) cũng vuông góc với (P). Hai đường a và b cùng vuông góc với (P), nên cùng phương. Chúng không thể trùng nhau vì a chỉ cắt (P) tại A, còn b cắt (P) tại B khác A. Vậy a và b song song phân biệt. Nếu chỉ có một đường c nằm trong (Q) với \\(b\\perp c\\), chưa đủ hai phương cắt nhau để kết luận \\(b\\perp(Q)\\). Chẳng hạn chọn b nằm trong (P) qua B và vuông góc với phương của c; khi ấy b không song song với a.",
     "skill_ids": [
       "G11-B23-PLANE_PROPERTY",
       "G11-B23-PARALLEL_TRANSFER"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "SYNTHESIS",
     "hints": [
       "Chuyển quan hệ vuông góc từ mặt (Q) sang (P), sau đó kiểm hai chân trên (P)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -477,26 +803,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ dựa vào một quan hệ vuông góc đường–đường, nhớ tiêu chuẩn hai đường cắt nhau trong mặt phẳng. Ôn CĐ16 mục 2.4; luyện THPT-TOP16-P08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ dựa vào một quan hệ vuông góc đường–đường, nhớ tiêu chuẩn hai đường cắt nhau trong mặt phẳng. Ôn CĐ16 mục 2.4; luyện THPT-TOP16-P08.",
+    "options": [
+      {
+        "id": "A",
+        "text": "a và b trùng nhau vì hai mặt phẳng song song."
+      },
+      {
+        "id": "B",
+        "text": "a và b song song phân biệt ngay cả khi b chỉ vuông góc một đường trong (Q)."
+      },
+      {
+        "id": "C",
+        "text": "b vuông góc (P), nên a,b cùng vuông góc (P) và phân biệt vì A khác B; chỉ vuông góc một đường trong (Q) thì chưa đủ."
+      },
+      {
+        "id": "D",
+        "text": "a và b chéo nhau vì đi qua hai điểm khác nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B24-C01",
     "stem": "M nằm ngoài \\((P)\\), \\(H\\in(P)\\), \\(MH\\perp(P)\\) và \\(MH=7\\,\\mathrm{cm}\\). H là điểm gì?",
-    "answer_key": "H là hình chiếu vuông góc của M lên \\((P)\\).",
+    "answer_key": "H là hình chiếu vuông góc của M lên (P).",
     "worked_solution": "H là giao điểm của đường vuông góc kẻ từ M với \\((P)\\). Theo định nghĩa đó là hình chiếu vuông góc của M. Độ dài MH cũng là khoảng cách từ M đến mặt phẳng, bằng 7 cm.",
     "skill_ids": [
       "G11-B24-POINT_PROJECTION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Kiểm H thuộc mặt phẳng và MH vuông góc mặt."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -509,12 +858,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn điểm khác H làm chân, đoạn nối đến điểm đó không vuông góc mặt. Ôn CĐ16 mục 3.1; luyện THPT-TOP16-P10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn điểm khác H làm chân, đoạn nối đến điểm đó không vuông góc mặt. Ôn CĐ16 mục 3.1; luyện THPT-TOP16-P10.",
+    "options": [
+      {
+        "id": "A",
+        "text": "H là hình chiếu của (P) lên M."
+      },
+      {
+        "id": "B",
+        "text": "H là trung điểm của mọi đường qua M."
+      },
+      {
+        "id": "C",
+        "text": "H là điểm bất kì cách M 7 cm."
+      },
+      {
+        "id": "D",
+        "text": "H là hình chiếu vuông góc của M lên (P)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C02",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B24-C02",
     "stem": "Đường l vuông góc với \\((P)\\). Hình chiếu vuông góc của l trên \\((P)\\) là đường hay điểm?",
     "answer_key": "Một điểm.",
     "worked_solution": "Gọi H là giao điểm của l với \\((P)\\). Qua mọi điểm của l, đường chiếu vuông góc với \\((P)\\) chính là l, nên tất cả có cùng ảnh H.",
@@ -522,13 +890,17 @@
       "G11-B24-LINE_PROJECTION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Mọi điểm của l có cùng đường chiếu l."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -541,26 +913,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho ảnh là đường, kiểm mọi điểm đều chiếu về cùng giao điểm của l với mặt phẳng. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho ảnh là đường, kiểm mọi điểm đều chiếu về cùng giao điểm của l với mặt phẳng. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Một điểm."
+      },
+      {
+        "id": "B",
+        "text": "Một đường thẳng."
+      },
+      {
+        "id": "C",
+        "text": "Một đoạn không suy biến."
+      },
+      {
+        "id": "D",
+        "text": "Cả mặt phẳng (P)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C03",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B24-C03",
     "stem": "Đường a nằm trong \\((P)\\), b là đường xiên có hình chiếu vuông góc b′ trên \\((P)\\). Biết \\(a\\perp b'\\), suy ra gì?",
-    "answer_key": "\\(a\\perp b\\).",
+    "answer_key": "a vuông góc b theo định lí ba đường vuông góc.",
     "worked_solution": "Vì b xiên nên hình chiếu b′ là một đường thẳng, không co thành điểm. Đường a nằm trong mặt phẳng chiếu và vuông góc b′. Theo định lí ba đường vuông góc, a vuông góc b.",
     "skill_ids": [
       "G11-B24-THREE_PERP"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đường b xiên nên hình chiếu b′ là đường không suy biến."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -573,12 +968,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ dùng góc trên hình, áp dụng định lí ba đường vuông góc cho a nằm trong (P). Ôn CĐ16 mục 3.3; luyện THPT-TOP16-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ dùng góc trên hình, áp dụng định lí ba đường vuông góc cho a nằm trong (P). Ôn CĐ16 mục 3.3; luyện THPT-TOP16-P12.",
+    "options": [
+      {
+        "id": "A",
+        "text": "a song song b."
+      },
+      {
+        "id": "B",
+        "text": "a vuông góc b theo định lí ba đường vuông góc."
+      },
+      {
+        "id": "C",
+        "text": "a trùng b."
+      },
+      {
+        "id": "D",
+        "text": "Không suy ra được vì b nằm ngoài (P)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C04",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B24-C04",
     "stem": "Cho \\(A\\in(P)\\), \\(B\\notin(P)\\), C là hình chiếu vuông góc của B trên \\((P)\\), \\(C\\ne A\\). Góc giữa AB và \\((P)\\) là góc nào?",
     "answer_key": "\\(\\widehat{BAC}\\).",
     "worked_solution": "A có ảnh là A, B có ảnh là C, nên hình chiếu của AB là AC. Vì C khác A, ảnh không suy biến. Tam giác ABC vuông tại C; góc nhọn giữa AB và AC tại A chính là góc giữa AB và mặt phẳng.",
@@ -586,13 +1000,17 @@
       "G11-B24-LINE_PLANE_ANGLE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "A đã thuộc mặt, B chiếu xuống C; tìm góc tại A."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -605,26 +1023,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn góc ABC, góc với đường vuông góc là góc phụ, không phải góc đường–mặt. Ôn CĐ16 mục 3.4; luyện THPT-TOP16-P13."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn góc ABC, góc với đường vuông góc là góc phụ, không phải góc đường–mặt. Ôn CĐ16 mục 3.4; luyện THPT-TOP16-P13.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\widehat{ABC}\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\widehat{ACB}\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\widehat{BAC}\\)."
+      },
+      {
+        "id": "D",
+        "text": "Góc giữa AB và BC."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C05",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B24-C05",
     "stem": "Đoạn xiên từ một điểm trên mặt đất đến một điểm cao 5 m so với mặt đất dài 13 m. Tính sin của góc giữa đoạn xiên và mặt đất.",
-    "answer_key": "\\(\\frac5{13}\\).",
+    "answer_key": "\\(\\frac5{13}\\)",
     "worked_solution": "Dựng hình chiếu vuông góc của đầu cao xuống mặt đất. Tam giác vuông có cạnh huyền 13 m và cạnh đối với góc đường–mặt dài 5 m. Vậy \\(\\sin\\theta=\\frac5{13}\\).",
     "skill_ids": [
       "G11-B24-ANGLE_APPLICATION"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Tỉ số sin bằng chiều cao chia độ dài đoạn xiên."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -637,26 +1078,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chia cho hình chiếu ngang, đó là tan, không phải sin. Ôn CĐ16 mục 3.5; luyện THPT-TOP16-P14."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chia cho hình chiếu ngang, đó là tan, không phải sin. Ôn CĐ16 mục 3.5; luyện THPT-TOP16-P14.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac{12}{13}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac5{12}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{13}{5}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac5{13}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B24-P01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B24-P01",
     "stem": "Một tia tạo góc \\(35^\\circ\\) với mặt nền nằm ngang. Góc nhọn giữa đường chứa tia và phương thẳng đứng bằng bao nhiêu?",
-    "answer_key": "\\(55^\\circ\\).",
+    "answer_key": "55°",
     "worked_solution": "Trong mặt phẳng đứng chứa tia, hình chiếu của tia trên nền và phương thẳng đứng tạo góc vuông. Góc nhọn giữa đường chứa tia và phương đứng là góc phụ của \\(35^\\circ\\), bằng \\(90^\\circ-35^\\circ=55^\\circ\\).",
     "skill_ids": [
       "G11-B24-LINE_PLANE_ANGLE"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Phương thẳng đứng tạo 90° với mặt nền."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -669,26 +1133,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng 35° với 90°, hãy xét hai góc phụ nhau trong mặt phẳng đứng. Ôn CĐ16 mục 3.4; luyện THPT-TOP16-P13."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng 35° với 90°, hãy xét hai góc phụ nhau trong mặt phẳng đứng. Ôn CĐ16 mục 3.4; luyện THPT-TOP16-P13.",
+    "options": [
+      {
+        "id": "A",
+        "text": "55°"
+      },
+      {
+        "id": "B",
+        "text": "35°"
+      },
+      {
+        "id": "C",
+        "text": "90°"
+      },
+      {
+        "id": "D",
+        "text": "145°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B24-P02",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B24-P02",
     "stem": "Cầu trượt thẳng có độ cao 3 m, độ dài trượt 5 m. Tính độ dài hình chiếu của nó lên nền ngang.",
-    "answer_key": "4 m.",
+    "answer_key": "4 m",
     "worked_solution": "Đoạn trượt, chiều cao và hình chiếu tạo tam giác vuông; đoạn trượt là cạnh huyền. Theo Pitago, độ dài hình chiếu là \\(\\sqrt{5^2-3^2}=4\\) (m).",
     "skill_ids": [
       "G11-B24-LINE_PROJECTION"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "APPLY",
     "hints": [
       "Dựng tam giác vuông có cạnh huyền 5 m, chiều cao 3 m."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -701,26 +1188,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng hai bình phương, nhớ hình chiếu là cạnh góc vuông; lấy hiệu 25−9. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng hai bình phương, nhớ hình chiếu là cạnh góc vuông; lấy hiệu 25−9. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11.",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 m"
+      },
+      {
+        "id": "B",
+        "text": "4 m"
+      },
+      {
+        "id": "C",
+        "text": "8 m"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\sqrt{34}\\) m"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B24-P03",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B24-P03",
     "stem": "A nằm ngoài mặt nền, H là hình chiếu vuông góc của A trên nền. Có thể dùng một đoạn hình chiếu nằm trên mặt nền để biểu diễn độ cao AH không?",
-    "answer_key": "Không.",
+    "answer_key": "Không; AH vuông góc nền, còn đoạn hình chiếu nằm trong nền.",
     "worked_solution": "AH vuông góc mặt nền và đo độ cao của A. Đoạn hình chiếu nằm trong mặt nền, đo thành phần theo phương ngang. Hai đoạn có ý nghĩa hình học khác nhau; không thay độ cao bằng độ dài hình chiếu ngang.",
     "skill_ids": [
       "G11-B24-LINE_PROJECTION"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Độ cao vuông góc nền, hình chiếu nằm trong nền."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -733,26 +1243,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu đồng nhất hai đoạn, kiểm phương của từng đoạn. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đồng nhất hai đoạn, kiểm phương của từng đoạn. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; hình chiếu của AH lên nền dài bằng AH."
+      },
+      {
+        "id": "B",
+        "text": "Có; độ cao luôn bằng hình chiếu ngang."
+      },
+      {
+        "id": "C",
+        "text": "Không; AH vuông góc nền, còn đoạn hình chiếu nằm trong nền."
+      },
+      {
+        "id": "D",
+        "text": "Không; AH song song nền."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B25-C01",
     "stem": "Góc giữa hai đường pháp tuyến của hai mặt phẳng là \\(75^\\circ\\). Góc giữa hai mặt phẳng bằng bao nhiêu?",
-    "answer_key": "\\(75^\\circ\\).",
+    "answer_key": "75°",
     "worked_solution": "Góc giữa hai mặt phẳng bằng góc không tù giữa hai đường thẳng lần lượt vuông góc với chúng. Góc giữa hai pháp tuyến đã cho là \\(75^\\circ\\), nên góc hai mặt cũng bằng \\(75^\\circ\\).",
     "skill_ids": [
       "G11-B25-PLANE_ANGLE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Góc giữa hai mặt bằng góc không tù giữa hai pháp tuyến."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -765,26 +1298,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy góc tù, chọn góc nhỏ hơn hoặc góc bù. Ôn CĐ16 mục 4.1; luyện THPT-TOP16-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy góc tù, chọn góc nhỏ hơn hoặc góc bù. Ôn CĐ16 mục 4.1; luyện THPT-TOP16-P15.",
+    "options": [
+      {
+        "id": "A",
+        "text": "15°"
+      },
+      {
+        "id": "B",
+        "text": "105°"
+      },
+      {
+        "id": "C",
+        "text": "90°"
+      },
+      {
+        "id": "D",
+        "text": "75°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C02",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B25-C02",
     "stem": "Góc phẳng của một góc nhị diện bằng \\(125^\\circ\\). Góc giữa hai mặt phẳng chứa nó bằng bao nhiêu?",
-    "answer_key": "\\(55^\\circ\\).",
+    "answer_key": "55°",
     "worked_solution": "Góc phẳng nhị diện có thể tù, nhưng góc giữa hai mặt phẳng là góc không tù. Hai góc tương ứng bù nhau, nên góc cần tìm là \\(180^\\circ-125^\\circ=55^\\circ\\).",
     "skill_ids": [
       "G11-B25-DIHEDRAL"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Góc nhị diện có thể tù; góc giữa hai mặt không tù."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -797,26 +1353,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu giữ 125°, lấy góc bù 180°−125°. Ôn CĐ16 mục 4.2; luyện THPT-TOP16-P16."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu giữ 125°, lấy góc bù 180°−125°. Ôn CĐ16 mục 4.2; luyện THPT-TOP16-P16.",
+    "options": [
+      {
+        "id": "A",
+        "text": "55°"
+      },
+      {
+        "id": "B",
+        "text": "125°"
+      },
+      {
+        "id": "C",
+        "text": "35°"
+      },
+      {
+        "id": "D",
+        "text": "90°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C03",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B25-C03",
     "stem": "Nếu \\(a\\subset(P)\\) và \\(a\\perp(Q)\\) thì hai mặt phẳng \\((P)\\) và \\((Q)\\) có vuông góc không?",
-    "answer_key": "Có.",
+    "answer_key": "Có; một mặt chứa đường vuông góc mặt kia.",
     "worked_solution": "Mặt phẳng \\((P)\\) chứa một đường thẳng a vuông góc với \\((Q)\\). Đây là dấu hiệu đủ để kết luận \\((P)\\perp(Q)\\).",
     "skill_ids": [
       "G11-B25-PERP_PLANES"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Một mặt chứa một đường vuông góc mặt kia."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -829,26 +1408,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ thấy hai đường vuông góc, chưa đủ chứng minh cả hai mặt vuông góc. Ôn CĐ16 mục 4.3; luyện THPT-TOP16-P17."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ thấy hai đường vuông góc, chưa đủ chứng minh cả hai mặt vuông góc. Ôn CĐ16 mục 4.3; luyện THPT-TOP16-P17.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; cần hai mặt song song."
+      },
+      {
+        "id": "B",
+        "text": "Có; một mặt chứa đường vuông góc mặt kia."
+      },
+      {
+        "id": "C",
+        "text": "Không; cần a nằm trong cả hai mặt."
+      },
+      {
+        "id": "D",
+        "text": "Chưa đủ; cần hai đường cùng nằm trong (P) vuông góc (Q)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C04",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B25-C04",
     "stem": "Cho \\((P)\\perp(Q)\\), giao tuyến là \\(\\Delta\\). Nếu \\(a\\subset(P)\\) và \\(a\\perp\\Delta\\), có suy ra \\(a\\perp(Q)\\) không?",
-    "answer_key": "Có.",
+    "answer_key": "Có; a nằm trong (P) và vuông góc giao tuyến của hai mặt vuông góc.",
     "worked_solution": "Hai mặt phẳng đã vuông góc; a nằm trong một mặt và vuông góc với giao tuyến của chúng. Theo định lí về hai mặt phẳng vuông góc, a vuông góc với mặt phẳng còn lại \\((Q)\\).",
     "skill_ids": [
       "G11-B25-PERP_PLANE_RULE"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Kiểm a nằm trong (P) và a vuông góc giao tuyến Δ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -861,26 +1463,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thiếu một giả thiết, không dùng định lí hai mặt vuông góc. Ôn CĐ16 mục 4.4; luyện THPT-TOP16-P18."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu thiếu một giả thiết, không dùng định lí hai mặt vuông góc. Ôn CĐ16 mục 4.4; luyện THPT-TOP16-P18.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; a song song (Q)."
+      },
+      {
+        "id": "B",
+        "text": "Không; a phải trùng giao tuyến."
+      },
+      {
+        "id": "C",
+        "text": "Có; a nằm trong (P) và vuông góc giao tuyến của hai mặt vuông góc."
+      },
+      {
+        "id": "D",
+        "text": "Chỉ đúng nếu a vuông góc mọi đường trong (P)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C05",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B25-C05",
     "stem": "Lăng trụ đứng có đáy là ngũ giác đều có phải lăng trụ đều không?",
-    "answer_key": "Có.",
+    "answer_key": "Có; là lăng trụ đứng có đáy đa giác đều.",
     "worked_solution": "Lăng trụ đều là lăng trụ đứng có đáy là đa giác đều. Lăng trụ đã cho thỏa cả hai điều kiện, nên là lăng trụ đều.",
     "skill_ids": [
       "G11-B25-RIGHT_PRISM"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Lăng trụ đều cần vừa đứng vừa có đáy là đa giác đều."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -893,26 +1518,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ kiểm một trong hai điều kiện, chưa đủ. Ôn CĐ16 mục 4.5; luyện THPT-TOP16-P19."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ kiểm một trong hai điều kiện, chưa đủ. Ôn CĐ16 mục 4.5; luyện THPT-TOP16-P19.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; lăng trụ đều chỉ có đáy tam giác."
+      },
+      {
+        "id": "B",
+        "text": "Không; cần đáy hình vuông."
+      },
+      {
+        "id": "C",
+        "text": "Không; mọi cạnh bên phải bằng cạnh đáy."
+      },
+      {
+        "id": "D",
+        "text": "Có; là lăng trụ đứng có đáy đa giác đều."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C06",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B25-C06",
     "stem": "Trong hình chóp đều có đáy là hình vuông tâm O, chân đường cao kẻ từ đỉnh S nằm ở đâu?",
-    "answer_key": "Tại O.",
+    "answer_key": "Tại O, tâm đáy.",
     "worked_solution": "Theo định nghĩa hình chóp đều, chân đường cao trùng với tâm của đa giác đều ở đáy. Do đó \\(SO\\perp(ABCD)\\) nếu đáy là ABCD, và O là chân đường cao.",
     "skill_ids": [
       "G11-B25-REGULAR_PYRAMID"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Chân đường cao của chóp đều là tâm đáy."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -925,26 +1573,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn trung điểm cạnh đáy, đó là chân đường cao mặt bên, không phải chân chiều cao khối. Ôn CĐ16 mục 4.6; luyện THPT-TOP16-P20."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn trung điểm cạnh đáy, đó là chân đường cao mặt bên, không phải chân chiều cao khối. Ôn CĐ16 mục 4.6; luyện THPT-TOP16-P20.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tại O, tâm đáy."
+      },
+      {
+        "id": "B",
+        "text": "Tại một đỉnh đáy."
+      },
+      {
+        "id": "C",
+        "text": "Tại trung điểm một cạnh đáy."
+      },
+      {
+        "id": "D",
+        "text": "Tại một điểm tùy ý trên đáy."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C07",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B25-C07",
     "stem": "Hai đáy của hình chóp cụt đều có quan hệ nào?",
-    "answer_key": "Nằm trong hai mặt phẳng song song, là hai đa giác đều đồng dạng.",
+    "answer_key": "Hai đa giác đều đồng dạng, nằm trong hai mặt phẳng song song.",
     "worked_solution": "Chóp cụt đều được tạo khi cắt một hình chóp đều bởi mặt phẳng song song với đáy. Thiết diện đồng dạng với đáy ban đầu và vẫn là đa giác đều. Hai đáy của chóp cụt có mặt phẳng song song, khác kích thước trong hình chóp cụt không suy biến.",
     "skill_ids": [
       "G11-B25-REGULAR_FRUSTUM"
     ],
     "problem_type_id": null,
-    "difficulty": "CORE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Chóp cụt đều là phần giữa hai mặt cắt song song của chóp đều."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -957,26 +1628,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho hai đáy bằng nhau, nhớ chúng đồng dạng nhưng khác kích thước trong chóp cụt không suy biến. Ôn CĐ16 mục 4.7; luyện THPT-TOP16-P21."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho hai đáy bằng nhau, nhớ chúng đồng dạng nhưng khác kích thước trong chóp cụt không suy biến. Ôn CĐ16 mục 4.7; luyện THPT-TOP16-P21.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hai đa giác luôn bằng nhau, nằm trong cùng mặt phẳng."
+      },
+      {
+        "id": "B",
+        "text": "Hai đa giác đều đồng dạng, nằm trong hai mặt phẳng song song."
+      },
+      {
+        "id": "C",
+        "text": "Hai đa giác không đồng dạng, nằm trong hai mặt phẳng vuông góc."
+      },
+      {
+        "id": "D",
+        "text": "Hai đa giác đều luôn có diện tích bằng nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B25-P01",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B25-P01",
     "stem": "Có thể khẳng định góc giữa hai mặt phẳng bằng \\(130^\\circ\\) không?",
-    "answer_key": "Không.",
+    "answer_key": "Không; góc giữa hai mặt phẳng thuộc [0°;90°].",
     "worked_solution": "Góc giữa hai mặt phẳng thuộc đoạn \\([0^\\circ;90^\\circ]\\). Số đo \\(130^\\circ\\) có thể là góc phẳng của một góc nhị diện, nhưng góc giữa hai mặt phẳng khi đó là \\(50^\\circ\\).",
     "skill_ids": [
       "G11-B25-PLANE_ANGLE"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Góc giữa hai mặt nằm từ 0° đến 90°."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -989,26 +1683,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ghi 130°, đó có thể là góc nhị diện; góc giữa hai mặt là 50°. Ôn CĐ16 mục 4.1; luyện THPT-TOP16-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ghi 130°, đó có thể là góc nhị diện; góc giữa hai mặt là 50°. Ôn CĐ16 mục 4.1; luyện THPT-TOP16-P15.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; góc giữa hai mặt phẳng có thể bằng 130°."
+      },
+      {
+        "id": "B",
+        "text": "Không; góc giữa hai mặt phẳng luôn bằng 90°."
+      },
+      {
+        "id": "C",
+        "text": "Không; góc giữa hai mặt phẳng thuộc [0°;90°]."
+      },
+      {
+        "id": "D",
+        "text": "Có; chỉ cần hai mặt cắt nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B25-P02",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B25-P02",
     "stem": "Cạnh bên của hình chóp đều có luôn vuông góc với đáy không?",
-    "answer_key": "Không.",
+    "answer_key": "Không; đường cao qua tâm đáy mới vuông góc đáy, cạnh bên đi tới đỉnh đáy.",
     "worked_solution": "Trong chóp đều, đường cao SO đi từ đỉnh đến tâm O của đáy và vuông góc đáy. Cạnh bên SA đi đến một đỉnh A của đáy, khác O. Vì đường vuông góc qua S là duy nhất, SA không phải đường cao.",
     "skill_ids": [
       "G11-B25-REGULAR_PYRAMID"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tìm đường từ S đến tâm đáy O."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1021,26 +1738,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy SA làm chiều cao, SA xiên vì A là đỉnh đáy, không phải tâm O. Ôn CĐ16 mục 4.6; luyện THPT-TOP16-P20."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy SA làm chiều cao, SA xiên vì A là đỉnh đáy, không phải tâm O. Ôn CĐ16 mục 4.6; luyện THPT-TOP16-P20.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; mọi cạnh bên của chóp đều đều vuông góc đáy."
+      },
+      {
+        "id": "B",
+        "text": "Có; cạnh bên và chiều cao luôn trùng nhau."
+      },
+      {
+        "id": "C",
+        "text": "Không; cạnh bên luôn song song đáy."
+      },
+      {
+        "id": "D",
+        "text": "Không; đường cao qua tâm đáy mới vuông góc đáy, cạnh bên đi tới đỉnh đáy."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B25-P03",
-    "content_version": "THPT-G11-CHVII-B22-B27-R01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B25-P03",
     "stem": "Một lăng trụ đứng có đáy là hình thang không đều có phải lăng trụ đều không?",
-    "answer_key": "Không.",
+    "answer_key": "Không; đáy không phải đa giác đều.",
     "worked_solution": "Lăng trụ đứng chỉ bảo đảm các cạnh bên vuông góc đáy. Muốn là lăng trụ đều, đáy còn phải là đa giác đều. Hình thang không đều không đáp ứng điều kiện này.",
     "skill_ids": [
       "G11-B25-RIGHT_PRISM"
     ],
     "problem_type_id": null,
-    "difficulty": "PRACTICE_APPLY",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Kiểm hình thang có phải đa giác đều không."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1053,8 +1793,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ mọi lăng trụ đứng đều, phải kiểm thêm đáy là đa giác đều. Ôn CĐ16 mục 4.5; luyện THPT-TOP16-P19."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nghĩ mọi lăng trụ đứng đều, phải kiểm thêm đáy là đa giác đều. Ôn CĐ16 mục 4.5; luyện THPT-TOP16-P19.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; đáy không phải đa giác đều."
+      },
+      {
+        "id": "B",
+        "text": "Có; mọi lăng trụ đứng đều là lăng trụ đều."
+      },
+      {
+        "id": "C",
+        "text": "Có; chỉ cần đáy có một cặp cạnh song song."
+      },
+      {
+        "id": "D",
+        "text": "Không; lăng trụ đứng không thể có đáy hình thang."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C01",
