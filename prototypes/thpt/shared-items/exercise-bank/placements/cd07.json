@@ -947,7 +947,23 @@
   {
     "collection": "TOPIC:CD07:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 64,
+    "item_id": "THPT-TOP07-KFT16",
+    "outcome_id": "TOP07-O16",
+    "legacy_order": null,
+    "group_id": "TOP07-G4",
+    "group_title": "Mô hình tăng trưởng, lãi kép và dòng tiền",
+    "placement_note": "CP128 reuse existing Vận dụng for second distinct practice task; no new canonical item",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    },
+    "order": 64
+  },
+  {
+    "collection": "TOPIC:CD07:PRACTICE",
+    "role": "TOPIC_PRACTICE",
+    "order": 65,
     "item_id": "THPT-TOP07-P16",
     "outcome_id": "TOP07-O16",
     "legacy_order": 63,
@@ -962,7 +978,7 @@
   {
     "collection": "TOPIC:CD07:PRACTICE",
     "role": "TOPIC_WRITTEN",
-    "order": 65,
+    "order": 66,
     "item_id": "THPT-G11-CHII-W07-02-ANCHOR",
     "outcome_id": "TOP07-O17",
     "legacy_order": 64,
@@ -977,7 +993,7 @@
   {
     "collection": "TOPIC:CD07:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 66,
+    "order": 67,
     "item_id": "THPT-G11-B07-P08",
     "outcome_id": "TOP07-O17",
     "legacy_order": 65,
@@ -992,7 +1008,7 @@
   {
     "collection": "TOPIC:CD07:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 67,
+    "order": 68,
     "item_id": "THPT-G11-B07-P06",
     "outcome_id": "TOP07-O17",
     "legacy_order": 66,
@@ -1007,7 +1023,7 @@
   {
     "collection": "TOPIC:CD07:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 68,
+    "order": 69,
     "item_id": "THPT-TOP07-P18",
     "outcome_id": "TOP07-O18",
     "legacy_order": 68,
@@ -1022,7 +1038,7 @@
   {
     "collection": "TOPIC:CD07:PRACTICE",
     "role": "TOPIC_WRITTEN",
-    "order": 69,
+    "order": 70,
     "item_id": "THPT-TOP07-W04",
     "outcome_id": "TOP07-O18",
     "legacy_order": 69,
