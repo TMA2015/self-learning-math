@@ -1,5 +1,7 @@
 # G11 Chương III — canonical academic R03, verified S1 citation-only equivalence
 
+**AUTHORING #1090 · 27/11/2026 · scoped Written Delta C candidate:** only `THPT-G11-CHIII-W09-02-ANCHOR` explanation and rubric distribution updated; immutable prior source blob `4ea8df2ca2682d9fac8b1556852334af336930a5`. Historical equivalence/PASS below applies to the original unchanged scope, not the edited item. No new independent verdict or release authorization.
+
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE` · **STANDARD_VERSION:** `1.0.0`. **S1_PRIMARY_PDF_SHA256:** `fb5292103e5b682531ce37b5f30598393bba81b2943da9c1a374fdeb56557229`. **S1_PDF_RECEIPT:** `prototypes/thpt/review-packets/G11_SBT_TAP1_PRIMARY_PDF_PRINTED_PAGINATION_RECEIPT_20261102.md`. **BASE_R02_GIT_BLOB:** `0b0fe33d213350c586f04345c39806c2633c594e`. **CHANGE_CLASS:** `DELTA_B_SOURCE_EQUIVALENT`: only original SBT printed-page and source-status metadata were corrected after direct S1 scan; all original question stems, math, examples, figures, answers, solutions and rubrics in R02 are unchanged. Owner's original independent R02 targeted PED PASS is retained for its unchanged scope; no new independent NotebookLM review is falsely claimed. Historical R02 candidate/source-status headings below are pre-review audit history, superseded by the actual owner R02 verdict and this effective R03 source.
 
 ---
@@ -294,8 +296,8 @@ Quy tắc: mỗi mục là một câu học liệu tự biên soạn (không ch�
 ### `THPT-G11-CHIII-W09-02-ANCHOR` · WRITTEN/ANCHOR · `G11-B09-GROUPED-MODE`
 **Đề:** Với mẫu E [100;110)→5 | [110;120)→10 | [120;130)→3 | [130;140)→2, tìm Q1,Q3,Mo và ý nghĩa.
 **Đáp án:** Q1=110; Q3=120; Mo=685/6≈114,17.
-**Lời giải:** n=20; tích lũy [5,15,18,20]. Q1=100+(5-0)·10/5=110; Q3=110+(15-5)·10/10=120 (không phải 117,5). Mốt nhóm [110;120), m=10, trước 5, sau 3: Mo=110+[5/(5+7)]·10=685/6≈114,17. Cả Q1, Q3 và Mo chỉ ước lượng vị trí trung tâm của mẫu gốc, không xác định giá trị gốc chính xác.
-**Rubric /4:** (1) Chọn đúng nhóm Q1 — 1đ; (2) Nội suy Q1 — 1đ; (3) Chọn nhóm Q3 và Q3 — 1đ; (4) Mốt và giải thích xấp xỉ — 1đ
+**Lời giải:** n=20; tích lũy [5,15,18,20]. Q1=100+(5-0)·10/5=110; Q3=110+(15-5)·10/10=120 (không phải 117,5). Mốt nhóm [110;120), m=10, trước 5, sau 3: Mo=110+[5/(5+7)]·10=685/6≈114,17. Q1 và Q3 ước lượng các vị trí chia mẫu tại một phần tư và ba phần tư; Mo ước lượng vị trí tập trung theo nhóm có tần số cao. Không khẳng định các giá trị này là quan sát thật của mẫu gốc.
+**Rubric /4:** (1) Chọn nhóm và nội suy đúng Q1 — 1đ; (2) Chọn nhóm và nội suy đúng Q3 — 1đ; (3) Tính đúng mốt — 1đ; (4) Giải thích ý nghĩa và giới hạn ước lượng — 1đ.
 
 ### [R02-NEW] B08-B09-PED4 — Diễn giải ba hình đã review (không sửa SVG)
 
