@@ -1408,9 +1408,9 @@
   },
   {
     "item_id": "THPT-TOP15-T01",
-    "content_version": "TOP15-BANK-CP67-20261126-T01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T01",
     "stem": "\\(A,B\\in(P),\\ A\\ne B\\); M chia AB theo tỉ số \\(AM:MB=2:1\\). M có thuộc \\((P)\\) không?",
-    "answer_key": "Có, \\(M\\in(P)\\).",
+    "answer_key": "Có, vì AB nằm trong (P).",
     "worked_solution": "Có. M thuộc đường AB, mà \\(AB\\subset (P)\\); không cần biết tỉ số để suy quan hệ thuộc.\n\n\n\n**Kiểm lỗi**\n\nNếu chỉ vì M chia AB theo một tỉ số mà em không chắc M thuộc (P), trở lại **Kiến thức 1.1**: cả đường AB thuộc (P) khi A,B phân biệt cùng thuộc (P). Thử **Bài luyện 1** và **Bài luyện 9**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1420,11 +1420,17 @@
       "TOP15-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét đường thẳng qua hai điểm A,B."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1440,11 +1446,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, vì tỉ số khác 1:1."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ khi M trùng A hoặc B."
+      },
+      {
+        "id": "C",
+        "text": "Không đủ vì chưa biết điểm thứ ba."
+      },
+      {
+        "id": "D",
+        "text": "Có, vì AB nằm trong (P)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T02",
-    "content_version": "TOP15-BANK-CP67-20261126-T02",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T02",
     "stem": "Một đường a và điểm \\(M\\notin a\\) xác định bao nhiêu mặt phẳng?",
     "answer_key": "Đúng một mặt phẳng.",
     "worked_solution": "Đúng một mặt phẳng. Nếu \\(M\\in a\\) sẽ có vô số mặt phẳng chứa a.\n\n\n\n**Kiểm lỗi**\n\nNếu ba điểm thẳng hàng mà em kết luận duy nhất một mặt phẳng, đọc **Kiến thức 1.2**: cần ba điểm không thẳng hàng hoặc đường và điểm ngoài đường. Thử **Bài luyện 2** và **Bài luyện 10**.",
@@ -1456,11 +1481,17 @@
       "TOP15-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Nhớ điều kiện điểm nằm ngoài đường."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1476,13 +1507,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đúng một mặt phẳng."
+      },
+      {
+        "id": "B",
+        "text": "Không có mặt phẳng nào."
+      },
+      {
+        "id": "C",
+        "text": "Đúng hai mặt phẳng."
+      },
+      {
+        "id": "D",
+        "text": "Vô số mặt phẳng."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T03",
-    "content_version": "TOP15-BANK-CP67-20261126-T03",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T03",
     "stem": "Trong tứ diện S.ABC, giao tuyến của (SAB) và (SBC) là gì?",
-    "answer_key": "Giao tuyến SB.",
+    "answer_key": "SB",
     "worked_solution": "SB vì S,B là hai điểm chung phân biệt của hai mặt.\n\n\n\n**Kiểm lỗi**\n\nNếu nhầm giao tuyến của hai mặt tứ diện, đọc **Kiến thức 1.3**: tìm hai điểm chung phân biệt. Làm **Bài luyện 3** và **Bài luyện 11**, chỉ rõ điểm nào thuộc cả hai mặt.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1492,11 +1542,17 @@
       "TOP15-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tìm hai điểm chung của hai mặt."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1512,13 +1568,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "SA"
+      },
+      {
+        "id": "B",
+        "text": "SB"
+      },
+      {
+        "id": "C",
+        "text": "SC"
+      },
+      {
+        "id": "D",
+        "text": "AB"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T04",
-    "content_version": "TOP15-BANK-CP67-20261126-T04",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T04",
     "stem": "Với \\(d:(x;y;z)=(1+t;2;3+t)\\), d cắt mặt \\((P):z=0\\) ở đâu?",
-    "answer_key": "\\((-2;2;0)\\).",
+    "answer_key": "\\((-2;2;0)\\)",
     "worked_solution": "\\(t=-3\\), nên giao điểm có tọa độ \\((-2;2;0)\\).\n\n\n\n**Kiểm lỗi**\n\nNếu chỉ ghi tham số hoặc coi cả d là giao tuyến, đọc **Kiến thức 1.4**. Làm **Bài luyện 4** và **Bài luyện 12**; điểm giao phải thỏa phương trình đường và mặt.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1528,11 +1603,17 @@
       "TOP15-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Đặt tọa độ z bằng 0 rồi thay tham số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1548,13 +1629,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((1;2;0)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((4;2;6)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-2;2;0)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((-3;2;0)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T05",
-    "content_version": "TOP15-BANK-CP67-20261126-T05",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T05",
     "stem": "Trong tứ diện S.ABC, P nằm trong cạnh AB. Thiết diện do mặt phẳng (SCP) tạo ra cắt mặt tam giác ABC và mặt tam giác SAB theo những đoạn nào?",
-    "answer_key": "Đáy: CP; mặt SAB: SP; thiết diện tam giác SCP.",
+    "answer_key": "Đáy: CP; mặt SAB: SP; thiết diện SCP.",
     "worked_solution": "Theo CP và SP; cạnh còn lại của thiết diện là SC. Thiết diện là tam giác SCP.\n\n\n\n**Kiểm lỗi**\n\nNếu vẽ thiết diện kéo dài ra ngoài khối, đọc **Kiến thức 1.5**. Làm **Bài luyện 6** và **Bài luyện 13**; mỗi cạnh thiết diện là đoạn thực sự nằm trên một mặt tứ diện.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1564,11 +1664,17 @@
       "TOP15-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tìm đoạn nối hai điểm chung trong mỗi mặt."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1584,13 +1690,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đáy: AB; mặt SAB: SA; thiết diện SAB."
+      },
+      {
+        "id": "B",
+        "text": "Đáy: CP; mặt SAB: AB; thiết diện ABC."
+      },
+      {
+        "id": "C",
+        "text": "Đáy: AC; mặt SAB: SP; thiết diện SAC."
+      },
+      {
+        "id": "D",
+        "text": "Đáy: CP; mặt SAB: SP; thiết diện SCP."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T06",
-    "content_version": "TOP15-BANK-CP67-20261126-T06",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T06",
     "stem": "Trong tứ diện S.ABC, SA và BC có phải song song vì không gặp nhau?",
-    "answer_key": "Không; SA và BC chéo nhau.",
+    "answer_key": "Không; SA và BC chéo nhau vì bốn đỉnh không đồng phẳng.",
     "worked_solution": "Nếu SA và BC đồng phẳng thì cả S,A,B,C nằm trong một mặt phẳng, trái giả thiết tứ diện. Do đó SA và BC chéo nhau, không phải song song.\n\n\n\n**Kiểm lỗi**\n\nNếu nói hai đường không gặp nhau chắc chắn song song, đọc **Kiến thức 2.1**. Làm **Bài luyện 15** và **Bài luyện 24**; phải chứng minh đồng phẳng rồi mới kết luận.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1600,11 +1725,17 @@
       "TOP15-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm tra điều kiện đồng phẳng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1620,13 +1751,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; SA và BC chéo nhau vì bốn đỉnh không đồng phẳng."
+      },
+      {
+        "id": "B",
+        "text": "Có; không gặp nhau là đủ."
+      },
+      {
+        "id": "C",
+        "text": "Không; chúng cắt nhau tại A."
+      },
+      {
+        "id": "D",
+        "text": "Có; mọi cạnh đối của tứ diện song song."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T07",
-    "content_version": "TOP15-BANK-CP67-20261126-T07",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T07",
     "stem": "Hai đường cắt nhau tại M có thể chéo nhau không?",
-    "answer_key": "Không, hai đường cắt nhau đồng phẳng.",
+    "answer_key": "Không; chúng đồng phẳng.",
     "worked_solution": "Không. Hai đường cắt nhau xác định duy nhất một mặt phẳng, nên đồng phẳng.\n\n\n\n**Kiểm lỗi**\n\nNếu nhầm đường cắt nhau thành chéo nhau vì hình phối cảnh, đọc **Kiến thức 2.2**. Làm **Bài luyện 16** và **Bài luyện 23**, kiểm mặt phẳng chung.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1637,11 +1787,17 @@
       "TOP15-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai đường cắt nhau xác định một mặt phẳng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1657,13 +1813,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; nếu nhìn phối cảnh thấy chéo."
+      },
+      {
+        "id": "B",
+        "text": "Không; chúng đồng phẳng."
+      },
+      {
+        "id": "C",
+        "text": "Có; nếu không vuông góc."
+      },
+      {
+        "id": "D",
+        "text": "Có; nếu giao điểm chỉ có một."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T08",
-    "content_version": "TOP15-BANK-CP67-20261126-T08",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T08",
     "stem": "Trong tam giác SAB, M,N nằm trong hai cạnh SA,SB và \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac35\\). Kết luận về MN và AB?",
-    "answer_key": "\\(MN\\parallel AB\\).",
+    "answer_key": "\\(MN\\parallel AB\\)",
     "worked_solution": "\\(MN\\parallel AB\\) nhờ Thales đảo trong tam giác SAB.\n\n\n\n**Kiểm lỗi**\n\nNếu áp dụng Thalès đảo cho hai tỉ số không cùng đỉnh, đọc **Kiến thức 2.3**. Làm **Bài luyện 18** và **Bài luyện 25**; so hai tỉ lệ từ đỉnh S trong cùng tam giác.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1673,11 +1848,17 @@
       "TOP15-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng Thalès đảo trong tam giác SAB."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1693,11 +1874,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(MN\\perp AB\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(MN\\parallel SA\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(MN\\parallel AB\\)"
+      },
+      {
+        "id": "D",
+        "text": "MN cắt AB."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T09",
-    "content_version": "TOP15-BANK-CP67-20261126-T09",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T09",
     "stem": "Trong chóp S.ABCD đáy hình bình hành, giao tuyến \\((SAD)\\cap (SBC)\\) có phương của cạnh nào?",
     "answer_key": "Đường qua S, song song AD và BC.",
     "worked_solution": "Là đường qua S song song AD và BC vì \\(AD\\parallel BC\\).\n\n\n\n**Kiểm lỗi**\n\nNếu coi giao tuyến qua S trùng cạnh AB, đọc **Kiến thức 2.4**: giao tuyến chỉ cùng phương với AB. Làm **Bài luyện 26** và **Bài luyện 27**, nêu điểm chung S trước khi xác định phương.",
@@ -1710,11 +1910,17 @@
       "TOP15-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tìm điểm S chung và phương của hai cạnh đối."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1730,13 +1936,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đường qua S, song song AB và CD."
+      },
+      {
+        "id": "B",
+        "text": "Đường AD."
+      },
+      {
+        "id": "C",
+        "text": "Đường BC."
+      },
+      {
+        "id": "D",
+        "text": "Đường qua S, song song AD và BC."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T10",
-    "content_version": "TOP15-BANK-CP67-20261126-T10",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T10",
     "stem": "Đường thẳng \\(d:(x;y;z)=(1+t;2;3),\\,t\\in\\mathbb R\\) có quan hệ gì với mặt phẳng (P): \\(z=0\\)?",
-    "answer_key": "\\(d\\parallel(P)\\), với (P): \\(z=0\\).",
+    "answer_key": "d song song (P) vì z luôn bằng 3.",
     "worked_solution": "Song song vì z luôn bằng \\(3\\ne 0\\).\n\n\n\n**Kiểm lỗi**\n\nNếu nhầm đường trên cao \\(z=3\\) với đường nằm trong \\(z=0\\), đọc **Kiến thức 3.1**. Làm **Bài luyện 28** và **Bài luyện 36**, dùng số điểm chung để phân biệt ba quan hệ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1746,11 +1971,17 @@
       "TOP15-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm tra giá trị z của mọi điểm trên d."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1766,11 +1997,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "d song song (P) vì z luôn bằng 3."
+      },
+      {
+        "id": "B",
+        "text": "d nằm trong (P)."
+      },
+      {
+        "id": "C",
+        "text": "d cắt (P) tại một điểm."
+      },
+      {
+        "id": "D",
+        "text": "d vuông góc (P)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T11",
-    "content_version": "TOP15-BANK-CP67-20261126-T11",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T11",
     "stem": "d và a là hai đường phân biệt cùng nằm trong \\((P), d\\parallel a\\). Có thể kết luận \\(d\\parallel (P)\\) không?",
     "answer_key": "Không; d nằm trong (P).",
     "worked_solution": "Không; d nằm trong (P) nên có vô số điểm chung với (P).\n\n\n\n**Kiểm lỗi**\n\nNếu thấy d song song \\(a\\subset (P)\\) mà quên d có nằm trong (P) hay không, đọc **Kiến thức 3.2**. Làm **Bài luyện 29** và **Bài luyện 37**, kiểm một điểm ngoài mặt.",
@@ -1782,11 +2032,17 @@
       "TOP15-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Định nghĩa song song đường–mặt dựa vào số điểm chung."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1802,13 +2058,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; chỉ cần d song song a."
+      },
+      {
+        "id": "B",
+        "text": "Không; d nằm trong (P)."
+      },
+      {
+        "id": "C",
+        "text": "Có; d không cắt a."
+      },
+      {
+        "id": "D",
+        "text": "Không; d vuông góc (P)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T12",
-    "content_version": "TOP15-BANK-CP67-20261126-T12",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T12",
     "stem": "Cho \\(d\\subset(Q),\\,d\\parallel(P)\\) và hai mặt phẳng cắt nhau theo đường \\(g=(Q)\\cap(P)\\). d và g có thể cắt nhau không?",
-    "answer_key": "Không; \\(d\\parallel g\\).",
+    "answer_key": "Không; d và g song song vì đồng phẳng trong (Q).",
     "worked_solution": "Không, vì giao điểm nếu có thuộc (P), trái \\(d\\parallel (P)\\); do đó \\(d\\parallel g\\).\n\n\n\n**Kiểm lỗi**\n\nNếu phát biểu d song song g khi hai mặt không cắt, đọc **Kiến thức 3.3**. Làm **Bài luyện 32** và **Bài luyện 38**; phải có giao tuyến g thật và d không gặp mặt kia.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1818,11 +2093,17 @@
       "TOP15-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Nếu d gặp g thì điểm chung thuộc (P)."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1838,13 +2119,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; d cắt g tại một điểm."
+      },
+      {
+        "id": "B",
+        "text": "Không; d và g chéo nhau."
+      },
+      {
+        "id": "C",
+        "text": "Không; d và g song song vì đồng phẳng trong (Q)."
+      },
+      {
+        "id": "D",
+        "text": "Không; d và g trùng nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T13",
-    "content_version": "TOP15-BANK-CP67-20261126-T13",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T13",
     "stem": "Trong tứ diện S.ABC, M nằm trong SA và \\(\\frac{SM}{SA}=\\frac23\\). Chọn N,K lần lượt trên SB,SC sao cho mặt (MNK) song song đáy (ABC). Tìm \\(\\frac{SN}{SB}\\) và \\(\\frac{SK}{SC}\\).",
-    "answer_key": "\\(\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac23\\).",
+    "answer_key": "\\(SN/SB=SK/SC=2/3\\)",
     "worked_solution": "Nếu mặt cắt song song đáy thì \\(MN\\parallel AB\\) và \\(MK\\parallel AC\\) (giao tuyến của hai mặt song song với mặt thứ ba). Theo Thalès, \\(\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac{SM}{SA}=\\frac23\\). Ngược lại, chọn hai tỉ số bằng \\(\\frac23\\) thì Thalès đảo cho \\(MN\\parallel AB\\), \\(MK\\parallel AC\\). Hai đường MN,MK cắt nhau nên (MNK) song song (ABC).\n\n\n\n**Kiểm lỗi**\n\nNếu tự chọn N,K mà ba tỉ số không đều, đọc **Kiến thức 3.4**. Làm **Bài luyện 39** và **Bài luyện 44**, kiểm cùng tỉ số \\(\\frac{SM}{SA}, \\frac{SN}{SB}, \\frac{SK}{SC}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1855,11 +2155,17 @@
       "TOP15-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng giao tuyến của hai mặt song song và Thalès."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1875,13 +2181,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(SN/SB=SK/SC=1/3\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(SN/SB=2/3,\\ SK/SC=1/3\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(SN/SB=SK/SC=3/2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(SN/SB=SK/SC=2/3\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T14",
-    "content_version": "TOP15-BANK-CP67-20261126-T14",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T14",
     "stem": "Hai mặt \\(z=0\\) và \\(2z=0\\) trùng hay song song phân biệt?",
-    "answer_key": "Hai mặt phẳng trùng nhau.",
+    "answer_key": "Trùng nhau.",
     "worked_solution": "Trùng nhau, vì chúng cùng tập điểm \\(z=0\\).\n\n\n\n**Kiểm lỗi**\n\nNếu coi \\(z=0\\) và \\(2z=0\\) song song phân biệt, đọc **Kiến thức 4.1**. Làm **Bài luyện 40** và **Bài luyện 50**; trước hết kiểm hai tập điểm có trùng nhau không.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1891,11 +2216,17 @@
       "TOP15-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So tập nghiệm của hai phương trình."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1911,13 +2242,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trùng nhau."
+      },
+      {
+        "id": "B",
+        "text": "Song song phân biệt."
+      },
+      {
+        "id": "C",
+        "text": "Cắt nhau theo Ox."
+      },
+      {
+        "id": "D",
+        "text": "Vuông góc nhau."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T15",
-    "content_version": "TOP15-BANK-CP67-20261126-T15",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T15",
     "stem": "Cho \\(a,b\\subset (P)\\) nhưng \\(a\\parallel b\\) và \\(a\\parallel (Q),b\\parallel (Q)\\). Có đủ kết luận \\((P)\\parallel (Q)\\) không?",
-    "answer_key": "Chưa đủ.",
+    "answer_key": "Chưa đủ; a,b chỉ cho một phương.",
     "worked_solution": "Hai đường a,b song song không đáp ứng điều kiện hai đường cắt nhau. Chẳng hạn \\((P):z=0,\\ (Q):y=0\\), \\(a:(x;y;z)=(t;1;0)\\), \\(b:(x;y;z)=(t;2;0)\\), \\(t\\in\\mathbb R\\). Cả a,b song song (Q) nhưng (P) và (Q) cắt nhau theo Ox.\n\n\n\n**Kiểm lỗi**\n\nNếu chỉ có một đường a trong (P) song song (Q) mà kết luận \\((P)\\parallel (Q)\\), đọc **Kiến thức 4.2**. Làm **Bài luyện 41** và **Bài luyện 51**, cần hai đường cắt nhau trong (P).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1927,11 +2277,17 @@
       "TOP15-O15"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dấu hiệu hai đường phải cắt nhau."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1947,13 +2303,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đủ; hai đường phân biệt là đủ."
+      },
+      {
+        "id": "B",
+        "text": "Chưa đủ; a,b chỉ cho một phương."
+      },
+      {
+        "id": "C",
+        "text": "Đủ; chỉ cần một đường song song (Q)."
+      },
+      {
+        "id": "D",
+        "text": "Chưa đủ; phải có hai đường vuông góc (Q)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T16",
-    "content_version": "TOP15-BANK-CP67-20261126-T16",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T16",
     "stem": "Cho hai mặt phẳng phân biệt \\((P)\\parallel(Q)\\). Một người cho rằng mặt phẳng (R) cắt (P) nhưng song song (Q), rồi kết luận hai giao tuyến song song. Nhận xét lập luận đó.",
-    "answer_key": "Không; giả thiết mâu thuẫn khi \\((P)\\parallel(Q)\\).",
+    "answer_key": "Giả thiết mâu thuẫn: R cắt P thì R cũng cắt Q.",
     "worked_solution": "Nếu \\((P)\\parallel(Q)\\) và (R) cắt (P), thì (R) cũng cắt (Q). Vì vậy giả thiết (R) song song (Q) đồng thời cắt (P) là không thể. Không có hai giao tuyến trong cấu hình đã nêu để so sánh.\n\n\n\n**Kiểm lỗi**\n\nNếu quên điều kiện mặt thứ ba cắt cả hai mặt song song, đọc **Kiến thức 4.3**. Làm **Bài luyện 42** và **Bài luyện 52**; xác định hai giao tuyến trước khi suy chúng song song.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1963,11 +2338,17 @@
       "TOP15-O16"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét định lí mặt thứ ba cắt hai mặt song song."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1983,13 +2364,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đúng; R song song Q vẫn tạo hai giao tuyến."
+      },
+      {
+        "id": "B",
+        "text": "Đúng; giao tuyến thứ hai là cả Q."
+      },
+      {
+        "id": "C",
+        "text": "Giả thiết mâu thuẫn: R cắt P thì R cũng cắt Q."
+      },
+      {
+        "id": "D",
+        "text": "Không; hai giao tuyến nếu có phải vuông góc."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T17",
-    "content_version": "TOP15-BANK-CP67-20261126-T17",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T17",
     "stem": "Trong tứ diện S.ABC, M,N,K nằm trong các cạnh SA,SB,SC, có \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac25\\). Diện tích đáy ABC là \\(100\\,\\mathrm{cm}^2\\). Tính diện tích thiết diện MNK.",
-    "answer_key": "\\(16\\,\\mathrm{cm}^2\\).",
+    "answer_key": "16 cm²",
     "worked_solution": "Mặt cắt song song đáy tạo tam giác đồng dạng với đáy, tỉ số cạnh \\(t=\\frac25\\). Diện tích tỉ lệ với \\(t^2\\), nên bằng \\(\\left(\\frac25\\right)^2\\cdot100=16\\,\\mathrm{cm}^2\\).\n\n\n\n**Kiểm lỗi**\n\nNếu lấy t thay cho \\(t^2\\) làm tỉ số diện tích, đọc **Kiến thức 4.4** và Thalès trong không gian. Làm **Bài luyện 45** và **Bài luyện 49**, phân biệt tỉ số cạnh/chu vi và diện tích.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1999,11 +2399,17 @@
       "TOP15-O17"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Bình phương tỉ số cạnh tương ứng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2019,13 +2425,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "40 cm²"
+      },
+      {
+        "id": "B",
+        "text": "25 cm²"
+      },
+      {
+        "id": "C",
+        "text": "4 cm²"
+      },
+      {
+        "id": "D",
+        "text": "16 cm²"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T18",
-    "content_version": "TOP15-BANK-CP67-20261126-T18",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T18",
     "stem": "Tìm ảnh \\(N(3;-1;2)\\) dưới phép chiếu \\(T(x;y;z)=(x-z;y;0)\\).",
-    "answer_key": "\\(N'(1;-1;0)\\).",
+    "answer_key": "\\(N'(1;-1;0)\\)",
     "worked_solution": "\\(N'(1;-1;0)\\). Kiểm cao độ của ảnh bằng 0 và \\(\\overrightarrow{N'N}=2(1;0;1)\\) cùng phương chiếu.\n\n\n\n**Kiểm lỗi**\n\nNếu chiếu theo phương song song \\(z=0\\) mà tưởng mọi điểm đều có ảnh, đọc **Kiến thức 5.1**. Làm **Bài luyện 54** và **Bài luyện 63**; giải tham số tại \\(z=0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2035,11 +2460,17 @@
       "TOP15-O18"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Thay từng tọa độ vào công thức T."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2055,13 +2486,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(N'(1;-1;0)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(N'(3;-1;0)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(N'(5;-1;0)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(N'(1;1;0)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T19",
-    "content_version": "TOP15-BANK-CP67-20261126-T19",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T19",
     "stem": "Cho phép chiếu song song \\(T(x;y;z)=(x-z;y;0)\\). Đường \\(d:(x;y;z)=(1+t;2;3+t),\\,t\\in\\mathbb R\\) có ảnh qua T là đường hay điểm?",
-    "answer_key": "Ảnh là điểm \\((-2;2;0)\\).",
+    "answer_key": "Một điểm \\((-2;2;0)\\).",
     "worked_solution": "Một điểm: \\(T(1+t;2;3+t)=(-2;2;0)\\) với mọi t.\n\n\n\n**Kiểm lỗi**\n\nNếu tưởng đường nào cũng có ảnh là đường, đọc **Kiến thức 5.2**. Làm **Bài luyện 58** và **Bài luyện 62**, so ảnh hai điểm khi đường cùng phương chiếu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2071,11 +2521,17 @@
       "TOP15-O19"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Thay tham số t vào T, xem ảnh còn phụ thuộc t không."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2091,13 +2547,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Một đường \\((1+t;2;0)\\)."
+      },
+      {
+        "id": "B",
+        "text": "Một điểm \\((-2;2;0)\\)."
+      },
+      {
+        "id": "C",
+        "text": "Một điểm \\((2;2;0)\\)."
+      },
+      {
+        "id": "D",
+        "text": "Một đường \\((-2;2+t;0)\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T20",
-    "content_version": "TOP15-BANK-CP67-20261126-T20",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T20",
     "stem": "Qua phép chiếu song song, A′,B′,M′ lần lượt là ảnh của A,B,M. Nếu M là trung điểm AB và \\(A'\\ne B'\\), M′ nằm ở đâu?",
-    "answer_key": "M′ là trung điểm A′B′.",
+    "answer_key": "M' là trung điểm A'B'.",
     "worked_solution": "Là trung điểm A′B′; điều kiện \\(A'\\ne B'\\) loại trường hợp đường ảnh co thành điểm.\n\n\n\n**Kiểm lỗi**\n\nNếu chia tỉ số độ dài ảnh khi \\(A'=B'\\), đọc **Kiến thức 5.3**. Làm **Bài luyện 57** và **Bài luyện 65**, kiểm ảnh đoạn không suy biến trước.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2107,11 +2582,17 @@
       "TOP15-O20"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Phép chiếu bảo toàn tỉ số trên đoạn không suy biến."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2127,13 +2608,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "M' là A'."
+      },
+      {
+        "id": "B",
+        "text": "M' là B'."
+      },
+      {
+        "id": "C",
+        "text": "M' là trung điểm A'B'."
+      },
+      {
+        "id": "D",
+        "text": "M' có thể là bất kỳ điểm nào trên đường A'B'."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T21",
-    "content_version": "TOP15-BANK-CP67-20261126-T21",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T21",
     "stem": "Hình chiếu song song của hình bình hành không suy biến có thể là hình thang chỉ có một cặp cạnh song song không?",
-    "answer_key": "Không; ảnh không suy biến là hình bình hành, ảnh suy biến không phải hình thang.",
+    "answer_key": "Không; ảnh không suy biến là hình bình hành, nếu suy biến thì là đoạn.",
     "worked_solution": "Phép chiếu song song bảo toàn quan hệ song song của hai cặp cạnh đối khi hình ảnh không suy biến, nên ảnh là hình bình hành. Nếu mặt phẳng chứa hình song song phương chiếu, ảnh co thành đoạn thẳng, không phải hình thang. Vì vậy không thể thu được hình thang chỉ có một cặp cạnh song song.\n\n\n\n**Kiểm lỗi**\n\nNếu suy giữ nguyên góc vuông vì hình chiếu còn hai cặp cạnh đối song song, đọc **Kiến thức 5.4**. Làm **Bài luyện 59** và **Bài luyện 66**, kiểm góc ảnh riêng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2143,11 +2643,17 @@
       "TOP15-O21"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét hai cặp cạnh đối và trường hợp hình ảnh suy biến."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2163,13 +2669,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có; một cặp cạnh đối luôn mất song song."
+      },
+      {
+        "id": "B",
+        "text": "Có; phép chiếu biến mọi hình bình hành thành hình thang chỉ một cặp song song."
+      },
+      {
+        "id": "C",
+        "text": "Không; mọi ảnh đều là hình chữ nhật."
+      },
+      {
+        "id": "D",
+        "text": "Không; ảnh không suy biến là hình bình hành, nếu suy biến thì là đoạn."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP15-T22",
-    "content_version": "TOP15-BANK-CP67-20261126-T22",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T22",
     "stem": "Trong tứ diện S.ABC, M,N,K nằm trong các cạnh SA,SB,SC, có \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac35\\). Tính tỉ số diện tích tam giác MNK so với ABC.",
-    "answer_key": "Tỉ số diện tích bằng \\(\\frac9{25}\\).",
+    "answer_key": "\\(\\frac9{25}\\)",
     "worked_solution": "Ba tỉ số cạnh tính từ S cùng bằng \\(\\frac35\\), nên thiết diện MNK song song đáy và đồng dạng với ABC. Tỉ số diện tích là \\(\\left(\\frac35\\right)^2=\\frac9{25}\\); tỉ số chu vi mới là \\(\\frac35\\).\n\n\n\n**Kiểm lỗi**\n\nNếu đánh đồng diện tích thiết diện với diện tích ảnh chiếu trong mọi cấu hình, đọc **Kiến thức 5.5**. Làm **Bài luyện 49** và **Bài luyện 67**, tính \\(t^2\\) cho mặt cắt và xét quan hệ giữa mặt chứa thiết diện, mặt nhận ảnh và phương chiếu độc lập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2179,11 +2704,17 @@
       "TOP15-O22"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tỉ số diện tích bằng bình phương tỉ số đồng dạng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2199,13 +2730,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac9{25}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac35\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{27}{125}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{25}9\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T01",
-    "content_version": "TOP16-BANK-CP67-20261126-T01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T01",
     "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, góc giữa AB và A′B′ bằng bao nhiêu?",
-    "answer_key": "\\(0^\\circ\\).",
+    "answer_key": "0°",
     "worked_solution": "\\(0^\\circ\\) vì AB và A′B′ song song.\n\n**Kiểm lỗi**\n\nNếu lấy góc tù \\(145^\\circ\\) làm góc giữa hai đường, đọc lại **Kiến thức 1.1**: phải đưa hai phương về chung gốc và chọn góc không tù. Thử **Bài luyện 1** (góc bù) và **Bài luyện 10** (hai cạnh song song).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2215,11 +2765,17 @@
       "TOP16-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So phương của AB và A'B'."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2235,13 +2791,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0°"
+      },
+      {
+        "id": "B",
+        "text": "45°"
+      },
+      {
+        "id": "C",
+        "text": "90°"
+      },
+      {
+        "id": "D",
+        "text": "180°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T02",
-    "content_version": "TOP16-BANK-CP67-20261126-T02",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T02",
     "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, AB và DD′ có phải là hai đường vuông góc không?",
-    "answer_key": "Có, \\(AB\\perp DD'\\).",
+    "answer_key": "Có; AB vuông góc AA', AA' song song DD'.",
     "worked_solution": "Trong hình hộp chữ nhật, \\(DD'\\parallel AA'\\) và \\(AB\\perp AA'\\), nên \\(AB\\perp DD'\\). Hai đường AB,DD′ chéo nhau nhưng vẫn vuông góc theo phương.\n\n**Kiểm lỗi**\n\nNếu nghĩ hai đường không cắt thì không thể vuông góc, đọc **Kiến thức 1.2**: vuông góc là quan hệ giữa hai phương, còn chéo nhau là quan hệ vị trí. Thử **Bài luyện 7** (phản ví dụ) và **Bài luyện 11** (hình hộp).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2251,11 +2826,17 @@
       "TOP16-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Chuyển DD' về cạnh bên song song qua A."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2271,13 +2852,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; hai đường không gặp nhau."
+      },
+      {
+        "id": "B",
+        "text": "Có; AB vuông góc AA', AA' song song DD'."
+      },
+      {
+        "id": "C",
+        "text": "Không; AB song song DD'."
+      },
+      {
+        "id": "D",
+        "text": "Có; vì mọi đường chéo nhau đều vuông góc."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T03",
-    "content_version": "TOP16-BANK-CP67-20261126-T03",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T03",
     "stem": "Nếu \\(a\\perp b\\) và \\(c\\parallel b\\) thì kết luận gì về a,c?",
-    "answer_key": "\\(a\\perp c\\).",
+    "answer_key": "a vuông góc c.",
     "worked_solution": "\\(a\\perp c\\) theo tính bất biến của góc khi thay đường bằng đường song song.\n\n**Kiểm lỗi**\n\nNếu suy 'cùng vuông góc một đường' thì phải song song, xem lại **Kiến thức 1.3**: phép chuyển phương đúng là thay **một** đường bằng đường song song với nó. Thử **Bài luyện 3** và **Bài luyện 12**, xác định cặp đường nào thật sự song song.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2287,11 +2887,17 @@
       "TOP16-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Góc giữa hai đường không đổi khi chuyển một đường song song."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2307,13 +2913,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "a song song c."
+      },
+      {
+        "id": "B",
+        "text": "a trùng c."
+      },
+      {
+        "id": "C",
+        "text": "a vuông góc c."
+      },
+      {
+        "id": "D",
+        "text": "Không đủ kết luận."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T04",
-    "content_version": "TOP16-BANK-CP67-20261126-T04",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T04",
     "stem": "Nét vẽ có hai đoạn tạo góc \\(90^\\circ\\) trên giấy, đủ kết luận hai thanh trong không gian vuông góc chưa?",
-    "answer_key": "Chưa đủ.",
+    "answer_key": "Chưa đủ; cần chứng cứ về phương hoặc góc thật.",
     "worked_solution": "Chưa; cần chứng cứ hình học về phương hoặc góc thật.\n\n**Kiểm lỗi**\n\nNếu kết luận chỉ vì hình vẽ trông có góc vuông, trở lại **Kiến thức 1.4** và thay nét vẽ bằng dữ kiện về phương, cạnh đáy và cạnh bên. Thử **Bài luyện 4** và **Bài luyện 13**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2323,11 +2948,17 @@
       "TOP16-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Phối cảnh không bảo toàn mọi góc."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2343,13 +2974,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đủ; góc trên hình vẽ là góc thật."
+      },
+      {
+        "id": "B",
+        "text": "Đủ nếu hai đoạn cùng độ dài."
+      },
+      {
+        "id": "C",
+        "text": "Chưa đủ; phải có hai thanh cắt nhau mới vuông góc."
+      },
+      {
+        "id": "D",
+        "text": "Chưa đủ; cần chứng cứ về phương hoặc góc thật."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T05",
-    "content_version": "TOP16-BANK-CP67-20261126-T05",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T05",
     "stem": "d vuông góc chỉ một đường a thuộc (P). Đủ kết luận \\(d\\perp (P)\\) không?",
-    "answer_key": "Không đủ.",
+    "answer_key": "Không đủ; cần thêm dữ kiện về một phương khác.",
     "worked_solution": "Không; cần thêm dữ kiện, thường là d vuông góc hai đường cắt nhau trong (P).\n\n**Kiểm lỗi**\n\nNếu thấy d vuông góc một đường trên sân rồi kết luận d vuông góc cả mặt, đọc **Kiến thức 2.1**: một hướng không đủ đại diện cho mọi hướng trong mặt phẳng. Thử **Bài luyện 15** và **Bài luyện 25**; đối chiếu dữ kiện cần bổ sung.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2359,11 +3009,17 @@
       "TOP16-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dấu hiệu cần hai đường cắt nhau thuộc (P)."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2379,13 +3035,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không đủ; cần thêm dữ kiện về một phương khác."
+      },
+      {
+        "id": "B",
+        "text": "Đủ vì a thuộc (P)."
+      },
+      {
+        "id": "C",
+        "text": "Đủ nếu d cắt a."
+      },
+      {
+        "id": "D",
+        "text": "Không đủ vì phải kiểm ba đường song song."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T06",
-    "content_version": "TOP16-BANK-CP67-20261126-T06",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T06",
     "stem": "Nếu \\(a\\parallel b\\) trong \\((P), d\\perp a\\) và \\(d\\perp b\\) đã đủ \\(d\\perp (P)\\) chưa?",
-    "answer_key": "Chưa đủ.",
+    "answer_key": "Chưa đủ; cần hai đường cắt nhau.",
     "worked_solution": "Hai đường song song chỉ cung cấp một phương. Ví dụ trong mặt phẳng (P), chọn d cũng nằm trong (P) và vuông góc a. Khi \\(b\\parallel a\\) thì \\(d\\perp b\\), nhưng d không vuông góc (P).\n\n**Kiểm lỗi**\n\nNếu hai đường dùng để kiểm tra lại song song, điều kiện của dấu hiệu chưa đủ; đọc **Kiến thức 2.2**: phải có hai đường **cắt nhau** thuộc cùng mặt. Thử **Bài luyện 21** và **Bài luyện 26**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2395,11 +3070,17 @@
       "TOP16-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai đường song song chỉ cho một phương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2415,13 +3096,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đủ vì a,b phân biệt."
+      },
+      {
+        "id": "B",
+        "text": "Chưa đủ; cần hai đường cắt nhau."
+      },
+      {
+        "id": "C",
+        "text": "Đủ nếu d nằm ngoài (P)."
+      },
+      {
+        "id": "D",
+        "text": "Chưa đủ vì d luôn song song (P)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T07",
-    "content_version": "TOP16-BANK-CP67-20261126-T07",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T07",
     "stem": "Nếu \\(a\\perp (P)\\) và \\(b\\parallel a\\) thì b có vuông góc (P) không?",
-    "answer_key": "Có, \\(b\\perp(P)\\).",
+    "answer_key": "Có, b vuông góc (P).",
     "worked_solution": "Có; mọi đường của (P) vẫn vuông góc phương b.\n\n**Kiểm lỗi**\n\nNếu thay đường/mặt mà không kiểm tra song song thực sự, đọc **Kiến thức 2.3**: đường cùng phương pháp tuyến vẫn vuông góc với mặt song song. Thử **Bài luyện 17** và **Bài luyện 27**, ghi rõ giả thiết song song.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2431,11 +3131,17 @@
       "TOP16-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai đường cùng phương với pháp tuyến đều vuông góc mặt."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2451,11 +3157,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, b song song (P)."
+      },
+      {
+        "id": "B",
+        "text": "Không, b phải trùng a."
+      },
+      {
+        "id": "C",
+        "text": "Có, b vuông góc (P)."
+      },
+      {
+        "id": "D",
+        "text": "Chỉ đúng khi b cắt a."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T08",
-    "content_version": "TOP16-BANK-CP67-20261126-T08",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T08",
     "stem": "Qua điểm M có thể có hai đường phân biệt cùng vuông góc (P) không?",
     "answer_key": "Không; chỉ có một đường.",
     "worked_solution": "Không; pháp tuyến qua M xác định duy nhất.\n\n**Kiểm lỗi**\n\nNếu cho rằng qua M có hai pháp tuyến phân biệt, đọc **Kiến thức 2.4**: một điểm và một phương pháp tuyến xác định một đường duy nhất. Thử **Bài luyện 18** và **Bài luyện 28**, phân biệt đường trùng với đường song song khác.",
@@ -2467,11 +3192,17 @@
       "TOP16-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Qua một điểm chỉ có một pháp tuyến của mặt phẳng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2487,13 +3218,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có đúng hai đường."
+      },
+      {
+        "id": "B",
+        "text": "Có vô số đường."
+      },
+      {
+        "id": "C",
+        "text": "Không có đường nào."
+      },
+      {
+        "id": "D",
+        "text": "Không; chỉ có một đường."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T09",
-    "content_version": "TOP16-BANK-CP67-20261126-T09",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T09",
     "stem": "Nền nằm ngang hình chữ nhật ABCD. Đo được cột vuông góc cạnh AB. Đã đủ khẳng định cột thẳng đứng chưa?",
-    "answer_key": "Chưa đủ.",
+    "answer_key": "Chưa đủ; có thể kiểm thêm vuông góc AD.",
     "worked_solution": "Nếu nền nằm ngang, cột thẳng đứng phải vuông góc mặt phẳng nền. Cần kiểm tra thêm một đường trong nền cắt AB, chẳng hạn AD, rồi dùng dấu hiệu vuông góc hai đường cắt nhau.\n\n**Kiểm lỗi**\n\nNếu chỉ kiểm cột với một cạnh sàn, quay lại **Kiến thức 2.5**: cần hai hướng sàn cắt nhau. Thử **Bài luyện 19** và **Bài luyện 29**, nêu hai đường trong nền trước khi kết luận.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2503,11 +3253,17 @@
       "TOP16-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Cần kiểm thêm một phương cắt AB trong nền."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2523,11 +3279,30 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chưa đủ; có thể kiểm thêm vuông góc AD."
+      },
+      {
+        "id": "B",
+        "text": "Đủ, vì nền nằm ngang."
+      },
+      {
+        "id": "C",
+        "text": "Đủ nếu cột không nằm trong nền."
+      },
+      {
+        "id": "D",
+        "text": "Chưa đủ; chỉ cần kiểm thêm CD song song AB."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T10",
-    "content_version": "TOP16-BANK-CP67-20261126-T10",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T10",
     "stem": "Nếu A thuộc (P), hình chiếu vuông góc của A trên (P) ở đâu?",
     "answer_key": "Chính A; khoảng cách bằng 0.",
     "worked_solution": "Chính là A; khoảng cách A đến (P) bằng 0.\n\n**Kiểm lỗi**\n\nNếu chọn hình chiếu theo cảm giác gần nhất trên hình vẽ, đọc **Kiến thức 3.1**: nếu A đã thuộc mặt thì H=A; nếu A ở ngoài mặt thì AH vuông góc mặt. Thử **Bài luyện 30** và **Bài luyện 40**, phân biệt chân hình chiếu với đoạn xiên.",
@@ -2539,11 +3314,17 @@
       "TOP16-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Điểm đã thuộc mặt chiếu thì giữ nguyên."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2559,13 +3340,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Một điểm khác A trên (P)."
+      },
+      {
+        "id": "B",
+        "text": "Chính A; khoảng cách bằng 0."
+      },
+      {
+        "id": "C",
+        "text": "Một điểm ngoài (P)."
+      },
+      {
+        "id": "D",
+        "text": "Không xác định được."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T11",
-    "content_version": "TOP16-BANK-CP67-20261126-T11",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T11",
     "stem": "Đường \\(d\\perp (P)\\). Ảnh vuông góc của d lên (P) là gì?",
-    "answer_key": "Một điểm: giao điểm của d với (P).",
+    "answer_key": "Một điểm: giao điểm d với (P).",
     "worked_solution": "Một điểm: chân giao \\(d\\cap (P)\\).\n\n**Kiểm lỗi**\n\nNếu nối hai ảnh trùng nhau rồi gọi đó là một đường, đọc **Kiến thức 3.2**: ảnh đường pháp tuyến có thể suy biến thành một điểm. Thử **Bài luyện 31** và **Bài luyện 41**, kiểm ảnh từng đầu mút.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2575,11 +3375,17 @@
       "TOP16-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Mọi điểm trên đường pháp tuyến cùng chân chiếu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2595,13 +3401,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Một đường nằm trong (P)."
+      },
+      {
+        "id": "B",
+        "text": "Một đoạn không suy biến."
+      },
+      {
+        "id": "C",
+        "text": "Một điểm: giao điểm d với (P)."
+      },
+      {
+        "id": "D",
+        "text": "Cả mặt phẳng (P)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T12",
-    "content_version": "TOP16-BANK-CP67-20261126-T12",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T12",
     "stem": "Cho \\(A\\notin(P), H\\in(P), AH\\perp(P), B\\in(P), B\\ne H\\). Nếu \\(c\\subset(P)\\) và \\(c\\perp BH\\), có thể kết luận \\(c\\perp AB\\) không?",
-    "answer_key": "Có, \\(c\\perp AB\\).",
+    "answer_key": "Có; theo định lí ba đường vuông góc.",
     "worked_solution": "Có: BH là hình chiếu của AB lên (P); dùng định lí ba đường vuông góc.\n\n**Kiểm lỗi**\n\nNếu dùng định lí ba đường vuông góc mà chưa xác định đúng hình chiếu của đường xiên, đọc **Kiến thức 3.3**: H là chân từ A và \\(B\\ne H\\) để BH không suy biến. Thử **Bài luyện 32** (chiều thuận) và **Bài luyện 42** (chiều đảo), chỉ rõ ba đường liên quan.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2611,11 +3436,17 @@
       "TOP16-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "BH là hình chiếu không suy biến của AB."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2631,13 +3462,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không; c song song AB."
+      },
+      {
+        "id": "B",
+        "text": "Không đủ dù B khác H."
+      },
+      {
+        "id": "C",
+        "text": "Có; vì c song song BH."
+      },
+      {
+        "id": "D",
+        "text": "Có; theo định lí ba đường vuông góc."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T13",
-    "content_version": "TOP16-BANK-CP67-20261126-T13",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T13",
     "stem": "Đường nằm trong (P) tạo góc bao nhiêu với (P)?",
-    "answer_key": "\\(0^\\circ\\).",
+    "answer_key": "0°",
     "worked_solution": "\\(0^\\circ\\). Khi đường vuông góc (P), góc \\(90^\\circ\\).\n\n**Kiểm lỗi**\n\nNếu đo góc với đường pháp tuyến thay cho góc đường–mặt, đọc **Kiến thức 3.4**: dùng góc giữa đường xiên và hình chiếu không suy biến. Thử **Bài luyện 33** và **Bài luyện 43**, kiểm xem tỉ số sin lấy đúng cạnh.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2647,11 +3497,17 @@
       "TOP16-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đường nằm trong mặt có góc bằng góc với chính phương của nó."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2667,13 +3523,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "0°"
+      },
+      {
+        "id": "B",
+        "text": "45°"
+      },
+      {
+        "id": "C",
+        "text": "90°"
+      },
+      {
+        "id": "D",
+        "text": "180°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T14",
-    "content_version": "TOP16-BANK-CP67-20261126-T14",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T14",
     "stem": "Đoạn dốc thẳng cao 3 m, hình chiếu ngang dài 4 m. Tính độ dài đoạn dốc. Gọi \\(\\theta\\) là góc giữa đoạn dốc và mặt nền ngang; hãy xác định cạnh đối, cạnh kề và tính \\(\\tan\\theta\\).",
-    "answer_key": "5 m; cạnh đối 3 m, cạnh kề 4 m; \\(\\tan\\theta=\\frac34\\).",
+    "answer_key": "5 m; đối 3 m, kề 4 m; \\(\\tan\\theta=3/4\\).",
     "worked_solution": "Độ dài dốc là \\(\\sqrt{3^2+4^2}=5\\) m, không phải 7 m. Góc dốc \\(\\theta\\) nằm giữa cạnh huyền và đoạn ngang; cạnh đối dài 3 m, cạnh kề dài 4 m. Vì vậy \\(\\tan\\theta=\\frac34\\). Nếu dùng \\(\\frac35\\), em đã tính sin thay cho tang.\n\n**Kiểm lỗi**\n\nNếu cộng 3 và 4 để tính chiều dài dốc hoặc dùng nhầm tan với sin, đọc **Kiến thức 3.5**: dựng tam giác vuông giữa chiều cao, chiều ngang và đoạn xiên. Thử **Bài luyện 36** và **Bài luyện 44**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2683,11 +3558,17 @@
       "TOP16-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dựng tam giác vuông, phân biệt cạnh đối, kề và huyền."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2703,13 +3584,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "7 m; đối 3 m, kề 4 m; \\(\\tan\\theta=3/4\\)."
+      },
+      {
+        "id": "B",
+        "text": "5 m; đối 3 m, kề 4 m; \\(\\tan\\theta=3/4\\)."
+      },
+      {
+        "id": "C",
+        "text": "5 m; đối 4 m, kề 3 m; \\(\\tan\\theta=4/3\\)."
+      },
+      {
+        "id": "D",
+        "text": "5 m; đối 3 m, kề 4 m; \\(\\tan\\theta=3/5\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T15",
-    "content_version": "TOP16-BANK-CP67-20261126-T15",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T15",
     "stem": "Hai mặt phẳng song song tạo góc giữa hai mặt bằng bao nhiêu?",
-    "answer_key": "\\(0^\\circ\\).",
+    "answer_key": "0°",
     "worked_solution": "\\(0^\\circ\\) theo quy ước góc giữa các mặt phẳng.\n\n**Kiểm lỗi**\n\nNếu lấy hai đường tùy ý trên hai mặt để đo góc, trở lại **Kiến thức 4.1**: cần đường vuông góc giao tuyến trong tiết diện phù hợp (hoặc hai pháp tuyến). Thử **Bài luyện 46** và **Bài luyện 58**, ghi rõ cách chọn góc không tù.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2719,11 +3619,17 @@
       "TOP16-O15"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So phương pháp tuyến của hai mặt song song."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2739,13 +3645,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "45°"
+      },
+      {
+        "id": "B",
+        "text": "90°"
+      },
+      {
+        "id": "C",
+        "text": "0°"
+      },
+      {
+        "id": "D",
+        "text": "180°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T16",
-    "content_version": "TOP16-BANK-CP67-20261126-T16",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T16",
     "stem": "Nhị diện \\(120^\\circ\\) cho góc nhỏ giữa hai mặt phẳng chứa nó bằng bao nhiêu?",
-    "answer_key": "\\(60^\\circ\\).",
+    "answer_key": "60°",
     "worked_solution": "\\(60^\\circ = 180^\\circ-120^\\circ\\).\n\n**Kiểm lỗi**\n\nNếu kết luận góc hai mặt bằng trực tiếp góc nhị diện tù, đọc **Kiến thức 4.2**: nhị diện gắn hai nửa mặt có hướng, còn góc giữa hai mặt lấy góc không tù. Thử **Bài luyện 47** và **Bài luyện 59**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2755,11 +3680,17 @@
       "TOP16-O16"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Góc giữa hai mặt không tù."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2775,13 +3706,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "120°"
+      },
+      {
+        "id": "B",
+        "text": "30°"
+      },
+      {
+        "id": "C",
+        "text": "90°"
+      },
+      {
+        "id": "D",
+        "text": "60°"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T17",
-    "content_version": "TOP16-BANK-CP67-20261126-T17",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T17",
     "stem": "\\(d\\subset (P), d\\perp (Q)\\). Quan hệ hai mặt (P),(Q)?",
-    "answer_key": "\\((P)\\perp(Q)\\).",
+    "answer_key": "(P) vuông góc (Q).",
     "worked_solution": "\\((P)\\perp (Q)\\), theo dấu hiệu một đường trong mặt vuông góc mặt kia.\n\n**Kiểm lỗi**\n\nNếu chỉ tìm được một cặp đường vuông góc mà kết luận hai mặt vuông góc, đọc **Kiến thức 4.3**: cần một **đường nằm trong mặt này** vuông góc **toàn bộ mặt kia**. Thử **Bài luyện 48** và **Bài luyện 60**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2791,11 +3741,17 @@
       "TOP16-O17"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Một mặt chứa đường vuông góc mặt kia."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2811,13 +3767,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(P) vuông góc (Q)."
+      },
+      {
+        "id": "B",
+        "text": "(P) song song (Q)."
+      },
+      {
+        "id": "C",
+        "text": "(P) trùng (Q)."
+      },
+      {
+        "id": "D",
+        "text": "Không đủ dữ kiện."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T18",
-    "content_version": "TOP16-BANK-CP67-20261126-T18",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T18",
     "stem": "\\((P)\\perp (Q)\\) theo d. \\(a\\subset (P), a\\perp d\\). Có \\(a\\perp (Q)\\) không?",
-    "answer_key": "Có, \\(a\\perp(Q)\\).",
+    "answer_key": "Có, a vuông góc (Q).",
     "worked_solution": "Có, theo định lí hai mặt phẳng vuông góc. a phải nằm trong (P) và vuông góc giao tuyến d.\n\n**Kiểm lỗi**\n\nNếu quên điều kiện đường a vuông góc với giao tuyến, đọc **Kiến thức 4.4**: với hai mặt vuông góc, a phải thuộc một mặt và vuông góc giao tuyến mới suy ra a vuông góc mặt kia. Thử **Bài luyện 49** và **Bài luyện 61**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2827,11 +3802,17 @@
       "TOP16-O18"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng định lí hai mặt phẳng vuông góc và giao tuyến."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2847,13 +3828,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, a song song (Q)."
+      },
+      {
+        "id": "B",
+        "text": "Có, a vuông góc (Q)."
+      },
+      {
+        "id": "C",
+        "text": "Không, a phải trùng d."
+      },
+      {
+        "id": "D",
+        "text": "Không đủ dù a vuông góc d."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T19",
-    "content_version": "TOP16-BANK-CP67-20261126-T19",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T19",
     "stem": "Lăng trụ đứng có cạnh bên 7 cm, chiều cao bao nhiêu?",
-    "answer_key": "7 cm.",
+    "answer_key": "7 cm",
     "worked_solution": "7 cm, vì cạnh bên vuông góc mặt đáy.\n\n**Kiểm lỗi**\n\nNếu cho rằng lăng trụ đứng có đáy bất kì cũng là lăng trụ đều, đọc **Kiến thức 4.5**: lăng trụ đều phải có đáy là đa giác đều, còn chiều cao lăng trụ đứng bằng cạnh bên. Thử **Bài luyện 50** và **Bài luyện 62**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2863,11 +3863,17 @@
       "TOP16-O19"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Cạnh bên lăng trụ đứng vuông góc đáy."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2883,13 +3889,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "14 cm"
+      },
+      {
+        "id": "B",
+        "text": "3,5 cm"
+      },
+      {
+        "id": "C",
+        "text": "7 cm"
+      },
+      {
+        "id": "D",
+        "text": "Không xác định được."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T20",
-    "content_version": "TOP16-BANK-CP67-20261126-T20",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T20",
     "stem": "Chóp đều đáy vuông cạnh \\(6, h=4\\). Đường cao của mặt bên qua trung điểm cạnh đáy dài bao nhiêu?",
-    "answer_key": "5.",
+    "answer_key": "5",
     "worked_solution": "5, do tam giác vuông có hai cạnh 4 và 3.\n\n**Kiểm lỗi**\n\nNếu nhầm cạnh bên SA hay đường cao mặt bên với chiều cao SO, đọc **Kiến thức 4.6**: chóp đều có SO vuông góc đáy, còn đường cao mặt bên tới trung điểm một cạnh đáy. Thử **Bài luyện 57** và **Bài luyện 63**, vẽ hai tam giác vuông khác nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2899,11 +3924,17 @@
       "TOP16-O20"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Xét tam giác vuông tạo bởi chiều cao và nửa cạnh đáy."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2919,13 +3950,32 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "7"
+      },
+      {
+        "id": "B",
+        "text": "4"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP16-T21",
-    "content_version": "TOP16-BANK-CP67-20261126-T21",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T21",
     "stem": "Hai đáy hình vuông cạnh 6 và 3 có tỉ số diện tích đáy lớn : đáy nhỏ?",
-    "answer_key": "\\(4:1\\).",
+    "answer_key": "4:1",
     "worked_solution": "\\(36:9 = 4:1\\).\n\n**Kiểm lỗi**\n\nNếu lấy tỉ số cạnh \\(6:3=2:1\\) làm ngay tỉ số diện tích, đọc **Kiến thức 4.7**: hai đáy chóp cụt đều đồng dạng nên tỉ số diện tích là bình phương tỉ số cạnh tương ứng. Thử **Bài luyện 52** và **Bài luyện 64**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2935,11 +3985,17 @@
       "TOP16-O21"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Bình phương tỉ số cạnh hai hình vuông."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -2955,7 +4011,26 @@
       "revision_scope": "CP67_THREE_WAY_FIRST_TRY_RECONCILIATION; BANK_ASSUMPTIONS_AND_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "4:1"
+      },
+      {
+        "id": "B",
+        "text": "2:1"
+      },
+      {
+        "id": "C",
+        "text": "1:4"
+      },
+      {
+        "id": "D",
+        "text": "8:1"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP17-T01",
