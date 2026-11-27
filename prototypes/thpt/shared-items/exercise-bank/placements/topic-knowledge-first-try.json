@@ -1117,280 +1117,640 @@
     "role": "TOPIC_FIRST_TRY",
     "order": 1,
     "item_id": "THPT-TOP18-T01",
-    "outcome_id": "TOP18-O01 --"
+    "outcome_id": "TOP18-O01",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O01 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 2,
     "item_id": "THPT-TOP18-T02",
-    "outcome_id": "TOP18-O02 --"
+    "outcome_id": "TOP18-O02",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O02 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 3,
     "item_id": "THPT-TOP18-T03",
-    "outcome_id": "TOP18-O03 --"
+    "outcome_id": "TOP18-O03",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O03 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 4,
     "item_id": "THPT-TOP18-T04",
-    "outcome_id": "TOP18-O04 --"
+    "outcome_id": "TOP18-O04",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O04 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 5,
     "item_id": "THPT-TOP18-T05",
-    "outcome_id": "TOP18-O05 --"
+    "outcome_id": "TOP18-O05",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O05 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 6,
     "item_id": "THPT-TOP18-T06",
-    "outcome_id": "TOP18-O06 --"
+    "outcome_id": "TOP18-O06",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O06 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 7,
     "item_id": "THPT-TOP18-T07",
-    "outcome_id": "TOP18-O07 --"
+    "outcome_id": "TOP18-O07",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O07 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 8,
     "item_id": "THPT-TOP18-T08",
-    "outcome_id": "TOP18-O08 --"
+    "outcome_id": "TOP18-O08",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O08 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 9,
     "item_id": "THPT-TOP18-T09",
-    "outcome_id": "TOP18-O09 --"
+    "outcome_id": "TOP18-O09",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O09 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 10,
     "item_id": "THPT-TOP18-T10",
-    "outcome_id": "TOP18-O10 --"
+    "outcome_id": "TOP18-O10",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O10 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 11,
     "item_id": "THPT-TOP18-T11",
-    "outcome_id": "TOP18-O11 --"
+    "outcome_id": "TOP18-O11",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O11 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 12,
     "item_id": "THPT-TOP18-T12",
-    "outcome_id": "TOP18-O12 --"
+    "outcome_id": "TOP18-O12",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O12 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 13,
     "item_id": "THPT-TOP18-T13",
-    "outcome_id": "TOP18-O13 --"
+    "outcome_id": "TOP18-O13",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O13 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 14,
     "item_id": "THPT-TOP18-T14",
-    "outcome_id": "TOP18-O14 --"
+    "outcome_id": "TOP18-O14",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O14 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 15,
     "item_id": "THPT-TOP18-T15",
-    "outcome_id": "TOP18-O15 --"
+    "outcome_id": "TOP18-O15",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O15 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 16,
     "item_id": "THPT-TOP18-T16",
-    "outcome_id": "TOP18-O16 --"
+    "outcome_id": "TOP18-O16",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O16 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 17,
     "item_id": "THPT-TOP18-T17",
-    "outcome_id": "TOP18-O17 --"
+    "outcome_id": "TOP18-O17",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O17 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 18,
     "item_id": "THPT-TOP18-T18",
-    "outcome_id": "TOP18-O18 --"
+    "outcome_id": "TOP18-O18",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O18 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 19,
     "item_id": "THPT-TOP18-T19",
-    "outcome_id": "TOP18-O19 --"
+    "outcome_id": "TOP18-O19",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O19 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 20,
     "item_id": "THPT-TOP18-T20",
-    "outcome_id": "TOP18-O20 --"
+    "outcome_id": "TOP18-O20",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O20 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 21,
     "item_id": "THPT-TOP18-T21",
-    "outcome_id": "TOP18-O21 --"
+    "outcome_id": "TOP18-O21",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O21 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 22,
     "item_id": "THPT-TOP18-T22",
-    "outcome_id": "TOP18-O22 --"
+    "outcome_id": "TOP18-O22",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O22 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 23,
     "item_id": "THPT-TOP18-T24",
-    "outcome_id": "TOP18-O24 --"
+    "outcome_id": "TOP18-O24",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O24 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 24,
     "item_id": "THPT-TOP18-T25",
-    "outcome_id": "TOP18-O25 --"
+    "outcome_id": "TOP18-O25",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O25 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 25,
     "item_id": "THPT-TOP18-T26",
-    "outcome_id": "TOP18-O26 --"
+    "outcome_id": "TOP18-O26",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O26 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 26,
     "item_id": "THPT-TOP18-T27",
-    "outcome_id": "TOP18-O27 --"
+    "outcome_id": "TOP18-O27",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O27 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 27,
     "item_id": "THPT-TOP18-T28",
-    "outcome_id": "TOP18-O28 --"
+    "outcome_id": "TOP18-O28",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O28 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 28,
     "item_id": "THPT-TOP18-T29",
-    "outcome_id": "TOP18-O29 --"
+    "outcome_id": "TOP18-O29",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O29 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 29,
     "item_id": "THPT-TOP18-T30",
-    "outcome_id": "TOP18-O30 --"
+    "outcome_id": "TOP18-O30",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O30 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 30,
     "item_id": "THPT-TOP18-T31",
-    "outcome_id": "TOP18-O31 --"
+    "outcome_id": "TOP18-O31",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O31 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 31,
     "item_id": "THPT-TOP18-T32",
-    "outcome_id": "TOP18-O32 --"
+    "outcome_id": "TOP18-O32",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O32 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 32,
     "item_id": "THPT-TOP18-T33",
-    "outcome_id": "TOP18-O33 --"
+    "outcome_id": "TOP18-O33",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O33 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 33,
     "item_id": "THPT-TOP18-T34",
-    "outcome_id": "TOP18-O34 --"
+    "outcome_id": "TOP18-O34",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O34 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 34,
     "item_id": "THPT-TOP18-T35",
-    "outcome_id": "TOP18-O35 --"
+    "outcome_id": "TOP18-O35",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O35 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 35,
     "item_id": "THPT-TOP18-T36",
-    "outcome_id": "TOP18-O36 --"
+    "outcome_id": "TOP18-O36",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O36 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 36,
     "item_id": "THPT-TOP18-T37",
-    "outcome_id": "TOP18-O37 --"
+    "outcome_id": "TOP18-O37",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O37 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 37,
     "item_id": "THPT-TOP18-T38",
-    "outcome_id": "TOP18-O38 --"
+    "outcome_id": "TOP18-O38",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O38 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 38,
     "item_id": "THPT-TOP18-T39",
-    "outcome_id": "TOP18-O39 --"
+    "outcome_id": "TOP18-O39",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O39 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 39,
     "item_id": "THPT-TOP18-T40",
-    "outcome_id": "TOP18-O40 --"
+    "outcome_id": "TOP18-O40",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O40 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD18:KNOWLEDGE_FIRST_TRY",
     "role": "TOPIC_FIRST_TRY",
     "order": 40,
     "item_id": "THPT-TOP18-T23",
-    "outcome_id": "TOP18-O23 --"
+    "outcome_id": "TOP18-O23",
+    "source_context": {
+      "legacy_outcome_id": "TOP18-O23 --"
+    },
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD19:KNOWLEDGE_FIRST_TRY",
