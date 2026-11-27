@@ -1,20 +1,26 @@
 [
   {
     "item_id": "THPT-G11-SUPP-E01-C01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một mô hình có số lượng ban đầu 200, tăng 5% so với năm trước vào mỗi năm. Tính giá trị mô hình sau hai năm.",
-    "answer_key": "220,5 (giá trị mô hình).",
-    "worked_solution": "Mô hình tăng theo tỉ lệ cố định mỗi năm có hệ số 1+0,05=1,05. Sau hai năm, giá trị là 200·1,05²=220,5. Nếu đại lượng là số cá thể thực, cần quy ước làm tròn và kiểm giả định mô hình.",
+    "content_version": "G11-SUPP-XG6-20261127-E01-C01",
+    "stem": "Một mô hình có giá trị ban đầu 200, tăng 5% so với năm trước vào mỗi năm. Giá trị sau hai năm là bao nhiêu?",
+    "answer_key": "\\(220{,}5\\)",
+    "worked_solution": "Mỗi năm nhân với \\(1{,}05\\). Sau hai năm: \\(200\\cdot1{,}05^2=220{,}5\\). Nếu là số cá thể thực, cần quy ước làm tròn và kiểm giả định mô hình.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E01-EXPONENTIAL_MODEL"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Mỗi năm nhân với hệ số nào?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -26,24 +32,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(220\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(220{,}5\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(210\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(242\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E01-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với A₀>0, r>−1 và t là số năm không âm, hai mô hình A₀(1+r)^t và A₀e^(rt) có luôn bằng nhau khi cùng r không? Nếu thay r trong số mũ của mô hình liên tục bằng k, chọn k thế nào để hai mô hình khớp?",
-    "answer_key": "Không; để hai mô hình khớp tại các năm nguyên, chọn k=ln(1+r) trong A₀e^(kt).",
-    "worked_solution": "Với A₀>0 và r>−1, mô hình tăng theo từng năm là A₀(1+r)^t. Mô hình tăng liên tục là A₀e^(kt). Vì (1+r)^t=e^(t ln(1+r)), chọn k=ln(1+r) để hai công thức khớp. Nếu đặt k=r thì nói chung không bằng nhau.",
+    "content_version": "G11-SUPP-XG6-20261127-E01-P01",
+    "stem": "Với \\(A_0>0,\\ r>-1\\) và t là số năm không âm, so sánh \\(A_0(1+r)^t\\) với \\(A_0e^{rt}\\). Chọn kết luận đúng về hệ số k để \\(A_0e^{kt}\\) khớp mô hình thứ nhất.",
+    "answer_key": "Không luôn bằng nhau; \\(k=\\ln(1+r)\\).",
+    "worked_solution": "Vì \\((1+r)^t=e^{t\\ln(1+r)}\\), chọn \\(k=\\ln(1+r)\\). Hai công thức khi đó khớp ở mọi thời điểm t mà mô hình được xét, đặc biệt ở các năm nguyên. Nếu đặt k=r, nói chung không bằng nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E01-EXPONENTIAL_MODEL"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Viết lũy thừa cơ số 1+r dưới dạng hàm mũ cơ số e."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -55,24 +86,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không luôn bằng nhau; \\(k=\\ln(1+r)\\)."
+      },
+      {
+        "id": "B",
+        "text": "Luôn bằng nhau; \\(k=r\\)."
+      },
+      {
+        "id": "C",
+        "text": "Không luôn bằng nhau; \\(k=1+r\\)."
+      },
+      {
+        "id": "D",
+        "text": "Không luôn bằng nhau; \\(k=\\ln r\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E01-C02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Sau mấy chu kì bán rã vật còn 1/8 khối lượng đầu?",
+    "content_version": "G11-SUPP-XG6-20261127-E01-C02",
+    "stem": "Sau mấy chu kì bán rã, vật còn một phần tám khối lượng ban đầu?",
     "answer_key": "3 chu kì.",
-    "worked_solution": "3 chu kì do (1/2)^3=1/8.",
+    "worked_solution": "Sau n chu kì, tỉ lệ còn lại là \\((1/2)^n\\). Vì \\((1/2)^3=1/8\\), cần 3 chu kì.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E01-HALF_LIFE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Mỗi chu kì nhân khối lượng còn lại với một phần hai."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -84,24 +140,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 chu kì."
+      },
+      {
+        "id": "B",
+        "text": "4 chu kì."
+      },
+      {
+        "id": "C",
+        "text": "8 chu kì."
+      },
+      {
+        "id": "D",
+        "text": "3 chu kì."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E01-P02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Chu kì bán rã 10 năm; sau 15 năm còn tỉ lệ khối lượng nào?",
-    "answer_key": "1/(2√2)≈0,3536 (khoảng 35,36% khối lượng ban đầu).",
-    "worked_solution": "Theo mô hình bán rã, tỉ lệ khối lượng còn lại sau t năm là 2^(−t/T), trong đó T=10 năm. Tại t=15, tỉ lệ là 2^(−1,5)=1/(2√2)≈0,3536. Thời gian không nhất thiết là số nguyên chu kì.",
+    "content_version": "G11-SUPP-XG6-20261127-E01-P02",
+    "stem": "Chu kì bán rã là 10 năm. Sau 15 năm, khối lượng còn lại bằng bao nhiêu phần khối lượng ban đầu?",
+    "answer_key": "\\(\\frac{1}{2\\sqrt2}\\approx0{,}3536\\)",
+    "worked_solution": "Tỉ lệ còn lại theo mô hình là \\(2^{-t/T}\\). Với \\(t=15,\\ T=10\\), được \\(2^{-3/2}=\\frac1{2\\sqrt2}\\approx0{,}3536\\) (khoảng 35,36%). Thời gian không nhất thiết là số nguyên chu kì.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E01-HALF_LIFE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Thời gian 15 năm tương ứng bao nhiêu chu kì?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -113,24 +194,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\frac14\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\frac12\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\frac{1}{2\\sqrt2}\\approx0{,}3536\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\frac{1}{\\sqrt2}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E01-C03",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "[H+]=10^(-6) mol/L, theo công thức pH=-log10[H+] có pH bao nhiêu?",
-    "answer_key": "pH=6.",
-    "worked_solution": "6, giả thiết nồng độ dương.",
+    "content_version": "G11-SUPP-XG6-20261127-E01-C03",
+    "stem": "Nồng độ ion hiđrô \\([\\mathrm H^+]=10^{-6}\\) mol/L. Theo mô hình \\(\\mathrm{pH}=-\\log_{10}[\\mathrm H^+]\\), pH bằng bao nhiêu?",
+    "answer_key": "6.",
+    "worked_solution": "\\(\\mathrm{pH}=-\\log_{10}(10^{-6})=-(-6)=6\\). Nồng độ dương nên logarit xác định.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E01-PH_SCALE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Logarit cơ số 10 của một lũy thừa cơ số 10 bằng số mũ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -142,24 +248,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "−6."
+      },
+      {
+        "id": "B",
+        "text": "6."
+      },
+      {
+        "id": "C",
+        "text": "0,6."
+      },
+      {
+        "id": "D",
+        "text": "60."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E01-P03",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Theo mô hình pH=−log₁₀[H⁺] (nồng độ tính bằng mol/L), pH tăng từ 4 lên 6 thì nồng độ ion H⁺ giảm bao nhiêu lần?",
-    "answer_key": "Nồng độ mới bằng 1/100 nồng độ ban đầu; giảm 100 lần.",
-    "worked_solution": "Theo mô hình pH=−log₁₀[H⁺], nồng độ ban đầu là 10⁻⁴ mol/L, nồng độ sau là 10⁻⁶ mol/L. Tỉ số cũ/mới bằng 10²=100.",
+    "content_version": "G11-SUPP-XG6-20261127-E01-P03",
+    "stem": "Theo mô hình \\(\\mathrm{pH}=-\\log_{10}[\\mathrm H^+]\\) (nồng độ tính bằng mol/L), pH tăng từ 4 lên 6. Nồng độ ion hiđrô thay đổi thế nào?",
+    "answer_key": "Giảm 100 lần.",
+    "worked_solution": "Nồng độ cũ là \\(10^{-4}\\) mol/L, nồng độ mới là \\(10^{-6}\\) mol/L. Tỉ số cũ/mới bằng \\(10^2=100\\). pH tăng thì nồng độ giảm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E01-PH_SCALE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tính nồng độ tương ứng với mỗi giá trị pH rồi lấy tỉ số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -171,24 +302,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giảm 100 lần."
+      },
+      {
+        "id": "B",
+        "text": "Tăng 100 lần."
+      },
+      {
+        "id": "C",
+        "text": "Giảm 2 lần."
+      },
+      {
+        "id": "D",
+        "text": "Giảm 10 lần."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E01-C04",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Mô hình M=log10(I/S), tỉ số I/S=10^5. Tìm M.",
-    "answer_key": "M=5.",
-    "worked_solution": "5.",
+    "content_version": "G11-SUPP-XG6-20261127-E01-C04",
+    "stem": "Theo mô hình \\(M=\\log_{10}(I/S)\\), biết \\(I/S=10^5\\). Tìm M.",
+    "answer_key": "5.",
+    "worked_solution": "\\(M=\\log_{10}(10^5)=5\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E01-RICHTER_SCALE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Xác định số mũ của 10 trong tỉ số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -200,24 +356,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "50."
+      },
+      {
+        "id": "B",
+        "text": "−5."
+      },
+      {
+        "id": "C",
+        "text": "100 000."
+      },
+      {
+        "id": "D",
+        "text": "5."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E01-P04",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Theo mô hình M=log₁₀(I/S), hai biên độ dương I₁,I₂ được so với cùng chuẩn S>0, biết I₂/I₁=10^0,7. Tính M₂−M₁.",
-    "answer_key": "Chênh lệch 0,7.",
-    "worked_solution": "Với cùng biên độ chuẩn S>0, M₂−M₁=log₁₀(I₂/S)−log₁₀(I₁/S)=log₁₀(I₂/I₁)=log₁₀(10^0,7)=0,7. Đây là chênh lệch số đo theo mô hình biên độ, không suy trực tiếp tỉ số năng lượng.",
+    "content_version": "G11-SUPP-XG6-20261127-E01-P04",
+    "stem": "Theo mô hình \\(M=\\log_{10}(I/S)\\), hai biên độ dương \\(I_1,I_2\\) được so với cùng chuẩn \\(S>0\\). Biết \\(I_2/I_1=10^{0{,}7}\\). Tính \\(M_2-M_1\\).",
+    "answer_key": "0,7.",
+    "worked_solution": "\\(M_2-M_1=\\log_{10}(I_2/S)-\\log_{10}(I_1/S)=\\log_{10}(I_2/I_1)=0{,}7\\). Đây là chênh lệch theo mô hình biên độ, không suy trực tiếp tỉ số năng lượng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E01-RICHTER_SCALE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Hiệu hai logarit cùng cơ số là logarit của tỉ số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -229,24 +410,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "7."
+      },
+      {
+        "id": "B",
+        "text": "−0,7."
+      },
+      {
+        "id": "C",
+        "text": "0,7."
+      },
+      {
+        "id": "D",
+        "text": "0,07."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E01-C05",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "I/I0=100, mức L=10log10(I/I0) bằng bao nhiêu?",
+    "content_version": "G11-SUPP-XG6-20261127-E01-C05",
+    "stem": "Theo mô hình \\(L=10\\log_{10}(I/I_0)\\), biết \\(I/I_0=100\\). Mức âm L bằng bao nhiêu?",
     "answer_key": "20 dB.",
-    "worked_solution": "20 dB vì 10·2=20.",
+    "worked_solution": "\\(L=10\\log_{10}100=10\\cdot2=20\\) dB.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E01-DECIBEL_SCALE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Viết 100 thành lũy thừa của 10 và chú ý hệ số ngoài logarit."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -258,24 +464,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 dB."
+      },
+      {
+        "id": "B",
+        "text": "20 dB."
+      },
+      {
+        "id": "C",
+        "text": "100 dB."
+      },
+      {
+        "id": "D",
+        "text": "10 dB."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E01-P05",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Theo mô hình L=10log₁₀(I/I₀) với cùng cường độ chuẩn I₀, mức âm tăng 30 dB. Tìm tỉ số cường độ mới/cũ.",
+    "content_version": "G11-SUPP-XG6-20261127-E01-P05",
+    "stem": "Theo mô hình \\(L=10\\log_{10}(I/I_0)\\) với cùng cường độ chuẩn \\(I_0>0\\), mức âm tăng 30 dB. Tỉ số cường độ mới/cũ bằng bao nhiêu?",
     "answer_key": "1000.",
-    "worked_solution": "Với cùng cường độ chuẩn I₀>0, L₂−L₁=10log₁₀(I₂/I₁)=30. Suy ra log₁₀(I₂/I₁)=3 và I₂/I₁=10³=1000.",
+    "worked_solution": "\\(L_2-L_1=10\\log_{10}(I_2/I_1)=30\\). Suy ra \\(\\log_{10}(I_2/I_1)=3\\) và \\(I_2/I_1=10^3=1000\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E01-DECIBEL_SCALE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Lấy hiệu hai mức âm rồi cô lập logarit của tỉ số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -287,24 +518,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "1000."
+      },
+      {
+        "id": "B",
+        "text": "30."
+      },
+      {
+        "id": "C",
+        "text": "3."
+      },
+      {
+        "id": "D",
+        "text": "100."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E01-P06",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Ngoại suy quần thể tăng 2% mỗi năm suốt 100 năm: nêu 2 giả định cần kiểm.",
-    "answer_key": "Ví dụ: tỉ lệ tăng hằng năm ổn định; nguồn lực và môi trường cho phép mô hình tiếp tục tăng trong thời gian dài. Chấp nhận hai giả định hợp lí khác có giải thích.",
-    "worked_solution": "Tốc độ tăng bất biến và môi trường/nguồn lực không ràng buộc; thời gian, di cư, dịch bệnh và sai số có thể làm kết quả thực tế khác mô hình.",
+    "content_version": "G11-SUPP-XG6-20261127-E01-P06",
+    "stem": "Một mô hình ngoại suy quần thể tăng 2% mỗi năm suốt 100 năm. Cặp giả định nào cần kiểm tra để đánh giá tính phù hợp của mô hình?",
+    "answer_key": "Tỉ lệ tăng ổn định; nguồn lực và môi trường cho phép xu hướng tăng tiếp tục.",
+    "worked_solution": "Công thức lặp nhân giả định tỉ lệ tăng ổn định. Trong 100 năm, nguồn lực, môi trường, di cư hoặc dịch bệnh có thể làm thay đổi tỉ lệ đó. Vì vậy phép tính đúng chưa đủ để bảo đảm dự báo phù hợp.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E01-MODEL_ASSUMPTIONS"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Mô hình tăng theo tỉ lệ không đổi có thể sai khi điều kiện thực tế thay đổi như thế nào?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -316,24 +572,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Số lượng tăng thêm hằng năm luôn bằng nhau; tỉ lệ tăng không cần kiểm."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ cần số lượng ban đầu dương và thời gian đủ dài."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ cần phép tính đúng; nguồn lực và môi trường không ảnh hưởng."
+      },
+      {
+        "id": "D",
+        "text": "Tỉ lệ tăng ổn định; nguồn lực và môi trường cho phép xu hướng tăng tiếp tục."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E02-C01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "G11-SUPP-XG6-20261127-E02-C01",
     "stem": "Lăng trụ tam giác có bao nhiêu mặt đáy và bao nhiêu mặt bên?",
-    "answer_key": "2 mặt đáy tam giác; 3 mặt bên.",
-    "worked_solution": "2 đáy tam giác bằng nhau và 3 mặt bên hình bình hành.",
+    "answer_key": "2 mặt đáy tam giác và 3 mặt bên.",
+    "worked_solution": "Hai đáy là hai tam giác bằng nhau nằm trên hai mặt phẳng song song. Mỗi cạnh đáy ứng với một mặt bên hình bình hành, nên có 3 mặt bên.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E02-NET_CONSTRUCTION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Đếm hai tam giác song song và số cạnh của mỗi tam giác."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -345,24 +626,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 mặt đáy và 3 mặt bên."
+      },
+      {
+        "id": "B",
+        "text": "2 mặt đáy và 4 mặt bên."
+      },
+      {
+        "id": "C",
+        "text": "2 mặt đáy tam giác và 3 mặt bên."
+      },
+      {
+        "id": "D",
+        "text": "3 mặt đáy và 2 mặt bên."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E02-P01",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Làm thùng không nắp từ bìa, điều kiện nào cần kiểm trước khi cắt/dán?",
-    "answer_key": "Ví dụ: bỏ mặt nắp, kiểm kích thước và vị trí cạnh ghép, kiểm các mặt gấp thành thùng không chồng lên nhau.",
-    "worked_solution": "Không tạo nắp, cặp cạnh ghép đúng chiều dài/vị trí, các mặt có thể khép mà không chồng sai.",
+    "content_version": "G11-SUPP-XG6-20261127-E02-P01",
+    "stem": "Trước khi cắt và dán bìa làm một chiếc thùng không nắp, cách kiểm tra nào đầy đủ nhất?",
+    "answer_key": "Bỏ mặt nắp, đối chiếu chiều dài và vị trí các cạnh ghép, kiểm tra các mặt gấp không chồng lên nhau.",
+    "worked_solution": "Thùng không nắp phải có đủ mặt cần thiết nhưng không có nắp; các cạnh ghép tương ứng cần khớp chiều dài và vị trí. Khi gấp, các mặt không được chồng lên nhau sai cấu trúc.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E02-NET_CONSTRUCTION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Hình khai triển phải gấp được thành đúng chiếc thùng, không chỉ đủ diện tích."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -374,24 +680,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ cần bỏ mặt nắp; các cạnh ghép có thể có chiều dài tùy ý."
+      },
+      {
+        "id": "B",
+        "text": "Bỏ mặt nắp, đối chiếu chiều dài và vị trí các cạnh ghép, kiểm tra các mặt gấp không chồng lên nhau."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ cần tổng diện tích các mặt đúng, không cần kiểm cách gấp."
+      },
+      {
+        "id": "D",
+        "text": "Giữ cả mặt nắp rồi kiểm chiều dài cạnh ghép."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E02-C02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cọc cao 2 m vuông góc nền ngang, bóng cọc dài 2 m. Giả sử tia sáng thẳng, tính góc giữa tia sáng và mặt nền.",
-    "answer_key": "45°.",
-    "worked_solution": "Cọc vuông góc nền ngang nên chiều cao và bóng tạo hai cạnh góc vuông dài 2 m. Góc nhọn θ giữa tia sáng và nền có tan θ=2/2=1, suy ra θ=45°.",
+    "content_version": "G11-SUPP-XG6-20261127-E02-C02",
+    "stem": "Cọc cao 2 m vuông góc nền ngang, bóng dài 2 m. Giả sử tia sáng thẳng, góc giữa tia sáng và nền bằng bao nhiêu?",
+    "answer_key": "\\(45^\\circ\\)",
+    "worked_solution": "Cọc và bóng là hai cạnh góc vuông. Với góc \\(\\theta\\) giữa tia sáng và nền, \\(\\tan\\theta=2/2=1\\), suy ra \\(\\theta=45^\\circ\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E02-LINE_PLANE_MEASURE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng tỉ số giữa chiều cao cọc và chiều dài bóng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -403,24 +734,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(45^\\circ\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(30^\\circ\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(60^\\circ\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(90^\\circ\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E02-P02",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cọc cao 1 m vuông góc nền ngang, bóng dài 3 m. Với θ là góc giữa tia sáng và nền, học sinh ghi sin θ=1/3. Sửa và giải thích.",
-    "answer_key": "tan θ=1/3; sin θ=1/√10.",
-    "worked_solution": "Cọc và bóng tạo tam giác vuông; cạnh đối dài 1 m, cạnh kề 3 m, cạnh huyền √(1²+3²)=√10 m. Do đó tan θ=1/3, sin θ=1/√10. Sai lầm là dùng cạnh kề thay cho cạnh huyền.",
+    "content_version": "G11-SUPP-XG6-20261127-E02-P02",
+    "stem": "Cọc cao 1 m vuông góc nền ngang, bóng dài 3 m. Với \\(\\theta\\) là góc giữa tia sáng và nền, một học sinh viết \\(\\sin\\theta=1/3\\). Cách sửa nào đúng?",
+    "answer_key": "\\(\\tan\\theta=\\frac13,\\quad\\sin\\theta=\\frac1{\\sqrt{10}}\\)",
+    "worked_solution": "Cạnh đối dài 1 m, cạnh kề dài 3 m, cạnh huyền dài \\(\\sqrt{1^2+3^2}=\\sqrt{10}\\) m. Vì thế \\(\\tan\\theta=\\frac13\\) và \\(\\sin\\theta=\\frac1{\\sqrt{10}}\\). Bạn đã dùng cạnh kề thay cho cạnh huyền.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E02-LINE_PLANE_MEASURE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Phân biệt cạnh kề với cạnh huyền trong tam giác vuông."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -432,24 +788,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\sin\\theta=\\frac13,\\quad\\tan\\theta=\\frac1{\\sqrt{10}}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\tan\\theta=3,\\quad\\sin\\theta=\\frac3{\\sqrt{10}}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\sin\\theta=\\tan\\theta=\\frac13\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\tan\\theta=\\frac13,\\quad\\sin\\theta=\\frac1{\\sqrt{10}}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E02-C03",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai tia đo góc phẳng nhị diện phải quan hệ với giao tuyến d thế nào?",
-    "answer_key": "Hai tia nằm trong hai nửa mặt phẳng của nhị diện, cùng gốc H∈d và vuông góc d.",
-    "worked_solution": "Chọn H trên cạnh nhị diện d. Trong mỗi nửa mặt phẳng của nhị diện, dựng một tia gốc H vuông góc d. Góc giữa hai tia đó là góc phẳng nhị diện.",
+    "content_version": "G11-SUPP-XG6-20261127-E02-C03",
+    "stem": "Hai tia xác định góc phẳng của nhị diện phải thỏa điều kiện nào đối với cạnh nhị diện d?",
+    "answer_key": "Cùng gốc trên d, thuộc hai nửa mặt phẳng của nhị diện và cùng vuông góc d.",
+    "worked_solution": "Chọn H thuộc d. Dựng trong mỗi nửa mặt phẳng một tia gốc H vuông góc d. Góc giữa hai tia này là góc phẳng nhị diện.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E02-DIHEDRAL_MEASURE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Chọn một điểm trên cạnh nhị diện rồi dựng tia trong từng nửa mặt phẳng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -461,24 +842,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ cần nằm trong hai nửa mặt phẳng, gốc tùy ý."
+      },
+      {
+        "id": "B",
+        "text": "Cùng gốc trên d, nhưng chỉ một tia cần vuông góc d."
+      },
+      {
+        "id": "C",
+        "text": "Cùng gốc trên d, thuộc hai nửa mặt phẳng của nhị diện và cùng vuông góc d."
+      },
+      {
+        "id": "D",
+        "text": "Hai tia song song d, mỗi tia thuộc một nửa mặt phẳng."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E02-P03",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Có thể lấy góc giữa hai đường chéo nhìn thấy trên hình phối cảnh để gọi là góc nhị diện?",
-    "answer_key": "Không; cần hai tia đúng điều kiện xác định góc phẳng nhị diện.",
-    "worked_solution": "Không. Chúng có thể không vuông góc giao tuyến, góc phối cảnh cũng không bảo toàn.",
+    "content_version": "G11-SUPP-XG6-20261127-E02-P03",
+    "stem": "Có thể luôn lấy góc giữa hai đường chéo nhìn thấy trên hình phối cảnh làm góc phẳng nhị diện không?",
+    "answer_key": "Không; phải chọn hai tia đúng điều kiện xác định góc phẳng nhị diện.",
+    "worked_solution": "Không. Các đường chéo có thể không cùng vuông góc cạnh nhị diện; ngoài ra góc biểu kiến trên hình phối cảnh không nhất thiết bằng góc thật. Phải dùng định nghĩa góc phẳng nhị diện.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E02-DIHEDRAL_MEASURE"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Một hình phối cảnh có bảo toàn góc thật không?"
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -490,24 +896,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, vì hình phối cảnh luôn bảo toàn góc."
+      },
+      {
+        "id": "B",
+        "text": "Không; phải chọn hai tia đúng điều kiện xác định góc phẳng nhị diện."
+      },
+      {
+        "id": "C",
+        "text": "Có, nếu hai đường chéo có cùng độ dài."
+      },
+      {
+        "id": "D",
+        "text": "Có, miễn hai đường chéo gặp nhau tại một điểm."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E02-C04",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Chóp có diện tích đáy 18cm², chiều cao 4cm; thể tích?",
+    "content_version": "G11-SUPP-XG6-20261127-E02-C04",
+    "stem": "Hình chóp có diện tích đáy 18 cm² và chiều cao 4 cm. Tính thể tích.",
     "answer_key": "24 cm³.",
-    "worked_solution": "(1/3)·18·4=24cm³.",
+    "worked_solution": "\\(V=\\frac13 S_{\\text{đáy}}h=\\frac13\\cdot18\\cdot4=24\\) cm³.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E02-VOLUME_MODEL"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Nhớ hệ số trong công thức thể tích hình chóp."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -519,24 +950,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "24 cm³."
+      },
+      {
+        "id": "B",
+        "text": "72 cm³."
+      },
+      {
+        "id": "C",
+        "text": "36 cm³."
+      },
+      {
+        "id": "D",
+        "text": "12 cm³."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E02-P04",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Lăng trụ có Sđáy=12cm², V=60cm³ thì chiều cao?",
+    "content_version": "G11-SUPP-XG6-20261127-E02-P04",
+    "stem": "Lăng trụ có diện tích đáy 12 cm², thể tích 60 cm³. Chiều cao bằng bao nhiêu?",
     "answer_key": "5 cm.",
-    "worked_solution": "h=V/Sđáy=5cm; không lấy 1/3.",
+    "worked_solution": "\\(V=S_{\\text{đáy}}h\\) nên \\(h=60/12=5\\) cm. Không dùng hệ số một phần ba của hình chóp.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E02-VOLUME_MODEL"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tách chiều cao từ công thức thể tích lăng trụ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -548,24 +1004,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "15 cm."
+      },
+      {
+        "id": "B",
+        "text": "0,2 cm."
+      },
+      {
+        "id": "C",
+        "text": "48 cm."
+      },
+      {
+        "id": "D",
+        "text": "5 cm."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E02-C05",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Vì sao nối A với A', B với B', C với C' khi dựng lăng trụ ABC.A'B'C'?",
-    "answer_key": "Vì đó là các cặp đỉnh tương ứng, tạo ba cạnh bên song song và bằng nhau.",
-    "worked_solution": "Đó là các đỉnh tương ứng của hai đáy và tạo các cạnh bên song song.",
+    "content_version": "G11-SUPP-XG6-20261127-E02-C05",
+    "stem": "Vì sao nối A với A′, B với B′, C với C′ khi dựng lăng trụ \\(ABC.A'B'C'\\)?",
+    "answer_key": "Đó là các cặp đỉnh tương ứng, tạo ba cạnh bên song song và bằng nhau.",
+    "worked_solution": "Nối các đỉnh tương ứng của hai đáy tạo các cạnh bên song song và bằng nhau. Cạnh bên chỉ vuông góc đáy nếu là lăng trụ đứng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E02-GEOGEBRA_REPRESENTATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Hai đáy của lăng trụ tương ứng qua một phép tịnh tiến."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -577,24 +1058,49 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Để tất cả cạnh bên vuông góc đáy trong mọi lăng trụ."
+      },
+      {
+        "id": "B",
+        "text": "Để các cạnh bên đôi một cắt nhau."
+      },
+      {
+        "id": "C",
+        "text": "Đó là các cặp đỉnh tương ứng, tạo ba cạnh bên song song và bằng nhau."
+      },
+      {
+        "id": "D",
+        "text": "Để tạo ba đường chéo của đáy."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-SUPP-E02-P05",
-    "content_version": "G11-SGK-SUPPLEMENT-P99-P109-R00_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Khi vẽ lăng trụ trên giấy, cạnh bị che khuất thường nên dùng nét nào?",
+    "content_version": "G11-SUPP-XG6-20261127-E02-P05",
+    "stem": "Khi vẽ lăng trụ trên giấy, cạnh bị che khuất thường được biểu diễn bằng nét nào?",
     "answer_key": "Nét đứt.",
-    "worked_solution": "Nét đứt, kết hợp nhãn rõ. Đừng kết luận vuông góc chỉ từ phối cảnh.",
+    "worked_solution": "Dùng nét đứt cho cạnh khuất, nét liền cho cạnh thấy và ghi nhãn đỉnh rõ. Không suy ra quan hệ vuông góc chỉ từ hình phối cảnh.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E02-GEOGEBRA_REPRESENTATION"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Cần phân biệt cạnh thấy và cạnh bị che khuất."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -606,7 +1112,26 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nét liền đậm như cạnh thấy."
+      },
+      {
+        "id": "B",
+        "text": "Nét đứt."
+      },
+      {
+        "id": "C",
+        "text": "Nét cong tùy ý."
+      },
+      {
+        "id": "D",
+        "text": "Không vẽ cạnh khuất trong mọi trường hợp."
+      }
+    ]
   },
   {
     "item_id": "THPT-G11-YR-TRIG-C01",
