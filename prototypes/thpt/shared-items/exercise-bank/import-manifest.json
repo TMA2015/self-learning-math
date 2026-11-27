@@ -24621,6 +24621,131 @@
         "limitations": "No fresh direct SGK/SBT PDF audit, independent NotebookLM verdict, browser/renderer/runtime QA. W03 material delta requires scoped review; 13 Written source changes and historical receipts remain distinct. Full outside-scope record comparison not completed; git changed-path comparison confined to exercise-bank and three existing source paths. Some legacy formula typography may remain; do not claim full Q18 or release clearance."
       },
       "handoff": "Stop after CD14; no merge/deploy, no runtime, RD1, Final Submit, Mastery, Firebase or Golden UI edits."
+    },
+    "exercise_completion_cp135_cp136": {
+      "scope": "Owner-directed CD15–16 exercise-bank authoring candidate; convert interaction and review Written references; stop after CD16",
+      "baseline": "ecc915f3d407eee781589bbb2ed2433da91fe8e0",
+      "head_before_manifest": "52923263f6937d58e81b21cb6285a6d400c7baeb",
+      "standard": "Q01–Q18 v3.2.0 X-G.5/X-G.6; owner issue #1090 and Draft #1091",
+      "status": "AUTHORING_BANK_CD15_CD16_CONTENT_CANDIDATE_SCOPED_DELTA_AND_RELEASE_PENDING",
+      "group_inventory": {
+        "unique": 179,
+        "interactive": 153,
+        "written": 26,
+        "choices": 612,
+        "practice_total": 136,
+        "practice_interactive": 110,
+        "vandung_placements": 43,
+        "vandung_reuses": 0,
+        "selfcheck_reuses": 43,
+        "placements": 222,
+        "outcomes": 43,
+        "new_distinct_coverage_items": 4,
+        "skill_mapping_pending": 0,
+        "overlap_with_cd01_cd14": 0,
+        "cumulative_unique_cd01_cd16": 1340,
+        "cumulative_interactive": 1181,
+        "cumulative_written": 159
+      },
+      "reports": [
+        {
+          "topic": "CD15",
+          "title": "Quan hệ song song trong không gian",
+          "unique": 93,
+          "interactive": 78,
+          "written": 15,
+          "practice": 71,
+          "practice_interactive": 56,
+          "vandung": 22,
+          "replay": 22,
+          "choices": 312,
+          "outcomes": 22,
+          "levels": {
+            "RECOGNIZE": 7,
+            "UNDERSTAND": 40,
+            "APPLY": 22,
+            "SYNTHESIS": 9
+          },
+          "groups": [
+            14,
+            14,
+            13,
+            14,
+            16
+          ],
+          "rubrics": {
+            "/4": 15
+          },
+          "new_items": [
+            "THPT-TOP15-P23",
+            "THPT-TOP15-P24",
+            "THPT-TOP15-P25",
+            "THPT-TOP15-P26"
+          ],
+          "math": "Incidence, unique plane, common intersection, coplanarity vs skew, distinct parallel lines and planes, plane-parallel sections, Thalès and ratio squared, projection degeneracy and area. Added four distinct tasks where O09/O13/O22 had fewer than two interactive practice items: intersecting base-edge lines SE; reverse section ratio 3:2; parallel section and projection 36 cm²; vertical rectangle projection to segment, area 0."
+        },
+        {
+          "topic": "CD16",
+          "title": "Quan hệ vuông góc trong không gian",
+          "unique": 86,
+          "interactive": 75,
+          "written": 11,
+          "practice": 65,
+          "practice_interactive": 54,
+          "vandung": 21,
+          "replay": 21,
+          "choices": 300,
+          "outcomes": 21,
+          "levels": {
+            "RECOGNIZE": 8,
+            "UNDERSTAND": 49,
+            "APPLY": 17,
+            "SYNTHESIS": 1
+          },
+          "groups": [
+            14,
+            15,
+            16,
+            20
+          ],
+          "rubrics": {
+            "/4": 11
+          },
+          "math": "Non-obtuse angle of lines, skew perpendicular lines, two intersecting directions for line-plane test, perpendicular projection and three-perpendicular-lines theorem with nondegenerate image, angle line-plane and dihedral versus non-obtuse plane angle, regular solids. Fixed malformed trailing ' --' on 21 first-try outcome mappings; B23-W02-ANCHOR stem, solution and rubric aligned: explicit counterexample AD,AA′ both perpendicular AB but meet at A, 4 points unchanged."
+        }
+      ],
+      "files": {
+        "items/cd15.json": "fc8636fbee1997b047211da22fcfbd841b1410be",
+        "items/cd16.json": "c99d21b72737c67304c2224950ce12cc6ad95fd3",
+        "items/g11-chiv.json": "e3c587f7c5ee9c3910298315a4f21ebb4390c0fc",
+        "items/g11-chvii.json": "67cf7626ac8dbfd8e36918e654cee17391b13290",
+        "items/topic-knowledge-first-try.json": "11fd518ac390709ee06f9b863d0cdd94430755ec",
+        "placements/topic-knowledge-first-try.json": "2e96bc92a253644cba9861659d198cd55b2408aa",
+        "placements/cd15.json": "2733e350f92c66971aea7942e741ed72773dc346",
+        "placements/cd16.json": "764afe0d17cd46cfd91a87216e7b268e82119ec8",
+        "written-references.json": "e4ea2145098ab644485f83bdd9501ffaab5d26fd"
+      },
+      "sources": [
+        {
+          "path": "prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+          "prior": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+          "blob": "5178686510902c4c24a2b2aface4e9476eba9e0f",
+          "sections": 1,
+          "outside_unchanged": true,
+          "changed_item": "THPT-G11-CHVII-B23-W02-ANCHOR",
+          "historical_editorial_reference": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+        }
+      ],
+      "qa": {
+        "choice_schema": "153/153 four distinct option texts/IDs, single correct key resolves, hint/skill/solution/source present, auto_grade=false; 179/179 unique IDs resolve",
+        "outcome_coverage": "43/43 outcomes have at least two INTERACTIVE practice placements, one Vận dụng and one canonical public replay; all 222 placements resolve",
+        "selfcheck": "CĐ15 expanded 8→22, CĐ16 8→21 by canonical practice ID reuse; AFTER_WHOLE_SUBMISSION, hints_before_submission=false, mastery=false; candidate only",
+        "written": "26 existing Written refs reviewed against exact source blocks and /4 rubrics, one actual prompt/solution/rubric mismatch corrected, no copies of Written bodies in bank",
+        "overlap": "Direct read of placements CD01–16: 1161 prior and 179 current IDs, intersection empty",
+        "outside_scope": "Record comparison against CP134: 4 G11 ChIV, 20 G11 ChVII, 350 KFT items, 371 KFT placements, 299 Written references outside scope unchanged; canonical source outside B23-W02-ANCHOR section byte-identical.",
+        "limitations": "No fresh direct SGK/SBT PDF audit, independent NotebookLM verdict, browser/renderer/runtime QA or whole-bank semantic equivalence certificate. Four new distinct questions and B23-W02-ANCHOR scope require academic delta review; existing historic source receipts unchanged. Candidate interaction does not establish written-proof competence. No assertion of CI PASS or RELEASE clearance."
+      },
+      "handoff": "Stop at CD16. Next CD17 only when directed by owner; no merge/deploy, no docs/runtime, RD1, Final Submit, Mastery, Firebase or Golden UI changes."
     }
   }
 }
