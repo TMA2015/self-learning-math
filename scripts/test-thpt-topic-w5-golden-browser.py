@@ -369,8 +369,16 @@ with sync_playwright() as pw:
                 }
                 # Signed refreshed inline TeX must be verified in its actual source mode.
                 targets = reported_display_formulas[topic]
-                if REFRESH and topic == "19":
-                    targets = [("3", "3-1", "[(a+b)^n=")] + targets
+                if REFRESH:
+                    # Legacy raw HTML oracle used two literal backslashes.
+                    # Signed inline TeX uses one. Keep both historical and
+                    # refreshed fixtures explicit; do not normalize source TeX.
+                    targets = {
+                        "19": [("3", "3-1", "[(a+b)^n="), ("3", "3-2", "[(a-b)^n="), ("3", "3-3", "[(1+r)^5=")],
+                        "20": [("2", "2-3", r"[P(A\cup B)=")],
+                        "21": [("2", "2-1", "[P(L)=")],
+                        "22": [("3", "3-1", "[R_g="), ("3", "3-2", "[IQR_g=")],
+                    }[topic]
                 for module_id, subtab_id, literal in targets:
                     page.locator('[data-topic-w1-module-tab="' + module_id + '"]').click()
                     page.locator('[data-topic-w1-subtab="' + subtab_id + '"]').click()
