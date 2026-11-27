@@ -10860,10 +10860,10 @@
   },
   {
     "item_id": "THPT-TOP07-KFT01",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT01",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT01",
     "stem": "Dãy \\(u_n=3n\\) được cho với \\(n\\in\\{1,2,3\\}\\). Dãy có các số hạng nào? Có \\(u_0\\) không?",
-    "answer_key": "3, 6, 9; không có u₀ trong miền chỉ số.",
-    "worked_solution": "Dãy gồm 3, 6, 9 và **không có \\(u_0\\)** vì 0 không thuộc miền chỉ số. Nếu em tính \\(u_0=0\\), hãy phân biệt giá trị của biểu thức đại số tại 0 với số hạng thực sự thuộc dãy.\n\n\n**Kiểm lỗi**\n\nNếu em tính thêm số hạng ở một chỉ số **ngoài tập đã cho**, em đang nhầm công thức đại số với miền chỉ số của dãy. Đọc lại **Kiến thức 1.1**, giải **Bài 2** (dãy hữu hạn không có số hạng thứ năm) và **Bài 1** (liệt kê đúng số hạng trong miền).",
+    "answer_key": "3, 6, 9; không có \\(u_0\\) trong miền chỉ số.",
+    "worked_solution": "Dãy gồm 3, 6, 9 và **không có \\(u_0\\)** vì 0 không thuộc miền chỉ số. Nếu em tính \\(u_0=0\\), hãy phân biệt giá trị của biểu thức đại số tại 0 với số hạng thực sự thuộc dãy.\n",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B05-SEQUENCE-DEFINITION"
@@ -10872,11 +10872,17 @@
       "TOP07-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Liệt kê đúng tập chỉ số đề cho."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10888,14 +10894,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(0;3;6;9;\\text{có }u_0\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(3;6;9;\\text{có }u_0=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(3;6;\\text{không có }u_0\\)"
+      },
+      {
+        "id": "D",
+        "text": "3, 6, 9; không có \\(u_0\\) trong miền chỉ số."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu em tính thêm số hạng ở một chỉ số **ngoài tập đã cho**, em đang nhầm công thức đại số với miền chỉ số của dãy. Đọc lại **Kiến thức 1.1**, giải **Bài 2** (dãy hữu hạn không có số hạng thứ năm) và **Bài 1** (liệt kê đúng số hạng trong miền)."
   },
   {
     "item_id": "THPT-TOP07-KFT02",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT02",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT02",
     "stem": "Với \\(u_n=4n-1\\), \\(n\\ge1\\), tính \\(u_6\\).",
     "answer_key": "\\(u_6=23\\).",
-    "worked_solution": "23; n bắt đầu từ 1 nhưng số hạng thứ sáu thế \\(n=6\\), không phải 5.\n\nNếu dùng n−1 vô cớ, phân biệt chỉ số của biểu thức với số lần tăng trong cấp số.\n\n\n**Kiểm lỗi**\n\nNếu thế sai chỉ số hoặc cho rằng một giá trị có thể đạt chỉ vì biểu thức tiến gần tới nó, đọc lại **Kiến thức 1.2** rồi làm **Bài 5** (đúng thứ tự chỉ số) và **Bài 6** (kiểm tra một giá trị có thực sự là số hạng hay không).",
+    "worked_solution": "23; n bắt đầu từ 1 nhưng số hạng thứ sáu thế \\(n=6\\), không phải 5.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B05-EXPLICIT-TERM"
@@ -10904,11 +10930,17 @@
       "TOP07-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Thế chỉ số 6 vào công thức."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10920,14 +10952,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(u_6=23\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(19\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(24\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(25\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu dùng n\\(-1\\) vô cớ, phân biệt chỉ số của biểu thức với số lần tăng trong cấp số.\n\n\nNếu thế sai chỉ số hoặc cho rằng một giá trị có thể đạt chỉ vì biểu thức tiến gần tới nó, đọc lại **Kiến thức 1.2** rồi làm **Bài 3** (đúng thứ tự chỉ số) và **Bài 7** (kiểm tra một giá trị có thực sự là số hạng hay không)."
   },
   {
     "item_id": "THPT-TOP07-KFT03",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT03",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT03",
     "stem": "(a) Cho \\(u_1=2,\\ u_{n+1}=u_n+4\\). Tính \\(u_3\\). (b) Cho \\(w_1=3,\\ w_{n+1}=3w_n-4\\). Tìm số không đổi c thỏa \\(c=3c-4\\), rồi dùng \\(v_n=w_n-c\\) tìm công thức tường minh và kiểm hệ thức truy hồi.",
     "answer_key": "(a) \\(u_3=10\\). (b) \\(c=2,\\ w_n=2+3^{n-1}\\); thỏa điều kiện đầu và truy hồi.",
-    "worked_solution": "(a) \\(u_2=6,\\ u_3=10\\); cần chạy truy hồi hai lần. (b) \\(c=2\\), nên \\(v_1=1,\\ v_{n+1}=3v_n\\). Do đó \\(v_n=3^{n-1}\\) và \\(w_n=2+3^{n-1}\\). Kiểm \\(w_1=3\\); với mọi \\(n\\ge1\\), \\(3w_n-4=3(2+3^{n-1})-4=2+3^n=w_{n+1}\\).\n\nNếu nhảy trực tiếp từ \\(u_1\\) đến \\(u_3\\), ghi hai mũi tên \\(1\\to2\\to3\\). Khi đổi biến, hãy kiểm điều kiện đầu và hệ thức truy hồi cho mọi chỉ số hợp lệ, không chỉ thử vài số đầu.\n\n\n**Kiểm lỗi**\n\nNếu bỏ qua điều kiện đầu hoặc nhảy một bước khi dùng hệ thức truy hồi, đọc lại **Kiến thức 1.3**, làm **Bài 8** (tính từng bước) rồi **Bài 11** (chứng minh công thức tường minh bằng dãy đã cho).",
+    "worked_solution": "(a) \\(u_2=6,\\ u_3=10\\); cần chạy truy hồi hai lần. (b) \\(c=2\\), nên \\(v_1=1,\\ v_{n+1}=3v_n\\). Do đó \\(v_n=3^{n-1}\\) và \\(w_n=2+3^{n-1}\\). Kiểm \\(w_1=3\\); với mọi \\(n\\ge1\\), \\(3w_n-4=3(2+3^{n-1})-4=2+3^n=w_{n+1}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B05-RECURRENCE"
@@ -10936,11 +10988,17 @@
       "TOP07-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Tính truy hồi từng bước, rồi chọn c để triệt hằng số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10952,14 +11010,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(u_3=10;c=2;w_n=2+3^n\\)"
+      },
+      {
+        "id": "B",
+        "text": "(a) \\(u_3=10\\). (b) \\(c=2,\\ w_n=2+3^{n-1}\\); thỏa điều kiện đầu và truy hồi."
+      },
+      {
+        "id": "C",
+        "text": "\\(u_3=6;c=2;w_n=2+3^{n-1}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(u_3=10;c=-2;w_n=-2+5\\cdot3^{n-1}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu nhảy trực tiếp từ \\(u_1\\) đến \\(u_3\\), ghi hai mũi tên \\(1\\to2\\to3\\). Khi đổi biến, hãy kiểm điều kiện đầu và hệ thức truy hồi cho mọi chỉ số hợp lệ, không chỉ thử vài số đầu.\n\n\nNếu bỏ qua điều kiện đầu hoặc nhảy một bước khi dùng hệ thức truy hồi, đọc lại **Kiến thức 1.3**, làm **Bài 16** (tính từng bước) rồi **Bài 17** (chứng minh công thức tường minh bằng dãy đã cho)."
   },
   {
     "item_id": "THPT-TOP07-KFT04",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT04",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT04",
     "stem": "Dãy \\(u_n=\\frac1n\\) (\\(n\\ge1\\)) tăng hay giảm?",
     "answer_key": "Giảm nghiêm ngặt.",
-    "worked_solution": "Giảm nghiêm ngặt vì \\(\\frac1{n+1}<\\frac1n\\) với mẫu dương.\n\nNếu chỉ nhìn \\(1,\\frac12,\\frac13\\) thì đó mới là gợi ý; chứng minh dấu cho mọi n.\n\n\n**Kiểm lỗi**\n\nNếu chỉ dựa vào vài số hạng đầu để khẳng định dãy tăng/giảm, đọc lại **Kiến thức 1.4**; giải **Bài 14** và **Bài 16**, luôn xét dấu hiệu hai số hạng liên tiếp cho **mọi chỉ số hợp lệ**.",
+    "worked_solution": "Giảm nghiêm ngặt vì \\(\\frac1{n+1}<\\frac1n\\) với mẫu dương.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B05-MONOTONICITY"
@@ -10968,11 +11046,17 @@
       "TOP07-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "So hai phân số dương có mẫu liên tiếp."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -10984,14 +11068,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\text{hằng}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{không đơn điệu}\\)"
+      },
+      {
+        "id": "C",
+        "text": "Giảm nghiêm ngặt."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\text{tăng}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu chỉ nhìn \\(1,\\frac12,\\frac13\\) thì đó mới là gợi ý; chứng minh dấu cho mọi n.\n\n\nNếu chỉ dựa vào vài số hạng đầu để khẳng định dãy tăng/giảm, đọc lại **Kiến thức 1.4**; giải **Bài 9** và **Bài 12**, luôn xét dấu hiệu hai số hạng liên tiếp cho **mọi chỉ số hợp lệ**."
   },
   {
     "item_id": "THPT-TOP07-KFT05",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT05",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT05",
     "stem": "Dãy \\(u_n=2-\\frac1n\\) (\\(n\\ge1\\)) có đạt 2 không?",
     "answer_key": "Không, mọi số hạng đều nhỏ hơn 2.",
-    "worked_solution": "Không; \\(\\frac1n>0\\) nên \\(u_n<2\\) với mọi n nguyên dương.\n\nPhân biệt dấu nhỏ hơn hoặc bằng với dấu nhỏ hơn nghiêm ngặt; thử giải \\(u_n=2\\) bằng phương trình.\n\n\n**Kiểm lỗi**\n\nNếu nhầm cận trên với số hạng lớn nhất, hoặc dấu nhỏ hơn nghiêm ngặt với dấu bằng, đọc lại **Kiến thức 1.5**, làm **Bài 19** (chứng minh hai cận) và **Bài 20** (cận dưới đạt, cận trên không đạt).",
+    "worked_solution": "Không; \\(\\frac1n>0\\) nên \\(u_n<2\\) với mọi n nguyên dương.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B05-BOUNDS"
@@ -11000,11 +11104,17 @@
       "TOP07-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm dấu của 1/n với n nguyên dương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11016,14 +11126,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\text{có tại }n=2\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{có tại }n=1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\text{có tại chỉ số nguyên rất lớn}\\)"
+      },
+      {
+        "id": "D",
+        "text": "Không, mọi số hạng đều nhỏ hơn 2."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Phân biệt dấu nhỏ hơn hoặc bằng với dấu nhỏ hơn nghiêm ngặt; thử giải \\(u_n=2\\) bằng phương trình.\n\n\nNếu nhầm cận trên với số hạng lớn nhất, hoặc dấu nhỏ hơn nghiêm ngặt với dấu bằng, đọc lại **Kiến thức 1.5**, làm **Bài 11** (chứng minh hai cận) và **Bài 13** (cận dưới đạt, cận trên không đạt)."
   },
   {
     "item_id": "THPT-TOP07-KFT06",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT06",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT06",
     "stem": "Dãy 2,2,2,2 có phải CSC không?",
     "answer_key": "Có, \\(d=0\\).",
-    "worked_solution": "Có. Hiệu hai số hạng liên tiếp đều bằng \\(2-2=0\\), nên đây là cấp số cộng với công sai \\(d=0\\).\n\nNếu loại một cấp số cộng chỉ vì các số hạng không tăng, đọc lại **Kiến thức 2.1**: công sai có thể bằng 0 hoặc âm. Làm **Bài 22** và **Bài 23**.",
+    "worked_solution": "Có. Hiệu hai số hạng liên tiếp đều bằng \\(2-2=0\\), nên đây là cấp số cộng với công sai \\(d=0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B06-AP-DEFINITION"
@@ -11032,11 +11162,17 @@
       "TOP07-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính hiệu hai số hạng liên tiếp."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11048,14 +11184,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có, \\(d=0\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\text{không vì không tăng}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(d=2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(d=1\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu loại một cấp số cộng chỉ vì các số hạng không tăng, đọc lại **Kiến thức 2.1**: công sai có thể bằng 0 hoặc âm. Làm **Bài 21** và **Bài 26**."
   },
   {
     "item_id": "THPT-TOP07-KFT07",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT07",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT07",
     "stem": "CSC \\(u_1=10,\\ d=-3\\): tính \\(u_4\\).",
     "answer_key": "\\(u_4=1\\).",
-    "worked_solution": "\\(u_4=10+3(-3)=1\\).\n\nNếu tính thành −2, xem lại từ số hạng 1 đến 4 chỉ có 3 khoảng.\n\n\n**Kiểm lỗi**\n\nNếu dùng n thay n−1 lần cộng công sai, đọc lại **Kiến thức 2.2**, làm **Bài 26** (tìm số hạng theo chỉ số) và **Bài 27** (giải số hạng xa). Đếm số *khoảng cách chỉ số* từ số hạng đầu.",
+    "worked_solution": "\\(u_4=10+3(-3)=1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B06-AP-NTH"
@@ -11064,11 +11220,17 @@
       "TOP07-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đếm ba bước từ số hạng 1 đến 4."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11080,14 +11242,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(7\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(u_4=1\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(-2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(4\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu tính thành \\(-2\\), xem lại từ số hạng 1 đến 4 chỉ có 3 khoảng.\n\n\nNếu dùng n thay n\\(-1\\) lần cộng công sai, đọc lại **Kiến thức 2.2**, làm **Bài 22** (tìm số hạng theo chỉ số) và **Bài 31** (giải số hạng xa). Đếm số *khoảng cách chỉ số* từ số hạng đầu."
   },
   {
     "item_id": "THPT-TOP07-KFT08",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT08",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT08",
     "stem": "Cho cấp số cộng có \\(u_2=7,\\ u_5=16\\). Tính công sai d.",
     "answer_key": "\\(d=3\\).",
-    "worked_solution": "\\(d=\\frac{16-7}{5-2}=3\\).\n\nKhông chia cho số thứ tự lớn hơn; chia chênh chỉ số.\n\n\n**Kiểm lỗi**\n\nNếu tính công sai bằng cách chia cho số thứ tự thay vì **hiệu chỉ số**, đọc lại **Kiến thức 2.3**, làm **Bài 25** và **Bài 30**; lấy hiệu hai giá trị chia cho hiệu hai chỉ số rồi thế ngược để kiểm.",
+    "worked_solution": "\\(d=\\frac{16-7}{5-2}=3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B06-AP-NTH"
@@ -11096,11 +11278,17 @@
       "TOP07-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Chia hiệu giá trị cho hiệu chỉ số."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11112,14 +11300,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(9\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(4{,}5\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(d=3\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(9/5\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Không chia cho số thứ tự lớn hơn; chia chênh chỉ số.\n\n\nNếu tính công sai bằng cách chia cho số thứ tự thay vì **hiệu chỉ số**, đọc lại **Kiến thức 2.3**, làm **Bài 28** và **Bài 32**; lấy hiệu hai giá trị chia cho hiệu hai chỉ số rồi thế ngược để kiểm."
   },
   {
     "item_id": "THPT-TOP07-KFT09",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT09",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT09",
     "stem": "Tính 1+3+5+7+9.",
     "answer_key": "25.",
-    "worked_solution": "25; đây là CSC có 5 số hạng, số đầu 1, số cuối 9, \\(S_5=\\frac{5(1+9)}2=25\\).\n\nNếu lấy n bằng số cuối 9, viết rõ có bao nhiêu số được cộng.\n\n\n**Kiểm lỗi**\n\nNếu nhầm số số hạng n với số hạng cuối, đọc lại **Kiến thức 2.4**, tính tổng ở **Bài 34** và **Bài 35** theo cặp đầu–cuối; kiểm xem đã xác định đúng n và \\(u_n\\) chưa.",
+    "worked_solution": "25; đây là CSC có 5 số hạng, số đầu 1, số cuối 9, \\(S_5=\\frac{5(1+9)}2=25\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B06-AP-SUM"
@@ -11128,11 +11336,17 @@
       "TOP07-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đếm số hạng và dùng tổng đầu–cuối."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11144,14 +11358,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(45\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(20\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(30\\)"
+      },
+      {
+        "id": "D",
+        "text": "25."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu lấy n bằng số cuối 9, viết rõ có bao nhiêu số được cộng.\n\n\nNếu nhầm số số hạng n với số hạng cuối, đọc lại **Kiến thức 2.4**, tính tổng ở **Bài 24** và **Bài 33** theo cặp đầu–cuối; kiểm xem đã xác định đúng n và \\(u_n\\) chưa."
   },
   {
     "item_id": "THPT-TOP07-KFT10",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT10",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT10",
     "stem": "Hàng 1 có 8 ghế, mỗi hàng thêm 2 ghế, 4 hàng có bao nhiêu ghế?",
     "answer_key": "44 ghế.",
-    "worked_solution": "\\(8+10+12+14=44\\) ghế.\n\nNếu chỉ trả số ghế hàng cuối, phân biệt 'mỗi hàng' và 'tổng toàn bộ'.\n\n\n**Kiểm lỗi**\n\nNếu chỉ trả sản lượng hàng cuối thay vì tổng tất cả hàng/kỳ, đọc lại **Kiến thức 2.5**, giải **Bài 38** và **Bài 40**; trước khi cộng, ghi rõ số hàng và số ghế hàng cuối.",
+    "worked_solution": "\\(8+10+12+14=44\\) ghế.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B06-AP-APPLICATION"
@@ -11160,11 +11394,17 @@
       "TOP07-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Liệt kê ghế từng hàng rồi cộng."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11176,14 +11416,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "44 ghế."
+      },
+      {
+        "id": "B",
+        "text": "\\(14\\text{ ghế}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(48\\text{ ghế}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(32\\text{ ghế}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu chỉ trả số ghế hàng cuối, phân biệt 'mỗi hàng' và 'tổng toàn bộ'.\n\n\nNếu chỉ trả sản lượng hàng cuối thay vì tổng tất cả hàng/kỳ, đọc lại **Kiến thức 2.5**, giải **Bài 38** và **Bài 40**; trước khi cộng, ghi rõ số hàng và số ghế hàng cuối."
   },
   {
     "item_id": "THPT-TOP07-KFT11",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT11",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT11",
     "stem": "Dãy 4,0,0,0,… có là CSN không?",
     "answer_key": "Có, \\(q=0\\).",
-    "worked_solution": "Có. Chọn \\(q=0\\): từ số hạng đầu 4, nhân 0 được số hạng thứ hai bằng 0, và các số hạng sau tiếp tục bằng 0. Hệ thức \\(u_{n+1}=qu_n\\) đúng với mọi \\(n\\ge1\\).\n\nNếu cố tìm công bội bằng phép chia cho 0, đọc lại **Kiến thức 3.1**, làm **Bài 41** và **Bài 44**. Ưu tiên hệ thức nhân liên tiếp thay vì phép chia khi mẫu bằng 0.",
+    "worked_solution": "Có. Chọn \\(q=0\\): từ số hạng đầu 4, nhân 0 được số hạng thứ hai bằng 0, và các số hạng sau tiếp tục bằng 0. Hệ thức \\(u_{n+1}=qu_n\\) đúng với mọi \\(n\\ge1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B07-GP-DEFINITION"
@@ -11192,11 +11452,17 @@
       "TOP07-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng hệ thức nhân, không chia cho 0."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11208,14 +11474,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(q=4\\)"
+      },
+      {
+        "id": "B",
+        "text": "Có, \\(q=0\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\text{không vì không chia được cho 0}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(q=1\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu cố tìm công bội bằng phép chia cho 0, đọc lại **Kiến thức 3.1**, làm **Bài 45** và **Bài 47**. Ưu tiên hệ thức nhân liên tiếp thay vì phép chia khi mẫu bằng 0."
   },
   {
     "item_id": "THPT-TOP07-KFT12",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT12",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT12",
     "stem": "CSN \\(u_1=5,\\ q=-2\\): tính \\(u_4\\).",
     "answer_key": "\\(u_4=-40\\).",
-    "worked_solution": "\\(5(-2)^3=-40\\).\n\nDấu ngoặc đặc biệt quan trọng khi số mũ chẵn: \\(u_3=5(-2)^2=20\\), trong khi \\(5\\cdot(-2^2)=-20\\). Hai biểu thức với số mũ lẻ có thể trùng giá trị, nên hãy dùng \\(u_3\\) để phát hiện lỗi bỏ ngoặc.\n\n\n**Kiểm lỗi**\n\nNếu đặt mũ là n thay cho n−1 hoặc làm mất dấu của công bội âm, đọc lại **Kiến thức 3.2**, làm **Bài 46** (số hạng thứ sáu) và **Bài 47** (công bội âm). Kiểm trực tiếp hai số hạng đầu.",
+    "worked_solution": "\\(5(-2)^3=-40\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B07-GP-NTH"
@@ -11224,11 +11510,17 @@
       "TOP07-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Đếm số lần nhân, giữ ngoặc công bội âm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11240,14 +11532,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(-80\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(20\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(u_4=-40\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(40\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Dấu ngoặc đặc biệt quan trọng khi số mũ chẵn: \\(u_3=5(-2)^2=20\\), trong khi \\(5\\cdot(-2^2)=-20\\). Hai biểu thức với số mũ lẻ có thể trùng giá trị, nên hãy dùng \\(u_3\\) để phát hiện lỗi bỏ ngoặc.\n\n\nNếu đặt mũ là n thay cho n\\(-1\\) hoặc làm mất dấu của công bội âm, đọc lại **Kiến thức 3.2**, làm **Bài 42** (số hạng thứ sáu) và **Bài 54** (công bội âm). Kiểm trực tiếp hai số hạng đầu."
   },
   {
     "item_id": "THPT-TOP07-KFT13",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT13",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT13",
     "stem": "Ba số 2, b, 18 là CSN với \\(b\\ne0\\): b có thể bằng bao nhiêu?",
     "answer_key": "\\(b=\\pm6\\), tương ứng \\(q=\\pm3\\).",
-    "worked_solution": "Vì \\(b\\ne0\\), công bội thỏa \\(q=\\frac b2=\\frac{18}b\\). Suy ra \\(b^2=36\\), tức \\(b=6\\) hoặc \\(b=-6\\), tương ứng \\(q=3\\) hoặc \\(q=-3\\). Hai dãy đều thỏa hệ thức nhân liên tiếp.\n\nNếu chỉ lấy căn dương khi đề không yêu cầu các số hạng dương, đọc lại **Kiến thức 3.3**, so **Bài 48** với **Bài 50**.",
+    "worked_solution": "Vì \\(b\\ne0\\), công bội thỏa \\(q=\\frac b2=\\frac{18}b\\). Suy ra \\(b^2=36\\), tức \\(b=6\\) hoặc \\(b=-6\\), tương ứng \\(q=3\\) hoặc \\(q=-3\\). Hai dãy đều thỏa hệ thức nhân liên tiếp.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B07-GP-THREE-TERMS"
@@ -11256,11 +11568,17 @@
       "TOP07-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Dùng bình phương số giữa bằng tích hai đầu và kiểm cả hai dấu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11272,14 +11590,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(b=6\\text{ duy nhất}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(b=-6\\text{ duy nhất}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(b=10\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(b=\\pm6\\), tương ứng \\(q=\\pm3\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu chỉ lấy căn dương khi đề không yêu cầu các số hạng dương, đọc lại **Kiến thức 3.3**, so **Bài 49** với **Bài 58**."
   },
   {
     "item_id": "THPT-TOP07-KFT14",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT14",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT14",
     "stem": "Cho cấp số nhân có \\(u_1=-4,\\ q=1\\). Tính tổng năm số hạng đầu \\(S_5\\).",
     "answer_key": "\\(S_5=-20\\).",
-    "worked_solution": "\\(S_5=5(-4)=-20\\); không chia cho \\(1-q=0\\).\n\nNếu gặp 0 ở mẫu, tách \\(q=1\\) trước.\n\n\n**Kiểm lỗi**\n\nNếu dùng công thức có mẫu \\(1-q\\) khi \\(q=1\\), hoặc nhầm tổng hữu hạn với tổng vô hạn, đọc lại **Kiến thức 3.4**, làm **Bài 52** (\\(q=1\\)) và **Bài 55** (q khác 1). Thử cộng trực tiếp vài số hạng để kiểm dấu.",
+    "worked_solution": "\\(S_5=5(-4)=-20\\); không chia cho \\(1-q=0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B07-GP-SUM"
@@ -11288,11 +11626,17 @@
       "TOP07-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Tách trường hợp công bội bằng 1."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11304,14 +11648,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S_5=-20\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(-4\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(20\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu gặp 0 ở mẫu, tách \\(q=1\\) trước.\n\n\nNếu dùng công thức có mẫu \\(1-q\\) khi \\(q=1\\), hoặc nhầm tổng hữu hạn với tổng vô hạn, đọc lại **Kiến thức 3.4**, làm **Bài 50** (\\(q=1\\)) và **Bài 55** (q khác 1). Thử cộng trực tiếp vài số hạng để kiểm dấu."
   },
   {
     "item_id": "THPT-TOP07-KFT15",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT15",
-    "stem": "Cấp số nhân vô hạn có \\(u_1=4,\\ q=-1\\). Có thể tính tổng vô hạn bằng công thức \\(\\frac{u_1}{1-q}\\) không? Vì sao?",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT15",
+    "stem": "Cấp số nhân vô hạn có \\(u_1=4,\\ q=-1\\). Có thể tính tổng vô hạn bằng công thức \\(\\frac{u_1}{1-q}\\) không? Vì sao? Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Không; tổng riêng dao động giữa 4 và 0, không hội tụ.",
-    "worked_solution": "Không; |q|=1, tổng riêng lần lượt 4,0,4,0,… không hội tụ.\n\nNếu tự thay \\(q=-1\\) vào biểu thức \\(\\frac{u_1}{1-q}\\) được 2, đó là lạm dụng công thức ngoài miền \\(\\lvert q\\rvert<1\\).\n\n\n**Kiểm lỗi**\n\nNếu lấy tổng vô hạn theo công thức khi \\(\\lvert q\\rvert\\ge1\\) hoặc bỏ mất dấu phần dư với công bội âm, đọc lại **Kiến thức 3.5**, làm **Bài 58** (chuỗi lùi có hội tụ) và **Bài 61** (tổng cùng phần dư). Chỉ sử dụng công thức sau khi kiểm \\(\\lvert q\\rvert<1\\).",
+    "worked_solution": "Không; |q|=1, tổng riêng lần lượt 4; 0; 4; 0; … không hội tụ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B15-GEOMETRIC"
@@ -11320,11 +11684,17 @@
       "TOP07-O15"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Kiểm trị tuyệt đối công bội trước khi dùng công thức tổng vô hạn."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11336,14 +11706,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\text{có, tổng }0\\)"
+      },
+      {
+        "id": "B",
+        "text": "Không; tổng riêng dao động giữa 4 và 0, không hội tụ."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\text{có, tổng }2\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\text{có, tổng }4\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu tự thay \\(q=-1\\) vào biểu thức \\(\\frac{u_1}{1-q}\\) được 2, đó là lạm dụng công thức ngoài miền \\(\\lvert q\\rvert<1\\).\n\n\nNếu lấy tổng vô hạn theo công thức khi \\(\\lvert q\\rvert\\ge1\\) hoặc bỏ mất dấu phần dư với công bội âm, đọc lại **Kiến thức 3.5**, làm **Bài 57** (chuỗi lùi có hội tụ) và **Bài 61** (tổng cùng phần dư). Chỉ sử dụng công thức sau khi kiểm \\(\\lvert q\\rvert<1\\)."
   },
   {
     "item_id": "THPT-TOP07-KFT16",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT16",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT16",
     "stem": "Giá trị ban đầu 50, mỗi kỳ tăng 10% so với giá trị kỳ trước. Sau hai lần tăng, giá trị có bằng 60 không?",
     "answer_key": "Không, giá trị là 60,5.",
-    "worked_solution": "Không, \\(50\\cdot(1{,}1)^2=60{,}5\\).\n\nNếu ghi 60, bạn đã cộng 5 cố định và vô tình dùng CSC thay CSN.\n\n\n**Kiểm lỗi**\n\nNếu nhầm tăng đều một lượng với tăng theo phần trăm của **giá trị kỳ trước**, đọc lại **Kiến thức 4.1**, làm **Bài 40** (mô hình cộng đều) rồi **Bài 63** (đặt hai quy luật tăng cạnh nhau theo chỉ số kỳ).",
+    "worked_solution": "Không, \\(50\\cdot(1{,}1)^2=60{,}5\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B07-GP-APPLICATION"
@@ -11352,11 +11742,17 @@
       "TOP07-O16"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Nhân giá trị kỳ trước với 1,1 hai lần."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11368,14 +11764,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(55\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(61\\)"
+      },
+      {
+        "id": "C",
+        "text": "Không, giá trị là 60,5."
+      },
+      {
+        "id": "D",
+        "text": "\\(60\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu ghi 60, bạn đã cộng 5 cố định và vô tình dùng CSC thay CSN.\n\n\nNếu nhầm tăng đều một lượng với tăng theo phần trăm của **giá trị kỳ trước**, đọc lại **Kiến thức 4.1**, làm **Bài 40** (mô hình cộng đều) rồi **Bài 64** (đặt hai quy luật tăng cạnh nhau theo chỉ số kỳ)."
   },
   {
     "item_id": "THPT-TOP07-KFT17",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT17",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT17",
     "stem": "Gửi 1 triệu đồng theo mô hình lãi kép 10% mỗi kỳ, lãi nhập gốc cuối kỳ, không nộp thêm, rút tiền hoặc tính phí. Số dư sau hai kỳ là bao nhiêu?",
     "answer_key": "1,21 triệu đồng.",
-    "worked_solution": "\\(1\\cdot(1{,}1)^2=1{,}21\\) triệu đồng.\n\nNếu làm thành 1,2 triệu, bạn đã dùng lãi đơn thay lãi kép; ghi rõ 'không nộp/rút'.\n\n\n**Kiểm lỗi**\n\nNếu cộng cùng một khoản lãi mỗi kỳ dù đề đã nói **lãi nhập gốc**, đọc lại **Kiến thức 4.2**, giải **Bài 65** và **Bài 67**; ghi mốc kỳ 0, kỳ 1 rồi kỳ 2 và nhân hệ số tăng cho từng kỳ.",
+    "worked_solution": "\\(1\\cdot(1{,}1)^2=1{,}21\\) triệu đồng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B07-GP-APPLICATION"
@@ -11384,11 +11800,17 @@
       "TOP07-O17"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Lãi nhập gốc, nên nhân hệ số mỗi kỳ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11400,14 +11822,34 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(1{,}2\\text{ triệu}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(1{,}1\\text{ triệu}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(1{,}22\\text{ triệu}\\)"
+      },
+      {
+        "id": "D",
+        "text": "1,21 triệu đồng."
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu làm thành 1,2 triệu, bạn đã dùng lãi đơn thay lãi kép; ghi rõ 'không nộp/rút'.\n\n\nNếu cộng cùng một khoản lãi mỗi kỳ dù đề đã nói **lãi nhập gốc**, đọc lại **Kiến thức 4.2**, giải **Bài 66** và **Bài 63**; ghi mốc kỳ 0, kỳ 1 rồi kỳ 2 và nhân hệ số tăng cho từng kỳ."
   },
   {
     "item_id": "THPT-TOP07-KFT18",
-    "content_version": "TOP07-BANK-CP73-20261126-KFT18",
+    "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT18",
     "stem": "(a) Ban đầu số dư bằng 0. Gửi 20 đơn vị vào cuối mỗi kỳ trong hai kỳ, lãi nhập gốc 10%/kỳ, không phí. Tính số dư ngay sau khoản gửi cuối. (b) Vay 315 đơn vị ở kỳ 0, lãi 10%/kỳ trên dư nợ, không phí; trả 181,5 đơn vị cuối mỗi kỳ sau khi tính lãi. Tính dư nợ cuối kỳ 1 và 2; kiểm đã tất toán chưa.",
     "answer_key": "(a) 42 đơn vị. (b) \\(B_1=165,\\ B_2=0\\); đã tất toán.",
-    "worked_solution": "(a) \\(20\\cdot1{,}1+20=42\\); khoản gửi cuối kỳ 2 chưa sinh lãi.\n\n(b) \\(B_1=315\\cdot1{,}1-181{,}5=165\\); \\(B_2=165\\cdot1{,}1-181{,}5=0\\). Đã tất toán sau hai kỳ. Khoản trả làm giảm dư nợ, nên dùng phép trừ, không dùng phép cộng như gửi góp.\n\nNếu nhân cả hai khoản gửi với \\((1{,}1)^2\\), vẽ trục kỳ 0–1–2 và đánh dấu ngay sau khi nộp.\n\n\n**Kiểm lỗi**\n\nNếu cộng lãi cho khoản gửi ngay **cuối kỳ** vừa nộp hoặc nhầm thời điểm trả nợ với tính lãi, đọc lại **Kiến thức 4.3**, làm **Bài 68** (gửi đầu/cuối kỳ) và **Bài 69** (trả nợ cuối kỳ); vẽ trục thời gian và đánh dấu khoản tiền trước khi lập công thức.",
+    "worked_solution": "(a) \\(20\\cdot1{,}1+20=42\\); khoản gửi cuối kỳ 2 chưa sinh lãi.\n\n(b) \\(B_1=315\\cdot1{,}1-181{,}5=165\\); \\(B_2=165\\cdot1{,}1-181{,}5=0\\). Đã tất toán sau hai kỳ. Khoản trả làm giảm dư nợ, nên dùng phép trừ, không dùng phép cộng như gửi góp.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B07-GP-APPLICATION"
@@ -11416,11 +11858,17 @@
       "TOP07-O18"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "SYNTHESIS",
+    "hints": [
+      "Vẽ mốc 0–1–2, phân biệt gửi tiền và trả nợ cuối kỳ."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -11432,7 +11880,27 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "options": [
+      {
+        "id": "A",
+        "text": "(a) 42 đơn vị. (b) \\(B_1=165,\\ B_2=0\\); đã tất toán."
+      },
+      {
+        "id": "B",
+        "text": "\\((a)\\ 44;\\ (b)\\ B_1=165,B_2=0\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((a)\\ 42;\\ (b)\\ B_1=346{,}5,B_2=381{,}15\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((a)\\ 40;\\ (b)\\ B_1=133{,}5,B_2=-48\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu nhân cả hai khoản gửi với \\((1{,}1)^2\\), vẽ trục kỳ 0–1–2 và đánh dấu ngay sau khi nộp.\n\n\nNếu cộng lãi cho khoản gửi ngay **cuối kỳ** vừa nộp hoặc nhầm thời điểm trả nợ với tính lãi, đọc lại **Kiến thức 4.3**, làm **Bài 68** (gửi đầu/cuối kỳ) và **Bài 69** (trả nợ cuối kỳ); vẽ trục thời gian và đánh dấu khoản tiền trước khi lập công thức."
   },
   {
     "item_id": "THPT-TOP08-KFT01",
