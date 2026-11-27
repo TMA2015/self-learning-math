@@ -21588,6 +21588,44 @@
       "limitations": "Scoped AUTHOR_SELF_VERIFIED three new tasks only; no fresh direct S1 PDF visual review, full Academic/PED/Written PASS or new figures. Topic linkage checked, not full Topic family review.",
       "next": "G10 ChVI onward, then remaining G11 and Written wording CP108, interaction classification.",
       "release_authorization": false
+    },
+    "coverage_depth_cp114": {
+      "base": "5804f97ec97752db7f42aef942224f69f455cb74",
+      "head": "5515faa096e52ecf64a1498ea65fda99245487f5",
+      "scope": "G10 ChVI–VII",
+      "review": {
+        "sgk_stems_keys": 105,
+        "mcq_options": 2,
+        "written_projections": "ChVI 10 displayed tasks (8 referenced HPT-prefixed IDs plus 2 preexisting), ChVII 6; read projections, not a full Written verdict"
+      },
+      "shards": [
+        {
+          "path": "items/g10-chvi.json",
+          "sha": "c88f5213e2e7f3868f7b7f11e15f1929d6e432a4"
+        },
+        {
+          "path": "items/g10-chvii.json",
+          "sha": "df211314d06f0f5b45ae1c2de0abda62c1920365"
+        }
+      ],
+      "changes": [
+        {
+          "id": "THPT-G10-B15-P01",
+          "reason": "Preserve domain before cancelling factor x-3; compare f undefined at 3 with g(3)=6."
+        },
+        {
+          "id": "THPT-G10-B18-P01",
+          "reason": "Pair square-root equations sqrt(x+6)=±x; same squared quadratic roots 3,-2, distinct sign conditions and checked solutions."
+        },
+        {
+          "id": "THPT-G10-B21-P03",
+          "reason": "Parallel tangent family with |m-1|=25; m=26, -24; contact points (-2,-5),(4,3) verified by substitution, radii length 5 and parallel normals."
+        }
+      ],
+      "verification": "3/105 changed, 102 unchanged; ID, skill, source, options, rubric, interaction, order and placements retained; balanced delimiters. All three SGK Practice; all 22 Topic placement files checked, B18-P01 CD03 O09 and B21-P03 CD14 O17 reused, B15-P01 SGK only. Source public blobs 1223d4c2b574433479c5d222dbeff363718ee4bb and 2b191d7abba7a4f5bd79d4c122673cd53a45495b; Written projections d96deee9b440076954d6f44b3007ea083fdd6eb0, ccad1c7885094ebccf29236d6a89aa7c86c1f5ea.",
+      "limitations": "Scoped AUTHOR_SELF_VERIFIED for revised tasks; no fresh direct S1 PDF visual, no full academic/PED/Written PASS, no new figures. CHVI TRY03 has no skill tag and legacy HPT-prefixed Written IDs observed; preserve pending targeted reconciliation rather than rename or guess mapping. Topic placement checked, not exhaustive topic family audit.",
+      "next": "G10 ChVIII–IX, then remaining G11, skill mapping/legacy IDs and Written ambiguity CP108, interaction classification.",
+      "release_authorization": false
     }
   }
 }
