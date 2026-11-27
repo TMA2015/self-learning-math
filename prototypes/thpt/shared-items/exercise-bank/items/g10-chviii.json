@@ -1147,7 +1147,9 @@
     "answer_key": "81.",
     "worked_solution": "**Đáp án:** 81.\n\n**Lập luận:** Khi thay x=1 vào đa thức P(x), mọi lũy thừa của x đều bằng 1, nên P(1) chính là tổng các hệ số. Với P(x)=(1+2x)⁴, ta có P(1)=3⁴=81; không cần khai triển toàn bộ.\n\n**Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).\n\n<a href=\"#help-g10-chviii-try12\">Đến hướng dẫn tự sửa</a>",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "BINOMIAL_COEFFICIENT"
+    ],
     "original_outcome_ids": [
       "G10-B25-COEFFICIENT_SUM"
     ],
