@@ -4,361 +4,793 @@
     "role": "TOPIC_PRACTICE",
     "order": 1,
     "item_id": "THPT-TOP02-ADD01",
-    "outcome_id": "TOP02-O01"
+    "outcome_id": "TOP02-O01",
+    "legacy_order": 1,
+    "group_id": "TOP02-G1",
+    "group_title": "Bất phương trình một ẩn và bất đẳng thức",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 2,
     "item_id": "THPT-TOP02-ADD02",
-    "outcome_id": "TOP02-O01"
+    "outcome_id": "TOP02-O01",
+    "legacy_order": 2,
+    "group_id": "TOP02-G1",
+    "group_title": "Bất phương trình một ẩn và bất đẳng thức",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 3,
-    "item_id": "THPT-TOP02-ADD03",
-    "outcome_id": "TOP02-O02"
+    "item_id": "THPT-TOP02-ADD07",
+    "outcome_id": "TOP02-O04",
+    "legacy_order": 7,
+    "group_id": "TOP02-G2",
+    "group_title": "Dấu tam thức bậc hai",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 4,
-    "item_id": "THPT-TOP02-ADD04",
-    "outcome_id": "TOP02-O02"
+    "item_id": "THPT-TOP02-ADD03",
+    "outcome_id": "TOP02-O02",
+    "legacy_order": 3,
+    "group_id": "TOP02-G2",
+    "group_title": "Dấu tam thức bậc hai",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 5,
-    "item_id": "THPT-TOP02-ADD05",
-    "outcome_id": "TOP02-O03"
+    "item_id": "THPT-TOP02-ADD04",
+    "outcome_id": "TOP02-O02",
+    "legacy_order": 4,
+    "group_id": "TOP02-G2",
+    "group_title": "Dấu tam thức bậc hai",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 6,
-    "item_id": "THPT-TOP02-ADD06",
-    "outcome_id": "TOP02-O03"
+    "item_id": "THPT-TOP02-ADD05",
+    "outcome_id": "TOP02-O03",
+    "legacy_order": 5,
+    "group_id": "TOP02-G2",
+    "group_title": "Dấu tam thức bậc hai",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 7,
-    "item_id": "THPT-TOP02-ADD07",
-    "outcome_id": "TOP02-O04"
+    "item_id": "THPT-TOP02-ADD06",
+    "outcome_id": "TOP02-O03",
+    "legacy_order": 6,
+    "group_id": "TOP02-G2",
+    "group_title": "Dấu tam thức bậc hai",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 8,
     "item_id": "THPT-TOP02-ADD08",
-    "outcome_id": "TOP02-O04"
+    "outcome_id": "TOP02-O04",
+    "legacy_order": 8,
+    "group_id": "TOP02-G2",
+    "group_title": "Dấu tam thức bậc hai",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 9,
     "item_id": "THPT-TOP02-ADD09",
-    "outcome_id": "TOP02-O05"
+    "outcome_id": "TOP02-O05",
+    "legacy_order": 9,
+    "group_id": "TOP02-G2",
+    "group_title": "Dấu tam thức bậc hai",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 10,
     "item_id": "THPT-TOP02-ADD10",
-    "outcome_id": "TOP02-O05"
+    "outcome_id": "TOP02-O05",
+    "legacy_order": 10,
+    "group_id": "TOP02-G2",
+    "group_title": "Dấu tam thức bậc hai",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 11,
     "item_id": "THPT-TOP02-ADD11",
-    "outcome_id": "TOP02-O06"
+    "outcome_id": "TOP02-O06",
+    "legacy_order": 11,
+    "group_id": "TOP02-G2",
+    "group_title": "Dấu tam thức bậc hai",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 12,
     "item_id": "THPT-TOP02-ADD12",
-    "outcome_id": "TOP02-O06"
+    "outcome_id": "TOP02-O06",
+    "legacy_order": 12,
+    "group_id": "TOP02-G2",
+    "group_title": "Dấu tam thức bậc hai",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 13,
     "item_id": "THPT-TOP02-ADD13",
-    "outcome_id": "TOP02-O07"
+    "outcome_id": "TOP02-O07",
+    "legacy_order": 13,
+    "group_id": "TOP02-G3",
+    "group_title": "Tham số và bài toán thực tế một ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 14,
     "item_id": "THPT-TOP02-ADD14",
-    "outcome_id": "TOP02-O07"
+    "outcome_id": "TOP02-O07",
+    "legacy_order": 14,
+    "group_id": "TOP02-G3",
+    "group_title": "Tham số và bài toán thực tế một ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 15,
     "item_id": "THPT-TOP02-ADD15",
-    "outcome_id": "TOP02-O08"
+    "outcome_id": "TOP02-O08",
+    "legacy_order": 15,
+    "group_id": "TOP02-G3",
+    "group_title": "Tham số và bài toán thực tế một ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 16,
     "item_id": "THPT-TOP02-ADD16",
-    "outcome_id": "TOP02-O08"
+    "outcome_id": "TOP02-O08",
+    "legacy_order": 16,
+    "group_id": "TOP02-G3",
+    "group_title": "Tham số và bài toán thực tế một ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 17,
     "item_id": "THPT-TOP02-W01",
-    "outcome_id": "TOP02-O07"
+    "outcome_id": "TOP02-O07",
+    "legacy_order": 17,
+    "group_id": "TOP02-G3",
+    "group_title": "Tham số và bài toán thực tế một ẩn",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 18,
     "item_id": "THPT-G10-B03-C01",
-    "outcome_id": "TOP02-O09"
+    "outcome_id": "TOP02-O09",
+    "legacy_order": 18,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 19,
     "item_id": "THPT-G10-B03-C02",
-    "outcome_id": "TOP02-O10"
+    "outcome_id": "TOP02-O10",
+    "legacy_order": 19,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 20,
-    "item_id": "THPT-G10-B03-P01",
-    "outcome_id": "TOP02-O11"
+    "item_id": "THPT-G10-B04-C01",
+    "outcome_id": "TOP02-O13",
+    "legacy_order": 26,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 21,
-    "item_id": "THPT-G10-B03-P02",
-    "outcome_id": "TOP02-O11"
+    "item_id": "THPT-G10-B03-P01",
+    "outcome_id": "TOP02-O11",
+    "legacy_order": 20,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 22,
     "item_id": "THPT-G10-B03-P03",
-    "outcome_id": "TOP02-O10"
+    "outcome_id": "TOP02-O10",
+    "legacy_order": 22,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 23,
-    "item_id": "THPT-G10-B03-P04",
-    "outcome_id": "TOP02-O12"
+    "item_id": "THPT-G10-B03-P05",
+    "outcome_id": "TOP02-O11",
+    "legacy_order": 24,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 24,
-    "item_id": "THPT-G10-B03-P05",
-    "outcome_id": "TOP02-O11"
+    "item_id": "THPT-G10-B04-C02",
+    "outcome_id": "TOP02-O13",
+    "legacy_order": 27,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 25,
-    "item_id": "THPT-G10-B03-P06",
-    "outcome_id": "TOP02-O12"
+    "item_id": "THPT-G10-B04-P04",
+    "outcome_id": "TOP02-O14",
+    "legacy_order": 29,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 26,
-    "item_id": "THPT-G10-B04-C01",
-    "outcome_id": "TOP02-O13"
+    "item_id": "THPT-TOP02-ADD17",
+    "outcome_id": "TOP02-O09",
+    "legacy_order": 32,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 27,
-    "item_id": "THPT-G10-B04-C02",
-    "outcome_id": "TOP02-O13"
+    "item_id": "THPT-G10-B03-P02",
+    "outcome_id": "TOP02-O11",
+    "legacy_order": 21,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 28,
-    "item_id": "THPT-G10-B04-P01",
-    "outcome_id": "TOP02-O13"
+    "item_id": "THPT-G10-B03-P04",
+    "outcome_id": "TOP02-O12",
+    "legacy_order": 23,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 29,
-    "item_id": "THPT-G10-B04-P04",
-    "outcome_id": "TOP02-O14"
+    "item_id": "THPT-G10-B04-P01",
+    "outcome_id": "TOP02-O13",
+    "legacy_order": 28,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 30,
     "item_id": "THPT-G10-B04-P05",
-    "outcome_id": "TOP02-O14"
+    "outcome_id": "TOP02-O14",
+    "legacy_order": 30,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 31,
     "item_id": "THPT-G10-CHII-W03",
-    "outcome_id": "TOP02-O12"
+    "outcome_id": "TOP02-O12",
+    "legacy_order": 31,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 32,
-    "item_id": "THPT-TOP02-ADD17",
-    "outcome_id": "TOP02-O09"
+    "item_id": "THPT-G10-B03-P06",
+    "outcome_id": "TOP02-O12",
+    "legacy_order": 25,
+    "group_id": "TOP02-G4",
+    "group_title": "Bất phương trình và hệ bất phương trình hai ẩn",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 33,
     "item_id": "THPT-G10-B04-P02",
-    "outcome_id": "TOP02-O15"
+    "outcome_id": "TOP02-O15",
+    "legacy_order": 33,
+    "group_id": "TOP02-G5",
+    "group_title": "Tối ưu tuyến tính và mô hình số nguyên",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 34,
     "item_id": "THPT-G10-B04-P03",
-    "outcome_id": "TOP02-O15"
+    "outcome_id": "TOP02-O15",
+    "legacy_order": 34,
+    "group_id": "TOP02-G5",
+    "group_title": "Tối ưu tuyến tính và mô hình số nguyên",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 35,
     "item_id": "THPT-G10-B04-P06",
-    "outcome_id": "TOP02-O16"
+    "outcome_id": "TOP02-O16",
+    "legacy_order": 35,
+    "group_id": "TOP02-G5",
+    "group_title": "Tối ưu tuyến tính và mô hình số nguyên",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 36,
     "item_id": "THPT-G10-CHII-W04-ANCHOR",
-    "outcome_id": "TOP02-O15"
+    "outcome_id": "TOP02-O15",
+    "legacy_order": 36,
+    "group_id": "TOP02-G5",
+    "group_title": "Tối ưu tuyến tính và mô hình số nguyên",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_PRACTICE",
     "order": 37,
     "item_id": "THPT-TOP02-ADD18",
-    "outcome_id": "TOP02-O16"
+    "outcome_id": "TOP02-O16",
+    "legacy_order": 37,
+    "group_id": "TOP02-G5",
+    "group_title": "Tối ưu tuyến tính và mô hình số nguyên",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD02:PRACTICE",
     "role": "TOPIC_WRITTEN",
     "order": 38,
     "item_id": "THPT-TOP02-W02",
-    "outcome_id": "TOP02-O16"
+    "outcome_id": "TOP02-O16",
+    "legacy_order": 38,
+    "group_id": "TOP02-G5",
+    "group_title": "Tối ưu tuyến tính và mô hình số nguyên",
+    "candidate_use": {
+      "mode": "WRITTEN_SELF_COMPARE",
+      "reveal": "AFTER_SELF_WORK",
+      "rubric": true
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 1,
-    "item_id": "THPT-TOP02-ADD01"
+    "item_id": "THPT-TOP02-ADD01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 2,
-    "item_id": "THPT-TOP02-ADD03"
+    "item_id": "THPT-TOP02-ADD03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 3,
-    "item_id": "THPT-TOP02-ADD05"
+    "item_id": "THPT-TOP02-ADD05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 4,
-    "item_id": "THPT-TOP02-ADD07"
+    "item_id": "THPT-TOP02-ADD07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 5,
-    "item_id": "THPT-TOP02-ADD09"
+    "item_id": "THPT-TOP02-ADD09",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 6,
-    "item_id": "THPT-TOP02-ADD11"
+    "item_id": "THPT-TOP02-ADD11",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 7,
-    "item_id": "THPT-TOP02-ADD13"
+    "item_id": "THPT-TOP02-ADD13",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 8,
-    "item_id": "THPT-TOP02-ADD15"
+    "item_id": "THPT-TOP02-ADD15",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 9,
-    "item_id": "THPT-G10-B03-C01"
+    "item_id": "THPT-G10-B03-C01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 10,
-    "item_id": "THPT-G10-B03-C02"
+    "item_id": "THPT-G10-B03-C02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 11,
-    "item_id": "THPT-G10-B03-P01"
+    "item_id": "THPT-G10-B03-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 12,
-    "item_id": "THPT-G10-B03-P04"
+    "item_id": "THPT-G10-B03-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 13,
-    "item_id": "THPT-G10-B04-C01"
+    "item_id": "THPT-G10-B04-C01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 14,
-    "item_id": "THPT-G10-B04-P04"
+    "item_id": "THPT-G10-B04-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 15,
-    "item_id": "THPT-G10-B04-P02"
+    "item_id": "THPT-G10-B04-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD02:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 16,
-    "item_id": "THPT-G10-B04-P06"
+    "item_id": "THPT-G10-B04-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   }
 ]
