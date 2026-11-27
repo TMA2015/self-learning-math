@@ -210,11 +210,11 @@ Khi một tích phân không có nguyên hàm sơ cấp hoặc dữ liệu chỉ
 
 *Đáp án tự mở:* n²>100/6 ⇒ n≥5.
 
-**Written `THPT-G12-EXP01-W04`** — Trình bày quy trình chọn n cho ∫₀¹x²dx có sai số <0,001; giải thích vì sao n=12 chưa bảo đảm.
+**Written `THPT-G12-EXP01-W04`** — Trình bày quy trình chọn n khoảng đều trong quy tắc hình thang ghép cho \(\int_0^1 x^2\,\mathrm dx\) để cận sai số nhỏ hơn \(0{,}001\). Giải thích vì sao \(n=12\) chưa đạt yêu cầu.
 
-*Lời giải chuẩn tự đối chiếu:* Trên $[0,1]$, $f(x)=x^2$ có $f''(x)=2$ liên tục, nên lấy $M=2$. Cận sai số hình thang hợp thành là $|I-T_n|\le M(b-a)^3/(12n^2)=1/(6n^2)$. Để **bảo đảm bằng cận này** sai số nhỏ hơn $0{,}001$, cần $1/(6n^2)<0{,}001$, tương đương $n^2>1000/6=166{,}666\ldots$, nên số nguyên nhỏ nhất thỏa điều kiện là $n=13$. Nếu $n=12$, cận là $1/864\approx0{,}0011574>0{,}001$, vì thế **cận chưa đủ để bảo đảm**, không có nghĩa sai số thật nhất thiết lớn hơn ngưỡng; $n=13$ cho cận $1/1014\approx0{,}0009862<0{,}001$.
+*Lời giải chuẩn tự đối chiếu:* Trên \([0;1]\), \(f(x)=x^2\) có \(f''(x)=2\) liên tục, nên lấy \(M=2\). Cận sai số hình thang ghép là \(|I-T_n|\le\frac{M(b-a)^3}{12n^2}=\frac1{6n^2}\). Muốn bảo đảm sai số nhỏ hơn \(0{,}001\), cần \(\frac1{6n^2}<0{,}001\), tức \(n^2>\frac{1000}{6}\). Số nguyên dương nhỏ nhất thỏa điều kiện là 13. Với \(n=12\), cận bằng \(\frac1{864}\approx0{,}0011574\), chưa đủ để bảo đảm; với \(n=13\), cận bằng \(\frac1{1014}\approx0{,}0009862\), đạt yêu cầu. **Kiểm thêm cho riêng hàm này:** \(T_n=\frac1n\left(\frac12+\sum_{i=1}^{n-1}\frac{i^2}{n^2}\right)=\frac13+\frac1{6n^2}\), dùng công thức tổng bình phương. Vì \(I=\frac13\), sai số thật đúng bằng \(\frac1{6n^2}\); do đó \(n=12\) thực sự không đạt. Đẳng thức này là đặc thù của hàm bậc hai đang xét, không suy ra cho mọi hàm từ một cận trên.
 
-**Rubric /5:** 1đ tính f′′ và M; 1đ lập bound 1/(6n²); 1đ giải bất đẳng thức; 1đ chọn 13 và kiểm 12; 1đ phân biệt bound với sai số thật.
+**Rubric /5:** 1đ tính \(f''\) và M; 1đ lập cận; 1đ giải bất đẳng thức; 1đ chọn 13 và kiểm 12; 1đ phân biệt cận với sai số thực, có thể dùng phép tính trực tiếp tương đương. Phần kiểm thêm làm rõ trường hợp riêng, không yêu cầu học thuộc công thức tổng bình phương để được điểm.
 
 **D6 HELP `HELP-G12-EXP01-O04` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Cần chứng minh |f′′(x)|≤M trên toàn [a,b] trước khi dùng bound. (2) Ghi đúng bất đẳng thức M(b−a)³/(12n²)<ε. (3) Với f=x²,[0,1],M=2,ε=0,001: n²>1000/6. (4) Kiểm n=12 chưa đủ, n=13 thỏa; đây là cận trên, không phải sai số thật. (5) Chọn n đúng cho đề, rồi mới áp dụng tổng hình thang. Không ghi Mastery.
 
@@ -245,11 +245,11 @@ Khi một tích phân không có nguyên hàm sơ cấp hoặc dữ liệu chỉ
 
 *Đáp án tự mở:* (1)(2+4)/2+(2)(4+5)/2=3+9=12 cm³.
 
-**Written `THPT-G12-EXP01-W05`** — Một bảng vận tốc tại 0,2,4,6 s lần lượt 2,3,5,4 m/s. Lập công thức hình thang, tính quãng đường, nêu hạn chế.
+**Written `THPT-G12-EXP01-W05`** — Một bảng vận tốc tại các thời điểm 0, 2, 4, 6 giây lần lượt là 2, 3, 5, 4 m/s. Giả sử vận tốc không âm trong suốt khoảng thời gian khảo sát. Lập công thức hình thang ghép, ước lượng quãng đường và nêu hạn chế.
 
-*Lời giải chuẩn tự đối chiếu:* Các mốc thời gian $t=0,2,4,6$ (giây) cách đều $h=2$ s; vận tốc tương ứng là **$2,3,5,4$ m/s**. Giả sử vận tốc không âm trong giai đoạn, quãng đường xấp xỉ bằng diện tích dưới đồ thị: $T_3=h[(v_0+v_3)/2+v_1+v_2]=2[(2+4)/2+3+5]=\boxed{22\,\mathrm m}$. Có thể kiểm riêng từng khoảng: $2(2+3)/2=5$ m, $2(3+5)/2=8$ m, $2(5+4)/2=9$ m, tổng $5+8+9=22$ m. Đây chỉ là xấp xỉ từ số đo rời rạc, chưa có chứng nhận cận sai số vì chưa biết độ trơn và $|v''|$, đồng thời chưa xét sai số của cảm biến.
+*Lời giải chuẩn tự đối chiếu:* Các mốc thời gian cách đều \(h=2\,\mathrm s\). Vì vận tốc không âm, quãng đường bằng tích phân vận tốc; từ bảng ta chỉ xấp xỉ tích phân. Theo quy tắc hình thang ghép, \(T_3=2\left(\frac{2+4}{2}+3+5\right)=22\,\mathrm m\). Kiểm riêng từng khoảng: \(2\cdot\frac{2+3}{2}=5\,\mathrm m\), \(2\cdot\frac{3+5}{2}=8\,\mathrm m\), \(2\cdot\frac{5+4}{2}=9\,\mathrm m\); tổng bằng \(22\,\mathrm m\). Nếu dùng nội suy tuyến tính giữa các mốc, đây là quãng đường của mô hình nội suy; quãng đường thật có thể khác. Chưa đủ dữ liệu để chứng nhận cận sai số vì chưa biết độ trơn, cận đạo hàm cấp hai và sai số đo.
 
-**Rubric /5:** 1đ nêu h=2s; 1đ công thức; 1đ giá trị 22; 1đ đơn vị m; 1đ nêu không có bound nếu chỉ có dữ liệu.
+**Rubric /5:** 1đ xác định \(h=2\,\mathrm s\); 1đ lập đúng tổng hình thang; 1đ tính 22; 1đ ghi đơn vị mét và hiểu giả thiết không âm; 1đ nêu hạn chế của xấp xỉ. Chấp nhận cách cộng từng hình thang.
 
 **D6 HELP `HELP-G12-EXP01-O05` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Đọc trục thời gian/chiều dài và đơn vị của mỗi cột. (2) Nếu các mốc không cách đều, chia theo từng khoảng và dùng hᵢ riêng. (3) Với mốc 0,1,3 và diện tích 2,4,5: 1×(2+4)/2+2×(4+5)/2=12. (4) Đơn vị thể tích cm³, quãng đường m; từ bảng dữ liệu không tự suy được cận f′′. (5) Quay lại bảng gốc, tính từng hình thang và nêu một giới hạn đo lường. Không ghi Mastery.
 
@@ -380,11 +380,11 @@ Một hình 3D được nhìn qua màn hình 2D nên góc nhìn có thể tạo 
 
 *Đáp án tự mở:* V=2×4=8 (đv³).
 
-**Written `THPT-G12-EXP02-W02`** — Từ bộ 6 đỉnh đã cho, mô tả thao tác dựng và kiểm ba tính chất đáy/song song/thể tích.
+**Written `THPT-G12-EXP02-W02`** — Cho sáu điểm \(A(0;0;0), B(2;0;0), C(0;2;0)\), \(A'(0;0;3), B'(2;0;3), C'(0;2;3)\). Mô tả thao tác dựng lăng trụ tam giác \(ABC.A'B'C'\) trên giấy hoặc GeoGebra 3D. Kiểm tra hai mặt đáy, sự song song của các cạnh bên và tính thể tích.
 
-*Lời giải chuẩn tự đối chiếu:* Nhập vào GeoGebra 3D lần lượt $A(0,0,0)$, $B(2,0,0)$, $C(0,2,0)$ và $A'(0,0,3)$, $B'(2,0,3)$, $C'(0,2,3)$. Vẽ hai tam giác $ABC$, $A'B'C'$ rồi nối ba cặp đỉnh $AA'$, $BB'$, $CC'$; tổng cộng có 6 đỉnh, 9 cạnh và 5 mặt. Hai mặt đáy cùng nằm trong các mặt phẳng $z=0$ và $z=3$, song song; mỗi cạnh bên có véc-tơ $(0,0,3)$, nên hai tam giác đồng dạng tỉ số 1 (bằng nhau) và chiều cao là $h=3$. Vì $AB=AC=2$ và $AB\perp AC$, $S_{ABC}=(1/2)\cdot2\cdot2=2$. Do đó thể tích $V=S_{ABC}h=2\cdot3=\boxed{6}$ đơn vị khối. Có thể tự kiểm kết quả bằng tọa độ, không phụ thuộc hình ảnh phần mềm.
+*Lời giải chuẩn tự đối chiếu:* Nhập hoặc đánh dấu sáu điểm đã cho. Nối ba cạnh của mỗi tam giác ABC và \(A'B'C'\), rồi nối các cặp đỉnh tương ứng \(AA',BB',CC'\). Khối có 6 đỉnh, 9 cạnh và 5 mặt. Hai mặt đáy nằm trên hai mặt phẳng phân biệt \(z=0,z=3\), song song; ba vectơ cạnh bên đều bằng \((0;0;3)\), vuông góc với mặt phẳng đáy. Tam giác đáy \(ABC\) vuông tại A, \(AB=AC=2\), nên \(S_{ABC}=\frac12\cdot2\cdot2=2\). Chiều cao bằng 3; thể tích \(V=2\cdot3=6\) đơn vị thể tích. Tọa độ đủ để kiểm kết quả, không bắt buộc phải chạy phần mềm.
 
-**Rubric /5:** 1đ dựng đúng 6 đỉnh; 1đ nối 9 cạnh; 1đ kiểm hai mặt đáy; 1đ tính Sđáy=2; 1đ V=6.
+**Rubric /5:** 1đ dựng đúng sáu đỉnh; 1đ nối đúng chín cạnh; 1đ kiểm mặt đáy và cạnh bên; 1đ tính diện tích đáy và chiều cao; 1đ thể tích bằng 6. Chấp nhận mô tả dựng và kiểm chứng tương đương.
 
 **D6 HELP `HELP-G12-EXP02-O02` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Xác định ba đỉnh đáy không thẳng hàng trước khi tạo khối. (2) Khai báo ba đỉnh phía trên bằng cùng véc-tơ tịnh tiến. (3) Đáy A(0,0,0),B(2,0,0),C(0,2,0): diện tích=2. (4) Chiều cao 3 cho V=6; hình có 6 đỉnh, 9 cạnh, 5 mặt. (5) Quay về mô hình của bạn, kiểm 6 tọa độ và không trộn diện tích với thể tích. Không ghi Mastery.
 
@@ -450,11 +450,11 @@ Một hình 3D được nhìn qua màn hình 2D nên góc nhìn có thể tạo 
 
 *Đáp án tự mở:* Cùng (1/2,0,0).
 
-**Written `THPT-G12-EXP02-W04`** — Trình bày công thức M, kiểm hai cặp mép ghép và giải thích vì sao ảnh 3D không đủ chứng minh mọi tính chất tôpô.
+**Written `THPT-G12-EXP02-W04`** — Cho dải Möbius \(M(u,v)=\left(\left(1+\frac v2\cos\frac u2\right)\cos u;\left(1+\frac v2\cos\frac u2\right)\sin u;\frac v2\sin\frac u2\right)\), với \(0\le u\le2\pi,\ -1\le v\le1\). Kiểm hai cặp điểm ghép tương ứng với v=1 và v=−1, giải thích quy tắc đảo chiều và vì sao một ảnh 3D không đủ chứng minh mọi tính chất tôpô.
 
-*Lời giải chuẩn tự đối chiếu:* Đặt $M(u,v)=((1+\frac v2\cos\frac u2)\cos u,(1+\frac v2\cos\frac u2)\sin u,\frac v2\sin\frac u2)$ với $0\le u\le2\pi$, $-1\le v\le1$. Với $u=0$: $\cos0=1$, $\sin0=0$, nên $M(0,v)=(1+v/2,0,0)$. Với $u=2\pi$ và tham số ngang $-v$, có $\cos\pi=-1$, $\cos2\pi=1$, $\sin\pi=0$, do đó $M(2\pi,-v)=(1+v/2,0,0)=M(0,v)$. Riêng $v=1$ cho $M(0,1)=M(2\pi,-1)=(3/2,0,0)$; $v=-1$ cho $M(0,-1)=M(2\pi,1)=(1/2,0,0)$. Dấu trừ biểu thị đảo chiều bề ngang khi ghép hai đầu dải sau một vòng, nhưng một ảnh phối cảnh **không tự nó chứng minh** mọi tính chất tôpô như tính một phía.
+*Lời giải chuẩn tự đối chiếu:* Thay \(u=0\), dùng \(\cos0=1,\sin0=0\), được \(M(0,v)=(1+\frac v2;0;0)\). Thay \(u=2\pi\) và tham số ngang \(-v\), dùng \(\cos\pi=-1,\sin\pi=0,\cos2\pi=1\), được \(M(2\pi,-v)=(1+\frac v2;0;0)\). Vì vậy \(M(0,1)=M(2\pi,-1)=(\frac32;0;0)\) và \(M(0,-1)=M(2\pi,1)=(\frac12;0;0)\). Hai đầu dải ghép với tham số ngang đảo dấu sau một vòng. Đây là kiểm chứng bằng công thức, không chỉ bằng ảnh; một ảnh phối cảnh có thể che vùng và không tự chứng minh các tính chất tôpô khác như tính một phía.
 
-**Rubric /5:** 1đ nêu đúng miền tham số; 1đ công thức tọa độ; 1đ tính cặp v=1; 1đ tính cặp v=−1; 1đ giải thích ghép đảo chiều.
+**Rubric /5:** 1đ tính đúng \(M(0,v)\); 1đ tính đúng \(M(2\pi,-v)\); 1đ kiểm cả hai cặp điểm; 1đ giải thích đảo chiều; 1đ nêu giới hạn của suy luận từ ảnh.
 
 **D6 HELP `HELP-G12-EXP02-O04` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Nhớ miền u∈[0,2π],v∈[−1,1] và nửa vòng xoắn. (2) Viết M(0,v) và M(2π,−v), chứng minh chúng bằng nhau. (3) Kiểm v=1: cả hai cùng (3/2,0,0). (4) Kiểm v=−1: cả hai cùng (1/2,0,0); đừng suy từ một ảnh chụp. (5) Với bài của bạn, chú giải ghép mép đảo dấu v và xác định điều gì là quan sát/giả thuyết. Không ghi Mastery.
 
@@ -485,11 +485,13 @@ Một hình 3D được nhìn qua màn hình 2D nên góc nhìn có thể tạo 
 
 *Đáp án tự mở:* Thêm góc nhìn khác và dữ liệu tọa độ/quan hệ giao–song song.
 
-**Written `THPT-G12-EXP02-W05`** — Lập báo cáo 6 mục về một mô hình Möbius hoặc ảo giác Penrose và giải thích giới hạn suy luận.
+**Written `THPT-G12-EXP02-W05`** — Lập báo cáo sáu mục về một mô hình Möbius hoặc ảo giác Penrose: mục tiêu, dữ liệu, quy trình, hai góc nhìn, kiểm chứng toán học và giới hạn suy luận. Có thể dùng bản vẽ phối cảnh có ghi tọa độ/tham số thay cho ảnh phần mềm khi chưa có GeoGebra.
 
-*Lời giải chuẩn tự đối chiếu:* **(1) Mục tiêu:** dựng dải vặn nửa vòng và kiểm tra quy tắc ghép đảo chiều ở hai mép. **(2) Dữ liệu:** chọn $u\in[0,2\pi]$, $v\in[-1,1]$ và $M(u,v)=((1+\frac v2\cos\frac u2)\cos u,(1+\frac v2\cos\frac u2)\sin u,\frac v2\sin\frac u2)$. **(3) Quy trình:** trong GeoGebra 3D nhập lệnh dạng `Surface((1+v*cos(u/2)/2)*cos(u), (1+v*cos(u/2)/2)*sin(u), v*sin(u/2)/2, u, 0, 2*pi, v, -1, 1)` (đối chiếu đúng cú pháp/lựa chọn ký hiệu của phiên bản đang dùng); lưu file, đối chiếu tọa độ khi $u=0,2\pi$. **(4) Hai góc nhìn:** lưu ảnh nhìn từ trên và ảnh xiên/ngang, ghi rõ góc nhìn và chú thích một vùng dải/mép. **(5) Kiểm chứng:** tính trực tiếp $M(0,v)=(1+v/2,0,0)=M(2\pi,-v)$, đặc biệt với $v=1,-1$, để thấy quy tắc đảo mép; không chỉ dựa vào ảnh. **(6) Giới hạn:** ảnh một góc có thể che vùng, chất lượng vẽ phụ thuộc lấy mẫu máy tính, và kiểm dán mép chưa phải chứng minh hình thức cho mọi đặc tính tôpô của dải Möbius.
+*Lời giải chuẩn tự đối chiếu:* **Mẫu Möbius:** (1) Mục tiêu: kiểm quy tắc ghép đảo chiều. (2) Dữ liệu: \(M(u,v)=\left(\left(1+\frac v2\cos\frac u2\right)\cos u;\left(1+\frac v2\cos\frac u2\right)\sin u;\frac v2\sin\frac u2\right)\), \(u\in[0;2\pi],v\in[-1;1]\). (3) Quy trình: dựng mặt tham số bằng lệnh dạng `Surface((1+v*cos(u/2)/2)*cos(u), (1+v*cos(u/2)/2)*sin(u), v*sin(u/2)/2, u, 0, 2*pi, v, -1, 1)` (cú pháp minh họa; đối chiếu phiên bản phần mềm); lưu dữ liệu. (4) Ghi hai góc nhìn khác nhau và chú thích mép. (5) Kiểm bằng công thức \(M(0,v)=M(2\pi,-v)=(1+\frac v2;0;0)\). (6) Giới hạn: ảnh không chứng minh mọi tính chất tôpô.
 
-**Rubric /5:** 1đ giả thiết/mục tiêu; 1đ dữ liệu tọa độ/tham số; 1đ quy trình tái lập; 1đ hai góc nhìn & kiểm; 1đ giới hạn hợp lí.
+**Nếu chọn Penrose:** cùng sáu mục, nhưng lưu tọa độ đầu–cuối các thanh và hướng chiếu; ảnh thứ nhất ghi chỗ trông như nối, ảnh thứ hai hoặc bản vẽ nhìn bên giúp thấy độ sâu. Dùng tọa độ kiểm có hay không điểm chung thật ở từng chỗ nối; nếu hai đầu có cùng hình chiếu mà khác tọa độ không gian thì chúng không nối tại điểm đó. Kết luận giới hạn theo chính cấu hình đã dựng, không suy rằng mọi ảnh tam giác đều là ảo giác. Không cần thực hiện cả hai mô hình.
+
+**Rubric /5:** 1đ mục tiêu và giả thiết; 1đ dữ liệu tọa độ/tham số đủ tái lập; 1đ quy trình; 1đ hai góc nhìn cùng kiểm chứng toán phù hợp mô hình đã chọn; 1đ giới hạn hợp lí. Chấp nhận cả Penrose và Möbius, cả bản vẽ có kiểm chứng và báo cáo phần mềm.
 
 **D6 HELP `HELP-G12-EXP02-O05` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Viết mục tiêu và giả thiết mô hình thành câu có thể kiểm. (2) Ghi tọa độ/tham số và các bước dựng theo thứ tự để tái lập. (3) Chụp 2 góc nhìn; từ chúng hãy chỉ ra chỗ nối/tách nhau hoặc mép ghép. (4) Phân loại điều chứng minh từ tọa độ và điều chỉ quan sát từ hiển thị. (5) Thử đưa báo cáo cho người khác làm lại; sửa mọi điểm thiếu đầu vào. Không ghi Mastery.
 
