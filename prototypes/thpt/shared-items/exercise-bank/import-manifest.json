@@ -24498,6 +24498,129 @@
         "limitations": "No fresh direct SGK PDF audit, independent NotebookLM verdict, browser/renderer or runtime QA. 3 materially distinct Written variants require scoped delta review; all original historical receipts remain immutable. Existing CD09 and earlier mapping gaps unchanged."
       },
       "handoff": "Stop after CD11. Next CD12 onward only as owner directs. No merge/deploy, no edits to docs/runtime, RD1, Final Submit, Mastery, Firebase or Golden UI."
+    },
+    "exercise_completion_cp132_cp134": {
+      "scope": "Owner-directed CD12–14 exercise bank candidate; content and placement conversion, no release",
+      "baseline": "0ddab82844f2bf57609e7568d601a9c8d36a893e",
+      "head_before_manifest": "bcabbb24ccc1d097db85e8f90a1b4d9e1aa7a0dd",
+      "standard": "Q01–Q18 v3.2.0 X-G.5/X-G.6 #1091",
+      "status": "AUTHORING_BANK_CD12_CD14_CONTENT_CANDIDATE_SCOPED_DELTA_AND_RELEASE_PENDING",
+      "group_inventory": {
+        "unique": 221,
+        "interactive": 202,
+        "written": 19,
+        "choices": 808,
+        "practice_total": 176,
+        "practice_interactive": 157,
+        "vandung_placements": 51,
+        "vandung_reuses": 6,
+        "selfcheck_reuses": 51,
+        "placements": 278,
+        "outcomes": 51,
+        "skill_mapping_pending": 0,
+        "overlap_with_cd01_cd11": 0,
+        "cumulative_unique_cd01_cd14": 1161,
+        "cumulative_interactive": 1028,
+        "cumulative_written": 133
+      },
+      "reports": [
+        {
+          "topic": "CD12",
+          "title": "Hệ thức lượng trong tam giác",
+          "unique": 43,
+          "interactive": 37,
+          "written": 6,
+          "practice": 35,
+          "practice_interactive": 29,
+          "vandung": 12,
+          "replay": 12,
+          "choices": 148,
+          "outcomes": 12,
+          "rubrics": {
+            "/7": 6
+          },
+          "math": "Sign and supplementary angles, cosine/sine rules, ambiguous SSA, Heron and r/R, surveying. Added one reuse of Vận dụng for O01 practice; selected one interactive replay per outcome instead of two written replay placements."
+        },
+        {
+          "topic": "CD13",
+          "title": "Vectơ",
+          "unique": 68,
+          "interactive": 64,
+          "written": 4,
+          "practice": 54,
+          "practice_interactive": 50,
+          "vandung": 16,
+          "replay": 16,
+          "choices": 256,
+          "outcomes": 16,
+          "rubrics": {
+            "/7": 4
+          },
+          "math": "Planar and spatial vectors, coordinates, dot product, centroid, distance, displacement versus path length, work. Reused two Vận dụng items for practice O13/O16."
+        },
+        {
+          "topic": "CD14",
+          "title": "Phương pháp tọa độ trong mặt phẳng",
+          "unique": 110,
+          "interactive": 101,
+          "written": 9,
+          "practice": 87,
+          "practice_interactive": 78,
+          "vandung": 23,
+          "replay": 23,
+          "choices": 404,
+          "outcomes": 23,
+          "rubrics": {
+            "/6": 3,
+            "/7": 5,
+            "/8": 1
+          },
+          "math": "Line equations, intersection and distance, circle, tangency, conics. W03 distinct non-right triangle variant: center (4;2), radius 2sqrt5, tangent 2x+y=0; same ID and 7-point rubric."
+        }
+      ],
+      "files": {
+        "items/cd12.json": "fcc5cc0e29ee1ebbc912d685385496dcab79e7f8",
+        "items/cd13.json": "491261a785cc8ae4d5363ca5ce528559614d0671",
+        "items/cd14.json": "661ae7c2b71aea2c36075ab304722bf6c960321e",
+        "items/g10-chiii.json": "e6a4228e0717927352be6f36951eff45f5b7e0e0",
+        "items/g10-chiv.json": "d7cca5328b9debdfc1bceeee099284b0cb702e69",
+        "items/g12-chii.json": "987ebdf29dd6a91e1b3e793f272b9373321206ab",
+        "items/g10-chvii.json": "c7421270652efbefdffae8c5ef1676b3e7bbe084",
+        "items/topic-knowledge-first-try.json": "22236e188c0cf786d1d3cab146db8a111410b284",
+        "placements/cd12.json": "53c1efdd17b89584a0b67b7d5714eae2b79a4300",
+        "placements/cd13.json": "6fc1c2b3b264c6a2e3b050fcd4b26d46c2534461",
+        "placements/cd14.json": "8797bf8079c1f748f252214ef0f9d579a02fc944",
+        "placements/topic-knowledge-first-try.json": "c3b350cbca5122c165a5bae298a0e0705bb32a53",
+        "written-references.json": "2aabdb70762547081182ccaebe9f8a5f98f8fe6f"
+      },
+      "sources": [
+        {
+          "path": "prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md",
+          "prior": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+          "blob": "7f98ce963dec4db7f75d0d9a0ead93efc103cd75",
+          "sections": 4
+        },
+        {
+          "path": "prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md",
+          "prior": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+          "blob": "436b99861afeb84a3bbad979ab4bcda34ccd481a",
+          "sections": 4
+        },
+        {
+          "path": "prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md",
+          "prior": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+          "blob": "a451366a91d041f2d2bb8e04d66ab5964d68893c",
+          "sections": 5
+        }
+      ],
+      "qa": {
+        "choice_schema": "202/202 four distinct choices, exact key resolves, hint/skill/solution present, auto_grade=false; all 221 unique IDs resolve",
+        "outcome_coverage": "51/51 at least 2 practice placements, one Vận dụng, one interactive replay",
+        "selfcheck": "51 canonical practice reuses, AFTER_WHOLE_SUBMISSION, hints_before_submission=false, mastery=false",
+        "overlap": "Verified 940 prior unique IDs and 221 current IDs, intersection empty",
+        "limitations": "No fresh direct SGK/SBT PDF audit, independent NotebookLM verdict, browser/renderer/runtime QA. W03 material delta requires scoped review; 13 Written source changes and historical receipts remain distinct. Full outside-scope record comparison not completed; git changed-path comparison confined to exercise-bank and three existing source paths. Some legacy formula typography may remain; do not claim full Q18 or release clearance."
+      },
+      "handoff": "Stop after CD14; no merge/deploy, no runtime, RD1, Final Submit, Mastery, Firebase or Golden UI edits."
     }
   }
 }
