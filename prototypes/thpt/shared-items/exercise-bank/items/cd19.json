@@ -1,7 +1,7 @@
 [
   {
     "item_id": "THPT-TOP19-P01",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P01",
     "stem": "Một cửa hàng có danh sách 6 loại trà và danh sách 4 loại nước trái cây, trong đó có 2 loại đồ uống xuất hiện trong cả hai danh sách. Khách chọn đúng một loại đồ uống. Có bao nhiêu cách? Giải thích vì sao không cộng trực tiếp \\(6+4\\).",
     "answer_key": "8 cách.",
     "worked_solution": "Nếu cộng \\(6+4=10\\), hai loại đồ uống có mặt trong cả hai danh sách bị đếm hai lần. Tách thành 6 loại trong danh sách trà và \\(4-2=2\\) loại chỉ thuộc danh sách nước trái cây. Hai nhóm này không trùng nhau. Theo quy tắc cộng, có \\(6+2=8\\) cách. Mỗi lựa chọn được đếm đúng một lần.",
@@ -13,13 +13,17 @@
       "TOP19-O01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tách 6 loại trà và các loại nước trái cây chưa nằm trong danh sách trà."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -27,12 +31,31 @@
       "heading_id": "THPT-TOP19-P01",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Chỉ cộng trực tiếp khi hai nhóm không có phần tử trùng; nếu có giao, đếm mỗi lựa chọn đúng một lần. Ôn CĐ19 mục 1.1; luyện THPT-G10-B23-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Chỉ cộng trực tiếp khi hai nhóm không có phần tử trùng; nếu có giao, đếm mỗi lựa chọn đúng một lần. Ôn CĐ19 mục 1.1; luyện THPT-G10-B23-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "8 cách; hai loại bị đếm trùng nếu cộng 6+4."
+      },
+      {
+        "id": "B",
+        "text": "10 cách; hai danh sách luôn rời nhau."
+      },
+      {
+        "id": "C",
+        "text": "24 cách; chọn một từ mỗi danh sách."
+      },
+      {
+        "id": "D",
+        "text": "6 cách; bỏ toàn bộ danh sách thứ hai."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P02",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P02",
     "stem": "Một suất ăn gồm một trong 2 món khai vị, một trong 3 món chính và một trong 4 đồ uống. Riêng món chính thứ nhất chỉ được ghép với 2 đồ uống; hai món chính còn lại ghép được với cả 4 đồ uống. Có bao nhiêu suất ăn?",
     "answer_key": "20 suất.",
     "worked_solution": "Chia theo món chính. Với món chính thứ nhất, có 2 lựa chọn khai vị và 2 lựa chọn đồ uống, được \\(2\\cdot2=4\\) suất. Với hai món chính còn lại, có 2 lựa chọn món chính, 2 khai vị và 4 đồ uống, được \\(2\\cdot2\\cdot4=16\\) suất. Hai nhóm rời nhau nên có \\(4+16=20\\) suất. Không dùng \\(2\\cdot3\\cdot4\\) vì một số cách ghép không hợp lệ.",
@@ -44,13 +67,17 @@
       "TOP19-O02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Chia theo món chính đặc biệt và hai món còn lại; đếm từng nhóm bằng quy tắc nhân."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -58,12 +85,31 @@
       "heading_id": "THPT-TOP19-P02",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhân số lựa chọn của mọi bước mà không xét điều kiện ghép món, em sẽ đếm cả những suất không hợp lệ. Chia thành các trường hợp rời nhau theo món chính, nhân trong từng trường hợp rồi cộng. Ôn CĐ19 mục 1.2; luyện THPT-G10-B23-P04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhân số lựa chọn của mọi bước mà không xét điều kiện ghép món, em sẽ đếm cả những suất không hợp lệ. Chia thành các trường hợp rời nhau theo món chính, nhân trong từng trường hợp rồi cộng. Ôn CĐ19 mục 1.2; luyện THPT-G10-B23-P04.",
+    "options": [
+      {
+        "id": "A",
+        "text": "24 suất."
+      },
+      {
+        "id": "B",
+        "text": "9 suất."
+      },
+      {
+        "id": "C",
+        "text": "16 suất."
+      },
+      {
+        "id": "D",
+        "text": "20 suất."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P03",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P03",
     "stem": "Từ tập chữ số \\(\\{0,1,2,3,4\\}\\), lập số tự nhiên có ba chữ số. Tính số cách khi (a) các chữ số được phép lặp; (b) các chữ số đôi một khác nhau. Giải thích sự khác biệt.",
     "answer_key": "(a) 100; (b) 48.",
     "worked_solution": "Hàng trăm luôn có 4 lựa chọn khác 0. (a) Được lặp nên hàng chục và hàng đơn vị đều có 5 lựa chọn: \\(4\\cdot5\\cdot5=100\\). (b) Không lặp: sau hàng trăm còn 4 lựa chọn hàng chục, sau đó còn 3 lựa chọn hàng đơn vị: \\(4\\cdot4\\cdot3=48\\). Điều kiện chữ số đầu khác 0 không thay đổi; chỉ điều kiện lặp làm số lựa chọn ở các bước sau thay đổi.",
@@ -75,13 +121,17 @@
       "TOP19-O03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "So sánh số lựa chọn của ô đầu với hai ô sau, xét điều kiện lặp."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -89,12 +139,31 @@
       "heading_id": "THPT-TOP19-P03",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Số tự nhiên có ba chữ số không bắt đầu bằng 0; có lặp hay không quyết định số lựa chọn sau mỗi bước. Ôn CĐ19 mục 1.3; luyện THPT-G10-CHVIII-TRY03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Số tự nhiên có ba chữ số không bắt đầu bằng 0; có lặp hay không quyết định số lựa chọn sau mỗi bước. Ôn CĐ19 mục 1.3; luyện THPT-G10-CHVIII-TRY03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "(a) 125; (b) 60."
+      },
+      {
+        "id": "B",
+        "text": "(a) 100; (b) 60."
+      },
+      {
+        "id": "C",
+        "text": "(a) 100; (b) 48."
+      },
+      {
+        "id": "D",
+        "text": "(a) 64; (b) 48."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P04",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P04",
     "stem": "Từ tập chữ số \\(\\{0,1,2,3,4,5\\}\\) lập số chẵn có ba chữ số đôi một khác nhau. Có bao nhiêu số?",
     "answer_key": "52 số.",
     "worked_solution": "Số chẵn phải có hàng đơn vị là 0, 2 hoặc 4. Vì chữ số 0 bị cấm ở hàng trăm, chia hai trường hợp rời nhau. Nếu hàng đơn vị bằng 0: chọn hàng trăm trong 5 chữ số khác 0, hàng chục còn 4 lựa chọn; được \\(5\\cdot4=20\\) số. Nếu hàng đơn vị bằng 2 hoặc 4: có 2 cách chọn chữ số cuối; hàng trăm có 4 lựa chọn khác 0 và khác chữ số cuối, hàng chục còn 4 lựa chọn; được \\(2\\cdot4\\cdot4=32\\) số. Tổng cộng có \\(20+32=52\\) số.",
@@ -106,13 +175,17 @@
       "TOP19-O04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tách hàng đơn vị bằng 0 và khác 0 trước khi đếm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -120,12 +193,31 @@
       "heading_id": "THPT-TOP19-P04",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Hai trường hợp cuối 0 và cuối khác 0 có số lựa chọn hàng trăm khác nhau; cộng sau khi đếm riêng. Ôn CĐ19 mục 1.4; luyện THPT-G10-B23-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Hai trường hợp cuối 0 và cuối khác 0 có số lựa chọn hàng trăm khác nhau; cộng sau khi đếm riêng. Ôn CĐ19 mục 1.4; luyện THPT-G10-B23-P05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "60 số."
+      },
+      {
+        "id": "B",
+        "text": "52 số."
+      },
+      {
+        "id": "C",
+        "text": "48 số."
+      },
+      {
+        "id": "D",
+        "text": "36 số."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P05",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P05",
     "stem": "Xếp 6 quyển sách phân biệt A,B,C,D,E,F thành một hàng. Có bao nhiêu cách để A và B không đứng cạnh nhau?",
     "answer_key": "480 cách.",
     "worked_solution": "Tổng số hoán vị của 6 quyển sách là \\(P_6=6!=720\\). Đếm trường hợp A và B cạnh nhau: gộp A, B thành một khối, cùng 4 sách còn lại có 5 đối tượng phân biệt, xếp được \\(5!\\) cách. Trong khối có 2 thứ tự AB, BA, nên có \\(2\\cdot5!=240\\) cách. Trừ khỏi tổng: \\(720-240=480\\). Hai trường hợp cạnh nhau và không cạnh nhau bao phủ toàn bộ cách xếp, không trùng nhau.",
@@ -137,13 +229,17 @@
       "TOP19-O05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Đếm phần bù: gộp hai quyển A và B thành một khối để đếm cách xếp cạnh nhau, rồi xét thứ tự bên trong khối."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -151,12 +247,31 @@
       "heading_id": "THPT-TOP19-P05",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Đừng quên thứ tự bên trong khối; nếu không được cạnh nhau, trừ số cách cạnh nhau khỏi tổng. Ôn CĐ19 mục 2.1; luyện THPT-G10-B24-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Đừng quên thứ tự bên trong khối; nếu không được cạnh nhau, trừ số cách cạnh nhau khỏi tổng. Ôn CĐ19 mục 2.1; luyện THPT-G10-B24-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "480 cách."
+      },
+      {
+        "id": "B",
+        "text": "240 cách."
+      },
+      {
+        "id": "C",
+        "text": "720 cách."
+      },
+      {
+        "id": "D",
+        "text": "600 cách."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P06",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P06",
     "stem": "Có 7 vận động viên phân biệt, trao huy chương vàng, bạc, đồng cho 3 người khác nhau. Có bao nhiêu kết quả?",
     "answer_key": "210 kết quả.",
     "worked_solution": "Vàng, bạc, đồng là ba vị trí phân biệt; một người không nhận hai huy chương. Chọn người nhận vàng có 7 cách, bạc còn 6, đồng còn 5. Do đó có \\(A_7^3=7\\cdot6\\cdot5=210\\) kết quả. Đổi người giữa vàng và bạc làm kết quả thay đổi nên không dùng \\(C_7^3\\).",
@@ -168,13 +283,17 @@
       "TOP19-O06"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Ba huy chương là ba vị trí khác nhau; nếu chỉ chọn nhóm ba người, em còn phải phân công huy chương."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -182,12 +301,31 @@
       "heading_id": "THPT-TOP19-P06",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng tổ hợp, mới chỉ chọn người; cần nhân số cách phân vai. Ôn CĐ19 mục 2.2; luyện THPT-G10-B24-P02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng tổ hợp, mới chỉ chọn người; cần nhân số cách phân vai. Ôn CĐ19 mục 2.2; luyện THPT-G10-B24-P02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "35 kết quả."
+      },
+      {
+        "id": "B",
+        "text": "343 kết quả."
+      },
+      {
+        "id": "C",
+        "text": "42 kết quả."
+      },
+      {
+        "id": "D",
+        "text": "210 kết quả."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P07",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P07",
     "stem": "Chọn nhóm 4 người từ 7 người khác nhau, không phân vai. Có bao nhiêu nhóm?",
     "answer_key": "35 nhóm.",
     "worked_solution": "Nhóm bốn người không phân vai, nên đổi thứ tự ghi tên không tạo nhóm mới. Chọn bốn từ bảy bằng tổ hợp \\(C_7^4=\\frac{7!}{4!3!}=\\frac{7\\cdot6\\cdot5}{3\\cdot2\\cdot1}=35\\). Kiểm bằng việc chọn ba người không có mặt: \\(C_7^3=35\\), cho cùng kết quả.",
@@ -199,13 +337,17 @@
       "TOP19-O07"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đếm bằng cách chọn phần bù hoặc tổ hợp; thứ tự ghi tên không tạo nhóm mới."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -213,12 +355,31 @@
       "heading_id": "THPT-TOP19-P07",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng chỉnh hợp, mỗi nhóm bốn người bị đếm \\(4!\\) lần. Ôn CĐ19 mục 2.3; luyện THPT-G10-B24-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng chỉnh hợp, mỗi nhóm bốn người bị đếm \\(4!\\) lần. Ôn CĐ19 mục 2.3; luyện THPT-G10-B24-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "840 nhóm."
+      },
+      {
+        "id": "B",
+        "text": "28 nhóm."
+      },
+      {
+        "id": "C",
+        "text": "35 nhóm."
+      },
+      {
+        "id": "D",
+        "text": "49 nhóm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P08",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P08",
     "stem": "Một lớp có 6 bạn nam và 5 bạn nữ. Chọn nhóm 4 người không phân vai, có ít nhất 2 nam và ít nhất 1 nữ. Có bao nhiêu nhóm?",
     "answer_key": "250 nhóm.",
     "worked_solution": "Số nam có thể là 2 hoặc 3 vì nhóm có 4 người và ít nhất một nữ. Với 2 nam, 2 nữ: \\(C_6^2C_5^2=15\\cdot10=150\\). Với 3 nam, 1 nữ: \\(C_6^3C_5^1=20\\cdot5=100\\). Hai cơ cấu không trùng, tổng số nhóm là \\(150+100=250\\). Không nhân thêm \\(4!\\) vì chưa phân vai.",
@@ -230,13 +391,17 @@
       "TOP19-O08"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Tách các trường hợp theo số nam được chọn; mỗi trường hợp dùng hai tổ hợp."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -244,12 +409,31 @@
       "heading_id": "THPT-TOP19-P08",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ tính 2 nam, 2 nữ, còn thiếu cơ cấu 3 nam, 1 nữ. Hai cơ cấu rời nhau: nhân hai tổ hợp trong từng cơ cấu rồi cộng. Ôn CĐ19 mục 2.4; luyện THPT-G10-B24-P05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ tính 2 nam, 2 nữ, còn thiếu cơ cấu 3 nam, 1 nữ. Hai cơ cấu rời nhau: nhân hai tổ hợp trong từng cơ cấu rồi cộng. Ôn CĐ19 mục 2.4; luyện THPT-G10-B24-P05.",
+    "options": [
+      {
+        "id": "A",
+        "text": "150 nhóm."
+      },
+      {
+        "id": "B",
+        "text": "250 nhóm."
+      },
+      {
+        "id": "C",
+        "text": "100 nhóm."
+      },
+      {
+        "id": "D",
+        "text": "265 nhóm."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P14",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P14",
     "stem": "Từ 9 người khác nhau: (a) chỉ chọn nhóm 3 người không phân vai, (b) chọn 3 người giữ ba chức danh phân biệt. Hãy nêu phép tính trên máy (nCr hay nPr), cho đáp án và kiểm quan hệ giữa hai kết quả mà không cần máy.",
     "answer_key": "(a) nCr, 84 nhóm; (b) nPr, 504 cách; \\(504=84\\cdot3!\\).",
     "worked_solution": "(a) Chỉ chọn nhóm ba người nên dùng nCr: \\(C_9^3=\\frac{9\\cdot8\\cdot7}{3\\cdot2\\cdot1}=84\\) nhóm. (b) Chọn ba chức danh khác nhau nên dùng nPr: \\(A_9^3=9\\cdot8\\cdot7=504\\). Kiểm tay: một nhóm ba người có \\(3!=6\\) cách phân vai, nên \\(84\\cdot6=504\\). Phải quyết định phép tính trước khi bấm máy.",
@@ -262,13 +446,17 @@
       "TOP19-O14"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Quyết định trước có xét thứ tự hay không; kiểm hệ thức \\(A_n^k=C_n^k\\cdot k!\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -276,12 +464,31 @@
       "heading_id": "THPT-TOP19-P14",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "nPr và nCr với cùng n, k có quan hệ nhân với \\(k!\\). Kiểm đúng cặp giá trị \\((n;k)=(9;3)\\) khi nhập máy, không nhầm chức năng. Ôn CĐ19 mục 2.5; luyện THPT-TOP19-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "nPr và nCr với cùng n, k có quan hệ nhân với \\(k!\\). Kiểm đúng cặp giá trị \\((n;k)=(9;3)\\) khi nhập máy, không nhầm chức năng. Ôn CĐ19 mục 2.5; luyện THPT-TOP19-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "(a) nPr, 504; (b) nCr, 84."
+      },
+      {
+        "id": "B",
+        "text": "(a) nCr, 84; (b) nPr, 252."
+      },
+      {
+        "id": "C",
+        "text": "Cả hai dùng nCr, 84."
+      },
+      {
+        "id": "D",
+        "text": "(a) nCr, 84; (b) nPr, 504; \\(504=84\\cdot3!\\)."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P09",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P09",
     "stem": "Hãy khai triển đầy đủ \\((x+2)^4\\) và cho biết hệ số của \\(x^2\\).",
     "answer_key": "\\(x^4+8x^3+24x^2+32x+16\\); hệ số của \\(x^2\\) là 24.",
     "worked_solution": "Trong \\((x+2)^4\\), chọn số 2 ở k vị trí trong bốn thừa số. Với k lần lượt bằng 0, 1, 2, 3, 4, các hệ số tổ hợp là 1, 4, 6, 4, 1. Vậy \\((x+2)^4=x^4+4\\cdot2x^3+6\\cdot2^2x^2+4\\cdot2^3x+2^4=x^4+8x^3+24x^2+32x+16\\). Hệ số của \\(x^2\\) là \\(6\\cdot2^2=24\\), không chỉ là 6.",
@@ -294,13 +501,17 @@
       "TOP19-O09"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Chọn số lần lấy hạng tử 2 trong bốn nhân tử, ghi đủ lũy thừa."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -308,12 +519,31 @@
       "heading_id": "THPT-TOP19-P09",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Hệ số không chỉ là số cách chọn: còn tích các hệ số của hạng tử đã chọn. Ôn CĐ19 mục 3.1; luyện THPT-G10-B25-C02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Hệ số không chỉ là số cách chọn: còn tích các hệ số của hạng tử đã chọn. Ôn CĐ19 mục 3.1; luyện THPT-G10-B25-C02.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x^4+8x^3+24x^2+32x+16\\); hệ số 24."
+      },
+      {
+        "id": "B",
+        "text": "\\(x^4+4x^3+6x^2+4x+16\\); hệ số 6."
+      },
+      {
+        "id": "C",
+        "text": "\\(x^4+8x^3+12x^2+32x+16\\); hệ số 12."
+      },
+      {
+        "id": "D",
+        "text": "\\(x^4+8x^3+24x^2+16x+16\\); hệ số 24."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P10",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P10",
     "stem": "Tìm hệ số của \\(x^4\\) trong \\((3x-2)^5\\).",
     "answer_key": "−810.",
     "worked_solution": "Trong \\((3x-2)^5\\), để nhận \\(x^4\\) phải chọn \\(3x\\) ở bốn vị trí và \\(-2\\) ở vị trí còn lại. Có \\(C_5^1=5\\) cách chọn vị trí của \\(-2\\). Mỗi tích có hệ số \\(3^4(-2)=81(-2)\\), nên hệ số cần tìm là \\(5\\cdot81\\cdot(-2)=-810\\). Dấu âm do chọn \\(-2\\) một lần.",
@@ -326,13 +556,17 @@
       "TOP19-O10"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tính số lần lấy hạng tử âm từ bậc x cần tìm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -340,12 +574,31 @@
       "heading_id": "THPT-TOP19-P10",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu sai dấu, kiểm chẵn/lẻ số lần chọn hạng tử âm; không nhầm số mũ x với số lần chọn hằng số. Ôn CĐ19 mục 3.2; luyện THPT-G10-B25-P01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu sai dấu, kiểm chẵn/lẻ số lần chọn hạng tử âm; không nhầm số mũ x với số lần chọn hằng số. Ôn CĐ19 mục 3.2; luyện THPT-G10-B25-P01.",
+    "options": [
+      {
+        "id": "A",
+        "text": "810."
+      },
+      {
+        "id": "B",
+        "text": "−162."
+      },
+      {
+        "id": "C",
+        "text": "−405."
+      },
+      {
+        "id": "D",
+        "text": "−810."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P13",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P13",
     "stem": "Một mô hình dự báo tồn kho bắt đầu với 2 000 sản phẩm, tăng theo cùng tỉ lệ 2% mỗi năm trong 5 năm. (a) Dùng hai số hạng đầu của khai triển \\((1+0{,}02)^5\\) để ước lượng số sản phẩm. (b) Tính giá trị mô hình bằng máy, làm tròn đến 2 chữ số thập phân, và nhận xét ước lượng cao hay thấp.",
     "answer_key": "(a) 2 200 sản phẩm (ước lượng); (b) giá trị mô hình \\(2\\,208{,}16\\), ước lượng thấp hơn khoảng \\(8{,}16\\).",
     "worked_solution": "Đổi 2% thành \\(r=0{,}02\\). Giá trị mô hình sau 5 năm là \\(2000(1+r)^5\\). Hai số hạng đầu cho \\(2000(1+5r)=2200\\). Tính đầy đủ \\(2000(1{,}02)^5=2208{,}1616064\\approx2208{,}16\\). Các số hạng bỏ qua trong khai triển \\(10r^2+10r^3+5r^4+r^5\\) đều dương vì \\(r>0\\), nên ước lượng thấp hơn khoảng \\(8{,}16\\). Giá trị thập phân là kết quả mô hình, không phải số sản phẩm thực tế đếm được.",
@@ -357,13 +610,17 @@
       "TOP19-O13"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Viết \\((1+r)^5\\) với \\(r=0{,}02\\); so giá trị dùng hai số hạng đầu với giá trị đầy đủ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -371,12 +628,31 @@
       "heading_id": "THPT-TOP19-P13",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Đừng coi xấp xỉ là chính xác; xét dấu các số hạng bỏ qua để biết chiều sai số. Ôn CĐ19 mục 3.3; luyện THPT-TOP19-P09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Đừng coi xấp xỉ là chính xác; xét dấu các số hạng bỏ qua để biết chiều sai số. Ôn CĐ19 mục 3.3; luyện THPT-TOP19-P09.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ước lượng 2 200; mô hình 2 208,16; ước lượng thấp hơn 8,16."
+      },
+      {
+        "id": "B",
+        "text": "Ước lượng 2 200; mô hình 2 200,00; bằng nhau."
+      },
+      {
+        "id": "C",
+        "text": "Ước lượng 2 040; mô hình 2 208,16; thấp hơn 168,16."
+      },
+      {
+        "id": "D",
+        "text": "Ước lượng 2 200; mô hình 2 208,16; ước lượng cao hơn 8,16."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P11",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P11",
     "stem": "(a) Tìm số hạng không chứa x trong \\((3x-2)^4\\). (b) Tự chọn mở rộng SBT sau phần đa thức: tìm số hạng không chứa x trong \\((2x+\\frac1x)^4\\), với \\(x\\ne0\\).",
     "answer_key": "(a) 16; (b) 24 (tự chọn).",
     "worked_solution": "(a) Trong đa thức, chọn \\(3x\\) ở k vị trí thì bậc của x trong tích tương ứng là k. Số hạng tự do ứng với \\(k=0\\), bằng \\((-2)^4=16\\). Có thể kiểm bằng cách thay \\(x=0\\) vào đa thức. (b) Với \\(x\\ne0\\), chọn \\(\\frac1x\\) ở k vị trí, còn \\(4-k\\) vị trí chọn \\(2x\\). Số mũ của x là \\(4-2k\\), bằng 0 khi \\(k=2\\). Hệ số của số hạng đó là \\(C_4^2\\cdot2^2=24\\), nên số hạng không chứa x bằng 24. Phần (b) là mở rộng tự chọn, không phải yêu cầu bắt buộc của SGK B25.",
@@ -388,13 +664,17 @@
       "TOP19-O11"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Với đa thức, bậc 0 ứng với không chọn x; ở bài mở rộng, kiểm \\(x\\ne0\\) rồi giải phương trình số mũ bằng 0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -402,12 +682,31 @@
       "heading_id": "THPT-TOP19-P11",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Phân biệt số hạng tự do với hệ số của x; ở biểu thức có phân thức phải kiểm điều kiện \\(x\\ne0\\). Ôn CĐ19 mục 3.4; luyện THPT-G10-B25-P07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Phân biệt số hạng tự do với hệ số của x; ở biểu thức có phân thức phải kiểm điều kiện \\(x\\ne0\\). Ôn CĐ19 mục 3.4; luyện THPT-G10-B25-P07.",
+    "options": [
+      {
+        "id": "A",
+        "text": "(a) −16; (b) 24."
+      },
+      {
+        "id": "B",
+        "text": "(a) 16; (b) 6."
+      },
+      {
+        "id": "C",
+        "text": "(a) 16; (b) 24 nếu làm phần tự chọn."
+      },
+      {
+        "id": "D",
+        "text": "(a) 81; (b) 16."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-TOP19-P12",
-    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41_AUTHOR_KEY_REVIEW_R01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-P12",
     "stem": "Tự chọn sau khai triển: đặt \\(P(x)=(2x+1)^4\\). Tính tổng tất cả hệ số, tổng hệ số bậc chẵn (kể cả bậc 0) và tổng hệ số bậc lẻ mà không khai triển đầy đủ.",
     "answer_key": "Tổng 81; chẵn 41; lẻ 40.",
     "worked_solution": "Gọi E là tổng hệ số bậc chẵn (kể cả hệ số tự do), O là tổng hệ số bậc lẻ. Khi \\(x=1\\), ta có \\(P(1)=E+O=3^4=81\\). Khi \\(x=-1\\), các lũy thừa chẵn bằng 1, lẻ bằng −1 nên \\(P(-1)=E-O=(-2+1)^4=1\\). Cộng hai phương trình cho \\(2E=82\\), trừ hai phương trình cho \\(2O=80\\). Vậy \\(E=41\\), \\(O=40\\).",
@@ -419,13 +718,17 @@
       "TOP19-O12"
     ],
     "problem_type_id": null,
-    "difficulty": null,
+    "difficulty": "APPLY",
     "hints": [
       "Thay \\(x=1\\) và \\(x=-1\\) để tách tổng hệ số bậc chẵn và lẻ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -433,7 +736,26 @@
       "heading_id": "THPT-TOP19-P12",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "\\(P(1)\\) là tổng tất cả hệ số; \\(P(-1)\\) là tổng chẵn trừ tổng lẻ, không phải tổng lẻ. Ôn CĐ19 mục 3.5; luyện THPT-G10-B25-P06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "\\(P(1)\\) là tổng tất cả hệ số; \\(P(-1)\\) là tổng chẵn trừ tổng lẻ, không phải tổng lẻ. Ôn CĐ19 mục 3.5; luyện THPT-G10-B25-P06.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tổng 81; chẵn 40; lẻ 41."
+      },
+      {
+        "id": "B",
+        "text": "Tổng 81; chẵn 41; lẻ 40."
+      },
+      {
+        "id": "C",
+        "text": "Tổng 16; chẵn 8; lẻ 8."
+      },
+      {
+        "id": "D",
+        "text": "Tổng 81; chẵn 81; lẻ 0."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   }
 ]
