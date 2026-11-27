@@ -4994,32 +4994,68 @@
   {
     "item_id": "THPT-TOP19-W01",
     "source": {
-      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
-      "heading_id": "THPT-TOP19-W01"
+      "blob": "6bc1c9faf00f530d60d8e93256e436263898c524",
+      "heading_id": "THPT-TOP19-W01",
+      "previous_source_blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "path": "prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md",
+      "donor_blob": "ba549932e8a56bb46ec2951171e999cc70d6f34f",
+      "donor_commit": "e60200c43dc1f38c83cbf4ec47e90dc96391eef8",
+      "revision_scope": "CD19_WRITTEN_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "COUNT_CASES_NO_REPEAT"
+    ],
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-W01",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP19-W02",
     "source": {
-      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
-      "heading_id": "THPT-TOP19-W02"
+      "blob": "6bc1c9faf00f530d60d8e93256e436263898c524",
+      "heading_id": "THPT-TOP19-W02",
+      "previous_source_blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "path": "prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md",
+      "donor_blob": "ba549932e8a56bb46ec2951171e999cc70d6f34f",
+      "donor_commit": "e60200c43dc1f38c83cbf4ec47e90dc96391eef8",
+      "revision_scope": "CD19_WRITTEN_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "COMBINATION_TWO_GROUPS"
+    ],
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-W02",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-TOP19-W03",
     "source": {
-      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
-      "heading_id": "THPT-TOP19-W03"
+      "blob": "6bc1c9faf00f530d60d8e93256e436263898c524",
+      "heading_id": "THPT-TOP19-W03",
+      "previous_source_blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "path": "prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md",
+      "donor_blob": "ba549932e8a56bb46ec2951171e999cc70d6f34f",
+      "donor_commit": "e60200c43dc1f38c83cbf4ec47e90dc96391eef8",
+      "revision_scope": "CD19_WRITTEN_DELTA_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
-    "auto_grade": false
+    "auto_grade": false,
+    "exercise_type": "WRITTEN",
+    "difficulty": "SYNTHESIS",
+    "skill_ids": [
+      "BINOMIAL_NEGATIVE_COEFF"
+    ],
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-W03",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED"
   },
   {
     "item_id": "THPT-G10-CHIX-W26-01",
