@@ -58,77 +58,72 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "84ef1eb6d93d7719cdff409e8422190d32582f8d",
+    "as_of_commit": "89d00186637c7c0aeb2919d4d5ab700b53220157",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
-    "completed_candidate_topics": 18,
+    "completed_candidate_topics": 20,
     "total_topics": 22,
-    "completed_scope": "CD01–18 content candidates; scoped Delta and RELEASE pending",
-    "completed_unique_ids": 1623,
-    "completed_interactive": 1410,
-    "completed_written": 213,
+    "completed_scope": "CD01–20 content candidates; scoped Delta and RELEASE pending",
+    "completed_unique_ids": 1733,
+    "completed_interactive": 1514,
+    "completed_written": 219,
     "partial_topic": null,
-    "next": "Stopped after CD18 per owner scope; resume CD19 when instructed. Scoped Delta and final verification remain.",
-    "status": "CD17_CD18_CONTENT_CANDIDATES_COMPLETE_SCOPED_DELTA_PENDING"
+    "next": "Stop after CD20 per owner scope. Resume CD21–22 when instructed; scoped Delta and final verification remain.",
+    "status": "CD19_CD20_CONTENT_CANDIDATES_COMPLETE_SCOPED_DELTA_PENDING"
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "exercise_candidate_cd17_cd18",
-    "exercise_candidate_cd17_cd18": {
-      "cd17": {
-        "unique": 49,
-        "interactive": 42,
-        "written": 7,
-        "overlap_prior": 0,
-        "source_blobs": [
-          "0dac60b05d670a74a670e0e423e11ffbbc2d2303",
-          "9562830ec226b5612309bdd97197e97fa726d88d"
-        ],
-        "written_refs_blob": "52879434293b2f66d69cbc5ce6099f603abd87af"
+    "current_checkpoint_key": "exercise_candidate_cd19_cd20",
+    "exercise_candidate_cd19_cd20": {
+      "scope": "CD19–20 bank content candidates; no RELEASE",
+      "status": "CD19_CD20_CONTENT_CANDIDATES_COMPLETE_SCOPED_DELTA_PENDING",
+      "head": "89d00186637c7c0aeb2919d4d5ab700b53220157",
+      "cd19": {
+        "unique": 56,
+        "interactive": 53,
+        "written": 3,
+        "practice_interactive": 39,
+        "first_try": 14,
+        "replay": 15,
+        "placements": 71,
+        "outcomes": 14,
+        "shared_sgk": 25,
+        "source_blob": "6bc1c9faf00f530d60d8e93256e436263898c524",
+        "donor_blob": "ba549932e8a56bb46ec2951171e999cc70d6f34f",
+        "written_notes": "W01 disambiguated odd three-digit number; explicit disjoint cases and 18, rubric /4 retained. W03 explains P(1) coefficient sum. O13 and O14 each retain one practice, one FirstTry and replay; no artificial new IDs merely for quota. O12 and reciprocal-power extension optional."
       },
-      "cd18": {
-        "interactive": 200,
-        "converted": 187,
-        "reused_prior": 13,
-        "choices": 800,
-        "outcomes": 40,
-        "replay": 40,
-        "written": 47,
-        "head": "84ef1eb6d93d7719cdff409e8422190d32582f8d",
-        "files": {
-          "items/cd18.json": "be27a158dadb9bd0bbcfd6066584aa97d3e1c3b9",
-          "items/g12-chii.json": "1679cb66e86e0d27741fd0c5b7f54868440fd246",
-          "items/g12-chv.json": "e587e279f710bc50de756477d55264658b71f223",
-          "items/topic-knowledge-first-try.json": "4a7e7fed2614ae3c2577b2d8b6ec88d0b0781734",
-          "placements/cd18.json": "5b42b4007549b0f74f3d413e66b010d1304cbd66",
-          "placements/topic-knowledge-first-try.json": "28e28890b2ea1de0f7ad753444d687c342ec9862",
-          "written-references.json": "cf1155d98cf1b8817b997972ea1fbb191999feb7"
-        },
-        "written_findings": "Corrected scoped findings including average speed, vector notation, sphere/ball, perpendicular skew lines, parameter domains, rubric alignment, duplicate TOP18-W02 variant and W07 self-contained radar model. Changed stems/solutions/rubrics require scoped Delta. Topic source carried at original path on bank branch, not a second bank.",
-        "written_status": "47 reference records reconciled; 16 SGK chII /5, 24 SGK chV /5, 7 topic /4; targeted corrections, original totals retained.",
-        "written_sources": [
-          {
-            "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-            "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
-            "donor": "43d93a7d0d070a288251c34ff411c7de3206dc85"
-          },
-          {
-            "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
-            "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
-            "donor": "a24abd682932e11761f7c85fa3a3d3cdd77b600e"
-          },
-          {
-            "path": "prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md",
-            "blob": "21904191544d9a8a30c43699c485bad08cf86fc7",
-            "donor": "41daf40a3b639a3ef35e129099525137a05b1848"
-          }
-        ],
-        "final_verification": "247 unique IDs, 200 interactive, 47 Written, 287 placements, 40 outcomes; no missing references or structural option/key/hint/skill defects in exact readback. 13 interactive IDs reused from CD13; net 234 IDs added. SGK Written sections outside 2 chII and 12 chV targeted fixes identical to donor."
+      "cd20": {
+        "unique": 54,
+        "interactive": 51,
+        "written": 3,
+        "practice_interactive": 34,
+        "first_try": 17,
+        "replay": 17,
+        "placements": 71,
+        "outcomes": 17,
+        "shared_sgk": 17,
+        "new_shared_placement_links": 12,
+        "source_blob": "d6c34cdf81594ec9d3ce3275ac3d736444aa710c",
+        "source_commit": "6e6b89ff37f9493bef2fa951ea094110a1c7e28c",
+        "written_notes": "Three current canonical Written problems independently recalculated, original wording/rubric /4 preserved. Each outcome has two practice items, one FirstTry and one public replay. Additional shared SGK placements optional."
       },
-      "limitations": "No fresh S1 PDF verification, independent Q18, browser/runtime or CI claim. No merge/deploy."
+      "files": {
+        "items/cd19.json": "3744f680748df5cd8c5bfd85d21989ae5d8484f5",
+        "items/cd20.json": "c2d9324e79a59b9cc2ac070e34c41afe51b6da7e",
+        "items/g10-chviii.json": "c1414025c5645bc5017377d12eb63cebf5fe2222",
+        "items/g10-chix.json": "56fe18bbaa9cbc61d549ef9e92865f21f866aee7",
+        "items/g11-chviii.json": "3cfdc77a4a6b5699080c90c2f9bafd4015ea3769",
+        "items/topic-knowledge-first-try.json": "28bc3efec7f949bcd003461363f09abc13c597d5",
+        "placements/cd19.json": "cbfc95709e24b979ff14d9d420415efd339fc71d",
+        "placements/cd20.json": "6ed23958724b244ff771a1f7b5bd7bc8db5517c8",
+        "placements/topic-knowledge-first-try.json": "d9d3597767221269e26df7ac98dc04f0f0ef272e",
+        "written-references.json": "90ff21fdf51670cdc332eface14779431a4b178f"
+      },
+      "verification": "142 placements; 110 unique IDs; 104 interactive, six Written; no unresolved references, invalid option/key/hint/skill structure, duplicate collection order, or overlap with CD01–18 or between CD19/20. Targeted recomputations: CD19-P04=52, W01=18, P13=2208.1616064; CD20-P08=46/56, P17=6/36,24/36,18/36. No claim of complete math/PED or rendering validation.",
+      "limitations": "No new direct S1 SGK/SBT PDF reading, independent reviewer, notation/browser or CI verdict. Scoped academic/PED and display verification remain before final handoff. Public replay only, no protected RD1, runtime, Final Submit, Mastery, Firebase, merge/deploy. CD21–22 untouched."
     },
     "previous_manifest": {
-      "commit": "05e47c51086fbeb708ff7ca4e0f62bb9773b24b4",
-      "blob": "02c8f4c3d7319b3f3c4c532e609673da296b2317",
-      "key": "exercise_candidate_cd17_partial"
+      "commit": "b9682fa9d205b81680a2a6ef28b25e3c634f4b2d",
+      "blob": "f2037a4822129386302af96bb857bb35a821f454",
+      "key": "exercise_candidate_cd17_cd18"
     }
   },
   "pending_review": {
@@ -244,7 +239,9 @@
       }
     ],
     "other": "Full S1/PED/Q18, actual source-field equivalence outside flagged scopes, Written source/rubric, metadata, notation, interaction renderer/runtime and browser QA remain subject to applicable gates. Historical records include any earlier findings and source/receipt evidence.",
-    "cd18": "Content candidate complete; targeted mathematical/PED Delta and notation/render QA pending. No fresh S1 PDF or independent reviewer claim."
+    "cd18": "Content candidate complete; targeted mathematical/PED Delta and notation/render QA pending. No fresh S1 PDF or independent reviewer claim.",
+    "cd19": "Candidate complete; W01/W03 scoped Delta and optional scope review; no new S1 or independent verdict.",
+    "cd20": "Candidate complete; scoped interaction/PED and render review of 12 extra shared placements; original three Written retained."
   },
   "checkpoint_policy": "Replace current_progress and current checkpoint, do not append cumulative report trees. Record detailed scoped evidence in existing issue/PR or prior immutable Git snapshot; preserve exact commit/path/blob and relevant key. Carry forward unresolved issues only; retain older history pointer. Never infer PASS, authorize cutover or change protected runtime from compaction."
 }
