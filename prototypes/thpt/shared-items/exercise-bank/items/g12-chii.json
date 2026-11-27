@@ -1,7 +1,7 @@
 [
   {
     "item_id": "THPT-G12-B06-C01",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B06-C01",
     "stem": "Trong hình lập phương cạnh 4 cm, độ dài vectơ đi dọc một cạnh bằng bao nhiêu?",
     "answer_key": "4 cm",
     "worked_solution": "Vectơ đi dọc một cạnh có hai đầu là hai đỉnh kề nhau. Độ dài vectơ bằng độ dài đoạn nối hai đầu mút, tức 4 cm; chiều đi không ảnh hưởng đến độ dài.",
@@ -9,13 +9,17 @@
       "G12-CHII-B06-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Độ dài vectơ bằng khoảng cách hai đầu mút."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -27,12 +31,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng đường chéo, đề chỉ nói một cạnh; xác định hai đầu mút trước. Ôn CĐ13 mục 3.1; luyện THPT-TOP13-P11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng đường chéo, đề chỉ nói một cạnh; xác định hai đầu mút trước. Ôn CĐ13 mục 3.1; luyện THPT-TOP13-P11.",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 cm"
+      },
+      {
+        "id": "B",
+        "text": "8 cm"
+      },
+      {
+        "id": "C",
+        "text": "16 cm"
+      },
+      {
+        "id": "D",
+        "text": "0 cm"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B06-P01",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B06-P01",
     "stem": "Hình hộp chữ nhật có các cạnh theo ba phương vuông góc dài 3, 4, 12 cm. Độ dài vectơ nối hai đỉnh đối diện?",
     "answer_key": "13 cm",
     "worked_solution": "Ba cạnh đôi một vuông góc. Áp dụng Pitago ở đáy được đường chéo \\(\\sqrt{3^2+4^2}=5\\) cm; áp dụng tiếp trong tam giác vuông chứa cạnh 12 cm được \\(\\sqrt{5^2+12^2}=13\\) cm. Đây là độ dài vectơ nối hai đỉnh đối diện.",
@@ -40,13 +63,17 @@
       "G12-CHII-B06-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
       "Tính đường chéo đáy rồi đường chéo không gian."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -58,8 +85,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng 3+4+12, áp dụng Pitago hai lần cho ba phương vuông góc. Ôn CĐ13 mục 3.1; luyện THPT-TOP13-P11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cộng 3+4+12, áp dụng Pitago hai lần cho ba phương vuông góc. Ôn CĐ13 mục 3.1; luyện THPT-TOP13-P11.",
+    "options": [
+      {
+        "id": "A",
+        "text": "19 cm"
+      },
+      {
+        "id": "B",
+        "text": "13 cm"
+      },
+      {
+        "id": "C",
+        "text": "5 cm"
+      },
+      {
+        "id": "D",
+        "text": "12 cm"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B06-P02",
@@ -190,7 +236,7 @@
   },
   {
     "item_id": "THPT-G12-B06-C03",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B06-C03",
     "stem": "Với A,B,C bất kì, \\(\\overrightarrow{AB}+\\overrightarrow{BC}\\) bằng gì?",
     "answer_key": "\\(\\overrightarrow{AC}\\)",
     "worked_solution": "Theo quy tắc ba điểm, đi từ A đến B rồi từ B đến C có độ dời tổng cộng từ A đến C. Vì vậy \\(\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}\\).",
@@ -198,13 +244,17 @@
       "G12-CHII-B06-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Ghép đầu–đuôi A→B→C."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -216,12 +266,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra CA, kiểm điểm xuất phát A và điểm cuối C. Ôn CĐ13 mục 3.2; luyện THPT-TOP13-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra CA, kiểm điểm xuất phát A và điểm cuối C. Ôn CĐ13 mục 3.2; luyện THPT-TOP13-P12.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{CA}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{AB}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{AC}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{BC}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B06-P05",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B06-P05",
     "stem": "Trong hình bình hành ABCD, \\(\\overrightarrow{AB}+\\overrightarrow{AD}\\) bằng gì?",
     "answer_key": "\\(\\overrightarrow{AC}\\)",
     "worked_solution": "Hai vectơ có chung gốc A, nên dùng quy tắc hình bình hành: tổng là vectơ theo đường chéo xuất phát từ A, \\(\\overrightarrow{AB}+\\overrightarrow{AD}=\\overrightarrow{AC}\\).",
@@ -229,13 +298,17 @@
       "G12-CHII-B06-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "APPLY",
     "hints": [
       "Hai vectơ chung gốc A: dùng đường chéo từ A."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -247,12 +320,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn BD, kiểm đường chéo biểu diễn tổng phải xuất phát từ A. Ôn CĐ13 mục 3.2; luyện THPT-TOP13-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn BD, kiểm đường chéo biểu diễn tổng phải xuất phát từ A. Ôn CĐ13 mục 3.2; luyện THPT-TOP13-P12.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{BD}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{CA}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{DB}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{AC}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B06-P06",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B06-P06",
     "stem": "Trong hình hộp \\(ABCD.A\\prime B\\prime C\\prime D\\prime\\), \\(\\overrightarrow{AB}+\\overrightarrow{AD}+\\overrightarrow{AA\\prime}\\) bằng gì?",
     "answer_key": "\\(\\overrightarrow{AC\\prime}\\)",
     "worked_solution": "Trước hết \\(\\overrightarrow{AB}+\\overrightarrow{AD}=\\overrightarrow{AC}\\). Trong hình hộp, \\(\\overrightarrow{AA'}=\\overrightarrow{CC'}\\). Theo quy tắc ba điểm, \\(\\overrightarrow{AC}+\\overrightarrow{CC'}=\\overrightarrow{AC'}\\).",
@@ -260,13 +352,17 @@
       "G12-CHII-B06-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
       "Ghép \\(\\overrightarrow{AB},\\overrightarrow{BC}=\\overrightarrow{AD},\\overrightarrow{CC'}=\\overrightarrow{AA'}\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -278,8 +374,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dừng tại C, còn thiếu độ dời \\(\\overrightarrow{CC'}\\). Ôn CĐ18 mục 1.3; luyện THPT-TOP18-P03."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dừng tại C, còn thiếu độ dời \\(\\overrightarrow{CC'}\\). Ôn CĐ18 mục 1.3; luyện THPT-TOP18-P03.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\overrightarrow{AC\\prime}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\overrightarrow{AC}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\overrightarrow{CA\\prime}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\overrightarrow{AB\\prime}\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B06-C04",
@@ -562,7 +677,7 @@
   },
   {
     "item_id": "THPT-G12-B07-C01",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B07-C01",
     "stem": "Trong hệ Oxyz, điểm P(4;2;0) nằm trên mặt phẳng tọa độ nào?",
     "answer_key": "(Oxy)",
     "worked_solution": "Mặt phẳng \\((Oxy)\\) chứa mọi điểm có tọa độ thứ ba bằng 0. Điểm P có \\(z=0\\), nên thuộc \\((Oxy)\\); hai tọa độ còn lại khác 0 nên không thuộc hai mặt phẳng tọa độ kia.",
@@ -570,13 +685,17 @@
       "G12-CHII-B07-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Mặt phẳng Oxy có z=0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -588,12 +707,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn Oxz, kiểm tọa độ bị triệt là z, không phải y. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn Oxz, kiểm tọa độ bị triệt là z, không phải y. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14.",
+    "options": [
+      {
+        "id": "A",
+        "text": "(Oxz)"
+      },
+      {
+        "id": "B",
+        "text": "(Oxy)"
+      },
+      {
+        "id": "C",
+        "text": "(Oyz)"
+      },
+      {
+        "id": "D",
+        "text": "Không thuộc mặt phẳng tọa độ nào."
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B07-P01",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B07-P01",
     "stem": "Một điểm Q thuộc trục Oz. Hai tọa độ nào bắt buộc bằng 0?",
     "answer_key": "x=0 và y=0",
     "worked_solution": "Trục Oz gồm các điểm dạng \\((0;0;z)\\), vì chỉ dịch chuyển theo phương Oz. Do đó \\(x=y=0\\), còn z tùy ý.",
@@ -601,13 +739,17 @@
       "G12-CHII-B07-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "APPLY",
     "hints": [
       "Trên Oz, chỉ thành phần z có thể khác 0."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -619,8 +761,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho z=0, phân biệt điểm trên Oz với điểm trên Oxy. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho z=0, phân biệt điểm trên Oz với điểm trên Oxy. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14.",
+    "options": [
+      {
+        "id": "A",
+        "text": "x=0 và z=0"
+      },
+      {
+        "id": "B",
+        "text": "y=0 và z=0"
+      },
+      {
+        "id": "C",
+        "text": "x=0 và y=0"
+      },
+      {
+        "id": "D",
+        "text": "Chỉ z=0"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B07-P02",
@@ -748,7 +909,7 @@
   },
   {
     "item_id": "THPT-G12-B07-C03",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B07-C03",
     "stem": "Chọn hệ Oxyz trong phòng: gốc O ở một góc sàn, ba trục theo chiều dài, chiều rộng và chiều cao. Một vật có độ dời từ O theo ba chiều dương lần lượt 2, 3, 4 m. Tìm tọa độ của vật, lấy mét làm đơn vị.",
     "answer_key": "(2;3;4) m",
     "worked_solution": "Ba độ dời theo chiều dương các trục Ox, Oy, Oz lần lượt là 2, 3, 4 m. Điểm có tọa độ \\((2;3;4)\\) trong hệ lấy mét làm đơn vị.",
@@ -756,13 +917,17 @@
       "G12-CHII-B07-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Đọc các chiều dương của ba trục theo đúng thứ tự x,y,z."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -774,12 +939,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu tráo cao và rộng, ghi nhãn trục trước khi ghép tọa độ. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu tráo cao và rộng, ghi nhãn trục trước khi ghép tọa độ. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((4;3;2)\\) m"
+      },
+      {
+        "id": "B",
+        "text": "\\((2;-3;4)\\) m"
+      },
+      {
+        "id": "C",
+        "text": "\\((2;3;-4)\\) m"
+      },
+      {
+        "id": "D",
+        "text": "(2;3;4) m"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B07-P05",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B07-P05",
     "stem": "Một cảm biến ở trần trong phòng cao 3 m, chọn Oz hướng lên từ sàn. Tọa độ z của cảm biến là gì?",
     "answer_key": "3 m",
     "worked_solution": "Mặt sàn có \\(z=0\\); cảm biến ở trần cao 3 m theo chiều dương Oz nên \\(z=3\\) m. Chưa biết x, y và không cần để xác định độ cao.",
@@ -787,13 +971,17 @@
       "G12-CHII-B07-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "APPLY",
     "hints": [
       "Độ cao tính từ mặt sàn theo Oz hướng lên."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -805,8 +993,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy −3, kiểm hướng dương và mốc z=0; đề chọn sàn làm mốc. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy −3, kiểm hướng dương và mốc z=0; đề chọn sàn làm mốc. Ôn CĐ13 mục 3.4; luyện THPT-TOP13-P14.",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 m"
+      },
+      {
+        "id": "B",
+        "text": "0 m"
+      },
+      {
+        "id": "C",
+        "text": "−3 m"
+      },
+      {
+        "id": "D",
+        "text": "6 m"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B07-P06",
@@ -934,7 +1141,7 @@
   },
   {
     "item_id": "THPT-G12-B08-C01",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B08-C01",
     "stem": "Với a=(1;2;3), b=(3;-1;2), tính a+b.",
     "answer_key": "(4;1;5)",
     "worked_solution": "Cộng các tọa độ tương ứng: \\(\\vec a+\\vec b=(1+3;2+(-1);3+2)=(4;1;5)\\).",
@@ -942,13 +1149,17 @@
       "G12-CHII-B08-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Cộng từng thành phần tương ứng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -960,12 +1171,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ra một số thay vì vectơ, giữ ba tọa độ riêng. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu ra một số thay vì vectơ, giữ ba tọa độ riêng. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P12.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((-2;3;1)\\)"
+      },
+      {
+        "id": "B",
+        "text": "(4;1;5)"
+      },
+      {
+        "id": "C",
+        "text": "\\((4;3;5)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((3;-2;6)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B08-P01",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B08-P01",
     "stem": "Với a=(2;-3;1), b=(-1;4;0), tính a-b.",
     "answer_key": "(3;-7;1)",
     "worked_solution": "Trừ từng tọa độ của vectơ thứ hai khỏi tọa độ tương ứng của vectơ thứ nhất: \\(\\vec a-\\vec b=(2-(-1);-3-4;1-0)=(3;-7;1)\\).",
@@ -973,13 +1203,17 @@
       "G12-CHII-B08-O01"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "APPLY",
     "hints": [
       "Trừ từng tọa độ, giữ dấu của số bị trừ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -991,8 +1225,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu sai −3−4, dùng ngoặc và kiểm lại tổng hiệu+b=a. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu sai −3−4, dùng ngoặc và kiểm lại tổng hiệu+b=a. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P12.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((1;1;1)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((-3;7;-1)\\)"
+      },
+      {
+        "id": "C",
+        "text": "(3;-7;1)"
+      },
+      {
+        "id": "D",
+        "text": "\\((3;1;1)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B08-P02",
@@ -1120,7 +1373,7 @@
   },
   {
     "item_id": "THPT-G12-B08-C03",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B08-C03",
     "stem": "Trung điểm A(1;3;5), B(3;1;7) có tọa độ?",
     "answer_key": "(2;2;6)",
     "worked_solution": "Trung điểm M có mỗi tọa độ bằng trung bình cộng của hai tọa độ tương ứng. Tọa độ M là \\((\\frac{1+3}{2};\\frac{3+1}{2};\\frac{5+7}{2})=(2;2;6)\\).",
@@ -1128,13 +1381,17 @@
       "G12-CHII-B08-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Trung điểm lấy trung bình từng tọa độ."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1146,12 +1403,31 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu thiếu chia 2, kiểm M−A=B−M. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu thiếu chia 2, kiểm M−A=B−M. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P15.",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((4;4;12)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((1;-1;1)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((2;2;5)\\)"
+      },
+      {
+        "id": "D",
+        "text": "(2;2;6)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B08-P05",
-    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G12-B08-P05",
     "stem": "Trọng tâm tam giác A(0;0;0), B(3;0;0), C(0;6;0) là?",
     "answer_key": "(1;2;0)",
     "worked_solution": "Tọa độ trọng tâm là trung bình cộng theo từng trục của ba đỉnh. Tọa độ G là \\((\\frac{0+3+0}{3};\\frac{0+0+6}{3};\\frac{0+0+0}{3})=(1;2;0)\\).",
@@ -1159,13 +1435,17 @@
       "G12-CHII-B08-O03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "APPLY",
     "hints": [
       "Trọng tâm lấy trung bình ba đỉnh."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1177,8 +1457,27 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chia 2 như trung điểm, đếm đủ ba đỉnh; z=0 vì cả ba nằm trong Oxy. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chia 2 như trung điểm, đếm đủ ba đỉnh; z=0 vì cả ba nằm trong Oxy. Ôn CĐ13 mục 3.5; luyện THPT-TOP13-P15.",
+    "options": [
+      {
+        "id": "A",
+        "text": "(1;2;0)"
+      },
+      {
+        "id": "B",
+        "text": "\\((\\frac32;3;0)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((3;6;0)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((2;1;0)\\)"
+      }
+    ],
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G12-B08-P06",
