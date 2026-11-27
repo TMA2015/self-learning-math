@@ -1331,7 +1331,7 @@
       },
       {
         "id": "D",
-        "text": "Đúng; chỉ cần đếm sáu cặp bằng nhau trong 21 cặp."
+        "text": "Sai; xác suất là \\(\\frac12\\) vì chỉ có hai khả năng cùng số hoặc khác số."
       }
     ],
     "exercise_type": "INTERACTIVE"
