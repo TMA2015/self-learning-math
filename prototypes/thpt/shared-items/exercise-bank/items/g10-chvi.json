@@ -1,8 +1,8 @@
 [
   {
     "item_id": "THPT-G10-B15-C01",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Bảng dữ liệu có các cặp \\((x;y)\\): \\((1;3)\\), \\((2;4)\\), \\((2;5)\\). Bảng này có xác định một hàm số y của x không?",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B15-C01",
+    "stem": "Bảng dữ liệu có các cặp \\((x;y)\\): \\((1;3)\\), \\((2;4)\\), \\((2;5)\\). Bảng này có xác định một hàm số y của x không? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Không; \\(x=2\\) có hai giá trị đầu ra 4 và 5.",
     "worked_solution": "Không. Mỗi giá trị x trong tập xác định phải có đúng một giá trị y tương ứng. Ở đây \\(x=2\\) ứng với cả \\(y=4\\) và \\(y=5\\), vi phạm tính duy nhất.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -10,13 +10,17 @@
       "FUNCTION_MAPPING"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Kiểm tra mỗi giá trị x có đúng một giá trị y hay không."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -28,13 +32,32 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ đếm số cặp, nhóm theo từng x và kiểm tra đúng một giá trị y cho mỗi x. Ôn Bài 15 mục 2.1; luyện THPT-G10-CHVI-TRY01."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ đếm số cặp, nhóm theo từng x và kiểm tra đúng một giá trị y cho mỗi x. Ôn Bài 15 mục 2.1; luyện THPT-G10-CHVI-TRY01.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không, x=2 có hai đầu ra khác nhau."
+      },
+      {
+        "id": "B",
+        "text": "Có, vì có ba cặp tọa độ."
+      },
+      {
+        "id": "C",
+        "text": "Có, vì mỗi y chỉ xuất hiện một lần."
+      },
+      {
+        "id": "D",
+        "text": "Không, vì x=1 chỉ xuất hiện một lần."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B15-C02",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tìm tập xác định của \\(f(x)=\\sqrt{2x-3}\\) trên tập số thực.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B15-C02",
+    "stem": "Tìm tập xác định của \\(f(x)=\\sqrt{2x-3}\\) trên tập số thực. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(D=\\left[\\frac32;+\\infty\\right)\\).",
     "worked_solution": "Căn bậc hai xác định khi \\(2x-3\\ge0\\), tương đương \\(x\\ge\\frac32\\). Tại \\(x=\\frac32\\), biểu thức dưới căn bằng 0 nên vẫn xác định. Vậy \\(D=\\left[\\frac32;+\\infty\\right)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -42,13 +65,17 @@
       "FUNCTION_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Biểu thức dưới căn bậc hai phải không âm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -60,13 +87,32 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu loại dấu bằng, thay \\(x=\\frac32\\) vào căn và kiểm \\(\\sqrt0=0\\). Ôn Bài 15 mục 2.1; luyện THPT-G10-CHVI-TRY02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu loại dấu bằng, thay \\(x=\\frac32\\) vào căn và kiểm \\(\\sqrt0=0\\). Ôn Bài 15 mục 2.1; luyện THPT-G10-CHVI-TRY02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((\\frac32;+\\infty)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\([\\frac32;+\\infty)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-\\infty;\\frac32]\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\mathbb R\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B15-P01",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho \\(f(x)=\\frac{x^2-9}{x-3}\\) và \\(g(x)=x+3\\), xét trên tập số thực. (a) Tìm tập xác định của từng hàm số. (b) Rút gọn biểu thức f(x) trên tập xác định của nó. (c) Hai hàm số có hoàn toàn giống nhau không? Hãy xét riêng \\(x=3\\).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B15-P01",
+    "stem": "Cho \\(f(x)=\\frac{x^2-9}{x-3}\\) và \\(g(x)=x+3\\), xét trên tập số thực. (a) Tìm tập xác định của từng hàm số. (b) Rút gọn biểu thức f(x) trên tập xác định của nó. (c) Hai hàm số có hoàn toàn giống nhau không? Hãy xét riêng \\(x=3\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(D_f=\\mathbb R\\setminus\\{3\\}\\), \\(D_g=\\mathbb R\\). Với \\(x\\ne3\\), \\(f(x)=g(x)=x+3\\). Hai hàm không giống nhau trên toàn bộ tập số thực: f không xác định tại 3, còn \\(g(3)=6\\).",
     "worked_solution": "Trước khi rút gọn, mẫu số của f phải khác 0, tức \\(x\\ne3\\); g là đa thức nên xác định với mọi số thực. Với \\(x\\ne3\\), phân tích tử số thành tích: \\(f(x)=\\frac{(x-3)(x+3)}{x-3}=x+3\\). Phép khử nhân tử \\(x-3\\) chỉ hợp lệ vì đã có điều kiện \\(x\\ne3\\). Tại \\(x=3\\), biểu thức ban đầu của f có mẫu bằng 0 nên không xác định, còn \\(g(3)=6\\). Vì vậy hai hàm trùng giá trị trên tập xác định của f nhưng không có cùng tập xác định. Không được thêm điểm x=3 vào tập xác định chỉ vì biểu thức sau rút gọn tính được tại đó.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -74,14 +120,18 @@
       "FUNCTION_DOMAIN"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tìm điều kiện của biểu thức ban đầu trước khi khử nhân tử.",
       "So sánh tập xác định và giá trị tại x=3."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -93,13 +143,32 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Khi rút gọn phân thức, giữ điều kiện mẫu ban đầu khác 0; biểu thức rút gọn có thể có miền rộng hơn. Ôn Bài 15 mục tập xác định; luyện THPT-G10-CHVI-TRY02."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Khi rút gọn phân thức, giữ điều kiện mẫu ban đầu khác 0; biểu thức rút gọn có thể có miền rộng hơn. Ôn Bài 15 mục tập xác định; luyện THPT-G10-CHVI-TRY02.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(D_f=D_g=\\mathbb R\\); f=g với mọi x."
+      },
+      {
+        "id": "B",
+        "text": "\\(D_f=D_g=\\mathbb R\\setminus\\{3\\}\\); f=g."
+      },
+      {
+        "id": "C",
+        "text": "\\(D_f=\\mathbb R\\setminus\\{3\\},D_g=\\mathbb R\\); f=g khi \\(x\\ne3\\), g(3)=6 còn f không xác định."
+      },
+      {
+        "id": "D",
+        "text": "\\(D_f=\\mathbb R\\setminus\\{3\\}\\); f=g trừ tại x=−3."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B15-P02",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một dịch vụ giao hàng thu 18 nghìn đồng cho quãng đường \\(0\\le x\\le3\\) km, và \\(18+5(x-3)\\) nghìn đồng nếu \\(x>3\\). Gọi C(x) là phí giao hàng (nghìn đồng). Tính \\(C(3),C(5)\\), nêu tập xác định của C và giải thích vì sao không dùng \\(5x\\) cho nhánh thứ hai.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B15-P02",
+    "stem": "Một dịch vụ giao hàng thu 18 nghìn đồng cho quãng đường \\(0\\le x\\le3\\) km, và \\(18+5(x-3)\\) nghìn đồng nếu \\(x>3\\). Gọi C(x) là phí giao hàng (nghìn đồng). Tính \\(C(3),C(5)\\), nêu tập xác định của C và giải thích vì sao không dùng \\(5x\\) cho nhánh thứ hai. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(D=[0;+\\infty)\\); \\(C(3)=18,\\ C(5)=28\\) (nghìn đồng). Phí thêm chỉ tính phần vượt 3 km.",
     "worked_solution": "Quãng đường không âm nên \\(D=[0;+\\infty)\\). Tại \\(x=3\\), dùng nhánh đầu: \\(C(3)=18\\). Tại \\(x=5>3\\), \\(C(5)=18+5(5-3)=28\\). Phí nền là 18 nghìn đồng cho quãng đường không quá 3 km; chỉ số km vượt 3 mới tính thêm 5 nghìn đồng mỗi km. Công thức \\(5x\\) sẽ cho 25 nghìn đồng tại 5 km, sai mô hình.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -107,13 +176,17 @@
       "FUNCTION_PIECEWISE"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Xác định nhánh chứa mốc \\(x=3\\); với \\(x>3\\) chỉ tính thêm phần \\(x-3\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -125,13 +198,32 @@
       }
     },
     "exposure": "EXPOSED_IN_KNOWLEDGE",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chọn sai nhánh tại mốc, đọc dấu \\(\\le\\) và \\(>\\); nếu tính phí vượt ngưỡng cho toàn bộ quãng đường, giữ phí nền rồi tính riêng \\(x-3\\). Ôn Bài 15 mục 1.2.4; luyện THPT-G10-CHVI-TRY05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn sai nhánh tại mốc, đọc dấu \\(\\le\\) và \\(>\\); nếu tính phí vượt ngưỡng cho toàn bộ quãng đường, giữ phí nền rồi tính riêng \\(x-3\\). Ôn Bài 15 mục 1.2.4; luyện THPT-G10-CHVI-TRY05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(D=[0;+\\infty),C(3)=15,C(5)=25\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(D=(3;+\\infty),C(5)=28\\); C(3) không xác định."
+      },
+      {
+        "id": "C",
+        "text": "\\(D=[0;+\\infty),C(3)=18,C(5)=43\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(D=[0;+\\infty),C(3)=18,C(5)=28\\); chỉ tính phí thêm phần vượt 3 km."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B15-P03",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hàm số \\(f(x)=|x+2|\\) đồng biến, nghịch biến trên những khoảng nào?",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B15-P03",
+    "stem": "Hàm số \\(f(x)=|x+2|\\) đồng biến, nghịch biến trên những khoảng nào? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Nghịch biến trên \\((-\\infty;-2)\\), đồng biến trên \\((-2;+\\infty)\\).",
     "worked_solution": "Khi \\(x\\le-2\\), \\(f(x)=-(x+2)=-x-2\\), hàm giảm vì hệ số của x âm. Khi \\(x\\ge-2\\), \\(f(x)=x+2\\), hàm tăng vì hệ số của x dương. Vậy hàm nghịch biến trên \\((-\\infty;-2)\\), đồng biến trên \\((-2;+\\infty)\\). Tại \\(x=-2\\), \\(f(-2)=0\\) là giá trị nhỏ nhất, nơi hai nhánh gặp nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -139,13 +231,17 @@
       "FUNCTION_MONOTONICITY"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
       "Viết hàm trị tuyệt đối thành hai công thức."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -157,13 +253,32 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu cho hàm luôn tăng, tách \\(|x+2|\\) tại \\(x=-2\\) và so hệ số của hai nhánh. Ôn Bài 15 mục 2.3; luyện THPT-G10-CHVI-TRY04."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho hàm luôn tăng, tách \\(|x+2|\\) tại \\(x=-2\\) và so hệ số của hai nhánh. Ôn Bài 15 mục 2.3; luyện THPT-G10-CHVI-TRY04.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nghịch biến trên \\((-\\infty;-2)\\), đồng biến trên \\((-2;+\\infty)\\)."
+      },
+      {
+        "id": "B",
+        "text": "Đồng biến trên \\((-\\infty;-2)\\), nghịch biến trên \\((-2;+\\infty)\\)."
+      },
+      {
+        "id": "C",
+        "text": "Đồng biến trên \\(\\mathbb R\\)."
+      },
+      {
+        "id": "D",
+        "text": "Nghịch biến trên \\((-\\infty;2)\\), đồng biến trên \\((2;+\\infty)\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B15-P04",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Dịch vụ giả định thu 100 nghìn đồng cho quãng đường \\(0<x\\le2\\) km; nếu đi xa hơn 2 km thì thu thêm 12 nghìn đồng cho mỗi km vượt 2. Ngân sách tối đa 160 nghìn đồng. Tìm mọi quãng đường x có thể đi.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B15-P04",
+    "stem": "Dịch vụ giả định thu 100 nghìn đồng cho quãng đường \\(0<x\\le2\\) km; nếu đi xa hơn 2 km thì thu thêm 12 nghìn đồng cho mỗi km vượt 2. Ngân sách tối đa 160 nghìn đồng. Tìm mọi quãng đường x có thể đi. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(0<x\\le7\\) (km).",
     "worked_solution": "Miền thực tế là \\(x>0\\). Với \\(0<x\\le2\\), phí 100 nghìn đồng không vượt ngân sách. Với \\(x>2\\), điều kiện \\(100+12(x-2)\\le160\\) tương đương \\(x\\le7\\); giao với \\(x>2\\) được \\((2;7]\\). Hợp hai miền là \\((0;7]\\). Mốc 7 được nhận vì phí đúng bằng 160 nghìn đồng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -171,13 +286,17 @@
       "FUNCTION_MODELING"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Xét từng miền rồi lấy hợp nghiệm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -189,13 +308,32 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu bỏ phí nền hoặc lấy toàn bộ x nhân phí thêm, viết từng nhánh, giải rồi giao miền. Ôn Bài 15 mục 3.3; luyện THPT-G10-CHVI-TRY05."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu bỏ phí nền hoặc lấy toàn bộ x nhân phí thêm, viết từng nhánh, giải rồi giao miền. Ôn Bài 15 mục 3.3; luyện THPT-G10-CHVI-TRY05.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(0<x<7\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(0<x\\le7\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(2<x\\le7\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(0<x\\le5\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B17-C01",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Xét dấu \\(f(x)=x^2-4x+8\\) trên \\(\\mathbb R\\).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B17-C01",
+    "stem": "Xét dấu \\(f(x)=x^2-4x+8\\) trên \\(\\mathbb R\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(f(x)>0\\) với mọi \\(x\\in\\mathbb R\\).",
     "worked_solution": "Hệ số \\(a=1>0\\), biệt thức \\(\\Delta=(-4)^2-4\\cdot1\\cdot8=-16<0\\). Tam thức không có nghiệm thực và luôn cùng dấu với a, nên \\(f(x)>0\\) với mọi x thực. Có thể kiểm lại bằng \\(f(x)=(x-2)^2+4>0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -203,13 +341,17 @@
       "QUAD_SIGN"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Tính \\(\\Delta\\) và xét dấu a."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -221,13 +363,32 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu cho \\(\\Delta<0\\) nghĩa là tam thức âm, xét thêm dấu a hoặc hoàn thành bình phương. Ôn Bài 17 mục 2.1; luyện THPT-G10-CHVI-TRY11."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu cho \\(\\Delta<0\\) nghĩa là tam thức âm, xét thêm dấu a hoặc hoàn thành bình phương. Ôn Bài 17 mục 2.1; luyện THPT-G10-CHVI-TRY11.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(f(x)<0\\) với mọi x thực."
+      },
+      {
+        "id": "B",
+        "text": "\\(f(x)\\ge0\\), bằng 0 tại x=2."
+      },
+      {
+        "id": "C",
+        "text": "\\(f(x)>0\\) với mọi x thực."
+      },
+      {
+        "id": "D",
+        "text": "\\(f(x)>0\\) chỉ khi x>2."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B17-C02",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho \\(g(x)=-2(x+1)^2\\). Tìm tập nghiệm của \\(g(x)<0\\) và \\(g(x)\\le0\\); giải thích sự khác nhau.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B17-C02",
+    "stem": "Cho \\(g(x)=-2(x+1)^2\\). Tìm tập nghiệm của \\(g(x)<0\\) và \\(g(x)\\le0\\); giải thích sự khác nhau. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(g(x)<0:\\ \\mathbb R\\setminus\\{-1\\}\\); \\(g(x)\\le0:\\ \\mathbb R\\).",
     "worked_solution": "Vì \\((x+1)^2\\ge0\\), nên \\(g(x)\\le0\\) với mọi x thực. Ta có \\(g(x)=0\\iff x=-1\\). Do đó bất phương trình nghiêm \\(g(x)<0\\) loại \\(x=-1\\), còn bất phương trình \\(g(x)\\le0\\) nhận cả nghiệm kép này.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -235,13 +396,17 @@
       "QUAD_DOUBLE_ROOT_SIGN"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Xét khi bình phương bằng 0, rồi kiểm dấu nghiêm và không nghiêm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -253,13 +418,32 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhận nghiệm kép trong bất phương trình nghiêm, kiểm \\(g(-1)=0\\). Ôn Bài 17 mục 2.1; luyện THPT-G10-CHVI-TRY12."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhận nghiệm kép trong bất phương trình nghiêm, kiểm \\(g(-1)=0\\). Ôn Bài 17 mục 2.1; luyện THPT-G10-CHVI-TRY12.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\mathbb R\\) và \\(\\mathbb R\\setminus\\{-1\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\varnothing\\) và \\(\\{-1\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-\\infty;-1)\\) và \\((-\\infty;-1]\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\mathbb R\\setminus\\{-1\\}\\) và \\(\\mathbb R\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B17-P01",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Giải bất phương trình \\(2x^2-10x+12\\le0\\).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B17-P01",
+    "stem": "Giải bất phương trình \\(2x^2-10x+12\\le0\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(S=[2;3]\\).",
     "worked_solution": "Phân tích \\(2x^2-10x+12=2(x-2)(x-3)\\). Tam thức có hệ số bậc hai dương, hai nghiệm 2 và 3; âm giữa hai nghiệm, bằng 0 tại hai nghiệm và dương bên ngoài. Vì dấu yêu cầu là \\(\\le\\), nhận cả hai đầu mút: \\(S=[2;3]\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -267,13 +451,17 @@
       "QUAD_INEQUALITY"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Tìm nghiệm và xét dấu giữa hai nghiệm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -285,13 +473,32 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu loại hai đầu mút, thế \\(x=2\\) và \\(x=3\\) rồi kiểm dấu \\(\\le\\). Ôn Bài 17 mục 2.2; luyện THPT-G10-CHVI-TRY13."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu loại hai đầu mút, thế \\(x=2\\) và \\(x=3\\) rồi kiểm dấu \\(\\le\\). Ôn Bài 17 mục 2.2; luyện THPT-G10-CHVI-TRY13.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\([2;3]\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((2;3)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-\\infty;2]\\cup[3;+\\infty)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\([1;6]\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B17-P02",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Giải bất phương trình \\(-x^2+2x+8>0\\).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B17-P02",
+    "stem": "Giải bất phương trình \\(-x^2+2x+8>0\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(S=(-2;4)\\).",
     "worked_solution": "\\(-x^2+2x+8=-(x-4)(x+2)\\). Hai nghiệm là −2 và 4, hệ số bậc hai âm nên tam thức dương giữa hai nghiệm, âm bên ngoài. Hai nghiệm làm tam thức bằng 0, không thỏa dấu nghiêm. Vậy \\(S=(-2;4)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -299,13 +506,17 @@
       "QUAD_INEQUALITY"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Chú ý hệ số a âm."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -317,13 +528,32 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chọn miền ngoài hai nghiệm, thử \\(x=0\\) và kiểm dấu hệ số a âm. Ôn Bài 17 mục 2.2; luyện THPT-G10-CHVI-TRY13."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn miền ngoài hai nghiệm, thử \\(x=0\\) và kiểm dấu hệ số a âm. Ôn Bài 17 mục 2.2; luyện THPT-G10-CHVI-TRY13.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\([-2;4]\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((-2;4)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-\\infty;-2)\\cup(4;+\\infty)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((-4;2)\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B17-P03",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tìm m để \\(x^2-2(m+1)x+m^2+3>0\\) với mọi số thực x.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B17-P03",
+    "stem": "Tìm m để \\(x^2-2(m+1)x+m^2+3>0\\) với mọi số thực x. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(m<1\\).",
     "worked_solution": "Hệ số bậc hai bằng 1 nên tam thức dương với mọi x thực khi và chỉ khi \\(\\Delta<0\\). Tính \\(\\Delta=[-2(m+1)]^2-4(m^2+3)=8(m-1)\\). Do đó \\(8(m-1)<0\\iff m<1\\). Nếu \\(m=1\\), tam thức có nghiệm kép, bằng 0 tại nghiệm đó, nên không thỏa.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -331,13 +561,17 @@
       "QUAD_PARAMETER"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Dấu \\(>0\\) với mọi x đòi hỏi \\(\\Delta<0\\), không phải \\(\\Delta\\le0\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -349,13 +583,32 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhận \\(m=1\\), kiểm nghiệm kép \\(x=m+1\\) tại \\(\\Delta=0\\), trái với dấu \\(>0\\). Ôn Bài 17 mục ví dụ mở rộng tham số; luyện THPT-G10-CHVI-TRY14."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhận \\(m=1\\), kiểm nghiệm kép \\(x=m+1\\) tại \\(\\Delta=0\\), trái với dấu \\(>0\\). Ôn Bài 17 mục ví dụ mở rộng tham số; luyện THPT-G10-CHVI-TRY14.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(m\\le1\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(m>1\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(m<1\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(m\\ne1\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B17-P04",
-    "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Dùng hết 30 m lưới để rào ba cạnh hình chữ nhật sát tường; x (m) là độ dài mỗi cạnh vuông góc tường. Tìm mọi x để diện tích ít nhất \\(100\\,\\mathrm{m}^2\\).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B17-P04",
+    "stem": "Dùng hết 30 m lưới để rào ba cạnh hình chữ nhật sát tường; x (m) là độ dài mỗi cạnh vuông góc tường. Tìm mọi x để diện tích ít nhất \\(100\\,\\mathrm{m}^2\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(5\\le x\\le10\\) (m).",
     "worked_solution": "Cạnh song song tường dài \\(30-2x\\), nên miền độ dài là \\(0<x<15\\). Diện tích \\(S=x(30-2x)\\). Điều kiện \\(S\\ge100\\) tương đương \\(2x^2-30x+100\\le0\\), hay \\(2(x-5)(x-10)\\le0\\). Giải được \\([5;10]\\); toàn bộ đoạn này thuộc miền \\((0;15)\\). Vậy \\(5\\le x\\le10\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -363,13 +616,17 @@
       "QUAD_MODELING"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Lập diện tích và giữ miền độ dài thực tế."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -381,8 +638,27 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu quên chiều dài dương, viết \\(0<x<15\\) trước khi giải bất phương trình diện tích rồi giao với miền. Ôn Bài 17 mục ví dụ rào vườn; luyện THPT-G10-CHVI-TRY15."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên chiều dài dương, viết \\(0<x<15\\) trước khi giải bất phương trình diện tích rồi giao với miền. Ôn Bài 17 mục ví dụ rào vườn; luyện THPT-G10-CHVI-TRY15.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((5;10)\\) m"
+      },
+      {
+        "id": "B",
+        "text": "\\((0;5]\\cup[10;15)\\) m"
+      },
+      {
+        "id": "C",
+        "text": "\\([5;15]\\) m"
+      },
+      {
+        "id": "D",
+        "text": "\\([5;10]\\) m"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B18-C01",
@@ -717,22 +993,22 @@
   },
   {
     "item_id": "THPT-CORE-QF01",
-    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-CORE-QF01",
     "stem": "Cho \\(y=(x+3)^2-5\\). Hoành độ đỉnh là bao nhiêu?",
     "answer_key": "-3",
     "worked_solution": "Đỉnh \\(I(-3;-5)\\), nên hoành độ đỉnh bằng \\(-3\\), không phải \\(3\\) hoặc \\(-5\\).",
     "options": [
       {
-        "value": "-3",
-        "label": "\\(-3\\)"
+        "id": "A",
+        "text": "\\(-3\\)"
       },
       {
-        "value": "3",
-        "label": "\\(3\\)"
+        "id": "B",
+        "text": "\\(3\\)"
       },
       {
-        "value": "-5",
-        "label": "\\(-5\\)"
+        "id": "C",
+        "text": "\\(-5\\)"
       }
     ],
     "answer_representation": "EXPLICIT_KEY",
@@ -740,15 +1016,18 @@
       "B16_OUT_02"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Viết \\(x+3=x-(-3)\\), rồi so sánh với \\(a(x-h)^2+k\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
@@ -758,12 +1037,13 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B16-C01",
-    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(f_m(x)=(m-2)x^2+3x+1\\), tìm mọi \\(m\\) để \\(f_m\\) là hàm số bậc hai. Khi \\(m=2\\), hàm còn thuộc loại nào?",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B16-C01",
+    "stem": "Với \\(f_m(x)=(m-2)x^2+3x+1\\), tìm mọi \\(m\\) để \\(f_m\\) là hàm số bậc hai. Khi \\(m=2\\), hàm còn thuộc loại nào? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(m\\ne2\\); khi \\(m=2\\), hàm bậc nhất \\(f_2(x)=3x+1\\).",
     "worked_solution": "Hàm bậc hai cần hệ số của \\(x^2\\) khác 0. Do đó \\(m-2\\ne0\\iff m\\ne2\\). Nếu \\(m=2\\), số hạng bậc hai mất đi, còn \\(f_2(x)=3x+1\\), là hàm bậc nhất; không dùng công thức đỉnh parabol.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -771,13 +1051,17 @@
       "B16_OUT_01"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Hãy đọc hệ số đứng trước \\(x^2\\) sau khi thu gọn và dùng định nghĩa \\(a\\ne0\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -788,13 +1072,32 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu coi mọi m đều cho hàm bậc hai, xét riêng trường hợp hệ số của \\(x^2\\) bằng 0. Ôn Bài 16 mục 2.1; luyện THPT-G10-CHVI-TRY06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu coi mọi m đều cho hàm bậc hai, xét riêng trường hợp hệ số của \\(x^2\\) bằng 0. Ôn Bài 16 mục 2.1; luyện THPT-G10-CHVI-TRY06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(m=2\\); khi m=2 là hàm bậc hai."
+      },
+      {
+        "id": "B",
+        "text": "\\(m\\ne2\\); khi m=2 là hàm bậc nhất."
+      },
+      {
+        "id": "C",
+        "text": "Mọi m; khi m=2 vẫn là hàm bậc hai."
+      },
+      {
+        "id": "D",
+        "text": "\\(m\\ne2\\); khi m=2 là hàm hằng."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B16-C02",
-    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho \\(g(x)=x^2-6x+5\\). Tính \\(g(2)\\) và \\(g(4)\\), giải thích vì sao hai điểm trên đồ thị đối xứng qua một đường thẳng.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B16-C02",
+    "stem": "Cho \\(g(x)=x^2-6x+5\\). Tính \\(g(2)\\) và \\(g(4)\\), giải thích vì sao hai điểm trên đồ thị đối xứng qua một đường thẳng. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(g(2)=g(4)=-3\\); hai điểm \\((2;-3)\\), \\((4;-3)\\) đối xứng qua \\(x=3\\).",
     "worked_solution": "\\(g(2)=4-12+5=-3\\), \\(g(4)=16-24+5=-3\\). Hoàn thành bình phương: \\(g(x)=(x-3)^2-4\\), nên trục đối xứng là \\(x=3\\). Hai điểm có cùng tung độ −3 và hoành độ cách trục một đơn vị về hai phía, nên đối xứng qua trục.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -802,13 +1105,17 @@
       "B16_OUT_03"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Viết \\(g(x)=(x-3)^2-4\\) rồi so khoảng cách của 2 và 4 đến 3."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -819,13 +1126,32 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu lấy \\(x=-3\\) làm trục, hoàn thành bình phương và so khoảng cách đến trục. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy \\(x=-3\\) làm trục, hoàn thành bình phương và so khoảng cách đến trục. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY07.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(g(2)=g(4)=-3\\), đối xứng qua x=0."
+      },
+      {
+        "id": "B",
+        "text": "\\(g(2)=-3,g(4)=3\\), đối xứng qua Ox."
+      },
+      {
+        "id": "C",
+        "text": "\\(g(2)=g(4)=-3\\), đối xứng qua x=3."
+      },
+      {
+        "id": "D",
+        "text": "\\(g(2)=g(4)=3\\), đối xứng qua x=3."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B16-C03",
-    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(g(x)=2(x-4)^2-3\\), tìm GTNN, nơi đạt GTNN, tập giá trị và các khoảng đồng biến và nghịch biến.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B16-C03",
+    "stem": "Với \\(g(x)=2(x-4)^2-3\\), tìm GTNN, nơi đạt GTNN, tập giá trị và các khoảng đồng biến và nghịch biến. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "GTNN −3 tại \\(x=4\\); \\(T=[-3;+\\infty)\\); nghịch biến trên \\((-\\infty;4)\\), đồng biến trên \\((4;+\\infty)\\).",
     "worked_solution": "Vì \\(2(x-4)^2\\ge0\\), giá trị nhỏ nhất của g là −3, đạt tại \\(x=4\\). Với mọi \\(y\\ge-3\\), chọn \\(x=4+\\sqrt{\\frac{y+3}{2}}\\) thì \\(g(x)=y\\); vậy tập giá trị là \\([-3;+\\infty)\\). Khi x tăng từ bên trái đến 4, khoảng cách \\(|x-4|\\) giảm nên g giảm; khi x tăng từ 4 về bên phải, khoảng cách tăng nên g tăng. Hàm nghịch biến trên \\((-\\infty;4)\\), đồng biến trên \\((4;+\\infty)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -833,13 +1159,17 @@
       "B16_OUT_04"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Vì hệ số 2 dương, bình phương không âm; đọc hai nhánh bên trái và bên phải từ trục \\(x=4\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -850,13 +1180,32 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu chỉ nêu GTNN mà chưa chứng minh tập giá trị, tìm x ứng với mỗi \\(y\\ge-3\\). Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ nêu GTNN mà chưa chứng minh tập giá trị, tìm x ứng với mỗi \\(y\\ge-3\\). Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY09.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "GTLN −3 tại x=4; \\(T=(-\\infty;-3]\\); tăng trước 4, giảm sau 4."
+      },
+      {
+        "id": "B",
+        "text": "GTNN −3 tại x=−4; \\(T=[-3;+\\infty)\\); giảm trước −4, tăng sau −4."
+      },
+      {
+        "id": "C",
+        "text": "GTNN 0 tại x=4; \\(T=[0;+\\infty)\\)."
+      },
+      {
+        "id": "D",
+        "text": "GTNN −3 tại x=4; \\(T=[-3;+\\infty)\\); giảm trước 4, tăng sau 4."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B16-C04",
-    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Độ cao giả định \\(h(t)=-2(t-3)^2+18\\) mét trong \\(0\\le t\\le6\\) giây. Tìm độ cao lớn nhất và kiểm tra độ cao tại hai đầu khoảng.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B16-C04",
+    "stem": "Độ cao giả định \\(h(t)=-2(t-3)^2+18\\) mét trong \\(0\\le t\\le6\\) giây. Tìm độ cao lớn nhất và kiểm tra độ cao tại hai đầu khoảng. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "GTLN \\(18\\,\\mathrm m\\) tại \\(t=3\\,\\mathrm s\\); \\(h(0)=h(6)=0\\) (m).",
     "worked_solution": "Vì \\(-2(t-3)^2\\le0\\), ta có \\(h(t)\\le18\\). Dấu bằng xảy ra khi \\(t=3\\), thuộc đoạn thời gian \\([0;6]\\). Vậy độ cao lớn nhất là 18 m tại giây thứ 3. Thay hai đầu mút được \\(h(0)=h(6)=-2\\cdot9+18=0\\) (m). Mô hình chỉ áp dụng trong khoảng thời gian đã cho.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -864,13 +1213,17 @@
       "B16_OUT_05"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Đỉnh của parabol mở xuống nằm ở \\(t=3\\). Đừng quên kiểm \\(3\\in[0;6]\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -881,13 +1234,32 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng đỉnh ngoài thời gian được phép, kiểm miền t rồi so hai đầu mút. Ôn Bài 16 mục 3.1; luyện THPT-G10-CHVI-TRY10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng đỉnh ngoài thời gian được phép, kiểm miền t rồi so hai đầu mút. Ôn Bài 16 mục 3.1; luyện THPT-G10-CHVI-TRY10.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "18 m tại 3 s; h(0)=h(6)=0."
+      },
+      {
+        "id": "B",
+        "text": "18 m tại 6 s; h(0)=0."
+      },
+      {
+        "id": "C",
+        "text": "0 m tại 3 s; h(0)=h(6)=18."
+      },
+      {
+        "id": "D",
+        "text": "36 m tại 3 s; h(0)=h(6)=0."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B16-C05",
-    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Xét \\(y=x^2+6x+5\\). Hoàn thành bình phương và cho biết đỉnh, trục đối xứng, hướng mở.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B16-C05",
+    "stem": "Xét \\(y=x^2+6x+5\\). Hoàn thành bình phương và cho biết đỉnh, trục đối xứng, hướng mở. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(y=(x+3)^2-4\\); đỉnh \\(I(-3;-4)\\); trục \\(x=-3\\); mở lên.",
     "worked_solution": "\\(y=x^2+6x+9-9+5=(x+3)^2-4\\). Do đó đỉnh \\(I(-3;-4)\\), trục đối xứng \\(x=-3\\); parabol mở lên vì \\(a=1>0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -895,13 +1267,17 @@
       "B16_OUT_02"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Tách \\(x^2+6x=(x+3)^2-9\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -912,27 +1288,46 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu đổi dấu sai khi hoàn thành bình phương, khai triển \\((x+3)^2\\) để kiểm. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY07."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đổi dấu sai khi hoàn thành bình phương, khai triển \\((x+3)^2\\) để kiểm. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY07.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(y=(x-3)^2-4\\); I(3;-4), trục x=3, mở lên."
+      },
+      {
+        "id": "B",
+        "text": "\\(y=(x+3)^2-4\\); I(-3;-4), trục x=−3, mở lên."
+      },
+      {
+        "id": "C",
+        "text": "\\(y=(x+3)^2+5\\); I(-3;5), trục x=−3, mở lên."
+      },
+      {
+        "id": "D",
+        "text": "\\(y=(x+3)^2-4\\); I(-3;-4), mở xuống."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B16-P00",
-    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B16-P00",
     "stem": "Cho \\(y=-2x^2+8x-6\\). Hai giao điểm với trục \\(Ox\\) có hoành độ nào?",
     "answer_key": "1,3",
     "worked_solution": "Tại giao điểm với trục Ox, tung độ bằng 0. Giải \\(-2x^2+8x-6=-2(x-1)(x-3)=0\\), được \\(x=1\\) hoặc \\(x=3\\). Hai giao điểm là \\((1;0)\\) và \\((3;0)\\). Hướng mở xuống không làm mất hai nghiệm này.",
     "options": [
       {
-        "value": "1,3",
-        "label": "\\(x=1\\) và \\(x=3\\)"
+        "id": "A",
+        "text": "\\(x=1\\) và \\(x=3\\)"
       },
       {
-        "value": "2",
-        "label": "Chỉ \\(x=2\\)"
+        "id": "B",
+        "text": "Chỉ \\(x=2\\)"
       },
       {
-        "value": "-1,3",
-        "label": "\\(x=-1\\) và \\(x=3\\)"
+        "id": "C",
+        "text": "\\(x=-1\\) và \\(x=3\\)"
       }
     ],
     "answer_representation": "EXPLICIT_KEY",
@@ -940,15 +1335,18 @@
       "B16_OUT_03"
     ],
     "problem_type_id": null,
-    "difficulty": 1,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đặt \\(y=0\\), chia cả hai vế cho \\(-2\\), rồi phân tích thành nhân tử."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
-      "auto_grade": false,
-      "original_type": "MCQ_SINGLE"
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
     },
     "source": {
       "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
@@ -958,13 +1356,14 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm giao Ox với Oy, đặt \\(y=0\\) rồi kiểm từng nghiệm. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm giao Ox với Oy, đặt \\(y=0\\) rồi kiểm từng nghiệm. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY08.",
+    "exercise_type": "INTERACTIVE"
   },
   {
     "item_id": "THPT-G10-B16-P01",
-    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(h_k(x)=(k+1)x^2-2x+5\\), khi nào \\(h_k\\) là hàm số bậc hai? Nêu tập xác định với mọi \\(k\\) thực.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B16-P01",
+    "stem": "Với \\(h_k(x)=(k+1)x^2-2x+5\\), khi nào \\(h_k\\) là hàm số bậc hai? Nêu tập xác định với mọi \\(k\\) thực. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(k\\ne-1\\); tập xác định \\(\\mathbb R\\) với mọi k thực.",
     "worked_solution": "Hàm số bậc hai khi \\(k+1\\ne0\\iff k\\ne-1\\). Khi \\(k=-1\\), \\(h_{-1}(x)=-2x+5\\) là hàm bậc nhất. Với mọi k thực, biểu thức vẫn là đa thức theo x, nên tập xác định luôn là \\(\\mathbb R\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -972,13 +1371,17 @@
       "B16_OUT_01"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Điều kiện bậc hai chỉ phụ thuộc hệ số \\(k+1\\). Đa thức xác định tại mọi số thực."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -989,13 +1392,32 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu loại \\(k=-1\\) khỏi tập xác định, phân biệt điều kiện của tham số để hàm bậc hai với miền xác định theo biến x. Ôn Bài 16 mục 2.1; luyện THPT-G10-CHVI-TRY06."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu loại \\(k=-1\\) khỏi tập xác định, phân biệt điều kiện của tham số để hàm bậc hai với miền xác định theo biến x. Ôn Bài 16 mục 2.1; luyện THPT-G10-CHVI-TRY06.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(k\\ne1\\); D=\\mathbb R\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(k=-1\\); D=\\mathbb R\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(k\\ne-1\\); D=\\mathbb R\\setminus\\{-1\\}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(k\\ne-1\\); D=\\mathbb R\\) với mọi k."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B16-P02",
-    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho \\(f(x)=-3x^2+12x-9\\). Xác định đỉnh, trục đối xứng, GTLN và nghiệm của \\(f(x)=0\\).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B16-P02",
+    "stem": "Cho \\(f(x)=-3x^2+12x-9\\). Xác định đỉnh, trục đối xứng, GTLN và nghiệm của \\(f(x)=0\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(I(2;3)\\); trục \\(x=2\\); GTLN 3 tại \\(x=2\\); nghiệm \\(x=1\\) hoặc \\(x=3\\).",
     "worked_solution": "Hoàn thành bình phương: \\(f(x)=-3(x-2)^2+3\\). Đỉnh \\(I(2;3)\\), trục \\(x=2\\); vì \\(-3(x-2)^2\\le0\\), GTLN là 3 đạt tại \\(x=2\\). Giải \\(f(x)=0\\) tương đương \\((x-2)^2=1\\), được \\(x=1\\) hoặc \\(x=3\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1003,13 +1425,17 @@
       "B16_OUT_02"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Hoàn thành bình phương hoặc dùng \\(x=-\\frac b{2a}\\) để tìm hoành độ đỉnh; giải phương trình \\(f(x)=0\\) riêng."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1020,13 +1446,32 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nhầm tung độ đỉnh với hoành độ, viết dạng bình phương và giải \\(f(x)=0\\) riêng. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm tung độ đỉnh với hoành độ, viết dạng bình phương và giải \\(f(x)=0\\) riêng. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "I(2;3), trục x=2, GTLN 3; nghiệm 1 và 3."
+      },
+      {
+        "id": "B",
+        "text": "I(-2;3), trục x=−2, GTLN 3; nghiệm −1 và −3."
+      },
+      {
+        "id": "C",
+        "text": "I(2;-3), trục x=2, GTNN −3; nghiệm 1 và 3."
+      },
+      {
+        "id": "D",
+        "text": "I(2;3), trục x=2, GTLN 3; chỉ nghiệm 2."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B16-P03",
-    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Xét \\(f(x)=x^2+2x-8\\). Tìm đỉnh, trục đối xứng, ba giao điểm với các trục tọa độ; lấy thêm một cặp điểm phân biệt, đối xứng qua trục và khác các giao điểm đã tìm để phác parabol.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B16-P03",
+    "stem": "Xét \\(f(x)=x^2+2x-8\\). Tìm đỉnh, trục đối xứng, ba giao điểm với các trục tọa độ; lấy thêm một cặp điểm phân biệt, đối xứng qua trục và khác các giao điểm đã tìm để phác parabol. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(I(-1;-9)\\); trục \\(x=-1\\); giao Ox \\((-4;0),(2;0)\\), giao Oy \\((0;-8)\\); ví dụ cặp bổ sung \\((-3;-5),(1;-5)\\).",
     "worked_solution": "\\(f(x)=(x+1)^2-9\\), nên đỉnh \\(I(-1;-9)\\), trục \\(x=-1\\), parabol mở lên. \\(f(x)=(x+4)(x-2)\\) nên giao Ox tại \\((-4;0),(2;0)\\). Cho \\(x=0\\), được giao Oy tại \\((0;-8)\\). Chọn chẳng hạn \\(x=-3\\) và \\(x=1\\), cùng cách trục 2 đơn vị; \\(f(-3)=f(1)=-5\\). Cặp \\((-3;-5),(1;-5)\\) đều khác các giao điểm đã tìm. Những cặp đối xứng phù hợp khác cũng được chấp nhận. Đặt đỉnh và các điểm lên hệ trục, phác đường cong trơn đối xứng qua \\(x=-1\\), không nối bằng đoạn thẳng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1034,13 +1479,17 @@
       "B16_OUT_03"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Viết \\(f(x)=(x+1)^2-9\\). Giao \\(Oy\\): cho \\(x=0\\). Giao \\(Ox\\): giải \\(f(x)=0\\)."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1051,13 +1500,32 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu dùng lại điểm giao trục làm cặp điểm bổ sung, chọn hai hoành độ khác đối xứng qua \\(x=-1\\). Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY08."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng lại điểm giao trục làm cặp điểm bổ sung, chọn hai hoành độ khác đối xứng qua \\(x=-1\\). Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY08.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "I(1;-9), trục x=1; Ox: (-4;0),(2;0), Oy: (0;-8); cặp (-3;-5),(1;-5)."
+      },
+      {
+        "id": "B",
+        "text": "I(-1;-9), trục x=−1; Ox: (-4;0),(2;0), Oy: (0;-8); cặp (-3;-5),(1;-5)."
+      },
+      {
+        "id": "C",
+        "text": "I(-1;-9), trục x=−1; Ox: (-2;0),(4;0), Oy: (0;-8); cặp (-3;-5),(1;-5)."
+      },
+      {
+        "id": "D",
+        "text": "I(-1;-9), trục x=−1; Ox: (-4;0),(2;0), Oy: (0;-8); cặp (-3;5),(1;5)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B16-P04",
-    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho \\(f(x)=-(x-2)^2+7\\) nhưng chỉ xét \\(x\\in[3;5]\\). Tìm GTLN, GTNN và tập giá trị của hàm trên đoạn này.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B16-P04",
+    "stem": "Cho \\(f(x)=-(x-2)^2+7\\) nhưng chỉ xét \\(x\\in[3;5]\\). Tìm GTLN, GTNN và tập giá trị của hàm trên đoạn này. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "GTLN 6 tại \\(x=3\\); GTNN −2 tại \\(x=5\\); \\(T=[-2;6]\\).",
     "worked_solution": "Trên \\([3;5]\\), \\(x-2\\) dương và tăng theo x, nên \\(f(x)=-(x-2)^2+7\\) giảm. Hai đầu mút cho \\(f(3)=6,\\ f(5)=-2\\), lần lượt là GTLN và GTNN. Với mọi \\(y\\in[-2;6]\\), chọn \\(x=2+\\sqrt{7-y}\\), khi đó \\(1\\le\\sqrt{7-y}\\le3\\), nên \\(x\\in[3;5]\\) và \\(f(x)=y\\). Vậy tập giá trị là \\([-2;6]\\). Đỉnh có hoành độ 2 nằm ngoài miền đang xét.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1065,13 +1533,17 @@
       "B16_OUT_04"
     ],
     "problem_type_id": null,
-    "difficulty": 2,
+    "difficulty": "APPLY",
     "hints": [
       "Đỉnh ở \\(x=2\\) nằm ngoài đoạn \\([3;5]\\): không áp dụng máy móc GTLN 7 của toàn trục số."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1082,13 +1554,32 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu lấy 7 làm GTLN, kiểm \\(x=2\\notin[3;5]\\) rồi tính giá trị tại hai đầu mút. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY09."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy 7 làm GTLN, kiểm \\(x=2\\notin[3;5]\\) rồi tính giá trị tại hai đầu mút. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY09.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "GTLN 7 tại x=2, GTNN −2 tại x=5; \\(T=[-2;7]\\)."
+      },
+      {
+        "id": "B",
+        "text": "GTLN −2 tại x=5, GTNN 6 tại x=3."
+      },
+      {
+        "id": "C",
+        "text": "GTLN 6 tại x=3, GTNN −2 tại x=5; \\(T=[-2;6]\\)."
+      },
+      {
+        "id": "D",
+        "text": "GTLN 6 tại x=3, GTNN −2 tại x=5; \\(T=(-\\infty;6]\\)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-B16-P05",
-    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Dùng hết 36 m hàng rào để rào ba cạnh hình chữ nhật dựa vào một bức tường thẳng. Gọi \\(x\\) (m) là chiều rộng vuông góc tường. Tìm miền của \\(x\\), diện tích lớn nhất và kích thước tương ứng.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-B16-P05",
+    "stem": "Dùng hết 36 m hàng rào để rào ba cạnh hình chữ nhật dựa vào một bức tường thẳng. Gọi \\(x\\) (m) là chiều rộng vuông góc tường. Tìm miền của \\(x\\), diện tích lớn nhất và kích thước tương ứng. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(0<x<18\\) (m); diện tích lớn nhất \\(162\\,\\mathrm{m}^2\\); kích thước \\(9\\,\\mathrm m\\times18\\,\\mathrm m\\).",
     "worked_solution": "Hai cạnh vuông góc tường đều dài x, nên cạnh song song tường dài \\(36-2x\\) (m). Hai kích thước phải dương: \\(0<x<18\\). Diện tích \\(S(x)=x(36-2x)=-2(x-9)^2+162\\). Vì \\(-2(x-9)^2\\le0\\), diện tích không vượt 162; dấu bằng đạt tại \\(x=9\\), thuộc miền. Cạnh còn lại \\(36-2\\cdot9=18\\) m, vậy diện tích lớn nhất là \\(162\\,\\mathrm{m}^2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1096,13 +1587,17 @@
       "B16_OUT_05"
     ],
     "problem_type_id": null,
-    "difficulty": 3,
+    "difficulty": "APPLY",
     "hints": [
       "Cạnh song song tường cần rào dài \\(36-2x\\) (m), nên \\(0<x<18\\). Đưa \\(S(x)=x(36-2x)\\) về dạng đỉnh."
     ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1113,15 +1608,34 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu lấy cả hai cạnh bằng 18, lập \\(2x+y=36\\) và giữ \\(x>0,\\ y>0\\) trước khi tối ưu. Ôn Bài 16 mục mở rộng mô hình thực tế; luyện THPT-G10-CHVI-TRY10."
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy cả hai cạnh bằng 18, lập \\(2x+y=36\\) và giữ \\(x>0,\\ y>0\\) trước khi tối ưu. Ôn Bài 16 mục mở rộng mô hình thực tế; luyện THPT-G10-CHVI-TRY10.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(0<x<36\\); diện tích \\(324\\,\\mathrm m^2\\), kích thước 18 m và 18 m."
+      },
+      {
+        "id": "B",
+        "text": "\\(0<x<18\\); diện tích \\(81\\,\\mathrm m^2\\), kích thước 9 m và 9 m."
+      },
+      {
+        "id": "C",
+        "text": "\\(0<x<18\\); diện tích \\(162\\,\\mathrm m^2\\), kích thước 18 m và 9 m với x=18."
+      },
+      {
+        "id": "D",
+        "text": "\\(0<x<18\\); diện tích \\(162\\,\\mathrm m^2\\), kích thước 9 m và 18 m."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY01",
-    "content_version": "SOURCE_BLOB_ee38fdfeddc78a22a527a6a7449347f86eeee422_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Bảng A gồm \\((1;7),(3;2),(3;2)\\); bảng B gồm \\((1;7),(3;2),(3;4)\\). Bảng nào biểu diễn hàm số \\(y\\) theo \\(x\\), vì sao?",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY01",
+    "stem": "Bảng A gồm \\((1;7),(3;2),(3;2)\\); bảng B gồm \\((1;7),(3;2),(3;4)\\). Bảng nào biểu diễn hàm số \\(y\\) theo \\(x\\), vì sao? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "A là hàm số trên D={1,3}; B không là hàm số.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> A là hàm số trên <span class=\"arithmatex\">\\(D=\\{1,3\\}\\)</span>; B không là hàm số <span class=\"arithmatex\">\\(y\\)</span> theo <span class=\"arithmatex\">\\(x\\)</span>.</p><p><strong>Vì sao:</strong> Trong A, <span class=\"arithmatex\">\\(x=3\\)</span> lặp hai lần nhưng luôn cho <span class=\"arithmatex\">\\(y=2\\)</span>. Trong B, cùng <span class=\"arithmatex\">\\(x=3\\)</span> cho cả <span class=\"arithmatex\">\\(y=2\\)</span> và <span class=\"arithmatex\">\\(y=4\\)</span>, vi phạm tính đơn trị.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: A là hàm số trên \\(D=\\{1,3\\}\\); B không là hàm số \\(y\\) theo \\(x\\).\n\nVì sao: Trong A, \\(x=3\\) lặp hai lần nhưng luôn cho \\(y=2\\). Trong B, cùng \\(x=3\\) cho cả \\(y=2\\) và \\(y=4\\), vi phạm tính đơn trị.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_MAPPING"
@@ -1130,11 +1644,17 @@
       "B15_OUT_01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Điều kiện là một đầu vào chỉ có một đầu ra, không cấm lặp cùng cặp."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1147,14 +1667,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ A là hàm số, \\(D=\\{1,3\\}\\); B có hai đầu ra khác nhau tại x=3."
+      },
+      {
+        "id": "B",
+        "text": "Cả hai là hàm số vì có cùng số cặp."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ B là hàm số vì không lặp cặp tọa độ."
+      },
+      {
+        "id": "D",
+        "text": "Cả hai không là hàm số vì x=3 lặp lại."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY02",
-    "content_version": "SOURCE_BLOB_ee38fdfeddc78a22a527a6a7449347f86eeee422_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(f(x)=\\sqrt{x-2}\\), hãy tìm tập xác định \\(D\\) và tập giá trị \\(T\\).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY02",
+    "stem": "Với \\(f(x)=\\sqrt{x-2}\\), hãy tìm tập xác định \\(D\\) và tập giá trị \\(T\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "D=[2;+∞); T=[0;+∞).",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> <span class=\"arithmatex\">\\(D=[2;+\\infty)\\)</span>, còn <span class=\"arithmatex\">\\(T=[0;+\\infty)\\)</span>.</p><p><strong>Vì sao:</strong> <span class=\"arithmatex\">\\(x-2\\ge0\\Rightarrow x\\ge2\\)</span>. Căn luôn không âm, bằng 0 khi x=2; với mọi y≥0, lấy x=y²+2 được f(x)=y.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: \\(D=[2;+\\infty)\\), còn \\(T=[0;+\\infty)\\).\n\nVì sao: \\(x-2\\ge0\\Rightarrow x\\ge2\\). Căn luôn không âm, bằng 0 khi x=2; với mọi y≥0, lấy x=y²+2 được f(x)=y.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_DOMAIN"
@@ -1163,11 +1702,17 @@
       "B15_OUT_02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tìm điều kiện dưới căn và giá trị nhỏ nhất của căn."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1180,25 +1725,52 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(D=(2;+\\infty), T=(0;+\\infty)\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(D=[2;+\\infty), T=[0;+\\infty)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(D=[0;+\\infty), T=[2;+\\infty)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(D=\\mathbb R,T=[0;+\\infty)\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY03",
-    "content_version": "SOURCE_BLOB_ee38fdfeddc78a22a527a6a7449347f86eeee422_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(f(x)=x^2-1\\) trên \\(\\mathbb R\\), xét hai điểm \\(A(-2;3)\\) và \\(B(2;5)\\). Điểm nào thuộc đồ thị? Hãy chứng minh bằng cách tính giá trị hàm số.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY03",
+    "stem": "Với \\(f(x)=x^2-1\\) trên \\(\\mathbb R\\), xét hai điểm \\(A(-2;3)\\) và \\(B(2;5)\\). Điểm nào thuộc đồ thị? Hãy chứng minh bằng cách tính giá trị hàm số. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Chỉ A(−2;3) thuộc đồ thị; B không thuộc.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> Chỉ <span class=\"arithmatex\">\\(A(-2;3)\\)</span> thuộc đồ thị; B không thuộc.</p><p><strong>Vì sao:</strong> <span class=\"arithmatex\">\\(f(-2)=(-2)^2-1=3\\)</span> khớp tung độ A; <span class=\"arithmatex\">\\(f(2)=3\\ne5\\)</span> nên B không thuộc đồ thị.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: Chỉ \\(A(-2;3)\\) thuộc đồ thị; B không thuộc.\n\nVì sao: \\(f(-2)=(-2)^2-1=3\\) khớp tung độ A; \\(f(2)=3\\ne5\\) nên B không thuộc đồ thị.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
-    "skill_ids": [],
+    "skill_ids": [
+      "B15_OUT_03"
+    ],
     "original_outcome_ids": [
       "B15_OUT_03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Thay hoành độ và so tung độ của từng điểm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1211,14 +1783,34 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_REVIEWED_SKILL_MAPPING_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "skill_mapping_status": "EXISTING_PLACEMENT_OUTCOME_ID_PENDING_SKILL_CROSSWALK",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả A và B thuộc vì f(−2)=f(2)."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ B thuộc vì f(2)=5."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ A thuộc vì f(−2)=3, f(2)=3 khác 5."
+      },
+      {
+        "id": "D",
+        "text": "Không điểm nào thuộc vì f(−2)=−5."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY05",
-    "content_version": "SOURCE_BLOB_ee38fdfeddc78a22a527a6a7449347f86eeee422_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một dịch vụ tính phí \\(C(x)=12\\) (nghìn đồng) nếu \\(0\\le x\\le3\\), và \\(C(x)=12+4(x-3)\\) nếu \\(x>3\\), với x là quãng đường tính bằng km. Tính \\(C(3)\\) và \\(C(5)\\) (nghìn đồng).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY05",
+    "stem": "Một dịch vụ tính phí \\(C(x)=12\\) (nghìn đồng) nếu \\(0\\le x\\le3\\), và \\(C(x)=12+4(x-3)\\) nếu \\(x>3\\), với x là quãng đường tính bằng km. Tính \\(C(3)\\) và \\(C(5)\\) (nghìn đồng). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "C(3)=12; C(5)=20 nghìn đồng.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> <span class=\"arithmatex\">\\(C(3)=12\\)</span>; <span class=\"arithmatex\">\\(C(5)=12+4(5-3)=20\\)</span> (nghìn đồng).</p><p><strong>Vì sao:</strong> x=3 dùng nhánh thứ nhất vì có dấu bằng. x=5 dùng nhánh thứ hai, quãng đường vượt 3 km là 2 km.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: \\(C(3)=12\\); \\(C(5)=12+4(5-3)=20\\) (nghìn đồng).\n\nVì sao: x=3 dùng nhánh thứ nhất vì có dấu bằng. x=5 dùng nhánh thứ hai, quãng đường vượt 3 km là 2 km.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_PIECEWISE"
@@ -1227,11 +1819,17 @@
       "B15_OUT_05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Dùng nhánh có dấu bằng tại 3; tính phần vượt 3 ở 5."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1244,14 +1842,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "12; 32 nghìn đồng"
+      },
+      {
+        "id": "B",
+        "text": "16; 20 nghìn đồng"
+      },
+      {
+        "id": "C",
+        "text": "12; 8 nghìn đồng"
+      },
+      {
+        "id": "D",
+        "text": "12; 20 nghìn đồng"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY04",
-    "content_version": "SOURCE_BLOB_ee38fdfeddc78a22a527a6a7449347f86eeee422_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(f(x)=3x+2\\) trên \\([-1;2]\\), nếu \\(x_1<x_2\\) thì \\(f(x_1)\\) so với \\(f(x_2)\\) thế nào? Hàm đồng biến hay nghịch biến trên đoạn này?",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY04",
+    "stem": "Với \\(f(x)=3x+2\\) trên \\([-1;2]\\), nếu \\(x_1<x_2\\) thì \\(f(x_1)\\) so với \\(f(x_2)\\) thế nào? Hàm đồng biến hay nghịch biến trên đoạn này? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "f(x₁)<f(x₂); đồng biến trên đoạn [−1;2].",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> <span class=\"arithmatex\">\\(f(x_2)-f(x_1)=3(x_2-x_1)&gt;0\\)</span>; đồng biến trên <span class=\"arithmatex\">\\([-1;2]\\)</span>.</p><p><strong>Vì sao:</strong> Hệ số 3 dương nên khi x tăng thì giá trị f(x) tăng. Lập luận áp dụng mọi cặp x1&lt;x2 trong khoảng, không chỉ một bảng nhỏ.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: \\(f(x_2)-f(x_1)=3(x_2-x_1)>0\\); đồng biến trên \\([-1;2]\\).\n\nVì sao: Hệ số 3 dương nên khi x tăng thì giá trị f(x) tăng. Lập luận áp dụng mọi cặp x1<x2 trong khoảng, không chỉ một bảng nhỏ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_MONOTONICITY"
@@ -1260,11 +1877,17 @@
       "B15_OUT_04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính hiệu f(x2)−f(x1) và xét dấu."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1277,14 +1900,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(f(x_1)<f(x_2)\\); đồng biến."
+      },
+      {
+        "id": "B",
+        "text": "\\(f(x_1)>f(x_2)\\); nghịch biến."
+      },
+      {
+        "id": "C",
+        "text": "\\(f(x_1)=f(x_2)\\); hàm hằng."
+      },
+      {
+        "id": "D",
+        "text": "Không thể xác định nếu chưa biết hai giá trị cụ thể."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY06",
-    "content_version": "SOURCE_BLOB_190f351516932caf0b8a417132f15e7915f79993_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong \\(f(x)=0x^2+2x+1\\) và \\(g(x)=-x^2+2x+1\\), hàm nào là hàm số bậc hai?",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY06",
+    "stem": "Trong \\(f(x)=0x^2+2x+1\\) và \\(g(x)=-x^2+2x+1\\), hàm nào là hàm số bậc hai? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Chỉ g(x) là hàm bậc hai; f(x)=2x+1 là bậc nhất.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> Chỉ <span class=\"arithmatex\">\\(g(x)\\)</span> là bậc hai (a=−1); <span class=\"arithmatex\">\\(f(x)=2x+1\\)</span> là bậc nhất.</p><p><strong>Vì sao:</strong> Hệ số x² của f bằng 0 nên hạng tử bậc hai biến mất; của g bằng −1 khác 0.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: Chỉ \\(g(x)\\) là bậc hai (a=−1); \\(f(x)=2x+1\\) là bậc nhất.\n\nVì sao: Hệ số x² của f bằng 0 nên hạng tử bậc hai biến mất; của g bằng −1 khác 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "B16_OUT_01"
@@ -1293,11 +1935,17 @@
       "B16_OUT_01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm hệ số bậc hai có khác 0 không."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1310,14 +1958,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cả f và g vì đều có hạng tử x²."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ g; f là hàm bậc nhất."
+      },
+      {
+        "id": "C",
+        "text": "Chỉ f vì hệ số của x² bằng 0."
+      },
+      {
+        "id": "D",
+        "text": "Không hàm nào là bậc hai."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY07",
-    "content_version": "SOURCE_BLOB_190f351516932caf0b8a417132f15e7915f79993_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho \\(f(x)=(x-2)^2-3\\). Đỉnh I, trục đối xứng và hướng mở của parabol là gì?",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY07",
+    "stem": "Cho \\(f(x)=(x-2)^2-3\\). Đỉnh I, trục đối xứng và hướng mở của parabol là gì? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "I(2;−3); trục x=2; mở lên.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> Đỉnh <span class=\"arithmatex\">\\(I(2;-3)\\)</span>, trục <span class=\"arithmatex\">\\(x=2\\)</span>, parabol mở lên.</p><p><strong>Vì sao:</strong> Vì hệ số của bình phương là 1&gt;0 và <span class=\"arithmatex\">\\((x-2)^2\\ge0\\)</span>, giá trị nhỏ nhất −3 nhận tại x=2.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: Đỉnh \\(I(2;-3)\\), trục \\(x=2\\), parabol mở lên.\n\nVì sao: Vì hệ số của bình phương là 1>0 và \\((x-2)^2\\ge0\\), giá trị nhỏ nhất −3 nhận tại x=2.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "B16_OUT_02"
@@ -1326,11 +1993,17 @@
       "B16_OUT_02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đọc dạng đỉnh và dấu hệ số trước bình phương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1343,14 +2016,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "I(-2;-3), trục x=−2, mở lên."
+      },
+      {
+        "id": "B",
+        "text": "I(2;3), trục x=2, mở xuống."
+      },
+      {
+        "id": "C",
+        "text": "I(2;-3), trục x=2, mở lên."
+      },
+      {
+        "id": "D",
+        "text": "I(2;-3), trục x=−3, mở lên."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY09",
-    "content_version": "SOURCE_BLOB_190f351516932caf0b8a417132f15e7915f79993_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(f(x)=-2(x+1)^2+8\\) trên \\(\\mathbb R\\), tìm giá trị lớn nhất, tập giá trị, khoảng đồng biến/nghịch biến.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY09",
+    "stem": "Với \\(f(x)=-2(x+1)^2+8\\) trên \\(\\mathbb R\\), tìm giá trị lớn nhất, tập giá trị, khoảng đồng biến/nghịch biến. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "GTLN 8 tại x=−1; T=(−∞;8]; đồng biến trên (−∞;−1), nghịch biến trên (−1;+∞).",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> GTLN 8 tại x=−1, <span class=\"arithmatex\">\\(T=(-\\infty;8]\\)</span>; đồng biến trên <span class=\"arithmatex\">\\((-\\infty;-1)\\)</span>, nghịch biến trên <span class=\"arithmatex\">\\((-1;+\\infty)\\)</span>.</p><p><strong>Vì sao:</strong> Vì −2(x+1)²≤0. Trục x=−1 là ranh giới đổi chiều, parabol mở xuống; mọi y≤8 đều đạt được.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: GTLN 8 tại x=−1, \\(T=(-\\infty;8]\\); đồng biến trên \\((-\\infty;-1)\\), nghịch biến trên \\((-1;+\\infty)\\).\n\nVì sao: Vì −2(x+1)²≤0. Trục x=−1 là ranh giới đổi chiều, parabol mở xuống; mọi y≤8 đều đạt được.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "B16_OUT_04"
@@ -1359,11 +2051,17 @@
       "B16_OUT_04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét dấu hệ số trước bình phương và khoảng cách tới trục."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1376,14 +2074,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "GTNN 8 tại x=−1; \\(T=[8;+\\infty)\\); giảm trước −1, tăng sau −1."
+      },
+      {
+        "id": "B",
+        "text": "GTLN 8 tại x=1; \\(T=(-\\infty;8]\\); tăng trước 1, giảm sau 1."
+      },
+      {
+        "id": "C",
+        "text": "GTLN 8 tại x=−1; \\(T=[0;8]\\)."
+      },
+      {
+        "id": "D",
+        "text": "GTLN 8 tại x=−1; \\(T=(-\\infty;8]\\); tăng trước −1, giảm sau −1."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY08",
-    "content_version": "SOURCE_BLOB_190f351516932caf0b8a417132f15e7915f79993_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho \\(f(x)=(x-1)^2-4\\). Hãy nêu đỉnh, trục đối xứng, hướng mở và các giao điểm với hai trục tọa độ rồi tự phác đồ thị.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY08",
+    "stem": "Cho \\(f(x)=(x-1)^2-4\\). Hãy nêu đỉnh, trục đối xứng, hướng mở và các giao điểm với hai trục tọa độ rồi tự phác đồ thị. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "I(1;−4); trục x=1; mở lên; giao Ox (−1;0),(3;0); giao Oy (0;−3).",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> Đỉnh <span class=\"arithmatex\">\\(I(1;-4)\\)</span>, trục <span class=\"arithmatex\">\\(x=1\\)</span>; giao Ox tại <span class=\"arithmatex\">\\((-1;0)\\)</span> và <span class=\"arithmatex\">\\((3;0)\\)</span>; giao Oy <span class=\"arithmatex\">\\((0;-3)\\)</span>. Mở lên.</p><p><strong>Vì sao:</strong> Cho y=0: <span class=\"arithmatex\">\\((x-1)^2=4\\Rightarrow x=1\\pm2=-1,3\\)</span>. Thay x=0 được y=1−4=−3. Hai giao Ox đối xứng quanh x=1.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: Đỉnh \\(I(1;-4)\\), trục \\(x=1\\); giao Ox tại \\((-1;0)\\) và \\((3;0)\\); giao Oy \\((0;-3)\\). Mở lên.\n\nVì sao: Cho y=0: \\((x-1)^2=4\\Rightarrow x=1\\pm2=-1,3\\). Thay x=0 được y=1−4=−3. Hai giao Ox đối xứng quanh x=1.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "B16_OUT_03"
@@ -1392,11 +2109,17 @@
       "B16_OUT_03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Đọc đỉnh, cho y=0 và x=0; tự phác đường cong."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1409,14 +2132,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "I(1;-4), trục x=1, mở lên; Ox: (-1;0),(3;0); Oy: (0;-3)."
+      },
+      {
+        "id": "B",
+        "text": "I(-1;-4), trục x=−1, mở lên; Ox: (-1;0),(3;0); Oy: (0;-3)."
+      },
+      {
+        "id": "C",
+        "text": "I(1;-4), trục x=1, mở xuống; Ox: (-1;0),(3;0); Oy: (0;-3)."
+      },
+      {
+        "id": "D",
+        "text": "I(1;-4), trục x=1, mở lên; Ox: (1;0),(3;0); Oy: (0;-4)."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY10",
-    "content_version": "SOURCE_BLOB_190f351516932caf0b8a417132f15e7915f79993_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một mô hình độ cao giả định \\(h(t)=-5(t-2)^2+20\\) (m) trong khoảng \\(0\\le t\\le4\\) (giây). Độ cao lớn nhất và thời điểm đạt được là bao nhiêu? Kiểm tra \\(h(0)\\) và \\(h(4)\\).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY10",
+    "stem": "Một mô hình độ cao giả định \\(h(t)=-5(t-2)^2+20\\) (m) trong khoảng \\(0\\le t\\le4\\) (giây). Độ cao lớn nhất và thời điểm đạt được là bao nhiêu? Kiểm tra \\(h(0)\\) và \\(h(4)\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "GTLN 20 m tại t=2 s; h(0)=h(4)=0 m.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> <span class=\"arithmatex\">\\(h(t)=-5(t-2)^2+20\\)</span>, đạt lớn nhất <span class=\"arithmatex\">\\(20\\,\\mathrm{m}\\)</span> tại <span class=\"arithmatex\">\\(t=2\\,\\mathrm{s}\\)</span>.</p><p><strong>Vì sao:</strong> Vì <span class=\"arithmatex\">\\(-(t-2)^2\\le0\\)</span> và 2∈[0;4]. Hai đầu t=0,4 có h=0; đây là mô hình giả định với thời gian không âm.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: \\(h(t)=-5(t-2)^2+20\\), đạt lớn nhất \\(20\\,\\mathrm{m}\\) tại \\(t=2\\,\\mathrm{s}\\).\n\nVì sao: Vì \\(-(t-2)^2\\le0\\) và 2∈[0;4]. Hai đầu t=0,4 có h=0; đây là mô hình giả định với thời gian không âm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "B16_OUT_05"
@@ -1425,11 +2167,17 @@
       "B16_OUT_05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xét bình phương và thay hai đầu đoạn."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1442,14 +2190,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "20 m tại 4 s; h(0)=0."
+      },
+      {
+        "id": "B",
+        "text": "20 m tại 2 s; h(0)=h(4)=0."
+      },
+      {
+        "id": "C",
+        "text": "0 m tại 2 s; h(0)=h(4)=20."
+      },
+      {
+        "id": "D",
+        "text": "40 m tại 2 s; h(0)=h(4)=0."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY11",
-    "content_version": "SOURCE_BLOB_bbfc3fdb1e2a5e153bfe20f933fbf8844263552a_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(f(x)=x^2+2x+5\\), tính \\(\\Delta\\), xác định số nghiệm thực và dấu f(x) trên \\(\\mathbb R\\).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY11",
+    "stem": "Với \\(f(x)=x^2+2x+5\\), tính \\(\\Delta\\), xác định số nghiệm thực và dấu f(x) trên \\(\\mathbb R\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Δ=−16; không có nghiệm thực; f(x)>0 với mọi x∈ℝ.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> <span class=\"arithmatex\">\\(\\Delta=2^2-4\\cdot1\\cdot5=-16&lt;0\\)</span>. Không có nghiệm thực, và <span class=\"arithmatex\">\\(f(x)&gt;0\\)</span> với mọi x.</p><p><strong>Vì sao:</strong> a=1&gt;0 nên parabol mở lên; không cắt Ox khi Δ&lt;0. Đồng thời <span class=\"arithmatex\">\\(f(x)=(x+1)^2+4&gt;0\\)</span> kiểm chứng trực tiếp.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: \\(\\Delta=2^2-4\\cdot1\\cdot5=-16<0\\). Không có nghiệm thực, và \\(f(x)>0\\) với mọi x.\n\nVì sao: a=1>0 nên parabol mở lên; không cắt Ox khi Δ<0. Đồng thời \\(f(x)=(x+1)^2+4>0\\) kiểm chứng trực tiếp.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "QUAD_SIGN"
@@ -1458,11 +2225,17 @@
       "B17_OUT_01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tính biệt thức rồi xét dấu hệ số bậc hai."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1475,14 +2248,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\Delta=-16\\), không có nghiệm thực, luôn âm."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\Delta=16\\), hai nghiệm thực, dương ngoài hai nghiệm."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\Delta=-16\\), không có nghiệm thực, luôn dương."
+      },
+      {
+        "id": "D",
+        "text": "\\(\\Delta=0\\), nghiệm kép, không âm."
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY12",
-    "content_version": "SOURCE_BLOB_bbfc3fdb1e2a5e153bfe20f933fbf8844263552a_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Với \\(f(x)=-3(x-2)^2\\), tìm tập nghiệm của \\(f(x)<0\\) và của \\(f(x)\\le0\\).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY12",
+    "stem": "Với \\(f(x)=-3(x-2)^2\\), tìm tập nghiệm của \\(f(x)<0\\) và của \\(f(x)\\le0\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "f(x)<0: ℝ\\{2}; f(x)≤0: ℝ.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> <span class=\"arithmatex\">\\(f(x)&lt;0\\)</span> khi <span class=\"arithmatex\">\\(x\\ne2\\)</span>; <span class=\"arithmatex\">\\(f(x)\\le0\\)</span> với mọi <span class=\"arithmatex\">\\(x\\in\\mathbb R\\)</span>.</p><p><strong>Vì sao:</strong> Do −3 nhân bình phương luôn ≤0, chỉ bằng 0 khi x=2; khi x≠2 tích âm.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: \\(f(x)<0\\) khi \\(x\\ne2\\); \\(f(x)\\le0\\) với mọi \\(x\\in\\mathbb R\\).\n\nVì sao: Do −3 nhân bình phương luôn ≤0, chỉ bằng 0 khi x=2; khi x≠2 tích âm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "QUAD_DOUBLE_ROOT_SIGN",
@@ -1492,11 +2284,17 @@
       "B17_OUT_02"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Xác định điểm duy nhất bình phương bằng 0."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1509,14 +2307,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\mathbb R\\) và \\(\\mathbb R\\setminus\\{2\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\varnothing\\) và \\(\\{2\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-\\infty;2)\\) và \\((-\\infty;2]\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\mathbb R\\setminus\\{2\\}\\) và \\(\\mathbb R\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY13",
-    "content_version": "SOURCE_BLOB_bbfc3fdb1e2a5e153bfe20f933fbf8844263552a_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Giải bất phương trình \\(x^2-5x+6\\le0\\).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY13",
+    "stem": "Giải bất phương trình \\(x^2-5x+6\\le0\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "S=[2;3].",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> <span class=\"arithmatex\">\\(x^2-5x+6=(x-2)(x-3)\\le0\\Rightarrow x\\in[2;3]\\)</span>.</p><p><strong>Vì sao:</strong> Parabol mở lên nên biểu thức ≤0 ở giữa hai nghiệm 2,3; dấu bằng buộc lấy cả 2 và 3.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: \\(x^2-5x+6=(x-2)(x-3)\\le0\\Rightarrow x\\in[2;3]\\).\n\nVì sao: Parabol mở lên nên biểu thức ≤0 ở giữa hai nghiệm 2,3; dấu bằng buộc lấy cả 2 và 3.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "QUAD_INEQUALITY"
@@ -1525,11 +2342,17 @@
       "B17_OUT_03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Phân tích thành tích và xét dấu giữa hai nghiệm."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1542,14 +2365,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\([2;3]\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((2;3)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-\\infty;2]\\cup[3;+\\infty)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\([1;6]\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY15",
-    "content_version": "SOURCE_BLOB_bbfc3fdb1e2a5e153bfe20f933fbf8844263552a_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Có 20 m lưới rào ba cạnh hình chữ nhật sát tường. Gọi x (m) là chiều rộng vuông góc tường. Muốn diện tích ít nhất \\(48\\,\\mathrm{m}^2\\), x được chọn trong khoảng nào?",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY15",
+    "stem": "Có 20 m lưới rào ba cạnh hình chữ nhật sát tường. Gọi x (m) là chiều rộng vuông góc tường. Muốn diện tích ít nhất \\(48\\,\\mathrm{m}^2\\), x được chọn trong khoảng nào? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "4≤x≤6 m.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> <span class=\"arithmatex\">\\(S=x(20-2x)\\ge48\\Leftrightarrow -2(x-4)(x-6)\\ge0\\Leftrightarrow x\\in[4;6]\\)</span> (m), đã thuộc <span class=\"arithmatex\">\\(0&lt;x&lt;10\\)</span>.</p><p><strong>Vì sao:</strong> Hai cạnh rộng x sử dụng 2x m lưới, cạnh còn lại 20−2x; dấu ≥ lấy hai đầu x=4,6 đều cho 48 m².</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: \\(S=x(20-2x)\\ge48\\Leftrightarrow -2(x-4)(x-6)\\ge0\\Leftrightarrow x\\in[4;6]\\) (m), đã thuộc \\(0<x<10\\).\n\nVì sao: Hai cạnh rộng x sử dụng 2x m lưới, cạnh còn lại 20−2x; dấu ≥ lấy hai đầu x=4,6 đều cho 48 m².",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "QUAD_MODELING"
@@ -1558,11 +2400,17 @@
       "B17_OUT_05"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Lập diện tích x(20−2x) và giải điều kiện diện tích."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1575,14 +2423,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((4;6)\\) m"
+      },
+      {
+        "id": "B",
+        "text": "\\([4;6]\\) m"
+      },
+      {
+        "id": "C",
+        "text": "\\((0;4]\\cup[6;10)\\) m"
+      },
+      {
+        "id": "D",
+        "text": "\\([2;8]\\) m"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY14",
-    "content_version": "SOURCE_BLOB_bbfc3fdb1e2a5e153bfe20f933fbf8844263552a_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Tìm mọi \\(m\\in\\mathbb R\\) để \\(x^2+2mx+4>0\\) với mọi \\(x\\in\\mathbb R\\).",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY14",
+    "stem": "Tìm mọi \\(m\\in\\mathbb R\\) để \\(x^2+2mx+4>0\\) với mọi \\(x\\in\\mathbb R\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "−2<m<2.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> Vì a=1&gt;0, yêu cầu tương đương <span class=\"arithmatex\">\\(\\Delta=(2m)^2-4\\cdot1\\cdot4=4m^2-16&lt;0\\)</span>, nên <span class=\"arithmatex\">\\(-2&lt;m&lt;2\\)</span>.</p><p><strong>Vì sao:</strong> Điều kiện tương đương m²&lt;4. Nếu m=±2 thì Δ=0, tam thức chạm Ox và bằng 0 tại một x nên không thỏa dấu nghiêm ngặt &gt;0.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: Vì a=1>0, yêu cầu tương đương \\(\\Delta=(2m)^2-4\\cdot1\\cdot4=4m^2-16<0\\), nên \\(-2<m<2\\).\n\nVì sao: Điều kiện tương đương m²<4. Nếu m=±2 thì Δ=0, tam thức chạm Ox và bằng 0 tại một x nên không thỏa dấu nghiêm ngặt >0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "QUAD_PARAMETER"
@@ -1591,11 +2458,17 @@
       "B17_OUT_04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Vì hệ số bậc hai dương, biệt thức phải âm nghiêm ngặt."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1608,14 +2481,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\([-2;2]\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\((-\\infty;-2)\\cup(2;+\\infty)\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\((-2;2)\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\((0;2)\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY16",
-    "content_version": "SOURCE_BLOB_3d8b0ed45b606f608db4b2a55ecfa8a273a8c802_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Giải \\(\\sqrt{x+1}=\\sqrt{2x-2}\\) trong \\(\\mathbb R\\). Trước khi tính, hãy ghi hai điều kiện dưới căn rồi mới tìm nghiệm.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY16",
+    "stem": "Giải \\(\\sqrt{x+1}=\\sqrt{2x-2}\\) trong \\(\\mathbb R\\). Trước khi tính, hãy ghi hai điều kiện dưới căn rồi mới tìm nghiệm. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Điều kiện x≥1; S={3}.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> Điều kiện <span class=\"arithmatex\">\\(x+1\\ge0,\\,2x-2\\ge0\\Rightarrow x\\ge1\\)</span>. Bình phương: <span class=\"arithmatex\">\\(x+1=2x-2\\Rightarrow x=3\\)</span>. Thử: hai vế đều bằng 2. Nghiệm duy nhất x=3.</p><p><strong>Vì sao:</strong> x=3 hợp miền x≥1, biểu thức dưới căn đều bằng 4; không có nghiệm nào khác vì phương trình tuyến tính A=B chỉ cho x=3.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: Điều kiện \\(x+1\\ge0,\\,2x-2\\ge0\\Rightarrow x\\ge1\\). Bình phương: \\(x+1=2x-2\\Rightarrow x=3\\). Thử: hai vế đều bằng 2. Nghiệm duy nhất x=3.\n\nVì sao: x=3 hợp miền x≥1, biểu thức dưới căn đều bằng 4; không có nghiệm nào khác vì phương trình tuyến tính A=B chỉ cho x=3.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_TWO_SIDES",
@@ -1625,11 +2517,17 @@
       "B18_OUT_01"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Giao hai điều kiện dưới căn rồi bình phương và thử lại."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1642,14 +2540,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x\\ge-1; S=\\{3\\}\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(x>1; S=\\{3\\}\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(x\\ge1; S=\\{1\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x\\ge1; S=\\{3\\}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY18",
-    "content_version": "SOURCE_BLOB_3d8b0ed45b606f608db4b2a55ecfa8a273a8c802_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Giải \\(\\sqrt{2x+3}=x\\). Vì vế phải là \\(x\\), hãy kiểm dấu của nó trước khi bình phương; giải thích vì sao một nghiệm ứng viên phải bị loại.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY18",
+    "stem": "Giải \\(\\sqrt{2x+3}=x\\). Vì vế phải là \\(x\\), hãy kiểm dấu của nó trước khi bình phương; giải thích vì sao một nghiệm ứng viên phải bị loại. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Điều kiện x≥0; S={3}; loại x=−1 do vế phải âm.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> Điều kiện <span class=\"arithmatex\">\\(x\\ge0\\)</span>. Bình phương <span class=\"arithmatex\">\\(2x+3=x^2\\Leftrightarrow(x-3)(x+1)=0\\)</span>, ứng viên x=3,−1. Thử: x=3 cho <span class=\"arithmatex\">\\(\\sqrt9=3\\)</span>, x=−1 làm vế phải âm (và <span class=\"arithmatex\">\\(\\sqrt1=1\\ne-1\\)</span>). Nghiệm duy nhất x=3; x=−1 ngoại lai.</p><p><strong>Vì sao:</strong> Bình phương tạo x=−1 dù hai vế gốc trái dấu. Chỉ x=3 thỏa toàn bộ.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: Điều kiện \\(x\\ge0\\). Bình phương \\(2x+3=x^2\\Leftrightarrow(x-3)(x+1)=0\\), ứng viên x=3,−1. Thử: x=3 cho \\(\\sqrt9=3\\), x=−1 làm vế phải âm (và \\(\\sqrt1=1\\ne-1\\)). Nghiệm duy nhất x=3; x=−1 ngoại lai.\n\nVì sao: Bình phương tạo x=−1 dù hai vế gốc trái dấu. Chỉ x=3 thỏa toàn bộ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_CONDITION",
@@ -1659,11 +2576,17 @@
       "B18_OUT_03"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Vế căn không âm nên vế phải phải không âm trước khi bình phương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1676,14 +2599,33 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x\\ge0; S=\\{3\\}\\); −1 bị loại vì vế phải âm."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\{-1,3\\}\\) vì cả hai nghiệm sau bình phương."
+      },
+      {
+        "id": "C",
+        "text": "\\(x\\ge0; S=\\{-1\\}\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(x\\ge-\\frac32; S=\\{-1,3\\}\\)"
+      }
+    ]
   },
   {
     "item_id": "THPT-G10-CHVI-TRY19",
-    "content_version": "SOURCE_BLOB_3d8b0ed45b606f608db4b2a55ecfa8a273a8c802_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Một thang dài 13 m dựa vào bức tường thẳng đứng, mặt đất nằm ngang, chân thang cách tường 5 m. Đặt h>0 là độ cao đầu thang trên tường. Lập phương trình chứa căn và tính h. Hãy ghi đúng cạnh huyền, đơn vị và điều kiện trước khi xem lời giải.",
+    "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY19",
+    "stem": "Một thang dài 13 m dựa vào bức tường thẳng đứng, mặt đất nằm ngang, chân thang cách tường 5 m. Đặt h>0 là độ cao đầu thang trên tường. Lập phương trình chứa căn và tính h. Hãy ghi đúng cạnh huyền, đơn vị và điều kiện trước khi xem lời giải. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "√(h²+25)=13, h>0; h=12 m.",
-    "worked_solution": "<div class=\"thpt-r4-first-try-answer\"><p><strong>Đáp án:</strong> <span class=\"arithmatex\">\\(\\sqrt{h^2+5^2}=13\\Rightarrow h^2=169-25=144\\)</span>. Vì h&gt;0 nên h=12 m; thử <span class=\"arithmatex\">\\(\\sqrt{12^2+5^2}=13\\)</span>.</p><p><strong>Vì sao:</strong> Nghiệm h=−12 bị loại do không biểu diễn độ dài. Tam giác 5–12–13 kiểm chính xác và đơn vị là mét.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>",
+    "worked_solution": "Đáp án: \\(\\sqrt{h^2+5^2}=13\\Rightarrow h^2=169-25=144\\). Vì h>0 nên h=12 m; thử \\(\\sqrt{12^2+5^2}=13\\).\n\nVì sao: Nghiệm h=−12 bị loại do không biểu diễn độ dài. Tam giác 5–12–13 kiểm chính xác và đơn vị là mét.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_MODELING"
@@ -1692,11 +2634,17 @@
       "B18_OUT_04"
     ],
     "problem_type_id": null,
-    "difficulty": null,
-    "hints": [],
+    "difficulty": "APPLY",
+    "hints": [
+      "Cạnh thang là cạnh huyền; giữ điều kiện độ dài dương."
+    ],
     "rubric": null,
     "interaction": {
-      "type": "SELF_COMPARE",
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false
     },
     "source": {
@@ -1709,6 +2657,25 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\sqrt{h^2+169}=5,\\ h>0\\); vô nghiệm."
+      },
+      {
+        "id": "B",
+        "text": "\\(\\sqrt{h^2+25}=13,\\ h>0; h=12\\) m."
+      },
+      {
+        "id": "C",
+        "text": "\\(\\sqrt{h^2+25}=13; h=\\pm12\\) m."
+      },
+      {
+        "id": "D",
+        "text": "\\(h+5=13; h=8\\) m."
+      }
+    ]
   }
 ]
