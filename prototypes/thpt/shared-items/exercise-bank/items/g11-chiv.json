@@ -434,10 +434,10 @@
   },
   {
     "item_id": "THPT-G11-CHIV-B11-P01",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-G11-CHIV-B11-P01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-G11-CHIV-B11-P01.DELTA05",
     "stem": "Trong tứ diện S.ABC, SA và BC có quan hệ nào?",
     "answer_key": "Chéo nhau, vì nếu đồng phẳng thì bốn đỉnh tứ diện đồng phẳng.",
-    "worked_solution": "Giả sử SA và BC cùng nằm trong một mặt phẳng. Khi đó cả S, A, B, C đều thuộc mặt phẳng ấy, trái với giả thiết tứ diện. Vậy hai đường không đồng phẳng, nên chéo nhau.",
+    "worked_solution": "Giả sử SA và BC cùng nằm trong một mặt phẳng. Khi đó cả bốn đỉnh S, A, B, C cùng thuộc mặt phẳng ấy, trái với giả thiết tứ diện. Vậy hai đường không đồng phẳng. Nếu chúng cắt nhau, hai đường cắt nhau lại xác định một mặt phẳng, mâu thuẫn. Do đó chúng không cắt nhau và không đồng phẳng, tức chéo nhau, không song song.",
     "skill_ids": [
       "G11-B11-RELATIVE"
     ],
