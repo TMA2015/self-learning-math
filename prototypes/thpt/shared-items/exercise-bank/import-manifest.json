@@ -58,73 +58,73 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "db24d69c05e230f1e50fb51d94b7b30ab37cf1f9",
-    "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090#issuecomment-7219529073",
-    "completed_candidate_topics": 16,
+    "as_of_commit": "4bc21c7aa029bc4726c16ccbc2d29a112ffaa97e",
+    "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
+    "completed_candidate_topics": 17,
     "total_topics": 22,
-    "completed_scope": "CD01–16 content candidates only; not final Q18/RELEASE",
-    "completed_unique_ids": 1340,
-    "completed_interactive": 1181,
-    "completed_written": 159,
-    "partial_topic": "CD17",
+    "completed_scope": "CD01–17 content candidates; scoped Delta and release pending",
+    "completed_unique_ids": 1389,
+    "completed_interactive": 1223,
+    "completed_written": 166,
+    "partial_topic": "CD18",
     "partial_inventory": {
-      "unique_scoped": 49,
-      "interactive": 42,
-      "choices": 168,
-      "written_reference_only": 7,
-      "practice": 37,
-      "practice_interactive": 30,
-      "first_try": 12,
-      "public_replay": 12,
-      "placements": 61,
-      "outcomes": 12
+      "unique_scoped": 247,
+      "interactive": 200,
+      "written": 47,
+      "practice": 207,
+      "first_try": 40,
+      "public_replay": 40,
+      "placements": 287,
+      "outcomes": 40,
+      "overlap_prior": 13
     },
-    "next": "Complete seven CD17 Written sections/source custody/rubrics, reconcile cross-topic overlap and scoped math/notation review. Then CD18, continue CD19–22 under owner direction.",
-    "status": "PARTIAL_CD17_INTERACTIVE_CANDIDATE_WRITTEN_PENDING"
+    "next": "Complete CD18 Written corrections and reference reconciliation before counting CD18 as completed; stop after CD18.",
+    "status": "CD17_CONTENT_CANDIDATE_CD18_INTERACTIVE_CANDIDATE_WRITTEN_PENDING"
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "exercise_candidate_cd17_partial",
-    "exercise_candidate_cd17_partial": {
-      "scope": "CD17 distance and polyhedron volume; practice/first-try/replay candidate, Written completion pending",
-      "baseline": "7e5349f73b410c90994157b69fd8fefae7a3fc68",
-      "head_before_manifest": "703132691fa1950e0d451f03231b6a11e8a93596",
-      "status": "PARTIAL_CD17_INTERACTIVE_CANDIDATE_WRITTEN_PENDING",
-      "counts": {
-        "unique_scoped": 49,
+    "current_checkpoint_key": "exercise_candidate_cd17_cd18",
+    "exercise_candidate_cd17_cd18": {
+      "cd17": {
+        "unique": 49,
         "interactive": 42,
-        "choices": 168,
-        "written_reference_only": 7,
-        "practice": 37,
-        "practice_interactive": 30,
-        "first_try": 12,
-        "public_replay": 12,
-        "placements": 61,
-        "outcomes": 12
+        "written": 7,
+        "overlap_prior": 0,
+        "source_blobs": [
+          "0dac60b05d670a74a670e0e423e11ffbbc2d2303",
+          "9562830ec226b5612309bdd97197e97fa726d88d"
+        ],
+        "written_refs_blob": "52879434293b2f66d69cbc5ce6099f603abd87af"
       },
-      "files": {
-        "items/cd17.json": "521aa5f25b45da9a0265b29a3dbe3171fcb6ff32",
-        "items/g11-chvii.json": "ee13a8b955db56ba07d3b77d150a8d94bb9f6f26",
-        "items/topic-knowledge-first-try.json": "ed67661e72f4ab1d53c8c5aceefe9b2294cf2d8b",
-        "placements/cd17.json": "b59e7c957aa53c12d331d4d3888597300a03a978",
-        "placements/topic-knowledge-first-try.json": "e10661fc8b8331f416eda0d61732c4f4bc063def",
-        "written-references.json": "e4ea2145098ab644485f83bdd9501ffaab5d26fd"
+      "cd18": {
+        "interactive": 200,
+        "converted": 187,
+        "reused_prior": 13,
+        "choices": 800,
+        "outcomes": 40,
+        "replay": 40,
+        "written": 47,
+        "head": "4bc21c7aa029bc4726c16ccbc2d29a112ffaa97e",
+        "files": {
+          "items/cd18.json": "be27a158dadb9bd0bbcfd6066584aa97d3e1c3b9",
+          "items/g12-chii.json": "1679cb66e86e0d27741fd0c5b7f54868440fd246",
+          "items/g12-chv.json": "e587e279f710bc50de756477d55264658b71f223",
+          "items/topic-knowledge-first-try.json": "4a7e7fed2614ae3c2577b2d8b6ec88d0b0781734",
+          "placements/cd18.json": "5b42b4007549b0f74f3d413e66b010d1304cbd66",
+          "placements/topic-knowledge-first-try.json": "28e28890b2ea1de0f7ad753444d687c342ec9862"
+        },
+        "written_findings": "B08-W06 average speed and path; B07-W04 vector notation; B14-W07 sphere/ball; B15-W05 skew perpendicular lines; B15-W01/02/06/07, B16-W01/02/03/05, B17-W01/02 rubric alignment; TOP18-W02 duplicate, W03 domain, W04 angle limits, W07 standalone model. Source donor provenance must be retained."
       },
-      "verified": "Exact readback after each change; 42/42 schema, four distinct options, one key, hint, skill, solution/source, auto_grade=false; 61/61 references resolve; 12/12 outcomes ≥2 interactive practice plus 1 first try and 1 replay. 35 non-CD17 G11 ChVII items, 381 other first-try items and 402 other first-try placements unchanged by parsed record comparison/readback; all stems/keys/solutions/source and IDs preserved. Legacy outcome suffix removed only for 12 CD17 first-try placements. Replay expands 8→12 by existing ID reuse; no pre-submit hint/key; no Mastery. Practice order retained for D6.",
-      "written_remaining": "7 existing references remain unchanged. CP61 already flags coordinate-system context for B26-W02 and inadequate explanation of 1/3 in B27-W01; confirmed in source blob 5178686510902c4c24a2b2aface4e9476eba9e0f. Need finish all seven Written source sections, source custody and rubrics before CD17 completion. Proof-based interactive choices do not prove written-proof competence.",
-      "limitations": "No fresh SGK/SBT PDF, NotebookLM, browser/runtime QA, full cross-topic overlap reconciliation or CI claim. Cumulative completed candidate remains 16/22, 1340 IDs; do not add partial CD17 to completed count. No merge/deploy or protected changes."
+      "limitations": "No fresh S1 PDF verification, independent Q18, browser/runtime or CI claim. No merge/deploy."
     },
-    "previous_completed_checkpoint": {
-      "key": "exercise_completion_cp135_cp136",
-      "status": "AUTHORING_BANK_CD15_CD16_CONTENT_CANDIDATE_SCOPED_DELTA_AND_RELEASE_PENDING",
-      "issue_comment": "https://github.com/TMA2015/self-learning-math/issues/1090#issuecomment-7219409394",
-      "snapshot_commit": "7e5349f73b410c90994157b69fd8fefae7a3fc68",
-      "manifest_blob": "1497996335d4af006b2cca0926166ad35a786842"
-    },
-    "history_lookup": "Use historical_snapshot and original JSON key for earlier receipts; future checkpoints use exact immutable commit/path/blob of prior manifest and issue comments."
+    "previous_manifest": {
+      "commit": "05e47c51086fbeb708ff7ca4e0f62bb9773b24b4",
+      "blob": "02c8f4c3d7319b3f3c4c532e609673da296b2317",
+      "key": "exercise_candidate_cd17_partial"
+    }
   },
   "pending_review": {
     "scope_warning": "Carried forward without new academic review; this is a concise open-work index, not a complete replacement for historical item-level evidence. Reconcile later dispositions before repeating or closing any historical finding.",
-    "cd17": "7 existing references remain unchanged. CP61 already flags coordinate-system context for B26-W02 and inadequate explanation of 1/3 in B27-W01; confirmed in source blob 5178686510902c4c24a2b2aface4e9476eba9e0f. Need finish all seven Written source sections, source custody and rubrics before CD17 completion. Proof-based interactive choices do not prove written-proof competence.",
+    "cd17": "Written candidate complete; scoped academic Delta review pending.",
     "skill_mapping": {
       "count": 38,
       "ids": [
