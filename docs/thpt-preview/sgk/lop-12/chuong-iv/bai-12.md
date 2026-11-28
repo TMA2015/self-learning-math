@@ -37,7 +37,7 @@
     hx^2\le S(x+h)-S(x)\le h(x+h)^2.
     \]
 
-    Chia cho \(h>0\), ta có \(x^2\le [S(x+h)-S(x)]/h\le (x+h)^2\). Khi \(h\to0^+\), hai biên đều tiến tới \(x^2\). Nếu \(h<0\), xét dải từ \(x+h\) đến \(x\), chia diện tích dải ấy cho \(-h>0\); thương sai phân tương tự nằm giữa \((x+h)^2\) và \(x^2\). Khi \(h\to0^-\), ta cũng nhận \(x^2\).
+    Chia cho \(h>0\), ta có \(x^2\le [S(x+h)-S(x)]/h\le (x+h)^2\). Khi \(h\to0^+\), hai biên đều tiến tới \(x^2\). Nếu \(h<0\) và \(x+h\in[1;2]\), dải từ \(x+h\) đến \(x\) có diện tích nằm giữa \((-h)(x+h)^2\) và \((-h)x^2\). Chia cho \(-h>0\), ta được \((x+h)^2\le[S(x+h)-S(x)]/h\le x^2\). Ở đầu mút chỉ xét phía nằm trong đoạn. Khi \(h\to0^-\), ta cũng nhận \(x^2\).
 
     Do đó \(S'(x)=x^2\), kể cả đạo hàm một phía ở hai đầu. Theo Bài 11,
 

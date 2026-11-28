@@ -17,7 +17,7 @@
         },
         {
           "before": "Khi đó \\(v(t)=1000u/(1+u)^2\\) và \\(v'(t)=1000u(u-1)/(1+u)^3\\). Vì \\(u=1\\) khi \\(t=\\ln4\\)",
-          "after": "Khi đó \\(v(t)=1000u(1+u)^{-2}\\). Dùng quy tắc tích và hàm hợp, ta có \\(v'=1000[u'(1+u)-2uu']/(1+u)^3\\). Thay \\(u'=-u\\), suy ra \\(v'=1000u(u-1)/(1+u)^3\\). Vì \\(u=4e^{-t}\\) giảm, \\(u>1\\) khi \\(t<\\ln4\\) và \\(u=1\\) khi \\(t=\\ln4\\)",
+          "after": "Khi đó \\(v(t)=1000u(1+u)^{-2}\\). Dùng quy tắc tích và hàm hợp, ta có \\(v'=1000[u'(1+u)-2uu']/(1+u)^3\\). Thay \\(u'=-u\\), suy ra \\(v'=1000u(u-1)/(1+u)^3\\). Vì \\(u=4e^{-t}\\) giảm, \\(u&gt;1\\) khi \\(t&lt;\\ln4\\) và \\(u=1\\) khi \\(t=\\ln4\\)",
           "count": 1
         }
       ]
@@ -219,6 +219,335 @@
         {
           "before": "lời giải/rubric",
           "after": "lời giải và tiêu chí tự đối chiếu",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md",
+      "old": "8ce272ea3bd2425c943b4ed9c642e229a659ffa0",
+      "edits": [
+        {
+          "before": "vi phân của \\(F\\) được viết \\(dF(x)=F'(x)\\,dx=f(x)\\,dx\\).",
+          "after": "vi phân của \\(F\\) được viết \\(dF(x)=F'(x)\\,dx=f(x)\\,dx\\), mô tả phần thay đổi tuyến tính của \\(F\\) theo \\(dx\\). Chẳng hạn với \\(F(x)=x^2\\), ta có \\(dF=2x\\,dx\\); còn độ tăng hữu hạn \\(F(x+h)-F(x)=2xh+h^2\\) có thêm số hạng bậc hai. Ở đây không cần thao tác với \\(dx\\) như một phân số.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md",
+      "old": "ad7f4379832984d2ce30db269a59d8e0990b7e64",
+      "edits": [
+        {
+          "before": "Nếu \\(h<0\\), xét dải từ \\(x+h\\) đến \\(x\\), chia diện tích dải ấy cho \\(-h>0\\); thương sai phân tương tự nằm giữa \\((x+h)^2\\) và \\(x^2\\).",
+          "after": "Nếu \\(h<0\\) và \\(x+h\\in[1;2]\\), dải từ \\(x+h\\) đến \\(x\\) có diện tích nằm giữa \\((-h)(x+h)^2\\) và \\((-h)x^2\\). Chia cho \\(-h>0\\), ta được \\((x+h)^2\\le[S(x+h)-S(x)]/h\\le x^2\\). Ở đầu mút chỉ xét phía nằm trong đoạn.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md",
+      "old": "fb7d4173e0ed6376aa71bfaf53f70803a6bade5e",
+      "edits": [
+        {
+          "before": "Vì vậy \\(S(x)=(2+x)^2\\) cm².",
+          "after": "Vì vậy \\(S(x)=(2+x)^2\\) cm². Theo quy tắc đạo hàm hàm hợp, \\([(x+c)^3/3]'=(x+c)^2\\) vì \\((x+c)'=1\\). Đây là cách nhận ra nguyên hàm dùng ở dưới; với \\(ax+b\\) phải tính thêm hệ số \\(a\\).",
+          "count": 1
+        },
+        {
+          "before": "Khai triển và tích phân từ 0 đến \\(h\\) được",
+          "after": "Đặt \\(A=\\sqrt{B_0}\\), \\(D=\\sqrt{B_1}-\\sqrt{B_0}\\). Khi khai triển, \\(S(x)=A^2+2ADx/h+D^2x^2/h^2\\). Tích phân từng số hạng từ 0 đến \\(h\\) cho \\(V=h(A^2+AD+D^2/3)\\). Thay \\(A,D\\) và thu gọn được",
+          "count": 1
+        },
+        {
+          "before": "Ví dụ về việc chia miền: giao điểm ở \\(-1,0,1\\)",
+          "after": "Với \\(y=x\\) và \\(y=x^3\\) trên \\([-1;1]\\) (xem mục 1.1b), giao điểm ở \\(-1,0,1\\)",
+          "count": 1
+        },
+        {
+          "before": "thứ tự ngược lại.</p><div class=\"arithmatex\">\\(\\displaystyle S=[\\sin x+\\cos x]",
+          "after": "thứ tự ngược lại.</p><p>Lập diện tích thành hai tích phân: \\(\\int_0^{\\pi/4}(\\cos x-\\sin x)\\,dx\\) và \\(\\int_{\\pi/4}^{\\pi/2}(\\sin x-\\cos x)\\,dx\\). Tính tổng hai tích phân:</p><div class=\"arithmatex\">\\(\\displaystyle S=[\\sin x+\\cos x]",
+          "count": 1
+        },
+        {
+          "before": "là tỉ lệ hộ gia đình từ thu nhập thấp đến cao; \\(L(x)=x^2\\) là tỉ lệ thu nhập tích lũy.",
+          "after": "là tỉ lệ hộ thuộc nhóm thu nhập thấp nhất sau khi sắp xếp tăng dần; \\(L(x)=x^2\\) là phần tổng thu nhập mà nhóm đó nhận. Chẳng hạn \\(L(1/2)=1/4\\) nghĩa là 50% hộ thu nhập thấp nhất nhận 25% tổng thu nhập trong mô hình này.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md",
+      "old": "20d336fa969d51bfe047b287e8efa05398ecd97a",
+      "edits": [
+        {
+          "before": "Nếu \\(\\vec u,\\vec v\\) không cùng phương, tích có hướng khác không.",
+          "after": "Vì sao tích có hướng khác không khi hai vectơ không cùng phương? Giả sử cả ba thành phần đều bằng 0, chọn một tọa độ khác 0 của \\(\\vec u\\), chẳng hạn \\(a\\ne0\\). Từ \\(ca'-c'a=0\\) và \\(ab'-a'b=0\\), suy ra \\(b'=ba'/a\\), \\(c'=ca'/a\\), tức \\(\\vec v=(a'/a)\\vec u\\), trái giả thiết. Nếu \\(a=0\\), chọn một tọa độ khác 0 tương tự.",
+          "count": 1
+        },
+        {
+          "before": "Tường \\(OA\\): \\(y=0\\); tường \\(AB\\): \\(x=4\\); tường \\(BC\\): \\(x-4y+8=0\\);",
+          "after": "Tường \\(OA\\): \\(y=0\\); tường \\(AB\\): \\(x=4\\). Tường \\(BC\\) có hai hướng \\(\\overrightarrow{BC}=(-4;-1;0)\\) và \\((0;0;1)\\). Tích có hướng là \\((-1;4;0)\\); chọn pháp tuyến \\((1;-4;0)\\) và đi qua \\(C(0;2;0)\\), ta được \\(x-4(y-2)=0\\), tức \\(x-4y+8=0\\);",
+          "count": 1
+        },
+        {
+          "before": "Tọa độ hình chiếu \\(H=M-(9/9)(1;2;-2)=(1;-1;1)\\).",
+          "after": "Tính hình chiếu theo vectơ vị trí: \\(\\overrightarrow{OH}=\\overrightarrow{OM}-(9/9)(1;2;-2)\\). Suy ra \\(H(1;-1;1)\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md",
+      "old": "0c3550887f8101a8a83db9e6a26a0784028001e2",
+      "edits": [
+        {
+          "before": "\\(d:M=A+t\\vec u\\)",
+          "after": "đường thẳng \\(d\\) có \\(\\overrightarrow{AM}=t\\vec u\\)",
+          "count": 1
+        },
+        {
+          "before": "Viết \\(A+t\\vec u=B+s\\vec v\\)",
+          "after": "Viết \\(\\overrightarrow{OA}+t\\vec u=\\overrightarrow{OB}+s\\vec v\\)",
+          "count": 1
+        },
+        {
+          "before": "Với \\(d_1:A+t\\vec u,\\ d_2:B+s\\vec v\\)",
+          "after": "Với hai đường thẳng có vectơ vị trí lần lượt \\(\\overrightarrow{OA}+t\\vec u\\) và \\(\\overrightarrow{OB}+s\\vec v\\)",
+          "count": 1
+        },
+        {
+          "before": "Tích có hướng bằng \\((4;-2;-3)\\ne\\vec0\\).",
+          "after": "Hai vectơ không cùng phương: thành phần thứ ba của \\(\\overrightarrow{AB}\\) là 2 còn của \\(\\vec u\\) là 0. Tổng quát, nếu \\(\\overrightarrow{AB}=k\\vec u\\) thì \\(B\\) thuộc đường qua \\(A\\) theo hướng chung, nên hai đường trùng nhau. Tích có hướng bằng \\((4;-2;-3)\\ne\\vec0\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md",
+      "old": "92e0bfa08d30927e170abde61519c17ffa042aa2",
+      "edits": [
+        {
+          "before": "Độ dốc phần trăm là \\(100|\\Delta z|/h\\%\\), không phải số đo góc.",
+          "after": "Độ lớn độ dốc phần trăm là \\(100|\\Delta z|/h\\%\\), không phải số đo góc. Nếu đề yêu cầu độ dốc có dấu theo chiều từ \\(A\\) đến \\(B\\), dùng \\(100(z_B-z_A)/h\\%\\); dấu âm nghĩa là xuống dốc.",
+          "count": 1
+        },
+        {
+          "before": "Góc không tù giữa hai đường này chính là góc giữa hai mặt phẳng.",
+          "after": "Góc không tù giữa hai đường này chính là góc giữa hai mặt phẳng. Giao tuyến nằm trong cả hai mặt nên mỗi pháp tuyến đều vuông góc với giao tuyến. Dời hai vectơ pháp tuyến về điểm cắt của mặt phụ với giao tuyến: cả hai nằm trong mặt phụ, vuông góc với hai vết cắt tương ứng. Do đó góc không tù giữa hai pháp tuyến bằng góc không tù giữa hai vết cắt.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md",
+      "old": "a1dc9094e7bd2701adf99c0716b2680df87a53a5",
+      "edits": [
+        {
+          "before": "SGK lấy bán kính thực \\(6371\\) km làm một đơn vị dài",
+          "after": "SGK lấy bán kính xấp xỉ \\(6371\\) km trong mô hình cầu làm một đơn vị dài",
+          "count": 1
+        },
+        {
+          "before": "bán kính thực 6371 km",
+          "after": "bán kính quy ước 6371 km",
+          "count": 1
+        },
+        {
+          "before": "Hình chiếu \\(H=I-\\frac13(2;-1;2)=(1/3;7/3;7/3)\\) là tiếp điểm.",
+          "after": "Hình chiếu có vectơ vị trí \\(\\overrightarrow{OH}=\\overrightarrow{OI}-\\frac13(2;-1;2)\\), nên \\(H(1/3;7/3;7/3)\\) là tiếp điểm.",
+          "count": 1
+        },
+        {
+          "before": "\\(P=(\\sqrt3/4;3/4;-1/2)\\), \\(Q=(\\sqrt3/4;3/4;1/2)\\).",
+          "after": "Thay vĩ độ \\(-30^\\circ\\), kinh độ \\(60^\\circ\\): \\(\\cos(-30^\\circ)\\cos60^\\circ=\\sqrt3/4\\), \\(\\cos(-30^\\circ)\\sin60^\\circ=3/4\\), \\(\\sin(-30^\\circ)=-1/2\\). Đổi vĩ độ sang \\(30^\\circ\\) chỉ đổi dấu cao độ. Vậy \\(P=(\\sqrt3/4;3/4;-1/2)\\), \\(Q=(\\sqrt3/4;3/4;1/2)\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-vi/bai-18.md",
+      "old": "16e42fc19688b8c48269cf3d9c8a512274c62269",
+      "edits": [
+        {
+          "before": "cũng như \\(\\overline A\\) và B, độc lập; chỉ dùng xác suất có điều kiện khi biến cố điều kiện có xác suất dương.",
+          "after": "cũng như \\(\\overline A\\) và B, độc lập. Thật vậy, \\(P(A\\cap\\overline B)=P(A)-P(A\\cap B)=P(A)[1-P(B)]=P(A)P(\\overline B)\\). Đổi vai trò hai biến cố để chứng minh trường hợp còn lại. Chỉ dùng xác suất có điều kiện khi biến cố điều kiện có xác suất dương.",
+          "count": 1
+        },
+        {
+          "before": "Gọi A là dùng X, B là đọc sách điện tử. \\(P(B\\mid A)=12/20=3/5\\); \\(P(A\\mid B)=12/32=3/8\\). Bảng bốn ô \\(AB,A\\overline B,\\overline AB,\\overline A\\overline B\\) lần lượt là 12, 8, 20, 40.",
+          "after": "Gọi A là dùng X, B là đọc sách điện tử. Ô còn lại là \\(80-12-8-20=40\\).</p><table><thead><tr><th></th><th>B</th><th>Không B</th><th>Tổng</th></tr></thead><tbody><tr><th>A</th><td>12</td><td>8</td><td>20</td></tr><tr><th>Không A</th><td>20</td><td>40</td><td>60</td></tr><tr><th>Tổng</th><td>32</td><td>48</td><td>80</td></tr></tbody></table><p>Biết A thì lấy tổng hàng A làm mẫu số: \\(P(B\\mid A)=12/20=3/5\\). Biết B thì lấy tổng cột B: \\(P(A\\mid B)=12/32=3/8\\).",
+          "count": 1
+        },
+        {
+          "before": "Nhân được \\(5/8\\cdot3/7\\cdot4/6=5/28\\).",
+          "after": "Gọi \\(D_1,X_2,D_3\\) là các biến cố đỏ lượt 1, xanh lượt 2, đỏ lượt 3. Áp dụng công thức nhân hai lần: \\(P(D_1\\cap X_2\\cap D_3)=P(D_1\\cap X_2)P(D_3\\mid D_1\\cap X_2)\\), với \\(P(D_1\\cap X_2)=P(D_1)P(X_2\\mid D_1)\\). Lượt thứ ba phải tính theo cả lịch sử hai lượt đầu. Nhân được \\(5/8\\cdot3/7\\cdot4/6=5/28\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-vi/bai-19.md",
+      "old": "e1dc4c032e6f6dfc509b9c51949f0d845fdbafd9",
+      "edits": [
+        {
+          "before": "Khi có nhiều nguồn \\(A_i\\) như trên, xác suất nguồn \\(A_j\\) sau khi biết B là",
+          "after": "Khi có nhiều nguồn \\(A_i\\) đôi một xung khắc, phủ hết không gian mẫu và có xác suất dương, xác suất nguồn \\(A_j\\) sau khi biết B là",
+          "count": 1
+        },
+        {
+          "before": "Ba nhóm A, B, C chiếm lần lượt 50%, 30%, 20% lượt gửi hàng.",
+          "after": "Chọn đều một lượt gửi hàng trong tập đang xét. Ba nhóm A, B, C phân hoạch tập này và chiếm lần lượt 50%, 30%, 20% lượt gửi hàng.",
+          "count": 1
+        },
+        {
+          "before": "Trong mô hình di truyền đơn giản, bố và mẹ được chọn độc lập từ một quần thể có 30% cá thể kiểu gene bb và 70% kiểu Bb. Mỗi cá thể truyền ngẫu nhiên một trong hai gene, hai lần truyền độc lập. Tính xác suất con nhận hai gene b.",
+          "after": "Trong mô hình di truyền đơn giản, tại một gen đang xét có hai alen B và b. Bố và mẹ được chọn độc lập từ một quần thể có 30% cá thể kiểu bb và 70% kiểu Bb. Mỗi bố hoặc mẹ truyền một trong hai alen của mình với xác suất bằng nhau; hai lần truyền độc lập theo giả thiết. Tính xác suất con nhận hai alen b.",
+          "count": 1
+        },
+        {
+          "before": "gene b được truyền",
+          "after": "alen b được truyền",
+          "count": 1
+        },
+        {
+          "before": "hai gene b bằng",
+          "after": "hai alen b bằng",
+          "count": 1
+        },
+        {
+          "before": "truyền gene không độc lập",
+          "after": "truyền alen không độc lập",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iv.md",
+      "old": "68c55f1e8c27d4c5c323d02ee5d50276db2226b8",
+      "edits": [
+        {
+          "before": "7 phần kiến thức · 2 Tự thử · 1 hình PNG",
+          "after": "7 phần kiến thức · Vận dụng · 1 hình",
+          "count": 1
+        },
+        {
+          "before": "7 phần kiến thức · 2 Tự thử · 2 hình PNG",
+          "after": "7 phần kiến thức · Vận dụng · 2 hình",
+          "count": 1
+        },
+        {
+          "before": "8 phần kiến thức · 2 Tự thử · 3 hình PNG",
+          "after": "8 phần kiến thức · Vận dụng · 3 hình",
+          "count": 1
+        },
+        {
+          "before": "22 câu Vận dụng công khai được sử dụng lại để tự đối chiếu sau Final Submit; không ghi Mastery.",
+          "after": "22 câu Vận dụng đã học để tự kiểm tra và đối chiếu sau khi hoàn thành; không tính điểm thành thạo.",
+          "count": 1
+        },
+        {
+          "before": "88 câu canonical, 22 hướng dẫn khắc phục",
+          "after": "88 câu luyện tập, 22 hướng dẫn sửa lỗi",
+          "count": 1
+        },
+        {
+          "before": "22 câu Vận dụng tái sử dụng · Final Submit",
+          "after": "22 câu Vận dụng đã học · tự làm rồi đối chiếu",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/luyen-tap.md",
+      "old": "6f9f930ec48ac23b82288802aea198b437700752",
+      "edits": [
+        {
+          "before": "88 câu đã review: 22 Core, 22 Luyện tập, 22 Vận dụng và 22 Tự luận với rubric /5.",
+          "after": "88 câu luyện tập: 22 câu kiến thức nền, 22 Luyện tập, 22 Vận dụng và 22 Tự luận có tiêu chí tự đối chiếu theo thang 5.",
+          "count": 1
+        },
+        {
+          "before": "Không chấm điểm hoặc ghi Mastery.",
+          "after": "Không tính điểm chính thức hoặc ghi nhận mức độ thành thạo.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-v.md",
+      "old": "4b3b45aa7cf88c8752979acdf72765b136daa364",
+      "edits": [
+        {
+          "before": "6 phần kiến thức bắt buộc · 1 Tự thử · 1 PNG",
+          "after": "6 phần kiến thức bắt buộc · Vận dụng · 1 hình",
+          "count": 1
+        },
+        {
+          "before": "7 phần kiến thức bắt buộc · 2 Tự thử · 2 PNG",
+          "after": "7 phần kiến thức bắt buộc · Vận dụng · 2 hình",
+          "count": 1
+        },
+        {
+          "before": "5 phần kiến thức bắt buộc · 2 Tự thử · 2 PNG",
+          "after": "5 phần kiến thức bắt buộc · Vận dụng · 2 hình",
+          "count": 1
+        },
+        {
+          "before": "5 phần kiến thức bắt buộc · 2 Tự thử · 1 PNG",
+          "after": "5 phần kiến thức bắt buộc · Vận dụng · 1 hình",
+          "count": 1
+        },
+        {
+          "before": "23 câu chính + 1 câu mở rộng tự chọn · Final Submit",
+          "after": "23 câu chính + 1 câu mở rộng tự chọn · tự làm rồi đối chiếu",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-vi.md",
+      "old": "de1a87ab9f1494ed797faaa2bb806e192a924705",
+      "edits": [
+        {
+          "before": "7 phần kiến thức · 7 ví dụ · 2 Tự thử · 3 hình gốc",
+          "after": "7 phần kiến thức · 6 ví dụ · Vận dụng · 3 hình",
+          "count": 1
+        },
+        {
+          "before": "7 phần kiến thức · 7 ví dụ · 2 Tự thử · 2 hình gốc",
+          "after": "7 phần kiến thức · 6 ví dụ · Vận dụng · 2 hình",
+          "count": 1
+        },
+        {
+          "before": "56 câu nguồn canonical",
+          "after": "56 câu luyện tập",
+          "count": 1
+        },
+        {
+          "before": "56 câu canonical · 14 hướng dẫn D6 · một câu mỗi lần",
+          "after": "56 câu luyện tập · 14 hướng dẫn sửa lỗi · một câu mỗi lần",
+          "count": 1
+        },
+        {
+          "before": "14 câu Vận dụng dùng lại từ nguồn công khai · Final Submit, không Mastery",
+          "after": "14 câu Vận dụng đã học · tự đối chiếu sau khi hoàn thành, không tính điểm thành thạo",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-vi/luyen-tap.md",
+      "old": "897f2908e820f10f6f97856dd1fd031bfe5e4130",
+      "edits": [
+        {
+          "before": "rubric tự đối chiếu /5. Mỗi câu gắn hướng dẫn D6 riêng.",
+          "after": "tiêu chí tự đối chiếu theo thang 5. Mỗi câu có hướng dẫn sửa lỗi riêng.",
+          "count": 1
+        },
+        {
+          "before": "kết quả không tính điểm hoặc Mastery.",
+          "after": "kết quả không tính điểm chính thức hoặc ghi nhận mức độ thành thạo.",
           "count": 1
         }
       ]

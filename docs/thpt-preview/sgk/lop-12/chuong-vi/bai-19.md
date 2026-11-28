@@ -124,7 +124,7 @@
 
     <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Bayes.</strong><p>Với \(P(B)\gt 0\), \(0\lt P(A)\lt 1\),</p><div class="arithmatex">\(\displaystyle P(A\mid B)=\frac{P(A)P(B\mid A)}{P(A)P(B\mid A)+P(\overline A)P(B\mid\overline A)}.\)</div><p>Tử là xác suất giao AB; mẫu là xác suất B tính bằng toàn phần. Nếu \(P(A)=0\), kết quả bằng 0; nếu \(P(A)=1\), kết quả bằng 1, với điều kiện \(P(B)\gt 0\).</p></div>
 
-    Khi có nhiều nguồn \(A_i\) như trên, xác suất nguồn \(A_j\) sau khi biết B là
+    Khi có nhiều nguồn \(A_i\) đôi một xung khắc, phủ hết không gian mẫu và có xác suất dương, xác suất nguồn \(A_j\) sau khi biết B là
 
     \[
     P(A_j\mid B)=\frac{P(A_j)P(B\mid A_j)}{\sum_{i=1}^{k}P(A_i)P(B\mid A_i)},\quad P(B)>0.
@@ -163,7 +163,7 @@
     ### 3.3. Toàn phần và Bayes với ba nhóm
 
     <!-- EX-G12-B19-O06 -->
-    **Đề bài.** Ba nhóm A, B, C chiếm lần lượt 50%, 30%, 20% lượt gửi hàng. Tỉ lệ giao muộn tương ứng là 2%, 3%, 6%. Tính tỉ lệ giao muộn chung và xác suất một lượt giao muộn thuộc C.
+    **Đề bài.** Chọn đều một lượt gửi hàng trong tập đang xét. Ba nhóm A, B, C phân hoạch tập này và chiếm lần lượt 50%, 30%, 20% lượt gửi hàng. Tỉ lệ giao muộn tương ứng là 2%, 3%, 6%. Tính tỉ lệ giao muộn chung và xác suất một lượt giao muộn thuộc C.
 
     **Phân tích:** Có ba nguồn, nên phải cộng đủ ba giao ở mẫu số.
 
@@ -195,13 +195,13 @@
 
     ### 3.6. Vận dụng xác suất toàn phần kết hợp độc lập
 
-    **Đề bài.** Trong mô hình di truyền đơn giản, bố và mẹ được chọn độc lập từ một quần thể có 30% cá thể kiểu gene bb và 70% kiểu Bb. Mỗi cá thể truyền ngẫu nhiên một trong hai gene, hai lần truyền độc lập. Tính xác suất con nhận hai gene b.
+    **Đề bài.** Trong mô hình di truyền đơn giản, tại một gen đang xét có hai alen B và b. Bố và mẹ được chọn độc lập từ một quần thể có 30% cá thể kiểu bb và 70% kiểu Bb. Mỗi bố hoặc mẹ truyền một trong hai alen của mình với xác suất bằng nhau; hai lần truyền độc lập theo giả thiết. Tính xác suất con nhận hai alen b.
 
-    **Phân tích:** Với một cá thể, gene b được truyền chắc chắn nếu kiểu bb, và với xác suất \(1/2\) nếu kiểu Bb. Tính toàn phần trước, sau đó dùng độc lập theo giả thiết.
+    **Phân tích:** Với một cá thể, alen b được truyền chắc chắn nếu kiểu bb, và với xác suất \(1/2\) nếu kiểu Bb. Tính toàn phần trước, sau đó dùng độc lập theo giả thiết.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Xác suất nhận b từ bố là \(0{,}3\cdot1+0{,}7\cdot1/2=0{,}65\). Tương tự từ mẹ là 0,65. Hai lần độc lập theo mô hình, nên xác suất nhận hai gene b bằng \(0{,}65^2=0{,}4225\) (42,25%).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Xác suất nhận b từ bố là \(0{,}3\cdot1+0{,}7\cdot1/2=0{,}65\). Tương tự từ mẹ là 0,65. Hai lần độc lập theo mô hình, nên xác suất nhận hai alen b bằng \(0{,}65^2=0{,}4225\) (42,25%).</p></div>
 
-    **Kiểm lại:** Xác suất nhận b ở một lần nằm giữa \(1/2\) và 1. Nếu việc chọn hai cá thể hoặc truyền gene không độc lập, không tự nhân hai xác suất biên.
+    **Kiểm lại:** Xác suất nhận b ở một lần nằm giữa \(1/2\) và 1. Nếu việc chọn hai cá thể hoặc truyền alen không độc lập, không tự nhân hai xác suất biên.
 
 === "Lỗi thường gặp"
 

@@ -55,7 +55,7 @@
 
     Tổng quát, nếu A và B độc lập thì \(P(AB)=P(A)P(B)\). Khi \(P(B)>0\), chia hai vế cho \(P(B)\) được \(P(A\mid B)=P(A)\). Ngược lại, nếu đẳng thức điều kiện này đúng và \(P(B)>0\), nhân lại cho \(P(B)\) sẽ chứng minh độc lập. Tương tự theo chiều ngược khi \(P(A)>0\).
 
-    Biến cố đối của A trong nhóm điều kiện B chiếm phần còn lại: \(P(\overline A\mid B)=1-P(A\mid B)\). Nếu A và B độc lập thì A và \(\overline B\), cũng như \(\overline A\) và B, độc lập; chỉ dùng xác suất có điều kiện khi biến cố điều kiện có xác suất dương. Hai biến cố xung khắc có xác suất dương không độc lập, vì xác suất giao bằng 0 nhưng tích hai xác suất dương.
+    Biến cố đối của A trong nhóm điều kiện B chiếm phần còn lại: \(P(\overline A\mid B)=1-P(A\mid B)\). Nếu A và B độc lập thì A và \(\overline B\), cũng như \(\overline A\) và B, độc lập. Thật vậy, \(P(A\cap\overline B)=P(A)-P(A\cap B)=P(A)[1-P(B)]=P(A)P(\overline B)\). Đổi vai trò hai biến cố để chứng minh trường hợp còn lại. Chỉ dùng xác suất có điều kiện khi biến cố điều kiện có xác suất dương. Hai biến cố xung khắc có xác suất dương không độc lập, vì xác suất giao bằng 0 nhưng tích hai xác suất dương.
 
     **Vận dụng.** Trong 120 lượt kiểm tra thiết bị, 40 lượt ở chế độ A có 24 lượt đạt; 80 lượt ở chế độ khác A có 50 lượt đạt. Chọn đều một lượt. Tính xác suất đạt với điều kiện ở chế độ A, và xác suất ở chế độ A với điều kiện đạt. Hai biến cố có độc lập không?
 
@@ -155,7 +155,7 @@
 
     **Phân tích:** Hai mẫu số là tổng nhóm ứng dụng (20) và tổng nhóm đọc sách (32).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Gọi A là dùng X, B là đọc sách điện tử. \(P(B\mid A)=12/20=3/5\); \(P(A\mid B)=12/32=3/8\). Bảng bốn ô \(AB,A\overline B,\overline AB,\overline A\overline B\) lần lượt là 12, 8, 20, 40.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Gọi A là dùng X, B là đọc sách điện tử. Ô còn lại là \(80-12-8-20=40\).</p><table><thead><tr><th></th><th>B</th><th>Không B</th><th>Tổng</th></tr></thead><tbody><tr><th>A</th><td>12</td><td>8</td><td>20</td></tr><tr><th>Không A</th><td>20</td><td>40</td><td>60</td></tr><tr><th>Tổng</th><td>32</td><td>48</td><td>80</td></tr></tbody></table><p>Biết A thì lấy tổng hàng A làm mẫu số: \(P(B\mid A)=12/20=3/5\). Biết B thì lấy tổng cột B: \(P(A\mid B)=12/32=3/8\).</p></div>
 
     **Kiểm lại:** Tổng bốn ô bằng 80, tổng hàng A bằng 20, tổng cột B bằng 32. Hai chiều không bằng nhau.
 
@@ -188,7 +188,7 @@
 
     **Phân tích:** Cập nhật số bi sau mỗi lần rút; đây là một đường đi ba cạnh.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Lượt đầu đỏ: \(5/8\). Biết lượt đầu đỏ, lượt hai xanh: \(3/7\). Biết hai lượt đầu là đỏ rồi xanh, lượt ba đỏ: \(4/6\). Nhân được \(5/8\cdot3/7\cdot4/6=5/28\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Lượt đầu đỏ: \(5/8\). Biết lượt đầu đỏ, lượt hai xanh: \(3/7\). Biết hai lượt đầu là đỏ rồi xanh, lượt ba đỏ: \(4/6\). Gọi \(D_1,X_2,D_3\) là các biến cố đỏ lượt 1, xanh lượt 2, đỏ lượt 3. Áp dụng công thức nhân hai lần: \(P(D_1\cap X_2\cap D_3)=P(D_1\cap X_2)P(D_3\mid D_1\cap X_2)\), với \(P(D_1\cap X_2)=P(D_1)P(X_2\mid D_1)\). Lượt thứ ba phải tính theo cả lịch sử hai lượt đầu. Nhân được \(5/8\cdot3/7\cdot4/6=5/28\).</p></div>
 
     **Kiểm lại:** Đếm có thứ tự cho \(5\cdot3\cdot4=60\) kết quả thuận lợi trong \(8\cdot7\cdot6=336\) kết quả đồng khả năng, cũng được \(5/28\).
 

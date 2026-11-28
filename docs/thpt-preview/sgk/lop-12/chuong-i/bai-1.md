@@ -266,7 +266,7 @@
 
     **Phân tích:** Cần tìm cực đại của **hàm tốc độ bán hàng** \(v(t)=N'(t)\), không phải cực đại của tổng số sản phẩm \(N(t)\). Vì vậy phải xét dấu của \(v'(t)=N''(t)\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> Đặt \(u=4e^{-t}>0\), \(u'=-u\). Khi đó \(v(t)=1000u(1+u)^{-2}\). Dùng quy tắc tích và hàm hợp, ta có \(v'=1000[u'(1+u)-2uu']/(1+u)^3\). Thay \(u'=-u\), suy ra \(v'=1000u(u-1)/(1+u)^3\). Vì \(u=4e^{-t}\) giảm, \(u>1\) khi \(t<\ln4\) và \(u=1\) khi \(t=\ln4\), \(v'>0\) với \(0&lt;t&lt;\ln4\) và \(v'&lt;0\) khi \(t&gt;\ln4\). Do đó \(v\) tăng rồi giảm trên toàn miền thời gian; tốc độ bán hàng lớn nhất tại \(t=\ln4\approx1{,}39\) năm và bằng \(1000/(1+1)^2=250\) sản phẩm/năm.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> Đặt \(u=4e^{-t}>0\), \(u'=-u\). Khi đó \(v(t)=1000u(1+u)^{-2}\). Dùng quy tắc tích và hàm hợp, ta có \(v'=1000[u'(1+u)-2uu']/(1+u)^3\). Thay \(u'=-u\), suy ra \(v'=1000u(u-1)/(1+u)^3\). Vì \(u=4e^{-t}\) giảm, \(u&gt;1\) khi \(t&lt;\ln4\) và \(u=1\) khi \(t=\ln4\), \(v'>0\) với \(0&lt;t&lt;\ln4\) và \(v'&lt;0\) khi \(t&gt;\ln4\). Do đó \(v\) tăng rồi giảm trên toàn miền thời gian; tốc độ bán hàng lớn nhất tại \(t=\ln4\approx1{,}39\) năm và bằng \(1000/(1+1)^2=250\) sản phẩm/năm.</p></div>
 
     **Kiểm lại:** \(v(t)>0\) với mọi \(t\ge0\) nên tổng số sản phẩm vẫn tăng; chính tốc độ tăng đạt đỉnh rồi giảm. \(v(0)=160<250\), \(\lim_{t\to+\infty}v(t)=0\), phù hợp kết luận.
 

@@ -95,7 +95,7 @@
 
     Đường xuyên qua \(Oxy\) khi \(z=0\), tức \(t=1/3\), cho \(D(2;1;0)\). Vì \(0<1/3<1\), \(D\) nằm giữa mắt và vật. Tuy nhiên \(OD=\sqrt5>2\), nên đường nhìn không xuyên qua tấm chắn. Cần kiểm cả hai điều kiện: giao điểm nằm trên đoạn nhìn và thuộc hình tròn hữu hạn.
 
-    Tổng quát, với \(d:M=A+t\vec u\) và mặt phẳng \((P):\vec n\cdot\overrightarrow{OM}+D=0\), thay tọa độ \(M\) vào phương trình \((P)\), ta nhận
+    Tổng quát, với đường thẳng \(d\) có \(\overrightarrow{AM}=t\vec u\) và mặt phẳng \((P):\vec n\cdot\overrightarrow{OM}+D=0\), thay tọa độ \(M\) vào phương trình \((P)\), ta nhận
 
     \[
     (\vec n\cdot\vec u)t+\vec n\cdot\overrightarrow{OA}+D=0.
@@ -146,7 +146,7 @@
 
     Chẳng hạn \(A=(0;0;0), B=(0;0;1),\vec u=(1;0;0),\vec v=(0;1;0)\) như hình ở mục trước. Tích có hướng bằng \((0;0;1)\); tích với \(\overrightarrow{AB}=(0;0;1)\) bằng 1, xác nhận chéo nhau.
 
-    Cách khác là tìm điểm chung. Viết \(A+t\vec u=B+s\vec v\) với hai tham số độc lập \(t,s\), rồi giải hệ ba phương trình tọa độ. Ví dụ
+    Cách khác là tìm điểm chung. Viết \(\overrightarrow{OA}+t\vec u=\overrightarrow{OB}+s\vec v\) với hai tham số độc lập \(t,s\), rồi giải hệ ba phương trình tọa độ. Ví dụ
 
     \[
     d_1:(t;2t;1+t),\qquad d_2:(2+s;4-s;3).
@@ -223,7 +223,7 @@
 
     Khi \(K\ne0\), tự động \(\vec n\ne\vec0\). Khi \(K=0\), phải kiểm \(\vec n\) để phân biệt cắt với cùng phương. Đổi chiều hoặc nhân chỉ phương với số khác 0 không làm thay đổi điều kiện bằng 0 hay khác 0.
 
-    **Cách dùng hệ phương trình:** Với \(d_1:A+t\vec u,\ d_2:B+s\vec v\), giải ba phương trình tọa độ theo hai ẩn \(t,s\). Một nghiệm duy nhất nghĩa là cắt, vô số nghiệm nghĩa là trùng. Nếu vô nghiệm, cùng phương thì song song phân biệt, khác phương thì chéo. Khi tìm giao điểm, thay nghiệm vào cả hai phương trình đường thẳng.
+    **Cách dùng hệ phương trình:** Với hai đường thẳng có vectơ vị trí lần lượt \(\overrightarrow{OA}+t\vec u\) và \(\overrightarrow{OB}+s\vec v\), giải ba phương trình tọa độ theo hai ẩn \(t,s\). Một nghiệm duy nhất nghĩa là cắt, vô số nghiệm nghĩa là trùng. Nếu vô nghiệm, cùng phương thì song song phân biệt, khác phương thì chéo. Khi tìm giao điểm, thay nghiệm vào cả hai phương trình đường thẳng.
 
     **Ứng dụng:** Đường chứa quỹ đạo và vị trí thực của vật là hai khái niệm khác nhau. Kiểm miền tham số và thời điểm nếu đề hỏi gặp nhau, va chạm hoặc đi qua một vật cản hữu hạn.
 
@@ -295,7 +295,7 @@
 
     **Phân tích:** Hai hướng giống nhau; cao độ khác nhau chứng minh song song phân biệt. Dùng hướng chung và vectơ nối hai điểm gốc làm cặp chỉ phương của mặt phẳng.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> \(\vec u=(1;2;0)\), \(\overrightarrow{AB}=(2;1;2)\), với \(A(0;0;1), B(2;1;3)\). Tích có hướng bằng \((4;-2;-3)\ne\vec0\). Mặt phẳng qua \(A\) là \(4x-2y-3z+3=0\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> \(\vec u=(1;2;0)\), \(\overrightarrow{AB}=(2;1;2)\), với \(A(0;0;1), B(2;1;3)\). Hai vectơ không cùng phương: thành phần thứ ba của \(\overrightarrow{AB}\) là 2 còn của \(\vec u\) là 0. Tổng quát, nếu \(\overrightarrow{AB}=k\vec u\) thì \(B\) thuộc đường qua \(A\) theo hướng chung, nên hai đường trùng nhau. Tích có hướng bằng \((4;-2;-3)\ne\vec0\). Mặt phẳng qua \(A\) là \(4x-2y-3z+3=0\).</p></div>
 
     **Kiểm lại:** Thay điểm gốc của từng đường đều được 0, và pháp tuyến vuông góc hướng chung. Không lấy tích có hướng của hai chỉ phương cùng phương (kết quả bằng 0).
 

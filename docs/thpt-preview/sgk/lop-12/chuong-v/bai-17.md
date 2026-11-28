@@ -92,7 +92,7 @@
 
     #### a) Khoảng cách trên bề mặt Trái Đất
 
-    Trong mô hình Trái Đất hình cầu, chọn gốc \(O\) ở tâm, \(Oz\) hướng về cực Bắc, \(Ox\) hướng tới giao điểm xích đạo và kinh tuyến gốc, \(Oy\) hướng tới điểm xích đạo có kinh độ \(90^\circ E\). SGK lấy bán kính thực \(6371\) km làm một đơn vị dài, nên bề mặt có phương trình \(x^2+y^2+z^2=1\).
+    Trong mô hình Trái Đất hình cầu, chọn gốc \(O\) ở tâm, \(Oz\) hướng về cực Bắc, \(Ox\) hướng tới giao điểm xích đạo và kinh tuyến gốc, \(Oy\) hướng tới điểm xích đạo có kinh độ \(90^\circ E\). SGK lấy bán kính xấp xỉ \(6371\) km trong mô hình cầu làm một đơn vị dài, nên bề mặt có phương trình \(x^2+y^2+z^2=1\).
 
     Vĩ độ \(\varphi\) là góc nâng của bán kính so với mặt phẳng xích đạo, có dấu dương về Bắc, âm về Nam. Kinh độ \(\lambda\) được lấy dương về Đông, âm về Tây. Hình chiếu ngang của bán kính đơn vị có độ dài \(\cos\varphi\); độ cao là \(\sin\varphi\). Tách hình chiếu ngang thành hai thành phần theo góc kinh độ, ta có
 
@@ -209,17 +209,17 @@
 
     **Phân tích:** Bán kính bằng khoảng cách từ tâm tới mặt phẳng.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(R=|2-2+6-3|/\sqrt{4+1+4}=1\). Mặt cầu \((x-1)^2+(y-2)^2+(z-3)^2=1\).</p><p>Hình chiếu \(H=I-\frac13(2;-1;2)=(1/3;7/3;7/3)\) là tiếp điểm.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(R=|2-2+6-3|/\sqrt{4+1+4}=1\). Mặt cầu \((x-1)^2+(y-2)^2+(z-3)^2=1\).</p><p>Hình chiếu có vectơ vị trí \(\overrightarrow{OH}=\overrightarrow{OI}-\frac13(2;-1;2)\), nên \(H(1/3;7/3;7/3)\) là tiếp điểm.</p></div>
 
     **Kiểm lại:** \(2/3-7/3+14/3-3=0\), \(IH^2=1\).
 
     ### 3.5. Xác định tọa độ và khoảng cách trên địa cầu
 
-    **Đề bài.** Trong mô hình mặt cầu đơn vị, \(P\) ở \(30^\circ S,60^\circ E\), \(Q\) ở \(30^\circ N,60^\circ E\). Tìm tọa độ và khoảng cách trên mặt cầu bán kính thực 6371 km.
+    **Đề bài.** Trong mô hình mặt cầu đơn vị, \(P\) ở \(30^\circ S,60^\circ E\), \(Q\) ở \(30^\circ N,60^\circ E\). Tìm tọa độ và khoảng cách trên mặt cầu bán kính quy ước 6371 km.
 
     **Phân tích:** Cùng kinh độ nhưng khác dấu vĩ độ; hai điểm nằm trên cùng kinh tuyến.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \(P=(\sqrt3/4;3/4;-1/2)\), \(Q=(\sqrt3/4;3/4;1/2)\). Tích vô hướng \(3/16+9/16-1/4=1/2\), nên góc ở tâm \(60^\circ=\pi/3\). Khoảng cách \(6371\pi/3\approx6671{,}6956\) km.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Thay vĩ độ \(-30^\circ\), kinh độ \(60^\circ\): \(\cos(-30^\circ)\cos60^\circ=\sqrt3/4\), \(\cos(-30^\circ)\sin60^\circ=3/4\), \(\sin(-30^\circ)=-1/2\). Đổi vĩ độ sang \(30^\circ\) chỉ đổi dấu cao độ. Vậy \(P=(\sqrt3/4;3/4;-1/2)\), \(Q=(\sqrt3/4;3/4;1/2)\). Tích vô hướng \(3/16+9/16-1/4=1/2\), nên góc ở tâm \(60^\circ=\pi/3\). Khoảng cách \(6371\pi/3\approx6671{,}6956\) km.</p></div>
 
     **Kiểm lại:** Hai vectơ có độ dài 1. Cùng kinh độ, hiệu vĩ độ bằng \(60^\circ\), phù hợp góc vừa tính.
 

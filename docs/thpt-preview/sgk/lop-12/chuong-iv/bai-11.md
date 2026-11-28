@@ -30,7 +30,7 @@
     \int f(x)\,dx=F(x)+C.
     \]
 
-    Dấu \(\int\) ở đây biểu thị việc tìm nguyên hàm, không phải một số đo diện tích. Kết quả là một họ hàm số. \(dx\) cho biết biến đang xét là \(x\); vi phân của \(F\) được viết \(dF(x)=F'(x)\,dx=f(x)\,dx\).
+    Dấu \(\int\) ở đây biểu thị việc tìm nguyên hàm, không phải một số đo diện tích. Kết quả là một họ hàm số. \(dx\) cho biết biến đang xét là \(x\); vi phân của \(F\) được viết \(dF(x)=F'(x)\,dx=f(x)\,dx\), mô tả phần thay đổi tuyến tính của \(F\) theo \(dx\). Chẳng hạn với \(F(x)=x^2\), ta có \(dF=2x\,dx\); còn độ tăng hữu hạn \(F(x+h)-F(x)=2xh+h^2\) có thêm số hạng bậc hai. Ở đây không cần thao tác với \(dx\) như một phân số.
 
     Trở lại chiếc xe: nếu biết \(s(0)=3\) m, từ \(s(t)=t^2+C\) suy ra \(C=3\). Khi đó tọa độ duy nhất là \(s(t)=t^2+3\). Sau 4 giây, xe ở tọa độ 19 m, còn quãng đường đi được từ lúc \(t=0\) là \(19-3=16\) m. Vận tốc không âm trong khoảng này nên quãng đường bằng độ dời. Không nhầm tọa độ với quãng đường.
 

@@ -32,7 +32,7 @@
     [\vec u,\vec v]=(bc'-b'c;\ ca'-c'a;\ ab'-a'b).
     \]
 
-    Tính lần lượt theo các cặp tọa độ \(yz,zx,xy\). Vì sao đúng? Tích vô hướng với \(\vec u\) bằng \(a(bc'-b'c)+b(ca'-c'a)+c(ab'-a'b)=0\) do các hạng tử triệt tiêu từng cặp. Tích vô hướng với \(\vec v\) cũng bằng 0. Nếu \(\vec u,\vec v\) không cùng phương, tích có hướng khác không. Nếu chúng cùng phương, kể cả trường hợp có vectơ-không, tích có hướng bằng vectơ-không, nên không xác định được pháp tuyến theo cách này. Khi tích có hướng bằng 0, không nói vectơ-không có một giá vuông góc.
+    Tính lần lượt theo các cặp tọa độ \(yz,zx,xy\). Vì sao đúng? Tích vô hướng với \(\vec u\) bằng \(a(bc'-b'c)+b(ca'-c'a)+c(ab'-a'b)=0\) do các hạng tử triệt tiêu từng cặp. Tích vô hướng với \(\vec v\) cũng bằng 0. Vì sao tích có hướng khác không khi hai vectơ không cùng phương? Giả sử cả ba thành phần đều bằng 0, chọn một tọa độ khác 0 của \(\vec u\), chẳng hạn \(a\ne0\). Từ \(ca'-c'a=0\) và \(ab'-a'b=0\), suy ra \(b'=ba'/a\), \(c'=ca'/a\), tức \(\vec v=(a'/a)\vec u\), trái giả thiết. Nếu \(a=0\), chọn một tọa độ khác 0 tương tự. Nếu chúng cùng phương, kể cả trường hợp có vectơ-không, tích có hướng bằng vectơ-không, nên không xác định được pháp tuyến theo cách này. Khi tích có hướng bằng 0, không nói vectơ-không có một giá vuông góc.
 
     Ví dụ trên cho \([\vec u,\vec v]=(0\cdot1-1\cdot1;\ 1\cdot0-1\cdot1;\ 1\cdot1-0\cdot0)=(-1;-1;1)\), đúng với cách giải hệ. Đảo thứ tự cho vectơ đối \((1;1;-1)\), vẫn là một pháp tuyến hợp lệ.
 
@@ -326,7 +326,7 @@
 
     **Phân tích:** Mỗi tường chứa cạnh sàn tương ứng và có hướng \((0;0;1)\). Vì vậy phương trình không chứa \(z\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> Tường \(OA\): \(y=0\); tường \(AB\): \(x=4\); tường \(BC\): \(x-4y+8=0\); tường \(CO\): \(x=0\). Pháp tuyến lần lượt là \((0;1;0),(1;0;0),(1;-4;0),(1;0;0)\). Tường \(OA\) vuông góc với \(AB\) và \(CO\); không còn cặp vuông góc nào khác.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> Tường \(OA\): \(y=0\); tường \(AB\): \(x=4\). Tường \(BC\) có hai hướng \(\overrightarrow{BC}=(-4;-1;0)\) và \((0;0;1)\). Tích có hướng là \((-1;4;0)\); chọn pháp tuyến \((1;-4;0)\) và đi qua \(C(0;2;0)\), ta được \(x-4(y-2)=0\), tức \(x-4y+8=0\); tường \(CO\): \(x=0\). Pháp tuyến lần lượt là \((0;1;0),(1;0;0),(1;-4;0),(1;0;0)\). Tường \(OA\) vuông góc với \(AB\) và \(CO\); không còn cặp vuông góc nào khác.</p></div>
 
     **Kiểm lại:** \(B,C\) đều thỏa \(x-4y+8=0\). Tường \(AB,CO\) song song, không vuông góc. Cả bốn pháp tuyến đều vuông góc với \((0;0;1)\), đúng điều kiện tường vuông góc sàn.
 
@@ -346,7 +346,7 @@
 
     **Phân tích:** \(L=2+2+2+3=9\), bình phương độ dài pháp tuyến bằng 9.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> \(d=9/3=3\). Tọa độ hình chiếu \(H=M-(9/9)(1;2;-2)=(1;-1;1)\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> \(d=9/3=3\). Tính hình chiếu theo vectơ vị trí: \(\overrightarrow{OH}=\overrightarrow{OM}-(9/9)(1;2;-2)\). Suy ra \(H(1;-1;1)\).</p></div>
 
     **Kiểm lại:** \(1-2-2+3=0\), \(\overrightarrow{MH}=(-1;-2;2)\), độ dài 3 và cùng phương pháp tuyến.
 

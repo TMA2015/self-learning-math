@@ -140,7 +140,7 @@
 
     ??? question "Đối chiếu"
 
-        Do các cạnh bên là đoạn thẳng và các mặt cắt song song đáy, cạnh của hình vuông tăng tuyến tính từ 2 đến 5: \(\ell(x)=2+x\). Vì vậy \(S(x)=(2+x)^2\) cm².
+        Do các cạnh bên là đoạn thẳng và các mặt cắt song song đáy, cạnh của hình vuông tăng tuyến tính từ 2 đến 5: \(\ell(x)=2+x\). Vì vậy \(S(x)=(2+x)^2\) cm². Theo quy tắc đạo hàm hàm hợp, \([(x+c)^3/3]'=(x+c)^2\) vì \((x+c)'=1\). Đây là cách nhận ra nguyên hàm dùng ở dưới; với \(ax+b\) phải tính thêm hệ số \(a\).
 
         \[
         V=\int_0^3(2+x)^2\,dx
@@ -159,7 +159,7 @@
     S(x)=\left[\sqrt{B_0}+\frac{x}{h}(\sqrt{B_1}-\sqrt{B_0})\right]^2.
     \]
 
-    Khai triển và tích phân từ 0 đến \(h\) được
+    Đặt \(A=\sqrt{B_0}\), \(D=\sqrt{B_1}-\sqrt{B_0}\). Khi khai triển, \(S(x)=A^2+2ADx/h+D^2x^2/h^2\). Tích phân từng số hạng từ 0 đến \(h\) cho \(V=h(A^2+AD+D^2/3)\). Thay \(A,D\) và thu gọn được
 
     \[
     V=\frac h3(B_0+\sqrt{B_0B_1}+B_1).
@@ -242,7 +242,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Diện tích giữa hai đồ thị.</strong><p>Cho \(f,g\) liên tục trên \([a;b]\), \(a\lt b\). Diện tích giới hạn bởi \(y=f(x),y=g(x)\) và hai đường thẳng \(x=a,x=b\) là</p><div class="arithmatex">\(\displaystyle S=\int_a^b|f(x)-g(x)|\,dx.\)</div><p>Chiều cao lát đứng bằng tung độ đường trên trừ tung độ đường dưới. Nếu \(f-g\) không đổi dấu trên đoạn thì \(S=\left|\int_a^b(f-g)\,dx\right|\). Nếu đổi dấu, tách tại các mốc đổi dấu.</p></div>
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg" alt="Hai miền giữa y=x và y=x³ đổi thứ tự trên dưới tại x=0"><figcaption>Ví dụ về việc chia miền: giao điểm ở \(-1,0,1\), hiệu không âm là \(x^3-x\) ở nửa trái và \(x-x^3\) ở nửa phải.</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg" alt="Hai miền giữa y=x và y=x³ đổi thứ tự trên dưới tại x=0"><figcaption>Với \(y=x\) và \(y=x^3\) trên \([-1;1]\) (xem mục 1.1b), giao điểm ở \(-1,0,1\), hiệu không âm là \(x^3-x\) ở nửa trái và \(x-x^3\) ở nửa phải.</figcaption></figure>
 
     Cách lập tích phân diện tích: xác định đúng các đường biên và cận; giải phương trình giao điểm (hoặc nghiệm của \(f\) nếu biên còn lại là \(Ox\)); xét dấu của hiệu hai hàm trên từng khoảng; viết hiệu không âm rồi tính tổng. Với các bài cơ bản có hữu hạn mốc đổi dấu, lập bảng dấu là cách thuận tiện. Nếu đề chỉ cho các đồ thị, cần xác định các miền kín hữu hạn trước khi chọn cận. Kết quả không âm, có đơn vị diện tích khi hai trục đều mang đơn vị độ dài.
 
@@ -319,13 +319,13 @@
 
     **Phân tích:** Hai hàm bằng nhau tại \(\pi/4\); so sánh ở hai đầu để nhận biết vị trí.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Trên \([0;\pi/4]\), \(\cos x\ge\sin x\); trên \([\pi/4;\pi/2]\), thứ tự ngược lại.</p><div class="arithmatex">\(\displaystyle S=[\sin x+\cos x]_0^{\pi/4}+[-\cos x-\sin x]_{\pi/4}^{\pi/2}=2(\sqrt2-1).\)</div></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Trên \([0;\pi/4]\), \(\cos x\ge\sin x\); trên \([\pi/4;\pi/2]\), thứ tự ngược lại.</p><p>Lập diện tích thành hai tích phân: \(\int_0^{\pi/4}(\cos x-\sin x)\,dx\) và \(\int_{\pi/4}^{\pi/2}(\sin x-\cos x)\,dx\). Tính tổng hai tích phân:</p><div class="arithmatex">\(\displaystyle S=[\sin x+\cos x]_0^{\pi/4}+[-\cos x-\sin x]_{\pi/4}^{\pi/2}=2(\sqrt2-1).\)</div></div>
 
     **Kiểm lại:** Hai phần bằng nhau do phép đối xứng \(x\mapsto\pi/2-x\). Tích phân của hiệu không có giá trị tuyệt đối bằng 0.
 
     ### 3.5. Thiết lập diện tích chênh lệch trong mô hình Lorenz
 
-    **Đề bài.** Trong mô hình minh họa, \(x\in[0;1]\) là tỉ lệ hộ gia đình từ thu nhập thấp đến cao; \(L(x)=x^2\) là tỉ lệ thu nhập tích lũy. Tính diện tích giữa \(y=x\) (mô hình bình đẳng) và \(y=L(x)\).
+    **Đề bài.** Trong mô hình minh họa, \(x\in[0;1]\) là tỉ lệ hộ thuộc nhóm thu nhập thấp nhất sau khi sắp xếp tăng dần; \(L(x)=x^2\) là phần tổng thu nhập mà nhóm đó nhận. Chẳng hạn \(L(1/2)=1/4\) nghĩa là 50% hộ thu nhập thấp nhất nhận 25% tổng thu nhập trong mô hình này. Tính diện tích giữa \(y=x\) (mô hình bình đẳng) và \(y=L(x)\).
 
     **Phân tích:** Trên \([0;1]\), \(x\ge x^2\); dùng tỉ lệ chứ không phải số phần trăm từ 0 đến 100.
 
