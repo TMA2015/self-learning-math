@@ -22241,7 +22241,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Ghép cạnh a với sin A; dùng tỉ số chung bằng 2R."
+      "Ghép cạnh a với sin A; dùng tỉ số chung bằng \\(2R\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -22345,7 +22345,7 @@
     "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-KFT08",
     "stem": "Có tồn tại tam giác ABC thỏa \\(A=30^\\circ,\\ a=4,\\ b=10\\) không?",
     "answer_key": "Không tồn tại tam giác vì \\(\\sin B=\\frac54>1\\).",
-    "worked_solution": "\\(\\sin B=\\frac{10\\sin30^\\circ}4=\\frac54>1\\) là vô lý, nên **không tồn tại tam giác**. Không dùng máy tính \\(\\arcsin(1{,}25)\\); hãy kiểm điều kiện đầu vào. Ôn Định lí sin ở Kiến thức 2.2, đọc lại Kiến thức 2.4 rồi làm Bài luyện 13 về dữ kiện vô nghiệm.\n\n**Kiểm lỗi**\n\nNếu em dừng ở một góc do arcsin trả về hoặc bỏ kiểm điều kiện, đọc **Kiến thức 2.4**. Làm **Bài luyện 21** (hai nghiệm) và **Bài luyện 13** (vô nghiệm), xét cả góc bù và tổng A+B nhỏ hơn 180°.",
+    "worked_solution": "\\(\\sin B=\\frac{10\\sin30^\\circ}4=\\frac54>1\\) là vô lý, nên **không tồn tại tam giác**. Không dùng máy tính \\(\\arcsin(1{,}25)\\); hãy kiểm điều kiện đầu vào. Ôn Định lí sin ở Kiến thức 2.2, đọc lại Kiến thức 2.4 rồi làm Bài luyện 13 về dữ kiện vô nghiệm.\n\n**Kiểm lỗi**\n\nNếu em dừng ở một góc do arcsin trả về hoặc bỏ kiểm điều kiện, đọc **Kiến thức 2.4**. Làm **Bài luyện 21** (hai nghiệm) và **Bài luyện 13** (vô nghiệm), xét cả góc bù và tổng \\(A+B\\) nhỏ hơn 180°.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-SINE_RULE"
@@ -22402,7 +22402,7 @@
     "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-KFT09",
     "stem": "Trong tam giác ABC có \\(b=6,\\ c=8,\\ A=60^\\circ\\). Tính diện tích; xác định hai cạnh kề góc A.",
     "answer_key": "\\(S=12\\sqrt3\\); hai cạnh kề góc A là b,c.",
-    "worked_solution": "\\(S=\\frac12\\cdot6\\cdot8\\sin60^\\circ=12\\sqrt3\\) đơn vị diện tích. Hai cạnh kề góc A là b=CA và c=AB. Nếu ra \\(24\\sqrt3\\), em đã quên hệ số \\(\\frac12\\). Luyện bài luyện cùng dạng.\n\n**Kiểm lỗi**\n\nNếu em quên hệ số một phần hai hoặc cho rằng sin của góc tù âm, đọc **Kiến thức 3.1**. Giải **Bài luyện 26** và **Bài luyện 30**, chọn đúng góc xen giữa hai cạnh.",
+    "worked_solution": "\\(S=\\frac12\\cdot6\\cdot8\\sin60^\\circ=12\\sqrt3\\) đơn vị diện tích. Hai cạnh kề góc A là \\(b=CA\\) và \\(c=AB\\). Nếu ra \\(24\\sqrt3\\), em đã quên hệ số \\(\\frac12\\). Luyện bài luyện cùng dạng.\n\n**Kiểm lỗi**\n\nNếu em quên hệ số một phần hai hoặc cho rằng sin của góc tù âm, đọc **Kiến thức 3.1**. Giải **Bài luyện 26** và **Bài luyện 30**, chọn đúng góc xen giữa hai cạnh.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-AREA_SIN"
@@ -22470,7 +22470,7 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Tính nửa chu vi p rồi dùng Heron và S=pr."
+      "Tính nửa chu vi p rồi dùng Heron và \\(S=pr\\)."
     ],
     "rubric": null,
     "interaction": {
