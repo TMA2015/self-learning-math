@@ -5,7 +5,22 @@
  * Safety invariant: no answer reveal or Mastery before learner action.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
-const {chromium}=require("playwright");
+const {chromium,webkit}=require("playwright");
+const engine=process.env.SCOPED_BROWSER_ENGINE||"chromium";
+// Owner 28/11: display-only release means source-locked formula/text checks,
+// not a re-audit of unchanged interactions, images or palette. The exact
+// push classifier is used by the existing production workflow as well.
+const displayReasons=new Set(["OWNER_1132_G11_B19_DISPLAY","OWNER_1132_G11_B16_DISPLAY","OWNER_1132_G11_B07_DISPLAY","OWNER_1132_EXACT_DISPLAY_DELTA"]);
+function exactPushDisplay(){
+ if(process.env.GITHUB_EVENT_NAME!=="push"||!process.env.GITHUB_EVENT_PATH)return false;
+ const event=JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH,"utf8"));
+ if(!/^[a-f0-9]{40}$/.test(event.before||"")||!/^([a-f0-9]{40})$/.test(event.after||""))return false;
+ const cp=require("node:child_process"),paths=cp.execFileSync("git",["diff","--no-renames","--name-only",event.before,event.after],{encoding:"utf8"}).trim().split("\n").filter(Boolean);
+ const impact=require("./test-thpt-release-impact.cjs").classify(paths,{base:event.before});
+ return impact.impact==="SCOPED_LESSON"&&displayReasons.has(impact.reason)&&impact.changed_lessons===process.env.SCOPED_LESSONS;
+}
+const displayOnly=(process.env.SCOPED_DISPLAY_ONLY==="true"&&displayReasons.has(process.env.RELEASE_DELTA_REASON))||exactPushDisplay();
+assert(["chromium","webkit"].includes(engine),"Unknown scoped browser engine");
 const root=path.resolve(__dirname,"..");
 const base=(process.env.SCOPED_BASE_URL||"http://127.0.0.1:8765").replace(/\/$/,"");
 const lessons=(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean);
@@ -194,7 +209,7 @@ async function execute(){
  assert(lessons.length>0&&lessons.length<=120,"No canonical SGK page paths or too many scoped targets");
  assert.equal(new Set(lessons).size,lessons.length,"Duplicate lesson target");
  for(const rel of lessons)assert((re.test(rel)||chapter.test(rel))&&fs.existsSync(path.join(root,rel)),"Invalid canonical SGK page "+rel);
- const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const browser=await (engine==="webkit"?webkit:chromium).launch(engine==="webkit"?{headless:true}:{headless:true,args:["--no-sandbox"]});
  let checks=0;
  try{
   for(const rel of lessons){
@@ -218,6 +233,12 @@ async function execute(){
      const response=await page.goto(base+route,{waitUntil:"domcontentloaded",timeout:60000});
      assert(response?.ok(),rel+" "+width+" route not rendered");
      if(isLesson){
+     // Avoid clicking a native summary while initial MathJax/fonts move it.
+     // Observe the actual browser transition; never set open or dispatch a fake click.
+     await page.waitForLoadState("load",{timeout:60000});
+     await page.waitForFunction(()=>Boolean(window.MathJax?.startup?.promise),null,{timeout:30000});
+     await page.evaluate(async()=>{await window.MathJax.startup.promise;await document.fonts.ready;});
+     await page.waitForFunction(()=>[...document.querySelectorAll("article .arithmatex")].every(el=>el.querySelector("mjx-container")),null,{timeout:30000});
      const tabs=page.locator(".md-content .tabbed-set").first();
      await tabs.waitFor({state:"visible"});
      const found=(await tabs.locator(".tabbed-labels > label").allInnerTexts()).map(s=>s.trim().replace(/\s+/g," "));
@@ -238,7 +259,7 @@ async function execute(){
       "docs/thpt-preview/sgk/chuong-vii/bai-22.md":{selector:"li",match:/Elip trục lớn Ox có/,expected:"Kiến thức gốc: Elip trục lớn Ox có c² = a² − b² và c < a; hypebol trục thực Ox có c² = a² + b² và c > a. Dấu trong dạng chính tắc phản ánh quỹ tích khác nhau."}
      }[rel];
      let display1132Hits=0;
-     for(let i=0;i<4;i++){
+     for(let i=0;i<(displayOnly&&!display1132?0:4);i++){
       await tabs.locator(".tabbed-labels > label").nth(i).click();
       assert(await groups.nth(i).isVisible(),rel+" "+width+" learner tab "+i+" not visible");
       if(display1132){
@@ -271,17 +292,51 @@ async function execute(){
       if(/^docs\/thpt-preview\/sgk\/lop-11\/(?:chuong-i\/bai-[234]|chuong-ii\/bai-[567]|chuong-iii\/bai-[89]|chuong-iv\/bai-1[0-4]|chuong-v\/bai-1[5-7]|chuong-vi\/bai-(?:1[89]|2[01])|chuong-vii\/bai-2[2-7]|(?:chuong-viii\/bai-(?:2[89]|30)|chuong-ix\/bai-3[1-3]))\.md$/.test(rel)||/^docs\/thpt-preview\/sgk\/lop-12\/chuong-i\/bai-[1-5]\.md$/.test(rel)||/\/lop-12\/chuong-v\/bai-1[4-7]\.md$/.test(rel)||/\/lop-12\/chuong-vi\/bai-1[89]\.md$/.test(rel)){
        const panel=groups.nth(i);
        for(const disclosure of await panel.locator("details.question").all()){
+        if(displayOnly)continue;
         const summary=disclosure.locator("summary").first();
         assert((await summary.innerText()).includes("Đối chiếu"),rel+" "+width+" comparison label");
         assert(!(await disclosure.evaluate(el=>el.open)),rel+" "+width+" comparison prematurely open");
-        await summary.click();
-        assert(await disclosure.evaluate(el=>el.open),rel+" "+width+" comparison failed to open");
-        await summary.click();
-        assert(!(await disclosure.evaluate(el=>el.open)),rel+" "+width+" comparison failed to close");
+        // A page with many lazy educational SVGs can reflow during a
+        // desktop scroll to a summary. Load the preceding in-flow images
+        // as a learner scrolling through the lesson would, before clicking.
+        for(const image of await panel.locator("figure img").all()){
+         if(!await image.isVisible())continue;
+         const precedes=await image.evaluate((img,summary)=>Boolean(img.compareDocumentPosition(summary)&Node.DOCUMENT_POSITION_FOLLOWING),await summary.elementHandle());
+         if(!precedes)continue;
+         await image.scrollIntoViewIfNeeded();
+         await image.evaluate(async img=>{
+          await Promise.race([img.decode(),new Promise((_,reject)=>setTimeout(()=>reject(Error("preceding image decode timeout")),15000))]);
+         });
+         assert(await image.evaluate(img=>img.naturalWidth>0),rel+" broken image preceding comparison");
+        }
+        for(const target of [true,false]){
+         await summary.evaluate(el=>el.scrollIntoView({block:"center",inline:"nearest",behavior:"instant"}));
+         await page.waitForFunction(el=>{const r=el.getBoundingClientRect(),hit=document.elementFromPoint(r.left+24,r.top+18);return r.top>=0&&r.bottom<=innerHeight&&Boolean(hit&&el.contains(hit));},await summary.elementHandle(),{timeout:5000});
+         // Native click, then wait for its observed result (including WebKit
+         // asynchronous native details state). No retries, forced clicks,
+         // JS property writes, or relaxed open/close requirement.
+         // Capture trusted pointer/click and toggle evidence without changing
+         // event propagation or native disclosure state.
+         await page.evaluate(el=>{
+          const events=[];window.__comparisonEvents=events;
+          const note=e=>events.push({type:e.type,trusted:e.isTrusted,target:e.target.tagName,within:el.contains(e.target),prevented:e.defaultPrevented,x:e.clientX,y:e.clientY,open:el.parentElement.open,rect:el.getBoundingClientRect().toJSON()});
+          for(const type of ["pointerdown","pointerup","click"])document.addEventListener(type,note,{capture:true,once:true});
+          el.parentElement.addEventListener("toggle",note,{once:true});
+         },await summary.elementHandle());
+         await summary.click({position:{x:24,y:18}});
+         try{
+          await page.waitForFunction(({el,target})=>el.open===target,
+           {el:await disclosure.elementHandle(),target},{timeout:5000});
+         }catch(error){
+          console.error("COMPARISON_STATE_FAILURE "+JSON.stringify({engine,rel,width,tab:i,target,state:await disclosure.evaluate(el=>({open:el.open,summary:el.querySelector("summary")?.textContent,rect:el.getBoundingClientRect().toJSON()})),events:await page.evaluate(()=>window.__comparisonEvents)}));
+          throw error;
+         }
+        }
        }
       }
       const figs=groups.nth(i).locator("figure img");
       for(const fig of await figs.all()){
+       if(displayOnly)continue;
        assert((await fig.getAttribute("alt"))?.trim(),rel+" "+width+" figure alt missing");
        // A real lazy image below the fold never starts loading until in view.
        // Scrolling reproduces the learner's behavior; bounded load/decode
@@ -398,15 +453,61 @@ async function execute(){
      if(mathExpected)assert(layout.math>0,rel+" "+width+" MathJax did not typeset");
      assert.equal(layout.unstyled,0,rel+" "+width+" Golden concept/rule cards lack style");
      await verifyG12DisplayMath(page,source,rel,width);
-     await goldenW1Parity(page,browser,width,rel);
+     // #1132: compare exact visible standalone display nodes in each
+     // affected tab, after navigation away and back, on both engines.
+     const display1132Tabs={
+      "docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md":[15,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md":[3,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md":[1,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md":[3,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md":[1,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md":[3,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md":[1,1,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md":[5,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md":[7,1,0,0]
+     }[rel];
+     if(display1132Tabs){
+      const tabs=page.locator("article .tabbed-set").first();
+      const panels=tabs.locator(".tabbed-content > .tabbed-block");
+      assert.equal(await panels.count(),4,rel+" #1132 four panels");
+      for(let t=0;t<4;t++){
+       const display=panels.nth(t).locator("div.arithmatex");
+       assert.equal(await display.count(),display1132Tabs[t],rel+" #1132 display count tab "+t);
+       if(!display1132Tabs[t])continue;
+       for(const k of [t,(t+1)%4,t]){
+        await tabs.locator(".tabbed-labels > label").nth(k).click();
+        if(k!==t)continue;
+        // B02 has 15 source-verified display blocks, including unchanged
+        // math in closed answers. The only changed expression is its fourth
+        // source/static display (aligned sine derivation). Do not open other
+        // answers just to assert visibility of intentionally hidden math.
+        const affected=rel==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"?[display.nth(3)]:await display.all();
+        for(const node of affected){
+         assert.equal(await node.evaluate(el=>Boolean(el.closest("details:not([open])"))),false,rel+" affected formula unexpectedly in closed disclosure");
+         if(rel==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"){
+          assert.equal(await node.locator("mjx-container mjx-mtable").count(),1,rel+" aligned derivation must render as multi-row math");
+          assert.equal(await node.locator("mjx-container mjx-mtable mjx-mtr").count(),3,rel+" expected three aligned rows");
+         }
+         await node.waitFor({state:"visible",timeout:30000});
+         await node.locator("mjx-container").waitFor({state:"visible",timeout:30000});
+         assert.equal(await node.locator("mjx-container").count(),1,rel+" #1132 duplicate/nested MathJax");
+         assert.equal(await node.locator("mjx-merror").count(),0,rel+" #1132 MathJax error");
+         const layout=await node.evaluate(el=>({width:el.getBoundingClientRect().width,overflow:document.documentElement.scrollWidth-innerWidth,font:getComputedStyle(el).fontSize}));
+         assert(layout.width>0&&layout.overflow<=20&&parseFloat(layout.font)>0,rel+" affected formula layout "+JSON.stringify(layout));
+        }
+       }
+      }
+      console.log("PASS #1132 visible display tab-switch "+engine+" "+rel+" @"+width+" "+(rel==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"?1:display1132Tabs.reduce((a,b)=>a+b,0))+" affected formulas");
+     }
+     if(!displayOnly)await goldenW1Parity(page,browser,width,rel);
      checks++;
-     console.log("PASS SCOPED Golden AP "+rel+" @"+width+"px: "+(isLesson?"4 tabs / ":"chapter hub / ")+
-      layout.math+" rendered math, "+expectedTry.length+" First Try, "+expectedHelp.length+" D6, layout/font/SVG/Q16");
+     console.log((displayOnly?"PASS SCOPED DISPLAY ":"PASS SCOPED Golden AP ")+rel+" @"+width+"px: "+(isLesson?"4 tabs / ":"chapter hub / ")+
+      layout.math+" rendered math, "+expectedTry.length+" First Try, "+expectedHelp.length+" D6, "+(displayOnly?"layout/font/Q16; unchanged interactions and SVG not retested":"layout/font/SVG/Q16"));
     }finally{await page.close();}
    }
   }
   assert.equal(checks,lessons.length*widths.length,"Every scoped lesson must pass all viewports");
-  console.log("PASS scoped SGK browser "+lessons.length+" canonical lesson(s) x 390/820/1440; "+
+  console.log("PASS scoped SGK browser ["+engine+"] "+lessons.length+" canonical lesson(s) x 390/820/1440; "+
    "presentation-only; NOT academic review, no global site changes or deploy");
  }finally{await browser.close();}
 }

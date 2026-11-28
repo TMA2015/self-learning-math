@@ -23,6 +23,7 @@ jobs:
       changed_lessons: ${{ steps.impact.outputs.changed_lessons }}
       full_suite: ${{ steps.impact.outputs.full_suite }}
       qa_smoke: ${{ steps.impact.outputs.qa_smoke }}
+      reason: ${{ steps.impact.outputs.reason }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -69,7 +70,7 @@ jobs:
 
       # Historical gate marker: Verify #1039 W1 on exact integration HEAD
       - name: Verify #1039 W1/W2/W3/W4/W5/W6/W7/W8/W9/W10/W11/W12 on exact integration HEAD
-        if: ${{ steps.impact.outputs.reason == 'OWNER_1132_G11_B16_DISPLAY' || steps.impact.outputs.reason == 'OWNER_1132_G11_B07_DISPLAY' || steps.impact.outputs.reason == 'OWNER_1132_EXACT_DISPLAY_DELTA' || steps.impact.outputs.reason == 'OWNER_1039_G12_MATH_HOTFIX' || steps.impact.outputs.reason == 'OWNER_1039_W13_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W12_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W11_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W10_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W9_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W8_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W7_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W6_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W5_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W4_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W3_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W2_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'EXACT_OWNER_1039_G11_W1_HANDOFF_SOURCE_AND_BROWSER' || (steps.impact.outputs.changed_lessons == 'docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md') }}
+        if: ${{ steps.impact.outputs.reason == 'OWNER_1132_G11_B19_DISPLAY' || steps.impact.outputs.reason == 'OWNER_1132_G11_B16_DISPLAY' || steps.impact.outputs.reason == 'OWNER_1132_G11_B07_DISPLAY' || steps.impact.outputs.reason == 'OWNER_1132_EXACT_DISPLAY_DELTA' || steps.impact.outputs.reason == 'OWNER_1039_G12_MATH_HOTFIX' || steps.impact.outputs.reason == 'OWNER_1039_W13_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W12_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W11_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W10_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W9_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W8_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W7_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W6_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W5_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W4_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W3_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'OWNER_1039_W2_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'EXACT_OWNER_1039_G11_W1_HANDOFF_SOURCE_AND_BROWSER' || (steps.impact.outputs.changed_lessons == 'docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md') }}
         env:
           BEFORE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.sha }}
@@ -86,7 +87,11 @@ jobs:
     # even when global workflow changes legitimately trigger full R4.
     if: ${{ (needs.scope.outputs.full_suite == 'false' && needs.scope.outputs.changed_lessons != '') || needs.scope.outputs.qa_smoke == 'true' }}
     runs-on: ubuntu-24.04
-    timeout-minutes: 18
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        engine: ${{ fromJSON(startsWith(needs.scope.outputs.reason, 'OWNER_1132_') && '["chromium","webkit"]' || '["chromium"]') }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -96,14 +101,16 @@ jobs:
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material
           mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
-      - name: Set up real Chromium only for affected lesson(s)
+      - name: Set up real browser for affected lesson(s)
         run: |
           npm install --no-save playwright@1.56.1
-          npx playwright install chromium
+          npx playwright install --with-deps ${{ matrix.engine }}
       - name: AP1–AP5 and Q15/Q16 technical browser checks at 390/820/1440
         env:
           SCOPED_LESSONS: ${{ needs.scope.outputs.changed_lessons || 'docs/thpt-preview/sgk/chuong-v/bai-14.md,docs/thpt-preview/sgk/chuong-v/luyen-tap.md,docs/thpt-preview/sgk/chuong-v/tu-kiem-tra-chuong.md' }}
           SCOPED_BASE_URL: http://127.0.0.1:8765
+          RELEASE_DELTA_REASON: ${{ needs.scope.outputs.reason }}
+          SCOPED_BROWSER_ENGINE: ${{ matrix.engine }}
         run: |
           python -m http.server 8765 --bind 127.0.0.1 --directory site-thpt-preview >/tmp/scoped-golden-http.log 2>&1 &
           python - <<'PY'
@@ -115,4 +122,10 @@ jobs:
               except Exception: time.sleep(.5)
           else: raise SystemExit('Scoped preview HTTP did not start')
           PY
+          if [[ "$SCOPED_BROWSER_ENGINE" == webkit && "$RELEASE_DELTA_REASON" == OWNER_1132_G11_B19_DISPLAY ]]; then
+            export SCOPED_LESSONS="$SCOPED_LESSONS,docs/thpt-preview/sgk/chuong-vi/bai-18.md,docs/thpt-preview/sgk/chuong-vii/bai-21.md,docs/thpt-preview/sgk/chuong-vii/bai-22.md,docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md,docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md"
+          fi
+          if [[ "$RELEASE_DELTA_REASON" == OWNER_1132_*DISPLAY* || "$RELEASE_DELTA_REASON" == OWNER_1132_EXACT_DISPLAY_DELTA ]]; then
+            export SCOPED_DISPLAY_ONLY=true
+          fi
           node scripts/test-thpt-scoped-lesson-browser.cjs

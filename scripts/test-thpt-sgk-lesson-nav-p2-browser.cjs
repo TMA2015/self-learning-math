@@ -23,10 +23,12 @@ const eqHref=(actual,expected)=>assert.equal(new URL(actual).pathname,expected);
   const cases=[];
   for(const grade of [10,11,12])for(let lesson=1;lesson<=ranges[grade].at(-1);lesson++)cases.push({grade,lesson});
   assert.equal(cases.length,79);
+  const selected=(process.env.SGK_NAV_SCOPE||'').split(',').filter(Boolean).map(p=>'/'+p.slice(5,-3)+'/');
+  if(selected.length)assert(selected.every(p=>cases.some(x=>routeOf(x.grade,x.lesson)===p)), 'Invalid scoped nav route');
   for(const viewport of [{width:390,height:844},{width:820,height:1180},{width:1440,height:900}]){
    const page=await browser.newPage({viewport});
    try{
-    const samples=viewport.width===390?cases:cases.filter(x=>[1,2,14,18,ranges[x.grade].at(-1)].includes(x.lesson));
+    const samples=selected.length?cases.filter(x=>selected.includes(routeOf(x.grade,x.lesson))):viewport.width===390?cases:cases.filter(x=>[1,2,14,18,ranges[x.grade].at(-1)].includes(x.lesson));
     for(const {grade,lesson}of samples){
      const path=routeOf(grade,lesson);
      const response=await page.goto(site+path,{waitUntil:"domcontentloaded",timeout:35000});
@@ -65,15 +67,36 @@ const eqHref=(actual,expected)=>assert.equal(new URL(actual).pathname,expected);
        assert(await section.count()>0,"G10 AP1 historical knowledge heading exists B"+lesson);
       }
      }else{
-       // G11 B01 is a frozen, owner-reviewed exception: its canonical source
-       // and first-paint hook intentionally reuse the Golden AP1/G10 styling.
-       // All other G11/G12 lessons must remain free of that class.
-       const shared=await page.locator(".md-content__inner.thpt-g10-knowledge-ap1").count();
-       assert.equal(shared,grade===11&&lesson<=4?1:0,
-         "Only Q18 G11 B01–B04 may reuse Golden AP1 styling across grades");
+       // Owner-approved #1039 W1–W13 upgraded all 52 G11/G12 canonical
+       // lessons to the same Golden first paint. The former B01–B04-only
+       // exception is obsolete; require the approved styling and exact tabs
+       // instead of accepting either class state. Keep all navigation,
+       // overflow, END and THCS checks unchanged.
+       const article=page.locator(".md-content__inner.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint='true']");
+       assert.equal(await article.count(),1,grade+" B"+lesson+" exact approved Golden AP1 first paint");
+       const tabs=article.locator(":scope > .tabbed-set");
+       assert.equal(await tabs.count(),1,grade+" B"+lesson+" one Golden tab set");
+       assert.deepEqual((await tabs.locator(".tabbed-labels > label").allTextContents()).map(x=>x.trim()),
+        ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],grade+" B"+lesson+" exact Golden tabs");
+       assert.equal(await tabs.locator(".tabbed-content > .tabbed-block").count(),4,grade+" B"+lesson+" four Golden panels");
      }
-     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
-     assert(overflow<=20,"Horizontal overflow "+grade+" B"+lesson+" @"+viewport.width+" "+overflow);
+     // First-paint/navigation assertions above still run at DOMContentLoaded.
+     // Measure final learner layout after rendering rather than raw TeX or
+     // fallback fonts; keep the same overflow threshold and log offenders.
+     const initialOverflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
+     await page.waitForLoadState("load",{timeout:60000});
+     await page.waitForFunction(()=>Boolean(window.MathJax?.startup?.promise),null,{timeout:30000});
+     await page.evaluate(async()=>{await window.MathJax.startup.promise;await document.fonts.ready;});
+     await page.waitForFunction(()=>[...document.querySelectorAll("article .arithmatex")].every(el=>el.querySelector("mjx-container")),null,{timeout:30000});
+     const layout=await page.evaluate(()=>{
+      const overflow=document.documentElement.scrollWidth-innerWidth;
+      const offenders=overflow>20?[...document.querySelectorAll("body *")].filter(el=>{
+       const r=el.getBoundingClientRect();return r.width>0&&r.right>innerWidth+20;
+      }).slice(0,12).map(el=>({tag:el.tagName,cls:String(el.className).slice(0,100),right:Math.round(el.getBoundingClientRect().right),text:el.textContent?.slice(0,80)})):[];
+      return {overflow,offenders};
+     });
+     if(initialOverflow>20||layout.overflow>20)console.log("NAV_LAYOUT_DIAGNOSTIC "+JSON.stringify({grade,lesson,width:viewport.width,initialOverflow,...layout}));
+     assert(layout.overflow<=20,"Horizontal overflow "+grade+" B"+lesson+" @"+viewport.width+" "+layout.overflow+" "+JSON.stringify(layout.offenders));
     }
     for(const path of ["/thpt-preview/sgk/lop-11/chuong-ix/tu-kiem-tra-chuong/",
                        "/thpt-preview/sgk/lop-12/chuong-vi/tu-kiem-tra-chuong/"]){

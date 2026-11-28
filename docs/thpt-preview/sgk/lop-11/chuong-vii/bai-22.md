@@ -33,10 +33,12 @@
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B22_SKEW_PERP_RECTANGULAR_BOX_AUTHORING_20261123.svg" alt="Hình hộp chữ nhật AB song song mặt đáy và CC phẩy là cạnh đứng ở phía sau, dời CC phẩy đến AA phẩy để tính góc vuông"><figcaption><strong>Hướng dẫn đọc:</strong> đường xanh \(AB\) và đường cam \(CC'\) không cắt nhau, không song song; đường lục \(AA'\parallel CC'\). Dấu vuông tại \(A\) cho \(AB\perp AA'\), suy \(AB\perp CC'\). Không đo từ phối cảnh.</figcaption></figure>
 
     **Ví dụ ứng dụng SGK — Kim tự tháp Kheops:** Đáy \(ABCD\) là hình vuông cạnh khoảng \(230\) m, các cạnh bên \(SA,SB,SC,SD\) dài khoảng \(219\) m. Muốn tính góc giữa \(SC\) và \(AB\), thay **\(AB\parallel CD\)** để có \((SC,AB)=(SC,CD)=\angle SCD\). Trong tam giác cân \(SCD\), định lí côsin cho
+
     \[
     \cos\angle SCD=\frac{SC^2+CD^2-SD^2}{2SC\cdot CD}
     =\frac{230}{2\cdot219}.
     \]
+
     Vậy góc cần tìm xấp xỉ **\(58{,}3^\circ\)** theo dữ kiện, không phải đo bằng thước trên ảnh.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B22_KHEOPS_ANGLE_AUTHORING_20261123.svg" alt="Hình chóp đáy vuông cạnh 230 mét, cạnh bên 219 mét; cạnh AB song song CD và tam giác cân SCD để tính góc giữa SC và AB"><figcaption><strong>Hướng dẫn đọc:</strong> đường \(AB\) và \(CD\) tô xanh song song; xét tam giác \(SCD\) có \(SC=SD=219\) m, \(CD=230\) m. Góc tại \(C\) là góc không tù giữa \(SC,CD\), bằng góc cần tìm giữa \(SC,AB\).</figcaption></figure>

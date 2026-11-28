@@ -72,7 +72,15 @@ jobs:
             git diff --no-renames --name-only "$BASE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/first-paint-paths.txt"
             node scripts/test-thpt-release-impact.cjs --self-test
             env -u GITHUB_OUTPUT node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/first-paint-paths.txt" > "$RUNNER_TEMP/first-paint-impact.txt"
-            if grep -Fxq "impact=SCOPED_LESSON" "$RUNNER_TEMP/first-paint-impact.txt" && grep -Fxq "changed_lessons=docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md" "$RUNNER_TEMP/first-paint-impact.txt"; then
+            if grep -Fxq "sgk_source_only=true" "$RUNNER_TEMP/first-paint-impact.txt"; then
+              mode=SGK_SOURCE_ONLY
+              lessons="$(sed -n 's/^changed_lessons=//p' "$RUNNER_TEMP/first-paint-impact.txt")"
+              test -n "$lessons"
+              echo "lessons=$lessons" >> "$GITHUB_OUTPUT"
+              if grep -Fxq "scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs" "$RUNNER_TEMP/first-paint-paths.txt"; then
+                echo "nav_changed=true" >> "$GITHUB_OUTPUT"
+              fi
+            elif grep -Fxq "impact=SCOPED_LESSON" "$RUNNER_TEMP/first-paint-impact.txt" && grep -Fxq "changed_lessons=docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md" "$RUNNER_TEMP/first-paint-impact.txt"; then
               BEFORE_SHA="$BASE_SHA" SCOPED_LESSONS="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md" node scripts/test-thpt-scoped-deploy-proof.cjs
               mode=G11_W1
             elif grep -Fxq "impact=SCOPED_LESSON" "$RUNNER_TEMP/first-paint-impact.txt" && grep -Fxq "reason=OWNER_1039_W2_EXACT_SOURCE_AND_BROWSER" "$RUNNER_TEMP/first-paint-impact.txt" && grep -Fxq "changed_lessons=docs/thpt-preview/sgk/lop-11/chuong-ii/bai-5.md,docs/thpt-preview/sgk/lop-11/chuong-ii/bai-6.md,docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md,docs/thpt-preview/sgk/lop-11/chuong-iii/bai-8.md,docs/thpt-preview/sgk/lop-11/chuong-iii/bai-9.md" "$RUNNER_TEMP/first-paint-impact.txt"; then
@@ -136,6 +144,14 @@ jobs:
         run: |
           npm install --no-save playwright@1.56.1
           npx playwright install chromium
+      - name: Install static QA library for source-only lessons
+        if: steps.delta.outputs.mode == 'SGK_SOURCE_ONLY' && steps.delta.outputs.nav_changed != 'true'
+        run: npm install --no-save playwright@1.56.1
+      - name: Install Chromium for changed navigation test only
+        if: steps.delta.outputs.mode == 'SGK_SOURCE_ONLY' && steps.delta.outputs.nav_changed == 'true'
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install chromium
       - name: Install Chromium and Safari-compatible WebKit for full regression
         if: steps.delta.outputs.mode == 'FULL'
         run: |
@@ -145,6 +161,8 @@ jobs:
         env:
           SGK_FIRST_PAINT_BASE_URL: http://127.0.0.1:8765
           SGK_FIRST_PAINT_MODE: ${{ steps.delta.outputs.mode }}
+          SCOPED_LESSONS: ${{ steps.delta.outputs.lessons }}
+          SGK_NAV_CHANGED: ${{ steps.delta.outputs.nav_changed }}
         run: |
           python -m http.server 8765 --bind 127.0.0.1 --directory site-thpt-preview >/tmp/sgk-first-paint-http.log 2>&1 &
           python - <<'PY'
@@ -157,7 +175,9 @@ jobs:
           else: raise SystemExit('SGK Golden server unavailable')
           PY
           node scripts/test-sgk-golden-first-paint.cjs
-          if [[ "$SGK_FIRST_PAINT_MODE" == "FULL" ]]; then
+          if [[ "$SGK_FIRST_PAINT_MODE" == "SGK_SOURCE_ONLY" && "$SGK_NAV_CHANGED" == "true" ]]; then
+            SGK_NAV_SCOPE="$SCOPED_LESSONS" node scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
+          elif [[ "$SGK_FIRST_PAINT_MODE" == "FULL" ]]; then
             node scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
             node scripts/test-thpt-academic-presentation-browser.cjs
           fi
