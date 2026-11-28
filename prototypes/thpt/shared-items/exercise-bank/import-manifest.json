@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "TARGETED_ACCEPTANCE_CD17_19_OWN_PRACTICE_MATH_PED_SOURCE_RESOLVED",
+  "academic_audit": "CHECKLIST06_SOURCE_EVIDENCE_SCOPE_RECONCILED_NOT_FULL_ACCEPTANCE",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "685f88f4ed2d2af54b3db3f3541b13b579c6ebfc",
+    "as_of_commit": "3b46c3077a334b447a82bc5401249757591e11a6",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Close actual outstanding academic evidence against owner-approved sources: use #1109 CP25 all 22 source-ready and #974 exact historical receipts; reuse verified #1090 delta and authoring scope instead of chapter order. Reconcile remaining material task/assessment-format conversions and any actual X-G.5/coverage defects; explicitly close each applicable Q18 source/Delta scope and package V2/ready/REGISTER when evidence sufficient. No repeat of 66 own practice/replay CĐ17–19 or closed 18 placement conflicts.",
-    "status": "TARGETED_ACCEPTANCE_CD17_19_OWN_PRACTICE_MATH_PED_SOURCE_RESOLVED",
+    "next": "Item 07: close affected conversion fields (542 options/interaction only, 697 other-field changes; review only actual changed fields, retain earlier CP conversion/Delta evidence where exact), close named material source/PED scopes using proofs; no broad grade/chapter re-audit. Item 08 separately addresses Q02/05/08/14/15/17 and X-G.5/6 real gaps. No RELEASE execution.",
+    "status": "CHECKLIST06_SOURCE_EVIDENCE_SCOPE_RECONCILED",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,121 +112,709 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "acceptance_material_delta_topic17_19_20261128",
-    "acceptance_material_delta_topic17_19_20261128": {
-      "baseline": "e3c0bbbfaeb55472b3881d8d4db1ff1b59aa3553",
-      "verified_head": "685f88f4ed2d2af54b3db3f3541b13b579c6ebfc",
-      "inventory": {
-        "interactive_unique": 2214,
-        "written_unique": 325,
-        "total_unique": 2539,
-        "placement_rows": 4285,
-        "evidence": "No ID or placement changes since previous exact reconciliation."
-      },
+    "current_checkpoint_key": "checklist06_source_evidence_scope_20261128",
+    "checklist06_source_evidence_scope_20261128": {
+      "scope": "Owner checklist #1090 item 06 only: source/receipt applicability and exact delta classification, not acceptance or new academic verdict.",
+      "candidate_head": "3b46c3077a334b447a82bc5401249757591e11a6",
+      "pre_conversion_reference": "888c0b057f8b27d9fa8b65bd132cd6e5ff04af3a",
+      "standard_candidate_blob": "dec6908a3488a5013849e9b768dac55911552bed",
       "source_authority": {
-        "owner_closeout": "https://github.com/TMA2015/self-learning-math/issues/974#issuecomment-7062518670",
-        "later_source_delta": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7188857167",
-        "note": "Original source snapshot owner accepted AUTHOR_SELF_VERIFIED; later #1109 22/22 source-ready for Work/notation, not migrated bank. Historical S1 receipt remains valid within demonstrated skill scope; no fresh PDF scan or independent verdict. CĐ18 zero vector authorized P02/T01/T04 and spatial perpendicular W05 checked current candidate source provenance; P02/T01/T04 correct convention and no unique angle. W05 current source points to revised Written canonical and previous b748a7... approved correction; no new W05 body audit."
-      },
-      "scoped_delta": {
-        "reviewed": 66,
-        "changed": 3,
-        "retained": 63,
-        "scope": "Only original 66 topic-owned Practice records with 66 same-ID replay placements explicitly pending in CĐ17–19. Checked source stems, math and conditions, answer choices, hints, remedial text, skill and optional placement; no general chapter sweep. Inherited S1 for unchanged scope and math derivations for material variants. No blanket Q18 or assertion of current whole-bank notation/render PASS.",
-        "records": [
+        "topic_owner_closeout": "https://github.com/TMA2015/self-learning-math/issues/974#issuecomment-7062518670",
+        "topic_later_closure": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7188857167",
+        "topics": [
           {
-            "topic": 17,
-            "count": 12,
-            "item_blob": "521aa5f25b45da9a0265b29a3dbe3171fcb6ff32",
-            "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
-            "receipt": "bb941ea3563034e0aa779c69118f8ac02355a21e",
-            "later_source": "03b6b27adbeaf854d3db1d8fc9e830a0294a08aa",
-            "later_receipt": "87f927cbcbd9ff4f26ba2a3b2c411a9a9770f82e",
-            "placement_blob": "b59e7c957aa53c12d331d4d3888597300a03a978",
-            "material": [
-              "P02 AH given8→recover8 from10/6 + unique nearest proof",
-              "P03 generic parallel→box7",
-              "P04 parallel6→oblique prism10sin30=5",
-              "P05 cube7→box3 + parallel contrast",
-              "P06 base6/slant5→12/10",
-              "P09 cube125→mixed-unit box3000cm³=3dm³",
-              "P10 frustum6/3/h4→10/4/h6 plus proof",
-              "P11 prism168→capacity180L",
-              "P12 base8/slant5→base6/lateral5sqrt2"
-            ],
-            "math": "P01 AX13 distance5; P02 AH8 uniqueness by Pythagoras; P03 7 perpendicular vs sqrt149; P04 5; P05 BC3 common perp, opposite edge parallel; P06 h8; P07 72m³; P08 48cm³; P09 3000cm³=3dm³; P10 312, homothetic heights10/4; P11 .24m³ ×.75=180L; P12 h4sqrt2,V48sqrt2. Choices/key/hints and D6 valid. Retained 12."
+            "topic": "CD01",
+            "pr": 817,
+            "source_blob": "e93f1253ac0acb3e19547665a67d64344527e601",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7180184596"
           },
           {
-            "topic": 18,
-            "count": 40,
-            "old_blob": "be27a158dadb9bd0bbcfd6066584aa97d3e1c3b9",
-            "item_blob": "20970197a3094f5f1aa92d1c02da16b0cb3ae841",
-            "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-            "receipt": "3a0cbbfb74252787f08c9504de9018c7e58bf8a1",
-            "later_source": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
-            "later_receipt": "1d575aebabb51597f0c351265a3914249dbd28ef",
-            "placement_blob": "5b42b4007549b0f74f3d413e66b010d1304cbd66",
-            "material": [
-              "P01 straight segment→3D displacement and zero",
-              "P06 one force→two signed works",
-              "P07 coordinate membership expanded",
-              "P12 nonparallel check→parameter",
-              "P13 centroid→inverse and midpoint",
-              "P14 acute→obtuse",
-              "P16 fixed time→ground hit and domain",
-              "P17 nonparallel→degenerate+valid normal",
-              "P19 plane through new triple + uniqueness",
-              "P21 two perpendicular planes→coincidence/parallel/perpendicular",
-              "P22 scale-invariance added",
-              "P28 two parallel-direction lines→three",
-              "P29 fixed skew→parameter",
-              "P30 single intersection→three relations",
-              "P31 right angle→vector135 vs line45",
-              "P32 line parallel→nonzero inclination",
-              "P33 perpendicular→acute, exact cos and degree",
-              "P34 single line→3 cases",
-              "P37 sphere existence by parameter",
-              "P38 extra outside point",
-              "P39 diameter new endpoints",
-              "P40 section→three positions",
-              "P23 optional integrated changed sphere/plane parameters"
-            ],
-            "math": "P01–16:6/10/0, opposite,zero,10 opposite,6,18/−12/6J,A+B Oyz B Oz,(-2;3;1),+4 north,(3;0;−4) opposite,(−5;6;7),m0 same direction,C(3;4;4)/M(3;1;1),cos−8/9,7,ground t4/(6;7;0). P17–22:zero invalid; normal(2;−1;2),x+2y−z−3=0,plane2x−4y−z−1=0 all 3 points and nonzero cross product,x+2z=0,m0 coincide m3 parallel R perpendicular,d1 scale invariant. P24–35: parametric x−1 y2+3t z−2t; x1 y−1+2t z4t; x2 with (y+1)/3=(z−5)/(−1); P not on line; d1=d2 and parallel d3; m0 intersects(2;2;0) else skew; P intersection(3;0;5), Q contains, R parallel; 135/45; sin and cos 1/3; cos sqrt6/3 angle35.26°; parallel/contained/perpendicular; sin3/5 length10. P36–40: sphere center(−1;2;0) R3; k4 sphereR1/k5 point/k6 none; P on Q inside T outside; center(1;3;1),R²14; section r4/point/no intersection. P23 optional d3 r4. P19 improved proof-bearing choices, P33 complete requested actual angle. 38 retained."
+            "topic": "CD02",
+            "pr": 818,
+            "source_blob": "88446b124096057f98f2742c78d4b93ca73d8883",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7181441300"
           },
           {
-            "topic": 19,
-            "count": 14,
-            "old_blob": "3744f680748df5cd8c5bfd85d21989ae5d8484f5",
-            "item_blob": "466fc60491bb779b27484166e9da13b121f136c7",
-            "source_blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
-            "receipt": "019254781e99ba857019ee662ab49056d298d18e",
-            "later_source": "ba549932e8a56bb46ec2951171e999cc70d6f34f",
-            "later_receipt": "3d83c951f5e4df94162271b107b079451f6cc544",
-            "placement_blob": "cbfc95709e24b979ff14d9d420415efd339fc71d",
-            "material": [
-              "P01 disjoint10→overlap8",
-              "P02 unconstrained24→restricted20",
-              "P03 no-repeat48→also repeat100",
-              "P05 permutations720→nonadjacent480",
-              "P08 exact2/2→at least2 male and1 female250",
-              "P11 optional Laurent→polynomial and Laurent combined optional",
-              "P12 sum81→even41/odd40"
-            ],
-            "math": "P01–08 8,20,100/48,52,480,210,35,250; P14 nCr84 nPr504 and ×3!; P09 coefficients1/8/24/32/16; P10 −810; P13 model2208.1616064 vs2200 and lower estimate; P11 constant16 and24, both required only if learner selects optional task (both placements optional true); P12 E+O81 E−O1 gives41/40. 13 retained."
+            "topic": "CD03",
+            "pr": 888,
+            "source_blob": "bd3b88b635b203872a9afa5893cc1e3af3e7d7c6",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7166191632"
+          },
+          {
+            "topic": "CD04",
+            "pr": 890,
+            "source_blob": "71853ed34cb5cb21e312a0a9f9c713b76e5219b4",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7181539867"
+          },
+          {
+            "topic": "CD05",
+            "pr": 889,
+            "source_blob": "277e8738c6cb7cce7f7f11c666382446f69be8e9",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7166191632"
+          },
+          {
+            "topic": "CD06",
+            "pr": 891,
+            "source_blob": "621afad176e6944f832746b231cbd9265e96bce2",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7166191632"
+          },
+          {
+            "topic": "CD07",
+            "pr": 828,
+            "source_blob": "3f81555846b55690b1a19fed6b69d48950a77309",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7182666531"
+          },
+          {
+            "topic": "CD08",
+            "pr": 829,
+            "source_blob": "64dc1d59c48e1f666c0f6b3f33155175724b078b",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7167140023"
+          },
+          {
+            "topic": "CD09",
+            "pr": 831,
+            "source_blob": "9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7168173979"
+          },
+          {
+            "topic": "CD10",
+            "pr": 886,
+            "source_blob": "952ce21e99953348068b6499449dae75d4490d10",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7168173979"
+          },
+          {
+            "topic": "CD11",
+            "pr": 887,
+            "source_blob": "64688cf81991a432264c06a2ff0a908371ca1f21",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7188578282"
+          },
+          {
+            "topic": "CD12",
+            "pr": 840,
+            "source_blob": "6fd684807c3cf16489ed91e4a573edc3d1b2a6bc",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7182724923"
+          },
+          {
+            "topic": "CD13",
+            "pr": 841,
+            "source_blob": "7e54d34b9eee75ab4b8f8e4f53ab40298e701493",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7182892932"
+          },
+          {
+            "topic": "CD14",
+            "pr": 843,
+            "source_blob": "db502fc8ebc435b3d25b6cd5a813b6c0e156d421",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7182981368"
+          },
+          {
+            "topic": "CD15",
+            "pr": 846,
+            "source_blob": "11d2106a7ed77b801c86420503dca929544dc076",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7185417116"
+          },
+          {
+            "topic": "CD16",
+            "pr": 848,
+            "source_blob": "3e6f97091a814d7cee7096fd92cd448dd8900435",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7185527368"
+          },
+          {
+            "topic": "CD17",
+            "pr": 853,
+            "source_blob": "03b6b27adbeaf854d3db1d8fc9e830a0294a08aa",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7185685984"
+          },
+          {
+            "topic": "CD18",
+            "pr": 855,
+            "source_blob": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7188891409"
+          },
+          {
+            "topic": "CD19",
+            "pr": 897,
+            "source_blob": "ba549932e8a56bb46ec2951171e999cc70d6f34f",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7187772385"
+          },
+          {
+            "topic": "CD20",
+            "pr": 884,
+            "source_blob": "d6c34cdf81594ec9d3ce3275ac3d736444aa710c",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7168777917"
+          },
+          {
+            "topic": "CD21",
+            "pr": 885,
+            "source_blob": "755472b2c90471f33ebcbe3ce3a55372348546f3",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7168777917"
+          },
+          {
+            "topic": "CD22",
+            "pr": 812,
+            "source_blob": "f1a059fc6366d2e4bb044edd696154a0b6799d4d",
+            "receipt_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7187964740"
           }
         ],
-        "verification": "All 66 one correct ID, four distinct choices, hints/remediation, correct difficulty band, original nonedited metadata preserved. Each exactly one Practice and one same-ID public replay, no auto-grade, no new ID or placement. Material changes not falsely labeled source-equivalent. Author math/PED/source-scope review complete for 66; actual full Q18 bank and applicable remaining learner notation/coverage are still pending."
+        "sgk_packets": [
+          {
+            "scope": "G10-CHI",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G10-SGK-CHI.md",
+            "manifest_blob": "00e0273f7e3f50a725ee69bdf6aa52287e5e48cc"
+          },
+          {
+            "scope": "G10-CHII",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G10-SGK-CHII.md",
+            "manifest_blob": "47051e9d6a8cac23acee826688336d7fbb1cb8f0"
+          },
+          {
+            "scope": "G10-CHIII",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G10-SGK-CHIII.md",
+            "manifest_blob": "ae31884e93048281bdb1e481b2d7c8306247086f"
+          },
+          {
+            "scope": "G10-CHIV-B07-B08",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G10-SGK-CHIV.md",
+            "manifest_blob": "bd8874a0509cd8628a9655d60650f71b517c7ea8"
+          },
+          {
+            "scope": "G10-CHIV-B09-B11",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G10-SGK-CHIV-B09-B11.md",
+            "manifest_blob": "566dcb9e2f199449424bc735fc30d7923ab0777e"
+          },
+          {
+            "scope": "G10-CHV",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G10-SGK-CHV.md",
+            "manifest_blob": "886cb32ffce654100fc81b53d8f8d28c23926c7a"
+          },
+          {
+            "scope": "G10-CHVI",
+            "manifest_path": "prototypes/thpt/release-queue/inventory/G10-SGK-CHVI.md",
+            "manifest_blob": "7cf7508c6b1a264a696db258e2092d7f8d1b79be"
+          },
+          {
+            "scope": "G10-CHVII",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G10-SGK-CHVII.md",
+            "manifest_blob": "9b26cb0ab6af7d0d32404c8f03eb6d9514272dbd"
+          },
+          {
+            "scope": "G10-CHVIII",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G10-SGK-CHVIII.md",
+            "manifest_blob": "273e89287a7eb5ee05b96eec954d79ba8096f139"
+          },
+          {
+            "scope": "G10-CHIX",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G10-SGK-CHIX.md",
+            "manifest_blob": "d4bbb046cccd1702120588509973e4cbfddd4fc4"
+          },
+          {
+            "scope": "G11-CHI",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G11-SGK-CHI-B01-B04.md",
+            "manifest_blob": "2ae1a0f4c4f9ae9fc2fb5fd00cdc4bd69b2aec01"
+          },
+          {
+            "scope": "G11-CHII",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G11-SGK-CHII-B05-B07.md",
+            "manifest_blob": "b31f00f958767df4ee806af1c18255a9d55b7b23"
+          },
+          {
+            "scope": "G11-CHIII",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G11-SGK-CHIII-B08-B09.md",
+            "manifest_blob": "3c381aa63cbc689e3963977872311f4371abefec"
+          },
+          {
+            "scope": "G11-CHIV",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G11-SGK-CHIV-B10-B14-R01.md",
+            "manifest_blob": "4b5ee6ff1e1116ea87ef7876f5b0d4e114c7052e"
+          },
+          {
+            "scope": "G11-CHV",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G11-SGK-CHV-B15-B17-R02.md",
+            "manifest_blob": "f40958b1b0c40c0beef52378d9cddfe347ff0b0f"
+          },
+          {
+            "scope": "G11-CHVI",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G11-SGK-CHVI-B18-B21-R01.md",
+            "manifest_blob": "1cddc4ad196e6be0f112773c596addf6b874fbcc"
+          },
+          {
+            "scope": "G11-CHVII",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G11-SGK-CHVII-B22-B27-R01.md",
+            "manifest_blob": "a0dd840bfdbcb081a0dfccd1b07c25c1fb372e3c"
+          },
+          {
+            "scope": "G11-CHVIII",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G11-SGK-CHVIII-B28-B30-R00.md",
+            "manifest_blob": "18333e1c7edb83ac7c486fd8e50599e2d58c77ba"
+          },
+          {
+            "scope": "G11-CHIX",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G11-SGK-CHIX-B31-B33-R00.md",
+            "manifest_blob": "90e2c497a27c3819d7bd06874a3f52441ecc0c87"
+          },
+          {
+            "scope": "G11-SUPPLEMENT",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G11-SGK-SUPPLEMENT-P99-P109-R00.md",
+            "manifest_blob": "29fe5ae2b13cd86d21ec826ab51fbd532921a306"
+          },
+          {
+            "scope": "G12-CHI",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G12-SGK-CHI-B01-B05-R00.md",
+            "manifest_blob": "83b8ff84e5896a71ced9833f446fc038f1d4a7fa"
+          },
+          {
+            "scope": "G12-CHII",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G12-SGK-CHII-B06-B08-R00.md",
+            "manifest_blob": "7d26110c224a79e51fddd9c961c80f7ca8139b9e"
+          },
+          {
+            "scope": "G12-CHIII",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G12-SGK-CHIII-B09-B10-R00.md",
+            "manifest_blob": "7438adb07f429229e54f18fb7bce081b929ffcf9"
+          },
+          {
+            "scope": "G12-CHIV",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G12-SGK-CHIV-B11-B13-R00.md",
+            "manifest_blob": "991459823a8ecd0822c8e5bbe8b1608cd842d755"
+          },
+          {
+            "scope": "G12-CHV",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G12-SGK-CHV-B14-B17-R01.md",
+            "manifest_blob": "6f33dbe99699cde71893e1aab1418ffc1a55606e"
+          },
+          {
+            "scope": "G12-CHVI",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G12-SGK-CHVI-B18-B19-END-R00.md",
+            "manifest_blob": "35980562f448094bab053fa22d6dc899968cff3e"
+          },
+          {
+            "scope": "G12-EXPERIENCE",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G12-SGK-EXP01-EXP02-R01.md",
+            "manifest_blob": "c34312e05b19fb0105dc5bb2e505743696631a7d"
+          },
+          {
+            "scope": "G12-YEAREND",
+            "manifest_path": "prototypes/thpt/release-queue/ready/G12-SGK-YEAREND-REVIEW-R00.md",
+            "manifest_blob": "346778c6787d867c649c525ed11ba45fde1c2f6b"
+          }
+        ],
+        "source_projection_and_field_evidence": {
+          "blob": "d93848b726c12dd5ae608714cfd16e0e108c9b34",
+          "keys": "source_delta_reconciliation_cp65–104; formative_scoped_audit_cp48–64; exercise_completion_cp121–136; knowledge_first_try_inventory",
+          "note": "Use exact source or public projection and source/receipt scope already recorded; source readiness does not certify later choice conversion. G10 IV split two packets; G11/G12 supplement receipts separate. KFT source is its individual knowledge blob, not blanket chapter receipt. G12 CP25 overrides old B06-P02 and B15-W05 only."
+        },
+        "receipt_corrections": [
+          {
+            "scope": "G11-CHI B01/B02 historical PED",
+            "source_blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+            "receipt_blob": "4a7831cea1738a0d57f3e60bf6791f995aa693d8",
+            "disposition": "42 current chapter formative records bind this exact source; historical R03 B01/B02 PED PASS, R02 B03/B04 PED PASS, R01 Academic PASS. No original upload byte-SHA claim; no repeat historic pending PED."
+          },
+          {
+            "scope": "G11 supplement EXP/YEAR",
+            "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+            "receipt_blob": "3183783afc69d263328a55f937ba22e6deb1f34d",
+            "disposition": "52 current interactive records bind exact combined source; independent source Academic/PED PASS from verified component blobs, not new bank verdict; historical comment saying source not independently reviewed superseded."
+          }
+        ]
       },
-      "protected_scope": "No source historical snapshot, Written body, placement, schema, runtime, private RD1, Final Submit, Mastery, Firebase, LIVE, merge/deploy."
+      "inventory": {
+        "interactive": 2214,
+        "written": 325,
+        "total": 2539,
+        "placements": 4285,
+        "scoped_interactive_review_evidence": 975,
+        "remaining_field_acceptance_scope": 1239,
+        "options_interaction_only": 542,
+        "other_field_delta": 697
+      },
+      "field_diff": {
+        "fields": [
+          "stem",
+          "answer_key",
+          "worked_solution",
+          "hints",
+          "remediation",
+          "rubric",
+          "skill_ids",
+          "options",
+          "interaction"
+        ],
+        "method": "Join by exact item_id; JSON.stringify each listed field; missing prior record NEW; options/interaction-only iff changed field set exactly those two. All 29 shards compared, no removed IDs; 4 new CD15 items already reviewed. Exact blob pairs below, source authority separate. For item-level retrieval filter only changed fields at exact blob pair; exclude previously reviewed IDs; no whole-grade sweep. Count is review scope not number of defects, not required re-review of unchanged stem/key/solution.",
+        "shards": [
+          {
+            "shard": "cd01",
+            "count": 6,
+            "options_only": 0,
+            "baseline_blob": "5b437473d3a63fa6cc29c6e28c2a97b22333be0d",
+            "candidate_blob": "9a0a0888ccecfa0116edfba5ef9d9cb5914d4ce4",
+            "reviewed": 0,
+            "remaining": 6,
+            "remaining_options_only": 0
+          },
+          {
+            "shard": "cd02",
+            "count": 18,
+            "options_only": 12,
+            "baseline_blob": "57f00380c656270e2c26a78d6a5379fa8baf29f1",
+            "candidate_blob": "6fbb61d6f7e82c0d52ddd6ad33b194bc4e7dc0f3",
+            "reviewed": 0,
+            "remaining": 18,
+            "remaining_options_only": 12
+          },
+          {
+            "shard": "cd03",
+            "count": 21,
+            "options_only": 3,
+            "baseline_blob": "9dfa8115c4a7fad0c33f3efd75585b3bcc861552",
+            "candidate_blob": "e7e68e4d37281f045e23fad6197a014727f52eab",
+            "reviewed": 0,
+            "remaining": 21,
+            "remaining_options_only": 3
+          },
+          {
+            "shard": "cd04",
+            "count": 22,
+            "options_only": 15,
+            "baseline_blob": "e0a344314f1788724c9f708af967780bbb12e1d0",
+            "candidate_blob": "6cd1692883c0659272de0be2880120058fc7ac27",
+            "reviewed": 0,
+            "remaining": 22,
+            "remaining_options_only": 15
+          },
+          {
+            "shard": "cd05",
+            "count": 34,
+            "options_only": 7,
+            "baseline_blob": "34a877a40a387c8f5688e14b1f31c6b6d2edffd5",
+            "candidate_blob": "73c56bf1c64ffbd08d56862402880e2b0c446952",
+            "reviewed": 0,
+            "remaining": 34,
+            "remaining_options_only": 7
+          },
+          {
+            "shard": "cd06",
+            "count": 16,
+            "options_only": 8,
+            "baseline_blob": "841ab628a55991473cbc82d9005f0b30f0be2323",
+            "candidate_blob": "0ce718aa4da35eb8e8956be5c15a8a5c7259ce70",
+            "reviewed": 0,
+            "remaining": 16,
+            "remaining_options_only": 8
+          },
+          {
+            "shard": "cd07",
+            "count": 18,
+            "options_only": 10,
+            "baseline_blob": "0703e62ff5cb6aa28a388836591a0da71197cf18",
+            "candidate_blob": "17267b26edf8fd1335ae70a25dd22af00cdff821",
+            "reviewed": 0,
+            "remaining": 18,
+            "remaining_options_only": 10
+          },
+          {
+            "shard": "cd08",
+            "count": 18,
+            "options_only": 9,
+            "baseline_blob": "10d082644f841f9bbcafa56f8b891133b0280ec7",
+            "candidate_blob": "c897e0a2a164ef6894f477d2c376bec16fd0f7f3",
+            "reviewed": 0,
+            "remaining": 18,
+            "remaining_options_only": 9
+          },
+          {
+            "shard": "cd09",
+            "count": 32,
+            "options_only": 25,
+            "baseline_blob": "f738076ec307672f36ca2413f61970fb6c959713",
+            "candidate_blob": "5589ecbc51e6ea3e5821e336ac9bfee7cdb3b95a",
+            "reviewed": 0,
+            "remaining": 32,
+            "remaining_options_only": 25
+          },
+          {
+            "shard": "cd10",
+            "count": 36,
+            "options_only": 28,
+            "baseline_blob": "7064ee56cc2c23fdc8f226ecea7ee2e7f05e460d",
+            "candidate_blob": "b5b2e5fde81d7abdca47cf9c7410ddb6be41d380",
+            "reviewed": 0,
+            "remaining": 36,
+            "remaining_options_only": 28
+          },
+          {
+            "shard": "cd11",
+            "count": 22,
+            "options_only": 21,
+            "baseline_blob": "1fec0a72639790a280bad9b55a9c5582585fa17b",
+            "candidate_blob": "bca96fca75014c0343af1ffce911eade3ace8976",
+            "reviewed": 0,
+            "remaining": 22,
+            "remaining_options_only": 21
+          },
+          {
+            "shard": "cd12",
+            "count": 12,
+            "options_only": 10,
+            "baseline_blob": "d3be4a9148a2077c6551cb2be0e0f0e2edb1ae6d",
+            "candidate_blob": "fcc5cc0e29ee1ebbc912d685385496dcab79e7f8",
+            "reviewed": 0,
+            "remaining": 12,
+            "remaining_options_only": 10
+          },
+          {
+            "shard": "cd13",
+            "count": 16,
+            "options_only": 14,
+            "baseline_blob": "38157db863420c22f38e562c6f8c8493c066f550",
+            "candidate_blob": "491261a785cc8ae4d5363ca5ce528559614d0671",
+            "reviewed": 0,
+            "remaining": 16,
+            "remaining_options_only": 14
+          },
+          {
+            "shard": "cd14",
+            "count": 23,
+            "options_only": 21,
+            "baseline_blob": "fb0793452ea0c6b1e62e1dbcfa30a8e2bbb9e51d",
+            "candidate_blob": "661ae7c2b71aea2c36075ab304722bf6c960321e",
+            "reviewed": 0,
+            "remaining": 23,
+            "remaining_options_only": 21
+          },
+          {
+            "shard": "cd15",
+            "count": 26,
+            "options_only": 17,
+            "baseline_blob": "6f89aa2d3f63956d94d873a01b9a360a75c26a76",
+            "candidate_blob": "43bb6a7d54d7ac1cfd85d89d6174d0765023e059",
+            "reviewed": 4,
+            "remaining": 22,
+            "remaining_options_only": 17
+          },
+          {
+            "shard": "cd16",
+            "count": 21,
+            "options_only": 14,
+            "baseline_blob": "aaee09312f8b6383e3015cfc475a7949a5ada816",
+            "candidate_blob": "c99d21b72737c67304c2224950ce12cc6ad95fd3",
+            "reviewed": 0,
+            "remaining": 21,
+            "remaining_options_only": 14
+          },
+          {
+            "shard": "topic-knowledge-first-try",
+            "count": 393,
+            "options_only": 0,
+            "baseline_blob": "7a725f6d10aa9848d1bc59981369bc4b5be20ff1",
+            "candidate_blob": "20720233afc83051450c49c67350ea50e92fc4b9",
+            "reviewed": 0,
+            "remaining": 393,
+            "remaining_options_only": 0
+          },
+          {
+            "shard": "g10-chvii",
+            "count": 57,
+            "options_only": 30,
+            "baseline_blob": "df211314d06f0f5b45ae1c2de0abda62c1920365",
+            "candidate_blob": "3b9b74aa3a241f749db8ed5e9e25203a3c899fa0",
+            "reviewed": 0,
+            "remaining": 57,
+            "remaining_options_only": 30
+          },
+          {
+            "shard": "g10-chviii",
+            "count": 37,
+            "options_only": 25,
+            "baseline_blob": "2b413a699023a55571eac4644928a7a51a45612b",
+            "candidate_blob": "a36d9522b47111e0d7d02746cb23fe7c7474a207",
+            "reviewed": 0,
+            "remaining": 37,
+            "remaining_options_only": 25
+          },
+          {
+            "shard": "g10-chix",
+            "count": 24,
+            "options_only": 9,
+            "baseline_blob": "f391c35b6206816c16f4eeb45f9f1f58e45e2d",
+            "candidate_blob": "d70083e80e8f321252e233a2525cb50ebb3c0109",
+            "reviewed": 9,
+            "remaining": 15,
+            "remaining_options_only": 0
+          },
+          {
+            "shard": "g12-chi",
+            "count": 69,
+            "options_only": 49,
+            "baseline_blob": "ddc073ba4776d82da767b44db801e918b7d86b7d",
+            "candidate_blob": "6bc2444612701a64726efda6c585c40d54970a06",
+            "reviewed": 0,
+            "remaining": 69,
+            "remaining_options_only": 49
+          },
+          {
+            "shard": "g12-chii",
+            "count": 51,
+            "options_only": 48,
+            "baseline_blob": "16eeae23a2927f988b476d4b724f73f878ebf077",
+            "candidate_blob": "5ab519cf5c87cf19c4a565abb9da0b419fd88d2a",
+            "reviewed": 0,
+            "remaining": 51,
+            "remaining_options_only": 48
+          },
+          {
+            "shard": "g12-chiii",
+            "count": 39,
+            "options_only": 35,
+            "baseline_blob": "cba0277dd31610a747dcc3b86d120c998103ce65",
+            "candidate_blob": "fac49e7dd5eeac3ad0859196b7635007b92cf98d",
+            "reviewed": 0,
+            "remaining": 39,
+            "remaining_options_only": 35
+          },
+          {
+            "shard": "g12-chiv",
+            "count": 72,
+            "options_only": 64,
+            "baseline_blob": "cb22f2ab6c3879cc5f8f0aa10419f1cbd5de86d6",
+            "candidate_blob": "c1747185c30aa1ac5f5d0388ce831aef99b61cf4",
+            "reviewed": 0,
+            "remaining": 72,
+            "remaining_options_only": 64
+          },
+          {
+            "shard": "g12-chv",
+            "count": 78,
+            "options_only": 71,
+            "baseline_blob": "bbed415b83ad8dd25e7152086129630d27a9f02d",
+            "candidate_blob": "acfa643d61349973aadd95627689896c0dc1872d",
+            "reviewed": 0,
+            "remaining": 78,
+            "remaining_options_only": 71
+          },
+          {
+            "shard": "g12-chvi",
+            "count": 46,
+            "options_only": 6,
+            "baseline_blob": "0a16c169c3d28a4e1b9ef55de3be2361d8ae29de",
+            "candidate_blob": "6a50b5d534a843907b0614d49572824a2a831f1a",
+            "reviewed": 0,
+            "remaining": 46,
+            "remaining_options_only": 6
+          },
+          {
+            "shard": "g12-experience",
+            "count": 30,
+            "options_only": 0,
+            "baseline_blob": "cb6791249113af33d7f5d705858f8b85edfae5aa",
+            "candidate_blob": "705325f6c6e46d81186f075d48a51e0534d96f5d",
+            "reviewed": 0,
+            "remaining": 30,
+            "remaining_options_only": 0
+          },
+          {
+            "shard": "g12-yearend",
+            "count": 15,
+            "options_only": 0,
+            "baseline_blob": "03aed76449b3c0187c5fdf6e9ad08139f5f13261",
+            "candidate_blob": "41bf1330913281fb29c1f4040a77a05a95e3a496",
+            "reviewed": 0,
+            "remaining": 15,
+            "remaining_options_only": 0
+          },
+          {
+            "shard": "g12-chi-public-selfcheck",
+            "count": 10,
+            "options_only": 0,
+            "baseline_blob": "5cab474a643cb275ed080564e73daf6b628dcd0e",
+            "candidate_blob": "5d72033205715266fddb1f3a530b4ab274a8c532",
+            "reviewed": 10,
+            "remaining": 0,
+            "remaining_options_only": 0
+          }
+        ],
+        "exclude_already_reviewed": {
+          "cd15": "THPT-TOP15-P23–P26, Delta06",
+          "g10_chix": [
+            "THPT-G10-B26-C01",
+            "THPT-G10-B26-P01",
+            "THPT-G10-B26-P04",
+            "THPT-G10-B26-P05",
+            "THPT-G10-B27-C01",
+            "THPT-G10-B27-P01",
+            "THPT-G10-B27-P02",
+            "THPT-G10-B27-P03",
+            "THPT-G10-B27-P05"
+          ],
+          "g12_chi_public_selfcheck": "all 10, Delta14"
+        }
+      },
+      "scoped_review_evidence": {
+        "count": 975,
+        "partition": [
+          [
+            "G10 chapter I–VI including dedicated selfcheck",
+            336,
+            "Delta09–14,20–21"
+          ],
+          [
+            "G10 chapter VII–IX dedicated selfcheck",
+            42,
+            "Delta08–10"
+          ],
+          [
+            "G10 ChIX CĐ20 reuse",
+            9,
+            "Delta15"
+          ],
+          [
+            "G11 chapters including dedicated and supplement",
+            476,
+            "Delta14–19"
+          ],
+          [
+            "G12 dedicated selfcheck",
+            10,
+            "Delta14"
+          ],
+          [
+            "CĐ15 P23–P26",
+            4,
+            "Delta06"
+          ],
+          [
+            "CĐ17–19 own Practice/replay",
+            66,
+            "7235884034"
+          ],
+          [
+            "CĐ20 own Practice/replay",
+            17,
+            "Delta15"
+          ],
+          [
+            "CĐ21 own",
+            8,
+            "Delta08"
+          ],
+          [
+            "CĐ22 own",
+            7,
+            "Delta08"
+          ]
+        ],
+        "note": "Reuse actual reviewed math/choice/source scope; not blanket Q18. Material historical task variants explicitly identified in Delta15/16/17/18/20/21 (named source_delta.material lists), CĐ21 P06 both projections, CĐ18/19 current exact scoped closure, Written wave07/08. Use prior proof and exact affected source/placement to close applicable PED/source acceptance; do not re-solve already verified records. 325 Written source reviewed; 40 flagged content deltas closed, no automatic blanket Q18. Keep exact active source references and 35 cutover bindings."
+      },
+      "remaining": "Item 07: close affected conversion fields (542 options/interaction only, 697 other-field changes; review only actual changed fields, retain earlier CP conversion/Delta evidence where exact), close named material source/PED scopes using proofs; no broad grade/chapter re-audit. Item 08 separately addresses Q02/05/08/14/15/17 and X-G.5/6 real gaps. No RELEASE execution.",
+      "protected": "No item, source, placement, runtime, RD1, Final Submit, Mastery, Firebase, Golden UI, merge or deploy changes."
     },
     "previous_manifest": {
-      "commit": "e3c0bbbfaeb55472b3881d8d4db1ff1b59aa3553",
-      "blob": "56b29574a6ddc4c6ad2a727ec30fecfd0ab5c4ab",
-      "key": "acceptance_xg6_written_placement_20261128"
+      "commit": "3b46c3077a334b447a82bc5401249757591e11a6",
+      "blob": "cd1f9ab91d23741c511d794db6431524090a215f",
+      "key": "acceptance_material_delta_topic17_19_20261128"
     }
   },
   "pending_review": {
-    "scope_warning": "Existing open-work index is historical until reconciled against later scoped evidence/receipts. Do not treat any grade-level pending string as authorization for whole-group re-audit. Resolve actual outstanding gate or specific item/field defect; preserve exact PASS scope and all evidence, no inferred full PASS.",
+    "scope_warning": "Superseded broad pending strings: use global_reconciliation.checklist06_source_evidence_scope_20261128 exact item/field scope; preserve historical proofs, source custody, and cutover notes. No whole-grade re-audit.",
     "cd17": "12 Topic-owned practice/replay material variants math, options, conditions, hints, D6 and inherited S1 skill scope reviewed with exact #974 receipt; retained all. Prior Written flags closed separately. Do not repeat this scoped review; final bank-wide applicable acceptance and remaining specific gaps only.",
     "skill_mapping": {
       "status": "38_OF_38_MAPPED_16_GROUPS_EXISTING_TAXONOMY_NO_RUNTIME_ACTIVATION",
