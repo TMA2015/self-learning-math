@@ -2,7 +2,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-01",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-01",
-    "stem": "Góc -225° đổi ra radian và quy về [0,2π) cho tia cuối; xác định góc phần tư của tia cuối. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Đổi góc \\(-225^\\circ\\) sang radian. Tìm góc trong \\([0;2\\pi)\\) có cùng tia cuối và xác định góc phần tư của tia cuối. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(-5\\pi/4;\\ 3\\pi/4;\\) phần tư II.",
     "worked_solution": "Ta có \\(-225^\\circ\\cdot\\frac{\\pi}{180^\\circ}=-\\frac{5\\pi}{4}\\). Cộng \\(2\\pi\\) được \\(\\frac{3\\pi}{4}\\in[0;2\\pi)\\). Vì \\(\\frac\\pi2<\\frac{3\\pi}{4}<\\pi\\), tia cuối thuộc góc phần tư II.",
     "skill_ids": [
@@ -69,7 +69,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-02",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-02",
-    "stem": "Biết sinα=-5/13 và 3π/2<α<2π. Tính cosα và tanα. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Biết \\(\\sin\\alpha=-\\frac5{13}\\) và \\(\\frac{3\\pi}{2}<\\alpha<2\\pi\\). Tính \\(\\cos\\alpha,\\tan\\alpha\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(\\cos\\alpha=\\frac{12}{13},\\ \\tan\\alpha=-\\frac5{12}\\)",
     "worked_solution": "Từ \\(\\cos^2\\alpha=1-\\frac{25}{169}=\\frac{144}{169}\\) và cos dương ở phần tư IV, suy ra \\(\\cos\\alpha=\\frac{12}{13}\\). Vậy \\(\\tan\\alpha=\\frac{-5/13}{12/13}=-\\frac5{12}\\).",
     "skill_ids": [
@@ -136,7 +136,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-03",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-03",
-    "stem": "Một bánh xe bán kính 9 cm quay quanh trục cố định, theo một chiều, với góc quay có hướng 7π/3 rad. Tính quãng đường một điểm trên vành đi được và góc biểu diễn tia cuối trong [0,2π). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Một bánh xe bán kính 9 cm quay quanh trục cố định theo một chiều với góc quay \\( \\frac{7\\pi}{3}\\) rad. Tính quãng đường một điểm trên vành đi được và góc biểu diễn tia cuối trong \\([0;2\\pi)\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(21\\pi\\) cm; \\(\\pi/3\\).",
     "worked_solution": "Quãng đường \\(s=9\\cdot\\frac{7\\pi}{3}=21\\pi\\) cm. Tia cuối có góc biểu diễn \\(\\frac{7\\pi}{3}-2\\pi=\\frac\\pi3\\). Không dùng góc đã quy về để tính quãng đường.",
     "skill_ids": [
@@ -203,7 +203,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-04",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-04",
-    "stem": "Cho β=-7π/6. Tính sinβ, cosβ và chứng minh β có cùng tia cuối với 5π/6. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Cho \\(\\beta=-\\frac{7\\pi}{6}\\). Tính \\(\\sin\\beta,\\cos\\beta\\) và chứng minh \\(\\beta\\) có cùng tia cuối với \\(\\frac{5\\pi}{6}\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(\\sin\\beta=\\frac12,\\ \\cos\\beta=-\\frac{\\sqrt3}{2};\\ \\beta+2\\pi=5\\pi/6\\).",
     "worked_solution": "\\(-\\frac{7\\pi}{6}+2\\pi=\\frac{5\\pi}{6}\\), hai góc cùng tia cuối. Góc ở phần tư II có góc tham chiếu \\(\\pi/6\\), nên sin bằng \\(\\frac12\\), cos bằng \\(-\\frac{\\sqrt3}{2}\\).",
     "skill_ids": [
@@ -270,7 +270,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-05",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-05",
-    "stem": "Dùng công thức lượng giác tính chính xác sin15° và cos15°. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Dùng công thức lượng giác tính chính xác \\(\\sin15^\\circ,\\cos15^\\circ\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(\\frac{\\sqrt6-\\sqrt2}{4};\\frac{\\sqrt6+\\sqrt2}{4}\\)",
     "worked_solution": "\\(\\sin15^\\circ=\\sin45^\\circ\\cos30^\\circ-\\cos45^\\circ\\sin30^\\circ=\\frac{\\sqrt6-\\sqrt2}{4}\\). Tương tự, \\(\\cos15^\\circ=\\cos45^\\circ\\cos30^\\circ+\\sin45^\\circ\\sin30^\\circ=\\frac{\\sqrt6+\\sqrt2}{4}\\).",
     "skill_ids": [
@@ -337,7 +337,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-06",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-06",
-    "stem": "Biết tanα=2 và tanβ=-1/3, cả hai xác định. Tính tan(α+β), kiểm tra mẫu của công thức. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Biết \\(\\tan\\alpha=2,\\ \\tan\\beta=-\\frac13\\), cả hai xác định. Tính \\(\\tan(\\alpha+\\beta)\\) và kiểm tra mẫu của công thức. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "1; mẫu bằng \\(5/3\\ne0\\).",
     "worked_solution": "Mẫu \\(1-\\tan\\alpha\\tan\\beta=1-2(-1/3)=5/3\\ne0\\), tử \\(2-1/3=5/3\\). Vì hai tang ban đầu xác định và mẫu khác 0, tang tổng xác định và bằng 1.",
     "skill_ids": [
@@ -404,7 +404,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-07",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-07",
-    "stem": "Nếu sinu=5/13 và cosu=12/13, tính sin2u và cos2u; tự kiểm tổng bình phương. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Biết \\(\\sin u=\\frac5{13},\\cos u=\\frac{12}{13}\\). Tính \\(\\sin2u,\\cos2u\\); kiểm tra tổng bình phương. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(\\frac{120}{169};\\frac{119}{169}\\); tổng bình phương bằng 1.",
     "worked_solution": "\\(\\sin2u=2\\cdot\\frac5{13}\\cdot\\frac{12}{13}=\\frac{120}{169}\\). \\(\\cos2u=\\frac{144-25}{169}=\\frac{119}{169}\\). Kiểm tra \\(120^2+119^2=169^2\\), nên tổng bình phương bằng 1.",
     "skill_ids": [
@@ -471,7 +471,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-08",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-08",
-    "stem": "Rút gọn chính xác A=cos105°+cos15° bằng tổng thành tích. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Rút gọn chính xác \\(A=\\cos105^\\circ+\\cos15^\\circ\\) bằng công thức biến đổi tổng thành tích. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(\\frac{\\sqrt2}{2}\\)",
     "worked_solution": "Dùng tổng thành tích: \\(A=2\\cos60^\\circ\\cos45^\\circ=2\\cdot\\frac12\\cdot\\frac{\\sqrt2}{2}=\\frac{\\sqrt2}{2}\\).",
     "skill_ids": [
@@ -538,7 +538,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-09",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-09",
-    "stem": "Tìm tập xác định và chu kỳ cơ bản của f(x)=tan(3x+π/6). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Tìm tập xác định và chu kì cơ bản của \\(f(x)=\\tan(3x+\\frac\\pi6)\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(D=\\mathbb R\\setminus\\{\\pi/9+k\\pi/3:k\\in\\mathbb Z\\};\\ T=\\pi/3\\).",
     "worked_solution": "\\(\\cos(3x+\\pi/6)\\ne0\\) khi \\(3x+\\pi/6\\ne\\pi/2+k\\pi\\), tức \\(x\\ne\\pi/9+k\\pi/3\\). Chu kì dương nhỏ nhất là \\(\\pi/3\\) vì tan có chu kì cơ bản \\(\\pi\\) và đối số tăng 3 lần mức tăng của x.",
     "skill_ids": [
@@ -605,9 +605,9 @@
   {
     "item_id": "THPT-G11-CHI-RD1-10",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-10",
-    "stem": "Với f(x)=1−4cos(2x), tìm TGT, chu kỳ cơ bản và tất cả x đạt GTLN. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Với \\(f(x)=1-4\\cos(2x)\\), tìm tập giá trị, chu kì cơ bản và tất cả \\(x\\) đạt giá trị lớn nhất. Trong các họ nghiệm, \\(k\\in\\mathbb Z\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\([-3;5]\\); \\(T=\\pi\\); GTLN 5 tại \\(x=\\pi/2+k\\pi\\).",
-    "worked_solution": "Vì \\(-1\\le\\cos2x\\le1\\), nên \\(-3\\le f(x)\\le5\\), và mọi giá trị trong đoạn đều đạt được. Chu kì cơ bản \\(\\pi\\). GTLN 5 đạt khi \\(\\cos2x=-1\\), tức \\(2x=\\pi+2k\\pi\\), hay \\(x=\\pi/2+k\\pi\\).",
+    "worked_solution": "Vì \\(-1\\le\\cos2x\\le1\\), nên \\(-3\\le f(x)\\le5\\), và mọi giá trị trong đoạn đều đạt được. Chu kì cơ bản là \\(\\pi\\). Giá trị lớn nhất 5 đạt khi \\(\\cos2x=-1\\), tức \\(2x=\\pi+2k\\pi\\), hay \\(x=\\frac\\pi2+k\\pi,\\ k\\in\\mathbb Z\\).",
     "skill_ids": [
       "G11-B03-COS_GRAPH",
       "G11-B03-DOMAIN_RANGE",
@@ -675,7 +675,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-11",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-11",
-    "stem": "Xét tính chẵn/lẻ và chu kỳ cơ bản của g(x)=sinx·cosx. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Xét tính chẵn, lẻ và chu kì cơ bản của \\(g(x)=\\sin x\\cos x\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "Hàm lẻ, chu kì cơ bản \\(\\pi\\).",
     "worked_solution": "Miền xác định là \\(\\mathbb R\\). Ta có \\(g(-x)=-\\sin x\\cos x=-g(x)\\), nên g lẻ. Vì \\(g(x)=\\frac12\\sin2x\\), chu kì cơ bản bằng \\(\\pi\\).",
     "skill_ids": [
@@ -742,9 +742,9 @@
   {
     "item_id": "THPT-G11-CHI-RD1-12",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-12",
-    "stem": "Tìm tập xác định, chu kỳ và tính đơn điệu trên từng nhánh của y=cot(3x−π/6). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Tìm tập xác định, chu kì cơ bản và tính đơn điệu trên từng nhánh của \\(y=\\cot(3x-\\frac\\pi6)\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(D=\\mathbb R\\setminus\\{\\pi/18+k\\pi/3:k\\in\\mathbb Z\\};\\ T=\\pi/3\\); nghịch biến từng nhánh.",
-    "worked_solution": "\\(\\sin(3x-\\pi/6)\\ne0\\) tương đương \\(x\\ne\\pi/18+k\\pi/3\\). Chu kì cơ bản \\(\\pi/3\\). Trên từng khoảng giữa hai tiệm cận liên tiếp, đối số tăng theo x và cot nghịch biến, nên hàm nghịch biến trên từng khoảng ấy.",
+    "worked_solution": "Điều kiện \\(\\sin(3x-\\frac\\pi6)\\ne0\\) tương đương \\(x\\ne\\frac\\pi{18}+\\frac{k\\pi}{3}\\), \\(k\\in\\mathbb Z\\). Chu kì cơ bản \\(\\frac\\pi3\\). Trên mỗi khoảng \\((\\frac\\pi{18}+\\frac{k\\pi}3;\\frac\\pi{18}+\\frac{(k+1)\\pi}3)\\), đối số tăng theo \\(x\\), còn cotang nghịch biến trên từng nhánh của nó; vì vậy hàm nghịch biến trên mỗi khoảng này.",
     "skill_ids": [
       "G11-B03-COT_GRAPH"
     ],
@@ -793,7 +793,7 @@
       },
       {
         "id": "B",
-        "text": "Cùng D, T nhưng đồng biến từng nhánh."
+        "text": "\\(D=\\mathbb R\\setminus\\{\\frac\\pi{18}+\\frac{k\\pi}{3}:k\\in\\mathbb Z\\}\\), \\(T=\\frac\\pi3\\); đồng biến từng nhánh."
       },
       {
         "id": "C",
@@ -809,7 +809,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-13",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-13",
-    "stem": "Cho mô hình nhiệt độ M(t)=25+2sin(πt/4), trong đó t là thời gian tính bằng giờ, M(t) tính bằng °C, 0≤t≤8. Tìm chu kỳ của hàm tuần hoàn dùng trong mô hình, thời điểm nhiệt độ cao nhất/thấp nhất và các giá trị tương ứng trên miền đã cho. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Cho mô hình nhiệt độ \\(M(t)=25+2\\sin(\\frac{\\pi t}{4})\\), trong đó \\(t\\) tính bằng giờ, \\(M(t)\\) tính bằng độ C, \\(0\\le t\\le8\\). Tìm chu kì của hàm tuần hoàn dùng trong mô hình, thời điểm và giá trị nhiệt độ cao nhất, thấp nhất trên miền đã cho. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "8 giờ; 27°C lúc t=2; 23°C lúc t=6.",
     "worked_solution": "Chu kì của hàm tuần hoàn dùng trong mô hình là \\(T=2\\pi/(\\pi/4)=8\\) giờ. Trên miền \\(0\\le t\\le8\\), sin bằng 1 tại \\(t=2\\), bằng −1 tại \\(t=6\\). Nhiệt độ lớn nhất 27°C, nhỏ nhất 23°C.",
     "skill_ids": [
@@ -876,7 +876,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-14",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-14",
-    "stem": "Trên đoạn [-π,π], đồ thị y=cosx cắt Ox tại đâu, đạt max/min ở đâu? Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Trên đoạn \\([-\\pi;\\pi]\\), đồ thị \\(y=\\cos x\\) cắt \\(Ox\\) tại đâu, đạt giá trị lớn nhất và nhỏ nhất ở đâu? Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "Cắt Ox tại \\(x=\\pm\\pi/2\\); max 1 tại 0, min −1 tại \\(x=\\pm\\pi\\).",
     "worked_solution": "\\(\\cos x=0\\) tại \\(x=\\pi/2+k\\pi\\), nên trên đoạn có \\(-\\pi/2,\\pi/2\\). Cos đạt 1 tại 0 và −1 tại cả hai đầu \\(-\\pi,\\pi\\).",
     "skill_ids": [
@@ -943,7 +943,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-15",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-15",
-    "stem": "Giải sin(2x−π/3)=-√3/2 trên ℝ. Trong các họ nghiệm, k là số nguyên. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Giải \\(\\sin(2x-\\frac\\pi3)=-\\frac{\\sqrt3}{2}\\) trên \\(\\mathbb R\\). Trong các họ nghiệm, \\(k\\in\\mathbb Z\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(x=k\\pi\\) hoặc \\(x=5\\pi/6+k\\pi\\)",
     "worked_solution": "Đặt \\(t=2x-\\pi/3\\). Từ \\(\\sin t=-\\frac{\\sqrt3}{2}\\) suy ra \\(t=-\\pi/3+2k\\pi\\) hoặc \\(t=4\\pi/3+2k\\pi\\). Giải ra \\(x=k\\pi\\) hoặc \\(x=5\\pi/6+k\\pi\\), \\(k\\in\\mathbb Z\\).",
     "skill_ids": [
@@ -1010,7 +1010,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-16",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-16",
-    "stem": "Giải cos(x+π/4)=0 trên ℝ. Trong các họ nghiệm, k là số nguyên. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Giải \\(\\cos(x+\\frac\\pi4)=0\\) trên \\(\\mathbb R\\). Trong các họ nghiệm, \\(k\\in\\mathbb Z\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(x=\\pi/4+k\\pi\\)",
     "worked_solution": "\\(x+\\pi/4=\\pi/2+k\\pi\\), nên \\(x=\\pi/4+k\\pi,\\ k\\in\\mathbb Z\\).",
     "skill_ids": [
@@ -1077,7 +1077,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-17",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-17",
-    "stem": "Giải tan(2x)=1/√3 trên ℝ. Trong các họ nghiệm, k là số nguyên. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Giải \\(\\tan(2x)=\\frac1{\\sqrt3}\\) trên \\(\\mathbb R\\). Trong các họ nghiệm, \\(k\\in\\mathbb Z\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(x=\\pi/12+k\\pi/2\\)",
     "worked_solution": "Điều kiện \\(\\cos2x\\ne0\\) cho \\(x\\ne\\pi/4+k\\pi/2\\). Từ \\(\\tan2x=\\tan(\\pi/6)\\), suy ra \\(2x=\\pi/6+k\\pi\\), nên \\(x=\\pi/12+k\\pi/2\\). Các nghiệm thỏa điều kiện.",
     "skill_ids": [
@@ -1144,7 +1144,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-18",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-18",
-    "stem": "Giải cot(3x)=0 trên ℝ. Trong các họ nghiệm, k là số nguyên. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Giải \\(\\cot(3x)=0\\) trên \\(\\mathbb R\\). Trong các họ nghiệm, \\(k\\in\\mathbb Z\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(x=\\pi/6+k\\pi/3\\)",
     "worked_solution": "\\(\\cot3x=0\\) khi \\(3x=\\pi/2+k\\pi\\), khi đó sin đối số khác 0. Suy ra \\(x=\\pi/6+k\\pi/3,\\ k\\in\\mathbb Z\\).",
     "skill_ids": [
@@ -1211,7 +1211,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-19",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-19",
-    "stem": "Giải cos(2x)=sin(2x) trên ℝ; giải thích vì sao có thể chia cos(2x). Trong các họ nghiệm, k là số nguyên. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Giải \\(\\cos(2x)=\\sin(2x)\\) trên \\(\\mathbb R\\); giải thích vì sao có thể chia cho \\(\\cos(2x)\\). Trong các họ nghiệm, \\(k\\in\\mathbb Z\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(x=\\pi/8+k\\pi/2\\); nếu cos2x=0 thì sin2x=±1 nên không là nghiệm.",
     "worked_solution": "Nếu \\(\\cos2x=0\\) thì \\(\\sin2x=\\pm1\\), không thỏa phương trình. Do đó trên tập nghiệm ta có \\(\\cos2x\\ne0\\). Chia hai vế được \\(\\tan2x=1\\), suy ra \\(x=\\pi/8+k\\pi/2\\).",
     "skill_ids": [
@@ -1278,7 +1278,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-20",
     "content_version": "SGK-G11-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G11-CHI-RD1-20",
-    "stem": "Phân loại số nghiệm phân biệt của sinx=m trên [0,2π) theo m∈ℝ. Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Phân loại số nghiệm phân biệt của \\(\\sin x=m\\) trên \\([0;2\\pi)\\) theo \\(m\\in\\mathbb R\\). Chọn phương án đúng sau khi tự giải; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "0 nếu \\(|m|>1\\); 1 nếu \\(|m|=1\\); 2 nếu \\(|m|<1\\).",
     "worked_solution": "Đồ thị sin trên \\([0;2\\pi)\\) không cắt \\(y=m\\) nếu \\(|m|>1\\), cắt đúng một lần nếu \\(m=\\pm1\\), và cắt hai lần nếu \\(-1<m<1\\). Với \\(m=0\\), hai nghiệm là 0 và \\(\\pi\\); không lấy \\(2\\pi\\).",
     "skill_ids": [
