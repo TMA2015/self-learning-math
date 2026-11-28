@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "2e0b0136bffdb390f78e021daa473486b015b147",
+    "as_of_commit": "5e1f374859f145ce26891ebd1d9a47b3547cfd65",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.1: shared 50/815 interactive IDs (G10 ChI–III shared subset), Written 0/160; next shared IDs in items/g10-chiv.json. Do not re-read closed fields.",
+    "next": "08.1: shared 70/815 interactive IDs (G10 ChI–IV shared subset), Written 0/160; next shared IDs in items/g10-chv.json. Do not re-read closed fields.",
     "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -502,18 +502,128 @@
                     ]
                   ],
                   "findings": "All changed/new learner-visible fields of shared B05/B06 read directly; normalized three raw approximate option expressions in B06-P05 and sin A hint in B06-P06. Exact readback: only options and hints of these two IDs changed, values/letters/keys/solution/interaction/rubric preserved. Data commit 2e0b0136bffdb390f78e021daa473486b015b147. No math/PED re-audit."
+                },
+                {
+                  "shard": "items/g10-chiv.json",
+                  "blob": "049a15aac2e60b312418d3da624184dec861a246",
+                  "baseline_commit": "980818e7942ad75aca3600bbc9d00d03ecca288d",
+                  "baseline_blob": "a696d5c7a7416f38bc8480b2dd5c2c05554bd946",
+                  "evidence_cp": "CP94",
+                  "records": [
+                    [
+                      "THPT-G10-B07-C01",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B07-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B07-P02",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B07-P04",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B08-C01",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B08-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B08-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B08-P05",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-B09-C01",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B09-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B09-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B09-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B10-C01",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B10-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B10-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B10-P05",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B11-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B11-P01",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B11-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B11-P05",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "All changed/new learner-visible fields of 20 shared B07–B11 records read directly; B08-P05 ratio and vector notation in stem/options/hints/solution; B09-C01 norm/unit typesetting in options and display answer_key (same choice B, magnitude and direction unchanged). Exact readback: only six listed learner fields in two IDs changed; no interaction/rubric/placement change. Data commit 5e1f374859f145ce26891ebd1d9a47b3547cfd65. No math/PED re-audit."
                 }
               ],
-              "completed_interactive": 50,
+              "completed_interactive": 70,
               "completed_written": 0,
-              "remaining_interactive": 765,
+              "remaining_interactive": 745,
               "remaining_written": 160,
               "counts": {
-                "ids": 50,
-                "inherited": 183,
-                "newly_checked": 116
+                "ids": 70,
+                "inherited": 270,
+                "newly_checked": 149
               },
-              "next": "Shared IDs in items/g10-chiv.json; compare CP94 exact snapshot and later field evidence, directly review only changed/unverified fields."
+              "next": "Shared IDs in items/g10-chv.json; compare CP95 exact snapshot and later field evidence, directly review only changed/unverified fields."
             }
           },
           {
