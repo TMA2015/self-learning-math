@@ -1,8 +1,8 @@
 [
   {
     "item_id": "THPT-G10-TOPSTAT-ADD01",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-TOPSTAT-ADD01",
-    "stem": "Một lớp có chính xác 25 học sinh. Chiều dài bàn được ghi \\(120{,}3\\,\\mathrm{cm}\\) với độ chính xác \\(0{,}1\\,\\mathrm{cm}\\). Xác định số đúng, số gần đúng, khoảng chứa chiều dài thật và giải thích có biết sai số thực không.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-TOPSTAT-ADD01.DELTA08",
+    "stem": "Một lớp có chính xác 25 học sinh. Chiều dài bàn được ghi \\(120{,}3\\,\\mathrm{cm}\\) với độ chính xác \\(0{,}1\\,\\mathrm{cm}\\). Xác định số đúng, số gần đúng, khoảng chứa chiều dài thật và giải thích có biết sai số thực không. Chọn kết quả kèm cách giải thích đúng.",
     "answer_key": "25 là số đúng; \\(120{,}3\\,\\mathrm{cm}\\) là số gần đúng; chiều dài thật thuộc khoảng \\([120{,}2;120{,}4]\\) cm; chưa biết sai số thực.",
     "worked_solution": "Đếm đầy đủ 25 học sinh cho số đúng trong tình huống này. Chiều dài ghi bằng phép đo có sai số, nên \\(120{,}3\\,\\mathrm{cm}\\) là số gần đúng. Gọi L là chiều dài thật tính bằng cm. Độ chính xác \\(d=0{,}1\\,\\mathrm{cm}\\) bảo đảm \\(|L-120{,}3|\\le0{,}1\\), tức \\(120{,}2\\le L\\le120{,}4\\). Không có giá trị L thật nên không biết sai số tuyệt đối thực tế; chỉ biết sai số không vượt quá \\(0{,}1\\,\\mathrm{cm}\\).",
     "skill_ids": [
@@ -33,26 +33,27 @@
     "options": [
       {
         "id": "A",
-        "text": "25 và 120,3 đều là số đúng; biết sai số thực"
+        "text": "25 và \\(120{,}3\\,\\mathrm{cm}\\) đều đúng vì có giá trị ghi cụ thể; sai số thực bằng 0."
       },
       {
         "id": "B",
-        "text": "25 đúng; 120,3 gần đúng; [120,2;120,4] cm; chưa biết sai số thực"
+        "text": "25 là số đúng; \\(120{,}3\\,\\mathrm{cm}\\) là số gần đúng; chiều dài thật trong \\([120{,}2;120{,}4]\\) cm vì độ chính xác là cận sai số; chưa biết sai số thực."
       },
       {
         "id": "C",
-        "text": "25 gần đúng; 120,3 đúng; sai số 0,1 cm"
+        "text": "25 là số gần đúng, \\(120{,}3\\,\\mathrm{cm}\\) là số đúng vì có chữ số thập phân; sai số thực bằng \\(0{,}1\\,\\mathrm{cm}\\)."
       },
       {
         "id": "D",
-        "text": "25 đúng; 120,3 gần đúng; [120,25;120,35] cm; biết sai số thực"
+        "text": "25 đúng, \\(120{,}3\\,\\mathrm{cm}\\) gần đúng; khoảng \\([120{,}25;120{,}35]\\) cm vì tự lấy nửa độ chính xác đã cho; biết sai số thực."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.5/X-G.6: independent numerical/interpretation check, reason-bearing choices and error-based distractors; retain task and correct option ID, skill, difficulty, source and exposure. No change to mathematical result."
   },
   {
     "item_id": "THPT-G10-TOPSTAT-ADD02",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-TOPSTAT-ADD02",
-    "stem": "Mẫu số sách đọc là 1,1,2,2,3,4. Tìm mốt. Nếu thêm một số 3 và một số 4 vào mẫu, mẫu mới có mốt không theo quy ước SGK KNTT?",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-TOPSTAT-ADD02.DELTA08",
+    "stem": "Mẫu số sách đọc là 1,1,2,2,3,4. Tìm mốt. Nếu thêm một số 3 và một số 4 vào mẫu, mẫu mới có mốt không theo quy ước SGK KNTT? Chọn kết quả kèm cách giải thích đúng.",
     "answer_key": "Ban đầu có hai mốt 1 và 2; mẫu mới không có mốt theo quy ước SGK.",
     "worked_solution": "Ban đầu tần số các giá trị 1, 2, 3, 4 lần lượt là 2, 2, 1, 1. Hai giá trị 1 và 2 cùng có tần số lớn nhất nên mẫu có hai mốt. Thêm một giá trị 3 và một giá trị 4 thì tần số của mỗi giá trị đều bằng 2. Theo quy ước SGK KNTT được nêu trong kiến thức CĐ22, khi có nhiều giá trị phân biệt và mọi tần số bằng nhau, mẫu không có mốt. Mốt là giá trị xuất hiện nhiều nhất, không phải vị trí giữa của mẫu.",
     "skill_ids": [
@@ -83,26 +84,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Ban đầu 1; sau 3"
+        "text": "Ban đầu chỉ 1 là mốt vì chọn giá trị nhỏ nhất trong hai giá trị đồng hạng; sau chỉ 3 là mốt."
       },
       {
         "id": "B",
-        "text": "Ban đầu 1 và 2; sau 1 và 2"
+        "text": "Ban đầu 1 và 2; sau vẫn là 1 và 2 vì bỏ qua tần số mới của 3 và 4."
       },
       {
         "id": "C",
-        "text": "Ban đầu 1 và 2; sau không có mốt theo quy ước SGK"
+        "text": "Ban đầu 1 và 2 cùng có tần số 2, lớn hơn hai giá trị còn lại; sau cả bốn giá trị cùng tần số 2 nên không có mốt theo quy ước SGK."
       },
       {
         "id": "D",
-        "text": "Ban đầu không có mốt; sau 1, 2, 3, 4 đều là mốt"
+        "text": "Ban đầu 1 và 2; sau cả 1, 2, 3, 4 đều là mốt vì mọi giá trị cùng tần số lớn nhất, bỏ qua quy ước SGK."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.5/X-G.6: independent numerical/interpretation check, reason-bearing choices and error-based distractors; retain task and correct option ID, skill, difficulty, source and exposure. Confirmed equal-frequency no-mode convention against CĐ22 exact knowledge source 7ac79e5ed705a5ce482c3d9c42a4451e659e1109 (#812)."
   },
   {
     "item_id": "THPT-G10-TOPSTAT-ADD03",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-TOPSTAT-ADD03",
-    "stem": "Dữ liệu thời gian (phút) là 9, 2, 4, 7, 1, 5. Tính trung vị. Nếu thay 9 bằng 90, trung vị và số trung bình thay đổi thế nào?",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-TOPSTAT-ADD03.DELTA08",
+    "stem": "Dữ liệu thời gian (phút) là 9, 2, 4, 7, 1, 5. Tính trung vị. Nếu thay 9 bằng 90, trung vị và số trung bình thay đổi thế nào? Chọn kết quả kèm cách giải thích đúng.",
     "answer_key": "Trung vị \\(4{,}5\\) phút ở cả hai mẫu; trung bình tăng từ \\(\\frac{14}3\\) lên \\(\\frac{109}6\\) phút.",
     "worked_solution": "Sắp mẫu đầu theo thứ tự tăng dần: 1, 2, 4, 5, 7, 9. Có 6 quan sát nên trung vị \\(M_e=\\frac{4+5}2=4{,}5\\) phút. Thay 9 bằng 90 vẫn giữ hai giá trị giữa là 4 và 5 nên trung vị không đổi. Tổng đầu là 28, trung bình \\(\\overline x=\\frac{28}6=\\frac{14}3\\) phút; tổng mới là \\(28-9+90=109\\), trung bình \\(\\frac{109}6\\) phút. Trung bình nhạy với giá trị lớn bất thường, còn trung vị trong ví dụ này không đổi.",
     "skill_ids": [
@@ -133,26 +135,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Trung vị từ 4,5 lên 45; trung bình không đổi"
+        "text": "Trung vị luôn \\(4{,}5\\) phút; trung bình không đổi vì chỉ thay giá trị lớn nhất."
       },
       {
         "id": "B",
-        "text": "Trung vị 4,5 ở cả hai; trung bình từ \\(\\frac{14}{3}\\) lên \\(\\frac{109}{6}\\)"
+        "text": "Trung vị luôn \\(4{,}5\\) phút vì hai giá trị giữa sau khi sắp vẫn là 4 và 5; trung bình từ \\(\\frac{14}3\\) lên \\(\\frac{109}6\\) phút."
       },
       {
         "id": "C",
-        "text": "Trung vị 5 ở cả hai; trung bình từ \\(\\frac{14}{3}\\) lên \\(\\frac{109}{6}\\)"
+        "text": "Trung vị luôn 5 phút vì chỉ lấy vị trí thứ tư; trung bình từ \\(\\frac{14}3\\) lên \\(\\frac{109}6\\) phút."
       },
       {
         "id": "D",
-        "text": "Trung vị từ 4,5 lên 5; trung bình từ \\(\\frac{14}{3}\\) lên \\(\\frac{109}{6}\\)"
+        "text": "Trung vị luôn \\(5{,}5\\) phút vì lấy trung bình của 4 và 7 ở hai vị trí giữa dãy chưa sắp; trung bình từ \\(\\frac{14}3\\) lên \\(\\frac{109}6\\) phút."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.5/X-G.6: independent numerical/interpretation check, reason-bearing choices and error-based distractors; retain task and correct option ID, skill, difficulty, source and exposure. No change to mathematical result."
   },
   {
     "item_id": "THPT-G10-TOPSTAT-ADD04",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-TOPSTAT-ADD04",
-    "stem": "Mẫu đã sắp 2, 3, 3, 4, 5, 6, 20. Tính \\(Q_1,Q_3\\), khoảng tứ phân vị \\(\\Delta_Q\\) và cả hai hàng rào cách tứ phân vị tương ứng \\(1{,}5\\Delta_Q\\). Xác định giá trị ngoại lệ và nhận xét có nên tự động xóa nó không.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-TOPSTAT-ADD04.DELTA08",
+    "stem": "Mẫu đã sắp 2, 3, 3, 4, 5, 6, 20. Tính \\(Q_1,Q_3\\), khoảng tứ phân vị \\(\\Delta_Q\\) và cả hai hàng rào cách tứ phân vị tương ứng \\(1{,}5\\Delta_Q\\). Xác định giá trị ngoại lệ và nhận xét có nên tự động xóa nó không. Chọn kết quả kèm cách giải thích đúng.",
     "answer_key": "\\(Q_1=3\\), \\(Q_3=6\\), \\(\\Delta_Q=3\\); hàng rào dưới \\(-1{,}5\\) và trên \\(10{,}5\\); 20 là ngoại lệ, chưa đủ căn cứ xóa.",
     "worked_solution": "Mẫu có 7 quan sát, trung vị là 4; bỏ vị trí giữa khi chia nửa. Nửa dưới 2, 3, 3 cho \\(Q_1=3\\); nửa trên 5, 6, 20 cho \\(Q_3=6\\). Khoảng tứ phân vị \\(\\Delta_Q=Q_3-Q_1=6-3=3\\). Hàng rào dưới \\(Q_1-1{,}5\\Delta_Q=3-1{,}5\\cdot3=-1{,}5\\); hàng rào trên \\(Q_3+1{,}5\\Delta_Q=6+1{,}5\\cdot3=10{,}5\\). Chỉ 20 nằm ngoài hai hàng rào. Cần kiểm tra nguyên nhân (sai nhập liệu hay quan sát thật) trước khi quyết định loại.",
     "skill_ids": [
@@ -183,26 +186,27 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(Q_1=3, Q_3=6, \\Delta_Q=3\\); hàng rào −1,5 và 10,5; 20 ngoại lệ, cần kiểm chứng trước khi xóa."
+        "text": "\\(Q_1=3,\\ Q_3=6,\\ \\Delta_Q=3\\); hai hàng rào \\(-1{,}5\\) và \\(10{,}5\\); 20 là ngoại lệ, cần xác minh nguyên nhân trước khi xóa."
       },
       {
         "id": "B",
-        "text": "\\(Q_1=3, Q_3=6, \\Delta_Q=3\\); hàng rào −1,5 và 10,5; phải xóa 20."
+        "text": "\\(Q_1=3,\\ Q_3=6,\\ \\Delta_Q=3\\); hai hàng rào \\(-1{,}5\\) và \\(10{,}5\\); phải xóa 20 chỉ vì nằm ngoài hàng rào."
       },
       {
         "id": "C",
-        "text": "\\(Q_1=3, Q_3=6, \\Delta_Q=3\\); hàng rào 0 và 9; phải xóa 20."
+        "text": "\\(Q_1=3,\\ Q_3=6,\\ \\Delta_Q=3\\); hai hàng rào 0 và 9 do dùng \\(\\Delta_Q\\) thay cho \\(1{,}5\\Delta_Q\\); phải xóa 20."
       },
       {
         "id": "D",
-        "text": "\\(Q_1=2, Q_3=20, \\Delta_Q=18\\); không có ngoại lệ."
+        "text": "\\(Q_1=2,\\ Q_3=20,\\ \\Delta_Q=18\\), vì lấy giá trị nhỏ nhất và lớn nhất làm tứ phân vị; không có ngoại lệ."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.5/X-G.6: independent numerical/interpretation check, reason-bearing choices and error-based distractors; retain task and correct option ID, skill, difficulty, source and exposure. No change to mathematical result."
   },
   {
     "item_id": "THPT-G10-TOPSTAT-ADD05",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-TOPSTAT-ADD05",
-    "stem": "Hai mẫu thời gian (phút) A gồm 2, 4, 6 và B gồm 3, 4, 5. Tính trung bình, phương sai (chia cho cỡ mẫu n), độ lệch chuẩn và so sánh độ phân tán.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G10-TOPSTAT-ADD05.DELTA08",
+    "stem": "Hai mẫu thời gian (phút) A gồm 2, 4, 6 và B gồm 3, 4, 5. Tính trung bình, phương sai (chia cho cỡ mẫu n), độ lệch chuẩn và so sánh độ phân tán. Chọn kết quả kèm cách giải thích đúng.",
     "answer_key": "Trung bình đều 4 phút; \\(s_A^2=\\frac83\\) \\( \\text{phút}^2 \\), \\(s_B^2=\\frac23\\) \\( \\text{phút}^2 \\); \\(s_A=\\sqrt{\\frac83}\\) phút, \\(s_B=\\sqrt{\\frac23}\\) phút; B ít phân tán hơn.",
     "worked_solution": "Cả hai mẫu có tổng 12, \\(n=3\\) nên trung bình \\(\\overline x=4\\) phút. A có tổng bình phương độ lệch \\((2-4)^2+0+(6-4)^2=8\\); B có \\((3-4)^2+0+(5-4)^2=2\\). Chia 3 được \\(s_A^2=\\frac83\\) và \\(s_B^2=\\frac23\\), đơn vị \\( \\text{phút}^2 \\). Lấy căn bậc hai được \\(s_A=\\sqrt{\\frac83}\\), \\(s_B=\\sqrt{\\frac23}\\), đơn vị phút. B ít phân tán quanh trung bình theo hai thước đo này; không suy B luôn tốt hơn theo mọi tiêu chí.",
     "skill_ids": [
@@ -233,26 +237,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Cùng trung bình 4; phương sai A=\\(\\frac{2}{3}\\), B=\\(\\frac{8}{3}\\); B phân tán hơn"
+        "text": "Cùng trung bình 4 phút; phương sai A bằng \\(\\frac23\\), B bằng \\(\\frac83\\), độ lệch chuẩn là căn tương ứng; B phân tán hơn vì đảo hai tổng bình phương độ lệch."
       },
       {
         "id": "B",
-        "text": "Cùng trung bình 4; phương sai A=8, B=2; B ít phân tán hơn"
+        "text": "Cùng trung bình 4 phút; phương sai A bằng 8, B bằng 2, độ lệch chuẩn là căn tương ứng; B ít phân tán hơn, nhưng chưa chia cỡ mẫu."
       },
       {
         "id": "C",
-        "text": "Cùng trung bình 4; phương sai A=\\(\\frac{8}{3}\\), B=\\(\\frac{2}{3}\\); độ lệch chuẩn là căn tương ứng; B ít phân tán hơn"
+        "text": "Cùng trung bình 4 phút; phương sai A bằng \\(\\frac83\\), B bằng \\(\\frac23\\) (đơn vị bình phương phút); độ lệch chuẩn lần lượt \\(\\sqrt{\\frac83}\\) và \\(\\sqrt{\\frac23}\\) phút; B ít phân tán hơn."
       },
       {
         "id": "D",
-        "text": "Cùng trung bình 4; phương sai A=\\(\\frac{8}{3}\\), B=\\(\\frac{2}{3}\\); độ lệch chuẩn bằng phương sai; B ít phân tán hơn"
+        "text": "Cùng trung bình 4 phút; phương sai A bằng \\(\\frac83\\), B bằng \\(\\frac23\\); độ lệch chuẩn cũng lần lượt bằng \\(\\frac83\\) và \\(\\frac23\\) phút, vì không cần lấy căn."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.5/X-G.6: independent numerical/interpretation check, reason-bearing choices and error-based distractors; retain task and correct option ID, skill, difficulty, source and exposure. No change to mathematical result."
   },
   {
     "item_id": "THPT-G11-TOPSTAT-ADD06",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-TOPSTAT-ADD06",
-    "stem": "Bảng ghép nhóm: \\([10;20)\\) có 4 người, \\([20;30)\\) có 6 người. Tính trung bình ghép nhóm. Hai mẫu thô gồm bốn giá trị 11 và sáu giá trị 21; hoặc bốn giá trị 19 và sáu giá trị 29. Tính trung bình thật của từng mẫu, giải thích sự khác biệt.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-TOPSTAT-ADD06.DELTA08",
+    "stem": "Bảng ghép nhóm: \\([10;20)\\) có 4 người, \\([20;30)\\) có 6 người. Tính trung bình ghép nhóm. Hai mẫu thô gồm bốn giá trị 11 và sáu giá trị 21; hoặc bốn giá trị 19 và sáu giá trị 29. Tính trung bình thật của từng mẫu, giải thích sự khác biệt. Chọn kết quả kèm cách giải thích đúng.",
     "answer_key": "Trung bình ghép nhóm 21; hai trung bình thô 17 và 25.",
     "worked_solution": "Trung điểm nhóm lần lượt là 15 và 25. Trung bình ghép nhóm là \\(\\overline x=\\frac{4\\cdot15+6\\cdot25}{10}=21\\). Mẫu thứ nhất có trung bình \\(\\frac{4\\cdot11+6\\cdot21}{10}=17\\); mẫu thứ hai \\(\\frac{4\\cdot19+6\\cdot29}{10}=25\\). Cả hai cùng tần số nhóm 4, 6 nhưng trung bình thô khác nhau. Trung điểm nhóm là giá trị đại diện, không phải giá trị thật của từng người.",
     "skill_ids": [
@@ -283,26 +288,27 @@
     "options": [
       {
         "id": "A",
-        "text": "21; 21; 21"
+        "text": "21; 21; 21, vì coi mọi quan sát đều đúng bằng trung điểm nhóm."
       },
       {
         "id": "B",
-        "text": "20; 17; 25"
+        "text": "20; 17; 25, vì lấy trung bình không trọng số của hai trung điểm nhóm."
       },
       {
         "id": "C",
-        "text": "21; 17; 25; cùng bảng nhưng khác vị trí trong nhóm"
+        "text": "21; 17; 25, vì cùng bảng tần số nhưng các giá trị thật có thể ở những vị trí khác nhau trong mỗi nhóm."
       },
       {
         "id": "D",
-        "text": "21; 17; 25; hai mẫu có tần số nhóm khác nhau"
+        "text": "21; 17; 25, vì cho rằng hai mẫu có tần số nhóm khác nhau."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.5/X-G.6: independent numerical/interpretation check, reason-bearing choices and error-based distractors; retain task and correct option ID, skill, difficulty, source and exposure. No change to mathematical result."
   },
   {
     "item_id": "THPT-G11-TOPSTAT-ADD07",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-TOPSTAT-ADD07",
-    "stem": "Mẫu ghép nhóm: \\([0;10)\\) có tần số 3, \\([10;20)\\) có tần số 7. Ước lượng trung vị. Nếu cả ba giá trị nhóm đầu là 1, bảy giá trị nhóm sau là 11, trung vị dữ liệu gốc là bao nhiêu? So sánh.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-TOPSTAT-ADD07.DELTA08",
+    "stem": "Mẫu ghép nhóm: \\([0;10)\\) có tần số 3, \\([10;20)\\) có tần số 7. Ước lượng trung vị. Nếu cả ba giá trị nhóm đầu là 1, bảy giá trị nhóm sau là 11, trung vị dữ liệu gốc là bao nhiêu? So sánh. Chọn kết quả kèm cách giải thích đúng.",
     "answer_key": "Trung vị ghép nhóm \\(\\frac{90}7\\approx12{,}86\\); trung vị mẫu gốc ví dụ là 11.",
     "worked_solution": "Cỡ mẫu \\(n=10\\), tần số tích lũy lần lượt là 3 và 10. Vì \\(3<\\frac n2=5\\le10\\), nhóm chứa trung vị là \\([10;20)\\), có cận dưới 10, độ dài 10, tần số 7, tần số tích lũy trước nhóm là 3. Nội suy theo công thức trung vị ghép nhóm: \\(M_e=10+\\frac{5-3}{7}\\cdot10=\\frac{90}7\\approx12{,}86\\). Với mẫu thô đã cho, giá trị ở vị trí 5 và 6 đều là 11, nên trung vị gốc bằng 11. Cùng bảng ghép nhóm nhưng trung vị nội suy chỉ là ước lượng, không khẳng định đúng trung vị gốc.",
     "skill_ids": [
@@ -333,20 +339,21 @@
     "options": [
       {
         "id": "A",
-        "text": "11; \\(\\frac{90}{7}\\)"
+        "text": "11; \\(\\frac{90}7\\), vì đảo kết quả mẫu ghép nhóm với mẫu gốc."
       },
       {
         "id": "B",
-        "text": "10; 11"
+        "text": "10; 11, vì dùng luôn cận dưới nhóm chứa trung vị."
       },
       {
         "id": "C",
-        "text": "15; 11"
+        "text": "15; 11, vì dùng luôn trung điểm nhóm chứa trung vị."
       },
       {
         "id": "D",
-        "text": "\\(\\frac{90}{7}\\); 11; trung vị nhóm chỉ là ước lượng"
+        "text": "\\(\\frac{90}7\\); 11, vì nội suy trong nhóm chứa trung vị, còn mẫu gốc có hai quan sát giữa đều bằng 11; trung vị ghép nhóm chỉ là ước lượng."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.5/X-G.6: independent numerical/interpretation check, reason-bearing choices and error-based distractors; retain task and correct option ID, skill, difficulty, source and exposure. No change to mathematical result."
   }
 ]
