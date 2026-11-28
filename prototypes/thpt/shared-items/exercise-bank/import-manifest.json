@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "9db59fb0a573a7b894f807e18716f3c21325facd",
+    "as_of_commit": "e352c8ce147dd7bc65406c32fe7e7f91f85d7088",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.2: 214/910 (198 interactive +16 Written), CD01–06 complete; next CD07 onward 696 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
+    "next": "08.2: 254/910 (234 interactive +20 Written), CD01–07 complete; next CD08 onward 656 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
     "status": "CHECKLIST_08_XG5_BATCH_2_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -6891,12 +6891,236 @@
                     ]
                   ],
                   "findings": "All four canonical Written blocks read; six learner lines in W01–04 normalized nested fractions and trig arguments, exact source delta 67166a4130c6f88ecc425e726a019480d711cda3; bindings refreshed at 9db59fb0a573a7b894f807e18716f3c21325facd. No rubric or math change."
+                },
+                {
+                  "shard": "items/cd07.json",
+                  "blob": "1407bfc9eab1f6353c430b8965f807bef27bc0dc",
+                  "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+                  "baseline_blob": "0703e62ff5cb6aa28a388836591a0da71197cf18",
+                  "evidence_cp": "CP89",
+                  "records": [
+                    [
+                      "THPT-TOP07-P01",
+                      77,
+                      18
+                    ],
+                    [
+                      "THPT-TOP07-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP07-P03",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP07-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP07-P05",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP07-P06",
+                      76,
+                      19
+                    ],
+                    [
+                      "THPT-TOP07-P07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP07-P08",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP07-P09",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP07-P10",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP07-P11",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP07-P12",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP07-P13",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP07-P14",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP07-P15",
+                      76,
+                      19
+                    ],
+                    [
+                      "THPT-TOP07-P16",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP07-P17",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP07-P18",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Read changed/new fields and inherit identical five CP89 fields. Normalize fractions and absolute value in P02/P15, exact field diff. Data 954239f1acf22ff01d8cc0a487a2ce9227f8c597."
+                },
+                {
+                  "shard": "items/topic-knowledge-first-try.json",
+                  "blob": "9f12a601200c6fd6e6eccac2cca1575c4683d946",
+                  "evidence_cp": "08.2-CD07-KFT",
+                  "records": [
+                    [
+                      "THPT-TOP07-KFT01",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT02",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT03",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT04",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT05",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT06",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT07",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT08",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT09",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT10",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT11",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT12",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT13",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT14",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT15",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT16",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT17",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP07-KFT18",
+                      0,
+                      95
+                    ]
+                  ],
+                  "findings": "Read all 18 Topic-only FirstTry records; 7 notation-only ID corrections; exact field diff. Data 873895cee8f4ce06ddb8dcaa8601712ce5a0b905."
+                },
+                {
+                  "shard": "written-references.json",
+                  "blob": "390cb1fdc7aa3c786a22bb61017509192e753883",
+                  "source_path": "prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R06_20261115.md",
+                  "source_blob": "3c1e75623741585804ecb3724c5fb43a6b7fe299",
+                  "evidence_cp": "08.2-CD07-Written",
+                  "records": [
+                    [
+                      "THPT-TOP07-W01",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP07-W02",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP07-W03",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP07-W04",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ]
+                  ],
+                  "findings": "Read four canonical Written blocks. W01–03 five learner lines corrected recurrence, index, absolute value notation; exact source delta 32c37b30cad419f1d23f02d21f51aa17ff667bbb; bindings refreshed at e352c8ce147dd7bc65406c32fe7e7f91f85d7088. Rubric unchanged."
                 }
               ],
-              "completed_interactive": 198,
-              "completed_written": 16,
-              "remaining_interactive": 631,
-              "remaining_written": 65,
+              "completed_interactive": 234,
+              "completed_written": 20,
+              "remaining_interactive": 595,
+              "remaining_written": 61,
               "counts": {
                 "CD01": {
                   "interactive": 15,
@@ -6927,12 +7151,17 @@
                   "interactive": 31,
                   "written": 4,
                   "state": "COMPLETE"
+                },
+                "CD07": {
+                  "interactive": 36,
+                  "written": 4,
+                  "state": "COMPLETE"
                 }
               },
-              "next": "CD07 onward; exclude 975 shared and 214 completed Topic-only IDs",
+              "next": "CD08 onward; exclude 975 shared and 254 completed Topic-only IDs",
               "reconciliation": {
-                "expected_cd01_06": 214,
-                "completed_cd01_06": 214,
+                "expected_cd01_07": 254,
+                "completed_cd01_07": 254,
                 "duplicate_ids": 0,
                 "overlap_08_1": 0,
                 "overlap_08_3": 0,
