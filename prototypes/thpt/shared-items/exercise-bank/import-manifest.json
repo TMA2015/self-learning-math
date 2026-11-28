@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "DELTA06_SCOPED_WRITTEN_D6_AND_CD15_REASONING_REVIEW_FULL_ACCEPTANCE_PENDING",
+  "academic_audit": "DELTA07_ELEVEN_WRITTEN_SCOPED_Q18_SELF_VERIFIED_REMAINING_ACCEPTANCE_PENDING",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "df02770b14eb31291859d3e510dd99deae3b0905",
+    "as_of_commit": "e092a6318626dbc66124d6b031b661c609687f24",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Continue remaining affected Written scoped PED/Q18 and X-G.5/X-G.6 review; 40 reference statuses pending (15 math/rubric checks this wave, do not duplicate). Continue affected interactive groups (remaining candidate cognitive demand, notation, distractors, level, source/coverage/exposure), reconcile historical receipts, no full PASS until verified. Projection generation/browser belongs to authorized RELEASE.",
-    "status": "DELTA06_SCOPED_WRITTEN_D6_AND_CD15_REASONING_REVIEW_FULL_ACCEPTANCE_PENDING",
+    "next": "29 Written reference statuses remain pending; reconcile historical S1/PED receipts and exact source delta, close scoped content where warranted. Wave06 15 math/rubric checks retained, do not repeat. Continue affected interactive X-G.5/6, source/outcome/coverage/exposure, Q01–Q18 before handoff. Projection generation/browser verification RELEASE only.",
+    "status": "DELTA07_ELEVEN_WRITTEN_SCOPED_Q18_SELF_VERIFIED_REMAINING_ACCEPTANCE_PENDING",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,109 +112,129 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "delta_audit_wave06",
-    "delta_audit_wave06": {
-      "baseline": "8c70a911936ba448f024fe0bc9b1000aeff25d11",
-      "verified_head": "df02770b14eb31291859d3e510dd99deae3b0905",
+    "current_checkpoint_key": "delta_audit_wave07",
+    "delta_audit_wave07": {
+      "baseline": "2088e603893fba5d432b6ea6bf5b026d4bb1c468",
+      "verified_head": "e092a6318626dbc66124d6b031b661c609687f24",
       "inventory": {
         "interactive_unique": 2214,
         "written_unique": 325,
         "total_unique": 2539,
         "placement_rows": 4301,
-        "evidence": "wave05 exact inventory; only four interactive records and four Written references/source sections changed, IDs, placements and skills unchanged."
+        "evidence": "Prior wave05 exact global inventory preserved: no item ID, placement, interaction, skill or exposure edits."
       },
       "written": {
-        "reference_blob": "cb67d0715a03a072f676bba0059f984d76fd9874",
-        "total": 325,
-        "unique": 325,
-        "all_auto_grade_false": true,
-        "all_source_blob_and_heading_present": true,
-        "all_skill_ids_present": true,
-        "status_source_reviewed": 285,
-        "status_scoped_delta_pending": 39,
-        "status_ped_or_projection_pending": 1,
-        "scope": "15 affected Written tasks read at exact current source blobs, solved and checked rubric sums and alignment; four D6 corrections only; not global Q18 acceptance.",
-        "checks": [
+        "reference_blob": "e4fedd65e8964f9d33c771f1486ea0a9bf4245eb",
+        "scoped_q18_author_self_verified": 11,
+        "source_reviewed_count": 296,
+        "pending_count": 29,
+        "pending_ids": [
+          "THPT-G10-CHIV-W08-FORCE-TR01",
+          "THPT-G10-CHIV-W09",
+          "THPT-G10-CHIV-W10",
+          "THPT-G10-CHIV-W11-ANCHOR",
+          "THPT-G12-B14-W07",
+          "THPT-G10-CHVIII-W25-01",
+          "THPT-G11-CHVIII-B28-W01",
+          "THPT-G11-CHVIII-B29-W01",
+          "THPT-G11-CHVIII-B29-W03",
+          "THPT-G12-B18-W01",
+          "THPT-G12-B18-W03",
+          "THPT-G12-B18-W05",
+          "THPT-G12-B18-W07",
+          "THPT-G12-B19-W03",
+          "THPT-G12-B19-W04",
+          "THPT-G12-B19-W05",
+          "THPT-G12-B09-W03",
+          "THPT-G12-B09-W04",
+          "THPT-G12-B10-W03",
+          "THPT-G11-SUPP-E01-W01",
+          "THPT-G11-SUPP-E01-W02",
+          "THPT-G11-SUPP-E01-W03",
+          "THPT-G11-SUPP-E02-W01",
+          "THPT-G11-SUPP-E02-W02",
+          "THPT-G11-SUPP-E02-W03",
+          "THPT-G11-YR-TRIG-W01",
+          "THPT-G11-YR-DERIV-W01",
+          "THPT-G11-YR-SPACE-W01",
+          "THPT-G11-YR-STAT-W01"
+        ],
+        "accepted_ids": [
+          "THPT-G11-CHIII-W09-02-ANCHOR",
+          "THPT-G12-EXP01-W04",
+          "THPT-G12-EXP01-W05",
+          "THPT-G12-EXP02-W02",
+          "THPT-G12-EXP02-W04",
+          "THPT-G12-EXP02-W05",
+          "THPT-G12-YE-W01",
+          "THPT-G12-YE-W06",
+          "THPT-G12-YE-W08",
+          "THPT-G12-YE-W14",
+          "THPT-G12-YE-W16"
+        ],
+        "scope": "Scoped Written content and directly affected D6 only, existing historical S1/academic/PED evidence, exact source deltas, independent mathematics, pedagogy, rubric and public placement. No blanket Q18/CONTENT_READY or new independent reviewer.",
+        "evidence": [
           {
+            "scope": "G12 year-end review 5 Written",
+            "source": "0c56221669c632c5d1c80a9782eced156c585b5f",
+            "historical_source": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+            "receipt": "3b5b7f70e3b68895fd976a265ae6f454f774e1cc",
+            "matrix": "376731fdc3258eca77a61c731f81176fead8bfd8",
+            "scope_s1": "SGK KNTT G12 volume 2 printed pp90–93, prior audited source; SBT documented gap",
             "ids": [
-              "THPT-G10-CHIV-W08-FORCE-TR01",
-              "THPT-G10-CHIV-W09",
-              "THPT-G10-CHIV-W10",
-              "THPT-G10-CHIV-W11-ANCHOR"
+              "THPT-G12-YE-W01",
+              "THPT-G12-YE-W06",
+              "THPT-G12-YE-W08",
+              "THPT-G12-YE-W14",
+              "THPT-G12-YE-W16"
             ],
-            "blob": "42071d49bd1009136fcf1f5bbf59e70be6807d4a",
-            "evidence": "13 N and opposite vector; 4/8 lengths with signed vectors; midpoint (1;3), centroid (1;1); work 48 J, cos 24/25. Rubrics /4,/7,/7,/7 align."
+            "proof": "Only 5 target headings differ from exact historic source, none removed. O01/O03/O04/O05/O06 mapped. Independent solutions and rubric /5: extrema −1,10 and 3,−22; area 9/2; plane 6x+4y+3z−12=0, distance 12/sqrt61, volume 4; mean4.4 variance3.24 sd1.8; conditional2/3 marginal4/7 non-independent. Source notation, conditions and self-reveal correct. SGK placements WRITTEN and CLIENT_SELF_CHECK_NO_MASTERY only for these rows; projection/reveal not certified."
           },
           {
+            "scope": "G11 B09 grouped statistics",
+            "source": "d79ea3c061515bf5ee609df8133e13894d86752f",
+            "historical_source": "ef7dbfbd55c34abab8a384d4dac3284c100dbaac",
+            "prior_candidate": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+            "receipt": "https://github.com/TMA2015/self-learning-math/issues/687",
+            "scope_s1": "Historical B09 SGK printed pp62–68; SBT pagination correction R03 preserved, no new PDF claim",
             "ids": [
-              "THPT-G12-B14-W07"
+              "THPT-G11-CHIII-W09-02-ANCHOR"
             ],
-            "blob": "24e463e61c6cc4f78dca45c1f19661ffed6786eb",
-            "evidence": "Three cases h<R, h=R, h>R; radius sqrt(R²−h²), surface circle vs solid disk; /5."
+            "proof": "Original source section exactly matches prior candidate section; current stem preserves groups/counts; Q1=110,Q3=120 at common group boundaries, Mo=685/6; distinguish estimated quartile positions and modal concentration, /4 independent scoring. SGK Written and CĐ22 Topic Written reuse one ID."
           },
           {
+            "scope": "G12 two experiences 5 Written and 4 linked D6",
+            "source": "075af6b435194302eba6b7c7813172b245d0967e",
+            "prior_candidate": "6f0a17cdc229e4b821f9ca80aef9e9ede0e6cb14",
+            "historical_source": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+            "receipt": "b765e732fa8049482936dbededfafd7b9eb99341",
+            "pr": 733,
+            "scope_s1": "SGK G12 volume 2 printed pp81–89; historical independent R00/R01 Q18 PASS",
             "ids": [
-              "THPT-G12-B18-W01",
-              "THPT-G12-B18-W03",
-              "THPT-G12-B18-W05",
-              "THPT-G12-B18-W07",
-              "THPT-G12-B19-W03",
-              "THPT-G12-B19-W04",
-              "THPT-G12-B19-W05"
+              "THPT-G12-EXP01-W04",
+              "THPT-G12-EXP01-W05",
+              "THPT-G12-EXP02-W02",
+              "THPT-G12-EXP02-W04",
+              "THPT-G12-EXP02-W05"
             ],
-            "previous_blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
-            "corrected_blob": "3e827236f0aade2567c5b07c9e9647a9a10f0372",
-            "changed_ids": [
-              "THPT-G12-B18-W03",
-              "THPT-G12-B18-W05",
-              "THPT-G12-B19-W04",
-              "THPT-G12-B19-W05"
-            ],
-            "evidence": "Independent arithmetic 4/9; 2/5 and 2/7; 7/10 and 7/13; 3/5 with complement 3/10+1/10; 1/2 and 16/25; 7/10 coincides with reverse condition; 2/13. All /5. B19-W04 D6 was false as universal inequality, corrected to distinguish conditional direction and possible equality; other raw conditional notation/wording normalized. Exact section diff four only, stems/keys/solutions/rubrics untouched. W05 remains practice-only (same example). Three unchanged items retain previous identical-section source locks."
-          },
-          {
-            "ids": [
-              "THPT-G12-B09-W03",
-              "THPT-G12-B09-W04",
-              "THPT-G12-B10-W03"
-            ],
-            "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
-            "evidence": "Grouped R 30→60, no IQR inference; n32, cumulative 4/12/24/32, Q3 boundary; sum 152, mean 4, variance 3 by two methods; /5 each."
+            "proof": "Exact 5 outcome sections differ from historical source, 4 D6 lines changed from prior candidate, no other lines changed. Independent solutions /5: trapezoid error exactly 1/(6n²) only x², n13 minimal; nonnegative velocity 22m and uncertainty; prism six vertices nine edges five faces V6; Möbius reversed edge pairs; model report supports either Penrose or Möbius, paper/GeoGebra alternatives and limits. D6 error-bound distinction corrected, units and notation improved. SGK Written placements unscored, no actual GeoGebra/browser test claimed."
           }
         ]
       },
-      "cd15": {
-        "blob": "43bb6a7d54d7ac1cfd85d89d6174d0765023e059",
-        "ids": [
-          "THPT-TOP15-P23",
-          "THPT-TOP15-P24",
-          "THPT-TOP15-P25",
-          "THPT-TOP15-P26"
-        ],
-        "basis_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
-        "basis_headings": [
-          "TOP15-M09",
-          "TOP15-M13",
-          "TOP15-M22"
-        ],
-        "evidence": "SE via two common points; parallel planes via intersecting lines and similarity, 3:2; 36 cm² both by similarity and parallel-plane translation; 24 cm² face collapses to AB, zero area. Correct choices now include justification, distractors grounded in misconceptions, hints aligned, P24 plane-parallel proof expanded; X-G.5 normalized affected choices. Correct option IDs C,D,A,B unchanged and key equals selected option; four unique options each. 22 other records byte-equivalent after JSON parse. No new independent S1 verification."
-      },
       "q_audit_scope": {
-        "Q01_Q02": "Existing source/outcome evidence retained; CD15 basis headings checked; fresh S1/whole coverage not certified.",
-        "Q03_Q04_Q07_Q08_Q09_Q10_Q11_Q12_Q13_Q17": "Not reopened full knowledge/journeys; scoped D6 repair and pedagogical reasoning only.",
-        "Q05_Q14": "Four CD15 items strengthened; rest of bank X-G.5/6 and level/cognitive demand audit pending.",
-        "Q06": "15 targeted Written math/rubric checks; four D6 source corrections, 40 pending record statuses preserved pending applicable Q18/PED.",
-        "Q15": "Readback 325 unique Written, all source/heading/skills present, auto_grade=false; global counts preserved by unchanged IDs/placements.",
-        "Q16": "No private RD1/scoring/runtime changes. Practice only; actual replay whole-submit verification RELEASE pending.",
-        "Q18": "No full author signoff, P0/P1=0 or CONTENT_READY assertion; remaining affected scope must pass substantive review."
+        "Q01_Q02": "Historical S1 receipt and outcome matrices for 11 scoped Written reconciled; no fresh whole-bank S1 claim.",
+        "Q05_Q06_Q08_Q10_Q12_Q13": "11 scoped Written and linked D6 verified, four D6 lines corrected; full remaining affected scope pending.",
+        "Q15_Q16": "325 IDs unique, all Written auto_grade=false; observed public Written and selfcheck placements; unchanged global IDs and placements, no private RD1 changes.",
+        "Q03_Q04_Q07_Q09_Q11_Q14_Q17": "Existing unaffected knowledge/journey evidence preserved; no whole-path certification.",
+        "Q18": "11 scoped author self-verifications, historical independent receipts retained only on original snapshots. 29 pending reference statuses. No global P0/P1=0, CONTENT_READY or release authorization."
       },
       "protected_scope": "No merge/deploy, no live site/runtime/Final Submit/Mastery/Firebase or private RD1 changes."
     },
     "previous_manifest": {
-      "commit": "8c70a911936ba448f024fe0bc9b1000aeff25d11",
-      "blob": "65b9c7cd779a406a80666128fbc8daa33694f058",
-      "key": "delta_audit_wave05",
-      "note": "Prior inventory, 33 first-try bindings and two Written projection bindings retained at exact snapshot; wave04 Written receipts via prior pointer."
+      "commit": "2088e603893fba5d432b6ea6bf5b026d4bb1c468",
+      "blob": "a1bd46e62455a279edfe302b278b5b601af55d4f",
+      "key": "delta_audit_wave06",
+      "note": "15 Written math/rubric checks, four D6 repairs, CD15 P23–P26 reasoning variants, prior wave05 projection bindings accessible through pointer."
     }
   },
   "pending_review": {
@@ -273,7 +293,8 @@
           "THPT-G12-B10-W03"
         ],
         "history_key": "exercise_candidate_cd21_cd22",
-        "wave04_note": "Written members rechecked in scoped source pass; final acceptance pending. Interactive members unchanged."
+        "wave04_note": "Written members rechecked in scoped source pass; final acceptance pending. Interactive members unchanged.",
+        "wave07_note": "G11 W09-02-ANCHOR scoped content Q18 author self verified; existing other G12 pending IDs retained, wave06 math/rubric evidence preserved."
       }
     ],
     "older_written_findings": {
@@ -349,8 +370,9 @@
         "THPT-G12-EXP02-W04",
         "THPT-G12-EXP02-W05"
       ],
-      "note": "Five notes addressed; EXP01-W01 retained historical source (distinct double verification from A01; not independent evidence). Historical R01 Q18 correction #733 remains PASS. Scoped Delta PED/Q18 and projection pending.",
-      "candidate_source_blob": "6f0a17cdc229e4b821f9ca80aef9e9ede0e6cb14"
+      "note": "Five changed Written and four linked D6 verified against #733 receipt. EXP01-W01 retained historical source and practice-only status. No actual software or projection verification.",
+      "candidate_source_blob": "075af6b435194302eba6b7c7813172b245d0967e",
+      "status": "FIVE_SCOPED_WRITTEN_Q18_AUTHOR_SELF_VERIFIED_PROJECTION_PENDING_RELEASE"
     },
     "g12_yearend_written": {
       "source_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
@@ -361,9 +383,10 @@
         "THPT-G12-YE-W14",
         "THPT-G12-YE-W16"
       ],
-      "note": "Historical R00 PASS reconciled (#735). Five notes addressed in canonical source; targeted math verified, scoped PED/Q18 and projection regeneration pending. Do not repeat historical reviewer audit.",
-      "candidate_source_blob": "88959321085354ae7c6c2cc17c4e598b9886f8a9",
-      "receipt": "3b5b7f70e3b68895fd976a265ae6f454f774e1cc"
+      "note": "Five affected Written source delta accepted on exact historical #735 receipt and wave07 evidence. System exposure/release gates remain separate.",
+      "candidate_source_blob": "0c56221669c632c5d1c80a9782eced156c585b5f",
+      "receipt": "3b5b7f70e3b68895fd976a265ae6f454f774e1cc",
+      "status": "SCOPED_WRITTEN_Q18_AUTHOR_SELF_VERIFIED_PROJECTION_PENDING_RELEASE"
     },
     "sgk_g11_vii_ix_written_delta": "G11 ChVIII B28-W01/B29-W01/B29-W03 corrected in exact public source; candidate 6637d7661bcc2ac982c19e352d7acc3ba11748c9, historical reviewed blob preserved; targeted PED/Q18 and projection pending.",
     "sgk_g12_chvi_written_delta": "Seven tasks math/rubric checked wave06; four D6 wording/notation sections corrected on 3e827236f0aade2567c5b07c9e9647a9a10f0372, three unchanged exact prior sections. B19-W05 practice only. Final applicable Q18/PED and projection pending.",
