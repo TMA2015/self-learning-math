@@ -433,9 +433,9 @@
   },
   {
     "item_id": "THPT-G12-B18-A03",
-    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-A03",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B18-A03.DELTA07C",
     "stem": "Chọn đồng khả năng một người trong đội. Có 15 người chơi bóng rổ, 12 người chơi bóng đá, 6 chơi cả hai. Tính xác suất chơi bóng rổ khi biết chơi bóng đá và xác suất ngược lại; giải thích sự khác nhau. Chọn phương án đúng sau khi tự giải.",
-    "answer_key": "\\(\\frac12;\\frac25\\)",
+    "answer_key": "\\(\\frac12;\\frac25\\), vì cùng có 6 người ở giao nhưng hai điều kiện lần lượt có 12 và 15 người.",
     "worked_solution": "Gọi R là chơi rổ, D là chơi đá. Giao có 6 người. \\(P(R\\mid D)=\\frac6{12}=\\frac12\\), còn \\(P(D\\mid R)=\\frac6{15}=\\frac25\\). Hai xác suất có cùng số người ở giao nhưng điều kiện khác nhau.",
     "skill_ids": [
       "G12-CHVI-B18-O03"
@@ -476,7 +476,7 @@
       },
       {
         "id": "C",
-        "text": "\\(\\frac12;\\frac25\\)"
+        "text": "\\(\\frac12;\\frac25\\), vì cùng có 6 người ở giao nhưng hai điều kiện lần lượt có 12 và 15 người."
       },
       {
         "id": "D",
@@ -1192,9 +1192,9 @@
   },
   {
     "item_id": "THPT-G12-B19-P01",
-    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-P01",
+    "content_version": "SGK-G12-CHVI-BANK-CANDIDATE-20261127-THPT-G12-B19-P01.DELTA07C",
     "stem": "Cho \\(P(A)=\\frac25\\). Tính \\(P(\\overline A)\\) và giải thích vì sao tổng xác suất hai biến cố bằng 1. Chọn phương án đúng sau khi tự giải.",
-    "answer_key": "\\(\\frac{3}{5}\\)",
+    "answer_key": "\\(\\frac35\\); A và \\(\\overline A\\) rời nhau và hợp bằng không gian mẫu, nên tổng xác suất bằng 1.",
     "worked_solution": "\\(P(\\overline A)=1-\\frac25=\\frac35\\). Hai biến cố rời nhau, hợp là toàn bộ không gian mẫu, nên tổng xác suất bằng 1.",
     "skill_ids": [
       "G12-CHVI-B19-O01"
@@ -1231,7 +1231,7 @@
       },
       {
         "id": "B",
-        "text": "\\(\\frac{3}{5}\\)"
+        "text": "\\(\\frac35\\); A và \\(\\overline A\\) rời nhau và hợp bằng không gian mẫu, nên tổng xác suất bằng 1."
       },
       {
         "id": "C",
