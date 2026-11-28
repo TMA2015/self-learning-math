@@ -2,7 +2,7 @@
   {
     "item_id": "THPT-G11-CHVII-B22-C01",
     "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B22-C01",
-    "stem": "Hai đường có góc giữa hai tia cùng phương được chọn là \\(145^\\circ\\). Góc giữa hai đường thẳng là bao nhiêu?",
+    "stem": "Qua cùng một điểm, dựng hai tia lần lượt cùng phương với hai đường thẳng đã cho. Góc giữa hai tia là \\(145^\\circ\\). Góc giữa hai đường thẳng đã cho bằng bao nhiêu?",
     "answer_key": "35°",
     "worked_solution": "Góc giữa hai đường thẳng là góc không tù giữa hai phương. Hai góc kề bù có số đo \\(145^\\circ\\) và \\(180^\\circ-145^\\circ=35^\\circ\\), nên chọn \\(35^\\circ\\).",
     "skill_ids": [
@@ -430,11 +430,11 @@
       },
       {
         "id": "C",
-        "text": "Chưa đủ; phải đo mọi đường trên sân."
+        "text": "Chưa đủ; phải kiểm từng đường trên sân."
       },
       {
         "id": "D",
-        "text": "Chưa đủ; cần kiểm thêm một phương khác trong sân, cắt phương đã biết."
+        "text": "Chưa đủ; cần kiểm cột vuông góc với một đường khác trong sân, cắt đường đã biết."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -477,15 +477,15 @@
     "options": [
       {
         "id": "A",
-        "text": "d vuông góc (P)."
+        "text": "\\(d\\perp(P)\\), vì d vuông góc với hai đường cắt nhau nằm trong (P)."
       },
       {
         "id": "B",
-        "text": "d song song (P)."
+        "text": "\\(d\\parallel(P)\\)."
       },
       {
         "id": "C",
-        "text": "d nằm trong (P)."
+        "text": "\\(d\\subset(P)\\)."
       },
       {
         "id": "D",
@@ -918,7 +918,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Một điểm."
+        "text": "Một điểm, vì mọi điểm trên l có cùng đường chiếu l."
       },
       {
         "id": "B",
@@ -2811,7 +2811,7 @@
   {
     "item_id": "THPT-G11-B22-KFT01",
     "content_version": "SGK-G11-CHVII-BANK-CANDIDATE-20261127-THPT-G11-B22-KFT01",
-    "stem": "Hình hộp chữ nhật có cạnh AB theo phương ngang và CC′ theo phương thẳng đứng. Chúng không cắt nhau; vì CC′//AA′ và AB⊥AA′, suy ra (AB,CC′)=90°. Vì sao không cần AB gặp CC′? Chọn phương án đúng sau khi tự giải thích.",
+    "stem": "Trong hình hộp chữ nhật \\(ABCD.A'B'C'D'\\), hai đường \\(AB\\) và \\(CC'\\) không cắt nhau. Xác định góc giữa chúng và giải thích cách xác định góc dù hai đường không gặp nhau. Chọn phương án đúng sau khi tự giải thích.",
     "answer_key": "Góc giữa hai đường thẳng được xác định theo phương; qua A dựng AA′ song song CC′ rồi xét góc giữa AB và AA′.",
     "worked_solution": "Qua A, đường thẳng song song CC′ là AA′. Vì hình hộp chữ nhật có \\(AB\\perp AA'\\), góc giữa AB và CC′ bằng góc giữa AB và AA′, tức \\(90^\\circ\\). Định nghĩa góc giữa hai đường thẳng không gian dựa vào phương, nên hai đường chéo nhau vẫn có thể vuông góc.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
@@ -2860,15 +2860,15 @@
     "options": [
       {
         "id": "A",
-        "text": "Hai đường chỉ vuông góc nếu có giao điểm."
+        "text": "Không có góc vuông, vì hai đường không có giao điểm."
       },
       {
         "id": "B",
-        "text": "Góc giữa hai đường thẳng được xác định theo phương; qua A dựng AA′ song song CC′ rồi xét góc giữa AB và AA′."
+        "text": "Góc bằng \\(90^\\circ\\): qua A, đường \\(AA'\\) song song \\(CC'\\) và \\(AB\\perp AA'\\)."
       },
       {
         "id": "C",
-        "text": "AB và CC′ song song vì không cắt nhau."
+        "text": "Góc bằng 0°, vì AB và CC′ không cắt nhau."
       },
       {
         "id": "D",
