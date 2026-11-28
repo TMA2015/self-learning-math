@@ -1192,9 +1192,9 @@
   },
   {
     "item_id": "THPT-TOP15-P23",
-    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P23",
-    "stem": "Hình chóp \\(S.ABCD\\) có đáy là tứ giác lồi, các đường thẳng AB và CD cắt nhau tại E (ngoài đoạn AB và CD). Tìm giao tuyến của \\((SAB)\\) và \\((SCD)\\).",
-    "answer_key": "Đường thẳng SE.",
+    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P23.DELTA06",
+    "stem": "Hình chóp \\(S.ABCD\\) có đáy là tứ giác lồi, các đường thẳng AB và CD cắt nhau tại E (ngoài đoạn AB và CD). Chọn kết luận về giao tuyến của \\((SAB)\\) và \\((SCD)\\) kèm căn cứ đúng.",
+    "answer_key": "Đường thẳng SE, vì S và E là hai điểm chung phân biệt của hai mặt phẳng phân biệt.",
     "worked_solution": "E thuộc AB nên thuộc \\((SAB)\\); E thuộc CD nên thuộc \\((SCD)\\). S cũng thuộc cả hai mặt và S khác E. Hai mặt phân biệt vì S ngoài đáy và AB, CD là hai đường phân biệt trong đáy. Vậy giao tuyến là SE. Không dùng định lí giao tuyến song song khi AB và CD cắt nhau.",
     "skill_ids": [
       "G11-B10-PLANE_INTERSECTION",
@@ -1206,7 +1206,7 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Tìm điểm chung thứ hai của hai mặt ngoài S."
+      "Ngoài S, hãy tìm một điểm nằm trên cả AB và CD; kiểm hai mặt có phân biệt không."
     ],
     "remediation": "Nếu chỉ tìm phương mà quên giao điểm E, đọc Kiến thức 2.4; luyện THPT-TOP15-P13 để phân biệt trường hợp AB song song CD.",
     "rubric": null,
@@ -1214,19 +1214,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Đường qua S song song AB."
+        "text": "Đường qua S song song AB, vì giao tuyến luôn song song với một cạnh đáy."
       },
       {
         "id": "B",
-        "text": "Đường thẳng AC."
+        "text": "Đường thẳng AC, vì A và C đều thuộc mặt đáy."
       },
       {
         "id": "C",
-        "text": "Đường thẳng SE."
+        "text": "Đường thẳng SE, vì S và E là hai điểm chung phân biệt của hai mặt phẳng phân biệt."
       },
       {
         "id": "D",
-        "text": "Đường thẳng CD."
+        "text": "Đường thẳng CD, vì CD nằm trong \\((SCD)\\)."
       }
     ],
     "interaction": {
@@ -1244,14 +1244,15 @@
       "scope": "NEW_DISTINCT_COVERAGE_VARIANT_NOT_IMPORTED_SGK_ITEM"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_INTERACTION_CANDIDATE"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "author_review_note": "DELTA06 targeted Q05/PED5/X-G.5/X-G.6: checked mathematical result independently, reason-bearing choices and misconceptions, hint and solution alignment. Same ID, option IDs, correct option ID, difficulty, skill and placements. Scoped author review only; no full Q18 acceptance."
   },
   {
     "item_id": "THPT-TOP15-P24",
-    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P24",
-    "stem": "Trong tứ diện \\(S.ABC\\), M,N,K lần lượt thuộc phần trong của SA,SB,SC. Biết \\(MN\\parallel AB\\), \\(NK\\parallel BC\\), \\(MN=6\\) cm và \\(AB=10\\) cm. Tìm quan hệ hai mặt \\((MNK),(ABC)\\) và tỉ số \\(SK:KC\\).",
-    "answer_key": "\\((MNK)\\parallel(ABC)\\); \\(SK:KC=3:2\\).",
-    "worked_solution": "MN và NK lần lượt song song AB và BC, nằm ngoài mặt đáy vì M,N,K thuộc phần trong các cạnh bên. Chúng cắt nhau tại N nên \\((MNK)\\parallel(ABC)\\). Tam giác SMN đồng dạng SAB, \\(SN/SB=MN/AB=3/5\\). Tam giác SNK đồng dạng SBC, \\(SK/SC=SN/SB=3/5\\). Vậy \\(KC/SC=2/5\\), \\(SK:KC=3:2\\).",
+    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P24.DELTA06",
+    "stem": "Trong tứ diện \\(S.ABC\\), M,N,K lần lượt thuộc phần trong của SA,SB,SC. Biết \\(MN\\parallel AB\\), \\(NK\\parallel BC\\), \\(MN=6\\,\\mathrm{cm}\\) và \\(AB=10\\,\\mathrm{cm}\\). Chọn kết luận về hai mặt \\((MNK),(ABC)\\) và tỉ số \\(SK:KC\\), kèm lập luận đúng.",
+    "answer_key": "\\((MNK)\\parallel(ABC)\\) vì hai đường cắt nhau MN,NK cùng song song mặt đáy; \\(SK:KC=3:2\\) vì \\(SK/SC=3/5\\).",
+    "worked_solution": "Vì \\(MN\\parallel AB\\) và \\(AB\\subset(ABC)\\), mà M ở trong SA nên M không thuộc đáy, suy ra \\(MN\\parallel(ABC)\\). Tương tự, \\(NK\\parallel BC\\), N ngoài đáy nên \\(NK\\parallel(ABC)\\). Hai đường MN,NK cắt nhau tại N, do đó \\((MNK)\\parallel(ABC)\\). Tam giác SMN đồng dạng SAB, nên \\(\\frac{SN}{SB}=\\frac{MN}{AB}=\\frac35\\). Tam giác SNK đồng dạng SBC, nên \\(\\frac{SK}{SC}=\\frac{SN}{SB}=\\frac35\\). Vì K thuộc phần trong SC, \\(\\frac{KC}{SC}=1-\\frac35=\\frac25\\). Vậy \\(SK:KC=3:2\\). Kiểm lại: ba phần SK cộng hai phần KC bằng năm phần SC.",
     "skill_ids": [
       "G11-B13-PRISM_RATIO",
       "G11-B13-PLANE_TEST"
@@ -1262,7 +1263,7 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Dùng hai đường cắt nhau để chứng minh song song mặt, rồi dùng hai tam giác đồng dạng."
+      "Kiểm MN và NK có song song với mặt đáy hay không; sau đó xét hai tam giác đồng dạng có cạnh chung SB."
     ],
     "remediation": "Nếu viết SK:KC bằng SK:SC, vẽ cạnh SC thành 5 phần và thử THPT-TOP15-P16.",
     "rubric": null,
@@ -1270,19 +1271,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\((MNK)\\parallel(ABC)\\); \\(SK:KC=2:3\\)."
+        "text": "\\((MNK)\\parallel(ABC)\\); \\(SK:KC=2:3\\), vì phần từ K đến C bằng ba phần."
       },
       {
         "id": "B",
-        "text": "\\((MNK)\\) cắt \\((ABC)\\); \\(SK:KC=3:2\\)."
+        "text": "\\((MNK)\\) cắt \\((ABC)\\); \\(SK:KC=3:2\\), vì hai đường MN và NK cắt nhau."
       },
       {
         "id": "C",
-        "text": "\\((MNK)\\parallel(ABC)\\); \\(SK:KC=3:5\\)."
+        "text": "\\((MNK)\\parallel(ABC)\\); \\(SK:KC=3:5\\), vì \\(SK/SC=3/5\\)."
       },
       {
         "id": "D",
-        "text": "\\((MNK)\\parallel(ABC)\\); \\(SK:KC=3:2\\)."
+        "text": "\\((MNK)\\parallel(ABC)\\) vì hai đường cắt nhau MN,NK cùng song song mặt đáy; \\(SK:KC=3:2\\) vì \\(SK/SC=3/5\\)."
       }
     ],
     "interaction": {
@@ -1300,13 +1301,14 @@
       "scope": "NEW_DISTINCT_COVERAGE_VARIANT_NOT_IMPORTED_SGK_ITEM"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_INTERACTION_CANDIDATE"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "author_review_note": "DELTA06 targeted Q05/PED5/X-G.5/X-G.6: checked mathematical result independently, reason-bearing choices and misconceptions, hint and solution alignment. Same ID, option IDs, correct option ID, difficulty, skill and placements. Scoped author review only; no full Q18 acceptance."
   },
   {
     "item_id": "THPT-TOP15-P25",
-    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P25.DELTA01",
-    "stem": "Trong tứ diện \\(S.ABC\\), lấy \\(M,N,K\\) lần lượt thuộc phần trong các cạnh \\(SA,SB,SC\\) sao cho mặt phẳng \\((MNK)\\) song song với \\((ABC)\\). Biết \\(\\frac{SM}{SA}=\\frac34\\) và diện tích tam giác \\(ABC\\) bằng \\(64\\,\\mathrm{cm}^2\\). Chiếu vuông góc tam giác \\(MNK\\) lên mặt phẳng \\((ABC)\\). Tính diện tích tam giác \\(MNK\\) và diện tích tam giác ảnh.",
-    "answer_key": "Cả hai diện tích đều bằng \\(36\\,\\mathrm{cm}^2\\).",
+    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P25.DELTA06",
+    "stem": "Trong tứ diện \\(S.ABC\\), lấy \\(M,N,K\\) lần lượt thuộc phần trong các cạnh \\(SA,SB,SC\\) sao cho mặt phẳng \\((MNK)\\) song song với \\((ABC)\\). Biết \\(\\frac{SM}{SA}=\\frac34\\) và diện tích tam giác \\(ABC\\) bằng \\(64\\,\\mathrm{cm}^2\\). Chiếu vuông góc tam giác \\(MNK\\) lên mặt phẳng \\((ABC)\\). Chọn hai diện tích và cách giải thích đúng.",
+    "answer_key": "Cả hai diện tích bằng \\(36\\,\\mathrm{cm}^2\\): diện tích mặt cắt theo bình phương tỉ số đồng dạng, phép chiếu vuông góc giữa hai mặt song song giữ diện tích.",
     "worked_solution": "Vì hai mặt phẳng song song, các cạnh tương ứng của hai tam giác song song. Tỉ số đồng dạng của \\(MNK\\) và \\(ABC\\) là \\(\\frac{SM}{SA}=\\frac34\\). Tỉ số diện tích bằng bình phương tỉ số đồng dạng, nên \\(S_{MNK}=\\left(\\frac34\\right)^2\\cdot64=36\\,\\mathrm{cm}^2\\). Khi chiếu vuông góc từ mặt phẳng \\((MNK)\\) xuống mặt phẳng \\((ABC)\\), mọi điểm được dịch chuyển theo cùng một vectơ vuông góc với đáy. Tam giác ảnh bằng tam giác \\(MNK\\), nên diện tích ảnh cũng bằng \\(36\\,\\mathrm{cm}^2\\).",
     "skill_ids": [
       "G11-B13-PRISM_RATIO",
@@ -1318,27 +1320,27 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Tách bài toán thành diện tích mặt cắt và diện tích ảnh."
+      "Tách bài toán thành diện tích mặt cắt và diện tích ảnh. Hai mặt phẳng song song cách nhau một khoảng không đổi."
     ],
-    "remediation": "Nếu lấy 3/4 nhân diện tích, ôn Kiến thức 4.4 và 5.5; thử THPT-TOP15-P04.",
+    "remediation": "Nếu lấy \\(\\frac34\\) nhân diện tích, ôn Kiến thức 4.4 và 5.5; thử THPT-TOP15-P04.",
     "rubric": null,
     "exercise_type": "INTERACTIVE",
     "options": [
       {
         "id": "A",
-        "text": "Cả hai diện tích đều bằng \\(36\\,\\mathrm{cm}^2\\)."
+        "text": "Cả hai diện tích bằng \\(36\\,\\mathrm{cm}^2\\): diện tích mặt cắt theo bình phương tỉ số đồng dạng, phép chiếu vuông góc giữa hai mặt song song giữ diện tích."
       },
       {
         "id": "B",
-        "text": "Cả hai diện tích bằng 48 cm²."
+        "text": "Cả hai diện tích bằng \\(48\\,\\mathrm{cm}^2\\): diện tích mặt cắt theo tỉ số độ dài."
       },
       {
         "id": "C",
-        "text": "Thiết diện 36 cm², ảnh 64 cm²."
+        "text": "Thiết diện \\(36\\,\\mathrm{cm}^2\\), ảnh \\(64\\,\\mathrm{cm}^2\\): ảnh phải phủ hết đáy."
       },
       {
         "id": "D",
-        "text": "Thiết diện 48 cm², ảnh 36 cm²."
+        "text": "Thiết diện \\(48\\,\\mathrm{cm}^2\\), ảnh \\(36\\,\\mathrm{cm}^2\\): diện tích thiết diện theo tỉ số độ dài, ảnh theo bình phương tỉ số."
       }
     ],
     "interaction": {
@@ -1357,13 +1359,13 @@
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_INTERACTION_CANDIDATE",
-    "author_review_note": "Clarified vertex-edge correspondence required to use SM/SA as similarity ratio; checked same key and no placement or skill change. Targeted author review; independent acceptance pending."
+    "author_review_note": "DELTA06 targeted Q05/PED5/X-G.5/X-G.6: checked mathematical result independently, reason-bearing choices and misconceptions, hint and solution alignment. Same ID, option IDs, correct option ID, difficulty, skill and placements. Scoped author review only; no full Q18 acceptance."
   },
   {
     "item_id": "THPT-TOP15-P26",
-    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P26",
-    "stem": "Trong hình hộp chữ nhật \\(ABCD.A'B'C'D'\\), \\(AB=6\\) cm, \\(AA'=4\\) cm. Chiếu vuông góc mặt bên \\(ABB'A'\\) (cả phần trong) lên đáy \\((ABCD)\\). So sánh diện tích mặt bên và diện tích ảnh trong mặt đáy.",
-    "answer_key": "Mặt bên có diện tích \\(24\\,\\mathrm{cm}^2\\); ảnh là đoạn AB, có diện tích bằng 0.",
+    "content_version": "CD15-BANK-NEW-20261127-THPT-TOP15-P26.DELTA06",
+    "stem": "Trong hình hộp chữ nhật \\(ABCD.A'B'C'D'\\), \\(AB=6\\,\\mathrm{cm}\\), \\(AA'=4\\,\\mathrm{cm}\\). Chiếu vuông góc mặt bên \\(ABB'A'\\) (cả phần trong) lên đáy \\((ABCD)\\). Chọn kết luận về diện tích mặt bên, ảnh và lý do đúng.",
+    "answer_key": "Mặt bên có diện tích \\(24\\,\\mathrm{cm}^2\\); ảnh là đoạn AB, diện tích bằng 0, vì các cạnh bên cùng phương chiếu.",
     "worked_solution": "Mặt bên là hình chữ nhật có diện tích \\(AB\\cdot AA'=6\\cdot4=24\\,\\mathrm{cm}^2\\). Vì các cạnh bên vuông góc đáy, A' chiếu thành A, B' chiếu thành B; mọi điểm trên mặt bên có ảnh trên đoạn AB. Ảnh là đoạn AB chứ không phải một miền hai chiều, nên diện tích bằng 0. Phép chiếu không bảo toàn diện tích trong mọi cấu hình.",
     "skill_ids": [
       "G11-B14-DEGENERACY",
@@ -1375,7 +1377,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Xác định ảnh bốn đỉnh và các đoạn nối trong mặt bên."
+      "Xác định ảnh bốn đỉnh. Sau đó xét ảnh của các điểm trên đoạn thẳng song song AA'."
     ],
     "remediation": "Nếu cho rằng mọi phép chiếu giữ diện tích, ôn Kiến thức 5.2 và 5.5; thử THPT-TOP15-P21.",
     "rubric": null,
@@ -1383,19 +1385,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Cả hai diện tích bằng 24 cm²."
+        "text": "Cả hai diện tích bằng \\(24\\,\\mathrm{cm}^2\\), vì phép chiếu vuông góc luôn giữ diện tích."
       },
       {
         "id": "B",
-        "text": "Mặt bên có diện tích \\(24\\,\\mathrm{cm}^2\\); ảnh là đoạn AB, có diện tích bằng 0."
+        "text": "Mặt bên có diện tích \\(24\\,\\mathrm{cm}^2\\); ảnh là đoạn AB, diện tích bằng 0, vì các cạnh bên cùng phương chiếu."
       },
       {
         "id": "C",
-        "text": "Mặt bên 24 cm²; ảnh là đoạn AA', diện tích 0."
+        "text": "Mặt bên có diện tích \\(24\\,\\mathrm{cm}^2\\); ảnh là đoạn AA', diện tích bằng 0, vì cạnh bên vuông góc đáy."
       },
       {
         "id": "D",
-        "text": "Mặt bên 10 cm²; ảnh là hình chữ nhật diện tích 24 cm²."
+        "text": "Mặt bên có diện tích \\(24\\,\\mathrm{cm}^2\\); ảnh là hình chữ nhật có diện tích chưa xác định vì chưa biết BC."
       }
     ],
     "interaction": {
@@ -1413,6 +1415,7 @@
       "scope": "NEW_DISTINCT_COVERAGE_VARIANT_NOT_IMPORTED_SGK_ITEM"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "AUTHOR_INTERACTION_CANDIDATE"
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "author_review_note": "DELTA06 targeted Q05/PED5/X-G.5/X-G.6: checked mathematical result independently, reason-bearing choices and misconceptions, hint and solution alignment. Same ID, option IDs, correct option ID, difficulty, skill and placements. Scoped author review only; no full Q18 acceptance."
   }
 ]
