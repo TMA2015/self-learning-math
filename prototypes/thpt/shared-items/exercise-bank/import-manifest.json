@@ -1,6 +1,6 @@
 {
   "manifest_version": "2.0-compact",
-  "status": "CONTENT_READY",
+  "status": "Q18_CONTENT_CHECK_PENDING",
   "base_commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
   "scope": "Public shared THPT exercise bank: CD01–22, all 24 SGK chapters G10–G12, and 3 supplementary groups; 79 SGK lessons. Scoped migration only, not a new verdict on unchanged Knowledge or independent assessment.",
   "counts": {
@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "Q18_AUTHOR_SELF_VERIFIED_APPLICABLE_EXERCISE_BANK_SCOPE",
+  "academic_audit": "X-G.5_SOURCE_NOTATION_REMAINS_OPEN",
   "interaction_conversion": "Candidate authoring and scoped review complete; source locked; RELEASE projection and runtime integration not performed.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -29,7 +29,7 @@
     "draft_pr": "https://github.com/TMA2015/self-learning-math/pull/1091",
     "governance_pr": "https://github.com/TMA2015/self-learning-math/pull/1130",
     "standard": "SLM-THPT-QUALITY-ONE v3.2.0 X-G.5/X-G.6; use effective GitHub standard and owner decisions",
-    "mode": "AUTHORING_CONTENT_READY_NO_CUTOVER"
+    "mode": "AUTHORING_CANDIDATE_NO_CUTOVER"
   },
   "historical_snapshot": {
     "commit": "db24d69c05e230f1e50fb51d94b7b30ab37cf1f9",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "b447f210d729e417b90183548e87ae9348d3ff1f",
+    "as_of_commit": "59c474b46640a344020aeacf01721ab6f620f116",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "AUTHORING completed; RELEASE intake only under separate owner authorization. No runtime integration, QA, merge or deploy in this PR.",
-    "status": "CONTENT_READY",
+    "next": "Only remaining item08 X-G.5: verify all student-visible exercise fields at source using prior exact accepted evidence where applicable, fix actual raw structured notation and other X-G.5 violations; Written canonical sources not reference metadata. Preserve mathematical content, IDs, scores, rubric and prior PASS. Then re-sign same Q18/V2 and restore READY/REGISTER; no new audit standard or runtime work.",
+    "status": "CHECKLIST_08_XG5_SOURCE_NOTATION_PENDING",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -175,7 +175,7 @@
       "handoff": "prototypes/thpt/release-handoffs/THPT-SHARED-EXERCISE-BANK-1090_HANDOFF_V2.md",
       "ready": "prototypes/thpt/release-queue/ready/THPT-SHARED-EXERCISE-BANK-1090.md",
       "handoff_completion": {
-        "state": "CONTENT_READY",
+        "state": "WITHDRAWN_XG5_INCOMPLETE",
         "source_commit": "873bd9c8225e976b5f72262b2ca21193e5dfc946",
         "source_index_blob": "0f48aa5a250e7bec93c2ae66cbd6f756ce6ee931",
         "receipt_blob": "e6d506e8038951765e9171a6aabf6f5081643fe4",
@@ -193,7 +193,9 @@
           "validator": true,
           "author_gates": true,
           "release_gates_open": true
-        }
+        },
+        "withdrawn_snapshot": "10549617b20a9790fa2e142f3446f0f23bd6cdba",
+        "reason": "Premature acceptance; item08 did not establish X-G.5 conformance across all student-visible fields. Confirmed THPT-TOP14-T20 raw ±b/a in hint; corrected using equivalent LaTeX."
       }
     },
     "previous_manifest": {
@@ -203,7 +205,7 @@
     }
   },
   "pending_review": {
-    "scope_warning": "AUTHORING CONTENT_READY, scoped self-verification; no authoring P0/P1 open. Preserve accepted prior Knowledge and independent assessment scopes. RELEASE integration, browser QA, exact HEAD CI and separate owner authorization pending.",
+    "scope_warning": "Not CONTENT_READY. X-G.5 source notation pending, previous unrelated PASS evidence retained; no RELEASE intake.",
     "projection_flags": {
       "status": "ALL_80_TRIAGED_35_CUTOVER_BINDINGS_SPECIFIED",
       "total_flags": 80,
