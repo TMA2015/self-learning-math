@@ -1193,9 +1193,9 @@
   {
     "item_id": "THPT-TOP14-P23",
     "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-P23",
-    "stem": "Mặt cắt ăng-ten có dạng parabol, trục Ox, đỉnh O, tiêu điểm F nằm trên nửa trục Ox dương và cách đỉnh 4 cm. Viết phương trình với tọa độ tính bằng cm; tại độ sâu \\(x=9\\) cm, khoảng cách giữa hai mép theo phương y là bao nhiêu?",
+    "stem": "Mặt cắt ăng-ten có dạng parabol, trục Ox, đỉnh O, tiêu điểm F nằm trên nửa trục Ox dương và cách đỉnh 4 cm. Viết phương trình với tọa độ tính bằng cm; tại độ sâu \\(x=9\\,\\mathrm{cm}\\), khoảng cách giữa hai mép theo phương y là bao nhiêu?",
     "answer_key": "\\(y^2=16x\\) (tọa độ tính bằng cm); bề rộng 24 cm.",
-    "worked_solution": "Vì đỉnh O và tiêu điểm \\(F(4;0)\\), khoảng cách từ đỉnh đến tiêu điểm là \\(f=4\\) cm, nên phương trình chính tắc là \\(y^2=4fx=16x\\) (x,y tính bằng cm). Tại \\(x=9\\), \\(y^2=144\\), hai mép có tung độ −12 và 12. Bề rộng là \\(12-(-12)=24\\) cm. Không nhầm \\(|y|\\) là toàn bộ bề rộng.",
+    "worked_solution": "Vì đỉnh O và tiêu điểm \\(F(4;0)\\), khoảng cách từ đỉnh đến tiêu điểm là \\(f=4\\,\\mathrm{cm}\\), nên phương trình chính tắc là \\(y^2=4fx=16x\\) (x,y tính bằng cm). Tại \\(x=9\\), \\(y^2=144\\), hai mép có tung độ −12 và 12. Bề rộng là \\(12-(-12)=24\\,\\mathrm{cm}\\). Không nhầm \\(|y|\\) là toàn bộ bề rộng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B22-PARABOLA_FOCUS",
@@ -1233,7 +1233,7 @@
       },
       {
         "id": "B",
-        "text": "\\(y^2=8x\\); bề rộng \\(12\\sqrt2\\) cm."
+        "text": "\\(y^2=8x\\); bề rộng \\(12\\sqrt2\\,\\mathrm{cm}\\)."
       },
       {
         "id": "C",
