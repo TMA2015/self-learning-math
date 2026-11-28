@@ -207,7 +207,7 @@
 
     ### 4.2. Nhầm \(n\) bước với \(n-1\) bước
 
-    **Dấu hiệu:** Viết \(u_n=u_1+nd\), dẫn đến \(u_1\ne u_1\) khi thay \(n=1\).
+    **Dấu hiệu:** Viết \(u_n=u_1+nd\), khi thay \(n=1\), vế phải cho \(u_1+d\) thay vì \(u_1\); nếu \(d\ne0\), hai giá trị khác nhau.
 
     **Vì sao sai:** Từ vị trí đầu tới vị trí \(n\) chỉ có \(n-1\) khoảng.
 
@@ -225,7 +225,7 @@
 
     **Dấu hiệu:** Từ một bộ ba có \(2u_2=u_1+u_3\) suy rằng mọi số hạng khác cũng theo công sai cố định.
 
-    **Vì sao sai:** Điều kiện ở một bộ ba chưa bảo đảm hiệu không đổi cho **toàn dãy**; nó chỉ là hệ quả của cấp số cộng.
+    **Vì sao sai:** Điều kiện ở một bộ ba chưa bảo đảm hiệu không đổi cho **toàn dãy**. Nếu \(2u_n=u_{n-1}+u_{n+1}\) đúng với mọi bộ ba liên tiếp, thì \(u_{n+1}-u_n=u_n-u_{n-1}\), nên các hiệu liên tiếp bằng nhau và dãy là cấp số cộng.
 
     **Cách sửa:** Kiểm hiệu \(u_{n+1}-u_n\) trên tất cả chỉ số hợp lệ; không biến một nhận xét suy ra thành định nghĩa thay thế.
 

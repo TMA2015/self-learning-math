@@ -43,7 +43,7 @@
 
     Hãy hình dung \(M\) quay từ góc \(0\) đến \(\pi/2\), rồi tới \(\pi\). Tung độ của \(M\) lần lượt là \(0,1,0\), trong khi hoành độ lần lượt là \(1,0,-1\). Với **mỗi** góc thực \(x\), ta có đúng một vị trí cuối trên đường tròn, nên có đúng một giá trị \(\sin x\) và một giá trị \(\cos x\). Đây là hai hàm số xác định cho mọi \(x\in\mathbb R\), chứ không phải hai con số cố định.
 
-    Tang và côtang xuất hiện từ hai tỉ số \(\tan x=\sin x/\cos x\) và \(\cot x=\cos x/\sin x\). Vì là phép chia, chúng không xác định tại các góc làm mẫu số bằng \(0\). Chẳng hạn ở \(x=\pi/2\), điểm \(M=(0,1)\); \(\sin x\) vẫn bằng \(1\) nhưng \(\tan x\) **không có giá trị**. Ở \(x=0\), \(\cot x\) lại không xác định. Sự khác biệt này sẽ quyết định hình dạng hai đồ thị ở mục 5, 6.
+    Tang và côtang xuất hiện từ hai tỉ số \(\tan x=\sin x/\cos x\) và \(\cot x=\cos x/\sin x\). Vì là phép chia, chúng không xác định tại các góc làm mẫu số bằng \(0\). Chẳng hạn ở \(x=\pi/2\), điểm \(M=(0,1)\); \(\sin x\) vẫn bằng \(1\) nhưng \(\tan x\) **không có giá trị**. Ở \(x=0\), \(\cot x\) lại không xác định. Sự khác biệt này sẽ quyết định hình dạng hai đồ thị ở mục 1.5 (Hàm số tang) và 1.6 (Hàm số côtang).
 
     **Vận dụng.** Tại \(x=-\pi/2\) và \(x=\pi/4\), hãy xác định những hàm nào trong sin, cos, tan, cot có giá trị; nếu có thì giá trị bằng bao nhiêu?
 

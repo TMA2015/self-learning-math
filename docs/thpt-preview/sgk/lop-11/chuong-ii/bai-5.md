@@ -45,7 +45,7 @@
 
     Ta gọi \(u_1\) là **số hạng đầu**, \(u_n\) là **số hạng thứ \(n\)**. Một dãy **vô hạn** có thể tiếp tục tới mọi \(n\ge1\); một dãy **hữu hạn** chỉ có các vị trí \(1,2,\ldots,m\). Chẳng hạn dãy các số chính phương dương nhỏ hơn \(50\) chỉ có \(1,4,9,16,25,36,49\): số hạng đầu là \(1\), số hạng cuối là \(49\), và không có vị trí thứ tám trong dãy hữu hạn này.
 
-    Tất cả các số hạng đều có thể giống nhau. Nếu mỗi ngày đo được cùng một số cố định \(3\), dãy \(3,3,3,\ldots\) được gọi là **dãy không đổi**; đừng nhầm nó với dãy tăng hoặc dãy giảm theo nghĩa bất đẳng thức nghiêm ở mục 3.
+    Tất cả các số hạng đều có thể giống nhau. Nếu mỗi ngày đo được cùng một số cố định \(3\), dãy \(3,3,3,\ldots\) được gọi là **dãy không đổi**; đừng nhầm nó với dãy tăng hoặc dãy giảm theo nghĩa bất đẳng thức nghiêm ở mục 1.3 (Dãy số tăng, giảm và bị chặn).
 
     **Vận dụng.** Dãy hữu hạn \(2,4,6,8,10\) có bao nhiêu số hạng, số hạng đầu/cuối là gì? Có thể viết \(u_n=2n\) mà không nói điều kiện \(n\) được không?
 
@@ -147,7 +147,7 @@
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(u_n=1+5(n-1)=5n-4\), \(n\in\mathbb N^*\).</p></div>
 
-    **Kiểm lại:** \(u_1=1,\ u_2=6\) và \(u_n\equiv1\pmod5\); không bỏ số nguyên dương hợp lệ nào trong dãy đã sắp thứ tự.
+    **Kiểm lại:** \(u_1=1,\ u_2=6\) và \(u_n=5(n-1)+1\) nên chia cho 5 dư 1; không bỏ số nguyên dương hợp lệ nào trong dãy đã sắp thứ tự.
 
     ### 3.3. Từ truy hồi tới các số hạng cụ thể
 

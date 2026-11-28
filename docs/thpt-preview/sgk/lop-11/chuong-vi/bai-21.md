@@ -64,7 +64,7 @@
 
     SGK minh họa \(2^x>4\) bằng đường ngang \(y=4\): đồ thị \(2^x\) cắt đường ngang tại \((2,4)\), và nằm phía trên nó khi **\(x>2\)**. Hình dưới thêm cách nhìn tương tự cho lôgarit ở mục kế tiếp.
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B21_EXP_LOG_THRESHOLD_AUTHORING_20261123.svg" alt="Đồ thị ngưỡng hai mũ x lớn hơn bốn khi x lớn hơn hai và logarit hai của x lớn hơn hai khi x lớn hơn bốn"><figcaption><strong>Hướng dẫn đọc khung trái:</strong> đường cong \(y=2^x\) giao với ngưỡng \(y=4\) tại \(x=2\). Nghiệm \(2^x>4\) là **\(x>2\)**, chỉ gồm phần đường cong ở phía trên đường ngưỡng; khung phải dùng cho bài lôgarit.</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B21_EXP_LOG_THRESHOLD_AUTHORING_20261123.svg" alt="Đồ thị ngưỡng hai mũ x lớn hơn bốn khi x lớn hơn hai và logarit hai của x lớn hơn hai khi x lớn hơn bốn"><figcaption><strong>Hướng dẫn đọc khung trái:</strong> đường cong \(y=2^x\) giao với ngưỡng \(y=4\) tại \(x=2\). Tập nghiệm gồm các hoành độ của những điểm trên đồ thị \(y=2^x\) nằm phía trên \(y=4\), tức **\(x>2\)**; khung phải dùng cho bài lôgarit.</figcaption></figure>
 
     **Ứng dụng ô tô:** Với mô hình trong SGK \(V(t)=780(0{,}905)^t\) triệu đồng, hỏi khi nào giá trị không quá 300 triệu. Ta giải \((0{,}905)^t\le5/13\); vì cơ số **nhỏ hơn 1**, suy \(t\ge\log_{0{,}905}(5/13)\approx9{,}6\). Nếu chỉ ghi **năm trọn vẹn**, mốc đầu tiên là **10 năm**, không phải 9 năm.
 

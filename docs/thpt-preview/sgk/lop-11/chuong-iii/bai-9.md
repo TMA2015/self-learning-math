@@ -32,7 +32,7 @@
 
     Khi ấy tổng ước lượng là \(4\cdot5+8\cdot15+6\cdot25+2\cdot35=360\), nên số trung bình ghép nhóm là \(\bar x=360/20=18\) phút. Ta phải nhân **mỗi trung điểm với tần số nhóm** rồi chia tổng tần số \(20\), chứ không lấy \((5+15+25+35)/4\), vì các nhóm chứa số người khác nhau.
 
-    SGK còn lưu ý một trường hợp đặc biệt: khi nhóm các số nguyên ghi là “1–3”, đó là **ba giá trị** \(1,2,3\). Để tính bằng công thức khoảng liên tục, ta hiệu chỉnh thành \([0{,}5;3{,}5)\) để trung điểm vẫn bằng \(2\) và hai nhóm liên tiếp không bị hở hay chồng tại các giá trị nguyên. Nếu nhóm chỉ có một đầu mút, không tự tạo trung điểm hữu hạn khi không có căn cứ.
+    SGK còn lưu ý một trường hợp đặc biệt: khi nhóm các số nguyên ghi là “1–3”, đó là **ba giá trị** \(1,2,3\). Để tính bằng công thức khoảng liên tục, ta hiệu chỉnh thành \([0{,}5;3{,}5)\) vì các biên được đặt giữa hai số nguyên liên tiếp: nhóm này nhận đúng 1, 2, 3; nhóm tiếp theo 4–6 bắt đầu tại 3,5. Trung điểm hai nhóm vẫn bằng 2 và 5; hiệu chỉnh biên và độ rộng có ý nghĩa khi nội suy. Nếu nhóm chỉ có một đầu mút, không tự tạo trung điểm hữu hạn khi không có căn cứ.
 
     **Vận dụng.** Bảng A có \(\bar x=18\) phút. Nếu bạn chỉ tính trung bình của bốn trung điểm thì được bao nhiêu? Vì sao kết quả đó không đúng với công thức số trung bình ghép nhóm?
 
@@ -64,7 +64,7 @@
 
     ### 1.3. Tứ phân vị của mẫu số liệu ghép nhóm
 
-    Trung vị chia mẫu thành hai nửa. Nếu muốn chia tiếp thành **bốn phần** có tỉ lệ xấp xỉ bằng nhau, ta cần \(Q_1,Q_2,Q_3\), ứng với các vị trí \(n/4,\ n/2,\ 3n/4\) trong mẫu đã sắp xếp. \(Q_2\) chính là trung vị vừa tính. Với bảng A có \(n=20\), ba vị trí mục tiêu là \(5,\ 10,\ 15\).
+    Trung vị chia mẫu thành hai nửa. Nếu muốn chia tiếp thành **bốn phần** có tỉ lệ xấp xỉ bằng nhau, ta cần \(Q_1,Q_2,Q_3\), ứng với các mức tần số tích lũy mục tiêu \(n/4,\ n/2,\ 3n/4\). Các mức này có thể không nguyên (chẳng hạn \(n=21\) thì \(n/4=5{,}25\)); không làm tròn trước khi nội suy. \(Q_2\) chính là trung vị vừa tính. Với bảng A có \(n=20\), ba vị trí mục tiêu là \(5,\ 10,\ 15\).
 
     Quan sát dãy tích lũy \(4,12,18,20\): vị trí \(5\) nằm trong nhóm hai, vị trí \(15\) nằm trong nhóm ba. Vì vậy \(Q_1=10+[(5-4)/8]\cdot10=11{,}25\), còn \(Q_3=20+[(15-12)/6]\cdot10=25\). Các mốc ước lượng của bảng A là \(11{,}25;\ 17{,}5;\ 25\) phút.
 
@@ -84,7 +84,7 @@
 
     ### 1.4. Mốt của mẫu số liệu ghép nhóm
 
-    Còn một câu hỏi khác: quan sát có xu hướng **tập trung dày nhất ở vùng nào**? Nhìn bảng A, nhóm \([10;20)\) có 8 người, nhiều nhất trong bốn nhóm, nên là **nhóm chứa mốt**. Nhưng mốt của mẫu số liệu ghép nhóm không đơn giản là trung điểm 15 của nhóm ấy. SGK dùng hai chênh lệch tần số với nhóm lân cận để ước lượng một vị trí bên trong nhóm.
+    Còn một câu hỏi khác: quan sát có xu hướng **tập trung dày nhất ở vùng nào**? Nhìn bảng A, nhóm \([10;20)\) có 8 người, nhiều nhất trong bốn nhóm, nên là **nhóm chứa mốt**. Nhưng mốt của mẫu số liệu ghép nhóm không đơn giản là trung điểm 15 của nhóm ấy. SGK dùng hai chênh lệch tần số với nhóm lân cận để ước lượng một vị trí bên trong nhóm. Nếu hai nhóm kề có tần số bằng nhau, ước lượng nằm ở giữa nhóm chứa mốt; nếu nhóm bên phải có tần số cao hơn bên trái, ước lượng lệch về bên phải.
 
     Ở đây nhóm trước có 4, nhóm sau có 6. Chênh với nhóm trước là \(8-4=4\), chênh với nhóm sau là \(8-6=2\). Nội suy cho \(M_o=10+\frac4{4+2}\cdot10\approx16{,}67\) phút. Đây là **mốt ước lượng từ bảng**, không có nghĩa đã có người thực sự đo đúng \(16{,}67\) phút.
 

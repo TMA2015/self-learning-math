@@ -1,0 +1,195 @@
+{
+  "base": "dd450b912d657c67b5a79783f3e91800c7f98e3b",
+  "items": [
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md",
+      "old": "6a88cfa1fc03f8ed6f642fc448bea286dfd9f55c",
+      "edits": [
+        {
+          "before": "hai đồ thị ở mục 5, 6.",
+          "after": "hai đồ thị ở mục 1.5 (Hàm số tang) và 1.6 (Hàm số côtang).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",
+      "old": "515ad705f86b2448b262026f2f2fb8d3ec2e5bdc",
+      "edits": [
+        {
+          "before": "Trong \\([0;2\\pi)\\), nghiệm là \\(x=2\\pi/3\\) và \\(x=4\\pi/3\\).",
+          "after": "Trong \\([0;2\\pi)\\), họ \\(x=2\\pi/3+2k\\pi\\) nhận \\(k=0\\); họ \\(x=-2\\pi/3+2k\\pi\\) nhận \\(k=1\\). Vậy nghiệm là \\(x=2\\pi/3\\) và \\(x=4\\pi/3\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-5.md",
+      "old": "6adf77092611788f301eb3e3dd0b52a4ddbd8a66",
+      "edits": [
+        {
+          "before": "bất đẳng thức nghiêm ở mục 3.",
+          "after": "bất đẳng thức nghiêm ở mục 1.3 (Dãy số tăng, giảm và bị chặn).",
+          "count": 1
+        },
+        {
+          "before": "và \\(u_n\\equiv1\\pmod5\\);",
+          "after": "và \\(u_n=5(n-1)+1\\) nên chia cho 5 dư 1;",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-6.md",
+      "old": "15832bd010a1a965be901c1ed13bc9702366644e",
+      "edits": [
+        {
+          "before": "dẫn đến \\(u_1\\ne u_1\\) khi thay \\(n=1\\).",
+          "after": "khi thay \\(n=1\\), vế phải cho \\(u_1+d\\) thay vì \\(u_1\\); nếu \\(d\\ne0\\), hai giá trị khác nhau.",
+          "count": 1
+        },
+        {
+          "before": "Điều kiện ở một bộ ba chưa bảo đảm hiệu không đổi cho **toàn dãy**; nó chỉ là hệ quả của cấp số cộng.",
+          "after": "Điều kiện ở một bộ ba chưa bảo đảm hiệu không đổi cho **toàn dãy**. Nếu \\(2u_n=u_{n-1}+u_{n+1}\\) đúng với mọi bộ ba liên tiếp, thì \\(u_{n+1}-u_n=u_n-u_{n-1}\\), nên các hiệu liên tiếp bằng nhau và dãy là cấp số cộng.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md",
+      "old": "09abeb68746d84da84b8b29bfc34e933a518d988",
+      "edits": [
+        {
+          "before": "với \\(n\\in\\mathbb N^*\\).</p><p><strong>Nếu",
+          "after": "với \\(n\\in\\mathbb N^*\\) không vượt quá số số hạng nếu dãy hữu hạn.</p><p><strong>Nếu",
+          "count": 1
+        },
+        {
+          "before": "Chỉ có điều kiện “mọi số hạng dương” mới giúp loại công bội âm trong tình huống này.",
+          "after": "Trong bài này, giả thiết mọi số hạng dương giúp loại công bội âm.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iii/bai-8.md",
+      "old": "b3c9f4973bec363ddfd1cc8ea9a156c030dd5bc2",
+      "edits": [
+        {
+          "before": "Có thể chọn từ \\(127{,}5\\) đến dưới \\(145{,}5\\) phút.",
+          "after": "Nếu mốc đầu là \\(a\\), cần \\(a\\le129\\) và \\(a+18>145\\) để cả giá trị lớn nhất nằm trong khoảng nửa kín. Chẳng hạn chọn \\(a=127{,}5\\), các nhóm đầu và cuối là \\([127{,}5;130{,}5)\\), \\([130{,}5;133{,}5)\\), \\(\\ldots\\), \\([142{,}5;145{,}5)\\). Đây chỉ là một cách chọn mốc.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iii/bai-9.md",
+      "old": "c8869d0413370af29b0e069036d8aab7e4b7b5f6",
+      "edits": [
+        {
+          "before": "để trung điểm vẫn bằng \\(2\\) và hai nhóm liên tiếp không bị hở hay chồng tại các giá trị nguyên.",
+          "after": "vì các biên được đặt giữa hai số nguyên liên tiếp: nhóm này nhận đúng 1, 2, 3; nhóm tiếp theo 4–6 bắt đầu tại 3,5. Trung điểm hai nhóm vẫn bằng 2 và 5; hiệu chỉnh biên và độ rộng có ý nghĩa khi nội suy.",
+          "count": 1
+        },
+        {
+          "before": "ứng với các vị trí \\(n/4,\\ n/2,\\ 3n/4\\) trong mẫu đã sắp xếp.",
+          "after": "ứng với các mức tần số tích lũy mục tiêu \\(n/4,\\ n/2,\\ 3n/4\\). Các mức này có thể không nguyên (chẳng hạn \\(n=21\\) thì \\(n/4=5{,}25\\)); không làm tròn trước khi nội suy.",
+          "count": 1
+        },
+        {
+          "before": "SGK dùng hai chênh lệch tần số với nhóm lân cận để ước lượng một vị trí bên trong nhóm.",
+          "after": "SGK dùng hai chênh lệch tần số với nhóm lân cận để ước lượng một vị trí bên trong nhóm. Nếu hai nhóm kề có tần số bằng nhau, ước lượng nằm ở giữa nhóm chứa mốt; nếu nhóm bên phải có tần số cao hơn bên trái, ước lượng lệch về bên phải.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-10.md",
+      "old": "0ac17c3c50a00f886a07dcbde58e6644d698b999",
+      "edits": [
+        {
+          "before": "\\(G\\) nằm trong cả \\((SBN)\\) và \\((SCM)\\), vậy hai mặt có giao tuyến \\(SG\\).",
+          "after": "\\(G\\) nằm trong cả \\((SBN)\\) và \\((SCM)\\). Hai mặt phân biệt: nếu trùng nhau thì mặt chung chứa hai trung tuyến cắt nhau \\(BN,CM\\), tức là \\((ABC)\\), trái với \\(S\\notin(ABC)\\). Do đó giao tuyến là \\(SG\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-11.md",
+      "old": "cc68e2f3089a5c79ee181aadc3d73e1f95ad2708",
+      "edits": [
+        {
+          "before": "\\(M\\in a\\subset(P),(R)\\) và \\(M\\in b\\subset(Q),(R)\\),",
+          "after": "\\(M\\in a\\subset(P)\\), \\(a\\subset(R)\\) và \\(M\\in b\\subset(Q)\\), \\(b\\subset(R)\\),",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-12.md",
+      "old": "cd22cea2d2b016f7c62c5734179eceef24b25f6b",
+      "edits": [
+        {
+          "before": "vì \\(C\\) thuộc đáy nhưng không thuộc \\(MN\\), \\((Q)\\) phân biệt với đáy và giao tuyến qua \\(C\\) song song \\(MN\\).",
+          "after": "vì \\(MN\\not\\subset(ABCD)\\), \\((Q)\\) phân biệt với đáy. Hai mặt có điểm chung \\(C\\), nên giao tuyến qua \\(C\\) song song \\(MN\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-14.md",
+      "old": "2c44172b68321d0b9e9b515840ca548c90c00df0",
+      "edits": [
+        {
+          "before": "Một cửa sổ hình tròn nằm trong mặt phẳng không song song với phương chiếu.",
+          "after": "Một cửa sổ hình tròn nằm trong mặt phẳng không chứa đường thẳng nào cùng phương chiếu.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-15.md",
+      "old": "5c1a81633b877074aa64a21e2cfd128de2f7db2a",
+      "edits": [
+        {
+          "before": "khi từ một số hạng nào đó trở đi, \\(u_n\\) lớn hơn <strong>mọi mốc dương</strong> cho trước; kí hiệu \\(u_n\\to+\\infty\\). Dãy có <strong>giới hạn \\(-\\infty\\)</strong> nếu từ một lúc đủ muộn \\(u_n\\) nhỏ hơn <strong>mọi mốc âm có độ lớn tùy ý</strong>, tức với mọi \\(M>0\\) có \\(u_n<-M\\) kể từ một chỉ số đủ lớn.",
+          "after": "nếu với mỗi \\(M>0\\) cho trước, tồn tại \\(N\\in\\mathbb N^*\\) (phụ thuộc \\(M\\)) sao cho mọi \\(n\\ge N\\) đều có \\(u_n>M\\); kí hiệu \\(u_n\\to+\\infty\\). Dãy có <strong>giới hạn \\(-\\infty\\)</strong> nếu với mỗi \\(M>0\\), tồn tại \\(N\\in\\mathbb N^*\\) sao cho mọi \\(n\\ge N\\) đều có \\(u_n<-M\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-17.md",
+      "old": "989f397ebb88ed7a49ba9895c949bd85a3059585",
+      "edits": [
+        {
+          "before": "Nếu thiếu một điều kiện thì giữ trạng thái gián đoạn.",
+          "after": "Nếu \\(f(a)\\) không xác định, không thể xét tính liên tục tại \\(a\\). Nếu \\(f(a)\\) xác định nhưng giới hạn không tồn tại hoặc khác \\(f(a)\\), hàm không liên tục tại \\(a\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md",
+      "old": "486af83a35ac295bf22bcd8e9b1ce3a428848550",
+      "edits": [
+        {
+          "before": "hai điểm cố định của dạng hàm mũ",
+          "after": "hai điểm đặc biệt của đồ thị \\(y=2^x\\)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md",
+      "old": "c13fea0e82a408692ba43fe0e8fa6fdbdeaa83f9",
+      "edits": [
+        {
+          "before": "Nghiệm \\(2^x>4\\) là **\\(x>2\\)**, chỉ gồm phần đường cong ở phía trên đường ngưỡng;",
+          "after": "Tập nghiệm gồm các hoành độ của những điểm trên đồ thị \\(y=2^x\\) nằm phía trên \\(y=4\\), tức **\\(x>2\\)**;",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

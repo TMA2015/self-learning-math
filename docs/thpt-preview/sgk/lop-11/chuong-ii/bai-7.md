@@ -136,7 +136,7 @@
 
     ### 2.3. Tổng của \(n\) số hạng đầu cấp số nhân
 
-    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tổng \(n\) số hạng đầu của cấp số nhân</strong><p>Đặt \(S_n=u_1+u_2+\cdots+u_n\) với \(n\in\mathbb N^*\).</p><p><strong>Nếu \(q\ne1\):</strong> \(S_n=\dfrac{u_1(1-q^n)}{1-q}=\dfrac{u_1(q^n-1)}{q-1}.\)</p><p><strong>Nếu \(q=1\):</strong> \(S_n=nu_1.\)</p><p><strong>Nếu \(q=0\):</strong> \(S_n=u_1\), tương thích công thức \(q\ne1\).</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tổng \(n\) số hạng đầu của cấp số nhân</strong><p>Đặt \(S_n=u_1+u_2+\cdots+u_n\) với \(n\in\mathbb N^*\) không vượt quá số số hạng nếu dãy hữu hạn.</p><p><strong>Nếu \(q\ne1\):</strong> \(S_n=\dfrac{u_1(1-q^n)}{1-q}=\dfrac{u_1(q^n-1)}{q-1}.\)</p><p><strong>Nếu \(q=1\):</strong> \(S_n=nu_1.\)</p><p><strong>Nếu \(q=0\):</strong> \(S_n=u_1\), tương thích công thức \(q\ne1\).</p></div>
 
     **Vì sao đúng:** Nhân \(S_n\) với \(q\) rồi trừ, ta có \((1-q)S_n=u_1(1-q^n)\); chỉ chia cho \(1-q\) khi khác \(0\). Nếu \(q=1\), tất cả số hạng bằng nhau, phải nhân \(u_1\) với \(n\).
 
@@ -255,7 +255,7 @@
 
     **Dấu hiệu:** Từ \(u_{12}/u_{10}=4\) suy ngay \(q=2\) mà không đọc giả thiết.
 
-    **Vì sao sai:** \(q^2=4\) cho cả \(q=2\) và \(q=-2\). Chỉ có điều kiện “mọi số hạng dương” mới giúp loại công bội âm trong tình huống này.
+    **Vì sao sai:** \(q^2=4\) cho cả \(q=2\) và \(q=-2\). Trong bài này, giả thiết mọi số hạng dương giúp loại công bội âm.
 
     **Cách sửa:** Đọc lại tính dương/âm của các số hạng rồi mới chọn công bội, sau đó thế thử dữ kiện.
 

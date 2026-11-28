@@ -44,7 +44,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B10-01_R01.svg" alt="Hai mặt phẳng SAB và SAC trong tứ diện có giao tuyến là đường thẳng SA"><figcaption><strong>Hướng dẫn đọc:</strong> \((SAB)\) và \((SAC)\) có hai điểm chung phân biệt \(S,A\), nên giao tuyến là **đường thẳng \(SA\)**. Nét đứt trong hình chỉ cạnh khuất.</figcaption></figure>
 
-    Đặc biệt, chỉ biết hai mặt phẳng **phân biệt** cùng qua điểm \(S\) mới biết chúng có một đường giao đi qua \(S\), chứ **chưa biết chính xác đường nào**. Để xác định giao tuyến, ta tìm **hai điểm chung phân biệt**. Ví dụ trong tứ diện \(S.ABC\), trung điểm \(M\in AB\), \(N\in AC\), hai trung tuyến \(BN,CM\) của tam giác \(ABC\) cắt tại trọng tâm \(G\). Vì các kết quả hình học phẳng đúng trong mặt \((ABC)\), \(G\) nằm trong cả \((SBN)\) và \((SCM)\), vậy hai mặt có giao tuyến \(SG\).
+    Đặc biệt, chỉ biết hai mặt phẳng **phân biệt** cùng qua điểm \(S\) mới biết chúng có một đường giao đi qua \(S\), chứ **chưa biết chính xác đường nào**. Để xác định giao tuyến, ta tìm **hai điểm chung phân biệt**. Ví dụ trong tứ diện \(S.ABC\), trung điểm \(M\in AB\), \(N\in AC\), hai trung tuyến \(BN,CM\) của tam giác \(ABC\) cắt tại trọng tâm \(G\). Vì các kết quả hình học phẳng đúng trong mặt \((ABC)\), \(G\) nằm trong cả \((SBN)\) và \((SCM)\). Hai mặt phân biệt: nếu trùng nhau thì mặt chung chứa hai trung tuyến cắt nhau \(BN,CM\), tức là \((ABC)\), trái với \(S\notin(ABC)\). Do đó giao tuyến là \(SG\).
 
     **Vận dụng.** Cho \(S\notin(ABC)\), \(M,N\) lần lượt là trung điểm \(AB,AC\), \(G=BN\cap CM\). Hãy chứng minh \((SBN)\cap(SCM)=SG\).
 

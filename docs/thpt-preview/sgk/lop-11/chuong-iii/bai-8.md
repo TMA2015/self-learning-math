@@ -60,7 +60,7 @@
 
     Không phải càng nhiều nhóm càng tốt: quá ít nhóm làm thông tin bị thô, quá nhiều nhóm khiến bảng dài như dữ liệu gốc. SGK khuyên các nhóm **nên có độ dài bằng nhau** khi phù hợp, nhưng đây không phải điều kiện bắt buộc của mọi bài. Chẳng hạn cỡ áo được xác định theo những khoảng chiều cao rộng khác nhau, ta phải theo tiêu chí cỡ áo. Những nhóm mở về một phía cũng không có độ dài hữu hạn kiểu \(b-a\).
 
-    Nếu một cuộc thi có thời gian chạy từ \(129\) đến \(145\) phút và cần chia **sáu nhóm dài 3 phút**, tổng khoảng phủ phải là \(6\cdot3=18\) phút, lớn hơn khoảng biến thiên \(145-129=16\). Có thể chọn từ \(127{,}5\) đến dưới \(145{,}5\) phút. Khi ấy giá trị lớn nhất \(145\) vẫn nằm trong nhóm cuối, không bị bỏ sót.
+    Nếu một cuộc thi có thời gian chạy từ \(129\) đến \(145\) phút và cần chia **sáu nhóm dài 3 phút**, tổng khoảng phủ phải là \(6\cdot3=18\) phút, lớn hơn khoảng biến thiên \(145-129=16\). Nếu mốc đầu là \(a\), cần \(a\le129\) và \(a+18>145\) để cả giá trị lớn nhất nằm trong khoảng nửa kín. Chẳng hạn chọn \(a=127{,}5\), các nhóm đầu và cuối là \([127{,}5;130{,}5)\), \([130{,}5;133{,}5)\), \(\ldots\), \([142{,}5;145{,}5)\). Đây chỉ là một cách chọn mốc. Khi ấy giá trị lớn nhất \(145\) vẫn nằm trong nhóm cuối, không bị bỏ sót.
 
     Ta cũng có thể phân nhóm \(8\) giá trị BMI theo các mức “dưới \(18{,}5\)”, “từ \(18{,}5\) đến dưới \(23\)” và “từ \(23\) trở lên”. Với dãy \(16{,}8;18{,}7;19{,}1;19{,}2;20{,}6;21{,}1;23{,}5;25{,}2\), tần số là **1, 5, 2**. Đó là ví dụ *phân loại theo tiêu chí đã cho*, không phải bắt buộc chia nhóm có cùng độ dài và cũng không phải hướng dẫn đánh giá sức khỏe cá nhân.
 
