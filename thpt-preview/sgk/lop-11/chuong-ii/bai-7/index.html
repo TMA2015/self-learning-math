@@ -11818,11 +11818,11 @@
 <p>Khi <span class="arithmatex">\(q&lt;0\)</span>, dấu của các số hạng có thể luân phiên. Đừng nhầm “giá trị tuyệt đối tăng” với định nghĩa dãy tăng <span class="arithmatex">\(u_{n+1}&gt;u_n\)</span>.</p>
 </details>
 <h3 id="12-so-hang-tong-quat">1.2. Số hạng tổng quát</h3>
-<p>Muốn biết lương năm thứ <span class="arithmatex">\(10\)</span>, không cần tính riêng cả chín năm trước. Từ năm đầu đến năm thứ hai có <strong>một lần nhân</strong> với <span class="arithmatex">\(1{,}05\)</span>; đến năm thứ ba có <strong>hai lần</strong>, v.v. Vậy đến năm thứ <span class="arithmatex">\(n\)</span> ta đã nhân với công bội đúng <span class="arithmatex">\(n-1\)</span> lần:
-[
+<p>Muốn biết lương năm thứ <span class="arithmatex">\(10\)</span>, không cần tính riêng cả chín năm trước. Từ năm đầu đến năm thứ hai có <strong>một lần nhân</strong> với <span class="arithmatex">\(1{,}05\)</span>; đến năm thứ ba có <strong>hai lần</strong>, v.v. Vậy đến năm thứ <span class="arithmatex">\(n\)</span> ta đã nhân với công bội đúng <span class="arithmatex">\(n-1\)</span> lần:</p>
+<div class="arithmatex">\[
   u_n=u_1q^{\,n-1},\quad n\ge2.
-]
-Với dãy lương, năm thứ <span class="arithmatex">\(10\)</span> là <span class="arithmatex">\(240(1{,}05)^9\)</span> triệu đồng; mũ là <span class="arithmatex">\(9\)</span>, không phải <span class="arithmatex">\(10\)</span>, vì năm thứ nhất là <strong>mốc ban đầu</strong>.</p>
+\]</div>
+<p>Với dãy lương, năm thứ <span class="arithmatex">\(10\)</span> là <span class="arithmatex">\(240(1{,}05)^9\)</span> triệu đồng; mũ là <span class="arithmatex">\(9\)</span>, không phải <span class="arithmatex">\(10\)</span>, vì năm thứ nhất là <strong>mốc ban đầu</strong>.</p>
 <p>Nếu biết hai số hạng cách xa nhau, lấy <span class="arithmatex">\(u_s/u_r=q^{s-r}\)</span> <strong>chỉ khi số hạng ở mẫu khác <span class="arithmatex">\(0\)</span></strong>. Khi <span class="arithmatex">\(s-r\)</span> chẵn, phép khai căn có thể cho <strong>hai công bội đối nhau</strong>. Ví dụ <span class="arithmatex">\(q^2=4\)</span> chưa đủ để quyết định <span class="arithmatex">\(q=2\)</span> hay <span class="arithmatex">\(q=-2\)</span>. Nếu mọi số hạng đều dương thì <span class="arithmatex">\(q&gt;0\)</span>, nên loại nghiệm âm. Những giả thiết khác của đề bài cũng có thể giúp xác định dấu của <span class="arithmatex">\(q\)</span>. Đây là lỗi dễ gặp ở các bài suy ngược.</p>
 <p>Với <span class="arithmatex">\(q=0\)</span>, số hạng đầu có thể khác <span class="arithmatex">\(0\)</span>, nhưng từ số hạng thứ hai trở đi tất cả bằng <span class="arithmatex">\(0\)</span>. Do đó nên viết <span class="arithmatex">\(u_1\)</span> riêng và dùng công thức <span class="arithmatex">\(u_n=u_1q^{n-1}\)</span> từ <span class="arithmatex">\(n\ge2\)</span>, tránh phải sử dụng <span class="arithmatex">\(0^0\)</span> cho <span class="arithmatex">\(n=1\)</span> khi chưa có quy ước.</p>
 <p><strong>Vận dụng.</strong> Một lượng ban đầu <span class="arithmatex">\(5000\)</span> vi khuẩn, tăng <span class="arithmatex">\(8\%\)</span> sau mỗi giờ so với số lượng ở đầu giờ đó. Theo mô hình không bị giới hạn nguồn sống, sau <span class="arithmatex">\(5\)</span> giờ có khoảng bao nhiêu vi khuẩn?</p>
@@ -11835,18 +11835,18 @@ Với dãy lương, năm thứ <span class="arithmatex">\(10\)</span> là <span 
 <p>Nếu em dùng <span class="arithmatex">\(5000+5\cdot400\)</span>, em đang cộng cố định <span class="arithmatex">\(8\%\)</span> của ban đầu thay vì nhân trên số lượng mới mỗi giờ. Cũng cần phân biệt <strong>năm bước tăng</strong> với chỉ số số hạng <span class="arithmatex">\(u_6\)</span>.</p>
 </details>
 <h3 id="13-tong-cua-n-so-hang-au-cap-so-nhan">1.3. Tổng của <span class="arithmatex">\(n\)</span> số hạng đầu cấp số nhân</h3>
-<p>Biết công thức lương năm thứ <span class="arithmatex">\(n\)</span> vẫn chưa đủ để tính tổng tiền lương <span class="arithmatex">\(10\)</span> năm. Ta cần cộng
-[
+<p>Biết công thức lương năm thứ <span class="arithmatex">\(n\)</span> vẫn chưa đủ để tính tổng tiền lương <span class="arithmatex">\(10\)</span> năm. Ta cần cộng</p>
+<div class="arithmatex">\[
    S_{10}=u_1+u_1q+u_1q^2+\cdots+u_1q^9.
-]
-Nếu nhân cả tổng với <span class="arithmatex">\(q\)</span>, ta được <span class="arithmatex">\(qS_{10}=u_1q+u_1q^2+\cdots+u_1q^{10}\)</span>. Khi lấy dòng đầu <strong>trừ</strong> dòng sau, toàn bộ số hạng nằm ở giữa triệt tiêu, chỉ còn <span class="arithmatex">\((1-q)S_{10}=u_1(1-q^{10})\)</span>. Đó là lí do xuất hiện công thức tổng, không phải phép biến đổi cần học thuộc không có căn cứ.</p>
+\]</div>
+<p>Nếu nhân cả tổng với <span class="arithmatex">\(q\)</span>, ta được <span class="arithmatex">\(qS_{10}=u_1q+u_1q^2+\cdots+u_1q^{10}\)</span>. Khi lấy dòng đầu <strong>trừ</strong> dòng sau, toàn bộ số hạng nằm ở giữa triệt tiêu, chỉ còn <span class="arithmatex">\((1-q)S_{10}=u_1(1-q^{10})\)</span>. Đó là lí do xuất hiện công thức tổng, không phải phép biến đổi cần học thuộc không có căn cứ.</p>
 <p>Cần phân biệt trường hợp <strong><span class="arithmatex">\(q=1\)</span></strong>: khi đó <span class="arithmatex">\(1-q=0\)</span>, không được chia. Dãy có tất cả số hạng bằng <span class="arithmatex">\(u_1\)</span> và tổng đơn giản là <span class="arithmatex">\(nu_1\)</span>. Trường hợp <span class="arithmatex">\(q=0\)</span> lại dùng được công thức với <span class="arithmatex">\(q\ne1\)</span>, kết quả <span class="arithmatex">\(S_n=u_1\)</span> cho mọi <span class="arithmatex">\(n\ge1\)</span>.</p>
-<p>Ví dụ lương khởi điểm <span class="arithmatex">\(240\)</span> triệu đồng và tăng <span class="arithmatex">\(5\%\)</span> mỗi năm: tổng mười năm là
-[
+<p>Ví dụ lương khởi điểm <span class="arithmatex">\(240\)</span> triệu đồng và tăng <span class="arithmatex">\(5\%\)</span> mỗi năm: tổng mười năm là</p>
+<div class="arithmatex">\[
    S_{10}=240\,\frac{1-(1{,}05)^{10}}{1-1{,}05}
    \approx3018{,}694\ {\rm triệu\ đồng}.
-]
-Làm tròn tới triệu đồng được <strong>3019 triệu đồng</strong>. Cộng <span class="arithmatex">\(240\)</span> triệu đồng mười lần sẽ bỏ qua tăng trưởng, còn nhân mức lương năm cuối với <span class="arithmatex">\(10\)</span> lại coi mọi năm được trả như năm cuối.</p>
+\]</div>
+<p>Làm tròn tới triệu đồng được <strong>3019 triệu đồng</strong>. Cộng <span class="arithmatex">\(240\)</span> triệu đồng mười lần sẽ bỏ qua tăng trưởng, còn nhân mức lương năm cuối với <span class="arithmatex">\(10\)</span> lại coi mọi năm được trả như năm cuối.</p>
 <p><strong>Vận dụng.</strong> Tìm số số hạng đầu cần cộng của cấp số nhân <span class="arithmatex">\(2,6,18,\ldots\)</span> để tổng bằng <span class="arithmatex">\(728\)</span>. Hãy thử thay lại kết quả thay vì chỉ giải phương trình lũy thừa.</p>
 <details class="question">
 <summary>Đối chiếu</summary>
