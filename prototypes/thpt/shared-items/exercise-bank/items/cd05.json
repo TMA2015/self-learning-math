@@ -1183,7 +1183,7 @@
     "hints": [
       "Nhân mỗi tung độ với 3; kiểm giá trị nhỏ nhất."
     ],
-    "remediation": "Nếu đổi hoành độ, theo dõi ảnh của (\\(-2\\);2) thành (\\(-2\\);6). Ôn TOP05-M12; luyện THPT-TOP05-P24.",
+    "remediation": "Nếu đổi hoành độ, theo dõi ảnh của \\((-2;2)\\) thành \\((-2;6)\\). Ôn TOP05-M12; luyện THPT-TOP05-P24.",
     "rubric": null,
     "interaction": {
       "type": "SINGLE_CHOICE",
@@ -1236,7 +1236,7 @@
     "hints": [
       "Hệ số âm đổi dấu y; trị tuyệt đối hệ số quyết định co đứng."
     ],
-    "remediation": "Nếu coi hệ số âm làm đồ thị dịch xuống cố định, kiểm ảnh (2;4) thành (2;\\(-2\\)). Ôn TOP05-M12; luyện THPT-TOP05-P23.",
+    "remediation": "Nếu coi hệ số âm làm đồ thị dịch xuống cố định, kiểm ảnh \\((2;4)\\) thành \\((2;-2)\\). Ôn TOP05-M12; luyện THPT-TOP05-P23.",
     "rubric": null,
     "interaction": {
       "type": "SINGLE_CHOICE",
@@ -1381,7 +1381,7 @@
   {
     "item_id": "THPT-TOP05-P27",
     "content_version": "CD05-BANK-CP125-20261127-TOP05-P27",
-    "stem": "Cho \\(f(x)=x-2\\). Đặt \\(g(x)=|f(x)|\\) và \\(h(x)=f(|x|)\\). Tính \\(g(-3),h(-3)\\); tìm đỉnh hai đồ thị và mô tả phép biến đổi. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
+    "stem": "Cho \\(f(x)=x-2\\). Đặt \\(g(x)=\\lvert f(x)\\rvert\\) và \\(h(x)=f(\\lvert x\\rvert)\\). Tính \\(g(-3),h(-3)\\); tìm đỉnh hai đồ thị và mô tả phép biến đổi. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(g(-3)=5,\\ h(-3)=1\\); g có đỉnh \\((2;0)\\), h có đỉnh \\((0;-2)\\). g phản xạ phần dưới Ox, h lấy nửa đồ thị \\(x\\ge0\\) và phản xạ qua Oy.",
     "worked_solution": "\\(g(x)=|x-2|\\) nên \\(g(-3)=|-5|=5\\), đỉnh \\((2;0)\\). Lấy trị tuyệt đối tung độ giữ phần \\(y\\ge0\\), phản xạ phần \\(y<0\\) qua Ox. \\(h(x)=|x|-2\\) nên \\(h(-3)=3-2=1\\), đỉnh \\((0;-2)\\). Với \\(x\\ge0\\), \\(h(x)=f(x)\\); với \\(x<0\\), \\(h(x)=f(-x)\\), do đó sao chép nửa phải sang trái qua Oy.",
     "skill_ids": [
