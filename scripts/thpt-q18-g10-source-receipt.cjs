@@ -445,6 +445,8 @@ function chviKiemLoiCandidate(name,immutablePublished){
   "ChVI Kiểm lỗi pending reviewer evidence missing");
  return matches[1];
 }
+// Exact successor pairs for #1132 ChIV; Section A alone may change.
+const release1132CanonicalDelta=new Map([[9,{"old":"daa2b7c89b08e46f86093f9b2205785e1caeb4ea","updated":"c7137287b1b3fcf872258149d7297d3103c94e4e"}],[10,{"old":"be44fd35b3a39e814a11d0b422cfe64f67d5e7e4","updated":"357499096e25a4a5bf5de1166472df868f142a67"}],[11,{"old":"22228598320ee81549c4ee9783559e2d4ff9476c","updated":"599fedbcaab1bd42b2257180bdec1513cac4f573"}]]);
 function currentOneCanonicalAfterKiểmLỗi(name,priorPublicSha,priorManuscriptSha){
  const receiptPath=path.join(root,
   "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
@@ -489,7 +491,25 @@ function currentOneCanonicalAfterKiểmLỗi(name,priorPublicSha,priorManuscript
  const bytes=fs.readFileSync(lessonPath),full=fs.readFileSync(manuscriptPath);
  const gitblob=b=>require("node:crypto").createHash("sha1")
   .update(Buffer.from("blob "+b.length+String.fromCharCode(0))).update(b).digest("hex");
- assert.equal(gitblob(bytes),currentSource,name+" current public Knowledge must exactly match R01 receipt");
+ const successor=release1132CanonicalDelta.get(number);
+ if(successor){
+  assert.equal(currentMaster,successor.old,name+" exact prior manuscript");
+  const newSource=release1132WordingCandidate(number,currentSource);
+  const delta=release1132WordingDelta.get(number);
+  const live=bytes.toString("utf8"),master=full.toString("utf8");
+  const start="<!-- BEGIN_"+name+"_KNOWLEDGE_MARKDOWN -->\n",end="\n<!-- END_"+name+"_KNOWLEDGE_MARKDOWN -->";
+  assert.equal(master.split(start).length,2);assert.equal(master.split(end).length,2);
+  assert.equal(master.split(start)[1].split(end)[0],live,name+" exact current one-source parity");
+  let previous=live;
+  for(const [before,after] of [...delta.swaps].reverse()){
+   assert.equal(previous.split(after).length,2);previous=previous.replace(after,before);
+  }
+  assert.equal(gitblob(Buffer.from(previous)),currentSource);
+  assert.equal(gitblob(Buffer.from(master.replace(start+live+end,start+previous+end))),currentMaster,name+" all non-Knowledge manuscript bytes unchanged");
+  assert.equal(gitblob(full),successor.updated,name+" exact current manuscript successor");
+  currentSource=newSource;currentMaster=successor.updated;
+ }
+ assert.equal(gitblob(bytes),currentSource,name+" current public Knowledge must exactly match receipt chain");
  assert.equal(gitblob(full),currentMaster,name+" ONE current canonical manuscript must exactly match R01 receipt");
  const src=bytes.toString("utf8"),master=full.toString("utf8");
  const b="<!-- BEGIN_"+name+"_KNOWLEDGE_MARKDOWN -->\n";
