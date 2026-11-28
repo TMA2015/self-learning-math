@@ -360,19 +360,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Dãy giảm nghiêm ngặt."
+        "text": "Giảm nghiêm ngặt vì \\(u_{n+1}-u_n=\\frac{-3}{(n+2)(n+3)}<0\\) với mọi \\(n\\ge1\\)."
       },
       {
         "id": "B",
-        "text": "\\(\\text{tăng nghiêm ngặt}\\)"
+        "text": "Tăng nghiêm ngặt vì mẫu \\(n+2\\) tăng."
       },
       {
         "id": "C",
-        "text": "\\(\\text{hằng}\\)"
+        "text": "Hằng vì tử số luôn bằng 3."
       },
       {
         "id": "D",
-        "text": "\\(\\text{không đơn điệu}\\)"
+        "text": "Không đơn điệu vì mẫu phụ thuộc \\(n\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -630,19 +630,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\([0;1/2]\\)"
+        "text": "\\([0;\\frac12]\\), vì mọi số hạng không vượt quá \\(\\frac12\\)."
       },
       {
         "id": "B",
-        "text": "\\([\\frac12;1)\\)."
+        "text": "\\([\\frac12;1)\\), vì \\(u_n=1-\\frac1{n+1}\\) và \\(0<\\frac1{n+1}\\le\\frac12\\)."
       },
       {
         "id": "C",
-        "text": "\\((1/2;1)\\)"
+        "text": "\\((\\frac12;1)\\), vì \\(n\\) là số nguyên dương nên không đạt \\(\\frac12\\)."
       },
       {
         "id": "D",
-        "text": "\\([1/2;3/4]\\)"
+        "text": "\\([\\frac12;\\frac34]\\), vì ba số hạng đầu nằm trong khoảng đó."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -684,19 +684,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(d=-15\\)"
+        "text": "Là cấp số cộng, \\(d=-15\\), lấy đối của hệ số tự do."
       },
       {
         "id": "B",
-        "text": "\\(\\text{không là CSC}\\)"
+        "text": "Không là cấp số cộng vì số hạng phụ thuộc \\(n\\)."
       },
       {
         "id": "C",
-        "text": "Là cấp số cộng, \\(d=-4\\)."
+        "text": "Là cấp số cộng, \\(d=-4\\), vì \\(u_{n+1}-u_n=-4\\) với mọi \\(n\\ge1\\)."
       },
       {
         "id": "D",
-        "text": "\\(d=4\\)"
+        "text": "Là cấp số cộng, \\(d=4\\), vì công sai luôn dương."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -908,7 +908,7 @@
       },
       {
         "id": "C",
-        "text": "\\(d=4,\\ u_1=2\\)."
+        "text": "\\(d=4;u_1=2\\)"
       },
       {
         "id": "D",
@@ -1333,19 +1333,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(q=-3\\)"
+        "text": "Là cấp số nhân, \\(q=-3\\), do số mũ tăng 1."
       },
       {
         "id": "B",
-        "text": "\\(\\text{không là CSN}\\)"
+        "text": "Không là cấp số nhân vì có hệ số 5."
       },
       {
         "id": "C",
-        "text": "Là cấp số nhân, \\(q=3\\)."
+        "text": "Là cấp số nhân, \\(q=3\\), vì \\(u_{n+1}=3u_n\\) với mọi \\(n\\ge1\\)."
       },
       {
         "id": "D",
-        "text": "\\(q=5\\)"
+        "text": "Là cấp số nhân, \\(q=5\\), do số hạng đầu bằng 5."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1947,7 +1947,7 @@
   {
     "item_id": "THPT-G11-B05-KFT01",
     "content_version": "SGK-G11-CHII-BANK-CANDIDATE-20261127-THPT-G11-B05-KFT01",
-    "stem": "Dãy u_n=2n−1 bắt đầu từ n=1: em dự đoán u_4 và giải thích vì sao n=4, không phải n=0. Chọn phương án đúng sau khi tự giải.",
+    "stem": "Dãy \\(u_n=2n-1\\) bắt đầu từ \\(n=1\\): em dự đoán \\(u_4\\) và giải thích vì sao \\(n=4\\), không phải \\(n=0\\). Chọn phương án đúng sau khi tự giải.",
     "answer_key": "\\(u_4=7\\); số hạng thứ tư có chỉ số 4 vì bắt đầu từ 1.",
     "worked_solution": "Dãy bắt đầu từ \\(u_1\\). Bốn số hạng đầu là \\(1,3,5,7\\). Thay \\(n=4\\) được \\(u_4=2\\cdot4-1=7\\). Chỉ số 0 không thuộc miền chỉ số đã cho.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2068,7 +2068,7 @@
   {
     "item_id": "THPT-G11-B07-KFT01",
     "content_version": "SGK-G11-CHII-BANK-CANDIDATE-20261127-THPT-G11-B07-KFT01",
-    "stem": "Từ vốn 100, nhân với 1,1 mỗi kỳ. Sau 2 kỳ, vốn bằng bao nhiêu? Chọn phương án đúng sau khi tự giải.",
+    "stem": "Từ vốn ban đầu 100 (đơn vị tiền), nhân với \\(1{,}1\\) mỗi kỳ. Sau 2 kỳ, vốn bằng bao nhiêu? Chọn phương án đúng sau khi tự giải.",
     "answer_key": "121",
     "worked_solution": "Sau kỳ đầu có \\(100\\cdot1{,}1=110\\). Sau kỳ thứ hai có \\(110\\cdot1{,}1=121\\). Kết quả 120 chỉ đúng nếu mỗi kỳ cộng 10 trên vốn ban đầu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
