@@ -652,7 +652,7 @@
       },
       {
         "id": "C",
-        "text": "Không, chỉ biết 10 người thuộc nhóm [155;160)"
+        "text": "Không, chỉ biết 10 người thuộc nhóm \\([155;160)\\)"
       },
       {
         "id": "D",
@@ -919,19 +919,19 @@
     "options": [
       {
         "id": "A",
-        "text": "[0;10)"
+        "text": "\\([0;10)\\)"
       },
       {
         "id": "B",
-        "text": "[20;30)"
+        "text": "\\([20;30)\\)"
       },
       {
         "id": "C",
-        "text": "[10;20)"
+        "text": "\\([10;20)\\)"
       },
       {
         "id": "D",
-        "text": "[30;40)"
+        "text": "\\([30;40)\\)"
       }
     ]
   },
@@ -1105,7 +1105,7 @@
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P03",
     "stem": "Mẫu A có các nhóm \\([0;10),[10;20),[20;30),[30;40)\\), tần số lần lượt 4, 8, 6, 2. Tính \\(Q_1,Q_3\\) theo nội suy SGK.",
     "answer_key": "\\(Q_1=11{,}25;\\ Q_3=25\\).",
-    "worked_solution": "Cỡ mẫu 20; tích lũy 4, 12, 18, 20. Vị trí \\(\\frac n4=5\\) nằm trong nhóm \\([10;20)\\), nên \\(Q_1=10+\\frac{5-4}{8}\\cdot10=11{,}25\\). Vị trí \\(\\frac{3n}{4}=15\\) nằm trong nhóm \\([20;30)\\), nên \\(Q_3=20+\\frac{15-12}{6}\\cdot10=25\\).",
+    "worked_solution": "Cỡ mẫu 20; tích lũy 4, 12, 18, 20. Vị trí \\(\\frac n4=5\\) nằm trong nhóm \\([10;20)\\), nên \\(Q_1=10+\\frac{5-4}{8}\\cdot10=11{,}25\\). Vị trí \\(\\frac{3n}{4}=15\\) nằm trong nhóm \\([20;30)\\), nên \\(Q_3=20+\\frac{15-12}{6}\\cdot10=25\\). Hai kết quả là tứ phân vị của mẫu ghép nhóm, được nội suy từ bảng; không nhất thiết trùng với tứ phân vị của mẫu gốc.",
     "skill_ids": [
       "G11-B09-GROUPED-QUARTILES"
     ],
@@ -1215,7 +1215,7 @@
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P05",
     "stem": "Mẫu B có các nhóm \\([10;15),[15;20),[20;25),[25;30)\\), tần số lần lượt 3, 6, 9, 2. Tính số trung bình ghép nhóm.",
     "answer_key": "20.",
-    "worked_solution": "Các trung điểm lần lượt là 12,5; 17,5; 22,5; 27,5. Tổng có trọng số \\(3\\cdot12{,}5+6\\cdot17{,}5+9\\cdot22{,}5+2\\cdot27{,}5=400\\). Cỡ mẫu 20 nên \\(\\bar x=\\frac{400}{20}=20\\).",
+    "worked_solution": "Các trung điểm lần lượt là 12,5; 17,5; 22,5; 27,5. Tổng có trọng số \\(3\\cdot12{,}5+6\\cdot17{,}5+9\\cdot22{,}5+2\\cdot27{,}5=400\\). Cỡ mẫu 20 nên \\(\\bar x=\\frac{400}{20}=20\\). Đây là số trung bình tính theo giá trị đại diện, không phải khôi phục chính xác trung bình của dữ liệu gốc.",
     "skill_ids": [
       "G11-B09-GROUPED-MEAN"
     ],
@@ -1304,19 +1304,19 @@
     "options": [
       {
         "id": "A",
-        "text": "3; 9; 18; 20; nhóm [15;20)"
+        "text": "3; 9; 18; 20; nhóm \\([15;20)\\)"
       },
       {
         "id": "B",
-        "text": "3; 9; 18; 20; nhóm [20;25)"
+        "text": "3; 9; 18; 20; nhóm \\([20;25)\\)"
       },
       {
         "id": "C",
-        "text": "3; 6; 9; 2; nhóm [20;25)"
+        "text": "3; 6; 9; 2; nhóm \\([20;25)\\)"
       },
       {
         "id": "D",
-        "text": "3; 9; 18; 20; nhóm [25;30)"
+        "text": "3; 9; 18; 20; nhóm \\([25;30)\\)"
       }
     ]
   },
@@ -1325,7 +1325,7 @@
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P07",
     "stem": "Mẫu B có các nhóm \\([10;15),[15;20),[20;25),[25;30)\\), tần số lần lượt 3, 6, 9, 2. Tính trung vị ghép nhóm.",
     "answer_key": "\\(M_e=\\frac{185}{9}\\approx20{,}56\\).",
-    "worked_solution": "Cỡ mẫu 20, vị trí \\(\\frac n2=10\\). Tích lũy 3, 9, 18, 20 nên dùng nhóm \\([20;25)\\), có tần số 9, độ rộng 5, trước nhóm có 9 quan sát. Nội suy \\(M_e=20+\\frac{10-9}{9}\\cdot5=\\frac{185}{9}\\approx20{,}56\\).",
+    "worked_solution": "Cỡ mẫu 20, vị trí \\(\\frac n2=10\\). Tích lũy 3, 9, 18, 20 nên dùng nhóm \\([20;25)\\), có tần số 9, độ rộng 5, trước nhóm có 9 quan sát. Nội suy \\(M_e=20+\\frac{10-9}{9}\\cdot5=\\frac{185}{9}\\approx20{,}56\\). Giá trị nội suy là ước lượng từ bảng ghép nhóm.",
     "skill_ids": [
       "G11-B09-GROUPED-MEDIAN"
     ],
@@ -1380,7 +1380,7 @@
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-B09-P08",
     "stem": "Mẫu C có các nhóm \\([40;50),[50;60),[60;70),[70;80)\\), tần số lần lượt 2, 5, 8, 5. Tìm \\(Q_1,Q_3\\) theo nội suy SGK.",
     "answer_key": "\\(Q_1=56;\\ Q_3=70\\).",
-    "worked_solution": "Cỡ mẫu 20; tích lũy 2, 7, 15, 20. Vị trí thứ 5 dùng nhóm \\([50;60)\\), nên \\(Q_1=50+\\frac{5-2}{5}\\cdot10=56\\). Vị trí thứ 15 đúng bằng tần số tích lũy nhóm thứ ba. Nội suy từ nhóm \\([60;70)\\) cho \\(Q_3=60+\\frac{15-7}{8}\\cdot10=70\\). Nếu tính từ đầu nhóm liền sau với tần số trước bằng 15, cũng được 70. Đây là biên chung.",
+    "worked_solution": "Cỡ mẫu 20; tích lũy 2, 7, 15, 20. Vị trí thứ 5 dùng nhóm \\([50;60)\\), nên \\(Q_1=50+\\frac{5-2}{5}\\cdot10=56\\). Vị trí thứ 15 đúng bằng tần số tích lũy nhóm thứ ba. Nội suy từ nhóm \\([60;70)\\) cho \\(Q_3=60+\\frac{15-7}{8}\\cdot10=70\\). Nếu tính từ đầu nhóm liền sau với tần số trước bằng 15, cũng được 70. Đây là biên chung. Giá trị 70 là biên nội suy, không khẳng định có một quan sát thực bằng 70.",
     "skill_ids": [
       "G11-B09-GROUPED-QUARTILES"
     ],
@@ -1543,7 +1543,7 @@
   {
     "item_id": "THPT-G11-B09-KFT01",
     "content_version": "SGK-G11-CHIII-BANK-CANDIDATE-20261127-THPT-G11-B09-KFT01",
-    "stem": "Với các nhóm [0;10), [10;20), [20;30), [30;40) có tần số lần lượt 4, 8, 6, 2, tổng có bao nhiêu quan sát? Quan sát thứ 10 trong dãy số liệu đã sắp xếp tăng dần thuộc nhóm nào? Chọn phương án đúng sau khi tự giải.",
+    "stem": "Với các nhóm \\([0;10),[10;20),[20;30),[30;40)\\) có tần số lần lượt 4, 8, 6, 2, tổng có bao nhiêu quan sát? Quan sát thứ 10 trong dãy số liệu đã sắp xếp tăng dần thuộc nhóm nào? Chọn phương án đúng sau khi tự giải.",
     "answer_key": "20 quan sát; nhóm \\([10;20)\\).",
     "worked_solution": "Tổng số quan sát là \\(4+8+6+2=20\\). Tần số tích lũy lần lượt là 4, 12, 18, 20. Nhóm thứ hai chứa các vị trí từ 5 đến 12, nên quan sát thứ 10 thuộc nhóm \\([10;20)\\). Chưa thể biết chính xác giá trị của quan sát này.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
