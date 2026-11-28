@@ -165,7 +165,7 @@
     "item_id": "THPT-G11-CHIV-B10-P02",
     "content_version": "CD15-BANK-PARTIAL-20261127-THPT-G11-CHIV-B10-P02",
     "stem": "Trong tứ diện \\(S.ABC\\), M là trung điểm SA, N nằm trên cạnh SB sao cho \\(\\frac{SN}{SB}=\\frac13\\). Hãy dựng giao điểm I của đường thẳng MN với mặt phẳng \\((ABC)\\). Nêu lý do giao điểm tồn tại và duy nhất. Có nhất thiết I thuộc đoạn AB không?",
-    "answer_key": "Kéo dài MN và AB, lấy I là giao điểm; MN không song song AB vì SM/SA khác SN/SB. I nằm ngoài đoạn AB.",
+    "answer_key": "Kéo dài MN và AB, lấy I là giao điểm; MN không song song AB vì \\(\\frac{SM}{SA}\\ne\\frac{SN}{SB}\\). I nằm ngoài đoạn AB.",
     "worked_solution": "Vì MN nằm trong mặt phẳng \\((SAB)\\), chọn mặt phẳng này làm mặt phẳng phụ. Hai mặt phẳng \\((SAB)\\) và \\((ABC)\\) cắt nhau theo AB. Trong tam giác SAB, \\(\\frac{SM}{SA}=\\frac12\\ne\\frac{SN}{SB}=\\frac13\\), nên MN không song song AB theo định lý Thalès. Hai đường MN và AB cùng thuộc \\((SAB)\\), không song song và không trùng nhau, nên cắt nhau tại đúng một điểm I. Vì \\(I\\in AB\\subset(ABC)\\), I là giao điểm cần tìm; MN không nằm trong mặt đáy vì M không thuộc mặt đáy. Đoạn MN nằm trong tam giác SAB và không gặp cạnh AB vì M,N thuộc phần trong hai cạnh SA, SB. Đường MN đi qua tam giác từ M đến N, nên giao điểm với đường AB không thể nằm trên đoạn AB. Khi dựng phải kéo dài các đường, không chỉ xét các đoạn.",
     "skill_ids": [
       "G11-B10-LINE_PLANE"
@@ -923,8 +923,8 @@
   {
     "item_id": "THPT-G11-CHIV-B12-P04",
     "content_version": "CD15-BANK-PARTIAL-20261127-THPT-G11-CHIV-B12-P04",
-    "stem": "Trong hình chóp \\(S.ABCD\\) có đáy ABCD là hình bình hành không suy biến, M nằm trong cạnh SA và \\(SM:MA=2:3\\). Hãy dựng điểm N thuộc cạnh SD sao cho \\(MN\\parallel(ABCD)\\). Tính tỉ số SN:ND và chứng minh N là điểm duy nhất thỏa mãn.",
-    "answer_key": "Qua M kẻ đường song song AD trong (SAD), cắt SD tại N duy nhất; SN:ND=2:3.",
+    "stem": "Trong hình chóp \\(S.ABCD\\) có đáy ABCD là hình bình hành không suy biến, M nằm trong cạnh SA và \\(SM:MA=2:3\\). Hãy dựng điểm N thuộc cạnh SD sao cho \\(MN\\parallel(ABCD)\\). Tính tỉ số \\(SN:ND\\) và chứng minh N là điểm duy nhất thỏa mãn.",
+    "answer_key": "Qua M kẻ đường song song AD trong (SAD), cắt SD tại N duy nhất; \\(SN:ND=2:3\\).",
     "worked_solution": "Muốn dựng MN song song mặt đáy, ta tìm một đường trong đáy cùng phương với MN. Vì \\(M,N\\in(SAD)\\) và \\((SAD)\\cap(ABCD)=AD\\), nếu \\(MN\\parallel(ABCD)\\) thì \\(MN\\parallel AD\\). Do đó trong tam giác SAD, qua M kẻ đường thẳng song song AD; đường này cắt SD tại N nằm trong cạnh. Theo định lý Thalès, \\(\\frac{SN}{SD}=\\frac{SM}{SA}=\\frac25\\), suy ra \\(SN:ND=2:3\\). Kiểm lại: \\(MN\\parallel AD\\), \\(AD\\subset(ABCD)\\) và M không thuộc đáy, nên \\(MN\\parallel(ABCD)\\) theo dấu hiệu đường thẳng song song mặt phẳng. Trong mặt phẳng \\((SAD)\\), qua M chỉ có một đường thẳng song song AD; giao điểm của đường ấy với SD là duy nhất. Vì vậy N vừa tồn tại vừa duy nhất.",
     "skill_ids": [
       "G11-B12-CONSTRUCTION"
@@ -958,19 +958,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Qua M kẻ đường song song AD trong (SAD), cắt SD tại N duy nhất; SN:ND=2:3."
+        "text": "Qua M kẻ đường song song AD trong (SAD), cắt SD tại N duy nhất; \\(SN:ND=2:3\\)."
       },
       {
         "id": "B",
-        "text": "Qua M kẻ đường song song AD; SN:ND=3:2."
+        "text": "Qua M kẻ đường song song AD; \\(SN:ND=3:2\\)."
       },
       {
         "id": "C",
-        "text": "Lấy N là trung điểm SD; SN:ND=1:1."
+        "text": "Lấy N là trung điểm SD; \\(SN:ND=1:1\\)."
       },
       {
         "id": "D",
-        "text": "Qua M kẻ đường song song SA; SN:ND=2:3."
+        "text": "Qua M kẻ đường song song SA; \\(SN:ND=2:3\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
