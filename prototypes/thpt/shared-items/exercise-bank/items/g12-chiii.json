@@ -655,19 +655,19 @@
     "options": [
       {
         "id": "A",
-        "text": "6 và 18; lớp 1 và 3; Q3 ở biên"
+        "text": "6 và 18; lớp 1 và 3; \\(Q_3\\) ở biên"
       },
       {
         "id": "B",
-        "text": "6 và 18; lớp 2 và 3; Q3 ở giữa lớp 3"
+        "text": "6 và 18; lớp 2 và 3; \\(Q_3\\) ở giữa lớp 3"
       },
       {
         "id": "C",
-        "text": "12 và 18; lớp 3 và 4; Q3 ở biên"
+        "text": "12 và 18; lớp 3 và 4; \\(Q_3\\) ở biên"
       },
       {
         "id": "D",
-        "text": "6 và 18; lớp 2 và 3; Q3 bằng biên chung lớp 3 và lớp 4"
+        "text": "6 và 18; lớp 2 và 3; \\(Q_3\\) bằng biên chung lớp 3 và lớp 4"
       }
     ]
   },
@@ -1663,15 +1663,15 @@
     "options": [
       {
         "id": "A",
-        "text": "Chỉ sai đơn vị: s=16 giờ"
+        "text": "Chỉ sai đơn vị: \\(s=16\\) giờ"
       },
       {
         "id": "B",
-        "text": "Sai cả giá trị và đơn vị: s=4 giờ"
+        "text": "Sai cả giá trị và đơn vị: \\(s=4\\) giờ"
       },
       {
         "id": "C",
-        "text": "Chỉ sai giá trị: s=4 giờ²"
+        "text": "Chỉ sai giá trị: \\(s=4\\) giờ²"
       },
       {
         "id": "D",
@@ -1775,19 +1775,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Trung bình đều 20; phương sai A=60, B=20; B ít phân tán"
+        "text": "Trung bình đều 20; phương sai \\(A=60\\), \\(B=20\\); B ít phân tán"
       },
       {
         "id": "B",
-        "text": "Trung bình đều 20; phương sai A=B=20"
+        "text": "Trung bình đều 20; phương sai A=\\(B=20\\)"
       },
       {
         "id": "C",
-        "text": "Trung bình A=10, B=30; phương sai A=20, B=60"
+        "text": "Trung bình \\(A=10\\), \\(B=30\\); phương sai \\(A=20\\), \\(B=60\\)"
       },
       {
         "id": "D",
-        "text": "Trung bình đều 20; phương sai A=20, B=60; A ít phân tán"
+        "text": "Trung bình đều 20; phương sai \\(A=20\\), \\(B=60\\); A ít phân tán"
       }
     ]
   },
@@ -1999,15 +1999,15 @@
     "options": [
       {
         "id": "A",
-        "text": "Có, CV=0"
+        "text": "Có, \\(CV=0\\)"
       },
       {
         "id": "B",
-        "text": "Có, CV=s"
+        "text": "Có, \\(CV=s\\)"
       },
       {
         "id": "C",
-        "text": "Có, CV=1"
+        "text": "Có, \\(CV=1\\)"
       },
       {
         "id": "D",
