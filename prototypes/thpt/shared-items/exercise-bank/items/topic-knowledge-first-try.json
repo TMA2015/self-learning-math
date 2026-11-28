@@ -9723,14 +9723,16 @@
   },
   {
     "item_id": "THPT-TOP22-T01",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T01-D07",
-    "stem": "Giá trị thật 9,68 mm ghi 9,7 mm: tìm sai số tuyệt đối và phần trăm tương đối. Dùng số ghi gần đúng 9,7 mm làm mẫu số khi tính sai số tương đối.",
-    "answer_key": "Sai số tuyệt đối \\(0{,}02\\) mm; sai số tương đối \\(\\approx0{,}206\\%\\).",
-    "worked_solution": "Sai số tuyệt đối \\(\\Delta=|9{,}68-9{,}7|=0{,}02\\) mm. Theo quy ước SGK đang dùng, sai số tương đối của số gần đúng \\(a=9{,}7\\ne0\\) là \\(\\delta_a=\\frac{\\Delta}{|a|}\\). Đổi sang phần trăm: \\(\\frac{0{,}02}{9{,}7}\\cdot100\\%\\approx0{,}206\\%\\).\n\n**Kiểm lỗi**\n\nĐừng lấy độ chính xác làm sai số thật; kiểm đơn vị và việc nhân 100 để ra phần trăm. Đọc lại **Kiến thức 1.1**, rồi tự làm **Bài luyện 2**, **Bài luyện 3**, **Bài luyện 4** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T01-D07-D08",
+    "stem": "Giá trị thật \\(9{,}68\\) mm được quy tròn đến hàng phần mười thành số ghi \\(a\\). Tìm \\(a\\), sai số tuyệt đối và sai số tương đối theo số gần đúng (phần trăm). Nếu chỉ biết độ chính xác \\(0{,}05\\) mm, có khẳng định sai số thực bằng \\(0{,}05\\) mm không?",
+    "answer_key": "\\(a=9{,}7\\) mm; \\(\\Delta=0{,}02\\) mm; \\(\\delta_a\\approx0{,}206\\%\\); không, độ chính xác chỉ là chặn trên.",
+    "worked_solution": "Chữ số hàng phần trăm là 8 nên quy tròn lên \\(9{,}7\\) mm. \\(\\Delta=|9{,}68-9{,}7|=0{,}02\\) mm. Vì \\(a\\ne0\\), \\(\\delta_a=\\frac{0{,}02}{9{,}7}\\cdot100\\%\\approx0{,}206\\%\\). Nếu chỉ biết độ chính xác \\(d=0{,}05\\) mm, chỉ suy ra \\(\\Delta\\le d\\), không biết sai số thực bằng bao nhiêu.\n\n**Kiểm lỗi**\n\nĐừng lấy độ chính xác làm sai số thật; kiểm đơn vị và việc nhân 100 để ra phần trăm. Đọc lại **Kiến thức 1.1**, rồi tự làm **Bài luyện 2**, **Bài luyện 3**, **Bài luyện 4**, **Bài luyện 6** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B12-ABS_ERROR",
-      "G10-B12-REL_ERROR"
+      "G10-B12-REL_ERROR",
+      "G10-B12-ROUNDING",
+      "G10-B12-APPROX_CONCEPT"
     ],
     "original_outcome_ids": [
       "G10-B12-ABS_ERROR",
@@ -9739,7 +9741,7 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Tính hiệu tuyệt đối trước, chia cho trị tuyệt đối của số gần đúng rồi đổi ra phần trăm."
+      "Quy tròn trước, rồi lấy hiệu tuyệt đối; phân biệt sai số thực và chặn sai số."
     ],
     "rubric": null,
     "interaction": {
@@ -9760,7 +9762,7 @@
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
       "previous_content_version": "TOP22-BANK-CP69-20261126-T01",
-      "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
+      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_INTERACTION_CANDIDATE",
@@ -9768,32 +9770,33 @@
     "options": [
       {
         "id": "A",
-        "text": "0,02 mm; khoảng 0,206%"
+        "text": "9,7 mm; 0,02 mm; khoảng 0,206%; không."
       },
       {
         "id": "B",
-        "text": "0,02 mm; 2%"
+        "text": "9,6 mm; 0,08 mm; khoảng 0,833%; không."
       },
       {
         "id": "C",
-        "text": "0,2 mm; khoảng 2,06%"
+        "text": "9,7 mm; 0,05 mm; khoảng 0,515%; có."
       },
       {
         "id": "D",
-        "text": "0,02 mm; khoảng 0,00206%"
+        "text": "9,7 mm; 0,02 mm; khoảng 0,00206%; không."
       }
     ]
   },
   {
     "item_id": "THPT-TOP22-T02",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T02",
-    "stem": "Mẫu 1,1,4,6,8 có trung bình và mốt nào?",
-    "answer_key": "Trung bình 4; mốt 1.",
-    "worked_solution": "Trung bình bằng \\(\\frac{20}{5}=4\\). Mốt bằng 1 vì 1 xuất hiện hai lần, nhiều nhất. Trung vị bằng 4, khác mốt.\n\n**Kiểm lỗi**\n\nNếu nhầm mốt với trung vị, lập bảng số lần xuất hiện trước khi kết luận. Đọc lại **Kiến thức 1.2**, rồi tự làm **Bài luyện 11**, **Bài luyện 13** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T02-D08",
+    "stem": "Mẫu 1,1,4,6,8 có trung bình và mốt nào? Mốt có nghĩa là hơn một nửa số quan sát bằng giá trị đó không?",
+    "answer_key": "Trung bình 4; mốt 1; không, chỉ 2 trong 5 quan sát bằng 1.",
+    "worked_solution": "Trung bình bằng \\(\\frac{20}{5}=4\\). Mốt bằng 1 vì 1 xuất hiện hai lần, nhiều nhất; nhưng \\(2/5=40\\%\\), chưa đến một nửa. Mốt là giá trị xuất hiện nhiều nhất, không nhất thiết chiếm đa số.\n\n**Kiểm lỗi**\n\nNếu nhầm mốt với trung vị, lập bảng số lần xuất hiện trước khi kết luận. Đọc lại **Kiến thức 1.2**, rồi tự làm **Bài luyện 11**, **Bài luyện 13**, **Bài luyện 14** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B13-MEAN",
-      "G10-B13-MODE"
+      "G10-B13-MODE",
+      "G10-B13-INTERPRETATION"
     ],
     "original_outcome_ids": [
       "G10-B13-MEAN",
@@ -9802,7 +9805,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Tính tổng chia cho số quan sát; đếm số lần xuất hiện."
+      "Tính tổng chia cho cỡ mẫu; so số lần xuất hiện của mốt với một nửa cỡ mẫu."
     ],
     "rubric": null,
     "interaction": {
@@ -9823,7 +9826,7 @@
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
       "previous_content_version": "TOP22-BANK-CP69-20261126-T02",
-      "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
+      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_INTERACTION_CANDIDATE",
@@ -9831,19 +9834,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Trung bình 4; mốt 4"
+        "text": "Trung bình 4; mốt 4; có."
       },
       {
         "id": "B",
-        "text": "Trung bình 4; mốt 1"
+        "text": "Trung bình 4; mốt 1; không."
       },
       {
         "id": "C",
-        "text": "Trung bình 5; mốt 1"
+        "text": "Trung bình 5; mốt 1; không."
       },
       {
         "id": "D",
-        "text": "Trung bình 1; mốt 4"
+        "text": "Trung bình 4; mốt 1; có."
       }
     ]
   },
@@ -9975,14 +9978,15 @@
   },
   {
     "item_id": "THPT-TOP22-T05",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T05",
-    "stem": "So sánh phương sai của hai mẫu \\(A=(4;5;6)\\) và \\(B=(2;5;8)\\). So với hai mẫu ban đầu \\(A_0=(3;4;5)\\), \\(B_0=(1;4;7)\\), vì sao phương sai của mỗi mẫu không đổi?",
-    "answer_key": "\\(s_A^2=\\frac23,s_B^2=6\\); A ít phân tán hơn. Phương sai không đổi khi cộng cùng một hằng số vào mọi giá trị.",
-    "worked_solution": "Hai mẫu cùng trung bình 5. Theo phương sai mô tả chia cho n, \\(s_A^2=\\frac{(4-5)^2+0^2+(6-5)^2}{3}=\\frac23\\); \\(s_B^2=\\frac{(2-5)^2+0^2+(8-5)^2}{3}=6\\). Vì \\(\\frac23<6\\), A ít phân tán quanh trung bình hơn. So với \\(A_0,B_0\\), mọi giá trị và trung bình đều tăng 1, nên từng độ lệch so với trung bình giữ nguyên. Vì vậy phương sai không đổi.\n\n**Kiểm lỗi**\n\nLập bảng x−x̄ rồi bình phương và chia đúng n; kiểm phương sai không âm. Đọc lại **Kiến thức 1.5**, rồi tự làm **Bài luyện 22**, **Bài luyện 23**, **Bài luyện 32** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T05-D08",
+    "stem": "Hai mẫu độ dài (cm) \\(A=(4;5;6)\\) và \\(B=(2;5;8)\\). Tính phương sai, độ lệch chuẩn và so độ phân tán. So với \\(A_0=(3;4;5)\\), \\(B_0=(1;4;7)\\), vì sao phương sai của mỗi mẫu không đổi?",
+    "answer_key": "\\(s_A^2=\\frac23\\,\\mathrm{cm}^2,\\ s_B^2=6\\,\\mathrm{cm}^2;\\ s_A=\\sqrt{\\frac23}\\,\\mathrm{cm},\\ s_B=\\sqrt6\\,\\mathrm{cm}\\). A ít phân tán hơn; cộng hằng số không đổi độ lệch quanh trung bình.",
+    "worked_solution": "Hai mẫu cùng trung bình 5 cm. Phương sai mô tả chia cho cỡ mẫu: \\(s_A^2=(1+0+1)/3=2/3\\ \\mathrm{cm}^2\\); \\(s_B^2=(9+0+9)/3=6\\ \\mathrm{cm}^2\\). Lấy căn bậc hai không âm được \\(s_A=\\sqrt{2/3}\\ \\mathrm{cm}\\), \\(s_B=\\sqrt6\\ \\mathrm{cm}\\); A ít phân tán hơn. So với hai mẫu ban đầu, mọi giá trị và trung bình tăng 1 cm nên từng độ lệch giữ nguyên, phương sai và độ lệch chuẩn không đổi.\n\n**Kiểm lỗi**\n\nLập bảng x−x̄ rồi bình phương và chia đúng n; kiểm phương sai không âm. Đọc lại **Kiến thức 1.5**, rồi tự làm **Bài luyện 22**, **Bài luyện 23**, **Bài luyện 32** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B14-VARIANCE",
-      "G10-B14-COMPARISON"
+      "G10-B14-COMPARISON",
+      "G10-B14-STDDEV"
     ],
     "original_outcome_ids": [
       "G10-B14-VARIANCE",
@@ -9991,7 +9995,7 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Tính độ lệch từng giá trị khỏi trung bình; khi cộng 1, trung bình cũng tăng 1."
+      "Tính độ lệch khỏi trung bình, bình phương, chia cho n rồi lấy căn; kiểm đơn vị."
     ],
     "rubric": null,
     "interaction": {
@@ -10012,7 +10016,7 @@
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
       "previous_content_version": "TOP22-BANK-CP69-20261126-T05",
-      "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
+      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_INTERACTION_CANDIDATE",
@@ -10020,32 +10024,35 @@
     "options": [
       {
         "id": "A",
-        "text": "A: \\(\\frac{2}{3}\\), B: 6; A ít phân tán hơn; cộng hằng số không đổi độ lệch khỏi trung bình"
+        "text": "\\(s_A^2=2/3,\\ s_B^2=6\\) (cm²); \\(s_A=\\sqrt{2/3},\\ s_B=\\sqrt6\\) (cm); A ít phân tán hơn; độ lệch không đổi."
       },
       {
         "id": "B",
-        "text": "A: \\(\\frac{2}{3}\\), B: 6; A ít phân tán hơn; cộng hằng số làm tăng phương sai"
+        "text": "\\(s_A^2=2/3,\\ s_B^2=6\\) (cm²); \\(s_A=\\sqrt{2/3},\\ s_B=\\sqrt6\\) (cm); cộng 1 làm tăng phương sai."
       },
       {
         "id": "C",
-        "text": "A: 1, B: 9; A ít phân tán hơn; phương sai không đổi"
+        "text": "\\(s_A^2=1,\\ s_B^2=9\\) (cm²); \\(s_A=1,\\ s_B=3\\) (cm); A ít phân tán hơn."
       },
       {
         "id": "D",
-        "text": "A: 6, B: \\(\\frac{2}{3}\\); B ít phân tán hơn; phương sai không đổi"
+        "text": "\\(s_A^2=2/3,\\ s_B^2=6\\) (cm²); \\(s_A=2/3,\\ s_B=6\\) (cm); A ít phân tán hơn."
       }
     ]
   },
   {
     "item_id": "THPT-TOP22-T06",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T06",
-    "stem": "Tần số của các nhóm \\([0;10)\\), \\([10;20)\\), \\([20;30)\\) với dữ liệu 3,10,10,20,29?",
-    "answer_key": "Tần số lần lượt 1, 2, 2.",
-    "worked_solution": "1,2,2; tổng 5. Hai số 10 thuộc nhóm thứ hai.\n\n**Kiểm lỗi**\n\nKhoanh từng quan sát theo biên trái đóng–phải mở, rồi đối chiếu tổng tần số với n. Đọc lại **Kiến thức 2.1**, rồi tự làm **Bài luyện 38**, **Bài luyện 40**, **Bài luyện 44** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T06-D08",
+    "stem": "Ghép dữ liệu \\(3,10,10,20,29\\) vào các nhóm \\([0;10),[10;20),[20;30)\\). Tìm độ rộng nhóm, tần số, cỡ mẫu và tỷ lệ quan sát thuộc nhóm thứ hai. Nếu chỉ còn bảng ghép nhóm, có biết chính xác từng giá trị ban đầu không?",
+    "answer_key": "Độ rộng 10; tần số 1,2,2; cỡ mẫu 5; tỷ lệ \\(2/5=40\\%\\); không.",
+    "worked_solution": "Mỗi nhóm rộng \\(10\\). Số 3 thuộc nhóm đầu; hai số 10 thuộc nhóm thứ hai; 20 và 29 thuộc nhóm cuối. Tần số là \\(1,2,2\\), tổng \\(n=5\\), tỷ lệ nhóm thứ hai \\(2/5=40\\%\\). Chỉ còn bảng ghép nhóm thì biết số quan sát trong mỗi khoảng, không khôi phục được chính xác từng giá trị.\n\n**Kiểm lỗi**\n\nKhoanh từng quan sát theo biên trái đóng–phải mở, rồi đối chiếu tổng tần số với n. Đọc lại **Kiến thức 2.1**, rồi tự làm **Bài luyện 38**, **Bài luyện 40**, **Bài luyện 44**, **Bài luyện 35**, **Bài luyện 41** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B08-FREQUENCY-TABLE",
-      "G11-B08-CLASS-BOUNDARIES"
+      "G11-B08-CLASS-BOUNDARIES",
+      "G11-B08-GROUPED-DEFINITION",
+      "G11-B08-GROUP-WIDTH",
+      "G11-B08-INTERPRETATION"
     ],
     "original_outcome_ids": [
       "G11-B08-FREQUENCY-TABLE",
@@ -10054,7 +10061,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Số nằm ở cận phải thuộc nhóm kế tiếp."
+      "Độ rộng là cận trên trừ cận dưới; gán mỗi quan sát đúng một nhóm, rồi chia tần số cho cỡ mẫu."
     ],
     "rubric": null,
     "interaction": {
@@ -10075,7 +10082,7 @@
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
       "previous_content_version": "TOP22-BANK-CP69-20261126-T06",
-      "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
+      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_INTERACTION_CANDIDATE",
@@ -10083,32 +10090,34 @@
     "options": [
       {
         "id": "A",
-        "text": "3; 1; 1"
+        "text": "10; 3,1,1; 5; 20%; không."
       },
       {
         "id": "B",
-        "text": "1; 2; 2"
+        "text": "10; 1,2,2; 5; 40%; không."
       },
       {
         "id": "C",
-        "text": "1; 3; 1"
+        "text": "10; 1,2,2; 5; 40%; có."
       },
       {
         "id": "D",
-        "text": "2; 2; 1"
+        "text": "30; 1,2,2; 5; 40%; không."
       }
     ]
   },
   {
     "item_id": "THPT-TOP22-T07",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T07",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T07-D08",
     "stem": "Cho bảng ghép nhóm sau. Ước lượng trung bình và tính tần số tích lũy.\n\n| Khoảng | Tần số |\n|---|---:|\n| [0;10) | 1 |\n| [10;20) | 1 |\n| [20;30) | 2 |",
     "answer_key": "Trung bình ghép nhóm ước lượng \\(17{,}5\\); tần số tích lũy 1, 2, 4.",
-    "worked_solution": "| Khoảng | Trung điểm | Tần số | Tần số tích lũy |\n|---|---:|---:|---:|\n| [0;10) | 5 | 1 | 1 |\n| [10;20) | 15 | 1 | 2 |\n| [20;30) | 25 | 2 | 4 |\n\nTrung bình ước lượng là \\(\\frac{5+15+2\\cdot25}{4}=17{,}5\\). Nếu bỏ trọng số và lấy trung bình ba trung điểm thì được 15, không đúng với bảng này.\n\n**Kiểm lỗi**\n\nKhông lấy trung bình ba trung điểm nếu nhóm có tần số khác nhau. Đọc lại **Kiến thức 2.2**, rồi tự làm **Bài luyện 47**, **Bài luyện 48**, **Bài luyện 51** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "worked_solution": "| Khoảng | Trung điểm | Tần số | Tần số tích lũy |\n|---|---:|---:|---:|\n| [0;10) | 5 | 1 | 1 |\n| [10;20) | 15 | 1 | 2 |\n| [20;30) | 25 | 2 | 4 |\n\nTrung bình ước lượng là \\(\\frac{5+15+2\\cdot25}{4}=17{,}5\\). Nếu bỏ trọng số và lấy trung bình ba trung điểm thì được 15, không đúng với bảng này.\n\n**Kiểm lỗi**\n\nKhông lấy trung bình ba trung điểm nếu nhóm có tần số khác nhau. Đọc lại **Kiến thức 2.2**, rồi tự làm **Bài luyện 47**, **Bài luyện 48**, **Bài luyện 51**, **Bài luyện 46** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B09-GROUPED-MEAN",
-      "G11-B09-CUMULATIVE"
+      "G11-B09-CUMULATIVE",
+      "G11-B09-REPRESENTATIVE",
+      "G12-CHIII-B10-O01"
     ],
     "original_outcome_ids": [
       "G11-B09-GROUPED-MEAN",
@@ -10138,7 +10147,7 @@
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
       "previous_content_version": "TOP22-BANK-CP69-20261126-T07",
-      "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
+      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_INTERACTION_CANDIDATE",
@@ -10227,13 +10236,15 @@
   },
   {
     "item_id": "THPT-TOP22-T09",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T09",
-    "stem": "Nhóm \\([0;10):4\\),\\([10;20):10\\),\\([20;30):6\\), cùng độ rộng: ước lượng mốt.",
-    "answer_key": "Mốt ghép nhóm ước lượng 16.",
-    "worked_solution": "Nhóm có tần số cao nhất là \\([10;20)\\), tần số 10. Các nhóm cùng độ rộng \\(h=10\\). Chênh lệch với nhóm trước là \\(10-4=6\\), với nhóm sau là \\(10-6=4\\). Mốt ước lượng \\(M_o=10+\\frac6{6+4}\\cdot10=16\\).\n\n**Kiểm lỗi**\n\nKiểm mẫu số dương, tần số các nhóm kề và điều kiện cùng độ rộng. Đọc lại **Kiến thức 2.4**, rồi tự làm **Bài luyện 50**, **Bài luyện 54**, **Bài luyện 59** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T09-D08",
+    "stem": "Ba nhóm \\([0;10),[10;20),[20;30)\\) có tần số lần lượt 4,10,6. Ước lượng mốt. Nếu đổi nhóm cuối thành \\([20;40)\\) nhưng giữ nguyên tần số, có được áp dụng trực tiếp cùng công thức mốt cho nhóm đều không? Mốt ước lượng có bắt buộc là một quan sát thật không?",
+    "answer_key": "Mốt ước lượng 16; không áp dụng trực tiếp khi nhóm không đều; không bắt buộc là quan sát thật.",
+    "worked_solution": "Với các nhóm cùng độ rộng \\(h=10\\), nhóm mốt là \\([10;20)\\). Hai hiệu tần số là \\(10-4=6\\) và \\(10-6=4\\). \\(M_o=10+\\frac6{6+4}\\cdot10=16\\). Nếu đổi nhóm cuối thành \\([20;40)\\), độ rộng nhóm không còn bằng nhau, không dùng trực tiếp công thức này. Vì mốt nhóm là kết quả nội suy, không nhất thiết có quan sát thật bằng 16.\n\n**Kiểm lỗi**\n\nKiểm mẫu số dương, tần số các nhóm kề và điều kiện cùng độ rộng. Đọc lại **Kiến thức 2.4**, rồi tự làm **Bài luyện 50**, **Bài luyện 54**, **Bài luyện 59**, **Bài luyện 60** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
-      "G11-B09-GROUPED-MODE"
+      "G11-B09-GROUPED-MODE",
+      "G11-B09-MODE-CONDITIONS",
+      "G11-B09-INTERPRETATION"
     ],
     "original_outcome_ids": [
       "G11-B09-GROUPED-MODE",
@@ -10242,7 +10253,7 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Tìm nhóm tần số lớn nhất và hai hiệu tần số với nhóm kề."
+      "Kiểm độ rộng, nhóm mốt và hai hiệu tần số; phân biệt ước lượng với quan sát thật."
     ],
     "rubric": null,
     "interaction": {
@@ -10263,7 +10274,7 @@
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
       "previous_content_version": "TOP22-BANK-CP69-20261126-T09",
-      "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
+      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_INTERACTION_CANDIDATE",
@@ -10271,31 +10282,33 @@
     "options": [
       {
         "id": "A",
-        "text": "16"
+        "text": "16; không; không."
       },
       {
         "id": "B",
-        "text": "15"
+        "text": "16; có; không."
       },
       {
         "id": "C",
-        "text": "20"
+        "text": "15; không; không."
       },
       {
         "id": "D",
-        "text": "14"
+        "text": "16; không; có."
       }
     ]
   },
   {
     "item_id": "THPT-TOP22-T10",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T10",
-    "stem": "Bảng gồm bốn nhóm \\([0;10),[10;20),[20;30),[30;40)\\) có tần số lần lượt \\(0,3,4,1\\). Tính khoảng biến thiên ghép nhóm và phân biệt với khoảng biến thiên của mẫu gốc.",
-    "answer_key": "Khoảng biến thiên ghép nhóm 30 đơn vị; không khẳng định khoảng biến thiên mẫu gốc bằng 30.",
-    "worked_solution": "Nhóm đầu có quan sát là \\([10;20)\\), nhóm cuối có quan sát là \\([30;40)\\). Do đó \\(R_g=40-10=30\\). Không lấy cận 0 của nhóm rỗng, cũng không kết luận khoảng biến thiên của dữ liệu gốc chắc chắn bằng 30.\n\n**Kiểm lỗi**\n\nNếu nhầm đầu mút nhóm với quan sát thực, thử đặt hai bộ số liệu khác nhau vào cùng nhóm. Đọc lại **Kiến thức 3.1**, rồi tự làm **Bài luyện 71**, **Bài luyện 73**, **Bài luyện 74** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T10-D08",
+    "stem": "Bốn nhóm \\([0;10),[10;20),[20;30),[30;40)\\) có tần số \\(0,3,4,1\\). Tính khoảng biến thiên ghép nhóm và cho biết có xác định chính xác khoảng biến thiên mẫu gốc không. Nếu thêm một quan sát ở nhóm mới \\([60;70)\\), giữ các nhóm cũ, khoảng biến thiên ghép nhóm tăng bao nhiêu?",
+    "answer_key": "30 đơn vị; không xác định chính xác khoảng biến thiên mẫu gốc; tăng 30 đơn vị.",
+    "worked_solution": "Nhóm đầu có quan sát là \\([10;20)\\), nhóm cuối có quan sát là \\([30;40)\\), nên \\(R_g=40-10=30\\). Không biết các giá trị cực biên thực sự nên không khẳng định khoảng biến thiên mẫu gốc bằng 30. Sau khi thêm một quan sát trong nhóm \\([60;70)\\), \\(R'_g=70-10=60\\); tăng 30 đơn vị dù chỉ thêm một quan sát.\n\n**Kiểm lỗi**\n\nNếu nhầm đầu mút nhóm với quan sát thực, thử đặt hai bộ số liệu khác nhau vào cùng nhóm. Đọc lại **Kiến thức 3.1**, rồi tự làm **Bài luyện 71**, **Bài luyện 73**, **Bài luyện 74**, **Bài luyện 76** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
-      "G12-CHIII-B09-O02"
+      "G12-CHIII-B09-O02",
+      "G12-CHIII-B09-O01",
+      "G12-CHIII-B09-O03"
     ],
     "original_outcome_ids": [
       "G12-CHIII-B09-O01",
@@ -10304,7 +10317,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Bỏ nhóm biên tần số 0 trước khi chọn cận."
+      "Bỏ nhóm rỗng, lấy cận cuối trừ cận đầu; tính lại khi nhóm cuối thay đổi."
     ],
     "rubric": null,
     "interaction": {
@@ -10325,7 +10338,7 @@
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
       "previous_content_version": "TOP22-BANK-CP69-20261126-T10",
-      "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
+      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_INTERACTION_CANDIDATE",
@@ -10333,19 +10346,19 @@
     "options": [
       {
         "id": "A",
-        "text": "40; mẫu gốc chắc chắn có R=40"
+        "text": "40; có; tăng 30."
       },
       {
         "id": "B",
-        "text": "30; không khẳng định mẫu gốc có R=30"
+        "text": "30; không; tăng 30."
       },
       {
         "id": "C",
-        "text": "30; mẫu gốc chắc chắn có R=30"
+        "text": "30; có; tăng 30."
       },
       {
         "id": "D",
-        "text": "20; mẫu gốc chắc chắn có R=20"
+        "text": "30; không; tăng 20."
       }
     ]
   },
@@ -10415,14 +10428,16 @@
   },
   {
     "item_id": "THPT-TOP22-T12",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T12",
-    "stem": "Cho ba nhóm \\([0;10)\\), \\([10;20)\\), \\([20;30)\\) có tần số lần lượt là 1, 2, 1. Tính phương sai và độ lệch chuẩn ước lượng.",
-    "answer_key": "Phương sai ước lượng 50; độ lệch chuẩn ước lượng \\(5\\sqrt2\\approx7{,}071\\).",
-    "worked_solution": "Các trung điểm 5,15,25; \\(\\bar x_g=15\\); \\(s_g^2=\\frac{1\\cdot100+2\\cdot0+1\\cdot100}4=50\\), \\(s_g=5\\sqrt2\\approx7{,}071\\).\n\n**Kiểm lỗi**\n\nĐừng chia n−1 hoặc bỏ trọng số f; dùng hai công thức kiểm chéo để tránh phương sai âm. Đọc lại **Kiến thức 3.3**, rồi tự làm **Bài luyện 95**, **Bài luyện 98**, **Bài luyện 106** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T12-D08",
+    "stem": "Ba nhóm \\([0;10),[10;20),[20;30)\\) có tần số 1,2,1. Tính trung bình, trung bình có trọng số của bình phương trung điểm, phương sai và độ lệch chuẩn ước lượng; kiểm phương sai bằng hai công thức.",
+    "answer_key": "\\(\\bar x_g=15,\\ \\overline{c^2}=275,\\ s_g^2=50,\\ s_g=5\\sqrt2\\).",
+    "worked_solution": "Các trung điểm là 5,15,25; \\(n=4\\). \\(\\bar x_g=(5+2\\cdot15+25)/4=15\\). Trung bình có trọng số của bình phương trung điểm là \\(\\overline{c^2}=(25+2\\cdot225+625)/4=275\\). Do đó \\(s_g^2=275-15^2=50\\). Kiểm theo công thức độ lệch: \\((1\\cdot100+2\\cdot0+1\\cdot100)/4=50\\). Vậy \\(s_g=5\\sqrt2\\approx7{,}071\\).\n\n**Kiểm lỗi**\n\nĐừng chia n−1 hoặc bỏ trọng số f; dùng hai công thức kiểm chéo để tránh phương sai âm. Đọc lại **Kiến thức 3.3**, rồi tự làm **Bài luyện 95**, **Bài luyện 98**, **Bài luyện 106**, **Bài luyện 99** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIII-B10-O02",
-      "G12-CHIII-B10-O04"
+      "G12-CHIII-B10-O04",
+      "G12-CHIII-B10-O01",
+      "G12-CHIII-B10-O03"
     ],
     "original_outcome_ids": [
       "G12-CHIII-B10-O02",
@@ -10431,7 +10446,7 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Tính trung bình từ các trung điểm, rồi bình phương độ lệch và chia cỡ mẫu."
+      "Dùng trọng số khi tính trung bình và trung bình bình phương; trừ bình phương trung bình rồi lấy căn."
     ],
     "rubric": null,
     "interaction": {
@@ -10452,7 +10467,7 @@
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
       "previous_content_version": "TOP22-BANK-CP69-20261126-T12",
-      "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
+      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_INTERACTION_CANDIDATE",
@@ -10460,32 +10475,33 @@
     "options": [
       {
         "id": "A",
-        "text": "25; 5"
+        "text": "15; 250; 25; 5"
       },
       {
         "id": "B",
-        "text": "50; 50"
+        "text": "15; 275; 50; 50"
       },
       {
         "id": "C",
-        "text": "100; 10"
+        "text": "15; 325; 100; 10"
       },
       {
         "id": "D",
-        "text": "\\(50; 5\\sqrt{2}\\)"
+        "text": "\\(15;\\ 275;\\ 50;\\ 5\\sqrt2\\)"
       }
     ]
   },
   {
     "item_id": "THPT-TOP22-T13",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T13",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T13-D08",
     "stem": "Hai mẫu ghép nhóm A,B cùng sử dụng ba khoảng \\([0;10),[10;20),[20;30)\\). Tần số A lần lượt \\(1,4,1\\); tần số B lần lượt \\(2,2,2\\). So sánh phương sai ghép nhóm. Viết một nhận xét được phép kết luận và một thông tin còn thiếu nếu muốn khuyến nghị chọn A hay B.",
     "answer_key": "\\(s_A^2\\approx\\frac{100}{3},s_B^2\\approx\\frac{200}{3}\\); A ít phân tán hơn theo bảng ghép nhóm. Chưa đủ thông tin khuyến nghị chọn A hay B (ví dụ thiếu mục tiêu lựa chọn).",
     "worked_solution": "Hai mẫu có cỡ mẫu 6, trung điểm nhóm 5,15,25 và cùng trung bình ghép nhóm 15. Phương sai ước lượng \\(s_A^2=\\frac{1\\cdot100+4\\cdot0+1\\cdot100}{6}=\\frac{100}{3}\\); \\(s_B^2=\\frac{2\\cdot100+2\\cdot0+2\\cdot100}{6}=\\frac{200}{3}\\). A ít phân tán hơn quanh trung bình theo bảng ghép nhóm. Chưa thể nói A tốt hơn B: cần biết mục tiêu lựa chọn, đại lượng đo hoặc tính đại diện của mẫu.\n\n**Kiểm lỗi**\n\nKhông suy nhân quả từ các số mô tả; kiểm cỡ mẫu, đơn vị và cách ghép nhóm. Đọc lại **Kiến thức 3.4**, rồi tự làm **Bài luyện 108**, **Bài luyện 110**, **Bài luyện 114** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIII-B10-O02",
-      "G12-CHIII-B10-O05"
+      "G12-CHIII-B10-O05",
+      "G12-CHIII-B10-O06"
     ],
     "original_outcome_ids": [
       "G12-CHIII-B10-O05",
@@ -10515,7 +10531,7 @@
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
       "previous_content_version": "TOP22-BANK-CP69-20261126-T13",
-      "revision_scope": "CP69_THREE_WAY_FIRST_TRY_RECONCILIATION; STANDALONE_CONTEXT_AND_BANK_REASONING_PRESERVED; PUBLIC_PROJECTION_HISTORICAL"
+      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_INTERACTION_CANDIDATE",
