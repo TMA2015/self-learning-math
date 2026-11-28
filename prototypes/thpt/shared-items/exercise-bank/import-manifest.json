@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "DELTA12_G10_CHIII_IV_PUBLIC_SELFCHECK_REVIEWED_FULL_Q01_Q18_OPEN",
+  "academic_audit": "DELTA13_G10_ALL_143_PUBLIC_SELFCHECK_SCOPED_REVIEW_COMPLETE_FULL_Q01_Q18_OPEN",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "46e4adce117a5d3831d25b03834c24b7d8b20daf",
+    "as_of_commit": "00fe3086d63618a81a5f54ed3a7dad07e64413c6",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Continue G10 ChV–VI public selfcheck (38 remaining records of 143), then remaining affected FirstTry/Topic scope and notation/coverage/PED gates. Preserve prior review snapshots. No blanket Q18.",
-    "status": "DELTA12_G10_CHIII_IV_PUBLIC_SELFCHECK_REVIEWED_FULL_Q01_Q18_OPEN",
+    "next": "G10 all 143 public selfcheck scoped math/source/interaction checks closed. Continue other affected SGK FirstTry/public selfcheck and Topic converted/coverage/PED/notation scopes; use current candidate and exact historical evidence. Preserve prior scoped accepted snapshots and Written. Q01–Q18 whole bank and RELEASE handoff not yet cleared.",
+    "status": "DELTA13_G10_ALL_143_PUBLIC_SELFCHECK_SCOPED_REVIEW_COMPLETE_FULL_Q01_Q18_OPEN",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,97 +112,99 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "delta_audit_wave12",
-    "delta_audit_wave12": {
-      "baseline": "652d0927c0c6bd717b1b4a3a6aa1adcc305a0a7b",
-      "verified_head": "46e4adce117a5d3831d25b03834c24b7d8b20daf",
+    "current_checkpoint_key": "delta_audit_wave13",
+    "delta_audit_wave13": {
+      "baseline": "7c3058890e08ce87e7b4ed48fe191a0ce53e8539",
+      "verified_head": "00fe3086d63618a81a5f54ed3a7dad07e64413c6",
       "inventory": {
         "interactive_unique": 2214,
         "written_unique": 325,
         "total_unique": 2539,
         "placement_rows": 4301,
-        "evidence": "Inherited inventory; only existing item shards edited."
+        "evidence": "Inherited inventory; two existing shards edited, no ID or placement changes."
       },
       "written": "325 source-reviewed, 40/40 flagged Written deltas closed, unchanged.",
       "interactive": {
-        "reviewed": 35,
-        "revised": 31,
-        "retained": 4,
+        "reviewed": 38,
+        "revised": 38,
+        "retained": 0,
         "chapters": [
           {
-            "ch": "iii",
-            "reviewed": 14,
-            "changed": 14,
-            "retained": [],
-            "old_blob": "d289587b0696fafc946addc03cf4b90d7bc7d440",
-            "new_blob": "13837c4da26c57c4bdc84e24cbaca058e94af13f",
-            "source_blob": "f9c35b7afa6e45a3937bd55c7a41bc7e3c647c2d",
+            "ch": "V",
+            "reviewed": 18,
+            "changed": 18,
+            "old_blob": "41dbafbeb6a56ab235a84299bd19b72e82da44fc",
+            "new_blob": "fc7697a8d0c7caf88ed88afe86f0eeac35b15397",
+            "source_blob": "94c5c39ad7958b2ef02ada016d928954a0b430f6",
             "multiple_choice": {
-              "13": [
+              "10": [
+                "A",
+                "B"
+              ],
+              "16": [
+                "A",
+                "C"
+              ],
+              "04": [
                 "A",
                 "B",
                 "D"
-              ],
-              "02": [
-                "A",
-                "C",
-                "D"
               ]
-            },
-            "parity": true,
-            "valid": true
+            }
           },
           {
-            "ch": "iv",
-            "reviewed": 21,
-            "changed": 17,
-            "retained": [
-              "THPT-G10-CHIV-RD1-02",
-              "THPT-G10-CHIV-RD1-08",
-              "THPT-G10-CHIV-RD1-12",
-              "THPT-G10-CHIV-RD1-15"
-            ],
-            "old_blob": "bcf4095be8c568d44a4d662422a333dea2dd6dd3",
-            "new_blob": "9ceb2aa78fd7c3df26939229d02d542b2cc356a5",
-            "source_blob": "55b2753c04cffff897947d7007bdc860bc19fcfb",
-            "multiple_choice": {
-              "11": [
-                "A",
-                "B",
-                "D"
-              ],
-              "20": [
-                "A",
-                "B",
-                "D"
-              ],
-              "01": [
-                "A",
-                "B",
-                "D"
-              ],
-              "07": [
-                "A",
-                "B",
-                "D"
-              ]
-            },
-            "parity": true,
-            "valid": true
+            "ch": "VI",
+            "reviewed": 20,
+            "changed": 20,
+            "old_blob": "b46cfa0c14849f920a6cfa9b44347242292342c1",
+            "new_blob": "44e65c07440f072d09dc1ea87c5c685417b609c7",
+            "source_blob": "f371827c2d74e420979a26209aadf336078cc526"
           }
         ],
         "source_commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
-        "proof_iii": "01 sin positive cos negative; 02 A/C/D true, tan90 undefined; 03 sin12/13,tan−12/5; 04 horizontal chord gives 45°,135°; 05 cos−12/13,tan−5/12,cot−12/5,supplement sin5/13 cos12/13; 06 (sqrt3−sqrt2)/2; 07 ratio3:4 implies sin4/5 cos−3/5 tan−4/3, cot defined sin≠0; 08 BC²=67; 09 C105°,b=6sqrt2,R=6; 10 p16,S48,r3,h8; 11 S15; 12 cosA=1/2 A60°; 13 A/B/D true, r=1; 14 BCsqrt39,S35sqrt3/4,Rsqrt13.",
-        "proof_iv": "01 A/B/D true (lengths 3,5,8); 02 zero vector, current B matches source A semantic option; 03 coordinates D−5,A0,C3,B8 -> AC,DA same direction, AB=−CD,BD13; 04 AB+BC+CD=AD; 05 parallelogram sum AC=2AO; 06 midpoint sum 2AM, centroid AG2AM/3,GM AM/3; 07 A/B/D true, centroid zero sum; 08 w=−2v,length6, current D matches source B; 09 AM2AB/5,BM−3AB/5,result AB/5; 10 AP=AB+AC,BP=AC; 11 A/B/D true; 12 midpoint B(3;6),vectors(4;4), current D matches source A; 13 t−3,k2; 14 C(1;7),M(1;1),CG4,GM2,perimeter6+6sqrt5; 15 t3/2,norm sqrt2/2, current C matches source B; 16 C(3;6),ACsqrt34; 17 −3(t−4)−2=0 ->10/3; 18 cos−1/2 ->120°; 19 dot0,equal squared lengths17,area17/2; 20 A/B/D true; 21 work26J,0J,cos26/(5sqrt29),orthogonal.",
-        "repair": "Six bundled truth groups replaced by independent selectable statements. Restored learner-visible math delimiters in trig/vector stems and worked solutions, explicit derivations for signs, midpoint/centroid and dot product. Four previously sound ChIV records 02/08/12/15 retained. Original source answer_key and rubric remain historical provenance; where historical option order differs, current interaction key verified by content, not old letter. Remaining legacy hint/key/rubric/option notation and reasoning scope not globally cleared. No fresh SGK PDF or independent review."
+        "proof_v": "01 interval78..82, relative bound2.5%; 02 intersection40.1..40.3; 03 intersection50.1..50.25, 7.545<10.02 cross products, II smaller bound; 04 A/B/D true, relative denominator23.75; 05 d≤1.2; 06 II 1/300<.004; 07 k=10; 08 weighted sum22, mean11/3,Q1=2,Q2=3,Q3=4,mode2; 09 (2,6,10)->(2,7,10); 10 A/B true, sum60, mode2, median unchanged; 11 k5,mode3,mean37/11; 12 sums56/112, means8/16, Q1/2/3=4/8/12 unchanged; 13 2t²/3=6 ->3; 14 means4/7,range6,IQR4,var5,sd sqrt5; 15 fences−2,14 only −3,15; 16 A/C true var5/20,sd doubled,IQR4/8; 17 B0,4,8,12,16, means8,var8/32, sd and range ratios2; 18 sum squared deviations8, n3/4 -> var8/3 and2.",
+        "proof_vi": "B15 R01 unique output for repeated input2, D={1,2}; R02 branch4>2 gives20; R03 strict decrease from negative slope; R04 f(2)=f(−1)=−4 -> only P; R05 x≤3,x≠−1. B16 R01 2(x−3)²−7 vertex(3;−7),min−7; R02 −(x−2)²+9 roots−1,5 and Oy5; R03 −4(t−3)²+36,3s,36m,6s; R04 −3(p−25)²+1875, p25, revenue1875 thousand VND; R05 only f has nonzero x² coefficient; R06 vertex(1;9), monotonicity on [−2;1],[1;5], values0,9,−7,range[−7;9], preserve remediation. B17 R01 roots−2,3 outside closed; R02 delta−8m -> m>0; R03 x≠1; R04 roots2,8 positive between; R05 P delta−24 positive, Q delta0 negative except−1, R delta36 positive (1;4), negative outside, roots1,4, preserve remediation. B18 R01 ±2 ->2 only; R02 −2,0 both verified; R03 −1±sqrt3 -> positive radical branch −1+sqrt3 only; R04 x=3, sides3,4,5.",
+        "repair": "Converted three bundled truth groups to independent selections; explicit error/rounding/statistics and quadratic/radical reasoning; restored stem and solution math notation for 36 rows, preserved two detailed ChVI remediation solutions and clarified their options. Original answer/rubric/hints unchanged; historical scoring not active. Remaining legacy visible answer/rubric/hint/choice notation and broad coverage/PED are separate outstanding gates.",
+        "parity": "Exact readback all 38: ID/version/answer/source/skills/level/exposure/status/type/rubric/hints unchanged, 4 unique options and valid keys, all auto_grade=false, only 3 approved interaction mode/key changes."
       },
-      "q_audit_scope": "35 scoped math/source and interaction/PED/notation checks; not whole-bank Q01–Q18 or CONTENT_READY. Actual scoring/reveal/projection remains RELEASE.",
+      "aggregate_g10_public_selfcheck": {
+        "reviewed": 143,
+        "total": 143,
+        "unique": 143,
+        "chapters": 9,
+        "counts": [
+          14,
+          14,
+          14,
+          21,
+          18,
+          20,
+          22,
+          14,
+          6
+        ],
+        "all_original_true_false_groups_converted": true,
+        "invalid_key_or_active_auto_grade": 0,
+        "shard_blobs": [
+          "394e88ab4ce1a1b7a563d7f6cb3b17d49b6a0b55",
+          "c7f8b7b8c224ae194af887cefced8bcca70cba06",
+          "13837c4da26c57c4bdc84e24cbaca058e94af13f",
+          "9ceb2aa78fd7c3df26939229d02d542b2cc356a5",
+          "fc7697a8d0c7caf88ed88afe86f0eeac35b15397",
+          "44e65c07440f072d09dc1ea87c5c685417b609c7",
+          "5cdff512ec71bf4b9444d4d03feef0874cd6c84b",
+          "3d2bd1ec6b5f947ba971ccc7cb100b9d493748bb",
+          "20f7cc1884b234435d2db9fde91d70da7c85def0"
+        ],
+        "evidence": "Delta08–13 scoped human/model math reviews + current readback structure, no repeat academic review of previously checked items."
+      },
+      "q_audit_scope": "G10 public selfcheck scoped math/source/interaction complete; not fresh S1 PDF or independent review, not global Q01–Q18, CONTENT_READY remains NO. Actual projection/scoring/reveal/browser verification RELEASE.",
       "protected_scope": "No runtime, private RD1, Final Submit, Mastery, Firebase, LIVE, merge/deploy."
     },
     "previous_manifest": {
-      "commit": "652d0927c0c6bd717b1b4a3a6aa1adcc305a0a7b",
-      "blob": "69db6115c25520119fc98e9ef3a6e88861c25b5d",
-      "key": "delta_audit_wave11"
+      "commit": "7c3058890e08ce87e7b4ed48fe191a0ce53e8539",
+      "blob": "710cbfc479fc6eb3203cff72f11541d0ccb37dc2",
+      "key": "delta_audit_wave12"
     }
   },
   "pending_review": {
@@ -304,7 +306,7 @@
     "cd21": "Eight CĐ21 candidate items checked, seven revised wave08. P06 historical practice AND replay source parameter mismatch, cutover regenerate both from candidate; other reused placement/coverage and full Q01–Q18 pending.",
     "cd22": "Seven new CĐ22 practice items checked/revised wave08, four previously flagged Written scoped verifications closed. Other reused/converted placements, source/coverage and full Q01–Q18 pending.",
     "sgk_g10_chi_chiii": "All 42 public selfcheck candidates ChI–III math/source/interaction scoped reviewed Delta11/12. Other FirstTry/converted scope, legacy hint/key/rubric typography and coverage/PED pending; earlier Written unchanged.",
-    "sgk_g10_chiv_chvi": "ChIV 21 public selfcheck candidates scoped reviewed Delta12, ChV 18 and ChVI 20 pending. Other converted scope, legacy notation/assessment and PED/coverage remain; B15_OUT_03 mappings preserved, scoped Written deltas closed.",
+    "sgk_g10_chiv_chvi": "All 59 G10 ChIV–VI public selfcheck candidates scoped source/math/interaction reviewed Delta12/13; 143/143 G10 public selfcheck scope now closed. Other converted/FirstTry, legacy notation/assessment and PED/coverage remain; B15_OUT_03 mappings preserved; scoped Written deltas closed.",
     "sgk_g10_chvii_chix": "All G10 ChVII 22 public selfcheck records now math/source/interaction scoped reviewed in Delta09/10; ChVIII 14 and ChIX 6 scoped reviewed in Delta08/09. No global Q18 or full chapter coverage inferred. W25 practice-only. Actual projection and reveal RELEASE.",
     "sgk_g11_chi_chiii": "47 conversions; scoped Delta/PED of public selfcheck format, ChII–III practice/selfcheck reused IDs and B09-KFT01 shared data, prior W09-02 Delta, historical notation/rubric/reveal parity pending; no final acceptance.",
     "sgk_g11_chiv_chvi": "10 FirstTry conversions; 50 reused public selfcheck placements and two reused FirstTry IDs; scoped assessment-format/PED, independent evidence, notation and reveal parity pending; no final acceptance.",
