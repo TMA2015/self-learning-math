@@ -703,7 +703,7 @@
   },
   {
     "item_id": "THPT-G12-EXP01-P05",
-    "content_version": "G12-EXP-XG6-20261127-01-P05",
+    "content_version": "G12-EXP-XG6-20261127-01-P05-XG6-20261128",
     "stem": "Tích phân diện tích mặt cắt (cm²) theo chiều dài (cm) cho đơn vị nào?",
     "answer_key": "cm³.",
     "worked_solution": "Diện tích mặt cắt có đơn vị cm², chiều dài có đơn vị cm; tích cho cm³, là đơn vị thể tích.",
@@ -712,7 +712,7 @@
       "G12-SGK-EXP01-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "RECOGNIZE",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Xét đơn vị của diện tích nhân với một đoạn chiều dài nhỏ."
     ],
