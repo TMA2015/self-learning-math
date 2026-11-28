@@ -292,18 +292,18 @@ Khi biết đủ ba cạnh (SSS), thường dùng định lí côsin tìm góc; 
 ### THPT-G10-CHIII-W05
 
 - **Bài:** B05; **placement:** `WRITTEN`; **role:** `WRITTEN`; **outcomes:** `G10-B05-UNIT_SEMICIRCLE`, `G10-B05-IDENTITIES`, `G10-B05-SUPPLEMENTARY`; **difficulty:** `APPLICATION`; **rubric:** 7 điểm. 
-- **STEM:** Một vòng quay có tâm O cao hơn mặt đất 12 m, bán kính 10 m. Xét vị trí M được xác định bởi góc 150° so với tia Ox hướng ngang sang phải, theo chiều dương, trên nửa đường tròn phía trên O. (a) Tính tọa độ của M trong hệ trục Oxy (mét). (b) Tìm độ cao M so với mặt đất. (c) Giải thích dấu của cos150° bằng hình học, không chỉ thuộc bảng số.
-- **HINT (luyện tập):** Với bán kính 10, hoành độ bằng `10cos150°`, tung độ bằng `10sin150°`; độ cao mặt đất = cao độ tâm + tung độ.
-- **LỜI GIẢI:** (a) \(x_M=10\cos150^\circ=-5\sqrt3\) (m), \(y_M=10\sin150^\circ=5\) (m). (b) Độ cao M là \(12+5=17\) m. (c) Góc 150° nằm phía trái trục Oy nên hình chiếu xuống trục Ox âm, từ đó cos150°<0.
-- **RUBRIC 7 điểm:** (1) Nêu đúng quy chiếu tâm O, bán kính và góc (1đ); (2) viết đúng `x=Rcos`, `y=Rsin` (2đ); (3) thay giá trị góc bù tính đủ tọa độ (2đ); (4) tính độ cao mặt đất 17 m (1đ); (5) giải thích hình học dấu cos (1đ). Không trừ lặp cùng lỗi số ở các bước phụ thuộc khi cách làm đúng; giáo viên/người học đối chiếu thủ công, không tự cộng Mastery.
+- **STEM:** Một vòng quay có tâm O cao hơn mặt đất 12 m, bán kính 10 m. Xét vị trí M được xác định bởi góc \(150^\circ\) so với tia Ox hướng ngang sang phải, theo chiều dương, trên nửa đường tròn phía trên O. (a) Tính tọa độ của M trong hệ trục Oxy (mét). (b) Tìm độ cao M so với mặt đất. (c) Giải thích dấu của \(\cos150^\circ\) bằng hình học, không chỉ thuộc bảng số.
+- **HINT (luyện tập):** Với bán kính 10, hoành độ bằng \(10\cos150^\circ\), tung độ bằng \(10\sin150^\circ\); độ cao mặt đất = cao độ tâm + tung độ.
+- **LỜI GIẢI:** (a) \(x_M=10\cos150^\circ=-5\sqrt3\,\mathrm{m}\), \(y_M=10\sin150^\circ=5\,\mathrm{m}\). (b) Độ cao M là \(12+5=17\,\mathrm{m}\). (c) Điểm M nằm bên trái trục Oy nên hoành độ của M âm; do đó \(\cos150^\circ<0\).
+- **RUBRIC 7 điểm:** (1) Nêu đúng quy chiếu tâm O, bán kính và góc (1đ); (2) viết đúng \(x=R\cos\alpha\), \(y=R\sin\alpha\) với \(\alpha=150^\circ\) (2đ); (3) thay giá trị góc bù tính đủ tọa độ (2đ); (4) tính độ cao mặt đất 17 m (1đ); (5) giải thích hình học dấu cos (1đ). Không trừ lặp cùng lỗi số ở các bước phụ thuộc khi cách làm đúng; giáo viên/người học đối chiếu thủ công, không tự cộng Mastery.
 
 ### THPT-G10-CHIII-W06-ANCHOR
 
 - **Bài:** B06; **placement:** `WRITTEN`; **role:** `WRITTEN`, `ANCHOR=true` (chỉ nhãn, cùng một item_id/rubric); **outcomes:** `G10-B06-COSINE_RULE`, `G10-B06-HERON`, `G10-B06-APPLICATION`; **difficulty:** `APPLICATION`; **rubric:** 7 điểm.
-- **STEM:** Một mảnh đất hình tam giác ABC có AB=9 m, AC=10 m và BC=17 m. (a) Chứng minh ba cạnh tạo thành tam giác. Tính \(\cos A\) và cho biết góc A nhọn hay tù. (b) Tính diện tích S bằng công thức Heron. (c) Tính bán kính đường tròn nội tiếp r và ngoại tiếp R. (d) Nếu trải cỏ toàn bộ mảnh đất, giá 120.000 đồng/m², tính chi phí chưa gồm công.
-- **HINT (luyện tập):** Kiểm tra 9+10>17; a=BC là cạnh đối diện A; nửa chu vi p=(9+10+17)/2; dùng S=pr và S=abc/(4R).
-- **LỜI GIẢI:** (a) Vì \(9+10=19>17\) nên ba độ dài lập thành một tam giác. Với a=17,b=10,c=9, \(\cos A=(b^2+c^2-a^2)/(2bc)=(100+81-289)/(180)=-3/5\), nên A **tù**. (b) \(p=18\), \(S=\sqrt{18\cdot(18-17)\cdot(18-10)\cdot(18-9)}=\sqrt{18\cdot1\cdot8\cdot9}=36\text{ m}^2\). (c) \(r=S/p=36/18=2\text{ m}\), \(R=abc/(4S)=17\cdot10\cdot9/(4\cdot36)=85/8\text{ m}\). (d) Chi phí \(36\cdot120000=4\,320\,000\) đồng.
-- **RUBRIC 7 điểm:** kiểm tra bất đẳng thức tam giác (1đ); sử dụng đúng định lí côsin và tính cos A (1.5đ); suy góc A tù (0.5đ); tính p và S đúng kèm m² (2đ); suy r và R đúng đơn vị (1.5đ); chi phí cỏ đúng (0.5đ). Tự luận tự đối chiếu không cập nhật Skill Mastery.
+- **STEM:** Một mảnh đất hình tam giác ABC có \(AB=9\,\mathrm{m}\), \(AC=10\,\mathrm{m}\) và \(BC=17\,\mathrm{m}\). (a) Chứng minh ba cạnh tạo thành tam giác. Tính \(\cos A\) và cho biết góc A nhọn hay tù. (b) Tính diện tích S bằng công thức Heron. (c) Tính bán kính đường tròn nội tiếp r và ngoại tiếp R. (d) Nếu trải cỏ toàn bộ mảnh đất, giá 120 000 đồng/m², tính chi phí chưa gồm công.
+- **HINT (luyện tập):** Kiểm tra \(9+10>17\); \(a=BC\) là cạnh đối diện A; nửa chu vi \(p=\frac{9+10+17}{2}\); dùng \(S=pr\) và \(S=\frac{abc}{4R}\).
+- **LỜI GIẢI:** (a) Vì \(9+10=19>17\) nên ba độ dài lập thành một tam giác. Với \(a=17,\ b=10,\ c=9\), \(\cos A=\frac{b^2+c^2-a^2}{2bc}=\frac{100+81-289}{180}=-\frac35\), nên A **tù**. (b) \(p=18\,\mathrm{m}\), \(S=\sqrt{18\cdot(18-17)\cdot(18-10)\cdot(18-9)}=\sqrt{18\cdot1\cdot8\cdot9}=36\,\mathrm{m}^2\). (c) \(r=\frac Sp=\frac{36}{18}=2\,\mathrm{m}\), \(R=\frac{abc}{4S}=\frac{17\cdot10\cdot9}{4\cdot36}=\frac{85}{8}\,\mathrm{m}\). (d) Chi phí \(36\cdot120000=4\,320\,000\) đồng.
+- **RUBRIC 7 điểm:** kiểm tra bất đẳng thức tam giác (1đ); sử dụng đúng định lí côsin và tính \(\cos A\) (1,5đ); suy góc A tù (0,5đ); tính p và S đúng kèm m² (2đ); suy r và R đúng đơn vị (1,5đ); chi phí cỏ đúng (0,5đ). Tự luận tự đối chiếu không cập nhật Skill Mastery.
 
 ## 7. D5 · HAI SVG NGUỒN THẬT (TOÀN BỘ XML TRONG GÓI)
 
