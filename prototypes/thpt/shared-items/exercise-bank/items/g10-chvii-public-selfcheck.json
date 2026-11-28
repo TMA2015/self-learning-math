@@ -82,7 +82,7 @@
     "hints": [
       "Giải hệ tìm giao điểm, giữ pháp tuyến của đường cần song song."
     ],
-    "rubric": "- 1đ tìm đúng giao điểm $I$;\n- 1đ tìm được phương trình và kết luận song song phân biệt.",
+    "rubric": "- 1đ tìm đúng giao điểm \\(I\\);\n- 1đ tìm được phương trình và kết luận song song phân biệt.",
     "interaction": {
       "type": "SINGLE_CHOICE",
       "correct_option_ids": [
@@ -117,19 +117,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(I(2;3),\\ \\Delta:2x+3y-7=0\\)."
+        "text": "\\(I(2;3)\\); chọn nguyên \\(d_3:2x+3y-7=0\\), nên hai đường trùng nhau."
       },
       {
         "id": "B",
-        "text": "\\(I(2;3),\\ \\Delta:2x+3y-13=0\\)."
+        "text": "\\(I(2;3)\\); giữ pháp tuyến \\((2;3)\\), thay \\(I\\) được \\(\\Delta:2x+3y-13=0\\); hằng số khác của \\(d_3\\)."
       },
       {
         "id": "C",
-        "text": "\\(I(3;2),\\ \\Delta:2x+3y-12=0\\)."
+        "text": "\\(I(3;2)\\); \\(\\Delta:2x+3y-12=0\\)."
       },
       {
         "id": "D",
-        "text": "\\(I(2;3),\\ \\Delta:3x-2y=0\\)."
+        "text": "\\(I(2;3)\\); dùng pháp tuyến \\((3;-2)\\), được \\(\\Delta:3x-2y=0\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -139,7 +139,7 @@
     "content_version": "SGK-G10-CHVII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVII-RD1-03",
     "stem": "Cho \\(P(2;-3)\\) và \\(Q(-1;5)\\). Viết một phương trình tham số của đường thẳng \\(PQ\\), rồi tìm giá trị tham số ứng với \\(Q\\). Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(x=2-3t,\\ y=-3+8t\\), \\(t\\in\\mathbb R\\); \\(Q\\) ứng với \\(t=1\\).",
-    "worked_solution": "\\(\\overrightarrow{PQ}=(-3;8)\\ne(0;0)\\) nên \\(PQ:(x,y)=(2,-3)+t(-3,8)\\). Khi \\(t=1\\) nhận \\(Q=(-1,5)\\).",
+    "worked_solution": "\\(\\overrightarrow{PQ}=(-3;8)\\ne\\vec0\\). Lấy \\(P\\) làm điểm đi qua và \\(\\overrightarrow{PQ}\\) làm vectơ chỉ phương, được \\(x=2-3t,\\ y=-3+8t\\), \\(t\\in\\mathbb R\\). Với \\(t=1\\) nhận \\(Q(-1;5)\\).",
     "skill_ids": [
       "G10-B19-PARAMETRIC",
       "G10-B19-TWO_POINTS"
@@ -185,19 +185,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x=2+3t,\\ y=-3+8t\\); Q ứng với t=1."
+        "text": "\\(x=2+3t,\\ y=-3+8t\\); \\(Q\\) ứng với \\(t=1\\)."
       },
       {
         "id": "B",
-        "text": "\\(x=2-3t,\\ y=-3+8t\\); Q ứng với t=−1."
+        "text": "\\(x=2-3t,\\ y=-3+8t\\); \\(Q\\) ứng với \\(t=-1\\)."
       },
       {
         "id": "C",
-        "text": "\\(x=2-3t,\\ y=-3+8t,\\ t\\in\\mathbb R\\); Q ứng với t=1."
+        "text": "\\(x=2-3t,\\ y=-3+8t,\\ t\\in\\mathbb R\\); vì \\(\\overrightarrow{PQ}=(-3;8)\\), \\(Q\\) ứng với \\(t=1\\)."
       },
       {
         "id": "D",
-        "text": "\\(x=2-3t,\\ y=-3-8t\\); Q ứng với t=1."
+        "text": "\\(x=2-3t,\\ y=-3-8t\\); \\(Q\\) ứng với \\(t=1\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -205,7 +205,7 @@
   {
     "item_id": "THPT-G10-CHVII-RD1-04",
     "content_version": "SGK-G10-CHVII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVII-RD1-04",
-    "stem": "Với \\(d:\\begin{cases}x=1+2t\\\\ y=4-t\\end{cases}\\) (\\(t\\in\\mathbb R\\)), khẳng định nào đúng? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Với \\(d:\\begin{cases}x=1+2t\\\\ y=4-t\\end{cases}\\) (\\(t\\in\\mathbb R\\)), xét hai điểm \\(M(7;1)\\) và \\(N(5;3)\\). Khẳng định nào đúng? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "B",
     "worked_solution": "\\(M(7;1)\\) thuộc đường (ứng với \\(t=3\\)). \\(N(5;3)\\) không thuộc đường: từ \\(x=5\\) cho \\(t=2\\) thì \\(y=2\\ne3\\).",
     "skill_ids": [
@@ -252,19 +252,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Cả M và N thuộc d."
+        "text": "Cả \\(M\\) và \\(N\\) thuộc \\(d\\)."
       },
       {
         "id": "B",
-        "text": "Chỉ M thuộc d."
+        "text": "Chỉ \\(M\\) thuộc \\(d\\)."
       },
       {
         "id": "C",
-        "text": "Chỉ N thuộc d."
+        "text": "Chỉ \\(N\\) thuộc \\(d\\)."
       },
       {
         "id": "D",
-        "text": "Không điểm nào thuộc d."
+        "text": "Không điểm nào thuộc \\(d\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -286,7 +286,7 @@
     "hints": [
       "Tìm I; hai hệ số góc ứng với góc 45° so với trục ngang là đối nhau."
     ],
-    "rubric": "- 1đ tìm đúng $I$;\n- 1đ nêu đủ hai hướng $m=\\pm1$ từ điều kiện góc $45^\\circ$;\n- 1đ viết đủ hai phương trình;\n- 1đ chứng minh hai đường vuông góc (vectơ hoặc hệ số góc).",
+    "rubric": "- 1đ tìm đúng \\(I\\);\n- 1đ nêu đủ hai hướng \\(m=\\pm1\\) từ điều kiện góc \\(45^\\circ\\);\n- 1đ viết đủ hai phương trình;\n- 1đ chứng minh hai đường vuông góc (vectơ hoặc hệ số góc).",
     "interaction": {
       "type": "SINGLE_CHOICE",
       "correct_option_ids": [
@@ -321,19 +321,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(I(1;3),\\ y=x+2,\\ y=-x+4\\); hai chỉ phương (1;1),(1;−1) vuông góc."
+        "text": "\\(I(1;3)\\); hai hệ số góc \\(\\pm1\\) cho \\(y=x+2,\\ y=-x+4\\); hai chỉ phương \\((1;1),(1;-1)\\) có tích vô hướng bằng 0."
       },
       {
         "id": "B",
-        "text": "\\(I(1;3),\\ y=x+2\\); chỉ có một đường."
+        "text": "\\(I(1;3)\\); chỉ có đường \\(y=x+2\\) vì góc \\(45^\\circ\\) có hệ số góc 1."
       },
       {
         "id": "C",
-        "text": "\\(I(1;3),\\ y=x-2,\\ y=-x-4\\); hai đường vuông góc."
+        "text": "\\(I(1;3)\\); \\(y=x-2,\\ y=-x-4\\); hai đường vuông góc."
       },
       {
         "id": "D",
-        "text": "\\(I(3;1),\\ y=x-2,\\ y=-x+4\\); hai đường vuông góc."
+        "text": "\\(I(3;1)\\); \\(y=x-2,\\ y=-x+4\\); hai đường vuông góc."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -343,7 +343,7 @@
     "content_version": "SGK-G10-CHVII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVII-RD1-06",
     "stem": "Một bể chứa ban đầu có \\(120\\) lít nước; một vòi tháo đều \\(8\\) lít/phút và không nạp thêm. (a) Lập hàm \\(V(t)\\) và miền thời gian vật lý. (b) Khi nào còn \\(40\\) lít? (c) Vì sao \\(t=20\\) phút không thuộc mô hình? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(V(t)=120-8t\\), \\(0\\le t\\le15\\); \\(t=10\\) phút; 20 phút vượt lúc hết nước.",
-    "worked_solution": "Thể tích không âm: \\(120-8t\\ge0\\Rightarrow0\\le t\\le15\\). \\(120-8t=40\\Rightarrow t=10\\). Tại 20 phút mô hình tuyến tính cho thể tích âm, vô nghĩa vật lý.",
+    "worked_solution": "Gọi \\(t\\) là thời gian (phút) kể từ khi bắt đầu tháo nước, \\(V(t)\\) là thể tích (lít). Mỗi phút giảm 8 lít, nên \\(V(t)=120-8t\\). Điều kiện \\(t\\ge0\\) và \\(120-8t\\ge0\\) cho \\(0\\le t\\le15\\). Giải \\(120-8t=40\\) được \\(t=10\\) phút. Tại \\(t=20\\), mô hình tuyến tính cho \\(-40\\) lít, vô nghĩa vật lý; bể đã hết nước.",
     "skill_ids": [
       "G10-B19-LINEAR_MODEL"
     ],
@@ -388,19 +388,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(V(t)=120-8t,\\ t\\ge0\\); t=10 phút, 20 phút hợp lệ."
+        "text": "\\(V(t)=120-8t,\\ t\\ge0\\); \\(t=10\\) phút, \\(20\\) phút hợp lệ."
       },
       {
         "id": "B",
-        "text": "\\(V(t)=120-8t,\\ 0\\le t\\le15\\); t=10 phút, 20 phút vượt miền."
+        "text": "\\(V(t)=120-8t,\\ 0\\le t\\le15\\); \\(t=10\\) phút; ở \\(t=20\\) mô hình cho thể tích âm."
       },
       {
         "id": "C",
-        "text": "\\(V(t)=120+8t,\\ t\\ge0\\); t=10 phút."
+        "text": "\\(V(t)=120+8t,\\ t\\ge0\\); \\(t=10\\) phút."
       },
       {
         "id": "D",
-        "text": "\\(V(t)=120-8t,\\ 0\\le t\\le10\\); t=5 phút."
+        "text": "\\(V(t)=120-8t,\\ 0\\le t\\le10\\); \\(t=5\\) phút."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -525,19 +525,19 @@
     "options": [
       {
         "id": "A",
-        "text": "(0;3)"
+        "text": "\\(H(0;3)\\)"
       },
       {
         "id": "B",
-        "text": "(2;5)"
+        "text": "\\(H(2;5)\\)"
       },
       {
         "id": "C",
-        "text": "(3;0)"
+        "text": "\\(H(3;0)\\)"
       },
       {
         "id": "D",
-        "text": "(1;2)"
+        "text": "\\(H(1;2)\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -592,19 +592,19 @@
     "options": [
       {
         "id": "A",
-        "text": "(0;0) và (0;5)"
+        "text": "\\(M_1(0;0),\\ M_2(0;5)\\); phương trình \\(|4t-10|=10\\) có đúng hai nghiệm \\(t=0,5\\)."
       },
       {
         "id": "B",
-        "text": "Chỉ (0;5)"
+        "text": "Chỉ \\(M(0;5)\\); chỉ xét \\(4t-10=10\\)."
       },
       {
         "id": "C",
-        "text": "(0;−5) và (0;5)"
+        "text": "\\(M_1(0;-5),\\ M_2(0;5)\\); lấy hai giá trị đối nhau của \\(t\\)."
       },
       {
         "id": "D",
-        "text": "(0;2) và (0;3)"
+        "text": "\\(M_1(0;2),\\ M_2(0;3)\\); lấy \\(|4t-10|=2\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -727,19 +727,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(m=-3\\); trùng nhau; khoảng cách 0."
+        "text": "\\(m=-3\\); hai pháp tuyến cùng phương nên hai đường trùng nhau, khoảng cách 0."
       },
       {
         "id": "B",
-        "text": "\\(m=5\\); phân biệt; khoảng cách \\(\\frac4{\\sqrt{13}}\\)."
+        "text": "\\(m=5\\); hai đường phân biệt, khoảng cách \\(\\frac4{\\sqrt{13}}\\)."
       },
       {
         "id": "C",
-        "text": "\\(m=-3\\); phân biệt; khoảng cách \\(\\frac4{\\sqrt{13}}\\)."
+        "text": "\\(m=-3\\); đưa \\(d_m\\) về \\(2x-3y+1=0\\), hằng số khác 5; khoảng cách \\(\\frac{|5-1|}{\\sqrt{13}}=\\frac4{\\sqrt{13}}\\)."
       },
       {
         "id": "D",
-        "text": "\\(m=-3\\); phân biệt; khoảng cách \\(\\frac8{\\sqrt{13}}\\)."
+        "text": "\\(m=-3\\); hai đường phân biệt, lấy \\(\\frac8{\\sqrt{13}}\\) do chưa đồng nhất hệ số."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -814,7 +814,7 @@
   {
     "item_id": "THPT-G10-CHVII-RD1-13",
     "content_version": "SGK-G10-CHVII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVII-RD1-13",
-    "stem": "Một đường tròn đi qua \\(P(1;2)\\), \\(Q(5;4)\\) và có tâm \\(I\\) nằm trên đường thẳng \\(d:x+y-5=0\\). Tìm tọa độ tâm, bán kính và phương trình đường tròn. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Một đường tròn đi qua \\(P(1;2)\\), \\(Q(5;4)\\) và có tâm \\(I(h;k)\\) nằm trên đường thẳng \\(d:x+y-5=0\\). Tìm tọa độ tâm, bán kính và phương trình đường tròn. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(I(4;1)\\), \\(R=\\sqrt{10}\\); \\((x-4)^2+(y-1)^2=10\\).",
     "worked_solution": "Đặt tâm \\(I(h;k)\\). Do đường tròn đi qua \\(P,Q\\), có \\((h-1)^2+(k-2)^2=(h-5)^2+(k-4)^2\\), rút gọn được \\(2h+k=9\\). Đồng thời \\(h+k=5\\). Giải hệ được \\(h=4,k=1\\). Khi đó \\(R^2=IP^2=(4-1)^2+(1-2)^2=10>0\\). Vậy phương trình cần tìm là \\((x-4)^2+(y-1)^2=10\\).",
     "skill_ids": [
@@ -826,7 +826,7 @@
     "hints": [
       "Tâm cách đều P,Q và nằm trên d; lập hai phương trình."
     ],
-    "rubric": "- 1đ lập điều kiện cách đều và tìm đúng tâm bằng giao hai đường;\n- 1đ tính đúng $R^2$ và viết phương trình.",
+    "rubric": "- 1đ lập điều kiện cách đều và tìm đúng tâm bằng giao hai đường;\n- 1đ tính đúng \\(R^2\\) và viết phương trình.",
     "interaction": {
       "type": "SINGLE_CHOICE",
       "correct_option_ids": [
@@ -861,19 +861,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(I(4;1),R=\\sqrt{10};(x-4)^2+(y-1)^2=10\\)."
+        "text": "Từ \\(IP=IQ\\) được \\(2h+k=9\\), kết hợp \\(h+k=5\\) suy ra \\(I(4;1)\\), \\(R=\\sqrt{10}\\); \\((x-4)^2+(y-1)^2=10\\)."
       },
       {
         "id": "B",
-        "text": "\\(I(3;2),R=2;(x-3)^2+(y-2)^2=4\\)."
+        "text": "\\(I(3;2),\\ R=2\\); \\((x-3)^2+(y-2)^2=4\\)."
       },
       {
         "id": "C",
-        "text": "\\(I(4;1),R=10;(x-4)^2+(y-1)^2=100\\)."
+        "text": "\\(I(4;1),\\ R=10\\); \\((x-4)^2+(y-1)^2=100\\)."
       },
       {
         "id": "D",
-        "text": "\\(I(1;4),R=\\sqrt{10};(x-1)^2+(y-4)^2=10\\)."
+        "text": "\\(I(1;4),\\ R=\\sqrt{10}\\); \\((x-1)^2+(y-4)^2=10\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -894,7 +894,7 @@
     "hints": [
       "Xét đường qua A có hệ số góc m và trường hợp thẳng đứng; khoảng cách từ O bằng R."
     ],
-    "rubric": "- 1đ xác định tâm, bán kính và $OA>R$;\n- 1đ lập họ đường qua $A$ và điều kiện tiếp xúc;\n- 1đ giải đúng cả hai giá trị $m$ và loại khả năng thẳng đứng;\n- 1đ viết hai phương trình và kiểm tra khoảng cách bằng $R$.",
+    "rubric": "- 1đ xác định tâm, bán kính và \\(OA>R\\);\n- 1đ lập họ đường qua \\(A\\) và điều kiện tiếp xúc;\n- 1đ giải đúng cả hai giá trị \\(m\\) và loại khả năng thẳng đứng;\n- 1đ viết hai phương trình và kiểm tra khoảng cách bằng \\(R\\).",
     "interaction": {
       "type": "SINGLE_CHOICE",
       "correct_option_ids": [
@@ -929,19 +929,19 @@
     "options": [
       {
         "id": "A",
-        "text": "A nằm ngoài; chỉ \\(3x+4y-15=0\\)."
+        "text": "\\(OA>3\\); chỉ có tiếp tuyến \\(3x+4y-15=0\\)."
       },
       {
         "id": "B",
-        "text": "A nằm ngoài; \\(3x+4y-15=0,\\ 3x-4y-15=0\\); mỗi đường cách O đúng 3."
+        "text": "\\(OA=5>3\\); \\(3x+4y-15=0\\) và \\(3x-4y-15=0\\) đều qua \\(A\\), khoảng cách đến \\(O\\) bằng \\(\\frac{15}{5}=3\\); \\(x=5\\) không tiếp xúc."
       },
       {
         "id": "C",
-        "text": "A nằm ngoài; \\(x=5\\) và \\(y=0\\)."
+        "text": "\\(OA>3\\); hai tiếp tuyến là \\(x=5\\) và \\(y=0\\)."
       },
       {
         "id": "D",
-        "text": "A nằm ngoài; \\(4x\\pm3y-20=0\\); mỗi đường cách O đúng 3."
+        "text": "\\(OA>3\\); hai tiếp tuyến là \\(4x\\pm3y-20=0\\), vì cho rằng khoảng cách bằng 3."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1019,7 +1019,7 @@
     "content_version": "SGK-G10-CHVII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVII-RD1-16",
     "stem": "Cho \\((C):x^2+y^2+2x-4y-20=0\\). Điểm nào **nằm trên** \\((C)\\)? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "B",
-    "worked_solution": "Hoàn thành bình phương \\((x+1)^2+(y-2)^2=25\\). Điểm \\((2,6)\\) có khoảng cách bình phương tới tâm \\((-1,2)\\) là \\(9+16=25\\).",
+    "worked_solution": "Hoàn thành bình phương: \\((x+1)^2+(y-2)^2=25\\). Thay lần lượt bốn điểm vào vế trái được \\(20,25,18,1\\). Chỉ điểm \\((2;6)\\) cho giá trị 25, nên nằm trên đường tròn.",
     "skill_ids": [
       "G10-B21-CIRCLE_GENERAL"
     ],
@@ -1064,19 +1064,19 @@
     "options": [
       {
         "id": "A",
-        "text": "(1;6)"
+        "text": "\\((1;6)\\)"
       },
       {
         "id": "B",
-        "text": "(2;6)"
+        "text": "\\((2;6)\\)"
       },
       {
         "id": "C",
-        "text": "(2;5)"
+        "text": "\\((2;5)\\)"
       },
       {
         "id": "D",
-        "text": "(0;2)"
+        "text": "\\((0;2)\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1086,7 +1086,7 @@
     "content_version": "SGK-G10-CHVII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVII-RD1-17",
     "stem": "Một elip có tâm \\(O\\), trục lớn theo \\(Ox\\) và nửa trục lớn \\(a=6\\). Biết elip đi qua điểm \\(M(3;3)\\). Phương trình chính tắc nào đúng? (Không yêu cầu tâm sai.) Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
-    "worked_solution": "Dạng chính tắc \\(x^2/36+y^2/b^2=1\\) với \\(0<b^2<36\\). Vì \\(M(3;3)\\) thuộc elip nên \\(9/36+9/b^2=1\\), suy ra \\(9/b^2=3/4\\), \\(b^2=12\\). Chỉ A phù hợp cả điều kiện đi qua \\(M\\) và elip có trục lớn theo \\(Ox\\); không dùng tâm sai.",
+    "worked_solution": "Dạng chính tắc là \\(\\frac{x^2}{36}+\\frac{y^2}{b^2}=1\\), với \\(0<b^2<36\\). Thay \\(M(3;3)\\) vào được \\(\\frac9{36}+\\frac9{b^2}=1\\), suy ra \\(\\frac9{b^2}=\\frac34\\), nên \\(b^2=12\\). Phương án A thỏa điều kiện đi qua \\(M\\) và có trục lớn theo \\(Ox\\).",
     "skill_ids": [
       "G10-B22-ELLIPSE_PARAMETERS"
     ],
@@ -1153,7 +1153,7 @@
     "content_version": "SGK-G10-CHVII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVII-RD1-18",
     "stem": "Hypebol chính tắc có tâm \\(O\\), trục thực theo \\(Ox\\), độ dài trục thực bằng \\(4\\) và đi qua \\(M(4;3)\\). Viết phương trình chính tắc và xác định độ dài trục ảo. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(\\dfrac{x^2}{4}-\\dfrac{y^2}{3}=1\\); độ dài trục ảo bằng \\(2\\sqrt3\\).",
-    "worked_solution": "Độ dài trục thực \\(2a=4\\) cho \\(a=2\\), \\(a^2=4\\). Dạng chính tắc là \\(x^2/4-y^2/b^2=1\\) với \\(b^2>0\\). Thế \\(M(4;3)\\): \\(16/4-9/b^2=1\\), suy ra \\(9/b^2=3\\), \\(b^2=3\\). Vậy hypebol \\(x^2/4-y^2/3=1\\) và trục ảo dài \\(2b=2\\sqrt3\\).",
+    "worked_solution": "Độ dài trục thực \\(2a=4\\) cho \\(a=2\\). Dạng chính tắc là \\(\\frac{x^2}{4}-\\frac{y^2}{b^2}=1\\), với \\(b^2>0\\). Thay \\(M(4;3)\\): \\(\\frac{16}{4}-\\frac9{b^2}=1\\), suy ra \\(b^2=3\\). Vậy hypebol có phương trình \\(\\frac{x^2}{4}-\\frac{y^2}{3}=1\\), trục ảo dài \\(2b=2\\sqrt3\\).",
     "skill_ids": [
       "G10-B22-HYPERBOLA_PARAMETERS"
     ],
@@ -1163,7 +1163,7 @@
     "hints": [
       "Trục thực dài 2a, thế M để tìm b bình phương."
     ],
-    "rubric": "- 1đ xác định $a$ và $b^2$ từ điều kiện điểm thuộc hypebol;\n- 1đ lập phương trình, suy ra độ dài trục ảo.",
+    "rubric": "- 1đ xác định \\(a\\) và \\(b^2\\) từ điều kiện điểm thuộc hypebol;\n- 1đ lập phương trình, suy ra độ dài trục ảo.",
     "interaction": {
       "type": "SINGLE_CHOICE",
       "correct_option_ids": [
@@ -1202,7 +1202,7 @@
       },
       {
         "id": "B",
-        "text": "\\(\\frac{x^2}{4}-\\frac{y^2}{3}=1\\); trục ảo dài \\(2\\sqrt3\\)."
+        "text": "Từ \\(2a=4\\) có \\(a^2=4\\); thay \\(M\\) được \\(b^2=3\\), nên \\(\\frac{x^2}{4}-\\frac{y^2}{3}=1\\); trục ảo dài \\(2\\sqrt3\\)."
       },
       {
         "id": "C",
@@ -1220,7 +1220,7 @@
     "content_version": "SGK-G10-CHVII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVII-RD1-19",
     "stem": "Cho parabol \\((P)\\) có tiêu điểm \\(F(3;0)\\) và đường chuẩn \\(x=-3\\). (a) Viết phương trình chính tắc \\(y^2=2px\\), \\(p>0\\). (b) Kiểm tra điểm \\(M(3;6)\\) thuộc \\((P)\\). (c) Chứng minh tại \\(M\\), khoảng cách đến tiêu điểm bằng khoảng cách tới đường chuẩn. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "\\(p=6\\), \\((P):y^2=12x\\); \\(M\\in(P)\\), hai khoảng cách cùng bằng 6.",
-    "worked_solution": "Với quy ước SGK \\(y^2=2px\\), tiêu điểm \\((p/2,0)\\), đường chuẩn \\(x=-p/2\\). Do đó \\(p=6\\), \\(y^2=12x\\). Tại \\(M(3,6)\\): \\(36=12\\cdot3\\). \\(MF=6\\) vì \\(F=(3,0)\\); khoảng cách từ \\((3,6)\\) đến \\(x=-3\\) bằng \\(|3+3|=6\\).",
+    "worked_solution": "Với quy ước \\(y^2=2px\\), tiêu điểm là \\(F(\\frac p2;0)\\), đường chuẩn \\(x=-\\frac p2\\). Từ \\(F(3;0)\\) suy ra \\(p=6\\); phương trình là \\(y^2=12x\\). Tại \\(M(3;6)\\), \\(6^2=12\\cdot3\\), nên \\(M\\) thuộc parabol. Khoảng cách \\(MF=6\\) và khoảng cách đến đường chuẩn bằng \\(|3+3|=6\\).",
     "skill_ids": [
       "G10-B22-PARABOLA_FOCUS"
     ],
@@ -1265,19 +1265,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(p=3,\\ y^2=6x\\); M thuộc parabol."
+        "text": "\\(p=3,\\ y^2=6x\\); \\(M\\) thuộc parabol."
       },
       {
         "id": "B",
-        "text": "\\(p=6,\\ y^2=12x\\); M không thuộc parabol."
+        "text": "\\(p=6,\\ y^2=12x\\); \\(M\\) không thuộc parabol."
       },
       {
         "id": "C",
-        "text": "\\(p=6,\\ y^2=12x\\); M thuộc parabol, cả hai khoảng cách bằng 6."
+        "text": "\\(p=6,\\ y^2=12x\\); \\(6^2=12\\cdot3\\), \\(MF=6\\) và khoảng cách từ \\(M\\) đến \\(x=-3\\) bằng 6."
       },
       {
         "id": "D",
-        "text": "\\(p=6,\\ x^2=12y\\); M thuộc parabol."
+        "text": "\\(p=6,\\ x^2=12y\\); \\(M\\) thuộc parabol."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1400,19 +1400,19 @@
     "options": [
       {
         "id": "A",
-        "text": "F(4;0), đường chuẩn x=−4; hai mép \\(y=\\pm12\\), rộng 24 cm."
+        "text": "\\(F(4;0)\\), đường chuẩn \\(x=-4\\); tại \\(x=9\\), hai mép có \\(y=\\pm12\\), nên rộng \\(12-(-12)=24\\) cm."
       },
       {
         "id": "B",
-        "text": "F(8;0), đường chuẩn x=−8; rộng 24 cm."
+        "text": "\\(F(8;0)\\), đường chuẩn \\(x=-8\\); rộng 24 cm."
       },
       {
         "id": "C",
-        "text": "F(4;0), đường chuẩn x=−4; rộng 12 cm."
+        "text": "\\(F(4;0)\\), đường chuẩn \\(x=-4\\); rộng 12 cm vì chỉ lấy một mép."
       },
       {
         "id": "D",
-        "text": "F(4;0), đường chuẩn x=4; rộng 24 cm."
+        "text": "\\(F(4;0)\\), đường chuẩn \\(x=4\\); rộng 24 cm."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1420,9 +1420,9 @@
   {
     "item_id": "THPT-G10-CHVII-RD1-22",
     "content_version": "SGK-G10-CHVII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVII-RD1-22",
-    "stem": "**Tự chọn — không thuộc điều kiện đạt Core Readiness.** Hypebol \\(x^2/49-y^2/9=1\\) có cặp tiệm cận nào? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
+    "stem": "**Tự chọn — không bắt buộc.** Hypebol \\(\\frac{x^2}{49}-\\frac{y^2}{9}=1\\) có cặp tiệm cận nào? Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
-    "worked_solution": "Tiệm cận của \\(x^2/a^2-y^2/b^2=1\\) có dạng \\(y=\\pm(b/a)x\\); ở đây \\(a=7,b=3\\), nên \\(y=\\pm3x/7\\). Không tính câu này vào Core Readiness.",
+    "worked_solution": "Tiệm cận của hypebol \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\) có dạng \\(y=\\pm\\frac ba x\\). Ở đây \\(a=7,\\ b=3\\), nên \\(y=\\pm\\frac37 x\\). Đây là câu tự chọn, không phải điều kiện đạt kiến thức cốt lõi.",
     "skill_ids": [
       "G10-B22-HYPERBOLA_ASYMPTOTES"
     ],
