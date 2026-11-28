@@ -119,19 +119,19 @@
     "options": [
       {
         "id": "A",
-        "text": "36 cặp; chỉ bốn cặp (1,3),(2,4),(3,5),(4,6); \\(P(B)=\\frac19\\)."
+        "text": "36 cặp đồng khả năng; chỉ bốn cặp \\((1,3),(2,4),(3,5),(4,6)\\); \\(P(B)=\\frac19\\)."
       },
       {
         "id": "B",
-        "text": "36 cặp; \\(B=\\{(1,3),(2,4),(3,1),(3,5),(4,2),(4,6),(5,3),(6,4)\\}\\); \\(P(B)=\\frac29\\); các mức chênh lệch không đồng khả năng."
+        "text": "36 cặp đồng khả năng; \\(B=\\{(1,3),(2,4),(3,1),(3,5),(4,2),(4,6),(5,3),(6,4)\\}\\); \\(P(B)=\\frac29\\). Chênh lệch 0 ứng với 6 cặp, chênh lệch 5 chỉ ứng với 2 cặp."
       },
       {
         "id": "C",
-        "text": "6 mức chênh lệch đồng khả năng; \\(P(B)=\\frac16\\)."
+        "text": "Sáu mức chênh lệch là sáu kết quả đồng khả năng nên \\(P(B)=\\frac16\\)."
       },
       {
         "id": "D",
-        "text": "21 cặp không thứ tự đồng khả năng; \\(P(B)=\\frac4{21}\\)."
+        "text": "Có 21 cặp không thứ tự, coi chúng đồng khả năng; bốn cặp thuận lợi nên \\(P(B)=\\frac4{21}\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -187,19 +187,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(P(C)=\\frac1{18},P(\\overline C)=\\frac{17}{18}\\); C vẫn có thể xảy ra."
+        "text": "Có \\(6\\cdot3=18\\) kết quả, chỉ một thuận lợi; \\(P(C)=\\frac1{18},\\ P(\\overline C)=\\frac{17}{18}\\); \\(C\\) có thể xảy ra."
       },
       {
         "id": "B",
-        "text": "\\(P(C)=\\frac1{216},P(\\overline C)=\\frac{215}{216}\\); C không thể xảy ra."
+        "text": "Có \\(6^3=216\\) kết quả; \\(P(C)=\\frac1{216},\\ P(\\overline C)=\\frac{215}{216}\\); vì xác suất rất nhỏ nên \\(C\\) không thể xảy ra."
       },
       {
         "id": "C",
-        "text": "\\(P(C)=\\frac1{216},P(\\overline C)=\\frac{215}{216}\\); C vẫn có thể xảy ra."
+        "text": "Có \\(6^3=216\\) kết quả đồng khả năng và đúng một kết quả thuận lợi; \\(P(C)=\\frac1{216},\\ P(\\overline C)=\\frac{215}{216}\\); \\(C\\) vẫn có thể xảy ra vì \\(P(C)>0\\)."
       },
       {
         "id": "D",
-        "text": "\\(P(C)=0,P(\\overline C)=1\\)."
+        "text": "Ba lần gieo liên tiếp không thể cùng ra mặt 6, nên \\(P(C)=0,\\ P(\\overline C)=1\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -254,19 +254,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac5{21}\\)"
+        "text": "Có 5 nhóm thuận lợi, nhưng tổng số nhóm là \\(\\binom72=21\\) nên xác suất bằng \\(\\frac5{21}\\)."
       },
       {
         "id": "B",
-        "text": "\\(\\frac1{35}\\)"
+        "text": "Chỉ nhóm \\(\\{1,2,3\\}\\) thuận lợi trong 35 nhóm nên xác suất bằng \\(\\frac1{35}\\)."
       },
       {
         "id": "C",
-        "text": "\\(\\frac3{35}\\)"
+        "text": "Chỉ có ba nhóm thuận lợi vì mỗi nhóm chứa ba số; xác suất bằng \\(\\frac3{35}\\)."
       },
       {
         "id": "D",
-        "text": "\\(\\frac17\\)"
+        "text": "Có \\(\\binom73=35\\) nhóm đồng khả năng. Số nhỏ nhất của nhóm liên tiếp có thể là 1, 2, 3, 4 hoặc 5, nên xác suất bằng \\(\\frac5{35}=\\frac17\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -322,19 +322,19 @@
     "options": [
       {
         "id": "A",
-        "text": "24 kết quả; \\(D=\\{(1,4,N),(4,1,N),(2,3,N),(3,2,N)\\}\\); \\(P(D)=\\frac16\\)."
+        "text": "Ba tầng lần lượt có 4, 3, 2 nhánh; \\(n(\\Omega)=24\\). \\(D=\\{(1,4,N),(4,1,N),(2,3,N),(3,2,N)\\}\\), nên \\(P(D)=\\frac4{24}=\\frac16\\)."
       },
       {
         "id": "B",
-        "text": "24 kết quả; \\(D=\\{(1,4,N),(2,3,N)\\}\\); \\(P(D)=\\frac1{12}\\)."
+        "text": "Có 24 kết quả, nhưng chỉ đếm \\((1,4,N),(2,3,N)\\) vì bỏ qua thứ tự rút; \\(P(D)=\\frac1{12}\\)."
       },
       {
         "id": "C",
-        "text": "32 kết quả; \\(n(D)=4\\); \\(P(D)=\\frac18\\)."
+        "text": "Mỗi lần rút đều có 4 lựa chọn, nên có \\(4\\cdot4\\cdot2=32\\) kết quả và \\(P(D)=\\frac18\\)."
       },
       {
         "id": "D",
-        "text": "12 kết quả; \\(n(D)=4\\); \\(P(D)=\\frac13\\)."
+        "text": "Chỉ tính \\(4\\cdot3=12\\) kết quả, bỏ tầng tung xu; có 4 kết quả thuận lợi nên \\(P(D)=\\frac13\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
