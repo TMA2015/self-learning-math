@@ -86,11 +86,11 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(u_4=5/9;\\text{có }u_n=1/2\\)"
+        "text": "\\(u_4=\\frac{5}{9};\\text{có }u_n=\\frac{1}{2}\\)"
       },
       {
         "id": "B",
-        "text": "\\(u_4=5/8;\\text{không}\\)"
+        "text": "\\(u_4=\\frac{5}{8};\\text{không}\\)"
       },
       {
         "id": "C",
@@ -98,7 +98,7 @@
       },
       {
         "id": "D",
-        "text": "\\(u_4=4/9;\\text{không}\\)"
+        "text": "\\(u_4=\\frac{4}{9};\\text{không}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -732,7 +732,7 @@
     "content_version": "CD07-BANK-CP127-20261127-TOP07-P15",
     "stem": "CSN vô hạn có \\(a_1=9\\), \\(q=-\\frac13\\). Tính \\(S_\\infty\\), tổng ba số hạng đầu \\(S_3\\) và phần dư có dấu \\(S_\\infty-S_3\\); giải thích vì sao phần dư âm. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(S_\\infty=\\frac{27}4\\); \\(S_3=7\\); \\(S_\\infty-S_3=-\\frac14\\).",
-    "worked_solution": "\\(|q|=\\frac13<1\\) nên \\(S_\\infty=\\frac9{1+\\frac13}=\\frac{27}4\\). Ba số hạng đầu 9; \\(-3\\); 1 cho \\(S_3=7\\). Phần dư \\(S_\\infty-S_3=\\frac{27}4-7=-\\frac14\\). Tổng riêng \\(S_3\\) lớn hơn tổng vô hạn vì đuôi bắt đầu bằng số âm \\(-\\frac13\\) và có tổng \\(-\\frac14\\); sai số tuyệt đối là \\(\\frac14\\), không âm.",
+    "worked_solution": "\\(\\lvert q\\rvert=\\frac13<1\\) nên \\(S_\\infty=\\frac9{1+\\frac13}=\\frac{27}4\\). Ba số hạng đầu 9; \\(-3\\); 1 cho \\(S_3=7\\). Phần dư \\(S_\\infty-S_3=\\frac{27}4-7=-\\frac14\\). Tổng riêng \\(S_3\\) lớn hơn tổng vô hạn vì đuôi bắt đầu bằng số âm \\(-\\frac13\\) và có tổng \\(-\\frac14\\); sai số tuyệt đối là \\(\\frac14\\), không âm.",
     "skill_ids": [
       "G11-B15-GEOMETRIC"
     ],
@@ -762,11 +762,11 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(S_\\infty=27/2;S_3=7;S_\\infty-S_3=13/2\\)"
+        "text": "\\(S_\\infty=\\frac{27}{2};S_3=7;S_\\infty-S_3=\\frac{13}{2}\\)"
       },
       {
         "id": "B",
-        "text": "\\(S_\\infty=27/4;S_3=7;S_\\infty-S_3=1/4\\)"
+        "text": "\\(S_\\infty=\\frac{27}{4};S_3=7;S_\\infty-S_3=\\frac{1}{4}\\)"
       },
       {
         "id": "C",
