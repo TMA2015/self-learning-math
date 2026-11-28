@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "TARGETED_ACCEPTANCE_XG6_WRITTEN_PLACEMENT_CONFLICTS_RESOLVED",
+  "academic_audit": "TARGETED_ACCEPTANCE_CD17_19_OWN_PRACTICE_MATH_PED_SOURCE_RESOLVED",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "0941f777beafd994985cc8a32641ce011f9de375",
+    "as_of_commit": "685f88f4ed2d2af54b3db3f3541b13b579c6ebfc",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Continue targeted acceptance under #1090 and the corrected scope lock: resolve genuinely material conversion/coverage and notation defects with exact existing source/receipt/diff evidence, rather than a chapter reading queue. In particular reconcile source-dependent semantic changes, proof-bearing choices and missing acceptance evidence; close applicable Q18/A1–A7 and handoff in same pass when supported. Do not reopen closed placement conflict or delimiter/controls check unless affected.",
-    "status": "TARGETED_ACCEPTANCE_XG6_WRITTEN_PLACEMENT_CONFLICTS_RESOLVED",
+    "next": "Close actual outstanding academic evidence against owner-approved sources: use #1109 CP25 all 22 source-ready and #974 exact historical receipts; reuse verified #1090 delta and authoring scope instead of chapter order. Reconcile remaining material task/assessment-format conversions and any actual X-G.5/coverage defects; explicitly close each applicable Q18 source/Delta scope and package V2/ready/REGISTER when evidence sufficient. No repeat of 66 own practice/replay CĐ17–19 or closed 18 placement conflicts.",
+    "status": "TARGETED_ACCEPTANCE_CD17_19_OWN_PRACTICE_MATH_PED_SOURCE_RESOLVED",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,65 +112,122 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "acceptance_xg6_written_placement_20261128",
-    "acceptance_xg6_written_placement_20261128": {
-      "baseline": "e6b7f4f89b4b84fe758c4e486d1c3a2148ab7ea9",
-      "verified_head": "0941f777beafd994985cc8a32641ce011f9de375",
-      "authority": {
-        "issue": 1090,
-        "owner_decision_comment": 7215691090,
-        "standard_blob": "dec6908a3488a5013849e9b768dac55911552bed",
-        "standard_sections": [
-          "VII",
-          "X-C",
-          "X-D",
-          "X-E",
-          "X-G.5",
-          "X-G.6"
-        ],
-        "governance_draft": 1130,
-        "agents_commit": "f77d2d6af173804b0b3a3f48f4ec0cab10f8e324"
-      },
+    "current_checkpoint_key": "acceptance_material_delta_topic17_19_20261128",
+    "acceptance_material_delta_topic17_19_20261128": {
+      "baseline": "e3c0bbbfaeb55472b3881d8d4db1ff1b59aa3553",
+      "verified_head": "685f88f4ed2d2af54b3db3f3541b13b579c6ebfc",
       "inventory": {
         "interactive_unique": 2214,
         "written_unique": 325,
         "total_unique": 2539,
         "placement_rows": 4285,
-        "prior_placement_rows": 4301,
-        "reason": "16 duplicate Written references removed only from interactive self-check; 2 reclassified in same chapter Written collection; zero item deletion or addition."
+        "evidence": "No ID or placement changes since previous exact reconciliation."
       },
-      "closed_defect": {
-        "standard": "X-G.6 / Q05-Q06-Q15",
-        "evidence": "All 26 placement shards (4301 baseline rows) joined programmatically against all 325 Written IDs; 18 incompatible placements, all G12, no other Written IDs in non-Written/Anchor role. No item body inspected or re-audited merely to close placement typing.",
-        "old_placement_blob": "8f1f02b762930fe937af785d2f63b00d9f0205ad",
-        "new_placement_blob": "ab5b3dca33bb6856eedafa708d3fb89e4034a884",
-        "moved_ids": [
-          "THPT-G12-CHI-END-W01",
-          "THPT-G12-CHI-END-W02"
+      "source_authority": {
+        "owner_closeout": "https://github.com/TMA2015/self-learning-math/issues/974#issuecomment-7062518670",
+        "later_source_delta": "https://github.com/TMA2015/self-learning-math/issues/1109#issuecomment-7188857167",
+        "note": "Original source snapshot owner accepted AUTHOR_SELF_VERIFIED; later #1109 22/22 source-ready for Work/notation, not migrated bank. Historical S1 receipt remains valid within demonstrated skill scope; no fresh PDF scan or independent verdict. CĐ18 zero vector authorized P02/T01/T04 and spatial perpendicular W05 checked current candidate source provenance; P02/T01/T04 correct convention and no unique angle. W05 current source points to revised Written canonical and previous b748a7... approved correction; no new W05 body audit."
+      },
+      "scoped_delta": {
+        "reviewed": 66,
+        "changed": 3,
+        "retained": 63,
+        "scope": "Only original 66 topic-owned Practice records with 66 same-ID replay placements explicitly pending in CĐ17–19. Checked source stems, math and conditions, answer choices, hints, remedial text, skill and optional placement; no general chapter sweep. Inherited S1 for unchanged scope and math derivations for material variants. No blanket Q18 or assertion of current whole-bank notation/render PASS.",
+        "records": [
+          {
+            "topic": 17,
+            "count": 12,
+            "item_blob": "521aa5f25b45da9a0265b29a3dbe3171fcb6ff32",
+            "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+            "receipt": "bb941ea3563034e0aa779c69118f8ac02355a21e",
+            "later_source": "03b6b27adbeaf854d3db1d8fc9e830a0294a08aa",
+            "later_receipt": "87f927cbcbd9ff4f26ba2a3b2c411a9a9770f82e",
+            "placement_blob": "b59e7c957aa53c12d331d4d3888597300a03a978",
+            "material": [
+              "P02 AH given8→recover8 from10/6 + unique nearest proof",
+              "P03 generic parallel→box7",
+              "P04 parallel6→oblique prism10sin30=5",
+              "P05 cube7→box3 + parallel contrast",
+              "P06 base6/slant5→12/10",
+              "P09 cube125→mixed-unit box3000cm³=3dm³",
+              "P10 frustum6/3/h4→10/4/h6 plus proof",
+              "P11 prism168→capacity180L",
+              "P12 base8/slant5→base6/lateral5sqrt2"
+            ],
+            "math": "P01 AX13 distance5; P02 AH8 uniqueness by Pythagoras; P03 7 perpendicular vs sqrt149; P04 5; P05 BC3 common perp, opposite edge parallel; P06 h8; P07 72m³; P08 48cm³; P09 3000cm³=3dm³; P10 312, homothetic heights10/4; P11 .24m³ ×.75=180L; P12 h4sqrt2,V48sqrt2. Choices/key/hints and D6 valid. Retained 12."
+          },
+          {
+            "topic": 18,
+            "count": 40,
+            "old_blob": "be27a158dadb9bd0bbcfd6066584aa97d3e1c3b9",
+            "item_blob": "20970197a3094f5f1aa92d1c02da16b0cb3ae841",
+            "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+            "receipt": "3a0cbbfb74252787f08c9504de9018c7e58bf8a1",
+            "later_source": "0e31acbcecffecbcefcf734b290cfe8d4ff960cc",
+            "later_receipt": "1d575aebabb51597f0c351265a3914249dbd28ef",
+            "placement_blob": "5b42b4007549b0f74f3d413e66b010d1304cbd66",
+            "material": [
+              "P01 straight segment→3D displacement and zero",
+              "P06 one force→two signed works",
+              "P07 coordinate membership expanded",
+              "P12 nonparallel check→parameter",
+              "P13 centroid→inverse and midpoint",
+              "P14 acute→obtuse",
+              "P16 fixed time→ground hit and domain",
+              "P17 nonparallel→degenerate+valid normal",
+              "P19 plane through new triple + uniqueness",
+              "P21 two perpendicular planes→coincidence/parallel/perpendicular",
+              "P22 scale-invariance added",
+              "P28 two parallel-direction lines→three",
+              "P29 fixed skew→parameter",
+              "P30 single intersection→three relations",
+              "P31 right angle→vector135 vs line45",
+              "P32 line parallel→nonzero inclination",
+              "P33 perpendicular→acute, exact cos and degree",
+              "P34 single line→3 cases",
+              "P37 sphere existence by parameter",
+              "P38 extra outside point",
+              "P39 diameter new endpoints",
+              "P40 section→three positions",
+              "P23 optional integrated changed sphere/plane parameters"
+            ],
+            "math": "P01–16:6/10/0, opposite,zero,10 opposite,6,18/−12/6J,A+B Oyz B Oz,(-2;3;1),+4 north,(3;0;−4) opposite,(−5;6;7),m0 same direction,C(3;4;4)/M(3;1;1),cos−8/9,7,ground t4/(6;7;0). P17–22:zero invalid; normal(2;−1;2),x+2y−z−3=0,plane2x−4y−z−1=0 all 3 points and nonzero cross product,x+2z=0,m0 coincide m3 parallel R perpendicular,d1 scale invariant. P24–35: parametric x−1 y2+3t z−2t; x1 y−1+2t z4t; x2 with (y+1)/3=(z−5)/(−1); P not on line; d1=d2 and parallel d3; m0 intersects(2;2;0) else skew; P intersection(3;0;5), Q contains, R parallel; 135/45; sin and cos 1/3; cos sqrt6/3 angle35.26°; parallel/contained/perpendicular; sin3/5 length10. P36–40: sphere center(−1;2;0) R3; k4 sphereR1/k5 point/k6 none; P on Q inside T outside; center(1;3;1),R²14; section r4/point/no intersection. P23 optional d3 r4. P19 improved proof-bearing choices, P33 complete requested actual angle. 38 retained."
+          },
+          {
+            "topic": 19,
+            "count": 14,
+            "old_blob": "3744f680748df5cd8c5bfd85d21989ae5d8484f5",
+            "item_blob": "466fc60491bb779b27484166e9da13b121f136c7",
+            "source_blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+            "receipt": "019254781e99ba857019ee662ab49056d298d18e",
+            "later_source": "ba549932e8a56bb46ec2951171e999cc70d6f34f",
+            "later_receipt": "3d83c951f5e4df94162271b107b079451f6cc544",
+            "placement_blob": "cbfc95709e24b979ff14d9d420415efd339fc71d",
+            "material": [
+              "P01 disjoint10→overlap8",
+              "P02 unconstrained24→restricted20",
+              "P03 no-repeat48→also repeat100",
+              "P05 permutations720→nonadjacent480",
+              "P08 exact2/2→at least2 male and1 female250",
+              "P11 optional Laurent→polynomial and Laurent combined optional",
+              "P12 sum81→even41/odd40"
+            ],
+            "math": "P01–08 8,20,100/48,52,480,210,35,250; P14 nCr84 nPr504 and ×3!; P09 coefficients1/8/24/32/16; P10 −810; P13 model2208.1616064 vs2200 and lower estimate; P11 constant16 and24, both required only if learner selects optional task (both placements optional true); P12 E+O81 E−O1 gives41/40. 13 retained."
+          }
         ],
-        "moved_to": "SGK:G12:CHI:WRITTEN orders 11/12; original roles and skill preserved",
-        "duplicate_ids_removed_from_selfcheck": "THPT-G12-YE-W01 through W16; all retained in existing SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
-        "remaining_selfcheck": "G12 ChI 10 interactive items cover all four previous skill IDs; YEAR 15 interactive items cover all six previous skill IDs. Exact skill-set parity only, not blanket depth/PED PASS. No arbitrary replacement items or new IDs. Candidate placement only; actual public website generation and reveal remain RELEASE.",
-        "verification": "G12 670→654 rows, unique item-ID set equal, unique collection/order keys, all 18 conflicts removed, same selfcheck skill sets, all other records unchanged."
+        "verification": "All 66 one correct ID, four distinct choices, hints/remediation, correct difficulty band, original nonedited metadata preserved. Each exactly one Practice and one same-ID public replay, no auto-grade, no new ID or placement. Material changes not falsely labeled source-equivalent. Author math/PED/source-scope review complete for 66; actual full Q18 bank and applicable remaining learner notation/coverage are still pending."
       },
-      "notation_subcheck": {
-        "standard": "X-G.5",
-        "scope": "61 interactive shards, 2214 items (topic own+FirstTry 832, G10 496, G11 476, G12 410); stem, answer_key string, worked_solution, option text and hints. Exact baseline unchanged by placement-only edit.",
-        "result": "No unclosed/mismatched/nested explicit inline/display delimiter or disallowed control character found by parser scan.",
-        "limits": "Not a full X-G.5 result; raw notation, ambiguous expressions, rubric/remediation and actual rendering not certified. This narrow check is closed at exact snapshot; do not repeat without affected diff."
-      },
-      "remaining": "Material change and missing evidence acceptance, actual cognitive-depth/coverage and notation defects, Q18/source-locked handoff. Historical snapshot receipts remain valid only in exact scope. Not CONTENT_READY.",
-      "protected_scope": "No item/answer/hint/rubric/Written source/schema changes; no private RD1, runtime/Final Submit/Mastery/Firebase/LIVE, merge/deploy."
+      "protected_scope": "No source historical snapshot, Written body, placement, schema, runtime, private RD1, Final Submit, Mastery, Firebase, LIVE, merge/deploy."
     },
     "previous_manifest": {
-      "commit": "e6b7f4f89b4b84fe758c4e486d1c3a2148ab7ea9",
-      "blob": "a6a67adc78cf2341ef49e341b95ad6af6fe769e6",
-      "key": "acceptance_scope_correction_20261128"
+      "commit": "e3c0bbbfaeb55472b3881d8d4db1ff1b59aa3553",
+      "blob": "56b29574a6ddc4c6ad2a727ec30fecfd0ab5c4ab",
+      "key": "acceptance_xg6_written_placement_20261128"
     }
   },
   "pending_review": {
     "scope_warning": "Existing open-work index is historical until reconciled against later scoped evidence/receipts. Do not treat any grade-level pending string as authorization for whole-group re-audit. Resolve actual outstanding gate or specific item/field defect; preserve exact PASS scope and all evidence, no inferred full PASS.",
-    "cd17": "Written candidate complete; scoped academic Delta review pending.",
+    "cd17": "12 Topic-owned practice/replay material variants math, options, conditions, hints, D6 and inherited S1 skill scope reviewed with exact #974 receipt; retained all. Prior Written flags closed separately. Do not repeat this scoped review; final bank-wide applicable acceptance and remaining specific gaps only.",
     "skill_mapping": {
       "status": "38_OF_38_MAPPED_16_GROUPS_EXISTING_TAXONOMY_NO_RUNTIME_ACTIVATION",
       "count": 0,
@@ -261,8 +318,8 @@
       }
     ],
     "other": "Full S1/PED/Q18, actual source-field equivalence outside flagged scopes, Written source/rubric, metadata, notation, interaction renderer/runtime and browser QA remain subject to applicable gates. Historical records include any earlier findings and source/receipt evidence.",
-    "cd18": "Content candidate complete; targeted mathematical/PED Delta and notation/render QA pending. No fresh S1 PDF or independent reviewer claim.",
-    "cd19": "Candidate complete; W01/W03 scoped Delta and optional scope review; no new S1 or independent verdict.",
+    "cd18": "40 Topic-owned practice/replay material variants math/choices/conditions/D6 and inherited S1 scope reviewed, P19/P33 corrected. Optional P23 placement preserved; later #1109 zero-vector P02/T01/T04 current corrected candidate verified. No whole-bank Q18 or render claim; do not repeat this scoped review.",
+    "cd19": "14 Topic-owned practice/replay material variants math/choices/conditions/D6 and inherited S1 scope reviewed; P11 optional task corrected, P12 optional preserved. Written flags previously closed. Do not repeat this scoped review; final applicable acceptance and remaining specific gaps only.",
     "cd20": "34 interactive IDs scoped math/choices reviewed Delta15 (17 topic+17 reused optional, including 12 extra); four materially different historical tasks P03/P08/P14/P16 and four scope extensions explicitly recorded, final source delta acceptance and consistent practice/replay cutover pending. Three Written retained.",
     "cd21": "Eight CĐ21 candidate items checked, seven revised wave08. P06 historical practice AND replay source parameter mismatch, cutover regenerate both from candidate; other reused placement/coverage and full Q01–Q18 pending.",
     "cd22": "Seven new CĐ22 practice items checked/revised wave08, four previously flagged Written scoped verifications closed. Other reused/converted placements, source/coverage and full Q01–Q18 pending.",
