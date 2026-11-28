@@ -145,19 +145,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(v(t)=t^2+2\\) m/s"
+        "text": "\\(v(t)=t^2+2\\,\\mathrm{m/s}\\)"
       },
       {
         "id": "B",
-        "text": "\\(v(t)=3t^2+2t\\) m/s"
+        "text": "\\(v(t)=3t^2+2t\\,\\mathrm{m/s}\\)"
       },
       {
         "id": "C",
-        "text": "\\(v(t)=t^3+2t\\) m/s"
+        "text": "\\(v(t)=t^3+2t\\,\\mathrm{m/s}\\)"
       },
       {
         "id": "D",
-        "text": "\\(v(t)=3t^2+2\\) m/s."
+        "text": "\\(v(t)=3t^2+2\\,\\mathrm{m/s}\\)."
       }
     ]
   },
@@ -307,19 +307,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(s(t)=4t^2+6\\) m"
+        "text": "\\(s(t)=4t^2+6\\,\\mathrm{m}\\)"
       },
       {
         "id": "B",
-        "text": "\\(s(t)=2t^2+6\\) m."
+        "text": "\\(s(t)=2t^2+6\\,\\mathrm{m}\\)."
       },
       {
         "id": "C",
-        "text": "\\(s(t)=2t^2\\) m"
+        "text": "\\(s(t)=2t^2\\,\\mathrm{m}\\)"
       },
       {
         "id": "D",
-        "text": "\\(s(t)=4t+6\\) m"
+        "text": "\\(s(t)=4t+6\\,\\mathrm{m}\\)"
       }
     ]
   },
@@ -527,7 +527,7 @@
       },
       {
         "id": "B",
-        "text": "\\(2/x^2+C\\)"
+        "text": "\\(\\frac2{x^2}+C\\)"
       },
       {
         "id": "C",
@@ -577,7 +577,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(1/x+x^2+C\\)"
+        "text": "\\(\\frac1x+x^2+C\\)"
       },
       {
         "id": "B",
@@ -643,7 +643,7 @@
       },
       {
         "id": "D",
-        "text": "\\(3/x+2\\)"
+        "text": "\\(\\frac3x+2\\)"
       }
     ]
   },
@@ -697,7 +697,7 @@
       },
       {
         "id": "D",
-        "text": "\\(e^x/x+C\\)"
+        "text": "\\(\\frac{e^x}{x}+C\\)"
       }
     ]
   },
@@ -1179,7 +1179,7 @@
       },
       {
         "id": "C",
-        "text": "4+C"
+        "text": "\\(4+C\\)"
       },
       {
         "id": "D",
@@ -1341,7 +1341,7 @@
       },
       {
         "id": "C",
-        "text": "4+C"
+        "text": "\\(4+C\\)"
       },
       {
         "id": "D",
@@ -1881,7 +1881,7 @@
       },
       {
         "id": "C",
-        "text": "1/2"
+        "text": "\\(\\frac12\\)"
       },
       {
         "id": "D",
@@ -1985,7 +1985,7 @@
       },
       {
         "id": "B",
-        "text": "ln 2"
+        "text": "\\(\\ln 2\\)"
       },
       {
         "id": "C",
@@ -1993,7 +1993,7 @@
       },
       {
         "id": "D",
-        "text": "1+C"
+        "text": "\\(1+C\\)"
       }
     ]
   },
@@ -2197,19 +2197,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac83\\) m"
+        "text": "\\(\\frac83\\,\\mathrm{m}\\)"
       },
       {
         "id": "B",
-        "text": "\\(4\\) m"
+        "text": "\\(4\\,\\mathrm{m}\\)"
       },
       {
         "id": "C",
-        "text": "\\(\\frac13\\) m"
+        "text": "\\(\\frac13\\,\\mathrm{m}\\)"
       },
       {
         "id": "D",
-        "text": "\\(\\frac73\\) m."
+        "text": "\\(\\frac73\\,\\mathrm{m}\\)."
       }
     ]
   },
@@ -2413,19 +2413,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac{21}{2}\\) m²."
+        "text": "\\(\\frac{21}{2}\\,\\mathrm{m^2}\\)."
       },
       {
         "id": "B",
-        "text": "\\(\\frac92\\) m²"
+        "text": "\\(\\frac92\\,\\mathrm{m^2}\\)"
       },
       {
         "id": "C",
-        "text": "\\(15\\) m²"
+        "text": "\\(15\\,\\mathrm{m^2}\\)"
       },
       {
         "id": "D",
-        "text": "\\(9\\) m²"
+        "text": "\\(9\\,\\mathrm{m^2}\\)"
       }
     ]
   },
@@ -2434,14 +2434,14 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-C02",
     "stem": "Tính diện tích hình phẳng giới hạn bởi \\(y=x^2-4\\), trục Ox và hai đường \\(x=0,\\ x=3\\).",
     "answer_key": "\\(\\frac{23}{3}\\) đơn vị diện tích.",
-    "worked_solution": "Trên đoạn [0;3], đồ thị cắt Ox tại x=2. Khi \\(0\\le x<2\\), \\(x^2-4<0\\); khi \\(2<x\\le3\\), \\(x^2-4>0\\). Vì vậy \\(S=\\int_0^2(4-x^2)\\,\\mathrm dx+\\int_2^3(x^2-4)\\,\\mathrm dx\\). Phần thứ nhất bằng \\(8-\\frac83=\\frac{16}{3}\\); phần thứ hai bằng \\((9-12)-(\\frac83-8)=\\frac73\\). Cộng lại được \\(S=\\frac{23}{3}\\). Không lấy trị tuyệt đối sau khi cộng hai tích phân có dấu.",
+    "worked_solution": "Trên đoạn \\([0;3]\\), đồ thị cắt Ox tại \\(x=2\\). Khi \\(0\\le x<2\\), \\(x^2-4<0\\); khi \\(2<x\\le3\\), \\(x^2-4>0\\). Vì vậy \\(S=\\int_0^2(4-x^2)\\,\\mathrm dx+\\int_2^3(x^2-4)\\,\\mathrm dx\\). Phần thứ nhất bằng \\(8-\\frac83=\\frac{16}{3}\\); phần thứ hai bằng \\((9-12)-(\\frac83-8)=\\frac73\\). Cộng lại được \\(S=\\frac{23}{3}\\). Không lấy trị tuyệt đối sau khi cộng hai tích phân có dấu.",
     "skill_ids": [
       "G12-CHIV-B13-O02"
     ],
     "problem_type_id": null,
     "difficulty": "SYNTHESIS",
     "hints": [
-      "Tìm nghiệm của \\(x^2-4=0\\) thuộc [0;3], xét dấu rồi tách diện tích."
+      "Tìm nghiệm của \\(x^2-4=0\\) thuộc \\([0;3]\\), xét dấu rồi tách diện tích."
     ],
     "rubric": null,
     "interaction": {
@@ -2462,7 +2462,7 @@
       }
     },
     "status": "AUTHOR_INTERACTION_CANDIDATE",
-    "remediation": "Nếu chỉ tích phân trên [0;3] rồi lấy trị tuyệt đối, phần âm và dương đã bù trừ nhau. Tách tại x=2 và cộng diện tích dương. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P16.",
+    "remediation": "Nếu chỉ tích phân trên \\([0;3]\\) rồi lấy trị tuyệt đối, phần âm và dương đã bù trừ nhau. Tách tại \\(x=2\\) và cộng diện tích dương. Ôn Toán 12 Bài 13; luyện THPT-TOP11-P16.",
     "exercise_type": "INTERACTIVE",
     "options": [
       {
@@ -3015,7 +3015,7 @@
       },
       {
         "id": "C",
-        "text": "1/4 m²"
+        "text": "\\(\\frac14\\,\\mathrm m^2\\)"
       },
       {
         "id": "D",
@@ -3223,19 +3223,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac{16}3\\) cm³."
+        "text": "\\(\\frac{16}3\\,\\mathrm{cm^3}\\)."
       },
       {
         "id": "B",
-        "text": "\\(\\frac83\\) cm³"
+        "text": "\\(\\frac83\\,\\mathrm{cm^3}\\)"
       },
       {
         "id": "C",
-        "text": "\\(8\\) cm³"
+        "text": "\\(8\\,\\mathrm{cm^3}\\)"
       },
       {
         "id": "D",
-        "text": "\\(\\frac{16}3\\) cm²"
+        "text": "\\(\\frac{16}3\\,\\mathrm{cm^2}\\)"
       }
     ]
   },
@@ -3277,19 +3277,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac\\pi3\\) cm³."
+        "text": "\\(\\frac\\pi3\\,\\mathrm{cm^3}\\)."
       },
       {
         "id": "B",
-        "text": "\\(\\pi/2\\) cm³"
+        "text": "\\(\\frac\\pi2\\,\\mathrm{cm^3}\\)"
       },
       {
         "id": "C",
-        "text": "\\(\\pi\\) cm³"
+        "text": "\\(\\pi\\,\\mathrm{cm^3}\\)"
       },
       {
         "id": "D",
-        "text": "\\(\\frac13\\) cm³"
+        "text": "\\(\\frac13\\,\\mathrm{cm^3}\\)"
       }
     ]
   },
@@ -3331,19 +3331,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac{16\\pi}3\\) cm³"
+        "text": "\\(\\frac{16\\pi}3\\,\\mathrm{cm^3}\\)"
       },
       {
         "id": "B",
-        "text": "\\(4\\pi\\) cm³"
+        "text": "\\(4\\pi\\,\\mathrm{cm^3}\\)"
       },
       {
         "id": "C",
-        "text": "\\(\\frac{32}3\\) cm³"
+        "text": "\\(\\frac{32}3\\,\\mathrm{cm^3}\\)"
       },
       {
         "id": "D",
-        "text": "\\(\\frac{32\\pi}3\\) cm³."
+        "text": "\\(\\frac{32\\pi}3\\,\\mathrm{cm^3}\\)."
       }
     ]
   },
@@ -3385,19 +3385,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(4\\pi\\) cm³"
+        "text": "\\(4\\pi\\,\\mathrm{cm^3}\\)"
       },
       {
         "id": "B",
-        "text": "\\(\\frac{16\\pi}3\\) cm³"
+        "text": "\\(\\frac{16\\pi}3\\,\\mathrm{cm^3}\\)"
       },
       {
         "id": "C",
-        "text": "\\(8\\pi\\) cm³."
+        "text": "\\(8\\pi\\,\\mathrm{cm^3}\\)."
       },
       {
         "id": "D",
-        "text": "\\(8\\) cm³"
+        "text": "\\(8\\,\\mathrm{cm^3}\\)"
       }
     ]
   },
