@@ -1335,5 +1335,131 @@
       }
     ],
     "exercise_type": "INTERACTIVE"
+  },
+  {
+    "item_id": "THPT-G10-B26-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G10-B26-L1-01",
+    "stem": "Cho phép thử hữu hạn có không gian mẫu \\(\\Omega\\ne\\varnothing\\), các kết quả sơ cấp đồng khả năng. Biến cố \\(A\\subseteq\\Omega\\). Công thức xác suất nào đúng?",
+    "answer_key": "\\(P(A)=\\frac{n(A)}{n(\\Omega)}\\).",
+    "worked_solution": "Trong mô hình cổ điển hữu hạn đồng khả năng, mỗi kết quả có xác suất \\(\\frac1{n(\\Omega)}\\). Cộng xác suất của \\(n(A)\\) kết quả thuận lợi cho \\(P(A)=\\frac{n(A)}{n(\\Omega)}\\), kể cả biến cố rỗng.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G10-B26-EXPERIMENT_SAMPLE_SPACE",
+      "G10-B26-CLASSICAL_RATIO"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ tỉ số giữa số kết quả thuận lợi và số kết quả có thể."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/content-drafts/THPT_G10_CHIX_B26_B27_D5D6_R01_EXACT_REVIEW_SNAPSHOT.md",
+        "blob": "6ac3c0762d9cf8b41ab614e2163979d9770a436f",
+        "commit": "52725400b199b2a01c54a4cfa8a6865d65516a10"
+      },
+      "related_item_ids": [
+        "THPT-G10-B26-C01",
+        "THPT-G10-B26-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đảo tử mẫu hoặc áp dụng khi không đồng khả năng, ôn Bài 26 không gian mẫu và định nghĩa xác suất cổ điển; luyện đếm không gian mẫu và tính xác suất.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(P(A)=\\frac{n(\\Omega)}{n(A)}\\) với mọi \\(A\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(P(A)=n(A)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(P(A)=\\frac{n(A)}{n(\\Omega)}\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(P(A)=\\frac1{n(A)}\\) với mọi \\(A\\)."
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G10-B27-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G10-B27-L1-01",
+    "stem": "Trong sơ đồ cây của một phép thử gồm hai lượt liên tiếp, mỗi kết quả sơ cấp là cặp có thứ tự ghi cả hai lượt. Đối tượng nào biểu diễn một kết quả sơ cấp đầy đủ?",
+    "answer_key": "Một đường đi từ gốc qua đúng hai lượt đến lá.",
+    "worked_solution": "Mỗi đường đi từ gốc qua một lựa chọn ở lượt đầu, một lựa chọn ở lượt sau ghi đủ hai thành phần của cặp có thứ tự. Một cạnh riêng lẻ chưa ghi đủ cả hai lượt.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G10-B27-TREE_SEQUENCE",
+      "G10-B27-COUNTING_OUTCOMES"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Mỗi lượt tương ứng một tầng của sơ đồ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/content-drafts/THPT_G10_CHIX_B26_B27_D5D6_R01_EXACT_REVIEW_SNAPSHOT.md",
+        "blob": "6ac3c0762d9cf8b41ab614e2163979d9770a436f",
+        "commit": "52725400b199b2a01c54a4cfa8a6865d65516a10"
+      },
+      "related_item_ids": [
+        "THPT-G10-B27-C01",
+        "THPT-G10-B27-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đếm số nhánh thay vì kết quả đầy đủ, ôn Bài 27 sơ đồ cây và cách đếm kết quả; luyện bài rút thẻ hai lần và bài chọn theo hai bước.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Một cạnh bất kì ở lượt thứ nhất."
+      },
+      {
+        "id": "B",
+        "text": "Một nhánh ở lượt thứ hai, bỏ qua kết quả lượt đầu."
+      },
+      {
+        "id": "C",
+        "text": "Toàn bộ sơ đồ cây."
+      },
+      {
+        "id": "D",
+        "text": "Một đường đi từ gốc qua đúng hai lượt đến lá."
+      }
+    ]
   }
 ]
