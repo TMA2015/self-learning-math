@@ -11760,7 +11760,7 @@
 <h4 id="121-hai-cach-nhin-o-trai-rong-cua-du-lieu">1.2.1. Hai cách nhìn độ trải rộng của dữ liệu</h4>
 <p>Hai lớp có thể có trung bình gần nhau nhưng lớp có bạn quá cao hay quá thấp làm khoảng từ min đến max rộng hơn.</p>
 <p>Đã biết min, max và <span class="arithmatex">\(Q_1,Q_3\)</span> theo quy ước KNTT; phải sắp dữ liệu trước khi xác định tứ phân vị. </p>
-<p>Khoảng biến thiên nhìn hai biên xa nhất; khoảng tứ phân vị nhìn hai mốc ôm phần giữa của mẫu, vì thế ít bị riêng một cực trị chi phối hơn. Từ ý nghĩa 'độ rộng' mới đặt <span class="arithmatex">\(R=x_{\max}-x_{\min}\)</span>, <span class="arithmatex">\(\Delta_Q=Q_3-Q_1\)</span>.</p>
+<p>Khoảng biến thiên nhìn hai biên xa nhất; khoảng tứ phân vị (IQR, viết tắt của Interquartile Range) nhìn hai mốc ôm phần giữa của mẫu, vì thế ít bị riêng một cực trị chi phối hơn. Từ ý nghĩa 'độ rộng' mới đặt <span class="arithmatex">\(R=x_{\max}-x_{\min}\)</span>, <span class="arithmatex">\(\Delta_Q=Q_3-Q_1\)</span>.</p>
 <p>Chọn R khi cần độ rộng toàn bộ, IQR khi quan tâm nửa giữa và mức ảnh hưởng của ngoại lệ; chúng không thay thế cho nhau.</p>
 <p><strong>Vận dụng.</strong> Với mẫu đã sắp <span class="arithmatex">\(2,3,4,6,8,9,10\)</span>, tìm khoảng biến thiên R và khoảng tứ phân vị <span class="arithmatex">\(\Delta_Q\)</span> theo KNTT.</p>
 <p><span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY10" hidden></span></p>
@@ -11805,7 +11805,7 @@
 <span id="help-g10-b14-01" data-thpt-help-id="HELP-G10-B14-01" hidden></span></p>
 <details class="tip">
 <summary>Kiểm lỗi</summary>
-<p><ol><li><strong>Nhận diện lỗi:</strong> Sai mẫu số phương sai và đơn vị.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Dùng n−1 và viết s có đơn vị bình phương. Đang mô tả dãy số liệu SGK hay ước lượng suy luận mẫu?</li><li><strong>Kiến thức gốc:</strong> SGK dùng s²=Σ(x−x̄)²/n; s căn của s², cùng đơn vị dữ liệu.</li><li><strong>Tự sửa:</strong> Tính lại các bình phương rồi chia n và ghi đơn vị.</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B14-P05.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B14-P05">Luyện lại bằng câu hỏi đã có</a></p></p>
+<p><ol><li><strong>Nhận diện lỗi:</strong> Sai mẫu số phương sai và đơn vị.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Dùng n−1 và viết s có đơn vị bình phương. Đang mô tả dãy số liệu SGK hay ước lượng suy luận mẫu?</li><li><strong>Kiến thức gốc:</strong> SGK dùng s²=Σ(x−x̄)²/n; s căn của s², cùng đơn vị dữ liệu.</li><li><strong>Tự sửa:</strong> Tính lại các bình phương rồi chia n và ghi đơn vị.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B14-P05">Luyện lại bằng câu hỏi đã có</a></p></p>
 </details>
 <h4 id="124-mot-gia-tri-xa-trung-tam-can-uoc-nhan-dien-bang-quy-tac">1.2.4. Một giá trị xa trung tâm cần được nhận diện bằng quy tắc</h4>
 <p>Một ngày ghi doanh số quá lớn có thể là thật hoặc nhập sai. Trước khi kết luận, ta cần tiêu chí định lượng để đánh dấu giá trị khác xa số còn lại.</p>
@@ -11825,7 +11825,7 @@
 <span id="help-g10-b14-02" data-thpt-help-id="HELP-G10-B14-02" hidden></span></p>
 <details class="tip">
 <summary>Kiểm lỗi</summary>
-<p><ol><li><strong>Nhận diện lỗi:</strong> Nhầm hàng rào ngoại lệ và phân tán.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> So giá trị với trung bình hoặc đánh dấu giá trị bằng ngưỡng là ngoại lệ. Em đã lấy Q1, Q3 đúng quy tắc chưa?</li><li><strong>Kiến thức gốc:</strong> Bất thường khi x&lt;Q1−1,5 IQR hoặc x&gt;Q3+1,5 IQR; dùng dấu nghiêm ngặt.</li><li><strong>Tự sửa:</strong> Tính Q1/Q3, viết ngưỡng và kiểm từng giá trị.</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B14-P03.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B14-P03">Luyện lại bằng câu hỏi đã có</a></p></p>
+<p><ol><li><strong>Nhận diện lỗi:</strong> Nhầm hàng rào ngoại lệ và phân tán.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> So giá trị với trung bình hoặc đánh dấu giá trị bằng ngưỡng là ngoại lệ. Em đã lấy Q1, Q3 đúng quy tắc chưa?</li><li><strong>Kiến thức gốc:</strong> Bất thường khi x&lt;Q1−1,5 IQR hoặc x&gt;Q3+1,5 IQR; dùng dấu nghiêm ngặt.</li><li><strong>Tự sửa:</strong> Tính Q1/Q3, viết ngưỡng và kiểm từng giá trị.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B14-P03">Luyện lại bằng câu hỏi đã có</a></p></p>
 </details>
 <h4 id="125-cung-trung-binh-khong-co-nghia-phan-tan-giong-nhau">1.2.5. Cùng trung bình không có nghĩa phân tán giống nhau</h4>
 <p>Hai nhóm đều đạt trung bình 4 điểm, nhưng một nhóm tập trung quanh 4, nhóm khác có điểm rất thấp và rất cao. Chỉ trung bình không đủ mô tả chất lượng phân bố.</p>
@@ -11904,6 +11904,7 @@
 </div>
 <div class="tabbed-block">
 <h2 class="thpt-g10-section-heading">4. Lỗi thường gặp và cách tự khắc phục</h2>
+<p><strong>Kiểm lỗi:</strong> Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: <a href="#HELP-G10-B14-01">Kiểm lỗi 1</a> · <a href="#HELP-G10-B14-02">Kiểm lỗi 2</a>.</p>
 <p><strong>Học tiếp:</strong> <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>.</p>
 <p><p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p></p>
 </div>

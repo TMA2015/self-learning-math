@@ -11721,7 +11721,7 @@
 <summary>Kiểm lỗi</summary>
 <p><p><strong>Lỗi cần kiểm:</strong> Đếm trùng một nhóm khi chọn không xét thứ tự.</p>
 <p><strong>Bước 1:</strong> Nhận diện lỗi: đếm (1,2) và (2,1) thành hai nhóm khác nhau khi chọn đồng thời.</p>
-<p><strong>Bước 2:</strong> Ôn B24 tổ hợp và tính chẵn lẻ; tổng hai số lẻ khi có một lẻ và một chẵn.</p>
+<p><strong>Bước 2:</strong> Ôn B24 tổ hợp và tính chẵn lẻ; tổng của hai số là số lẻ khi một số lẻ và một số chẵn.</p>
 <p><strong>Bước 3:</strong> Thử {1,2,3}: ba nhóm {1,2},{1,3},{2,3}; hai nhóm có tổng lẻ.</p>
 <p><strong>Bước 4:</strong> Liệt kê 6 nối lẻ–chẵn trên năm số và đối chiếu với tổng 10 nhóm rồi mở lời giải.</p>
 <p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập để củng cố chọn đều các nhóm bằng tổ hợp.</p>
@@ -11792,7 +11792,7 @@
 <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B27-P03">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p></p>
 </details>
 <h3 id="15-ieu-kien-ong-kha-nang">1.5. Điều kiện đồng khả năng</h3>
-<p>Gieo hai xúc xắc cân đối <strong>phân biệt</strong>: cặp (1,2) khác (2,1), nên 36 cặp có thứ tự đồng khả năng. Nếu gộp thành 21 cặp không thứ tự, nhóm {1,2} gồm hai kết quả gốc còn {1,1} chỉ có một. Vì vậy <strong>21 nhóm không đồng khả năng</strong>; không thể dùng số nhóm làm mẫu số của định nghĩa cổ điển.</p>
+<p>Gieo độc lập hai xúc xắc cân đối <strong>phân biệt</strong>: cặp (1,2) khác (2,1), nên 36 cặp có thứ tự đồng khả năng. Nếu gộp thành 21 cặp không thứ tự, nhóm {1,2} gồm hai kết quả gốc còn {1,1} chỉ có một. Vì vậy <strong>21 nhóm không đồng khả năng</strong>; không thể dùng số nhóm làm mẫu số của định nghĩa cổ điển.</p>
 <p>Khi tự kiểm một bài xác suất, em cần xác nhận: kết quả sơ cấp đã đủ thông tin chưa; có cùng khả năng không; số thuận lợi được đếm cùng cách với số tất cả không?</p>
 <p><strong>Vận dụng.</strong></p>
 <p>Gieo hai xúc xắc <strong>cân đối và phân biệt</strong>. Một bạn cho rằng có 21 cặp không thứ tự và tính xác suất “hai xúc xắc ra cùng số” bằng <span class="arithmatex">\(6/21\)</span>. Cách tính đó đúng hay sai? Hãy xác định xác suất đúng.</p>
@@ -11819,7 +11819,7 @@
 <p>Khi có rất nhiều kết quả, ta không cần liệt kê từng kết quả để đếm <span class="arithmatex">\(n(\Omega)\)</span> và <span class="arithmatex">\(n(A)\)</span>. Từ Bài 23–24, em dùng quy tắc nhân, chỉnh hợp, tổ hợp tùy cách một kết quả được xác định.</p>
 <p><strong>Chọn nhóm không xét thứ tự.</strong> Nếu chọn đều một nhóm <span class="arithmatex">\(k\)</span> đối tượng từ <span class="arithmatex">\(n\)</span> đối tượng <strong>phân biệt</strong>, mỗi nhóm gồm <span class="arithmatex">\(k\)</span> phần tử là một kết quả sơ cấp. Tử số và mẫu số phải cùng đếm <strong>các nhóm không xét thứ tự</strong>.</p>
 <p><div class="thpt-g10-key-formula" role="note" data-b27-key-formula="combinations"><strong>Công thức tính xác suất bằng tổ hợp</strong><p><span class="arithmatex">\(n(\Omega)=\binom nk\)</span> với <span class="arithmatex">\(0\le k\le n\)</span>; theo định nghĩa cổ điển <span class="arithmatex">\(P(A)=n(A)/n(\Omega)\)</span>. Do đó, khi mọi nhóm <span class="arithmatex">\(k\)</span> phần tử đồng khả năng, <span class="arithmatex">\(P(A)=\dfrac{n(A)}{\binom nk}\)</span>.</p><p>Muốn tính <span class="arithmatex">\(P(A)\)</span>, hãy đếm số nhóm thuận lợi <span class="arithmatex">\(n(A)\)</span> trong cùng mô hình, rồi kiểm <span class="arithmatex">\(n(\Omega)&gt;0\)</span>.</p></div></p>
-<p><strong>Kết hợp các phép chọn.</strong> Ví dụ chọn 6 học sinh trong lớp có 7 nam và 5 nữ, yêu cầu 3 nam và 3 nữ. Chọn nam và nữ là hai công đoạn độc lập về <strong>đếm nhóm</strong>: có <span class="arithmatex">\(\binom73\binom53\)</span> nhóm thuận lợi. Điều kiện phải kiểm là giáo viên chọn đều <strong>giữa các nhóm 6 học sinh</strong>, không phải chỉ nói “chọn ngẫu nhiên”.</p>
+<p><strong>Kết hợp các phép chọn.</strong> Ví dụ chọn 6 học sinh trong lớp có 7 nam và 5 nữ, yêu cầu 3 nam và 3 nữ. Mỗi nhóm 3 nam có thể kết hợp với mọi nhóm 3 nữ; theo quy tắc nhân, có <span class="arithmatex">\(\binom73\binom53\)</span> nhóm thuận lợi. Điều kiện phải kiểm là giáo viên chọn đều <strong>giữa các nhóm 6 học sinh</strong>, không phải chỉ nói “chọn ngẫu nhiên”.</p>
 <p><strong>Phân biệt các mô hình:</strong> rút lần lượt và ghi thứ tự khác với chọn cùng lúc không ghi thứ tự. Công thức tổ hợp không phải quy tắc thay thế mọi sơ đồ cây. Khi xét một bộ 6 số từ 45 số, việc chọn theo nhóm cho <span class="arithmatex">\(n(\Omega)=\binom{45}{6}\)</span>; đây là mô hình chọn nhóm không xét thứ tự.</p>
 <h3 id="22-su-dung-so-o-hinh-cay">2.2. Sử dụng sơ đồ hình cây</h3>
 <p>Sơ đồ cây mô tả phép thử gồm nhiều bước: từ mỗi nhánh lượt trước, chỉ vẽ <strong>những kết quả còn có thể xảy ra</strong> ở lượt sau; mỗi đường đi từ gốc đến lá ứng với một kết quả hoàn chỉnh.</p>
@@ -11842,7 +11842,7 @@
 <p><div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Có <span class="arithmatex">\(n(\Omega)=\binom{12}{6}=924\)</span> nhóm đều nhau. Có <span class="arithmatex">\(\binom73\binom53=35\cdot10=350\)</span> nhóm gồm 3 nam và 3 nữ. Vậy <span class="arithmatex">\(P=\dfrac{350}{924}=\dfrac{25}{66}\)</span>.</p></div></p>
 <p><strong>Kiểm lại:</strong> Số thuận lợi <span class="arithmatex">\(350\)</span> không vượt <span class="arithmatex">\(924\)</span>. Không nhân <span class="arithmatex">\(6!\)</span> vì nhóm không xét thứ tự.</p>
 <h3 id="32-vi-du-cay-lay-mot-vien-tu-moi-hop">3.2. Ví dụ — Cây lấy một viên từ mỗi hộp</h3>
-<p><strong>Đề bài.</strong> Hộp I có bi đỏ, xanh, vàng; hộp II có bi xanh, vàng; hộp III có bi đỏ, xanh. Chọn đều một viên từ mỗi hộp, độc lập. Tính xác suất có đúng một viên xanh.</p>
+<p><strong>Đề bài.</strong> Hộp I có đúng một bi mỗi màu đỏ, xanh, vàng; hộp II có đúng một bi mỗi màu xanh, vàng; hộp III có đúng một bi mỗi màu đỏ, xanh. Chọn đều một viên từ mỗi hộp, độc lập. Tính xác suất có đúng một viên xanh.</p>
 <p><strong>Phân tích:</strong> Có ba tầng lựa chọn; mỗi đường đi gồm một màu từ mỗi hộp, tổng số lá là 3×2×2. Đánh dấu đúng các đường có duy nhất một X.</p>
 <p><div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Có <span class="arithmatex">\(n(\Omega)=3\cdot2\cdot2=12\)</span> bộ màu đồng khả năng. Đúng một X gồm các bộ ĐXĐ, ĐVX, XVĐ, VXĐ, VVX (Đ: đỏ, X: xanh, V: vàng), tức 5 bộ. Do đó <span class="arithmatex">\(P=5/12\)</span>.</p></div></p>
 <p><strong>Kiểm lại:</strong> Có thể kiểm theo vị trí của X: ở hộp I có 1 bộ, ở hộp II có 2 bộ, ở hộp III có 2 bộ; tổng 1+2+2=5.</p>
@@ -11862,7 +11862,7 @@
 <p><div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> (a) Không hoàn lại: có <span class="arithmatex">\(4\cdot3=12\)</span> cặp đều nhau, trong đó <span class="arithmatex">\(2\cdot1=2\)</span> cặp đỏ–đỏ. <span class="arithmatex">\(P=1-\frac{2}{12}=\frac56\)</span>. (b) Có hoàn lại: có <span class="arithmatex">\(4\cdot4=16\)</span> cặp đều nhau, trong đó <span class="arithmatex">\(2\cdot2=4\)</span> cặp đỏ–đỏ. <span class="arithmatex">\(P=1-\frac4{16}=\frac34\)</span>.</p></div></p>
 <p><strong>Kiểm lại:</strong> Hai kết quả không bằng nhau là hợp lí: không hoàn lại làm giảm số thẻ đỏ có thể rút ở lần sau nếu đã rút đỏ.</p>
 <h3 id="36-vi-du-khong-gop-cac-ket-qua-khac-trong-so">3.6. Ví dụ — Không gộp các kết quả khác trọng số</h3>
-<p><strong>Đề bài.</strong> Gieo hai xúc xắc cân đối phân biệt. Tính xác suất tổng số chấm bằng 5.</p>
+<p><strong>Đề bài.</strong> Gieo độc lập hai xúc xắc cân đối phân biệt. Tính xác suất tổng số chấm bằng 5.</p>
 <p><strong>Phân tích:</strong> Một kết quả là (số chấm xúc xắc thứ nhất, số chấm xúc xắc thứ hai). Không gộp (1,4) với (4,1), vì chúng là hai kết quả sơ cấp khác nhau.</p>
 <p><div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Có <span class="arithmatex">\(6\cdot6=36\)</span> cặp đồng khả năng. Tổng 5 có bốn cặp <span class="arithmatex">\((1,4),(2,3),(3,2),(4,1)\)</span>, vì vậy <span class="arithmatex">\(P=4/36=1/9\)</span>.</p></div></p>
 <p><strong>Kiểm lại:</strong> Có thể dựng bảng 6×6: đúng bốn ô mang tổng 5. Kết quả thuộc khoảng [0,1]; chia cho 21 nhóm không thứ tự sẽ sai do trọng số khác nhau.</p>

@@ -11739,7 +11739,7 @@
 <p>Với căn bậc hai trong tập số thực, biểu thức <span class="arithmatex">\(\sqrt t\)</span> chỉ có nghĩa khi <span class="arithmatex">\(t\ge0\)</span>, và khi ấy <span class="arithmatex">\(\sqrt t\ge0\)</span>. Em cũng sẽ dùng kiến thức giải bất phương trình bậc nhất. Điều kiện dưới dấu căn giúp tìm <span class="arithmatex">\(D\)</span>, nhưng muốn tìm <span class="arithmatex">\(T\)</span> còn phải xem đầu ra có thể nhận những giá trị nào.</p>
 <p>Tập xác định <span class="arithmatex">\(D\)</span> là những <span class="arithmatex">\(x\)</span> <strong>được phép thay vào</strong> biểu thức; tập giá trị <span class="arithmatex">\(T\)</span> gồm mọi <span class="arithmatex">\(y\)</span> thực sự <strong>đạt được</strong> sau khi thay <span class="arithmatex">\(x\in D\)</span>. Ví dụ căn thức vừa giới hạn đầu vào, vừa làm mọi đầu ra không âm; không lấy <span class="arithmatex">\(D=T\)</span> chỉ vì có cùng kí hiệu tập.</p>
 <p>Chẳng hạn, với <span class="arithmatex">\(f(x)=\sqrt{x-1}\)</span>, căn thức xác định khi <span class="arithmatex">\(x-1\ge0\)</span>, tức <span class="arithmatex">\(D=[1;+\infty)\)</span>. Đồng thời <span class="arithmatex">\(f(x)\ge0\)</span> và mọi giá trị không âm đều nhận được; do đó <span class="arithmatex">\(T=[0;+\infty)\)</span>.</p>
-<p>Với <span class="arithmatex">\(g(x)=\frac{x+1}{x-2}\)</span>, mẫu số phải khác <span class="arithmatex">\(0\)</span>, nên <span class="arithmatex">\(D=\mathbb{R}\setminus\{2\}\)</span>. Viết <span class="arithmatex">\(g(x)=1+\frac{3}{x-2}\)</span>, suy ra giá trị <span class="arithmatex">\(1\)</span> không đạt được, còn mọi giá trị khác <span class="arithmatex">\(1\)</span> đều đạt được; vậy <span class="arithmatex">\(T=\mathbb{R}\setminus\{1\}\)</span>.</p>
+<p>Với <span class="arithmatex">\(g(x)=\frac{x+1}{x-2}\)</span>, mẫu số phải khác <span class="arithmatex">\(0\)</span>, nên <span class="arithmatex">\(D=\mathbb{R}\setminus\{2\}\)</span>. Viết <span class="arithmatex">\(g(x)=1+\frac{3}{x-2}\)</span>, suy ra giá trị <span class="arithmatex">\(1\)</span> không đạt được, còn với mỗi <span class="arithmatex">\(y\ne1\)</span>, chọn <span class="arithmatex">\(x=2+\frac{3}{y-1}\ne2\)</span> thì <span class="arithmatex">\(g(x)=y\)</span>. Vậy <span class="arithmatex">\(T=\mathbb{R}\setminus\{1\}\)</span>.</p>
 <p><strong>Vận dụng.</strong> Với <span class="arithmatex">\(f(x)=\sqrt{x-2}\)</span>, hãy tìm tập xác định <span class="arithmatex">\(D\)</span> và tập giá trị <span class="arithmatex">\(T\)</span>.</p>
 <p><span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY02" data-outcome-id="B15_OUT_02" hidden></span></p>
 <details class="question">
@@ -11781,7 +11781,7 @@
 <h4 id="124-ham-tung-oan-can-oc-ung-ranh-gioi-va-on-vi">1.2.4. Hàm từng đoạn cần đọc đúng ranh giới và đơn vị</h4>
 <p>Một dịch vụ gửi hàng thu phí cơ bản cho 2 km đầu và thu thêm theo mỗi km tiếp theo; cùng đầu vào vẫn phải được tính đúng một mức phí, kể cả ngay ranh giới 2 km.</p>
 <p>Khi tính phí theo quãng đường, hãy chú ý mốc <span class="arithmatex">\(x\le2\)</span> và <span class="arithmatex">\(x&gt;2\)</span>, đơn vị kilomet, nghìn đồng và giá trị hàm số tại quãng đường đang xét. Tại đúng ranh giới, dấu bằng quyết định công thức được chọn; chỉ sau đó mới tính phí và kiểm đơn vị.</p>
-<p>Hàm từng đoạn dùng <strong>những công thức khác nhau trên những miền không chồng mâu thuẫn</strong>. Giá trị tại x=2 phải theo nhánh chứa dấu bằng; nếu chọn nhầm, chi phí tại ranh giới và dự đoán tiếp theo đều sai.</p>
+<p>Hàm từng đoạn dùng <strong>những công thức khác nhau trên những miền không chồng mâu thuẫn</strong>. Giá trị tại x=2 phải theo nhánh chứa dấu bằng, mặc dù trong ví dụ này hai biểu thức cho cùng giá trị tại mốc. Trong trường hợp tổng quát, chọn sai nhánh có thể cho kết quả sai.</p>
 <p>Chẳng hạn, một dịch vụ giao hàng giả định tính phí <span class="arithmatex">\(C(x)\)</span>, đơn vị <em>nghìn đồng</em>, theo quãng đường <span class="arithmatex">\(x\)</span> (km):</p>
 <div class="arithmatex">\[
 C(x)=
@@ -11918,6 +11918,7 @@ C(x)=
 </div>
 <div class="tabbed-block">
 <h2 class="thpt-g10-section-heading">4. Lỗi thường gặp và cách tự khắc phục</h2>
+<p><strong>Kiểm lỗi:</strong> Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: <a href="#help-g10-chvi-try01">Kiểm lỗi 1</a> · <a href="#help-g10-chvi-try02">Kiểm lỗi 2</a> · <a href="#help-g10-chvi-try03">Kiểm lỗi 3</a> · <a href="#help-g10-chvi-try05">Kiểm lỗi 4</a> · <a href="#help-g10-chvi-try04">Kiểm lỗi 5</a>.</p>
 <p><strong>Học tiếp:</strong> <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>.</p>
 <p><p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p></p>
 </div>

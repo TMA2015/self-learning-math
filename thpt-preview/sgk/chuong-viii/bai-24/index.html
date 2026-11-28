@@ -11822,7 +11822,7 @@
 <p><div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"><strong>Quy tắc tính.</strong> <span class="arithmatex">\(P_n=n!=n(n-1)\cdots2\cdot1\)</span>. Quy ước <span class="arithmatex">\(0!=1\)</span> để dùng thống nhất các công thức giai thừa.</div></p>
 <p><strong>Giới hạn:</strong> Hoán vị thông thường yêu cầu mọi vật phân biệt. Nếu đề cho vật giống nhau, điều kiện đứng cạnh hay vị trí cố định, không tự dùng <span class="arithmatex">\(n!\)</span> rồi dừng.</p>
 <h3 id="22-chinh-hop-chon-k-phan-tu-va-sap-vao-k-vai">2.2. Chỉnh hợp — chọn <span class="arithmatex">\(k\)</span> phần tử và sắp vào <span class="arithmatex">\(k\)</span> vai</h3>
-<p>Vị trí thứ nhất có <span class="arithmatex">\(n\)</span> người, vị trí thứ hai còn <span class="arithmatex">\(n-1\)</span>, ...; với <span class="arithmatex">\(k\)</span> vị trí có đúng <span class="arithmatex">\(k\)</span> thừa số giảm dần. Khác hoán vị ở chỗ chỉ dùng một phần tập hợp.</p>
+<p>Vị trí thứ nhất có <span class="arithmatex">\(n\)</span> người, vị trí thứ hai còn <span class="arithmatex">\(n-1\)</span>, ...; với <span class="arithmatex">\(k\)</span> vị trí có đúng <span class="arithmatex">\(k\)</span> thừa số giảm dần. Khi <span class="arithmatex">\(k&lt;n\)</span>, chỉnh hợp chỉ dùng một phần tập hợp; khi <span class="arithmatex">\(k=n\)</span>, chỉnh hợp chính là hoán vị.</p>
 <p><div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"><strong>Khái niệm.</strong> Chỉnh hợp chập <span class="arithmatex">\(k\)</span> của <span class="arithmatex">\(n\)</span> là cách chọn <strong>có thứ tự</strong> <span class="arithmatex">\(k\)</span> phần tử trong <span class="arithmatex">\(n\)</span> phần tử phân biệt. Theo phạm vi SGK: <span class="arithmatex">\(1\le k\le n\)</span>.</div></p>
 <p><div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"><strong>Công thức.</strong> <span class="arithmatex">\(A_n^k=n(n-1)\cdots(n-k+1)=\dfrac{n!}{(n-k)!}\)</span>, với <span class="arithmatex">\(1\le k\le n\)</span>. Khi <span class="arithmatex">\(k=n\)</span>, <span class="arithmatex">\(A_n^n=P_n\)</span>.</div></p>
 <p><strong>Phương pháp:</strong> Có <span class="arithmatex">\(k\)</span> vai/vị trí phân biệt? Đếm có thứ tự. Không phân vai? Chưa phải chỉnh hợp.</p>
@@ -11847,11 +11847,11 @@
 <h3 id="26-nhin-lai-cong-thuc-va-ieu-kien">2.6. Nhìn lại công thức và điều kiện</h3>
 <p><strong>Cách đọc hình.</strong> Cùng chọn hai từ A,B,C: nếu có vai AB khác BA nên có 6 chỉnh hợp; nếu chỉ là nhóm AB=BA thì còn 3 tổ hợp.</p>
 <p><figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B24_ORDER_VS_COMBINATION_R02.svg" loading="lazy" alt="Ba bạn A B C, chọn hai có thứ tự có 6 cách và chọn nhóm không thứ tự có 3 cách"><figcaption>Khi phân vai, <span class="arithmatex">\(A_3^2=6\)</span> vì AB và BA là hai kết quả khác nhau. Khi chỉ chọn nhóm, <span class="arithmatex">\(\binom32=3\)</span> vì AB và BA là cùng một nhóm.</figcaption></figure></p>
-<p><strong>Tổng kết nhanh.</strong> Có <span class="arithmatex">\(n\)</span> đối tượng <strong>phân biệt</strong>, <span class="arithmatex">\(n\)</span> nguyên không âm. Với <span class="arithmatex">\(0\le k\le n\)</span>:
+<p><strong>Tổng kết nhanh.</strong> Có <span class="arithmatex">\(n\)</span> đối tượng <strong>phân biệt</strong>, <span class="arithmatex">\(n\)</span> nguyên dương. Trong phạm vi SGK:
 - Hoán vị của n đối tượng: <span class="arithmatex">\(P_n=n!\)</span>, với <span class="arithmatex">\(0!=1\)</span>.
-- Chỉnh hợp chập k (chọn k phần tử và <strong>xếp thứ tự</strong>): <span class="arithmatex">\(A_n^k=\dfrac{n!}{(n-k)!}\)</span>.
-- Tổ hợp chập k (chọn nhóm k phần tử, <strong>không</strong> xét thứ tự): <span class="arithmatex">\(C_n^k=\dfrac{n!}{k!(n-k)!}\)</span>.
-- Công thức liên hệ <span class="arithmatex">\(A_n^k=C_n^k\cdot k!\)</span> vì mỗi nhóm k phần tử có k! thứ tự.</p>
+- Chỉnh hợp chập k (chọn k phần tử và <strong>xếp thứ tự</strong>): <span class="arithmatex">\(A_n^k=\dfrac{n!}{(n-k)!}\)</span>, với <span class="arithmatex">\(1\le k\le n\)</span>.
+- Tổ hợp chập k (chọn nhóm k phần tử, <strong>không</strong> xét thứ tự): <span class="arithmatex">\(C_n^k=\dfrac{n!}{k!(n-k)!}\)</span>, với <span class="arithmatex">\(0\le k\le n\)</span>.
+- Công thức liên hệ <span class="arithmatex">\(A_n^k=C_n^k\cdot k!\)</span> với <span class="arithmatex">\(1\le k\le n\)</span>, vì mỗi nhóm k phần tử có k! thứ tự.</p>
 <p><strong>Hướng chọn phương pháp.</strong> Hỏi "chọn nhóm" mà không phân vai → tổ hợp; "xếp k người vào k vị trí phân biệt" → chỉnh hợp; "xếp tất cả" → hoán vị. Chọn nhóm rồi phân vai là hai bước: số nhóm nhân số phân vai <strong>sau</strong> khi nhóm được chọn, nếu mỗi nhóm có cùng số cách phân vai.</p>
 </div>
 <div class="tabbed-block">
@@ -11894,7 +11894,7 @@
 <details class="tip">
 <summary>Nhầm nhóm với phân vai</summary>
 <p><p><strong>Dấu hiệu:</strong> Đổi thứ tự các thành viên của một nhóm không phân vai nhưng lại coi là kết quả mới.</p>
-<p><strong>Bản chất toán:</strong> Tổ hợp không xét thứ tự; chỉnh hợp gán k vai trò phân biệt. Với 0≤k≤n, A(n,k)=C(n,k)·k!.</p>
+<p><strong>Bản chất toán:</strong> Tổ hợp không xét thứ tự; chỉnh hợp gán k vai trò phân biệt. Với 1≤k≤n, A(n,k)=C(n,k)·k!.</p>
 <p><strong>Tự sửa:</strong> Ôn B24 mục 2 (chỉnh hợp) và mục 3 (tổ hợp): hỏi đổi chỗ hai người có tạo phương án mới không để chọn A hay C. Nếu xếp toàn bộ k người đã chọn vào k vị trí phân biệt, dùng <span class="arithmatex">\(A_n^k=C_n^k\cdot k!\)</span>; nếu chỉ phân một số vai trò, đếm đúng số cách giao vai tương ứng.</p>
 <p><strong>Kiến thức cần ôn:</strong> B23 quy tắc nhân, giai thừa; B24 mục 1.</p>
 <p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B24-C02" href="../luyen-tap/?item=THPT-G10-B24-C02">Luyện lại câu 24-C02</a> · <a data-thpt-formative-id="THPT-G10-B24-P01" href="../luyen-tap/?item=THPT-G10-B24-P01">Luyện lại câu 24-P01</a> · <a data-thpt-formative-id="THPT-G10-B24-P02" href="../luyen-tap/?item=THPT-G10-B24-P02">Luyện lại câu 24-P02</a> · <a data-thpt-formative-id="THPT-G10-CHVIII-W24-ANCHOR-01" href="../../../thu-vien/tu-luan-chuong-viii/#thpt-g10-chviii-w24-anchor-01">Bài tự luận liên quan</a></p></p>
