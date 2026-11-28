@@ -906,19 +906,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Chỉ (a)."
+        "text": "Chỉ (a), vì có bậc nhất và hai hệ số không đồng thời bằng 0."
       },
       {
         "id": "B",
-        "text": "(a) và (b)."
+        "text": "(a) và (b), vì đều có x và y."
       },
       {
         "id": "C",
-        "text": "(a) và (c)."
+        "text": "(a) và (c), vì không chứa tích xy."
       },
       {
         "id": "D",
-        "text": "Cả ba."
+        "text": "Cả ba, vì đều có hai biến trong cách viết."
       }
     ]
   },
@@ -1104,7 +1104,7 @@
   {
     "item_id": "THPT-G10-CHII-TRY05",
     "content_version": "SGK-G10-CHII-BANK-CANDIDATE-20261127-THPT-G10-CHII-TRY05",
-    "stem": "Công việc A cần 4 phút/sản phẩm, B cần 6 phút/sản phẩm, tổng thời gian không quá 120 phút. Viết điều kiện cho số sản phẩm \\(x,y\\) rồi kiểm \\((10,10)\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
+    "stem": "Công việc A cần 4 phút/sản phẩm, B cần 6 phút/sản phẩm, tổng thời gian không quá 120 phút. Gọi x, y lần lượt là số sản phẩm A, B. Viết điều kiện của x, y rồi kiểm cặp \\((10;10)\\). Chọn phương án đúng sau khi tự giải.",
     "answer_key": "4x+6y≤120; x,y nguyên không âm; (10,10) hợp lệ.",
     "worked_solution": "Điều kiện là \\(4x+6y\\le120\\), \\(x,y\\in\\mathbb Z_{\\ge0}\\) nếu đếm sản phẩm rời rạc. Thay \\(x=y=10\\) được \\(4\\cdot10+6\\cdot10=100\\le120\\), nên phương án hợp lệ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1222,9 +1222,9 @@
   {
     "item_id": "THPT-G10-CHII-TRY07",
     "content_version": "SGK-G10-CHII-BANK-CANDIDATE-20261127-THPT-G10-CHII-TRY07",
-    "stem": "Hệ \\(x\\ge0,\\ y\\ge0,\\ x+2y\\le6\\) có những đỉnh nào? Các cạnh có được lấy không? Đây là **hệ ba điều kiện khác với tứ giác trong hình**. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
+    "stem": "Hệ \\(x\\ge0,\\ y\\ge0,\\ x+2y\\le6\\) có miền nghiệm với những đỉnh nào? Các cạnh có thuộc miền nghiệm không? Chọn phương án đúng sau khi tự giải.",
     "answer_key": "Các đỉnh (0,0), (6,0), (0,3); cả ba cạnh được lấy.",
-    "worked_solution": "Các đỉnh là \\((0,0)\\), \\((6,0)\\), \\((0,3)\\). Ba đường biên tạo thành một **tam giác**, **không phải** tứ giác ở hình trên. Cả ba cạnh đều thuộc miền vì các dấu \\(\\ge,\\le\\) đều có bằng.",
+    "worked_solution": "Trên hai trục tọa độ, đường thẳng \\(x+2y=6\\) cắt Ox tại \\((6;0)\\) và Oy tại \\((0;3)\\). Hai điều kiện không âm giữ lại phần tam giác có các đỉnh \\((0;0),(6;0),(0;3)\\). Cả ba cạnh đều thuộc miền nghiệm vì các dấu bất đẳng thức đều có dấu bằng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B04-REGION_INTERSECTION"
@@ -1340,9 +1340,9 @@
   {
     "item_id": "THPT-G10-CHII-TRY09",
     "content_version": "SGK-G10-CHII-BANK-CANDIDATE-20261127-THPT-G10-CHII-TRY09",
-    "stem": "Tam giác nghiệm của \\(x\\ge0,\\ y\\ge0,\\ 2x+y\\le6\\) có các đỉnh \\((0,0),(3,0),(0,6)\\). Tính \\(F=x+2y\\) ở các đỉnh và xác định \\(F_{\\max}\\). Đây **không** phải hàm và hệ trong hình tứ giác ở mục §2.2. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
+    "stem": "Miền nghiệm của hệ \\(x\\ge0,\\ y\\ge0,\\ 2x+y\\le6\\) là tam giác có các đỉnh \\((0;0),(3;0),(0;6)\\). Tính \\(F=x+2y\\) tại các đỉnh và xác định giá trị lớn nhất của F trên miền nghiệm. Chọn phương án đúng sau khi tự giải.",
     "answer_key": "F(0,0)=0; F(3,0)=3; F(0,6)=12; GTLN 12 tại (0,6).",
-    "worked_solution": "\\(F(0,0)=0\\), \\(F(3,0)=3\\), \\(F(0,6)=12\\). Vậy \\(F_{\\max}=12\\) tại \\((0,6)\\).",
+    "worked_solution": "Tại các đỉnh, \\(F(0;0)=0\\), \\(F(3;0)=3\\), \\(F(0;6)=12\\). Miền nghiệm là tam giác kín, bị chặn; hàm F bậc nhất nên đạt giá trị lớn nhất tại ít nhất một đỉnh. So sánh ba giá trị, được \\(F_{\\max}=12\\) tại \\((0;6)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B04-LINEAR_OBJECTIVE"
