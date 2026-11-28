@@ -7,7 +7,19 @@
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
 const {chromium,webkit}=require("playwright");
 const engine=process.env.SCOPED_BROWSER_ENGINE||"chromium";
-const displayOnly=process.env.SCOPED_DISPLAY_ONLY==="true";
+// Owner 28/11: display-only release means source-locked formula/text checks,
+// not a re-audit of unchanged interactions, images or palette. The exact
+// push classifier is used by the existing production workflow as well.
+const displayReasons=new Set(["OWNER_1132_G11_B19_DISPLAY","OWNER_1132_G11_B16_DISPLAY","OWNER_1132_G11_B07_DISPLAY","OWNER_1132_EXACT_DISPLAY_DELTA"]);
+function exactPushDisplay(){
+ if(process.env.GITHUB_EVENT_NAME!=="push"||!process.env.GITHUB_EVENT_PATH)return false;
+ const event=JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH,"utf8"));
+ if(!/^[a-f0-9]{40}$/.test(event.before||"")||!/^([a-f0-9]{40})$/.test(event.after||""))return false;
+ const cp=require("node:child_process"),paths=cp.execFileSync("git",["diff","--no-renames","--name-only",event.before,event.after],{encoding:"utf8"}).trim().split("\n").filter(Boolean);
+ const impact=require("./test-thpt-release-impact.cjs").classify(paths,{base:event.before});
+ return impact.impact==="SCOPED_LESSON"&&displayReasons.has(impact.reason)&&impact.changed_lessons===process.env.SCOPED_LESSONS;
+}
+const displayOnly=(process.env.SCOPED_DISPLAY_ONLY==="true"&&displayReasons.has(process.env.RELEASE_DELTA_REASON))||exactPushDisplay();
 assert(["chromium","webkit"].includes(engine),"Unknown scoped browser engine");
 const root=path.resolve(__dirname,"..");
 const base=(process.env.SCOPED_BASE_URL||"http://127.0.0.1:8765").replace(/\/$/,"");
@@ -247,7 +259,7 @@ async function execute(){
       "docs/thpt-preview/sgk/chuong-vii/bai-22.md":{selector:"li",match:/Elip trục lớn Ox có/,expected:"Kiến thức gốc: Elip trục lớn Ox có c² = a² − b² và c < a; hypebol trục thực Ox có c² = a² + b² và c > a. Dấu trong dạng chính tắc phản ánh quỹ tích khác nhau."}
      }[rel];
      let display1132Hits=0;
-     for(let i=0;i<4;i++){
+     for(let i=0;i<(displayOnly&&!display1132?0:4);i++){
       await tabs.locator(".tabbed-labels > label").nth(i).click();
       assert(await groups.nth(i).isVisible(),rel+" "+width+" learner tab "+i+" not visible");
       if(display1132){
@@ -280,7 +292,7 @@ async function execute(){
       if(/^docs\/thpt-preview\/sgk\/lop-11\/(?:chuong-i\/bai-[234]|chuong-ii\/bai-[567]|chuong-iii\/bai-[89]|chuong-iv\/bai-1[0-4]|chuong-v\/bai-1[5-7]|chuong-vi\/bai-(?:1[89]|2[01])|chuong-vii\/bai-2[2-7]|(?:chuong-viii\/bai-(?:2[89]|30)|chuong-ix\/bai-3[1-3]))\.md$/.test(rel)||/^docs\/thpt-preview\/sgk\/lop-12\/chuong-i\/bai-[1-5]\.md$/.test(rel)||/\/lop-12\/chuong-v\/bai-1[4-7]\.md$/.test(rel)||/\/lop-12\/chuong-vi\/bai-1[89]\.md$/.test(rel)){
        const panel=groups.nth(i);
        for(const disclosure of await panel.locator("details.question").all()){
-        if(displayOnly&&!(/\/lop-11\/chuong-vii\/bai-(22|26)\.md$/.test(rel)&&width===1440))continue;
+        if(displayOnly)continue;
         const summary=disclosure.locator("summary").first();
         assert((await summary.innerText()).includes("Đối chiếu"),rel+" "+width+" comparison label");
         assert(!(await disclosure.evaluate(el=>el.open)),rel+" "+width+" comparison prematurely open");
@@ -324,7 +336,7 @@ async function execute(){
       }
       const figs=groups.nth(i).locator("figure img");
       for(const fig of await figs.all()){
-       if(displayOnly&&!await fig.isVisible())continue;
+       if(displayOnly)continue;
        assert((await fig.getAttribute("alt"))?.trim(),rel+" "+width+" figure alt missing");
        // A real lazy image below the fold never starts loading until in view.
        // Scrolling reproduces the learner's behavior; bounded load/decode
@@ -487,10 +499,10 @@ async function execute(){
       }
       console.log("PASS #1132 visible display tab-switch "+engine+" "+rel+" @"+width+" "+(rel==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"?1:display1132Tabs.reduce((a,b)=>a+b,0))+" affected formulas");
      }
-     if(!displayOnly||width===820)await goldenW1Parity(page,browser,width,rel);
+     if(!displayOnly)await goldenW1Parity(page,browser,width,rel);
      checks++;
-     console.log("PASS SCOPED Golden AP "+rel+" @"+width+"px: "+(isLesson?"4 tabs / ":"chapter hub / ")+
-      layout.math+" rendered math, "+expectedTry.length+" First Try, "+expectedHelp.length+" D6, layout/font/SVG/Q16");
+     console.log((displayOnly?"PASS SCOPED DISPLAY ":"PASS SCOPED Golden AP ")+rel+" @"+width+"px: "+(isLesson?"4 tabs / ":"chapter hub / ")+
+      layout.math+" rendered math, "+expectedTry.length+" First Try, "+expectedHelp.length+" D6, "+(displayOnly?"layout/font/Q16; unchanged interactions and SVG not retested":"layout/font/SVG/Q16"));
     }finally{await page.close();}
    }
   }
