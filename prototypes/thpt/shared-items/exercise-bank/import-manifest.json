@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "276f3aa7bd7c1166d0c15a387f29fb9de40938a9",
+    "as_of_commit": "ff82346c8e1b5c50468f46948b69ee37e4640aed",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.2: 432/910 (397 interactive +35 Written), CD01–10 complete; next CD11 onward 478 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
+    "next": "08.2: 482/910 (441 interactive +41 Written), CD01–11 complete; next CD12 onward 428 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
     "status": "CHECKLIST_08_XG5_BATCH_2_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -8074,12 +8074,284 @@
                     ]
                   ],
                   "findings": "Read all six canonical Written blocks; W02/W04/W05/W06 legacy plain-text mathematics typeset in stems, solutions, answers, rubric and D6; preserve values, steps and all seven 1-point criteria. Source a8638e3584170c6f46b95987512406be0b801e16; six bindings refreshed at 276f3aa7bd7c1166d0c15a387f29fb9de40938a9."
+                },
+                {
+                  "shard": "items/cd11.json",
+                  "blob": "bca96fca75014c0343af1ffce911eade3ace8976",
+                  "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+                  "baseline_blob": "1fec0a72639790a280bad9b55a9c5582585fa17b",
+                  "evidence_cp": "CP90",
+                  "records": [
+                    [
+                      "THPT-TOP11-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P08",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P09",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P10",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P11",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P12",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P13",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P14",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P15",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P16",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P17",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P18",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P19",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP11-P20",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P21",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP11-P22",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Read all new/changed fields, inherit identical five CP90 fields only. No correction needed in this shard."
+                },
+                {
+                  "shard": "items/topic-knowledge-first-try.json",
+                  "blob": "c3bb4fbbbcd9f57b1b99bbf5b8a83e84f8789d1c",
+                  "evidence_cp": "08.2-CD11-KFT",
+                  "records": [
+                    [
+                      "THPT-TOP11-KFT01",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT02",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT03",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT04",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT05",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT06",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT07",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT08",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT09",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT10",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT11",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT12",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT13",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT14",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT15",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT16",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT17",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT18",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT19",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT20",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT21",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP11-KFT22",
+                      0,
+                      31
+                    ]
+                  ],
+                  "findings": "Read all 22 Topic-only FirstTry records; normalize fractions, exponent, absolute value and inline expressions in nine IDs; readback 72b4a977611a3267a98c1d8d4a7d7469ce774893."
+                },
+                {
+                  "shard": "written-references.json",
+                  "blob": "89ffd7168d6c479afd99d6de118dcd00cc79f6ba",
+                  "source_path": "prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md",
+                  "source_blob": "a08d39ce81d2e122993375d935800d3fecc4e55a",
+                  "evidence_cp": "08.2-CD11-Written",
+                  "records": [
+                    [
+                      "THPT-TOP11-W01",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP11-W02",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP11-W03",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP11-W04",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP11-W05",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP11-W06",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ]
+                  ],
+                  "findings": "Read six canonical Written blocks; W01–04/W06 legacy raw math normalized in all learner fields including seven 1-point criteria; W05 already typeset. Source 4f2b330ec2c745df2ee4156569cad28d10dd57a0, six bindings refreshed at ff82346c8e1b5c50468f46948b69ee37e4640aed. Preserve intended math/assessment."
                 }
               ],
-              "completed_interactive": 397,
-              "completed_written": 35,
-              "remaining_interactive": 432,
-              "remaining_written": 46,
+              "completed_interactive": 441,
+              "completed_written": 41,
+              "remaining_interactive": 388,
+              "remaining_written": 40,
               "counts": {
                 "CD01": {
                   "interactive": 15,
@@ -8130,12 +8402,17 @@
                   "interactive": 67,
                   "written": 6,
                   "state": "COMPLETE"
+                },
+                "CD11": {
+                  "interactive": 44,
+                  "written": 6,
+                  "state": "COMPLETE"
                 }
               },
-              "next": "CD11 onward; exclude 975 shared and 432 completed Topic-only IDs",
+              "next": "CD12 onward; exclude 975 shared and 482 completed Topic-only IDs",
               "reconciliation": {
-                "expected_cd01_10": 432,
-                "completed_cd01_10": 432,
+                "expected_cd01_11": 482,
+                "completed_cd01_11": 482,
                 "duplicate_ids": 0,
                 "overlap_08_1": 0,
                 "overlap_08_3": 0,
