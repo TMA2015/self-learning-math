@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "e02559e9ff59755f6a75895d33ba1305390acb32",
+    "as_of_commit": "01982b947cc095fcfec95752c37125cf9670b674",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.2: 51/910 (49 interactive +2 Written) complete; CD01 15/15, CD02 36/36. Next CD03–04 (74 IDs). 08.1 immutable 975/975; no CONTENT_READY.",
+    "next": "08.2: 125/910 (117 interactive +8 Written) complete, CD01–04 done; next CD05 onward 785 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
     "status": "CHECKLIST_08_XG5_BATCH_2_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -5978,12 +5978,432 @@
                     ]
                   ],
                   "findings": "Read both exact canonical heading blocks including stem, hints, answer, solution, rubric and remediation; no source notation defect found. No change to rubric, ID or source reference."
+                },
+                {
+                  "shard": "items/cd03.json",
+                  "blob": "e7e68e4d37281f045e23fad6197a014727f52eab",
+                  "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+                  "baseline_blob": "2ecb25e3019e29850cd90c22a2d07a94f8b16ce8",
+                  "evidence_cp": "CP87",
+                  "records": [
+                    [
+                      "THPT-TOP03-ADD01",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP03-ADD02",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP03-ADD03",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP03-ADD04",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP03-ADD05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP03-ADD06",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP03-ADD07",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP03-ADD08",
+                      72,
+                      23
+                    ],
+                    [
+                      "THPT-TOP03-ADD09",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP03-ADD10",
+                      77,
+                      18
+                    ],
+                    [
+                      "THPT-TOP03-ADD11",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP03-ADD12",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP03-ADD13",
+                      72,
+                      23
+                    ],
+                    [
+                      "THPT-TOP03-ADD14",
+                      77,
+                      18
+                    ],
+                    [
+                      "THPT-TOP03-ADD15",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP03-ADD16",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP03-ADD17",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP03-ADD18",
+                      76,
+                      19
+                    ],
+                    [
+                      "THPT-TOP03-ADD19",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP03-ADD20",
+                      76,
+                      19
+                    ],
+                    [
+                      "THPT-TOP03-ADD21",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Read changed/new learner-visible fields, including options and all changed worked solutions and keys; inherit only identical five fields from CP87. No notation correction required."
+                },
+                {
+                  "shard": "items/cd04.json",
+                  "blob": "e19c7d3a8bf8fbddb0d0318de16147bfda08876c",
+                  "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+                  "baseline_blob": "e0a344314f1788724c9f708af967780bbb12e1d0",
+                  "evidence_cp": "CP88",
+                  "records": [
+                    [
+                      "THPT-TOP04-P01",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP04-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P04",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP04-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P06",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP04-P07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P08",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P09",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP04-P10",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP04-P11",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P12",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P13",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P14",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P15",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P16",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P17",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P18",
+                      29,
+                      66
+                    ],
+                    [
+                      "THPT-TOP04-P19",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P20",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP04-P21",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP04-P22",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Read changed/new fields and inherit only identical five fields from CP88. Normalize option absolute value and fraction in TOP04-P08/P09. Exact readback only these two options fields changed, no key/interaction change; data commit a3a9e070e2de614c9e33358e28d99a8b97d43c5d."
+                },
+                {
+                  "shard": "items/topic-knowledge-first-try.json",
+                  "blob": "9e37ad775b192e39232b3146471fa0ed15bc05ce",
+                  "evidence_cp": "08.2-CD03-KFT",
+                  "records": [
+                    [
+                      "THPT-TOP03-KFT01",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP03-KFT02",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP03-KFT03",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP03-KFT04",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP03-KFT05",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP03-KFT06",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP03-KFT07",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP03-KFT08",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP03-KFT09",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP03-KFT10",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP03-KFT11",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP03-KFT12",
+                      0,
+                      95
+                    ]
+                  ],
+                  "findings": "Read all 12 FirstTry learner-visible fields directly; no new notation correction."
+                },
+                {
+                  "shard": "items/topic-knowledge-first-try.json",
+                  "blob": "9e37ad775b192e39232b3146471fa0ed15bc05ce",
+                  "evidence_cp": "08.2-CD04-KFT",
+                  "records": [
+                    [
+                      "THPT-TOP04-KFT01",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP04-KFT02",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP04-KFT03",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP04-KFT06",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP04-KFT08",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP04-KFT10",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP04-KFT11",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP04-KFT12",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP04-KFT13",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP04-KFT14",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP04-KFT16",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP04-KFT17",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP04-KFT18",
+                      0,
+                      95
+                    ]
+                  ],
+                  "findings": "Read all 13 FirstTry learner-visible records; corrected KFT03 remediation interval (0,1) -> inline (0;1). Exact readback only remediation changed; data commit 01982b947cc095fcfec95752c37125cf9670b674; prior CD01–03 KFT fields unchanged."
+                },
+                {
+                  "shard": "written-references.json",
+                  "blob": "3d28d297bb91b94c28b0f316aed8e63c8d8646d9",
+                  "source_path": "prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md",
+                  "source_blob": "7825a8676a067128f553bfa291a444c965ffb47a",
+                  "evidence_cp": "08.2-CD04-Written",
+                  "records": [
+                    [
+                      "THPT-TOP04-W01",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP04-W02",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP04-W03",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP04-W04",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ]
+                  ],
+                  "findings": "Read exact Written source blocks, all learner-facing fields including rubric/solution/remediation. Notation acceptable, no source or rubric change."
+                },
+                {
+                  "shard": "written-references.json",
+                  "blob": "3d28d297bb91b94c28b0f316aed8e63c8d8646d9",
+                  "source_path": "prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md",
+                  "source_blob": "dca39a5cd38b03885dccd3876acf4a41273522b8",
+                  "evidence_cp": "08.2-CD03-Written",
+                  "records": [
+                    [
+                      "THPT-TOP03-W01",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP03-W02",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ]
+                  ],
+                  "findings": "Read exact Written source blocks, all learner-facing fields including rubric/solution/remediation. Notation acceptable, no source or rubric change."
                 }
               ],
-              "completed_interactive": 49,
-              "completed_written": 2,
-              "remaining_interactive": 780,
-              "remaining_written": 79,
+              "completed_interactive": 117,
+              "completed_written": 8,
+              "remaining_interactive": 712,
+              "remaining_written": 73,
               "counts": {
                 "CD01": {
                   "interactive": 15,
@@ -5994,9 +6414,38 @@
                   "interactive": 34,
                   "written": 2,
                   "state": "COMPLETE"
+                },
+                "CD03": {
+                  "interactive": 33,
+                  "written": 2,
+                  "state": "COMPLETE"
+                },
+                "CD04": {
+                  "interactive": 35,
+                  "written": 4,
+                  "state": "COMPLETE"
                 }
               },
-              "next": "CD03–04 (74 Topic-only IDs), exclude 975 shared IDs and 51 done 08.2 IDs."
+              "next": "CD05 onward (785 remaining: 712 interactive +73 Written), exclude all 975 shared IDs and 125 completed Topic-only IDs.",
+              "reconciliation": {
+                "expected_cd01_04": 125,
+                "completed_cd01_04": 125,
+                "duplicate_ids": 0,
+                "overlap_08_1": 0,
+                "overlap_08_3": 0,
+                "changed_ids": [
+                  "THPT-TOP02-KFT02",
+                  "THPT-TOP04-P08",
+                  "THPT-TOP04-P09",
+                  "THPT-TOP04-KFT03"
+                ],
+                "data_commits": [
+                  "e02559e9ff59755f6a75895d33ba1305390acb32",
+                  "a3a9e070e2de614c9e33358e28d99a8b97d43c5d",
+                  "01982b947cc095fcfec95752c37125cf9670b674"
+                ],
+                "scope": "Notation only; no coverage, D6, role, mapping, answer, rubric, math/PED re-audit or runtime changes."
+              }
             }
           },
           {
