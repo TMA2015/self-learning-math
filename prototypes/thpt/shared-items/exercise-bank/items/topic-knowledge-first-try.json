@@ -1177,7 +1177,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Với dạng chuẩn, tiệm cận có hệ số góc ±b/a."
+      "Với dạng chuẩn, tiệm cận có hệ số góc \\(\\pm\\frac ba\\)."
     ],
     "rubric": null,
     "interaction": {
