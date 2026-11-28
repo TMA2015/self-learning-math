@@ -5982,8 +5982,11 @@
   {
     "item_id": "THPT-G10-CHV-W12",
     "source": {
-      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
-      "heading_id": "THPT-G10-CHV-W12"
+      "blob": "ee6e68979a2289c4b8e0ea2a20aa352dab86a004",
+      "heading_id": "THPT-G10-CHV-W12",
+      "previous_source_blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "path": "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_B14_D1D6_AUTHORING_R01_SNAPSHOT.md",
+      "revision_scope": "XG5_08_1_G10_CHV_WRITTEN_NOTATION_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-v-b13-b14.md",
@@ -6005,8 +6008,11 @@
   {
     "item_id": "THPT-G10-CHV-W13",
     "source": {
-      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
-      "heading_id": "THPT-G10-CHV-W13"
+      "blob": "ee6e68979a2289c4b8e0ea2a20aa352dab86a004",
+      "heading_id": "THPT-G10-CHV-W13",
+      "previous_source_blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "path": "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_B14_D1D6_AUTHORING_R01_SNAPSHOT.md",
+      "revision_scope": "XG5_08_1_G10_CHV_WRITTEN_NOTATION_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-v-b13-b14.md",
@@ -6030,8 +6036,11 @@
   {
     "item_id": "THPT-G10-CHV-W14-ANCHOR",
     "source": {
-      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
-      "heading_id": "THPT-G10-CHV-W14-ANCHOR"
+      "blob": "ee6e68979a2289c4b8e0ea2a20aa352dab86a004",
+      "heading_id": "THPT-G10-CHV-W14-ANCHOR",
+      "previous_source_blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "path": "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_B14_D1D6_AUTHORING_R01_SNAPSHOT.md",
+      "revision_scope": "XG5_08_1_G10_CHV_WRITTEN_NOTATION_ONLY_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-v-b13-b14.md",
