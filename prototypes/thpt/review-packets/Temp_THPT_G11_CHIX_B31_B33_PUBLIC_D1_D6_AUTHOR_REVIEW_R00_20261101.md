@@ -950,7 +950,7 @@ Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho l�
 
 **Đề bài:** Vật có tọa độ \(s(t)=t^3-6t^2+8t\) (m), \(0\le t\le4\), thời gian tính bằng giây. (a) Tìm vận tốc. (b) Tính \(v(1),v(3)\). (c) So sánh chiều chuyển động và tốc độ tại hai thời điểm. (d) Ghi đơn vị.
 
-**Lời giải:** \(v(t)=s'(t)=3t^2-12t+8\) (m/s) tại các điểm trong khoảng thời gian xét. Thay \(t=1\) được \(3-12+8=-1\) m/s; thay \(t=3\) được \(27-36+8=-1\) m/s. Tại hai thời điểm đó, vật đều chuyển động theo chiều âm của trục và có tốc độ \(1\) m/s.
+**Lời giải:** \(v(t)=s'(t)=3t^2-12t+8\) (đơn vị m/s) tại các điểm trong khoảng thời gian xét. Thay \(t=1\) được \(3-12+8=-1\,\mathrm{m/s}\); thay \(t=3\) được \(27-36+8=-1\,\mathrm{m/s}\). Tại hai thời điểm đó, vật đều chuyển động theo chiều âm của trục và có tốc độ \(1\) m/s.
 
 **Rubric /4:**
 1. Tìm đúng vận tốc (1 điểm).
@@ -1051,7 +1051,7 @@ Chấp nhận cách giải đúng khác; không trừ điểm lặp lại cho l�
 
 **Đề bài:** Vật có tọa độ \(s(t)=t^3-9t^2+24t\) (cm), thời gian \(t\) tính bằng giây. (a) Tìm vận tốc. (b) Tìm gia tốc. (c) Tính chúng tại \(t=1\). (d) Nhận xét chiều chuyển động và sự thay đổi tốc độ tại thời điểm đó.
 
-**Lời giải:** \(v(t)=3t^2-18t+24\) (cm/s), \(a(t)=6t-18\) (cm/s²). Tại \(t=1\), \(v(1)=3-18+24=9\) cm/s, \(a(1)=6-18=-12\) cm/s². Vận tốc dương nên vật chuyển động theo chiều dương; vì tốc độ bằng \(v\) trong lân cận đủ nhỏ của \(1\), đạo hàm tốc độ tại đó là \(a(1)<0\). Vật đang chậm dần tại thời điểm xét.
+**Lời giải:** \(v(t)=3t^2-18t+24\) (cm/s), \(a(t)=6t-18\) (cm/s²). Tại \(t=1\), \(v(1)=3-18+24=9\,\mathrm{cm/s}\), \(a(1)=6-18=-12\,\mathrm{cm/s^2}\). Vận tốc dương nên vật chuyển động theo chiều dương; vì tốc độ bằng \(v\) trong lân cận đủ nhỏ của \(1\), đạo hàm tốc độ tại đó là \(a(1)<0\). Vật đang chậm dần tại thời điểm xét.
 
 **Rubric /4:**
 1. Tính đúng \(v(t)\) (1 điểm).
