@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "232b5057e4e58a9f4171fe0472979725b1611d2c",
+    "as_of_commit": "3dc7acc2fd1695bde01121d272f7f93d4b101dd9",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.1: shared 155/815 interactive IDs (G10 ChI–VII shared subset), Written 0/160; next G10 ChVIII–IX + G11 ChI. Owner: work in groups of three chapters; skip already checked/normalized content.",
+    "next": "08.1: shared 231/815 interactive IDs (G10 ChI–IX + G11 ChI shared subset), Written 0/160; next G11 ChII–IV. Owner: work in groups of three chapters; skip already checked/normalized content.",
     "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -1067,18 +1067,428 @@
                     ]
                   ],
                   "findings": "Directly read only previously unverified/changed fields for 55 shared IDs; normalized parameter equations in B20-P05 options, vector labels in TRY01 option, unit typesetting in TRY23 option/display key. Exact readback verified only four fields across these three IDs changed, correct option IDs and mathematical meaning retained. Data commit 232b5057e4e58a9f4171fe0472979725b1611d2c."
+                },
+                {
+                  "shard": "items/g10-chviii.json",
+                  "blob": "dbef44d8072d6ea5d0f5c7a3181ee02d370591e3",
+                  "baseline_commit": "ecd4543cf0ecf1297a16083cfc75250d4874a318",
+                  "baseline_blob": "9e7c45756814fc766e7860a50810f3b068f65cbb",
+                  "evidence_cp": "CP98",
+                  "records": [
+                    [
+                      "THPT-G10-B23-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B23-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B23-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B23-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B23-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B23-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B24-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B24-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B24-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B24-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B24-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B24-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B25-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B25-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B25-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B25-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B25-P03",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B25-P04",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-B23-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B23-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B24-P05",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-B24-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B25-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B25-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B25-P07",
+                      89,
+                      6
+                    ]
+                  ],
+                  "findings": "Read remaining changed/unverified fields of shared IDs; notation acceptable, no source changes. Previously checked identical fields inherited."
+                },
+                {
+                  "shard": "items/g10-chix.json",
+                  "blob": "a577eae75577dd8e63d772a96319bdb877f2de63",
+                  "baseline_commit": "437fec4d14af2737f107d8d6515abbd398f0ae79",
+                  "baseline_blob": "951b4797733e09739a74697364909558d3897d15",
+                  "evidence_cp": "CP99",
+                  "records": [
+                    [
+                      "THPT-G10-B26-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B26-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B26-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B26-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B27-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B27-P01",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-B27-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B27-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B27-P05",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Read remaining changed/unverified fields of shared IDs; notation acceptable, no source changes. Previously checked identical fields inherited."
+                },
+                {
+                  "shard": "items/g11-chi.json",
+                  "blob": "21f6f305d2df47bf9c20db221f1d48a6ea0bc985",
+                  "baseline_commit": "623959fb94a5b88a11f90240e3b49508269c5f3c",
+                  "baseline_blob": "01a2968659616ae9928e80188f9f33d2eee7a1c3",
+                  "evidence_cp": "CP100",
+                  "records": [
+                    [
+                      "THPT-G11-B01-C01",
+                      29,
+                      66
+                    ],
+                    [
+                      "THPT-G11-B01-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B01-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B01-P02",
+                      77,
+                      18
+                    ],
+                    [
+                      "THPT-G11-B01-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B01-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B02-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B02-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B02-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B02-P02",
+                      20,
+                      75
+                    ],
+                    [
+                      "THPT-G11-B02-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B02-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B02-P05",
+                      77,
+                      18
+                    ],
+                    [
+                      "THPT-G11-B02-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B01-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B02-P07",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G11-B03-C01",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G11-B03-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B03-C03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B03-C04",
+                      76,
+                      19
+                    ],
+                    [
+                      "THPT-G11-B03-P01",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G11-B03-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B03-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B03-P04",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G11-B03-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B03-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B03-P07",
+                      77,
+                      18
+                    ],
+                    [
+                      "THPT-G11-B03-P08",
+                      77,
+                      18
+                    ],
+                    [
+                      "THPT-G11-B04-C01",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G11-B04-C02",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G11-B04-C03",
+                      68,
+                      27
+                    ],
+                    [
+                      "THPT-G11-B04-C04",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G11-B04-P01",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G11-B04-P02",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G11-B04-P03",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G11-B04-P04",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G11-B04-P05",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G11-B04-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B04-P07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B04-P08",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G11-B04-P09",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G11-B04-P10",
+                      29,
+                      66
+                    ]
+                  ],
+                  "findings": "Read remaining unverified/changed fields of 42 shared IDs; normalized slash fractions in 32 option lists (including consistency with existing typeset correct answers), no mathematical change. Exact readback verified 32 options fields only; all IDs, correct options, answer keys and interaction unchanged. Data commit 3dc7acc2fd1695bde01121d272f7f93d4b101dd9."
                 }
               ],
-              "completed_interactive": 155,
+              "completed_interactive": 231,
               "completed_written": 0,
-              "remaining_interactive": 660,
+              "remaining_interactive": 584,
               "remaining_written": 160,
               "counts": {
-                "ids": 155,
-                "inherited": 569,
-                "newly_checked": 360
+                "ids": 231,
+                "inherited": 901,
+                "newly_checked": 484
               },
-              "next": "Next three-chapter group: shared IDs in items/g10-chviii.json, items/g10-chix.json, items/g11-chi.json; skip verified fields. Written still pending in 08.1."
+              "next": "Next three-chapter group: shared IDs in items/g11-chii.json, items/g11-chiii.json, items/g11-chiv.json; skip verified fields. Written still pending in 08.1."
             }
           },
           {
