@@ -2740,5 +2740,62 @@
         "text": "\\(A=B,\\ B\\ge0\\); \\(A^2=B^2\\)."
       }
     ]
+  },
+  {
+    "item_id": "THPT-G10-B15-D6-01",
+    "content_version": "SGK-G10-B15-D6-01-20261128",
+    "stem": "Cho hàm số \\(f(x)=\\sqrt{x+1}\\) trên tập số thực. Xét \\(A(3;2)\\), \\(B(3;4)\\), \\(C(-2;1)\\). Điểm nào thuộc đồ thị của hàm số? Chọn phương án đúng.",
+    "answer_key": "Chỉ A thuộc đồ thị.",
+    "worked_solution": "Tập xác định là \\(D=[-1;+\\infty)\\). Vì \\(3\\in D\\) và \\(f(3)=\\sqrt{4}=2\\), A thuộc đồ thị; B không thuộc vì \\(4\\ne2\\). Hoành độ \\(-2\\notin D\\), nên C không thuộc đồ thị, không cần tính căn của số âm. Kết luận chỉ A thuộc đồ thị.",
+    "skill_ids": [
+      "FUNCTION_GRAPH_MEMBERSHIP",
+      "FUNCTION_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Kiểm hoành độ có thuộc tập xác định trước, sau đó mới thay vào hàm và so tung độ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "ee38fdfeddc78a22a527a6a7449347f86eeee422",
+      "heading": "Bài 15 §2.2 — Quy tắc kiểm tra điểm thuộc đồ thị",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-vi/bai-15.md",
+        "blob": "ee38fdfeddc78a22a527a6a7449347f86eeee422",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "origin": "AUTHOR_ORIGINAL_PRACTICE_VARIANT",
+      "scope": "B15_OUT_03"
+    },
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "exercise_type": "INTERACTIVE",
+    "remediation": "Nếu chọn B vì chỉ kiểm hoành độ, hãy so tung độ với \\(f(3)\\). Nếu chọn C, kiểm tập xác định trước. Ôn Toán 10 Bài 15 §2.2; luyện THPT-G10-B15-C02 để củng cố điều kiện căn thức.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A và B."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ A."
+      },
+      {
+        "id": "C",
+        "text": "A và C."
+      },
+      {
+        "id": "D",
+        "text": "B và C."
+      }
+    ]
   }
 ]
