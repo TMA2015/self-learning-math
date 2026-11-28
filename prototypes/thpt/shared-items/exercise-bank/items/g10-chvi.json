@@ -2677,5 +2677,68 @@
         "text": "\\(h+5=13; h=8\\) m."
       }
     ]
+  },
+  {
+    "item_id": "THPT-G10-B18-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G10-B18-L1-01",
+    "stem": "Với \\(A(x),B(x)\\) là các biểu thức thực tại điểm xét, đâu là điều kiện tương đương của \\(\\sqrt{A(x)}=B(x)\\) và \\(\\sqrt{A(x)}=\\sqrt{B(x)}\\), theo thứ tự?",
+    "answer_key": "\\(A=B^2,\\ B\\ge0\\); \\(A=B,\\ A\\ge0\\).",
+    "worked_solution": "Căn bậc hai luôn không âm. Dạng thứ nhất cần \\(B\\ge0\\) và \\(A=B^2\\) (suy ra \\(A\\ge0\\)). Dạng thứ hai cần hai biểu thức dưới căn bằng nhau và không âm. Các điều kiện này cũng đủ để suy ra phương trình gốc.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "RADICAL_CONDITION",
+      "RADICAL_TWO_SIDES"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ miền xác định và dấu của căn bậc hai."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/THPT_G10_B18_SGK_SBT_DIRECT_VISUAL_AUDIT_20261027.md",
+        "blob": "9935fbff71de560b9b3a52e2ed73b518319c122b",
+        "commit": "52725400b199b2a01c54a4cfa8a6865d65516a10"
+      },
+      "related_item_ids": [
+        "THPT-G10-B18-C01",
+        "THPT-G10-B18-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ bình phương mà bỏ điều kiện, ôn Bài 18 hai dạng phương trình chứa căn rồi luyện câu giải phương trình có vế phải và câu có căn ở hai vế.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A=B^2\\); \\(A=B\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(A=B^2,\\ B\\le0\\); \\(A=B,\\ A\\ge0\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(A=B^2,\\ B\\ge0\\); \\(A=B,\\ A\\ge0\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(A=B,\\ B\\ge0\\); \\(A^2=B^2\\)."
+      }
+    ]
   }
 ]
