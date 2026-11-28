@@ -5,7 +5,12 @@
     "order": 1,
     "item_id": "THPT-G10-B12-C01",
     "skill_id": "G10-B12-ABS_ERROR",
-    "outcome_id": "G10-B12-ABS_ERROR"
+    "outcome_id": "G10-B12-ABS_ERROR",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -13,7 +18,12 @@
     "order": 2,
     "item_id": "THPT-G10-B12-C02",
     "skill_id": "G10-B12-ABS_ERROR",
-    "outcome_id": "G10-B12-ABS_ERROR"
+    "outcome_id": "G10-B12-ABS_ERROR",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -21,7 +31,12 @@
     "order": 3,
     "item_id": "THPT-G10-B12-P01",
     "skill_id": "G10-B12-REL_ERROR",
-    "outcome_id": "G10-B12-REL_ERROR"
+    "outcome_id": "G10-B12-REL_ERROR",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -29,7 +44,12 @@
     "order": 4,
     "item_id": "THPT-G10-B12-P02",
     "skill_id": "G10-B12-ROUNDING",
-    "outcome_id": "G10-B12-ROUNDING"
+    "outcome_id": "G10-B12-ROUNDING",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -37,7 +57,12 @@
     "order": 5,
     "item_id": "THPT-G10-B12-P03",
     "skill_id": "G10-B12-REL_ERROR",
-    "outcome_id": "G10-B12-REL_ERROR"
+    "outcome_id": "G10-B12-REL_ERROR",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -45,7 +70,12 @@
     "order": 6,
     "item_id": "THPT-G10-B12-P04",
     "skill_id": "G10-B12-APPROX_CONCEPT",
-    "outcome_id": "G10-B12-APPROX_CONCEPT"
+    "outcome_id": "G10-B12-APPROX_CONCEPT",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -53,7 +83,12 @@
     "order": 7,
     "item_id": "THPT-G10-B12-P05",
     "skill_id": "G10-B12-ROUNDING",
-    "outcome_id": "G10-B12-ROUNDING"
+    "outcome_id": "G10-B12-ROUNDING",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -61,7 +96,12 @@
     "order": 8,
     "item_id": "THPT-G10-B12-P06",
     "skill_id": "G10-B12-REL_ERROR",
-    "outcome_id": "G10-B12-REL_ERROR"
+    "outcome_id": "G10-B12-REL_ERROR",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -69,7 +109,12 @@
     "order": 9,
     "item_id": "THPT-G10-B13-C01",
     "skill_id": "G10-B13-MEAN",
-    "outcome_id": "G10-B13-MEAN"
+    "outcome_id": "G10-B13-MEAN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -77,7 +122,12 @@
     "order": 10,
     "item_id": "THPT-G10-B13-C02",
     "skill_id": "G10-B13-MEDIAN",
-    "outcome_id": "G10-B13-MEDIAN"
+    "outcome_id": "G10-B13-MEDIAN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -85,7 +135,12 @@
     "order": 11,
     "item_id": "THPT-G10-B13-P01",
     "skill_id": "G10-B13-MEAN",
-    "outcome_id": "G10-B13-MEAN"
+    "outcome_id": "G10-B13-MEAN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -93,7 +148,12 @@
     "order": 12,
     "item_id": "THPT-G10-B13-P02",
     "skill_id": "G10-B13-QUARTILES",
-    "outcome_id": "G10-B13-QUARTILES"
+    "outcome_id": "G10-B13-QUARTILES",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -101,7 +161,12 @@
     "order": 13,
     "item_id": "THPT-G10-B13-P03",
     "skill_id": "G10-B13-MODE",
-    "outcome_id": "G10-B13-MODE"
+    "outcome_id": "G10-B13-MODE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -109,7 +174,12 @@
     "order": 14,
     "item_id": "THPT-G10-B13-P04",
     "skill_id": "G10-B13-INTERPRETATION",
-    "outcome_id": "G10-B13-INTERPRETATION"
+    "outcome_id": "G10-B13-INTERPRETATION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -117,7 +187,12 @@
     "order": 15,
     "item_id": "THPT-G10-B13-P05",
     "skill_id": "G10-B13-QUARTILES",
-    "outcome_id": "G10-B13-QUARTILES"
+    "outcome_id": "G10-B13-QUARTILES",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -125,7 +200,12 @@
     "order": 16,
     "item_id": "THPT-G10-B13-P06",
     "skill_id": "G10-B13-INTERPRETATION",
-    "outcome_id": "G10-B13-INTERPRETATION"
+    "outcome_id": "G10-B13-INTERPRETATION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -133,7 +213,12 @@
     "order": 17,
     "item_id": "THPT-G10-B14-C01",
     "skill_id": "G10-B14-RANGE_IQR",
-    "outcome_id": "G10-B14-RANGE_IQR"
+    "outcome_id": "G10-B14-RANGE_IQR",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -141,7 +226,12 @@
     "order": 18,
     "item_id": "THPT-G10-B14-C02",
     "skill_id": "G10-B14-VARIANCE",
-    "outcome_id": "G10-B14-VARIANCE"
+    "outcome_id": "G10-B14-VARIANCE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -149,7 +239,12 @@
     "order": 19,
     "item_id": "THPT-G10-B14-P01",
     "skill_id": "G10-B14-RANGE_IQR",
-    "outcome_id": "G10-B14-RANGE_IQR"
+    "outcome_id": "G10-B14-RANGE_IQR",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -157,7 +252,12 @@
     "order": 20,
     "item_id": "THPT-G10-B14-P02",
     "skill_id": "G10-B14-STDDEV",
-    "outcome_id": "G10-B14-STDDEV"
+    "outcome_id": "G10-B14-STDDEV",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -165,7 +265,12 @@
     "order": 21,
     "item_id": "THPT-G10-B14-P03",
     "skill_id": "G10-B14-OUTLIERS",
-    "outcome_id": "G10-B14-OUTLIERS"
+    "outcome_id": "G10-B14-OUTLIERS",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -173,7 +278,12 @@
     "order": 22,
     "item_id": "THPT-G10-B14-P04",
     "skill_id": "G10-B14-COMPARISON",
-    "outcome_id": "G10-B14-COMPARISON"
+    "outcome_id": "G10-B14-COMPARISON",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -181,7 +291,12 @@
     "order": 23,
     "item_id": "THPT-G10-B14-P05",
     "skill_id": "G10-B14-STDDEV",
-    "outcome_id": "G10-B14-STDDEV"
+    "outcome_id": "G10-B14-STDDEV",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -189,7 +304,12 @@
     "order": 24,
     "item_id": "THPT-G10-B14-P06",
     "skill_id": "G10-B14-VARIANCE",
-    "outcome_id": "G10-B14-VARIANCE"
+    "outcome_id": "G10-B14-VARIANCE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -218,7 +338,12 @@
     "order": 28,
     "item_id": "THPT-G10-TOPSTAT-ADD01",
     "skill_id": "G10-B12-APPROX_CONCEPT",
-    "outcome_id": "G10-B12-APPROX_CONCEPT"
+    "outcome_id": "G10-B12-APPROX_CONCEPT",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -226,7 +351,12 @@
     "order": 29,
     "item_id": "THPT-G10-TOPSTAT-ADD02",
     "skill_id": "G10-B13-MODE",
-    "outcome_id": "G10-B13-MODE"
+    "outcome_id": "G10-B13-MODE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -234,7 +364,12 @@
     "order": 30,
     "item_id": "THPT-G10-TOPSTAT-ADD03",
     "skill_id": "G10-B13-MEDIAN",
-    "outcome_id": "G10-B13-MEDIAN"
+    "outcome_id": "G10-B13-MEDIAN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -242,7 +377,12 @@
     "order": 31,
     "item_id": "THPT-G10-TOPSTAT-ADD04",
     "skill_id": "G10-B14-OUTLIERS",
-    "outcome_id": "G10-B14-OUTLIERS"
+    "outcome_id": "G10-B14-OUTLIERS",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -250,7 +390,12 @@
     "order": 32,
     "item_id": "THPT-G10-TOPSTAT-ADD05",
     "skill_id": "G10-B14-COMPARISON",
-    "outcome_id": "G10-B14-COMPARISON"
+    "outcome_id": "G10-B14-COMPARISON",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -258,7 +403,12 @@
     "order": 33,
     "item_id": "THPT-G11-B08-C01",
     "skill_id": "G11-B08-GROUPED-DEFINITION",
-    "outcome_id": "G11-B08-GROUPED-DEFINITION"
+    "outcome_id": "G11-B08-GROUPED-DEFINITION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -266,7 +416,12 @@
     "order": 34,
     "item_id": "THPT-G11-B08-C02",
     "skill_id": "G11-B08-CLASS-BOUNDARIES",
-    "outcome_id": "G11-B08-CLASS-BOUNDARIES"
+    "outcome_id": "G11-B08-CLASS-BOUNDARIES",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -274,7 +429,12 @@
     "order": 35,
     "item_id": "THPT-G11-B08-C03",
     "skill_id": "G11-B08-GROUP-WIDTH",
-    "outcome_id": "G11-B08-GROUP-WIDTH"
+    "outcome_id": "G11-B08-GROUP-WIDTH",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -282,7 +442,12 @@
     "order": 36,
     "item_id": "THPT-G11-B08-C04",
     "skill_id": "G11-B08-FREQUENCY-TABLE",
-    "outcome_id": "G11-B08-FREQUENCY-TABLE"
+    "outcome_id": "G11-B08-FREQUENCY-TABLE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -290,7 +455,12 @@
     "order": 37,
     "item_id": "THPT-G11-B08-C05",
     "skill_id": "G11-B08-INTERPRETATION",
-    "outcome_id": "G11-B08-INTERPRETATION"
+    "outcome_id": "G11-B08-INTERPRETATION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -298,7 +468,12 @@
     "order": 38,
     "item_id": "THPT-G11-B08-P01",
     "skill_id": "G11-B08-CLASS-BOUNDARIES",
-    "outcome_id": "G11-B08-CLASS-BOUNDARIES"
+    "outcome_id": "G11-B08-CLASS-BOUNDARIES",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -306,7 +481,12 @@
     "order": 39,
     "item_id": "THPT-G11-B08-P02",
     "skill_id": "G11-B08-GROUP-WIDTH",
-    "outcome_id": "G11-B08-GROUP-WIDTH"
+    "outcome_id": "G11-B08-GROUP-WIDTH",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -314,7 +494,12 @@
     "order": 40,
     "item_id": "THPT-G11-B08-P03",
     "skill_id": "G11-B08-FREQUENCY-TABLE",
-    "outcome_id": "G11-B08-FREQUENCY-TABLE"
+    "outcome_id": "G11-B08-FREQUENCY-TABLE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -322,7 +507,12 @@
     "order": 41,
     "item_id": "THPT-G11-B08-P04",
     "skill_id": "G11-B08-INTERPRETATION",
-    "outcome_id": "G11-B08-INTERPRETATION"
+    "outcome_id": "G11-B08-INTERPRETATION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -330,7 +520,12 @@
     "order": 42,
     "item_id": "THPT-G11-B08-P05",
     "skill_id": "G11-B08-FREQUENCY-TABLE",
-    "outcome_id": "G11-B08-FREQUENCY-TABLE"
+    "outcome_id": "G11-B08-FREQUENCY-TABLE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -338,7 +533,12 @@
     "order": 43,
     "item_id": "THPT-G11-B08-P06",
     "skill_id": "G11-B08-INTERPRETATION",
-    "outcome_id": "G11-B08-INTERPRETATION"
+    "outcome_id": "G11-B08-INTERPRETATION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -346,7 +546,12 @@
     "order": 44,
     "item_id": "THPT-G11-B08-P07",
     "skill_id": "G11-B08-INTERPRETATION",
-    "outcome_id": "G11-B08-INTERPRETATION"
+    "outcome_id": "G11-B08-INTERPRETATION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -354,7 +559,12 @@
     "order": 45,
     "item_id": "THPT-G11-B08-P08",
     "skill_id": "G11-B08-GROUPED-DEFINITION",
-    "outcome_id": "G11-B08-GROUPED-DEFINITION"
+    "outcome_id": "G11-B08-GROUPED-DEFINITION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -362,7 +572,12 @@
     "order": 46,
     "item_id": "THPT-G11-B09-C01",
     "skill_id": "G11-B09-REPRESENTATIVE",
-    "outcome_id": "G11-B09-REPRESENTATIVE"
+    "outcome_id": "G11-B09-REPRESENTATIVE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -370,7 +585,12 @@
     "order": 47,
     "item_id": "THPT-G11-B09-C02",
     "skill_id": "G11-B09-GROUPED-MEAN",
-    "outcome_id": "G11-B09-GROUPED-MEAN"
+    "outcome_id": "G11-B09-GROUPED-MEAN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -378,7 +598,12 @@
     "order": 48,
     "item_id": "THPT-G11-B09-C03",
     "skill_id": "G11-B09-CUMULATIVE",
-    "outcome_id": "G11-B09-CUMULATIVE"
+    "outcome_id": "G11-B09-CUMULATIVE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -386,7 +611,12 @@
     "order": 49,
     "item_id": "THPT-G11-B09-C04",
     "skill_id": "G11-B09-GROUPED-MEDIAN",
-    "outcome_id": "G11-B09-GROUPED-MEDIAN"
+    "outcome_id": "G11-B09-GROUPED-MEDIAN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -394,7 +624,12 @@
     "order": 50,
     "item_id": "THPT-G11-B09-C05",
     "skill_id": "G11-B09-MODE-CONDITIONS",
-    "outcome_id": "G11-B09-MODE-CONDITIONS"
+    "outcome_id": "G11-B09-MODE-CONDITIONS",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -402,7 +637,12 @@
     "order": 51,
     "item_id": "THPT-G11-B09-P01",
     "skill_id": "G11-B09-GROUPED-MEAN",
-    "outcome_id": "G11-B09-GROUPED-MEAN"
+    "outcome_id": "G11-B09-GROUPED-MEAN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -410,7 +650,12 @@
     "order": 52,
     "item_id": "THPT-G11-B09-P02",
     "skill_id": "G11-B09-GROUPED-MEDIAN",
-    "outcome_id": "G11-B09-GROUPED-MEDIAN"
+    "outcome_id": "G11-B09-GROUPED-MEDIAN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -418,7 +663,12 @@
     "order": 53,
     "item_id": "THPT-G11-B09-P03",
     "skill_id": "G11-B09-GROUPED-QUARTILES",
-    "outcome_id": "G11-B09-GROUPED-QUARTILES"
+    "outcome_id": "G11-B09-GROUPED-QUARTILES",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -426,7 +676,12 @@
     "order": 54,
     "item_id": "THPT-G11-B09-P04",
     "skill_id": "G11-B09-GROUPED-MODE",
-    "outcome_id": "G11-B09-GROUPED-MODE"
+    "outcome_id": "G11-B09-GROUPED-MODE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -434,7 +689,12 @@
     "order": 55,
     "item_id": "THPT-G11-B09-P05",
     "skill_id": "G11-B09-GROUPED-MEAN",
-    "outcome_id": "G11-B09-GROUPED-MEAN"
+    "outcome_id": "G11-B09-GROUPED-MEAN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -442,7 +702,12 @@
     "order": 56,
     "item_id": "THPT-G11-B09-P06",
     "skill_id": "G11-B09-CUMULATIVE",
-    "outcome_id": "G11-B09-CUMULATIVE"
+    "outcome_id": "G11-B09-CUMULATIVE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -450,7 +715,12 @@
     "order": 57,
     "item_id": "THPT-G11-B09-P07",
     "skill_id": "G11-B09-GROUPED-MEDIAN",
-    "outcome_id": "G11-B09-GROUPED-MEDIAN"
+    "outcome_id": "G11-B09-GROUPED-MEDIAN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -458,7 +728,12 @@
     "order": 58,
     "item_id": "THPT-G11-B09-P08",
     "skill_id": "G11-B09-GROUPED-QUARTILES",
-    "outcome_id": "G11-B09-GROUPED-QUARTILES"
+    "outcome_id": "G11-B09-GROUPED-QUARTILES",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -466,7 +741,12 @@
     "order": 59,
     "item_id": "THPT-G11-B09-P09",
     "skill_id": "G11-B09-MODE-CONDITIONS",
-    "outcome_id": "G11-B09-MODE-CONDITIONS"
+    "outcome_id": "G11-B09-MODE-CONDITIONS",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -474,7 +754,12 @@
     "order": 60,
     "item_id": "THPT-G11-B09-P10",
     "skill_id": "G11-B09-INTERPRETATION",
-    "outcome_id": "G11-B09-INTERPRETATION"
+    "outcome_id": "G11-B09-INTERPRETATION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -510,7 +795,12 @@
     "order": 65,
     "item_id": "THPT-G11-TOPSTAT-ADD06",
     "skill_id": "G11-B09-REPRESENTATIVE",
-    "outcome_id": "G11-B09-REPRESENTATIVE"
+    "outcome_id": "G11-B09-REPRESENTATIVE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -518,7 +808,12 @@
     "order": 66,
     "item_id": "THPT-G11-TOPSTAT-ADD07",
     "skill_id": "G11-B09-INTERPRETATION",
-    "outcome_id": "G11-B09-INTERPRETATION"
+    "outcome_id": "G11-B09-INTERPRETATION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -526,7 +821,12 @@
     "order": 67,
     "item_id": "THPT-G12-B09-C01",
     "skill_id": "G12-CHIII-B09-O01",
-    "outcome_id": "G12-CHIII-B09-O01"
+    "outcome_id": "G12-CHIII-B09-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -534,7 +834,12 @@
     "order": 68,
     "item_id": "THPT-G12-B09-P01",
     "skill_id": "G12-CHIII-B09-O01",
-    "outcome_id": "G12-CHIII-B09-O01"
+    "outcome_id": "G12-CHIII-B09-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -542,7 +847,12 @@
     "order": 69,
     "item_id": "THPT-G12-B09-P02",
     "skill_id": "G12-CHIII-B09-O01",
-    "outcome_id": "G12-CHIII-B09-O01"
+    "outcome_id": "G12-CHIII-B09-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -557,7 +867,12 @@
     "order": 71,
     "item_id": "THPT-G12-B09-C02",
     "skill_id": "G12-CHIII-B09-O02",
-    "outcome_id": "G12-CHIII-B09-O02"
+    "outcome_id": "G12-CHIII-B09-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -565,7 +880,12 @@
     "order": 72,
     "item_id": "THPT-G12-B09-P03",
     "skill_id": "G12-CHIII-B09-O02",
-    "outcome_id": "G12-CHIII-B09-O02"
+    "outcome_id": "G12-CHIII-B09-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -573,7 +893,12 @@
     "order": 73,
     "item_id": "THPT-G12-B09-P04",
     "skill_id": "G12-CHIII-B09-O02",
-    "outcome_id": "G12-CHIII-B09-O02"
+    "outcome_id": "G12-CHIII-B09-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -588,7 +913,12 @@
     "order": 75,
     "item_id": "THPT-G12-B09-C03",
     "skill_id": "G12-CHIII-B09-O03",
-    "outcome_id": "G12-CHIII-B09-O03"
+    "outcome_id": "G12-CHIII-B09-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -596,7 +926,12 @@
     "order": 76,
     "item_id": "THPT-G12-B09-P05",
     "skill_id": "G12-CHIII-B09-O03",
-    "outcome_id": "G12-CHIII-B09-O03"
+    "outcome_id": "G12-CHIII-B09-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -604,7 +939,12 @@
     "order": 77,
     "item_id": "THPT-G12-B09-P06",
     "skill_id": "G12-CHIII-B09-O03",
-    "outcome_id": "G12-CHIII-B09-O03"
+    "outcome_id": "G12-CHIII-B09-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -619,7 +959,12 @@
     "order": 79,
     "item_id": "THPT-G12-B09-C04",
     "skill_id": "G12-CHIII-B09-O04",
-    "outcome_id": "G12-CHIII-B09-O04"
+    "outcome_id": "G12-CHIII-B09-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -627,7 +972,12 @@
     "order": 80,
     "item_id": "THPT-G12-B09-P07",
     "skill_id": "G12-CHIII-B09-O04",
-    "outcome_id": "G12-CHIII-B09-O04"
+    "outcome_id": "G12-CHIII-B09-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -635,7 +985,12 @@
     "order": 81,
     "item_id": "THPT-G12-B09-P08",
     "skill_id": "G12-CHIII-B09-O04",
-    "outcome_id": "G12-CHIII-B09-O04"
+    "outcome_id": "G12-CHIII-B09-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -650,7 +1005,12 @@
     "order": 83,
     "item_id": "THPT-G12-B09-C05",
     "skill_id": "G12-CHIII-B09-O05",
-    "outcome_id": "G12-CHIII-B09-O05"
+    "outcome_id": "G12-CHIII-B09-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -658,7 +1018,12 @@
     "order": 84,
     "item_id": "THPT-G12-B09-P09",
     "skill_id": "G12-CHIII-B09-O05",
-    "outcome_id": "G12-CHIII-B09-O05"
+    "outcome_id": "G12-CHIII-B09-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -666,7 +1031,12 @@
     "order": 85,
     "item_id": "THPT-G12-B09-P10",
     "skill_id": "G12-CHIII-B09-O05",
-    "outcome_id": "G12-CHIII-B09-O05"
+    "outcome_id": "G12-CHIII-B09-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -681,7 +1051,12 @@
     "order": 87,
     "item_id": "THPT-G12-B09-C06",
     "skill_id": "G12-CHIII-B09-O06",
-    "outcome_id": "G12-CHIII-B09-O06"
+    "outcome_id": "G12-CHIII-B09-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -689,7 +1064,12 @@
     "order": 88,
     "item_id": "THPT-G12-B09-P11",
     "skill_id": "G12-CHIII-B09-O06",
-    "outcome_id": "G12-CHIII-B09-O06"
+    "outcome_id": "G12-CHIII-B09-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -697,7 +1077,12 @@
     "order": 89,
     "item_id": "THPT-G12-B09-P12",
     "skill_id": "G12-CHIII-B09-O06",
-    "outcome_id": "G12-CHIII-B09-O06"
+    "outcome_id": "G12-CHIII-B09-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -712,7 +1097,12 @@
     "order": 91,
     "item_id": "THPT-G12-B10-C01",
     "skill_id": "G12-CHIII-B10-O01",
-    "outcome_id": "G12-CHIII-B10-O01"
+    "outcome_id": "G12-CHIII-B10-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -720,7 +1110,12 @@
     "order": 92,
     "item_id": "THPT-G12-B10-P01",
     "skill_id": "G12-CHIII-B10-O01",
-    "outcome_id": "G12-CHIII-B10-O01"
+    "outcome_id": "G12-CHIII-B10-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -728,7 +1123,12 @@
     "order": 93,
     "item_id": "THPT-G12-B10-P02",
     "skill_id": "G12-CHIII-B10-O01",
-    "outcome_id": "G12-CHIII-B10-O01"
+    "outcome_id": "G12-CHIII-B10-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -743,7 +1143,12 @@
     "order": 95,
     "item_id": "THPT-G12-B10-C02",
     "skill_id": "G12-CHIII-B10-O02",
-    "outcome_id": "G12-CHIII-B10-O02"
+    "outcome_id": "G12-CHIII-B10-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -751,7 +1156,12 @@
     "order": 96,
     "item_id": "THPT-G12-B10-P03",
     "skill_id": "G12-CHIII-B10-O02",
-    "outcome_id": "G12-CHIII-B10-O02"
+    "outcome_id": "G12-CHIII-B10-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -759,7 +1169,12 @@
     "order": 97,
     "item_id": "THPT-G12-B10-P04",
     "skill_id": "G12-CHIII-B10-O02",
-    "outcome_id": "G12-CHIII-B10-O02"
+    "outcome_id": "G12-CHIII-B10-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -774,7 +1189,12 @@
     "order": 99,
     "item_id": "THPT-G12-B10-C03",
     "skill_id": "G12-CHIII-B10-O03",
-    "outcome_id": "G12-CHIII-B10-O03"
+    "outcome_id": "G12-CHIII-B10-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -782,7 +1202,12 @@
     "order": 100,
     "item_id": "THPT-G12-B10-P05",
     "skill_id": "G12-CHIII-B10-O03",
-    "outcome_id": "G12-CHIII-B10-O03"
+    "outcome_id": "G12-CHIII-B10-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -790,7 +1215,12 @@
     "order": 101,
     "item_id": "THPT-G12-B10-P06",
     "skill_id": "G12-CHIII-B10-O03",
-    "outcome_id": "G12-CHIII-B10-O03"
+    "outcome_id": "G12-CHIII-B10-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -805,7 +1235,12 @@
     "order": 103,
     "item_id": "THPT-G12-B10-C04",
     "skill_id": "G12-CHIII-B10-O04",
-    "outcome_id": "G12-CHIII-B10-O04"
+    "outcome_id": "G12-CHIII-B10-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -813,7 +1248,12 @@
     "order": 104,
     "item_id": "THPT-G12-B10-P07",
     "skill_id": "G12-CHIII-B10-O04",
-    "outcome_id": "G12-CHIII-B10-O04"
+    "outcome_id": "G12-CHIII-B10-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -821,7 +1261,12 @@
     "order": 105,
     "item_id": "THPT-G12-B10-P08",
     "skill_id": "G12-CHIII-B10-O04",
-    "outcome_id": "G12-CHIII-B10-O04"
+    "outcome_id": "G12-CHIII-B10-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -836,7 +1281,12 @@
     "order": 107,
     "item_id": "THPT-G12-B10-C05",
     "skill_id": "G12-CHIII-B10-O05",
-    "outcome_id": "G12-CHIII-B10-O05"
+    "outcome_id": "G12-CHIII-B10-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -844,7 +1294,12 @@
     "order": 108,
     "item_id": "THPT-G12-B10-P09",
     "skill_id": "G12-CHIII-B10-O05",
-    "outcome_id": "G12-CHIII-B10-O05"
+    "outcome_id": "G12-CHIII-B10-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -852,7 +1307,12 @@
     "order": 109,
     "item_id": "THPT-G12-B10-P10",
     "skill_id": "G12-CHIII-B10-O05",
-    "outcome_id": "G12-CHIII-B10-O05"
+    "outcome_id": "G12-CHIII-B10-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -867,7 +1327,12 @@
     "order": 111,
     "item_id": "THPT-G12-B10-C06",
     "skill_id": "G12-CHIII-B10-O06",
-    "outcome_id": "G12-CHIII-B10-O06"
+    "outcome_id": "G12-CHIII-B10-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -875,7 +1340,12 @@
     "order": 112,
     "item_id": "THPT-G12-B10-P11",
     "skill_id": "G12-CHIII-B10-O06",
-    "outcome_id": "G12-CHIII-B10-O06"
+    "outcome_id": "G12-CHIII-B10-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -883,7 +1353,12 @@
     "order": 113,
     "item_id": "THPT-G12-B10-P12",
     "skill_id": "G12-CHIII-B10-O06",
-    "outcome_id": "G12-CHIII-B10-O06"
+    "outcome_id": "G12-CHIII-B10-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true
+    }
   },
   {
     "collection": "TOPIC:CD22:PRACTICE",
@@ -897,63 +1372,135 @@
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 1,
     "item_id": "THPT-G10-B12-P01",
-    "outcome_id": "G10-B12-REL_ERROR"
+    "outcome_id": "G10-B12-REL_ERROR",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 2,
     "item_id": "THPT-G10-B13-P03",
-    "outcome_id": "G10-B13-MODE"
+    "outcome_id": "G10-B13-MODE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 3,
     "item_id": "THPT-G10-B14-P05",
-    "outcome_id": "G10-B14-STDDEV"
+    "outcome_id": "G10-B14-STDDEV",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 4,
     "item_id": "THPT-G11-B08-P03",
-    "outcome_id": "G11-B08-FREQUENCY-TABLE"
+    "outcome_id": "G11-B08-FREQUENCY-TABLE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 5,
     "item_id": "THPT-G11-B09-P02",
-    "outcome_id": "G11-B09-GROUPED-MEDIAN"
+    "outcome_id": "G11-B09-GROUPED-MEDIAN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 6,
     "item_id": "THPT-G11-B09-P04",
-    "outcome_id": "G11-B09-GROUPED-MODE"
+    "outcome_id": "G11-B09-GROUPED-MODE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 7,
     "item_id": "THPT-G12-B09-P04",
-    "outcome_id": "G12-CHIII-B09-O02"
+    "outcome_id": "G12-CHIII-B09-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 8,
     "item_id": "THPT-G12-B10-P04",
-    "outcome_id": "G12-CHIII-B10-O02"
+    "outcome_id": "G12-CHIII-B10-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
     "role": "PUBLIC_REPLAY_ONLY",
     "order": 9,
     "item_id": "THPT-G12-B10-P08",
-    "outcome_id": "G12-CHIII-B10-O04"
+    "outcome_id": "G12-CHIII-B10-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -961,7 +1508,15 @@
     "order": 10,
     "item_id": "THPT-G10-B12-C01",
     "outcome_id": "G10-B12-ABS_ERROR",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -969,7 +1524,15 @@
     "order": 11,
     "item_id": "THPT-G10-B12-P02",
     "outcome_id": "G10-B12-ROUNDING",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -977,7 +1540,15 @@
     "order": 12,
     "item_id": "THPT-G10-B12-P04",
     "outcome_id": "G10-B12-APPROX_CONCEPT",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -985,7 +1556,15 @@
     "order": 13,
     "item_id": "THPT-G10-B13-P01",
     "outcome_id": "G10-B13-MEAN",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -993,7 +1572,15 @@
     "order": 14,
     "item_id": "THPT-G10-B13-C02",
     "outcome_id": "G10-B13-MEDIAN",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1001,7 +1588,15 @@
     "order": 15,
     "item_id": "THPT-G10-B13-P02",
     "outcome_id": "G10-B13-QUARTILES",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1009,7 +1604,15 @@
     "order": 16,
     "item_id": "THPT-G10-B13-P04",
     "outcome_id": "G10-B13-INTERPRETATION",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1017,7 +1620,15 @@
     "order": 17,
     "item_id": "THPT-G10-B14-P01",
     "outcome_id": "G10-B14-RANGE_IQR",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1025,7 +1636,15 @@
     "order": 18,
     "item_id": "THPT-G10-B14-P06",
     "outcome_id": "G10-B14-VARIANCE",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1033,7 +1652,15 @@
     "order": 19,
     "item_id": "THPT-G10-B14-P03",
     "outcome_id": "G10-B14-OUTLIERS",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1041,7 +1668,15 @@
     "order": 20,
     "item_id": "THPT-G10-B14-P04",
     "outcome_id": "G10-B14-COMPARISON",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1049,7 +1684,15 @@
     "order": 21,
     "item_id": "THPT-G11-B08-P08",
     "outcome_id": "G11-B08-GROUPED-DEFINITION",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1057,7 +1700,15 @@
     "order": 22,
     "item_id": "THPT-G11-B08-P01",
     "outcome_id": "G11-B08-CLASS-BOUNDARIES",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1065,7 +1716,15 @@
     "order": 23,
     "item_id": "THPT-G11-B08-P02",
     "outcome_id": "G11-B08-GROUP-WIDTH",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1073,7 +1732,15 @@
     "order": 24,
     "item_id": "THPT-G11-B08-P04",
     "outcome_id": "G11-B08-INTERPRETATION",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1081,7 +1748,15 @@
     "order": 25,
     "item_id": "THPT-G11-B09-C01",
     "outcome_id": "G11-B09-REPRESENTATIVE",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1089,7 +1764,15 @@
     "order": 26,
     "item_id": "THPT-G11-B09-P01",
     "outcome_id": "G11-B09-GROUPED-MEAN",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1097,7 +1780,15 @@
     "order": 27,
     "item_id": "THPT-G11-B09-P06",
     "outcome_id": "G11-B09-CUMULATIVE",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1105,7 +1796,15 @@
     "order": 28,
     "item_id": "THPT-G11-B09-P09",
     "outcome_id": "G11-B09-MODE-CONDITIONS",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1113,7 +1812,15 @@
     "order": 29,
     "item_id": "THPT-G11-B09-P03",
     "outcome_id": "G11-B09-GROUPED-QUARTILES",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1121,7 +1828,15 @@
     "order": 30,
     "item_id": "THPT-G11-B09-P10",
     "outcome_id": "G11-B09-INTERPRETATION",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1129,7 +1844,15 @@
     "order": 31,
     "item_id": "THPT-G12-B09-P01",
     "outcome_id": "G12-CHIII-B09-O01",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1137,7 +1860,15 @@
     "order": 32,
     "item_id": "THPT-G12-B09-P05",
     "outcome_id": "G12-CHIII-B09-O03",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1145,7 +1876,15 @@
     "order": 33,
     "item_id": "THPT-G12-B09-P07",
     "outcome_id": "G12-CHIII-B09-O04",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1153,7 +1892,15 @@
     "order": 34,
     "item_id": "THPT-G12-B09-P09",
     "outcome_id": "G12-CHIII-B09-O05",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1161,7 +1908,15 @@
     "order": 35,
     "item_id": "THPT-G12-B09-P11",
     "outcome_id": "G12-CHIII-B09-O06",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1169,7 +1924,15 @@
     "order": 36,
     "item_id": "THPT-G12-B10-P01",
     "outcome_id": "G12-CHIII-B10-O01",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1177,7 +1940,15 @@
     "order": 37,
     "item_id": "THPT-G12-B10-P05",
     "outcome_id": "G12-CHIII-B10-O03",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1185,7 +1956,15 @@
     "order": 38,
     "item_id": "THPT-G12-B10-P09",
     "outcome_id": "G12-CHIII-B10-O05",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "TOPIC:CD22:SELF_CHECK",
@@ -1193,6 +1972,14 @@
     "order": 39,
     "item_id": "THPT-G12-B10-P11",
     "outcome_id": "G12-CHIII-B10-O06",
-    "candidate_added": true
+    "candidate_added": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   }
 ]
