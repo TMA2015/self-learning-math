@@ -518,7 +518,7 @@
     "options": [
       {
         "id": "A",
-        "text": "BC ≈ 73,6 m; AC ≈ 46,6 m."
+        "text": "\\(BC\\approx73{,}6\\) m; \\(AC\\approx46{,}6\\) m."
       },
       {
         "id": "B",
@@ -526,11 +526,11 @@
       },
       {
         "id": "C",
-        "text": "BC ≈ 45,9 m; AC ≈ 72,5 m."
+        "text": "\\(BC\\approx45{,}9\\) m; \\(AC\\approx72{,}5\\) m."
       },
       {
         "id": "D",
-        "text": "BC ≈ 80,0 m; AC ≈ 80,0 m."
+        "text": "\\(BC\\approx80{,}0\\) m; \\(AC\\approx80{,}0\\) m."
       }
     ]
   },
@@ -583,7 +583,7 @@
       },
       {
         "id": "D",
-        "text": "Không; vì 2 + 6 < 3."
+        "text": "Không; vì \\(2+6<3\\)."
       }
     ]
   },
