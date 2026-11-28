@@ -220,6 +220,12 @@ async function execute(){
      const response=await page.goto(base+route,{waitUntil:"domcontentloaded",timeout:60000});
      assert(response?.ok(),rel+" "+width+" route not rendered");
      if(isLesson){
+     // Avoid clicking a native summary while initial MathJax/fonts move it.
+     // Observe the actual browser transition; never set open or dispatch a fake click.
+     await page.waitForLoadState("load",{timeout:60000});
+     await page.waitForFunction(()=>Boolean(window.MathJax?.startup?.promise),null,{timeout:30000});
+     await page.evaluate(async()=>{await window.MathJax.startup.promise;await document.fonts.ready;});
+     await page.waitForFunction(()=>[...document.querySelectorAll("article .arithmatex")].every(el=>el.querySelector("mjx-container")),null,{timeout:30000});
      const tabs=page.locator(".md-content .tabbed-set").first();
      await tabs.waitFor({state:"visible"});
      const found=(await tabs.locator(".tabbed-labels > label").allInnerTexts()).map(s=>s.trim().replace(/\s+/g," "));
@@ -276,10 +282,20 @@ async function execute(){
         const summary=disclosure.locator("summary").first();
         assert((await summary.innerText()).includes("Đối chiếu"),rel+" "+width+" comparison label");
         assert(!(await disclosure.evaluate(el=>el.open)),rel+" "+width+" comparison prematurely open");
-        await summary.click();
-        assert(await disclosure.evaluate(el=>el.open),rel+" "+width+" comparison failed to open");
-        await summary.click();
-        assert(!(await disclosure.evaluate(el=>el.open)),rel+" "+width+" comparison failed to close");
+        for(const target of [true,false]){
+         await summary.scrollIntoViewIfNeeded();
+         // Native click, then wait for its observed result (including WebKit
+         // asynchronous native details state). No retries, forced clicks,
+         // JS property writes, or relaxed open/close requirement.
+         await summary.click();
+         try{
+          await page.waitForFunction(({el,target})=>el.open===target,
+           {el:await disclosure.elementHandle(),target},{timeout:5000});
+         }catch(error){
+          console.error("COMPARISON_STATE_FAILURE "+JSON.stringify({engine,rel,width,tab:i,target,state:await disclosure.evaluate(el=>({open:el.open,summary:el.querySelector("summary")?.textContent,rect:el.getBoundingClientRect().toJSON()}))}));
+          throw error;
+         }
+        }
        }
       }
       const figs=groups.nth(i).locator("figure img");

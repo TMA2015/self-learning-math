@@ -78,8 +78,23 @@ const eqHref=(actual,expected)=>assert.equal(new URL(actual).pathname,expected);
         ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],grade+" B"+lesson+" exact Golden tabs");
        assert.equal(await tabs.locator(".tabbed-content > .tabbed-block").count(),4,grade+" B"+lesson+" four Golden panels");
      }
-     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
-     assert(overflow<=20,"Horizontal overflow "+grade+" B"+lesson+" @"+viewport.width+" "+overflow);
+     // First-paint/navigation assertions above still run at DOMContentLoaded.
+     // Measure final learner layout after rendering rather than raw TeX or
+     // fallback fonts; keep the same overflow threshold and log offenders.
+     const initialOverflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
+     await page.waitForLoadState("load",{timeout:60000});
+     await page.waitForFunction(()=>Boolean(window.MathJax?.startup?.promise),null,{timeout:30000});
+     await page.evaluate(async()=>{await window.MathJax.startup.promise;await document.fonts.ready;});
+     await page.waitForFunction(()=>[...document.querySelectorAll("article .arithmatex")].every(el=>el.querySelector("mjx-container")),null,{timeout:30000});
+     const layout=await page.evaluate(()=>{
+      const overflow=document.documentElement.scrollWidth-innerWidth;
+      const offenders=overflow>20?[...document.querySelectorAll("body *")].filter(el=>{
+       const r=el.getBoundingClientRect();return r.width>0&&r.right>innerWidth+20;
+      }).slice(0,12).map(el=>({tag:el.tagName,cls:String(el.className).slice(0,100),right:Math.round(el.getBoundingClientRect().right),text:el.textContent?.slice(0,80)})):[];
+      return {overflow,offenders};
+     });
+     if(initialOverflow>20||layout.overflow>20)console.log("NAV_LAYOUT_DIAGNOSTIC "+JSON.stringify({grade,lesson,width:viewport.width,initialOverflow,...layout}));
+     assert(layout.overflow<=20,"Horizontal overflow "+grade+" B"+lesson+" @"+viewport.width+" "+layout.overflow+" "+JSON.stringify(layout.offenders));
     }
     for(const path of ["/thpt-preview/sgk/lop-11/chuong-ix/tu-kiem-tra-chuong/",
                        "/thpt-preview/sgk/lop-12/chuong-vi/tu-kiem-tra-chuong/"]){

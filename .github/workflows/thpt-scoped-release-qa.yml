@@ -87,7 +87,11 @@ jobs:
     # even when global workflow changes legitimately trigger full R4.
     if: ${{ (needs.scope.outputs.full_suite == 'false' && needs.scope.outputs.changed_lessons != '') || needs.scope.outputs.qa_smoke == 'true' }}
     runs-on: ubuntu-24.04
-    timeout-minutes: 18
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        engine: ${{ fromJSON(startsWith(needs.scope.outputs.reason, 'OWNER_1132_') && '["chromium","webkit"]' || '["chromium"]') }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -97,18 +101,16 @@ jobs:
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material
           mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
-      - name: Set up real Chromium only for affected lesson(s)
+      - name: Set up real browser for affected lesson(s)
         run: |
           npm install --no-save playwright@1.56.1
-          npx playwright install chromium
-      - name: Install WebKit for exact #1132 display delta
-        if: ${{ startsWith(needs.scope.outputs.reason, 'OWNER_1132_') }}
-        run: npx playwright install --with-deps webkit
+          npx playwright install --with-deps ${{ matrix.engine }}
       - name: AP1–AP5 and Q15/Q16 technical browser checks at 390/820/1440
         env:
           SCOPED_LESSONS: ${{ needs.scope.outputs.changed_lessons || 'docs/thpt-preview/sgk/chuong-v/bai-14.md,docs/thpt-preview/sgk/chuong-v/luyen-tap.md,docs/thpt-preview/sgk/chuong-v/tu-kiem-tra-chuong.md' }}
           SCOPED_BASE_URL: http://127.0.0.1:8765
           RELEASE_DELTA_REASON: ${{ needs.scope.outputs.reason }}
+          SCOPED_BROWSER_ENGINE: ${{ matrix.engine }}
         run: |
           python -m http.server 8765 --bind 127.0.0.1 --directory site-thpt-preview >/tmp/scoped-golden-http.log 2>&1 &
           python - <<'PY'
@@ -120,11 +122,7 @@ jobs:
               except Exception: time.sleep(.5)
           else: raise SystemExit('Scoped preview HTTP did not start')
           PY
-          node scripts/test-thpt-scoped-lesson-browser.cjs
-          if [[ "$RELEASE_DELTA_REASON" == OWNER_1132_* ]]; then
-            if [[ "$RELEASE_DELTA_REASON" == OWNER_1132_G11_B19_DISPLAY ]]; then
-              SCOPED_LESSONS="$SCOPED_LESSONS,docs/thpt-preview/sgk/chuong-vi/bai-18.md,docs/thpt-preview/sgk/chuong-vii/bai-21.md,docs/thpt-preview/sgk/chuong-vii/bai-22.md,docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md,docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md" SCOPED_BROWSER_ENGINE=webkit node scripts/test-thpt-scoped-lesson-browser.cjs
-            else
-              SCOPED_BROWSER_ENGINE=webkit node scripts/test-thpt-scoped-lesson-browser.cjs
-            fi
+          if [[ "$SCOPED_BROWSER_ENGINE" == webkit && "$RELEASE_DELTA_REASON" == OWNER_1132_G11_B19_DISPLAY ]]; then
+            export SCOPED_LESSONS="$SCOPED_LESSONS,docs/thpt-preview/sgk/chuong-vi/bai-18.md,docs/thpt-preview/sgk/chuong-vii/bai-21.md,docs/thpt-preview/sgk/chuong-vii/bai-22.md,docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md,docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md"
           fi
+          node scripts/test-thpt-scoped-lesson-browser.cjs
