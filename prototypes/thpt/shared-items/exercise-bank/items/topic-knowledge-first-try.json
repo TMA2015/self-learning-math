@@ -15388,7 +15388,7 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Nếu dùng n\\(-1\\) vô cớ, phân biệt chỉ số của biểu thức với số lần tăng trong cấp số.\n\n\nNếu thế sai chỉ số hoặc cho rằng một giá trị có thể đạt chỉ vì biểu thức tiến gần tới nó, đọc lại **Kiến thức 1.2** rồi làm **Bài 3** (đúng thứ tự chỉ số) và **Bài 7** (kiểm tra một giá trị có thực sự là số hạng hay không)."
+    "remediation": "Nếu dùng \\(n-1\\) vô cớ, phân biệt chỉ số của biểu thức với số lần tăng trong cấp số.\n\n\nNếu thế sai chỉ số hoặc cho rằng một giá trị có thể đạt chỉ vì biểu thức tiến gần tới nó, đọc lại **Kiến thức 1.2** rồi làm **Bài 3** (đúng thứ tự chỉ số) và **Bài 7** (kiểm tra một giá trị có thực sự là số hạng hay không)."
   },
   {
     "item_id": "THPT-TOP07-KFT03",
@@ -15522,7 +15522,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Kiểm dấu của 1/n với n nguyên dương."
+      "Kiểm dấu của \\(\\frac1n\\) với n nguyên dương."
     ],
     "rubric": null,
     "interaction": {
@@ -15678,7 +15678,7 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Nếu tính thành \\(-2\\), xem lại từ số hạng 1 đến 4 chỉ có 3 khoảng.\n\n\nNếu dùng n thay n\\(-1\\) lần cộng công sai, đọc lại **Kiến thức 2.2**, làm **Bài 22** (tìm số hạng theo chỉ số) và **Bài 31** (giải số hạng xa). Đếm số *khoảng cách chỉ số* từ số hạng đầu."
+    "remediation": "Nếu tính thành \\(-2\\), xem lại từ số hạng 1 đến 4 chỉ có 3 khoảng.\n\n\nNếu dùng n thay \\(n-1\\) lần cộng công sai, đọc lại **Kiến thức 2.2**, làm **Bài 22** (tìm số hạng theo chỉ số) và **Bài 31** (giải số hạng xa). Đếm số *khoảng cách chỉ số* từ số hạng đầu."
   },
   {
     "item_id": "THPT-TOP07-KFT08",
@@ -15732,7 +15732,7 @@
       },
       {
         "id": "D",
-        "text": "\\(9/5\\)"
+        "text": "\\(\\frac{9}{5}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE",
@@ -15741,7 +15741,7 @@
   {
     "item_id": "THPT-TOP07-KFT09",
     "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT09",
-    "stem": "Tính 1+3+5+7+9.",
+    "stem": "Tính \\(1+3+5+7+9\\).",
     "answer_key": "25.",
     "worked_solution": "25; đây là CSC có 5 số hạng, số đầu 1, số cuối 9, \\(S_5=\\frac{5(1+9)}2=25\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -15968,7 +15968,7 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Dấu ngoặc đặc biệt quan trọng khi số mũ chẵn: \\(u_3=5(-2)^2=20\\), trong khi \\(5\\cdot(-2^2)=-20\\). Hai biểu thức với số mũ lẻ có thể trùng giá trị, nên hãy dùng \\(u_3\\) để phát hiện lỗi bỏ ngoặc.\n\n\nNếu đặt mũ là n thay cho n\\(-1\\) hoặc làm mất dấu của công bội âm, đọc lại **Kiến thức 3.2**, làm **Bài 42** (số hạng thứ sáu) và **Bài 54** (công bội âm). Kiểm trực tiếp hai số hạng đầu."
+    "remediation": "Dấu ngoặc đặc biệt quan trọng khi số mũ chẵn: \\(u_3=5(-2)^2=20\\), trong khi \\(5\\cdot(-2^2)=-20\\). Hai biểu thức với số mũ lẻ có thể trùng giá trị, nên hãy dùng \\(u_3\\) để phát hiện lỗi bỏ ngoặc.\n\n\nNếu đặt mũ là n thay cho \\(n-1\\) hoặc làm mất dấu của công bội âm, đọc lại **Kiến thức 3.2**, làm **Bài 42** (số hạng thứ sáu) và **Bài 54** (công bội âm). Kiểm trực tiếp hai số hạng đầu."
   },
   {
     "item_id": "THPT-TOP07-KFT13",
@@ -16091,7 +16091,7 @@
     "content_version": "CD07-BANK-CP127-20261127-TOP07-KFT15",
     "stem": "Cấp số nhân vô hạn có \\(u_1=4,\\ q=-1\\). Có thể tính tổng vô hạn bằng công thức \\(\\frac{u_1}{1-q}\\) không? Vì sao? Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "Không; tổng riêng dao động giữa 4 và 0, không hội tụ.",
-    "worked_solution": "Không; |q|=1, tổng riêng lần lượt 4; 0; 4; 0; … không hội tụ.",
+    "worked_solution": "Không; \\(\\lvert q\\rvert=1\\), tổng riêng lần lượt 4; 0; 4; 0; … không hội tụ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B15-GEOMETRIC"
