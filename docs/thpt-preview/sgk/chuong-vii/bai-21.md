@@ -179,7 +179,7 @@
         <ol>
         <li><strong>Nhận diện lỗi:</strong> Kết luận hai giao điểm khi khoảng cách tâm đến đường thẳng đúng bằng R.</li>
         <li><strong>Tự chẩn đoán:</strong> Với I(1;2), R=3 và d:y=−1, điểm nào trên d gần tâm nhất? Có thể có điểm thứ hai cùng cách I đúng 3 không?</li>
-        <li><strong>Kiến thức gốc:</strong> So khoảng cách ngắn nhất h với R: **h<R** cho hai điểm, **h=R** cho một tiếp điểm, **h>R** thì không gặp đường tròn.</li>
+        <li><strong>Kiến thức gốc:</strong> So khoảng cách ngắn nhất h với R: <strong>h &lt; R</strong> cho hai điểm chung, <strong>h = R</strong> cho một tiếp điểm, <strong>h &gt; R</strong> thì không gặp đường tròn.</li>
         <li><strong>Tự sửa:</strong> Chân vuông góc T(1;−1) cách I đúng 3; các điểm khác trên d xa I hơn, nên d tiếp xúc tại T.</li>
         <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-P03">Luyện Practice 21-P03</a></li>
         </ol>

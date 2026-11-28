@@ -232,9 +232,42 @@ async function execute(){
       rel+" "+width+" answers must be closed until voluntary Đối chiếu");
      assert.equal(await page.locator("[data-thpt-readiness],[data-mastery-credit],[data-mastery-write]").count(),0,
       rel+" "+width+" cannot write Q16/Mastery in Knowledge");
+     const display1132={
+      "docs/thpt-preview/sgk/chuong-vi/bai-18.md":{selector:"strong",match:/^Bước 1 — hình dung và đặt điều kiện\.$/,expected:"Bước 1 — hình dung và đặt điều kiện."},
+      "docs/thpt-preview/sgk/chuong-vii/bai-21.md":{selector:"li",match:/So khoảng cách ngắn nhất h với R:/,expected:"Kiến thức gốc: So khoảng cách ngắn nhất h với R: h < R cho hai điểm chung, h = R cho một tiếp điểm, h > R thì không gặp đường tròn."},
+      "docs/thpt-preview/sgk/chuong-vii/bai-22.md":{selector:"li",match:/Elip trục lớn Ox có/,expected:"Kiến thức gốc: Elip trục lớn Ox có c² = a² − b² và c < a; hypebol trục thực Ox có c² = a² + b² và c > a. Dấu trong dạng chính tắc phản ánh quỹ tích khác nhau."}
+     }[rel];
+     let display1132Hits=0;
      for(let i=0;i<4;i++){
       await tabs.locator(".tabbed-labels > label").nth(i).click();
       assert(await groups.nth(i).isVisible(),rel+" "+width+" learner tab "+i+" not visible");
+      if(display1132){
+       const nodes=groups.nth(i).locator(display1132.selector).filter({hasText:display1132.match});
+       const count=await nodes.count();
+       if(count){
+        assert.equal(count,1,rel+" duplicate repaired fragment");
+        const node=nodes.first(),fold=node.locator("xpath=ancestor::details[1]");
+        let opened=false;
+        if(await fold.count()&&!(await fold.evaluate(x=>x.open))){
+         await fold.locator("summary").first().click();
+         opened=true;
+        }
+        assert(await node.isVisible(),rel+" repaired fragment not visible");
+        const text=(await node.innerText()).replace(/\s+/g," ").trim();
+        assert.equal(text,display1132.expected,rel+" exact repaired learner text");
+        assert(!text.includes("**"),rel+" raw Markdown in repaired fragment");
+        if(display1132.selector==="strong"){
+         const para=node.locator("xpath=ancestor::p[1]");
+         assert((await para.innerText()).includes("Đặt"),rel+" step text lost after bold");
+        }
+        if(opened){
+         await fold.locator("summary").first().click();
+         assert(!(await fold.evaluate(x=>x.open)),rel+" restore disclosure closed");
+        }
+        display1132Hits++;
+        console.log("PASS #1132 exact rendered correction "+rel+" @"+width);
+       }
+      }
       if(/^docs\/thpt-preview\/sgk\/lop-11\/(?:chuong-i\/bai-[234]|chuong-ii\/bai-[567]|chuong-iii\/bai-[89]|chuong-iv\/bai-1[0-4]|chuong-v\/bai-1[5-7]|chuong-vi\/bai-(?:1[89]|2[01])|chuong-vii\/bai-2[2-7]|(?:chuong-viii\/bai-(?:2[89]|30)|chuong-ix\/bai-3[1-3]))\.md$/.test(rel)||/^docs\/thpt-preview\/sgk\/lop-12\/chuong-i\/bai-[1-5]\.md$/.test(rel)||/\/lop-12\/chuong-v\/bai-1[4-7]\.md$/.test(rel)||/\/lop-12\/chuong-vi\/bai-1[89]\.md$/.test(rel)){
        const panel=groups.nth(i);
        for(const disclosure of await panel.locator("details.question").all()){
@@ -285,6 +318,7 @@ async function execute(){
        if(disclosure){await disclosure.locator("summary").first().click();assert(!(await disclosure.evaluate(el=>el.open)),rel+" figure disclosure restored closed");}
       }
      }
+     if(display1132)assert.equal(display1132Hits,1,rel+" exact repaired fragment must be seen in one tab");
      }else{
       const article=page.locator("article.md-content__inner");
       await article.waitFor({state:"visible"});

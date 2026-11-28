@@ -27,6 +27,55 @@ function g10OneSourceCitation(n,content){
   "B"+n+" must not carry a second small-font source note");
  return footers[0];
 }
+// #1132 / owner authorization comment 7234992998, PR #1133.
+// Exact reversible display-only successor: retain every historical Q18 lock.
+// No new academic verdict; actual browser and publication gates remain separate.
+const release1132DisplayDelta=new Map([
+ [
+  18,
+  {
+   "old": "3d8b0ed45b606f608db4b2a55ecfa8a273a8c802",
+   "updated": "d0961206048222b26e82900db8fff6a2f60b6ad3",
+   "before": "**Bước 1 — hình dung và đặt điều kiện. Đặt",
+   "after": "**Bước 1 — hình dung và đặt điều kiện.** Đặt"
+  }
+ ],
+ [
+  21,
+  {
+   "old": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
+   "updated": "e3da0e71eebde3f879a35d3e044eea49fa03b5d7",
+   "before": "**h<R** cho hai điểm, **h=R** cho một tiếp điểm, **h>R** thì không gặp đường tròn.",
+   "after": "<strong>h &lt; R</strong> cho hai điểm chung, <strong>h = R</strong> cho một tiếp điểm, <strong>h &gt; R</strong> thì không gặp đường tròn."
+  }
+ ],
+ [
+  22,
+  {
+   "old": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+   "updated": "045b24b9df5ae19de6e857d4781083311f132c32",
+   "before": "**c²=a²−b²** và c<a; hypebol trục thực Ox có **c²=a²+b²** và c>a.",
+   "after": "<strong>c² = a² − b²</strong> và c &lt; a; hypebol trục thực Ox có <strong>c² = a² + b²</strong> và c &gt; a."
+  }
+ ]
+]);
+function release1132HistoricalText(n,content,previousSha){
+ const d=release1132DisplayDelta.get(n);
+ if(!d)return content;
+ assert.equal(previousSha,d.old,"#1132 must extend exact historical B"+n+" source");
+ assert.equal(gitBlobAntiRepeat(content),d.updated,"#1132 exact successor B"+n);
+ assert.equal(content.split(d.after).length,2,"#1132 exactly one corrected fragment B"+n);
+ const prior=content.replace(d.after,d.before);
+ assert.equal(gitBlobAntiRepeat(prior),d.old,"#1132 only approved reversible display fragment B"+n);
+ return prior;
+}
+function release1132Candidate(n,previousSha){
+ const d=release1132DisplayDelta.get(n);
+ if(!d)return previousSha;
+ release1132HistoricalText(n,fs.readFileSync(path.join(root,g10PublicKnowledgePath(n)),"utf8"),previousSha);
+ return d.updated;
+}
+
 function ownerAntiRepeatCandidate(name,immutableCurrent){
  const n=Number(String(name).replace(/^B/,""));
  if(n<19||n>26)return immutableCurrent;
@@ -45,7 +94,7 @@ function ownerAntiRepeatCandidate(name,immutableCurrent){
  assert.notEqual(shas[0],shas[1],"B"+n+" source must actually change");
  assert(rows[0].includes(n===26?"DELTA_C_ACADEMIC_MATERIAL":"DELTA_A_UI_METADATA"),
   "B"+n+" correction class must match receipt");
- const content=fs.readFileSync(path.join(root,g10PublicKnowledgePath(n)),"utf8");
+ const content=release1132HistoricalText(n,fs.readFileSync(path.join(root,g10PublicKnowledgePath(n)),"utf8"),shas[1]);
  assert.equal(gitBlobAntiRepeat(content),shas[1],
   "B"+n+" corrected source must match signed exact Git blob");
  const match=g10OneSourceCitation(n,content);
@@ -1569,8 +1618,8 @@ function expectedG10KnowledgeBlob(lesson,legacy){
  const current=expectedG10KnowledgeBlobHistorical(lesson,legacy);
  const n=Number(String(lesson).replace(/^B/,""));
  if(n>=1&&n<=26)g10OneSourceCitation(n,fs.readFileSync(path.join(root,g10PublicKnowledgePath(n)),"utf8"));
- if(n>=19&&n<=26)return ownerAntiRepeatCandidate("B"+n,current);
- if(!(n>=7&&n<=14))return current;
+ if(n>=19&&n<=26)return release1132Candidate(n,ownerAntiRepeatCandidate("B"+n,current));
+ if(!(n>=7&&n<=14))return release1132Candidate(n,current);
  const file=path.join(root,"prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
  if(!fs.existsSync(file))return current;
  const source=fs.readFileSync(file,"utf8"),rows=source.split("\n").filter(x=>x.startsWith("| B"+n+" | "));

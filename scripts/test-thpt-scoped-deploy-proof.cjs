@@ -1103,6 +1103,28 @@ function main(){
   verifyG11W1(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));
   return;
  }
+ const display1132Lessons=["docs/thpt-preview/sgk/chuong-vi/bai-18.md","docs/thpt-preview/sgk/chuong-vii/bai-21.md","docs/thpt-preview/sgk/chuong-vii/bai-22.md"];
+ const display1132Files=[...display1132Lessons,...["prototypes/thpt/ux795/G10_B18_B21_B22_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/thpt-q18-g10-source-receipt.cjs"]];
+ if(changed.length===display1132Files.length&&new Set(changed).size===changed.length&&changed.every(x=>display1132Files.includes(x))){
+  const receipt=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_B18_B21_B22_DISPLAY_Q18_DELTA_1132_20261128.md"),"utf8");
+  assert(receipt.includes("DELTA_B_SOURCE_EQUIVALENT")&&receipt.includes("7234992998"),"#1132 owner-authorized source delta");
+  const expected=(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean).sort();
+  assert.deepEqual(expected,display1132Lessons.slice().sort(),"exact #1132 lessons only");
+  const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+  for(const lesson of display1132Lessons){
+   const n=Number(lesson.match(/bai-(\d+)\.md$/)[1]);
+   const before=cp.execFileSync("git",["show",previous+":"+lesson],{cwd:root});
+   const now=fs.readFileSync(path.join(root,lesson));
+   const prev=blob(before),next=blob(now);
+   assert(receipt.includes("**PREVIOUS_B"+n+"_SOURCE_BLOB:** "+String.fromCharCode(96)+prev+String.fromCharCode(96)),"exact immutable predecessor B"+n);
+   assert(receipt.includes("**CANDIDATE_B"+n+"_SOURCE_BLOB:** "+String.fromCharCode(96)+next+String.fromCharCode(96)),"exact signed successor B"+n);
+   assert.equal(next,candidateG10KnowledgeBlob(n),"exact reversible Q18 source delta B"+n);
+   verifySource(before.toString("utf8"),now.toString("utf8"),receipt,prev,next,lesson);
+   assert.deepEqual(latex(now.toString("utf8")),latex(before.toString("utf8")),"no changed math token B"+n);
+   console.log("PASS #1132 exact source/Q15/Q16 B"+n+" "+prev+" -> "+next);
+  }
+  return;
+ }
  const lessonPaths=changed.filter(x=>LESSON.test(x)),receipts=changed.filter(x=>RECEIPT.test(x));
  const batch=PLACEMENT_BATCHES.find(b=>
   b.lessons.length===lessonPaths.length&&b.lessons.every(x=>lessonPaths.includes(x))&&

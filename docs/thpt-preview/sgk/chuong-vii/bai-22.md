@@ -404,7 +404,7 @@
         <ol>
         <li><strong>Nhận diện lỗi:</strong> Thuộc hai công thức mà không phân biệt dấu cộng/trừ trong phương trình, nên dùng c²=a²+b² cho elip hoặc c²=a²−b² cho hypebol.</li>
         <li><strong>Tự chẩn đoán:</strong> So sánh E:x²/25+y²/16=1 và H:x²/16−y²/9=1. Dấu trước số hạng y² và vị trí hai tiêu điểm khác nhau như thế nào?</li>
-        <li><strong>Kiến thức gốc:</strong> Elip trục lớn Ox có **c²=a²−b²** và c<a; hypebol trục thực Ox có **c²=a²+b²** và c>a. Dấu trong dạng chính tắc phản ánh quỹ tích khác nhau.</li>
+        <li><strong>Kiến thức gốc:</strong> Elip trục lớn Ox có <strong>c² = a² − b²</strong> và c &lt; a; hypebol trục thực Ox có <strong>c² = a² + b²</strong> và c &gt; a. Dấu trong dạng chính tắc phản ánh quỹ tích khác nhau.</li>
         <li><strong>Tự sửa:</strong> Với E: c²=25−16=9, c=3; với H: c²=16+9=25, c=5. Kiểm tiêu điểm elip nằm trong đỉnh, hypebol ngoài đỉnh.</li>
         <li><strong>Luyện lại:</strong> <a data-thpt-formative-id="THPT-G10-B22-C02" href="../luyen-tap/?item=THPT-G10-B22-C02">Luyện lại câu 22-C02</a> · <a data-thpt-formative-id="THPT-G10-B22-P01" href="../luyen-tap/?item=THPT-G10-B22-P01">Luyện lại câu 22-P01</a> · <a data-thpt-formative-id="THPT-G10-B22-P02" href="../luyen-tap/?item=THPT-G10-B22-P02">Luyện lại câu 22-P02</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W22-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w22-01">Bài tự luận liên quan</a></li>
         </ol>

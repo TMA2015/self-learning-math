@@ -974,6 +974,10 @@ function classify(paths,{manual=false,base=""}={}){
    (!files.includes("docs/assets/javascripts/thpt-r4-preview.js")||b16RuntimeIsIsolated()))
   return {impact:"SCOPED_G10_B16",full_suite:"false",changed_lessons:B16_LESSON,
    reason:"OWNER_B16_EXACT_FILES_AND_BYTE_VERIFIED_RUNTIME"};
+ const display1132Lessons=["docs/thpt-preview/sgk/chuong-vi/bai-18.md","docs/thpt-preview/sgk/chuong-vii/bai-21.md","docs/thpt-preview/sgk/chuong-vii/bai-22.md"];
+ const display1132Files=[...display1132Lessons,...["prototypes/thpt/ux795/G10_B18_B21_B22_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/thpt-q18-g10-source-receipt.cjs"]];
+ if(files.length===display1132Files.length&&new Set(files).size===files.length&&files.every(x=>display1132Files.includes(x)))
+  return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:display1132Lessons.join(","),reason:"OWNER_1132_EXACT_DISPLAY_DELTA"};
  const lessons=files.filter(x=>CANONICAL_PAGE(x));
  const safeCompanions=x=>RECEIPT.test(x)||SOURCE_TEST.test(x);
  // Owner-authorized B19–B26 editorial QA batch: exact eight canonical
@@ -1093,6 +1097,10 @@ function classify(paths,{manual=false,base=""}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const display1132=["docs/thpt-preview/sgk/chuong-vi/bai-18.md","docs/thpt-preview/sgk/chuong-vii/bai-21.md","docs/thpt-preview/sgk/chuong-vii/bai-22.md","prototypes/thpt/ux795/G10_B18_B21_B22_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/thpt-q18-g10-source-receipt.cjs"];
+ assert.equal(classify(display1132).reason,"OWNER_1132_EXACT_DISPLAY_DELTA");
+ assert.equal(classify([...display1132,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL");
+ assert.equal(classify(display1132.filter(x=>x!=="prototypes/thpt/ux795/G10_B18_B21_B22_DISPLAY_Q18_DELTA_1132_20261128.md")).impact,"FULL");
  const notation=[...MATH_NOTATION_GOVERNANCE];
  assert.equal(classify(notation).impact,"METADATA");
  assert.equal(classify([...notation,"docs/assets/javascripts/math-details-v1.js"]).full_suite,"true");
