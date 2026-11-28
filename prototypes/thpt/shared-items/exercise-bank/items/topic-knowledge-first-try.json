@@ -1041,7 +1041,7 @@
   },
   {
     "item_id": "THPT-TOP14-T18",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T18",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T18-XG5-20261128",
     "stem": "Với elip \\(\\frac{x^2}{25}+\\frac{y^2}{16}=1\\), tìm hai tiêu điểm.",
     "answer_key": "\\(F_1(-3;0),F_2(3;0)\\).",
     "worked_solution": "\\(c^2=25-16=9\\Rightarrow c=3\\), \\(F_1(-3;0),F_2(3;0)\\).\n\n**Nếu làm sai:** Nếu lấy \\(c^2=a^2+b^2\\), em đang dùng công thức của **hypebol** chứ không phải elip.\n\n\n**Kiểm lỗi**\n\nNếu dùng \\(c^2=a^2+b^2\\) cho elip, đọc **Kiến thức 4.1**. Làm **Bài luyện 65** và **Bài luyện 79**: trên elip chính tắc \\(a^2>b^2>0,\\ c^2=a^2-b^2\\).",
@@ -1055,7 +1055,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Tính c từ c²=a²−b², tiêu điểm nằm trên trục lớn."
+      "Tính \\(c\\) từ \\(c^2=a^2-b^2\\), tiêu điểm nằm trên trục lớn."
     ],
     "rubric": null,
     "interaction": {
@@ -1102,7 +1102,7 @@
   },
   {
     "item_id": "THPT-TOP14-T19",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T19",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T19-XG5-20261128",
     "stem": "Với hypebol \\(\\frac{x^2}{16}-\\frac{y^2}{9}=1\\), hai tiêu điểm ở đâu?",
     "answer_key": "\\(F_1(-5;0),F_2(5;0)\\).",
     "worked_solution": "\\(c^2=16+9=25,\\ c=5\\), tiêu điểm \\((-5;0),(5;0)\\).\n\n**Nếu làm sai:** Nếu tính \\(c=\\sqrt7\\), em đã dùng nhầm phép trừ của elip.\n\n\n**Kiểm lỗi**\n\nNếu lấy \\(c^2=a^2-b^2\\) cho hypebol, đọc **Kiến thức 4.2**. Làm **Bài luyện 66** và **Bài luyện 80**, kiểm dấu trừ trong phương trình và \\(c^2=a^2+b^2\\).",
@@ -1116,7 +1116,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Với hypebol dạng này, c²=a²+b²."
+      "Với hypebol dạng này, \\(c^2=a^2+b^2\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -1224,7 +1224,7 @@
   },
   {
     "item_id": "THPT-TOP14-T21",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T21",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T21-XG5-20261128",
     "stem": "\\(y^2=6x\\) có tiêu điểm và đường chuẩn nào?",
     "answer_key": "\\(F(\\frac32;0)\\); đường chuẩn \\(x=-\\frac32\\).",
     "worked_solution": "\\(p=3,\\ F(\\frac32;0)\\), đường chuẩn \\(x=-\\frac32\\).\n\n**Nếu làm sai:** Nếu lấy \\(F(3;0)\\), em đã nhầm p với \\(\\frac p2\\).\n\n\n**Kiểm lỗi**\n\nNếu đồng nhất p với hoành độ tiêu điểm, đọc **Kiến thức 4.4**. Làm **Bài luyện 69** và **Bài luyện 82**, xác định \\(F(\\frac p2;0)\\), đường chuẩn \\(x=-\\frac p2\\) trong \\(y^2=2px\\).",
@@ -1238,7 +1238,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "So với y²=2px rồi dùng tiêu điểm (p/2;0)."
+      "So với \\(y^2=2px\\) rồi dùng tiêu điểm \\((\\frac p2;0)\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -1285,7 +1285,7 @@
   },
   {
     "item_id": "THPT-TOP14-T22",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T22",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T22-XG5-20261128",
     "stem": "Parabol \\(y^2=4x\\) và đường \\(x=1\\) có bao nhiêu giao điểm?",
     "answer_key": "Hai giao điểm \\((1;2),(1;-2)\\).",
     "worked_solution": "Thay \\(x=1\\) vào \\(y^2=4x\\) được \\(y^2=4\\), nên \\(y=2\\) hoặc \\(y=-2\\). Hai điểm \\((1;2),(1;-2)\\) đều thỏa mãn hai phương trình.\n\n**Nếu làm sai:** Nếu chỉ lấy \\(y=2\\), em đã bỏ nghiệm âm khi giải \\(y^2=4\\). Thay \\(x=1\\) vào parabol \\(y^2=4x\\), ta được \\(y=\\pm2\\); cả \\((1;2)\\) và \\((1;-2)\\) đều thuộc parabol và đối xứng qua trục \\(Ox\\).\n\n\n**Kiểm lỗi**\n\nNếu chỉ giữ nghiệm y dương khi giao parabol với đường thẳng hoặc nhầm parabol và elip, đọc **Kiến thức 4.5**. Làm **Bài luyện 84** (cắt elip) và **Bài luyện 87** (cắt parabol), thế nghiệm trở lại cả hai phương trình.",
@@ -1299,7 +1299,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Thay x=1 vào y²=4x."
+      "Thay \\(x=1\\) vào \\(y^2=4x\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -1346,7 +1346,7 @@
   },
   {
     "item_id": "THPT-TOP14-T23",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T23",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T23-XG5-20261128",
     "stem": "Mặt cắt ăng-ten là parabol có đỉnh \\(O\\), trục đối xứng \\(Ox\\), mở về phía \\(x>0\\). Nguồn thu ở tiêu điểm cách đỉnh 3 cm. Viết phương trình mặt cắt trong đơn vị cm.",
     "answer_key": "\\(y^2=12x\\), tọa độ tính bằng cm.",
     "worked_solution": "Mặt cắt là parabol đỉnh O, tiêu điểm \\(F(3;0)\\), nên \\(f=3\\) cm và \\(y^2=4fx=12x\\), với tọa độ tính bằng cm. Đường chuẩn là \\(x=-3\\). So với \\(y^2=2px\\), ta có \\(p=6\\), không phải 3.\n\n**Nếu làm sai:** Nếu viết \\(y^2=6x\\), em đã quên rằng \\(f=\\frac p2\\).\n\n\n**Kiểm lỗi**\n\nNếu viết \\(y^2=2fx\\) thay cho \\(y^2=4fx\\) khi f là khoảng cách từ đỉnh đến tiêu điểm, đọc **Kiến thức 4.6**. Làm **Bài luyện 78** và **Bài luyện 83**; độ rộng mặt cắt bằng hai lần \\(|y|\\) tại cùng x.",
@@ -1361,7 +1361,7 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Với tiêu điểm (f;0), phương trình y²=4fx."
+      "Với tiêu điểm \\((f;0)\\), phương trình \\(y^2=4fx\\)."
     ],
     "rubric": null,
     "interaction": {
