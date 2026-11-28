@@ -793,19 +793,19 @@
     "options": [
       {
         "id": "A",
-        "text": "12 học sinh."
+        "text": "12 học sinh; lấy số bạn chung."
       },
       {
         "id": "B",
-        "text": "36 học sinh."
+        "text": "36 học sinh; lấy số bạn tham gia ít nhất một CLB."
       },
       {
         "id": "C",
-        "text": "4 học sinh."
+        "text": "4 học sinh, vì \\(40-(23+25-12)=4\\)."
       },
       {
         "id": "D",
-        "text": "8 học sinh."
+        "text": "8 học sinh; trừ hai lần số bạn chung."
       }
     ],
     "check_again": "Chỉ Anh 11, cả hai 12, chỉ Toán 13, ngoài 4; \\(11+12+13+4=40\\)."
@@ -1037,7 +1037,7 @@
     "content_version": "SGK-G10-CHI-BANK-CANDIDATE-20261127-THPT-G10-CHI-TRY04",
     "stem": "Với \\(n\\in\\mathbb Z\\), “\\(n\\) chẵn khi và chỉ khi \\(n+2\\) chẵn” có đúng không? Hãy trình bày riêng hai chiều. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Đúng, cả hai chiều.",
-    "worked_solution": "**Đúng.** Nếu \\(n=2m\\) thì \\(n+2=2(m+1)\\) chẵn. Nếu \\(n+2=2k\\) thì \\(n=2(k-1)\\) cũng chẵn. Cả hai chiều đúng trên \\(\\mathbb Z\\).",
+    "worked_solution": "**Đúng.** Nếu \\(n=2m\\) với \\(m\\in\\mathbb Z\\), thì \\(n+2=2(m+1)\\) chẵn. Ngược lại, nếu \\(n+2=2k\\) với \\(k\\in\\mathbb Z\\), thì \\(n=2(k-1)\\) chẵn. Cả hai chiều đều đúng trên \\(\\mathbb Z\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B01-EQUIVALENCE"
@@ -1428,7 +1428,7 @@
   {
     "item_id": "THPT-G10-CHI-TRY11",
     "content_version": "SGK-G10-CHI-BANK-CANDIDATE-20261127-THPT-G10-CHI-TRY11",
-    "stem": "Một lớp khác có 32 học sinh; 18 bạn tham gia CLB Âm nhạc, 15 bạn tham gia CLB Thể thao, 6 bạn tham gia cả hai. Hỏi chỉ tham gia từng CLB có bao nhiêu bạn, và không tham gia CLB nào có bao nhiêu bạn? **Không** dùng lại các số của hình 40 học sinh phía trên. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
+    "stem": "Một lớp có 32 học sinh; 18 bạn tham gia CLB Âm nhạc, 15 bạn tham gia CLB Thể thao, 6 bạn tham gia cả hai. Tính lần lượt số bạn chỉ tham gia Âm nhạc, chỉ tham gia Thể thao và không tham gia CLB nào trong hai CLB này. Chọn phương án đúng sau khi tự giải.",
     "answer_key": "Chỉ Âm nhạc: 12; chỉ Thể thao: 9; không tham gia CLB nào: 5.",
     "worked_solution": "Chỉ Âm nhạc: \\(18-6=12\\); chỉ Thể thao: \\(15-6=9\\). Tham gia ít nhất một CLB: \\(12+6+9=27\\). Không tham gia CLB nào: \\(32-27=5\\). Kiểm tra \\(12+6+9+5=32\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
