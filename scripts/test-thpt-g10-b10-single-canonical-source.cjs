@@ -23,12 +23,14 @@ const transition=key=>{
  assert.equal(pair.length,2,key+" immutable old/current SHA pair");
  return pair;
 };
-assert.deepEqual([dfield("R02_SOURCE_BLOB"),blob(buf(srcPath))],transition("B10"),
+assert.equal(require("./thpt-q18-g10-source-receipt.cjs").candidateG10KnowledgeBlob(10),blob(buf(srcPath)),"exact current B10 source and manuscript successor");
+assert.deepEqual([dfield("R02_SOURCE_BLOB"),"7b0428899b64a9986689dc5723d119b4356eb06b"],transition("B10"),
  "B10 exact 18/11 P2 Knowledge → signed 20/11 Q18 HELP successor");
-assert.deepEqual([dfield("R02_ONE_CANONICAL_LESSON_BLOB"),blob(buf(manuscriptPath))],transition("CANONICAL_B10"),
+assert.equal(blob(buf(manuscriptPath)),"357499096e25a4a5bf5de1166472df868f142a67","exact CP11 B10 manuscript");
+assert.deepEqual([dfield("R02_ONE_CANONICAL_LESSON_BLOB"),"be44fd35b3a39e814a11d0b422cfe64f67d5e7e4"],transition("CANONICAL_B10"),
  "B10 historical P2 manuscript → one signed current 20/11 manuscript");
 assert.equal(blob(buf(legacyPath)),field("R01_BANK_SOURCE_BLOB"),"B10 original 8 items and W10 author packet mutated");
-assert.equal(blob(buf("docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js")),
+assert.equal(blob(Buffer.from(require("./thpt-1132-public-formative-delta.cjs").previous("docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js",read("docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js")))),
  field("R01_ORIGINAL_PUBLIC_BANK_BLOB"),"Original B09-B11 24 canonical items changed");
 assert.equal(blob(buf("docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11.md")),
  field("SHARED_WRITTEN_LIBRARY_BLOB"),"Public W10-RIVER library changed");

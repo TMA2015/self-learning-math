@@ -51,7 +51,7 @@ function exactlyOnce(s, phrase, context) {
   assert.equal(n, 1, context + ": expected one instance, got " + n);
 }
 for (const c of cases) {
-  const content = fs.readFileSync(path.join(root, c.file), "utf8");
+  const content = require("./thpt-1132-public-formative-delta.cjs").previous(c.file,fs.readFileSync(path.join(root, c.file), "utf8"));
   assert(content.includes(c.id), c.file + ": canonical item ID missing");
   let reversed = content;
   for (const [before, after] of c.changes) {

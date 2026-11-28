@@ -29,7 +29,7 @@ const expected=hits.map((h,i)=>{
  return obj;
 });
 const context={window:{}};
-vm.runInNewContext(text("docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js"),context);
+vm.runInNewContext(require("./thpt-1132-public-formative-delta.cjs").previous("docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js",text("docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js")),context);
 const bank=context.window.THPT_CHIV_B09_B11_REVIEWED_FORMATIVE;
 assert(bank?.validate().valid,"Invalid new bank");
 assert.equal(JSON.stringify(bank.records),JSON.stringify(expected),

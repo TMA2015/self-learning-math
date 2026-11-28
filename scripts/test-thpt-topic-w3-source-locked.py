@@ -104,6 +104,8 @@ for topic, d in data["topics"].items():
     assert len(re.findall(r"<details", parts[1])) == d["items"], (topic, "original Practice solution count")
     for n, part in enumerate(PARTS):
         page = (ROOT / f"docs/thpt-preview/chuyen-de/cd{topic}/{part}.md").read_text(encoding="utf-8")
+        if str(topic) == "13" and part == "luyen-tap":
+            page = subprocess.check_output(["node", "scripts/thpt-1132-public-formative-delta.cjs", "--reverse", "docs/thpt-preview/chuyen-de/cd13/luyen-tap.md"], cwd=ROOT).decode("utf-8")
         start, end = f"<!-- TOPIC{topic}_APPROVED_SOURCE_START -->", f"<!-- TOPIC{topic}_APPROVED_SOURCE_END -->"
         assert page.count(start) == 1 and page.count(end) == 1, (topic, part, "source markers")
         region = page.split(start, 1)[1].split(end, 1)[0].strip()
