@@ -2,7 +2,7 @@
   {
     "collection": "TOPIC:CD11:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 1,
+    "order": 2,
     "item_id": "THPT-G12-B11-P01",
     "outcome_id": "TOP11-O01",
     "legacy_order": 3,
@@ -17,7 +17,7 @@
   {
     "collection": "TOPIC:CD11:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 2,
+    "order": 3,
     "item_id": "THPT-G12-B11-C01",
     "outcome_id": "TOP11-O01",
     "legacy_order": 4,
@@ -32,7 +32,7 @@
   {
     "collection": "TOPIC:CD11:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 3,
+    "order": 4,
     "item_id": "THPT-TOP11-P01",
     "outcome_id": "TOP11-O01",
     "legacy_order": 5,
@@ -47,7 +47,7 @@
   {
     "collection": "TOPIC:CD11:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 4,
+    "order": 5,
     "item_id": "THPT-G12-B11-C02",
     "outcome_id": "TOP11-O02",
     "legacy_order": 9,
@@ -62,7 +62,7 @@
   {
     "collection": "TOPIC:CD11:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 5,
+    "order": 6,
     "item_id": "THPT-G12-B11-C03",
     "outcome_id": "TOP11-O03",
     "legacy_order": 15,
@@ -77,7 +77,7 @@
   {
     "collection": "TOPIC:CD11:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 6,
+    "order": 7,
     "item_id": "THPT-TOP11-P03",
     "outcome_id": "TOP11-O03",
     "legacy_order": 16,
@@ -92,7 +92,7 @@
   {
     "collection": "TOPIC:CD11:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 7,
+    "order": 8,
     "item_id": "THPT-G12-B11-C04",
     "outcome_id": "TOP11-O04",
     "legacy_order": 20,
@@ -107,7 +107,7 @@
   {
     "collection": "TOPIC:CD11:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 8,
+    "order": 1,
     "item_id": "THPT-G12-B11-C05",
     "outcome_id": "TOP11-O05",
     "legacy_order": 26,
