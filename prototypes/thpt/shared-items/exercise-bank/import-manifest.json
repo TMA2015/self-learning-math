@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "DELTA07_ELEVEN_WRITTEN_SCOPED_Q18_SELF_VERIFIED_REMAINING_ACCEPTANCE_PENDING",
+  "academic_audit": "DELTA08_WRITTEN_PENDING_ZERO_SCOPED_INTERACTIVE_AUDIT_FULL_Q01_Q18_OPEN",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "e092a6318626dbc66124d6b031b661c609687f24",
+    "as_of_commit": "b2416d571efe726a5993c4f6f5537e53cd240f9d",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "29 Written reference statuses remain pending; reconcile historical S1/PED receipts and exact source delta, close scoped content where warranted. Wave06 15 math/rubric checks retained, do not repeat. Continue affected interactive X-G.5/6, source/outcome/coverage/exposure, Q01–Q18 before handoff. Projection generation/browser verification RELEASE only.",
-    "status": "DELTA07_ELEVEN_WRITTEN_SCOPED_Q18_SELF_VERIFIED_REMAINING_ACCEPTANCE_PENDING",
+    "next": "Written flagged deltas closed (40/40; 325 source-reviewed references). Continue substantive affected interactive and source/coverage/assessment acceptance under Q01–Q18 X-G.5/6, preserve reviewed snapshots, no global PASS until evidence. Priority remaining converted SGK public selfchecks/FirstTry and Topic groups, including independent true/false demand and multi-part reason-bearing choices; actual cutover/browser/whole-submit QA RELEASE only.",
+    "status": "DELTA08_WRITTEN_PENDING_ZERO_SCOPED_INTERACTIVE_AUDIT_FULL_Q01_Q18_OPEN",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,23 +112,26 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "delta_audit_wave07",
-    "delta_audit_wave07": {
-      "baseline": "2088e603893fba5d432b6ea6bf5b026d4bb1c468",
-      "verified_head": "e092a6318626dbc66124d6b031b661c609687f24",
+    "current_checkpoint_key": "delta_audit_wave08",
+    "delta_audit_wave08": {
+      "baseline": "7b2bd9643431506fd09a4e50f99de3332d4962cc",
+      "verified_head": "b2416d571efe726a5993c4f6f5537e53cd240f9d",
       "inventory": {
         "interactive_unique": 2214,
         "written_unique": 325,
         "total_unique": 2539,
         "placement_rows": 4301,
-        "evidence": "Prior wave05 exact global inventory preserved: no item ID, placement, interaction, skill or exposure edits."
+        "evidence": "Prior wave05 exact inventory; no new/removed IDs, skill or placement changes."
       },
       "written": {
-        "reference_blob": "e4fedd65e8964f9d33c771f1486ea0a9bf4245eb",
-        "scoped_q18_author_self_verified": 11,
-        "source_reviewed_count": 296,
-        "pending_count": 29,
-        "pending_ids": [
+        "reference_blob": "6d7fca4b45ab74ee798a0750fd88bd7179fc63ca",
+        "total": 325,
+        "source_reviewed": 325,
+        "pending_reference_status": 0,
+        "scoped_delta07_q18_self_verified": 11,
+        "scoped_delta08_q18_self_verified": 29,
+        "prior_source_reviewed": 285,
+        "accepted_ids": [
           "THPT-G10-CHIV-W08-FORCE-TR01",
           "THPT-G10-CHIV-W09",
           "THPT-G10-CHIV-W10",
@@ -159,82 +162,118 @@
           "THPT-G11-YR-SPACE-W01",
           "THPT-G11-YR-STAT-W01"
         ],
-        "accepted_ids": [
-          "THPT-G11-CHIII-W09-02-ANCHOR",
-          "THPT-G12-EXP01-W04",
-          "THPT-G12-EXP01-W05",
-          "THPT-G12-EXP02-W02",
-          "THPT-G12-EXP02-W04",
-          "THPT-G12-EXP02-W05",
-          "THPT-G12-YE-W01",
-          "THPT-G12-YE-W06",
-          "THPT-G12-YE-W08",
-          "THPT-G12-YE-W14",
-          "THPT-G12-YE-W16"
-        ],
-        "scope": "Scoped Written content and directly affected D6 only, existing historical S1/academic/PED evidence, exact source deltas, independent mathematics, pedagogy, rubric and public placement. No blanket Q18/CONTENT_READY or new independent reviewer.",
         "evidence": [
           {
-            "scope": "G12 year-end review 5 Written",
-            "source": "0c56221669c632c5d1c80a9782eced156c585b5f",
-            "historical_source": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
-            "receipt": "3b5b7f70e3b68895fd976a265ae6f454f774e1cc",
-            "matrix": "376731fdc3258eca77a61c731f81176fead8bfd8",
-            "scope_s1": "SGK KNTT G12 volume 2 printed pp90–93, prior audited source; SBT documented gap",
-            "ids": [
-              "THPT-G12-YE-W01",
-              "THPT-G12-YE-W06",
-              "THPT-G12-YE-W08",
-              "THPT-G12-YE-W14",
-              "THPT-G12-YE-W16"
+            "scope": "G10 ChIV",
+            "count": 4,
+            "source": "42071d49bd1009136fcf1f5bbf59e70be6807d4a",
+            "historical": "d8020a23db8ec8465f5361e3c9834cdb6a55538e",
+            "receipts": [
+              "#778",
+              "865bb30feca7b4ade054b9b53d6306044b2d5e9f",
+              "f13acb74206c00cb489e533df7792870f88830e3"
             ],
-            "proof": "Only 5 target headings differ from exact historic source, none removed. O01/O03/O04/O05/O06 mapped. Independent solutions and rubric /5: extrema −1,10 and 3,−22; area 9/2; plane 6x+4y+3z−12=0, distance 12/sqrt61, volume 4; mean4.4 variance3.24 sd1.8; conditional2/3 marginal4/7 non-independent. Source notation, conditions and self-reveal correct. SGK placements WRITTEN and CLIENT_SELF_CHECK_NO_MASTERY only for these rows; projection/reveal not certified."
+            "evidence": "Four targeted Written, FORCE D6 normalization and header/version metadata only; prior wave06 math/rubric retained; old B09–B11 S1 and transfer review, after B11 prerequisite preserved; prior corrected D5 receipt retained."
           },
           {
-            "scope": "G11 B09 grouped statistics",
-            "source": "d79ea3c061515bf5ee609df8133e13894d86752f",
-            "historical_source": "ef7dbfbd55c34abab8a384d4dac3284c100dbaac",
-            "prior_candidate": "4ea8df2ca2682d9fac8b1556852334af336930a5",
-            "receipt": "https://github.com/TMA2015/self-learning-math/issues/687",
-            "scope_s1": "Historical B09 SGK printed pp62–68; SBT pagination correction R03 preserved, no new PDF claim",
-            "ids": [
-              "THPT-G11-CHIII-W09-02-ANCHOR"
-            ],
-            "proof": "Original source section exactly matches prior candidate section; current stem preserves groups/counts; Q1=110,Q3=120 at common group boundaries, Mo=685/6; distinguish estimated quartile positions and modal concentration, /4 independent scoring. SGK Written and CĐ22 Topic Written reuse one ID."
+            "scope": "G10 ChVIII W25",
+            "count": 1,
+            "source": "e78c43ab7b2f6d3ab1b135d1ad09c7030df2c44e",
+            "receipt": "172a91ada897b5057148e5329fdfe5e2796f539e",
+            "evidence": "Exact original locked D4 source from #765. Expansion, coefficient 24 and sum 1 via P(1), /6; replay CHVIII-RD1-10 has same polynomial but asks negative count. Both public, practice only, no independent claim."
           },
           {
-            "scope": "G12 two experiences 5 Written and 4 linked D6",
-            "source": "075af6b435194302eba6b7c7813172b245d0967e",
-            "prior_candidate": "6f0a17cdc229e4b821f9ca80aef9e9ede0e6cb14",
-            "historical_source": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
-            "receipt": "b765e732fa8049482936dbededfafd7b9eb99341",
-            "pr": 733,
-            "scope_s1": "SGK G12 volume 2 printed pp81–89; historical independent R00/R01 Q18 PASS",
-            "ids": [
-              "THPT-G12-EXP01-W04",
-              "THPT-G12-EXP01-W05",
-              "THPT-G12-EXP02-W02",
-              "THPT-G12-EXP02-W04",
-              "THPT-G12-EXP02-W05"
-            ],
-            "proof": "Exact 5 outcome sections differ from historical source, 4 D6 lines changed from prior candidate, no other lines changed. Independent solutions /5: trapezoid error exactly 1/(6n²) only x², n13 minimal; nonnegative velocity 22m and uncertainty; prism six vertices nine edges five faces V6; Möbius reversed edge pairs; model report supports either Penrose or Möbius, paper/GeoGebra alternatives and limits. D6 error-bound distinction corrected, units and notation improved. SGK Written placements unscored, no actual GeoGebra/browser test claimed."
+            "scope": "G11 ChVIII",
+            "count": 3,
+            "source": "6637d7661bcc2ac982c19e352d7acc3ba11748c9",
+            "historical": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+            "receipt": "#694",
+            "evidence": "Exactly three changed headings. B28 sets and reason for intersection; B29 double-count, complement and neither wording, /4 rubrics. S1 historical pp66–75 verified."
+          },
+          {
+            "scope": "G12 B14 W07",
+            "count": 1,
+            "source": "24e463e61c6cc4f78dca45c1f19661ffed6786eb",
+            "prior": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+            "receipt": "c06fd2e187afd6ad7e848d208f218bb044a7d690",
+            "evidence": "Only W07 changed vs prior. Circle/disk and three cases, /5, O07 integrated optional after B17 explicit placement, CĐ18 reuse. Documented SBT p25 gap not Core blocker."
+          },
+          {
+            "scope": "G12 ChVI",
+            "count": 7,
+            "source": "3e827236f0aade2567c5b07c9e9647a9a10f0372",
+            "prior": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
+            "historical": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+            "receipt": "c371e9f4873caa04c0c005b625316cf07ef5449a",
+            "evidence": "Exactly seven Written headings changed, historical #731 S1 B18 pp64–71, B19 pp72–78 and Q18. Wave06 math/rubric and four D6 fixes retained; 3 prior exact section bindings unchanged. B18-W07 and B19-W05 practice only."
+          },
+          {
+            "scope": "G12 ChIII",
+            "count": 3,
+            "source": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+            "historical": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+            "receipt": "e4c296792e6791113bef9ac0490fb8448cf0ce77",
+            "evidence": "Exactly 3 Written blocks and scope header changed. Wave06 math /5 evidence: range 30→60, quartile boundary, variance 3 twice; SGK and CĐ22 same ID. S1 B09 pp75–79 B10 pp80–84."
+          },
+          {
+            "scope": "G11 supplements",
+            "count": 10,
+            "source": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
+            "historical": "b848436621c17c89919e3d3f93519d12612fe039",
+            "receipt": "3183783afc69d263328a55f937ba22e6deb1f34d",
+            "evidence": "Exactly ten changed headings and no removal. Historical #709 S1 pp99–109 and SBT pp66–72; independently checked half-life, dB, exponential model, rod-shadow angle, volume, prism diagram reasoning, trig, derivative/acceleration, common perpendicular, grouped median/mode. /4 each. No actual GeoGebra execution asserted."
           }
-        ]
+        ],
+        "scope": "All 40 previously flagged reference statuses closed by exact-source, historical S1/academic/PED evidence and scoped author checks, not independent new reviewer or blanket Q18 for 325. 285 earlier source-reviewed references retain evidence and status. Actual projection/reveal checks RELEASE only."
+      },
+      "interactive": {
+        "reviewed": 29,
+        "revised": 24,
+        "unchanged": 5,
+        "shards": [
+          {
+            "path": "items/g10-chviii-public-selfcheck.json",
+            "blob": "3d2bd1ec6b5f947ba971ccc7cb100b9d493748bb",
+            "reviewed": 14,
+            "revised": 10,
+            "historical_receipt": "172a91ada897b5057148e5329fdfe5e2796f539e",
+            "proof": "14 mathematical outcomes independently checked (14,10,17, T/F/T/F,48,168,28,100,T/F/T/F, polynomial coefficient24 and two negative coefficients, −3,−15 and0,T/T/F/F,±2). Seven former written/short-explanation tasks now reason-bearing choices, three original independent T/F sets now MULTIPLE_CHOICE with truth sets A/C,A/C,A/B, no pattern elimination. Correct math unchanged; candidate interaction types only; exact-set whole-submit grading requires RELEASE verification. Four original MCQs retained."
+          },
+          {
+            "path": "items/cd21.json",
+            "blob": "5e907cc4907d8161d2782cfe8e830933c629634b",
+            "reviewed": 8,
+            "revised": 7,
+            "historical_source": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
+            "proof": "8 outcomes checked: 5/12; 1/3,2/3,undefined; 4/21,4/7; 1/2,2/3,1/2 with independence; 2/25→3/50; 3/7;3/10,3/5;16/65,80/129. P01 already reason-bearing; P02–08 options strengthened. P06 historical PRACTICE and REPLAY both use 1/4,3/4,3/5,1/5 giving 1/2, candidate uses 1/5,4/5,3/4,1/4 giving 3/7. Regenerate both placements from single candidate at authorized cutover; no second item."
+          },
+          {
+            "path": "items/cd22.json",
+            "blob": "fa0378b972f3e34ed67201c7196fdf4dfe3865f5",
+            "reviewed": 7,
+            "revised": 7,
+            "historical_source": "c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3",
+            "knowledge_scope": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
+            "proof": "7 checked: exact count vs bounded measurement; equal-frequency no-mode SGK convention confirmed against current CĐ22 knowledge source; median4.5 unchanged and means14/3→109/6; quartiles3,6 fences−1.5,10.5; variances8/3,2/3 and corresponding SD; grouped mean21 vs raw17,25; grouped median90/7 vs raw11. Reason-bearing options, notation and misconception-based distractors improved."
+          }
+        ],
+        "readback": "All 29 records have required stem/key/solution/hints/skills, distinct option IDs and texts, valid correct sets, auto_grade=false; no schema/key error. 24 changed records and 5 unchanged. Math/PED scope only; remaining full source/coverage/level/notation not certified."
       },
       "q_audit_scope": {
-        "Q01_Q02": "Historical S1 receipt and outcome matrices for 11 scoped Written reconciled; no fresh whole-bank S1 claim.",
-        "Q05_Q06_Q08_Q10_Q12_Q13": "11 scoped Written and linked D6 verified, four D6 lines corrected; full remaining affected scope pending.",
-        "Q15_Q16": "325 IDs unique, all Written auto_grade=false; observed public Written and selfcheck placements; unchanged global IDs and placements, no private RD1 changes.",
-        "Q03_Q04_Q07_Q09_Q11_Q14_Q17": "Existing unaffected knowledge/journey evidence preserved; no whole-path certification.",
-        "Q18": "11 scoped author self-verifications, historical independent receipts retained only on original snapshots. 29 pending reference statuses. No global P0/P1=0, CONTENT_READY or release authorization."
+        "Q01_Q02": "Historical S1 and outcome scope reconciled for 29 Written; source basis for 29 interactive checked, fresh bank-wide S1/coverage certification not claimed.",
+        "Q05_Q06_Q08_Q10_Q12_Q13": "All previously flagged 40 Written content deltas closed, 29 interactive reviewed and 24 revised. Other candidate affected scopes X-G.5/6 and difficulty/coverage remain.",
+        "Q15": "325 unique Written, source/ID/skill preserved; global inventory unchanged, 33 observed placements of last 29 all Written. Other placement source fidelity remains subject to full audit.",
+        "Q16": "Public unscored content only, no private RD1, actual whole-submit and multiple-choice renderer/reveal scoring remain RELEASE tests, W25/W05 practice only.",
+        "Q03_Q04_Q07_Q09_Q11_Q14_Q17": "Knowledge and full learning-path gates outside scoped modifications preserved on prior exact evidence; no global certification or scope expansion.",
+        "Q18": "40 scoped author self-verifications (11+29), 285 historical source-reviewed statuses preserved, not blanket Academic/PED PASS. Full affected exercise-bank Q01–Q18 remains open. CONTENT_READY NO."
       },
-      "protected_scope": "No merge/deploy, no live site/runtime/Final Submit/Mastery/Firebase or private RD1 changes."
+      "protected_scope": "No merge/deploy, no LIVE/runtime/Final Submit/Mastery/Firebase/private RD1 changes; candidate MULTIPLE_CHOICE key sets only."
     },
     "previous_manifest": {
-      "commit": "2088e603893fba5d432b6ea6bf5b026d4bb1c468",
-      "blob": "a1bd46e62455a279edfe302b278b5b601af55d4f",
-      "key": "delta_audit_wave06",
-      "note": "15 Written math/rubric checks, four D6 repairs, CD15 P23–P26 reasoning variants, prior wave05 projection bindings accessible through pointer."
+      "commit": "7b2bd9643431506fd09a4e50f99de3332d4962cc",
+      "blob": "154d4aea4b3983b4922096052d3214e34e04af47",
+      "key": "delta_audit_wave07",
+      "note": "11 prior scoped Written verifications; earlier wave06 math and wave05 projection bindings accessible through exact pointers."
     }
   },
   "pending_review": {
@@ -304,7 +343,7 @@
         "coverage_depth_cp115",
         "coverage_depth_cp119"
       ],
-      "note": "Review current source and later receipts for unresolved Written source/wording/rubric/custody issues; preserve already-fixed dispositions. CP119 records B29-W03, G10-CHIX-W26-01, G12-B14-W07."
+      "note": "All 40 flagged Written reference statuses closed by wave07/08. Preserve historical checks; no blanket Q18 of other scope inferred."
     },
     "projection_flags": {
       "status": "ALL_80_TRIAGED_35_CUTOVER_BINDINGS_SPECIFIED",
@@ -333,11 +372,11 @@
     "cd18": "Content candidate complete; targeted mathematical/PED Delta and notation/render QA pending. No fresh S1 PDF or independent reviewer claim.",
     "cd19": "Candidate complete; W01/W03 scoped Delta and optional scope review; no new S1 or independent verdict.",
     "cd20": "Candidate complete; scoped interaction/PED and render review of 12 extra shared placements; original three Written retained.",
-    "cd21": "Candidate complete; P06 historical replay parameters differ from canonical practice, use canonical candidate and verify projection at cutover. Scoped interaction/PED and S1/notation verification pending.",
-    "cd22": "Candidate complete; four Written corrections applied in source, targeted Delta C verification pending. 30 added replay placements use existing IDs. Review multi-part choice conversion and X-G.5 notation/render before handoff.",
+    "cd21": "Eight CĐ21 candidate items checked, seven revised wave08. P06 historical practice AND replay source parameter mismatch, cutover regenerate both from candidate; other reused placement/coverage and full Q01–Q18 pending.",
+    "cd22": "Seven new CĐ22 practice items checked/revised wave08, four previously flagged Written scoped verifications closed. Other reused/converted placements, source/coverage and full Q01–Q18 pending.",
     "sgk_g10_chi_chiii": "72 converted interaction candidates; scoped PED/Delta, legacy public assessment rubric/notation and duplicate/near-duplicate task review pending. No public reveal or scoring changes in production. 6 previously reviewed Written refs unchanged.",
     "sgk_g10_chiv_chvi": "164 interaction conversions; legacy rubric/notation/assessment Delta and targeted Written PED/Q18 acceptance pending. B15_OUT_03 skill aliases reconciled for 3 records; source/placement IDs preserved.",
-    "sgk_g10_chvii_chix": "71 conversions; scoped Delta/PED of assessment-format changes, W26 independence assumption, W25/RD1-10 overlapping task, historic notation/rubric and reveal parity pending; no final acceptance.",
+    "sgk_g10_chvii_chix": "G10 ChVIII 14 public selfcheck reviewed, 10 revised (7 reason-bearing, 3 MULTIPLE_CHOICE truth sets) wave08; W25 scoped content accepted and practice-only. Remaining G10 ChVII/IX and related assessment-format/notation/coverage review pending; no global acceptance.",
     "sgk_g11_chi_chiii": "47 conversions; scoped Delta/PED of public selfcheck format, ChII–III practice/selfcheck reused IDs and B09-KFT01 shared data, prior W09-02 Delta, historical notation/rubric/reveal parity pending; no final acceptance.",
     "sgk_g11_chiv_chvi": "10 FirstTry conversions; 50 reused public selfcheck placements and two reused FirstTry IDs; scoped assessment-format/PED, independent evidence, notation and reveal parity pending; no final acceptance.",
     "sgk_g11_chvii_chix": "39 conversions; ChVIII Written B28-W01, B29-W01 explanation gaps and B29-W03 ambiguous neither/not-both wording; 69 reused public selfcheck placements and one reused FirstTry ID; scoped assessment-format/PED, independent evidence, notation and reveal parity pending; no final acceptance.",
@@ -357,8 +396,9 @@
         "THPT-G11-YR-SPACE-W01",
         "THPT-G11-YR-STAT-W01"
       ],
-      "note": "Ten notes addressed in existing canonical source, exact unchanged-outside-target verification. Scoped Delta PED/Q18 and regenerate projection pending; historic PASS preserved.",
-      "candidate_source_blob": "e4ea892c21ffd036c846fb7f5702e033187c410a"
+      "note": "10 changed Written accepted, wave08 #709 receipt.",
+      "candidate_source_blob": "42032cb875a8fe80967d475ec0fc72bc54c7a1df",
+      "status": "SCOPED_WRITTEN_Q18_AUTHOR_SELF_VERIFIED_PROJECTION_PENDING_RELEASE"
     },
     "g12_experience_written": {
       "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
@@ -388,10 +428,10 @@
       "receipt": "3b5b7f70e3b68895fd976a265ae6f454f774e1cc",
       "status": "SCOPED_WRITTEN_Q18_AUTHOR_SELF_VERIFIED_PROJECTION_PENDING_RELEASE"
     },
-    "sgk_g11_vii_ix_written_delta": "G11 ChVIII B28-W01/B29-W01/B29-W03 corrected in exact public source; candidate 6637d7661bcc2ac982c19e352d7acc3ba11748c9, historical reviewed blob preserved; targeted PED/Q18 and projection pending.",
-    "sgk_g12_chvi_written_delta": "Seven tasks math/rubric checked wave06; four D6 wording/notation sections corrected on 3e827236f0aade2567c5b07c9e9647a9a10f0372, three unchanged exact prior sections. B19-W05 practice only. Final applicable Q18/PED and projection pending.",
-    "g12_b14_w07_delta": "Prior corrected stem verified in 4891b4b2; further aligned rubric and reasoning on 24e463e61c6cc4f78dca45c1f19661ffed6786eb; targeted PED/Q18 and projection pending.",
-    "remaining_written_source_custody": "W26 canonical custody RESOLVED; active source blob efe4521854ede2a43628f058f81ce4566ce80049; legacy website projection restored. W25 practice-only; 2 CĐ10 stale projections now have exact canonical binding and cutover instructions. Remaining applicable Q18/PED/X-G.5 and authorized projection generation/reveal QA."
+    "sgk_g11_vii_ix_written_delta": "Three affected B28/B29 Written scoped Q18 author verified wave08, #694. Projection pending authorized RELEASE.",
+    "sgk_g12_chvi_written_delta": "All seven scoped Written accepted wave08 using #731 historical S1/PED receipt and wave06 math/rubric/D6 evidence. Projection pending authorized RELEASE.",
+    "g12_b14_w07_delta": "Scoped Written Q18 author verified wave08; integrated after B17 binding confirmed. Projection pending authorized RELEASE.",
+    "remaining_written_source_custody": "40/40 previously flagged Written reference statuses closed wave07/08, 325 source-reviewed. W26 source custody and two stale projection bindings resolved earlier. Authoring source status does not imply website projection, reveal or whole-bank Q18; actual generation and browser verification require authorized RELEASE."
   },
   "checkpoint_policy": "Replace current_progress and current checkpoint, do not append cumulative report trees. Record detailed scoped evidence in existing issue/PR or prior immutable Git snapshot; preserve exact commit/path/blob and relevant key. Carry forward unresolved issues only; retain older history pointer. Never infer PASS, authorize cutover or change protected runtime from compaction."
 }
