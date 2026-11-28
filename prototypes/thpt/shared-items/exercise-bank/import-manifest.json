@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "DELTA16_G11_CHI_III_COMPLETE_INTERACTIVE_SCOPED_REVIEW_FULL_Q01_Q18_OPEN",
+  "academic_audit": "DELTA17_G11_CHIV_VI_COMPLETE_INTERACTIVE_SCOPED_REVIEW_FULL_Q01_Q18_OPEN",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "028d851472c120fb7f5ef645aa55e401fd3344fe",
+    "as_of_commit": "475faca84623f1bea8406c822aabf8811993f767",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Process G11 ChIV–VI as one coherent work group, then ChVII–IX and remaining grade/topic groups; preserve prior scoped review snapshots. Resolve material source deltas and full applicable Q01–Q18/PED before handoff.",
-    "status": "DELTA16_G11_CHI_III_COMPLETE_INTERACTIVE_SCOPED_REVIEW_FULL_Q01_Q18_OPEN",
+    "next": "Complete G11 ChVII–IX as one work group, then remaining G10/G12 and Topic groups; preserve scoped snapshots. Resolve material source deltas and remaining applicable Q01–Q18/PED/notation before handoff.",
+    "status": "DELTA17_G11_CHIV_VI_COMPLETE_INTERACTIVE_SCOPED_REVIEW_FULL_Q01_Q18_OPEN",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,133 +112,181 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "delta_audit_wave16",
-    "delta_audit_wave16": {
-      "baseline": "1513d1b0c33b8d3d68dc74541f705986bc44c836",
-      "verified_head": "028d851472c120fb7f5ef645aa55e401fd3344fe",
+    "current_checkpoint_key": "delta_audit_wave17",
+    "delta_audit_wave17": {
+      "baseline": "f34d1f22e47c3b568920d59ceebc17a2b44af0a6",
+      "verified_head": "475faca84623f1bea8406c822aabf8811993f767",
       "inventory": {
         "interactive_unique": 2214,
         "written_unique": 325,
         "total_unique": 2539,
         "placement_rows": 4301,
-        "evidence": "Inherited inventory; no identity or placement changes."
+        "evidence": "Inherited inventory, no ID or placement changes."
       },
-      "written": "325 source-reviewed/40 flagged deltas closed; unchanged.",
+      "written": "325 source-reviewed and 40 flagged deltas closed; 24 G11 ChIV–VI Written placements retained.",
       "interactive": {
-        "reviewed": 104,
-        "revised": 15,
-        "retained": 89,
+        "reviewed": 111,
+        "revised": 18,
+        "retained": 93,
         "chapters": [
           {
-            "ch": "G11 CHI",
-            "reviewed": 65,
-            "revised": 8,
-            "old_blob": "087e39332ed87322e80948c1fe63c2fe3e43ea5a",
-            "new_blob": "f4f171f101446cc09755bb881341dcf015fad712",
+            "ch": "iv",
+            "reviewed": 34,
+            "changed": [
+              "THPT-G11-CHIV-B10-P02",
+              "THPT-G11-CHIV-B10-P03",
+              "THPT-G11-CHIV-B14-P04",
+              "THPT-G11-B14-KFT01"
+            ],
+            "old_blob": "035ebbc867878dc0e59ba4902dcbd18831759a38",
+            "new_blob": "494210c1013afa9aff30c6679e9177a5d077bbb0",
             "source_blobs": [
-              "256ceb5edc5e02aec320e83e99c8e08e035654f3",
-              "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
-              "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
-              "9177a10ade8788712c6b9fbf39789822df2a417a",
-              "0714c5b72389d29dbc8993c2ce9828fc98cf7a92"
+              "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+              "b55bf3c5122dd967b3b56fe9085eff19e58d509e",
+              "6dc44484c9e12d7dcbf49c40157645ddae577390",
+              "619162cbe9854188c5873e03a69c3fb5afc95b43",
+              "121b165f6bd95cdfa4c33d4a4def678d9121e81c"
             ],
-            "changed_ids": [
-              "THPT-G11-B02-P02",
-              "THPT-G11-B02-P07",
-              "THPT-G11-B03-P07",
-              "THPT-G11-B04-P09",
-              "THPT-G11-B03-KFT01",
-              "THPT-G11-B03-KFT05",
-              "THPT-G11-B03-KFT03",
-              "THPT-G11-B04-KFT03"
-            ],
-            "proof": "B01 C01–02:3π/4 II; 1/2,−sqrt3/2,−sqrt3/3,−sqrt3. P01–05:−4/5,−3/4;45°,sqrt2/2;10π;−2sqrt5/5,sqrt5/5,−1/2;4/5,3/5,−4/5. B02 C01–02:1/2,−1/2. P01–07:(sqrt6+sqrt2)/4;(sqrt2−sqrt6)/4; sqrt3/2;1/2;sqrt6/2;24/25,7/25;undefined (denominator0). B03 C01–04:excludeπ/2+kπ;cos even others odd;2π,π;[-1;1],max atπ/2+2kπ. P01–08:exclude kπ/2;[-1;3];π/2; increasing [0;π/2],[3π/2;5π/2], decreasing middle and compare sin;zeros π/2,3π/2;vertical ±π/2;cot decreasing;period12,max25.5 at2/10,min21 at6. B04 C01–04:−π/6 or7π/6 mod2π;±π/3 mod2π;−π/4 modπ;π/4 modπ. P01–10:π/12 or5π/12 modπ;0 orπ/3 mod2π;π/9 modπ/3;2kπ/3; kπ orπ/4+kπ/2;π/6,5π/6;π/4,3π/4;domain excludes π/2+kπ andπ/4+kπ/2,roots kπ;t1,5;|m|≤1. TRY01–06:2π,4π; coterminal +360k;1700π≈5341;−1/2,−sqrt3/2,sqrt3/3;−1,0,tan undefined,cot0;−1/2,−sqrt3/2. B02 KFT01–05:cos15 plus radicals/4;−120/169,−119/169; (sqrt3−1)/2;sqrt2/2;2sin840πt cos40πt variable envelope. B03 KFT01–06:correct sin/cos/tan/cot at 0 and π/2; x sin x even,constant no smallest positive period;sin positive (0;π),max1/min−1;cos negative (π/2;3π/2);tan nonnegative [0;π/2);cot negative (π/2;π). B04 KFT01–06:equivalence first only; sin−1/2 two families and7π/6,11π/6;cos0 two roots within period;tan2x=1 ->π/8+kπ/2;cot−1 ->3π/4+kπ;π/6≈0.5236 rad=30°. Repaired B03-KFT05 malformed x0 from exact historical source, improved reasoning-bearing options B02-P02/P07 and mathematical notation. Historical R03 source explicitly pending targeted B01/B02 PED review; do not infer approval."
+            "parity": true,
+            "valid": true
           },
           {
-            "ch": "G11 CHII",
-            "reviewed": 39,
-            "revised": 7,
-            "old_blob": "c9b96e0d236d8563f00235a83e48321a307c55dc",
-            "new_blob": "1a900b09f5f1ef992ad818b9a0d43956eb5b10cd",
+            "ch": "v",
+            "reviewed": 32,
+            "changed": [
+              "THPT-G11-CHV-B15-C02",
+              "THPT-G11-CHV-B15-P02",
+              "THPT-G11-CHV-B15-P06",
+              "THPT-G11-CHV-B16-C01",
+              "THPT-G11-CHV-B16-C02",
+              "THPT-G11-CHV-B17-C01",
+              "THPT-G11-CHV-B17-C02",
+              "THPT-G11-CHV-B17-P03",
+              "THPT-G11-CHV-B17-P05"
+            ],
+            "old_blob": "95f75fea8212be891d022373b9bc7253a22ee822",
+            "new_blob": "f74ef99904e095c6e15faa803898bd117dda66af",
             "source_blobs": [
-              "2101e2a248e0cf53ee11847b913b937cebcd0806",
-              "8634196e27b5bac8cb3089f433779b592809d955",
-              "43b285b679941e0748ad78f377ab9bbdd73ec3d3",
-              "3d0886889e383cd76963e1fa3a5eef175a389080"
+              "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+              "95bbe5ecdd73b92f88176ae0245e11b1098d8e6e",
+              "36a7c21f3ae2474318c1e857acbcb640680e1326"
             ],
-            "changed_ids": [
-              "THPT-G11-B05-P03",
-              "THPT-G11-B05-P08",
-              "THPT-G11-B06-C01",
-              "THPT-G11-B06-P01",
-              "THPT-G11-B07-C01",
-              "THPT-G11-B05-KFT01",
-              "THPT-G11-B07-KFT01"
+            "parity": true,
+            "valid": true
+          },
+          {
+            "ch": "vi",
+            "reviewed": 45,
+            "changed": [
+              "THPT-G11-CHVI-B18-C05",
+              "THPT-G11-CHVI-B18-P07",
+              "THPT-G11-B18-KFT01",
+              "THPT-G11-B20-KFT01",
+              "THPT-G11-B21-KFT01"
             ],
-            "proof": "B05 C01–04:1,4,9,16,25;1,21;2,7,12,17;decrease. P01–08:n17;15;difference −3/((n+2)(n+3))<0;[1;2);alternating bounded;32;28;[1/2;1). B06 C01–04:d−4;30;30;x10. P01–08:d4,u1=2;difference6n+3 nonconstant;16;n12;10/3;16.5 million;102;S_n=n(n+19),S14=462,S15=510,500 unattainable. B07 C01–04:q3;128;45;x6. P01–08:q−2,u4−56;q3,u1=2;22;72; x±3,q±1/3 corresponding;6400;q0 by recurrence;56.2432 million. KFT01 each B05/06/07:7,21,121. Improved proof-bearing options and FirstTry notation, exact source blocks checked. No runtime change."
+            "old_blob": "bb286a40648735489d95a13d6f2bcea3bfbd419a",
+            "new_blob": "0736b78c220f184a15ce62cbc0e0a7ff2706d7c0",
+            "source_blobs": [
+              "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+              "fd7d7a33ec276c4e03c95185c5ea49b53643b584",
+              "f872e9f19e28467e1b6ea11a943e04a2edf3b266",
+              "1587f399e7ea9557a9fc490768c589991f25dcb0",
+              "b7fb59866ce1b250e446cb957d975e7c58d037bb"
+            ],
+            "parity": true,
+            "valid": true
           }
         ],
-        "parity": "Readback: all 104 preserve original item IDs/content version/answer key/source/skill/difficulty/rubric/hints/interaction and remaining nonedited fields. Four distinct options, correct keys resolve, auto_grade=false."
+        "proof_iv": "B10 C01–02 line contained if two distinct points; collinear triple infinitely many planes. P01–04 SA; MN and AB intersect uniquely outside segment (unequal ratios); unique plane through line and outside point; triangle MNK. B11 C01–02 nonintersecting may skew; opposite parallelogram sides parallel. P01–04 SA/BC skew; midline parallel AB; MN/BC skew and through C parallel AB intersection; need distinct a,c. B12 C01–02 contained not parallel; must not be contained. P01–04 midpoint MN parallel plane; SA cuts at A; d parallel e; construct parallel AD, SN:ND=2:3 unique. B13 C01–02 disjoint planes parallel; two intersecting lines parallel Q imply plane parallel Q. P01–04 parallel intersections; one line insufficient; Thales gives MN/MK parallel base; area4/9. B14 C01–02 projection direction cannot parallel target plane; angles not preserved. P01–04 B; midpoint BC; one point; vertical projection segment AB, oblique E=2A−C,F=B+E−A, ABFE nonrectangular, nondegenerate iff direction not parallel source plane assuming valid projection. KFT B10/12/13/14: yes containment; AB contained not parallel plane; intersecting midlines parallel base; A only. Reused B11-P01 exact historical first-try blob 7dccb87d44c1734cf7b5f3c77df209b75db6e63b.",
+        "proof_v": "B15 C01–03:7,−infinity,15/4; P01–07:5/2,−4,4,1,no limit (even/odd),16/3,9m. B16 C01–03:6, left2 right3 no two-sided limit, right+infinity left−infinity; P01–07:1/4,2/3, both limits4 but value7,−1,3,+infinity,100 unattained and 90 first at45. B17 C01–03 continuous at1 when value2, discontinuous value0, right-continuous at−2; P01–07 two intervals separated1,a1,IVT root (1;2),m8,continuous on closed interval by one-sided endpoints,a1 and altered branch no a,three roots1/2/3 despite IVT not uniqueness. KFT B15 limit2 unattained; B17 limit3 != value5. Reused B16-C01 verified historical first-try blob a2242eeb50ae0f02643182bf10c315c41ce05c3b.",
+        "proof_vi": "B18 C01–05:25/4,27,undefined,real exponent via rational approximants,5/±5/−3. P01–07:a,1/4,8,a,441 million,12 not32,7.5×10^-6 normalized. B19 C01–03:3,2^-3=1/8,undefined; P01–06:3 with positive arguments,5,3 and1/2,domain x<−2 or x>1 (split only x>1),ln7/ln2,log2(12) between3/4 first integer observation4. B20 C01–04:R to positive,Oy(0;1),decreasing,domain x>2,swapped point(27;3); P01–04:1/2,3^1/2<3, log base1/2 order reversed and −2<g(3)<−1, N(2)=45 inverse log_(3/2)(N/20) N≥20. B21 C01–04:x3,x11,x<2,x≥4; P01–08:x−1/2,x2,x≥2,1<x<5,empty domain,year3,m>3 unique log2(m−3)−1,m7 gives1,m≤3 none,log2(2^x)=x and positive log domain. KFT B18/19/20/21:1/4,9,6% compound discrete; 5^3=125,log4 0 undefined,3≠4; positive exponential, swapped points, decreasing log; x<3 and log argument x>1. No mathematical key change.",
+        "repair": "18 targeted items improved reasoning-bearing options, clear conditions and notation; preserve existing complex worked explanations. Original metadata, source, key, hints/rubric, interaction preserved; all 111 valid keys, distinct options and auto_grade=false."
       },
-      "aggregate_g11_chi_iii": {
-        "scoped_interactive_ids": 153,
-        "unique": 153,
+      "placements": {
+        "blob": "ed0461148642c53f6849d943a6f1ffbbe5a11016",
+        "interactive_rows": 163,
         "counts": {
-          "chi": 85,
-          "chii": 39,
-          "chiii": 29
+          "SGK_CORE": 35,
+          "SGK_PRACTICE": 62,
+          "SGK_APPLICATION": 4,
+          "CLIENT_SELF_CHECK_NO_MASTERY": 50,
+          "SGK_FIRST_TRY": 12
         },
-        "placement_blob": "ed0461148642c53f6849d943a6f1ffbbe5a11016",
-        "placements": {
-          "SGK_CORE": 34,
-          "SGK_PRACTICE": 72,
-          "CLIENT_SELF_CHECK_NO_MASTERY": 47,
-          "SGK_FIRST_TRY": 28
-        },
-        "other_scope": "Only 14 Written placements outside these interactive IDs in ChI–III; prior Written review untouched. 181 interactive placement rows resolve to scoped IDs; no actual render/scoring claim.",
-        "source_delta": {
-          "material": [
-            {
-              "id": "THPT-G11-B02-P02",
-              "historical": "cos75°, positive (sqrt6−sqrt2)/4",
-              "candidate": "cos105°, negative (sqrt2−sqrt6)/4"
-            },
-            {
-              "id": "THPT-G11-B02-P07",
-              "historical": "tan u=1/2,tan v=1/3 -> tan sum=1",
-              "candidate": "tan u=2,tan v=1/2 -> undefined"
-            },
-            {
-              "id": "THPT-G11-B03-P04",
-              "historical": "choose increasing segment",
-              "candidate": "partition longer domain, compare and counterexample"
-            },
-            {
-              "id": "THPT-G11-B03-P08",
-              "historical": "unrestricted temperature max27",
-              "candidate": "restricted [2;10], max25.5"
-            },
-            {
-              "id": "THPT-G11-B06-P08",
-              "historical": "15 rows, sum510",
-              "candidate": "minimum rows for ≥500 and exact feasibility"
-            },
-            {
-              "id": "THPT-G11-B07-P05",
-              "historical": "all positive, x3",
-              "candidate": "real CSN, x±3, corresponding q"
-            }
-          ],
-          "disposition": "Current candidate math/skill valid; preserve authored expansions and explicit changes, not source-identical. Final applicable Delta/PED acceptance and authorized regeneration of all placements from same active candidate remain. No fresh S1 or independent review."
-        }
+        "unresolved": 0,
+        "written_rows": 24
       },
-      "q_audit_scope": "G11 ChI–III complete scoped interaction math/source and choice checks. Historical approvals not inferred from candidate validity. Full Q01–Q18, remaining notation and coverage/PED, actual projection/reveal/browser QA remain open.",
+      "source_delta": {
+        "material": [
+          [
+            "B10-P02",
+            "CM meets SAB at M",
+            "construct MN intersection ABC outside AB"
+          ],
+          [
+            "B11-P03",
+            "SA/CD skew in quadrilateral pyramid",
+            "MN/BC skew and intersection line through C"
+          ],
+          [
+            "B12-P04",
+            "midpoint MN outside base",
+            "construct N on SD with ratio 2:3"
+          ],
+          [
+            "B14-P04",
+            "generic nondegenerate projection",
+            "specific degenerate and oblique rectangle projections plus condition"
+          ],
+          [
+            "B16-P03",
+            "continuous piecewise with value4",
+            "same limits4, value7 discontinuous"
+          ],
+          [
+            "B16-P07",
+            "limit100 and meaning",
+            "also unattained and 90% threshold45h"
+          ],
+          [
+            "B17-P06",
+            "two branches continuous at0",
+            "three branches parameter and conflicting conditions"
+          ],
+          [
+            "B17-P07",
+            "x^3−5 existence not uniqueness by IVT",
+            "cubic with three explicit roots"
+          ],
+          [
+            "B19-P06",
+            "50 doubles to800 at4",
+            "600 threshold continuous and integer observation"
+          ],
+          [
+            "B20-P03",
+            "log base1/2 of2=−1",
+            "order, signs and bound log base1/2 of3"
+          ],
+          [
+            "B20-P04",
+            "N(2)=45 and increasing",
+            "add inverse and domain"
+          ],
+          [
+            "B21-P07",
+            "2^x=−1 impossible",
+            "parameter m, uniqueness and cases"
+          ]
+        ],
+        "disposition": "Candidate mathematical and skill fit validated; historical variants not identical. Preserve expanded canonical tasks, final applicable Delta/PED acceptance and same-source projection regeneration required. No fresh S1 PDF or independent review."
+      },
+      "q_audit_scope": "Complete scoped math/source/interaction G11 ChIV–VI, not whole-bank Q01–Q18. Remaining visible legacy typography, coverage/PED and RELEASE rendering/reveal/scoring QA open.",
       "protected_scope": "No runtime, private RD1, Final Submit, Mastery, Firebase, LIVE, merge/deploy."
     },
     "previous_manifest": {
-      "commit": "1513d1b0c33b8d3d68dc74541f705986bc44c836",
-      "blob": "fc5ed2913c3ec6c8bbf42701866e4a687d1aa310",
-      "key": "delta_audit_wave15"
+      "commit": "f34d1f22e47c3b568920d59ceebc17a2b44af0a6",
+      "blob": "4f7307ff4abdd5d9ce222c6e75df7669949dc564",
+      "key": "delta_audit_wave16"
     }
   },
   "pending_review": {
@@ -343,7 +391,7 @@
     "sgk_g10_chiv_chvi": "All 59 G10 ChIV–VI public selfcheck candidates scoped source/math/interaction reviewed Delta12/13; 143/143 G10 public selfcheck scope now closed. Other converted/FirstTry, legacy notation/assessment and PED/coverage remain; B15_OUT_03 mappings preserved; scoped Written deltas closed.",
     "sgk_g10_chvii_chix": "All G10 ChVII 22 public selfcheck records now math/source/interaction scoped reviewed in Delta09/10; ChVIII 14 and ChIX 6 scoped reviewed in Delta08/09. No global Q18 or full chapter coverage inferred. W25 practice-only. Actual projection and reveal RELEASE.",
     "sgk_g11_chi_chiii": "All 153 interactive IDs across G11 ChI–III scoped math/source/choice review complete (Delta14/15/16), 181 placement rows resolve, prior 14 Written placements retained. Six explicit material source deltas and historical pending B01/B02 PED receipt require applicable final acceptance, no historical equivalence or global Q18 inferred. Remaining full notation, coverage/PED and authorized RELEASE generation/QA.",
-    "sgk_g11_chiv_chvi": "10 FirstTry conversions; 50 reused public selfcheck placements and two reused FirstTry IDs; scoped assessment-format/PED, independent evidence, notation and reveal parity pending; no final acceptance.",
+    "sgk_g11_chiv_chvi": "All 111 interactive IDs G11 ChIV–VI scoped math/source/choice review complete Delta17; 163 placement rows resolve (50 reused selfcheck, 12 FirstTry incl 2 reused). 24 Written placements preserved. Twelve material historical task deltas recorded; final applicable Delta/PED acceptance, notation/coverage and authorized RELEASE generation/QA pending.",
     "sgk_g11_chvii_chix": "39 conversions; ChVIII Written B28-W01, B29-W01 explanation gaps and B29-W03 ambiguous neither/not-both wording; 69 reused public selfcheck placements and one reused FirstTry ID; scoped assessment-format/PED, independent evidence, notation and reveal parity pending; no final acceptance.",
     "sgk_g12_chi_chiii": "G12 ChI 10 dedicated interactive selfcheck scoped reviewed Delta14; CHI-END-W01/W02 Written exception unchanged. Remaining FirstTry conversions, 28 reused selfcheck and three reused FirstTry IDs and other applicable coverage/PED/notation pending; prior Written deltas closed.",
     "sgk_g12_chiv_chvi": "52 conversions; seven ChVI Written scoped notes recorded, 60 reused public selfcheck placements and one reused FirstTry ID; scoped assessment-format/PED, independence, notation and reveal parity pending; no final acceptance.",
