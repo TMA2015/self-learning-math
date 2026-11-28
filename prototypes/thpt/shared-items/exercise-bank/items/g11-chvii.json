@@ -3002,5 +3002,209 @@
         "text": "Cả hai đều có \\(V=\\frac13Sh\\)."
       }
     ]
+  },
+  {
+    "item_id": "THPT-G11-B24-KFT01",
+    "content_version": "XG6-SGK-KFT-20261128-THPT-G11-B24-KFT01",
+    "stem": "Một đoạn dốc thẳng dài \\(10\\,\\mathrm m\\), có hình chiếu vuông góc trên nền ngang dài \\(8\\,\\mathrm m\\). Tính chênh lệch độ cao giữa hai đầu đoạn dốc và sin của góc giữa đoạn dốc với nền.",
+    "answer_key": "\\(6\\,\\mathrm m;\\ \\frac35\\).",
+    "worked_solution": "Đoạn dốc là cạnh huyền của tam giác vuông, cạnh nằm ngang dài \\(8\\,\\mathrm m\\). Chênh cao \\(h=\\sqrt{10^2-8^2}=6\\,\\mathrm m\\). Góc dốc là góc giữa đoạn dốc và hình chiếu nằm ngang, nên \\(\\sin\\alpha=\\frac{h}{10}=\\frac35\\). Tỉ số \\(\\frac8{10}\\) là cos, không phải sin.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B24-ANGLE_APPLICATION",
+      "G11-B24-LINE_PLANE_ANGLE"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Vẽ tam giác vuông có cạnh huyền là đoạn dốc và một cạnh góc vuông nằm ngang."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0bd7550087f455264e2b5e5d3214078e063ccb1c",
+      "heading_id": "1.7. Tự thử trước bài luyện tập",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md",
+        "blob": "0bd7550087f455264e2b5e5d3214078e063ccb1c",
+        "commit": "7d5b2e3abe0dac7419205e597e75b34dbcf094b2"
+      },
+      "locator": "1.7. Tự thử trước bài luyện tập",
+      "line": 35,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-CHVII-B24-C05",
+        "THPT-G11-CHVII-B24-P02"
+      ],
+      "answer_origin": "SEPARATED_FROM_SOURCE_PRE_REVEALED_RESULT",
+      "distinct_task_reason": "Exact legacy knowledge exercise preserved as separate interactive first attempt; no identical canonical exercise in lesson bank."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu lấy độ dài hình chiếu làm cạnh đối của góc dốc, ôn Bài 24 phần góc giữa đường thẳng và mặt phẳng, xác định góc ngay trên nền; rồi làm câu độ cao 5 m, đoạn xiên 13 m và câu cầu trượt dài 5 m.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(8\\,\\mathrm m;\\ \\frac45\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(6\\,\\mathrm m;\\ \\frac35\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(2\\,\\mathrm m;\\ \\frac15\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(6\\,\\mathrm m;\\ \\frac45\\)."
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G11-B25-KFT01",
+    "content_version": "XG6-SGK-KFT-20261128-THPT-G11-B25-KFT01",
+    "stem": "Cho hình chóp không suy biến \\(S.ABCD\\), \\(SA\\perp(ABCD)\\). Kết luận nào luôn đúng?",
+    "answer_key": "Mặt \\((SAB)\\) vuông góc với đáy; không thể chỉ từ giả thiết kết luận mọi mặt bên đều vuông góc với đáy.",
+    "worked_solution": "Vì \\(SA\\subset(SAB)\\) và \\(SA\\perp(ABCD)\\), mặt phẳng \\((SAB)\\) chứa một đường thẳng vuông góc với mặt đáy; do đó \\((SAB)\\perp(ABCD)\\). Không có căn cứ áp dụng tiêu chuẩn này cho các mặt bên không chứa \\(SA\\). Chẳng hạn với đáy vuông, mặt \\((SBC)\\) nói chung nghiêng so với đáy.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B25-PERP_PLANES"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "UNDERSTAND",
+    "hints": [
+      "Tìm một đường thẳng nằm trong mặt bên và vuông góc với mặt đáy."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "c6ba455035041fbe16ee66f346cb78477ceaaa73",
+      "heading_id": "1.7. Tự thử trước bài luyện tập",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md",
+        "blob": "c6ba455035041fbe16ee66f346cb78477ceaaa73",
+        "commit": "7d5b2e3abe0dac7419205e597e75b34dbcf094b2"
+      },
+      "locator": "1.7. Tự thử trước bài luyện tập",
+      "line": 35,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-CHVII-B25-C03",
+        "THPT-G11-CHVII-B25-C04"
+      ],
+      "answer_origin": "SEPARATED_FROM_SOURCE_PRE_REVEALED_RESULT",
+      "distinct_task_reason": "Exact legacy knowledge exercise preserved as separate interactive first attempt; no identical canonical exercise in lesson bank."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu suy mọi mặt bên cùng vuông góc với đáy, ôn Bài 25 dấu hiệu hai mặt phẳng vuông góc; kiểm riêng từng mặt có chứa đường vuông góc với đáy hay không, rồi luyện câu dùng dấu hiệu và câu hai mặt vuông góc theo giao tuyến.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mọi mặt bên đều vuông góc với đáy."
+      },
+      {
+        "id": "B",
+        "text": "Mặt \\((SAB)\\) song song với đáy."
+      },
+      {
+        "id": "C",
+        "text": "Mặt \\((SAB)\\) vuông góc với đáy; không thể chỉ từ giả thiết kết luận mọi mặt bên đều vuông góc với đáy."
+      },
+      {
+        "id": "D",
+        "text": "Không có mặt bên nào vuông góc với đáy."
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G11-B27-KFT01",
+    "content_version": "XG6-SGK-KFT-20261128-THPT-G11-B27-KFT01",
+    "stem": "Một lăng trụ và một hình chóp đều có diện tích đáy \\(18\\,\\mathrm{cm}^2\\), chiều cao \\(5\\,\\mathrm{cm}\\). Một hình chóp cụt đều có diện tích hai đáy \\(16\\,\\mathrm{cm}^2\\) và \\(4\\,\\mathrm{cm}^2\\), chiều cao \\(3\\,\\mathrm{cm}\\). Tính ba thể tích theo thứ tự.",
+    "answer_key": "\\(90;\\ 30;\\ 28\\) (cm³).",
+    "worked_solution": "Lăng trụ: \\(V=18\\cdot5=90\\,\\mathrm{cm}^3\\). Chóp: \\(V=\\frac13\\cdot18\\cdot5=30\\,\\mathrm{cm}^3\\). Chóp cụt đều: \\(V=\\frac33(16+4+\\sqrt{16\\cdot4})=16+4+8=28\\,\\mathrm{cm}^3\\). Công thức chóp cụt không phải trung bình cộng diện tích hai đáy nhân chiều cao.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B27-PRISM_VOLUME",
+      "G11-B27-PYRAMID_VOLUME",
+      "G11-B27-FRUSTUM_VOLUME"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "APPLY",
+    "hints": [
+      "Phân biệt ba công thức và dùng chiều cao vuông góc với đáy."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "abd417ddb6d89528eaa8da28c132a126a26738e0",
+      "heading_id": "1.7. Tự thử trước bài luyện tập",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md",
+        "blob": "abd417ddb6d89528eaa8da28c132a126a26738e0",
+        "commit": "7d5b2e3abe0dac7419205e597e75b34dbcf094b2"
+      },
+      "locator": "1.7. Tự thử trước bài luyện tập",
+      "line": 35,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-CHVII-B27-P01",
+        "THPT-G11-CHVII-B27-P02"
+      ],
+      "answer_origin": "SEPARATED_FROM_SOURCE_PRE_REVEALED_RESULT",
+      "distinct_task_reason": "Exact legacy knowledge exercise preserved as separate interactive first attempt; no identical canonical exercise in lesson bank."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên hệ số một phần ba hoặc bỏ căn tích hai diện tích đáy, ôn Bài 27 phần thể tích lăng trụ, chóp và chóp cụt; rồi làm câu so sánh lăng trụ với chóp và câu chóp cụt có đáy 16 và 9.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(90;\\ 90;\\ 30\\) (cm³)."
+      },
+      {
+        "id": "B",
+        "text": "\\(30;\\ 90;\\ 28\\) (cm³)."
+      },
+      {
+        "id": "C",
+        "text": "\\(90;\\ 30;\\ 20\\) (cm³)."
+      },
+      {
+        "id": "D",
+        "text": "\\(90;\\ 30;\\ 28\\) (cm³)."
+      }
+    ]
   }
 ]
