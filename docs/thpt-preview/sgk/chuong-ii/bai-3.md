@@ -233,7 +233,7 @@
 
     <span data-thpt-help-id="HELP-G10-B03-02" hidden></span>
 
-    ??? tip "4.2. Không đảo dấu khi chuyển vế hoặc nhầm nét liền với nét đứt"
+    ??? tip "4.2. Quên đổi chiều bất phương trình khi nhân hoặc chia hai vế với số âm, hoặc nhầm nét liền với nét đứt"
 
         **Dấu hiệu:** Từ \(3x-y<2\) kết luận \(y<3x-2\); hoặc vẽ đường biên nét liền cho dấu \(<\).
 

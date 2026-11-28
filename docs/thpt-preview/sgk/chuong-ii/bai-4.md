@@ -79,7 +79,7 @@
 
     Mỗi bất phương trình bậc nhất hai ẩn xác định một nửa mặt phẳng nghiệm. Khi vẽ tất cả chúng trên **cùng một hệ trục**, ta chỉ giữ phần **nằm đồng thời trong từng miền**. Phần ấy gọi là **miền nghiệm của hệ** hay **miền khả thi**.
 
-    Quay lại xưởng ở phần Khám phá. Bốn giới hạn \(x\ge0,\ y\ge0,\ x+y\le6,\ 2x+y\le8\) tạo nên miền tứ giác trong hình dưới. Em hãy đọc lần lượt **hai trục không âm**, **đường \(x+y=6\)** và **đường \(2x+y=8\)** rồi nhìn phần được tô nằm trong **cả bốn** miền. Vì tất cả dấu đều có bằng nên các cạnh cũng thuộc miền nghiệm.
+    Quay lại xưởng ở phần Khám phá. Bốn giới hạn \(x\ge0,\ y\ge0,\ x+y\le6,\ 2x+y\le8\) tạo nên miền tứ giác trong hình dưới. Em hãy đọc lần lượt **hai nửa mặt phẳng ứng với x không âm và y không âm**, **đường \(x+y=6\)** và **đường \(2x+y=8\)** rồi nhìn phần được tô nằm trong **cả bốn** miền. Vì tất cả dấu đều có bằng nên các cạnh cũng thuộc miền nghiệm.
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure">
     <img src="../../../../assets/images/thpt/THPT_G10_B04_FEASIBLE_POLYGON_D5_R01.svg" loading="lazy" alt="Tứ giác nghiệm cho x và y không âm, x cộng y không vượt 6, 2x cộng y không vượt 8; các đỉnh O(0,0), A(4,0), B(2,4), C(0,6)">
