@@ -1739,5 +1739,130 @@
       }
     ],
     "exercise_type": "INTERACTIVE"
+  },
+  {
+    "item_id": "THPT-G11-B16-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G11-B16-L1-01",
+    "stem": "Giả sử hàm \\(f\\) xác định trong một lân cận của \\(a\\) có thể bỏ điểm \\(a\\). Điều kiện nào bảo đảm \\(\\lim_{x\\to a}f(x)=L\\) với \\(L\\) hữu hạn?",
+    "answer_key": "Hai giới hạn một phía cùng tồn tại và đều bằng \\(L\\).",
+    "worked_solution": "Giới hạn hữu hạn hai phía tồn tại và bằng \\(L\\) khi và chỉ khi cả \\(\\lim_{x\\to a^-}f(x)\\) và \\(\\lim_{x\\to a^+}f(x)\\) đều bằng \\(L\\). Giá trị \\(f(a)\\) không quyết định giới hạn này.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G11-B16-LIMIT_AT_POINT",
+      "G11-B16-ONE_SIDED"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ sự tiến gần từ cả bên trái và bên phải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/content-drafts/G11_CHV_B15_B17_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+        "blob": "13e33dfb9fe11c0d0a7e9c5aa509a8b5ed31b4de",
+        "commit": "792e227269ed0b0a50cc2b3b5d32162b34eab6e0"
+      },
+      "related_item_ids": [
+        "THPT-G11-CHV-B16-C01",
+        "THPT-G11-CHV-B16-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đồng nhất giá trị tại điểm với giới hạn, đọc Bài 16 phần giới hạn một phía; luyện câu xét hàm phân thức rút gọn và câu có hai biểu thức hai phía.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hai giới hạn một phía cùng tồn tại và đều bằng \\(L\\)."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ cần \\(f(a)=L\\)."
+      },
+      {
+        "id": "C",
+        "text": "Một giới hạn một phía bằng \\(L\\), phía còn lại tùy ý."
+      },
+      {
+        "id": "D",
+        "text": "Hai giới hạn một phía tồn tại nhưng khác nhau."
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G11-B17-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G11-B17-L1-01",
+    "stem": "Cho \\(a\\) nằm trong một khoảng xác định của hàm \\(f\\). Phát biểu nào là điều kiện để \\(f\\) liên tục tại \\(a\\)?",
+    "answer_key": "Giới hạn khi \\(x\\to a\\) tồn tại và bằng \\(f(a)\\).",
+    "worked_solution": "Tính liên tục tại điểm trong miền xác định đòi hỏi \\(\\lim_{x\\to a}f(x)=f(a)\\). Giá trị tại điểm và giới hạn hữu hạn phải phù hợp; riêng từng điều kiện không đủ.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_POINT"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ mối quan hệ giữa giá trị tại điểm và giới hạn của hàm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/content-drafts/G11_CHV_B15_B17_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+        "blob": "13e33dfb9fe11c0d0a7e9c5aa509a8b5ed31b4de",
+        "commit": "792e227269ed0b0a50cc2b3b5d32162b34eab6e0"
+      },
+      "related_item_ids": [
+        "THPT-G11-CHV-B17-C01",
+        "THPT-G11-CHV-B17-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chỉ kiểm sự tồn tại của giới hạn hoặc của giá trị tại điểm, ôn Bài 17 định nghĩa liên tục rồi đối chiếu hai câu hàm được gán giá trị tại điểm loại.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ cần \\(f(a)\\) xác định."
+      },
+      {
+        "id": "B",
+        "text": "Chỉ cần giới hạn hữu hạn khi \\(x\\to a\\) tồn tại."
+      },
+      {
+        "id": "C",
+        "text": "Giới hạn khi \\(x\\to a\\) tồn tại và bằng \\(f(a)\\)."
+      },
+      {
+        "id": "D",
+        "text": "Giới hạn bên trái và bên phải tồn tại nhưng khác nhau."
+      }
+    ]
   }
 ]
