@@ -327,91 +327,211 @@
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
-    "item_id": "THPT-G11-B05-P01"
+    "item_id": "THPT-G11-B05-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
-    "item_id": "THPT-G11-B05-P02"
+    "item_id": "THPT-G11-B05-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
-    "item_id": "THPT-G11-B05-P03"
+    "item_id": "THPT-G11-B05-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
-    "item_id": "THPT-G11-B05-P04"
+    "item_id": "THPT-G11-B05-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
-    "item_id": "THPT-G11-B05-P05"
+    "item_id": "THPT-G11-B05-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
-    "item_id": "THPT-G11-B06-P01"
+    "item_id": "THPT-G11-B06-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
-    "item_id": "THPT-G11-B06-P02"
+    "item_id": "THPT-G11-B06-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
-    "item_id": "THPT-G11-B06-P03"
+    "item_id": "THPT-G11-B06-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
-    "item_id": "THPT-G11-B06-P05"
+    "item_id": "THPT-G11-B06-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
-    "item_id": "THPT-G11-B06-P06"
+    "item_id": "THPT-G11-B06-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
-    "item_id": "THPT-G11-B07-P01"
+    "item_id": "THPT-G11-B07-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
-    "item_id": "THPT-G11-B07-P02"
+    "item_id": "THPT-G11-B07-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
-    "item_id": "THPT-G11-B07-P03"
+    "item_id": "THPT-G11-B07-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 14,
-    "item_id": "THPT-G11-B07-P05"
+    "item_id": "THPT-G11-B07-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 15,
-    "item_id": "THPT-G11-B07-P06"
+    "item_id": "THPT-G11-B07-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:B15:CORE",
@@ -711,79 +831,183 @@
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
-    "item_id": "THPT-G11-CHV-B15-P01"
+    "item_id": "THPT-G11-CHV-B15-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
-    "item_id": "THPT-G11-CHV-B15-P02"
+    "item_id": "THPT-G11-CHV-B15-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
-    "item_id": "THPT-G11-CHV-B15-P05"
+    "item_id": "THPT-G11-CHV-B15-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
-    "item_id": "THPT-G11-CHV-B15-P06"
+    "item_id": "THPT-G11-CHV-B15-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
-    "item_id": "THPT-G11-CHV-B16-P01"
+    "item_id": "THPT-G11-CHV-B16-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
-    "item_id": "THPT-G11-CHV-B16-P03"
+    "item_id": "THPT-G11-CHV-B16-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
-    "item_id": "THPT-G11-CHV-B16-P04"
+    "item_id": "THPT-G11-CHV-B16-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
-    "item_id": "THPT-G11-CHV-B16-P06"
+    "item_id": "THPT-G11-CHV-B16-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
-    "item_id": "THPT-G11-CHV-B16-P07"
+    "item_id": "THPT-G11-CHV-B16-P07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
-    "item_id": "THPT-G11-CHV-B17-P01"
+    "item_id": "THPT-G11-CHV-B17-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
-    "item_id": "THPT-G11-CHV-B17-P02"
+    "item_id": "THPT-G11-CHV-B17-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
-    "item_id": "THPT-G11-CHV-B17-P03"
+    "item_id": "THPT-G11-CHV-B17-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
-    "item_id": "THPT-G11-CHV-B17-P05"
+    "item_id": "THPT-G11-CHV-B17-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:B18:CORE",
@@ -1178,121 +1402,281 @@
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
-    "item_id": "THPT-G11-CHVI-B18-P06"
+    "item_id": "THPT-G11-CHVI-B18-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
-    "item_id": "THPT-G11-CHVI-B18-P03"
+    "item_id": "THPT-G11-CHVI-B18-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
-    "item_id": "THPT-G11-CHVI-B18-P05"
+    "item_id": "THPT-G11-CHVI-B18-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
-    "item_id": "THPT-G11-CHVI-B18-P07"
+    "item_id": "THPT-G11-CHVI-B18-P07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
-    "item_id": "THPT-G11-CHVI-B19-P02"
+    "item_id": "THPT-G11-CHVI-B19-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
-    "item_id": "THPT-G11-CHVI-B19-P03"
+    "item_id": "THPT-G11-CHVI-B19-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
-    "item_id": "THPT-G11-CHVI-B19-P04"
+    "item_id": "THPT-G11-CHVI-B19-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
-    "item_id": "THPT-G11-CHVI-B19-P05"
+    "item_id": "THPT-G11-CHVI-B19-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
-    "item_id": "THPT-G11-CHVI-B19-P06"
+    "item_id": "THPT-G11-CHVI-B19-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
-    "item_id": "THPT-G11-CHVI-B20-P01"
+    "item_id": "THPT-G11-CHVI-B20-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
-    "item_id": "THPT-G11-CHVI-B20-P02"
+    "item_id": "THPT-G11-CHVI-B20-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
-    "item_id": "THPT-G11-CHVI-B20-P03"
+    "item_id": "THPT-G11-CHVI-B20-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
-    "item_id": "THPT-G11-CHVI-B20-P04"
+    "item_id": "THPT-G11-CHVI-B20-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 14,
-    "item_id": "THPT-G11-CHVI-B21-P07"
+    "item_id": "THPT-G11-CHVI-B21-P07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 15,
-    "item_id": "THPT-G11-CHVI-B21-P02"
+    "item_id": "THPT-G11-CHVI-B21-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 16,
-    "item_id": "THPT-G11-CHVI-B21-P03"
+    "item_id": "THPT-G11-CHVI-B21-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 17,
-    "item_id": "THPT-G11-CHVI-B21-P04"
+    "item_id": "THPT-G11-CHVI-B21-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 18,
-    "item_id": "THPT-G11-CHVI-B21-P05"
+    "item_id": "THPT-G11-CHVI-B21-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 19,
-    "item_id": "THPT-G11-CHVI-B21-P06"
+    "item_id": "THPT-G11-CHVI-B21-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 20,
-    "item_id": "THPT-G11-CHVI-B21-P08"
+    "item_id": "THPT-G11-CHVI-B21-P08",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B01:CORE",
@@ -1618,7 +2002,15 @@
     "order": 1,
     "item_id": "THPT-G11-CHI-RD1-01",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1626,7 +2018,15 @@
     "order": 2,
     "item_id": "THPT-G11-CHI-RD1-02",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1634,7 +2034,15 @@
     "order": 3,
     "item_id": "THPT-G11-CHI-RD1-03",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1642,7 +2050,15 @@
     "order": 4,
     "item_id": "THPT-G11-CHI-RD1-04",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1650,7 +2066,15 @@
     "order": 5,
     "item_id": "THPT-G11-CHI-RD1-05",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1658,7 +2082,15 @@
     "order": 6,
     "item_id": "THPT-G11-CHI-RD1-06",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1666,7 +2098,15 @@
     "order": 7,
     "item_id": "THPT-G11-CHI-RD1-07",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1674,7 +2114,15 @@
     "order": 8,
     "item_id": "THPT-G11-CHI-RD1-08",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1682,7 +2130,15 @@
     "order": 9,
     "item_id": "THPT-G11-CHI-RD1-09",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1690,7 +2146,15 @@
     "order": 10,
     "item_id": "THPT-G11-CHI-RD1-10",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1698,7 +2162,15 @@
     "order": 11,
     "item_id": "THPT-G11-CHI-RD1-11",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1706,7 +2178,15 @@
     "order": 12,
     "item_id": "THPT-G11-CHI-RD1-12",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1714,7 +2194,15 @@
     "order": 13,
     "item_id": "THPT-G11-CHI-RD1-13",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1722,7 +2210,15 @@
     "order": 14,
     "item_id": "THPT-G11-CHI-RD1-14",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1730,7 +2226,15 @@
     "order": 15,
     "item_id": "THPT-G11-CHI-RD1-15",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1738,7 +2242,15 @@
     "order": 16,
     "item_id": "THPT-G11-CHI-RD1-16",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1746,7 +2258,15 @@
     "order": 17,
     "item_id": "THPT-G11-CHI-RD1-17",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1754,7 +2274,15 @@
     "order": 18,
     "item_id": "THPT-G11-CHI-RD1-18",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1762,7 +2290,15 @@
     "order": 19,
     "item_id": "THPT-G11-CHI-RD1-19",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:SELF_CHECK",
@@ -1770,7 +2306,15 @@
     "order": 20,
     "item_id": "THPT-G11-CHI-RD1-20",
     "original_type": "WRITTEN_RUBRIC",
-    "optional": false
+    "optional": false,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:B31:PRACTICE",
@@ -2459,187 +3003,435 @@
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
-    "item_id": "THPT-G11-CHIX-B31-P01"
+    "item_id": "THPT-G11-CHIX-B31-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
-    "item_id": "THPT-G11-CHIX-B31-P02"
+    "item_id": "THPT-G11-CHIX-B31-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
-    "item_id": "THPT-G11-CHIX-B31-P03"
+    "item_id": "THPT-G11-CHIX-B31-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
-    "item_id": "THPT-G11-CHIX-B31-P04"
+    "item_id": "THPT-G11-CHIX-B31-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
-    "item_id": "THPT-G11-CHIX-B31-P05"
+    "item_id": "THPT-G11-CHIX-B31-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
-    "item_id": "THPT-G11-CHIX-B31-P06"
+    "item_id": "THPT-G11-CHIX-B31-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
-    "item_id": "THPT-G11-CHIX-B31-P07"
+    "item_id": "THPT-G11-CHIX-B31-P07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
-    "item_id": "THPT-G11-CHIX-B31-P08"
+    "item_id": "THPT-G11-CHIX-B31-P08",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
-    "item_id": "THPT-G11-CHIX-B31-P09"
+    "item_id": "THPT-G11-CHIX-B31-P09",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
-    "item_id": "THPT-G11-CHIX-B31-P10"
+    "item_id": "THPT-G11-CHIX-B31-P10",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
-    "item_id": "THPT-G11-CHIX-B32-P01"
+    "item_id": "THPT-G11-CHIX-B32-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
-    "item_id": "THPT-G11-CHIX-B32-P02"
+    "item_id": "THPT-G11-CHIX-B32-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
-    "item_id": "THPT-G11-CHIX-B32-P03"
+    "item_id": "THPT-G11-CHIX-B32-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 14,
-    "item_id": "THPT-G11-CHIX-B32-P04"
+    "item_id": "THPT-G11-CHIX-B32-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 15,
-    "item_id": "THPT-G11-CHIX-B32-P05"
+    "item_id": "THPT-G11-CHIX-B32-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 16,
-    "item_id": "THPT-G11-CHIX-B32-P06"
+    "item_id": "THPT-G11-CHIX-B32-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 17,
-    "item_id": "THPT-G11-CHIX-B32-P07"
+    "item_id": "THPT-G11-CHIX-B32-P07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 18,
-    "item_id": "THPT-G11-CHIX-B32-P08"
+    "item_id": "THPT-G11-CHIX-B32-P08",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 19,
-    "item_id": "THPT-G11-CHIX-B32-P09"
+    "item_id": "THPT-G11-CHIX-B32-P09",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 20,
-    "item_id": "THPT-G11-CHIX-B32-P10"
+    "item_id": "THPT-G11-CHIX-B32-P10",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 21,
-    "item_id": "THPT-G11-CHIX-B32-P11"
+    "item_id": "THPT-G11-CHIX-B32-P11",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 22,
-    "item_id": "THPT-G11-CHIX-B32-P12"
+    "item_id": "THPT-G11-CHIX-B32-P12",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 23,
-    "item_id": "THPT-G11-CHIX-B32-P13"
+    "item_id": "THPT-G11-CHIX-B32-P13",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 24,
-    "item_id": "THPT-G11-CHIX-B32-P14"
+    "item_id": "THPT-G11-CHIX-B32-P14",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 25,
-    "item_id": "THPT-G11-CHIX-B32-P15"
+    "item_id": "THPT-G11-CHIX-B32-P15",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 26,
-    "item_id": "THPT-G11-CHIX-B33-P01"
+    "item_id": "THPT-G11-CHIX-B33-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 27,
-    "item_id": "THPT-G11-CHIX-B33-P02"
+    "item_id": "THPT-G11-CHIX-B33-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 28,
-    "item_id": "THPT-G11-CHIX-B33-P03"
+    "item_id": "THPT-G11-CHIX-B33-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 29,
-    "item_id": "THPT-G11-CHIX-B33-P04"
+    "item_id": "THPT-G11-CHIX-B33-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 30,
-    "item_id": "THPT-G11-CHIX-B33-P05"
+    "item_id": "THPT-G11-CHIX-B33-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 31,
-    "item_id": "THPT-G11-CHIX-CHIX-P01"
+    "item_id": "THPT-G11-CHIX-CHIX-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:B10:CORE",
@@ -3003,103 +3795,239 @@
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
-    "item_id": "THPT-G11-CHIV-B10-P01"
+    "item_id": "THPT-G11-CHIV-B10-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
-    "item_id": "THPT-G11-CHIV-B10-P02"
+    "item_id": "THPT-G11-CHIV-B10-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
-    "item_id": "THPT-G11-CHIV-B10-P03"
+    "item_id": "THPT-G11-CHIV-B10-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
-    "item_id": "THPT-G11-CHIV-B10-P04"
+    "item_id": "THPT-G11-CHIV-B10-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
-    "item_id": "THPT-G11-CHIV-B11-P01"
+    "item_id": "THPT-G11-CHIV-B11-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
-    "item_id": "THPT-G11-CHIV-B11-P02"
+    "item_id": "THPT-G11-CHIV-B11-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
-    "item_id": "THPT-G11-CHIV-B12-P01"
+    "item_id": "THPT-G11-CHIV-B12-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
-    "item_id": "THPT-G11-CHIV-B12-P02"
+    "item_id": "THPT-G11-CHIV-B12-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
-    "item_id": "THPT-G11-CHIV-B12-P03"
+    "item_id": "THPT-G11-CHIV-B12-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
-    "item_id": "THPT-G11-CHIV-B12-P04"
+    "item_id": "THPT-G11-CHIV-B12-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
-    "item_id": "THPT-G11-CHIV-B13-P01"
+    "item_id": "THPT-G11-CHIV-B13-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
-    "item_id": "THPT-G11-CHIV-B13-P02"
+    "item_id": "THPT-G11-CHIV-B13-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
-    "item_id": "THPT-G11-CHIV-B13-P03"
+    "item_id": "THPT-G11-CHIV-B13-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 14,
-    "item_id": "THPT-G11-CHIV-B14-P01"
+    "item_id": "THPT-G11-CHIV-B14-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 15,
-    "item_id": "THPT-G11-CHIV-B14-P02"
+    "item_id": "THPT-G11-CHIV-B14-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 16,
-    "item_id": "THPT-G11-CHIV-B14-P03"
+    "item_id": "THPT-G11-CHIV-B14-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 17,
-    "item_id": "THPT-G11-CHIV-B14-P04"
+    "item_id": "THPT-G11-CHIV-B14-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:B22:PRACTICE",
@@ -3757,109 +4685,253 @@
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
-    "item_id": "THPT-G11-CHVII-B22-P01"
+    "item_id": "THPT-G11-CHVII-B22-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
-    "item_id": "THPT-G11-CHVII-B22-P02"
+    "item_id": "THPT-G11-CHVII-B22-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
-    "item_id": "THPT-G11-CHVII-B22-P03"
+    "item_id": "THPT-G11-CHVII-B22-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
-    "item_id": "THPT-G11-CHVII-B23-P01"
+    "item_id": "THPT-G11-CHVII-B23-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
-    "item_id": "THPT-G11-CHVII-B23-P02"
+    "item_id": "THPT-G11-CHVII-B23-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
-    "item_id": "THPT-G11-CHVII-B23-P03"
+    "item_id": "THPT-G11-CHVII-B23-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
-    "item_id": "THPT-G11-CHVII-B24-P01"
+    "item_id": "THPT-G11-CHVII-B24-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
-    "item_id": "THPT-G11-CHVII-B24-P02"
+    "item_id": "THPT-G11-CHVII-B24-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
-    "item_id": "THPT-G11-CHVII-B24-P03"
+    "item_id": "THPT-G11-CHVII-B24-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
-    "item_id": "THPT-G11-CHVII-B25-P01"
+    "item_id": "THPT-G11-CHVII-B25-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
-    "item_id": "THPT-G11-CHVII-B25-P02"
+    "item_id": "THPT-G11-CHVII-B25-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
-    "item_id": "THPT-G11-CHVII-B25-P03"
+    "item_id": "THPT-G11-CHVII-B25-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
-    "item_id": "THPT-G11-CHVII-B26-P01"
+    "item_id": "THPT-G11-CHVII-B26-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 14,
-    "item_id": "THPT-G11-CHVII-B26-P02"
+    "item_id": "THPT-G11-CHVII-B26-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 15,
-    "item_id": "THPT-G11-CHVII-B26-P03"
+    "item_id": "THPT-G11-CHVII-B26-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 16,
-    "item_id": "THPT-G11-CHVII-B27-P01"
+    "item_id": "THPT-G11-CHVII-B27-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 17,
-    "item_id": "THPT-G11-CHVII-B27-P02"
+    "item_id": "THPT-G11-CHVII-B27-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 18,
-    "item_id": "THPT-G11-CHVII-B27-P03"
+    "item_id": "THPT-G11-CHVII-B27-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:B28:CORE",
@@ -4228,121 +5300,281 @@
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
-    "item_id": "THPT-G11-CHVIII-B28-P01"
+    "item_id": "THPT-G11-CHVIII-B28-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
-    "item_id": "THPT-G11-CHVIII-B28-P02"
+    "item_id": "THPT-G11-CHVIII-B28-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
-    "item_id": "THPT-G11-CHVIII-B28-P03"
+    "item_id": "THPT-G11-CHVIII-B28-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
-    "item_id": "THPT-G11-CHVIII-B28-P04"
+    "item_id": "THPT-G11-CHVIII-B28-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
-    "item_id": "THPT-G11-CHVIII-B28-P05"
+    "item_id": "THPT-G11-CHVIII-B28-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
-    "item_id": "THPT-G11-CHVIII-B28-P06"
+    "item_id": "THPT-G11-CHVIII-B28-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
-    "item_id": "THPT-G11-CHVIII-B29-P01"
+    "item_id": "THPT-G11-CHVIII-B29-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
-    "item_id": "THPT-G11-CHVIII-B29-P02"
+    "item_id": "THPT-G11-CHVIII-B29-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
-    "item_id": "THPT-G11-CHVIII-B29-P03"
+    "item_id": "THPT-G11-CHVIII-B29-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
-    "item_id": "THPT-G11-CHVIII-B29-P04"
+    "item_id": "THPT-G11-CHVIII-B29-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
-    "item_id": "THPT-G11-CHVIII-B29-P05"
+    "item_id": "THPT-G11-CHVIII-B29-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
-    "item_id": "THPT-G11-CHVIII-B29-P06"
+    "item_id": "THPT-G11-CHVIII-B29-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
-    "item_id": "THPT-G11-CHVIII-B30-P01"
+    "item_id": "THPT-G11-CHVIII-B30-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 14,
-    "item_id": "THPT-G11-CHVIII-B30-P02"
+    "item_id": "THPT-G11-CHVIII-B30-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 15,
-    "item_id": "THPT-G11-CHVIII-B30-P03"
+    "item_id": "THPT-G11-CHVIII-B30-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 16,
-    "item_id": "THPT-G11-CHVIII-B30-P04"
+    "item_id": "THPT-G11-CHVIII-B30-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 17,
-    "item_id": "THPT-G11-CHVIII-B30-P05"
+    "item_id": "THPT-G11-CHVIII-B30-P05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 18,
-    "item_id": "THPT-G11-CHVIII-B30-P06"
+    "item_id": "THPT-G11-CHVIII-B30-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 19,
-    "item_id": "THPT-G11-CHVIII-B30-P07"
+    "item_id": "THPT-G11-CHVIII-B30-P07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 20,
-    "item_id": "THPT-G11-CHVIII-CHVIII-P01"
+    "item_id": "THPT-G11-CHVIII-CHVIII-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:B08:CORE",
@@ -4623,73 +5855,169 @@
     "collection": "SGK:G11:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
-    "item_id": "THPT-G11-B08-P01"
+    "item_id": "THPT-G11-B08-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
-    "item_id": "THPT-G11-B08-P02"
+    "item_id": "THPT-G11-B08-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
-    "item_id": "THPT-G11-B08-P03"
+    "item_id": "THPT-G11-B08-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
-    "item_id": "THPT-G11-B08-P04"
+    "item_id": "THPT-G11-B08-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
-    "item_id": "THPT-G11-B08-P08"
+    "item_id": "THPT-G11-B08-P08",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
-    "item_id": "THPT-G11-B09-P01"
+    "item_id": "THPT-G11-B09-P01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
-    "item_id": "THPT-G11-B09-P02"
+    "item_id": "THPT-G11-B09-P02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
-    "item_id": "THPT-G11-B09-P03"
+    "item_id": "THPT-G11-B09-P03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
-    "item_id": "THPT-G11-B09-P04"
+    "item_id": "THPT-G11-B09-P04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
-    "item_id": "THPT-G11-B09-P06"
+    "item_id": "THPT-G11-B09-P06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
-    "item_id": "THPT-G11-B09-P09"
+    "item_id": "THPT-G11-B09-P09",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
-    "item_id": "THPT-G11-B09-P10"
+    "item_id": "THPT-G11-B09-P10",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:EXP:E01:PRACTICE",
@@ -5317,196 +6645,414 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
     "item_id": "THPT-G11-SUPP-E01-P01",
-    "skill_id": "G11-E01-EXPONENTIAL_MODEL"
+    "skill_id": "G11-E01-EXPONENTIAL_MODEL",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
     "item_id": "THPT-G11-SUPP-E01-P02",
-    "skill_id": "G11-E01-HALF_LIFE"
+    "skill_id": "G11-E01-HALF_LIFE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
     "item_id": "THPT-G11-SUPP-E01-P03",
-    "skill_id": "G11-E01-PH_SCALE"
+    "skill_id": "G11-E01-PH_SCALE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
     "item_id": "THPT-G11-SUPP-E01-P04",
-    "skill_id": "G11-E01-RICHTER_SCALE"
+    "skill_id": "G11-E01-RICHTER_SCALE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
     "item_id": "THPT-G11-SUPP-E01-P05",
-    "skill_id": "G11-E01-DECIBEL_SCALE"
+    "skill_id": "G11-E01-DECIBEL_SCALE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
     "item_id": "THPT-G11-SUPP-E01-P06",
-    "skill_id": "G11-E01-MODEL_ASSUMPTIONS"
+    "skill_id": "G11-E01-MODEL_ASSUMPTIONS",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
     "item_id": "THPT-G11-SUPP-E02-P01",
-    "skill_id": "G11-E02-NET_CONSTRUCTION"
+    "skill_id": "G11-E02-NET_CONSTRUCTION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
     "item_id": "THPT-G11-SUPP-E02-P02",
-    "skill_id": "G11-E02-LINE_PLANE_MEASURE"
+    "skill_id": "G11-E02-LINE_PLANE_MEASURE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
     "item_id": "THPT-G11-SUPP-E02-P03",
-    "skill_id": "G11-E02-DIHEDRAL_MEASURE"
+    "skill_id": "G11-E02-DIHEDRAL_MEASURE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
     "item_id": "THPT-G11-SUPP-E02-P04",
-    "skill_id": "G11-E02-VOLUME_MODEL"
+    "skill_id": "G11-E02-VOLUME_MODEL",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
     "item_id": "THPT-G11-SUPP-E02-P05",
-    "skill_id": "G11-E02-GEOGEBRA_REPRESENTATION"
+    "skill_id": "G11-E02-GEOGEBRA_REPRESENTATION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
     "item_id": "THPT-G11-YR-TRIG-P01",
-    "skill_id": "G11-YR-TRIG_IDENTITY"
+    "skill_id": "G11-YR-TRIG_IDENTITY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
     "item_id": "THPT-G11-YR-SEQ-P01",
-    "skill_id": "G11-YR-SEQUENCE_MODEL"
+    "skill_id": "G11-YR-SEQUENCE_MODEL",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
     "item_id": "THPT-G11-YR-LIMIT-P01",
-    "skill_id": "G11-YR-LIMIT_CONTINUITY"
+    "skill_id": "G11-YR-LIMIT_CONTINUITY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
     "item_id": "THPT-G11-YR-EXPL-P01",
-    "skill_id": "G11-YR-EXP_LOG_DOMAIN"
+    "skill_id": "G11-YR-EXP_LOG_DOMAIN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
     "item_id": "THPT-G11-YR-DERIV-P01",
-    "skill_id": "G11-YR-DERIVATIVE_RATE"
+    "skill_id": "G11-YR-DERIVATIVE_RATE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
     "item_id": "THPT-G11-YR-SPACE-P01",
-    "skill_id": "G11-YR-SPACE_PERP_DISTANCE"
+    "skill_id": "G11-YR-SPACE_PERP_DISTANCE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
     "item_id": "THPT-G11-YR-VOL-P01",
-    "skill_id": "G11-YR-SPACE_VOLUME"
+    "skill_id": "G11-YR-SPACE_VOLUME",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
     "item_id": "THPT-G11-YR-STAT-P01",
-    "skill_id": "G11-YR-GROUPED_STATS"
+    "skill_id": "G11-YR-GROUPED_STATS",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
     "item_id": "THPT-G11-YR-PROB-P01",
-    "skill_id": "G11-YR-PROBABILITY_COMBINE"
+    "skill_id": "G11-YR-PROBABILITY_COMBINE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
     "item_id": "THPT-G11-YR-IND-P01",
-    "skill_id": "G11-YR-PROBABILITY_INDEP"
+    "skill_id": "G11-YR-PROBABILITY_INDEP",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
     "item_id": "THPT-G11-YR-INT-P01",
-    "skill_id": "G11-YR_CROSS_CHAPTER_REMEDIATION"
+    "skill_id": "G11-YR_CROSS_CHAPTER_REMEDIATION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B01:KNOWLEDGE_FIRST_TRY",
     "role": "SGK_FIRST_TRY",
     "order": 1,
     "item_id": "THPT-G11-CHI-TRY01",
-    "outcome_id": "G11-B01-SIGNED_ROTATION"
+    "outcome_id": "G11-B01-SIGNED_ROTATION",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B01:KNOWLEDGE_FIRST_TRY",
     "role": "SGK_FIRST_TRY",
     "order": 2,
     "item_id": "THPT-G11-CHI-TRY02",
-    "outcome_id": "G11-B01-COTERMINAL"
+    "outcome_id": "G11-B01-COTERMINAL",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B01:KNOWLEDGE_FIRST_TRY",
     "role": "SGK_FIRST_TRY",
     "order": 3,
     "item_id": "THPT-G11-CHI-TRY03",
-    "outcome_id": "G11-B01-ARC_LENGTH"
+    "outcome_id": "G11-B01-ARC_LENGTH",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B01:KNOWLEDGE_FIRST_TRY",
     "role": "SGK_FIRST_TRY",
     "order": 4,
     "item_id": "THPT-G11-CHI-TRY04",
-    "outcome_id": "G11-B01-UNIT_CIRCLE"
+    "outcome_id": "G11-B01-UNIT_CIRCLE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B01:KNOWLEDGE_FIRST_TRY",
     "role": "SGK_FIRST_TRY",
     "order": 5,
     "item_id": "THPT-G11-CHI-TRY05",
-    "outcome_id": "G11-B01-TRIG_DOMAIN"
+    "outcome_id": "G11-B01-TRIG_DOMAIN",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B01:KNOWLEDGE_FIRST_TRY",
     "role": "SGK_FIRST_TRY",
     "order": 6,
     "item_id": "THPT-G11-CHI-TRY06",
-    "outcome_id": "G11-B01-RELATED_ANGLES"
+    "outcome_id": "G11-B01-RELATED_ANGLES",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:B08:KNOWLEDGE_FIRST_TRY",
@@ -5515,7 +7061,14 @@
     "item_id": "THPT-G11-B08-C02",
     "skill_id": "G11-B08-CLASS-BOUNDARIES",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:B11:KNOWLEDGE_FIRST_TRY",
@@ -5524,7 +7077,14 @@
     "item_id": "THPT-G11-CHIV-B11-P01",
     "skill_id": "G11-B11-RELATIVE",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:B16:KNOWLEDGE_FIRST_TRY",
@@ -5533,7 +7093,14 @@
     "item_id": "THPT-G11-CHV-B16-C01",
     "skill_id": "G11-B16-LIMIT_AT_POINT",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:B23:KNOWLEDGE_FIRST_TRY",
@@ -5542,7 +7109,14 @@
     "item_id": "THPT-G11-CHVII-B23-P02",
     "skill_id": "G11-B23-TWO_INTERSECT",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B02:KNOWLEDGE_FIRST_TRY",
@@ -5550,7 +7124,14 @@
     "order": 2,
     "item_id": "THPT-G11-B02-KFT02",
     "source_locator": "Vận dụng #2",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B02:KNOWLEDGE_FIRST_TRY",
@@ -5558,7 +7139,14 @@
     "order": 3,
     "item_id": "THPT-G11-B02-KFT03",
     "source_locator": "Vận dụng #3",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B02:KNOWLEDGE_FIRST_TRY",
@@ -5566,7 +7154,14 @@
     "order": 4,
     "item_id": "THPT-G11-B02-KFT04",
     "source_locator": "Vận dụng #4",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B02:KNOWLEDGE_FIRST_TRY",
@@ -5574,7 +7169,14 @@
     "order": 5,
     "item_id": "THPT-G11-B02-KFT05",
     "source_locator": "Vận dụng #5",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B03:KNOWLEDGE_FIRST_TRY",
@@ -5582,7 +7184,14 @@
     "order": 1,
     "item_id": "THPT-G11-B03-KFT01",
     "source_locator": "Vận dụng #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B03:KNOWLEDGE_FIRST_TRY",
@@ -5590,7 +7199,14 @@
     "order": 2,
     "item_id": "THPT-G11-B03-KFT02",
     "source_locator": "Vận dụng #2",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B03:KNOWLEDGE_FIRST_TRY",
@@ -5598,7 +7214,14 @@
     "order": 4,
     "item_id": "THPT-G11-B03-KFT04",
     "source_locator": "Vận dụng #4",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B03:KNOWLEDGE_FIRST_TRY",
@@ -5606,7 +7229,14 @@
     "order": 5,
     "item_id": "THPT-G11-B03-KFT05",
     "source_locator": "Vận dụng #5",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B03:KNOWLEDGE_FIRST_TRY",
@@ -5614,7 +7244,14 @@
     "order": 6,
     "item_id": "THPT-G11-B03-KFT06",
     "source_locator": "Vận dụng #6",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B04:KNOWLEDGE_FIRST_TRY",
@@ -5622,7 +7259,14 @@
     "order": 1,
     "item_id": "THPT-G11-B04-KFT01",
     "source_locator": "Vận dụng #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B04:KNOWLEDGE_FIRST_TRY",
@@ -5630,7 +7274,14 @@
     "order": 4,
     "item_id": "THPT-G11-B04-KFT04",
     "source_locator": "Vận dụng #4",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B04:KNOWLEDGE_FIRST_TRY",
@@ -5638,7 +7289,14 @@
     "order": 5,
     "item_id": "THPT-G11-B04-KFT05",
     "source_locator": "Vận dụng #5",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B04:KNOWLEDGE_FIRST_TRY",
@@ -5646,7 +7304,14 @@
     "order": 6,
     "item_id": "THPT-G11-B04-KFT06",
     "source_locator": "Vận dụng #6",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:B05:KNOWLEDGE_FIRST_TRY",
@@ -5654,7 +7319,14 @@
     "order": 1,
     "item_id": "THPT-G11-B05-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:B06:KNOWLEDGE_FIRST_TRY",
@@ -5662,7 +7334,14 @@
     "order": 1,
     "item_id": "THPT-G11-B06-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHII:B07:KNOWLEDGE_FIRST_TRY",
@@ -5670,7 +7349,14 @@
     "order": 1,
     "item_id": "THPT-G11-B07-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B02:KNOWLEDGE_FIRST_TRY",
@@ -5678,7 +7364,14 @@
     "order": 1,
     "item_id": "THPT-G11-B02-KFT01",
     "source_locator": "Vận dụng #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B03:KNOWLEDGE_FIRST_TRY",
@@ -5686,7 +7379,14 @@
     "order": 3,
     "item_id": "THPT-G11-B03-KFT03",
     "source_locator": "Vận dụng #3",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B04:KNOWLEDGE_FIRST_TRY",
@@ -5694,7 +7394,14 @@
     "order": 2,
     "item_id": "THPT-G11-B04-KFT02",
     "source_locator": "Vận dụng #2",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHI:B04:KNOWLEDGE_FIRST_TRY",
@@ -5702,7 +7409,14 @@
     "order": 3,
     "item_id": "THPT-G11-B04-KFT03",
     "source_locator": "Vận dụng #3",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIII:B09:KNOWLEDGE_FIRST_TRY",
@@ -5710,7 +7424,14 @@
     "order": 1,
     "item_id": "THPT-G11-B09-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:B10:KNOWLEDGE_FIRST_TRY",
@@ -5718,7 +7439,14 @@
     "order": 1,
     "item_id": "THPT-G11-B10-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:B12:KNOWLEDGE_FIRST_TRY",
@@ -5726,7 +7454,14 @@
     "order": 1,
     "item_id": "THPT-G11-B12-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:B13:KNOWLEDGE_FIRST_TRY",
@@ -5734,7 +7469,14 @@
     "order": 1,
     "item_id": "THPT-G11-B13-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIV:B14:KNOWLEDGE_FIRST_TRY",
@@ -5742,7 +7484,14 @@
     "order": 1,
     "item_id": "THPT-G11-B14-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:B15:KNOWLEDGE_FIRST_TRY",
@@ -5750,7 +7499,14 @@
     "order": 1,
     "item_id": "THPT-G11-B15-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:B17:KNOWLEDGE_FIRST_TRY",
@@ -5758,7 +7514,14 @@
     "order": 1,
     "item_id": "THPT-G11-B17-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:B18:KNOWLEDGE_FIRST_TRY",
@@ -5766,7 +7529,14 @@
     "order": 1,
     "item_id": "THPT-G11-B18-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:B19:KNOWLEDGE_FIRST_TRY",
@@ -5774,7 +7544,14 @@
     "order": 1,
     "item_id": "THPT-G11-B19-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:B20:KNOWLEDGE_FIRST_TRY",
@@ -5782,7 +7559,14 @@
     "order": 1,
     "item_id": "THPT-G11-B20-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVI:B21:KNOWLEDGE_FIRST_TRY",
@@ -5790,7 +7574,14 @@
     "order": 1,
     "item_id": "THPT-G11-B21-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:B22:KNOWLEDGE_FIRST_TRY",
@@ -5798,7 +7589,14 @@
     "order": 1,
     "item_id": "THPT-G11-B22-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVII:B26:KNOWLEDGE_FIRST_TRY",
@@ -5806,7 +7604,14 @@
     "order": 1,
     "item_id": "THPT-G11-B26-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:B28:KNOWLEDGE_FIRST_TRY",
@@ -5814,7 +7619,14 @@
     "order": 1,
     "item_id": "THPT-G11-B28-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:B29:KNOWLEDGE_FIRST_TRY",
@@ -5822,7 +7634,14 @@
     "order": 1,
     "item_id": "THPT-G11-B29-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHVIII:B30:KNOWLEDGE_FIRST_TRY",
@@ -5830,7 +7649,14 @@
     "order": 1,
     "item_id": "THPT-G11-B30-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:B31:KNOWLEDGE_FIRST_TRY",
@@ -5838,7 +7664,14 @@
     "order": 1,
     "item_id": "THPT-G11-B31-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:B32:KNOWLEDGE_FIRST_TRY",
@@ -5846,7 +7679,14 @@
     "order": 1,
     "item_id": "THPT-G11-B32-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHIX:B33:KNOWLEDGE_FIRST_TRY",
@@ -5854,7 +7694,14 @@
     "order": 1,
     "item_id": "THPT-G11-B33-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G11:CHV:B16:CORE",
@@ -5890,6 +7737,90 @@
     "skill_id": "G11-B27-PRISM_VOLUME",
     "candidate_use": {
       "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "SGK:G11:CHVII:B24:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B24-KFT01",
+    "skill_id": "G11-B24-ANGLE_APPLICATION",
+    "source_locator": "1.7. Tự thử trước bài luyện tập",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B24-C05",
+        "THPT-G11-CHVII-B24-P02"
+      ],
+      "practice_orders": [
+        6,
+        5
+      ],
+      "practice_collections": [
+        "SGK:G11:CHVII:B24:PRACTICE",
+        "SGK:G11:CHVII:B24:PRACTICE"
+      ],
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "SGK:G11:CHVII:B25:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B25-KFT01",
+    "skill_id": "G11-B25-PERP_PLANES",
+    "source_locator": "1.7. Tự thử trước bài luyện tập",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B25-C03",
+        "THPT-G11-CHVII-B25-C04"
+      ],
+      "practice_orders": [
+        4,
+        6
+      ],
+      "practice_collections": [
+        "SGK:G11:CHVII:B25:PRACTICE",
+        "SGK:G11:CHVII:B25:PRACTICE"
+      ],
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "SGK:G11:CHVII:B27:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B27-KFT01",
+    "skill_id": "G11-B27-PRISM_VOLUME",
+    "source_locator": "1.7. Tự thử trước bài luyện tập",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B27-P01",
+        "THPT-G11-CHVII-B27-P02"
+      ],
+      "practice_orders": [
+        6,
+        7
+      ],
+      "practice_collections": [
+        "SGK:G11:CHVII:B27:PRACTICE",
+        "SGK:G11:CHVII:B27:PRACTICE"
+      ],
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
       "mastery": false
