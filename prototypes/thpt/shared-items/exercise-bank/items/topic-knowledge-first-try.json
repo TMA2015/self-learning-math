@@ -9789,9 +9789,9 @@
   {
     "item_id": "THPT-TOP22-T02",
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T02-D08",
-    "stem": "Mẫu 1,1,4,6,8 có trung bình và mốt nào? Mốt có nghĩa là hơn một nửa số quan sát bằng giá trị đó không?",
-    "answer_key": "Trung bình 4; mốt 1; không, chỉ 2 trong 5 quan sát bằng 1.",
-    "worked_solution": "Trung bình bằng \\(\\frac{20}{5}=4\\). Mốt bằng 1 vì 1 xuất hiện hai lần, nhiều nhất; nhưng \\(2/5=40\\%\\), chưa đến một nửa. Mốt là giá trị xuất hiện nhiều nhất, không nhất thiết chiếm đa số.\n\n**Kiểm lỗi**\n\nNếu nhầm mốt với trung vị, lập bảng số lần xuất hiện trước khi kết luận. Đọc lại **Kiến thức 1.2**, rồi tự làm **Bài luyện 11**, **Bài luyện 13**, **Bài luyện 14** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "stem": "Mẫu 1,1,4,6,8 có trung bình và mốt nào? Nếu thay 8 bằng 28, trung bình và trung vị thay đổi ra sao?",
+    "answer_key": "Trung bình 4; mốt 1. Sau thay đổi, trung bình 8, trung vị vẫn 4.",
+    "worked_solution": "Trung bình ban đầu là \\(20/5=4\\), mốt 1 vì xuất hiện hai lần. Khi thay 8 bằng 28, tổng tăng 20 nên trung bình mới là \\(40/5=8\\). Hai mẫu đã sắp xếp đều có số ở vị trí thứ ba bằng 4, nên trung vị không đổi. Trung bình nhạy với giá trị lớn bất thường hơn trung vị trong ví dụ này.\n\n**Kiểm lỗi**\n\nNếu nhầm mốt với trung vị, lập bảng số lần xuất hiện trước khi kết luận. Đọc lại **Kiến thức 1.2**, rồi tự làm **Bài luyện 11**, **Bài luyện 13**, **Bài luyện 14** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B13-MEAN",
@@ -9805,7 +9805,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Tính tổng chia cho cỡ mẫu; so số lần xuất hiện của mốt với một nửa cỡ mẫu."
+      "Tính tổng và đếm tần số; sau thay đổi, so số ở giữa dãy đã sắp xếp với trung bình mới."
     ],
     "rubric": null,
     "interaction": {
@@ -9834,19 +9834,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Trung bình 4; mốt 4; có."
+        "text": "Trung bình 4; mốt 4; trung bình mới 8, trung vị 4."
       },
       {
         "id": "B",
-        "text": "Trung bình 4; mốt 1; không."
+        "text": "Trung bình 4; mốt 1; trung bình mới 8, trung vị 4."
       },
       {
         "id": "C",
-        "text": "Trung bình 5; mốt 1; không."
+        "text": "Trung bình 4; mốt 1; trung bình mới 4, trung vị 8."
       },
       {
         "id": "D",
-        "text": "Trung bình 4; mốt 1; có."
+        "text": "Trung bình 5; mốt 1; trung bình mới 8, trung vị 8."
       }
     ]
   },
@@ -10301,9 +10301,9 @@
   {
     "item_id": "THPT-TOP22-T10",
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T10-D08",
-    "stem": "Bốn nhóm \\([0;10),[10;20),[20;30),[30;40)\\) có tần số \\(0,3,4,1\\). Tính khoảng biến thiên ghép nhóm và cho biết có xác định chính xác khoảng biến thiên mẫu gốc không. Nếu thêm một quan sát ở nhóm mới \\([60;70)\\), giữ các nhóm cũ, khoảng biến thiên ghép nhóm tăng bao nhiêu?",
-    "answer_key": "30 đơn vị; không xác định chính xác khoảng biến thiên mẫu gốc; tăng 30 đơn vị.",
-    "worked_solution": "Nhóm đầu có quan sát là \\([10;20)\\), nhóm cuối có quan sát là \\([30;40)\\), nên \\(R_g=40-10=30\\). Không biết các giá trị cực biên thực sự nên không khẳng định khoảng biến thiên mẫu gốc bằng 30. Sau khi thêm một quan sát trong nhóm \\([60;70)\\), \\(R'_g=70-10=60\\); tăng 30 đơn vị dù chỉ thêm một quan sát.\n\n**Kiểm lỗi**\n\nNếu nhầm đầu mút nhóm với quan sát thực, thử đặt hai bộ số liệu khác nhau vào cùng nhóm. Đọc lại **Kiến thức 3.1**, rồi tự làm **Bài luyện 71**, **Bài luyện 73**, **Bài luyện 74**, **Bài luyện 76** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "stem": "Bốn nhóm \\([0;10),[10;20),[20;30),[30;40)\\) có tần số \\(0,3,4,1\\). Tính khoảng biến thiên ghép nhóm và cho biết có xác định chính xác khoảng biến thiên mẫu gốc không. Nếu thêm một quan sát ở nhóm mới \\([50;60)\\), giữ các nhóm cũ, khoảng biến thiên ghép nhóm tăng bao nhiêu?",
+    "answer_key": "30 đơn vị; không xác định chính xác khoảng biến thiên mẫu gốc; tăng 20 đơn vị.",
+    "worked_solution": "Nhóm đầu có quan sát là \\([10;20)\\), nhóm cuối có quan sát là \\([30;40)\\), nên \\(R_g=40-10=30\\). Không biết các giá trị cực biên thực sự nên không khẳng định khoảng biến thiên mẫu gốc bằng 30. Sau khi thêm một quan sát trong nhóm \\([50;60)\\), \\(R'_g=60-10=50\\); tăng 20 đơn vị dù chỉ thêm một quan sát.\n\n**Kiểm lỗi**\n\nNếu nhầm đầu mút nhóm với quan sát thực, thử đặt hai bộ số liệu khác nhau vào cùng nhóm. Đọc lại **Kiến thức 3.1**, rồi tự làm **Bài luyện 71**, **Bài luyện 73**, **Bài luyện 74**, **Bài luyện 76** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIII-B09-O02",
@@ -10346,19 +10346,19 @@
     "options": [
       {
         "id": "A",
-        "text": "40; có; tăng 30."
+        "text": "40; có; tăng 20."
       },
       {
         "id": "B",
-        "text": "30; không; tăng 30."
+        "text": "30; không; tăng 20."
       },
       {
         "id": "C",
-        "text": "30; có; tăng 30."
+        "text": "30; có; tăng 20."
       },
       {
         "id": "D",
-        "text": "30; không; tăng 20."
+        "text": "30; không; tăng 30."
       }
     ]
   },
