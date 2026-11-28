@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-G10-CHI-RD1-01",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-01",
-    "stem": "Cho P(n): “n(n+1) chẵn”, với n là số nguyên. Phát biểu nào là mệnh đề ĐÚNG? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Cho \\(P(n)\\): “\\(n(n+1)\\) chẵn”, với \\(n\\) là số nguyên. Phát biểu nào là mệnh đề đúng? Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
-    "worked_solution": "Trong hai số nguyên liên tiếp n,n+1 luôn có một số chẵn nên n(n+1) chẵn với mọi n. B sai vì không tồn tại phản ví dụ; C sai với n=2; D sai với n=0.",
+    "worked_solution": "Trong hai số nguyên liên tiếp \\(n,n+1\\) luôn có một số chẵn, nên \\(n(n+1)\\) chẵn với mọi \\(n\\in\\mathbb Z\\). B sai vì không có phản ví dụ; C sai khi \\(n=2\\); D sai khi \\(n=0\\).",
     "skill_ids": [
       "G10-B01-PROPOSITION",
       "G10-B01-QUANTIFIERS"
@@ -70,9 +70,9 @@
   {
     "item_id": "THPT-G10-CHI-RD1-02",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-02",
-    "stem": "Cho n∈ℤ, xét các điều kiện A: “n chia hết cho 12”, B: “n chia hết cho 4”, C: “n chia hết cho 3”. Đánh giá Đ/S: (a) A⇒B; (b) A⇒C; (c) B⇒A; (d) (B và C)⇒A. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Cho \\(n\\in\\mathbb Z\\), xét \\(A\\): “\\(n\\) chia hết cho 12”, \\(B\\): “\\(n\\) chia hết cho 4”, \\(C\\): “\\(n\\) chia hết cho 3”. Chọn tất cả mệnh đề đúng với mọi \\(n\\); xét từng mệnh đề độc lập.",
     "answer_key": "(Đ, Đ, S, Đ)",
-    "worked_solution": "12 là bội của 4 và 3 nên (a),(b) đúng; n=4 là phản ví dụ cho (c). Vì 4 và 3 nguyên tố cùng nhau nên n chia hết cả 4 và 3 thì chia hết 12, (d) đúng.",
+    "worked_solution": "A và B đúng vì 12 là bội của cả 4 và 3. C sai: \\(n=4\\) chia hết cho 4 nhưng không chia hết cho 12. D đúng vì 3 và 4 nguyên tố cùng nhau, bội chung nhỏ nhất là 12.",
     "skill_ids": [
       "G10-B01-IMPLICATION"
     ],
@@ -84,9 +84,11 @@
     ],
     "rubric": "Mỗi ý đúng/sai đúng 1đ (tối đa 4đ). Tự đối chiếu: phản ví dụ cho (c) và điều kiện kết hợp ở (d); không tính điểm giải thích riêng.",
     "interaction": {
-      "type": "SINGLE_CHOICE",
+      "type": "MULTIPLE_CHOICE",
       "correct_option_ids": [
-        "B"
+        "A",
+        "B",
+        "D"
       ],
       "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
@@ -118,28 +120,28 @@
     "options": [
       {
         "id": "A",
-        "text": "Đ, Đ, Đ, S"
+        "text": "\\(A\\Rightarrow B\\)."
       },
       {
         "id": "B",
-        "text": "Đ, Đ, S, Đ"
+        "text": "\\(A\\Rightarrow C\\)."
       },
       {
         "id": "C",
-        "text": "Đ, S, S, Đ"
+        "text": "\\(B\\Rightarrow A\\)."
       },
       {
         "id": "D",
-        "text": "S, Đ, S, S"
+        "text": "\\((B\\text{ và }C)\\Rightarrow A\\)."
       }
     ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-03",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-03",
-    "stem": "Với D=[−1;2], hãy viết phủ định của câu “∀x∈D, x²−x≥0” rồi xác định tính đúng/sai của câu ban đầu bằng một giá trị x cụ thể. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Với \\(D=[-1;2]\\), hãy viết phủ định của mệnh đề “\\(\\forall x\\in D,\\ x^2-x\\ge0\\)” rồi xác định tính đúng/sai của mệnh đề ban đầu bằng một giá trị \\(x\\) cụ thể. Chọn phương án đúng. Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "Phủ định: ∃x∈D: x²−x<0; câu ban đầu sai.",
-    "worked_solution": "Chọn x=1/2 thuộc D; x²−x=1/4−1/2=−1/4<0, bác bỏ lượng từ ∀.",
+    "worked_solution": "Phủ định của lượng từ \\(\\forall\\) là \\(\\exists\\); phủ định của \\(x^2-x\\ge0\\) là \\(x^2-x<0\\). Do đó mệnh đề phủ định là \\(\\exists x\\in D:\\ x^2-x<0\\). Chọn \\(x=\\frac12\\in D\\), khi đó \\(x^2-x=\\frac14-\\frac12=-\\frac14<0\\). Mệnh đề ban đầu sai.",
     "skill_ids": [
       "G10-B01-NEGATION",
       "G10-B01-QUANTIFIERS"
@@ -205,9 +207,9 @@
   {
     "item_id": "THPT-G10-CHI-RD1-04",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-04",
-    "stem": "Với n∈ℤ, chứng minh n chia hết cho 6 khi và chỉ khi n chia hết cho cả 2 và 3. Nêu rõ hai chiều và vì sao n chia hết cho 2 và 3 là đủ. Chọn lập luận đúng cho cả hai chiều.",
+    "stem": "Với \\(n\\in\\mathbb Z\\), chứng minh \\(n\\) chia hết cho 6 khi và chỉ khi \\(n\\) chia hết cho cả 2 và 3. Chọn lập luận đúng cho cả hai chiều. Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "n chia hết cho 6 ⇔ (2|n và 3|n).",
-    "worked_solution": "Chiều thuận hiển nhiên vì 6=2·3. Chiều đảo: nếu 2|n và 3|n, do gcd(2,3)=1 nên n chia hết cho BCNN(2,3)=6. Có thể viết n=2k; từ 3|2k và gcd(2,3)=1 suy 3|k, vậy n=6h.",
+    "worked_solution": "Chiều thuận: nếu \\(n=6k\\) với \\(k\\in\\mathbb Z\\), thì \\(n=2(3k)=3(2k)\\), nên chia hết cho cả 2 và 3. Chiều đảo: nếu \\(n\\) chia hết cho cả 2 và 3, thì \\(n\\) chia hết cho bội chung nhỏ nhất của 2 và 3, tức 6. Hai chiều đều đúng.",
     "skill_ids": [
       "G10-B01-IMPLICATION",
       "G10-B01-EQUIVALENCE"
@@ -254,11 +256,11 @@
     "options": [
       {
         "id": "A",
-        "text": "Thuận đúng; đảo sai vì n có thể chỉ chia hết cho 2."
+        "text": "Thuận đúng; đảo sai vì số chia hết cho 2 chưa chắc chia hết cho 6."
       },
       {
         "id": "B",
-        "text": "Cả hai chiều đúng vì 6 là tổng của 2 và 3."
+        "text": "Cả hai chiều đúng vì 6 là tích của 2 và 3, không cần xét quan hệ giữa 2 và 3."
       },
       {
         "id": "C",
@@ -266,16 +268,16 @@
       },
       {
         "id": "D",
-        "text": "Thuận: 6 chia hết cho 2,3. Đảo: \\(\\operatorname{BCNN}(2,3)=6\\), nên n chia hết cho cả hai thì chia hết cho 6."
+        "text": "Thuận: 6 chia hết cho 2 và 3. Đảo: \\(\\operatorname{BCNN}(2,3)=6\\), nên số chia hết cho cả hai thì chia hết cho 6."
       }
     ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-05",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-05",
-    "stem": "Xét phương trình x²−5x+6=0 trên ℝ. Phát biểu nào đúng? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Xét phương trình \\(x^2-5x+6=0\\) trên \\(\\mathbb R\\). Phát biểu nào đúng? Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "B",
-    "worked_solution": "x²−5x+6=(x−2)(x−3), nên có nghiệm thực x=2 hoặc x=3, nhưng không đúng với mọi x.",
+    "worked_solution": "\\(x^2-5x+6=(x-2)(x-3)\\), nên có hai nghiệm thực \\(x=2\\) và \\(x=3\\). Mệnh đề tồn tại nghiệm đúng, nhưng không phải mọi số thực hay mọi số nguyên đều là nghiệm (chẳng hạn \\(x=0\\)).",
     "skill_ids": [
       "G10-B01-QUANTIFIERS"
     ],
@@ -340,9 +342,9 @@
   {
     "item_id": "THPT-G10-CHI-RD1-06",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-06",
-    "stem": "Cho n thuộc D={0,1,2,3,4,5}. Xét P(n): “n²≤9”. P(n) có phải một mệnh đề hoàn chỉnh khi chưa gán n không? Hãy tìm tập các n làm P(n) đúng và phát biểu một mệnh đề có lượng từ ∃ đúng. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Cho \\(n\\in D=\\{0,1,2,3,4,5\\}\\). Xét \\(P(n)\\): “\\(n^2\\le9\\)”. \\(P(n)\\) có phải một mệnh đề hoàn chỉnh khi chưa gán \\(n\\) không? Tìm tập các \\(n\\) làm \\(P(n)\\) đúng và phát biểu một mệnh đề có lượng từ tồn tại đúng. Chọn phương án đúng. Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "P(n) là mệnh đề chứa biến; tập nghiệm {0,1,2,3}; ví dụ ∃n∈D: n²≤9 đúng.",
-    "worked_solution": "Chưa cố định n thì P(n) chưa có giá trị chân lý duy nhất; xét từng n trong D cho 0,1,2,3 thỏa.",
+    "worked_solution": "Chưa gán \\(n\\), \\(P(n)\\) là mệnh đề chứa biến. Trong \\(D\\), điều kiện \\(n^2\\le9\\) tương đương \\(n\\le3\\), nên tập các giá trị đúng là \\(\\{0,1,2,3\\}\\). Mệnh đề \\(\\exists n\\in D:\\ n^2\\le9\\) đúng, chẳng hạn \\(n=0\\).",
     "skill_ids": [
       "G10-B01-PROPOSITION",
       "G10-B01-QUANTIFIERS"
@@ -408,9 +410,9 @@
   {
     "item_id": "THPT-G10-CHI-RD1-07",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-07",
-    "stem": "Cho P: “9 chia hết cho 3” và Q: “9 chia hết cho 2”. Đánh giá Đ/S: (a) P⇒Q; (b) Q⇒P; (c) P⇔Q; (d) ¬(P hoặc Q). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Cho \\(P\\): “9 chia hết cho 3” và \\(Q\\): “9 chia hết cho 2”. Chọn tất cả mệnh đề đúng; xét từng mệnh đề độc lập.",
     "answer_key": "(S, Đ, S, S)",
-    "worked_solution": "P đúng, Q sai. Do vậy P⇒Q sai; Q⇒P đúng vì tiền đề Q sai; P⇔Q sai vì khác giá trị chân lý; P∨Q đúng nên phủ định sai.",
+    "worked_solution": "\\(P\\) đúng, \\(Q\\) sai. A sai vì tiền đề đúng và kết luận sai. B đúng vì phép kéo theo có tiền đề sai là đúng. C sai vì hai mệnh đề khác giá trị chân lý. D sai vì \\(P\\) hoặc \\(Q\\) đúng, nên phủ định sai.",
     "skill_ids": [
       "G10-B01-NEGATION",
       "G10-B01-IMPLICATION",
@@ -424,9 +426,9 @@
     ],
     "rubric": "Mỗi ý đúng/sai đúng 1đ (tối đa 4đ). Tự đối chiếu: phép kéo theo chỉ sai khi tiền đề đúng và kết luận sai; không tính điểm giải thích riêng.",
     "interaction": {
-      "type": "SINGLE_CHOICE",
+      "type": "MULTIPLE_CHOICE",
       "correct_option_ids": [
-        "C"
+        "B"
       ],
       "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
@@ -458,28 +460,28 @@
     "options": [
       {
         "id": "A",
-        "text": "S, S, S, Đ"
+        "text": "\\(P\\Rightarrow Q\\)."
       },
       {
         "id": "B",
-        "text": "Đ, Đ, S, S"
+        "text": "\\(Q\\Rightarrow P\\)."
       },
       {
         "id": "C",
-        "text": "S, Đ, S, S"
+        "text": "\\(P\\Leftrightarrow Q\\)."
       },
       {
         "id": "D",
-        "text": "S, Đ, Đ, Đ"
+        "text": "\\(\\neg(P\\text{ hoặc }Q)\\)."
       }
     ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-08",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-08",
-    "stem": "Cho A={−2,0,2} và B={x∈ℤ | x²=4}. Phát biểu nào đúng? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Cho \\(A=\\{-2,0,2\\}\\) và \\(B=\\{x\\in\\mathbb Z\\mid x^2=4\\}\\). Phát biểu nào đúng? Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
-    "worked_solution": "B={−2,2}, nên mọi phần tử B đều thuộc A nhưng 0 thuộc A và không thuộc B.",
+    "worked_solution": "\\(x^2=4\\) có hai nghiệm nguyên \\(-2,2\\), nên \\(B=\\{-2,2\\}\\). Mọi phần tử của \\(B\\) thuộc \\(A\\), nhưng \\(0\\in A\\) và \\(0\\notin B\\); do đó \\(B\\subseteq A,\\ B\\ne A\\).",
     "skill_ids": [
       "G10-B02-MEMBERSHIP_SUBSET"
     ],
@@ -544,9 +546,9 @@
   {
     "item_id": "THPT-G10-CHI-RD1-09",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-09",
-    "stem": "Cho X=(−∞,2] và Y=[−1,5). Tìm X∩Y, X∪Y và X∖Y, giải thích đầu mút −1 và 2. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Cho \\(X=(-\\infty;2]\\) và \\(Y=[-1;5)\\). Tìm \\(X\\cap Y,\\ X\\cup Y,\\ X\\setminus Y\\) theo thứ tự và giải thích các đầu mút \\(-1,2\\). Chọn phương án đúng. Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "X∩Y=[−1,2]; X∪Y=(−∞,5); X∖Y=(−∞,−1).",
-    "worked_solution": "−1 thuộc cả X,Y; 2 thuộc cả X,Y. Các số nhỏ hơn −1 chỉ thuộc X. X và Y giao nhau nên hợp phủ mọi x<5.",
+    "worked_solution": "Các số thuộc cả hai tập thỏa \\(-1\\le x\\le2\\), nên \\(X\\cap Y=[-1;2]\\); cả hai đầu mút đều thuộc hai tập. Hai khoảng giao nhau và phủ mọi \\(x<5\\), nên \\(X\\cup Y=(-\\infty;5)\\). Bỏ khỏi \\(X\\) mọi số thuộc \\(Y\\), còn các số \\(x<-1\\): \\(X\\setminus Y=(-\\infty;-1)\\).",
     "skill_ids": [
       "G10-B02-INTERVALS",
       "G10-B02-UNION_INTERSECTION",
@@ -615,7 +617,7 @@
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-10",
     "stem": "Lớp có 38 học sinh; 22 em tham gia bơi, 19 em tham gia cầu lông, 6 em không tham gia môn nào trong hai môn. Tìm số em tham gia cả hai, chỉ bơi, chỉ cầu lông, rồi kiểm tra tổng bốn vùng sơ đồ Venn. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "Cả hai 9; chỉ bơi 13; chỉ cầu lông 10; ngoài hai 6.",
-    "worked_solution": "|A∪B|=38−6=32; |A∩B|=22+19−32=9; chỉ A=22−9=13; chỉ B=19−9=10; 13+9+10+6=38.",
+    "worked_solution": "Gọi \\(A\\) là tập học sinh tham gia bơi, \\(B\\) là tập học sinh tham gia cầu lông; \\(n(A),n(B)\\) là số phần tử tương ứng. Có \\(n(A\\cup B)=38-6=32\\). Khi cộng \\(22+19\\), học sinh tham gia cả hai bị đếm hai lần, nên \\(n(A\\cap B)=22+19-32=9\\). Chỉ bơi: \\(22-9=13\\); chỉ cầu lông: \\(19-9=10\\). Kiểm tra bốn vùng: \\(9+13+10+6=38\\).",
     "skill_ids": [
       "G10-B02-VENN_MODEL",
       "G10-B02-UNION_INTERSECTION"
@@ -662,28 +664,28 @@
     "options": [
       {
         "id": "A",
-        "text": "3; 19; 16; 6, tổng 44."
+        "text": "Cả hai: 3; chỉ bơi: 19; chỉ cầu lông: 16; tổng bốn vùng: 44."
       },
       {
         "id": "B",
-        "text": "9; 13; 10; 6, tổng 38."
+        "text": "Cả hai: 9; chỉ bơi: 13; chỉ cầu lông: 10; tổng bốn vùng: 38."
       },
       {
         "id": "C",
-        "text": "9; 22; 19; 6, tổng 56."
+        "text": "Cả hai: 9; chỉ bơi: 22; chỉ cầu lông: 19; tổng bốn vùng: 56."
       },
       {
         "id": "D",
-        "text": "15; 7; 4; 6, tổng 32."
+        "text": "Cả hai: 15; chỉ bơi: 7; chỉ cầu lông: 4; tổng bốn vùng: 32."
       }
     ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-11",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-11",
-    "stem": "Với X=[−2,3) và Y=(1,5], cho biết Đ/S: (a) 3∈X; (b) −2∈X; (c) 1∈X∩Y; (d) 5∈X∪Y. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Với \\(X=[-2;3)\\) và \\(Y=(1;5]\\), chọn tất cả khẳng định đúng; xét từng khẳng định độc lập.",
     "answer_key": "(S, Đ, S, Đ)",
-    "worked_solution": "X không chứa 3; có −2; Y không chứa 1 nên 1 không thuộc giao; Y chứa 5 nên 5 thuộc hợp.",
+    "worked_solution": "A sai vì \\(X\\) không chứa 3. B đúng vì \\(X\\) chứa đầu mút \\(-2\\). C sai vì \\(Y\\) không chứa 1. D đúng vì \\(5\\in Y\\), nên \\(5\\in X\\cup Y\\).",
     "skill_ids": [
       "G10-B02-INTERVALS",
       "G10-B02-UNION_INTERSECTION"
@@ -696,9 +698,10 @@
     ],
     "rubric": "4 ý, mỗi ý 1đ; dấu ngoặc là căn cứ.",
     "interaction": {
-      "type": "SINGLE_CHOICE",
+      "type": "MULTIPLE_CHOICE",
       "correct_option_ids": [
-        "C"
+        "B",
+        "D"
       ],
       "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
@@ -730,28 +733,28 @@
     "options": [
       {
         "id": "A",
-        "text": "Đ, Đ, S, Đ"
+        "text": "\\(3\\in X\\)."
       },
       {
         "id": "B",
-        "text": "S, Đ, Đ, S"
+        "text": "\\(-2\\in X\\)."
       },
       {
         "id": "C",
-        "text": "S, Đ, S, Đ"
+        "text": "\\(1\\in X\\cap Y\\)."
       },
       {
         "id": "D",
-        "text": "S, S, S, Đ"
+        "text": "\\(5\\in X\\cup Y\\)."
       }
     ]
   },
   {
     "item_id": "THPT-G10-CHI-RD1-12",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-12",
-    "stem": "Cho A={x∈ℤ | −2≤x≤2}, B={x∈ℤ | x²≤1}. Liệt kê A,B và xác định B⊆A có đúng không; tính A∖B. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Cho \\(A=\\{x\\in\\mathbb Z\\mid -2\\le x\\le2\\}\\), \\(B=\\{x\\in\\mathbb Z\\mid x^2\\le1\\}\\). Liệt kê \\(A,B\\), xác định \\(B\\subseteq A\\) có đúng không và tính \\(A\\setminus B\\). Chọn phương án đúng. Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A={−2,−1,0,1,2}, B={−1,0,1}; B⊆A, A∖B={−2,2}.",
-    "worked_solution": "Giải điều kiện bình phương trong số nguyên, so từng phần tử, rồi loại ba phần tử B khỏi A.",
+    "worked_solution": "Liệt kê \\(A=\\{-2,-1,0,1,2\\}\\). Từ \\(x^2\\le1\\) có \\(-1\\le x\\le1\\); với \\(x\\) nguyên, \\(B=\\{-1,0,1\\}\\). Mọi phần tử của \\(B\\) thuộc \\(A\\), nên \\(B\\subseteq A\\). Bỏ ba phần tử thuộc \\(B\\) khỏi \\(A\\) được \\(A\\setminus B=\\{-2,2\\}\\).",
     "skill_ids": [
       "G10-B02-MEMBERSHIP_SUBSET",
       "G10-B02-DIFFERENCE"
@@ -817,9 +820,9 @@
   {
     "item_id": "THPT-G10-CHI-RD1-13",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-13",
-    "stem": "Với U={−2,−1,0,1,2,3,4,5} và A={x∈U | x chẵn}, U∖A bằng tập nào? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Với \\(U=\\{-2,-1,0,1,2,3,4,5\\}\\) và \\(A=\\{x\\in U\\mid x\\text{ chẵn}\\}\\), \\(U\\setminus A\\) bằng tập nào? Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "B",
-    "worked_solution": "Các phần tử chẵn trong U là −2,0,2,4; phần bù trong U chứa các phần tử còn lại −1,1,3,5.",
+    "worked_solution": "\\(A=\\{-2,0,2,4\\}\\). Phần bù của \\(A\\) trong \\(U\\) là các phần tử còn lại: \\(U\\setminus A=\\{-1,1,3,5\\}\\).",
     "skill_ids": [
       "G10-B02-COMPLEMENT"
     ],
@@ -884,9 +887,9 @@
   {
     "item_id": "THPT-G10-CHI-RD1-14",
     "content_version": "SGK-G10-CHI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHI-RD1-14",
-    "stem": "Lấy U=ℝ, A=[−1,4], B=(2,6). Hãy xác định A∩B, A∪B, A∖B và phần bù U∖A. Giải thích vì sao 2 thuộc A∖B còn 4 thuộc A∩B. Chọn bộ kết quả theo thứ tự giao, hợp, hiệu và phần bù; tự giải thích hai đầu mút.",
+    "stem": "Lấy \\(U=\\mathbb R,\\ A=[-1;4],\\ B=(2;6)\\). Xác định \\(A\\cap B,\\ A\\cup B,\\ A\\setminus B\\) và phần bù \\(U\\setminus A\\). Chọn bộ kết quả theo thứ tự đó; tự giải thích vì sao \\(2\\in A\\setminus B\\) và \\(4\\in A\\cap B\\).",
     "answer_key": "A∩B=(2,4]; A∪B=[−1,6); A∖B=[−1,2]; U∖A=(−∞,−1)∪(4,+∞).",
-    "worked_solution": "B không chứa đầu mút 2 nên 2 thuộc A nhưng không thuộc B; B chứa 4 và A chứa 4, nên 4 ở giao. Chú ý phần bù lấy trong U=ℝ.",
+    "worked_solution": "Giao gồm các số đồng thời thuộc hai tập: \\(A\\cap B=(2;4]\\). Hợp phủ mọi số từ \\(-1\\) đến dưới 6: \\(A\\cup B=[-1;6)\\). Hiệu là \\(A\\setminus B=[-1;2]\\), vì 2 thuộc \\(A\\) nhưng không thuộc \\(B\\). Cả hai tập chứa 4, nên 4 thuộc giao. Phần bù của \\(A\\) trong \\(\\mathbb R\\) gồm các số nhỏ hơn \\(-1\\) hoặc lớn hơn 4: \\(U\\setminus A=(-\\infty;-1)\\cup(4;+\\infty)\\).",
     "skill_ids": [
       "G10-B02-INTERVALS",
       "G10-B02-UNION_INTERSECTION",
