@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "53fffd34572674e3c4878f40272f3d16f4349df9",
+    "as_of_commit": "a4960cdf70250368f9784071558969cfe73ab590",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.2: 294/910 (270 interactive +24 Written), CD01–08 complete; next CD09 onward 616 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
+    "next": "08.2: 359/910 (330 interactive +29 Written), CD01–09 complete; next CD10 onward 551 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
     "status": "CHECKLIST_08_XG5_BATCH_2_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -7339,12 +7339,360 @@
                     ]
                   ],
                   "findings": "Read all four canonical Written blocks. W02–03 five lines changed notation only including rubric n=4; exact source delta 19820c2301e61ea1424c75f10d67ed175decf466; bindings refreshed at 53fffd34572674e3c4878f40272f3d16f4349df9. Rubric scoring unchanged."
+                },
+                {
+                  "shard": "items/cd09.json",
+                  "blob": "fbc65ab777bf8aeed1a353538571f0dbdb10c412",
+                  "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+                  "baseline_blob": "6d57f0ac118cd705e972dae1ac41ee1cb279ae91",
+                  "evidence_cp": "CP89",
+                  "records": [
+                    [
+                      "THPT-TOP09-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P03",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP09-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P05",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP09-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P08",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P09",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P10",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P11",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P12",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P13",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP09-P14",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP09-P15",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P16",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P17",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P18",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P19",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P20",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP09-P21",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P22",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P23",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P24",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP09-P25",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P26",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P27",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P28",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P29",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P30",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P31",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP09-P32",
+                      89,
+                      6
+                    ]
+                  ],
+                  "findings": "Read all changed/new fields and inherit identical five CP89 fields. P09/P30 option notation only. Data b878ded39132a308c7791442b04f4e95fe2657da."
+                },
+                {
+                  "shard": "items/topic-knowledge-first-try.json",
+                  "blob": "6d7f8562bd58752b43cbd1d084c7b4f74186c713",
+                  "evidence_cp": "08.2-CD09-KFT",
+                  "records": [
+                    [
+                      "THPT-TOP09-KFT01",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT02",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT03",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT05",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT06",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT07",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT08",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT09",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT10",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT11",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT12",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT13",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT14",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT16",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT17",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT18",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT19",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT20",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT21",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT22",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT23",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT24",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT25",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT26",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT27",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT28",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT31",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP09-KFT32",
+                      0,
+                      31
+                    ]
+                  ],
+                  "findings": "Read all 28 Topic-only FirstTry records; six IDs notation-only corrections to absolute values and inline expressions; readback a64279ff20f1ece5aee41f599216965a0f8a019d."
+                },
+                {
+                  "shard": "written-references.json",
+                  "blob": "702ce347db1bc17507d683df6abfb8768cb9c5af",
+                  "source_path": "prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md",
+                  "source_blob": "5f187921cba3d8f061065a478296772005496300",
+                  "evidence_cp": "08.2-CD09-Written",
+                  "records": [
+                    [
+                      "THPT-TOP09-W01",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP09-W02",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP09-W03",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP09-W04",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP09-W05",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ]
+                  ],
+                  "findings": "Read five canonical Written blocks; W02/W05 absolute value notation only, exact source cb70707193b22124568fe27caef8dee57f237953; all five bindings refreshed at a4960cdf70250368f9784071558969cfe73ab590."
                 }
               ],
-              "completed_interactive": 270,
-              "completed_written": 24,
-              "remaining_interactive": 559,
-              "remaining_written": 57,
+              "completed_interactive": 330,
+              "completed_written": 29,
+              "remaining_interactive": 499,
+              "remaining_written": 52,
               "counts": {
                 "CD01": {
                   "interactive": 15,
@@ -7385,12 +7733,17 @@
                   "interactive": 36,
                   "written": 4,
                   "state": "COMPLETE"
+                },
+                "CD09": {
+                  "interactive": 60,
+                  "written": 5,
+                  "state": "COMPLETE"
                 }
               },
-              "next": "CD09 onward; exclude 975 shared and 294 completed Topic-only IDs",
+              "next": "CD10 onward; exclude 975 shared and 359 completed Topic-only IDs",
               "reconciliation": {
-                "expected_cd01_08": 294,
-                "completed_cd01_08": 294,
+                "expected_cd01_09": 359,
+                "completed_cd01_09": 359,
                 "duplicate_ids": 0,
                 "overlap_08_1": 0,
                 "overlap_08_3": 0,
