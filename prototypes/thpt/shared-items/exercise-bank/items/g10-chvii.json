@@ -2030,9 +2030,9 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY07",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY07.DELTA05",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY07.DELTA05.DELTA07B",
     "stem": "Giá trị V theo thời gian t (\\(t\\ge0\\)) nhận \\(V(0)=5\\) và \\(V(2)=9\\). Giả sử V thay đổi tuyến tính theo t. Hãy lập \\(V(t)\\), tính \\(V(3)\\) và nêu giả thiết cần có khi dự đoán ở \\(t=3\\).",
-    "answer_key": "\\(V(t)=2t+5,\\ V(3)=11\\).",
+    "answer_key": "\\(V(t)=2t+5,\\ V(3)=11\\), nếu quy luật tuyến tính vẫn đúng đến \\(t=3\\).",
     "worked_solution": "Hệ số góc là \\(\\frac{9-5}{2-0}=2\\); giá trị ban đầu là 5. Do đó \\(V(t)=2t+5\\) và \\(V(3)=11\\). Kiểm \\(V(0)=5,V(2)=9\\). Dự đoán tại \\(t=3\\) chỉ hợp lý nếu giả thiết thay đổi tuyến tính vẫn đúng.",
     "skill_ids": [
       "G10-B19-LINEAR_MODEL"
@@ -2069,7 +2069,7 @@
       },
       {
         "id": "C",
-        "text": "\\(V(t)=2t+5,\\ V(3)=11\\)."
+        "text": "\\(V(t)=2t+5,\\ V(3)=11\\), nếu quy luật tuyến tính vẫn đúng đến \\(t=3\\)."
       },
       {
         "id": "D",
@@ -2080,9 +2080,9 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY08",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY08.DELTA05",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY08.DELTA05.DELTA07B",
     "stem": "Cho \\(d_1:2x-y+1=0\\), \\(d_2:4x-2y+3=0\\). Hai đường này song song phân biệt hay trùng nhau? Hãy kiểm cả ba hệ số, không kết luận chỉ từ pháp tuyến.",
-    "answer_key": "Song song phân biệt.",
+    "answer_key": "Song song phân biệt, vì hai hệ số của x,y tỉ lệ 2 nhưng \\(3\\ne2\\cdot1\\).",
     "worked_solution": "Hai pháp tuyến \\((2;-1),(4;-2)\\) tỉ lệ 2 lần. Nhân toàn phương trình \\(d_1\\) với 2 cho hằng số 2, không phải 3 của \\(d_2\\); hệ vô nghiệm, nên hai đường song song phân biệt.",
     "skill_ids": [
       "G10-B20-RELATIVE_POSITION"
@@ -2123,7 +2123,7 @@
       },
       {
         "id": "D",
-        "text": "Song song phân biệt."
+        "text": "Song song phân biệt, vì hai hệ số của x,y tỉ lệ 2 nhưng \\(3\\ne2\\cdot1\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -2630,9 +2630,9 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY19",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY19.DELTA05",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY19.DELTA05.DELTA07B",
     "stem": "Từ \\(\\frac{x^2}{16}-\\frac{y^2}{9}=1\\), hãy tìm hai đỉnh và hai tiêu điểm. Kết quả c phải lớn hơn a hay nhỏ hơn a?",
-    "answer_key": "Đỉnh \\(A_1(-4;0),A_2(4;0)\\); tiêu điểm \\(F_1(-5;0),F_2(5;0)\\).",
+    "answer_key": "Đỉnh \\(A_1(-4;0),A_2(4;0)\\); tiêu điểm \\(F_1(-5;0),F_2(5;0)\\); \\(c=5>a=4\\).",
     "worked_solution": "\\(a=4,b=3\\), \\(c^2=a^2+b^2=16+9=25\\), suy ra \\(c=5\\). Trục thực Ox, hai tiêu điểm ở ngoài hai đỉnh vì \\(c>a\\).",
     "skill_ids": [
       "G10-B22-HYPERBOLA_PARAMETERS"
@@ -2669,7 +2669,7 @@
       },
       {
         "id": "C",
-        "text": "Đỉnh \\(A_1(-4;0),A_2(4;0)\\); tiêu điểm \\(F_1(-5;0),F_2(5;0)\\)."
+        "text": "Đỉnh \\(A_1(-4;0),A_2(4;0)\\); tiêu điểm \\(F_1(-5;0),F_2(5;0)\\); \\(c=5>a=4\\)."
       },
       {
         "id": "D",
@@ -2830,9 +2830,9 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY23",
-    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY23.DELTA05",
+    "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY23.DELTA05.DELTA07B",
     "stem": "Với mặt cắt \\(y^2=20x\\) (x, y tính bằng cm), hãy tự tìm bề rộng tại \\(x=5\\,\\mathrm{cm}\\) và giải thích vì sao phải dùng cả hai dấu của y.",
-    "answer_key": "20 cm.",
+    "answer_key": "20 cm, vì tại \\(x=5\\) có \\(y=\\pm10\\) và bề rộng là \\(10-(-10)=20\\) cm.",
     "worked_solution": "Thế \\(x=5\\) được \\(y^2=100\\), nên \\(y=\\pm10\\,\\mathrm{cm}\\). Hai mép ở cùng hoành độ; bề rộng là \\(10-(-10)=20\\,\\mathrm{cm}\\).",
     "skill_ids": [
       "G10-B22-CONIC_MODEL"
@@ -2869,7 +2869,7 @@
       },
       {
         "id": "C",
-        "text": "20 cm."
+        "text": "20 cm, vì tại \\(x=5\\) có \\(y=\\pm10\\) và bề rộng là \\(10-(-10)=20\\) cm."
       },
       {
         "id": "D",
