@@ -649,7 +649,7 @@
   },
   {
     "item_id": "THPT-G12-YE-M13",
-    "content_version": "G12-YE-XG6-20261127-M13",
+    "content_version": "G12-YE-XG6-20261127-M13-XG6-20261128",
     "stem": "Một mẫu số liệu ghép nhóm có các lớp \\([4;8)\\), \\([8;12)\\), \\([12;16)\\), mỗi lớp có tần số dương. Tính khoảng biến thiên của mẫu số liệu ghép nhóm.",
     "answer_key": "\\(12\\)",
     "worked_solution": "Khoảng biến thiên của mẫu ghép nhóm là \\(R=16-4=12\\). Không cần biết từng số liệu gốc; đây là đại lượng theo biên lớp.",
@@ -657,7 +657,7 @@
       "G12-SGK-YE-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "RECOGNIZE",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Lấy đầu mút phải lớp cuối trừ đầu mút trái lớp đầu."
     ],
