@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-G10-CHIII-RD1-01",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-01",
-    "stem": "Một góc α thuộc (90°,180°). Cặp dấu nào luôn đúng? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Một góc \\(\\alpha\\in(90^\\circ;180^\\circ)\\). Cặp dấu nào luôn đúng? Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
-    "worked_solution": "Trên nửa đường tròn đơn vị, góc phần tư II có tung độ (sin) dương, hoành độ (cos) âm.",
+    "worked_solution": "Trên nửa đường tròn đơn vị, điểm ứng với góc tù nằm bên trái trục tung và phía trên trục hoành. Hoành độ \\(\\cos\\alpha<0\\), tung độ \\(\\sin\\alpha>0\\).",
     "skill_ids": [
       "G10-B05-UNIT_SEMICIRCLE",
       "G10-B05-SIGN_DOMAIN"
@@ -70,9 +70,9 @@
   {
     "item_id": "THPT-G10-CHIII-RD1-02",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-02",
-    "stem": "Đánh giá Đ/S: (a) sin 90°=1. (b) tan 90°=0. (c) cot 180° không xác định. (d) cos 180°=−1. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Chọn tất cả khẳng định đúng về giá trị lượng giác; xét từng khẳng định độc lập. Xét từng khẳng định độc lập trước khi nộp toàn bài.",
     "answer_key": "(Đ,S,Đ,Đ)",
-    "worked_solution": "a đúng; b sai vì cos 90°=0 nên tan không xác định; c đúng vì sin 180°=0; d đúng do điểm cuối ở (−1,0).",
+    "worked_solution": "A đúng: \\(\\sin90^\\circ=1\\). B sai: \\(\\cos90^\\circ=0\\) nên \\(\\tan90^\\circ\\) không xác định. C đúng: \\(\\sin180^\\circ=0\\) nên \\(\\cot180^\\circ\\) không xác định. D đúng: điểm cuối ứng với góc \\(180^\\circ\\) là \\((-1;0)\\).",
     "skill_ids": [
       "G10-B05-SIGN_DOMAIN",
       "G10-B05-UNIT_SEMICIRCLE"
@@ -85,9 +85,11 @@
     ],
     "rubric": "Mỗi ý 1đ; nhấn mạnh mẫu số khác 0.",
     "interaction": {
-      "type": "SINGLE_CHOICE",
+      "type": "MULTIPLE_CHOICE",
       "correct_option_ids": [
-        "B"
+        "A",
+        "C",
+        "D"
       ],
       "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
@@ -119,28 +121,28 @@
     "options": [
       {
         "id": "A",
-        "text": "Đ, Đ, Đ, S"
+        "text": "\\(\\sin90^\\circ=1\\)."
       },
       {
         "id": "B",
-        "text": "Đ, S, Đ, Đ"
+        "text": "\\(\\tan90^\\circ=0\\)."
       },
       {
         "id": "C",
-        "text": "Đ, S, S, Đ"
+        "text": "\\(\\cot180^\\circ\\) không xác định."
       },
       {
         "id": "D",
-        "text": "S, Đ, S, Đ"
+        "text": "\\(\\cos180^\\circ=-1\\)."
       }
     ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-03",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-03",
-    "stem": "Biết α là góc tù và cos α=−5/13. Tìm sin α, tan α và giải thích cách chọn dấu. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Biết \\(\\alpha\\) là góc tù và \\(\\cos\\alpha=-\\frac5{13}\\). Tìm \\(\\sin\\alpha,\\tan\\alpha\\) và giải thích cách chọn dấu. Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "sin α=12/13; tan α=−12/5",
-    "worked_solution": "sin² α=1−25/169=144/169; sin α=12/13>0 vì α tù. tan α=(12/13)/(−5/13)=−12/5.",
+    "worked_solution": "Từ \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\), suy ra \\(\\sin^2\\alpha=1-\\frac{25}{169}=\\frac{144}{169}\\). Góc tù có sin dương, nên \\(\\sin\\alpha=\\frac{12}{13}\\). Vì \\(\\cos\\alpha\\ne0\\), \\(\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}=-\\frac{12}{5}\\).",
     "skill_ids": [
       "G10-B05-IDENTITIES",
       "G10-B05-SIGN_DOMAIN"
@@ -206,9 +208,9 @@
   {
     "item_id": "THPT-G10-CHIII-RD1-04",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-04",
-    "stem": "Trong đoạn 0°≤α≤180°, tất cả góc thỏa sin α=√2/2 là? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Trong đoạn \\(0^\\circ\\le\\alpha\\le180^\\circ\\), tìm tất cả góc thỏa \\(\\sin\\alpha=\\frac{\\sqrt2}{2}\\). Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
-    "worked_solution": "sin 45°=√2/2 và sin(180°−45°)=sin135°=√2/2; trên [0°,180°] có đúng hai nghiệm.",
+    "worked_solution": "Trên nửa đường tròn đơn vị, đường ngang có tung độ \\(\\frac{\\sqrt2}{2}\\) cắt đường tròn tại đúng hai điểm đối xứng qua trục tung. Hai góc tương ứng là \\(45^\\circ\\) và \\(180^\\circ-45^\\circ=135^\\circ\\).",
     "skill_ids": [
       "G10-B05-SUPPLEMENTARY",
       "G10-B05-SPECIAL_ANGLES"
@@ -274,9 +276,9 @@
   {
     "item_id": "THPT-G10-CHIII-RD1-05",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-05",
-    "stem": "Biết α là góc tù và sin α=5/13. a) Xác định cos α, tan α, cot α. b) Với β=180°−α, tìm sin β, cos β. Chọn bộ năm kết quả theo thứ tự cos α, tan α, cot α, sin β, cos β.",
+    "stem": "Biết \\(\\alpha\\) là góc tù và \\(\\sin\\alpha=\\frac5{13}\\). a) Xác định \\(\\cos\\alpha,\\tan\\alpha,\\cot\\alpha\\). b) Với \\(\\beta=180^\\circ-\\alpha\\), tìm \\(\\sin\\beta,\\cos\\beta\\). Chọn bộ năm kết quả theo thứ tự trên. Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "cos α=−12/13, tan α=−5/12, cot α=−12/5; sin β=5/13, cos β=12/13",
-    "worked_solution": "cos² α=1−25/169=144/169; α tù nên cos α=−12/13. Chia các tỉ số được tan α=−5/12, cot α=−12/5. Góc bù: sin β=sin α, cos β=−cos α.",
+    "worked_solution": "Từ \\(\\cos^2\\alpha=1-\\frac{25}{169}=\\frac{144}{169}\\) và \\(\\alpha\\) tù, chọn \\(\\cos\\alpha=-\\frac{12}{13}\\). Hai tỉ số đều xác định: \\(\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}=-\\frac5{12}\\), \\(\\cot\\alpha=\\frac{\\cos\\alpha}{\\sin\\alpha}=-\\frac{12}{5}\\). Hai góc bù có sin bằng nhau và cos đối nhau, nên \\(\\sin\\beta=\\frac5{13},\\cos\\beta=\\frac{12}{13}\\).",
     "skill_ids": [
       "G10-B05-IDENTITIES",
       "G10-B05-SUPPLEMENTARY"
@@ -342,9 +344,9 @@
   {
     "item_id": "THPT-G10-CHIII-RD1-06",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-06",
-    "stem": "Giá trị chính xác của sin120°+cos135° bằng? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Giá trị chính xác của \\(\\sin120^\\circ+\\cos135^\\circ\\) bằng bao nhiêu? Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
-    "worked_solution": "sin120°=√3/2; cos135°=−√2/2, tổng = (√3−√2)/2.",
+    "worked_solution": "Dùng quan hệ góc bù: \\(\\sin120^\\circ=\\sin60^\\circ=\\frac{\\sqrt3}{2}\\), \\(\\cos135^\\circ=-\\cos45^\\circ=-\\frac{\\sqrt2}{2}\\). Tổng bằng \\(\\frac{\\sqrt3-\\sqrt2}{2}\\).",
     "skill_ids": [
       "G10-B05-SPECIAL_ANGLES"
     ],
@@ -409,9 +411,9 @@
   {
     "item_id": "THPT-G10-CHIII-RD1-07",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-07",
-    "stem": "Với α∈(90°,180°) và cot α=−3/4, tìm sin α, cos α, tan α. Nêu điều kiện để cot α xác định. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Với \\(\\alpha\\in(90^\\circ;180^\\circ)\\) và \\(\\cot\\alpha=-\\frac34\\), tìm \\(\\sin\\alpha,\\cos\\alpha,\\tan\\alpha\\). Nêu điều kiện để \\(\\cot\\alpha\\) xác định. Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "sin α=4/5; cos α=−3/5; tan α=−4/3; sin α≠0",
-    "worked_solution": "cot α=cos α/sin α; vì α tù, cos<0 và sin>0. Tỉ lệ |cos|:sin=3:4 và sin²+cos²=1 suy ra (sin,cos)=(4/5,−3/5); tan=sin/cos=−4/3; cot chỉ xác định khi sin≠0.",
+    "worked_solution": "Vì \\(\\alpha\\) tù nên \\(\\cos\\alpha<0,\\sin\\alpha>0\\). Từ \\(\\cot\\alpha=\\frac{\\cos\\alpha}{\\sin\\alpha}=-\\frac34\\), đặt \\(\\cos\\alpha=-3k,\\sin\\alpha=4k\\), \\(k>0\\). Hệ thức \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\) cho \\(25k^2=1\\), tức \\(k=\\frac15\\). Do đó \\(\\sin\\alpha=\\frac45,\\cos\\alpha=-\\frac35,\\tan\\alpha=-\\frac43\\). Cotang xác định khi \\(\\sin\\alpha\\ne0\\).",
     "skill_ids": [
       "G10-B05-SIGN_DOMAIN",
       "G10-B05-IDENTITIES"
@@ -477,9 +479,9 @@
   {
     "item_id": "THPT-G10-CHIII-RD1-08",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-08",
-    "stem": "Trong tam giác ABC, AB=9, AC=7 và góc A=60°. Độ dài BC là? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Trong tam giác \\(ABC\\), \\(AB=9,\\ AC=7,\\ \\widehat A=60^\\circ\\). Tính \\(BC\\). Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
-    "worked_solution": "BC²=AB²+AC²−2·AB·AC·cos60°=81+49−63=67, nên BC=√67.",
+    "worked_solution": "Biết hai cạnh và góc xen giữa, dùng định lí côsin: \\(BC^2=AB^2+AC^2-2AB\\cdot AC\\cos60^\\circ=81+49-63=67\\). Độ dài dương nên \\(BC=\\sqrt{67}\\).",
     "skill_ids": [
       "G10-B06-COSINE_RULE"
     ],
@@ -544,9 +546,9 @@
   {
     "item_id": "THPT-G10-CHIII-RD1-09",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-09",
-    "stem": "Cho tam giác ABC có A=30°, B=45°, BC=a=6. Tìm C, độ dài AC=b và bán kính đường tròn ngoại tiếp R. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Cho tam giác \\(ABC\\) có \\(\\widehat A=30^\\circ,\\widehat B=45^\\circ,BC=a=6\\). Tìm \\(\\widehat C\\), độ dài \\(AC=b\\) và bán kính đường tròn ngoại tiếp \\(R\\). Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "C=105°; b=6√2; R=6",
-    "worked_solution": "C=180°−30°−45°=105°. Theo định lý sin, b/a=sin45°/sin30°=√2, nên b=6√2. Lại a/sinA=2R ⇒ 6/(1/2)=12 ⇒ R=6.",
+    "worked_solution": "Tổng ba góc bằng \\(180^\\circ\\), nên \\(\\widehat C=105^\\circ\\). Theo định lí sin, \\(\\frac ba=\\frac{\\sin45^\\circ}{\\sin30^\\circ}=\\sqrt2\\), suy ra \\(b=6\\sqrt2\\). Lại có \\(2R=\\frac a{\\sin30^\\circ}=\\frac6{1/2}=12\\), nên \\(R=6\\).",
     "skill_ids": [
       "G10-B06-SINE_RULE"
     ],
@@ -611,9 +613,9 @@
   {
     "item_id": "THPT-G10-CHIII-RD1-10",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-10",
-    "stem": "Tam giác có độ dài ba cạnh 10,10,12. Tính nửa chu vi, diện tích bằng công thức Heron, bán kính đường tròn nội tiếp và chiều cao ứng với cạnh 12. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Tam giác có độ dài ba cạnh 10, 10, 12. Tính nửa chu vi, diện tích bằng công thức Heron, bán kính đường tròn nội tiếp và chiều cao ứng với cạnh 12. Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "p=16; S=48; r=3; h=8",
-    "worked_solution": "p=(10+10+12)/2=16. S=√[16(16−10)(16−10)(16−12)]=√(16·6·6·4)=48. r=S/p=3; h=2S/12=8.",
+    "worked_solution": "Nửa chu vi \\(p=\\frac{10+10+12}{2}=16\\). Theo công thức Heron, \\(S=\\sqrt{16(16-10)(16-10)(16-12)}=\\sqrt{16\\cdot6\\cdot6\\cdot4}=48\\). Từ \\(S=pr\\), có \\(r=\\frac{48}{16}=3\\). Từ \\(S=\\frac12\\cdot12h\\), có \\(h=\\frac{2\\cdot48}{12}=8\\).",
     "skill_ids": [
       "G10-B06-HERON",
       "G10-B06-AREA_SIN"
@@ -679,9 +681,9 @@
   {
     "item_id": "THPT-G10-CHIII-RD1-11",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-11",
-    "stem": "Trong tam giác ABC, hai cạnh kề góc A dài 6 và 10, góc A=150°. Diện tích bằng? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Trong tam giác \\(ABC\\), hai cạnh kề góc \\(A\\) dài 6 và 10, \\(\\widehat A=150^\\circ\\). Tính diện tích. Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "A",
-    "worked_solution": "S=1/2·6·10·sin150°=30·(1/2)=15.",
+    "worked_solution": "Dùng công thức diện tích theo hai cạnh và góc xen giữa: \\(S=\\frac12\\cdot6\\cdot10\\sin150^\\circ=30\\cdot\\frac12=15\\).",
     "skill_ids": [
       "G10-B06-AREA_SIN"
     ],
@@ -746,9 +748,9 @@
   {
     "item_id": "THPT-G10-CHIII-RD1-12",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-12",
-    "stem": "Tam giác có cạnh a=7 đối diện góc A, còn hai cạnh kề góc A là b=5,c=8. Tìm cos A và suy ra A. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Tam giác có cạnh \\(a=7\\) đối diện góc \\(A\\), hai cạnh kề góc \\(A\\) là \\(b=5,c=8\\). Tìm \\(\\cos A\\) và suy ra góc \\(A\\). Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "cos A=1/2; A=60°",
-    "worked_solution": "cos A=(b²+c²−a²)/(2bc)=(25+64−49)/80=40/80=1/2. Vì 0°<A<180°, A=60°.",
+    "worked_solution": "Theo định lí côsin, \\(\\cos A=\\frac{b^2+c^2-a^2}{2bc}=\\frac{25+64-49}{80}=\\frac12\\). Vì \\(0^\\circ<A<180^\\circ\\) và cosin giảm nghiêm ngặt trên khoảng này, \\(A=60^\\circ\\) là nghiệm duy nhất.",
     "skill_ids": [
       "G10-B06-COSINE_RULE"
     ],
@@ -813,9 +815,9 @@
   {
     "item_id": "THPT-G10-CHIII-RD1-13",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-13",
-    "stem": "Tam giác có ba cạnh 3,4,5. Đánh giá Đ/S: (a) Tam giác vuông. (b) Diện tích bằng 6. (c) Bán kính đường tròn nội tiếp bằng 2. (d) Bán kính đường tròn ngoại tiếp bằng 5/2. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Tam giác có ba cạnh 3, 4, 5. Chọn tất cả khẳng định đúng. Xét từng khẳng định độc lập trước khi nộp toàn bài.",
     "answer_key": "(Đ,Đ,S,Đ)",
-    "worked_solution": "3²+4²=5², góc đối diện cạnh 5 vuông. S=3·4/2=6, p=6 nên r=S/p=1, không phải 2; với tam giác vuông R=5/2.",
+    "worked_solution": "A đúng vì \\(3^2+4^2=5^2\\), tam giác vuông theo định lí Pythagore đảo. B đúng: \\(S=\\frac12\\cdot3\\cdot4=6\\). C sai: \\(p=6\\), nên \\(r=\\frac Sp=1\\). D đúng: trong tam giác vuông, bán kính ngoại tiếp bằng nửa cạnh huyền, \\(R=\\frac52\\).",
     "skill_ids": [
       "G10-B06-APPLICATION",
       "G10-B06-HERON",
@@ -829,9 +831,11 @@
     ],
     "rubric": "4 ý 1đ/ý; có thể suy bằng công thức S=abc/(4R) hoặc định lý sin.",
     "interaction": {
-      "type": "SINGLE_CHOICE",
+      "type": "MULTIPLE_CHOICE",
       "correct_option_ids": [
-        "A"
+        "A",
+        "B",
+        "D"
       ],
       "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
@@ -863,28 +867,28 @@
     "options": [
       {
         "id": "A",
-        "text": "Đ, Đ, S, Đ"
+        "text": "Tam giác vuông."
       },
       {
         "id": "B",
-        "text": "Đ, Đ, Đ, S"
+        "text": "Diện tích bằng 6."
       },
       {
         "id": "C",
-        "text": "S, Đ, S, Đ"
+        "text": "Bán kính đường tròn nội tiếp bằng 2."
       },
       {
         "id": "D",
-        "text": "Đ, S, S, Đ"
+        "text": "Bán kính đường tròn ngoại tiếp bằng \\(\\frac52\\)."
       }
     ]
   },
   {
     "item_id": "THPT-G10-CHIII-RD1-14",
     "content_version": "SGK-G10-CHIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHIII-RD1-14",
-    "stem": "Trong tam giác ABC có AB=7, AC=5, góc BAC=60°. a) Tính BC. b) Tính diện tích S. c) Tính bán kính R đường tròn ngoại tiếp. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Trong tam giác \\(ABC\\), \\(AB=7,AC=5,\\widehat{BAC}=60^\\circ\\). Tính \\(BC\\), diện tích \\(S\\) và bán kính ngoại tiếp \\(R\\). Tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "BC=√39; S=35√3/4; R=√13",
-    "worked_solution": "BC²=7²+5²−2·7·5·(1/2)=39. Diện tích S=1/2·7·5·sin60°=35√3/4. Định lý sin 2R=BC/sin60°=√39/(√3/2), suy ra R=√39/√3=√13.",
+    "worked_solution": "Định lí côsin cho \\(BC^2=7^2+5^2-2\\cdot7\\cdot5\\cos60^\\circ=39\\), nên \\(BC=\\sqrt{39}\\). Diện tích \\(S=\\frac12\\cdot7\\cdot5\\sin60^\\circ=\\frac{35\\sqrt3}{4}\\). Định lí sin cho \\(2R=\\frac{BC}{\\sin60^\\circ}\\), suy ra \\(R=\\frac{\\sqrt{39}}{\\sqrt3}=\\sqrt{13}\\).",
     "skill_ids": [
       "G10-B06-COSINE_RULE",
       "G10-B06-AREA_SIN",
