@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "356523cceff3e48793cf25ba240de4bafa4bd98e",
+    "as_of_commit": "f0adf92d071a741b4f329e99bb9152a349848f89",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.1: shared 724/815 interactive IDs (G10 ChI–IX + G11 ChI–IX + G12 ChI–IV shared subset), Written 0/160; next G12 ChV–VI and remaining shared IDs. Owner: work in groups of three chapters; skip already checked/normalized content.",
+    "next": "08.1: shared 815/815 interactive IDs complete, Written 0/160; next shared Written G10 ChI–III, skip verified fields. Owner: work in groups of three chapters.",
     "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -4062,18 +4062,523 @@
                     ]
                   ],
                   "findings": "Read remaining changed/unverified fields only; inherit identical checked fields. Normalized notation in 18 shared IDs; exact readback verified 28 intended fields only, option IDs, interaction, existing exact key/option display matches and mathematical meaning retained. Changed fields: THPT-G12-B11-A01:answer_key, THPT-G12-B11-A01:options, THPT-G12-B11-A02:answer_key, THPT-G12-B11-A02:options, THPT-G12-B11-C04:options, THPT-G12-B11-P04:options, THPT-G12-B11-A04:options, THPT-G12-B11-C05:options, THPT-G12-B12-C01:options, THPT-G12-B12-C02:options, THPT-G12-B12-P05:options, THPT-G12-B12-C06:options, THPT-G12-B12-P07:answer_key, THPT-G12-B12-P07:options, THPT-G12-B13-A01:answer_key, THPT-G12-B13-A01:options, THPT-G12-B13-C02:worked_solution, THPT-G12-B13-C02:hints, THPT-G12-B13-C02:remediation, THPT-G12-B13-P05:options, THPT-G12-B13-A06:answer_key, THPT-G12-B13-A06:options, THPT-G12-B13-C07:answer_key, THPT-G12-B13-C07:options, THPT-G12-B13-P07:answer_key, THPT-G12-B13-P07:options, THPT-G12-B13-A07:answer_key, THPT-G12-B13-A07:options. Data final commit 356523cceff3e48793cf25ba240de4bafa4bd98e."
+                },
+                {
+                  "shard": "items/g12-chv.json",
+                  "blob": "bbbded2f34f33317bbd180088d080be6b71368c4",
+                  "baseline_commit": "1ed38945aed44459964008b756f220f21d13059d",
+                  "baseline_blob": "902b2b0d994f23629c185caf633bbf6dc9132254",
+                  "evidence_cp": "CP104",
+                  "records": [
+                    [
+                      "THPT-G12-B14-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-A01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-A02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-C03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-A03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-C04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-A04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-C05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-A05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-C06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-A06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-C07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-P07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B14-A07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-A01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-A02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-C03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-A03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-C04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-A04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-C05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-A05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-C06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-A06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-C07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-P07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B15-A07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-A01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-A02",
+                      77,
+                      18
+                    ],
+                    [
+                      "THPT-G12-B16-C03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-A03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-C04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-P04",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G12-B16-A04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-C05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B16-A05",
+                      72,
+                      23
+                    ],
+                    [
+                      "THPT-G12-B17-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-A01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-A02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-C03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-A03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-C04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-A04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-C05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B17-A05",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Read remaining changed/unverified fields only; inherit identical checked fields. Normalized notation in 4 IDs; exact readback verified 5 intended fields only, option IDs, interaction, existing exact key/option display matches and mathematical meaning retained. Changed fields: THPT-G12-B15-C04:options, THPT-G12-B15-P04:options, THPT-G12-B15-P06:options, THPT-G12-B16-P04:worked_solution, THPT-G12-B16-P04:hints. Data commit 069dc2d260dfba25cd64f88bd0245315399d5956."
+                },
+                {
+                  "shard": "items/g12-chvi.json",
+                  "blob": "b19beb954bd23b62ab61e80e074c68acb4758f66",
+                  "baseline_commit": "1ed38945aed44459964008b756f220f21d13059d",
+                  "baseline_blob": "0a16c169c3d28a4e1b9ef55de3be2361d8ae29de",
+                  "evidence_cp": "CP104",
+                  "records": [
+                    [
+                      "THPT-G12-B18-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B18-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B18-C06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B19-A01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B19-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G12-B19-A07",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Read remaining changed/unverified fields only; inherit identical checked fields. Normalized notation in 1 IDs; exact readback verified 1 intended fields only, option IDs, interaction, existing exact key/option display matches and mathematical meaning retained. Changed fields: THPT-G12-B18-P04:options. Data commit 5ad5f7c62d499e98f9cb169abf23bd09c78db883."
+                },
+                {
+                  "shard": "items/g12-chi-public-selfcheck.json",
+                  "blob": "8a1aaa4ceafc4f172797a7247daaac0dee83064e",
+                  "baseline_commit": null,
+                  "baseline_blob": null,
+                  "evidence_cp": null,
+                  "records": [
+                    [
+                      "THPT-G12-CHI-END-C01",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-G12-CHI-END-C02",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-G12-CHI-END-C03",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-G12-CHI-END-C04",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-G12-CHI-END-P01",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-G12-CHI-END-P02",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-G12-CHI-END-P03",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-G12-CHI-END-P04",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-G12-CHI-END-A01",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-G12-CHI-END-A02",
+                      0,
+                      31
+                    ]
+                  ],
+                  "findings": "Read all remaining shared IDs in this shard; no prior baseline inheritance claimed. Normalized notation in 10 IDs; exact readback verified 17 intended fields only, option IDs, interaction, existing exact key/option display matches and mathematical meaning retained. Changed fields: THPT-G12-CHI-END-C01:answer_key, THPT-G12-CHI-END-C02:answer_key, THPT-G12-CHI-END-C02:options, THPT-G12-CHI-END-C03:options, THPT-G12-CHI-END-C04:worked_solution, THPT-G12-CHI-END-P01:answer_key, THPT-G12-CHI-END-P01:options, THPT-G12-CHI-END-P02:answer_key, THPT-G12-CHI-END-P02:options, THPT-G12-CHI-END-P03:answer_key, THPT-G12-CHI-END-P03:options, THPT-G12-CHI-END-P04:answer_key, THPT-G12-CHI-END-P04:options, THPT-G12-CHI-END-A01:answer_key, THPT-G12-CHI-END-A01:options, THPT-G12-CHI-END-A02:answer_key, THPT-G12-CHI-END-A02:options. Data commit 1dbf2bbe5d7b46869acd258c9e5453f60a098904."
+                },
+                {
+                  "shard": "items/cd10.json",
+                  "blob": "f98c51b777e5283d2c9be4950803b992aaac7890",
+                  "baseline_commit": null,
+                  "baseline_blob": null,
+                  "evidence_cp": null,
+                  "records": [
+                    [
+                      "THPT-TOP10-P34",
+                      0,
+                      95
+                    ]
+                  ],
+                  "findings": "Read all remaining shared IDs in this shard; no prior baseline inheritance claimed. Notation acceptable; no source changes."
+                },
+                {
+                  "shard": "items/cd14.json",
+                  "blob": "8a2c7630a0b155c756dbe981bb51aa9d795095a7",
+                  "baseline_commit": null,
+                  "baseline_blob": null,
+                  "evidence_cp": null,
+                  "records": [
+                    [
+                      "THPT-TOP14-P17",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP14-P23",
+                      0,
+                      95
+                    ]
+                  ],
+                  "findings": "Read all remaining shared IDs in this shard; no prior baseline inheritance claimed. Normalized notation in 1 IDs; exact readback verified 3 intended fields only, option IDs, interaction, existing exact key/option display matches and mathematical meaning retained. Changed fields: THPT-TOP14-P23:stem, THPT-TOP14-P23:worked_solution, THPT-TOP14-P23:options. Data commit f0adf92d071a741b4f329e99bb9152a349848f89."
                 }
               ],
-              "completed_interactive": 724,
+              "completed_interactive": 815,
               "completed_written": 0,
-              "remaining_interactive": 91,
+              "remaining_interactive": 0,
               "remaining_written": 160,
               "counts": {
-                "ids": 724,
-                "inherited": 3082,
-                "newly_checked": 1261
+                "ids": 815,
+                "inherited": 3463,
+                "newly_checked": 1416
               },
-              "next": "Next: G12 ChV–VI shared interactive IDs; then remaining shared interactive shards per partition and Written 160 in 08.1; skip verified fields."
+              "next": "08.1 Written: 160 shared IDs remain, grouped by chapter; start G10 ChI–III. All 815 shared interactive IDs complete; do not recheck. Keep 08.1 unchecked until Written is complete."
             }
           },
           {
