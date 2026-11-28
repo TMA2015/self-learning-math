@@ -987,6 +987,9 @@ function classify(paths,{manual=false,base=""}={}){
  const display1132Files=[...display1132Lessons,...["prototypes/thpt/ux795/G10_B18_B21_B22_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/thpt-q18-g10-source-receipt.cjs"]];
  if(files.length===display1132Files.length&&new Set(files).size===files.length&&files.every(x=>display1132Files.includes(x)))
   return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:display1132Lessons.join(","),reason:"OWNER_1132_EXACT_DISPLAY_DELTA"};
+ const wording1132Files=["docs/thpt-preview/sgk/chuong-i/bai-1.md","docs/thpt-preview/sgk/chuong-i/bai-2.md","docs/thpt-preview/sgk/chuong-ii/bai-3.md","docs/thpt-preview/sgk/chuong-ii/bai-4.md","prototypes/thpt/ux795/G10_B01_B04_MATH_WORDING_Q18_DELTA_1132_20261128.md","scripts/thpt-q18-g10-source-receipt.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-scoped-release-qa.yml"];
+ if(files.length===wording1132Files.length&&new Set(files).size===files.length&&files.every(x=>wording1132Files.includes(x)))
+  return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:"docs/thpt-preview/sgk/chuong-i/bai-1.md,docs/thpt-preview/sgk/chuong-i/bai-2.md,docs/thpt-preview/sgk/chuong-ii/bai-3.md,docs/thpt-preview/sgk/chuong-ii/bai-4.md",reason:"OWNER_1132_G10_B01_B04_WORDING"};
  const lessons=files.filter(x=>CANONICAL_PAGE(x));
  const safeCompanions=x=>RECEIPT.test(x)||SOURCE_TEST.test(x);
  // Owner-authorized B19–B26 editorial QA batch: exact eight canonical
@@ -1120,6 +1123,11 @@ function isSgkSourceOnlyQA(files,result){
  ].includes(p));
 }
 function selfTest(){
+ const wording1132=["docs/thpt-preview/sgk/chuong-i/bai-1.md","docs/thpt-preview/sgk/chuong-i/bai-2.md","docs/thpt-preview/sgk/chuong-ii/bai-3.md","docs/thpt-preview/sgk/chuong-ii/bai-4.md","prototypes/thpt/ux795/G10_B01_B04_MATH_WORDING_Q18_DELTA_1132_20261128.md","scripts/thpt-q18-g10-source-receipt.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-scoped-release-qa.yml"];
+ assert.equal(classify(wording1132).reason,"OWNER_1132_G10_B01_B04_WORDING");
+ assert(isSgkSourceOnlyQA(wording1132,classify(wording1132)));
+ assert.equal(classify([...wording1132,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL");
+ assert.notEqual(classify(wording1132.filter(x=>x!=="prototypes/thpt/ux795/G10_B01_B04_MATH_WORDING_Q18_DELTA_1132_20261128.md")).reason,"OWNER_1132_G10_B01_B04_WORDING");
  const b19Display1132=["docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md","prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml"];
  assert.equal(classify(b19Display1132).reason,"OWNER_1132_G11_B19_DISPLAY");
  assert(isSgkSourceOnlyQA(b19Display1132,classify(b19Display1132)));

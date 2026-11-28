@@ -43,7 +43,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Tập hợp và phần tử:</strong> Tập hợp là một nhóm các đối tượng xác định; mỗi đối tượng trong nhóm là một phần tử của tập. Thứ tự liệt kê và việc lặp một phần tử không làm thay đổi tập hợp.</div>
 
-    **Hai cách mô tả tập hợp.** Có thể **liệt kê** các phần tử, ví dụ \(A=\{2,4\}\), hoặc **nêu tính chất đặc trưng**, chẳng hạn \(C=\{x\in\mathbb N\mid x<5\}\). Theo SGK \(\mathbb N=\{0,1,2,\ldots\}\), nên \(C=\{0,1,2,3,4\}\). Luôn nêu đúng miền xét.
+    **Hai cách mô tả tập hợp.** Có thể **liệt kê** các phần tử, ví dụ \(A=\{2,4\}\), hoặc **nêu tính chất đặc trưng**, chẳng hạn \(C=\{x\in\mathbb N\mid x<5\}\). Theo SGK \(\mathbb N=\{0,1,2,\ldots\}\), nên \(C=\{0,1,2,3,4\}\). Đọc dấu gạch đứng là “sao cho”: tập C gồm các số tự nhiên sao cho số đó nhỏ hơn 5. Luôn nêu đúng miền xét.
 
     **Kí hiệu phần tử.** \(x\in A\) nghĩa là \(x\) thuộc tập \(A\); \(x\notin A\) nghĩa là \(x\) không thuộc \(A\).
 
@@ -97,7 +97,7 @@
 
     #### 2.2.2. Khoảng, đoạn và nửa khoảng trên trục số
 
-    Khi tập hợp chứa vô số số thực, liệt kê từng số là không thể. Ta dùng **khoảng** hoặc **đoạn** để viết ngắn gọn. Ví dụ: \([1;4]\) là tất cả các số thực \(x\) thỏa \(1\le x\le4\); còn \((1;4)\) là những số thỏa \(1<x<4\).
+    Khi tập hợp chứa vô số số thực, liệt kê từng số là không thể. Ta dùng **khoảng**, **đoạn** hoặc **nửa khoảng** để viết ngắn gọn. Ví dụ: \([1;4]\) là tất cả các số thực \(x\) thỏa \(1\le x\le4\); còn \((1;4)\) là những số thỏa \(1<x<4\).
 
     - Ngoặc vuông **[ ]** tại một đầu mút nghĩa là **lấy** đầu mút đó.
     - Ngoặc tròn **( )** nghĩa là **không lấy** đầu mút.
@@ -184,7 +184,7 @@
 
     **Đọc hình.** Nhìn vùng giao trước, sau đó đến hai vùng riêng và phần ngoài. Không suy từ diện tích hình vẽ ra số lượng phần tử; phải dùng số liệu đã cho.
 
-    Với hai tập hữu hạn, nếu cộng \(n(A)+n(B)\), mọi phần tử thuộc giao đã bị đếm **hai lần**. Vì vậy, muốn biết số phần tử của hợp, phải trừ đi một lần số phần tử ở giao:
+    Với tập hữu hạn \(A\), kí hiệu \(n(A)\) là số phần tử của tập đó (tương tự với tập B). Nếu cộng \(n(A)+n(B)\), mọi phần tử thuộc giao đã bị đếm **hai lần**. Vì vậy, muốn biết số phần tử của hợp, phải trừ đi một lần số phần tử ở giao:
 
     \[
     n(A\cup B)=n(A)+n(B)-n(A\cap B).
@@ -229,13 +229,13 @@
 
     **Kiểm lại.** \(\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R\). Mỗi số còn thuộc tất cả các tập bao ngoài tập nhỏ nhất đã nêu, không phải chỉ thuộc đúng một tập.
 
-    ### 3.3. Ví dụ 3 — Giao, hợp và hiệu của hai khoảng
+    ### 3.3. Ví dụ 3 — Giao, hợp và hiệu của hai nửa khoảng
 
     **Đề bài.** Cho \(A=(-3;2]\), \(B=[0;5)\). Tìm \(A\cap B\), \(A\cup B\) và \(A\setminus B\).
 
-    **Phân tích.** Mỗi tập là một khoảng trên trục số, nên ta xác định phần **chồng lên nhau**, phần **được phủ bởi ít nhất một tập** và phần **chỉ còn lại trong A**. Quyết định lấy hay bỏ đầu mút sau khi kiểm điều kiện, không đoán qua dấu ngoặc.
+    **Phân tích.** Mỗi tập là một nửa khoảng trên trục số, nên ta xác định phần **chồng lên nhau**, phần **được phủ bởi ít nhất một tập** và phần **chỉ còn lại trong A**. Quyết định lấy hay bỏ đầu mút sau khi kiểm điều kiện, không đoán qua dấu ngoặc.
 
-    **Lời giải.** Những số nằm đồng thời trong A và B là các số thỏa \(0\le x\le2\), nên \(A\cap B=[0;2]\). Vì hai khoảng có chung phần \([0;2]\), lấy tất cả phần thuộc ít nhất một khoảng cho \(A\cup B=(-3;5)\). Cuối cùng, từ A bỏ các số có trong B, tức bỏ đoạn \([0;2]\), ta còn \(A\setminus B=(-3;0)\).
+    **Lời giải.** Những số nằm đồng thời trong A và B là các số thỏa \(0\le x\le2\), nên \(A\cap B=[0;2]\). Vì hai nửa khoảng có chung phần \([0;2]\), lấy tất cả phần thuộc ít nhất một trong hai tập cho \(A\cup B=(-3;5)\). Cuối cùng, từ A bỏ các số có trong B, tức bỏ đoạn \([0;2]\), ta còn \(A\setminus B=(-3;0)\).
 
     **Kiểm lại.** Số \(0\) thuộc B nên **không** thuộc \(A\setminus B\). Số \(2\) nằm trong giao vì cả A và B đều chứa 2. Hai đầu mút \(-3\) và \(5\) đều không nằm trong hợp.
 

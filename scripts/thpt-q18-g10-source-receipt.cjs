@@ -69,7 +69,107 @@ function release1132HistoricalText(n,content,previousSha){
  assert.equal(gitBlobAntiRepeat(prior),d.old,"#1132 only approved reversible display fragment B"+n);
  return prior;
 }
+// #1132 A/B: exact reversible wording-only successors, old receipts immutable.
+const release1132WordingDelta=new Map([
+ [
+  1,
+  {
+   "old": "dba6430cd79b17dee0591fb2dcd075ea5200b126",
+   "updated": "7035939d23835470993f5721b7202944aa4ecad9",
+   "swaps": [
+    [
+     "ta phải xác định biến hoặc phát biểu thêm điều kiện thì mới xét được giá trị đúng sai.",
+     "ta phải thay biến bằng một giá trị thuộc miền xét, hoặc dùng lượng từ “với mọi”, “tồn tại” trên một miền xác định, để thu được một mệnh đề có giá trị đúng sai."
+    ],
+    [
+     "Trên miền \\(x\\in\\mathbb R\\), xét",
+     "Xét trên toàn bộ miền \\(x\\in\\mathbb R\\), với"
+    ],
+    [
+     "Mệnh đề \\(P\\Rightarrow Q\\) và mệnh đề đảo \\(Q\\Rightarrow P\\) đúng hay sai?",
+     "Khẳng định \\(P\\Rightarrow Q\\) đúng với mọi số thực x hay không? Khẳng định đảo \\(Q\\Rightarrow P\\) có đúng với mọi số thực x không?"
+    ]
+   ]
+  }
+ ],
+ [
+  2,
+  {
+   "old": "3002487e974f2693528a39b2b2055fad8724d698",
+   "updated": "c5527e06755772ab3d2703b59773b74b01df31f6",
+   "swaps": [
+    [
+     "Luôn nêu đúng miền xét.",
+     "Đọc dấu gạch đứng là “sao cho”: tập C gồm các số tự nhiên sao cho số đó nhỏ hơn 5. Luôn nêu đúng miền xét."
+    ],
+    [
+     "Ta dùng **khoảng** hoặc **đoạn** để viết ngắn gọn.",
+     "Ta dùng **khoảng**, **đoạn** hoặc **nửa khoảng** để viết ngắn gọn."
+    ],
+    [
+     "Với hai tập hữu hạn, nếu cộng",
+     "Với tập hữu hạn \\(A\\), kí hiệu \\(n(A)\\) là số phần tử của tập đó (tương tự với tập B). Nếu cộng"
+    ],
+    [
+     "Ví dụ 3 — Giao, hợp và hiệu của hai khoảng",
+     "Ví dụ 3 — Giao, hợp và hiệu của hai nửa khoảng"
+    ],
+    [
+     "Mỗi tập là một khoảng trên trục số",
+     "Mỗi tập là một nửa khoảng trên trục số"
+    ],
+    [
+     "Vì hai khoảng có chung phần",
+     "Vì hai nửa khoảng có chung phần"
+    ],
+    [
+     "thuộc ít nhất một khoảng cho",
+     "thuộc ít nhất một trong hai tập cho"
+    ]
+   ]
+  }
+ ],
+ [
+  3,
+  {
+   "old": "03cf894ec9e4fb55b86201ab43dab21c48337ef3",
+   "updated": "edb7c2b40e5307a0ce47941c4065421c066cb2f8",
+   "swaps": [
+    [
+     "Không đảo dấu khi chuyển vế hoặc nhầm nét liền với nét đứt",
+     "Quên đổi chiều bất phương trình khi nhân hoặc chia hai vế với số âm, hoặc nhầm nét liền với nét đứt"
+    ]
+   ]
+  }
+ ],
+ [
+  4,
+  {
+   "old": "4c8bfa2bd9af3ac5a31da945abdc990ceaee4618",
+   "updated": "3ee8fd5b8f7e3a8055a69d08a64a9800a642d2af",
+   "swaps": [
+    [
+     "**hai trục không âm**",
+     "**hai nửa mặt phẳng ứng với x không âm và y không âm**"
+    ]
+   ]
+  }
+ ]
+]);
+function release1132WordingCandidate(n,previousSha){
+ const d=release1132WordingDelta.get(n);if(!d)return previousSha;
+ assert.equal(previousSha,d.old,"#1132 wording exact historical predecessor B"+n);
+ let content=fs.readFileSync(path.join(root,g10PublicKnowledgePath(n)),"utf8");
+ assert.equal(gitBlobAntiRepeat(content),d.updated,"#1132 wording exact successor B"+n);
+ for(const [before,after] of [...d.swaps].reverse()){
+  assert.equal(content.split(after).length,2,"#1132 unique corrected fragment B"+n);
+  content=content.replace(after,before);
+ }
+ assert.equal(gitBlobAntiRepeat(content),d.old,"#1132 wording reverse source proof B"+n);
+ return d.updated;
+}
 function release1132Candidate(n,previousSha){
+ if(release1132WordingDelta.has(n))return release1132WordingCandidate(n,previousSha);
  const d=release1132DisplayDelta.get(n);
  if(!d)return previousSha;
  release1132HistoricalText(n,fs.readFileSync(path.join(root,g10PublicKnowledgePath(n)),"utf8"),previousSha);
