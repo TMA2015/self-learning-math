@@ -1408,7 +1408,7 @@
   },
   {
     "item_id": "THPT-TOP15-T01",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T01",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T01-D6-20261128",
     "stem": "\\(A,B\\in(P),\\ A\\ne B\\); M chia AB theo tỉ số \\(AM:MB=2:1\\). M có thuộc \\((P)\\) không?",
     "answer_key": "Có, vì AB nằm trong (P).",
     "worked_solution": "Có. M thuộc đường AB, mà \\(AB\\subset (P)\\); không cần biết tỉ số để suy quan hệ thuộc.\n\n\n\n**Kiểm lỗi**\n\nNếu chỉ vì M chia AB theo một tỉ số mà em không chắc M thuộc (P), trở lại **Kiến thức 1.1**: cả đường AB thuộc (P) khi A,B phân biệt cùng thuộc (P). Thử **Bài luyện 1** và **Bài luyện 6**.",
@@ -1466,11 +1466,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.1; luyện THPT-G11-CHIV-B10-C01, THPT-TOP15-P06."
+    "remediation": "Ôn Kiến thức 1.1; luyện Bài luyện 1, Bài luyện 6."
   },
   {
     "item_id": "THPT-TOP15-T02",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T02",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T02-D6-20261128",
     "stem": "Một đường a và điểm \\(M\\notin a\\) xác định bao nhiêu mặt phẳng?",
     "answer_key": "Đúng một mặt phẳng.",
     "worked_solution": "Đúng một mặt phẳng. Nếu \\(M\\in a\\) sẽ có vô số mặt phẳng chứa a.\n\n\n\n**Kiểm lỗi**\n\nNếu ba điểm thẳng hàng mà em kết luận duy nhất một mặt phẳng, đọc **Kiến thức 1.2**: cần ba điểm không thẳng hàng hoặc đường và điểm ngoài đường. Thử **Bài luyện 3** và **Bài luyện 7**.",
@@ -1528,11 +1528,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.2; luyện THPT-G11-CHIV-B10-P03, THPT-G11-CHIV-B10-C02."
+    "remediation": "Ôn Kiến thức 1.2; luyện Bài luyện 2, Bài luyện 3."
   },
   {
     "item_id": "THPT-TOP15-T03",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T03",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T03-D6-20261128",
     "stem": "Trong tứ diện S.ABC, giao tuyến của (SAB) và (SBC) là gì?",
     "answer_key": "SB",
     "worked_solution": "SB vì S,B là hai điểm chung phân biệt của hai mặt.\n\n\n\n**Kiểm lỗi**\n\nNếu nhầm giao tuyến của hai mặt tứ diện, đọc **Kiến thức 1.3**: tìm hai điểm chung phân biệt. Làm **Bài luyện 4** và **Bài luyện 8**, chỉ rõ điểm nào thuộc cả hai mặt.",
@@ -1590,11 +1590,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.3; luyện THPT-G11-CHIV-B10-P01, THPT-TOP15-P08."
+    "remediation": "Ôn Kiến thức 1.3; luyện Bài luyện 4, Bài luyện 8."
   },
   {
     "item_id": "THPT-TOP15-T04",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T04",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T04-D6-20261128",
     "stem": "Với \\(d:(x;y;z)=(1+t;2;3+t)\\), d cắt mặt \\((P):z=0\\) ở đâu?",
     "answer_key": "\\((-2;2;0)\\)",
     "worked_solution": "\\(t=-3\\), nên giao điểm có tọa độ \\((-2;2;0)\\).\n\n\n\n**Kiểm lỗi**\n\nNếu chỉ ghi tham số hoặc coi cả d là giao tuyến, đọc **Kiến thức 1.4**. Làm **Bài luyện 10** và **Bài luyện 9**; điểm giao phải thỏa phương trình đường và mặt.",
@@ -1652,11 +1652,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.4; luyện THPT-TOP15-P09, THPT-G11-CHIV-B10-P02."
+    "remediation": "Ôn Kiến thức 1.4; luyện Bài luyện 9, Bài luyện 10."
   },
   {
     "item_id": "THPT-TOP15-T05",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T05",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T05-D6-20261128",
     "stem": "Trong tứ diện S.ABC, P nằm trong cạnh AB. Thiết diện do mặt phẳng (SCP) tạo ra cắt mặt tam giác ABC và mặt tam giác SAB theo những đoạn nào?",
     "answer_key": "Đáy: CP; mặt SAB: SP; thiết diện SCP.",
     "worked_solution": "Theo CP và SP; cạnh còn lại của thiết diện là SC. Thiết diện là tam giác SCP.\n\n\n\n**Kiểm lỗi**\n\nNếu vẽ thiết diện kéo dài ra ngoài khối, đọc **Kiến thức 1.5**. Làm **Bài luyện 5** và **Bài luyện 11**; mỗi cạnh thiết diện là đoạn thực sự nằm trên một mặt tứ diện.",
@@ -1714,11 +1714,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.5; luyện THPT-G11-CHIV-B10-P04, THPT-TOP15-P10."
+    "remediation": "Ôn Kiến thức 1.5; luyện Bài luyện 5, Bài luyện 11."
   },
   {
     "item_id": "THPT-TOP15-T06",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T06",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T06-D6-20261128",
     "stem": "Trong tứ diện S.ABC, SA và BC có phải song song vì không gặp nhau?",
     "answer_key": "Không; SA và BC chéo nhau vì bốn đỉnh không đồng phẳng.",
     "worked_solution": "Nếu SA và BC đồng phẳng thì cả S,A,B,C nằm trong một mặt phẳng, trái giả thiết tứ diện. Do đó SA và BC chéo nhau, không phải song song.\n\n\n\n**Kiểm lỗi**\n\nNếu nói hai đường không gặp nhau chắc chắn song song, đọc **Kiến thức 2.1**. Làm **Bài luyện 16** và **Bài luyện 20**; phải chứng minh đồng phẳng rồi mới kết luận.",
@@ -1776,11 +1776,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.1; luyện THPT-G11-CHIV-B11-C01, THPT-TOP15-P02."
+    "remediation": "Ôn Kiến thức 2.1; luyện Bài luyện 16, Bài luyện 19."
   },
   {
     "item_id": "THPT-TOP15-T07",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T07",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T07-D6-20261128",
     "stem": "Hai đường cắt nhau tại M có thể chéo nhau không?",
     "answer_key": "Không; chúng đồng phẳng.",
     "worked_solution": "Không. Hai đường cắt nhau xác định duy nhất một mặt phẳng, nên đồng phẳng.\n\n\n\n**Kiểm lỗi**\n\nNếu nhầm đường cắt nhau thành chéo nhau vì hình phối cảnh, đọc **Kiến thức 2.2**. Làm **Bài luyện 15** và **Bài luyện 19**, kiểm mặt phẳng chung.",
@@ -1839,11 +1839,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.2; luyện THPT-G11-CHIV-B11-C02, THPT-G11-CHIV-B11-P01."
+    "remediation": "Ôn Kiến thức 2.2; luyện Bài luyện 15, Bài luyện 17."
   },
   {
     "item_id": "THPT-TOP15-T08",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T08",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T08-D6-20261128",
     "stem": "Trong tam giác SAB, M,N nằm trong hai cạnh SA,SB và \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac35\\). Kết luận về MN và AB?",
     "answer_key": "\\(MN\\parallel AB\\)",
     "worked_solution": "\\(MN\\parallel AB\\) nhờ Thales đảo trong tam giác SAB.\n\n\n\n**Kiểm lỗi**\n\nNếu áp dụng Thalès đảo cho hai tỉ số không cùng đỉnh, đọc **Kiến thức 2.3**. Làm **Bài luyện 21** và **Bài luyện 22**; so hai tỉ lệ từ đỉnh S trong cùng tam giác.",
@@ -1901,11 +1901,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.3; luyện THPT-G11-CHIV-B11-P04, THPT-G11-CHIV-B11-P02."
+    "remediation": "Ôn Kiến thức 2.3; luyện Bài luyện 18, Bài luyện 21."
   },
   {
     "item_id": "THPT-TOP15-T09",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T09",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T09-D6-20261128",
     "stem": "Trong chóp S.ABCD đáy hình bình hành, giao tuyến \\((SAD)\\cap (SBC)\\) có phương của cạnh nào?",
     "answer_key": "Đường qua S, song song AD và BC.",
     "worked_solution": "Là đường qua S song song AD và BC vì \\(AD\\parallel BC\\).\n\n**Kiểm lỗi**\n\nNếu nhầm giao tuyến qua S với cạnh nằm ở đáy, hãy xác định điểm chung và phương của hai cạnh; nếu chúng cắt nhau thì tìm điểm chung thứ hai. Làm **Bài luyện 23** và **Bài luyện 24**.",
@@ -1964,11 +1964,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.4; luyện THPT-TOP15-P13, THPT-TOP15-P23."
+    "remediation": "Ôn Kiến thức 2.4; luyện Bài luyện 23, Bài luyện 24."
   },
   {
     "item_id": "THPT-TOP15-T10",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T10",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T10-D6-20261128",
     "stem": "Đường thẳng \\(d:(x;y;z)=(1+t;2;3),\\,t\\in\\mathbb R\\) có quan hệ gì với mặt phẳng (P): \\(z=0\\)?",
     "answer_key": "d song song (P) vì z luôn bằng 3.",
     "worked_solution": "Song song vì z luôn bằng \\(3\\ne 0\\).\n\n\n\n**Kiểm lỗi**\n\nNếu nhầm đường trên cao \\(z=3\\) với đường nằm trong \\(z=0\\), đọc **Kiến thức 3.1**. Làm **Bài luyện 29** và **Bài luyện 33**, dùng số điểm chung để phân biệt ba quan hệ.",
@@ -2026,11 +2026,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.1; luyện THPT-G11-CHIV-B12-C01, THPT-G11-CHIV-B12-P02."
+    "remediation": "Ôn Kiến thức 3.1; luyện Bài luyện 29, Bài luyện 30."
   },
   {
     "item_id": "THPT-TOP15-T11",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T11",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T11-D6-20261128",
     "stem": "d và a là hai đường phân biệt cùng nằm trong \\((P), d\\parallel a\\). Có thể kết luận \\(d\\parallel (P)\\) không?",
     "answer_key": "Không; d nằm trong (P).",
     "worked_solution": "Không; d nằm trong (P) nên có vô số điểm chung với (P).\n\n\n\n**Kiểm lỗi**\n\nNếu thấy d song song \\(a\\subset (P)\\) mà quên d có nằm trong (P) hay không, đọc **Kiến thức 3.2**. Làm **Bài luyện 31** và **Bài luyện 36**, kiểm một điểm ngoài mặt.",
@@ -2088,11 +2088,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.2; luyện THPT-G11-CHIV-B12-C02, THPT-G11-CHIV-B12-P01."
+    "remediation": "Ôn Kiến thức 3.2; luyện Bài luyện 31, Bài luyện 35."
   },
   {
     "item_id": "THPT-TOP15-T12",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T12",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T12-D6-20261128",
     "stem": "Cho \\(d\\subset(Q),\\,d\\parallel(P)\\) và hai mặt phẳng cắt nhau theo đường \\(g=(Q)\\cap(P)\\). d và g có thể cắt nhau không?",
     "answer_key": "Không; d và g song song vì đồng phẳng trong (Q).",
     "worked_solution": "Không, vì giao điểm nếu có thuộc (P), trái \\(d\\parallel (P)\\); do đó \\(d\\parallel g\\).\n\n\n\n**Kiểm lỗi**\n\nNếu phát biểu d song song g khi hai mặt không cắt, đọc **Kiến thức 3.3**. Làm **Bài luyện 32** và **Bài luyện 34**; phải có giao tuyến g thật và d không gặp mặt kia.",
@@ -2150,11 +2150,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.3; luyện THPT-G11-CHIV-B12-P03, THPT-TOP15-P15."
+    "remediation": "Ôn Kiến thức 3.3; luyện Bài luyện 32, Bài luyện 34."
   },
   {
     "item_id": "THPT-TOP15-T13",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T13",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T13-D6-20261128",
     "stem": "Trong tứ diện S.ABC, M nằm trong SA và \\(\\frac{SM}{SA}=\\frac23\\). Chọn N,K lần lượt trên SB,SC sao cho mặt (MNK) song song đáy (ABC). Tìm \\(\\frac{SN}{SB}\\) và \\(\\frac{SK}{SC}\\).",
     "answer_key": "\\(SN/SB=SK/SC=2/3\\)",
     "worked_solution": "Nếu mặt cắt song song đáy thì \\(MN\\parallel AB\\) và \\(MK\\parallel AC\\) (giao tuyến của hai mặt song song với mặt thứ ba). Theo Thalès, \\(\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac{SM}{SA}=\\frac23\\). Ngược lại, chọn hai tỉ số bằng \\(\\frac23\\) thì Thalès đảo cho \\(MN\\parallel AB\\), \\(MK\\parallel AC\\). Hai đường MN,MK cắt nhau nên (MNK) song song (ABC).\n\n**Kiểm lỗi**\n\nNếu ba tỉ số trên các cạnh bên không bằng nhau, hãy dùng Thalès và giao tuyến của hai mặt song song để kiểm tra. Làm **Bài luyện 37** và **Bài luyện 38**.",
@@ -2213,11 +2213,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.4; luyện THPT-TOP15-P16, THPT-TOP15-P24."
+    "remediation": "Ôn Kiến thức 3.4; luyện Bài luyện 37, Bài luyện 38."
   },
   {
     "item_id": "THPT-TOP15-T14",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T14",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T14-D6-20261128",
     "stem": "Hai mặt \\(z=0\\) và \\(2z=0\\) trùng hay song song phân biệt?",
     "answer_key": "Trùng nhau.",
     "worked_solution": "Trùng nhau, vì chúng cùng tập điểm \\(z=0\\).\n\n\n\n**Kiểm lỗi**\n\nNếu coi \\(z=0\\) và \\(2z=0\\) song song phân biệt, đọc **Kiến thức 4.1**. Làm **Bài luyện 42** và **Bài luyện 46**; trước hết kiểm hai tập điểm có trùng nhau không.",
@@ -2275,11 +2275,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.1; luyện THPT-G11-CHIV-B13-C01, THPT-TOP15-P17."
+    "remediation": "Ôn Kiến thức 4.1; luyện Bài luyện 42, Bài luyện 46."
   },
   {
     "item_id": "THPT-TOP15-T15",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T15",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T15-D6-20261128",
     "stem": "Cho \\(a,b\\subset (P)\\) nhưng \\(a\\parallel b\\) và \\(a\\parallel (Q),b\\parallel (Q)\\). Có đủ kết luận \\((P)\\parallel (Q)\\) không?",
     "answer_key": "Chưa đủ; a,b chỉ cho một phương.",
     "worked_solution": "Hai đường a,b song song không đáp ứng điều kiện hai đường cắt nhau. Chẳng hạn \\((P):z=0,\\ (Q):y=0\\), \\(a:(x;y;z)=(t;1;0)\\), \\(b:(x;y;z)=(t;2;0)\\), \\(t\\in\\mathbb R\\). Cả a,b song song (Q) nhưng (P) và (Q) cắt nhau theo Ox.\n\n\n\n**Kiểm lỗi**\n\nNếu chỉ có một đường a trong (P) song song (Q) mà kết luận \\((P)\\parallel (Q)\\), đọc **Kiến thức 4.2**. Làm **Bài luyện 43** và **Bài luyện 52**, cần hai đường cắt nhau trong (P).",
@@ -2337,11 +2337,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.2; luyện THPT-G11-CHIV-B13-C02, THPT-G11-CHIV-B13-P02."
+    "remediation": "Ôn Kiến thức 4.2; luyện Bài luyện 43, Bài luyện 45."
   },
   {
     "item_id": "THPT-TOP15-T16",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T16",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T16-D6-20261128",
     "stem": "Cho hai mặt phẳng phân biệt \\((P)\\parallel(Q)\\). Một người cho rằng mặt phẳng (R) cắt (P) nhưng song song (Q), rồi kết luận hai giao tuyến song song. Nhận xét lập luận đó.",
     "answer_key": "Giả thiết mâu thuẫn: R cắt P thì R cũng cắt Q.",
     "worked_solution": "Nếu \\((P)\\parallel(Q)\\) và (R) cắt (P), thì (R) cũng cắt (Q). Vì vậy giả thiết (R) song song (Q) đồng thời cắt (P) là không thể. Không có hai giao tuyến trong cấu hình đã nêu để so sánh.\n\n\n\n**Kiểm lỗi**\n\nNếu quên điều kiện mặt thứ ba cắt cả hai mặt song song, đọc **Kiến thức 4.3**. Làm **Bài luyện 44** và **Bài luyện 50**; xác định hai giao tuyến trước khi suy chúng song song.",
@@ -2399,11 +2399,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.3; luyện THPT-G11-CHIV-B13-P01, THPT-TOP15-P19."
+    "remediation": "Ôn Kiến thức 4.3; luyện Bài luyện 44, Bài luyện 50."
   },
   {
     "item_id": "THPT-TOP15-T17",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T17",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T17-D6-20261128",
     "stem": "Trong tứ diện S.ABC, M,N,K nằm trong các cạnh SA,SB,SC, có \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac25\\). Diện tích đáy ABC là \\(100\\,\\mathrm{cm}^2\\). Tính diện tích thiết diện MNK.",
     "answer_key": "16 cm²",
     "worked_solution": "Mặt cắt song song đáy tạo tam giác đồng dạng với đáy, tỉ số cạnh \\(t=\\frac25\\). Diện tích tỉ lệ với \\(t^2\\), nên bằng \\(\\left(\\frac25\\right)^2\\cdot100=16\\,\\mathrm{cm}^2\\).\n\n\n\n**Kiểm lỗi**\n\nNếu lấy t thay cho \\(t^2\\) làm tỉ số diện tích, đọc **Kiến thức 4.4** và Thalès trong không gian. Làm **Bài luyện 48** và **Bài luyện 49**, phân biệt tỉ số cạnh/chu vi và diện tích.",
@@ -2461,11 +2461,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.4; luyện THPT-G11-CHIV-B13-P03, THPT-G11-CHIV-B13-P04."
+    "remediation": "Ôn Kiến thức 4.4; luyện Bài luyện 47, Bài luyện 48."
   },
   {
     "item_id": "THPT-TOP15-T18",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T18",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T18-D6-20261128",
     "stem": "Tìm ảnh \\(N(3;-1;2)\\) dưới phép chiếu \\(T(x;y;z)=(x-z;y;0)\\).",
     "answer_key": "\\(N'(1;-1;0)\\)",
     "worked_solution": "\\(N'(1;-1;0)\\). Kiểm cao độ của ảnh bằng 0 và \\(\\overrightarrow{N'N}=2(1;0;1)\\) cùng phương chiếu.\n\n\n\n**Kiểm lỗi**\n\nNếu chiếu theo phương song song \\(z=0\\) mà tưởng mọi điểm đều có ảnh, đọc **Kiến thức 5.1**. Làm **Bài luyện 57** và **Bài luyện 63**; giải tham số tại \\(z=0\\).",
@@ -2523,11 +2523,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 5.1; luyện THPT-G11-CHIV-B14-P01, THPT-G11-CHIV-B14-C01."
+    "remediation": "Ôn Kiến thức 5.1; luyện Bài luyện 56, Bài luyện 57."
   },
   {
     "item_id": "THPT-TOP15-T19",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T19",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T19-D6-20261128",
     "stem": "Cho phép chiếu song song \\(T(x;y;z)=(x-z;y;0)\\). Đường \\(d:(x;y;z)=(1+t;2;3+t),\\,t\\in\\mathbb R\\) có ảnh qua T là đường hay điểm?",
     "answer_key": "Một điểm \\((-2;2;0)\\).",
     "worked_solution": "Một điểm: \\(T(1+t;2;3+t)=(-2;2;0)\\) với mọi t.\n\n\n\n**Kiểm lỗi**\n\nNếu tưởng đường nào cũng có ảnh là đường, đọc **Kiến thức 5.2**. Làm **Bài luyện 60** và **Bài luyện 66**, so ảnh hai điểm khi đường cùng phương chiếu.",
@@ -2585,11 +2585,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 5.2; luyện THPT-G11-CHIV-B14-P03, THPT-TOP15-P21."
+    "remediation": "Ôn Kiến thức 5.2; luyện Bài luyện 60, Bài luyện 61."
   },
   {
     "item_id": "THPT-TOP15-T20",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T20",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T20-D6-20261128",
     "stem": "Qua phép chiếu song song, A′,B′,M′ lần lượt là ảnh của A,B,M. Nếu M là trung điểm AB và \\(A'\\ne B'\\), M′ nằm ở đâu?",
     "answer_key": "M' là trung điểm A'B'.",
     "worked_solution": "Là trung điểm A′B′; điều kiện \\(A'\\ne B'\\) loại trường hợp đường ảnh co thành điểm.\n\n\n\n**Kiểm lỗi**\n\nNếu chia tỉ số độ dài ảnh khi \\(A'=B'\\), đọc **Kiến thức 5.3**. Làm **Bài luyện 59** và **Bài luyện 67**, kiểm ảnh đoạn không suy biến trước.",
@@ -2647,11 +2647,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 5.3; luyện THPT-G11-CHIV-B14-P02, THPT-TOP15-P22."
+    "remediation": "Ôn Kiến thức 5.3; luyện Bài luyện 59, Bài luyện 67."
   },
   {
     "item_id": "THPT-TOP15-T21",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T21",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T21-D6-20261128",
     "stem": "Hình chiếu song song của hình bình hành không suy biến có thể là hình thang chỉ có một cặp cạnh song song không?",
     "answer_key": "Không; ảnh không suy biến là hình bình hành, nếu suy biến thì là đoạn.",
     "worked_solution": "Phép chiếu song song bảo toàn quan hệ song song của hai cặp cạnh đối khi hình ảnh không suy biến, nên ảnh là hình bình hành. Nếu mặt phẳng chứa hình song song phương chiếu, ảnh co thành đoạn thẳng, không phải hình thang. Vì vậy không thể thu được hình thang chỉ có một cặp cạnh song song.\n\n\n\n**Kiểm lỗi**\n\nNếu suy giữ nguyên góc vuông vì hình chiếu còn hai cặp cạnh đối song song, đọc **Kiến thức 5.4**. Làm **Bài luyện 65** và **Bài luyện 70**, kiểm góc ảnh riêng.",
@@ -2709,11 +2709,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 5.4; luyện THPT-G11-CHIV-B14-C02, THPT-G11-CHIV-B14-P04."
+    "remediation": "Ôn Kiến thức 5.4; luyện Bài luyện 58, Bài luyện 65."
   },
   {
     "item_id": "THPT-TOP15-T22",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T22",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-T22-D6-20261128",
     "stem": "Trong tứ diện S.ABC, M,N,K nằm trong các cạnh SA,SB,SC, có \\(\\frac{SM}{SA}=\\frac{SN}{SB}=\\frac{SK}{SC}=\\frac35\\). Tính tỉ số diện tích tam giác MNK so với ABC.",
     "answer_key": "\\(\\frac9{25}\\)",
     "worked_solution": "Ba tỉ số cạnh tính từ S cùng bằng \\(\\frac35\\), nên thiết diện MNK song song đáy và đồng dạng với ABC. Tỉ số diện tích là \\(\\left(\\frac35\\right)^2=\\frac9{25}\\); tỉ số chu vi mới là \\(\\frac35\\).\n\n**Kiểm lỗi**\n\nNếu đồng nhất diện tích thiết diện và diện tích ảnh, tính diện tích mặt cắt bằng bình phương tỉ số cạnh rồi kiểm riêng phương chiếu. Làm **Bài luyện 62** và **Bài luyện 64**.",
@@ -2771,11 +2771,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 5.5; luyện THPT-TOP15-P26, THPT-TOP15-P25."
+    "remediation": "Ôn Kiến thức 5.5; luyện Bài luyện 62, Bài luyện 64."
   },
   {
     "item_id": "THPT-TOP16-T01",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T01",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T01-D6-20261128",
     "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, góc giữa AB và A′B′ bằng bao nhiêu?",
     "answer_key": "0°",
     "worked_solution": "\\(0^\\circ\\) vì AB và A′B′ song song.\n\n**Kiểm lỗi**\n\nNếu lấy góc tù \\(145^\\circ\\) làm góc giữa hai đường, đọc lại **Kiến thức 1.1**: phải đưa hai phương về chung gốc và chọn góc không tù. Thử **Bài luyện 3** (góc bù) và **Bài luyện 11** (hai cạnh song song).",
@@ -2833,11 +2833,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.1; luyện THPT-G11-CHVII-B22-P02, THPT-G11-CHVII-B22-C01."
+    "remediation": "Ôn Kiến thức 1.1; luyện Bài luyện 2, Bài luyện 3."
   },
   {
     "item_id": "THPT-TOP16-T02",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T02",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T02-D6-20261128",
     "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, AB và DD′ có phải là hai đường vuông góc không?",
     "answer_key": "Có; AB vuông góc AA', AA' song song DD'.",
     "worked_solution": "Trong hình hộp chữ nhật, \\(DD'\\parallel AA'\\) và \\(AB\\perp AA'\\), nên \\(AB\\perp DD'\\). Hai đường AB,DD′ chéo nhau nhưng vẫn vuông góc theo phương.\n\n**Kiểm lỗi**\n\nNếu nghĩ hai đường không cắt thì không thể vuông góc, đọc **Kiến thức 1.2**: vuông góc là quan hệ giữa hai phương, còn chéo nhau là quan hệ vị trí. Thử **Bài luyện 7** (phản ví dụ) và **Bài luyện 8** (hình hộp).",
@@ -2895,11 +2895,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.2; luyện THPT-G11-CHVII-B22-C02, THPT-G11-CHVII-B22-P03."
+    "remediation": "Ôn Kiến thức 1.2; luyện Bài luyện 4, Bài luyện 7."
   },
   {
     "item_id": "THPT-TOP16-T03",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T03",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T03-D6-20261128",
     "stem": "Nếu \\(a\\perp b\\) và \\(c\\parallel b\\) thì kết luận gì về a,c?",
     "answer_key": "a vuông góc c.",
     "worked_solution": "\\(a\\perp c\\) theo tính bất biến của góc khi thay đường bằng đường song song.\n\n**Kiểm lỗi**\n\nNếu suy 'cùng vuông góc một đường' thì phải song song, xem lại **Kiến thức 1.3**: phép chuyển phương đúng là thay **một** đường bằng đường song song với nó. Thử **Bài luyện 1** và **Bài luyện 9**, xác định cặp đường nào thật sự song song.",
@@ -2957,11 +2957,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.3; luyện THPT-G11-CHVII-B22-C03, THPT-TOP16-P03."
+    "remediation": "Ôn Kiến thức 1.3; luyện Bài luyện 1, Bài luyện 9."
   },
   {
     "item_id": "THPT-TOP16-T04",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T04",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T04-D6-20261128",
     "stem": "Nét vẽ có hai đoạn tạo góc \\(90^\\circ\\) trên giấy, đủ kết luận hai thanh trong không gian vuông góc chưa?",
     "answer_key": "Chưa đủ; cần chứng cứ về phương hoặc góc thật.",
     "worked_solution": "Chưa; cần chứng cứ hình học về phương hoặc góc thật.\n\n**Kiểm lỗi**\n\nNếu kết luận chỉ vì hình vẽ trông có góc vuông, trở lại **Kiến thức 1.4** và thay nét vẽ bằng dữ kiện về phương, cạnh đáy và cạnh bên. Thử **Bài luyện 5** và **Bài luyện 10**.",
@@ -3019,11 +3019,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.4; luyện THPT-G11-CHVII-B22-C04, THPT-TOP16-P04."
+    "remediation": "Ôn Kiến thức 1.4; luyện Bài luyện 5, Bài luyện 10."
   },
   {
     "item_id": "THPT-TOP16-T05",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T05",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T05-D6-20261128",
     "stem": "d vuông góc chỉ một đường a thuộc (P). Đủ kết luận \\(d\\perp (P)\\) không?",
     "answer_key": "Không đủ; cần thêm dữ kiện về một phương khác.",
     "worked_solution": "Không; cần thêm dữ kiện, thường là d vuông góc hai đường cắt nhau trong (P).\n\n**Kiểm lỗi**\n\nNếu thấy d vuông góc một đường trên sân rồi kết luận d vuông góc cả mặt, đọc **Kiến thức 2.1**: một hướng không đủ đại diện cho mọi hướng trong mặt phẳng. Thử **Bài luyện 16** và **Bài luyện 21**; đối chiếu dữ kiện cần bổ sung.",
@@ -3081,11 +3081,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.1; luyện THPT-G11-CHVII-B23-C01, THPT-TOP16-P05."
+    "remediation": "Ôn Kiến thức 2.1; luyện Bài luyện 16, Bài luyện 21."
   },
   {
     "item_id": "THPT-TOP16-T06",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T06",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T06-D6-20261128",
     "stem": "Nếu \\(a\\parallel b\\) trong \\((P), d\\perp a\\) và \\(d\\perp b\\) đã đủ \\(d\\perp (P)\\) chưa?",
     "answer_key": "Chưa đủ; cần hai đường cắt nhau.",
     "worked_solution": "Hai đường song song chỉ cung cấp một phương. Ví dụ trong mặt phẳng (P), chọn d cũng nằm trong (P) và vuông góc a. Khi \\(b\\parallel a\\) thì \\(d\\perp b\\), nhưng d không vuông góc (P).\n\n**Kiểm lỗi**\n\nNếu hai đường dùng để kiểm tra lại song song, điều kiện của dấu hiệu chưa đủ; đọc **Kiến thức 2.2**: phải có hai đường **cắt nhau** thuộc cùng mặt. Thử **Bài luyện 20** và **Bài luyện 26**.",
@@ -3143,11 +3143,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.2; luyện THPT-G11-CHVII-B23-C02, THPT-G11-CHVII-B23-P02."
+    "remediation": "Ôn Kiến thức 2.2; luyện Bài luyện 15, Bài luyện 20."
   },
   {
     "item_id": "THPT-TOP16-T07",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T07",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T07-D6-20261128",
     "stem": "Nếu \\(a\\perp (P)\\) và \\(b\\parallel a\\) thì b có vuông góc (P) không?",
     "answer_key": "Có, b vuông góc (P).",
     "worked_solution": "Có; mọi đường của (P) vẫn vuông góc phương b.\n\n**Kiểm lỗi**\n\nNếu thay đường/mặt mà không kiểm tra song song thực sự, đọc **Kiến thức 2.3**: đường cùng phương pháp tuyến vẫn vuông góc với mặt song song. Thử **Bài luyện 17** và **Bài luyện 22**, ghi rõ giả thiết song song.",
@@ -3205,11 +3205,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.3; luyện THPT-G11-CHVII-B23-C03, THPT-G11-CHVII-B23-P01."
+    "remediation": "Ôn Kiến thức 2.3; luyện Bài luyện 17, Bài luyện 19."
   },
   {
     "item_id": "THPT-TOP16-T08",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T08",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T08-D6-20261128",
     "stem": "Qua điểm M có thể có hai đường phân biệt cùng vuông góc (P) không?",
     "answer_key": "Không; chỉ có một đường.",
     "worked_solution": "Không; pháp tuyến qua M xác định duy nhất.\n\n**Kiểm lỗi**\n\nNếu cho rằng qua M có hai pháp tuyến phân biệt, đọc **Kiến thức 2.4**: một điểm và một phương pháp tuyến xác định một đường duy nhất. Thử **Bài luyện 18** và **Bài luyện 23**, phân biệt đường trùng với đường song song khác.",
@@ -3267,11 +3267,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.4; luyện THPT-G11-CHVII-B23-C04, THPT-TOP16-P08."
+    "remediation": "Ôn Kiến thức 2.4; luyện Bài luyện 18, Bài luyện 23."
   },
   {
     "item_id": "THPT-TOP16-T09",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T09",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T09-D6-20261128",
     "stem": "Nền nằm ngang hình chữ nhật ABCD. Đo được cột vuông góc cạnh AB. Đã đủ khẳng định cột thẳng đứng chưa?",
     "answer_key": "Chưa đủ; có thể kiểm thêm vuông góc AD.",
     "worked_solution": "Nếu nền nằm ngang, cột thẳng đứng phải vuông góc mặt phẳng nền. Cần kiểm tra thêm một đường trong nền cắt AB, chẳng hạn AD, rồi dùng dấu hiệu vuông góc hai đường cắt nhau.\n\n**Kiểm lỗi**\n\nNếu chỉ kiểm cột với một cạnh sàn, quay lại **Kiến thức 2.5**: cần hai hướng sàn cắt nhau. Thử **Bài luyện 25** và **Bài luyện 24**, nêu hai đường trong nền trước khi kết luận.",
@@ -3329,11 +3329,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.5; luyện THPT-TOP16-P09, THPT-G11-CHVII-B23-C05."
+    "remediation": "Ôn Kiến thức 2.5; luyện Bài luyện 24, Bài luyện 25."
   },
   {
     "item_id": "THPT-TOP16-T10",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T10",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T10-D6-20261128",
     "stem": "Nếu A thuộc (P), hình chiếu vuông góc của A trên (P) ở đâu?",
     "answer_key": "Chính A; khoảng cách bằng 0.",
     "worked_solution": "Chính là A; khoảng cách A đến (P) bằng 0.\n\n**Kiểm lỗi**\n\nNếu chọn hình chiếu theo cảm giác gần nhất trên hình vẽ, đọc **Kiến thức 3.1**: nếu A đã thuộc mặt thì H=A; nếu A ở ngoài mặt thì AH vuông góc mặt. Thử **Bài luyện 30** và **Bài luyện 39**, phân biệt chân hình chiếu với đoạn xiên.",
@@ -3391,11 +3391,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.1; luyện THPT-G11-CHVII-B24-C01, THPT-TOP16-P10."
+    "remediation": "Ôn Kiến thức 3.1; luyện Bài luyện 30, Bài luyện 39."
   },
   {
     "item_id": "THPT-TOP16-T11",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T11",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T11-D6-20261128",
     "stem": "Đường \\(d\\perp (P)\\). Ảnh vuông góc của d lên (P) là gì?",
     "answer_key": "Một điểm: giao điểm d với (P).",
     "worked_solution": "Một điểm: chân giao \\(d\\cap (P)\\).\n\n**Kiểm lỗi**\n\nNếu nối hai ảnh trùng nhau rồi gọi đó là một đường, đọc **Kiến thức 3.2**: ảnh đường pháp tuyến có thể suy biến thành một điểm. Thử **Bài luyện 31** và **Bài luyện 40**, kiểm ảnh từng đầu mút.",
@@ -3453,11 +3453,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.2; luyện THPT-G11-CHVII-B24-C02, THPT-G11-CHVII-B24-P03."
+    "remediation": "Ôn Kiến thức 3.2; luyện Bài luyện 31, Bài luyện 34."
   },
   {
     "item_id": "THPT-TOP16-T12",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T12",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T12-D6-20261128",
     "stem": "Cho \\(A\\notin(P), H\\in(P), AH\\perp(P), B\\in(P), B\\ne H\\). Nếu \\(c\\subset(P)\\) và \\(c\\perp BH\\), có thể kết luận \\(c\\perp AB\\) không?",
     "answer_key": "Có; theo định lí ba đường vuông góc.",
     "worked_solution": "Có: BH là hình chiếu của AB lên (P); dùng định lí ba đường vuông góc.\n\n**Kiểm lỗi**\n\nNếu dùng định lí ba đường vuông góc mà chưa xác định đúng hình chiếu của đường xiên, đọc **Kiến thức 3.3**: H là chân từ A và \\(B\\ne H\\) để BH không suy biến. Thử **Bài luyện 32** (chiều thuận) và **Bài luyện 35** (chiều đảo), chỉ rõ ba đường liên quan.",
@@ -3515,11 +3515,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.3; luyện THPT-G11-CHVII-B24-C03, THPT-TOP16-P12."
+    "remediation": "Ôn Kiến thức 3.3; luyện Bài luyện 32, Bài luyện 35."
   },
   {
     "item_id": "THPT-TOP16-T13",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T13",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T13-D6-20261128",
     "stem": "Đường nằm trong (P) tạo góc bao nhiêu với (P)?",
     "answer_key": "0°",
     "worked_solution": "\\(0^\\circ\\). Khi đường vuông góc (P), góc \\(90^\\circ\\).\n\n**Kiểm lỗi**\n\nNếu đo góc với đường pháp tuyến thay cho góc đường–mặt, đọc **Kiến thức 3.4**: dùng góc giữa đường xiên và hình chiếu không suy biến. Thử **Bài luyện 33** và **Bài luyện 41**, kiểm xem tỉ số sin lấy đúng cạnh.",
@@ -3577,11 +3577,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.4; luyện THPT-G11-CHVII-B24-C04, THPT-G11-CHVII-B24-P01."
+    "remediation": "Ôn Kiến thức 3.4; luyện Bài luyện 33, Bài luyện 37."
   },
   {
     "item_id": "THPT-TOP16-T14",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T14",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T14-D6-20261128",
     "stem": "Đoạn dốc thẳng cao 3 m, hình chiếu ngang dài 4 m. Tính độ dài đoạn dốc. Gọi \\(\\theta\\) là góc giữa đoạn dốc và mặt nền ngang; hãy xác định cạnh đối, cạnh kề và tính \\(\\tan\\theta\\).",
     "answer_key": "5 m; đối 3 m, kề 4 m; \\(\\tan\\theta=3/4\\).",
     "worked_solution": "Độ dài dốc là \\(\\sqrt{3^2+4^2}=5\\) m, không phải 7 m. Góc dốc \\(\\theta\\) nằm giữa cạnh huyền và đoạn ngang; cạnh đối dài 3 m, cạnh kề dài 4 m. Vì vậy \\(\\tan\\theta=\\frac34\\). Nếu dùng \\(\\frac35\\), em đã tính sin thay cho tang.\n\n**Kiểm lỗi**\n\nNếu cộng 3 và 4 để tính chiều dài dốc hoặc dùng nhầm tan với sin, đọc **Kiến thức 3.5**: dựng tam giác vuông giữa chiều cao, chiều ngang và đoạn xiên. Thử **Bài luyện 38** và **Bài luyện 42**.",
@@ -3639,11 +3639,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.5; luyện THPT-G11-CHVII-B24-C05, THPT-TOP16-P14."
+    "remediation": "Ôn Kiến thức 3.5; luyện Bài luyện 36, Bài luyện 42."
   },
   {
     "item_id": "THPT-TOP16-T15",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T15",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T15-D6-20261128",
     "stem": "Hai mặt phẳng song song tạo góc giữa hai mặt bằng bao nhiêu?",
     "answer_key": "0°",
     "worked_solution": "\\(0^\\circ\\) theo quy ước góc giữa các mặt phẳng.\n\n**Kiểm lỗi**\n\nNếu lấy hai đường tùy ý trên hai mặt để đo góc, trở lại **Kiến thức 4.1**: cần đường vuông góc giao tuyến trong tiết diện phù hợp (hoặc hai pháp tuyến). Thử **Bài luyện 46** và **Bài luyện 59**, ghi rõ cách chọn góc không tù.",
@@ -3701,11 +3701,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.1; luyện THPT-G11-CHVII-B25-C01, THPT-G11-CHVII-B25-P01."
+    "remediation": "Ôn Kiến thức 4.1; luyện Bài luyện 46, Bài luyện 53."
   },
   {
     "item_id": "THPT-TOP16-T16",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T16",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T16-D6-20261128",
     "stem": "Nhị diện \\(120^\\circ\\) cho góc nhỏ giữa hai mặt phẳng chứa nó bằng bao nhiêu?",
     "answer_key": "60°",
     "worked_solution": "\\(60^\\circ = 180^\\circ-120^\\circ\\).\n\n**Kiểm lỗi**\n\nNếu kết luận góc hai mặt bằng trực tiếp góc nhị diện tù, đọc **Kiến thức 4.2**: nhị diện gắn hai nửa mặt có hướng, còn góc giữa hai mặt lấy góc không tù. Thử **Bài luyện 49** và **Bài luyện 56**.",
@@ -3763,11 +3763,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.2; luyện THPT-G11-CHVII-B25-C02, THPT-TOP16-P16."
+    "remediation": "Ôn Kiến thức 4.2; luyện Bài luyện 49, Bài luyện 56."
   },
   {
     "item_id": "THPT-TOP16-T17",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T17",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T17-D6-20261128",
     "stem": "\\(d\\subset (P), d\\perp (Q)\\). Quan hệ hai mặt (P),(Q)?",
     "answer_key": "(P) vuông góc (Q).",
     "worked_solution": "\\((P)\\perp (Q)\\), theo dấu hiệu một đường trong mặt vuông góc mặt kia.\n\n**Kiểm lỗi**\n\nNếu chỉ tìm được một cặp đường vuông góc mà kết luận hai mặt vuông góc, đọc **Kiến thức 4.3**: cần một **đường nằm trong mặt này** vuông góc **toàn bộ mặt kia**. Thử **Bài luyện 50** và **Bài luyện 60**.",
@@ -3825,11 +3825,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.3; luyện THPT-G11-CHVII-B25-C03, THPT-TOP16-P17."
+    "remediation": "Ôn Kiến thức 4.3; luyện Bài luyện 50, Bài luyện 60."
   },
   {
     "item_id": "THPT-TOP16-T18",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T18",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T18-D6-20261128",
     "stem": "\\((P)\\perp (Q)\\) theo d. \\(a\\subset (P), a\\perp d\\). Có \\(a\\perp (Q)\\) không?",
     "answer_key": "Có, a vuông góc (Q).",
     "worked_solution": "Có, theo định lí hai mặt phẳng vuông góc. a phải nằm trong (P) và vuông góc giao tuyến d.\n\n**Kiểm lỗi**\n\nNếu quên điều kiện đường a vuông góc với giao tuyến, đọc **Kiến thức 4.4**: với hai mặt vuông góc, a phải thuộc một mặt và vuông góc giao tuyến mới suy ra a vuông góc mặt kia. Thử **Bài luyện 51** và **Bài luyện 57**.",
@@ -3887,11 +3887,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.4; luyện THPT-G11-CHVII-B25-C04, THPT-TOP16-P18."
+    "remediation": "Ôn Kiến thức 4.4; luyện Bài luyện 51, Bài luyện 57."
   },
   {
     "item_id": "THPT-TOP16-T19",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T19",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T19-D6-20261128",
     "stem": "Lăng trụ đứng có cạnh bên 7 cm, chiều cao bao nhiêu?",
     "answer_key": "7 cm",
     "worked_solution": "7 cm, vì cạnh bên vuông góc mặt đáy.\n\n**Kiểm lỗi**\n\nNếu cho rằng lăng trụ đứng có đáy bất kì cũng là lăng trụ đều, đọc **Kiến thức 4.5**: lăng trụ đều phải có đáy là đa giác đều, còn chiều cao lăng trụ đứng bằng cạnh bên. Thử **Bài luyện 47** và **Bài luyện 58**.",
@@ -3949,11 +3949,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.5; luyện THPT-G11-CHVII-B25-C05, THPT-G11-CHVII-B25-P03."
+    "remediation": "Ôn Kiến thức 4.5; luyện Bài luyện 47, Bài luyện 55."
   },
   {
     "item_id": "THPT-TOP16-T20",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T20",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T20-D6-20261128",
     "stem": "Chóp đều đáy vuông cạnh \\(6, h=4\\). Đường cao của mặt bên qua trung điểm cạnh đáy dài bao nhiêu?",
     "answer_key": "5",
     "worked_solution": "5, do tam giác vuông có hai cạnh 4 và 3.\n\n**Kiểm lỗi**\n\nNếu nhầm cạnh bên SA hay đường cao mặt bên với chiều cao SO, đọc **Kiến thức 4.6**: chóp đều có SO vuông góc đáy, còn đường cao mặt bên tới trung điểm một cạnh đáy. Thử **Bài luyện 64** và **Bài luyện 61**, vẽ hai tam giác vuông khác nhau.",
@@ -4011,11 +4011,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.6; luyện THPT-G11-CHVII-B25-C06, THPT-G11-CHVII-B25-P02."
+    "remediation": "Ôn Kiến thức 4.6; luyện Bài luyện 48, Bài luyện 54."
   },
   {
     "item_id": "THPT-TOP16-T21",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T21",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T21-D6-20261128",
     "stem": "Hai đáy hình vuông cạnh 6 và 3 có tỉ số diện tích đáy lớn : đáy nhỏ?",
     "answer_key": "4:1",
     "worked_solution": "\\(36:9 = 4:1\\).\n\n**Kiểm lỗi**\n\nNếu lấy tỉ số cạnh \\(6:3=2:1\\) làm ngay tỉ số diện tích, đọc **Kiến thức 4.7**: hai đáy chóp cụt đều đồng dạng nên tỉ số diện tích là bình phương tỉ số cạnh tương ứng. Thử **Bài luyện 52** và **Bài luyện 62**.",
@@ -4073,11 +4073,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.7; luyện THPT-G11-CHVII-B25-C07, THPT-TOP16-P21."
+    "remediation": "Ôn Kiến thức 4.7; luyện Bài luyện 52, Bài luyện 62."
   },
   {
     "item_id": "THPT-TOP17-T01",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T01",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T01-D6-20261128",
     "stem": "\\(H\\in d,\\ AH\\perp d,\\ AH=3\\,\\mathrm{cm}\\). Khoảng cách \\(d(A,d)\\) bằng bao nhiêu?",
     "answer_key": "3 cm.",
     "worked_solution": "H là chân vuông góc từ A xuống d, nên khoảng cách là \\(AH=3\\,\\mathrm{cm}\\). Với mọi \\(X\\in d\\) khác H, \\(AX^2=AH^2+HX^2>AH^2\\), nên AX dài hơn AH.\n\n**Kiểm lỗi**\n\nNếu lấy đoạn xiên AX làm khoảng cách từ A đến d, trở lại **Kiến thức 1.1**: \\(AH\\perp d\\) mới cho đoạn ngắn nhất, với X khác H thì \\(AX^2=AH^2+HX^2\\). Tự thử **Bài luyện 1** và **Bài luyện 12**, tìm chân H trước khi tính.",
@@ -4135,11 +4135,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.1; luyện THPT-G11-CHVII-B26-C01, THPT-TOP17-P01."
+    "remediation": "Ôn Kiến thức 1.1; luyện Bài luyện 1, Bài luyện 12."
   },
   {
     "item_id": "THPT-TOP17-T02",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T02",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T02-D6-20261128",
     "stem": "\\(A\\in(P)\\). Khoảng cách \\(d(A,(P))\\) bằng bao nhiêu?",
     "answer_key": "0.",
     "worked_solution": "0, không cần dựng đoạn khác.\n\n**Kiểm lỗi**\n\nNếu điểm A đã thuộc (P) mà em vẫn cho khoảng cách dương, đọc **Kiến thức 1.2**: chân vuông góc trùng chính A, khoảng cách bằng 0. Thử **Bài luyện 2** và **Bài luyện 13**, phân biệt đoạn vuông góc với đoạn xiên.",
@@ -4197,11 +4197,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.2; luyện THPT-G11-CHVII-B26-C02, THPT-TOP17-P02."
+    "remediation": "Ôn Kiến thức 1.2; luyện Bài luyện 2, Bài luyện 13."
   },
   {
     "item_id": "THPT-TOP17-T03",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T03",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T03-D6-20261128",
     "stem": "Đường \\(d\\parallel(P)\\); hai điểm A, B thuộc d. Có \\(d(A,(P))=d(B,(P))\\) không?",
     "answer_key": "Có, hai khoảng cách bằng nhau.",
     "worked_solution": "Có, vì khoảng cách đường song song mặt phẳng không đổi theo điểm.\n\n**Kiểm lỗi**\n\nNếu dùng bất kì điểm trên d mà chưa chứng minh \\(d\\parallel(P)\\), đọc **Kiến thức 1.3**: khi đường song song phân biệt mặt, độ cao từ mọi điểm trên đường không đổi. Thử **Bài luyện 3** và **Bài luyện 14**.",
@@ -4259,11 +4259,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.3; luyện THPT-G11-CHVII-B26-C03, THPT-TOP17-P03."
+    "remediation": "Ôn Kiến thức 1.3; luyện Bài luyện 3, Bài luyện 14."
   },
   {
     "item_id": "THPT-TOP17-T04",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T04",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T04-D6-20261128",
     "stem": "Hai mặt song song cách nhau theo pháp tuyến 4 m. Khoảng cách hai mặt?",
     "answer_key": "4 m.",
     "worked_solution": "4 m, là độ dài đoạn vuông góc chung.\n\n**Kiểm lỗi**\n\nNếu dùng đoạn xiên nối hai điểm bất kì làm khoảng cách hai mặt, đọc **Kiến thức 1.4**: phải có hai mặt song song và đo bằng đoạn vuông góc chung. Thử **Bài luyện 4** và **Bài luyện 15**, tìm chân vuông góc.",
@@ -4321,11 +4321,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.4; luyện THPT-G11-CHVII-B26-C04, THPT-TOP17-P04."
+    "remediation": "Ôn Kiến thức 1.4; luyện Bài luyện 4, Bài luyện 15."
   },
   {
     "item_id": "THPT-TOP17-T05",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T05",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T05-D6-20261128",
     "stem": "Trong hình lập phương ABCD.A′B′C′D′ cạnh 5, hãy xác định đoạn vuông góc chung và khoảng cách giữa hai đường thẳng AB và CC′.",
     "answer_key": "5; đoạn vuông góc chung BC.",
     "worked_solution": "BC là đoạn vuông góc chung: \\(B\\in AB,\\ C\\in CC'\\); \\(BC\\perp AB\\) trong đáy hình vuông và \\(BC\\perp CC'\\) vì \\(CC'\\perp(ABCD)\\). Hai đường AB và \\(CC'\\) chéo nhau, nên khoảng cách bằng \\(BC=5\\).\n\n**Kiểm lỗi**\n\nNếu chỉ kiểm đoạn nối vuông góc một đường, đọc **Kiến thức 1.5**: hai chân phải nằm trên hai đường chéo nhau và đoạn nối vuông góc **cả hai phương**. Thử **Bài luyện 11** và **Bài luyện 16**, chỉ rõ hai đầu mút.",
@@ -4383,11 +4383,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.5; luyện THPT-G11-CHVII-B26-W02-ANCHOR, THPT-TOP17-P05."
+    "remediation": "Ôn Kiến thức 1.5; luyện Bài luyện 11, Bài luyện 16."
   },
   {
     "item_id": "THPT-TOP17-T06",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T06",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T06-D6-20261128",
     "stem": "Chóp có chiều cao 4 và cạnh bên 5. Giá trị h trong công thức \\(V=\\frac13S_{\\text{đáy}}h\\) là bao nhiêu?",
     "answer_key": "\\(h=4\\).",
     "worked_solution": "4, vì chiều cao là đoạn vuông góc.\n\n**Kiểm lỗi**\n\nNếu nhầm cạnh bên hoặc đường cao mặt bên với chiều cao chóp, đọc **Kiến thức 1.6**: h là khoảng cách vuông góc từ đỉnh đến mặt đáy. Thử **Bài luyện 6** và **Bài luyện 17**, dựng tâm đáy và tam giác vuông.",
@@ -4445,11 +4445,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.6; luyện THPT-G11-CHVII-B26-C06, THPT-TOP17-P06."
+    "remediation": "Ôn Kiến thức 1.6; luyện Bài luyện 6, Bài luyện 17."
   },
   {
     "item_id": "THPT-TOP17-T07",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T07",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T07-D6-20261128",
     "stem": "Lăng trụ có \\(S_{\\text{đáy}}=12\\,\\mathrm{cm}^2\\), \\(h=5\\,\\mathrm{cm}\\); thể tích?",
     "answer_key": "\\(60\\,\\mathrm{cm}^3\\).",
     "worked_solution": "\\(60\\,\\mathrm{cm}^3\\), vì \\(V=S_{\\text{đáy}}h\\).\n\n**Kiểm lỗi**\n\nNếu lấy cạnh bên của lăng trụ xiên làm h, đọc **Kiến thức 2.1**: \\(V=S_{\\text{đáy}}h\\) với h là khoảng cách vuông góc giữa hai đáy. Thử **Bài luyện 19** và **Bài luyện 29**, kiểm đơn vị khối.",
@@ -4507,11 +4507,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.1; luyện THPT-G11-CHVII-B27-C01, THPT-TOP17-P07."
+    "remediation": "Ôn Kiến thức 2.1; luyện Bài luyện 19, Bài luyện 29."
   },
   {
     "item_id": "THPT-TOP17-T08",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T08",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T08-D6-20261128",
     "stem": "Chóp có \\(S_{\\text{đáy}}=12\\,\\mathrm{cm}^2\\), \\(h=5\\,\\mathrm{cm}\\); thể tích?",
     "answer_key": "\\(20\\,\\mathrm{cm}^3\\).",
     "worked_solution": "\\(20\\,\\mathrm{cm}^3\\); phải có hệ số \\(\\frac13\\).\n\n**Kiểm lỗi**\n\nNếu tính thể tích chóp bằng công thức lăng trụ, đọc **Kiến thức 2.2**: chóp có cùng đáy và chiều cao chỉ bằng **một phần ba** thể tích lăng trụ. Thử **Bài luyện 20** và **Bài luyện 30**, ghi rõ hệ số \\(\\frac13\\).",
@@ -4569,11 +4569,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.2; luyện THPT-G11-CHVII-B27-C02, THPT-TOP17-P08."
+    "remediation": "Ôn Kiến thức 2.2; luyện Bài luyện 20, Bài luyện 30."
   },
   {
     "item_id": "THPT-TOP17-T09",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T09",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T09-D6-20261128",
     "stem": "Hộp chữ nhật có ba kích thước 2 cm, 5 cm và 0,3 dm. Đổi về cùng đơn vị rồi tính thể tích.",
     "answer_key": "\\(30\\,\\mathrm{cm}^3\\).",
     "worked_solution": "\\(0{,}3\\,\\mathrm{dm}=3\\,\\mathrm{cm}\\), nên thể tích bằng \\(2\\cdot5\\cdot3=30\\,\\mathrm{cm}^3\\).\n\n**Kiểm lỗi**\n\nNếu nhân 2, 5 và 0,3 mà chưa đổi đơn vị, hoặc lẫn diện tích bề mặt với thể tích hình hộp, đọc **Kiến thức 2.3**: thể tích bằng tích ba kích thước vuông góc. Thử **Bài luyện 21** và **Bài luyện 31**, ghi đơn vị \\(\\mathrm{cm}^3\\) hoặc \\(\\mathrm m^3\\).",
@@ -4631,11 +4631,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.3; luyện THPT-G11-CHVII-B27-C03, THPT-TOP17-P09."
+    "remediation": "Ôn Kiến thức 2.3; luyện Bài luyện 21, Bài luyện 31."
   },
   {
     "item_id": "THPT-TOP17-T10",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T10",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T10-D6-20261128",
     "stem": "Chóp cụt có \\(S=16,\\ S'=4,\\ h=6\\). Giá trị \\(\\sqrt{SS'}\\) bằng bao nhiêu?",
     "answer_key": "8.",
     "worked_solution": "8, vì \\(\\sqrt{16\\cdot4}=8\\).\n\n**Kiểm lỗi**\n\nNếu thiếu \\(\\sqrt{SS'}\\), nhầm diện tích đáy với tỉ số cạnh hoặc dùng cạnh xiên làm h, đọc **Kiến thức 2.4**: chóp cụt là mặt cắt song song tạo hai đáy đồng dạng, \\(V=\\frac h3(S+S'+\\sqrt{SS'})\\). Thử **Bài luyện 22** và **Bài luyện 32**, kiểm giới hạn chóp/lăng trụ.",
@@ -4693,11 +4693,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.4; luyện THPT-G11-CHVII-B27-C04, THPT-TOP17-P10."
+    "remediation": "Ôn Kiến thức 2.4; luyện Bài luyện 22, Bài luyện 32."
   },
   {
     "item_id": "THPT-TOP17-T11",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T11",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T11-D6-20261128",
     "stem": "Khối lăng trụ có diện tích đáy \\(6\\,\\mathrm m^2\\), cao 10 m. Thể tích?",
     "answer_key": "\\(60\\,\\mathrm m^3\\).",
     "worked_solution": "\\(60\\,\\mathrm m^3\\), không phải \\(60\\,\\mathrm m^2\\).\n\n**Kiểm lỗi**\n\nNếu quên hệ số \\(\\frac12\\) cho đáy tam giác vuông hoặc đổi xăng-ti-mét khối sang lít sai, đọc **Kiến thức 2.5**: tính diện tích đáy trước, nhân chiều cao vuông góc rồi mới đổi đơn vị. Thử **Bài luyện 23** và **Bài luyện 33**.",
@@ -4755,11 +4755,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.5; luyện THPT-G11-CHVII-B27-C05, THPT-TOP17-P11."
+    "remediation": "Ôn Kiến thức 2.5; luyện Bài luyện 23, Bài luyện 33."
   },
   {
     "item_id": "THPT-TOP17-T12",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T12",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T12-D6-20261128",
     "stem": "Chóp đều đáy vuông cạnh 6 và đường cao mặt bên 5. Tính chiều cao và thể tích của khối chóp.",
     "answer_key": "Chiều cao 4; thể tích 48 đơn vị khối.",
     "worked_solution": "Chiều cao là 4, từ tam giác vuông nối đỉnh, tâm đáy, trung điểm cạnh: \\(5^2-3^2=4^2\\). Diện tích đáy bằng 36, nên thể tích bằng \\(\\frac13\\cdot36\\cdot4=48\\) đơn vị khối.\n\n**Kiểm lỗi**\n\nNếu thế đường cao mặt bên vào h của công thức thể tích, đọc **Kiến thức 2.6**: dựng tâm đáy, trung điểm cạnh, dùng Pitago tìm chiều cao vuông góc. Thử **Bài luyện 7** và **Bài luyện 34**, kiểm hình và đơn vị.",
@@ -4817,11 +4817,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.6; luyện THPT-G11-CHVII-B26-P01, THPT-TOP17-P12."
+    "remediation": "Ôn Kiến thức 2.6; luyện Bài luyện 7, Bài luyện 34."
   },
   {
     "item_id": "THPT-TOP18-T01",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T01-D6-20261128",
     "stem": "A trùng B. Vectơ \\(\\overrightarrow{AB}\\) có độ dài bao nhiêu? Theo quy ước, nó có cùng hướng và cùng phương với mọi vectơ không?",
     "answer_key": "Độ dài bằng 0; có, cùng hướng và cùng phương với mọi vectơ theo quy ước SGK.",
     "worked_solution": "Độ dài bằng 0; có, cùng hướng và cùng phương với mọi vectơ theo quy ước SGK. Vectơ-không không biểu diễn hướng dịch chuyển riêng, nên không xác định góc với vectơ khác.\n\n**Kiểm lỗi**\n\nNếu hai đầu trùng nhau, độ dài bằng 0. Phân biệt quy ước cùng hướng, cùng phương với mọi vectơ và việc không có hướng dịch chuyển riêng; không suy ra góc bằng \\(0^\\circ\\) từ quy ước ấy. Quay về **Kiến thức 1.1**, sau đó tự giải **Bài luyện 3** và **Bài luyện 5** trong Luyện tập.",
@@ -4880,11 +4880,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.1; luyện THPT-G12-B06-P02, THPT-TOP18-P01."
+    "remediation": "Ôn Kiến thức 1.1; luyện Bài luyện 3, Bài luyện 5."
   },
   {
     "item_id": "THPT-TOP18-T02",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T02",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T02-D6-20261128",
     "stem": "Trong hình bình hành ABCD, vectơ \\(\\overrightarrow{AB}\\) có bằng vectơ \\(\\overrightarrow{CD}\\) không?",
     "answer_key": "Không; \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{CD}\\) đối nhau, \\(\\overrightarrow{AB}=\\overrightarrow{DC}\\).",
     "worked_solution": "Không. \\(\\overrightarrow{AB}\\) và \\(\\overrightarrow{CD}\\) đối nhau; \\(\\overrightarrow{AB}=\\overrightarrow{DC}\\).\n\n**Kiểm lỗi**\n\nBằng nhau cần cả cùng hướng lẫn độ dài; hai độ dời dài bằng nhau mà ngược chiều thì đối nhau, không phải bằng nhau. Quay về **Kiến thức 1.2**, sau đó tự giải **Bài luyện 7** và **Bài luyện 10** trong Luyện tập.",
@@ -4942,11 +4942,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.2; luyện THPT-G12-B06-P03, THPT-TOP18-P02."
+    "remediation": "Ôn Kiến thức 1.2; luyện Bài luyện 7, Bài luyện 10."
   },
   {
     "item_id": "THPT-TOP18-T03",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T03",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T03-D6-20261128",
     "stem": "Tính dạng rút gọn của \\(\\overrightarrow{PQ}+\\overrightarrow{QR}\\).",
     "answer_key": "\\(\\overrightarrow{PR}\\).",
     "worked_solution": "Theo quy tắc ba điểm, \\(\\overrightarrow{PQ}+\\overrightarrow{QR}=\\overrightarrow{PR}\\) với ba điểm P,Q,R bất kỳ; không cần chúng thẳng hàng hay theo một thứ tự vị trí nào. Điểm cuối của vectơ thứ nhất là điểm đầu của vectơ thứ hai.\n\n**Kiểm lỗi**\n\nĐể cộng vectơ, đặt đuôi mũi tên sau vào đầu mũi tên trước; không cộng độ dài nếu các hướng khác nhau. Quay về **Kiến thức 1.3**, sau đó tự giải **Bài luyện 13** và **Bài luyện 15** trong Luyện tập.",
@@ -5004,11 +5004,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.3; luyện THPT-G12-B06-P06, THPT-TOP18-P03."
+    "remediation": "Ôn Kiến thức 1.3; luyện Bài luyện 13, Bài luyện 15."
   },
   {
     "item_id": "THPT-TOP18-T04",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T04",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T04-D6-20261128",
     "stem": "Cho \\(\\vec u\\ne\\vec0\\). Theo quy ước SGK, \\(0\\vec u\\) có cùng hướng với \\(\\vec u\\) không? Có xác định góc giữa chúng không?",
     "answer_key": "Có, cùng hướng và cùng phương theo quy ước; góc giữa chúng không xác định.",
     "worked_solution": "Có. Vì \\(0\\vec u=\\vec0\\), theo quy ước SGK nó cùng hướng và cùng phương với \\(\\vec u\\). Tuy nhiên góc giữa chúng không xác định.\n\n**Kiểm lỗi**\n\nVới vectơ khác không, dấu của k quyết định chiều khi \\(k\\ne0\\). Khi \\(k=0\\), kết quả là vectơ-không: cùng hướng và cùng phương theo quy ước, nhưng không có góc xác định. Độ dài không âm. Quay về **Kiến thức 1.4**, sau đó tự giải **Bài luyện 16** và **Bài luyện 20** trong Luyện tập.",
@@ -5067,11 +5067,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.4; luyện THPT-G12-B06-C04, THPT-TOP18-P04."
+    "remediation": "Ôn Kiến thức 1.4; luyện Bài luyện 16, Bài luyện 20."
   },
   {
     "item_id": "THPT-TOP18-T05",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T05",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T05-D6-20261128",
     "stem": "Hai vectơ khác không vuông góc; tích vô hướng bằng bao nhiêu?",
     "answer_key": "0.",
     "worked_solution": "Bằng 0 vì \\(\\cos90^\\circ=0\\).\n\n**Kiểm lỗi**\n\nTích vô hướng dùng độ dài của hai vectơ và cos của góc; khi một vectơ bằng 0, không chia để tìm cos góc. Quay về **Kiến thức 1.5**, sau đó tự giải **Bài luyện 22** và **Bài luyện 25** trong Luyện tập.",
@@ -5129,11 +5129,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.5; luyện THPT-G12-B06-P09, THPT-TOP18-P05."
+    "remediation": "Ôn Kiến thức 1.5; luyện Bài luyện 22, Bài luyện 25."
   },
   {
     "item_id": "THPT-TOP18-T06",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T06",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T06-D6-20261128",
     "stem": "Hai lực cùng tác dụng vào một điểm, có độ lớn 6 N và 8 N và vuông góc nhau. Tính độ lớn hợp lực.",
     "answer_key": "10 N.",
     "worked_solution": "Hai lực đồng quy và vuông góc tạo hai cạnh của hình bình hành lực. Hợp lực là đường chéo; độ lớn bằng \\(\\sqrt{6^2+8^2}=10\\) N.\n\n**Kiểm lỗi**\n\nHợp lực dùng **cộng vectơ lực**, còn công dùng **tích vô hướng lực với độ dời**. Hai bài thử củng cố hai thao tác khác nhau, không coi công là độ lớn hợp lực. Quay về **Kiến thức 1.6**, sau đó tự giải **Bài luyện 13** và **Bài luyện 30** trong Luyện tập.",
@@ -5191,11 +5191,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.6; luyện THPT-G12-B06-P06, THPT-TOP18-P06."
+    "remediation": "Ôn Kiến thức 1.6; luyện Bài luyện 13, Bài luyện 30."
   },
   {
     "item_id": "THPT-TOP18-T07",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T07",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T07-D6-20261128",
     "stem": "Điểm \\(M=(2;-1;0)\\) thuộc mặt phẳng tọa độ nào?",
     "answer_key": "M thuộc Oxy.",
     "worked_solution": "Thuộc Oxy vì \\(z=0\\).\n\n**Kiểm lỗi**\n\nMặt Oxy cần \\(z=0\\), Oyz cần \\(x=0\\); trục Oz cần \\(x=y=0\\). Không suy dấu tọa độ từ nét hình xiên. Quay về **Kiến thức 2.1**, sau đó tự giải **Bài luyện 31** và **Bài luyện 35** trong Luyện tập.",
@@ -5253,11 +5253,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.1; luyện THPT-G12-B07-C01, THPT-TOP18-P07."
+    "remediation": "Ôn Kiến thức 2.1; luyện Bài luyện 31, Bài luyện 35."
   },
   {
     "item_id": "THPT-TOP18-T08",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T08",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T08-D6-20261128",
     "stem": "Điểm \\(M(1;2;3)\\), tọa độ vectơ \\(\\overrightarrow{OM}\\)?",
     "answer_key": "\\(\\overrightarrow{OM}=(1;2;3)\\).",
     "worked_solution": "\\((1;2;3)\\) trong cùng hệ Oxyz.\n\n**Kiểm lỗi**\n\nTọa độ \\(\\overrightarrow{OM}\\) bằng tọa độ M chỉ khi O là gốc của cùng hệ; không tự đổi dấu các thành phần âm của vectơ. Quay về **Kiến thức 2.2**, sau đó tự giải **Bài luyện 37** và **Bài luyện 40** trong Luyện tập.",
@@ -5315,11 +5315,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.2; luyện THPT-G12-B07-P03, THPT-TOP18-P08."
+    "remediation": "Ôn Kiến thức 2.2; luyện Bài luyện 37, Bài luyện 40."
   },
   {
     "item_id": "THPT-TOP18-T09",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T09",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T09-D6-20261128",
     "stem": "Trong hệ Ox Đông, Oy Bắc, Oz lên, \\(N=(-4;3;2)\\) m nằm về phía nào của O?",
     "answer_key": "4 m về Tây, 3 m về Bắc, cao 2 m so với O.",
     "worked_solution": "4 m về Tây, 3 m về Bắc, cao 2 m.\n\n**Kiểm lỗi**\n\nVị trí phụ thuộc gốc và chiều dương đã chọn; xác định hướng trục, mốc và đơn vị trước khi đọc tọa độ. Quay về **Kiến thức 2.3**, sau đó tự giải **Bài luyện 42** và **Bài luyện 45** trong Luyện tập.",
@@ -5377,11 +5377,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.3; luyện THPT-G12-B07-P05, THPT-TOP18-P09."
+    "remediation": "Ôn Kiến thức 2.3; luyện Bài luyện 42, Bài luyện 45."
   },
   {
     "item_id": "THPT-TOP18-T10",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T10",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T10-D6-20261128",
     "stem": "\\(A=(2;0;-1)\\), \\(B=(5;-2;3)\\). Tính vectơ \\(\\overrightarrow{AB}\\).",
     "answer_key": "\\(\\overrightarrow{AB}=(3;-2;4)\\).",
     "worked_solution": "\\((3;-2;4)\\).\n\n**Kiểm lỗi**\n\nVectơ từ A tới B là \\(\\overrightarrow{OB}-\\overrightarrow{OA}\\), không phải \\(\\overrightarrow{OA}-\\overrightarrow{OB}\\); kiểm lại bằng phép cộng \\(\\overrightarrow{OA}+\\overrightarrow{AB}=\\overrightarrow{OB}\\). Quay về **Kiến thức 2.4**, sau đó tự giải **Bài luyện 46** và **Bài luyện 50** trong Luyện tập.",
@@ -5439,11 +5439,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.4; luyện THPT-G12-B07-C04, THPT-TOP18-P10."
+    "remediation": "Ôn Kiến thức 2.4; luyện Bài luyện 46, Bài luyện 50."
   },
   {
     "item_id": "THPT-TOP18-T11",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T11",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T11-D6-20261128",
     "stem": "\\(\\vec u=(1;-2;3)\\), \\(\\vec v=(2;0;-1)\\); \\(\\vec u+\\vec v\\)?",
     "answer_key": "\\((3;-2;2)\\).",
     "worked_solution": "\\((3;-2;2)\\).\n\n**Kiểm lỗi**\n\nCộng/trừ/nhân vectơ theo từng thành phần, không nhân chéo tọa độ; cẩn thận khi trừ số âm. Quay về **Kiến thức 3.1**, sau đó tự giải **Bài luyện 51** và **Bài luyện 55** trong Luyện tập.",
@@ -5501,11 +5501,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.1; luyện THPT-G12-B08-C01, THPT-TOP18-P11."
+    "remediation": "Ôn Kiến thức 3.1; luyện Bài luyện 51, Bài luyện 55."
   },
   {
     "item_id": "THPT-TOP18-T12",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T12",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T12-D6-20261128",
     "stem": "\\(\\vec u=(3;6;0)\\), \\(\\vec v=(1;2;0)\\) có cùng phương không?",
     "answer_key": "Có, \\(\\vec u=3\\vec v\\).",
     "worked_solution": "Có, \\(\\vec u=3\\vec v\\) và đều khác không.\n\n**Kiểm lỗi**\n\nHai vectơ cùng phương cần một hệ số k áp dụng cho đủ ba thành phần; không bỏ qua trục z hoặc chia cho 0. Quay về **Kiến thức 3.2**, sau đó tự giải **Bài luyện 58** và **Bài luyện 60** trong Luyện tập.",
@@ -5563,11 +5563,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.2; luyện THPT-G12-B08-P04, THPT-TOP18-P12."
+    "remediation": "Ôn Kiến thức 3.2; luyện Bài luyện 58, Bài luyện 60."
   },
   {
     "item_id": "THPT-TOP18-T13",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T13",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T13-D6-20261128",
     "stem": "Cho tam giác ABC với \\(A(0;0;2),\\ B(2;4;0),\\ C(4;2;4)\\). Tìm trung điểm M của AB và trọng tâm G của tam giác ABC.",
     "answer_key": "\\(M(1;2;1),\\ G(2;2;2)\\).",
     "worked_solution": "\\(M(1;2;1)\\) là trung bình tọa độ của A và B. Trọng tâm G có tọa độ trung bình của cả ba đỉnh: \\(G(2;2;2)\\), vì \\(\\frac{0+2+4}3=2\\), \\(\\frac{0+4+2}3=2\\) và \\(\\frac{2+0+4}3=2\\).\n\n**Kiểm lỗi**\n\nTrung điểm lấy trung bình của hai điểm; trọng tâm tam giác là trung bình tọa độ ba đỉnh, không lấy hiệu. Quay về **Kiến thức 3.3**, sau đó tự giải **Bài luyện 61** và **Bài luyện 65** trong Luyện tập.",
@@ -5625,11 +5625,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.3; luyện THPT-G12-B08-C03, THPT-TOP18-P13."
+    "remediation": "Ôn Kiến thức 3.3; luyện Bài luyện 61, Bài luyện 65."
   },
   {
     "item_id": "THPT-TOP18-T14",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T14",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T14-D6-20261128",
     "stem": "\\(\\vec u=(1;1;0)\\),\\(\\vec v=(1;-1;0)\\). Góc giữa chúng?",
     "answer_key": "\\(90^\\circ\\).",
     "worked_solution": "\\(90^\\circ\\) vì tích vô hướng \\(1-1=0\\) và cả hai khác không.\n\n**Kiểm lỗi**\n\nĐể tính góc, hai vectơ phải khác 0 và \\(\\cos\\theta=\\frac{\\vec u\\cdot\\vec v}{\\lVert\\vec u\\rVert\\lVert\\vec v\\rVert}\\). Tích vô hướng 0 với hai vectơ khác 0 là vuông góc. Quay về **Kiến thức 3.4**, sau đó tự giải **Bài luyện 67** và **Bài luyện 70** trong Luyện tập.",
@@ -5687,11 +5687,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.4; luyện THPT-G12-B08-P07, THPT-TOP18-P14."
+    "remediation": "Ôn Kiến thức 3.4; luyện Bài luyện 67, Bài luyện 70."
   },
   {
     "item_id": "THPT-TOP18-T15",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T15",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T15-D6-20261128",
     "stem": "Độ dài vectơ \\(\\vec u=(2;-1;2)\\) bằng bao nhiêu?",
     "answer_key": "\\(3\\).",
     "worked_solution": "\\(|\\vec u|=\\sqrt{4+1+4}=3\\).\n\n**Kiểm lỗi**\n\nĐộ dài là căn tổng **bình phương cả ba** độ chênh, không phải tổng các chênh lệch. Quay về **Kiến thức 3.5**, sau đó tự giải **Bài luyện 74** và **Bài luyện 75** trong Luyện tập.",
@@ -5749,11 +5749,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.5; luyện THPT-G12-B08-W05, THPT-TOP18-P15."
+    "remediation": "Ôn Kiến thức 3.5; luyện Bài luyện 74, Bài luyện 75."
   },
   {
     "item_id": "THPT-TOP18-T16",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T16",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T16-D6-20261128",
     "stem": "Cho vị trí \\(M(t)=M_0+t\\vec v\\), trong đó \\(M_0(1;0;2)\\), \\(\\vec v=(0;3;-1)\\). Tìm tọa độ \\(M(2)\\).",
     "answer_key": "\\(M(2)=(1;6;0)\\).",
     "worked_solution": "Thay \\(t=2\\) vào \\(M(t)=M_0+t\\vec v\\): \\((1;0;2)+2(0;3;-1)=(1;6;0)\\).\n\n**Kiểm lỗi**\n\nVị trí \\(M(t)=M_0+t\\vec v\\) chỉ đúng khi đơn vị thời gian phù hợp với đơn vị vận tốc; kiểm mốc t và miền thời gian vật lí. Quay về **Kiến thức 3.6**, sau đó tự giải **Bài luyện 79** và **Bài luyện 81** trong Luyện tập.",
@@ -5811,11 +5811,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.6; luyện THPT-G12-B08-P12, THPT-TOP18-P16."
+    "remediation": "Ôn Kiến thức 3.6; luyện Bài luyện 79, Bài luyện 81."
   },
   {
     "item_id": "THPT-TOP18-T17",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T17",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T17-D6-20261128",
     "stem": "Một mặt phẳng có hai vectơ chỉ phương \\(\\vec u=(1;0;0),\\ \\vec v=(0;1;0)\\). Nêu một vectơ pháp tuyến khác không.",
     "answer_key": "Một pháp tuyến là \\((0;0;1)\\).",
     "worked_solution": "\\(\\vec n=(0;0;1)\\), vì vuông góc cả u lẫn v.\n\n**Kiểm lỗi**\n\nNếu hai hướng trong mặt cùng phương thì tích có hướng bằng 0, **không** được chọn vectơ đó làm pháp tuyến. Quay về **Kiến thức 4.1**, sau đó tự giải **Bài luyện 83** và **Bài luyện 86** trong Luyện tập.",
@@ -5873,11 +5873,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.1; luyện THPT-G12-B14-P01, THPT-TOP18-P17."
+    "remediation": "Ôn Kiến thức 4.1; luyện Bài luyện 83, Bài luyện 86."
   },
   {
     "item_id": "THPT-TOP18-T18",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T18",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T18-D6-20261128",
     "stem": "Viết phương trình mặt phẳng đi qua \\(M_0(0;0;2)\\), có pháp tuyến \\(\\vec n=(0;0;1)\\).",
     "answer_key": "\\(z=2\\).",
     "worked_solution": "\\(z-2=0\\), tức \\(z=2\\).\n\n**Kiểm lỗi**\n\nMặt có pháp tuyến khác 0 phải đi qua đúng điểm \\(M_0\\); thay \\(M_0\\) vào phương trình để kiểm dấu. Quay về **Kiến thức 4.2**, sau đó tự giải **Bài luyện 87** và **Bài luyện 91** trong Luyện tập.",
@@ -5935,11 +5935,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.2; luyện THPT-G12-B14-C02, THPT-TOP18-P18."
+    "remediation": "Ôn Kiến thức 4.2; luyện Bài luyện 87, Bài luyện 91."
   },
   {
     "item_id": "THPT-TOP18-T19",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T19",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T19-D6-20261128",
     "stem": "Viết phương trình mặt phẳng qua ba điểm \\(A(2;0;0), B(0;2;0), C(0;0;2)\\).",
     "answer_key": "\\(x+y+z=2\\).",
     "worked_solution": "\\(x+y+z=2\\). Ba điểm không thẳng hàng.\n\n**Kiểm lỗi**\n\nBa điểm không thẳng hàng mới xác định một mặt duy nhất; kiểm \\(\\overrightarrow{AB}\\times\\overrightarrow{AC}\\ne\\vec0\\) và thế lại đủ ba điểm. Quay về **Kiến thức 4.3**, sau đó tự giải **Bài luyện 93** và **Bài luyện 96** trong Luyện tập.",
@@ -5997,11 +5997,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.3; luyện THPT-G12-B14-P03, THPT-TOP18-P19."
+    "remediation": "Ôn Kiến thức 4.3; luyện Bài luyện 93, Bài luyện 96."
   },
   {
     "item_id": "THPT-TOP18-T20",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T20",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T20-D6-20261128",
     "stem": "Mặt chứa trục Oz và điểm \\((1;1;0)\\). Tìm phương trình đơn giản.",
     "answer_key": "\\(x-y=0\\).",
     "worked_solution": "\\(x-y=0\\), vì mọi điểm Oz có \\(x=y=0\\) và điểm thêm cũng thỏa.\n\n**Kiểm lỗi**\n\nMặt chứa cả trục phải nhận **mọi** điểm trên trục, không chỉ qua gốc; cần kiểm cả điểm ngoài trục đã cho. Quay về **Kiến thức 4.4**, sau đó tự giải **Bài luyện 99** và **Bài luyện 102** trong Luyện tập.",
@@ -6059,11 +6059,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.4; luyện THPT-G12-B14-P04, THPT-TOP18-P20."
+    "remediation": "Ôn Kiến thức 4.4; luyện Bài luyện 99, Bài luyện 102."
   },
   {
     "item_id": "THPT-TOP18-T21",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T21",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T21-D6-20261128",
     "stem": "\\((P):x+y+z=1\\), \\((Q):2x+2y+2z=2\\). Hai mặt trùng hay song song phân biệt?",
     "answer_key": "Hai mặt phẳng trùng nhau.",
     "worked_solution": "Trùng nhau do chia phương trình Q cho 2 thu đúng P.\n\n**Kiểm lỗi**\n\nPháp tuyến tỉ lệ chưa đủ phân biệt hai mặt trùng hay song song; kiểm cả hệ số tự do, còn vuông góc dùng tích vô hướng. Quay về **Kiến thức 4.5**, sau đó tự giải **Bài luyện 103** và **Bài luyện 107** trong Luyện tập.",
@@ -6121,11 +6121,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.5; luyện THPT-G12-B14-C05, THPT-TOP18-P21."
+    "remediation": "Ôn Kiến thức 4.5; luyện Bài luyện 103, Bài luyện 107."
   },
   {
     "item_id": "THPT-TOP18-T22",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T22",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T22-D6-20261128",
     "stem": "Khoảng cách từ O đến mặt \\(z=-5\\)?",
     "answer_key": "5 đơn vị độ dài.",
     "worked_solution": "5 đơn vị, bởi pháp tuyến \\((0;0;1)\\), độ chênh z là 5.\n\n**Kiểm lỗi**\n\nKhoảng cách điểm–mặt phải lấy trị tuyệt đối tử và chia độ dài pháp tuyến khác 0, không thể âm. Quay về **Kiến thức 4.6**, sau đó tự giải **Bài luyện 108** và **Bài luyện 112** trong Luyện tập.",
@@ -6183,11 +6183,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 4.6; luyện THPT-G12-B14-C06, THPT-TOP18-P22."
+    "remediation": "Ôn Kiến thức 4.6; luyện Bài luyện 108, Bài luyện 112."
   },
   {
     "item_id": "THPT-TOP18-T24",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T24",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T24-D6-20261128",
     "stem": "Đường qua O hướng \\(\\vec u=(1;0;2)\\). Viết dạng tham số.",
     "answer_key": "\\(x=t,\\ y=0,\\ z=2t,\\ t\\in\\mathbb R\\).",
     "worked_solution": "\\(x=t,\\ y=0,\\ z=2t,\\ t\\in\\mathbb R\\).\n\n**Kiểm lỗi**\n\nVectơ chỉ phương phải khác 0; khi một thành phần bằng 0, tọa độ tương ứng là hằng theo t. Quay về **Kiến thức 5.1**, sau đó tự giải **Bài luyện 114** và **Bài luyện 118** trong Luyện tập.",
@@ -6245,11 +6245,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 5.1; luyện THPT-G12-B15-C01, THPT-TOP18-P24."
+    "remediation": "Ôn Kiến thức 5.1; luyện Bài luyện 114, Bài luyện 118."
   },
   {
     "item_id": "THPT-TOP18-T25",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T25",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T25-D6-20261128",
     "stem": "Đường qua \\(A=(0;0;0)\\), \\(B=(1;2;3)\\) có một dạng tham số?",
     "answer_key": "\\(x=t,\\ y=2t,\\ z=3t,\\ t\\in\\mathbb R\\).",
     "worked_solution": "\\(x=t,\\ y=2t,\\ z=3t,\\ t\\in\\mathbb R\\).\n\n**Kiểm lỗi**\n\nĐường qua A,B cần \\(A\\ne B\\), hướng \\(\\overrightarrow{OB}-\\overrightarrow{OA}\\); thử hai giá trị tham số để lấy lại đúng cả hai điểm. Quay về **Kiến thức 5.2**, sau đó tự giải **Bài luyện 119** và **Bài luyện 123** trong Luyện tập.",
@@ -6307,11 +6307,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 5.2; luyện THPT-G12-B15-C02, THPT-TOP18-P25."
+    "remediation": "Ôn Kiến thức 5.2; luyện Bài luyện 119, Bài luyện 123."
   },
   {
     "item_id": "THPT-TOP18-T26",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T26",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T26-D6-20261128",
     "stem": "Đường \\(x=2+t,\\ y=-1,\\ z=3+2t\\). Dạng chính tắc an toàn?",
     "answer_key": "\\(\\frac{x-2}{1}=\\frac{z-3}{2},\\ y=-1\\).",
     "worked_solution": "\\(\\frac{x-2}{1}=\\frac{z-3}{2}\\); \\(y=-1\\).\n\n**Kiểm lỗi**\n\nKhông viết tỉ số có mẫu 0 trong dạng chính tắc; giữ một phương trình tọa độ hằng ở thành phần hướng bằng 0. Quay về **Kiến thức 5.3**, sau đó tự giải **Bài luyện 125** và **Bài luyện 128** trong Luyện tập.",
@@ -6369,11 +6369,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 5.3; luyện THPT-G12-B15-P03, THPT-TOP18-P26."
+    "remediation": "Ôn Kiến thức 5.3; luyện Bài luyện 125, Bài luyện 128."
   },
   {
     "item_id": "THPT-TOP18-T27",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T27",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T27-D6-20261128",
     "stem": "Điểm \\(N=(0;2;0)\\) có thuộc \\(d:x=t,\\ y=2-t,\\ z=0\\) không?",
     "answer_key": "Có, ứng với \\(t=0\\).",
     "worked_solution": "Có, chọn \\(t=0\\) thỏa cả ba.\n\n**Kiểm lỗi**\n\nĐiểm thuộc đường phải thỏa **cùng một t** trong cả ba tọa độ, không được chọn ba tham số độc lập. Quay về **Kiến thức 5.4**, sau đó tự giải **Bài luyện 129** và **Bài luyện 133** trong Luyện tập.",
@@ -6431,11 +6431,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 5.4; luyện THPT-G12-B15-C04, THPT-TOP18-P27."
+    "remediation": "Ôn Kiến thức 5.4; luyện Bài luyện 129, Bài luyện 133."
   },
   {
     "item_id": "THPT-TOP18-T28",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T28",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T28-D6-20261128",
     "stem": "Hai đường qua \\(A=(0;0;0)\\) và \\(B=(0;0;1)\\), cùng hướng \\((1;0;0)\\). Quan hệ?",
     "answer_key": "Hai đường song song phân biệt.",
     "worked_solution": "Song song phân biệt; A không thuộc đường qua B vì z khác.\n\n**Kiểm lỗi**\n\nHai hướng cùng phương vẫn có thể cho đường trùng hoặc song song phân biệt; kiểm thêm một điểm thuộc nhau. Quay về **Kiến thức 5.5**, sau đó tự giải **Bài luyện 134** và **Bài luyện 138** trong Luyện tập.",
@@ -6493,11 +6493,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 5.5; luyện THPT-G12-B15-C05, THPT-TOP18-P28."
+    "remediation": "Ôn Kiến thức 5.5; luyện Bài luyện 134, Bài luyện 138."
   },
   {
     "item_id": "THPT-TOP18-T29",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T29",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T29-D6-20261128",
     "stem": "\\(d_1(t)=(t;0;0)\\),\\(d_2(s)=(0;s;0)\\). Chúng cắt tại đâu?",
     "answer_key": "\\(O(0;0;0)\\).",
     "worked_solution": "Tại \\(O=(0;0;0)\\) với \\(t=s=0\\).\n\n**Kiểm lỗi**\n\nMuốn chứng minh hai đường cắt nhau phải giải đủ ba tọa độ với hai tham số; hình chiếu giao nhau không đủ, hai đường có thể chéo. Quay về **Kiến thức 5.6**, sau đó tự giải **Bài luyện 140** và **Bài luyện 143** trong Luyện tập.",
@@ -6555,11 +6555,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 5.6; luyện THPT-G12-B15-P06, THPT-TOP18-P29."
+    "remediation": "Ôn Kiến thức 5.6; luyện Bài luyện 140, Bài luyện 143."
   },
   {
     "item_id": "THPT-TOP18-T30",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T30",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T30-D6-20261128",
     "stem": "\\(d(t)=(t;1;2)\\), \\((P):z=2\\). Quan hệ?",
     "answer_key": "d nằm trong (P).",
     "worked_solution": "Đường nằm trong P vì mọi t đều \\(z=2\\).\n\n**Kiểm lỗi**\n\nNếu \\(\\vec n\\cdot\\vec u=0\\) thì không chia để tìm giao: thử một điểm gốc để phân biệt đường nằm trong mặt và song song phân biệt. Quay về **Kiến thức 5.7**, sau đó tự giải **Bài luyện 145** và **Bài luyện 148** trong Luyện tập.",
@@ -6617,11 +6617,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 5.7; luyện THPT-G12-B15-P07, THPT-TOP18-P30."
+    "remediation": "Ôn Kiến thức 5.7; luyện Bài luyện 145, Bài luyện 148."
   },
   {
     "item_id": "THPT-TOP18-T31",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T31",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T31-D6-20261128",
     "stem": "Hai đường thẳng có vectơ chỉ phương \\(\\vec u=(1;0;0),\\ \\vec v=(-1;0;0)\\). Tính góc giữa hai đường.",
     "answer_key": "\\(0^\\circ\\).",
     "worked_solution": "\\(0^\\circ\\), không phải \\(180^\\circ\\), vì hai phương cùng đường dù mũi tên ngược.\n\n**Kiểm lỗi**\n\nGóc giữa hai **đường** là góc không tù; dùng trị tuyệt đối tích vô hướng và hai hướng khác 0. Quay về **Kiến thức 6.1**, sau đó tự giải **Bài luyện 151** và **Bài luyện 154** trong Luyện tập.",
@@ -6679,11 +6679,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 6.1; luyện THPT-G12-B16-P01, THPT-TOP18-P31."
+    "remediation": "Ôn Kiến thức 6.1; luyện Bài luyện 151, Bài luyện 154."
   },
   {
     "item_id": "THPT-TOP18-T32",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T32",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T32-D6-20261128",
     "stem": "Đường có hướng \\((0;0;1)\\), mặt \\(z=0\\). Góc đường–mặt bằng bao nhiêu?",
     "answer_key": "\\(90^\\circ\\).",
     "worked_solution": "\\(90^\\circ\\) vì hướng đường trùng phương pháp tuyến, nên hình chiếu của đường co thành một điểm. Công thức cho \\(\\sin\\theta=1\\).\n\n**Kiểm lỗi**\n\nGóc giữa đường và mặt **phụ** với góc không tù giữa hướng đường và phương pháp tuyến; dùng \\(\\sin\\theta=\\frac{|\\vec u\\cdot\\vec n|}{|\\vec u||\\vec n|}\\). Quay về **Kiến thức 6.2**, sau đó tự giải **Bài luyện 156** và **Bài luyện 159** trong Luyện tập.",
@@ -6741,11 +6741,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 6.2; luyện THPT-G12-B16-P02, THPT-TOP18-P32."
+    "remediation": "Ôn Kiến thức 6.2; luyện Bài luyện 156, Bài luyện 159."
   },
   {
     "item_id": "THPT-TOP18-T33",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T33",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T33-D6-20261128",
     "stem": "Hai mặt \\((P):x=0\\),\\((Q):y=0\\) có góc bao nhiêu?",
     "answer_key": "\\(90^\\circ\\).",
     "worked_solution": "\\(90^\\circ\\), vì \\(\\vec n_P=(1;0;0)\\),\\(\\vec n_Q=(0;1;0)\\) vuông góc.\n\n**Kiểm lỗi**\n\nGóc hai mặt dùng hai pháp tuyến khác 0 và góc không tù; đổi dấu pháp tuyến không đổi góc. Quay về **Kiến thức 6.3**, sau đó tự giải **Bài luyện 162** và **Bài luyện 165** trong Luyện tập.",
@@ -6803,11 +6803,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 6.3; luyện THPT-G12-B16-P03, THPT-TOP18-P33."
+    "remediation": "Ôn Kiến thức 6.3; luyện Bài luyện 162, Bài luyện 165."
   },
   {
     "item_id": "THPT-TOP18-T34",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T34",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T34-D6-20261128",
     "stem": "Đường \\(d(t)=(t;0;0)\\), mặt \\(z=0\\). Quan hệ?",
     "answer_key": "d nằm trong mặt phẳng \\(z=0\\).",
     "worked_solution": "Đường nằm trong mặt vì \\(z=0\\) với mọi t.\n\n**Kiểm lỗi**\n\n\\(\\vec u\\cdot\\vec n=0\\) mới chỉ xác định hướng song song mặt; kiểm điểm thuộc mặt để phân biệt nằm trong và song song phân biệt. Quay về **Kiến thức 6.4**, sau đó tự giải **Bài luyện 169** và **Bài luyện 170** trong Luyện tập.",
@@ -6865,11 +6865,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 6.4; luyện THPT-G12-B16-W04, THPT-TOP18-P34."
+    "remediation": "Ôn Kiến thức 6.4; luyện Bài luyện 169, Bài luyện 170."
   },
   {
     "item_id": "THPT-TOP18-T35",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T35",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T35-D6-20261128",
     "stem": "Một đoạn dốc thẳng cao 3 m, hình chiếu ngang dài 4 m và độ dài dốc 5 m. Tính sin của góc \\(\\theta\\) giữa đoạn dốc và nền ngang.",
     "answer_key": "\\(\\sin\\theta=\\frac35\\).",
     "worked_solution": "Góc \\(\\theta\\) giữa đoạn dốc thẳng và nền ngang có cạnh đối dài 3 m, cạnh huyền dài 5 m. Do đó \\(\\sin\\theta=\\frac35\\); còn \\(\\tan\\theta=\\frac34\\).\n\n**Kiểm lỗi**\n\nĐừng lấy độ dài ngang làm cạnh huyền; cần tam giác vuông có cao, ngang và đoạn dốc để phân biệt sin với tan. Quay về **Kiến thức 6.5**, sau đó tự giải **Bài luyện 174** và **Bài luyện 175** trong Luyện tập.",
@@ -6927,11 +6927,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 6.5; luyện THPT-G12-B16-W05, THPT-TOP18-P35."
+    "remediation": "Ôn Kiến thức 6.5; luyện Bài luyện 174, Bài luyện 175."
   },
   {
     "item_id": "THPT-TOP18-T36",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T36",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T36-D6-20261128",
     "stem": "Mặt cầu tâm O bán kính 5 có phương trình nào?",
     "answer_key": "\\(x^2+y^2+z^2=25\\).",
     "worked_solution": "\\(x^2+y^2+z^2=25\\).\n\n**Kiểm lỗi**\n\nPhương trình mặt cầu phải dùng dấu trừ tọa độ tâm trong ngoặc bình phương và bán kính \\(R>0\\). Quay về **Kiến thức 7.1**, sau đó tự giải **Bài luyện 177** và **Bài luyện 180** trong Luyện tập.",
@@ -6989,11 +6989,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 7.1; luyện THPT-G12-B17-P01, THPT-TOP18-P36."
+    "remediation": "Ôn Kiến thức 7.1; luyện Bài luyện 177, Bài luyện 180."
   },
   {
     "item_id": "THPT-TOP18-T37",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T37",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T37-D6-20261128",
     "stem": "\\(x^2+y^2+z^2-4x=0\\) có tâm, bán kính?",
     "answer_key": "Tâm \\((2;0;0), R=2\\).",
     "worked_solution": "\\((2;0;0)\\), \\(R=2\\) vì \\((x-2)^2+y^2+z^2=4\\).\n\n**Kiểm lỗi**\n\nHoàn thành bình phương phải điều chỉnh hằng số cùng lúc; xem \\(R^2\\) trước khi lấy căn, nếu âm không có cầu thực. Quay về **Kiến thức 7.2**, sau đó tự giải **Bài luyện 182** và **Bài luyện 185** trong Luyện tập.",
@@ -7051,11 +7051,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 7.2; luyện THPT-G12-B17-P02, THPT-TOP18-P37."
+    "remediation": "Ôn Kiến thức 7.2; luyện Bài luyện 182, Bài luyện 185."
   },
   {
     "item_id": "THPT-TOP18-T38",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T38",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T38-D6-20261128",
     "stem": "Cho mặt cầu tâm \\(O(0;0;0)\\), bán kính 3. Điểm \\((0;0;4)\\) nằm trên mặt cầu, trong hay ngoài khối cầu?",
     "answer_key": "Điểm ở ngoài khối cầu.",
     "worked_solution": "Ngoài khối cầu vì khoảng cách bình phương \\(16>9\\).\n\n**Kiểm lỗi**\n\nSo bình phương khoảng cách từ điểm đến **tâm C** với \\(R^2\\): nhỏ hơn nằm trong, bằng trên, lớn hơn ngoài. Quay về **Kiến thức 7.3**, sau đó tự giải **Bài luyện 186** và **Bài luyện 190** trong Luyện tập.",
@@ -7113,11 +7113,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 7.3; luyện THPT-G12-B17-C03, THPT-TOP18-P38."
+    "remediation": "Ôn Kiến thức 7.3; luyện Bài luyện 186, Bài luyện 190."
   },
   {
     "item_id": "THPT-TOP18-T39",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T39",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T39-D6-20261128",
     "stem": "\\(A=(-2;0;0)\\),\\(B=(2;0;0)\\). Viết phương trình mặt cầu đường kính AB.",
     "answer_key": "\\(x^2+y^2+z^2=4\\).",
     "worked_solution": "Tâm O và bán kính 2 nên \\(x^2+y^2+z^2=4\\).\n\n**Kiểm lỗi**\n\nMặt cầu đường kính AB có tâm trung điểm AB, bán kính \\(\\frac{AB}{2}\\), không phải lấy đầu mút làm tâm. Quay về **Kiến thức 7.4**, sau đó tự giải **Bài luyện 194** và **Bài luyện 195** trong Luyện tập.",
@@ -7175,11 +7175,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 7.4; luyện THPT-G12-B17-W04, THPT-TOP18-P39."
+    "remediation": "Ôn Kiến thức 7.4; luyện Bài luyện 194, Bài luyện 195."
   },
   {
     "item_id": "THPT-TOP18-T40",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T40",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T40-D6-20261128",
     "stem": "Mặt cầu tâm O \\(R=5\\), mặt \\(z=6\\) có giao không?",
     "answer_key": "Không có điểm chung.",
     "worked_solution": "Không, vì khoảng cách tâm–mặt \\(d=6>R\\).\n\n**Kiểm lỗi**\n\nBán kính thiết diện không luôn bằng R; trước hết lấy d từ tâm tới mặt, phân ba trường hợp \\(d<R\\), \\(d=R\\), \\(d>R\\). Quay về **Kiến thức 7.5**, sau đó tự giải **Bài luyện 197** và **Bài luyện 201** trong Luyện tập.",
@@ -7240,11 +7240,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 7.5; luyện THPT-G12-B17-C05, THPT-TOP18-P40."
+    "remediation": "Ôn Kiến thức 7.5; luyện Bài luyện 197, Bài luyện 201."
   },
   {
     "item_id": "THPT-TOP18-T23",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T23",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T23-D6-20261128",
     "stem": "Mặt cầu tâm \\(O(0;0;0)\\), bán kính 4 và mặt phẳng \\(z=4\\) có tập điểm chung là gì?",
     "answer_key": "Tiếp xúc tại một điểm \\((0;0;4)\\).",
     "worked_solution": "Tiếp xúc tại một điểm \\((0;0;4)\\), vì \\(d=R\\).\n\n**Kiểm lỗi**\n\nChỉ dùng cách so sánh d với R khi có mặt cầu với \\(R>0\\) và khoảng cách \\(d\\ge0\\); \\(d=R\\) là tiếp xúc một điểm. Quay về **Kiến thức 8.1**, sau đó tự giải **Bài luyện 203** và **Bài luyện 207** trong Luyện tập.",
@@ -7302,11 +7302,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 8.1; luyện THPT-G12-B14-C07, THPT-TOP18-P23."
+    "remediation": "Ôn Kiến thức 8.1; luyện Bài luyện 203, Bài luyện 207."
   },
   {
     "item_id": "THPT-TOP19-T01",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T01",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T01-D6-20261128",
     "stem": "Một tủ sách có 5 truyện khác nhau và 4 sách tranh khác nhau, không có cuốn nào trùng hai nhóm. Chọn đúng một cuốn để đọc. Hỏi có mấy cách?",
     "answer_key": "9 cách.",
     "worked_solution": "**9 cách**, vì hai nhóm cuốn sách không trùng nhau và mỗi kết quả chỉ lấy đúng một cuốn: \\(5+4=9\\).\n\n**Kiểm lỗi**\n\nNếu tính \\(5\\cdot4\\), hãy thử viết một kết quả: chỉ tên **một** cuốn sách, không phải một cặp. Quay lại xem điều kiện “hoặc”. Đọc lại **Kiến thức 1.1**, sau đó thử **Bài luyện 1** và **Bài luyện 3** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7364,11 +7364,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.1; luyện THPT-G10-B23-C01, THPT-TOP19-P01."
+    "remediation": "Ôn Kiến thức 1.1; luyện Bài luyện 1, Bài luyện 3."
   },
   {
     "item_id": "THPT-TOP19-T02",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T02",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T02-D6-20261128",
     "stem": "Có 5 loại áo và 3 kiểu huy hiệu, mỗi loại áo đều có thể ghép với đủ ba kiểu huy hiệu. Mỗi bộ quà gồm đúng một loại áo và một kiểu huy hiệu. Hỏi có bao nhiêu bộ quà khác nhau?",
     "answer_key": "15 bộ.",
     "worked_solution": "**15 bộ.** Với mỗi loại trong 5 loại áo đều có 3 cách chọn huy hiệu, nên theo quy tắc nhân ta có \\(5\\cdot3=15\\) bộ.\n\n**Kiểm lỗi**\n\nNếu được 8, em có thể đã cộng \\(5+3\\). Hãy vẽ bảng gồm 5 hàng cho các loại áo và 3 cột cho các kiểu huy hiệu. Mỗi ô là một bộ quà; đếm đủ 15 ô để kiểm tra phép nhân. Đọc lại **Kiến thức 1.2**, sau đó thử **Bài luyện 4** và **Bài luyện 7** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7426,11 +7426,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.2; luyện THPT-G10-B23-C02, THPT-TOP19-P02."
+    "remediation": "Ôn Kiến thức 1.2; luyện Bài luyện 4, Bài luyện 7."
   },
   {
     "item_id": "THPT-TOP19-T03",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T03",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T03-D6-20261128",
     "stem": "Từ \\(\\{0,1,2,3,4\\}\\) lập số tự nhiên có hai chữ số khác nhau. Có bao nhiêu số?",
     "answer_key": "16 số.",
     "worked_solution": "Hàng chục có 4 cách (1–4); hàng đơn vị còn 4 cách (kể cả 0 nếu chưa dùng): \\(4\\cdot4=16\\) số.\n\n**Kiểm lỗi**\n\nNếu có 20, em đã cho chữ số hàng chục nhận 0. Nếu có 12, em có thể đã loại 0 khỏi cả hàng đơn vị. Đọc lại **Kiến thức 1.3**, sau đó thử **Bài luyện 8** và **Bài luyện 9** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7488,11 +7488,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.3; luyện THPT-G10-B23-P01, THPT-TOP19-P03."
+    "remediation": "Ôn Kiến thức 1.3; luyện Bài luyện 8, Bài luyện 9."
   },
   {
     "item_id": "THPT-TOP19-T04",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T04",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T04-D6-20261128",
     "stem": "Từ \\(\\{0,1,2,3\\}\\) lập số chẵn có hai chữ số khác nhau. Có bao nhiêu số?",
     "answer_key": "5 số.",
     "worked_solution": "Đơn vị 0: hàng chục có 3 cách; đơn vị 2: hàng chục chỉ 1 hoặc 3, có 2 cách; tổng **\\(3+2=5\\)** số.\n\n**Kiểm lỗi**\n\nNếu em nhân \\(2\\cdot3\\), hãy xét riêng đuôi 0: hàng chục có 3 lựa chọn, còn đuôi 2 chỉ có 2. Đọc lại **Kiến thức 1.4**, sau đó thử **Bài luyện 10** và **Bài luyện 12** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7550,11 +7550,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 1.4; luyện THPT-G10-B23-P05, THPT-TOP19-P04."
+    "remediation": "Ôn Kiến thức 1.4; luyện Bài luyện 10, Bài luyện 12."
   },
   {
     "item_id": "THPT-TOP19-T05",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T05",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T05-D6-20261128",
     "stem": "Có 5 học sinh khác nhau xếp thành một hàng, không ràng buộc. Có bao nhiêu thứ tự?",
     "answer_key": "120 thứ tự.",
     "worked_solution": "Hoán vị cả 5 học sinh, mỗi người một vị trí: \\(5!=120\\).\n\n**Kiểm lỗi**\n\nNếu em dùng tổ hợp, hãy đổi chỗ hai học sinh; thứ tự hàng đổi thành kết quả khác, do đó phải đếm tất cả thứ tự. Đọc lại **Kiến thức 2.1**, sau đó thử **Bài luyện 14** và **Bài luyện 17** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7612,11 +7612,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.1; luyện THPT-G10-B24-C01, THPT-TOP19-P05."
+    "remediation": "Ôn Kiến thức 2.1; luyện Bài luyện 14, Bài luyện 17."
   },
   {
     "item_id": "THPT-TOP19-T06",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T06",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T06-D6-20261128",
     "stem": "Từ 6 bạn chọn một trưởng nhóm và một phó nhóm khác nhau. Có bao nhiêu cách?",
     "answer_key": "30 cách.",
     "worked_solution": "Hai vai phân biệt, lần lượt 6 rồi 5 lựa chọn: \\(A_6^2=30\\).\n\n**Kiểm lỗi**\n\nNếu ra 15, em đang coi A làm trưởng/B làm phó giống B trưởng/A phó; hãy viết hai kết quả để thấy khác. Đọc lại **Kiến thức 2.2**, sau đó thử **Bài luyện 18** và **Bài luyện 20** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7674,11 +7674,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.2; luyện THPT-G10-B24-C02, THPT-TOP19-P06."
+    "remediation": "Ôn Kiến thức 2.2; luyện Bài luyện 18, Bài luyện 20."
   },
   {
     "item_id": "THPT-TOP19-T07",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T07",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T07-D6-20261128",
     "stem": "Chọn một nhóm 3 người từ 6 người khác nhau, không phân vai. Có bao nhiêu nhóm?",
     "answer_key": "20 nhóm.",
     "worked_solution": "\\(C_6^3=\\frac{6\\cdot5\\cdot4}{3\\cdot2\\cdot1}=20\\) nhóm.\n\n**Kiểm lỗi**\n\nNếu em ra 120, đó là số thứ tự của bộ ba; mỗi nhóm bị đếm \\(3!=6\\) lần, phải chia 6. Đọc lại **Kiến thức 2.3**, sau đó thử **Bài luyện 21** và **Bài luyện 22** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7736,11 +7736,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.3; luyện THPT-G10-B24-P01, THPT-TOP19-P07."
+    "remediation": "Ôn Kiến thức 2.3; luyện Bài luyện 21, Bài luyện 22."
   },
   {
     "item_id": "THPT-TOP19-T08",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T08",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T08-D6-20261128",
     "stem": "Từ 4 bạn nữ và 3 bạn nam chọn nhóm 3 người gồm đúng 2 nữ, 1 nam, không phân vai. Bao nhiêu nhóm?",
     "answer_key": "18 nhóm.",
     "worked_solution": "Chọn 2 nữ trong 4: \\(C_4^2=6\\); chọn 1 nam trong 3: 3. Nhân: **18** nhóm.\n\n**Kiểm lỗi**\n\nNếu tính \\(A_4^2\\cdot3\\), em đã phân biệt thứ tự hai nữ; bài này chỉ chọn nhóm nên dùng tổ hợp. Đọc lại **Kiến thức 2.4**, sau đó thử **Bài luyện 23** và **Bài luyện 25** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7798,11 +7798,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.4; luyện THPT-G10-B24-P04, THPT-TOP19-P08."
+    "remediation": "Ôn Kiến thức 2.4; luyện Bài luyện 23, Bài luyện 25."
   },
   {
     "item_id": "THPT-TOP19-T14",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T14",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T14-D6-20261128",
     "stem": "Từ 8 ứng viên khác nhau, chọn 3 bạn giữ ba vai trò phân biệt. Hãy (a) xác định phép tính máy cần dùng, (b) cho số cách và (c) tự kiểm bằng tích không cần máy.",
     "answer_key": "nPr; 336 cách; \\(8\\cdot7\\cdot6=336\\).",
     "worked_solution": "Ba vai khác nhau, nên dùng **nPr** (chỉnh hợp): \\(A_8^3=8\\cdot7\\cdot6=336\\) cách. Trên máy có `nPr`, tính `8 nPr 3`; trên máy không có, nhân ba số giảm dần \\(8\\cdot7\\cdot6\\). Không dùng \\(C_8^3\\) vì đó là chọn **nhóm không phân vai**.\n\n**Kiểm lỗi**\n\nNếu kết quả ra 56, kiểm tra xem em mới nhân 8·7 (hai vai) hay đã dùng \\(C_8^3=56\\) (nhóm không phân vai). Cả hai đều thiếu điều kiện **ba vai phân biệt**; so \\(A_8^3=C_8^3\\cdot3!=56\\cdot6=336\\). Quay lại Kiến thức 2.2–2.3 để phân biệt kết quả có thứ tự và không có thứ tự. Đọc lại **Kiến thức 2.5**, sau đó thử **Bài luyện 20** và **Bài luyện 27** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7860,11 +7860,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 2.5; luyện THPT-TOP19-P06, THPT-TOP19-P14."
+    "remediation": "Ôn Kiến thức 2.5; luyện Bài luyện 20, Bài luyện 27."
   },
   {
     "item_id": "THPT-TOP19-T09",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T09-D07",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T09-D07-D6-20261128",
     "stem": "Hệ số của \\(x^3\\) trong \\((x+3)^4\\) bằng bao nhiêu? Giải thích số cách chọn ba thừa số chứa x và hệ số của thừa số còn lại.",
     "answer_key": "12, vì chọn ba trong bốn vị trí chứa x có \\(C_4^3=4\\) cách; vị trí còn lại cho hệ số 3.",
     "worked_solution": "Muốn \\(x^3\\) chọn x tại 3 trong 4 vị trí: \\(C_4^3=4\\) cách; vị trí còn lại phải chọn 3, nên hệ số là \\(4\\cdot3=12\\).\n\n**Kiểm lỗi**\n\nNếu em chép số 4 ở hàng \\(n=4\\) của tam giác Pascal thì mới đếm số cách chọn vị trí, chưa nhân hệ số 3 của thừa số không chứa x. Viết rõ ba lần chọn x và một lần chọn 3: \\(C_4^3\\cdot3=12\\). Đọc lại **Kiến thức 3.1**, sau đó thử **Bài luyện 28** và **Bài luyện 30** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7923,11 +7923,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.1; luyện THPT-G10-B25-C01, THPT-TOP19-P09."
+    "remediation": "Ôn Kiến thức 3.1; luyện Bài luyện 28, Bài luyện 30."
   },
   {
     "item_id": "THPT-TOP19-T10",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T10",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T10-D6-20261128",
     "stem": "Hệ số \\(x^2\\) trong \\((x-2)^4\\) là bao nhiêu?",
     "answer_key": "24.",
     "worked_solution": "Muốn \\(x^2\\) thì \\(k=2\\) lần chọn −2. Hệ số \\(C_4^2(-2)^2=6\\cdot4=24\\).\n\n**Kiểm lỗi**\n\nNếu ra −24, kiểm lại: chọn −2 hai lần thì tích dương; dấu phụ thuộc k chẵn/lẻ. Đọc lại **Kiến thức 3.2**, sau đó thử **Bài luyện 31** và **Bài luyện 36** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -7986,11 +7986,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.2; luyện THPT-G10-B25-P01, THPT-TOP19-P10."
+    "remediation": "Ôn Kiến thức 3.2; luyện Bài luyện 31, Bài luyện 36."
   },
   {
     "item_id": "THPT-TOP19-T13",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T13",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T13-D6-20261128",
     "stem": "Một mô hình dự báo tồn kho bắt đầu với 5 000 bộ dụng cụ, tăng 1% mỗi năm theo cùng tỉ lệ trong 5 năm. Dùng hai số hạng đầu của \\((1+0{,}01)^5\\) để ước tính giá trị mô hình cuối kỳ và giải thích vì sao đây chỉ là ước lượng.",
     "answer_key": "5 250 bộ (ước lượng thấp hơn giá trị mô hình).",
     "worked_solution": "\\(r=0{,}01\\). Hai số hạng đầu là \\(1+5r=1{,}05\\). Do đó \\(5000\\cdot1{,}05=5250\\) bộ (ước tính). Các hạng bậc 2 trở lên đều dương nên số thực tế mô hình \\(5000\\cdot1{,}01^5\\) lớn hơn 5 250 một ít.\n\n**Kiểm lỗi**\n\nNếu tính \\(5000(1+0{,}01)\\) mà bỏ mũ 5, em mới tính tăng một năm. Quay lại Kiến thức 3.1 để viết năm thừa số rồi đọc hệ số của r là \\(C_5^1=5\\). Nếu viết dấu bằng chính xác, hãy chỉ phần \\(r^2\\) còn bị bỏ qua. Đọc lại **Kiến thức 3.3**, sau đó thử **Bài luyện 29** và **Bài luyện 38** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -8048,11 +8048,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.3; luyện THPT-G10-B25-C02, THPT-TOP19-P13."
+    "remediation": "Ôn Kiến thức 3.3; luyện Bài luyện 29, Bài luyện 38."
   },
   {
     "item_id": "THPT-TOP19-T11",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T11-D07",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T11-D07-D6-20261128",
     "stem": "Trong khai triển \\((3x-2)^5\\), số hạng không chứa \\(x\\) là bao nhiêu? Giải thích bằng cách chọn hạng tử từ năm thừa số.",
     "answer_key": "\\(-32\\), vì phải chọn \\(-2\\) từ cả năm thừa số, được \\((-2)^5\\).",
     "worked_solution": "Chọn \\(-2\\) từ cả năm thừa số, không chọn \\(3x\\) ở vị trí nào, nên có duy nhất \\(C_5^5=1\\) cách cho hạng tử đó. Hệ số tự do là \\((-2)^5=\\mathbf{-32}\\).\n\n**Kiểm lỗi**\n\nNếu được +32, em đã quên số lần chọn thừa số âm là **5 lần (lẻ)**. Nếu tính \\(5\\cdot(-2)\\), em đã nhầm cộng năm lần với **nhân năm thừa số**. Thử \\(n=2\\) trước: \\((x-2)^2=x^2-4x+4\\) có hằng số \\((-2)^2=4\\). Đọc lại **Kiến thức 3.4**, sau đó thử **Bài luyện 35** và **Bài luyện 40** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -8110,11 +8110,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.4; luyện THPT-G10-B25-P07, THPT-TOP19-P11."
+    "remediation": "Ôn Kiến thức 3.4; luyện Bài luyện 35, Bài luyện 40."
   },
   {
     "item_id": "THPT-TOP19-T12",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T12",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T12-D6-20261128",
     "stem": "Tổng hệ số của đa thức \\((x+2)^5\\) bằng bao nhiêu?",
     "answer_key": "243.",
     "worked_solution": "Thay \\(x=1\\): \\((1+2)^5=243\\).\n\n**Kiểm lỗi**\n\nNếu cộng lẻ từng số hạng và sai, nhớ thay \\(x=1\\) vào toàn bộ biểu thức hữu hạn đã khai triển, kể cả các thừa số hằng; không chỉ cộng các hệ số tổ hợp. Đọc lại **Kiến thức 3.5**, sau đó thử **Bài luyện 41** và **Bài luyện 42** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
@@ -8172,11 +8172,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn Kiến thức 3.5; luyện THPT-G10-B25-P06, THPT-TOP19-P12."
+    "remediation": "Ôn Kiến thức 3.5; luyện Bài luyện 41, Bài luyện 42."
   },
   {
     "item_id": "THPT-TOP20-T01",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T01",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T01-D6-20261128",
     "stem": "Gieo một xúc xắc 8 mặt đồng khả năng ghi các số 1–8. Viết Ω và biến cố “ra số chẵn”.",
     "answer_key": "\\(\\Omega=\\{1,2,3,4,5,6,7,8\\}\\); \\(A=\\{2,4,6,8\\}\\).",
     "worked_solution": "\\(\\Omega=\\{1,2,3,4,5,6,7,8\\}\\); \\(A=\\{2,4,6,8\\}\\).\n\n**Kiểm lỗi**\n\nNếu chỉ viết xác suất \\(\\frac{1}{2}\\), em chưa mô tả biến cố; hãy ghi kết quả sơ cấp vào tập. Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 1 tại Luyện tập 1.1. Không gian mẫu và tập kết quả của biến cố.",
@@ -8235,11 +8235,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O01; luyện THPT-TOP20-P01."
+    "remediation": "Ôn Kiến thức 1.1; luyện Bài luyện 1."
   },
   {
     "item_id": "THPT-TOP20-T10",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T10",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T10-D6-20261128",
     "stem": "Một vòng quay cân đối có các kết quả ghi 1 đến 6. Biến cố A là “kết quả không lớn hơn 2”. Hãy viết A và nói khi nào A xảy ra.",
     "answer_key": "\\(A=\\{1,2\\}\\); xảy ra khi quay được 1 hoặc 2.",
     "worked_solution": "**Lời giải:** \\(A=\\{1,2\\}\\); A xảy ra nếu lượt quay cho kết quả 1 hoặc 2.\n\n**Kiểm lỗi**\n\nNếu viết \\(A=\\{2\\}\\), em đã bỏ kết quả 1 cũng không lớn hơn 2. Xem từng phần tử \\(\\Omega=\\{1,\\ldots,6\\}\\). Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 2 tại Luyện tập 1.2. Mô tả biến cố từ một điều kiện.",
@@ -8297,11 +8297,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O02; luyện THPT-TOP20-P02."
+    "remediation": "Ôn Kiến thức 1.1; luyện Bài luyện 2."
   },
   {
     "item_id": "THPT-TOP20-T02",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T02",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T02-D6-20261128",
     "stem": "Hộp có 2 phiếu đỏ và 4 phiếu xanh khác nhau, rút đều một phiếu. \\(P(\\text{đỏ})\\) có phải \\(\\frac{1}{2}\\) vì có hai màu không?",
     "answer_key": "Không; \\(P(\\text{đỏ})=\\frac13\\).",
     "worked_solution": "Không. Sáu phiếu vật lí đồng khả năng, \\(P(\\text{đỏ})=\\frac26=\\frac13\\).\n\n**Kiểm lỗi**\n\nNếu dùng \\(\\frac{1}{2}\\), em đếm màu thay vì từng phiếu; hãy đặt tên cho sáu phiếu. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 3 tại Luyện tập 1.3. Xác suất cổ điển từ phiếu đồng khả năng.",
@@ -8359,11 +8359,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O03; luyện THPT-TOP20-P03."
+    "remediation": "Ôn Kiến thức 1.2; luyện Bài luyện 3."
   },
   {
     "item_id": "THPT-TOP20-T11",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T11",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T11-D6-20261128",
     "stem": "Tung hai đồng xu cân đối và độc lập. Nếu chỉ ghi số mặt ngửa 0, 1, 2 thì ba giá trị ấy có đồng khả năng không? Hãy viết các chuỗi sơ cấp và tính xác suất có đúng một mặt ngửa.",
     "answer_key": "Không đồng khả năng; \\(\\Omega=\\{NN,NS,SN,SS\\}\\); \\(P(\\text{đúng một ngửa})=\\frac12\\).",
     "worked_solution": "**Lời giải:** Quy ước N là ngửa, S là sấp. Không. Không gian mẫu gồm NN, NS, SN, SS, mỗi chuỗi có xác suất \\(\\frac{1}{4}\\). Số ngửa 0 ứng với SS, số ngửa 1 ứng với NS và SN, số ngửa 2 ứng với NN. Vì vậy ba giá trị **không** đồng khả năng; xác suất đúng một ngửa là \\(\\frac{2}{4}=\\frac{1}{2}\\).\n\n**Kiểm lỗi**\n\nNếu ra \\(\\frac{1}{3}\\), em đã đếm ba **nhãn** thay vì bốn chuỗi sơ cấp. Liệt kê đủ NN, NS, SN, SS rồi ghép mỗi chuỗi với số mặt ngửa tương ứng. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 6 tại Luyện tập 1.6. Gộp kết quả không đồng khả năng.",
@@ -8421,11 +8421,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O06; luyện THPT-TOP20-P06."
+    "remediation": "Ôn Kiến thức 1.2; luyện Bài luyện 6."
   },
   {
     "item_id": "THPT-TOP20-T03",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T03",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T03-D6-20261128",
     "stem": "Có 20 thẻ đồng khả năng, đúng 1 thẻ màu đen. Tính \\(P(\\text{không đen})\\). Biến cố đen có phải không thể?",
     "answer_key": "\\(P(\\text{không đen})=\\frac{19}{20}\\); đen hiếm nhưng không phải không thể.",
     "worked_solution": "\\(P(\\text{không đen})=\\frac{19}{20}\\); \\(P(\\text{đen})=\\frac1{20}>0\\) nên đen là hiếm, không phải không thể.\n\n**Kiểm lỗi**\n\nNếu nói xác suất 0, em đã nhầm ít xảy ra với biến cố rỗng. Ôn lại mục Kiến thức 1.3. Biến cố đối và xác suất bé và Bài luyện 4 tại Luyện tập 1.4. Tính xác suất bằng biến cố đối.",
@@ -8483,11 +8483,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O04; luyện THPT-TOP20-P04."
+    "remediation": "Ôn Kiến thức 1.3; luyện Bài luyện 4."
   },
   {
     "item_id": "THPT-TOP20-T12",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T12",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T12-D6-20261128",
     "stem": "Trong 100 vé đồng khả năng chỉ có một vé trúng. Biến cố trúng vé là không thể hay hiếm? Viết xác suất.",
     "answer_key": "Hiếm, không phải không thể; \\(P(\\text{trúng})=\\frac1{100}\\).",
     "worked_solution": "**Lời giải:** \\(P(\\text{trúng})=\\frac1{100}>0\\); hiếm chứ không phải biến cố không thể.\n\n**Kiểm lỗi**\n\nNếu \\(P=0\\), em đã bỏ một vé trúng còn có mặt trong Ω. Đếm \\(n(A)=1\\) và \\(n(\\Omega)=100\\). Ôn lại mục Kiến thức 1.3. Biến cố đối và xác suất bé và Bài luyện 5 tại Luyện tập 1.5. Biến cố hiếm và biến cố không thể.",
@@ -8545,11 +8545,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O05; luyện THPT-TOP20-P05."
+    "remediation": "Ôn Kiến thức 1.3; luyện Bài luyện 5."
   },
   {
     "item_id": "THPT-TOP20-T04",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T04",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T04-D6-20261128",
     "stem": "Từ 6 học sinh chọn một nhóm 2 người không phân vai; so với chọn trưởng rồi phó, có bao nhiêu kết quả mỗi loại?",
     "answer_key": "15 nhóm; 30 cặp phân vai.",
     "worked_solution": "Không phân vai có \\(\\binom62=15\\) nhóm; phân hai vai có 6×5=30 cặp có thứ tự.\n\n**Kiểm lỗi**\n\nNếu có cả hai bằng 30, nhóm AB và BA đã bị đếm hai lần ở trường hợp không phân vai. Ôn lại mục Kiến thức 1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây và Bài luyện 7 tại Luyện tập 1.7. Chọn nhóm không xét thứ tự.",
@@ -8608,11 +8608,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O07; luyện THPT-TOP20-P07."
+    "remediation": "Ôn Kiến thức 1.4; luyện Bài luyện 7."
   },
   {
     "item_id": "THPT-TOP20-T13",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T13",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T13-D6-20261128",
     "stem": "Từ 5 phiếu khác nhau (1 đỏ, 4 xanh), chọn đều **hai phiếu không xét thứ tự**. Xác suất ít nhất một phiếu đỏ?",
     "answer_key": "\\(\\frac25\\).",
     "worked_solution": "**Lời giải:** \\(P=1-P(\\text{cả hai xanh})=1-\\frac{\\binom42}{\\binom52}=1-\\frac6{10}=\\frac25\\).\n\n**Kiểm lỗi**\n\nNếu dùng \\(1-\\frac45\\) thì em đang xét một phiếu. Mẫu này là **nhóm hai phiếu**, phải đếm \\(\\binom{5}{2}\\). Ôn lại mục Kiến thức 1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây và Bài luyện 8 tại Luyện tập 1.8. Ít nhất một và biến cố đối.",
@@ -8670,11 +8670,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O08; luyện THPT-TOP20-P08."
+    "remediation": "Ôn Kiến thức 1.4; luyện Bài luyện 8."
   },
   {
     "item_id": "THPT-TOP20-T05",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T05",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T05-D6-20261128",
     "stem": "Gieo độc lập hai xúc xắc sáu mặt phân biệt, cân đối. Có bao nhiêu cặp sơ cấp đồng khả năng và \\(P(\\text{tổng số chấm bằng 12})\\)?",
     "answer_key": "36 cặp; \\(P(\\text{tổng}=12)=\\frac1{36}\\).",
     "worked_solution": "Có 36 cặp có thứ tự; chỉ (6,6) có tổng 12 nên \\(P=\\frac1{36}\\).\n\n**Kiểm lỗi**\n\nKhông coi 11 tổng số chấm từ 2 đến 12 là đồng khả năng; tổng 12 chỉ có một cặp. Ôn lại Kiến thức 1.5, rồi làm Bài luyện 6 (Luyện tập 1.6) để lập các cặp sơ cấp đồng khả năng trước khi đếm mỗi giá trị tổng. Nếu vẫn nhầm thứ tự rút, luyện thêm Bài luyện 10 (Luyện tập 1.10).",
@@ -8732,11 +8732,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O10; luyện THPT-TOP20-P10."
+    "remediation": "Ôn Kiến thức 1.5; luyện Bài luyện 10."
   },
   {
     "item_id": "THPT-TOP20-T14",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T14",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T14-D6-20261128",
     "stem": "Tung một đồng xu cân đối ba lần độc lập, ghi chuỗi kết quả có thứ tự. Có bao nhiêu kết quả đồng khả năng và xác suất đúng hai mặt ngửa?",
     "answer_key": "8 chuỗi; \\(P(\\text{đúng hai ngửa})=\\frac38\\).",
     "worked_solution": "**Lời giải:** Quy ước N là ngửa, S là sấp. Có \\(2^3=8\\) chuỗi; đúng hai ngửa là NNS, NSN, SNN (3 chuỗi), \\(P=\\frac38\\).\n\n**Kiểm lỗi**\n\nNếu coi bốn nhóm “0, 1, 2 hoặc 3 lần ngửa” là bốn kết quả đồng khả năng, em đã gộp các chuỗi khác nhau. Bốn nhóm lần lượt chứa 1, 3, 3 và 1 chuỗi, nên phải đếm trên tám chuỗi đồng khả năng. Vẽ cây ba tầng. Ôn lại mục Kiến thức 1.5. Chọn đúng mô hình trước khi tính và Bài luyện 9 tại Luyện tập 1.9. Chuỗi có thứ tự trên sơ đồ cây.",
@@ -8794,11 +8794,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O09; luyện THPT-TOP20-P09."
+    "remediation": "Ôn Kiến thức 1.5; luyện Bài luyện 9."
   },
   {
     "item_id": "THPT-TOP20-T06",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T06",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T06-D6-20261128",
     "stem": "Gieo một xúc xắc sáu mặt cân đối. A=ra số chẵn, B=ra số không lớn hơn 2. Viết \\(A\\cap B\\) và \\(A\\cup B\\).",
     "answer_key": "\\(A\\cap B=\\{2\\}\\); \\(A\\cup B=\\{1,2,4,6\\}\\).",
     "worked_solution": "\\(A=\\{2,4,6\\}\\), \\(B=\\{1,2\\}\\); giao=\\(\\{2\\}\\), hợp=\\(\\{1,2,4,6\\}\\).\n\n**Kiểm lỗi**\n\nNếu lấy \\(B=\\{4,5,6\\}\\) thì em đã chép điều kiện “lớn hơn 3” của hình minh họa, không phải điều kiện “không lớn hơn 2” trong đề này. Viết \\(B=\\{1,2\\}\\) trước; giao chỉ lấy phần chung \\(\\{2\\}\\), còn hợp chứa \\(\\{1,2,4,6\\}\\) và mỗi số được ghi đúng một lần. Ôn lại Kiến thức 2.1 và giải lại Bài luyện 11.",
@@ -8857,11 +8857,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O11; luyện THPT-TOP20-P11."
+    "remediation": "Ôn Kiến thức 2.1; luyện Bài luyện 11."
   },
   {
     "item_id": "THPT-TOP20-T07",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T07",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T07-D6-20261128",
     "stem": "Tung một đồng xu cân đối và gieo một xúc xắc sáu mặt cân đối độc lập. Xác suất đồng xu ngửa và xúc xắc chẵn là bao nhiêu?",
     "answer_key": "\\(\\frac14\\).",
     "worked_solution": "\\(P=\\frac12\\cdot\\frac36=\\frac14\\). Hai phép thử độc lập nên số cặp thuận lợi=1×3 trong 12 cặp.\n\n**Kiểm lỗi**\n\nNếu tính \\(\\frac12+\\frac12\\), em đang cộng xác suất mà đề yêu cầu cùng xảy ra. Ôn lại mục Kiến thức 2.2. Độc lập không phải xung khắc và Bài luyện 12 tại Luyện tập 2.2. Xác suất giao của hai biến cố độc lập.",
@@ -8919,11 +8919,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O12; luyện THPT-TOP20-P12."
+    "remediation": "Ôn Kiến thức 2.2; luyện Bài luyện 12."
   },
   {
     "item_id": "THPT-TOP20-T15",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T15",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T15-D6-20261128",
     "stem": "Gieo một xúc xắc sáu mặt cân đối một lần. A=ra 1 và B=ra 6. A,B có xung khắc không? Có độc lập không?",
     "answer_key": "Xung khắc; không độc lập.",
     "worked_solution": "**Lời giải:** \\(A\\cap B=\\varnothing\\) nên xung khắc; \\(P(A)P(B)=\\frac1{36}>0\\) nhưng \\(P(A\\cap B)=0\\) nên **không độc lập**.\n\n**Kiểm lỗi**\n\nNếu viết “vì không xảy ra cùng nên độc lập”, em đã đảo khái niệm. Xung khắc là giao rỗng, độc lập cần kiểm tích xác suất. Ôn lại mục Kiến thức 2.2. Độc lập không phải xung khắc và Bài luyện 13 tại Luyện tập 2.3. Phân biệt xung khắc và độc lập.",
@@ -8981,11 +8981,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O13; luyện THPT-TOP20-P13."
+    "remediation": "Ôn Kiến thức 2.2; luyện Bài luyện 13."
   },
   {
     "item_id": "THPT-TOP20-T08",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T08",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T08-D6-20261128",
     "stem": "Gieo một xúc xắc sáu mặt cân đối. A là biến cố ra số lẻ, B là biến cố ra số lớn hơn 3. Tính \\(P(A\\cup B)\\) bằng quy tắc cộng.",
     "answer_key": "\\(\\frac56\\).",
     "worked_solution": "\\(A=\\{1,3,5\\}\\), \\(B=\\{4,5,6\\}\\), giao=\\(\\{5\\}\\); \\(P(A\\cup B)=\\frac36+\\frac36-\\frac16=\\frac56\\).\n\n**Kiểm lỗi**\n\nNếu ra 1, em đã cộng mà quên trừ kết quả 5 được đếm hai lần. Ôn lại mục Kiến thức 2.3. Quy tắc cộng xác suất và Bài luyện 14 tại Luyện tập 2.4. Áp dụng quy tắc cộng xác suất.",
@@ -9043,11 +9043,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O14; luyện THPT-TOP20-P14."
+    "remediation": "Ôn Kiến thức 2.3; luyện Bài luyện 14."
   },
   {
     "item_id": "THPT-TOP20-T16",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T16",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T16-D6-20261128",
     "stem": "Gieo một xúc xắc sáu mặt cân đối. \\(A=\\{1,2\\}\\), \\(B=\\{5,6\\}\\). Tính \\(P(A\\cup B)\\) và nêu vì sao cộng trực tiếp.",
     "answer_key": "\\(\\frac23\\).",
     "worked_solution": "**Lời giải:** Hai tập rời nhau nên \\(P(A\\cap B)=0\\), \\(P(A\\cup B)=\\frac26+\\frac26=\\frac46=\\frac23\\).\n\n**Kiểm lỗi**\n\nNếu tính \\(\\dfrac26\\cdot\\dfrac26=\\dfrac19\\), em đã dùng điều kiện độc lập khi chưa kiểm tra. Ở đây A, B xung khắc và đều có xác suất dương: giao có xác suất 0, không phải \\(\\dfrac19\\). Đề hỏi hợp nên cộng trực tiếp hai xác suất. Ôn lại mục Kiến thức 2.3. Quy tắc cộng xác suất và Bài luyện 15 tại Luyện tập 2.5. Quy tắc cộng khi hai biến cố xung khắc.",
@@ -9105,11 +9105,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O15; luyện THPT-TOP20-P15."
+    "remediation": "Ôn Kiến thức 2.3; luyện Bài luyện 15."
   },
   {
     "item_id": "THPT-TOP20-T09",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T09",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T09-D6-20261128",
     "stem": "Hai thiết bị hoạt động độc lập, xác suất hỏng lần lượt \\(\\frac{1}{5}\\) và \\(\\frac{1}{4}\\). Xác suất có ít nhất một thiết bị hoạt động là bao nhiêu?",
     "answer_key": "\\(\\frac{19}{20}\\).",
     "worked_solution": "\\(P=1-P(\\text{cả hai hỏng})=1-\\frac15\\cdot\\frac14=\\frac{19}{20}\\).\n\n**Kiểm lỗi**\n\nNếu nhân hai xác suất hoạt động \\(\\frac45\\cdot\\frac34\\), em đang tính cả hai hoạt động, không phải ít nhất một. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 16 tại Luyện tập 2.6. Quy tắc nhân cho hai phép thử độc lập.",
@@ -9167,11 +9167,11 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O16; luyện THPT-TOP20-P16."
+    "remediation": "Ôn Kiến thức 2.4; luyện Bài luyện 16."
   },
   {
     "item_id": "THPT-TOP20-T17",
-    "content_version": "CD20-BANK-20261127-THPT-TOP20-T17",
+    "content_version": "CD20-BANK-20261127-THPT-TOP20-T17-D6-20261128",
     "stem": "Tung đồng xu cân đối và gieo một xúc xắc sáu mặt cân đối độc lập. A=đồng xu ngửa, B=xúc xắc chẵn. Tính \\(P(A\\cup B)\\).",
     "answer_key": "\\(\\frac34\\).",
     "worked_solution": "**Lời giải:** \\(P(A)=\\frac12\\), \\(P(B)=\\frac12\\), \\(P(A\\cap B)=\\frac14\\). Vậy \\(P(A\\cup B)=\\frac12+\\frac12-\\frac14=\\frac34\\).\n\n**Kiểm lỗi**\n\nNếu được 1, em đã cộng mà chưa trừ phần **cả hai cùng xảy ra**; nếu được \\(\\frac{1}{4}\\) đó là giao, không phải hợp. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 17 tại Luyện tập 2.7. Tính xác suất hợp bằng cộng và trừ giao.",
@@ -9229,7 +9229,7 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Ôn phần Kiến thức của TOP20-O17; luyện THPT-TOP20-P17."
+    "remediation": "Ôn Kiến thức 2.4; luyện Bài luyện 17."
   },
   {
     "item_id": "THPT-TOP21-T01",
