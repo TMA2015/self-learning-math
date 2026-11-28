@@ -520,17 +520,17 @@ written_role: DEEP_ANCHOR (role tag only, not cloned canonical)
 problem_family_id: TOP10-INTERVAL_ENDPOINT_ABS
 difficulty_band: TRANSFER
 content_version: 1
-**Đề:** Cho f(x)=|x−1| trên [0,3]. (a) Chỉ ra f không khả vi tại x=1 nhưng vẫn là ứng viên. (b) Tìm GTLN/GTNN trên đoạn. (c) Xét lại trên miền mở (0,3) và cho biết có GTLN không, có GTNN không.
-**Đáp án:** [0,3]: max2 tại3, min0 tại1; (0,3): không có GTLN (sup2 không đạt), min0 tại1.
-**Lời giải đầy đủ:** f(x)=|x−1| có góc nhọn x=1 trong miền, tại đó đạo hàm trái −1, phải +1. Trên [0,3], so f(0)=1,f(1)=0,f(3)=2 nên max2 tại3,min0 tại1. Trên (0,3), x=3 bị loại và f(x)<2 với mọi x trong miền nhưng có thể tiến sát2 khi x→3⁻, nên không có GTLN; x=1 thuộc miền và f(1)=0, có GTNN0.
+**Đề:** Cho \(f(x)=\lvert x-1\rvert\) trên \([0;3]\). (a) Chỉ ra f không khả vi tại \(x=1\) nhưng vẫn là ứng viên. (b) Tìm GTLN/GTNN trên đoạn. (c) Xét lại trên miền mở \((0;3)\) và cho biết có GTLN không, có GTNN không.
+**Đáp án:** Trên \([0;3]\): GTLN 2 tại 3, GTNN 0 tại 1; trên \((0;3)\): không có GTLN (cận trên đúng 2 không đạt), GTNN 0 tại 1.
+**Lời giải đầy đủ:** \(f(x)=\lvert x-1\rvert\) có góc nhọn tại \(x=1\) trong miền, tại đó đạo hàm trái \(-1\), phải \(+1\). Trên \([0;3]\), so \(f(0)=1,\ f(1)=0,\ f(3)=2\) nên GTLN 2 tại 3, GTNN 0 tại 1. Trên \((0;3)\), \(x=3\) bị loại và \(f(x)<2\) với mọi x trong miền nhưng có thể tiến sát 2 khi \(x\to3^-\), nên không có GTLN; \(x=1\) thuộc miền và \(f(1)=0\), có GTNN 0.
 **Rubric /7 điểm:**
-1. Xác định điểm không khả vi1 (1đ)
+1. Xác định điểm không khả vi 1 (1đ)
 2. So giới hạn thương trái/phải đúng (1đ)
-3. Tính f(0)=1 (1đ)
-4. Tính f(1)=0,f(3)=2 (1đ)
-5. GTLN/GTNN trên [0,3] đúng (1đ)
-6. Miền (0,3) không đạt sup2 (1đ)
-7. Min0 vẫn đạt ở1 (1đ)
+3. Tính \(f(0)=1\) (1đ)
+4. Tính \(f(1)=0,\ f(3)=2\) (1đ)
+5. GTLN/GTNN trên \([0;3]\) đúng (1đ)
+6. Miền \((0;3)\) không đạt cận trên đúng 2 (1đ)
+7. GTNN 0 vẫn đạt ở 1 (1đ)
 **D6 khắc phục:** Điểm không khả vi vẫn là ứng viên; kiểm dấu ngoặc miền khi kết luận 'đạt'.
 
 ## THPT-TOP10-W03 · TOP10-O15
@@ -576,18 +576,18 @@ written_role: DEEP_ANCHOR (role tag only, not cloned canonical)
 problem_family_id: TOP10-CUBIC_FULL_SURVEY
 difficulty_band: TRANSFER
 content_version: 1
-**Đề:** Khảo sát f(x)=x³−3x trên ℝ: (a) D, f'. (b) khoảng tăng/giảm và cực trị. (c) giới hạn ở ±∞ và giao Ox. (d) phác thảo cấu trúc đồ thị theo bảng biến thiên, chỉ rõ có hay không GTLN/GTNN trên ℝ.
-**Đáp án:** D=ℝ; f'=3(x²−1), tăng (−∞,−1),(1,∞), giảm (−1,1); max cục bộ2 tại−1, min cục bộ−2 tại1; giao Ox −√3,0,√3; không GTLN/GTNN.
-**Lời giải đầy đủ:** D=ℝ. f'=3(x−1)(x+1), + ngoài [−1,1], − bên trong. Cực đại (-1,2), cực tiểu (1,−2). f=x(x²−3)=0 tại x=0,±√3. Khi x→−∞ f→−∞ và x→+∞ f→+∞ nên đồ thị đi lên, xuống, lại lên theo bảng biến thiên, không có max/min toàn ℝ. Điểm đối xứng tâm (0,0) vì f lẻ, có thể dùng kiểm hình.
+**Đề:** Khảo sát \(f(x)=x^3-3x\) trên \(\mathbb R\): (a) D, \(f'\). (b) Khoảng tăng/giảm và cực trị. (c) Giới hạn ở \(\pm\infty\) và giao Ox. (d) Phác thảo cấu trúc đồ thị theo bảng biến thiên, chỉ rõ có hay không GTLN/GTNN trên \(\mathbb R\).
+**Đáp án:** \(D=\mathbb R\); \(f'=3(x^2-1)\), tăng trên \((-\infty;-1)\), \((1;+\infty)\), giảm trên \((-1;1)\); cực đại địa phương 2 tại \(-1\), cực tiểu địa phương \(-2\) tại 1; giao Ox tại các hoành độ \(-\sqrt3,\ 0,\ \sqrt3\); không có GTLN/GTNN.
+**Lời giải đầy đủ:** \(D=\mathbb R\). \(f'=3(x-1)(x+1)\), dương ngoài \([-1;1]\), âm bên trong. Điểm cực đại \((-1;2)\), điểm cực tiểu \((1;-2)\). \(f(x)=x(x^2-3)=0\) tại \(x=0,\ \pm\sqrt3\). Khi \(x\to-\infty\), \(f\to-\infty\) và khi \(x\to+\infty\), \(f\to+\infty\), nên đồ thị đi lên, xuống, lại lên theo bảng biến thiên, không có GTLN/GTNN trên toàn \(\mathbb R\). Tâm đối xứng \((0;0)\) vì f lẻ, có thể dùng kiểm hình.
 **Rubric /7 điểm:**
-1. D=ℝ và đạo hàm (1đ)
-2. Giải nghiệm f'=0 ±1 (1đ)
+1. \(D=\mathbb R\) và đạo hàm (1đ)
+2. Giải \(f'=0\), nghiệm \(\pm1\) (1đ)
 3. Xét dấu và khoảng tăng/giảm (1đ)
-4. Cực đại (−1,2), cực tiểu (1,−2) (1đ)
-5. Giới hạn ở ±∞ (1đ)
+4. Cực đại \((-1;2)\), cực tiểu \((1;-2)\) (1đ)
+5. Giới hạn ở \(\pm\infty\) (1đ)
 6. Giao Ox chính xác (1đ)
-7. Kết luận đồ thị và không max/min toàn ℝ (1đ)
-**D6 khắc phục:** Đủ miền/dấu/cực trị/biên/giao trục, không chỉ phương trình f'=0.
+7. Kết luận đồ thị và không có GTLN/GTNN trên toàn \(\mathbb R\) (1đ)
+**D6 khắc phục:** Đủ miền/dấu/cực trị/biên/giao trục, không chỉ phương trình \(f'=0\).
 
 ## THPT-TOP10-W05 · TOP10-O30
 
@@ -598,18 +598,18 @@ written_role: DEEP_ANCHOR (role tag only, not cloned canonical)
 problem_family_id: TOP10-BOX_VOLUME_OPTIMUM
 difficulty_band: TRANSFER
 content_version: 1
-**Đề:** Tấm bìa hình vuông cạnh 12 cm. Cắt bốn hình vuông cạnh x cm (0<x<6) ở bốn góc và gấp hộp không nắp. (a) Lập V(x) và miền. (b) Tính V'. (c) Tìm x làm thể tích lớn nhất, tính Vmax. (d) Kiểm hai biên x→0⁺,x→6⁻ và giải thích vì sao không nhận các biên.
-**Đáp án:** V=x(12−2x)² cm³; V'=12(x−2)(x−6); x=2 cm, Vmax128 cm³; hai biên thể tích→0 nhưng không thuộc miền.
-**Lời giải đầy đủ:** Đáy có cạnh 12−2x>0 và chiều cao x>0 ⇒ 0<x<6. V=x(12−2x)²=144x−48x²+4x³; V'=144−96x+12x²=12(x−2)(x−6). Trên (0,2), V'>0; (2,6), V'<0 ⇒ max tại x=2. V(2)=2·8²=128 cm³. Khi x→0⁺ hoặc6⁻, thể tích→0, biên không cho hộp hợp lệ. Không lấy nghiệm6 làm cực trị trong miền, vì x=6 làm đáy0.
+**Đề:** Tấm bìa hình vuông cạnh 12 cm. Cắt bốn hình vuông cạnh x cm (\(0<x<6\)) ở bốn góc và gấp hộp không nắp. (a) Lập \(V(x)\) và miền. (b) Tính \(V'\). (c) Tìm x làm thể tích lớn nhất, tính \(V_{\max}\). (d) Kiểm hai biên \(x\to0^+,\ x\to6^-\) và giải thích vì sao không nhận các biên.
+**Đáp án:** \(V=x(12-2x)^2\) cm³; \(V'=12(x-2)(x-6)\); \(x=2\) cm, \(V_{\max}=128\) cm³; ở hai biên thể tích tiến tới 0 nhưng biên không thuộc miền.
+**Lời giải đầy đủ:** Đáy có cạnh \(12-2x>0\) và chiều cao \(x>0\), suy ra \(0<x<6\). \(V=x(12-2x)^2=144x-48x^2+4x^3\); \(V'=144-96x+12x^2=12(x-2)(x-6)\). Trên \((0;2)\), \(V'>0\); trên \((2;6)\), \(V'<0\), nên thể tích lớn nhất tại \(x=2\). \(V(2)=2\cdot8^2=128\) cm³. Khi \(x\to0^+\) hoặc \(x\to6^-\), thể tích tiến tới 0, biên không cho hộp hợp lệ. Không lấy nghiệm 6 làm cực trị trong miền, vì \(x=6\) làm cạnh đáy bằng 0.
 **Rubric /7 điểm:**
-1. Miền 0<x<6 và lý do (1đ)
-2. V=x(12−2x)² và đơn vị (1đ)
-3. Tính V' chính xác (1đ)
-4. Giải nghiệm x=2,6 và loại6 (1đ)
-5. Bảng dấu V' và max x=2 (1đ)
-6. Tính Vmax128 cm³ (1đ)
+1. Miền \(0<x<6\) và lý do (1đ)
+2. \(V=x(12-2x)^2\) và đơn vị (1đ)
+3. Tính \(V'\) chính xác (1đ)
+4. Giải nghiệm \(x=2,\ 6\) và loại 6 (1đ)
+5. Bảng dấu \(V'\) và thể tích lớn nhất tại \(x=2\) (1đ)
+6. Tính \(V_{\max}=128\) cm³ (1đ)
 7. Kiểm hai giới hạn biên và giả thiết hộp (1đ)
-**D6 khắc phục:** Đừng bỏ điều kiện đáy dương, và chỉ chọn điểm nội miền x=2 làm tối ưu.
+**D6 khắc phục:** Đừng bỏ điều kiện đáy dương, và chỉ chọn điểm nội miền \(x=2\) làm tối ưu.
 
 ## THPT-TOP10-W06 · TOP10-O35
 
@@ -620,16 +620,16 @@ written_role: DEEP_ANCHOR (role tag only, not cloned canonical)
 problem_family_id: TOP10-INTEGER_PROFIT_OPTIMUM
 difficulty_band: TRANSFER
 content_version: 1
-**Đề:** Giả sử doanh thu R(q)=12q và chi phí C(q)=q²+2q+5 (nghìn đồng) với q số sản phẩm nguyên, 0≤q≤8. (a) Lập lợi nhuận P. (b) Tối ưu bản liên tục trên [0,8], kiểm biên. (c) Quyết định q nguyên tối ưu. (d) Diễn giải chi phí cận biên C'(q) không bằng ngay tối ưu P.
-**Đáp án:** P=−q²+10q−5; tối đa20 nghìn đồng tại q=5; C'(5)=12 nghìn đồng/sản phẩm và không bằng0.
-**Lời giải đầy đủ:** P=R−C=12q−(q²+2q+5)=−q²+10q−5, P'=−2q+10=0⇒q=5, P''=−2<0. P(0)=−5, P(5)=20, P(8)=11, nên GTLN20 ở5. Vì q=5 là số nguyên hợp lệ, vẫn tối ưu trong tập q nguyên. C'(q)=2q+2, C'(5)=12 khác0: mục tiêu tối ưu là lợi nhuận, không tối ưu riêng chi phí. Mô hình số liệu là giả định, không phải dữ liệu thực đo.
+**Đề:** Giả sử doanh thu \(R(q)=12q\) và chi phí \(C(q)=q^2+2q+5\) (nghìn đồng) với q là số sản phẩm nguyên, \(0\le q\le8\). (a) Lập lợi nhuận P. (b) Tối ưu bản liên tục trên \([0;8]\), kiểm biên. (c) Quyết định q nguyên tối ưu. (d) Diễn giải chi phí cận biên \(C'(q)\) không bằng ngay tối ưu P.
+**Đáp án:** \(P=-q^2+10q-5\); tối đa 20 nghìn đồng tại \(q=5\); \(C'(5)=12\) nghìn đồng/sản phẩm và không bằng 0.
+**Lời giải đầy đủ:** \(P=R-C=12q-(q^2+2q+5)=-q^2+10q-5\), \(P'=-2q+10=0\Rightarrow q=5\), \(P''=-2<0\). \(P(0)=-5,\ P(5)=20,\ P(8)=11\), nên GTLN 20 ở 5. Vì \(q=5\) là số nguyên hợp lệ, vẫn tối ưu trong tập q nguyên. \(C'(q)=2q+2\), \(C'(5)=12\) khác 0: mục tiêu tối ưu là lợi nhuận, không tối ưu riêng chi phí. Mô hình số liệu là giả định, không phải dữ liệu thực đo.
 **Rubric /7 điểm:**
-1. Lập P=R−C đúng (1đ)
-2. Tính P' và nghiệm5 (1đ)
-3. Nêu P'' âm hoặc dấu đổi (1đ)
-4. So P tại 0,5,8 (1đ)
-5. Quyết định q=5 nguyên khả thi (1đ)
-6. Tính C'(5)=12 và phân biệt mục tiêu (1đ)
+1. Lập \(P=R-C\) đúng (1đ)
+2. Tính \(P'\) và nghiệm 5 (1đ)
+3. Nêu \(P''\) âm hoặc dấu đổi (1đ)
+4. So P tại 0, 5, 8 (1đ)
+5. Quyết định \(q=5\) nguyên khả thi (1đ)
+6. Tính \(C'(5)=12\) và phân biệt mục tiêu (1đ)
 7. Nêu đơn vị và giả định mô hình (1đ)
 **D6 khắc phục:** Không tối ưu C thay cho P và không chọn q không nguyên khi q là số sản phẩm.
 
