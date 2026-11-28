@@ -185,7 +185,7 @@
 
     **Phân tích:** Trước khi so đối số, giải đồng thời \(x+1>0\) và \(x^2-1>0\), rồi loại nghiệm đại số ngoài miền.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Ví dụ 3.4 có lời giải"><p><strong>Lời giải.</strong> Miền xác định \(x>1\). Khi đó \(x+1=x^2-1\), tức \((x-2)(x+1)=0\). Hai nghiệm đại số \(2,-1\), chỉ \(x=2\) thỏa \(x>1\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Ví dụ 3.4 có lời giải"><p><strong>Lời giải.</strong> Miền xác định \(x>1\). Khi đó \(x+1=x^2-1\), tức \(x^2-x-2=0\), hay \((x-2)(x+1)=0\). Hai nghiệm đại số \(2,-1\), chỉ \(x=2\) thỏa \(x>1\); tại \(x=-1\), cả hai đối số bằng 0 nên lôgarit không xác định.</p></div>
 
     **Kiểm lại:** Tại \(x=2\), hai đối số bằng 3; tại \(x=-1\), một đối số bằng 0 nên log gốc không xác định.
 
@@ -205,7 +205,7 @@
 
     **Phân tích:** Vì \(0<0{,}905<1\), hàm \(V(t)\) giảm, nên khi so với ngưỡng \(5/13\) cần đảo chiều lúc lấy log cùng cơ số.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Ví dụ 3.6 có lời giải"><p><strong>Lời giải.</strong> \(V(t)\le300\Longleftrightarrow(0{,}905)^t\le5/13\Longleftrightarrow t\ge\log_{0{,}905}(5/13)=\frac{\ln(5/13)}{\ln(0{,}905)}\approx9{,}57\) năm. Nếu \(t\) phải là số nguyên không âm, mốc nhỏ nhất là \(t=10\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Ví dụ 3.6 có lời giải"><p><strong>Lời giải.</strong> \(V(t)\le300\Longleftrightarrow(0{,}905)^t\le5/13\Longleftrightarrow t\ge\log_{0{,}905}(5/13)=\frac{\ln(5/13)}{\ln(0{,}905)}\approx9{,}57\) năm. Nếu \(t\) phải là số nguyên không âm, mốc nhỏ nhất là \(t=10\). Kiểm bằng mô hình: \(780(0{,}905)^9>300\) nhưng \(780(0{,}905)^{10}<300\). Số \(9{,}57\) chỉ là gần đúng của ngưỡng log chính xác.</p></div>
 
     **Kiểm lại:** 9 năm chưa đạt ngưỡng, 10 năm đã không quá 300 triệu. Kết quả thuộc mô hình khấu hao cố định, không phải giá bán thực tế.
 
@@ -273,7 +273,7 @@
 
     ### 4.6. Làm tròn thời gian mà bỏ điều kiện ngưỡng
 
-    **Dấu hiệu:** Từ \(t\ge9{,}57\) kết luận 9 năm trọn vẹn đủ, hoặc coi mô hình dự báo chắc chắn giá trị xe sau 10 năm.
+    **Dấu hiệu:** Từ ngưỡng chính xác \(t\ge\log_{0{,}905}(5/13)\) (xấp xỉ 9,57 năm) kết luận 9 năm trọn vẹn đủ, hoặc coi mô hình dự báo chắc chắn giá trị xe sau 10 năm.
 
     **Vì sao sai:** Nếu thời gian tính theo năm nguyên, phải chọn **số nguyên đầu tiên thỏa** là 10; mô hình còn giả định tốc độ khấu hao không đổi.
 

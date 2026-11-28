@@ -130,7 +130,7 @@
 
     ### 2.3. Tứ phân vị của mẫu số liệu ghép nhóm
 
-    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tứ phân vị thứ nhất và thứ ba</strong><p>Với vị trí mục tiêu \(v=n/4\) hoặc \(v=3n/4\), hãy xác định nhóm chứa vị trí ấy; gọi đầu mút trái \(L\), tần số trước nhóm \(C\), tần số nhóm \(m>0\), độ dài \(h>0\). Khi đó \(Q_1=L+\dfrac{n/4-C}{m}h\) và \(Q_3=L+\dfrac{3n/4-C}{m}h\), **mỗi công thức dùng \(L,C,m,h\) của đúng nhóm chứa phân vị tương ứng**.</p><p>\(Q_2=M_e\) là trung vị ghép nhóm.</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tứ phân vị thứ nhất và thứ ba</strong><p>Với vị trí mục tiêu \(v=n/4\) hoặc \(v=3n/4\), hãy xác định nhóm chứa vị trí ấy; gọi đầu mút trái \(L\), tổng tần số của tất cả các nhóm đứng trước \(C\), tần số nhóm \(m>0\), độ dài \(h>0\). Khi đó \(Q_1=L+\dfrac{n/4-C}{m}h\) và \(Q_3=L+\dfrac{3n/4-C}{m}h\), **mỗi công thức dùng \(L,C,m,h\) của đúng nhóm chứa phân vị tương ứng**.</p><p>\(Q_2=M_e\) là trung vị ghép nhóm.</p></div>
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B09-02_R01.svg" alt="Trục giá trị có Q1 bằng 11,25; Me bằng 17,5 và Q3 bằng 25"><figcaption><strong>Tra hình:</strong> bảng A có \(Q_1\approx11{,}25\), \(Q_2=M_e\approx17{,}5\), \(Q_3\approx25\); các điểm nội suy **không phục hồi** dữ liệu gốc.</figcaption></figure>
 

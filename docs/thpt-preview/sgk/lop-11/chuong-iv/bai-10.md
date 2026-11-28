@@ -50,7 +50,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** \(G\in BN\subset(SBN)\), \(G\in CM\subset(SCM)\), trong khi \(S\) thuộc cả hai. Vì \(S\notin(ABC)\), \(G\in(ABC)\), hai điểm phân biệt. Hai mặt phẳng cũng phân biệt, nên giao tuyến là \(SG\).
+        **Lời giải:** \(G\in BN\subset(SBN)\), \(G\in CM\subset(SCM)\), trong khi \(S\) thuộc cả hai. Vì \(S\notin(ABC)\), \(G\in(ABC)\), hai điểm phân biệt. Nếu hai mặt trùng nhau thì mặt chung chứa hai trung tuyến cắt nhau \(BN,CM\), nên là \((ABC)\), trái với \(S\notin(ABC)\). Vậy hai mặt phân biệt, giao tuyến là \(SG\).
 
     ??? tip "Kiểm lỗi"
 
@@ -178,7 +178,7 @@
 
     **Phân tích:** Trong mặt phẳng \(ABC\), hai trung tuyến \(BN,CM\) cắt ở \(G\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(G\in BN\subset(SBN)\) và \(G\in CM\subset(SCM)\), nên \(G\) là điểm chung thứ hai ngoài \(S\). Vì \(S\notin(ABC)\), \(G\in(ABC)\), ta có \(G\ne S\); giao tuyến là \(SG\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(G\in BN\subset(SBN)\) và \(G\in CM\subset(SCM)\), nên \(G\) là điểm chung thứ hai ngoài \(S\). Vì \(S\notin(ABC)\), \(G\in(ABC)\), ta có \(G\ne S\). Nếu hai mặt trùng nhau thì mặt chung chứa hai đường cắt nhau \(BN,CM\) trong đáy, nên là \((ABC)\), trái với \(S\notin(ABC)\). Vậy giao tuyến là \(SG\).</p></div>
 
     **Kiểm lại:** Nếu chưa chứng minh \(G\) thuộc **cả hai mặt**, bài giải chưa đủ.
 

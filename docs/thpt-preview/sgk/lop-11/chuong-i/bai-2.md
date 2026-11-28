@@ -59,6 +59,8 @@
     \end{aligned}
     \]
 
+    Ở dòng cuối dùng \(\cos(\pi/2-a)=\sin a\) và \(\sin(\pi/2-a)=\cos a\) (quan hệ góc phụ ở Bài 1).
+
     Thay \(b\) bằng \(-b\) cho công thức hiệu. Ta có
 
     \[

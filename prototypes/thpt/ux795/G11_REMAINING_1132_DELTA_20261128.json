@@ -9,6 +9,11 @@
           "before": "hai đồ thị ở mục 5, 6.",
           "after": "hai đồ thị ở mục 1.5 (Hàm số tang) và 1.6 (Hàm số côtang).",
           "count": 1
+        },
+        {
+          "before": "trái với việc sin có chu kì nhỏ nhất",
+          "after": "trái với kết quả về chu kì nhỏ nhất của sin (xem đồ thị và giải thích ở mục 1.3):",
+          "count": 1
         }
       ]
     },
@@ -105,6 +110,11 @@
           "before": "SGK dùng hai chênh lệch tần số với nhóm lân cận để ước lượng một vị trí bên trong nhóm.",
           "after": "SGK dùng hai chênh lệch tần số với nhóm lân cận để ước lượng một vị trí bên trong nhóm. Nếu hai nhóm kề có tần số bằng nhau, ước lượng nằm ở giữa nhóm chứa mốt; nếu nhóm bên phải có tần số cao hơn bên trái, ước lượng lệch về bên phải.",
           "count": 1
+        },
+        {
+          "before": "tần số trước nhóm \\(C\\)",
+          "after": "tổng tần số của tất cả các nhóm đứng trước \\(C\\)",
+          "count": 1
         }
       ]
     },
@@ -125,6 +135,16 @@
         {
           "before": "Điểm \\(N\\) có thể cần dựng trên **đường thẳng kéo dài**, không giới hạn ở đoạn nhìn thấy; mỗi bước phải có chứng cứ điểm thuộc mặt.",
           "after": "Trong bài này \\(N\\) nằm trên cạnh \\(AM\\) nhờ giả thiết điểm trong tam giác. Ở bài khác có thể cần kéo dài đường thẳng; mỗi bước phải có chứng cứ điểm thuộc mặt.",
+          "count": 1
+        },
+        {
+          "before": "Hai mặt phẳng cũng phân biệt, nên giao tuyến là",
+          "after": "Nếu hai mặt trùng nhau thì mặt chung chứa hai trung tuyến cắt nhau \\(BN,CM\\), nên là \\((ABC)\\), trái với \\(S\\notin(ABC)\\). Vậy hai mặt phân biệt, giao tuyến là",
+          "count": 1
+        },
+        {
+          "before": "ta có \\(G\\ne S\\); giao tuyến là \\(SG\\).",
+          "after": "ta có \\(G\\ne S\\). Nếu hai mặt trùng nhau thì mặt chung chứa hai đường cắt nhau \\(BN,CM\\) trong đáy, nên là \\((ABC)\\), trái với \\(S\\notin(ABC)\\). Vậy giao tuyến là \\(SG\\).",
           "count": 1
         }
       ]
@@ -185,6 +205,11 @@
           "before": "khi \\(n\\ge N\\), \\(1/n^2<\\varepsilon\\).",
           "after": "khi \\(n\\ge N>1/\\sqrt\\varepsilon\\), ta có \\(n^2>1/\\varepsilon\\), nên \\(1/n^2<\\varepsilon\\).",
           "count": 1
+        },
+        {
+          "before": "mọi \\(n\\ge N\\) đều có \\(|u_n|<\\varepsilon\\).</p>",
+          "after": "mọi \\(n\\ge N\\) đều có \\(|u_n|<\\varepsilon\\). Ví dụ với \\(u_n=1/n\\), chọn \\(\\varepsilon=0{,}01\\) thì \\(N=101\\) là một chỉ số thỏa mãn.</p>",
+          "count": 1
         }
       ]
     },
@@ -222,6 +247,26 @@
         {
           "before": "trước khi dùng tính đơn ánh.",
           "after": "trước khi dùng tính đơn ánh (hai đối số dương khác nhau không thể có cùng lôgarit).",
+          "count": 1
+        },
+        {
+          "before": "\\(x+1=x^2-1\\), tức \\((x-2)(x+1)=0\\).",
+          "after": "\\(x+1=x^2-1\\), tức \\(x^2-x-2=0\\), hay \\((x-2)(x+1)=0\\).",
+          "count": 1
+        },
+        {
+          "before": "chỉ \\(x=2\\) thỏa \\(x>1\\).",
+          "after": "chỉ \\(x=2\\) thỏa \\(x>1\\); tại \\(x=-1\\), cả hai đối số bằng 0 nên lôgarit không xác định.",
+          "count": 1
+        },
+        {
+          "before": "mốc nhỏ nhất là \\(t=10\\).",
+          "after": "mốc nhỏ nhất là \\(t=10\\). Kiểm bằng mô hình: \\(780(0{,}905)^9>300\\) nhưng \\(780(0{,}905)^{10}<300\\). Số \\(9{,}57\\) chỉ là gần đúng của ngưỡng log chính xác.",
+          "count": 1
+        },
+        {
+          "before": "Từ \\(t\\ge9{,}57\\) kết luận 9 năm trọn vẹn đủ",
+          "after": "Từ ngưỡng chính xác \\(t\\ge\\log_{0{,}905}(5/13)\\) (xấp xỉ 9,57 năm) kết luận 9 năm trọn vẹn đủ",
           "count": 1
         }
       ]
@@ -265,6 +310,11 @@
           "before": "Để hai hệ số bằng \\(5\\), ta có",
           "after": "Thay \\(t=0\\) cho \\(k\\sin\\varphi=5\\); thay \\(t=\\pi/2\\) cho \\(k\\cos\\varphi=5\\). Hai điều kiện cũng đủ để biểu thức khai triển trùng với tín hiệu gốc ở mọi \\(t\\). Bình phương và cộng, ta có",
           "count": 1
+        },
+        {
+          "before": "    &=\\sin a\\cos b+\\cos a\\sin b.\n    \\end{aligned}\n    \\]",
+          "after": "    &=\\sin a\\cos b+\\cos a\\sin b.\n    \\end{aligned}\n    \\]\n\n    Ở dòng cuối dùng \\(\\cos(\\pi/2-a)=\\sin a\\) và \\(\\sin(\\pi/2-a)=\\cos a\\) (quan hệ góc phụ ở Bài 1).",
+          "count": 1
         }
       ]
     },
@@ -280,6 +330,16 @@
         {
           "before": "Hai đường \\(MN,NP\\) cắt nhau tại \\(N\\), đều song song \\((ABCD)\\),",
           "after": "Vì \\(M,N,P\\) nằm giữa các cạnh bên nên không thuộc đáy; kết hợp hai quan hệ song song với các cạnh đáy, theo dấu hiệu Bài 12 suy ra \\(MN,NP\\) song song \\((ABCD)\\). Hai đường này cắt nhau tại \\(N\\),",
+          "count": 1
+        },
+        {
+          "before": "đều ở ngoài đáy và song song mặt đáy;",
+          "after": "đều không nằm trong đáy vì \\(M,N,P\\) là trung điểm các cạnh bên. Theo dấu hiệu ở Bài 12, từ các quan hệ song song với cạnh đáy suy ra chúng song song mặt đáy;",
+          "count": 1
+        },
+        {
+          "before": "Tương tự \\(NP\\parallel BC\\), \\(PQ\\parallel CD\\) và \\(NP,PQ\\) cắt ở \\(P\\),",
+          "after": "Tương tự \\(PQ\\parallel CD\\), \\(P,Q\\) không thuộc đáy nên \\(PQ\\parallel(ABCD)\\). Vì \\(NP,PQ\\) cắt ở \\(P\\),",
           "count": 1
         }
       ]
@@ -323,6 +383,11 @@
         {
           "before": "không làm tròn số năm về gần nhất.",
           "after": "không làm tròn số năm về gần nhất. Ví dụ nếu ngưỡng là 6,2 năm thì làm tròn gần nhất được 6, nhưng 6 không đủ điều kiện: phải chọn 7.",
+          "count": 1
+        },
+        {
+          "before": "giá trị nhỏ nhất là \\(n=7\\) năm.",
+          "after": "giá trị nhỏ nhất là \\(n=7\\) năm. Kiểm hai mốc bằng công thức gốc: \\(100(1{,}06)^6<150\\), còn \\(100(1{,}06)^7\\ge150\\).",
           "count": 1
         }
       ]
@@ -382,6 +447,11 @@
         {
           "before": "là hợp lí vì \\(A\\) là một điểm khác \\(O\\) trên mặt \\((SAC)\\), không phải điểm thuộc \\(BD\\).",
           "after": "vì \\(O\\) là trung điểm \\(AC\\). Nếu \\(K\\) là hình chiếu của \\(A\\) lên \\(SC\\), thì \\(OH\\parallel AK\\), nên \\(OH=AK/2\\) theo định lí đường trung bình.",
+          "count": 1
+        },
+        {
+          "before": "\\(AO\\perp(BDD'B')\\); do đó \\(d(AA',(BDD'B'))=AO=a/2=4\\) cm.",
+          "after": "\\(AO\\perp(BDD'B')\\). Vì \\(AA'\\parallel BB'\\subset(BDD'B')\\) và \\(A\\notin(BDD'B')\\) (giao với đáy là \\(BD\\)), nên \\(AA'\\parallel(BDD'B')\\); do đó \\(d(AA',(BDD'B'))=AO=a/2=4\\) cm.",
           "count": 1
         }
       ]
@@ -545,6 +615,11 @@
         {
           "before": "Hệ số \\(\\sqrt{SS'}\\) là do",
           "after": "Các bước biến đổi dùng \\(1-k^3=(1-k)(1+k+k^2)\\), \\(H=h/(1-k)\\), \\(Sk^2=S'\\) và \\(Sk=\\sqrt{SS'}\\) (vì \\(k>0\\)). Hệ số \\(\\sqrt{SS'}\\) là do",
+          "count": 1
+        },
+        {
+          "before": "Gọi \\(T\\) là đỉnh chóp lớn, \\(A'=(T+A)/2\\), \\(B'=(T+B)/2\\), \\(C'=(T+C)/2\\) theo quan hệ chia đôi trên các cạnh bên (hiểu các điểm như vectơ vị trí). Vì \\(B_1=(A+B)/2\\), \\(C_1=(A+C)/2\\), nên \\(\\overrightarrow{AA'}=\\overrightarrow{B_1B'}=\\overrightarrow{C_1C'}=(\\overrightarrow{AT})/2\\).",
+          "after": "Gọi \\(T\\) là đỉnh chóp lớn. Vì tỉ số cạnh đáy là \\(1/2\\), \\(A',B',C'\\) là trung điểm \\(TA,TB,TC\\). Theo định lí đường trung bình trong tam giác \\(TAB\\), \\(B_1B'\\parallel AT\\) và \\(B_1B'=AT/2\\); tương tự trong tam giác \\(TAC\\), \\(C_1C'\\parallel AT\\) và \\(C_1C'=AT/2\\). Đoạn \\(AA'\\) cũng bằng \\(AT/2\\), nên ba cạnh bên song song và bằng nhau.",
           "count": 1
         }
       ]

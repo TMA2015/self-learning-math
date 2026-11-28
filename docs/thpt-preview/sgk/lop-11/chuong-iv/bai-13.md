@@ -54,7 +54,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** \(MN\parallel AB\) và \(NP\parallel BC\) do là đường trung bình các tam giác \(SAB,SBC\). Hai đường \(MN,NP\) cắt tại \(N\), đều ở ngoài đáy và song song mặt đáy; do đó \((MNP)\parallel(ABCD)\). Tương tự \((NPQ)\parallel(ABCD)\). Hai mặt ấy có điểm chung \(N\) và cùng song song đáy, theo tính duy nhất **trùng nhau**; suy ra bốn điểm \(M,N,P,Q\) đồng phẳng.
+        **Lời giải:** \(MN\parallel AB\) và \(NP\parallel BC\) do là đường trung bình các tam giác \(SAB,SBC\). Hai đường \(MN,NP\) cắt tại \(N\), đều không nằm trong đáy vì \(M,N,P\) là trung điểm các cạnh bên. Theo dấu hiệu ở Bài 12, từ các quan hệ song song với cạnh đáy suy ra chúng song song mặt đáy; do đó \((MNP)\parallel(ABCD)\). Tương tự \((NPQ)\parallel(ABCD)\). Hai mặt ấy có điểm chung \(N\) và cùng song song đáy, theo tính duy nhất **trùng nhau**; suy ra bốn điểm \(M,N,P,Q\) đồng phẳng.
 
     ??? tip "Kiểm lỗi"
 
@@ -184,7 +184,7 @@
 
     **Phân tích:** Tìm hai đường trung bình cắt nhau trong \((MNP)\) để dùng dấu hiệu; sau đó dùng tính duy nhất mặt song song qua điểm \(N\) hoặc \(P\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(MN\parallel AB\), \(NP\parallel BC\). Vì \(M,N,P\) nằm giữa các cạnh bên nên không thuộc đáy; kết hợp hai quan hệ song song với các cạnh đáy, theo dấu hiệu Bài 12 suy ra \(MN,NP\) song song \((ABCD)\). Hai đường này cắt nhau tại \(N\), nên \((MNP)\parallel(ABCD)\). Tương tự \(NP\parallel BC\), \(PQ\parallel CD\) và \(NP,PQ\) cắt ở \(P\), nên \((NPQ)\parallel(ABCD)\). Hai mặt \((MNP)\), \((NPQ)\) cùng chứa \(P,N\) và cùng song song đáy, bởi tính duy nhất chúng trùng nhau. Do đó \(Q\in(MNP)\), tức bốn điểm đồng phẳng.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(MN\parallel AB\), \(NP\parallel BC\). Vì \(M,N,P\) nằm giữa các cạnh bên nên không thuộc đáy; kết hợp hai quan hệ song song với các cạnh đáy, theo dấu hiệu Bài 12 suy ra \(MN,NP\) song song \((ABCD)\). Hai đường này cắt nhau tại \(N\), nên \((MNP)\parallel(ABCD)\). Tương tự \(PQ\parallel CD\), \(P,Q\) không thuộc đáy nên \(PQ\parallel(ABCD)\). Vì \(NP,PQ\) cắt ở \(P\), nên \((NPQ)\parallel(ABCD)\). Hai mặt \((MNP)\), \((NPQ)\) cùng chứa \(P,N\) và cùng song song đáy, bởi tính duy nhất chúng trùng nhau. Do đó \(Q\in(MNP)\), tức bốn điểm đồng phẳng.</p></div>
 
     **Kiểm lại:** \(MN,NP\) là hai đường phân biệt cắt nhau; các điểm trung điểm không thuộc đáy, nên các đường trung bình song song đáy chứ không nằm trong đáy.
 

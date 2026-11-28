@@ -84,7 +84,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Vì hai đáy song song và \(AA'\perp(ABCD)\), \(d(A'C',(ABCD))=h=6\) cm. Gọi \(O\) là tâm hình thoi. Từ \(AO\perp BD\) và \(AO\perp BB'\) suy \(AO\perp(BDD'B')\); do đó \(d(AA',(BDD'B'))=AO=a/2=4\) cm.
+        **Lời giải:** Vì hai đáy song song và \(AA'\perp(ABCD)\), \(d(A'C',(ABCD))=h=6\) cm. Gọi \(O\) là tâm hình thoi. Từ \(AO\perp BD\) và \(AO\perp BB'\) suy \(AO\perp(BDD'B')\). Vì \(AA'\parallel BB'\subset(BDD'B')\) và \(A\notin(BDD'B')\) (giao với đáy là \(BD\)), nên \(AA'\parallel(BDD'B')\); do đó \(d(AA',(BDD'B'))=AO=a/2=4\) cm.
 
     ??? tip "Kiểm lỗi"
 
