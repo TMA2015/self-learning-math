@@ -136,19 +136,19 @@ Một bản vẽ trên giấy có thể cho cảm giác hai đường cắt nhau
 
 #### THPT-G11-CHIV-B10-W01 · WRITTEN
 
-**Đề:** Trong tứ diện S.ABC, M∈SA, N∈SB, K∈SC là ba điểm trong cạnh. Tìm giao tuyến của (SMN) và (SBC); rồi cho biết thiết diện (MNK) của tứ diện.
+**Đề:** Trong tứ diện S.ABC, \(M\in SA,\ N\in SB,\ K\in SC\) là ba điểm trong cạnh. Tìm giao tuyến của \((SMN)\) và \((SBC)\); rồi cho biết thiết diện \((MNK)\) của tứ diện.
 
-**Đáp án và lời giải:** Do M∈SA,N∈SB nên (SMN)=(SAB); giao (SAB)∩(SBC)=SB. Thiết diện (MNK) là tam giác MNK; giao với (SAB),(SBC),(SAC) lần lượt MN,NK,KM.
+**Đáp án và lời giải:** Do \(M\in SA,\ N\in SB\) nên \((SMN)=(SAB)\); giao \((SAB)\cap(SBC)=SB\). Thiết diện (MNK) là tam giác MNK; giao với \((SAB),(SBC),(SAC)\) lần lượt MN,NK,KM.
 
 **Rubric 4 điểm:**
-1. Xác định (SMN)=(SAB) — 1 điểm.
+1. Xác định \((SMN)=(SAB)\) — 1 điểm.
 2. Tìm hai điểm chung S,B và giao tuyến SB — 1 điểm.
 3. Liệt kê đúng ba đoạn giao trên các mặt — 1 điểm.
 4. Kết luận tam giác và điều kiện điểm trong cạnh — 1 điểm.
 
 #### THPT-G11-CHIV-B10-W02-ANCHOR · WRITTEN (ANCHOR TAG)
 
-**Đề:** Cho tứ diện S.ABC và P∈AB (khác A,B). Mặt phẳng (SCP) cắt tứ diện theo thiết diện nào? Giải thích từng cạnh của thiết diện.
+**Đề:** Cho tứ diện S.ABC và \(P\in AB\) (khác A,B). Mặt phẳng (SCP) cắt tứ diện theo thiết diện nào? Giải thích từng cạnh của thiết diện.
 
 **Đáp án và lời giải:** Mặt (SCP) qua S,C,P; nó cắt mặt đáy (ABC) theo CP, cắt (SAB) theo SP và chứa SC; do P trong AB, thiết diện tam giác SCP.
 
@@ -277,9 +277,9 @@ Qua điểm $M$ ngoài đường $a$ có duy nhất một đường qua $M$ song
 
 #### THPT-G11-CHIV-B11-W01 · WRITTEN
 
-**Đề:** Trong tứ diện S.ABC, M,N lần lượt là trung điểm SA và SB. (a) Chứng minh MN∥AB. (b) SA và BC song song hay chéo nhau?
+**Đề:** Trong tứ diện S.ABC, M,N lần lượt là trung điểm SA và SB. (a) Chứng minh \(MN\parallel AB\). (b) SA và BC song song hay chéo nhau?
 
-**Đáp án và lời giải:** (a) M,N ở tam giác SAB nên MN là đường trung bình, MN∥AB. (b) SA và BC là hai cạnh đối tứ diện, không đồng phẳng, do đó chéo nhau.
+**Đáp án và lời giải:** (a) M,N ở tam giác SAB nên MN là đường trung bình, \(MN\parallel AB\). (b) SA và BC là hai cạnh đối tứ diện, không đồng phẳng, do đó chéo nhau.
 
 **Rubric 4 điểm:**
 1. Xác định tam giác SAB chứa M,N — 1 điểm.
@@ -289,15 +289,15 @@ Qua điểm $M$ ngoài đường $a$ có duy nhất một đường qua $M$ song
 
 #### THPT-G11-CHIV-B11-W02-ANCHOR · WRITTEN (ANCHOR TAG)
 
-**Đề:** Hình chóp S.ABCD có đáy là hình bình hành. Lấy M,N là trung điểm SA,SD. (a) Chứng minh MN∥AD. (b) Suy ra MN∥BC.
+**Đề:** Hình chóp S.ABCD có đáy là hình bình hành. Lấy M,N là trung điểm SA,SD. (a) Chứng minh \(MN\parallel AD\). (b) Suy ra \(MN\parallel BC\).
 
-**Đáp án và lời giải:** Trong ΔSAD, MN là trung bình nên MN∥AD; trong hình bình hành đáy, AD∥BC; vì MN và BC là hai đường phân biệt cùng phương nên MN∥BC.
+**Đáp án và lời giải:** Trong \(\triangle SAD\), MN là trung bình nên \(MN\parallel AD\); trong hình bình hành đáy, \(AD\parallel BC\); vì MN và BC là hai đường phân biệt cùng phương nên \(MN\parallel BC\).
 
 **Rubric 4 điểm:**
-1. Xác định trung điểm M,N trong ΔSAD — 1 điểm.
-2. Chứng minh MN∥AD — 1 điểm.
-3. Nêu AD∥BC từ hình bình hành — 1 điểm.
-4. Lập luận MN≠BC để kết luận — 1 điểm.
+1. Xác định trung điểm M,N trong \(\triangle SAD\) — 1 điểm.
+2. Chứng minh \(MN\parallel AD\) — 1 điểm.
+3. Nêu \(AD\parallel BC\) từ hình bình hành — 1 điểm.
+4. Lập luận \(MN\ne BC\) để kết luận — 1 điểm.
 
 ### D5. Hình chính xác theo bản vẽ nguồn — `FIG-G11-B11-01`
 
@@ -418,27 +418,27 @@ Có đúng ba vị trí của đường $d$ so với mặt $(P)$: (i) $d\subset(
 
 #### THPT-G11-CHIV-B12-W01 · WRITTEN
 
-**Đề:** Cho hình chóp S.ABC; M,N trung điểm SA,SB. (a) Chứng minh MN∥(ABC). (b) Giao tuyến của (SAB) và (ABC)?
+**Đề:** Cho hình chóp S.ABC; M,N trung điểm SA,SB. (a) Chứng minh \(MN\parallel(ABC)\). (b) Giao tuyến của (SAB) và (ABC)?
 
-**Đáp án và lời giải:** (a) MN∥AB trong tam giác SAB, AB⊂(ABC); MN nằm trên mặt bên và không thuộc đáy, nên MN∥(ABC). (b) Giao tuyến AB (các điểm A,B thuộc cả hai).
+**Đáp án và lời giải:** (a) \(MN\parallel AB\) trong tam giác SAB, \(AB\subset(ABC)\); MN nằm trên mặt bên và không thuộc đáy, nên \(MN\parallel(ABC)\). (b) Giao tuyến AB (các điểm A,B thuộc cả hai).
 
 **Rubric 4 điểm:**
-1. Chứng minh MN∥AB — 1 điểm.
+1. Chứng minh \(MN\parallel AB\) — 1 điểm.
 2. Kiểm tra AB nằm trong mặt đáy — 1 điểm.
 3. Kiểm tra MN không nằm trong mặt đáy để suy song song — 1 điểm.
 4. Tìm giao tuyến AB bằng hai điểm chung — 1 điểm.
 
 #### THPT-G11-CHIV-B12-W02-ANCHOR · WRITTEN (ANCHOR TAG)
 
-**Đề:** Hình chóp S.ABCD đáy hình bình hành, M,N trung điểm SA,SB. Một học sinh nói “MN∥AB và AB nằm trong đáy, nên MN nằm trong đáy”. Phản biện và kết luận chính xác.
+**Đề:** Hình chóp S.ABCD đáy hình bình hành, M,N trung điểm SA,SB. Một học sinh nói “\(MN\parallel AB\) và AB nằm trong đáy, nên MN nằm trong đáy”. Phản biện và kết luận chính xác.
 
-**Đáp án và lời giải:** MN∥AB vì đường trung bình ΔSAB. M,N khác A,B và nằm trên cạnh bên nên MN không thuộc mặt đáy; theo dấu hiệu đúng MN∥(ABCD), không phải MN⊂(ABCD).
+**Đáp án và lời giải:** \(MN\parallel AB\) vì đường trung bình \(\triangle SAB\). M,N khác A,B và nằm trên cạnh bên nên MN không thuộc mặt đáy; theo dấu hiệu đúng \(MN\parallel(ABCD)\), không phải \(MN\subset(ABCD)\).
 
 **Rubric 4 điểm:**
-1. Chứng minh MN∥AB — 1 điểm.
+1. Chứng minh \(MN\parallel AB\) — 1 điểm.
 2. Nêu MN không nằm trong đáy — 1 điểm.
 3. Viết điều kiện dấu hiệu đường song song mặt — 1 điểm.
-4. Kết luận MN∥đáy và bác bỏ phát biểu — 1 điểm.
+4. Kết luận \(MN\parallel(ABCD)\) và bác bỏ phát biểu — 1 điểm.
 
 ### D5. Hình chính xác theo bản vẽ nguồn — `FIG-G11-B12-01`
 
@@ -559,25 +559,25 @@ Hai mặt phẳng **phân biệt** song song nếu chúng không có điểm chu
 
 #### THPT-G11-CHIV-B13-W01 · WRITTEN
 
-**Đề:** Trong tứ diện S.ABC, M,N,K lần lượt nằm trên SA,SB,SC và SM/SA=SN/SB=SK/SC=t với 0<t<1. Chứng minh (MNK)∥(ABC).
+**Đề:** Trong tứ diện S.ABC, M,N,K lần lượt nằm trên SA,SB,SC và \(\frac{SM}{SA}=\frac{SN}{SB}=\frac{SK}{SC}=t\) với \(0<t<1\). Chứng minh \((MNK)\parallel(ABC)\).
 
-**Đáp án và lời giải:** Thales trong ΔSAB cho MN∥AB, trong ΔSAC cho MK∥AC. MN,MK cắt tại M; AB,AC cắt tại A; dấu hiệu hai đường cắt nhau song song mặt đối diện suy (MNK)∥(ABC).
+**Đáp án và lời giải:** Thales trong \(\triangle SAB\) cho \(MN\parallel AB\), trong \(\triangle SAC\) cho \(MK\parallel AC\). MN,MK cắt tại M; AB,AC cắt tại A; dấu hiệu hai đường cắt nhau song song mặt đối diện suy \((MNK)\parallel(ABC)\).
 
 **Rubric 4 điểm:**
-1. Dùng tỉ số dựng MN∥AB — 1 điểm.
-2. Dùng tỉ số dựng MK∥AC — 1 điểm.
+1. Dùng tỉ số dựng \(MN\parallel AB\) — 1 điểm.
+2. Dùng tỉ số dựng \(MK\parallel AC\) — 1 điểm.
 3. Nêu MN,MK cắt nhau trong (MNK) — 1 điểm.
 4. Áp dụng đúng dấu hiệu hai mặt phẳng song song — 1 điểm.
 
 #### THPT-G11-CHIV-B13-W02-ANCHOR · WRITTEN (ANCHOR TAG)
 
-**Đề:** Trong tứ diện S.ABC có mặt (MNK)∥(ABC) cắt các cạnh SA,SB,SC; biết SM/SA=2/5 và diện tích ABC là 50 cm². Tính diện tích MNK, giải thích công thức.
+**Đề:** Trong tứ diện S.ABC có mặt \((MNK)\parallel(ABC)\) cắt các cạnh SA,SB,SC; biết \(\frac{SM}{SA}=\frac25\) và diện tích ABC là 50 cm². Tính diện tích MNK, giải thích công thức.
 
-**Đáp án và lời giải:** Do hai mặt song song, các tam giác MNK và ABC đồng dạng theo tỉ số SM/SA=2/5. Diện tích bằng (2/5)²·50=8 cm².
+**Đáp án và lời giải:** Do hai mặt song song, các tam giác MNK và ABC đồng dạng theo tỉ số \(\frac{SM}{SA}=\frac25\). Diện tích bằng \((\frac25)^2\cdot50=8\,\mathrm{cm}^2\).
 
 **Rubric 4 điểm:**
 1. Nêu hai tam giác đồng dạng — 1 điểm.
-2. Tìm đúng tỉ số cạnh 2/5 — 1 điểm.
+2. Tìm đúng tỉ số cạnh \(\frac25\) — 1 điểm.
 3. Bình phương tỉ số để tính diện tích — 1 điểm.
 4. Kết luận 8 cm² cùng đơn vị — 1 điểm.
 
@@ -700,25 +700,25 @@ Cho mặt chiếu $(P)$ và một **phương** $\Delta$ không song song mặt c
 
 #### THPT-G11-CHIV-B14-W01 · WRITTEN
 
-**Đề:** Trong lăng trụ ABC.A′B′C′, M′∈A′B′ có A′M′:M′B′=2:3. Chiếu theo phương AA′ xuống mặt (ABC), M là ảnh M′. Biết AB=25 cm. Tính AM, MB và chứng minh tỉ số được bảo toàn.
+**Đề:** Trong lăng trụ ABC.A′B′C′, \(M'\in A'B'\) có \(A'M':M'B'=2:3\). Chiếu theo phương AA′ xuống mặt (ABC), M là ảnh M′. Biết \(AB=25\,\mathrm{cm}\). Tính AM, MB và chứng minh tỉ số được bảo toàn.
 
-**Đáp án và lời giải:** Chiếu A′↦A, B′↦B, đường A′B′ có ảnh AB không suy biến. Tỉ số AM:MB=2:3. Tổng AB gồm 5 phần, mỗi phần 5 cm, nên AM=10 cm, MB=15 cm.
+**Đáp án và lời giải:** Chiếu \(A'\mapsto A,\ B'\mapsto B\), đường A′B′ có ảnh AB không suy biến. Tỉ số \(\(AM:MB=2:3\)\). Tổng AB gồm 5 phần, mỗi phần 5 cm, nên \(AM=10\,\mathrm{cm},\ MB=15\,\mathrm{cm}\).
 
 **Rubric 4 điểm:**
-1. Xác định ảnh A′=A, B′=B — 1 điểm.
-2. Nêu ảnh A′B′=AB không suy biến — 1 điểm.
+1. Xác định ảnh \(A'\mapsto A,\ B'\mapsto B\) — 1 điểm.
+2. Nêu ảnh \(A'B'\mapsto AB\) không suy biến — 1 điểm.
 3. Dùng tỉ số bảo toàn AM:MB=2:3 — 1 điểm.
-4. Tính AM=10 cm, MB=15 cm — 1 điểm.
+4. Tính \(AM=10\,\mathrm{cm},\ MB=15\,\mathrm{cm}\) — 1 điểm.
 
 #### THPT-G11-CHIV-B14-W02-ANCHOR · WRITTEN (ANCHOR TAG)
 
-**Đề:** Cho ΔABC, D là trung điểm BC. Một phép chiếu song song không làm tam giác suy biến biến A,B,C,D thành A′,B′,C′,D′. Chứng minh A′D′ là trung tuyến, và nêu một đại lượng của tam giác không nhất thiết bảo toàn.
+**Đề:** Cho \(\triangle ABC\), D là trung điểm BC. Một phép chiếu song song không làm tam giác suy biến biến A,B,C,D thành A′,B′,C′,D′. Chứng minh A′D′ là trung tuyến, và nêu một đại lượng của tam giác không nhất thiết bảo toàn.
 
-**Đáp án và lời giải:** D thuộc BC, BD/DC=1 nên B′,D′,C′ thẳng hàng và B′D′/D′C′=1; D′ trung điểm B′C′. A′D′ là trung tuyến. Góc, ví dụ ∠ABC, không nhất thiết bằng ∠A′B′C′.
+**Đáp án và lời giải:** D thuộc BC, \(\frac{BD}{DC}=1\) nên B′,D′,C′ thẳng hàng và \(\frac{B'D'}{D'C'}=1\); D′ trung điểm B′C′. A′D′ là trung tuyến. Góc, ví dụ \(\widehat{ABC}\), không nhất thiết bằng \(\widehat{A'B'C'}\).
 
 **Rubric 4 điểm:**
 1. Chứng minh ba ảnh B′,D′,C′ thẳng hàng — 1 điểm.
-2. Bảo toàn tỉ số BD/DC=1 — 1 điểm.
+2. Bảo toàn tỉ số \(\frac{BD}{DC}=1\) — 1 điểm.
 3. Kết luận D′ trung điểm và A′D′ trung tuyến — 1 điểm.
 4. Nêu góc/độ dài không bảo toàn nói chung — 1 điểm.
 
