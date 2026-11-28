@@ -77,7 +77,7 @@
 
         **Đáp án:** 2(x-1)-(y-3)=0 hay 2x-y+1=0.
 
-        **Lý do:** AM=(x-1,y-3), n·AM=2(x-1)-(y-3); thế A được 0. Không tự đảo vai trò n với vectơ chỉ phương.
+        **Lý do:** \(\overrightarrow{AM}=(x-1;y-3)\), \(\vec n\cdot\overrightarrow{AM}=2(x-1)-(y-3)\); thế A được 0. Không tự đảo vai trò n với vectơ chỉ phương.
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
@@ -96,9 +96,9 @@
         </ol>
     #### 1.2.3. Vì sao phương trình tham số cần một vectơ chỉ phương?
 
-    Có lúc ta muốn biết một điểm có thể nằm ở đâu khi đi dọc theo đường thẳng từ A. Nếu \(\vec u\) chỉ hướng đi thì mọi vị trí trên **đường thẳng kéo dài hai phía** có thể viết \(M=A+t\vec u\), với \(t\) là một số thực.
+    Có lúc ta muốn biết một điểm có thể nằm ở đâu khi đi dọc theo đường thẳng từ A. Nếu \(\vec u\) chỉ hướng đi thì mọi vị trí trên **đường thẳng kéo dài hai phía** được xác định bởi \(\overrightarrow{AM}=t\vec u\), với \(t\) là một số thực.
 
-    Khi \(t=0\), ta đang ở A; \(t=1\) đưa ta đến \(A+\vec u\); \(t=-1\) đi ngược hướng mũi tên một lần. Tham số t **không bắt buộc là thời gian**: nó chỉ cho biết số lần nhân vectơ chỉ phương. Hai tọa độ x, y phải dùng **cùng một t** vì chúng mô tả cùng một điểm M.
+    Khi \(t=0\), ta đang ở A; \(t=1\) đưa ta tới điểm có vectơ độ dời từ A bằng \(\vec u\); \(t=-1\) đi ngược hướng mũi tên một lần. Tham số t **không bắt buộc là thời gian**: nó chỉ cho biết số lần nhân vectơ chỉ phương. Hai tọa độ x, y phải dùng **cùng một t** vì chúng mô tả cùng một điểm M.
 
     Đây là lý do để có dạng tham số: từ một điểm và một hướng, ta tạo ra được cả đường thẳng; còn dạng tổng quát nhận biết điểm thuộc đường qua một điều kiện.
 
@@ -110,7 +110,7 @@
 
         **Đáp án:** x=1-2t, y=-1+3t (t∈ℝ).
 
-        **Lý do:** Khi t=0 thu A; khi t=1 thu A+u=(-1,2). Mọi điểm thuộc đường có độ dời t·u.
+        **Lý do:** Khi t=0 thu A; khi \(t=1\) thu \(M(-1;2)\). Mọi điểm thuộc đường có độ dời t·u.
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
@@ -122,8 +122,8 @@
 
         <ol>
         <li><strong>Nhận diện lỗi:</strong> Dùng t cho x nhưng một hệ số độc lập khác cho y, hoặc t=0 không về A.</li>
-        <li><strong>Tự chẩn đoán:</strong> Với A(1;-1), u=(-2;3), thử t=0 và t=1 có cho đúng A, A+u không?</li>
-        <li><strong>Kiến thức gốc:</strong> Một điểm M=A+t·u cần cùng t thực cho cả hai tọa độ; t không nhất thiết là thời gian.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với \(A(1;-1)\), \(\vec u=(-2;3)\), thử \(t=0\) và \(t=1\) có cho đúng \(A\) và điểm \(M(-1;2)\) không?</li>
+        <li><strong>Kiến thức gốc:</strong> Hệ thức \(\overrightarrow{AM}=t\vec u\) cần cùng t thực cho cả hai tọa độ; t không nhất thiết là thời gian.</li>
         <li><strong>Tự sửa:</strong> Viết x=1-2t, y=-1+3t rồi thử hai giá trị t.</li>
         <li><strong>Luyện lại:</strong> Luyện <a href="../luyen-tap/?item=THPT-G10-B19-P01">Practice 19-P01</a></li>
         </ol>
@@ -141,7 +141,7 @@
 
         **Đáp án:** x-y+3=0.
 
-        **Lý do:** AB=(3,3)≠0, chọn n=(1,-1). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.
+        **Lý do:** \(\overrightarrow{AB}=(3;3)\ne\vec0\), chọn \(\vec n=(1;-1)\). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
@@ -153,7 +153,7 @@
 
         <ol>
         <li><strong>Nhận diện lỗi:</strong> Lấy vectơ nối hai điểm làm pháp tuyến rồi đường mới không đi qua B.</li>
-        <li><strong>Tự chẩn đoán:</strong> Với A(-1;2), B(2;5), AB=(3;3) đi dọc hay vuông góc AB? Tại sao n=(1;-1) mới là pháp tuyến hợp lệ?</li>
+        <li><strong>Tự chẩn đoán:</strong> Với A(-1;2), B(2;5), \(\overrightarrow{AB}=(3;3)\) đi dọc hay vuông góc với đường thẳng AB? Tại sao \(\vec n=(1;-1)\) mới là pháp tuyến hợp lệ?</li>
         <li><strong>Kiến thức gốc:</strong> Hai điểm phân biệt tạo chỉ phương AB; pháp tuyến phải khác 0 và vuông góc với AB.</li>
         <li><strong>Tự sửa:</strong> Kiểm n·AB=0 rồi lập phương trình qua A và thế lại B.</li>
         <li><strong>Luyện lại:</strong> Luyện <a href="../luyen-tap/?item=THPT-G10-B19-P02">Practice 19-P02</a></li>
@@ -347,7 +347,7 @@
     ??? tip "4.2. Dùng hai điểm trùng nhau như hai hướng khác nhau"
 
         <ol>
-        <li><strong>Nhận diện lỗi:</strong> Xem A=B là hai điểm xác định duy nhất một đường, hoặc lấy AB=(0;0) làm chỉ phương.</li>
+        <li><strong>Nhận diện lỗi:</strong> Xem A=B là hai điểm xác định duy nhất một đường, hoặc lấy \(\overrightarrow{AB}=(0;0)\) làm vectơ chỉ phương.</li>
         <li><strong>Tự chẩn đoán:</strong> Nếu A=B=(1;2), có bao nhiêu đường qua điểm đó? Hướng AB khi ấy đã xác định chưa?</li>
         <li><strong>Kiến thức gốc:</strong> Chỉ khi \(A\ne B\), \(\overrightarrow{AB}\) khác 0. Chọn \(\vec n=(a;b)\) vuông góc \(\overrightarrow{AB}\); khi ấy \(a(x-x_A)+b(y-y_A)=0\), tương đương \(\vec n\cdot\overrightarrow{AM}=0\).</li>
         <li><strong>Tự sửa:</strong> Kiểm A và B phân biệt, tính AB rồi thử lại cả hai điểm vào phương trình.</li>

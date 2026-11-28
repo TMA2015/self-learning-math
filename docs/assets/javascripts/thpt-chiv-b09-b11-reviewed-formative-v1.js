@@ -231,7 +231,7 @@
     "lesson": "11",
     "role": "CORE",
     "skill": "G10-B11-PERPENDICULAR",
-    "stem": "Chọn cặp vectơ **khác không** vuông góc.",
+    "stem": "Cặp nào gồm hai vectơ khác vectơ-không và vuông góc với nhau?",
     "options": [
       "A. $(1;2)$ và $(2;-1)$",
       "B. $(1;1)$ và $(1;1)$",

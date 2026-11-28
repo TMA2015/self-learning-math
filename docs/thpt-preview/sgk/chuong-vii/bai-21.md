@@ -107,7 +107,7 @@
 
         **Đáp án:** 3x+4y−24=0.
 
-        **Lý do:** IM=(3,4), IM²=9+16=25=R² nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.
+        **Lý do:** \(\overrightarrow{IM}=(3;4)\), \(IM^2=9+16=25=R^2\) nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
@@ -118,7 +118,7 @@
 
         <ol>
         <li><strong>Nhận diện lỗi:</strong> Dùng IM như một vectơ chỉ phương hoặc không kiểm M có thuộc đường tròn không.</li>
-        <li><strong>Tự chẩn đoán:</strong> Với I(1;−1), R=5, M(4;3): IM²=9+16 có bằng 25 không? IM=(3;4) vuông góc hay nằm trên tiếp tuyến?</li>
+        <li><strong>Tự chẩn đoán:</strong> Với I(1;−1), R=5, M(4;3): IM²=9+16 có bằng 25 không? \(\overrightarrow{IM}=(3;4)\) vuông góc hay cùng phương với tiếp tuyến?</li>
         <li><strong>Kiến thức gốc:</strong> Tại điểm M nằm trên đường tròn, bán kính IM là **pháp tuyến khác 0** của tiếp tuyến, nên phải lập đường qua M với pháp tuyến ấy.</li>
         <li><strong>Tự sửa:</strong> Kiểm M thuộc đường; viết 3(x−4)+4(y−3)=0, tức 3x+4y−24=0 rồi thử lại tọa độ M.</li>
         <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-P02">Luyện Practice 21-P02</a></li>
@@ -263,7 +263,7 @@
     (x-2)^2+(y+3)^2=25.
     \]
 
-    <p>Vậy \(I(2;-3)\) và \(R=5\). Điểm \(M(5;1)\) thuộc đường tròn vì \(IM^2=3^2+4^2=25\). Vectơ \(IM=(3;4)\) là pháp tuyến của tiếp tuyến tại \(M\), nên:</p>
+    <p>Vậy \(I(2;-3)\) và \(R=5\). Điểm \(M(5;1)\) thuộc đường tròn vì \(IM^2=3^2+4^2=25\). Vectơ \(\overrightarrow{IM}=(3;4)\) là pháp tuyến của tiếp tuyến tại \(M\), nên:</p>
 
     \[
     3(x-5)+4(y-1)=0\iff \boxed{3x+4y-19=0}.
