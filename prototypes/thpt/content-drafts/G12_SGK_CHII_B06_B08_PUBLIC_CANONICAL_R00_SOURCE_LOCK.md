@@ -209,7 +209,7 @@ Tất cả câu nằm trong bảng canonical bên dưới của bản nguồn; C
 
 - **Đề mới:** Hình hộp chữ nhật có ba kích thước 2, 3, 6 cm. Giải thích vì sao vectơ nối hai đỉnh đối diện có độ dài 7 cm, không phải 11 cm.
 - **Đáp án:** 7 cm
-- **Lời giải/suy luận:** Chọn ba cạnh vuông góc, áp dụng Pythagore không gian: $\sqrt{2^2+3^2+6^2}=7$. Tổng $2+3+6$ là độ dài đường đi theo ba cạnh, không phải độ dời.
+- **Lời giải/suy luận:** Chọn ba cạnh vuông góc, áp dụng Pythagore không gian: \(\sqrt{2^2+3^2+6^2}=7\,\mathrm{cm}\). Tổng \(2+3+6\) là độ dài đường đi theo ba cạnh, không phải độ dời.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm lập mô hình ba phương vuông góc; 2 điểm tính căn tổng bình phương; 1 điểm phân biệt đường đi với độ dời.
 
@@ -243,8 +243,8 @@ Tất cả câu nằm trong bảng canonical bên dưới của bản nguồn; C
 
 **`ITEM_ID=THPT-G12-B06-W02` · `OUTCOME_ID=G12-CHII-B06-O02` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Trong hình hộp $ABCD.A\prime B\prime C\prime D\prime$, liệt kê hai vectơ khác vị trí bằng $\overrightarrow{AB}$ và một vectơ đối với nó; giải thích dựa vào hướng và độ dài.
-- **Đáp án:** $\overrightarrow{DC}$ và $\overrightarrow{A\prime B\prime}$ bằng $\overrightarrow{AB}$; $\overrightarrow{BA}$ là vectơ đối.
+- **Đề mới:** Trong hình hộp \(ABCD.A\prime B\prime C\prime D\prime\), liệt kê hai vectơ khác vị trí bằng \(\overrightarrow{AB}\) và một vectơ đối với nó; giải thích dựa vào hướng và độ dài.
+- **Đáp án:** \(\overrightarrow{DC}\) và \(\overrightarrow{A\prime B\prime}\) bằng \(\overrightarrow{AB}\); \(\overrightarrow{BA}\) là vectơ đối.
 - **Lời giải/suy luận:** Các cạnh song song đồng hướng tương ứng trong hình hộp có độ dài bằng nhau; đảo đầu-cuối đổi hướng.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm tìm hai vectơ bằng; 1 điểm vectơ đối; 2 điểm giải thích chiều/độ dài.
@@ -279,11 +279,11 @@ Tất cả câu nằm trong bảng canonical bên dưới của bản nguồn; C
 
 **`ITEM_ID=THPT-G12-B06-W03` · `OUTCOME_ID=G12-CHII-B06-O03` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Cho tứ diện ABCD. Rút gọn $\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CD}$ theo hai cách: nối đường đi và nhóm đại số.
-- **Đáp án:** $\overrightarrow{AD}$
-- **Lời giải/suy luận:** Nối A→B→C→D được AD. Hoặc AB+BC=AC, AC+CD=AD.
+- **Đề mới:** Cho tứ diện ABCD. Rút gọn \(\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CD}\) theo hai cách: nối đường đi và nhóm đại số.
+- **Đáp án:** \(\overrightarrow{AD}\)
+- **Lời giải/suy luận:** Nối \(A\to B\to C\to D\) được \(\overrightarrow{AD}\). Hoặc \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\), \(\overrightarrow{AC}+\overrightarrow{CD}=\overrightarrow{AD}\).
 
-- **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm mô tả đường đi; 2 điểm nhóm đúng; 1 điểm kết luận AD.
+- **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm mô tả đường đi; 2 điểm nhóm đúng; 1 điểm kết luận \(\overrightarrow{AD}\).
 
 
 
@@ -315,9 +315,9 @@ Tất cả câu nằm trong bảng canonical bên dưới của bản nguồn; C
 
 **`ITEM_ID=THPT-G12-B06-W04` · `OUTCOME_ID=G12-CHII-B06-O04` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Cho $\vec a\ne\vec0$. Hai vectơ $\vec b=-\tfrac32\vec a$ và $\vec c=\tfrac12\vec a$ có cùng phương không? Hướng và tỉ số độ dài?
-- **Đáp án:** Có; b ngược hướng a, c cùng hướng a; $|b|:|c|=3:1$.
-- **Lời giải/suy luận:** b,c là bội số của a; dấu hệ số xác định chiều, độ lớn xác định tỉ lệ.
+- **Đề mới:** Cho \(\vec a\ne\vec0\). Hai vectơ \(\vec b=-\tfrac32\vec a\) và \(\vec c=\tfrac12\vec a\) có cùng phương không? Hướng và tỉ số độ dài?
+- **Đáp án:** Có; \(\vec b\) ngược hướng \(\vec a\), \(\vec c\) cùng hướng \(\vec a\); \(\lVert\vec b\rVert:\lVert\vec c\rVert=3:1\).
+- **Lời giải/suy luận:** \(\vec b,\vec c\) là bội số của \(\vec a\); dấu hệ số xác định chiều, độ lớn xác định tỉ lệ.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm chứng minh cùng phương; 2 điểm giải thích hướng; 1 điểm tỉ số.
 
@@ -351,9 +351,9 @@ Tất cả câu nằm trong bảng canonical bên dưới của bản nguồn; C
 
 **`ITEM_ID=THPT-G12-B06-W05` · `OUTCOME_ID=G12-CHII-B06-O05` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Giả sử $|\vec u|=2$, $|\vec v|=5$ và $\vec u\cdot\vec v=-5$. Hãy tìm góc và giải thích dấu âm.
+- **Đề mới:** Giả sử \(|\vec u|=2\), \(|\vec v|=5\) và \(\vec u\cdot\vec v=-5\). Hãy tìm góc và giải thích dấu âm.
 - **Đáp án:** 120°
-- **Lời giải/suy luận:** $\cos\theta=-5/(2\cdot5)=-1/2$ nên $\theta=120^\circ$; hình chiếu ngược hướng.
+- **Lời giải/suy luận:** \(\cos\theta=\frac{-5}{2\cdot5}=-\frac12\) nên \(\theta=120^\circ\); hình chiếu ngược hướng.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 1 điểm kiểm hai độ dài dương; 2 điểm thiết lập cos; 1 điểm tìm góc; 1 điểm giải thích dấu.
 
@@ -387,9 +387,9 @@ Tất cả câu nằm trong bảng canonical bên dưới của bản nguồn; C
 
 **`ITEM_ID=THPT-G12-B06-W06` · `OUTCOME_ID=G12-CHII-B06-O06` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Hai lực không đổi $\vec F_1,\vec F_2$ lần lượt 10 N, 20 N, cùng tạo góc 60° với cùng độ dời 2 m. Tính tổng công và nêu vì sao có thể cộng.
+- **Đề mới:** Hai lực không đổi \(\vec F_1,\vec F_2\) lần lượt 10 N, 20 N, cùng tạo góc 60° với cùng độ dời 2 m. Tính tổng công và nêu vì sao có thể cộng.
 - **Đáp án:** 30 J
-- **Lời giải/suy luận:** Theo tính phân phối của tích vô hướng, W=W1+W2=10·2·1/2+20·2·1/2=10+20=30 J.
+- **Lời giải/suy luận:** Theo tính phân phối của tích vô hướng, \(W=W_1+W_2=10\cdot2\cdot\frac12+20\cdot2\cdot\frac12=10+20=30\,\mathrm J\).
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm công mỗi lực; 2 điểm cộng hợp lí bằng phân phối; 1 điểm đơn vị và giả thiết.
 
@@ -516,7 +516,7 @@ Từ $A$ tới $B$, theo $x$ tăng $5-2=3$, theo $y$ tăng $2-(-1)=3$, theo $z$ 
 
 **`ITEM_ID=THPT-G12-B07-W01` · `OUTCOME_ID=G12-CHII-B07-O01` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Phân loại A(0;2;-1), B(0;0;5), C(3;-2;0) theo mặt phẳng tọa độ hoặc trục tọa độ; giải thích.
+- **Đề mới:** Phân loại \(A(0;2;-1)\), \(B(0;0;5)\), \(C(3;-2;0)\) theo mặt phẳng tọa độ hoặc trục tọa độ; giải thích.
 - **Đáp án:** A thuộc Oyz; B thuộc Oz và cả Oxz, Oyz; C thuộc Oxy.
 - **Lời giải/suy luận:** Xét các tọa độ bằng 0 cho từng điểm. Đừng nhầm điều kiện 1 tọa độ bằng 0 của mặt phẳng với 2 tọa độ bằng 0 của trục.
 
@@ -552,9 +552,9 @@ Từ $A$ tới $B$, theo $x$ tăng $5-2=3$, theo $y$ tăng $2-(-1)=3$, theo $z$ 
 
 **`ITEM_ID=THPT-G12-B07-W02` · `OUTCOME_ID=G12-CHII-B07-O02` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Cho P(1;-2;3). Viết vectơ vị trí OP và giải thích vì sao vectơ bằng OP đặt ở một điểm khác vẫn có tọa độ tương tự.
-- **Đáp án:** $\overrightarrow{OP}=\vec i-2\vec j+3\vec k$; tọa độ phụ thuộc hướng và độ dài vectơ trong cùng hệ, không phụ thuộc nơi dời song song.
-- **Lời giải/suy luận:** Theo định nghĩa tọa độ điểm, $P(1;-2;3)$ nghĩa là $\overrightarrow{OP}=\vec i-2\vec j+3\vec k$. Vectơ có thể dời song song mà không đổi tọa độ trong cùng hệ, nhưng điểm cuối sẽ đổi nếu đổi điểm đầu.
+- **Đề mới:** Cho \(P(1;-2;3)\). Viết vectơ vị trí \(\overrightarrow{OP}\) và giải thích vì sao vectơ bằng \(\overrightarrow{OP}\) đặt ở một điểm khác vẫn có tọa độ tương tự.
+- **Đáp án:** \(\overrightarrow{OP}=\vec i-2\vec j+3\vec k\); tọa độ phụ thuộc hướng và độ dài vectơ trong cùng hệ, không phụ thuộc nơi dời song song.
+- **Lời giải/suy luận:** Theo định nghĩa tọa độ điểm, \(P(1;-2;3)\) nghĩa là \(\overrightarrow{OP}=\vec i-2\vec j+3\vec k\). Vectơ có thể dời song song mà không đổi tọa độ trong cùng hệ, nhưng điểm cuối sẽ đổi nếu đổi điểm đầu.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm phân tích đúng; 2 điểm giải thích vectơ tự do; 1 điểm phân biệt điểm/tọa độ.
 
@@ -588,8 +588,8 @@ Từ $A$ tới $B$, theo $x$ tăng $5-2=3$, theo $y$ tăng $2-(-1)=3$, theo $z$ 
 
 **`ITEM_ID=THPT-G12-B07-W03` · `OUTCOME_ID=G12-CHII-B07-O03` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Phòng 5×4×3 m; lấy O ở góc sàn, Ox dài, Oy rộng, Oz cao. Điểm A(5;4;3) là vị trí nào? Nếu gốc thay thành điểm trần đối diện và trục Oz vẫn hướng lên, z của O cũ bằng bao nhiêu?
-- **Đáp án:** A là góc trần đối diện O; z của O cũ bằng -3 m trong hệ mới.
+- **Đề mới:** Phòng \(5\times4\times3\) m; lấy O ở góc sàn, Ox dài, Oy rộng, Oz cao. Điểm \(A(5;4;3)\) là vị trí nào? Nếu gốc thay thành điểm trần đối diện và trục Oz vẫn hướng lên, z của O cũ bằng bao nhiêu?
+- **Đáp án:** A là góc trần đối diện O; tọa độ \(z\) của O cũ bằng \(-3\,\mathrm m\) trong hệ mới.
 - **Lời giải/suy luận:** Nêu rõ gốc mới; điểm sàn thấp hơn gốc trần 3 m.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm mô tả A; 2 điểm trục mới và dấu; 1 điểm giải thích tính tương đối.
@@ -624,9 +624,9 @@ Từ $A$ tới $B$, theo $x$ tăng $5-2=3$, theo $y$ tăng $2-(-1)=3$, theo $z$ 
 
 **`ITEM_ID=THPT-G12-B07-W04` · `OUTCOME_ID=G12-CHII-B07-O04` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Cho A(2;-3;1), B(-4;5;0). Tính $\overrightarrow{AB}$ và $\overrightarrow{BA}$ theo tọa độ, rồi giải thích quan hệ.
-- **Đáp án:** $\overrightarrow{AB}=(-6;8;-1)$ và $\overrightarrow{BA}=(6;-8;1)$; đối nhau.
-- **Lời giải/suy luận:** Lấy tọa độ điểm cuối trừ tọa độ điểm đầu: $\overrightarrow{AB}=(-4-2;5-(-3);0-1)=(-6;8;-1)$. Đổi thứ tự hai điểm được $\overrightarrow{BA}=-\overrightarrow{AB}$.
+- **Đề mới:** Cho \(A(2;-3;1)\), \(B(-4;5;0)\). Tính \(\overrightarrow{AB}\) và \(\overrightarrow{BA}\) theo tọa độ, rồi giải thích quan hệ.
+- **Đáp án:** \(\overrightarrow{AB}=(-6;8;-1)\) và \(\overrightarrow{BA}=(6;-8;1)\); đối nhau.
+- **Lời giải/suy luận:** Lấy tọa độ điểm cuối trừ tọa độ điểm đầu: \(\overrightarrow{AB}=(-4-2;5-(-3);0-1)=(-6;8;-1)\). Đổi thứ tự hai điểm được \(\overrightarrow{BA}=-\overrightarrow{AB}\).
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm AB; 2 điểm BA; 1 điểm quan hệ vectơ đối.
 
@@ -776,9 +776,9 @@ $\vec u\cdot\vec v=2-4-6=-8<0$, nên góc giữa chúng là góc tù (cả hai k
 
 **`ITEM_ID=THPT-G12-B08-W01` · `OUTCOME_ID=G12-CHII-B08-O01` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Với a=(2;1;-1), b=(-1;3;2), hãy tính 2a-3b và mô tả vì sao mỗi thành phần được tính riêng.
-- **Đáp án:** (7;-7;-8)
-- **Lời giải/suy luận:** $2a=(4;2;-2)$, $3b=(-3;9;6)$, lấy hiệu (7;-7;-8); tính duy nhất cơ sở trực giao.
+- **Đề mới:** Với \(\vec a=(2;1;-1)\), \(\vec b=(-1;3;2)\), hãy tính \(2\vec a-3\vec b\) và mô tả vì sao mỗi thành phần được tính riêng.
+- **Đáp án:** \((7;-7;-8)\)
+- **Lời giải/suy luận:** \(2\vec a=(4;2;-2)\), \(3\vec b=(-3;9;6)\), lấy hiệu \((7;-7;-8)\); tính duy nhất cơ sở trực giao.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 3 điểm tính đúng ba tọa độ; 2 điểm lý giải phép toán theo trục.
 
@@ -812,9 +812,9 @@ $\vec u\cdot\vec v=2-4-6=-8<0$, nên góc giữa chúng là góc tù (cả hai k
 
 **`ITEM_ID=THPT-G12-B08-W02` · `OUTCOME_ID=G12-CHII-B08-O02` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Cho u=(t;2;4), v=(3;1;2). Tìm t để u, v cùng phương; chỉ ra hướng của chúng.
-- **Đáp án:** t=6; cùng hướng
-- **Lời giải/suy luận:** Từ tọa độ y: u=2v, kiểm z: 4=2·2, suy t=2·3=6; k=2>0.
+- **Đề mới:** Cho \(\vec u=(t;2;4)\), \(\vec v=(3;1;2)\). Tìm t để \(\vec u,\vec v\) cùng phương; chỉ ra hướng của chúng.
+- **Đáp án:** \(t=6\); cùng hướng
+- **Lời giải/suy luận:** Từ tọa độ y: \(\vec u=2\vec v\), kiểm z: \(4=2\cdot2\), suy ra \(t=2\cdot3=6\); \(k=2>0\).
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm xác định hệ số; 2 điểm suy t và kiểm z; 1 điểm giải thích hướng.
 
@@ -848,9 +848,9 @@ $\vec u\cdot\vec v=2-4-6=-8<0$, nên góc giữa chúng là góc tù (cả hai k
 
 **`ITEM_ID=THPT-G12-B08-W03` · `OUTCOME_ID=G12-CHII-B08-O03` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Cho A(1;2;3), B(3;4;5), C(5;0;1). Tìm trọng tâm G và kiểm tra tọa độ của trung điểm M của AB.
-- **Đáp án:** $G=(3;2;3)$; $M=(2;3;4)$.
-- **Lời giải/suy luận:** $G=((1+3+5)/3;(2+4+0)/3;(3+5+1)/3)=(3;2;3)$. Trung điểm là (2;3;4).
+- **Đề mới:** Cho \(A(1;2;3)\), \(B(3;4;5)\), \(C(5;0;1)\). Tìm trọng tâm G và kiểm tra tọa độ của trung điểm M của AB.
+- **Đáp án:** \(G(3;2;3)\); \(M(2;3;4)\).
+- **Lời giải/suy luận:** Tọa độ G là \((\frac{1+3+5}3;\frac{2+4+0}3;\frac{3+5+1}3)=(3;2;3)\). Trung điểm là \(M(2;3;4)\).
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 3 điểm G; 2 điểm M và cách tính từng tọa độ.
 
@@ -884,8 +884,8 @@ $\vec u\cdot\vec v=2-4-6=-8<0$, nên góc giữa chúng là góc tù (cả hai k
 
 **`ITEM_ID=THPT-G12-B08-W04` · `OUTCOME_ID=G12-CHII-B08-O04` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Cho a=(1;2;2), b=(2;-1;0). Chứng minh chúng vuông góc và nêu điều kiện để sử dụng tiêu chuẩn tích vô hướng bằng 0.
-- **Đáp án:** a·b=2-2+0=0, hai vectơ khác 0 nên vuông góc.
+- **Đề mới:** Cho \(\vec a=(1;2;2)\), \(\vec b=(2;-1;0)\). Chứng minh chúng vuông góc và nêu điều kiện để sử dụng tiêu chuẩn tích vô hướng bằng 0.
+- **Đáp án:** \(\vec a\cdot\vec b=2-2+0=0\), hai vectơ khác 0 nên vuông góc.
 - **Lời giải/suy luận:** Không được suy vuông góc giữa vectơ-không và vectơ bất kì chỉ từ tích 0.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm tính tích; 1 điểm kiểm khác 0; 2 điểm kết luận và điều kiện.
@@ -920,9 +920,9 @@ $\vec u\cdot\vec v=2-4-6=-8<0$, nên góc giữa chúng là góc tù (cả hai k
 
 **`ITEM_ID=THPT-G12-B08-W05` · `OUTCOME_ID=G12-CHII-B08-O05` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Cho A(-1;2;3), B(2;-2;15). Tính AB. Nêu vì sao không thể lấy tổng trị tuyệt đối ba độ chênh.
+- **Đề mới:** Cho \(A(-1;2;3)\), \(B(2;-2;15)\). Tính AB. Nêu vì sao không thể lấy tổng trị tuyệt đối ba độ chênh.
 - **Đáp án:** 13
-- **Lời giải/suy luận:** $\overrightarrow{AB}=(3;-4;12)$, $AB=\sqrt{9+16+144}=13$. Tổng trị tuyệt đối là độ dài đi theo ba trục, không phải khoảng cách thẳng.
+- **Lời giải/suy luận:** \(\overrightarrow{AB}=(3;-4;12)\), \(AB=\sqrt{9+16+144}=13\). Tổng trị tuyệt đối là độ dài đi theo ba trục, không phải khoảng cách thẳng.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm vectơ AB; 2 điểm độ dài; 1 điểm giải thích hình học.
 
@@ -956,9 +956,9 @@ $\vec u\cdot\vec v=2-4-6=-8<0$, nên góc giữa chúng là góc tù (cả hai k
 
 **`ITEM_ID=THPT-G12-B08-W06` · `OUTCOME_ID=G12-CHII-B08-O06` · `ROLE=WRITTEN`**
 
-- **Đề mới:** Một thiết bị đi dọc đoạn thẳng từ A(2;0;5) đến B(8;-8;11), không quay đầu, trong 4 s (tọa độ tính bằng mét). Tìm vectơ độ dời, độ dài độ dời và tốc độ trung bình. Khi nào độ dài độ dời khác quãng đường?
-- **Đáp án:** Độ dời $(6;-8;6)$ m, độ dài $2\sqrt{34}$ m, tốc độ trung bình $\frac{\sqrt{34}}2$ m/s.
-- **Lời giải/suy luận:** Lấy tọa độ B trừ A, được $(6;-8;6)$. Độ dài là $\sqrt{36+64+36}=2\sqrt{34}$ m. Vì đi theo đoạn AB không quay đầu, quãng đường bằng độ dài độ dời. Chia quãng đường cho 4 s được tốc độ trung bình $\frac{\sqrt{34}}2$ m/s. Nếu đường đi dài hơn đoạn nối điểm đầu và cuối (chẳng hạn đi vòng hoặc quay đầu), quãng đường lớn hơn độ dài độ dời.
+- **Đề mới:** Một thiết bị đi dọc đoạn thẳng từ \(A(2;0;5)\) đến \(B(8;-8;11)\), không quay đầu, trong 4 s (tọa độ tính bằng mét). Tìm vectơ độ dời, độ dài độ dời và tốc độ trung bình. Khi nào độ dài độ dời khác quãng đường?
+- **Đáp án:** Độ dời \((6;-8;6)\) (m), độ dài \(2\sqrt{34}\,\mathrm m\), tốc độ trung bình \(\frac{\sqrt{34}}2\,\mathrm{m/s}\).
+- **Lời giải/suy luận:** Lấy tọa độ B trừ A, được \((6;-8;6)\). Độ dài là \(\sqrt{36+64+36}=2\sqrt{34}\,\mathrm m\). Vì đi theo đoạn AB không quay đầu, quãng đường bằng độ dài độ dời. Chia quãng đường cho 4 s được tốc độ trung bình \(\frac{\sqrt{34}}2\,\mathrm{m/s}\). Nếu đường đi dài hơn đoạn nối điểm đầu và cuối (chẳng hạn đi vòng hoặc quay đầu), quãng đường lớn hơn độ dài độ dời.
 
 - **Rubric tự luận (tổng 5 điểm, tự đối chiếu sau khi làm):** 2 điểm độ dời; 1 điểm độ dài; 1 điểm tốc độ; 1 điểm điều kiện đường thẳng.
 
