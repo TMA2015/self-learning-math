@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "89d8713d5eebbf0098e16f69452162f0e20275c2",
+    "as_of_commit": "c7b56f0aed785e4fcde99fa0945f771cce3cf114",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.2: 542/910 (493 interactive +49 Written), CD01–13 complete; next CD14 onward 368 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
+    "next": "08.2: 591/910 (537 interactive +54 Written), CD01–14 complete; next CD15 onward 319 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
     "status": "CHECKLIST_08_XG5_BATCH_2_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -8694,12 +8694,280 @@
                     ]
                   ],
                   "findings": "Read four canonical Written blocks; W02 fraction in triangle area normalized, rubric points/solution unchanged; exact source commit 72600bd1cf437b214f5c0426d46fc82eeefdfe87; refreshed four bindings at 89d8713d5eebbf0098e16f69452162f0e20275c2."
+                },
+                {
+                  "shard": "items/cd14.json",
+                  "blob": "5664b4af50dd001a20bba86c76981ac5bb74d1d3",
+                  "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+                  "baseline_blob": "fb0793452ea0c6b1e62e1dbcfa30a8e2bbb9e51d",
+                  "evidence_cp": "CP81–90",
+                  "records": [
+                    [
+                      "THPT-TOP14-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P08",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP14-P09",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P10",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP14-P11",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P12",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P13",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P14",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P15",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P16",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P18",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P19",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P20",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P21",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP14-P22",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Read new/changed fields of 21 Topic-only records; inherited identical five prior notation-reviewed fields only. P08 normalized m=2/m=3 in distractors, exact readback 5ad9b42f4d66836085875500fe81fa7072cf9011; shared P17/P23 untouched."
+                },
+                {
+                  "shard": "items/topic-knowledge-first-try.json",
+                  "blob": "1b241b3aa69db043131fa8ca4338c997b90f2d65",
+                  "evidence_cp": "08.2-CD14-KFT",
+                  "records": [
+                    [
+                      "THPT-TOP14-T01",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T02",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T03",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T04",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T05",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T06",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T07",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T08",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T09",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T10",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T11",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T12",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T13",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T14",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T15",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T16",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T17",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T18",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T19",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T20",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T21",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T22",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP14-T23",
+                      0,
+                      31
+                    ]
+                  ],
+                  "findings": "Read 23 Topic-only FirstTry records all learner fields. T01 coordinate, T04 vector, T17 equation hints normalized; T15 solution uses OP consistently with stated center O instead of undefined IP. Same math, answer and interaction. T20 previous exact correction retained. Readback c7b56f0aed785e4fcde99fa0945f771cce3cf114."
+                },
+                {
+                  "shard": "written-references.json",
+                  "blob": "0ce701ba0e0f6e64284aabef02049b905a307d20",
+                  "source_path": "prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md",
+                  "source_blob": "a451366a91d041f2d2bb8e04d66ab5964d68893c",
+                  "evidence_cp": "08.2-CD14-Written",
+                  "records": [
+                    [
+                      "THPT-TOP14-W01",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP14-W02",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP14-W03",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP14-W04",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP14-W05",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ]
+                  ],
+                  "findings": "Read all five complete canonical Written marker-to-details blocks (stem, solution, rubric, D6); notation conformant, no changes, bindings match source."
                 }
               ],
-              "completed_interactive": 493,
-              "completed_written": 49,
-              "remaining_interactive": 336,
-              "remaining_written": 32,
+              "completed_interactive": 537,
+              "completed_written": 54,
+              "remaining_interactive": 292,
+              "remaining_written": 27,
               "counts": {
                 "CD01": {
                   "interactive": 15,
@@ -8765,16 +9033,21 @@
                   "interactive": 31,
                   "written": 4,
                   "state": "COMPLETE"
+                },
+                "CD14": {
+                  "interactive": 44,
+                  "written": 5,
+                  "state": "COMPLETE"
                 }
               },
-              "next": "CD14 onward; exclude 975 shared and 542 completed Topic-only IDs",
+              "next": "CD15 onward; exclude 975 shared and 591 completed Topic-only IDs",
               "reconciliation": {
-                "expected_cd01_13": 542,
-                "completed_cd01_13": 542,
+                "expected_cd01_14": 591,
+                "completed_cd01_14": 591,
                 "duplicate_ids": 0,
                 "overlap_08_1": 0,
                 "overlap_08_3": 0,
-                "scope": "Notation only; exact CD13 partition membership and prior evidence retained."
+                "scope": "Notation only; exact CD14 partition membership and prior evidence retained."
               }
             }
           },
