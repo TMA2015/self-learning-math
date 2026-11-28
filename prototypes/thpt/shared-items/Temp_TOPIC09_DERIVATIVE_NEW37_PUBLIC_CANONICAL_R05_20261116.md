@@ -451,7 +451,7 @@ difficulty_band: TRANSFER
 content_version: 2
 **Đề bài:** Vật có tọa độ \(s(t)=t^3-6t^2+9t\) (m), \(t\ge0\) tính bằng giây. (a) Tính \(s(2),s(3)\). (b) Tính vận tốc trung bình trên \([2;3]\). (c) Tính vận tốc và tốc độ tại \(t=2\). (d) Viết phương trình tiếp tuyến của đồ thị \(y=s(t)\) tại \(t=2\); giải thích vì sao hai vận tốc khác nhau.
 
-**Lời giải:** \(s(2)=8-24+18=2\) m và \(s(3)=27-54+27=0\) m. Vận tốc trung bình là \(\frac{0-2}{3-2}=-2\) m/s. Vận tốc tức thời \(v(t)=s'(t)=3t^2-12t+9\), nên \(v(2)=-3\) m/s; tốc độ bằng \(|v(2)|=3\) m/s. Tiếp tuyến qua điểm \((2;2)\), có hệ số góc \(-3\), nên \(y-2=-3(t-2)\). Vận tốc trung bình đo độ dời trên cả khoảng một giây, còn vận tốc tức thời tại \(2\) là giới hạn của thương sai phân khi bước thời gian tiến về \(0\).
+**Lời giải:** \(s(2)=8-24+18=2\) m và \(s(3)=27-54+27=0\) m. Vận tốc trung bình là \(\frac{0-2}{3-2}=-2\) m/s. Vận tốc tức thời \(v(t)=s'(t)=3t^2-12t+9\), nên \(v(2)=-3\) m/s; tốc độ bằng \(\lvert v(2)\rvert=3\) m/s. Tiếp tuyến qua điểm \((2;2)\), có hệ số góc \(-3\), nên \(y-2=-3(t-2)\). Vận tốc trung bình đo độ dời trên cả khoảng một giây, còn vận tốc tức thời tại \(2\) là giới hạn của thương sai phân khi bước thời gian tiến về \(0\).
 
 **Rubric /7:**
 1. Tính \(s(2)=2\) (1 điểm).
@@ -542,7 +542,7 @@ difficulty_band: TRANSFER
 content_version: 2
 **Đề bài:** Vật có tọa độ \(s(t)=t^3-6t^2+9t\) (m), với \(0\le t\le4\), thời gian tính bằng giây. (a) Tính vận tốc \(v(t)\) và gia tốc \(a(t)\). (b) Xác định dấu vận tốc trên \((0;1),(1;3),(3;4)\) và thời điểm đổi chiều. (c) Xác định các khoảng tốc độ tăng hoặc giảm bằng dấu của \(v(t)a(t)\), không xét các điểm \(v=0\) hoặc \(a=0\).
 
-**Lời giải:** Ta có \(v(t)=3t^2-12t+9=3(t-1)(t-3)\) (m/s) và \(a(t)=6(t-2)\) (m/s²). Vận tốc dương trên \((0;1)\) và \((3;4)\), âm trên \((1;3)\); do đó vật đổi chiều tại \(t=1\) và \(t=3\). Gia tốc âm trên \((0;2)\), dương trên \((2;4)\). Khi \(v\ne0\), đạo hàm của tốc độ \(|v|\) bằng \(a\) nếu \(v>0\) và bằng \(-a\) nếu \(v<0\). Vì vậy tốc độ giảm trên \((0;1)\), \((2;3)\) và tăng trên \((1;2)\), \((3;4)\). Các điểm \(1,2,3\) không thuộc các khoảng đang xét.
+**Lời giải:** Ta có \(v(t)=3t^2-12t+9=3(t-1)(t-3)\) (m/s) và \(a(t)=6(t-2)\) (m/s²). Vận tốc dương trên \((0;1)\) và \((3;4)\), âm trên \((1;3)\); do đó vật đổi chiều tại \(t=1\) và \(t=3\). Gia tốc âm trên \((0;2)\), dương trên \((2;4)\). Khi \(v\ne0\), đạo hàm của tốc độ \(\lvert v\rvert\) bằng \(a\) nếu \(v>0\) và bằng \(-a\) nếu \(v<0\). Vì vậy tốc độ giảm trên \((0;1)\), \((2;3)\) và tăng trên \((1;2)\), \((3;4)\). Các điểm \(1,2,3\) không thuộc các khoảng đang xét.
 
 **Rubric /7:**
 1. Tính \(v(t)\) (1 điểm).
