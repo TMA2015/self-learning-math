@@ -84,7 +84,7 @@ const alreadyClean = [
   },
   {
     file: "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
-    sha: "04478b7f379efb21377216b3543de656e2ace1f0",
+    sha: "0570aed17f04537aa5c1047c56d3bf18b91a25dd",
     forbidden: "**Written:** học sinh tự đối chiếu, không được tự động ghi Mastery",
     items: 120
   }
