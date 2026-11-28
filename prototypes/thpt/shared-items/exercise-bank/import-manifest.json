@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.1: exact placement partition complete; compare shared interactive fields against CP104 and CP81–90 plus later scoped evidence, then verify only unproven/changed fields and actual Written sources. Persist exact field-level progress. Do not reclassify or redo accepted unchanged fields.",
+    "next": "08.1: shared 34/815 interactive IDs (G10 ChI–II shared subset) notation evidence recorded; next shared IDs in items/g10-chiii.json then proceed by shard. Written 0/160 in this execution batch; use existing canonical evidence. Do not re-read closed fields.",
     "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -209,6 +209,221 @@
               "total": 975,
               "written": 160,
               "interactive": 815
+            },
+            "progress": {
+              "fields": [
+                "stem",
+                "options",
+                "answer_key",
+                "hints",
+                "worked_solution",
+                "check_again",
+                "remediation",
+                "rubric"
+              ],
+              "record_encoding": "[item_id, inherited_field_bitmask, directly_checked_field_bitmask], bits correspond to fields index; absent fields excluded. Scope is X-G.5 learner-visible content only.",
+              "completed_shards": [
+                {
+                  "shard": "items/g10-chi.json",
+                  "blob": "e9d5300484824428d9ab3db9df8a4d02d96d8e24",
+                  "baseline_commit": "2fbb06ebc6c2d03dfa7becedcc75b94f10bdfe25",
+                  "baseline_blob": "3351c54dfc1e01fdee7a193f6326aca33491adf6",
+                  "evidence_cp": "CP91",
+                  "records": [
+                    [
+                      "THPT-G10-B01-C01",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-B01-C02",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-B01-P01",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-B01-P02",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-B01-P03",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-B01-P04",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-B01-P05",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-B01-P06",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-B02-C01",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-B02-C02",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-B02-P01",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-B02-P02",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-B02-P03",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-B02-P04",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-B02-P05",
+                      68,
+                      59
+                    ],
+                    [
+                      "THPT-G10-B02-P06",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-G10-CHI-TRY03",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-G10-CHI-TRY06",
+                      0,
+                      31
+                    ]
+                  ],
+                  "findings": "All pending field values read for shared IDs only; structured expressions already enclosed in inline TeX, set/interval notation and relation symbols valid; isolated letters/values or prose slash (đúng/sai, kg) permitted. No new notation fix required. No repeat math/PED audit."
+                },
+                {
+                  "shard": "items/g10-chii.json",
+                  "blob": "ed68a8f4948ada93b09b3ba86a6795895353a534",
+                  "baseline_commit": "00e3cfab191fa939916d78076ea36e0c1e7f6bdf",
+                  "baseline_blob": "14c0d0a60e94eb22e213ca49d111f0b3593136dd",
+                  "evidence_cp": "CP92",
+                  "records": [
+                    [
+                      "THPT-G10-B03-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B03-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B03-P01",
+                      85,
+                      10
+                    ],
+                    [
+                      "THPT-G10-B03-P02",
+                      69,
+                      26
+                    ],
+                    [
+                      "THPT-G10-B03-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B03-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B03-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B03-P06",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-G10-B04-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B04-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B04-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B04-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B04-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B04-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B04-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B04-P06",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "All pending field values read for shared IDs only; structured expressions already enclosed in inline TeX, set/interval notation and relation symbols valid; isolated letters/values or prose slash (đúng/sai, kg) permitted. No new notation fix required. No repeat math/PED audit."
+                }
+              ],
+              "completed_interactive": 34,
+              "completed_written": 0,
+              "remaining_interactive": 781,
+              "remaining_written": 160,
+              "counts": {
+                "ids": 34,
+                "inherited": 117,
+                "newly_checked": 86
+              },
+              "next": "Shared IDs in items/g10-chiii.json; use CP93 exact snapshot and later field evidence, compare only unverified/changed fields. Other fields and math/PED not reopened."
             }
           },
           {
