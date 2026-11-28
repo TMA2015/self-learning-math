@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "3d54cabe393cbd0b32b08b478636250e53a3ad06",
+    "as_of_commit": "639fc609d028530a0eea36b5586adf5fc0e75df3",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "08: complete actual remaining coverage/depth/difficulty and remediation route/notation gaps; do not reopen closed item07. 141 Topic first-try placements still lack explicit D6 binding; verify source/target before adding. Then Q18/09 and handoff/10 only when evidence complete.",
+    "next": "08: close real SGK Core/Practice difficulty-placement discrepancies and remaining Topic difficulty/coverage and SGK D6/Q14/X-G.5/X-G.6 gaps. 414 Topic first-try D6 bindings completed; no re-audit of closed item07 or that binding scope. Then 09 Q18 and 10 handoff only when complete.",
     "status": "CHECKLIST_08_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -112,34 +112,58 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "checklist08_d6_targeted_delta_20261128",
-    "checklist08_d6_targeted_delta_20261128": {
-      "scope": "Q08/X-G.5/X-G.6 targeted candidate delta; item08 remains open, no full Q18 verdict.",
-      "base_commit": "5877bb47ff54f24513383756454bc61d8eaa07df",
-      "after_commit": "3d54cabe393cbd0b32b08b478636250e53a3ad06",
-      "item_shard_blob": "212c58ecfd14fb85104b718d0f5cb9eea7742e54",
-      "placement_shard_blob": "740185a44a6d7f917f0ed394a0da33471ddedfb0",
+    "current_checkpoint_key": "checklist08_topic_d6_bindings_closed_20261128",
+    "checklist08_topic_d6_bindings_closed_20261128": {
+      "scope": "Item08 targeted Q08/Q14/X-G.5/X-G.6; Topic first-try practice target bindings completed, not blanket Q08/PED/Q18.",
+      "base_commit": "fd9d3bb8c7fc6c2a0a49c50c30725c7504bd1898",
+      "after_commit": "639fc609d028530a0eea36b5586adf5fc0e75df3",
+      "blobs": {
+        "topic_first_try_placements": "a9f7bdfb808ebac0f366cccd7934a0330854684f",
+        "topic_first_try_items": "21a888b1b98d5a6d02b4ce6e1567f3a7b8c7471d",
+        "g12_chi_items": "f54fe19e1160d13f7a3b4b53923f38a7055913c5"
+      },
       "verified": {
-        "first_try_items": 393,
-        "first_try_placements": 414,
-        "changed_item_ids": 127,
-        "changed_placement_rows": 147,
-        "explicit_d6_bindings_before": 126,
-        "explicit_d6_bindings_after": 273,
-        "remaining_without_explicit_binding": 141
+        "topic_first_try_placements": 414,
+        "explicit_binding_before": 273,
+        "explicit_binding_after": 414,
+        "missing_binding": 0,
+        "wrong_target_order": 0,
+        "self_reference": 0,
+        "changed_placements": 141,
+        "changed_item_records": 6,
+        "first_try_primary_outcomes_without_practice": 0
       },
       "fixes": [
-        "THPT-TOP06-KFT07: corrected stale practice numbers 17/18/26 to exact same-skill 16/20; added targeted D6 and unambiguous option notation; stem/key/interaction unchanged.",
-        "CD15–20: 126 remediation fields with internal IDs translated to exact same-topic practice orders; existing worked solutions retained; existing numbered references and prior IDs bound in placement metadata.",
-        "CD21–22: 21 existing worked-solution D6 routes bound to exact same-topic practice ID and formative candidate mode, no new assessment authority."
+        "129 own first-try D6 references resolved to same-topic candidate practice orders; 12 shared items use existing source_context targets. CD10 B03-P04 stale reference to itself B44 removed; distinct B56 retained.",
+        "Five conic hints TOP14-T18/T19/T21/T22/T23 normalized to equivalent LaTeX. Shared THPT-G12-B01-KFT03 notation and SGK-specific remediation corrected; answer semantics and key C unchanged."
       ],
-      "readback": "Same item IDs/order and placement IDs/order. Only content_version/worked_solution/options/remediation fields changed in item shard; worked_solution/options changed only KFT07. Only candidate_use changed in 147 placement rows. No new IDs, keys, stems, rubric, skill or runtime changes. Counts not evidence of full coverage.",
-      "remaining": "141 placements without explicit binding are triage scope, not automatically 141 defects; CD09–14 includes 12 shared items. Actual remaining Q02/Q05/Q08/Q14/Q15/Q17 X-G.5/X-G.6 evidence still needed; no tick on 08."
+      "coverage_note": "CĐ01–21 practice outcome IDs represented in first-try placement. CĐ22 has 13 practice outcomes not explicitly named in first-try primary/secondary placement; integrated task content/skill scope must decide if actual gap; no quota inference.",
+      "difficulty_triage": {
+        "scope": "All 24 SGK chapter shards plus 3 supplement groups, 988 Core/Practice/Application placements joined to canonical records.",
+        "flags": {
+          "G10": {
+            "core_non_recognize": 26,
+            "other_recognize": 1
+          },
+          "G11": {
+            "core_non_recognize": 78,
+            "other_recognize": 7
+          },
+          "G12": {
+            "core_non_recognize": 84,
+            "other_recognize": 5
+          },
+          "total": 201
+        },
+        "interpretation": "Flags are role/difficulty inconsistencies under X-G.6, not 201 adjudicated defects. Do not mechanically relabel or move items. Concrete G10 B18: C01 requires solving radical equation with sign/filter and C02 requires substitution, factorization, checks; both are Core with UNDERSTAND/APPLY and no RECOGNIZE Core. Existing same-topic candidate and SGK first-try items for these skills inspected; no direct recognition replacement found in inspected source. Need targeted correction while preserving coverage, canonical IDs, prior receipt and migration boundary.",
+        "readback": "414 Topic first-try placements all bind exact same-topic practice IDs/order; zero self links; six changed records keep canonical identity and answer semantics. No new IDs, roles, runtime or release authorization in this turn."
+      },
+      "remaining": "Actual difficulty/coverage and remaining bank-wide applicable evidence required. 08 remains unchecked; no blanket academic approval."
     },
     "previous_manifest": {
-      "commit": "5877bb47ff54f24513383756454bc61d8eaa07df",
-      "blob": "5437894a49324a85bfeb20698ccaf8d3ffa92cd7",
-      "key": "checklist07_affected_delta_acceptance_closed_20261128"
+      "commit": "fd9d3bb8c7fc6c2a0a49c50c30725c7504bd1898",
+      "blob": "e1790f8aacf741b49af0e651c2a962749a090fa3",
+      "key": "checklist08_d6_targeted_delta_20261128"
     }
   },
   "pending_review": {
