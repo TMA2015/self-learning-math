@@ -432,7 +432,7 @@ problem_family_id: TOP05-WRITTEN_RESTRICTED_INTEGER_MODEL
 **Đề bài:** Mô hình lợi nhuận \(R(q)=-(q-4)^2+16\) (triệu đồng), với số sản phẩm \(q\in\{0;1;2;3;4;5;6\}\). (a) Tìm phương án tối ưu ban đầu; (b) nếu chỉ được chọn \(q=5\) hoặc \(q=6\), tìm phương án mới; (c) giải thích vì sao đỉnh không tự động là đáp án khi miền khả thi thay đổi.
 **Đáp án:** Ban đầu \(q=4\), GTLN 16 triệu đồng; khi chỉ có \(q\in\{5;6\}\), chọn \(q=5\), lợi nhuận 15 triệu đồng.
 **Lời giải:** (a) \(R(q)=16-(q-4)^2\le16\). Vì \(q=4\) thuộc miền khả thi và đạt dấu bằng, đó là phương án tối ưu duy nhất, lợi nhuận 16 triệu đồng. (b) Trong miền mới, 4 không được chọn. Tính \(R(5)=16-1=15\) và \(R(6)=16-4=12\) triệu đồng; \(15>12\) nên chọn 5. (c) Tối ưu là tìm giá trị lớn nhất trên tập phương án được phép, không phải trên toàn \(\mathbb R\). Thay đổi miền khả thi có thể làm thay đổi phương án tối ưu.
-**Rubric:** 7 điểm: hiểu miền số nguyên và đơn vị (1 điểm); nhận đỉnh khả thi, kết luận 16 (2 điểm); tính đúng hai giá trị 15 và 12 (2 điểm); chọn q=5 (1 điểm); giải thích ảnh hưởng của miền (1 điểm). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+**Rubric:** 7 điểm: hiểu miền số nguyên và đơn vị (1 điểm); nhận đỉnh khả thi, kết luận 16 (2 điểm); tính đúng hai giá trị 15 và 12 (2 điểm); chọn \(q=5\) (1 điểm); giải thích ảnh hưởng của miền (1 điểm). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
 **Kiểm lỗi:** Nếu vẫn chọn 4, hãy liệt kê đúng hai giá trị được phép rồi so trực tiếp.
 **Chế độ:** Tự đối chiếu sau khi làm; không chấm tự động chính thức hoặc ghi Mastery.
 
