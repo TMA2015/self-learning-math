@@ -1103,6 +1103,26 @@ function main(){
   verifyG11W1(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));
   return;
  }
+ const b07Display1132Files=["docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md","prototypes/thpt/ux795/G11_B07_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml"];
+ if(changed.length===b07Display1132Files.length&&new Set(changed).size===changed.length&&changed.every(x=>b07Display1132Files.includes(x))){
+  const lesson="docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md",receipt=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G11_B07_DISPLAY_Q18_DELTA_1132_20261128.md"),"utf8");
+  assert.deepEqual((process.env.SCOPED_LESSONS||"").split(",").filter(Boolean),[lesson]);
+  const old=cp.execFileSync("git",["show",previous+":"+lesson],{cwd:root});
+  const now=fs.readFileSync(path.join(root,lesson));
+  assert.equal(blob(old),"28dbd57c0c08d5887ff829c1f706cfcc25d0fa9b");assert.equal(blob(now),"09abeb68746d84da84b8b29bfc34e933a518d988");
+  assert(receipt.includes(blob(old))&&receipt.includes(blob(now))&&receipt.includes("7234992998")&&receipt.includes("DELTA_B_SOURCE_EQUIVALENT"),"B07 exact Q18 source-equivalent receipt");
+  const before=old.toString("utf8"),after=now.toString("utf8"),fix=normalizeG12DisplayBlocks(before);
+  assert.deepEqual([fix.total,fix.affected,fix.inserted],[3,3,6]);
+  assert.equal(after,fix.text,"B07 only six blank separators may change");
+  assert.deepEqual(before.split("\n").filter(l=>l.trim()),after.split("\n").filter(l=>l.trim()));
+  assert.deepEqual(latex(before),latex(after));
+  assert.deepEqual(firstAnswers(before),firstAnswers(after));
+  assert.equal(firstAnswers(after).length,3,"three unchanged voluntary comparison answers");
+  for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"])assert.deepEqual(tokenSet(before,id),tokenSet(after,id));
+  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final)/i.test(after));
+  console.log("PASS #1132 G11 B07 exact source/Q15/Q16: three unchanged TeX blocks, six blank separators, three unchanged answers");
+  return;
+ }
  const display1132Lessons=["docs/thpt-preview/sgk/chuong-vi/bai-18.md","docs/thpt-preview/sgk/chuong-vii/bai-21.md","docs/thpt-preview/sgk/chuong-vii/bai-22.md"];
  const display1132Files=[...display1132Lessons,...["prototypes/thpt/ux795/G10_B18_B21_B22_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/thpt-q18-g10-source-receipt.cjs"]];
  if(changed.length===display1132Files.length&&new Set(changed).size===changed.length&&changed.every(x=>display1132Files.includes(x))){
