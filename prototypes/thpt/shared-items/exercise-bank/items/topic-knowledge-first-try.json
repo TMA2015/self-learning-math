@@ -15,7 +15,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Lấy vectơ vuông góc với pháp tuyến (3;2)."
+      "Lấy vectơ vuông góc với pháp tuyến \\((3;2)\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -198,7 +198,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Tìm vectơ AB, chọn pháp tuyến rồi thế tọa độ một điểm."
+      "Tìm vectơ \\(\\overrightarrow{AB}\\), chọn pháp tuyến rồi thế tọa độ một điểm."
     ],
     "rubric": null,
     "interaction": {
@@ -861,7 +861,7 @@
     "content_version": "CD14-BANK-PARTIAL-20261127-THPT-TOP14-T15",
     "stem": "Đường tròn tâm \\(O(0;0)\\), \\(R=5\\), \\(P(3;4)\\). Viết tiếp tuyến tại P.",
     "answer_key": "\\(3x+4y=25\\).",
-    "worked_solution": "Kiểm \\(OP=\\sqrt{3^2+4^2}=5=R\\) nên P thuộc đường tròn. Tiếp tuyến tại P vuông góc với bán kính OP, nên nhận \\(\\overrightarrow{OP}=(3;4)\\) làm pháp tuyến. Phương trình \\(3(x-3)+4(y-4)=0\\), hay \\(3x+4y=25\\).\n\n**Nếu làm sai:** Nếu dùng vectơ tiếp tuyến làm pháp tuyến, hãy vẽ IP vuông góc với tiếp tuyến rồi kiểm P thực sự thuộc đường tròn.\n\n\n**Kiểm lỗi**\n\nNếu chọn vectơ tiếp tuyến làm pháp tuyến hoặc chưa kiểm P nằm trên đường tròn, đọc **Kiến thức 3.3**. Làm **Bài luyện 48** và **Bài luyện 57**, dùng bán kính IP vuông góc tiếp tuyến.",
+    "worked_solution": "Kiểm \\(OP=\\sqrt{3^2+4^2}=5=R\\) nên P thuộc đường tròn. Tiếp tuyến tại P vuông góc với bán kính OP, nên nhận \\(\\overrightarrow{OP}=(3;4)\\) làm pháp tuyến. Phương trình \\(3(x-3)+4(y-4)=0\\), hay \\(3x+4y=25\\).\n\n**Nếu làm sai:** Nếu dùng vectơ tiếp tuyến làm pháp tuyến, hãy vẽ \\(OP\\) vuông góc với tiếp tuyến rồi kiểm P thực sự thuộc đường tròn.\n\n\n**Kiểm lỗi**\n\nNếu chọn vectơ tiếp tuyến làm pháp tuyến hoặc chưa kiểm P nằm trên đường tròn, đọc **Kiến thức 3.3**. Làm **Bài luyện 48** và **Bài luyện 57**, dùng bán kính \\(OP\\) vuông góc tiếp tuyến.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B21-CIRCLE_TANGENT"
@@ -994,7 +994,7 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Thay x=5 vào phương trình đường tròn rồi giải y."
+      "Thay \\(x=5\\) vào phương trình đường tròn rồi giải y."
     ],
     "rubric": null,
     "interaction": {
