@@ -408,9 +408,9 @@
   {
     "item_id": "THPT-G10-CHVII-RD1-07",
     "content_version": "SGK-G10-CHVII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVII-RD1-07",
-    "stem": "Xét \\(d_1:2x-3y+1=0\\), \\(d_2:4x-6y+5=0\\), \\(d_3:3x+2y-7=0\\), \\(d_4:-2x+3y-1=0\\). Đánh giá bốn nhận định: (a) \\(d_1\\parallel d_2\\) và phân biệt; (b) \\(d_1\\perp d_3\\); (c) \\(d_1\\) và \\(d_4\\) cắt tại một điểm; (d) \\(d_2\\) trùng \\(d_1\\). Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Xét \\(d_1:2x-3y+1=0\\), \\(d_2:4x-6y+5=0\\), \\(d_3:3x+2y-7=0\\), \\(d_4:-2x+3y-1=0\\). Chọn tất cả nhận định đúng; xét từng nhận định độc lập trước khi nộp toàn bài.",
     "answer_key": "(a) Đ; (b) Đ; (c) S; (d) S.",
-    "worked_solution": "\\(d_2\\) có hệ số \\(x,y\\) gấp 2 nhưng hằng số \\(5\\ne2\\), nên song song phân biệt. Pháp tuyến \\(n_1=(2,-3)\\) và \\(n_3=(3,2)\\) có tích vô hướng 0. \\(d_4=-d_1\\), trùng nhau, không chỉ cắt ở một điểm.",
+    "worked_solution": "(a) Đúng: nhân hai hệ số của \\(x,y\\) trong \\(d_1\\) với 2 thì được các hệ số tương ứng trong \\(d_2\\), nhưng hằng số \\(5\\ne2\\cdot1\\); hai đường song song phân biệt. (b) Đúng: hai vectơ pháp tuyến \\(\\vec n_1=(2;-3)\\) và \\(\\vec n_3=(3;2)\\) có tích vô hướng \\(2\\cdot3-3\\cdot2=0\\). (c) Sai: nhân cả hai vế của phương trình \\(d_1\\) với \\(-1\\) được phương trình \\(d_4\\); hai đường trùng nhau. (d) Sai theo (a).",
     "skill_ids": [
       "G10-B20-RELATIVE_POSITION",
       "G10-B20-PERPENDICULAR"
@@ -423,9 +423,10 @@
     ],
     "rubric": null,
     "interaction": {
-      "type": "SINGLE_CHOICE",
+      "type": "MULTIPLE_CHOICE",
       "correct_option_ids": [
-        "C"
+        "A",
+        "B"
       ],
       "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
@@ -456,19 +457,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Đ, Đ, Đ, S"
+        "text": "\\(d_1\\parallel d_2\\) và hai đường thẳng phân biệt."
       },
       {
         "id": "B",
-        "text": "S, Đ, S, Đ"
+        "text": "\\(d_1\\perp d_3\\)."
       },
       {
         "id": "C",
-        "text": "Đ, Đ, S, S"
+        "text": "\\(d_1\\) và \\(d_4\\) cắt tại đúng một điểm."
       },
       {
         "id": "D",
-        "text": "Đ, S, S, Đ"
+        "text": "\\(d_2\\) trùng \\(d_1\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -948,9 +949,9 @@
   {
     "item_id": "THPT-G10-CHVII-RD1-15",
     "content_version": "SGK-G10-CHVII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVII-RD1-15",
-    "stem": "Cho đường tròn \\((C):x^2+(y+1)^2=9\\). Đánh giá: (a) \\(y=2\\) tiếp xúc \\((C)\\); (b) tiếp điểm ở \\((0;-2)\\); (c) \\(y=1\\) cắt \\((C)\\) tại hai điểm; (d) đường thẳng \\(y=3\\) cắt \\((C)\\) tại hai điểm. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Cho đường tròn \\((C):x^2+(y+1)^2=9\\). Chọn tất cả nhận định đúng; xét từng nhận định độc lập trước khi nộp toàn bài.",
     "answer_key": "(a) Đ; (b) S; (c) Đ; (d) S.",
-    "worked_solution": "Tâm \\((0,-1)\\), \\(R=3\\). Khoảng cách từ tâm đến \\(y=2\\) là 3, nên tiếp xúc ở \\((0,2)\\). Đến \\(y=1\\) là 2 (<3), cắt hai điểm. Đến \\(y=3\\) là 4 (>3), không giao.",
+    "worked_solution": "Tâm \\(I(0;-1)\\), bán kính \\(R=3\\). (a) Đúng: khoảng cách từ \\(I\\) đến \\(y=2\\) bằng \\(3=R\\). (b) Sai: chân đường vuông góc từ \\(I\\) lên \\(y=2\\) là \\((0;2)\\), không phải \\((0;-2)\\). (c) Đúng: khoảng cách đến \\(y=1\\) bằng \\(2<R\\). (d) Sai: khoảng cách đến \\(y=3\\) bằng \\(4>R\\), không có giao điểm.",
     "skill_ids": [
       "G10-B21-LINE_CIRCLE_POSITION"
     ],
@@ -962,8 +963,9 @@
     ],
     "rubric": null,
     "interaction": {
-      "type": "SINGLE_CHOICE",
+      "type": "MULTIPLE_CHOICE",
       "correct_option_ids": [
+        "A",
         "C"
       ],
       "scoring_rule": "EXACT_OPTION_SET",
@@ -995,19 +997,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Đ, Đ, Đ, S"
+        "text": "Đường thẳng \\(y=2\\) tiếp xúc \\((C)\\)."
       },
       {
         "id": "B",
-        "text": "S, S, Đ, Đ"
+        "text": "Điểm tiếp xúc của đường thẳng \\(y=2\\) với \\((C)\\) là \\((0;-2)\\)."
       },
       {
         "id": "C",
-        "text": "Đ, S, Đ, S"
+        "text": "Đường thẳng \\(y=1\\) cắt \\((C)\\) tại hai điểm."
       },
       {
         "id": "D",
-        "text": "Đ, S, S, Đ"
+        "text": "Đường thẳng \\(y=3\\) cắt \\((C)\\) tại hai điểm."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1283,9 +1285,9 @@
   {
     "item_id": "THPT-G10-CHVII-RD1-20",
     "content_version": "SGK-G10-CHVII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVII-RD1-20",
-    "stem": "Xét elip \\((E):x^2/25+y^2/16=1\\) và đường \\(d:y=4x/5\\). Đánh giá: (a) Hệ có đúng một giao điểm; (b) các giao điểm có \\(x=\\pm5/\\sqrt2\\); (c) hai giao điểm nằm cùng một góc phần tư; (d) có giao điểm với hoành độ \\(x=0\\). Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
+    "stem": "Xét elip \\((E):\\frac{x^2}{25}+\\frac{y^2}{16}=1\\) và đường thẳng \\(d:y=\\frac{4x}{5}\\). Chọn tất cả nhận định đúng; xét từng nhận định độc lập trước khi nộp toàn bài.",
     "answer_key": "(a) S; (b) Đ; (c) S; (d) S.",
-    "worked_solution": "Thế \\(y=4x/5\\) vào \\((E)\\): \\(x^2/25+(16x^2/25)/16=2x^2/25=1\\), \\(x=\\pm5/\\sqrt2\\), \\(y=\\pm4/\\sqrt2\\) cùng dấu. Hai điểm ở góc phần tư I và III, không có \\(x=0\\).",
+    "worked_solution": "Thế \\(y=\\frac{4x}{5}\\) vào phương trình elip, được \\(\\frac{2x^2}{25}=1\\). Suy ra \\(x=\\pm\\frac{5}{\\sqrt2}\\) và \\(y=\\pm\\frac{4}{\\sqrt2}\\) cùng dấu với \\(x\\). (a) Sai: có hai giao điểm. (b) Đúng. (c) Sai: chúng thuộc góc phần tư I và III. (d) Sai: không có nghiệm \\(x=0\\).",
     "skill_ids": [
       "G10-B22-CONIC_INTERSECTION"
     ],
@@ -1297,9 +1299,9 @@
     ],
     "rubric": null,
     "interaction": {
-      "type": "SINGLE_CHOICE",
+      "type": "MULTIPLE_CHOICE",
       "correct_option_ids": [
-        "D"
+        "B"
       ],
       "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
@@ -1330,19 +1332,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Đ, Đ, S, S"
+        "text": "Hệ phương trình có đúng một giao điểm."
       },
       {
         "id": "B",
-        "text": "S, S, Đ, S"
+        "text": "Các giao điểm có hoành độ \\(x=\\pm\\frac{5}{\\sqrt2}\\)."
       },
       {
         "id": "C",
-        "text": "S, Đ, Đ, Đ"
+        "text": "Hai giao điểm nằm cùng một góc phần tư."
       },
       {
         "id": "D",
-        "text": "S, Đ, S, S"
+        "text": "Có giao điểm với hoành độ \\(x=0\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
