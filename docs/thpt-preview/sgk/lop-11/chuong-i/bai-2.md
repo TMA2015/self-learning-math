@@ -49,7 +49,17 @@
     \cos(a+b)=\cos a\cos b-\sin a\sin b.
     \]
 
-    Với sin, ta dùng \(\sin x=\cos\left(\dfrac{\pi}{2}-x\right)\). Chẳng hạn, \(\sin(a+b)=\cos((\pi/2-a)-b)=\cos(\pi/2-a)\cos b+\sin(\pi/2-a)\sin b=\sin a\cos b+\cos a\sin b\). Thay \(b\) bằng \(-b\) cho công thức hiệu. Ta có
+    Với sin, ta dùng \(\sin x=\cos\left(\dfrac{\pi}{2}-x\right)\). Chẳng hạn, tách phép biến đổi thành ba dòng:
+
+    \[
+    \begin{aligned}
+    \sin(a+b)&=\cos((\pi/2-a)-b)\\
+    &=\cos(\pi/2-a)\cos b+\sin(\pi/2-a)\sin b\\
+    &=\sin a\cos b+\cos a\sin b.
+    \end{aligned}
+    \]
+
+    Thay \(b\) bằng \(-b\) cho công thức hiệu. Ta có
 
     \[
     \sin(a+b)=\sin a\cos b+\cos a\sin b,\qquad
