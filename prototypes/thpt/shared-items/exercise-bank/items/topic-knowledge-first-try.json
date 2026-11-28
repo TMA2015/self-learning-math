@@ -7864,9 +7864,9 @@
   },
   {
     "item_id": "THPT-TOP19-T09",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T09",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T09-D07",
     "stem": "Hệ số của \\(x^3\\) trong \\((x+3)^4\\) bằng bao nhiêu? Giải thích số cách chọn ba thừa số chứa x và hệ số của thừa số còn lại.",
-    "answer_key": "12.",
+    "answer_key": "12, vì chọn ba trong bốn vị trí chứa x có \\(C_4^3=4\\) cách; vị trí còn lại cho hệ số 3.",
     "worked_solution": "Muốn \\(x^3\\) chọn x tại 3 trong 4 vị trí: \\(C_4^3=4\\) cách; vị trí còn lại phải chọn 3, nên hệ số là \\(4\\cdot3=12\\).\n\n**Kiểm lỗi**\n\nNếu em chép số 4 ở hàng \\(n=4\\) của tam giác Pascal thì mới đếm số cách chọn vị trí, chưa nhân hệ số 3 của thừa số không chứa x. Viết rõ ba lần chọn x và một lần chọn 3: \\(C_4^3\\cdot3=12\\). Đọc lại **Kiến thức 3.1**, sau đó thử **Bài luyện 28** và **Bài luyện 30** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -7911,7 +7911,7 @@
       },
       {
         "id": "B",
-        "text": "12"
+        "text": "12, vì chọn ba trong bốn vị trí chứa x có \\(C_4^3=4\\) cách; vị trí còn lại cho hệ số 3."
       },
       {
         "id": "C",
@@ -8052,9 +8052,9 @@
   },
   {
     "item_id": "THPT-TOP19-T11",
-    "content_version": "CD19-BANK-20261127-THPT-TOP19-T11",
+    "content_version": "CD19-BANK-20261127-THPT-TOP19-T11-D07",
     "stem": "Trong khai triển \\((3x-2)^5\\), số hạng không chứa \\(x\\) là bao nhiêu? Giải thích bằng cách chọn hạng tử từ năm thừa số.",
-    "answer_key": "\\(-32\\).",
+    "answer_key": "\\(-32\\), vì phải chọn \\(-2\\) từ cả năm thừa số, được \\((-2)^5\\).",
     "worked_solution": "Chọn \\(-2\\) từ cả năm thừa số, không chọn \\(3x\\) ở vị trí nào, nên có duy nhất \\(C_5^5=1\\) cách cho hạng tử đó. Hệ số tự do là \\((-2)^5=\\mathbf{-32}\\).\n\n**Kiểm lỗi**\n\nNếu được +32, em đã quên số lần chọn thừa số âm là **5 lần (lẻ)**. Nếu tính \\(5\\cdot(-2)\\), em đã nhầm cộng năm lần với **nhân năm thừa số**. Thử \\(n=2\\) trước: \\((x-2)^2=x^2-4x+4\\) có hằng số \\((-2)^2=4\\). Đọc lại **Kiến thức 3.4**, sau đó thử **Bài luyện 35** và **Bài luyện 40** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -8106,7 +8106,7 @@
       },
       {
         "id": "D",
-        "text": "−32"
+        "text": "\\(-32\\), vì phải chọn \\(-2\\) từ cả năm thừa số, được \\((-2)^5\\)."
       }
     ],
     "exercise_type": "INTERACTIVE",
@@ -9418,9 +9418,9 @@
   },
   {
     "item_id": "THPT-TOP21-T04",
-    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-T04",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-T04-D07",
     "stem": "Tung hai đồng xu cân đối, độc lập và phân biệt. A: đồng xu thứ nhất ngửa; B: có đúng một mặt ngửa trong hai đồng xu. A, B có độc lập không?",
-    "answer_key": "Có, độc lập.",
+    "answer_key": "Có, vì \\(P(A\\cap B)=\\frac14=P(A)P(B)=\\frac12\\cdot\\frac12\\).",
     "worked_solution": "Quy ước N là ngửa, S là sấp. \\(\\Omega=\\{NN,NS,SN,SS\\}\\). \\(P(A)=\\frac24,\\ P(B)=\\frac24,\\ P(A\\cap B)=\\frac14\\) (chỉ NS). Vì \\(\\frac14=\\frac12\\cdot\\frac12\\), A và B độc lập trong mô hình này.\n\n**Kiểm lỗi**\n\nNếu kết luận phụ thuộc chỉ vì B có nhắc đồng xu đầu, em đã suy theo ngôn ngữ. Hãy đếm giao và tích; cả hai cùng bằng \\(\\frac{1}{4}\\). Ôn lại mục Kiến thức 1.4 (dấu hiệu độc lập) và Bài luyện 4 tại Luyện tập 1.4.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -9473,7 +9473,7 @@
       },
       {
         "id": "D",
-        "text": "Có, vì xác suất giao \\(\\frac{1}{4}\\) bằng tích hai xác suất \\(\\frac{1}{2}\\)"
+        "text": "Có, vì \\(P(A\\cap B)=\\frac14=P(A)P(B)=\\frac12\\cdot\\frac12\\)."
       }
     ]
   },
@@ -9601,9 +9601,9 @@
   },
   {
     "item_id": "THPT-TOP21-T07",
-    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-T07",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-T07-D07",
     "stem": "Chọn lớp A với xác suất \\(\\frac35\\) hoặc lớp B với xác suất \\(\\frac25\\), rồi rút đều một thẻ trong lớp đã chọn. Trong A tỉ lệ thẻ đỏ là \\(\\frac3{10}\\); trong B tỉ lệ đỏ là \\(\\frac14\\). Lập bốn xác suất ở lá đỏ/không đỏ của cây và tính \\(P(\\text{đỏ})\\).",
-    "answer_key": "A-đỏ: \\(\\frac9{50}\\); A-không đỏ: \\(\\frac{21}{50}\\); B-đỏ: \\(\\frac1{10}\\); B-không đỏ: \\(\\frac3{10}\\); \\(P(\\text{đỏ})=\\frac7{25}\\).",
+    "answer_key": "A–đỏ: \\(\\frac9{50}\\); A–không đỏ: \\(\\frac{21}{50}\\); B–đỏ: \\(\\frac1{10}\\); B–không đỏ: \\(\\frac3{10}\\); \\(P(\\text{đỏ})=\\frac7{25}\\).",
     "worked_solution": "\\(P(A\\cap\\text{đỏ})=\\frac9{50}\\), \\(P(A\\cap\\text{không đỏ})=\\frac{21}{50}\\); \\(P(B\\cap\\text{đỏ})=\\frac1{10}\\), \\(P(B\\cap\\text{không đỏ})=\\frac3{10}\\). Tổng bốn lá bằng 1, \\(P(\\text{đỏ})=\\frac9{50}+\\frac1{10}=\\frac7{25}\\).\n\n**Kiểm lỗi**\n\nNếu bốn lá không cộng thành 1, hãy rà mỗi nút: đỏ và không đỏ trong A phải có tổng 1; tương tự B. Đừng cộng trực tiếp \\(\\frac{3}{10}\\) và \\(\\frac{1}{4}\\). Ôn lại mục Kiến thức 3.1 (đọc sơ đồ cây) và Bài luyện 7 tại Luyện tập 3.1.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -9644,7 +9644,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac{9}{50}\\); \\(\\frac{21}{50}\\); \\(\\frac{1}{10}\\); \\(\\frac{3}{10}\\); \\(\\frac{7}{25}\\)"
+        "text": "A–đỏ: \\(\\frac9{50}\\); A–không đỏ: \\(\\frac{21}{50}\\); B–đỏ: \\(\\frac1{10}\\); B–không đỏ: \\(\\frac3{10}\\); \\(P(\\text{đỏ})=\\frac7{25}\\)."
       },
       {
         "id": "B",
@@ -9723,8 +9723,8 @@
   },
   {
     "item_id": "THPT-TOP22-T01",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T01",
-    "stem": "Giá trị thật 9,68 mm ghi 9,7 mm: tìm sai số tuyệt đối và phần trăm tương đối.",
+    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T01-D07",
+    "stem": "Giá trị thật 9,68 mm ghi 9,7 mm: tìm sai số tuyệt đối và phần trăm tương đối. Dùng số ghi gần đúng 9,7 mm làm mẫu số khi tính sai số tương đối.",
     "answer_key": "Sai số tuyệt đối \\(0{,}02\\) mm; sai số tương đối \\(\\approx0{,}206\\%\\).",
     "worked_solution": "Sai số tuyệt đối \\(\\Delta=|9{,}68-9{,}7|=0{,}02\\) mm. Theo quy ước SGK đang dùng, sai số tương đối của số gần đúng \\(a=9{,}7\\ne0\\) là \\(\\delta_a=\\frac{\\Delta}{|a|}\\). Đổi sang phần trăm: \\(\\frac{0{,}02}{9{,}7}\\cdot100\\%\\approx0{,}206\\%\\).\n\n**Kiểm lỗi**\n\nĐừng lấy độ chính xác làm sai số thật; kiểm đơn vị và việc nhân 100 để ra phần trăm. Đọc lại **Kiến thức 1.1**, rồi tự làm **Bài luyện 2**, **Bài luyện 3**, **Bài luyện 4** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -19001,9 +19001,9 @@
   },
   {
     "item_id": "THPT-TOP10-KFT02",
-    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT02",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT02-D07",
     "stem": "\\(f(x)=x^3\\) có tăng nghiêm ngặt trên \\(\\mathbb R\\) không? Vì sao \\(f'(0)=0\\) không bác bỏ điều đó?",
-    "answer_key": "Có; đạo hàm chỉ bằng 0 tại một điểm.",
+    "answer_key": "Có; với mọi \\(x_1<x_2\\), \\(x_2^3-x_1^3=(x_2-x_1)(x_2^2+x_1x_2+x_1^2)>0\\). Đạo hàm chỉ bằng 0 tại một điểm, không tạo khoảng hằng.",
     "worked_solution": "Có. Với \\(x_1<x_2\\), \\(x_2^3-x_1^3=(x_2-x_1)(x_2^2+x_1x_2+x_1^2)>0\\), vì thừa số thứ nhất dương và thừa số thứ hai chỉ bằng 0 khi cả hai bằng 0 (không thể với hai số khác nhau); đạo hàm \\(3x^2\\ge0\\) và chỉ bằng 0 tại một điểm, không tạo ra đoạn hằng. Nếu em gán mọi nghiệm \\(f'=0\\) thành cực trị, hãy lập dấu đạo hàm **hai phía** điểm ấy.\n\n\n**Kiểm lỗi**\n\nNếu em gán mọi nghiệm \\(f'=0\\) thành cực trị hoặc quên các khoảng đổi dấu, đọc **Kiến thức 1.2**, làm **Bài 8** và **Bài 10**. Lập trục dấu \\(f'\\), phân biệt một điểm dừng với khoảng tăng/giảm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -19048,7 +19048,7 @@
       },
       {
         "id": "C",
-        "text": "Có; đạo hàm chỉ bằng 0 tại một điểm."
+        "text": "Có; với mọi \\(x_1<x_2\\), \\(x_2^3-x_1^3=(x_2-x_1)(x_2^2+x_1x_2+x_1^2)>0\\). Đạo hàm chỉ bằng 0 tại một điểm, không tạo khoảng hằng."
       },
       {
         "id": "D",
@@ -19286,10 +19286,10 @@
   },
   {
     "item_id": "THPT-TOP10-KFT07",
-    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT07",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT07-D07",
     "stem": "Hàm \\(f=x^2\\) trên ℝ có GTNN không, GTLN không?",
     "answer_key": "GTNN 0 tại \\(x=0\\); không có GTLN.",
-    "worked_solution": "Vì \\(x^2\\ge0\\) với mọi x và \\(f(0)=0\\), GTNN bằng 0. Khi \\(x\\to+\\infty\\), \\(x^2\\to+\\infty\\), nên không có GTLN.\n\nNếu nói cực đại 2 là GTLN của hàm bậc ba, thử x=10.\n\n\n**Kiểm lỗi**\n\nNếu em lấy cực đại địa phương làm GTLN trên toàn miền vô hạn, đọc **Kiến thức 2.1**, làm **Bài 25** và **Bài 26**. So cả biên và hành vi ở xa; muốn có GTLN phải có điểm thực sự đạt.",
+    "worked_solution": "Vì \\(x^2\\ge0\\) với mọi x và \\(f(0)=0\\), GTNN bằng 0. Khi \\(x\\to+\\infty\\), \\(x^2\\to+\\infty\\), nên không có GTLN.\n\nNếu cho rằng hàm có GTLN hữu hạn, thử các giá trị x ngày càng lớn và so với giá trị đã chọn.\n\n\n**Kiểm lỗi**\n\nNếu em lấy cực đại địa phương làm GTLN trên toàn miền vô hạn, đọc **Kiến thức 2.1**, làm **Bài 25** và **Bài 26**. So cả biên và hành vi ở xa; muốn có GTLN phải có điểm thực sự đạt.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-EXTREMA_GLOBAL_MEANING"
@@ -20497,9 +20497,9 @@
   },
   {
     "item_id": "THPT-TOP10-KFT32",
-    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT32",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT32-D07",
     "stem": "Nếu \\(P(q)=-(q-3{,}6)^2+20\\), \\(q\\) là số nguyên từ 0 đến 8, hãy giải thích vì sao chỉ cần so hai số nguyên nào và chọn số sản phẩm tối ưu.",
-    "answer_key": "So \\(q=3,4\\); tối ưu \\(q=4\\), \\(P(4)=19{,}84\\).",
+    "answer_key": "Hàm tăng trước 3,6 và giảm sau 3,6, nên chỉ cần so \\(q=3,4\\); chọn \\(q=4\\), \\(P(4)=19{,}84\\).",
     "worked_solution": "Vì \\(P'(q)=-2(q-3{,}6)\\), hàm tăng trước \\(3{,}6\\) và giảm sau đó. Hai ứng viên gần nhất ở hai phía là 3 và 4. So \\(P(3)=19{,}64\\), \\(P(4)=19{,}84\\), nên chọn \\(q=4\\).\n\nĐừng dùng \\(q=3{,}6\\) sản phẩm trong câu trả lời số nguyên.\n\n\n**Kiểm lỗi**\n\nNếu em làm tròn kích thước liên tục vô cớ hoặc chọn nghiệm sản lượng phân số, đọc **Kiến thức 5.7**, làm **Bài 102** và **Bài 103**. Chỉ yêu cầu số nguyên khi biến thực sự đếm số sản phẩm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -20550,7 +20550,7 @@
       },
       {
         "id": "D",
-        "text": "So \\(q=3,4\\); tối ưu \\(q=4\\), \\(P(4)=19{,}84\\)."
+        "text": "Hàm tăng trước 3,6 và giảm sau 3,6, nên chỉ cần so \\(q=3,4\\); chọn \\(q=4\\), \\(P(4)=19{,}84\\)."
       }
     ]
   },
@@ -21754,9 +21754,9 @@
   },
   {
     "item_id": "THPT-TOP11-KFT18",
-    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT18",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT18-D07",
     "stem": "Tính diện tích giữa \\(y=2x\\) và \\(y=x^2\\) trên đoạn \\([0;3]\\). Vì sao phải chia miền tại một giao điểm ở trong đoạn?",
-    "answer_key": "\\(\\frac83\\) đơn vị diện tích; chia tại \\(x=2\\).",
+    "answer_key": "\\(\\frac83\\) đơn vị diện tích; chia tại \\(x=2\\) vì hai đồ thị đổi thứ tự trên–dưới tại đó.",
     "worked_solution": "Giải \\(2x=x^2\\) được \\(x=0\\) và \\(x=2\\). Trên \\([0;2]\\), \\(2x\\ge x^2\\); trên \\([2;3]\\), \\(x^2\\ge2x\\). Vì thế \\(S=\\int_0^2(2x-x^2)\\,\\mathrm dx+\\int_2^3(x^2-2x)\\,\\mathrm dx=\\frac43+\\frac43=\\frac83\\). Nếu em lấy ngay \\(\\left|\\int_0^3(2x-x^2)dx\\right|\\), hai phần trái dấu sẽ bị triệt và không cho diện tích thực.\n\n\n**Kiểm lỗi**\n\nNếu em dùng một hiệu có dấu xuyên qua giao điểm đổi thứ tự của hai đường, đọc **Kiến thức 3.4**, làm **Bài 94** và **Bài 96**; thử thêm **Bài 97** để lập hai tích phân đúng chiều. Diện tích phải cộng trị dương từng mảnh.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -21793,7 +21793,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac83\\) đơn vị diện tích; chia tại \\(x=2\\)."
+        "text": "\\(\\frac83\\) đơn vị diện tích; chia tại \\(x=2\\) vì hai đồ thị đổi thứ tự trên–dưới tại đó."
       },
       {
         "id": "B",
@@ -21982,9 +21982,9 @@
   },
   {
     "item_id": "THPT-TOP11-KFT22",
-    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT22",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT22-D07",
     "stem": "Quay miền \\(0\\le x\\le2,\\ 1\\le y\\le3\\) quanh trục \\(Ox\\). Tính thể tích và giải thích vì sao không dùng đĩa đặc.",
-    "answer_key": "\\(16\\pi\\) đơn vị thể tích; thiết diện vành khăn.",
+    "answer_key": "\\(16\\pi\\) đơn vị thể tích; thiết diện vành khăn vì miền không chạm trục quay, diện tích tiết diện là \\(\\pi(3^2-1^2)\\).",
     "worked_solution": "Miền không chạm trục \\(Ox\\), nên mỗi thiết diện là vành khăn có bán kính ngoài \\(R=3\\), trong \\(r=1\\). Diện tích là \\(\\pi(3^2-1^2)=8\\pi\\). Thể tích \\(V=\\int_0^2 8\\pi\\,dx=16\\pi\\) đơn vị thể tích. Nếu ra \\(18\\pi\\), em đã tính cả phần lỗ; nếu ra \\(8\\pi\\), em đã dùng \\(\\pi(R-r)^2\\) thay hiệu hai diện tích.\n\n\n**Kiểm lỗi**\n\nNếu em dùng công thức đĩa đặc cho một miền quay có lỗ hoặc lấy \\((R-r)^2\\) thay \\(R^2-r^2\\), đọc **Kiến thức 4.3**, làm **Bài 113** và **Bài 115**; giải **Bài 116** về vành khăn trước khi kết luận. Chỉ áp dụng công thức sau khi xác định vùng và bán kính thật.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -22025,7 +22025,7 @@
       },
       {
         "id": "B",
-        "text": "\\(16\\pi\\) đơn vị thể tích; thiết diện vành khăn."
+        "text": "\\(16\\pi\\) đơn vị thể tích; thiết diện vành khăn vì miền không chạm trục quay, diện tích tiết diện là \\(\\pi(3^2-1^2)\\)."
       },
       {
         "id": "C",
