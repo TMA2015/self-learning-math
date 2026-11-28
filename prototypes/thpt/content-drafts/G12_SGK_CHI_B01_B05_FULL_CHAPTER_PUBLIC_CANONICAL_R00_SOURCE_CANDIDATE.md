@@ -453,13 +453,13 @@ Tự ghi dự đoán, chỉ sau đó mở từng Core. Nếu sai: đi tới đú
 ## D4: Một thư viện Written, Anchor là nhãn
 
 ### THPT-G12-CHI-B02-W01 | skill_id=G12-B02-CRITICAL_END_POINTS | placement=SGK_WRITTEN | role=WRITTEN
-**Đề:** Tìm max/min f(x)=x³−3x trên [−2,2]. Phân biệt cực trị nội với GTLN/GTNN.
-**Lời giải tự mở:** f'=3(x+1)(x−1). Ứng viên −2,−1,1,2; f lần lượt −2,2,−2,2. GTLN=2 đạt tại x=−1 và2, GTNN=−2 đạt tại x=−2 và1. Cực đại nội x=−1, cực tiểu nội x=1, không vì thế bỏ qua hai biên.
-**Rubric /4:** 1 D+f'; 1 các điểm tới hạn và biên; 1 bốn giá trị; 1 max/min đúng cả điểm đạt và phân biệt cực trị nội.
+**Đề:** Tìm GTLN, GTNN của \(f(x)=x^3-3x\) trên \([-2;2]\). Phân biệt cực trị trong khoảng với GTLN/GTNN.
+**Lời giải tự mở:** \(f'(x)=3(x+1)(x-1)\). Các điểm cần xét là \(-2,-1,1,2\); giá trị hàm lần lượt là \(-2,2,-2,2\). GTLN bằng 2 đạt tại \(x=-1\) và \(x=2\); GTNN bằng \(-2\) đạt tại \(x=-2\) và \(x=1\). Cực đại trong khoảng tại \(x=-1\), cực tiểu trong khoảng tại \(x=1\), không vì thế bỏ qua hai đầu mút.
+**Rubric /4:** 1 tập xác định và đạo hàm; 1 các điểm tới hạn và biên; 1 bốn giá trị; 1 max/min đúng cả điểm đạt và phân biệt cực trị nội.
 
 ### THPT-G12-CHI-B02-W02 | skill_id=G12-B02-OPTIMIZATION_MODEL | placement=SGK_WRITTEN | role=ANCHOR_TAG
 **Đề:** Từ 28 m dây quây khu chữ nhật không suy biến, tìm diện tích lớn nhất; giải thích có đạt diện tích nhỏ nhất không.
-**Lời giải tự mở:** x+y=14, 0<x<14; A=x(14−x), A'=14−2x; max49 m² khi x=y=7. A>0 và tiến về0 khi x→0+, nhưng 0 không đạt nên không có min.
+**Lời giải tự mở:** Gọi hai cạnh là x, y (m), \(x+y=14\), \(0<x<14\). Diện tích \(A=x(14-x)\), \(A'=14-2x\); GTLN là \(49\,\mathrm{m}^2\) khi \(x=y=7\). \(A>0\) và tiến về 0 khi \(x\to0^+\), nhưng 0 không đạt nên không có GTNN.
 **Rubric /4:** 1 xác lập đúng miền/biến; 1 công thức diện tích; 1 tìm tối ưu và đơn vị; 1 xử lý biên mở, giải thích min không tồn tại. Anchor là tag, không clone item.
 
 ## D6: HELP 5 bước, trở lại cùng outcome
@@ -632,14 +632,14 @@ Tự trả lời bằng lời trước khi mở Core; sai thì dùng HELP đúng
 ## D4: Written, Anchor một thư viện
 
 ### THPT-G12-CHI-B03-W01 | skill_id=G12-B03-GRAPH_INTERPRETATION | placement=SGK_WRITTEN | role=WRITTEN
-**Đề:** Khảo sát tiệm cận và vị trí hai nhánh của f=(3x+1)/(x−2) so với các tiệm cận.
-**Đối chiếu:** D=ℝ\{2}; f=3+7/(x−2), y=3 ngang, x=2 đứng; x<2 dưới y=3 và xuống −∞ khi x→2−, x>2 trên y=3 và lên +∞ khi x→2+.
-**Rubric /4:** 1 D+biến đổi; 1 tiệm cận ngang; 1 đứng với dấu một bên; 1 mô tả nhánh tương ứng.
+**Đề:** Khảo sát tiệm cận và vị trí hai nhánh của \(f(x)=\frac{3x+1}{x-2}\) so với các tiệm cận.
+**Đối chiếu:** \(D=\mathbb R\setminus\{2\}\); \(f(x)=3+\frac7{x-2}\). Tiệm cận ngang \(y=3\), đứng \(x=2\); khi \(x<2\), nhánh nằm dưới \(y=3\) và xuống \(-\infty\) khi \(x\to2^-\); khi \(x>2\), nhánh nằm trên \(y=3\) và lên \(+\infty\) khi \(x\to2^+\).
+**Rubric /4:** 1 tập xác định và biến đổi; 1 tiệm cận ngang; 1 đứng với dấu một bên; 1 mô tả nhánh tương ứng.
 
 ### THPT-G12-CHI-B03-W02 | skill_id=G12-B03-OBLIQUE_REMAINDER | placement=SGK_WRITTEN | role=ANCHOR_TAG
-**Đề:** Với g=(x²+1)/(x−1), tìm tiệm cận xiên và đứng, giải thích không có ngang.
-**Đối chiếu:** D=ℝ\{1}; g=x+1+2/(x−1); y=x+1 xiên; x=1 đứng; vì g lớn theo x khi |x|→∞ nên không có tiệm cận ngang.
-**Rubric /4:** 1 D; 1 chia đa thức đúng; 1 đứng và giới hạn; 1 xiên, chứng minh phần dư→0 và bác ngang. Anchor chỉ nhãn.
+**Đề:** Với \(g(x)=\frac{x^2+1}{x-1}\), tìm tiệm cận xiên và đứng, giải thích không có tiệm cận ngang.
+**Đối chiếu:** \(D=\mathbb R\setminus\{1\}\); \(g(x)=x+1+\frac2{x-1}\). Tiệm cận xiên \(y=x+1\) vì phần dư tiến về 0 khi \(|x|\to\infty\); tiệm cận đứng \(x=1\). Hàm không có giới hạn hữu hạn khi \(x\to\pm\infty\) nên không có tiệm cận ngang.
+**Rubric /4:** 1 D; 1 chia đa thức đúng; 1 đứng và giới hạn; 1 xiên, chứng minh phần dư tiến về 0 và bác ngang. Anchor chỉ nhãn.
 
 ## D6: Khắc phục sai lầm, 5 bước, một return target/outcome
 
@@ -791,14 +791,14 @@ Tự ghi dự đoán rồi kiểm tra lại bằng tính toán, không mở đá
 ## D4: Written/Anchor canonical
 
 ### THPT-G12-CHI-B04-W01 | skill_id=G12-B04-CUBIC_VARIATION | placement=SGK_WRITTEN | role=WRITTEN
-**Đề:** Lập đầy đủ bảng biến thiên và mô tả đồ thị f=x³−3x² (D, y', cực trị, giới hạn, giao Ox và tâm).
-**Lời giải tự mở:** D=ℝ, f'=3x(x−2), tăng/giảm/tăng ba khoảng, max cục bộ (0,0), min cục bộ (2,−4), lim hai đầu −∞/+∞; nghiệm x=0 bội2 và x=3 đơn; tâm (1,−2).
+**Đề:** Lập đầy đủ bảng biến thiên và mô tả đồ thị \(f(x)=x^3-3x^2\) (tập xác định, đạo hàm, cực trị, giới hạn, giao Ox và tâm đối xứng).
+**Lời giải tự mở:** \(D=\mathbb R\), \(f'(x)=3x(x-2)\); tăng trên \((-\infty;0)\), giảm trên \((0;2)\), tăng trên \((2;+\infty)\). Cực đại tại \((0;0)\), cực tiểu tại \((2;-4)\) trên đồ thị; \(\lim_{x\to-\infty}f(x)=-\infty,\ \lim_{x\to+\infty}f(x)=+\infty\). Nghiệm \(x=0\) bội 2 và \(x=3\) đơn; tâm đối xứng \((1;-2)\).
 **Rubric /4:** 1 miền+đạo hàm+dấu; 1 cực trị+bảng; 1 giới hạn+giao trục; 1 tâm và đồ thị khớp chứng cứ.
 
 ### THPT-G12-CHI-B04-W02 | skill_id=G12-B04-DOMAIN_NONCONNECT | placement=SGK_WRITTEN | role=ANCHOR_TAG
-**Đề:** Khảo sát y=(x+2)/(x−1) và thuyết minh vì sao hai nhánh không nối.
-**Lời giải tự mở:** D ℝ\{1}, y'=−3/(x−1)², giảm từng nhánh; x=1, y=1 tiệm cận; tâm (1,1); Ox (−2,0), Oy (0,−2), hai nhánh tách tại tiệm cận đứng.
-**Rubric /4:** 1 D+đạo hàm; 1 đơn điệu từng khoảng; 1 giới hạn/tiệm cận; 1 giao trục+đúng hai nhánh. Anchor chỉ tag một câu.
+**Đề:** Khảo sát \(y=\frac{x+2}{x-1}\) và thuyết minh vì sao hai nhánh không nối.
+**Lời giải tự mở:** \(D=\mathbb R\setminus\{1\}\), \(y'=-\frac3{(x-1)^2}\), giảm trên từng khoảng \((-\infty;1)\), \((1;+\infty)\). Tiệm cận đứng \(x=1\), ngang \(y=1\); tâm \((1;1)\); giao Ox tại \((-2;0)\), Oy tại \((0;-2)\); hai nhánh tách tại tiệm cận đứng.
+**Rubric /4:** 1 tập xác định và đạo hàm; 1 đơn điệu từng khoảng; 1 giới hạn/tiệm cận; 1 giao trục+đúng hai nhánh. Anchor chỉ tag một câu.
 
 ## D6: Hỗ trợ 5 bước từng outcome → item gốc
 
@@ -957,14 +957,14 @@ D. Khi x cắt vuông ở góc hộp 30×20, tại sao x=12 cm không hợp lệ
 ## D4: Written, Anchor một thư viện
 
 ### THPT-G12-CHI-B05-W01 | skill_id=G12-B05-BOUNDARY_FEASIBILITY | placement=SGK_WRITTEN | role=WRITTEN
-**Đề:** Từ giấy 30×20 cm, cắt bốn góc vuông cạnh x để gấp hộp không nắp. Tìm miền x và kích thước tạo thể tích lớn nhất; giải thích tại sao không chọn nghiệm f'=0 ngoài miền.
-**Lời giải tự mở:** 0<x<10, V=600x−100x²+4x³, V'=600−200x+12x². Nghiệm x*=(25−5√7)/3≈3.9237 hợp lệ, nghiệm còn lại >10; đạo hàm + sang − tại x*, hai biên cho V→0 nhưng hộp không hợp lệ; chiều dài đáy 30−2x*, rộng20−2x*, cao x*.
+**Đề:** Từ tờ giấy kích thước 30 cm × 20 cm, cắt bốn góc vuông cạnh x để gấp hộp không nắp. Tìm miền x và kích thước tạo thể tích lớn nhất; giải thích tại sao không chọn nghiệm \(V'=0\) ngoài miền.
+**Lời giải tự mở:** \(0<x<10\), \(V=600x-100x^2+4x^3\), \(V'=600-200x+12x^2\). Nghiệm \(x_*=\frac{25-5\sqrt7}3\approx3{,}9237\) hợp lệ, nghiệm còn lại lớn hơn 10. Đạo hàm đổi dấu từ dương sang âm tại \(x_*\), hai biên cho \(V\to0\) nhưng hộp không hợp lệ. Chiều dài đáy \(30-2x_*\), rộng \(20-2x_*\), cao \(x_*\), tính bằng cm.
 **Rubric /4:** 1 biến+miền; 1 mô hình V+đạo hàm; 1 nghiệm và dấu; 1 loại nghiệm ngoài miền, kích thước và đơn vị.
 
 ### THPT-G12-CHI-B05-W02 | skill_id=G12-B05-MARGINAL_COST | placement=SGK_WRITTEN | role=ANCHOR_TAG
-**Đề:** Chi phí C(q)=0.01q²+4q+200 (nghìn đồng) với q≥0. Tính C'(50), C(51)−C(50), nêu ý nghĩa, đơn vị và giới hạn dùng xấp xỉ đạo hàm.
-**Lời giải tự mở:** C'=0.02q+4; C'(50)=5 nghìn đồng/sp; C(51)−C(50)=0.01·101+4=5.01 nghìn đồng; sai số 0.01 nghìn đồng do bước rời rạc.
-**Rubric /4:** 1 đạo hàm; 1 giá trị C'(50); 1 sai phân; 1 diễn giải đúng đơn vị và "xấp xỉ". Anchor là nhãn, không nhân bản.
+**Đề:** Chi phí \(C(q)=0{,}01q^2+4q+200\) (nghìn đồng) với \(q\ge0\). Tính \(C'(50)\), \(C(51)-C(50)\), nêu ý nghĩa, đơn vị và giới hạn dùng xấp xỉ đạo hàm.
+**Lời giải tự mở:** \(C'(q)=0{,}02q+4\); \(C'(50)=5\) nghìn đồng/sản phẩm; \(C(51)-C(50)=0{,}01\cdot101+4=5{,}01\) nghìn đồng. Đạo hàm tại 50 xấp xỉ mức tăng chi phí khi sản xuất thêm một sản phẩm; sai số 0,01 nghìn đồng do bước rời rạc.
+**Rubric /4:** 1 đạo hàm; 1 giá trị \(C'(50)\); 1 sai phân; 1 diễn giải đúng đơn vị và "xấp xỉ". Anchor là nhãn, không nhân bản.
 
 ## D6: Khắc phục 5 bước và return đúng canonical
 
@@ -1076,13 +1076,13 @@ Chỉ ghi dự đoán; không mở đáp án trước lượt nộp cuối. Sau 
 **Author-key:** Chỉ giảm mỗi khoảng (−∞,−1), (−1,∞). Chọn x1=−2, x2=0: f(x1)=−1<f(x2)=3; không giảm trên toàn hợp.
 
 ### THPT-G12-CHI-END-W01 | skill_id=G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH | placement=SGK_CHAPTER_SELF_CHECK_PUBLIC | role=CLIENT_SELF_CHECK_WRITTEN
-**Câu hỏi tự luận:** g=(x²+2x+5)/(x+1). Tìm D, các tiệm cận, dấu đạo hàm, cực trị và vì sao không nối hai nhánh.
-**Author-key:** D=ℝ\{−1}, g=x+1+4/(x+1), đứng x=−1, xiên y=x+1. g'=1−4/(x+1)²=(x−1)(x+3)/(x+1)². Dấu + trên (−∞,−3),(1,∞); − trên (−3,−1), (−1,1). Cực đại cục bộ (−3,−4), cực tiểu cục bộ (1,4).
+**Câu hỏi tự luận:** Cho \(g(x)=\frac{x^2+2x+5}{x+1}\). Tìm tập xác định, các tiệm cận, dấu đạo hàm, cực trị và giải thích vì sao không nối hai nhánh.
+**Author-key:** \(D=\mathbb R\setminus\{-1\}\), \(g(x)=x+1+\frac4{x+1}\), tiệm cận đứng \(x=-1\), xiên \(y=x+1\). \(g'(x)=1-\frac4{(x+1)^2}=\frac{(x-1)(x+3)}{(x+1)^2}\). Dấu dương trên \((-\infty;-3)\), \((1;+\infty)\); âm trên \((-3;-1)\), \((-1;1)\). Điểm cực đại trên đồ thị \((-3;-4)\), cực tiểu \((1;4)\). Hàm không xác định tại \(x=-1\), hai nhánh tách nhau qua tiệm cận đứng.
 **Rubric tự đối chiếu /4:** 1 D/chia; 1 tiệm cận; 1 đạo hàm/dấu; 1 cực trị và nhánh không nối. Không ghi điểm Skill Mastery.
 
 ### THPT-G12-CHI-END-W02 | skill_id=G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM | placement=SGK_CHAPTER_SELF_CHECK_PUBLIC | role=CLIENT_SELF_CHECK_WRITTEN_ANCHOR
-**Câu hỏi tự luận:** P(q)=−0.2q²+16q−100 nghìn đồng, 0≤q≤80. Tìm lợi nhuận lớn nhất, so biên và giải thích miền.
-**Author-key:** P'=16−0.4q=0 ⇒ q=40, P(0)=P(80)=−100, P(40)=220 nghìn đồng, tối ưu ở q=40 sản phẩm.
+**Câu hỏi tự luận:** \(P(q)=-0{,}2q^2+16q-100\) nghìn đồng, \(0\le q\le80\). Tìm lợi nhuận lớn nhất, so sánh giá trị ở biên và giải thích miền.
+**Author-key:** \(P'(q)=16-0{,}4q=0\Rightarrow q=40\). \(P(0)=P(80)=-100\), \(P(40)=220\) nghìn đồng; tối ưu ở \(q=40\) sản phẩm.
 **Rubric tự đối chiếu /4:** 1 miền+đơn vị; 1 đạo hàm; 1 so ba giá trị; 1 kết luận thực tế. Anchor chỉ là nhãn của câu W02.
 
 ## D6 / HELP, five steps and same-primary-outcome return
