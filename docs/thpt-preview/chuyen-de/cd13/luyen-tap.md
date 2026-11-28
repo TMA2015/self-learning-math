@@ -102,9 +102,9 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B08-C01; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O03; SINGLE_ITEM_ID -->
 
 **Bài 5.**
-**Đề:** Với ba điểm A, B, C bất kì, \(\overrightarrow{AB}+\overrightarrow{BC}\) bằng vectơ nào?
+**Đề:** Với mọi bộ ba điểm A, B, C, tổng \(\overrightarrow{AB}+\overrightarrow{BC}\) luôn bằng vectơ nào?
 
-**Lựa chọn:** A. \(\overrightarrow{AC}\) ; B. \(\overrightarrow{CA}\) ; C. \(\overrightarrow{CB}\) ; D. \(\vec0\) (luôn đúng)
+**Lựa chọn:** A. \(\overrightarrow{AC}\) ; B. \(\overrightarrow{CA}\) ; C. \(\overrightarrow{CB}\) ; D. \(\vec0\)
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** A

@@ -322,7 +322,7 @@
 **Lời giải:** $3\cdot1+(-2)\cdot4=3-8=-5$.
 
 ### `THPT-G10-B11-C02` — B11 | `SGK_CORE` | `G10-B11-PERPENDICULAR` | `MCQ` | `BASIC` | `content_version=1`
-**Câu hỏi:** Chọn cặp vectơ **khác không** vuông góc.
+**Câu hỏi:** Trong các cặp sau, cặp nào gồm hai vectơ đều khác vectơ-không và vuông góc với nhau?
 **Lựa chọn:** A. $(1;2)$ và $(2;-1)$; B. $(1;1)$ và $(1;1)$; C. $(2;0)$ và $(1;0)$; D. $(1;-1)$ và $(2;-2)$.
 **Đáp án:** A  
 **Hint chỉ dùng sau/ngoài kiểm tra:** Hai vectơ khác không vuông góc nếu tích vô hướng bằng 0.  

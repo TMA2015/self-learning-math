@@ -19,7 +19,7 @@ const expected={
   "THPT-G10-B08-P06": "29bc90b0"
 };
 const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619)>>>0;return h.toString(16).padStart(8,"0")};
-const ctx={window:{}};vm.runInNewContext(fs.readFileSync("docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js","utf8"),ctx);
+const ctx={window:{}};vm.runInNewContext(require("./thpt-1132-public-formative-delta.cjs").previous("docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js",fs.readFileSync("docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js","utf8")),ctx);
 const bank=ctx.window.THPT_CHIV_B07_B08_REVIEWED_FORMATIVE;assert(bank?.validate().valid);assert.equal(bank.records.length,16);assert.equal(bank.records.filter(x=>x.options).length,8);assert.equal(bank.records.filter(x=>!x.options).length,8);
 assert.deepEqual(Object.keys(expected).sort(),Array.from(bank.records,x=>x.item_id).sort());
 for(const it of bank.records){

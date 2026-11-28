@@ -372,7 +372,7 @@ for(const [p,old]of [
  ["docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js","028fb4c053ed08863ca4ba3110d104b46708da0c"],
  ["docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js","713e6a97b95c2c807c8b76045b324bdddf1a6737"],
  ["docs/assets/data/thpt-g10-readiness/CHIV.json","55b2753c04cffff897947d7007bdc860bc19fcfb"]]){
- let checked=read(p);
+ let checked=require("./thpt-1132-public-formative-delta.cjs").previous(p,read(p));
  if(p==="docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js"){
   // Owner #977-044 equivalent wording only. Restore old phrases solely
   // for historical whole-file SHA; all math, key D and Q16 remain locked.

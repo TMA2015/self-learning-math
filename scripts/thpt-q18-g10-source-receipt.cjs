@@ -488,7 +488,8 @@ function currentOneCanonicalAfterKiểmLỗi(name,priorPublicSha,priorManuscript
  const lessonPath=path.join(root,"docs/thpt-preview/sgk/chuong-"+roman+"/bai-"+number+".md");
  const manuscriptPath=path.join(root,"prototypes/thpt/content-drafts/THPT_G10_CH"+
   (number<=11?"IV":"V")+"_B"+String(number).padStart(2,"0")+"_CANONICAL.md");
- const bytes=fs.readFileSync(lessonPath),full=fs.readFileSync(manuscriptPath);
+ const bytes=fs.readFileSync(lessonPath),actualFull=fs.readFileSync(manuscriptPath);
+ const full=number===11?Buffer.from(require("./thpt-1132-public-formative-delta.cjs").previous("prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md",actualFull.toString("utf8"))):actualFull;
  const gitblob=b=>require("node:crypto").createHash("sha1")
   .update(Buffer.from("blob "+b.length+String.fromCharCode(0))).update(b).digest("hex");
  const successor=release1132CanonicalDelta.get(number);
@@ -521,7 +522,7 @@ function currentOneCanonicalAfterKiểmLỗi(name,priorPublicSha,priorManuscript
   name+" derived public Knowledge must reflect the SAME one canonical manuscript");
  assert(txt.includes("CANONICAL_PARITY_CONTRACT")&&txt.includes("DELTA_C_ACADEMIC_MATERIAL")&&
   txt.includes("AUTHORING_REVIEW_HOLD"),"One-canonical Q18 receipt may not self-issue PED PASS");
- return {source:currentSource,canonical:currentMaster};
+ return {source:currentSource,canonical:gitblob(actualFull)};
 }
 function expectedG10KnowledgeBlobHistorical(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");

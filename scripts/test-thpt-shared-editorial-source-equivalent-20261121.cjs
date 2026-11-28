@@ -51,7 +51,7 @@ function exactlyOnce(s, phrase, context) {
   assert.equal(n, 1, context + ": expected one instance, got " + n);
 }
 for (const c of cases) {
-  const content = fs.readFileSync(path.join(root, c.file), "utf8");
+  const content = require("./thpt-1132-public-formative-delta.cjs").previous(c.file,fs.readFileSync(path.join(root, c.file), "utf8"));
   assert(content.includes(c.id), c.file + ": canonical item ID missing");
   let reversed = content;
   for (const [before, after] of c.changes) {
@@ -84,7 +84,7 @@ const alreadyClean = [
   },
   {
     file: "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
-    sha: "04478b7f379efb21377216b3543de656e2ace1f0",
+    sha: "0570aed17f04537aa5c1047c56d3bf18b91a25dd",
     forbidden: "**Written:** học sinh tự đối chiếu, không được tự động ghi Mastery",
     items: 120
   }

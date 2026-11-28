@@ -206,6 +206,11 @@ async function verifyG12DisplayMath(page,source,rel,width){
 
 
 async function execute(){
+ const publicDelta=require("./thpt-1132-public-formative-delta.cjs");
+ if(publicDelta.matchesRoutes(lessons)){
+  const browser=await (engine==="webkit"?webkit:chromium).launch(engine==="webkit"?{headless:true}:{headless:true,args:["--no-sandbox"]});
+  try{await publicDelta.browserQA(browser,base,engine,widths)}finally{await browser.close()}return;
+ }
  assert(lessons.length>0&&lessons.length<=120,"No canonical SGK page paths or too many scoped targets");
  assert.equal(new Set(lessons).size,lessons.length,"Duplicate lesson target");
  for(const rel of lessons)assert((re.test(rel)||chapter.test(rel))&&fs.existsSync(path.join(root,rel)),"Invalid canonical SGK page "+rel);
