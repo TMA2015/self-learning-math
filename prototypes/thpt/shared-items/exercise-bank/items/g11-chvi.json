@@ -252,15 +252,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(5;\\ x=\\pm5;\\ 3\\)."
+        "text": "\\(5;\\ x=\\pm5;\\ 3\\), vì mọi căn đều không âm."
       },
       {
         "id": "B",
-        "text": "\\(5;\\ x=5;\\) căn bậc ba không xác định."
+        "text": "\\(5;\\ x=5\\); căn bậc ba của số âm không xác định."
       },
       {
         "id": "C",
-        "text": "\\(5;\\ x=\\pm5;\\ -3\\)."
+        "text": "\\(5;\\ x=\\pm5;\\ -3\\), vì căn bậc hai số học không âm, còn căn bậc ba của số âm là số âm."
       },
       {
         "id": "D",
@@ -598,7 +598,7 @@
     "content_version": "CD04-BANK-CP124-20261127-B18-P07",
     "stem": "Viết 0,0000075 dưới dạng kí hiệu khoa học. Giải thích dấu của số mũ và vì sao \\(75\\cdot10^{-7}\\) không phải dạng chuẩn dù giá trị bằng nhau. Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
     "answer_key": "\\(7{,}5\\cdot10^{-6}\\). Biểu thức \\(75\\cdot10^{-7}\\) có cùng giá trị nhưng hệ số 75 không thuộc \\([1;10)\\).",
-    "worked_solution": "Dời dấu phẩy sang phải sáu vị trí để được 7,5. Để giữ giá trị ban đầu, nhân với \\(10^{-6}\\); số mũ âm phù hợp với số dương nhỏ hơn 1. Hệ số 7,5 thuộc \\([1;10)\\), còn 75 không thuộc đoạn này. Do đó \\(75\\cdot10^{-7}\\) đúng về giá trị nhưng không chuẩn.",
+    "worked_solution": "Dời dấu phẩy sang phải sáu vị trí để được 7,5. Để giữ giá trị ban đầu, nhân với \\(10^{-6}\\); số mũ âm phù hợp với số dương nhỏ hơn 1. Hệ số 7,5 thuộc \\([1;10)\\), còn 75 không thuộc khoảng này. Do đó \\(75\\cdot10^{-7}\\) đúng về giá trị nhưng không chuẩn.",
     "skill_ids": [
       "G11-B18-POWER_INTEGER"
     ],
@@ -2219,7 +2219,7 @@
   {
     "item_id": "THPT-G11-B18-KFT01",
     "content_version": "SGK-G11-CHVI-BANK-CANDIDATE-20261127-THPT-G11-B18-KFT01",
-    "stem": "(1) Tính \\(4^{-1}\\) và giải thích ý nghĩa số mũ âm. (2) Tính \\(27^{2/3}\\). (3) Trong \\(P(t)=500(1{,}06)^t\\), hệ số 1,06 có ý nghĩa gì? Nếu số tiền chỉ được cập nhật hằng năm, t thuộc tập nào? Chọn phương án đúng sau khi tự giải thích.",
+    "stem": "(1) Tính \\(4^{-1}\\) và giải thích ý nghĩa số mũ âm. (2) Tính \\(27^{\\frac{2}{3}}\\). (3) Trong \\(P(t)=500(1{,}06)^t\\), hệ số \\(1{,}06\\) có ý nghĩa gì? Nếu số tiền chỉ được cập nhật hằng năm, t thuộc tập nào? Chọn phương án đúng sau khi tự giải thích.",
     "answer_key": "\\(\\frac14;\\ 9\\); tăng 6% mỗi năm trên số tiền hiện có; t nguyên không âm.",
     "worked_solution": "Vì \\(4^0=1\\), nên \\(4^{-1}=\\frac14\\), không phải đổi dấu cơ số. Ta có \\(27^{2/3}=(\\sqrt[3]{27})^2=9\\). Trong mô hình \\(P(t)=500(1{,}06)^t\\), \\(P(t+1)=1{,}06P(t)\\), nghĩa là sau mỗi năm tăng 6% trên số tiền hiện có. Nếu chỉ cập nhật hằng năm thì t là số nguyên không âm tính từ thời điểm ban đầu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2265,7 +2265,7 @@
       },
       {
         "id": "B",
-        "text": "\\(\\frac14;\\ 9\\); tăng 6% mỗi năm trên số tiền hiện có; t nguyên không âm."
+        "text": "\\(\\frac14;\\ 9\\); số mũ âm lấy nghịch đảo; tăng 6% mỗi năm trên số tiền hiện có; t nguyên không âm."
       },
       {
         "id": "C",
@@ -2394,19 +2394,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(3^x>0\\); điểm (8;3) trên đồ thị mũ, (3;8) trên đồ thị logarit; \\(\\log_{1/2}x\\) nghịch biến."
+        "text": "\\(3^x>0\\); điểm \\((8;3)\\) trên đồ thị mũ, \\((3;8)\\) trên đồ thị lôgarit; hàm lôgarit cơ số \\(\\frac12\\) nghịch biến."
       },
       {
         "id": "B",
-        "text": "\\(3^x>0\\); hai đồ thị có điểm (3;8) chung; \\(\\log_{1/2}x\\) đồng biến."
+        "text": "\\(3^x>0\\); hai đồ thị có điểm \\((3;8)\\) chung; hàm lôgarit cơ số \\(\\frac12\\) đồng biến."
       },
       {
         "id": "C",
-        "text": "\\(3^x\\) có thể âm; hai đồ thị đổi chỗ tọa độ; \\(\\log_{1/2}x\\) xác định trên \\(\\mathbb R\\)."
+        "text": "\\(3^x\\) có thể âm; hai đồ thị đổi chỗ tọa độ; hàm lôgarit xác định trên \\(\\mathbb R\\)."
       },
       {
         "id": "D",
-        "text": "\\(3^x>0\\); điểm (3;8) trên đồ thị mũ, (8;3) trên đồ thị logarit; \\(\\log_{1/2}x\\) nghịch biến trên \\((0;+\\infty)\\)."
+        "text": "\\(3^x>0\\); điểm \\((3;8)\\) trên đồ thị mũ, \\((8;3)\\) trên đồ thị lôgarit; hàm lôgarit cơ số \\(\\frac12\\) nghịch biến vì \\(0<\\frac12<1\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -2457,7 +2457,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x<3\\) vì hàm mũ cơ số \\(1/2\\) nghịch biến; \\(x>1\\) để đối số logarit dương."
+        "text": "\\(x<3\\) vì hàm mũ cơ số \\(\\frac12\\) nghịch biến; \\(x>1\\) để đối số lôgarit dương."
       },
       {
         "id": "B",
@@ -2469,7 +2469,7 @@
       },
       {
         "id": "D",
-        "text": "\\(x<3\\); \\(x>0\\) vì x là đối số logarit."
+        "text": "\\(x<3\\); \\(x>0\\) vì x là đối số lôgarit."
       }
     ],
     "exercise_type": "INTERACTIVE"
