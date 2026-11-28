@@ -1868,7 +1868,7 @@
     "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY04",
     "stem": "Với \\(f(x)=3x+2\\) trên \\([-1;2]\\), nếu \\(x_1<x_2\\) thì \\(f(x_1)\\) so với \\(f(x_2)\\) thế nào? Hàm đồng biến hay nghịch biến trên đoạn này? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "f(x₁)<f(x₂); đồng biến trên đoạn [−1;2].",
-    "worked_solution": "Đáp án: \\(f(x_2)-f(x_1)=3(x_2-x_1)>0\\); đồng biến trên \\([-1;2]\\).\n\nVì sao: Hệ số 3 dương nên khi x tăng thì giá trị f(x) tăng. Lập luận áp dụng mọi cặp x1<x2 trong khoảng, không chỉ một bảng nhỏ.",
+    "worked_solution": "Đáp án: \\(f(x_2)-f(x_1)=3(x_2-x_1)>0\\) nên \\(f(x_1)<f(x_2)\\).\n\nVì sao: Với mọi cặp \\(x_1<x_2\\) thuộc đoạn \\([-1;2]\\), hiệu \\(x_2-x_1\\) dương và hệ số 3 dương. Do đó hàm đồng biến trên toàn đoạn, không chỉ tại một vài điểm được thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_MONOTONICITY"
@@ -2042,7 +2042,7 @@
     "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY09",
     "stem": "Với \\(f(x)=-2(x+1)^2+8\\) trên \\(\\mathbb R\\), tìm giá trị lớn nhất, tập giá trị, khoảng đồng biến/nghịch biến. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "GTLN 8 tại x=−1; T=(−∞;8]; đồng biến trên (−∞;−1), nghịch biến trên (−1;+∞).",
-    "worked_solution": "Đáp án: GTLN 8 tại x=−1, \\(T=(-\\infty;8]\\); đồng biến trên \\((-\\infty;-1)\\), nghịch biến trên \\((-1;+\\infty)\\).\n\nVì sao: Vì −2(x+1)²≤0. Trục x=−1 là ranh giới đổi chiều, parabol mở xuống; mọi y≤8 đều đạt được.",
+    "worked_solution": "Đáp án: GTLN bằng 8 tại \\(x=-1\\); tập giá trị \\(T=(-\\infty;8]\\). Hàm đồng biến trên \\((-\\infty;-1)\\), nghịch biến trên \\((-1;+\\infty)\\).\n\nVì sao: \\(-2(x+1)^2\\le0\\), với dấu bằng khi \\(x=-1\\). Với mọi \\(y\\le8\\), chọn \\(x=-1+\\sqrt{\\frac{8-y}{2}}\\) thì \\(f(x)=y\\), nên mọi giá trị trong T đều đạt được. Khi x tăng về −1 từ phía trái, \\(|x+1|\\) giảm nên f tăng; khi x tăng từ phía phải −1, \\(|x+1|\\) tăng nên f giảm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "B16_OUT_04"
@@ -2566,7 +2566,7 @@
     "content_version": "SGK-G10-CHVI-BANK-CANDIDATE-20261127-THPT-G10-CHVI-TRY18",
     "stem": "Giải \\(\\sqrt{2x+3}=x\\). Vì vế phải là \\(x\\), hãy kiểm dấu của nó trước khi bình phương; giải thích vì sao một nghiệm ứng viên phải bị loại. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Điều kiện x≥0; S={3}; loại x=−1 do vế phải âm.",
-    "worked_solution": "Đáp án: Điều kiện \\(x\\ge0\\). Bình phương \\(2x+3=x^2\\Leftrightarrow(x-3)(x+1)=0\\), ứng viên x=3,−1. Thử: x=3 cho \\(\\sqrt9=3\\), x=−1 làm vế phải âm (và \\(\\sqrt1=1\\ne-1\\)). Nghiệm duy nhất x=3; x=−1 ngoại lai.\n\nVì sao: Bình phương tạo x=−1 dù hai vế gốc trái dấu. Chỉ x=3 thỏa toàn bộ.",
+    "worked_solution": "Đáp án: Điều kiện \\(x\\ge0\\) đã bảo đảm \\(2x+3\\ge0\\) và vế phải không âm. Trên miền này, bình phương hai vế là tương đương:\n\\[\n2x+3=x^2\\iff(x-3)(x+1)=0.\n\\]\nPhương trình bậc hai có hai nghiệm ứng viên \\(x=3\\) và \\(x=-1\\). Chỉ 3 thỏa điều kiện; thay vào phương trình gốc được \\(\\sqrt9=3\\). Vậy \\(S=\\{3\\}\\).\n\nVì sao: Nếu bỏ điều kiện dấu, phương trình sau bình phương còn nhận −1 vì bình phương xóa mất dấu âm; ở phương trình gốc, \\(\\sqrt1=1\\ne-1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "RADICAL_CONDITION",
