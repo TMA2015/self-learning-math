@@ -43,17 +43,21 @@
     ### 1.2. Tính chất của lôgarit
 
     **Vì sao lôgarit của tích lại thành tổng?** Giả sử \(M=a^u\), \(N=a^v\), với \(a>0,\ a\ne1\). Vì \(MN=a^{u+v}\) theo Bài 18, nên “số mũ cần tạo ra \(MN\)” bằng \(u+v\). Viết bằng lôgarit:
+
     \[
     \log_a(MN)=\log_aM+\log_aN.
     \]
+
     Đây là suy luận **từ phép nhân lũy thừa**, không phải một quy tắc được nhớ theo dáng chữ.
 
     Tương tự, \(M/N=a^{u-v}\) nên \(\log_a(M/N)=\log_aM-\log_aN\), và \(M^t=a^{ut}\) nên \(\log_a(M^t)=t\log_aM\). Công thức tích và thương cần **\(M,N>0\)**; công thức lũy thừa chỉ cần \(M>0,\ t\in\mathbb R\). Cả ba đều cần cơ số \(a>0,\ a\ne1\). Nếu trong một bài toán biểu thức như \(x-1\) có thể âm, em phải xét miền xác định **trước** khi tách lôgarit, không được biến đổi tùy ý.
 
     **Đổi cơ số có mục đích gì?** Máy tính thường có phím \(\log\) cơ số 10 và \(\ln\) cơ số \(e\), nhưng SGK có thể hỏi \(\log_4 8\). Đặt \(u=\log_a M\), nghĩa là \(M=a^u\). Lấy lôgarit cơ số \(b>0,b\ne1\) hai vế: \(\log_bM=u\log_ba\), nên
+
     \[
     \log_a M=\frac{\log_b M}{\log_b a}.
     \]
+
     Mẫu \(\log_ba\ne0\) vì \(a\ne1\). Như vậy đổi cơ số là cách **chuyển một câu hỏi số mũ sang cơ số có thể tính được**, không phải đổi bừa khi chưa kiểm cơ số.
 
     **Dấu và thứ tự:** Nếu \(a>1\), \(a^x\) tăng nên \(\log_a M\) cũng tăng theo \(M>0\). Nếu \(0<a<1\), điều ngược lại xảy ra: đối số lớn hơn có **lôgarit nhỏ hơn**. Chẳng hạn \(\log_{\frac12}4=-2\), \(\log_{\frac12}8=-3\), nên dù \(4<8\) thì \(-2>-3\). Không dùng quy tắc so sánh của cơ số lớn hơn 1 cho mọi cơ số hợp lệ.
@@ -73,9 +77,11 @@
     Khi ghi dân số, khối lượng rất lớn hoặc nồng độ rất nhỏ, cơ số **10** đặc biệt thuận tiện vì trùng hệ thập phân. Lôgarit cơ số 10 được gọi là **lôgarit thập phân**, viết \(\log M\) hoặc \(\lg M\). Chẳng hạn \(\log1000=3\) vì \(10^3=1000\), \(\log0{,}001=-3\) vì \(10^{-3}=0{,}001\). Hai cách viết \(\log M\) và \(\log_{10}M\) là cùng một giá trị trong SGK.
 
     Trong mô hình lãi kép chia năm thành các kì càng ngắn, một số đặc biệt xuất hiện:
+
     \[
     e=\lim_{t\to+\infty}\left(1+\frac1t\right)^t\approx2{,}71828.
     \]
+
     Số \(e\) là số dương lớn hơn 1, nên hoàn toàn có thể làm **cơ số lôgarit**. Ta gọi \(\log_e M\) là **lôgarit tự nhiên**, viết \(\ln M\). Từ đó \(\ln e=1\), \(\ln1=0\), \(\ln(e^2)=2\). Những kết quả này đều theo định nghĩa lôgarit, không phải do phím bấm máy tính đặt ra.
 
     **Vì sao dùng ln cho lãi liên tục?** Gửi vốn \(P\), lãi suất năm \(r\) viết dưới dạng số thập phân (chẳng hạn \(5\%=0{,}05\)), lãi ghép \(m\) kì/năm, \(m\) nguyên dương, trong \(t\ge0\) năm cho mô hình \(P(1+r/m)^{mt}\). Khi tăng số kì ghép không giới hạn, giới hạn dẫn tới \(A=Pe^{rt}\). Muốn biết thời gian \(t\) để số tiền **gấp đôi**, giải \(2P=Pe^{rt}\) thành \(e^{rt}=2\), rồi lấy \(\ln\) hai vế: \(rt=\ln2\), nên \(t=\frac{\ln2}{r}\) (với \(r>0\)). Lôgarit lúc này chính là phép đảo **tìm thời gian trong số mũ**.
