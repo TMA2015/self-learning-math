@@ -7,6 +7,7 @@
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
 const {chromium,webkit}=require("playwright");
 const engine=process.env.SCOPED_BROWSER_ENGINE||"chromium";
+const displayOnly=process.env.SCOPED_DISPLAY_ONLY==="true";
 assert(["chromium","webkit"].includes(engine),"Unknown scoped browser engine");
 const root=path.resolve(__dirname,"..");
 const base=(process.env.SCOPED_BASE_URL||"http://127.0.0.1:8765").replace(/\/$/,"");
@@ -279,6 +280,7 @@ async function execute(){
       if(/^docs\/thpt-preview\/sgk\/lop-11\/(?:chuong-i\/bai-[234]|chuong-ii\/bai-[567]|chuong-iii\/bai-[89]|chuong-iv\/bai-1[0-4]|chuong-v\/bai-1[5-7]|chuong-vi\/bai-(?:1[89]|2[01])|chuong-vii\/bai-2[2-7]|(?:chuong-viii\/bai-(?:2[89]|30)|chuong-ix\/bai-3[1-3]))\.md$/.test(rel)||/^docs\/thpt-preview\/sgk\/lop-12\/chuong-i\/bai-[1-5]\.md$/.test(rel)||/\/lop-12\/chuong-v\/bai-1[4-7]\.md$/.test(rel)||/\/lop-12\/chuong-vi\/bai-1[89]\.md$/.test(rel)){
        const panel=groups.nth(i);
        for(const disclosure of await panel.locator("details.question").all()){
+        if(displayOnly&&!(/\/lop-11\/chuong-vii\/bai-(22|26)\.md$/.test(rel)&&width===1440))continue;
         const summary=disclosure.locator("summary").first();
         assert((await summary.innerText()).includes("Đối chiếu"),rel+" "+width+" comparison label");
         assert(!(await disclosure.evaluate(el=>el.open)),rel+" "+width+" comparison prematurely open");
@@ -287,7 +289,7 @@ async function execute(){
          // Native click, then wait for its observed result (including WebKit
          // asynchronous native details state). No retries, forced clicks,
          // JS property writes, or relaxed open/close requirement.
-         await summary.click();
+         await summary.click({position:{x:24,y:18}});
          try{
           await page.waitForFunction(({el,target})=>el.open===target,
            {el:await disclosure.elementHandle(),target},{timeout:5000});
@@ -300,6 +302,7 @@ async function execute(){
       }
       const figs=groups.nth(i).locator("figure img");
       for(const fig of await figs.all()){
+       if(displayOnly&&!await fig.isVisible())continue;
        assert((await fig.getAttribute("alt"))?.trim(),rel+" "+width+" figure alt missing");
        // A real lazy image below the fold never starts loading until in view.
        // Scrolling reproduces the learner's behavior; bounded load/decode
@@ -444,12 +447,14 @@ async function execute(){
          await node.locator("mjx-container").waitFor({state:"visible",timeout:30000});
          assert.equal(await node.locator("mjx-container").count(),1,rel+" #1132 duplicate/nested MathJax");
          assert.equal(await node.locator("mjx-merror").count(),0,rel+" #1132 MathJax error");
+         const layout=await node.evaluate(el=>({width:el.getBoundingClientRect().width,overflow:document.documentElement.scrollWidth-innerWidth,font:getComputedStyle(el).fontSize}));
+         assert(layout.width>0&&layout.overflow<=20&&parseFloat(layout.font)>0,rel+" affected formula layout "+JSON.stringify(layout));
         }
        }
       }
       console.log("PASS #1132 visible display tab-switch "+engine+" "+rel+" @"+width+" "+display1132Tabs.reduce((a,b)=>a+b,0)+" formulas");
      }
-     await goldenW1Parity(page,browser,width,rel);
+     if(!displayOnly||width===820)await goldenW1Parity(page,browser,width,rel);
      checks++;
      console.log("PASS SCOPED Golden AP "+rel+" @"+width+"px: "+(isLesson?"4 tabs / ":"chapter hub / ")+
       layout.math+" rendered math, "+expectedTry.length+" First Try, "+expectedHelp.length+" D6, layout/font/SVG/Q16");

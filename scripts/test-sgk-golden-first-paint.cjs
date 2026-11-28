@@ -25,9 +25,12 @@ for(const n of [11,12,13])rows.push({n,grade:12,rel:"thpt-preview/sgk/lop-12/chu
 for(const n of [14,15,16,17])rows.push({n,grade:12,rel:"thpt-preview/sgk/lop-12/chuong-v/bai-"+n});
 for(const n of [18,19])rows.push({n,grade:12,rel:"thpt-preview/sgk/lop-12/chuong-vi/bai-"+n});
 const mode=process.env.SGK_FIRST_PAINT_MODE||"FULL";
-assert(["FULL","G11_W1","G11_W2","G11_W3","G11_W4","G11_W5","G11_W6","G11_W7","G12_W8","G12_W9","G12_W10","G12_W11","G12_W12","G12_W13","G12_MATH_HOTFIX"].includes(mode),"Unknown First Paint QA mode");
+assert(["FULL","G11_W1","G11_W2","G11_W3","G11_W4","G11_W5","G11_W6","G11_W7","G12_W8","G12_W9","G12_W10","G12_W11","G12_W12","G12_W13","G12_MATH_HOTFIX","SGK_SOURCE_ONLY"].includes(mode),"Unknown First Paint QA mode");
 const scoped=mode!=="FULL",w2=mode==="G11_W2",w3=mode==="G11_W3",w4=mode==="G11_W4",w5=mode==="G11_W5",w6=mode==="G11_W6",w7=mode==="G11_W7",w8=mode==="G12_W8",w9=mode==="G12_W9",w10=mode==="G12_W10",w11=mode==="G12_W11",w12=mode==="G12_W12",w13=mode==="G12_W13",hot=mode==="G12_MATH_HOTFIX";
-const selected=w13?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=17&&x.n<=19):hot?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=7&&x.n<=13):w12?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=13&&x.n<=17):w11?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=10&&x.n<=13):w10?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=8&&x.n<=10):w9?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=5&&x.n<=8):scoped?rows.filter(x=>x.grade===10&&x.n===10||w8&&x.grade===12&&x.n<=5||x.grade===11&&(w8?x.n===33:w7?x.n>=27:w6?x.n>=21&&x.n<=27:w5?x.n>=17&&x.n<=21:w4?x.n>=14&&x.n<=17:w3?x.n>=9&&x.n<=14:w2?x.n>=4&&x.n<=9:x.n<=4)):rows;
+const sourceOnly=mode==="SGK_SOURCE_ONLY";
+const requested=(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean).map(x=>x.slice(5,-3));
+if(sourceOnly)assert(requested.length&&new Set(requested).size===requested.length&&requested.every(x=>rows.some(r=>r.rel===x)),"Exact canonical lesson list required");
+const selected=sourceOnly?rows.filter(x=>requested.includes(x.rel)):w13?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=17&&x.n<=19):hot?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=7&&x.n<=13):w12?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=13&&x.n<=17):w11?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=10&&x.n<=13):w10?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=8&&x.n<=10):w9?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=5&&x.n<=8):scoped?rows.filter(x=>x.grade===10&&x.n===10||w8&&x.grade===12&&x.n<=5||x.grade===11&&(w8?x.n===33:w7?x.n>=27:w6?x.n>=21&&x.n<=27:w5?x.n>=17&&x.n<=21:w4?x.n>=14&&x.n<=17:w3?x.n>=9&&x.n<=14:w2?x.n>=4&&x.n<=9:x.n<=4)):rows;
 const smoke=row=>row.grade===10||w13&&row.grade===12&&row.n===17||w12&&row.grade===12&&row.n===13||w11&&row.grade===12&&row.n===10||w10&&row.grade===12&&row.n===8||w9&&row.grade===12&&row.n===5||row.grade===11&&row.n===(w8?33:w7?27:w6?21:w5?17:w4?14:w3?9:w2?4:1);
 const chapterFor=n=>n<=4?"i":n<=7?"ii":n<=9?"iii":n<=14?"iv":n<=17?"v":n<=21?"vi":n<=27?"vii":n<=30?"viii":"ix";
 const headings=["1. Khám phá kiến thức","2. Kiến thức SGK",
@@ -65,10 +68,11 @@ for(const row of selected){
   assert.deepEqual(attr(html,k),attr(source,k),row.rel+" Q15 source-to-DOM "+k);
 }
 // All 79 canonical SGK lessons are now covered; excluded routes are protected by exact delta proof.
-assert.equal(selected.length,scoped?(w13?4:hot?8:w12?6:w11?5:w10?4:w9?5:w8?7:w7?8:w6?8:w5?6:w4?5:w2||w3?7:5):79);
+assert.equal(selected.length,sourceOnly?requested.length:scoped?(w13?4:hot?8:w12?6:w11?5:w10?4:w9?5:w8?7:w7?8:w6?8:w5?6:w4?5:w2||w3?7:5):79);
 console.log("PASS STATIC_FIRST_PAINT: "+selected.length+" exact routes; four headings and IDs");
 
 (async()=>{
+ if(sourceOnly){console.log("PASS SGK source-only static First Paint; actual scoped browser AP and formula rendering run in Scoped SGK Lesson Release QA");return;}
  for(const [engine,driver] of (scoped?[["Chromium",chromium]]:[["Chromium",chromium],["WebKit",webkit]])){
  const browser=await driver.launch(engine==="Chromium"?{headless:true,args:["--no-sandbox"]}:{headless:true});
  const reps=scoped?selected:rows.filter(x=>x.grade===11||x.grade===12||[1,7,16,23,27].includes(x.n));

@@ -23,10 +23,12 @@ const eqHref=(actual,expected)=>assert.equal(new URL(actual).pathname,expected);
   const cases=[];
   for(const grade of [10,11,12])for(let lesson=1;lesson<=ranges[grade].at(-1);lesson++)cases.push({grade,lesson});
   assert.equal(cases.length,79);
+  const selected=(process.env.SGK_NAV_SCOPE||'').split(',').filter(Boolean).map(p=>'/'+p.slice(5,-3)+'/');
+  if(selected.length)assert(selected.every(p=>cases.some(x=>routeOf(x.grade,x.lesson)===p)), 'Invalid scoped nav route');
   for(const viewport of [{width:390,height:844},{width:820,height:1180},{width:1440,height:900}]){
    const page=await browser.newPage({viewport});
    try{
-    const samples=viewport.width===390?cases:cases.filter(x=>[1,2,14,18,ranges[x.grade].at(-1)].includes(x.lesson));
+    const samples=selected.length?cases.filter(x=>selected.includes(routeOf(x.grade,x.lesson))):viewport.width===390?cases:cases.filter(x=>[1,2,14,18,ranges[x.grade].at(-1)].includes(x.lesson));
     for(const {grade,lesson}of samples){
      const path=routeOf(grade,lesson);
      const response=await page.goto(site+path,{waitUntil:"domcontentloaded",timeout:35000});

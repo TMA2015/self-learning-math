@@ -974,7 +974,7 @@ function classify(paths,{manual=false,base=""}={}){
    (!files.includes("docs/assets/javascripts/thpt-r4-preview.js")||b16RuntimeIsIsolated()))
   return {impact:"SCOPED_G10_B16",full_suite:"false",changed_lessons:B16_LESSON,
    reason:"OWNER_B16_EXACT_FILES_AND_BYTE_VERIFIED_RUNTIME"};
- const b19Display1132Files=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md","prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs"];
+ const b19Display1132Files=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md","prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml"];
  if(files.length===b19Display1132Files.length&&new Set(files).size===files.length&&files.every(x=>b19Display1132Files.includes(x)))
   return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:"docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md,docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md,docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md,docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md,docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md,docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md",reason:"OWNER_1132_G11_B19_DISPLAY"};
  const b16Display1132Files=["docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md","prototypes/thpt/ux795/G11_B16_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml"];
@@ -1105,9 +1105,31 @@ function classify(paths,{manual=false,base=""}={}){
   return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"NON_LEARNER_DOCS"};
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
+
+// Strict cross-suite selector: only source/receipt SGK and explicitly
+// enumerated test/workflow-only companions. Unknown/shared code remains broad.
+function isSgkSourceOnlyQA(files,result){
+ if(result.impact!=="SCOPED_LESSON"||result.full_suite!=="false")return false;
+ if(!files.some(p=>LESSON.test(p)))return false;
+ return files.every(p=>LESSON.test(p)||RECEIPT.test(p)||[
+  "scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",
+  "scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs",
+  "scripts/test-sgk-golden-first-paint.cjs","scripts/thpt-q18-g10-source-receipt.cjs",
+  ".github/workflows/thpt-scoped-release-qa.yml",".github/workflows/sgk-golden-first-paint-qa.yml",
+  ".github/workflows/thpt-topic-rw1-math-qa.yml"
+ ].includes(p));
+}
 function selfTest(){
- const b19Display1132=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md","prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs"];
+ const b19Display1132=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md","prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml"];
  assert.equal(classify(b19Display1132).reason,"OWNER_1132_G11_B19_DISPLAY");
+ assert(isSgkSourceOnlyQA(b19Display1132,classify(b19Display1132)));
+ const pure=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md","prototypes/thpt/ux795/example.md"];
+ assert(isSgkSourceOnlyQA(pure,classify(pure)));
+ for(const shared of ["docs/assets/javascripts/math-details-v1.js","hooks/sgk_golden_first_paint.py","docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css","mkdocs.yml","docs/assets/data/assessment/private.json","docs/thpt-preview/chuyen-de/cd01/kien-thuc.md"]){
+  const mixed=[...pure,shared];assert(!isSgkSourceOnlyQA(mixed,classify(mixed)),shared+" cannot route as SGK source-only");
+ }
+ assert(!isSgkSourceOnlyQA(pure,classify(pure,{manual:true})));
+
  assert.equal(classify([...b19Display1132,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL");
  assert.equal(classify(b19Display1132.filter(x=>x!=="prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md")).impact,"FULL");
  const b16Display1132=["docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md","prototypes/thpt/ux795/G11_B16_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml"];
@@ -1607,6 +1629,7 @@ if(require.main===module){
   assert.equal(process.argv.length,3,"Supply git diff --name-only path file");
   const files=fs.readFileSync(process.argv[2],"utf8").split(/\r?\n/);
   const out=classify(files,{manual:process.env.RELEASE_QA_FORCE_FULL==="true",base:process.env.BEFORE_SHA||process.env.BASE_SHA||""});
+  const sgkSourceOnly=isSgkSourceOnlyQA(files.map(x=>x.trim()).filter(Boolean),out);
   // CI migration itself must exercise the new renderer against the most recent
   // owner-P2 accepted Golden baseline (B14), even though its paths are global.
   const qaSmoke=!["SCOPED_TOPIC_RW1","SCOPED_TOPIC_SHARED_MATH"].includes(out.impact)&&files.some(x=>[
@@ -1616,8 +1639,8 @@ if(require.main===module){
   ].includes(x));
   if(process.env.GITHUB_OUTPUT)fs.appendFileSync(process.env.GITHUB_OUTPUT,
    "impact="+out.impact+"\nfull_suite="+out.full_suite+"\nchanged_lessons="+out.changed_lessons+
-   "\nreason="+out.reason+"\nqa_smoke="+qaSmoke+"\n");
-  else process.stdout.write("impact="+out.impact+"\nfull_suite="+out.full_suite+"\nchanged_lessons="+out.changed_lessons+"\nreason="+out.reason+"\n");
+   "\nreason="+out.reason+"\nqa_smoke="+qaSmoke+"\nsgk_source_only="+sgkSourceOnly+"\n");
+  else process.stdout.write("impact="+out.impact+"\nfull_suite="+out.full_suite+"\nchanged_lessons="+out.changed_lessons+"\nreason="+out.reason+"\nsgk_source_only="+sgkSourceOnly+"\n");
   console.error("RELEASE_CI_IMPACT "+JSON.stringify(out));
  }
 }

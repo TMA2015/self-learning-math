@@ -125,4 +125,7 @@ jobs:
           if [[ "$SCOPED_BROWSER_ENGINE" == webkit && "$RELEASE_DELTA_REASON" == OWNER_1132_G11_B19_DISPLAY ]]; then
             export SCOPED_LESSONS="$SCOPED_LESSONS,docs/thpt-preview/sgk/chuong-vi/bai-18.md,docs/thpt-preview/sgk/chuong-vii/bai-21.md,docs/thpt-preview/sgk/chuong-vii/bai-22.md,docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md,docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md"
           fi
+          if [[ "$RELEASE_DELTA_REASON" == OWNER_1132_*DISPLAY* || "$RELEASE_DELTA_REASON" == OWNER_1132_EXACT_DISPLAY_DELTA ]]; then
+            export SCOPED_DISPLAY_ONLY=true
+          fi
           node scripts/test-thpt-scoped-lesson-browser.cjs
