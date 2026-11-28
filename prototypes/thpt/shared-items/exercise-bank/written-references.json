@@ -2841,8 +2841,8 @@
       "G10-B11-APPLICATION"
     ],
     "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W08-FORCE-TR01.DELTA03.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Historical HTML rubric row malformed by pipe splitting; mathematical step and /4 clear, projection repair pending at cutover. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #778 transfer and historic R01 B09–B11 receipt f13acb74206c00cb489e533df7792870f88830e3, transfer independent receipt 865bb30feca7b4ade054b9b53d6306044b2d5e9f; original d8020a23db8ec8465f5361e3c9834cdb6a55538e; current exact changed 4 Written sections and linked FORCE D6, historical header/version changes only. B09 pp55–59, B10 pp60–65, B11 pp66–70. Wave06 math /4 preserved; force 13 N with opposite vector components, D6 norm notation and rubric pipe-safe, transfer after B11, no independent use of exposed task; historical corrected D5 receipt #778 preserved. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G10-CHIV-W09",
@@ -2869,8 +2869,8 @@
       "G10-B09-LENGTH_DIRECTION"
     ],
     "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W09.DELTA03.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Answer gives derivation results; separate worked solution is terse. Align midpoint explanation with requested expression and expand at scoped PED/notation review. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #778 transfer and historic R01 B09–B11 receipt f13acb74206c00cb489e533df7792870f88830e3, transfer independent receipt 865bb30feca7b4ade054b9b53d6306044b2d5e9f; original d8020a23db8ec8465f5361e3c9834cdb6a55538e; current exact changed 4 Written sections and linked FORCE D6, historical header/version changes only. B09 pp55–59, B10 pp60–65, B11 pp66–70. Wave06 /7: lengths 4,8; directed vector coefficients 1/3,−2/3; distinction from midpoint, expanded rationale and nonzero sum. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G10-CHIV-W10",
@@ -2898,8 +2898,8 @@
       "G10-B10-NORM_DISTANCE"
     ],
     "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W10.DELTA03.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Answer gives correct component checks; separate solution needs expanded substitutions at scoped PED review. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #778 transfer and historic R01 B09–B11 receipt f13acb74206c00cb489e533df7792870f88830e3, transfer independent receipt 865bb30feca7b4ade054b9b53d6306044b2d5e9f; original d8020a23db8ec8465f5361e3c9834cdb6a55538e; current exact changed 4 Written sections and linked FORCE D6, historical header/version changes only. B09 pp55–59, B10 pp60–65, B11 pp66–70. Wave06 /7: vector (6;4), norm 2sqrt13, midpoint (1;3), centroid (1;1); coordinate substitutions and zero-sum check. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G10-CHIV-W11-ANCHOR",
@@ -2927,8 +2927,8 @@
       "G10-B11-GEOMETRIC_DOT"
     ],
     "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHIV-W11-ANCHOR.DELTA03.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Answer supplies correct calculation; separate solution needs full step-by-step presentation and notation review. | Addressed in exact canonical candidate; source math checked, targeted PED/Q18 and projection verification pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #778 transfer and historic R01 B09–B11 receipt f13acb74206c00cb489e533df7792870f88830e3, transfer independent receipt 865bb30feca7b4ade054b9b53d6306044b2d5e9f; original d8020a23db8ec8465f5361e3c9834cdb6a55538e; current exact changed 4 Written sections and linked FORCE D6, historical header/version changes only. B09 pp55–59, B10 pp60–65, B11 pp66–70. Wave06 /7: norms 10,5, work 48 J, cos 24/25 and positive work; contrast product of norms, condition both vectors nonzero. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G10-CHIV-W10-RIVER-TR01",
@@ -4543,9 +4543,9 @@
       "G12-CHV-B14-O07"
     ],
     "content_version": "CD18-BANK-20261127-THPT-G12-B14-W07.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Reconciled prior corrected stem (sphere versus solid sphere), explicitly h>=0, R>0, three intersection cases; revised rubric /5 to match the requested distinction instead of unrelated physical interpretation. Scoped PED/Q18 and projection regeneration pending.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). Targeted B14 Q01 receipt c06fd2e187afd6ad7e848d208f218bb044a7d690, SGK pp29–40, documented SBT p25 gap, O07 integrated after B17; exact W07-only delta vs 4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c. Wave06 /5: h≥0 and R>0, Pythagoras, cases h<R,=R,>R; circle radius sqrt(R²−h²) vs disk. SGK placement explicitly optional display_after_lesson B17; CĐ18 TOP18-O23 reuse same ID. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G12-B15-W01",
@@ -5195,8 +5195,8 @@
       "BINOMIAL_NEGATIVE_COEFF"
     ],
     "content_version": "SGK-G10-BANK-WRITTEN-CANDIDATE-20261127-THPT-G10-CHVIII-W25-01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_PED_OR_PROJECTION_PENDING",
-    "review_note": "Compared exact W25-01 with public replay CHVIII-RD1-10: same polynomial and coefficient, but Written additionally requires total coefficient sum via P(1); public replay asks number of negative coefficients. Retain original reviewed Written and public practice replay; never independent unseen assessment. No change of source/score. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #765 composite receipt 172a91ada897b5057148e5329fdfe5e2796f539e explicitly locks original D4 source e78c43ab7b2f6d3ab1b135d1ad09c7030df2c44e; B25 S1 pp72–75; original W25 linked to G10-B25-COEFFICIENT_SUM in d4c839ef7fdcb324220de59e54e33ee37684cbcb. Original unchanged. Expansion x^4−8x^3+24x²−32x+16, coefficient 24, sum 1 via P(1), /6 rubric. Public replay CHVIII-RD1-10 shares polynomial and coefficient but asks negative count, not independent evidence. Both public practice; existing skills preserved (BINOMIAL_COEFFICIENT covers coefficient work; original outcome includes sum). No projection/source duplication. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-TOP19-W01",
@@ -5341,8 +5341,8 @@
       "G11-B28-INTERSECTION"
     ],
     "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B28-W01.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Source solution lists correct sets but does not explicitly explain why 6 belongs to both; expand at scoped PED review. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #694 exact R00 public fde4f8be91b5884b4559fef59fde46cf826c2bc9, independent S1 B28 pp66–71, B29 pp72–75, B30 pp76–78, confirmed academic and PED. Exact three changed headings only. A={3,6,9}, B={6,7,8,9}, union {3,6,7,8,9}, intersection {6,9}; explains 6 satisfies both properties; /4 aligned. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-W02-ANCHOR",
@@ -5390,8 +5390,8 @@
       "G11-B29-COMPLEMENT_PROB"
     ],
     "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B29-W01.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Source solution omits explicit double-count explanation demanded by prompt/rubric. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #694 exact R00 public fde4f8be91b5884b4559fef59fde46cf826c2bc9, independent S1 B28 pp66–71, B29 pp72–75, B30 pp76–78, confirmed academic and PED. Exact three changed headings only. 57/80 and 23/80 from overlap correction 12, explicitly explains double-count and complement; /4 aligned. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-W02-ANCHOR",
@@ -5439,8 +5439,8 @@
       "G11-B29-VENN_COUNTS"
     ],
     "content_version": "SGK-G11-CHVIII-WRITTEN-CANDIDATE-20261127-THPT-G11-CHVIII-B29-W03.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Wording 'không chọn cả hai' ambiguous between neither and not both; solution uses neither; scoped wording Delta required. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #694 exact R00 public fde4f8be91b5884b4559fef59fde46cf826c2bc9, independent S1 B28 pp66–71, B29 pp72–75, B30 pp76–78, confirmed academic and PED. Exact three changed headings only. Disjoint counts 11,8,6,11 sum36; wording now unambiguously neither, not merely not both; /4 aligned. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-W01",
@@ -5604,8 +5604,8 @@
       "G12-CHVI-B18-O01"
     ],
     "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W01.DELTA02.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Source rubric requires explicit explanation why denominator is not 12; solution implies it but should state it directly at scoped PED review. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #731 source receipt c371e9f4873caa04c0c005b625316cf07ef5449a; raw review 24ee4f23655f24eff1fadd463f8c476a417faab7; S1 B18 pp64–71, B19 pp72–78; 7 Written-only changed sections vs historical 1578efd4d2d46deb9bae064d12752d88fc3747b8. Three unchanged sections equal exact previous candidate 416059c96e7dc1bd57b09e7a31094eb1441403f9. Wave06 /5: restricted sample nine equally likely, 4/9, explicit reason not denominator 12. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G12-B18-W02",
@@ -5652,8 +5652,8 @@
       "G12-CHVI-B18-O03"
     ],
     "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W03.DELTA02.DELTA06",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "DELTA06: exact canonical D6 wording/notation corrected; stem/key/solution/rubric unchanged, independent mathematics checked; final applicable Q18/PED and projection generation pending."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #731 source receipt c371e9f4873caa04c0c005b625316cf07ef5449a; raw review 24ee4f23655f24eff1fadd463f8c476a417faab7; S1 B18 pp64–71, B19 pp72–78; 7 Written-only changed sections vs historical 1578efd4d2d46deb9bae064d12752d88fc3747b8. Three unchanged sections equal exact previous candidate 416059c96e7dc1bd57b09e7a31094eb1441403f9. Wave06 /5: 2/5 and 2/7, distinguish conditions, D6 notation fixed; same intersection not same denominator. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G12-B18-W04",
@@ -5700,8 +5700,8 @@
       "G12-CHVI-B18-O05"
     ],
     "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W05.DELTA02.DELTA06",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "DELTA06: exact canonical D6 wording/notation corrected; stem/key/solution/rubric unchanged, independent mathematics checked; final applicable Q18/PED and projection generation pending."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #731 source receipt c371e9f4873caa04c0c005b625316cf07ef5449a; raw review 24ee4f23655f24eff1fadd463f8c476a417faab7; S1 B18 pp64–71, B19 pp72–78; 7 Written-only changed sections vs historical 1578efd4d2d46deb9bae064d12752d88fc3747b8. Three unchanged sections equal exact previous candidate 416059c96e7dc1bd57b09e7a31094eb1441403f9. Wave06 /5: 7/10 and 7/13, correct row/column totals and changed conditioning; D6 notation fixed. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G12-B18-W06",
@@ -5748,8 +5748,8 @@
       "G12-CHVI-B18-O07"
     ],
     "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W07.DELTA02.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "State uniform selection among remaining balls each draw; near-identical structure and counts to P07 (different colors), no independent assessment claim. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #731 source receipt c371e9f4873caa04c0c005b625316cf07ef5449a; raw review 24ee4f23655f24eff1fadd463f8c476a417faab7; S1 B18 pp64–71, B19 pp72–78; 7 Written-only changed sections vs historical 1578efd4d2d46deb9bae064d12752d88fc3747b8. Three unchanged sections equal exact previous candidate 416059c96e7dc1bd57b09e7a31094eb1441403f9. Wave06 /5: 3/5 from two disjoint orders; complement 3/10+1/10; uniform conditional selection and no replacement explicit; practice only (same structure as P07). Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G12-B19-W01",
@@ -5818,8 +5818,8 @@
       "G12-CHVI-B19-O03"
     ],
     "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W03.DELTA02.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Solution omits full tree description required by stem/rubric; expand branches including complementary leaves. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #731 source receipt c371e9f4873caa04c0c005b625316cf07ef5449a; historical exact 1578efd4d2d46deb9bae064d12752d88fc3747b8, S1 B19 pp72–78; 7 affected Written-only sections in current candidate. Wave06 /5: complete probability tree four leaves 0.32,0.08,0.18,0.42, sum1; marginal 1/2, posterior16/25; accepts equivalent tree description. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G12-B19-W04",
@@ -5844,8 +5844,8 @@
       "G12-CHVI-B19-O04"
     ],
     "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W04.DELTA02.DELTA06",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "DELTA06: exact canonical D6 wording/notation corrected; stem/key/solution/rubric unchanged, independent mathematics checked; final applicable Q18/PED and projection generation pending."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #731 source receipt c371e9f4873caa04c0c005b625316cf07ef5449a; historical exact 1578efd4d2d46deb9bae064d12752d88fc3747b8, S1 B19 pp72–78; 7 affected Written-only sections in current candidate. Wave06 /5: posterior7/10 equals reverse conditional in this particular example; D6 repaired false universal inequality, condition positive and two directions clear. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G12-B19-W05",
@@ -5870,8 +5870,8 @@
       "G12-CHVI-B19-O05"
     ],
     "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W05.DELTA02.DELTA06",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "DELTA06: exact canonical D6 wording/notation corrected; stem/key/solution/rubric unchanged, independent mathematics checked; final applicable Q18/PED and projection generation pending."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #731 source receipt c371e9f4873caa04c0c005b625316cf07ef5449a; historical exact 1578efd4d2d46deb9bae064d12752d88fc3747b8, S1 B19 pp72–78; 7 affected Written-only sections in current candidate. Wave06 /5: 90 true positives,495 false, total585, 2/13, hypothetical expected-count model, no personal medical claim; D6 corrected, same example practice only. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G12-B19-W06",
@@ -6216,8 +6216,8 @@
       "G12-CHIII-B09-O03"
     ],
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-W03.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Scoped correction applied in current canonical source; prior snapshot preserved. Targeted Delta C academic/PED verification remains before handoff. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). Historical Q18 review e4c296792e6791113bef9ac0490fb8448cf0ce77; original wrapper 4e8e462a5c2243583be8c71625a9be3095e48c7b; S1 B09 pp75–79, B10 pp80–84; current only 3 Written sections plus scope header changed. Wave06 /5: grouped range 30→60, increase30, IQR cannot infer without frequency data; SGK and CĐ22 practice same ID. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G12-B09-W04",
@@ -6242,8 +6242,8 @@
       "G12-CHIII-B09-O04"
     ],
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-W04.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Scoped correction applied in current canonical source; prior snapshot preserved. Targeted Delta C academic/PED verification remains before handoff. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). Historical Q18 review e4c296792e6791113bef9ac0490fb8448cf0ce77; original wrapper 4e8e462a5c2243583be8c71625a9be3095e48c7b; S1 B09 pp75–79, B10 pp80–84; current only 3 Written sections plus scope header changed. Wave06 /5: n32, cum4/12/24/32, Q1 group2, Q3 common boundary groups3/4; distinction from raw-data definitions. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G12-B09-W05",
@@ -6364,8 +6364,8 @@
       "G12-CHIII-B10-O03"
     ],
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-W03.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Scoped correction applied in current canonical source; prior snapshot preserved. Targeted Delta C academic/PED verification remains before handoff. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). Historical Q18 review e4c296792e6791113bef9ac0490fb8448cf0ce77; original wrapper 4e8e462a5c2243583be8c71625a9be3095e48c7b; S1 B10 pp80–84; 3 Written sections only plus scope header. Wave06 /5: sum squares152, mean4, variance3; cross-check weighted deviations24/8, correct sample grouped denominator; CĐ22 reuses same ID. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G12-B10-W04",
@@ -6460,9 +6460,9 @@
       "G11-E01-HALF_LIFE"
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W01.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Rubric /4 chung cần phân điểm riêng theo (a)–(d), chấp nhận cách tính tương đương. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #709 composite receipt 3183783afc69d263328a55f937ba22e6deb1f34d, historical combined b848436621c17c89919e3d3f93519d12612fe039, exact 10 changed Written headings only. S1 SGK T2 pp99–109/SBT annual pp66–72 previously verified. 120*2^(−t/8), t≥0, 30 g at16, 24 years at15g; constant half-life assumption, /4 accepts equivalent. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-SUPP-E01-W02",
@@ -6485,9 +6485,9 @@
       "G11-E01-DECIBEL_SCALE"
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W02.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Rubric /4 chung; câu (d) cần diễn đạt rõ không suy độ to cảm nhận từ tỉ số cường độ vật lý. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #709 composite receipt 3183783afc69d263328a55f937ba22e6deb1f34d, historical combined b848436621c17c89919e3d3f93519d12612fe039, exact 10 changed Written headings only. S1 SGK T2 pp99–109/SBT annual pp66–72 previously verified. 50 dB→ratio10^5, intensity10^−7 W/m²; tenfold intensity→60 dB, not tenfold perception; /4. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-SUPP-E01-W03",
@@ -6510,9 +6510,9 @@
       "G11-E01-MODEL_ASSUMPTIONS"
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E01-W03.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Rubric /4 chung; làm rõ N(3)=899,8912 là giá trị mô hình, quy ước làm tròn cá thể. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #709 composite receipt 3183783afc69d263328a55f937ba22e6deb1f34d, historical combined b848436621c17c89919e3d3f93519d12612fe039, exact 10 changed Written headings only. S1 SGK T2 pp99–109/SBT annual pp66–72 previously verified. Discrete 800*1.04^n, k=ln1.04, N3=899.8912≈900, distinguishes model and actual count, /4. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-SUPP-E02-W01",
@@ -6537,9 +6537,9 @@
       "G11-E02-LINE_PLANE_MEASURE"
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W01.DELTA02.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Rubric /4 chung; nêu rõ hình chiếu của tia sáng trên nền là phương/đoạn bóng cọc. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #709 composite receipt 3183783afc69d263328a55f937ba22e6deb1f34d, historical combined b848436621c17c89919e3d3f93519d12612fe039, exact 10 changed Written headings only. S1 SGK T2 pp99–109/SBT annual pp66–72 previously verified. Rod AB=1.8, shadow AC=2.4, projection BC→AC, tan angle0.75, 36.87°, vertical/level conditions and diagram labels; /4. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-SUPP-E02-W02",
@@ -6562,9 +6562,9 @@
       "G11-E02-VOLUME_MODEL"
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W02.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Rubric /4 chung; lời giải (d) nhắc lại tỉ số 1/3, chưa giải thích cơ sở công thức. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #709 composite receipt 3183783afc69d263328a55f937ba22e6deb1f34d, historical combined b848436621c17c89919e3d3f93519d12612fe039, exact 10 changed Written headings only. S1 SGK T2 pp99–109/SBT annual pp66–72 previously verified. Base area24, prism120, pyramid40 cm³, ratio1/3 only equal base and perpendicular height; /4. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-SUPP-E02-W03",
@@ -6587,9 +6587,9 @@
       "G11-E02-GEOGEBRA_REPRESENTATION"
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-E02-W03.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Rubric /4 chung; cần chấm riêng cấu trúc hai đáy, nối đỉnh, nét khuất và điều kiện lăng trụ đứng. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #709 composite receipt 3183783afc69d263328a55f937ba22e6deb1f34d, historical combined b848436621c17c89919e3d3f93519d12612fe039, exact 10 changed Written headings only. S1 SGK T2 pp99–109/SBT annual pp66–72 previously verified. Nondegenerate translated triangle in distinct parallel plane, corresponding edges equal/parallel, hidden edges viewpoint-dependent, perpendicular sides for right prism; /4 accepts paper or software. Actual software not tested. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-YR-TRIG-W01",
@@ -6612,9 +6612,9 @@
       "G11-YR-TRIG_IDENTITY"
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-TRIG-W01.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Rubric 'Hai nghiệm/2 điểm 1đ' mơ hồ; cần phân rõ 1 điểm cho hai nghiệm. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #709 composite receipt 3183783afc69d263328a55f937ba22e6deb1f34d, historical combined b848436621c17c89919e3d3f93519d12612fe039, exact 10 changed Written headings only; S1 pp99–109/SBT pp66–72. sin x=1/2 at π/6,5π/6, unit-circle symmetry, period2π, endpoints excluded, /4. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-YR-SEQ-W01",
@@ -6700,9 +6700,9 @@
       "G11-YR-DERIVATIVE_RATE"
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-DERIV-W01.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Câu (d) nên nói rõ t tính bằng giây. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #709 composite receipt 3183783afc69d263328a55f937ba22e6deb1f34d, historical combined b848436621c17c89919e3d3f93519d12612fe039, exact 10 changed Written headings only; S1 pp99–109/SBT pp66–72. f'=3x²−3; f(2)=2, f'(2)=9, tangent y−2=9(x−2), acceleration12 m/s²; /4. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-YR-SPACE-W01",
@@ -6725,9 +6725,9 @@
       "G11-YR-SPACE_PERP_DISTANCE"
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-SPACE-W01.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Gần trùng THPT-G11-YR-SPACE-P02; giữ yêu cầu chứng minh tự luận, kiểm độc lập/độ sâu ở Delta. Lời giải cần nói rõ đoạn xiên không cho khoảng cách. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #709 composite receipt 3183783afc69d263328a55f937ba22e6deb1f34d, historical combined b848436621c17c89919e3d3f93519d12612fe039, exact 10 changed Written headings only; S1 pp99–109/SBT pp66–72. AB and CC' skew; BC perpendicular to both and joins them, distance a, AC=a√2 not minimum; /4. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-YR-VOLUME-W01",
@@ -6771,9 +6771,9 @@
       "G11-YR-GROUPED_STATS"
     ],
     "content_version": "G11-SUPP-XG6-WRITTEN-REF-20261127-YR-STAT-W01.DELTA02",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Tần số lớn nhất đồng hạng; kiểm cách diễn đạt mốt dữ liệu gốc và giả định nội suy. | Addressed in exact canonical source; target math/solution/rubric checked by author. Scoped PED/Q18 and projection regeneration pending.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA08: Q18_AUTHOR_SELF_VERIFIED scoped Written content (not global Q18). #709 composite receipt 3183783afc69d263328a55f937ba22e6deb1f34d, historical combined b848436621c17c89919e3d3f93519d12612fe039, exact 10 changed Written headings only; S1 pp99–109/SBT pp66–72. n20, cum4/12/20, median group [10;20), interpolation17.5; tied modal groups and raw sample mode not determined; /4. Prior checked math/rubric retained where applicable. Public unscored; projection generation/reveal QA pending authorized RELEASE. No new independent verdict."
   },
   {
     "item_id": "THPT-G11-YR-PROB-W01",
