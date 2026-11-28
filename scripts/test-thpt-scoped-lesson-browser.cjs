@@ -284,18 +284,39 @@ async function execute(){
         const summary=disclosure.locator("summary").first();
         assert((await summary.innerText()).includes("Đối chiếu"),rel+" "+width+" comparison label");
         assert(!(await disclosure.evaluate(el=>el.open)),rel+" "+width+" comparison prematurely open");
+        // A page with many lazy educational SVGs can reflow during a
+        // desktop scroll to a summary. Load the preceding in-flow images
+        // as a learner scrolling through the lesson would, before clicking.
+        for(const image of await panel.locator("figure img").all()){
+         if(!await image.isVisible())continue;
+         const precedes=await image.evaluate((img,summary)=>Boolean(img.compareDocumentPosition(summary)&Node.DOCUMENT_POSITION_FOLLOWING),await summary.elementHandle());
+         if(!precedes)continue;
+         await image.scrollIntoViewIfNeeded();
+         await image.evaluate(async img=>{
+          await Promise.race([img.decode(),new Promise((_,reject)=>setTimeout(()=>reject(Error("preceding image decode timeout")),15000))]);
+         });
+         assert(await image.evaluate(img=>img.naturalWidth>0),rel+" broken image preceding comparison");
+        }
         for(const target of [true,false]){
          await summary.evaluate(el=>el.scrollIntoView({block:"center",inline:"nearest",behavior:"instant"}));
          await page.waitForFunction(el=>{const r=el.getBoundingClientRect(),hit=document.elementFromPoint(r.left+24,r.top+18);return r.top>=0&&r.bottom<=innerHeight&&Boolean(hit&&el.contains(hit));},await summary.elementHandle(),{timeout:5000});
          // Native click, then wait for its observed result (including WebKit
          // asynchronous native details state). No retries, forced clicks,
          // JS property writes, or relaxed open/close requirement.
+         // Capture trusted pointer/click and toggle evidence without changing
+         // event propagation or native disclosure state.
+         await page.evaluate(el=>{
+          const events=[];window.__comparisonEvents=events;
+          const note=e=>events.push({type:e.type,trusted:e.isTrusted,target:e.target.tagName,within:el.contains(e.target),prevented:e.defaultPrevented,x:e.clientX,y:e.clientY,open:el.parentElement.open,rect:el.getBoundingClientRect().toJSON()});
+          for(const type of ["pointerdown","pointerup","click"])document.addEventListener(type,note,{capture:true,once:true});
+          el.parentElement.addEventListener("toggle",note,{once:true});
+         },await summary.elementHandle());
          await summary.click({position:{x:24,y:18}});
          try{
           await page.waitForFunction(({el,target})=>el.open===target,
            {el:await disclosure.elementHandle(),target},{timeout:5000});
          }catch(error){
-          console.error("COMPARISON_STATE_FAILURE "+JSON.stringify({engine,rel,width,tab:i,target,state:await disclosure.evaluate(el=>({open:el.open,summary:el.querySelector("summary")?.textContent,rect:el.getBoundingClientRect().toJSON()}))}));
+          console.error("COMPARISON_STATE_FAILURE "+JSON.stringify({engine,rel,width,tab:i,target,state:await disclosure.evaluate(el=>({open:el.open,summary:el.querySelector("summary")?.textContent,rect:el.getBoundingClientRect().toJSON()})),events:await page.evaluate(()=>window.__comparisonEvents)}));
           throw error;
          }
         }
