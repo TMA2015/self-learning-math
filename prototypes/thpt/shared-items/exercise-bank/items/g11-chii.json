@@ -1120,7 +1120,7 @@
       },
       {
         "id": "B",
-        "text": "\\(3/10\\)"
+        "text": "\\(\\frac{3}{10}\\)"
       },
       {
         "id": "C",
@@ -1128,7 +1128,7 @@
       },
       {
         "id": "D",
-        "text": "\\(5/3\\)"
+        "text": "\\(\\frac{5}{3}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1611,7 +1611,7 @@
       },
       {
         "id": "C",
-        "text": "\\(q=27;u_1=2/9\\)"
+        "text": "\\(q=27;u_1=\\frac{2}{9}\\)"
       },
       {
         "id": "D",
@@ -1765,11 +1765,11 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x=\\pm3;q=1/3\\text{ cho cả hai}\\)"
+        "text": "\\(x=\\pm3;q=\\frac{1}{3}\\text{ cho cả hai}\\)"
       },
       {
         "id": "B",
-        "text": "\\(x=5;q=5/9\\)"
+        "text": "\\(x=5;q=\\frac{5}{9}\\)"
       },
       {
         "id": "C",
@@ -1777,7 +1777,7 @@
       },
       {
         "id": "D",
-        "text": "\\(x=3;q=1/3\\text{ duy nhất}\\)"
+        "text": "\\(x=3;q=\\frac{1}{3}\\text{ duy nhất}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
