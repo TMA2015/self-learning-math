@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "aeded262730b037d29f5d46081742ab2ce6a0dcb",
+    "as_of_commit": "3df7e0b9c85ef6ac8bff5c8907ba39f3a05d025e",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.1: shared interactive 815/815; Written 6/160 (G10 ChI–III); next G10 ChIV–VI. Keep 08.1 unchecked until all shared Written complete.",
+    "next": "08.1: shared interactive 815/815; Written 9/160; next G10 ChVII–IX; two legacy public HTML Written ChVI pending authorized notation handling. Do not close 08.1.",
     "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -4633,18 +4633,57 @@
                     ]
                   ],
                   "findings": "Two active Written sections normalized at existing R01 source path; W05 preserves active prior rubric and wording apart from notation/geometric phrasing. W06 fractions, units, rubric decimal notation standardized; marks unchanged. Exact outside-section bytes and reference-only diff verified. Prior source blobs preserved; no projection edits."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G10 ChV",
+                  "blob": "3ed8fa811a3a1769e5fcb5542a927ff4545b6a6e",
+                  "source_path": "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_B14_D1D6_AUTHORING_R01_SNAPSHOT.md",
+                  "source_blob": "ee6e68979a2289c4b8e0ea2a20aa352dab86a004",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "XG5 08.1 direct scoped review",
+                  "records": [
+                    [
+                      "THPT-G10-CHV-W12",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G10-CHV-W13",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G10-CHV-W14-ANCHOR",
+                      0,
+                      145
+                    ]
+                  ],
+                  "findings": "Three Written sections: fraction, inequality, quartile and variance notation normalized; existing math results and /7 rubric preserved. Exact outside-section bytes and reference-only diff verified. Historical source blob and projection preserved."
                 }
               ],
               "completed_interactive": 815,
-              "completed_written": 6,
+              "completed_written": 9,
               "remaining_interactive": 0,
-              "remaining_written": 154,
+              "remaining_written": 151,
               "counts": {
-                "ids": 821,
+                "ids": 824,
                 "inherited": 3480,
-                "newly_checked": 1424
+                "newly_checked": 1433
               },
-              "next": "08.1 shared Written G10 ChIV–VI; skip verified source sections. Interactive 815/815 complete. Written 6/160 complete."
+              "next": "08.1 shared Written G10 ChVII–IX; skip verified sections; retain two deferred G10 ChVI IDs, resolve before ticking 08.1. ChIV contains zero shared Written. Interactive 815/815 complete; Written 9/160.",
+              "deferred_written": [
+                {
+                  "chapter": "G10 ChVI",
+                  "ids": [
+                    "HPT-G10-CHVI-WRI-18-01",
+                    "HPT-G10-CHVI-WRI-18-02"
+                  ],
+                  "source_blob": "4da918f36d30c9b7110099e81fc88943e5b7705b",
+                  "source_path": "docs/thpt-preview/thu-vien/tu-luan.md",
+                  "evidence": "CP123–125 historical public HTML, math/rubric reviewed; direct scoped reading confirms raw structured radical/power/equivalence notation still present. Source locked, typography adaptation explicitly pending RELEASE. Not counted as X-G.5 complete. Preserve IDs /5 and /6 and HTML/runtime. Need authorized canonical notation path or scoped RELEASE disposition before 08.1 can close."
+                }
+              ]
             }
           },
           {
