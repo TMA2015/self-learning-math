@@ -331,7 +331,7 @@ content_version: 2
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-\(\overrightarrow{AB}=(6;0),\overrightarrow{AC}=(2;4)\), tích vô hướng bằng \(12\) (2đ). \(AB=6,AC=2\sqrt5\), nên \(\cos A=\frac{12}{12\sqrt5}=\frac1{\sqrt5}\) (2đ). \(G(\frac83;\frac43)\) (2đ). Chọn \(AB\) làm đáy, chiều cao bằng \(4\), nên \(S=6\cdot4/2=12\) (1đ). Tổng 7đ. Nếu nhầm tích vô hướng với côsin, ôn công thức chia cho tích độ dài và thử THPT-TOP13-P10.
+\(\overrightarrow{AB}=(6;0),\overrightarrow{AC}=(2;4)\), tích vô hướng bằng \(12\) (2đ). \(AB=6,AC=2\sqrt5\), nên \(\cos A=\frac{12}{12\sqrt5}=\frac1{\sqrt5}\) (2đ). \(G(\frac83;\frac43)\) (2đ). Chọn \(AB\) làm đáy, chiều cao bằng \(4\), nên \(S=\frac{6\cdot4}{2}=12\) (1đ). Tổng 7đ. Nếu nhầm tích vô hướng với côsin, ôn công thức chia cho tích độ dài và thử THPT-TOP13-P10.
 
 </details>
 
