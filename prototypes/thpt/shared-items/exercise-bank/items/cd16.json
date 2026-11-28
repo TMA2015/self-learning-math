@@ -433,9 +433,9 @@
   },
   {
     "item_id": "THPT-TOP16-P09",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-P09",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-P09.DELTA07B",
     "stem": "Để kiểm tra cột d có vuông góc nền phẳng hình chữ nhật ABCD, người thợ thấy \\(d\\perp AB\\) và \\(d\\perp CD\\). Đã đủ chưa? Nếu đo thêm \\(d\\perp AD\\) thì kết luận gì?",
-    "answer_key": "Chưa đủ; thêm \\(d\\perp AD\\) thì \\(d\\perp(ABCD)\\).",
+    "answer_key": "Chưa đủ vì \\(AB\\parallel CD\\); thêm \\(d\\perp AD\\) thì \\(d\\perp(ABCD)\\), vì AB và AD là hai đường cắt nhau trong đáy.",
     "worked_solution": "\\(AB\\parallel CD\\) nên hai phép đo chỉ kiểm một phương. Chẳng hạn đường AD cũng vuông góc AB và CD nhưng nằm trong nền, không vuông góc nền. Nếu có thêm \\(d\\perp AD\\), vì AB và AD cắt nhau tại A, thuộc nền, dấu hiệu hai đường cắt nhau cho \\(d\\perp(ABCD)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -468,7 +468,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Chưa đủ; thêm \\(d\\perp AD\\) thì \\(d\\perp(ABCD)\\)."
+        "text": "Chưa đủ vì \\(AB\\parallel CD\\); thêm \\(d\\perp AD\\) thì \\(d\\perp(ABCD)\\), vì AB và AD là hai đường cắt nhau trong đáy."
       },
       {
         "id": "B",
