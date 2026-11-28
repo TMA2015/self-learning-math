@@ -285,7 +285,8 @@ async function execute(){
         assert((await summary.innerText()).includes("Đối chiếu"),rel+" "+width+" comparison label");
         assert(!(await disclosure.evaluate(el=>el.open)),rel+" "+width+" comparison prematurely open");
         for(const target of [true,false]){
-         await summary.scrollIntoViewIfNeeded();
+         await summary.evaluate(el=>el.scrollIntoView({block:"center",inline:"nearest",behavior:"instant"}));
+         await page.waitForFunction(el=>{const r=el.getBoundingClientRect(),hit=document.elementFromPoint(r.left+24,r.top+18);return r.top>=0&&r.bottom<=innerHeight&&Boolean(hit&&el.contains(hit));},await summary.elementHandle(),{timeout:5000});
          // Native click, then wait for its observed result (including WebKit
          // asynchronous native details state). No retries, forced clicks,
          // JS property writes, or relaxed open/close requirement.
@@ -422,6 +423,7 @@ async function execute(){
      // #1132: compare exact visible standalone display nodes in each
      // affected tab, after navigation away and back, on both engines.
      const display1132Tabs={
+      "docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md":[15,0,0,0],
       "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md":[3,0,0,0],
       "docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md":[1,0,0,0],
       "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md":[3,0,0,0],

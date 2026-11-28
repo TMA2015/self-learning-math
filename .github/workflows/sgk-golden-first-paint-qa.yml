@@ -176,7 +176,7 @@ jobs:
           PY
           node scripts/test-sgk-golden-first-paint.cjs
           if [[ "$SGK_FIRST_PAINT_MODE" == "SGK_SOURCE_ONLY" && "$SGK_NAV_CHANGED" == "true" ]]; then
-            SGK_NAV_SCOPE="$SCOPED_LESSONS,docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md" node scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
+            SGK_NAV_SCOPE="$SCOPED_LESSONS" node scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
           elif [[ "$SGK_FIRST_PAINT_MODE" == "FULL" ]]; then
             node scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
             node scripts/test-thpt-academic-presentation-browser.cjs

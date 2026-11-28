@@ -1103,12 +1103,27 @@ function main(){
   verifyG11W1(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));
   return;
  }
- const b19Display1132Files=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md","prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml"];
+ const b19Display1132Files=["docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md","prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml"];
  if(changed.length===b19Display1132Files.length&&new Set(changed).size===changed.length&&changed.every(x=>b19Display1132Files.includes(x))){
   const rows=[[19,"vi","ddc2ae13711cd29fbe096b303db042a37b547686","406d662118b15c5057f1394432ff3618d52736ad",3,3],[22,"vii","fdcee166ee96617e3889cd9c05d2b5549be0705c","fde91def1d86063fae77d520852ff683cda71186",1,2],[24,"vii","8eab4af3ecff4958feffaf2bf092a1ec01a506c4","3e25e8777dcdff21bee39cffe5b3814bfa441737",3,2],[25,"vii","81d59089a9169c20a920735eb87dc8008b958afe","6604897838dc1daabe85297fe246cf540c5b3108",2,6],[26,"vii","3babd4c575e2dc5b9974b3abfe686ac4d5a3a5bc","280ae1d136d543ab4d2d5a7ddb4e8999f4e8e096",5,3],[27,"vii","d1f4a6cd17321278cb8c6bc65ab397f8b15feb0b","4cfa1cc9c07f4e37edd6338c4b2466ed92479a05",8,3]];
   const receipt=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md"),"utf8");
-  assert.deepEqual((process.env.SCOPED_LESSONS||"").split(",").filter(Boolean).sort(),["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md"]);
+  assert.deepEqual((process.env.SCOPED_LESSONS||"").split(",").filter(Boolean).sort(),["docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md"]);
   assert(receipt.includes("7234992998")&&receipt.includes("DELTA_B_SOURCE_EQUIVALENT"),"exact Q18 source-equivalent receipt");
+  // B02 is an independently reproduced overflowing inline chain, not a math change.
+  const b02="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md";
+  const oldB02=cp.execFileSync("git",["show",previous+":"+b02],{cwd:root});
+  const newB02=fs.readFileSync(path.join(root,b02));
+  assert.equal(blob(oldB02),"573e2d8fc84e89112c6b061b39e6a53465659472");
+  assert.equal(blob(newB02),"7ae9b767e969d13763d81e73b50dbcb33bccdb15");
+  assert(receipt.includes(blob(oldB02))&&receipt.includes(blob(newB02)));
+  const beforeB02=oldB02.toString("utf8"),afterB02=newB02.toString("utf8");
+  const oldChain="    Với sin, ta dùng \\(\\sin x=\\cos\\left(\\dfrac{\\pi}{2}-x\\right)\\). Chẳng hạn, \\(\\sin(a+b)=\\cos((\\pi/2-a)-b)=\\cos(\\pi/2-a)\\cos b+\\sin(\\pi/2-a)\\sin b=\\sin a\\cos b+\\cos a\\sin b\\). Thay \\(b\\) bằng \\(-b\\) cho công thức hiệu. Ta có",newChain="    Với sin, ta dùng \\(\\sin x=\\cos\\left(\\dfrac{\\pi}{2}-x\\right)\\). Chẳng hạn, tách phép biến đổi thành ba dòng:\n\n    \\[\n    \\begin{aligned}\n    \\sin(a+b)&=\\cos((\\pi/2-a)-b)\\\\\n    &=\\cos(\\pi/2-a)\\cos b+\\sin(\\pi/2-a)\\sin b\\\\\n    &=\\sin a\\cos b+\\cos a\\sin b.\n    \\end{aligned}\n    \\]\n\n    Thay \\(b\\) bằng \\(-b\\) cho công thức hiệu. Ta có";
+  assert.equal(beforeB02.split(oldChain).length,2);
+  assert.equal(afterB02,beforeB02.replace(oldChain,newChain),"B02 exact presentation-only replacement");
+  assert.deepEqual(firstAnswers(beforeB02),firstAnswers(afterB02));assert.equal(firstAnswers(afterB02).length,5);
+  for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"])assert.deepEqual(tokenSet(beforeB02,id),tokenSet(afterB02,id));
+  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final)/i.test(afterB02));
+  console.log("PASS #1132 B02 exact aligned sine derivation, unchanged five answers and Q15/Q16");
   for(const [n,ch,oldSha,newSha,blocks,answers] of rows){
    const lesson="docs/thpt-preview/sgk/lop-11/chuong-"+ch+"/bai-"+n+".md";
    const old=cp.execFileSync("git",["show",previous+":"+lesson],{cwd:root});
