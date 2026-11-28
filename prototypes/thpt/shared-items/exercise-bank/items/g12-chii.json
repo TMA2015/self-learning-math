@@ -2596,9 +2596,9 @@
   },
   {
     "item_id": "THPT-G12-B06-T01",
-    "content_version": "SGK-G12-CHII-BANK-CANDIDATE-20261127-THPT-G12-B06-T01",
+    "content_version": "SGK-G12-CHII-BANK-CANDIDATE-20261127-THPT-G12-B06-T01.DELTA07C",
     "stem": "Trong hình hộp \\(ABCD.A'B'C'D'\\), viết \\(\\overrightarrow{AB}+\\overrightarrow{AD}+\\overrightarrow{AA'}\\) thành một vectơ, giải thích bằng hành trình từ A. Nếu \\(\\vec a,\\vec b\\) có độ dài lần lượt 2, 5 và góc giữa chúng bằng \\(60^\\circ\\), xác định dấu và giá trị tích vô hướng. Chọn phương án đúng sau khi tự giải.",
-    "answer_key": "\\(\\overrightarrow{AC'}\\); \\(\\vec a\\cdot\\vec b=5>0\\).",
+    "answer_key": "Tổng bằng \\(\\overrightarrow{AC'}\\), theo hành trình \\(A\\to B\\to C\\to C'\\); \\(\\vec a\\cdot\\vec b=2\\cdot5\\cos60^\\circ=5>0\\).",
     "worked_solution": "Đi từ A đến B, rồi từ B đến C vì \\(\\overrightarrow{BC}=\\overrightarrow{AD}\\), rồi từ C đến C′ vì \\(\\overrightarrow{CC'}=\\overrightarrow{AA'}\\). Theo quy tắc cộng vectơ, tổng bằng \\(\\overrightarrow{AC'}\\). Hai vectơ có góc \\(60^\\circ\\) nên tích vô hướng dương, bằng \\(2\\cdot5\\cos60^\\circ=5\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2647,7 +2647,7 @@
       },
       {
         "id": "B",
-        "text": "\\(\\overrightarrow{AC'}\\); \\(\\vec a\\cdot\\vec b=5>0\\)."
+        "text": "Tổng bằng \\(\\overrightarrow{AC'}\\), theo hành trình \\(A\\to B\\to C\\to C'\\); \\(\\vec a\\cdot\\vec b=2\\cdot5\\cos60^\\circ=5>0\\)."
       },
       {
         "id": "C",
