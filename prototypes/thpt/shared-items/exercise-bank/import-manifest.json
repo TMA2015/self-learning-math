@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "01982b947cc095fcfec95752c37125cf9670b674",
+    "as_of_commit": "e1788748ab4640f91b1ebc8785a0b9b5b1cc2d99",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.2: 125/910 (117 interactive +8 Written) complete, CD01–04 done; next CD05 onward 785 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
+    "next": "08.2: 179/910 (167 interactive +12 Written), CD01–05 complete; next CD06 onward 731 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
     "status": "CHECKLIST_08_XG5_BATCH_2_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -6398,12 +6398,306 @@
                     ]
                   ],
                   "findings": "Read exact Written source blocks, all learner-facing fields including rubric/solution/remediation. Notation acceptable, no source or rubric change."
+                },
+                {
+                  "shard": "items/cd05.json",
+                  "blob": "a7ccc762b309fc7e2e590ab7a75b7fb293233747",
+                  "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+                  "baseline_blob": "b01ea96da2877e68f9a509c09bc2cd0c3a7acc14",
+                  "evidence_cp": "CP88",
+                  "records": [
+                    [
+                      "THPT-TOP05-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P02",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP05-P03",
+                      29,
+                      66
+                    ],
+                    [
+                      "THPT-TOP05-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P08",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP05-P09",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP05-P10",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP05-P11",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P12",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP05-P13",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-TOP05-P14",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P15",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P16",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP05-P17",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P18",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P19",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P20",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P21",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P22",
+                      5,
+                      90
+                    ],
+                    [
+                      "THPT-TOP05-P23",
+                      28,
+                      67
+                    ],
+                    [
+                      "THPT-TOP05-P24",
+                      12,
+                      83
+                    ],
+                    [
+                      "THPT-TOP05-P25",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P26",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P27",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP05-P28",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P29",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P30",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P31",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP05-P32",
+                      85,
+                      10
+                    ],
+                    [
+                      "THPT-TOP05-P33",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP05-P34",
+                      92,
+                      3
+                    ]
+                  ],
+                  "findings": "Read changed/new fields and inherit identical CP88 five-field values only. P23/P24 full coordinate pairs, P27 absolute value delimiters; exact field diff, no math change. Data 4817cf20c2460282b69842b109b33184d36754be."
+                },
+                {
+                  "shard": "items/topic-knowledge-first-try.json",
+                  "blob": "5cd2c10d7bbf031fe41fcd7667c9b91f1289def6",
+                  "evidence_cp": "08.2-CD05-KFT",
+                  "records": [
+                    [
+                      "THPT-TOP05-KFT01",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT02",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT03",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT04",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT05",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT06",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT08",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT09",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT10",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT11",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT12",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT13",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT14",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT15",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT16",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP05-KFT17",
+                      0,
+                      95
+                    ]
+                  ],
+                  "findings": "Read all 16 Topic-only FirstTry records. KFT04 typeset display answer, KFT10 spacing, KFT14 absolute value options/display key; exact field diff, no meaning/key choice change. Data c8f165446566fcd88a371bc644b9bad8ac168ba5."
+                },
+                {
+                  "shard": "written-references.json",
+                  "blob": "4ae6d7d367dc87b0dfe02949854ea97e3281420b",
+                  "source_path": "prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md",
+                  "source_blob": "268bd657d6dfaaac5acb9479b21e349f24db369c",
+                  "evidence_cp": "08.2-CD05-Written",
+                  "records": [
+                    [
+                      "THPT-TOP05-W01",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP05-W02",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP05-W03",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP05-W04",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ]
+                  ],
+                  "findings": "All four canonical blocks read. W04 rubric q=5 typeset only, unchanged scoring and meaning. Exact source delta 445c1507a96c90cca4bdacde08c35381215c7a2c and refreshed four source blobs at e1788748ab4640f91b1ebc8785a0b9b5b1cc2d99."
                 }
               ],
-              "completed_interactive": 117,
-              "completed_written": 8,
-              "remaining_interactive": 712,
-              "remaining_written": 73,
+              "completed_interactive": 167,
+              "completed_written": 12,
+              "remaining_interactive": 662,
+              "remaining_written": 69,
               "counts": {
                 "CD01": {
                   "interactive": 15,
@@ -6424,27 +6718,30 @@
                   "interactive": 35,
                   "written": 4,
                   "state": "COMPLETE"
+                },
+                "CD05": {
+                  "interactive": 50,
+                  "written": 4,
+                  "state": "COMPLETE"
                 }
               },
-              "next": "CD05 onward (785 remaining: 712 interactive +73 Written), exclude all 975 shared IDs and 125 completed Topic-only IDs.",
+              "next": "CD06 onward; exclude 975 shared and 179 completed Topic-only IDs",
               "reconciliation": {
-                "expected_cd01_04": 125,
-                "completed_cd01_04": 125,
+                "expected_cd01_05": 179,
+                "completed_cd01_05": 179,
                 "duplicate_ids": 0,
                 "overlap_08_1": 0,
                 "overlap_08_3": 0,
-                "changed_ids": [
-                  "THPT-TOP02-KFT02",
-                  "THPT-TOP04-P08",
-                  "THPT-TOP04-P09",
-                  "THPT-TOP04-KFT03"
+                "latest_delta_changed_ids": [
+                  "THPT-TOP05-P23",
+                  "THPT-TOP05-P24",
+                  "THPT-TOP05-P27",
+                  "THPT-TOP05-KFT04",
+                  "THPT-TOP05-KFT10",
+                  "THPT-TOP05-KFT14",
+                  "THPT-TOP05-W04"
                 ],
-                "data_commits": [
-                  "e02559e9ff59755f6a75895d33ba1305390acb32",
-                  "a3a9e070e2de614c9e33358e28d99a8b97d43c5d",
-                  "01982b947cc095fcfec95752c37125cf9670b674"
-                ],
-                "scope": "Notation only; no coverage, D6, role, mapping, answer, rubric, math/PED re-audit or runtime changes."
+                "scope": "Notation only; earlier evidence remains snapshot-scoped in completed_shards and previous manifest."
               }
             }
           },
