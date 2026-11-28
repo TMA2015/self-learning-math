@@ -1441,11 +1441,11 @@
     "options": [
       {
         "id": "A",
-        "text": "m=−1"
+        "text": "\\(m=-1\\)"
       },
       {
         "id": "B",
-        "text": "m=0"
+        "text": "\\(m=0\\)"
       },
       {
         "id": "C",
@@ -1453,7 +1453,7 @@
       },
       {
         "id": "D",
-        "text": "m=2"
+        "text": "\\(m=2\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1769,7 +1769,7 @@
       },
       {
         "id": "C",
-        "text": "Không, vì u khác n."
+        "text": "Không, vì \\(\\vec u\\) khác \\(\\vec n\\)."
       },
       {
         "id": "D",
@@ -2832,7 +2832,7 @@
     "item_id": "THPT-G10-CHVII-TRY23",
     "content_version": "CD14-BANK-PARTIAL-20261127-THPT-G10-CHVII-TRY23.DELTA05.DELTA07B",
     "stem": "Với mặt cắt \\(y^2=20x\\) (x, y tính bằng cm), hãy tự tìm bề rộng tại \\(x=5\\,\\mathrm{cm}\\) và giải thích vì sao phải dùng cả hai dấu của y.",
-    "answer_key": "20 cm, vì tại \\(x=5\\) có \\(y=\\pm10\\) và bề rộng là \\(10-(-10)=20\\) cm.",
+    "answer_key": "20 cm, vì tại \\(x=5\\) có \\(y=\\pm10\\) và bề rộng là \\(10-(-10)=20\\,\\mathrm{cm}\\).",
     "worked_solution": "Thế \\(x=5\\) được \\(y^2=100\\), nên \\(y=\\pm10\\,\\mathrm{cm}\\). Hai mép ở cùng hoành độ; bề rộng là \\(10-(-10)=20\\,\\mathrm{cm}\\).",
     "skill_ids": [
       "G10-B22-CONIC_MODEL"
@@ -2869,7 +2869,7 @@
       },
       {
         "id": "C",
-        "text": "20 cm, vì tại \\(x=5\\) có \\(y=\\pm10\\) và bề rộng là \\(10-(-10)=20\\) cm."
+        "text": "20 cm, vì tại \\(x=5\\) có \\(y=\\pm10\\) và bề rộng là \\(10-(-10)=20\\,\\mathrm{cm}\\)."
       },
       {
         "id": "D",
