@@ -1,6 +1,6 @@
 {
   "manifest_version": "2.0-compact",
-  "status": "AUTHOR_SELF_VERIFIED_SOURCE_LOCKED",
+  "status": "CONTENT_READY",
   "base_commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
   "scope": "Public shared THPT exercise bank: CD01–22, all 24 SGK chapters G10–G12, and 3 supplementary groups; 79 SGK lessons. Scoped migration only, not a new verdict on unchanged Knowledge or independent assessment.",
   "counts": {
@@ -29,7 +29,7 @@
     "draft_pr": "https://github.com/TMA2015/self-learning-math/pull/1091",
     "governance_pr": "https://github.com/TMA2015/self-learning-math/pull/1130",
     "standard": "SLM-THPT-QUALITY-ONE v3.2.0 X-G.5/X-G.6; use effective GitHub standard and owner decisions",
-    "mode": "AUTHORING_SOURCE_LOCKED_NO_CUTOVER"
+    "mode": "AUTHORING_CONTENT_READY_NO_CUTOVER"
   },
   "historical_snapshot": {
     "commit": "db24d69c05e230f1e50fb51d94b7b30ab37cf1f9",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "db393c796c9a0ee83aca34ff720893f98cdad994",
+    "as_of_commit": "b447f210d729e417b90183548e87ae9348d3ff1f",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "Single Q18 receipt, V2 handoff, ready manifest and REGISTER in same completion pass; RELEASE intake only after package exists. No runtime QA, merge or deploy.",
-    "status": "AUTHOR_SELF_VERIFIED_SOURCE_LOCKED",
+    "next": "AUTHORING completed; RELEASE intake only under separate owner authorization. No runtime integration, QA, merge or deploy in this PR.",
+    "status": "CONTENT_READY",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -173,7 +173,28 @@
       "packet": "THPT-SHARED-EXERCISE-BANK-1090",
       "receipt": "prototypes/thpt/review-packets/THPT-SHARED-EXERCISE-BANK-1090_AUTHOR_SELF_QA_RECEIPT.md",
       "handoff": "prototypes/thpt/release-handoffs/THPT-SHARED-EXERCISE-BANK-1090_HANDOFF_V2.md",
-      "ready": "prototypes/thpt/release-queue/ready/THPT-SHARED-EXERCISE-BANK-1090.md"
+      "ready": "prototypes/thpt/release-queue/ready/THPT-SHARED-EXERCISE-BANK-1090.md",
+      "handoff_completion": {
+        "state": "CONTENT_READY",
+        "source_commit": "873bd9c8225e976b5f72262b2ca21193e5dfc946",
+        "source_index_blob": "0f48aa5a250e7bec93c2ae66cbd6f756ce6ee931",
+        "receipt_blob": "e6d506e8038951765e9171a6aabf6f5081643fe4",
+        "handoff_blob": "6ef96d029bd0ce72862c102de6c89c8a8d55c45b",
+        "ready_blob": "46d1314978e25c8df18247b5c524031328cacf22",
+        "register_blob": "556e1efe338dcf84d0165692f4dc67fb614c232c",
+        "package_commit": "b447f210d729e417b90183548e87ae9348d3ff1f",
+        "checks": {
+          "index": true,
+          "receipt": true,
+          "handoff": true,
+          "source": true,
+          "state": true,
+          "register": true,
+          "validator": true,
+          "author_gates": true,
+          "release_gates_open": true
+        }
+      }
     },
     "previous_manifest": {
       "commit": "cb8af27682f350d92acd805ac52f7ca17deaa20c",
@@ -182,7 +203,7 @@
     }
   },
   "pending_review": {
-    "scope_warning": "Authoring affected exercise-bank scope verified; do not treat as new independent PASS or unchanged Knowledge review. No authoring P0/P1 open in scoped evidence. Source acceptance does not authorize release.",
+    "scope_warning": "AUTHORING CONTENT_READY, scoped self-verification; no authoring P0/P1 open. Preserve accepted prior Knowledge and independent assessment scopes. RELEASE integration, browser QA, exact HEAD CI and separate owner authorization pending.",
     "projection_flags": {
       "status": "ALL_80_TRIAGED_35_CUTOVER_BINDINGS_SPECIFIED",
       "total_flags": 80,
