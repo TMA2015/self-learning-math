@@ -171,7 +171,7 @@ source_r02_fidelity: WRITTEN_PED_AND_NOTATION_DELTA
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-(a) \(5^2+12^2=13^2\), nên tam giác vuông (1đ). (b) \(S=\frac{5\cdot12}{2}=30\) (2đ). (c) Nửa chu vi \(p=15\), \(r=S/p=2\), \(R=abc/(4S)=13/2\) (3đ). (d) \(R>r\); đường tròn ngoại tiếp qua ba đỉnh, đường tròn nội tiếp tiếp xúc ba cạnh (1đ). Tổng 7đ. Nếu nhầm hai bán kính, trở lại công thức \(S=pr=abc/(4R)\) ở Kiến thức về diện tích, rồi tự giải THPT-TOP12-P09.
+(a) \(5^2+12^2=13^2\), nên tam giác vuông (1đ). (b) \(S=\frac{5\cdot12}{2}=30\) (2đ). (c) Nửa chu vi \(p=15\), \(r=\frac Sp=2\), \(R=\frac{abc}{4S}=\frac{13}2\) (3đ). (d) \(R>r\); đường tròn ngoại tiếp qua ba đỉnh, đường tròn nội tiếp tiếp xúc ba cạnh (1đ). Tổng 7đ. Nếu nhầm hai bán kính, trở lại công thức \(S=pr=\frac{abc}{4R}\) ở Kiến thức về diện tích, rồi tự giải THPT-TOP12-P09.
 
 </details>
 
@@ -205,7 +205,7 @@ source_r02_fidelity: WRITTEN_PED_AND_NOTATION_DELTA
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Theo định lí sin, \(\sin B=\frac{b\sin A}{a}=\frac58\) (2đ). Đặt \(B_1=\arcsin(5/8)\in(30^\circ,90^\circ)\), \(B_2=180^\circ-B_1\) (2đ). Cả \(A+B_1\) và \(A+B_2\) đều nhỏ hơn \(180^\circ\), vì \(30^\circ<B_1<90^\circ\) (2đ). Mỗi \(C_i=180^\circ-A-B_i>0\); hai góc \(B_i\) khác nhau nên hai tam giác không bằng nhau (1đ). Tổng 7đ. Nếu chỉ nhận góc nhọn, ôn hai góc bù có cùng sin và thử THPT-TOP12-P06.
+Theo định lí sin, \(\sin B=\frac{b\sin A}{a}=\frac58\) (2đ). Đặt \(B_1=\arcsin\left(\frac58\right)\in(30^\circ;90^\circ)\), \(B_2=180^\circ-B_1\) (2đ). Cả \(A+B_1\) và \(A+B_2\) đều nhỏ hơn \(180^\circ\), vì \(30^\circ<B_1<90^\circ\) (2đ). Mỗi \(C_i=180^\circ-A-B_i>0\); hai góc \(B_i\) khác nhau nên hai tam giác không bằng nhau (1đ). Tổng 7đ. Nếu chỉ nhận góc nhọn, ôn hai góc bù có cùng sin và thử THPT-TOP12-P06.
 
 </details>
 
@@ -222,6 +222,6 @@ source_r02_fidelity: WRITTEN_PED_AND_NOTATION_DELTA
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-\(\cos120^\circ=-1/2\) (1đ). \(a^2=25+36-60(-1/2)=91\), nên \(a=\sqrt{91}\) (2đ). \(S=\frac12\cdot5\cdot6\sin120^\circ=\frac{15\sqrt3}{2}\) (2đ). \(R=\frac{abc}{4S}=\frac{\sqrt{273}}3\) (2đ). Tổng 7đ. Nếu ra cạnh nhỏ do sai dấu, kiểm \(-2bc\cos A>0\) khi \(A\) tù rồi thử THPT-TOP12-P03.
+\(\cos120^\circ=-\frac12\) (1đ). \(a^2=25+36-60(-\frac12)=91\), nên \(a=\sqrt{91}\) (2đ). \(S=\frac12\cdot5\cdot6\sin120^\circ=\frac{15\sqrt3}{2}\) (2đ). \(R=\frac{abc}{4S}=\frac{\sqrt{273}}3\) (2đ). Tổng 7đ. Nếu ra cạnh nhỏ do sai dấu, kiểm \(-2bc\cos A>0\) khi \(A\) tù rồi thử THPT-TOP12-P03.
 
 </details>
