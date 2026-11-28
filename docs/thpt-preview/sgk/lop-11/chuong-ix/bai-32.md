@@ -110,7 +110,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-02_R00.svg" alt="Sơ đồ hai tầng của hàm hợp: từ x qua u bằng g của x, rồi qua y bằng f của u; hai tốc độ biến đổi được nhân lại"><figcaption><strong>Đọc hình:</strong> theo mũi tên từ \(x\) sang \(u=g(x)\), sau đó sang \(y=f(u)\). Hệ số \(g'(x)\) thuộc bước thứ nhất, \(f'(u)\) thuộc bước thứ hai. Đạo hàm theo \(x\) bằng **tích** hai hệ số, không phải chỉ đạo hàm lớp ngoài.</figcaption></figure>
 
-    Ví dụ \(y=(2x+1)^3\) là hàm hợp của \(y=u^3\) với \(u=2x+1\). Đạo hàm theo \(u\) bằng \(3u^2\), còn \(u'(x)=2\), nên
+    Ví dụ \(y=(2x+1)^3\) là hàm hợp của \(y=u^3\) với \(u=2x+1\). Tại \(x=1\), \(u=3\). Khi \(x\) tăng \(h\), \(u\) tăng \(2h\). Với \(h\ne0\), thương sai phân theo \(x\) là \(2\cdot[( (3+2h)^3-27)/(2h)]\), tiến tới \(2\cdot27=54\) khi \(h\to0\). Đây là minh họa hai tốc độ nối tiếp, không phải quy tắc rút gọn phân số đạo hàm. Đạo hàm theo \(u\) bằng \(3u^2\), còn \(u'(x)=2\), nên
 
     \[
     y'=3(2x+1)^2\cdot2=6(2x+1)^2.
@@ -140,7 +140,7 @@
     2\cos\left(x+\frac h2\right)\sin\frac h2.
     \]
 
-    Chia cho \(h\), ta có \(\cos(x+h/2)\cdot\frac{\sin(h/2)}{h/2}\). Khi \(h\to0\), dùng giới hạn cơ bản \(\lim_{t\to0}\sin t/t=1\) (với \(t\) đo bằng rađian), thừa số thứ hai tiến đến \(1\), thừa số thứ nhất tiến đến \(\cos x\). Vì vậy **\((\sin x)'=\cos x\)**.
+    Chia cho \(h\), ta có \(\cos(x+h/2)\cdot\frac{\sin(h/2)}{h/2}\). Khi \(h\to0\), dùng giới hạn cơ bản \(\lim_{t\to0}\sin t/t=1\) (với \(t\) đo bằng rađian; có thể suy từ \(\sin t\le t\le\tan t\) khi \(0<t<\pi/2\), rồi kẹp giữa \(\cos t\) và 1; phía âm dùng tính chẵn của \(\sin t/t\)), thừa số thứ hai tiến đến \(1\), thừa số thứ nhất tiến đến \(\cos x\). Vì vậy **\((\sin x)'=\cos x\)**.
 
     Còn \(\cos x=\sin(\pi/2-x)\). Áp dụng quy tắc dây chuyền vừa học, \((\cos x)'=\cos(\pi/2-x)\cdot(-1)=-\sin x\). Dấu trừ giải thích vì sao gần \(x=0\), khi \(x\) dương tăng một chút thì giá trị \(\cos x\) bắt đầu giảm.
 
@@ -173,7 +173,7 @@
 
     ### 1.5. Đạo hàm của hàm số mũ và hàm số lôgarit
 
-    Với hàm mũ \(e^x\), một giới hạn cơ bản là \(\lim_{h\to0}(e^h-1)/h=1\). Vì \(e^{x+h}-e^x=e^x(e^h-1)\), thương sai phân trở thành
+    Với hàm mũ \(e^x\), một giới hạn cơ bản là \(\lim_{h\to0}(e^h-1)/h=1\). Có thể nối với giới hạn định nghĩa \(e\) ở Bài 19: lấy ln của \((1+k)^{1/k}\to e\) được \(\ln(1+k)/k\to1\); đặt \(k=e^h-1\) thì \((e^h-1)/h=k/\ln(1+k)\to1\). Vì \(e^{x+h}-e^x=e^x(e^h-1)\), thương sai phân trở thành
 
     \[
     \frac{e^{x+h}-e^x}{h}

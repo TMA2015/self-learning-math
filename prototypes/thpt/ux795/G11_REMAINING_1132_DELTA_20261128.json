@@ -20,6 +20,11 @@
           "before": "Trong \\([0;2\\pi)\\), nghiệm là \\(x=2\\pi/3\\) và \\(x=4\\pi/3\\).",
           "after": "Trong \\([0;2\\pi)\\), họ \\(x=2\\pi/3+2k\\pi\\) nhận \\(k=0\\); họ \\(x=-2\\pi/3+2k\\pi\\) nhận \\(k=1\\). Vậy nghiệm là \\(x=2\\pi/3\\) và \\(x=4\\pi/3\\).",
           "count": 1
+        },
+        {
+          "before": "\\(\\sin x=m\\iff\\begin{cases}x=\\alpha+2k\\pi,\\\\x=\\pi-\\alpha+2k\\pi,\\end{cases}\\quad k\\in\\mathbb Z.\\)",
+          "after": "\\(\\sin x=m\\) khi và chỉ khi \\(x=\\alpha+2k\\pi\\) hoặc \\(x=\\pi-\\alpha+2k\\pi\\), với \\(k\\in\\mathbb Z\\).",
+          "count": 1
         }
       ]
     },
@@ -111,6 +116,16 @@
           "before": "\\(G\\) nằm trong cả \\((SBN)\\) và \\((SCM)\\), vậy hai mặt có giao tuyến \\(SG\\).",
           "after": "\\(G\\) nằm trong cả \\((SBN)\\) và \\((SCM)\\). Hai mặt phân biệt: nếu trùng nhau thì mặt chung chứa hai trung tuyến cắt nhau \\(BN,CM\\), tức là \\((ABC)\\), trái với \\(S\\notin(ABC)\\). Do đó giao tuyến là \\(SG\\).",
           "count": 1
+        },
+        {
+          "before": "Gọi \\(N=BF\\cap AM\\), suy ra",
+          "after": "Vì \\(E\\) nằm giữa \\(B,M\\) và \\(F\\) nằm giữa \\(A,E\\), \\(F\\) ở trong tam giác \\(ABM\\), nên tia \\(BF\\) cắt cạnh \\(AM\\) tại \\(N\\). Do đó",
+          "count": 1
+        },
+        {
+          "before": "Điểm \\(N\\) có thể cần dựng trên **đường thẳng kéo dài**, không giới hạn ở đoạn nhìn thấy; mỗi bước phải có chứng cứ điểm thuộc mặt.",
+          "after": "Trong bài này \\(N\\) nằm trên cạnh \\(AM\\) nhờ giả thiết điểm trong tam giác. Ở bài khác có thể cần kéo dài đường thẳng; mỗi bước phải có chứng cứ điểm thuộc mặt.",
+          "count": 1
         }
       ]
     },
@@ -121,6 +136,11 @@
         {
           "before": "\\(M\\in a\\subset(P),(R)\\) và \\(M\\in b\\subset(Q),(R)\\),",
           "after": "\\(M\\in a\\subset(P)\\), \\(a\\subset(R)\\) và \\(M\\in b\\subset(Q)\\), \\(b\\subset(R)\\),",
+          "count": 1
+        },
+        {
+          "before": "trong lăng trụ \\(ABC.A'B'C'\\), đường",
+          "after": "trong lăng trụ \\(ABC.A'B'C'\\) (hai đáy tam giác tương ứng, các mặt bên là hình bình hành; sẽ học ở Bài 13), đường",
           "count": 1
         }
       ]
@@ -155,6 +175,16 @@
           "before": "khi từ một số hạng nào đó trở đi, \\(u_n\\) lớn hơn <strong>mọi mốc dương</strong> cho trước; kí hiệu \\(u_n\\to+\\infty\\). Dãy có <strong>giới hạn \\(-\\infty\\)</strong> nếu từ một lúc đủ muộn \\(u_n\\) nhỏ hơn <strong>mọi mốc âm có độ lớn tùy ý</strong>, tức với mọi \\(M>0\\) có \\(u_n<-M\\) kể từ một chỉ số đủ lớn.",
           "after": "nếu với mỗi \\(M>0\\) cho trước, tồn tại \\(N\\in\\mathbb N^*\\) (phụ thuộc \\(M\\)) sao cho mọi \\(n\\ge N\\) đều có \\(u_n>M\\); kí hiệu \\(u_n\\to+\\infty\\). Dãy có <strong>giới hạn \\(-\\infty\\)</strong> nếu với mỗi \\(M>0\\), tồn tại \\(N\\in\\mathbb N^*\\) sao cho mọi \\(n\\ge N\\) đều có \\(u_n<-M\\).",
           "count": 1
+        },
+        {
+          "before": "với mỗi \\(\\varepsilon>0\\), có \\(N\\) sao cho",
+          "after": "với mỗi sai số mong muốn \\(\\varepsilon>0\\), chọn một chỉ số nguyên dương \\(N\\) sao cho",
+          "count": 1
+        },
+        {
+          "before": "khi \\(n\\ge N\\), \\(1/n^2<\\varepsilon\\).",
+          "after": "khi \\(n\\ge N>1/\\sqrt\\varepsilon\\), ta có \\(n^2>1/\\varepsilon\\), nên \\(1/n^2<\\varepsilon\\).",
+          "count": 1
         }
       ]
     },
@@ -188,6 +218,11 @@
           "before": "Nghiệm \\(2^x>4\\) là **\\(x>2\\)**, chỉ gồm phần đường cong ở phía trên đường ngưỡng;",
           "after": "Tập nghiệm gồm các hoành độ của những điểm trên đồ thị \\(y=2^x\\) nằm phía trên \\(y=4\\), tức **\\(x>2\\)**;",
           "count": 1
+        },
+        {
+          "before": "trước khi dùng tính đơn ánh.",
+          "after": "trước khi dùng tính đơn ánh (hai đối số dương khác nhau không thể có cùng lôgarit).",
+          "count": 1
         }
       ]
     },
@@ -199,6 +234,11 @@
           "before": "Nêu góc quay theo radian và độ dài cung đã đi.",
           "after": "Một vòng ứng với 360° hay 2π rad; radian được giải thích ở mục 1.3. Nêu góc quay theo radian và độ dài cung đã đi.",
           "count": 1
+        },
+        {
+          "before": "em dùng **góc tham chiếu** cho độ lớn, sau đó gắn đúng dấu theo góc phần tư.",
+          "after": "em dùng **góc tham chiếu** (góc nhọn tạo bởi tia cuối với trục hoành trong hai ví dụ này) cho độ lớn, sau đó gắn đúng dấu theo góc phần tư. Với \\(5\\pi/6\\), góc này là \\(\\pi-5\\pi/6=\\pi/6\\); với \\(7\\pi/6\\), là \\(7\\pi/6-\\pi=\\pi/6\\).",
+          "count": 1
         }
       ]
     },
@@ -209,6 +249,21 @@
         {
           "before": "Chúng cùng dao động theo một biến thời gian nhưng lệch pha; làm thế nào biết biên độ và pha của âm tổng hợp?",
           "after": "Chúng cùng dao động theo một biến thời gian nhưng lệch pha. Biên độ là độ lệch lớn nhất so với mức 0; pha ban đầu là góc trong đối số lúc \\(t=0\\). Vì \\(\\cos t=\\sin(t+\\pi/2)\\), hai tín hiệu lệch pha \\(\\pi/2\\). Làm thế nào biết biên độ và pha của âm tổng hợp?",
+          "count": 1
+        },
+        {
+          "before": "có cùng tần số góc và chỉ khác pha.",
+          "after": "có cùng tần số góc (hệ số của \\(t\\) trong đối số, cho biết góc thay đổi nhanh thế nào theo thời gian) và chỉ khác pha.",
+          "count": 1
+        },
+        {
+          "before": "Thay công thức cộng/hiệu của sin và cos, rồi chia cả tử và mẫu cho \\(\\cos a\\cos b\\ne0\\),",
+          "after": "Thay công thức cộng/hiệu của sin và cos để được \\(\\dfrac{\\sin a\\cos b\\pm\\cos a\\sin b}{\\cos a\\cos b\\mp\\sin a\\sin b}\\), rồi chia cả tử và mẫu cho \\(\\cos a\\cos b\\ne0\\),",
+          "count": 1
+        },
+        {
+          "before": "Để hai hệ số bằng \\(5\\), ta có",
+          "after": "Thay \\(t=0\\) cho \\(k\\sin\\varphi=5\\); thay \\(t=\\pi/2\\) cho \\(k\\cos\\varphi=5\\). Hai điều kiện cũng đủ để biểu thức khai triển trùng với tín hiệu gốc ở mọi \\(t\\). Bình phương và cộng, ta có",
           "count": 1
         }
       ]
@@ -237,6 +292,11 @@
           "before": "Không thể chỉ thử **một** dãy rồi coi đã chứng minh toàn bộ, vì dãy khác có thể cho kết quả khác.",
           "after": "Chẳng hạn với \\(f(x)=(x^2-4)/(x-2)\\), mọi dãy \\(x_n\\ne2\\) tiến tới 2 đều cho \\(f(x_n)=x_n+2\\to4\\), theo kiến thức Bài 15. Không thể chỉ thử **một** dãy rồi coi đã chứng minh toàn bộ, vì dãy khác có thể cho kết quả khác.",
           "count": 1
+        },
+        {
+          "before": "=\\dfrac1{\\sqrt{4+x}+2}\\). Vì mẫu mới",
+          "after": "=\\dfrac{x}{x(\\sqrt{4+x}+2)}=\\dfrac1{\\sqrt{4+x}+2}\\). Tử đã rút gọn thành \\((4+x)-4=x\\); mẫu liên hợp dương và \\(x\\ne0\\) nên phép khử hợp lệ. Vì mẫu mới",
+          "count": 1
         }
       ]
     },
@@ -259,6 +319,11 @@
           "before": "Khi tăng số kì ghép không giới hạn, giới hạn dẫn tới \\(A=Pe^{rt}\\).",
           "after": "Số kì \\(mt\\) phải phù hợp với số kì ghép thực tế. Với \\(r>0\\), đặt \\(s=m/r\\). Khi \\(m\\to+\\infty\\), \\(s\\to+\\infty\\) và \\((1+r/m)^{mt}=[(1+1/s)^s]^{rt}\\to e^{rt}\\). Vì vậy mô hình liên tục lý tưởng cho \\(A=Pe^{rt}\\).",
           "count": 1
+        },
+        {
+          "before": "không làm tròn số năm về gần nhất.",
+          "after": "không làm tròn số năm về gần nhất. Ví dụ nếu ngưỡng là 6,2 năm thì làm tròn gần nhất được 6, nhưng 6 không đủ điều kiện: phải chọn 7.",
+          "count": 1
         }
       ]
     },
@@ -280,6 +345,11 @@
         {
           "before": "Một đoạn dốc dài 10 m, cao hơn nền 6 m.",
           "after": "Một đoạn dốc dài 10 m, đầu dưới nằm trên mặt nền phẳng, đầu trên cao hơn nền 6 m.",
+          "count": 1
+        },
+        {
+          "before": "Máy bay bay thẳng với tốc độ không đổi",
+          "after": "Máy bay xuất phát từ mặt đất phẳng và bay thẳng với tốc độ không đổi",
           "count": 1
         }
       ]
@@ -375,6 +445,11 @@
           "before": "Không được lấy \\(P(A)P(B)\\) chỉ vì có hai lượt.",
           "after": "Không được lấy \\(P(A)P(B)\\) nếu chưa có độc lập; quy tắc nhân để đếm số cặp vẫn dùng được.",
           "count": 1
+        },
+        {
+          "before": "Cả \\(0{,}3\\) và \\(0{,}2\\) đều không vượt \\(\\min\\{0{,}6;0{,}5\\}=0{,}5\\),",
+          "after": "Theo Bài 29, cần \\(0{,}6+0{,}5-1\\le P(MN)\\le\\min\\{0{,}6;0{,}5\\}\\), tức \\(0{,}1\\le P(MN)\\le0{,}5\\). Cả \\(0{,}3\\) và \\(0{,}2\\) đều thỏa,",
+          "count": 1
         }
       ]
     },
@@ -407,6 +482,21 @@
           "before": "Thời điểm đạt đỉnh được xác định khi \\(v(t)=0\\).",
           "after": "Đồ thị độ cao là parabol có hệ số \\(t^2\\) âm, đỉnh tại \\(t=20/9{,}8\\) trong miền vật lí (kiến thức hàm bậc hai Toán 10). Tại đó \\(v(t)=0\\).",
           "count": 1
+        },
+        {
+          "before": "Ví dụ \\(y=(2x+1)^3\\) là hàm hợp của \\(y=u^3\\) với \\(u=2x+1\\).",
+          "after": "Ví dụ \\(y=(2x+1)^3\\) là hàm hợp của \\(y=u^3\\) với \\(u=2x+1\\). Tại \\(x=1\\), \\(u=3\\). Khi \\(x\\) tăng \\(h\\), \\(u\\) tăng \\(2h\\). Với \\(h\\ne0\\), thương sai phân theo \\(x\\) là \\(2\\cdot[( (3+2h)^3-27)/(2h)]\\), tiến tới \\(2\\cdot27=54\\) khi \\(h\\to0\\). Đây là minh họa hai tốc độ nối tiếp, không phải quy tắc rút gọn phân số đạo hàm.",
+          "count": 1
+        },
+        {
+          "before": "(với \\(t\\) đo bằng rađian), thừa số",
+          "after": "(với \\(t\\) đo bằng rađian; có thể suy từ \\(\\sin t\\le t\\le\\tan t\\) khi \\(0<t<\\pi/2\\), rồi kẹp giữa \\(\\cos t\\) và 1; phía âm dùng tính chẵn của \\(\\sin t/t\\)), thừa số",
+          "count": 1
+        },
+        {
+          "before": "một giới hạn cơ bản là \\(\\lim_{h\\to0}(e^h-1)/h=1\\).",
+          "after": "một giới hạn cơ bản là \\(\\lim_{h\\to0}(e^h-1)/h=1\\). Có thể nối với giới hạn định nghĩa \\(e\\) ở Bài 19: lấy ln của \\((1+k)^{1/k}\\to e\\) được \\(\\ln(1+k)/k\\to1\\); đặt \\(k=e^h-1\\) thì \\((e^h-1)/h=k/\\ln(1+k)\\to1\\).",
+          "count": 1
         }
       ]
     },
@@ -428,6 +518,33 @@
         {
           "before": "lập thương sai phân s(2+h)-s(2),",
           "after": "lập thương sai phân $\\dfrac{s(2+h)-s(2)}{h}$ với $h\\ne0$,",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-23.md",
+      "old": "03cccc3ae3b48856589611ee4d3ffea05cdc89b4",
+      "edits": [
+        {
+          "before": "nếu biết hai **phương cắt nhau**,",
+          "after": "nếu biết hai **đường cắt nhau, có hai phương khác nhau**,",
+          "count": 1
+        },
+        {
+          "before": "hai đường song song chỉ cho **một hướng**.",
+          "after": "hai đường song song chỉ cho **một hướng**. Chẳng hạn hai đường kẻ ngang song song trên sàn đều vuông góc với một đường kẻ dọc trên sàn, nhưng đường dọc ấy vẫn nằm trong sàn, không vuông góc với mặt sàn.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md",
+      "old": "4cfa1cc9c07f4e37edd6338c4b2466ed92479a05",
+      "edits": [
+        {
+          "before": "Hệ số \\(\\sqrt{SS'}\\) là do",
+          "after": "Các bước biến đổi dùng \\(1-k^3=(1-k)(1+k+k^2)\\), \\(H=h/(1-k)\\), \\(Sk^2=S'\\) và \\(Sk=\\sqrt{SS'}\\) (vì \\(k>0\\)). Hệ số \\(\\sqrt{SS'}\\) là do",
           "count": 1
         }
       ]

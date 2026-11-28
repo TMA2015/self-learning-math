@@ -155,7 +155,7 @@
 
     **Phân tích:** Tại \(x=0\) tử và mẫu đều 0. Nhân với biểu thức liên hợp \(\sqrt{4+x}+2\) giúp dùng hiệu hai bình phương, hợp lệ khi \(x\ne0\) và \(4+x\ge0\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Với \(x\ne0\), \(x\) đủ gần 0 và \(4+x\ge0\): \(\dfrac{\sqrt{4+x}-2}{x}=\dfrac{(\sqrt{4+x}-2)(\sqrt{4+x}+2)}{x(\sqrt{4+x}+2)}=\dfrac1{\sqrt{4+x}+2}\). Vì mẫu mới tiến đến \(2+2=4\ne0\), giới hạn bằng \(1/4\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Với \(x\ne0\), \(x\) đủ gần 0 và \(4+x\ge0\): \(\dfrac{\sqrt{4+x}-2}{x}=\dfrac{(\sqrt{4+x}-2)(\sqrt{4+x}+2)}{x(\sqrt{4+x}+2)}=\dfrac{x}{x(\sqrt{4+x}+2)}=\dfrac1{\sqrt{4+x}+2}\). Tử đã rút gọn thành \((4+x)-4=x\); mẫu liên hợp dương và \(x\ne0\) nên phép khử hợp lệ. Vì mẫu mới tiến đến \(2+2=4\ne0\), giới hạn bằng \(1/4\).</p></div>
 
     **Kiểm lại:** Mẫu liên hợp dương ở gần \(x=0\); rút gọn chỉ dùng cho \(x\ne0\). Giới hạn không có nghĩa phân thức gốc xác định tại 0.
 

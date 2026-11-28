@@ -52,7 +52,7 @@
 
     ??? tip "Kiểm lỗi"
 
-        Không tự mở rộng miền xác định sau biến đổi. Với hai log, bắt buộc **cả hai đối số dương** trước khi dùng tính đơn ánh.
+        Không tự mở rộng miền xác định sau biến đổi. Với hai log, bắt buộc **cả hai đối số dương** trước khi dùng tính đơn ánh (hai đối số dương khác nhau không thể có cùng lôgarit).
 
     ### 1.3. Bất phương trình mũ
 

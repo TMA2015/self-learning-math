@@ -118,7 +118,7 @@
 
     ### 2.1. Giới hạn hữu hạn của dãy số
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Dãy có giới hạn bằng 0</strong><p>Dãy \((u_n)\) có <strong>giới hạn 0</strong> khi \(n\to+\infty\) nếu \(|u_n|\) có thể nhỏ hơn <strong>một số dương bé tùy ý</strong> kể từ một số hạng nào đó trở đi. Viết \(\lim_{n\to+\infty}u_n=0\). Nói chính xác: với mỗi \(\varepsilon>0\), có \(N\) sao cho mọi \(n\ge N\) đều có \(|u_n|<\varepsilon\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Dãy có giới hạn bằng 0</strong><p>Dãy \((u_n)\) có <strong>giới hạn 0</strong> khi \(n\to+\infty\) nếu \(|u_n|\) có thể nhỏ hơn <strong>một số dương bé tùy ý</strong> kể từ một số hạng nào đó trở đi. Viết \(\lim_{n\to+\infty}u_n=0\). Nói chính xác: với mỗi sai số mong muốn \(\varepsilon>0\), chọn một chỉ số nguyên dương \(N\) sao cho mọi \(n\ge N\) đều có \(|u_n|<\varepsilon\).</p></div>
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Dãy có giới hạn hữu hạn \(a\)</strong><p>Với \(a\in\mathbb R\), dãy \((u_n)\) có <strong>giới hạn là \(a\)</strong> khi \(n\to+\infty\) nếu \(\lim_{n\to+\infty}(u_n-a)=0\). Kí hiệu \(\lim_{n\to+\infty}u_n=a\) hoặc \(u_n\to a\). Như vậy điều kiện chỉ yêu cầu từ một lúc đủ muộn các số hạng sát \(a\); không yêu cầu có số hạng bằng \(a\).</p></div>
 
@@ -168,7 +168,7 @@
 
     **Phân tích:** Không cần tìm “số hạng cuối”. Với \(u_n\), khoảng cách đến 0 là \(1/n^2\). Với \(v_n\), xét hiệu \(v_n-5\) để dùng định nghĩa giới hạn hữu hạn.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Vì \(n^2\) tăng không bị chặn, \(1/n^2\to0\). Nếu cần độ chính xác \(\varepsilon>0\), chọn \(N>1/\sqrt\varepsilon\); khi \(n\ge N\), \(1/n^2<\varepsilon\). Mặt khác \(|v_n-5|=2/n^2\to0\), nên \(v_n\to5\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Vì \(n^2\) tăng không bị chặn, \(1/n^2\to0\). Nếu cần độ chính xác \(\varepsilon>0\), chọn \(N>1/\sqrt\varepsilon\); khi \(n\ge N>1/\sqrt\varepsilon\), ta có \(n^2>1/\varepsilon\), nên \(1/n^2<\varepsilon\). Mặt khác \(|v_n-5|=2/n^2\to0\), nên \(v_n\to5\).</p></div>
 
     **Kiểm lại:** \(u_n>0\) với mọi \(n\); \(v_n>5\) với mọi \(n\). Cả hai vẫn có giới hạn dù không hề bằng giá trị giới hạn ở một số hạng hữu hạn.
 

@@ -139,7 +139,7 @@
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(P(M)P(N)=0{,}6\cdot0{,}5=0{,}3\). (a) \(P(MN)=0{,}3\) bằng tích, nên \(M,N\) độc lập. (b) \(P(MN)=0{,}2\ne0{,}3\), nên \(M,N\) không độc lập.</p></div>
 
-    **Kiểm lại:** Cả \(0{,}3\) và \(0{,}2\) đều không vượt \(\min\{0{,}6;0{,}5\}=0{,}5\), nên hai tình huống có thể xảy ra trong mô hình xác suất; việc kết luận độc lập vẫn khác nhau.
+    **Kiểm lại:** Theo Bài 29, cần \(0{,}6+0{,}5-1\le P(MN)\le\min\{0{,}6;0{,}5\}\), tức \(0{,}1\le P(MN)\le0{,}5\). Cả \(0{,}3\) và \(0{,}2\) đều thỏa, nên hai tình huống có thể xảy ra trong mô hình xác suất; việc kết luận độc lập vẫn khác nhau.
 
     ### 3.5. Bảng số liệu và sự phụ thuộc thống kê
 

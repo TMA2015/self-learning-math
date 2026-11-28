@@ -218,9 +218,9 @@
 
     **Phân tích:** Cần mặt phẳng phụ **chứa \(BF\)**. Dùng đường \(BE\) cắt \(CD\) để dựng giao tuyến với \((ACD)\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Lấy \(M=BE\cap CD\). Do \(E\in BM\) và \(F\in AE\), bốn điểm \(A,B,E,F\) thuộc \((ABM)\); suy ra \(BF\subset(ABM)\). Hai mặt \((ABM),(ACD)\) giao nhau theo \(AM\). Gọi \(N=BF\cap AM\), suy ra \(N\in BF\) và \(N\in(ACD)\); vậy \(N=BF\cap(ACD)\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Lấy \(M=BE\cap CD\). Do \(E\in BM\) và \(F\in AE\), bốn điểm \(A,B,E,F\) thuộc \((ABM)\); suy ra \(BF\subset(ABM)\). Hai mặt \((ABM),(ACD)\) giao nhau theo \(AM\). Vì \(E\) nằm giữa \(B,M\) và \(F\) nằm giữa \(A,E\), \(F\) ở trong tam giác \(ABM\), nên tia \(BF\) cắt cạnh \(AM\) tại \(N\). Do đó \(N\in BF\) và \(N\in(ACD)\); vậy \(N=BF\cap(ACD)\).</p></div>
 
-    **Kiểm lại:** Điểm \(N\) có thể cần dựng trên **đường thẳng kéo dài**, không giới hạn ở đoạn nhìn thấy; mỗi bước phải có chứng cứ điểm thuộc mặt.
+    **Kiểm lại:** Trong bài này \(N\) nằm trên cạnh \(AM\) nhờ giả thiết điểm trong tam giác. Ở bài khác có thể cần kéo dài đường thẳng; mỗi bước phải có chứng cứ điểm thuộc mặt.
 
 === "Lỗi thường gặp"
 

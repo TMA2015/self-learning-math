@@ -139,7 +139,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg" loading="lazy" alt="Đường tròn lượng giác với góc 5π/6 ở góc phần tư II, hoành độ âm và tung độ dương"/><figcaption><strong>Hướng dẫn đọc hình:</strong> tìm trục Ox dương là tia đầu, điểm cuối M tại góc phần tư II. Hoành độ M cho cos, tung độ M cho sin; góc tham chiếu π/6 giúp tìm độ lớn, góc phần tư xác định dấu.</figcaption></figure>
 
-    Trên hình, góc \(5\pi/6\) nằm ở góc phần tư II nên cos âm và sin dương. Để tính góc khác, em dùng **góc tham chiếu** cho độ lớn, sau đó gắn đúng dấu theo góc phần tư.
+    Trên hình, góc \(5\pi/6\) nằm ở góc phần tư II nên cos âm và sin dương. Để tính góc khác, em dùng **góc tham chiếu** (góc nhọn tạo bởi tia cuối với trục hoành trong hai ví dụ này) cho độ lớn, sau đó gắn đúng dấu theo góc phần tư. Với \(5\pi/6\), góc này là \(\pi-5\pi/6=\pi/6\); với \(7\pi/6\), là \(7\pi/6-\pi=\pi/6\).
 
     **Vận dụng.** Tính \(\sin(7\pi/6)\), \(\cos(7\pi/6)\) và \(\tan(7\pi/6)\).
 
