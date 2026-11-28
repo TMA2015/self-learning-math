@@ -1090,28 +1090,28 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 ### THPT-G11-CHVII-B22-W01 | skill_id=`G11-B22-ANGLE_LINES` | placement=`SGK_WRITTEN` | role=`WRITTEN`
 
-**Đề:** Hình hộp chữ nhật ABCD.A′B′C′D′: chứng minh AB⊥DD′ và nêu tại sao không cần giao điểm.
+**Đề:** Hình hộp chữ nhật ABCD.A′B′C′D′: chứng minh \(AB\perp DD'\) và nêu tại sao không cần giao điểm.
 
-**Bài giải tự đối chiếu sau khi tự làm:** DD′//AA′, AA′⊥(ABCD) nên AA′⊥AB; thay phương song song suy góc (AB,DD′)=90°.
+**Bài giải tự đối chiếu sau khi tự làm:** \(DD'\parallel AA'\), \(AA'\perp(ABCD)\) nên \(AA'\perp AB\); thay phương song song suy góc \((AB,DD')=90^\circ\).
 
 **Rubric 4 điểm:**
-1. Nêu đúng AA′⊥(ABCD) (1) — **1 điểm**.
-2. Suy AA′⊥AB (1) — **1 điểm**.
-3. Dùng DD′//AA′ (1) — **1 điểm**.
+1. Nêu đúng \(AA'\perp(ABCD)\) (1) — **1 điểm**.
+2. Suy \(AA'\perp AB\) (1) — **1 điểm**.
+3. Dùng \(DD'\parallel AA'\) (1) — **1 điểm**.
 4. Kết luận góc theo phương dù không cắt (1) — **1 điểm**.
 
 
 
 ### THPT-G11-CHVII-B22-W02-ANCHOR | skill_id=`G11-B22-PARALLEL_DIRECTION` | placement=`SGK_WRITTEN` | role=`ANCHOR_TAG`
 
-**Đề:** Hai đường a,b chéo nhau; qua O dựng a′//a,b′//b và biết góc giữa hai tia đã chọn là 135°. Tính góc giữa a,b, nêu vì sao độc lập O.
+**Đề:** Hai đường a,b chéo nhau; qua O dựng \(a'\parallel a,\ b'\parallel b\) và biết góc giữa hai tia đã chọn là 135°. Tính góc giữa a,b, nêu vì sao độc lập O.
 
 **Bài giải tự đối chiếu sau khi tự làm:** Góc giữa hai đường là 45°. Phép chọn O khác chỉ tịnh tiến phương của hai đường nên góc không đổi.
 
 **Rubric 4 điểm:**
 1. Dựng/nhận đúng a′,b′ và phương (1) — **1 điểm**.
 2. Hiểu góc đường lấy góc không tù (1) — **1 điểm**.
-3. Tính 45° từ 180°−135° (1) — **1 điểm**.
+3. Tính 45° từ \(180^\circ-135^\circ\) (1) — **1 điểm**.
 4. Giải thích độc lập O (1) — **1 điểm**.
 
 
@@ -1120,13 +1120,13 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Trong tam giác ABC, đường d qua A vuông góc AB và AC. Hãy chứng minh d vuông góc BC và mọi đường thuộc (ABC).
 
-**Bài giải tự đối chiếu sau khi tự làm:** AB,AC cắt nhau tại A nên d⊥(ABC); suy d⊥BC và mọi đường trong đáy.
+**Bài giải tự đối chiếu sau khi tự làm:** AB,AC cắt nhau tại A nên \(d\perp(ABC)\); suy \(d\perp BC\) và mọi đường trong đáy.
 
 **Rubric 4 điểm:**
 1. Nêu AB,AC cùng nằm đáy (1) — **1 điểm**.
 2. Nêu AB,AC cắt nhau tại A (1) — **1 điểm**.
-3. Áp dụng tiêu chí đủ d⊥(ABC) (1) — **1 điểm**.
-4. Suy đúng d⊥BC và mọi đường trong mặt (1) — **1 điểm**.
+3. Áp dụng tiêu chí đủ \(d\perp(ABC)\) (1) — **1 điểm**.
+4. Suy đúng \(d\perp BC\) và mọi đường trong mặt (1) — **1 điểm**.
 
 
 
@@ -1138,7 +1138,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Rubric 4 điểm:**
 1. Giải thích hai cột là phương pháp tuyến (1) — **1 điểm**.
-2. Suy k//m và phân biệt từ giả thiết k≠m (1) — **1 điểm**.
+2. Suy \(k\parallel m\) và phân biệt từ giả thiết \(k\ne m\) (1) — **1 điểm**.
 3. Loại tình huống góc nhọn (1) — **1 điểm**.
 4. Nêu phản ví dụ đúng khi hai đường chỉ cùng vuông góc một vạch sàn (1) — **1 điểm**.
 
@@ -1146,27 +1146,27 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 ### THPT-G11-CHVII-B24-W01 | skill_id=`G11-B24-LINE_PLANE_ANGLE` | placement=`SGK_WRITTEN` | role=`WRITTEN`
 
-**Đề:** Trong tam giác vuông AHB tại H, AH=9m vuông góc nền và HB=12m. Chứng minh HB là hình chiếu AB, tính góc AB–nền.
+**Đề:** Trong tam giác vuông AHB tại H, \(AH=9\,\mathrm m\) vuông góc nền và \(HB=12\,\mathrm m\). Chứng minh HB là hình chiếu AB, tính góc AB–nền.
 
-**Bài giải tự đối chiếu sau khi tự làm:** AB=15m, HB là hình chiếu vì H là chân A và B nằm nền; sinθ=9/15=3/5, θ≈36,87°.
+**Bài giải tự đối chiếu sau khi tự làm:** \(AB=15\,\mathrm m\), HB là hình chiếu vì H là chân A và B nằm nền; \(\sin\theta=\frac9{15}=\frac35,\ \theta\approx36{,}87^\circ\).
 
 **Rubric 4 điểm:**
 1. Xác định H là hình chiếu của A (1) — **1 điểm**.
 2. Nêu HB là hình chiếu đoạn AB (1) — **1 điểm**.
-3. Tính AB=15m (1) — **1 điểm**.
-4. Tính sinθ=3/5 và θ≈36,87° (1) — **1 điểm**.
+3. Tính \(AB=15\,\mathrm m\) (1) — **1 điểm**.
+4. Tính \(\sin\theta=\frac35\) và \(\theta\approx36{,}87^\circ\) (1) — **1 điểm**.
 
 
 
 ### THPT-G11-CHVII-B24-W02-ANCHOR | skill_id=`G11-B24-THREE_PERP` | placement=`SGK_WRITTEN` | role=`ANCHOR_TAG`
 
-**Đề:** b là đường xiên với hình chiếu b′ trên (P); a thuộc (P), a⊥b′. Một bạn cho rằng kết luận a⊥b chỉ đúng nếu a,b cắt nhau. Hãy phân tích theo định nghĩa góc hai đường trong không gian.
+**Đề:** b là đường xiên với hình chiếu b′ trên (P); a thuộc (P), \(a\perp b'\). Một bạn cho rằng kết luận \(a\perp b\) chỉ đúng nếu a,b cắt nhau. Hãy phân tích theo định nghĩa góc hai đường trong không gian.
 
-**Bài giải tự đối chiếu sau khi tự làm:** Định lí ba đường vuông góc dùng quan hệ giữa phương: a⊥b khi a⊥b′, miễn b′ là hình chiếu đúng. Hai đường trong không gian có thể chéo nhau; hình chiếu về cùng phương.
+**Bài giải tự đối chiếu sau khi tự làm:** Định lí ba đường vuông góc dùng quan hệ giữa phương: \(a\perp b\) khi \(a\perp b'\), miễn b′ là hình chiếu đúng. Hai đường trong không gian có thể chéo nhau; hình chiếu về cùng phương.
 
 **Rubric 4 điểm:**
 1. Xác định đúng b′ là hình chiếu b (1) — **1 điểm**.
-2. Nêu a⊥b′ là giả thiết (1) — **1 điểm**.
+2. Nêu \(a\perp b'\) là giả thiết (1) — **1 điểm**.
 3. Áp dụng ba đường vuông góc (1) — **1 điểm**.
 4. Giải thích quan hệ góc theo phương, không cần giao thực (1) — **1 điểm**.
 
@@ -1176,26 +1176,26 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Góc phẳng một góc nhị diện là 112°. Tính góc giữa hai mặt phẳng chứa hai nửa mặt và giải thích vì sao khác 112°.
 
-**Bài giải tự đối chiếu sau khi tự làm:** Góc hai mặt =68°, vì lấy góc không tù giữa hai mặt, trong khi góc nhị diện 112° đo hai nửa mặt có hướng.
+**Bài giải tự đối chiếu sau khi tự làm:** Góc giữa hai mặt phẳng bằng 68°, vì lấy góc không tù giữa hai mặt, trong khi góc nhị diện 112° đo hai nửa mặt có hướng.
 
 **Rubric 4 điểm:**
 1. Phân biệt nhị diện với góc hai mặt (1) — **1 điểm**.
-2. Nêu góc giữa hai mặt ≤90° (1) — **1 điểm**.
-3. Tính 180°−112°=68° (1) — **1 điểm**.
+2. Nêu góc giữa hai mặt \(\le90^\circ\) (1) — **1 điểm**.
+3. Tính \(180^\circ-112^\circ=68^\circ\) (1) — **1 điểm**.
 4. Giải thích cơ sở chọn góc nhọn (1) — **1 điểm**.
 
 
 
 ### THPT-G11-CHVII-B25-W02-ANCHOR | skill_id=`G11-B25-REGULAR_PYRAMID` | placement=`SGK_WRITTEN` | role=`ANCHOR_TAG`
 
-**Đề:** Chóp đều S.ABCD đáy vuông cạnh 8, chân đường cao O tâm đáy, SO=6. Tính AO, SA và giải thích tại sao SA không phải chiều cao.
+**Đề:** Chóp đều S.ABCD đáy vuông cạnh 8, chân đường cao O tâm đáy, \(\(SO=6\)\). Tính AO, SA và giải thích tại sao SA không phải chiều cao.
 
-**Bài giải tự đối chiếu sau khi tự làm:** AO=4√2, SA=√(36+32)=2√17; SO=6 là đường cao vì SO⊥đáy, SA xiên.
+**Bài giải tự đối chiếu sau khi tự làm:** \(AO=4\sqrt2,\ SA=\sqrt{36+32}=2\sqrt{17}\); SO=6 là đường cao vì \(SO\perp(ABCD)\), SA xiên.
 
 **Rubric 4 điểm:**
 1. Nêu O là tâm và chân đường cao (1) — **1 điểm**.
-2. Tính AO=4√2 (1) — **1 điểm**.
-3. Tính SA=2√17 (1) — **1 điểm**.
+2. Tính \(AO=4\sqrt2\) (1) — **1 điểm**.
+3. Tính \(SA=2\sqrt{17}\) (1) — **1 điểm**.
 4. Phân biệt SO với SA theo phương vuông góc (1) — **1 điểm**.
 
 
