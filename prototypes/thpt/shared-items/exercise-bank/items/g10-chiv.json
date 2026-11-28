@@ -758,17 +758,17 @@
   {
     "item_id": "THPT-G10-B08-P05",
     "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G10-B08-P05",
-    "stem": "Cho tam giác ABC, M là trung điểm BC. Điểm X thỏa mãn \\(\\overrightarrow{XA}+\\overrightarrow{XB}+\\overrightarrow{XC}=\\vec0\\). (a) Dùng quy tắc ba điểm và tính chất trung điểm để chứng minh \\(\\overrightarrow{XA}+\\overrightarrow{XM}+\\overrightarrow{XM}=\\vec0\\). (b) Từ đó xác định vị trí của X trên AM và tỉ số AX:XM. X là điểm nào của tam giác?",
+    "stem": "Cho tam giác ABC, M là trung điểm BC. Điểm X thỏa mãn \\(\\overrightarrow{XA}+\\overrightarrow{XB}+\\overrightarrow{XC}=\\vec0\\). (a) Dùng quy tắc ba điểm và tính chất trung điểm để chứng minh \\(\\overrightarrow{XA}+\\overrightarrow{XM}+\\overrightarrow{XM}=\\vec0\\). (b) Từ đó xác định vị trí của X trên AM và tỉ số \\(AX:XM\\). X là điểm nào của tam giác?",
     "answer_key": "\\(\\overrightarrow{XB}+\\overrightarrow{XC}=2\\overrightarrow{XM}\\); X nằm giữa A và M, \\(AX:XM=2:1\\), X là trọng tâm G.",
-    "worked_solution": "Vì M là trung điểm BC nên \\(\\overrightarrow{MB}+\\overrightarrow{MC}=\\vec0\\). Theo quy tắc ba điểm, \\(\\overrightarrow{XB}=\\overrightarrow{XM}+\\overrightarrow{MB}\\) và \\(\\overrightarrow{XC}=\\overrightarrow{XM}+\\overrightarrow{MC}\\). Cộng hai đẳng thức được \\(\\overrightarrow{XB}+\\overrightarrow{XC}=\\overrightarrow{XM}+\\overrightarrow{XM}\\). Thay vào giả thiết, suy ra \\(\\overrightarrow{AX}=\\overrightarrow{XM}+\\overrightarrow{XM}\\). X không thể trùng M, vì khi đó vế phải bằng vectơ-không, buộc A=M, trái với giả thiết tam giác. Tổng hai vectơ XM bằng nhau có cùng hướng với XM và độ dài gấp đôi XM (ghép hai mũi tên cùng hướng). Vì vậy AX và XM cùng hướng, X nằm giữa A và M, đồng thời \\(AX=2XM\\). Trên trung tuyến AM chỉ có một điểm chia đoạn theo tỉ số 2:1 tính từ A; đó chính là trọng tâm G.",
+    "worked_solution": "Vì M là trung điểm BC nên \\(\\overrightarrow{MB}+\\overrightarrow{MC}=\\vec0\\). Theo quy tắc ba điểm, \\(\\overrightarrow{XB}=\\overrightarrow{XM}+\\overrightarrow{MB}\\) và \\(\\overrightarrow{XC}=\\overrightarrow{XM}+\\overrightarrow{MC}\\). Cộng hai đẳng thức được \\(\\overrightarrow{XB}+\\overrightarrow{XC}=\\overrightarrow{XM}+\\overrightarrow{XM}\\). Thay vào giả thiết, suy ra \\(\\overrightarrow{AX}=\\overrightarrow{XM}+\\overrightarrow{XM}\\). X không thể trùng M, vì khi đó vế phải bằng vectơ-không, buộc A=M, trái với giả thiết tam giác. Tổng hai vectơ \\(\\overrightarrow{XM}\\) bằng nhau có cùng hướng với \\(\\overrightarrow{XM}\\) và độ dài gấp đôi \\(XM\\) (ghép hai mũi tên cùng hướng). Vì vậy \\(\\overrightarrow{AX}\\) và \\(\\overrightarrow{XM}\\) cùng hướng, X nằm giữa A và M, đồng thời \\(AX=2XM\\). Trên trung tuyến AM chỉ có một điểm chia đoạn theo tỉ số \\(2:1\\) tính từ A; đó chính là trọng tâm G.",
     "skill_ids": [
       "G10-B08-CENTROID"
     ],
     "problem_type_id": null,
     "difficulty": "SYNTHESIS",
     "hints": [
-      "Tách XB và XC thành các vectơ đi qua M.",
-      "Chuyển XA sang vế kia rồi xét hướng và độ dài của hai vectơ AX, XM."
+      "Tách \\(\\overrightarrow{XB}\\) và \\(\\overrightarrow{XC}\\) thành các vectơ đi qua M.",
+      "Chuyển \\(\\overrightarrow{XA}\\) sang vế kia rồi xét hướng và độ dài của hai vectơ \\(\\overrightarrow{AX}\\), \\(\\overrightarrow{XM}\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -793,15 +793,15 @@
     "options": [
       {
         "id": "A",
-        "text": "X là trung điểm AM, AX:XM=1:1."
+        "text": "X là trung điểm AM, \\(AX:XM=1:1\\)."
       },
       {
         "id": "B",
-        "text": "X nằm giữa A và M, AX:XM=1:2."
+        "text": "X nằm giữa A và M, \\(AX:XM=1:2\\)."
       },
       {
         "id": "C",
-        "text": "X nằm ngoài đoạn AM về phía A, AX:XM=2:1."
+        "text": "X nằm ngoài đoạn AM về phía A, \\(AX:XM=2:1\\)."
       },
       {
         "id": "D",
@@ -868,20 +868,20 @@
     "item_id": "THPT-G10-B09-C01",
     "content_version": "CD13-BANK-PARTIAL-20261127-THPT-G10-B09-C01",
     "stem": "Cho \\(\\vec u\\ne\\vec0\\), \\(|\\vec u|=4\\) cm, \\(\\vec v=-2\\vec u\\). Phát biểu nào đúng?",
-    "answer_key": "\\(|\\vec v|=8\\) cm và ngược hướng \\(\\vec u\\)",
+    "answer_key": "\\(\\lVert\\vec v\\rVert=8\\,\\mathrm{cm}\\) và ngược hướng \\(\\vec u\\)",
     "worked_solution": "\\(\\lVert\\vec v\\rVert=|-2|\\cdot4=8\\,\\mathrm{cm}\\). Vì \\(\\vec u\\ne\\vec0\\) và hệ số −2 âm, \\(\\vec v\\) ngược hướng với \\(\\vec u\\).",
     "options": [
       {
         "id": "A",
-        "text": "\\(|\\vec v|=-8\\) cm"
+        "text": "\\(\\lVert\\vec v\\rVert=-8\\,\\mathrm{cm}\\)"
       },
       {
         "id": "B",
-        "text": "\\(|\\vec v|=8\\) cm và ngược hướng \\(\\vec u\\)"
+        "text": "\\(\\lVert\\vec v\\rVert=8\\,\\mathrm{cm}\\) và ngược hướng \\(\\vec u\\)"
       },
       {
         "id": "C",
-        "text": "\\(|\\vec v|=2\\) cm"
+        "text": "\\(\\lVert\\vec v\\rVert=2\\,\\mathrm{cm}\\)"
       },
       {
         "id": "D",
