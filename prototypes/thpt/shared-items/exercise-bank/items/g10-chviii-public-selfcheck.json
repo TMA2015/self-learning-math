@@ -69,9 +69,9 @@
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-02",
-    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-02",
-    "stem": "Một xưởng cho phép chọn **một trong 4 mẫu áo** và **một trong 3 màu in**. Tuy nhiên hai cặp (mẫu M1, màu đỏ) và (mẫu M2, màu xanh) không thể sản xuất; mọi cặp còn lại đều hợp lệ. Có bao nhiêu phương án sản xuất hợp lệ? Trình bày cách kiểm đếm không sót, không trùng. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "10 phương án",
+    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-02.DELTA08",
+    "stem": "Một xưởng cho phép chọn **một trong 4 mẫu áo** và **một trong 3 màu in**. Tuy nhiên hai cặp (mẫu M1, màu đỏ) và (mẫu M2, màu xanh) không thể sản xuất; mọi cặp còn lại đều hợp lệ. Có bao nhiêu phương án sản xuất hợp lệ? Trình bày cách kiểm đếm không sót, không trùng. Chọn kết quả kèm cách kiểm đếm không sót, không trùng.",
+    "answer_key": "10, vì có \\(4\\cdot3=12\\) cặp phân biệt, loại đúng hai ô cấm khác nhau trong bảng \\(4\\times3\\).",
     "worked_solution": "Không có ràng buộc thì có \\(4\\cdot3=12\\) cặp phân biệt. Hai cặp bị loại là hai kết quả khác nhau, nên còn \\(12-2=10\\). Có thể kiểm bằng bảng \\(4\\times3\\) và gạch đúng hai ô cấm.",
     "skill_ids": [
       "COUNT_MULTIPLICATION",
@@ -118,28 +118,29 @@
     "options": [
       {
         "id": "A",
-        "text": "12"
+        "text": "12, vì có \\(4\\cdot3\\) cặp và không cần loại cặp cấm."
       },
       {
         "id": "B",
-        "text": "10"
+        "text": "10, vì có \\(4\\cdot3=12\\) cặp phân biệt, loại đúng hai ô cấm khác nhau trong bảng \\(4\\times3\\)."
       },
       {
         "id": "C",
-        "text": "9"
+        "text": "9, vì loại cả ba màu của một mẫu áo."
       },
       {
         "id": "D",
-        "text": "7"
+        "text": "7, vì cộng 4 mẫu với 3 màu."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "DELTA08 scoped public self-check X-G.6: retain multi-step reasoning from original SHORT_EXPLANATION/WRITTEN_RUBRIC as reason-bearing choices, check distractor misconceptions, key and solution. Original mathematical task, correct option ID, skill, difficulty, public exposure, source, rubric and placement preserved. No private RD1, no production scoring; after-whole-submission reveal only at authorized RELEASE."
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-03",
-    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-03",
-    "stem": "Từ các chữ số \\(0,1,2,3,4\\), lập các số tự nhiên **có đúng ba chữ số đôi một khác nhau và lớn hơn \\(320\\)**. Tính số cách lập, nêu rõ các trường hợp và chứng minh không đếm trùng. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "17 số",
+    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-03.DELTA08",
+    "stem": "Từ các chữ số \\(0,1,2,3,4\\), lập các số tự nhiên **có đúng ba chữ số đôi một khác nhau và lớn hơn \\(320\\)**. Tính số cách lập, nêu rõ các trường hợp và chứng minh không đếm trùng. Chọn kết quả kèm cách chia trường hợp đúng, không đếm trùng.",
+    "answer_key": "17, vì hàng trăm 4 cho 12 số; hàng trăm 3 cho \\(3+2\\) số (hàng chục 4 hoặc 2, loại 320); hai trường hợp rời nhau.",
     "worked_solution": "- Chữ số hàng trăm là 4: hàng chục có 4 lựa chọn trong \\(\\{0,1,2,3\\}\\), hàng đơn vị còn 3 lựa chọn: \\(4\\cdot3=12\\) số.\n- Chữ số hàng trăm là 3: để số lớn hơn 320, hàng chục chỉ có thể là 4 (hàng đơn vị \\(0,1,2\\): 3 số) hoặc là 2 (hàng đơn vị \\(1,4\\): 2 số; 320 bị loại vì không lớn hơn 320). Có \\(3+2=5\\) số.\n- Các trường hợp hàng trăm 4 hoặc 3 rời nhau; các hàng trăm nhỏ hơn 3 không thể vượt 320. Tổng \\(12+5=17\\).",
     "skill_ids": [
       "COUNT_CASES_NO_REPEAT",
@@ -186,22 +187,23 @@
     "options": [
       {
         "id": "A",
-        "text": "18"
+        "text": "18, vì khi hàng trăm là 3, hàng chục là 2 hoặc 4 đều có 3 cách chọn hàng đơn vị."
       },
       {
         "id": "B",
-        "text": "24"
+        "text": "24, vì hàng trăm là 3 hoặc 4 đều có \\(4\\cdot3\\) cách chọn hai chữ số còn lại."
       },
       {
         "id": "C",
-        "text": "17"
+        "text": "17, vì hàng trăm 4 cho 12 số; hàng trăm 3 cho \\(3+2\\) số (hàng chục 4 hoặc 2, loại 320); hai trường hợp rời nhau."
       },
       {
         "id": "D",
-        "text": "15"
+        "text": "15, vì hàng trăm 4 cho 12 số, hàng trăm 3 chỉ có thể chọn hàng chục 4."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "DELTA08 scoped public self-check X-G.6: retain multi-step reasoning from original SHORT_EXPLANATION/WRITTEN_RUBRIC as reason-bearing choices, check distractor misconceptions, key and solution. Original mathematical task, correct option ID, skill, difficulty, public exposure, source, rubric and placement preserved. No private RD1, no production scoring; after-whole-submission reveal only at authorized RELEASE."
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-04",
@@ -340,9 +342,9 @@
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-06",
-    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-06",
-    "stem": "Từ 8 học sinh phân biệt, bầu đúng **1 lớp trưởng** và **2 lớp phó có quyền hạn bằng nhau**, không ai giữ hai chức danh. Hỏi có bao nhiêu ban cán sự khác nhau? Trình bày cách đếm và giải thích vì sao không phải chỉnh hợp chập 3 của 8. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "168 ban cán sự",
+    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-06.DELTA08",
+    "stem": "Từ 8 học sinh phân biệt, bầu đúng **1 lớp trưởng** và **2 lớp phó có quyền hạn bằng nhau**, không ai giữ hai chức danh. Hỏi có bao nhiêu ban cán sự khác nhau? Trình bày cách đếm và giải thích vì sao không phải chỉnh hợp chập 3 của 8. Chọn kết quả kèm lập luận đúng về việc phân vai.",
+    "answer_key": "168, vì chọn lớp trưởng trước rồi chọn hai lớp phó không phân biệt thứ tự: \\(8\\binom72\\).",
     "worked_solution": "Chọn lớp trưởng có 8 cách. Trong 7 người còn lại chọn nhóm 2 lớp phó không phân biệt thứ tự có \\(\\binom72=21\\) cách. Suy ra \\(8\\binom72=168\\). Tương đương: chọn 3 người rồi xác định 1 người là lớp trưởng: \\(\\binom83\\cdot3=56\\cdot3=168\\). Dùng \\(A_8^3\\) sẽ nhân đôi vì hai lớp phó hoán đổi không tạo phương án mới.",
     "skill_ids": [
       "ARRANGEMENT_WITH_ROLES",
@@ -389,22 +391,23 @@
     "options": [
       {
         "id": "A",
-        "text": "336"
+        "text": "336, vì xếp thứ tự ba người bằng \\(A_8^3\\), coi hai lớp phó là hai vai phân biệt."
       },
       {
         "id": "B",
-        "text": "168"
+        "text": "168, vì chọn lớp trưởng trước rồi chọn hai lớp phó không phân biệt thứ tự: \\(8\\binom72\\)."
       },
       {
         "id": "C",
-        "text": "56"
+        "text": "56, vì chỉ cần chọn nhóm ba người bằng \\(\\binom83\\)."
       },
       {
         "id": "D",
-        "text": "112"
+        "text": "112, vì chọn nhóm ba người rồi chỉ có hai cách chọn lớp trưởng: \\(2\\binom83\\)."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "DELTA08 scoped public self-check X-G.6: retain multi-step reasoning from original SHORT_EXPLANATION/WRITTEN_RUBRIC as reason-bearing choices, check distractor misconceptions, key and solution. Original mathematical task, correct option ID, skill, difficulty, public exposure, source, rubric and placement preserved. No private RD1, no production scoring; after-whole-submission reveal only at authorized RELEASE."
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-07",
@@ -475,9 +478,9 @@
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-08",
-    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-08",
-    "stem": "Một đội có 5 bạn nữ và 4 bạn nam, tất cả phân biệt. Chọn một nhóm 4 người **có cả nam lẫn nữ** và **số nữ không ít hơn số nam**. Hỏi có bao nhiêu nhóm? Giải bằng các trường hợp rời nhau, không dùng việc sắp thứ tự thành viên. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "100 nhóm",
+    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-08.DELTA08",
+    "stem": "Một đội có 5 bạn nữ và 4 bạn nam, tất cả phân biệt. Chọn một nhóm 4 người **có cả nam lẫn nữ** và **số nữ không ít hơn số nam**. Hỏi có bao nhiêu nhóm? Giải bằng các trường hợp rời nhau, không dùng việc sắp thứ tự thành viên. Chọn kết quả kèm phép đếm theo các trường hợp rời nhau.",
+    "answer_key": "100, vì chỉ có hai trường hợp 2 nữ–2 nam và 3 nữ–1 nam; \\(\\binom52\\binom42+\\binom53\\binom41=60+40\\).",
     "worked_solution": "Vì nhóm có 4 người, có cả nam và nữ, nữ \\(\\ge\\) nam, các khả năng duy nhất là (2 nữ, 2 nam) và (3 nữ, 1 nam). Nhánh (2,2): \\(\\binom52\\binom42=10\\cdot6=60\\). Nhánh (3,1): \\(\\binom53\\binom41=10\\cdot4=40\\). Hai trường hợp loại trừ nhau; tổng \\(60+40=100\\).",
     "skill_ids": [
       "COMBINATION_TWO_GROUPS"
@@ -523,22 +526,23 @@
     "options": [
       {
         "id": "A",
-        "text": "60"
+        "text": "60, vì chỉ xét trường hợp 2 nữ và 2 nam."
       },
       {
         "id": "B",
-        "text": "120"
+        "text": "120, vì đếm trường hợp 2 nữ và 2 nam theo hai thứ tự chọn giới tính."
       },
       {
         "id": "C",
-        "text": "105"
+        "text": "105, vì cộng cả trường hợp 4 nữ vào hai trường hợp 2 nữ–2 nam và 3 nữ–1 nam."
       },
       {
         "id": "D",
-        "text": "100"
+        "text": "100, vì chỉ có hai trường hợp 2 nữ–2 nam và 3 nữ–1 nam; \\(\\binom52\\binom42+\\binom53\\binom41=60+40\\)."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "DELTA08 scoped public self-check X-G.6: retain multi-step reasoning from original SHORT_EXPLANATION/WRITTEN_RUBRIC as reason-bearing choices, check distractor misconceptions, key and solution. Original mathematical task, correct option ID, skill, difficulty, public exposure, source, rubric and placement preserved. No private RD1, no production scoring; after-whole-submission reveal only at authorized RELEASE."
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-09",
@@ -611,10 +615,10 @@
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-10",
-    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-10",
-    "stem": "Không dùng máy tính đại số, hãy khai triển đầy đủ \\(P(x)=(x-2)^4\\) theo Nhị thức Newton; sau đó xác định (i) hệ số của \\(x^2\\) và (ii) có bao nhiêu hệ số âm trong các số hạng của đa thức đã thu gọn. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "\\(P(x)=x^4-8x^3+24x^2-32x+16\\); hệ số \\(x^2\\) là 24; có 2 hệ số âm",
-    "worked_solution": "\\(P(x)=\\sum_{k=0}^4\\binom4k x^{4-k}(-2)^k=x^4-8x^3+24x^2-32x+16\\). Hệ số \\(x^2=24\\). Hai hệ số âm tương ứng \\(x^3\\) và \\(x\\). Hệ số hạng bậc chẵn dương, bậc lẻ âm trong ví dụ này.",
+    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-10.DELTA08",
+    "stem": "Không dùng máy tính đại số, hãy khai triển đầy đủ \\(P(x)=(x-2)^4\\) theo Nhị thức Newton; sau đó xác định (i) hệ số của \\(x^2\\) và (ii) có bao nhiêu hệ số âm trong các số hạng của đa thức đã thu gọn. Chọn khai triển, hệ số và lập luận đúng về dấu của các số hạng.",
+    "answer_key": "\\(x^4-8x^3+24x^2-32x+16\\); hệ số bậc hai \\(\\binom42(-2)^2=24\\), đúng hai hệ số âm ở bậc 3 và 1 vì số lần chọn \\(-2\\) là lẻ.",
+    "worked_solution": "\\(P(x)=\\sum_{k=0}^4\\binom4k x^{4-k}(-2)^k=x^4-8x^3+24x^2-32x+16\\). Hệ số của \\(x^2\\) là \\(\\binom42(-2)^2=24\\). Dấu của \\((-2)^k\\) âm đúng khi k lẻ, tức k bằng 1 hoặc 3, tương ứng số hạng bậc 3 và bậc 1. Vì vậy có đúng hai hệ số âm. Kiểm lại: \\(P(1)=1\\) và \\(1-8+24-32+16=1\\).",
     "skill_ids": [
       "BINOMIAL_COEFFICIENT",
       "BINOMIAL_NEGATIVE_COEFF"
@@ -660,22 +664,23 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x^4-8x^3+24x^2-32x+16\\); 24; 3 hệ số âm."
+        "text": "\\(x^4-8x^3+24x^2-32x+16\\); hệ số bậc hai 24, có 3 hệ số âm vì coi cả hạng tự do là âm."
       },
       {
         "id": "B",
-        "text": "\\(x^4-8x^3+24x^2-32x+16\\); 24; 2 hệ số âm."
+        "text": "\\(x^4-8x^3+24x^2-32x+16\\); hệ số bậc hai \\(\\binom42(-2)^2=24\\), đúng hai hệ số âm ở bậc 3 và 1 vì số lần chọn \\(-2\\) là lẻ."
       },
       {
         "id": "C",
-        "text": "\\(x^4-8x^3+12x^2-8x+16\\); 12; 2 hệ số âm."
+        "text": "\\(x^4-8x^3+12x^2-8x+16\\); hệ số bậc hai 12, hai hệ số âm; vì chỉ nhân hệ số Newton với \\(-2\\) hoặc 2 thay vì lũy thừa tương ứng."
       },
       {
         "id": "D",
-        "text": "\\(x^4+8x^3+24x^2+32x+16\\); 24; 0 hệ số âm."
+        "text": "\\(x^4+8x^3+24x^2+32x+16\\); hệ số bậc hai 24, không có hệ số âm vì bỏ dấu âm của \\(-2\\)."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "DELTA08 scoped public self-check X-G.6: retain multi-step reasoning from original SHORT_EXPLANATION/WRITTEN_RUBRIC as reason-bearing choices, check distractor misconceptions, key and solution. Original mathematical task, correct option ID, skill, difficulty, public exposure, source, rubric and placement preserved. No private RD1, no production scoring; after-whole-submission reveal only at authorized RELEASE."
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-11",
@@ -746,9 +751,9 @@
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-12",
-    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-12",
-    "stem": "Đặt \\(F(x)=(2x-1)^4-(x+2)^4\\). Không cần viết toàn bộ đa thức \\(F(x)\\), hãy xác định **số hạng không chứa \\(x\\)** và **hệ số của \\(x^2\\)** trong \\(F(x)\\). Giải thích vì sao các đóng góp hệ số có thể triệt tiêu. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "Số hạng không chứa \\(x\\) là \\(-15\\); hệ số \\(x^2\\) là \\(0\\)",
+    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-12.DELTA08",
+    "stem": "Đặt \\(F(x)=(2x-1)^4-(x+2)^4\\). Không cần viết toàn bộ đa thức \\(F(x)\\), hãy xác định **số hạng không chứa \\(x\\)** và **hệ số của \\(x^2\\)** trong \\(F(x)\\). Giải thích vì sao các đóng góp hệ số có thể triệt tiêu. Chọn cặp kết quả kèm cách tính hệ số đúng.",
+    "answer_key": "−15 và 0, vì số hạng tự do là \\(1-16=-15\\), còn hai hệ số bậc hai đều bằng 24 nên hiệu là 0.",
     "worked_solution": "Số hạng tự do của \\((2x-1)^4\\) là \\((-1)^4=1\\), của \\((x+2)^4\\) là \\(2^4=16\\), nên của \\(F\\) là \\(1-16=-15\\). Hệ số \\(x^2\\) của biểu thức đầu là \\(\\binom42(2)^2(-1)^2=24\\), của biểu thức sau là \\(\\binom42(2)^2=24\\); hiệu là \\(24-24=0\\). Không có lũy thừa âm, không có điều kiện \\(x\\ne0\\).",
     "skill_ids": [
       "BINOMIAL_CONSTANT_TERM",
@@ -795,22 +800,23 @@
     "options": [
       {
         "id": "A",
-        "text": "17; 48"
+        "text": "17 và 48, vì cộng hai số hạng tự do và cộng hai hệ số bậc hai."
       },
       {
         "id": "B",
-        "text": "−15; 24"
+        "text": "−15 và 24, vì lấy hiệu các số hạng tự do nhưng chỉ lấy hệ số bậc hai của đa thức thứ nhất."
       },
       {
         "id": "C",
-        "text": "15; 0"
+        "text": "15 và 0, vì lấy số hạng tự do của đa thức thứ hai trừ số hạng tự do của đa thức thứ nhất."
       },
       {
         "id": "D",
-        "text": "−15; 0"
+        "text": "−15 và 0, vì số hạng tự do là \\(1-16=-15\\), còn hai hệ số bậc hai đều bằng 24 nên hiệu là 0."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "DELTA08 scoped public self-check X-G.6: retain multi-step reasoning from original SHORT_EXPLANATION/WRITTEN_RUBRIC as reason-bearing choices, check distractor misconceptions, key and solution. Original mathematical task, correct option ID, skill, difficulty, public exposure, source, rubric and placement preserved. No private RD1, no production scoring; after-whole-submission reveal only at authorized RELEASE."
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-13",
@@ -882,9 +888,9 @@
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-14",
-    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-14",
-    "stem": "**Bài tự chọn nâng cao, KHÔNG tính điểm Core.** Với \\(m\\in\\mathbb R\\), xét \\(R(x)=(1+mx)^4\\). Biết tổng các hệ số của các số hạng có **số mũ chẵn** của \\(x\\) bằng \\(41\\). Hãy tìm tất cả giá trị \\(m\\). Giải thích cách lọc nghiệm. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "\\(m=2\\) hoặc \\(m=-2\\)",
+    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-14.DELTA08",
+    "stem": "**Bài tự chọn nâng cao, KHÔNG tính điểm Core.** Với \\(m\\in\\mathbb R\\), xét \\(R(x)=(1+mx)^4\\). Biết tổng các hệ số của các số hạng có **số mũ chẵn** của \\(x\\) bằng \\(41\\). Hãy tìm tất cả giá trị \\(m\\). Giải thích cách lọc nghiệm. Chọn tập nghiệm và cách lọc nghiệm đúng.",
+    "answer_key": "\\(m=\\pm2\\), vì đặt \\(u=m^2\\ge0\\), phương trình \\((u-4)(u+10)=0\\) chỉ nhận \\(u=4\\).",
     "worked_solution": "Tổng hệ số bậc chẵn là \\(\\binom40+\\binom42m^2+\\binom44m^4=1+6m^2+m^4\\). Do đó \\(m^4+6m^2-40=0\\). Đặt \\(u=m^2\\ge0\\), ta có \\(u^2+6u-40=(u-4)(u+10)=0\\). Chỉ \\(u=4\\) phù hợp, nên \\(m=\\pm2\\).",
     "skill_ids": [
       "BINOMIAL_COEFFICIENT"
@@ -930,21 +936,22 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(m=2\\)"
+        "text": "\\(m=2\\), vì từ \\(m^2=4\\) chỉ lấy căn bậc hai dương."
       },
       {
         "id": "B",
-        "text": "\\(m=\\pm2\\)"
+        "text": "\\(m=\\pm2\\), vì đặt \\(u=m^2\\ge0\\), phương trình \\((u-4)(u+10)=0\\) chỉ nhận \\(u=4\\)."
       },
       {
         "id": "C",
-        "text": "\\(m=\\pm\\sqrt{10}\\)"
+        "text": "\\(m=\\pm\\sqrt{10}\\), vì lấy \\(u=10\\) thay cho nghiệm âm \\(u=-10\\)."
       },
       {
         "id": "D",
-        "text": "\\(m=\\pm4\\)"
+        "text": "\\(m=\\pm4\\), vì nhầm nghiệm \\(u=4\\) với độ lớn của m."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "DELTA08 scoped public self-check X-G.6: retain multi-step reasoning from original SHORT_EXPLANATION/WRITTEN_RUBRIC as reason-bearing choices, check distractor misconceptions, key and solution. Original mathematical task, correct option ID, skill, difficulty, public exposure, source, rubric and placement preserved. No private RD1, no production scoring; after-whole-submission reveal only at authorized RELEASE."
   }
 ]
