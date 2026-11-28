@@ -66,7 +66,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B04_FIG02_CUBIC_SURVEY_R00.svg" alt="Đồ thị x³−3x² có cực đại (0;0), cực tiểu (2;−4), tâm (1;−2), giao trục hoành tại 0 và 3"><figcaption>So hình với bảng: tăng tới \((0;0)\), giảm tới \((2;-4)\), rồi tăng qua \((3;0)\). Hai điểm cực trị đối xứng nhau qua \(I(1;-2)\).</figcaption></figure>
 
-    Vì sao \(I(1;-2)\) là tâm? Ta đặt \(x=1+u\), khi đó \(f(1+u)=u^3-3u-2\), nên \(f(1+u)+f(1-u)=-4=2f(1)\). Hai điểm có hoành độ đối xứng qua \(1\) có trung điểm đúng \(I\). Tổng quát, khi tịnh tiến hệ tọa độ về \(x_0=-b/(3a)\), số hạng bậc hai biến mất; phần phụ thuộc vào hoành độ mới chỉ còn các lũy thừa lẻ. Đó là lý do đồ thị bậc ba có tâm \(I(x_0;f(x_0))\). Cũng có thể tìm \(x_0\) bằng cách giải \(f''(x)=6ax+2b=0\).
+    Vì sao \(I(1;-2)\) là tâm? Ta đặt \(x=1+u\), khi đó \(f(1+u)=u^3-3u-2\), nên \(f(1+u)+f(1-u)=-4=2f(1)\). Hai điểm có hoành độ đối xứng qua \(1\) có trung điểm đúng \(I\). Tổng quát, đặt \(x=x_0+u\). Khi khai triển đa thức bậc ba, hệ số của \(u^2\) là \(3ax_0+b\). Chọn \(x_0=-b/(3a)\) thì hệ số này bằng 0; sau khi trừ \(f(x_0)\), chỉ còn \(au^3+(3ax_0^2+2bx_0+c)u\), gồm các lũy thừa lẻ. Vì vậy \(f(x_0+u)+f(x_0-u)=2f(x_0)\). Đó là lý do đồ thị bậc ba có tâm \(I(x_0;f(x_0))\). Cũng có thể tìm \(x_0\) bằng cách giải \(f''(x)=6ax+2b=0\).
 
     Không phải đồ thị bậc ba nào cũng có hai cực trị. Chẳng hạn \(y=x^3+x\) có \(y'=3x^2+1>0\) trên \(\mathbb R\), do đó đồng biến trên toàn trục số và không có cực trị.
 
@@ -164,7 +164,7 @@
 
     Với dạng tổng quát \(y=mx+n+k/(x-h)\), đặt \(u=x-h\), \(v=y-(mh+n)\). Khi ấy \(v=mu+k/u\) là hàm lẻ theo \(u\), nên giao điểm \(I(h;mh+n)\) của tiệm cận đứng và xiên là tâm đối xứng. Hai trục đối xứng là hai đường phân giác của các góc tạo bởi hai tiệm cận. Khác trường hợp tiệm cận ngang, các đường phân giác này không nhất thiết có hệ số góc \(\pm1\).
 
-    Để hình dung hai trục đối xứng, hãy vẽ hai tiệm cận rồi vẽ hai đường phân giác của các góc chúng tạo thành. Khi phản chiếu một điểm qua một đường phân giác, hai khoảng cách đến hai tiệm cận đổi chỗ cho nhau. Hai khoảng cách có dấu cũng đổi chỗ, có thể đồng thời đổi dấu. Tích của chúng không đổi; mà phương trình \(u(v-mu)=k\) chính là điều kiện tích hai khoảng cách có dấu bằng một hằng số (sau khi chia cho \(\sqrt{1+m^2}\)). Vì vậy điểm sau phản chiếu vẫn nằm trên đồ thị. Khi phác hình, dùng tính đối xứng này để kiểm tra vị trí các nhánh.
+    Để hình dung hai trục đối xứng, hãy vẽ hai tiệm cận rồi vẽ hai đường phân giác của các góc chúng tạo thành. Khi phản chiếu một điểm qua một đường phân giác, hai khoảng cách đến hai tiệm cận đổi chỗ cho nhau. Nếu muốn hiểu thêm vì sao đây là trục đối xứng: trong hệ tọa độ tâm, khoảng cách có dấu đến \(u=0\) là \(u\); đến \(v=mu\) là \((v-mu)/\sqrt{1+m^2}\). Dấu cho biết điểm nằm ở phía nào của đường thẳng. Hai khoảng cách có dấu đổi chỗ, có thể đồng thời đổi dấu. Tích của chúng không đổi; mà phương trình \(u(v-mu)=k\) chính là điều kiện tích hai khoảng cách có dấu bằng một hằng số (sau khi chia cho \(\sqrt{1+m^2}\)). Vì vậy điểm sau phản chiếu vẫn nằm trên đồ thị. Khi phác hình, dùng tính đối xứng này để kiểm tra vị trí các nhánh.
 
     **Vận dụng.** Khảo sát \(y=(x^2-x-1)/(x-2)\) và phác đồ thị.
 

@@ -125,7 +125,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa</strong><p>Đường thẳng \(x=x_0\) là tiệm cận đứng của đồ thị \(y=f(x)\) nếu ít nhất một trong bốn giới hạn sau đúng:</p><p>\(\displaystyle\lim_{x\to x_0^-}f(x)=+\infty\), \(\displaystyle\lim_{x\to x_0^-}f(x)=-\infty\), \(\displaystyle\lim_{x\to x_0^+}f(x)=+\infty\), \(\displaystyle\lim_{x\to x_0^+}f(x)=-\infty\).</p></div>
 
-    Tìm miền xác định, xét các mốc có khả năng làm hàm đi ra vô cực (chẳng hạn nghiệm mẫu hoặc đầu mút miền của căn, lôgarit). Tính giới hạn một phía qua các giá trị thuộc miền. Với phân thức, nếu mẫu tiến về \(0\) và tử tiến tới một số khác \(0\), xét dấu mẫu để xác định chiều vô cực. Nếu cả tử và mẫu cùng về \(0\), phải biến đổi, không kết luận vội. Một giới hạn hữu hạn không xác nhận tiệm cận đứng.
+    Tìm miền xác định, xét các mốc có khả năng làm hàm đi ra vô cực (chẳng hạn nghiệm mẫu hoặc đầu mút miền của căn, lôgarit). Tính giới hạn một phía qua các giá trị thuộc miền. Với phân thức, nếu mẫu tiến về \(0\) và tử tiến tới một số khác \(0\), xét dấu cả tử và mẫu để xác định chiều vô cực: tử tiến tới số dương thì phân thức cùng dấu mẫu, tử tiến tới số âm thì ngược dấu mẫu. Chẳng hạn ở cùng một phía của \(2\), hai phân thức \(1/(x-2)\) và \(-1/(x-2)\) tiến tới hai vô cực trái dấu. Nếu cả tử và mẫu cùng về \(0\), phải biến đổi, không kết luận vội. Một giới hạn hữu hạn không xác nhận tiệm cận đứng.
 
     ### 2.3. Đường tiệm cận xiên
 

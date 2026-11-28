@@ -163,7 +163,7 @@
 
     Cách thực hiện: tính \(n\) và tần số tích lũy; xác định nhóm có dữ liệu đạt mốc cần xét (chọn nhóm có tần số dương đầu tiên có cộng dồn đạt hoặc vượt mốc); dùng đúng cận dưới, tần số nhóm, cộng dồn trước nhóm và độ rộng **của nhóm ấy**.
 
-    **Lưu ý về ranh giới.** Nếu mốc nằm đúng ở ranh giới của hai nhóm kề nhau có dữ liệu, nội suy cho cận chung. Nếu có nhóm rỗng ở giữa, chọn nhóm có dữ liệu đầu tiên đạt mốc, như quy tắc trên; không chia cho tần số 0. Ví dụ với tần số 5, 0, 15 trên các nhóm \([0;5),[5;10),[10;15)\), mốc \(n/4=5\) cho \(Q_1=5\) theo cách chọn nhóm đầu đạt mốc; không nội suy trong nhóm rỗng. Đây là kết quả theo quy tắc nội suy đã chọn, không phải tứ phân vị chính xác của mẫu gốc. Nếu đề quy định cách xử lý ranh giới khác, làm theo đề.
+    **Lưu ý về ranh giới.** Nếu mốc nằm đúng ở ranh giới của hai nhóm kề nhau có dữ liệu, nội suy cho cận chung. Nếu có nhóm rỗng ở giữa, chọn nhóm có dữ liệu đầu tiên đạt mốc, như quy tắc trên; không chia cho tần số 0. Ví dụ với tần số 5, 0, 15 trên các nhóm \([0;5),[5;10),[10;15)\), mốc \(n/4=5\) cho \(Q_1=5\) theo cách chọn nhóm đầu đạt mốc. Số quan sát tích lũy giữ nguyên ở mức 5 trong khoảng \([5;10)\); quy tắc chọn nhóm đầu đạt mốc cho đầu trái của đoạn nằm ngang ấy. Không nội suy trong nhóm rỗng. Đây là kết quả theo quy tắc nội suy đã chọn, không phải tứ phân vị chính xác của mẫu gốc. Nếu đề quy định cách xử lý ranh giới khác, làm theo đề.
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Khoảng tứ phân vị</strong><div class="arithmatex">\(\displaystyle\Delta_Q=Q_3-Q_1.\)</div><p>Khoảng tứ phân vị (IQR) đo độ trải của phần giữa mẫu, có cùng đơn vị với dữ liệu. Với mẫu ghép nhóm, nó là một xấp xỉ cho khoảng tứ phân vị của mẫu gốc.</p></div>
 
@@ -249,7 +249,7 @@
 
     **Phân tích:** Trung bình dùng giá trị đại diện là trung điểm nhóm; \(R\) dùng cận ngoài; \(\Delta_Q\) dùng tần số tích lũy và nội suy.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Cả hai mẫu có \(n=40\). Các nhóm đối xứng quanh giá trị đại diện 35, tần số đối xứng, nên cả hai số trung bình đều bằng 35 giây. Hai nhóm biên đều có dữ liệu, nên \(R_A=R_B=60-10=50\) giây.</p><p>A có cộng dồn \(2,8,32,38,40\); cả mốc 10 và 30 đều ở nhóm \([30;40)\). Do đó \(\Delta_{Q,A}=(30-10)\cdot10/24=25/3\) giây.</p><p>B có cộng dồn \(6,16,24,34,40\), nên \(Q_{1,B}=20+(10-6)10/10=24\), \(Q_{3,B}=40+(30-24)10/10=46\), \(\Delta_{Q,B}=22\) giây.</p><p>Vậy phần giữa của mẫu A tập trung hơn B, mặc dù hai số trung bình và hai khoảng biến thiên bằng nhau.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Cả hai mẫu có \(n=40\). Các nhóm đối xứng quanh giá trị đại diện 35, tần số đối xứng, nên cả hai số trung bình đều bằng 35 giây. Hai nhóm biên đều có dữ liệu, nên \(R_A=R_B=60-10=50\) giây.</p><p>A có cộng dồn \(2,8,32,38,40\); cả mốc 10 và 30 đều ở nhóm \([30;40)\). Nội suy từng mốc: \(Q_{1,A}=30+(10-8)\cdot10/24\), \(Q_{3,A}=30+(30-8)\cdot10/24\). Khi trừ, cận dưới 30 và phần cộng dồn trước nhóm triệt tiêu, nên \(\Delta_{Q,A}=(30-10)\cdot10/24=25/3\) giây. Cách rút gọn này dùng khi hai mốc cùng một nhóm.</p><p>B có cộng dồn \(6,16,24,34,40\), nên \(Q_{1,B}=20+(10-6)10/10=24\), \(Q_{3,B}=40+(30-24)10/10=46\), \(\Delta_{Q,B}=22\) giây.</p><p>Vậy phần giữa của mẫu A tập trung hơn B, mặc dù hai số trung bình và hai khoảng biến thiên bằng nhau.</p></div>
 
     **Kiểm lại:** A có 24/40 quan sát ở nhóm giữa, B chỉ có 8/40. Kết luận về \(\Delta_Q\) phù hợp với bảng.
 
@@ -283,7 +283,7 @@
 
     **Phân tích:** Hai mốc 5 và 15 nằm trong nhóm \([10;15)\); sau khi tính ngưỡng, so cả khoảng nhóm với ngưỡng.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(Q_1=125/12,\ Q_3=175/12,\ \Delta_Q=25/6\) phút. Hai ngưỡng là \(125/12-25/4=25/6\) và \(175/12+25/4=125/6\approx20{,}83\) phút. Mọi giá trị trong \([25;30)\) vượt ngưỡng trên, nên lượt thuộc nhóm đó được gắn cờ theo ngưỡng ước lượng. Nhóm \([20;25)\) cắt qua ngưỡng; không biết lượt ở nhóm này có vượt ngưỡng hay không. Nhóm \([0;5)\) rỗng nên không có lượt để xét.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(Q_1=125/12,\ Q_3=175/12,\ \Delta_Q=25/6\) phút. Hai ngưỡng là \(125/12-25/4=25/6\) và \(175/12+25/4=125/6\approx20{,}83\) phút. Mọi giá trị trong \([25;30)\) vượt ngưỡng trên, nên lượt thuộc nhóm đó được gắn cờ theo ngưỡng ước lượng. Nhóm \([20;25)\) cắt qua ngưỡng; không biết lượt ở nhóm này có vượt ngưỡng hay không. Nhóm \([0;5)\) rỗng; các nhóm có dữ liệu đều bắt đầu từ 5 phút trở lên, nên không có lượt nào dưới ngưỡng dưới. Theo hai ngưỡng ước lượng, tổng số lượt bị gắn cờ là 1 hoặc 2.</p></div>
 
     **Kiểm lại:** Các ngưỡng tính từ bảng là xấp xỉ cho ngưỡng tính từ mẫu gốc. Không kết luận lượt bị gắn cờ chắc chắn là lỗi ghi chép; không tự xóa số liệu.
 

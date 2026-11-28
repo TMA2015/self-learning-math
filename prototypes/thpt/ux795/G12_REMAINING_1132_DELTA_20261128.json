@@ -1,0 +1,227 @@
+{
+  "base": "dd450b912d657c67b5a79783f3e91800c7f98e3b",
+  "items": [
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md",
+      "old": "28f6b83ab28731f51667164fe5f239cb868b948c",
+      "edits": [
+        {
+          "before": "Tích dương ở ngoài hai nghiệm và âm ở giữa.",
+          "after": "Thử \\(x=-2,0,2\\) lần lượt trong ba khoảng. Hai nhân tử \\(x+1,x-1\\) lần lượt cùng âm, trái dấu, cùng dương; do đó tích có dấu \\(+,-,+\\).",
+          "count": 1
+        },
+        {
+          "before": "Các nghiệm là \\(-2,0,2\\). Ta tính",
+          "after": "Các nghiệm là \\(-2,0,2\\). Lần lượt thử \\(-3,-1,1,3\\) trong bốn khoảng: dấu của ba nhân tử \\(x,x-2,x+2\\) lần lượt là \\((-,-,-)\\), \\((-,-,+)\\), \\((+,-,+)\\), \\((+,+,+)\\). Vì \\(4>0\\), đạo hàm có dấu \\(-,+,-,+\\). Ta tính",
+          "count": 1
+        },
+        {
+          "before": "Khi đó \\(v(t)=1000u/(1+u)^2\\) và \\(v'(t)=1000u(u-1)/(1+u)^3\\). Vì \\(u=1\\) khi \\(t=\\ln4\\)",
+          "after": "Khi đó \\(v(t)=1000u(1+u)^{-2}\\). Dùng quy tắc tích và hàm hợp, ta có \\(v'=1000[u'(1+u)-2uu']/(1+u)^3\\). Thay \\(u'=-u\\), suy ra \\(v'=1000u(u-1)/(1+u)^3\\). Vì \\(u=4e^{-t}\\) giảm, \\(u>1\\) khi \\(t<\\ln4\\) và \\(u=1\\) khi \\(t=\\ln4\\)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md",
+      "old": "b40ce4dad554e94a6cb88c5b5d20274f91e8c336",
+      "edits": [
+        {
+          "before": "Đọc bảng biến thiên trên miền vô hạn",
+          "after": "Dùng tính đơn điệu trên miền vô hạn",
+          "count": 1
+        },
+        {
+          "before": "Chi phí (nghìn đồng) là \\(C(r)=2{,}4\\pi r^2+1{,}5\\pi rh=2{,}4\\pi r^2+1500/r\\).",
+          "after": "Hai đáy có tổng diện tích \\(2\\pi r^2\\), mặt bên có diện tích \\(2\\pi rh\\). Nhân với đơn giá tương ứng, chi phí (nghìn đồng) là \\(C=1{,}2\\cdot2\\pi r^2+0{,}75\\cdot2\\pi rh\\). Thay \\(h=1000/(\\pi r^2)\\), ta được \\(C(r)=2{,}4\\pi r^2+1500/r\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md",
+      "old": "be100bd245a9caaa511c98f88b5d76280d9f503f",
+      "edits": [
+        {
+          "before": "xét dấu mẫu để xác định chiều vô cực.",
+          "after": "xét dấu cả tử và mẫu để xác định chiều vô cực: tử tiến tới số dương thì phân thức cùng dấu mẫu, tử tiến tới số âm thì ngược dấu mẫu. Chẳng hạn ở cùng một phía của \\(2\\), hai phân thức \\(1/(x-2)\\) và \\(-1/(x-2)\\) tiến tới hai vô cực trái dấu.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md",
+      "old": "d3949a0120e7fd19a690a2ac6f7eddd25cc922f4",
+      "edits": [
+        {
+          "before": "Tổng quát, khi tịnh tiến hệ tọa độ về \\(x_0=-b/(3a)\\), số hạng bậc hai biến mất; phần phụ thuộc vào hoành độ mới chỉ còn các lũy thừa lẻ.",
+          "after": "Tổng quát, đặt \\(x=x_0+u\\). Khi khai triển đa thức bậc ba, hệ số của \\(u^2\\) là \\(3ax_0+b\\). Chọn \\(x_0=-b/(3a)\\) thì hệ số này bằng 0; sau khi trừ \\(f(x_0)\\), chỉ còn \\(au^3+(3ax_0^2+2bx_0+c)u\\), gồm các lũy thừa lẻ. Vì vậy \\(f(x_0+u)+f(x_0-u)=2f(x_0)\\).",
+          "count": 1
+        },
+        {
+          "before": "Hai khoảng cách có dấu cũng đổi chỗ, có thể đồng thời đổi dấu.",
+          "after": "Nếu muốn hiểu thêm vì sao đây là trục đối xứng: trong hệ tọa độ tâm, khoảng cách có dấu đến \\(u=0\\) là \\(u\\); đến \\(v=mu\\) là \\((v-mu)/\\sqrt{1+m^2}\\). Dấu cho biết điểm nằm ở phía nào của đường thẳng. Hai khoảng cách có dấu đổi chỗ, có thể đồng thời đổi dấu.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
+      "old": "6f9a867a541530c2c44ca03f016eb59348977306",
+      "edits": [
+        {
+          "before": "Chi phí biên \\(C'(q)=0{,}04q+5\\) có đơn vị nghìn đồng/sản phẩm.",
+          "after": "Sản lượng thực tế là số nguyên; ta mở rộng công thức chi phí cho \\(q\\) thực để tính đạo hàm. Chi phí biên \\(C'(q)=0{,}04q+5\\) có đơn vị nghìn đồng/sản phẩm.",
+          "count": 1
+        },
+        {
+          "before": "Chi phí biên ước tính gần đúng mức tăng, thấp hơn mức tăng chính xác \\(0{,}05\\) nghìn đồng.",
+          "after": "Nhân chi phí biên với bước tăng một sản phẩm, ta ước tính mức tăng là \\(14\\) nghìn đồng, thấp hơn mức tăng chính xác \\(0{,}05\\) nghìn đồng.",
+          "count": 1
+        },
+        {
+          "before": "\\(C(q+1)-C(q)\\approx C'(q)\\) khi mô hình biến thiên đủ ít về đạo hàm trên bước một đơn vị.",
+          "after": "\\(C(q+\\Delta q)-C(q)\\approx C'(q)\\Delta q\\) khi đạo hàm ít thay đổi trên bước đó. Với \\(\\Delta q=1\\) sản phẩm, mức tăng có đơn vị nghìn đồng.",
+          "count": 1
+        },
+        {
+          "before": "Chi phí biên là đạo hàm, còn chi phí của sản phẩm thêm là hiệu hai tổng.",
+          "after": "Chi phí biên là đạo hàm (nghìn đồng/sản phẩm); nhân với bước tăng một sản phẩm để ước tính chi phí thêm. Chi phí chính xác là hiệu hai tổng (nghìn đồng).",
+          "count": 1
+        },
+        {
+          "before": "Hệ số góc của hàm giá là \\(-10/3000=-1/300\\), nên \\(p=190-q/300\\) (nghìn đồng). Với \\(0\\le q\\le55000\\),",
+          "after": "Gọi \\(q\\) là lượng cầu. Hệ số góc của hàm giá là \\(-10/3000=-1/300\\). Đường thẳng đi qua \\((27000;100)\\), nên \\(p-100=-(q-27000)/300\\), tức \\(p=190-q/300\\) (nghìn đồng). Trong miền \\(0\\le q\\le55000\\), lượng bán bằng lượng cầu, nên",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md",
+      "old": "e3091a022ce73d2a355aaf8dd1acc292e7bafce3",
+      "edits": [
+        {
+          "before": "Tính duy nhất của trọng tâm theo hệ thức trên:",
+          "after": "Để nối hai hệ thức trọng tâm tứ diện, viết \\(\\overrightarrow{IA}=\\overrightarrow{OA}-\\overrightarrow{OI}\\), tương tự với \\(B,C,D\\). Cộng bốn đẳng thức và dùng tổng bốn vectơ từ \\(I\\) bằng \\(\\vec0\\), ta được \\(4\\overrightarrow{OI}=\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC}+\\overrightarrow{OD}\\). Tính duy nhất của trọng tâm theo hệ thức trên:",
+          "count": 1
+        },
+        {
+          "before": "Chèn một điểm để xuất hiện hai vectơ đối.",
+          "after": "Chèn điểm D vào vectơ AB, đổi thứ tự để ghép hai vectơ nối tiếp CD và DB theo quy tắc ba điểm.",
+          "count": 1
+        },
+        {
+          "before": "Tích cần tìm bằng \\(2\\vec u^2+(2-1)\\vec u\\cdot\\vec v-\\vec v^2=8+3-9=2\\).",
+          "after": "Khai triển tích theo quy tắc phân phối: \\(2\\vec u\\cdot\\vec u+2\\vec u\\cdot\\vec v-\\vec v\\cdot\\vec u-\\vec v\\cdot\\vec v\\). Do \\(\\vec u\\cdot\\vec v=\\vec v\\cdot\\vec u\\), biểu thức bằng \\(2\\vec u^2+\\vec u\\cdot\\vec v-\\vec v^2=8+3-9=2\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md",
+      "old": "eb93bf6a1ac1fd07347bf01d872aae26957ebc78",
+      "edits": [
+        {
+          "before": "góc phương vị \\(\\theta\\) của hình chiếu trên \\((Oxy)\\) và góc cực \\(\\phi\\) giữa \\(OM\\) với \\(Oz\\).",
+          "after": "góc phương vị \\(\\theta\\) đo từ tia \\(Ox\\) dương tới tia từ \\(O\\) qua hình chiếu của \\(M\\) trên \\((Oxy)\\), theo chiều dương của mặt phẳng \\(Oxy\\), với \\(0\\le\\theta<2\\pi\\); góc cực \\(\\phi\\) đo giữa \\(OM\\) và tia \\(Oz\\) dương, với \\(0\\le\\phi\\le\\pi\\).",
+          "count": 1
+        },
+        {
+          "before": "nhưng phải xét góc phần tư để xác định đúng góc phương vị.",
+          "after": "nhưng phải xét góc phần tư để xác định đúng góc phương vị. Nếu \\(x=0,y>0\\) thì \\(\\theta=\\pi/2\\); nếu \\(x=0,y<0\\) thì \\(\\theta=3\\pi/2\\).",
+          "count": 1
+        },
+        {
+          "before": "Các vectơ \\(AA',BB',CC',DD'\\)",
+          "after": "Các vectơ \\(\\overrightarrow{AA'}\\), \\(\\overrightarrow{BB'}\\), \\(\\overrightarrow{CC'}\\), \\(\\overrightarrow{DD'}\\)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md",
+      "old": "40b60e3419e71738bbfa61dcb4ff45c58c5342f2",
+      "edits": [
+        {
+          "before": "Nếu chỉ lấy \\(G-A-B\\), em đã quên rằng công thức trọng tâm có mẫu \\(3\\).",
+          "after": "Nếu chỉ lấy từng tọa độ của \\(G\\) trừ các tọa độ tương ứng của \\(A,B\\), em đã quên nhân tọa độ của \\(G\\) với \\(3\\).",
+          "count": 1
+        },
+        {
+          "before": "Cosin bằng \\(2/\\sqrt{13}\\), nên góc xấp xỉ \\(56{,}3^\\circ\\).",
+          "after": "Tích vô hướng của hai vectơ bằng \\(14400\\); độ dài của chúng lần lượt là \\(60\\sqrt{13}\\) và \\(120\\). Vì thế cosin của góc bằng \\(14400/(60\\sqrt{13}\\cdot120)=2/\\sqrt{13}\\). Dùng arccos trên máy tính ở chế độ độ, ta được góc xấp xỉ \\(56{,}3^\\circ\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md",
+      "old": "2d143590b7bfb1bb2d807c69f4040f62a7700968",
+      "edits": [
+        {
+          "before": "cho \\(Q_1=5\\) theo cách chọn nhóm đầu đạt mốc; không nội suy trong nhóm rỗng.",
+          "after": "cho \\(Q_1=5\\) theo cách chọn nhóm đầu đạt mốc. Số quan sát tích lũy giữ nguyên ở mức 5 trong khoảng \\([5;10)\\); quy tắc chọn nhóm đầu đạt mốc cho đầu trái của đoạn nằm ngang ấy. Không nội suy trong nhóm rỗng.",
+          "count": 1
+        },
+        {
+          "before": "Do đó \\(\\Delta_{Q,A}=(30-10)\\cdot10/24=25/3\\) giây.",
+          "after": "Nội suy từng mốc: \\(Q_{1,A}=30+(10-8)\\cdot10/24\\), \\(Q_{3,A}=30+(30-8)\\cdot10/24\\). Khi trừ, cận dưới 30 và phần cộng dồn trước nhóm triệt tiêu, nên \\(\\Delta_{Q,A}=(30-10)\\cdot10/24=25/3\\) giây. Cách rút gọn này dùng khi hai mốc cùng một nhóm.",
+          "count": 1
+        },
+        {
+          "before": "Nhóm \\([0;5)\\) rỗng nên không có lượt để xét.",
+          "after": "Nhóm \\([0;5)\\) rỗng; các nhóm có dữ liệu đều bắt đầu từ 5 phút trở lên, nên không có lượt nào dưới ngưỡng dưới. Theo hai ngưỡng ước lượng, tổng số lượt bị gắn cờ là 1 hoặc 2.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md",
+      "old": "ac62a6cfb481327fa98f330b64b72f1684c9b267",
+      "edits": [
+        {
+          "before": "Tần số của mỗi mẫu đối xứng quanh nhóm có đại diện 30, nên \\(\\overline{x}_A=\\overline{x}_B=30\\) triệu đồng.",
+          "after": "Tần số của mỗi mẫu đối xứng quanh nhóm có đại diện 30: các nhóm cách 30 cùng một khoảng có cùng tần số, nên tổng độ lệch có trọng số triệt tiêu từng cặp. Chẳng hạn với A, \\(1(-20)+2(-10)+8\\cdot0+2\\cdot10+1\\cdot20=0\\). Do đó \\(\\overline{x}_A=\\overline{x}_B=30\\) triệu đồng.",
+          "count": 1
+        },
+        {
+          "before": "thì phương sai gốc \\(6{,}25\\) cm² lớn hơn phương sai ghép nhóm \\(4\\) cm².",
+          "after": "thì trung bình gốc bằng \\(3{,}5\\); tổng bình phương độ lệch bằng \\(3{,}5^2+0{,}5^2+0{,}5^2+3{,}5^2=25\\). Chia cho 4, phương sai gốc là \\(6{,}25\\) cm². Sau ghép nhóm, hai đại diện 2 và 6 có tần số bằng 2, trung bình 4, nên phương sai là \\(4\\) cm², nhỏ hơn phương sai gốc.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iii.md",
+      "old": "57b3c523907c957b58dd3567b7001fba7d5fcd64",
+      "edits": [
+        {
+          "before": "hai Tự thử, sáu ví dụ và hai hình gốc",
+          "after": "Vận dụng có Đối chiếu, sáu ví dụ và hai hình",
+          "count": 1
+        },
+        {
+          "before": "hai Tự thử, sáu ví dụ và một hình gốc",
+          "after": "Vận dụng có Đối chiếu, sáu ví dụ và một hình",
+          "count": 1
+        },
+        {
+          "before": "Cuối chương có 12 câu PUBLIC tự đối chiếu sau Final Submit, không phải bài kiểm tra RD1 độc lập.",
+          "after": "Cuối chương có 12 câu tự kiểm tra; em hoàn thành trước khi mở phần đối chiếu. Kết quả dùng để tự ôn tập, không tính điểm đánh giá độc lập.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/luyen-tap.md",
+      "old": "8773a0e953be1186f47e5cfe852f3ea7b15bf188",
+      "edits": [
+        {
+          "before": "lời giải/rubric",
+          "after": "lời giải và tiêu chí tự đối chiếu",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

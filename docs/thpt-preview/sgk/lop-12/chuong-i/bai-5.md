@@ -51,13 +51,13 @@
 
     Trong sinh học, \(P'(t)\) là tốc độ tăng trưởng tức thời nếu \(P(t)\) mô hình hoá số cá thể. Ví dụ \(P(t)=100-80e^{-t/2}\), \(t\) tính bằng giờ. Ban đầu \(P(0)=20\), tốc độ ban đầu \(P'(0)=40\) cá thể/giờ. Vì \(P'(t)=40e^{-t/2}>0\), quần thể tăng, nhưng càng về sau tốc độ càng nhỏ. Giới hạn \(P(t)\to100\) cho thấy mô hình dự đoán quần thể tiến gần mức \(100\), không vượt mức ấy. Tốc độ tăng trưởng \(P'\) và quy mô quần thể \(P\) là hai đại lượng khác nhau.
 
-    Trong kinh tế, tổng chi phí sản xuất \(q\) sản phẩm có thể là \(C(q)=0{,}02q^2+5q+1200\) (nghìn đồng). Chi phí biên \(C'(q)=0{,}04q+5\) có đơn vị nghìn đồng/sản phẩm. Khi \(q=100\), \(C'(100)=9\), nghĩa là mô hình ước tính chi phí thêm một sản phẩm tiếp theo khoảng \(9\) nghìn đồng. Chi phí tăng chính xác là \(C(101)-C(100)=9{,}02\) nghìn đồng. Hai số gần nhau nhưng không bắt buộc bằng nhau, bởi đạo hàm mô tả tốc độ ở một điểm còn sai phân mô tả thay đổi qua cả một khoảng.
+    Trong kinh tế, tổng chi phí sản xuất \(q\) sản phẩm có thể là \(C(q)=0{,}02q^2+5q+1200\) (nghìn đồng). Sản lượng thực tế là số nguyên; ta mở rộng công thức chi phí cho \(q\) thực để tính đạo hàm. Chi phí biên \(C'(q)=0{,}04q+5\) có đơn vị nghìn đồng/sản phẩm. Khi \(q=100\), \(C'(100)=9\), nghĩa là mô hình ước tính chi phí thêm một sản phẩm tiếp theo khoảng \(9\) nghìn đồng. Chi phí tăng chính xác là \(C(101)-C(100)=9{,}02\) nghìn đồng. Hai số gần nhau nhưng không bắt buộc bằng nhau, bởi đạo hàm mô tả tốc độ ở một điểm còn sai phân mô tả thay đổi qua cả một khoảng.
 
     **Vận dụng.** Một cơ sở có hàm tổng chi phí \(C(q)=0{,}05q^2+8q+500\) (nghìn đồng). Tính chi phí biên tại \(q=60\), so sánh với chi phí tăng chính xác để làm sản phẩm thứ \(61\).
 
     ??? question "Đối chiếu"
 
-        \(C'(q)=0{,}1q+8\), nên \(C'(60)=14\) nghìn đồng/sản phẩm. \(C(61)-C(60)=0{,}05(61^2-60^2)+8=14{,}05\) nghìn đồng. Chi phí biên ước tính gần đúng mức tăng, thấp hơn mức tăng chính xác \(0{,}05\) nghìn đồng.
+        \(C'(q)=0{,}1q+8\), nên \(C'(60)=14\) nghìn đồng/sản phẩm. \(C(61)-C(60)=0{,}05(61^2-60^2)+8=14{,}05\) nghìn đồng. Nhân chi phí biên với bước tăng một sản phẩm, ta ước tính mức tăng là \(14\) nghìn đồng, thấp hơn mức tăng chính xác \(0{,}05\) nghìn đồng.
 
     ??? tip "Kiểm lỗi"
 
@@ -125,7 +125,7 @@
 
     Với chuyển động thẳng, tốc độ là \(|v|\); tại thời điểm \(v\ne0\), tốc độ tăng khi \(va>0\), giảm khi \(va<0\). Xét dấu vận tốc hai phía để xác định đổi chiều. Để tính quãng đường trên một khoảng có hữu hạn mốc đổi chiều, chia khoảng tại các mốc ấy và cộng độ lớn độ dời của từng đoạn chuyển động cùng chiều.
 
-    Chi phí biên tại sản lượng \(q\) thường được dùng để ước lượng chi phí sản xuất thêm một đơn vị: \(C(q+1)-C(q)\approx C'(q)\) khi mô hình biến thiên đủ ít về đạo hàm trên bước một đơn vị. Đây là xấp xỉ, không phải đẳng thức tổng quát.
+    Chi phí biên tại sản lượng \(q\) thường được dùng để ước lượng chi phí sản xuất thêm một đơn vị: \(C(q+\Delta q)-C(q)\approx C'(q)\Delta q\) khi đạo hàm ít thay đổi trên bước đó. Với \(\Delta q=1\) sản phẩm, mức tăng có đơn vị nghìn đồng. Đây là xấp xỉ, không phải đẳng thức tổng quát.
 
     ### 2.2. Một vài bài toán tối ưu hoá đơn giản
 
@@ -175,7 +175,7 @@
 
     **Đề bài.** Tổng chi phí \(C(q)=1000+6q+0{,}03q^2+0{,}001q^3\) (nghìn đồng). Tính chi phí biên tại \(q=20\) và chi phí chính xác của đơn vị thứ \(21\).
 
-    **Phân tích:** Chi phí biên là đạo hàm, còn chi phí của sản phẩm thêm là hiệu hai tổng.
+    **Phân tích:** Chi phí biên là đạo hàm (nghìn đồng/sản phẩm); nhân với bước tăng một sản phẩm để ước tính chi phí thêm. Chi phí chính xác là hiệu hai tổng (nghìn đồng).
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(C'=6+0{,}06q+0{,}003q^2\). \(C'(20)=6+1{,}2+1{,}2=8{,}4\) nghìn đồng/sản phẩm. Mức tăng chính xác là \(6+0{,}03(441-400)+0{,}001(9261-8000)=8{,}491\) nghìn đồng.</p></div>
 
@@ -235,7 +235,7 @@
 
     **Phân tích:** Đặt \(q\) là lượng cầu trong mô hình. Tìm hàm giá từ hai cặp số liệu, sau đó kiểm sức chứa. Nếu cầu vượt sức chứa, số vé bán chỉ bằng sức chứa.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> Hệ số góc của hàm giá là \(-10/3000=-1/300\), nên \(p=190-q/300\) (nghìn đồng). Với \(0\le q\le55000\), \(R=190q-q^2/300\). \(R'=190-q/150\) đổi dấu từ dương sang âm tại \(q=28500\); \(p=95\) nghìn đồng và \(R=2707500\) nghìn đồng. Nếu giá dưới \(p(55000)=190-55000/300=20/3\) nghìn đồng, vé bán bị giới hạn \(55000\) và doanh thu không vượt doanh thu tại giá \(20/3\). Nếu giá trên \(190\), mô hình nhu cầu không âm cho lượng bán bằng \(0\). Do đó giá tối ưu vẫn là \(95\) nghìn đồng.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> Gọi \(q\) là lượng cầu. Hệ số góc của hàm giá là \(-10/3000=-1/300\). Đường thẳng đi qua \((27000;100)\), nên \(p-100=-(q-27000)/300\), tức \(p=190-q/300\) (nghìn đồng). Trong miền \(0\le q\le55000\), lượng bán bằng lượng cầu, nên \(R=190q-q^2/300\). \(R'=190-q/150\) đổi dấu từ dương sang âm tại \(q=28500\); \(p=95\) nghìn đồng và \(R=2707500\) nghìn đồng. Nếu giá dưới \(p(55000)=190-55000/300=20/3\) nghìn đồng, vé bán bị giới hạn \(55000\) và doanh thu không vượt doanh thu tại giá \(20/3\). Nếu giá trên \(190\), mô hình nhu cầu không âm cho lượng bán bằng \(0\). Do đó giá tối ưu vẫn là \(95\) nghìn đồng.</p></div>
 
     **Kiểm lại:** \(28500<55000\) và là số nguyên, giá dương; doanh thu bằng \(28500\cdot95\). Đây là dự đoán phụ thuộc giả định tuyến tính.
 

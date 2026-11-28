@@ -60,7 +60,7 @@
 
     ??? tip "Kiểm lỗi"
 
-        Để tìm \(C\), trước tiên phải nhân tọa độ \(G\) với \(3\), rồi mới trừ tọa độ \(A,B\). Nếu chỉ lấy \(G-A-B\), em đã quên rằng công thức trọng tâm có mẫu \(3\).
+        Để tìm \(C\), trước tiên phải nhân tọa độ \(G\) với \(3\), rồi mới trừ tọa độ \(A,B\). Nếu chỉ lấy từng tọa độ của \(G\) trừ các tọa độ tương ứng của \(A,B\), em đã quên nhân tọa độ của \(G\) với \(3\).
 
     ### 1.2. Biểu thức tọa độ của tích vô hướng
 
@@ -134,7 +134,7 @@
 
     Từ \(\overrightarrow{OA}=(240;0;0)\), \(\overrightarrow{AA'}=(0;360;0)\), ta đọc được chiều rộng \(240\) cm, chiều dài \(360\) cm. Cao độ của \(B\) bằng \(180\), nên nhà cao \(180\) cm. Cạnh mái \(AB\) có vectơ \((-120;0;180)\), dài \(\sqrt{120^2+180^2}=60\sqrt{13}\) cm. Hai cạnh mái trước có cùng độ dài vì đỉnh \(B\) nằm trên đường thẳng vuông góc với \(OA\) qua trung điểm \(M\).
 
-    Mặt mái \(ABB'A'\) gặp mặt đất theo đường \(AA'\). Vì lăng trụ đứng, \(AA'\) vuông góc với mặt trước \((OAB)\); do đó cả \(AB\) và hình chiếu \(AM\) đều vuông góc với giao tuyến \(AA'\). Góc nghiêng của mái so với mặt đất vì thế là góc giữa \(\overrightarrow{AB}\) và \(\overrightarrow{AM}=(-120;0;0)\). Cosin bằng \(2/\sqrt{13}\), nên góc xấp xỉ \(56{,}3^\circ\). Góc này khác với góc ở đỉnh mái.
+    Mặt mái \(ABB'A'\) gặp mặt đất theo đường \(AA'\). Vì lăng trụ đứng, \(AA'\) vuông góc với mặt trước \((OAB)\); do đó cả \(AB\) và hình chiếu \(AM\) đều vuông góc với giao tuyến \(AA'\). Góc nghiêng của mái so với mặt đất vì thế là góc giữa \(\overrightarrow{AB}\) và \(\overrightarrow{AM}=(-120;0;0)\). Tích vô hướng của hai vectơ bằng \(14400\); độ dài của chúng lần lượt là \(60\sqrt{13}\) và \(120\). Vì thế cosin của góc bằng \(14400/(60\sqrt{13}\cdot120)=2/\sqrt{13}\). Dùng arccos trên máy tính ở chế độ độ, ta được góc xấp xỉ \(56{,}3^\circ\). Góc này khác với góc ở đỉnh mái.
 
     Cách làm trong bài toán chuyển động cũng tương tự: chọn hệ tọa độ và đơn vị, viết vectơ độ dời rồi tính. Nếu một vật có vectơ vận tốc không đổi \(\vec v\) trong thời gian \(t\), độ dời là \(t\vec v\). Chẳng hạn thiết bị bay từ \(A(2;1;4)\) đến \(B(8;5;6)\) trong \(2\) giây, tính theo mét, vận tốc không đổi. Khi đó \(\overrightarrow{AB}=(6;4;2)\), \(\vec v=(3;2;1)\) m/s. Sau \(3\) giây tiếp theo, độ dời là \(3\vec v=(9;6;3)\); vị trí mới \(C(17;11;9)\). Tốc độ không đổi là \(\sqrt{14}\) m/s. Nếu đề không bảo đảm vận tốc không đổi, không thể dự đoán vị trí tiếp theo chỉ từ hai điểm đã biết.
 

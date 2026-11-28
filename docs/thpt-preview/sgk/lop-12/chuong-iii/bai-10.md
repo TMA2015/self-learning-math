@@ -131,7 +131,7 @@
     <!-- FIG_ROLE: D5-03 -->
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G12-CHIII-B10-SPREAD-R00.svg" alt="Biểu đồ cột tần số A và B trên cùng thang đo: cả hai trung bình 30, A có nhiều quan sát ở giữa, B có nhiều quan sát ở hai biên"><figcaption>Đọc từng cặp cột tại các giá trị đại diện 10, 20, 30, 40, 50. Cả hai có 14 quan sát, nhưng A có 8 ở nhóm giữa trong khi B chỉ có 2; B có nhiều quan sát cách trung bình 20 triệu đồng hơn.</figcaption></figure>
 
-    Tần số của mỗi mẫu đối xứng quanh nhóm có đại diện 30, nên \(\overline{x}_A=\overline{x}_B=30\) triệu đồng. Các giá trị đại diện có độ lệch \(-20,-10,0,10,20\). Tính phương sai:
+    Tần số của mỗi mẫu đối xứng quanh nhóm có đại diện 30: các nhóm cách 30 cùng một khoảng có cùng tần số, nên tổng độ lệch có trọng số triệt tiêu từng cặp. Chẳng hạn với A, \(1(-20)+2(-10)+8\cdot0+2\cdot10+1\cdot20=0\). Do đó \(\overline{x}_A=\overline{x}_B=30\) triệu đồng. Các giá trị đại diện có độ lệch \(-20,-10,0,10,20\). Tính phương sai:
 
     \[
     s_A^2=\frac{1\cdot400+2\cdot100+8\cdot0+2\cdot100+1\cdot400}{14}
@@ -235,7 +235,7 @@
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Mẫu gốc có \(\overline{x}=3{,}5\) cm và \(s^2=91/6-(7/2)^2=35/12\) cm²; \(s\approx1{,}71\) cm.</p><p>Hai nhóm có tần số \(3,3\), trung điểm \(2,6\). Trung bình ghép nhóm bằng 4 cm; phương sai \(s^2=[3(2-4)^2+3(6-4)^2]/6=4\) cm²; độ lệch chuẩn bằng 2 cm.</p></div>
 
-    **Kiểm lại:** Trong ví dụ này, phương sai ghép nhóm lớn hơn phương sai gốc. Ngược lại, nếu mẫu gốc là \(0,3,4,7\), cũng ghép vào hai nhóm trên thì phương sai gốc \(6{,}25\) cm² lớn hơn phương sai ghép nhóm \(4\) cm². Vì mất thông tin bên trong nhóm, xấp xỉ không có chiều sai lệch cố định.
+    **Kiểm lại:** Trong ví dụ này, phương sai ghép nhóm lớn hơn phương sai gốc. Ngược lại, nếu mẫu gốc là \(0,3,4,7\), cũng ghép vào hai nhóm trên thì trung bình gốc bằng \(3{,}5\); tổng bình phương độ lệch bằng \(3{,}5^2+0{,}5^2+0{,}5^2+3{,}5^2=25\). Chia cho 4, phương sai gốc là \(6{,}25\) cm². Sau ghép nhóm, hai đại diện 2 và 6 có tần số bằng 2, trung bình 4, nên phương sai là \(4\) cm², nhỏ hơn phương sai gốc. Vì mất thông tin bên trong nhóm, xấp xỉ không có chiều sai lệch cố định.
 
     ### 3.3. Một nhóm có dữ liệu và hai công thức mẫu số
 

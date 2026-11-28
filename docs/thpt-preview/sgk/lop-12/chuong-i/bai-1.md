@@ -27,7 +27,7 @@
 
     Một tiếp tuyến nằm ngang tại một điểm chưa làm hàm ngừng tăng trên cả khoảng. Ví dụ \(f(x)=x^3\) có \(f'(x)=3x^2\ge0\), chỉ bằng \(0\) tại \(x=0\). Hàm vẫn đồng biến trên \(\mathbb R\), vì đồ thị tiếp tục đi lên qua \(0\). Nếu đạo hàm không âm trên một khoảng, chỉ bằng \(0\) tại hữu hạn điểm của khoảng ấy, hàm vẫn đồng biến. Trường hợp không dương cũng tương tự. Nhưng nếu đạo hàm bằng \(0\) **ở mọi điểm** của khoảng thì hàm không đổi.
 
-    Với hàm số có nhiều đoạn tăng và giảm, **bảng biến thiên** giúp tập hợp các thông tin cần thiết. Xét \(f(x)=x^3-3x\). Hàm xác định trên \(\mathbb R\), có đạo hàm \(f'(x)=3(x+1)(x-1)\). Hai nghiệm \(-1,1\) chia trục số thành ba khoảng. Tích dương ở ngoài hai nghiệm và âm ở giữa. Ta được hình sau:
+    Với hàm số có nhiều đoạn tăng và giảm, **bảng biến thiên** giúp tập hợp các thông tin cần thiết. Xét \(f(x)=x^3-3x\). Hàm xác định trên \(\mathbb R\), có đạo hàm \(f'(x)=3(x+1)(x-1)\). Hai nghiệm \(-1,1\) chia trục số thành ba khoảng. Thử \(x=-2,0,2\) lần lượt trong ba khoảng. Hai nhân tử \(x+1,x-1\) lần lượt cùng âm, trái dấu, cùng dương; do đó tích có dấu \(+,-,+\). Ta được hình sau:
 
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B01_FIG01_DERIVATIVE_SIGN_R00.svg" alt="Đồ thị y=x³−3x và bảng dấu đạo hàm: dương trước −1, âm giữa −1 và 1, dương sau 1. Đỉnh (−1;2), đáy (1;−2)."><figcaption><strong>Cách đọc hình:</strong> nhìn hàng dấu \(f'\) bên phải rồi đối chiếu đường cong bên trái. Dấu \(+\) ứng với đoạn đi lên, dấu \(−\) ứng với đoạn đi xuống. Tại \(x=-1\), đường chuyển từ đi lên sang đi xuống; tại \(x=1\) thì ngược lại.</figcaption></figure>
 
@@ -160,7 +160,7 @@
 
     **Phân tích:** Đạo hàm bậc ba phân tích được thành nhân tử. Cần giữ cả nghiệm \(0\), không chia hai vế cho \(x\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Tập xác định \(\mathbb R\). \(y'=4x(x^2-4)=4x(x-2)(x+2)\). Các nghiệm là \(-2,0,2\). Ta tính \(y(-2)=y(2)=-13,\ y(0)=3\); tại hai đầu vô cực, \(y\to+\infty\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Tập xác định \(\mathbb R\). \(y'=4x(x^2-4)=4x(x-2)(x+2)\). Các nghiệm là \(-2,0,2\). Lần lượt thử \(-3,-1,1,3\) trong bốn khoảng: dấu của ba nhân tử \(x,x-2,x+2\) lần lượt là \((-,-,-)\), \((-,-,+)\), \((+,-,+)\), \((+,+,+)\). Vì \(4>0\), đạo hàm có dấu \(-,+,-,+\). Ta tính \(y(-2)=y(2)=-13,\ y(0)=3\); tại hai đầu vô cực, \(y\to+\infty\).</p></div>
 
     | \(x\) | \(-\infty\) | \((-\infty;-2)\) | \(-2\) | \((-2;0)\) | \(0\) | \((0;2)\) | \(2\) | \((2;+\infty)\) | \(+\infty\) |
     | :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
@@ -266,7 +266,7 @@
 
     **Phân tích:** Cần tìm cực đại của **hàm tốc độ bán hàng** \(v(t)=N'(t)\), không phải cực đại của tổng số sản phẩm \(N(t)\). Vì vậy phải xét dấu của \(v'(t)=N''(t)\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> Đặt \(u=4e^{-t}>0\), \(u'=-u\). Khi đó \(v(t)=1000u/(1+u)^2\) và \(v'(t)=1000u(u-1)/(1+u)^3\). Vì \(u=1\) khi \(t=\ln4\), \(v'>0\) với \(0&lt;t&lt;\ln4\) và \(v'&lt;0\) khi \(t&gt;\ln4\). Do đó \(v\) tăng rồi giảm trên toàn miền thời gian; tốc độ bán hàng lớn nhất tại \(t=\ln4\approx1{,}39\) năm và bằng \(1000/(1+1)^2=250\) sản phẩm/năm.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> Đặt \(u=4e^{-t}>0\), \(u'=-u\). Khi đó \(v(t)=1000u(1+u)^{-2}\). Dùng quy tắc tích và hàm hợp, ta có \(v'=1000[u'(1+u)-2uu']/(1+u)^3\). Thay \(u'=-u\), suy ra \(v'=1000u(u-1)/(1+u)^3\). Vì \(u=4e^{-t}\) giảm, \(u>1\) khi \(t<\ln4\) và \(u=1\) khi \(t=\ln4\), \(v'>0\) với \(0&lt;t&lt;\ln4\) và \(v'&lt;0\) khi \(t&gt;\ln4\). Do đó \(v\) tăng rồi giảm trên toàn miền thời gian; tốc độ bán hàng lớn nhất tại \(t=\ln4\approx1{,}39\) năm và bằng \(1000/(1+1)^2=250\) sản phẩm/năm.</p></div>
 
     **Kiểm lại:** \(v(t)>0\) với mọi \(t\ge0\) nên tổng số sản phẩm vẫn tăng; chính tốc độ tăng đạt đỉnh rồi giảm. \(v(0)=160<250\), \(\lim_{t\to+\infty}v(t)=0\), phù hợp kết luận.
 

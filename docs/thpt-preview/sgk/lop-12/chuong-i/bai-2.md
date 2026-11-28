@@ -129,7 +129,7 @@
 
     **Kiểm lại:** Cả ba điểm đạt giá trị đều thuộc miền. Không cần dùng đạo hàm tại hai đầu mút.
 
-    ### 3.2. Đọc bảng biến thiên trên miền vô hạn
+    ### 3.2. Dùng tính đơn điệu trên miền vô hạn
 
     **Đề bài.** Tìm GTLN, GTNN (nếu có) của \(f(x)=x\ln x\) trên tập xác định.
 
@@ -205,7 +205,7 @@
 
     **Phân tích:** Cần tối ưu **chi phí**, không chỉ diện tích, vì hai loại vật liệu có đơn giá khác nhau. Đặt \(r>0\), dùng \(\pi r^2 h=1000\) để biểu diễn \(h\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> \(h=1000/(\pi r^2)\). Chi phí (nghìn đồng) là \(C(r)=2{,}4\pi r^2+1{,}5\pi rh=2{,}4\pi r^2+1500/r\). Do đó \(C'=4{,}8\pi r-1500/r^2=(4{,}8\pi r^3-1500)/r^2\). Trên \(r&gt;0\), tử tăng từ giá trị âm tới dương và chỉ có một nghiệm \(r_0=\sqrt[3]{312{,}5/\pi}\). Hàm giảm trước \(r_0\), tăng sau \(r_0\); chi phí nhỏ nhất tại \(r_0\approx4{,}63\) cm. Từ \(\pi r_0^3=312{,}5\), suy ra \(h_0=3{,}2r_0\approx14{,}83\) cm.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> \(h=1000/(\pi r^2)\). Hai đáy có tổng diện tích \(2\pi r^2\), mặt bên có diện tích \(2\pi rh\). Nhân với đơn giá tương ứng, chi phí (nghìn đồng) là \(C=1{,}2\cdot2\pi r^2+0{,}75\cdot2\pi rh\). Thay \(h=1000/(\pi r^2)\), ta được \(C(r)=2{,}4\pi r^2+1500/r\). Do đó \(C'=4{,}8\pi r-1500/r^2=(4{,}8\pi r^3-1500)/r^2\). Trên \(r&gt;0\), tử tăng từ giá trị âm tới dương và chỉ có một nghiệm \(r_0=\sqrt[3]{312{,}5/\pi}\). Hàm giảm trước \(r_0\), tăng sau \(r_0\); chi phí nhỏ nhất tại \(r_0\approx4{,}63\) cm. Từ \(\pi r_0^3=312{,}5\), suy ra \(h_0=3{,}2r_0\approx14{,}83\) cm.</p></div>
 
     **Kiểm lại:** Dùng kích thước chưa làm tròn cho \(\pi r_0^2h_0=1000\). Tỉ lệ \(h_0/r_0=3{,}2\), không phải \(2\) như bài toán giảm diện tích toàn phần với đơn giá đồng nhất.
 

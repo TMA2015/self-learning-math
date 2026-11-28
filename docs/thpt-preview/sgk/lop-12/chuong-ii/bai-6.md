@@ -164,7 +164,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Hệ thức trung điểm, trọng tâm</strong><p>Với điểm \(O\) tùy ý, nếu \(M\) là trung điểm \(AB\), \(2\overrightarrow{OM}=\overrightarrow{OA}+\overrightarrow{OB}\); nếu \(G\) là trọng tâm tam giác \(ABC\), \(3\overrightarrow{OG}=\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}\).</p><p>Nếu \(I\) là trọng tâm tứ diện \(ABCD\), \(4\overrightarrow{OI}=\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}+\overrightarrow{OD}\). Tương đương, \(\overrightarrow{IA}+\overrightarrow{IB}+\overrightarrow{IC}+\overrightarrow{ID}=\vec0\).</p></div>
 
-    Tính duy nhất của trọng tâm theo hệ thức trên: nếu \(I,J\) đều cho tổng bốn vectơ bằng \(\vec0\), chèn gốc \(I\) vào tổng xuất phát từ \(J\) cho \(4\overrightarrow{JI}=\vec0\), tức \(I=J\).
+    Để nối hai hệ thức trọng tâm tứ diện, viết \(\overrightarrow{IA}=\overrightarrow{OA}-\overrightarrow{OI}\), tương tự với \(B,C,D\). Cộng bốn đẳng thức và dùng tổng bốn vectơ từ \(I\) bằng \(\vec0\), ta được \(4\overrightarrow{OI}=\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}+\overrightarrow{OD}\). Tính duy nhất của trọng tâm theo hệ thức trên: nếu \(I,J\) đều cho tổng bốn vectơ bằng \(\vec0\), chèn gốc \(I\) vào tổng xuất phát từ \(J\) cho \(4\overrightarrow{JI}=\vec0\), tức \(I=J\).
 
     ### 2.4. Tích vô hướng của hai vectơ trong không gian
 
@@ -218,7 +218,7 @@
 
     **Đề bài.** Cho tứ diện \(ABCD\). Chứng minh \(\overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AD}+\overrightarrow{CB}\).
 
-    **Phân tích:** Bốn điểm không đồng phẳng nên không dựng hình bình hành tùy tiện. Chèn một điểm để xuất hiện hai vectơ đối.
+    **Phân tích:** Bốn điểm không đồng phẳng nên không dựng hình bình hành tùy tiện. Chèn điểm D vào vectơ AB, đổi thứ tự để ghép hai vectơ nối tiếp CD và DB theo quy tắc ba điểm.
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(\overrightarrow{AB}=\overrightarrow{AD}+\overrightarrow{DB}\). Do đó \(\overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AD}+\overrightarrow{CD}+\overrightarrow{DB}=\overrightarrow{AD}+\overrightarrow{CB}\).</p></div>
 
@@ -270,7 +270,7 @@
 
     **Phân tích:** Tính ba số cơ bản \(\vec u^2,\vec v^2,\vec u\cdot\vec v\), sau đó dùng tính phân phối.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> \(\vec u^2=4,\vec v^2=9,\vec u\cdot\vec v=2\cdot3\cdot\frac12=3\). Tích cần tìm bằng \(2\vec u^2+(2-1)\vec u\cdot\vec v-\vec v^2=8+3-9=2\). Bình phương độ dài hiệu bằng \(4-2\cdot3+9=7\), nên \(|\vec u-\vec v|=\sqrt7\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> \(\vec u^2=4,\vec v^2=9,\vec u\cdot\vec v=2\cdot3\cdot\frac12=3\). Khai triển tích theo quy tắc phân phối: \(2\vec u\cdot\vec u+2\vec u\cdot\vec v-\vec v\cdot\vec u-\vec v\cdot\vec v\). Do \(\vec u\cdot\vec v=\vec v\cdot\vec u\), biểu thức bằng \(2\vec u^2+\vec u\cdot\vec v-\vec v^2=8+3-9=2\). Bình phương độ dài hiệu bằng \(4-2\cdot3+9=7\), nên \(|\vec u-\vec v|=\sqrt7\).</p></div>
 
     **Kiểm lại:** Định lí côsin trong tam giác có hai cạnh \(2,3\) và góc xen giữa \(60^\circ\) cũng cho cạnh còn lại dài \(\sqrt7\).
 
