@@ -20975,7 +20975,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT04",
     "stem": "\\(F'(x)=\\frac1x\\) trên \\(x<0\\), \\(F(-1)=2\\). Tìm \\(F(x)\\).",
     "answer_key": "\\(F(x)=\\ln(-x)+2\\), \\(x<0\\).",
-    "worked_solution": "Trên \\(x<0\\), \\((\\ln(-x))'=1/x\\), nên \\(F(x)=\\ln(-x)+C\\). Từ \\(F(-1)=\\ln 1+C=2\\), suy ra \\(C=2\\).\n\nKhông viết \\(\\ln x\\) khi \\(x<0\\); sau đó kiểm đạo hàm trước khi kết luận.\n\n\n**Kiểm lỗi**\n\nNếu em dùng \\(\\ln x\\) cho \\(x<0\\) hoặc ghép hằng số xuyên qua điểm \\(x=0\\) bị loại, đọc **Kiến thức 1.4**, làm **Bài 32** và **Bài 20**. Luôn chọn một khoảng xác định không qua 0.",
+    "worked_solution": "Trên \\(x<0\\), \\((\\ln(-x))'=\\frac1x\\), nên \\(F(x)=\\ln(-x)+C\\). Từ \\(F(-1)=\\ln 1+C=2\\), suy ra \\(C=2\\).\n\nKhông viết \\(\\ln x\\) khi \\(x<0\\); sau đó kiểm đạo hàm trước khi kết luận.\n\n\n**Kiểm lỗi**\n\nNếu em dùng \\(\\ln x\\) cho \\(x<0\\) hoặc ghép hằng số xuyên qua điểm \\(x=0\\) bị loại, đọc **Kiến thức 1.4**, làm **Bài 32** và **Bài 20**. Luôn chọn một khoảng xác định không qua 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B11-O04"
@@ -21072,7 +21072,7 @@
       },
       {
         "id": "B",
-        "text": "\\(e^{5x}/5+C\\)"
+        "text": "\\(\\frac{e^{5x}}5+C\\)"
       },
       {
         "id": "C",
@@ -21374,7 +21374,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT11",
     "stem": "Tính diện tích dưới đồ thị \\(y=x^2\\), phía trên trục \\(Ox\\), từ \\(x=0\\) đến \\(x=1\\).",
     "answer_key": "\\(\\frac13\\) đơn vị diện tích.",
-    "worked_solution": "Vì \\(x^2\\ge0\\) trên đoạn, diện tích là \\(\\int_0^1x^2\\,\\mathrm dx=[x^3/3]_0^1=\\frac13\\) đơn vị diện tích.\n\nNếu trả diện tích âm, kiểm f có âm trên đoạn hay không.\n\n\n**Kiểm lỗi**\n\nNếu em coi tích phân âm là diện tích âm, hoặc bỏ kiểm dấu \\(f\\), đọc **Kiến thức 2.4**, làm **Bài 55** và **Bài 56**. Diện tích hình học yêu cầu hàm không âm trên đoạn, hoặc phải tách theo dấu.",
+    "worked_solution": "Vì \\(x^2\\ge0\\) trên đoạn, diện tích là \\(\\int_0^1x^2\\,\\mathrm dx=\\left[\\frac{x^3}3\\right]_0^1=\\frac13\\) đơn vị diện tích.\n\nNếu trả diện tích âm, kiểm f có âm trên đoạn hay không.\n\n\n**Kiểm lỗi**\n\nNếu em coi tích phân âm là diện tích âm, hoặc bỏ kiểm dấu \\(f\\), đọc **Kiến thức 2.4**, làm **Bài 55** và **Bài 56**. Diện tích hình học yêu cầu hàm không âm trên đoạn, hoặc phải tách theo dấu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B12-O04"
@@ -21431,7 +21431,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT12",
     "stem": "Một vật chuyển động thẳng với vận tốc có hướng \\(v(t)=2-t\\) (m/s), \\(0\\le t\\le5\\) giây. Tìm thời điểm đổi chiều, độ dời và tổng quãng đường của vật.",
     "answer_key": "Đổi chiều tại \\(t=2\\) s; độ dời \\(-\\frac52\\) m; quãng đường \\(\\frac{13}2\\) m.",
-    "worked_solution": "Vận tốc bằng 0 tại \\(t=2\\), dương trước 2 và âm sau 2 nên vật đổi chiều tại đó. Độ dời là\n\n\\[\n\\int_0^5(2-t)\\,dt=\\left[2t-\\frac{t^2}2\\right]_0^5=-\\frac52\\ \\text{m}.\n\\]\n\nHai phần quãng đường là \\(\\int_0^2(2-t)\\,dt=2\\) m và \\(\\int_2^5(t-2)\\,dt=\\frac92\\) m. Tổng quãng đường \\(\\frac{13}2\\) m. Nếu lấy \\(\\frac52\\) m, em mới lấy trị tuyệt đối của độ dời, chưa cộng quãng đường ở cả hai chiều.\n\n\n**Kiểm lỗi**\n\nNếu em lấy trị tuyệt đối của **một** tích phân có dấu làm quãng đường/diện tích khi hàm đổi dấu, đọc **Kiến thức 2.5**, làm **Bài 68** và **Bài 70**. Tách các khoảng tại điểm đổi dấu, tích phân \\(|f|\\) hoặc \\(|v|\\).",
+    "worked_solution": "Vận tốc bằng 0 tại \\(t=2\\), dương trước 2 và âm sau 2 nên vật đổi chiều tại đó. Độ dời là\n\n\\[\n\\int_0^5(2-t)\\,dt=\\left[2t-\\frac{t^2}2\\right]_0^5=-\\frac52\\ \\text{m}.\n\\]\n\nHai phần quãng đường là \\(\\int_0^2(2-t)\\,dt=2\\) m và \\(\\int_2^5(t-2)\\,dt=\\frac92\\) m. Tổng quãng đường \\(\\frac{13}2\\) m. Nếu lấy \\(\\frac52\\) m, em mới lấy trị tuyệt đối của độ dời, chưa cộng quãng đường ở cả hai chiều.\n\n\n**Kiểm lỗi**\n\nNếu em lấy trị tuyệt đối của **một** tích phân có dấu làm quãng đường/diện tích khi hàm đổi dấu, đọc **Kiến thức 2.5**, làm **Bài 68** và **Bài 70**. Tách các khoảng tại điểm đổi dấu, tích phân \\(\\lvert f\\rvert\\) hoặc \\(\\lvert v\\rvert\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B12-O05"
@@ -21545,7 +21545,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT14",
     "stem": "Một vật có vận tốc có hướng \\(v(t)=3t^2\\) (m/s) trong \\(0\\le t\\le1\\) giây. Độ dời là bao nhiêu?",
     "answer_key": "1 m.",
-    "worked_solution": "Độ dời bằng \\(\\int_0^1 3t^2\\,\\mathrm dt=1\\) m.\n\nNếu kết quả còn đơn vị m/s, em chưa tích phân theo thời gian (giây).\n\n\n**Kiểm lỗi**\n\nNếu em lấy giá trị vận tốc cuối nhân tổng thời gian, hoặc không đổi đơn vị m/s theo giây thành mét, đọc **Kiến thức 2.7**, làm **Bài 62** và **Bài 63**. Độ dời là \\(\\int_a^b v(t)\\,\\mathrm dt\\); quãng đường mới cần \\(\\int_a^b|v(t)|\\,\\mathrm dt\\).",
+    "worked_solution": "Độ dời bằng \\(\\int_0^1 3t^2\\,\\mathrm dt=1\\) m.\n\nNếu kết quả còn đơn vị m/s, em chưa tích phân theo thời gian (giây).\n\n\n**Kiểm lỗi**\n\nNếu em lấy giá trị vận tốc cuối nhân tổng thời gian, hoặc không đổi đơn vị m/s theo giây thành mét, đọc **Kiến thức 2.7**, làm **Bài 62** và **Bài 63**. Độ dời là \\(\\int_a^b v(t)\\,\\mathrm dt\\); quãng đường mới cần \\(\\int_a^b\\lvert v(t)\\rvert\\,\\mathrm dt\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B12-O07"
@@ -21585,7 +21585,7 @@
       },
       {
         "id": "B",
-        "text": "1/3 m"
+        "text": "\\(\\frac13\\) m"
       },
       {
         "id": "C",
@@ -21602,7 +21602,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT15",
     "stem": "Tính diện tích dưới \\(y=\\sqrt{x}\\) và trên \\(Ox\\), từ \\(x=0\\) đến \\(x=9\\).",
     "answer_key": "18 đơn vị diện tích.",
-    "worked_solution": "Vì \\(\\sqrt x\\ge0\\) trên \\([0;9]\\), \\(S=\\int_0^9\\sqrt x\\,\\mathrm dx=[\\frac23x^{3/2}]_0^9=\\frac23\\cdot27=18\\) đơn vị diện tích.\n\nNếu em nhầm \\(\\sqrt{x}\\) với \\(x^2\\), hãy viết lại \\(\\sqrt{x}=x^{\\frac12}\\) trước khi tìm nguyên hàm.\n\n\n**Kiểm lỗi**\n\nNếu em áp dụng công thức nguyên hàm \\(x^2\\) cho \\(\\sqrt{x}\\) hoặc bỏ miền \\(x\\ge0\\), đọc **Kiến thức 3.1**, làm **Bài 89** và **Bài 80**. Đổi \\(\\sqrt{x}=x^{\\frac12}\\) rồi kiểm cận và đơn vị diện tích.",
+    "worked_solution": "Vì \\(\\sqrt x\\ge0\\) trên \\([0;9]\\), \\(S=\\int_0^9\\sqrt x\\,\\mathrm dx=[\\frac23x^{\\frac32}]_0^9=\\frac23\\cdot27=18\\) đơn vị diện tích.\n\nNếu em nhầm \\(\\sqrt{x}\\) với \\(x^2\\), hãy viết lại \\(\\sqrt{x}=x^{\\frac12}\\) trước khi tìm nguyên hàm.\n\n\n**Kiểm lỗi**\n\nNếu em áp dụng công thức nguyên hàm \\(x^2\\) cho \\(\\sqrt{x}\\) hoặc bỏ miền \\(x\\ge0\\), đọc **Kiến thức 3.1**, làm **Bài 89** và **Bài 80**. Đổi \\(\\sqrt{x}=x^{\\frac12}\\) rồi kiểm cận và đơn vị diện tích.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B13-O01"
@@ -21613,7 +21613,7 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Viết căn thành lũy thừa với số mũ 1/2."
+      "Viết căn thành lũy thừa với số mũ \\(\\frac12\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -21658,8 +21658,8 @@
     "item_id": "THPT-TOP11-KFT16",
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT16",
     "stem": "Tính diện tích hình phẳng giữa \\(y=2x-2\\) và trục hoành trên \\([0;3]\\). Tự tìm mốc chia đoạn.",
-    "answer_key": "5 đơn vị diện tích; chia tại x=1.",
-    "worked_solution": "Hàm bằng 0 tại \\(x=1\\), âm trên \\([0;1)\\) và dương trên \\((1;3]\\). Diện tích là \\(\\int_0^1(2-2x)\\,dx+\\int_1^3(2x-2)\\,dx=1+4=5\\) đơn vị diện tích. Tích phân có dấu chỉ bằng \\(-1+4=3\\); hai mảnh diện tích không triệt tiêu nhau.\n\n\n**Kiểm lỗi**\n\nNếu em cho phép hai phần hình nằm trên/dưới Ox triệt tiêu thành diện tích 0, đọc **Kiến thức 3.2**, làm **Bài 90** và **Bài 92**. Tìm mọi nghiệm \\(f(x)=0\\), tách đoạn và tích phân \\(|f|\\).",
+    "answer_key": "5 đơn vị diện tích; chia tại \\(x=1\\).",
+    "worked_solution": "Hàm bằng 0 tại \\(x=1\\), âm trên \\([0;1)\\) và dương trên \\((1;3]\\). Diện tích là \\(\\int_0^1(2-2x)\\,dx+\\int_1^3(2x-2)\\,dx=1+4=5\\) đơn vị diện tích. Tích phân có dấu chỉ bằng \\(-1+4=3\\); hai mảnh diện tích không triệt tiêu nhau.\n\n\n**Kiểm lỗi**\n\nNếu em cho phép hai phần hình nằm trên/dưới Ox triệt tiêu thành diện tích 0, đọc **Kiến thức 3.2**, làm **Bài 90** và **Bài 92**. Tìm mọi nghiệm \\(f(x)=0\\), tách đoạn và tích phân \\(\\lvert f\\rvert\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B13-O02"
@@ -21695,11 +21695,11 @@
     "options": [
       {
         "id": "A",
-        "text": "3 đơn vị diện tích; chia tại x=1."
+        "text": "3 đơn vị diện tích; chia tại \\(x=1\\)."
       },
       {
         "id": "B",
-        "text": "5 đơn vị diện tích; chia tại x=1."
+        "text": "5 đơn vị diện tích; chia tại \\(x=1\\)."
       },
       {
         "id": "C",
@@ -21707,7 +21707,7 @@
       },
       {
         "id": "D",
-        "text": "5 đơn vị diện tích; chia tại x=2."
+        "text": "5 đơn vị diện tích; chia tại \\(x=2\\)."
       }
     ]
   },
@@ -21716,7 +21716,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT17",
     "stem": "Tính diện tích giữa \\(y=3\\) và \\(y=x\\) trên \\([0;2]\\).",
     "answer_key": "4 đơn vị diện tích.",
-    "worked_solution": "Trên \\([0;2]\\), đường \\(y=3\\) nằm trên \\(y=x\\). \\(S=\\int_0^2(3-x)\\,\\mathrm dx=[3x-x^2/2]_0^2=4\\) đơn vị diện tích.\n\nNếu hiệu âm, hãy kiểm đã trừ đúng 'trên−dưới'.\n\n\n**Kiểm lỗi**\n\nNếu em lấy đường dưới trừ đường trên hoặc bỏ kiểm vị trí đường cong, đọc **Kiến thức 3.3**, làm **Bài 93** và **Bài 85**. Kiểm dấu hiệu hai hàm trên từng khoảng để chọn \\(\\int(\\text{trên}-\\text{dưới})dx\\).",
+    "worked_solution": "Trên \\([0;2]\\), đường \\(y=3\\) nằm trên \\(y=x\\). \\(S=\\int_0^2(3-x)\\,\\mathrm dx=\\left[3x-\\frac{x^2}2\\right]_0^2=4\\) đơn vị diện tích.\n\nNếu hiệu âm, hãy kiểm đã trừ đúng 'trên−dưới'.\n\n\n**Kiểm lỗi**\n\nNếu em lấy đường dưới trừ đường trên hoặc bỏ kiểm vị trí đường cong, đọc **Kiến thức 3.3**, làm **Bài 93** và **Bài 85**. Kiểm dấu hiệu hai hàm trên từng khoảng để chọn \\(\\int(\\text{trên}-\\text{dưới})dx\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B13-O03"
@@ -21887,7 +21887,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT20",
     "stem": "Một khối có thiết diện vuông cạnh 3 không đổi trên đoạn dài 2 (cùng đơn vị độ dài). Tính thể tích.",
     "answer_key": "18 đơn vị thể tích.",
-    "worked_solution": "Diện tích thiết diện vuông là \\(3^2=9\\). Thể tích \\(V=\\int_0^2 9\\,\\mathrm dx=18\\) đơn vị thể tích.\n\nNếu dùng 3 thay cho9, bạn lấy cạnh làm diện tích.\n\n\n**Kiểm lỗi**\n\nNếu em lấy chiều dài cạnh hình vuông làm diện tích, hoặc nhân thêm \\(\\pi\\) dù thiết diện là vuông, đọc **Kiến thức 4.1**, làm **Bài 108** và **Bài 109**. Phải lập \\(A(x)=s(x)^2\\) rồi tích phân theo chiều dài.",
+    "worked_solution": "Diện tích thiết diện vuông là \\(3^2=9\\). Thể tích \\(V=\\int_0^2 9\\,\\mathrm dx=18\\) đơn vị thể tích.\n\nNếu dùng 3 thay cho 9, bạn lấy cạnh làm diện tích.\n\n\n**Kiểm lỗi**\n\nNếu em lấy chiều dài cạnh hình vuông làm diện tích, hoặc nhân thêm \\(\\pi\\) dù thiết diện là vuông, đọc **Kiến thức 4.1**, làm **Bài 108** và **Bài 109**. Phải lập \\(A(x)=s(x)^2\\) rồi tích phân theo chiều dài.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B13-O06"
