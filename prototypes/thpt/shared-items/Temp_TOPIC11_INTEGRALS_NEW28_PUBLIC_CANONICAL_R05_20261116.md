@@ -309,18 +309,18 @@ written_role: DEEP_ANCHOR (role label only, never clone an item)
 problem_family_id: TOP11-ANTIDERIVATIVE_INITIAL_VALUE
 difficulty_band: TRANSFER
 content_version: 1
-**Đề:** Cho F'(x)=3x²−4x+1 trên ℝ và F(1)=2. (a) Viết họ nguyên hàm. (b) Tìm C. (c) Tính F(2). (d) Chứng minh nghiệm là duy nhất trên ℝ trong họ nguyên hàm.
-**Đáp án:** F=x³−2x²+x+2; F(2)=8−8+2+2=4; C=2.
-**Lời giải có lập luận:** Nguyên hàm F=x³−2x²+x+C; F(1)=1−2+1+C=C=2. F(2)=8−8+2+2=4. Kiểm F'=3x²−4x+1. Hai nguyên hàm của cùng đạo hàm trên khoảng ℝ chỉ khác nhau hằng; dữ kiện F(1)=2 xác định C duy nhất.
+**Đề:** Cho \(F'(x)=3x^2-4x+1\) trên \(\mathbb R\) và \(F(1)=2\). (a) Viết họ nguyên hàm. (b) Tìm C. (c) Tính \(F(2)\). (d) Chứng minh nghiệm là duy nhất trên \(\mathbb R\) trong họ nguyên hàm.
+**Đáp án:** \(F=x^3-2x^2+x+2\); \(F(2)=8-8+2+2=4\); \(C=2\).
+**Lời giải có lập luận:** Nguyên hàm \(F=x^3-2x^2+x+C\); \(F(1)=1-2+1+C=C=2\). \(F(2)=8-8+2+2=4\). Kiểm \(F'=3x^2-4x+1\). Hai nguyên hàm của cùng một hàm trên khoảng \(\mathbb R\) chỉ khác nhau một hằng số; dữ kiện \(F(1)=2\) xác định C duy nhất.
 **Rubric /7:**
-1. Viết nguyên hàm x³ đúng (1đ)
-2. Viết −2x² đúng (1đ)
-3. Viết +x và +C đúng (1đ)
-4. Thay F(1) chính xác (1đ)
-5. Giải C=2 (1đ)
-6. Tính F(2)=4 (1đ)
-7. Kiểm đạo hàm/giải thích duy nhất trên ℝ (1đ)
-**D6:** Đặt F=F₀+C rồi thay điều kiện vào F, không phải vào F'.
+1. Viết nguyên hàm \(x^3\) đúng (1đ)
+2. Viết \(-2x^2\) đúng (1đ)
+3. Viết \(+x\) và \(+C\) đúng (1đ)
+4. Thay \(F(1)\) chính xác (1đ)
+5. Giải \(C=2\) (1đ)
+6. Tính \(F(2)=4\) (1đ)
+7. Kiểm đạo hàm/giải thích duy nhất trên \(\mathbb R\) (1đ)
+**D6:** Đặt \(F=F_0+C\) rồi thay điều kiện vào F, không phải vào \(F'\).
 
 ## THPT-TOP11-W02 · TOP11-O04
 
@@ -331,18 +331,18 @@ written_role: DEEP_ANCHOR (role label only, never clone an item)
 problem_family_id: TOP11-LOG_ABS_DOMAIN
 difficulty_band: TRANSFER
 content_version: 1
-**Đề:** Trên khoảng (−∞,0), cho F'(x)=2/x+cos x và F(−1)=4. (a) Tìm họ nguyên hàm. (b) Xác định F đúng miền với hằng C. (c) Kiểm đạo hàm và giá trị đầu. (d) Nêu vì sao không dùng ln x trên khoảng âm.
-**Đáp án:** F(x)=2ln(−x)+sin x+4+sin1 (x<0).
-**Lời giải có lập luận:** Vì x<0 nên ∫2/x dx=2ln(−x), và ∫cos x dx=sin x. F=2ln(−x)+sin x+C. F(−1)=0−sin1+C=4⇒C=4+sin1. Đạo hàm ln(−x) là (−1)/(−x)=1/x, nên F'=2/x+cos x; F(−1)=4. ln x không xác định thực nếu x<0.
+**Đề:** Trên khoảng \((-\infty;0)\), cho \(F'(x)=\frac2x+\cos x\) và \(F(-1)=4\). (a) Tìm họ nguyên hàm. (b) Xác định F đúng miền với hằng C. (c) Kiểm đạo hàm và giá trị đầu. (d) Nêu vì sao không dùng \(\ln x\) trên khoảng âm.
+**Đáp án:** \(F(x)=2\ln(-x)+\sin x+4+\sin 1\) với \(x<0\).
+**Lời giải có lập luận:** Vì \(x<0\), họ nguyên hàm của \(\frac2x\) là \(2\ln(-x)+C_1\), và của \(\cos x\) là \(\sin x+C_2\). \(F=2\ln(-x)+\sin x+C\). \(F(-1)=0-\sin 1+C=4\), suy ra \(C=4+\sin 1\). Đạo hàm của \(\ln(-x)\) là \(\frac{-1}{-x}=\frac1x\), nên \(F'=\frac2x+\cos x\); \(F(-1)=4\). \(\ln x\) không xác định trong số thực nếu \(x<0\).
 **Rubric /7:**
-1. Giữ miền x<0 (1đ)
-2. Nguyên hàm 2/x thành 2ln(−x) (1đ)
-3. Nguyên hàm cos x đúng (1đ)
-4. Lập F=...+C (1đ)
-5. Tính C=4+sin1 (1đ)
-6. Kiểm F' và F(−1) (1đ)
-7. Giải thích ln x không hợp lệ x<0 (1đ)
-**D6:** Ghi ln|x| trên mỗi khoảng không chứa0, sau mới dùng giá trị đầu.
+1. Giữ miền \(x<0\) (1đ)
+2. Nguyên hàm \(\frac2x\) thành \(2\ln(-x)\) (1đ)
+3. Nguyên hàm \(\cos x\) đúng (1đ)
+4. Lập F có hằng số \(C\) (1đ)
+5. Tính \(C=4+\sin 1\) (1đ)
+6. Kiểm \(F'\) và \(F(-1)\) (1đ)
+7. Giải thích \(\ln x\) không hợp lệ khi \(x<0\) (1đ)
+**D6:** Ghi \(\ln\lvert x\rvert\) trên mỗi khoảng không chứa 0, sau mới dùng giá trị đầu.
 
 ## THPT-TOP11-W03 · TOP11-O12
 
@@ -353,18 +353,18 @@ written_role: DEEP_ANCHOR (role label only, never clone an item)
 problem_family_id: TOP11-SIGNED_AREA_DISTANCE
 difficulty_band: TRANSFER
 content_version: 1
-**Đề:** Một vật có vận tốc v(t)=t−1 (m/s) trong 0≤t≤2 s. (a) Tính độ dời bằng tích phân. (b) Xác định thời điểm đổi chiều. (c) Tính tổng quãng đường. (d) Giải thích vì sao không dùng trị tuyệt đối độ dời làm quãng đường.
-**Đáp án:** Độ dời=0 m, đổi chiều ở t=1 s, quãng đường=1 m.
-**Lời giải có lập luận:** ∫₀²(t−1)dt=[t²/2−t]₀²=2−2=0. v<0 trên (0,1), v>0 trên (1,2), nên đổi chiều tại1. Quãng đường ∫₀¹(1−t)dt+∫₁²(t−1)dt=1/2+1/2=1 m. |∫v|=0 khác ∫|v|=1 vì hai đoạn đối chiều triệt trong độ dời.
+**Đề:** Một vật có vận tốc \(v(t)=t-1\) (m/s) trong \(0\le t\le2\) s. (a) Tính độ dời bằng tích phân. (b) Xác định thời điểm đổi chiều. (c) Tính tổng quãng đường. (d) Giải thích vì sao không dùng trị tuyệt đối độ dời làm quãng đường.
+**Đáp án:** Độ dời bằng 0 m, đổi chiều ở \(t=1\) s, quãng đường bằng 1 m.
+**Lời giải có lập luận:** \(\int_0^2(t-1)\,\mathrm dt=\left[\frac{t^2}{2}-t\right]_0^2=2-2=0\). \(v<0\) trên \((0;1)\), \(v>0\) trên \((1;2)\), nên đổi chiều tại 1. Quãng đường \(\int_0^1(1-t)\,\mathrm dt+\int_1^2(t-1)\,\mathrm dt=\frac12+\frac12=1\) m. \(\left\lvert\int_0^2 v(t)\,\mathrm dt\right\rvert=0\) khác \(\int_0^2\lvert v(t)\rvert\,\mathrm dt=1\) vì hai đoạn đối chiều triệt tiêu trong độ dời.
 **Rubric /7:**
-1. Đặt đúng tích phân v(t) (1đ)
-2. Tính độ dời0 (1đ)
-3. Giải v(t)=0 tại1 (1đ)
+1. Đặt đúng tích phân \(v(t)\) (1đ)
+2. Tính độ dời 0 (1đ)
+3. Giải \(v(t)=0\) tại 1 (1đ)
 4. Xét dấu v hai bên (1đ)
 5. Lập hai tích phân trị tuyệt đối (1đ)
-6. Tính quãng đường1m (1đ)
+6. Tính quãng đường 1 m (1đ)
 7. Giải thích độ dời và quãng đường khác nhau (1đ)
-**D6:** Thấy v đổi dấu phải tách khoảng để tính ∫|v|, không lấy trị tuyệt đối toàn tổng.
+**D6:** Thấy v đổi dấu phải tách khoảng để tính \(\int_0^2\lvert v(t)\rvert\,\mathrm dt\), không lấy trị tuyệt đối toàn tổng.
 
 ## THPT-TOP11-W04 · TOP11-O18
 
@@ -375,17 +375,17 @@ written_role: DEEP_ANCHOR (role label only, never clone an item)
 problem_family_id: TOP11-TWO_CURVES_CROSS
 difficulty_band: TRANSFER
 content_version: 1
-**Đề:** Tính diện tích giới hạn bởi hai đường y=x và y=x² trên đoạn [0,2]. (a) Giải giao điểm. (b) Xác định đường trên từng khoảng. (c) Thiết lập hai tích phân. (d) Tính diện tích và so với tích phân đại số ∫₀²(x−x²)dx.
-**Đáp án:** Giao x=0,1. S=∫₀¹(x−x²)+∫₁²(x²−x)=1. Tích phân đại số ∫₀²(x−x²)=−2/3, không phải diện tích.
-**Lời giải có lập luận:** x=x² ⇒ x=0 hoặc1. Trên (0,1), x>x²; trên (1,2), x²>x. S=[x²/2−x³/3]₀¹+[x³/3−x²/2]₁²=(1/2−1/3)+(8/3−2−(1/3−1/2))=1/6+5/6=1. Trong khi ∫₀²(x−x²)dx=[x²/2−x³/3]₀²=2−8/3=−2/3. Âm cho thấy không phải diện tích hình học.
+**Đề:** Tính diện tích giới hạn bởi hai đường \(y=x\) và \(y=x^2\) trên đoạn \([0;2]\). (a) Giải giao điểm. (b) Xác định đường trên từng khoảng. (c) Thiết lập hai tích phân. (d) Tính diện tích và so với tích phân đại số \(\int_0^2(x-x^2)\,\mathrm dx\).
+**Đáp án:** Giao điểm có hoành độ \(x=0,\ 1\). \(S=\int_0^1(x-x^2)\,\mathrm dx+\int_1^2(x^2-x)\,\mathrm dx=1\). Tích phân đại số \(\int_0^2(x-x^2)\,\mathrm dx=-\frac23\), không phải diện tích.
+**Lời giải có lập luận:** \(x=x^2\Rightarrow x=0\) hoặc \(x=1\). Trên \((0;1)\), \(x>x^2\); trên \((1;2)\), \(x^2>x\). \(S=\left[\frac{x^2}{2}-\frac{x^3}{3}\right]_0^1+\left[\frac{x^3}{3}-\frac{x^2}{2}\right]_1^2=\left(\frac12-\frac13\right)+\left(\frac83-2-\left(\frac13-\frac12\right)\right)=\frac16+\frac56=1\). Trong khi \(\int_0^2(x-x^2)\,\mathrm dx=\left[\frac{x^2}{2}-\frac{x^3}{3}\right]_0^2=2-\frac83=-\frac23\). Kết quả âm cho thấy không phải diện tích hình học.
 **Rubric /7:**
-1. Giải x=0,1 (1đ)
-2. Nêu dấu trên (0,1) (1đ)
-3. Nêu dấu trên (1,2) (1đ)
+1. Giải \(x=0,\ 1\) (1đ)
+2. Nêu dấu trên \((0;1)\) (1đ)
+3. Nêu dấu trên \((1;2)\) (1đ)
 4. Viết đủ hai tích phân không âm (1đ)
-5. Tính phần đầu1/6 (1đ)
-6. Tính phần sau5/6 và S=1 (1đ)
-7. So với tích phân đại số −2/3 đúng (1đ)
+5. Tính phần đầu \(\frac16\) (1đ)
+6. Tính phần sau \(\frac56\) và \(S=1\) (1đ)
+7. So với tích phân đại số \(-\frac23\) đúng (1đ)
 **D6:** Một dấu trừ duy nhất qua điểm giao làm mất diện tích; dùng tích phân trị tuyệt đối chia đoạn.
 
 ## THPT-TOP11-W05 · TOP11-O20
@@ -433,18 +433,18 @@ written_role: DEEP_ANCHOR (role label only, never clone an item)
 problem_family_id: TOP11-WASHER_REVOLUTION
 difficulty_band: TRANSFER
 content_version: 1
-**Đề:** Miền 0≤x≤2, x≤y≤2 quay quanh trục Ox. (a) Mô tả bán kính ngoài, trong của tiết diện. (b) Thiết lập công thức vành khăn. (c) Tính thể tích. (d) Nêu vì sao không dùng π∫(2−x)²dx.
-**Đáp án:** R=2, r=x; V=π∫₀²(4−x²)dx=16π/3 đơn vị³.
-**Lời giải có lập luận:** Với x∈[0,2], y từ x tới2 nên quay quanh Ox cho vành khăn bán kính ngoài R=2, trong r=x. Diện tích A=π(R²−r²)=π(4−x²). V=π[x·4−x³/3]₀²=π(8−8/3)=16π/3. (R−r)²=4−4x+x² khác R²−r², không biểu diễn diện tích vành khăn; chỉ dùng π∫f² khi vùng chạm trục.
+**Đề:** Miền \(0\le x\le2,\ x\le y\le2\) quay quanh trục Ox. (a) Mô tả bán kính ngoài, trong của tiết diện. (b) Thiết lập công thức vành khăn. (c) Tính thể tích. (d) Nêu vì sao không dùng \(\pi\int_0^2(2-x)^2\,\mathrm dx\).
+**Đáp án:** \(R=2,\ r=x\); \(V=\pi\int_0^2(4-x^2)\,\mathrm dx=\frac{16\pi}{3}\) đơn vị thể tích.
+**Lời giải có lập luận:** Với \(x\in[0;2]\), y từ x tới 2 nên quay quanh Ox cho vành khăn bán kính ngoài \(R=2\), trong \(r=x\). Diện tích \(A=\pi(R^2-r^2)=\pi(4-x^2)\). \(V=\pi\left[4x-\frac{x^3}{3}\right]_0^2=\pi\left(8-\frac83\right)=\frac{16\pi}{3}\). \((R-r)^2=4-4x+x^2\) khác \(R^2-r^2\), không biểu diễn diện tích vành khăn; chỉ dùng công thức đĩa đặc \(\pi\int f(x)^2\,\mathrm dx\) khi vùng chạm trục.
 **Rubric /7:**
 1. Xác định miền và trục Ox (1đ)
-2. Bán kính ngoài R=2 (1đ)
-3. Bán kính trong r=x (1đ)
-4. Thiết lập π∫(4−x²) (1đ)
+2. Bán kính ngoài \(R=2\) (1đ)
+3. Bán kính trong \(r=x\) (1đ)
+4. Thiết lập \(\pi\int_0^2(4-x^2)\,\mathrm dx\) (1đ)
 5. Nguyên hàm đúng (1đ)
-6. V=16π/3 và đơn vị³ (1đ)
+6. \(V=\frac{16\pi}{3}\) và đơn vị thể tích (1đ)
 7. Giải thích sai khác giữa bình phương hiệu và hiệu bình phương (1đ)
-**D6:** Nếu vùng không chạm trục, trừ diện tích hai đĩa: π(R²−r²), không bình phương (R−r).
+**D6:** Nếu vùng không chạm trục, trừ diện tích hai đĩa: \(\pi(R^2-r^2)\), không bình phương \(R-r\).
 
 ## Q15 / Q16 identity and assessment boundary
 
