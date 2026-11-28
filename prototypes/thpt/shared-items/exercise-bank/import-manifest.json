@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "a4960cdf70250368f9784071558969cfe73ab590",
+    "as_of_commit": "276f3aa7bd7c1166d0c15a387f29fb9de40938a9",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.2: 359/910 (330 interactive +29 Written), CD01–09 complete; next CD10 onward 551 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
+    "next": "08.2: 432/910 (397 interactive +35 Written), CD01–10 complete; next CD11 onward 478 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
     "status": "CHECKLIST_08_XG5_BATCH_2_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -7687,12 +7687,399 @@
                     ]
                   ],
                   "findings": "Read five canonical Written blocks; W02/W05 absolute value notation only, exact source cb70707193b22124568fe27caef8dee57f237953; all five bindings refreshed at a4960cdf70250368f9784071558969cfe73ab590."
+                },
+                {
+                  "shard": "items/cd10.json",
+                  "blob": "f98c51b777e5283d2c9be4950803b992aaac7890",
+                  "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+                  "baseline_blob": "7064ee56cc2c23fdc8f226ecea7ee2e7f05e460d",
+                  "evidence_cp": "CP90",
+                  "records": [
+                    [
+                      "THPT-TOP10-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P05",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP10-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P08",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P09",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P10",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP10-P11",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP10-P12",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P13",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P14",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P15",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P16",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P17",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P18",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P19",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP10-P20",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P21",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P22",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P23",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P24",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP10-P25",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P26",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P27",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P28",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P29",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P30",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P31",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP10-P32",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P33",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P35",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP10-P36",
+                      89,
+                      6
+                    ]
+                  ],
+                  "findings": "Read all new/changed fields, inherit identical five CP90 fields only. No correction needed in this shard."
+                },
+                {
+                  "shard": "items/topic-knowledge-first-try.json",
+                  "blob": "de2595aab46c9c0ae2e71255874849ff3d8c1339",
+                  "evidence_cp": "08.2-CD10-KFT",
+                  "records": [
+                    [
+                      "THPT-TOP10-KFT01",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT02",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT03",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT04",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT05",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT06",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT07",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT08",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT09",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT10",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT11",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT12",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT13",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT14",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT15",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT18",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT19",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT21",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT22",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT23",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT24",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT26",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT27",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT28",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT29",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT30",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT31",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT32",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT33",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT34",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT35",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP10-KFT36",
+                      0,
+                      31
+                    ]
+                  ],
+                  "findings": "Read 32 Topic-only FirstTry records; normalize inline expressions, fractions, absolute value and spacing in 16 IDs, readback adaaafc7ca5850166a86e9615650216d0ebb6903; no change to math or answer choices."
+                },
+                {
+                  "shard": "written-references.json",
+                  "blob": "801463d6b381d1001772d0f54ab0215116600d15",
+                  "source_path": "prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md",
+                  "source_blob": "6c94ae71edbf3504d711eeab7715290d4574dfa4",
+                  "evidence_cp": "08.2-CD10-Written",
+                  "records": [
+                    [
+                      "THPT-TOP10-W01",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP10-W02",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP10-W03",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP10-W04",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP10-W05",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP10-W06",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ]
+                  ],
+                  "findings": "Read all six canonical Written blocks; W02/W04/W05/W06 legacy plain-text mathematics typeset in stems, solutions, answers, rubric and D6; preserve values, steps and all seven 1-point criteria. Source a8638e3584170c6f46b95987512406be0b801e16; six bindings refreshed at 276f3aa7bd7c1166d0c15a387f29fb9de40938a9."
                 }
               ],
-              "completed_interactive": 330,
-              "completed_written": 29,
-              "remaining_interactive": 499,
-              "remaining_written": 52,
+              "completed_interactive": 397,
+              "completed_written": 35,
+              "remaining_interactive": 432,
+              "remaining_written": 46,
               "counts": {
                 "CD01": {
                   "interactive": 15,
@@ -7738,12 +8125,17 @@
                   "interactive": 60,
                   "written": 5,
                   "state": "COMPLETE"
+                },
+                "CD10": {
+                  "interactive": 67,
+                  "written": 6,
+                  "state": "COMPLETE"
                 }
               },
-              "next": "CD10 onward; exclude 975 shared and 359 completed Topic-only IDs",
+              "next": "CD11 onward; exclude 975 shared and 432 completed Topic-only IDs",
               "reconciliation": {
-                "expected_cd01_09": 359,
-                "completed_cd01_09": 359,
+                "expected_cd01_10": 432,
+                "completed_cd01_10": 432,
                 "duplicate_ids": 0,
                 "overlap_08_1": 0,
                 "overlap_08_3": 0,
