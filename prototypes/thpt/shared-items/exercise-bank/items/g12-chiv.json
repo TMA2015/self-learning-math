@@ -649,7 +649,7 @@
   },
   {
     "item_id": "THPT-G12-B11-C05",
-    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-C05",
+    "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-C05-XG6-20261128",
     "stem": "Tính \\(\\int e^x\\,\\mathrm dx\\).",
     "answer_key": "\\(e^x+C\\).",
     "worked_solution": "Đạo hàm của \\(e^x\\) chính là \\(e^x\\), nên họ nguyên hàm là \\(e^x+C\\). Không cần chia thêm hệ số logarit vì \\(\\ln e=1\\).",
@@ -657,7 +657,7 @@
       "G12-CHIV-B11-O05"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Đạo hàm của \\(e^x\\) bằng chính nó."
     ],
@@ -3941,5 +3941,192 @@
       }
     ],
     "exercise_type": "INTERACTIVE"
+  },
+  {
+    "item_id": "THPT-G12-B12-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G12-B12-L1-01",
+    "stem": "Cho \\(f\\) liên tục trên đoạn \\([a;b]\\) và \\(F'=f\\) trên một khoảng chứa đoạn đó. Công thức nào tính \\(\\int_a^b f(x)\\,\\mathrm dx\\)?",
+    "answer_key": "\\(F(b)-F(a)\\).",
+    "worked_solution": "Theo công thức tính tích phân xác định bằng nguyên hàm, \\(\\int_a^b f(x)\\,\\mathrm dx=F(b)-F(a)\\). Lấy giá trị nguyên hàm ở cận trên trừ cận dưới, không thay trực tiếp vào hàm dưới dấu tích phân.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G12-CHIV-B12-O01"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ thứ tự cận khi dùng nguyên hàm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+        "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+        "commit": "792e227269ed0b0a50cc2b3b5d32162b34eab6e0"
+      },
+      "related_item_ids": [
+        "THPT-G12-B12-C01"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đảo cận hoặc dùng giá trị của hàm dưới dấu tích phân, ôn Bài 12 định nghĩa và công thức tính tích phân; sau đó làm câu tính tích phân bằng nguyên hàm.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(F(a)-F(b)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(f(b)-f(a)\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(F(b)+F(a)\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(F(b)-F(a)\\)."
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G12-B13-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G12-B13-L1-01",
+    "stem": "Cho \\(f,g\\) liên tục trên \\([a;b]\\), \\(a<b\\). Diện tích hình phẳng giới hạn bởi hai đồ thị và hai đường thẳng \\(x=a,x=b\\) được tính theo công thức nào, kể cả khi hai đồ thị đổi vị trí trên dưới?",
+    "answer_key": "\\(S=\\int_a^b|f(x)-g(x)|\\,\\mathrm dx\\).",
+    "worked_solution": "Tại mỗi \\(x\\), khoảng cách thẳng đứng giữa hai đồ thị là \\(|f(x)-g(x)|\\). Tích phân của khoảng cách không âm trên \\([a;b]\\) cho diện tích. Lấy trị tuyệt đối sau khi tích phân không đúng nói chung vì phần diện tích có dấu trái nhau có thể triệt tiêu.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G12-CHIV-B13-O02",
+      "G12-CHIV-B13-O03"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ diện tích không âm tại từng lát cắt."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+        "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+        "commit": "792e227269ed0b0a50cc2b3b5d32162b34eab6e0"
+      },
+      "related_item_ids": [
+        "THPT-G12-B13-C02",
+        "THPT-G12-B13-C03"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu để các phần có dấu trái nhau triệt tiêu, ôn Bài 13 công thức diện tích giữa hai đồ thị và cách chia tại giao điểm; luyện bài đồ thị cắt Ox và bài diện tích giữa hai đồ thị.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(S=\\int_a^b(f(x)-g(x))\\,\\mathrm dx\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(S=\\int_a^b|f(x)-g(x)|\\,\\mathrm dx\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(S=\\left|\\int_a^b(f(x)-g(x))\\,\\mathrm dx\\right|\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(S=\\int_a^b|f(x)+g(x)|\\,\\mathrm dx\\)."
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G12-B13-L1-02",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G12-B13-L1-02",
+    "stem": "Một vật thể có diện tích mặt cắt vuông góc với \\(Ox\\) là hàm liên tục \\(S(x)\\ge0\\) trên \\([a;b]\\). Công thức thể tích nào đúng?",
+    "answer_key": "\\(V=\\int_a^b S(x)\\,\\mathrm dx\\).",
+    "worked_solution": "Một lát cắt mỏng có thể tích xấp xỉ diện tích mặt cắt nhân bề dày. Cộng các lát cắt bằng tích phân cho \\(V=\\int_a^b S(x)\\,\\mathrm dx\\). Nếu mặt cắt tròn, \\(S(x)=\\pi r(x)^2\\); không bình phương lại diện tích đã biết.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G12-CHIV-B13-O06",
+      "G12-CHIV-B13-O07"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ lấy diện tích lát cắt nhân bề dày."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+        "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+        "commit": "792e227269ed0b0a50cc2b3b5d32162b34eab6e0"
+      },
+      "related_item_ids": [
+        "THPT-G12-B13-C06",
+        "THPT-G12-B13-C07"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu tích phân bán kính thay vì diện tích hoặc bình phương diện tích thêm lần nữa, ôn Bài 13 thể tích theo mặt cắt; luyện bài có diện tích mặt cắt và bài mặt cắt tròn.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(V=S(b)-S(a)\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(V=\\int_a^b xS(x)\\,\\mathrm dx\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(V=\\int_a^b S(x)\\,\\mathrm dx\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(V=\\pi\\int_a^b S(x)^2\\,\\mathrm dx\\)."
+      }
+    ]
   }
 ]
