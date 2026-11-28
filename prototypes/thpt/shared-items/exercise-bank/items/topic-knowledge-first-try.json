@@ -11143,7 +11143,7 @@
     "content_version": "CD02-BANK-CP122-20261127-TOP02-KFT02",
     "stem": "Tam thức \\(x^2+2x+1\\) có biệt thức và nghiệm nào?",
     "answer_key": "\\(\\Delta=0\\); nghiệm kép \\(x=-1\\).",
-    "worked_solution": "\\(\\Delta=0\\), nghiệm kép \\(x=-1\\) vì \\(x^2+2x+1=(x+1)^2\\).\n\nQuên 2a hoặc sai dấu b thì thử nhân tích để kiểm nghiệm.",
+    "worked_solution": "\\(\\Delta=0\\), nghiệm kép \\(x=-1\\) vì \\(x^2+2x+1=(x+1)^2\\).\n\nQuên \\(2a\\) hoặc sai dấu b thì thử nhân tích để kiểm nghiệm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "QUAD_DOUBLE_ROOT_SIGN"
