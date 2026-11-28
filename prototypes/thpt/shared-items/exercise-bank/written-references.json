@@ -5632,12 +5632,12 @@
   {
     "item_id": "THPT-G12-B18-W03",
     "source": {
-      "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
+      "blob": "3e827236f0aade2567c5b07c9e9647a9a10f0372",
       "heading_id": "THPT-G12-B18-W03",
-      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "DELTA06_D6_CONDITIONAL_PROBABILITY_WORDING_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "prior_candidate_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
+      "prior_candidate_blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5651,9 +5651,9 @@
     "skill_ids": [
       "G12-CHVI-B18-O03"
     ],
-    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W03.DELTA02.DELTA04",
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W03.DELTA02.DELTA06",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Selection model not explicit: specify uniform random selection of one student. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA06: exact canonical D6 wording/notation corrected; stem/key/solution/rubric unchanged, independent mathematics checked; final applicable Q18/PED and projection generation pending."
   },
   {
     "item_id": "THPT-G12-B18-W04",
@@ -5680,12 +5680,12 @@
   {
     "item_id": "THPT-G12-B18-W05",
     "source": {
-      "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
+      "blob": "3e827236f0aade2567c5b07c9e9647a9a10f0372",
       "heading_id": "THPT-G12-B18-W05",
-      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "DELTA06_D6_CONDITIONAL_PROBABILITY_WORDING_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "prior_candidate_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
+      "prior_candidate_blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5699,9 +5699,9 @@
     "skill_ids": [
       "G12-CHVI-B18-O05"
     ],
-    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W05.DELTA02.DELTA04",
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B18-W05.DELTA02.DELTA06",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Selection model not explicit: specify uniform random selection of one respondent. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA06: exact canonical D6 wording/notation corrected; stem/key/solution/rubric unchanged, independent mathematics checked; final applicable Q18/PED and projection generation pending."
   },
   {
     "item_id": "THPT-G12-B18-W06",
@@ -5824,12 +5824,12 @@
   {
     "item_id": "THPT-G12-B19-W04",
     "source": {
-      "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
+      "blob": "3e827236f0aade2567c5b07c9e9647a9a10f0372",
       "heading_id": "THPT-G12-B19-W04",
-      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "DELTA06_D6_CONDITIONAL_PROBABILITY_WORDING_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "prior_candidate_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
+      "prior_candidate_blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5843,19 +5843,19 @@
     "skill_ids": [
       "G12-CHVI-B19-O04"
     ],
-    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W04.DELTA02.DELTA04",
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W04.DELTA02.DELTA06",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Posterior happens to equal given likelihood 0.7; retain calculation but distinguish directions and avoid treating inequality as universal. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA06: exact canonical D6 wording/notation corrected; stem/key/solution/rubric unchanged, independent mathematics checked; final applicable Q18/PED and projection generation pending."
   },
   {
     "item_id": "THPT-G12-B19-W05",
     "source": {
-      "blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9",
+      "blob": "3e827236f0aade2567c5b07c9e9647a9a10f0372",
       "heading_id": "THPT-G12-B19-W05",
-      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "DELTA06_D6_CONDITIONAL_PROBABILITY_WORDING_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
       "previous_reviewed_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
-      "prior_candidate_blob": "c2e57e310fbc5253a0657b1b04c840890eaa29a5"
+      "prior_candidate_blob": "416059c96e7dc1bd57b09e7a31094eb1441403f9"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
@@ -5869,9 +5869,9 @@
     "skill_ids": [
       "G12-CHVI-B19-O05"
     ],
-    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W05.DELTA02.DELTA04",
+    "content_version": "SGK-G12-CHVI-WRITTEN-CANDIDATE-20261127-THPT-G12-B19-W05.DELTA02.DELTA06",
     "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Define sensitivity and specificity in learner-facing prompt or link prior definitions; preserve hypothetical model. | Addressed on exact canonical path; answer math checked, targeted PED/Q18 and projection regeneration pending. Same numerical example EX-G12-B19-O05; use as practice, not independent evidence. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA06: exact canonical D6 wording/notation corrected; stem/key/solution/rubric unchanged, independent mathematics checked; final applicable Q18/PED and projection generation pending."
   },
   {
     "item_id": "THPT-G12-B19-W06",
