@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "f0adf92d071a741b4f329e99bb9152a349848f89",
+    "as_of_commit": "aeded262730b037d29f5d46081742ab2ce6a0dcb",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.1: shared 815/815 interactive IDs complete, Written 0/160; next shared Written G10 ChI–III, skip verified fields. Owner: work in groups of three chapters.",
+    "next": "08.1: shared interactive 815/815; Written 6/160 (G10 ChI–III); next G10 ChIV–VI. Keep 08.1 unchecked until all shared Written complete.",
     "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -4567,18 +4567,84 @@
                     ]
                   ],
                   "findings": "Read all remaining shared IDs in this shard; no prior baseline inheritance claimed. Normalized notation in 1 IDs; exact readback verified 3 intended fields only, option IDs, interaction, existing exact key/option display matches and mathematical meaning retained. Changed fields: THPT-TOP14-P23:stem, THPT-TOP14-P23:worked_solution, THPT-TOP14-P23:options. Data commit f0adf92d071a741b4f329e99bb9152a349848f89."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G10 ChI",
+                  "blob": "c516fd89ad7b0523f7f4b0358c9e72aa06a672e7",
+                  "source_path": "prototypes/thpt/content-drafts/THPT_G10_CHI_B01_B02_D1D6_AUTHORING_R01_SNAPSHOT.md",
+                  "source_blob": "983c1d16b08bfd16e17e405614d31f378ae65413",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "CP121",
+                  "records": [
+                    [
+                      "THPT-G10-CHI-W01",
+                      145,
+                      0
+                    ],
+                    [
+                      "THPT-G10-CHI-W02-ANCHOR",
+                      177,
+                      0
+                    ]
+                  ],
+                  "findings": "Exact canonical source blob matches prior scoped notation review; inherit already accepted fields without new audit. No edits."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G10 ChII",
+                  "blob": "c516fd89ad7b0523f7f4b0358c9e72aa06a672e7",
+                  "source_path": "prototypes/thpt/content-drafts/THPT_G10_CHII_B03_B04_D1D6_AUTHORING_R01_SNAPSHOT.md",
+                  "source_blob": "fe94e3394d04616d0c83799b4ac61bf33c35e31a",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "CP122",
+                  "records": [
+                    [
+                      "THPT-G10-CHII-W03",
+                      217,
+                      0
+                    ],
+                    [
+                      "THPT-G10-CHII-W04-ANCHOR",
+                      217,
+                      0
+                    ]
+                  ],
+                  "findings": "Exact canonical source blob matches prior scoped notation review; inherit already accepted fields without new audit. No edits."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G10 ChIII",
+                  "blob": "c516fd89ad7b0523f7f4b0358c9e72aa06a672e7",
+                  "source_path": "prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md",
+                  "source_blob": "3abd16576602b90404a077e818d25c032c5e1b21",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "XG5 08.1 direct scoped source review",
+                  "records": [
+                    [
+                      "THPT-G10-CHIII-W05",
+                      0,
+                      153
+                    ],
+                    [
+                      "THPT-G10-CHIII-W06-ANCHOR",
+                      0,
+                      153
+                    ]
+                  ],
+                  "findings": "Two active Written sections normalized at existing R01 source path; W05 preserves active prior rubric and wording apart from notation/geometric phrasing. W06 fractions, units, rubric decimal notation standardized; marks unchanged. Exact outside-section bytes and reference-only diff verified. Prior source blobs preserved; no projection edits."
                 }
               ],
               "completed_interactive": 815,
-              "completed_written": 0,
+              "completed_written": 6,
               "remaining_interactive": 0,
-              "remaining_written": 160,
+              "remaining_written": 154,
               "counts": {
-                "ids": 815,
-                "inherited": 3463,
-                "newly_checked": 1416
+                "ids": 821,
+                "inherited": 3480,
+                "newly_checked": 1424
               },
-              "next": "08.1 Written: 160 shared IDs remain, grouped by chapter; start G10 ChI–III. All 815 shared interactive IDs complete; do not recheck. Keep 08.1 unchecked until Written is complete."
+              "next": "08.1 shared Written G10 ChIV–VI; skip verified source sections. Interactive 815/815 complete. Written 6/160 complete."
             }
           },
           {
