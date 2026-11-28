@@ -2861,7 +2861,7 @@
   },
   {
     "item_id": "THPT-G12-CHI-B05-P06",
-    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B05-P06",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B05-P06-XG6-20261128",
     "stem": "Nếu diện tích A(x) đo bằng m² và x bằng m, đơn vị A'(x) là gì? Có được gọi A' là vận tốc không?",
     "answer_key": "Đơn vị m; không phải vận tốc vì x không phải thời gian.",
     "worked_solution": "Đạo hàm theo độ dài có đơn vị \\(\\mathrm{m}^2/\\mathrm m=\\mathrm m\\). Nó đo mức thay đổi diện tích khi độ dài thay đổi, không phải vận tốc vì biến độc lập không phải thời gian.",
@@ -2870,7 +2870,7 @@
       "G12-B05-UNIT_ASSUMPTION_CHECK"
     ],
     "problem_type_id": null,
-    "difficulty": "RECOGNIZE",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Đơn vị đạo hàm là đơn vị tử chia đơn vị biến."
     ],
