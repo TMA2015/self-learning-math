@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "df20d622f68898e004a3463dbf51c9f933198bcf",
+    "as_of_commit": "f20ca55024383308b7912b08f440867ec2f7e03a",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.1 complete 975/975 (815 interactive +160 Written); next 08.2 Topic-only 910 IDs (829 interactive +81 Written). 08 remains open until 08.2 and 08.3 complete. CONTENT_READY not restored.",
-    "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
+    "next": "08.2: 33/910 (33 interactive, 0 Written) complete; CD01 complete 15/15; CD02 local Practice/Replay 18/36; next CD02 FirstTry 16 + Written 2 then CD03–04. 08.1 immutable 975/975; no CONTENT_READY.",
+    "status": "CHECKLIST_08_XG5_BATCH_2_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -5659,11 +5659,240 @@
           {
             "id": "08.2",
             "scope": "Topic \\ SGK by placements, inclusive of Written",
-            "state": "PENDING",
+            "state": "IN_PROGRESS",
             "inventory": {
               "total": 910,
               "written": 81,
               "interactive": 829
+            },
+            "progress": {
+              "fields": [
+                "stem",
+                "options",
+                "answer_key",
+                "hints",
+                "worked_solution",
+                "check_again",
+                "remediation",
+                "rubric"
+              ],
+              "record_encoding": "[item_id, inherited_field_bitmask, directly_checked_field_bitmask], bits correspond to fields index; absent fields excluded. X-G.5 learner-visible fields only.",
+              "completed_shards": [
+                {
+                  "shard": "items/cd01.json",
+                  "blob": "9a0a0888ccecfa0116edfba5ef9d9cb5914d4ce4",
+                  "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+                  "baseline_blob": "5b437473d3a63fa6cc29c6e28c2a97b22333be0d",
+                  "evidence_cp": "CP87",
+                  "records": [
+                    [
+                      "THPT-TOP01-ADD01",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-TOP01-ADD02",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-TOP01-ADD03",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-TOP01-ADD04",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-TOP01-ADD05",
+                      84,
+                      11
+                    ],
+                    [
+                      "THPT-TOP01-ADD06",
+                      68,
+                      59
+                    ]
+                  ],
+                  "findings": "Inherited only identical five-field values from CP87; directly read remaining changed stems/hints/solution/check_again and new options as applicable. Expressions correctly enclosed, simple prose/values acceptable; no notation change needed."
+                },
+                {
+                  "shard": "items/cd02.json",
+                  "blob": "6fbb61d6f7e82c0d52ddd6ad33b194bc4e7dc0f3",
+                  "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+                  "baseline_blob": "57f00380c656270e2c26a78d6a5379fa8baf29f1",
+                  "evidence_cp": "CP87",
+                  "records": [
+                    [
+                      "THPT-TOP02-ADD01",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP02-ADD02",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP02-ADD03",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP02-ADD04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP02-ADD05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP02-ADD06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP02-ADD07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP02-ADD08",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP02-ADD09",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP02-ADD10",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP02-ADD11",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP02-ADD12",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP02-ADD13",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP02-ADD14",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP02-ADD15",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP02-ADD16",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP02-ADD17",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP02-ADD18",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Inherited only identical five-field values from CP87; directly read remaining changed stems/hints/solution/check_again and new options as applicable. Expressions correctly enclosed, simple prose/values acceptable; no notation change needed."
+                },
+                {
+                  "shard": "items/topic-knowledge-first-try.json",
+                  "blob": "5a0c5fdeca5e86cfe9c510c82981f10257e1d360",
+                  "baseline_commit": null,
+                  "baseline_blob": null,
+                  "evidence_cp": "CP-new-08.2-CD01-KFT",
+                  "records": [
+                    [
+                      "THPT-TOP01-KFT01",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP01-KFT02",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP01-KFT04",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP01-KFT05",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP01-KFT07",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP01-KFT08",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP01-KFT09",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP01-KFT10",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP01-KFT11",
+                      0,
+                      127
+                    ]
+                  ],
+                  "findings": "Read all present learner-visible fields of nine Topic-only CD01 FirstTry items, including answer_key; no earlier X-G.5 evidence assumed. No notation defect found."
+                }
+              ],
+              "completed_interactive": 33,
+              "completed_written": 0,
+              "remaining_interactive": 796,
+              "remaining_written": 81,
+              "counts": {
+                "CD01": {
+                  "interactive": 15,
+                  "written": 0,
+                  "state": "COMPLETE"
+                },
+                "CD02": {
+                  "interactive": 18,
+                  "written": 0,
+                  "state": "PARTIAL",
+                  "remaining_interactive": 16,
+                  "remaining_written": 2
+                }
+              },
+              "next": "CD02 KFT (16) and Written (2), then CD03–04; exclude all 975 shared IDs."
             }
           },
           {
