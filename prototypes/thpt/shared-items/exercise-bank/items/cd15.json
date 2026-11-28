@@ -163,9 +163,9 @@
   },
   {
     "item_id": "THPT-TOP15-P09",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P09",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P09.DELTA07B",
     "stem": "Trong tứ diện \\(S.ABC\\), M là trung điểm SC. Tìm giao điểm của đường AM với mặt \\((SBC)\\). Đường SB có cắt mặt \\((ABC)\\) không? Nêu lý do giao điểm là duy nhất.",
-    "answer_key": "AM cắt \\((SBC)\\) tại M; SB cắt \\((ABC)\\) tại B.",
+    "answer_key": "AM cắt \\((SBC)\\) tại M và SB cắt \\((ABC)\\) tại B; mỗi đường có một điểm thuộc mặt phẳng và một điểm nằm ngoài nên giao điểm là duy nhất.",
     "worked_solution": "\\(M\\in SC\\subset(SBC)\\), A không thuộc \\((SBC)\\) vì tứ diện không suy biến. Vì AM có điểm M thuộc mặt và A ngoài mặt nên giao duy nhất tại M. Tương tự \\(B\\in(ABC)\\), \\(S\\notin(ABC)\\), do đó SB cắt đáy duy nhất tại B.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -206,7 +206,7 @@
       },
       {
         "id": "C",
-        "text": "AM cắt \\((SBC)\\) tại M; SB cắt \\((ABC)\\) tại B."
+        "text": "AM cắt \\((SBC)\\) tại M và SB cắt \\((ABC)\\) tại B; mỗi đường có một điểm thuộc mặt phẳng và một điểm nằm ngoài nên giao điểm là duy nhất."
       },
       {
         "id": "D",
@@ -271,9 +271,9 @@
   },
   {
     "item_id": "THPT-TOP15-P02",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P02",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P02.DELTA07B",
     "stem": "Trong hình hộp \\(ABCD.A'B'C'D'\\), phân loại vị trí tương đối của ba cặp đường AB và \\(D'C'\\); AB và \\(CC'\\); AB và AD. Giải thích bằng quan hệ đồng phẳng hoặc điểm chung.",
-    "answer_key": "\\(AB\\parallel D'C'\\) (phân biệt); AB và \\(CC'\\) chéo nhau; AB và AD cắt tại A.",
+    "answer_key": "\\(AB\\parallel D'C'\\) (cùng phương và thuộc hai đáy phân biệt); AB và \\(CC'\\) chéo nhau vì không cắt và không cùng phương; AB và AD cắt tại A.",
     "worked_solution": "\\(AB\\parallel DC\\) và \\(DC\\parallel D'C'\\), hai đường AB, \\(D'C'\\) phân biệt vì thuộc hai mặt đáy song song, nên chúng song song. AB và \\(CC'\\) không cắt: \\(CC'\\) chỉ gặp mặt đáy tại C, mà C không thuộc AB. Chúng không song song vì \\(CC'\\) không cùng phương AB (nếu cùng phương, \\(CC'\\) phải nằm trong mặt đáy qua C). Do đó chúng chéo nhau. AB,AD cùng qua A và phân biệt trong mặt đáy nên cắt tại A.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -306,7 +306,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(AB\\parallel D'C'\\) (phân biệt); AB và \\(CC'\\) chéo nhau; AB và AD cắt tại A."
+        "text": "\\(AB\\parallel D'C'\\) (cùng phương và thuộc hai đáy phân biệt); AB và \\(CC'\\) chéo nhau vì không cắt và không cùng phương; AB và AD cắt tại A."
       },
       {
         "id": "B",
@@ -543,9 +543,9 @@
   },
   {
     "item_id": "THPT-TOP15-P14",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P14",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P14.DELTA07B",
     "stem": "Trong hình chóp \\(S.ABCD\\) có đáy là hình bình hành, M,N lần lượt là trung điểm SA,SD. Chứng minh \\(MN\\parallel(ABCD)\\). Nếu thay M,N bằng A,D, kết luận còn đúng không?",
-    "answer_key": "\\(MN\\parallel(ABCD)\\); thay bằng A,D thì AD nằm trong đáy, không song song mặt đáy.",
+    "answer_key": "\\(MN\\parallel(ABCD)\\) vì MN là đường trung bình tam giác SAD, song song AD và không nằm trong đáy. Thay M,N bằng A,D thì AD nằm trong đáy, không song song mặt đáy.",
     "worked_solution": "Trong tam giác SAD, MN là đường trung bình nên \\(MN\\parallel AD\\). \\(AD\\subset(ABCD)\\). M là điểm trong SA, mà SA chỉ cắt mặt đáy tại A, nên M không thuộc đáy, suy ra MN không nằm trong đáy. Theo dấu hiệu đường song song mặt phẳng, \\(MN\\parallel(ABCD)\\). Khi \\(M=A,\\ N=D\\), đường AD nằm trong đáy nên có vô số điểm chung, không thỏa định nghĩa song song mặt phẳng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -582,7 +582,7 @@
       },
       {
         "id": "B",
-        "text": "\\(MN\\parallel(ABCD)\\); thay bằng A,D thì AD nằm trong đáy, không song song mặt đáy."
+        "text": "\\(MN\\parallel(ABCD)\\) vì MN là đường trung bình tam giác SAD, song song AD và không nằm trong đáy. Thay M,N bằng A,D thì AD nằm trong đáy, không song song mặt đáy."
       },
       {
         "id": "C",
@@ -597,9 +597,9 @@
   },
   {
     "item_id": "THPT-TOP15-P15",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P15",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P15.DELTA07B",
     "stem": "Trong tứ diện \\(S.ABC\\), M,N lần lượt nằm trong các cạnh SA,SB và \\(MN\\parallel(ABC)\\). Biết \\((SAB)\\cap(ABC)=g=AB\\). Chứng minh \\(MN\\parallel g\\) bằng quan hệ giữa đường thẳng và mặt phẳng.",
-    "answer_key": "\\(g=AB\\) và \\(MN\\parallel g\\).",
+    "answer_key": "\\(g=AB\\) và \\(MN\\parallel g\\), vì MN và g cùng thuộc \\((SAB)\\), không thể có điểm chung do \\(MN\\parallel(ABC)\\).",
     "worked_solution": "Vì M,N nằm trong các cạnh SA,SB nên \\(MN\\subset(SAB)\\). Hai mặt \\((SAB),(ABC)\\) cắt nhau theo \\(g=AB\\). Nếu MN cắt g thì điểm chung thuộc \\((ABC)\\), trái giả thiết \\(MN\\parallel(ABC)\\). Do MN và g đồng phẳng trong \\((SAB)\\), không có điểm chung, chúng song song.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -640,7 +640,7 @@
       },
       {
         "id": "C",
-        "text": "\\(g=AB\\) và \\(MN\\parallel g\\)."
+        "text": "\\(g=AB\\) và \\(MN\\parallel g\\), vì MN và g cùng thuộc \\((SAB)\\), không thể có điểm chung do \\(MN\\parallel(ABC)\\)."
       },
       {
         "id": "D",
@@ -922,9 +922,9 @@
   },
   {
     "item_id": "THPT-TOP15-P19",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P19",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P19.DELTA07B",
     "stem": "Trong hình hộp \\(ABCD.A'B'C'D'\\), mặt phẳng \\((ACC'A')\\) cắt hai mặt đáy theo những đường nào? Chứng minh hai giao tuyến song song mà không dựa vào hình vẽ.",
-    "answer_key": "Giao tuyến AC và \\(A'C'\\); \\(AC\\parallel A'C'\\).",
+    "answer_key": "Giao tuyến AC và \\(A'C'\\), song song vì hai mặt đáy song song phân biệt cùng bị \\((ACC'A')\\) cắt.",
     "worked_solution": "Mặt \\((ACC'A')\\) và đáy dưới có hai điểm chung phân biệt A,C nên giao theo AC. Với đáy trên, hai điểm chung \\(A',C'\\) xác định giao tuyến \\(A'C'\\). Vì hai đáy song song phân biệt và cùng bị một mặt phẳng thứ ba cắt, hai giao tuyến AC, \\(A'C'\\) song song. Cũng có thể chứng minh chúng đồng phẳng trong \\((ACC'A')\\) và không có điểm chung.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -957,7 +957,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Giao tuyến AC và \\(A'C'\\); \\(AC\\parallel A'C'\\)."
+        "text": "Giao tuyến AC và \\(A'C'\\), song song vì hai mặt đáy song song phân biệt cùng bị \\((ACC'A')\\) cắt."
       },
       {
         "id": "B",
@@ -1084,9 +1084,9 @@
   },
   {
     "item_id": "THPT-TOP15-P21",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P21",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-TOP15-P21.DELTA07B",
     "stem": "Trong lăng trụ \\(ABC.A'B'C'\\), P,Q phân biệt nằm trên đường thẳng \\(BB'\\). Chiếu theo phương \\(AA'\\) xuống \\((ABC)\\). Ảnh đường \\(BB'\\) và ảnh đoạn PQ là gì? Vì sao?",
-    "answer_key": "Cả đường \\(BB'\\) và đoạn PQ có ảnh là một điểm B.",
+    "answer_key": "Cả đường \\(BB'\\) và đoạn PQ có ảnh là một điểm B vì \\(BB'\\parallel AA'\\) và đường chiếu qua mỗi điểm trên \\(BB'\\) trùng với \\(BB'\\).",
     "worked_solution": "\\(BB'\\parallel AA'\\). Qua mọi điểm X thuộc \\(BB'\\), đường thẳng theo phương chiếu \\(AA'\\) chính là \\(BB'\\). Đường này gặp mặt đáy duy nhất tại B. Vì vậy tất cả các điểm của \\(BB'\\), kể cả mọi điểm thuộc PQ, có cùng ảnh B.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1131,7 +1131,7 @@
       },
       {
         "id": "D",
-        "text": "Cả đường \\(BB'\\) và đoạn PQ có ảnh là một điểm B."
+        "text": "Cả đường \\(BB'\\) và đoạn PQ có ảnh là một điểm B vì \\(BB'\\parallel AA'\\) và đường chiếu qua mỗi điểm trên \\(BB'\\) trùng với \\(BB'\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
