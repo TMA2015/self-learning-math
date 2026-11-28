@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "346f1127fbe395ab34ab3019849dc3d5cbb45133",
+    "as_of_commit": "7ff11b8af1704caa1865daaf0ca5221e37cb7deb",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.1: shared interactive 815/815; Written 12/160; next G11 ChI–III; three legacy public HTML Written G10 ChVI–VII pending authorized notation handling.",
+    "next": "08.1: shared interactive 815/815; Written 15/160; next G11 ChI–III. Owner clarified: fix errors directly in canonical bank, do not defer authoring fixes to RELEASE; preserve historical blobs and projections, no parallel active source.",
     "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -4686,39 +4686,69 @@
                     ]
                   ],
                   "findings": "Three shared Written source sections already use consistent inline TeX; retain exact historical source and rubrics /6. Read stem/solution/rubric and misconception where present; no edits. W21-ANCHOR has explicit vector versus length defect, deferred to authorized canonical notation path; not counted. ChVIII–IX have zero shared Written per partition."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G10 ChVI",
+                  "blob": "fd69acd5768d72e11b2a24c23f35c55d84854736",
+                  "source_path": "prototypes/thpt/shared-items/exercise-bank/written/HPT-G10-CHVI-WRI-18-01.md",
+                  "source_blob": "dd61ebcaafc0310ebde5239dd29d7f7b01f4081f",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "Owner correction — XG5 08.1 direct canonical bank normalization",
+                  "records": [
+                    [
+                      "HPT-G10-CHVI-WRI-18-01",
+                      0,
+                      153
+                    ]
+                  ],
+                  "findings": "Resolved deferred historical HTML issue directly in bank, one active canonical source per ID; preserve previous source blob and historical projection, same stem meaning, answers, rubric criteria/points, role, skill IDs and auto_grade=false. Scope verified by exact source readback and reference-only diff."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G10 ChVI",
+                  "blob": "fd69acd5768d72e11b2a24c23f35c55d84854736",
+                  "source_path": "prototypes/thpt/shared-items/exercise-bank/written/HPT-G10-CHVI-WRI-18-02.md",
+                  "source_blob": "147199f125d51e16aa96d404ac9eb068ca59d93d",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "Owner correction — XG5 08.1 direct canonical bank normalization",
+                  "records": [
+                    [
+                      "HPT-G10-CHVI-WRI-18-02",
+                      0,
+                      153
+                    ]
+                  ],
+                  "findings": "Resolved deferred historical HTML issue directly in bank, one active canonical source per ID; preserve previous source blob and historical projection, same stem meaning, answers, rubric criteria/points, role, skill IDs and auto_grade=false. Scope verified by exact source readback and reference-only diff."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G10 ChVII",
+                  "blob": "fd69acd5768d72e11b2a24c23f35c55d84854736",
+                  "source_path": "prototypes/thpt/shared-items/exercise-bank/written/THPT-G10-CHVII-W21-ANCHOR-01.md",
+                  "source_blob": "eaab0eabd88f3bc27b4a5f08873154b776fc93c9",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "Owner correction — XG5 08.1 direct canonical bank normalization",
+                  "records": [
+                    [
+                      "THPT-G10-CHVII-W21-ANCHOR-01",
+                      0,
+                      145
+                    ]
+                  ],
+                  "findings": "Resolved deferred historical HTML issue directly in bank, one active canonical source per ID; preserve previous source blob and historical projection, same stem meaning, answers, rubric criteria/points, role, skill IDs and auto_grade=false. Scope verified by exact source readback and reference-only diff."
                 }
               ],
               "completed_interactive": 815,
-              "completed_written": 12,
+              "completed_written": 15,
               "remaining_interactive": 0,
-              "remaining_written": 148,
+              "remaining_written": 145,
               "counts": {
-                "ids": 827,
+                "ids": 830,
                 "inherited": 3480,
-                "newly_checked": 1444
+                "newly_checked": 1455
               },
-              "next": "08.1 shared Written G11 ChI–III; skip verified sections. G10 ChVI two and ChVII one deferred locked HTML sources remain; resolve before ticking 08.1. Interactive 815/815; Written 12/160.",
-              "deferred_written": [
-                {
-                  "chapter": "G10 ChVI",
-                  "ids": [
-                    "HPT-G10-CHVI-WRI-18-01",
-                    "HPT-G10-CHVI-WRI-18-02"
-                  ],
-                  "source_blob": "4da918f36d30c9b7110099e81fc88943e5b7705b",
-                  "source_path": "docs/thpt-preview/thu-vien/tu-luan.md",
-                  "evidence": "CP123–125 historical public HTML, math/rubric reviewed; direct scoped reading confirms raw structured radical/power/equivalence notation still present. Source locked, typography adaptation explicitly pending RELEASE. Not counted as X-G.5 complete. Preserve IDs /5 and /6 and HTML/runtime. Need authorized canonical notation path or scoped RELEASE disposition before 08.1 can close."
-                },
-                {
-                  "chapter": "G10 ChVII",
-                  "ids": [
-                    "THPT-G10-CHVII-W21-ANCHOR-01"
-                  ],
-                  "source_blob": "ebc70018a168998c7dd43b34c3e195a2b1e15ed7",
-                  "source_path": "docs/thpt-preview/thu-vien/tu-luan-chuong-vii.md",
-                  "evidence": "Referenced historical HTML source contains IA=(-3;-4) as normal vector, while preceding R=IA=5 denotes length. Exact current branch projection is ccad1c7885094ebccf29236d6a89aa7c86c1f5ea, not the referenced source blob. No edit to locked projection. Preserve circle center/radius/tangent and /8 rubric. Required minimal delta: replace 'Bán kính <span class=\"arithmatex\">\\(IA=(-3;-4)\\)</span> là pháp tuyến tiếp tuyến' with 'Vectơ bán kính <span class=\"arithmatex\">\\(\\overrightarrow{IA}=(-3;-4)\\)</span> là vectơ pháp tuyến của tiếp tuyến'. Need authorized canonical source revision before counting X-G.5 complete."
-                }
-              ]
+              "next": "08.1 shared Written G11 ChI–III; skip verified sections. All three previously deferred G10 Written resolved in canonical bank sources. Interactive 815/815; Written 15/160."
             }
           },
           {
