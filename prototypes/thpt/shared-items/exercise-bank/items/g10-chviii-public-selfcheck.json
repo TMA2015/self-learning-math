@@ -207,10 +207,10 @@
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-04",
-    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-04",
-    "stem": "Xét tập ký tự \\(\\{0,1,2\\}\\). Hãy ghi Đúng/Sai cho từng phát biểu (mỗi phát biểu độc lập):\n\n(a) Số **mã** dài đúng 3 ký tự, được lặp và cho phép ký tự đầu là 0, bằng 27.\n(b) Số **tự nhiên có đúng 3 chữ số** tạo từ tập trên, được lặp, bằng 27.\n(c) Số **mã** dài đúng 3 ký tự, các ký tự không lặp, bằng 6.\n(d) Số **tự nhiên có đúng 3 chữ số**, không lặp chữ số, bằng 6. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "(a) Đúng; (b) Sai; (c) Đúng; (d) Sai",
-    "worked_solution": "(a) \\(3^3=27\\); (b) chữ số đầu chỉ có 2 cách (1 hoặc 2), hai vị trí sau 3 cách mỗi vị trí nên \\(2\\cdot3\\cdot3=18\\); (c) \\(3!=6\\); (d) chữ số đầu 2 cách, chữ số thứ hai 2 cách, cuối 1 cách nên \\(2\\cdot2\\cdot1=4\\).",
+    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-04.DELTA08",
+    "stem": "Xét tập ký tự \\(\\{0,1,2\\}\\). Chọn tất cả phát biểu đúng; xét từng phát biểu độc lập.",
+    "answer_key": "A: Số **mã** dài đúng 3 ký tự, được lặp và cho phép ký tự đầu là 0, bằng 27. | C: Số **mã** dài đúng 3 ký tự, các ký tự không lặp, bằng 6.",
+    "worked_solution": "A. \\(3^3=27\\); B. chữ số đầu chỉ có 2 cách (1 hoặc 2), hai vị trí sau 3 cách mỗi vị trí nên \\(2\\cdot3\\cdot3=18\\); C. \\(3!=6\\); D. chữ số đầu 2 cách, chữ số thứ hai 2 cách, cuối 1 cách nên \\(2\\cdot2\\cdot1=4\\).",
     "skill_ids": [
       "COUNT_REPETITION",
       "COUNT_CASES_NO_REPEAT"
@@ -223,9 +223,10 @@
     ],
     "rubric": "Mỗi ý đúng/sai đúng 1 điểm; không phản hồi trong quá trình làm trước Final Submit.",
     "interaction": {
-      "type": "SINGLE_CHOICE",
+      "type": "MULTIPLE_CHOICE",
       "correct_option_ids": [
-        "D"
+        "A",
+        "C"
       ],
       "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
@@ -256,22 +257,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Đ, Đ, Đ, Đ"
+        "text": "Số **mã** dài đúng 3 ký tự, được lặp và cho phép ký tự đầu là 0, bằng 27."
       },
       {
         "id": "B",
-        "text": "S, Đ, S, Đ"
+        "text": "Số **tự nhiên có đúng 3 chữ số** tạo từ tập trên, được lặp, bằng 27."
       },
       {
         "id": "C",
-        "text": "Đ, S, S, Đ"
+        "text": "Số **mã** dài đúng 3 ký tự, các ký tự không lặp, bằng 6."
       },
       {
         "id": "D",
-        "text": "Đ, S, Đ, S"
+        "text": "Số **tự nhiên có đúng 3 chữ số**, không lặp chữ số, bằng 6."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "DELTA08 Q05/X-G.6: original independent true/false propositions retained verbatim as separate selectable statements; exact correct set reflects original truth values, eliminating combined-pattern elimination shortcut. Candidate MULTIPLE_CHOICE (not live scoring or protected RD1), same original item, skill, difficulty, source, rubric and placement. Whole-submit reveal and no hints before submit in RELEASE."
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-05",
@@ -546,10 +548,10 @@
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-09",
-    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-09",
-    "stem": "Với các đối tượng phân biệt, ghi Đúng/Sai cho từng phát biểu:\n\n(a) \\(A_6^2=6\\binom51\\).\n(b) Chọn 2 người từ 6 người để lập một nhóm không phân vai thì có \\(A_6^2\\) nhóm.\n(c) Chọn 3 người trong 7 người rồi chỉ định đúng một trưởng nhóm có \\(3\\binom73\\) phương án.\n(d) Hoán vị 5 vật phân biệt có \\(\\binom54\\) phương án. Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "(a) Đúng; (b) Sai; (c) Đúng; (d) Sai",
-    "worked_solution": "(a) \\(A_6^2=6\\cdot5=30=6\\binom51\\); (b) nhóm 2 người không xét thứ tự có \\(\\binom62=15\\), không phải 30; (c) \\(\\binom73\\cdot3=35\\cdot3=105\\); (d) xếp toàn bộ 5 vật là \\(5!=120\\), còn \\(\\binom54=5\\).",
+    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-09.DELTA08",
+    "stem": "Với các đối tượng phân biệt, chọn tất cả phát biểu đúng; xét từng phát biểu độc lập.",
+    "answer_key": "A: \\(A_6^2=6\\binom51\\). | C: Chọn 3 người trong 7 người rồi chỉ định đúng một trưởng nhóm có \\(3\\binom73\\) phương án.",
+    "worked_solution": "A. \\(A_6^2=6\\cdot5=30=6\\binom51\\); B. nhóm 2 người không xét thứ tự có \\(\\binom62=15\\), không phải 30; C. \\(\\binom73\\cdot3=35\\cdot3=105\\); D. xếp toàn bộ 5 vật là \\(5!=120\\), còn \\(\\binom54=5\\).",
     "skill_ids": [
       "PERMUTATION",
       "ARRANGEMENT",
@@ -563,9 +565,10 @@
     ],
     "rubric": "Mỗi ý 1 điểm, xét riêng; kết quả chỉ được tiết lộ sau Final Submit.",
     "interaction": {
-      "type": "SINGLE_CHOICE",
+      "type": "MULTIPLE_CHOICE",
       "correct_option_ids": [
-        "A"
+        "A",
+        "C"
       ],
       "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
@@ -596,22 +599,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Đ, S, Đ, S"
+        "text": "\\(A_6^2=6\\binom51\\)."
       },
       {
         "id": "B",
-        "text": "Đ, Đ, S, S"
+        "text": "Chọn 2 người từ 6 người để lập một nhóm không phân vai thì có \\(A_6^2\\) nhóm."
       },
       {
         "id": "C",
-        "text": "S, Đ, Đ, S"
+        "text": "Chọn 3 người trong 7 người rồi chỉ định đúng một trưởng nhóm có \\(3\\binom73\\) phương án."
       },
       {
         "id": "D",
-        "text": "Đ, S, S, Đ"
+        "text": "Hoán vị 5 vật phân biệt có \\(\\binom54\\) phương án."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "DELTA08 Q05/X-G.6: original independent true/false propositions retained verbatim as separate selectable statements; exact correct set reflects original truth values, eliminating combined-pattern elimination shortcut. Candidate MULTIPLE_CHOICE (not live scoring or protected RD1), same original item, skill, difficulty, source, rubric and placement. Whole-submit reveal and no hints before submit in RELEASE."
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-10",
@@ -820,9 +824,9 @@
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-13",
-    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-13",
-    "stem": "Đặt \\(Q(x)=(1-3x)^5\\). Ghi Đúng/Sai cho từng khẳng định:\n\n(a) Số hạng không chứa \\(x\\) của \\(Q\\) bằng \\(1\\).\n(b) Hệ số của \\(x^2\\) bằng \\(90\\).\n(c) Hệ số của \\(x^3\\) bằng \\(270\\).\n(d) Hệ số của \\(x^4\\) bằng \\(-405\\). Chọn phương án đúng; tự giải thích trước khi nộp toàn bài.",
-    "answer_key": "(a) Đúng; (b) Đúng; (c) Sai; (d) Sai",
+    "content_version": "SGK-G10-CHVIII-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-CHVIII-RD1-13.DELTA08",
+    "stem": "Đặt \\(Q(x)=(1-3x)^5\\). Chọn tất cả khẳng định đúng; xét từng khẳng định độc lập.",
+    "answer_key": "A: Số hạng không chứa \\(x\\) của \\(Q\\) bằng \\(1\\). | B: Hệ số của \\(x^2\\) bằng \\(90\\).",
     "worked_solution": "Số hạng tổng quát là \\(\\binom5k(-3)^k x^k\\). Với \\(k=0\\) được 1; \\(k=2\\) được \\(10\\cdot9=90\\); \\(k=3\\) được \\(10\\cdot(-27)=-270\\), không phải 270; \\(k=4\\) được \\(5\\cdot81=405\\), không phải -405.",
     "skill_ids": [
       "BINOMIAL_NEGATIVE_COEFF",
@@ -836,9 +840,10 @@
     ],
     "rubric": "Bốn ý, mỗi ý 1 điểm; không tính câu này như một phép chứng minh thành thạo khi chưa có cơ chế chấm thực.",
     "interaction": {
-      "type": "SINGLE_CHOICE",
+      "type": "MULTIPLE_CHOICE",
       "correct_option_ids": [
-        "A"
+        "A",
+        "B"
       ],
       "scoring_rule": "EXACT_OPTION_SET",
       "auto_grade": false,
@@ -869,22 +874,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Đ, Đ, S, S"
+        "text": "Số hạng không chứa \\(x\\) của \\(Q\\) bằng \\(1\\)."
       },
       {
         "id": "B",
-        "text": "Đ, Đ, Đ, S"
+        "text": "Hệ số của \\(x^2\\) bằng \\(90\\)."
       },
       {
         "id": "C",
-        "text": "S, Đ, S, Đ"
+        "text": "Hệ số của \\(x^3\\) bằng \\(270\\)."
       },
       {
         "id": "D",
-        "text": "Đ, S, Đ, Đ"
+        "text": "Hệ số của \\(x^4\\) bằng \\(-405\\)."
       }
     ],
-    "exercise_type": "INTERACTIVE"
+    "exercise_type": "INTERACTIVE",
+    "author_review_note": "DELTA08 Q05/X-G.6: original independent true/false propositions retained verbatim as separate selectable statements; exact correct set reflects original truth values, eliminating combined-pattern elimination shortcut. Candidate MULTIPLE_CHOICE (not live scoring or protected RD1), same original item, skill, difficulty, source, rubric and placement. Whole-submit reveal and no hints before submit in RELEASE."
   },
   {
     "item_id": "THPT-G10-CHVIII-RD1-14",
