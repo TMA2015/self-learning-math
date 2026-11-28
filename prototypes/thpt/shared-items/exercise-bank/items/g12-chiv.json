@@ -3631,10 +3631,10 @@
   },
   {
     "item_id": "THPT-G12-B11-T02",
-    "content_version": "SGK-G12-CHIV-BANK-CANDIDATE-20261127-THPT-G12-B11-T02",
+    "content_version": "SGK-G12-CHIV-BANK-CANDIDATE-20261127-THPT-G12-B11-T02.DELTA07C",
     "stem": "Kiểm tra \\((\\ln x)'=1/x\\) trên \\(x>0\\). Có thể dùng \\(\\ln x\\) trên \\(x<0\\) không? Nếu không, tìm nguyên hàm tương ứng. Chọn phương án đúng sau khi tự giải.",
-    "answer_key": "Có; khi \\(x<0\\), dùng \\(\\ln|x|=\\ln(-x)\\).",
-    "worked_solution": "Khi \\(x>0\\), \\((\\ln x)'=1/x\\). Khi \\(x<0\\), \\(\\ln x\\) không xác định trong tập số thực. Ta có \\(\\ln|x|=\\ln(-x)\\) và đạo hàm bằng \\(\\frac{-1}{-x}=\\frac1x\\). Xét nguyên hàm trên từng khoảng không chứa 0.",
+    "answer_key": "Không. Với \\(x<0\\), \\(\\ln x\\) không xác định trong \\(\\mathbb R\\); họ nguyên hàm là \\(\\ln(-x)+C,\\ C\\in\\mathbb R\\), vì \\((\\ln(-x))'=1/x\\).",
+    "worked_solution": "Khi \\(x>0\\), \\((\\ln x)'=1/x\\). Khi \\(x<0\\), \\(\\ln x\\) không xác định trong tập số thực. Ta có \\(\\ln|x|=\\ln(-x)\\) và đạo hàm bằng \\(\\frac{-1}{-x}=\\frac1x\\). Xét nguyên hàm trên từng khoảng không chứa 0. Trên \\((-\\infty;0)\\), họ nguyên hàm của \\(1/x\\) là \\(\\ln(-x)+C\\), \\(C\\in\\mathbb R\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B11-O04"
@@ -3681,15 +3681,15 @@
       },
       {
         "id": "B",
-        "text": "Không; đạo hàm của \\(\\ln x\\) là x."
+        "text": "Không; họ nguyên hàm trên \\(x<0\\) là \\(-\\ln(-x)+C\\)."
       },
       {
         "id": "C",
-        "text": "Có; khi \\(x<0\\), dùng \\(\\ln|x|=\\ln(-x)\\)."
+        "text": "Không. Với \\(x<0\\), \\(\\ln x\\) không xác định trong \\(\\mathbb R\\); họ nguyên hàm là \\(\\ln(-x)+C,\\ C\\in\\mathbb R\\), vì \\((\\ln(-x))'=1/x\\)."
       },
       {
         "id": "D",
-        "text": "Có; trên \\(x<0\\) dùng \\(-\\ln(-x)\\)."
+        "text": "Không; họ nguyên hàm trên \\(x<0\\) là \\(x\\ln(-x)+C\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
