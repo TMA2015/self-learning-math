@@ -14676,10 +14676,10 @@
   },
   {
     "item_id": "THPT-TOP06-KFT07",
-    "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT07",
+    "content_version": "CD06-BANK-Q08-XG5-20261128-TOP06-KFT07",
     "stem": "Không dùng máy tính, viết \\(\\sin^2 x-\\cos^2 x\\) thành một hàm của \\(2x\\). Sau đó dùng công thức tích thành tổng để viết \\(\\sin(3x)\\cos(2x)\\) thành tổng.",
     "answer_key": "\\(-\\cos(2x)\\); \\(\\frac12[\\sin(5x)+\\sin x]\\).",
-    "worked_solution": "Từ \\(\\cos(2x)=\\cos^2 x-\\sin^2 x\\), đổi thứ tự hai số hạng cho \\(\\sin^2 x-\\cos^2 x=-\\cos(2x)\\). Kiểm tại \\(x=0\\): hai vế cùng bằng \\(-1\\).\n\nÁp dụng tích thành tổng với \\(a=3x,\\ b=2x\\), được \\(\\sin(3x)\\cos(2x)=\\frac12[\\sin(5x)+\\sin x]\\). Có thể nhân ngược công thức cộng của sin để tự kiểm. Nếu quên hệ số \\(\\frac12\\), hãy thử \\(x=\\frac{\\pi}{2}\\) để thấy vế trái bằng 1 nhưng tổng chưa chia bằng 2. Hãy làm lại Bài 17, Bài 18 và Bài 26 trong phần Luyện tập.",
+    "worked_solution": "Từ \\(\\cos(2x)=\\cos^2 x-\\sin^2 x\\), đổi thứ tự hai số hạng cho \\(\\sin^2 x-\\cos^2 x=-\\cos(2x)\\). Kiểm tại \\(x=0\\): hai vế cùng bằng \\(-1\\).\n\nÁp dụng tích thành tổng với \\(a=3x,\\ b=2x\\), được \\(\\sin(3x)\\cos(2x)=\\frac12[\\sin(5x)+\\sin x]\\). Có thể nhân ngược công thức cộng của sin để tự kiểm. Nếu quên hệ số \\(\\frac12\\), hãy thử \\(x=\\frac{\\pi}{2}\\) để thấy vế trái bằng 1 nhưng tổng chưa chia bằng 2. Đọc lại Kiến thức 2.4 (Góc nhân đôi và đổi dạng), rồi tự làm Bài 16 và Bài 20 trong Luyện tập: một bài về góc nhân đôi và một bài về tích thành tổng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B02-DOUBLE_ANGLE",
@@ -14719,19 +14719,19 @@
       },
       {
         "id": "B",
-        "text": "\\(\\cos2x;\\sin5x+\\sin x\\)"
+        "text": "\\(\\cos(2x);\\ \\sin(5x)+\\sin x\\)"
       },
       {
         "id": "C",
-        "text": "\\(-\\cos2x;\\sin5x+\\sin x\\)"
+        "text": "\\(-\\cos(2x);\\ \\sin(5x)+\\sin x\\)"
       },
       {
         "id": "D",
-        "text": "\\(-\\cos2x;(\\sin5x-\\sin x)/2\\)"
+        "text": "\\(-\\cos(2x);\\ \\frac{\\sin(5x)-\\sin x}{2}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": ""
+    "remediation": "Nếu sai dấu, thử x = 0 trong công thức côsin góc nhân đôi. Nếu thiếu hệ số \\(\\frac12\\), thử \\(x=\\frac\\pi2\\) trong công thức tích thành tổng. Đọc lại Kiến thức 2.4, rồi tự làm Bài 16 và Bài 20 trong Luyện tập trước khi mở lời giải."
   },
   {
     "item_id": "THPT-TOP06-KFT08",
