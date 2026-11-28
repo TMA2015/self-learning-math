@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "59c474b46640a344020aeacf01721ab6f620f116",
+    "as_of_commit": "2e0b0136bffdb390f78e021daa473486b015b147",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.1: shared 34/815 interactive IDs (G10 ChI–II shared subset) notation evidence recorded; next shared IDs in items/g10-chiii.json then proceed by shard. Written 0/160 in this execution batch; use existing canonical evidence. Do not re-read closed fields.",
+    "next": "08.1: shared 50/815 interactive IDs (G10 ChI–III shared subset), Written 0/160; next shared IDs in items/g10-chiv.json. Do not re-read closed fields.",
     "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -412,18 +412,108 @@
                     ]
                   ],
                   "findings": "All pending field values read for shared IDs only; structured expressions already enclosed in inline TeX, set/interval notation and relation symbols valid; isolated letters/values or prose slash (đúng/sai, kg) permitted. No new notation fix required. No repeat math/PED audit."
+                },
+                {
+                  "shard": "items/g10-chiii.json",
+                  "blob": "2ddcc063424b6dfd83f5ba8bb6c11f7f312b5926",
+                  "baseline_commit": "f48296c32993d9eeaa7bc77ec91c9e781aad4339",
+                  "baseline_blob": "ef1930097bca13b7ef8045fd09513c87c672d65d",
+                  "evidence_cp": "CP93",
+                  "records": [
+                    [
+                      "THPT-G10-B05-C01",
+                      88,
+                      7
+                    ],
+                    [
+                      "THPT-G10-B05-C02",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B05-P01",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B05-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B05-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B05-P04",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B05-P05",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B05-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B06-C01",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B06-C02",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B06-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B06-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B06-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B06-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B06-P05",
+                      77,
+                      18
+                    ],
+                    [
+                      "THPT-G10-B06-P06",
+                      0,
+                      95
+                    ]
+                  ],
+                  "findings": "All changed/new learner-visible fields of shared B05/B06 read directly; normalized three raw approximate option expressions in B06-P05 and sin A hint in B06-P06. Exact readback: only options and hints of these two IDs changed, values/letters/keys/solution/interaction/rubric preserved. Data commit 2e0b0136bffdb390f78e021daa473486b015b147. No math/PED re-audit."
                 }
               ],
-              "completed_interactive": 34,
+              "completed_interactive": 50,
               "completed_written": 0,
-              "remaining_interactive": 781,
+              "remaining_interactive": 765,
               "remaining_written": 160,
               "counts": {
-                "ids": 34,
-                "inherited": 117,
-                "newly_checked": 86
+                "ids": 50,
+                "inherited": 183,
+                "newly_checked": 116
               },
-              "next": "Shared IDs in items/g10-chiii.json; use CP93 exact snapshot and later field evidence, compare only unverified/changed fields. Other fields and math/PED not reopened."
+              "next": "Shared IDs in items/g10-chiv.json; compare CP94 exact snapshot and later field evidence, directly review only changed/unverified fields."
             }
           },
           {
