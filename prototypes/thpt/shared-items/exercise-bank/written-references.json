@@ -6142,8 +6142,8 @@
       "G11-B09-GROUPED-MODE"
     ],
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G11-CHIII-W09-02-ANCHOR.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
-    "review_note": "Scoped correction applied in current canonical source; prior snapshot preserved. Targeted Delta C academic/PED verification remains before handoff. | DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
+    "review_note": "DELTA07: Q18_AUTHOR_SELF_VERIFIED for affected Written content only, based on historical S1/outcome/academic/PED evidence and exact source delta; n=20, cumulative 5/15/18/20; quartiles 110 and 120 at common boundaries; mode 110+50/12=685/6; interpretation distinguishes quartile locations, modal concentration and approximation; /4 aligned. Stem, source, skill, ID and placements preserved; public unscored, projection/reveal QA remains RELEASE. No global CONTENT_READY. Historical #687 original source ef7dbfbd55c34abab8a384d4dac3284c100dbaac; old source item matches original reviewed item; SGK B09 outcome and current CĐ22 reuse placement verified."
   },
   {
     "item_id": "THPT-G12-B09-W01",
@@ -7069,9 +7069,9 @@
       "G12-SGK-YE-O01"
     ],
     "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W01.DELTA01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Clarified local extrema value vs point and graph sketch; f(-1)=10, f(3)=-22, f(0)=5. No change to answer. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA07: Q18_AUTHOR_SELF_VERIFIED for affected Written content only, based on historical S1/outcome/academic/PED evidence and exact source delta; Derivative 3(x+1)(x−3); sign +/−/+; extrema (−1;10),(3;−22), y-intercept (0;5); distinguishes local from absolute; graph sketch and /5 rubric aligned. Stem, source, skill, ID and placements preserved; public unscored, projection/reveal QA remains RELEASE. No global CONTENT_READY. Historical #735 receipt blob 3b5b7f70e3b68895fd976a265ae6f454f774e1cc (original 7274cb3a6c35627f0e23574709cf5cdc355ab46a); exact five-section diff."
   },
   {
     "item_id": "THPT-G12-YE-W02",
@@ -7178,9 +7178,9 @@
       "G12-SGK-YE-O03"
     ],
     "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W06.DELTA01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Fixed parabol–line wording; S=9/2; clarified upper-minus-lower. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA07: Q18_AUTHOR_SELF_VERIFIED for affected Written content only, based on historical S1/outcome/academic/PED evidence and exact source delta; Intersections 0,3; positive difference x(3−x); antiderivative and exact area 9/2; /5 aligns, top-minus-bottom justified. Stem, source, skill, ID and placements preserved; public unscored, projection/reveal QA remains RELEASE. No global CONTENT_READY. Historical #735 receipt blob 3b5b7f70e3b68895fd976a265ae6f454f774e1cc (original 7274cb3a6c35627f0e23574709cf5cdc355ab46a); exact five-section diff."
   },
   {
     "item_id": "THPT-G12-YE-W07",
@@ -7224,9 +7224,9 @@
       "G12-SGK-YE-O04"
     ],
     "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W08.DELTA01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Replaced determinant requirement by elementary perpendicular-height solution, V=4, d=12/sqrt(61); alternative methods accepted. Heron for sides sqrt(13), sqrt(20), 5 gives area sqrt(61). Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA07: Q18_AUTHOR_SELF_VERIFIED for affected Written content only, based on historical S1/outcome/academic/PED evidence and exact source delta; Plane 6x+4y+3z−12=0; distance 12/sqrt(61); base 3, height 4, volume 4; Heron cross-check area sqrt(61); /5 accepts equivalent methods. Stem, source, skill, ID and placements preserved; public unscored, projection/reveal QA remains RELEASE. No global CONTENT_READY. Historical #735 receipt blob 3b5b7f70e3b68895fd976a265ae6f454f774e1cc (original 7274cb3a6c35627f0e23574709cf5cdc355ab46a); exact five-section diff."
   },
   {
     "item_id": "THPT-G12-YE-W09",
@@ -7356,9 +7356,9 @@
       "G12-SGK-YE-O05"
     ],
     "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W14.DELTA01.DELTA04",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Grouped statistics 4.4, 22.6, 3.24, 1.8 verified; distinguish grouped from original data. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA07: Q18_AUTHOR_SELF_VERIFIED for affected Written content only, based on historical S1/outcome/academic/PED evidence and exact source delta; N=20, sums 88 and 452; mean 4.4, variance 3.24, sd 1.8; explicit grouped approximation and divisor N; /5 aligned. Stem, source, skill, ID and placements preserved; public unscored, projection/reveal QA remains RELEASE. No global CONTENT_READY. Historical #735 receipt blob 3b5b7f70e3b68895fd976a265ae6f454f774e1cc (original 7274cb3a6c35627f0e23574709cf5cdc355ab46a); exact five-section diff."
   },
   {
     "item_id": "THPT-G12-YE-W15",
@@ -7402,8 +7402,8 @@
       "G12-SGK-YE-O06"
     ],
     "content_version": "G12-YE-XG6-WRITTEN-REF-20261127-W16.DELTA01",
-    "status": "AUTHOR_WRITTEN_CANDIDATE_SCOPED_DELTA_PENDING",
+    "status": "AUTHOR_WRITTEN_CANDIDATE_SOURCE_REVIEWED",
     "author_review_note": "Explicit uniform draw assumption; conditional 2/3, marginal 4/7, not independent. Candidate source amended, targeted math checked; final scoped Q18/PED and projection regeneration pending. R00 historical PASS preserved, receipt 3b5b7f70e3b68895fd976a265ae6f454f774e1cc.",
-    "review_note": "DELTA04: scoped written source rechecked; final Q01–Q18 acceptance and projection custody not certified."
+    "review_note": "DELTA07: Q18_AUTHOR_SELF_VERIFIED for affected Written content only, based on historical S1/outcome/academic/PED evidence and exact source delta; Uniform sampling without replacement; conditional 2/3, marginal 4/7 by total probability, unequal so dependent; /5 accepts symmetry. Stem, source, skill, ID and placements preserved; public unscored, projection/reveal QA remains RELEASE. No global CONTENT_READY. Historical #735 receipt blob 3b5b7f70e3b68895fd976a265ae6f454f774e1cc (original 7274cb3a6c35627f0e23574709cf5cdc355ab46a); exact five-section diff."
   }
 ]
