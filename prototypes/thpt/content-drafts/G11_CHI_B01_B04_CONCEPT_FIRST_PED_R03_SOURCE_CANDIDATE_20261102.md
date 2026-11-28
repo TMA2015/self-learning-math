@@ -318,13 +318,13 @@ Hai Tự thử này không có canonical `item_id` mới, không thuộc 20 RD1 
 
 ### THPT-G11-CHI-W01 — Bài 1 · Written
 
-**Đề bài:** Một điểm M xuất phát tại \(A(20;0)\) trên đường tròn tâm O, bán kính 20 cm, quay ngược chiều kim đồng hồ một góc \(\frac{5\pi}{3}\) rad. (a) Tính độ dài cung đã đi. (b) Tìm tọa độ M và giải thích dấu tung độ. (c) Tính khoảng cách thẳng AM và so sánh với độ dài đường đi.
+**Đề bài:** Một điểm M xuất phát tại \(A(20;0)\) trên đường tròn tâm O, bán kính 20 cm, quay ngược chiều kim đồng hồ một góc \(\frac{5\pi}{3}\,\mathrm{rad}\). (a) Tính độ dài cung đã đi. (b) Tìm tọa độ M và giải thích dấu tung độ. (c) Tính khoảng cách thẳng AM và so sánh với độ dài đường đi.
 
 **Gợi ý:** Dùng \(s=R\theta\) với góc dương tính bằng radian, tọa độ \((R\cos\theta;R\sin\theta)\) và công thức khoảng cách.
 
-**Đáp án:** \(s=\frac{100\pi}{3}\) cm; \(M(10;-10\sqrt3)\) (cm); \(AM=20\) cm.
+**Đáp án:** \(s=\frac{100\pi}{3}\,\mathrm{cm}\); \(M(10;-10\sqrt3)\) (cm); \(AM=20\,\mathrm{cm}\).
 
-**Lời giải:** (a) Góc đã tính bằng radian, nên \(s=20\cdot\frac{5\pi}{3}=\frac{100\pi}{3}\) cm. (b) Tia cuối ở góc phần tư IV: \(\cos\frac{5\pi}{3}=\frac12\), \(\sin\frac{5\pi}{3}=-\frac{\sqrt3}{2}\). Vì vậy \(M(10;-10\sqrt3)\); tung độ âm vì điểm dưới trục Ox. (c) \(AM=\sqrt{(10-20)^2+(-10\sqrt3)^2}=20\) cm. Đường đi theo cung dài hơn đoạn thẳng AM.
+**Lời giải:** (a) Góc đã tính bằng radian, nên \(s=20\cdot\frac{5\pi}{3}=\frac{100\pi}{3}\,\mathrm{cm}\). (b) Tia cuối ở góc phần tư IV: \(\cos\frac{5\pi}{3}=\frac12\), \(\sin\frac{5\pi}{3}=-\frac{\sqrt3}{2}\). Vì vậy \(M(10;-10\sqrt3)\); tung độ âm vì điểm dưới trục Ox. (c) \(AM=\sqrt{(10-20)^2+(-10\sqrt3)^2}=20\,\mathrm{cm}\). Đường đi theo cung dài hơn đoạn thẳng AM.
 
 **Rubric tự đối chiếu:** 7 điểm: góc và đơn vị radian (1); công thức cung (1); độ dài cung (1); hoành độ (1); tung độ và dấu (1); khoảng cách AM (1); phân biệt cung và dây (1). Chấp nhận cách giải đúng khác; không trừ lặp lỗi kéo theo.
 
