@@ -14439,15 +14439,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(5\\pi/6;\\text{góc dương}\\)"
+        "text": "\\(\\frac{5\\pi}{6};\\text{góc dương}\\)"
       },
       {
         "id": "B",
-        "text": "\\(-5\\pi/3;\\text{góc âm}\\)"
+        "text": "\\(-\\frac{5\\pi}{3};\\text{góc âm}\\)"
       },
       {
         "id": "C",
-        "text": "\\(-5\\pi/6;\\text{ngược kim đồng hồ}\\)"
+        "text": "\\(-\\frac{5\\pi}{6};\\text{ngược kim đồng hồ}\\)"
       },
       {
         "id": "D",
@@ -14502,15 +14502,15 @@
       },
       {
         "id": "B",
-        "text": "\\(-4/5\\)"
+        "text": "\\(-\\frac{4}{5}\\)"
       },
       {
         "id": "C",
-        "text": "\\(3/5\\)"
+        "text": "\\(\\frac{3}{5}\\)"
       },
       {
         "id": "D",
-        "text": "\\(-3/5\\)"
+        "text": "\\(-\\frac{3}{5}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE",
@@ -14521,7 +14521,7 @@
     "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT03",
     "stem": "Một điểm trên đường tròn bán kính 3 đơn vị độ dài quay một chiều qua góc \\(\\frac{3\\pi}{2}\\) radian. Tính độ dài cung điểm đã đi.",
     "answer_key": "\\(\\frac{9\\pi}{2}\\) đơn vị độ dài.",
-    "worked_solution": "Độ dài cung \\(s=r|\\theta|\\) với góc tính bằng radian. Thay \\(r=3,\\ \\theta=\\frac{3\\pi}{2}\\), được \\(s=\\frac{9\\pi}{2}\\) đơn vị độ dài.",
+    "worked_solution": "Độ dài cung \\(s=r\\lvert\\theta\\rvert\\) với góc tính bằng radian. Thay \\(r=3,\\ \\theta=\\frac{3\\pi}{2}\\), được \\(s=\\frac{9\\pi}{2}\\) đơn vị độ dài.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B01-ARC_LENGTH"
@@ -14564,7 +14564,7 @@
       },
       {
         "id": "C",
-        "text": "\\(3\\pi/2\\)"
+        "text": "\\(\\frac{3\\pi}{2}\\)"
       },
       {
         "id": "D",
@@ -14672,15 +14672,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\sin(-\\pi/3)=\\sin(\\pi/3)=\\sqrt3/2\\)"
+        "text": "\\(\\sin(-\\frac{\\pi}{3})=\\sin(\\frac{\\pi}{3})=\\frac{\\sqrt3}{2}\\)"
       },
       {
         "id": "B",
-        "text": "\\(\\sin(-\\pi/3)=\\sqrt3/2>\\sin(\\pi/3)=-\\sqrt3/2\\)"
+        "text": "\\(\\sin(-\\frac{\\pi}{3})=\\frac{\\sqrt3}{2}>\\sin(\\frac{\\pi}{3})=-\\frac{\\sqrt3}{2}\\)"
       },
       {
         "id": "C",
-        "text": "\\(\\sin(-\\pi/3)=-1/2<\\sin(\\pi/3)=1/2\\)"
+        "text": "\\(\\sin(-\\frac{\\pi}{3})=-\\frac{1}{2}<\\sin(\\frac{\\pi}{3})=\\frac{1}{2}\\)"
       },
       {
         "id": "D",
@@ -14747,7 +14747,7 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Nếu sai dấu, thử x = 0 trong công thức côsin góc nhân đôi. Nếu thiếu hệ số \\(\\frac12\\), thử \\(x=\\frac\\pi2\\) trong công thức tích thành tổng. Đọc lại Kiến thức 2.4, rồi tự làm Bài 16 và Bài 20 trong Luyện tập trước khi mở lời giải."
+    "remediation": "Nếu sai dấu, thử \\(x=0\\) trong công thức côsin góc nhân đôi. Nếu thiếu hệ số \\(\\frac12\\), thử \\(x=\\frac\\pi2\\) trong công thức tích thành tổng. Đọc lại Kiến thức 2.4, rồi tự làm Bài 16 và Bài 20 trong Luyện tập trước khi mở lời giải."
   },
   {
     "item_id": "THPT-TOP06-KFT08",
@@ -14789,7 +14789,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(D=\\bigcup_{k\\in\\mathbb Z}((\\pi/6+2k\\pi;\\pi/2+2k\\pi)\\cup(\\pi/2+2k\\pi;5\\pi/6+2k\\pi))\\)"
+        "text": "\\(D=\\bigcup_{k\\in\\mathbb Z}((\\frac{\\pi}{6}+2k\\pi;\\frac{\\pi}{2}+2k\\pi)\\cup(\\frac{\\pi}{2}+2k\\pi;\\frac{5\\pi}{6}+2k\\pi))\\)"
       },
       {
         "id": "B",
@@ -14797,11 +14797,11 @@
       },
       {
         "id": "C",
-        "text": "\\(D=\\bigcup_{k\\in\\mathbb Z}[\\pi/6+2k\\pi;5\\pi/6+2k\\pi]\\)"
+        "text": "\\(D=\\bigcup_{k\\in\\mathbb Z}[\\frac{\\pi}{6}+2k\\pi;\\frac{5\\pi}{6}+2k\\pi]\\)"
       },
       {
         "id": "D",
-        "text": "\\(D=\\mathbb R\\setminus\\{\\pi/2+k\\pi\\mid k\\in\\mathbb Z\\}\\)"
+        "text": "\\(D=\\mathbb R\\setminus\\{\\frac{\\pi}{2}+k\\pi\\mid k\\in\\mathbb Z\\}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE",
@@ -14812,7 +14812,7 @@
     "content_version": "CD06-BANK-CP126-20261127-TOP06-KFT09",
     "stem": "Chu kỳ cơ bản của \\(y=\\cos(4x)\\) là gì?",
     "answer_key": "\\(T=\\frac\\pi2\\).",
-    "worked_solution": "Chu kỳ dương cơ bản của \\(\\cos(ax)\\) với \\(a\\ne0\\) là \\(\\frac{2\\pi}{|a|}\\). Vì \\(a=4\\), ta có \\(T=\\frac\\pi2\\).",
+    "worked_solution": "Chu kỳ dương cơ bản của \\(\\cos(ax)\\) với \\(a\\ne0\\) là \\(\\frac{2\\pi}{\\lvert a\\rvert}\\). Vì \\(a=4\\), ta có \\(T=\\frac\\pi2\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B03-PERIOD"
@@ -14847,7 +14847,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\pi/4\\)"
+        "text": "\\(\\frac{\\pi}{4}\\)"
       },
       {
         "id": "B",
@@ -15022,7 +15022,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x=\\pi/4+k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{4}+k\\pi\\)"
       },
       {
         "id": "B",
@@ -15034,7 +15034,7 @@
       },
       {
         "id": "D",
-        "text": "\\(x=\\pi/2+2k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{2}+2k\\pi\\)"
       }
     ],
     "exercise_type": "INTERACTIVE",
@@ -15081,11 +15081,11 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\text{tang: }x=\\pi/4+k\\pi/2;\\ \\text{cotang: }x=k\\pi/2\\)"
+        "text": "\\(\\text{tang: }x=\\frac{\\pi}{4}+\\frac{k\\pi}{2};\\ \\text{cotang: }x=\\frac{k\\pi}{2}\\)"
       },
       {
         "id": "B",
-        "text": "\\(\\text{tang: }x=k\\pi;\\ \\text{cotang: }x=\\pi/4+k\\pi\\)"
+        "text": "\\(\\text{tang: }x=k\\pi;\\ \\text{cotang: }x=\\frac{\\pi}{4}+k\\pi\\)"
       },
       {
         "id": "C",
@@ -15093,7 +15093,7 @@
       },
       {
         "id": "D",
-        "text": "\\(\\text{tang: }x=k\\pi/2;\\ \\text{cotang: }x=k\\pi/2\\)"
+        "text": "\\(\\text{tang: }x=\\frac{k\\pi}{2};\\ \\text{cotang: }x=\\frac{k\\pi}{2}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE",
@@ -15143,11 +15143,11 @@
       },
       {
         "id": "B",
-        "text": "\\(x=\\pi/2+k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{2}+k\\pi\\)"
       },
       {
         "id": "C",
-        "text": "\\(x=k\\pi/4\\)"
+        "text": "\\(x=\\frac{k\\pi}{4}\\)"
       },
       {
         "id": "D",
@@ -15209,7 +15209,7 @@
       },
       {
         "id": "D",
-        "text": "\\(S=\\{\\pi/2;3\\pi/2\\}\\)"
+        "text": "\\(S=\\{\\frac{\\pi}{2};\\frac{3\\pi}{2}\\}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE",
