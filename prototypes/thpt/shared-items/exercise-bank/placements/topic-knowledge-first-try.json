@@ -3685,12 +3685,14 @@
       "related_practice_item_ids": [
         "THPT-G10-B12-C02",
         "THPT-G10-B12-P01",
-        "THPT-G10-B12-P02"
+        "THPT-G10-B12-P02",
+        "THPT-G10-B12-P04"
       ],
       "practice_orders": [
         2,
         3,
-        4
+        4,
+        6
       ]
     }
   },
@@ -3709,11 +3711,13 @@
       "mastery": false,
       "related_practice_item_ids": [
         "THPT-G10-B13-P01",
-        "THPT-G10-B13-P03"
+        "THPT-G10-B13-P03",
+        "THPT-G10-B13-P04"
       ],
       "practice_orders": [
         11,
-        13
+        13,
+        14
       ]
     }
   },
@@ -3804,12 +3808,16 @@
       "related_practice_item_ids": [
         "THPT-G11-B08-P01",
         "THPT-G11-B08-P03",
-        "THPT-G11-B08-P07"
+        "THPT-G11-B08-P07",
+        "THPT-G11-B08-C03",
+        "THPT-G11-B08-P04"
       ],
       "practice_orders": [
         38,
         40,
-        44
+        44,
+        35,
+        41
       ]
     }
   },
@@ -3829,12 +3837,14 @@
       "related_practice_item_ids": [
         "THPT-G11-B09-C02",
         "THPT-G11-B09-C03",
-        "THPT-G11-B09-P01"
+        "THPT-G11-B09-P01",
+        "THPT-G11-B09-C01"
       ],
       "practice_orders": [
         47,
         48,
-        51
+        51,
+        46
       ]
     }
   },
@@ -3879,12 +3889,14 @@
       "related_practice_item_ids": [
         "THPT-G11-B09-C05",
         "THPT-G11-B09-P04",
-        "THPT-G11-B09-P09"
+        "THPT-G11-B09-P09",
+        "THPT-G11-B09-P10"
       ],
       "practice_orders": [
         50,
         54,
-        59
+        59,
+        60
       ]
     }
   },
@@ -3904,12 +3916,14 @@
       "related_practice_item_ids": [
         "THPT-G12-B09-C02",
         "THPT-G12-B09-P04",
-        "THPT-G12-B09-W02"
+        "THPT-G12-B09-W02",
+        "THPT-G12-B09-P05"
       ],
       "practice_orders": [
         71,
         73,
-        74
+        74,
+        76
       ]
     }
   },
@@ -3954,12 +3968,14 @@
       "related_practice_item_ids": [
         "THPT-G12-B10-C02",
         "THPT-G12-B10-W02",
-        "THPT-G12-B10-W04"
+        "THPT-G12-B10-W04",
+        "THPT-G12-B10-C03"
       ],
       "practice_orders": [
         95,
         98,
-        106
+        106,
+        99
       ]
     }
   },
