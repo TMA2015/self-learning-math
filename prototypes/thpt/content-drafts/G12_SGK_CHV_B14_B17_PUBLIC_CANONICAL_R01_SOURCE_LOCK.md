@@ -274,10 +274,10 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B14-W01 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B14-W01` · `OUTCOME_ID`: `G12-CHV-B14-O01` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Giải thích vì sao u=(1,1,0),v=(2,2,0) không đủ để xác định pháp tuyến duy nhất bằng tích có hướng.
-- **Đáp án canonical (chỉ mở khi được phép):** u×v=0, vì u và v cùng phương.
-- **Lời giải có suy luận:** v=2u nên tích có hướng bằng 0. Cần hướng thứ hai không cùng phương; không được lấy n=0 làm pháp tuyến.
-- **Rubric Written /5 (chấm theo từng bước) — R01 đã review DELTA_C:** 2đ chỉ ra v=2u, hai vectơ cùng phương/phụ thuộc tuyến tính nên không tạo cặp hướng độc lập; 1đ tính hoặc chứng minh u×v=(0,0,0); 1đ giải thích vectơ không không được dùng làm vectơ pháp tuyến; 1đ nêu cách khắc phục: chọn hướng thứ hai không cùng phương với u rồi mới tính tích có hướng.
+- **Đề duy nhất:** Giải thích vì sao \(\vec u=(1;1;0),\ \vec v=(2;2;0)\) không đủ để xác định pháp tuyến duy nhất bằng tích có hướng.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\vec u\times\vec v=\vec0\), vì hai vectơ cùng phương.
+- **Lời giải có suy luận:** \(\vec v=2\vec u\) nên tích có hướng bằng vectơ không. Cần hướng thứ hai không cùng phương; không được lấy \(\vec n=\vec0\) làm pháp tuyến.
+- **Rubric Written /5 (chấm theo từng bước) — R01 đã review DELTA_C:** 2đ chỉ ra \(\vec v=2\vec u\), hai vectơ cùng phương/phụ thuộc tuyến tính nên không tạo cặp hướng độc lập; 1đ tính hoặc chứng minh \(\vec u\times\vec v=\vec0\); 1đ giải thích vectơ không không được dùng làm vectơ pháp tuyến; 1đ nêu cách khắc phục: chọn hướng thứ hai không cùng phương với u rồi mới tính tích có hướng.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
 #### HELP-G12-B14-01 — D6 khắc phục theo đúng outcome
@@ -332,9 +332,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B14-W02 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B14-W02` · `OUTCOME_ID`: `G12-CHV-B14-O02` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Qua M(-1,2,0) có pháp tuyến n=(2,3,-1). Viết phương trình và kiểm tại M.
-- **Đáp án canonical (chỉ mở khi được phép):** 2x+3y−z−4=0
-- **Lời giải có suy luận:** 2(x+1)+3(y−2)−z=0 ⇒ 2x+3y−z−4=0; tại M: -2+6-4=0.
+- **Đề duy nhất:** Mặt phẳng qua \(M(-1;2;0)\) có pháp tuyến \(\vec n=(2;3;-1)\). Viết phương trình và kiểm tại M.
+- **Đáp án canonical (chỉ mở khi được phép):** \(2x+3y-z-4=0\).
+- **Lời giải có suy luận:** \(2(x+1)+3(y-2)-z=0\Rightarrow2x+3y-z-4=0\); tại M: \(-2+6-4=0\).
 - **Rubric Written /5 (chấm theo từng bước):** 2đ lập đúng dạng điểm–pháp tuyến; 1đ triển khai hệ số tự do; 1đ thử lại điểm M; 1đ ghi điều kiện n khác 0.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -390,9 +390,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B14-W03 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B14-W03` · `OUTCOME_ID`: `G12-CHV-B14-O03` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Viết mặt phẳng qua A(1,0,0),B(0,1,0),C(0,0,1) và chứng minh ba điểm không thẳng hàng.
-- **Đáp án canonical (chỉ mở khi được phép):** x+y+z−1=0
-- **Lời giải có suy luận:** AB=(-1,1,0), AC=(-1,0,1), tích có hướng khác 0; ba điểm đều thỏa x+y+z=1.
+- **Đề duy nhất:** Viết phương trình mặt phẳng qua \(A(1;0;0),B(0;1;0),C(0;0;1)\) và chứng minh ba điểm không thẳng hàng.
+- **Đáp án canonical (chỉ mở khi được phép):** \(x+y+z-1=0\).
+- **Lời giải có suy luận:** \(\overrightarrow{AB}=(-1;1;0)\), \(\overrightarrow{AC}=(-1;0;1)\); tích có hướng là \((1;1;1)\ne\vec0\), nên ba điểm không thẳng hàng. Ba điểm đều thỏa \(x+y+z=1\), xác định duy nhất mặt phẳng này.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ lập AB, AC và kiểm không thẳng hàng; 1đ xác định pháp tuyến; 1đ viết phương trình và thử đủ ba điểm; 1đ nêu tính duy nhất.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -448,9 +448,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B14-W04 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B14-W04` · `OUTCOME_ID`: `G12-CHV-B14-O04` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Mặt phẳng qua O chứa Ox và điểm B(0,2,1); lập phương trình.
-- **Đáp án canonical (chỉ mở khi được phép):** y−2z=0
-- **Lời giải có suy luận:** Hai hướng Ox và OB=(0,2,1), n=(0,-1,2) hay (0,1,-2); thay B được 0.
+- **Đề duy nhất:** Mặt phẳng qua O chứa Ox và điểm \(B(0;2;1)\); lập phương trình.
+- **Đáp án canonical (chỉ mở khi được phép):** \(y-2z=0\).
+- **Lời giải có suy luận:** Hai hướng Ox và \(\overrightarrow{OB}=(0;2;1)\) không cùng phương; chọn pháp tuyến \(\vec n=(0;-1;2)\) hoặc \((0;1;-2)\). Mặt phẳng qua O có phương trình \(y-2z=0\); thay B được 0.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ nhận đúng hai hướng của mặt; 1đ tìm pháp tuyến; 1đ lập và thử phương trình; 1đ giải thích điều kiện chứa trục so với song song trục.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -506,9 +506,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B14-W05 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B14-W05` · `OUTCOME_ID`: `G12-CHV-B14-O05` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Chứng minh (P):x+y−z=0 song song (Q):2x+2y−2z+1=0 và vuông góc (R):x−y=0.
-- **Đáp án canonical (chỉ mở khi được phép):** P∥Q phân biệt; P⊥R
-- **Lời giải có suy luận:** nQ=2nP nhưng hai phương trình không trùng; nP·nR=1−1=0.
+- **Đề duy nhất:** Chứng minh \((P):x+y-z=0\) song song với \((Q):2x+2y-2z+1=0\) và vuông góc với \((R):x-y=0\).
+- **Đáp án canonical (chỉ mở khi được phép):** \((P)\parallel(Q)\) phân biệt; \((P)\perp(R)\).
+- **Lời giải có suy luận:** \(\vec n_Q=2\vec n_P\) nhưng hai phương trình không trùng; \(\vec n_P\cdot\vec n_R=1-1=0\).
 - **Rubric Written /5 (chấm theo từng bước):** 2đ xác định hai cặp pháp tuyến; 1đ so sánh tỉ lệ/dot; 1đ kiểm hằng số để phân biệt trùng/song song; 1đ kết luận hai quan hệ rõ ràng.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -564,9 +564,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B14-W06 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B14-W06` · `OUTCOME_ID`: `G12-CHV-B14-O06` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Tính khoảng cách M(1,1,2) đến 2x−2y+z−4=0. Viết đủ tử, mẫu và kết luận.
-- **Đáp án canonical (chỉ mở khi được phép):** 2/3
-- **Lời giải có suy luận:** Tử |2−2+2−4|=2; mẫu √(4+4+1)=3 nên d=2/3.
+- **Đề duy nhất:** Tính khoảng cách từ \(M(1;1;2)\) đến mặt phẳng \(2x-2y+z-4=0\). Viết đủ tử, mẫu và kết luận.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\frac23\).
+- **Lời giải có suy luận:** Tử \(|2-2+2-4|=2\); mẫu \(\sqrt{4+4+1}=3\) nên \(d=\frac23\) (đơn vị độ dài).
 - **Rubric Written /5 (chấm theo từng bước):** 2đ thế tọa độ vào tử số và tính chuẩn n; 1đ sử dụng trị tuyệt đối; 1đ kết quả khoảng cách đúng; 1đ giải thích đơn vị và không âm.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -745,10 +745,10 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B15-W01 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B15-W01` · `OUTCOME_ID`: `G12-CHV-B15-O01` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Đường thẳng qua P(2;1;−1), có vectơ chỉ phương (−1;3;2). Viết phương trình tham số, tìm điểm ứng với t=2 và phân biệt miền tham số đường thẳng với thời gian chuyển động bắt đầu tại t=0.
-- **Đáp án canonical (chỉ mở khi được phép):** (2−t,1+3t,−1+2t); khi t=2 là (0,7,3)
-- **Lời giải có suy luận:** Vectơ chỉ phương khác 0. M(t)=(2−t;1+3t;−1+2t), t∈ℝ. Thay t=0 thu P; t=2 thu (0;7;3). Nếu t là thời gian kể từ lúc xuất phát thì t≥0.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định M0 và hướng u khác 0; 1đ viết một tham số chung t; 1đ tính tọa độ kiểm theo t; 1đ phân biệt đường thẳng t∈R với chuyển động t≥0.
+- **Đề duy nhất:** Đường thẳng qua \(P(2;1;-1)\), có vectơ chỉ phương \((-1;3;2)\). Viết phương trình tham số, tìm điểm ứng với \(t=2\) và phân biệt miền tham số đường thẳng với thời gian chuyển động bắt đầu tại \(t=0\).
+- **Đáp án canonical (chỉ mở khi được phép):** \((x;y;z)=(2-t;1+3t;-1+2t)\), \(t\in\mathbb R\); khi \(t=2\) là \((0;7;3)\).
+- **Lời giải có suy luận:** Vectơ chỉ phương khác \(\vec0\). Điểm \(M(t)\) có tọa độ \((2-t;1+3t;-1+2t)\), \(t\in\mathbb R\). Thay \(t=0\) thu P; \(t=2\) thu \((0;7;3)\). Nếu t là thời gian kể từ lúc xuất phát thì \(t\ge0\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định \(M_0\) và hướng u khác 0; 1đ viết một tham số chung t; 1đ tính tọa độ kiểm theo t; 1đ phân biệt đường thẳng \(t\in\mathbb R\) với chuyển động \(t\ge0\).
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
 #### HELP-G12-B15-01 — D6 khắc phục theo đúng outcome
@@ -803,10 +803,10 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B15-W02 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B15-W02` · `OUTCOME_ID`: `G12-CHV-B15-O02` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Viết phương trình tham số đường thẳng qua P(2;−1;0), Q(0;3;2), kiểm P và Q. Miền tham số nào biểu diễn đoạn PQ?
-- **Đáp án canonical (chỉ mở khi được phép):** (2−2t,−1+4t,2t)
-- **Lời giải có suy luận:** Vectơ PQ=(−2;4;2) khác 0. M(t)=(2−2t;−1+4t;2t), t∈ℝ. t=0 cho P, t=1 cho Q; đoạn PQ ứng với 0≤t≤1.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ lấy đúng hiệu B−A khác 0; 1đ viết đủ ba phương trình cùng t; 1đ kiểm t=0,1; 1đ giải thích đoạn thẳng 0≤t≤1.
+- **Đề duy nhất:** Viết phương trình tham số đường thẳng qua \(P(2;-1;0), Q(0;3;2)\), kiểm P và Q. Miền tham số nào biểu diễn đoạn PQ?
+- **Đáp án canonical (chỉ mở khi được phép):** \((x;y;z)=(2-2t;-1+4t;2t)\), \(t\in\mathbb R\).
+- **Lời giải có suy luận:** \(\overrightarrow{PQ}=(-2;4;2)\ne\vec0\). Điểm \(M(t)\) có tọa độ \((2-2t;-1+4t;2t)\), \(t\in\mathbb R\). \(t=0\) cho P, \(t=1\) cho Q; đoạn PQ ứng với \(0\le t\le1\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ lấy đúng hiệu \(\overrightarrow{PQ}\) khác 0; 1đ viết đủ ba phương trình cùng t; 1đ kiểm \(t=0,1\); 1đ giải thích đoạn thẳng \(0\le t\le1\).
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
 #### HELP-G12-B15-02 — D6 khắc phục theo đúng outcome
@@ -861,9 +861,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B15-W03 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B15-W03` · `OUTCOME_ID`: `G12-CHV-B15-O03` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Qua (-1,1,2),u=(2,0,3). Viết cả tham số và dạng chính tắc đúng.
-- **Đáp án canonical (chỉ mở khi được phép):** (-1+2t,1,2+3t); y=1, (x+1)/2=(z−2)/3
-- **Lời giải có suy luận:** Do thành phần y của hướng bằng 0 nên y phải cố định bằng 1; kiểm ngược bằng t.
+- **Đề duy nhất:** Đường thẳng qua điểm \((-1;1;2)\), có vectơ chỉ phương \(\vec u=(2;0;3)\). Viết cả phương trình tham số và dạng chính tắc đúng.
+- **Đáp án canonical (chỉ mở khi được phép):** \((x;y;z)=(-1+2t;1;2+3t)\), \(t\in\mathbb R\); \(y=1,\ \frac{x+1}{2}=\frac{z-2}{3}\).
+- **Lời giải có suy luận:** Do thành phần y của hướng bằng 0 nên y cố định bằng 1; đặt \(\frac{x+1}2=\frac{z-2}3=t\) để kiểm ngược dạng tham số. Không chia cho thành phần 0.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ xét chính xác thành phần hướng bằng 0; 1đ viết dạng chính tắc/chuyển đúng; 1đ kiểm dạng tham số; 1đ nói rõ vì sao không chia 0.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -919,9 +919,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B15-W04 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B15-W04` · `OUTCOME_ID`: `G12-CHV-B15-O04` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** d=(2−t,1+2t,3t). Kiểm M(0,5,6) và N(0,5,5).
-- **Đáp án canonical (chỉ mở khi được phép):** M thuộc d, N không
-- **Lời giải có suy luận:** M yêu cầu t=2: x=0,y=5,z=6; N cùng x,y đòi t=2 nhưng z phải là 6 khác 5.
+- **Đề duy nhất:** Đường thẳng d có \((x;y;z)=(2-t;1+2t;3t)\). Kiểm tra \(M(0;5;6)\) và \(N(0;5;5)\) có thuộc d không.
+- **Đáp án canonical (chỉ mở khi được phép):** M thuộc d, N không thuộc d.
+- **Lời giải có suy luận:** M yêu cầu \(t=2\): \(x=0,y=5,z=6\); N cùng tọa độ x, y đòi \(t=2\) nhưng z phải là 6, khác 5.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ giải tham số t từ tọa độ có hệ số khác 0; 1đ kiểm tọa độ thứ hai; 1đ kiểm tọa độ thứ ba và kết luận; 1đ nêu quy tắc cùng một t.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -977,9 +977,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B15-W05 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B15-W05` · `OUTCOME_ID`: `G12-CHV-B15-O05` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Cho u=(1;2;−1), v=(2;−1;0), w=(3;6;−3). Chứng minh u vuông góc v, u cùng phương w. Hai đường thẳng có chỉ phương u và v có nhất thiết cắt nhau không?
-- **Đáp án canonical (chỉ mở khi được phép):** u·v=0 và w=3u
-- **Lời giải có suy luận:** u·v=2−2+0=0; cả hai vectơ khác 0, nên vuông góc. w=3u nên cùng phương. Hai đường thẳng có chỉ phương u và v vuông góc trong không gian, nhưng chỉ phương không cho biết chúng cắt nhau hay chéo nhau.
+- **Đề duy nhất:** Cho \(\vec u=(1;2;-1),\vec v=(2;-1;0),\vec w=(3;6;-3)\). Chứng minh \(\vec u\perp\vec v\), \(\vec u\) cùng phương \(\vec w\). Hai đường thẳng có chỉ phương \(\vec u,\vec v\) có nhất thiết cắt nhau không?
+- **Đáp án canonical (chỉ mở khi được phép):** \(\vec u\cdot\vec v=0\) và \(\vec w=3\vec u\).
+- **Lời giải có suy luận:** \(\vec u\cdot\vec v=2-2+0=0\); cả hai vectơ khác \(\vec0\), nên vuông góc. \(\vec w=3\vec u\) nên cùng phương. Hai đường thẳng có chỉ phương \(\vec u,\vec v\) vuông góc trong không gian, nhưng chỉ phương không cho biết chúng cắt nhau hay chéo nhau.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ tính dot và kiểm cùng phương đúng; 1đ kết luận hướng vuông góc; 1đ kết luận hướng song song; 1đ phân biệt hướng với quan hệ giao nhau hình học.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -1035,9 +1035,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B15-W06 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B15-W06` · `OUTCOME_ID`: `G12-CHV-B15-O06` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Chứng minh d1=(1+t,t,0), d2=(0,s,1) chéo nhau.
-- **Đáp án canonical (chỉ mở khi được phép):** Không giao và khác hướng
-- **Lời giải có suy luận:** Muốn giao nhau phải có 1+t=0, t=s, 0=1. Hai phương trình đầu cho t=s=−1 nhưng phương trình cuối vô nghiệm. Hai vectơ chỉ phương (1;1;0) và (0;1;0) không cùng phương, nên hai đường chéo nhau.
+- **Đề duy nhất:** Chứng minh hai đường thẳng \(d_1:(x;y;z)=(1+t;t;0)\), \(d_2:(x;y;z)=(0;s;1)\) chéo nhau.
+- **Đáp án canonical (chỉ mở khi được phép):** Không giao và khác hướng.
+- **Lời giải có suy luận:** Muốn giao nhau phải có \(1+t=0,\ t=s,\ 0=1\). Hai phương trình đầu cho \(t=s=-1\) nhưng phương trình cuối vô nghiệm. Hai vectơ chỉ phương \((1;1;0)\) và \((0;1;0)\) không cùng phương, nên hai đường chéo nhau.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ lập hệ giao với hai tham số t,s; 1đ xét hai tọa độ; 1đ kiểm tọa độ còn lại và khác hướng; 1đ kết luận chéo/giao có căn cứ.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -1093,9 +1093,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B15-W07 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B15-W07` · `OUTCOME_ID`: `G12-CHV-B15-O07` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Tìm giao điểm của d: (x;y;z)=(1+t;2−t;3+2t), t∈ℝ, với (P): x−2y+z=10. Kiểm kết quả và nêu điều kiện để phương trình giao tổng quát có 0, 1 hoặc vô số nghiệm.
-- **Đáp án canonical (chỉ mở khi được phép):** (3,0,7)
-- **Lời giải có suy luận:** Thế vào vế trái: 1+t−2(2−t)+3+2t=5t. Suy ra t=2, điểm (3;0;7), 3−2·0+7=10. Tổng quát at=b: a≠0 có một nghiệm; a=0,b≠0 vô nghiệm; a=b=0 vô số nghiệm (đường nằm trong mặt phẳng).
+- **Đề duy nhất:** Tìm giao điểm của \(d:(x;y;z)=(1+t;2-t;3+2t)\), \(t\in\mathbb R\), với \((P):x-2y+z=10\). Kiểm kết quả và nêu điều kiện để phương trình giao tổng quát có 0, 1 hoặc vô số nghiệm.
+- **Đáp án canonical (chỉ mở khi được phép):** \((3;0;7)\).
+- **Lời giải có suy luận:** Thế vào vế trái: \(1+t-2(2-t)+3+2t=5t\). Suy ra \(t=2\), điểm \((3;0;7)\), \(3-2\cdot0+7=10\). Tổng quát \(at=b\): \(a\ne0\) có một nghiệm; \(a=0,b\ne0\) vô nghiệm; \(a=b=0\) vô số nghiệm (đường nằm trong mặt phẳng).
 - **Rubric Written /5 (chấm theo từng bước):** 2đ thế đúng ba tham số vào phương trình mặt phẳng; 1đ giải t; 1đ viết và kiểm giao điểm; 1đ nêu trường hợp 0/1/vô số nghiệm.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -1212,9 +1212,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B16-W01 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B16-W01` · `OUTCOME_ID`: `G12-CHV-B16-O01` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Hai đường thẳng có vectơ chỉ phương u=(1;1;1) và v=(1;1;−1). Tính cosin góc giữa hai đường và giải thích vì sao dùng trị tuyệt đối.
-- **Đáp án canonical (chỉ mở khi được phép):** cosθ=1/3; θ=arccos(1/3)
-- **Lời giải có suy luận:** u·v=1, hai độ dài đều √3, nên cosθ=|1|/3=1/3. Đổi v thành −v làm tích vô hướng đổi dấu nhưng đường thẳng không đổi. Góc giữa hai đường thuộc [0°;90°], vì vậy lấy trị tuyệt đối.
+- **Đề duy nhất:** Hai đường thẳng có vectơ chỉ phương \(\vec u=(1;1;1)\) và \(\vec v=(1;1;-1)\). Tính cosin góc giữa hai đường và giải thích vì sao dùng trị tuyệt đối.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\cos\theta=\frac13,\ \theta=\arccos\frac13\).
+- **Lời giải có suy luận:** \(\vec u\cdot\vec v=1\), hai độ dài đều \(\sqrt3\), nên \(\cos\theta=\frac{|1|}{3}=\frac13\). Đổi \(\vec v\) thành \(-\vec v\) làm tích vô hướng đổi dấu nhưng đường thẳng không đổi. Góc giữa hai đường thuộc \([0^\circ;90^\circ]\), vì vậy lấy trị tuyệt đối.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ tìm đúng hai vectơ hướng và tích vô hướng; 1đ tính hai chuẩn; 1đ lấy trị tuyệt đối và kết luận cos/góc; 1đ giải thích góc đường thẳng không tù.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -1270,9 +1270,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B16-W02 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B16-W02` · `OUTCOME_ID`: `G12-CHV-B16-O02` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Đường thẳng có chỉ phương u=(1;2;2), mặt phẳng (P): z=0. Tìm sin và góc đường–mặt. Nêu kết quả khi đường song song hoặc vuông góc mặt phẳng.
-- **Đáp án canonical (chỉ mở khi được phép):** sinθ=2/3; θ=arcsin(2/3)
-- **Lời giải có suy luận:** Pháp tuyến n=(0;0;1), |u|=3, |n|=1, u·n=2, nên sinθ=2/3. Khi chỉ phương vuông góc pháp tuyến, góc bằng 0°; khi chỉ phương cùng phương pháp tuyến, góc bằng 90°.
+- **Đề duy nhất:** Đường thẳng có chỉ phương \(\vec u=(1;2;2)\), mặt phẳng \((P):z=0\). Tìm sin và góc đường–mặt. Nêu kết quả khi đường song song hoặc vuông góc mặt phẳng.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\sin\theta=\frac23,\ \theta=\arcsin\frac23\).
+- **Lời giải có suy luận:** Pháp tuyến \(\vec n=(0;0;1)\), \(\lVert\vec u\rVert=3,\ \lVert\vec n\rVert=1,\ \vec u\cdot\vec n=2\), nên \(\sin\theta=\frac23\). Khi chỉ phương vuông góc pháp tuyến, góc bằng 0°; khi chỉ phương cùng phương pháp tuyến, góc bằng 90°.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ nhận hướng u và pháp tuyến n; 1đ tính tích vô hướng và chuẩn; 1đ dùng đúng sin để tìm góc; 1đ kiểm trường hợp song song/vuông góc.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -1328,9 +1328,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B16-W03 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B16-W03` · `OUTCOME_ID`: `G12-CHV-B16-O03` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Tính góc giữa (P): x+2y+2z=0 và (Q): z=0. So sánh công thức với công thức góc đường–mặt.
-- **Đáp án canonical (chỉ mở khi được phép):** cosθ=2/3, θ=arccos(2/3)
-- **Lời giải có suy luận:** nP=(1;2;2), |nP|=3, nQ=(0;0;1), |nQ|=1. cosθ=|2|/3. Hai mặt dùng cosin góc không tù giữa hai pháp tuyến; đường–mặt dùng sin của góc đường–mặt bằng trị tuyệt đối tích vô hướng chuẩn hóa của chỉ phương và pháp tuyến.
+- **Đề duy nhất:** Tính góc giữa \((P):x+2y+2z=0\) và \((Q):z=0\). So sánh công thức với công thức góc đường–mặt.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\cos\theta=\frac23,\ \theta=\arccos\frac23\).
+- **Lời giải có suy luận:** \(\vec n_P=(1;2;2),\ \lVert\vec n_P\rVert=3,\ \vec n_Q=(0;0;1),\ \lVert\vec n_Q\rVert=1\). \(\cos\theta=\frac{|2|}{3}\). Hai mặt dùng cosin góc không tù giữa hai pháp tuyến; đường–mặt dùng sin của góc đường–mặt bằng trị tuyệt đối tích vô hướng chuẩn hóa của chỉ phương và pháp tuyến.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ tìm đúng pháp tuyến của cả hai mặt; 1đ tính dot/chuẩn; 1đ dùng cos trị tuyệt đối; 1đ so sánh với công thức góc đường–mặt.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
@@ -1386,10 +1386,10 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B16-W04 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B16-W04` · `OUTCOME_ID`: `G12-CHV-B16-O04` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** u=(1,1,0) và P:x−y=0. Chứng minh góc0 và cho biết điều kiện để đường nằm trọn trong P.
-- **Đáp án canonical (chỉ mở khi được phép):** u·n=0; phải có điểm xuất phát nằm trong P
-- **Lời giải có suy luận:** n=(1,-1,0); u·n=1−1=0. Nếu M0∈P thì mọi M0+t u∈P, ngược lại song song phân biệt.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ tính dot u·n; 1đ phân biệt u·n=0 và u∥n; 1đ kiểm điểm gốc để nói nằm trong hay song song; 1đ kết luận góc đúng.
+- **Đề duy nhất:** Đường thẳng có chỉ phương \(\vec u=(1;1;0)\) và mặt phẳng \((P):x-y=0\). Chứng minh góc bằng 0° và cho biết điều kiện để đường nằm trọn trong (P).
+- **Đáp án canonical (chỉ mở khi được phép):** \(\vec u\cdot\vec n=0\); phải có điểm xuất phát nằm trong (P).
+- **Lời giải có suy luận:** \(\vec n=(1;-1;0)\); \(\vec u\cdot\vec n=1-1=0\). Nếu \(M_0\in(P)\) thì mọi điểm \(M\) thỏa \(\overrightarrow{M_0M}=t\vec u\) đều thuộc (P); ngược lại đường thẳng song song phân biệt với (P).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ tính dot \(\vec u\cdot\vec n\); 1đ phân biệt \(\vec u\cdot\vec n=0\) và \(\vec u\parallel\vec n\); 1đ kiểm điểm gốc để nói nằm trong hay song song; 1đ kết luận góc đúng.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
 #### HELP-G12-B16-04 — D6 khắc phục theo đúng outcome
@@ -1444,10 +1444,10 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B16-W05 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B16-W05` · `OUTCOME_ID`: `G12-CHV-B16-O05` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Trong Oxyz với Oz hướng thẳng đứng lên, thanh chống dài 10 m có hướng từ đầu thấp tới đầu cao là (6;0;8). Tính sin góc với nền ngang và độ chênh cao hai đầu.
-- **Đáp án canonical (chỉ mở khi được phép):** sinθ=4/5, độ cao8m
-- **Lời giải có suy luận:** Vectơ hướng có độ dài 10, thành phần đứng 8. Vì thanh dài 10 m và hướng từ thấp lên cao, độ chênh cao là 8 m, sinθ=8/10=4/5.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định độ dài dốc và thành phần độ cao; 1đ thiết lập sinθ=Δh/L; 1đ kết quả góc/độ cao; 1đ kiểm đơn vị và ý nghĩa thực tiễn.
+- **Đề duy nhất:** Trong Oxyz với Oz hướng thẳng đứng lên, thanh chống dài 10 m có hướng từ đầu thấp tới đầu cao là \((6;0;8)\). Tính sin góc với nền ngang và độ chênh cao hai đầu.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\sin\theta=\frac45\); độ chênh cao 8 m.
+- **Lời giải có suy luận:** Vectơ hướng có độ dài 10, thành phần đứng 8. Vì thanh dài 10 m và hướng từ thấp lên cao, độ chênh cao là 8 m, \(\sin\theta=\frac8{10}=\frac45\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định độ dài dốc và thành phần độ cao; 1đ thiết lập \(\sin\theta=\frac{\Delta h}{L}\); 1đ kết quả góc/độ cao; 1đ kiểm đơn vị và ý nghĩa thực tiễn.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
 #### HELP-G12-B16-05 — D6 khắc phục theo đúng outcome
@@ -1563,10 +1563,10 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B17-W01 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B17-W01` · `OUTCOME_ID`: `G12-CHV-B17-O01` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Cho tâm C(−1;2;0), bán kính R=√5. Lập phương trình mặt cầu, chứng minh R>0 và phân biệt mặt cầu với khối cầu.
-- **Đáp án canonical (chỉ mở khi được phép):** (x+1)²+(y−2)²+z²=5
-- **Lời giải có suy luận:** R²=5>0. Điểm X thuộc mặt cầu khi CX=R, tức (x+1)²+(y−2)²+z²=5. Khối cầu gồm cả điểm bên trong và mặt cầu, ứng với vế trái ≤5.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định tâm C và bán kính R>0; 1đ lập ba hiệu bình phương; 1đ ghi chính xác R²; 1đ phân biệt bề mặt cầu với khối cầu.
+- **Đề duy nhất:** Cho tâm \(C(-1;2;0)\), bán kính \(R=\sqrt5\). Lập phương trình mặt cầu, chứng minh \(R>0\) và phân biệt mặt cầu với khối cầu.
+- **Đáp án canonical (chỉ mở khi được phép):** \((x+1)^2+(y-2)^2+z^2=5\).
+- **Lời giải có suy luận:** \(R^2=5>0\). Điểm X thuộc mặt cầu khi \(CX=R\), tức \((x+1)^2+(y-2)^2+z^2=5\). Khối cầu gồm cả điểm bên trong và mặt cầu, ứng với vế trái không vượt 5.
+- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định tâm C và bán kính \(R>0\); 1đ lập ba hiệu bình phương; 1đ ghi chính xác \(R^2\); 1đ phân biệt bề mặt cầu với khối cầu.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
 #### HELP-G12-B17-01 — D6 khắc phục theo đúng outcome
@@ -1621,10 +1621,10 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B17-W02 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B17-W02` · `OUTCOME_ID`: `G12-CHV-B17-O02` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Hoàn thành bình phương và phân loại x²+y²+z²−4x+2y−2z+1=0. Nêu ý nghĩa nếu vế phải sau hoàn thành bình phương bằng 0 hoặc âm.
-- **Đáp án canonical (chỉ mở khi được phép):** C(2,-1,1), R=√5
-- **Lời giải có suy luận:** Chuyển về (x−2)²+(y+1)²+(z−1)²=5; R²=4+1+1−1=5>0, tâm C(2;−1;1), R=√5. Nếu vế phải bằng 0 chỉ có điểm tâm, nếu âm không có điểm thực.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ hoàn chỉnh ba bình phương; 1đ tìm đúng tâm; 1đ tính R² và R; 1đ xét điều kiện R²>0 và trường hợp suy biến.
+- **Đề duy nhất:** Hoàn thành bình phương và phân loại \(x^2+y^2+z^2-4x+2y-2z+1=0\). Nêu ý nghĩa nếu vế phải sau hoàn thành bình phương bằng 0 hoặc âm.
+- **Đáp án canonical (chỉ mở khi được phép):** \(C(2;-1;1),\ R=\sqrt5\).
+- **Lời giải có suy luận:** Chuyển về \((x-2)^2+(y+1)^2+(z-1)^2=5\); \(R^2=4+1+1-1=5>0\), tâm \(C(2;-1;1)\), \(R=\sqrt5\). Nếu vế phải bằng 0 chỉ có điểm tâm, nếu âm không có điểm thực.
+- **Rubric Written /5 (chấm theo từng bước):** 2đ hoàn chỉnh ba bình phương; 1đ tìm đúng tâm; 1đ tính \(R^2\) và R; 1đ xét điều kiện \(R^2>0\) và trường hợp suy biến.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
 #### HELP-G12-B17-02 — D6 khắc phục theo đúng outcome
@@ -1679,10 +1679,10 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B17-W03 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B17-W03` · `OUTCOME_ID`: `G12-CHV-B17-O03` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** C(1,2,2),R=3. Phân loại P(4,2,2), Q(1,2,0), Z(1,2,6).
-- **Đáp án canonical (chỉ mở khi được phép):** P trên; Q trong; Z ngoài
-- **Lời giải có suy luận:** CP²=9, CQ²=4, CZ²=16, so với R²=9.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ tính ba khoảng cách bình phương so với tâm; 1đ so với R²; 1đ phân loại đủ từng điểm; 1đ phân biệt trong khối cầu và trên mặt cầu.
+- **Đề duy nhất:** Cho mặt cầu tâm \(C(1;2;2),R=3\). Phân loại \(P(4;2;2),Q(1;2;0),Z(1;2;6)\).
+- **Đáp án canonical (chỉ mở khi được phép):** P trên mặt cầu; Q trong khối cầu; Z ngoài khối cầu.
+- **Lời giải có suy luận:** \(CP^2=9,\ CQ^2=4,\ CZ^2=16\), so với \(R^2=9\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ tính ba khoảng cách bình phương so với tâm; 1đ so với \(R^2\); 1đ phân loại đủ từng điểm; 1đ phân biệt trong khối cầu và trên mặt cầu.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
 #### HELP-G12-B17-03 — D6 khắc phục theo đúng outcome
@@ -1737,10 +1737,10 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B17-W04 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B17-W04` · `OUTCOME_ID`: `G12-CHV-B17-O04` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** A(-1,0,2),B(3,2,0) là hai đầu đường kính. Viết mặt cầu và kiểm A,B.
-- **Đáp án canonical (chỉ mở khi được phép):** (x−1)²+(y−1)²+(z−1)²=6
-- **Lời giải có suy luận:** C=(1,1,1), AB²=4²+2²+(−2)²=24 nên R²=6. CA²=CB²=6.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ tính đúng trung điểm AB; 1đ tính AB² và chia 4; 1đ lập phương trình; 1đ kiểm cả A và B trên mặt cầu.
+- **Đề duy nhất:** \(A(-1;0;2),B(3;2;0)\) là hai đầu đường kính. Viết phương trình mặt cầu và kiểm A, B.
+- **Đáp án canonical (chỉ mở khi được phép):** \((x-1)^2+(y-1)^2+(z-1)^2=6\).
+- **Lời giải có suy luận:** Tâm \(C(1;1;1)\), \(AB^2=4^2+2^2+(-2)^2=24\) nên \(R^2=6\). Kiểm \(CA^2=CB^2=6\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ tính đúng trung điểm AB; 1đ tính \(AB^2\) và chia 4; 1đ lập phương trình; 1đ kiểm cả A và B trên mặt cầu.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
 #### HELP-G12-B17-04 — D6 khắc phục theo đúng outcome
@@ -1795,10 +1795,10 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 
 #### THPT-G12-B17-W05 — SGK_WRITTEN
 - `ITEM_ID`: `THPT-G12-B17-W05` · `OUTCOME_ID`: `G12-CHV-B17-O05` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** C(1,-2,3), R=4, P:2x−y+2z+2=0. Chứng minh tiếp xúc và tìm tiếp điểm.
-- **Đáp án canonical (chỉ mở khi được phép):** Tiếp xúc tại H(-5/3,-2/3,1/3)
-- **Lời giải có suy luận:** h=|2+2+6+2|/3=12/3=4; pháp tuyến n=(2,-1,2); H=C−(12/9)n=(-5/3,-2/3,1/3), H∈P.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ tính khoảng cách h từ tâm tới mặt phẳng; 1đ so với R; 1đ tìm bán kính thiết diện hoặc tiếp điểm; 1đ kiểm kết luận và điều kiện h<R/h=R/h>R.
+- **Đề duy nhất:** Cho mặt cầu tâm \(C(1;-2;3),R=4\), mặt phẳng \((P):2x-y+2z+2=0\). Chứng minh tiếp xúc và tìm tiếp điểm.
+- **Đáp án canonical (chỉ mở khi được phép):** Tiếp xúc tại \(H(-\frac53;-\frac23;\frac13)\).
+- **Lời giải có suy luận:** \(h=\frac{|2+2+6+2|}{3}=\frac{12}{3}=4=R\); pháp tuyến \(\vec n=(2;-1;2)\); \(\overrightarrow{CH}=-\frac{12}{9}\vec n\), suy ra \(H(-\frac53;-\frac23;\frac13)\). Kiểm \(2(-\frac53)-(-\frac23)+2\cdot\frac13+2=0\), nên \(H\in(P)\).
+- **Rubric Written /5 (chấm theo từng bước):** 2đ tính khoảng cách h từ tâm tới mặt phẳng; 1đ so với R; 1đ tìm bán kính thiết diện hoặc tiếp điểm; 1đ kiểm kết luận và điều kiện \(h<R\), \(h=R\), \(h>R\).
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
 #### HELP-G12-B17-05 — D6 khắc phục theo đúng outcome
