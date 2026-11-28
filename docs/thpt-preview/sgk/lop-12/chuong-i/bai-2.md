@@ -129,7 +129,7 @@
 
     **Kiểm lại:** Cả ba điểm đạt giá trị đều thuộc miền. Không cần dùng đạo hàm tại hai đầu mút.
 
-    ### 3.2. Đọc bảng biến thiên trên miền vô hạn
+    ### 3.2. Dùng tính đơn điệu trên miền vô hạn
 
     **Đề bài.** Tìm GTLN, GTNN (nếu có) của \(f(x)=x\ln x\) trên tập xác định.
 

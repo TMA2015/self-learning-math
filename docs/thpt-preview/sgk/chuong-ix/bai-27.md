@@ -237,7 +237,7 @@
 
     <div class="thpt-g10-key-formula" role="note" data-b27-key-formula="combinations"><strong>Công thức tính xác suất bằng tổ hợp</strong><p>\(n(\Omega)=\binom nk\) với \(0\le k\le n\); theo định nghĩa cổ điển \(P(A)=n(A)/n(\Omega)\). Do đó, khi mọi nhóm \(k\) phần tử đồng khả năng, \(P(A)=\dfrac{n(A)}{\binom nk}\).</p><p>Muốn tính \(P(A)\), hãy đếm số nhóm thuận lợi \(n(A)\) trong cùng mô hình, rồi kiểm \(n(\Omega)>0\).</p></div>
 
-    **Kết hợp các phép chọn.** Ví dụ chọn 6 học sinh trong lớp có 7 nam và 5 nữ, yêu cầu 3 nam và 3 nữ. Mỗi nhóm 3 nam ghép được với mọi nhóm 3 nữ, mỗi cách ghép cho đúng một nhóm 6 người; theo quy tắc nhân,  có \(\binom73\binom53\) nhóm thuận lợi. Điều kiện phải kiểm là giáo viên chọn đều **giữa các nhóm 6 học sinh**, không phải chỉ nói “chọn ngẫu nhiên”.
+    **Kết hợp các phép chọn.** Ví dụ chọn 6 học sinh trong lớp có 7 nam và 5 nữ, yêu cầu 3 nam và 3 nữ. Mỗi nhóm 3 nam ghép được với mọi nhóm 3 nữ, mỗi cách ghép cho đúng một nhóm 6 người; theo quy tắc nhân, có \(\binom73\binom53\) nhóm thuận lợi. Điều kiện phải kiểm là giáo viên chọn đều **giữa các nhóm 6 học sinh**, không phải chỉ nói “chọn ngẫu nhiên”.
 
     **Phân biệt các mô hình:** rút lần lượt và ghi thứ tự khác với chọn cùng lúc không ghi thứ tự. Công thức tổ hợp không phải quy tắc thay thế mọi sơ đồ cây. Khi xét một bộ 6 số từ 45 số, việc chọn theo nhóm cho \(n(\Omega)=\binom{45}{6}\); đây là mô hình chọn nhóm không xét thứ tự.
 

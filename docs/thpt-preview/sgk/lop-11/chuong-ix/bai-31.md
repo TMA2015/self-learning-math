@@ -200,11 +200,11 @@
 
     ### 3.5. Vận tốc của quả bóng rơi từ độ cao cho trước
 
-    **Đề bài.** Bỏ qua lực cản không khí. Một quả bóng được thả rơi tự do từ độ cao \(461{,}3\) m; quãng đường rơi sau \(t\) giây là \(s(t)=4{,}9t^2\) (m), lấy chiều dương **hướng xuống**. Tính gần đúng vận tốc khi chạm đất, làm tròn đến một chữ số thập phân.
+    **Đề bài.** Bỏ qua lực cản không khí. Một quả bóng được thả rơi tự do từ độ cao \(461{,}3\) m; quãng đường rơi sau \(t\) giây là \(s(t)=4{,}9t^2\) (m), lấy chiều dương **hướng xuống**. Tính gần đúng vận tốc ngay trước khi chạm đất, làm tròn đến một chữ số thập phân.
 
     **Phân tích:** Cần tìm **thời điểm chạm đất** từ điều kiện \(s(t)=461{,}3\), rồi mới thế vào đạo hàm \(s'(t)\). Đừng lấy đạo hàm của độ cao ban đầu là một hằng số.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Từ \(4{,}9t^2=461{,}3\) với \(t\ge0\), suy ra \(\displaystyle t_1=\sqrt{461{,}3/4{,}9}\) (s). Vì \(s'(t)=9{,}8t\), vận tốc lúc chạm đất là \(\displaystyle v(t_1)=9{,}8\sqrt{461{,}3/4{,}9}\approx95{,}1\) m/s theo chiều xuống.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Từ \(4{,}9t^2=461{,}3\) với \(t\ge0\), suy ra \(\displaystyle t_1=\sqrt{461{,}3/4{,}9}\) (s). Vì \(s'(t)=9{,}8t\), vận tốc ngay trước khi chạm đất là \(\displaystyle v(t_1)=9{,}8\sqrt{461{,}3/4{,}9}\approx95{,}1\) m/s theo chiều xuống.</p></div>
 
     **Kiểm lại:** \(t_1\) khoảng \(9{,}70\) giây, nên \(9{,}8t_1\) khoảng \(95{,}1\) m/s. Trong mô hình không lực cản, vận tốc tăng theo thời gian; chiều dương đã chọn khiến dấu dương có nghĩa đi **xuống**, không phải đi lên.
 

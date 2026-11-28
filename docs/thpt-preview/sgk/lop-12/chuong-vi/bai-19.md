@@ -124,7 +124,7 @@
 
     <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Bayes.</strong><p>Với \(P(B)\gt 0\), \(0\lt P(A)\lt 1\),</p><div class="arithmatex">\(\displaystyle P(A\mid B)=\frac{P(A)P(B\mid A)}{P(A)P(B\mid A)+P(\overline A)P(B\mid\overline A)}.\)</div><p>Tử là xác suất giao AB; mẫu là xác suất B tính bằng toàn phần. Nếu \(P(A)=0\), kết quả bằng 0; nếu \(P(A)=1\), kết quả bằng 1, với điều kiện \(P(B)\gt 0\).</p></div>
 
-    Khi có nhiều nguồn \(A_i\) như trên, xác suất nguồn \(A_j\) sau khi biết B là
+    Khi có nhiều nguồn \(A_1,\ldots,A_k\) đôi một xung khắc, phủ hết không gian mẫu và có xác suất dương, xác suất nguồn \(A_j\) sau khi biết biến cố B là
 
     \[
     P(A_j\mid B)=\frac{P(A_j)P(B\mid A_j)}{\sum_{i=1}^{k}P(A_i)P(B\mid A_i)},\quad P(B)>0.

@@ -147,7 +147,7 @@
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(u_n=1+5(n-1)=5n-4\), \(n\in\mathbb N^*\).</p></div>
 
-    **Kiểm lại:** \(u_1=1,\ u_2=6\) và \(u_n\equiv1\pmod5\); không bỏ số nguyên dương hợp lệ nào trong dãy đã sắp thứ tự.
+    **Kiểm lại:** \(u_1=1,\ u_2=6\) và \(u_n=5(n-1)+1\) nên chia 5 dư 1; không bỏ số nguyên dương hợp lệ nào trong dãy đã sắp thứ tự.
 
     ### 3.3. Từ truy hồi tới các số hạng cụ thể
 

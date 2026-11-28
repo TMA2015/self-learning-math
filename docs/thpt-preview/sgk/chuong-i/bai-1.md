@@ -14,7 +14,7 @@
 
     Toán học gọi những câu khẳng định có thể xác định **đúng hoặc sai** như hai câu đầu là **mệnh đề**. Một mệnh đề có thể sai mà vẫn là mệnh đề: điều quan trọng là nó có giá trị đúng hoặc sai xác định, chứ không phải ta muốn nó đúng.
 
-    Bây giờ hãy xét “\(n+2=7\)”. Nếu chưa biết \(n\) bằng bao nhiêu thì em chưa thể nói cả câu đúng hay sai. Nhưng khi thay \(n=5\), câu trở thành \(5+2=7\), là một mệnh đề đúng; thay \(n=4\), câu trở thành \(4+2=7\), là một mệnh đề sai. Đây là một **mệnh đề chứa biến**: ta phải xác định biến hoặc phát biểu thêm điều kiện thì mới xét được giá trị đúng sai.
+    Bây giờ hãy xét “\(n+2=7\)”. Nếu chưa biết \(n\) bằng bao nhiêu thì em chưa thể nói cả câu đúng hay sai. Nhưng khi thay \(n=5\), câu trở thành \(5+2=7\), là một mệnh đề đúng; thay \(n=4\), câu trở thành \(4+2=7\), là một mệnh đề sai. Đây là một **mệnh đề chứa biến**: ta phải gán cho biến một giá trị thuộc miền xét hoặc dùng lượng từ trên miền đó để tạo một mệnh đề có giá trị đúng sai xác định.
 
     Một điều thú vị khác là **chỉ một trường hợp** cũng có thể làm thay đổi kết luận. Nếu ai đó nói “Tất cả học sinh trong một đội đều biết bơi”, thì để bác bỏ câu này, em chỉ cần tìm được **một thành viên không biết bơi**. Em không cần chứng minh rằng không ai biết bơi. Đó là ý tưởng của *phủ định* và *phản ví dụ*.
 
@@ -200,7 +200,7 @@
 
     ### 3.3. Ví dụ 3 — Phân biệt chiều thuận và chiều đảo
 
-    **Đề bài.** Trên miền \(x\in\mathbb R\), xét \(P\): “\(x>3\)” và \(Q\): “\(x>1\)”. Mệnh đề \(P\Rightarrow Q\) và mệnh đề đảo \(Q\Rightarrow P\) đúng hay sai?
+    **Đề bài.** Trên miền \(x\in\mathbb R\), xét \(P\): “\(x>3\)” và \(Q\): “\(x>1\)”. Phát biểu “với mọi \(x\in\mathbb R\), \(P\Rightarrow Q\)” và phát biểu đảo “với mọi \(x\in\mathbb R\), \(Q\Rightarrow P\)” đúng hay sai?
 
     **Phân tích.** Với bất đẳng thức, em có thể so sánh trực tiếp các miền giá trị. Muốn chứng minh chiều thuận, xét mọi \(x\) thỏa \(P\); muốn bác bỏ chiều đảo, chỉ cần một \(x\) thỏa \(Q\) nhưng không thỏa \(P\).
 

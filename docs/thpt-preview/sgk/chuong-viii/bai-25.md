@@ -79,7 +79,7 @@
 
         **Đáp án:** 10.
 
-        **Lập luận:** Chọn hai trong năm nhân tử cho b theo C₅²=5!/(2!3!)=10 cách; ba nhân tử còn lại cho a.
+        **Lập luận:** Chọn hai trong năm nhân tử cho b theo \(C_5^2=\dfrac{5!}{2!3!}=10\) cách; ba nhân tử còn lại cho a.
 
         **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
 
@@ -91,8 +91,8 @@
     ??? tip "Kiểm lỗi"
 
         1. **Nhận diện lỗi:** Nếu đáp 5, em nhầm số mũ với số cách chọn; nếu 20, em đếm thứ tự hai vị trí b không cần thiết.
-        2. **Quay lại bản chất:** Đơn thức a³b² xuất hiện khi chọn b từ đúng hai trong năm nhân tử; ba nhân tử còn lại chọn a. Có C₅²=10 cách chọn vị trí b.
-        3. **Tự làm lại:** Vẽ năm vị trí, đánh dấu hai vị trí b hoặc tính C₅².
+        2. **Quay lại bản chất:** Đơn thức a³b² xuất hiện khi chọn b từ đúng hai trong năm nhân tử; ba nhân tử còn lại chọn a. Có \(C_5^2=10\) cách chọn vị trí b.
+        3. **Tự làm lại:** Vẽ năm vị trí, đánh dấu hai vị trí b hoặc tính \(C_5^2\).
         4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
         5. **Luyện tiếp:** Mở câu luyện qua liên kết bên dưới và tự làm trước khi đối chiếu. Nếu đã xem lời giải, hãy chọn một câu khác để thử không có gợi ý.
 
@@ -122,7 +122,7 @@
     ??? tip "Kiểm lỗi"
 
         1. **Nhận diện lỗi:** Nếu đáp +8, em đã bỏ dấu (−1)³; nếu đáp −4, em quên nhân hệ số 2 ở nhân tử còn lại.
-        2. **Quay lại bản chất:** Hệ số x^k gồm ba phần: số cách chọn k vị trí là C(n,k), phần số 2^(n−k) từ các vị trí còn lại và dấu (−1)^k. Dấu không tùy ý.
+        2. **Quay lại bản chất:** Hệ số của \(x^k\) gồm ba phần: số cách chọn k vị trí là \(C_n^k\), thừa số \(2^{n-k}\) từ các vị trí còn lại và dấu \((-1)^k\). Dấu không tùy ý.
         3. **Tự làm lại:** Viết riêng C₄³, 2¹, (−1)³ rồi nhân từng phần.
         4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
         5. **Luyện tiếp:** Mở câu luyện qua liên kết bên dưới và tự làm trước khi đối chiếu. Nếu đã xem lời giải, hãy chọn một câu khác để thử không có gợi ý.
@@ -141,7 +141,7 @@
 
         **Đáp án:** 81.
 
-        **Lập luận:** Chọn 3 từ cả bốn nhân tử: C₄⁰(2x)⁰3⁴=81. Với k≥1, số hạng chứa x^k nên không là hằng số.
+        **Lập luận:** Chọn 3 từ cả bốn nhân tử: \(C_4^0(2x)^0 3^4=81\). Với \(k\ge1\), số hạng chứa \(x^k\) nên không là hằng số.
 
         **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
 

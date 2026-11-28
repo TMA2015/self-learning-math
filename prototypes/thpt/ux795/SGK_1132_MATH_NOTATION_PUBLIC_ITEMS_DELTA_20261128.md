@@ -206,6 +206,14 @@ Owner authorization 7234992998; latest owner direct instruction after CP09. DELT
       {
         "before": "Với 0≤k≤n, A(n,k)=C(n,k)·k!.",
         "after": "Với \\(1\\le k\\le n\\), \\(A_n^k=C_n^k\\cdot k!\\)."
+      },
+      {
+        "before": "\\(1\\le k\\le n\\)):  \\(A_n^k",
+        "after": "\\(1\\le k\\le n\\)): \\(A_n^k"
+      },
+      {
+        "before": "\\(0\\le k\\le n\\)):  \\(C_n^k",
+        "after": "\\(0\\le k\\le n\\)): \\(C_n^k"
       }
     ]
   },
@@ -250,6 +258,10 @@ Owner authorization 7234992998; latest owner direct instruction after CP09. DELT
       {
         "before": "Gieo hai xúc xắc cân đối phân biệt.",
         "after": "Gieo độc lập hai xúc xắc cân đối phân biệt."
+      },
+      {
+        "before": "theo quy tắc nhân,  có",
+        "after": "theo quy tắc nhân, có"
       }
     ]
   },
@@ -340,6 +352,26 @@ Owner authorization 7234992998; latest owner direct instruction after CP09. DELT
       {
         "before": "<p><strong>Dấu hiệu:</strong> Khai triển toàn bộ để tìm hạng không chứa x trong (a+bx)^n, hoặc tự động coi bài chứa x⁻¹ là Core bắt buộc.</p>",
         "after": "<p><strong>Cách làm chưa tối ưu:</strong> Khai triển toàn bộ để tìm hạng không chứa x vẫn đúng nhưng dài hơn chọn ngay hạng cần tìm. <strong>Nhầm phạm vi:</strong> Tự động coi bài chứa x⁻¹ là bài bắt buộc.</p>"
+      },
+      {
+        "before": "C₅²=5!/(2!3!)=10",
+        "after": "\\(C_5^2=\\dfrac{5!}{2!3!}=10\\)"
+      },
+      {
+        "before": "Có C₅²=10 cách",
+        "after": "Có \\(C_5^2=10\\) cách"
+      },
+      {
+        "before": "hoặc tính C₅².",
+        "after": "hoặc tính \\(C_5^2\\)."
+      },
+      {
+        "before": "Hệ số x^k gồm ba phần: số cách chọn k vị trí là C(n,k), phần số 2^(n−k) từ các vị trí còn lại và dấu (−1)^k.",
+        "after": "Hệ số của \\(x^k\\) gồm ba phần: số cách chọn k vị trí là \\(C_n^k\\), thừa số \\(2^{n-k}\\) từ các vị trí còn lại và dấu \\((-1)^k\\)."
+      },
+      {
+        "before": "C₄⁰(2x)⁰3⁴=81. Với k≥1, số hạng chứa x^k",
+        "after": "\\(C_4^0(2x)^0 3^4=81\\). Với \\(k\\ge1\\), số hạng chứa \\(x^k\\)"
       }
     ]
   },
@@ -360,6 +392,10 @@ Owner authorization 7234992998; latest owner direct instruction after CP09. DELT
       {
         "before": "dẫn đến \\(u_1\\ne u_1\\) khi thay \\(n=1\\).",
         "after": "Thay \\(n=1\\) vào công thức này cho \\(u_1+d\\) thay vì \\(u_1\\); nếu \\(d\\ne0\\), hai giá trị khác nhau."
+      },
+      {
+        "before": "Viết \\(u_n=u_1+nd\\), Thay",
+        "after": "Viết \\(u_n=u_1+nd\\). Thay"
       }
     ]
   },
@@ -438,6 +474,10 @@ Owner authorization 7234992998; latest owner direct instruction after CP09. DELT
       {
         "before": "hai điểm cố định của dạng hàm mũ",
         "after": "hai điểm đặc biệt \\((0;1)\\) và \\((1;2)\\) của đồ thị này"
+      },
+      {
+        "before": "hai điểm đặc biệt \\((0;1)\\) và \\((1;2)\\) của đồ thị này",
+        "after": "hai điểm đặc biệt của đồ thị hàm số này"
       }
     ]
   },
@@ -648,6 +688,104 @@ Owner authorization 7234992998; latest owner direct instruction after CP09. DELT
       {
         "before": "Mỗi cá thể truyền ngẫu nhiên một trong hai gene, hai lần truyền độc lập. Tính xác suất con nhận hai gene b.",
         "after": "Tại gen đang xét có hai alen B và b; mỗi bố hoặc mẹ truyền một trong hai alen của mình với xác suất bằng nhau, hai lần truyền độc lập. Tính xác suất con nhận hai alen b."
+      },
+      {
+        "before": "Khi có nhiều nguồn \\(A_i\\) như trên, xác suất nguồn \\(A_j\\) sau khi biết B là",
+        "after": "Khi có nhiều nguồn \\(A_1,\\ldots,A_k\\) đôi một xung khắc, phủ hết không gian mẫu và có xác suất dương, xác suất nguồn \\(A_j\\) sau khi biết biến cố B là"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/chuong-i/bai-1.md",
+    "old": "dba6430cd79b17dee0591fb2dcd075ea5200b126",
+    "edits": [
+      {
+        "before": "ta phải xác định biến hoặc phát biểu thêm điều kiện thì mới xét được giá trị đúng sai.",
+        "after": "ta phải gán cho biến một giá trị thuộc miền xét hoặc dùng lượng từ trên miền đó để tạo một mệnh đề có giá trị đúng sai xác định."
+      },
+      {
+        "before": "Mệnh đề \\(P\\Rightarrow Q\\) và mệnh đề đảo \\(Q\\Rightarrow P\\) đúng hay sai?",
+        "after": "Phát biểu “với mọi \\(x\\in\\mathbb R\\), \\(P\\Rightarrow Q\\)” và phát biểu đảo “với mọi \\(x\\in\\mathbb R\\), \\(Q\\Rightarrow P\\)” đúng hay sai?"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/chuong-i/bai-2.md",
+    "old": "3002487e974f2693528a39b2b2055fad8724d698",
+    "edits": [
+      {
+        "before": "Theo SGK \\(\\mathbb N=\\{0,1,2,\\ldots\\}\\),",
+        "after": "Đọc dấu \\(\\mid\\) là “sao cho”; \\(\\mathbb N\\) là tập số tự nhiên. Theo SGK \\(\\mathbb N=\\{0,1,2,\\ldots\\}\\),"
+      },
+      {
+        "before": "Với hai tập hữu hạn, nếu cộng \\(n(A)+n(B)\\)",
+        "after": "Với tập hữu hạn \\(A\\), kí hiệu \\(n(A)\\) là số phần tử của \\(A\\). Với hai tập hữu hạn, nếu cộng \\(n(A)+n(B)\\)"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+    "old": "79f8101d34430bc0d672558115191a95875014a6",
+    "edits": [
+      {
+        "before": "so sánh độ cao với độ lệch ngang;",
+        "after": "là tung độ chia hoành độ có dấu của điểm trên nửa đường tròn đơn vị;"
+      },
+      {
+        "before": "Khi cần **tìm góc** từ sin, phím hàm ngược thường chỉ hiển thị một góc chính.",
+        "after": "Khi cần **tìm góc** từ sin, phím hàm ngược thường chỉ hiển thị một góc chính. Kí hiệu \\(\\sin^{-1}\\), \\(\\cos^{-1}\\), \\(\\tan^{-1}\\) trên máy ở đây là các phím tìm góc, không phải nghịch đảo của các giá trị lượng giác."
+      },
+      {
+        "before": "để đưa góc vào khoảng cần xét.",
+        "after": "để đưa góc vào khoảng cần xét; riêng \\(\\tan\\alpha=0\\) có hai nghiệm \\(0^\\circ\\) và \\(180^\\circ\\) trong đoạn này."
+      },
+      {
+        "before": "Lý do là thành phần tọa độ đứng tính từ **vị trí thấp nhất**,",
+        "after": "Góc quay được đo từ vị trí thấp nhất; độ lệch đứng của cabin so với tâm là \\(-R\\cos\\theta\\). Cộng với độ cao tâm \\(H_0\\) để tìm độ cao cabin,"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-5.md",
+    "old": "6adf77092611788f301eb3e3dd0b52a4ddbd8a66",
+    "edits": [
+      {
+        "before": "\\(u_1=1,\\ u_2=6\\) và \\(u_n\\equiv1\\pmod5\\);",
+        "after": "\\(u_1=1,\\ u_2=6\\) và \\(u_n=5(n-1)+1\\) nên chia 5 dư 1;"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/bai-31.md",
+    "old": "8f3d2b6e144a5d5bee5635b7f5058291cc89c9ac",
+    "edits": [
+      {
+        "before": "Tính gần đúng vận tốc khi chạm đất, làm tròn đến một chữ số thập phân.",
+        "after": "Tính gần đúng vận tốc ngay trước khi chạm đất, làm tròn đến một chữ số thập phân."
+      },
+      {
+        "before": "vận tốc lúc chạm đất là",
+        "after": "vận tốc ngay trước khi chạm đất là"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md",
+    "old": "b40ce4dad554e94a6cb88c5b5d20274f91e8c336",
+    "edits": [
+      {
+        "before": "Đọc bảng biến thiên trên miền vô hạn",
+        "after": "Dùng tính đơn điệu trên miền vô hạn"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-ix.md",
+    "old": "862b99e722cfe268f8a5ebb34768f9f7b644ab3a",
+    "edits": [
+      {
+        "before": "lập thương sai phân s(2+h)-s(2),",
+        "after": "lập thương sai phân $\\dfrac{s(2+h)-s(2)}{h}$ với $h\\ne0$,"
       }
     ]
   }
