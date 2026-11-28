@@ -65,12 +65,18 @@ const eqHref=(actual,expected)=>assert.equal(new URL(actual).pathname,expected);
        assert(await section.count()>0,"G10 AP1 historical knowledge heading exists B"+lesson);
       }
      }else{
-       // G11 B01 is a frozen, owner-reviewed exception: its canonical source
-       // and first-paint hook intentionally reuse the Golden AP1/G10 styling.
-       // All other G11/G12 lessons must remain free of that class.
-       const shared=await page.locator(".md-content__inner.thpt-g10-knowledge-ap1").count();
-       assert.equal(shared,grade===11&&lesson<=4?1:0,
-         "Only Q18 G11 B01–B04 may reuse Golden AP1 styling across grades");
+       // Owner-approved #1039 W1–W13 upgraded all 52 G11/G12 canonical
+       // lessons to the same Golden first paint. The former B01–B04-only
+       // exception is obsolete; require the approved styling and exact tabs
+       // instead of accepting either class state. Keep all navigation,
+       // overflow, END and THCS checks unchanged.
+       const article=page.locator(".md-content__inner.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint='true']");
+       assert.equal(await article.count(),1,grade+" B"+lesson+" exact approved Golden AP1 first paint");
+       const tabs=article.locator(":scope > .tabbed-set");
+       assert.equal(await tabs.count(),1,grade+" B"+lesson+" one Golden tab set");
+       assert.deepEqual((await tabs.locator(".tabbed-labels > label").allTextContents()).map(x=>x.trim()),
+        ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],grade+" B"+lesson+" exact Golden tabs");
+       assert.equal(await tabs.locator(".tabbed-content > .tabbed-block").count(),4,grade+" B"+lesson+" four Golden panels");
      }
      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
      assert(overflow<=20,"Horizontal overflow "+grade+" B"+lesson+" @"+viewport.width+" "+overflow);
