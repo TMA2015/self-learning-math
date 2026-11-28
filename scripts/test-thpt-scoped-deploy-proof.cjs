@@ -1221,7 +1221,26 @@ function main(){
    assert(receipt.includes("**CANDIDATE_B"+n+"_SOURCE_BLOB:** "+tick+next+tick));
    assert.equal(candidateG10KnowledgeBlob(n),next,"exact reversible source delta");
    for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"])assert.deepEqual(tokenSet(before,id),tokenSet(now,id));
-   assert.deepEqual(firstAnswers(before),firstAnswers(now));
+   // B01-B04 use historical, varied question labels. All their question
+   // disclosures are First Try answers; lock every full block, not a label subset.
+   const answers=s=>{
+    const lines=s.split("\n"),out=[];let block=null;
+    for(const line of lines){
+     if(/^    \?\?\? question "[^"]+"$/.test(line)){
+      if(block)out.push(block.join("\n").trimEnd());
+      block=[line];continue;
+     }
+     if(block!==null){
+      if(!line.trim()||line.startsWith("        ")){block.push(line);continue}
+      out.push(block.join("\n").trimEnd());block=null;
+     }
+    }
+    if(block)out.push(block.join("\n").trimEnd());
+    assert.equal(out.length,[5,6,5,5][n-1],"exact historical disclosure count");
+    assert.equal(out.length,tokenSet(s,"data-thpt-first-try-id").length);
+    return out;
+   };
+   assert.deepEqual(answers(before),answers(now),"all historical answer blocks byte-identical");
    assert(originalMathPreserved(before,now),"all original math retained");
    assert.deepEqual([...now.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"]);
    assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final)/i.test(now));
