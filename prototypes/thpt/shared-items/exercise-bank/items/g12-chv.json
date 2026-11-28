@@ -1,7 +1,7 @@
 [
   {
     "item_id": "THPT-G12-B14-C01",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-C01",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B14-C01-XG6-20261128",
     "stem": "Cho mặt phẳng \\(x-2y+3z-4=0\\). Tìm một vectơ pháp tuyến.",
     "answer_key": "\\((1;-2;3)\\).",
     "worked_solution": "Hệ số của x, y, z tạo thành vectơ pháp tuyến \\(\\vec n=(1;-2;3)\\ne\\vec0\\). Hằng số -4 chỉ xác định vị trí mặt phẳng.",
@@ -9,7 +9,7 @@
       "G12-CHV-B14-O01"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Đọc ba hệ số x,y,z."
     ],
@@ -2806,7 +2806,7 @@
   },
   {
     "item_id": "THPT-G12-B16-C04",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-C04",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-C04-XG6-20261128",
     "stem": "Đường có chỉ phương \\((0;0;1)\\) có quan hệ gì với mặt phẳng z=0?",
     "answer_key": "Đường thẳng vuông góc mặt phẳng.",
     "worked_solution": "Chỉ phương khác không cùng phương với pháp tuyến của mặt. Do đó đường thẳng vuông góc mặt phẳng, góc 90°.",
@@ -2814,7 +2814,7 @@
       "G12-CHV-B16-O04"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "So hướng u và pháp tuyến n."
     ],
@@ -4322,5 +4322,127 @@
       }
     ],
     "exercise_type": "INTERACTIVE"
+  },
+  {
+    "item_id": "THPT-G12-B15-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G12-B15-L1-01",
+    "stem": "Cho \\(M_0(x_0;y_0;z_0)\\) và vectơ chỉ phương \\(\\vec u=(a;b;c)\\ne\\vec0\\). Hệ phương trình nào biểu diễn đường thẳng qua \\(M_0\\) có chỉ phương \\(\\vec u\\)?",
+    "answer_key": "\\(\\begin{cases}x=x_0+at\\\\y=y_0+bt\\\\z=z_0+ct\\end{cases},\\ t\\in\\mathbb R.\\)",
+    "worked_solution": "Điểm \\(M\\) thuộc đường thẳng khi \\(\\overrightarrow{M_0M}=t\\vec u\\) với \\(t\\) thực bất kì. Viết theo từng tọa độ được \\(x=x_0+at,\\ y=y_0+bt,\\ z=z_0+ct\\). Không giới hạn tham số chỉ dương, vì khi đó không còn toàn bộ đường thẳng.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G12-CHV-B15-O01"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ biểu thức điểm cố định cộng tham số nhân vectơ chỉ phương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+        "blob": "24e463e61c6cc4f78dca45c1f19661ffed6786eb",
+        "commit": "792e227269ed0b0a50cc2b3b5d32162b34eab6e0"
+      },
+      "related_item_ids": [
+        "THPT-G12-B15-C01"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đổi vai trò điểm và vectơ hoặc giới hạn tham số dương, ôn Bài 15 phương trình tham số; kiểm giá trị tại tham số bằng 0 rồi làm bài lập phương trình đường thẳng.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(\\begin{cases}x=x_0+at\\\\y=y_0+bt\\\\z=z_0+ct\\end{cases},\\ t\\in\\mathbb R.\\)"
+      },
+      {
+        "id": "B",
+        "text": "\\(\\begin{cases}x=a+x_0t\\\\y=b+y_0t\\\\z=c+z_0t\\end{cases},\\ t\\in\\mathbb R.\\)"
+      },
+      {
+        "id": "C",
+        "text": "\\(\\begin{cases}x=x_0+at\\\\y=y_0+bt\\\\z=z_0+ct\\end{cases},\\ t>0.\\)"
+      },
+      {
+        "id": "D",
+        "text": "\\(\\begin{cases}x=x_0+at\\\\y=y_0+at\\\\z=z_0+at\\end{cases},\\ t\\in\\mathbb R.\\)"
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G12-B17-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G12-B17-L1-01",
+    "stem": "Mặt cầu tâm \\(I(a;b;c)\\), bán kính \\(R>0\\), có phương trình nào?",
+    "answer_key": "\\((x-a)^2+(y-b)^2+(z-c)^2=R^2\\).",
+    "worked_solution": "Mặt cầu là tập hợp điểm cách tâm đúng \\(R\\), nên bình phương khoảng cách cho \\((x-a)^2+(y-b)^2+(z-c)^2=R^2\\). Bất đẳng thức không vượt quá \\(R^2\\) mô tả khối cầu, bao gồm cả phần trong.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G12-CHV-B17-O01"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ khoảng cách từ điểm trên mặt cầu tới tâm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+        "blob": "24e463e61c6cc4f78dca45c1f19661ffed6786eb",
+        "commit": "792e227269ed0b0a50cc2b3b5d32162b34eab6e0"
+      },
+      "related_item_ids": [
+        "THPT-G12-B17-C01"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm dấu tâm hoặc phương trình mặt cầu với bất đẳng thức khối cầu, ôn Bài 17 phương trình mặt cầu và luyện câu lập phương trình từ tâm, bán kính.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\((x+a)^2+(y+b)^2+(z+c)^2=R^2\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\((x-a)^2+(y-b)^2+(z-c)^2=R\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\((x-a)^2+(y-b)^2+(z-c)^2\\le R^2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\((x-a)^2+(y-b)^2+(z-c)^2=R^2\\)."
+      }
+    ]
   }
 ]
