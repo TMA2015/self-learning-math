@@ -2618,14 +2618,6 @@
   {
     "collection": "SGK:G10:CHVII:B22:PRACTICE",
     "role": "SGK_PRACTICE",
-    "order": 4,
-    "item_id": "THPT-G10-B22-P01",
-    "skill_id": "G10-B22-ELLIPSE_PARAMETERS",
-    "legacy_order": 2
-  },
-  {
-    "collection": "SGK:G10:CHVII:B22:PRACTICE",
-    "role": "SGK_PRACTICE",
     "order": 3,
     "item_id": "THPT-G10-B22-P01",
     "skill_id": "G10-B22-ELLIPSE_PARAMETERS",
@@ -2637,12 +2629,19 @@
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
       "mastery": false
-    }
+    },
+    "legacy_placement_aliases": [
+      {
+        "collection": "SGK:G10:CHVII:B22:PRACTICE",
+        "role": "SGK_PRACTICE",
+        "order": 2
+      }
+    ]
   },
   {
     "collection": "SGK:G10:CHVII:B22:PRACTICE",
     "role": "SGK_PRACTICE",
-    "order": 5,
+    "order": 4,
     "item_id": "THPT-G10-B22-P02",
     "skill_id": "G10-B22-HYPERBOLA_PARAMETERS",
     "legacy_order": 3
@@ -2650,7 +2649,7 @@
   {
     "collection": "SGK:G10:CHVII:B22:PRACTICE",
     "role": "SGK_PRACTICE",
-    "order": 6,
+    "order": 5,
     "item_id": "THPT-G10-B22-P03",
     "skill_id": "G10-B22-PARABOLA_FOCUS",
     "legacy_order": 4
@@ -2713,7 +2712,7 @@
   {
     "collection": "SGK:G10:CHVII:B22:PRACTICE",
     "role": "SGK_PRACTICE",
-    "order": 7,
+    "order": 6,
     "item_id": "THPT-G10-B22-P05",
     "skill_id": "G10-B22-CONIC_INTERSECTION",
     "legacy_order": 5
@@ -2721,7 +2720,7 @@
   {
     "collection": "SGK:G10:CHVII:B22:PRACTICE",
     "role": "SGK_PRACTICE",
-    "order": 8,
+    "order": 7,
     "item_id": "THPT-G10-B22-P06",
     "skill_id": "G10-B22-PARABOLA_FOCUS",
     "legacy_order": 6
@@ -3159,7 +3158,7 @@
         "SGK:G10:CHVII:B22:PRACTICE"
       ],
       "practice_orders": [
-        5
+        4
       ]
     }
   },
@@ -3205,7 +3204,7 @@
         "SGK:G10:CHVII:B22:PRACTICE"
       ],
       "practice_orders": [
-        8
+        7
       ]
     }
   },
@@ -3228,7 +3227,7 @@
         "SGK:G10:CHVII:B22:PRACTICE"
       ],
       "practice_orders": [
-        7
+        6
       ]
     }
   },
@@ -3251,7 +3250,7 @@
         "SGK:G10:CHVII:B22:PRACTICE"
       ],
       "practice_orders": [
-        9
+        8
       ]
     }
   },
@@ -7525,7 +7524,7 @@
         "SGK:G10:CHVII:B22:PRACTICE"
       ],
       "practice_orders": [
-        5
+        4
       ]
     }
   },
@@ -7703,7 +7702,7 @@
   {
     "collection": "SGK:G10:CHVII:B22:PRACTICE",
     "role": "SGK_PRACTICE",
-    "order": 9,
+    "order": 8,
     "item_id": "THPT-TOP14-P23",
     "skill_id": "G10-B22-CONIC_MODEL",
     "candidate_use": {
