@@ -66,7 +66,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B26_COIN_DIE_SAMPLE_SPACE.svg" loading="lazy" alt="Bảng hai hàng N, S và sáu cột chấm xúc xắc; bốn cặp ở cột 3 và 6 được đánh dấu" /><figcaption><strong>Đọc hình:</strong> đi theo từng hàng để thấy 12 cặp (mặt xu, số chấm). Bốn ô viền xanh ứng với số chấm 3 hoặc 6. Chỉ coi 12 cặp đồng khả năng khi xu cân đối, xúc xắc công bằng và hai thao tác độc lập.</figcaption></figure>
 
-    Một bảng hoặc cây giúp em không bỏ sót và không viết trùng kết quả. Với hai lựa chọn qua mỗi bước, dùng quy tắc nhân **sau khi** đã hiểu một phần tử của \(\Omega\) thực sự là gì.
+    Một bảng hoặc cây giúp em không bỏ sót và không viết trùng kết quả. Với phép thử gồm hai bước, khi mỗi lựa chọn ở bước đầu có cùng số lựa chọn ở bước sau, dùng quy tắc nhân **sau khi** đã hiểu một phần tử của \(\Omega\) thực sự là gì.
 
     **Vận dụng.**
 

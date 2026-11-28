@@ -1,0 +1,523 @@
+{
+  "base": "60d1983b3f4518344dcb4ea740f29f41c90e29bc",
+  "items": [
+    {
+      "path": "docs/thpt-preview/sgk/chuong-vi/bai-15.md",
+      "old": "ee38fdfeddc78a22a527a6a7449347f86eeee422",
+      "edits": [
+        {
+          "before": "còn mọi giá trị khác \\(1\\) đều đạt được; vậy",
+          "after": "còn với mỗi \\(y\\ne1\\), chọn \\(x=2+\\frac{3}{y-1}\\ne2\\) thì \\(g(x)=y\\). Vậy",
+          "count": 1
+        },
+        {
+          "before": "nếu chọn nhầm, chi phí tại ranh giới và dự đoán tiếp theo đều sai.",
+          "after": "dù trong ví dụ này hai biểu thức cho cùng giá trị tại mốc. Trong trường hợp tổng quát, chọn sai nhánh có thể cho kết quả sai.",
+          "count": 1
+        },
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#help-g10-chvi-try01) · [Kiểm lỗi 2](#help-g10-chvi-try02) · [Kiểm lỗi 3](#help-g10-chvi-try03) · [Kiểm lỗi 4](#help-g10-chvi-try05) · [Kiểm lỗi 5](#help-g10-chvi-try04).\n\n",
+          "count": 1
+        },
+        {
+          "before": "Giá trị tại x=2 phải theo nhánh chứa dấu bằng; dù trong ví dụ này hai biểu thức cho cùng giá trị tại mốc.",
+          "after": "Giá trị tại x=2 phải theo nhánh chứa dấu bằng, mặc dù trong ví dụ này hai biểu thức cho cùng giá trị tại mốc.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-vi/bai-17.md",
+      "old": "bbfc3fdb1e2a5e153bfe20f933fbf8844263552a",
+      "edits": [
+        {
+          "before": "Hãy thử đổi a từ 1 sang −1 để phát hiện bước suy luận thiếu.",
+          "after": "So sánh \\(x^2+1\\) với \\(-x^2-1\\): cả hai đều có \\(\\Delta=-4\\), nhưng dấu của \\(a\\) trái nhau.",
+          "count": 1
+        },
+        {
+          "before": "Khi \\(\\Delta=0\\).",
+          "after": "Khi \\(\\Delta=0\\), tam thức có dạng bình phương nhân với \\(a\\).",
+          "count": 1
+        },
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#help-g10-chvi-try11) · [Kiểm lỗi 2](#help-g10-chvi-try12) · [Kiểm lỗi 3](#help-g10-chvi-try13) · [Kiểm lỗi 4](#help-g10-chvi-try15) · [Kiểm lỗi 5](#help-g10-chvi-try14).\n\n",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-vii/bai-19.md",
+      "old": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+      "edits": [
+        {
+          "before": "AM=(x-1,y-3), n·AM=2(x-1)-(y-3); thế A được 0.",
+          "after": "\\(\\overrightarrow{AM}=(x-1;y-3)\\), \\(\\vec n\\cdot\\overrightarrow{AM}=2(x-1)-(y-3)\\); thế tọa độ \\(A\\) được \\(0\\).",
+          "count": 1
+        },
+        {
+          "before": "Qua A có pháp tuyến n thì n·AM=0; phải dùng x-xA, y-yA, không đảo dấu tùy ý.",
+          "after": "Qua \\(A\\) có pháp tuyến \\(\\vec n\\) thì \\(\\vec n\\cdot\\overrightarrow{AM}=0\\); phải dùng \\(x-x_A,\\ y-y_A\\), không đảo dấu tùy ý.",
+          "count": 1
+        },
+        {
+          "before": "\\(M=A+t\\vec u\\)",
+          "after": "\\(\\overrightarrow{AM}=t\\vec u\\)",
+          "count": 1
+        },
+        {
+          "before": "\\(A+\\vec u\\)",
+          "after": "điểm \\(M\\) thỏa mãn \\(\\overrightarrow{AM}=\\vec u\\)",
+          "count": 1
+        },
+        {
+          "before": "Một điểm M=A+t·u cần cùng t thực cho cả hai tọa độ; t không nhất thiết là thời gian.",
+          "after": "Phương trình \\(\\overrightarrow{AM}=t\\vec u\\) dùng cùng một tham số thực \\(t\\) cho cả hai tọa độ; \\(t\\) không nhất thiết là thời gian.",
+          "count": 1
+        },
+        {
+          "before": "AB=(3,3)≠0, chọn n=(1,-1)",
+          "after": "\\(\\overrightarrow{AB}=(3;3)\\ne\\vec0\\), chọn \\(\\vec n=(1;-1)\\)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-vii/bai-20.md",
+      "old": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
+      "edits": [
+        {
+          "before": "Phần nằm dưới dấu trị tuyệt đối trong công thức đo độ lệch có dấu; chia cho độ dài pháp tuyến",
+          "after": "Tử số trước khi lấy trị tuyệt đối là giá trị biểu thức vế trái tại điểm đang xét. Chia cho độ dài vectơ pháp tuyến cho độ lệch có dấu (dấu phụ thuộc chiều pháp tuyến); lấy trị tuyệt đối",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-vii/bai-21.md",
+      "old": "e3da0e71eebde3f879a35d3e044eea49fa03b5d7",
+      "edits": [
+        {
+          "before": "IM=(3,4), IM²=9+16=25=R²",
+          "after": "\\(\\overrightarrow{IM}=(3;4)\\), \\(IM^2=9+16=25=R^2\\)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-vii/bai-22.md",
+      "old": "045b24b9df5ae19de6e857d4781083311f132c32",
+      "edits": [
+        {
+          "before": "Một cặp trạm và một độ lệch thời gian chỉ cho **một nhánh quỹ tích**, chưa cho tọa độ duy nhất của máy thu.",
+          "after": "Nếu biết cả độ lớn chênh lệch thời gian và tín hiệu nào đến trước, ta xác định được **một nhánh quỹ tích**; nếu chỉ biết độ lớn, cả hai nhánh đều có thể xảy ra. Các dữ kiện này chưa xác định duy nhất tọa độ máy thu.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-viii/bai-23.md",
+      "old": "a5512d5a206d89808863257d5094e242e28d91c9",
+      "edits": [
+        {
+          "before": "Chọn cộng hay nhân chỉ bằng từ khóa và hoặc",
+          "after": "Nhầm quy tắc cộng và quy tắc nhân khi chỉ dựa vào từ khóa",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-viii/bai-24.md",
+      "old": "dbf48cdd16811a2581be679bdc86fc6ca15fe311",
+      "edits": [
+        {
+          "before": "Khác hoán vị ở chỗ chỉ dùng một phần tập hợp.",
+          "after": "Khi \\(k<n\\), chỉnh hợp chỉ dùng một phần tập hợp; khi \\(k=n\\), chỉnh hợp chính là hoán vị.",
+          "count": 1
+        },
+        {
+          "before": "Với 0≤k≤n, A(n,k)=C(n,k)·k!.",
+          "after": "Với 1≤k≤n, A(n,k)=C(n,k)·k!.",
+          "count": 1
+        },
+        {
+          "before": "\\(n\\) nguyên không âm. Với \\(0\\le k\\le n\\):",
+          "after": "\\(n\\) nguyên dương. Trong phạm vi SGK:",
+          "count": 1
+        },
+        {
+          "before": "\\(A_n^k=\\dfrac{n!}{(n-k)!}\\).",
+          "after": "\\(A_n^k=\\dfrac{n!}{(n-k)!}\\), với \\(1\\le k\\le n\\).",
+          "count": 1
+        },
+        {
+          "before": "\\(C_n^k=\\dfrac{n!}{k!(n-k)!}\\).",
+          "after": "\\(C_n^k=\\dfrac{n!}{k!(n-k)!}\\), với \\(0\\le k\\le n\\).",
+          "count": 1
+        },
+        {
+          "before": "vì mỗi nhóm k phần tử có k! thứ tự.",
+          "after": "với \\(1\\le k\\le n\\), vì mỗi nhóm k phần tử có k! thứ tự.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-viii/bai-25.md",
+      "old": "d8491aa03be4d1356fbbbb902d7f97a6e8553e0d",
+      "edits": [
+        {
+          "before": "đây là dạng mở rộng của bank hiện tại.",
+          "after": "đây là dạng mở rộng của bài học.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-ix/bai-26.md",
+      "old": "6b695c41cff31490630b380522752636fc57f8b7",
+      "edits": [
+        {
+          "before": "Với hai lựa chọn qua mỗi bước, dùng quy tắc nhân **sau khi** đã hiểu một phần tử của",
+          "after": "Với phép thử gồm hai bước, khi mỗi lựa chọn ở bước đầu có cùng số lựa chọn ở bước sau, dùng quy tắc nhân **sau khi** đã hiểu một phần tử của",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-ix/bai-27.md",
+      "old": "209de8ae01c8654e55e07648c76b7d98396f7393",
+      "edits": [
+        {
+          "before": "tổng hai số lẻ khi có một lẻ và một chẵn.",
+          "after": "tổng của hai số là số lẻ khi một số lẻ và một số chẵn.",
+          "count": 1
+        },
+        {
+          "before": "Gieo hai xúc xắc cân đối **phân biệt**:",
+          "after": "Gieo độc lập hai xúc xắc cân đối **phân biệt**:",
+          "count": 1
+        },
+        {
+          "before": "Chọn nam và nữ là hai công đoạn độc lập về **đếm nhóm**:",
+          "after": "Mỗi nhóm 3 nam có thể kết hợp với mọi nhóm 3 nữ; theo quy tắc nhân,",
+          "count": 1
+        },
+        {
+          "before": "Hộp I có bi đỏ, xanh, vàng; hộp II có bi xanh, vàng; hộp III có bi đỏ, xanh.",
+          "after": "Hộp I có đúng một bi mỗi màu đỏ, xanh, vàng; hộp II có đúng một bi mỗi màu xanh, vàng; hộp III có đúng một bi mỗi màu đỏ, xanh.",
+          "count": 1
+        },
+        {
+          "before": "Gieo hai xúc xắc cân đối phân biệt. Tính xác suất tổng số chấm bằng 5.",
+          "after": "Gieo độc lập hai xúc xắc cân đối phân biệt. Tính xác suất tổng số chấm bằng 5.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-ii/bai-3.md",
+      "old": "edb7c2b40e5307a0ce47941c4065421c066cb2f8",
+      "edits": [
+        {
+          "before": "Muốn xác định phía nghiệm, dùng một điểm thử không nằm trên biên.",
+          "after": "Muốn xác định phía nghiệm, dùng một điểm thử không nằm trên biên. Biểu thức \\(ax+by-c\\) bằng \\(0\\) trên đường biên và giữ cùng dấu trong mỗi nửa mặt phẳng mở, nên chỉ cần thử một điểm ở mỗi phía.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-ii/bai-4.md",
+      "old": "3ee8fd5b8f7e3a8055a69d08a64a9800a642d2af",
+      "edits": [
+        {
+          "before": "**đa giác không rỗng, đóng và bị chặn**, đường",
+          "after": "**đa giác không rỗng, đóng và bị chặn** (có điểm thỏa mãn, lấy cả biên và nằm trong một vùng hữu hạn), đường",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-iii/bai-6.md",
+      "old": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+      "edits": [
+        {
+          "before": "dữ kiện SAS/SSS/AAS",
+          "after": "dữ kiện hai cạnh và góc xen giữa, ba cạnh, hoặc hai góc và một cạnh",
+          "count": 1
+        },
+        {
+          "before": "SAS → dùng côsin tìm cạnh. SSS → dùng côsin tìm góc.",
+          "after": "Hai cạnh và góc xen giữa (SAS) → dùng côsin tìm cạnh. Ba cạnh (SSS) → dùng côsin tìm góc.",
+          "count": 1
+        },
+        {
+          "before": "Với **SAS**,",
+          "after": "Với **hai cạnh và góc xen giữa (SAS)**,",
+          "count": 1
+        },
+        {
+          "before": "với **SSS**,",
+          "after": "với **ba cạnh (SSS)**,",
+          "count": 1
+        },
+        {
+          "before": "với **ASA/AAS**,",
+          "after": "với **hai góc và một cạnh (ASA/AAS)**,",
+          "count": 1
+        },
+        {
+          "before": "16S^2=4b^2c^2-(b^2+c^2-a^2)^2",
+          "after": "16S^2=4b^2c^2-(b^2+c^2-a^2)^2\n    =[2bc-(b^2+c^2-a^2)][2bc+(b^2+c^2-a^2)]",
+          "count": 1
+        },
+        {
+          "before": "16S^2=4b^2c^2-(b^2+c^2-a^2)^2\n    =[2bc-(b^2+c^2-a^2)][2bc+(b^2+c^2-a^2)]\n       =(a+b+c)(-a+b+c)(a-b+c)(a+b-c).",
+          "after": "\\begin{aligned}\n    16S^2&=4b^2c^2-(b^2+c^2-a^2)^2\\\\\n    &=[2bc-(b^2+c^2-a^2)]\\\\\n    &\\quad\\cdot[2bc+(b^2+c^2-a^2)]\\\\\n    &=(a+b+c)(-a+b+c)\\\\\n    &\\quad\\cdot(a-b+c)(a+b-c).\n    \\end{aligned}",
+          "count": 1
+        },
+        {
+          "before": "    b=6\\,\\frac{\\sin75^\\circ}{\\sin45^\\circ}\n     =3(\\sqrt3+1),\\qquad",
+          "after": "    b=6\\,\\frac{\\sin75^\\circ}{\\sin45^\\circ}\n     \\approx8{,}20,\\qquad",
+          "count": 1
+        },
+        {
+          "before": "\\(3(\\sqrt3+1)\\approx8{,}20\\)",
+          "after": "\\(b\\approx8{,}20\\)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-iv/bai-7.md",
+      "old": "c0337d68bea1383254316c2d852e41ba053f8523",
+      "edits": [
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B07-01) · [Kiểm lỗi 2](#HELP-G10-B07-02).\n\n",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-iv/bai-8.md",
+      "old": "b3a8e44fb06e42b7c9e084fb2c3f1d9d9974c3cf",
+      "edits": [
+        {
+          "before": "**Lời giải.** Với \\(F=|\\vec F_1+\\vec F_2|\\), định lí côsin cho",
+          "after": "**Lời giải.** Với \\(F=|\\vec F_1+\\vec F_2|\\), góc trong tam giác ghép hai vectơ là \\(180^\\circ-60^\\circ=120^\\circ\\). Vì \\(\\cos120^\\circ=-\\cos60^\\circ\\), định lí côsin cho",
+          "count": 1
+        },
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B08-02) · [Kiểm lỗi 2](#HELP-G10-B08-01).\n\n",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-iv/bai-9.md",
+      "old": "e357830a83f5d0a3fe113b796b4bb759cd75e746",
+      "edits": [
+        {
+          "before": "Hệ số âm thể hiện ngược chiều, không phải độ dài âm.",
+          "after": "Cụ thể, đặt \\(\\overrightarrow{OA}=\\vec a,\\ \\overrightarrow{OB}=\\vec b,\\ \\overrightarrow{OR}=\\vec u\\). Qua \\(R\\), kẻ các đường song song với \\(OB\\) và \\(OA\\), lần lượt cắt đường thẳng \\(OA\\) và \\(OB\\) tại \\(P,Q\\). Khi đó \\(\\vec u=\\overrightarrow{OP}+\\overrightarrow{OQ}\\); hai vectơ thành phần cùng phương với \\(\\vec a,\\vec b\\). Hệ số âm thể hiện ngược chiều, không phải độ dài âm.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-iv/bai-10.md",
+      "old": "bfb94e213e9e56f498baec8aac9d3c9897eec5b7",
+      "edits": [
+        {
+          "before": "Phép kiểm \\(ad-bc\\) chỉ dùng nhân và trừ, không có mẫu số bằng \\(0\\).",
+          "after": "Phép kiểm \\(ad-bc\\) chỉ dùng nhân và trừ, không có mẫu số bằng \\(0\\). Thật vậy, nếu \\(c=ta,\\ d=tb\\) thì \\(ad-bc=0\\). Ngược lại, với \\((a,b)\\ne(0,0)\\), nếu \\(a\\ne0\\) đặt \\(t=c/a\\) rồi suy ra \\(d=tb\\); nếu \\(a=0\\) thì \\(b\\ne0,\\ c=0\\), đặt \\(t=d/b\\).",
+          "count": 1
+        },
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B10-01) · [Kiểm lỗi 2](#HELP-G10-B10-02) · [Kiểm lỗi 3](#HELP-G10-CHIV-RIVER-TR01).\n\n",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-iv/bai-11.md",
+      "old": "d48815c7346d6b4dff091e0792097ec459f5e642",
+      "edits": [
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B11-02) · [Kiểm lỗi 2](#HELP-G10-B11-01) · [Kiểm lỗi 3](#HELP-G10-CHIV-FORCE-TR01).\n\n",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-v/bai-12.md",
+      "old": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+      "edits": [
+        {
+          "before": "hàng thấp nhất có một đơn vị lớn hơn d</strong> trước khi chọn hàng.",
+          "after": "hàng thấp nhất có một đơn vị lớn hơn d</strong> trước khi chọn hàng. Ví dụ, nếu \\(d=0{,}003\\), đơn vị hàng phần nghìn là \\(0{,}001\\) chưa lớn hơn \\(d\\), còn đơn vị hàng phần trăm là \\(0{,}01>d\\); do đó quy tròn đến hàng phần trăm.",
+          "count": 1
+        },
+        {
+          "before": "\\delta_a=0{,}003/12{,}35\\approx0{,}0243\\%",
+          "after": "\\delta_a=0{,}003/12{,}35\\approx0{,}000243=0{,}0243\\%",
+          "count": 1
+        },
+        {
+          "before": "<li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B12-C02 (không sao chép câu, không đổi đáp án hay lời giải).</li>",
+          "after": "",
+          "count": 1
+        },
+        {
+          "before": "<li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B12-P06.</li>",
+          "after": "",
+          "count": 1
+        },
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B12-01) · [Kiểm lỗi 2](#HELP-G10-B12-02) · [Kiểm lỗi 3](#HELP-G10-B12-CALC-01).\n\n",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-v/bai-13.md",
+      "old": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+      "edits": [
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B13-01) · [Kiểm lỗi 2](#HELP-G10-B13-02).\n\n",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-v/bai-14.md",
+      "old": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+      "edits": [
+        {
+          "before": "khoảng tứ phân vị nhìn hai mốc ôm phần giữa",
+          "after": "khoảng tứ phân vị (IQR, viết tắt của Interquartile Range) nhìn hai mốc ôm phần giữa",
+          "count": 1
+        },
+        {
+          "before": "<li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B14-P05.</li>",
+          "after": "",
+          "count": 1
+        },
+        {
+          "before": "<li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B14-P03.</li>",
+          "after": "",
+          "count": 1
+        },
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B14-01) · [Kiểm lỗi 2](#HELP-G10-B14-02).\n\n",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-vi/bai-16.md",
+      "old": "190f351516932caf0b8a417132f15e7915f79993",
+      "edits": [
+        {
+          "before": "(đặt \\(h=-\\frac{b}{2a}\\), \\(k=-\\frac{\\Delta}{4a}\\)):",
+          "after": "(đặt \\(\\Delta=b^2-4ac\\), \\(h=-\\frac{b}{2a}\\), \\(k=-\\frac{\\Delta}{4a}\\)): ",
+          "count": 1
+        },
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#help-g10-chvi-try06) · [Kiểm lỗi 2](#help-g10-chvi-try07) · [Kiểm lỗi 3](#help-g10-chvi-try09) · [Kiểm lỗi 4](#help-g10-chvi-try08) · [Kiểm lỗi 5](#help-g10-chvi-try10).\n\n",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-vi/bai-18.md",
+      "old": "d0961206048222b26e82900db8fff6a2f60b6ad3",
+      "edits": [
+        {
+          "before": "**Lời giải.** Bình phương hai vế và rút gọn:",
+          "after": "**Lời giải.** Điều kiện: \\(x\\ge-3\\) và \\(x^2+7x+11\\ge0\\). Bình phương hai vế (trong miền xác định) và rút gọn:",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md",
+      "old": "c7137287b1b3fcf872258149d7297d3103c94e4e",
+      "edits": [
+        {
+          "before": "Hệ số âm thể hiện ngược chiều, không phải độ dài âm.",
+          "after": "Cụ thể, đặt \\(\\overrightarrow{OA}=\\vec a,\\ \\overrightarrow{OB}=\\vec b,\\ \\overrightarrow{OR}=\\vec u\\). Qua \\(R\\), kẻ các đường song song với \\(OB\\) và \\(OA\\), lần lượt cắt đường thẳng \\(OA\\) và \\(OB\\) tại \\(P,Q\\). Khi đó \\(\\vec u=\\overrightarrow{OP}+\\overrightarrow{OQ}\\); hai vectơ thành phần cùng phương với \\(\\vec a,\\vec b\\). Hệ số âm thể hiện ngược chiều, không phải độ dài âm.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md",
+      "old": "357499096e25a4a5bf5de1166472df868f142a67",
+      "edits": [
+        {
+          "before": "Phép kiểm \\(ad-bc\\) chỉ dùng nhân và trừ, không có mẫu số bằng \\(0\\).",
+          "after": "Phép kiểm \\(ad-bc\\) chỉ dùng nhân và trừ, không có mẫu số bằng \\(0\\). Thật vậy, nếu \\(c=ta,\\ d=tb\\) thì \\(ad-bc=0\\). Ngược lại, với \\((a,b)\\ne(0,0)\\), nếu \\(a\\ne0\\) đặt \\(t=c/a\\) rồi suy ra \\(d=tb\\); nếu \\(a=0\\) thì \\(b\\ne0,\\ c=0\\), đặt \\(t=d/b\\).",
+          "count": 1
+        },
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B10-01) · [Kiểm lỗi 2](#HELP-G10-B10-02) · [Kiểm lỗi 3](#HELP-G10-CHIV-RIVER-TR01).\n\n",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md",
+      "old": "2aca842327878e3150295b68f530d4740d61154c",
+      "edits": [
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B11-02) · [Kiểm lỗi 2](#HELP-G10-B11-01) · [Kiểm lỗi 3](#HELP-G10-CHIV-FORCE-TR01).\n\n",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md",
+      "old": "1d11fadde3b592d68b328eb448318ac52d8a8c95",
+      "edits": [
+        {
+          "before": "hàng thấp nhất có một đơn vị lớn hơn d</strong> trước khi chọn hàng.",
+          "after": "hàng thấp nhất có một đơn vị lớn hơn d</strong> trước khi chọn hàng. Ví dụ, nếu \\(d=0{,}003\\), đơn vị hàng phần nghìn là \\(0{,}001\\) chưa lớn hơn \\(d\\), còn đơn vị hàng phần trăm là \\(0{,}01>d\\); do đó quy tròn đến hàng phần trăm.",
+          "count": 1
+        },
+        {
+          "before": "\\delta_a=0{,}003/12{,}35\\approx0{,}0243\\%",
+          "after": "\\delta_a=0{,}003/12{,}35\\approx0{,}000243=0{,}0243\\%",
+          "count": 1
+        },
+        {
+          "before": "<li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B12-C02 (không sao chép câu, không đổi đáp án hay lời giải).</li>",
+          "after": "",
+          "count": 1
+        },
+        {
+          "before": "<li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B12-P06.</li>",
+          "after": "",
+          "count": 1
+        },
+        {
+          "before": "=== \"Lỗi thường gặp\"\n\n",
+          "after": "=== \"Lỗi thường gặp\"\n\n    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B12-01) · [Kiểm lỗi 2](#HELP-G10-B12-02) · [Kiểm lỗi 3](#HELP-G10-B12-CALC-01).\n\n",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

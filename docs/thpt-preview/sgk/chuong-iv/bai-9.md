@@ -200,7 +200,7 @@
 
     **Vì sao cần điều kiện không cùng phương?** Nếu \(\vec b=2\vec a\), ta có \(\vec a+0\vec b=0\vec a+\tfrac12\vec b\): một vectơ mà có hai cặp hệ số khác nhau. Khi \(\vec a,\vec b\) không cùng phương, nếu \(x\vec a+y\vec b=x'\vec a+y'\vec b\) thì \((x-x')\vec a=(y'-y)\vec b\). Hai vectơ không cùng phương chỉ có thể bằng nhau như vậy khi cả hai hệ số đều \(0\); do đó \(x=x'\), \(y=y'\). Vậy cặp hệ số duy nhất.
 
-    **Cách làm khi gặp hình:** Chọn chung một điểm đầu; đưa vectơ cần phân tích về một đường đi có hai chặng theo hai phương đã cho; dùng quy tắc ba điểm, trung điểm hay hình bình hành để xác định \(x,y\); kiểm lại bằng cách cộng \(x\vec a+y\vec b\). Hệ số âm thể hiện ngược chiều, không phải độ dài âm.
+    **Cách làm khi gặp hình:** Chọn chung một điểm đầu; đưa vectơ cần phân tích về một đường đi có hai chặng theo hai phương đã cho; dùng quy tắc ba điểm, trung điểm hay hình bình hành để xác định \(x,y\); kiểm lại bằng cách cộng \(x\vec a+y\vec b\). Cụ thể, đặt \(\overrightarrow{OA}=\vec a,\ \overrightarrow{OB}=\vec b,\ \overrightarrow{OR}=\vec u\). Qua \(R\), kẻ các đường song song với \(OB\) và \(OA\), lần lượt cắt đường thẳng \(OA\) và \(OB\) tại \(P,Q\). Khi đó \(\vec u=\overrightarrow{OP}+\overrightarrow{OQ}\); hai vectơ thành phần cùng phương với \(\vec a,\vec b\). Hệ số âm thể hiện ngược chiều, không phải độ dài âm.
 
     #### Hệ quả: trung điểm và trọng tâm
 

@@ -193,7 +193,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Nhận xét — Điều kiện cùng phương bằng tọa độ:</strong> Với \(\vec u=(a;b)\ne\vec0\), \(\vec v=(c;d)\) cùng phương với \(\vec u\) khi và chỉ khi có số thực \(t\) sao cho \((c;d)=(ta;tb)\). Tương đương \(ad-bc=0\). Nếu hai vectơ đều khác không thì \(t>0\) cho cùng hướng, \(t<0\) cho ngược hướng. Trường hợp vectơ-không phải xét theo quy ước SGK, không chia cho tọa độ bằng \(0\).</div>
 
-    **Vì sao điều kiện \(ad-bc=0\) có ích?** Khi một tọa độ bằng \(0\), lập tỉ số \(c/a\) hoặc \(d/b\) có thể vô nghĩa. Phép kiểm \(ad-bc\) chỉ dùng nhân và trừ, không có mẫu số bằng \(0\). Với \(\vec0\), việc nói “hướng mũi tên” cần tách khỏi quy ước cùng phương trong SGK.
+    **Vì sao điều kiện \(ad-bc=0\) có ích?** Khi một tọa độ bằng \(0\), lập tỉ số \(c/a\) hoặc \(d/b\) có thể vô nghĩa. Phép kiểm \(ad-bc\) chỉ dùng nhân và trừ, không có mẫu số bằng \(0\). Thật vậy, nếu \(c=ta,\ d=tb\) thì \(ad-bc=0\). Ngược lại, với \((a,b)\ne(0,0)\), nếu \(a\ne0\) đặt \(t=c/a\) rồi suy ra \(d=tb\); nếu \(a=0\) thì \(b\ne0,\ c=0\), đặt \(t=d/b\). Với \(\vec0\), việc nói “hướng mũi tên” cần tách khỏi quy ước cùng phương trong SGK.
 
     <div class="thpt-r4-key-formula" role="note"><strong>Hệ quả hình học — Trung điểm và trọng tâm:</strong> Nếu \(M\) là trung điểm \(AB\), \(G\) là trọng tâm tam giác \(ABC\) (ba đỉnh không thẳng hàng), thì
     <div class="arithmatex">\(\displaystyle M\left(\frac{x_A+x_B}{2};\frac{y_A+y_B}{2}\right)\)</div>
@@ -253,6 +253,8 @@
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><picture><source media="(max-width: 600px)" srcset="../../../../assets/images/thpt/THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg"><img src="../../../../assets/images/thpt/THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg" alt="Sơ đồ hai hướng vận tốc ca nô và dòng nước; mũi thuyền lái Bắc có trôi, mũi lái chếch ngược dòng để không trôi" loading="lazy"></picture><figcaption><strong>Đọc hình theo đúng dữ kiện Ví dụ 4:</strong> Sông rộng \(96\,\mathrm m\), dòng Đông \(3\,\mathrm{m/s}\), tốc độ riêng \(5\,\mathrm{m/s}\). Mũi tên xanh cho vận tốc riêng, cam cho dòng, lục cho vận tốc theo bờ; tỉ lệ chiều dài vectơ giữ nhất quán giữa hai tình huống. Thời gian dùng <strong>thành phần Bắc</strong>, không dùng độ lớn của mũi tên chéo.</figcaption></figure>
 
 === "Lỗi thường gặp"
+
+    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B10-01) · [Kiểm lỗi 2](#HELP-G10-B10-02) · [Kiểm lỗi 3](#HELP-G10-CHIV-RIVER-TR01).
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 

@@ -57,7 +57,7 @@
     ??? tip "Kiểm lỗi"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Chỉ thấy Δ âm mà kết luận f âm; quên xét dấu a.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em đã ghi Δ&lt;0 rồi tự kết luận tam thức âm mà chưa nhìn a? Hãy thử đổi a từ 1 sang −1 để phát hiện bước suy luận thiếu.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em đã ghi Δ&lt;0 rồi tự kết luận tam thức âm mà chưa nhìn a? So sánh \(x^2+1\) với \(-x^2-1\): cả hai đều có \(\Delta=-4\), nhưng dấu của \(a\) trái nhau.</li>
         <li><strong>Kiến thức gốc:</strong> Tam thức bậc hai là <span class="arithmatex">\(f(x)=ax^2+bx+c\)</span> với a≠0. Dấu của f(x) tại x chính là vị trí đồ thị so với trục Ox; nghiệm f(x)=0 là chỗ giao/tiếp xúc Ox. Số nghiệm được quyết định bởi <span class="arithmatex">\(\Delta\)</span>, còn hướng mở theo a.</li>
         <li><strong>Tự sửa:</strong> Viết hai ô: a dương/âm và Δ âm/bằng 0/dương, rồi mới kết luận theo hình và công thức. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-C01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
@@ -65,7 +65,7 @@
 
     Không phải parabol nào cũng cắt trục hoành tại hai điểm. Có trường hợp nó chỉ chạm trục rồi quay về phía cũ. Khi ấy giá trị hàm số bằng 0 ngay tại điểm chạm, còn ở hai phía của điểm đó, dấu không đổi.
 
-    Để giải thích hiện tượng này, hãy nhớ bình phương của một số luôn không âm và để ý dấu hệ số a. Khi \(\Delta=0\).
+    Để giải thích hiện tượng này, hãy nhớ bình phương của một số luôn không âm và để ý dấu hệ số a. Khi \(\Delta=0\), tam thức có dạng bình phương nhân với \(a\).
 
     Với \(\Delta=0\), tam thức viết được dưới dạng \(a(x-x_0)^2\). Nó bằng 0 tại x0, có dấu của a ở mọi điểm khác; vì bình phương không âm nên không có sự đổi dấu khi đi qua nghiệm kép.
 
@@ -395,6 +395,8 @@
     [Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Em có thể mở gợi ý và lời giải sau khi đã tự thử.
 
 === "Lỗi thường gặp"
+
+    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#help-g10-chvi-try11) · [Kiểm lỗi 2](#help-g10-chvi-try12) · [Kiểm lỗi 3](#help-g10-chvi-try13) · [Kiểm lỗi 4](#help-g10-chvi-try15) · [Kiểm lỗi 5](#help-g10-chvi-try14).
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 

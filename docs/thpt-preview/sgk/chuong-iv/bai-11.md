@@ -285,6 +285,8 @@
 
 === "Lỗi thường gặp"
 
+    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B11-02) · [Kiểm lỗi 2](#HELP-G10-B11-01) · [Kiểm lỗi 3](#HELP-G10-CHIV-FORCE-TR01).
+
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
     <p class="thpt-r4-footnote">Nguồn học liệu: SGK Toán 10 Kết nối tri thức và thư viện SLM hiện hành. Các tình huống tự học bổ sung dùng dữ kiện minh họa riêng, không thay thế bài tập SGK/SBT.</p>

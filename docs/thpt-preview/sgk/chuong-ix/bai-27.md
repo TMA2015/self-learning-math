@@ -99,7 +99,7 @@
 
         <p><strong>Lỗi cần kiểm:</strong> Đếm trùng một nhóm khi chọn không xét thứ tự.</p>
         <p><strong>Bước 1:</strong> Nhận diện lỗi: đếm (1,2) và (2,1) thành hai nhóm khác nhau khi chọn đồng thời.</p>
-        <p><strong>Bước 2:</strong> Ôn B24 tổ hợp và tính chẵn lẻ; tổng hai số lẻ khi có một lẻ và một chẵn.</p>
+        <p><strong>Bước 2:</strong> Ôn B24 tổ hợp và tính chẵn lẻ; tổng của hai số là số lẻ khi một số lẻ và một số chẵn.</p>
         <p><strong>Bước 3:</strong> Thử {1,2,3}: ba nhóm {1,2},{1,3},{2,3}; hai nhóm có tổng lẻ.</p>
         <p><strong>Bước 4:</strong> Liệt kê 6 nối lẻ–chẵn trên năm số và đối chiếu với tổng 10 nhóm rồi mở lời giải.</p>
         <p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập để củng cố chọn đều các nhóm bằng tổ hợp.</p>
@@ -199,7 +199,7 @@
 
     ### 1.5. Điều kiện đồng khả năng
 
-    Gieo hai xúc xắc cân đối **phân biệt**: cặp (1,2) khác (2,1), nên 36 cặp có thứ tự đồng khả năng. Nếu gộp thành 21 cặp không thứ tự, nhóm {1,2} gồm hai kết quả gốc còn {1,1} chỉ có một. Vì vậy **21 nhóm không đồng khả năng**; không thể dùng số nhóm làm mẫu số của định nghĩa cổ điển.
+    Gieo độc lập hai xúc xắc cân đối **phân biệt**: cặp (1,2) khác (2,1), nên 36 cặp có thứ tự đồng khả năng. Nếu gộp thành 21 cặp không thứ tự, nhóm {1,2} gồm hai kết quả gốc còn {1,1} chỉ có một. Vì vậy **21 nhóm không đồng khả năng**; không thể dùng số nhóm làm mẫu số của định nghĩa cổ điển.
 
     Khi tự kiểm một bài xác suất, em cần xác nhận: kết quả sơ cấp đã đủ thông tin chưa; có cùng khả năng không; số thuận lợi được đếm cùng cách với số tất cả không?
 
@@ -237,7 +237,7 @@
 
     <div class="thpt-g10-key-formula" role="note" data-b27-key-formula="combinations"><strong>Công thức tính xác suất bằng tổ hợp</strong><p>\(n(\Omega)=\binom nk\) với \(0\le k\le n\); theo định nghĩa cổ điển \(P(A)=n(A)/n(\Omega)\). Do đó, khi mọi nhóm \(k\) phần tử đồng khả năng, \(P(A)=\dfrac{n(A)}{\binom nk}\).</p><p>Muốn tính \(P(A)\), hãy đếm số nhóm thuận lợi \(n(A)\) trong cùng mô hình, rồi kiểm \(n(\Omega)>0\).</p></div>
 
-    **Kết hợp các phép chọn.** Ví dụ chọn 6 học sinh trong lớp có 7 nam và 5 nữ, yêu cầu 3 nam và 3 nữ. Chọn nam và nữ là hai công đoạn độc lập về **đếm nhóm**: có \(\binom73\binom53\) nhóm thuận lợi. Điều kiện phải kiểm là giáo viên chọn đều **giữa các nhóm 6 học sinh**, không phải chỉ nói “chọn ngẫu nhiên”.
+    **Kết hợp các phép chọn.** Ví dụ chọn 6 học sinh trong lớp có 7 nam và 5 nữ, yêu cầu 3 nam và 3 nữ. Mỗi nhóm 3 nam có thể kết hợp với mọi nhóm 3 nữ; theo quy tắc nhân, có \(\binom73\binom53\) nhóm thuận lợi. Điều kiện phải kiểm là giáo viên chọn đều **giữa các nhóm 6 học sinh**, không phải chỉ nói “chọn ngẫu nhiên”.
 
     **Phân biệt các mô hình:** rút lần lượt và ghi thứ tự khác với chọn cùng lúc không ghi thứ tự. Công thức tổ hợp không phải quy tắc thay thế mọi sơ đồ cây. Khi xét một bộ 6 số từ 45 số, việc chọn theo nhóm cho \(n(\Omega)=\binom{45}{6}\); đây là mô hình chọn nhóm không xét thứ tự.
 
@@ -279,7 +279,7 @@
 
     ### 3.2. Ví dụ — Cây lấy một viên từ mỗi hộp
 
-    **Đề bài.** Hộp I có bi đỏ, xanh, vàng; hộp II có bi xanh, vàng; hộp III có bi đỏ, xanh. Chọn đều một viên từ mỗi hộp, độc lập. Tính xác suất có đúng một viên xanh.
+    **Đề bài.** Hộp I có đúng một bi mỗi màu đỏ, xanh, vàng; hộp II có đúng một bi mỗi màu xanh, vàng; hộp III có đúng một bi mỗi màu đỏ, xanh. Chọn đều một viên từ mỗi hộp, độc lập. Tính xác suất có đúng một viên xanh.
 
     **Phân tích:** Có ba tầng lựa chọn; mỗi đường đi gồm một màu từ mỗi hộp, tổng số lá là 3×2×2. Đánh dấu đúng các đường có duy nhất một X.
 
@@ -319,7 +319,7 @@
 
     ### 3.6. Ví dụ — Không gộp các kết quả khác trọng số
 
-    **Đề bài.** Gieo hai xúc xắc cân đối phân biệt. Tính xác suất tổng số chấm bằng 5.
+    **Đề bài.** Gieo độc lập hai xúc xắc cân đối phân biệt. Tính xác suất tổng số chấm bằng 5.
 
     **Phân tích:** Một kết quả là (số chấm xúc xắc thứ nhất, số chấm xúc xắc thứ hai). Không gộp (1,4) với (4,1), vì chúng là hai kết quả sơ cấp khác nhau.
 

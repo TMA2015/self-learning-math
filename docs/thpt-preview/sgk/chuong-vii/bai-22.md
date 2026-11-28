@@ -248,7 +248,7 @@
 
     Khi hai trạm A và B phát tín hiệu **đồng thời**, cùng tốc độ v, máy thu P cách hai trạm những quãng đường khác nhau thì thời gian tín hiệu tới P cũng khác nhau. Lấy độ chênh thời gian Δt>0 nhân v sẽ được **trị tuyệt đối hiệu quãng đường**: \(|PA-PB|=v\Delta t=2a\). Điều kiện để có hypebol không suy biến là \(0<v\Delta t<AB=2c\); khi ấy \(b^2=c^2-a^2>0\).
 
-    Chỉ biết **độ lớn** của chênh lệch thời gian thì chưa biết P ở nhánh nào. Nếu **tín hiệu B đến trước A**, P gần B hơn nên \(PA-PB>0\) và P ở nhánh phía B. Nếu A đến trước thì P ở nhánh phía A. Một cặp trạm và một độ lệch thời gian chỉ cho **một nhánh quỹ tích**, chưa cho tọa độ duy nhất của máy thu.
+    Chỉ biết **độ lớn** của chênh lệch thời gian thì chưa biết P ở nhánh nào. Nếu **tín hiệu B đến trước A**, P gần B hơn nên \(PA-PB>0\) và P ở nhánh phía B. Nếu A đến trước thì P ở nhánh phía A. Nếu biết cả độ lớn chênh lệch thời gian và tín hiệu nào đến trước, ta xác định được **một nhánh quỹ tích**; nếu chỉ biết độ lớn, cả hai nhánh đều có thể xảy ra. Các dữ kiện này chưa xác định duy nhất tọa độ máy thu.
 
     **Vận dụng.** Hai trạm cách nhau **60 km**, phát đồng thời; tốc độ truyền **100.000 km/s**, chênh thời gian nhận **0,0002 s**. Hãy tính 2a, c, b² và kiểm điều kiện có hypebol thực. Dữ kiện chưa nói trạm nào đến trước: có thể chọn nhánh không?
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg" alt="Hypebol từ hai trạm A(-50;0), B(50;0), nhánh phải có B đến trước và PA trừ PB bằng 60 km" loading="lazy"><figcaption>Hình minh họa quỹ tích hai nhánh; B nhận trước chọn nhánh gần B, không phải một điểm duy nhất.</figcaption></figure>

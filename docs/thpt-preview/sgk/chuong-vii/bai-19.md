@@ -77,7 +77,7 @@
 
         **Đáp án:** 2(x-1)-(y-3)=0 hay 2x-y+1=0.
 
-        **Lý do:** AM=(x-1,y-3), n·AM=2(x-1)-(y-3); thế A được 0. Không tự đảo vai trò n với vectơ chỉ phương.
+        **Lý do:** \(\overrightarrow{AM}=(x-1;y-3)\), \(\vec n\cdot\overrightarrow{AM}=2(x-1)-(y-3)\); thế tọa độ \(A\) được \(0\). Không tự đảo vai trò n với vectơ chỉ phương.
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
@@ -90,15 +90,15 @@
         <ol>
         <li><strong>Nhận diện lỗi:</strong> Phương trình cuối cùng không chứa A như giả thiết.</li>
         <li><strong>Tự chẩn đoán:</strong> Với A(1;3), n=(2;-1), hãy thử thế A vào phương trình vừa lập: vế trái có bằng 0?</li>
-        <li><strong>Kiến thức gốc:</strong> Qua A có pháp tuyến n thì n·AM=0; phải dùng x-xA, y-yA, không đảo dấu tùy ý.</li>
+        <li><strong>Kiến thức gốc:</strong> Qua \(A\) có pháp tuyến \(\vec n\) thì \(\vec n\cdot\overrightarrow{AM}=0\); phải dùng \(x-x_A,\ y-y_A\), không đảo dấu tùy ý.</li>
         <li><strong>Tự sửa:</strong> Viết 2(x-1)-(y-3)=0, khai triển rồi thử lại tọa độ A.</li>
         <li><strong>Luyện lại:</strong> Luyện <a href="../luyen-tap/?item=THPT-G10-B19-C02">Core 19-C02</a></li>
         </ol>
     #### 1.2.3. Vì sao phương trình tham số cần một vectơ chỉ phương?
 
-    Có lúc ta muốn biết một điểm có thể nằm ở đâu khi đi dọc theo đường thẳng từ A. Nếu \(\vec u\) chỉ hướng đi thì mọi vị trí trên **đường thẳng kéo dài hai phía** có thể viết \(M=A+t\vec u\), với \(t\) là một số thực.
+    Có lúc ta muốn biết một điểm có thể nằm ở đâu khi đi dọc theo đường thẳng từ A. Nếu \(\vec u\) chỉ hướng đi thì mọi vị trí trên **đường thẳng kéo dài hai phía** có thể viết \(\overrightarrow{AM}=t\vec u\), với \(t\) là một số thực.
 
-    Khi \(t=0\), ta đang ở A; \(t=1\) đưa ta đến \(A+\vec u\); \(t=-1\) đi ngược hướng mũi tên một lần. Tham số t **không bắt buộc là thời gian**: nó chỉ cho biết số lần nhân vectơ chỉ phương. Hai tọa độ x, y phải dùng **cùng một t** vì chúng mô tả cùng một điểm M.
+    Khi \(t=0\), ta đang ở A; \(t=1\) đưa ta đến điểm \(M\) thỏa mãn \(\overrightarrow{AM}=\vec u\); \(t=-1\) đi ngược hướng mũi tên một lần. Tham số t **không bắt buộc là thời gian**: nó chỉ cho biết số lần nhân vectơ chỉ phương. Hai tọa độ x, y phải dùng **cùng một t** vì chúng mô tả cùng một điểm M.
 
     Đây là lý do để có dạng tham số: từ một điểm và một hướng, ta tạo ra được cả đường thẳng; còn dạng tổng quát nhận biết điểm thuộc đường qua một điều kiện.
 
@@ -123,7 +123,7 @@
         <ol>
         <li><strong>Nhận diện lỗi:</strong> Dùng t cho x nhưng một hệ số độc lập khác cho y, hoặc t=0 không về A.</li>
         <li><strong>Tự chẩn đoán:</strong> Với A(1;-1), u=(-2;3), thử t=0 và t=1 có cho đúng A, A+u không?</li>
-        <li><strong>Kiến thức gốc:</strong> Một điểm M=A+t·u cần cùng t thực cho cả hai tọa độ; t không nhất thiết là thời gian.</li>
+        <li><strong>Kiến thức gốc:</strong> Phương trình \(\overrightarrow{AM}=t\vec u\) dùng cùng một tham số thực \(t\) cho cả hai tọa độ; \(t\) không nhất thiết là thời gian.</li>
         <li><strong>Tự sửa:</strong> Viết x=1-2t, y=-1+3t rồi thử hai giá trị t.</li>
         <li><strong>Luyện lại:</strong> Luyện <a href="../luyen-tap/?item=THPT-G10-B19-P01">Practice 19-P01</a></li>
         </ol>
@@ -141,7 +141,7 @@
 
         **Đáp án:** x-y+3=0.
 
-        **Lý do:** AB=(3,3)≠0, chọn n=(1,-1). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.
+        **Lý do:** \(\overrightarrow{AB}=(3;3)\ne\vec0\), chọn \(\vec n=(1;-1)\). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 

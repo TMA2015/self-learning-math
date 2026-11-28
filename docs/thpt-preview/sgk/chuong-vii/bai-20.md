@@ -124,7 +124,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B20_POINT_LINE_DISTANCE_R02.svg" loading="lazy" alt="Khoảng cách từ M(0,0) đến 2x+y=6 theo đường vuông góc là 6 chia căn 5"><figcaption>Với đường \(2x+y-6=0\) và \(M(0,0)\), khoảng cách \(d(M,\Delta)=\dfrac{|{-6}|}{\sqrt{2^2+1^2}}=\dfrac6{\sqrt5}\). Đo theo đoạn vuông góc, không theo đường xiên bất kỳ.</figcaption></figure>
 
-    **Cách đọc hình:** Điểm \(M(0;0)\) ở ngoài đường \(2x+y-6=0\). Hãy tìm đoạn \(MH\) có dấu góc vuông tại H và so sánh với một đoạn xiên nối M tới điểm khác của đường. Phần nằm dưới dấu trị tuyệt đối trong công thức đo độ lệch có dấu; chia cho độ dài pháp tuyến để được độ dài thực và không âm.
+    **Cách đọc hình:** Điểm \(M(0;0)\) ở ngoài đường \(2x+y-6=0\). Hãy tìm đoạn \(MH\) có dấu góc vuông tại H và so sánh với một đoạn xiên nối M tới điểm khác của đường. Tử số trước khi lấy trị tuyệt đối là giá trị biểu thức vế trái tại điểm đang xét. Chia cho độ dài vectơ pháp tuyến cho độ lệch có dấu (dấu phụ thuộc chiều pháp tuyến); lấy trị tuyệt đối để được độ dài thực và không âm.
 
     Một cách tự kiểm trước khi tính là hỏi: nếu M nằm ngay trên d, khoảng cách phải bằng bao nhiêu? Đáp án là 0. Còn nếu đổi tất cả hệ số phương trình bằng cùng một bội khác 0, đường không đổi nên khoảng cách cũng không được đổi.
 

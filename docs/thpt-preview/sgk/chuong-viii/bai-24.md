@@ -217,7 +217,7 @@
 
     ### 2.2. Chỉnh hợp — chọn \(k\) phần tử và sắp vào \(k\) vai
 
-    Vị trí thứ nhất có \(n\) người, vị trí thứ hai còn \(n-1\), ...; với \(k\) vị trí có đúng \(k\) thừa số giảm dần. Khác hoán vị ở chỗ chỉ dùng một phần tập hợp.
+    Vị trí thứ nhất có \(n\) người, vị trí thứ hai còn \(n-1\), ...; với \(k\) vị trí có đúng \(k\) thừa số giảm dần. Khi \(k<n\), chỉnh hợp chỉ dùng một phần tập hợp; khi \(k=n\), chỉnh hợp chính là hoán vị.
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"><strong>Khái niệm.</strong> Chỉnh hợp chập \(k\) của \(n\) là cách chọn <strong>có thứ tự</strong> \(k\) phần tử trong \(n\) phần tử phân biệt. Theo phạm vi SGK: \(1\le k\le n\).</div>
 
@@ -262,11 +262,11 @@
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B24_ORDER_VS_COMBINATION_R02.svg" loading="lazy" alt="Ba bạn A B C, chọn hai có thứ tự có 6 cách và chọn nhóm không thứ tự có 3 cách"><figcaption>Khi phân vai, \(A_3^2=6\) vì AB và BA là hai kết quả khác nhau. Khi chỉ chọn nhóm, \(\binom32=3\) vì AB và BA là cùng một nhóm.</figcaption></figure>
 
 
-    **Tổng kết nhanh.** Có \(n\) đối tượng **phân biệt**, \(n\) nguyên không âm. Với \(0\le k\le n\):
+    **Tổng kết nhanh.** Có \(n\) đối tượng **phân biệt**, \(n\) nguyên dương. Trong phạm vi SGK:
     - Hoán vị của n đối tượng: \(P_n=n!\), với \(0!=1\).
-    - Chỉnh hợp chập k (chọn k phần tử và **xếp thứ tự**): \(A_n^k=\dfrac{n!}{(n-k)!}\).
-    - Tổ hợp chập k (chọn nhóm k phần tử, **không** xét thứ tự): \(C_n^k=\dfrac{n!}{k!(n-k)!}\).
-    - Công thức liên hệ \(A_n^k=C_n^k\cdot k!\) vì mỗi nhóm k phần tử có k! thứ tự.
+    - Chỉnh hợp chập k (chọn k phần tử và **xếp thứ tự**): \(A_n^k=\dfrac{n!}{(n-k)!}\), với \(1\le k\le n\).
+    - Tổ hợp chập k (chọn nhóm k phần tử, **không** xét thứ tự): \(C_n^k=\dfrac{n!}{k!(n-k)!}\), với \(0\le k\le n\).
+    - Công thức liên hệ \(A_n^k=C_n^k\cdot k!\) với \(1\le k\le n\), vì mỗi nhóm k phần tử có k! thứ tự.
 
     **Hướng chọn phương pháp.** Hỏi "chọn nhóm" mà không phân vai → tổ hợp; "xếp k người vào k vị trí phân biệt" → chỉnh hợp; "xếp tất cả" → hoán vị. Chọn nhóm rồi phân vai là hai bước: số nhóm nhân số phân vai **sau** khi nhóm được chọn, nếu mỗi nhóm có cùng số cách phân vai.
 
@@ -331,7 +331,7 @@
     ??? tip "Nhầm nhóm với phân vai"
 
         <p><strong>Dấu hiệu:</strong> Đổi thứ tự các thành viên của một nhóm không phân vai nhưng lại coi là kết quả mới.</p>
-        <p><strong>Bản chất toán:</strong> Tổ hợp không xét thứ tự; chỉnh hợp gán k vai trò phân biệt. Với 0≤k≤n, A(n,k)=C(n,k)·k!.</p>
+        <p><strong>Bản chất toán:</strong> Tổ hợp không xét thứ tự; chỉnh hợp gán k vai trò phân biệt. Với 1≤k≤n, A(n,k)=C(n,k)·k!.</p>
         <p><strong>Tự sửa:</strong> Ôn B24 mục 2 (chỉnh hợp) và mục 3 (tổ hợp): hỏi đổi chỗ hai người có tạo phương án mới không để chọn A hay C. Nếu xếp toàn bộ k người đã chọn vào k vị trí phân biệt, dùng \(A_n^k=C_n^k\cdot k!\); nếu chỉ phân một số vai trò, đếm đúng số cách giao vai tương ứng.</p>
         <p><strong>Kiến thức cần ôn:</strong> B23 quy tắc nhân, giai thừa; B24 mục 1.</p>
         <p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B24-C02" href="../luyen-tap/?item=THPT-G10-B24-C02">Luyện lại câu 24-C02</a> · <a data-thpt-formative-id="THPT-G10-B24-P01" href="../luyen-tap/?item=THPT-G10-B24-P01">Luyện lại câu 24-P01</a> · <a data-thpt-formative-id="THPT-G10-B24-P02" href="../luyen-tap/?item=THPT-G10-B24-P02">Luyện lại câu 24-P02</a> · <a data-thpt-formative-id="THPT-G10-CHVIII-W24-ANCHOR-01" href="../../../thu-vien/tu-luan-chuong-viii/#thpt-g10-chviii-w24-anchor-01">Bài tự luận liên quan</a></p>

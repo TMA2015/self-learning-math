@@ -87,7 +87,7 @@
     - Với \(a>0\): parabol mở lên, hàm giảm trên \(( -\infty;h )\), tăng trên \((h;+\infty)\), đạt **GTNN** \(k\) tại \(x=h\).
     - Với \(a<0\): parabol mở xuống, hàm tăng trên \(( -\infty;h )\), giảm trên \((h;+\infty)\), đạt **GTLN** \(k\) tại \(x=h\).
 
-    **Bảng biến thiên và tập giá trị tổng quát** (đặt \(h=-\frac{b}{2a}\), \(k=-\frac{\Delta}{4a}\)):
+    **Bảng biến thiên và tập giá trị tổng quát** (đặt \(\Delta=b^2-4ac\), \(h=-\frac{b}{2a}\), \(k=-\frac{\Delta}{4a}\)): 
 
     <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
     <thead><tr><th>Điều kiện</th><th>Nghịch biến</th><th>Đồng biến</th><th>Cực trị tại \(x=h\)</th><th>Tập giá trị \(T\)</th></tr></thead>
@@ -370,6 +370,8 @@
     **Giới hạn cần nhớ:** Chỉ biết đỉnh \(I(1;2)\) thì vẫn có vô số parabol \(y=a(x-1)^2+2\) với \(a\ne0\). Ta cần thêm một điểm **có hoành độ khác 1** để xác định \(a\), rồi phải kiểm \(a\ne0\). Nếu điểm bổ sung có hoành độ khác 1 nhưng tung độ vẫn bằng 2, phép tính cho \(a=0\) nên **không có hàm bậc hai** thỏa đề. Nếu điểm bổ sung cũng có hoành độ \(x=1\), nó không xác định được độ mở; nếu tung độ của nó khác 2 thì dữ kiện còn mâu thuẫn. Đây là cách tự kiểm xem đề bài có đủ thông tin hay không.
 
 === "Lỗi thường gặp"
+
+    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#help-g10-chvi-try06) · [Kiểm lỗi 2](#help-g10-chvi-try07) · [Kiểm lỗi 3](#help-g10-chvi-try09) · [Kiểm lỗi 4](#help-g10-chvi-try08) · [Kiểm lỗi 5](#help-g10-chvi-try10).
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
