@@ -273,13 +273,13 @@ written_role: DEEP_ANCHOR (label only, no separate bank)
 problem_family_id: TOP08-GEOMETRIC_TAIL_STRICT
 difficulty_band: TRANSFER
 content_version: 2
-**Đề bài:** Cấp số nhân có \(u_1=15,q=-\frac14\). (a) Viết \(S_n\) và điều kiện tính tổng vô hạn. (b) Tính \(S_\infty\). (c) Tìm n nguyên dương nhỏ nhất sao cho \(|S_\infty-S_n|<\frac3{64}\); giải thích vì sao \(n=4\) chưa đủ.
+**Đề bài:** Cấp số nhân có \(u_1=15,q=-\frac14\). (a) Viết \(S_n\) và điều kiện tính tổng vô hạn. (b) Tính \(S_\infty\). (c) Tìm n nguyên dương nhỏ nhất sao cho \(\lvert S_\infty-S_n\rvert<\frac3{64}\); giải thích vì sao \(n=4\) chưa đủ.
 
 **Đáp án:** \(S_n=12[1-(-\frac14)^n]\), \(S_\infty=12\), n nhỏ nhất 5.
 
-**Lời giải:** Vì \(q\ne1\), \(S_n=\frac{15[1-(-\frac14)^n]}{1+\frac14}=12[1-(-\frac14)^n]\). Vì \(|q|=\frac14<1\), \(q^n\to0\) và \(S_\infty=12\). Sai số tuyệt đối \(|S_\infty-S_n|=\frac{12}{4^n}\). Điều kiện \(\frac{12}{4^n}<\frac3{64}\iff4^n>256=4^4\), nên n nguyên dương nhỏ nhất là 5. Tại \(n=4\), sai số bằng \(\frac3{64}\), chưa thỏa; tại \(n=5\), sai số bằng \(\frac3{256}<\frac3{64}\).
+**Lời giải:** Vì \(q\ne1\), \(S_n=\frac{15[1-(-\frac14)^n]}{1+\frac14}=12[1-(-\frac14)^n]\). Vì \(\lvert q\rvert=\frac14<1\), \(q^n\to0\) và \(S_\infty=12\). Sai số tuyệt đối \(\lvert S_\infty-S_n\rvert=\frac{12}{4^n}\). Điều kiện \(\frac{12}{4^n}<\frac3{64}\iff4^n>256=4^4\), nên n nguyên dương nhỏ nhất là 5. Tại \(n=4\), sai số bằng \(\frac3{64}\), chưa thỏa; tại \(n=5\), sai số bằng \(\frac3{256}<\frac3{64}\).
 
-**Rubric tự đối chiếu:** 7 điểm: công bội và điều kiện (1); tổng riêng (1); tổng vô hạn (1); sai số (1); bất đẳng thức (1); n nhỏ nhất (1); giải thích n=4 không thỏa (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
+**Rubric tự đối chiếu:** 7 điểm: công bội và điều kiện (1); tổng riêng (1); tổng vô hạn (1); sai số (1); bất đẳng thức (1); n nhỏ nhất (1); giải thích \(n=4\) không thỏa (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
 
 **D6 tự khắc phục:** Thay \(n=4\) để phân biệt dấu nhỏ hơn nghiêm ngặt với dấu bằng.
 
@@ -293,11 +293,11 @@ written_role: DEEP_ANCHOR (label only, no separate bank)
 problem_family_id: TOP08-ABS_ONE_SIDED_LIMIT
 difficulty_band: TRANSFER
 content_version: 1
-**Đề bài:** Cho \(f(x)=\frac{x^2-4}{|x-2|}\) với \(x\ne2\). (a) Viết f theo hai miền \(x<2\), \(x>2\). (b) Tính giới hạn trái, phải tại 2. (c) Kết luận giới hạn hai phía và giải thích vì sao dạng \(\frac00\) không cho phép kết luận bằng 0.
+**Đề bài:** Cho \(f(x)=\frac{x^2-4}{\lvert x-2\rvert}\) với \(x\ne2\). (a) Viết f theo hai miền \(x<2\), \(x>2\). (b) Tính giới hạn trái, phải tại 2. (c) Kết luận giới hạn hai phía và giải thích vì sao dạng \(\frac00\) không cho phép kết luận bằng 0.
 
 **Đáp án:** Khi \(x<2\), \(f(x)=-(x+2)\); khi \(x>2\), \(f(x)=x+2\). Giới hạn trái -4, phải 4; không tồn tại giới hạn hai phía.
 
-**Lời giải:** Với \(x\ne2\), tử số là \((x-2)(x+2)\). Nếu \(x<2\), \(|x-2|=-(x-2)\), nên \(f(x)=-(x+2)\) và \(\lim_{x\to2^-}f(x)=-4\). Nếu \(x>2\), \(|x-2|=x-2\), nên \(f(x)=x+2\) và \(\lim_{x\to2^+}f(x)=4\). Hai giới hạn một phía khác nhau, vậy không có giới hạn hai phía. Phân thức gốc không xác định tại 2; \(\frac00\) là dạng vô định, không phải một số hay một giới hạn.
+**Lời giải:** Với \(x\ne2\), tử số là \((x-2)(x+2)\). Nếu \(x<2\), \(\lvert x-2\rvert=-(x-2)\), nên \(f(x)=-(x+2)\) và \(\lim_{x\to2^-}f(x)=-4\). Nếu \(x>2\), \(\lvert x-2\rvert=x-2\), nên \(f(x)=x+2\) và \(\lim_{x\to2^+}f(x)=4\). Hai giới hạn một phía khác nhau, vậy không có giới hạn hai phía. Phân thức gốc không xác định tại 2; \(\frac00\) là dạng vô định, không phải một số hay một giới hạn.
 
 **Rubric tự đối chiếu:** 7 điểm: phân tích tử (1); phân dấu trị tuyệt đối (1); rút nhánh trái (1); rút nhánh phải (1); giới hạn trái (1); giới hạn phải (1); kết luận và giải thích dạng vô định (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
 
