@@ -2744,7 +2744,7 @@
   {
     "item_id": "THPT-G10-B15-D6-01",
     "content_version": "SGK-G10-B15-D6-01-20261128",
-    "stem": "Cho hàm số \\(f(x)=\\sqrt{x+1}\\) trên tập số thực. Xét \\(A(3;2)\\), \\(B(3;4)\\), \\(C(-2;1)\\). Điểm nào thuộc đồ thị của hàm số? Chọn phương án đúng.",
+    "stem": "Xét hàm số \\(f(x)=\\sqrt{x+1}\\) với các giá trị \\(x\\) thực làm biểu thức có nghĩa. Xét \\(A(3;2)\\), \\(B(3;4)\\), \\(C(-2;1)\\). Điểm nào thuộc đồ thị của hàm số? Chọn phương án đúng.",
     "answer_key": "Chỉ A thuộc đồ thị.",
     "worked_solution": "Tập xác định là \\(D=[-1;+\\infty)\\). Vì \\(3\\in D\\) và \\(f(3)=\\sqrt{4}=2\\), A thuộc đồ thị; B không thuộc vì \\(4\\ne2\\). Hoành độ \\(-2\\notin D\\), nên C không thuộc đồ thị, không cần tính căn của số âm. Kết luận chỉ A thuộc đồ thị.",
     "skill_ids": [
@@ -2778,7 +2778,7 @@
     },
     "status": "AUTHOR_INTERACTION_CANDIDATE",
     "exercise_type": "INTERACTIVE",
-    "remediation": "Nếu chọn B vì chỉ kiểm hoành độ, hãy so tung độ với \\(f(3)\\). Nếu chọn C, kiểm tập xác định trước. Ôn Toán 10 Bài 15 §2.2; luyện THPT-G10-B15-C02 để củng cố điều kiện căn thức.",
+    "remediation": "Nếu cho rằng điểm B thuộc đồ thị chỉ vì hoành độ 3 hợp lệ, hãy so tung độ với \\(f(3)\\). Nếu cho rằng điểm C thuộc đồ thị, kiểm tập xác định trước. Ôn Toán 10 Bài 15 §2.2; luyện THPT-G10-B15-C02 để củng cố điều kiện căn thức.",
     "options": [
       {
         "id": "A",
