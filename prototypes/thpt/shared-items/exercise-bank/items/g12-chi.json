@@ -443,7 +443,7 @@
     "item_id": "THPT-G12-CHI-B01-A01",
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B01-A01",
     "stem": "Vật có vị trí \\(s(t)=t^3-6t^2+9t\\) m, t≥0 s. Xác định các khoảng thời gian vật chuyển động theo chiều dương và âm.",
-    "answer_key": "Chiều dương khi 0≤t<1 hoặc t>3; chiều âm khi 1<t<3; v=0 tại t=1,3.",
+    "answer_key": "Chiều dương khi \\(0\\le t<1\\) hoặc \\(t>3\\); chiều âm khi \\(1<t<3\\); \\(v=0\\) tại \\(t=1,3\\).",
     "worked_solution": "Vận tốc \\(v(t)=s'(t)=3t^2-12t+9=3(t-1)(t-3)\\) m/s. Trên miền \\(t\\ge0\\), vận tốc dương khi \\(0\\le t<1\\) hoặc \\(t>3\\), âm khi \\(1<t<3\\). Vật chuyển động theo chiều dương hoặc âm tương ứng; tại \\(t=1,3\\) vận tốc bằng 0, vật dừng tức thời.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -478,19 +478,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Chiều âm khi 0≤t<1 hoặc t>3; chiều dương khi 1<t<3."
+        "text": "Chiều âm khi \\(0\\le t<1\\) hoặc \\(t>3\\); chiều dương khi \\(1<t<3\\)."
       },
       {
         "id": "B",
-        "text": "Chiều dương khi t>0 vì tọa độ không âm."
+        "text": "Chiều dương khi \\(t>0\\) vì tọa độ không âm."
       },
       {
         "id": "C",
-        "text": "Chỉ đổi chiều tại t=2."
+        "text": "Chỉ đổi chiều tại \\(t=2\\)."
       },
       {
         "id": "D",
-        "text": "Chiều dương khi 0≤t<1 hoặc t>3; chiều âm khi 1<t<3; v=0 tại t=1,3."
+        "text": "Chiều dương khi \\(0\\le t<1\\) hoặc \\(t>3\\); chiều âm khi \\(1<t<3\\); \\(v=0\\) tại \\(t=1,3\\)."
       }
     ]
   },
@@ -1653,7 +1653,7 @@
     "item_id": "THPT-G12-CHI-B03-A01",
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B03-A01",
     "stem": "Chi phí trung bình đơn vị \\(C(q)=20+\\frac{120}{q}\\) (nghìn đồng/sp), q>0. Phân tích q→+∞ và q→0+, chỉ ra tiệm cận; ý nghĩa mô hình.",
-    "answer_key": "C(q)→20 khi q→+∞, C(q)→+∞ khi q→0⁺; tiệm cận ngang C=20, đứng q=0; q=0 không có chi phí trung bình xác định.",
+    "answer_key": "\\(C(q)\\to 20\\) khi \\(q\\to +\\infty\\), \\(C(q)\\to +\\infty\\) khi \\(q\\to 0^+\\); tiệm cận ngang \\(C=20\\), đứng \\(q=0\\); \\(q=0\\) không có chi phí trung bình xác định.",
     "worked_solution": "Trong mô hình liên tục \\(q>0\\), \\(\\lim_{q\\to+\\infty}C(q)=20\\) nghìn đồng/sản phẩm, nên đường \\(C=20\\) là tiệm cận ngang. Khi \\(q\\to0^+\\), phần \\(120/q\\to+\\infty\\), nên \\(q=0\\) là tiệm cận đứng. Với q hữu hạn dương, chi phí trung bình luôn lớn hơn 20. Sản lượng 0 không có chi phí trung bình xác định; nếu q là số sản phẩm nguyên, giới hạn tại 0 chỉ thuộc phần mở rộng liên tục của mô hình.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -1688,19 +1688,19 @@
     "options": [
       {
         "id": "A",
-        "text": "C→0 khi q→∞; C→20 khi q→0⁺."
+        "text": "\\(C\\to 0\\) khi \\(q\\to \\infty\\); \\(C\\to 20\\) khi \\(q\\to 0^+\\)."
       },
       {
         "id": "B",
-        "text": "C→20 khi q→∞; C→0 khi q→0⁺."
+        "text": "\\(C\\to 20\\) khi \\(q\\to \\infty\\); \\(C\\to 0\\) khi \\(q\\to 0^+\\)."
       },
       {
         "id": "C",
-        "text": "C(q)→20 khi q→+∞, C(q)→+∞ khi q→0⁺; tiệm cận ngang C=20, đứng q=0; q=0 không có chi phí trung bình xác định."
+        "text": "\\(C(q)\\to 20\\) khi \\(q\\to +\\infty\\), \\(C(q)\\to +\\infty\\) khi \\(q\\to 0^+\\); tiệm cận ngang \\(C=20\\), đứng \\(q=0\\); \\(q=0\\) không có chi phí trung bình xác định."
       },
       {
         "id": "D",
-        "text": "C→120 khi q→∞; q=0 có chi phí bằng 20."
+        "text": "\\(C\\to 120\\) khi \\(q\\to \\infty\\); \\(q=0\\) có chi phí bằng 20."
       }
     ]
   },
@@ -1982,7 +1982,7 @@
   {
     "item_id": "THPT-G12-CHI-B04-P02",
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B04-P02",
-    "stem": "Một hàm số liên tục, khả vi trên \\(\\mathbb R\\) có bảng biến thiên sau (mũi tên biểu thị chiều biến thiên):\n\\[\n\\begin{array}{c|ccccc}x&-\\infty&-1&&3&+\\infty\\\\\\hline f'&+&0&-&0&+\\\\\\hline f&-\\infty\\nearrow&4&\\searrow&-2&\\nearrow+\\infty\\end{array}\n\\]\n(a) Đọc các khoảng đồng biến, nghịch biến và các điểm cực trị. (b) Trên đoạn \\([-1;3]\\), xác định GTLN, GTNN. Các giá trị này có phải GTLN, GTNN trên toàn \\(\\mathbb R\\) không?",
+    "stem": "Một hàm số liên tục, khả vi trên \\(\\mathbb R\\) có bảng biến thiên sau (mũi tên biểu thị chiều biến thiên):\n\n\\[\n\\begin{array}{c|ccccc}x&-\\infty&-1&&3&+\\infty\\\\\\hline f'&+&0&-&0&+\\\\\\hline f&-\\infty\\nearrow&4&\\searrow&-2&\\nearrow+\\infty\\end{array}\n\\]\n\n(a) Đọc các khoảng đồng biến, nghịch biến và các điểm cực trị. (b) Trên đoạn \\([-1;3]\\), xác định GTLN, GTNN. Các giá trị này có phải GTLN, GTNN trên toàn \\(\\mathbb R\\) không?",
     "answer_key": "Đồng biến trên \\((-\\infty;-1)\\) và \\((3;+\\infty)\\), nghịch biến trên \\((-1;3)\\). Cực đại \\((-1;4)\\), cực tiểu \\((3;-2)\\) trên đồ thị. Trên \\([-1;3]\\), GTLN 4 và GTNN -2; trên \\(\\mathbb R\\) không có GTLN, GTNN.",
     "worked_solution": "Đọc hàng dấu đạo hàm và hàng mũi tên: hàm tăng đến x=-1, giảm từ -1 tới 3, rồi tăng tiếp. Tại x=-1, dấu đổi từ + sang -, nên hàm đạt cực đại, giá trị 4; tại x=3, dấu đổi từ - sang +, nên đạt cực tiểu, giá trị -2. Trên đoạn \\([-1;3]\\), hàm liên tục và giảm, vì vậy mọi giá trị nằm giữa -2 và 4, hai đầu mút đạt các giá trị đó. Nhưng hàng cuối còn cho \\(\\lim_{x\\to-\\infty}f(x)=-\\infty\\) và \\(\\lim_{x\\to+\\infty}f(x)=+\\infty\\); vì vậy trên toàn miền không có GTLN hoặc GTNN. Cực trị địa phương không mặc nhiên là cực trị toàn miền.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -2258,7 +2258,7 @@
     "item_id": "THPT-G12-CHI-B04-A01",
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B04-A01",
     "stem": "Chi phí bình quân \\(f(q)=4+\\frac{200}{q-10}\\) cho q>10 đơn vị. Tính giới hạn q→10+, q→∞ và nhận định chi phí theo q.",
-    "answer_key": "Giới hạn +∞ khi q→10⁺, giới hạn 4 khi q→+∞; chi phí giảm trên \\((10;+\\infty)\\), luôn lớn hơn 4.",
+    "answer_key": "Giới hạn +∞ khi \\(q\\to 10^+\\), giới hạn 4 khi \\(q\\to +\\infty\\); chi phí giảm trên \\((10;+\\infty)\\), luôn lớn hơn 4.",
     "worked_solution": "Với \\(q>10\\), \\(f'(q)=-\\frac{200}{(q-10)^2}<0\\) nên chi phí bình quân giảm. Khi \\(q\\to10^+\\), mẫu dương tiến về 0 nên \\(f(q)\\to+\\infty\\); khi \\(q\\to+\\infty\\), \\(f(q)\\to4\\). Chi phí luôn lớn hơn 4 trên miền hợp lệ, không đạt giới hạn đó. Nếu q nguyên, giới hạn tại \\(10^+\\) chỉ mô tả phần mở rộng liên tục.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2301,7 +2301,7 @@
       },
       {
         "id": "C",
-        "text": "Giới hạn +∞ khi q→10⁺, giới hạn 4 khi q→+∞; chi phí giảm trên \\((10;+\\infty)\\), luôn lớn hơn 4."
+        "text": "Giới hạn +∞ khi \\(q\\to 10^+\\), giới hạn 4 khi \\(q\\to +\\infty\\); chi phí giảm trên \\((10;+\\infty)\\), luôn lớn hơn 4."
       },
       {
         "id": "D",
@@ -2313,7 +2313,7 @@
     "item_id": "THPT-G12-CHI-B04-A02",
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-CHI-B04-A02",
     "stem": "Người học vẽ \\(y=x^3-3x^2\\) đi từ +∞ ở x→−∞ và tăng liên tục tới +∞. Chỉ ra hai lỗi từ dữ liệu khảo sát.",
-    "answer_key": "Khi x→−∞, y→−∞; hàm nghịch biến trên \\((0;2)\\), không đồng biến toàn ℝ.",
+    "answer_key": "Khi \\(x\\to -\\infty\\), \\(y\\to -\\infty\\); hàm nghịch biến trên \\((0;2)\\), không đồng biến toàn ℝ.",
     "worked_solution": "Hệ số bậc ba dương nên \\(\\lim_{x\\to-\\infty}(x^3-3x^2)=-\\infty\\), không phải \\(+\\infty\\). Đạo hàm \\(y'=3x(x-2)\\) âm trên \\((0;2)\\), nên đồ thị đi xuống từ cực đại đến cực tiểu; không tăng liên tục.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -2348,19 +2348,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Khi x→−∞, y→+∞; hàm tăng trên \\((0;2)\\)."
+        "text": "Khi \\(x\\to -\\infty\\), \\(y\\to +\\infty\\); hàm tăng trên \\((0;2)\\)."
       },
       {
         "id": "B",
-        "text": "Khi x→−∞, y→−∞; hàm nghịch biến trên \\((0;2)\\), không đồng biến toàn ℝ."
+        "text": "Khi \\(x\\to -\\infty\\), \\(y\\to -\\infty\\); hàm nghịch biến trên \\((0;2)\\), không đồng biến toàn ℝ."
       },
       {
         "id": "C",
-        "text": "Khi x→−∞, y→−∞; hàm tăng trên toàn miền."
+        "text": "Khi \\(x\\to -\\infty\\), \\(y\\to -\\infty\\); hàm tăng trên toàn miền."
       },
       {
         "id": "D",
-        "text": "Khi x→−∞, y→0; hàm giảm trên \\((2;+\\infty)\\)."
+        "text": "Khi \\(x\\to -\\infty\\), \\(y\\to 0\\); hàm giảm trên \\((2;+\\infty)\\)."
       }
     ]
   },
