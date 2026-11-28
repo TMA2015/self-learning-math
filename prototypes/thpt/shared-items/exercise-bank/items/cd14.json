@@ -417,7 +417,7 @@
     "options": [
       {
         "id": "A",
-        "text": "m=2: song song phân biệt; m=3: trùng nhau; không có giao điểm duy nhất."
+        "text": "\\(m=2\\): song song phân biệt; \\(m=3\\): trùng nhau; không có giao điểm duy nhất."
       },
       {
         "id": "B",
@@ -425,11 +425,11 @@
       },
       {
         "id": "C",
-        "text": "m=2: trùng nhau; m=3: cắt nhau tại đúng một điểm."
+        "text": "\\(m=2\\): trùng nhau; \\(m=3\\): cắt nhau tại đúng một điểm."
       },
       {
         "id": "D",
-        "text": "Cả m=2 và m=3 đều cắt nhau tại đúng một điểm."
+        "text": "Cả \\(m=2\\) và \\(m=3\\) đều cắt nhau tại đúng một điểm."
       }
     ]
   },
