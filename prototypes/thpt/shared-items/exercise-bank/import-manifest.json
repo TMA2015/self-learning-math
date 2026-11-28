@@ -67,8 +67,8 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "Only remaining item08 X-G.5: verify all student-visible exercise fields at source using prior exact accepted evidence where applicable, fix actual raw structured notation and other X-G.5 violations; Written canonical sources not reference metadata. Preserve mathematical content, IDs, scores, rubric and prior PASS. Then re-sign same Q18/V2 and restore READY/REGISTER; no new audit standard or runtime work.",
-    "status": "CHECKLIST_08_XG5_SOURCE_NOTATION_PENDING",
+    "next": "08.1 only: classify exact canonical IDs by SGK and Topic placement intersection (interactive and Written); use CP81–104 / CP87–90 and later scoped X-G.5 evidence, compare affected student-visible fields against exact current source, carry forward unchanged verified fields, fix only missing/nonconforming fields. Then tick 08.1 and move 08.2 Topic-only; 08.3 SGK-only. Reuse one manifest, no repeated audit of accepted unrelated scope.",
+    "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -196,6 +196,41 @@
         },
         "withdrawn_snapshot": "10549617b20a9790fa2e142f3446f0f23bd6cdba",
         "reason": "Premature acceptance; item08 did not establish X-G.5 conformance across all student-visible fields. Confirmed THPT-TOP14-T20 raw ±b/a in hint; corrected using equivalent LaTeX."
+      },
+      "xg5_remaining_execution": {
+        "owner_decision": "Three mutually exclusive execution batches within existing 08, not a new quality standard",
+        "baseline": "7429fa9cc28dcaecbd2c79ab451170640e3083f9",
+        "groups": [
+          {
+            "id": "08.1",
+            "scope": "SGK ∩ Topic by actual canonical placements, inclusive of Written",
+            "state": "IN_PROGRESS"
+          },
+          {
+            "id": "08.2",
+            "scope": "Topic \\ SGK by placements, inclusive of Written",
+            "state": "PENDING"
+          },
+          {
+            "id": "08.3",
+            "scope": "SGK \\ Topic by placements, inclusive of Written and supplements",
+            "state": "PENDING"
+          }
+        ],
+        "evidence_baselines": {
+          "topic_local": {
+            "cp": "81–90",
+            "note": "CP81–86 + CP87–90 five-field scope; no blanket acceptance of options added later",
+            "commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6"
+          },
+          "sgk_formative": {
+            "cp": "91–104",
+            "commit": "1ed38945aed44459964008b756f220f21d13059d",
+            "note": "Core/Practice/Application scoped content; compare only changed fields thereafter"
+          },
+          "later": "Use exact subsequent scoped source and X-G.5 field evidence; structural delimiter checks alone are not X-G.5 proof"
+        },
+        "rule": "Classify by placement not ID prefix. Each ID appears once across batches. Preserve all previously verified equal fields and only read/review changed/unverified content, written source not reference alone. Record exact scoped progress in this existing manifest, not separate report."
       }
     },
     "previous_manifest": {
