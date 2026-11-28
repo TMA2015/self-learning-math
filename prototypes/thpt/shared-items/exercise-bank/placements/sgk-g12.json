@@ -606,70 +606,150 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
     "item_id": "THPT-G12-CHI-END-C01",
-    "skill_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA"
+    "skill_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
     "item_id": "THPT-G12-CHI-END-C02",
-    "skill_id": "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH"
+    "skill_id": "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
     "item_id": "THPT-G12-CHI-END-C03",
-    "skill_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS"
+    "skill_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
     "item_id": "THPT-G12-CHI-END-C04",
-    "skill_id": "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM"
+    "skill_id": "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
     "item_id": "THPT-G12-CHI-END-P01",
-    "skill_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA"
+    "skill_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
     "item_id": "THPT-G12-CHI-END-P02",
-    "skill_id": "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH"
+    "skill_id": "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
     "item_id": "THPT-G12-CHI-END-P03",
-    "skill_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS"
+    "skill_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
     "item_id": "THPT-G12-CHI-END-P04",
-    "skill_id": "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM"
+    "skill_id": "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
     "item_id": "THPT-G12-CHI-END-A01",
-    "skill_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA"
+    "skill_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
     "item_id": "THPT-G12-CHI-END-A02",
-    "skill_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS"
+    "skill_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:WRITTEN",
@@ -1542,154 +1622,330 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
     "item_id": "THPT-G12-B11-A01",
-    "skill_id": "G12-CHIV-B11-O01"
+    "skill_id": "G12-CHIV-B11-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
     "item_id": "THPT-G12-B11-A02",
-    "skill_id": "G12-CHIV-B11-O02"
+    "skill_id": "G12-CHIV-B11-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
     "item_id": "THPT-G12-B11-A03",
-    "skill_id": "G12-CHIV-B11-O03"
+    "skill_id": "G12-CHIV-B11-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
     "item_id": "THPT-G12-B11-A04",
-    "skill_id": "G12-CHIV-B11-O04"
+    "skill_id": "G12-CHIV-B11-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
     "item_id": "THPT-G12-B11-A05",
-    "skill_id": "G12-CHIV-B11-O05"
+    "skill_id": "G12-CHIV-B11-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
     "item_id": "THPT-G12-B11-A06",
-    "skill_id": "G12-CHIV-B11-O06"
+    "skill_id": "G12-CHIV-B11-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
     "item_id": "THPT-G12-B11-A07",
-    "skill_id": "G12-CHIV-B11-O07"
+    "skill_id": "G12-CHIV-B11-O07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
     "item_id": "THPT-G12-B12-A01",
-    "skill_id": "G12-CHIV-B12-O01"
+    "skill_id": "G12-CHIV-B12-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
     "item_id": "THPT-G12-B12-A02",
-    "skill_id": "G12-CHIV-B12-O02"
+    "skill_id": "G12-CHIV-B12-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
     "item_id": "THPT-G12-B12-A03",
-    "skill_id": "G12-CHIV-B12-O03"
+    "skill_id": "G12-CHIV-B12-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
     "item_id": "THPT-G12-B12-A04",
-    "skill_id": "G12-CHIV-B12-O04"
+    "skill_id": "G12-CHIV-B12-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
     "item_id": "THPT-G12-B12-A05",
-    "skill_id": "G12-CHIV-B12-O05"
+    "skill_id": "G12-CHIV-B12-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
     "item_id": "THPT-G12-B12-A06",
-    "skill_id": "G12-CHIV-B12-O06"
+    "skill_id": "G12-CHIV-B12-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 14,
     "item_id": "THPT-G12-B12-A07",
-    "skill_id": "G12-CHIV-B12-O07"
+    "skill_id": "G12-CHIV-B12-O07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 15,
     "item_id": "THPT-G12-B13-A01",
-    "skill_id": "G12-CHIV-B13-O01"
+    "skill_id": "G12-CHIV-B13-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 16,
     "item_id": "THPT-G12-B13-A02",
-    "skill_id": "G12-CHIV-B13-O02"
+    "skill_id": "G12-CHIV-B13-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 17,
     "item_id": "THPT-G12-B13-A03",
-    "skill_id": "G12-CHIV-B13-O03"
+    "skill_id": "G12-CHIV-B13-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 18,
     "item_id": "THPT-G12-B13-A04",
-    "skill_id": "G12-CHIV-B13-O04"
+    "skill_id": "G12-CHIV-B13-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 19,
     "item_id": "THPT-G12-B13-A05",
-    "skill_id": "G12-CHIV-B13-O05"
+    "skill_id": "G12-CHIV-B13-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 20,
     "item_id": "THPT-G12-B13-A06",
-    "skill_id": "G12-CHIV-B13-O06"
+    "skill_id": "G12-CHIV-B13-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 21,
     "item_id": "THPT-G12-B13-A07",
-    "skill_id": "G12-CHIV-B13-O07"
+    "skill_id": "G12-CHIV-B13-O07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 22,
     "item_id": "THPT-G12-B13-A08",
-    "skill_id": "G12-CHIV-B13-O08"
+    "skill_id": "G12-CHIV-B13-O08",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:B06:CORE",
@@ -2255,112 +2511,240 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
     "item_id": "THPT-G12-B06-P02",
-    "skill_id": "G12-CHII-B06-O01"
+    "skill_id": "G12-CHII-B06-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
     "item_id": "THPT-G12-B06-P04",
-    "skill_id": "G12-CHII-B06-O02"
+    "skill_id": "G12-CHII-B06-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
     "item_id": "THPT-G12-B06-P06",
-    "skill_id": "G12-CHII-B06-O03"
+    "skill_id": "G12-CHII-B06-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
     "item_id": "THPT-G12-B06-P08",
-    "skill_id": "G12-CHII-B06-O04"
+    "skill_id": "G12-CHII-B06-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
     "item_id": "THPT-G12-B06-P10",
-    "skill_id": "G12-CHII-B06-O05"
+    "skill_id": "G12-CHII-B06-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
     "item_id": "THPT-G12-B06-P12",
-    "skill_id": "G12-CHII-B06-O06"
+    "skill_id": "G12-CHII-B06-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
     "item_id": "THPT-G12-B07-P02",
-    "skill_id": "G12-CHII-B07-O01"
+    "skill_id": "G12-CHII-B07-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
     "item_id": "THPT-G12-B07-P04",
-    "skill_id": "G12-CHII-B07-O02"
+    "skill_id": "G12-CHII-B07-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
     "item_id": "THPT-G12-B07-P06",
-    "skill_id": "G12-CHII-B07-O03"
+    "skill_id": "G12-CHII-B07-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
     "item_id": "THPT-G12-B07-P08",
-    "skill_id": "G12-CHII-B07-O04"
+    "skill_id": "G12-CHII-B07-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
     "item_id": "THPT-G12-B08-P02",
-    "skill_id": "G12-CHII-B08-O01"
+    "skill_id": "G12-CHII-B08-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
     "item_id": "THPT-G12-B08-P04",
-    "skill_id": "G12-CHII-B08-O02"
+    "skill_id": "G12-CHII-B08-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
     "item_id": "THPT-G12-B08-P06",
-    "skill_id": "G12-CHII-B08-O03"
+    "skill_id": "G12-CHII-B08-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 14,
     "item_id": "THPT-G12-B08-P08",
-    "skill_id": "G12-CHII-B08-O04"
+    "skill_id": "G12-CHII-B08-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 15,
     "item_id": "THPT-G12-B08-P10",
-    "skill_id": "G12-CHII-B08-O05"
+    "skill_id": "G12-CHII-B08-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 16,
     "item_id": "THPT-G12-B08-P12",
-    "skill_id": "G12-CHII-B08-O06"
+    "skill_id": "G12-CHII-B08-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:B14:CORE",
@@ -3273,42 +3657,90 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
     "item_id": "THPT-G12-B14-A01",
-    "skill_id": "G12-CHV-B14-O01"
+    "skill_id": "G12-CHV-B14-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
     "item_id": "THPT-G12-B14-A02",
-    "skill_id": "G12-CHV-B14-O02"
+    "skill_id": "G12-CHV-B14-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
     "item_id": "THPT-G12-B14-A03",
-    "skill_id": "G12-CHV-B14-O03"
+    "skill_id": "G12-CHV-B14-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
     "item_id": "THPT-G12-B14-A04",
-    "skill_id": "G12-CHV-B14-O04"
+    "skill_id": "G12-CHV-B14-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
     "item_id": "THPT-G12-B14-A05",
-    "skill_id": "G12-CHV-B14-O05"
+    "skill_id": "G12-CHV-B14-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
     "item_id": "THPT-G12-B14-A06",
-    "skill_id": "G12-CHV-B14-O06"
+    "skill_id": "G12-CHV-B14-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
@@ -3316,126 +3748,270 @@
     "order": 7,
     "item_id": "THPT-G12-B14-A07",
     "skill_id": "G12-CHV-B14-O07",
-    "optional": true
+    "optional": true,
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
     "item_id": "THPT-G12-B15-A01",
-    "skill_id": "G12-CHV-B15-O01"
+    "skill_id": "G12-CHV-B15-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
     "item_id": "THPT-G12-B15-A02",
-    "skill_id": "G12-CHV-B15-O02"
+    "skill_id": "G12-CHV-B15-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
     "item_id": "THPT-G12-B15-A03",
-    "skill_id": "G12-CHV-B15-O03"
+    "skill_id": "G12-CHV-B15-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
     "item_id": "THPT-G12-B15-A04",
-    "skill_id": "G12-CHV-B15-O04"
+    "skill_id": "G12-CHV-B15-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
     "item_id": "THPT-G12-B15-A05",
-    "skill_id": "G12-CHV-B15-O05"
+    "skill_id": "G12-CHV-B15-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
     "item_id": "THPT-G12-B15-A06",
-    "skill_id": "G12-CHV-B15-O06"
+    "skill_id": "G12-CHV-B15-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 14,
     "item_id": "THPT-G12-B15-A07",
-    "skill_id": "G12-CHV-B15-O07"
+    "skill_id": "G12-CHV-B15-O07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 15,
     "item_id": "THPT-G12-B16-A01",
-    "skill_id": "G12-CHV-B16-O01"
+    "skill_id": "G12-CHV-B16-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 16,
     "item_id": "THPT-G12-B16-A02",
-    "skill_id": "G12-CHV-B16-O02"
+    "skill_id": "G12-CHV-B16-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 17,
     "item_id": "THPT-G12-B16-A03",
-    "skill_id": "G12-CHV-B16-O03"
+    "skill_id": "G12-CHV-B16-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 18,
     "item_id": "THPT-G12-B16-A04",
-    "skill_id": "G12-CHV-B16-O04"
+    "skill_id": "G12-CHV-B16-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 19,
     "item_id": "THPT-G12-B16-A05",
-    "skill_id": "G12-CHV-B16-O05"
+    "skill_id": "G12-CHV-B16-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 20,
     "item_id": "THPT-G12-B17-A01",
-    "skill_id": "G12-CHV-B17-O01"
+    "skill_id": "G12-CHV-B17-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 21,
     "item_id": "THPT-G12-B17-A02",
-    "skill_id": "G12-CHV-B17-O02"
+    "skill_id": "G12-CHV-B17-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 22,
     "item_id": "THPT-G12-B17-A03",
-    "skill_id": "G12-CHV-B17-O03"
+    "skill_id": "G12-CHV-B17-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 23,
     "item_id": "THPT-G12-B17-A04",
-    "skill_id": "G12-CHV-B17-O04"
+    "skill_id": "G12-CHV-B17-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 24,
     "item_id": "THPT-G12-B17-A05",
-    "skill_id": "G12-CHV-B17-O05"
+    "skill_id": "G12-CHV-B17-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:B18:CORE",
@@ -3834,98 +4410,210 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
     "item_id": "THPT-G12-B18-A01",
-    "skill_id": "G12-CHVI-B18-O01"
+    "skill_id": "G12-CHVI-B18-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
     "item_id": "THPT-G12-B18-A02",
-    "skill_id": "G12-CHVI-B18-O02"
+    "skill_id": "G12-CHVI-B18-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
     "item_id": "THPT-G12-B18-A03",
-    "skill_id": "G12-CHVI-B18-O03"
+    "skill_id": "G12-CHVI-B18-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
     "item_id": "THPT-G12-B18-A04",
-    "skill_id": "G12-CHVI-B18-O04"
+    "skill_id": "G12-CHVI-B18-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
     "item_id": "THPT-G12-B18-A05",
-    "skill_id": "G12-CHVI-B18-O05"
+    "skill_id": "G12-CHVI-B18-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
     "item_id": "THPT-G12-B18-A06",
-    "skill_id": "G12-CHVI-B18-O06"
+    "skill_id": "G12-CHVI-B18-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
     "item_id": "THPT-G12-B18-A07",
-    "skill_id": "G12-CHVI-B18-O07"
+    "skill_id": "G12-CHVI-B18-O07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
     "item_id": "THPT-G12-B19-A01",
-    "skill_id": "G12-CHVI-B19-O01"
+    "skill_id": "G12-CHVI-B19-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
     "item_id": "THPT-G12-B19-A02",
-    "skill_id": "G12-CHVI-B19-O02"
+    "skill_id": "G12-CHVI-B19-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
     "item_id": "THPT-G12-B19-A03",
-    "skill_id": "G12-CHVI-B19-O03"
+    "skill_id": "G12-CHVI-B19-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
     "item_id": "THPT-G12-B19-A04",
-    "skill_id": "G12-CHVI-B19-O04"
+    "skill_id": "G12-CHVI-B19-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
     "item_id": "THPT-G12-B19-A05",
-    "skill_id": "G12-CHVI-B19-O05"
+    "skill_id": "G12-CHVI-B19-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
     "item_id": "THPT-G12-B19-A06",
-    "skill_id": "G12-CHVI-B19-O06"
+    "skill_id": "G12-CHVI-B19-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 14,
     "item_id": "THPT-G12-B19-A07",
-    "skill_id": "G12-CHVI-B19-O07"
+    "skill_id": "G12-CHVI-B19-O07",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:B09:CORE",
@@ -4375,84 +5063,180 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
     "item_id": "THPT-G12-B09-P02",
-    "skill_id": "G12-CHIII-B09-O01"
+    "skill_id": "G12-CHIII-B09-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
     "item_id": "THPT-G12-B09-P04",
-    "skill_id": "G12-CHIII-B09-O02"
+    "skill_id": "G12-CHIII-B09-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
     "item_id": "THPT-G12-B09-P06",
-    "skill_id": "G12-CHIII-B09-O03"
+    "skill_id": "G12-CHIII-B09-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
     "item_id": "THPT-G12-B09-P08",
-    "skill_id": "G12-CHIII-B09-O04"
+    "skill_id": "G12-CHIII-B09-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
     "item_id": "THPT-G12-B09-P10",
-    "skill_id": "G12-CHIII-B09-O05"
+    "skill_id": "G12-CHIII-B09-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
     "item_id": "THPT-G12-B09-P12",
-    "skill_id": "G12-CHIII-B09-O06"
+    "skill_id": "G12-CHIII-B09-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
     "item_id": "THPT-G12-B10-P02",
-    "skill_id": "G12-CHIII-B10-O01"
+    "skill_id": "G12-CHIII-B10-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
     "item_id": "THPT-G12-B10-P04",
-    "skill_id": "G12-CHIII-B10-O02"
+    "skill_id": "G12-CHIII-B10-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
     "item_id": "THPT-G12-B10-P06",
-    "skill_id": "G12-CHIII-B10-O03"
+    "skill_id": "G12-CHIII-B10-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
     "item_id": "THPT-G12-B10-P08",
-    "skill_id": "G12-CHIII-B10-O04"
+    "skill_id": "G12-CHIII-B10-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
     "item_id": "THPT-G12-B10-P10",
-    "skill_id": "G12-CHIII-B10-O05"
+    "skill_id": "G12-CHIII-B10-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
     "item_id": "THPT-G12-B10-P12",
-    "skill_id": "G12-CHIII-B10-O06"
+    "skill_id": "G12-CHIII-B10-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:EXP01:CORE",
@@ -4795,70 +5579,150 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
     "item_id": "THPT-G12-EXP01-A01",
-    "skill_id": "G12-SGK-EXP01-O01"
+    "skill_id": "G12-SGK-EXP01-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
     "item_id": "THPT-G12-EXP01-A02",
-    "skill_id": "G12-SGK-EXP01-O02"
+    "skill_id": "G12-SGK-EXP01-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
     "item_id": "THPT-G12-EXP01-A03",
-    "skill_id": "G12-SGK-EXP01-O03"
+    "skill_id": "G12-SGK-EXP01-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
     "item_id": "THPT-G12-EXP01-A04",
-    "skill_id": "G12-SGK-EXP01-O04"
+    "skill_id": "G12-SGK-EXP01-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
     "item_id": "THPT-G12-EXP01-A05",
-    "skill_id": "G12-SGK-EXP01-O05"
+    "skill_id": "G12-SGK-EXP01-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
     "item_id": "THPT-G12-EXP02-A01",
-    "skill_id": "G12-SGK-EXP02-O01"
+    "skill_id": "G12-SGK-EXP02-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
     "item_id": "THPT-G12-EXP02-A02",
-    "skill_id": "G12-SGK-EXP02-O02"
+    "skill_id": "G12-SGK-EXP02-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
     "item_id": "THPT-G12-EXP02-A03",
-    "skill_id": "G12-SGK-EXP02-O03"
+    "skill_id": "G12-SGK-EXP02-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
     "item_id": "THPT-G12-EXP02-A04",
-    "skill_id": "G12-SGK-EXP02-O04"
+    "skill_id": "G12-SGK-EXP02-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
     "item_id": "THPT-G12-EXP02-A05",
-    "skill_id": "G12-SGK-EXP02-O05"
+    "skill_id": "G12-SGK-EXP02-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
@@ -4882,7 +5746,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 1,
     "item_id": "THPT-G12-YE-M01",
-    "skill_id": "G12-SGK-YE-O01"
+    "skill_id": "G12-SGK-YE-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
@@ -4898,7 +5770,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 2,
     "item_id": "THPT-G12-YE-M02",
-    "skill_id": "G12-SGK-YE-O01"
+    "skill_id": "G12-SGK-YE-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
@@ -4914,7 +5794,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 3,
     "item_id": "THPT-G12-YE-M03",
-    "skill_id": "G12-SGK-YE-O01"
+    "skill_id": "G12-SGK-YE-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:APPLICATION",
@@ -4929,7 +5817,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 4,
     "item_id": "THPT-G12-YE-M04",
-    "skill_id": "G12-SGK-YE-O01"
+    "skill_id": "G12-SGK-YE-O01",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
@@ -4953,7 +5849,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 5,
     "item_id": "THPT-G12-YE-M05",
-    "skill_id": "G12-SGK-YE-O02"
+    "skill_id": "G12-SGK-YE-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
@@ -4969,7 +5873,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 6,
     "item_id": "THPT-G12-YE-M06",
-    "skill_id": "G12-SGK-YE-O02"
+    "skill_id": "G12-SGK-YE-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:APPLICATION",
@@ -4984,7 +5896,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 7,
     "item_id": "THPT-G12-YE-M07",
-    "skill_id": "G12-SGK-YE-O02"
+    "skill_id": "G12-SGK-YE-O02",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:APPLICATION",
@@ -4999,7 +5919,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 8,
     "item_id": "THPT-G12-YE-M08",
-    "skill_id": "G12-SGK-YE-O03"
+    "skill_id": "G12-SGK-YE-O03",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
@@ -5023,7 +5951,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 9,
     "item_id": "THPT-G12-YE-M09",
-    "skill_id": "G12-SGK-YE-O04"
+    "skill_id": "G12-SGK-YE-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
@@ -5039,7 +5975,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 10,
     "item_id": "THPT-G12-YE-M10",
-    "skill_id": "G12-SGK-YE-O04"
+    "skill_id": "G12-SGK-YE-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
@@ -5055,7 +5999,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 11,
     "item_id": "THPT-G12-YE-M11",
-    "skill_id": "G12-SGK-YE-O04"
+    "skill_id": "G12-SGK-YE-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:APPLICATION",
@@ -5070,7 +6022,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
     "item_id": "THPT-G12-YE-M12",
-    "skill_id": "G12-SGK-YE-O04"
+    "skill_id": "G12-SGK-YE-O04",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
@@ -5086,7 +6046,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
     "item_id": "THPT-G12-YE-M13",
-    "skill_id": "G12-SGK-YE-O05"
+    "skill_id": "G12-SGK-YE-O05",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
@@ -5102,7 +6070,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 14,
     "item_id": "THPT-G12-YE-M14",
-    "skill_id": "G12-SGK-YE-O06"
+    "skill_id": "G12-SGK-YE-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:APPLICATION",
@@ -5117,7 +6093,15 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 15,
     "item_id": "THPT-G12-YE-M15",
-    "skill_id": "G12-SGK-YE-O06"
+    "skill_id": "G12-SGK-YE-O06",
+    "candidate_use": {
+      "mode": "INTERACTIVE_SELF_CHECK",
+      "reveal": "AFTER_WHOLE_SUBMISSION",
+      "hints_before_submission": false,
+      "score_rule": "COUNT_CORRECT_ITEMS",
+      "score_per_correct": 1,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
@@ -5254,7 +6238,14 @@
     "item_id": "THPT-G12-B10-C04",
     "skill_id": "G12-CHIII-B10-O04",
     "source_locator": "B10-T02",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:B16:KNOWLEDGE_FIRST_TRY",
@@ -5263,7 +6254,14 @@
     "item_id": "THPT-G12-B16-A02",
     "skill_id": "G12-CHV-B16-O02",
     "source_locator": "B16-T02",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B01:KNOWLEDGE_FIRST_TRY",
@@ -5272,7 +6270,14 @@
     "item_id": "THPT-G12-CHI-B01-C04",
     "skill_id": "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT",
     "source_locator": "Tự thử B",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B02:KNOWLEDGE_FIRST_TRY",
@@ -5281,7 +6286,14 @@
     "item_id": "THPT-G12-CHI-B02-C01",
     "skill_id": "G12-B02-EXTREMA_GLOBAL_MEANING",
     "source_locator": "Tự thử B",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B03:KNOWLEDGE_FIRST_TRY",
@@ -5289,7 +6301,14 @@
     "order": 2,
     "item_id": "THPT-TOP10-P34",
     "source_locator": "Tự thử B",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B01:KNOWLEDGE_FIRST_TRY",
@@ -5297,7 +6316,14 @@
     "order": 1,
     "item_id": "THPT-G12-B01-KFT01",
     "source_locator": "Tự thử A",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B01:KNOWLEDGE_FIRST_TRY",
@@ -5305,7 +6331,14 @@
     "order": 3,
     "item_id": "THPT-G12-B01-KFT03",
     "source_locator": "Tự thử C",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B02:KNOWLEDGE_FIRST_TRY",
@@ -5313,7 +6346,14 @@
     "order": 1,
     "item_id": "THPT-G12-B02-KFT01",
     "source_locator": "Tự thử A",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B02:KNOWLEDGE_FIRST_TRY",
@@ -5321,7 +6361,14 @@
     "order": 3,
     "item_id": "THPT-G12-B02-KFT03",
     "source_locator": "Tự thử C",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B03:KNOWLEDGE_FIRST_TRY",
@@ -5329,7 +6376,14 @@
     "order": 1,
     "item_id": "THPT-G12-B03-KFT01",
     "source_locator": "Tự thử A",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B03:KNOWLEDGE_FIRST_TRY",
@@ -5337,7 +6391,14 @@
     "order": 3,
     "item_id": "THPT-G12-B03-KFT03",
     "source_locator": "Tự thử C",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B04:KNOWLEDGE_FIRST_TRY",
@@ -5345,7 +6406,14 @@
     "order": 1,
     "item_id": "THPT-G12-B04-KFT01",
     "source_locator": "Tự thử A",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B04:KNOWLEDGE_FIRST_TRY",
@@ -5353,7 +6421,14 @@
     "order": 2,
     "item_id": "THPT-G12-B04-KFT02",
     "source_locator": "Tự thử B",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B04:KNOWLEDGE_FIRST_TRY",
@@ -5361,7 +6436,14 @@
     "order": 3,
     "item_id": "THPT-G12-B04-KFT03",
     "source_locator": "Tự thử C",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B05:KNOWLEDGE_FIRST_TRY",
@@ -5369,7 +6451,14 @@
     "order": 1,
     "item_id": "THPT-G12-B05-KFT01",
     "source_locator": "Tự thử A",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B05:KNOWLEDGE_FIRST_TRY",
@@ -5377,7 +6466,14 @@
     "order": 2,
     "item_id": "THPT-G12-B05-KFT02",
     "source_locator": "Tự thử B",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B05:KNOWLEDGE_FIRST_TRY",
@@ -5385,7 +6481,14 @@
     "order": 3,
     "item_id": "THPT-G12-B05-KFT03",
     "source_locator": "Tự thử C",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHI:B05:KNOWLEDGE_FIRST_TRY",
@@ -5393,7 +6496,14 @@
     "order": 4,
     "item_id": "THPT-G12-B05-KFT04",
     "source_locator": "Tự thử D",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:B06:KNOWLEDGE_FIRST_TRY",
@@ -5401,7 +6511,14 @@
     "order": 1,
     "item_id": "THPT-G12-B06-T01",
     "source_locator": "B06-T01",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:B07:KNOWLEDGE_FIRST_TRY",
@@ -5409,7 +6526,14 @@
     "order": 1,
     "item_id": "THPT-G12-B07-T01",
     "source_locator": "B07-T01",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHII:B08:KNOWLEDGE_FIRST_TRY",
@@ -5417,7 +6541,14 @@
     "order": 1,
     "item_id": "THPT-G12-B08-T01",
     "source_locator": "B08-T01",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:B09:KNOWLEDGE_FIRST_TRY",
@@ -5425,7 +6556,14 @@
     "order": 1,
     "item_id": "THPT-G12-B09-T01",
     "source_locator": "B09-T01",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:B09:KNOWLEDGE_FIRST_TRY",
@@ -5433,7 +6571,14 @@
     "order": 2,
     "item_id": "THPT-G12-B09-T02",
     "source_locator": "B09-T02",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIII:B10:KNOWLEDGE_FIRST_TRY",
@@ -5441,7 +6586,14 @@
     "order": 1,
     "item_id": "THPT-G12-B10-T01",
     "source_locator": "B10-T01",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:B11:KNOWLEDGE_FIRST_TRY",
@@ -5449,7 +6601,14 @@
     "order": 1,
     "item_id": "THPT-G12-B11-T01",
     "source_locator": "B11-T01",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:B11:KNOWLEDGE_FIRST_TRY",
@@ -5457,7 +6616,14 @@
     "order": 2,
     "item_id": "THPT-G12-B11-T02",
     "source_locator": "B11-T02",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:B12:KNOWLEDGE_FIRST_TRY",
@@ -5465,7 +6631,14 @@
     "order": 1,
     "item_id": "THPT-G12-B12-T01",
     "source_locator": "B12-T01",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:B12:KNOWLEDGE_FIRST_TRY",
@@ -5473,7 +6646,14 @@
     "order": 2,
     "item_id": "THPT-G12-B12-T02",
     "source_locator": "B12-T02",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:B13:KNOWLEDGE_FIRST_TRY",
@@ -5481,7 +6661,14 @@
     "order": 1,
     "item_id": "THPT-G12-B13-T01",
     "source_locator": "B13-T01",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:B13:KNOWLEDGE_FIRST_TRY",
@@ -5489,7 +6676,14 @@
     "order": 2,
     "item_id": "THPT-G12-B13-T02",
     "source_locator": "B13-T02",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:B14:KNOWLEDGE_FIRST_TRY",
@@ -5497,7 +6691,14 @@
     "order": 1,
     "item_id": "THPT-G12-B14-T01",
     "source_locator": "B14-T01",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:B15:KNOWLEDGE_FIRST_TRY",
@@ -5505,7 +6706,14 @@
     "order": 1,
     "item_id": "THPT-G12-B15-T01",
     "source_locator": "B15-T01",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:B15:KNOWLEDGE_FIRST_TRY",
@@ -5513,7 +6721,14 @@
     "order": 2,
     "item_id": "THPT-G12-B15-T02",
     "source_locator": "B15-T02",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:B16:KNOWLEDGE_FIRST_TRY",
@@ -5521,7 +6736,14 @@
     "order": 1,
     "item_id": "THPT-G12-B16-T01",
     "source_locator": "B16-T01",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:B17:KNOWLEDGE_FIRST_TRY",
@@ -5529,7 +6751,14 @@
     "order": 1,
     "item_id": "THPT-G12-B17-T01",
     "source_locator": "B17-T01",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHV:B17:KNOWLEDGE_FIRST_TRY",
@@ -5537,7 +6766,14 @@
     "order": 2,
     "item_id": "THPT-G12-B17-T02",
     "source_locator": "B17-T02",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:B18:KNOWLEDGE_FIRST_TRY",
@@ -5545,7 +6781,14 @@
     "order": 1,
     "item_id": "THPT-G12-B18-KFT01",
     "source_locator": "Tự thử 1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:B18:KNOWLEDGE_FIRST_TRY",
@@ -5553,7 +6796,14 @@
     "order": 2,
     "item_id": "THPT-G12-B18-KFT02",
     "source_locator": "Tự thử 2",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:B19:KNOWLEDGE_FIRST_TRY",
@@ -5561,7 +6811,14 @@
     "order": 1,
     "item_id": "THPT-G12-B19-KFT01",
     "source_locator": "Tự thử 1",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHVI:B19:KNOWLEDGE_FIRST_TRY",
@@ -5569,7 +6826,14 @@
     "order": 2,
     "item_id": "THPT-G12-B19-KFT02",
     "source_locator": "Tự thử 2",
-    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "student_label": "Vận dụng",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
   },
   {
     "collection": "SGK:G12:CHIV:B12:CORE",
