@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "DELTA21_G10_CHIV_VI_COMPLETE_SCOPED_INTERACTIVE_REVIEW_FULL_Q01_Q18_OPEN",
+  "academic_audit": "CANDIDATE_AUTHORING_COMPLETE_TARGETED_ACCEPTANCE_ONLY",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "6ce612bbb5185d79fc60589bb319c31d8db438fd",
+    "as_of_commit": "f9ea5870478532cea419f1b1c5c073dbddf54287",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Complete G10 ChVII–IX remaining converted Core/Practice/Application/FirstTry/support/optional group, preserving 42 dedicated selfcheck IDs and already reviewed CD20 shared IDs. Then G12 chapter and supplement groups and remaining Topics; resolve material Delta/PED, applicable Q01–Q18 and RELEASE handoff.",
-    "status": "DELTA21_G10_CHIV_VI_COMPLETE_SCOPED_INTERACTIVE_REVIEW_FULL_Q01_Q18_OPEN",
+    "next": "Acceptance only: use existing exact PASS snapshots/receipts, semantic field diffs and completed scoped evidence to classify actual unresolved academic/material changes and genuinely unverified conversions. Filter existing pending_review and immutable checkpoints, preserve every valid unaffected PASS; close remaining applicable Q01–Q18/A1–A7 in scope, resolve concrete defects or source uncertainty, and complete source-locked Q18/V2/ready/REGISTER handoff in the same completion pass per X-E. No grade-by-grade blanket re-audit, no new checklist, no RELEASE runtime or deploy work.",
+    "status": "CANDIDATE_AUTHORING_COMPLETE_TARGETED_ACCEPTANCE_ONLY",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,212 +112,51 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "delta_audit_wave21",
-    "delta_audit_wave21": {
-      "baseline": "bffda11f589d55b9c53768d640d182b70d2bf452",
-      "verified_head": "6ce612bbb5185d79fc60589bb319c31d8db438fd",
+    "current_checkpoint_key": "acceptance_scope_correction_20261128",
+    "acceptance_scope_correction_20261128": {
+      "baseline": "9f15c2530349507ed15c9986c427bd362d54c83e",
+      "verified_head": "f9ea5870478532cea419f1b1c5c073dbddf54287",
+      "owner_instruction": "28/11/2026: identify and eliminate the cause of checkpoint-driven scope drift; do not continue grade-by-grade review merely because checkpoint next says so.",
+      "authority": {
+        "issue": 1090,
+        "owner_decision_comment": 7215691090,
+        "standard_blob": "dec6908a3488a5013849e9b768dac55911552bed",
+        "standard_sections": [
+          "VII",
+          "X-C",
+          "X-D",
+          "X-E",
+          "X-G.5",
+          "X-G.6"
+        ],
+        "governance_draft": 1130,
+        "agents_commit": "f77d2d6af173804b0b3a3f48f4ec0cab10f8e324"
+      },
+      "root_cause": "Candidate conversion sequence finished at f44755f6. Repeated checkpoint next actions selected chapter batches instead of deriving the remaining acceptance work from original owner goal, exact PASS receipts, semantic Delta and scope. Scoped audit evidence was retained but not consistently used to close final applicable gates. This is operational drift, not proof that every individual review was redundant; new choice conversions and material changes require genuine verification.",
+      "superseded_next": "Complete G10 ChVII–IX remaining converted Core/Practice/Application/FirstTry/support/optional group, preserving 42 dedicated selfcheck IDs and already reviewed CD20 shared IDs. Then G12 chapter and supplement groups and remaining Topics; resolve material Delta/PED, applicable Q01–Q18 and RELEASE handoff.",
       "inventory": {
         "interactive_unique": 2214,
         "written_unique": 325,
         "total_unique": 2539,
         "placement_rows": 4301,
-        "evidence": "Inherited inventory; no ID or placement changes."
+        "topics": 22,
+        "sgk_chapters": 24,
+        "supplement_groups": 3,
+        "source": "Existing exact global join Delta02, unchanged ID/placement inventory through Delta21."
       },
-      "written": "325 source-reviewed and 40 flagged Written deltas closed; 18 G10 ChIV–VI Written placements preserved.",
-      "interactive": {
-        "reviewed": 155,
-        "revised": 15,
-        "retained": 140,
-        "prior_dedicated_selfcheck": 59,
-        "scope_total": 214,
-        "chapters": [
-          {
-            "ch": "IV",
-            "reviewed": 67,
-            "old_blob": "4e8351a48e03102ef352cac2f40eef832aee36d3",
-            "new_blob": "a0296eb5ddbf16d0a01415cc0b2ca3a755d27b17",
-            "source_blobs": [
-              "18c29d7f60448a0a52d5b9f5aa5002e0f331defd",
-              "e38f066aeb2972c8ffb69d63bf17c112750bb423",
-              "e76a0ae4f9628ffd1d183b44eaae1c35e454bf13",
-              "9e5c9227417484e3bbea4f0ba085ff844100f321",
-              "f589e9a61841b12dfbf427c1a92dd5105612d584",
-              "7b0428899b64a9986689dc5723d119b4356eb06b",
-              "313a27573cd679234c62f5041587ea86de684733"
-            ],
-            "prior_selfcheck_blob": "9ceb2aa78fd7c3df26939229d02d542b2cc356a5",
-            "changed": [
-              "B07-P06",
-              "B08-P06",
-              "B11-P06",
-              "CHIV-TRY06",
-              "CHIV-TRY08",
-              "CHIV-TRY-RIVER-TR01",
-              "CHIV-TRY21",
-              "CHIV-TRY-FORCE-TR01"
-            ]
-          },
-          {
-            "ch": "V",
-            "reviewed": 40,
-            "old_blob": "e83bc423ae1bdfff5bdb054f241399384e457da4",
-            "new_blob": "f213130cfa4f2e06512d436a6f42904b8af66793",
-            "source_blobs": [
-              "49502fe39cf0a67f6a3e973a77f94164150637a7",
-              "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
-              "d552c5415c05f1c354cdb8e01a61f0165296e66c",
-              "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
-              "66689cd750d75a0bd37cb6d3841314d18a566ec7"
-            ],
-            "prior_selfcheck_blob": "fc7697a8d0c7caf88ed88afe86f0eeac35b15397",
-            "changed": [
-              "B12-C02",
-              "B13-P05",
-              "CHV-TRY-CALC-R01",
-              "CHV-TRY05"
-            ]
-          },
-          {
-            "ch": "VI",
-            "reviewed": 48,
-            "old_blob": "ed1dd7a0f8201db3beb56de191ec7ce5f71e831b",
-            "new_blob": "d65c84ef6bd42a59d7cfd59da4573ba825e92b7f",
-            "source_blobs": [
-              "1223d4c2b574433479c5d222dbeff363718ee4bb",
-              "ff29cbee1f5566bb6eef9e352355e156400a17ac",
-              "ee38fdfeddc78a22a527a6a7449347f86eeee422",
-              "190f351516932caf0b8a417132f15e7915f79993",
-              "bbfc3fdb1e2a5e153bfe20f933fbf8844263552a",
-              "3d8b0ed45b606f608db4b2a55ecfa8a273a8c802"
-            ],
-            "prior_selfcheck_blob": "44e65c07440f072d09dc1ea87c5c685417b609c7",
-            "changed": [
-              "CHVI-TRY04",
-              "CHVI-TRY09",
-              "CHVI-TRY18"
-            ]
-          }
-        ],
-        "proof_iv": "B07 C01–02 A→B, equal iff same direction and norm; P01–06 length7,DC,CD,zero convention,AC/CB same direction unequal3/2, displacement5. B08 C01–02 AC,AC; P01–06 zero,NP,zero,MA+MB=0, X=G and AX=2XM by midpoint relation, resultant²=148. B09 C01–02 norm8 opposite,zero; P01–07 18,a+3b,−3/5 AB,1/3(AB+AC), opposite ratio5/2,3km west, MN=−a/6−b/2 unique by noncollinearity (R04 source). B10 C01–02 (6;−2),13; P01–06 (5;−8),B(6;2),M(1;2),C(1;2) collinear/no triangle vs C′(1;5) valid, v=−2u,10km. B11 C01–02 −5,orthogonal dot0; P01–06 −15, k4,cos1/sqrt5,11,30J,right at A and area5. TRY01–24: opposite equal norms,3m opposite,same direction line/opposite,AB=DC and CD opposite,zero displacement,AC length5,perpendicular resultant5,CB,−4e+4e=0,GA=−2GM total0,zero,6 west,4E/2N,opposite ratio3,AG6 and2/3 AM,(5;−3)/(−5;3),(5;−5),5,only v=3u,M(1;2)/G(1;3),−3,2,dot0 nonzero,−30J/0J. RIVER t=60/5=12s east36m; FORCE equal forces resultant4sqrt3 along internal bisector and third opposite. Distinguish real displacement and path, mathematical direction convention vs physical.",
-        "proof_v": "B12 C01–02 .03, [12.1;12.5]; P01–07 2/78≈2.5641%,4290/4,relative upper bounds1%/.5% not actual order,[3.15;3.25],10.0/.05,2%/.5%,cbrt7≈1.91293118→1.913 with strict .0005 bound. B13 C01–02 mean6,median4; P01–06 weighted mean4,quartiles3/6/9,modes1/3,mean10 median5,quartiles2/4/8,x26 same totals40 but medians8/4. B14 C01–02 range6,variance8/3; P01–06 IQR6,var4 std2,fences−1/7 only20 outside,var2 vs26/3,2cm² and sqrt2cm,range8/IQR4/var8. TRY01–14 .33≈1/3, [8.1;8.7] error≤.3,relative≤2%,7.35/error.004,mean5,median7,Q2/4/6,modes2/3,mean10 median6,range8 IQR6,mean4 var8/3,mean4 var4 std2 with units,fences−4/12 only20,means4 var8/3 vs32/3. CALC cbrt11≈2.22398009→2.224, cube bounds. Keep calculator practice requirement and existing remediation links; source P07 independent Delta C status not upgraded.",
-        "proof_vi": "B15 C01–02 fails single-valued x2, domain[1.5;∞); P01–04 f=(x²−9)/(x−3) domain excludes3 and g all R, fees18/28 and domain x≥0, abs V shape vertex−2, allowed distance(0;7]. B16 QF01 vertex x−3; C01–05 m≠2 otherwise linear, f(2)=f(4)=−3 symmetric x3,min−3 at4 and range[−3;∞),height18 at3 endpoints0,vertex(−3;−4) open up. P00 roots1/3; P01–05 k≠−1 domain R all k,vertex(2;3) max3 roots1/3,vertex(−1;−9) Ox−4/2 Oy−8 symmetric points(−3;−5),(1;−5),restricted max6 min−2 range[−2;6],fence width9 length18 area162. B17 C01–02 positive all R,strict excludes−1 vs nonstrict all R; P01–04 [2;3],(−2;4),m<1,range[5;10] in (0;15). B18 C01–02 {4},{−4;−3}; P01–04 {3} vs {−2}, {0;6}, {−2},x4. TRY01–16: A only repeated input same output,domain[2;∞) range[0;∞),A point only,increasing on closed interval,fees12/20,only g quadratic,vertex(2;−3),vertex(1;−4) roots−1/3 Oy−3,max8 at−1 range(−∞;8],height20 at2 endpoints0,Δ−16 always positive,strict excludes2/non-strict R,[2;3],−2<m<2, [4;6] positive fence, radical domain x≥1 solution3. TRY18 solution3 reject−1, TRY19 ladder12. B18-C01 reused exact source first-try; no TRY17 new ID. Preserve 3-option historical QF01 and B16-P00 exact option counts (not fabricate fourth).",
-        "parity": "Readback all 155 identical keys, source, hints/rubrics, exposure, IDs, skill, difficulty and other nonedited fields; only selected stem/options/solutions changed; unique choices and valid key, auto_grade=false. Prior dedicated blobs unchanged."
-      },
-      "placements": {
-        "blob": "240d485678b3182add1fb3acd7035e6fc9994e08",
-        "interactive_rows": 215,
-        "counts": {
-          "SGK_CORE": 28,
-          "SGK_PRACTICE": 65,
-          "SGK_APPLICATION": 3,
-          "CLIENT_SELF_CHECK_NO_MASTERY": 59,
-          "SGK_FIRST_TRY": 60
-        },
-        "unresolved": 0,
-        "written_rows": 18,
-        "reuse": "B18-C01 appears once Core and once FirstTry, exact shared ID; 214 unique IDs, 215 placements."
-      },
-      "source_delta": {
-        "material": [
-          [
-            "B08-P02",
-            "AB−AC→CB",
-            "MP−MN→NP"
-          ],
-          [
-            "B08-P05",
-            "given G find vector sum zero",
-            "reverse characterization of G via midpoint"
-          ],
-          [
-            "B08-P06",
-            "3N/4N perpendicular",
-            "6N/8N at60°"
-          ],
-          [
-            "B10-P04",
-            "given triangle find centroid",
-            "inverse centroid with degeneracy check and corrected nondegenerate case"
-          ],
-          [
-            "B10-P05",
-            "u=(2;−3),v=(−4;6)",
-            "u=(0;−3),v=(0;6) zero-coordinate guard"
-          ],
-          [
-            "B11-P01",
-            "5/4 at60°",
-            "6/5 at120°"
-          ],
-          [
-            "B11-P04",
-            "A origin",
-            "translated coordinates same displacement"
-          ],
-          [
-            "B12-P03",
-            "exact relative error 25/2475",
-            "compare bounds and distinguish actual error"
-          ],
-          [
-            "B12-P05",
-            "round10.06→10.1",
-            "round9.95→10.0 carrying"
-          ],
-          [
-            "B13-P05",
-            "sorted data",
-            "unsorted same data"
-          ],
-          [
-            "B13-P06",
-            "different means same median",
-            "equal means different median, inverse missing value"
-          ],
-          [
-            "B14-P03",
-            "outlier30",
-            "new data includes fence equality, outlier20"
-          ],
-          [
-            "B15-P01",
-            "(x+1)/(x²−9) domain",
-            "removable singularity and compare functions"
-          ],
-          [
-            "B15-P02",
-            "8x through2, then16+6(x−2)",
-            "flat18 through3, then18+5(x−3)"
-          ],
-          [
-            "B17-C02",
-            "−3(x−2)² zero and positive test",
-            "−2(x+1)² strict vs nonstrict negativity"
-          ],
-          [
-            "B18-P01",
-            "sqrt(3x+4)=x",
-            "sqrt(x+6)=±x compare sign filters"
-          ]
-        ],
-        "disposition": "Current mathematics and skill fit reviewed; historical task variants not equivalent. Preserve candidate and explicit Delta evidence, final applicable Delta/PED/source acceptance and consistent generation remain. Original S1 PDF not re-read or new independent review claimed."
-      },
-      "aggregate_g10": {
-        "chapter_i_vi_scoped_unique": 336,
-        "chapter_i_vi_placements": 337,
-        "remaining": "ChVII–IX converted scope; preserve 42 dedicated and 9 already reviewed CD20 shared G10 IDs."
-      },
-      "q_audit_scope": "Scoped math/source/choice review only; full Q01–Q18/notation/PED and RELEASE projection/reveal/scoring QA pending.",
-      "protected_scope": "No runtime/private RD1/Final Submit/Mastery/Firebase/LIVE changes; no merge/deploy."
+      "accepted_scope": "40/40 flagged Written reference deltas closed, 38/38 skill mappings resolved, 80 projection flags triaged; prior scoped checks and source/receipt evidence preserved exactly. This does not grant full Q18 or imply all historical candidate wording is PASS.",
+      "execution": "Use the existing pending_review and exact Git history, not a new tracking system. Identify actual semantic changes since applicable PASS source (including converted choices/hints/key/rubric/difficulty and contextual placements), determine applicable Delta A/B/C/D, carry forward verified evidence; check only material changes or genuinely missing verification. Programmatic checks across inventory for actual notation/coverage/reference/exposure defects, not a new reading queue by grade. Resolve actual blockers with S1 or targeted review when needed. Close applicable acceptance gates rather than reassert generic pending. Do not mark CONTENT_READY until genuine evidence and X-E handoff are complete. If a gate is already satisfied, package in the same pass; do not manufacture a further review stage.",
+      "exit_condition": "Q01–Q18/A1–A7 applicable evidence, source locked, no unresolved P0/P1; Q18 receipt, V2, ready/REGISTER and handoff per existing X-E. RELEASE controls actual projection/reveal/browser/CI and owner authorization; not an AUTHORING re-audit prerequisite.",
+      "protected_scope": "No item/placement/Written/source/schema content changes in this process correction; no private RD1/runtime/Final Submit/Mastery/Firebase/LIVE, merge or deploy."
     },
     "previous_manifest": {
-      "commit": "bffda11f589d55b9c53768d640d182b70d2bf452",
-      "blob": "a913adb99668773a90af27cf5f99981861ccb438",
-      "key": "delta_audit_wave20"
+      "commit": "9f15c2530349507ed15c9986c427bd362d54c83e",
+      "blob": "f6a707fe5752758b7a117a41aa3df70ca9d20e18",
+      "key": "delta_audit_wave21"
     }
   },
   "pending_review": {
-    "scope_warning": "Carried forward without new academic review; this is a concise open-work index, not a complete replacement for historical item-level evidence. Reconcile later dispositions before repeating or closing any historical finding.",
+    "scope_warning": "Existing open-work index is historical until reconciled against later scoped evidence/receipts. Do not treat any grade-level pending string as authorization for whole-group re-audit. Resolve actual outstanding gate or specific item/field defect; preserve exact PASS scope and all evidence, no inferred full PASS.",
     "cd17": "Written candidate complete; scoped academic Delta review pending.",
     "skill_mapping": {
       "status": "38_OF_38_MAPPED_16_GROUPS_EXISTING_TAXONOMY_NO_RUNTIME_ACTIVATION",
@@ -456,5 +295,5 @@
     "g12_b14_w07_delta": "Scoped Written Q18 author verified wave08; integrated after B17 binding confirmed. Projection pending authorized RELEASE.",
     "remaining_written_source_custody": "40/40 previously flagged Written reference statuses closed wave07/08, 325 source-reviewed. W26 source custody and two stale projection bindings resolved earlier. Authoring source status does not imply website projection, reveal or whole-bank Q18; actual generation and browser verification require authorized RELEASE."
   },
-  "checkpoint_policy": "Replace current_progress and current checkpoint, do not append cumulative report trees. Record detailed scoped evidence in existing issue/PR or prior immutable Git snapshot; preserve exact commit/path/blob and relevant key. Carry forward unresolved issues only; retain older history pointer. Never infer PASS, authorize cutover or change protected runtime from compaction."
+  "checkpoint_policy": "Replace current_progress and current checkpoint, do not append cumulative report trees. Record detailed scoped evidence in existing issue/PR or prior immutable Git snapshot; preserve exact commit/path/blob and relevant key. Carry forward unresolved issues only; retain older history pointer. Never infer PASS, authorize cutover or change protected runtime from compaction. Checkpoint next is subordinate to original task and current owner decision; before resumption verify exit criteria and actual missing acceptance evidence. If mismatch, correct it; do not reopen accepted scope. After each unit close a real gate or identify a concrete unresolved blocker."
 }
