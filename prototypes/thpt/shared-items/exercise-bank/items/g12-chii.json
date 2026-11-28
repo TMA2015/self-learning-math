@@ -1138,7 +1138,7 @@
   },
   {
     "item_id": "THPT-G12-B07-C02",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B07-C02",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B07-C02-XG6-20261128",
     "stem": "Cho \\(\\vec a=3\\vec i-2\\vec j+\\vec k\\). Tọa độ \\(\\vec a\\) là gì?",
     "answer_key": "(3;-2;1)",
     "worked_solution": "Theo định nghĩa, tọa độ vectơ là ba hệ số trong biểu diễn theo \\(\\vec i,\\vec j,\\vec k\\). Ở đây các hệ số lần lượt 3, -2, 1 nên \\(\\vec a=(3;-2;1)\\).",
@@ -1146,7 +1146,7 @@
       "G12-CHII-B07-O02"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Đọc hệ số của i,j,k lần lượt."
     ],
