@@ -1687,11 +1687,11 @@
     "options": [
       {
         "id": "A",
-        "text": "Có, ứng với t=2."
+        "text": "Có, ứng với \\(t=2\\)."
       },
       {
         "id": "B",
-        "text": "Có, ứng với t=4."
+        "text": "Có, ứng với \\(t=4\\)."
       },
       {
         "id": "C",
@@ -1742,11 +1742,11 @@
     "options": [
       {
         "id": "A",
-        "text": "Có, ứng với t=1."
+        "text": "Có, ứng với \\(t=1\\)."
       },
       {
         "id": "B",
-        "text": "Không, vì z=0."
+        "text": "Không, vì \\(z=0\\)."
       },
       {
         "id": "C",
@@ -1754,7 +1754,7 @@
       },
       {
         "id": "D",
-        "text": "Có, ứng với t=2."
+        "text": "Có, ứng với \\(t=2\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -2072,7 +2072,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Cắt nhau tại (0;1;0)."
+        "text": "Cắt nhau tại \\((0;1;0)\\)."
       },
       {
         "id": "B",
@@ -2864,14 +2864,14 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-P04",
     "stem": "Cho đường thẳng \\(d:(x;y;z)=(1+t;2t;3)\\), \\(t\\in\\mathbb R\\), và mặt phẳng \\((P):z=0\\). Tính góc giữa d và (P). Đường thẳng nằm trong (P) hay song song phân biệt với (P)?",
     "answer_key": "0°; đường thẳng song song phân biệt với mặt phẳng.",
-    "worked_solution": "Chỉ phương của d là \\(\\vec u=(1;2;0)\\), pháp tuyến của (P) là \\(\\vec n=(0;0;1)\\). Vì \\(\\vec u\\cdot\\vec n=0\\), sin của góc đường–mặt bằng 0, nên góc bằng 0°. Để phân biệt vị trí, xét điểm \\(A(1;0;3)\\) trên d. Điểm A không thuộc (P) vì \\(z=3\\ne0\\). Mọi điểm trên d đều có z=3, nên d không có điểm chung với (P), tức d song song phân biệt với (P).",
+    "worked_solution": "Chỉ phương của d là \\(\\vec u=(1;2;0)\\), pháp tuyến của (P) là \\(\\vec n=(0;0;1)\\). Vì \\(\\vec u\\cdot\\vec n=0\\), sin của góc đường–mặt bằng 0, nên góc bằng 0°. Để phân biệt vị trí, xét điểm \\(A(1;0;3)\\) trên d. Điểm A không thuộc (P) vì \\(z=3\\ne0\\). Mọi điểm trên d đều có \\(z=3\\), nên d không có điểm chung với (P), tức d song song phân biệt với (P).",
     "skill_ids": [
       "G12-CHV-B16-O04"
     ],
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Tính tích vô hướng của chỉ phương và pháp tuyến, rồi kiểm tọa độ z của điểm ứng với t=0."
+      "Tính tích vô hướng của chỉ phương và pháp tuyến, rồi kiểm tọa độ z của điểm ứng với \\(t=0\\)."
     ],
     "rubric": null,
     "interaction": {
