@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "5e1f374859f145ce26891ebd1d9a47b3547cfd65",
+    "as_of_commit": "232b5057e4e58a9f4171fe0472979725b1611d2c",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.1: shared 70/815 interactive IDs (G10 ChI–IV shared subset), Written 0/160; next shared IDs in items/g10-chv.json. Do not re-read closed fields.",
+    "next": "08.1: shared 155/815 interactive IDs (G10 ChI–VII shared subset), Written 0/160; next G10 ChVIII–IX + G11 ChI. Owner: work in groups of three chapters; skip already checked/normalized content.",
     "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -612,18 +612,473 @@
                     ]
                   ],
                   "findings": "All changed/new learner-visible fields of 20 shared B07–B11 records read directly; B08-P05 ratio and vector notation in stem/options/hints/solution; B09-C01 norm/unit typesetting in options and display answer_key (same choice B, magnitude and direction unchanged). Exact readback: only six listed learner fields in two IDs changed; no interaction/rubric/placement change. Data commit 5e1f374859f145ce26891ebd1d9a47b3547cfd65. No math/PED re-audit."
+                },
+                {
+                  "shard": "items/g10-chv.json",
+                  "blob": "f213130cfa4f2e06512d436a6f42904b8af66793",
+                  "baseline_commit": "b96f059f19941417f6033985bfa3bda26cfef3b7",
+                  "baseline_blob": "ba0bd389555358df33d1cab6c3fd79f781bb2928",
+                  "evidence_cp": "CP95",
+                  "records": [
+                    [
+                      "THPT-G10-B12-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B12-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B12-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B12-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B12-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B12-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B12-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B12-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B13-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B13-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B13-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B13-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B13-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B13-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B13-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B13-P06",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-B14-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B14-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B14-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B14-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B14-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B14-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B14-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B14-P06",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Read remaining changed/unverified fields of shared IDs; notation acceptable, no source changes. Previously checked identical fields inherited."
+                },
+                {
+                  "shard": "items/g10-chvi.json",
+                  "blob": "388ec360acc529cc0ff818355b24a5a5f466440b",
+                  "baseline_commit": "28938559ecadabb71b9b9c7fe59e4eaf9b8af84c",
+                  "baseline_blob": "9267f9fd228ab073ea70b6340b2f10382df6b772",
+                  "evidence_cp": "CP96",
+                  "records": [
+                    [
+                      "THPT-G10-B18-C01",
+                      13,
+                      82
+                    ],
+                    [
+                      "THPT-G10-B18-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B18-P01",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-B18-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B18-P03",
+                      13,
+                      82
+                    ],
+                    [
+                      "THPT-G10-B18-P04",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Read remaining changed/unverified fields of shared IDs; notation acceptable, no source changes. Previously checked identical fields inherited."
+                },
+                {
+                  "shard": "items/g10-chvii.json",
+                  "blob": "c144ecf1851c7cb7ca071388b89091092299b7c8",
+                  "baseline_commit": "2e8f2177e56528fc17ccd26c6db45979b30e192f",
+                  "baseline_blob": "b964cd2a06887166504cfe76c39a03e10a4f70b7",
+                  "evidence_cp": "CP97",
+                  "records": [
+                    [
+                      "THPT-G10-B19-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B19-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B19-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B19-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B19-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B19-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B20-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B20-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B20-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B20-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B20-P03",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B20-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B21-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B21-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B21-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B21-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B21-P03",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-B21-P04",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-G10-B22-C01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B22-C02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B22-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B22-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B22-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B22-P04",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B19-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B19-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B20-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B20-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B21-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B21-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B22-P05",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-B22-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY01",
+                      64,
+                      31
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY02",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY03",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY04",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY05",
+                      72,
+                      23
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY06",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY07",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY08",
+                      64,
+                      31
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY09",
+                      64,
+                      31
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY10",
+                      64,
+                      31
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY11",
+                      64,
+                      31
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY12",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY13",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY14",
+                      8,
+                      87
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY15",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY16",
+                      64,
+                      31
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY17",
+                      64,
+                      31
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY18",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY19",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY20",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY21",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY22",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-G10-CHVII-TRY23",
+                      0,
+                      95
+                    ]
+                  ],
+                  "findings": "Directly read only previously unverified/changed fields for 55 shared IDs; normalized parameter equations in B20-P05 options, vector labels in TRY01 option, unit typesetting in TRY23 option/display key. Exact readback verified only four fields across these three IDs changed, correct option IDs and mathematical meaning retained. Data commit 232b5057e4e58a9f4171fe0472979725b1611d2c."
                 }
               ],
-              "completed_interactive": 70,
+              "completed_interactive": 155,
               "completed_written": 0,
-              "remaining_interactive": 745,
+              "remaining_interactive": 660,
               "remaining_written": 160,
               "counts": {
-                "ids": 70,
-                "inherited": 270,
-                "newly_checked": 149
+                "ids": 155,
+                "inherited": 569,
+                "newly_checked": 360
               },
-              "next": "Shared IDs in items/g10-chv.json; compare CP95 exact snapshot and later field evidence, directly review only changed/unverified fields."
+              "next": "Next three-chapter group: shared IDs in items/g10-chviii.json, items/g10-chix.json, items/g11-chi.json; skip verified fields. Written still pending in 08.1."
             }
           },
           {
