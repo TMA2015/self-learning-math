@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "b255d8c947ae20e57bd9f562900b5487830576c1",
+    "as_of_commit": "df20d622f68898e004a3463dbf51c9f933198bcf",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.1: shared interactive 815/815; Written 74/160; first batch G11 59/59 completed (25 corrected); remaining 86 G12 Written. Owner authorizes 1–2 consolidated Written batches; fix directly in bank.",
+    "next": "08.1 complete 975/975 (815 interactive +160 Written); next 08.2 Topic-only 910 IDs (829 interactive +81 Written). 08 remains open until 08.2 and 08.3 complete. CONTENT_READY not restored.",
     "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -204,7 +204,7 @@
           {
             "id": "08.1",
             "scope": "SGK ∩ Topic by actual canonical placements, inclusive of Written",
-            "state": "IN_PROGRESS",
+            "state": "COMPLETE",
             "inventory": {
               "total": 975,
               "written": 160,
@@ -5128,18 +5128,532 @@
                     ]
                   ],
                   "findings": "Reviewed learner source sections for remaining X-G.5 notation, preserving prior academic evidence. Exact canonical path and blob readback verified; 25 corrections total across G11: fractions/limits/units, grouped statistics notation and boundary, plane/line relations and projection/orthogonality. No changes to answer meaning, rubric points, assessment mode, placement or website."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G12 ChI",
+                  "blob": "3d28d297bb91b94c28b0f316aed8e63c8d8646d9",
+                  "source_path": "prototypes/thpt/shared-items/exercise-bank/written/THPT-G12-CHI-B01-W01.md",
+                  "source_blob": "a6eb5fdb458624d396a6c2bc78cf2552c18953b4",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G12 consolidated scoped source review, owner batch 2 of 2",
+                  "records": [
+                    [
+                      "THPT-G12-CHI-B01-W01",
+                      0,
+                      213
+                    ]
+                  ],
+                  "findings": "Direct source read, scoped normalization of learner-facing expressions (84/86 corrected across G12, 2 retained); exact source and reference readback; historical reviewed blobs and website projections preserved. Scope check outside targeted sections unchanged for existing paths; two B01 active full-source sections moved into unique bank canonical Written files. Preserved ID, math answers, rubric point totals, roles and auto_grade=false."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G12 ChI",
+                  "blob": "3d28d297bb91b94c28b0f316aed8e63c8d8646d9",
+                  "source_path": "prototypes/thpt/shared-items/exercise-bank/written/THPT-G12-CHI-B01-W02.md",
+                  "source_blob": "45dd83ca3737ff63467cf7d922de2d95c931c453",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G12 consolidated scoped source review, owner batch 2 of 2",
+                  "records": [
+                    [
+                      "THPT-G12-CHI-B01-W02",
+                      0,
+                      213
+                    ]
+                  ],
+                  "findings": "Direct source read, scoped normalization of learner-facing expressions (84/86 corrected across G12, 2 retained); exact source and reference readback; historical reviewed blobs and website projections preserved. Scope check outside targeted sections unchanged for existing paths; two B01 active full-source sections moved into unique bank canonical Written files. Preserved ID, math answers, rubric point totals, roles and auto_grade=false."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G12 ChI",
+                  "blob": "3d28d297bb91b94c28b0f316aed8e63c8d8646d9",
+                  "source_path": "prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md",
+                  "source_blob": "a10e32849db439e9884ac8ac0cb1f8b365ebf034",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G12 consolidated scoped source review, owner batch 2 of 2",
+                  "records": [
+                    [
+                      "THPT-G12-CHI-B02-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G12-CHI-B02-W02",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G12-CHI-B03-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G12-CHI-B03-W02",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G12-CHI-B04-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G12-CHI-B04-W02",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G12-CHI-B05-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G12-CHI-B05-W02",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G12-CHI-END-W01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-CHI-END-W02",
+                      0,
+                      149
+                    ]
+                  ],
+                  "findings": "Direct source read, scoped normalization of learner-facing expressions (84/86 corrected across G12, 2 retained); exact source and reference readback; historical reviewed blobs and website projections preserved. Scope check outside targeted sections unchanged for existing paths; two B01 active full-source sections moved into unique bank canonical Written files. Preserved ID, math answers, rubric point totals, roles and auto_grade=false."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G12 ChIV",
+                  "blob": "3d28d297bb91b94c28b0f316aed8e63c8d8646d9",
+                  "source_path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+                  "source_blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G12 consolidated scoped source review, owner batch 2 of 2",
+                  "records": [
+                    [
+                      "THPT-G12-B11-W01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B11-W02",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B11-W03",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B11-W04",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B11-W05",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B11-W06",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B11-W07",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B12-W01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B12-W02",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B12-W03",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B12-W04",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B12-W05",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B12-W06",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B12-W07",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B13-W01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B13-W02",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B13-W03",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B13-W04",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B13-W05",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B13-W06",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B13-W07",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B13-W08",
+                      0,
+                      149
+                    ]
+                  ],
+                  "findings": "Direct source read, scoped normalization of learner-facing expressions (84/86 corrected across G12, 2 retained); exact source and reference readback; historical reviewed blobs and website projections preserved. Scope check outside targeted sections unchanged for existing paths; two B01 active full-source sections moved into unique bank canonical Written files. Preserved ID, math answers, rubric point totals, roles and auto_grade=false."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G12 ChII",
+                  "blob": "3d28d297bb91b94c28b0f316aed8e63c8d8646d9",
+                  "source_path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+                  "source_blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G12 consolidated scoped source review, owner batch 2 of 2",
+                  "records": [
+                    [
+                      "THPT-G12-B06-W01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B06-W02",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B06-W03",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B06-W04",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B06-W05",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B06-W06",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B07-W01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B07-W02",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B07-W03",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B07-W04",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B08-W01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B08-W02",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B08-W03",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B08-W04",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B08-W05",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B08-W06",
+                      0,
+                      149
+                    ]
+                  ],
+                  "findings": "Direct source read, scoped normalization of learner-facing expressions (84/86 corrected across G12, 2 retained); exact source and reference readback; historical reviewed blobs and website projections preserved. Scope check outside targeted sections unchanged for existing paths; two B01 active full-source sections moved into unique bank canonical Written files. Preserved ID, math answers, rubric point totals, roles and auto_grade=false."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G12 ChV",
+                  "blob": "3d28d297bb91b94c28b0f316aed8e63c8d8646d9",
+                  "source_path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+                  "source_blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G12 consolidated scoped source review, owner batch 2 of 2",
+                  "records": [
+                    [
+                      "THPT-G12-B14-W01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B14-W02",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B14-W03",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B14-W04",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B14-W05",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B14-W06",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B14-W07",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B15-W01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B15-W02",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B15-W03",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B15-W04",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B15-W05",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B15-W06",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B15-W07",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B16-W01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B16-W02",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B16-W03",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B16-W04",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B16-W05",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B17-W01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B17-W02",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B17-W03",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B17-W04",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G12-B17-W05",
+                      0,
+                      149
+                    ]
+                  ],
+                  "findings": "Direct source read, scoped normalization of learner-facing expressions (84/86 corrected across G12, 2 retained); exact source and reference readback; historical reviewed blobs and website projections preserved. Scope check outside targeted sections unchanged for existing paths; two B01 active full-source sections moved into unique bank canonical Written files. Preserved ID, math answers, rubric point totals, roles and auto_grade=false."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G12 ChIII",
+                  "blob": "3d28d297bb91b94c28b0f316aed8e63c8d8646d9",
+                  "source_path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+                  "source_blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G12 consolidated scoped source review, owner batch 2 of 2",
+                  "records": [
+                    [
+                      "THPT-G12-B09-W01",
+                      0,
+                      213
+                    ],
+                    [
+                      "THPT-G12-B09-W02",
+                      0,
+                      213
+                    ],
+                    [
+                      "THPT-G12-B09-W03",
+                      0,
+                      213
+                    ],
+                    [
+                      "THPT-G12-B09-W04",
+                      0,
+                      213
+                    ],
+                    [
+                      "THPT-G12-B09-W05",
+                      0,
+                      213
+                    ],
+                    [
+                      "THPT-G12-B09-W06",
+                      0,
+                      213
+                    ],
+                    [
+                      "THPT-G12-B10-W01",
+                      0,
+                      213
+                    ],
+                    [
+                      "THPT-G12-B10-W02",
+                      0,
+                      213
+                    ],
+                    [
+                      "THPT-G12-B10-W03",
+                      0,
+                      213
+                    ],
+                    [
+                      "THPT-G12-B10-W04",
+                      0,
+                      213
+                    ],
+                    [
+                      "THPT-G12-B10-W05",
+                      0,
+                      213
+                    ],
+                    [
+                      "THPT-G12-B10-W06",
+                      0,
+                      213
+                    ]
+                  ],
+                  "findings": "Direct source read, scoped normalization of learner-facing expressions (84/86 corrected across G12, 2 retained); exact source and reference readback; historical reviewed blobs and website projections preserved. Scope check outside targeted sections unchanged for existing paths; two B01 active full-source sections moved into unique bank canonical Written files. Preserved ID, math answers, rubric point totals, roles and auto_grade=false."
                 }
               ],
               "completed_interactive": 815,
-              "completed_written": 74,
+              "completed_written": 160,
               "remaining_interactive": 0,
-              "remaining_written": 86,
+              "remaining_written": 0,
               "counts": {
-                "ids": 889,
+                "ids": 975,
                 "inherited": 3480,
-                "newly_checked": 1644
+                "newly_checked": 1994
               },
-              "next": "Batch 2/2: remaining 86 shared Written G12, grouped by exact active source; fix directly in canonical bank, skip already verified fields; after completion reconcile and tick 08.1. G11 complete; no deferred."
+              "next": "08.1 COMPLETE — 975/975 exact IDs, 815 interactive and 160 Written; proceed 08.2 Topic-only 910 IDs; exclude entire 08.1 partition and inherit prior scoped evidence."
             }
           },
           {
