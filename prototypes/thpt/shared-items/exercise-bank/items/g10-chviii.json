@@ -2047,5 +2047,194 @@
       }
     ],
     "exercise_type": "INTERACTIVE"
+  },
+  {
+    "item_id": "THPT-G10-B23-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G10-B23-L1-01",
+    "stem": "Một công việc thực hiện theo đúng một trong hai phương án rời nhau có \\(m,n\\) cách; một công việc khác gồm hai bước nối tiếp, mỗi cách ở bước thứ nhất đều có đúng \\(n\\) cách ở bước thứ hai và bước thứ nhất có \\(m\\) cách. Hai số cách tương ứng là gì?",
+    "answer_key": "\\(m+n;\\ mn\\).",
+    "worked_solution": "Hai phương án rời nhau dùng quy tắc cộng: \\(m+n\\). Hai bước nối tiếp với đúng \\(n\\) cách tiếp tục cho mỗi cách đầu dùng quy tắc nhân: \\(mn\\).",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "COUNT_ADDITION",
+      "COUNT_MULTIPLICATION"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Phân biệt chọn một phương án với thực hiện đủ hai bước."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/THPT_G10_CHVIII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md",
+        "blob": "a989cda41a4de81f7e676fb97c2a0a8095a10b8a",
+        "commit": "52725400b199b2a01c54a4cfa8a6865d65516a10"
+      },
+      "related_item_ids": [
+        "THPT-G10-B23-C01",
+        "THPT-G10-B23-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhân ở tình huống chỉ chọn một phương án hoặc cộng ở tình huống hai bước, ôn Bài 23 quy tắc cộng, nhân; luyện lại hai bài đếm tương ứng trong Luyện tập.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(mn;\\ m+n\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(m+n;\\ m+n\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(mn;\\ mn\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(m+n;\\ mn\\)."
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G10-B24-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G10-B24-L1-01",
+    "stem": "Từ \\(n\\) phần tử phân biệt, với \\(1\\le k\\le n\\), kí hiệu nào chỉ số cách sắp xếp tất cả \\(n\\) phần tử và số cách lấy \\(k\\) phần tử có xét thứ tự, theo thứ tự?",
+    "answer_key": "\\(P_n;\\ A_n^k\\).",
+    "worked_solution": "Hoán vị sắp xếp tất cả \\(n\\) phần tử, có \\(P_n=n!\\) cách. Chỉnh hợp lấy \\(k\\) phần tử và xét thứ tự, có \\(A_n^k=\\frac{n!}{(n-k)!}\\) cách. Tổ hợp không xét thứ tự.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "PERMUTATION",
+      "ARRANGEMENT"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ từ khóa tất cả, có thứ tự và không thứ tự."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/THPT_G10_CHVIII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md",
+        "blob": "a989cda41a4de81f7e676fb97c2a0a8095a10b8a",
+        "commit": "52725400b199b2a01c54a4cfa8a6865d65516a10"
+      },
+      "related_item_ids": [
+        "THPT-G10-B24-C01",
+        "THPT-G10-B24-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu chọn tổ hợp cho tình huống phân vai, ôn Bài 24 phân biệt hoán vị, chỉnh hợp, tổ hợp rồi làm bài xếp hàng và phân công.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(P_n;\\ A_n^k\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(C_n^k;\\ P_n\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(P_n;\\ C_n^k\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(A_n^k;\\ C_n^k\\)."
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G10-B25-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G10-B25-L1-01",
+    "stem": "Trong khai triển \\((a+b)^n\\), với \\(n\\) nguyên dương và \\(0\\le k\\le n\\), số hạng ứng với việc chọn \\(b\\) đúng \\(k\\) lần có dạng nào?",
+    "answer_key": "\\(C_n^k a^{n-k}b^k\\).",
+    "worked_solution": "Chọn \\(k\\) trong \\(n\\) nhân tử để lấy \\(b\\), còn \\(n-k\\) nhân tử lấy \\(a\\). Có \\(C_n^k\\) cách chọn vị trí, nên số hạng là \\(C_n^k a^{n-k}b^k\\). Tổng hai số mũ bằng \\(n\\).",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "BINOMIAL_COEFFICIENT",
+      "BINOMIAL_X_POWER"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ hệ số tổ hợp và tổng số mũ trong khai triển."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/THPT_G10_CHVIII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md",
+        "blob": "a989cda41a4de81f7e676fb97c2a0a8095a10b8a",
+        "commit": "52725400b199b2a01c54a4cfa8a6865d65516a10"
+      },
+      "related_item_ids": [
+        "THPT-G10-B25-C01",
+        "THPT-G10-B25-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu dùng chỉnh hợp hoặc nhầm số mũ, ôn Bài 25 số hạng tổng quát; luyện tìm hệ số của một đơn thức trong khai triển.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(A_n^k a^{n-k}b^k\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(C_n^k a^{n-k}b^k\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(C_n^k a^n b^k\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(C_n^k a^{n-k}b^{n-k}\\)."
+      }
+    ]
   }
 ]
