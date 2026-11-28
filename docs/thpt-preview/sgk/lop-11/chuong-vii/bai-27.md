@@ -321,7 +321,7 @@
 
     **Đề bài.** Khối tứ diện đều có tất cả cạnh bằng \(a>0\). Tính thể tích theo \(a\) bằng việc tìm chiều cao của chóp tam giác đều.
 
-    **Phân tích:** Đáy là tam giác đều cạnh \(a\), chân từ đỉnh còn lại tại **tâm đáy**, cách mỗi đỉnh đáy \(a/\sqrt3\); cạnh bên cũng bằng \(a\).
+    **Phân tích:** Đáy là tam giác đều cạnh \(a\), chân từ đỉnh còn lại tại **tâm đáy**, cách mỗi đỉnh đáy \(a/\sqrt3\) (bán kính ngoại tiếp, xem Bài 25); cạnh bên cũng bằng \(a\).
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.11"><p><strong>Lời giải.</strong> Diện tích tam giác đều đáy \(S=a^2\sqrt3/4\). Tâm đáy \(O\) cách đỉnh đáy \(A\) một đoạn \(AO=a/\sqrt3\). Với đỉnh \(S\) của tứ diện, tam giác \(SAO\) vuông tại \(O\) có \(SA=a\), nên \(SO=\sqrt{a^2-a^2/3}=a\sqrt{2/3}\). Suy \(V=\frac13\cdot(a^2\sqrt3/4)\cdot a\sqrt{2/3}=a^3\sqrt2/12\).</p></div>
 

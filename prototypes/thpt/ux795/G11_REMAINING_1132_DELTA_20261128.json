@@ -14,6 +14,11 @@
           "before": "trái với việc sin có chu kì nhỏ nhất",
           "after": "trái với kết quả về chu kì nhỏ nhất của sin (xem đồ thị và giải thích ở mục 1.3):",
           "count": 1
+        },
+        {
+          "before": "chu kì nhỏ nhất của sin (xem đồ thị và giải thích ở mục 1.3): \\(2\\pi\\)",
+          "after": "sin có chu kì nhỏ nhất \\(2\\pi\\) (xem đồ thị và giải thích ở mục 1.3)",
+          "count": 1
         }
       ]
     },
@@ -453,6 +458,11 @@
           "before": "\\(AO\\perp(BDD'B')\\); do đó \\(d(AA',(BDD'B'))=AO=a/2=4\\) cm.",
           "after": "\\(AO\\perp(BDD'B')\\). Vì \\(AA'\\parallel BB'\\subset(BDD'B')\\) và \\(A\\notin(BDD'B')\\) (giao với đáy là \\(BD\\)), nên \\(AA'\\parallel(BDD'B')\\); do đó \\(d(AA',(BDD'B'))=AO=a/2=4\\) cm.",
           "count": 1
+        },
+        {
+          "before": "chân cao \\(O\\) là tâm đáy và \\(AO=a/\\sqrt3\\).",
+          "after": "chân cao \\(O\\) là tâm đáy và \\(AO=a/\\sqrt3\\) (bán kính ngoại tiếp tam giác đều, đã giải thích ở Bài 25).",
+          "count": 1
         }
       ]
     },
@@ -567,6 +577,11 @@
           "before": "một giới hạn cơ bản là \\(\\lim_{h\\to0}(e^h-1)/h=1\\).",
           "after": "một giới hạn cơ bản là \\(\\lim_{h\\to0}(e^h-1)/h=1\\). Có thể nối với giới hạn định nghĩa \\(e\\) ở Bài 19: lấy ln của \\((1+k)^{1/k}\\to e\\) được \\(\\ln(1+k)/k\\to1\\); đặt \\(k=e^h-1\\) thì \\((e^h-1)/h=k/\\ln(1+k)\\to1\\).",
           "count": 1
+        },
+        {
+          "before": "lấy ln của \\((1+k)^{1/k}\\to e\\) được \\(\\ln(1+k)/k\\to1\\); đặt \\(k=e^h-1\\) thì",
+          "after": "đặt \\(k=1/t\\) trong định nghĩa \\(e\\) rồi lấy ln, được \\(\\ln(1+k)/k\\to1\\) khi \\(k\\to0^+\\). Với \\(-1<k<0\\), đặt \\(u=-k/(1+k)>0\\); khi \\(k\\to0^-\\) thì \\(u\\to0^+\\) và \\(\\ln(1+k)/k=(1+u)\\ln(1+u)/u\\to1\\). Vậy giới hạn đúng từ cả hai phía. Đặt tiếp \\(k=e^h-1\\) thì",
+          "count": 1
         }
       ]
     },
@@ -635,6 +650,11 @@
         {
           "before": "Gọi \\(T\\) là đỉnh chóp lớn, \\(A'=(T+A)/2\\), \\(B'=(T+B)/2\\), \\(C'=(T+C)/2\\) theo quan hệ chia đôi trên các cạnh bên (hiểu các điểm như vectơ vị trí). Vì \\(B_1=(A+B)/2\\), \\(C_1=(A+C)/2\\), nên \\(\\overrightarrow{AA'}=\\overrightarrow{B_1B'}=\\overrightarrow{C_1C'}=(\\overrightarrow{AT})/2\\).",
           "after": "Gọi \\(T\\) là đỉnh chóp lớn. Vì tỉ số cạnh đáy là \\(1/2\\), \\(A',B',C'\\) là trung điểm \\(TA,TB,TC\\). Theo định lí đường trung bình trong tam giác \\(TAB\\), \\(B_1B'\\parallel AT\\) và \\(B_1B'=AT/2\\); tương tự trong tam giác \\(TAC\\), \\(C_1C'\\parallel AT\\) và \\(C_1C'=AT/2\\). Đoạn \\(AA'\\) cũng bằng \\(AT/2\\), nên ba cạnh bên song song và bằng nhau.",
+          "count": 1
+        },
+        {
+          "before": "cách mỗi đỉnh đáy \\(a/\\sqrt3\\);",
+          "after": "cách mỗi đỉnh đáy \\(a/\\sqrt3\\) (bán kính ngoại tiếp, xem Bài 25);",
           "count": 1
         }
       ]

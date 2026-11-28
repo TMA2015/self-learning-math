@@ -173,7 +173,7 @@
 
     ### 1.5. Đạo hàm của hàm số mũ và hàm số lôgarit
 
-    Với hàm mũ \(e^x\), một giới hạn cơ bản là \(\lim_{h\to0}(e^h-1)/h=1\). Có thể nối với giới hạn định nghĩa \(e\) ở Bài 19: lấy ln của \((1+k)^{1/k}\to e\) được \(\ln(1+k)/k\to1\); đặt \(k=e^h-1\) thì \((e^h-1)/h=k/\ln(1+k)\to1\). Vì \(e^{x+h}-e^x=e^x(e^h-1)\), thương sai phân trở thành
+    Với hàm mũ \(e^x\), một giới hạn cơ bản là \(\lim_{h\to0}(e^h-1)/h=1\). Có thể nối với giới hạn định nghĩa \(e\) ở Bài 19: đặt \(k=1/t\) trong định nghĩa \(e\) rồi lấy ln, được \(\ln(1+k)/k\to1\) khi \(k\to0^+\). Với \(-1<k<0\), đặt \(u=-k/(1+k)>0\); khi \(k\to0^-\) thì \(u\to0^+\) và \(\ln(1+k)/k=(1+u)\ln(1+u)/u\to1\). Vậy giới hạn đúng từ cả hai phía. Đặt tiếp \(k=e^h-1\) thì \((e^h-1)/h=k/\ln(1+k)\to1\). Vì \(e^{x+h}-e^x=e^x(e^h-1)\), thương sai phân trở thành
 
     \[
     \frac{e^{x+h}-e^x}{h}

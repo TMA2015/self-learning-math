@@ -11,12 +11,12 @@ const matches=a=>same(a,files),matchesRoutes=a=>same(a,routes);
 const blob=b=>{b=Buffer.from(b);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
 const read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const lesson=p=>/\/bai-\d+\.md$/.test(p);
-function manifest(){const s=read(manifestPath);assert.equal(blob(s),"6b77c3be5b012ecd27568f93ac725bf31b47f0ed","exact owner delta manifest");return JSON.parse(s);}
+function manifest(){const s=read(manifestPath);assert.equal(blob(s),"2c931aca8af4d81e3bdde595e4d3729ee6f2416e","exact owner delta manifest");return JSON.parse(s);}
 const ids=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(x=>x[1]).sort();
 const attrs=s=>[...s.matchAll(/\b(?:data-[\w-]+|id|href|src|class|role|aria-label)="[^"]*"/g)].map(z=>z[0]).sort();
 function verify(base){
  const m=manifest();assert.equal(base,m.base,"CP13 approved main");assert(same(m.items.map(x=>x.path),routes));
- assert.equal(m.items.reduce((a,x)=>a+x.edits.length,0),100);
+ assert.equal(m.items.reduce((a,x)=>a+x.edits.length,0),104);
  for(const x of m.items){
   const old=cp.execFileSync("git",["show",base+":"+x.path],{cwd:root,encoding:"utf8"});
   assert.equal(blob(old),x.old,"old source "+x.path);let s=old;
@@ -33,7 +33,7 @@ function verify(base){
   }
   console.log("PASS CP14 source/Q15/Q16 "+x.path+" "+blob(s));
  }
- console.log("PASS CP14 100 exact edits; 44 public pages");
+ console.log("PASS CP14 104 exact edits; 44 public pages");
 }
 async function browserQA(browser,base,engine,widths){
  manifest();const queue=routes.flatMap(rel=>widths.map(width=>({rel,width})));let done=0;
