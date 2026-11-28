@@ -543,7 +543,7 @@ Ví dụ f(x)=x³+x−1: f(0)=−1, f(1)=1, và f là đa thức liên tục tr�
 
 **Đề bài:** (a) Tính \(\lim_{n\to\infty}\frac{2n^2+3n}{n^2+1}\). (b) Giải thích vì sao dãy \(v_n=(-1)^n\) không có giới hạn hữu hạn. (c) Tính \(4+2+1+\frac12+\cdots\) và nêu điều kiện công bội.
 
-**Lời giải:** (a) Chia tử và mẫu cho \(n^2\): \(\frac{2+3/n}{1+1/n^2}\to2\), vì mẫu có giới hạn 1 khác 0. (b) Dãy con chỉ số chẵn luôn bằng 1, còn chỉ số lẻ luôn bằng -1; hai giới hạn khác nhau nên không có giới hạn chung. (c) Số hạng đầu 4, công bội \(\frac12\), thỏa \(|q|<1\). Tổng riêng \(S_n=\frac{4[1-(1/2)^n]}{1-1/2}\); vì \((1/2)^n\to0\), tổng vô hạn bằng \(8\).
+**Lời giải:** (a) Chia tử và mẫu cho \(n^2\): \(\frac{2+\frac3n}{1+\frac1{n^2}}\to2\), vì mẫu có giới hạn 1 khác 0. (b) Dãy con chỉ số chẵn luôn bằng 1, còn chỉ số lẻ luôn bằng -1; hai giới hạn khác nhau nên không có giới hạn chung. (c) Số hạng đầu 4, công bội \(\frac12\), thỏa \(|q|<1\). Tổng riêng \(S_n=\frac{4[1-(\frac12)^n]}{1-\frac12}\); vì \((1/2)^n\to0\), tổng vô hạn bằng \(8\).
 
 **Rubric tự đối chiếu:** 4 điểm: chia bậc \(n^2\), giới hạn 2 (1); hai dãy con (1); số hạng đầu, công bội và điều kiện (1); tổng 8 và lý do hội tụ (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
 
